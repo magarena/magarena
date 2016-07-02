@@ -8,3 +8,4 @@ effect=Destroy target land you control and target land you don't control.
 split=Bust
 timing=main
 oracle=Destroy target land you control and target land you don't control.
+status=not supported: multiple-targets

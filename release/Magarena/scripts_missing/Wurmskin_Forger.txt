@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, distribute three +1/+1 counters among one, two, or three target creatures.
 timing=main
 oracle=When Wurmskin Forger enters the battlefield, distribute three +1/+1 counters among one, two, or three target creatures.
+status=not supported: multiple-targets

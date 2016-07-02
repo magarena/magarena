@@ -9,3 +9,4 @@ pt=2/3
 ability={U}, {T}, Sacrifice SN: Tap up to three target creatures without flying.
 timing=main
 oracle={U}, {T}, Sacrifice Wave Elemental: Tap up to three target creatures without flying.
+status=not supported: multiple-targets

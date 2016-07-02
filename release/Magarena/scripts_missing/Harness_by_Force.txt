@@ -7,3 +7,4 @@ cost={1}{R}{R}
 effect=SN costs {2}{R} more to cast for each target beyond the first.~Gain control of any number of target creatures until end of turn. Untap those creatures. They gain haste until end of turn.
 timing=main
 oracle=Strive — Harness by Force costs {2}{R} more to cast for each target beyond the first.\nGain control of any number of target creatures until end of turn. Untap those creatures. They gain haste until end of turn.
+status=not supported: multiple-targets

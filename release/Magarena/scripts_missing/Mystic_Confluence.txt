@@ -8,3 +8,4 @@ cost={3}{U}{U}
 effect=Choose three. You may choose the same mode more than once. (1) Counter target spell unless its controller pays {3}. (2) Return target creature to its owner's hand. (3) Draw a card.
 timing=counter
 oracle=Choose three. You may choose the same mode more than once.\n• Counter target spell unless its controller pays {3}.\n• Return target creature to its owner's hand.\n• Draw a card.
+status=not supported: multiple-targets

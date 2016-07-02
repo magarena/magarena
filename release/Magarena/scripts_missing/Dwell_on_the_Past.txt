@@ -7,3 +7,4 @@ cost={G}
 effect=Target player shuffles up to four target cards from his or her graveyard into his or her library.
 timing=main
 oracle=Target player shuffles up to four target cards from his or her graveyard into his or her library.
+status=not supported: multiple-targets

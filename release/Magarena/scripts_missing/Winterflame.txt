@@ -7,3 +7,4 @@ cost={1}{U}{R}
 effect=Choose one or both — (1) Tap target creature. (2) SN deals 2 damage to target creature.
 timing=removal
 oracle=Choose one or both —\n• Tap target creature.\n• Winterflame deals 2 damage to target creature.
+status=not supported: multiple-targets

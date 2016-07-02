@@ -8,3 +8,4 @@ ability=Entwine {2}
 effect=Choose one — (1) SN deals 3 damage to target creature. (2) SN deals 3 damage to target player.
 timing=removal
 oracle=Choose one —\n• Barbed Lightning deals 3 damage to target creature.\n• Barbed Lightning deals 3 damage to target player.\nEntwine {2}
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Exile up to four target cards from a single graveyard.~Transmute {1}{B}{B}
 timing=removal
 oracle=Exile up to four target cards from a single graveyard.\nTransmute {1}{B}{B}
+status=not supported: multiple-targets

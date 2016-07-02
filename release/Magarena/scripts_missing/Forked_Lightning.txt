@@ -7,3 +7,4 @@ cost={3}{R}
 effect=SN deals 4 damage divided as you choose among one, two, or three target creatures.
 timing=main
 oracle=Forked Lightning deals 4 damage divided as you choose among one, two, or three target creatures.
+status=not supported: multiple-targets

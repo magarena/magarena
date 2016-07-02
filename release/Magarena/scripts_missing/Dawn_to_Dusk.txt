@@ -8,3 +8,4 @@ cost={2}{W}{W}
 effect=Choose one or both — (1) Return target enchantment card from your graveyard to your hand. (2) Destroy target enchantment.
 timing=main
 oracle=Choose one or both —\n• Return target enchantment card from your graveyard to your hand.\n• Destroy target enchantment.
+status=not supported: multiple-targets

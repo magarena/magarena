@@ -9,3 +9,4 @@ ability=Devoid
 effect=SN deals 2 damage to target creature, 3 damage to another target creature, and 4 damage to a third target creature. If a creature dealt damage this way would die this turn, exile it instead.
 timing=main
 oracle=Devoid\nSerpentine Spike deals 2 damage to target creature, 3 damage to another target creature, and 4 damage to a third target creature. If a creature dealt damage this way would die this turn, exile it instead.
+status=not supported: multiple-targets

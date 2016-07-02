@@ -7,3 +7,4 @@ cost={2}{R}
 effect=SN deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
 timing=main
 oracle=Arc Lightning deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
+status=not supported: multiple-targets

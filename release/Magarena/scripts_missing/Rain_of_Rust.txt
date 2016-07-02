@@ -8,3 +8,4 @@ ability=Entwine {3}{R}
 effect=Choose one — (1) Destroy target artifact. (2) Destroy target land.
 timing=removal
 oracle=Choose one —\n• Destroy target artifact.\n• Destroy target land.\nEntwine {3}{R}
+status=not supported: multiple-targets

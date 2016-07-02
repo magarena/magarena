@@ -7,3 +7,4 @@ cost={W}
 effect=Put up to three target creature cards from your graveyard on top of your library.
 timing=removal
 oracle=Put up to three target creature cards from your graveyard on top of your library.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={3}{R}
 effect=SN deals 1 damage to each of up to three target creatures. Those creatures can't block this turn.
 timing=main
 oracle=Wrap in Flames deals 1 damage to each of up to three target creatures. Those creatures can't block this turn.
+status=not supported: multiple-targets

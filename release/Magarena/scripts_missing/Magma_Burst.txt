@@ -8,3 +8,4 @@ ability=Kicker—Sacrifice two lands.
 effect=SN deals 3 damage to target creature or player. If SN was kicked, it deals 3 damage to another target creature or player.
 timing=removal
 oracle=Kicker—Sacrifice two lands.\nMagma Burst deals 3 damage to target creature or player. If Magma Burst was kicked, it deals 3 damage to another target creature or player.
+status=not supported: multiple-targets

@@ -9,3 +9,4 @@ pt=5/5
 ability=At the beginning of each combat, up to one target creature attacks or blocks this combat if able and up to one target creature can't attack or block this combat.
 timing=main
 oracle=At the beginning of each combat, up to one target creature attacks or blocks this combat if able and up to one target creature can't attack or block this combat.
+status=not supported: multiple-targets

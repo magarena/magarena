@@ -14,3 +14,4 @@ timing=main
 hidden
 transform=Nissa, Vastwood Seer
 oracle=+1: Reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put it into your hand.\n−2: Put a legendary 4/4 green Elemental creature token named Ashaya, the Awoken World onto the battlefield.\n−7: Untap up to six target lands. They become 6/6 Elemental creatures. They're still lands.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{R}
 effect=SN deals 3 damage divided as you choose among one, two, or three target white and/or blue creatures.
 timing=removal
 oracle=Ignite Disorder deals 3 damage divided as you choose among one, two, or three target white and/or blue creatures.
+status=not supported: multiple-targets

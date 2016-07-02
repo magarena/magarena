@@ -7,3 +7,4 @@ cost={1}{W}
 effect=The next 1 damage that would be dealt to target creature this turn is dealt to another target creature instead.~Draw a card.
 timing=removal
 oracle=The next 1 damage that would be dealt to target creature this turn is dealt to another target creature instead.\nDraw a card.
+status=not supported: multiple-targets

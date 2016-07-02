@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN attacks and isn't blocked, you may sacrifice it. If you do, destroy target creature and target land.
 timing=main
 oracle=Whenever Goblin Grenadiers attacks and isn't blocked, you may sacrifice it. If you do, destroy target creature and target land.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Return up to three target creature cards with converted mana cost 1 or less from your graveyard to the battlefield.~{5}{W}, Reveal SN from your hand: Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.
 timing=main
 oracle=Return up to three target creature cards with converted mana cost 1 or less from your graveyard to the battlefield.\nForecast — {5}{W}, Reveal Proclamation of Rebirth from your hand: Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.
+status=not supported: multiple-targets

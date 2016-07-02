@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=SN deals 2 damage to each of up to three target creatures and/or players.~SN deals 4 damage to each of those creatures and/or players instead if seven or more cards are in your graveyard.
 timing=main
 oracle=Shower of Coals deals 2 damage to each of up to three target creatures and/or players.\nThreshold — Shower of Coals deals 4 damage to each of those creatures and/or players instead if seven or more cards are in your graveyard.
+status=not supported: multiple-targets

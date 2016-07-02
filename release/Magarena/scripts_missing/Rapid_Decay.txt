@@ -8,3 +8,4 @@ ability=Cycling {2}
 effect=Exile up to three target cards from a single graveyard.
 timing=removal
 oracle=Exile up to three target cards from a single graveyard.\nCycling {2}
+status=not supported: multiple-targets

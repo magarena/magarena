@@ -9,3 +9,4 @@ pt=4/5
 ability=Whenever you cast a spell that targets SN, up to three target lands you control each become 2/2 Warrior creatures until end of turn. They're still lands.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Anthousa, Setessan Hero, up to three target lands you control each become 2/2 Warrior creatures until end of turn. They're still lands.
+status=not supported: multiple-targets

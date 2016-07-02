@@ -7,3 +7,4 @@ cost={4}{R}
 effect=SN deals 3 damage to target player and 3 damage to target creature.
 timing=removal
 oracle=Punish the Enemy deals 3 damage to target player and 3 damage to target creature.
+status=not supported: multiple-targets

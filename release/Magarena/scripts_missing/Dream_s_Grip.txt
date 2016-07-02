@@ -8,3 +8,4 @@ ability=Entwine {1}
 effect=Choose one — (1) Tap target permanent. (2) Untap target permanent.
 timing=removal
 oracle=Choose one —\n• Tap target permanent.\n• Untap target permanent.\nEntwine {1}
+status=not supported: multiple-targets

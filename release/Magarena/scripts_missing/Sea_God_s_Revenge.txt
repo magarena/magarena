@@ -7,3 +7,4 @@ cost={5}{U}
 effect=Return up to three target creatures your opponents control to their owners' hands. Scry 1.
 timing=main
 oracle=Return up to three target creatures your opponents control to their owners' hands. Scry 1.
+status=not supported: multiple-targets

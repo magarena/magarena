@@ -8,3 +8,4 @@ ability=Kicker {1}{R}
 effect=Return target creature to its owner's hand. If SN was kicked, it deals 2 damage to another target creature.
 timing=removal
 oracle=Kicker {1}{R}\nReturn target creature to its owner's hand. If Jilt was kicked, it deals 2 damage to another target creature.
+status=not supported: multiple-targets

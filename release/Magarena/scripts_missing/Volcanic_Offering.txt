@@ -7,3 +7,4 @@ cost={4}{R}
 effect=Destroy target nonbasic land you don't control and target nonbasic land of an opponent's choice you don't control.~SN deals 7 damage to target creature you don't control and 7 damage to target creature of an opponent's choice you don't control.
 timing=removal
 oracle=Destroy target nonbasic land you don't control and target nonbasic land of an opponent's choice you don't control.\nVolcanic Offering deals 7 damage to target creature you don't control and 7 damage to target creature of an opponent's choice you don't control.
+status=not supported: multiple-targets

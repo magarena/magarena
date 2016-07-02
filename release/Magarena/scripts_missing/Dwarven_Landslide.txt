@@ -8,3 +8,4 @@ ability=Kicker—{2}{R}, Sacrifice a land.
 effect=Destroy target land. If SN was kicked, destroy another target land.
 timing=main
 oracle=Kicker—{2}{R}, Sacrifice a land.\nDestroy target land. If Dwarven Landslide was kicked, destroy another target land.
+status=not supported: multiple-targets

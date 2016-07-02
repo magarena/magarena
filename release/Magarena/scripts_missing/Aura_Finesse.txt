@@ -7,3 +7,4 @@ cost={U}
 effect=Attach target Aura you control to target creature.~Draw a card.
 timing=removal
 oracle=Attach target Aura you control to target creature.\nDraw a card.
+status=not supported: multiple-targets

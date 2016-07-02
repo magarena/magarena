@@ -7,3 +7,4 @@ cost={2}{U}
 effect=SN costs {1}{U} more to cast for each target beyond the first.~Choose a creature on the battlefield. Any number of target creatures you control each become a copy of that creature until end of turn.
 timing=removal
 oracle=Strive — Polymorphous Rush costs {1}{U} more to cast for each target beyond the first.\nChoose a creature on the battlefield. Any number of target creatures you control each become a copy of that creature until end of turn.
+status=not supported: multiple-targets

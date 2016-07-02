@@ -9,3 +9,4 @@ ability=Cycling {1}{U};\
 effect=Tap up to four target creatures.
 timing=removal
 oracle=Tap up to four target creatures.\nCycling {1}{U}\nWhen you cycle Choking Tethers, you may tap target creature.
+status=not supported: multiple-targets

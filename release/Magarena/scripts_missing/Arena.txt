@@ -6,3 +6,4 @@ type=Land
 ability={3}, {T}: Tap target creature you control and target creature of an opponent's choice he or she controls. Those creatures fight each other.
 timing=main
 oracle={3}, {T}: Tap target creature you control and target creature of an opponent's choice he or she controls. Those creatures fight each other.
+status=not supported: multiple-targets

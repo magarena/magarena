@@ -7,3 +7,4 @@ cost={3}{R}
 effect=You may discard a Mountain card rather than pay SN's mana cost.~SN deals 3 damage divided as you choose among one, two, or three target creatures.
 timing=main
 oracle=You may discard a Mountain card rather than pay Flameshot's mana cost.\nFlameshot deals 3 damage divided as you choose among one, two, or three target creatures.
+status=not supported: multiple-targets

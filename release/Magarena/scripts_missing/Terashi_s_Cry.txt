@@ -8,3 +8,4 @@ cost={3}{W}
 effect=Tap up to three target creatures.
 timing=main
 oracle=Tap up to three target creatures.
+status=not supported: multiple-targets

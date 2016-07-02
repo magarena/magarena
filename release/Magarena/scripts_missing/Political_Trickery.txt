@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Exchange control of target land you control and target land an opponent controls.
 timing=main
 oracle=Exchange control of target land you control and target land an opponent controls.
+status=not supported: multiple-targets

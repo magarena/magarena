@@ -10,3 +10,4 @@ ability=Morph—Sacrifice two Mountains.;\
         When SN is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.
 timing=main
 oracle=Morph—Sacrifice two Mountains.\nWhen Skirk Volcanist is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.
+status=not supported: multiple-targets

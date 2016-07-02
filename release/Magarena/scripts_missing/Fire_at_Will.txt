@@ -7,3 +7,4 @@ cost={R/W}{R/W}{R/W}
 effect=SN deals 3 damage divided as you choose among one, two, or three target attacking or blocking creatures.
 timing=removal
 oracle=Fire at Will deals 3 damage divided as you choose among one, two, or three target attacking or blocking creatures.
+status=not supported: multiple-targets

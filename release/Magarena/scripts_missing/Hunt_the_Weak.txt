@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Put a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control.
 timing=main
 oracle=Put a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control.
+status=not supported: multiple-targets

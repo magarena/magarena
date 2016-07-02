@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, pay 3 life.
 effect=Destroy target creature and target land.
 timing=main
 oracle=As an additional cost to cast Fumarole, pay 3 life.\nDestroy target creature and target land.
+status=not supported: multiple-targets

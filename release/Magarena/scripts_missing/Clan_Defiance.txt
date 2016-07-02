@@ -7,3 +7,4 @@ cost={X}{R}{G}
 effect=Choose one or more — (1) SN deals X damage to target creature with flying. (2) SN deals X damage to target creature without flying. (3) SN deals X damage to target player.
 timing=main
 oracle=Choose one or more —\n• Clan Defiance deals X damage to target creature with flying.\n• Clan Defiance deals X damage to target creature without flying.\n• Clan Defiance deals X damage to target player.
+status=not supported: multiple-targets

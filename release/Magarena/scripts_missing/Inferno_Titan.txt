@@ -11,3 +11,4 @@ ability={R}: SN gets +1/+0 until end of turn.;\
         Whenever SN enters the battlefield or attacks, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
 timing=main
 oracle={R}: Inferno Titan gets +1/+0 until end of turn.\nWhenever Inferno Titan enters the battlefield or attacks, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=You may exile a green card from your hand rather than pay SN's mana cost.~Distribute three +1/+1 counters among one, two, or three target creatures. For each +1/+1 counter you put on a creature this way, remove a +1/+1 counter from that creature at the beginning of the next cleanup step.
 timing=removal
 oracle=You may exile a green card from your hand rather than pay Bounty of the Hunt's mana cost.\nDistribute three +1/+1 counters among one, two, or three target creatures. For each +1/+1 counter you put on a creature this way, remove a +1/+1 counter from that creature at the beginning of the next cleanup step.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={0}
 ability={1}, {T}, Sacrifice SN: Put up to four target basic land cards from a player's graveyard on top of his or her library in any order. That player draws a card at the beginning of the next turn's upkeep.
 timing=artifact
 oracle={1}, {T}, Sacrifice Lodestone Bauble: Put up to four target basic land cards from a player's graveyard on top of his or her library in any order. That player draws a card at the beginning of the next turn's upkeep.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={G}
 effect=Shuffle SN and up to three target cards from a single graveyard into their owners' libraries.
 timing=main
 oracle=Shuffle Serene Remembrance and up to three target cards from a single graveyard into their owners' libraries.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Tap up to three target lands.
 timing=removal
 oracle=Tap up to three target lands.
+status=not supported: multiple-targets

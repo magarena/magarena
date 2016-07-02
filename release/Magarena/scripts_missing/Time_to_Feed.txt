@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Choose target creature an opponent controls. When that creature dies this turn, you gain 3 life. Target creature you control fights that creature.
 timing=main
 oracle=Choose target creature an opponent controls. When that creature dies this turn, you gain 3 life. Target creature you control fights that creature.
+status=not supported: multiple-targets

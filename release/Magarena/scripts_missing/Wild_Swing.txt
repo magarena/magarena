@@ -7,3 +7,4 @@ cost={3}{R}
 effect=Choose three target nonenchantment permanents. Destroy one of them at random.
 timing=main
 oracle=Choose three target nonenchantment permanents. Destroy one of them at random.
+status=not supported: multiple-targets

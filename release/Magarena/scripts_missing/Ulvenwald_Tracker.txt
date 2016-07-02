@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{G}, {T}: Target creature you control fights another target creature.
 timing=main
 oracle={1}{G}, {T}: Target creature you control fights another target creature.
+status=not supported: multiple-targets

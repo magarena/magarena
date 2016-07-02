@@ -9,3 +9,4 @@ pt=2/1
 ability={T}: Return target card from an opponent's graveyard to his or her hand. Put a +1/+1 counter on target creature.
 timing=main
 oracle={T}: Return target card from an opponent's graveyard to his or her hand. Put a +1/+1 counter on target creature.
+status=not supported: multiple-targets

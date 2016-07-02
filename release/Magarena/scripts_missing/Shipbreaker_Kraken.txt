@@ -10,3 +10,4 @@ ability={6}{U}{U}: Monstrosity 4.;\
         When SN becomes monstrous, tap up to four target creatures. Those creatures don't untap during their controllers' untap steps for as long as you control SN.
 timing=main
 oracle={6}{U}{U}: Monstrosity 4.\nWhen Shipbreaker Kraken becomes monstrous, tap up to four target creatures. Those creatures don't untap during their controllers' untap steps for as long as you control Shipbreaker Kraken.
+status=not supported: multiple-targets

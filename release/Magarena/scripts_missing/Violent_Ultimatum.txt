@@ -7,3 +7,4 @@ cost={B}{B}{R}{R}{R}{G}{G}
 effect=Destroy three target permanents.
 timing=main
 oracle=Destroy three target permanents.
+status=not supported: multiple-targets

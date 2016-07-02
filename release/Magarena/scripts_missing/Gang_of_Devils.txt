@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN dies, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
 timing=main
 oracle=When Gang of Devils dies, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
+status=not supported: multiple-targets

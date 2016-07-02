@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Target player shuffles up to three target cards from his or her graveyard into his or her library.~Draw a card.~When SN is put into your graveyard from your library, shuffle your graveyard into your library.
 timing=main
 oracle=Target player shuffles up to three target cards from his or her graveyard into his or her library.\nDraw a card.\nWhen Gaea's Blessing is put into your graveyard from your library, shuffle your graveyard into your library.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={R}{R}
 effect=SN deals 1 damage to target player and 1 damage to target creature that player controls.~If you had a land enter the battlefield under your control this turn, SN deals 3 damage to that player and 3 damage to that creature instead.
 timing=removal
 oracle=Searing Blaze deals 1 damage to target player and 1 damage to target creature that player controls.\nLandfall — If you had a land enter the battlefield under your control this turn, Searing Blaze deals 3 damage to that player and 3 damage to that creature instead.
+status=not supported: multiple-targets

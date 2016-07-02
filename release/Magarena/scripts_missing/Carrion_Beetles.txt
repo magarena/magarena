@@ -9,3 +9,4 @@ pt=1/1
 ability={2}{B}, {T}: Exile up to three target cards from a single graveyard.
 timing=main
 oracle={2}{B}, {T}: Exile up to three target cards from a single graveyard.
+status=not supported: multiple-targets

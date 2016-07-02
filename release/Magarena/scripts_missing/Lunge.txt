@@ -7,3 +7,4 @@ cost={2}{R}
 effect=SN deals 2 damage to target creature and 2 damage to target player.
 timing=removal
 oracle=Lunge deals 2 damage to target creature and 2 damage to target player.
+status=not supported: multiple-targets

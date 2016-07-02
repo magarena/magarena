@@ -11,3 +11,4 @@ ability=Deathtouch;\
         {3}{B}{B}, Exile SN from your graveyard: Return up to three target creature cards from your graveyard to your hand.
 timing=main
 oracle=Deathtouch\n{3}{B}{B}: Return up to three target creature cards from your graveyard to your hand.\n{3}{B}{B}, Exile Soul of Innistrad from your graveyard: Return up to three target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets
