@@ -1,0 +1,13 @@
+name=Wretched Gryff
+image=https://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_QDAyzUCz4P.png
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Hippogriff
+cost={7}
+pt=3/4
+ability=Emerge {5}{U};\
+        When you cast SN, draw a card.;\
+        Flying
+timing=main
+oracle=Emerge {5}{U}\nWhen you cast Wretched Gryff, draw a card.\nFlying
