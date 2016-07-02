@@ -7,3 +7,4 @@ cost={G}
 effect=Target creature must be blocked this turn if able.~Draw a card.
 timing=main
 oracle=Target creature must be blocked this turn if able.\nDraw a card.
+status=not supported: blocking-restriction

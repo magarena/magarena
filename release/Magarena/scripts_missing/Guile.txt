@@ -11,3 +11,4 @@ ability=SN can't be blocked except by three or more creatures.;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=main
 oracle=Guile can't be blocked except by three or more creatures.\nIf a spell or ability you control would counter a spell, instead exile that spell and you may play that card without paying its mana cost.\nWhen Guile is put into a graveyard from anywhere, shuffle it into its owner's library.
+status=not supported: blocking-restriction

@@ -9,3 +9,4 @@ pt=2/1
 ability={3}{G}: Target creature must be blocked this turn if able.
 timing=main
 oracle={3}{G}: Target creature must be blocked this turn if able.
+status=not supported: blocking-restriction

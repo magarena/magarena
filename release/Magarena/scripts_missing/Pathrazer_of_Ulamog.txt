@@ -10,3 +10,4 @@ ability=Annihilator 3;\
         SN can't be blocked except by three or more creatures.
 timing=main
 oracle=Annihilator 3\nPathrazer of Ulamog can't be blocked except by three or more creatures.
+status=not supported: blocking-restriction

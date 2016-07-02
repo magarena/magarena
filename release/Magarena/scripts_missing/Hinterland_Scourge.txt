@@ -12,3 +12,4 @@ transform=Hinterland Hermit
 timing=main
 hidden
 oracle=Hinterland Scourge must be blocked if able.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Hinterland Scourge.
+status=not supported: blocking-restriction

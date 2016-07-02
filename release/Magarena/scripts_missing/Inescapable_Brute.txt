@@ -10,3 +10,4 @@ ability=Wither;\
         SN must be blocked if able.
 timing=main
 oracle=Wither\nInescapable Brute must be blocked if able.
+status=not supported: blocking-restriction

@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Up to two target creatures can't be blocked this turn.
 timing=main
 oracle=Up to two target creatures can't be blocked this turn.
+status=not supported: multiple-targets

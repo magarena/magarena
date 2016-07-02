@@ -10,3 +10,4 @@ ability={2}{G}: SN must be blocked this turn if able.;\
         When SN dies, target creature an opponent controls gets -3/-3 until end of turn.
 timing=main
 oracle={2}{G}: Loathsome Catoblepas must be blocked this turn if able.\nWhen Loathsome Catoblepas dies, target creature an opponent controls gets -3/-3 until end of turn.
+status=not supported: blocking-restriction
