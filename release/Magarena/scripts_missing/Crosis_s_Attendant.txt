@@ -9,3 +9,4 @@ pt=3/3
 ability={1}, Sacrifice SN: Add {U}{B}{R} to your mana pool.
 timing=main
 oracle={1}, Sacrifice Crosis's Attendant: Add {U}{B}{R} to your mana pool.
+status=not supported: add-multiple-mana

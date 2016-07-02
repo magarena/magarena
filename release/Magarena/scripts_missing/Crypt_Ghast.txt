@@ -10,3 +10,4 @@ ability=Extort;\
         Whenever you tap a Swamp for mana, add {B} to your mana pool.
 timing=main
 oracle=Extort\nWhenever you tap a Swamp for mana, add {B} to your mana pool.
+status=not supported: non-activated-mana-ability

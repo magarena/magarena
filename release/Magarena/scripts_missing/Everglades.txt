@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {C}{B} to your mana pool.
 timing=land
 oracle=Everglades enters the battlefield tapped.\nWhen Everglades enters the battlefield, sacrifice it unless you return an untapped Swamp you control to its owner's hand.\n{T}: Add {C}{B} to your mana pool.
+status=not supported: add-multiple-mana

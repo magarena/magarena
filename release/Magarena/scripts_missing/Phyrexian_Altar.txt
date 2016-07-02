@@ -7,3 +7,4 @@ cost={3}
 ability=Sacrifice a creature: Add one mana of any color to your mana pool.
 timing=artifact
 oracle=Sacrifice a creature: Add one mana of any color to your mana pool.
+status=not supported: mana-ability-with-choice

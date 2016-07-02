@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN dies, Add {C} to your mana pool.
 timing=main
 oracle=When Myr Moonvessel dies, Add {C} to your mana pool.
+status=not supported: non-activated-mana-ability
