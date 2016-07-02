@@ -10,3 +10,4 @@ ability=Banding;\
         As long as SN is attacking, prevent all damage Deserts would deal to SN and to creatures banded with SN.
 timing=main
 oracle=Banding\nAs long as Camel is attacking, prevent all damage Deserts would deal to Camel and to creatures banded with Camel.
+status=not supported: banding

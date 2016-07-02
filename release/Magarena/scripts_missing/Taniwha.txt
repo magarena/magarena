@@ -11,3 +11,4 @@ ability=Trample;\
         At the beginning of your upkeep, all lands you control phase out.
 timing=main
 oracle=Trample\nPhasing\nAt the beginning of your upkeep, all lands you control phase out.
+status=not supported: phasing

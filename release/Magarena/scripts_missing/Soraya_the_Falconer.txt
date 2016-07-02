@@ -10,3 +10,4 @@ ability=Bird creatures get +1/+1.;\
         {1}{W}: Target Bird creature gains banding until end of turn.
 timing=main
 oracle=Bird creatures get +1/+1.\n{1}{W}: Target Bird creature gains banding until end of turn.
+status=not supported: banding

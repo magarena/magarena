@@ -10,3 +10,4 @@ ability=Flying, protection from black;\
         Suspend 3—{1}{W}
 timing=main
 oracle=Flying, protection from black\nSuspend 3—{1}{W}
+status=not supported: suspend

@@ -9,3 +9,4 @@ pt=2/4
 ability=Banding
 timing=main
 oracle=Banding
+status=not supported: banding

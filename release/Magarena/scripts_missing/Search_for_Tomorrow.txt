@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Search your library for a basic land card and put it onto the battlefield. Then shuffle your library.~Suspend 2—{G}
 timing=main
 oracle=Search your library for a basic land card and put it onto the battlefield. Then shuffle your library.\nSuspend 2—{G}
+status=not supported: suspend

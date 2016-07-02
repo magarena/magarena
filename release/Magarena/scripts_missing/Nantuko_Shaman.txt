@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, if you control no tapped lands, draw a c
         Suspend 1—{2}{G}{G}
 timing=main
 oracle=When Nantuko Shaman enters the battlefield, if you control no tapped lands, draw a card.\nSuspend 1—{2}{G}{G}
+status=not supported: suspend

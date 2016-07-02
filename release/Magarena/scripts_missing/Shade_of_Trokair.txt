@@ -10,3 +10,4 @@ ability={W}: SN gets +1/+1 until end of turn.;\
         Suspend 3—{W}
 timing=main
 oracle={W}: Shade of Trokair gets +1/+1 until end of turn.\nSuspend 3—{W}
+status=not supported: suspend

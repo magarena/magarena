@@ -10,3 +10,4 @@ ability={U}: SN gets +1/+0 until end of turn.;\
         Suspend 4—{U}
 timing=main
 oracle={U}: Viscerid Deepwalker gets +1/+0 until end of turn.\nSuspend 4—{U}
+status=not supported: suspend

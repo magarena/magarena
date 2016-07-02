@@ -10,3 +10,4 @@ ability=Flying;\
         Phasing
 timing=main
 oracle=Flying\nPhasing
+status=not supported: phasing

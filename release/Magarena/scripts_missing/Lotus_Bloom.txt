@@ -8,3 +8,4 @@ ability=Suspend 3—{0};\
         {T}, Sacrifice SN: Add three mana of any one color to your mana pool.
 timing=artifact
 oracle=Suspend 3—{0}\n{T}, Sacrifice Lotus Bloom: Add three mana of any one color to your mana pool.
+status=not supported: suspend

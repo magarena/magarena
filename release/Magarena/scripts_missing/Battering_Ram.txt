@@ -10,3 +10,4 @@ ability=At the beginning of combat on your turn, SN gains banding until end of c
         Whenever SN becomes blocked by a Wall, destroy that Wall at end of combat.
 timing=main
 oracle=At the beginning of combat on your turn, Battering Ram gains banding until end of combat.\nWhenever Battering Ram becomes blocked by a Wall, destroy that Wall at end of combat.
+status=not supported: banding

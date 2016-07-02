@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Choose one — (1) Remove two time counters from each permanent and each suspended card. (2) Put two time counters on each permanent with a time counter on it and each suspended card.
 timing=removal
 oracle=Choose one —\n• Remove two time counters from each permanent and each suspended card.\n• Put two time counters on each permanent with a time counter on it and each suspended card.
+status=not supported: suspend

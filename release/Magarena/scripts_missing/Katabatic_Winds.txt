@@ -8,3 +8,4 @@ ability=Phasing;\
         Creatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.
 timing=enchantment
 oracle=Phasing\nCreatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.
+status=not supported: phasing

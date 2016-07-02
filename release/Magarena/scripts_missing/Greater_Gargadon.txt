@@ -10,3 +10,4 @@ ability=Suspend 10—{R};\
         Sacrifice an artifact, creature, or land: Remove a time counter from SN. Activate this ability only if SN is suspended.
 timing=main
 oracle=Suspend 10—{R}\nSacrifice an artifact, creature, or land: Remove a time counter from Greater Gargadon. Activate this ability only if Greater Gargadon is suspended.
+status=not supported: suspend

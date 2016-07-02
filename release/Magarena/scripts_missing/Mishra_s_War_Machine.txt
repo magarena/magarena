@@ -10,3 +10,4 @@ ability=Banding;\
         At the beginning of your upkeep, SN deals 3 damage to you unless you discard a card. If SN deals damage to you this way, tap it.
 timing=main
 oracle=Banding\nAt the beginning of your upkeep, Mishra's War Machine deals 3 damage to you unless you discard a card. If Mishra's War Machine deals damage to you this way, tap it.
+status=not supported: banding

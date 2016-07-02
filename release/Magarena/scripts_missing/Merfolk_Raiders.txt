@@ -10,3 +10,4 @@ ability=Islandwalk;\
         Phasing
 timing=main
 oracle=Islandwalk\nPhasing
+status=not supported: phasing

@@ -9,3 +9,4 @@ pt=2/2
 ability=SN has banding as long as you control a Plains.
 timing=main
 oracle=Dire Wolves has banding as long as you control a Plains.
+status=not supported: banding

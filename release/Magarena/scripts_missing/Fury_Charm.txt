@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Choose one — (1) Destroy target artifact. (2) Target creature gets +1/+1 and gains trample until end of turn. (3) Remove two time counters from target permanent or suspended card.
 timing=removal
 oracle=Choose one —\n• Destroy target artifact.\n• Target creature gets +1/+1 and gains trample until end of turn.\n• Remove two time counters from target permanent or suspended card.
+status=not supported: suspend

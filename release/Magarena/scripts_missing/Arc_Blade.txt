@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=SN deals 2 damage to target creature or player. Exile SN with three time counters on it.~Suspend 3—{2}{R}
 timing=main
 oracle=Arc Blade deals 2 damage to target creature or player. Exile Arc Blade with three time counters on it.\nSuspend 3—{2}{R}
+status=not supported: suspend

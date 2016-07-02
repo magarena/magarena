@@ -9,3 +9,4 @@ pt=2/5
 ability=First strike; banding
 timing=main
 oracle=First strike, banding
+status=not supported: banding

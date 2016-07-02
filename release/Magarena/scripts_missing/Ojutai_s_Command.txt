@@ -7,3 +7,4 @@ cost={2}{W}{U}
 effect=Choose two — (1) Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. (2) You gain 4 life. (3) Counter target creature spell. (4) Draw a card.
 timing=counter
 oracle=Choose two —\n• Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.\n• You gain 4 life.\n• Counter target creature spell.\n• Draw a card.
+status=not supported: multi-choice-modal

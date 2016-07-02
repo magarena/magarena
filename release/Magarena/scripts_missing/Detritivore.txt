@@ -11,3 +11,4 @@ ability=SN's power and toughness are each equal to the number of nonbasic land c
         Whenever a time counter is removed from SN while it's exiled, destroy target nonbasic land.
 timing=main
 oracle=Detritivore's power and toughness are each equal to the number of nonbasic land cards in your opponents' graveyards.\nSuspend X—{X}{3}{R}. X can't be 0.\nWhenever a time counter is removed from Detritivore while it's exiled, destroy target nonbasic land.
+status=not supported: suspend

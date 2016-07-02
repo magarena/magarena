@@ -11,3 +11,4 @@ ability=Vigilance;\
         Suspend 4—{W}{U}
 timing=main
 oracle=Vigilance\n{T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.\nSuspend 4—{W}{U}
+status=not supported: suspend

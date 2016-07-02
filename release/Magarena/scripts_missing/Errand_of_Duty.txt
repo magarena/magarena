@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Put a 1/1 white Knight creature token with banding onto the battlefield.
 timing=removal
 oracle=Put a 1/1 white Knight creature token with banding onto the battlefield.
+status=not supported: banding

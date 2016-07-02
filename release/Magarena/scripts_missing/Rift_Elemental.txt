@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{R}, Remove a time counter from a permanent you control or suspended card you own: SN gets +2/+0 until end of turn.
 timing=main
 oracle={1}{R}, Remove a time counter from a permanent you control or suspended card you own: Rift Elemental gets +2/+0 until end of turn.
+status=not supported: suspend

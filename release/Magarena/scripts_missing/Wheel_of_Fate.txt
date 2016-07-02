@@ -7,3 +7,4 @@ color=r
 effect=Suspend 4—{1}{R}~Each player discards his or her hand, then draws seven cards.
 timing=main
 oracle=Suspend 4—{1}{R}\nEach player discards his or her hand, then draws seven cards.
+status=not supported: suspend

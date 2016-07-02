@@ -9,3 +9,4 @@ pt=2/2
 ability={2}, Exile a nonland card from your hand: Put four time counters on the exiled card. If it doesn't have suspend, it gains suspend.
 timing=main
 oracle={2}, Exile a nonland card from your hand: Put four time counters on the exiled card. If it doesn't have suspend, it gains suspend.
+status=not supported: suspend

@@ -7,3 +7,4 @@ cost={3}{U}{B}
 effect=Choose two — (1) Counter target noncreature spell. (2) Return target permanent to its owner's hand. (3) Target creature gets -3/-3 until end of turn. (4) Destroy target planeswalker.
 timing=counter
 oracle=Choose two —\n• Counter target noncreature spell.\n• Return target permanent to its owner's hand.\n• Target creature gets -3/-3 until end of turn.\n• Destroy target planeswalker.
+status=not supported: multi-choice-modal

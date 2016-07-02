@@ -7,3 +7,4 @@ cost={1}{W}{W}
 ability=Wall creatures you control get +1/+0 and have banding.
 timing=enchantment
 oracle=Wall creatures you control get +1/+0 and have banding.
+status=not supported: banding

@@ -8,3 +8,4 @@ ability=Phasing;\
         {T}: Add {U}{U} to your mana pool.
 timing=land
 oracle=Phasing\nTeferi's Isle enters the battlefield tapped.\n{T}: Add {U}{U} to your mana pool.
+status=not supported: phasing

@@ -11,3 +11,4 @@ ability=SN's power and toughness are each equal to the number of +1/+1 counters 
         Whenever a time counter is removed from SN while it's exiled, you may put a +1/+1 counter on target creature.
 timing=main
 oracle=Fungal Behemoth's power and toughness are each equal to the number of +1/+1 counters on creatures you control.\nSuspend X—{X}{G}{G}. X can't be 0.\nWhenever a time counter is removed from Fungal Behemoth while it's exiled, you may put a +1/+1 counter on target creature.
+status=not supported: suspend

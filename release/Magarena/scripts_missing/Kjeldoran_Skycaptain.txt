@@ -9,3 +9,4 @@ pt=2/2
 ability=Flying; first strike; banding
 timing=main
 oracle=Flying, first strike, banding
+status=not supported: banding

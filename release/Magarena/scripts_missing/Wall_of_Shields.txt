@@ -10,3 +10,4 @@ ability=Defender;\
         Banding
 timing=smain
 oracle=Defender\nBanding
+status=not supported: banding

@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a land type.;\
         Each land of the chosen type has phasing.
 timing=enchantment
 oracle=As Shimmer enters the battlefield, choose a land type.\nEach land of the chosen type has phasing.
+status=not supported: phasing

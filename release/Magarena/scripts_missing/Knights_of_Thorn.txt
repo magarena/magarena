@@ -9,3 +9,4 @@ pt=2/2
 ability=Protection from red; banding
 timing=main
 oracle=Protection from red, banding
+status=not supported: banding

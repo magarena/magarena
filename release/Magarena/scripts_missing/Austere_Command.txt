@@ -7,3 +7,4 @@ cost={4}{W}{W}
 effect=Choose two — (1) Destroy all artifacts. (2) Destroy all enchantments. (3) Destroy all creatures with converted mana cost 3 or less. (4) Destroy all creatures with converted mana cost 4 or greater.
 timing=main
 oracle=Choose two —\n• Destroy all artifacts.\n• Destroy all enchantments.\n• Destroy all creatures with converted mana cost 3 or less.\n• Destroy all creatures with converted mana cost 4 or greater.
+status=not supported: multi-choice-modal

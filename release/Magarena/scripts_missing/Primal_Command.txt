@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Choose two — (1) Target player gains 7 life. (2) Put target noncreature permanent on top of its owner's library. (3) Target player shuffles his or her graveyard into his or her library. (4) Search your library for a creature card, reveal it, put it into your hand, then shuffle your library.
 timing=main
 oracle=Choose two —\n• Target player gains 7 life.\n• Put target noncreature permanent on top of its owner's library.\n• Target player shuffles his or her graveyard into his or her library.\n• Search your library for a creature card, reveal it, put it into your hand, then shuffle your library.
+status=not supported: multi-choice-modal

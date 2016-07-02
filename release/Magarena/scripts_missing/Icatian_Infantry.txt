@@ -10,3 +10,4 @@ ability={1}: SN gains first strike until end of turn.;\
         {1}: SN gains banding until end of turn.
 timing=main
 oracle={1}: Icatian Infantry gains first strike until end of turn.\n{1}: Icatian Infantry gains banding until end of turn.
+status=not supported: banding

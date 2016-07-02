@@ -10,3 +10,4 @@ ability=Defender;\
         Whenever SN blocks a creature, if at least one other Wall creature is blocking that creature and no non-Wall creatures are blocking that creature, SN gains banding until end of turn.
 timing=smain
 oracle=Defender\nWhenever Wall of Caltrops blocks a creature, if at least one other Wall creature is blocking that creature and no non-Wall creatures are blocking that creature, Wall of Caltrops gains banding until end of turn.
+status=not supported: banding

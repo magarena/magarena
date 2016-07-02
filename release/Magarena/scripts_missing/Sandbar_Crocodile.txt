@@ -9,3 +9,4 @@ pt=6/5
 ability=Phasing
 timing=main
 oracle=Phasing
+status=not supported: phasing

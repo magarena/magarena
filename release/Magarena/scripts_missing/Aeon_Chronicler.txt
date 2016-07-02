@@ -11,3 +11,4 @@ ability=SN's power and toughness are each equal to the number of cards in your h
         Whenever a time counter is removed from SN while it's exiled, draw a card.
 timing=main
 oracle=Aeon Chronicler's power and toughness are each equal to the number of cards in your hand.\nSuspend X—{X}{3}{U}. X can't be 0. \nWhenever a time counter is removed from Aeon Chronicler while it's exiled, draw a card.
+status=not supported: suspend

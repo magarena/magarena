@@ -7,3 +7,4 @@ cost={G}{W}
 effect=Choose two — (1) Prevent all damage target instant or sorcery spell would deal this turn. (2) Target player sacrifices an enchantment. (3) Put a +1/+1 counter on target creature. (4) Target creature you control fights target creature you don't control.
 timing=removal
 oracle=Choose two —\n• Prevent all damage target instant or sorcery spell would deal this turn.\n• Target player sacrifices an enchantment.\n• Put a +1/+1 counter on target creature.\n• Target creature you control fights target creature you don't control.
+status=not supported: multi-choice-modal

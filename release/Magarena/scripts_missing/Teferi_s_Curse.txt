@@ -10,3 +10,4 @@ ability=Enchant artifact or creature;\
 timing=aura
 enchant=default,artifact or creature
 oracle=Enchant artifact or creature\nEnchanted permanent has phasing.
+status=not supported: phasing

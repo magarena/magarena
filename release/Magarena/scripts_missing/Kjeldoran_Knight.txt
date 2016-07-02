@@ -11,3 +11,4 @@ ability=Banding;\
         {W}{W}: SN gets +0/+2 until end of turn.
 timing=main
 oracle=Banding\n{1}{W}: Kjeldoran Knight gets +1/+0 until end of turn.\n{W}{W}: Kjeldoran Knight gets +0/+2 until end of turn.
+status=not supported: banding

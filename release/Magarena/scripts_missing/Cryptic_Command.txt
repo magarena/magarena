@@ -7,3 +7,4 @@ cost={1}{U}{U}{U}
 effect=Choose two — (1) Counter target spell. (2) Return target permanent to its owner's hand. (3) Tap all creatures your opponents control. (4) Draw a card.
 timing=counter
 oracle=Choose two —\n• Counter target spell.\n• Return target permanent to its owner's hand.\n• Tap all creatures your opponents control.\n• Draw a card.
+status=not supported: multi-choice-modal

@@ -10,3 +10,4 @@ ability=Banding;\
         {T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.
 timing=main
 oracle=Banding\n{T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.
+status=not supported: banding

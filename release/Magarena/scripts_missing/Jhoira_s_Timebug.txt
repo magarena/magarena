@@ -9,3 +9,4 @@ pt=1/2
 ability={T}: Choose target permanent you control or suspended card you own. If that permanent or card has a time counter on it, you may remove a time counter from it or put another time counter on it.
 timing=main
 oracle={T}: Choose target permanent you control or suspended card you own. If that permanent or card has a time counter on it, you may remove a time counter from it or put another time counter on it.
+status=not supported: suspend

@@ -12,3 +12,4 @@ ability=Flying;\
         Whenever SN phases in, draw a card.
 timing=main
 oracle=Flying\nPhasing\nWhenever Teferi's Imp phases out, discard a card.\nWhenever Teferi's Imp phases in, draw a card.
+status=not supported: phasing

@@ -7,3 +7,4 @@ cost={R}{G}
 effect=Choose two — (1) Your opponents can't gain life this turn. (2) SN deals 3 damage to each opponent. (3) You may put a land card from your hand onto the battlefield. (4) Creatures you control get +1/+1 and gain reach until end of turn.
 timing=removal
 oracle=Choose two —\n• Your opponents can't gain life this turn.\n• Atarka's Command deals 3 damage to each opponent.\n• You may put a land card from your hand onto the battlefield.\n• Creatures you control get +1/+1 and gain reach until end of turn.
+status=not supported: multi-choice-modal

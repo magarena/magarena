@@ -10,3 +10,4 @@ ability=First strike; banding;\
         Whenever SN attacks, all creatures banded with it gain first strike until end of turn.
 timing=main
 oracle=First strike, banding\nWhenever Icatian Skirmishers attacks, all creatures banded with it gain first strike until end of turn.
+status=not supported: banding

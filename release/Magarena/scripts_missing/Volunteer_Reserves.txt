@@ -10,3 +10,4 @@ ability=Banding;\
         Cumulative upkeep {1}
 timing=main
 oracle=Banding\nCumulative upkeep {1}
+status=not supported: banding

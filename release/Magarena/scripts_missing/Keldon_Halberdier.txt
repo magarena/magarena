@@ -10,3 +10,4 @@ ability=First strike;\
         Suspend 4—{R}
 timing=main
 oracle=First strike\nSuspend 4—{R}
+status=not supported: suspend

@@ -9,3 +9,4 @@ pt=4/4
 ability={0}: SN gets -1/-1 and gains your choice of banding, flying, first strike, or trample until end of turn.
 timing=main
 oracle={0}: Urza's Avenger gets -1/-1 and gains your choice of banding, flying, first strike, or trample until end of turn.
+status=not supported: banding

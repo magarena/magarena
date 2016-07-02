@@ -11,3 +11,4 @@ ability=Phasing;\
         When SN phases in, put a +1/+1 counter on it.
 timing=main
 oracle=Phasing\nAt the beginning of your upkeep, Warping Wurm phases out unless you pay {2}{G}{U}.\nWhen Warping Wurm phases in, put a +1/+1 counter on it.
+status=not supported: phasing

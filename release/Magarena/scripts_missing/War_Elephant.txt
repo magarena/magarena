@@ -9,3 +9,4 @@ pt=2/2
 ability=Trample; banding
 timing=main
 oracle=Trample, banding
+status=not supported: banding

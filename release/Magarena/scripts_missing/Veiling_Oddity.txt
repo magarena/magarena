@@ -10,3 +10,4 @@ ability=Suspend 4—{1}{U};\
         When the last time counter is removed from SN while it's exiled, creatures can't be blocked this turn.
 timing=main
 oracle=Suspend 4—{1}{U}\nWhen the last time counter is removed from Veiling Oddity while it's exiled, creatures can't be blocked this turn.
+status=not supported: suspend

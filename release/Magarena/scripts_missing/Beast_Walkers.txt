@@ -9,3 +9,4 @@ pt=2/2
 ability={G}: SN gains banding until end of turn.
 timing=main
 oracle={G}: Beast Walkers gains banding until end of turn.
+status=not supported: banding
