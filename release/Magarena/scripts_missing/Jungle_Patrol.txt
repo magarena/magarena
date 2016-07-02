@@ -10,3 +10,4 @@ ability={1}{G}, {T}:  Put a 0/1 green Wall creature token with defender named Wo
         Sacrifice a token named Wood: Add {R} to your mana pool.
 timing=main
 oracle={1}{G}, {T}:  Put a 0/1 green Wall creature token with defender named Wood onto the battlefield.\nSacrifice a token named Wood: Add {R} to your mana pool.
+status=not supported: mana-ability-with-choice

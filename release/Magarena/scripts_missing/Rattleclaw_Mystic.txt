@@ -11,3 +11,4 @@ ability={T}: Add {G}, {U}, or {R} to your mana pool.;\
         When SN is turned face up, add {G}{U}{R} to your mana pool.
 timing=main
 oracle={T}: Add {G}, {U}, or {R} to your mana pool.\nMorph {2}\nWhen Rattleclaw Mystic is turned face up, add {G}{U}{R} to your mana pool.
+status=not supported: non-activated-mana-ability

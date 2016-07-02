@@ -9,3 +9,4 @@ pt=1/4
 ability={T}: Add an amount of {G} to your mana pool equal to your devotion to green.
 timing=main
 oracle={T}: Add an amount of {G} to your mana pool equal to your devotion to green.
+status=not supported: add-multiple-mana

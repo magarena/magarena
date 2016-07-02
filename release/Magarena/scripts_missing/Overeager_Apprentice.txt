@@ -9,3 +9,4 @@ pt=1/2
 ability=Discard a card, Sacrifice SN: Add {B}{B}{B} to your mana pool.
 timing=main
 oracle=Discard a card, Sacrifice Overeager Apprentice: Add {B}{B}{B} to your mana pool.
+status=not supported: add-multiple-mana

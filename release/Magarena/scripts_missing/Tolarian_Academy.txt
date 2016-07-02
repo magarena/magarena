@@ -6,3 +6,4 @@ type=Legendary,Land
 ability={T}: Add {U} to your mana pool for each artifact you control.
 timing=land
 oracle={T}: Add {U} to your mana pool for each artifact you control.
+status=not supported: add-multiple-mana

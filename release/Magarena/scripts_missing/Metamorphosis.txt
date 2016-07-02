@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Add X mana of any one color to your mana pool, where X is one plus the sacrificed creature's converted mana cost. Spend this mana only to cast creature spells.
 timing=main
 oracle=As an additional cost to cast Metamorphosis, sacrifice a creature.\nAdd X mana of any one color to your mana pool, where X is one plus the sacrificed creature's converted mana cost. Spend this mana only to cast creature spells.
+status=not supported: add-multiple-mana

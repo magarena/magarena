@@ -7,3 +7,4 @@ cost={3}
 ability=Sacrifice a creature: Add {C}{C} to your mana pool.
 timing=artifact
 oracle=Sacrifice a creature: Add {C}{C} to your mana pool.
+status=not supported: add-multiple-mana

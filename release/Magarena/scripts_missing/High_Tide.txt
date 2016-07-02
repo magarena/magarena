@@ -7,3 +7,4 @@ cost={U}
 effect=Until end of turn, whenever a player taps an Island for mana, that player adds {U} to his or her mana pool.
 timing=removal
 oracle=Until end of turn, whenever a player taps an Island for mana, that player adds {U} to his or her mana pool.
+status=not supported: non-activated-mana-ability

@@ -9,3 +9,4 @@ pt=1/3
 ability=Whenever a player taps a Mountain, Forest, or Plains for mana, that player adds one mana to his or her mana pool of any type that land produced.
 timing=main
 oracle=Whenever a player taps a Mountain, Forest, or Plains for mana, that player adds one mana to his or her mana pool of any type that land produced.
+status=not supported: non-activated-mana-ability

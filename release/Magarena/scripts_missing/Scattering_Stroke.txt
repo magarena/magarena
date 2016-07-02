@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Counter target spell. Clash with an opponent. If you win, at the beginning of your next main phase, you may add an amount of {C} to your mana pool equal to that spell's converted mana cost.
 timing=counter
 oracle=Counter target spell. Clash with an opponent. If you win, at the beginning of your next main phase, you may add an amount of {C} to your mana pool equal to that spell's converted mana cost.
+status=not supported: add-multiple-mana

@@ -6,3 +6,4 @@ type=Legendary,Land
 ability={T}: Add {G} to your mana pool for each creature you control.
 timing=land
 oracle={T}: Add {G} to your mana pool for each creature you control.
+status=not supported: add-multiple-mana

@@ -10,3 +10,4 @@ pt=3/3
 ability=When SN dies, add {C}{C}{C} to your mana pool.
 timing=main
 oracle=When Cathodion dies, add {C}{C}{C} to your mana pool.
+status=not supported: add-multiple-mana

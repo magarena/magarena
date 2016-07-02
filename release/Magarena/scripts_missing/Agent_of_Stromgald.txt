@@ -9,3 +9,4 @@ pt=1/1
 ability={R}: Add {B} to your mana pool.
 timing=main
 oracle={R}: Add {B} to your mana pool.
+status=not supported: mana-ability-with-choice

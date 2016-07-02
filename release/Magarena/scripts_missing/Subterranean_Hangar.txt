@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Remove any number of storage counters from SN: Add {B} to your mana pool for each storage counter removed this way.
 timing=land
 oracle=Subterranean Hangar enters the battlefield tapped.\n{T}: Put a storage counter on Subterranean Hangar.\n{T}, Remove any number of storage counters from Subterranean Hangar: Add {B} to your mana pool for each storage counter removed this way.
+status=not supported: add-multiple-mana

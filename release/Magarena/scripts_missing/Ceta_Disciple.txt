@@ -10,3 +10,4 @@ ability={R}, {T}: Target creature gets +2/+0 until end of turn.;\
         {G}, {T}: Add one mana of any color to your mana pool.
 timing=main
 oracle={R}, {T}: Target creature gets +2/+0 until end of turn.\n{G}, {T}: Add one mana of any color to your mana pool.
+status=not supported: mana-ability-with-choice

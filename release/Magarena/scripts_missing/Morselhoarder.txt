@@ -10,3 +10,4 @@ ability=SN enters the battlefield with two -1/-1 counters on it.;\
         Remove a -1/-1 counter from SN: Add one mana of any color to your mana pool.
 timing=main
 oracle=Morselhoarder enters the battlefield with two -1/-1 counters on it.\nRemove a -1/-1 counter from Morselhoarder: Add one mana of any color to your mana pool.
+status=not supported: repeated-mana-ability

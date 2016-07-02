@@ -8,3 +8,4 @@ ability=At the beginning of each player's end step, put a charge counter on SN f
         Remove a charge counter from SN: Add {C} to your mana pool. Any player may activate this ability but only during his or her turn before the end step.
 timing=enchantment
 oracle=At the beginning of each player's end step, put a charge counter on Mana Cache for each untapped land that player controls.\nRemove a charge counter from Mana Cache: Add {C} to your mana pool. Any player may activate this ability but only during his or her turn before the end step.
+status=not supported: repeated-mana-ability

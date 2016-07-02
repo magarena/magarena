@@ -9,3 +9,4 @@ pt=1/1
 ability=At the beginning of each player's precombat main phase, add {G}{G} to that player's mana pool.
 timing=main
 oracle=At the beginning of each player's precombat main phase, add {G}{G} to that player's mana pool.
+status=not supported: add-multiple-mana

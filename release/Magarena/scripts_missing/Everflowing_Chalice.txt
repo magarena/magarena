@@ -9,3 +9,4 @@ ability=Multikicker {2};\
         {T}: Add {C} to your mana pool for each charge counter on SN.
 timing=artifact
 oracle=Multikicker {2}\nEverflowing Chalice enters the battlefield with a charge counter on it for each time it was kicked.\n{T}: Add {C} to your mana pool for each charge counter on Everflowing Chalice.
+status=not supported: add-multiple-mana

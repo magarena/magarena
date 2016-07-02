@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {2}, {T}, Sacrifice SN: Tap two target lands.
 timing=land
 oracle=Wintermoon Mesa enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice Wintermoon Mesa: Tap two target lands.
+status=not supported: multiple-targets

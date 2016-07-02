@@ -8,3 +8,4 @@ ability=When you play another land, sacrifice SN.;\
         {T}: Add {C}{C} to your mana pool.
 timing=land
 oracle=When you play another land, sacrifice City of Traitors.\n{T}: Add {C}{C} to your mana pool.
+status=not supported: add-multiple-mana

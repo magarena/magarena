@@ -8,3 +8,4 @@ ability=Flash;\
         Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
 timing=flash
 oracle=Flash\nWhenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+status=not supported: non-activated-mana-ability

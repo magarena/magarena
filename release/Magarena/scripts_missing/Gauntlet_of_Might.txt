@@ -8,3 +8,4 @@ ability=Red creatures get +1/+1.;\
         Whenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.
 timing=artifact
 oracle=Red creatures get +1/+1.\nWhenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.
+status=not supported: non-activated-mana-ability

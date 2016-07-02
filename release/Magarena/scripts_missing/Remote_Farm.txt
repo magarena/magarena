@@ -7,3 +7,4 @@ ability=SN enters the battlefield tapped with two depletion counters on it.;\
         {T}, Remove a depletion counter from SN: Add {W}{W} to your mana pool. If there are no depletion counters on SN, sacrifice it.
 timing=land
 oracle=Remote Farm enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Remote Farm: Add {W}{W} to your mana pool. If there are no depletion counters on Remote Farm, sacrifice it.
+status=not supported: add-multiple-mana

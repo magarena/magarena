@@ -10,3 +10,4 @@ ability=Other Elf creatures you control get +1/+1.;\
         {T}: Add {G} to your mana pool for each Elf you control.
 timing=main
 oracle=Other Elf creatures you control get +1/+1.\n{T}: Add {G} to your mana pool for each Elf you control.
+status=not supported: add-multiple-mana

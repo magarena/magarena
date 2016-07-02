@@ -9,3 +9,4 @@ pt=2/2
 ability={T}: Reveal any number of creature cards with power 5 or greater from your hand. Add {G} to your mana pool for each card revealed this way.
 timing=main
 oracle={T}: Reveal any number of creature cards with power 5 or greater from your hand. Add {G} to your mana pool for each card revealed this way.
+status=not supported: add-multiple-mana

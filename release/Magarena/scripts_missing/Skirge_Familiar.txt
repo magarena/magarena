@@ -10,3 +10,4 @@ ability=Flying;\
         Discard a card: Add {B} to your mana pool.
 timing=main
 oracle=Flying\nDiscard a card: Add {B} to your mana pool.
+status=not supported: mana-ability-with-choice

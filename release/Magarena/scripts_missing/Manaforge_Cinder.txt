@@ -9,3 +9,4 @@ pt=1/1
 ability={1}: Add {B} or {R} to your mana pool. Activate this ability no more than three times each turn.
 timing=main
 oracle={1}: Add {B} or {R} to your mana pool. Activate this ability no more than three times each turn.
+status=not supported: mana-ability-with-choice

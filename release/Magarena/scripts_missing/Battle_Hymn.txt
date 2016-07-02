@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Add {R} to your mana pool for each creature you control.
 timing=removal
 oracle=Add {R} to your mana pool for each creature you control.
+status=not supported: add-multiple-mana

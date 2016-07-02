@@ -9,3 +9,4 @@ pt=3/3
 ability={3}, Sacrifice SN: Add {R}{R}{R} to your mana pool.
 timing=main
 oracle={3}, Sacrifice Coal Golem: Add {R}{R}{R} to your mana pool.
+status=not supported: add-multiple-mana

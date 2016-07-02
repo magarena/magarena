@@ -10,3 +10,4 @@ ability={T}: Add {C}{C} to your mana pool. Spend this mana only to cast artifact
         {U}, {T}: Search your library for a card named Heart-Piercer Bow or Vial of Dragonfire, reveal it, put it into your hand, then shuffle your library.
 timing=main
 oracle={T}: Add {C}{C} to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.\n{U}, {T}: Search your library for a card named Heart-Piercer Bow or Vial of Dragonfire, reveal it, put it into your hand, then shuffle your library.
+status=not supported: add-multiple-mana

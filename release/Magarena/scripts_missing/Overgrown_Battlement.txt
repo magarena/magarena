@@ -10,3 +10,4 @@ ability=Defender;\
         {T}: Add {G} to your mana pool for each creature with defender you control.
 timing=smain
 oracle=Defender\n{T}: Add {G} to your mana pool for each creature with defender you control.
+status=not supported: add-multiple-mana

@@ -9,3 +9,4 @@ ability=You have no maximum hand size.;\
         {T}: Add {C} to your mana pool.
 timing=artifact
 oracle=You have no maximum hand size.\n{T}: Add {C} to your mana pool.
+status=needs groovy

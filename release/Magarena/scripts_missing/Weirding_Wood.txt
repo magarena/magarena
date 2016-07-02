@@ -11,3 +11,4 @@ ability=Enchant land;\
 timing=aura
 enchant=default,creature
 oracle=Enchant land\nWhen Weirding Wood enters the battlefield, investigate.\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."
+status=not supported: add-multiple-mana

@@ -6,3 +6,4 @@ type=Land
 ability={T}: Add {C}{C}{C} to your mana pool. Spend this mana only to cast artifact spells.
 timing=land
 oracle={T}: Add {C}{C}{C} to your mana pool. Spend this mana only to cast artifact spells.
+status=not supported: add-multiple-mana

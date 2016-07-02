@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, if you cast it from your hand, add {R}{R}{R} to your mana pool.
 timing=main
 oracle=When Coal Stoker enters the battlefield, if you cast it from your hand, add {R}{R}{R} to your mana pool.
+status=not supported: add-multiple-mana

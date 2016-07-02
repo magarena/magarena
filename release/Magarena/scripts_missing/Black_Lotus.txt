@@ -7,3 +7,4 @@ cost={0}
 ability={T}, Sacrifice SN: Add three mana of any one color to your mana pool.
 timing=artifact
 oracle={T}, Sacrifice Black Lotus: Add three mana of any one color to your mana pool.
+status=not supported: add-multiple-mana

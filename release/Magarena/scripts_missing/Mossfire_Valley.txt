@@ -6,3 +6,4 @@ type=Land
 ability={1}, {T}: Add {R}{G} to your mana pool.
 timing=land
 oracle={1}, {T}: Add {R}{G} to your mana pool.
+status=not supported: add-multiple-mana

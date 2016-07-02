@@ -7,3 +7,4 @@ cost={2}{B}
 effect=For each artifact or creature card in target opponent's graveyard, Add {C} to your mana pool and you gain 1 life.
 timing=removal
 oracle=For each artifact or creature card in target opponent's graveyard, Add {C} to your mana pool and you gain 1 life.
+status=not supported: non-activated-mana-ability

@@ -15,3 +15,4 @@ ability=Level up {1}{G};\
         Elves you control have "{T}: Add {G}{G} to your mana pool."
 timing=main
 oracle=Level up {1}{G}\nLEVEL 1-4\n1/2\n{T}: Add {G}{G} to your mana pool.\nLEVEL 5+\n1/4\nElves you control have "{T}: Add {G}{G} to your mana pool."
+status=not supported: add-multiple-mana

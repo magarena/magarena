@@ -9,3 +9,4 @@ pt=2/1
 ability={T}, Sacrifice SN: Add {C}{C} to your mana pool. If that mana is spent on a creature spell, it gains haste until end of turn.
 timing=main
 oracle={T}, Sacrifice Generator Servant: Add {C}{C} to your mana pool. If that mana is spent on a creature spell, it gains haste until end of turn.
+status=not supported: add-multiple-mana

@@ -8,3 +8,4 @@ cost={3}{B}{B}
 effect=Search your library for a card and put that card into your hand. Then shuffle your library.~If there are two or more instant and/or sorcery cards in your graveyard, add {B}{B}{B} to your mana pool.
 timing=main
 oracle=Search your library for a card and put that card into your hand. Then shuffle your library.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, add {B}{B}{B} to your mana pool.
+status=not supported: add-multiple-mana

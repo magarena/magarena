@@ -9,3 +9,4 @@ pt=4/4
 ability={2}, {T}: Add {B} to your mana pool for each Swamp you control.
 timing=main
 oracle={2}, {T}: Add {B} to your mana pool for each Swamp you control.
+status=not supported: add-multiple-mana

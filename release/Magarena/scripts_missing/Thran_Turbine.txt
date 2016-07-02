@@ -7,3 +7,4 @@ cost={1}
 ability=At the beginning of your upkeep, you may add {C} or {C}{C} to your mana pool. You can't spend this mana to cast spells.
 timing=artifact
 oracle=At the beginning of your upkeep, you may add {C} or {C}{C} to your mana pool. You can't spend this mana to cast spells.
+status=not supported: add-multiple-mana

@@ -7,3 +7,4 @@ cost={5}
 ability={T}: Add three mana of any one color to your mana pool.
 timing=artifact
 oracle={T}: Add three mana of any one color to your mana pool.
+status=not supported: add-multiple-mana

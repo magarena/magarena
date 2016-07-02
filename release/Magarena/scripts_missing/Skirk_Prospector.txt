@@ -9,3 +9,4 @@ pt=1/1
 ability=Sacrifice a Goblin: Add {R} to your mana pool.
 timing=main
 oracle=Sacrifice a Goblin: Add {R} to your mana pool.
+status=not supported: mana-ability-with-choice

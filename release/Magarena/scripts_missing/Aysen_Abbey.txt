@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {2}, {T}: Add {G} or {U} to your mana pool.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Add {W} to your mana pool.\n{2}, {T}: Add {G} or {U} to your mana pool.
+status=not supported: mana-ability-with-choice

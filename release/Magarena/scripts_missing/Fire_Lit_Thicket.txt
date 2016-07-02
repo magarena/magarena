@@ -7,3 +7,4 @@ ability={T}: Add {C} to your mana pool.;\
         {R/G}, {T}: Add {R}{R}, {R}{G}, or {G}{G} to your mana pool.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{R/G}, {T}: Add {R}{R}, {R}{G}, or {G}{G} to your mana pool.
+status=not supported: add-multiple-mana

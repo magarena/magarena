@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Add {W}{U}{B}{R}{G} to your mana pool.
 timing=main
 oracle=Add {W}{U}{B}{R}{G} to your mana pool.
+status=not supported: add-multiple-mana

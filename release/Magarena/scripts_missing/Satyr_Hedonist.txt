@@ -9,3 +9,4 @@ pt=2/1
 ability={R}, Sacrifice SN: Add {R}{R}{R} to your mana pool.
 timing=main
 oracle={R}, Sacrifice Satyr Hedonist: Add {R}{R}{R} to your mana pool.
+status=not supported: add-multiple-mana

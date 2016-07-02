@@ -7,3 +7,4 @@ cost={3}{R}
 effect=Add {R} to your mana pool for each card in your hand.
 timing=main
 oracle=Add {R} to your mana pool for each card in your hand.
+status=not supported: add-multiple-mana

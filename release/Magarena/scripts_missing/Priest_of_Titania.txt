@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool for each Elf on the battlefield.
 timing=main
 oracle={T}: Add {G} to your mana pool for each Elf on the battlefield.
+status=not supported: add-multiple-mana

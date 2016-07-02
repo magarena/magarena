@@ -7,3 +7,4 @@ ability={T}: Add {C} to your mana pool.;\
         {R}{G}, {T}: Target Beast creature you control fights target creature an opponent controls.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{R}{G}, {T}: Target Beast creature you control fights target creature an opponent controls.
+status=not supported: multiple-targets

@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Add {B}{B}{B}{B} to your mana pool.
 timing=removal
 oracle=As an additional cost to cast Culling the Weak, sacrifice a creature.\nAdd {B}{B}{B}{B} to your mana pool.
+status=not supported: add-multiple-mana

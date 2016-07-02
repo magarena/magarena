@@ -11,3 +11,4 @@ ability=Haste;\
         {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.
 timing=fmain
 oracle=Haste\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.
+status=not supported: mana-restriction
