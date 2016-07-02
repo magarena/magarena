@@ -7,3 +7,4 @@ cost={2}{G}
 ability=Each creature you control can't be blocked by more than one creature.
 timing=enchantment
 oracle=Each creature you control can't be blocked by more than one creature.
+status=not supported: blocking-restriction

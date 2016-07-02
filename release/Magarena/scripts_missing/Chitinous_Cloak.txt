@@ -10,3 +10,4 @@ ability=Equipped creature gets +2/+2 and has menace.;\
         Equip {3}
 timing=equipment
 oracle=Equipped creature gets +2/+2 and has menace.\nEquip {3}
+status=not supported: blocking-restriction

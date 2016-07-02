@@ -12,3 +12,4 @@ transform=Harvest Hand
 timing=equipment
 hidden
 oracle=Equipped creature gets +1/+1.\nAs long as equipped creature is a Human, it has menace.\nEquip {2}
+status=not supported: blocking-restriction

@@ -9,3 +9,4 @@ pt=2/3
 ability=SN can't be blocked by more than one creature.
 timing=main
 oracle=Huang Zhong, Shu General can't be blocked by more than one creature.
+status=not supported: blocking-restriction

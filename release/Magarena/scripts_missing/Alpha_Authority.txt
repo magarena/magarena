@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has hexproof and can't be blocked by more than one creature.
+status=not supported: blocking-restriction

@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN attacks, Warrior creatures you control gain menace until end of turn.
 timing=main
 oracle=Whenever Blood-Chin Rager attacks, Warrior creatures you control gain menace until end of turn.
+status=not supported: blocking-restriction

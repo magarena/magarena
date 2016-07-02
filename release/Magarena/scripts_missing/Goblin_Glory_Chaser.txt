@@ -11,3 +11,4 @@ ability=Renown 1;\
         As long as SN is renowned, it has menace.
 timing=main
 oracle=Renown 1\nAs long as Goblin Glory Chaser is renowned, it has menace.
+status=not supported: blocking-restriction

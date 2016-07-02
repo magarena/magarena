@@ -9,3 +9,4 @@ pt=4/4
 ability={R}: SN gains menace until end of turn.
 timing=main
 oracle={R}: Gruul Nodorog gains menace until end of turn.
+status=not supported: blocking-restriction

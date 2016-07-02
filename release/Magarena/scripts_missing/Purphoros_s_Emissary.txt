@@ -11,3 +11,4 @@ ability=Bestow {6}{R};\
         Enchanted creature gets +3/+3 and has menace.
 timing=main
 oracle=Bestow {6}{R}\nMenace\nEnchanted creature gets +3/+3 and has menace.
+status=not supported: blocking-restriction

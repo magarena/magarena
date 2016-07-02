@@ -10,3 +10,4 @@ ability=Horsemanship;\
         Each creature you control can't be blocked by more than one creature.
 timing=main
 oracle=Horsemanship\nEach creature you control can't be blocked by more than one creature.
+status=not supported: blocking-restriction

@@ -13,3 +13,4 @@ transform=Kruin Outlaw
 timing=main
 hidden
 oracle=Double strike\nWerewolves you control have menace.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Terror of Kruin Pass.
+status=not supported: blocking-restriction

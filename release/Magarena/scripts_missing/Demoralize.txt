@@ -7,3 +7,4 @@ cost={2}{R}
 effect=All creatures gain menace until end of turn.~If seven or more cards are in your graveyard, creatures can't block this turn.
 timing=removal
 oracle=All creatures gain menace until end of turn.\nThreshold — If seven or more cards are in your graveyard, creatures can't block this turn.
+status=not supported: blocking-restriction

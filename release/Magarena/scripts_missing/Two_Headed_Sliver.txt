@@ -9,3 +9,4 @@ pt=1/1
 ability=All Sliver creatures have menace.
 timing=main
 oracle=All Sliver creatures have menace.
+status=not supported: blocking-restriction

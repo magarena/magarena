@@ -11,3 +11,4 @@ ability=Devoid;\
         {C}: SN gets +1/+0 and gains menace until end of turn.
 timing=main
 oracle=Devoid\n{C}: Kozilek's Shrieker gets +1/+0 and gains menace until end of turn.
+status=not supported: blocking-restriction

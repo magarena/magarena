@@ -9,3 +9,4 @@ pt=5/3
 ability=SN has menace as long as there are four or more card types among cards in your graveyard.
 timing=main
 oracle=Delirium — Hound of the Farbogs has menace as long as there are four or more card types among cards in your graveyard.
+status=not supported: blocking-restriction

@@ -10,3 +10,4 @@ ability=Flanking;\
         {1}{R}: SN gains menace until end of turn.
 timing=main
 oracle=Flanking\n{1}{R}: Searing Spear Askari gains menace until end of turn.
+status=not supported: blocking-restriction

@@ -9,3 +9,4 @@ pt=2/2
 ability=Goblins you control and Elementals you control have menace.
 timing=main
 oracle=Goblins you control and Elementals you control have menace.
+status=not supported: blocking-restriction

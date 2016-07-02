@@ -9,3 +9,4 @@ ability=Equipped creature has trample and can't be blocked by more than one crea
         Equip {1}
 timing=equipment
 oracle=Equipped creature has trample and can't be blocked by more than one creature.\nEquip {1}
+status=not supported: blocking-restriction

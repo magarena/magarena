@@ -10,3 +10,4 @@ pt=2/2
 ability=Whenever SN or another Ally enters the battlefield under your control, creatures you control gain menace until end of turn.
 timing=main
 oracle=Rally — Whenever Firemantle Mage or another Ally enters the battlefield under your control, creatures you control gain menace until end of turn.
+status=not supported: blocking-restriction

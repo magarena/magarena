@@ -10,3 +10,4 @@ ability=Whenever SN attacks, creatures you control gain menace until end of turn
         Undying
 timing=main
 oracle=Whenever Pyreheart Wolf attacks, creatures you control gain menace until end of turn.\nUndying
+status=not supported: blocking-restriction

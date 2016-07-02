@@ -11,3 +11,4 @@ ability=Renown 6;\
         SN can't be blocked by more than one creature.
 timing=main
 oracle=Renown 6\nOutland Colossus can't be blocked by more than one creature.
+status=not supported: blocking-restriction

@@ -10,3 +10,4 @@ ability=Provoke;\
         SN can't be blocked by more than one creature.
 timing=main
 oracle=Provoke\nKrosan Vorine can't be blocked by more than one creature.
+status=not supported: blocking-restriction

@@ -9,3 +9,4 @@ pt=3/3
 ability=SN can't be blocked by more than one creature.
 timing=main
 oracle=Norwood Riders can't be blocked by more than one creature.
+status=not supported: blocking-restriction

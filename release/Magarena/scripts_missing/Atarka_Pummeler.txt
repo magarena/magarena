@@ -9,3 +9,4 @@ pt=4/5
 ability={3}{R}{R}: Creatures you control gain menace until end of turn. Activate this ability only if creatures you control have total power 8 or greater.
 timing=main
 oracle=Formidable — {3}{R}{R}: Creatures you control gain menace until end of turn. Activate this ability only if creatures you control have total power 8 or greater.
+status=not supported: blocking-restriction
