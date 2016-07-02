@@ -806,7 +806,7 @@ missing_override:
 
 parse_new.txt: cards/existing_master.txt
 	patch -p1 < parse_missing.patch
-	cp release/Magarena/scripts_missing/* release/Magarena/scripts
+	cp `grep status=not -Lr release/Magarena/scripts_missing/` release/Magarena/scripts
 	-rm 101.out
 	make debug
 	grep "ERROR " 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > parse_missing.txt
