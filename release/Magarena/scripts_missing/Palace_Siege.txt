@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose Khans or Dragons. \
         (2) Dragons — At the beginning of your upkeep, each opponent loses 2 life and you gain 2 life.
 timing=enchantment
 oracle=As Palace Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of your upkeep, return target creature card from your graveyard to your hand.\n• Dragons — At the beginning of your upkeep, each opponent loses 2 life and you gain 2 life.
+status=not supported: modal-permanent

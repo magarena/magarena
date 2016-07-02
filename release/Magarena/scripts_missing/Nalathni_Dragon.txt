@@ -10,3 +10,4 @@ ability=Flying; banding;\
         {R}: SN gets +1/+0 until end of turn. If this ability has been activated four or more times this turn, sacrifice SN at the beginning of the next end step.
 timing=main
 oracle=Flying; banding. {R}: Nalathni Dragon gets +1/+0 until end of turn. If this ability has been activated four or more times this turn, sacrifice Nalathni Dragon at the beginning of the next end step.
+status=not supported: banding
