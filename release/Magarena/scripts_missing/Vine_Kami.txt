@@ -10,3 +10,4 @@ ability=Menace;\
         Soulshift 6
 timing=main
 oracle=Menace\nSoulshift 6
+status=not supported: blocking-restriction

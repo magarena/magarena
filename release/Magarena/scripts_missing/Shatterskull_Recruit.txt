@@ -10,3 +10,4 @@ pt=4/4
 ability=Menace
 timing=main
 oracle=Menace
+status=not supported: blocking-restriction

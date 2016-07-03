@@ -10,3 +10,4 @@ ability=Menace;\
         Whenever SN attacks or blocks, sacrifice another creature or land.
 timing=main
 oracle=Menace\nWhenever Morkrut Necropod attacks or blocks, sacrifice another creature or land.
+status=not supported: blocking-restriction

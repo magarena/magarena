@@ -11,3 +11,4 @@ ability=Menace;\
         When SN is turned face up, exile the top card of your library. Until end of turn, you may play that card.
 timing=main
 oracle=Menace\nMegamorph {R}\nWhen Ire Shaman is turned face up, exile the top card of your library. Until end of turn, you may play that card.
+status=not supported: blocking-restriction

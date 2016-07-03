@@ -12,3 +12,4 @@ transform=Village Messenger
 timing=main
 hidden
 oracle=Menace\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonrise Intruder.
+status=not supported: blocking-restriction

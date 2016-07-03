@@ -11,3 +11,4 @@ ability=Menace;\
         When SN enters the battlefield, you may destroy target non-Elf creature whose power and toughness aren't equal.
 timing=main
 oracle=Menace\nWhen Gilt-Leaf Winnower enters the battlefield, you may destroy target non-Elf creature whose power and toughness aren't equal.
+status=not supported: blocking-restriction

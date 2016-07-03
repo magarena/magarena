@@ -12,3 +12,4 @@ ability=When you cast SN, if you have fewer than seven cards in hand, draw cards
         Discard a card with converted mana cost X: Counter target spell with converted mana cost X.
 timing=main
 oracle=When you cast Kozilek, the Great Distortion, if you have fewer than seven cards in hand, draw cards equal to the difference.\nMenace\nDiscard a card with converted mana cost X: Counter target spell with converted mana cost X.
+status=not supported: blocking-restriction

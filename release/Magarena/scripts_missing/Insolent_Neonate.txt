@@ -10,3 +10,4 @@ ability=Menace;\
         Discard a card, Sacrifice SN: Draw a card.
 timing=main
 oracle=Menace\nDiscard a card, Sacrifice Insolent Neonate: Draw a card.
+status=not supported: blocking-restriction

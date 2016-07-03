@@ -10,3 +10,4 @@ ability=Flying;\
         Menace
 timing=main
 oracle=Flying\nMenace
+status=not supported: blocking-restriction

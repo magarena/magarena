@@ -11,3 +11,4 @@ ability=Menace;\
         Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Menace\nLandfall — Whenever a land enters the battlefield under your control, Geyserfield Stalker gets +2/+2 until end of turn.
+status=not supported: blocking-restriction

@@ -12,3 +12,4 @@ transform=Gatstaf Arsonists
 timing=main
 hidden
 oracle=Menace\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Gatstaf Ravagers.
+status=not supported: blocking-restriction

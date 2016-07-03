@@ -11,3 +11,4 @@ ability=Surge {1}{R};\
         Menace
 timing=main
 oracle=Surge {1}{R}\nMenace
+status=not supported: blocking-restriction

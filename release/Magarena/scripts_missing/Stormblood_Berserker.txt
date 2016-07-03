@@ -10,3 +10,4 @@ ability=Bloodthirst 2;\
         Menace
 timing=main
 oracle=Bloodthirst 2\nMenace
+status=not supported: blocking-restriction

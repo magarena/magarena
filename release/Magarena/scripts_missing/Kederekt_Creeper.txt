@@ -10,3 +10,4 @@ ability=Menace;\
         Deathtouch
 timing=main
 oracle=Menace\nDeathtouch
+status=not supported: blocking-restriction
