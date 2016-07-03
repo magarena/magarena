@@ -10,3 +10,4 @@ ability=Defender;\
         {4}: Return SN to its owner's hand. Any player may activate this ability.
 timing=smain
 oracle=Defender\n{4}: Return Quicksilver Wall to its owner's hand. Any player may activate this ability.
+status=not supported: any-player-activate

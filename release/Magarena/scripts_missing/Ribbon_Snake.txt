@@ -10,3 +10,4 @@ ability=Flying;\
         {2}: SN loses flying until end of turn. Any player may activate this ability.
 timing=main
 oracle=Flying\n{2}: Ribbon Snake loses flying until end of turn. Any player may activate this ability.
+status=not supported: any-player-activate

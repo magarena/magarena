@@ -9,3 +9,4 @@ pt=3/3
 ability={2}: Target player discards a card. Any player may activate this ability but only any time he or she could cast a sorcery.
 timing=main
 oracle={2}: Target player discards a card. Any player may activate this ability but only any time he or she could cast a sorcery.
+status=not supported: any-player-activate

@@ -7,3 +7,4 @@ cost={1}{G}
 ability={1}, Discard a card: Put a 1/1 green Saproling creature token onto the battlefield. Any player may activate this ability.
 timing=enchantment
 oracle={1}, Discard a card: Put a 1/1 green Saproling creature token onto the battlefield. Any player may activate this ability.
+status=not supported: any-player-activate

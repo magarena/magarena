@@ -9,3 +9,4 @@ ability=At the beginning of your upkeep, put a doom counter on SN.;\
         {4}: Remove a doom counter from SN. Any player may activate this ability but only during any upkeep step.
 timing=artifact
 oracle=At the beginning of your upkeep, put a doom counter on Armageddon Clock.\nAt the beginning of your draw step, Armageddon Clock deals damage equal to the number of doom counters on it to each player.\n{4}: Remove a doom counter from Armageddon Clock. Any player may activate this ability but only during any upkeep step.
+status=not supported: any-player-activate

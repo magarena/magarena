@@ -7,3 +7,4 @@ cost={3}
 ability={2}: Draw a card. Any player may activate this ability but only during his or her draw step.
 timing=artifact
 oracle={2}: Draw a card. Any player may activate this ability but only during his or her draw step.
+status=not supported: any-player-activate

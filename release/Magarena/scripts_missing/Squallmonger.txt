@@ -9,3 +9,4 @@ pt=3/3
 ability={2}: SN deals 1 damage to each creature with flying and each player. Any player may activate this ability.
 timing=main
 oracle={2}: Squallmonger deals 1 damage to each creature with flying and each player. Any player may activate this ability.
+status=not supported: any-player-activate

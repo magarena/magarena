@@ -10,3 +10,4 @@ ability={0}: The next 1 damage that would be dealt to SN this turn is dealt to i
         When SN dies, its owner loses half his or her life, rounded up.
 timing=main
 oracle={0}: The next 1 damage that would be dealt to Personal Incarnation this turn is dealt to its owner instead. Any player may activate this ability, but only if he or she owns Personal Incarnation.\nWhen Personal Incarnation dies, its owner loses half his or her life, rounded up.
+status=not supported: any-player-activate

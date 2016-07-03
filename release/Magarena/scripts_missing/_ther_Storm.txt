@@ -8,3 +8,4 @@ ability=Creature spells can't be cast.;\
         Pay 4 life: Destroy SN. It can't be regenerated. Any player may activate this ability.
 timing=enchantment
 oracle=Creature spells can't be cast.\nPay 4 life: Destroy Æther Storm. It can't be regenerated. Any player may activate this ability.
+status=not supported: any-player-activate

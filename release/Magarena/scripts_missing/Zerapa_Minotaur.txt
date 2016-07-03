@@ -10,3 +10,4 @@ ability=First strike;\
         {2}: SN loses first strike until end of turn. Any player may activate this ability.
 timing=main
 oracle=First strike\n{2}: Zerapa Minotaur loses first strike until end of turn. Any player may activate this ability.
+status=not supported: any-player-activate

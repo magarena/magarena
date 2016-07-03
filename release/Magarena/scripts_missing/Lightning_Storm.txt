@@ -7,3 +7,4 @@ cost={1}{R}{R}
 effect=SN deals X damage to target creature or player, where X is 3 plus the number of charge counters on it.~Discard a land card: Put two charge counters on SN. You may choose a new target for it. Any player may activate this ability but only if SN is on the stack.
 timing=removal
 oracle=Lightning Storm deals X damage to target creature or player, where X is 3 plus the number of charge counters on it.\nDiscard a land card: Put two charge counters on Lightning Storm. You may choose a new target for it. Any player may activate this ability but only if Lightning Storm is on the stack.
+status=not supported: any-player-activate

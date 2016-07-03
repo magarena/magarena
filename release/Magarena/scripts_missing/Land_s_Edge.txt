@@ -7,3 +7,4 @@ cost={1}{R}{R}
 ability=Discard a card: If the discarded card was a land card, SN deals 2 damage to target player. Any player may activate this ability.
 timing=enchantment
 oracle=Discard a card: If the discarded card was a land card, Land's Edge deals 2 damage to target player. Any player may activate this ability.
+status=not supported: any-player-activate

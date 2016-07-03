@@ -8,3 +8,4 @@ ability=When there are no creatures on the battlefield, sacrifice SN.;\
         {2}: SN deals 1 damage to target creature. Any player may activate this ability but only any time he or she could cast a sorcery.
 timing=enchantment
 oracle=When there are no creatures on the battlefield, sacrifice Task Mage Assembly.\n{2}: Task Mage Assembly deals 1 damage to target creature. Any player may activate this ability but only any time he or she could cast a sorcery.
+status=not supported: any-player-activate
