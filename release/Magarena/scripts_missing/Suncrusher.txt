@@ -11,3 +11,4 @@ ability=Sunburst;\
         {2}, Remove a +1/+1 counter from SN: Return SN to its owner's hand.
 timing=main
 oracle=Sunburst\n{4}, {T}, Remove a +1/+1 counter from Suncrusher: Destroy target creature.\n{2}, Remove a +1/+1 counter from Suncrusher: Return Suncrusher to its owner's hand.
+status=not supported: mana-spent

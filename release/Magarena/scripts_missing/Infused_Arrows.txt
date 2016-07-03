@@ -8,3 +8,4 @@ ability=Sunburst;\
         {T}, Remove X charge counters from SN: Target creature gets -X/-X until end of turn.
 timing=artifact
 oracle=Sunburst\n{T}, Remove X charge counters from Infused Arrows: Target creature gets -X/-X until end of turn.
+status=not supported: mana-spent

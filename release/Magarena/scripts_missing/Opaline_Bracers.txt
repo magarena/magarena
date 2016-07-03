@@ -10,3 +10,4 @@ ability=Sunburst;\
         Equip {2}
 timing=equipment
 oracle=Sunburst\nEquipped creature gets +X/+X, where X is the number of charge counters on Opaline Bracers.\nEquip {2}
+status=not supported: mana-spent

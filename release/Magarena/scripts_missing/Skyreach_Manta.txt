@@ -10,3 +10,4 @@ ability=Sunburst;\
         Flying
 timing=main
 oracle=Sunburst\nFlying
+status=not supported: mana-spent

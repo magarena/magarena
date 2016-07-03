@@ -10,3 +10,4 @@ ability=Sunburst;\
         {1}, Remove four +1/+1 counters from SN: Target player draws three cards.
 timing=main
 oracle=Sunburst\n{1}, Remove four +1/+1 counters from Etched Oracle: Target player draws three cards.
+status=not supported: mana-spent

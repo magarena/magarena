@@ -10,3 +10,4 @@ ability=Cumulative upkeep {1};\
         Whenever SN's cumulative upkeep is paid, it gets +1/+0 until end of turn for each {B} or {R} spent this way.
 timing=main
 oracle=Cumulative upkeep {1}\nWhenever Balduvian Fallen's cumulative upkeep is paid, it gets +1/+0 until end of turn for each {B} or {R} spent this way.
+status=not supported: mana-spent

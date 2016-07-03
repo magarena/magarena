@@ -9,3 +9,4 @@ pt=0/0
 ability=Modular—Sunburst
 timing=main
 oracle=Modular—Sunburst
+status=not supported: mana-spent

@@ -10,3 +10,4 @@ ability=Sunburst;\
         {T}: Double the number of +1/+1 counters on SN.
 timing=main
 oracle=Sunburst\n{T}: Double the number of +1/+1 counters on Solarion.
+status=not supported: mana-spent

@@ -9,3 +9,4 @@ pt=0/0
 ability=Sunburst
 timing=main
 oracle=Sunburst
+status=not supported: mana-spent

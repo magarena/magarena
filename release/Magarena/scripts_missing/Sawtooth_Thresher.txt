@@ -10,3 +10,4 @@ ability=Sunburst;\
         Remove two +1/+1 counters from SN: SN gets +4/+4 until end of turn.
 timing=main
 oracle=Sunburst\nRemove two +1/+1 counters from Sawtooth Thresher: Sawtooth Thresher gets +4/+4 until end of turn.
+status=not supported: mana-spent

@@ -8,3 +8,4 @@ ability=Sunburst;\
         {2}, Sacrifice SN: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on SN.
 timing=artifact
 oracle=Sunburst\n{2}, Sacrifice Engineered Explosives: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on Engineered Explosives.
+status=not supported: mana-spent

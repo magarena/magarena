@@ -8,3 +8,4 @@ ability=Sunburst;\
         {2}, Sacrifice SN: SN deals damage equal to the number of charge counters on it to target creature or player.
 timing=artifact
 oracle=Sunburst\n{2}, Sacrifice Heliophial: Heliophial deals damage equal to the number of charge counters on it to target creature or player.
+status=not supported: mana-spent
