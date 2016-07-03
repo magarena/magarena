@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, you may exile target land you control.;\
         Whenever a land with the same name as the exiled card is tapped for mana, its controller adds one mana to his or her mana pool of any type that land produced.
 timing=artifact
 oracle=Imprint — When Extraplanar Lens enters the battlefield, you may exile target land you control.\nWhenever a land with the same name as the exiled card is tapped for mana, its controller adds one mana to his or her mana pool of any type that land produced.
+status=not supported: non-activated-mana-ability

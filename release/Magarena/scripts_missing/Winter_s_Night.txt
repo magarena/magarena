@@ -7,3 +7,4 @@ cost={R}{G}{W}
 ability=Whenever a player taps a snow land for mana, that player adds one mana to his or her mana pool of any type that land produced. That land doesn't untap during its controller's next untap step.
 timing=enchantment
 oracle=Whenever a player taps a snow land for mana, that player adds one mana to his or her mana pool of any type that land produced. That land doesn't untap during its controller's next untap step.
+status=not supported: non-activated-mana-ability

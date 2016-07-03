@@ -9,3 +9,4 @@ pt=7/5
 ability=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
 timing=main
 oracle=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+status=not supported: non-activated-mana-ability

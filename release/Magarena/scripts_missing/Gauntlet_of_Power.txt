@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose a color.;\
         Whenever a basic land is tapped for mana of the chosen color, its controller adds one mana of that color to his or her mana pool.
 timing=artifact
 oracle=As Gauntlet of Power enters the battlefield, choose a color.\nCreatures of the chosen color get +1/+1.\nWhenever a basic land is tapped for mana of the chosen color, its controller adds one mana of that color to his or her mana pool.
+status=not supported: non-activated-mana-ability

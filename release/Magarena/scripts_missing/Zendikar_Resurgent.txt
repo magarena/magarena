@@ -9,3 +9,4 @@ ability=Whenever you tap a land for mana, add one mana to your mana pool of any 
         Whenever you cast a creature spell, draw a card.
 timing=enchantment
 oracle=Whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.\nWhenever you cast a creature spell, draw a card.
+status=not supported: non-activated-mana-ability

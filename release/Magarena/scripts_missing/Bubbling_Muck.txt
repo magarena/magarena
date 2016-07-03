@@ -7,3 +7,4 @@ cost={B}
 effect=Until end of turn, whenever a player taps a Swamp for mana, that player adds {B} to his or her mana pool.
 timing=main
 oracle=Until end of turn, whenever a player taps a Swamp for mana, that player adds {B} to his or her mana pool.
+status=not supported: non-activated-mana-ability
