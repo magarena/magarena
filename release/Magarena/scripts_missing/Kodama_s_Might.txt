@@ -8,3 +8,4 @@ cost={G}
 effect=Target creature gets +2/+2 until end of turn.~Splice onto Arcane {G}
 timing=removal
 oracle=Target creature gets +2/+2 until end of turn.\nSplice onto Arcane {G}
+status=not supported: splice-onto-arcane

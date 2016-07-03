@@ -8,3 +8,4 @@ cost={2}{G}
 effect=If you control a Forest, each blocked creature gets +2/+2 until end of turn.~Splice onto Arcane—An opponent gains 5 life.
 timing=removal
 oracle=If you control a Forest, each blocked creature gets +2/+2 until end of turn.\nSplice onto Arcane—An opponent gains 5 life.
+status=not supported: splice-onto-arcane

@@ -8,3 +8,4 @@ cost={1}{B}
 effect=Return target creature card from your graveyard to your hand.~Splice onto Arcane {1}{B}
 timing=removal
 oracle=Return target creature card from your graveyard to your hand.\nSplice onto Arcane {1}{B}
+status=not supported: splice-onto-arcane

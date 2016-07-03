@@ -8,3 +8,4 @@ cost={W}
 effect=Target creature gets +1/+0 and gains first strike until end of turn.~Splice onto Arcane—Tap an untapped white creature you control.
 timing=removal
 oracle=Target creature gets +1/+0 and gains first strike until end of turn.\nSplice onto Arcane—Tap an untapped white creature you control.
+status=not supported: splice-onto-arcane

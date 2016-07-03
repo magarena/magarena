@@ -8,3 +8,4 @@ cost={2}{R}
 effect=Switch target creature's power and toughness until end of turn.~Splice onto Arcane {1}{R}
 timing=removal
 oracle=Switch target creature's power and toughness until end of turn.\nSplice onto Arcane {1}{R}
+status=not supported: splice-onto-arcane

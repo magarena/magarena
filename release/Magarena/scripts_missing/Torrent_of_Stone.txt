@@ -8,3 +8,4 @@ cost={3}{R}
 effect=SN deals 4 damage to target creature.~Splice onto Arcane—Sacrifice two Mountains.
 timing=removal
 oracle=Torrent of Stone deals 4 damage to target creature.\nSplice onto Arcane—Sacrifice two Mountains.
+status=not supported: splice-onto-arcane

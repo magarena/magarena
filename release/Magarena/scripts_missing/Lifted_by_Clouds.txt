@@ -8,3 +8,4 @@ cost={2}{U}
 effect=Target creature gains flying until end of turn.~Splice onto Arcane {1}{U}
 timing=removal
 oracle=Target creature gains flying until end of turn.\nSplice onto Arcane {1}{U}
+status=not supported: splice-onto-arcane

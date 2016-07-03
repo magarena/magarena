@@ -8,3 +8,4 @@ color=u
 effect=Draw a card.~Splice onto Arcane {1}{U}
 timing=removal
 oracle=Draw a card.\nSplice onto Arcane {1}{U}
+status=not supported: splice-onto-arcane

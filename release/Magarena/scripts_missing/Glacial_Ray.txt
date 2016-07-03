@@ -8,3 +8,4 @@ cost={1}{R}
 effect=SN deals 2 damage to target creature or player.~Splice onto Arcane {1}{R}
 timing=removal
 oracle=Glacial Ray deals 2 damage to target creature or player.\nSplice onto Arcane {1}{R}
+status=not supported: splice-onto-arcane

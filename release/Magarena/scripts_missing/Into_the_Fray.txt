@@ -8,3 +8,4 @@ cost={R}
 effect=Target creature attacks this turn if able.~Splice onto Arcane {R}
 timing=removal
 oracle=Target creature attacks this turn if able.\nSplice onto Arcane {R}
+status=not supported: splice-onto-arcane

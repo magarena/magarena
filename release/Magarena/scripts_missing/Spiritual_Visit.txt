@@ -8,3 +8,4 @@ cost={W}
 effect=Put a 1/1 colorless Spirit creature token onto the battlefield.~Splice onto Arcane {W}
 timing=removal
 oracle=Put a 1/1 colorless Spirit creature token onto the battlefield.\nSplice onto Arcane {W}
+status=not supported: splice-onto-arcane

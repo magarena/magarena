@@ -8,3 +8,4 @@ cost={1}{U}
 effect=Return target creature to its owner's hand.~Splice onto Arcane {3}{U}
 timing=removal
 oracle=Return target creature to its owner's hand.\nSplice onto Arcane {3}{U}
+status=not supported: splice-onto-arcane

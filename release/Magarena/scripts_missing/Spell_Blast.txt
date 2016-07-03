@@ -7,3 +7,4 @@ cost={X}{U}
 effect=Counter target spell with converted mana cost X.
 timing=counter
 oracle=Counter target spell with converted mana cost X.
+status=needs groovy

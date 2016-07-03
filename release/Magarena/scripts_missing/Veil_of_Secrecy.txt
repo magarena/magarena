@@ -8,3 +8,4 @@ cost={1}{U}
 effect=Target creature gains shroud until end of turn and can't be blocked this turn.~Splice onto Arcane—Return a blue creature you control to its owner's hand.
 timing=removal
 oracle=Target creature gains shroud until end of turn and can't be blocked this turn.\nSplice onto Arcane—Return a blue creature you control to its owner's hand.
+status=not supported: splice-onto-arcane
