@@ -11,3 +11,4 @@ ability=Flying;\
         Morph {3}{U}{U}
 timing=main
 oracle=Flying\n{1}: Mistform Shrieker becomes the creature type of your choice until end of turn.\nMorph {3}{U}{U}
+status=not supported: choose-creature-type

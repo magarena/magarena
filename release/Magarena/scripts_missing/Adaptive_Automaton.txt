@@ -11,3 +11,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Other creatures you control of the chosen type get +1/+1.
 timing=main
 oracle=As Adaptive Automaton enters the battlefield, choose a creature type.\nAdaptive Automaton is the chosen type in addition to its other types.\nOther creatures you control of the chosen type get +1/+1.
+status=not supported: choose-creature-type

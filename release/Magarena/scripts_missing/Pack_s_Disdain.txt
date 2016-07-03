@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Choose a creature type. Target creature gets -1/-1 until end of turn for each permanent of the chosen type you control.
 timing=removal
 oracle=Choose a creature type. Target creature gets -1/-1 until end of turn for each permanent of the chosen type you control.
+status=not supported: choose-creature-type

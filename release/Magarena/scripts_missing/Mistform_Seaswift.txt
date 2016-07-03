@@ -11,3 +11,4 @@ ability=Flying;\
         Morph {1}{U}
 timing=main
 oracle=Flying\n{1}: Mistform Seaswift becomes the creature type of your choice until end of turn.\nMorph {1}{U}
+status=not supported: choose-creature-type

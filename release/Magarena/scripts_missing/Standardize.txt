@@ -7,3 +7,4 @@ cost={U}{U}
 effect=Choose a creature type other than Wall. Each creature becomes that type until end of turn.
 timing=removal
 oracle=Choose a creature type other than Wall. Each creature becomes that type until end of turn.
+status=not supported: choose-creature-type

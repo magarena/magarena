@@ -10,3 +10,4 @@ ability=As an additional cost to cast SN, choose a creature type.;\
         SN's power and toughness are each equal to the number of creatures of the chosen type on the battlefield.
 timing=main
 oracle=As an additional cost to cast Caller of the Hunt, choose a creature type.\nCaller of the Hunt's power and toughness are each equal to the number of creatures of the chosen type on the battlefield.
+status=not supported: choose-creature-type

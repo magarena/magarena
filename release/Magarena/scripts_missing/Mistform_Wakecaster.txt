@@ -11,3 +11,4 @@ ability=Flying;\
         {2}{U}{U}, {T}: Choose a creature type. Each creature you control becomes that type until end of turn.
 timing=main
 oracle=Flying\n{1}: Mistform Wakecaster becomes the creature type of your choice until end of turn.\n{2}{U}{U}, {T}: Choose a creature type. Each creature you control becomes that type until end of turn.
+status=not supported: choose-creature-type

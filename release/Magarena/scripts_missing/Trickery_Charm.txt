@@ -7,3 +7,4 @@ cost={U}
 effect=Choose one — (1) Target creature gains flying until end of turn. (2) Target creature becomes the creature type of your choice until end of turn. (3) Look at the top four cards of your library, then put them back in any order.
 timing=removal
 oracle=Choose one —\n• Target creature gains flying until end of turn.\n• Target creature becomes the creature type of your choice until end of turn.\n• Look at the top four cards of your library, then put them back in any order.
+status=not supported: choose-creature-type

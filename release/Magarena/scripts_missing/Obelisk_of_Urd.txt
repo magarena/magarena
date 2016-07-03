@@ -9,3 +9,4 @@ ability=Convoke;\
         Creatures you control of the chosen type get +2/+2.
 timing=artifact
 oracle=Convoke\nAs Obelisk of Urd enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +2/+2.
+status=not supported: choose-creature-type

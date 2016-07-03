@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Choose a creature type. You gain 2 life for each permanent you control of that type.
 timing=removal
 oracle=Choose a creature type. You gain 2 life for each permanent you control of that type.
+status=not supported: choose-creature-type

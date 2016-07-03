@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Each player chooses a creature type. Destroy all creatures that aren't of a type chosen this way. They can't be regenerated.
 timing=main
 oracle=Each player chooses a creature type. Destroy all creatures that aren't of a type chosen this way. They can't be regenerated.
+status=not supported: choose-creature-type

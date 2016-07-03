@@ -10,3 +10,4 @@ ability=Flying;\
         {1}: SN becomes the creature type of your choice until end of turn.
 timing=main
 oracle=Flying\n{1}: Mistform Skyreaver becomes the creature type of your choice until end of turn.
+status=not supported: choose-creature-type

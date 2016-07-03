@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         All creatures of the chosen type get -1/-1.
 timing=enchantment
 oracle=As Engineered Plague enters the battlefield, choose a creature type.\nAll creatures of the chosen type get -1/-1.
+status=not supported: choose-creature-type

@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type have shroud.
 timing=enchantment
 oracle=As Steely Resolve enters the battlefield, choose a creature type.\nCreatures of the chosen type have shroud.
+status=not supported: choose-creature-type

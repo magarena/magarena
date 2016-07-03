@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Each creature card in your graveyard has the chosen creature type in addition to its other types.
 timing=artifact
 oracle=As Ashes of the Fallen enters the battlefield, choose a creature type.\nEach creature card in your graveyard has the chosen creature type in addition to its other types.
+status=not supported: choose-creature-type

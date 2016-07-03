@@ -7,3 +7,4 @@ cost={2}{R}{R}
 ability=Whenever a creature enters the battlefield, you may add an amount of {C} to your mana pool equal to the number of creatures you control that share a creature type with it.
 timing=enchantment
 oracle=Whenever a creature enters the battlefield, you may add an amount of {C} to your mana pool equal to the number of creatures you control that share a creature type with it.
+status=not supported: add-multiple-mana

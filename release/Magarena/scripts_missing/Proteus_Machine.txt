@@ -10,3 +10,4 @@ ability=Morph {0};\
         When SN is turned face up, it becomes the creature type of your choice.
 timing=main
 oracle=Morph {0}\nWhen Proteus Machine is turned face up, it becomes the creature type of your choice.
+status=not supported: choose-creature-type

@@ -7,3 +7,4 @@ cost={5}{B}
 effect=Choose a creature type. Target player reveals his or her hand and discards all creature cards of that type. Then destroy all creatures of that type that player controls. They can't be regenerated.
 timing=removal
 oracle=Choose a creature type. Target player reveals his or her hand and discards all creature cards of that type. Then destroy all creatures of that type that player controls. They can't be regenerated.
+status=not supported: choose-creature-type

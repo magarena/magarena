@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Choose a creature type. Draw a card for each permanent you control of that type.
 timing=main
 oracle=Choose a creature type. Draw a card for each permanent you control of that type.
+status=not supported: choose-creature-type

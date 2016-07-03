@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Each creature you control is the chosen type in addition to its other types.
 timing=enchantment
 oracle=As Xenograft enters the battlefield, choose a creature type.\nEach creature you control is the chosen type in addition to its other types.
+status=not supported: choose-creature-type

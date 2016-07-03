@@ -9,3 +9,4 @@ ability=All creatures able to block equipped creature do so.;\
         Equip {3}
 timing=equipment
 oracle=All creatures able to block equipped creature do so.\nEquip {3}
+status=not supported: blocking-restriction

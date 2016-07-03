@@ -9,3 +9,4 @@ pt=3/3
 ability={2}{U}{U}, Sacrifice SN: Choose a creature type. Reveal cards from the top of your library until you reveal a creature card of that type. Put that card onto the battlefield and shuffle the rest into your library.
 timing=main
 oracle={2}{U}{U}, Sacrifice Riptide Shapeshifter: Choose a creature type. Reveal cards from the top of your library until you reveal a creature card of that type. Put that card onto the battlefield and shuffle the rest into your library.
+status=not supported: choose-creature-type

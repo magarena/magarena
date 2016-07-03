@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         {1}{W}: The next time a creature of the chosen type would deal damage to you this turn, prevent that damage.
 timing=enchantment
 oracle=As Circle of Solace enters the battlefield, choose a creature type.\n{1}{W}: The next time a creature of the chosen type would deal damage to you this turn, prevent that damage.
+status=not supported: choose-creature-type

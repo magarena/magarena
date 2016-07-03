@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nAll creatures able to block enchanted creature do so.
+status=not supported: blocking-restriction

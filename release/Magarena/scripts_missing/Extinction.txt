@@ -7,3 +7,4 @@ cost={4}{B}
 effect=Destroy all creatures of the creature type of your choice.
 timing=main
 oracle=Destroy all creatures of the creature type of your choice.
+status=not supported: choose-creature-type

@@ -7,3 +7,4 @@ cost={3}{W}
 effect=Creatures of the creature type of your choice get +0/+4 until end of turn.
 timing=removal
 oracle=Creatures of the creature type of your choice get +0/+4 until end of turn.
+status=not supported: choose-creature-type

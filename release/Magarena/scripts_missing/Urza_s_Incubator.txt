@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Creature spells of the chosen type cost {2} less to cast.
 timing=artifact
 oracle=As Urza's Incubator enters the battlefield, choose a creature type.\nCreature spells of the chosen type cost {2} less to cast.
+status=not supported: choose-creature-type

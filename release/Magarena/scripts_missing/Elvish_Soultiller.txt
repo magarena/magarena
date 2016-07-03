@@ -9,3 +9,4 @@ pt=5/4
 ability=When SN dies, choose a creature type. Shuffle all creature cards of that type from your graveyard into your library.
 timing=main
 oracle=When Elvish Soultiller dies, choose a creature type. Shuffle all creature cards of that type from your graveyard into your library.
+status=not supported: choose-creature-type

@@ -9,3 +9,4 @@ pt=1/1
 ability=All Slivers have "{1}: This permanent becomes the creature type of your choice in addition to its other types until end of turn."
 timing=main
 oracle=All Slivers have "{1}: This permanent becomes the creature type of your choice in addition to its other types until end of turn."
+status=not supported: choose-creature-type

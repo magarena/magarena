@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         {3}, {T}, Sacrifice a creature of the chosen type: SN deals 3 damage to target creature or player.
 timing=artifact
 oracle=As Doom Cannon enters the battlefield, choose a creature type.\n{3}, {T}, Sacrifice a creature of the chosen type: Doom Cannon deals 3 damage to target creature or player.
+status=not supported: choose-creature-type

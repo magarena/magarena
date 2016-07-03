@@ -7,3 +7,4 @@ cost={3}{B}
 effect=You may discard a Swamp card rather than pay SN's mana cost.~Choose a creature type. All creatures of that type get -1/-1 until end of turn.
 timing=main
 oracle=You may discard a Swamp card rather than pay Outbreak's mana cost.\nChoose a creature type. All creatures of that type get -1/-1 until end of turn.
+status=not supported: choose-creature-type

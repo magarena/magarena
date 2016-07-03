@@ -11,3 +11,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type get +1/+1.
 timing=main
 oracle=As Brass Herald enters the battlefield, choose a creature type.\nWhen Brass Herald enters the battlefield, reveal the top four cards of your library. Put all creature cards of the chosen type revealed this way into your hand and the rest on the bottom of your library in any order.\nCreatures of the chosen type get +1/+1.
+status=not supported: choose-creature-type

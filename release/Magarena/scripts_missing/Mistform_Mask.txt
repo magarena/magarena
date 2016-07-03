@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\n{1}: Enchanted creature becomes the creature type of your choice until end of turn.
+status=not supported: choose-creature-type

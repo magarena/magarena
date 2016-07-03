@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type have fear.
 timing=enchantment
 oracle=As Cover of Darkness enters the battlefield, choose a creature type.\nCreatures of the chosen type have fear.
+status=not supported: choose-creature-type

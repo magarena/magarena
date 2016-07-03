@@ -9,3 +9,4 @@ pt=1/1
 ability={B}, {T}: Creatures of the creature type of your choice attack this turn if able.
 timing=main
 oracle={B}, {T}: Creatures of the creature type of your choice attack this turn if able.
+status=not supported: choose-creature-type
