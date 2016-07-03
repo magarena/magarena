@@ -9,3 +9,4 @@ pt=5/6
 ability=Spend only mana produced by creatures to cast SN.
 timing=main
 oracle=Spend only mana produced by creatures to cast Myr Superion.
+status=not supported: mana-restriction

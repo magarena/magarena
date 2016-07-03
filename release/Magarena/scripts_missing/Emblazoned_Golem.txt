@@ -11,3 +11,4 @@ ability=Kicker {X};\
         If SN was kicked, it enters the battlefield with X +1/+1 counters on it.
 timing=main
 oracle=Kicker {X}\nSpend only colored mana on X. No more than one mana of each color may be spent this way.\nIf Emblazoned Golem was kicked, it enters the battlefield with X +1/+1 counters on it.
+status=not supported: mana-restriction

@@ -9,3 +9,4 @@ pt=5/5
 ability=Spend only mana produced by basic lands to cast SN.
 timing=main
 oracle=Spend only mana produced by basic lands to cast Imperiosaur.
+status=not supported: mana-restriction

@@ -10,3 +10,4 @@ ability=Flying;\
         {X}, {T}: SN deals X damage to target creature. Spend only red mana on X.
 timing=main
 oracle=Flying\n{X}, {T}: Crimson Hellkite deals X damage to target creature. Spend only red mana on X.
+status=not supported: mana-restriction

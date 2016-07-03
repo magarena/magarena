@@ -7,3 +7,4 @@ cost={X}{1}{B}
 effect=Spend only black mana on X.~SN deals X damage to target creature or player and you gain X life.
 timing=main
 oracle=Spend only black mana on X.\nConsume Spirit deals X damage to target creature or player and you gain X life.
+status=not supported: mana-restriction

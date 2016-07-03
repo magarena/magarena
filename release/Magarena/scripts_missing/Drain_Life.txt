@@ -7,3 +7,4 @@ cost={X}{1}{B}
 effect=Spend only black mana on X.~SN deals X damage to target creature or player. You gain life equal to the damage dealt, but not more life than the player's life total before SN dealt damage or the creature's toughness.
 timing=main
 oracle=Spend only black mana on X.\nDrain Life deals X damage to target creature or player. You gain life equal to the damage dealt, but not more life than the player's life total before Drain Life dealt damage or the creature's toughness.
+status=not supported: mana-restriction
