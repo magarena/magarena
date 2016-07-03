@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, name a card.;\
         You have protection from the chosen name.
 timing=enchantment
 oracle=As Runed Halo enters the battlefield, name a card.\nYou have protection from the chosen name.
+status=not supported: name-card

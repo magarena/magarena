@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Name a card other than a basic land card. Then reveal the top seven cards of your library and put all of them with that name into your hand. Exile the rest.
 timing=main
 oracle=Name a card other than a basic land card. Then reveal the top seven cards of your library and put all of them with that name into your hand. Exile the rest.
+status=not supported: name-card

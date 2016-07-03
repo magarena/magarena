@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, name a card.;\
         Activated abilities of sources with the chosen name can't be activated unless they're mana abilities.
 timing=artifact
 oracle=As Pithing Needle enters the battlefield, name a card.\nActivated abilities of sources with the chosen name can't be activated unless they're mana abilities.
+status=not supported: name-card

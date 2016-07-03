@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Name a card, then target player puts the top card of his or her library into his or her graveyard. If that card is the named card, you draw two cards. Otherwise, you draw a card.
 timing=removal
 oracle=Name a card, then target player puts the top card of his or her library into his or her graveyard. If that card is the named card, you draw two cards. Otherwise, you draw a card.
+status=not supported: name-card

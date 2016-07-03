@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, name a nonland card.;\
         The named card can't be cast.
 timing=main
 oracle=As Meddling Mage enters the battlefield, name a nonland card.\nThe named card can't be cast.
+status=not supported: name-card

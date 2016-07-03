@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, name a nonland card.;\
         Activated abilities of sources with the chosen name can't be activated.
 timing=main
 oracle=As Phyrexian Revoker enters the battlefield, name a nonland card.\nActivated abilities of sources with the chosen name can't be activated.
+status=not supported: name-card

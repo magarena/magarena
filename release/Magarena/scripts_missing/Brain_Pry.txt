@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Name a nonland card. Target player reveals his or her hand. That player discards a card with that name. If he or she can't, you draw a card.
 timing=main
 oracle=Name a nonland card. Target player reveals his or her hand. That player discards a card with that name. If he or she can't, you draw a card.
+status=not supported: name-card

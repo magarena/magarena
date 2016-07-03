@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, name a card other than a basic land card a
         When the chosen player draws the named card, sacrifice SN. If you do, SN deals 10 damage to that player.
 timing=artifact
 oracle=As Booby Trap enters the battlefield, name a card other than a basic land card and choose an opponent.\nThe chosen player reveals each card he or she draws.\nWhen the chosen player draws the named card, sacrifice Booby Trap. If you do, Booby Trap deals 10 damage to that player.
+status=not supported: name-card

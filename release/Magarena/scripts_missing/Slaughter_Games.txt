@@ -7,3 +7,4 @@ cost={2}{B}{R}
 effect=SN can't be countered by spells or abilities.~Name a nonland card. Search target opponent's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Slaughter Games can't be countered by spells or abilities.\nName a nonland card. Search target opponent's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
+status=not supported: name-card

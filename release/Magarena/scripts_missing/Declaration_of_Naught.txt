@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, name a card.;\
         {U}: Counter target spell with the chosen name.
 timing=enchantment
 oracle=As Declaration of Naught enters the battlefield, name a card.\n{U}: Counter target spell with the chosen name.
+status=not supported: name-card

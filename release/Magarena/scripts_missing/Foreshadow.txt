@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Name a card, then target opponent puts the top card of his or her library into his or her graveyard. If that card is the named card, you draw a card.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
 oracle=Name a card, then target opponent puts the top card of his or her library into his or her graveyard. If that card is the named card, you draw a card.\nDraw a card at the beginning of the next turn's upkeep.
+status=not supported: name-card

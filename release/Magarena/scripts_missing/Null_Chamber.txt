@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, you and an opponent each name a card other
         The named cards can't be played.
 timing=enchantment
 oracle=As Null Chamber enters the battlefield, you and an opponent each name a card other than a basic land card.\nThe named cards can't be played.
+status=not supported: name-card

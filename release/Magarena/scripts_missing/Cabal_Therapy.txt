@@ -8,3 +8,4 @@ ability=Flashback—Sacrifice a creature.
 effect=Name a nonland card. Target player reveals his or her hand and discards all cards with that name.
 timing=main
 oracle=Name a nonland card. Target player reveals his or her hand and discards all cards with that name.\nFlashback—Sacrifice a creature.
+status=not supported: name-card

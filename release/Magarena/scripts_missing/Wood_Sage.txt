@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Name a creature card. Reveal the top four cards of your library and put all of them with that name into your hand. Put the rest into your graveyard.
 timing=main
 oracle={T}: Name a creature card. Reveal the top four cards of your library and put all of them with that name into your hand. Put the rest into your graveyard.
+status=not supported: name-card

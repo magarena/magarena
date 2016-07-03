@@ -7,3 +7,4 @@ cost={1}
 ability={3}, {T}: Name a card. Reveal a card at random from your hand. If it's the named card, SN deals 2 damage to target creature or player.
 timing=artifact
 oracle={3}, {T}: Name a card. Reveal a card at random from your hand. If it's the named card, Cursed Scroll deals 2 damage to target creature or player.
+status=not supported: name-card

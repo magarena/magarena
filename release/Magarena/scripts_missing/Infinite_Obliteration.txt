@@ -8,3 +8,4 @@ cost={1}{B}{B}
 effect=Name a creature card. Search target opponent's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Name a creature card. Search target opponent's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
+status=not supported: name-card
