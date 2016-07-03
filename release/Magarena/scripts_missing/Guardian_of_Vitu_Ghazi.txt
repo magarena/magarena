@@ -10,3 +10,4 @@ ability=Convoke;\
         Vigilance
 timing=main
 oracle=Convoke\nVigilance
+status=not supported: convoke

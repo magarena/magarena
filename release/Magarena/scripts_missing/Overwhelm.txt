@@ -8,3 +8,4 @@ ability=Convoke
 effect=Creatures you control get +3/+3 until end of turn.
 timing=main
 oracle=Convoke\nCreatures you control get +3/+3 until end of turn.
+status=not supported: convoke

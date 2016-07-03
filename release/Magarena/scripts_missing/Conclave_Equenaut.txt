@@ -10,3 +10,4 @@ ability=Convoke;\
         Flying
 timing=main
 oracle=Convoke\nFlying
+status=not supported: convoke

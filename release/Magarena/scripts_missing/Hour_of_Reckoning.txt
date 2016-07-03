@@ -8,3 +8,4 @@ ability=Convoke
 effect=Destroy all nontoken creatures.
 timing=main
 oracle=Convoke\nDestroy all nontoken creatures.
+status=not supported: convoke

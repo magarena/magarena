@@ -8,3 +8,4 @@ ability=Convoke
 effect=Target creature gets +1/+0 and gains first strike until end of turn.
 timing=removal
 oracle=Convoke\nTarget creature gets +1/+0 and gains first strike until end of turn.
+status=not supported: convoke

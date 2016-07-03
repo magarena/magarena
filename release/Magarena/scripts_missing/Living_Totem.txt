@@ -10,3 +10,4 @@ ability=Convoke;\
         When SN enters the battlefield, you may put a +1/+1 counter on another target creature.
 timing=main
 oracle=Convoke\nWhen Living Totem enters the battlefield, you may put a +1/+1 counter on another target creature.
+status=not supported: convoke

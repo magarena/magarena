@@ -8,3 +8,4 @@ ability=Convoke
 effect=You gain 8 life.
 timing=removal
 oracle=Convoke\nYou gain 8 life.
+status=not supported: convoke

@@ -11,3 +11,4 @@ ability=Convoke;\
         When SN enters the battlefield, you gain 1 life for each creature you control.
 timing=main
 oracle=Convoke\nWhen Conclave Phalanx enters the battlefield, you gain 1 life for each creature you control.
+status=not supported: convoke

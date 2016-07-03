@@ -8,3 +8,4 @@ ability=Convoke
 effect=SN deals 4 damage to target creature or player and you gain 4 life.
 timing=main
 oracle=Convoke\nCovenant of Blood deals 4 damage to target creature or player and you gain 4 life.
+status=not supported: convoke

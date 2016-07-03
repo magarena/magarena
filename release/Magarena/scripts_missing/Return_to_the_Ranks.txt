@@ -8,3 +8,4 @@ ability=Convoke
 effect=Return X target creature cards with converted mana cost 2 or less from your graveyard to the battlefield.
 timing=main
 oracle=Convoke\nReturn X target creature cards with converted mana cost 2 or less from your graveyard to the battlefield.
+status=not supported: convoke

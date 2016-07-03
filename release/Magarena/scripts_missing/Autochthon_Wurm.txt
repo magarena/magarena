@@ -10,3 +10,4 @@ ability=Convoke;\
         Trample
 timing=main
 oracle=Convoke\nTrample
+status=not supported: convoke

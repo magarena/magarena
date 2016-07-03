@@ -9,3 +9,4 @@ pt=1/3
 ability=Artifact spells you cast have convoke.
 timing=main
 oracle=Artifact spells you cast have convoke.
+status=not supported: convoke

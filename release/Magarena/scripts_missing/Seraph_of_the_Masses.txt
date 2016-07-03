@@ -11,3 +11,4 @@ ability=Convoke;\
         SN's power and toughness are each equal to the number of creatures you control.
 timing=main
 oracle=Convoke\nFlying\nSeraph of the Masses's power and toughness are each equal to the number of creatures you control.
+status=not supported: convoke

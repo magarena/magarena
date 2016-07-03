@@ -8,3 +8,4 @@ ability=Convoke
 effect=SN deals 4 damage to target creature or player.
 timing=removal
 oracle=Convoke\nStoke the Flames deals 4 damage to target creature or player.
+status=not supported: convoke

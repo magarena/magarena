@@ -8,3 +8,4 @@ ability=Convoke
 effect=Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Convoke\nSearch your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+status=not supported: convoke

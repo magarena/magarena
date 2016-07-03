@@ -8,3 +8,4 @@ ability=Convoke
 effect=Search your library for a creature card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
 timing=removal
 oracle=Convoke\nSearch your library for a creature card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
+status=not supported: convoke

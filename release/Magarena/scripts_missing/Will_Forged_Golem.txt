@@ -9,3 +9,4 @@ pt=4/4
 ability=Convoke
 timing=main
 oracle=Convoke
+status=not supported: convoke

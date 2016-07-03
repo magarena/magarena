@@ -8,3 +8,4 @@ ability=Convoke
 effect=Destroy target artifact or enchantment.
 timing=removal
 oracle=Convoke\nDestroy target artifact or enchantment.
+status=not supported: convoke

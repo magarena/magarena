@@ -8,3 +8,4 @@ ability=Convoke
 effect=Exile target attacking or blocking creature.
 timing=removal
 oracle=Convoke\nExile target attacking or blocking creature.
+status=not supported: convoke

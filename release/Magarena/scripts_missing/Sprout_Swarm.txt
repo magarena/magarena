@@ -9,3 +9,4 @@ ability=Convoke;\
 effect=Put a 1/1 green Saproling creature token onto the battlefield.
 timing=removal
 oracle=Convoke\nBuyback {3}\nPut a 1/1 green Saproling creature token onto the battlefield.
+status=not supported: convoke

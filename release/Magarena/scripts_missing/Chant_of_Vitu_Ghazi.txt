@@ -8,3 +8,4 @@ ability=Convoke
 effect=Prevent all damage that would be dealt by creatures this turn. You gain life equal to the damage prevented this way.
 timing=removal
 oracle=Convoke\nPrevent all damage that would be dealt by creatures this turn. You gain life equal to the damage prevented this way.
+status=not supported: convoke

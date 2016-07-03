@@ -8,3 +8,4 @@ ability=Convoke
 effect=Put three 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=main
 oracle=Convoke\nPut three 1/1 white Spirit creature tokens with flying onto the battlefield.
+status=not supported: convoke

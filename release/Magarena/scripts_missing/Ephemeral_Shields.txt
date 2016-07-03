@@ -8,3 +8,4 @@ ability=Convoke
 effect=Target creature gains indestructible until end of turn.
 timing=removal
 oracle=Convoke\nTarget creature gains indestructible until end of turn.
+status=not supported: convoke

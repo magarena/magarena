@@ -8,3 +8,4 @@ ability=Convoke
 effect=Name a nonland card. Search target player's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Convoke\nName a nonland card. Search target player's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
+status=not supported: convoke
