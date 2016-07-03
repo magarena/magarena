@@ -8,3 +8,4 @@ ability=Hideaway;\
         {B}, {T}: You may play the exiled card without paying its mana cost if each player has no cards in hand.
 timing=land
 oracle=Hideaway\n{T}: Add {B} to your mana pool.\n{B}, {T}: You may play the exiled card without paying its mana cost if each player has no cards in hand.
+status=not supported: hideaway
