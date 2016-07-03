@@ -8,3 +8,4 @@ ability=Delve
 effect=Target player sacrifices two creatures.
 timing=main
 oracle=Delve\nTarget player sacrifices two creatures.
+status=not supported: delve

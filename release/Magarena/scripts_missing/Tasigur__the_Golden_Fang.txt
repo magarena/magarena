@@ -10,3 +10,4 @@ ability=Delve;\
         {2}{G/U}{G/U}: Put the top two cards of your library into your graveyard, then return a nonland card of an opponent's choice from your graveyard to your hand.
 timing=main
 oracle=Delve\n{2}{G/U}{G/U}: Put the top two cards of your library into your graveyard, then return a nonland card of an opponent's choice from your graveyard to your hand.
+status=not supported: delve

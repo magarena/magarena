@@ -8,3 +8,4 @@ ability=Delve
 effect=Take an extra turn after this one. Exile SN.
 timing=main
 oracle=Delve\nTake an extra turn after this one. Exile Temporal Trespass.
+status=not supported: delve

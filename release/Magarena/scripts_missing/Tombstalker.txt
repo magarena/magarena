@@ -10,3 +10,4 @@ ability=Flying;\
         Delve
 timing=main
 oracle=Flying\nDelve
+status=not supported: delve

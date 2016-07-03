@@ -8,3 +8,4 @@ ability=Delve
 effect=Draw three cards.
 timing=main
 oracle=Delve\nDraw three cards.
+status=not supported: delve

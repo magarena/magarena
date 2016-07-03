@@ -8,3 +8,4 @@ ability=Delve
 effect=Destroy target nongreen creature. It can't be regenerated.
 timing=removal
 oracle=Delve\nDestroy target nongreen creature. It can't be regenerated.
+status=not supported: delve

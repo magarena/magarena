@@ -8,3 +8,4 @@ ability=Delve
 effect=Counter target spell unless its controller pays {X}.
 timing=counter
 oracle=Delve\nCounter target spell unless its controller pays {X}.
+status=not supported: delve

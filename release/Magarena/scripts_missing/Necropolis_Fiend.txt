@@ -11,3 +11,4 @@ ability=Delve;\
         {X}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.
 timing=main
 oracle=Delve\nFlying\n{X}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.
+status=not supported: delve

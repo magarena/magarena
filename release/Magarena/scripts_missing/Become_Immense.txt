@@ -8,3 +8,4 @@ ability=Delve
 effect=Target creature gets +6/+6 until end of turn.
 timing=removal
 oracle=Delve\nTarget creature gets +6/+6 until end of turn.
+status=not supported: delve

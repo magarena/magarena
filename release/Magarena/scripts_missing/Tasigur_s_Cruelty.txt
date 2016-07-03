@@ -8,3 +8,4 @@ ability=Delve
 effect=Each opponent discards two cards.
 timing=main
 oracle=Delve\nEach opponent discards two cards.
+status=not supported: delve

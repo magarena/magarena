@@ -10,3 +10,4 @@ ability=Delve;\
         Trample
 timing=main
 oracle=Delve\nTrample
+status=not supported: delve

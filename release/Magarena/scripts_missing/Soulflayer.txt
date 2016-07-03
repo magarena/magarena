@@ -10,3 +10,4 @@ ability=Delve;\
         If a creature card with flying was exiled with SN's delve ability, SN has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, reach, trample, and vigilance.
 timing=main
 oracle=Delve\nIf a creature card with flying was exiled with Soulflayer's delve ability, Soulflayer has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, reach, trample, and vigilance.
+status=not supported: delve

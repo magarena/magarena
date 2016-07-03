@@ -10,3 +10,4 @@ ability=Delve;\
         When SN enters the battlefield, return target creature card from your graveyard to your hand.
 timing=main
 oracle=Delve\nWhen Sibsig Muckdraggers enters the battlefield, return target creature card from your graveyard to your hand.
+status=not supported: delve

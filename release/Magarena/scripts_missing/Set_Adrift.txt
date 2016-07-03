@@ -8,3 +8,4 @@ ability=Delve
 effect=Put target nonland permanent on top of its owner's library.
 timing=main
 oracle=Delve\nPut target nonland permanent on top of its owner's library.
+status=not supported: delve

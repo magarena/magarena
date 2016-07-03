@@ -8,3 +8,4 @@ ability=Delve
 effect=Put X 2/2 black Zombie creature tokens onto the battlefield tapped.
 timing=removal
 oracle=Delve\nPut X 2/2 black Zombie creature tokens onto the battlefield tapped.
+status=not supported: delve

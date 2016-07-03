@@ -10,3 +10,4 @@ ability=Delve;\
         Deathtouch
 timing=main
 oracle=Delve\nDeathtouch
+status=not supported: delve

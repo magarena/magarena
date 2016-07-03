@@ -8,3 +8,4 @@ ability=Delve
 effect=Destroy target creature.
 timing=removal
 oracle=Delve\nDestroy target creature.
+status=not supported: delve
