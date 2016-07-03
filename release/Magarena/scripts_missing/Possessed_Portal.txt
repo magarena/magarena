@@ -8,4 +8,4 @@ ability=If a player would draw a card, that player skips that draw instead.;\
         At the beginning of each end step, each player sacrifices a permanent unless he or she discards a card.
 timing=artifact
 oracle=If a player would draw a card, that player skips that draw instead.\nAt the beginning of each end step, each player sacrifices a permanent unless he or she discards a card.
-status=not supporting: skip-action
+status=not supported: skip-action

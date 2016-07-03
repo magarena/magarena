@@ -9,4 +9,4 @@ pt=1/4
 ability=When SN enters the battlefield, target opponent skips his or her next combat phase.
 timing=main
 oracle=When Stonehorn Dignitary enters the battlefield, target opponent skips his or her next combat phase.
-status=not supporting: skip-action
+status=not supported: skip-action

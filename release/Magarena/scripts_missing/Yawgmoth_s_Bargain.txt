@@ -8,4 +8,4 @@ ability=Skip your draw step.;\
         Pay 1 life: Draw a card.
 timing=enchantment
 oracle=Skip your draw step.\nPay 1 life: Draw a card.
-status=not supporting: skip-action
+status=not supported: skip-action

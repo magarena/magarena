@@ -9,4 +9,4 @@ pt=1/2
 ability=At the beginning of each opponent's upkeep, that player chooses draw step, main phase, or combat phase. The player skips each instance of the chosen step or phase this turn.
 timing=main
 oracle=At the beginning of each opponent's upkeep, that player chooses draw step, main phase, or combat phase. The player skips each instance of the chosen step or phase this turn.
-status=not supporting: skip-action
+status=not supported: skip-action

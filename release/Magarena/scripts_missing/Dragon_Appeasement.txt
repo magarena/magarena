@@ -8,4 +8,4 @@ ability=Skip your draw step.;\
         Whenever you sacrifice a creature, you may draw a card.
 timing=enchantment
 oracle=Skip your draw step.\nWhenever you sacrifice a creature, you may draw a card.
-status=not supporting: skip-action
+status=not supported: skip-action

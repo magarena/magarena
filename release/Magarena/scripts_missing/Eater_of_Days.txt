@@ -10,4 +10,4 @@ ability=Flying, trample;\
         When SN enters the battlefield, you skip your next two turns.
 timing=main
 oracle=Flying, trample\nWhen Eater of Days enters the battlefield, you skip your next two turns.
-status=not supporting: skip-action
+status=not supported: skip-action

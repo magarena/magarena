@@ -8,4 +8,4 @@ ability=Skip your draw step.;\
         {1}, Tap two untapped creatures you control: Draw a card.
 timing=enchantment
 oracle=Skip your draw step.\n{1}, Tap two untapped creatures you control: Draw a card.
-status=not supporting: skip-action
+status=not supported: skip-action

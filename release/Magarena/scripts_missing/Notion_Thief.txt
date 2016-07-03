@@ -10,4 +10,4 @@ ability=Flash;\
         If an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card.
 timing=flash
 oracle=Flash\nIf an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card.
-status=not supporting: skip-action
+status=not supported: skip-action

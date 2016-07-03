@@ -8,4 +8,4 @@ ability=Players skip their untap steps.;\
         At the beginning of your upkeep, sacrifice SN unless you pay {U}.
 timing=enchantment
 oracle=Players skip their untap steps.\nAt the beginning of your upkeep, sacrifice Stasis unless you pay {U}.
-status=not supporting: skip-action
+status=not supported: skip-action

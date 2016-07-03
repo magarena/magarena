@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, if {W} was spent to cast it, target play
         SN can't block.
 timing=main
 oracle=When Revenant Patriarch enters the battlefield, if {W} was spent to cast it, target player skips his or her next combat phase.\nRevenant Patriarch can't block.
-status=not supporting: skip-action
+status=not supported: skip-action

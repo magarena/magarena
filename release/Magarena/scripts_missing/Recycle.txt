@@ -10,4 +10,4 @@ ability=Skip your draw step.;\
         Your maximum hand size is two.
 timing=enchantment
 oracle=Skip your draw step.\nWhenever you play a card, draw a card.\nYour maximum hand size is two.
-status=not supporting: skip-action
+status=not supported: skip-action

@@ -10,4 +10,4 @@ ability=Morph {3}{R}{R};\
         When SN is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.
 timing=main
 oracle=Morph {3}{R}{R}\nWhen Unstable Hulk is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.
-status=not supporting: skip-action
+status=not supported: skip-action

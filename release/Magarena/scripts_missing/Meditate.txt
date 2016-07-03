@@ -8,4 +8,4 @@ cost={2}{U}
 effect=Draw four cards. You skip your next turn.
 timing=removal
 oracle=Draw four cards. You skip your next turn.
-status=not supporting: skip-action
+status=not supported: skip-action

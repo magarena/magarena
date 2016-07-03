@@ -8,4 +8,4 @@ ability=Your opponents can't search libraries.;\
         If an opponent would begin an extra turn, that player skips that turn instead.
 timing=enchantment
 oracle=Your opponents can't search libraries.\nIf an opponent would begin an extra turn, that player skips that turn instead.
-status=not supporting: skip-action
+status=not supported: skip-action

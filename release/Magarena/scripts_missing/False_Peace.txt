@@ -7,4 +7,4 @@ cost={W}
 effect=Target player skips all combat phases of his or her next turn.
 timing=main
 oracle=Target player skips all combat phases of his or her next turn.
-status=not supporting: skip-action
+status=not supported: skip-action

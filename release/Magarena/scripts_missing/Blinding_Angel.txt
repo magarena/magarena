@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player skips his or her next combat phase.
 timing=main
 oracle=Flying\nWhenever Blinding Angel deals combat damage to a player, that player skips his or her next combat phase.
-status=not supporting: skip-action
+status=not supported: skip-action
