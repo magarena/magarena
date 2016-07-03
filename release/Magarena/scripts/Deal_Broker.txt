@@ -6,8 +6,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/3
-ability=Draft SN face up.;\
-        Immediately after the draft, you may reveal a card in your card pool. Each other player may offer you one card in his or her card pool in exchange. You may accept any one offer.;\
-        {T}: Draw a card, then discard a card.
+ability={T}: Draw a card, then discard a card.
 timing=main
 oracle=Draft Deal Broker face up.\nImmediately after the draft, you may reveal a card in your card pool. Each other player may offer you one card in his or her card pool in exchange. You may accept any one offer.\n{T}: Draw a card, then discard a card.
