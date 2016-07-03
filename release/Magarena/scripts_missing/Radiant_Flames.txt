@@ -8,3 +8,4 @@ cost={2}{R}
 effect=SN deals X damage to each creature, where X is the number of colors of mana spent to cast SN.
 timing=main
 oracle=Converge — Radiant Flames deals X damage to each creature, where X is the number of colors of mana spent to cast Radiant Flames.
+status=not supported: mana-spent

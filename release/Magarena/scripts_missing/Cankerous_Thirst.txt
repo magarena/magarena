@@ -7,3 +7,4 @@ cost={3}{B/G}
 effect=If {B} was spent to cast SN, you may have target creature get -3/-3 until end of turn. If {G} was spent to cast SN, you may have target creature get +3/+3 until end of turn.
 timing=removal
 oracle=If {B} was spent to cast Cankerous Thirst, you may have target creature get -3/-3 until end of turn. If {G} was spent to cast Cankerous Thirst, you may have target creature get +3/+3 until end of turn.
+status=not supported: mana-spent

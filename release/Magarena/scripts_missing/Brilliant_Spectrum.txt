@@ -8,3 +8,4 @@ cost={3}{U}
 effect=Draw X cards, where X is the number of colors of mana spent to cast SN. Then discard two cards.
 timing=main
 oracle=Converge — Draw X cards, where X is the number of colors of mana spent to cast Brilliant Spectrum. Then discard two cards.
+status=not supported: mana-spent

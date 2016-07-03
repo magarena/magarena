@@ -9,3 +9,4 @@ pt=2/1
 ability=When SN enters the battlefield, if {G} was spent to cast SN, destroy target artifact.
 timing=main
 oracle=When Tin Street Hooligan enters the battlefield, if {G} was spent to cast Tin Street Hooligan, destroy target artifact.
+status=not supported: mana-spent

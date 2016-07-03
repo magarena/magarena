@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Prevent all combat damage that would be dealt by target attacking or blocking creature this turn. If {R} was spent to cast SN, it deals damage to that creature's controller equal to the creature's power.
 timing=removal
 oracle=Prevent all combat damage that would be dealt by target attacking or blocking creature this turn. If {R} was spent to cast Boros Fury-Shield, it deals damage to that creature's controller equal to the creature's power.
+status=not supported: mana-spent

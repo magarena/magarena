@@ -7,3 +7,4 @@ cost={2}{U/R}
 effect=Creatures your opponents control get -1/-0 until end of turn if {U} was spent to cast SN, and creatures you control get +1/+0 until end of turn if {R} was spent to cast it.
 timing=removal
 oracle=Creatures your opponents control get -1/-0 until end of turn if {U} was spent to cast Unnerving Assault, and creatures you control get +1/+0 until end of turn if {R} was spent to cast it.
+status=not supported: mana-spent

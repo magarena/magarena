@@ -7,3 +7,4 @@ cost={3}{W/U}
 effect=Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield if {W} was spent to cast SN. Counter up to one target creature spell if {U} was spent to cast SN.
 timing=counter
 oracle=Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield if {W} was spent to cast Repel Intruders. Counter up to one target creature spell if {U} was spent to cast Repel Intruders.
+status=not supported: mana-spent

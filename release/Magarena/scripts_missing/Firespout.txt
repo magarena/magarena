@@ -7,3 +7,4 @@ cost={2}{R/G}
 effect=SN deals 3 damage to each creature without flying if {R} was spent to cast SN and 3 damage to each creature with flying if {G} was spent to cast it.
 timing=main
 oracle=Firespout deals 3 damage to each creature without flying if {R} was spent to cast Firespout and 3 damage to each creature with flying if {G} was spent to cast it.
+status=not supported: mana-spent

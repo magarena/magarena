@@ -7,3 +7,4 @@ cost={X}{G/W}
 effect=You gain X life if {G} was spent to cast SN and X life if {W} was spent to cast it.
 timing=main
 oracle=You gain X life if {G} was spent to cast Dawnglow Infusion and X life if {W} was spent to cast it.
+status=not supported: mana-spent

@@ -12,3 +12,4 @@ ability=Flying;\
         When SN enters the battlefield, sacrifice it unless {U} was spent to cast it.
 timing=main
 oracle=Flying\nWhen Patagia Viper enters the battlefield, put two 1/1 green and blue Snake creature tokens onto the battlefield.\nWhen Patagia Viper enters the battlefield, sacrifice it unless {U} was spent to cast it.
+status=not supported: mana-spent

@@ -8,3 +8,4 @@ cost={4}{U}
 effect=Gain control of target creature if its power is less than or equal to the number of colors of mana spent to cast SN.
 timing=main
 oracle=Converge — Gain control of target creature if its power is less than or equal to the number of colors of mana spent to cast Exert Influence.
+status=not supported: mana-spent

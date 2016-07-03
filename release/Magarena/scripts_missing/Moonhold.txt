@@ -7,3 +7,4 @@ cost={2}{R/W}
 effect=Target player can't play land cards this turn if {R} was spent to cast SN and can't play creature cards this turn if {W} was spent to cast it.
 timing=removal
 oracle=Target player can't play land cards this turn if {R} was spent to cast Moonhold and can't play creature cards this turn if {W} was spent to cast it.
+status=not supported: mana-spent

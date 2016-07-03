@@ -7,3 +7,4 @@ cost={5}{R}
 effect=Untap target creature and gain control of it until end of turn.  That creature gains haste until end of turn. If {W} was spent to cast SN, the creature gains "Whenever this creature deals combat damage, you gain that much life" until end of turn.
 timing=removal
 oracle=Untap target creature and gain control of it until end of turn.  That creature gains haste until end of turn. If {W} was spent to cast Flash Conscription, the creature gains "Whenever this creature deals combat damage, you gain that much life" until end of turn.
+status=not supported: mana-spent

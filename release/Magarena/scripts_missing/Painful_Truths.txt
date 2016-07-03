@@ -8,3 +8,4 @@ cost={2}{B}
 effect=You draw X cards and you lose X life, where X is the number of colors of mana spent to cast SN.
 timing=main
 oracle=Converge — You draw X cards and you lose X life, where X is the number of colors of mana spent to cast Painful Truths.
+status=not supported: mana-spent

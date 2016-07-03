@@ -7,3 +7,4 @@ cost={4}{B}
 effect=SN deals 4 damage to target creature and you gain 4 life. If {U} was spent to cast SN, draw a card.
 timing=main
 oracle=Ribbons of Night deals 4 damage to target creature and you gain 4 life. If {U} was spent to cast Ribbons of Night, draw a card.
+status=not supported: mana-spent

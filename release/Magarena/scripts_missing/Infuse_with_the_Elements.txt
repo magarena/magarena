@@ -8,3 +8,4 @@ cost={3}{G}
 effect=Put X +1/+1 counters on target creature, where X is the number of colors of mana spent to cast SN. That creature gains trample until end of turn.
 timing=removal
 oracle=Converge — Put X +1/+1 counters on target creature, where X is the number of colors of mana spent to cast Infuse with the Elements. That creature gains trample until end of turn.
+status=not supported: mana-spent

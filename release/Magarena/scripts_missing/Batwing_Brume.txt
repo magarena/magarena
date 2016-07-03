@@ -7,3 +7,4 @@ cost={1}{W/B}
 effect=Prevent all combat damage that would be dealt this turn if {W} was spent to cast SN. Each player loses 1 life for each attacking creature he or she controls if {B} was spent to cast SN.
 timing=removal
 oracle=Prevent all combat damage that would be dealt this turn if {W} was spent to cast Batwing Brume. Each player loses 1 life for each attacking creature he or she controls if {B} was spent to cast Batwing Brume.
+status=not supported: mana-spent

@@ -11,3 +11,4 @@ ability=SN can't be blocked.;\
         When SN enters the battlefield, sacrifice it unless {U} was spent to cast it.
 timing=main
 oracle=Azorius Herald can't be blocked.\nWhen Azorius Herald enters the battlefield, you gain 4 life.\nWhen Azorius Herald enters the battlefield, sacrifice it unless {U} was spent to cast it.
+status=not supported: mana-spent

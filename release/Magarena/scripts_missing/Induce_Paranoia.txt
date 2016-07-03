@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Counter target spell. If {B} was spent to cast SN, that spell's controller puts the top X cards of his or her library into his or her graveyard, where X is the spell's converted mana cost.
 timing=counter
 oracle=Counter target spell. If {B} was spent to cast Induce Paranoia, that spell's controller puts the top X cards of his or her library into his or her graveyard, where X is the spell's converted mana cost.
+status=not supported: mana-spent

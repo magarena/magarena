@@ -8,3 +8,4 @@ ability={1}, {T}: Put a charge counter on SN. Note the type of mana spent to pay
         {T}, Remove a charge counter from SN: Add one mana of SN's last noted type to your mana pool.
 timing=artifact
 oracle={1}, {T}: Put a charge counter on Jeweled Amulet. Note the type of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on Jeweled Amulet.\n{T}, Remove a charge counter from Jeweled Amulet: Add one mana of Jeweled Amulet's last noted type to your mana pool.
+status=not supported: mana-spent

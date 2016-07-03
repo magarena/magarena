@@ -9,3 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, if {R} was spent to cast SN, it gains haste until end of turn.
 timing=main
 oracle=When Gruul Scrapper enters the battlefield, if {R} was spent to cast Gruul Scrapper, it gains haste until end of turn.
+status=not supported: mana-spent

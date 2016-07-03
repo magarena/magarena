@@ -10,3 +10,4 @@ ability=SN enters the battlefield with a crystal counter on it for each color of
         {W}{U}{B}{R}{G}: Scry 3.
 timing=enchantment
 oracle=Converge — Prism Array enters the battlefield with a crystal counter on it for each color of mana spent to cast it.\nRemove a crystal counter from Prism Array: Tap target creature.\n{W}{U}{B}{R}{G}: Scry 3.
+status=not supported: mana-spent

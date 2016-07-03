@@ -11,3 +11,4 @@ ability=Vigilance;\
         When SN enters the battlefield, sacrifice it unless {W} was spent to cast it.
 timing=main
 oracle=Vigilance\nWhen Court Hussar enters the battlefield, look at the top three cards of your library, then put one of them into your hand and the rest on the bottom of your library in any order.\nWhen Court Hussar enters the battlefield, sacrifice it unless {W} was spent to cast it.
+status=not supported: mana-spent

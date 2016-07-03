@@ -8,3 +8,4 @@ cost={3}{G}{U}
 effect=Search your library for a creature, instant, or sorcery card with converted mana cost less than or equal to the number of colors of mana spent to cast SN, exile that card, then shuffle your library. You may cast that card without paying its mana cost.
 timing=main
 oracle=Converge — Search your library for a creature, instant, or sorcery card with converted mana cost less than or equal to the number of colors of mana spent to cast Bring to Light, exile that card, then shuffle your library. You may cast that card without paying its mana cost.
+status=not supported: mana-spent

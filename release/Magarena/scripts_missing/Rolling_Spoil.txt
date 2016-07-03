@@ -7,3 +7,4 @@ cost={2}{G}{G}
 effect=Destroy target land. If {B} was spent to cast SN, all creatures get -1/-1 until end of turn.
 timing=main
 oracle=Destroy target land. If {B} was spent to cast Rolling Spoil, all creatures get -1/-1 until end of turn.
+status=not supported: mana-spent

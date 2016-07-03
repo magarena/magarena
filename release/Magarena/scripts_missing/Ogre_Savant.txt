@@ -9,3 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, if {U} was spent to cast SN, return target creature to its owner's hand.
 timing=main
 oracle=When Ogre Savant enters the battlefield, if {U} was spent to cast Ogre Savant, return target creature to its owner's hand.
+status=not supported: mana-spent

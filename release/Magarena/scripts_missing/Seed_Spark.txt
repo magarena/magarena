@@ -7,3 +7,4 @@ cost={3}{W}
 effect=Destroy target artifact or enchantment. If {G} was spent to cast SN, put two 1/1 green Saproling creature tokens onto the battlefield.
 timing=removal
 oracle=Destroy target artifact or enchantment. If {G} was spent to cast Seed Spark, put two 1/1 green Saproling creature tokens onto the battlefield.
+status=not supported: mana-spent

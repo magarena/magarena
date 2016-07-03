@@ -8,3 +8,4 @@ cost={3}{U}
 effect=Creatures your opponents control get -X/-0 until end of turn, where X is the number of colors of mana spent to cast SN.~Draw a card.
 timing=removal
 oracle=Converge — Creatures your opponents control get -X/-0 until end of turn, where X is the number of colors of mana spent to cast Roilmage's Trick.\nDraw a card.
+status=not supported: mana-spent

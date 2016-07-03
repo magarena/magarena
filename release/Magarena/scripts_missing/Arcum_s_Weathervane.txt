@@ -8,3 +8,4 @@ ability={2}, {T}: Target snow land is no longer snow.;\
         {2}, {T}: Target nonsnow basic land becomes snow.
 timing=artifact
 oracle={2}, {T}: Target snow land is no longer snow.\n{2}, {T}: Target nonsnow basic land becomes snow.
+status=needs groovy

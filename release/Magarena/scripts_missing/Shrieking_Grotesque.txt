@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, if {B} was spent to cast it, target player discards a card.
 timing=main
 oracle=Flying\nWhen Shrieking Grotesque enters the battlefield, if {B} was spent to cast it, target player discards a card.
+status=not supported: mana-spent
