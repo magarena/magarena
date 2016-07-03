@@ -7,3 +7,4 @@ ability={T}, Exile a creature you control: Put a storage counter on SN.;\
         {T}: Add {C} to your mana pool for each storage counter on SN.
 timing=land
 oracle={T}, Exile a creature you control: Put a storage counter on City of Shadows.\n{T}: Add {C} to your mana pool for each storage counter on City of Shadows.
+status=not supported: add-multiple-mana

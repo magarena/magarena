@@ -8,3 +8,4 @@ ability=At the beginning of your precombat main phase, add {B} to your mana pool
         {7}, {T}: Destroy target creature. Then put a charge counter on SN.
 timing=artifact
 oracle=At the beginning of your precombat main phase, add {B} to your mana pool for each charge counter on Altar of Shadows.\n{7}, {T}: Destroy target creature. Then put a charge counter on Altar of Shadows.
+status=not supported: add-multiple-mana

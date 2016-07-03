@@ -9,3 +9,4 @@ ability=Whenever a creature dies, put a charge counter on SN.;\
         At the beginning of your precombat main phase, add {B} to your mana pool for each charge counter on SN.
 timing=enchantment
 oracle=Whenever a creature dies, put a charge counter on Black Market.\nAt the beginning of your precombat main phase, add {B} to your mana pool for each charge counter on Black Market.
+status=not supported: add-multiple-mana

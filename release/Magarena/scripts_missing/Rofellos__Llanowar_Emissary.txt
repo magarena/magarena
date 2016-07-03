@@ -9,3 +9,4 @@ pt=2/1
 ability={T}: Add {G} to your mana pool for each Forest you control.
 timing=main
 oracle={T}: Add {G} to your mana pool for each Forest you control.
+status=not supported: add-multiple-mana

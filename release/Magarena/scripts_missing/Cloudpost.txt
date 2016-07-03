@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {C} to your mana pool for each Locus on the battlefield.
 timing=land
 oracle=Cloudpost enters the battlefield tapped.\n{T}: Add {C} to your mana pool for each Locus on the battlefield.
+status=not supported: add-multiple-mana

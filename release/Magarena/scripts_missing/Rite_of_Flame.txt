@@ -7,3 +7,4 @@ cost={R}
 effect=Add {R}{R} to your mana pool, then add {R} to your mana pool for each card named Rite of Flame in each graveyard.
 timing=main
 oracle=Add {R}{R} to your mana pool, then add {R} to your mana pool for each card named Rite of Flame in each graveyard.
+status=not supported: add-multiple-mana

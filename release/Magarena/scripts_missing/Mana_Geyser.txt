@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=Add {R} to your mana pool for each tapped land your opponents control.
 timing=main
 oracle=Add {R} to your mana pool for each tapped land your opponents control.
+status=not supported: add-multiple-mana

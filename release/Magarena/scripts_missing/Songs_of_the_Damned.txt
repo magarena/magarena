@@ -7,3 +7,4 @@ cost={B}
 effect=Add {B} to your mana pool for each creature card in your graveyard.
 timing=removal
 oracle=Add {B} to your mana pool for each creature card in your graveyard.
+status=not supported: add-multiple-mana

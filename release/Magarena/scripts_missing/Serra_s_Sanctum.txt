@@ -6,3 +6,4 @@ type=Legendary,Land
 ability={T}: Add {W} to your mana pool for each enchantment you control.
 timing=land
 oracle={T}: Add {W} to your mana pool for each enchantment you control.
+status=not supported: add-multiple-mana

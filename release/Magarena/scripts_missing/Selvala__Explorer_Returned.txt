@@ -9,3 +9,4 @@ pt=2/4
 ability={T}: Each player reveals the top card of his or her library. For each nonland card revealed this way, add {G} to your mana pool and you gain 1 life. Then each player draws a card.
 timing=main
 oracle=Parley — {T}: Each player reveals the top card of his or her library. For each nonland card revealed this way, add {G} to your mana pool and you gain 1 life. Then each player draws a card.
+status=not supported: add-multiple-mana
