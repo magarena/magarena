@@ -9,3 +9,4 @@ pt=2/3
 ability={1}{U}: Look at the top X cards of your library, where X is the number of cards in your hand, then put them back in any order.
 timing=main
 oracle={1}{U}: Look at the top X cards of your library, where X is the number of cards in your hand, then put them back in any order.
+status=not supported: ordering-lib-top

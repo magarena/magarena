@@ -8,3 +8,4 @@ ability={1}: Look at the top three cards of your library, then put them back in 
         {T}: Draw a card, then put SN on top of its owner's library.
 timing=artifact
 oracle={1}: Look at the top three cards of your library, then put them back in any order.\n{T}: Draw a card, then put Sensei's Divining Top on top of its owner's library.
+status=not supported: ordering-lib-top
