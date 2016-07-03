@@ -11,3 +11,4 @@ ability={3}{B}{B}, {T}, Sacrifice X other creatures: Return X target creature ca
         {5}{B}{B}: Put SN on top of your library from your graveyard.
 timing=main
 oracle={3}{B}{B}, {T}, Sacrifice X other creatures: Return X target creature cards from your graveyard to the battlefield.\n{5}{B}{B}: Put Champion of Stray Souls on top of your library from your graveyard.
+status=not supported: multiple-targets

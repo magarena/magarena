@@ -7,3 +7,4 @@ cost={X}{X}{U}
 effect=X target creatures gain islandwalk until end of turn.
 timing=main
 oracle=X target creatures gain islandwalk until end of turn.
+status=not supported: multiple-targets

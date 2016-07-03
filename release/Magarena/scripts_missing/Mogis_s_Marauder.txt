@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, up to X target creatures each gain intimidate and haste until end of turn, where X is your devotion to black.
 timing=main
 oracle=When Mogis's Marauder enters the battlefield, up to X target creatures each gain intimidate and haste until end of turn, where X is your devotion to black.
+status=not supported: multiple-targets

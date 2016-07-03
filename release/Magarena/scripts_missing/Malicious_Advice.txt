@@ -7,3 +7,4 @@ cost={X}{U}{B}
 effect=Tap X target artifacts, creatures, and/or lands. You lose X life.
 timing=removal
 oracle=Tap X target artifacts, creatures, and/or lands. You lose X life.
+status=not supported: multiple-targets

@@ -9,3 +9,4 @@ pt=1/2
 ability={X}, {T}: Untap X target lands.
 timing=main
 oracle={X}, {T}: Untap X target lands.
+status=not supported: multiple-targets

@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         {1}{B}, Sacrifice SN: Destroy up to X target nonblack creatures, where X is the number of verse counters on SN. They can't be regenerated.
 timing=enchantment
 oracle=At the beginning of your upkeep, you may put a verse counter on Vile Requiem.\n{1}{B}, Sacrifice Vile Requiem: Destroy up to X target nonblack creatures, where X is the number of verse counters on Vile Requiem. They can't be regenerated.
+status=not supported: multiple-targets

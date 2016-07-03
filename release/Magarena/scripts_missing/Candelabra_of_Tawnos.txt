@@ -7,3 +7,4 @@ cost={1}
 ability={X}, {T}: Untap X target lands.
 timing=artifact
 oracle={X}, {T}: Untap X target lands.
+status=not supported: multiple-targets

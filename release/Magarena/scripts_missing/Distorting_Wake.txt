@@ -7,3 +7,4 @@ cost={X}{U}{U}{U}
 effect=Return X target nonland permanents to their owners' hands.
 timing=main
 oracle=Return X target nonland permanents to their owners' hands.
+status=not supported: multiple-targets

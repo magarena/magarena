@@ -7,3 +7,4 @@ cost={X}{2}{B}
 effect=Exile X target creature cards from your graveyard. For each creature card exiled this way, put a 2/2 black Zombie creature token onto the battlefield.
 timing=main
 oracle=Exile X target creature cards from your graveyard. For each creature card exiled this way, put a 2/2 black Zombie creature token onto the battlefield.
+status=not supported: multiple-targets

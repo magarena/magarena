@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {X}, {T}, Sacrifice SN: X target creatures with power 2 or less can't be blocked this turn.
 timing=artifact
 oracle=Runed Arch enters the battlefield tapped.\n{X}, {T}, Sacrifice Runed Arch: X target creatures with power 2 or less can't be blocked this turn.
+status=not supported: multiple-targets

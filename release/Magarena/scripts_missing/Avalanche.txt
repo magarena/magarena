@@ -7,3 +7,4 @@ cost={X}{2}{R}{R}
 effect=Destroy X target snow lands.
 timing=main
 oracle=Destroy X target snow lands.
+status=not supported: multiple-targets

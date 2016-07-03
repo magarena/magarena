@@ -7,3 +7,4 @@ cost={X}{B}{B}
 effect=Tap X target creatures.
 timing=main
 oracle=Tap X target creatures.
+status=not supported: multiple-targets

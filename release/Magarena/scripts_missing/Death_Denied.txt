@@ -8,3 +8,4 @@ cost={X}{B}{B}
 effect=Return X target creature cards from your graveyard to your hand.
 timing=removal
 oracle=Return X target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets

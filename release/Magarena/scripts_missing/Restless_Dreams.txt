@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X cards.
 effect=Return X target creature cards from your graveyard to your hand.
 timing=main
 oracle=As an additional cost to cast Restless Dreams, discard X cards.\nReturn X target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets

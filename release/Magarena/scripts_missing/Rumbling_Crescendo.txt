@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         {R}, Sacrifice SN: Destroy up to X target lands, where X is the number of verse counters on SN.
 timing=enchantment
 oracle=At the beginning of your upkeep, you may put a verse counter on Rumbling Crescendo.\n{R}, Sacrifice Rumbling Crescendo: Destroy up to X target lands, where X is the number of verse counters on Rumbling Crescendo.
+status=not supported: multiple-targets

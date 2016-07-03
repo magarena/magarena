@@ -7,3 +7,4 @@ cost={X}{U}
 effect=Tap X target creatures.~If you control a creature with power 4 or greater, those creatures don't untap during their controllers' next untap steps.
 timing=removal
 oracle=Tap X target creatures.\nFerocious — If you control a creature with power 4 or greater, those creatures don't untap during their controllers' next untap steps.
+status=not supported: multiple-targets

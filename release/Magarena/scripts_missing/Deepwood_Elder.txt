@@ -9,3 +9,4 @@ pt=2/2
 ability={X}{G}{G}, {T}, Discard a card: X target lands become Forests until end of turn.
 timing=main
 oracle={X}{G}{G}, {T}, Discard a card: X target lands become Forests until end of turn.
+status=not supported: multiple-targets

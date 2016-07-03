@@ -9,3 +9,4 @@ pt=1/1
 ability={X}{X}{R}, {T}, Sacrifice SN: Destroy X target lands.
 timing=main
 oracle={X}{X}{R}, {T}, Sacrifice Orcish Settlers: Destroy X target lands.
+status=not supported: multiple-targets

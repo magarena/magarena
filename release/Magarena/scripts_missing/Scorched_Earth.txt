@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X land cards.
 effect=Destroy X target lands.
 timing=main
 oracle=As an additional cost to cast Scorched Earth, discard X land cards.\nDestroy X target lands.
+status=not supported: multiple-targets

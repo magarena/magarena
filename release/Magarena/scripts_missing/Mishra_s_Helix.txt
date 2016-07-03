@@ -7,3 +7,4 @@ cost={5}
 ability={X}, {T}: Tap X target lands.
 timing=artifact
 oracle={X}, {T}: Tap X target lands.
+status=not supported: multiple-targets

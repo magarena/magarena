@@ -7,3 +7,4 @@ cost={X}{U}
 effect=Tap X target nonland permanents.
 timing=removal
 oracle=Tap X target nonland permanents.
+status=not supported: multiple-targets

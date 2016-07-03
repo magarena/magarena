@@ -7,3 +7,4 @@ cost={X}{R}
 effect=X target creatures can't block this turn.
 timing=main
 oracle=X target creatures can't block this turn.
+status=not supported: multiple-targets

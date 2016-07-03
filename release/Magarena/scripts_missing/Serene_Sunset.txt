@@ -7,3 +7,4 @@ cost={X}{G}
 effect=Prevent all combat damage X target creatures would deal this turn.
 timing=removal
 oracle=Prevent all combat damage X target creatures would deal this turn.
+status=not supported: multiple-targets

@@ -11,3 +11,4 @@ ability=Multikicker {U};\
         When SN enters the battlefield, up to X target creatures gain flying until end of turn, where X is the number of times SN was kicked.
 timing=main
 oracle=Multikicker {U}\nFlying\nWhen Voyager Drake enters the battlefield, up to X target creatures gain flying until end of turn, where X is the number of times Voyager Drake was kicked.
+status=not supported: multiple-targets

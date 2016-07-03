@@ -7,3 +7,4 @@ cost={X}{4}{B}
 effect=Destroy X target nonblack creatures. Draw X cards.
 timing=main
 oracle=Destroy X target nonblack creatures. Draw X cards.
+status=not supported: multiple-targets

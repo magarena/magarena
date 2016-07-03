@@ -7,3 +7,4 @@ cost={X}{B}
 effect=Exile X target cards from a single graveyard.
 timing=main
 oracle=Exile X target cards from a single graveyard.
+status=not supported: multiple-targets

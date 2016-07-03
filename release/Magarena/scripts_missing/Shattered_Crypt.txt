@@ -7,3 +7,4 @@ cost={X}{B}{B}
 effect=Return X target creature cards from your graveyard to your hand. You lose X life.
 timing=main
 oracle=Return X target creature cards from your graveyard to your hand. You lose X life.
+status=not supported: multiple-targets

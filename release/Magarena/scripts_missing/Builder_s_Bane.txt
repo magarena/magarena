@@ -7,3 +7,4 @@ cost={X}{X}{R}
 effect=Destroy X target artifacts. SN deals damage to each player equal to the number of artifacts he or she controlled put into a graveyard this way.
 timing=main
 oracle=Destroy X target artifacts. Builder's Bane deals damage to each player equal to the number of artifacts he or she controlled put into a graveyard this way.
+status=not supported: multiple-targets

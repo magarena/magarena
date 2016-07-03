@@ -9,3 +9,4 @@ pt=3/3
 ability={X}{U}, {T}, Discard two cards: Return X target creatures to their owners' hands.
 timing=main
 oracle={X}{U}, {T}, Discard two cards: Return X target creatures to their owners' hands.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={X}{G}
 effect=Tap X target creatures. SN deals 2 damage to each of those creatures with flying.
 timing=main
 oracle=Tap X target creatures. Winter Blast deals 2 damage to each of those creatures with flying.
+status=not supported: multiple-targets

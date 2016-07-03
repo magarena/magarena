@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X cards.
 effect=Return X target nonland permanents to their owners' hands.
 timing=main
 oracle=As an additional cost to cast Turbulent Dreams, discard X cards.\nReturn X target nonland permanents to their owners' hands.
+status=not supported: multiple-targets

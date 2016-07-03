@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X creature cards.
 effect=Return X target creatures to their owners' hands.
 timing=main
 oracle=As an additional cost to cast Æther Tide, discard X creature cards.\nReturn X target creatures to their owners' hands.
+status=not supported: multiple-targets
