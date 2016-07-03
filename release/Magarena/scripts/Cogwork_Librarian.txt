@@ -6,7 +6,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=3/3
-ability=Draft SN face up.;\
-        As you draft a card, you may draft an additional card from that booster pack. If you do, put SN into that booster pack.
 timing=main
 oracle=Draft Cogwork Librarian face up.\nAs you draft a card, you may draft an additional card from that booster pack. If you do, put Cogwork Librarian into that booster pack.
