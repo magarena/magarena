@@ -10,3 +10,4 @@ ability=Whenever SN deals combat damage to a creature, destroy that creature at 
         As long as seven or more cards are in your graveyard, all creatures able to block SN do so.
 timing=main
 oracle=Whenever Stone-Tongue Basilisk deals combat damage to a creature, destroy that creature at end of combat.\nThreshold — As long as seven or more cards are in your graveyard, all creatures able to block Stone-Tongue Basilisk do so.
+status=not supported: blocking-restriction

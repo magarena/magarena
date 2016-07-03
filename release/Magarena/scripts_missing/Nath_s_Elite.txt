@@ -10,3 +10,4 @@ ability=All creatures able to block SN do so.;\
         When SN enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on SN.
 timing=main
 oracle=All creatures able to block Nath's Elite do so.\nWhen Nath's Elite enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on Nath's Elite.
+status=not supported: blocking-restriction

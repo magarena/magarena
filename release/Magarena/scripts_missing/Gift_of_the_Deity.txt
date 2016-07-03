@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nAs long as enchanted creature is black, it gets +1/+1 and has deathtouch.\nAs long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.
+status=not supported: blocking-restriction

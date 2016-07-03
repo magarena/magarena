@@ -7,3 +7,4 @@ cost={2/G}{2/G}{2/G}
 effect=Until end of turn, target creature gets +4/+4 and gains trample, wither, and "When this creature attacks, target creature blocks it this turn if able."
 timing=main
 oracle=Until end of turn, target creature gets +4/+4 and gains trample, wither, and "When this creature attacks, target creature blocks it this turn if able."
+status=not supported: blocking-restriction

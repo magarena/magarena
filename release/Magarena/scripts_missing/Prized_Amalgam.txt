@@ -9,3 +9,4 @@ pt=3/3
 ability=Whenever a creature enters the battlefield, if it entered from your graveyard or you cast it from your graveyard, return SN from your graveyard to the battlefield tapped at the beginning of the next end step.
 timing=main
 oracle=Whenever a creature enters the battlefield, if it entered from your graveyard or you cast it from your graveyard, return Prized Amalgam from your graveyard to the battlefield tapped at the beginning of the next end step.
+status=not supported: trigger-from-graveyard

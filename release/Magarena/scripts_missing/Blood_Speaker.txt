@@ -10,3 +10,4 @@ ability=At the beginning of your upkeep, you may sacrifice SN. If you do, search
         Whenever a Demon enters the battlefield under your control, return SN from your graveyard to your hand.
 timing=main
 oracle=At the beginning of your upkeep, you may sacrifice Blood Speaker. If you do, search your library for a Demon card, reveal that card, put it into your hand, then shuffle your library.\nWhenever a Demon enters the battlefield under your control, return Blood Speaker from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

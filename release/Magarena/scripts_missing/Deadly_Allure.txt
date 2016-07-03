@@ -8,3 +8,4 @@ ability=Flashback {G}
 effect=Target creature gains deathtouch until end of turn and must be blocked this turn if able.
 timing=main
 oracle=Target creature gains deathtouch until end of turn and must be blocked this turn if able.\nFlashback {G}
+status=not supported: blocking-restriction

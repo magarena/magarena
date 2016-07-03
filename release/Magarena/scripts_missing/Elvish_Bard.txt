@@ -9,3 +9,4 @@ pt=2/4
 ability=All creatures able to block SN do so.
 timing=main
 oracle=All creatures able to block Elvish Bard do so.
+status=not supported: blocking-restriction

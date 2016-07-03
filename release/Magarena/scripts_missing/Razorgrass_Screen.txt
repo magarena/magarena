@@ -10,3 +10,4 @@ ability=Defender;\
         SN blocks each turn if able.
 timing=smain
 oracle=Defender\nRazorgrass Screen blocks each turn if able.
+status=not supported: blocking-restriction

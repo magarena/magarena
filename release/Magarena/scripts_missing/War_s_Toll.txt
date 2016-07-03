@@ -8,3 +8,4 @@ ability=Whenever an opponent taps a land for mana, tap all lands that player con
         If a creature an opponent controls attacks, all creatures that opponent controls attack if able.
 timing=enchantment
 oracle=Whenever an opponent taps a land for mana, tap all lands that player controls.\nIf a creature an opponent controls attacks, all creatures that opponent controls attack if able.
+status=not supported: attacking-restriction

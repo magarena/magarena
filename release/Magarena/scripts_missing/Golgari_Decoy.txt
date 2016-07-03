@@ -10,3 +10,4 @@ ability=All creatures able to block SN do so.;\
         Scavenge {3}{G}{G}
 timing=main
 oracle=All creatures able to block Golgari Decoy do so.\nScavenge {3}{G}{G}
+status=not supported: blocking-restriction

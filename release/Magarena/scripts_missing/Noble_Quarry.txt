@@ -12,3 +12,4 @@ ability=Bestow {5}{G};\
         Enchanted creature gets +1/+1.
 timing=main
 oracle=Bestow {5}{G}\nAll creatures able to block Noble Quarry or enchanted creature do so.\nEnchanted creature gets +1/+1.
+status=not supported: blocking-restriction

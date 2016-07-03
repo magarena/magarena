@@ -9,3 +9,4 @@ pt=4/4
 ability=Whenever SN attacks, defending player chooses an untapped creature he or she controls. That creature blocks SN this turn if able.
 timing=main
 oracle=Whenever Crashing Boars attacks, defending player chooses an untapped creature he or she controls. That creature blocks Crashing Boars this turn if able.
+status=not supported: blocking-restriction

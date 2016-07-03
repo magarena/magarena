@@ -9,3 +9,4 @@ pt=5/4
 ability=Whenever SN or another enchantment enters the battlefield under your control, target creature must be blocked this turn if able.
 timing=main
 oracle=Constellation — Whenever Goldenhide Ox or another enchantment enters the battlefield under your control, target creature must be blocked this turn if able.
+status=not supported: blocking-restriction

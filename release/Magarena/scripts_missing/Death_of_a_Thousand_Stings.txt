@@ -8,3 +8,4 @@ cost={4}{B}
 effect=Target player loses 1 life and you gain 1 life.~At the beginning of your upkeep, if you have more cards in hand than each opponent, you may return SN from your graveyard to your hand.
 timing=removal
 oracle=Target player loses 1 life and you gain 1 life.\nAt the beginning of your upkeep, if you have more cards in hand than each opponent, you may return Death of a Thousand Stings from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

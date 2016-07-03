@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever an opponent is dealt damage by a red instant or sorcery spell you control or by a red planeswalker you control, return SN from your graveyard to your hand.
 timing=fmain
 oracle=Flying\nHaste\nWhenever an opponent is dealt damage by a red instant or sorcery spell you control or by a red planeswalker you control, return Chandra's Phoenix from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

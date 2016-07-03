@@ -9,3 +9,4 @@ pt=4/1
 ability={2}{G}: All creatures able to block SN this turn do so.
 timing=main
 oracle={2}{G}: All creatures able to block Mortipede this turn do so.
+status=not supported: blocking-restriction

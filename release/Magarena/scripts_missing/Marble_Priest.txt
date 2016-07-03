@@ -10,3 +10,4 @@ ability=All Walls able to block SN do so.;\
         Prevent all combat damage that would be dealt to SN by Walls.
 timing=main
 oracle=All Walls able to block Marble Priest do so.\nPrevent all combat damage that would be dealt to Marble Priest by Walls.
+status=not supported: blocking-restriction

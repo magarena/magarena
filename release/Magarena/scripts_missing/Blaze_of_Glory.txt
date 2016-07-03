@@ -8,3 +8,4 @@ ability=Cast SN only during combat before blockers are declared.
 effect=Target creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.
 timing=removal
 oracle=Cast Blaze of Glory only during combat before blockers are declared.\nTarget creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.
+status=not supported: blocking-restriction

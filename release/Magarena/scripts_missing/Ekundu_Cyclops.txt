@@ -9,3 +9,4 @@ pt=3/4
 ability=If a creature you control attacks, SN also attacks if able.
 timing=main
 oracle=If a creature you control attacks, Ekundu Cyclops also attacks if able.
+status=not supported: attacking-restriction

@@ -11,3 +11,4 @@ ability=Bloodthirst 1;\
         {2}{G}: Target creature blocks SN this turn if able.
 timing=main
 oracle=Bloodthirst 1\n{2}{R}: Target creature can't block Burning-Tree Bloodscale this turn.\n{2}{G}: Target creature blocks Burning-Tree Bloodscale this turn if able.
+status=not supported: blocking-restriction

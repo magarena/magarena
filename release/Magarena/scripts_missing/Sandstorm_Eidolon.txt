@@ -10,3 +10,4 @@ ability={R}, Sacrifice SN: Target creature can't block this turn.;\
         Whenever you cast a multicolored spell, you may return SN from your graveyard to your hand.
 timing=main
 oracle={R}, Sacrifice Sandstorm Eidolon: Target creature can't block this turn.\nWhenever you cast a multicolored spell, you may return Sandstorm Eidolon from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

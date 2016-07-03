@@ -10,3 +10,4 @@ ability={T}: Target creature attacks this turn if able.;\
         {T}: Target creature blocks this turn if able.
 timing=main
 oracle={T}: Target creature attacks this turn if able.\n{T}: Target creature blocks this turn if able.
+status=not supported: blocking-restriction

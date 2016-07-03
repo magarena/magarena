@@ -10,3 +10,4 @@ ability=SN has flying as long as you control a Dragon.;\
         When a Dragon enters the battlefield, you may return SN from your graveyard to the battlefield.
 timing=main
 oracle=Bladewing's Thrall has flying as long as you control a Dragon.\nWhen a Dragon enters the battlefield, you may return Bladewing's Thrall from your graveyard to the battlefield.
+status=not supported: trigger-from-graveyard

@@ -9,3 +9,4 @@ pt=4/3
 ability=If SN attacks, all creatures you control attack if able.
 timing=main
 oracle=If Viashino Bey attacks, all creatures you control attack if able.
+status=not supported: attacking-restriction

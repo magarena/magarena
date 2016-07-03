@@ -8,3 +8,4 @@ cost={4}{G}{G}
 effect=Each creature you control gets +3/+3 until end of turn and must be blocked this turn if able.
 timing=main
 oracle=Each creature you control gets +3/+3 until end of turn and must be blocked this turn if able.
+status=not supported: blocking-restriction

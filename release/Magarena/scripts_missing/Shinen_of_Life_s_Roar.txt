@@ -10,3 +10,4 @@ ability=All creatures able to block SN do so.;\
         {2}{G}{G}, Discard SN: All creatures able to block target creature this turn do so.
 timing=main
 oracle=All creatures able to block Shinen of Life's Roar do so.\nChannel — {2}{G}{G}, Discard Shinen of Life's Roar: All creatures able to block target creature this turn do so.
+status=not supported: blocking-restriction

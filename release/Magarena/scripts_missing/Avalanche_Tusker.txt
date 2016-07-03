@@ -9,3 +9,4 @@ pt=6/4
 ability=Whenever SN attacks, target creature defending player controls blocks it this combat if able.
 timing=main
 oracle=Whenever Avalanche Tusker attacks, target creature defending player controls blocks it this combat if able.
+status=not supported: blocking-restriction

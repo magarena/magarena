@@ -11,3 +11,4 @@ ability=Bestow {4}{G};\
         Enchanted creature gets +4/+1 and blocks each turn if able.
 timing=main
 oracle=Bestow {4}{G}\nSpirespine blocks each turn if able.\nEnchanted creature gets +4/+1 and blocks each turn if able.
+status=not supported: blocking-restriction

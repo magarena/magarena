@@ -9,3 +9,4 @@ pt=1/1
 ability=At the beginning of your upkeep, you may return SN from your graveyard to your hand.
 timing=main
 oracle=At the beginning of your upkeep, you may return Squee, Goblin Nabob from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

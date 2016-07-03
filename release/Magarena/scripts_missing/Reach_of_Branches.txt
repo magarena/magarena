@@ -8,3 +8,4 @@ cost={4}{G}
 effect=Put a 2/5 green Treefolk Shaman creature token onto the battlefield.~Whenever a Forest enters the battlefield under your control, you may return SN from your graveyard to your hand.
 timing=removal
 oracle=Put a 2/5 green Treefolk Shaman creature token onto the battlefield.\nWhenever a Forest enters the battlefield under your control, you may return Reach of Branches from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

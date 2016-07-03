@@ -10,3 +10,4 @@ ability=Whenever a creature you control attacks, defending player loses 1 life a
         {3}{R/W}{R/W}: Creatures your opponents control block this turn if able, and you choose how those creatures block.
 timing=main
 oracle=Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life.\n{3}{R/W}{R/W}: Creatures your opponents control block this turn if able, and you choose how those creatures block.
+status=not supported: blocking-restriction

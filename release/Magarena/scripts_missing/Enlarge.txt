@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Target creature gets +7/+7 and gains trample until end of turn. It must be blocked this turn if able.
 timing=main
 oracle=Target creature gets +7/+7 and gains trample until end of turn. It must be blocked this turn if able.
+status=not supported: blocking-restriction

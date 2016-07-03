@@ -10,3 +10,4 @@ ability=Equipped creature has double strike.;\
         Equip {4}
 timing=equipment
 oracle=Equipped creature has double strike.\nWhenever equipped creature attacks, you may have target creature block it this turn if able.\nEquip {4}
+status=not supported: blocking-restriction

@@ -11,3 +11,4 @@ ability=Flying, haste;\
         At the beginning of combat on your turn, if you control a creature with power 4 or greater, you may pay {R}. If you do, return SN from your graveyard to the battlefield.
 timing=main
 oracle=Flying, haste\nFlamewake Phoenix attacks each turn if able.\nFerocious — At the beginning of combat on your turn, if you control a creature with power 4 or greater, you may pay {R}. If you do, return Flamewake Phoenix from your graveyard to the battlefield.
+status=not supported: trigger-from-graveyard

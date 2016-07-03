@@ -10,3 +10,4 @@ ability={1}: Target artifact creature blocks SN this turn if able.;\
         {1}: Target artifact creature can't block SN this turn.
 timing=main
 oracle={1}: Target artifact creature blocks Auriok Siege Sled this turn if able.\n{1}: Target artifact creature can't block Auriok Siege Sled this turn.
+status=not supported: blocking-restriction

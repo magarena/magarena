@@ -10,3 +10,4 @@ ability=Haste;\
         Whenever you cast a spell, if it's the second creature spell you cast this turn, you may return SN from your graveyard to the battlefield.
 timing=fmain
 oracle=Haste\nWhenever you cast a spell, if it's the second creature spell you cast this turn, you may return Vengevine from your graveyard to the battlefield.
+status=not supported: trigger-from-graveyard

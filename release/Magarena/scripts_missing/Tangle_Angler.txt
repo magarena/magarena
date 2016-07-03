@@ -10,3 +10,4 @@ ability=Infect;\
         {G}: Target creature blocks SN this turn if able.
 timing=main
 oracle=Infect\n{G}: Target creature blocks Tangle Angler this turn if able.
+status=not supported: blocking-restriction

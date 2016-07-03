@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Whenever you cast a creature spell, you may pay {G}{G}. If you do, return SN from your graveyard to your hand.
 timing=main
 oracle=When Masked Admirers enters the battlefield, draw a card.\nWhenever you cast a creature spell, you may pay {G}{G}. If you do, return Masked Admirers from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

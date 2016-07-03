@@ -8,3 +8,4 @@ ability=All creatures attack each turn if able.;\
         All creatures block each turn if able.
 timing=enchantment
 oracle=All creatures attack each turn if able.\nAll creatures block each turn if able.
+status=not supported: blocking-restriction

@@ -10,3 +10,4 @@ ability=SN can't block.;\
         Whenever a Swamp enters the battlefield under your control, you may return SN from your graveyard to your hand.
 timing=main
 oracle=Veilborn Ghoul can't block.\nWhenever a Swamp enters the battlefield under your control, you may return Veilborn Ghoul from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

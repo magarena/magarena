@@ -10,3 +10,4 @@ pt=10/8
 ability=All creatures able to block SN do so.
 timing=main
 oracle=All creatures able to block Breaker of Armies do so.
+status=not supported: blocking-restriction

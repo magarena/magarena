@@ -7,3 +7,4 @@ cost={4}{G}{G}
 effect=Until end of turn, target creature gets +6/+6 and gains trample, and all creatures able to block it this turn do so.~Miracle {G}
 timing=main
 oracle=Until end of turn, target creature gets +6/+6 and gains trample, and all creatures able to block it this turn do so.\nMiracle {G}
+status=not supported: blocking-restriction

@@ -11,3 +11,4 @@ ability=Trample;\
         {2}{S}: Target creature blocks target creature this turn if able.
 timing=main
 oracle=Trample\nWhenever Rimehorn Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.\n{2}{S}: Target creature blocks target creature this turn if able.
+status=not supported: blocking-restriction

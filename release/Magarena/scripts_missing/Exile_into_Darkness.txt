@@ -7,3 +7,4 @@ cost={4}{B}
 effect=Target player sacrifices a creature with converted mana cost 3 or less.~At the beginning of your upkeep, if you have more cards in hand than each opponent, you may return SN from your graveyard to your hand.
 timing=main
 oracle=Target player sacrifices a creature with converted mana cost 3 or less.\nAt the beginning of your upkeep, if you have more cards in hand than each opponent, you may return Exile into Darkness from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

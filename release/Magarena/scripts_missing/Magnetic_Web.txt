@@ -9,3 +9,4 @@ ability=If a creature with a magnet counter on it attacks, all creatures with ma
         {1}, {T}: Put a magnet counter on target creature.
 timing=artifact
 oracle=If a creature with a magnet counter on it attacks, all creatures with magnet counters on them attack if able.\nWhenever a creature with a magnet counter on it attacks, all creatures with magnet counters on them block that creature this turn if able.\n{1}, {T}: Put a magnet counter on target creature.
+status=not supported: blocking-restriction

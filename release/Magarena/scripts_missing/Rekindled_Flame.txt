@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=SN deals 4 damage to target creature or player.~At the beginning of your upkeep, if an opponent has no cards in hand, you may return SN from your graveyard to your hand.
 timing=main
 oracle=Rekindled Flame deals 4 damage to target creature or player.\nAt the beginning of your upkeep, if an opponent has no cards in hand, you may return Rekindled Flame from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

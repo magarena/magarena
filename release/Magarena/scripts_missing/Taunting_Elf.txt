@@ -9,3 +9,4 @@ pt=0/1
 ability=All creatures able to block SN do so.
 timing=main
 oracle=All creatures able to block Taunting Elf do so.
+status=not supported: blocking-restriction

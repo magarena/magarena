@@ -10,3 +10,4 @@ ability=SN blocks each turn if able.;\
         As long as SN is untapped, all creatures attacking you get -1/-0.
 timing=main
 oracle=Watchdog blocks each turn if able.\nAs long as Watchdog is untapped, all creatures attacking you get -1/-0.
+status=not supported: blocking-restriction

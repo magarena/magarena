@@ -9,3 +9,4 @@ pt=3/3
 ability=All creatures with flying able to block SN do so.
 timing=main
 oracle=All creatures with flying able to block Talruum Piper do so.
+status=not supported: blocking-restriction
