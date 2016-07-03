@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, tap any number of untapped creatures y
 effect=SN deals damage to target creature or player equal to three times the number of creatures tapped this way.
 timing=main
 oracle=As an additional cost to cast Burn at the Stake, tap any number of untapped creatures you control.\nBurn at the Stake deals damage to target creature or player equal to three times the number of creatures tapped this way.
+status=not supported: any-number-of

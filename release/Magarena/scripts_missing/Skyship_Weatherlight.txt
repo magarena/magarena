@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, search your library for any number of ar
         {4}, {T}: Choose a card at random that was exiled with SN. Put that card into its owner's hand.
 timing=artifact
 oracle=When Skyship Weatherlight enters the battlefield, search your library for any number of artifact and/or creature cards and exile them. Then shuffle your library.\n{4}, {T}: Choose a card at random that was exiled with Skyship Weatherlight. Put that card into its owner's hand.
+status=not supported: any-number-of

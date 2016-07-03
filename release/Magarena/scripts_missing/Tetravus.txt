@@ -12,3 +12,4 @@ ability=Flying;\
         At the beginning of your upkeep, you may exile any number of tokens put onto the battlefield with SN. If you do, put that many +1/+1 counters on SN.
 timing=main
 oracle=Flying\nTetravus enters the battlefield with three +1/+1 counters on it.\nAt the beginning of your upkeep, you may remove any number of +1/+1 counters from Tetravus. If you do, put that many 1/1 colorless Tetravite artifact creature tokens onto the battlefield. They each have flying and "This creature can't be enchanted."\nAt the beginning of your upkeep, you may exile any number of tokens put onto the battlefield with Tetravus. If you do, put that many +1/+1 counters on Tetravus.
+status=not supported: any-number-of

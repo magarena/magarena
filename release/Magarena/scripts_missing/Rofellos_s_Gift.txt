@@ -7,3 +7,4 @@ cost={G}
 effect=Reveal any number of green cards in your hand. Return an enchantment card from your graveyard to your hand for each card revealed this way.
 timing=main
 oracle=Reveal any number of green cards in your hand. Return an enchantment card from your graveyard to your hand for each card revealed this way.
+status=not supported: any-number-of

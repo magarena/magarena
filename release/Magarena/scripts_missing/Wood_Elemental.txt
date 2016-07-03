@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, sacrifice any number of untapped Forests.;
         SN's power and toughness are each equal to the number of Forests sacrificed as it entered the battlefield.
 timing=main
 oracle=As Wood Elemental enters the battlefield, sacrifice any number of untapped Forests.\nWood Elemental's power and toughness are each equal to the number of Forests sacrificed as it entered the battlefield.
+status=not supported: any-number-of

@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Search your library for any number of land cards and exile them. Then shuffle your library.
 timing=main
 oracle=Search your library for any number of land cards and exile them. Then shuffle your library.
+status=not supported: any-number-of

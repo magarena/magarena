@@ -10,3 +10,4 @@ ability=SN enters the battlefield with X +1/+1 counters on it.;\
         When SN dies, you may distribute a number of +1/+1 counters equal to the number of +1/+1 counters on SN among any number of creatures you control.
 timing=main
 oracle=Vastwood Hydra enters the battlefield with X +1/+1 counters on it.\nWhen Vastwood Hydra dies, you may distribute a number of +1/+1 counters equal to the number of +1/+1 counters on Vastwood Hydra among any number of creatures you control.
+status=not supported: any-number-of

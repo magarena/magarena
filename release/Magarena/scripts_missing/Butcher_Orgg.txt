@@ -9,3 +9,4 @@ pt=6/6
 ability=You may assign SN's combat damage divided as you choose among defending player and/or any number of creatures he or she controls.
 timing=main
 oracle=You may assign Butcher Orgg's combat damage divided as you choose among defending player and/or any number of creatures he or she controls.
+status=not supported: any-number-of

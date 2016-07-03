@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Tap any number of untapped creatures you control. You gain 4 life for each creature tapped this way.
 timing=main
 oracle=Tap any number of untapped creatures you control. You gain 4 life for each creature tapped this way.
+status=not supported: any-number-of

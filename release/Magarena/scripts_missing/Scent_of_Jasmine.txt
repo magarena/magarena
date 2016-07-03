@@ -7,3 +7,4 @@ cost={W}
 effect=Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.
 timing=removal
 oracle=Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.
+status=not supported: any-number-of

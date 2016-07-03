@@ -7,3 +7,4 @@ cost={R}
 effect=Discard any number of cards at random. Creatures you control get +1/+0 until end of turn for each card discarded this way.
 timing=removal
 oracle=Discard any number of cards at random. Creatures you control get +1/+0 until end of turn for each card discarded this way.
+status=not supported: any-number-of

@@ -10,3 +10,4 @@ ability=Trample;\
         When SN enters the battlefield, sacrifice it unless you sacrifice any number of creatures with total power 12 or greater.
 timing=main
 oracle=Trample\nWhen Phyrexian Dreadnought enters the battlefield, sacrifice it unless you sacrifice any number of creatures with total power 12 or greater.
+status=not supported: any-number-of

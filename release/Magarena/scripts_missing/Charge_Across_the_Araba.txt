@@ -8,3 +8,4 @@ cost={4}{W}
 effect=Return any number of Plains you control to their owner's hand. Creatures you control get +1/+1 until end of turn for each Plains returned this way.
 timing=removal
 oracle=Sweep — Return any number of Plains you control to their owner's hand. Creatures you control get +1/+1 until end of turn for each Plains returned this way.
+status=not supported: any-number-of

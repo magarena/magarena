@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Sacrifice any number of lands. Add {C} to your mana pool for each land sacrificed this way.
 timing=main
 oracle=Sacrifice any number of lands. Add {C} to your mana pool for each land sacrificed this way.
+status=not supported: add-multiple-mana

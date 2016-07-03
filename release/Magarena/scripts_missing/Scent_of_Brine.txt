@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Reveal any number of blue cards in your hand. Counter target spell unless its controller pays {1} for each card revealed this way.
 timing=counter
 oracle=Reveal any number of blue cards in your hand. Counter target spell unless its controller pays {1} for each card revealed this way.
+status=not supported: any-number-of

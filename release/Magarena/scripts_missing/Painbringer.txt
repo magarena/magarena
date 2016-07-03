@@ -9,3 +9,4 @@ pt=1/1
 ability={T}, Exile any number of cards from your graveyard: Target creature gets -X/-X until end of turn, where X is the number of cards exiled this way.
 timing=main
 oracle={T}, Exile any number of cards from your graveyard: Target creature gets -X/-X until end of turn, where X is the number of cards exiled this way.
+status=not supported: any-number-of

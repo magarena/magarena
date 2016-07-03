@@ -12,3 +12,4 @@ ability=Flying;\
         {R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Flying\nAs Dracoplasm enters the battlefield, sacrifice any number of creatures. Dracoplasm's power becomes the total power of those creatures and its toughness becomes their total toughness.\n{R}: Dracoplasm gets +1/+0 until end of turn.
+status=not supported: any-number-of

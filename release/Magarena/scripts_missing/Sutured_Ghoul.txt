@@ -11,3 +11,4 @@ ability=Trample;\
         SN's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.
 timing=main
 oracle=Trample\nAs Sutured Ghoul enters the battlefield, exile any number of creature cards from your graveyard.\nSutured Ghoul's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.
+status=not supported: any-number-of

@@ -9,3 +9,4 @@ pt=1/1
 ability={2}{W}, {T}: Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.
 timing=main
 oracle={2}{W}, {T}: Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.
+status=not supported: any-number-of

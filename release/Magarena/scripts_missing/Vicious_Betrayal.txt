@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice any number of creatures.
 effect=Target creature gets +2/+2 until end of turn for each creature sacrificed this way.
 timing=main
 oracle=As an additional cost to cast Vicious Betrayal, sacrifice any number of creatures.\nTarget creature gets +2/+2 until end of turn for each creature sacrificed this way.
+status=not supported: any-number-of

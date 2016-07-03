@@ -7,3 +7,4 @@ cost={1}{R}{R}
 effect=Discard a card at random. If you do, SN deals damage equal to that card's converted mana cost to each creature. You may repeat this process any number of times.
 timing=main
 oracle=Discard a card at random. If you do, Kindle the Carnage deals damage equal to that card's converted mana cost to each creature. You may repeat this process any number of times.
+status=not supported: any-number-of

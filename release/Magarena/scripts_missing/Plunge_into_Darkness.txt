@@ -8,3 +8,4 @@ ability=Entwine {B}
 effect=Choose one — (1) Sacrifice any number of creatures, then you gain 3 life for each sacrificed creature. (2) Pay X life, then look at the top X cards of your library. Put one of those cards into your hand and exile the rest.
 timing=removal
 oracle=Choose one —\n• Sacrifice any number of creatures, then you gain 3 life for each sacrificed creature.\n• Pay X life, then look at the top X cards of your library. Put one of those cards into your hand and exile the rest.\nEntwine {B}
+status=not supported: any-number-of

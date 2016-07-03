@@ -8,3 +8,4 @@ cost={3}{B}
 effect=Return any number of Swamps you control to their owner's hand. Target player discards a card for each Swamp returned this way.
 timing=main
 oracle=Sweep — Return any number of Swamps you control to their owner's hand. Target player discards a card for each Swamp returned this way.
+status=not supported: any-number-of

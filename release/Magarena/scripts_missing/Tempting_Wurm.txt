@@ -9,3 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, each opponent may put any number of artifact, creature, enchantment, and/or land cards from his or her hand onto the battlefield.
 timing=main
 oracle=When Tempting Wurm enters the battlefield, each opponent may put any number of artifact, creature, enchantment, and/or land cards from his or her hand onto the battlefield.
+status=not supported: any-number-of

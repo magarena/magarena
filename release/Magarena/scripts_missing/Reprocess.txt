@@ -7,3 +7,4 @@ cost={2}{B}{B}
 effect=Sacrifice any number of artifacts, creatures, and/or lands. Draw a card for each permanent sacrificed this way.
 timing=main
 oracle=Sacrifice any number of artifacts, creatures, and/or lands. Draw a card for each permanent sacrificed this way.
+status=not supported: any-number-of

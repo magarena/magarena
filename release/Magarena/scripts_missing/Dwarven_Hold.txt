@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Remove any number of storage counters from SN: Add {R} to your mana pool for each storage counter removed this way.
 timing=land
 oracle=Dwarven Hold enters the battlefield tapped.\nYou may choose not to untap Dwarven Hold during your untap step.\nAt the beginning of your upkeep, if Dwarven Hold is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from Dwarven Hold: Add {R} to your mana pool for each storage counter removed this way.
+status=not supported: add-multiple-mana

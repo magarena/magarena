@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN and any number of creatures you control: SN deals X damage to target creature or player, where X is the total power of the creatures sacrificed this way, then exile SN and those creature cards.
 timing=artifact
 oracle=Sword of the Ages enters the battlefield tapped.\n{T}, Sacrifice Sword of the Ages and any number of creatures you control: Sword of the Ages deals X damage to target creature or player, where X is the total power of the creatures sacrificed this way, then exile Sword of the Ages and those creature cards.
+status=not supported: any-number-of

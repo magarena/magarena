@@ -7,3 +7,4 @@ cost={2}{B}{B}
 effect=Sacrifice a nontoken permanent. If you do, target opponent loses 2 life unless he or she sacrifices a permanent or discards a card. You may repeat this process any number of times.
 timing=main
 oracle=Sacrifice a nontoken permanent. If you do, target opponent loses 2 life unless he or she sacrifices a permanent or discards a card. You may repeat this process any number of times.
+status=not supported: any-number-of

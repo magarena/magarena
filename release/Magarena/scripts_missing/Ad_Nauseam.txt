@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost. You may repeat this process any number of times.
 timing=removal
 oracle=Reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost. You may repeat this process any number of times.
+status=not supported: any-number-of

@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Discard any number of cards. Target player reveals his or her hand, then you choose a nonland card from it for each card discarded this way. That player discards those cards.
 timing=main
 oracle=Discard any number of cards. Target player reveals his or her hand, then you choose a nonland card from it for each card discarded this way. That player discards those cards.
+status=not supported: any-number-of

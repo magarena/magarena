@@ -10,3 +10,4 @@ ability=As an additional cost to cast SN, you may sacrifice any number of Spirit
 effect=Target player loses 2 life plus 2 life for each Spirit sacrificed this way. You gain that much life.
 timing=main
 oracle=As an additional cost to cast Devouring Greed, you may sacrifice any number of Spirits.\nTarget player loses 2 life plus 2 life for each Spirit sacrificed this way. You gain that much life.
+status=not supported: any-number-of

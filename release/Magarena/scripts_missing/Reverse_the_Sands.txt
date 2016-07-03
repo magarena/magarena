@@ -7,3 +7,4 @@ cost={6}{W}{W}
 effect=Redistribute any number of players' life totals.
 timing=main
 oracle=Redistribute any number of players' life totals.
+status=not supported: any-number-of

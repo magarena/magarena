@@ -10,3 +10,4 @@ ability=At the beginning of your upkeep, put a 2/2 green Wolf creature token ont
         {T}: Tap all untapped Wolf creatures you control. Each Wolf tapped this way deals damage equal to its power to target creature. That creature deals damage equal to its power divided as its controller chooses among any number of those Wolves.
 timing=main
 oracle=At the beginning of your upkeep, put a 2/2 green Wolf creature token onto the battlefield.\n{T}: Tap all untapped Wolf creatures you control. Each Wolf tapped this way deals damage equal to its power to target creature. That creature deals damage equal to its power divided as its controller chooses among any number of those Wolves.
+status=not supported: any-number-of

@@ -10,3 +10,4 @@ ability=If SN would be destroyed, regenerate it.;\
         Tap any number of untapped creatures you control other than SN with total power 10 or greater: SN gets +20/+20 until end of turn.
 timing=main
 oracle=If Mossbridge Troll would be destroyed, regenerate it.\nTap any number of untapped creatures you control other than Mossbridge Troll with total power 10 or greater: Mossbridge Troll gets +20/+20 until end of turn.
+status=not supported: any-number-of

@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, discard any number of creature cards. For each card discarded this way, put two +1/+1 counters on SN.
 timing=main
 oracle=When Mind Maggots enters the battlefield, discard any number of creature cards. For each card discarded this way, put two +1/+1 counters on Mind Maggots.
+status=not supported: any-number-of

@@ -7,3 +7,4 @@ cost={R}
 effect=Sacrifice any number of Mountains. SN deals that much damage to target player.
 timing=main
 oracle=Sacrifice any number of Mountains. Landslide deals that much damage to target player.
+status=not supported: any-number-of

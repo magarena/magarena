@@ -9,3 +9,4 @@ pt=6/6
 ability=When SN dies, search your library for any number of creature cards with total converted mana cost 6 or less and put them onto the battlefield. Then shuffle your library.
 timing=main
 oracle=When Protean Hulk dies, search your library for any number of creature cards with total converted mana cost 6 or less and put them onto the battlefield. Then shuffle your library.
+status=not supported: any-number-of

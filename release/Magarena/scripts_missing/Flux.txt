@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Each player discards any number of cards, then draws that many cards.~Draw a card.
 timing=main
 oracle=Each player discards any number of cards, then draws that many cards.\nDraw a card.
+status=not supported: any-number-of

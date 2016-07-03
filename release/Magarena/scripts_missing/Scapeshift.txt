@@ -7,3 +7,4 @@ cost={2}{G}{G}
 effect=Sacrifice any number of lands. Search your library for up to that many land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Sacrifice any number of lands. Search your library for up to that many land cards, put them onto the battlefield tapped, then shuffle your library.
+status=not supported: any-number-of

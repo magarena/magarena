@@ -9,3 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, you may search your library for any number of Spirit cards and put them into your graveyard. If you do, shuffle your library.
 timing=main
 oracle=When Iname, Death Aspect enters the battlefield, you may search your library for any number of Spirit cards and put them into your graveyard. If you do, shuffle your library.
+status=not supported: any-number-of

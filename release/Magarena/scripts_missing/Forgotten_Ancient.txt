@@ -11,3 +11,4 @@ ability=Whenever a player casts a spell, you may put a +1/+1 counter on SN.;\
         At the beginning of your upkeep, you may move any number of +1/+1 counters from SN onto other creatures.
 timing=main
 oracle=Whenever a player casts a spell, you may put a +1/+1 counter on Forgotten Ancient.\nAt the beginning of your upkeep, you may move any number of +1/+1 counters from Forgotten Ancient onto other creatures.
+status=not supported: any-number-of

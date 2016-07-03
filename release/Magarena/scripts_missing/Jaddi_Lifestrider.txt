@@ -9,3 +9,4 @@ pt=2/8
 ability=When SN enters the battlefield, you may tap any number of untapped creatures you control. You gain 2 life for each creature tapped this way.
 timing=main
 oracle=When Jaddi Lifestrider enters the battlefield, you may tap any number of untapped creatures you control. You gain 2 life for each creature tapped this way.
+status=not supported: any-number-of

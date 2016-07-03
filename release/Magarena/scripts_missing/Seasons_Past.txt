@@ -7,3 +7,4 @@ cost={4}{G}{G}
 effect=Return any number of cards with different converted mana costs from your graveyard to your hand. Put SN on the bottom of its owner's library.
 timing=main
 oracle=Return any number of cards with different converted mana costs from your graveyard to your hand. Put Seasons Past on the bottom of its owner's library.
+status=not supported: any-number-of

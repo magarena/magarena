@@ -8,3 +8,4 @@ cost={2}{R}
 effect=Return any number of Mountains you control to their owner's hand. SN deals damage to target creature equal to twice the number of Mountains returned this way.
 timing=removal
 oracle=Sweep — Return any number of Mountains you control to their owner's hand. Barrel Down Sokenzan deals damage to target creature equal to twice the number of Mountains returned this way.
+status=not supported: any-number-of

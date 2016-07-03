@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, search your library for any number of Dwarf cards and reveal those cards. Shuffle your library, then put them on top of it in any order.
 timing=main
 oracle=When Dwarven Recruiter enters the battlefield, search your library for any number of Dwarf cards and reveal those cards. Shuffle your library, then put them on top of it in any order.
+status=not supported: any-number-of

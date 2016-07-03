@@ -7,3 +7,4 @@ cost={2}{G}{G}{G}
 effect=Reveal any number of cards in your hand. You gain 2 life for each green mana symbol in those cards' mana costs.
 timing=main
 oracle=Chroma — Reveal any number of cards in your hand. You gain 2 life for each green mana symbol in those cards' mana costs.
+status=not supported: any-number-of

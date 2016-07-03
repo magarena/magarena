@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Discard any number of cards. Counter target spell unless its controller pays {3} for each card discarded this way.
 timing=counter
 oracle=Discard any number of cards. Counter target spell unless its controller pays {3} for each card discarded this way.
+status=not supported: any-number-of

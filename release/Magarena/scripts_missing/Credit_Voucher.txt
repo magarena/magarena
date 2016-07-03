@@ -7,3 +7,4 @@ cost={2}
 ability={2}, {T}, Sacrifice SN: Shuffle any number of cards from your hand into your library, then draw that many cards.
 timing=artifact
 oracle={2}, {T}, Sacrifice Credit Voucher: Shuffle any number of cards from your hand into your library, then draw that many cards.
+status=not supported: any-number-of

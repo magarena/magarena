@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Discard any number of cards. Search your library for up to that many basic land cards, reveal those cards, and put them into your hand. Then shuffle your library.
 timing=main
 oracle=Discard any number of cards. Search your library for up to that many basic land cards, reveal those cards, and put them into your hand. Then shuffle your library.
+status=not supported: any-number-of

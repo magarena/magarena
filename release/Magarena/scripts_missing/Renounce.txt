@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Sacrifice any number of permanents. You gain 2 life for each permanent sacrificed this way.
 timing=removal
 oracle=Sacrifice any number of permanents. You gain 2 life for each permanent sacrificed this way.
+status=not supported: any-number-of

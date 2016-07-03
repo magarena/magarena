@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Remove any number of storage counters from SN: Add {W} to your mana pool for each storage counter removed this way.
 timing=land
 oracle=Fountain of Cho enters the battlefield tapped.\n{T}: Put a storage counter on Fountain of Cho.\n{T}, Remove any number of storage counters from Fountain of Cho: Add {W} to your mana pool for each storage counter removed this way.
+status=not supported: add-multiple-mana
