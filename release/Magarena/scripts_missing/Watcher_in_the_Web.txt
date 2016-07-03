@@ -10,3 +10,4 @@ ability=Reach;\
         SN can block an additional seven creatures each combat.
 timing=main
 oracle=Reach\nWatcher in the Web can block an additional seven creatures each combat.
+status=not supported: block-multiple
