@@ -11,3 +11,4 @@ ability=Flying;\
         {4}{R}: Exile SN.
 timing=main
 oracle=Flying\nWhen Molten Firebird dies, return it to the battlefield under its owner's control at the beginning of the next end step and you skip your next draw step.\n{4}{R}: Exile Molten Firebird.
+status=not supporting: skip-action

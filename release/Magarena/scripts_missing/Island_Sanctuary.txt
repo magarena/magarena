@@ -7,3 +7,4 @@ cost={1}{W}
 ability=If you would draw a card during your draw step, instead you may skip that draw. If you do, until your next turn, you can't be attacked except by creatures with flying and/or islandwalk.
 timing=enchantment
 oracle=If you would draw a card during your draw step, instead you may skip that draw. If you do, until your next turn, you can't be attacked except by creatures with flying and/or islandwalk.
+status=not supporting: skip-action

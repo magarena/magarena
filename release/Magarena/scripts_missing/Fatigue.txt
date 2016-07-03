@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Target player skips his or her next draw step.
 timing=main
 oracle=Target player skips his or her next draw step.
+status=not supporting: skip-action

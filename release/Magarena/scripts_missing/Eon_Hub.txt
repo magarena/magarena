@@ -7,3 +7,4 @@ cost={5}
 ability=Players skip their upkeep steps.
 timing=artifact
 oracle=Players skip their upkeep steps.
+status=not supporting: skip-action

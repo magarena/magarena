@@ -11,3 +11,4 @@ ability=Flying;\
         When SN leaves the battlefield, you take an extra turn after this one.
 timing=main
 oracle=Flying\nWhen Wormfang Manta enters the battlefield, you skip your next turn.\nWhen Wormfang Manta leaves the battlefield, you take an extra turn after this one.
+status=not supporting: skip-action

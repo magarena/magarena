@@ -10,3 +10,4 @@ ability=Morph {5}{U}{U};\
         When SN is turned face up, each opponent skips his or her next untap step.
 timing=main
 oracle=Morph {5}{U}{U}\nWhen Brine Elemental is turned face up, each opponent skips his or her next untap step.
+status=not supporting: skip-action

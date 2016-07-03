@@ -9,3 +9,4 @@ pt=5/5
 ability={1}{W}: Return SN from your graveyard to the battlefield tapped. You skip your next turn.
 timing=main
 oracle={1}{W}: Return Chronosavant from your graveyard to the battlefield tapped. You skip your next turn.
+status=not supporting: skip-action

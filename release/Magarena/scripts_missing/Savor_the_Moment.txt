@@ -7,3 +7,4 @@ cost={1}{U}{U}
 effect=Take an extra turn after this one. Skip the untap step of that turn.
 timing=main
 oracle=Take an extra turn after this one. Skip the untap step of that turn.
+status=not supporting: skip-action

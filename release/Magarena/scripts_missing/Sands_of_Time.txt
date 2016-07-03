@@ -8,3 +8,4 @@ ability=Each player skips his or her untap step.;\
         At the beginning of each player's upkeep, that player simultaneously untaps each tapped artifact, creature, and land he or she controls and taps each untapped artifact, creature, and land he or she controls.
 timing=artifact
 oracle=Each player skips his or her untap step.\nAt the beginning of each player's upkeep, that player simultaneously untaps each tapped artifact, creature, and land he or she controls and taps each untapped artifact, creature, and land he or she controls.
+status=not supporting: skip-action

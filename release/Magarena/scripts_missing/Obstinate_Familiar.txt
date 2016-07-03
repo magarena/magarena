@@ -9,3 +9,4 @@ pt=1/1
 ability=If you would draw a card, you may skip that draw instead.
 timing=main
 oracle=If you would draw a card, you may skip that draw instead.
+status=not supporting: skip-action

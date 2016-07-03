@@ -11,3 +11,4 @@ ability=Deathtouch;\
         At the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.
 timing=main
 oracle=Deathtouch\nSkip your draw step.\nAt the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.
+status=not supporting: skip-action

@@ -9,3 +9,4 @@ ability=At the beginning of your upkeep, put a hunger counter on SN. Then destro
         When you draw a card, destroy SN.
 timing=enchantment
 oracle=At the beginning of your upkeep, put a hunger counter on Fasting. Then destroy Fasting if it has five or more hunger counters on it.\nIf you would begin your draw step, you may skip that step instead. If you do, you gain 2 life.\nWhen you draw a card, destroy Fasting.
+status=not supporting: skip-action
