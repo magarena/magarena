@@ -10,3 +10,4 @@ ability=Changeling;\
         {2}{U}: Target Shapeshifter becomes a copy of target creature until your next turn.
 timing=main
 oracle=Changeling\n{2}{U}: Target Shapeshifter becomes a copy of target creature until your next turn.
+status=not supported: multiple-targets

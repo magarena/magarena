@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=Destroy target land. SN deals 13 damage to target creature.
 timing=main
 oracle=Destroy target land. Into the Maw of Hell deals 13 damage to target creature.
+status=not supported: multiple-targets

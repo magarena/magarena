@@ -11,3 +11,4 @@ ability=0: Reveal the top card of your library and put it into your hand. SN dea
         −4: Each Dragon creature you control deals damage equal to its power to target player.
 timing=main
 oracle=0: Reveal the top card of your library and put it into your hand. Sarkhan the Mad deals damage to himself equal to that card's converted mana cost.\n−2: Target creature's controller sacrifices it, then that player puts a 5/5 red Dragon creature token with flying onto the battlefield.\n−4: Each Dragon creature you control deals damage equal to its power to target player.
+status=needs groovy
