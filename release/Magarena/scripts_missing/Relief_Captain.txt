@@ -10,3 +10,4 @@ pt=3/2
 ability=When SN enters the battlefield, support 3.
 timing=main
 oracle=When Relief Captain enters the battlefield, support 3.
+status=not supported: multiple-targets

@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, support 6.;\
         Whenever a creature you control with a +1/+1 counter on it dies, you gain 2 life.
 timing=main
 oracle=When Gladehart Cavalry enters the battlefield, support 6.\nWhenever a creature you control with a +1/+1 counter on it dies, you gain 2 life.
+status=not supported: multiple-targets

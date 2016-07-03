@@ -8,3 +8,4 @@ cost={4}{R}
 effect=Support 2.~Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.
 timing=main
 oracle=Support 2.\nGain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.
+status=not supported: multiple-targets

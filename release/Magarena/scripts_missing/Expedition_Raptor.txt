@@ -11,3 +11,4 @@ ability=Flying;\
         When SN enters the battlefield, support 2.
 timing=main
 oracle=Flying\nWhen Expedition Raptor enters the battlefield, support 2.
+status=not supported: multiple-targets

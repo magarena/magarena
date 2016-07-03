@@ -8,3 +8,4 @@ cost={3}{U}
 effect=Support 2.~Untap each creature you control with a +1/+1 counter on it.
 timing=removal
 oracle=Support 2.\nUntap each creature you control with a +1/+1 counter on it.
+status=not supported: multiple-targets

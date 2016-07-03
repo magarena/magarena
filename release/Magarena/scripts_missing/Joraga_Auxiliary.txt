@@ -10,3 +10,4 @@ pt=2/3
 ability={4}{G}{W}: Support 2.
 timing=main
 oracle={4}{G}{W}: Support 2.
+status=not supported: multiple-targets
