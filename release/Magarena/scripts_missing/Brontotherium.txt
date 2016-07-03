@@ -10,3 +10,4 @@ ability=Trample;\
         Provoke
 timing=main
 oracle=Trample\nProvoke
+status=not supported: blocking-restriction

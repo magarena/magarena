@@ -9,3 +9,4 @@ pt=1/1
 ability=All Sliver creatures have provoke.
 timing=main
 oracle=All Sliver creatures have provoke.
+status=not supported: blocking-restriction

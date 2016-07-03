@@ -11,3 +11,4 @@ ability=Flying;\
         Provoke
 timing=main
 oracle=Flying\n{1}: Swooping Talon loses flying until end of turn.\nProvoke
+status=not supported: blocking-restriction

@@ -10,3 +10,4 @@ ability=First strike;\
         Provoke
 timing=main
 oracle=First strike\nProvoke
+status=not supported: blocking-restriction

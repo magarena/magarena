@@ -10,3 +10,4 @@ ability=Haste;\
         Provoke
 timing=fmain
 oracle=Haste\nProvoke
+status=not supported: blocking-restriction

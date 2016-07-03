@@ -9,3 +9,4 @@ pt=1/1
 ability=Provoke
 timing=main
 oracle=Provoke
+status=not supported: blocking-restriction

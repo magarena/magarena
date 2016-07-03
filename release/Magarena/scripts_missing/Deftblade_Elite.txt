@@ -10,3 +10,4 @@ ability=Provoke;\
         {1}{W}: Prevent all combat damage that would be dealt to and dealt by SN this turn.
 timing=main
 oracle=Provoke\n{1}{W}: Prevent all combat damage that would be dealt to and dealt by Deftblade Elite this turn.
+status=not supported: blocking-restriction

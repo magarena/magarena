@@ -10,3 +10,4 @@ ability=Amplify 2;\
         Provoke
 timing=main
 oracle=Amplify 2\nProvoke
+status=not supported: blocking-restriction
