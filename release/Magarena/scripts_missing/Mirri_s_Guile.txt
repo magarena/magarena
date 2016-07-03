@@ -7,3 +7,4 @@ cost={G}
 ability=At the beginning of your upkeep, you may look at the top three cards of your library, then put them back in any order.
 timing=enchantment
 oracle=At the beginning of your upkeep, you may look at the top three cards of your library, then put them back in any order.
+status=not supported: ordering-lib-top

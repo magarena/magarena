@@ -9,3 +9,4 @@ pt=1/3
 ability=When SN enters the battlefield, scry 2.
 timing=main
 oracle=When Omenspeaker enters the battlefield, scry 2.
+status=not supported: ordering-lib-top

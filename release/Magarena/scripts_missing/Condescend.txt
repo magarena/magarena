@@ -7,3 +7,4 @@ cost={X}{U}
 effect=Counter target spell unless its controller pays {X}. Scry 2.
 timing=counter
 oracle=Counter target spell unless its controller pays {X}. Scry 2.
+status=not supported: ordering-lib-top

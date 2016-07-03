@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, scry 2.
 timing=main
 oracle=Flying\nWhen Horizon Scholar enters the battlefield, scry 2.
+status=not supported: ordering-lib-top

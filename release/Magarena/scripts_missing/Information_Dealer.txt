@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Look at the top X cards of your library, where X is the number of Wizards on the battlefield, then put them back in any order.
 timing=main
 oracle={T}: Look at the top X cards of your library, where X is the number of Wizards on the battlefield, then put them back in any order.
+status=not supported: ordering-lib-top

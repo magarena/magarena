@@ -7,3 +7,4 @@ cost={1}{R}{R}{R}
 effect=SN deals 5 damage to target creature or planeswalker. If it's your turn, scry 2.
 timing=removal
 oracle=Fated Conflagration deals 5 damage to target creature or planeswalker. If it's your turn, scry 2.
+status=not supported: ordering-lib-top

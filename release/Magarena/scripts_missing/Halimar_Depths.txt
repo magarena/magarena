@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.
 timing=land
 oracle=Halimar Depths enters the battlefield tapped.\nWhen Halimar Depths enters the battlefield, look at the top three cards of your library, then put them back in any order.\n{T}: Add {U} to your mana pool.
+status=not supported: ordering-lib-top

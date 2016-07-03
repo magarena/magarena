@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=Choose target creature or player. Scry 3, then reveal the top card of your library. SN deals damage equal to that card's converted mana cost to that creature or player.
 timing=removal
 oracle=Choose target creature or player. Scry 3, then reveal the top card of your library. Riddle of Lightning deals damage equal to that card's converted mana cost to that creature or player.
+status=not supported: ordering-lib-top

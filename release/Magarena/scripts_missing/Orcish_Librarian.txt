@@ -9,3 +9,4 @@ pt=1/1
 ability={R}, {T}: Look at the top eight cards of your library. Exile four of them at random, then put the rest on top of your library in any order.
 timing=main
 oracle={R}, {T}: Look at the top eight cards of your library. Exile four of them at random, then put the rest on top of your library in any order.
+status=not supported: ordering-lib-top

@@ -7,3 +7,4 @@ cost={2}{U}
 ability=Whenever you cast an instant or sorcery spell, you may pay {1}. If you do, scry 2.
 timing=enchantment
 oracle=Whenever you cast an instant or sorcery spell, you may pay {1}. If you do, scry 2.
+status=not supported: ordering-lib-top

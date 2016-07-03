@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN attacks, scry 3.
 timing=main
 oracle=Flying\nDiscard a card: Prognostic Sphinx gains hexproof until end of turn. Tap it.\nWhenever Prognostic Sphinx attacks, scry 3.
+status=not supported: ordering-lib-top

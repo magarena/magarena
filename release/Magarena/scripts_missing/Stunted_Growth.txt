@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Target player chooses three cards from his or her hand and puts them on top of his or her library in any order.
 timing=main
 oracle=Target player chooses three cards from his or her hand and puts them on top of his or her library in any order.
+status=not supported: ordering-lib-top

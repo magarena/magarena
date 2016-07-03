@@ -7,3 +7,4 @@ cost={4}{W}{W}{W}
 effect=Destroy all creatures and planeswalkers. If it's your turn, scry 2.
 timing=removal
 oracle=Destroy all creatures and planeswalkers. If it's your turn, scry 2.
+status=not supported: ordering-lib-top

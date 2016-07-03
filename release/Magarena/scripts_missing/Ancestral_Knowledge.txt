@@ -9,3 +9,4 @@ ability=Cumulative upkeep {1};\
         When SN leaves the battlefield, shuffle your library.
 timing=enchantment
 oracle=Cumulative upkeep {1}\nWhen Ancestral Knowledge enters the battlefield, look at the top ten cards of your library, then exile any number of them and put the rest back on top of your library in any order.\nWhen Ancestral Knowledge leaves the battlefield, shuffle your library.
+status=not supported: ordering-lib-top

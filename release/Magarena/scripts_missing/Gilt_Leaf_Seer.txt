@@ -9,3 +9,4 @@ pt=2/2
 ability={G}, {T}: Look at the top two cards of your library, then put them back in any order.
 timing=main
 oracle={G}, {T}: Look at the top two cards of your library, then put them back in any order.
+status=not supported: ordering-lib-top

@@ -7,3 +7,4 @@ cost={B}
 effect=Target creature gets -1/-1 until end of turn. Scry 2.
 timing=removal
 oracle=Target creature gets -1/-1 until end of turn. Scry 2.
+status=not supported: ordering-lib-top

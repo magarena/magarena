@@ -7,3 +7,4 @@ cost={2}{B}{B}
 effect=Look at target player's hand and choose two cards from it. Put them on top of that player's library in any order.
 timing=main
 oracle=Look at target player's hand and choose two cards from it. Put them on top of that player's library in any order.
+status=not supported: ordering-lib-top

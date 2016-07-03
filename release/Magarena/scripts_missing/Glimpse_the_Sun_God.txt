@@ -7,3 +7,4 @@ cost={X}{W}
 effect=Tap X target creatures. Scry 1.
 timing=removal
 oracle=Tap X target creatures. Scry 1.
+status=not supported: multiple-targets

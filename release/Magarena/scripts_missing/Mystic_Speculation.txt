@@ -8,3 +8,4 @@ ability=Buyback {2}
 effect=Scry 3.
 timing=main
 oracle=Buyback {2}\nScry 3.
+status=not supported: ordering-lib-top

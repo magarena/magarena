@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Look at the top five cards of target player's library. Put any number of them on the bottom of that library in any order and the rest on top of the library in any order.
 timing=main
 oracle=Look at the top five cards of target player's library. Put any number of them on the bottom of that library in any order and the rest on top of the library in any order.
+status=not supported: ordering-lib-top

@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, scry 2.
 timing=main
 oracle=Flying\nWhenever Windrider Patrol deals combat damage to a player, scry 2.
+status=not supported: ordering-lib-top

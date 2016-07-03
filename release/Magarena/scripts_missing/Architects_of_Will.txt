@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, look at the top three cards of target pl
         Cycling {U/B}
 timing=main
 oracle=When Architects of Will enters the battlefield, look at the top three cards of target player's library, then put them back in any order.\nCycling {U/B}
+status=not supported: ordering-lib-top

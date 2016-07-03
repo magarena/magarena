@@ -7,3 +7,4 @@ cost={R}
 effect=Look at the top three cards of target opponent's library, then put them back in any order. That player looks at the top three cards of your library, then puts them back in any order.
 timing=main
 oracle=Look at the top three cards of target opponent's library, then put them back in any order. That player looks at the top three cards of your library, then puts them back in any order.
+status=not supported: ordering-lib-top

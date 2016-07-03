@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Look at the top three cards of target player's library. Exile any number of those cards, then put the rest back in any order.~Transmute {1}{B}{B}
 timing=main
 oracle=Look at the top three cards of target player's library. Exile any number of those cards, then put the rest back in any order.\nTransmute {1}{B}{B}
+status=not supported: ordering-lib-top

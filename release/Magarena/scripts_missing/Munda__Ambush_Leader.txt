@@ -11,3 +11,4 @@ ability=Haste;\
         Whenever SN or another Ally enters the battlefield under your control, you may look at the top four cards of your library. If you do, reveal any number of Ally cards from among them, then put those cards on top of your library in any order and the rest on the bottom in any order.
 timing=fmain
 oracle=Haste\nRally — Whenever Munda, Ambush Leader or another Ally enters the battlefield under your control, you may look at the top four cards of your library. If you do, reveal any number of Ally cards from among them, then put those cards on top of your library in any order and the rest on the bottom in any order.
+status=not supported: ordering-lib-top

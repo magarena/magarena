@@ -7,3 +7,4 @@ cost={U}
 effect=Draw a card. Scry 2.
 timing=main
 oracle=Draw a card. Scry 2.
+status=not supported: ordering-lib-top

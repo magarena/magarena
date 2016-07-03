@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, look at the top four cards of your libra
         {4}{U}: Return SN to its owner's hand.
 timing=main
 oracle=When Crystal Seer enters the battlefield, look at the top four cards of your library, then put them back in any order.\n{4}{U}: Return Crystal Seer to its owner's hand.
+status=not supported: ordering-lib-top

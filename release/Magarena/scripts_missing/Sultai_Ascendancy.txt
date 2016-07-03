@@ -7,3 +7,4 @@ cost={B}{G}{U}
 ability=At the beginning of your upkeep, look at the top two cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.
 timing=enchantment
 oracle=At the beginning of your upkeep, look at the top two cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.
+status=not supported: ordering-lib-top

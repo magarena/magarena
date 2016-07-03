@@ -10,3 +10,4 @@ pt=2/2
 ability=When SN enters the battlefield, scry 2, then reveal the top card of your library. If it's a creature card, put it into your hand.
 timing=main
 oracle=When Llanowar Empath enters the battlefield, scry 2, then reveal the top card of your library. If it's a creature card, put it into your hand.
+status=not supported: ordering-lib-top

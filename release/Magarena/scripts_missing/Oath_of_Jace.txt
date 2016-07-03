@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, draw three cards, then discard two cards
         At the beginning of your upkeep, scry X, where X is the number of planeswalkers you control.
 timing=enchantment
 oracle=When Oath of Jace enters the battlefield, draw three cards, then discard two cards.\nAt the beginning of your upkeep, scry X, where X is the number of planeswalkers you control.
+status=not supported: ordering-lib-top

@@ -10,3 +10,4 @@ ability=Morph {2}{U};\
         Whenever SN or another permanent is turned face up, you may scry 2.
 timing=main
 oracle=Morph {2}{U}\nWhenever Unblinking Bleb or another permanent is turned face up, you may scry 2.
+status=not supported: ordering-lib-top

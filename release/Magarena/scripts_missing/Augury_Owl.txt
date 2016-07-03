@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, scry 3.
 timing=main
 oracle=Flying\nWhen Augury Owl enters the battlefield, scry 3.
+status=not supported: ordering-lib-top

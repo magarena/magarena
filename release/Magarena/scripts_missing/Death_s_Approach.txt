@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets -X/-X, where X is the number of creature cards in its controller's graveyard.
+status=needs groovy

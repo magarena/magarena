@@ -7,3 +7,4 @@ cost={U}{U}{U}
 effect=Put a token onto the battlefield that's a copy of target creature you control. If it's your turn, scry 2.
 timing=removal
 oracle=Put a token onto the battlefield that's a copy of target creature you control. If it's your turn, scry 2.
+status=not supported: ordering-lib-top

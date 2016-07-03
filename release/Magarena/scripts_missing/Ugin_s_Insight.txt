@@ -8,3 +8,4 @@ cost={3}{U}{U}
 effect=Scry X, where X is the highest converted mana cost among permanents you control, then draw three cards.
 timing=main
 oracle=Scry X, where X is the highest converted mana cost among permanents you control, then draw three cards.
+status=not supported: ordering-lib-top

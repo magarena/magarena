@@ -8,3 +8,4 @@ cost={2}{B}
 effect=Scry 2, then draw two cards. You lose 2 life.
 timing=main
 oracle=Scry 2, then draw two cards. You lose 2 life.
+status=not supported: ordering-lib-top

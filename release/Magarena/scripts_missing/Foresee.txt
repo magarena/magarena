@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Scry 4, then draw two cards.
 timing=main
 oracle=Scry 4, then draw two cards.
+status=not supported: ordering-lib-top
