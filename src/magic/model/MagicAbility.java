@@ -94,6 +94,13 @@ public enum MagicAbility {
             ));
         }
     },
+    CannotBeBlockedByPermanent2(ARG.WORDRUN + " can't block it", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(CantBeBlockedTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
+            ));
+        }
+    },
     CannotBeBlockedExceptByPermanent("(SN )?can't be blocked except by " + ARG.WORDRUN, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(CantBeBlockedTrigger.createExcept(
