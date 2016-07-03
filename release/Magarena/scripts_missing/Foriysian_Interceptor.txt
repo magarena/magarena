@@ -11,3 +11,4 @@ ability=Flash;\
         SN can block an additional creature.
 timing=flash
 oracle=Flash\nDefender\nForiysian Interceptor can block an additional creature.
+status=not supported: block-multiple

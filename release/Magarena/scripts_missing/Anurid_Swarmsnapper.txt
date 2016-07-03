@@ -10,3 +10,4 @@ ability=Reach;\
         {1}{G}: SN can block an additional creature this turn.
 timing=main
 oracle=Reach\n{1}{G}: Anurid Swarmsnapper can block an additional creature this turn.
+status=not supported: block-multiple

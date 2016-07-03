@@ -10,3 +10,4 @@ ability=Defender;\
         SN can block any number of creatures.
 timing=smain
 oracle=Defender\nWall of Glare can block any number of creatures.
+status=not supported: block-multiple

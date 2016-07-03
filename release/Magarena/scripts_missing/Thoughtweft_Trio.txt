@@ -11,3 +11,4 @@ ability=First strike, vigilance;\
         SN can block any number of creatures.
 timing=main
 oracle=First strike, vigilance\nChampion a Kithkin\nThoughtweft Trio can block any number of creatures.
+status=not supported: block-multiple

@@ -11,3 +11,4 @@ ability=Reach;\
         {W}: SN can block an additional creature this turn.
 timing=main
 oracle=Reach\n{W}: Mounted Archers can block an additional creature this turn.
+status=not supported: block-multiple

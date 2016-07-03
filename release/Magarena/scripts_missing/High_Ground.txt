@@ -7,3 +7,4 @@ cost={W}
 ability=Each creature you control can block an additional creature each combat.
 timing=enchantment
 oracle=Each creature you control can block an additional creature each combat.
+status=not supported: block-multiple

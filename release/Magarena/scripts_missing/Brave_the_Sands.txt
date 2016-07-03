@@ -8,3 +8,4 @@ ability=Creatures you control have vigilance.;\
         Each creature you control can block an additional creature.
 timing=enchantment
 oracle=Creatures you control have vigilance.\nEach creature you control can block an additional creature.
+status=not supported: block-multiple

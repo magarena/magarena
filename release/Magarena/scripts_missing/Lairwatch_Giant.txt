@@ -10,3 +10,4 @@ ability=SN can block an additional creature.;\
         Whenever SN blocks two or more creatures, it gains first strike until end of turn.
 timing=main
 oracle=Lairwatch Giant can block an additional creature.\nWhenever Lairwatch Giant blocks two or more creatures, it gains first strike until end of turn.
+status=not supported: block-multiple

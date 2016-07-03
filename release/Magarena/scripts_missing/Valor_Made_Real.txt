@@ -7,3 +7,4 @@ cost={W}
 effect=Target creature can block any number of creatures this turn.
 timing=removal
 oracle=Target creature can block any number of creatures this turn.
+status=not supported: block-multiple

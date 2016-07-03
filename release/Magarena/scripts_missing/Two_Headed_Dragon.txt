@@ -12,3 +12,4 @@ ability=Flying;\
         {1}{R}: SN gets +2/+0 until end of turn.
 timing=main
 oracle=Flying\nMenace\nTwo-Headed Dragon can block an additional creature each combat.\n{1}{R}: Two-Headed Dragon gets +2/+0 until end of turn.
+status=not supported: block-multiple

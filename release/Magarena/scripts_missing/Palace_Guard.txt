@@ -9,3 +9,4 @@ pt=1/4
 ability=SN can block any number of creatures.
 timing=main
 oracle=Palace Guard can block any number of creatures.
+status=not supported: block-multiple

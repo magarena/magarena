@@ -9,3 +9,4 @@ ability=Equipped creature gets +0/+3 and can block an additional creature.;\
         Equip {3}
 timing=equipment
 oracle=Equipped creature gets +0/+3 and can block an additional creature.\nEquip {3}
+status=not supported: block-multiple

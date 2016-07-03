@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN blocks, it gets +1/+1 until end of turn for each creature it's blocking.
 timing=main
 oracle=Flying\nGuardian of the Gateless can block any number of creatures.\nWhenever Guardian of the Gateless blocks, it gets +1/+1 until end of turn for each creature it's blocking.
+status=not supported: block-multiple

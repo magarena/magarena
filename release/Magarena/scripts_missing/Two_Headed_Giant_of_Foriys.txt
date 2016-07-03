@@ -10,3 +10,4 @@ ability=Trample;\
         SN can block an additional creature each combat.
 timing=main
 oracle=Trample\nTwo-Headed Giant of Foriys can block an additional creature each combat.
+status=not supported: block-multiple

@@ -10,3 +10,4 @@ ability=Reach;\
         SN can block an additional creature each combat.
 timing=main
 oracle=Reach\nSelesnya Sagittars can block an additional creature each combat.
+status=not supported: block-multiple
