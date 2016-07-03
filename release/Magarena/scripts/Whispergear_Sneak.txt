@@ -6,7 +6,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={1}
 pt=1/1
-ability=Draft SN face up.;\
-        During the draft, you may turn SN face down. If you do, look at any unopened booster pack in the draft or any booster pack not being looked at by another player.
 timing=main
 oracle=Draft Whispergear Sneak face up.\nDuring the draft, you may turn Whispergear Sneak face down. If you do, look at any unopened booster pack in the draft or any booster pack not being looked at by another player.
