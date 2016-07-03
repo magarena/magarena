@@ -7,3 +7,4 @@ cost={G/U}
 effect=Move any number of +1/+1 counters from target creature onto another target creature with the same controller.
 timing=removal
 oracle=Move any number of +1/+1 counters from target creature onto another target creature with the same controller.
+status=not supported: multiple-targets

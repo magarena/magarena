@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Put a +1/+1 counter on target creature, two +1/+1 counters on another target creature, and three +1/+1 counters on a third target creature.
 timing=main
 oracle=Put a +1/+1 counter on target creature, two +1/+1 counters on another target creature, and three +1/+1 counters on a third target creature.
+status=not supported: multiple-targets

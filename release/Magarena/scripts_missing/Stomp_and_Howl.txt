@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Destroy target artifact and target enchantment.
 timing=main
 oracle=Destroy target artifact and target enchantment.
+status=not supported: multiple-targets

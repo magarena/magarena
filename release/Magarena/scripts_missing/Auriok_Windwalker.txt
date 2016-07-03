@@ -10,3 +10,4 @@ ability=Flying;\
         {T}: Attach target Equipment you control to target creature you control.
 timing=main
 oracle=Flying\n{T}: Attach target Equipment you control to target creature you control.
+status=not supported: multiple-targets

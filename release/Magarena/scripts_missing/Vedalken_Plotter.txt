@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, exchange control of target land you control and target land an opponent controls.
 timing=main
 oracle=When Vedalken Plotter enters the battlefield, exchange control of target land you control and target land an opponent controls.
+status=not supported: multiple-targets

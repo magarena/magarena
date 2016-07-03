@@ -9,3 +9,4 @@ ability=Multikicker {1}
 effect=Choose target creature or player, then choose another target creature or player for each time SN was kicked. SN deals X damage to each of them.
 timing=removal
 oracle=Multikicker {1}\nChoose target creature or player, then choose another target creature or player for each time Comet Storm was kicked. Comet Storm deals X damage to each of them.
+status=not supported: multiple-targets

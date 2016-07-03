@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Target player gains control of target artifact, creature, or land you control.
 timing=main
 oracle={T}: Target player gains control of target artifact, creature, or land you control.
+status=not supported: multiple-targets

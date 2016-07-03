@@ -7,3 +7,4 @@ cost={4}{B}{B}
 effect=Destroy target creature and target land.
 timing=main
 oracle=Destroy target creature and target land.
+status=not supported: multiple-targets

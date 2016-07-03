@@ -10,3 +10,4 @@ ability=Morph {4}{U};\
         When SN is turned face up, you may exchange control of target creature you control and target creature an opponent controls.
 timing=main
 oracle=Morph {4}{U}\nWhen Chromeshell Crab is turned face up, you may exchange control of target creature you control and target creature an opponent controls.
+status=not supported: multiple-targets

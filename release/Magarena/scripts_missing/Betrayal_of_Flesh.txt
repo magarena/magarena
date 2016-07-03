@@ -8,3 +8,4 @@ ability=Entwine—Sacrifice three lands.
 effect=Choose one — (1) Destroy target creature. (2) Return target creature card from your graveyard to the battlefield.
 timing=removal
 oracle=Choose one —\n• Destroy target creature.\n• Return target creature card from your graveyard to the battlefield.\nEntwine—Sacrifice three lands.
+status=not supported: multiple-targets

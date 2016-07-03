@@ -7,3 +7,4 @@ cost={R}
 effect=SN costs {R} more to cast for each target beyond the first.~Any number of target creatures can't block this turn.
 timing=main
 oracle=Strive — Blinding Flare costs {R} more to cast for each target beyond the first.\nAny number of target creatures can't block this turn.
+status=not supported: multiple-targets

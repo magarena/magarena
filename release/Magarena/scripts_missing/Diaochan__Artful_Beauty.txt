@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Destroy target creature of your choice, then destroy target creature of an opponent's choice. Activate this ability only during your turn, before attackers are declared.
 timing=main
 oracle={T}: Destroy target creature of your choice, then destroy target creature of an opponent's choice. Activate this ability only during your turn, before attackers are declared.
+status=not supported: multiple-targets

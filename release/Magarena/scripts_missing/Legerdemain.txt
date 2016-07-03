@@ -8,3 +8,4 @@ cost={2}{U}{U}
 effect=Exchange control of target artifact or creature and another target permanent that shares one of those types with it.
 timing=main
 oracle=Exchange control of target artifact or creature and another target permanent that shares one of those types with it.
+status=not supported: multiple-targets

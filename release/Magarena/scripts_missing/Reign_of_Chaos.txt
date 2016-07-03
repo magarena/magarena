@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=Choose one — (1) Destroy target Plains and target white creature. (2) Destroy target Island and target blue creature.
 timing=main
 oracle=Choose one —\n• Destroy target Plains and target white creature.\n• Destroy target Island and target blue creature.
+status=not supported: multiple-targets

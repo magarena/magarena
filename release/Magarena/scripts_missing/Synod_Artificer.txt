@@ -10,3 +10,4 @@ ability={X}, {T}: Tap X target noncreature artifacts.;\
         {X}, {T}: Untap X target noncreature artifacts.
 timing=main
 oracle={X}, {T}: Tap X target noncreature artifacts.\n{X}, {T}: Untap X target noncreature artifacts.
+status=not supported: multiple-targets

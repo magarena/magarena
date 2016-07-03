@@ -9,3 +9,4 @@ ability=Devoid
 effect=Choose one or both — (1) Return target spell or creature to its owner's hand. (2) SN deals 2 damage to target creature or planeswalker. If that permanent would be put into a graveyard this turn, exile it instead.
 timing=removal
 oracle=Devoid\nChoose one or both —\n• Return target spell or creature to its owner's hand.\n• Brutal Expulsion deals 2 damage to target creature or planeswalker. If that permanent would be put into a graveyard this turn, exile it instead.
+status=not supported: multiple-targets

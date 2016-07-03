@@ -10,3 +10,4 @@ ability=SN enters the battlefield with two -1/-1 counters on it.;\
         {U}, {Q}: Move a counter from target creature onto a second target creature.
 timing=main
 oracle=Leech Bonder enters the battlefield with two -1/-1 counters on it.\n{U}, {Q}: Move a counter from target creature onto a second target creature.
+status=not supported: multiple-targets

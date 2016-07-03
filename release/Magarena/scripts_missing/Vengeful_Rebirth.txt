@@ -7,3 +7,4 @@ cost={4}{R}{G}
 effect=Return target card from your graveyard to your hand. If you return a nonland card to your hand this way, SN deals damage equal to that card's converted mana cost to target creature or player.~Exile SN.
 timing=main
 oracle=Return target card from your graveyard to your hand. If you return a nonland card to your hand this way, Vengeful Rebirth deals damage equal to that card's converted mana cost to target creature or player.\nExile Vengeful Rebirth.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={4}{B}{R}
 effect=Destroy target nonblack creature and target land. They can't be regenerated.
 timing=main
 oracle=Destroy target nonblack creature and target land. They can't be regenerated.
+status=not supported: multiple-targets

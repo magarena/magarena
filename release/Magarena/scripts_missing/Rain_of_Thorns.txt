@@ -7,3 +7,4 @@ cost={4}{G}{G}
 effect=Choose one or more — (1) Destroy target artifact. (2) Destroy target enchantment. (3) Destroy target land.
 timing=main
 oracle=Choose one or more —\n• Destroy target artifact.\n• Destroy target enchantment.\n• Destroy target land.
+status=not supported: multiple-targets

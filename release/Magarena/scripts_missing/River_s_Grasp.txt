@@ -7,3 +7,4 @@ cost={3}{U/B}
 effect=If {U} was spent to cast SN, return up to one target creature to its owner's hand. If {B} was spent to cast SN, target player reveals his or her hand, you choose a nonland card from it, then that player discards that card.
 timing=main
 oracle=If {U} was spent to cast River's Grasp, return up to one target creature to its owner's hand. If {B} was spent to cast River's Grasp, target player reveals his or her hand, you choose a nonland card from it, then that player discards that card.
+status=not supported: multiple-targets

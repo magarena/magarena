@@ -7,3 +7,4 @@ cost={4}{R}
 effect=Choose one or both — (1) Destroy target artifact. (2) Destroy target land.
 timing=main
 oracle=Choose one or both —\n• Destroy target artifact.\n• Destroy target land.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Put two +1/+1 counters on target creature and two +1/+1 counters on another target creature.
 timing=removal
 oracle=Put two +1/+1 counters on target creature and two +1/+1 counters on another target creature.
+status=not supported: multiple-targets

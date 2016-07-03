@@ -9,3 +9,4 @@ ability=Devoid
 effect=Exile target creature and target land.
 timing=removal
 oracle=Devoid\nExile target creature and target land.
+status=not supported: multiple-targets

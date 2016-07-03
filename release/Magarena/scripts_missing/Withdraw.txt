@@ -7,3 +7,4 @@ cost={U}{U}
 effect=Return target creature to its owner's hand. Then return another target creature to its owner's hand unless its controller pays {1}.
 timing=removal
 oracle=Return target creature to its owner's hand. Then return another target creature to its owner's hand unless its controller pays {1}.
+status=not supported: multiple-targets

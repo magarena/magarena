@@ -8,3 +8,4 @@ ability=Kicker—Sacrifice a land.
 effect=Prevent all combat damage target creature would deal this turn. If SN was kicked, prevent all combat damage another target creature would deal this turn.
 timing=removal
 oracle=Kicker—Sacrifice a land.\nPrevent all combat damage target creature would deal this turn. If Falling Timber was kicked, prevent all combat damage another target creature would deal this turn.
+status=not supported: multiple-targets

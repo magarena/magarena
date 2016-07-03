@@ -11,3 +11,4 @@ ability=Vigilance;\
         {1}{B/G}{B/G}: Move a +1/+1 counter from target creature onto a second target creature.
 timing=main
 oracle=Vigilance\nDaghatar the Adamant enters the battlefield with four +1/+1 counters on it.\n{1}{B/G}{B/G}: Move a +1/+1 counter from target creature onto a second target creature.
+status=not supported: multiple-targets

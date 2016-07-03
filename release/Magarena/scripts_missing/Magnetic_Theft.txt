@@ -7,3 +7,4 @@ cost={R}
 effect=Attach target Equipment to target creature.
 timing=removal
 oracle=Attach target Equipment to target creature.
+status=not supported: multiple-targets

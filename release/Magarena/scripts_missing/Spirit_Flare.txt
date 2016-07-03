@@ -8,3 +8,4 @@ ability=Flashback—{1}{W}, Pay 3 life.
 effect=Tap target untapped creature you control. If you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.
 timing=removal
 oracle=Tap target untapped creature you control. If you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.\nFlashback—{1}{W}, Pay 3 life.
+status=not supported: multiple-targets

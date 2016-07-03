@@ -7,3 +7,4 @@ cost={R}{W}
 effect=SN costs {R}{W} more to cast for each target beyond the first.~Any number of target creatures each get +2/+0 and gain first strike and vigilance until end of turn.
 timing=main
 oracle=Strive — Desperate Stand costs {R}{W} more to cast for each target beyond the first.\nAny number of target creatures each get +2/+0 and gain first strike and vigilance until end of turn.
+status=not supported: multiple-targets
