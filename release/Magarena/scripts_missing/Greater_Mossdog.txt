@@ -9,3 +9,4 @@ pt=3/3
 ability=Dredge 3
 timing=main
 oracle=Dredge 3
+status=not supported: trigger-from-graveyard

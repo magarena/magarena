@@ -10,3 +10,4 @@ ability={1}, Sacrifice SN: Draw a card.;\
         Dredge 1
 timing=main
 oracle={1}, Sacrifice Grave-Shell Scarab: Draw a card.\nDredge 1
+status=not supported: trigger-from-graveyard

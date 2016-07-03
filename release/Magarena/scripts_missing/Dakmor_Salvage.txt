@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         Dredge 2
 timing=land
 oracle=Dakmor Salvage enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nDredge 2
+status=not supported: trigger-from-graveyard

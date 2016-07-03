@@ -10,3 +10,4 @@ ability=Sacrifice SN: Put a +1/+1 counter on target creature.;\
         Dredge 3
 timing=main
 oracle=Sacrifice Shambling Shell: Put a +1/+1 counter on target creature.\nDredge 3
+status=not supported: trigger-from-graveyard

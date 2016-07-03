@@ -7,3 +7,4 @@ cost={3}{B}
 effect=Target player reveals his or her hand. You choose a card from it. That player discards that card.~Dredge 2
 timing=main
 oracle=Target player reveals his or her hand. You choose a card from it. That player discards that card.\nDredge 2
+status=not supported: trigger-from-graveyard
