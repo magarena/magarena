@@ -8,3 +8,4 @@ effect=Whenever a creature enters the battlefield this turn, you may draw a card
 split=Call
 timing=main
 oracle=Whenever a creature enters the battlefield this turn, you may draw a card.\nFuse
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Wear
 timing=removal
 second_half
 oracle=Destroy target enchantment.\nFuse
+status=not supported: split-card

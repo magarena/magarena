@@ -8,3 +8,4 @@ effect=Choose up to four cards you own from outside the game and shuffle them in
 split=Development
 timing=draw
 oracle=Choose up to four cards you own from outside the game and shuffle them into your library.
+status=not supported: split-card

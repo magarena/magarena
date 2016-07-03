@@ -9,3 +9,4 @@ split=Boom
 timing=main
 second_half
 oracle=Destroy all lands.
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Ready
 timing=pump
 second_half
 oracle=Creatures you control gain deathtouch and lifelink until end of turn.\nFuse
+status=not supported: split-card

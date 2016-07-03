@@ -8,3 +8,4 @@ effect=Until end of turn, target creature loses all abilities and becomes a red 
 split=Burn
 timing=removal
 oracle=Until end of turn, target creature loses all abilities and becomes a red Weird with base power and toughness 0/1.\nFuse
+status=not supported: split-card

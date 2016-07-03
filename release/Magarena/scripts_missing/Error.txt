@@ -9,3 +9,4 @@ split=Trial
 timing=counter
 second_half
 oracle=Counter target multicolored spell.
+status=not supported: split-card

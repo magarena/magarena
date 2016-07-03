@@ -8,3 +8,4 @@ effect=Target creature gets +2/+4 until end of turn.~Fuse
 split=Serve
 timing=pump
 oracle=Target creature gets +2/+4 until end of turn.\nFuse
+status=not supported: split-card

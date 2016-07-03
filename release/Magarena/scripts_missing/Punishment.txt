@@ -9,3 +9,4 @@ split=Crime
 timing=main
 second_half
 oracle=Destroy each artifact, creature, and enchantment with converted mana cost X.
+status=not supported: split-card

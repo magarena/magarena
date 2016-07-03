@@ -8,3 +8,4 @@ effect=All lands you control become 1/1 creatures until end of turn. They're sti
 split=Death
 timing=main
 oracle=All lands you control become 1/1 creatures until end of turn. They're still lands.
+status=not supported: split-card

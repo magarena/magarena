@@ -9,3 +9,4 @@ split=Spite
 timing=removal
 second_half
 oracle=Destroy target nonblack creature. It can't be regenerated.
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Dead
 timing=removal
 second_half
 oracle=Return target creature you don't control to its owner's hand.
+status=not supported: split-card

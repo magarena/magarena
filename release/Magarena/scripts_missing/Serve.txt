@@ -9,3 +9,4 @@ split=Protect
 timing=removal
 second_half
 oracle=Target creature gets -6/-0 until end of turn.\nFuse
+status=not supported: split-card

@@ -8,3 +8,4 @@ effect=Sacrifice a creature. Return up to X cards from your graveyard to your ha
 split=Determined
 timing=draw
 oracle=Sacrifice a creature. Return up to X cards from your graveyard to your hand, where X is the number of colors that creature was. Exile this card.
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Rough
 timing=main
 second_half
 oracle=Tumble deals 6 damage to each creature with flying.
+status=not supported: split-card

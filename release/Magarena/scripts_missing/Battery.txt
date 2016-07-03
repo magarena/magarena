@@ -9,3 +9,4 @@ split=Assault
 timing=main
 second_half
 oracle=Put a 3/3 green Elephant creature token onto the battlefield.
+status=not supported: split-card

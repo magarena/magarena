@@ -8,3 +8,4 @@ effect=Gain control of target permanent until end of turn. Untap it. It gains ha
 split=Release
 timing=main
 oracle=Gain control of target permanent until end of turn. Untap it. It gains haste until end of turn.\nFuse
+status=not supported: split-card

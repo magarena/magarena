@@ -9,3 +9,4 @@ split=Far
 timing=removal
 second_half
 oracle=Target player sacrifices a creature.\nFuse
+status=not supported: split-card

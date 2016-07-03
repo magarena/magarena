@@ -9,3 +9,4 @@ split=Hit
 timing=block
 second_half
 oracle=Attacking creatures you control get +1/+0 until end of turn for each other attacking creature.
+status=not supported: split-card

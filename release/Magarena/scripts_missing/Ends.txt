@@ -9,3 +9,4 @@ split=Odds
 timing=attack
 second_half
 oracle=Target player sacrifices two attacking creatures.
+status=not supported: split-card

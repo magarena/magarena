@@ -8,3 +8,4 @@ effect=Target player draws two cards and loses 2 life.~Fuse
 split=Trouble
 timing=main
 oracle=Target player draws two cards and loses 2 life.\nFuse
+status=not supported: split-card

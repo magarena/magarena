@@ -9,3 +9,4 @@ split=Order
 timing=attack
 second_half
 oracle=Creatures can't block this turn.
+status=not supported: split-card

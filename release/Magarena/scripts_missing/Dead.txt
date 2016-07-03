@@ -8,3 +8,4 @@ effect=SN deals 2 damage to target creature.
 split=Gone
 timing=removal
 oracle=Dead deals 2 damage to target creature.
+status=not supported: split-card

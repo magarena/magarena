@@ -8,3 +8,4 @@ effect=Put three +1/+1 counters on target creature.~Fuse
 split=Take
 timing=main
 oracle=Put three +1/+1 counters on target creature.\nFuse
+status=not supported: split-card

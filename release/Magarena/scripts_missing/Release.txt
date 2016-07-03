@@ -9,3 +9,4 @@ split=Catch
 timing=main
 second_half
 oracle=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.\nFuse
+status=not supported: split-card

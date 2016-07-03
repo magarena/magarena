@@ -8,3 +8,4 @@ effect=Target player sacrifices an artifact or creature. SN deals damage to that
 split=Run
 timing=removal
 oracle=Target player sacrifices an artifact or creature. Hit deals damage to that player equal to that permanent's converted mana cost.
+status=not supported: split-card

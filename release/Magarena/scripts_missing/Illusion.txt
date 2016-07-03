@@ -8,3 +8,4 @@ effect=Target spell or permanent becomes the color of your choice until end of t
 split=Reality
 timing=pump
 oracle=Target spell or permanent becomes the color of your choice until end of turn.
+status=not supported: split-card

@@ -8,3 +8,4 @@ effect=Put X 1/1 green Saproling creature tokens onto the battlefield.
 split=Demand
 timing=main
 oracle=Put X 1/1 green Saproling creature tokens onto the battlefield.
+status=not supported: split-card

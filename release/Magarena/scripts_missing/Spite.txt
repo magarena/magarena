@@ -8,3 +8,4 @@ effect=Counter target noncreature spell.
 split=Malice
 timing=counter
 oracle=Counter target noncreature spell.
+status=not supported: split-card

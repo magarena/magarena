@@ -9,3 +9,4 @@ split=Rise
 timing=main
 second_half
 oracle=Target player reveals two cards at random from his or her hand, then discards each nonland card revealed this way.
+status=not supported: split-card

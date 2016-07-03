@@ -8,3 +8,4 @@ effect=Target creature gets +1/+1 and gains double strike until end of turn.~Fus
 split=Dangerous
 timing=main
 oracle=Target creature gets +1/+1 and gains double strike until end of turn.\nFuse
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Down
 timing=main
 second_half
 oracle=Return target card from your graveyard to your hand.\nFuse
+status=not supported: split-card

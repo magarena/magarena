@@ -8,3 +8,4 @@ effect=Target creature gets -1/-1 until end of turn.
 split=Day
 timing=removal
 oracle=Target creature gets -1/-1 until end of turn.
+status=not supported: split-card

@@ -8,3 +8,4 @@ effect=Return target creature to its owner's hand.~Fuse
 split=Away
 timing=removal
 oracle=Return target creature to its owner's hand.\nFuse
+status=not supported: split-card

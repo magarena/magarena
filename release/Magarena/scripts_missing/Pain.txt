@@ -8,3 +8,4 @@ effect=Target player discards a card.
 split=Suffering
 timing=main
 oracle=Target player discards a card.
+status=not supported: split-card

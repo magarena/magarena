@@ -8,3 +8,4 @@ effect=SN deals 2 damage to each creature without flying.
 split=Tumble
 timing=main
 oracle=Rough deals 2 damage to each creature without flying.
+status=not supported: split-card

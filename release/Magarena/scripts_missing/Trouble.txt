@@ -9,3 +9,4 @@ split=Toil
 timing=main
 second_half
 oracle=Trouble deals damage to target player equal to the number of cards in that player's hand.\nFuse
+status=not supported: split-card

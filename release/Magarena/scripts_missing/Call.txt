@@ -9,3 +9,4 @@ split=Beck
 timing=main
 second_half
 oracle=Put four 1/1 white Bird creature tokens with flying onto the battlefield.\nFuse
+status=not supported: split-card

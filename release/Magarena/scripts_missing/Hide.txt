@@ -8,3 +8,4 @@ effect=Put target artifact or enchantment on the bottom of its owner's library.
 split=Seek
 timing=removal
 oracle=Put target artifact or enchantment on the bottom of its owner's library.
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Stand
 timing=removal
 second_half
 oracle=Return target permanent to its owner's hand.
+status=not supported: split-card

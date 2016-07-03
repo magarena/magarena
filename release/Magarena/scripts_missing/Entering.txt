@@ -9,3 +9,4 @@ split=Breaking
 timing=main
 second_half
 oracle=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn.\nFuse
+status=not supported: split-card

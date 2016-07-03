@@ -9,3 +9,4 @@ split=Armed
 timing=main
 second_half
 oracle=All creatures able to block target creature this turn do so.\nFuse
+status=not supported: split-card

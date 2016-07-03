@@ -9,3 +9,4 @@ split=Wax
 timing=removal
 second_half
 oracle=Destroy target enchantment.
+status=not supported: split-card

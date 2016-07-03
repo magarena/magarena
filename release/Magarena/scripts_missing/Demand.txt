@@ -9,3 +9,4 @@ split=Supply
 timing=main
 second_half
 oracle=Search your library for a multicolored card, reveal it, and put it into your hand. Then shuffle your library.
+status=not supported: split-card

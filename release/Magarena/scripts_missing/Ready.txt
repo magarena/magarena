@@ -8,3 +8,4 @@ effect=Creatures you control gain indestructible until end of turn. Untap each c
 split=Willing
 timing=pump
 oracle=Creatures you control gain indestructible until end of turn. Untap each creature you control.\nFuse
+status=not supported: split-card

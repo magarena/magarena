@@ -9,3 +9,4 @@ split=Hide
 timing=removal
 second_half
 oracle=Search target opponent's library for a card and exile it. You gain life equal to its converted mana cost. Then that player shuffles his or her library.
+status=not supported: split-card

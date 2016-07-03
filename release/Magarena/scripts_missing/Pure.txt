@@ -8,3 +8,4 @@ effect=Destroy target multicolored permanent.
 split=Simple
 timing=main
 oracle=Destroy target multicolored permanent.
+status=not supported: split-card

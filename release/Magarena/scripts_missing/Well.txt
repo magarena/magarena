@@ -9,3 +9,4 @@ split=Alive
 timing=main
 second_half
 oracle=You gain 2 life for each creature you control.\nFuse
+status=not supported: split-card

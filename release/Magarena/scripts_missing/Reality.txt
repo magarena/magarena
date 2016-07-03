@@ -9,3 +9,4 @@ split=Illusion
 timing=removal
 second_half
 oracle=Destroy target artifact.
+status=not supported: split-card

@@ -8,3 +8,4 @@ effect=Destroy target artifact.~Fuse
 split=Tear
 timing=removal
 oracle=Destroy target artifact.\nFuse
+status=not supported: split-card

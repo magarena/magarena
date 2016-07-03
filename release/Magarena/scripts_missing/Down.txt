@@ -8,3 +8,4 @@ effect=Target player discards two cards.~Fuse
 split=Dirty
 timing=main
 oracle=Target player discards two cards.\nFuse
+status=not supported: split-card

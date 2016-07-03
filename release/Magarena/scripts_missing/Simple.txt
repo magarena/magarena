@@ -9,3 +9,4 @@ split=Pure
 timing=main
 second_half
 oracle=Destroy all Auras and Equipment.
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Fire
 timing=tapping
 second_half
 oracle=Tap target permanent.\nDraw a card.
+status=not supported: split-card

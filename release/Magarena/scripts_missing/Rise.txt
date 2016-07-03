@@ -8,3 +8,4 @@ effect=Return target creature card from a graveyard and target creature on the b
 split=Fall
 timing=main
 oracle=Return target creature card from a graveyard and target creature on the battlefield to their owners' hands.
+status=not supported: split-card

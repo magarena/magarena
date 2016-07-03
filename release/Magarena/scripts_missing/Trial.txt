@@ -8,3 +8,4 @@ effect=Return all creatures blocking or blocked by target creature to their owne
 split=Error
 timing=block
 oracle=Return all creatures blocking or blocked by target creature to their owner's hand.
+status=not supported: split-card

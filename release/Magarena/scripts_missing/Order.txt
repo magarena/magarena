@@ -8,3 +8,4 @@ effect=Exile target attacking creature.
 split=Chaos
 timing=attack
 oracle=Exile target attacking creature.
+status=not supported: split-card
