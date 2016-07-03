@@ -6,7 +6,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={2}
 pt=2/1
-ability=Draft SN face up.;\
-        Instead of drafting a card from a booster pack, you may draft each card in that booster pack, one at a time. If you do, turn SN face down and you can't draft cards for the rest of this draft round.
 timing=main
 oracle=Draft Agent of Acquisitions face up.\nInstead of drafting a card from a booster pack, you may draft each card in that booster pack, one at a time. If you do, turn Agent of Acquisitions face down and you can't draft cards for the rest of this draft round.
