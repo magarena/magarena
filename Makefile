@@ -879,6 +879,7 @@ normalize_scripts.diff:
 
 sorted_status.txt:
 	grep status= -r release/Magarena/scripts_missing/ -h | sort | uniq > $@
+	echo "unknown" `grep -L status= -r release/Magarena/scripts_missing | wc -l` >> $@
 
 # export GITHUB_TOKEN=`cat token`
 create-draft-release:
