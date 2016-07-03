@@ -8,3 +8,4 @@ ability=Conspire
 effect=Tap target untapped creature. It deals damage equal to its power to its controller.
 timing=main
 oracle=Tap target untapped creature. It deals damage equal to its power to its controller.\nConspire
+status=needs groovy

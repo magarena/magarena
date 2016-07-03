@@ -10,3 +10,4 @@ ability=Play with the top card of your library revealed.;\
         You may play the top card of your library.
 timing=main
 oracle=Play with the top card of your library revealed.\nYou may play the top card of your library.
+status=not supported: lib-top-revealed

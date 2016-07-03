@@ -10,3 +10,4 @@ ability=Protection from red;\
         When SN enters the battlefield, detain each nonland permanent your opponents control with converted mana cost 4 or less.
 timing=main
 oracle=Protection from red\nWhen Lavinia of the Tenth enters the battlefield, detain each nonland permanent your opponents control with converted mana cost 4 or less.
+status=needs groovy

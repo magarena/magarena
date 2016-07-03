@@ -10,3 +10,4 @@ ability=Play with the top card of your library revealed.;\
         As long as the top card of your library is an artifact or creature card, SN has all activated abilities of that card.
 timing=main
 oracle=Play with the top card of your library revealed.\nAs long as the top card of your library is an artifact or creature card, Skill Borrower has all activated abilities of that card.
+status=not supported: lib-top-revealed

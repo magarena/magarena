@@ -12,3 +12,4 @@ ability=Play with the top card of your library revealed.;\
         Whenever you cast an instant or sorcery spell from your library, copy it. You may choose new targets for the copy.
 timing=main
 oracle=Play with the top card of your library revealed.\nYou may cast the top card of your library if it's an instant or sorcery card.\nWhenever you cast an instant or sorcery spell from your library, copy it. You may choose new targets for the copy.
+status=not supported: lib-top-revealed
