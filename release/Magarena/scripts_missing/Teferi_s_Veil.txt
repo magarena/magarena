@@ -7,3 +7,4 @@ cost={1}{U}
 ability=Whenever a creature you control attacks, it phases out at end of combat.
 timing=enchantment
 oracle=Whenever a creature you control attacks, it phases out at end of combat.
+status=not supported: phasing

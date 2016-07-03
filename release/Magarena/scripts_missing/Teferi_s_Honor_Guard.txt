@@ -10,3 +10,4 @@ ability=Flanking;\
         {U}{U}: SN phases out.
 timing=main
 oracle=Flanking\n{U}{U}: Teferi's Honor Guard phases out.
+status=not supported: phasing

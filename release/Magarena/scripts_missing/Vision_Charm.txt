@@ -7,3 +7,4 @@ cost={U}
 effect=Choose one — (1) Target player puts the top four cards of his or her library into his or her graveyard. (2) Choose a land type and a basic land type. Each land of the first chosen type becomes the second chosen type until end of turn. (3) Target artifact phases out.
 timing=removal
 oracle=Choose one —\n• Target player puts the top four cards of his or her library into his or her graveyard.\n• Choose a land type and a basic land type. Each land of the first chosen type becomes the second chosen type until end of turn.\n• Target artifact phases out.
+status=not supported: phasing

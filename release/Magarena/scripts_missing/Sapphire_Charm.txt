@@ -7,3 +7,4 @@ cost={U}
 effect=Choose one — (1) Target player draws a card at the beginning of the next turn's upkeep. (2) Target creature gains flying until end of turn. (3) Target creature an opponent controls phases out.
 timing=removal
 oracle=Choose one —\n• Target player draws a card at the beginning of the next turn's upkeep.\n• Target creature gains flying until end of turn.\n• Target creature an opponent controls phases out.
+status=not supported: phasing

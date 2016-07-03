@@ -10,3 +10,4 @@ ability=Flying;\
         {0}: Flip a coin. If you win the flip, SN phases out. If you lose the flip, sacrifice SN.
 timing=main
 oracle=Flying\n{0}: Flip a coin. If you win the flip, Frenetic Efreet phases out. If you lose the flip, sacrifice Frenetic Efreet.
+status=not supported: phasing

@@ -9,3 +9,4 @@ pt=3/3
 ability=At the beginning of your end step, SN phases out.
 timing=main
 oracle=At the beginning of your end step, Crystal Golem phases out.
+status=not supported: phasing

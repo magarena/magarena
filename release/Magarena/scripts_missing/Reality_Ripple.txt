@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Target artifact, creature, or land phases out.
 timing=removal
 oracle=Target artifact, creature, or land phases out.
+status=not supported: phasing

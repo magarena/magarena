@@ -10,3 +10,4 @@ ability=Flying;\
         At the beginning of your upkeep, SN phases out unless you pay {U}{U}.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, Vaporous Djinn phases out unless you pay {U}{U}.
+status=not supported: phasing

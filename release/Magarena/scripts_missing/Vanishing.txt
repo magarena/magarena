@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\n{U}{U}: Enchanted creature phases out.
+status=not supported: phasing

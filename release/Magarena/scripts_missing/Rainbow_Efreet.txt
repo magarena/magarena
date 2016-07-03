@@ -10,3 +10,4 @@ ability=Flying;\
         {U}{U}: SN phases out.
 timing=main
 oracle=Flying\n{U}{U}: Rainbow Efreet phases out.
+status=not supported: phasing

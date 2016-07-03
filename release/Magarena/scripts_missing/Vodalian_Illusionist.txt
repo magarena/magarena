@@ -9,3 +9,4 @@ pt=2/2
 ability={U}{U}, {T}: Target creature phases out.
 timing=main
 oracle={U}{U}, {T}: Target creature phases out.
+status=not supported: phasing
