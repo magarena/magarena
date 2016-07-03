@@ -7,3 +7,4 @@ cost={6}{B}
 effect=Any number of target players each discard a number of cards equal to the highest converted mana cost among permanents you control.
 timing=main
 oracle=Any number of target players each discard a number of cards equal to the highest converted mana cost among permanents you control.
+status=not supported: multiple-targets

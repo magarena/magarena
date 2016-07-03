@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=Destroy any number of target creatures. For each creature destroyed this way, its controller puts a 4/4 red Dragon creature token with flying onto the battlefield.
 timing=main
 oracle=Destroy any number of target creatures. For each creature destroyed this way, its controller puts a 4/4 red Dragon creature token with flying onto the battlefield.
+status=not supported: multiple-targets

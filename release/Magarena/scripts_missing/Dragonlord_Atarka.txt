@@ -10,3 +10,4 @@ ability=Flying, trample;\
         When SN enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control.
 timing=main
 oracle=Flying, trample\nWhen Dragonlord Atarka enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control.
+status=not supported: multiple-targets

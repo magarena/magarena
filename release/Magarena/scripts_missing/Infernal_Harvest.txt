@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, return X Swamps you control to their o
 effect=SN deals X damage divided as you choose among any number of target creatures.
 timing=main
 oracle=As an additional cost to cast Infernal Harvest, return X Swamps you control to their owner's hand.\nInfernal Harvest deals X damage divided as you choose among any number of target creatures.
+status=not supported: multiple-targets

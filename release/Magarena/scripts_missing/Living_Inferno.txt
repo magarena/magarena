@@ -9,3 +9,4 @@ pt=8/5
 ability={T}: SN deals damage equal to its power divided as you choose among any number of target creatures. Each of those creatures deals damage equal to its power to SN.
 timing=main
 oracle={T}: Living Inferno deals damage equal to its power divided as you choose among any number of target creatures. Each of those creatures deals damage equal to its power to Living Inferno.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={X}{R}
 effect=SN deals X damage divided as you choose among any number of target attacking or blocking creatures without flying.
 timing=removal
 oracle=Rock Slide deals X damage divided as you choose among any number of target attacking or blocking creatures without flying.
+status=not supported: multiple-targets

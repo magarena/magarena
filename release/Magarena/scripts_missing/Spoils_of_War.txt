@@ -7,3 +7,4 @@ cost={X}{B}
 effect=X is the number of artifact and/or creature cards in an opponent's graveyard as you cast SN.~Distribute X +1/+1 counters among any number of target creatures.
 timing=main
 oracle=X is the number of artifact and/or creature cards in an opponent's graveyard as you cast Spoils of War.\nDistribute X +1/+1 counters among any number of target creatures.
+status=not supported: multiple-targets

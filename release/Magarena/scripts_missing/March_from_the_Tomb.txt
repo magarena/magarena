@@ -8,3 +8,4 @@ cost={3}{W}{B}
 effect=Return any number of target Ally creature cards with total converted mana cost 8 or less from your graveyard to the battlefield.
 timing=main
 oracle=Return any number of target Ally creature cards with total converted mana cost 8 or less from your graveyard to the battlefield.
+status=not supported: multiple-targets

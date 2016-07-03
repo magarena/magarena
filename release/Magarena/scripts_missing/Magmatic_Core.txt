@@ -8,3 +8,4 @@ ability=Cumulative upkeep {1};\
         At the beginning of your end step, SN deals X damage divided as you choose among any number of target creatures, where X is the number of age counters on it.
 timing=enchantment
 oracle=Cumulative upkeep {1}\nAt the beginning of your end step, Magmatic Core deals X damage divided as you choose among any number of target creatures, where X is the number of age counters on it.
+status=not supported: multiple-targets

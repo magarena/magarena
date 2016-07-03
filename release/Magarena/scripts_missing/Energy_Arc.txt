@@ -7,3 +7,4 @@ cost={W}{U}
 effect=Untap any number of target creatures. Prevent all combat damage that would be dealt to and dealt by those creatures this turn.
 timing=removal
 oracle=Untap any number of target creatures. Prevent all combat damage that would be dealt to and dealt by those creatures this turn.
+status=not supported: multiple-targets

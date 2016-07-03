@@ -8,3 +8,4 @@ ability=Entwine {2}
 effect=Choose one — (1) Change the text of target spell or permanent by replacing all instances of one basic land type with another. (2) Change the text of target spell or permanent by replacing all instances of one color word with another.
 timing=removal
 oracle=Choose one —\n• Change the text of target spell or permanent by replacing all instances of one basic land type with another.\n• Change the text of target spell or permanent by replacing all instances of one color word with another.\nEntwine {2}
+status=not supported: multiple-targets

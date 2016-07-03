@@ -8,3 +8,4 @@ cost={3}{W}{W}
 effect=If four or more creatures are attacking, you may pay {1}{W} rather than pay SN's mana cost.~SN deals 5 damage divided as you choose among any number of target attacking creatures.
 timing=removal
 oracle=If four or more creatures are attacking, you may pay {1}{W} rather than pay Arrow Volley Trap's mana cost.\nArrow Volley Trap deals 5 damage divided as you choose among any number of target attacking creatures.
+status=not supported: multiple-targets

@@ -8,3 +8,4 @@ ability=Madness {1}{R}{R}
 effect=SN deals 4 damage divided as you choose among any number of target creatures and/or players.
 timing=removal
 oracle=Violent Eruption deals 4 damage divided as you choose among any number of target creatures and/or players.\nMadness {1}{R}{R}
+status=not supported: multiple-targets

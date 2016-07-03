@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Put any number of target creature cards from your graveyard on top of your library.~Draw a card.
 timing=removal
 oracle=Put any number of target creature cards from your graveyard on top of your library.\nDraw a card.
+status=not supported: multiple-targets

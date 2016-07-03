@@ -8,3 +8,4 @@ cost={3}{R}
 effect=Tap target creature. It deals damage equal to its power to another target creature.
 timing=main
 oracle=Tap target creature. It deals damage equal to its power to another target creature.
+status=not supported: multiple-targets

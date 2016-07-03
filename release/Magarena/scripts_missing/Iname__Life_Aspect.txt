@@ -9,3 +9,4 @@ pt=4/4
 ability=When SN dies, you may exile it. If you do, return any number of target Spirit cards from your graveyard to your hand.
 timing=main
 oracle=When Iname, Life Aspect dies, you may exile it. If you do, return any number of target Spirit cards from your graveyard to your hand.
+status=not supported: multiple-targets

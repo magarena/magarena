@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.
 timing=removal
 oracle=Prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.
+status=not supported: multiple-targets

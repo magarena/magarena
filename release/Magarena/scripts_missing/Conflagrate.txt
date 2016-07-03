@@ -8,3 +8,4 @@ ability=Flashback—{R}{R}, Discard X cards.
 effect=SN deals X damage divided as you choose among any number of target creatures and/or players.
 timing=main
 oracle=Conflagrate deals X damage divided as you choose among any number of target creatures and/or players.\nFlashback—{R}{R}, Discard X cards.
+status=not supported: multiple-targets

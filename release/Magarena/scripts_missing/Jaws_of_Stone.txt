@@ -7,3 +7,4 @@ cost={5}{R}
 effect=SN deals X damage divided as you choose among any number of target creatures and/or players, where X is the number of Mountains you control as you cast SN.
 timing=main
 oracle=Jaws of Stone deals X damage divided as you choose among any number of target creatures and/or players, where X is the number of Mountains you control as you cast Jaws of Stone.
+status=not supported: multiple-targets

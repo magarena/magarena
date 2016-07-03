@@ -7,3 +7,4 @@ cost={1}{B}{G}
 effect=Choose target creature you control and target creature an opponent controls. Each of those creatures deals damage equal to its toughness to the other.
 timing=removal
 oracle=Choose target creature you control and target creature an opponent controls. Each of those creatures deals damage equal to its toughness to the other.
+status=not supported: multiple-targets

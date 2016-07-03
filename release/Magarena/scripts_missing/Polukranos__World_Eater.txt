@@ -10,3 +10,4 @@ ability={X}{X}{G}: Monstrosity X.;\
         When SN becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.
 timing=main
 oracle={X}{X}{G}: Monstrosity X.\nWhen Polukranos, World Eater becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.
+status=not supported: multiple-targets

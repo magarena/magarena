@@ -7,3 +7,4 @@ cost={R}{G}{W}
 effect=SN deals 5 damage divided as you choose among any number of target creatures and/or players. Target opponent gains 5 life.
 timing=main
 oracle=Fiery Justice deals 5 damage divided as you choose among any number of target creatures and/or players. Target opponent gains 5 life.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={4}{G}
 effect=Distribute four +1/+1 counters among any number of target creatures.~Miracle {G}
 timing=main
 oracle=Distribute four +1/+1 counters among any number of target creatures.\nMiracle {G}
+status=not supported: multiple-targets

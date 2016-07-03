@@ -10,3 +10,4 @@ ability=Flying;\
         When SN dies, you may distribute five +1/+1 counters among any number of target creatures.
 timing=main
 oracle=Flying\nWhen Jugan, the Rising Star dies, you may distribute five +1/+1 counters among any number of target creatures.
+status=not supported: multiple-targets

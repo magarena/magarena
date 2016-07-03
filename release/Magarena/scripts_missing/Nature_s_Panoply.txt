@@ -7,3 +7,4 @@ cost={G}
 effect=SN costs {2}{G} more to cast for each target beyond the first.~Choose any number of target creatures. Put a +1/+1 counter on each of them.
 timing=removal
 oracle=Strive — Nature's Panoply costs {2}{G} more to cast for each target beyond the first.\nChoose any number of target creatures. Put a +1/+1 counter on each of them.
+status=not supported: multiple-targets

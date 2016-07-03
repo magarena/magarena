@@ -7,3 +7,4 @@ cost={X}{B}
 effect=Exile X target cards from target player's graveyard. For each card exiled this way, that player loses 1 life and you gain 1 life.
 timing=removal
 oracle=Exile X target cards from target player's graveyard. For each card exiled this way, that player loses 1 life and you gain 1 life.
+status=not supported: multiple-targets

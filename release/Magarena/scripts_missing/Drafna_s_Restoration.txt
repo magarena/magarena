@@ -7,3 +7,4 @@ cost={U}
 effect=Return any number of target artifact cards from target player's graveyard to the top of his or her library in any order.
 timing=main
 oracle=Return any number of target artifact cards from target player's graveyard to the top of his or her library in any order.
+status=not supported: multiple-targets

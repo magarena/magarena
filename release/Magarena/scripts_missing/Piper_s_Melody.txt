@@ -7,3 +7,4 @@ cost={G}
 effect=Shuffle any number of target creature cards from your graveyard into your library.
 timing=main
 oracle=Shuffle any number of target creature cards from your graveyard into your library.
+status=not supported: multiple-targets

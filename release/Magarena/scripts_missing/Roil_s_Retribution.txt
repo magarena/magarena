@@ -8,3 +8,4 @@ cost={3}{W}{W}
 effect=SN deals 5 damage divided as you choose among any number of target attacking or blocking creatures.
 timing=removal
 oracle=Roil's Retribution deals 5 damage divided as you choose among any number of target attacking or blocking creatures.
+status=not supported: multiple-targets

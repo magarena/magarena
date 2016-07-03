@@ -7,3 +7,4 @@ cost={X}{W}
 effect=SN deals X damage divided as you choose among any number of target attacking creatures.
 timing=removal
 oracle=Hail of Arrows deals X damage divided as you choose among any number of target attacking creatures.
+status=not supported: multiple-targets

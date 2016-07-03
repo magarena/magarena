@@ -7,3 +7,4 @@ cost={2}{B}{R}
 effect=Destroy any number of target creatures.~SN costs 3 life more to cast for each target.
 timing=main
 oracle=Destroy any number of target creatures.\nPhyrexian Purge costs 3 life more to cast for each target.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{W/B}
 effect=Choose any number of target creatures. Each of those creatures gains persist until end of turn.
 timing=removal
 oracle=Choose any number of target creatures. Each of those creatures gains persist until end of turn.
+status=not supported: multiple-targets

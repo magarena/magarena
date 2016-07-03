@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, pay X life.
 effect=SN deals X damage divided as you choose among any number of target creatures.
 timing=removal
 oracle=As an additional cost to cast Fire Covenant, pay X life.\nFire Covenant deals X damage divided as you choose among any number of target creatures.
+status=not supported: multiple-targets

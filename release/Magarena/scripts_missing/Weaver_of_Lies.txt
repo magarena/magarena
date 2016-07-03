@@ -10,3 +10,4 @@ ability=Morph {4}{U};\
         When SN is turned face up, turn any number of target creatures with morph abilities other than SN face down.
 timing=main
 oracle=Morph {4}{U}\nWhen Weaver of Lies is turned face up, turn any number of target creatures with morph abilities other than Weaver of Lies face down.
+status=not supported: multiple-targets

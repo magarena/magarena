@@ -8,3 +8,4 @@ cost={X}{R}{R}
 effect=SN deals X damage divided as you choose among any number of target creatures and/or players.
 timing=main
 oracle=Rolling Thunder deals X damage divided as you choose among any number of target creatures and/or players.
+status=not supported: multiple-targets

@@ -8,3 +8,4 @@ ability=Kicker—Sacrifice a land.
 effect=Prevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If SN was kicked, prevent the next 6 damage this way instead.
 timing=removal
 oracle=Kicker—Sacrifice a land.\nPrevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If Pollen Remedy was kicked, prevent the next 6 damage this way instead.
+status=not supported: multiple-targets

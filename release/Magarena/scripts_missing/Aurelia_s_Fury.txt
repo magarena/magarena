@@ -7,3 +7,4 @@ cost={X}{R}{W}
 effect=SN deals X damage divided as you choose among any number of target creatures and/or players. Tap each creature dealt damage this way. Players dealt damage this way can't cast noncreature spells this turn.
 timing=removal
 oracle=Aurelia's Fury deals X damage divided as you choose among any number of target creatures and/or players. Tap each creature dealt damage this way. Players dealt damage this way can't cast noncreature spells this turn.
+status=not supported: multiple-targets

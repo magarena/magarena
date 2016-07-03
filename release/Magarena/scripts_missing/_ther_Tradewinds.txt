@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Return target permanent you control and target permanent you don't control to their owners' hands.
 timing=removal
 oracle=Return target permanent you control and target permanent you don't control to their owners' hands.
+status=not supported: multiple-targets
