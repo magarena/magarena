@@ -9,3 +9,4 @@ pt=0/1
 ability={T}: Add X mana of any one color to your mana pool, where X is the number of Allies you control.
 timing=main
 oracle={T}: Add X mana of any one color to your mana pool, where X is the number of Allies you control.
+status=not supported: add-multiple-mana

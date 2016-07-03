@@ -7,3 +7,4 @@ cost={U}
 effect=Tap target untapped creature you control. If you do, add an amount of {C} to your mana pool equal to that creature's converted mana cost.
 timing=main
 oracle=Tap target untapped creature you control. If you do, add an amount of {C} to your mana pool equal to that creature's converted mana cost.
+status=not supported: add-multiple-mana

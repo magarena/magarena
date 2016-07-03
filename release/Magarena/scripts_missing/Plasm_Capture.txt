@@ -7,3 +7,4 @@ cost={G}{G}{U}{U}
 effect=Counter target spell. At the beginning of your next precombat main phase, add X mana in any combination of colors to your mana pool, where X is that spell's converted mana cost.
 timing=counter
 oracle=Counter target spell. At the beginning of your next precombat main phase, add X mana in any combination of colors to your mana pool, where X is that spell's converted mana cost.
+status=not supported: add-multiple-mana

@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, you may put a petal counter on SN.;\
         {T}, Sacrifice SN: Add X mana of any one color to your mana pool, where X is the number of petal counters on SN.
 timing=artifact
 oracle=At the beginning of your upkeep, you may put a petal counter on Lotus Blossom.\n{T}, Sacrifice Lotus Blossom: Add X mana of any one color to your mana pool, where X is the number of petal counters on Lotus Blossom.
+status=not supported: add-multiple-mana
