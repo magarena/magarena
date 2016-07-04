@@ -8,6 +8,6 @@ subtype=Human,Artificer
 cost={2}{U}{R}
 pt=2/3
 ability=Haste;\
-        When SN enters the battlefield, you may have it deal damage to target creature equal to the number of artifacts you control.
+        When SN enters the battlefield, you may have SN deal damage to target creature equal to the number of artifacts you control.
 timing=fmain
 oracle=Haste\nWhen Reclusive Artificer enters the battlefield, you may have it deal damage to target creature equal to the number of artifacts you control.
