@@ -10,3 +10,4 @@ ability=SN can't be blocked.;\
         Whenever SN deals combat damage to a player, you may remove a counter from target permanent.
 timing=main
 oracle=Ferropede can't be blocked.\nWhenever Ferropede deals combat damage to a player, you may remove a counter from target permanent.
+status=not supported: remove-a-counter

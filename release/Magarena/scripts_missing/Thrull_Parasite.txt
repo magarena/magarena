@@ -10,3 +10,4 @@ ability=Extort;\
         {T}, Pay 2 life: Remove a counter from target nonland permanent.
 timing=main
 oracle=Extort\n{T}, Pay 2 life: Remove a counter from target nonland permanent.
+status=not supported: remove-a-counter

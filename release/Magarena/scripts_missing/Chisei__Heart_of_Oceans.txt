@@ -10,3 +10,4 @@ ability=Flying;\
         At the beginning of your upkeep, sacrifice SN unless you remove a counter from a permanent you control.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Chisei, Heart of Oceans unless you remove a counter from a permanent you control.
+status=not supported: remove-a-counter

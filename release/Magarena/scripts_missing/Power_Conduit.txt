@@ -9,3 +9,4 @@ ability={T}, Remove a counter from a permanent you control: Choose one — \
         (2) Put a +1/+1 counter on target creature.
 timing=artifact
 oracle={T}, Remove a counter from a permanent you control: Choose one —\n• Put a charge counter on target artifact.\n• Put a +1/+1 counter on target creature.
+status=not supported: remove-a-counter

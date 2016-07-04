@@ -9,3 +9,4 @@ pt=2/1
 ability=When SN enters the battlefield, you may remove a counter from target permanent.
 timing=main
 oracle=When Medicine Runner enters the battlefield, you may remove a counter from target permanent.
+status=not supported: remove-a-counter
