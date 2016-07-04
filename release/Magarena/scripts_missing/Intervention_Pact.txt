@@ -7,3 +7,4 @@ cost={0}
 effect=The next time a source of your choice would deal damage to you this turn, prevent that damage. You gain life equal to the damage prevented this way.~At the beginning of your next upkeep, pay {1}{W}{W}. If you don't, you lose the game.
 timing=removal
 oracle=The next time a source of your choice would deal damage to you this turn, prevent that damage. You gain life equal to the damage prevented this way.\nAt the beginning of your next upkeep, pay {1}{W}{W}. If you don't, you lose the game.
+status=not supported: source-deal-damage

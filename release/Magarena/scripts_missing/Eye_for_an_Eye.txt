@@ -7,3 +7,4 @@ cost={W}{W}
 effect=The next time a source of your choice would deal damage to you this turn, instead that source deals that much damage to you and SN deals that much damage to that source's controller.
 timing=removal
 oracle=The next time a source of your choice would deal damage to you this turn, instead that source deals that much damage to you and Eye for an Eye deals that much damage to that source's controller.
+status=not supported: source-deal-damage

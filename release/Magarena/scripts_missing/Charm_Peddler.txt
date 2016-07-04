@@ -9,3 +9,4 @@ pt=1/1
 ability={W}, {T}, Discard a card: The next time a source of your choice would deal damage to target creature this turn, prevent that damage.
 timing=main
 oracle={W}, {T}, Discard a card: The next time a source of your choice would deal damage to target creature this turn, prevent that damage.
+status=not supported: source-deal-damage

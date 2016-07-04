@@ -7,3 +7,4 @@ cost={1}{W}
 ability={2}: The next time an artifact source of your choice would deal damage to you this turn, prevent that damage.
 timing=enchantment
 oracle={2}: The next time an artifact source of your choice would deal damage to you this turn, prevent that damage.
+status=not supported: source-deal-damage

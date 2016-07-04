@@ -7,3 +7,4 @@ cost={1}{W}
 ability={W}, Pay 2 life: The next time a source of your choice would deal damage to you this turn, prevent that damage.
 timing=enchantment
 oracle={W}, Pay 2 life: The next time a source of your choice would deal damage to you this turn, prevent that damage.
+status=not supported: source-deal-damage

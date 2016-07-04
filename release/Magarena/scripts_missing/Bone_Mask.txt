@@ -7,3 +7,4 @@ cost={4}
 ability={2}, {T}: The next time a source of your choice would deal damage to you this turn, prevent that damage. Exile cards from the top of your library equal to the damage prevented this way.
 timing=artifact
 oracle={2}, {T}: The next time a source of your choice would deal damage to you this turn, prevent that damage. Exile cards from the top of your library equal to the damage prevented this way.
+status=not supported: source-deal-damage

@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Prevent all damage that would be dealt to you this turn by a source of your choice. Whenever damage from a black or red source is prevented this way this turn, you gain that much life.
 timing=removal
 oracle=Prevent all damage that would be dealt to you this turn by a source of your choice. Whenever damage from a black or red source is prevented this way this turn, you gain that much life.
+status=not supported: source-deal-damage

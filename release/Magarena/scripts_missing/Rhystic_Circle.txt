@@ -7,3 +7,4 @@ cost={2}{W}{W}
 ability={1}: Any player may pay {1}. If no one does, the next time a source of your choice would deal damage to you this turn, prevent that damage.
 timing=enchantment
 oracle={1}: Any player may pay {1}. If no one does, the next time a source of your choice would deal damage to you this turn, prevent that damage.
+status=not supported: source-deal-damage

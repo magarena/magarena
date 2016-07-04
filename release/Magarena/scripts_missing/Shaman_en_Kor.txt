@@ -11,3 +11,4 @@ ability={0}: The next 1 damage that would be dealt to SN this turn is dealt to t
         {1}{W}: The next time a source of your choice would deal damage to target creature this turn, that damage is dealt to SN instead.
 timing=main
 oracle={0}: The next 1 damage that would be dealt to Shaman en-Kor this turn is dealt to target creature you control instead.\n{1}{W}: The next time a source of your choice would deal damage to target creature this turn, that damage is dealt to Shaman en-Kor instead.
+status=not supported: source-deal-damage

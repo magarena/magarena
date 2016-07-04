@@ -7,3 +7,4 @@ cost={R}{W}
 effect=The next time a source of your choice would deal damage to you this turn, prevent that damage. If damage is prevented this way, SN deals that much damage to that source's controller.
 timing=removal
 oracle=The next time a source of your choice would deal damage to you this turn, prevent that damage. If damage is prevented this way, Deflecting Palm deals that much damage to that source's controller.
+status=not supported: source-deal-damage

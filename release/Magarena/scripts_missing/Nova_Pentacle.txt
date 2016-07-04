@@ -7,3 +7,4 @@ cost={4}
 ability={3}, {T}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to target creature of an opponent's choice instead.
 timing=artifact
 oracle={3}, {T}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to target creature of an opponent's choice instead.
+status=not supported: source-deal-damage

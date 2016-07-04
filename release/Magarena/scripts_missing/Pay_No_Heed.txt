@@ -7,3 +7,4 @@ cost={W}
 effect=Prevent all damage a source of your choice would deal this turn.
 timing=removal
 oracle=Prevent all damage a source of your choice would deal this turn.
+status=not supported: source-deal-damage

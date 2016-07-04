@@ -9,3 +9,4 @@ pt=1/4
 ability=Sacrifice SN: The next time a source of your choice would deal damage to target creature or player this turn, prevent that damage.
 timing=main
 oracle=Sacrifice Sanctum Guardian: The next time a source of your choice would deal damage to target creature or player this turn, prevent that damage.
+status=not supported: source-deal-damage

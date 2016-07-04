@@ -10,3 +10,4 @@ ability=Protection from red;\
         Sacrifice SN: Prevent all damage a red source of your choice would deal this turn.
 timing=main
 oracle=Protection from red\nSacrifice Burrenton Forge-Tender: Prevent all damage a red source of your choice would deal this turn.
+status=not supported: source-deal-damage

@@ -9,3 +9,4 @@ pt=1/5
 ability={T}: All damage that would be dealt to target creature this turn by a source of your choice is dealt to SN instead.
 timing=main
 oracle={T}: All damage that would be dealt to target creature this turn by a source of your choice is dealt to Oracle's Attendants instead.
+status=not supported: source-deal-damage

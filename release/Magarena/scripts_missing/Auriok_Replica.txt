@@ -9,3 +9,4 @@ pt=2/2
 ability={W}, Sacrifice SN: Prevent all damage a source of your choice would deal to you this turn.
 timing=main
 oracle={W}, Sacrifice Auriok Replica: Prevent all damage a source of your choice would deal to you this turn.
+status=not supported: source-deal-damage

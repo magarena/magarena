@@ -9,3 +9,4 @@ ability=Cumulative upkeep {1};\
         {1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
 timing=enchantment
 oracle=Cumulative upkeep {1}\nAs Prismatic Circle enters the battlefield, choose a color.\n{1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
+status=not supported: source-deal-damage

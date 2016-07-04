@@ -7,3 +7,4 @@ cost={1}{W}
 effect=The next time a source of your choice would deal damage to you and/or creatures you control this turn, prevent that damage. If damage from a black source is prevented this way, you gain that much life.
 timing=removal
 oracle=The next time a source of your choice would deal damage to you and/or creatures you control this turn, prevent that damage. If damage from a black source is prevented this way, you gain that much life.
+status=not supported: source-deal-damage

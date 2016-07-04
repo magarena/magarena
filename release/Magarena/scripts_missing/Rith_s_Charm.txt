@@ -7,3 +7,4 @@ cost={R}{G}{W}
 effect=Choose one — (1) Destroy target nonbasic land. (2) Put three 1/1 green Saproling creature tokens onto the battlefield. (3) Prevent all damage a source of your choice would deal this turn.
 timing=removal
 oracle=Choose one —\n• Destroy target nonbasic land.\n• Put three 1/1 green Saproling creature tokens onto the battlefield.\n• Prevent all damage a source of your choice would deal this turn.
+status=not supported: source-deal-damage

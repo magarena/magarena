@@ -7,3 +7,4 @@ ability={T}: Add {C} to your mana pool.;\
         {4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
+status=not supported: source-deal-damage

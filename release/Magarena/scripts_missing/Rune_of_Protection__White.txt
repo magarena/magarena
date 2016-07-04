@@ -8,3 +8,4 @@ ability={W}: The next time a white source of your choice would deal damage to yo
         Cycling {2}
 timing=enchantment
 oracle={W}: The next time a white source of your choice would deal damage to you this turn, prevent that damage.\nCycling {2}
+status=not supported: source-deal-damage

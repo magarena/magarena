@@ -7,3 +7,4 @@ cost={W}
 effect=The next 2 damage that a source of your choice would deal to you and/or permanents you control this turn is dealt to target creature or player instead.
 timing=removal
 oracle=The next 2 damage that a source of your choice would deal to you and/or permanents you control this turn is dealt to target creature or player instead.
+status=not supported: source-deal-damage

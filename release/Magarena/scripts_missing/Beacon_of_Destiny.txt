@@ -9,3 +9,4 @@ pt=1/3
 ability={T}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to SN instead.
 timing=main
 oracle={T}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to Beacon of Destiny instead.
+status=not supported: source-deal-damage
