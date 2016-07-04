@@ -8,3 +8,4 @@ ability=Flashback costs you pay cost up to {2} less.;\
         Flashback costs your opponents pay cost {2} more.
 timing=artifact
 oracle=Flashback costs you pay cost up to {2} less.\nFlashback costs your opponents pay cost {2} more.
+status=not supported: complex-cost-modification

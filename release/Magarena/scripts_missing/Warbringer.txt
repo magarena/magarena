@@ -10,3 +10,4 @@ ability=Dash costs you pay cost {2} less.;\
         Dash {2}{R}
 timing=main
 oracle=Dash costs you pay cost {2} less.\nDash {2}{R}
+status=not supported: complex-cost-modification

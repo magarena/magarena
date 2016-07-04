@@ -7,3 +7,4 @@ cost={3}
 ability=Buyback costs cost {2} less.
 timing=artifact
 oracle=Buyback costs cost {2} less.
+status=not supported: complex-cost-modification

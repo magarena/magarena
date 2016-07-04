@@ -10,3 +10,4 @@ ability=Snake offering;\
         {T}: Untap all Forests and all green creatures. Activate this ability only once each turn.
 timing=main
 oracle=Snake offering\n{T}: Untap all Forests and all green creatures. Activate this ability only once each turn.
+status=not supported: offering
