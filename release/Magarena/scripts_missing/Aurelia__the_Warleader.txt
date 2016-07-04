@@ -10,3 +10,4 @@ ability=Flying, vigilance, haste;\
         Whenever SN attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.
 timing=main
 oracle=Flying, vigilance, haste\nWhenever Aurelia, the Warleader attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.
+status=not supported: additional-combat

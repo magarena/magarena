@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.
 timing=main
 oracle=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.
+status=not supported: additional-combat

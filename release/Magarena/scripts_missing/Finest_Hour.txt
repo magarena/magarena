@@ -8,3 +8,4 @@ ability=Exalted;\
         Whenever a creature you control attacks alone, if it's the first combat phase of the turn, untap that creature. After this phase, there is an additional combat phase.
 timing=enchantment
 oracle=Exalted\nWhenever a creature you control attacks alone, if it's the first combat phase of the turn, untap that creature. After this phase, there is an additional combat phase.
+status=not supported: additional-combat

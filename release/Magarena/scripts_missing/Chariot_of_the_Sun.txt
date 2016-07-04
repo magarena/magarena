@@ -7,3 +7,4 @@ cost={3}
 ability={2}, {T}: Until end of turn, target creature you control gains flying and has base toughness 1.
 timing=artifact
 oracle={2}, {T}: Until end of turn, target creature you control gains flying and has base toughness 1.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Flying, haste;\
         Whenever SN attacks, you may pay {5}{R}{R}. If you do, untap all attacking creatures and after this phase, there is an additional combat phase.
 timing=main
 oracle=Flying, haste\nWhenever Hellkite Charger attacks, you may pay {5}{R}{R}. If you do, untap all attacking creatures and after this phase, there is an additional combat phase.
+status=not supported: additional-combat

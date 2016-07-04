@@ -7,3 +7,4 @@ cost={3}{R/W}{R/W}
 effect=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.~Retrace
 timing=main
 oracle=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.\nRetrace
+status=not supported: additional-combat

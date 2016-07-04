@@ -8,3 +8,4 @@ ability=Flashback {2}{R}
 effect=Untap target creature. After this main phase, there is an additional combat phase followed by an additional main phase.
 timing=main
 oracle=Untap target creature. After this main phase, there is an additional combat phase followed by an additional main phase.\nFlashback {2}{R}
+status=not supported: additional-combat

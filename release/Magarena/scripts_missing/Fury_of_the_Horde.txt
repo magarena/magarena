@@ -7,3 +7,4 @@ cost={5}{R}{R}
 effect=You may exile two red cards from your hand rather than pay SN's mana cost.~Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.
 timing=main
 oracle=You may exile two red cards from your hand rather than pay Fury of the Horde's mana cost.\nUntap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.
+status=not supported: additional-combat

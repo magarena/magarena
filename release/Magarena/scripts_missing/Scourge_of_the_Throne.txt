@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.
 timing=main
 oracle=Flying\nDethrone\nWhenever Scourge of the Throne attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.
+status=not supported: additional-combat

@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, you may search your library for an Equip
         Whenever Godo attacks for the first time each turn, untap it and all Samurai you control. After this phase, there is an additional combat phase.
 timing=main
 oracle=When Godo, Bandit Warlord enters the battlefield, you may search your library for an Equipment card and put it onto the battlefield. If you do, shuffle your library.\nWhenever Godo attacks for the first time each turn, untap it and all Samurai you control. After this phase, there is an additional combat phase.
+status=not supported: additional-combat
