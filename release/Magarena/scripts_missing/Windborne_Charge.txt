@@ -7,3 +7,4 @@ cost={2}{W}{W}
 effect=Two target creatures you control each get +2/+2 and gain flying until end of turn.
 timing=main
 oracle=Two target creatures you control each get +2/+2 and gain flying until end of turn.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={6}
 ability={6}, {T}: Two target players exchange life totals.
 timing=artifact
 oracle={6}, {T}: Two target players exchange life totals.
+status=not supported: multiple-targets
