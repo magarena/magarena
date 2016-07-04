@@ -11,3 +11,4 @@ ability=Flying;\
         {3}{U}: Proliferate.
 timing=main
 oracle=Flying\nInfect\n{3}{U}: Proliferate.
+status=not supported: proliferate

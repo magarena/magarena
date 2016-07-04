@@ -9,3 +9,4 @@ pt=4/3
 ability={T}, Sacrifice a creature: Proliferate.
 timing=main
 oracle={T}, Sacrifice a creature: Proliferate.
+status=not supported: proliferate

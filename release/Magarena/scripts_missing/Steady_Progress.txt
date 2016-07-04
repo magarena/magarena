@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Proliferate.~Draw a card.
 timing=removal
 oracle=Proliferate.\nDraw a card.
+status=not supported: proliferate

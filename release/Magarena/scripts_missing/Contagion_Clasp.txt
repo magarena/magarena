@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, put a -1/-1 counter on target creature.;
         {4}, {T}: Proliferate.
 timing=artifact
 oracle=When Contagion Clasp enters the battlefield, put a -1/-1 counter on target creature.\n{4}, {T}: Proliferate.
+status=not supported: proliferate

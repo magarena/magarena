@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Counter target spell, then proliferate.
 timing=counter
 oracle=Counter target spell, then proliferate.
+status=not supported: proliferate

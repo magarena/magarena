@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, proliferate.
 timing=main
 oracle=Flying\nWhenever Thrummingbird deals combat damage to a player, proliferate.
+status=not supported: proliferate

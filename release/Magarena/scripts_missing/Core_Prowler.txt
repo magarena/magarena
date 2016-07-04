@@ -10,3 +10,4 @@ ability=Infect;\
         When SN dies, proliferate.
 timing=main
 oracle=Infect\nWhen Core Prowler dies, proliferate.
+status=not supported: proliferate

@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, put a -1/-1 counter on each creature tar
         {4}, {T}: Proliferate, then proliferate again.
 timing=artifact
 oracle=When Contagion Engine enters the battlefield, put a -1/-1 counter on each creature target player controls.\n{4}, {T}: Proliferate, then proliferate again.
+status=not supported: proliferate

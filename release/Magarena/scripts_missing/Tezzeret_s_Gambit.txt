@@ -7,3 +7,4 @@ cost={3}{U/P}
 effect=Draw two cards, then proliferate.
 timing=main
 oracle=Draw two cards, then proliferate.
+status=not supported: proliferate

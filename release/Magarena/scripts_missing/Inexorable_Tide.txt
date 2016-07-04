@@ -7,3 +7,4 @@ cost={3}{U}{U}
 ability=Whenever you cast a spell, proliferate.
 timing=enchantment
 oracle=Whenever you cast a spell, proliferate.
+status=not supported: proliferate

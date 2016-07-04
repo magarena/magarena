@@ -7,3 +7,4 @@ cost={2}
 ability={T}, Sacrifice an artifact: Proliferate.
 timing=artifact
 oracle={T}, Sacrifice an artifact: Proliferate.
+status=not supported: proliferate
