@@ -8,3 +8,4 @@ ability=Flashback—{1}{U}, Exile X blue cards from your graveyard.
 effect=Look at the top X cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
 timing=removal
 oracle=Look at the top X cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.\nFlashback—{1}{U}, Exile X blue cards from your graveyard.
+status=not supported: non-mana-x-cost

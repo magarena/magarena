@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, pay X life.
 effect=Each other player loses X life.
 timing=main
 oracle=As an additional cost to cast Bond of Agony, pay X life.\nEach other player loses X life.
+status=not supported: non-mana-x-cost

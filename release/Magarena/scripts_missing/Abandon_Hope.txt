@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X cards.
 effect=Look at target opponent's hand and choose X cards from it. That player discards those cards.
 timing=main
 oracle=As an additional cost to cast Abandon Hope, discard X cards.\nLook at target opponent's hand and choose X cards from it. That player discards those cards.
+status=not supported: non-mana-x-cost

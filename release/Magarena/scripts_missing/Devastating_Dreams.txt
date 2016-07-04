@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X cards at random.
 effect=Each player sacrifices X lands. SN deals X damage to each creature.
 timing=main
 oracle=As an additional cost to cast Devastating Dreams, discard X cards at random.\nEach player sacrifices X lands. Devastating Dreams deals X damage to each creature.
+status=not supported: non-mana-x-cost

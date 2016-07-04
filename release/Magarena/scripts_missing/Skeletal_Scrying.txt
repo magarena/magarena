@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, exile X cards from your graveyard.
 effect=You draw X cards and you lose X life.
 timing=removal
 oracle=As an additional cost to cast Skeletal Scrying, exile X cards from your graveyard.\nYou draw X cards and you lose X life.
+status=not supported: non-mana-x-cost

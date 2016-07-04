@@ -9,3 +9,4 @@ pt=1/1
 ability={2}, Reveal X red cards from your hand, Sacrifice SN: SN deals X damage to each creature without flying.
 timing=main
 oracle={2}, Reveal X red cards from your hand, Sacrifice Martyr of Ashes: Martyr of Ashes deals X damage to each creature without flying.
+status=not supported: non-mana-x-cost

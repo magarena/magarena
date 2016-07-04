@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, exile X creature cards from your grave
 effect=Target creature gets -X/-X until end of turn.
 timing=removal
 oracle=As an additional cost to cast Chill Haunting, exile X creature cards from your graveyard.\nTarget creature gets -X/-X until end of turn.
+status=not supported: non-mana-x-cost

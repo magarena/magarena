@@ -9,3 +9,4 @@ pt=1/1
 ability={1}, Reveal X white cards from your hand, Sacrifice SN: You gain three times X life.
 timing=main
 oracle={1}, Reveal X white cards from your hand, Sacrifice Martyr of Sands: You gain three times X life.
+status=not supported: non-mana-x-cost

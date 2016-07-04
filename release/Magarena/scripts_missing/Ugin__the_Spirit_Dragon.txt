@@ -11,3 +11,4 @@ ability=+2: SN deals 3 damage to target creature or player.;\
         −10: You gain 7 life, draw seven cards, then put up to seven permanent cards from your hand onto the battlefield.
 timing=main
 oracle=+2: Ugin, the Spirit Dragon deals 3 damage to target creature or player.\n−X: Exile each permanent with converted mana cost X or less that's one or more colors.\n−10: You gain 7 life, draw seven cards, then put up to seven permanent cards from your hand onto the battlefield.
+status=not supported: non-mana-x-cost

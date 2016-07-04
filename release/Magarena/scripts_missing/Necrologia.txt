@@ -9,3 +9,4 @@ ability=As an additional cost to cast SN, pay X life.
 effect=Cast SN only during your end step.~Draw X cards.
 timing=removal
 oracle=Cast Necrologia only during your end step.\nAs an additional cost to cast Necrologia, pay X life.\nDraw X cards.
+status=not supported: non-mana-x-cost

@@ -10,3 +10,4 @@ ability=Flying;\
         {T}, Sacrifice X lands: Put X +1/+1 counters on SN.
 timing=main
 oracle=Flying\n{T}, Sacrifice X lands: Put X +1/+1 counters on Copper-Leaf Angel.
+status=not supported: non-mana-x-cost

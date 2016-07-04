@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X cards.
 effect=SN deals X damage to each creature and each player.
 timing=main
 oracle=As an additional cost to cast Sickening Dreams, discard X cards.\nSickening Dreams deals X damage to each creature and each player.
+status=not supported: non-mana-x-cost

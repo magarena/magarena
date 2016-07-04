@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, exile X cards from your graveyard.
 effect=SN deals X damage to target creature.
 timing=removal
 oracle=As an additional cost to cast Harvest Pyre, exile X cards from your graveyard.\nHarvest Pyre deals X damage to target creature.
+status=not supported: non-mana-x-cost

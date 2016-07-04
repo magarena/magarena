@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard X cards.
 effect=Search your library for X cards. Then shuffle your library and put those cards on top of it in any order.
 timing=removal
 oracle=As an additional cost to cast Insidious Dreams, discard X cards.\nSearch your library for X cards. Then shuffle your library and put those cards on top of it in any order.
+status=not supported: non-mana-x-cost

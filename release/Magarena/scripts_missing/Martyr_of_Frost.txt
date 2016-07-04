@@ -9,3 +9,4 @@ pt=1/1
 ability={2}, Reveal X blue cards from your hand, Sacrifice SN: Counter target spell unless its controller pays {X}.
 timing=main
 oracle={2}, Reveal X blue cards from your hand, Sacrifice Martyr of Frost: Counter target spell unless its controller pays {X}.
+status=not supported: non-mana-x-cost

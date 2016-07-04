@@ -12,3 +12,4 @@ ability=+1: Put two 3/1 red Elemental creature tokens with haste onto the battle
         −X: SN deals X damage to each creature.
 timing=main
 oracle=+1: Put two 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.\n0: Discard all the cards in your hand, then draw that many cards plus one.\n−X: Chandra, Flamecaller deals X damage to each creature.
+status=not supported: non-mana-x-cost

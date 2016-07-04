@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice X lands.
 effect=Put two X/X red Elemental creature tokens onto the battlefield.
 timing=main
 oracle=As an additional cost to cast Devastating Summons, sacrifice X lands.\nPut two X/X red Elemental creature tokens onto the battlefield.
+status=not supported: non-mana-x-cost

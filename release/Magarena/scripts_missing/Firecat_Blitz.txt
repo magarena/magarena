@@ -8,3 +8,4 @@ ability=Flashback—{R}{R}, Sacrifice X Mountains.
 effect=Put X 1/1 red Elemental Cat creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
 timing=main
 oracle=Put X 1/1 red Elemental Cat creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.\nFlashback—{R}{R}, Sacrifice X Mountains.
+status=not supported: non-mana-x-cost

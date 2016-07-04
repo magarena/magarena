@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, pay X life.
 effect=All creatures get -X/-X until end of turn.
 timing=main
 oracle=As an additional cost to cast Toxic Deluge, pay X life.\nAll creatures get -X/-X until end of turn.
+status=not supported: non-mana-x-cost

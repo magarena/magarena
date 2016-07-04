@@ -14,3 +14,4 @@ timing=main
 hidden
 transform=Liliana, Heretical Healer
 oracle=+2: Each player discards a card.\n−X: Return target nonlegendary creature card with converted mana cost X from your graveyard to the battlefield.\n−8: You get an emblem with "Whenever a creature dies, return it to the battlefield under your control at the beginning of the next end step."
+status=not supported: non-mana-x-cost

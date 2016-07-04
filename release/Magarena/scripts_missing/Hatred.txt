@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, pay X life.
 effect=Target creature gets +X/+0 until end of turn.
 timing=removal
 oracle=As an additional cost to cast Hatred, pay X life.\nTarget creature gets +X/+0 until end of turn.
+status=not supported: non-mana-x-cost
