@@ -9,3 +9,4 @@ pt=4/4
 ability=When SN dies, add {C}{C}{C}{C} to your mana pool.
 timing=main
 oracle=When Su-Chi dies, add {C}{C}{C}{C} to your mana pool.
+status=not supported: add-multiple-mana

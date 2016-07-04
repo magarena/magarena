@@ -10,3 +10,4 @@ ability=Other Snake creatures you control get +0/+1.;\
         Shamans you control have "{T}: Add {G}{G} to your mana pool."
 timing=main
 oracle=Other Snake creatures you control get +0/+1.\nShamans you control have "{T}: Add {G}{G} to your mana pool."
+status=not supported: add-multiple-mana

@@ -7,3 +7,4 @@ cost={G}
 ability=At the beginning of each player's precombat main phase, add {G}{G} to that player's mana pool.
 timing=enchantment
 oracle=At the beginning of each player's precombat main phase, add {G}{G} to that player's mana pool.
+status=not supported: add-multiple-mana
