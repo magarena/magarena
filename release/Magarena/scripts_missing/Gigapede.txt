@@ -10,3 +10,4 @@ ability=Shroud;\
         At the beginning of your upkeep, if SN is in your graveyard, you may discard a card. If you do, return SN to your hand.
 timing=main
 oracle=Shroud\nAt the beginning of your upkeep, if Gigapede is in your graveyard, you may discard a card. If you do, return Gigapede to your hand.
+status=not supported: trigger-from-graveyard

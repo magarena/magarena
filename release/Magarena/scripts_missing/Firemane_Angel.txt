@@ -11,3 +11,4 @@ ability=Flying, first strike;\
         {6}{R}{R}{W}{W}: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep.
 timing=main
 oracle=Flying, first strike\nAt the beginning of your upkeep, if Firemane Angel is in your graveyard or on the battlefield, you may gain 1 life.\n{6}{R}{R}{W}{W}: Return Firemane Angel from your graveyard to the battlefield. Activate this ability only during your upkeep.
+status=not supported: trigger-from-graveyard

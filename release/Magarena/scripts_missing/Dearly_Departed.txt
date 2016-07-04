@@ -10,3 +10,4 @@ ability=Flying;\
         As long as SN is in your graveyard, each Human creature you control enters the battlefield with an additional +1/+1 counter on it.
 timing=main
 oracle=Flying\nAs long as Dearly Departed is in your graveyard, each Human creature you control enters the battlefield with an additional +1/+1 counter on it.
+status=not supported: trigger-from-graveyard

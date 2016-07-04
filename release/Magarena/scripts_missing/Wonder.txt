@@ -10,3 +10,4 @@ ability=Flying;\
         As long as SN is in your graveyard and you control an Island, creatures you control have flying.
 timing=main
 oracle=Flying\nAs long as Wonder is in your graveyard and you control an Island, creatures you control have flying.
+status=not supported: static-from-graveyard

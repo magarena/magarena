@@ -10,3 +10,4 @@ ability=Haste;\
         As long as SN is in your graveyard and you control a Mountain, creatures you control have haste.
 timing=fmain
 oracle=Haste\nAs long as Anger is in your graveyard and you control a Mountain, creatures you control have haste.
+status=not supported: static-from-graveyard

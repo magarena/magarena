@@ -10,3 +10,4 @@ ability=Swampwalk;\
         As long as SN is in your graveyard and you control a Swamp, creatures you control have swampwalk.
 timing=main
 oracle=Swampwalk\nAs long as Filth is in your graveyard and you control a Swamp, creatures you control have swampwalk.
+status=not supported: static-from-graveyard

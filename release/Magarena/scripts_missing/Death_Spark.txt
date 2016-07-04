@@ -7,3 +7,4 @@ cost={R}
 effect=SN deals 1 damage to target creature or player.~At the beginning of your upkeep, if SN is in your graveyard with a creature card directly above it, you may pay {1}. If you do, return SN to your hand.
 timing=removal
 oracle=Death Spark deals 1 damage to target creature or player.\nAt the beginning of your upkeep, if Death Spark is in your graveyard with a creature card directly above it, you may pay {1}. If you do, return Death Spark to your hand.
+status=not supported: trigger-from-graveyard

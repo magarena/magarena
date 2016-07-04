@@ -10,3 +10,4 @@ ability=Haste;\
         At the beginning of your upkeep, if SN is in your graveyard with three or more creature cards above it, you may put SN onto the battlefield.
 timing=fmain
 oracle=Haste\nAt the beginning of your upkeep, if Nether Shadow is in your graveyard with three or more creature cards above it, you may put Nether Shadow onto the battlefield.
+status=not supported: trigger-from-graveyard

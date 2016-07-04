@@ -10,3 +10,4 @@ ability=First strike;\
         As long as SN is in your graveyard and you control a Plains, creatures you control have first strike.
 timing=main
 oracle=First strike\nAs long as Valor is in your graveyard and you control a Plains, creatures you control have first strike.
+status=not supported: static-from-graveyard

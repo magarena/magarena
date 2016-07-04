@@ -10,3 +10,4 @@ ability=Trample;\
         As long as SN is in your graveyard and you control a Forest, creatures you control have trample.
 timing=main
 oracle=Trample\nAs long as Brawn is in your graveyard and you control a Forest, creatures you control have trample.
+status=not supported: static-from-graveyard
