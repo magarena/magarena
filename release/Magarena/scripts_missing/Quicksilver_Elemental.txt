@@ -10,3 +10,4 @@ ability={U}: SN gains all activated abilities of target creature until end of tu
         You may spend blue mana as though it were mana of any color to pay the activation costs of SN's abilities.
 timing=main
 oracle={U}: Quicksilver Elemental gains all activated abilities of target creature until end of turn.\nYou may spend blue mana as though it were mana of any color to pay the activation costs of Quicksilver Elemental's abilities.
+status=not supported: spend-mana-as-though

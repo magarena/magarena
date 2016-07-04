@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, look at the top three cards of your libr
         You may spend mana as though it were mana of any color to cast planeswalker spells.
 timing=enchantment
 oracle=When Oath of Nissa enters the battlefield, look at the top three cards of your library. You may reveal a creature, land, or planeswalker card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\nYou may spend mana as though it were mana of any color to cast planeswalker spells.
+status=not supported: spend-mana-as-though

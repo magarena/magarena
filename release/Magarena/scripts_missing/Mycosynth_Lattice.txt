@@ -9,3 +9,4 @@ ability=All permanents are artifacts in addition to their other types.;\
         Players may spend mana as though it were mana of any color.
 timing=artifact
 oracle=All permanents are artifacts in addition to their other types.\nAll cards that aren't on the battlefield, spells, and permanents are colorless.\nPlayers may spend mana as though it were mana of any color.
+status=not supported: spend-mana-as-though

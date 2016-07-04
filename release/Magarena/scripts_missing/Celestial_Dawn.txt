@@ -9,3 +9,4 @@ ability=Lands you control are Plains.;\
         You may spend white mana as though it were mana of any color. You may spend other mana only as though it were colorless mana.
 timing=enchantment
 oracle=Lands you control are Plains.\nNonland cards you own that aren't on the battlefield, spells you control, and nonland permanents you control are white.\nYou may spend white mana as though it were mana of any color. You may spend other mana only as though it were colorless mana.
+status=not supported: spend-mana-as-though

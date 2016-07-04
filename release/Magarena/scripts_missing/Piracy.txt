@@ -7,3 +7,4 @@ cost={U}{U}
 effect=Until end of turn, you may tap lands you don't control for mana. Spend this mana only to cast spells.
 timing=main
 oracle=Until end of turn, you may tap lands you don't control for mana. Spend this mana only to cast spells.
+status=not supported: mana-restriction
