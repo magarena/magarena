@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=Destroy target artifact or land.~Recover {R}{R}
 timing=main
 oracle=Destroy target artifact or land.\nRecover {R}{R}
+status=not supported: trigger-from-graveyard

@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Counter target spell.~Recover {2}{U}{U}
 timing=counter
 oracle=Counter target spell.\nRecover {2}{U}{U}
+status=not supported: trigger-from-graveyard

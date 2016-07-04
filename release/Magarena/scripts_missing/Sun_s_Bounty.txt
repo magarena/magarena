@@ -7,3 +7,4 @@ cost={1}{W}
 effect=You gain 4 life.~Recover {1}{W}
 timing=removal
 oracle=You gain 4 life.\nRecover {1}{W}
+status=not supported: trigger-from-graveyard
