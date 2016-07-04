@@ -9,3 +9,4 @@ pt=3/3
 ability=SN can't attack or block alone.
 timing=main
 oracle=Mogg Flunkies can't attack or block alone.
+status=not supported: blocking-restriction

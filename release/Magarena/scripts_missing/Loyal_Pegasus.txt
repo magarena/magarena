@@ -10,3 +10,4 @@ ability=Flying;\
         SN can't attack or block alone.
 timing=main
 oracle=Flying\nLoyal Pegasus can't attack or block alone.
+status=not supported: blocking-restriction

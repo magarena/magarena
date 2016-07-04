@@ -7,3 +7,4 @@ cost={2}{G}
 effect=All creatures able to block target creature this turn do so.~That creature gains indestructible until end of turn if you control a creature with power 4 or greater.
 timing=main
 oracle=All creatures able to block target creature this turn do so.\nFerocious — That creature gains indestructible until end of turn if you control a creature with power 4 or greater.
+status=not supported: blocking-restriction

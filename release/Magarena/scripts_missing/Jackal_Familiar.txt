@@ -9,3 +9,4 @@ pt=2/2
 ability=SN can't attack or block alone.
 timing=main
 oracle=Jackal Familiar can't attack or block alone.
+status=not supported: blocking-restriction

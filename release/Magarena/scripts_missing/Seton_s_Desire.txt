@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nThreshold — As long as seven or more cards are in your graveyard, all creatures able to block enchanted creature do so.
+status=not supported: blocking-restriction

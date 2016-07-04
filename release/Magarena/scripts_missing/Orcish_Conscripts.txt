@@ -10,3 +10,4 @@ ability=SN can't attack unless at least two other creatures attack.;\
         SN can't block unless at least two other creatures block.
 timing=main
 oracle=Orcish Conscripts can't attack unless at least two other creatures attack.\nOrcish Conscripts can't block unless at least two other creatures block.
+status=not supported: blocking-restriction

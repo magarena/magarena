@@ -8,3 +8,4 @@ ability=No more than two creatures can attack each combat.;\
         No more than two creatures can block each combat.
 timing=enchantment
 oracle=No more than two creatures can attack each combat.\nNo more than two creatures can block each combat.
+status=not supported: blocking-restriction

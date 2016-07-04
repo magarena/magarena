@@ -8,3 +8,4 @@ ability=No more than one creature can attack each turn.;\
         No more than one creature can block each turn.
 timing=enchantment
 oracle=No more than one creature can attack each turn.\nNo more than one creature can block each turn.
+status=not supported: blocking-restriction

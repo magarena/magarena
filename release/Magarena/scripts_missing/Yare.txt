@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Target creature defending player controls gets +3/+0 until end of turn. That creature can block up to two additional creatures this turn.
 timing=removal
 oracle=Target creature defending player controls gets +3/+0 until end of turn. That creature can block up to two additional creatures this turn.
+status=not supported: block-multiple

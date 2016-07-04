@@ -7,3 +7,4 @@ cost={3}{R}
 effect=Creatures target player controls can't block this turn. SN deals 1 damage to each white and/or blue creature that player controls.
 timing=main
 oracle=Creatures target player controls can't block this turn. Ember Gale deals 1 damage to each white and/or blue creature that player controls.
+status=needs groovy
