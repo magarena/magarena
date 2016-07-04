@@ -7,3 +7,4 @@ cost={U}
 effect=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.~Cipher
 timing=main
 oracle=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.\nCipher
+status=not supported: change-text

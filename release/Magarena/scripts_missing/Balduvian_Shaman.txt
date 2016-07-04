@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Change the text of target white enchantment you control that doesn't have cumulative upkeep by replacing all instances of one color word with another. That enchantment gains "Cumulative upkeep {1}."
 timing=main
 oracle={T}: Change the text of target white enchantment you control that doesn't have cumulative upkeep by replacing all instances of one color word with another. That enchantment gains "Cumulative upkeep {1}."
+status=not supported: change-text

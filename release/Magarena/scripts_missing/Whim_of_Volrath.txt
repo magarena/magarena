@@ -8,3 +8,4 @@ ability=Buyback {2}
 effect=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.
 timing=removal
 oracle=Buyback {2}\nChange the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.
+status=not supported: change-text

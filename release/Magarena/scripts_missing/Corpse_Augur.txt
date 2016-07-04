@@ -10,3 +10,4 @@ pt=4/2
 ability=When SN dies, you draw X cards and you lose X life, where X is the number of creature cards in target player's graveyard.
 timing=main
 oracle=When Corpse Augur dies, you draw X cards and you lose X life, where X is the number of creature cards in target player's graveyard.
+status=needs groovy

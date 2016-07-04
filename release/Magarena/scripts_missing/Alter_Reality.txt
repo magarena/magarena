@@ -8,3 +8,4 @@ ability=Flashback {1}{U}
 effect=Change the text of target spell or permanent by replacing all instances of one color word with another.
 timing=removal
 oracle=Change the text of target spell or permanent by replacing all instances of one color word with another.\nFlashback {1}{U}
+status=not supported: change-text

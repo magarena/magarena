@@ -7,3 +7,4 @@ cost={U}
 effect=Change the text of target spell or permanent by replacing all instances of one basic land type with another.
 timing=removal
 oracle=Change the text of target spell or permanent by replacing all instances of one basic land type with another.
+status=not supported: change-text

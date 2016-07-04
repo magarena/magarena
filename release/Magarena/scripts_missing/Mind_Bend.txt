@@ -7,3 +7,4 @@ cost={U}
 effect=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another.
 timing=removal
 oracle=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another.
+status=not supported: change-text

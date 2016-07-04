@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a color word.;\
         All instances of color words in the text of spells and permanents are changed to the chosen color word.
 timing=enchantment
 oracle=As Swirl the Mists enters the battlefield, choose a color word.\nAll instances of color words in the text of spells and permanents are changed to the chosen color word.
+status=not supported: change-text
