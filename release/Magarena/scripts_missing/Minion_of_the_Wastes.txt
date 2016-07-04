@@ -11,3 +11,4 @@ ability=Trample;\
         SN's power and toughness are each equal to the life paid as it entered the battlefield.
 timing=main
 oracle=Trample\nAs Minion of the Wastes enters the battlefield, pay any amount of life.\nMinion of the Wastes's power and toughness are each equal to the life paid as it entered the battlefield.
+status=not supported: any-number-of

@@ -10,3 +10,4 @@ ability=Flying, trample;\
         Whenever SN attacks or blocks, each player starting with you may pay any amount of mana. SN gets +X/+0 until end of turn, where X is the total amount of mana paid this way.
 timing=main
 oracle=Flying, trample\nJoin forces — Whenever Mana-Charged Dragon attacks or blocks, each player starting with you may pay any amount of mana. Mana-Charged Dragon gets +X/+0 until end of turn, where X is the total amount of mana paid this way.
+status=needs groovy

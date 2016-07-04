@@ -10,3 +10,4 @@ ability=Trample;\
         SN's power and toughness are each equal to the life paid as it entered the battlefield.
 timing=main
 oracle=Trample\nAs Nameless Race enters the battlefield, pay any amount of life. The amount you pay can't be more than the total number of white nontoken permanents your opponents control plus the total number of white cards in their graveyards.\nNameless Race's power and toughness are each equal to the life paid as it entered the battlefield.
+status=not supported: any-number-of

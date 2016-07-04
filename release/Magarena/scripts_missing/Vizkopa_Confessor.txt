@@ -10,3 +10,4 @@ ability=Extort;\
         When SN enters the battlefield, pay any amount of life. Target opponent reveals that many cards from his or her hand. You choose one of them and exile it.
 timing=main
 oracle=Extort\nWhen Vizkopa Confessor enters the battlefield, pay any amount of life. Target opponent reveals that many cards from his or her hand. You choose one of them and exile it.
+status=not supported: any-number-of

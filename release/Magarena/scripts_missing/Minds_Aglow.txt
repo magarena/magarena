@@ -7,3 +7,4 @@ cost={U}
 effect=Starting with you, each player may pay any amount of mana. Each player draws X cards, where X is the total amount of mana paid this way.
 timing=main
 oracle=Join forces — Starting with you, each player may pay any amount of mana. Each player draws X cards, where X is the total amount of mana paid this way.
+status=not supported: any-number-of
