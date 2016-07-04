@@ -10,3 +10,4 @@ ability=Each instant and sorcery spell you cast costs {1} less to cast for each 
         Whenever you cast a spell that targets SN, SN gains hexproof until end of turn.
 timing=main
 oracle=Each instant and sorcery spell you cast costs {1} less to cast for each creature it targets.\nHeroic — Whenever you cast a spell that targets Battlefield Thaumaturge, Battlefield Thaumaturge gains hexproof until end of turn.
+status=not supported: complex-cost-modification

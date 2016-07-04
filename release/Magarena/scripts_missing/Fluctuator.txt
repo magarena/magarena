@@ -7,3 +7,4 @@ cost={2}
 ability=Cycling abilities you activate cost you up to {2} less to activate.
 timing=artifact
 oracle=Cycling abilities you activate cost you up to {2} less to activate.
+status=not supported: complex-cost-modification

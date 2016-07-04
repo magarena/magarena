@@ -12,3 +12,4 @@ transform=Duskwatch Recruiter
 timing=main
 hidden
 oracle=Creature spells you cast cost {1} less to cast.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Krallenhorde Howler.
+status=needs groovy

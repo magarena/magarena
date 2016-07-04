@@ -8,3 +8,4 @@ ability=White spells cost {3} more to cast.;\
         Activated abilities of white enchantments cost {3} more to activate.
 timing=enchantment
 oracle=White spells cost {3} more to cast.\nActivated abilities of white enchantments cost {3} more to activate.
+status=not supported: complex-cost-modification

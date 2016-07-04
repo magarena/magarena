@@ -13,3 +13,4 @@ timing=aura
 enchant=default,creature
 hidden
 oracle=Enchant player\nSpells you cast that target enchanted player cost {1} less to cast.\nAt the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.
+status=not supported: complex-cost-modification

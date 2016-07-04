@@ -7,3 +7,4 @@ cost={3}
 ability=Activated abilities of creatures cost {1} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
 timing=artifact
 oracle=Activated abilities of creatures cost {1} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
+status=not supported: complex-cost-modification

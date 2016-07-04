@@ -10,3 +10,4 @@ ability={B}, {T}, Pay 1 life: Put a +1/+1 counter on SN.;\
         {2}{B}, {T}, Remove X +1/+1 counters from SN: SN deals X damage to target creature.
 timing=main
 oracle={B}, {T}, Pay 1 life: Put a +1/+1 counter on Cruel Sadist.\n{2}{B}, {T}, Remove X +1/+1 counters from Cruel Sadist: Cruel Sadist deals X damage to target creature.
+status=not supported: non-mana-x-cost

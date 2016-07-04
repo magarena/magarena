@@ -11,3 +11,4 @@ ability=You can't cast SN unless an opponent lost life this turn.;\
         Creature spells you cast cost {1} less to cast for each 1 life your opponents have lost this turn.
 timing=main
 oracle=You can't cast Rakdos, Lord of Riots unless an opponent lost life this turn.\nFlying, trample\nCreature spells you cast cost {1} less to cast for each 1 life your opponents have lost this turn.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={1}
 ability=Spells you cast cost {1} less to cast for each card with the same name as that spell in your graveyard.
 timing=artifact
 oracle=Spells you cast cost {1} less to cast for each card with the same name as that spell in your graveyard.
+status=needs groovy

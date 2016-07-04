@@ -7,3 +7,4 @@ cost={U}
 ability=Activated abilities of creatures you control cost up to {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
 timing=enchantment
 oracle=Activated abilities of creatures you control cost up to {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
+status=not supported: complex-cost-modification

@@ -8,3 +8,4 @@ ability={1}, {T}: Put a winch counter on SN.;\
         {T}, Remove X winch counters from SN: You may put a creature card with converted mana cost X from your hand onto the battlefield.
 timing=artifact
 oracle={1}, {T}: Put a winch counter on Mercadian Lift.\n{T}, Remove X winch counters from Mercadian Lift: You may put a creature card with converted mana cost X from your hand onto the battlefield.
+status=not supported: non-mana-x-cost

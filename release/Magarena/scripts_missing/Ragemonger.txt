@@ -9,3 +9,4 @@ pt=2/3
 ability=Minotaur spells you cast cost {B}{R} less to cast. This effect reduces only the amount of colored mana you pay.
 timing=main
 oracle=Minotaur spells you cast cost {B}{R} less to cast. This effect reduces only the amount of colored mana you pay.
+status=not supported: complex-cost-modification

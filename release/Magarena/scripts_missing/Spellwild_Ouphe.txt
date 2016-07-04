@@ -9,3 +9,4 @@ pt=1/3
 ability=Spells that target SN cost {2} less to cast.
 timing=main
 oracle=Spells that target Spellwild Ouphe cost {2} less to cast.
+status=not supported: complex-cost-modification
