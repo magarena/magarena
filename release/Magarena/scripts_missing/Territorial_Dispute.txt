@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, sacrifice SN unless you sacrifice a lan
         Players can't play lands.
 timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Territorial Dispute unless you sacrifice a land.\nPlayers can't play lands.
+status=not supported: players-cant

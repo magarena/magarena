@@ -8,3 +8,4 @@ ability=Creature cards can't enter the battlefield from graveyards or libraries.
         Players can't cast cards in graveyards or libraries.
 timing=artifact
 oracle=Creature cards can't enter the battlefield from graveyards or libraries.\nPlayers can't cast cards in graveyards or libraries.
+status=not supported: players-cant

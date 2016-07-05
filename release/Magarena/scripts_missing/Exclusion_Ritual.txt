@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, exile target nonland permanent.;\
         Players can't cast spells with the same name as the exiled card.
 timing=enchantment
 oracle=Imprint — When Exclusion Ritual enters the battlefield, exile target nonland permanent.\nPlayers can't cast spells with the same name as the exiled card.
+status=not supported: players-cant

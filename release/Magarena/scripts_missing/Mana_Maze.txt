@@ -7,3 +7,4 @@ cost={1}{U}
 ability=Players can't cast spells that share a color with the spell most recently cast this turn.
 timing=enchantment
 oracle=Players can't cast spells that share a color with the spell most recently cast this turn.
+status=not supported: players-cant

@@ -8,3 +8,4 @@ ability=Players can't draw cards.;\
         At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.
 timing=artifact
 oracle=Players can't draw cards.\nAt the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.
+status=not supported: players-cant

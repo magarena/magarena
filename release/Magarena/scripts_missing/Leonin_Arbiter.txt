@@ -9,3 +9,4 @@ pt=2/2
 ability=Players can't search libraries. Any player may pay {2} for that player to ignore this effect until end of turn.
 timing=main
 oracle=Players can't search libraries. Any player may pay {2} for that player to ignore this effect until end of turn.
+status=not supported: players-cant

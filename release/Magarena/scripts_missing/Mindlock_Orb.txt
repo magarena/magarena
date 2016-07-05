@@ -7,3 +7,4 @@ cost={3}{U}
 ability=Players can't search libraries.
 timing=artifact
 oracle=Players can't search libraries.
+status=not supported: players-cant

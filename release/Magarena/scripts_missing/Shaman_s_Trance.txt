@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Until end of turn, other players can't play cards from their graveyards, and you may play cards from other players' graveyards as though they were in your graveyard.
 timing=removal
 oracle=Until end of turn, other players can't play cards from their graveyards, and you may play cards from other players' graveyards as though they were in your graveyard.
+status=not supported: players-cant

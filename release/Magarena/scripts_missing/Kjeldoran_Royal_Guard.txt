@@ -9,3 +9,4 @@ pt=2/5
 ability={T}: All combat damage that would be dealt to you by unblocked creatures this turn is dealt to SN instead.
 timing=main
 oracle={T}: All combat damage that would be dealt to you by unblocked creatures this turn is dealt to Kjeldoran Royal Guard instead.
+status=needs groovy

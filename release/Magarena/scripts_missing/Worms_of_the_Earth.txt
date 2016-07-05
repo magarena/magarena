@@ -9,3 +9,4 @@ ability=Players can't play lands.;\
         At the beginning of each upkeep, any player may sacrifice two lands or have SN deal 5 damage to him or her. If a player does either, destroy SN.
 timing=enchantment
 oracle=Players can't play lands.\nLands can't enter the battlefield.\nAt the beginning of each upkeep, any player may sacrifice two lands or have Worms of the Earth deal 5 damage to him or her. If a player does either, destroy Worms of the Earth.
+status=not supported: players-cant

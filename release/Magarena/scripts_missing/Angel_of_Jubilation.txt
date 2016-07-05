@@ -11,3 +11,4 @@ ability=Flying;\
         Players can't pay life or sacrifice creatures to cast spells or activate abilities.
 timing=main
 oracle=Flying\nOther nonblack creatures you control get +1/+1.\nPlayers can't pay life or sacrifice creatures to cast spells or activate abilities.
+status=not supported: players-cant

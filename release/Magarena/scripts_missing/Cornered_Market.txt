@@ -8,3 +8,4 @@ ability=Players can't cast spells with the same name as a nontoken permanent.;\
         Players can't play nonbasic lands with the same name as a nontoken permanent.
 timing=enchantment
 oracle=Players can't cast spells with the same name as a nontoken permanent.\nPlayers can't play nonbasic lands with the same name as a nontoken permanent.
+status=not supported: players-cant

@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, each player chooses five lands he or she
         Players can't play lands as long as ten or more lands are on the battlefield.
 timing=enchantment
 oracle=When Limited Resources enters the battlefield, each player chooses five lands he or she controls and sacrifices the rest.\nPlayers can't play lands as long as ten or more lands are on the battlefield.
+status=not supported: players-cant
