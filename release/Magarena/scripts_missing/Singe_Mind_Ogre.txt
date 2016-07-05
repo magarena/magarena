@@ -9,3 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, target player reveals a card at random from his or her hand, then loses life equal to that card's converted mana cost.
 timing=main
 oracle=When Singe-Mind Ogre enters the battlefield, target player reveals a card at random from his or her hand, then loses life equal to that card's converted mana cost.
+status=needs groovy
