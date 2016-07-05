@@ -6,7 +6,7 @@ type=Tribal,Artifact
 subtype=Rogue,Equipment
 cost={2}
 ability=Equipped creature gets +2/+0 and has shroud.;\
+        Whenever a Rogue creature enters the battlefield, you may attach SN to RN.;\
         Equip {3}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature gets +2/+0 and has shroud.\nWhenever a Rogue creature enters the battlefield, you may attach Cloak and Dagger to it.\nEquip {3}

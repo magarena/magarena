@@ -6,8 +6,9 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={1}{W}{W}
-ability=Enchanted creature has indestructible.
+ability=Enchant creature;\
+        Enchanted creature has indestructible.;\
+        Whenever a creature enters the battlefield, you may attach SN to that creature.
 timing=aura
 enchant=indestructible,pos creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has indestructible.\nWhenever a creature enters the battlefield, you may attach Shielded by Faith to that creature.

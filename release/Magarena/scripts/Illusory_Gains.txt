@@ -5,8 +5,9 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{U}{U}
-ability=You control enchanted creature.
+ability=Enchant creature;\
+        You control enchanted creature.;\
+        Whenever a creature enters the battlefield under an opponent's control, attach SN to that creature.
 timing=aura
 enchant=gain control,neg creature
-requires_groovy_code
 oracle=Enchant creature\nYou control enchanted creature.\nWhenever a creature enters the battlefield under an opponent's control, attach Illusory Gains to that creature.

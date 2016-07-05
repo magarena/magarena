@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature gets +1/+1.;\
+        Whenever a creature enters the battlefield under your control, you may attach SN to RN.;\
         Equip {2}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature gets +1/+1.\nWhenever a creature enters the battlefield under your control, you may attach Sai of the Shinobi to it.\nEquip {2}
