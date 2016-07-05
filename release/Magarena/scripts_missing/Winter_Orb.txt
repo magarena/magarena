@@ -7,3 +7,4 @@ cost={2}
 ability=Players can't untap more than one land during their untap steps.
 timing=artifact
 oracle=Players can't untap more than one land during their untap steps.
+status=needs groovy

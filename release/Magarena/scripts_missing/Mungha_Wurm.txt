@@ -9,3 +9,4 @@ pt=6/5
 ability=You can't untap more than one land during your untap step.
 timing=main
 oracle=You can't untap more than one land during your untap step.
+status=needs groovy
