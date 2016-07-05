@@ -2063,13 +2063,22 @@ public enum MagicRuleEventAction {
         (game, event) -> game.doAction(new ShuffleLibraryAction(event.getPlayer()))
     ),
     AttachSelf(
-        "attach sn to " + ARG.CHOICE,
+        "attach sn to " + ARG.PERMANENTS,
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
-        "Attach",
-        (game, event) -> event.processTargetPermanent(game, creature -> game.doAction(new AttachAction(event.getPermanent(), creature)))
-    ),
+        "Attach"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new AttachAction(event.getPermanent(), it));
+                }
+            };
+        }
+    },
     TurnFaceDown(
         "turn " + ARG.PERMANENTS + " face down",
         MagicTiming.Tapping,
