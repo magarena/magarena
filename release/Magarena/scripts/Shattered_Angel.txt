@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/3
-ability=Flying
+ability=Flying;\
+        Whenever a land enters the battlefield under an opponent's control, you may gain 3 life.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever a land enters the battlefield under an opponent's control, you may gain 3 life.

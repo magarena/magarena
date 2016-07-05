@@ -6,7 +6,7 @@ type=Creature
 subtype=Cleric
 cost={1}{W}
 pt=1/1
-ability=Whenever another creature enters the battlefield under your control, you may gain 1 life.
+ability=Whenever another creature enters the battlefield under your control, you may gain 1 life.;\
+        Whenever a creature enters the battlefield under an opponent's control, you may have RN's controller lose 1 life.
 timing=fmain
-requires_groovy_code=Blood Seeker
 oracle=Whenever another creature enters the battlefield under your control, you may gain 1 life.\nWhenever a creature enters the battlefield under an opponent's control, you may have that player lose 1 life.

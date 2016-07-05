@@ -4,6 +4,6 @@ value=3.398
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
+ability=Whenever a land enters the battlefield under an opponent's control, RN's controller loses 2 life~and you gain 2 life.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a land enters the battlefield under an opponent's control, that player loses 2 life and you gain 2 life.
