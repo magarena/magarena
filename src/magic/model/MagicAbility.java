@@ -861,6 +861,14 @@ public enum MagicAbility {
             ));
         }
     },
+    OtherOppControlEntersEffect("Whenever " + ARG.WORDRUN + " enters the battlefield under an opponent's control, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(OtherEntersBattlefieldTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg) + " an opponent controls"),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     SelfOrAnotherEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(OtherEntersBattlefieldTrigger.createSelfOrAnother(
