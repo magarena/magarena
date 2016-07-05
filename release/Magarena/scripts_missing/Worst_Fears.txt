@@ -7,3 +7,4 @@ cost={7}{B}
 effect=You control target player during that player's next turn. Exile SN.
 timing=main
 oracle=You control target player during that player's next turn. Exile Worst Fears.
+status=not supported: control-player

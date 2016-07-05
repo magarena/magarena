@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Put X 1/1 green Saproling creature tokens onto the battlefield, where X is the greatest power among creatures you control.
 timing=main
 oracle=Put X 1/1 green Saproling creature tokens onto the battlefield, where X is the greatest power among creatures you control.
+status=needs groovy

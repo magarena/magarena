@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Until end of turn, whenever target creature deals damage, you gain that much life.~Draw a card.
 timing=removal
 oracle=Until end of turn, whenever target creature deals damage, you gain that much life.\nDraw a card.
+status=needs groovy

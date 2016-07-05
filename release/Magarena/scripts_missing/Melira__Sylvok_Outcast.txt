@@ -11,3 +11,4 @@ ability=You can't get poison counters.;\
         Creatures your opponents control lose infect.
 timing=main
 oracle=You can't get poison counters.\nCreatures you control can't have -1/-1 counters placed on them.\nCreatures your opponents control lose infect.
+status=not supported: players-cant

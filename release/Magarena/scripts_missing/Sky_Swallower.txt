@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, target opponent gains control of all other permanents you control.
 timing=main
 oracle=Flying\nWhen Sky Swallower enters the battlefield, target opponent gains control of all other permanents you control.
+status=needs groovy

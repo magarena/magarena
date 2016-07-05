@@ -7,3 +7,4 @@ cost={6}
 ability={4}, {T}, Sacrifice SN: You control target player during that player's next turn.
 timing=artifact
 oracle={4}, {T}, Sacrifice Mindslaver: You control target player during that player's next turn.
+status=not supported: control-player

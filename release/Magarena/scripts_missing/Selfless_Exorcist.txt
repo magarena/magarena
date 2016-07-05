@@ -9,3 +9,4 @@ pt=3/4
 ability={T}: Exile target creature card from a graveyard. That card deals damage equal to its power to SN.
 timing=main
 oracle={T}: Exile target creature card from a graveyard. That card deals damage equal to its power to Selfless Exorcist.
+status=needs groovy

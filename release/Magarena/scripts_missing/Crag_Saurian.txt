@@ -9,3 +9,4 @@ pt=4/4
 ability=Whenever a source deals damage to SN, that source's controller gains control of SN.
 timing=main
 oracle=Whenever a source deals damage to Crag Saurian, that source's controller gains control of Crag Saurian.
+status=needs groovy

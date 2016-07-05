@@ -12,3 +12,4 @@ ability=Flying;\
         Your opponents can't cast spells with the chosen name.
 timing=main
 oracle=Flying\nAs Alhammarret, High Arbiter enters the battlefield, each opponent reveals his or her hand. You choose the name of a nonland card revealed this way.\nYour opponents can't cast spells with the chosen name.
+status=not supported: players-cant

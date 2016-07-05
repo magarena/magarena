@@ -7,3 +7,4 @@ cost={4}{G}
 effect=Until end of turn, target creature gets +3/+3 and gains trample and "Whenever this creature deals combat damage to a player, draw that many cards."
 timing=main
 oracle=Until end of turn, target creature gets +3/+3 and gains trample and "Whenever this creature deals combat damage to a player, draw that many cards."
+status=needs groovy

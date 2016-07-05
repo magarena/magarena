@@ -11,3 +11,4 @@ ability=+2: SN deals 2 damage to target creature or player and you gain 2 life.;
         −7: You control target player during that player's next turn.
 timing=main
 oracle=+2: Sorin Markov deals 2 damage to target creature or player and you gain 2 life.\n−3: Target opponent's life total becomes 10.\n−7: You control target player during that player's next turn.
+status=not supported: control-player
