@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Target creature gets +2/+2 and gains horsemanship.
 timing=main
 oracle=Target creature gets +2/+2 and gains horsemanship.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={4}{W}
 ability=If you would gain life, you gain twice that much life instead.
 timing=enchantment
 oracle=If you would gain life, you gain twice that much life instead.
+status=needs groovy

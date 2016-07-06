@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Prevent all damage that creatures would deal to players this turn.
 timing=removal
 oracle=Prevent all damage that creatures would deal to players this turn.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=1/2
 ability=At the beginning of your upkeep, put a colorless artifact token named Land Mine onto the battlefield with "{R}, Sacrifice this artifact: This artifact deals 2 damage to target attacking creature without flying." Then flip a coin. If you lose the flip, SN deals 2 damage to itself.
 timing=main
 oracle=At the beginning of your upkeep, put a colorless artifact token named Land Mine onto the battlefield with "{R}, Sacrifice this artifact: This artifact deals 2 damage to target attacking creature without flying." Then flip a coin. If you lose the flip, Goblin Kaboomist deals 2 damage to itself.
+status=needs groovy

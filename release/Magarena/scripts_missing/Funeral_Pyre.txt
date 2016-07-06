@@ -7,3 +7,4 @@ cost={W}
 effect=Exile target card from a graveyard. Its owner puts a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=removal
 oracle=Exile target card from a graveyard. Its owner puts a 1/1 white Spirit creature token with flying onto the battlefield.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=4/6
 ability=You can't cast creature spells.
 timing=main
 oracle=You can't cast creature spells.
+status=not supported: players-cant

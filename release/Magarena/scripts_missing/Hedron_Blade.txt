@@ -11,3 +11,4 @@ ability=Equipped creature gets +1/+1.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +1/+1.\nWhenever equipped creature becomes blocked by one or more colorless creatures, it gains deathtouch until end of turn.\nEquip {2}
+status=needs groovy

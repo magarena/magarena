@@ -10,3 +10,4 @@ ability=Flying;\
         At the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice SN.
 timing=main
 oracle=Flying\nAt the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice Woebringer Demon.
+status=needs groovy

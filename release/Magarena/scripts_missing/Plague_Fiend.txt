@@ -9,3 +9,4 @@ pt=1/1
 ability=Whenever SN deals combat damage to a creature, destroy that creature unless its controller pays {2}.
 timing=main
 oracle=Whenever Plague Fiend deals combat damage to a creature, destroy that creature unless its controller pays {2}.
+status=needs groovy

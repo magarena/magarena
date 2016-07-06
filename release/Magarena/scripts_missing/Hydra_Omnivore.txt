@@ -9,3 +9,4 @@ pt=8/8
 ability=Whenever SN deals combat damage to an opponent, it deals that much damage to each other opponent.
 timing=main
 oracle=Whenever Hydra Omnivore deals combat damage to an opponent, it deals that much damage to each other opponent.
+status=needs groovy
