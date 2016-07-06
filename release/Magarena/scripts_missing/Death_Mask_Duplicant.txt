@@ -10,3 +10,4 @@ ability={1}: Exile target creature card from your graveyard.;\
         As long as a card exiled with SN has flying, SN has flying. The same is true for fear, first strike, double strike, haste, landwalk, protection, and trample.
 timing=main
 oracle=Imprint — {1}: Exile target creature card from your graveyard.\nAs long as a card exiled with Death-Mask Duplicant has flying, Death-Mask Duplicant has flying. The same is true for fear, first strike, double strike, haste, landwalk, protection, and trample.
+status=needs groovy

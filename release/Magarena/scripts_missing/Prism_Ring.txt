@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose a color.;\
         Whenever you cast a spell of the chosen color, you gain 1 life.
 timing=artifact
 oracle=As Prism Ring enters the battlefield, choose a color.\nWhenever you cast a spell of the chosen color, you gain 1 life.
+status=needs groovy

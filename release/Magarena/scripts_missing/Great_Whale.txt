@@ -9,3 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, untap up to seven lands.
 timing=main
 oracle=When Great Whale enters the battlefield, untap up to seven lands.
+status=not supported: untap-up-to

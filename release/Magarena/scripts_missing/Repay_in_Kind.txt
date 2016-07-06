@@ -7,3 +7,4 @@ cost={5}{B}{B}
 effect=Each player's life total becomes the lowest life total among all players.
 timing=main
 oracle=Each player's life total becomes the lowest life total among all players.
+status=needs groovy

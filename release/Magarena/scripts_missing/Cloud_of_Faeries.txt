@@ -11,3 +11,4 @@ ability=Flying;\
         Cycling {2}
 timing=main
 oracle=Flying\nWhen Cloud of Faeries enters the battlefield, untap up to two lands.\nCycling {2}
+status=not supported: untap-up-to

@@ -11,3 +11,4 @@ ability=Flying;\
         {2}{U}{U}: Return SN to its owner's hand.
 timing=main
 oracle=Flying\nWhen Palinchron enters the battlefield, untap up to seven lands.\n{2}{U}{U}: Return Palinchron to its owner's hand.
+status=not supported: untap-up-to

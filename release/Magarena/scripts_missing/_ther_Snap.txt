@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Remove all counters from all permanents and exile all tokens.
 timing=main
 oracle=Remove all counters from all permanents and exile all tokens.
+status=needs groovy

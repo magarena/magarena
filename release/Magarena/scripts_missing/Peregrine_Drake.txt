@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, untap up to five lands.
 timing=main
 oracle=Flying\nWhen Peregrine Drake enters the battlefield, untap up to five lands.
+status=not supported: untap-up-to

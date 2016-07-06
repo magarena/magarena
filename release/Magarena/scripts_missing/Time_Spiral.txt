@@ -7,3 +7,4 @@ cost={4}{U}{U}
 effect=Exile SN. Each player shuffles his or her graveyard and hand into his or her library, then draws seven cards. You untap up to six lands.
 timing=main
 oracle=Exile Time Spiral. Each player shuffles his or her graveyard and hand into his or her library, then draws seven cards. You untap up to six lands.
+status=not supported: untap-up-to

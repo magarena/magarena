@@ -9,3 +9,4 @@ pt=1/1
 ability=SN can't be blocked by creatures with power 2 or greater as long as defending player controls a snow land.
 timing=main
 oracle=Arctic Foxes can't be blocked by creatures with power 2 or greater as long as defending player controls a snow land.
+status=needs groovy

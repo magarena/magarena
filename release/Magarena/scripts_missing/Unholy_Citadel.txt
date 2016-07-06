@@ -6,3 +6,4 @@ type=Land
 ability=Black legendary creatures you control have "bands with other legendary creatures."
 timing=land
 oracle=Black legendary creatures you control have "bands with other legendary creatures."
+status=not supported: banding

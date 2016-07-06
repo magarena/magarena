@@ -10,3 +10,4 @@ ability={R}, {T}, Sacrifice SN: SN deals 4 damage to target creature.;\
         {2}{R}: SN has base power 8 until end of turn. Activate this ability only if creatures you control have total power 8 or greater.
 timing=main
 oracle={R}, {T}, Sacrifice Crater Elemental: Crater Elemental deals 4 damage to target creature.\nFormidable — {2}{R}: Crater Elemental has base power 8 until end of turn. Activate this ability only if creatures you control have total power 8 or greater.
+status=needs groovy

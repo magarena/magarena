@@ -11,3 +11,4 @@ ability=Defender;\
         At the beginning of each end step, if SN was dealt damage this turn, put a +0/+1 counter on it.
 timing=smain
 oracle=Defender\nFlying\nAt the beginning of each end step, if Wall of Resistance was dealt damage this turn, put a +0/+1 counter on it.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={U}{B}
 ability=Pay 1 life: Until your next upkeep, target permanent can't phase out.
 timing=enchantment
 oracle=Pay 1 life: Until your next upkeep, target permanent can't phase out.
+status=not supported: phasing

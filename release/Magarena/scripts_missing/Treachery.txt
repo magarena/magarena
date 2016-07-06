@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nWhen Treachery enters the battlefield, untap up to five lands.\nYou control enchanted creature.
+status=not supported: untap-up-to

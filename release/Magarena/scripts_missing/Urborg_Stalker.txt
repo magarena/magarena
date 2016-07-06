@@ -9,3 +9,4 @@ pt=2/4
 ability=At the beginning of each player's upkeep, if that player controls a nonblack, nonland permanent, SN deals 1 damage to that player.
 timing=main
 oracle=At the beginning of each player's upkeep, if that player controls a nonblack, nonland permanent, Urborg Stalker deals 1 damage to that player.
+status=needs groovy

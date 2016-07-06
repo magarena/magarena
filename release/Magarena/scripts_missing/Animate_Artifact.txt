@@ -10,3 +10,4 @@ ability=Enchant artifact;\
 timing=aura
 enchant=default,artifact
 oracle=Enchant artifact\nAs long as enchanted artifact isn't a creature, it's an artifact creature with power and toughness each equal to its converted mana cost.
+status=needs groovy

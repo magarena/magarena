@@ -11,3 +11,4 @@ ability=SN doesn't untap during your untap step.;\
         SN can't be blocked except by three or more creatures.
 timing=main
 oracle=Phyrexian Colossus doesn't untap during your untap step.\nPay 8 life: Untap Phyrexian Colossus.\nPhyrexian Colossus can't be blocked except by three or more creatures.
+status=not supported: blocking-restriction

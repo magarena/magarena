@@ -10,3 +10,4 @@ ability=Equipped creature gets +2/+0 and has vigilance and "At the beginning of 
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +2/+0 and has vigilance and "At the beginning of your upkeep, draw a card."\nWhen equipped creature dies, target opponent gains control of Avarice Amulet.\nEquip {2}
+status=needs groovy

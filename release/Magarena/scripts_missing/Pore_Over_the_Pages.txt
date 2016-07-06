@@ -7,3 +7,4 @@ cost={3}{U}{U}
 effect=Draw three cards, untap up to two lands, then discard a card.
 timing=draw
 oracle=Draw three cards, untap up to two lands, then discard a card.
+status=not supported: untap-up-to

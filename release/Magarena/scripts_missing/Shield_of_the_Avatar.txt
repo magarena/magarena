@@ -9,3 +9,4 @@ ability=If a source would deal damage to equipped creature, prevent X of that da
         Equip {2}
 timing=equipment
 oracle=If a source would deal damage to equipped creature, prevent X of that damage, where X is the number of creatures you control.\nEquip {2}
+status=needs groovy

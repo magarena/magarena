@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Target player exiles all land cards from his or her graveyard.
 timing=removal
 oracle=Target player exiles all land cards from his or her graveyard.
+status=needs groovy

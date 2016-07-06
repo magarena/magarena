@@ -7,3 +7,4 @@ cost={1}{U}{R}
 effect=Until end of turn, target creature you control becomes a blue and red Dragon with base power and toughness 4/4, loses all abilities, and gains flying.~Overload {3}{U}{U}{R}{R}
 timing=removal
 oracle=Until end of turn, target creature you control becomes a blue and red Dragon with base power and toughness 4/4, loses all abilities, and gains flying.\nOverload {3}{U}{U}{R}{R}
+status=needs groovy
