@@ -4,7 +4,7 @@ value=3.500
 rarity=U
 type=Instant
 cost={2}{W}
-ability=cycling {W};\
+ability=Cycling {W};\
         Cast SN with AI only if you control a creature.
 timing=pump
 requires_groovy_code

@@ -6,7 +6,7 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={3}{G}{W}
 pt=6/7
-ability=indestructible;\
+ability=Indestructible;\
         Whenever you cast a creature spell, you may search your library for a Forest or Plains card, put it onto the battlefield tapped, then shuffle your library.
 timing=main
 requires_groovy_code

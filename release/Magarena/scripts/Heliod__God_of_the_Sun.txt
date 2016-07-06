@@ -6,8 +6,8 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={3}{W}
 pt=5/6
-ability=indestructible;\
-        other creatures you control have vigilance;\
+ability=Indestructible;\
+        Other creatures you control have vigilance;\
         {2}{W}{W}: Put a 2/1 white Cleric enchantment creature token onto the battlefield.
 timing=main
 requires_groovy_code

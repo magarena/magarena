@@ -6,8 +6,8 @@ type=Creature
 subtype=Horror
 cost={2}{W/B}{W/B}{W/B}
 pt=3/4
-ability=other white creatures you control get +1/+1;\
-        other black creatures you control get +1/+1
+ability=Other white creatures you control get +1/+1;\
+        Other black creatures you control get +1/+1
 static=player
 timing=main
 requires_groovy_code

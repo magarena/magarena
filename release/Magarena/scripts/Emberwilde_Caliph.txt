@@ -6,7 +6,7 @@ type=Creature
 subtype=Djinn
 cost={2}{U}{R}
 pt=4/4
-ability=Flying, trample.;\
+ability=Flying, trample;\
         SN attacks each turn if able.
 timing=main
 requires_groovy_code

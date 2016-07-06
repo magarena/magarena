@@ -6,7 +6,7 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={3}{B}
 pt=5/7
-ability=indestructible;\
+ability=Indestructible;\
         {1}{B}, Pay 2 life: Draw a card.
 timing=main
 requires_groovy_code
