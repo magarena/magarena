@@ -356,19 +356,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     public int getDevotion(final MagicColor... colors) {
-        int devotion = 0;
-        for (final MagicCostManaType mt : getCardDefinition().getCost().getCostManaTypes(0)) {
-            if (mt == MagicCostManaType.Generic) {
-                continue;
-            }
-            for (final MagicColor c : colors) {
-                if (mt.getTypes().contains(c.getManaType())) {
-                    devotion++;
-                    break;
-                }
-            }
-        }
-        return devotion;
+        return getCardDefinition().getCost().getDevotion(colors);
     }
 
     public boolean producesMana() {

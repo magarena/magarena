@@ -167,6 +167,22 @@ public class MagicManaCost {
         return types;
     }
 
+    public int getDevotion(final MagicColor... colors) {
+        int devotion = 0;
+        for (final MagicCostManaType mt : getCostManaTypes(0)) {
+            if (mt == MagicCostManaType.Generic) {
+                continue;
+            }
+            for (final MagicColor c : colors) {
+                if (mt.getTypes().contains(c.getManaType())) {
+                    devotion++;
+                    break;
+                }
+            }
+        }
+        return devotion;
+    }
+
     public int getColorFlags() {
         int colorFlags = 0;
         for (final MagicCostManaType costType : order) {
