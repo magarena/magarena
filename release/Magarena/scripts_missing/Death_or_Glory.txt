@@ -7,3 +7,4 @@ cost={4}{W}
 effect=Separate all creature cards in your graveyard into two piles. Exile the pile of an opponent's choice and return the other to the battlefield.
 timing=main
 oracle=Separate all creature cards in your graveyard into two piles. Exile the pile of an opponent's choice and return the other to the battlefield.
+status=not supported: piles

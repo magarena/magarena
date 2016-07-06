@@ -10,3 +10,4 @@ ability=Flying;\
         {4}, Return two lands you control to their owner's hand: Discard all the cards in your hand, then draw that many cards.
 timing=main
 oracle=Flying\n{4}, Return two lands you control to their owner's hand: Discard all the cards in your hand, then draw that many cards.
+status=needs groovy

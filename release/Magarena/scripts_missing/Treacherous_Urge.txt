@@ -7,3 +7,4 @@ cost={4}{B}
 effect=Target opponent reveals his or her hand. You may put a creature card from it onto the battlefield under your control. That creature gains haste. Sacrifice it at the beginning of the next end step.
 timing=removal
 oracle=Target opponent reveals his or her hand. You may put a creature card from it onto the battlefield under your control. That creature gains haste. Sacrifice it at the beginning of the next end step.
+status=not supported: reveal-hand

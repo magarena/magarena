@@ -11,3 +11,4 @@ ability=+1: Until end of turn, up to one target creature gets +2/+2 and gains vi
 transform=Arlinn, Embraced by the Moon
 timing=main
 oracle=+1: Until end of turn, up to one target creature gets +2/+2 and gains vigilance and haste.\n0: Put a 2/2 green Wolf creature token onto the battlefield. Transform Arlinn Kord.
+status=needs groovy

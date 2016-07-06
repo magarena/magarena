@@ -10,3 +10,4 @@ ability=Horsemanship;\
         Whenever SN attacks alone, it can't be blocked this combat.
 timing=main
 oracle=Horsemanship\nWhenever Ma Chao, Western Warrior attacks alone, it can't be blocked this combat.
+status=needs groovy

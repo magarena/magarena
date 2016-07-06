@@ -8,3 +8,4 @@ ability=Flashback {5}{R}
 effect=Discard all the cards in your hand, then draw that many cards.
 timing=main
 oracle=Discard all the cards in your hand, then draw that many cards.\nFlashback {5}{R}
+status=needs groovy

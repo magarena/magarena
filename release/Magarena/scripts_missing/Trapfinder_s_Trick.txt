@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Target player reveals his or her hand and discards all Trap cards.
 timing=main
 oracle=Target player reveals his or her hand and discards all Trap cards.
+status=not supported: reveal-hand

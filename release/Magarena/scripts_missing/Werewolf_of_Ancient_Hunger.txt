@@ -13,3 +13,4 @@ transform=Sage of Ancient Lore
 timing=main
 hidden
 oracle=Vigilance, trample\nWerewolf of Ancient Hunger's power and toughness are each equal to the total number of cards in all players' hands.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Werewolf of Ancient Hunger.
+status=needs groovy

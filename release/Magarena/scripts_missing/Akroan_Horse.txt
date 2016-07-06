@@ -11,3 +11,4 @@ ability=Defender;\
         At the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
 timing=smain
 oracle=Defender\nWhen Akroan Horse enters the battlefield, an opponent gains control of it.\nAt the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
+status=needs groovy

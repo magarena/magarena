@@ -9,3 +9,4 @@ pt=2/5
 ability=At end of combat, gain control of all creatures blocking SN for as long as you control SN.
 timing=main
 oracle=At end of combat, gain control of all creatures blocking The Wretched for as long as you control The Wretched.
+status=needs groovy

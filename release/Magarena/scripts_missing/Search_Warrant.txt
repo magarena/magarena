@@ -7,3 +7,4 @@ cost={W}{U}
 effect=Target player reveals his or her hand. You gain life equal to the number of cards in that player's hand.
 timing=main
 oracle=Target player reveals his or her hand. You gain life equal to the number of cards in that player's hand.
+status=not supported: reveal-hand

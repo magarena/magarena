@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Target player reveals his or her hand and discards all cards of each of the sacrificed creature's colors.
 timing=main
 oracle=As an additional cost to cast Mind Extraction, sacrifice a creature.\nTarget player reveals his or her hand and discards all cards of each of the sacrificed creature's colors.
+status=not supported: reveal-hand

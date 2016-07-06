@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, you may return target card with awaken f
         Land creatures you control have flying.
 timing=main
 oracle=When Halimar Tidecaller enters the battlefield, you may return target card with awaken from your graveyard to your hand.\nLand creatures you control have flying.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={3}{W}
 ability=At the beginning of combat on each opponent's turn, separate all creatures that player controls into two piles. Only creatures in the pile of his or her choice can attack this turn.
 timing=enchantment
 oracle=At the beginning of combat on each opponent's turn, separate all creatures that player controls into two piles. Only creatures in the pile of his or her choice can attack this turn.
+status=not supported: piles

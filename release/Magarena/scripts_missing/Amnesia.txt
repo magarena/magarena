@@ -7,3 +7,4 @@ cost={3}{U}{U}{U}
 effect=Target player reveals his or her hand and discards all nonland cards.
 timing=main
 oracle=Target player reveals his or her hand and discards all nonland cards.
+status=not supported: reveal-hand

@@ -7,3 +7,4 @@ cost={2}{R}
 ability=At the beginning of each player's end step, if that player didn't cast a spell this turn, SN deals 2 damage to him or her.
 timing=enchantment
 oracle=At the beginning of each player's end step, if that player didn't cast a spell this turn, Impatience deals 2 damage to him or her.
+status=needs groovy

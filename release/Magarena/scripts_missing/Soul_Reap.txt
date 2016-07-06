@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Destroy target nongreen creature. Its controller loses 3 life if you've cast another black spell this turn.
 timing=main
 oracle=Destroy target nongreen creature. Its controller loses 3 life if you've cast another black spell this turn.
+status=not supported: no-info

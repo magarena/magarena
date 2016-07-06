@@ -9,3 +9,4 @@ pt=2/1
 ability={B}{B}{B}, {T}: Target opponent reveals his or her hand and discards a creature card at random. Activate this ability only during your turn.
 timing=main
 oracle={B}{B}{B}, {T}: Target opponent reveals his or her hand and discards a creature card at random. Activate this ability only during your turn.
+status=not supported: reveal-hand

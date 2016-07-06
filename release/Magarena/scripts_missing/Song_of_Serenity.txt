@@ -7,3 +7,4 @@ cost={1}{G}
 ability=Creatures that are enchanted can't attack or block.
 timing=enchantment
 oracle=Creatures that are enchanted can't attack or block.
+status=needs groovy

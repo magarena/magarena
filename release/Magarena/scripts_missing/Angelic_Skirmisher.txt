@@ -10,3 +10,4 @@ ability=Flying;\
         At the beginning of each combat, choose first strike, vigilance, or lifelink. Creatures you control gain that ability until end of turn.
 timing=main
 oracle=Flying\nAt the beginning of each combat, choose first strike, vigilance, or lifelink. Creatures you control gain that ability until end of turn.
+status=needs groovy

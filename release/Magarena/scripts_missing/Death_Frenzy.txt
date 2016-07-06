@@ -7,3 +7,4 @@ cost={3}{B}{G}
 effect=All creatures get -2/-2 until end of turn. Whenever a creature dies this turn, you gain 1 life.
 timing=main
 oracle=All creatures get -2/-2 until end of turn. Whenever a creature dies this turn, you gain 1 life.
+status=needs groovy

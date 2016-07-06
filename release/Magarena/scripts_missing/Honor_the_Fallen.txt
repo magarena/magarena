@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Exile all creature cards from all graveyards. You gain 1 life for each card exiled this way.
 timing=removal
 oracle=Exile all creature cards from all graveyards. You gain 1 life for each card exiled this way.
+status=needs groovy

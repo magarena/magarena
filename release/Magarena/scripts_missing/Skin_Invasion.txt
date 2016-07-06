@@ -12,3 +12,4 @@ transform=Skin Shedder
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature attacks each combat if able.\nWhen enchanted creature dies, return Skin Invasion to the battlefield transformed under your control.
+status=needs groovy

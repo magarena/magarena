@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Target player reveals his or her hand. For each blue instant card revealed this way, that player discards that card unless he or she pays 4 life.
 timing=removal
 oracle=Target player reveals his or her hand. For each blue instant card revealed this way, that player discards that card unless he or she pays 4 life.
+status=not supported: reveal-hand

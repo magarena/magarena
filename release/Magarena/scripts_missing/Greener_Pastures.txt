@@ -7,3 +7,4 @@ cost={2}{G}
 ability=At the beginning of each player's upkeep, if that player controls more lands than each other player, the player puts a 1/1 green Saproling creature token onto the battlefield.
 timing=enchantment
 oracle=At the beginning of each player's upkeep, if that player controls more lands than each other player, the player puts a 1/1 green Saproling creature token onto the battlefield.
+status=needs groovy

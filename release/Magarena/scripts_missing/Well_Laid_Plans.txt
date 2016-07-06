@@ -7,3 +7,4 @@ cost={2}{U}
 ability=Prevent all damage that would be dealt to a creature by another creature if they share a color.
 timing=enchantment
 oracle=Prevent all damage that would be dealt to a creature by another creature if they share a color.
+status=needs groovy

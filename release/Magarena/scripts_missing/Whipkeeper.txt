@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: SN deals damage to target creature equal to the damage already dealt to it this turn.
 timing=main
 oracle={T}: Whipkeeper deals damage to target creature equal to the damage already dealt to it this turn.
+status=needs groovy

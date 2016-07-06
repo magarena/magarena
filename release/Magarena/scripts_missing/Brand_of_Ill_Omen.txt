@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nCumulative upkeep {R}\nEnchanted creature's controller can't cast creature spells.
+status=not supported: players-cant

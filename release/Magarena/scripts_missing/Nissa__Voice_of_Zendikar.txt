@@ -12,3 +12,4 @@ ability=+1: Put a 0/1 green Plant creature token onto the battlefield.;\
         −7: You gain X life and draw X cards, where X is the number of lands you control.
 timing=main
 oracle=+1: Put a 0/1 green Plant creature token onto the battlefield.\n−2: Put a +1/+1 counter on each creature you control.\n−7: You gain X life and draw X cards, where X is the number of lands you control.
+status=needs groovy

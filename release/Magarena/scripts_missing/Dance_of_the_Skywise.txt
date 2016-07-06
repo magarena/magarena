@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Until end of turn, target creature you control becomes a blue Dragon Illusion with base power and toughness 4/4, loses all abilities, and gains flying.
 timing=removal
 oracle=Until end of turn, target creature you control becomes a blue Dragon Illusion with base power and toughness 4/4, loses all abilities, and gains flying.
+status=needs groovy

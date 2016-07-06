@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice an artifact.
 effect=Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=As an additional cost to cast Reshape, sacrifice an artifact.\nSearch your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
+status=needs groovy

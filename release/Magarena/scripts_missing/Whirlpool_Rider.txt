@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.
 timing=main
 oracle=When Whirlpool Rider enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.
+status=needs groovy

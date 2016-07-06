@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Target player reveals his or her hand. SN deals damage to that player equal to the number of white cards in his or her hand.
 timing=main
 oracle=Target player reveals his or her hand. Inquisition deals damage to that player equal to the number of white cards in his or her hand.
+status=not supported: reveal-hand

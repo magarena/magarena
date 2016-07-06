@@ -10,3 +10,4 @@ ability=Enchant permanent;\
 timing=aura
 enchant=default,permanent
 oracle=Enchant permanent\nAs long as enchanted permanent is red or green, it has "At the beginning of your upkeep, sacrifice this permanent unless you pay its mana cost."
+status=needs groovy

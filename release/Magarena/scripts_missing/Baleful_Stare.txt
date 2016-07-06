@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Target opponent reveals his or her hand. You draw a card for each Mountain and red card in it.
 timing=main
 oracle=Target opponent reveals his or her hand. You draw a card for each Mountain and red card in it.
+status=not supported: reveal-hand

@@ -11,3 +11,4 @@ ability=Flying;\
         When SN leaves the battlefield, that player gains 3 life.
 timing=main
 oracle=Flying\nWhen Soul Scourge enters the battlefield, target player loses 3 life.\nWhen Soul Scourge leaves the battlefield, that player gains 3 life.
+status=needs groovy

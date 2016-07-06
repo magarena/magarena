@@ -7,3 +7,4 @@ cost={B}{R}
 ability=If a spell or ability would cause its controller to gain life, that player loses that much life instead.
 timing=enchantment
 oracle=If a spell or ability would cause its controller to gain life, that player loses that much life instead.
+status=needs groovy

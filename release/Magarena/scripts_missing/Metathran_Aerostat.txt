@@ -10,3 +10,4 @@ ability=Flying;\
         {X}{U}: You may put a creature card with converted mana cost X from your hand onto the battlefield. If you do, return SN to its owner's hand.
 timing=main
 oracle=Flying\n{X}{U}: You may put a creature card with converted mana cost X from your hand onto the battlefield. If you do, return Metathran Aerostat to its owner's hand.
+status=needs groovy

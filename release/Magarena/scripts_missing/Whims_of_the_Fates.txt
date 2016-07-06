@@ -7,3 +7,4 @@ cost={5}{R}
 effect=Starting with you, each player separates all permanents he or she controls into three piles. Then each player chooses one of his or her piles at random and sacrifices those permanents.
 timing=main
 oracle=Starting with you, each player separates all permanents he or she controls into three piles. Then each player chooses one of his or her piles at random and sacrifices those permanents.
+status=not supported: piles

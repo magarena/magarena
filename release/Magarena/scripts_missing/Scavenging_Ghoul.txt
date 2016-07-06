@@ -10,3 +10,4 @@ ability=At the beginning of each end step, put a corpse counter on SN for each c
         Remove a corpse counter from SN: Regenerate SN.
 timing=main
 oracle=At the beginning of each end step, put a corpse counter on Scavenging Ghoul for each creature that died this turn.\nRemove a corpse counter from Scavenging Ghoul: Regenerate Scavenging Ghoul.
+status=not supported: no-info

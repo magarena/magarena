@@ -10,3 +10,4 @@ ability=Prowess;\
         Whenever SN attacks, you may return target creature to its owner's hand if its power is less than SN's power.
 timing=main
 oracle=Prowess\nWhenever Sage-Eye Avengers attacks, you may return target creature to its owner's hand if its power is less than Sage-Eye Avengers's power.
+status=needs groovy

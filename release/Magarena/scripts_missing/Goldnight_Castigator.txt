@@ -11,3 +11,4 @@ ability=Flying, haste;\
         If a source would deal damage to SN, it deals double that damage to SN instead.
 timing=main
 oracle=Flying, haste\nIf a source would deal damage to you, it deals double that damage to you instead.\nIf a source would deal damage to Goldnight Castigator, it deals double that damage to Goldnight Castigator instead.
+status=needs groovy

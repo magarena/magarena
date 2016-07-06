@@ -8,3 +8,4 @@ cost={3}{G}{G}
 effect=If an opponent had an artifact enter the battlefield under his or her control this turn, you may pay {1}{G} rather than pay SN's mana cost.~Put a 4/4 green Beast creature token onto the battlefield.
 timing=removal
 oracle=If an opponent had an artifact enter the battlefield under his or her control this turn, you may pay {1}{G} rather than pay Baloth Cage Trap's mana cost.\nPut a 4/4 green Beast creature token onto the battlefield.
+status=not supported: no-info

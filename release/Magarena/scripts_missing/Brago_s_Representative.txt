@@ -9,3 +9,4 @@ pt=1/4
 ability=While voting, you get an additional vote.
 timing=main
 oracle=While voting, you get an additional vote.
+status=not supported: vote

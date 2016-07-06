@@ -12,3 +12,4 @@ ability=Flying;\
         When Linvala enters the battlefield, if an opponent controls more creatures than you, put a 3/3 white Angel creature token with flying onto the battlefield.
 timing=main
 oracle=Flying\nWhen Linvala, the Preserver enters the battlefield, if an opponent has more life than you, you gain 5 life.\nWhen Linvala enters the battlefield, if an opponent controls more creatures than you, put a 3/3 white Angel creature token with flying onto the battlefield.
+status=needs groovy

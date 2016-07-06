@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN dies, if 4 or more damage was dealt to it this turn, draw three cards.
 timing=main
 oracle=When Rushing-Tide Zubera dies, if 4 or more damage was dealt to it this turn, draw three cards.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/3
 ability=At the beginning of your upkeep, each opponent loses 1 life. You gain life equal to the life lost this way.
 timing=main
 oracle=At the beginning of your upkeep, each opponent loses 1 life. You gain life equal to the life lost this way.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={1}{W}
 effect=When target creature dies this turn, return that card to the battlefield under its owner's control.
 timing=removal
 oracle=When target creature dies this turn, return that card to the battlefield under its owner's control.
+status=needs groovy

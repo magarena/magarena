@@ -9,3 +9,4 @@ pt=2/1
 ability=Prevent all combat damage that would be dealt to SN by creatures blocking it.
 timing=main
 oracle=Prevent all combat damage that would be dealt to Armored Transport by creatures blocking it.
+status=needs groovy

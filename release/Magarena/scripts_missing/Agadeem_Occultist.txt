@@ -9,3 +9,4 @@ pt=0/2
 ability={T}: Put target creature card from an opponent's graveyard onto the battlefield under your control if its converted mana cost is less than or equal to the number of Allies you control.
 timing=main
 oracle={T}: Put target creature card from an opponent's graveyard onto the battlefield under your control if its converted mana cost is less than or equal to the number of Allies you control.
+status=needs groovy

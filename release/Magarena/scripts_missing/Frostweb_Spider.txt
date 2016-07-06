@@ -10,3 +10,4 @@ ability=Reach;\
         Whenever SN blocks a creature with flying, put a +1/+1 counter on SN at end of combat.
 timing=main
 oracle=Reach\nWhenever Frostweb Spider blocks a creature with flying, put a +1/+1 counter on Frostweb Spider at end of combat.
+status=needs groovy

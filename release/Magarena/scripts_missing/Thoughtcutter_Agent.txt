@@ -9,3 +9,4 @@ pt=1/1
 ability={U}{B}, {T}: Target player loses 1 life and reveals his or her hand.
 timing=main
 oracle={U}{B}, {T}: Target player loses 1 life and reveals his or her hand.
+status=not supported: reveal-hand

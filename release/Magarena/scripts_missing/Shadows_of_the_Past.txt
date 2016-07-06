@@ -9,3 +9,4 @@ ability=Whenever a creature dies, scry 1.;\
         {4}{B}: Each opponent loses 2 life and you gain 2 life. Activate this ability only if there are four or more creature cards in your graveyard.
 timing=enchantment
 oracle=Whenever a creature dies, scry 1.\n{4}{B}: Each opponent loses 2 life and you gain 2 life. Activate this ability only if there are four or more creature cards in your graveyard.
+status=needs groovy

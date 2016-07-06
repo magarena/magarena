@@ -9,3 +9,4 @@ pt=1/1
 ability=At the beginning of your upkeep, if SN is on the battlefield, each player returns all cards named Myr Servitor from his or her graveyard to the battlefield.
 timing=main
 oracle=At the beginning of your upkeep, if Myr Servitor is on the battlefield, each player returns all cards named Myr Servitor from his or her graveyard to the battlefield.
+status=needs groovy

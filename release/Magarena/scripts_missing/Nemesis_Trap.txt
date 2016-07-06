@@ -8,3 +8,4 @@ cost={4}{B}{B}
 effect=If a white creature is attacking, you may pay {B}{B} rather than pay SN's mana cost.~Exile target attacking creature. Put a token that's a copy of that creature onto the battlefield. Exile it at the beginning of the next end step.
 timing=removal
 oracle=If a white creature is attacking, you may pay {B}{B} rather than pay Nemesis Trap's mana cost.\nExile target attacking creature. Put a token that's a copy of that creature onto the battlefield. Exile it at the beginning of the next end step.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=4/4
 ability=If a source would deal 3 or less damage to SN, prevent that damage.
 timing=main
 oracle=If a source would deal 3 or less damage to Callous Giant, prevent that damage.
+status=needs groovy

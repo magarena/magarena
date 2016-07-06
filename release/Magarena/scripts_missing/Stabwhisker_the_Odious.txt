@@ -11,3 +11,4 @@ flip=Nezumi Shortfang
 timing=main
 hidden
 oracle=At the beginning of each opponent's upkeep, that player loses 1 life for each card fewer than three in his or her hand.
+status=needs groovy

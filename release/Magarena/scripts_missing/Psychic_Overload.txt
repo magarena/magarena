@@ -12,3 +12,4 @@ ability=Enchant permanent;\
 timing=aura
 enchant=default,permanent
 oracle=Enchant permanent\nWhen Psychic Overload enters the battlefield, tap enchanted permanent.\nEnchanted permanent doesn't untap during its controller's untap step.\nEnchanted permanent has "Discard two artifact cards: Untap this permanent."
+status=needs groovy

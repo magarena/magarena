@@ -11,3 +11,4 @@ ability=+1: Each player discards a card.;\
         −6: Separate all permanents target player controls into two piles. That player sacrifices all permanents in the pile of his or her choice.
 timing=main
 oracle=+1: Each player discards a card.\n−2: Target player sacrifices a creature.\n−6: Separate all permanents target player controls into two piles. That player sacrifices all permanents in the pile of his or her choice.
+status=not supported: piles

@@ -7,3 +7,4 @@ cost={5}{W}{W}
 effect=Put X 1/1 white Soldier creature tokens onto the battlefield, where X is the number of creatures on the battlefield.
 timing=main
 oracle=Put X 1/1 white Soldier creature tokens onto the battlefield, where X is the number of creatures on the battlefield.
+status=needs groovy

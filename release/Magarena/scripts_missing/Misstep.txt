@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Creatures target player controls don't untap during that player's next untap step.
 timing=main
 oracle=Creatures target player controls don't untap during that player's next untap step.
+status=needs groovy

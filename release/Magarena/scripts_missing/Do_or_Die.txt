@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Separate all creatures target player controls into two piles. Destroy all creatures in the pile of that player's choice. They can't be regenerated.
 timing=main
 oracle=Separate all creatures target player controls into two piles. Destroy all creatures in the pile of that player's choice. They can't be regenerated.
+status=not supported: piles

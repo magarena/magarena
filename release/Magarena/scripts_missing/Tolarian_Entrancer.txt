@@ -9,3 +9,4 @@ pt=1/1
 ability=Whenever SN becomes blocked by a creature, gain control of that creature at end of combat.
 timing=main
 oracle=Whenever Tolarian Entrancer becomes blocked by a creature, gain control of that creature at end of combat.
+status=needs groovy

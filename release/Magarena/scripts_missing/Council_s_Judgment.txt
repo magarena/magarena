@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Starting with you, each player votes for a nonland permanent you don't control. Exile each permanent with the most votes or tied for most votes.
 timing=main
 oracle=Will of the council — Starting with you, each player votes for a nonland permanent you don't control. Exile each permanent with the most votes or tied for most votes.
+status=not supported: vote

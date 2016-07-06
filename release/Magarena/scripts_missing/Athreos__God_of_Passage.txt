@@ -11,3 +11,4 @@ ability=Indestructible;\
         Whenever another creature you own dies, return it to your hand unless target opponent pays 3 life.
 timing=main
 oracle=Indestructible\nAs long as your devotion to white and black is less than seven, Athreos isn't a creature.\nWhenever another creature you own dies, return it to your hand unless target opponent pays 3 life.
+status=needs groovy
