@@ -10,3 +10,4 @@ ability=Flying;\
         Players play with their hands revealed.
 timing=main
 oracle=Flying\nPlayers play with their hands revealed.
+status=not supported: play-revealed

@@ -9,4 +9,4 @@ pt=1/1
 ability=Play with the top card of your library revealed.
 timing=main
 oracle=Play with the top card of your library revealed.
-status=not supported: lib-top-revealed
+status=not supported: play-revealed

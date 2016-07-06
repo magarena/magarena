@@ -9,3 +9,4 @@ ability=Play with your hand revealed.;\
         Whenever a creature is put into your graveyard from the battlefield, return it to your hand.
 timing=enchantment
 oracle=Play with your hand revealed.\nIf you would draw a card, reveal the top card of your library instead. If it's a creature card, put it into your graveyard. Otherwise, draw a card.\nWhenever a creature is put into your graveyard from the battlefield, return it to your hand.
+status=not supported: play-revealed

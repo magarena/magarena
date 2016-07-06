@@ -11,4 +11,4 @@ ability=You may play an additional land on each of your turns.;\
         You may play the top card of your library if it's a land card.
 timing=main
 oracle=You may play an additional land on each of your turns.\nPlay with the top card of your library revealed.\nYou may play the top card of your library if it's a land card.
-status=not supported: lib-top-revealed
+status=not supported: play-revealed

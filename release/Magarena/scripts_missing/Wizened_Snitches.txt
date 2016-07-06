@@ -10,3 +10,4 @@ ability=Flying;\
         Players play with the top card of their libraries revealed.
 timing=main
 oracle=Flying\nPlayers play with the top card of their libraries revealed.
+status=not supported: play-revealed

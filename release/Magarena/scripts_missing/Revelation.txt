@@ -7,3 +7,4 @@ cost={G}
 ability=Players play with their hands revealed.
 timing=enchantment
 oracle=Players play with their hands revealed.
+status=not supported: play-revealed

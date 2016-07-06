@@ -11,4 +11,4 @@ ability=Play with the top card of your library revealed.;\
         Whenever a land enters the battlefield under your control, you gain 1 life.
 timing=main
 oracle=Play with the top card of your library revealed.\nYou may play the top card of your library if it's a land card.\nWhenever a land enters the battlefield under your control, you gain 1 life.
-status=not supported: lib-top-revealed
+status=not supported: play-revealed
