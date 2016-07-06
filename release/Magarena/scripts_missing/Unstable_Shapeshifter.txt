@@ -9,3 +9,4 @@ pt=0/1
 ability=Whenever another creature enters the battlefield, SN becomes a copy of that creature and gains this ability.
 timing=main
 oracle=Whenever another creature enters the battlefield, Unstable Shapeshifter becomes a copy of that creature and gains this ability.
+status=not supported: becomes-copy

@@ -7,3 +7,4 @@ cost={1}{G}{U}
 effect=Choose a nonlegendary creature on the battlefield. Target creature becomes a copy of that creature until end of turn.
 timing=removal
 oracle=Choose a nonlegendary creature on the battlefield. Target creature becomes a copy of that creature until end of turn.
+status=not supported: becomes-copy

@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nWhen Infinite Reflection enters the battlefield attached to a creature, each other nontoken creature you control becomes a copy of that creature.\nNontoken creatures you control enter the battlefield as a copy of enchanted creature.
+status=not supported: becomes-copy

@@ -10,3 +10,4 @@ ability=Flying;\
         {2}: Search your library for a Dragon permanent card and put it into your graveyard. If you do, SN becomes a copy of that card until end of turn. Then shuffle your library.
 timing=main
 oracle=Flying\n{2}: Search your library for a Dragon permanent card and put it into your graveyard. If you do, Scion of the Ur-Dragon becomes a copy of that card until end of turn. Then shuffle your library.
+status=not supported: becomes-copy

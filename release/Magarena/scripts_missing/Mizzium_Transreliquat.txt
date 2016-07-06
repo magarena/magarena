@@ -8,3 +8,4 @@ ability={3}: SN becomes a copy of target artifact until end of turn.;\
         {1}{U}{R}: SN becomes a copy of target artifact and gains this ability.
 timing=artifact
 oracle={3}: Mizzium Transreliquat becomes a copy of target artifact until end of turn.\n{1}{U}{R}: Mizzium Transreliquat becomes a copy of target artifact and gains this ability.
+status=not supported: becomes-copy

@@ -10,3 +10,4 @@ ability=Hexproof;\
         Whenever a creature card is put into an opponent's graveyard from anywhere, you may have SN become a copy of that card except its name is still SN, it's legendary in addition to its other types, and it gains hexproof and this ability.
 timing=main
 oracle=Hexproof\nWhenever a creature card is put into an opponent's graveyard from anywhere, you may have Lazav, Dimir Mastermind become a copy of that card except its name is still Lazav, Dimir Mastermind, it's legendary in addition to its other types, and it gains hexproof and this ability.
+status=not supported: becomes-copy

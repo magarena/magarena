@@ -9,3 +9,4 @@ pt=0/2
 ability={1}{U}{B}: Exile target creature card from a graveyard. SN becomes a copy of that card and gains this ability.
 timing=main
 oracle={1}{U}{B}: Exile target creature card from a graveyard. Dimir Doppelganger becomes a copy of that card and gains this ability.
+status=not supported: becomes-copy

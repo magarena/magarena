@@ -9,3 +9,4 @@ pt=1/1
 ability=Whenever you cast a spell that targets SN, you may have SN become a copy of target creature and gain this ability.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Artisan of Forms, you may have Artisan of Forms become a copy of target creature and gain this ability.
+status=not supported: becomes-copy

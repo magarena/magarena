@@ -9,3 +9,4 @@ pt=1/2
 ability=Whenever a creature dies, you may pay {1}. If you do, SN becomes a copy of that creature and gains this ability.
 timing=main
 oracle=Whenever a creature dies, you may pay {1}. If you do, Cemetery Puca becomes a copy of that creature and gains this ability.
+status=not supported: becomes-copy

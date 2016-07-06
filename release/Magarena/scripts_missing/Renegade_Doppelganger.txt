@@ -9,3 +9,4 @@ pt=0/1
 ability=Whenever another creature enters the battlefield under your control, you may have SN become a copy of that creature until end of turn.
 timing=main
 oracle=Whenever another creature enters the battlefield under your control, you may have Renegade Doppelganger become a copy of that creature until end of turn.
+status=not supported: becomes-copy

@@ -9,3 +9,4 @@ pt=2/2
 ability=At the beginning of your upkeep, you may have SN become a copy of another target creature. If you do, SN gains this ability.
 timing=main
 oracle=At the beginning of your upkeep, you may have Cryptoplasm become a copy of another target creature. If you do, Cryptoplasm gains this ability.
+status=not supported: becomes-copy
