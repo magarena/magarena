@@ -7,7 +7,7 @@ subtype=Skeleton
 cost={B}
 pt=0/1
 timing=main
-ability=kicker {3};\
+ability=Kicker {3};\
         {B}: Regenerate SN.
 requires_groovy_code=Ardent Soldier
 oracle=Kicker {3}\n{B}: Regenerate Urborg Skeleton.\nIf Urborg Skeleton was kicked, it enters the battlefield with a +1/+1 counter on it.

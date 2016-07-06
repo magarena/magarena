@@ -6,7 +6,7 @@ type=Creature
 subtype=Centaur,Spirit
 cost={2}{G}{G}
 pt=2/0
-ability=protection from black;\
+ability=Protection from black;\
         SN enters the battlefield with three +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad

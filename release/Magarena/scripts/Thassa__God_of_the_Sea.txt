@@ -6,7 +6,7 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={2}{U}
 pt=5/5
-ability=indestructible;\
+ability=Indestructible;\
         At the beginning of your upkeep, scry 1.;\
         {1}{U}: Target creature you control can't be blocked this turn.
 timing=main

@@ -6,7 +6,8 @@ type=Creature
 subtype=Dragon
 cost={3}{R}{R}{R}
 pt=5/5
-ability=Flying;{1}{R}: SN gets +1/+0 until end of turn.
+ability=Flying;\
+        {1}{R}: SN gets +1/+0 until end of turn.
 timing=main
 requires_groovy_code
 oracle=Flying\n{1}{R}: Mordant Dragon gets +1/+0 until end of turn.\nWhenever Mordant Dragon deals combat damage to a player, you may have it deal that much damage to target creature that player controls.

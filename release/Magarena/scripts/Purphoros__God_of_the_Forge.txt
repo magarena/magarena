@@ -6,7 +6,7 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={3}{R}
 pt=6/5
-ability=indestructible;\
+ability=Indestructible;\
         Whenever another creature enters the battlefield under your control, SN deals 2 damage to each opponent.;\
         {2}{R}: Creatures you control get +1/+0 until end of turn.
 timing=main

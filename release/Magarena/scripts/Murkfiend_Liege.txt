@@ -6,8 +6,8 @@ type=Creature
 subtype=Horror
 cost={2}{G/U}{G/U}{G/U}
 pt=4/4
-ability=other green creatures you control get +1/+1;\
-        other blue creatures you control get +1/+1
+ability=Other green creatures you control get +1/+1;\
+        Other blue creatures you control get +1/+1
 static=player
 timing=main
 requires_groovy_code
