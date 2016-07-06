@@ -2481,6 +2481,7 @@ public class MagicTargetFilterFactory {
         add("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
         add("creature without flying", CREATURE_WITHOUT_FLYING);
         add("creature without defender", CREATURE_WITHOUT_DEFENDER);
+        add("creature without shadow", CREATURE_WITHOUT_SHADOW);
         add("creature with defender", CREATURE_WITH_DEFENDER);
         add("creature with a morph ability", CREATURE_WITH_MORPH_ABILITY);
         add("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
