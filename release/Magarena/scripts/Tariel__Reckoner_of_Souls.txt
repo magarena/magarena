@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Angel
 cost={4}{W}{B}{R}
 pt=4/7
-ability=Flying;vigilance
+ability=Flying, vigilance
 timing=main
 requires_groovy_code
 oracle=Flying, vigilance\n{T}: Choose a creature card at random from target opponent's graveyard. Put that card onto the battlefield under your control.

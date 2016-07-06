@@ -6,7 +6,8 @@ type=Creature
 subtype=Elemental
 cost={3}{R}
 pt=5/3
-ability=Trample;haste;kicker {R}
+ability=Kicker {R};\
+        Trample, haste
 timing=fmain
 requires_groovy_code
 oracle=Kicker {R}\nTrample, haste\nAt the beginning of the end step, sacrifice Skizzik unless it was kicked.

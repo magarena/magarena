@@ -6,7 +6,8 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={3}{U}
 pt=2/1
-ability=protection from red;elemental creatures you control get +1/+1
+ability=Protection from red;\
+        Elemental creatures you control get +1/+1.
 timing=main
 requires_groovy_code
 oracle=Protection from red\nElemental creatures you control get +1/+1.\nWhen Master of Waves enters the battlefield, put a number of 1/0 blue Elemental creature tokens onto the battlefield equal to your devotion to blue.

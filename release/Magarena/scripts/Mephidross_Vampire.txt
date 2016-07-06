@@ -6,7 +6,8 @@ type=Creature
 subtype=Vampire
 cost={4}{B}{B}
 pt=3/4
-ability=Flying;creatures you control have "Whenever SN deals damage to a creature, put a +1/+1 counter on SN."
+ability=Flying;\
+        Creatures you control have "Whenever this creature deals damage to a creature, put a +1/+1 counter on this creature."
 timing=main
 requires_groovy_code
 oracle=Flying\nEach creature you control is a Vampire in addition to its other creature types and has "Whenever this creature deals damage to a creature, put a +1/+1 counter on this creature."

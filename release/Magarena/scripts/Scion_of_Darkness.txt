@@ -7,6 +7,7 @@ subtype=Avatar
 cost={5}{B}{B}{B}
 pt=6/6
 timing=main
-ability=Trample;cycling {3}
+ability=Trample;\
+        Cycling {3}
 requires_groovy_code
 oracle=Trample\nWhenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.\nCycling {3}

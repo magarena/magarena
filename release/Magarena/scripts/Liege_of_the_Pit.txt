@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={5}{B}{B}{B}
 pt=7/7
-ability=Flying; trample;\
+ability=Flying, trample;\
         Morph {B}{B}{B}{B}
 timing=main
 requires_groovy_code=Lord of the Pit

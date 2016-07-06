@@ -6,7 +6,8 @@ type=Creature
 subtype=Spirit
 cost={5}{W}{W}
 pt=3/5
-ability=Flying;soulshift 6
+ability=Flying;\
+        Soulshift 6
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever Kami of the Honored Dead is dealt damage, you gain that much life.\nSoulshift 6

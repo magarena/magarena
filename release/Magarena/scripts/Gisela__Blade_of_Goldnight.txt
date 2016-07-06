@@ -6,7 +6,7 @@ rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={4}{R}{W}{W}
-ability=Flying;first strike
+ability=Flying, first strike
 pt=5/5
 timing=main
 requires_groovy_code

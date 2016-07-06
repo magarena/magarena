@@ -6,7 +6,7 @@ type=Creature
 subtype=Avatar,Praetor
 cost={4}{B}{B}
 pt=5/5
-ability=First strike; trample;\
+ability=First strike, trample;\
         At the beginning of your upkeep, put a -2/-2 counter on SN.
 timing=main
 requires_groovy_code

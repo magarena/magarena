@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={2}{B}{R}
 pt=4/1
-ability=Flying;haste
+ability=Flying, haste
 timing=fmain
 requires_groovy_code
 oracle=Flying, haste\nSacrifice a creature: Falkenrath Aristocrat gains indestructible until end of turn. If the sacrificed creature was a Human, put a +1/+1 counter on Falkenrath Aristocrat.

@@ -6,7 +6,8 @@ type=Artifact,Creature
 subtype=Horror
 cost={6}
 pt=0/0
-ability=fear;modular 3
+ability=Fear;\
+        Modular 3
 timing=main
 requires_groovy_code
 oracle=Fear\nAt the beginning of your upkeep, you may move a +1/+1 counter from target creature onto Arcbound Fiend.\nModular 3

@@ -6,7 +6,8 @@ type=Creature
 subtype=Sphinx
 cost={3}{U}{U}
 pt=3/5
-ability=Flying;kicker {1}{U}
+ability=Kicker {1}{U};\
+        Flying
 timing=main
 requires_groovy_code
 oracle=Kicker {1}{U}\nFlying\nWhen Sphinx of Lost Truths enters the battlefield, draw three cards. Then if it wasn't kicked, discard three cards.

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Demon
 cost={2}{B}{B}{R}{R}
 pt=7/6
-ability=Flying; trample
+ability=Flying, trample
 timing=main
 requires_groovy_code
 oracle=Flying, trample\nWhenever Rakdos the Defiler attacks, sacrifice half the non-Demon permanents you control, rounded up.\nWhenever Rakdos deals combat damage to a player, that player sacrifices half the non-Demon permanents he or she controls, rounded up.

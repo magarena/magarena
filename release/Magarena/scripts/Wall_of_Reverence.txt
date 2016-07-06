@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit,Wall
 cost={3}{W}
 pt=1/6
-ability=defender;flying
+ability=Defender, flying
 timing=smain
 requires_groovy_code
 oracle=Defender, flying\nAt the beginning of your end step, you may gain life equal to the power of target creature you control.

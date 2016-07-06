@@ -6,7 +6,8 @@ type=Creature
 subtype=Elemental,Knight
 cost={3}{B/R}{B/R}
 pt=3/3
-ability=Flying;wither
+ability=Flying;\
+        Wither
 static=opponent
 timing=fmain
 requires_groovy_code

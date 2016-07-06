@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 color=b
 pt=9/9
-ability=Flying;trample
+ability=Flying, trample
 requires_groovy_code
 transform=Ravenous Demon
 timing=main

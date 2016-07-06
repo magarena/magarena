@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={1}{U}
 pt=0/2
-ability=defender;flying
+ability=Defender, flying
 timing=main
 requires_groovy_code
 oracle=Defender, flying\nPrevent all combat damage that would be dealt to and dealt by Fog Bank.

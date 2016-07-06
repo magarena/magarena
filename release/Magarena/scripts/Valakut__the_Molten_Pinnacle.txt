@@ -4,7 +4,8 @@ value=4.073
 rarity=R
 type=Land
 mana=r3
-ability={T}: Add {R} to your mana pool.;SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} to your mana pool.
 timing=tapland
 requires_groovy_code
 oracle=Valakut, the Molten Pinnacle enters the battlefield tapped.\nWhenever a Mountain enters the battlefield under your control, if you control at least five other Mountains, you may have Valakut, the Molten Pinnacle deal 3 damage to target creature or player.\n{T}: Add {R} to your mana pool.

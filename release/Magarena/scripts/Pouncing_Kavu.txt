@@ -6,7 +6,8 @@ type=Creature
 subtype=Kavu
 cost={1}{R}
 pt=1/1
-ability=first strike;kicker {2}{R}
+ability=Kicker {2}{R};\
+        First strike
 timing=main
 requires_groovy_code
 oracle=Kicker {2}{R}\nFirst strike\nIf Pouncing Kavu was kicked, it enters the battlefield with two +1/+1 counters on it and with haste.

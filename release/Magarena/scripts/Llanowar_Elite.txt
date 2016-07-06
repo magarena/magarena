@@ -6,7 +6,8 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
-ability=Trample;kicker {8}
+ability=Kicker {8};\
+        Trample
 timing=main
 requires_groovy_code
 oracle=Kicker {8}\nTrample\nIf Llanowar Elite was kicked, it enters the battlefield with five +1/+1 counters on it.

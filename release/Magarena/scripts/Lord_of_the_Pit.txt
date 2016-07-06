@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={4}{B}{B}{B}
 pt=7/7
-ability=Flying; trample
+ability=Flying, trample
 timing=main
 requires_groovy_code
 oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a creature other than Lord of the Pit. If you can't, Lord of the Pit deals 7 damage to you.

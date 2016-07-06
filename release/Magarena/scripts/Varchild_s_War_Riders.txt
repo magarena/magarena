@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{R}
 pt=3/4
-ability=Trample; rampage 1
+ability=Trample, rampage 1
 timing=main
 requires_groovy_code
 oracle=Cumulative upkeep—Have an opponent put a 1/1 red Survivor creature token onto the battlefield.\nTrample, rampage 1
