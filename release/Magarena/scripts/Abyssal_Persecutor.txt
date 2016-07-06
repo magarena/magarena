@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={2}{B}{B}
 pt=6/6
-ability=Flying; trample
+ability=Flying, trample
 timing=main
 requires_groovy_code
 oracle=Flying, trample\nYou can't win the game and your opponents can't lose the game.
