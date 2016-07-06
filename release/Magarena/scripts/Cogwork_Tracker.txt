@@ -6,8 +6,6 @@ type=Artifact,Creature
 subtype=Hound,Construct
 cost={4}
 pt=4/4
-ability=Reveal SN as you draft it and note the player who passed it to you.;\
-        SN attacks each turn if able.;\
-        SN attacks a player you noted for cards named Cogwork Tracker each turn if able.
+ability=SN attacks each turn if able.
 timing=main
 oracle=Reveal Cogwork Tracker as you draft it and note the player who passed it to you.\nCogwork Tracker attacks each turn if able.\nCogwork Tracker attacks a player you noted for cards named Cogwork Tracker each turn if able.
