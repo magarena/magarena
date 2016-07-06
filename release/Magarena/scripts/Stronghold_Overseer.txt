@@ -6,7 +6,8 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}{B}
 pt=5/5
-ability=shadow;flying
+ability=Flying;\
+        Shadow;\
+        {B}{B}: Creatures with shadow get +1/+0 until end of turn~and creatures without shadow get -1/-0 until end of turn.
 timing=fmain
-requires_groovy_code
 oracle=Flying\nShadow\n{B}{B}: Creatures with shadow get +1/+0 until end of turn and creatures without shadow get -1/-0 until end of turn.
