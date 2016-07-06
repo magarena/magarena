@@ -11,3 +11,4 @@ ability=Dethrone;\
         Whenever a creature you control with a +1/+1 counter on it dies, return that card to the battlefield under your control at the beginning of the next end step.
 timing=main
 oracle=Dethrone\nOther creatures you control have dethrone.\nWhenever a creature you control with a +1/+1 counter on it dies, return that card to the battlefield under your control at the beginning of the next end step.
+status=needs groovy

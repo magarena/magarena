@@ -10,3 +10,4 @@ ability=Trample;\
         At the beginning of your end step, return to your hand all creature cards in your graveyard that were put there from the battlefield this turn.
 timing=main
 oracle=Trample\nAt the beginning of your end step, return to your hand all creature cards in your graveyard that were put there from the battlefield this turn.
+status=not supported: no-info

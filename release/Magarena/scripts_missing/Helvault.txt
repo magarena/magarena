@@ -9,3 +9,4 @@ ability={1}, {T}: Exile target creature you control.;\
         When SN is put into a graveyard from the battlefield, return all cards exiled with it to the battlefield under their owners' control.
 timing=artifact
 oracle={1}, {T}: Exile target creature you control.\n{7}, {T}: Exile target creature you don't control.\nWhen Helvault is put into a graveyard from the battlefield, return all cards exiled with it to the battlefield under their owners' control.
+status=needs groovy

@@ -10,3 +10,4 @@ ability={T}: Target player exiles a card from his or her graveyard.;\
         Whenever you cast a black spell, you may untap SN.
 timing=main
 oracle={T}: Target player exiles a card from his or her graveyard.\nWhenever you cast a black spell, you may untap Merrow Bonegnawer.
+status=needs groovy

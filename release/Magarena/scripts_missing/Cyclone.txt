@@ -7,3 +7,4 @@ cost={2}{G}{G}
 ability=At the beginning of your upkeep, put a wind counter on SN, then sacrifice SN unless you pay {G} for each wind counter on it. If you pay, SN deals damage equal to the number of wind counters on it to each creature and each player.
 timing=enchantment
 oracle=At the beginning of your upkeep, put a wind counter on Cyclone, then sacrifice Cyclone unless you pay {G} for each wind counter on it. If you pay, Cyclone deals damage equal to the number of wind counters on it to each creature and each player.
+status=needs groovy

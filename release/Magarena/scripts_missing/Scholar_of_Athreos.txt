@@ -9,3 +9,4 @@ pt=1/4
 ability={2}{B}: Each opponent loses 1 life. You gain life equal to the life lost this way.
 timing=main
 oracle={2}{B}: Each opponent loses 1 life. You gain life equal to the life lost this way.
+status=needs groovy

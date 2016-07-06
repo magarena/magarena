@@ -9,3 +9,4 @@ pt=4/4
 ability={2}, Discard a card: Put a +1/+1 counter on SN or SN gains flying, first strike, or trample.
 timing=main
 oracle={2}, Discard a card: Put a +1/+1 counter on Flowstone Sculpture or Flowstone Sculpture gains flying, first strike, or trample.
+status=needs groovy

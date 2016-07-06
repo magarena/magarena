@@ -11,3 +11,4 @@ ability=Bestow {5}{B};\
         Enchanted creature gets +3/+3.
 timing=main
 oracle=Bestow {5}{B}\nDiscard a creature card: Erebos's Emissary gets +2/+2 until end of turn. If Erebos's Emissary is an Aura, enchanted creature gets +2/+2 until end of turn instead.\nEnchanted creature gets +3/+3.
+status=needs groovy

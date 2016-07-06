@@ -11,3 +11,4 @@ ability=Enchant non-Wall creature;\
 timing=aura
 enchant=default,non-wall creature
 oracle=Enchant non-Wall creature\nEnchanted creature gets +1/+0.\nAt the beginning of your upkeep, put a +1/+0 counter on enchanted creature. If that creature has three or more +1/+0 counters on it, it deals damage equal to its power to its controller, then destroy that creature and it can't be regenerated.
+status=needs groovy

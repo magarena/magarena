@@ -8,3 +8,4 @@ cost={X}{1}{U}{U}
 effect=Gain control of target creature with converted mana cost X or less.
 timing=removal
 oracle=Gain control of target creature with converted mana cost X or less.
+status=needs groovy

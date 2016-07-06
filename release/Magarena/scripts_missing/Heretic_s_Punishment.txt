@@ -7,3 +7,4 @@ cost={4}{R}
 ability={3}{R}: Choose target creature or player, then put the top three cards of your library into your graveyard.  SN deals damage to that creature or player equal to the highest converted mana cost among those cards.
 timing=enchantment
 oracle={3}{R}: Choose target creature or player, then put the top three cards of your library into your graveyard.  Heretic's Punishment deals damage to that creature or player equal to the highest converted mana cost among those cards.
+status=needs groovy

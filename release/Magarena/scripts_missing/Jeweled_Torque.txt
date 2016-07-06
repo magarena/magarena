@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a color.;\
         Whenever a player casts a spell of the chosen color, you may pay {2}. If you do, you gain 2 life.
 timing=artifact
 oracle=As Jeweled Torque enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, you may pay {2}. If you do, you gain 2 life.
+status=needs groovy

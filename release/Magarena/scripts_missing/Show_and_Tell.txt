@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Each player may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield.
 timing=main
 oracle=Each player may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield.
+status=needs groovy

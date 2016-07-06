@@ -9,3 +9,4 @@ pt=7/10
 ability=When SN enters the battlefield or leaves the battlefield, choose a land of each basic land type, then destroy those lands.
 timing=main
 oracle=When Sundering Titan enters the battlefield or leaves the battlefield, choose a land of each basic land type, then destroy those lands.
+status=needs groovy

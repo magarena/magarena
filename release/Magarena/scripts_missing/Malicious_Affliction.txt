@@ -7,3 +7,4 @@ cost={B}{B}
 effect=When you cast SN, if a creature died this turn, you may copy SN and may choose a new target for the copy.~Destroy target nonblack creature.
 timing=removal
 oracle=Morbid — When you cast Malicious Affliction, if a creature died this turn, you may copy Malicious Affliction and may choose a new target for the copy.\nDestroy target nonblack creature.
+status=needs groovy

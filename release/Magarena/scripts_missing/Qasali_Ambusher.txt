@@ -10,3 +10,4 @@ ability=Reach;\
         If a creature is attacking you and you control a Forest and a Plains, you may cast SN without paying its mana cost and as though it had flash.
 timing=main
 oracle=Reach\nIf a creature is attacking you and you control a Forest and a Plains, you may cast Qasali Ambusher without paying its mana cost and as though it had flash.
+status=needs groovy

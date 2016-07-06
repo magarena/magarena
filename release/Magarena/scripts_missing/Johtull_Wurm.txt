@@ -9,3 +9,4 @@ pt=6/6
 ability=Whenever SN becomes blocked, it gets -2/-1 until end of turn for each creature blocking it beyond the first.
 timing=main
 oracle=Whenever Johtull Wurm becomes blocked, it gets -2/-1 until end of turn for each creature blocking it beyond the first.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=If equipped creature would deal combat damage, it deals double that dama
         Equip {2}
 timing=equipment
 oracle=If equipped creature would deal combat damage, it deals double that damage instead.\nIf another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead.\nEquip {2}
+status=needs groovy
