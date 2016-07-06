@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Choose a color. Target player reveals his or her hand and you choose a card of that color from it. That player discards that card.
 timing=main
 oracle=Choose a color. Target player reveals his or her hand and you choose a card of that color from it. That player discards that card.
+status=not supported: reveal-hand

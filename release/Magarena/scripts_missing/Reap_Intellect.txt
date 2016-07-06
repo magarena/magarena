@@ -7,3 +7,4 @@ cost={X}{2}{U}{B}
 effect=Target opponent reveals his or her hand. You choose up to X nonland cards from it and exile them. For each card exiled this way, search that player's graveyard, hand, and library for any number of cards with the same name as that card and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Target opponent reveals his or her hand. You choose up to X nonland cards from it and exile them. For each card exiled this way, search that player's graveyard, hand, and library for any number of cards with the same name as that card and exile them. Then that player shuffles his or her library.
+status=not supported: reveal-hand

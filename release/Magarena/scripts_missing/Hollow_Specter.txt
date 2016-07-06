@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {X}. If you do, that player reveals X cards from his or her hand and you choose one of them. That player discards that card.
 timing=main
 oracle=Flying\nWhenever Hollow Specter deals combat damage to a player, you may pay {X}. If you do, that player reveals X cards from his or her hand and you choose one of them. That player discards that card.
+status=not supported: reveal-hand

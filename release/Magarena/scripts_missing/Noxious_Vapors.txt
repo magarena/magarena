@@ -7,3 +7,4 @@ cost={1}{B}{B}
 effect=Each player reveals his or her hand and chooses one card of each color from it, then discards all other nonland cards.
 timing=main
 oracle=Each player reveals his or her hand and chooses one card of each color from it, then discards all other nonland cards.
+status=not supported: reveal-hand

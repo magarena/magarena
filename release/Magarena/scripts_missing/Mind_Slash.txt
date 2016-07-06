@@ -7,3 +7,4 @@ cost={1}{B}{B}
 ability={B}, Sacrifice a creature: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
 timing=enchantment
 oracle={B}, Sacrifice a creature: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
+status=not supported: reveal-hand

@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Target player reveals his or her hand. You choose an instant or sorcery card from it and exile that card. You may cast that card for as long as it remains exiled. At the beginning of the next end step, if you haven't cast the card, return it to its owner's hand.
 timing=main
 oracle=Target player reveals his or her hand. You choose an instant or sorcery card from it and exile that card. You may cast that card for as long as it remains exiled. At the beginning of the next end step, if you haven't cast the card, return it to its owner's hand.
+status=not supported: reveal-hand

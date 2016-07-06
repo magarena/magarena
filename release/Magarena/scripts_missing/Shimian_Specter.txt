@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player reveals his or her hand. You choose a nonland card from it. Search that player's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Flying\nWhenever Shimian Specter deals combat damage to a player, that player reveals his or her hand. You choose a nonland card from it. Search that player's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.
+status=not supported: reveal-hand

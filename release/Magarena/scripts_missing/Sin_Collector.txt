@@ -9,3 +9,4 @@ pt=2/1
 ability=When SN enters the battlefield, target opponent reveals his or her hand. You choose an instant or sorcery card from it and exile that card.
 timing=main
 oracle=When Sin Collector enters the battlefield, target opponent reveals his or her hand. You choose an instant or sorcery card from it and exile that card.
+status=not supported: reveal-hand

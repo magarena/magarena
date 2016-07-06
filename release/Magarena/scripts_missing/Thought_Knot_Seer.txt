@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, target opponent reveals his or her hand.
         When SN leaves the battlefield, target opponent draws a card.
 timing=main
 oracle=When Thought-Knot Seer enters the battlefield, target opponent reveals his or her hand. You choose a nonland card from it and exile that card.\nWhen Thought-Knot Seer leaves the battlefield, target opponent draws a card.
+status=not supported: reveal-hand

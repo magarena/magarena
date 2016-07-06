@@ -11,3 +11,4 @@ ability=Flying;\
         Soulshift 4
 timing=main
 oracle=Flying\n{1}, Sacrifice a Spirit: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.\nSoulshift 4
+status=not supported: reveal-hand

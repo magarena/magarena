@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card until SN leaves the battlefield.
 timing=main
 oracle=When Brain Maggot enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card until Brain Maggot leaves the battlefield.
+status=not supported: reveal-hand

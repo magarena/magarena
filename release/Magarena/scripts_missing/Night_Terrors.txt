@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Target player reveals his or her hand. You choose a nonland card from it. Exile that card.
 timing=main
 oracle=Target player reveals his or her hand. You choose a nonland card from it. Exile that card.
+status=not supported: reveal-hand

@@ -7,3 +7,4 @@ cost={R}{W}{B}
 effect=Choose one — (1) SN deals 4 damage to target creature. (2) Put two 1/1 white Warrior creature tokens onto the battlefield. They gain first strike until end of turn. (3) Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.
 timing=removal
 oracle=Choose one —\n• Mardu Charm deals 4 damage to target creature.\n• Put two 1/1 white Warrior creature tokens onto the battlefield. They gain first strike until end of turn.\n• Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.
+status=not supported: reveal-hand

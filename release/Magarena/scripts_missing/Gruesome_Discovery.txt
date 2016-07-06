@@ -7,3 +7,4 @@ cost={2}{B}{B}
 effect=Target player discards two cards.~If a creature died this turn, instead that player reveals his or her hand, you choose two cards from it, then that player discards those cards.
 timing=main
 oracle=Target player discards two cards.\nMorbid — If a creature died this turn, instead that player reveals his or her hand, you choose two cards from it, then that player discards those cards.
+status=not supported: reveal-hand

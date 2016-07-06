@@ -9,3 +9,4 @@ ability=Devoid
 effect=Target player reveals his or her hand. You choose a card from it with converted mana cost 3 or greater and exile that card.
 timing=main
 oracle=Devoid\nTarget player reveals his or her hand. You choose a card from it with converted mana cost 3 or greater and exile that card.
+status=not supported: reveal-hand

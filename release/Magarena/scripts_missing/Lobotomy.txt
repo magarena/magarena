@@ -7,3 +7,4 @@ cost={2}{U}{B}
 effect=Target player reveals his or her hand, then you choose a card other than a basic land card from it. Search that player's graveyard, hand, and library for all cards with the same name as the chosen card and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Target player reveals his or her hand, then you choose a card other than a basic land card from it. Search that player's graveyard, hand, and library for all cards with the same name as the chosen card and exile them. Then that player shuffles his or her library.
+status=not supported: reveal-hand

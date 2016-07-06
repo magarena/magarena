@@ -7,3 +7,4 @@ cost={B}
 effect=Target player reveals a number of cards from his or her hand equal to the number of Swamps you control. You choose one of them. That player discards that card.
 timing=main
 oracle=Target player reveals a number of cards from his or her hand equal to the number of Swamps you control. You choose one of them. That player discards that card.
+status=not supported: reveal-hand

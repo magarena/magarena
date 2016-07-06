@@ -7,3 +7,4 @@ cost={B}
 effect=Target player reveals three cards from his or her hand and you choose one of them. That player discards that card.
 timing=main
 oracle=Target player reveals three cards from his or her hand and you choose one of them. That player discards that card.
+status=not supported: reveal-hand

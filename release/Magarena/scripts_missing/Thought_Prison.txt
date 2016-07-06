@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, you may have target player reveal his or
         Whenever a player casts a spell that shares a color or converted mana cost with the exiled card, SN deals 2 damage to that player.
 timing=artifact
 oracle=Imprint — When Thought Prison enters the battlefield, you may have target player reveal his or her hand. If you do, choose a nonland card from it and exile that card.\nWhenever a player casts a spell that shares a color or converted mana cost with the exiled card, Thought Prison deals 2 damage to that player.
+status=not supported: reveal-hand

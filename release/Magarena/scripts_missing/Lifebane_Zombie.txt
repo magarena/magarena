@@ -10,3 +10,4 @@ ability=Intimidate;\
         When SN enters the battlefield, target opponent reveals his or her hand. You choose a green or white creature card from it and exile that card.
 timing=main
 oracle=Intimidate\nWhen Lifebane Zombie enters the battlefield, target opponent reveals his or her hand. You choose a green or white creature card from it and exile that card.
+status=not supported: reveal-hand
