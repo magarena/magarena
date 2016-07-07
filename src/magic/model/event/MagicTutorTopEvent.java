@@ -61,7 +61,7 @@ public class MagicTutorTopEvent {
             new MagicFromCardListChoice(choiceList, topCards, 1, true),
             MagicGraveyardTargetPicker.ReturnToHand,
             topCards,
-            RevealHandBottom,
+            action,
             ""
         );
     }
