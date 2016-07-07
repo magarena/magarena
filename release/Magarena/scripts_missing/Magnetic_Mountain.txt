@@ -8,3 +8,4 @@ ability=Blue creatures don't untap during their controllers' untap steps.;\
         At the beginning of each player's upkeep, that player may choose any number of tapped blue creatures he or she controls and pay {4} for each creature chosen this way. If the player does, untap those creatures.
 timing=enchantment
 oracle=Blue creatures don't untap during their controllers' untap steps.\nAt the beginning of each player's upkeep, that player may choose any number of tapped blue creatures he or she controls and pay {4} for each creature chosen this way. If the player does, untap those creatures.
+status=not supported: any-number-of

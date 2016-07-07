@@ -11,3 +11,4 @@ ability=As SN enters the battlefield, choose a number between 0 and 7.;\
         SN's power is equal to the last chosen number and its toughness is equal to 7 minus that number.
 timing=main
 oracle=As Shapeshifter enters the battlefield, choose a number between 0 and 7.\nAt the beginning of your upkeep, you may choose a number between 0 and 7.\nShapeshifter's power is equal to the last chosen number and its toughness is equal to 7 minus that number.
+status=not supported: choose-number

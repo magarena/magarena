@@ -9,3 +9,4 @@ pt=5/4
 ability=Whenever a permanent you control transforms into a non-Human creature, put a 2/2 green Wolf creature token onto the battlefield.
 timing=main
 oracle=Whenever a permanent you control transforms into a non-Human creature, put a 2/2 green Wolf creature token onto the battlefield.
+status=needs groovy

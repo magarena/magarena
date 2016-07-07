@@ -9,3 +9,4 @@ ability=Devoid
 effect=Counter target creature spell with converted mana cost 4 or less. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
 timing=counter
 oracle=Devoid\nCounter target creature spell with converted mana cost 4 or less. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+status=needs groovy

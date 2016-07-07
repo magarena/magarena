@@ -10,3 +10,4 @@ ability=Trample, haste;\
         When SN enters the battlefield, each player secretly chooses a number. Then those numbers are revealed. Each player with the highest number loses that much life. If you are one of those players, put two +1/+1 counters on SN.
 timing=main
 oracle=Trample, haste\nWhen Menacing Ogre enters the battlefield, each player secretly chooses a number. Then those numbers are revealed. Each player with the highest number loses that much life. If you are one of those players, put two +1/+1 counters on Menacing Ogre.
+status=not supported: choose-number

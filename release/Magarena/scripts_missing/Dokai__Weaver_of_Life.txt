@@ -11,3 +11,4 @@ flip=Budoka Gardener
 timing=main
 hidden
 oracle={4}{G}{G}, {T}: Put an X/X green Elemental creature token onto the battlefield, where X is the number of lands you control.
+status=needs groovy

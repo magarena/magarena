@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has protection from red. This effect doesn't remove Red Ward.
+status=not supported: doesnt-remove

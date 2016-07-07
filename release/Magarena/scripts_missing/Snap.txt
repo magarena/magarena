@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Return target creature to its owner's hand. Untap up to two lands.
 timing=removal
 oracle=Return target creature to its owner's hand. Untap up to two lands.
+status=not supported: untap-up-to

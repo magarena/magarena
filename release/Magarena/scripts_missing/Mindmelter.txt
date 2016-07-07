@@ -12,3 +12,4 @@ ability=Devoid;\
         {3}{C}: Target opponent exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle=Devoid\nMindmelter can't be blocked.\n{3}{C}: Target opponent exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.
+status=needs groovy

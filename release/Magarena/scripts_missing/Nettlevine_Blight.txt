@@ -10,3 +10,4 @@ ability=Enchant creature or land;\
 timing=aura
 enchant=default,creature or land
 oracle=Enchant creature or land\nEnchanted permanent has "At the beginning of your end step, sacrifice this permanent and attach Nettlevine Blight to a creature or land you control."
+status=needs groovy

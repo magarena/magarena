@@ -12,3 +12,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nAs Floating Shield enters the battlefield, choose a color.\nEnchanted creature has protection from the chosen color. This effect doesn't remove Floating Shield.\nSacrifice Floating Shield: Target creature gains protection from the chosen color until end of turn.
+status=not supported: doesnt-remove

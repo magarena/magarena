@@ -10,3 +10,4 @@ ability=Enchant creature you control;\
 timing=aura
 enchant=default,creature you control
 oracle=Enchant creature you control\n{R}, Sacrifice enchanted creature: Bloodfire Infusion deals damage equal to the sacrificed creature's power to each creature.
+status=needs groovy

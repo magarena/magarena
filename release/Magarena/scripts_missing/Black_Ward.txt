@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has protection from black. This effect doesn't remove Black Ward.
+status=not supported: doesnt-remove

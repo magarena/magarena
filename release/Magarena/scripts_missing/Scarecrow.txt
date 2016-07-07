@@ -9,3 +9,4 @@ pt=2/2
 ability={6}, {T}: Prevent all damage that would be dealt to you this turn by creatures with flying.
 timing=main
 oracle={6}, {T}: Prevent all damage that would be dealt to you this turn by creatures with flying.
+status=needs groovy

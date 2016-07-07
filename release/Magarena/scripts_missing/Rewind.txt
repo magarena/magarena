@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Counter target spell. Untap up to four lands.
 timing=counter
 oracle=Counter target spell. Untap up to four lands.
+status=not supported: untap-up-to

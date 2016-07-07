@@ -9,3 +9,4 @@ pt=3/3
 ability=At the beginning of each end step, if a creature dealt damage by SN this turn died, put that card onto the battlefield under your control. Sacrifice it when you lose control of SN.
 timing=main
 oracle=At the beginning of each end step, if a creature dealt damage by Krovikan Vampire this turn died, put that card onto the battlefield under your control. Sacrifice it when you lose control of Krovikan Vampire.
+status=not supported: damage-by-SN-dies

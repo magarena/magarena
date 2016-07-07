@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has protection from all colors. This effect doesn't remove Auras.
+status=not supported: doesnt-remove

@@ -10,3 +10,4 @@ ability=Trample, haste;\
         Whenever SN deals damage to a player, that player discards all the cards in his or her hand, then draws that many cards.
 timing=main
 oracle=Trample, haste\nWhenever Barbed Shocker deals damage to a player, that player discards all the cards in his or her hand, then draws that many cards.
+status=needs groovy
