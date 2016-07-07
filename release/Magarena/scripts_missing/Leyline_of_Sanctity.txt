@@ -8,3 +8,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         You have hexproof.
 timing=enchantment
 oracle=If Leyline of Sanctity is in your opening hand, you may begin the game with it on the battlefield.\nYou have hexproof.
+status=not supported: opening-hand

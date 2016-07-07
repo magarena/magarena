@@ -7,3 +7,4 @@ ability=As SN enters the battlefield, you may reveal a Faerie card from your han
         {T}: Add {U} or {B} to your mana pool.
 timing=land
 oracle=As Secluded Glen enters the battlefield, you may reveal a Faerie card from your hand. If you don't, Secluded Glen enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.
+status=not supported: reveal-cost

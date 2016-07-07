@@ -7,3 +7,4 @@ cost={2}{U}
 ability={U}: Tap target creature unless its controller pays {1}.
 timing=enchantment
 oracle={U}: Tap target creature unless its controller pays {1}.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Creatures you control get +1/+1 until end of turn.~{W}, Reveal SN from your hand: Target creature gets +1/+1 until end of turn.
 timing=removal
 oracle=Creatures you control get +1/+1 until end of turn.\nForecast — {W}, Reveal Steeling Stance from your hand: Target creature gets +1/+1 until end of turn.
+status=not supported: forecast

@@ -7,3 +7,4 @@ ability=As SN enters the battlefield, you may reveal a Mountain or Forest card f
         {T}: Add {R} or {G} to your mana pool.
 timing=land
 oracle=As Game Trail enters the battlefield, you may reveal a Mountain or Forest card from your hand. If you don't, Game Trail enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.
+status=not supported: reveal-cost

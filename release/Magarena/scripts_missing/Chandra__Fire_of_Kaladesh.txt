@@ -12,3 +12,4 @@ ability=Whenever you cast a red spell, untap SN.;\
 timing=main
 transform=Chandra, Roaring Flame
 oracle=Whenever you cast a red spell, untap Chandra, Fire of Kaladesh.\n{T}: Chandra, Fire of Kaladesh deals 1 damage to target player. If Chandra has dealt 3 or more damage this turn, exile her, then return her to the battlefield transformed under her owner's control.
+status=not supported: no-info

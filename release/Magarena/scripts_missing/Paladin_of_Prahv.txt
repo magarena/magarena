@@ -10,3 +10,4 @@ ability=Whenever SN deals damage, you gain that much life.;\
         {1}{W}, Reveal SN from your hand: Whenever target creature deals damage this turn, you gain that much life.
 timing=main
 oracle=Whenever Paladin of Prahv deals damage, you gain that much life.\nForecast — {1}{W}, Reveal Paladin of Prahv from your hand: Whenever target creature deals damage this turn, you gain that much life.
+status=not supported: forecast

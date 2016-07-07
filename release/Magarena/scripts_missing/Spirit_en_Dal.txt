@@ -10,3 +10,4 @@ ability=Shadow;\
         {1}{W}, Reveal SN from your hand: Target creature gains shadow until end of turn.
 timing=main
 oracle=Shadow\nForecast — {1}{W}, Reveal Spirit en-Dal from your hand: Target creature gains shadow until end of turn.
+status=not supported: forecast

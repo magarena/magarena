@@ -9,3 +9,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         Damage can't be prevented.
 timing=enchantment
 oracle=If Leyline of Punishment is in your opening hand, you may begin the game with it on the battlefield.\nPlayers can't gain life.\nDamage can't be prevented.
+status=not supported: opening-hand

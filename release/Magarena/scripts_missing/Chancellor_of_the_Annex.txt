@@ -11,3 +11,4 @@ ability=You may reveal this card from your opening hand. If you do, when each op
         Whenever an opponent casts a spell, counter it unless that player pays {1}.
 timing=main
 oracle=You may reveal this card from your opening hand. If you do, when each opponent casts his or her first spell of the game, counter that spell unless that player pays {1}.\nFlying\nWhenever an opponent casts a spell, counter it unless that player pays {1}.
+status=not supported: opening-hand

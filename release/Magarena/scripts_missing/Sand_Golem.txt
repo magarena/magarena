@@ -9,3 +9,4 @@ pt=3/3
 ability=When a spell or ability an opponent controls causes you to discard SN, return SN from your graveyard to the battlefield with a +1/+1 counter on it at the beginning of the next end step.
 timing=main
 oracle=When a spell or ability an opponent controls causes you to discard Sand Golem, return Sand Golem from your graveyard to the battlefield with a +1/+1 counter on it at the beginning of the next end step.
+status=not supported: no-info

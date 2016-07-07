@@ -7,3 +7,4 @@ ability=As SN enters the battlefield, you may reveal a Plains or Island card fro
         {T}: Add {W} or {U} to your mana pool.
 timing=land
 oracle=As Port Town enters the battlefield, you may reveal a Plains or Island card from your hand. If you don't, Port Town enters the battlefield tapped.\n{T}: Add {W} or {U} to your mana pool.
+status=not supported: reveal-cost

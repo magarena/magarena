@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\n{U}: Return enchanted creature and Disappear to their owners' hands.
+status=needs groovy

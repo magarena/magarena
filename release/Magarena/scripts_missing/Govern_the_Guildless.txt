@@ -7,3 +7,4 @@ cost={5}{U}
 effect=Gain control of target monocolored creature.~{1}{U}, Reveal SN from your hand: Target creature becomes the color or colors of your choice until end of turn.
 timing=main
 oracle=Gain control of target monocolored creature.\nForecast — {1}{U}, Reveal Govern the Guildless from your hand: Target creature becomes the color or colors of your choice until end of turn.
+status=not supported: forecast

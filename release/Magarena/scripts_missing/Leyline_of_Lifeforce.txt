@@ -8,3 +8,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         Creature spells can't be countered.
 timing=enchantment
 oracle=If Leyline of Lifeforce is in your opening hand, you may begin the game with it on the battlefield.\nCreature spells can't be countered.
+status=not supported: opening-hand

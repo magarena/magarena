@@ -8,3 +8,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         Creature tokens get +1/+1.
 timing=enchantment
 oracle=If Leyline of the Meek is in your opening hand, you may begin the game with it on the battlefield.\nCreature tokens get +1/+1.
+status=not supported: opening-hand

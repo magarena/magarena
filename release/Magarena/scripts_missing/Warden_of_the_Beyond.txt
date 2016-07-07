@@ -10,3 +10,4 @@ ability=Vigilance;\
         SN gets +2/+2 as long as an opponent owns a card in exile.
 timing=main
 oracle=Vigilance\nWarden of the Beyond gets +2/+2 as long as an opponent owns a card in exile.
+status=needs groovy

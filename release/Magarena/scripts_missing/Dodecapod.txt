@@ -9,3 +9,4 @@ pt=3/3
 ability=If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield with two +1/+1 counters on it instead of putting it into your graveyard.
 timing=main
 oracle=If a spell or ability an opponent controls causes you to discard Dodecapod, put it onto the battlefield with two +1/+1 counters on it instead of putting it into your graveyard.
+status=not supported: no-info

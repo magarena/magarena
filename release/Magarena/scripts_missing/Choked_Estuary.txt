@@ -7,3 +7,4 @@ ability=As SN enters the battlefield, you may reveal an Island or Swamp card fro
         {T}: Add {U} or {B} to your mana pool.
 timing=land
 oracle=As Choked Estuary enters the battlefield, you may reveal an Island or Swamp card from your hand. If you don't, Choked Estuary enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.
+status=not supported: reveal-cost

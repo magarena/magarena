@@ -7,3 +7,4 @@ cost={U}
 effect=SN deals 1 damage to target creature or player.~When a spell or ability an opponent controls causes you to discard SN, that player loses 5 life.
 timing=main
 oracle=Psychic Purge deals 1 damage to target creature or player.\nWhen a spell or ability an opponent controls causes you to discard Psychic Purge, that player loses 5 life.
+status=not supported: no-info

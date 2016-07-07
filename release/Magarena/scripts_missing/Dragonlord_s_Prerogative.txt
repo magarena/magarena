@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, you may reveal a Dragon card from your
 effect=If you revealed a Dragon card or controlled a Dragon as you cast SN, SN can't be countered.~Draw four cards.
 timing=removal
 oracle=As an additional cost to cast Dragonlord's Prerogative, you may reveal a Dragon card from your hand.\nIf you revealed a Dragon card or controlled a Dragon as you cast Dragonlord's Prerogative, Dragonlord's Prerogative can't be countered.\nDraw four cards.
+status=not supported: reveal-cost

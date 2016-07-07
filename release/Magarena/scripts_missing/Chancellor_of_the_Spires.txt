@@ -11,3 +11,4 @@ ability=You may reveal this card from your opening hand. If you do, at the begin
         When SN enters the battlefield, you may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost.
 timing=main
 oracle=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, each opponent puts the top seven cards of his or her library into his or her graveyard.\nFlying\nWhen Chancellor of the Spires enters the battlefield, you may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost.
+status=not supported: opening-hand

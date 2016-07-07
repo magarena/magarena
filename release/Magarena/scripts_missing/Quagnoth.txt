@@ -11,3 +11,4 @@ ability=Split second;\
         When a spell or ability an opponent controls causes you to discard SN, return it to your hand.
 timing=main
 oracle=Split second\nShroud\nWhen a spell or ability an opponent controls causes you to discard Quagnoth, return it to your hand.
+status=not supported: no-info

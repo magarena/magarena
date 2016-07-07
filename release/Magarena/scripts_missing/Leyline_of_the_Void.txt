@@ -8,3 +8,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         If a card would be put into an opponent's graveyard from anywhere, exile it instead.
 timing=enchantment
 oracle=If Leyline of the Void is in your opening hand, you may begin the game with it on the battlefield.\nIf a card would be put into an opponent's graveyard from anywhere, exile it instead.
+status=not supported: opening-hand

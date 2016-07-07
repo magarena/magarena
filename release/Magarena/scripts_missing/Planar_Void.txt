@@ -7,3 +7,4 @@ cost={B}
 ability=Whenever another card is put into a graveyard from anywhere, exile that card.
 timing=enchantment
 oracle=Whenever another card is put into a graveyard from anywhere, exile that card.
+status=needs groovy

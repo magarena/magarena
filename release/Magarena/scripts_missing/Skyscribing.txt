@@ -7,3 +7,4 @@ cost={X}{U}{U}
 effect=Each player draws X cards.~{2}{U}, Reveal SN from your hand: Each player draws a card.
 timing=main
 oracle=Each player draws X cards.\nForecast — {2}{U}, Reveal Skyscribing from your hand: Each player draws a card.
+status=not supported: forecast

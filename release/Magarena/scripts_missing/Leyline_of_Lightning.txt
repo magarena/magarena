@@ -8,3 +8,4 @@ ability=If SN is in your opening hand, you may begin the game with it on the bat
         Whenever you cast a spell, you may pay {1}. If you do, SN deals 1 damage to target player.
 timing=enchantment
 oracle=If Leyline of Lightning is in your opening hand, you may begin the game with it on the battlefield.\nWhenever you cast a spell, you may pay {1}. If you do, Leyline of Lightning deals 1 damage to target player.
+status=not supported: opening-hand

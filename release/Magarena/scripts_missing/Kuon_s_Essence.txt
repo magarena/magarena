@@ -9,3 +9,4 @@ flip=Kuon, Ogre Ascendant
 timing=enchantment
 hidden
 oracle=At the beginning of each player's upkeep, that player sacrifices a creature.
+status=needs groovy

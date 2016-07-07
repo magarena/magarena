@@ -7,3 +7,4 @@ ability=As SN enters the battlefield, you may reveal a Forest or Plains card fro
         {T}: Add {G} or {W} to your mana pool.
 timing=land
 oracle=As Fortified Village enters the battlefield, you may reveal a Forest or Plains card from your hand. If you don't, Fortified Village enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.
+status=not supported: reveal-cost
