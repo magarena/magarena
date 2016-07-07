@@ -2696,6 +2696,7 @@ public class MagicTargetFilterFactory {
         add("this permanent", SN);
         add("this creature", SN);
         add("creature blocking it", CREATURE_BLOCKING_SN);
+        add("creature blocking SN", CREATURE_BLOCKING_SN);
     }
 
     public static String toSingular(final String arg) {
