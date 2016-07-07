@@ -10,3 +10,4 @@ pt=7/5
 ability=Whenever SN attacks, defending player exiles two permanents he or she controls.
 timing=main
 oracle=Whenever Bane of Bala Ged attacks, defending player exiles two permanents he or she controls.
+status=needs groovy

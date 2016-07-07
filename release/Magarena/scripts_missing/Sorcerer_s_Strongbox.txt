@@ -7,3 +7,4 @@ cost={4}
 ability={2}, {T}: Flip a coin. If you win the flip, sacrifice SN and draw three cards.
 timing=artifact
 oracle={2}, {T}: Flip a coin. If you win the flip, sacrifice Sorcerer's Strongbox and draw three cards.
+status=needs groovy

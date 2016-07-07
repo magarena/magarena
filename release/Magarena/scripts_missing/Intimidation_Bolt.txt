@@ -7,3 +7,4 @@ cost={1}{R}{W}
 effect=SN deals 3 damage to target creature. Other creatures can't attack this turn.
 timing=removal
 oracle=Intimidation Bolt deals 3 damage to target creature. Other creatures can't attack this turn.
+status=needs groovy

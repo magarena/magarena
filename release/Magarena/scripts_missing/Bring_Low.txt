@@ -7,3 +7,4 @@ cost={3}{R}
 effect=SN deals 3 damage to target creature. If that creature has a +1/+1 counter on it, SN deals 5 damage to it instead.
 timing=removal
 oracle=Bring Low deals 3 damage to target creature. If that creature has a +1/+1 counter on it, Bring Low deals 5 damage to it instead.
+status=needs groovy

@@ -8,3 +8,4 @@ cost={1}
 ability={3}, {T}: Target player puts the top two cards of his or her library into his or her graveyard. If both cards share a color, repeat this process.
 timing=artifact
 oracle={3}, {T}: Target player puts the top two cards of his or her library into his or her graveyard. If both cards share a color, repeat this process.
+status=needs groovy

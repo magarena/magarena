@@ -9,3 +9,4 @@ pt=6/6
 ability=SN can't attack unless you've cast a noncreature spell this turn.
 timing=main
 oracle=Silburlind Snapper can't attack unless you've cast a noncreature spell this turn.
+status=not supported: no-info

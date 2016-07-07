@@ -12,3 +12,4 @@ ability=Haste;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=fmain
 oracle=Haste\nIf a spell you control would deal damage to an opponent, prevent that damage. Put a 3/1 red Elemental Shaman creature token with haste onto the battlefield for each 1 damage prevented this way.\nWhen Hostility is put into a graveyard from anywhere, shuffle it into its owner's library.
+status=needs groovy

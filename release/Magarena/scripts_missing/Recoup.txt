@@ -8,3 +8,4 @@ ability=Flashback {3}{R}
 effect=Target sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.
 timing=main
 oracle=Target sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.\nFlashback {3}{R}
+status=needs groovy

@@ -10,3 +10,4 @@ pt=2/1
 ability=SN can't attack alone.
 timing=main
 oracle=Bonded Construct can't attack alone.
+status=not supported: attacking-restriction

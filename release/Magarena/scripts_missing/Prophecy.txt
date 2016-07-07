@@ -7,3 +7,4 @@ cost={W}
 effect=Reveal the top card of target opponent's library. If it's a land, you gain 1 life. Then that player shuffles his or her library.~Draw a card at the beginning of the next turn's upkeep.
 timing=main
 oracle=Reveal the top card of target opponent's library. If it's a land, you gain 1 life. Then that player shuffles his or her library.\nDraw a card at the beginning of the next turn's upkeep.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={5}{R}
 effect=Sacrifice all creatures you control, then put that many 4/4 red Hellion creature tokens onto the battlefield.
 timing=main
 oracle=Sacrifice all creatures you control, then put that many 4/4 red Hellion creature tokens onto the battlefield.
+status=needs groovy

@@ -8,3 +8,4 @@ ability=SN enters the battlefield with X charge counters on it, where X is your 
         Whenever a land enters the battlefield under your control, you may have your life total become the number of charge counters on SN.
 timing=artifact
 oracle=Eternity Vessel enters the battlefield with X charge counters on it, where X is your life total.\nLandfall — Whenever a land enters the battlefield under your control, you may have your life total become the number of charge counters on Eternity Vessel.
+status=needs groovy
