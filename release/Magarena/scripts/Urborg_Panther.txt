@@ -7,6 +7,6 @@ subtype=Nightstalker,Cat
 cost={2}{B}
 pt=2/2
 ability={B}, Sacrifice SN: Destroy target creature blocking SN.;\
-        Sacrifice a creature named Feral Shadow, a creature named Breathstealer, and SN: Search your library for a card named Spirit of the Night and put that card onto the battlefield. Then shuffle your library.
+        Sacrifice a creature named Feral Shadow, sacrifice a creature named Breathstealer, sacrifice SN: Search your library for a card named Spirit of the Night and put that card onto the battlefield. Then shuffle your library.
 timing=main
 oracle={B}, Sacrifice Urborg Panther: Destroy target creature blocking Urborg Panther.\nSacrifice a creature named Feral Shadow, a creature named Breathstealer, and Urborg Panther: Search your library for a card named Spirit of the Night and put that card onto the battlefield. Then shuffle your library.
