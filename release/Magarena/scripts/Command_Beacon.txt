@@ -4,7 +4,6 @@ image_updated=2016-02-29
 value=2.500
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {T}, Sacrifice SN: Put your commander into your hand from the command zone.
+ability={T}: Add {C} to your mana pool.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{T}, Sacrifice Command Beacon: Put your commander into your hand from the command zone.
