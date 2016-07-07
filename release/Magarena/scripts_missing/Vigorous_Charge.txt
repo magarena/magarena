@@ -8,3 +8,4 @@ ability=Kicker {W}
 effect=Target creature gains trample until end of turn. Whenever that creature deals combat damage this turn, if SN was kicked, you gain life equal to that damage.
 timing=removal
 oracle=Kicker {W}\nTarget creature gains trample until end of turn. Whenever that creature deals combat damage this turn, if Vigorous Charge was kicked, you gain life equal to that damage.
+status=needs groovy

@@ -10,3 +10,4 @@ pt=3/3
 ability={T}: Until end of turn, target creature has base power 1 or base toughness 1.
 timing=main
 oracle={T}: Until end of turn, target creature has base power 1 or base toughness 1.
+status=needs groovy

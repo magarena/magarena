@@ -12,3 +12,4 @@ ability=At end of combat, if SN and at least two other creatures attacked this c
 timing=main
 transform=Gideon, Battle-Forged
 oracle=At end of combat, if Kytheon, Hero of Akros and at least two other creatures attacked this combat, exile Kytheon, then return him to the battlefield transformed under his owner's control.\n{2}{W}: Kytheon gains indestructible until end of turn.
+status=needs groovy

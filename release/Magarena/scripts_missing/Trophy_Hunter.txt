@@ -10,3 +10,4 @@ ability={1}{G}: SN deals 1 damage to target creature with flying.;\
         Whenever a creature with flying dealt damage by SN this turn dies, put a +1/+1 counter on SN.
 timing=main
 oracle={1}{G}: Trophy Hunter deals 1 damage to target creature with flying.\nWhenever a creature with flying dealt damage by Trophy Hunter this turn dies, put a +1/+1 counter on Trophy Hunter.
+status=not supported: damage-by-SN-dies

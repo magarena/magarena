@@ -9,3 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, return target creature card of an opponent's choice from your graveyard to your hand.
 timing=main
 oracle=When Mausoleum Turnkey enters the battlefield, return target creature card of an opponent's choice from your graveyard to your hand.
+status=needs groovy

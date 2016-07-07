@@ -11,3 +11,4 @@ ability=Flying;\
         As long as seven or more cards are in your graveyard, SN is white and has "{T}: Destroy target black creature."
 timing=main
 oracle=Flying\nWhenever a creature dealt damage by Repentant Vampire this turn dies, put a +1/+1 counter on Repentant Vampire.\nThreshold — As long as seven or more cards are in your graveyard, Repentant Vampire is white and has "{T}: Destroy target black creature."
+status=not supported: damage-by-SN-dies

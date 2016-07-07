@@ -10,3 +10,4 @@ ability=Infect;\
         Whenever a creature dealt damage by SN this turn dies, you may draw a card.
 timing=main
 oracle=Infect\nWhenever a creature dealt damage by Rot Wolf this turn dies, you may draw a card.
+status=not supported: damage-by-SN-dies

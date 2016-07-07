@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN dies, each player may search his or her library for a card and put that card into his or her hand. Then each player who searched his or her library this way shuffles it.
 timing=main
 oracle=When Noble Benefactor dies, each player may search his or her library for a card and put that card into his or her hand. Then each player who searched his or her library this way shuffles it.
+status=needs groovy

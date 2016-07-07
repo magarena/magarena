@@ -11,3 +11,4 @@ ability=Flying;\
         Morph {B}{B}{B}
 timing=main
 oracle=Flying\nWhenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control.\nMorph {B}{B}{B}
+status=not supported: damage-by-SN-dies

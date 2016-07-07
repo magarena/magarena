@@ -7,3 +7,4 @@ cost={5}{R}{R}
 effect=Each player sacrifices five lands. SN deals 5 damage to each creature.
 timing=main
 oracle=Each player sacrifices five lands. Destructive Force deals 5 damage to each creature.
+status=needs groovy

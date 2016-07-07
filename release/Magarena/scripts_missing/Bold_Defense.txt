@@ -8,3 +8,4 @@ ability=Kicker {3}{W}
 effect=Creatures you control get +1/+1 until end of turn. If SN was kicked, instead creatures you control get +2/+2 and gain first strike until end of turn.
 timing=removal
 oracle=Kicker {3}{W}\nCreatures you control get +1/+1 until end of turn. If Bold Defense was kicked, instead creatures you control get +2/+2 and gain first strike until end of turn.
+status=needs groovy

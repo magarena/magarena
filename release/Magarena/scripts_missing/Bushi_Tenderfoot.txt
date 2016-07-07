@@ -10,3 +10,4 @@ ability=When a creature dealt damage by SN this turn dies, flip SN.
 flip=Kenzo the Hardhearted
 timing=main
 oracle=When a creature dealt damage by Bushi Tenderfoot this turn dies, flip Bushi Tenderfoot.
+status=not supported: damage-by-SN-dies

@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever a creature dealt damage by SN this turn dies, put that card onto the battlefield under your control at the beginning of the next end step. Sacrifice the creature when you lose control of SN.
 timing=main
 oracle=Flying\nWhenever a creature dealt damage by Seraph this turn dies, put that card onto the battlefield under your control at the beginning of the next end step. Sacrifice the creature when you lose control of Seraph.
+status=not supported: damage-by-SN-dies

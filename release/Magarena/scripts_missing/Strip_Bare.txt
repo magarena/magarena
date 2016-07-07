@@ -7,3 +7,4 @@ cost={W}
 effect=Destroy all Auras and Equipment attached to target creature.
 timing=removal
 oracle=Destroy all Auras and Equipment attached to target creature.
+status=needs groovy

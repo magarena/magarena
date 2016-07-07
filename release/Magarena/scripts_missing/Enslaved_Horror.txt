@@ -9,3 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, each other player may return a creature card from his or her graveyard to the battlefield.
 timing=main
 oracle=When Enslaved Horror enters the battlefield, each other player may return a creature card from his or her graveyard to the battlefield.
+status=needs groovy

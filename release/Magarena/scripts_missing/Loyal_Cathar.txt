@@ -11,3 +11,4 @@ ability=Vigilance;\
 transform=Unhallowed Cathar
 timing=main
 oracle=Vigilance\nWhen Loyal Cathar dies, return it to the battlefield transformed under your control at the beginning of the next end step.
+status=needs groovy

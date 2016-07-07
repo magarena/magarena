@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nWhenever a creature dealt damage by Sengir Vampire this turn dies, put a +1/+1 counter on Sengir Vampire.
+status=not supported: damage-by-SN-dies

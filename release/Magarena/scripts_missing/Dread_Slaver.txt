@@ -9,3 +9,4 @@ pt=3/5
 ability=Whenever a creature dealt damage by SN this turn dies, return it to the battlefield under your control. That creature is a black Zombie in addition to its other colors and types.
 timing=main
 oracle=Whenever a creature dealt damage by Dread Slaver this turn dies, return it to the battlefield under your control. That creature is a black Zombie in addition to its other colors and types.
+status=not supported: damage-by-SN-dies

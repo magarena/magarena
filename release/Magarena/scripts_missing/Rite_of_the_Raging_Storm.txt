@@ -9,3 +9,4 @@ ability=Creatures named Lightning Rager can't attack you or planeswalkers you co
         At the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the battlefield.
 timing=enchantment
 oracle=Creatures named Lightning Rager can't attack you or planeswalkers you control.\nAt the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the battlefield. It has trample, haste, and "At the beginning of the end step, sacrifice this creature."
+status=needs groovy

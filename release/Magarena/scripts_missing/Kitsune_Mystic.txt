@@ -10,3 +10,4 @@ ability=At the beginning of the end step, if SN is enchanted by two or more Aura
 flip=Autumn-Tail, Kitsune Sage
 timing=main
 oracle=At the beginning of the end step, if Kitsune Mystic is enchanted by two or more Auras, flip it.
+status=needs groovy

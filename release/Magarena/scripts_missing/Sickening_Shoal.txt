@@ -8,3 +8,4 @@ cost={X}{B}{B}
 effect=You may exile a black card with converted mana cost X from your hand rather than pay SN's mana cost.~Target creature gets -X/-X until end of turn.
 timing=removal
 oracle=You may exile a black card with converted mana cost X from your hand rather than pay Sickening Shoal's mana cost.\nTarget creature gets -X/-X until end of turn.
+status=needs groovy

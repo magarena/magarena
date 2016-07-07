@@ -10,3 +10,4 @@ pt=2/3
 ability=Whenever you cast your second spell each turn, draw a card.
 timing=main
 oracle=Whenever you cast your second spell each turn, draw a card.
+status=needs groovy

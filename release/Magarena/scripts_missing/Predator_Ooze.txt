@@ -11,3 +11,4 @@ ability=Indestructible;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.
 timing=main
 oracle=Indestructible\nWhenever Predator Ooze attacks, put a +1/+1 counter on it.\nWhenever a creature dealt damage by Predator Ooze this turn dies, put a +1/+1 counter on Predator Ooze.
+status=not supported: damage-by-SN-dies

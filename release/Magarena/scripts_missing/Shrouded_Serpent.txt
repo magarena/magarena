@@ -9,3 +9,4 @@ pt=4/4
 ability=Whenever SN attacks, defending player may pay {4}. If he or she doesn't, SN can't be blocked this turn.
 timing=main
 oracle=Whenever Shrouded Serpent attacks, defending player may pay {4}. If he or she doesn't, Shrouded Serpent can't be blocked this turn.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={3}
 ability={4}: Target creature gets +X/+0 until end of turn, where X is its power. Sacrifice SN at the beginning of the next end step.
 timing=artifact
 oracle={4}: Target creature gets +X/+0 until end of turn, where X is its power. Sacrifice Wine of Blood and Iron at the beginning of the next end step.
+status=needs groovy

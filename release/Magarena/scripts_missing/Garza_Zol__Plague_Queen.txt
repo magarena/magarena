@@ -11,3 +11,4 @@ ability=Flying, haste;\
         Whenever Garza Zol deals combat damage to a player, you may draw a card.
 timing=main
 oracle=Flying, haste\nWhenever a creature dealt damage by Garza Zol, Plague Queen this turn dies, put a +1/+1 counter on Garza Zol.\nWhenever Garza Zol deals combat damage to a player, you may draw a card.
+status=not supported: damage-by-SN-dies
