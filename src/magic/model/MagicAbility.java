@@ -391,7 +391,7 @@ public enum MagicAbility {
     EquipCond("Equip( |—)" + ARG.COST + " to a " + ARG.WORDRUN, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
-            card.add(new MagicEquipActivation(matchedCostEvents, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
+            card.add(new MagicEquipActivation(matchedCostEvents, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg) + " you control")));
         }
     },
     Equip("Equip( |—)" + ARG.COST, 0) {
