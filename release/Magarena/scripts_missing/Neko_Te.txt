@@ -10,3 +10,4 @@ ability=Whenever equipped creature deals damage to a creature, tap that creature
         Equip {2}
 timing=equipment
 oracle=Whenever equipped creature deals damage to a creature, tap that creature. That creature doesn't untap during its controller's untap step for as long as Neko-Te remains on the battlefield.\nWhenever equipped creature deals damage to a player, that player loses 1 life.\nEquip {2}
+status=needs groovy

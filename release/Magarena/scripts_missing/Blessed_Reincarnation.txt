@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Exile target creature an opponent controls. That player reveals cards from the top of his or her library until a creature card is revealed. The player puts that card onto the battlefield, then shuffles the rest into his or her library.~Rebound
 timing=removal
 oracle=Exile target creature an opponent controls. That player reveals cards from the top of his or her library until a creature card is revealed. The player puts that card onto the battlefield, then shuffles the rest into his or her library.\nRebound
+status=needs groovy

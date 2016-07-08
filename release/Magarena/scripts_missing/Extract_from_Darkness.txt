@@ -7,3 +7,4 @@ cost={3}{U}{B}
 effect=Each player puts the top two cards of his or her library into his or her graveyard. Then put a creature card from a graveyard onto the battlefield under your control.
 timing=main
 oracle=Each player puts the top two cards of his or her library into his or her graveyard. Then put a creature card from a graveyard onto the battlefield under your control.
+status=needs groovy

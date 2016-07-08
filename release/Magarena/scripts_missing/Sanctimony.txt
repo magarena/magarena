@@ -7,3 +7,4 @@ cost={1}{W}
 ability=Whenever an opponent taps a Mountain for mana, you may gain 1 life.
 timing=enchantment
 oracle=Whenever an opponent taps a Mountain for mana, you may gain 1 life.
+status=not supported: when-tap-for-mana

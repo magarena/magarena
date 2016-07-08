@@ -9,3 +9,4 @@ pt=3/4
 ability=Whenever a player activates an ability that isn't a mana ability, SN deals 1 damage to that player.
 timing=main
 oracle=Whenever a player activates an ability that isn't a mana ability, Burning-Tree Shaman deals 1 damage to that player.
+status=not supported: when-activate

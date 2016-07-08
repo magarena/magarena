@@ -7,3 +7,4 @@ cost={3}{U}
 ability=Prevent all combat damage that would be dealt to and dealt by creatures you control.
 timing=enchantment
 oracle=Prevent all combat damage that would be dealt to and dealt by creatures you control.
+status=needs groovy

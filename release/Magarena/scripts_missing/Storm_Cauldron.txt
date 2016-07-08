@@ -8,3 +8,4 @@ ability=Each player may play an additional land during each of his or her turns.
         Whenever a land is tapped for mana, return it to its owner's hand.
 timing=artifact
 oracle=Each player may play an additional land during each of his or her turns.\nWhenever a land is tapped for mana, return it to its owner's hand.
+status=not supported: when-tap-for-mana

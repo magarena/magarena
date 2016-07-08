@@ -8,3 +8,4 @@ effect=Target opponent puts the top thirteen cards of his or her library into hi
 transform=Persistent Nightmare
 timing=main
 oracle=Target opponent puts the top thirteen cards of his or her library into his or her graveyard.\n{3}{U}{U}: Put Startled Awake from your graveyard onto the battlefield transformed. Activate this ability only any time you could cast a sorcery.
+status=needs groovy

@@ -9,3 +9,4 @@ ability=Whenever an ability of equipped creature is activated, if it isn't a man
         Equip {3}
 timing=equipment
 oracle=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy.\nEquip {3}
+status=not supported: when-activate

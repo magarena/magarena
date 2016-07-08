@@ -7,3 +7,4 @@ cost={4}{B}
 effect=Destroy target land. Its controller reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
 timing=main
 oracle=Destroy target land. Its controller reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
+status=needs groovy

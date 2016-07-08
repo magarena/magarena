@@ -7,3 +7,4 @@ cost={2}{R}
 ability=Whenever a player taps a land for mana, if it's not that player's turn, destroy that land.
 timing=enchantment
 oracle=Whenever a player taps a land for mana, if it's not that player's turn, destroy that land.
+status=not supported: when-tap-for-mana

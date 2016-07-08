@@ -10,3 +10,4 @@ ability={T}: You may put a land card from your hand onto the battlefield. If you
 flip=Dokai, Weaver of Life
 timing=main
 oracle={T}: You may put a land card from your hand onto the battlefield. If you control ten or more lands, flip Budoka Gardener.
+status=needs groovy

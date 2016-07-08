@@ -10,3 +10,4 @@ ability=Outlast {2}{W};\
         Whenever you activate SN's outlast ability, put a 1/1 white Warrior creature token onto the battlefield.
 timing=main
 oracle=Outlast {2}{W}\nWhenever you activate Herald of Anafenza's outlast ability, put a 1/1 white Warrior creature token onto the battlefield.
+status=not supported: when-activate

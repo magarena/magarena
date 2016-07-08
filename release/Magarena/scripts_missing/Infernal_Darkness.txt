@@ -8,3 +8,4 @@ ability=Cumulative upkeep—Pay {B} and 1 life.;\
         If a land is tapped for mana, it produces {B} instead of any other type.
 timing=enchantment
 oracle=Cumulative upkeep—Pay {B} and 1 life.\nIf a land is tapped for mana, it produces {B} instead of any other type.
+status=not supported: when-tap-for-mana

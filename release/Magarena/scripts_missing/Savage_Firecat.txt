@@ -11,3 +11,4 @@ ability=Trample;\
         Whenever you tap a land for mana, remove a +1/+1 counter from SN.
 timing=main
 oracle=Trample\nSavage Firecat enters the battlefield with seven +1/+1 counters on it.\nWhenever you tap a land for mana, remove a +1/+1 counter from Savage Firecat.
+status=not supported: when-tap-for-mana

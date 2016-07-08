@@ -10,3 +10,4 @@ ability=Whenever SN deals combat damage to a player, you may sacrifice it. If yo
         Morph {U}{U}
 timing=main
 oracle=Whenever Riptide Entrancer deals combat damage to a player, you may sacrifice it. If you do, gain control of target creature that player controls.\nMorph {U}{U}
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/3
 ability={1}{W}: Prevent all damage that would be dealt to target tapped Merfolk or Kithkin creature this turn.
 timing=main
 oracle={1}{W}: Prevent all damage that would be dealt to target tapped Merfolk or Kithkin creature this turn.
+status=needs groovy

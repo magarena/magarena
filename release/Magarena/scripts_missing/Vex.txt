@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Counter target spell. That spell's controller may draw a card.
 timing=counter
 oracle=Counter target spell. That spell's controller may draw a card.
+status=needs groovy

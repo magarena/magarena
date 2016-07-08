@@ -10,3 +10,4 @@ ability=Snow landwalk;\
         {S}: Regenerate SN.
 timing=main
 oracle=Snow landwalk\n{S}: Regenerate Zombie Musher.
+status=needs groovy

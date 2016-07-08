@@ -7,3 +7,4 @@ cost={3}{G}
 ability=If a basic land you control is tapped for mana, it produces mana of a color of your choice instead of any other type.
 timing=enchantment
 oracle=If a basic land you control is tapped for mana, it produces mana of a color of your choice instead of any other type.
+status=not supported: when-tap-for-mana

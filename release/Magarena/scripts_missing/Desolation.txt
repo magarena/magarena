@@ -7,3 +7,4 @@ cost={1}{B}{B}
 ability=At the beginning of each end step, each player who tapped a land for mana this turn sacrifices a land. SN deals 2 damage to each player who sacrificed a Plains this way.
 timing=enchantment
 oracle=At the beginning of each end step, each player who tapped a land for mana this turn sacrifices a land. Desolation deals 2 damage to each player who sacrificed a Plains this way.
+status=not supported: when-tap-for-mana

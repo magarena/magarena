@@ -9,3 +9,4 @@ pt=5/5
 ability=SN can't attack or block unless it's paired with a creature with soulbond.
 timing=main
 oracle=Flowering Lumberknot can't attack or block unless it's paired with a creature with soulbond.
+status=needs groovy

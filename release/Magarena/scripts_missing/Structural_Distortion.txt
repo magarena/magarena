@@ -7,3 +7,4 @@ cost={3}{R}
 effect=Exile target artifact or land. SN deals 2 damage to that permanent's controller.
 timing=main
 oracle=Exile target artifact or land. Structural Distortion deals 2 damage to that permanent's controller.
+status=needs groovy

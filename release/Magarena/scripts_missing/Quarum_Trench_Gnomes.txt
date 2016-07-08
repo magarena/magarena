@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: If target Plains is tapped for mana, it produces colorless mana instead of white mana.
 timing=main
 oracle={T}: If target Plains is tapped for mana, it produces colorless mana instead of white mana.
+status=not supported: when-tap-for-mana

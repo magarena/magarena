@@ -9,3 +9,4 @@ pt=2/1
 ability=When SN enters the battlefield, sacrifice another creature. You gain X life and draw X cards, where X is that creature's power.
 timing=main
 oracle=When Disciple of Bolas enters the battlefield, sacrifice another creature. You gain X life and draw X cards, where X is that creature's power.
+status=needs groovy

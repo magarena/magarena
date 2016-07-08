@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN becomes blocked, defending player discards all the cards in his or her hand, then draws that many cards.
 timing=main
 oracle=Flying\nWhenever Robber Fly becomes blocked, defending player discards all the cards in his or her hand, then draws that many cards.
+status=needs groovy

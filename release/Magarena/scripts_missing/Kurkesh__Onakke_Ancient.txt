@@ -9,3 +9,4 @@ pt=4/3
 ability=Whenever you activate an ability of an artifact, if it isn't a mana ability, you may pay {R}. If you do, copy that ability. You may choose new targets for the copy.
 timing=main
 oracle=Whenever you activate an ability of an artifact, if it isn't a mana ability, you may pay {R}. If you do, copy that ability. You may choose new targets for the copy.
+status=not supported: when-activate

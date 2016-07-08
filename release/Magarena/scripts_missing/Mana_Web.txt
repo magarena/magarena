@@ -7,3 +7,4 @@ cost={3}
 ability=Whenever a land an opponent controls is tapped for mana, tap all lands that player controls that could produce any type of mana that land could produce.
 timing=artifact
 oracle=Whenever a land an opponent controls is tapped for mana, tap all lands that player controls that could produce any type of mana that land could produce.
+status=not supported: when-tap-for-mana

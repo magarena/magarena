@@ -11,3 +11,4 @@ ability=Enchant creature you control;\
 timing=aura
 enchant=default,creature you control
 oracle=Enchant creature you control\nEnchanted creature is a Flagbearer.\nWhile choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
+status=not supported: flagbearer

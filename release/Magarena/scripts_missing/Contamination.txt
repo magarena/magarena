@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, sacrifice SN unless you sacrifice a cre
         If a land is tapped for mana, it produces {B} instead of any other type and amount.
 timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Contamination unless you sacrifice a creature.\nIf a land is tapped for mana, it produces {B} instead of any other type and amount.
+status=not supported: when-tap-for-mana

@@ -10,3 +10,4 @@ ability={T}: Add {G} to your mana pool.;\
         Whenever you tap SN for mana, it deals 1 damage to each opponent.
 timing=main
 oracle={T}: Add {G} to your mana pool.\nWhenever you tap Zhur-Taa Druid for mana, it deals 1 damage to each opponent.
+status=not supported: when-tap-for-mana

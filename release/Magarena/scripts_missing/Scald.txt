@@ -7,3 +7,4 @@ cost={1}{R}
 ability=Whenever a player taps an Island for mana, SN deals 1 damage to that player.
 timing=enchantment
 oracle=Whenever a player taps an Island for mana, Scald deals 1 damage to that player.
+status=not supported: when-tap-for-mana

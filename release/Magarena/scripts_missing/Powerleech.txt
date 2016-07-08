@@ -7,3 +7,4 @@ cost={G}{G}
 ability=Whenever an artifact an opponent controls becomes tapped or an opponent activates an artifact's ability without {T} in its activation cost, you gain 1 life.
 timing=enchantment
 oracle=Whenever an artifact an opponent controls becomes tapped or an opponent activates an artifact's ability without {T} in its activation cost, you gain 1 life.
+status=not supported: when-activate

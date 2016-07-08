@@ -7,3 +7,4 @@ cost={4}{W}{W}
 effect=Destroy all lands or all creatures. Creatures destroyed this way can't be regenerated.
 timing=main
 oracle=Destroy all lands or all creatures. Creatures destroyed this way can't be regenerated.
+status=needs groovy
