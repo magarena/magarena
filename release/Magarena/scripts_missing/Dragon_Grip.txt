@@ -11,3 +11,4 @@ ability=If you control a creature with power 4 or greater, you may cast SN as th
 timing=aura
 enchant=default,creature
 oracle=Ferocious — If you control a creature with power 4 or greater, you may cast Dragon Grip as though it had flash.\nEnchant creature\nEnchanted creature gets +2/+0 and has first strike.
+status=needs groovy

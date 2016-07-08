@@ -7,3 +7,4 @@ cost={4}
 ability=You may cast nonland cards as though they had flash.
 timing=artifact
 oracle=You may cast nonland cards as though they had flash.
+status=not supported: card-modification

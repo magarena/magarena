@@ -9,3 +9,4 @@ pt=3/1
 ability=Whenever SN attacks, it gains "SN can't be blocked" until end of turn unless defending player sacrifices a creature.
 timing=main
 oracle=Whenever Ogre Marauder attacks, it gains "Ogre Marauder can't be blocked" until end of turn unless defending player sacrifices a creature.
+status=needs groovy

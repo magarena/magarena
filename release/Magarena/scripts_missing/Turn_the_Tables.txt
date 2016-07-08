@@ -7,3 +7,4 @@ cost={3}{W}{W}
 effect=All combat damage that would be dealt to you this turn is dealt to target attacking creature instead.
 timing=removal
 oracle=All combat damage that would be dealt to you this turn is dealt to target attacking creature instead.
+status=needs groovy

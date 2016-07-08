@@ -10,3 +10,4 @@ ability=Vigilance;\
         As long as seven or more cards are in your graveyard, SN has "When SN dies, you may pay {W}{W}. If you do, return SN to the battlefield under your control."
 timing=main
 oracle=Vigilance\nThreshold — As long as seven or more cards are in your graveyard, Reborn Hero has "When Reborn Hero dies, you may pay {W}{W}. If you do, return Reborn Hero to the battlefield under your control."
+status=needs groovy

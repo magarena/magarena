@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Until end of turn, creatures you control gain "Whenever this creature deals damage to an opponent, you may return target creature that player controls to its owner's hand."
 timing=main
 oracle=Until end of turn, creatures you control gain "Whenever this creature deals damage to an opponent, you may return target creature that player controls to its owner's hand."
+status=needs groovy

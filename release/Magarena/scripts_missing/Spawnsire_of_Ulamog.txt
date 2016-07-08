@@ -11,3 +11,4 @@ ability=Annihilator 1;\
         {20}: Cast any number of Eldrazi cards you own from outside the game without paying their mana costs.
 timing=main
 oracle=Annihilator 1\n{4}: Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool."\n{20}: Cast any number of Eldrazi cards you own from outside the game without paying their mana costs.
+status=not supported: any-number-of

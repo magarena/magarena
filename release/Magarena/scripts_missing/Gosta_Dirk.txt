@@ -10,3 +10,4 @@ ability=First strike;\
         Creatures with islandwalk can be blocked as though they didn't have islandwalk.
 timing=main
 oracle=First strike\nCreatures with islandwalk can be blocked as though they didn't have islandwalk.
+status=not supported: block-as-though

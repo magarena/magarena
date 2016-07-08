@@ -8,3 +8,4 @@ ability=You may cast SN as though it had flash. If you cast it any time a sorcer
         Creatures you control get +0/+1.
 timing=enchantment
 oracle=You may cast Parapet as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.\nCreatures you control get +0/+1.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={2}{B}
 ability=Creatures with swampwalk can be blocked as though they didn't have swampwalk.
 timing=enchantment
 oracle=Creatures with swampwalk can be blocked as though they didn't have swampwalk.
+status=not supported: block-as-though

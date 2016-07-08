@@ -7,3 +7,4 @@ cost={2}{U}
 ability=Creatures with islandwalk can be blocked as though they didn't have islandwalk.
 timing=enchantment
 oracle=Creatures with islandwalk can be blocked as though they didn't have islandwalk.
+status=not supported: block-as-though

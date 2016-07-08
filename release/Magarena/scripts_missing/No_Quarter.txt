@@ -8,3 +8,4 @@ ability=Whenever a creature becomes blocked by a creature with lesser power, des
         Whenever a creature blocks a creature with lesser power, destroy the attacking creature.
 timing=enchantment
 oracle=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature.\nWhenever a creature blocks a creature with lesser power, destroy the attacking creature.
+status=needs groovy

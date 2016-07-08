@@ -11,3 +11,4 @@ ability=First strike;\
         Creatures with forestwalk can be blocked as though they didn't have forestwalk.
 timing=main
 oracle=First strike\nCreatures with plainswalk can be blocked as though they didn't have plainswalk.\nCreatures with forestwalk can be blocked as though they didn't have forestwalk.
+status=not supported: block-as-though

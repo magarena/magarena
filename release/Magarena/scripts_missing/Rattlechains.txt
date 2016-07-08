@@ -12,3 +12,4 @@ ability=Flash;\
         You may cast Spirit spells as though they had flash.
 timing=flash
 oracle=Flash\nFlying\nWhen Rattlechains enters the battlefield, target Spirit gains hexproof until end of turn.\nYou may cast Spirit spells as though they had flash.
+status=not supported: card-modification

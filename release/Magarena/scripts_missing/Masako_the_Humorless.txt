@@ -10,3 +10,4 @@ ability=Flash;\
         Tapped creatures you control can block as though they were untapped.
 timing=flash
 oracle=Flash\nTapped creatures you control can block as though they were untapped.
+status=not supported: block-as-though

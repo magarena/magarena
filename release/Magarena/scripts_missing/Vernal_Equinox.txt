@@ -7,3 +7,4 @@ cost={3}{G}
 ability=Any player may cast creature and enchantment cards as though they had flash.
 timing=enchantment
 oracle=Any player may cast creature and enchantment cards as though they had flash.
+status=not supported: card-modification

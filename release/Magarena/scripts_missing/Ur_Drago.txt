@@ -10,3 +10,4 @@ ability=First strike;\
         Creatures with swampwalk can be blocked as though they didn't have swampwalk.
 timing=main
 oracle=First strike\nCreatures with swampwalk can be blocked as though they didn't have swampwalk.
+status=not supported: block-as-though

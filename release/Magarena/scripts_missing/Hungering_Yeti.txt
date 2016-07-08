@@ -9,3 +9,4 @@ pt=4/4
 ability=As long as you control a green or blue permanent, you may cast SN as though it had flash.
 timing=main
 oracle=As long as you control a green or blue permanent, you may cast Hungering Yeti as though it had flash.
+status=needs groovy

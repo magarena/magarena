@@ -7,3 +7,4 @@ ability={T}: Add {C} to your mana pool.;\
         {G}{U}, {T}: You may cast nonland cards this turn as though they had flash.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{G}{U}, {T}: You may cast nonland cards this turn as though they had flash.
+status=not supported: card-modification

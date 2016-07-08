@@ -10,3 +10,4 @@ ability=Flash;\
         Any player may play Sliver cards as though they had flash.
 timing=flash
 oracle=Flash\nAny player may play Sliver cards as though they had flash.
+status=not supported: card-modification

@@ -7,3 +7,4 @@ cost={G}
 effect=Whenever you cast a creature spell this turn, draw a card.
 timing=main
 oracle=Whenever you cast a creature spell this turn, draw a card.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/2
 ability=You may cast Aura cards with enchant creature as though they had flash.
 timing=main
 oracle=You may cast Aura cards with enchant creature as though they had flash.
+status=not supported: card-modification

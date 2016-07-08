@@ -7,3 +7,4 @@ cost={W}
 effect=The next creature card you play this turn can be played as though it had flash.~Draw a card.
 timing=removal
 oracle=The next creature card you play this turn can be played as though it had flash.\nDraw a card.
+status=not supported: card-modification

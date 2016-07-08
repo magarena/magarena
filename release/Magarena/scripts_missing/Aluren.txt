@@ -8,3 +8,4 @@ cost={2}{G}{G}
 ability=Any player may play creature cards with converted mana cost 3 or less without paying their mana cost and as though they had flash.
 timing=enchantment
 oracle=Any player may play creature cards with converted mana cost 3 or less without paying their mana cost and as though they had flash.
+status=not supported: card-modification

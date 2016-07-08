@@ -11,3 +11,4 @@ ability=Enchant non-Wall creature;\
 timing=aura
 enchant=default,non-wall creature
 oracle=Enchant non-Wall creature\nEnchanted creature has first strike and trample.\nAt the beginning of the end step of enchanted creature's controller, destroy that creature if it didn't attack this turn.
+status=not supported: no-info

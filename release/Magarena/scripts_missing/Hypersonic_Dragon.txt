@@ -10,3 +10,4 @@ ability=Flying, haste;\
         You may cast sorcery cards as though they had flash.
 timing=main
 oracle=Flying, haste\nYou may cast sorcery cards as though they had flash.
+status=not supported: card-modification

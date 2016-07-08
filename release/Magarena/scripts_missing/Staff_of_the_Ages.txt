@@ -7,3 +7,4 @@ cost={3}
 ability=Creatures with landwalk abilities can be blocked as though they didn't have those abilities.
 timing=artifact
 oracle=Creatures with landwalk abilities can be blocked as though they didn't have those abilities.
+status=not supported: block-as-though

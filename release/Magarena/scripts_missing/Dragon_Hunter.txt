@@ -10,3 +10,4 @@ ability=Protection from Dragons;\
         SN can block Dragons as though it had reach.
 timing=main
 oracle=Protection from Dragons\nDragon Hunter can block Dragons as though it had reach.
+status=not supported: block-as-though

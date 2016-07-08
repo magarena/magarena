@@ -7,3 +7,4 @@ cost={2}{G}
 ability=Creatures with forestwalk can be blocked as though they didn't have forestwalk.
 timing=enchantment
 oracle=Creatures with forestwalk can be blocked as though they didn't have forestwalk.
+status=not supported: block-as-though

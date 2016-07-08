@@ -10,3 +10,4 @@ ability=Untap all creatures and lands you control during each other player's unt
         You may cast creature cards as though they had flash.
 timing=main
 oracle=Untap all creatures and lands you control during each other player's untap step.\nYou may cast creature cards as though they had flash.
+status=not supported: card-modification

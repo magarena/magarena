@@ -10,3 +10,4 @@ ability=Flash;\
         You may cast green creature cards as though they had flash.
 timing=flash
 oracle=Flash\nYou may cast green creature cards as though they had flash.
+status=not supported: card-modification
