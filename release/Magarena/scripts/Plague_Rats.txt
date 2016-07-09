@@ -6,6 +6,6 @@ type=Creature
 subtype=Rat
 cost={2}{B}
 pt=*/*
-ability=SN's power and toughness are each equal to the number of creatures named `Plague Rats` on the battlefield.
+ability=SN's power and toughness are each equal to the number of creatures named Plague Rats on the battlefield.
 timing=main
 oracle=Plague Rats's power and toughness are each equal to the number of creatures named Plague Rats on the battlefield.

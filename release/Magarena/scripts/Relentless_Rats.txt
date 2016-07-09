@@ -6,6 +6,6 @@ type=Creature
 subtype=Rat
 cost={1}{B}{B}
 pt=2/2
-ability=SN gets +1/+1 for each other creature on the battlefield named `Relentless Rats`.
+ability=SN gets +1/+1 for each other creature on the battlefield named Relentless Rats.
 timing=main
 oracle=Relentless Rats gets +1/+1 for each other creature on the battlefield named Relentless Rats.\nA deck can have any number of cards named Relentless Rats.
