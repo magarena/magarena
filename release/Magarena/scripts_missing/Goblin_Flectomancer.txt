@@ -9,3 +9,4 @@ pt=2/2
 ability=Sacrifice SN: You may change the targets of target instant or sorcery spell.
 timing=main
 oracle=Sacrifice Goblin Flectomancer: You may change the targets of target instant or sorcery spell.
+status=not supported: change-target

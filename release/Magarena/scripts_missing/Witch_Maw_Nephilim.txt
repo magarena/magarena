@@ -10,3 +10,4 @@ ability=Whenever you cast a spell, you may put two +1/+1 counters on SN.;\
         Whenever SN attacks, it gains trample until end of turn if its power is 10 or greater.
 timing=main
 oracle=Whenever you cast a spell, you may put two +1/+1 counters on Witch-Maw Nephilim.\nWhenever Witch-Maw Nephilim attacks, it gains trample until end of turn if its power is 10 or greater.
+status=needs groovy

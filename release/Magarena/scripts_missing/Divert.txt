@@ -7,3 +7,4 @@ cost={U}
 effect=Change the target of target spell with a single target unless that spell's controller pays {2}.
 timing=removal
 oracle=Change the target of target spell with a single target unless that spell's controller pays {2}.
+status=not supported: change-target

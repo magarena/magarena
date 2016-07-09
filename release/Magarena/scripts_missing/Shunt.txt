@@ -7,3 +7,4 @@ cost={1}{R}{R}
 effect=Change the target of target spell with a single target.
 timing=removal
 oracle=Change the target of target spell with a single target.
+status=not supported: change-target

@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Change the target of target spell with a single target. You lose life equal to that spell's converted mana cost.
 timing=removal
 oracle=Change the target of target spell with a single target. You lose life equal to that spell's converted mana cost.
+status=not supported: change-target
