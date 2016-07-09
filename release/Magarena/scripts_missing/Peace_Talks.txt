@@ -7,3 +7,4 @@ cost={1}{W}
 effect=This turn and next turn, creatures can't attack, and players and permanents can't be the targets of spells or activated abilities.
 timing=main
 oracle=This turn and next turn, creatures can't attack, and players and permanents can't be the targets of spells or activated abilities.
+status=not supported: cant-be-target

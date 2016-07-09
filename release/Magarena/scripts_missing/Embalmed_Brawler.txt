@@ -10,3 +10,4 @@ ability=Amplify 1;\
         Whenever SN attacks or blocks, you lose 1 life for each +1/+1 counter on it.
 timing=main
 oracle=Amplify 1\nWhenever Embalmed Brawler attacks or blocks, you lose 1 life for each +1/+1 counter on it.
+status=not supported: amplify

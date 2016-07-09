@@ -7,3 +7,4 @@ cost={4}{U}
 effect=Draw two cards.~If you had a land enter the battlefield under your control this turn, draw three cards instead.
 timing=removal
 oracle=Draw two cards.\nLandfall — If you had a land enter the battlefield under your control this turn, draw three cards instead.
+status=not supported: no-info

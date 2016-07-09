@@ -9,3 +9,4 @@ pt=3/4
 ability=Whenever an opponent plays a land, put a +1/+1 counter on SN.
 timing=main
 oracle=Whenever an opponent plays a land, put a +1/+1 counter on Dirtcowl Wurm.
+status=not supported: when-plays-land

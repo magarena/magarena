@@ -6,3 +6,4 @@ type=Land
 ability={T}: Choose a color of a permanent you control. Add one mana of that color to your mana pool.
 timing=land
 oracle={T}: Choose a color of a permanent you control. Add one mana of that color to your mana pool.
+status=not supported: mana-ability-with-choice

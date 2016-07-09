@@ -11,3 +11,4 @@ ability=Devoid;\
         When SN enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, each opponent discards a card.
 timing=main
 oracle=Devoid\nWhen Mind Raker enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, each opponent discards a card.
+status=not supported: processor

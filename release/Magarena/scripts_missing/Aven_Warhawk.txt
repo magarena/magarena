@@ -10,3 +10,4 @@ ability=Amplify 1;\
         Flying
 timing=main
 oracle=Amplify 1\nFlying
+status=not supported: amplify

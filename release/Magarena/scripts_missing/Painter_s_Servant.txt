@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, choose a color.;\
         All cards that aren't on the battlefield, spells, and permanents are the chosen color in addition to their other colors.
 timing=main
 oracle=As Painter's Servant enters the battlefield, choose a color.\nAll cards that aren't on the battlefield, spells, and permanents are the chosen color in addition to their other colors.
+status=not supported: spell-modification

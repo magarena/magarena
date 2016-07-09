@@ -11,3 +11,4 @@ ability=Amplify 3;\
         {T}: SN deals damage equal to the number of +1/+1 counters on it to target creature or player.
 timing=main
 oracle=Amplify 3\nFlying\n{T}: Kilnmouth Dragon deals damage equal to the number of +1/+1 counters on it to target creature or player.
+status=not supported: amplify

@@ -9,3 +9,4 @@ pt=2/3
 ability=SN can't be the target of spells unless it attacked or blocked this turn.
 timing=main
 oracle=Lurker can't be the target of spells unless it attacked or blocked this turn.
+status=not supported: cant-be-target

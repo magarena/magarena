@@ -8,3 +8,4 @@ ability=Conspire
 effect=Destroy target artifact or enchantment.
 timing=main
 oracle=Destroy target artifact or enchantment.\nConspire
+status=not supported: conspire

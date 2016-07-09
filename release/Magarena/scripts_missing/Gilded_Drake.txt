@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, exchange control of SN and up to one target creature an opponent controls. If you don't make an exchange, sacrifice SN. This ability can't be countered except by spells and abilities.
 timing=main
 oracle=Flying\nWhen Gilded Drake enters the battlefield, exchange control of Gilded Drake and up to one target creature an opponent controls. If you don't make an exchange, sacrifice Gilded Drake. This ability can't be countered except by spells and abilities.
+status=needs groovy

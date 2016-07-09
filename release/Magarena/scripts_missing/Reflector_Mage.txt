@@ -10,3 +10,4 @@ pt=2/3
 ability=When SN enters the battlefield, return target creature an opponent controls to its owner's hand. That creature's owner can't cast spells with the same name as that creature until your next turn.
 timing=main
 oracle=When Reflector Mage enters the battlefield, return target creature an opponent controls to its owner's hand. That creature's owner can't cast spells with the same name as that creature until your next turn.
+status=not supported: players-cant

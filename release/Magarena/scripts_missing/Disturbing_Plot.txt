@@ -8,3 +8,4 @@ ability=Conspire
 effect=Return target creature card from a graveyard to its owner's hand.
 timing=main
 oracle=Return target creature card from a graveyard to its owner's hand.\nConspire
+status=not supported: conspire

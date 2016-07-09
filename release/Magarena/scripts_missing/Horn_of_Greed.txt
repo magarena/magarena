@@ -7,3 +7,4 @@ cost={3}
 ability=Whenever a player plays a land, that player draws a card.
 timing=artifact
 oracle=Whenever a player plays a land, that player draws a card.
+status=not supported: when-plays-land

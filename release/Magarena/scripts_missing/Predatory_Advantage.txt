@@ -7,3 +7,4 @@ cost={3}{R}{G}
 ability=At the beginning of each opponent's end step, if that player didn't cast a creature spell this turn, put a 2/2 green Lizard creature token onto the battlefield.
 timing=enchantment
 oracle=At the beginning of each opponent's end step, if that player didn't cast a creature spell this turn, put a 2/2 green Lizard creature token onto the battlefield.
+status=not supported: no-info 

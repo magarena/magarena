@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Until end of turn, target player can't cast instant or sorcery spells, and that player can't activate abilities that aren't mana abilities.~Draw a card.
 timing=removal
 oracle=Until end of turn, target player can't cast instant or sorcery spells, and that player can't activate abilities that aren't mana abilities.\nDraw a card.
+status=not supported: players-cant

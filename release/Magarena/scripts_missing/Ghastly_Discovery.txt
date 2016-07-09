@@ -8,3 +8,4 @@ ability=Conspire
 effect=Draw two cards, then discard a card.
 timing=main
 oracle=Draw two cards, then discard a card.\nConspire
+status=not supported: conspire

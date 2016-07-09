@@ -7,3 +7,4 @@ cost={G}
 ability=Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.
 timing=enchantment
 oracle=Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.
+status=not supported: when-plays-land

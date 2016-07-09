@@ -11,3 +11,4 @@ ability=Defender;\
         SN can't be the target of spells that can target only Walls or of abilities that can target only Walls.
 timing=smain
 oracle=Defender\nPrevent all damage that would be dealt to Wall of Shadows by creatures it's blocking.\nWall of Shadows can't be the target of spells that can target only Walls or of abilities that can target only Walls.
+status=not supported: cant-be-target

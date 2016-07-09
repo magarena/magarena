@@ -7,3 +7,4 @@ cost={G}
 effect=Spells you control can't be countered by blue or black spells this turn, and creatures you control can't be the targets of blue or black spells this turn.
 timing=removal
 oracle=Spells you control can't be countered by blue or black spells this turn, and creatures you control can't be the targets of blue or black spells this turn.
+status=not supported: spell-modification

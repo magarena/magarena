@@ -7,3 +7,4 @@ cost={G}
 ability=When an opponent plays a nonbasic land, if SN is an enchantment, SN becomes a 3/3 Beast creature.
 timing=enchantment
 oracle=When an opponent plays a nonbasic land, if Hidden Herd is an enchantment, Hidden Herd becomes a 3/3 Beast creature.
+status=not supported: when-plays-land

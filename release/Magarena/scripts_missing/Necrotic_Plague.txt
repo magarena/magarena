@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature."\nWhen enchanted creature dies, its controller chooses target creature one of his or her opponents controls. Return Necrotic Plague from its owner's graveyard to the battlefield attached to that creature.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +0/+2 and can't be the target of spells.
+status=not supported: cant-be-target

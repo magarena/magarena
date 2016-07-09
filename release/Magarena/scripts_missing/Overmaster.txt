@@ -7,3 +7,4 @@ cost={R}
 effect=The next instant or sorcery spell you cast this turn can't be countered by spells or abilities.~Draw a card.
 timing=main
 oracle=The next instant or sorcery spell you cast this turn can't be countered by spells or abilities.\nDraw a card.
+status=not supported: spell-modification

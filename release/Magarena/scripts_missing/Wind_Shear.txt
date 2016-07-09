@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Attacking creatures with flying get -2/-2 and lose flying until end of turn.
 timing=removal
 oracle=Attacking creatures with flying get -2/-2 and lose flying until end of turn.
+status=needs groovy

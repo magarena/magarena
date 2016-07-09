@@ -11,3 +11,4 @@ ability=Flying;\
         Your opponents can't cast spells of the chosen color.
 timing=main
 oracle=Flying\nAs Iona, Shield of Emeria enters the battlefield, choose a color.\nYour opponents can't cast spells of the chosen color.
+status=not supported: players-cant

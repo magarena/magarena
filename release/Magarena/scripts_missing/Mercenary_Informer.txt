@@ -10,3 +10,4 @@ ability=SN can't be the target of black spells or abilities from black sources.;
         {2}{W}: Put target nontoken Mercenary on the bottom of its owner's library.
 timing=main
 oracle=Mercenary Informer can't be the target of black spells or abilities from black sources.\n{2}{W}: Put target nontoken Mercenary on the bottom of its owner's library.
+status=not supported: cant-be-target

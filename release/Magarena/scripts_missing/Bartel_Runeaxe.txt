@@ -10,3 +10,4 @@ ability=Vigilance;\
         SN can't be the target of Aura spells.
 timing=main
 oracle=Vigilance\nBartel Runeaxe can't be the target of Aura spells.
+status=not supported: cant-be-target

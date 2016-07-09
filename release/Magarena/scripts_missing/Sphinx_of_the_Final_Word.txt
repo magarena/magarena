@@ -12,3 +12,4 @@ ability=SN can't be countered.;\
         Instant and sorcery spells you control can't be countered by spells or abilities.
 timing=main
 oracle=Sphinx of the Final Word can't be countered.\nFlying, hexproof\nInstant and sorcery spells you control can't be countered by spells or abilities.
+status=not supported: spell-modification

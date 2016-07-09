@@ -7,3 +7,4 @@ cost={3}
 ability=Whenever you cast a spell, creatures you control can't be the targets of spells or abilities your opponents control this turn.
 timing=artifact
 oracle=Whenever you cast a spell, creatures you control can't be the targets of spells or abilities your opponents control this turn.
+status=not supported: cant-be-target

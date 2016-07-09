@@ -10,3 +10,4 @@ ability=Amplify 1;\
         Trample
 timing=main
 oracle=Amplify 1\nTrample
+status=not supported: amplify

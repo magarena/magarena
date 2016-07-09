@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, put two 1/1 red and green Goblin Warrior
         Each red or green instant or sorcery spell you cast has conspire.
 timing=main
 oracle=When Wort, the Raidmother enters the battlefield, put two 1/1 red and green Goblin Warrior creature tokens onto the battlefield.\nEach red or green instant or sorcery spell you cast has conspire.
+status=not supporteD: spell-modification

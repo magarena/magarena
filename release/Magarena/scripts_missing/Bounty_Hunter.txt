@@ -10,3 +10,4 @@ ability={T}: Put a bounty counter on target nonblack creature.;\
         {T}: Destroy target creature with a bounty counter on it.
 timing=main
 oracle={T}: Put a bounty counter on target nonblack creature.\n{T}: Destroy target creature with a bounty counter on it.
+status=needs groovy

@@ -10,3 +10,4 @@ pt=5/5
 ability=As SN enters the battlefield, you may put two cards your opponents own from exile into their owners' graveyards. If you do, SN enters the battlefield with four +1/+1 counters on it.
 timing=main
 oracle=As Ulamog's Despoiler enters the battlefield, you may put two cards your opponents own from exile into their owners' graveyards. If you do, Ulamog's Despoiler enters the battlefield with four +1/+1 counters on it.
+status=not supported: processor

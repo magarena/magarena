@@ -10,3 +10,4 @@ ability=Islandwalk;\
         Whenever SN attacks, exile it. Return it to the battlefield under your control tapped and attacking at the beginning of the declare attackers step on your next turn.
 timing=main
 oracle=Islandwalk\nWhenever Meandering Towershell attacks, exile it. Return it to the battlefield under your control tapped and attacking at the beginning of the declare attackers step on your next turn.
+status=needs groovy

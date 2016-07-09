@@ -9,3 +9,4 @@ pt=6/6
 ability=Whenever a player plays a land, return SN to its owner's hand.
 timing=main
 oracle=Whenever a player plays a land, return Pangosaur to its owner's hand.
+status=not supported: when-plays-land

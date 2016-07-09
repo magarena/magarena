@@ -8,3 +8,4 @@ cost={2}{W}
 effect=If exactly one creature is attacking, you may pay {W} rather than pay SN's mana cost.~Destroy target attacking creature without flying.
 timing=removal
 oracle=If exactly one creature is attacking, you may pay {W} rather than pay Pitfall Trap's mana cost.\nDestroy target attacking creature without flying.
+status=needs groovy

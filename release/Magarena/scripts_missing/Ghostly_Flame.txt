@@ -7,3 +7,4 @@ cost={B}{R}
 ability=Black and/or red permanents and spells are colorless sources of damage.
 timing=enchantment
 oracle=Black and/or red permanents and spells are colorless sources of damage.
+status=not supported: spell-modification

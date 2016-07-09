@@ -9,3 +9,4 @@ pt=2/1
 ability=Spells and abilities your opponents control can't cause you to sacrifice permanents.
 timing=main
 oracle=Spells and abilities your opponents control can't cause you to sacrifice permanents.
+status=not supported: spell-modification

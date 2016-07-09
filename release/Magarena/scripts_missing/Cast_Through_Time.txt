@@ -7,3 +7,4 @@ cost={4}{U}{U}{U}
 ability=Instant and sorcery spells you control have rebound.
 timing=enchantment
 oracle=Instant and sorcery spells you control have rebound.
+status=not supported: spell-modification

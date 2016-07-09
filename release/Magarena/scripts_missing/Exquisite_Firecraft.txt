@@ -8,3 +8,4 @@ cost={1}{R}{R}
 effect=SN deals 4 damage to target creature or player.~If there are two or more instant and/or sorcery cards in your graveyard, SN can't be countered by spells or abilities.
 timing=main
 oracle=Exquisite Firecraft deals 4 damage to target creature or player.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, Exquisite Firecraft can't be countered by spells or abilities.
+status=not supported: spell-modification

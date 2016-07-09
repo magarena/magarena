@@ -11,3 +11,4 @@ ability=Devoid;\
         When SN enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, return target creature to its owner's hand.
 timing=main
 oracle=Devoid\nWhen Murk Strider enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, return target creature to its owner's hand.
+status=not supported: processor

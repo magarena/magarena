@@ -10,3 +10,4 @@ ability=Flying, hexproof;\
         Spells and abilities your opponents control can't cause you to sacrifice permanents.
 timing=main
 oracle=Flying, hexproof\nSpells and abilities your opponents control can't cause you to sacrifice permanents.
+status=not supported: spell-modification

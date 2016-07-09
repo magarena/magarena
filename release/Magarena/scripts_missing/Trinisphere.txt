@@ -7,3 +7,4 @@ cost={3}
 ability=As long as SN is untapped, each spell that would cost less than three mana to cast costs three mana to cast.
 timing=artifact
 oracle=As long as Trinisphere is untapped, each spell that would cost less than three mana to cast costs three mana to cast.
+status=needs groovy

@@ -10,3 +10,4 @@ pt=1/1
 ability=Creature spells can't be countered.
 timing=main
 oracle=Creature spells can't be countered.
+status=not supported: spell-modification

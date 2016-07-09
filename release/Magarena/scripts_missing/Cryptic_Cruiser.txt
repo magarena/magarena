@@ -11,3 +11,4 @@ ability=Devoid;\
         {2}{U}, Put a card an opponent owns from exile into that player's graveyard: Tap target creature.
 timing=main
 oracle=Devoid\n{2}{U}, Put a card an opponent owns from exile into that player's graveyard: Tap target creature.
+status=not supported: processor

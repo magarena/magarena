@@ -9,3 +9,4 @@ pt=3/2
 ability=Creatures you control can't be the targets of blue spells or abilities from blue sources.
 timing=main
 oracle=Creatures you control can't be the targets of blue spells or abilities from blue sources.
+status=not supported: cant-be-target

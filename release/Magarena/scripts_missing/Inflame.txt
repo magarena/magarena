@@ -7,3 +7,4 @@ cost={R}
 effect=SN deals 2 damage to each creature dealt damage this turn.
 timing=removal
 oracle=Inflame deals 2 damage to each creature dealt damage this turn.
+status=not supported: no-info

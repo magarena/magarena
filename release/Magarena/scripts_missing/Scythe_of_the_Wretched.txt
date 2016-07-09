@@ -10,3 +10,4 @@ ability=Equipped creature gets +2/+2.;\
         Equip {4}
 timing=equipment
 oracle=Equipped creature gets +2/+2.\nWhenever a creature dealt damage by equipped creature this turn dies, return that card to the battlefield under your control. Attach Scythe of the Wretched to that creature.\nEquip {4}
+status=not supported: damage-by-SN-dies

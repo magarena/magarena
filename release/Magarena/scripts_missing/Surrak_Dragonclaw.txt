@@ -12,3 +12,4 @@ ability=Flash;\
         Other creatures you control have trample.
 timing=flash
 oracle=Flash\nSurrak Dragonclaw can't be countered.\nCreature spells you control can't be countered.\nOther creatures you control have trample.
+status=not supported: spell-modification

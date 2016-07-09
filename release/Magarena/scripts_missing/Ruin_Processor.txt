@@ -10,3 +10,4 @@ pt=7/8
 ability=When you cast SN, you may put a card an opponent owns from exile into that player's graveyard. If you do, you gain 5 life.
 timing=main
 oracle=When you cast Ruin Processor, you may put a card an opponent owns from exile into that player's graveyard. If you do, you gain 5 life.
+status=not supported: processor

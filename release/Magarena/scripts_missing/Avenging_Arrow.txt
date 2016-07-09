@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Destroy target creature that dealt damage this turn.
 timing=removal
 oracle=Destroy target creature that dealt damage this turn.
+status=not supported: no-info

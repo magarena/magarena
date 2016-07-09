@@ -9,3 +9,4 @@ pt=4/4
 ability=Amplify 1
 timing=main
 oracle=Amplify 1
+status=not supported: amplify
