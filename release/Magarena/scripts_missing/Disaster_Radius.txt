@@ -9,3 +9,4 @@ ability=As an additional cost to cast SN, reveal a creature card from your hand.
 effect=SN deals X damage to each creature your opponents control, where X is the revealed card's converted mana cost.
 timing=main
 oracle=As an additional cost to cast Disaster Radius, reveal a creature card from your hand.\nDisaster Radius deals X damage to each creature your opponents control, where X is the revealed card's converted mana cost.
+status=not supported: reveal-cost

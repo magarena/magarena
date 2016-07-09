@@ -7,3 +7,4 @@ cost={G}
 ability=When an opponent casts a creature spell with flying, if SN is an enchantment, SN becomes a 3/5 Spider creature with reach.
 timing=enchantment
 oracle=When an opponent casts a creature spell with flying, if Hidden Spider is an enchantment, Hidden Spider becomes a 3/5 Spider creature with reach.
+status=needs groovy

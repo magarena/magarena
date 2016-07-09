@@ -11,3 +11,4 @@ ability=Flanking;\
         {2}: SN can't be regenerated this turn. Only any opponent may activate this ability.
 timing=main
 oracle=Flanking\nIf Knight of the Holy Nimbus would be destroyed, regenerate it.\n{2}: Knight of the Holy Nimbus can't be regenerated this turn. Only any opponent may activate this ability.
+status=not supported: any-player-activate

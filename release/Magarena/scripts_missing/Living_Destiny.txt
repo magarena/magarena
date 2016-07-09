@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, reveal a creature card from your hand.
 effect=You gain life equal to the revealed card's converted mana cost.
 timing=removal
 oracle=As an additional cost to cast Living Destiny, reveal a creature card from your hand.\nYou gain life equal to the revealed card's converted mana cost.
+status=not supported: reveal-cost

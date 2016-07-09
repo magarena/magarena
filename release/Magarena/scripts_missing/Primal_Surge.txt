@@ -7,3 +7,4 @@ cost={8}{G}{G}
 effect=Exile the top card of your library. If it's a permanent card, you may put it onto the battlefield. If you do, repeat this process.
 timing=main
 oracle=Exile the top card of your library. If it's a permanent card, you may put it onto the battlefield. If you do, repeat this process.
+status=needs groovy

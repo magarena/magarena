@@ -9,3 +9,4 @@ pt=2/2
 ability=As an additional cost to cast SN, reveal a Kithkin card from your hand or pay {3}.
 timing=main
 oracle=As an additional cost to cast Goldmeadow Stalwart, reveal a Kithkin card from your hand or pay {3}.
+status=not supported: reveal-cost

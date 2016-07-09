@@ -8,3 +8,4 @@ cost={5}
 ability={T}: Add {R} to your mana pool. When that mana is spent to cast a red instant or sorcery spell, copy that spell and you may choose new targets for the copy.
 timing=artifact
 oracle={T}: Add {R} to your mana pool. When that mana is spent to cast a red instant or sorcery spell, copy that spell and you may choose new targets for the copy.
+status=not supported: mana-spent

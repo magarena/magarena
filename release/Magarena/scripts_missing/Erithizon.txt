@@ -9,3 +9,4 @@ pt=4/4
 ability=Whenever SN attacks, put a +1/+1 counter on target creature of defending player's choice.
 timing=main
 oracle=Whenever Erithizon attacks, put a +1/+1 counter on target creature of defending player's choice.
+status=needs groovy

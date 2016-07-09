@@ -10,3 +10,4 @@ ability=Annihilator 2;\
         Whenever an opponent sacrifices a nontoken permanent, put that card onto the battlefield under your control.
 timing=main
 oracle=Annihilator 2\nWhenever an opponent sacrifices a nontoken permanent, put that card onto the battlefield under your control.
+status=needs groovy

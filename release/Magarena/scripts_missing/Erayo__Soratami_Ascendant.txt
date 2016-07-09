@@ -11,3 +11,4 @@ ability=Flying;\
 flip=Erayo's Essence
 timing=main
 oracle=Flying\nWhenever the fourth spell of a turn is cast, flip Erayo, Soratami Ascendant.
+status=needs groovy

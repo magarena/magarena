@@ -9,3 +9,4 @@ pt=6/5
 ability=When SN enters the battlefield, any player may sacrifice two creatures. If a player does, sacrifice SN.
 timing=main
 oracle=When Prowling Pangolin enters the battlefield, any player may sacrifice two creatures. If a player does, sacrifice Prowling Pangolin.
+status=needs groovy

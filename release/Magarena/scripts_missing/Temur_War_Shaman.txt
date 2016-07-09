@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, manifest the top card of your library.;\
         Whenever a permanent you control is turned face up, if it's a creature, you may have it fight target creature you don't control.
 timing=main
 oracle=When Temur War Shaman enters the battlefield, manifest the top card of your library.\nWhenever a permanent you control is turned face up, if it's a creature, you may have it fight target creature you don't control.
+status=needs groovy

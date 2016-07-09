@@ -9,3 +9,4 @@ pt=2/1
 ability=As an additional cost to cast SN, reveal an Elemental card from your hand or pay {3}.
 timing=main
 oracle=As an additional cost to cast Flamekin Bladewhirl, reveal an Elemental card from your hand or pay {3}.
+status=not supported: reveal-cost

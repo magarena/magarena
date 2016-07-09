@@ -7,3 +7,4 @@ cost={3}{B/R}{B/R}
 effect=Target player discards his or her hand unless he or she pays 7 life.
 timing=main
 oracle=Target player discards his or her hand unless he or she pays 7 life.
+status=needs groovy

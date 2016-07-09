@@ -7,3 +7,4 @@ cost={4}{W}{B}{G}
 effect=Choose up to one creature. Destroy the rest.
 timing=main
 oracle=Choose up to one creature. Destroy the rest.
+status=needs groovy

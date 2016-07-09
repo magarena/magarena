@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Target creature loses all "bands with other" abilities until end of turn.
 timing=main
 oracle={T}: Target creature loses all "bands with other" abilities until end of turn.
+status=not supported: banding

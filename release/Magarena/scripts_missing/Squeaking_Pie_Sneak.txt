@@ -10,3 +10,4 @@ ability=As an additional cost to cast SN, reveal a Goblin card from your hand or
         Fear
 timing=main
 oracle=As an additional cost to cast Squeaking Pie Sneak, reveal a Goblin card from your hand or pay {3}.\nFear
+status=not supported: reveal-cost

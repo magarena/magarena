@@ -9,3 +9,4 @@ ability=At the beginning of your upkeep, you may put a fungus counter on target 
         When SN leaves the battlefield, remove all fungus counters from all creatures.
 timing=enchantment
 oracle=At the beginning of your upkeep, you may put a fungus counter on target nontoken creature.\nWhenever a creature with a fungus counter on it dies, put a 1/1 green Saproling creature token onto the battlefield for each fungus counter on that creature.\nWhen Sporogenesis leaves the battlefield, remove all fungus counters from all creatures.
+status=needs groovy

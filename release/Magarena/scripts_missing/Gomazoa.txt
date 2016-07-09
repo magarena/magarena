@@ -10,3 +10,4 @@ ability=Defender, flying;\
         {T}: Put SN and each creature it's blocking on top of their owners' libraries, then those players shuffle their libraries.
 timing=smain
 oracle=Defender, flying\n{T}: Put Gomazoa and each creature it's blocking on top of their owners' libraries, then those players shuffle their libraries.
+status=needs groovy

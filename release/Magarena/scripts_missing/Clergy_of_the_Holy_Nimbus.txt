@@ -10,3 +10,4 @@ ability=If SN would be destroyed, regenerate it.;\
         {1}: SN can't be regenerated this turn. Only any opponent may activate this ability.
 timing=main
 oracle=If Clergy of the Holy Nimbus would be destroyed, regenerate it.\n{1}: Clergy of the Holy Nimbus can't be regenerated this turn. Only any opponent may activate this ability.
+status=not supported: any-player-activate

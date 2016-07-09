@@ -10,3 +10,4 @@ ability=As an additional cost to cast SN, reveal an Elf card from your hand or p
         Deathtouch
 timing=main
 oracle=As an additional cost to cast Wren's Run Vanquisher, reveal an Elf card from your hand or pay {3}.\nDeathtouch
+status=not supported: reveal-cost

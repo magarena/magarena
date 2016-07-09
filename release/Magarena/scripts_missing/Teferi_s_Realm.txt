@@ -7,3 +7,4 @@ cost={1}{U}{U}
 ability=At the beginning of each player's upkeep, that player chooses artifact, creature, land, or non-Aura enchantment. All nontoken permanents of that type phase out.
 timing=enchantment
 oracle=At the beginning of each player's upkeep, that player chooses artifact, creature, land, or non-Aura enchantment. All nontoken permanents of that type phase out.
+status=not supported: phasing

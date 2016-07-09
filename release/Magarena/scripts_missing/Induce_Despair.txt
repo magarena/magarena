@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, reveal a creature card from your hand.
 effect=Target creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost.
 timing=removal
 oracle=As an additional cost to cast Induce Despair, reveal a creature card from your hand.\nTarget creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost.
+status=not supported: reveal-cost
