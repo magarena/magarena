@@ -11,3 +11,4 @@ ability=Deathtouch;\
         When SN is turned face up, target player loses 2 life.
 timing=main
 oracle=Deathtouch\nMorph—Reveal a black card in your hand.\nWhen Ruthless Ripper is turned face up, target player loses 2 life.
+status=not supported: reveal-cost

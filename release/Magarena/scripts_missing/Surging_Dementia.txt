@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Ripple 4~Target player discards a card.
 timing=main
 oracle=Ripple 4\nTarget player discards a card.
+status=not supported: ripple

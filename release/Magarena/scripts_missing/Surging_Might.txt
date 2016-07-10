@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nRipple 4
+status=not supported: ripple

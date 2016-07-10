@@ -9,3 +9,4 @@ pt=4/4
 ability=At the beginning of your upkeep, you may choose a card type. If you do, each player sacrifices a permanent of that type.
 timing=main
 oracle=At the beginning of your upkeep, you may choose a card type. If you do, each player sacrifices a permanent of that type.
+status=not supported: choose-card-type

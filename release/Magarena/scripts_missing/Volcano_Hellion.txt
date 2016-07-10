@@ -10,3 +10,4 @@ ability=SN has echo {X}, where X is your life total.;\
         When SN enters the battlefield, it deals an amount of damage of your choice to you and target creature. The damage can't be prevented.
 timing=main
 oracle=Volcano Hellion has echo {X}, where X is your life total.\nWhen Volcano Hellion enters the battlefield, it deals an amount of damage of your choice to you and target creature. The damage can't be prevented.
+status=not supported: any-number-of

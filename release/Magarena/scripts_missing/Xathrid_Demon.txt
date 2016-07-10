@@ -10,3 +10,4 @@ ability=Flying, trample;\
         At the beginning of your upkeep, sacrifice a creature other than SN, then each opponent loses life equal to the sacrificed creature's power. If you can't sacrifice a creature, tap SN and you lose 7 life.
 timing=main
 oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a creature other than Xathrid Demon, then each opponent loses life equal to the sacrificed creature's power. If you can't sacrifice a creature, tap Xathrid Demon and you lose 7 life.
+status=needs groovy

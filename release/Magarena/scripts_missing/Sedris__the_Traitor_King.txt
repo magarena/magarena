@@ -9,3 +9,4 @@ pt=5/5
 ability=Each creature card in your graveyard has unearth {2}{B}.
 timing=main
 oracle=Each creature card in your graveyard has unearth {2}{B}.
+status=needs groovy

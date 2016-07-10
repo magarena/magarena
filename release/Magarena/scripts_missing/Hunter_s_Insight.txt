@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Choose target creature you control. Whenever that creature deals combat damage to a player or planeswalker this turn, draw that many cards.
 timing=removal
 oracle=Choose target creature you control. Whenever that creature deals combat damage to a player or planeswalker this turn, draw that many cards.
+status=needs groovy

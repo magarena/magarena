@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Ripple 4~SN deals 2 damage to target creature or player.
 timing=removal
 oracle=Ripple 4\nSurging Flame deals 2 damage to target creature or player.
+status=not supported: ripple

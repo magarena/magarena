@@ -7,3 +7,4 @@ cost={G}
 effect=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.~You may put that card onto the battlefield instead of putting it into your hand if a creature died this turn.
 timing=main
 oracle=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.\nMorbid — You may put that card onto the battlefield instead of putting it into your hand if a creature died this turn.
+status=needs groovy

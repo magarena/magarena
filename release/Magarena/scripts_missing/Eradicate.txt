@@ -7,3 +7,4 @@ cost={2}{B}{B}
 effect=Exile target nonblack creature. Search its controller's graveyard, hand, and library for all cards with the same name as that creature and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Exile target nonblack creature. Search its controller's graveyard, hand, and library for all cards with the same name as that creature and exile them. Then that player shuffles his or her library.
+status=needs groovy

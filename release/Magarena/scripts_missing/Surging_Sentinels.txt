@@ -10,3 +10,4 @@ ability=First strike;\
         Ripple 4
 timing=main
 oracle=First strike\nRipple 4
+status=not supported: ripple

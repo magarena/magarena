@@ -11,3 +11,4 @@ ability=Flying, trample;\
         Whenever a player loses the game, put five +1/+1 counters on SN.
 timing=main
 oracle=Flying, trample\nAt the beginning of your upkeep, each player loses 1 life. Put a +1/+1 counter on Blood Tyrant for each 1 life lost this way.\nWhenever a player loses the game, put five +1/+1 counters on Blood Tyrant.
+status=needs groovy

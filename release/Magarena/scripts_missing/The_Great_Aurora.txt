@@ -8,3 +8,4 @@ cost={6}{G}{G}{G}
 effect=Each player shuffles all cards from his or her hand and all permanents he or she owns into his or her library, then draws that many cards. Each player may put any number of land cards from his or her hand onto the battlefield. Exile SN.
 timing=main
 oracle=Each player shuffles all cards from his or her hand and all permanents he or she owns into his or her library, then draws that many cards. Each player may put any number of land cards from his or her hand onto the battlefield. Exile The Great Aurora.
+status=not supported: any-number-of

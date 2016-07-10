@@ -7,3 +7,4 @@ cost={3}{G}{U}
 effect=Choose a card type, then reveal the top four cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest into your graveyard.
 timing=removal
 oracle=Choose a card type, then reveal the top four cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest into your graveyard.
+status=not supported: choose-card-type

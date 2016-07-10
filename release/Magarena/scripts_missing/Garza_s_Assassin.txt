@@ -10,3 +10,4 @@ ability=Sacrifice SN: Destroy target nonblack creature.;\
         Recover—Pay half your life, rounded up.
 timing=main
 oracle=Sacrifice Garza's Assassin: Destroy target nonblack creature.\nRecover—Pay half your life, rounded up.
+status=needs groovy
