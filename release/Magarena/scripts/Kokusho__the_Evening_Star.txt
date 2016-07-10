@@ -6,8 +6,7 @@ type=Legendary,Creature
 subtype=Dragon,Spirit
 cost={4}{B}{B}
 pt=5/5
-ability=Flying
+ability=Flying;\
+        When SN dies, each opponent loses 5 life. You gain life equal to the life lost this way.
 timing=main
-requires_groovy_code
-# Need to determine the amount of life lost by opponents - some cards prevent life from being lost. See Platinum Emperion
 oracle=Flying\nWhen Kokusho, the Evening Star dies, each opponent loses 5 life. You gain life equal to the life lost this way.

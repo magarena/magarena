@@ -4,7 +4,6 @@ value=4.045
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
+ability=At the beginning of your upkeep, each opponent loses 1 life. You gain life equal to the life lost this way.
 timing=enchantment
-requires_groovy_code
-# Need to determine the amount of life lost by opponents - some cards prevent life from being lost. See Platinum Emperion
 oracle=At the beginning of your upkeep, each opponent loses 1 life. You gain life equal to the life lost this way.

@@ -4,7 +4,7 @@ value=3.553
 rarity=U
 type=Artifact
 cost={2}
-ability={1}, {T}, Sacrifice a creature: You gain 4 life.
+ability={1}, {T}, Sacrifice a creature: You gain 4 life.;\
+        {1}, {T}, Sacrifice a creature named Festering Newt: Each opponent loses 4 life. You gain life equal to the life lost this way.
 timing=artifact
-requires_groovy_code
 oracle={1}, {T}, Sacrifice a creature: You gain 4 life.\n{1}, {T}, Sacrifice a creature named Festering Newt: Each opponent loses 4 life. You gain life equal to the life lost this way.
