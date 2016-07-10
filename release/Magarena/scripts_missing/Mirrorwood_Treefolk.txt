@@ -9,3 +9,4 @@ pt=2/4
 ability={2}{R}{W}: The next time damage would be dealt to SN this turn, that damage is dealt to target creature or player instead.
 timing=main
 oracle={2}{R}{W}: The next time damage would be dealt to Mirrorwood Treefolk this turn, that damage is dealt to target creature or player instead.
+status=not supported: redirect-next-damage

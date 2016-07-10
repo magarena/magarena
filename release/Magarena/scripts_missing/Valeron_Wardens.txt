@@ -11,3 +11,4 @@ ability=Renown 2;\
         Whenever a creature you control becomes renowned, draw a card.
 timing=main
 oracle=Renown 2\nWhenever a creature you control becomes renowned, draw a card.
+status=needs groovy

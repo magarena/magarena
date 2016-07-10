@@ -9,3 +9,4 @@ pt=4/6
 ability=Whenever SN attacks, destroy all Auras attached to target land.
 timing=main
 oracle=Whenever Street Sweeper attacks, destroy all Auras attached to target land.
+status=needs groovy

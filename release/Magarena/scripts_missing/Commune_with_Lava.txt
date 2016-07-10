@@ -7,3 +7,4 @@ cost={X}{R}{R}
 effect=Exile the top X cards of your library. Until the end of your next turn, you may play those cards.
 timing=removal
 oracle=Exile the top X cards of your library. Until the end of your next turn, you may play those cards.
+status=not supported: may-play-card

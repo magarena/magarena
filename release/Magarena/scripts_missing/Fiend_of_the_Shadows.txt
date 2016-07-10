@@ -11,3 +11,4 @@ ability=Flying;\
         Sacrifice a Human: Regenerate SN.
 timing=main
 oracle=Flying\nWhenever Fiend of the Shadows deals combat damage to a player, that player exiles a card from his or her hand. You may play that card for as long as it remains exiled.\nSacrifice a Human: Regenerate Fiend of the Shadows.
+status=not supported: may-play-card

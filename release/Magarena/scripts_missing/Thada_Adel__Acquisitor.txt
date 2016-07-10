@@ -10,3 +10,4 @@ ability=Islandwalk;\
         Whenever SN deals combat damage to a player, search that player's library for an artifact card and exile it. Then that player shuffles his or her library. Until end of turn, you may play that card.
 timing=main
 oracle=Islandwalk\nWhenever Thada Adel, Acquisitor deals combat damage to a player, search that player's library for an artifact card and exile it. Then that player shuffles his or her library. Until end of turn, you may play that card.
+status=not supported: may-play-card

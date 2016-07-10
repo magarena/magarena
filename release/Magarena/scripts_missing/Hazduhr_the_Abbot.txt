@@ -9,3 +9,4 @@ pt=2/5
 ability={X}, {T}: The next X damage that would be dealt this turn to target white creature you control is dealt to SN instead.
 timing=main
 oracle={X}, {T}: The next X damage that would be dealt this turn to target white creature you control is dealt to Hazduhr the Abbot instead.
+status=not supported: redirect-next-damage

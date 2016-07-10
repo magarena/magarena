@@ -7,3 +7,4 @@ cost={5}
 ability={2}, {T}: Target opponent exiles the top card of his or her library. You may play that card this turn.
 timing=artifact
 oracle={2}, {T}: Target opponent exiles the top card of his or her library. You may play that card this turn.
+status=not supported: may-play-card

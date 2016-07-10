@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\n{1}{W}: The next 1 damage that would be dealt to enchanted creature this turn is dealt to target creature or player instead.
+status=not supported: redirect-next-damage

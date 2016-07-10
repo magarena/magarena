@@ -9,3 +9,4 @@ pt=2/1
 ability=Whenever a land enters the battlefield under an opponent's control, if that player had another land enter the battlefield under his or her control this turn, SN deals 3 damage to that player.
 timing=main
 oracle=Whenever a land enters the battlefield under an opponent's control, if that player had another land enter the battlefield under his or her control this turn, Tunnel Ignus deals 3 damage to that player.
+status=not supported: no-info

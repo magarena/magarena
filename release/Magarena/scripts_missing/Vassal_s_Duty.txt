@@ -7,3 +7,4 @@ cost={3}{W}
 ability={1}: The next 1 damage that would be dealt to target legendary creature you control this turn is dealt to you instead.
 timing=enchantment
 oracle={1}: The next 1 damage that would be dealt to target legendary creature you control this turn is dealt to you instead.
+status=not supported: redirect-next-damage

@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Exile the top three cards of your library. Until end of turn, you may play cards exiled this way.
 timing=main
 oracle=Exile the top three cards of your library. Until end of turn, you may play cards exiled this way.
+status=not supported: may-play-card

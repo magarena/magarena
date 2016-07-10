@@ -9,3 +9,4 @@ ability=You can't cast more than one spell each turn.;\
         If a card would be put into your graveyard from anywhere, exile it instead.
 timing=enchantment
 oracle=You can't cast more than one spell each turn.\nYou may play cards from your graveyard.\nIf a card would be put into your graveyard from anywhere, exile it instead.
+status=not supported: may-play-card

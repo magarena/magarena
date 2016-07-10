@@ -8,3 +8,4 @@ ability={3}, {T}: Target player exiles a card from his or her hand. Activate thi
         {1}: Choose a card exiled with SN. You may play that card this turn.
 timing=artifact
 oracle={3}, {T}: Target player exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.\n{1}: Choose a card exiled with Muse Vessel. You may play that card this turn.
+status=not supported: may-play-card

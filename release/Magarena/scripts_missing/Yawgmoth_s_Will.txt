@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Until end of turn, you may play cards from your graveyard.~If a card would be put into your graveyard from anywhere this turn, exile that card instead.
 timing=main
 oracle=Until end of turn, you may play cards from your graveyard.\nIf a card would be put into your graveyard from anywhere this turn, exile that card instead.
+status=not supported: may-play-card

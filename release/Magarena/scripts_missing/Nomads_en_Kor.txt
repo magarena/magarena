@@ -10,3 +10,4 @@ pt=1/1
 ability={0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.
 timing=main
 oracle={0}: The next 1 damage that would be dealt to Nomads en-Kor this turn is dealt to target creature you control instead.
+status=not supported: redirect-next-damage

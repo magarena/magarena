@@ -10,3 +10,4 @@ ability=Flanking;\
         {0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.
 timing=main
 oracle=Flanking\n{0}: The next 1 damage that would be dealt to Outrider en-Kor this turn is dealt to target creature you control instead.
+status=not supported: redirect-next-damage

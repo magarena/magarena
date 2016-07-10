@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, exile all cards from target opponent's g
         You may cast nonland cards exiled with SN. You can't cast more than one spell this way each turn.
 timing=enchantment
 oracle=When Hedonist's Trove enters the battlefield, exile all cards from target opponent's graveyard.\nYou may play land cards exiled with Hedonist's Trove.\nYou may cast nonland cards exiled with Hedonist's Trove. You can't cast more than one spell this way each turn.
+status=not supported: may-play-card

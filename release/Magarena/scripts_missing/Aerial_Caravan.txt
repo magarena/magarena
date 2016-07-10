@@ -10,3 +10,4 @@ ability=Flying;\
         {1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.
 timing=main
 oracle=Flying\n{1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.
+status=not supported: may-play-card

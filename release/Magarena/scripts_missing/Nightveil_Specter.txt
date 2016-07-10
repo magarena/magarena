@@ -11,3 +11,4 @@ ability=Flying;\
         You may play cards exiled with SN.
 timing=main
 oracle=Flying\nWhenever Nightveil Specter deals combat damage to a player, that player exiles the top card of his or her library.\nYou may play cards exiled with Nightveil Specter.
+status=not supported: may-play-card

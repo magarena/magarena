@@ -10,3 +10,4 @@ ability=Double strike, trample;\
         Whenever SN deals combat damage to a player, exile the top card of your library. You may play it this turn.
 timing=main
 oracle=Double strike, trample\nWhenever Prophetic Flamespeaker deals combat damage to a player, exile the top card of your library. You may play it this turn.
+status=not supported: may-play-card

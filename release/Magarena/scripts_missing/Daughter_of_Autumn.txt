@@ -9,3 +9,4 @@ pt=2/4
 ability={W}: The next 1 damage that would be dealt to target white creature this turn is dealt to SN instead.
 timing=main
 oracle={W}: The next 1 damage that would be dealt to target white creature this turn is dealt to Daughter of Autumn instead.
+status=not supported: redirect-next-damage
