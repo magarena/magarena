@@ -53,7 +53,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         getActionMap().put("closeMenu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                setVisible(false);
+                hideOverlay();
             }
         });
 

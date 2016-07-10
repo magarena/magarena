@@ -84,6 +84,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         } else if (duelPane.getDialogPanel().isVisible()) {
             duelPane.getDialogPanel().setVisible(false);
         } else {
+            pauseGame();
             new ScreenOptions(getFrame(), this);
         }
     }
@@ -100,6 +101,14 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     public void resetGame() {
         controller.resetGame();
+    }
+
+    public void pauseGame() {
+        controller.setGamePaused(true);
+    }
+
+    public void resumeGame() {
+        controller.setGamePaused(false);
     }
 
     @Override
@@ -132,14 +141,14 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     screen.concedeGame();
-                    setVisible(false);
+                    hideOverlay();
                 }
             });
             menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     screen.resetGame();
-                    setVisible(false);
+                    hideOverlay();
                 }
             });
             menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
@@ -154,7 +163,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     controller.createGameplayReport();
-                    setVisible(false);
+                    hideOverlay();
                 }
             });
             menu.addBlankItem();
@@ -175,6 +184,11 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             return true;
         }
 
+        @Override
+        public void hideOverlay() {
+            setVisible(false);
+            screen.resumeGame();
+        }
     }
 
     /**
