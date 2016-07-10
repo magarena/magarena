@@ -858,6 +858,35 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DrainLifeAlt(
+        ARG.PLAYERS + "( )?lose(s)?( " + ARG.AMOUNT + ")? life( (for each|equal to) " + ARG.WORDRUN + ")?\\. You gain life equal to the life lost this way",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "-Life"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return (game, event) -> {
+                final int multiplier = count.getAmount(event);
+                final int total = amount * multiplier;
+                if (count != MagicAmountFactory.One) {
+                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                }
+                int totalLost = 0;
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    final ChangeLifeAction act = new ChangeLifeAction(it, -total);
+                    game.doAction(act);
+                    if (act.getLifeChange() < 0) {
+                        totalLost += -act.getLifeChange();
+                    }
+                }
+                game.doAction(new ChangeLifeAction(event.getPlayer(), totalLost));
+            };
+        }
+    },
     GainLife(
         ARG.PLAYERS + "( )?gain(s)?( " + ARG.AMOUNT + ")? life( (for each|equal to) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Positive,
