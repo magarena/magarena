@@ -256,7 +256,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlickerEndStep(
-        "exile " + ARG.PERMANENTS + "\\. (if you do, )?return (those cards|the exiled card|that card|it|sn) to the battlefield under (their|its) owner's control at the beginning of the next end step",
+        "exile " + ARG.PERMANENTS + "\\. (if you do, )?return (those cards|the exiled card|that card|it|sn) to the battlefield under (their|its) owner('s|s') control at the beginning of the next end step",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
