@@ -992,7 +992,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 return false;
             }
             if (attacker.hasAbility(MagicAbility.Intimidate) &&
-                ((getColorFlags() & attacker.getColorFlags()) == 0)) {
+                !shareColor(attacker)) {
                 return false;
             }
         }
