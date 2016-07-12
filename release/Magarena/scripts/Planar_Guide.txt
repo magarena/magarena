@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={W}
 pt=1/1
-ability={3}{W}, Exile SN: Exile all creatures. At the beginning of the next end step, return those cards to the battlefield under their owners' control.
+ability={3}{W}, Exile SN: Exile all creatures. Return those cards to the battlefield under their owners' control at the beginning of the next end step.
 timing=main
 oracle={3}{W}, Exile Planar Guide: Exile all creatures. At the beginning of the next end step, return those cards to the battlefield under their owners' control.
