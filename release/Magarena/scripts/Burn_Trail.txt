@@ -8,4 +8,3 @@ ability=Conspire
 effect=SN deals 3 damage to target creature or player.
 timing=main
 oracle=Burn Trail deals 3 damage to target creature or player.\nConspire
-status=not supported: conspire
