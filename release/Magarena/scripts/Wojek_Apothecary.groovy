@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 for (final MagicPermanent creature : CREATURE.filter(event)) {
-                    if (creature == it || (it.getColorFlags() & creature.getColorFlags()) != 0) {
+                    if (creature == it || creature.shareColor(it)) {
                         game.doAction(new PreventDamageAction(creature, 1));
                     }
                 }

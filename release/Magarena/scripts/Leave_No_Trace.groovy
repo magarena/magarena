@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 final MagicPermanentList targetList = new MagicPermanentList();
                 for (final MagicPermanent enchantment : ENCHANTMENT.filter(event)) {
-                    if (enchantment == it || (it.getColorFlags() & enchantment.getColorFlags()) != 0) {
+                    if (enchantment == it || enchantment.shareColor(it)) {
                         targetList.add(enchantment);
                     }
                 }
