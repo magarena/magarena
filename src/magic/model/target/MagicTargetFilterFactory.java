@@ -997,6 +997,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl CREATURE_YOU_CONTROL_SHARE_COLOR = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() && target.isController(player) && target.shareColor(source);
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final int amount = source.isPermanent() && source.hasSubType(MagicSubType.Aura) ? 1 : 0;
@@ -2562,6 +2568,7 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> you control
         add("equipped creature you control", EQUIPPED_CREATURE_YOU_CONTROL);
+        add("creature you control that share a color with it", CREATURE_YOU_CONTROL_SHARE_COLOR);
 
         // <color|type|subtype> you don't control
         add("spell you don't control", SPELL_YOU_DONT_CONTROL);
