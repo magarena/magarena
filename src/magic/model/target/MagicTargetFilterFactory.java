@@ -1887,6 +1887,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl MONO_OR_MULTICOLORED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
+            return (MagicColor.isMono(permanent) || MagicColor.isMulti(permanent)) && permanent.isCreature();
+        }
+    };
+
     public static final MagicCardFilterImpl MULTICOLORED_CREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) && MagicColor.isMulti(target);
@@ -2534,6 +2540,7 @@ public class MagicTargetFilterFactory {
         add("nonenchantment creature", NONENCHANTMENT_CREATURE);
         add("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
         add("multicolored creature", MULTICOLORED_CREATURE);
+        add("creature that's one or more colors", MONO_OR_MULTICOLORED_CREATURE);
         add("unblocked creature", UNBLOCKED_ATTACKING_CREATURE);
         add("Cleric or Wizard creature", CLERIC_OR_WIZARD_CREATURE);
         add("creature that was dealt damage this turn", CREATURE_BEEN_DAMAGED);
