@@ -10,3 +10,4 @@ ability=Flash;\
         When SN enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.
 timing=flash
 oracle=Flash\nWhen Prismwake Merrow enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.
+status=not supported: choose-colors

@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\n{0}: Enchanted creature becomes the color or colors of your choice. Activate this ability only once each turn.
+status=not supported: choose-colors

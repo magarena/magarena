@@ -9,3 +9,4 @@ pt=4/2
 ability=At the beginning of your upkeep, you may have SN become the color or colors of your choice.
 timing=main
 oracle=At the beginning of your upkeep, you may have Shyft become the color or colors of your choice.
+status=not supported: choose-colors

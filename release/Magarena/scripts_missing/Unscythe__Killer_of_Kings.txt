@@ -10,3 +10,4 @@ ability=Equipped creature gets +3/+3 and has first strike.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +3/+3 and has first strike.\nWhenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, put a 2/2 black Zombie creature token onto the battlefield.\nEquip {2}
+status=needs groovy

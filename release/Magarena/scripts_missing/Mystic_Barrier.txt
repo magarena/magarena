@@ -8,3 +8,4 @@ ability=When SN enters the battlefield or at the beginning of your upkeep, choos
         Each player may attack only the opponent seated nearest him or her in the last chosen direction and planeswalkers controlled by that player.
 timing=enchantment
 oracle=When Mystic Barrier enters the battlefield or at the beginning of your upkeep, choose left or right.\nEach player may attack only the opponent seated nearest him or her in the last chosen direction and planeswalkers controlled by that player.
+status=not supported: multiple-players

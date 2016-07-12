@@ -7,3 +7,4 @@ cost={2}{W}{W}
 ability=Each creature you control gets +1/+1 for each white mana symbol in its mana cost.
 timing=enchantment
 oracle=Chroma — Each creature you control gets +1/+1 for each white mana symbol in its mana cost.
+status=needs groovy

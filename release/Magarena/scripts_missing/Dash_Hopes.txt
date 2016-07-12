@@ -7,3 +7,4 @@ cost={B}{B}
 effect=When you cast SN, any player may pay 5 life. If a player does, counter SN.~Counter target spell.
 timing=counter
 oracle=When you cast Dash Hopes, any player may pay 5 life. If a player does, counter Dash Hopes.\nCounter target spell.
+status=needs groovy

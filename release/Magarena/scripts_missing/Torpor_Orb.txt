@@ -7,3 +7,4 @@ cost={2}
 ability=Creatures entering the battlefield don't cause abilities to trigger.
 timing=artifact
 oracle=Creatures entering the battlefield don't cause abilities to trigger.
+status=not supported: permanents-cant

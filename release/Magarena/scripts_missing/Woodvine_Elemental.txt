@@ -10,3 +10,4 @@ ability=Trample;\
         Whenever SN attacks, each player reveals the top card of his or her library. For each nonland card revealed this way, attacking creatures you control get +1/+1 until end of turn. Then each player draws a card.
 timing=main
 oracle=Trample\nParley — Whenever Woodvine Elemental attacks, each player reveals the top card of his or her library. For each nonland card revealed this way, attacking creatures you control get +1/+1 until end of turn. Then each player draws a card.
+status=needs groovy

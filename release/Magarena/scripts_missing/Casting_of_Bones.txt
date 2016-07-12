@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nWhen enchanted creature dies, draw three cards, then discard one of them.
+status=not supported: discard-drawn

@@ -9,3 +9,4 @@ ability=Awaken 2—{4}{W}
 effect=Prevent all combat damage that would be dealt this turn by creatures target opponent controls.
 timing=removal
 oracle=Prevent all combat damage that would be dealt this turn by creatures target opponent controls.\nAwaken 2—{4}{W}
+status=needs groovy

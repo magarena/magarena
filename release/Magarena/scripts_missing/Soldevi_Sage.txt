@@ -9,3 +9,4 @@ pt=1/1
 ability={T}, Sacrifice two lands: Draw three cards, then discard one of them.
 timing=main
 oracle={T}, Sacrifice two lands: Draw three cards, then discard one of them.
+status=not supported: discard-drawn

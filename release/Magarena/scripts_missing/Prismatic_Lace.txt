@@ -7,3 +7,4 @@ cost={U}
 effect=Target permanent becomes the color or colors of your choice.
 timing=removal
 oracle=Target permanent becomes the color or colors of your choice.
+status=not supported: choose-colors

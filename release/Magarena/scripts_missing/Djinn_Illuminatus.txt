@@ -10,3 +10,4 @@ ability=Flying;\
         Each instant and sorcery spell you cast has replicate. The replicate cost is equal to its mana cost.
 timing=main
 oracle=Flying\nEach instant and sorcery spell you cast has replicate. The replicate cost is equal to its mana cost.
+status=not supported: spell-modification

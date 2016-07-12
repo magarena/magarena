@@ -7,3 +7,4 @@ cost={3}
 ability=Activated abilities of artifacts and creatures can't be activated unless they're mana abilities.
 timing=artifact
 oracle=Activated abilities of artifacts and creatures can't be activated unless they're mana abilities.
+status=not supported: players-cant

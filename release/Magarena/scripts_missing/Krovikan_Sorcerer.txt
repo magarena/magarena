@@ -10,3 +10,4 @@ ability={T}, Discard a nonblack card: Draw a card.;\
         {T}, Discard a black card: Draw two cards, then discard one of them.
 timing=main
 oracle={T}, Discard a nonblack card: Draw a card.\n{T}, Discard a black card: Draw two cards, then discard one of them.
+status=not supported: discard-drawn

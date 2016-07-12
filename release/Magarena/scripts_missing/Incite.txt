@@ -7,3 +7,4 @@ cost={R}
 effect=Target creature becomes red until end of turn and attacks this turn if able.
 timing=removal
 oracle=Target creature becomes red until end of turn and attacks this turn if able.
+status=needs groovy

@@ -10,3 +10,4 @@ ability={X}, {T}: Search your library for a Rebel permanent card with converted 
         {3}: Put target Rebel card from your graveyard on the bottom of your library.
 timing=main
 oracle={X}, {T}: Search your library for a Rebel permanent card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.\n{3}: Put target Rebel card from your graveyard on the bottom of your library.
+status=needs groovy

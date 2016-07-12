@@ -8,3 +8,4 @@ cost={5}{G}{G}{G}
 effect=For each creature your opponents control, put a 4/4 green Beast creature token onto the battlefield. Each of those Beasts fights a different one of those creatures.
 timing=main
 oracle=For each creature your opponents control, put a 4/4 green Beast creature token onto the battlefield. Each of those Beasts fights a different one of those creatures.
+status=needs groovy

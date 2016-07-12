@@ -7,3 +7,4 @@ cost={W}
 ability={1}: The next time an instant or sorcery spell would deal damage to you this turn, that spell deals that damage to its controller instead.
 timing=enchantment
 oracle={1}: The next time an instant or sorcery spell would deal damage to you this turn, that spell deals that damage to its controller instead.
+status=not supported: redirect-next-damage

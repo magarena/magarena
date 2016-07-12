@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose two colors.;\
         Each spell you cast costs {1} less to cast for each of the chosen colors it is.
 timing=artifact
 oracle=As Seal of the Guildpact enters the battlefield, choose two colors.\nEach spell you cast costs {1} less to cast for each of the chosen colors it is.
+status=not supported: choose-colors

@@ -10,3 +10,4 @@ ability={T}: Add one mana of any color to your mana pool.;\
         {T}: Target creature becomes the color or colors of your choice until end of turn.
 timing=main
 oracle={T}: Add one mana of any color to your mana pool.\n{T}: Target creature becomes the color or colors of your choice until end of turn.
+status=not supported: choose-colors

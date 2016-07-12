@@ -9,3 +9,4 @@ pt=3/3
 ability={G/U}{G/U}: Target creature you control becomes the color or colors of your choice until end of turn.
 timing=main
 oracle={G/U}{G/U}: Target creature you control becomes the color or colors of your choice until end of turn.
+status=not supported: choose-colors
