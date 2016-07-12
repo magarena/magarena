@@ -280,7 +280,15 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(MagicMultikickerCost.Replicate(cost));
-            card.add(ReplicateTrigger.create());
+            card.add(ThisSpellIsCastTrigger.Replicate);
+        }
+    },
+    Conspire("conspire", 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicKickerCost.Conspire(new MagicRegularCostEvent(
+                "Tap two untapped creatures you control that each share a color with it"
+            )));
+            card.add(ThisSpellIsCastTrigger.Conspire);
         }
     },
     Evoke("evoke " + ARG.MANACOST, 20) {

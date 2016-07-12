@@ -27,6 +27,9 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
         return new MagicKickerCost(aCost, "entwine");
     }
 
+    public static MagicKickerCost Conspire(final MagicMatchedCostEvent aCost) {
+        return new MagicKickerCost(aCost, "conspire");
+    }
 
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
