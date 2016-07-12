@@ -8,4 +8,3 @@ ability=Conspire
 effect=Target player puts the top four cards of his or her library into his or her graveyard.
 timing=main
 oracle=Target player puts the top four cards of his or her library into his or her graveyard.\nConspire
-status=not supported: conspire
