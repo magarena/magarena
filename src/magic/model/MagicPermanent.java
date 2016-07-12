@@ -546,6 +546,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return !hasState(MagicPermanentState.Tapped);
     }
 
+    @Override
     public int getColorFlags() {
         return cachedColorFlags;
     }

@@ -769,6 +769,11 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     @Override
+    public int getColorFlags() {
+        return 0;
+    }
+
+    @Override
     public boolean isValidTarget(final MagicSource source) {
         // Can't be the target of spells or abilities.
         if (hasAbility(MagicAbility.Shroud)) {

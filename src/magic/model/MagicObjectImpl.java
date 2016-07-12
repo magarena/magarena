@@ -51,6 +51,11 @@ public abstract class MagicObjectImpl implements MagicObject {
         return getCounters(counterType) > 0;
     }
 
+    @Override
+    public boolean shareColor(final MagicObject other) {
+        return (getColorFlags() & other.getColorFlags()) != 0;
+    }
+
     public static long getStateId(final Object obj) {
         if (obj == null) {
             return -1L;

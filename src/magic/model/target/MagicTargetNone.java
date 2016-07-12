@@ -80,6 +80,11 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     }
 
     @Override
+    public int getColorFlags() {
+        return 0;
+    }
+
+    @Override
     public int getPreventDamage() {
         return 0;
     }

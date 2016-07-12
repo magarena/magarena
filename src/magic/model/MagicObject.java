@@ -11,6 +11,8 @@ public interface MagicObject extends MagicCopyable {
     boolean     isCreaturePermanent();
     boolean     isPlaneswalkerPermanent();
     boolean     hasColor(final MagicColor color);
+    int         getColorFlags();
+    boolean     shareColor(final MagicObject other);
     boolean     hasAbility(final MagicAbility ability);
     boolean     hasType(final MagicType type);
     boolean     hasSubType(final MagicSubType subType);

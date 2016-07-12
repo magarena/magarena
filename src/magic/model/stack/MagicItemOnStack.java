@@ -175,6 +175,11 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     @Override
+    public int getColorFlags() {
+        return source.getColorFlags();
+    }
+
+    @Override
     public boolean hasAbility(final MagicAbility ability) {
         return source.hasAbility(ability);
     }
