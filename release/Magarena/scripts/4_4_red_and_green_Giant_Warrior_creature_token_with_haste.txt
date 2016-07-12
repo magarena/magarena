@@ -1,0 +1,8 @@
+name=4/4 red and green Giant Warrior creature token with haste
+token=Giant Warrior
+image=http://magiccards.info/extras/token/shadowmoor/giant-warrior.jpg
+value=4
+type=Creature
+subtype=Giant,Warrior
+color=rg
+pt=4/4

@@ -8,4 +8,3 @@ ability=Conspire
 effect=Put a 4/4 red and green Giant Warrior creature token with haste onto the battlefield. Exile it at the beginning of the next end step.
 timing=main
 oracle=Put a 4/4 red and green Giant Warrior creature token with haste onto the battlefield. Exile it at the beginning of the next end step.\nConspire
-status=not supported: conspire
