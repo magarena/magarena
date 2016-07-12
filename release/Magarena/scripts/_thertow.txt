@@ -8,4 +8,3 @@ ability=Conspire
 effect=Put target attacking or blocking creature on top of its owner's library.
 timing=removal
 oracle=Put target attacking or blocking creature on top of its owner's library.\nConspire
-status=not supported: conspire
