@@ -6,6 +6,5 @@ type=Instant
 cost={G/W}
 ability=Conspire
 effect=Target creature gets +2/+2 until end of turn.
-timing=removal
+timing=pump
 oracle=Target creature gets +2/+2 until end of turn.\nConspire
-status=not supported: conspire
