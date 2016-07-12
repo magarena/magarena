@@ -10,3 +10,4 @@ ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on it.;\
         Whenever a +1/+1 counter is placed on SN, remove a +1/+1 counter from target creature an opponent controls.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Bloodcrazed Hoplite, put a +1/+1 counter on it.\nWhenever a +1/+1 counter is placed on Bloodcrazed Hoplite, remove a +1/+1 counter from target creature an opponent controls.
+status=not supported: when-counter-placed

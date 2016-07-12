@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose odd or even.;\
         Each creature without converted mana cost of the chosen value enters the battlefield tapped.
 timing=enchantment
 oracle=As Ashling's Prerogative enters the battlefield, choose odd or even.\nEach creature with converted mana cost of the chosen value has haste.\nEach creature without converted mana cost of the chosen value enters the battlefield tapped.
+status=needs groovy

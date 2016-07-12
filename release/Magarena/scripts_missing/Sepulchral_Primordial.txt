@@ -10,3 +10,4 @@ ability=Intimidate;\
         When SN enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.
 timing=main
 oracle=Intimidate\nWhen Sepulchral Primordial enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.
+status=needs groovy
