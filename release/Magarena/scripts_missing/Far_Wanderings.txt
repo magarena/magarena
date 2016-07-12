@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.~If seven or more cards are in your graveyard, instead search your library for up to three basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.\nThreshold — If seven or more cards are in your graveyard, instead search your library for up to three basic land cards, put them onto the battlefield tapped, then shuffle your library.
+status=needs groovy

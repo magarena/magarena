@@ -10,3 +10,4 @@ ability=Prowl {2}{B};\
         When SN enters the battlefield, if its prowl cost was paid, search target opponent's library for three cards and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Prowl {2}{B}\nWhen Earwig Squad enters the battlefield, if its prowl cost was paid, search target opponent's library for three cards and exile them. Then that player shuffles his or her library.
+status=not supported: prowl

@@ -10,3 +10,4 @@ ability=Prowl {1}{B};\
         Whenever a Rogue you control attacks and isn't blocked, it gets +2/+1 until end of turn.
 timing=main
 oracle=Prowl {1}{B}\nWhenever a Rogue you control attacks and isn't blocked, it gets +2/+1 until end of turn.
+status=not supported: prowl

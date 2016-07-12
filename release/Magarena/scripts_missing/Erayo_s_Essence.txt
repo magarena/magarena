@@ -9,3 +9,4 @@ flip=Erayo, Soratami Ascendant
 timing=enchantment
 hidden
 oracle=Whenever an opponent casts his or her first spell each turn, counter that spell.
+status=needs groovy

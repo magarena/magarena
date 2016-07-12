@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, choose a basic land type.;\
         Lands you control are the chosen type in addition to their other types.
 timing=main
 oracle=As Realmwright enters the battlefield, choose a basic land type.\nLands you control are the chosen type in addition to their other types.
+status=needs groovy

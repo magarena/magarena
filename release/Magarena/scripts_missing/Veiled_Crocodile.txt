@@ -7,3 +7,4 @@ cost={2}{U}
 ability=When a player has no cards in hand, if SN is an enchantment, SN becomes a 4/4 Crocodile creature.
 timing=enchantment
 oracle=When a player has no cards in hand, if Veiled Crocodile is an enchantment, Veiled Crocodile becomes a 4/4 Crocodile creature.
+status=needs groovy

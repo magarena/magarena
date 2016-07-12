@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Counter target spell if you control more creatures than that spell's controller.
 timing=counter
 oracle=Counter target spell if you control more creatures than that spell's controller.
+status=needs groovy

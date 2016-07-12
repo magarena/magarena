@@ -9,3 +9,4 @@ pt=1/2
 ability={W}, {T}: Target permanent you control gains protection from instant spells and from sorcery spells until end of turn.
 timing=main
 oracle={W}, {T}: Target permanent you control gains protection from instant spells and from sorcery spells until end of turn.
+status=not supported: missing-ability

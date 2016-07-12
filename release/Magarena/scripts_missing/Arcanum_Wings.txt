@@ -11,3 +11,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has flying.\nAura swap {2}{U}
+status=not supported: aura-swap

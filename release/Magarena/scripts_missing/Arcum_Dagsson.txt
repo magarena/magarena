@@ -9,3 +9,4 @@ pt=2/2
 ability={T}: Target artifact creature's controller sacrifices it. That player may search his or her library for a noncreature artifact card, put it onto the battlefield, then shuffle his or her library.
 timing=main
 oracle={T}: Target artifact creature's controller sacrifices it. That player may search his or her library for a noncreature artifact card, put it onto the battlefield, then shuffle his or her library.
+status=needs groovy

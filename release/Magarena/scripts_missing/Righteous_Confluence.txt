@@ -8,3 +8,4 @@ cost={3}{W}{W}
 effect=Choose three. You may choose the same mode more than once. (1) Put a 2/2 white Knight creature token with vigilance onto the battlefield. (2) Exile target enchantment. (3) You gain 5 life.
 timing=token
 oracle=Choose three. You may choose the same mode more than once.\n• Put a 2/2 white Knight creature token with vigilance onto the battlefield.\n• Exile target enchantment.\n• You gain 5 life.
+status=not supported: multi-choice-modal

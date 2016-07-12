@@ -10,3 +10,4 @@ ability=Morph {4}{U}{U};\
         When SN is turned face up, counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard. You may cast that card without paying its mana cost for as long as it remains exiled.
 timing=main
 oracle=Morph {4}{U}{U}\nWhen Kheru Spellsnatcher is turned face up, counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard. You may cast that card without paying its mana cost for as long as it remains exiled.
+status=not supported: may-play-card

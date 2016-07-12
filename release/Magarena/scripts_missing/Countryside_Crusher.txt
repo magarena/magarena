@@ -10,3 +10,4 @@ ability=At the beginning of your upkeep, reveal the top card of your library. If
         Whenever a land card is put into your graveyard from anywhere, put a +1/+1 counter on SN.
 timing=main
 oracle=At the beginning of your upkeep, reveal the top card of your library. If it's a land card, put it into your graveyard and repeat this process.\nWhenever a land card is put into your graveyard from anywhere, put a +1/+1 counter on Countryside Crusher.
+status=needs groovy

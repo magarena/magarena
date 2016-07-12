@@ -11,3 +11,4 @@ ability=Flanking;\
         {W}{W}, {T}: Destroy target permanent of the chosen color.
 timing=main
 oracle=Flanking\nAs Pentarch Paladin enters the battlefield, choose a color.\n{W}{W}, {T}: Destroy target permanent of the chosen color.
+status=needs groovy

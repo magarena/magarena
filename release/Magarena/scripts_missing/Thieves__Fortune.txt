@@ -8,3 +8,4 @@ cost={2}{U}
 effect=Prowl {U}~Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
 timing=removal
 oracle=Prowl {U}\nLook at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+status=not supported: prowl

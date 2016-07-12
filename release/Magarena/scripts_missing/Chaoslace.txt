@@ -7,3 +7,4 @@ cost={R}
 effect=Target spell or permanent becomes red.
 timing=removal
 oracle=Target spell or permanent becomes red.
+status=not supported: spell-modification

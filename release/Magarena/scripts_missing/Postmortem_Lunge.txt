@@ -7,3 +7,4 @@ cost={X}{B/P}
 effect=Return target creature card with converted mana cost X from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step.
 timing=main
 oracle=Return target creature card with converted mana cost X from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step.
+status=needs groovy

@@ -11,3 +11,4 @@ ability=Flying;\
         When SN enters the battlefield, if its prowl cost was paid, draw a card.
 timing=main
 oracle=Flying\nProwl {2}{U}\nWhen Latchkey Faerie enters the battlefield, if its prowl cost was paid, draw a card.
+status=not supported: prowl

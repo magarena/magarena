@@ -7,3 +7,4 @@ cost={X}{B}{R}
 effect=Destroy target creature with converted mana cost X. If that creature dies this way, SN deals damage equal to the creature's power to the creature's controller.
 timing=main
 oracle=Destroy target creature with converted mana cost X. If that creature dies this way, Kaervek's Purge deals damage equal to the creature's power to the creature's controller.
+status=needs groovy

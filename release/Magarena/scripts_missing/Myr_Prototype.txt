@@ -10,3 +10,4 @@ ability=At the beginning of your upkeep, put a +1/+1 counter on SN.;\
         SN can't attack or block unless you pay {1} for each +1/+1 counter on it.
 timing=main
 oracle=At the beginning of your upkeep, put a +1/+1 counter on Myr Prototype.\nMyr Prototype can't attack or block unless you pay {1} for each +1/+1 counter on it.
+status=needs groovy
