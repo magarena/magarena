@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player exiles two cards from his or her graveyard.
+status=not supported: enchant-player

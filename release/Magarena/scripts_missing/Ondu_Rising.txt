@@ -9,3 +9,4 @@ ability=Awaken 4—{4}{W}
 effect=Whenever a creature attacks this turn, it gains lifelink until end of turn.
 timing=main
 oracle=Whenever a creature attacks this turn, it gains lifelink until end of turn.\nAwaken 4—{4}{W}
+status=needs groovy

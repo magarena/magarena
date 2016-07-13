@@ -7,3 +7,4 @@ cost={1}{B}
 ability=Sacrifice SN: Return to your hand all creature cards in your graveyard that were put there from the battlefield this turn.
 timing=enchantment
 oracle=Sacrifice No Rest for the Wicked: Return to your hand all creature cards in your graveyard that were put there from the battlefield this turn.
+status=not supported: no-info

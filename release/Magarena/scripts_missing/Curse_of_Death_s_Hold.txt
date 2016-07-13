@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nCreatures enchanted player controls get -1/-1.
+status=not supported: enchant-player

@@ -9,3 +9,4 @@ pt=3/3
 ability=All Sliver creatures have "Whenever a creature dealt damage by this creature this turn dies, put a +1/+1 counter on this creature."
 timing=main
 oracle=All Sliver creatures have "Whenever a creature dealt damage by this creature this turn dies, put a +1/+1 counter on this creature."
+status=not supported: damage-by-SN-dies

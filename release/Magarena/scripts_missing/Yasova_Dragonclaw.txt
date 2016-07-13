@@ -10,3 +10,4 @@ ability=Trample;\
         At the beginning of combat on your turn, you may pay {1}{U/R}{U/R}. If you do, gain control of target creature an opponent controls with power less than SN's power until end of turn, untap that creature, and it gains haste until end of turn.
 timing=main
 oracle=Trample\nAt the beginning of combat on your turn, you may pay {1}{U/R}{U/R}. If you do, gain control of target creature an opponent controls with power less than Yasova Dragonclaw's power until end of turn, untap that creature, and it gains haste until end of turn.
+status=needs groovy

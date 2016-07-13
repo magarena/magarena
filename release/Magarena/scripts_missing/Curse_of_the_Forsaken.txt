@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nWhenever a creature attacks enchanted player, its controller gains 1 life.
+status=not supported: enchant-player

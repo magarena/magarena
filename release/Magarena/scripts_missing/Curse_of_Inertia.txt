@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nWhenever a player attacks enchanted player with one or more creatures, that attacking player may tap or untap target permanent of his or her choice.
+status=not supported: enchant-player

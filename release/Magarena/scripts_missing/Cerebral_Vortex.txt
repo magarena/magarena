@@ -7,3 +7,4 @@ cost={1}{U}{R}
 effect=Target player draws two cards, then SN deals damage to that player equal to the number of cards he or she has drawn this turn.
 timing=removal
 oracle=Target player draws two cards, then Cerebral Vortex deals damage to that player equal to the number of cards he or she has drawn this turn.
+status=needs groovy

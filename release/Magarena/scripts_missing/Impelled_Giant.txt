@@ -10,3 +10,4 @@ ability=Trample;\
         Tap an untapped red creature you control other than SN: SN gets +X/+0 until end of turn, where X is the power of the creature tapped this way.
 timing=main
 oracle=Trample\nTap an untapped red creature you control other than Impelled Giant: Impelled Giant gets +X/+0 until end of turn, where X is the power of the creature tapped this way.
+status=needs groovy

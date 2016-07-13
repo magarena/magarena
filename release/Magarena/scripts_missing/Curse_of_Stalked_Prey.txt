@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nWhenever a creature deals combat damage to enchanted player, put a +1/+1 counter on that creature.
+status=not supported: enchant-player

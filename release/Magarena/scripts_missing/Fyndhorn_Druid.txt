@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN dies, if it was blocked this turn, you gain 4 life.
 timing=main
 oracle=When Fyndhorn Druid dies, if it was blocked this turn, you gain 4 life.
+status=not supported: no-info

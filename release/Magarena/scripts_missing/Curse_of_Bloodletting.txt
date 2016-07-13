@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nIf a source would deal damage to enchanted player, it deals double that damage to that player instead.
+status=not supported: enchant-player

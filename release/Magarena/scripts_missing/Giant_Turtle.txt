@@ -9,3 +9,4 @@ pt=2/4
 ability=SN can't attack if it attacked during your last turn.
 timing=main
 oracle=Giant Turtle can't attack if it attacked during your last turn.
+status=not supported: no-info

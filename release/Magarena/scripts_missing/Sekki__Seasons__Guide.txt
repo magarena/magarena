@@ -11,3 +11,4 @@ ability=SN enters the battlefield with eight +1/+1 counters on it.;\
         Sacrifice eight Spirits: Return Sekki from your graveyard to the battlefield.
 timing=main
 oracle=Sekki, Seasons' Guide enters the battlefield with eight +1/+1 counters on it.\nIf damage would be dealt to Sekki, prevent that damage, remove that many +1/+1 counters from Sekki, and put that many 1/1 colorless Spirit creature tokens onto the battlefield.\nSacrifice eight Spirits: Return Sekki from your graveyard to the battlefield.
+status=needs groovy

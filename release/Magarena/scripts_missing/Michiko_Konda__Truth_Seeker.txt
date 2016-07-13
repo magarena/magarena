@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever a source an opponent controls deals damage to you, that player sacrifices a permanent.
 timing=main
 oracle=Whenever a source an opponent controls deals damage to you, that player sacrifices a permanent.
+status=needs groovy

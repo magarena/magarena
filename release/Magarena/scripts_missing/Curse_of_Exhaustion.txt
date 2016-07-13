@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,player
 oracle=Enchant player\nEnchanted player can't cast more than one spell each turn.
+status=not supported: enchant-player
