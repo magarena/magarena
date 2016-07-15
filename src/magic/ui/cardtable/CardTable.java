@@ -192,8 +192,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private void setSelectedRow() {
         if (table.getRowCount() > 0) {
             table.setRowSelectionInterval(0, 0);
-        } else {
-            notifyCardSelectionListeners(null);
         }
     }
 
