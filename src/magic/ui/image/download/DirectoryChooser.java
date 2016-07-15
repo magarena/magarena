@@ -1,6 +1,7 @@
 package magic.ui.image.download;
 
 import java.awt.Component;
+import java.awt.Container;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
@@ -15,8 +16,8 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.ScreenController;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicFileSystem;
@@ -135,6 +136,8 @@ public class DirectoryChooser extends JPanel {
             setDialogTitle(UiString.get(_S2));
             setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             setAcceptAllFileFilterUsed(false);
+            // disable the folder name textbox (see #803).
+            disableTextFields(this);
         }
         @Override
         public void approveSelection() {
@@ -147,6 +150,15 @@ public class DirectoryChooser extends JPanel {
                                 UiString.get(_S3),
                                 UiString.get(_S4))
                 );
+            }
+        }
+        private void disableTextFields(Container c) {
+            for (Component cmp : c.getComponents()) {
+                if (cmp instanceof JTextField) {
+                    ((JTextField) cmp).setEnabled(false);
+                } else if (cmp instanceof Container) {
+                    disableTextFields((Container) cmp);
+                }
             }
         }
     }
