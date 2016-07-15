@@ -212,9 +212,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     @Override
     public void newCardSelected(final MagicCardDefinition card) {
         SwingUtilities.invokeLater(() -> {
-            if (card != null) {
-                sideBarPanel.setCard(card);
-            }
+            sideBarPanel.setCard(card);
         });
     }
 
