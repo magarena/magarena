@@ -10,4 +10,4 @@ pt=3/2
 ability=When SN enters the battlefield, target creature an opponent controls gets -1/-1 until end of turn.;\
         At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, target creature an opponent controls gets -1/-1 until end of turn.
 timing=main
-oracle=When Tooth Collector enters the battlefield, target creature an opponent controls gets -1/-1 until end of turn.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, target creature that player controls gets -1/-1 until end of turn.
+oracle=When Tooth Collector enters the battlefield, target creature an opponent controls gets -1/-1 until end of turn.\nDelirium â€” At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, target creature that player controls gets -1/-1 until end of turn.

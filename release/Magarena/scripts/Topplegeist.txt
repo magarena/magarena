@@ -11,4 +11,4 @@ ability=Flying;\
         When SN enters the battlefield, tap target creature an opponent controls.;\
         At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, tap target creature an opponent controls.
 timing=main
-oracle=Flying\nWhen Topplegeist enters the battlefield, tap target creature an opponent controls.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, tap target creature that player controls.
+oracle=Flying\nWhen Topplegeist enters the battlefield, tap target creature an opponent controls.\nDelirium â€” At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, tap target creature that player controls.
