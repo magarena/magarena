@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Eldrazi,Werewolf
+color=
 pt=4/6
 ability={T}: Add {C}{C} to your mana pool.
 transform=Ulvenwald Captive
