@@ -6,5 +6,7 @@ type=Creature
 subtype=Eldrazi,Horror
 pt=4/4
 ability=First strike, trample, lifelink
+transform=Lone Rider
 timing=main
+hidden
 oracle=First strike, trample, lifelink

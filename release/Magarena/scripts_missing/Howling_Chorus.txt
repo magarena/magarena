@@ -7,5 +7,7 @@ subtype=Eldrazi,Werewolf
 pt=3/5
 ability=Creatures with power less than SN's power can't block it.;\
         Whenever SN deals combat damage to a player, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+transform=Shrill Howler
 timing=main
+hidden
 oracle=Creatures with power less than Howling Chorus's power can't block it.\nWhenever Howling Chorus deals combat damage to a player, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.

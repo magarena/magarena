@@ -8,5 +8,7 @@ pt=4/6
 ability=Vigilance;\
         SN must be blocked if able.;\
         SN can block an additional creature each combat.
+transform=Tangleclaw Werewolf
 timing=main
+hidden
 oracle=Vigilance\nFibrous Entangler must be blocked if able.\nFibrous Entangler can block an additional creature each combat.

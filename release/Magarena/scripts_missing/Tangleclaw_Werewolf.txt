@@ -8,5 +8,6 @@ cost={2}{G}{G}
 pt=2/4
 ability=SN can block an additional creature each combat.;\
         {6}{G}: Transform SN.
+transform=Fibrous Entangler
 timing=main
 oracle=Tangleclaw Werewolf can block an additional creature each combat.\n{6}{G}: Transform Tangleclaw Werewolf.

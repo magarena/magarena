@@ -7,5 +7,7 @@ subtype=Eldrazi,Werewolf
 pt=5/7
 ability=Trample;\
         {1}: SN gets +1/+0 until end of turn.
+transform=Vildin-Pack Outcast
 timing=main
+hidden
 oracle=Trample\n{1}: Dronepack Kindred gets +1/+0 until end of turn.

@@ -6,5 +6,7 @@ type=Creature
 subtype=Eldrazi,Fish
 pt=4/5
 ability={6}: Creatures your opponents control attack this turn if able.
+transform=Grizzled Angler
 timing=main
+hidden
 oracle={6}: Creatures your opponents control attack this turn if able.

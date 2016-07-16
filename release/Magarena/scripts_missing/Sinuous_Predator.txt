@@ -6,5 +6,7 @@ type=Creature
 subtype=Eldrazi,Werewolf
 pt=4/4
 ability=SN can't be blocked by more than one creature.
+transform=Kessig Prowler
 timing=main
+hidden
 oracle=Sinuous Predator can't be blocked by more than one creature.

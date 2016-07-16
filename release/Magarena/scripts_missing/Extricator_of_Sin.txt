@@ -8,5 +8,6 @@ cost={2}{W}
 pt=0/3
 ability=When SN enters the battlefield, you may sacrifice another permanent. If you do, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.;\
         At the beginning of your upkeep, if there are four or more card types among cards in your graveyard, transform SN.
+transform=Extricator of Flesh
 timing=main
 oracle=When Extricator of Sin enters the battlefield, you may sacrifice another permanent. If you do, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.\nDelirium — At the beginning of your upkeep, if there are four or more card types among cards in your graveyard, transform Extricator of Sin.

@@ -9,5 +9,6 @@ pt=4/4
 ability=Trample;\
         {R}: SN gets +1/-1 until end of turn.;\
         {5}{R}{R}: Transform SN.
+transform=Dronepack Kindred
 timing=main
 oracle=Trample\n{R}: Vildin-Pack Outcast gets +1/-1 until end of turn.\n{5}{R}{R}: Transform Vildin-Pack Outcast.

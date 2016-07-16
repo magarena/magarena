@@ -7,5 +7,7 @@ subtype=Eldrazi,Reflection
 pt=1/4
 ability=Flying, deathtouch;\
         Whenever SN attacks, each opponent loses 3 life.
+transform=Cryptolith Fragment
 timing=main
+hidden
 oracle=Flying, deathtouch\nWhenever Aurora of Emrakul attacks, each opponent loses 3 life.

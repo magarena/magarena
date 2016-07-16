@@ -7,5 +7,6 @@ cost={3}
 ability=SN enters the battlefield tapped.;\
         {T}: Add one mana of any color to your mana pool. Each player loses 1 life.;\
         At the beginning of your upkeep, if each player has 10 or less life, transform SN.
+transform=Aurora of Emrakul
 timing=artifact
 oracle=Cryptolith Fragment enters the battlefield tapped.\n{T}: Add one mana of any color to your mana pool. Each player loses 1 life.\nAt the beginning of your upkeep, if each player has 10 or less life, transform Cryptolith Fragment.

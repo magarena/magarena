@@ -8,5 +8,6 @@ cost={2}{G}
 pt=3/1
 ability=Creatures with power less than SN's power can't block it.;\
         {5}{G}: Transform SN.
+transform=Howling Chorus
 timing=main
 oracle=Creatures with power less than Shrill Howler's power can't block it.\n{5}{G}: Transform Shrill Howler.

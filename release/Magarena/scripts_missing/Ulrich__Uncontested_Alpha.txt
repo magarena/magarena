@@ -7,5 +7,7 @@ subtype=Werewolf
 pt=6/6
 ability=Whenever this creature transforms into SN, you may have it fight target non-Werewolf creature you don't control.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Ulrich of the Krallenhorde
 timing=main
+hidden
 oracle=Whenever this creature transforms into Ulrich, Uncontested Alpha, you may have it fight target non-Werewolf creature you don't control.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Ulrich, Uncontested Alpha.

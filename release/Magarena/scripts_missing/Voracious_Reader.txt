@@ -7,5 +7,7 @@ subtype=Eldrazi,Homunculus
 pt=3/4
 ability=Prowess;\
         Instant and sorcery spells you cast cost {1} less to cast.
+transform=Curious Homunculus
 timing=main
+hidden
 oracle=Prowess\nInstant and sorcery spells you cast cost {1} less to cast.

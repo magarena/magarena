@@ -6,5 +6,7 @@ type=Creature
 subtype=Eldrazi,Werewolf
 pt=4/6
 ability={T}: Add {C}{C} to your mana pool.
+transform=Ulvenwald Captive
 timing=main
+hidden
 oracle={T}: Add {C}{C} to your mana pool.
