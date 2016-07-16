@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Horror
+color=
 pt=4/4
 ability=First strike, trample, lifelink
 transform=Lone Rider

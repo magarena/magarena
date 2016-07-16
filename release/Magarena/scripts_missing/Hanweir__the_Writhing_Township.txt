@@ -4,8 +4,10 @@ value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Eldrazi,Ooze
+color=
 pt=7/4
 ability=Trample, haste;\
         Whenever SN attacks, put two 3/2 colorless Eldrazi Horror creature tokens onto the battlefield tapped and attacking.
 timing=main
+hidden
 oracle=Trample, haste\nWhenever Hanweir, the Writhing Township attacks, put two 3/2 colorless Eldrazi Horror creature tokens onto the battlefield tapped and attacking.

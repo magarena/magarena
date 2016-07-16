@@ -4,6 +4,7 @@ value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Werewolf
+color=rg
 pt=6/6
 ability=Whenever this creature transforms into SN, you may have it fight target non-Werewolf creature you don't control.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.

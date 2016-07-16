@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Homunculus
+color=
 pt=3/4
 ability=Prowess;\
         Instant and sorcery spells you cast cost {1} less to cast.

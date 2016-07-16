@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Werewolf
+color=
 pt=4/6
 ability=Vigilance;\
         SN must be blocked if able.;\

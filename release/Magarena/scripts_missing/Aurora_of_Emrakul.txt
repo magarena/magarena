@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Reflection
+color=
 pt=1/4
 ability=Flying, deathtouch;\
         Whenever SN attacks, each opponent loses 3 life.

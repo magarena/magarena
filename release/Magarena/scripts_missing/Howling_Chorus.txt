@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Werewolf
+color=
 pt=3/5
 ability=Creatures with power less than SN's power can't block it.;\
         Whenever SN deals combat damage to a player, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.

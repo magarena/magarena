@@ -8,5 +8,6 @@ cost={2}{W}{W}
 pt=4/3
 ability=Flying, first strike, lifelink;\
         At the beginning of your end step, if you both own and control SN and a creature named Bruna, the Fading Light, exile them, then meld them into Brisela, Voice of Nightmares.
+transform=Brisela, Voice of Nightmares
 timing=main
 oracle=Flying, first strike, lifelink\nAt the beginning of your end step, if you both own and control Gisela, the Broken Blade and a creature named Bruna, the Fading Light, exile them, then meld them into Brisela, Voice of Nightmares.

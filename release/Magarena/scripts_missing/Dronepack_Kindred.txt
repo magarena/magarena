@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Eldrazi,Werewolf
+color=
 pt=5/7
 ability=Trample;\
         {1}: SN gets +1/+0 until end of turn.

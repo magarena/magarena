@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Fish
+color=
 pt=4/5
 ability={6}: Creatures your opponents control attack this turn if able.
 transform=Grizzled Angler

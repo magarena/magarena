@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Creature
 subtype=Eldrazi,Vampire
+color=
 pt=6/5
 ability=Flying;\
         When this creature transforms into SN, target opponent sacrifices three creatures.

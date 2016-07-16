@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi,Werewolf
+color=
 pt=5/4
 ability=Whenever SN attacks, add {C}{C} to your mana pool at the beginning of your next main phase this turn.
 transform=Conduit of Storms

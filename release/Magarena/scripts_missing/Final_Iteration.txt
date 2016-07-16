@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Creature
 subtype=Eldrazi,Insect
+color=
 pt=6/5
 ability=Flying;\
         Wizards you control get +2/+1 and have flying.;\
