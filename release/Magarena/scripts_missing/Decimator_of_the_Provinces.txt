@@ -1,0 +1,13 @@
+name=Decimator of the Provinces
+image=http://magiccards.info/scans/en/emn/2.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Eldrazi,Boar
+cost={10}
+pt=7/7
+ability=Emerge {6}{G}{G}{G};\
+        When you cast SN, creatures you control get +2/+2 and gain trample until end of turn.;\
+        Trample, haste
+timing=main
+oracle=Emerge {6}{G}{G}{G}\nWhen you cast Decimator of the Provinces, creatures you control get +2/+2 and gain trample until end of turn.\nTrample, haste

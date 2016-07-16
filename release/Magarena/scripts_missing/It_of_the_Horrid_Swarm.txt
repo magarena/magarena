@@ -1,0 +1,12 @@
+name=It of the Horrid Swarm
+image=http://magiccards.info/scans/en/emn/8.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Insect
+cost={8}
+pt=4/4
+ability=Emerge {6}{G};\
+        When you cast SN, put two 1/1 green Insect creature tokens onto the battlefield.
+timing=main
+oracle=Emerge {6}{G}\nWhen you cast It of the Horrid Swarm, put two 1/1 green Insect creature tokens onto the battlefield.

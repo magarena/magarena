@@ -1,0 +1,10 @@
+name=Sinuous Predator
+image=http://magiccards.info/scans/en/emn/163b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Werewolf
+pt=4/4
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Sinuous Predator can't be blocked by more than one creature.

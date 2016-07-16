@@ -1,0 +1,9 @@
+name=Deploy the Gatewatch
+image=http://magiccards.info/scans/en/emn/20.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={4}{W}{W}
+effect=Look at the top seven cards of your library. Put up to two planeswalker cards from among them onto the battlefield. Put the rest on the bottom of your library in a random order.
+timing=main
+oracle=Look at the top seven cards of your library. Put up to two planeswalker cards from among them onto the battlefield. Put the rest on the bottom of your library in a random order.

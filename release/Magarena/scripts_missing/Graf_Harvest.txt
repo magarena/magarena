@@ -1,0 +1,10 @@
+name=Graf Harvest
+image=http://magiccards.info/scans/en/emn/90.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={B}
+ability=Zombies you control have menace.;\
+        {3}{B}, Exile a creature card from your graveyard: Put a 2/2 black Zombie creature token onto the battlefield.
+timing=enchantment
+oracle=Zombies you control have menace.\n{3}{B}, Exile a creature card from your graveyard: Put a 2/2 black Zombie creature token onto the battlefield.

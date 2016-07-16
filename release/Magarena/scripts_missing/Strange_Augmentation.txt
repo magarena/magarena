@@ -1,0 +1,13 @@
+name=Strange Augmentation
+image=http://magiccards.info/scans/en/emn/105.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1.;\
+        Enchanted creature gets an additional +2/+2 as long as there are four or more card types among cards in your graveyard.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\nDelirium — Enchanted creature gets an additional +2/+2 as long as there are four or more card types among cards in your graveyard.

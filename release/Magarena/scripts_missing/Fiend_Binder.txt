@@ -1,0 +1,11 @@
+name=Fiend Binder
+image=http://magiccards.info/scans/en/emn/26.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=3/2
+ability=Whenever SN attacks, tap target creature defending player controls.
+timing=main
+oracle=Whenever Fiend Binder attacks, tap target creature defending player controls.

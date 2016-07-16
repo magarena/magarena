@@ -1,0 +1,12 @@
+name=Lone Rider
+image=http://magiccards.info/scans/en/emn/33a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=1/1
+ability=First strike, lifelink;\
+        At the beginning of the end step, if you gained 3 or more life this turn, transform SN.
+timing=main
+oracle=First strike, lifelink\nAt the beginning of the end step, if you gained 3 or more life this turn, transform Lone Rider.

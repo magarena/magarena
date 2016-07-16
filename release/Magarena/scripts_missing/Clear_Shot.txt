@@ -1,0 +1,9 @@
+name=Clear Shot
+image=http://magiccards.info/scans/en/emn/152.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Target creature you control gets +1/+1 until end of turn. It deals damage equal to its power to target creature you don't control.
+timing=removal
+oracle=Target creature you control gets +1/+1 until end of turn. It deals damage equal to its power to target creature you don't control.

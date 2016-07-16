@@ -1,0 +1,13 @@
+name=Impetuous Devils
+image=http://magiccards.info/scans/en/emn/132.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Devil
+cost={2}{R}{R}
+pt=6/1
+ability=Trample, haste;\
+        When SN attacks, up to one target creature defending player controls blocks it this combat if able.;\
+        At the beginning of the end step, sacrifice SN.
+timing=main
+oracle=Trample, haste\nWhen Impetuous Devils attacks, up to one target creature defending player controls blocks it this combat if able.\nAt the beginning of the end step, sacrifice Impetuous Devils.

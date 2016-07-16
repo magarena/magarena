@@ -1,0 +1,13 @@
+name=Grim Flayer
+image=http://magiccards.info/scans/en/emn/184.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human,Warrior
+cost={B}{G}
+pt=2/2
+ability=Trample;\
+        Whenever SN deals combat damage to a player, look at the top three cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.;\
+        SN gets +2/+2 as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Trample\nWhenever Grim Flayer deals combat damage to a player, look at the top three cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.\nDelirium — Grim Flayer gets +2/+2 as long as there are four or more card types among cards in your graveyard.

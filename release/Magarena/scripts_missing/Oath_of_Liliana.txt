@@ -1,0 +1,10 @@
+name=Oath of Liliana
+image=http://magiccards.info/scans/en/emn/99.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={2}{B}
+ability=When SN enters the battlefield, each opponent sacrifices a creature.;\
+        At the beginning of each end step, if a planeswalker entered the battlefield under your control this turn, put a 2/2 black Zombie creature token onto the battlefield.
+timing=enchantment
+oracle=When Oath of Liliana enters the battlefield, each opponent sacrifices a creature.\nAt the beginning of each end step, if a planeswalker entered the battlefield under your control this turn, put a 2/2 black Zombie creature token onto the battlefield.

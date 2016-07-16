@@ -1,0 +1,11 @@
+name=Stromkirk Condemned
+image=http://magiccards.info/scans/en/emn/106.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Horror
+cost={B}{B}
+pt=2/2
+ability=Discard a card: Vampires you control get +1/+1 until end of turn. Activate this ability only once each turn.
+timing=main
+oracle=Discard a card: Vampires you control get +1/+1 until end of turn. Activate this ability only once each turn.

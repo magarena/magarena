@@ -1,0 +1,11 @@
+name=Skirsdag Supplicant
+image=http://magiccards.info/scans/en/emn/104.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{B}
+pt=2/3
+ability={B}, {T}, Discard a card: Each player loses 2 life.
+timing=main
+oracle={B}, {T}, Discard a card: Each player loses 2 life.

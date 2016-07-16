@@ -1,0 +1,11 @@
+name=Faithbearer Paladin
+image=http://magiccards.info/scans/en/emn/25.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={4}{W}
+pt=3/4
+ability=Lifelink
+timing=main
+oracle=Lifelink

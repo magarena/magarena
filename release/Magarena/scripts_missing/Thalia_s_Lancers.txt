@@ -1,0 +1,12 @@
+name=Thalia's Lancers
+image=http://magiccards.info/scans/en/emn/47.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={3}{W}{W}
+pt=4/4
+ability=First strike;\
+        When SN enters the battlefield, you may search your library for a legendary card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=First strike\nWhen Thalia's Lancers enters the battlefield, you may search your library for a legendary card, reveal it, put it into your hand, then shuffle your library.

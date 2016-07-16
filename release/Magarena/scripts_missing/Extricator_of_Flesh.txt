@@ -1,0 +1,11 @@
+name=Extricator of Flesh
+image=http://magiccards.info/scans/en/emn/23b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Horror
+pt=3/5
+ability=Eldrazi you control have vigilance.;\
+        {2}, {T}, Sacrifice a non-Eldrazi creature: Put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+timing=main
+oracle=Eldrazi you control have vigilance.\n{2}, {T}, Sacrifice a non-Eldrazi creature: Put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.

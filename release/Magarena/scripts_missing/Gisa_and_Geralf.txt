@@ -1,0 +1,12 @@
+name=Gisa and Geralf
+image=http://magiccards.info/scans/en/emn/183.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{U}{B}
+pt=4/4
+ability=When SN enters the battlefield, put the top four cards of your library into your graveyard.;\
+        During each of your turns, you may cast a Zombie creature card from your graveyard.
+timing=main
+oracle=When Gisa and Geralf enters the battlefield, put the top four cards of your library into your graveyard.\nDuring each of your turns, you may cast a Zombie creature card from your graveyard.

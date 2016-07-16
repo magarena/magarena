@@ -1,0 +1,10 @@
+name=Abandon Reason
+image=http://magiccards.info/scans/en/emn/115.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+ability=Madness {1}{R}
+effect=Up to two target creatures each get +1/+0 and gain first strike until end of turn.
+timing=removal
+oracle=Up to two target creatures each get +1/+0 and gain first strike until end of turn.\nMadness {1}{R}

@@ -1,0 +1,12 @@
+name=Vexing Scuttler
+image=http://magiccards.info/scans/en/emn/11.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Crab
+cost={8}
+pt=4/5
+ability=Emerge {6}{U};\
+        When you cast SN, you may return target instant or sorcery card from your graveyard to your hand.
+timing=main
+oracle=Emerge {6}{U}\nWhen you cast Vexing Scuttler, you may return target instant or sorcery card from your graveyard to your hand.

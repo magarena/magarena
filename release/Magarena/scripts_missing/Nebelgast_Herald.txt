@@ -1,0 +1,13 @@
+name=Nebelgast Herald
+image=http://magiccards.info/scans/en/emn/71.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{U}
+pt=2/1
+ability=Flash;\
+        Flying;\
+        Whenever SN or another Spirit enters the battlefield under your control, tap target creature an opponent controls.
+timing=flash
+oracle=Flash\nFlying\nWhenever Nebelgast Herald or another Spirit enters the battlefield under your control, tap target creature an opponent controls.

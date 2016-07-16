@@ -1,0 +1,13 @@
+name=Ulvenwald Captive
+image=http://magiccards.info/scans/en/emn/175a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Werewolf,Horror
+cost={1}{G}
+pt=1/2
+ability=Defender;\
+        {T}: Add {G} to your mana pool. ;\
+        {5}{G}{G}: Transform SN.
+timing=smain
+oracle=Defender\n{T}: Add {G} to your mana pool. \n{5}{G}{G}: Transform Ulvenwald Captive.

@@ -1,0 +1,12 @@
+name=Desperate Sentry
+image=http://magiccards.info/scans/en/emn/21.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/2
+ability=When SN dies, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.;\
+        SN gets +3/+0 as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=When Desperate Sentry dies, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.\nDelirium — Desperate Sentry gets +3/+0 as long as there are four or more card types among cards in your graveyard.

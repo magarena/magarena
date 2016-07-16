@@ -1,0 +1,11 @@
+name=Slayer's Cleaver
+image=http://magiccards.info/scans/en/emn/198.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +3/+1 and must be blocked by an Eldrazi if able.;\
+        Equip {4}
+timing=equipment
+oracle=Equipped creature gets +3/+1 and must be blocked by an Eldrazi if able.\nEquip {4}

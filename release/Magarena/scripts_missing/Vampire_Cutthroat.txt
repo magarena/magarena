@@ -1,0 +1,12 @@
+name=Vampire Cutthroat
+image=http://magiccards.info/scans/en/emn/110.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Rogue
+cost={B}
+pt=1/1
+ability=Skulk;\
+        Lifelink
+timing=main
+oracle=Skulk\nLifelink

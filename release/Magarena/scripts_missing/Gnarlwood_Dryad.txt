@@ -1,0 +1,12 @@
+name=Gnarlwood Dryad
+image=http://magiccards.info/scans/en/emn/159.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dryad,Horror
+cost={G}
+pt=1/1
+ability=Deathtouch;\
+        SN gets +2/+2 as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Deathtouch\nDelirium — Gnarlwood Dryad gets +2/+2 as long as there are four or more card types among cards in your graveyard.

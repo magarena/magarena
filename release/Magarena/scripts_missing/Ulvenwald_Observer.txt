@@ -1,0 +1,11 @@
+name=Ulvenwald Observer
+image=http://magiccards.info/scans/en/emn/176.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Treefolk
+cost={4}{G}{G}
+pt=6/6
+ability=Whenever a creature you control with toughness 4 or greater dies, draw a card.
+timing=main
+oracle=Whenever a creature you control with toughness 4 or greater dies, draw a card.

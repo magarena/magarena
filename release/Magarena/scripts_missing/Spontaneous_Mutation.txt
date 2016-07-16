@@ -1,0 +1,13 @@
+name=Spontaneous Mutation
+image=http://magiccards.info/scans/en/emn/74.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+ability=Flash;\
+        Enchant creature;\
+        Enchanted creature gets -X/-0, where X is the number of cards in your graveyard.
+timing=flash
+enchant=default,creature
+oracle=Flash\nEnchant creature\nEnchanted creature gets -X/-0, where X is the number of cards in your graveyard.

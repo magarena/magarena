@@ -1,0 +1,12 @@
+name=Haunted Dead
+image=http://magiccards.info/scans/en/emn/92.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/2
+ability=When SN enters the battlefield, put a 1/1 white Spirit creature token with flying onto the battlefield.;\
+        {1}{B}, Discard two cards: Return SN from your graveyard to the battlefield tapped.
+timing=main
+oracle=When Haunted Dead enters the battlefield, put a 1/1 white Spirit creature token with flying onto the battlefield.\n{1}{B}, Discard two cards: Return Haunted Dead from your graveyard to the battlefield tapped.

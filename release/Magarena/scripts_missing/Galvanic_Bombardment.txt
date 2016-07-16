@@ -1,0 +1,9 @@
+name=Galvanic Bombardment
+image=http://magiccards.info/scans/en/emn/129.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={R}
+effect=SN deals X damage to target creature, where X is 2 plus the number of cards named Galvanic Bombardment in your graveyard.
+timing=removal
+oracle=Galvanic Bombardment deals X damage to target creature, where X is 2 plus the number of cards named Galvanic Bombardment in your graveyard.

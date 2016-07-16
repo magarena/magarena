@@ -1,0 +1,12 @@
+name=Fibrous Entangler
+image=http://magiccards.info/scans/en/emn/174b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Werewolf
+pt=4/6
+ability=Vigilance;\
+        SN must be blocked if able.;\
+        SN can block an additional creature each combat.
+timing=main
+oracle=Vigilance\nFibrous Entangler must be blocked if able.\nFibrous Entangler can block an additional creature each combat.

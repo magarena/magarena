@@ -1,0 +1,12 @@
+name=Weaver of Lightning
+image=http://magiccards.info/scans/en/emn/149.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=1/4
+ability=Reach;\
+        Whenever you cast an instant or sorcery spell, SN deals 1 damage to target creature an opponent controls.
+timing=main
+oracle=Reach\nWhenever you cast an instant or sorcery spell, Weaver of Lightning deals 1 damage to target creature an opponent controls.

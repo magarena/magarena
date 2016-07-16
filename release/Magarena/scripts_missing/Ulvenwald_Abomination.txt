@@ -1,0 +1,10 @@
+name=Ulvenwald Abomination
+image=http://magiccards.info/scans/en/emn/175b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Werewolf
+pt=4/6
+ability={T}: Add {C}{C} to your mana pool.
+timing=main
+oracle={T}: Add {C}{C} to your mana pool.

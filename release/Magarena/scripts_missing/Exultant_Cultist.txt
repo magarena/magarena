@@ -1,0 +1,11 @@
+name=Exultant Cultist
+image=http://magiccards.info/scans/en/emn/59.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/2
+ability=When SN dies, draw a card.
+timing=main
+oracle=When Exultant Cultist dies, draw a card.

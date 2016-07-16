@@ -1,0 +1,12 @@
+name=Curious Homunculus
+image=http://magiccards.info/scans/en/emn/54a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Homunculus
+cost={1}{U}
+pt=1/1
+ability={T}: Add {C} to your mana pool. Spend this mana only to cast an instant or sorcery spell.;\
+        At the beginning of your upkeep, if there are three or more instant and/or sorcery cards in your graveyard, transform SN.
+timing=main
+oracle={T}: Add {C} to your mana pool. Spend this mana only to cast an instant or sorcery spell.\nAt the beginning of your upkeep, if there are three or more instant and/or sorcery cards in your graveyard, transform Curious Homunculus.

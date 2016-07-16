@@ -1,0 +1,9 @@
+name=Fortune's Favor
+image=http://magiccards.info/scans/en/emn/61.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Target opponent looks at the top four cards of your library and separates them into a face-down pile and a face-up pile. Put one pile into your hand and the other into your graveyard.
+timing=removal
+oracle=Target opponent looks at the top four cards of your library and separates them into a face-down pile and a face-up pile. Put one pile into your hand and the other into your graveyard.

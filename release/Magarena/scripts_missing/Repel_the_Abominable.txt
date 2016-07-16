@@ -1,0 +1,9 @@
+name=Repel the Abominable
+image=http://magiccards.info/scans/en/emn/38.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Prevent all damage that would be dealt this turn by non-Human sources.
+timing=removal
+oracle=Prevent all damage that would be dealt this turn by non-Human sources.

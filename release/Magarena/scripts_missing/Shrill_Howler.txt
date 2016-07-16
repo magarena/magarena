@@ -1,0 +1,12 @@
+name=Shrill Howler
+image=http://magiccards.info/scans/en/emn/168a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Werewolf,Horror
+cost={2}{G}
+pt=3/1
+ability=Creatures with power less than SN's power can't block it.;\
+        {5}{G}: Transform SN.
+timing=main
+oracle=Creatures with power less than Shrill Howler's power can't block it.\n{5}{G}: Transform Shrill Howler.

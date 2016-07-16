@@ -1,0 +1,11 @@
+name=Olivia's Dragoon
+image=http://magiccards.info/scans/en/emn/100.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Berserker
+cost={1}{B}
+pt=2/2
+ability=Discard a card: SN gains flying until end of turn.
+timing=main
+oracle=Discard a card: Olivia's Dragoon gains flying until end of turn.

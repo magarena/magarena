@@ -1,0 +1,9 @@
+name=Geier Reach Sanitarium
+image=http://magiccards.info/scans/en/emn/203.jpg
+value=2.500
+rarity=R
+type=Legendary,Land
+ability={T}: Add {C} to your mana pool.;\
+        {2}, {T}: Each player draws a card, then discards a card.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Each player draws a card, then discards a card.

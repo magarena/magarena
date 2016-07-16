@@ -1,0 +1,10 @@
+name=It That Rides as One
+image=http://magiccards.info/scans/en/emn/33b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Horror
+pt=4/4
+ability=First strike, trample, lifelink
+timing=main
+oracle=First strike, trample, lifelink

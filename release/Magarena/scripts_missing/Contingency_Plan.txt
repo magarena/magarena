@@ -1,0 +1,9 @@
+name=Contingency Plan
+image=http://magiccards.info/scans/en/emn/52.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Look at the top five cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.
+timing=main
+oracle=Look at the top five cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.

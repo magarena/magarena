@@ -1,0 +1,12 @@
+name=Hanweir Garrison
+image=http://magiccards.info/scans/en/emn/130a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={2}{R}
+pt=2/3
+ability=Whenever SN attacks, put two 1/1 red Human creature tokens onto the battlefield tapped and attacking.;\
+       
+timing=main
+oracle=Whenever Hanweir Garrison attacks, put two 1/1 red Human creature tokens onto the battlefield tapped and attacking.\n(Melds with Hanweir Battlements.)

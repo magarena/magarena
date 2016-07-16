@@ -1,0 +1,13 @@
+name=Stitcher's Graft
+image=http://magiccards.info/scans/en/emn/200.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +3/+3.;\
+        Whenever equipped creature attacks, it doesn't untap during its controller's next untap step.;\
+        Whenever SN becomes unattached from a permanent, sacrifice that permanent.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +3/+3.\nWhenever equipped creature attacks, it doesn't untap during its controller's next untap step.\nWhenever Stitcher's Graft becomes unattached from a permanent, sacrifice that permanent.\nEquip {2}

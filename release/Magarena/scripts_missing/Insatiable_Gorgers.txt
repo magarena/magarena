@@ -1,0 +1,12 @@
+name=Insatiable Gorgers
+image=http://magiccards.info/scans/en/emn/134.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Berserker
+cost={2}{R}{R}
+pt=5/3
+ability=SN attacks each combat if able.;\
+        Madness {3}{R}
+timing=main
+oracle=Insatiable Gorgers attacks each combat if able.\nMadness {3}{R}

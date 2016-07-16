@@ -1,0 +1,11 @@
+name=Weirded Vampire
+image=http://magiccards.info/scans/en/emn/113.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Horror
+cost={3}{B}
+pt=3/3
+ability=Madness {2}{B}
+timing=main
+oracle=Madness {2}{B}

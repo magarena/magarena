@@ -1,0 +1,12 @@
+name=Noosegraf Mob
+image=http://magiccards.info/scans/en/emn/98.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie
+cost={4}{B}{B}
+pt=0/0
+ability=SN enters the battlefield with five +1/+1 counters on it.;\
+        Whenever a player casts a spell, remove a +1/+1 counter from SN. If you do, put a 2/2 black Zombie creature token onto the battlefield.
+timing=main
+oracle=Noosegraf Mob enters the battlefield with five +1/+1 counters on it.\nWhenever a player casts a spell, remove a +1/+1 counter from Noosegraf Mob. If you do, put a 2/2 black Zombie creature token onto the battlefield.

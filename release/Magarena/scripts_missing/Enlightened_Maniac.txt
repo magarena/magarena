@@ -1,0 +1,11 @@
+name=Enlightened Maniac
+image=http://magiccards.info/scans/en/emn/58.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={3}{U}
+pt=0/2
+ability=When SN enters the battlefield, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+timing=main
+oracle=When Enlightened Maniac enters the battlefield, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.

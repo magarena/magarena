@@ -1,0 +1,13 @@
+name=Voldaren Pariah
+image=http://magiccards.info/scans/en/emn/111a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Horror
+cost={3}{B}{B}
+pt=3/3
+ability=Flying;\
+        Sacrifice three other creatures: Transform SN.;\
+        Madness {B}{B}{B}
+timing=main
+oracle=Flying\nSacrifice three other creatures: Transform Voldaren Pariah.\nMadness {B}{B}{B}

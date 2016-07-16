@@ -1,0 +1,10 @@
+name=Distemper of the Blood
+image=http://magiccards.info/scans/en/emn/126.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{R}
+ability=Madness {R}
+effect=Target creature gets +2/+2 and gains trample until end of turn.
+timing=main
+oracle=Target creature gets +2/+2 and gains trample until end of turn.\nMadness {R}

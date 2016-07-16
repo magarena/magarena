@@ -1,0 +1,12 @@
+name=Abundant Maw
+image=http://magiccards.info/scans/en/emn/1.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Leech
+cost={8}
+pt=6/4
+ability=Emerge {6}{B};\
+        When you cast SN, target opponent loses 3 life and you gain 3 life.
+timing=main
+oracle=Emerge {6}{B}\nWhen you cast Abundant Maw, target opponent loses 3 life and you gain 3 life.

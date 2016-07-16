@@ -1,0 +1,9 @@
+name=Blessed Alliance
+image=http://magiccards.info/scans/en/emn/13.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Escalate {2}~Choose one or more — (1) Target player gains 4 life. (2) Untap up to two target creatures. (3) Target opponent sacrifices an attacking creature.
+timing=removal
+oracle=Escalate {2}\nChoose one or more —\n• Target player gains 4 life.\n• Untap up to two target creatures.\n• Target opponent sacrifices an attacking creature.

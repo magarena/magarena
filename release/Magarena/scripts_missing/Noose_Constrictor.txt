@@ -1,0 +1,12 @@
+name=Noose Constrictor
+image=http://magiccards.info/scans/en/emn/164.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Snake
+cost={1}{G}
+pt=2/2
+ability=Reach;\
+        Discard a card: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Reach\nDiscard a card: Noose Constrictor gets +1/+1 until end of turn.

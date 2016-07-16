@@ -1,0 +1,12 @@
+name=Mournwillow
+image=http://magiccards.info/scans/en/emn/187.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Plant,Skeleton
+cost={1}{B}{G}
+pt=3/2
+ability=Haste;\
+        When SN enters the battlefield, if there are four or more card types among cards in your graveyard, creatures with power 2 or less can't block this turn.
+timing=fmain
+oracle=Haste\nDelirium — When Mournwillow enters the battlefield, if there are four or more card types among cards in your graveyard, creatures with power 2 or less can't block this turn.

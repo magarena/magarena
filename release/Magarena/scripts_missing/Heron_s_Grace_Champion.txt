@@ -1,0 +1,13 @@
+name=Heron's Grace Champion
+image=http://magiccards.info/scans/en/emn/185.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={2}{G}{W}
+pt=3/3
+ability=Flash;\
+        Lifelink;\
+        When SN enters the battlefield, other Humans you control get +1/+1 and gain lifelink until end of turn.
+timing=flash
+oracle=Flash\nLifelink\nWhen Heron's Grace Champion enters the battlefield, other Humans you control get +1/+1 and gain lifelink until end of turn.

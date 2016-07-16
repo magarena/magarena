@@ -1,0 +1,11 @@
+name=Crossroads Consecrator
+image=http://magiccards.info/scans/en/emn/154.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={G}
+pt=1/2
+ability={G}, {T}: Target attacking Human gets +1/+1 until end of turn.
+timing=main
+oracle={G}, {T}: Target attacking Human gets +1/+1 until end of turn.

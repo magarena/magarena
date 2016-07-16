@@ -1,0 +1,12 @@
+name=Selfless Spirit
+image=http://magiccards.info/scans/en/emn/40.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit,Cleric
+cost={1}{W}
+pt=2/1
+ability=Flying;\
+        Sacrifice SN: Creatures you control gain indestructible until end of turn.
+timing=main
+oracle=Flying\nSacrifice Selfless Spirit: Creatures you control gain indestructible until end of turn.

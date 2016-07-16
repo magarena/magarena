@@ -1,0 +1,12 @@
+name=Lashweed Lurker
+image=http://magiccards.info/scans/en/emn/9.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Horror
+cost={8}
+pt=5/4
+ability=Emerge {5}{G}{U};\
+        When you cast SN, you may put target nonland permanent on top of its owner's library.
+timing=main
+oracle=Emerge {5}{G}{U}\nWhen you cast Lashweed Lurker, you may put target nonland permanent on top of its owner's library.

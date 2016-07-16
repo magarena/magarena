@@ -1,0 +1,12 @@
+name=Imprisoned in the Moon
+image=http://magiccards.info/scans/en/emn/65.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant creature, land, or planeswalker;\
+        Enchanted permanent is a colorless land with "{T}: Add {C} to your mana pool" and loses all other card types and abilities.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature, land, or planeswalker\nEnchanted permanent is a colorless land with "{T}: Add {C} to your mana pool" and loses all other card types and abilities.

@@ -1,0 +1,11 @@
+name=Geist-Fueled Scarecrow
+image=http://magiccards.info/scans/en/emn/196.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Scarecrow
+cost={4}
+pt=4/4
+ability=Creature spells you cast cost {1} more to cast.
+timing=main
+oracle=Creature spells you cast cost {1} more to cast.

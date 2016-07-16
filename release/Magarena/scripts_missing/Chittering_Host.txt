@@ -1,0 +1,12 @@
+name=Chittering Host
+image=http://magiccards.info/scans/en/emn/96b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Horror
+pt=5/6
+ability=Haste;\
+        Menace;\
+        When SN enters the battlefield, other creatures you control get +1/+0 and gain menace until end of turn.
+timing=fmain
+oracle=Haste\nMenace\nWhen Chittering Host enters the battlefield, other creatures you control get +1/+0 and gain menace until end of turn.

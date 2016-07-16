@@ -1,0 +1,12 @@
+name=Eternal Scourge
+image=http://magiccards.info/scans/en/emn/7.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi,Horror
+cost={3}
+pt=3/3
+ability=You may cast SN from exile.;\
+        When SN becomes the target of a spell or ability an opponent controls, exile SN.
+timing=main
+oracle=You may cast Eternal Scourge from exile.\nWhen Eternal Scourge becomes the target of a spell or ability an opponent controls, exile Eternal Scourge.

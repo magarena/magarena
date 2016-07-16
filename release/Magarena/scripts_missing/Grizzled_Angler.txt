@@ -1,0 +1,11 @@
+name=Grizzled Angler
+image=http://magiccards.info/scans/en/emn/63a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human
+cost={2}{U}
+pt=2/3
+ability={T}: Put the top two cards of your library into your graveyard. Then if there is a colorless creature card in your graveyard, transform SN.
+timing=main
+oracle={T}: Put the top two cards of your library into your graveyard. Then if there is a colorless creature card in your graveyard, transform Grizzled Angler.

@@ -1,0 +1,11 @@
+name=Backwoods Survivalists
+image=http://magiccards.info/scans/en/emn/150.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}
+pt=4/3
+ability=SN gets +1/+1 and has trample as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Delirium — Backwoods Survivalists gets +1/+1 and has trample as long as there are four or more card types among cards in your graveyard.

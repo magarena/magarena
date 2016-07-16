@@ -1,0 +1,9 @@
+name=Emrakul's Influence
+image=http://magiccards.info/scans/en/emn/157.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{G}{G}
+ability=Whenever you cast an Eldrazi creature spell with converted mana cost 7 or greater, draw two cards.
+timing=enchantment
+oracle=Whenever you cast an Eldrazi creature spell with converted mana cost 7 or greater, draw two cards.

@@ -1,0 +1,13 @@
+name=Ishkanah, Grafwidow
+image=http://magiccards.info/scans/en/emn/162.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Spider
+cost={4}{G}
+pt=3/5
+ability=Reach;\
+        When SN enters the battlefield, if there are four or more card types among cards in your graveyard, put three 1/2 green Spider creature tokens with reach onto the battlefield.;\
+        {6}{B}: Target opponent loses 1 life for each Spider you control.
+timing=main
+oracle=Reach\nDelirium — When Ishkanah, Grafwidow enters the battlefield, if there are four or more card types among cards in your graveyard, put three 1/2 green Spider creature tokens with reach onto the battlefield.\n{6}{B}: Target opponent loses 1 life for each Spider you control.

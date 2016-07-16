@@ -1,0 +1,10 @@
+name=Falkenrath Reaver
+image=http://magiccards.info/scans/en/emn/127.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={1}{R}
+pt=2/2
+timing=main
+oracle=NONE

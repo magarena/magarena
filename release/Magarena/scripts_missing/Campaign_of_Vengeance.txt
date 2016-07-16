@@ -1,0 +1,9 @@
+name=Campaign of Vengeance
+image=http://magiccards.info/scans/en/emn/182.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}{B}
+ability=Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life.
+timing=enchantment
+oracle=Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life.

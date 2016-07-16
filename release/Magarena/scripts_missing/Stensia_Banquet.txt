@@ -1,0 +1,9 @@
+name=Stensia Banquet
+image=http://magiccards.info/scans/en/emn/144.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{R}
+effect=SN deals damage to target opponent equal to the number of Vampires you control.~Draw a card.
+timing=main
+oracle=Stensia Banquet deals damage to target opponent equal to the number of Vampires you control.\nDraw a card.

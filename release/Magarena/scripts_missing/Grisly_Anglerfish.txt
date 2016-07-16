@@ -1,0 +1,10 @@
+name=Grisly Anglerfish
+image=http://magiccards.info/scans/en/emn/63b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Fish
+pt=4/5
+ability={6}: Creatures your opponents control attack this turn if able.
+timing=main
+oracle={6}: Creatures your opponents control attack this turn if able.

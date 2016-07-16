@@ -1,0 +1,12 @@
+name=Advanced Stitchwing
+image=http://magiccards.info/scans/en/emn/49.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Horror
+cost={3}{U}{U}
+pt=3/4
+ability=Flying;\
+        {2}{U}, Discard two cards: Return SN from your graveyard to the battlefield tapped.
+timing=main
+oracle=Flying\n{2}{U}, Discard two cards: Return Advanced Stitchwing from your graveyard to the battlefield tapped.

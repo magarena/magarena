@@ -1,0 +1,14 @@
+name=Spell Queller
+image=http://magiccards.info/scans/en/emn/189.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit
+cost={1}{W}{U}
+pt=2/3
+ability=Flash;\
+        Flying;\
+        When SN enters the battlefield, exile target spell with converted mana cost 4 or less.;\
+        When SN leaves the battlefield, the exiled card's owner may cast that card without paying its mana cost.
+timing=flash
+oracle=Flash\nFlying\nWhen Spell Queller enters the battlefield, exile target spell with converted mana cost 4 or less.\nWhen Spell Queller leaves the battlefield, the exiled card's owner may cast that card without paying its mana cost.

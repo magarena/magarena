@@ -1,0 +1,11 @@
+name=Voracious Reader
+image=http://magiccards.info/scans/en/emn/54b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Homunculus
+pt=3/4
+ability=Prowess;\
+        Instant and sorcery spells you cast cost {1} less to cast.
+timing=main
+oracle=Prowess\nInstant and sorcery spells you cast cost {1} less to cast.

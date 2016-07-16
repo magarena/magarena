@@ -1,0 +1,10 @@
+name=Nahiri's Wrath
+image=http://magiccards.info/scans/en/emn/137.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={2}{R}
+ability=As an additional cost to cast SN, discard X cards.
+effect=SN deals damage equal to the total converted mana cost of the discarded cards to each of up to X target creatures and/or planeswalkers.
+timing=main
+oracle=As an additional cost to cast Nahiri's Wrath, discard X cards.\nNahiri's Wrath deals damage equal to the total converted mana cost of the discarded cards to each of up to X target creatures and/or planeswalkers.

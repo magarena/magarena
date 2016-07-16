@@ -1,0 +1,10 @@
+name=Alchemist's Greeting
+image=http://magiccards.info/scans/en/emn/116.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+ability=Madness {1}{R}
+effect=SN deals 4 damage to target creature.
+timing=main
+oracle=Alchemist's Greeting deals 4 damage to target creature.\nMadness {1}{R}

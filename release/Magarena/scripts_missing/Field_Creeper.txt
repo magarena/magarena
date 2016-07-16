@@ -1,0 +1,10 @@
+name=Field Creeper
+image=http://magiccards.info/scans/en/emn/195.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Scarecrow
+cost={2}
+pt=2/1
+timing=main
+oracle=NONE

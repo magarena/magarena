@@ -1,0 +1,11 @@
+name=Cryptolith Fragment
+image=http://magiccards.info/scans/en/emn/193a.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add one mana of any color to your mana pool. Each player loses 1 life.;\
+        At the beginning of your upkeep, if each player has 10 or less life, transform SN.
+timing=artifact
+oracle=Cryptolith Fragment enters the battlefield tapped.\n{T}: Add one mana of any color to your mana pool. Each player loses 1 life.\nAt the beginning of your upkeep, if each player has 10 or less life, transform Cryptolith Fragment.

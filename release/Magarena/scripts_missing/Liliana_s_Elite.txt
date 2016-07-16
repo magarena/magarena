@@ -1,0 +1,11 @@
+name=Liliana's Elite
+image=http://magiccards.info/scans/en/emn/94.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=1/1
+ability=SN gets +1/+1 for each creature card in your graveyard.
+timing=main
+oracle=Liliana's Elite gets +1/+1 for each creature card in your graveyard.

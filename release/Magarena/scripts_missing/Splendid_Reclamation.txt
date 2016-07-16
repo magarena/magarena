@@ -1,0 +1,9 @@
+name=Splendid Reclamation
+image=http://magiccards.info/scans/en/emn/171.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{G}
+effect=Return all land cards from your graveyard to the battlefield tapped.
+timing=main
+oracle=Return all land cards from your graveyard to the battlefield tapped.

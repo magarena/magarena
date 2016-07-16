@@ -1,0 +1,13 @@
+name=Bruna, the Fading Light
+image=http://magiccards.info/scans/en/emn/15a.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Angel,Horror
+cost={5}{W}{W}
+pt=5/7
+ability=When you cast SN, you may return target Angel or Human creature card from your graveyard to the battlefield.;\
+        Flying, vigilance;\
+       
+timing=main
+oracle=When you cast Bruna, the Fading Light, you may return target Angel or Human creature card from your graveyard to the battlefield.\nFlying, vigilance\n(Melds with Gisela, the Broken Blade.)

@@ -1,0 +1,11 @@
+name=Aurora of Emrakul
+image=http://magiccards.info/scans/en/emn/193b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Reflection
+pt=1/4
+ability=Flying, deathtouch;\
+        Whenever SN attacks, each opponent loses 3 life.
+timing=main
+oracle=Flying, deathtouch\nWhenever Aurora of Emrakul attacks, each opponent loses 3 life.

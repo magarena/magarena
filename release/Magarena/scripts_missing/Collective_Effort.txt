@@ -1,0 +1,9 @@
+name=Collective Effort
+image=http://magiccards.info/scans/en/emn/17.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{W}{W}
+effect=Escalate—Tap an untapped creature you control.~Choose one or more — (1) Destroy target creature with power 4 or greater. (2) Destroy target enchantment. (3) Put a +1/+1 counter on each creature target player controls.
+timing=main
+oracle=Escalate—Tap an untapped creature you control.\nChoose one or more —\n• Destroy target creature with power 4 or greater.\n• Destroy target enchantment.\n• Put a +1/+1 counter on each creature target player controls.

@@ -1,0 +1,11 @@
+name=Somberwald Stag
+image=http://magiccards.info/scans/en/emn/169.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elk
+cost={3}{G}{G}
+pt=4/3
+ability=When SN enters the battlefield, you may have it fight target creature you don't control.
+timing=main
+oracle=When Somberwald Stag enters the battlefield, you may have it fight target creature you don't control.

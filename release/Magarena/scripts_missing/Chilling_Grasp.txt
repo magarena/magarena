@@ -1,0 +1,10 @@
+name=Chilling Grasp
+image=http://magiccards.info/scans/en/emn/50.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}
+ability=Madness {3}{U}
+effect=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
+timing=removal
+oracle=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.\nMadness {3}{U}

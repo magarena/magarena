@@ -1,0 +1,9 @@
+name=Blood Mist
+image=http://magiccards.info/scans/en/emn/119.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{R}
+ability=At the beginning of combat on your turn, target creature you control gains double strike until end of turn.
+timing=enchantment
+oracle=At the beginning of combat on your turn, target creature you control gains double strike until end of turn.

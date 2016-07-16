@@ -1,0 +1,12 @@
+name=Markov Crusader
+image=http://magiccards.info/scans/en/emn/95.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Knight
+cost={4}{B}
+pt=4/3
+ability=Lifelink;\
+        SN has haste as long as you control another Vampire.
+timing=main
+oracle=Lifelink\nMarkov Crusader has haste as long as you control another Vampire.

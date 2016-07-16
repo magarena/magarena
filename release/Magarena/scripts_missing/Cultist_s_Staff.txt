@@ -1,0 +1,11 @@
+name=Cultist's Staff
+image=http://magiccards.info/scans/en/emn/194.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+2.;\
+        Equip {3}
+timing=equipment
+oracle=Equipped creature gets +2/+2.\nEquip {3}

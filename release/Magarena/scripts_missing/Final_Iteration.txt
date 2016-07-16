@@ -1,0 +1,12 @@
+name=Final Iteration
+image=http://magiccards.info/scans/en/emn/56b.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi,Insect
+pt=6/5
+ability=Flying;\
+        Wizards you control get +2/+1 and have flying.;\
+        Whenever you cast an instant or sorcery spell, put a 1/1 blue Human Wizard creature token onto the battlefield.
+timing=main
+oracle=Flying\nWizards you control get +2/+1 and have flying.\nWhenever you cast an instant or sorcery spell, put a 1/1 blue Human Wizard creature token onto the battlefield.

@@ -1,0 +1,11 @@
+name=Identity Thief
+image=http://magiccards.info/scans/en/emn/64.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={2}{U}{U}
+pt=0/3
+ability=Whenever SN attacks, you may exile another target nontoken creature. If you do, SN becomes a copy of that creature until end of turn. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.
+timing=main
+oracle=Whenever Identity Thief attacks, you may exile another target nontoken creature. If you do, Identity Thief becomes a copy of that creature until end of turn. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.

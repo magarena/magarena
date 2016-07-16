@@ -1,0 +1,13 @@
+name=Faith Unbroken
+image=http://magiccards.info/scans/en/emn/24.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant creature you control;\
+        When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.;\
+        Enchanted creature gets +2/+2.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature you control\nWhen Faith Unbroken enters the battlefield, exile target creature an opponent controls until Faith Unbroken leaves the battlefield.\nEnchanted creature gets +2/+2.

@@ -1,0 +1,12 @@
+name=Swift Spinner
+image=http://magiccards.info/scans/en/emn/173.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spider
+cost={3}{G}
+pt=2/3
+ability=Flash;\
+        Reach
+timing=flash
+oracle=Flash\nReach

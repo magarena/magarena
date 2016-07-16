@@ -1,0 +1,10 @@
+name=Erupting Dreadwolf
+image=http://magiccards.info/scans/en/emn/142b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Werewolf
+pt=6/4
+ability=Whenever SN attacks, it deals 2 damage to target creature or player.
+timing=main
+oracle=Whenever Erupting Dreadwolf attacks, it deals 2 damage to target creature or player.

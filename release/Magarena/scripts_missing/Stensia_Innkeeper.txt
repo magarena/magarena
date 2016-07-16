@@ -1,0 +1,11 @@
+name=Stensia Innkeeper
+image=http://magiccards.info/scans/en/emn/145.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, tap target land an opponent controls. That land doesn't untap during its controller's next untap step.
+timing=main
+oracle=When Stensia Innkeeper enters the battlefield, tap target land an opponent controls. That land doesn't untap during its controller's next untap step.

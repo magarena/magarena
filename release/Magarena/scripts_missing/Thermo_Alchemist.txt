@@ -1,0 +1,13 @@
+name=Thermo-Alchemist
+image=http://magiccards.info/scans/en/emn/147.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}
+pt=0/3
+ability=Defender;\
+        {T}: SN deals 1 damage to each opponent.;\
+        Whenever you cast an instant or sorcery spell, untap SN.
+timing=smain
+oracle=Defender\n{T}: Thermo-Alchemist deals 1 damage to each opponent.\nWhenever you cast an instant or sorcery spell, untap Thermo-Alchemist.

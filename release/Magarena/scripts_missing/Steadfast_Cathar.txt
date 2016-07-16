@@ -1,0 +1,11 @@
+name=Steadfast Cathar
+image=http://magiccards.info/scans/en/emn/44.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/1
+ability=Whenever SN attacks, it gets +0/+2 until end of turn.
+timing=main
+oracle=Whenever Steadfast Cathar attacks, it gets +0/+2 until end of turn.

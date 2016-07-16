@@ -1,0 +1,9 @@
+name=Borrowed Malevolence
+image=http://magiccards.info/scans/en/emn/82.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Escalate {2}~Choose one or both — (1) Target creature gets +1/+1 until end of turn. (2) Target creature gets -1/-1 until end of turn.
+timing=removal
+oracle=Escalate {2}\nChoose one or both —\n• Target creature gets +1/+1 until end of turn.\n• Target creature gets -1/-1 until end of turn.

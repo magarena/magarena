@@ -1,0 +1,12 @@
+name=Mirrorwing Dragon
+image=http://magiccards.info/scans/en/emn/136.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Dragon
+cost={3}{R}{R}
+pt=4/5
+ability=Flying;\
+        Whenever a player casts an instant or sorcery spell that targets only SN, that player copies that spell for each other creature he or she controls that the spell could target. Each copy targets a different one of those creatures.
+timing=main
+oracle=Flying\nWhenever a player casts an instant or sorcery spell that targets only Mirrorwing Dragon, that player copies that spell for each other creature he or she controls that the spell could target. Each copy targets a different one of those creatures.

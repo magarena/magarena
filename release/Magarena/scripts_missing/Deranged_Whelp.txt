@@ -1,0 +1,11 @@
+name=Deranged Whelp
+image=http://magiccards.info/scans/en/emn/125.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wolf
+cost={1}{R}
+pt=2/1
+ability=Menace
+timing=main
+oracle=Menace

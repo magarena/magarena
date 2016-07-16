@@ -1,0 +1,10 @@
+name=Sigarda's Aid
+image=http://magiccards.info/scans/en/emn/41.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={W}
+ability=You may cast Aura and Equipment spells as though they had flash.;\
+        Whenever an Equipment enters the battlefield under your control, you may attach it to target creature you control.
+timing=enchantment
+oracle=You may cast Aura and Equipment spells as though they had flash.\nWhenever an Equipment enters the battlefield under your control, you may attach it to target creature you control.

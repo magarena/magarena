@@ -1,0 +1,13 @@
+name=Drownyard Behemoth
+image=http://magiccards.info/scans/en/emn/4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Crab
+cost={9}
+pt=5/7
+ability=Flash;\
+        Emerge {7}{U};\
+        SN has hexproof as long as it entered the battlefield this turn.
+timing=flash
+oracle=Flash\nEmerge {7}{U}\nDrownyard Behemoth has hexproof as long as it entered the battlefield this turn.

@@ -1,0 +1,13 @@
+name=Stromkirk Occultist
+image=http://magiccards.info/scans/en/emn/146.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Horror
+cost={2}{R}
+pt=3/2
+ability=Trample;\
+        Whenever SN deals combat damage to a player, exile the top card of your library. Until end of turn, you may play that card.;\
+        Madness {1}{R}
+timing=main
+oracle=Trample\nWhenever Stromkirk Occultist deals combat damage to a player, exile the top card of your library. Until end of turn, you may play that card.\nMadness {1}{R}

@@ -1,0 +1,9 @@
+name=Shreds of Sanity
+image=http://magiccards.info/scans/en/emn/141.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{R}
+effect=Return up to one target instant card and up to one target sorcery card from your graveyard to your hand, then discard a card. Exile SN.
+timing=main
+oracle=Return up to one target instant card and up to one target sorcery card from your graveyard to your hand, then discard a card. Exile Shreds of Sanity.

@@ -1,0 +1,11 @@
+name=Thraben Standard Bearer
+image=http://magiccards.info/scans/en/emn/48.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability={1}{W}, {T}, Discard a card: Put a 1/1 white Human Soldier creature token onto the battlefield.
+timing=main
+oracle={1}{W}, {T}, Discard a card: Put a 1/1 white Human Soldier creature token onto the battlefield.

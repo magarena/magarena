@@ -1,0 +1,12 @@
+name=Geist of the Archives
+image=http://magiccards.info/scans/en/emn/62.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{U}
+pt=0/4
+ability=Defender;\
+        At the beginning of your upkeep, scry 1.
+timing=smain
+oracle=Defender\nAt the beginning of your upkeep, scry 1.

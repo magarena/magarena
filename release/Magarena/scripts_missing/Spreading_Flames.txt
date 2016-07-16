@@ -1,0 +1,9 @@
+name=Spreading Flames
+image=http://magiccards.info/scans/en/emn/143.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={6}{R}
+effect=SN deals 6 damage divided as you choose among any number of target creatures.
+timing=removal
+oracle=Spreading Flames deals 6 damage divided as you choose among any number of target creatures.

@@ -1,0 +1,11 @@
+name=Woodland Patrol
+image=http://magiccards.info/scans/en/emn/180.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={2}{G}
+pt=3/2
+ability=Vigilance
+timing=main
+oracle=Vigilance

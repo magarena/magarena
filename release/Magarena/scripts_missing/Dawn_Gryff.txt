@@ -1,0 +1,11 @@
+name=Dawn Gryff
+image=http://magiccards.info/scans/en/emn/19.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hippogriff
+cost={2}{W}
+pt=2/2
+ability=Flying
+timing=main
+oracle=Flying

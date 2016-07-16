@@ -1,0 +1,11 @@
+name=Primal Druid
+image=http://magiccards.info/scans/en/emn/167.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=0/3
+ability=When SN dies, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=When Primal Druid dies, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

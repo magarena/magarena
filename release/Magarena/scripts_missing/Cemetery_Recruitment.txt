@@ -1,0 +1,9 @@
+name=Cemetery Recruitment
+image=http://magiccards.info/scans/en/emn/83.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{B}
+effect=Return target creature card from your graveyard to your hand. If it's a Zombie card, draw a card.
+timing=main
+oracle=Return target creature card from your graveyard to your hand. If it's a Zombie card, draw a card.

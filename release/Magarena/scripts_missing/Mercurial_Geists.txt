@@ -1,0 +1,12 @@
+name=Mercurial Geists
+image=http://magiccards.info/scans/en/emn/186.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{U}{R}
+pt=1/3
+ability=Flying;\
+        Whenever you cast an instant or sorcery spell, SN gets +3/+0 until end of turn.
+timing=main
+oracle=Flying\nWhenever you cast an instant or sorcery spell, Mercurial Geists gets +3/+0 until end of turn.

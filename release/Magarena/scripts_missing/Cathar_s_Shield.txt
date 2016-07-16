@@ -1,0 +1,11 @@
+name=Cathar's Shield
+image=http://magiccards.info/scans/en/emn/192.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={0}
+ability=Equipped creature gets +0/+3 and has vigilance.;\
+        Equip {3}
+timing=equipment
+oracle=Equipped creature gets +0/+3 and has vigilance.\nEquip {3}

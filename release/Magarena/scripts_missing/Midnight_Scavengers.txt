@@ -1,0 +1,12 @@
+name=Midnight Scavengers
+image=http://magiccards.info/scans/en/emn/96a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={4}{B}
+pt=3/3
+ability=When SN enters the battlefield, you may return target creature card with converted mana cost 3 or less from your graveyard to your hand.;\
+       
+timing=main
+oracle=When Midnight Scavengers enters the battlefield, you may return target creature card with converted mana cost 3 or less from your graveyard to your hand.\n(Melds with Graf Rats.)

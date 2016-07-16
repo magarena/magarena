@@ -1,0 +1,12 @@
+name=Docent of Perfection
+image=http://magiccards.info/scans/en/emn/56a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Insect,Horror
+cost={3}{U}{U}
+pt=5/4
+ability=Flying;\
+        Whenever you cast an instant or sorcery spell, put a 1/1 blue Human Wizard creature token onto the battlefield. Then if you control three or more Wizards, transform SN.
+timing=main
+oracle=Flying\nWhenever you cast an instant or sorcery spell, put a 1/1 blue Human Wizard creature token onto the battlefield. Then if you control three or more Wizards, transform Docent of Perfection.

@@ -1,0 +1,11 @@
+name=Kessig Prowler
+image=http://magiccards.info/scans/en/emn/163a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Werewolf,Horror
+cost={G}
+pt=2/1
+ability={4}{G}: Transform SN.
+timing=main
+oracle={4}{G}: Transform Kessig Prowler.

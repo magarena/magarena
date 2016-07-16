@@ -1,0 +1,13 @@
+name=Elder Deep-Fiend
+image=http://magiccards.info/scans/en/emn/5.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi,Octopus
+cost={8}
+pt=5/6
+ability=Flash;\
+        Emerge {5}{U}{U};\
+        When you cast SN, tap up to four target permanents.
+timing=flash
+oracle=Flash\nEmerge {5}{U}{U}\nWhen you cast Elder Deep-Fiend, tap up to four target permanents.
