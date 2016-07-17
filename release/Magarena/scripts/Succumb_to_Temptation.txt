@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{B}{B}
 effect=You draw two cards and you lose 2 life.
-timing=removal
+timing=draw
 oracle=You draw two cards and you lose 2 life.
