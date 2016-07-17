@@ -70,9 +70,7 @@ public abstract class MagicFormat {
     public static List<MagicFormat> getDuelFormats() {
         final List<MagicFormat> fmts = new ArrayList<>();
         fmts.add(ALL);
-        fmts.add(MagicPredefinedFormat.STANDARD);
-        fmts.add(MagicPredefinedFormat.MODERN);
-        fmts.add(MagicPredefinedFormat.LEGACY);
+        fmts.addAll(MagicPredefinedFormat.values());
         fmts.addAll(MagicCustomFormat.values());
         return fmts;
     }
