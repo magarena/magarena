@@ -6,6 +6,6 @@ type=Creature
 subtype=Dryad
 cost={G}
 pt=1/2
-ability=Snow forestwalk
+ability=SN can't be blocked as long as defending player controls a snow Forest.
 timing=main
 oracle=Snow forestwalk
