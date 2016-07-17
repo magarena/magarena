@@ -1,9 +1,0 @@
-name=Gods Willing
-image=http://mtgimage.com/card/gods%20willing.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={W}
-timing=pump
-requires_groovy_code
-oracle=Target creature you control gains protection from the color of your choice until end of turn. Scry 1.

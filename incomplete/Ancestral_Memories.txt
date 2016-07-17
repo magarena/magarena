@@ -1,9 +1,0 @@
-name=Ancestral Memories
-image=http://mtgimage.com/card/ancestral%20memories.jpg
-value=3.360
-rarity=R
-type=Sorcery
-cost={2}{U}{U}{U}
-timing=removal
-requires_groovy_code
-oracle=Look at the top seven cards of your library. Put two of them into your hand and the rest into your graveyard.
