@@ -7,3 +7,4 @@ cost={R}
 effect=Target creature gets +1/+0 until end of turn. When that creature dies this turn, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
 timing=removal
 oracle=Target creature gets +1/+0 until end of turn. When that creature dies this turn, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+status=needs groovy

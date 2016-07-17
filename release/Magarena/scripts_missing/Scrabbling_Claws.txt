@@ -8,3 +8,4 @@ ability={T}: Target player exiles a card from his or her graveyard.;\
         {1}, Sacrifice SN: Exile target card from a graveyard. Draw a card.
 timing=artifact
 oracle={T}: Target player exiles a card from his or her graveyard.\n{1}, Sacrifice Scrabbling Claws: Exile target card from a graveyard. Draw a card.
+status=needs groovy
