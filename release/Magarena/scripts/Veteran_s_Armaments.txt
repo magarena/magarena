@@ -5,7 +5,7 @@ rarity=U
 type=Tribal,Artifact
 subtype=Soldier,Equipment
 cost={2}
-ability=Equipped creature has "Whenever this creature attacks or blocks, it gets +1/+1 until end of turn for each attacking creature.";\
+ability=Equipped creature has "Whenever this creature attacks or blocks, SN gets +1/+1 until end of turn for each attacking creature.";\
         Whenever a Soldier creature enters the battlefield, you may attach SN to RN.;\
         Equip {2}
 timing=equipment
