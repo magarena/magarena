@@ -11,4 +11,3 @@ ability=Devoid;\
         {2}{C}: Exile another target creature, then return it to the battlefield tapped under its owner's control.
 timing=main
 oracle=Devoid\n{2}{C}: Exile another target creature, then return it to the battlefield tapped under its owner's control.
-status=needs groovy
