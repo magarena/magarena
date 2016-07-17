@@ -8,6 +8,6 @@ subtype=Dragon
 cost={4}{W}{W}
 pt=5/5
 ability=Flying;\
-        At the beginning of combat on your turn, you may sacrifice a land. If you don't, SN can't attack.
+        At the beginning of combat on your turn, you may sacrifice a land. If you don't, SN can't attack this turn.
 timing=main
 oracle=Flying\nExalted Dragon can't attack unless you sacrifice a land.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Serpent
 cost={4}{U}
 pt=4/4
-ability=At the beginning of combat on your turn, you may return an enchantment you control to its owner's hand. If you don't, SN can't attack.
+ability=At the beginning of combat on your turn, you may return an enchantment you control to its owner's hand. If you don't, SN can't attack this turn.
 timing=main
 oracle=Floodtide Serpent can't attack unless you return an enchantment you control to its owner's hand.
