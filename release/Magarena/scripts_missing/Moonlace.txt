@@ -7,3 +7,4 @@ cost={U}
 effect=Target spell or permanent becomes colorless.
 timing=removal
 oracle=Target spell or permanent becomes colorless.
+status=not supported: spell-modification

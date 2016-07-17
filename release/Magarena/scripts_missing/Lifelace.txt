@@ -7,3 +7,4 @@ cost={G}
 effect=Target spell or permanent becomes green.
 timing=removal
 oracle=Target spell or permanent becomes green.
+status=not supported: spell-modification

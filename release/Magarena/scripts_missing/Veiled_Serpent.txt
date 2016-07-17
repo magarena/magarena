@@ -8,3 +8,4 @@ ability=When an opponent casts a spell, if SN is an enchantment, SN becomes a 4/
         Cycling {2}
 timing=enchantment
 oracle=When an opponent casts a spell, if Veiled Serpent is an enchantment, Veiled Serpent becomes a 4/4 Serpent creature with "This creature can't attack unless defending player controls an Island."\nCycling {2}
+status=needs groovy

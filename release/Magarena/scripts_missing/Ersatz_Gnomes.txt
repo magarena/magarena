@@ -10,3 +10,4 @@ ability={T}: Target spell becomes colorless.;\
         {T}: Target permanent becomes colorless until end of turn.
 timing=main
 oracle={T}: Target spell becomes colorless.\n{T}: Target permanent becomes colorless until end of turn.
+status=not supported: spell-modification

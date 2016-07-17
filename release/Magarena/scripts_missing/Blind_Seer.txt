@@ -9,3 +9,4 @@ pt=3/3
 ability={1}{U}: Target spell or permanent becomes the color of your choice until end of turn.
 timing=main
 oracle={1}{U}: Target spell or permanent becomes the color of your choice until end of turn.
+status=not supported: spell-modification

@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Target instant or sorcery spell becomes the color of your choice.
 timing=main
 oracle={T}: Target instant or sorcery spell becomes the color of your choice.
+status=not supported: spell-modification

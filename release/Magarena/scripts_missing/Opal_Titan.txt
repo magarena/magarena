@@ -7,3 +7,4 @@ cost={2}{W}{W}
 ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 4/4 Giant creature with protection from each of that spell's colors.
 timing=enchantment
 oracle=When an opponent casts a creature spell, if Opal Titan is an enchantment, Opal Titan becomes a 4/4 Giant creature with protection from each of that spell's colors.
+status=needs groovy

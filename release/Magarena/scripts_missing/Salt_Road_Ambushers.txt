@@ -10,3 +10,4 @@ ability=Whenever another permanent you control is turned face up, if it's a crea
         Megamorph {3}{G}{G}
 timing=main
 oracle=Whenever another permanent you control is turned face up, if it's a creature, put two +1/+1 counters on it.\nMegamorph {3}{G}{G}
+status=needs groovy

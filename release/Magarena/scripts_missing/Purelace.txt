@@ -7,3 +7,4 @@ cost={W}
 effect=Target spell or permanent becomes white.
 timing=removal
 oracle=Target spell or permanent becomes white.
+status=not supported: spell-modification

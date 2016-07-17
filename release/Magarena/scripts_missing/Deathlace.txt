@@ -7,3 +7,4 @@ cost={B}
 effect=Target spell or permanent becomes black.
 timing=removal
 oracle=Target spell or permanent becomes black.
+status=not supported: spell-modification
