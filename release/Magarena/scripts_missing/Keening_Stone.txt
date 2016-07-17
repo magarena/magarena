@@ -7,3 +7,4 @@ cost={6}
 ability={5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.
 timing=artifact
 oracle={5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.
+status=needs groovy

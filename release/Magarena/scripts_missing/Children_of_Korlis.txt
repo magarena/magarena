@@ -9,3 +9,4 @@ pt=1/1
 ability=Sacrifice SN: You gain life equal to the life you've lost this turn.
 timing=main
 oracle=Sacrifice Children of Korlis: You gain life equal to the life you've lost this turn.
+status=needs groovy

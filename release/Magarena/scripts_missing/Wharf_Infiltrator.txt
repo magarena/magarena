@@ -11,3 +11,4 @@ ability=Skulk;\
         Whenever you discard a creature card, you may pay {2}. If you do, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
 timing=main
 oracle=Skulk\nWhenever Wharf Infiltrator deals combat damage to a player, you may draw a card. If you do, discard a card.\nWhenever you discard a creature card, you may pay {2}. If you do, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+status=not supported: when-discard

@@ -11,3 +11,4 @@ ability=SN costs {1} less to cast for each instant and sorcery card in your grav
         When SN enters the battlefield, discard your hand, then draw three cards.
 timing=main
 oracle=Bedlam Reveler costs {1} less to cast for each instant and sorcery card in your graveyard.\nProwess\nWhen Bedlam Reveler enters the battlefield, discard your hand, then draw three cards.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/2
 ability={2}{U}: Look at the top card of your library. You may put that card into your graveyard.
 timing=main
 oracle={2}{U}: Look at the top card of your library. You may put that card into your graveyard.
+status=needs groovy

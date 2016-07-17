@@ -10,3 +10,4 @@ ability=Affinity for artifacts;\
         Artifact creature spells you cast have affinity for artifacts.
 timing=main
 oracle=Affinity for artifacts\nArtifact creature spells you cast have affinity for artifacts.
+status=not supported: spell-modification

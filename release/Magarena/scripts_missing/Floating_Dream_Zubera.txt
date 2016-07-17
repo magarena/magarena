@@ -9,3 +9,4 @@ pt=1/2
 ability=When SN dies, draw a card for each Zubera that died this turn.
 timing=main
 oracle=When Floating-Dream Zubera dies, draw a card for each Zubera that died this turn.
+status=not supported: no-info

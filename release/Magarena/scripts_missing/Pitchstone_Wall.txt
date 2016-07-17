@@ -10,3 +10,4 @@ ability=Defender;\
         Whenever you discard a card, you may sacrifice SN. If you do, return the discarded card from your graveyard to your hand.
 timing=smain
 oracle=Defender\nWhenever you discard a card, you may sacrifice Pitchstone Wall. If you do, return the discarded card from your graveyard to your hand.
+status=not supported: when-discard

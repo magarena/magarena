@@ -11,3 +11,4 @@ ability=Trample, haste;\
         Whenever SN becomes the target of a spell an opponent controls, counter that spell unless its controller discards a card.
 timing=main
 oracle=Trample, haste\nWhenever Reality Smasher becomes the target of a spell an opponent controls, counter that spell unless its controller discards a card.
+status=needs groovy

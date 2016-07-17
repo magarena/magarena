@@ -11,3 +11,4 @@ ability=SN enters the battlefield with X +1/+1 counters on it.;\
         Whenever a +1/+1 counter is removed from SN, put two +1/+1 counters on it at the beginning of the next end step.
 timing=main
 oracle=Protean Hydra enters the battlefield with X +1/+1 counters on it.\nIf damage would be dealt to Protean Hydra, prevent that damage and remove that many +1/+1 counters from it.\nWhenever a +1/+1 counter is removed from Protean Hydra, put two +1/+1 counters on it at the beginning of the next end step.
+status=not supported: when-counter-removed

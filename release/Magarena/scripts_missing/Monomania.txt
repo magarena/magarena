@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Target player chooses a card in his or her hand and discards the rest.
 timing=main
 oracle=Target player chooses a card in his or her hand and discards the rest.
+status=needs groovy

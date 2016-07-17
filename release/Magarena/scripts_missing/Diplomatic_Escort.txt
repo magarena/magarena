@@ -9,3 +9,4 @@ pt=1/1
 ability={U}, {T}, Discard a card: Counter target spell or ability that targets a creature.
 timing=main
 oracle={U}, {T}, Discard a card: Counter target spell or ability that targets a creature.
+status=needs groovy

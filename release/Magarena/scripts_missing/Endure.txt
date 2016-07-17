@@ -7,3 +7,4 @@ cost={3}{W}{W}
 effect=Prevent all damage that would be dealt to you and permanents you control this turn.
 timing=removal
 oracle=Prevent all damage that would be dealt to you and permanents you control this turn.
+status=needs groovy

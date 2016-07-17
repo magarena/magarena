@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Exile target multicolored creature or multicolored enchantment.
 timing=removal
 oracle=Exile target multicolored creature or multicolored enchantment.
+status=needs groovy

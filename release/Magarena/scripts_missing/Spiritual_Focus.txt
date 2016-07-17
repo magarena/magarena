@@ -7,3 +7,4 @@ cost={1}{W}
 ability=Whenever a spell or ability an opponent controls causes you to discard a card, you gain 2 life and you may draw a card.
 timing=enchantment
 oracle=Whenever a spell or ability an opponent controls causes you to discard a card, you gain 2 life and you may draw a card.
+status=not supported: when-discard

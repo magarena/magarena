@@ -7,3 +7,4 @@ cost={R}
 effect=SN deals X damage to target creature, where X is 2 plus the number of cards named Galvanic Bombardment in your graveyard.
 timing=removal
 oracle=Galvanic Bombardment deals X damage to target creature, where X is 2 plus the number of cards named Galvanic Bombardment in your graveyard.
+status=needs groovy

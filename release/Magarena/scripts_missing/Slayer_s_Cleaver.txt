@@ -9,3 +9,4 @@ ability=Equipped creature gets +3/+1 and must be blocked by an Eldrazi if able.;
         Equip {4}
 timing=equipment
 oracle=Equipped creature gets +3/+1 and must be blocked by an Eldrazi if able.\nEquip {4}
+status=not supported: blocking-restriction

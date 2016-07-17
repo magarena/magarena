@@ -8,3 +8,4 @@ cost={2}{U}
 effect=Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards. If it's your turn, end the turn.
 timing=main
 oracle=Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards. If it's your turn, end the turn.
+status=not supported: end-turn

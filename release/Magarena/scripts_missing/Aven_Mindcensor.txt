@@ -11,3 +11,4 @@ ability=Flash;\
         If an opponent would search a library, that player searches the top four cards of that library instead.
 timing=flash
 oracle=Flash\nFlying\nIf an opponent would search a library, that player searches the top four cards of that library instead.
+status=not supported: search-replacement
