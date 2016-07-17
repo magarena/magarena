@@ -6,7 +6,6 @@ type=Creature
 subtype=Dragon
 cost={5}{R}{R}
 pt=5/5
-ability=Flying, haste;\
-        As long as you control your commander, SN gets +2/+2 and has "Whenever SN attacks, it deals 7 damage to target creature defending player controls."
+ability=Flying, haste
 timing=main
 oracle=Flying, haste\nLieutenant — As long as you control your commander, Tyrant's Familiar gets +2/+2 and has "Whenever Tyrant's Familiar attacks, it deals 7 damage to target creature defending player controls."
