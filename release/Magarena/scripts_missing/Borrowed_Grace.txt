@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Escalate {1}{W}~Choose one or both — (1) Creatures you control get +2/+0 until end of turn. (2) Creatures you control get +0/+2 until end of turn.
 timing=removal
 oracle=Escalate {1}{W}\nChoose one or both —\n• Creatures you control get +2/+0 until end of turn.\n• Creatures you control get +0/+2 until end of turn.
+status=not supported: multi-choice-modal

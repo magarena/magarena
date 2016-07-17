@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Escalate—Discard a card.~Choose one or more — (1) Target opponent reveals his or her hand. You choose an instant or sorcery card from it. That player discards that card. (2) Target creature gets -2/-2 until end of turn. (3) Target opponent loses 2 life and you gain 2 life.
 timing=main
 oracle=Escalate—Discard a card.\nChoose one or more —\n• Target opponent reveals his or her hand. You choose an instant or sorcery card from it. That player discards that card.\n• Target creature gets -2/-2 until end of turn.\n• Target opponent loses 2 life and you gain 2 life.
+status=not supported: multi-choice-modal

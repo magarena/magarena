@@ -7,3 +7,4 @@ cost={R}
 effect=Escalate {3}~Choose one or both — (1) Target creature gets +3/+0 until end of turn. (2) Target creature gains first strike until end of turn.
 timing=removal
 oracle=Escalate {3}\nChoose one or both —\n• Target creature gets +3/+0 until end of turn.\n• Target creature gains first strike until end of turn.
+status=not supported: multi-choice-modal
