@@ -519,7 +519,8 @@ checks: \
 	check_decks \
 	check_mana_or_combat \
 	check_color_or_cost \
-	check_tap_tap
+	check_tap_tap \
+	check_no_extra_space
 
 remove_extra_missing:
 	git rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
@@ -633,6 +634,10 @@ check_color_or_cost:
 
 check_tap_tap:
 	grep "{T}, Tap" -ir release/Magarena/scripts | grep -v oracle | grep -iv "{T}, Tap another" | ${NO_OUTPUT}
+
+check_no_extra_space:
+	grep "^[[:space:]]" resources/magic/data/AllCardNames.txt -r resources/magic/data/sets | ${NO_OUTPUT}
+	grep "[[:space:]]$$" resources/magic/data/AllCardNames.txt -r resources/magic/data/sets | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
