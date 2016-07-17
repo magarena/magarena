@@ -8,5 +8,5 @@ cost={R}
 ability=Enchant creature;\
         Enchanted creature has haste and "{T}, Discard a card: Draw a card."
 timing=aura
-enchant=default,creature
+enchant=haste,pos creature
 oracle=Enchant creature\nEnchanted creature has haste and "{T}, Discard a card: Draw a card."

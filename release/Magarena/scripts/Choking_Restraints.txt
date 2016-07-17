@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block.;\
         {3}{W}{W}, Sacrifice SN: Exile enchanted creature.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.\n{3}{W}{W}, Sacrifice Choking Restraints: Exile enchanted creature.
