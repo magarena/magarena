@@ -356,7 +356,7 @@ public class CardDefinitions {
         final InputStream stream = MagicResources.getAllCardNames();
         try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
             while (sc.hasNextLine()) {
-                final String cardName = sc.nextLine().trim();
+                final String cardName = sc.nextLine();
                 if (!allPlayableCardDefs.containsKey(getASCII(cardName))) {
                     missingCardNames.add(cardName);
                 }

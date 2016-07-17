@@ -18,8 +18,7 @@ public class MagicSetDefinitions {
 
         try (final Scanner sc = new Scanner(MagicResources.getFileContent(magicSet))) {
             while (sc.hasNextLine()) {
-                final String line = sc.nextLine();
-                magicSetDef.add(line.trim());
+                magicSetDef.add(sc.nextLine());
             }
         }
 
