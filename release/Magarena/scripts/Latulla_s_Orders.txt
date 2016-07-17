@@ -7,7 +7,7 @@ subtype=Aura
 cost={1}{R}
 ability=Flash;\
         Enchant creature;\
-        Whenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.
+        Whenever enchanted creature deals combat damage to defending player, you may destroy target artifact defending player controls.
 timing=flash
-enchant=default,creature
+enchant=lifelink,pos creature
 oracle=Flash\nEnchant creature\nWhenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.
