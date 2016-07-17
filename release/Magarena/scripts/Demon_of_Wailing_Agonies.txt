@@ -6,7 +6,6 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}
 pt=4/4
-ability=Flying;\
-        As long as you control your commander, SN gets +2/+2 and has "Whenever SN deals combat damage to a player, that player sacrifices a creature."
+ability=Flying
 timing=main
 oracle=Flying\nLieutenant — As long as you control your commander, Demon of Wailing Agonies gets +2/+2 and has "Whenever Demon of Wailing Agonies deals combat damage to a player, that player sacrifices a creature."
