@@ -231,7 +231,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlickerOwner(
-        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under its owner's control",
+        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield" + ARG.MODS + " under its owner's control",
         MagicTargetHint.Positive,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -239,6 +239,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return (game, event) -> {
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
@@ -249,7 +250,8 @@ public enum MagicRuleEventAction {
                     game.doAction(new ReturnCardAction(
                         MagicLocationType.Exile,
                         it.getCard(),
-                        it.getOwner()
+                        it.getOwner(),
+                        mods
                     ));
                 }
             };
