@@ -8,3 +8,4 @@ cost={2}{R}{R}
 effect=Choose three. You may choose the same mode more than once. (1) SN deals 1 damage to each creature. (2) SN deals 2 damage to each opponent. (3) Destroy target artifact.
 timing=removal
 oracle=Choose three. You may choose the same mode more than once.\n• Fiery Confluence deals 1 damage to each creature.\n• Fiery Confluence deals 2 damage to each opponent.\n• Destroy target artifact.
+status=not supported: multi-choice-modal

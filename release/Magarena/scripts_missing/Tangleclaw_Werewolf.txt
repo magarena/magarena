@@ -11,3 +11,4 @@ ability=SN can block an additional creature each combat.;\
 transform=Fibrous Entangler
 timing=main
 oracle=Tangleclaw Werewolf can block an additional creature each combat.\n{6}{G}: Transform Tangleclaw Werewolf.
+status=not supported: block-multiple

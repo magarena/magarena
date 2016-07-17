@@ -11,3 +11,4 @@ flip=Bushi Tenderfoot
 timing=main
 hidden
 oracle=Double strike, bushido 2
+status=not supported: other-half

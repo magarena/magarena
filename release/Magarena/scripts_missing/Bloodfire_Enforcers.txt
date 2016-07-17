@@ -9,3 +9,4 @@ pt=5/2
 ability=SN has first strike and trample as long as an instant card and a sorcery card are in your graveyard.
 timing=main
 oracle=Bloodfire Enforcers has first strike and trample as long as an instant card and a sorcery card are in your graveyard.
+status=needs groovy

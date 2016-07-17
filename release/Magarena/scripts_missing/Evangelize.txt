@@ -8,3 +8,4 @@ ability=Buyback {2}{W}{W}
 effect=Gain control of target creature of an opponent's choice he or she controls.
 timing=main
 oracle=Buyback {2}{W}{W}\nGain control of target creature of an opponent's choice he or she controls.
+status=needs groovy

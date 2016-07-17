@@ -7,3 +7,4 @@ cost={2}{U}
 effect=You may choose an Eldrazi card you own from outside the game or in exile, reveal that card, and put it into your hand.
 timing=main
 oracle=You may choose an Eldrazi card you own from outside the game or in exile, reveal that card, and put it into your hand.
+status=not supported: outside-the-game

@@ -7,3 +7,4 @@ cost={0}
 ability={T}, Sacrifice SN: This turn, when target creature you control attacks and isn't blocked, you may gain life equal to its power. If you do, it assigns no combat damage this turn.
 timing=artifact
 oracle={T}, Sacrifice Delif's Cone: This turn, when target creature you control attacks and isn't blocked, you may gain life equal to its power. If you do, it assigns no combat damage this turn.
+status=needs groovy

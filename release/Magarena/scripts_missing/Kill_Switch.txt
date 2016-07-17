@@ -7,3 +7,4 @@ cost={3}
 ability={2}, {T}: Tap all other artifacts. They don't untap during their controllers' untap steps for as long as SN remains tapped.
 timing=artifact
 oracle={2}, {T}: Tap all other artifacts. They don't untap during their controllers' untap steps for as long as Kill Switch remains tapped.
+status=needs groovy

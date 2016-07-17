@@ -9,3 +9,4 @@ pt=2/2
 ability=SN can't attack unless an opponent has been dealt damage this turn.
 timing=main
 oracle=Bloodcrazed Goblin can't attack unless an opponent has been dealt damage this turn.
+status=needs groovy

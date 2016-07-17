@@ -10,3 +10,4 @@ ability={4}: SN gains flying until end of turn.;\
         {1}: SN deals 2 damage to target attacking or blocking creature. Activate this ability only if SN is attacking or blocking and only once each turn.
 timing=main
 oracle={4}: Sawback Manticore gains flying until end of turn.\n{1}: Sawback Manticore deals 2 damage to target attacking or blocking creature. Activate this ability only if Sawback Manticore is attacking or blocking and only once each turn.
+status=needs groovy

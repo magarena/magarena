@@ -7,3 +7,4 @@ cost={1}{R}
 effect=SN deals 3 damage to target creature. Clash with an opponent. If you win, SN deals 3 damage to that creature's controller.
 timing=removal
 oracle=Lash Out deals 3 damage to target creature. Clash with an opponent. If you win, Lash Out deals 3 damage to that creature's controller.
+status=needs groovy

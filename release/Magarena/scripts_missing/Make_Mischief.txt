@@ -7,3 +7,4 @@ cost={2}{R}
 effect=SN deals 1 damage to target creature or player. Put a 1/1 red Devil creature token onto the battlefield. It has "When this creature dies, it deals 1 damage to target creature or player."
 timing=main
 oracle=Make Mischief deals 1 damage to target creature or player. Put a 1/1 red Devil creature token onto the battlefield. It has "When this creature dies, it deals 1 damage to target creature or player."
+status=needs groovy
