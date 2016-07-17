@@ -136,7 +136,7 @@ Howlpack Resurgence
 Howlpack Wolf
 Hulking Devil
 Humble the Brute
-Incemental Growth
+Incremental Growth
 Incited Rabble
 Incorrigible Youths
 Indulgent Aristocrat
