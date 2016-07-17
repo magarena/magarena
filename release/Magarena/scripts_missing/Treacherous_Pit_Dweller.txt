@@ -10,3 +10,4 @@ ability=When SN enters the battlefield from a graveyard, target opponent gains c
         Undying
 timing=main
 oracle=When Treacherous Pit-Dweller enters the battlefield from a graveyard, target opponent gains control of it.\nUndying
+status=not supported: no-info

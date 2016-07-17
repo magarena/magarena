@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Permanents enter the battlefield tapped this turn.~Draw a card.
 timing=removal
 oracle=Permanents enter the battlefield tapped this turn.\nDraw a card.
+status=needs groovy

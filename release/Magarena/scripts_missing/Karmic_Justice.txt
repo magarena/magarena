@@ -8,3 +8,4 @@ cost={2}{W}
 ability=Whenever a spell or ability an opponent controls destroys a noncreature permanent you control, you may destroy target permanent that opponent controls.
 timing=enchantment
 oracle=Whenever a spell or ability an opponent controls destroys a noncreature permanent you control, you may destroy target permanent that opponent controls.
+status=not supported: no-info

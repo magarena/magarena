@@ -10,3 +10,4 @@ ability=Islandwalk;\
         At the beginning of each combat, unless you pay {R}, whenever SN blocks or becomes blocked by a creature this combat, that creature gains first strike until end of turn.
 timing=main
 oracle=Islandwalk\nAt the beginning of each combat, unless you pay {R}, whenever Goblin Flotilla blocks or becomes blocked by a creature this combat, that creature gains first strike until end of turn.
+status=needs groovy

@@ -11,3 +11,4 @@ ability=Haste;\
         Counters remain on Skullbriar as it moves to any zone other than a player's hand or library.
 timing=fmain
 oracle=Haste\nWhenever Skullbriar, the Walking Grave deals combat damage to a player, put a +1/+1 counter on it.\nCounters remain on Skullbriar as it moves to any zone other than a player's hand or library.
+status=not supported: counters-remain

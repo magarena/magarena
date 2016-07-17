@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN or another Goblin enters the battlefield, each player flips a coin. Each player whose coin comes up tails sacrifices a creature.
 timing=main
 oracle=Whenever Goblin Assassin or another Goblin enters the battlefield, each player flips a coin. Each player whose coin comes up tails sacrifices a creature.
+status=needs groovy

@@ -11,3 +11,4 @@ ability=Flying, vigilance;\
         Persist
 timing=main
 oracle=Flying, vigilance\nWhen Twilight Shepherd enters the battlefield, return to your hand all cards in your graveyard that were put there from the battlefield this turn.\nPersist
+status=not supported: no-info
