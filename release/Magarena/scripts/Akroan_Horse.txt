@@ -7,8 +7,7 @@ subtype=Horse
 cost={4}
 pt=0/4
 ability=Defender;\
-        When SN enters the battlefield, an opponent gains control of SN.;\
         At the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
 timing=smain
+requires_groovy_code
 oracle=Defender\nWhen Akroan Horse enters the battlefield, an opponent gains control of it.\nAt the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
-status=needs groovy
