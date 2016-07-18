@@ -8,3 +8,4 @@ ability=Madness {1}{R}
 effect=Up to two target creatures each get +1/+0 and gain first strike until end of turn.
 timing=removal
 oracle=Up to two target creatures each get +1/+0 and gain first strike until end of turn.\nMadness {1}{R}
+status=not supported: multiple-targets

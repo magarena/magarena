@@ -8,3 +8,4 @@ ability=You can't play lands.;\
         Sacrifice a land: Draw two cards. Activate this ability only once each turn.
 timing=enchantment
 oracle=You can't play lands.\nSacrifice a land: Draw two cards. Activate this ability only once each turn.
+status=not supported: players-cant
