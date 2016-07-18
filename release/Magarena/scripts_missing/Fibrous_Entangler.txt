@@ -13,3 +13,4 @@ transform=Tangleclaw Werewolf
 timing=main
 hidden
 oracle=Vigilance\nFibrous Entangler must be blocked if able.\nFibrous Entangler can block an additional creature each combat.
+status=not supported: block-multiple
