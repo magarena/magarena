@@ -8,6 +8,7 @@ color=
 pt=7/4
 ability=Trample, haste;\
         Whenever SN attacks, put two 3/2 colorless Eldrazi Horror creature tokens onto the battlefield tapped and attacking.
+meld=Hanweir Battlements;Hanweir Garrison
 timing=main
 hidden
 oracle=Trample, haste\nWhenever Hanweir, the Writhing Township attacks, put two 3/2 colorless Eldrazi Horror creature tokens onto the battlefield tapped and attacking.

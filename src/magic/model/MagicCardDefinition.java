@@ -96,6 +96,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private String effectProperty;
     private String flipCardName;
     private String transformCardName;
+    private String[] meldCardNames;
     private String splitCardName;
 
     public MagicCardDefinition() {
@@ -157,6 +158,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void setTransformCardName(final String value) {
         transformCardName = value;
+    }
+
+    public void setMeldCardNames(final String[] value) {
+        meldCardNames = value;
     }
 
     public void setSplitCardName(final String value) {
