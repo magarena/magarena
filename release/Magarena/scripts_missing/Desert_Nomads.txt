@@ -10,4 +10,4 @@ ability=Desertwalk;\
         Prevent all damage that would be dealt to SN by Deserts.
 timing=main
 oracle=Desertwalk\nPrevent all damage that would be dealt to Desert Nomads by Deserts.
-status=needs groovy
+status=not supported: missing-ability
