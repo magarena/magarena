@@ -9,12 +9,12 @@ public abstract class MagicAction {
     private int score;
 
     final void setScore(final MagicPlayer aScorePlayer, final int aScore) {
-        this.scorePlayer=aScorePlayer;
-        this.score=aScore;
+        scorePlayer = aScorePlayer;
+        score = aScore;
     }
 
     public final int getScore(final MagicPlayer player) {
-        return (player==scorePlayer) ? score : -score;
+        return (player == scorePlayer) ? score : -score;
     }
 
     public abstract void doAction(final MagicGame game);
