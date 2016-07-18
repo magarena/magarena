@@ -11,3 +11,4 @@ ability=+1: Discard a card. If a red card is discarded this way, SN deals 4 dama
         −7: Cast any number of red instant and/or sorcery cards from your graveyard without paying their mana costs.
 timing=main
 oracle=+1: Discard a card. If a red card is discarded this way, Chandra Ablaze deals 4 damage to target creature or player.\n−2: Each player discards his or her hand, then draws three cards.\n−7: Cast any number of red instant and/or sorcery cards from your graveyard without paying their mana costs.
+status=not supported: any-number-of

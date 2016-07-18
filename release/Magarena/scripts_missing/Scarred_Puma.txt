@@ -9,3 +9,4 @@ pt=2/1
 ability=SN can't attack unless a black or green creature also attacks.
 timing=main
 oracle=Scarred Puma can't attack unless a black or green creature also attacks.
+status=not supported: attacking-restriction

@@ -10,3 +10,4 @@ ability=Deathtouch;\
         When SN dies, you may search your library for a Curse card, put it onto the battlefield attached to target player, then shuffle your library.
 timing=main
 oracle=Deathtouch\nWhen Bitterheart Witch dies, you may search your library for a Curse card, put it onto the battlefield attached to target player, then shuffle your library.
+status=not supported: enchant-player

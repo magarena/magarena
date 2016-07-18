@@ -9,3 +9,4 @@ pt=3/2
 ability={T}, Sacrifice SN and any number of other non-Eldrazi creatures: Put a 3/2 colorless Eldrazi Horror creature token onto the battlefield for each creature sacrificed this way.
 timing=main
 oracle={T}, Sacrifice Emrakul's Evangel and any number of other non-Eldrazi creatures: Put a 3/2 colorless Eldrazi Horror creature token onto the battlefield for each creature sacrificed this way.
+status=not supported: any-number-of

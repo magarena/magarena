@@ -7,3 +7,4 @@ cost={X}{B}{G}{U}
 effect=Target opponent exiles the top X cards of his or her library. You may cast any number of nonland cards with converted mana cost X or less from among them without paying their mana costs.
 timing=main
 oracle=Target opponent exiles the top X cards of his or her library. You may cast any number of nonland cards with converted mana cost X or less from among them without paying their mana costs.
+status=not supported: any-number-of

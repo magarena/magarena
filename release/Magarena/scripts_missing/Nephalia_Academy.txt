@@ -7,3 +7,4 @@ ability=If a spell or ability an opponent controls causes you to discard a card,
         {T}: Add {C} to your mana pool.
 timing=land
 oracle=If a spell or ability an opponent controls causes you to discard a card, you may reveal that card and put it on top of your library instead of putting it anywhere else.\n{T}: Add {C} to your mana pool.
+status=not supported: no-info

@@ -9,3 +9,4 @@ ability=Devoid
 effect=Exile target nonbasic land. Search its controller's graveyard, hand, and library for any number of cards with the same name as that land and exile them. Then that player shuffles his or her library.
 timing=main
 oracle=Devoid\nExile target nonbasic land. Search its controller's graveyard, hand, and library for any number of cards with the same name as that land and exile them. Then that player shuffles his or her library.
+status=not supported: any-number-of

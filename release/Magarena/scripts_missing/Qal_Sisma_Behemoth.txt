@@ -9,3 +9,4 @@ pt=5/5
 ability=SN can't attack or block unless you pay {2}.
 timing=main
 oracle=Qal Sisma Behemoth can't attack or block unless you pay {2}.
+status=needs groovy

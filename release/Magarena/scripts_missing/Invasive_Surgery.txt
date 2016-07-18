@@ -7,3 +7,4 @@ cost={U}
 effect=Counter target sorcery spell.~If there are four or more card types among cards in your graveyard, search the graveyard, hand, and library of that spell's controller for any number of cards with the same name as that spell, exile those cards, then that player shuffles his or her library.
 timing=counter
 oracle=Counter target sorcery spell.\nDelirium — If there are four or more card types among cards in your graveyard, search the graveyard, hand, and library of that spell's controller for any number of cards with the same name as that spell, exile those cards, then that player shuffles his or her library.
+status=not supported: any-number-of

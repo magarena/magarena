@@ -9,3 +9,4 @@ ability=Whenever equipped creature attacks, look at the top card of your library
         Equip {1}
 timing=equipment
 oracle=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped.\nEquip {1}
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Vigilance;\
         When SN dies, put X 1/1 white Spirit creature tokens with flying onto the battlefield, where X is the number of creature cards in your graveyard.
 timing=main
 oracle=Vigilance\nWhen Hallowed Spiritkeeper dies, put X 1/1 white Spirit creature tokens with flying onto the battlefield, where X is the number of creature cards in your graveyard.
+status=needs groovy
