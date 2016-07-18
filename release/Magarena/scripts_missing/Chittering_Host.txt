@@ -13,3 +13,4 @@ meld=Graf Rats;Midnight Scavengers
 timing=fmain
 hidden
 oracle=Haste\nMenace\nWhen Chittering Host enters the battlefield, other creatures you control get +1/+0 and gain menace until end of turn.
+status=not supported: blocking-restriction
