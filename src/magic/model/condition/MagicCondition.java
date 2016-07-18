@@ -172,6 +172,60 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition BEFORE_ATTACKERS = new MagicCondition() {
+        @Override
+        public boolean accept(MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.Untap)||
+                game.isPhase(MagicPhaseType.Upkeep)||
+                game.isPhase(MagicPhaseType.Draw)||
+                game.isPhase(MagicPhaseType.FirstMain)||
+                game.isPhase(MagicPhaseType.BeginOfCombat);
+        }
+    };
+
+    public static MagicCondition BEFORE_BLOCKERS = new MagicCondition() {
+        @Override
+        public boolean accept(MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.Untap)||
+                game.isPhase(MagicPhaseType.Upkeep)||
+                game.isPhase(MagicPhaseType.Draw)||
+                game.isPhase(MagicPhaseType.FirstMain)||
+                game.isPhase(MagicPhaseType.BeginOfCombat)||
+                game.isPhase(MagicPhaseType.DeclareAttackers);
+        }
+    };
+
+    public static MagicCondition BEFORE_COMBAT_DAMAGE = new MagicCondition() {
+        @Override
+        public boolean accept(MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.Untap)||
+                game.isPhase(MagicPhaseType.Upkeep)||
+                game.isPhase(MagicPhaseType.Draw)||
+                game.isPhase(MagicPhaseType.FirstMain)||
+                game.isPhase(MagicPhaseType.BeginOfCombat)||
+                game.isPhase(MagicPhaseType.DeclareAttackers)||
+                game.isPhase(MagicPhaseType.DeclareBlockers);
+        }
+    };
+
+    public static MagicCondition BEFORE_END_OF_COMBAT = new MagicCondition() {
+        @Override
+        public boolean accept(MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.Untap)||
+                game.isPhase(MagicPhaseType.Upkeep)||
+                game.isPhase(MagicPhaseType.Draw)||
+                game.isPhase(MagicPhaseType.FirstMain)||
+                game.isPhase(MagicPhaseType.BeginOfCombat)||
+                game.isPhase(MagicPhaseType.DeclareAttackers)||
+                game.isPhase(MagicPhaseType.DeclareBlockers)||
+                game.isPhase(MagicPhaseType.CombatDamage);
+        }
+    };
+
     public static MagicCondition BEEN_ATTACKED = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
@@ -217,6 +271,15 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.BeginOfCombat) ||
                 game.isPhase(MagicPhaseType.DeclareAttackers);
+        }
+    };
+
+    public static MagicCondition AFTER_COMBAT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.SecondMain) ||
+                game.isPhase(MagicPhaseType.EndOfTurn) ||
+                game.isPhase(MagicPhaseType.Cleanup);
         }
     };
 
