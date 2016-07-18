@@ -1421,6 +1421,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_BEAST = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Beast, Control.Any);
 
+    public static final MagicPermanentFilterImpl ATTACKING_ALLY = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Ally, Control.Any);
+
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE = creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.Any);
 
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_SPIRIT = new MagicPermanentFilterImpl() {
@@ -2465,6 +2467,7 @@ public class MagicTargetFilterFactory {
         add("attacking Goblin", ATTACKING_GOBLIN);
         add("attacking Kavu", ATTACKING_KAVU);
         add("attacking Beast", ATTACKING_BEAST);
+        add("attacking Ally", ATTACKING_ALLY);
         add("attacking creature", ATTACKING_CREATURE);
         add("attacking creature with shadow", ATTACKING_CREATURE_WITH_SHADOW);
         add("attacking creature with power 3 or less", ATTACKING_CREATURE_POWER_3_OR_LESS);
