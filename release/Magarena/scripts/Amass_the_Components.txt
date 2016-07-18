@@ -4,7 +4,6 @@ value=2.653
 rarity=C
 type=Sorcery
 cost={3}{U}
-effect=Draw three cards, then put a card from your hand on the bottom of your library.
 timing=main
+requires_groovy_code
 oracle=Draw three cards, then put a card from your hand on the bottom of your library.
-status=needs groovy
