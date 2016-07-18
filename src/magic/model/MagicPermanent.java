@@ -183,7 +183,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             preventDamage,
             equippedCreature.getStateId(),
             enchantedPermanent.getStateId(),
-            blockedCreature.getStateId(),
+            blockingCreatures.getStateId(),
             //pairedCreature.getStateId(),
             exiledCards.getUnorderedStateId(),
             chosenPlayer.getId(),
