@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={1}{B}{B}
 pt=2/3
-ability=SN can't be blocked as long as defending player controls a snow Swamp.
+ability=Snow swampwalk
 timing=main
 oracle=Snow swampwalk

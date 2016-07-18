@@ -44,13 +44,18 @@ public enum MagicAbility {
     Flash("flash",0),
     Flying("flying",50),
     FirstStrike("first strike",50),
+
     Plainswalk("plainswalk",10),
     Islandwalk("islandwalk",10),
     Swampwalk("swampwalk",10),
     Mountainwalk("mountainwalk",10),
     Forestwalk("forestwalk",10),
-    NonbasicLandwalk("nonbasic landwalk",10),
+    Snowlandwalk("snow landwalk",10),
+    Snowswampwalk("snow swampwalk",10),
+    Snowforestwalk("snow forestwalk",10),
     LegendaryLandwalk("legendary landwalk",10),
+    NonbasicLandwalk("nonbasic landwalk",10),
+
     Indestructible("indestructible",150),
     Haste("haste",0),
     Lifelink("lifelink",40),
@@ -68,6 +73,7 @@ public enum MagicAbility {
     Soulbond("soulbond",30),
     SplitSecond("split second",10),
     CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated)",-20),
+
     ProtectionFromBlack("(protection )?from black",20),
     ProtectionFromBlue("(protection )?from blue",20),
     ProtectionFromGreen("(protection )?from green",20),

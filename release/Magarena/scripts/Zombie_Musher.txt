@@ -6,7 +6,7 @@ type=Snow,Creature
 subtype=Zombie
 cost={3}{B}
 pt=2/3
-ability=SN can't be blocked as long as defending player controls a snow land.;\
+ability=Snow landwalk;\
         {S}: Regenerate SN.
 timing=main
 oracle=Snow landwalk\n{S}: Regenerate Zombie Musher.
