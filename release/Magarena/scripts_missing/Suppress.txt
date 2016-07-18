@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Target player exiles all cards from his or her hand face down. At the beginning of the end step of that player's next turn, that player returns those cards to his or her hand.
 timing=main
 oracle=Target player exiles all cards from his or her hand face down. At the beginning of the end step of that player's next turn, that player returns those cards to his or her hand.
+status=not supported: exile-face-down

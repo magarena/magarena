@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, exile the top five cards of target playe
         {2}, {T}, Put a card exiled with SN into its owner's graveyard: Counter target spell if it has the same name as that card.
 timing=artifact
 oracle=When Jester's Scepter enters the battlefield, exile the top five cards of target player's library face down. You may look at those cards for as long as they remain exiled.\n{2}, {T}, Put a card exiled with Jester's Scepter into its owner's graveyard: Counter target spell if it has the same name as that card.
+status=not supported: exile-face-down

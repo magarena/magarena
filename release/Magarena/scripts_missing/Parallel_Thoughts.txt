@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, search your library for seven cards, exi
         If you would draw a card, you may instead put the top card of the pile you exiled into your hand.
 timing=enchantment
 oracle=When Parallel Thoughts enters the battlefield, search your library for seven cards, exile them in a face-down pile, and shuffle that pile. Then shuffle your library.\nIf you would draw a card, you may instead put the top card of the pile you exiled into your hand.
+status=not supported: exile-face-down

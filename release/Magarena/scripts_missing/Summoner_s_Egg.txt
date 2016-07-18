@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, you may exile a card from your hand face
         When SN dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.
 timing=main
 oracle=Imprint — When Summoner's Egg enters the battlefield, you may exile a card from your hand face down.\nWhen Summoner's Egg dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.
+status=not supported: exile-face-down

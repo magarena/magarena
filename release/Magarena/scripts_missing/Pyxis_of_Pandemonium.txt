@@ -8,3 +8,4 @@ ability={T}: Each player exiles the top card of his or her library face down.;\
         {7}, {T}, Sacrifice SN: Each player turns face up all cards he or she owns exiled with SN, then puts all permanent cards among them onto the battlefield.
 timing=artifact
 oracle={T}: Each player exiles the top card of his or her library face down.\n{7}, {T}, Sacrifice Pyxis of Pandemonium: Each player turns face up all cards he or she owns exiled with Pyxis of Pandemonium, then puts all permanent cards among them onto the battlefield.
+status=not supported: exile-face-down

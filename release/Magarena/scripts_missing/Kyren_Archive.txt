@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, you may exile the top card of your libr
         {5}, Discard your hand, Sacrifice SN: Put all cards exiled with SN into their owner's hand.
 timing=artifact
 oracle=At the beginning of your upkeep, you may exile the top card of your library face down.\n{5}, Discard your hand, Sacrifice Kyren Archive: Put all cards exiled with Kyren Archive into their owner's hand.
+status=not supported: exile-face-down

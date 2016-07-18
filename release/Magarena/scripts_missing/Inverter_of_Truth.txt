@@ -12,3 +12,4 @@ ability=Devoid;\
         When SN enters the battlefield, exile all cards from your library face down, then shuffle all cards from your graveyard into your library.
 timing=main
 oracle=Devoid\nFlying\nWhen Inverter of Truth enters the battlefield, exile all cards from your library face down, then shuffle all cards from your graveyard into your library.
+status=not supported: exile-face-down

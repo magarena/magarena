@@ -8,3 +8,4 @@ ability=If a player would draw a card, that player exiles the top card of one of
         Each player may look at and play cards he or she exiled with SN.
 timing=enchantment
 oracle=If a player would draw a card, that player exiles the top card of one of his or her opponents' libraries face down instead.\nEach player may look at and play cards he or she exiled with Shared Fate.
+status=not supported: exile-face-down

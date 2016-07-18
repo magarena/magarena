@@ -9,3 +9,4 @@ ability={2}, {T}: Exile the top card of your library face down.;\
         When SN leaves the battlefield, put all cards exiled with SN into their owner's graveyard.
 timing=artifact
 oracle={2}, {T}: Exile the top card of your library face down.\n{0}: Sacrifice Knowledge Vault. If you do, discard your hand, then put all cards exiled with Knowledge Vault into their owner's hand.\nWhen Knowledge Vault leaves the battlefield, put all cards exiled with Knowledge Vault into their owner's graveyard.
+status=not supported: exile-face-down
