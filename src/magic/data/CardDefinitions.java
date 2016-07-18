@@ -448,7 +448,11 @@ public class CardDefinitions {
     }
 
     public static boolean isCardMissing(MagicCardDefinition card) {
-        return missingCards == null ? false : missingCards.containsKey(card.getAsciiName());
+        return missingCards != null && missingCards.containsKey(card.getAsciiName());
+    }
+
+    public static boolean isPotential(MagicCardDefinition card) {
+        return card.hasStatus() ? isCardMissing(card) && !card.getStatus().contains("not supported") : isCardMissing(card);
     }
 
     public static synchronized Collection<MagicCardDefinition> getMissingCards() {

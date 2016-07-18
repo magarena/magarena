@@ -70,6 +70,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S22 = "Flip";
     private static final String _S23 = "Hidden";
     private static final String _S24 = "Split";
+    private static final String _S25 = "Potential";
 
     private static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
     static {
@@ -443,26 +444,21 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         }
 
         // status
-        if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
-                new CardChecker() {
-                    @Override
-                    public boolean checkCard(final MagicCardDefinition card, final int i) {
-                        final String status = statusCheckBoxes[i].getText();
-                        if (status.equals(UiString.get(_S17))) {
-                            return MagicLogs.isCardInDownloadsLog(card);
-                        } else if (status.equals(UiString.get(_S18))) {
-                            return CardDefinitions.isCardPlayable(card);
-                        } else if (status.equals(UiString.get(_S19))) {
-                            return CardDefinitions.isCardMissing(card);
-                        } else {
-                            return true;
-                        }
-                    }
-                })) {
-            return false;
-        }
+        return filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
+            (card, i) -> {
+                final String status = statusCheckBoxes[i].getText();
+                if (status.equals(UiString.get(_S17))) {
+                    return MagicLogs.isCardInDownloadsLog(card);
+                } else if (status.equals(UiString.get(_S18))) {
+                    return CardDefinitions.isCardPlayable(card);
+                } else if (status.equals(UiString.get(_S19))) {
+                    return CardDefinitions.isCardMissing(card);
+                } else if (status.equals(UiString.get(_S25))) {
+                    return CardDefinitions.isPotential(card);
+                }
+                return false;
+            });
 
-        return true;
     }
 
     private boolean filterCheckboxes(final MagicCardDefinition cardDefinition, final JCheckBox[] checkboxes, final JRadioButton[] filterButtons, final CardChecker func) {

@@ -98,6 +98,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private String transformCardName;
     private String[] meldCardNames;
     private String splitCardName;
+    private String status;
 
     public MagicCardDefinition() {
         initialize();
@@ -123,6 +124,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
         cdef.setAbilityProperty(template.getAbilityProperty());
         cdef.setValue(template.getValue());
+        cdef.setStatus(template.getStatus());
         init.initialize(cdef);
         cdef.validate();
         return cdef;
@@ -170,6 +172,18 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void setSecondHalf() {
         secondHalf = true;
+    }
+
+    public void setStatus(final String value) {
+        status = value;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public boolean hasStatus() {
+        return status != null;
     }
 
     public boolean isSecondHalf() {

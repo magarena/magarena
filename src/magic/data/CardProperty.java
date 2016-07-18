@@ -252,7 +252,7 @@ public enum CardProperty {
     },
     STATUS() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            //not tracked in game
+            card.setStatus(value);
         }
     },
     ;
