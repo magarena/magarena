@@ -7,7 +7,6 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -145,7 +144,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     public CardFilterPanel(final ICardFilterPanelListener aListener) {
 
-        this.listener = aListener;
+        listener = aListener;
 
         cardPool = listener.isDeckEditor()
             ? CardDefinitions.getDefaultPlayableCardDefs()
@@ -188,11 +187,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private String[] getStatusFilterValues() {
-        if (!listener.isDeckEditor()) {
-            return new String[] {UiString.get(_S17), UiString.get(_S18), UiString.get(_S19)};
-        } else {
-            return new String[] {UiString.get(_S17)};
-        }
+        return listener.isDeckEditor() ? new String[]{UiString.get(_S17)} : new String[]{UiString.get(_S17), UiString.get(_S18), UiString.get(_S19), UiString.get(_S25)};
     }
 
     private void addSetsFilter() {
@@ -247,22 +242,22 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         @Override
         public void actionPerformed(final ActionEvent event) {
             // close all other popups except for our own button's
-            if (p != cubePopup) {
+            if (!p.equals(cubePopup)) {
                 cubePopup.hidePopup();
             }
-            if (p != typePopup) {
+            if (!p.equals(typePopup)) {
                 typePopup.hidePopup();
             }
-            if (p != colorPopup) {
+            if (!p.equals(colorPopup)) {
                 colorPopup.hidePopup();
             }
-            if (p != costPopup) {
+            if (!p.equals(costPopup)) {
                 costPopup.hidePopup();
             }
-            if (p != subtypePopup) {
+            if (!p.equals(subtypePopup)) {
                 subtypePopup.hidePopup();
             }
-            if (p != rarityPopup) {
+            if (!p.equals(rarityPopup)) {
                 rarityPopup.hidePopup();
             }
         }
@@ -309,9 +304,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             newFilterButtons[i].setFocusPainted(true);
             newFilterButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             if (i == 0) {
-                newFilterButtons[i].setSelected(true);
+                newFilterButtons[0].setSelected(true);
             } else if (i == 1) {
-                newFilterButtons[i].setVisible(!hideAND);
+                newFilterButtons[1].setVisible(!hideAND);
             }
             bg.add(newFilterButtons[i]);
             popup.add(newFilterButtons[i]);
@@ -331,7 +326,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         // search text in name, abilities, type, text, etc.
         if (nameTextField != null) {
-            if (nameTextField.getSearchTerms().size() > 0) {
+            if (!nameTextField.getSearchTerms().isEmpty()) {
                 for (String searchTerm : nameTextField.getSearchTerms()) {
                     if (!cardDefinition.hasText(searchTerm)) {
                         return false;
@@ -342,58 +337,46 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         // cube
         if (!filterCheckboxes(cardDefinition, cubeCheckBoxes, cubeFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
-                    return fmt.isCardLegal(card);
-                }
+            (card, i) -> {
+                final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
+                return fmt.isCardLegal(card);
             })) {
             return false;
         }
 
         // format
         if (!filterCheckboxes(cardDefinition, formatsCheckBoxes, formatsFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
-                    return fmt.isCardLegal(card);
-                }
+            (card, i) -> {
+                final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
+                return fmt.isCardLegal(card);
             })) {
             return false;
         }
 
         // sets
         if (!filterCheckboxes(cardDefinition, setsCheckBoxes, setsFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicSets magicSet  = MagicSets.values()[i];
-                    return  MagicSetDefinitions.isCardInSet(card, magicSet);
-                }
+            (card, i) -> {
+                final MagicSets magicSet  = MagicSets.values()[i];
+                return  MagicSetDefinitions.isCardInSet(card, magicSet);
             })) {
             return false;
         }
 
         // type
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    if (typeCheckBoxes[i].getText().equals(UiString.get(_S20))) {
-                        return card.isToken();
-                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S21))) {
-                        return card.isDoubleFaced();
-                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S22))) {
-                        return card.isFlipCard();
-                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S23))) {
-                        return card.isHidden();
-                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S24))) {
-                        return card.isSplitCard();
-                    } else {
-                        return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
-                    }
+            (card, i) -> {
+                if (typeCheckBoxes[i].getText().equals(UiString.get(_S20))) {
+                    return card.isToken();
+                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S21))) {
+                    return card.isDoubleFaced();
+                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S22))) {
+                    return card.isFlipCard();
+                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S23))) {
+                    return card.isHidden();
+                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S24))) {
+                    return card.isSplitCard();
+                } else {
+                    return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
                 }
             })) {
             return false;
@@ -401,45 +384,25 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         // color
         if (!filterCheckboxes(cardDefinition, colorCheckBoxes, colorFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasColor(MagicColor.values()[i]);
-                }
-            })) {
+            (card, i) -> card.hasColor(MagicColor.values()[i]))) {
             return false;
         }
 
         // cost
         if (!filterCheckboxes(cardDefinition, costCheckBoxes, costFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
-                }
-            })) {
+            (card, i) -> card.hasConvertedCost(Integer.parseInt(COST_VALUES[i])))) {
             return false;
         }
 
         // subtype
         if (!filterCheckboxes(cardDefinition, subtypeCheckBoxes, subtypeFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasSubType(MagicSubType.values()[i]);
-                }
-            })) {
+            (card, i) -> card.hasSubType(MagicSubType.values()[i]))) {
             return false;
         }
 
         // rarity
         if (!filterCheckboxes(cardDefinition, rarityCheckBoxes, rarityFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.isRarity(MagicRarity.values()[i]);
-                }
-            })) {
+            (card, i) -> card.isRarity(MagicRarity.values()[i]))) {
             return false;
         }
 
@@ -469,10 +432,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         for (int i=0; i < checkboxes.length; i++) {
             if (checkboxes[i].isSelected()) {
                 somethingSelected = true;
-                if (!func.checkCard(cardDefinition, i)) {
-                    resultAND = false;
-                } else {
+                if (func.checkCard(cardDefinition, i)) {
                     resultOR = true;
+                } else {
+                    resultAND = false;
                 }
             }
         }
@@ -480,13 +443,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             // exclude selected
             return !resultOR;
         }
-        if (!somethingSelected) {
-            // didn't choose to exclude and nothing selected, so don't filter
-            return true;
-        } else {
-            // otherwise return OR or AND result
-            return (filterButtons[0].isSelected() && resultOR) || (filterButtons[1].isSelected() && resultAND);
-        }
+        // otherwise return OR or AND result
+        return !somethingSelected || ((filterButtons[0].isSelected() && resultOR) || (filterButtons[1].isSelected() && resultAND));
     }
 
     private interface CardChecker {
@@ -494,9 +452,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private Stream<MagicCardDefinition> getFilteredStream() {
-        return listener.isDeckEditor()
-            ? cardPool.stream().filter(c -> !c.isHidden() && isCardfiltered(c))
-            : cardPool.stream().filter(c -> isCardfiltered(c));
+        return cardPool.stream().filter(listener.isDeckEditor() ? card -> !card.isHidden() && isCardfiltered(card) : this::isCardfiltered);
     }
 
     public List<MagicCardDefinition> getFilteredCards() {
@@ -510,11 +466,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         totalFilteredCards = cards.size();
 
         missingCards = (int) cards.stream()
-            .filter(c -> c.isPlayable() && c.isInvalid())
+            .filter(card -> card.isPlayable() && card.isInvalid())
             .count();
 
         playableCards = (int) cards.stream()
-            .filter(c -> c.isPlayable() && !c.isInvalid())
+            .filter(card -> card.isPlayable() && !card.isInvalid())
             .count();
     }
 
@@ -566,7 +522,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     public void actionPerformed(final ActionEvent event) {
         final Component c = (Component)event.getSource();
         c.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        if (event.getSource() == resetButton) {
+        if (event.getSource().equals(resetButton)) {
             resetFilters();
         }
         if (!disableUpdate) {
@@ -584,10 +540,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     private Object[] getTypeFilterValues() {
-        final List<Object> types = new ArrayList<>();
-        for (MagicType type : MagicType.FILTER_TYPES) {
-            types.add(type.getDisplayName());
-        }
+        final List<Object> types = MagicType.FILTER_TYPES.stream().map(MagicType::getDisplayName).collect(Collectors.toList());
         if (!listener.isDeckEditor()) {
             types.add(UiString.get(_S20));
             types.add(UiString.get(_S21));
