@@ -1,13 +1,3 @@
-def List<MagicAbility> landwalkAbilities = [
-    MagicAbility.Plainswalk,
-    MagicAbility.Islandwalk,
-    MagicAbility.Swampwalk,
-    MagicAbility.Mountainwalk,
-    MagicAbility.Forestwalk,
-    MagicAbility.NonbasicLandwalk,
-    MagicAbility.LegendaryLandwalk
-];
-
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.LoseEvasion),
@@ -32,7 +22,7 @@ def List<MagicAbility> landwalkAbilities = [
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new LoseAbilityAction(it,landwalkAbilities));
+                game.doAction(new LoseAbilityAction(it, MagicAbility.LANDWALK_FLAGS, MagicStatic.UntilEOT));
             });
         }
     }
