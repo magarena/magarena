@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, it deals 1 damage to each of up to two t
 transform=Erupting Dreadwolf
 timing=main
 oracle=When Smoldering Werewolf enters the battlefield, it deals 1 damage to each of up to two target creatures.\n{4}{R}{R}: Transform Smoldering Werewolf.
+status=not supported: multiple-targets
