@@ -7,3 +7,4 @@ cost={4}{G}
 effect=For each color, return up to one target card of that color from your graveyard to your hand. Exile SN.
 timing=main
 oracle=For each color, return up to one target card of that color from your graveyard to your hand. Exile All Suns' Dawn.
+status=not supported: multiple-targets

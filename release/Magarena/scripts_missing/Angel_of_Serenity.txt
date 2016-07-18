@@ -12,3 +12,4 @@ ability=Flying;\
         When SN leaves the battlefield, return the exiled cards to their owners' hands.
 timing=main
 oracle=Flying\nWhen Angel of Serenity enters the battlefield, you may exile up to three other target creatures from the battlefield and/or creature cards from graveyards.\nWhen Angel of Serenity leaves the battlefield, return the exiled cards to their owners' hands.
+status=not supported: multiple-targets
