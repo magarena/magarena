@@ -557,6 +557,36 @@ public enum MagicRuleEventAction {
             return new MagicDamageTargetPicker(count);
         }
     },
+    Fight(
+        ARG.IT + " fight(s)? " + ARG.TARGETS,
+        MagicTiming.Removal,
+        "Fight"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
+            return (game, event) -> event.processTargetPermanent(game, (final MagicPermanent other) -> {
+                final MagicPermanent it = ARG.itPermanent(event, matcher);
+                game.doAction(new DealDamageAction(it, other, it.getPower()));
+                game.doAction(new DealDamageAction(other, it, other.getPower()));
+            });
+        }
+
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return new MagicDamageTargetPicker(new MagicAmount() {
+                @Override
+                public int getAmount(final MagicEvent event) {
+                    final MagicPermanent it = ARG.itPermanent(event, matcher);
+                    return it.getPower();
+                }
+                @Override
+                public int getAmount(final MagicSource source, final MagicPlayer player) {
+                    return 0;
+                }
+            });
+        }
+    },
     PreventNextDamage(
         "prevent the next " + ARG.AMOUNT + " damage that would be dealt to " + ARG.TARGETS + " this turn",
         MagicTargetHint.Positive,
