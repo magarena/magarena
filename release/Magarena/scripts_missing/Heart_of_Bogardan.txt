@@ -8,3 +8,4 @@ ability=Cumulative upkeep {2};\
         When a player doesn't pay SN's cumulative upkeep, SN deals X damage to target player and each creature he or she controls, where X is twice the number of age counters on SN minus 2.
 timing=enchantment
 oracle=Cumulative upkeep {2}\nWhen a player doesn't pay Heart of Bogardan's cumulative upkeep, Heart of Bogardan deals X damage to target player and each creature he or she controls, where X is twice the number of age counters on Heart of Bogardan minus 2.
+status=needs groovy

@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, you may return target card from your gra
         When SN dies, you may exile it. If you do, return target card from your graveyard to your hand.
 timing=main
 oracle=When Greenwarden of Murasa enters the battlefield, you may return target card from your graveyard to your hand.\nWhen Greenwarden of Murasa dies, you may exile it. If you do, return target card from your graveyard to your hand.
+status=needs groovy
