@@ -7,6 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=3/3
-ability=Commander creatures you control get +2/+2 and have indestructible.
 timing=main
 oracle=Commander creatures you control get +2/+2 and have indestructible.
