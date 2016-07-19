@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Transform all Humans. Prevent all combat damage that would be dealt this turn by creatures other than Werewolves and Wolves.
 timing=removal
 oracle=Transform all Humans. Prevent all combat damage that would be dealt this turn by creatures other than Werewolves and Wolves.
+status=needs groovy

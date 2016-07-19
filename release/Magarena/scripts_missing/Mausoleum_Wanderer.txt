@@ -11,3 +11,4 @@ ability=Flying;\
         Sacrifice SN: Counter target instant or sorcery spell unless its controller pays {X}, where X is SN's power.
 timing=main
 oracle=Flying\nWhenever another Spirit enters the battlefield under your control, Mausoleum Wanderer gets +1/+1 until end of turn.\nSacrifice Mausoleum Wanderer: Counter target instant or sorcery spell unless its controller pays {X}, where X is Mausoleum Wanderer's power.
+status=needs groovy

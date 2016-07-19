@@ -11,3 +11,4 @@ ability={T}: Add {C} to your mana pool. Spend this mana only to cast an instant 
 transform=Voracious Reader
 timing=main
 oracle={T}: Add {C} to your mana pool. Spend this mana only to cast an instant or sorcery spell.\nAt the beginning of your upkeep, if there are three or more instant and/or sorcery cards in your graveyard, transform Curious Homunculus.
+status=not supported: mana-spent

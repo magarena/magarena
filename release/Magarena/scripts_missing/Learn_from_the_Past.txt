@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Target player shuffles his or her graveyard into his or her library.~Draw a card.
 timing=removal
 oracle=Target player shuffles his or her graveyard into his or her library.\nDraw a card.
+status=needs groovy

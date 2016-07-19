@@ -7,3 +7,4 @@ ability=Reveal SN as you draft it. The player to your right chooses a color, you
         {T}: Add one mana to your mana pool of any color chosen as you drafted cards named Paliano, the High City.
 timing=land
 oracle=Reveal Paliano, the High City as you draft it. The player to your right chooses a color, you choose another color, then the player to your left chooses a third color.\n{T}: Add one mana to your mana pool of any color chosen as you drafted cards named Paliano, the High City.
+status=not supported: draft

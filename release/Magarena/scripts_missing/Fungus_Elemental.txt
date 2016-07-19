@@ -9,3 +9,4 @@ pt=3/3
 ability={G}, Sacrifice a Forest: Put a +2/+2 counter on SN. Activate this ability only if SN entered the battlefield this turn.
 timing=main
 oracle={G}, Sacrifice a Forest: Put a +2/+2 counter on Fungus Elemental. Activate this ability only if Fungus Elemental entered the battlefield this turn.
+status=not supported: no-info

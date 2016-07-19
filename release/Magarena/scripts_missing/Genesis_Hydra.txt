@@ -10,3 +10,4 @@ ability=When you cast SN, reveal the top X cards of your library. You may put a 
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
 oracle=When you cast Genesis Hydra, reveal the top X cards of your library. You may put a nonland permanent card with converted mana cost X or less from among them onto the battlefield. Then shuffle the rest into your library.\nGenesis Hydra enters the battlefield with X +1/+1 counters on it.
+status=needs groovy

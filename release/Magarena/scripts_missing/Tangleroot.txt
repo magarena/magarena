@@ -7,3 +7,4 @@ cost={3}
 ability=Whenever a player casts a creature spell, that player adds {G} to his or her mana pool.
 timing=artifact
 oracle=Whenever a player casts a creature spell, that player adds {G} to his or her mana pool.
+status=not supported: non-activated-mana-ability

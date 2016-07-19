@@ -7,3 +7,4 @@ cost={4}{U}
 effect=Put target creature on top of its owner's library, then fateseal 2.
 timing=removal
 oracle=Put target creature on top of its owner's library, then fateseal 2.
+status=not supported: ordering-lib-top

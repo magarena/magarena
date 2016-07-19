@@ -7,3 +7,4 @@ cost={5}
 ability=The "legend rule" doesn't apply.
 timing=artifact
 oracle=The "legend rule" doesn't apply.
+status=not supported: rule-change

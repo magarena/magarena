@@ -8,3 +8,4 @@ cost={3}{U}
 effect=Target opponent exiles cards from the top of his or her library until he or she exiles a nonland card. Until end of turn, you may cast that card without paying its mana cost.
 timing=main
 oracle=Target opponent exiles cards from the top of his or her library until he or she exiles a nonland card. Until end of turn, you may cast that card without paying its mana cost.
+status=not supported: may-play-card

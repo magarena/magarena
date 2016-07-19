@@ -7,3 +7,4 @@ cost={2}
 ability={1}, {T}: End the turn. Activate this ability only during your turn.
 timing=artifact
 oracle={1}, {T}: End the turn. Activate this ability only during your turn.
+status=not supported: end-turn
