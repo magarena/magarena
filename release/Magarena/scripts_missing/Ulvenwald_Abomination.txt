@@ -11,3 +11,4 @@ transform=Ulvenwald Captive
 timing=main
 hidden
 oracle={T}: Add {C}{C} to your mana pool.
+status=not supported: add-multiple-mana
