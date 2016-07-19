@@ -227,6 +227,7 @@ life ?= 10
 ai1 ?= MMABFast
 ai2 ?= MMABFast
 debug ?= false
+parseMissing ?= false
 devMode ?= false
 selfMode ?= false
 flags ?= 
@@ -237,6 +238,7 @@ flags ?=
 	$(RUN) ${flags} \
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
+	-DparseMissing=${parseMissing} \
 	-DdevMode=${devMode} \
 	-Dgame.log=$*.log \
 	-Djava.awt.headless=true \
@@ -813,26 +815,22 @@ missing_override:
 	grep public -B1 -r release/Magarena/scripts | awk '/Override/ {skip = NR + 1} NR != skip {print $$0}' | grep -v Override | grep release > $@
 
 parse_new.txt: cards/existing_master.txt
-	patch -p1 < parse_missing.patch
 	cp `grep status=not -Lr release/Magarena/scripts_missing/` release/Magarena/scripts
 	-rm 101.out
-	make debug
+	make parseMissing=true debug
 	grep "ERROR " 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > parse_missing.txt
 	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt  
 	git clean -qf release/Magarena/scripts
-	patch -p1 -R < parse_missing.patch
 	join -v2 -t'_' $^ parse_ok.txt > $@
 	diff parse_new.ignore $@
 
 parse_groovy.txt: cards/groovy.txt
-	patch -p1 < parse_missing.patch
 	cp scripts-builder/OUTPUT/scripts_missing/* release/Magarena/scripts
 	-rm 101.out
-	make debug
+	make parseMissing=true debug
 	grep "ERROR " 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > parse_missing.txt
 	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt
 	git checkout -- release/Magarena/scripts
-	patch -p1 -R < parse_missing.patch
 	join -t'_' <(sort $^) <(sort parse_ok.txt) > $@
 	diff parse_groovy.ignore $@
 

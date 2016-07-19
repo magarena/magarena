@@ -173,8 +173,11 @@ public class CardDefinitions {
             final MagicCardDefinition cdef = prop2carddef(file, false);
             addDefinition(cdef);
         } catch (final Throwable cause) {
-            //System.out.println("ERROR file: " + file + " cause: " + cause.getMessage());
-            throw new RuntimeException("Error loading " + file, cause);
+            if (MagicSystem.isParseMissing()) {
+                System.out.println("ERROR file: " + file + " cause: " + cause.getMessage());
+            } else {
+                throw new RuntimeException("Error loading " + file, cause);
+            }
         }
     }
 
@@ -228,9 +231,15 @@ public class CardDefinitions {
             executor.execute(() -> {
                 try {
                     cdef.loadAbilities();
+                    if (MagicSystem.isParseMissing() && !cdef.isToken()) {
+                        System.out.println("OK card: " + cdef);
+                    }
                 } catch (Throwable cause) {
-                    //System.out.println("ERROR card: " + cdef + " cause: " + cause.getMessage());
-                    throw new RuntimeException("Unable to load " + cdef, cause);
+                    if (MagicSystem.isParseMissing()) {
+                        System.out.println("ERROR card: " + cdef + " cause: " + cause.getMessage());
+                    } else {
+                        throw new RuntimeException("Unable to load " + cdef, cause);
+                    }
                 }
             });
         });
