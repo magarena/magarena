@@ -20,7 +20,6 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
-import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.SwingGameController;
 import magic.ui.message.TextLabel;
 
@@ -170,10 +169,6 @@ public class UserActionPanel extends JPanel implements ActionListener {
         } else if (source==undoButton) {
             controller.undoClicked();
         }
-    }
-
-    public MagicPhaseType getMagicPhaseType() {
-        return controller.getViewerInfo().getPhaseType();
     }
 
     /**
