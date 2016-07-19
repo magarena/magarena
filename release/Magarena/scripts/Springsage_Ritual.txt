@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{G}
-effect=Destroy target artifact or enchantment. You gain 4 life.
+effect=Destroy target artifact or enchantment.~You gain 4 life.
 timing=removal
 oracle=Destroy target artifact or enchantment. You gain 4 life.
