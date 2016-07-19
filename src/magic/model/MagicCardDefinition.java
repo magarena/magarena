@@ -298,7 +298,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public void setDistinctName(String aName) {
-        assert !name.equals(aName) || name.equals(aName) : "Same name but using two separate strings. Should reference same string for efficiency.";
+        assert !name.equals(aName) || name == aName : "Same name but using two separate strings. Should reference same string for efficiency.";
         distinctName = aName;
     }
 
@@ -673,7 +673,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
 
         //every Aura should have an MagicPlayAuraEvent
-        if (isAura() && cardEvent.equals(MagicPlayCardEvent.create())) {
+        if (isAura() && cardEvent == MagicPlayCardEvent.create()) {
             throw new RuntimeException(name + " does not have the enchant property");
         }
     }
@@ -683,7 +683,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public boolean hasCost() {
-        return !cost.equals(MagicManaCost.NONE);
+        return cost != MagicManaCost.NONE;
     }
 
     public List<MagicEvent> getCostEvent(final MagicCard source) {
@@ -804,7 +804,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public void setEvent(final MagicCardEvent aCardEvent) {
-        assert cardEvent.equals(MagicPlayCardEvent.create()) : "Attempting to set two MagicCardEvents for " + this;
+        assert cardEvent == MagicPlayCardEvent.create() : "Attempting to set two MagicCardEvents for " + this;
         cardEvent = aCardEvent;
     }
 
@@ -965,11 +965,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public boolean hasText(String s) {
         s = s.toLowerCase();
-        return CardDefinitions.getASCII(distinctName).toLowerCase().contains(s) ||
-        CardDefinitions.getASCII(name).toLowerCase().contains(s) ||
-        subTypeHasText(s) ||
-        abilityHasText(s) ||
-        CardDefinitions.getASCII(getText()).toLowerCase().contains(s);
+        return
+            CardDefinitions.getASCII(distinctName).toLowerCase().contains(s) ||
+            CardDefinitions.getASCII(name).toLowerCase().contains(s) ||
+            subTypeHasText(s) ||
+            abilityHasText(s) ||
+            CardDefinitions.getASCII(getText()).toLowerCase().contains(s);
     }
 
     @Override
@@ -977,62 +978,47 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return getName();
     }
 
-    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> cardDefinition1.getName().compareTo(cardDefinition2.getName());
+    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC = (cd1, cd2) -> cd1.getName().compareTo(cd2.getName());
 
-    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> NAME_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC = (cd1, cd2) -> NAME_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> {
-        final int cdif=cardDefinition1.getConvertedCost()-cardDefinition2.getConvertedCost();
-        if (cdif!=0) {
-            return cdif;
-        }
-        return cardDefinition1.getName().compareTo(cardDefinition2.getName());
+    public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_DESC = (cd1, cd2) -> {
+        final int cdif=cd1.getConvertedCost()-cd2.getConvertedCost();
+        return cdif != 0 ? cdif : cd1.getName().compareTo(cd2.getName());
     };
 
-    public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> CONVERTED_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+    public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_ASC = (cd1, cd2) -> CONVERTED_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> {
-        final int c = cardDefinition1.getTypeString().compareTo(cardDefinition2.getTypeString());
-        if (c == 0) {
-            return cardDefinition1.getLongTypeString().compareTo(cardDefinition2.getLongTypeString());
-        }
-        return c;
+    public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_DESC = (cd1, cd2) -> {
+        final int c = cd1.getTypeString().compareTo(cd2.getTypeString());
+        return c != 0 ? c : cd1.getLongTypeString().compareTo(cd2.getLongTypeString());
     };
 
-    public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> TYPE_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+    public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_ASC = (cd1, cd2) -> TYPE_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> {
-        final int c = cardDefinition1.getSubTypeString().compareTo(cardDefinition2.getSubTypeString());
-        return c;
+    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC = (cd1, cd2) -> cd1.getSubTypeString().compareTo(cd2.getSubTypeString());
+
+    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_ASC = (cd1, cd2) -> SUBTYPE_COMPARATOR_DESC.compare(cd2, cd1);
+
+    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC = (cd1, cd2) -> cd1.getRarity() - cd2.getRarity();
+
+    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_ASC = (cd1, cd2) -> RARITY_COMPARATOR_DESC.compare(cd2, cd1);
+
+    public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_DESC = (cd1, cd2) -> {
+        final int p1 = cd1.isCreature() ? cd1.getCardPower() : -100;
+        final int p2 = cd2.isCreature() ? cd2.getCardPower() : -100;
+        return p1 != p2 ? p1 - p2 : cd1.getName().compareTo(cd2.getName());
     };
 
-    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> SUBTYPE_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+    public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_ASC= (cd1, cd2) -> POWER_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> cardDefinition1.getRarity() - cardDefinition2.getRarity();
-
-    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> RARITY_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
-
-    public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> {
-        final int p1 = cardDefinition1.isCreature() ? cardDefinition1.getCardPower() : -100;
-        final int p2 = cardDefinition2.isCreature() ? cardDefinition2.getCardPower() : -100;
-
-        return p1 == p2 ? cardDefinition1.getName().compareTo(cardDefinition2.getName()) : p1 - p2;
+    public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_DESC= (cd1, cd2) -> {
+        final int t1 = cd1.isCreature() ? cd1.getCardToughness() : -100;
+        final int t2 = cd2.isCreature() ? cd2.getCardToughness() : -100;
+        return t1 != t2 ? t1 - t2 : cd1.getName().compareTo(cd2.getName());
     };
 
-    public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> POWER_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
-
-    public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_DESC= (cardDefinition1, cardDefinition2) -> {
-        final int t1 = cardDefinition1.isCreature() ? cardDefinition1.getCardToughness() : -100;
-        final int t2 = cardDefinition2.isCreature() ? cardDefinition2.getCardToughness() : -100;
-
-        if (t1 != t2) {
-            return t1 - t2;
-        } else {
-            return cardDefinition1.getName().compareTo(cardDefinition2.getName());
-        }
-    };
-
-    public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_ASC= (cardDefinition1, cardDefinition2) -> TOUGHNESS_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+    public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_ASC= (cd1, cd2) -> TOUGHNESS_COMPARATOR_DESC.compare(cd2, cd1);
 
     public boolean isImageFileMissing() {
         return MagicFileSystem.isCardImageMissing(this);
