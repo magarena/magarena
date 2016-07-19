@@ -72,6 +72,10 @@ public class MagicCard
         public boolean isOnStack() {
             return false;
         }
+        @Override
+        public boolean isValid() {
+            return false;
+        }
     };
 
     private static final int TOKEN_ID=-1;
@@ -352,6 +356,10 @@ public class MagicCard
 
     @Override
     public boolean isValidTarget(final MagicSource source) {
+        return true;
+    }
+
+    public boolean isValid() {
         return true;
     }
 
