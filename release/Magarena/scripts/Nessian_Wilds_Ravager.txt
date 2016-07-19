@@ -6,7 +6,6 @@ type=Creature
 subtype=Hydra
 cost={4}{G}{G}
 pt=6/6
-ability=Tribute 6;\
-        When SN enters the battlefield, if tribute wasn't paid, you may have SN fight another target creature.
+ability=Tribute 6 effect You may have SN fight another target creature.
 timing=main
 oracle=Tribute 6\nWhen Nessian Wilds Ravager enters the battlefield, if tribute wasn't paid, you may have Nessian Wilds Ravager fight another target creature.
