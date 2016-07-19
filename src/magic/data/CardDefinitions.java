@@ -469,7 +469,7 @@ public class CardDefinitions {
     }
 
     private static List<String> getPlayableNonTokenCardNames() {
-        return getAllPlayableCardDefs().stream().filter(card -> !card.isToken()).map(MagicCardDefinition::getName).collect(Collectors.toCollection(ArrayList::new));
+        return getAllPlayableCardDefs().stream().filter(card -> !card.isToken()).map(MagicCardDefinition::getName).collect(Collectors.toList());
     }
 
     public static void updateNewCardsLog(final List<String> snapshot) {
