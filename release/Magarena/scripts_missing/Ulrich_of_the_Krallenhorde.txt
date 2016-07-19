@@ -8,6 +8,6 @@ cost={3}{R}{G}
 pt=4/4
 ability=Whenever this creature enters the battlefield or transforms into SN, target creature gets +4/+4 until end of turn.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
-transform=Ulrich, Uncontested Alpha 
+transform=Ulrich, Uncontested Alpha
 timing=main
 oracle=Whenever this creature enters the battlefield or transforms into Ulrich of the Krallenhorde, target creature gets +4/+4 until end of turn.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Ulrich of the Krallenhorde.
