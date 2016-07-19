@@ -6,6 +6,6 @@ type=Creature
 subtype=Elk
 cost={3}{G}{G}
 pt=4/3
-ability=When SN enters the battlefield, you may have it fight target creature you don't control.
+ability=When SN enters the battlefield, you may have SN fight target creature you don't control.
 timing=main
 oracle=When Somberwald Stag enters the battlefield, you may have it fight target creature you don't control.
