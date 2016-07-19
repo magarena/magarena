@@ -8,7 +8,7 @@ cost={1}{U}
 pt=0/4
 ability=Defender;\
         SN enters the battlefield with four ice counters on it.;\
-        Whenever you cast an instant or sorcery spell, remove an ice counter from SN. Then if it has no ice counters on it, transform it.
+        Whenever you cast an instant or sorcery spell, remove an ice counter from SN.~Then if it has no ice counters on it, transform SN.
 transform=Awoken Horror
 timing=smain
 oracle=Defender\nThing in the Ice enters the battlefield with four ice counters on it.\nWhenever you cast an instant or sorcery spell, remove an ice counter from Thing in the Ice. Then if it has no ice counters on it, transform it.
