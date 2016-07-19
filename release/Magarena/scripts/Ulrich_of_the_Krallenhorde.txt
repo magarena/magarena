@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Human,Werewolf
 cost={3}{R}{G}
 pt=4/4
-ability=Whenever this creature enters the battlefield or transforms into SN, target creature gets +4/+4 until end of turn.;\
+ability=Whenever this creature enters the battlefield, target creature gets +4/+4 until end of turn.;\
+        Whenever this creature transforms into SN, target creature gets +4/+4 until end of turn.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Ulrich, Uncontested Alpha
 timing=main
