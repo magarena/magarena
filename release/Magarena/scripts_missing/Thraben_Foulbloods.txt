@@ -9,3 +9,4 @@ pt=3/2
 ability=SN gets +1/+1 and has menace as long as there are four or more card types among cards in your graveyard.
 timing=main
 oracle=Delirium — Thraben Foulbloods gets +1/+1 and has menace as long as there are four or more card types among cards in your graveyard.
+status=not supported: blocking-restriction
