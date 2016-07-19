@@ -11,3 +11,4 @@ ability=Flash;\
         When you cast SN, tap up to four target permanents.
 timing=flash
 oracle=Flash\nEmerge {5}{U}{U}\nWhen you cast Elder Deep-Fiend, tap up to four target permanents.
+status=not supported: multiple-targets

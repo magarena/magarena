@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Exile up to two target creatures you control, then return those cards to the battlefield under their owner's control.
 timing=removal
 oracle=Exile up to two target creatures you control, then return those cards to the battlefield under their owner's control.
+status=not supported: multiple-targets

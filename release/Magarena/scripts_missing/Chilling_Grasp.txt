@@ -8,3 +8,4 @@ ability=Madness {3}{U}
 effect=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
 timing=removal
 oracle=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.\nMadness {3}{U}
+status=not supported: multiple-targets
