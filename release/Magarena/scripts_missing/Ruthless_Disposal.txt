@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, discard a card and sacrifice a creatur
 effect=Two target creatures each get -13/-13 until end of turn.
 timing=main
 oracle=As an additional cost to cast Ruthless Disposal, discard a card and sacrifice a creature.\nTwo target creatures each get -13/-13 until end of turn.
+status=not supported: multiple-targets

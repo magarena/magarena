@@ -11,3 +11,4 @@ ability=Trample;\
         Madness {1}{R}
 timing=main
 oracle=Trample\nWhenever Stromkirk Occultist deals combat damage to a player, exile the top card of your library. Until end of turn, you may play that card.\nMadness {1}{R}
+status=not supported: may-play-card

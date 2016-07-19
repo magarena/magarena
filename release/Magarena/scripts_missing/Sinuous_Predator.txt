@@ -11,3 +11,4 @@ transform=Kessig Prowler
 timing=main
 hidden
 oracle=Sinuous Predator can't be blocked by more than one creature.
+status=not supported: blocking-restriction

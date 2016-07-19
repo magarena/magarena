@@ -12,3 +12,4 @@ ability=Flash;\
         When SN leaves the battlefield, the exiled card's owner may cast that card without paying its mana cost.
 timing=flash
 oracle=Flash\nFlying\nWhen Spell Queller enters the battlefield, exile target spell with converted mana cost 4 or less.\nWhen Spell Queller leaves the battlefield, the exiled card's owner may cast that card without paying its mana cost.
+status=not supported: may-play-card
