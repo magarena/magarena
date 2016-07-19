@@ -10,4 +10,4 @@ ability=Trample; rampage 2;\
         SN can't be blocked except by three or more creatures.
 timing=main
 oracle=Trample, rampage 2\nGorilla Berserkers can't be blocked except by three or more creatures.
-statuc=not supported: blocking-restriction
+status=not supported: blocking-restriction
