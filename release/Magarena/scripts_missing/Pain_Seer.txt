@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN becomes untapped, reveal the top card of your library and put that card into your hand. You lose life equal to that card's converted mana cost.
 timing=main
 oracle=Inspired — Whenever Pain Seer becomes untapped, reveal the top card of your library and put that card into your hand. You lose life equal to that card's converted mana cost.
+status=needs groovy
