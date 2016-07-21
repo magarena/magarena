@@ -142,6 +142,11 @@ public enum MagicConditionParser {
             return MagicCondition.OPPONENT_HELLBENT;
         }
     },
+    AnyHellbent("a player has no cards in hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.ANY_HELLBENT;
+        }
+    },
     CountersAtMost("(SN|it) has " + ARG.AMOUNT + " or fewer " + ARG.WORD1 + " counters on (it|him)") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
