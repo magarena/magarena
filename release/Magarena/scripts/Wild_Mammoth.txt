@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant
 cost={2}{G}
 pt=3/4
-ability=At the beginning of your upkeep, if a player controls more creatures than each other player, the player who controls the most creatures gains control of SN.
 timing=main
+requires_groovy_code
 oracle=At the beginning of your upkeep, if a player controls more creatures than each other player, the player who controls the most creatures gains control of Wild Mammoth.
