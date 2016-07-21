@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{G}{G}
-ability=Whenever you cast an Eldrazi creature spell with converted mana cost 7 or greater, draw two cards.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever you cast an Eldrazi creature spell with converted mana cost 7 or greater, draw two cards.
