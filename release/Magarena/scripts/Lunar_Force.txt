@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}
-ability=When an opponent casts a spell, sacrifice SN and counter that spell.
 timing=enchantment
+requires_groovy_code
 oracle=When an opponent casts a spell, sacrifice Lunar Force and counter that spell.
