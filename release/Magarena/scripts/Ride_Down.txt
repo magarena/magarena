@@ -4,7 +4,6 @@ value=3.250
 rarity=U
 type=Instant
 cost={R}{W}
-effect=Destroy target blocking creature. Creatures that were blocked by that creature this combat gain trample until end of turn.
 timing=removal
+requires_groovy_code
 oracle=Destroy target blocking creature. Creatures that were blocked by that creature this combat gain trample until end of turn.
-status=needs groovy
