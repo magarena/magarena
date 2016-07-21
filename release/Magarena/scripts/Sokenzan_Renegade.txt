@@ -6,8 +6,7 @@ type=Creature
 subtype=Ogre,Samurai,Mercenary
 cost={2}{R}
 pt=3/3
-ability=Bushido 1;\
-        At the beginning of your upkeep, if a player has more cards in hand than each other player, the player who has the most cards in hand gains control of SN.
+ability=Bushido 1
 timing=main
+requires_groovy_code
 oracle=Bushido 1\nAt the beginning of your upkeep, if a player has more cards in hand than each other player, the player who has the most cards in hand gains control of Sokenzan Renegade.
-status=needs groovy
