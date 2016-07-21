@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={4}{U}{U}
-effect=SN costs {2} less to cast if there are four or more card types among cards in your graveyard.~Draw three cards.
-timing=removal
+effect=Draw three cards.
+timing=draw
+requires_groovy_code
 oracle=Delirium — Scour the Laboratory costs {2} less to cast if there are four or more card types among cards in your graveyard.\nDraw three cards.
