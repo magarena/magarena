@@ -6,8 +6,7 @@ type=Creature
 subtype=Bird,Beast
 cost={2}{R}
 pt=2/3
-ability=Flying;\
-        At the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of SN.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of Thoughtbound Primoc.
-status=needs groovy
