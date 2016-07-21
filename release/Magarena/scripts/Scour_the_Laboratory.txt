@@ -6,5 +6,5 @@ type=Instant
 cost={4}{U}{U}
 effect=Draw three cards.
 timing=draw
-requires_groovy_code
+requires_groovy_code=Dusk Feaster
 oracle=Delirium — Scour the Laboratory costs {2} less to cast if there are four or more card types among cards in your graveyard.\nDraw three cards.
