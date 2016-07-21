@@ -10,3 +10,4 @@ ability=Flying;\
         At the beginning of your upkeep, you may sacrifice a nonartifact creature. If you do, put a +1/+1 counter on SN. If you don't, tap SN.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, you may sacrifice a nonartifact creature. If you do, put a +1/+1 counter on Ravenous Vampire. If you don't, tap Ravenous Vampire.
+status=needs groovy

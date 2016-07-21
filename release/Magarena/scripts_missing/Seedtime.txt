@@ -8,3 +8,4 @@ ability=Cast SN only during your turn.
 effect=Take an extra turn after this one if an opponent cast a blue spell this turn.
 timing=removal
 oracle=Cast Seedtime only during your turn.\nTake an extra turn after this one if an opponent cast a blue spell this turn.
+status=not supported: no-info

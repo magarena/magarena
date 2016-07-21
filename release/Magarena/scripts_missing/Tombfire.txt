@@ -7,3 +7,4 @@ cost={B}
 effect=Target player exiles all cards with flashback from his or her graveyard.
 timing=main
 oracle=Target player exiles all cards with flashback from his or her graveyard.
+status=needs groovy

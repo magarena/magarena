@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player discards that many cards.
 timing=main
 oracle=Flying\nWither\nWhenever Needle Specter deals combat damage to a player, that player discards that many cards.
+status=needs groovy

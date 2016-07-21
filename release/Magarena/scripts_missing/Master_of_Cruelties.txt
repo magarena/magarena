@@ -11,3 +11,4 @@ ability=First strike, deathtouch;\
         Whenever SN attacks a player and isn't blocked, that player's life total becomes 1. SN assigns no combat damage this combat.
 timing=main
 oracle=First strike, deathtouch\nMaster of Cruelties can only attack alone.\nWhenever Master of Cruelties attacks a player and isn't blocked, that player's life total becomes 1. Master of Cruelties assigns no combat damage this combat.
+status=not supported: attacking-restriction

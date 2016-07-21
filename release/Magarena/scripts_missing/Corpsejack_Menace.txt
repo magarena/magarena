@@ -9,3 +9,4 @@ pt=4/4
 ability=If one or more +1/+1 counters would be placed on a creature you control, twice that many +1/+1 counters are placed on it instead.
 timing=main
 oracle=If one or more +1/+1 counters would be placed on a creature you control, twice that many +1/+1 counters are placed on it instead.
+status=not supported: when-counter-placed

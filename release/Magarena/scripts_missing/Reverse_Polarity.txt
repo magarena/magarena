@@ -7,3 +7,4 @@ cost={W}{W}
 effect=You gain X life, where X is twice the damage dealt to you so far this turn by artifacts.
 timing=removal
 oracle=You gain X life, where X is twice the damage dealt to you so far this turn by artifacts.
+status=not supported: no-info

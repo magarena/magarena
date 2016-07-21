@@ -9,3 +9,4 @@ pt=1/2
 ability=When SN dies, target opponent discards a card for each Zubera that died this turn.
 timing=main
 oracle=When Ashen-Skin Zubera dies, target opponent discards a card for each Zubera that died this turn.
+status=not supported: no-info

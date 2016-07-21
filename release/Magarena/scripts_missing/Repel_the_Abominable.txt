@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Prevent all damage that would be dealt this turn by non-Human sources.
 timing=removal
 oracle=Prevent all damage that would be dealt this turn by non-Human sources.
+status=needs groovy

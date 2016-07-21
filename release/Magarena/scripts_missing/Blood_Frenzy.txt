@@ -8,3 +8,4 @@ ability=Cast SN only before the combat damage step.
 effect=Target attacking or blocking creature gets +4/+0 until end of turn. Destroy that creature at the beginning of the next end step.
 timing=removal
 oracle=Cast Blood Frenzy only before the combat damage step.\nTarget attacking or blocking creature gets +4/+0 until end of turn. Destroy that creature at the beginning of the next end step.
+status=needs groovy

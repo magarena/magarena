@@ -9,3 +9,4 @@ ability=At the beginning of your upkeep, choose one — \
         (2) Each player with exactly 13 life loses the game, then each player loses 1 life.
 timing=enchantment
 oracle=At the beginning of your upkeep, choose one —\n• Each player with exactly 13 life loses the game, then each player gains 1 life.\n• Each player with exactly 13 life loses the game, then each player loses 1 life.
+status=needs groovy

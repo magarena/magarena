@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, each player reveals the top card of his or her library. For each nonland card revealed this way, put a +1/+1 counter on SN. Then each player draws a card.
 timing=main
 oracle=Parley — When Selvala's Enforcer enters the battlefield, each player reveals the top card of his or her library. For each nonland card revealed this way, put a +1/+1 counter on Selvala's Enforcer. Then each player draws a card.
+status=needs groovy

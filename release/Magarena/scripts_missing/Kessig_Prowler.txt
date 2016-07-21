@@ -10,3 +10,4 @@ ability={4}{G}: Transform SN.
 transform=Sinuous Predator
 timing=main
 oracle={4}{G}: Transform Kessig Prowler.
+status=not supported: other-half

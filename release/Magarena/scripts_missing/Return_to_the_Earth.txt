@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Destroy target artifact, enchantment, or creature with flying.
 timing=removal
 oracle=Destroy target artifact, enchantment, or creature with flying.
+status=needs groovy

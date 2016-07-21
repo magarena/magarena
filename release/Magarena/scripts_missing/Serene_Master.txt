@@ -9,3 +9,4 @@ pt=0/2
 ability=Whenever SN blocks, exchange its power and the power of target creature it's blocking until end of combat.
 timing=main
 oracle=Whenever Serene Master blocks, exchange its power and the power of target creature it's blocking until end of combat.
+status=needs groovy

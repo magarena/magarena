@@ -7,3 +7,4 @@ cost={2}{U}
 effect=For each creature, its controller sacrifices a permanent unless he or she pays {1}.
 timing=main
 oracle=For each creature, its controller sacrifices a permanent unless he or she pays {1}.
+status=needs groovy

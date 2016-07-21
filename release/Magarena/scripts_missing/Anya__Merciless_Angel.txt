@@ -12,3 +12,4 @@ ability=Flying;\
         As long as an opponent's life total is less than half his or her starting life total, SN has indestructible.
 timing=main
 oracle=Flying\nAnya, Merciless Angel gets +3/+3 for each opponent whose life total is less than half his or her starting life total.\nAs long as an opponent's life total is less than half his or her starting life total, Anya has indestructible.
+status=not supported: no-info

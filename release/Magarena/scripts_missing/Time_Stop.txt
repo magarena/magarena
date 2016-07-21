@@ -7,3 +7,4 @@ cost={4}{U}{U}
 effect=End the turn.
 timing=removal
 oracle=End the turn.
+status=not supported: end-turn

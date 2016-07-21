@@ -7,3 +7,4 @@ cost={2}{W}{U}{U}
 effect=Counter all other spells. Draw a card for each spell countered this way.
 timing=counter
 oracle=Counter all other spells. Draw a card for each spell countered this way.
+status=needs groovy
