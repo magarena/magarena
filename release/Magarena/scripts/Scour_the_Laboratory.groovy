@@ -11,7 +11,7 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-           final int n = MagicCondition.DELERIUM_CONDITION.accept(source) ? 2 : 0;
+           final int n = MagicCondition.DELIRIUM_CONDITION.accept(source) ? 2 : 0;
             return [
                 new MagicPayManaCostEvent(
                     source,
