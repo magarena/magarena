@@ -282,6 +282,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl ENCHANTMENT_OR_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
+            return target.isSpell(MagicType.Enchantment) ||
+                   target.isSpell(MagicType.Instant) ||
+                   target.isSpell(MagicType.Sorcery);
+        }
+    };
+
     public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL = spellOr(MagicType.Instant, MagicType.Sorcery);
 
     public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL_YOU_CONTROL = spellOr(MagicType.Instant, MagicType.Sorcery, Control.You);
@@ -1322,6 +1330,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = creature(MagicCounterType.PlusOne, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER = creature(MagicCounterType.Level, Control.Any);
+
+    public static final MagicPermanentFilterImpl CREATURE_FATE_COUNTER = creature(MagicCounterType.Fate, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_AT_LEAST_3_LEVEL_COUNTERS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -2519,6 +2529,7 @@ public class MagicTargetFilterFactory {
         add("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         add("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
         add("creature with a level counter on it", CREATURE_LEVEL_COUNTER);
+        add("creature that has a fate counter on it", CREATURE_FATE_COUNTER);
         add("creature with a counter on it", CREATURE_WITH_COUNTER);
         add("creature with another Aura attached to it", CREATURE_WITH_ANOTHER_AURA);
         add("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
@@ -2679,6 +2690,7 @@ public class MagicTargetFilterFactory {
         add("blue instant spell", BLUE_INSTANT_SPELL);
         add("nonred spell", NONRED_SPELL);
         add("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
+        add("enchantment, instant, or sorcery spell", ENCHANTMENT_OR_INSTANT_OR_SORCERY_SPELL);
         add("white or blue instant or sorcery spell", WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL);
         add("instant or sorcery spell you control", INSTANT_OR_SORCERY_SPELL_YOU_CONTROL);
         add("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
