@@ -11,4 +11,3 @@ ability={1}, {T}: Put a fate counter on another target creature.;\
         {B}, {T}: Exile target creature that has a fate counter on it.~Its controller draws two cards.
 timing=main
 oracle={1}, {T}: Put a fate counter on another target creature.\n{W}, {T}: Exile target creature that has a fate counter on it, then return it to the battlefield under its owner's control.\n{B}, {T}: Exile target creature that has a fate counter on it. Its controller draws two cards.
-status=needs groovy
