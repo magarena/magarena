@@ -8,3 +8,4 @@ cost={3}{U}{U}
 effect=Counter target spell. Search its controller's graveyard, hand, and library for all cards with the same name as that spell and exile them. Then that player shuffles his or her library.
 timing=counter
 oracle=Counter target spell. Search its controller's graveyard, hand, and library for all cards with the same name as that spell and exile them. Then that player shuffles his or her library.
+status=needs groovy

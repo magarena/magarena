@@ -10,3 +10,4 @@ ability=Flying;\
         SN can't have counters placed on it.
 timing=main
 oracle=Flying\nTatterkite can't have counters placed on it.
+status=not supported: when-counter-placed
