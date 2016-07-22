@@ -574,17 +574,11 @@ public enum MagicRuleEventAction {
 
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return new MagicDamageTargetPicker(new MagicAmount() {
-                @Override
-                public int getAmount(final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    return it.getPower();
-                }
-                @Override
-                public int getAmount(final MagicSource source, final MagicPlayer player) {
-                    return 0;
-                }
-            });
+            if (matcher.group("sn") != null) {
+                return new MagicDamageTargetPicker(MagicAmountFactory.SN_Power);
+            } else {
+                return MagicDefaultTargetPicker.create();
+            }
         }
     },
     PreventNextDamage(
