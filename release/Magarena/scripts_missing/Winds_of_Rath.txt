@@ -7,3 +7,4 @@ cost={3}{W}{W}
 effect=Destroy all creatures that aren't enchanted. They can't be regenerated.
 timing=main
 oracle=Destroy all creatures that aren't enchanted. They can't be regenerated.
+status=needs groovy

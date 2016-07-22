@@ -7,3 +7,4 @@ cost={3}{B}
 effect=SN deals 1 damage to each nonblack creature and an additional 1 damage to each green creature.
 timing=main
 oracle=Kaervek's Hex deals 1 damage to each nonblack creature and an additional 1 damage to each green creature.
+status=needs groovy

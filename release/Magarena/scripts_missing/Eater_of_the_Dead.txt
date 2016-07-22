@@ -9,3 +9,4 @@ pt=3/4
 ability={0}: If SN is tapped, exile target creature card from a graveyard and untap SN.
 timing=main
 oracle={0}: If Eater of the Dead is tapped, exile target creature card from a graveyard and untap Eater of the Dead.
+status=needs groovy
