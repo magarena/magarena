@@ -15,7 +15,7 @@
             return [
                 new MagicPayManaCostEvent(
                     source,
-                    source.getCost().reduce(n)
+                    source.getGameCost().reduce(n)
                 )
             ];
         }

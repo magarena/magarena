@@ -11,11 +11,11 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-           final int n = INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD.filter(source).size();
+            final int n = INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD.filter(source).size();
             return [
                 new MagicPayManaCostEvent(
                     source,
-                    source.getCost().reduce(n)
+                    source.getGameCost().reduce(n)
                 )
             ];
         }

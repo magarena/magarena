@@ -13,7 +13,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final int n = MagicCondition.DELIRIUM_CONDITION.accept(source) ? 2 : 0;
             return [
-                new MagicPayManaCostEvent(source, source.getCost().reduce(n))
+                new MagicPayManaCostEvent(source, source.getGameCost().reduce(n))
             ];
         }
     }
