@@ -7,3 +7,4 @@ cost={W}
 effect=Put target creature into its owner's library second from the top. Its controller gains 3 life.
 timing=main
 oracle=Put target creature into its owner's library second from the top. Its controller gains 3 life.
+status=needs groovy
