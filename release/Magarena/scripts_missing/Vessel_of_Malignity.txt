@@ -7,3 +7,4 @@ cost={1}{B}
 ability={1}{B}, Sacrifice SN: Target opponent exiles two cards from his or her hand. Activate this ability only any time you could cast a sorcery.
 timing=enchantment
 oracle={1}{B}, Sacrifice Vessel of Malignity: Target opponent exiles two cards from his or her hand. Activate this ability only any time you could cast a sorcery.
+status=needs groovy

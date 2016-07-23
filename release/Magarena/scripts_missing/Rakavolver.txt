@@ -11,3 +11,4 @@ ability=Kicker {1}{W} and/or {U};\
         If SN was kicked with its {U} kicker, it enters the battlefield with a +1/+1 counter on it and with flying.
 timing=main
 oracle=Kicker {1}{W} and/or {U}\nIf Rakavolver was kicked with its {1}{W} kicker, it enters the battlefield with two +1/+1 counters on it and with "Whenever Rakavolver deals damage, you gain that much life."\nIf Rakavolver was kicked with its {U} kicker, it enters the battlefield with a +1/+1 counter on it and with flying.
+status=not supported: two-kicker

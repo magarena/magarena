@@ -11,3 +11,4 @@ ability=SN costs {1} less to cast for each card type among cards in your graveya
         Flying, trample, protection from instants
 timing=main
 oracle=Emrakul, the Promised End costs {1} less to cast for each card type among cards in your graveyard.  \nWhen you cast Emrakul, you gain control of target opponent during that player's next turn. After that turn, that player takes an extra turn.\nFlying, trample, protection from instants
+status=not supported: control-player

@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Counter target spell if it shares a color with a creature you control.
 timing=counter
 oracle=Counter target spell if it shares a color with a creature you control.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/1
 ability=Sacrifice SN: Put a -1/-1 counter on target creature. Then if that creature's toughness is 1 or greater, regenerate it.
 timing=main
 oracle=Sacrifice Gore Vassal: Put a -1/-1 counter on target creature. Then if that creature's toughness is 1 or greater, regenerate it.
+status=needs groovy

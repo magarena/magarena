@@ -7,3 +7,4 @@ cost={1}{G}
 ability=Lands you control are every basic land type in addition to their other types.
 timing=enchantment
 oracle=Lands you control are every basic land type in addition to their other types.
+status=needs groovy

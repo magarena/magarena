@@ -11,3 +11,4 @@ ability=Flying, trample;\
         Whenever another creature dies, put a +1/+1 counter on SN.
 timing=main
 oracle=Flying, trample\nWhenever an opponent searches his or her library, that player sacrifices a creature and loses 10 life.\nWhenever another creature dies, put a +1/+1 counter on Ob Nixilis, Unshackled.
+status=not supported: when-search

@@ -9,3 +9,4 @@ ability=Devoid
 effect=Target opponent exiles two cards from his or her hand and loses 2 life.
 timing=main
 oracle=Devoid\nTarget opponent exiles two cards from his or her hand and loses 2 life.
+status=needs groovy
