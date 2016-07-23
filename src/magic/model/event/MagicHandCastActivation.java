@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicManaCost;
 import magic.model.MagicCostManaType;
+import magic.model.MagicAmount;
 import magic.model.action.PlayCardAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
@@ -133,6 +134,26 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
                     costEvents.add(matched.getEvent(source));
                 }
                 return costEvents;
+            }
+        };
+    }
+
+    public static final MagicHandCastActivation reduction(final MagicCardDefinition cardDef, final MagicAmount amount) {
+        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
+            @Override
+            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+                return Collections.<MagicEvent>singletonList(
+                    new MagicPayManaCostEvent(
+                        source,
+                        source.getGameCost().reduce(
+                            amount.getAmount(source, source.getController())
+                        )
+                    )
+                );
+            }
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                cdef.setHandAct(this);
             }
         };
     }
