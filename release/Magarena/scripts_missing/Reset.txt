@@ -8,3 +8,4 @@ ability=Cast SN only during an opponent's turn after his or her upkeep step.
 effect=Untap all lands you control.
 timing=removal
 oracle=Cast Reset only during an opponent's turn after his or her upkeep step.\nUntap all lands you control.
+status=needs groovy

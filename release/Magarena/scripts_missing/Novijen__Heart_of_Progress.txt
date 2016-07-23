@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.
+status=not supported: no-info

@@ -10,3 +10,4 @@ ability=At the beginning of combat on your turn, if you both own and control SN 
 transform=Chittering Host
 timing=main
 oracle=At the beginning of combat on your turn, if you both own and control Graf Rats and a creature named Midnight Scavengers, exile them, then meld them into Chittering Host.
+status=not supported: meld

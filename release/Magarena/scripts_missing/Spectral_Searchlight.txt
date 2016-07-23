@@ -7,3 +7,4 @@ cost={3}
 ability={T}: Choose a player. That player adds one mana of any color he or she chooses to his or her mana pool.
 timing=artifact
 oracle={T}: Choose a player. That player adds one mana of any color he or she chooses to his or her mana pool.
+status=not supported: mana-ability-with-choice

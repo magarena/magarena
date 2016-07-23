@@ -10,3 +10,4 @@ ability=Enchant creature, land, or planeswalker;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature, land, or planeswalker\nEnchanted permanent is a colorless land with "{T}: Add {C} to your mana pool" and loses all other card types and abilities.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=6/3
 ability=Whenever SN attacks, flip a coin. If you lose the flip, remove SN from combat and tap it.
 timing=main
 oracle=Whenever Mijae Djinn attacks, flip a coin. If you lose the flip, remove Mijae Djinn from combat and tap it.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Exalted;\
         Whenever a creature you control attacks alone, you may search your library for an Aura card that could enchant that creature, put it onto the battlefield attached to that creature, then shuffle your library.
 timing=main
 oracle=Exalted\nWhenever a creature you control attacks alone, you may search your library for an Aura card that could enchant that creature, put it onto the battlefield attached to that creature, then shuffle your library.
+status=not supported: legal-aura

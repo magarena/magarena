@@ -7,3 +7,4 @@ cost={5}{U}
 ability=At the beginning of your upkeep, you may exchange control of SN and target permanent you neither own nor control.
 timing=enchantment
 oracle=At the beginning of your upkeep, you may exchange control of Conjured Currency and target permanent you neither own nor control.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{G}, {T}: Counter target activated ability from an artifact source.
 timing=main
 oracle={1}{G}, {T}: Counter target activated ability from an artifact source.
+status=needs groovy

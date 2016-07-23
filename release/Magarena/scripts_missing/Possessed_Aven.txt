@@ -10,3 +10,4 @@ ability=Flying;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target blue creature."
 timing=main
 oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Possessed Aven gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target blue creature."
+status=needs groovy

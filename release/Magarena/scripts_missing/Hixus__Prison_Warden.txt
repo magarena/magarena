@@ -11,3 +11,4 @@ ability=Flash;\
         Whenever a creature deals combat damage to you, if SN entered the battlefield this turn, exile that creature until Hixus leaves the battlefield.
 timing=flash
 oracle=Flash\nWhenever a creature deals combat damage to you, if Hixus, Prison Warden entered the battlefield this turn, exile that creature until Hixus leaves the battlefield.
+status=not supported: no-info

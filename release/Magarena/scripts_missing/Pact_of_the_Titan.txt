@@ -7,3 +7,4 @@ cost={0}
 effect=Put a 4/4 red Giant creature token onto the battlefield.~At the beginning of your next upkeep, pay {4}{R}. If you don't, you lose the game.
 timing=removal
 oracle=Put a 4/4 red Giant creature token onto the battlefield.\nAt the beginning of your next upkeep, pay {4}{R}. If you don't, you lose the game.
+status=needs groovy

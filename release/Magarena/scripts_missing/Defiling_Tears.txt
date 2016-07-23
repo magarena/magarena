@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Until end of turn, target creature becomes black, gets +1/-1, and gains "{B}: Regenerate this creature."
 timing=removal
 oracle=Until end of turn, target creature becomes black, gets +1/-1, and gains "{B}: Regenerate this creature."
+status=needs groovy
