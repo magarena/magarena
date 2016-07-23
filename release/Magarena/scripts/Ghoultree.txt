@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Treefolk
 cost={7}{G}
 pt=10/10
+ability=SN costs {1} less to cast for each creature card in your graveyard.
 timing=main
-requires_groovy_code
 oracle=Ghoultree costs {1} less to cast for each creature card in your graveyard.

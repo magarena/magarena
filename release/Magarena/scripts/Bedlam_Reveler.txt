@@ -6,8 +6,8 @@ type=Creature
 subtype=Devil,Horror
 cost={6}{R}{R}
 pt=3/4
-ability=Prowess;\
+ability=SN costs {1} less to cast for each instant and sorcery card in your graveyard.;\
+        Prowess;\
         When SN enters the battlefield, discard your hand,~then draw three cards.
 timing=main
-requires_groovy_code
 oracle=Bedlam Reveler costs {1} less to cast for each instant and sorcery card in your graveyard.\nProwess\nWhen Bedlam Reveler enters the battlefield, discard your hand, then draw three cards.

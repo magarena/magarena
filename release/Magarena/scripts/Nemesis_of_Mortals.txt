@@ -6,6 +6,7 @@ type=Creature
 subtype=Snake
 cost={4}{G}{G}
 pt=5/5
+ability=SN costs {1} less to cast for each creature card in your graveyard.
 timing=main
 requires_groovy_code
 oracle=Nemesis of Mortals costs {1} less to cast for each creature card in your graveyard.\n{7}{G}{G}: Monstrosity 5. This ability costs {1} less to activate for each creature card in your graveyard.

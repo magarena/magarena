@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Beast
 cost={10}
 pt=5/5
-ability=Trample
+ability=SN costs {1} less to cast for each basic land type among lands you control.;\
+        Trample
 timing=main
-requires_groovy_code
 oracle=Domain — Stratadon costs {1} less to cast for each basic land type among lands you control.\nTrample

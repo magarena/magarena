@@ -5,7 +5,7 @@ rarity=R
 type=Instant
 subtype=Trap
 cost={5}{R}
+ability=SN costs {1} less to cast for each attacking creature.
 effect=Put a 6/12 colorless Construct artifact creature token with trample onto the battlefield. Exile it at the beginning of your next end step.
 timing=token
-requires_groovy_code
 oracle=Stone Idol Trap costs {1} less to cast for each attacking creature.\nPut a 6/12 colorless Construct artifact creature token with trample onto the battlefield. Exile it at the beginning of your next end step.
