@@ -9,3 +9,4 @@ pt=2/1
 ability={U}: Regenerate SN. Activate this ability only if SN blocked or was blocked by a blue creature this turn.
 timing=main
 oracle={U}: Regenerate Sea Troll. Activate this ability only if Sea Troll blocked or was blocked by a blue creature this turn.
+status=not supported: no-info

@@ -11,3 +11,4 @@ ability=Flying;\
         When SN dies, shuffle the cards from your hand into your library, then draw that many cards.
 timing=main
 oracle=Flying\nWhen Whirlpool Drake enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.\nWhen Whirlpool Drake dies, shuffle the cards from your hand into your library, then draw that many cards.
+status=needs groovy

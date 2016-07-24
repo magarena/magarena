@@ -9,3 +9,4 @@ pt=4/5
 ability=At the beginning of your upkeep, target non-Wall creature an opponent controls gains forestwalk until your next upkeep.
 timing=main
 oracle=At the beginning of your upkeep, target non-Wall creature an opponent controls gains forestwalk until your next upkeep.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player exiles the top four cards of his or her library. If two or more of those cards have the same name, repeat this process.
 timing=main
 oracle=Flying\nWhenever Scalpelexis deals combat damage to a player, that player exiles the top four cards of his or her library. If two or more of those cards have the same name, repeat this process.
+status=needs groovy

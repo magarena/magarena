@@ -9,3 +9,4 @@ pt=0/3
 ability=When SN dies, it deals X damage to target creature, where X is 3 plus the amount of damage dealt to SN this turn by other sources named Blazing Effigy.
 timing=main
 oracle=When Blazing Effigy dies, it deals X damage to target creature, where X is 3 plus the amount of damage dealt to Blazing Effigy this turn by other sources named Blazing Effigy.
+status=not supported: no-info

@@ -9,3 +9,4 @@ ability=Whenever a creature or land becomes tapped, put an hourglass counter on 
         At the beginning of each player's upkeep, remove all hourglass counters from permanents that player controls.
 timing=enchantment
 oracle=Whenever a creature or land becomes tapped, put an hourglass counter on it.\nEach permanent with an hourglass counter on it doesn't untap during its controller's untap step.\nAt the beginning of each player's upkeep, remove all hourglass counters from permanents that player controls.
+status=needs groovy

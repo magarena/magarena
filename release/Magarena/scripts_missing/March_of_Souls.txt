@@ -7,3 +7,4 @@ cost={4}{W}
 effect=Destroy all creatures. They can't be regenerated. For each creature destroyed this way, its controller puts a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main
 oracle=Destroy all creatures. They can't be regenerated. For each creature destroyed this way, its controller puts a 1/1 white Spirit creature token with flying onto the battlefield.
+status=needs groovy

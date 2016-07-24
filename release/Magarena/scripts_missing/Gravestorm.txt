@@ -7,3 +7,4 @@ cost={B}{B}{B}
 ability=At the beginning of your upkeep, target opponent may exile a card from his or her graveyard. If that player doesn't, you may draw a card.
 timing=enchantment
 oracle=At the beginning of your upkeep, target opponent may exile a card from his or her graveyard. If that player doesn't, you may draw a card.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Equipped creature gets +5/+5.;\
         Equip {3}
 timing=equipment
 oracle=Equipped creature gets +5/+5.\n{6}, Exile Tatsumasa, the Dragon's Fang: Put a 5/5 blue Dragon Spirit creature token with flying onto the battlefield. Return Tatsumasa to the battlefield under its owner's control when that token dies.\nEquip {3}
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Enchant land;\
 timing=aura
 enchant=default,land
 oracle=Enchant land\nEnchanted land has "{T}: Counter target spell if it would destroy a land you control."
+status=not supported: no-info

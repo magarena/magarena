@@ -7,3 +7,4 @@ cost={3}
 ability={3}, {T} or {U}, {T}: Return target creature to its owner's hand unless its controller pays {1}.
 timing=artifact
 oracle={3}, {T} or {U}, {T}: Return target creature to its owner's hand unless its controller pays {1}.
+status=needs groovy

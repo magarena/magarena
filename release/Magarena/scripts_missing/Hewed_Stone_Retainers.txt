@@ -9,3 +9,4 @@ pt=4/4
 ability=Cast SN only if you've cast another spell this turn.
 timing=main
 oracle=Cast Hewed Stone Retainers only if you've cast another spell this turn.
+status=needs groovy

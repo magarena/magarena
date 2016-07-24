@@ -11,3 +11,4 @@ ability=Whenever this creature enters the battlefield or transforms into SN, put
 transform=Ravager of the Fells
 timing=main
 oracle=Whenever this creature enters the battlefield or transforms into Huntmaster of the Fells, put a 2/2 green Wolf creature token onto the battlefield and you gain 2 life.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Huntmaster of the Fells.
+status=not supported: other-half

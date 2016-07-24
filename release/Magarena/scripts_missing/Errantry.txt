@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +3/+0 and can only attack alone.
+status=not supported: attacking-restriction

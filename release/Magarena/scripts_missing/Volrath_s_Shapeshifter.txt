@@ -10,3 +10,4 @@ ability=As long as the top card of your graveyard is a creature card, SN has the
         {2}: Discard a card.
 timing=main
 oracle=As long as the top card of your graveyard is a creature card, Volrath's Shapeshifter has the full text of that card and has the text "{2}: Discard a card."\n{2}: Discard a card.
+status=not supported: becomes-copy

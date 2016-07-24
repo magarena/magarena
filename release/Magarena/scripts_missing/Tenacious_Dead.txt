@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN dies, you may pay {1}{B}. If you do, return it to the battlefield tapped under its owner's control.
 timing=main
 oracle=When Tenacious Dead dies, you may pay {1}{B}. If you do, return it to the battlefield tapped under its owner's control.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Choose a player who cast one or more sorcery spells this turn. SN deals damage to that player equal to half the damage dealt by one of those sorcery spells this turn, rounded down.
 timing=removal
 oracle=Choose a player who cast one or more sorcery spells this turn. Backdraft deals damage to that player equal to half the damage dealt by one of those sorcery spells this turn, rounded down.
+status=not supported: no-info

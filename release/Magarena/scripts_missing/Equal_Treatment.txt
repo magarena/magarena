@@ -7,3 +7,4 @@ cost={1}{W}
 effect=If any source would deal 1 or more damage to a creature or player this turn, it deals 2 damage to that creature or player instead.~Draw a card.
 timing=removal
 oracle=If any source would deal 1 or more damage to a creature or player this turn, it deals 2 damage to that creature or player instead.\nDraw a card.
+status=needs groovy
