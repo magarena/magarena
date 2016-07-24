@@ -7,3 +7,4 @@ cost={R}{G}{W}
 effect=Choose one — (1) SN deals 3 damage to target creature. (2) Return target card from a graveyard to its owner's hand. (3) Tap all creatures target player controls.
 timing=removal
 oracle=Choose one —\n• Naya Charm deals 3 damage to target creature.\n• Return target card from a graveyard to its owner's hand.\n• Tap all creatures target player controls.
+status=needs groovy

@@ -7,3 +7,4 @@ ability=Cumulative upkeep {1};\
         Creatures that attacked during their controller's last turn can't attack.
 timing=land
 oracle=Cumulative upkeep {1}\nCreatures that attacked during their controller's last turn can't attack.
+status=not supported: no-info

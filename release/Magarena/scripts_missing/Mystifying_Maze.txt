@@ -7,3 +7,4 @@ ability={T}: Add {C} to your mana pool.;\
         {4}, {T}: Exile target attacking creature an opponent controls. At the beginning of the next end step, return it to the battlefield tapped under its owner's control.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{4}, {T}: Exile target attacking creature an opponent controls. At the beginning of the next end step, return it to the battlefield tapped under its owner's control.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=Choose one — (1) Gain control of all creatures with power 4 or greater until end of turn. Untap those creatures. They gain haste until end of turn. (2) Gain control of all creatures with power 3 or less until end of turn. Untap those creatures. They gain haste until end of turn.
 timing=main
 oracle=Choose one —\n• Gain control of all creatures with power 4 or greater until end of turn. Untap those creatures. They gain haste until end of turn.\n• Gain control of all creatures with power 3 or less until end of turn. Untap those creatures. They gain haste until end of turn.
+status=needs groovy

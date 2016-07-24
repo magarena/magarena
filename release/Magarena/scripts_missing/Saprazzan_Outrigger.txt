@@ -9,3 +9,4 @@ pt=5/5
 ability=When SN attacks or blocks, put it on top of its owner's library at end of combat.
 timing=main
 oracle=When Saprazzan Outrigger attacks or blocks, put it on top of its owner's library at end of combat.
+status=needs groovy

@@ -11,3 +11,4 @@ ability=Flying, vigilance;\
         {5}{W}{W}: Prevent all damage that would be dealt to target player this turn by sources of the color of your choice.
 timing=main
 oracle=Flying, vigilance\n{1}{W}: Prevent all damage that would be dealt to another target creature this turn by sources of the color of your choice.\n{5}{W}{W}: Prevent all damage that would be dealt to target player this turn by sources of the color of your choice.
+status=needs groovy

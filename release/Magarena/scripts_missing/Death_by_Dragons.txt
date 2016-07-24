@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=Each player other than target player puts a 5/5 red Dragon creature token with flying onto the battlefield.
 timing=main
 oracle=Each player other than target player puts a 5/5 red Dragon creature token with flying onto the battlefield.
+status=needs groovy

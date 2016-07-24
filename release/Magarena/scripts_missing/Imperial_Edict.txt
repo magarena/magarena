@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Target opponent chooses a creature he or she controls. Destroy it.
 timing=main
 oracle=Target opponent chooses a creature he or she controls. Destroy it.
+status=needs groovy

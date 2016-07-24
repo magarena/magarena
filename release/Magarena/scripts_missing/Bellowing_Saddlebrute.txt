@@ -9,3 +9,4 @@ pt=4/5
 ability=When SN enters the battlefield, you lose 4 life unless you attacked with a creature this turn.
 timing=main
 oracle=Raid — When Bellowing Saddlebrute enters the battlefield, you lose 4 life unless you attacked with a creature this turn.
+status=needs groovy
