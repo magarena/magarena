@@ -12,12 +12,23 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Arrays;
 import magic.model.IUIGameController;
 
 public abstract class MagicChoice {
 
     static final String YES_CHOICE="yes";
     static final String NO_CHOICE="no";
+
+    protected static final List<Object[]> YES_CHOICE_LIST =
+            Collections.singletonList(new Object[]{YES_CHOICE});
+    protected static final List<Object[]> NO_CHOICE_LIST =
+            Collections.singletonList(new Object[]{NO_CHOICE});
+
+    protected static final List<Object[]> NO_OTHER_CHOICE_RESULTS = Arrays.asList(
+        new Object[]{YES_CHOICE},
+        new Object[]{NO_CHOICE}
+    );
 
     public static final MagicChoice NONE = new MagicChoice("none") {
         @Override

@@ -20,9 +20,7 @@ public class MagicScryChoice extends MagicMayChoice {
         final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
         if (player.getLibrary().isEmpty()) {
-            final List<Object[]> choiceResultsList=new ArrayList<>();
-            choiceResultsList.add(new Object[]{NO_CHOICE});
-            return choiceResultsList;
+            return NO_CHOICE_LIST;
         } else {
             return NO_OTHER_CHOICE_RESULTS;
         }

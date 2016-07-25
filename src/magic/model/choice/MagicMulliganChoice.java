@@ -24,11 +24,6 @@ import magic.model.IUIGameController;
 
 public class MagicMulliganChoice extends MagicChoice {
 
-    private static final List<Object[]> YES_CHOICE_LIST =
-            Collections.singletonList(new Object[]{YES_CHOICE});
-    private static final List<Object[]> NO_CHOICE_LIST =
-            Collections.singletonList(new Object[]{NO_CHOICE});
-
     public MagicMulliganChoice() {
         super("");
     }

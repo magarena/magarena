@@ -29,9 +29,6 @@ public class MagicSimpleMayChoice extends MagicChoice {
     public static final int DEFAULT_NO   = 1;
     public static final int DEFAULT_YES  = 2;
 
-    private static final List<Object[]> YES_CHOICE_LIST = Collections.singletonList(new Object[]{YES_CHOICE});
-    private static final List<Object[]> NO_CHOICE_LIST = Collections.singletonList(new Object[]{NO_CHOICE});
-
     private final int action;
     private final int amount;
     private int defaultChoice;

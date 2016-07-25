@@ -19,11 +19,6 @@ import magic.model.IUIGameController;
 
 public class MagicMayChoice extends MagicChoice {
 
-    protected static final List<Object[]> NO_OTHER_CHOICE_RESULTS = Arrays.asList(
-        new Object[]{YES_CHOICE},
-        new Object[]{NO_CHOICE}
-    );
-
     private final MagicChoice[] choices;
     private final MagicTargetChoice targetChoice;
     private final int manaChoiceResultIndex;
