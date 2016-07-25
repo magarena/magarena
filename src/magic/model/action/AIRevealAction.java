@@ -11,7 +11,7 @@ public class AIRevealAction extends MagicAction {
 
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
     private final List<Boolean> known = new ArrayList<Boolean>();
-    private boolean newValue;
+    private final boolean newValue;
 
     public AIRevealAction(final MagicCard... aCards) {
         this(Arrays.asList(aCards), true);
