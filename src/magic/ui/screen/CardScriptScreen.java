@@ -15,25 +15,26 @@ import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
-import magic.ui.URLUtils;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
-import magic.ui.utility.DesktopUtils;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.MagicImages;
+import magic.ui.ScreenController;
+import magic.ui.URLUtils;
+import magic.ui.widget.CardSideBar;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.utility.DesktopUtils;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.ui.utility.MagicStyle;
+import magic.utility.MagicSystem;
 import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
@@ -131,12 +132,16 @@ public class CardScriptScreen
         private final ScriptFileViewer scriptViewer = new ScriptFileViewer();
         private final ScriptFileViewer groovyViewer = new ScriptFileViewer();
         private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+        private final CardSideBar sidebar;
 
         private final File scriptFile;
         private final File groovyFile;
         private final boolean isGroovy;
 
         public ScreenContent(final MagicCardDefinition card) {
+
+            sidebar = new CardSideBar();
+            sidebar.setCard(card);
 
             final Path scriptsPath = card.isInvalid() ?
                     MagicFileSystem.getDataPath(DataPath.SCRIPTS_MISSING) :
@@ -159,7 +164,8 @@ public class CardScriptScreen
 
         private void setLayout() {
             removeAll();
-            migLayout.setLayoutConstraints("flowy, insets 0");
+            migLayout.setLayoutConstraints("insets 0, gap 0");
+            add(sidebar, "h 100%");
             add(isGroovy ? splitter : scriptViewer, "w 100%, h 100%");
         }
 
