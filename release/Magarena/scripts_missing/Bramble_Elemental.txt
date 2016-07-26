@@ -9,3 +9,4 @@ pt=4/4
 ability=Whenever an Aura becomes attached to SN, put two 1/1 green Saproling creature tokens onto the battlefield.
 timing=main
 oracle=Whenever an Aura becomes attached to Bramble Elemental, put two 1/1 green Saproling creature tokens onto the battlefield.
+status=not supported: when-aura-attached

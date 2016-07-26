@@ -7,3 +7,4 @@ cost={G}
 ability=If one or more +1/+1 counters would be placed on a creature you control, that many plus one +1/+1 counters are placed on it instead.
 timing=enchantment
 oracle=If one or more +1/+1 counters would be placed on a creature you control, that many plus one +1/+1 counters are placed on it instead.
+status=not supported: when-counter-placed

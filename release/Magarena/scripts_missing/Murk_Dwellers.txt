@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN attacks and isn't blocked, it gets +2/+0 until end of combat.
 timing=main
 oracle=Whenever Murk Dwellers attacks and isn't blocked, it gets +2/+0 until end of combat.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=1/2
 ability=When SN dies, put a 1/1 colorless Spirit creature token onto the battlefield for each Zubera that died this turn.
 timing=main
 oracle=When Dripping-Tongue Zubera dies, put a 1/1 colorless Spirit creature token onto the battlefield for each Zubera that died this turn.
+status=not supported: no-info

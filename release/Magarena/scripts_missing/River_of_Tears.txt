@@ -6,3 +6,4 @@ type=Land
 ability={T}: Add {U} to your mana pool. If you played a land this turn, add {B} to your mana pool instead.
 timing=land
 oracle={T}: Add {U} to your mana pool. If you played a land this turn, add {B} to your mana pool instead.
+status=needs groovy
