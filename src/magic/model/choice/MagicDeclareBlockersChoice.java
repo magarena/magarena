@@ -31,9 +31,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event) {
-        final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
-        final MagicDeclareBlockersResultBuilder builder = new MagicDeclareBlockersResultBuilder(game,player,game.getFastBlocker());
+        final MagicDeclareBlockersResultBuilder builder = new MagicDeclareBlockersResultBuilder(game, event.getPlayer(), game.getFastBlocker());
         return builder.getResults();
     }
 
