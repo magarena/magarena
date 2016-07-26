@@ -8,3 +8,4 @@ ability=Kicker {2}
 effect=Counter target spell if its converted mana cost is 2 or less. If SN was kicked, counter that spell if its converted mana cost is 4 or less instead.
 timing=counter
 oracle=Kicker {2}\nCounter target spell if its converted mana cost is 2 or less. If Prohibit was kicked, counter that spell if its converted mana cost is 4 or less instead.
+status=needs groovy

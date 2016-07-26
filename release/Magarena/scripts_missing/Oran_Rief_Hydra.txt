@@ -11,3 +11,4 @@ ability=Trample;\
         Whenever a land enters the battlefield under your control, put a +1/+1 counter on SN. If that land is a Forest, put two +1/+1 counters on SN instead.
 timing=main
 oracle=Trample\nLandfall — Whenever a land enters the battlefield under your control, put a +1/+1 counter on Oran-Rief Hydra. If that land is a Forest, put two +1/+1 counters on Oran-Rief Hydra instead.
+status=needs groovy

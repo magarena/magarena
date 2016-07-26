@@ -10,3 +10,4 @@ ability={B}, {T}: SN loses this ability and becomes an Aura enchantment with enc
         At the beginning of the upkeep of enchanted creature's controller, SN deals 1 damage to that player.
 timing=main
 oracle={B}, {T}: Leeching Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {B} to end this effect.\nAt the beginning of the upkeep of enchanted creature's controller, Leeching Licid deals 1 damage to that player.
+status=not supported: end-effect

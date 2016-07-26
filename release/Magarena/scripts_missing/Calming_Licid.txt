@@ -10,3 +10,4 @@ ability={W}, {T}: SN loses this ability and becomes an Aura enchantment with enc
         Enchanted creature can't attack.
 timing=main
 oracle={W}, {T}: Calming Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect.\nEnchanted creature can't attack.
+status=not supported: end-effect

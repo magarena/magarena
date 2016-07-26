@@ -10,3 +10,4 @@ ability={1}{U}{U}, {T}: SN loses this ability and becomes an Aura enchantment wi
         You control enchanted creature.
 timing=main
 oracle={1}{U}{U}, {T}: Dominating Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {U} to end this effect.\nYou control enchanted creature.
+status=not supported: end-effect

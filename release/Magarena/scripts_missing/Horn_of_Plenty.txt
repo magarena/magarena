@@ -7,3 +7,4 @@ cost={6}
 ability=Whenever a player casts a spell, he or she may pay {1}. If that player does, he or she draws a card at the beginning of the next end step.
 timing=artifact
 oracle=Whenever a player casts a spell, he or she may pay {1}. If that player does, he or she draws a card at the beginning of the next end step.
+status=needs groovy

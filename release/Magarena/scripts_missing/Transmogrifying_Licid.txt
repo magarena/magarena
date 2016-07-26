@@ -10,3 +10,4 @@ ability={1}, {T}: SN loses this ability and becomes an Aura enchantment with enc
         Enchanted creature gets +1/+1 and is an artifact in addition to its other types.
 timing=main
 oracle={1}, {T}: Transmogrifying Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {1} to end this effect.\nEnchanted creature gets +1/+1 and is an artifact in addition to its other types.
+status=not supported: end-effect

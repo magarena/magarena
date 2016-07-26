@@ -10,3 +10,4 @@ ability=At the beginning of the end step, if three or more creatures died this t
 flip=Kuon's Essence
 timing=main
 oracle=At the beginning of the end step, if three or more creatures died this turn, flip Kuon, Ogre Ascendant.
+status=needs groovy
