@@ -10,4 +10,4 @@ ability=Indestructible;\
         Vigilance;\
         Bushido 5
 timing=main
-oracle=Indestructible\nVigilance\nBushido 5
+oracle=Vigilance,indestructible\nBushido 5

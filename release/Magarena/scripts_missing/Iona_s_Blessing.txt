@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura
 cost={3}{W}
 ability=Enchant creature;\
-        Enchanted creature gets +2/+2, has vigilance, and can block an additional creature.
+        Enchanted creature gets +2/+2, has vigilance, and can block an additional creature each combat.
 timing=aura
 enchant=default,creature
-oracle=Enchant creature\nEnchanted creature gets +2/+2, has vigilance, and can block an additional creature.
+oracle=Enchant creature\nEnchanted creature gets +2/+2, has vigilance, and can block an additional creature each combat.
 status=not supported: block-multiple

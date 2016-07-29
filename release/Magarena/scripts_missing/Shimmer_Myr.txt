@@ -7,7 +7,7 @@ subtype=Myr
 cost={3}
 pt=2/2
 ability=Flash;\
-        You may cast artifact cards as though they had flash.
+        You may cast artifact spells as though they had flash.
 timing=flash
-oracle=Flash\nYou may cast artifact cards as though they had flash.
+oracle=Flash\nYou may cast artifact spells as though they had flash.
 status=not supported: card-modification

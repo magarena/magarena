@@ -5,7 +5,7 @@ rarity=R
 type=Enchantment
 cost={2}{U}{U}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
-        You may cast nonland cards as though they had flash.
+        You may cast spells as though they had flash.
 timing=enchantment
-oracle=If Leyline of Anticipation is in your opening hand, you may begin the game with it on the battlefield.\nYou may cast nonland cards as though they had flash.
+oracle=If Leyline of Anticipation is in your opening hand, you may begin the game with it on the battlefield.\nYou may cast spells as though they had flash.
 status=not supported: opening-hand

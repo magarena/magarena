@@ -7,7 +7,7 @@ subtype=Human,Wizard
 cost={3}{G}{U}
 pt=2/3
 ability=Untap all creatures and lands you control during each other player's untap step.;\
-        You may cast creature cards as though they had flash.
+        You may cast creature spells as though they had flash.
 timing=main
-oracle=Untap all creatures and lands you control during each other player's untap step.\nYou may cast creature cards as though they had flash.
+oracle=Untap all creatures and lands you control during each other player's untap step.\nYou may cast creature spells as though they had flash.
 status=not supported: card-modification

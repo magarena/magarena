@@ -7,7 +7,7 @@ subtype=Dragon
 cost={3}{U}{R}
 pt=4/4
 ability=Flying, haste;\
-        You may cast sorcery cards as though they had flash.
+        You may cast sorcery spells as though they had flash.
 timing=main
-oracle=Flying, haste\nYou may cast sorcery cards as though they had flash.
+oracle=Flying, haste\nYou may cast sorcery spells as though they had flash.
 status=not supported: card-modification
