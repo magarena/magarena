@@ -1,5 +1,5 @@
 name=Brazen Wolves
-image=http://magiccards.info/scans/en/emn/122.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_Ki2q3cjZzr.png
 value=2.500
 rarity=C
 type=Creature

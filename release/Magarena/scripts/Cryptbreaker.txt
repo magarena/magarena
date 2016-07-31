@@ -1,5 +1,5 @@
 name=Cryptbreaker
-image=http://magiccards.info/scans/en/emn/86.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_VLjYfptqcX.png
 value=2.500
 rarity=R
 type=Creature

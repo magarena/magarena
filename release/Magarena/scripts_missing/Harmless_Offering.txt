@@ -1,5 +1,5 @@
 name=Harmless Offering
-image=http://magiccards.info/scans/en/emn/131.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_yFv5TCuRM0.png
 value=2.500
 rarity=R
 type=Sorcery

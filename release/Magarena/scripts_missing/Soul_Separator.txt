@@ -1,5 +1,5 @@
 name=Soul Separator
-image=http://magiccards.info/scans/en/emn/199.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_UMp2B5t9le.png
 value=2.500
 rarity=R
 type=Artifact

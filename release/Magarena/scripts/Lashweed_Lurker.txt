@@ -1,5 +1,5 @@
 name=Lashweed Lurker
-image=http://magiccards.info/scans/en/emn/9.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_erfJWgE7B3.png
 value=2.500
 rarity=U
 type=Creature

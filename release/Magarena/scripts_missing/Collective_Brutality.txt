@@ -1,5 +1,5 @@
 name=Collective Brutality
-image=http://magiccards.info/scans/en/emn/85.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_1yYc9ntsiZ.png
 value=2.500
 rarity=R
 type=Sorcery

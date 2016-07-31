@@ -1,5 +1,5 @@
 name=Drag Under
-image=http://magiccards.info/scans/en/emn/57.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_JLRSHrxhtW.png
 value=2.500
 rarity=C
 type=Sorcery

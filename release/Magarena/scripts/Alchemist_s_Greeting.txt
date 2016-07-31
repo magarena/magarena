@@ -1,5 +1,5 @@
 name=Alchemist's Greeting
-image=http://magiccards.info/scans/en/emn/116.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_UaooArBcdR.png
 value=2.500
 rarity=C
 type=Sorcery

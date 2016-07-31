@@ -1,5 +1,5 @@
 name=Collective Defiance
-image=http://magiccards.info/scans/en/emn/123.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_sx9usMHEbU.png
 value=2.500
 rarity=R
 type=Sorcery

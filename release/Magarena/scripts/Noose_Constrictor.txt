@@ -1,5 +1,5 @@
 name=Noose Constrictor
-image=http://magiccards.info/scans/en/emn/164.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_LQ5uoDUjNE.png
 value=2.500
 rarity=U
 type=Creature

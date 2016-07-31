@@ -1,5 +1,5 @@
 name=Oath of Liliana
-image=http://magiccards.info/scans/en/emn/99.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_4lFORU6f57.png
 value=2.500
 rarity=R
 type=Legendary,Enchantment

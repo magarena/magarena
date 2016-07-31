@@ -1,5 +1,5 @@
 name=Identity Thief
-image=http://magiccards.info/scans/en/emn/64.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_G1uf6v8Q13.png
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Howling Chorus
-image=http://magiccards.info/scans/en/emn/168b.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_F9PYT0Wkyl.png
 value=2.500
 rarity=U
 type=Creature

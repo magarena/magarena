@@ -1,5 +1,5 @@
 name=Grapple with the Past
-image=http://magiccards.info/scans/en/emn/160.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_pS4NZMSg9x.png
 value=2.500
 rarity=C
 type=Instant

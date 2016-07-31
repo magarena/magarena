@@ -1,5 +1,5 @@
 name=Give No Ground
-image=http://magiccards.info/scans/en/emn/29.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_r6pSuFr8Ze.png
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Dusk Feaster
-image=http://magiccards.info/scans/en/emn/88.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_dZeei1N5fo.png
 value=2.500
 rarity=U
 type=Creature

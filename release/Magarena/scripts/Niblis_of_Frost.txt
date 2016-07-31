@@ -1,5 +1,5 @@
 name=Niblis of Frost
-image=http://magiccards.info/scans/en/emn/72.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_Zkxhbz8UvQ.png
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Guardian of Pilgrims
-image=http://magiccards.info/scans/en/emn/30.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_A6UPF6wlJw.png
 value=2.500
 rarity=C
 type=Creature

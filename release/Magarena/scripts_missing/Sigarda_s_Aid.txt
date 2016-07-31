@@ -1,5 +1,5 @@
 name=Sigarda's Aid
-image=http://magiccards.info/scans/en/emn/41.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_1ZXuO97Viq.png
 value=2.500
 rarity=R
 type=Enchantment

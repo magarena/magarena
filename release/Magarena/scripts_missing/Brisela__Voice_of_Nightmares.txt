@@ -1,5 +1,5 @@
 name=Brisela, Voice of Nightmares
-image=http://magiccards.info/scans/en/emn/15b.jpg
+image=http://www.magicspoiler.com/wp-content/uploads/2016/06/Brisela-Voice-of-Nightmares-MTG.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

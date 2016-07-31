@@ -1,5 +1,5 @@
 name=Repel the Abominable
-image=http://magiccards.info/scans/en/emn/38.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_F55g7UyaTT.png
 value=2.500
 rarity=U
 type=Instant

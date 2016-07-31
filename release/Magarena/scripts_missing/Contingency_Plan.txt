@@ -1,5 +1,5 @@
 name=Contingency Plan
-image=http://magiccards.info/scans/en/emn/52.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_8nn1I1U6HB.png
 value=2.500
 rarity=C
 type=Sorcery

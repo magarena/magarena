@@ -1,5 +1,5 @@
 name=Steadfast Cathar
-image=http://magiccards.info/scans/en/emn/44.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_BmBvpv7DfC.png
 value=2.500
 rarity=C
 type=Creature

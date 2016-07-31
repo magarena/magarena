@@ -1,5 +1,5 @@
 name=Ulvenwald Abomination
-image=http://magiccards.info/scans/en/emn/175b.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_1sKieyf6jf.png
 value=2.500
 rarity=C
 type=Creature

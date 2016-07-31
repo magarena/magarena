@@ -1,5 +1,5 @@
 name=Ulvenwald Observer
-image=http://magiccards.info/scans/en/emn/176.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_EOX1Es0l83.png
 value=2.500
 rarity=R
 type=Creature

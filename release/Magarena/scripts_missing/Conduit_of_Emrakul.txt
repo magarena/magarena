@@ -1,5 +1,5 @@
 name=Conduit of Emrakul
-image=http://magiccards.info/scans/en/emn/124b.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_xdT3tDoGwd.png
 value=2.500
 rarity=U
 type=Creature

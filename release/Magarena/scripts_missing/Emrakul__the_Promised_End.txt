@@ -1,5 +1,5 @@
 name=Emrakul, the Promised End
-image=http://magiccards.info/scans/en/emn/6.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_Z2nLZiWA1l.png
 value=2.500
 rarity=M
 type=Legendary,Creature

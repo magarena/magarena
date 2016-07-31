@@ -1,5 +1,5 @@
 name=Chittering Host
-image=http://magiccards.info/scans/en/emn/96b.jpg
+image=http://www.magicspoiler.com/wp-content/uploads/2016/06/Chittering-Host.png
 value=2.500
 rarity=C
 type=Creature

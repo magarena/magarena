@@ -1,5 +1,5 @@
 name=Wailing Ghoul
-image=http://magiccards.info/scans/en/emn/112.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_h8TT8RQ6zg.png
 value=2.500
 rarity=C
 type=Creature

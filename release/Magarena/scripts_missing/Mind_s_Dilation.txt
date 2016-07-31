@@ -1,5 +1,5 @@
 name=Mind's Dilation
-image=http://magiccards.info/scans/en/emn/70.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_XJbw9FPngI.png
 value=2.500
 rarity=M
 type=Enchantment

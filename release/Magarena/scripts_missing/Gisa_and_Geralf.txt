@@ -1,5 +1,5 @@
 name=Gisa and Geralf
-image=http://magiccards.info/scans/en/emn/183.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_alMF8AICd6.png
 value=2.500
 rarity=M
 type=Legendary,Creature

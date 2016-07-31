@@ -1,5 +1,5 @@
 name=Final Iteration
-image=http://magiccards.info/scans/en/emn/56b.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_Sre03Fo68I.png
 value=2.500
 rarity=R
 type=Creature

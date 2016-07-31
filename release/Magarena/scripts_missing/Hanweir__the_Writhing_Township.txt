@@ -1,5 +1,5 @@
 name=Hanweir, the Writhing Township
-image=http://magiccards.info/scans/en/emn/130b.jpg
+image=http://www.magicspoiler.com/wp-content/uploads/2016/06/Hanweir-the-Writhing-Township.png
 value=2.500
 rarity=R
 type=Legendary,Creature

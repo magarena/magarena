@@ -1,5 +1,5 @@
 name=Mirrorwing Dragon
-image=http://magiccards.info/scans/en/emn/136.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_ht8Lsr1ZtJ.png
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Heron's Grace Champion
-image=http://magiccards.info/scans/en/emn/185.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_bY9FNUEGVm.png
 value=2.500
 rarity=R
 type=Creature

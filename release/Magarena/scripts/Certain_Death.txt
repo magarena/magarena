@@ -1,5 +1,5 @@
 name=Certain Death
-image=http://magiccards.info/scans/en/emn/84.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_D0zwr7t0lc.png
 value=2.500
 rarity=C
 type=Sorcery

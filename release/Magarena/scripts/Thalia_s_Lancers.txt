@@ -1,5 +1,5 @@
 name=Thalia's Lancers
-image=http://magiccards.info/scans/en/emn/47.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_0gEOYZ10Fy.png
 value=2.500
 rarity=R
 type=Creature

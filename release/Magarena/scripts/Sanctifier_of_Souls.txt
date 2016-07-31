@@ -1,5 +1,5 @@
 name=Sanctifier of Souls
-image=http://magiccards.info/scans/en/emn/39.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_TELfD1CANZ.png
 value=2.500
 rarity=R
 type=Creature

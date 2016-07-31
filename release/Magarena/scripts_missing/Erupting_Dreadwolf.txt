@@ -1,5 +1,5 @@
 name=Erupting Dreadwolf
-image=http://magiccards.info/scans/en/emn/142b.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_VuQ8jYt8xP.png
 value=2.500
 rarity=U
 type=Creature

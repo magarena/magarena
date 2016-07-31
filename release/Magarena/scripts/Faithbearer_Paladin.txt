@@ -1,5 +1,5 @@
 name=Faithbearer Paladin
-image=http://magiccards.info/scans/en/emn/25.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_NSTkoxetcd.png
 value=2.500
 rarity=C
 type=Creature

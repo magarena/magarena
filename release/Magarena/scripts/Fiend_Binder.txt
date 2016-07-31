@@ -1,5 +1,5 @@
 name=Fiend Binder
-image=http://magiccards.info/scans/en/emn/26.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_5IUGdsWoS1.png
 value=2.500
 rarity=C
 type=Creature

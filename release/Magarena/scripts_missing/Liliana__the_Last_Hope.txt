@@ -1,5 +1,5 @@
 name=Liliana, the Last Hope
-image=http://magiccards.info/scans/en/emn/93.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_izZS4IXcjO.png
 value=2.500
 rarity=M
 type=Planeswalker

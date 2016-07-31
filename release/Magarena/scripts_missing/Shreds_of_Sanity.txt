@@ -1,5 +1,5 @@
 name=Shreds of Sanity
-image=http://magiccards.info/scans/en/emn/141.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_bCw6vrmI1R.png
 value=2.500
 rarity=U
 type=Sorcery

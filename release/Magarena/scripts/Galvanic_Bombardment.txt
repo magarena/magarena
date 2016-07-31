@@ -1,5 +1,5 @@
 name=Galvanic Bombardment
-image=http://magiccards.info/scans/en/emn/129.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_98spN8FCxs.png
 value=2.500
 rarity=C
 type=Instant

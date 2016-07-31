@@ -1,5 +1,5 @@
 name=Faith Unbroken
-image=http://magiccards.info/scans/en/emn/24.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_iGaFAkypwO.png
 value=2.500
 rarity=U
 type=Enchantment

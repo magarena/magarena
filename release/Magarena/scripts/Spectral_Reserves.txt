@@ -1,5 +1,5 @@
 name=Spectral Reserves
-image=http://magiccards.info/scans/en/emn/43.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_5rv81kOMc0.png
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Spell Queller
-image=http://magiccards.info/scans/en/emn/189.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_VGDLAnfFKx.png
 value=2.500
 rarity=R
 type=Creature

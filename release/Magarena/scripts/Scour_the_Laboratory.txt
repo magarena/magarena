@@ -1,5 +1,5 @@
 name=Scour the Laboratory
-image=http://magiccards.info/scans/en/emn/73.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_KyStjb3mg9.png
 value=2.500
 rarity=U
 type=Instant

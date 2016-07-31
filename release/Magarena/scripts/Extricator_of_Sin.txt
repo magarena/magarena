@@ -1,5 +1,5 @@
 name=Extricator of Sin
-image=http://magiccards.info/scans/en/emn/23a.jpg
+image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_c5YSY8pVY5.png
 value=2.500
 rarity=U
 type=Creature
