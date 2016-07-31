@@ -73,6 +73,90 @@ Thank you for your support and have fun!
 
 Release 1.75 (July 31, 2016)
 ============
+lodici
+melvin
+Mike
+ShawnieBoy
+
+- add Eldritch Moon to sets and formats
+
+- show card image in sidebar of card script viewer
+
+- add status property to indicate whether a missing card is supported
+
+- added the following to the card script:
+    * ability: Snow landwalk
+    * ability: Snow swampwalk
+    * ability: Snow forestwalk
+    * ability: Conspire
+    * ability: Emerge <mana cost>
+    * ability: <permanents> can't block it
+    * ability: SN cost {1} less to cast for each <amount>
+    * ability: Whenever <permanent> enters the battlefield under an opponent's control, <effect>.
+    * effect:  <players> lose <amount> life. You gain life equal to the life lost this way
+    * effect: <sn/rn> fights <permanent>
+
+- fixed the following bugs:
+    * crash in deck editor when selecting subtypes (issue #802)
+    * changing folder name manually results in "Not enough free space" warning (issue #803)
+    * Grisly Salvage did not put rest of cards to graveyard (issue #791)
+    * Walker of the Wastes did not count the number of Wastes correctly (issue #793)
+    * Gate Smasher can be equipped on opponent's creature (issue #794)
+
+- added the following cards:
+Abundant Maw, Advanced Stitchwing, Æthertow, Agent of Acquisitions,
+Agent of Masks, Akroan Horse, Alchemist's Greeting, Amass the Components,
+Angelic Captain, Angelic Field Marshal, Angus Mackenzie,
+Aura Gnarlid, Awoken Horror, Barkshell Blessing, Bastion Protector,
+Battering Wurm, Bedlam Reveler, Bloodbriar, Bloodhall Priest, Blood Mist,
+Blood Tithe, Bold Impaler, Boon of Emrakul, Brazen Wolves, Burn Trail,
+Campaign of Vengeance, Canal Dredger, Cathar's Shield, Certain Death,
+Champion of Lambholt, Choking Restraints, Cogwork Librarian,
+Cogwork Spy, Cogwork Tracker, Command Beacon, Courageous Outrider,
+Crossroads Consecrator, Cryptbreaker, Cultist's Staff, Dawn Gryff,
+Deal Broker, Decimator of the Provinces, Demon of Wailing Agonies,
+Den Protector, Desperate Sentry, Distemper of the Blood,
+Disturbing Plot, Docent of Perfection, Drag Under, Drogskol Shieldmate,
+Dronepack Kindred, Dusk Feaster, Duskwatch Recruiter, Eldrazi Displacer,
+Emrakul's Influence, Enlightened Maniac, Extricator of Flesh,
+Extricator of Sin, Exultant Cultist, Faithbearer Paladin, Faith Unbroken,
+Falkenrath Reaver, Field Creeper, Fiend Binder, Fight to the Death,
+Final Iteration, Fogwalker, Furyblade Vampire, Galvanic Bombardment,
+Gavony Unhallowed, Geier Reach Sanitarium, Geist-Fueled Scarecrow,
+Geist of the Archives, Geist of the Lonely Vigil, Ghastly Discovery,
+Giantbaiting, Gleeful Sabotage, Gnarlwood Dryad, Granite Shard,
+Gruul Ragebeast, Guardian of Pilgrims, Haunted Dead, Heartwood Shard,
+Heron's Grace Champion, Howlgeist, Howling Chorus, Ice Floe,
+Incendiary Flow, Ingenious Skaab, Insatiable Gorgers, Ironclad Slayer,
+Ironwright's Cleansing, Ishkanah, Grafwidow, It of the Horrid Swarm,
+It That Rides as One, Jinxed Idol, Krallenhorde Howler, Laboratory Brute,
+Lashweed Lurker, Latulla's Orders, Legions of Lim-Dûl, Liliana's Elite,
+Lone Rider, Lore Seeker, Lunarch Mantle, Lunar Force, Lupine Prototype,
+Make Mischief, Malakir Bloodwitch, Markov Crusader, Master of Arms,
+Memory Sluice, Mercurial Geists, Mine Excavation, Mockery of Nature,
+Mournwillow, Nebelgast Herald, Nessian Wilds Ravager, Niblis of Frost,
+Noose Constrictor, Ojutai Exemplars, Olivia's Dragoon, Pearl Shard,
+Pine Walker, Piston Sledge, Planar Guide, Primal Druid, Prophetic Ravings,
+Reach of Shadows, Reclusive Artificer, Ride Down, Rime Dryad,
+Sanctifier of Souls, Scholar of Athreos, Scour the Laboratory,
+Selfless Spirit, Servant of Tymaret, Shrill Howler, Sigardian Priest,
+Silumgar Assassin, Skarrgan Pit-Skulk, Skirsdag Supplicant,
+Sokenzan Renegade, Somberwald Stag, Spectral Reserves,
+Spirit of the Hunt, Spiteful Returned, Spitfire Handler,
+Splendid Reclamation, Spontaneous Mutation, Springsage Ritual,
+Steadfast Cathar, Stensia Banquet, Stensia Innkeeper,
+Stormsurge Kraken, Strange Augmentation, Stromkirk Condemned,
+Subjugator Angel, Succumb to Temptation, Swan Song, Swift Spinner,
+Take Inventory, Tattered Haunter, Thalia, Heretic Cathar,
+Thalia's Lancers, Thermo-Alchemist, Thing in the Ice,
+Thoughtbound Primoc, Thraben Standard Bearer, Thunderfoot Baloth,
+Tormented Hero, Traitor's Roar, Triad of Fates, Tyrant's Familiar,
+Ulrich of the Krallenhorde, Ulrich, Uncontested Alpha, Ulvenwald Observer,
+Unliving Psychopath, Urborg Panther, Urborg Syphon-Mage,
+Vampire Cutthroat, Veiled Crocodile, Vexing Scuttler, Vildin-Pack Outcast,
+Wailing Ghoul, Wandering Wolf, Weaver of Lightning, Weirded Vampire,
+Whispergear Sneak, Whispers of Emrakul, Wild Mammoth, Wolfkin Bond,
+Woodcutter's Grit, Woodland Patrol, Wretched Gryff, Zombie Musher
 
 Release 1.74 (June 25, 2016)
 ============
