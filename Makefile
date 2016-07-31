@@ -916,5 +916,5 @@ github-releases.json:
 	curl https://api.github.com/repos/magarena/magarena/releases > $@
 
 correct-release-label:
-	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${mac} -H"Content-Type: application/json" -d'{"name": "Magarena-${ver}.app.zip", "label":"Magarena-${ver}.app.zip for Mac"}' -u ${username}
-	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${linux} -H"Content-Type: application/json" -d'{"name": "Magarena-${ver}.zip", "label":"Magarena-${ver}.zip for Linux/Windows"}' -u ${username}
+	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${mac} -H"Content-Type: application/json" -d'{"name": "Magarena-${tag}.app.zip", "label":"Magarena-${tag}.app.zip for Mac"}' -u ${username}
+	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${linux} -H"Content-Type: application/json" -d'{"name": "Magarena-${tag}.zip", "label":"Magarena-${tag}.zip for Linux/Windows"}' -u ${username}
