@@ -23,6 +23,7 @@ class TestUlrich extends TestGameBuilder {
         createPermanent(P, "Chromatic Lantern", false, 1);
         createPermanent(P, "Vildin-Pack Alpha", false, 1);
         addToHand(P, "Ulrich of the Krallenhorde", 1);
+        addToHand(P, "Lightning Bolt", 2);
 
         P = opponent;
 

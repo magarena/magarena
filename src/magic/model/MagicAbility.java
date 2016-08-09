@@ -623,8 +623,7 @@ public enum MagicAbility {
     },
     WhenTransform("When(ever)? this creature transforms into SN, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(BecomesStateTrigger.createSelf(
-                MagicPermanentState.Transformed,
+            card.add(WhenTransformsTrigger.createSelf(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

@@ -37,7 +37,7 @@ public class TransformAction extends MagicAction {
 
             // update and execute transform triggers
             game.update();
-            game.executeTrigger(MagicTriggerType.WhenBecomesState, act);
+            game.executeTrigger(MagicTriggerType.WhenTransforms, permanent);
         }
     }
 
