@@ -1364,13 +1364,12 @@ public enum MagicAbility {
                 final int [] pt = ARG.pt(arg);
                 card.add(MagicStatic.genPTStatic(condition, filter, pt[0], pt[1]));
             }
-            if (arg.group("any") != null) {
-                card.add(MagicStatic.genABStatic(
+            final String abText = ARG.any(arg);
+            if (abText != null) {
+                card.add(MagicStatic.genABStaticGame(
                     condition,
                     filter,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
+                    MagicAbility.getAbilityList(abText)
                 ));
             }
         }
