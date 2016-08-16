@@ -9,3 +9,4 @@ pt=2/1
 ability=Cards in graveyards lose all abilities.
 timing=main
 oracle=Cards in graveyards lose all abilities.
+status=not supported: card-modification

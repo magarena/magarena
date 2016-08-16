@@ -10,3 +10,4 @@ pt=3/2
 ability={T}, Tap an untapped Ally you control: Discard a card. If you do, draw a card.
 timing=main
 oracle=Cohort — {T}, Tap an untapped Ally you control: Discard a card. If you do, draw a card.
+status=needs groovy

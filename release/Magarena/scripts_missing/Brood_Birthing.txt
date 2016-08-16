@@ -7,3 +7,4 @@ cost={1}{R}
 effect=If you control an Eldrazi Spawn, put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool." Otherwise, put one of those tokens onto the battlefield.
 timing=main
 oracle=If you control an Eldrazi Spawn, put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool." Otherwise, put one of those tokens onto the battlefield.
+status=needs groovy
