@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={4}{W}
 pt=2/5
-ability=Whenever SN attacks, another target attacking creature gets +0/+2 until end of turn. Untap that creature.
+ability=Whenever SN attacks, another target attacking creature gets +0/+2 until end of turn.~Untap *that creature*.
 timing=main
 oracle=Whenever Bazaar Krovod attacks, another target attacking creature gets +0/+2 until end of turn. Untap that creature.
