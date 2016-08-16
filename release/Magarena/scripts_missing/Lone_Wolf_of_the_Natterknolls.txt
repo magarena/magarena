@@ -12,3 +12,4 @@ transform=Hermit of the Natterknolls
 timing=main
 hidden
 oracle=Whenever an opponent casts a spell during your turn, draw two cards.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Lone Wolf of the Natterknolls.
+status=needs groovy

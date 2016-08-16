@@ -9,3 +9,4 @@ ability=Equipped creature gets +X/+X, where X is its converted mana cost.;\
         Equip {4}
 timing=equipment
 oracle=Equipped creature gets +X/+X, where X is its converted mana cost.\nEquip {4}
+status=needs groovy

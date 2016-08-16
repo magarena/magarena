@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Put target creature on top of its owner's library. If that creature is red, you may put it on the bottom of its owner's library instead.
 timing=removal
 oracle=Put target creature on top of its owner's library. If that creature is red, you may put it on the bottom of its owner's library instead.
+status=needs groovy

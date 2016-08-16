@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Destroy all green creatures or all white creatures. They can't be regenerated. You lose 2 life for each creature that died this way.
 timing=main
 oracle=Destroy all green creatures or all white creatures. They can't be regenerated. You lose 2 life for each creature that died this way.
+status=needs groovy

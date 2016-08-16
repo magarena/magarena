@@ -10,3 +10,4 @@ ability=Each Sliver card in each player's hand has slivercycling {3}.;\
         Slivercycling {3}
 timing=main
 oracle=Each Sliver card in each player's hand has slivercycling {3}.\nSlivercycling {3}
+status=not supported: card-modification

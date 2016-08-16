@@ -7,3 +7,4 @@ cost={3}{W}
 ability=At the beginning of each upkeep, if you lost life last turn, put a 1/1 white Soldier creature token onto the battlefield.
 timing=enchantment
 oracle=At the beginning of each upkeep, if you lost life last turn, put a 1/1 white Soldier creature token onto the battlefield.
+status=not supported: no-info

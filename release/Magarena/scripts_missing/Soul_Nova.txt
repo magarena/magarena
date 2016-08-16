@@ -7,3 +7,4 @@ cost={3}{W}{W}
 effect=Exile target attacking creature and all Equipment attached to it.
 timing=removal
 oracle=Exile target attacking creature and all Equipment attached to it.
+status=needs groovy

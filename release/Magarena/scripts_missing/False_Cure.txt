@@ -7,3 +7,4 @@ cost={B}{B}
 effect=Until end of turn, whenever a player gains life, that player loses 2 life for each 1 life he or she gained.
 timing=removal
 oracle=Until end of turn, whenever a player gains life, that player loses 2 life for each 1 life he or she gained.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=1/1
 ability=At the beginning of each end step, put a +1/+1 counter on SN for each creature that died this turn.
 timing=main
 oracle=At the beginning of each end step, put a +1/+1 counter on Khabál Ghoul for each creature that died this turn.
+status=not supported: no-info

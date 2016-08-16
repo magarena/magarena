@@ -7,3 +7,4 @@ cost={W}
 effect=Exile target creature that dealt damage to you this turn.
 timing=removal
 oracle=Exile target creature that dealt damage to you this turn.
+status=not supported: no-info

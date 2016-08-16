@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Return all permanents of the color of your choice to their owners' hands.
 timing=main
 oracle=Return all permanents of the color of your choice to their owners' hands.
+status=needs groovy

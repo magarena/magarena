@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Prevent all combat damage that would be dealt this turn by creatures without trample.
 timing=removal
 oracle=Prevent all combat damage that would be dealt this turn by creatures without trample.
+status=needs groovy

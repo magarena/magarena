@@ -9,3 +9,4 @@ pt=4/3
 ability={1}{G}, {T}: If SN is on the battlefield, it deals damage equal to its power to target attacking creature. That creature deals damage equal to its power to SN.
 timing=main
 oracle={1}{G}, {T}: If Durkwood Tracker is on the battlefield, it deals damage equal to its power to target attacking creature. That creature deals damage equal to its power to Durkwood Tracker.
+status=needs groovy

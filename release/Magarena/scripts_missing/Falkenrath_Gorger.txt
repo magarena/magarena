@@ -9,3 +9,4 @@ pt=2/1
 ability=Each Vampire creature card you own that isn't on the battlefield has madness. The madness cost is equal to its mana cost.
 timing=main
 oracle=Each Vampire creature card you own that isn't on the battlefield has madness. The madness cost is equal to its mana cost.
+status=not supported: card-modification

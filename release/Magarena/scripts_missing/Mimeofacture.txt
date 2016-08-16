@@ -8,3 +8,4 @@ ability=Replicate {3}{U}
 effect=Choose target permanent an opponent controls. Search that player's library for a card with the same name and put it onto the battlefield under your control. Then that player shuffles his or her library.
 timing=main
 oracle=Replicate {3}{U}\nChoose target permanent an opponent controls. Search that player's library for a card with the same name and put it onto the battlefield under your control. Then that player shuffles his or her library.
+status=needs groovy

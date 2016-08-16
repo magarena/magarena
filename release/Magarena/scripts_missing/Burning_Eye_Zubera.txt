@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN dies, if 4 or more damage was dealt to it this turn, SN deals 3 damage to target creature or player.
 timing=main
 oracle=When Burning-Eye Zubera dies, if 4 or more damage was dealt to it this turn, Burning-Eye Zubera deals 3 damage to target creature or player.
+status=needs groovy
