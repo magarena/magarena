@@ -919,6 +919,12 @@ public class MagicTargetFilterFactory {
                 !target.hasType(MagicType.Enchantment);
         }
     };
+    
+    public static final MagicPermanentFilterImpl NONENCHANTMENT_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return !target.hasType(MagicType.Enchantment);
+        }
+    };
 
     public static final MagicPermanentFilterImpl PERMANENT_ENCHANTED = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -2552,6 +2558,7 @@ public class MagicTargetFilterFactory {
         add("creature that is enchanted", CREATURE_ENCHANTED);
         add("creature that is equipped", CREATURE_EQUIPPED);
         add("nonenchantment creature", NONENCHANTMENT_CREATURE);
+        add("nonenchantment permanent", NONENCHANTMENT_PERMANENT);
         add("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
         add("multicolored creature", MULTICOLORED_CREATURE);
         add("creature that's one or more colors", MONO_OR_MULTICOLORED_CREATURE);
