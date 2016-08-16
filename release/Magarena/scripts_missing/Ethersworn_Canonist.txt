@@ -9,3 +9,4 @@ pt=2/2
 ability=Each player who has cast a nonartifact spell this turn can't cast additional nonartifact spells.
 timing=main
 oracle=Each player who has cast a nonartifact spell this turn can't cast additional nonartifact spells.
+status=not supported: players-cant

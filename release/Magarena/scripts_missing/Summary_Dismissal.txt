@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Exile all other spells and counter all abilities.
 timing=removal
 oracle=Exile all other spells and counter all abilities.
+status=not supported: exile-spell

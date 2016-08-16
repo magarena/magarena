@@ -7,3 +7,4 @@ cost={U/P}
 effect=Look at target player's hand.~Draw a card.
 timing=main
 oracle=Look at target player's hand.\nDraw a card.
+status=not supported: reveal-hand
