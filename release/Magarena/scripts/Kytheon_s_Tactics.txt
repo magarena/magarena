@@ -5,6 +5,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={1}{W}{W}
-effect=Creatures you control get +2/+1 until end of turn.~If there are two or more instant and/or sorcery cards in your graveyard, those creatures also gain vigilance until end of turn.
+effect=Creatures you control get +2/+1 until end of turn.~If there are two or more instant and/or sorcery cards in your graveyard, creatures you control gain vigilance until end of turn.
 timing=main
 oracle=Creatures you control get +2/+1 until end of turn.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, those creatures also gain vigilance until end of turn.
