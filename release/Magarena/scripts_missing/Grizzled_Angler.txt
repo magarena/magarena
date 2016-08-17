@@ -10,3 +10,4 @@ ability={T}: Put the top two cards of your library into your graveyard. Then if 
 transform=Grisly Anglerfish
 timing=main
 oracle={T}: Put the top two cards of your library into your graveyard. Then if there is a colorless creature card in your graveyard, transform Grizzled Angler.
+status=needs groovy

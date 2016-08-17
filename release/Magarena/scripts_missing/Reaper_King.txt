@@ -10,3 +10,4 @@ ability=Other Scarecrow creatures you control get +1/+1.;\
         Whenever another Scarecrow enters the battlefield under your control, destroy target permanent.
 timing=main
 oracle=Other Scarecrow creatures you control get +1/+1.\nWhenever another Scarecrow enters the battlefield under your control, destroy target permanent.
+status=not supported: mono-hybrid-mana-cost   

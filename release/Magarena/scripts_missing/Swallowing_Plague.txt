@@ -8,3 +8,4 @@ cost={X}{B}{B}
 effect=SN deals X damage to target creature and you gain X life.
 timing=main
 oracle=Swallowing Plague deals X damage to target creature and you gain X life.
+status=needs groovy

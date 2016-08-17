@@ -11,3 +11,4 @@ ability=Equipped creature gets +1/+1.;\
 transform=Ashmouth Blade
 timing=equipment
 oracle=Equipped creature gets +1/+1.\nWhen equipped creature transforms, transform Neglected Heirloom.\nEquip {1}
+status=needs groovy

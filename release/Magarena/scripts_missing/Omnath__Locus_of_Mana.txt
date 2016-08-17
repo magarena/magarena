@@ -10,3 +10,4 @@ ability=Green mana doesn't empty from your mana pool as steps and phases end.;\
         SN gets +1/+1 for each green mana in your mana pool.
 timing=main
 oracle=Green mana doesn't empty from your mana pool as steps and phases end.\nOmnath, Locus of Mana gets +1/+1 for each green mana in your mana pool.
+status=not supported: mana-pool

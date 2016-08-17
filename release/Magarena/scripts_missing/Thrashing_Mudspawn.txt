@@ -10,3 +10,4 @@ ability=Whenever SN is dealt damage, you lose that much life.;\
         Morph {1}{B}{B}
 timing=main
 oracle=Whenever Thrashing Mudspawn is dealt damage, you lose that much life.\nMorph {1}{B}{B}
+status=needs groovy

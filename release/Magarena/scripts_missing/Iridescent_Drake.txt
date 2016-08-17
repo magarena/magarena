@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, put target Aura card from a graveyard onto the battlefield under your control attached to SN.
 timing=main
 oracle=Flying\nWhen Iridescent Drake enters the battlefield, put target Aura card from a graveyard onto the battlefield under your control attached to Iridescent Drake.
+status=not supported: legal-aura

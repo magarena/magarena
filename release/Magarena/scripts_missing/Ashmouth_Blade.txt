@@ -11,3 +11,4 @@ transform=Neglected Heirloom
 timing=equipment
 hidden
 oracle=Equipped creature gets +3/+3 and has first strike.\nEquip {3}
+status=needs other half

@@ -9,3 +9,4 @@ pt=2/3
 ability=At the beginning of your upkeep, SN deals 1 damage to each opponent it has dealt damage to this game.
 timing=main
 oracle=At the beginning of your upkeep, The Fallen deals 1 damage to each opponent it has dealt damage to this game.
+status=not supported: no-info
