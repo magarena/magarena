@@ -607,6 +607,11 @@ public enum MagicConditionParser {
             return MagicCondition.CONTROL_SINCE_LAST_TURN;
         }
     },
+    CastAnotherSpellThisTurn("you've cast another spell this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.CAST_ANOTHER_SPELL_THIS_TURN;
+        }
+    },
     ;
 
     private final Pattern pattern;
