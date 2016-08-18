@@ -8,3 +8,4 @@ cost={4}{W}{W}
 effect=Return all artifact and enchantment cards from all graveyards to the battlefield under their owners' control.
 timing=main
 oracle=Return all artifact and enchantment cards from all graveyards to the battlefield under their owners' control.
+status=needs groovy

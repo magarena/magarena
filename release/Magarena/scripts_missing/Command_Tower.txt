@@ -7,3 +7,4 @@ type=Land
 ability={T}: Add to your mana pool one mana of any color in your commander's color identity.
 timing=land
 oracle={T}: Add to your mana pool one mana of any color in your commander's color identity.
+status=not supported: commander

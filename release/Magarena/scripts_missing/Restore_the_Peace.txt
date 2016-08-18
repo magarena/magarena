@@ -7,3 +7,4 @@ cost={1}{W}{U}
 effect=Return each creature that dealt damage this turn to its owner's hand.
 timing=removal
 oracle=Return each creature that dealt damage this turn to its owner's hand.
+status=not supported: no-info

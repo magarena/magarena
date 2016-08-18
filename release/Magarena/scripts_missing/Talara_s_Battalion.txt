@@ -11,3 +11,4 @@ ability=Trample;\
         Cast SN only if you've cast another green spell this turn.
 timing=main
 oracle=Trample\nCast Talara's Battalion only if you've cast another green spell this turn.
+status=not supported: no-info

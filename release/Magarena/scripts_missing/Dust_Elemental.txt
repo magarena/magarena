@@ -11,3 +11,4 @@ ability=Flash;\
         When SN enters the battlefield, return three creatures you control to their owner's hand.
 timing=flash
 oracle=Flash\nFlying, fear\nWhen Dust Elemental enters the battlefield, return three creatures you control to their owner's hand.
+status=needs groovy

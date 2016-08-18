@@ -10,3 +10,4 @@ ability=At the beginning of each upkeep, if no spells were cast last turn, trans
 transform=Hinterland Scourge
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Hinterland Hermit.
+status=not supported: other-half

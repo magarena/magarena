@@ -10,3 +10,4 @@ ability=When SN blocks, at end of combat, destroy it and all creatures it blocke
         {5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=When Defiant Vanguard blocks, at end of combat, destroy it and all creatures it blocked this turn.\n{5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
+status=needs groovy

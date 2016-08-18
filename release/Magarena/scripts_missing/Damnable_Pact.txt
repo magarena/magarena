@@ -7,3 +7,4 @@ cost={X}{B}{B}
 effect=Target player draws X cards and loses X life.
 timing=main
 oracle=Target player draws X cards and loses X life.
+status=needs groovy

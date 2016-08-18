@@ -8,3 +8,4 @@ ability={T}: Add to your mana pool one mana of any color in your commander's col
         Sacrifice SN: Draw a card.
 timing=artifact
 oracle={T}: Add to your mana pool one mana of any color in your commander's color identity.\nSacrifice Commander's Sphere: Draw a card.
+status=not supported: commander

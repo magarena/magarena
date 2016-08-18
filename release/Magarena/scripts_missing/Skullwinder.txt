@@ -11,3 +11,4 @@ ability=Deathtouch;\
         When SN enters the battlefield, return target card from your graveyard to your hand, then choose an opponent. That player returns a card from his or her graveyard to his or her hand.
 timing=main
 oracle=Deathtouch\nWhen Skullwinder enters the battlefield, return target card from your graveyard to your hand, then choose an opponent. That player returns a card from his or her graveyard to his or her hand.
+status=needs groovy

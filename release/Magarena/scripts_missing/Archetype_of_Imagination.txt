@@ -10,3 +10,4 @@ ability=Creatures you control have flying.;\
         Creatures your opponents control lose flying and can't have or gain flying.
 timing=main
 oracle=Creatures you control have flying.\nCreatures your opponents control lose flying and can't have or gain flying.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={B}{G}
 ability=Sacrifice a land: Add to your mana pool one mana of any type the sacrificed land could produce.
 timing=enchantment
 oracle=Sacrifice a land: Add to your mana pool one mana of any type the sacrificed land could produce.
+status=not supported: could produce

@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, put X 1/1 Sand Warrior creature tokens t
         When Hazezon leaves the battlefield, exile all Sand Warriors.
 timing=main
 oracle=When Hazezon Tamar enters the battlefield, put X 1/1 Sand Warrior creature tokens that are red, green, and white onto the battlefield at the beginning of your next upkeep, where X is the number of lands you control at that time.\nWhen Hazezon leaves the battlefield, exile all Sand Warriors.
+status=needs groovy

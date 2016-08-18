@@ -7,3 +7,4 @@ cost={1}{U}{B}
 effect=Target opponent reveals cards from the top of his or her library until four land cards are revealed. That player puts all cards revealed this way into his or her graveyard.
 timing=main
 oracle=Target opponent reveals cards from the top of his or her library until four land cards are revealed. That player puts all cards revealed this way into his or her graveyard.
+status=needs groovy

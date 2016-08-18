@@ -7,3 +7,4 @@ cost={3}{W}
 effect=If you've cast another white spell this turn, you may cast SN without paying its mana cost.~Destroy all enchantments.
 timing=removal
 oracle=If you've cast another white spell this turn, you may cast Patrician's Scorn without paying its mana cost.\nDestroy all enchantments.
+status=not supported: no-info

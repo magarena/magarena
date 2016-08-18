@@ -8,3 +8,4 @@ cost={2}
 ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
 timing=artifact
 oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
+status=not supported: could produce

@@ -10,3 +10,4 @@ ability=Creatures you control have hexproof.;\
         Creatures your opponents control lose hexproof and can't have or gain hexproof.
 timing=main
 oracle=Creatures you control have hexproof.\nCreatures your opponents control lose hexproof and can't have or gain hexproof.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={5}{R}
 effect=Target player sacrifices an artifact and a land. SN deals 2 damage to that player.
 timing=main
 oracle=Target player sacrifices an artifact and a land. Structural Collapse deals 2 damage to that player.
+status=needs groovy

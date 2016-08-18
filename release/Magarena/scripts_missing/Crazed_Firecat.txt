@@ -9,3 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, flip a coin until you lose a flip. Put a +1/+1 counter on SN for each flip you win.
 timing=main
 oracle=When Crazed Firecat enters the battlefield, flip a coin until you lose a flip. Put a +1/+1 counter on Crazed Firecat for each flip you win.
+status=needs groovy

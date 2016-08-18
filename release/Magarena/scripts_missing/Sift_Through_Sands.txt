@@ -8,3 +8,4 @@ cost={1}{U}{U}
 effect=Draw two cards, then discard a card.~If you've cast a spell named Peer Through Depths and a spell named Reach Through Mists this turn, you may search your library for a card named The Unspeakable, put it onto the battlefield, then shuffle your library.
 timing=removal
 oracle=Draw two cards, then discard a card.\nIf you've cast a spell named Peer Through Depths and a spell named Reach Through Mists this turn, you may search your library for a card named The Unspeakable, put it onto the battlefield, then shuffle your library.
+status=not supported: no-info

@@ -6,3 +6,4 @@ type=Land
 ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
 timing=land
 oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
+status=not supported: could produce

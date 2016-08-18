@@ -10,3 +10,4 @@ ability=Creatures you control have trample.;\
         Creatures your opponents control lose trample and can't have or gain trample.
 timing=main
 oracle=Creatures you control have trample.\nCreatures your opponents control lose trample and can't have or gain trample.
+status=needs groovy

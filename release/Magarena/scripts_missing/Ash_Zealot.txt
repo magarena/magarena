@@ -10,3 +10,4 @@ ability=First strike, haste;\
         Whenever a player casts a spell from a graveyard, SN deals 3 damage to that player.
 timing=main
 oracle=First strike, haste\nWhenever a player casts a spell from a graveyard, Ash Zealot deals 3 damage to that player.
+status=needs groovy

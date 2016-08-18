@@ -10,4 +10,5 @@ ability=Flying;\
         When SN dies, you may shuffle it into its owner's library.
 timing=main
 oracle=Flying\nWhen Angel of Fury dies, you may shuffle it into its owner's library.
-status=needs groovy #Parses but graveyard -> library, not battlefield -> library
+status=needs groovy
+#Parses but graveyard -> library, not battlefield -> library

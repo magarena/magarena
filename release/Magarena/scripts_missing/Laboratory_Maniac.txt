@@ -9,3 +9,4 @@ pt=2/2
 ability=If you would draw a card while your library has no cards in it, you win the game instead.
 timing=main
 oracle=If you would draw a card while your library has no cards in it, you win the game instead.
+status=needs groovy

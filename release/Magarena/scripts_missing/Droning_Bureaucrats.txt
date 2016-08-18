@@ -9,3 +9,4 @@ pt=1/4
 ability={X}, {T}: Each creature with converted mana cost X can't attack or block this turn.
 timing=main
 oracle={X}, {T}: Each creature with converted mana cost X can't attack or block this turn.
+status=needs groovy

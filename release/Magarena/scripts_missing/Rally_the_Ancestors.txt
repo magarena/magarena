@@ -7,3 +7,4 @@ cost={X}{W}{W}
 effect=Return each creature card with converted mana cost X or less from your graveyard to the battlefield. Exile those creatures at the beginning of your next upkeep. Exile SN.
 timing=removal
 oracle=Return each creature card with converted mana cost X or less from your graveyard to the battlefield. Exile those creatures at the beginning of your next upkeep. Exile Rally the Ancestors.
+status=needs groovy
