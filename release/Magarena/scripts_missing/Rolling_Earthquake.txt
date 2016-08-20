@@ -7,3 +7,4 @@ cost={X}{R}
 effect=SN deals X damage to each creature without horsemanship and each player.
 timing=main
 oracle=Rolling Earthquake deals X damage to each creature without horsemanship and each player.
+status=needs groovy

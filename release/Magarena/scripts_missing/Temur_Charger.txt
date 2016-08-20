@@ -10,3 +10,4 @@ ability=Morph—Reveal a green card in your hand.;\
         When SN is turned face up, target creature gains trample until end of turn.
 timing=main
 oracle=Morph—Reveal a green card in your hand.\nWhen Temur Charger is turned face up, target creature gains trample until end of turn.
+status=not supported: reveal-cost

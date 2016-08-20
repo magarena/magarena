@@ -11,3 +11,4 @@ ability=Whenever SN blocks, it deals 1 damage to you.;\
         When SN is turned face up, target creature can't block this turn.
 timing=main
 oracle=Whenever Horde Ambusher blocks, it deals 1 damage to you.\nMorph—Reveal a red card in your hand.\nWhen Horde Ambusher is turned face up, target creature can't block this turn.
+status=not supported: reveal-cost

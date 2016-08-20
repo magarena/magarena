@@ -10,3 +10,4 @@ ability=Morph—Reveal a blue card in your hand.;\
         When SN is turned face up, look at target opponent's hand.
 timing=main
 oracle=Morph—Reveal a blue card in your hand.\nWhen Dragon's Eye Savants is turned face up, look at target opponent's hand.
+status=not supported: reveal-cost
