@@ -11,3 +11,4 @@ ability=Bloodthirst 3;\
         Whenever you cast a Vampire creature spell, it gains bloodthirst 3.
 timing=main
 oracle=Bloodthirst 3\nFlying\nWhenever you cast a Vampire creature spell, it gains bloodthirst 3.
+status=not supported: spell-modification

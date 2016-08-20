@@ -7,3 +7,4 @@ cost={W}{U}{B}{R}{G}
 ability=The first spell you cast each turn has cascade.
 timing=enchantment
 oracle=The first spell you cast each turn has cascade.
+status=not supported: spell-modification

@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, each player chooses a nonland permanent 
         {2}, {T}, Sacrifice SN: Destroy each permanent with a doom counter on it.
 timing=artifact
 oracle=When Eye of Doom enters the battlefield, each player chooses a nonland permanent and puts a doom counter on it.\n{2}, {T}, Sacrifice Eye of Doom: Destroy each permanent with a doom counter on it.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever you investigate for the first time each turn, investigate an additional time.
 timing=main
 oracle=Flying\nWhenever you investigate for the first time each turn, investigate an additional time.
+status=not supported: no-info

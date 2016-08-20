@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=All creatures lose trample until end of turn. If a creature would deal combat damage to a creature this turn, it deals double that damage to that creature instead.
 timing=removal
 oracle=All creatures lose trample until end of turn. If a creature would deal combat damage to a creature this turn, it deals double that damage to that creature instead.
+status=needs groovy

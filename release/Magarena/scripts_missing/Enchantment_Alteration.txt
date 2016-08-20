@@ -7,3 +7,4 @@ cost={U}
 effect=Attach target Aura attached to a creature or land to another permanent of that type.
 timing=removal
 oracle=Attach target Aura attached to a creature or land to another permanent of that type.
+status=not supported: legal-aura

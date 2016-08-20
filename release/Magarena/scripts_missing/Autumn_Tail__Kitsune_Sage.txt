@@ -11,3 +11,4 @@ flip=Kitsune Mystic
 timing=main
 hidden
 oracle={1}: Attach target Aura attached to a creature to another creature.
+status=not supported: legal-aura

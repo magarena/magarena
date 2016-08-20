@@ -10,3 +10,4 @@ ability=Whenever SN deals damage to one or more creatures, investigate.;\
         At the beginning of each end step, if you sacrificed three or more Clues this turn, you may put a creature card from your hand onto the battlefield.
 timing=main
 oracle=Whenever Briarbridge Patrol deals damage to one or more creatures, investigate.\nAt the beginning of each end step, if you sacrificed three or more Clues this turn, you may put a creature card from your hand onto the battlefield.
+status=not supported: no-info

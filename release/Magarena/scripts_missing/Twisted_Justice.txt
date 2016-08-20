@@ -7,3 +7,4 @@ cost={4}{U}{B}
 effect=Target player sacrifices a creature. You draw cards equal to that creature's power.
 timing=main
 oracle=Target player sacrifices a creature. You draw cards equal to that creature's power.
+status=needs groovy

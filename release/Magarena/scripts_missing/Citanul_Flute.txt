@@ -7,3 +7,4 @@ cost={5}
 ability={X}, {T}: Search your library for a creature card with converted mana cost X or less, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact
 oracle={X}, {T}: Search your library for a creature card with converted mana cost X or less, reveal it, and put it into your hand. Then shuffle your library.
+status=needs groovy
