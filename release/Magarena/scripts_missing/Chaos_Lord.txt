@@ -11,3 +11,4 @@ ability=First strike;\
         SN can attack as though it had haste unless it entered the battlefield this turn.
 timing=main
 oracle=First strike\nAt the beginning of your upkeep, target opponent gains control of Chaos Lord if the number of permanents is even.\nChaos Lord can attack as though it had haste unless it entered the battlefield this turn.
+status=not supported: no-info

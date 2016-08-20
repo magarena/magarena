@@ -7,3 +7,4 @@ cost={1}{B}{B}
 effect=You may choose a card you own from outside the game and put it into your hand. You lose half your life, rounded up. Exile SN.
 timing=main
 oracle=You may choose a card you own from outside the game and put it into your hand. You lose half your life, rounded up. Exile Death Wish.
+status=not supported: outside-the-game

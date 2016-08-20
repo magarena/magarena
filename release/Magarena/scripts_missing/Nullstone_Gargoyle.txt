@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever the first noncreature spell of a turn is cast, counter that spell.
 timing=main
 oracle=Flying\nWhenever the first noncreature spell of a turn is cast, counter that spell.
+status=not supported: no-info

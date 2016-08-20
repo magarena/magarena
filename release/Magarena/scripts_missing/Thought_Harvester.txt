@@ -12,3 +12,4 @@ ability=Devoid;\
         Whenever you cast a colorless spell, target opponent exiles the top card of his or her library.
 timing=main
 oracle=Devoid\nFlying\nWhenever you cast a colorless spell, target opponent exiles the top card of his or her library.
+status=needs groovy

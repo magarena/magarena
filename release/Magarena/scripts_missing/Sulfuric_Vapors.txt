@@ -7,3 +7,4 @@ cost={3}{R}
 ability=If a red spell would deal damage to a permanent or player, it deals that much damage plus 1 to that permanent or player instead.
 timing=enchantment
 oracle=If a red spell would deal damage to a permanent or player, it deals that much damage plus 1 to that permanent or player instead.
+status=needs groovy

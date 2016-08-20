@@ -7,3 +7,4 @@ cost={3}{U}{U}
 effect=For each attacking creature, its owner puts it on the top or bottom of his or her library.
 timing=removal
 oracle=For each attacking creature, its owner puts it on the top or bottom of his or her library.
+status=needs groovy

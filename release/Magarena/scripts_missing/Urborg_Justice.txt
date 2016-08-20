@@ -7,3 +7,4 @@ cost={B}{B}
 effect=Target opponent sacrifices a creature for each creature put into your graveyard from the battlefield this turn.
 timing=removal
 oracle=Target opponent sacrifices a creature for each creature put into your graveyard from the battlefield this turn.
+status=not supported: no-info

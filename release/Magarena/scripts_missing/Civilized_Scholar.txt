@@ -10,3 +10,4 @@ ability={T}: Draw a card, then discard a card. If a creature card is discarded t
 transform=Homicidal Brute
 timing=main
 oracle={T}: Draw a card, then discard a card. If a creature card is discarded this way, untap Civilized Scholar, then transform it.
+status=needs groovy

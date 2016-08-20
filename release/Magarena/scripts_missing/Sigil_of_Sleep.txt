@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nWhenever enchanted creature deals damage to a player, return target creature that player controls to its owner's hand.
+status=needs groovy

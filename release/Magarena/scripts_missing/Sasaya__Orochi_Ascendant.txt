@@ -10,3 +10,4 @@ ability=Reveal your hand: If you have seven or more land cards in your hand, fli
 flip=Sasaya's Essence
 timing=main
 oracle=Reveal your hand: If you have seven or more land cards in your hand, flip Sasaya, Orochi Ascendant.
+status=not supported: reveal-cost

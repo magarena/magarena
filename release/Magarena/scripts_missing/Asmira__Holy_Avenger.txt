@@ -10,3 +10,4 @@ ability=Flying;\
         At the beginning of each end step, put a +1/+1 counter on SN for each creature put into your graveyard from the battlefield this turn.
 timing=main
 oracle=Flying\nAt the beginning of each end step, put a +1/+1 counter on Asmira, Holy Avenger for each creature put into your graveyard from the battlefield this turn.
+status=not supported: no-info

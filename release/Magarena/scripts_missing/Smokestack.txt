@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, you may put a soot counter on SN.;\
         At the beginning of each player's upkeep, that player sacrifices a permanent for each soot counter on SN.
 timing=artifact
 oracle=At the beginning of your upkeep, you may put a soot counter on Smokestack.\nAt the beginning of each player's upkeep, that player sacrifices a permanent for each soot counter on Smokestack.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Bushido 2;\
         Each other Samurai creature you control gets +1/+1 for each point of bushido it has.
 timing=main
 oracle=Bushido 2\nEach other Samurai creature you control gets +1/+1 for each point of bushido it has.
+status=not supported: no-info

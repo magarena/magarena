@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Choose target creature card in a graveyard that was put there from the battlefield this turn. Put that card onto the battlefield under your control.
 timing=removal
 oracle=Choose target creature card in a graveyard that was put there from the battlefield this turn. Put that card onto the battlefield under your control.
+status=not supported: no-info

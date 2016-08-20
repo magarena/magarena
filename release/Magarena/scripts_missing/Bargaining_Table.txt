@@ -7,3 +7,4 @@ cost={5}
 ability={X}, {T}: Draw a card. X is the number of cards in an opponent's hand.
 timing=artifact
 oracle={X}, {T}: Draw a card. X is the number of cards in an opponent's hand.
+status=needs groovy

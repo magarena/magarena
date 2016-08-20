@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Destroy target nonblack creature that entered the battlefield this turn.
 timing=removal
 oracle=Destroy target nonblack creature that entered the battlefield this turn.
+status=not supported: no-info

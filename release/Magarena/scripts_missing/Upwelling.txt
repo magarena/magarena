@@ -7,3 +7,4 @@ cost={3}{G}
 ability=Mana pools don't empty as steps and phases end.
 timing=enchantment
 oracle=Mana pools don't empty as steps and phases end.
+status=not supported: mana-pool

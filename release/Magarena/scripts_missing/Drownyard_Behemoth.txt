@@ -11,3 +11,4 @@ ability=Flash;\
         SN has hexproof as long as it entered the battlefield this turn.
 timing=flash
 oracle=Flash\nEmerge {7}{U}\nDrownyard Behemoth has hexproof as long as it entered the battlefield this turn.
+status=not supported: no-info

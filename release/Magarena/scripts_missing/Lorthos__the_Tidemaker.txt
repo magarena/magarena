@@ -9,3 +9,4 @@ pt=8/8
 ability=Whenever SN attacks, you may pay {8}. If you do, tap up to eight target permanents. Those permanents don't untap during their controllers' next untap steps.
 timing=main
 oracle=Whenever Lorthos, the Tidemaker attacks, you may pay {8}. If you do, tap up to eight target permanents. Those permanents don't untap during their controllers' next untap steps.
+status=not supported: multiple-targets

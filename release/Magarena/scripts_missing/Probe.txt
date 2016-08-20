@@ -8,3 +8,4 @@ ability=Kicker {1}{B}
 effect=Draw three cards, then discard two cards.~If SN was kicked, target player discards two cards.
 timing=main
 oracle=Kicker {1}{B}\nDraw three cards, then discard two cards.\nIf Probe was kicked, target player discards two cards.
+status=needs groovy
