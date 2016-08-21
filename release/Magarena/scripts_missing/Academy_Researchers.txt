@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, you may put an Aura card from your hand onto the battlefield attached to SN.
 timing=main
 oracle=When Academy Researchers enters the battlefield, you may put an Aura card from your hand onto the battlefield attached to Academy Researchers.
+status=not supported: legal-aura

@@ -9,3 +9,4 @@ pt=2/1
 ability={2}{U}, {T}: Put SN and target creature on top of their owners' libraries, then those players shuffle their libraries.
 timing=main
 oracle={2}{U}, {T}: Put Void Stalker and target creature on top of their owners' libraries, then those players shuffle their libraries.
+status=needs groovy

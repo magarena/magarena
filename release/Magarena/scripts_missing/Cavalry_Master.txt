@@ -10,3 +10,4 @@ ability=Flanking;\
         Other creatures you control with flanking have flanking.
 timing=main
 oracle=Flanking\nOther creatures you control with flanking have flanking.
+status=needs groovy

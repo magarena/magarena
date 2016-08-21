@@ -8,3 +8,4 @@ ability=Flashback—Tap an untapped white creature you control.
 effect=Prevent all damage that sources of the color of your choice would deal this turn.
 timing=removal
 oracle=Prevent all damage that sources of the color of your choice would deal this turn.\nFlashback—Tap an untapped white creature you control.
+status=needs groovy

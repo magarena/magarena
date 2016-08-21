@@ -10,3 +10,4 @@ ability=Defender;\
         At the beginning of combat on your turn, you may clash with an opponent. If you win, SN gets +2/+0 and loses defender until end of turn.
 timing=smain
 oracle=Defender\nAt the beginning of combat on your turn, you may clash with an opponent. If you win, Sentry Oak gets +2/+0 and loses defender until end of turn.
+status=needs groovy

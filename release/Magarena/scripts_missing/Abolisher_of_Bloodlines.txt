@@ -12,3 +12,4 @@ transform=Voldaren Pariah
 timing=main
 hidden
 oracle=Flying\nWhen this creature transforms into Abolisher of Bloodlines, target opponent sacrifices three creatures.
+status=needs groovy

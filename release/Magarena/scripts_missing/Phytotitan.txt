@@ -9,3 +9,4 @@ pt=7/2
 ability=When SN dies, return it to the battlefield tapped under its owner's control at the beginning of his or her next upkeep.
 timing=main
 oracle=When Phytotitan dies, return it to the battlefield tapped under its owner's control at the beginning of his or her next upkeep.
+status=needs groovy

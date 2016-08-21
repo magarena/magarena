@@ -8,3 +8,4 @@ ability=All creatures have vigilance.;\
         At the beginning of each player's end step, tap all untapped creatures that player controls that didn't attack this turn. SN deals damage to the player equal to the number of creatures tapped this way.
 timing=artifact
 oracle=All creatures have vigilance.\nAt the beginning of each player's end step, tap all untapped creatures that player controls that didn't attack this turn. Angel's Trumpet deals damage to the player equal to the number of creatures tapped this way.
+status=not supported: no-info
