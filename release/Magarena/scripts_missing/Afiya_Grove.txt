@@ -9,3 +9,4 @@ ability=SN enters the battlefield with three +1/+1 counters on it.;\
         When SN has no +1/+1 counters on it, sacrifice it.
 timing=enchantment
 oracle=Afiya Grove enters the battlefield with three +1/+1 counters on it.\nAt the beginning of your upkeep, move a +1/+1 counter from Afiya Grove onto target creature.\nWhen Afiya Grove has no +1/+1 counters on it, sacrifice it.
+status=needs groovy

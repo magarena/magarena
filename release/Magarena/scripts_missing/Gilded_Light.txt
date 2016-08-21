@@ -8,3 +8,4 @@ ability=Cycling {2}
 effect=You gain shroud until end of turn.
 timing=removal
 oracle=You gain shroud until end of turn.\nCycling {2}
+status=needs groovy

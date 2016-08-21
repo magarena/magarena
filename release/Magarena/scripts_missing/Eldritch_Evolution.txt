@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Search your library for a creature card with converted mana cost X or less, where X is 2 plus the sacrificed creature's converted mana cost. Put that card onto the battlefield, then shuffle your library. Exile SN.
 timing=main
 oracle=As an additional cost to cast Eldritch Evolution, sacrifice a creature.\nSearch your library for a creature card with converted mana cost X or less, where X is 2 plus the sacrificed creature's converted mana cost. Put that card onto the battlefield, then shuffle your library. Exile Eldritch Evolution.
+status=needs groovy

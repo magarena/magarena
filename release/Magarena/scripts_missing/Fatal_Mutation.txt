@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nWhen enchanted creature is turned face up, destroy it. It can't be regenerated.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/5
 ability=As long as SN is untapped, all damage that would be dealt to you by unblocked creatures is dealt to SN instead.
 timing=main
 oracle=As long as Veteran Bodyguard is untapped, all damage that would be dealt to you by unblocked creatures is dealt to Veteran Bodyguard instead.
+status=needs groovy

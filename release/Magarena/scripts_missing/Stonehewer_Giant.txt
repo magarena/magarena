@@ -10,3 +10,4 @@ ability=Vigilance;\
         {1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.
 timing=main
 oracle=Vigilance\n{1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Defender;\
         {T}: Exchange target opponent's life total with SN's toughness.
 timing=smain
 oracle=Defender\n{T}: Exchange target opponent's life total with Tree of Perdition's toughness.
+status=needs groovy

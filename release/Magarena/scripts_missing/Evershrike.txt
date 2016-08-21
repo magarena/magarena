@@ -11,3 +11,4 @@ ability=Flying;\
         {X}{W/B}{W/B}: Return SN from your graveyard to the battlefield. You may put an Aura card with converted mana cost X or less from your hand onto the battlefield attached to it. If you don't, exile SN.
 timing=main
 oracle=Flying\nEvershrike gets +2/+2 for each Aura attached to it.\n{X}{W/B}{W/B}: Return Evershrike from your graveyard to the battlefield. You may put an Aura card with converted mana cost X or less from your hand onto the battlefield attached to it. If you don't, exile Evershrike.
+status=not supported: legal-aura

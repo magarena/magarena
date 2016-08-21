@@ -7,3 +7,4 @@ cost={3}{B}
 effect=You lose 2 life and draw two cards, then clash with an opponent. If you win, repeat this process.
 timing=main
 oracle=You lose 2 life and draw two cards, then clash with an opponent. If you win, repeat this process.
+status=needs groovy

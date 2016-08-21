@@ -8,3 +8,4 @@ cost={3}{R}
 effect=If you've been dealt damage by two or more creatures this turn, you may pay {R} rather than pay SN's mana cost.~SN deals 4 damage to target creature.
 timing=removal
 oracle=If you've been dealt damage by two or more creatures this turn, you may pay {R} rather than pay Inferno Trap's mana cost.\nInferno Trap deals 4 damage to target creature.
+status=not supported: no-info
