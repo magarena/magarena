@@ -9,3 +9,4 @@ ability=Equipped creature gets +1/+1 and is every creature type.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +1/+1 and is every creature type.\nEquip {2}
+status=needs groovy

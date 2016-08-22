@@ -7,3 +7,4 @@ cost={2}
 ability={3}, {T}: Double the amount of each type of mana in your mana pool.
 timing=artifact
 oracle={3}, {T}: Double the amount of each type of mana in your mana pool.
+status=not supported: mana-pool

@@ -9,3 +9,4 @@ ability={T}: Add {B} to your mana pool.;\
         Whenever SN is dealt damage, if it's a creature, sacrifice that many permanents.
 timing=artifact
 oracle={T}: Add {B} to your mana pool.\n{2}{B}: Phyrexian Totem becomes a 5/5 black Horror artifact creature with trample until end of turn.\nWhenever Phyrexian Totem is dealt damage, if it's a creature, sacrifice that many permanents.
+status=needs groovy

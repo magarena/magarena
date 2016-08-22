@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Target player loses all poison counters. SN deals that much damage to that player.
 timing=main
 oracle=Target player loses all poison counters. Leeches deals that much damage to that player.
+status=needs groovy

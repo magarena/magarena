@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, target player loses 6 life.;\
         {B}: Regenerate SN.
 timing=main
 oracle=When Laquatus's Champion enters the battlefield, target player loses 6 life.\nWhen Laquatus's Champion leaves the battlefield, that player gains 6 life.\n{B}: Regenerate Laquatus's Champion.
+status=needs groovy

@@ -11,3 +11,4 @@ ability={T}: Add {G} to your mana pool.;\
 transform=Moonscarred Werewolf
 timing=main
 oracle={T}: Add {G} to your mana pool.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Scorned Villager.
+status=not supported: other-half

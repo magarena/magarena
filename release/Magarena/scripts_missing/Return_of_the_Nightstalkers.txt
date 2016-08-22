@@ -7,3 +7,4 @@ cost={5}{B}{B}
 effect=Return all Nightstalker permanent cards from your graveyard to the battlefield. Then destroy all Swamps you control.
 timing=main
 oracle=Return all Nightstalker permanent cards from your graveyard to the battlefield. Then destroy all Swamps you control.
+status=needs groovy

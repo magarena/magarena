@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, each other player may draw up to three cards.
 timing=main
 oracle=Flying\nWhen Indentured Djinn enters the battlefield, each other player may draw up to three cards.
+status=needs groovy

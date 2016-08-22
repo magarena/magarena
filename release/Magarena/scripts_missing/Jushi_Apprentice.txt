@@ -10,3 +10,4 @@ ability={2}{U}, {T}: Draw a card. If you have nine or more cards in hand, flip S
 flip=Tomoya the Revealer
 timing=main
 oracle={2}{U}, {T}: Draw a card. If you have nine or more cards in hand, flip Jushi Apprentice.
+status=needs groovy

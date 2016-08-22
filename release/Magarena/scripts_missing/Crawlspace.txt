@@ -7,3 +7,4 @@ cost={3}
 ability=No more than two creatures can attack you each combat.
 timing=artifact
 oracle=No more than two creatures can attack you each combat.
+status=not supported: attacking-restriction

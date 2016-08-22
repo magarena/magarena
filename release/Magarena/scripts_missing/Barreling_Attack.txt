@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=Target creature gains trample until end of turn. When that creature becomes blocked this turn, it gets +1/+1 until end of turn for each creature blocking it.
 timing=removal
 oracle=Target creature gains trample until end of turn. When that creature becomes blocked this turn, it gets +1/+1 until end of turn for each creature blocking it.
+status=needs groovy

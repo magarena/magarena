@@ -12,3 +12,4 @@ ability=Defender;\
 transform=Ulvenwald Abomination
 timing=smain
 oracle=Defender\n{T}: Add {G} to your mana pool. \n{5}{G}{G}: Transform Ulvenwald Captive.
+status=not supported: other-half

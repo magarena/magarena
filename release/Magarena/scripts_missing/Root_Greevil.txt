@@ -9,3 +9,4 @@ pt=2/3
 ability={2}{G}, {T}, Sacrifice SN: Destroy all enchantments of the color of your choice.
 timing=main
 oracle={2}{G}, {T}, Sacrifice Root Greevil: Destroy all enchantments of the color of your choice.
+status=needs groovy

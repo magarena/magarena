@@ -9,3 +9,4 @@ pt=4/4
 ability={B}, {T}: All damage that would be dealt to you this turn by target attacking creature is dealt to SN instead.
 timing=main
 oracle={B}, {T}: All damage that would be dealt to you this turn by target attacking creature is dealt to Shimian Night Stalker instead.
+status=needs groovy

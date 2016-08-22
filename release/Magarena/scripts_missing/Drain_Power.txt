@@ -7,3 +7,4 @@ cost={U}{U}
 effect=Target player activates a mana ability of each land he or she controls. Then put all mana from that player's mana pool into yours.
 timing=main
 oracle=Target player activates a mana ability of each land he or she controls. Then put all mana from that player's mana pool into yours.
+status=not supported: mana-pool

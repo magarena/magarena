@@ -11,3 +11,4 @@ flip=Jushi Apprentice
 timing=main
 hidden
 oracle={3}{U}{U}, {T}: Target player draws X cards, where X is the number of cards in your hand.
+status=needs groovy

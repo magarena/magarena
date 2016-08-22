@@ -9,3 +9,4 @@ pt=1/1
 ability=At the beginning of your upkeep, you may exile a creature card from a graveyard. If you do, put a +1/+1 counter on SN. If you don't, tap SN.
 timing=main
 oracle=At the beginning of your upkeep, you may exile a creature card from a graveyard. If you do, put a +1/+1 counter on Entrails Feaster. If you don't, tap Entrails Feaster.
+status=needs groovy

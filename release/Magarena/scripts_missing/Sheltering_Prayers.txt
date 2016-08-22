@@ -7,3 +7,4 @@ cost={W}
 ability=Basic lands each player controls have shroud as long as that player controls three or fewer lands.
 timing=enchantment
 oracle=Basic lands each player controls have shroud as long as that player controls three or fewer lands.
+status=needs groovy

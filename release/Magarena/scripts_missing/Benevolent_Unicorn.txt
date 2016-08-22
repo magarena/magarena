@@ -9,3 +9,4 @@ pt=1/2
 ability=If a spell would deal damage to a creature or player, it deals that much damage minus 1 to that creature or player instead.
 timing=main
 oracle=If a spell would deal damage to a creature or player, it deals that much damage minus 1 to that creature or player instead.
+status=needs groovy

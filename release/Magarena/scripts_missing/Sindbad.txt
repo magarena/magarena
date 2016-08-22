@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Draw a card and reveal it. If it isn't a land card, discard it.
 timing=main
 oracle={T}: Draw a card and reveal it. If it isn't a land card, discard it.
+status=needs groovy
