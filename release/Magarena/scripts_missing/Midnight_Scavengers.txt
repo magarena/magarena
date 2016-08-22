@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, you may return target creature card with
 transform=Chittering Host
 timing=main
 oracle=When Midnight Scavengers enters the battlefield, you may return target creature card with converted mana cost 3 or less from your graveyard to your hand.\n(Melds with Graf Rats.)
+status=not supported: meld

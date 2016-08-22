@@ -9,3 +9,4 @@ pt=4/2
 ability=When SN dies, target land becomes a Swamp. Exile SN.
 timing=main
 oracle=When Cyclopean Giant dies, target land becomes a Swamp. Exile Cyclopean Giant.
+status=needs groovy

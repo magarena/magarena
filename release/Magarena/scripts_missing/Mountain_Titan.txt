@@ -9,3 +9,4 @@ pt=2/2
 ability={1}{R}{R}: Until end of turn, whenever you cast a black spell, put a +1/+1 counter on SN.
 timing=main
 oracle={1}{R}{R}: Until end of turn, whenever you cast a black spell, put a +1/+1 counter on Mountain Titan.
+status=needs groovy

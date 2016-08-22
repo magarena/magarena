@@ -7,3 +7,4 @@ cost={R}{R}
 ability=At the beginning of each player's upkeep, SN deals X damage to that player, where X is the number of untapped lands he or she controlled at the beginning of this turn.
 timing=enchantment
 oracle=At the beginning of each player's upkeep, Power Surge deals X damage to that player, where X is the number of untapped lands he or she controlled at the beginning of this turn.
+status=not supported: no-info

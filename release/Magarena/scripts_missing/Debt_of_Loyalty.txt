@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Regenerate target creature. You gain control of that creature if it regenerates this way.
 timing=removal
 oracle=Regenerate target creature. You gain control of that creature if it regenerates this way.
+status=not supported: regen-this-way

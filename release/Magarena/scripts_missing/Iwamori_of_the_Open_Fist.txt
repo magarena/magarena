@@ -10,3 +10,4 @@ ability=Trample;\
         When SN enters the battlefield, each opponent may put a legendary creature card from his or her hand onto the battlefield.
 timing=main
 oracle=Trample\nWhen Iwamori of the Open Fist enters the battlefield, each opponent may put a legendary creature card from his or her hand onto the battlefield.
+status=needs groovy

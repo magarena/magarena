@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Counter target spell if its converted mana cost is less than or equal to the highest converted mana cost among permanents you control.
 timing=counter
 oracle=Counter target spell if its converted mana cost is less than or equal to the highest converted mana cost among permanents you control.
+status=needs groovy

@@ -11,3 +11,4 @@ transform=Loyal Cathar
 timing=main
 hidden
 oracle=Unhallowed Cathar can't block.
+status=needs other half

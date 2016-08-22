@@ -10,3 +10,4 @@ ability=Exalted;\
         {T}: Destroy target creature that dealt damage to you this turn.
 timing=main
 oracle=Exalted\n{T}: Destroy target creature that dealt damage to you this turn.
+status=not supported: no-info

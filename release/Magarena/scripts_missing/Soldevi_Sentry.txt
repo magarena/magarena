@@ -9,3 +9,4 @@ pt=1/1
 ability={1}: Choose target opponent. Regenerate SN. When it regenerates this way, that player may draw a card.
 timing=main
 oracle={1}: Choose target opponent. Regenerate Soldevi Sentry. When it regenerates this way, that player may draw a card.
+status=not supported: regen-this-way

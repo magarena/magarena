@@ -10,3 +10,4 @@ ability=Whenever SN attacks, put two 1/1 red Human creature tokens onto the batt
 transform=Hanweir, the Writhing Township
 timing=main
 oracle=Whenever Hanweir Garrison attacks, put two 1/1 red Human creature tokens onto the battlefield tapped and attacking.\n(Melds with Hanweir Battlements.)
+status=not supported: meld

@@ -10,3 +10,4 @@ ability=Reveal SN as you draft it and note how many cards you've drafted this dr
         SN enters the battlefield with X +1/+1 counters on it, where X is the highest number you noted for cards named Lurking Automaton.
 timing=main
 oracle=Reveal Lurking Automaton as you draft it and note how many cards you've drafted this draft round, including Lurking Automaton.\nLurking Automaton enters the battlefield with X +1/+1 counters on it, where X is the highest number you noted for cards named Lurking Automaton.
+status=not supported: draft

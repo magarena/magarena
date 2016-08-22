@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever a creature with power 1 or less is put into your graveyard from the battlefield, you may return that card to the battlefield at the beginning of the next end step if SN is still on the battlefield.
 timing=main
 oracle=Whenever a creature with power 1 or less is put into your graveyard from the battlefield, you may return that card to the battlefield at the beginning of the next end step if Shirei, Shizo's Caretaker is still on the battlefield.
+status=needs groovy

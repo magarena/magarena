@@ -9,3 +9,4 @@ pt=3/3
 ability={1}: Regenerate SN. When it regenerates this way, put a -1/-1 counter on it.
 timing=main
 oracle={1}: Regenerate Matopi Golem. When it regenerates this way, put a -1/-1 counter on it.
+status=not supported: regen-this-way

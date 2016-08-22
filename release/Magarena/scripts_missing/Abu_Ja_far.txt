@@ -9,3 +9,4 @@ pt=0/1
 ability=When SN dies, destroy all creatures blocking or blocked by it. They can't be regenerated.
 timing=main
 oracle=When Abu Ja'far dies, destroy all creatures blocking or blocked by it. They can't be regenerated.
+status=needs groovy

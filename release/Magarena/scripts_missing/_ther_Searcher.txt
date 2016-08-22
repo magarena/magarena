@@ -10,3 +10,4 @@ ability=Reveal SN as you draft it. Reveal the next card you draft and note its n
         When SN enters the battlefield, you may search your hand and/or library for a card with a name noted as you drafted cards named Æther Searcher. You may cast it without paying its mana cost. If you searched your library this way, shuffle it.
 timing=main
 oracle=Reveal Æther Searcher as you draft it. Reveal the next card you draft and note its name. \nWhen Æther Searcher enters the battlefield, you may search your hand and/or library for a card with a name noted as you drafted cards named Æther Searcher. You may cast it without paying its mana cost. If you searched your library this way, shuffle it.
+status=not supported: draft

@@ -7,3 +7,4 @@ cost={4}{U}
 effect=If the difference between your life total and target player's life total is 5 or less, exchange life totals with that player.
 timing=main
 oracle=If the difference between your life total and target player's life total is 5 or less, exchange life totals with that player.
+status=needs groovy

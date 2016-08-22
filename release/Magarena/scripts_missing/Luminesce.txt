@@ -7,3 +7,4 @@ cost={W}
 effect=Prevent all damage that black sources and red sources would deal this turn.
 timing=removal
 oracle=Prevent all damage that black sources and red sources would deal this turn.
+status=needs groovy

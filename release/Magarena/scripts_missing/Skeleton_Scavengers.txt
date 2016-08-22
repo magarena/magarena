@@ -10,3 +10,4 @@ ability=SN enters the battlefield with a +1/+1 counter on it.;\
         Pay {1} for each +1/+1 counter on SN: Regenerate SN. When it regenerates this way, put a +1/+1 counter on it.
 timing=main
 oracle=Skeleton Scavengers enters the battlefield with a +1/+1 counter on it.\nPay {1} for each +1/+1 counter on Skeleton Scavengers: Regenerate Skeleton Scavengers. When it regenerates this way, put a +1/+1 counter on it.
+status=not supported: regen-this-way
