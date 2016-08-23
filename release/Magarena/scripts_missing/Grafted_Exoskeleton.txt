@@ -10,3 +10,4 @@ ability=Equipped creature gets +2/+2 and has infect.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +2/+2 and has infect.\nWhenever Grafted Exoskeleton becomes unattached from a permanent, sacrifice that permanent.\nEquip {2}
+status=not supported: becomes-unattached

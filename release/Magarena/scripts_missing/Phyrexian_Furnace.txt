@@ -8,3 +8,4 @@ ability={T}: Exile the bottom card of target player's graveyard.;\
         {1}, Sacrifice SN: Exile target card from a graveyard. Draw a card.
 timing=artifact
 oracle={T}: Exile the bottom card of target player's graveyard.\n{1}, Sacrifice Phyrexian Furnace: Exile target card from a graveyard. Draw a card.
+status=needs groovy

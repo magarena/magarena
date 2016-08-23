@@ -10,3 +10,4 @@ ability=Equipped creature gets +3/+2.;\
         Equip {0}
 timing=equipment
 oracle=Equipped creature gets +3/+2.\nWhenever Grafted Wargear becomes unattached from a permanent, sacrifice that permanent.\nEquip {0}
+status=not supported: becomes-unattached

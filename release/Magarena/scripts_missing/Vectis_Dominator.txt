@@ -9,3 +9,4 @@ pt=0/2
 ability={T}: Tap target creature unless its controller pays 2 life.
 timing=main
 oracle={T}: Tap target creature unless its controller pays 2 life.
+status=needs groovy

@@ -11,3 +11,4 @@ ability=You may choose not to untap SN during your untap step.;\
         {2}{B}, {T}: Put target creature card from a graveyard onto the battlefield under your control. When SN becomes untapped or you lose control of SN, exile that creature.
 timing=main
 oracle=You may choose not to untap Coffin Queen during your untap step.\n{2}{B}, {T}: Put target creature card from a graveyard onto the battlefield under your control. When Coffin Queen becomes untapped or you lose control of Coffin Queen, exile that creature.
+status=not supported: becomes-unattached

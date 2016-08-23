@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, choose a color.;\
         When you control no permanents of the chosen color, sacrifice SN.
 timing=main
 oracle=As Lurebound Scarecrow enters the battlefield, choose a color.\nWhen you control no permanents of the chosen color, sacrifice Lurebound Scarecrow.
+status=needs groovy

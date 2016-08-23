@@ -10,3 +10,4 @@ ability=First strike;\
         SN can't be equipped.
 timing=main
 oracle=First strike\nGoblin Brawler can't be equipped.
+status=not supported: cant-be-equipped

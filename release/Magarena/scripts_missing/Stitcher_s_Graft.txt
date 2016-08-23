@@ -11,3 +11,4 @@ ability=Equipped creature gets +3/+3.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +3/+3.\nWhenever equipped creature attacks, it doesn't untap during its controller's next untap step.\nWhenever Stitcher's Graft becomes unattached from a permanent, sacrifice that permanent.\nEquip {2}
+status=not supported: becomes-unattached

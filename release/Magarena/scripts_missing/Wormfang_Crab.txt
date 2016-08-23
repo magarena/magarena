@@ -11,3 +11,4 @@ ability=SN can't be blocked.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
 oracle=Wormfang Crab can't be blocked.\nWhen Wormfang Crab enters the battlefield, an opponent chooses a permanent you control other than Wormfang Crab and exiles it.\nWhen Wormfang Crab leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+status=needs groovy

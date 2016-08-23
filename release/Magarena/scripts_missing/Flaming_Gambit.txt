@@ -8,3 +8,4 @@ ability=Flashback {X}{R}{R}
 effect=SN deals X damage to target player. That player may choose a creature he or she controls and have SN deal that damage to it instead.
 timing=removal
 oracle=Flaming Gambit deals X damage to target player. That player may choose a creature he or she controls and have Flaming Gambit deal that damage to it instead.\nFlashback {X}{R}{R}
+status=needs groovy

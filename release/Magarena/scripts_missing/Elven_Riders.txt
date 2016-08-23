@@ -10,3 +10,4 @@ pt=3/3
 ability=SN can't be blocked except by Walls and/or creatures with flying.
 timing=main
 oracle=Elven Riders can't be blocked except by Walls and/or creatures with flying.
+status=needs groovy

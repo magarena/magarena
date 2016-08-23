@@ -8,3 +8,4 @@ ability=Flashback {7}{B}
 effect=Search your library for a card and put that card into your hand. If SN was cast from a graveyard, instead search your library for two cards and put those cards into your hand. Then shuffle your library.
 timing=main
 oracle=Search your library for a card and put that card into your hand. If Increasing Ambition was cast from a graveyard, instead search your library for two cards and put those cards into your hand. Then shuffle your library.\nFlashback {7}{B}
+status=needs groovy

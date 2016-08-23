@@ -8,3 +8,4 @@ ability=Flashback {4}{R}
 effect=Each instant and sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.
 timing=main
 oracle=Each instant and sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.\nFlashback {4}{R}
+status=not supported: card-modification

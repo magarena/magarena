@@ -11,3 +11,4 @@ ability=Devoid;\
         {2}{R}, Sacrifice another colorless creature: SN deals damage equal to the sacrificed creature's power to target creature or player.
 timing=main
 oracle=Devoid\n{2}{R}, Sacrifice another colorless creature: Barrage Tyrant deals damage equal to the sacrificed creature's power to target creature or player.
+status=needs groovy

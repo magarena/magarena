@@ -8,3 +8,4 @@ ability=Flashback {3}{R}{R}
 effect=Copy target instant or sorcery spell you control. If SN was cast from a graveyard, copy that spell twice instead. You may choose new targets for the copies.
 timing=removal
 oracle=Copy target instant or sorcery spell you control. If Increasing Vengeance was cast from a graveyard, copy that spell twice instead. You may choose new targets for the copies.\nFlashback {3}{R}{R}
+status=needs groovy

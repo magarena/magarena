@@ -8,3 +8,4 @@ ability=Prevent all damage that would be dealt to you by sources you don't contr
         When a card is put into your graveyard from anywhere, sacrifice SN.
 timing=enchantment
 oracle=Prevent all damage that would be dealt to you by sources you don't control.\nWhen a card is put into your graveyard from anywhere, sacrifice Energy Field.
+status=needs groovy
