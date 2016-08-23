@@ -8,3 +8,4 @@ ability=Cast SN only before attackers are declared.
 effect=You choose which creatures attack this turn.~You choose which creatures block this turn and how those creatures block.
 timing=removal
 oracle=Cast Master Warcraft only before attackers are declared.\nYou choose which creatures attack this turn.\nYou choose which creatures block this turn and how those creatures block.
+status=not supported: choose-block

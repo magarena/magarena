@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, choose a color.;\
         SN's power and toughness are each equal to the number of permanents of the chosen color your opponents control.
 timing=main
 oracle=As Chameleon Spirit enters the battlefield, choose a color.\nChameleon Spirit's power and toughness are each equal to the number of permanents of the chosen color your opponents control.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={4}{W}
 ability=Creatures can't attack you or a planeswalker you control unless their controller pays {X} for each of those creatures, where X is the number of enchantments you control.
 timing=enchantment
 oracle=Creatures can't attack you or a planeswalker you control unless their controller pays {X} for each of those creatures, where X is the number of enchantments you control.
+status=not supported: cant-attack-unless-cost

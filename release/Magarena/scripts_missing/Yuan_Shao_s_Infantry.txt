@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN attacks alone, SN can't be blocked this combat.
 timing=main
 oracle=Whenever Yuan Shao's Infantry attacks alone, Yuan Shao's Infantry can't be blocked this combat.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={2}{U}{B}
 ability=Green creatures can't attack unless their controller sacrifices a land for each green creature he or she controls that's attacking.
 timing=enchantment
 oracle=Green creatures can't attack unless their controller sacrifices a land for each green creature he or she controls that's attacking.
+status=not supported: cant-attack-unless-cost

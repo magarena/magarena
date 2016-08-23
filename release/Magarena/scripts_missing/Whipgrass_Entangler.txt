@@ -9,3 +9,4 @@ pt=1/3
 ability={1}{W}: Until end of turn, target creature gains "This creature can't attack or block unless its controller pays {1} for each Cleric on the battlefield."
 timing=main
 oracle={1}{W}: Until end of turn, target creature gains "This creature can't attack or block unless its controller pays {1} for each Cleric on the battlefield."
+status=not supported: cant-attack-unless-cost

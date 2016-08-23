@@ -10,3 +10,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't attack unless its controller pays {3}.
+status=not supported: cant-attack-unless-cost

@@ -9,3 +9,4 @@ pt=4/4
 ability=SN can't attack or block unless you tap an untapped creature you control not declared as an attacking or blocking creature this combat.
 timing=main
 oracle=Hollow Warrior can't attack or block unless you tap an untapped creature you control not declared as an attacking or blocking creature this combat.
+status=not supported: cant-attack-unless-cost

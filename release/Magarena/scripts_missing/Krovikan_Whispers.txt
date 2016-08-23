@@ -12,3 +12,4 @@ ability=Enchant creature;\
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nCumulative upkeep {U} or {B}\nYou control enchanted creature.\nWhen Krovikan Whispers is put into a graveyard from the battlefield, you lose 2 life for each age counter on it.
+status=needs groovy

@@ -12,3 +12,4 @@ ability=Graft 4;\
         {2}: Move a +1/+1 counter from target creature you control onto SN.
 timing=main
 oracle=Graft 4\nWhen Cytoplast Root-Kin enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.\n{2}: Move a +1/+1 counter from target creature you control onto Cytoplast Root-Kin.
+status=needs groovy

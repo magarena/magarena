@@ -7,3 +7,4 @@ cost={2}{U}
 ability={X}{U}: This turn, creatures can't attack unless their controller pays {X} for each attacking creature he or she controls.
 timing=enchantment
 oracle={X}{U}: This turn, creatures can't attack unless their controller pays {X} for each attacking creature he or she controls.
+status=not supported: cant-attack-unless-cost

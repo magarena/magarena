@@ -9,3 +9,4 @@ ability=Each creature you control assigns combat damage equal to its toughness r
         {2}{G}: Creatures you control get +0/+1 until end of turn.
 timing=enchantment
 oracle=Each creature you control assigns combat damage equal to its toughness rather than its power.\n{G}: Target creature with defender can attack this turn as though it didn't have defender.\n{2}{G}: Creatures you control get +0/+1 until end of turn.
+status=not supported: combat-damage-replacement

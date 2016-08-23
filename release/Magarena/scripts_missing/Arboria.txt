@@ -7,3 +7,4 @@ cost={2}{G}{G}
 ability=Creatures can't attack a player unless that player cast a spell or put a nontoken permanent onto the battlefield during his or her last turn.
 timing=enchantment
 oracle=Creatures can't attack a player unless that player cast a spell or put a nontoken permanent onto the battlefield during his or her last turn.
+status=not supported: no-info

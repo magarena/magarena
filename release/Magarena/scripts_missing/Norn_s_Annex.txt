@@ -7,3 +7,4 @@ cost={3}{W/P}{W/P}
 ability=Creatures can't attack you or a planeswalker you control unless their controller pays {W/P} for each of those creatures.
 timing=artifact
 oracle=Creatures can't attack you or a planeswalker you control unless their controller pays {W/P} for each of those creatures.
+status=not supported: cant-attack-unless-cost

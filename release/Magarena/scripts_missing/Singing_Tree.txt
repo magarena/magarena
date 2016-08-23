@@ -9,3 +9,4 @@ pt=0/3
 ability={T}: Target attacking creature has base power 0 until end of turn.
 timing=main
 oracle={T}: Target attacking creature has base power 0 until end of turn.
+status=needs groovy
