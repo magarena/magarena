@@ -73,6 +73,19 @@ Thank you for your support and have fun!
 
 Release 1.76 (August 28, 2016)
 ============
+till commit 99422af765312b63813308de8133f7aa43e277ad
+
+- added the following to the card script:
+    add condition "you've cast another spell this turn"
+
+- fixed the following bugs:
+    create new trigger type WhenTransforms, fixes #822
+    add AI enchant hint to Lunarch Mantle, fixes #820
+    store copy of getBlockedCreature before destroying the target, fixes #821
+    add AI enchant hint to Hope Against Hope, fixes #818
+    ability unless should always be at the Game layer, fixes #819
+
+- added the following cards:
 
 Release 1.75 (July 31, 2016)
 ============
