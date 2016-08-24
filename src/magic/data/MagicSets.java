@@ -2,6 +2,7 @@ package magic.data;
 
 public enum MagicSets {
 
+    CN2("Conspiracy: Take the Crown"), //2016-08-26
     EMN("Eldritch Moon"), //2016-07-22
     EMA("Eternal Masters"), //2016-06-10
     SOI("Shadows over Innistrad"), //2016-4-8
