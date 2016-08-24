@@ -9,3 +9,4 @@ ability=Cumulative upkeep {R};\
         Nonblue creatures can't block creatures you control unless their controller pays 1 life for each blocking creature he or she controls.
 timing=enchantment
 oracle=Cumulative upkeep {R}\nBlue creatures can't block creatures you control.\nNonblue creatures can't block creatures you control unless their controller pays 1 life for each blocking creature he or she controls.
+status=not supported: cant-block-unless-cost

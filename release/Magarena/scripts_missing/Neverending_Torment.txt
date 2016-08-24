@@ -7,3 +7,4 @@ cost={4}{B}{B}
 effect=Search target player's library for X cards, where X is the number of cards in your hand, and exile them. Then that player shuffles his or her library.~Epic
 timing=main
 oracle=Search target player's library for X cards, where X is the number of cards in your hand, and exile them. Then that player shuffles his or her library.\nEpic
+status=not supported: epic

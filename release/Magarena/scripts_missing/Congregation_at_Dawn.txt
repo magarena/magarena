@@ -7,3 +7,4 @@ cost={G}{G}{W}
 effect=Search your library for up to three creature cards and reveal them. Shuffle your library, then put those cards on top of it in any order.
 timing=removal
 oracle=Search your library for up to three creature cards and reveal them. Shuffle your library, then put those cards on top of it in any order.
+status=not supported: ordering-lib-top

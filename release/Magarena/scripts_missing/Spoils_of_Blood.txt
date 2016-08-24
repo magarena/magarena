@@ -7,3 +7,4 @@ cost={B}
 effect=Put an X/X black Horror creature token onto the battlefield, where X is the number of creatures that died this turn.
 timing=removal
 oracle=Put an X/X black Horror creature token onto the battlefield, where X is the number of creatures that died this turn.
+status=not supported: no-info

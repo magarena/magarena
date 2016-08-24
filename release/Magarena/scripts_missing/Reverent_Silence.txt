@@ -7,3 +7,4 @@ cost={3}{G}
 effect=If you control a Forest, rather than pay SN's mana cost, you may have each other player gain 6 life.~Destroy all enchantments.
 timing=main
 oracle=If you control a Forest, rather than pay Reverent Silence's mana cost, you may have each other player gain 6 life.\nDestroy all enchantments.
+status=needs groovy

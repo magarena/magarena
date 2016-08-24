@@ -7,3 +7,4 @@ cost={5}{W}{W}
 effect=Search your library for an enchantment card and put it onto the battlefield. Then shuffle your library.~Epic
 timing=main
 oracle=Search your library for an enchantment card and put it onto the battlefield. Then shuffle your library.\nEpic
+status=not supported: epic

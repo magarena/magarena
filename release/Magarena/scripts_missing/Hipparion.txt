@@ -9,3 +9,4 @@ pt=1/3
 ability=SN can't block creatures with power 3 or greater unless you pay {1}.
 timing=main
 oracle=Hipparion can't block creatures with power 3 or greater unless you pay {1}.
+status=not supported: cant-block-unless-cost

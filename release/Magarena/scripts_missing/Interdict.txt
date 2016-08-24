@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Counter target activated ability from an artifact, creature, enchantment, or land. That permanent's activated abilities can't be activated this turn.~Draw a card.
 timing=counter
 oracle=Counter target activated ability from an artifact, creature, enchantment, or land. That permanent's activated abilities can't be activated this turn.\nDraw a card.
+status=needs groovy

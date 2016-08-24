@@ -9,3 +9,4 @@ cost={4}{G}{G}
 effect=If a noncreature permanent under your control was destroyed this turn by a spell or ability an opponent controlled, you may pay {G} rather than pay SN's mana cost.~Put four 1/1 green Snake creature tokens onto the battlefield.
 timing=removal
 oracle=If a noncreature permanent under your control was destroyed this turn by a spell or ability an opponent controlled, you may pay {G} rather than pay Cobra Trap's mana cost.\nPut four 1/1 green Snake creature tokens onto the battlefield.
+status=not supported: no-info

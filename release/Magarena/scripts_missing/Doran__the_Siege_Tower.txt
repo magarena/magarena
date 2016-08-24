@@ -9,3 +9,4 @@ pt=0/5
 ability=Each creature assigns combat damage equal to its toughness rather than its power.
 timing=main
 oracle=Each creature assigns combat damage equal to its toughness rather than its power.
+status=not supported: combat-damage-replacement

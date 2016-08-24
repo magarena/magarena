@@ -7,3 +7,4 @@ cost={2}{B}{G}
 effect=Search your library for up to two creature cards and reveal them. Put one into your hand and the other into your graveyard. Then shuffle your library.
 timing=main
 oracle=Search your library for up to two creature cards and reveal them. Put one into your hand and the other into your graveyard. Then shuffle your library.
+status=needs groovy

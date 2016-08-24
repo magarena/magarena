@@ -8,3 +8,4 @@ cost={3}{G}
 effect=If a black creature with flying is attacking, you may pay {G} rather than pay SN's mana cost.~Destroy target attacking creature with flying.
 timing=removal
 oracle=If a black creature with flying is attacking, you may pay {G} rather than pay Slingbow Trap's mana cost.\nDestroy target attacking creature with flying.
+status=needs groovy

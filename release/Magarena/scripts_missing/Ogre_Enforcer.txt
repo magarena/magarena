@@ -9,3 +9,4 @@ pt=4/4
 ability=SN can't be destroyed by lethal damage unless lethal damage dealt by a single source is marked on it.
 timing=main
 oracle=Ogre Enforcer can't be destroyed by lethal damage unless lethal damage dealt by a single source is marked on it.
+status=not supported: no-info
