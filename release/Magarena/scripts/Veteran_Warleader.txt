@@ -8,6 +8,9 @@ subtype=Human,Soldier,Ally
 cost={1}{G}{W}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of creatures you control.;\
-        Tap another untapped Ally you control: SN gains your choice of first strike, vigilance, or trample until end of turn.
+        Tap another untapped Ally you control: Choose one — \
+        (1) SN gains first strike until end of turn. \
+        (2) SN gains vigilance until end of turn. \
+        (3) SN gains trample until end of turn.
 timing=main
 oracle=Veteran Warleader's power and toughness are each equal to the number of creatures you control.\nTap another untapped Ally you control: Veteran Warleader gains your choice of first strike, vigilance, or trample until end of turn.
