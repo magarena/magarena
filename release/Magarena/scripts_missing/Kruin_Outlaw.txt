@@ -11,3 +11,4 @@ ability=First strike;\
 transform=Terror of Kruin Pass
 timing=main
 oracle=First strike\nAt the beginning of each upkeep, if no spells were cast last turn, transform Kruin Outlaw.
+status=not supported: other-half

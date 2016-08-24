@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Target player loses life equal to the damage already dealt to him or her this turn.
 timing=main
 oracle=Target player loses life equal to the damage already dealt to him or her this turn.
+status=not supported: no-info

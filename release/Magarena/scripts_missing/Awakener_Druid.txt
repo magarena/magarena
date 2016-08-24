@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, target Forest becomes a 4/5 green Treefolk creature for as long as SN remains on the battlefield. It's still a land.
 timing=main
 oracle=When Awakener Druid enters the battlefield, target Forest becomes a 4/5 green Treefolk creature for as long as Awakener Druid remains on the battlefield. It's still a land.
+status=needs groovy

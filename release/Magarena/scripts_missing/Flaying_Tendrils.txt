@@ -9,3 +9,4 @@ ability=Devoid
 effect=All creatures get -2/-2 until end of turn. If a creature would die this turn, exile it instead.
 timing=main
 oracle=Devoid\nAll creatures get -2/-2 until end of turn. If a creature would die this turn, exile it instead.
+status=needs groovy

@@ -8,3 +8,4 @@ cost={3}{R}
 ability=When a source an opponent controls deals damage to you, sacrifice SN. If you do, put a 5/5 red Dragon creature token with flying onto the battlefield.
 timing=enchantment
 oracle=When a source an opponent controls deals damage to you, sacrifice Awaken the Sky Tyrant. If you do, put a 5/5 red Dragon creature token with flying onto the battlefield.
+status=needs groovy

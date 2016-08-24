@@ -12,3 +12,4 @@ meld=Bruna, the Fading Light;Gisela, the Broken Blade
 timing=main
 hidden
 oracle=Flying, first strike, vigilance, lifelink\nYour opponents can't cast spells with converted mana cost 3 or less.
+status=not supported: meld

@@ -11,3 +11,4 @@ flip=Initiate of Blood
 timing=main
 hidden
 oracle={T}: Goka the Unjust deals 4 damage to target creature that was dealt damage this turn.
+status=needs groovy

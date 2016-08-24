@@ -10,3 +10,4 @@ ability=Trample;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target green creature."
 timing=main
 oracle=Trample\nThreshold — As long as seven or more cards are in your graveyard, Possessed Centaur gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target green creature."
+status=needs groovy

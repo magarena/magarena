@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Target creature gets +X/+X until end of turn, where X is the highest converted mana cost among permanents you control.
 timing=removal
 oracle=Target creature gets +X/+X until end of turn, where X is the highest converted mana cost among permanents you control.
+status=needs groovy

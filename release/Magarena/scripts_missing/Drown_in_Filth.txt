@@ -7,3 +7,4 @@ cost={B}{G}
 effect=Choose target creature. Put the top four cards of your library into your graveyard, then that creature gets -1/-1 until end of turn for each land card in your graveyard.
 timing=main
 oracle=Choose target creature. Put the top four cards of your library into your graveyard, then that creature gets -1/-1 until end of turn for each land card in your graveyard.
+status=needs groovy

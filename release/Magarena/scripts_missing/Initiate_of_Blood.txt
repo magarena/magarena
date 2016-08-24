@@ -10,3 +10,4 @@ ability={T}: SN deals 1 damage to target creature that was dealt damage this tur
 flip=Goka the Unjust
 timing=main
 oracle={T}: Initiate of Blood deals 1 damage to target creature that was dealt damage this turn. When that creature dies this turn, flip Initiate of Blood.
+status=needs groovy

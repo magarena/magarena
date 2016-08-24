@@ -8,3 +8,4 @@ ability=Cast SN only before the combat damage step.
 effect=Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.
 timing=removal
 oracle=Cast Berserk only before the combat damage step.\nTarget creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.
+status=not supported: no-info

@@ -7,3 +7,4 @@ cost={X}{G}
 effect=Choose an opponent. You and that player each put an X/X green Treefolk creature token onto the battlefield.~Choose an opponent. You and that player each put X 1/1 green Elf Warrior creature tokens onto the battlefield.
 timing=main
 oracle=Choose an opponent. You and that player each put an X/X green Treefolk creature token onto the battlefield.\nChoose an opponent. You and that player each put X 1/1 green Elf Warrior creature tokens onto the battlefield.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={1}{B}{R}
 ability=At the beginning of each player's end step, if no creatures attacked this turn, that player sacrifices a creature he or she controlled since the beginning of the turn.
 timing=enchantment
 oracle=At the beginning of each player's end step, if no creatures attacked this turn, that player sacrifices a creature he or she controlled since the beginning of the turn.
+status=not supported: no-info

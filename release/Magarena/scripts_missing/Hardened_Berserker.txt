@@ -9,3 +9,4 @@ pt=3/2
 ability=Whenever SN attacks, the next spell you cast this turn costs {1} less to cast.
 timing=main
 oracle=Whenever Hardened Berserker attacks, the next spell you cast this turn costs {1} less to cast.
+status=not supported: complex-cost-modification

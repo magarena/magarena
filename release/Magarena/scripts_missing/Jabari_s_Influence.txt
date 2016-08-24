@@ -8,3 +8,4 @@ ability=Cast SN only after combat.
 effect=Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.
 timing=removal
 oracle=Cast Jabari's Influence only after combat.\nGain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.
+status=not supported: no-info

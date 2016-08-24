@@ -11,3 +11,4 @@ transform=Civilized Scholar
 timing=main
 hidden
 oracle=At the beginning of your end step, if Homicidal Brute didn't attack this turn, tap Homicidal Brute, then transform it.
+status=not supported: no-info

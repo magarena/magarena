@@ -7,3 +7,4 @@ cost={1}{R}
 effect=SN deals 1 damage to target creature. If that creature is white or blue, SN deals 4 damage to it instead.
 timing=removal
 oracle=Lightning Dart deals 1 damage to target creature. If that creature is white or blue, Lightning Dart deals 4 damage to it instead.
+status=needs groovy
