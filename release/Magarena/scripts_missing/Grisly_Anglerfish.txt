@@ -11,3 +11,4 @@ transform=Grizzled Angler
 timing=main
 hidden
 oracle={6}: Creatures your opponents control attack this turn if able.
+status=needs other half

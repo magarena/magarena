@@ -9,3 +9,4 @@ pt=2/3
 ability=At the beginning of your end step, if SN didn't attack this turn, SN deals 2 damage to you unless it came under your control this turn.
 timing=main
 oracle=At the beginning of your end step, if Erg Raiders didn't attack this turn, Erg Raiders deals 2 damage to you unless it came under your control this turn.
+status=not supported: no-info

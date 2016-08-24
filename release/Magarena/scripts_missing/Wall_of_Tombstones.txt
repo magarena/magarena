@@ -10,3 +10,4 @@ ability=Defender;\
         At the beginning of your upkeep, change SN's base toughness to 1 plus the number of creature cards in your graveyard.
 timing=smain
 oracle=Defender\nAt the beginning of your upkeep, change Wall of Tombstones's base toughness to 1 plus the number of creature cards in your graveyard.
+status=needs groovy

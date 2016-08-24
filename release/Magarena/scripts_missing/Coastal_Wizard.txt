@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Return SN and another target creature to their owners' hands. Activate this ability only during your turn, before attackers are declared.
 timing=main
 oracle={T}: Return Coastal Wizard and another target creature to their owners' hands. Activate this ability only during your turn, before attackers are declared.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=4/1
 ability=When SN dies during combat, put four 1/1 green Hound creature tokens onto the battlefield.
 timing=main
 oracle=When Mongrel Pack dies during combat, put four 1/1 green Hound creature tokens onto the battlefield.
+status=needs groovy

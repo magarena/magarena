@@ -10,3 +10,4 @@ transform=Skin Invasion
 timing=main
 hidden
 oracle=NONE
+status=needs other half
