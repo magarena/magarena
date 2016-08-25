@@ -10,3 +10,4 @@ ability=Flying;\
         {T}: If the top card of target player's graveyard is a creature card, put that card on top of that player's library.
 timing=main
 oracle=Flying\n{T}: If the top card of target player's graveyard is a creature card, put that card on top of that player's library.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={3}{G}
 ability=Creatures with no abilities get +2/+2.
 timing=enchantment
 oracle=Creatures with no abilities get +2/+2.
+status=needs groovy

@@ -8,3 +8,4 @@ ability=You don't lose the game for having 0 or less life.;\
         As long as you have 0 or less life, all damage is dealt to you as though its source had infect.
 timing=enchantment
 oracle=You don't lose the game for having 0 or less life.\nAs long as you have 0 or less life, all damage is dealt to you as though its source had infect.
+status=not supported: as-though-infect

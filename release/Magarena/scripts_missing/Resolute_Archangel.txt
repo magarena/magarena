@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, if your life total is less than your starting life total, it becomes equal to your starting life total.
 timing=main
 oracle=Flying\nWhen Resolute Archangel enters the battlefield, if your life total is less than your starting life total, it becomes equal to your starting life total.
+status=not supported: no-info

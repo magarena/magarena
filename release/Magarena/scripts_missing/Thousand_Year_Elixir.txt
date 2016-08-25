@@ -8,3 +8,4 @@ ability=You may activate abilities of creatures you control as though those crea
         {1}, {T}: Untap target creature.
 timing=artifact
 oracle=You may activate abilities of creatures you control as though those creatures had haste.\n{1}, {T}: Untap target creature.
+status=not supported: as-though-haste

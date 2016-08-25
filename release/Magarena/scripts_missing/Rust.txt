@@ -7,3 +7,4 @@ cost={G}
 effect=Counter target activated ability from an artifact source.
 timing=counter
 oracle=Counter target activated ability from an artifact source.
+status=needs groovy

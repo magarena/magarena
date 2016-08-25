@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Gain control of target Aura that's attached to a permanent. Attach it to another permanent it can enchant.
 timing=removal
 oracle=Gain control of target Aura that's attached to a permanent. Attach it to another permanent it can enchant.
+status=not supported: legal-aura

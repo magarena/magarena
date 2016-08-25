@@ -10,3 +10,4 @@ ability=Flying;\
         {X}: Prevent the next X damage that would be dealt to you this turn. If damage is prevented this way, SN deals that much damage to target player.
 timing=main
 oracle=Flying\n{X}: Prevent the next X damage that would be dealt to you this turn. If damage is prevented this way, Vengeful Archon deals that much damage to target player.
+status=not supported: prevented-this-way

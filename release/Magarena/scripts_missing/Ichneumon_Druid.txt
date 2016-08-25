@@ -9,3 +9,4 @@ pt=1/1
 ability=Whenever an opponent casts an instant spell other than the first instant spell that player casts each turn, SN deals 4 damage to him or her.
 timing=main
 oracle=Whenever an opponent casts an instant spell other than the first instant spell that player casts each turn, Ichneumon Druid deals 4 damage to him or her.
+status=not supported: no-info

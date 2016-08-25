@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Target opponent chooses a creature he or she controls. Other creatures he or she controls can't block this turn.
 timing=main
 oracle=Target opponent chooses a creature he or she controls. Other creatures he or she controls can't block this turn.
+status=needs groovy

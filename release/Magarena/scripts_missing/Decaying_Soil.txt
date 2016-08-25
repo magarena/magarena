@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, exile a card from your graveyard.;\
         As long as seven or more cards are in your graveyard, SN has "Whenever a nontoken creature is put into your graveyard from the battlefield, you may pay {1}. If you do, return that card to your hand."
 timing=enchantment
 oracle=At the beginning of your upkeep, exile a card from your graveyard.\nThreshold — As long as seven or more cards are in your graveyard, Decaying Soil has "Whenever a nontoken creature is put into your graveyard from the battlefield, you may pay {1}. If you do, return that card to your hand."
+status=needs groovy

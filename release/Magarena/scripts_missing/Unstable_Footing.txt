@@ -8,3 +8,4 @@ ability=Kicker {3}{R}
 effect=Damage can't be prevented this turn. If SN was kicked, it deals 5 damage to target player.
 timing=removal
 oracle=Kicker {3}{R}\nDamage can't be prevented this turn. If Unstable Footing was kicked, it deals 5 damage to target player.
+status=needs groovy

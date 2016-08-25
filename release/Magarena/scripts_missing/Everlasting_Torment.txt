@@ -9,3 +9,4 @@ ability=Players can't gain life.;\
         All damage is dealt as though its source had wither.
 timing=enchantment
 oracle=Players can't gain life.\nDamage can't be prevented.\nAll damage is dealt as though its source had wither.
+status=not supported: as-though-wither

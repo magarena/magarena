@@ -10,3 +10,4 @@ ability=Shroud;\
         {G}: Until end of turn, SN can be the target of spells and abilities controlled by target player as though it didn't have shroud.
 timing=main
 oracle=Shroud\n{G}: Until end of turn, Autumn Willow can be the target of spells and abilities controlled by target player as though it didn't have shroud.
+status=not supported: didnt-have-shroud

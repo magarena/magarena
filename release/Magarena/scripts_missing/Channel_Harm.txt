@@ -7,3 +7,4 @@ cost={5}{W}
 effect=Prevent all damage that would be dealt to you and permanents you control this turn by sources you don't control. If damage is prevented this way, you may have SN deal that much damage to target creature.
 timing=removal
 oracle=Prevent all damage that would be dealt to you and permanents you control this turn by sources you don't control. If damage is prevented this way, you may have Channel Harm deal that much damage to target creature.
+status=needs groovy

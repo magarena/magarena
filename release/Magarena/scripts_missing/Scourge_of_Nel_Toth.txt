@@ -11,3 +11,4 @@ ability=Flying;\
         You may cast SN from your graveyard by paying {B}{B} and sacrificing two creatures rather than paying its mana cost.
 timing=main
 oracle=Flying\nYou may cast Scourge of Nel Toth from your graveyard by paying {B}{B} and sacrificing two creatures rather than paying its mana cost.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/1
 ability=Whenever SN deals combat damage to a player, that player loses 2 life at the beginning of his or her next draw step unless he or she pays {2} before that step.
 timing=main
 oracle=Whenever Glass Asp deals combat damage to a player, that player loses 2 life at the beginning of his or her next draw step unless he or she pays {2} before that step.
+status=not supported: pay-before-step

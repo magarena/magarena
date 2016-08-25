@@ -10,3 +10,4 @@ ability=Morph {X}{X}{R};\
         When SN is turned face up, put X 1/1 red Goblin creature tokens onto the battlefield.
 timing=main
 oracle=Morph {X}{X}{R}\nWhen Warbreak Trumpeter is turned face up, put X 1/1 red Goblin creature tokens onto the battlefield.
+status=not supported: no-info

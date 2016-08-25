@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, if there are no Reflection tokens on th
         {0}: Destroy target Reflection.
 timing=enchantment
 oracle=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, put a 2/2 white Reflection creature token onto the battlefield.\n{0}: Destroy target Reflection.
+status=needs groovy

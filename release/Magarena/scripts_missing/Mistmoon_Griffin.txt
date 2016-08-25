@@ -10,3 +10,4 @@ ability=Flying;\
         When SN dies, exile SN, then return the top creature card of your graveyard to the battlefield.
 timing=main
 oracle=Flying\nWhen Mistmoon Griffin dies, exile Mistmoon Griffin, then return the top creature card of your graveyard to the battlefield.
+status=needs groovy
