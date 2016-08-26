@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=SN deals 4 damage to target creature or player.~If you attacked with a creature this turn, instead SN deals 5 damage to that creature or player and the damage can't be prevented.
 timing=main
 oracle=Arrow Storm deals 4 damage to target creature or player.\nRaid — If you attacked with a creature this turn, instead Arrow Storm deals 5 damage to that creature or player and the damage can't be prevented.
+status=needs groovy

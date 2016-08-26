@@ -11,3 +11,4 @@ ability=Your opponents can't cast spells with even converted mana costs.;\
         Your opponents can't block with creatures with even converted mana costs.
 timing=main
 oracle=Your opponents can't cast spells with even converted mana costs.\nYour opponents can't block with creatures with even converted mana costs.
+status=not supported: players-cant

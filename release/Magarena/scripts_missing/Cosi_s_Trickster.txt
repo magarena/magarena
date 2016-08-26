@@ -9,3 +9,4 @@ pt=1/1
 ability=Whenever an opponent shuffles his or her library, you may put a +1/+1 counter on SN.
 timing=main
 oracle=Whenever an opponent shuffles his or her library, you may put a +1/+1 counter on Cosi's Trickster.
+status=not supported: when-shuffle

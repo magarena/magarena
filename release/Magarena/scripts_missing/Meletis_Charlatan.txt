@@ -9,3 +9,4 @@ pt=2/3
 ability={2}{U}, {T}: The controller of target instant or sorcery spell copies it. That player may choose new targets for the copy.
 timing=main
 oracle={2}{U}, {T}: The controller of target instant or sorcery spell copies it. That player may choose new targets for the copy.
+status=needs groovy

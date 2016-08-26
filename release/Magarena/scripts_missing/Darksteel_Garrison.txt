@@ -10,3 +10,4 @@ ability=Fortified land has indestructible.;\
         Fortify {3}
 timing=artifact
 oracle=Fortified land has indestructible.\nWhenever fortified land becomes tapped, target creature gets +1/+1 until end of turn.\nFortify {3}
+status=not supported: fortify

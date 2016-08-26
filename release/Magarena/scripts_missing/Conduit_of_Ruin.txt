@@ -11,3 +11,4 @@ ability=When you cast SN, you may search your library for a colorless creature c
         The first creature spell you cast each turn costs {2} less to cast.
 timing=main
 oracle=When you cast Conduit of Ruin, you may search your library for a colorless creature card with converted mana cost 7 or greater, reveal it, then shuffle your library and put that card on top of it.\nThe first creature spell you cast each turn costs {2} less to cast.
+status=needs groovy

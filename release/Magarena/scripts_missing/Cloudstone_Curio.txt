@@ -7,3 +7,4 @@ cost={3}
 ability=Whenever a nonartifact permanent enters the battlefield under your control, you may return another permanent you control that shares a permanent type with it to its owner's hand.
 timing=artifact
 oracle=Whenever a nonartifact permanent enters the battlefield under your control, you may return another permanent you control that shares a permanent type with it to its owner's hand.
+status=needs groovy

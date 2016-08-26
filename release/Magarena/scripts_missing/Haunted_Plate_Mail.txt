@@ -10,3 +10,4 @@ ability=Equipped creature gets +4/+4.;\
         Equip {4}
 timing=equipment
 oracle=Equipped creature gets +4/+4.\n{0}: Until end of turn, Haunted Plate Mail becomes a 4/4 Spirit artifact creature that's no longer an Equipment. Activate this ability only if you control no creatures.\nEquip {4}
+status=needs groovy

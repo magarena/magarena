@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=You may have creatures you control assign their combat damage this turn as though they weren't blocked.
 timing=main
 oracle=You may have creatures you control assign their combat damage this turn as though they weren't blocked.
+status=not supported: combat-damage-replacement

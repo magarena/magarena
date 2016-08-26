@@ -11,3 +11,4 @@ ability=Equipped creature gets +3/+3.;\
         Equip {3}
 timing=equipment
 oracle=Equipped creature gets +3/+3.\nWhenever equipped creature blocks or becomes blocked by one or more creatures, you may exile one of those creatures.\nOpponents can't cast cards with the same name as cards exiled with Godsend.\nEquip {3}
+status=not supported: players-cant

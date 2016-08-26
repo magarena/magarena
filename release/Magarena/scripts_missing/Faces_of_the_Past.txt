@@ -7,3 +7,4 @@ cost={2}{U}
 ability=Whenever a creature dies, tap all untapped creatures that share a creature type with it or untap all tapped creatures that share a creature type with it.
 timing=enchantment
 oracle=Whenever a creature dies, tap all untapped creatures that share a creature type with it or untap all tapped creatures that share a creature type with it.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={5}{W}{W}
 effect=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, your life total becomes 26.~Your life total becomes 26.
 timing=main
 oracle=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, your life total becomes 26.\nYour life total becomes 26.
+status=not supported: opening-hand

@@ -9,3 +9,4 @@ pt=2/2
 ability=SN can't attack if defending player controls an untapped creature with power 2 or less.
 timing=main
 oracle=Mogg Jailer can't attack if defending player controls an untapped creature with power 2 or less.
+status=needs groovy

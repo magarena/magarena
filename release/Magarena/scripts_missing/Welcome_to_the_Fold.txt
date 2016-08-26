@@ -8,3 +8,4 @@ ability=Madness {X}{U}{U}
 effect=Gain control of target creature if its toughness is 2 or less. If SN's madness cost was paid, instead gain control of that creature if its toughness is X or less.
 timing=main
 oracle=Madness {X}{U}{U}\nGain control of target creature if its toughness is 2 or less. If Welcome to the Fold's madness cost was paid, instead gain control of that creature if its toughness is X or less.
+status=not supported: madness-paid
