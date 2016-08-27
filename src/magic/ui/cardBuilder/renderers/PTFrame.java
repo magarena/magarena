@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
+import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.ui.cardBuilder.IRenderableCard;
 import magic.ui.cardBuilder.ResourceManager;
@@ -309,11 +310,20 @@ public class PTFrame {
 
     static void drawTransformSymbol(BufferedImage cardImage, IRenderableCard cardDef) {
         Graphics2D g2d = cardImage.createGraphics();
-        BufferedImage typeSymbol = ResourceManager.sunSymbol;
+        BufferedImage typeSymbol = ResourceManager.daySymbol;
         if (cardDef.isHidden()) {
-            typeSymbol = cardDef.isPlaneswalker() && !cardDef.getTransformedDefinition().isPlaneswalker() ? ResourceManager.planeswalkerTypeSymbol : ResourceManager.moonSymbol;
+            if (cardDef.hasSubType(MagicSubType.Eldrazi)){
+                typeSymbol = ResourceManager.eldraziSymbol;
+            }
+            else if (cardDef.isPlaneswalker() && !cardDef.getTransformedDefinition().isPlaneswalker()){
+                typeSymbol = ResourceManager.planeswalkerTypeSymbol;
+            } else {
+                typeSymbol = ResourceManager.nightSymbol;
+            }
         } else if (cardDef.isCreature() && cardDef.getTransformedDefinition().isPlaneswalker()) {
             typeSymbol = ResourceManager.sparkSymbol;
+        } else if (cardDef.getTransformedDefinition().hasSubType(MagicSubType.Eldrazi)) {
+            typeSymbol = ResourceManager.moonSymbol;
         }
         if (cardDef.isPlaneswalker()) {
             g2d.drawImage(typeSymbol, 21, 18, null);

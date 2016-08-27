@@ -206,8 +206,10 @@ public class ResourceManager {
     public static final BufferedImage redHiddenPTPanel = getComponent("transform/rpt2.png");
     public static final BufferedImage greenHiddenPTPanel = getComponent("transform/gpt2.png");
     public static final BufferedImage multiHiddenPTPanel = getComponent("transform/mpt2.png");
-    public static final BufferedImage sunSymbol = getComponent("transform/sun_circle.png");
-    public static final BufferedImage moonSymbol = getComponent("transform/night_circle.png");
+    public static final BufferedImage daySymbol = getComponent("transform/sun_circle.png");
+    public static final BufferedImage nightSymbol = getComponent("transform/night_circle.png");
+    public static final BufferedImage moonSymbol = getComponent("transform/moon.png");
+    public static final BufferedImage eldraziSymbol = getComponent("transform/eldrazi.png");
     public static final BufferedImage planeswalkerTypeSymbol = getComponent("transform/planeswalker.png");
     public static final BufferedImage sparkSymbol = getComponent("transform/ccorner.png");
     public static final BufferedImage common = getComponent("rarity/Common.png");
