@@ -1,0 +1,13 @@
+name=Archdemon of Paliano
+image=http://magiccards.info/scans/en/cn2/39.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Demon
+cost={2}{B}{B}
+pt=5/4
+ability=Draft SN face up. ;\
+        As long as SN is face up during the draft, you can't look at booster packs and must draft cards at random. After you draft three cards this way, turn SN face down.;\
+        Flying
+timing=main
+oracle=Draft Archdemon of Paliano face up. \nAs long as Archdemon of Paliano is face up during the draft, you can't look at booster packs and must draft cards at random. After you draft three cards this way, turn Archdemon of Paliano face down.\nFlying

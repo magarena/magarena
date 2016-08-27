@@ -1,0 +1,12 @@
+name=Skittering Crustacean
+image=http://magiccards.info/scans/en/cn2/36.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Crab
+cost={2}{U}
+pt=2/3
+ability={6}{U}: Monstrosity 4.;\
+        As long as SN is monstrous, it has hexproof.
+timing=main
+oracle={6}{U}: Monstrosity 4.\nAs long as Skittering Crustacean is monstrous, it has hexproof.

@@ -1,0 +1,11 @@
+name=Garrulous Sycophant
+image=http://magiccards.info/scans/en/cn2/43.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Advisor
+cost={2}{B}
+pt=1/4
+ability=At the beginning of your end step, if you're the monarch, each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=At the beginning of your end step, if you're the monarch, each opponent loses 1 life and you gain 1 life.

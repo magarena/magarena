@@ -1,0 +1,12 @@
+name=Fang of the Pack
+image=http://magiccards.info/scans/en/cn2/65.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wolf
+cost={5}{G}
+pt=5/3
+ability=Melee;\
+        At the beginning of combat on your turn, another target creature you control gains melee until end of turn.
+timing=main
+oracle=Melee\nAt the beginning of combat on your turn, another target creature you control gains melee until end of turn.

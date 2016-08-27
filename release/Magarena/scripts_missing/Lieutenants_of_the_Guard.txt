@@ -1,0 +1,11 @@
+name=Lieutenants of the Guard
+image=http://magiccards.info/scans/en/cn2/16.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}
+pt=2/2
+ability=When SN enters the battlefield, starting with you, each player votes for strength or numbers. Put a +1/+1 counter on SN for each strength vote and put a 1/1 white Soldier creature token onto the battlefield for each numbers vote.
+timing=main
+oracle=Council's dilemma — When Lieutenants of the Guard enters the battlefield, starting with you, each player votes for strength or numbers. Put a +1/+1 counter on Lieutenants of the Guard for each strength vote and put a 1/1 white Soldier creature token onto the battlefield for each numbers vote.

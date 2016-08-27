@@ -1,0 +1,11 @@
+name=Borderland Explorer
+image=http://magiccards.info/scans/en/cn2/61.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={1}{G}
+pt=3/1
+ability=When SN enters the battlefield, each player may discard a card. Each player who discarded a card this way may search his or her library for a basic land card, reveal it, put it into his or her hand, then shuffle his or her library.
+timing=main
+oracle=When Borderland Explorer enters the battlefield, each player may discard a card. Each player who discarded a card this way may search his or her library for a basic land card, reveal it, put it into his or her hand, then shuffle his or her library.

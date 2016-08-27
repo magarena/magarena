@@ -1,0 +1,11 @@
+name=Ballot Broker
+image=http://magiccards.info/scans/en/cn2/13.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Advisor
+cost={2}{W}
+pt=2/3
+ability=While voting, you may vote an additional time.
+timing=main
+oracle=While voting, you may vote an additional time.

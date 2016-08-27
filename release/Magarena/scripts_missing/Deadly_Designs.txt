@@ -1,0 +1,10 @@
+name=Deadly Designs
+image=http://magiccards.info/scans/en/cn2/42.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{B}
+ability={2}: Put a plot counter on SN. Any player may activate this ability.;\
+        When there are five or more plot counters on SN, sacrifice it. If you do, destroy up to two target creatures.
+timing=enchantment
+oracle={2}: Put a plot counter on Deadly Designs. Any player may activate this ability.\nWhen there are five or more plot counters on Deadly Designs, sacrifice it. If you do, destroy up to two target creatures.

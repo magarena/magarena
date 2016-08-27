@@ -1,0 +1,13 @@
+name=Paliano Vanguard
+image=http://magiccards.info/scans/en/cn2/20.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=Draft SN face up.;\
+        As you draft a creature card, you may reveal it, note its creature types, then turn SN face down.;\
+        Other creatures you control of a type you noted for cards named Paliano Vanguard get +1/+1.
+timing=main
+oracle=Draft Paliano Vanguard face up.\nAs you draft a creature card, you may reveal it, note its creature types, then turn Paliano Vanguard face down.\nOther creatures you control of a type you noted for cards named Paliano Vanguard get +1/+1.

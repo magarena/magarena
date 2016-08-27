@@ -1,0 +1,9 @@
+name=Illusion of Choice
+image=http://magiccards.info/scans/en/cn2/31.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}
+effect=You choose how each player votes this turn.~Draw a card.
+timing=removal
+oracle=You choose how each player votes this turn.\nDraw a card.

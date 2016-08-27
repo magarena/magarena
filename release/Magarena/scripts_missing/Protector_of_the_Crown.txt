@@ -1,0 +1,12 @@
+name=Protector of the Crown
+image=http://magiccards.info/scans/en/cn2/21.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Giant,Soldier
+cost={5}{W}
+pt=2/5
+ability=When SN enters the battlefield, you become the monarch.;\
+        All damage that would be dealt to you is dealt to SN instead.
+timing=main
+oracle=When Protector of the Crown enters the battlefield, you become the monarch.\nAll damage that would be dealt to you is dealt to Protector of the Crown instead.

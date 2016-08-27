@@ -1,0 +1,13 @@
+name=Pyretic Hunter
+image=http://magiccards.info/scans/en/cn2/56.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental,Cat
+cost={4}{R}
+pt=0/0
+ability=Reveal SN as you draft it and note how many cards you've drafted this draft round, including SN.;\
+        Menace;\
+        SN enters the battlefield with X +1/+1 counters on it, where X is the highest number you noted for cards named Pyretic Hunter.
+timing=main
+oracle=Reveal Pyretic Hunter as you draft it and note how many cards you've drafted this draft round, including Pyretic Hunter.\nMenace\nPyretic Hunter enters the battlefield with X +1/+1 counters on it, where X is the highest number you noted for cards named Pyretic Hunter.

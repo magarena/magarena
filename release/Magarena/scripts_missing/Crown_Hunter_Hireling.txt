@@ -1,0 +1,12 @@
+name=Crown-Hunter Hireling
+image=http://magiccards.info/scans/en/cn2/50.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre,Mercenary
+cost={4}{R}
+pt=4/4
+ability=When SN enters the battlefield, you become the monarch.;\
+        SN can't attack unless defending player is the monarch.
+timing=main
+oracle=When Crown-Hunter Hireling enters the battlefield, you become the monarch.\nCrown-Hunter Hireling can't attack unless defending player is the monarch.

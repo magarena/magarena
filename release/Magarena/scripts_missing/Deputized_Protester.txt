@@ -1,0 +1,12 @@
+name=Deputized Protester
+image=http://magiccards.info/scans/en/cn2/51.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=2/1
+ability=Menace;\
+        Melee
+timing=main
+oracle=Menace\nMelee

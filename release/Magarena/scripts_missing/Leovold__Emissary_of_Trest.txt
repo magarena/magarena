@@ -1,0 +1,12 @@
+name=Leovold, Emissary of Trest
+image=http://magiccards.info/scans/en/cn2/77.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elf,Advisor
+cost={B}{G}{U}
+pt=3/3
+ability=Each opponent can't draw more than one card each turn.;\
+        Whenever you or a permanent you control becomes the target of a spell or ability an opponent controls, you may draw a card.
+timing=main
+oracle=Each opponent can't draw more than one card each turn.\nWhenever you or a permanent you control becomes the target of a spell or ability an opponent controls, you may draw a card.

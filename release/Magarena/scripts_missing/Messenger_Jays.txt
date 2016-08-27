@@ -1,0 +1,12 @@
+name=Messenger Jays
+image=http://magiccards.info/scans/en/cn2/35.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={4}{U}
+pt=2/1
+ability=Flying;\
+        When SN enters the battlefield, starting with you, each player votes for feather or quill. Put a +1/+1 counter on SN for each feather vote and draw a card for each quill vote. For each card drawn this way, discard a card.
+timing=main
+oracle=Flying\nCouncil's dilemma — When Messenger Jays enters the battlefield, starting with you, each player votes for feather or quill. Put a +1/+1 counter on Messenger Jays for each feather vote and draw a card for each quill vote. For each card drawn this way, discard a card.

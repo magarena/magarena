@@ -1,0 +1,12 @@
+name=Custodi Lich
+image=http://magiccards.info/scans/en/cn2/41.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Cleric
+cost={3}{B}{B}
+pt=4/2
+ability=When SN enters the battlefield, you become the monarch.;\
+        Whenever you become the monarch, target player sacrifices a creature.
+timing=main
+oracle=When Custodi Lich enters the battlefield, you become the monarch.\nWhenever you become the monarch, target player sacrifices a creature.

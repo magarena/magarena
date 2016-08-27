@@ -1,0 +1,11 @@
+name=Palace Sentinels
+image=http://magiccards.info/scans/en/cn2/19.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=2/4
+ability=When SN enters the battlefield, you become the monarch.
+timing=main
+oracle=When Palace Sentinels enters the battlefield, you become the monarch.

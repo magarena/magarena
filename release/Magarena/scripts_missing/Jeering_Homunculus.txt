@@ -1,0 +1,11 @@
+name=Jeering Homunculus
+image=http://magiccards.info/scans/en/cn2/33.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Homunculus
+cost={1}{U}
+pt=0/4
+ability=When SN enters the battlefield, you may goad target creature.
+timing=main
+oracle=When Jeering Homunculus enters the battlefield, you may goad target creature.

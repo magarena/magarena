@@ -1,0 +1,12 @@
+name=Sinuous Vermin
+image=http://magiccards.info/scans/en/cn2/46.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rat,Horror
+cost={1}{B}
+pt=2/2
+ability={3}{B}{B}: Monstrosity 3.;\
+        As long as SN is monstrous, it has menace.
+timing=main
+oracle={3}{B}{B}: Monstrosity 3.\nAs long as Sinuous Vermin is monstrous, it has menace.

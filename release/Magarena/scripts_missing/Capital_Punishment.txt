@@ -1,0 +1,9 @@
+name=Capital Punishment
+image=http://magiccards.info/scans/en/cn2/40.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+effect=Starting with you, each player votes for death or taxes. Each opponent sacrifices a creature for each death vote and discards a card for each taxes vote.
+timing=main
+oracle=Council's dilemma — Starting with you, each player votes for death or taxes. Each opponent sacrifices a creature for each death vote and discards a card for each taxes vote.

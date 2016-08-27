@@ -1,0 +1,13 @@
+name=Queen Marchesa
+image=http://magiccards.info/scans/en/cn2/78.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Assassin
+cost={1}{R}{W}{B}
+pt=3/3
+ability=Deathtouch, haste;\
+        When SN enters the battlefield, you become the monarch.;\
+        At the beginning of your upkeep, if an opponent is the monarch, put a 1/1 black Assassin creature token with deathtouch and haste onto the battlefield.
+timing=main
+oracle=Deathtouch, haste\nWhen Queen Marchesa enters the battlefield, you become the monarch.\nAt the beginning of your upkeep, if an opponent is the monarch, put a 1/1 black Assassin creature token with deathtouch and haste onto the battlefield.

@@ -1,0 +1,12 @@
+name=Canal Courier
+image=http://magiccards.info/scans/en/cn2/28.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={5}{U}
+pt=3/5
+ability=When SN enters the battlefield, you become the monarch.;\
+        Whenever SN and another creature attack different players, SN can't be blocked this combat.
+timing=main
+oracle=When Canal Courier enters the battlefield, you become the monarch.\nWhenever Canal Courier and another creature attack different players, Canal Courier can't be blocked this combat.

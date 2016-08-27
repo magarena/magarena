@@ -1,0 +1,12 @@
+name=Menagerie Liberator
+image=http://magiccards.info/scans/en/cn2/67.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}
+pt=3/2
+ability=Trample;\
+        Melee
+timing=main
+oracle=Trample\nMelee

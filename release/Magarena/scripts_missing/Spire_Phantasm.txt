@@ -1,0 +1,13 @@
+name=Spire Phantasm
+image=http://magiccards.info/scans/en/cn2/37.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Gargoyle,Illusion
+cost={2}{U}{U}
+pt=3/2
+ability=Reveal SN as you draft it. The next time a player drafts a card from this booster pack, guess that card's name. Then that player reveals the drafted card.;\
+        Flying;\
+        When SN enters the battlefield, if you guessed correctly for a card named Spire Phantasm, draw a card.
+timing=main
+oracle=Reveal Spire Phantasm as you draft it. The next time a player drafts a card from this booster pack, guess that card's name. Then that player reveals the drafted card.\nFlying\nWhen Spire Phantasm enters the battlefield, if you guessed correctly for a card named Spire Phantasm, draw a card.

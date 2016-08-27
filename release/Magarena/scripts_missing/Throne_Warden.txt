@@ -1,0 +1,11 @@
+name=Throne Warden
+image=http://magiccards.info/scans/en/cn2/25.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=At the beginning of your end step, if you're the monarch, put a +1/+1 counter on SN.
+timing=main
+oracle=At the beginning of your end step, if you're the monarch, put a +1/+1 counter on Throne Warden.

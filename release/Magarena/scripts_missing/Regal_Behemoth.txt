@@ -1,0 +1,13 @@
+name=Regal Behemoth
+image=http://magiccards.info/scans/en/cn2/69.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Lizard
+cost={4}{G}{G}
+pt=5/5
+ability=Trample;\
+        When SN enters the battlefield, you become the monarch.;\
+        Whenever you tap a land for mana while you're the monarch, add one mana of any color to your mana pool.
+timing=main
+oracle=Trample\nWhen Regal Behemoth enters the battlefield, you become the monarch.\nWhenever you tap a land for mana while you're the monarch, add one mana of any color to your mana pool.

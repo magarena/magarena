@@ -1,0 +1,12 @@
+name=Thorn of the Black Rose
+image=http://magiccards.info/scans/en/cn2/48.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Assassin
+cost={3}{B}
+pt=1/3
+ability=Deathtouch;\
+        When SN enters the battlefield, you become the monarch.
+timing=main
+oracle=Deathtouch\nWhen Thorn of the Black Rose enters the battlefield, you become the monarch.

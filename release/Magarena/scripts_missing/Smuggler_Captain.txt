@@ -1,0 +1,13 @@
+name=Smuggler Captain
+image=http://magiccards.info/scans/en/cn2/47.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={3}{B}
+pt=2/2
+ability=Draft SN face up.;\
+        As you draft a card, you may reveal it, note its name, then turn SN face down.;\
+        When SN enters the battlefield, you may search your library for a card with a name you noted for cards named Smuggler Captain, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=Draft Smuggler Captain face up.\nAs you draft a card, you may reveal it, note its name, then turn Smuggler Captain face down.\nWhen Smuggler Captain enters the battlefield, you may search your library for a card with a name you noted for cards named Smuggler Captain, reveal it, put it into your hand, then shuffle your library.

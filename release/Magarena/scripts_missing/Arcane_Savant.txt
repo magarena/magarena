@@ -1,0 +1,12 @@
+name=Arcane Savant
+image=http://magiccards.info/scans/en/cn2/27.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}{U}
+pt=3/3
+ability=Before you shuffle your deck to start the game, you may reveal this card from your deck and exile an instant or sorcery card you drafted that isn't in your deck.;\
+        When SN enters the battlefield, copy a card you exiled with cards named Arcane Savant. You may cast the copy without paying its mana cost.
+timing=main
+oracle=Before you shuffle your deck to start the game, you may reveal this card from your deck and exile an instant or sorcery card you drafted that isn't in your deck.\nWhen Arcane Savant enters the battlefield, copy a card you exiled with cards named Arcane Savant. You may cast the copy without paying its mana cost.

@@ -1,0 +1,12 @@
+name=Sanctum Prelate
+image=http://magiccards.info/scans/en/cn2/23.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}{W}
+pt=2/2
+ability=As SN enters the battlefield, choose a number.;\
+        Noncreature spells with converted mana cost equal to the chosen number can't be cast.
+timing=main
+oracle=As Sanctum Prelate enters the battlefield, choose a number.\nNoncreature spells with converted mana cost equal to the chosen number can't be cast.

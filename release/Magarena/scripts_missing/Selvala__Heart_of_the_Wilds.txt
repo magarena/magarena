@@ -1,0 +1,12 @@
+name=Selvala, Heart of the Wilds
+image=http://magiccards.info/scans/en/cn2/70.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elf,Scout
+cost={1}{G}{G}
+pt=2/3
+ability=Whenever another creature enters the battlefield, its controller may draw a card if its power is greater than each other creature's power.;\
+        {G}, {T}: Add X mana in any combination of colors to your mana pool, where X is the greatest power among creatures you control.
+timing=main
+oracle=Whenever another creature enters the battlefield, its controller may draw a card if its power is greater than each other creature's power.\n{G}, {T}: Add X mana in any combination of colors to your mana pool, where X is the greatest power among creatures you control.

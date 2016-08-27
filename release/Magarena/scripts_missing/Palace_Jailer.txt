@@ -1,0 +1,12 @@
+name=Palace Jailer
+image=http://magiccards.info/scans/en/cn2/18.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=2/2
+ability=When SN enters the battlefield, you become the monarch.;\
+        When SN enters the battlefield, exile target creature an opponent controls until an opponent becomes the monarch.
+timing=main
+oracle=When Palace Jailer enters the battlefield, you become the monarch.\nWhen Palace Jailer enters the battlefield, exile target creature an opponent controls until an opponent becomes the monarch.

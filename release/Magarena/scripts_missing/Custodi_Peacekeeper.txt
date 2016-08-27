@@ -1,0 +1,12 @@
+name=Custodi Peacekeeper
+image=http://magiccards.info/scans/en/cn2/14.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/3
+ability=Reveal SN as you draft it and note how many cards you've drafted this draft round, including SN.;\
+        {W}, {T}: Tap target creature with power less than or equal to the highest number you noted for cards named Custodi Peacekeeper.
+timing=main
+oracle=Reveal Custodi Peacekeeper as you draft it and note how many cards you've drafted this draft round, including Custodi Peacekeeper.\n{W}, {T}: Tap target creature with power less than or equal to the highest number you noted for cards named Custodi Peacekeeper.

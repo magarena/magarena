@@ -1,0 +1,13 @@
+name=Noble Banneret
+image=http://magiccards.info/scans/en/cn2/17.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={2}{W}{W}
+pt=3/3
+ability=Draft SN face up.;\
+        As you draft a creature card, you may reveal it, note its name, then turn SN face down.;\
+        As long as you control one or more creatures with a name you noted for cards named Noble Banneret, SN and those creatures get +1/+1 and have lifelink.
+timing=main
+oracle=Draft Noble Banneret face up.\nAs you draft a creature card, you may reveal it, note its name, then turn Noble Banneret face down.\nAs long as you control one or more creatures with a name you noted for cards named Noble Banneret, Noble Banneret and those creatures get +1/+1 and have lifelink.

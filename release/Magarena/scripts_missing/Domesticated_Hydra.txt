@@ -1,0 +1,12 @@
+name=Domesticated Hydra
+image=http://magiccards.info/scans/en/cn2/63.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Hydra
+cost={2}{G}{G}
+pt=3/3
+ability={X}{G}{G}{G}: Monstrosity X.;\
+        As long as SN is monstrous, it has trample.
+timing=main
+oracle={X}{G}{G}{G}: Monstrosity X.\nAs long as Domesticated Hydra is monstrous, it has trample.

@@ -1,0 +1,11 @@
+name=Recruiter of the Guard
+image=http://magiccards.info/scans/en/cn2/22.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/1
+ability=When SN enters the battlefield, you may search your library for a creature card with toughness 2 or less, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When Recruiter of the Guard enters the battlefield, you may search your library for a creature card with toughness 2 or less, reveal it, put it into your hand, then shuffle your library.

@@ -1,0 +1,11 @@
+name=Goblin Racketeer
+image=http://magiccards.info/scans/en/cn2/53.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={3}{R}
+pt=4/2
+ability=Whenever SN attacks, you may goad target creature defending player controls.
+timing=main
+oracle=Whenever Goblin Racketeer attacks, you may goad target creature defending player controls.

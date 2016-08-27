@@ -1,0 +1,12 @@
+name=Leovold's Operative
+image=http://magiccards.info/scans/en/cn2/66.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Rogue
+cost={2}{G}
+pt=3/2
+ability=Draft SN face up. ;\
+        As you draft a card, you may draft an additional card from that booster pack. If you do, turn SN face down, then pass the next booster pack without drafting a card from it.
+timing=main
+oracle=Draft Leovold's Operative face up. \nAs you draft a card, you may draft an additional card from that booster pack. If you do, turn Leovold's Operative face down, then pass the next booster pack without drafting a card from it.

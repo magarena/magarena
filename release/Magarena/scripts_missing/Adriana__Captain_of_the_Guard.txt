@@ -1,0 +1,12 @@
+name=Adriana, Captain of the Guard
+image=http://magiccards.info/scans/en/cn2/73.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+cost={3}{R}{W}
+pt=4/4
+ability=Melee;\
+        Other creatures you control have melee.
+timing=main
+oracle=Melee\nOther creatures you control have melee.

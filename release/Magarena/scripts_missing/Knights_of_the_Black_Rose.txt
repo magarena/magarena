@@ -1,0 +1,12 @@
+name=Knights of the Black Rose
+image=http://magiccards.info/scans/en/cn2/76.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={3}{W}{B}
+pt=4/4
+ability=When SN enters the battlefield, you become the monarch.;\
+        Whenever an opponent becomes the monarch, if you were the monarch as the turn began, that player loses 2 life and you gain 2 life.
+timing=main
+oracle=When Knights of the Black Rose enters the battlefield, you become the monarch.\nWhenever an opponent becomes the monarch, if you were the monarch as the turn began, that player loses 2 life and you gain 2 life.

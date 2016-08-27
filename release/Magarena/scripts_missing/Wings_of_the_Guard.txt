@@ -1,0 +1,12 @@
+name=Wings of the Guard
+image=http://magiccards.info/scans/en/cn2/26.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{W}
+pt=1/1
+ability=Flying;\
+        Melee
+timing=main
+oracle=Flying\nMelee
