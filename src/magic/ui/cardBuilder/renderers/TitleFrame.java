@@ -24,7 +24,7 @@ import magic.ui.cardBuilder.ResourceManager;
 
 public class TitleFrame {
 
-    private static final Font cardNameFont = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 20);
+    private static final Font cardNameFont = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 19);
     private static final Font cardNameTokenFont = ResourceManager.getFont("Beleren Small Caps.ttf").deriveFont(Font.PLAIN, 20);
 
     static void drawManaCost(BufferedImage cardImage, IRenderableCard cardDef) {
@@ -77,11 +77,11 @@ public class TitleFrame {
             }
             TextLayout metrics = new TextLayout(cardName.getIterator(), g2d.getFontRenderContext()); //to allow calculation of Ascent + length
             int xPos = 30;
-            int yPos = 32;
+            int yPos = 33;
             if (cardDef.isToken()) {
                 xPos = (int) (cardImage.getWidth() / 2 - metrics.getBounds().getWidth() / 2);
             } else if (cardDef.isPlaneswalker()) {
-                yPos = 24;
+                yPos = 25;
             }
             g2d.drawString(cardName.getIterator(), xPos, yPos + metrics.getAscent());
             g2d.dispose();
