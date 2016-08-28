@@ -73,19 +73,27 @@ Thank you for your support and have fun!
 
 Release 1.76 (August 28, 2016)
 ============
-till commit 99422af765312b63813308de8133f7aa43e277ad
+lodici
+melvin
+ShawnieBoy
+
+- add Conspiracy: Take the Crown to sets and formats
 
 - added the following to the card script:
-    add condition "you've cast another spell this turn"
+    * condition: you've cast another spell this turn
 
 - fixed the following bugs:
-    create new trigger type WhenTransforms, fixes #822
-    add AI enchant hint to Lunarch Mantle, fixes #820
-    store copy of getBlockedCreature before destroying the target, fixes #821
-    add AI enchant hint to Hope Against Hope, fixes #818
-    ability unless should always be at the Game layer, fixes #819
+    * Lambholt Pacifist can't attack when its power is greater than 4 (issue #819)
+    * Hope Against Hope missing AI enchant hint (issue #818)
+    * Lunarch Mantle missing AI enchant hint (issue #820)
+    * Ride Down doesn't give trample (issue #821)
+    * Ulrich of the Krallenhorde's pump trigger fires when he transforms into
+      Ulrich, Uncontested Alpha (issue #822)
 
 - added the following cards:
+Bazaar Krovod, Hewed Stone Retainers, Illusory Angel, Kytheon's Tactics,
+Lava Storm, Shaper Parasite, Skittering Crustacean, Skybind,
+Skyshroud Condor, Splitting Slime, Veteran Warleader
 
 Release 1.75 (July 31, 2016)
 ============
