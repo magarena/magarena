@@ -18,7 +18,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
-
 import magic.data.CardDefinitions;
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
@@ -337,46 +336,58 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         // cube
         if (!filterCheckboxes(cardDefinition, cubeCheckBoxes, cubeFilterChoices,
-            (card, i) -> {
-                final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
-                return fmt.isCardLegal(card);
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
+                    return fmt.isCardLegal(card);
+                }
             })) {
             return false;
         }
 
         // format
         if (!filterCheckboxes(cardDefinition, formatsCheckBoxes, formatsFilterChoices,
-            (card, i) -> {
-                final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
-                return fmt.isCardLegal(card);
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
+                    return fmt.isCardLegal(card);
+                }
             })) {
             return false;
         }
 
         // sets
         if (!filterCheckboxes(cardDefinition, setsCheckBoxes, setsFilterChoices,
-            (card, i) -> {
-                final MagicSets magicSet  = MagicSets.values()[i];
-                return  MagicSetDefinitions.isCardInSet(card, magicSet);
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final MagicSets magicSet  = MagicSets.values()[i];
+                    return  MagicSetDefinitions.isCardInSet(card, magicSet);
+                }
             })) {
             return false;
         }
 
         // type
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices,
-            (card, i) -> {
-                if (typeCheckBoxes[i].getText().equals(UiString.get(_S20))) {
-                    return card.isToken();
-                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S21))) {
-                    return card.isDoubleFaced();
-                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S22))) {
-                    return card.isFlipCard();
-                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S23))) {
-                    return card.isHidden();
-                } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S24))) {
-                    return card.isSplitCard();
-                } else {
-                    return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    if (typeCheckBoxes[i].getText().equals(UiString.get(_S20))) {
+                        return card.isToken();
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S21))) {
+                        return card.isDoubleFaced();
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S22))) {
+                        return card.isFlipCard();
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S23))) {
+                        return card.isHidden();
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S24))) {
+                        return card.isSplitCard();
+                    } else {
+                        return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
+                    }
                 }
             })) {
             return false;
@@ -384,44 +395,71 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         // color
         if (!filterCheckboxes(cardDefinition, colorCheckBoxes, colorFilterChoices,
-            (card, i) -> card.hasColor(MagicColor.values()[i]))) {
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    return card.hasColor(MagicColor.values()[i]);
+                }
+            })) {
             return false;
         }
 
         // cost
         if (!filterCheckboxes(cardDefinition, costCheckBoxes, costFilterChoices,
-            (card, i) -> card.hasConvertedCost(Integer.parseInt(COST_VALUES[i])))) {
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
+                }
+            })) {
             return false;
         }
 
         // subtype
         if (!filterCheckboxes(cardDefinition, subtypeCheckBoxes, subtypeFilterChoices,
-            (card, i) -> card.hasSubType(MagicSubType.values()[i]))) {
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    return card.hasSubType(MagicSubType.values()[i]);
+                }
+            })) {
             return false;
         }
 
         // rarity
         if (!filterCheckboxes(cardDefinition, rarityCheckBoxes, rarityFilterChoices,
-            (card, i) -> card.isRarity(MagicRarity.values()[i]))) {
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    return card.isRarity(MagicRarity.values()[i]);
+                }
+            })) {
             return false;
         }
 
         // status
-        return filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
-            (card, i) -> {
-                final String status = statusCheckBoxes[i].getText();
-                if (status.equals(UiString.get(_S17))) {
-                    return MagicLogs.isCardInDownloadsLog(card);
-                } else if (status.equals(UiString.get(_S18))) {
-                    return CardDefinitions.isCardPlayable(card);
-                } else if (status.equals(UiString.get(_S19))) {
-                    return CardDefinitions.isCardMissing(card);
-                } else if (status.equals(UiString.get(_S25))) {
-                    return CardDefinitions.isPotential(card);
+        if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
+            new CardChecker() {
+                @Override
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final String status = statusCheckBoxes[i].getText();
+                    if (status.equals(UiString.get(_S17))) {
+                        return MagicLogs.isCardInDownloadsLog(card);
+                    } else if (status.equals(UiString.get(_S18))) {
+                         return CardDefinitions.isCardPlayable(card);
+                    } else if (status.equals(UiString.get(_S19))) {
+                        return CardDefinitions.isCardMissing(card);
+                    } else if (status.equals(UiString.get(_S25))) {
+                        return CardDefinitions.isPotential(card);
+                    } else {
+                        return true;
+                    }
                 }
-                return false;
-            });
+            })) {
+            return false;
+        }
 
+        return true;
     }
 
     private boolean filterCheckboxes(final MagicCardDefinition cardDefinition, final JCheckBox[] checkboxes, final JRadioButton[] filterButtons, final CardChecker func) {
