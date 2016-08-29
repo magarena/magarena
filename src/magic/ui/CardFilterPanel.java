@@ -19,6 +19,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSetDefinitions;
@@ -79,7 +80,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-    private static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(100, 36);
+    private static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(108, 36);
     private static final Dimension FILTER_BUTTON_MINIMUM_SIZE = new Dimension(66, 36);
 
     private final String[] FILTER_CHOICES = {
@@ -99,6 +100,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private ButtonControlledPopup statusPopup;
     private JCheckBox[] statusCheckBoxes;
     private JRadioButton[] statusFilterChoices;
+    // unsupported statuses
+    private ButtonControlledPopup unsupportedPopup;
+    private JCheckBox[] unsupportedCheckBoxes;
+    private JRadioButton[] unsupportedFilterChoices;
     // sets
     private ButtonControlledPopup setsPopup;
     public JCheckBox[] setsCheckBoxes;
@@ -164,7 +169,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         addCardRarityFilter();
         addStatusFilter();
         addOracleFilter();
-        addDummyFilterButton();
+        if (!listener.isDeckEditor() && GeneralConfig.getInstance().showMissingCardData()) {
+            addUnsupportedFilter();
+        } else {
+            addDummyFilterButton();
+        }
         addResetButton();
 
     }
@@ -184,6 +193,15 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(statusPopup, filterValues, statusCheckBoxes, statusFilterChoices, false);
     }
+
+    private void addUnsupportedFilter() {
+        unsupportedPopup = addFilterPopupPanel(UiString.get("Unsupported"));
+        unsupportedCheckBoxes = new JCheckBox[MagicCardDefinition.getUnsupportedStatuses().size()];
+        unsupportedFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        final String[] filterValues = MagicCardDefinition.getUnsupportedStatuses().toArray(new String[0]);
+        populateCheckboxPopup(unsupportedPopup, filterValues, unsupportedCheckBoxes, unsupportedFilterChoices, false);
+    }
+
 
     private String[] getStatusFilterValues() {
         return listener.isDeckEditor() ? new String[]{UiString.get(_S17)} : new String[]{UiString.get(_S17), UiString.get(_S18), UiString.get(_S19), UiString.get(_S25)};
@@ -370,6 +388,17 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
+        // unsupported statuses
+        if (unsupportedPopup != null && !filterCheckboxes(cardDefinition, unsupportedCheckBoxes, unsupportedFilterChoices,
+            new CardChecker() {
+            @Override
+            public boolean checkCard(MagicCardDefinition card, int i) {
+                return card.hasStatus(unsupportedCheckBoxes[i].getText());
+            }
+        })) {
+            return false;
+        }
+
         // type
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices,
             new CardChecker() {
@@ -526,6 +555,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
         unselectFilterSet(statusCheckBoxes, statusFilterChoices);
+        if (unsupportedPopup != null) {
+            unselectFilterSet(unsupportedCheckBoxes, unsupportedFilterChoices);
+        }
 
         if (nameTextField != null) {
             nameTextField.setText("");
@@ -554,6 +586,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         rarityPopup.hidePopup();
         oraclePopup.hidePopup();
         statusPopup.hidePopup();
+        if (unsupportedPopup != null) {
+            unsupportedPopup.hidePopup();
+        }
     }
 
     @Override

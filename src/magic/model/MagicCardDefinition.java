@@ -2,7 +2,6 @@ package magic.model;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
@@ -20,6 +19,9 @@ import magic.ui.cardBuilder.IRenderableCard;
 import magic.utility.MagicFileSystem;
 
 public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
+
+    private static final List<String> unsupportedStatuses = new ArrayList<>();
+    private static boolean isSorted = false;
 
     public static final MagicCardDefinition UNKNOWN = new MagicCardDefinition() {
         //definition for unknown cards
@@ -173,18 +175,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void setSecondHalf() {
         secondHalf = true;
-    }
-
-    public void setStatus(final String value) {
-        status = value;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public boolean hasStatus() {
-        return status != null;
     }
 
     public boolean isSecondHalf() {
@@ -1052,4 +1042,35 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public boolean hasText() {
         return !(getText().contains("NONE") || getText().length() <= 1);
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public boolean hasStatus() {
+        return status != null;
+    }
+
+    public boolean hasStatus(String aStatus) {
+        return aStatus.equals(status);
+    }
+
+    public void setStatus(final String value) {
+        int statusInt = unsupportedStatuses.indexOf(value);
+        if (statusInt == -1) {
+            unsupportedStatuses.add(value);
+            status = value;
+        } else {
+            status = unsupportedStatuses.get(statusInt);
+        }
+    }
+
+    public static List<String> getUnsupportedStatuses() {
+        if (!isSorted) {
+            Collections.sort(unsupportedStatuses);
+            isSorted = true;
+        }
+        return unsupportedStatuses;
+    }
+
 }
