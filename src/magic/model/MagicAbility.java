@@ -497,6 +497,16 @@ public enum MagicAbility {
             //do nothing there is only one opponent
         }
     },
+    Melee("melee", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(
+                AttacksTrigger.create(
+                    MagicTargetFilterFactory.SN,
+                    MagicRuleEventAction.create("SN gets +1/+1 until end of turn.")
+                )
+            );
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
