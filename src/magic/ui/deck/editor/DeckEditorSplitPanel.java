@@ -21,7 +21,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
-import magic.ui.CardFilterPanel;
+import magic.ui.explorer.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;

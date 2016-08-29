@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.explorer.filter;
 
 import java.awt.Component;
 import java.awt.Point;
@@ -16,9 +16,11 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.ui.ScreenController;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
-public class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
+class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
 
     public static final int STARTING_WIDTH = 260;
     public static final int STARTING_HEIGHT = 300;
@@ -31,7 +33,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 
     private boolean popupJustToggled;
 
-    public ButtonControlledPopup(JButton toggleButton, final String hidePopupButtonText, final String showPopupButtonText) {
+    ButtonControlledPopup(JButton toggleButton, final String hidePopupButtonText, final String showPopupButtonText) {
         this.invokePopupButton = toggleButton;
         this.hidePopupButtonText = hidePopupButtonText;
         this.showPopupButtonText = showPopupButtonText;

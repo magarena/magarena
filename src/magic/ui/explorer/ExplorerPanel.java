@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
-import magic.ui.CardFilterPanel;
+import magic.ui.explorer.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.translate.UiString;

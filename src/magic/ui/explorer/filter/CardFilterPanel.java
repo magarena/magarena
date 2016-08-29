@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.explorer.filter;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -32,8 +32,11 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.translate.StringContext;
 import magic.translate.UiString;
+import magic.ui.CardFilterTextField;
+import magic.ui.ICardFilterPanelListener;
+import magic.ui.MagicImages;
+import magic.ui.MagicLogs;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicSystem;
