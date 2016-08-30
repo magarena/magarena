@@ -1,5 +1,5 @@
 name=Garbage Fire
-image=http://magiccards.info/scans/en/cn2/52.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_s1f5LFksWO.png
 value=2.500
 rarity=C
 type=Instant

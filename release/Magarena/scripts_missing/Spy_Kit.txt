@@ -1,5 +1,5 @@
 name=Spy Kit
-image=http://magiccards.info/scans/en/cn2/79.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_sPWytUhTma.png
 value=2.500
 rarity=U
 type=Artifact

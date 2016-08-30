@@ -1,5 +1,5 @@
 name=Archdemon of Paliano
-image=http://magiccards.info/scans/en/cn2/39.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_FV0Fd7eOhp.png
 value=2.500
 rarity=R
 type=Creature

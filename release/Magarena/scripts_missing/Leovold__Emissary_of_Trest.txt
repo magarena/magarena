@@ -1,5 +1,5 @@
 name=Leovold, Emissary of Trest
-image=http://magiccards.info/scans/en/cn2/77.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_GhygaqFObK.png
 value=2.500
 rarity=M
 type=Legendary,Creature

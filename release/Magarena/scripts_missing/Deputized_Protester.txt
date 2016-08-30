@@ -1,5 +1,5 @@
 name=Deputized Protester
-image=http://magiccards.info/scans/en/cn2/51.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_2MS6B2YZ3R.png
 value=2.500
 rarity=C
 type=Creature

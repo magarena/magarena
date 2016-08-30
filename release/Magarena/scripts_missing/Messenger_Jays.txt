@@ -1,5 +1,5 @@
 name=Messenger Jays
-image=http://magiccards.info/scans/en/cn2/35.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_afwiiECB07.png
 value=2.500
 rarity=C
 type=Creature

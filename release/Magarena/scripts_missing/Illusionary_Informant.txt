@@ -1,5 +1,5 @@
 name=Illusionary Informant
-image=http://magiccards.info/scans/en/cn2/32.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_IiLr8RQlQN.png
 value=2.500
 rarity=C
 type=Creature

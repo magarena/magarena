@@ -1,5 +1,5 @@
 name=Grenzo, Havoc Raiser
-image=http://magiccards.info/scans/en/cn2/54.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_JleDz9SOwB.png
 value=2.500
 rarity=R
 type=Legendary,Creature

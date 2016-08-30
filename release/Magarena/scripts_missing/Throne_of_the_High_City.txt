@@ -1,5 +1,5 @@
 name=Throne of the High City
-image=http://magiccards.info/scans/en/cn2/80.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_txXKWGph9t.png
 value=2.500
 rarity=R
 type=Land

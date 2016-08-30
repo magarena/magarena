@@ -1,5 +1,5 @@
 name=Caller of the Untamed
-image=http://magiccards.info/scans/en/cn2/62.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_05Miwi5c9s.png
 value=2.500
 rarity=R
 type=Creature

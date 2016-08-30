@@ -1,5 +1,5 @@
 name=Capital Punishment
-image=http://magiccards.info/scans/en/cn2/40.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_v405Csx7n4.png
 value=2.500
 rarity=R
 type=Sorcery

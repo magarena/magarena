@@ -1,5 +1,5 @@
 name=Custodi Soulcaller
-image=http://magiccards.info/scans/en/cn2/15.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_cBPTt1Or72.png
 value=2.500
 rarity=U
 type=Creature

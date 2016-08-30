@@ -1,5 +1,5 @@
 name=Skittering Crustacean
-image=http://magiccards.info/scans/en/cn2/36.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_xXH7ODMHRR.png
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Entourage of Trest
-image=http://magiccards.info/scans/en/cn2/64.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_gbyfRqi0Bz.png
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sinuous Vermin
-image=http://magiccards.info/scans/en/cn2/46.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_2oMPl0kU8T.png
 value=2.500
 rarity=C
 type=Creature

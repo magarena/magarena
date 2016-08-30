@@ -1,5 +1,5 @@
 name=Subterranean Tremors
-image=http://magiccards.info/scans/en/cn2/58.jpg
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_Jq6W3RcvcY.png
 value=2.500
 rarity=M
 type=Sorcery
