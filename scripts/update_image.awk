@@ -20,14 +20,7 @@ NF == 2 {
 }
 
 /^image=/ {
-    old_set = gensub("image=","","g", $0)
-    new_set = gensub("http://magiccards.info/scans/en/", "", "g", image)
-    new_set = gensub("/[^/]*.jpg", "", "g", new_set)
-    if (old_set == new_set) {
-        print "image=" image
-    } else {
-        print $0
-    }
+    print "image=" image
     next
 }
 

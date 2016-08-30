@@ -928,3 +928,11 @@ github-releases.json:
 correct-release-label:
 	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${mac} -H"Content-Type: application/json" -d'{"name": "Magarena-${tag}.app.zip", "label":"Magarena-${tag}.app.zip for Mac"}' -u ${username}
 	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${linux} -H"Content-Type: application/json" -d'{"name": "Magarena-${tag}.zip", "label":"Magarena-${tag}.zip for Linux/Windows"}' -u ${username}
+
+%_img.tsv:
+	paste <(cat conspiracy-take-crown | pup 'img attr{alt}') <(cat conspiracy-take-crown | pup 'img attr{src}') > $@
+	# edit tsv file to use only ASCII characters
+
+%_fix_image:
+	grep /$*/ -r release/Magarena/scripts_missing release/Magarena/scripts -l | parallel awk -f scripts/update_image.awk $*_img.tsv {} '>' {}.new
+	grep /$*/ -r release/Magarena/scripts_missing/*.txt release/Magarena/scripts/*.txt  -l | parallel mv {}.new {}
