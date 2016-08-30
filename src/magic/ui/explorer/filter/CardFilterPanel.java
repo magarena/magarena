@@ -242,7 +242,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         selectButton.setMinimumSize(FILTER_BUTTON_MINIMUM_SIZE);
         add(selectButton);
 
-        final ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, title, title);
+        final ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, title);
         pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
         selectButton.addActionListener(new PopupCloser(pop));
         return pop;

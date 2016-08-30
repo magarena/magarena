@@ -27,16 +27,15 @@ class ButtonControlledPopup extends TexturedPanel implements ActionListener, Win
 
     private final JDialog dialog;
     private final JButton invokePopupButton;
-    private final String hidePopupButtonText;
-    private final String showPopupButtonText;
     private final Timer timer;
 
     private boolean popupJustToggled;
 
-    ButtonControlledPopup(JButton toggleButton, final String hidePopupButtonText, final String showPopupButtonText) {
+    ButtonControlledPopup(JButton toggleButton, final String title) {
+
         this.invokePopupButton = toggleButton;
-        this.hidePopupButtonText = hidePopupButtonText;
-        this.showPopupButtonText = showPopupButtonText;
+        invokePopupButton.setText(title);
+
         this.dialog = new JDialog(ScreenController.getMainFrame());
         this.timer = new Timer();
 
@@ -77,14 +76,10 @@ class ButtonControlledPopup extends TexturedPanel implements ActionListener, Win
         SwingUtilities.convertPointToScreen(location, invokePopupButton.getParent());
         location.translate(0, invokePopupButton.getHeight());
         dialog.setLocation(location);
-
-        // showPopup the popup if not visible
-        invokePopupButton.setText(hidePopupButtonText);
         dialog.setVisible(true);
     }
 
     public void hidePopup() {
-        invokePopupButton.setText(showPopupButtonText);
         dialog.setVisible(false);
     }
 
