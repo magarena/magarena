@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Daretti
 cost={1}{B}{R}
+loyalty=3
 ability=+1: Put a 1/1 colorless Construct artifact creature token with defender onto the battlefield.;\
         −1: You may sacrifice an artifact. If you do, destroy target artifact or creature.;\
         −6: Choose target artifact card in a graveyard or artifact on the battlefield. Put three tokens that are copies of it onto the battlefield.
