@@ -9,3 +9,4 @@ pt=2/3
 ability={T}: Gain control of target creature for as long as that creature is enchanted.
 timing=main
 oracle={T}: Gain control of target creature for as long as that creature is enchanted.
+status=needs groovy

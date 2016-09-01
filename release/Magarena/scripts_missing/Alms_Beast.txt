@@ -9,3 +9,4 @@ pt=6/6
 ability=Creatures blocking or blocked by SN have lifelink.
 timing=main
 oracle=Creatures blocking or blocked by Alms Beast have lifelink.
+status=needs groovy

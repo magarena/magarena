@@ -7,3 +7,4 @@ cost={2}{W}
 ability={3}{W}: Target opponent reveals a card at random from his or her hand. You gain life equal to that card's converted mana cost.
 timing=enchantment
 oracle={3}{W}: Target opponent reveals a card at random from his or her hand. You gain life equal to that card's converted mana cost.
+status=needs groovy

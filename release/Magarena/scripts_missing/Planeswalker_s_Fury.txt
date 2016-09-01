@@ -7,3 +7,4 @@ cost={2}{R}
 ability={3}{R}: Target opponent reveals a card at random from his or her hand. SN deals damage equal to that card's converted mana cost to that player. Activate this ability only any time you could cast a sorcery.
 timing=enchantment
 oracle={3}{R}: Target opponent reveals a card at random from his or her hand. Planeswalker's Fury deals damage equal to that card's converted mana cost to that player. Activate this ability only any time you could cast a sorcery.
+status=needs groovy

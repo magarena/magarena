@@ -7,3 +7,4 @@ cost={1}{U}
 ability=Whenever you attack with two or more creatures, draw a card.
 timing=enchantment
 oracle=Whenever you attack with two or more creatures, draw a card.
+status=not supported: when-player-attacks

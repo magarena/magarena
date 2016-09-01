@@ -10,3 +10,4 @@ ability=Equipped creature gets +4/+0.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +4/+0.\nAt the beginning of your end step, if equipped creature didn't deal combat damage to a creature this turn, sacrifice it.\nEquip {2}
+status=not supported: no-info

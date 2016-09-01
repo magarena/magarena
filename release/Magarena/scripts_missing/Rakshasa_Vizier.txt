@@ -9,3 +9,4 @@ pt=4/4
 ability=Whenever one or more cards are put into exile from your graveyard, put that many +1/+1 counters on SN.
 timing=main
 oracle=Whenever one or more cards are put into exile from your graveyard, put that many +1/+1 counters on Rakshasa Vizier.
+status=not supported: when-one-or-more

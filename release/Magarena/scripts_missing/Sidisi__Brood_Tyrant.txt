@@ -10,3 +10,4 @@ ability=Whenever SN enters the battlefield or attacks, put the top three cards o
         Whenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.
 timing=main
 oracle=Whenever Sidisi, Brood Tyrant enters the battlefield or attacks, put the top three cards of your library into your graveyard.\nWhenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.
+status=not supported: when-one-or-more

@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{W}, {T}: Target creature becomes an enchantment and loses all abilities until a player casts a creature spell.
 timing=main
 oracle={1}{W}, {T}: Target creature becomes an enchantment and loses all abilities until a player casts a creature spell.
+status=needs groovy

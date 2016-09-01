@@ -11,3 +11,4 @@ ability=Bushido 1;\
         Each other creature named Brothers Yamazaki gets +2/+2 and has haste.
 timing=main
 oracle=Bushido 1\nIf there are exactly two permanents named Brothers Yamazaki on the battlefield, the "legend rule" doesn't apply to them.\nEach other creature named Brothers Yamazaki gets +2/+2 and has haste.
+status=not supported: no-legend-rule

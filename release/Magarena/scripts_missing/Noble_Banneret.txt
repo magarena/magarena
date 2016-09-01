@@ -11,3 +11,4 @@ ability=Draft SN face up.;\
         As long as you control one or more creatures with a name you noted for cards named Noble Banneret, SN and those creatures get +1/+1 and have lifelink.
 timing=main
 oracle=Draft Noble Banneret face up.\nAs you draft a creature card, you may reveal it, note its name, then turn Noble Banneret face down.\nAs long as you control one or more creatures with a name you noted for cards named Noble Banneret, Noble Banneret and those creatures get +1/+1 and have lifelink.
+status=not supported: draft

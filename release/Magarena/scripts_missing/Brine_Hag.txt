@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN dies, change the base power and toughness of all creatures that dealt damage to it this turn to 0/2.
 timing=main
 oracle=When Brine Hag dies, change the base power and toughness of all creatures that dealt damage to it this turn to 0/2.
+status=not supported: no-info

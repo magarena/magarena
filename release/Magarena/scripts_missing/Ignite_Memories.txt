@@ -7,3 +7,4 @@ cost={4}{R}
 effect=Target player reveals a card at random from his or her hand. SN deals damage to that player equal to that card's converted mana cost.~Storm
 timing=main
 oracle=Target player reveals a card at random from his or her hand. Ignite Memories deals damage to that player equal to that card's converted mana cost.\nStorm
+status=needs groovy

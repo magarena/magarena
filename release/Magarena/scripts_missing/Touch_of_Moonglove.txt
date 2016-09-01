@@ -8,3 +8,4 @@ cost={B}
 effect=Target creature you control gets +1/+0 and gains deathtouch until end of turn. Whenever a creature dealt damage by that creature dies this turn, its controller loses 2 life.
 timing=removal
 oracle=Target creature you control gets +1/+0 and gains deathtouch until end of turn. Whenever a creature dealt damage by that creature dies this turn, its controller loses 2 life.
+status=not supported: damage-by-SN-dies

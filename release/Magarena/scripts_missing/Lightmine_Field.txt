@@ -7,3 +7,4 @@ cost={2}{W}{W}
 ability=Whenever one or more creatures attack, SN deals damage to each of those creatures equal to the number of attacking creatures.
 timing=enchantment
 oracle=Whenever one or more creatures attack, Lightmine Field deals damage to each of those creatures equal to the number of attacking creatures.
+status=not supported: when-creatures-attack

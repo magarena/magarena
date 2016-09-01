@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{B}: Counter target black spell unless that spell's controller pays {B} or {3}.
 timing=main
 oracle={1}{B}: Counter target black spell unless that spell's controller pays {B} or {3}.
+status=not supported: pays-or

@@ -7,3 +7,4 @@ cost={1}{B}
 effect=You gain life equal to the damage dealt to you this turn. SN deals damage to target creature you control equal to the damage dealt to you this turn.
 timing=removal
 oracle=You gain life equal to the damage dealt to you this turn. Simulacrum deals damage to target creature you control equal to the damage dealt to you this turn.
+status=not supported: no-info

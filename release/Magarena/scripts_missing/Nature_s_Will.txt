@@ -7,3 +7,4 @@ cost={2}{G}{G}
 ability=Whenever one or more creatures you control deal combat damage to a player, tap all lands that player controls and untap all lands you control.
 timing=enchantment
 oracle=Whenever one or more creatures you control deal combat damage to a player, tap all lands that player controls and untap all lands you control.
+status=not supported: when-one-or-more

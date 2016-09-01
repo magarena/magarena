@@ -10,3 +10,4 @@ ability=Lifelink;\
         If you would gain life, you gain twice that much life instead.
 timing=main
 oracle=Lifelink\nIf you would gain life, you gain twice that much life instead.
+status=needs groovy

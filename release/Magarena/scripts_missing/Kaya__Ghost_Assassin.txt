@@ -11,3 +11,4 @@ ability=0: Exile SN or up to one target creature. Return that card to the battle
         −2: Each opponent discards a card and you draw a card.
 timing=main
 oracle=0: Exile Kaya, Ghost Assassin or up to one target creature. Return that card to the battlefield under its owner's control at the beginning of your next upkeep. You lose 2 life.\n−1: Each opponent loses 2 life and you gain 2 life.\n−2: Each opponent discards a card and you draw a card.
+status=needs groovy

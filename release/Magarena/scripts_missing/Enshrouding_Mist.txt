@@ -8,3 +8,4 @@ cost={W}
 effect=Target creature gets +1/+1 until end of turn. Prevent all damage that would be dealt to it this turn. If it's renowned, untap it.
 timing=removal
 oracle=Target creature gets +1/+1 until end of turn. Prevent all damage that would be dealt to it this turn. If it's renowned, untap it.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Defender;\
         {3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
 timing=smain
 oracle=Defender\n{3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
+status=needs groovy

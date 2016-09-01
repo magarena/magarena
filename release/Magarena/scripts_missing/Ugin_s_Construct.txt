@@ -9,3 +9,4 @@ pt=4/5
 ability=When SN enters the battlefield, sacrifice a permanent that's one or more colors.
 timing=main
 oracle=When Ugin's Construct enters the battlefield, sacrifice a permanent that's one or more colors.
+status=needs groovy

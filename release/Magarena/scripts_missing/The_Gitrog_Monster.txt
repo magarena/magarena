@@ -12,3 +12,4 @@ ability=Deathtouch;\
         Whenever one or more land cards are put into your graveyard from anywhere, draw a card.
 timing=main
 oracle=Deathtouch\nAt the beginning of your upkeep, sacrifice The Gitrog Monster unless you sacrifice a land.\nYou may play an additional land on each of your turns.\nWhenever one or more land cards are put into your graveyard from anywhere, draw a card.
+status=not supported: when-one-or-more

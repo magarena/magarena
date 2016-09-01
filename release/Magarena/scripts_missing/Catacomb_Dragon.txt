@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN becomes blocked by a nonartifact, non-Dragon creature, that creature gets -X/-0 until end of turn, where X is half the creature's power, rounded down.
 timing=main
 oracle=Flying\nWhenever Catacomb Dragon becomes blocked by a nonartifact, non-Dragon creature, that creature gets -X/-0 until end of turn, where X is half the creature's power, rounded down.
+status=needs groovy

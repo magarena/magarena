@@ -7,3 +7,4 @@ cost={U}
 effect=Return target creature and all white Auras you own attached to it to their owners' hands.
 timing=removal
 oracle=Return target creature and all white Auras you own attached to it to their owners' hands.
+status=needs groovy

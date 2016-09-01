@@ -10,3 +10,4 @@ ability=As SN enters the battlefield, choose a number.;\
         Noncreature spells with converted mana cost equal to the chosen number can't be cast.
 timing=main
 oracle=As Sanctum Prelate enters the battlefield, choose a number.\nNoncreature spells with converted mana cost equal to the chosen number can't be cast.
+status=not supported: choose-number

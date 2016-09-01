@@ -11,3 +11,4 @@ ability=Draft SN face up.;\
         If you removed a creature card with flying from the draft with cards named Animus of Predation, SN has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, menace, reach, and vigilance.
 timing=main
 oracle=Draft Animus of Predation face up.\nAs you draft a card, you may remove it from the draft face up.\nIf you removed a creature card with flying from the draft with cards named Animus of Predation, Animus of Predation has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, menace, reach, and vigilance.
+status=not supported: draft

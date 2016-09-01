@@ -8,3 +8,4 @@ ability=Flashback {5}{G}{G}
 effect=Choose a permanent type. Return all cards of the chosen type from your graveyard to your hand.
 timing=main
 oracle=Choose a permanent type. Return all cards of the chosen type from your graveyard to your hand.\nFlashback {5}{G}{G}
+status=not supported: choose-permanent-type

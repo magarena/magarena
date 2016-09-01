@@ -11,3 +11,4 @@ ability=Draft SN face up.;\
         When SN enters the battlefield, you may search your library for a card with a name you noted for cards named Smuggler Captain, reveal it, put it into your hand, then shuffle your library.
 timing=main
 oracle=Draft Smuggler Captain face up.\nAs you draft a card, you may reveal it, note its name, then turn Smuggler Captain face down.\nWhen Smuggler Captain enters the battlefield, you may search your library for a card with a name you noted for cards named Smuggler Captain, reveal it, put it into your hand, then shuffle your library.
+status=not supported: draft

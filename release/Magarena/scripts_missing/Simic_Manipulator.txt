@@ -10,3 +10,4 @@ ability=Evolve;\
         {T}, Remove one or more +1/+1 counters from SN: Gain control of target creature with power less than or equal to the number of +1/+1 counters removed this way.
 timing=main
 oracle=Evolve\n{T}, Remove one or more +1/+1 counters from Simic Manipulator: Gain control of target creature with power less than or equal to the number of +1/+1 counters removed this way.
+status=not supported: remove-one-or-more

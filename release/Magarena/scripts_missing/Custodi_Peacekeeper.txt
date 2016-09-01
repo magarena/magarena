@@ -10,3 +10,4 @@ ability=Reveal SN as you draft it and note how many cards you've drafted this dr
         {W}, {T}: Tap target creature with power less than or equal to the highest number you noted for cards named Custodi Peacekeeper.
 timing=main
 oracle=Reveal Custodi Peacekeeper as you draft it and note how many cards you've drafted this draft round, including Custodi Peacekeeper.\n{W}, {T}: Tap target creature with power less than or equal to the highest number you noted for cards named Custodi Peacekeeper.
+status=not supported: draft

@@ -11,3 +11,4 @@ ability=Draft SN face up.;\
         Other creatures you control of a type you noted for cards named Paliano Vanguard get +1/+1.
 timing=main
 oracle=Draft Paliano Vanguard face up.\nAs you draft a creature card, you may reveal it, note its creature types, then turn Paliano Vanguard face down.\nOther creatures you control of a type you noted for cards named Paliano Vanguard get +1/+1.
+status=not supported: draft

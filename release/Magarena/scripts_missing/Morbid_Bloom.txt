@@ -7,3 +7,4 @@ cost={4}{B}{G}
 effect=Exile target creature card from a graveyard, then put X 1/1 green Saproling creature tokens onto the battlefield, where X is the exiled card's toughness.
 timing=main
 oracle=Exile target creature card from a graveyard, then put X 1/1 green Saproling creature tokens onto the battlefield, where X is the exiled card's toughness.
+status=needs groovy

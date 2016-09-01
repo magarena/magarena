@@ -7,3 +7,4 @@ cost={5}{U}
 ability=Whenever a player casts an instant or sorcery spell, each other player copies that spell. Each of those players may choose new targets for his or her copy.
 timing=enchantment
 oracle=Whenever a player casts an instant or sorcery spell, each other player copies that spell. Each of those players may choose new targets for his or her copy.
+status=needs groovy

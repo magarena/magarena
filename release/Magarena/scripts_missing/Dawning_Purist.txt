@@ -10,3 +10,4 @@ ability=Whenever SN deals combat damage to a player, you may destroy target ench
         Morph {1}{W}
 timing=main
 oracle=Whenever Dawning Purist deals combat damage to a player, you may destroy target enchantment that player controls.\nMorph {1}{W}
+status=needs groovy

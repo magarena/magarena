@@ -12,3 +12,4 @@ transform=Startled Awake
 timing=main
 hidden
 oracle=Skulk\nWhen Persistent Nightmare deals combat damage to a player, return it to its owner's hand.
+status=needs other half

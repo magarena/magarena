@@ -9,3 +9,4 @@ pt=6/6
 ability=Whenever SN deals combat damage to one or more blocking creatures, manifest the top card of your library.
 timing=main
 oracle=Whenever Arashin War Beast deals combat damage to one or more blocking creatures, manifest the top card of your library.
+status=not supported: when-one-or-more

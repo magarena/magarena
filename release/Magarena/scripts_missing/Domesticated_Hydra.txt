@@ -10,3 +10,4 @@ ability={X}{G}{G}{G}: Monstrosity X.;\
         As long as SN is monstrous, it has trample.
 timing=main
 oracle={X}{G}{G}{G}: Monstrosity X.\nAs long as Domesticated Hydra is monstrous, it has trample.
+status=needs groovy

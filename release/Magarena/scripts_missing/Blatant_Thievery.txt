@@ -8,3 +8,4 @@ cost={4}{U}{U}{U}
 effect=For each opponent, gain control of target permanent that player controls.
 timing=main
 oracle=For each opponent, gain control of target permanent that player controls.
+status=needs groovy

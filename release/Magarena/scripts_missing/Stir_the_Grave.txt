@@ -7,3 +7,4 @@ cost={X}{B}
 effect=Return target creature card with converted mana cost X or less from your graveyard to the battlefield.
 timing=main
 oracle=Return target creature card with converted mana cost X or less from your graveyard to the battlefield.
+status=needs groovy

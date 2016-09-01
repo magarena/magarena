@@ -9,3 +9,4 @@ pt=1/1
 ability={5}: At the beginning of your next upkeep, choose a basic land type. SN gains landwalk of the chosen type until the end of that turn.
 timing=main
 oracle={5}: At the beginning of your next upkeep, choose a basic land type. Giant Slug gains landwalk of the chosen type until the end of that turn.
+status=needs groovy

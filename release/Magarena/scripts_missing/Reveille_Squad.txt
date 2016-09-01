@@ -9,3 +9,4 @@ pt=3/3
 ability=Whenever one or more creatures attack you, if SN is untapped, you may untap all creatures you control.
 timing=main
 oracle=Whenever one or more creatures attack you, if Reveille Squad is untapped, you may untap all creatures you control.
+status=not supported: when-creatures-attack

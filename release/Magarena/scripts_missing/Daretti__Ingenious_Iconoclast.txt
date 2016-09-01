@@ -11,3 +11,4 @@ ability=+1: Put a 1/1 colorless Construct artifact creature token with defender 
         −6: Choose target artifact card in a graveyard or artifact on the battlefield. Put three tokens that are copies of it onto the battlefield.
 timing=main
 oracle=+1: Put a 1/1 colorless Construct artifact creature token with defender onto the battlefield.\n−1: You may sacrifice an artifact. If you do, destroy target artifact or creature.\n−6: Choose target artifact card in a graveyard or artifact on the battlefield. Put three tokens that are copies of it onto the battlefield.
+status=needs groovy

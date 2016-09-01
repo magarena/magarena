@@ -7,3 +7,4 @@ cost={2}
 ability={2}, {T}: Draw a card if you have seven or more cards in hand.
 timing=artifact
 oracle={2}, {T}: Draw a card if you have seven or more cards in hand.
+status=needs groovy

@@ -8,3 +8,4 @@ ability=If one or more tokens would be put onto the battlefield, twice that many
         If one or more +1/+1 counters would be placed on a creature, twice that many +1/+1 counters are placed on that creature instead.
 timing=enchantment
 oracle=If one or more tokens would be put onto the battlefield, twice that many of those tokens are put onto the battlefield instead.\nIf one or more +1/+1 counters would be placed on a creature, twice that many +1/+1 counters are placed on that creature instead.
+status=not supported: when-counter-placed

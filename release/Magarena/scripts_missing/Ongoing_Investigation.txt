@@ -8,3 +8,4 @@ ability=Whenever one or more creatures you control deal combat damage to a playe
         {1}{G}, Exile a creature card from your graveyard: Investigate. You gain 2 life.
 timing=enchantment
 oracle=Whenever one or more creatures you control deal combat damage to a player, investigate.\n{1}{G}, Exile a creature card from your graveyard: Investigate. You gain 2 life.
+status=not supported: when-one-or-more

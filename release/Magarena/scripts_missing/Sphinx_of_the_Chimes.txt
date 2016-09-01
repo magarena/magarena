@@ -10,3 +10,4 @@ ability=Flying;\
         Discard two nonland cards with the same name: Draw four cards.
 timing=main
 oracle=Flying\nDiscard two nonland cards with the same name: Draw four cards.
+status=not supported: discard-same-name

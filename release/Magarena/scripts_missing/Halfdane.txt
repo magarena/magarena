@@ -9,3 +9,4 @@ pt=3/3
 ability=At the beginning of your upkeep, change SN's base power and toughness to the power and toughness of target creature other than SN until the end of your next upkeep.
 timing=main
 oracle=At the beginning of your upkeep, change Halfdane's base power and toughness to the power and toughness of target creature other than Halfdane until the end of your next upkeep.
+status=needs groovy

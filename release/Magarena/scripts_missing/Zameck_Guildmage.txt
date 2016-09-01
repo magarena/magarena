@@ -10,3 +10,4 @@ ability={G}{U}: This turn, each creature you control enters the battlefield with
         {G}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.
 timing=main
 oracle={G}{U}: This turn, each creature you control enters the battlefield with an additional +1/+1 counter on it.\n{G}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.
+status=not supported: remove-a-counter

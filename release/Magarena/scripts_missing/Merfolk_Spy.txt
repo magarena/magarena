@@ -10,3 +10,4 @@ ability=Islandwalk;\
         Whenever SN deals combat damage to a player, that player reveals a card at random from his or her hand.
 timing=main
 oracle=Islandwalk\nWhenever Merfolk Spy deals combat damage to a player, that player reveals a card at random from his or her hand.
+status=needs groovy

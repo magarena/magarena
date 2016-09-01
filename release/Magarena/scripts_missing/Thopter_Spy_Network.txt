@@ -9,3 +9,4 @@ ability=At the beginning of your upkeep, if you control an artifact, put a 1/1 c
         Whenever one or more artifact creatures you control deal combat damage to a player, draw a card.
 timing=enchantment
 oracle=At the beginning of your upkeep, if you control an artifact, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.\nWhenever one or more artifact creatures you control deal combat damage to a player, draw a card.
+status=not supported: when-one-or-more
