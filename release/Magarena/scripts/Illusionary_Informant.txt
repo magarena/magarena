@@ -6,8 +6,6 @@ type=Creature
 subtype=Bird,Illusion
 cost={1}{U}
 pt=1/3
-ability=Draft SN face up.;\
-        During the draft, you may turn SN face down. If you do, look at the next card drafted by a player of your choice.;\
-        Flying
+ability=Flying
 timing=main
 oracle=Draft Illusionary Informant face up.\nDuring the draft, you may turn Illusionary Informant face down. If you do, look at the next card drafted by a player of your choice.\nFlying
