@@ -671,6 +671,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl TAPPED_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isTapped();
+        }
+    };
+
     public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOwner(player);
@@ -919,7 +925,7 @@ public class MagicTargetFilterFactory {
                 !target.hasType(MagicType.Enchantment);
         }
     };
-    
+
     public static final MagicPermanentFilterImpl NONENCHANTMENT_PERMANENT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.hasType(MagicType.Enchantment);
@@ -2604,6 +2610,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> permanent
         add("permanent", PERMANENT);
         add("untapped permanent", UNTAPPED_PERMANENT);
+        add("tapped permanent", TAPPED_PERMANENT);
         add("permanent you own", PERMANENT_YOU_OWN);
         add("permanent you both own and control", PERMANENT_YOU_OWN_AND_CONTROL);
         add("noncreature permanent", NONCREATURE);

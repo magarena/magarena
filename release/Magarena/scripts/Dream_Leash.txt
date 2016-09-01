@@ -6,8 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={3}{U}{U}
 ability=Enchant permanent;\
-        You can't choose an untapped permanent as SN's target as you cast SN.;\
         You control enchanted permanent.
 timing=aura
-enchant=default,permanent
+enchant=gain control,neg tapped permanent
 oracle=Enchant permanent\nYou can't choose an untapped permanent as Dream Leash's target as you cast Dream Leash.\nYou control enchanted permanent.
