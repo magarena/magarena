@@ -65,12 +65,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final FilterButtonPanel rarityFilter;
     private final FilterButtonPanel statusFilter;
     private final FilterButtonPanel textFilter;
+    private final FilterButtonPanel unsupportedFilter;
 
-    // unsupported statuses
-    private ButtonControlledPopup unsupportedPopup;
-    private JCheckBox[] unsupportedCheckBoxes;
-    private JRadioButton[] unsupportedFilterChoices;
-    // ...
     private JButton resetButton;
 
     private int totalFilteredCards = 0;
@@ -102,6 +98,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         rarityFilter = new RarityFBP(this);
         statusFilter = new StatusFBP(this, aListener.isDeckEditor());
         textFilter = new TextSearchFBP(aListener);
+        unsupportedFilter = showUnsupportedFilter() ? new UnsupportedFBP(this) : new EmptyFBP();
 
         // layout filter buttons.
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -118,30 +115,13 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         add(rarityFilter);
         add(statusFilter);
         add(textFilter);
+        add(unsupportedFilter);
 
-        if (!listener.isDeckEditor() && GeneralConfig.getInstance().showMissingCardData()) {
-            addUnsupportedFilter();
-        } else {
-            addDummyFilterButton();
-        }
         addResetButton();
-
     }
 
-    private void addDummyFilterButton() {
-        final JButton btn = new JButton();
-        btn.setVisible(false);
-        btn.setPreferredSize(FILTER_BUTTON_PREFERRED_SIZE);
-        btn.setMinimumSize(FILTER_BUTTON_MINIMUM_SIZE);
-        add(btn);
-    }
-
-    private void addUnsupportedFilter() {
-        unsupportedPopup = addFilterPopupPanel(UiString.get("Unsupported"));
-        unsupportedCheckBoxes = new JCheckBox[MagicCardDefinition.getUnsupportedStatuses().size()];
-        unsupportedFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        final String[] filterValues = MagicCardDefinition.getUnsupportedStatuses().toArray(new String[0]);
-        populateCheckboxPopup(unsupportedPopup, filterValues, unsupportedCheckBoxes, unsupportedFilterChoices, false);
+    private boolean showUnsupportedFilter() {
+        return !listener.isDeckEditor() && GeneralConfig.getInstance().showMissingCardData();
     }
 
 
@@ -299,14 +279,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
-        // unsupported statuses
-        if (unsupportedPopup != null && !filterCheckboxes(cardDefinition, unsupportedCheckBoxes, unsupportedFilterChoices,
-            new CardChecker() {
-            @Override
-            public boolean checkCard(MagicCardDefinition card, int i) {
-                return card.hasStatus(unsupportedCheckBoxes[i].getText());
-            }
-        })) {
+        if (unsupportedFilter.doesNotInclude(cardDefinition)) {
             return false;
         }
 
@@ -378,10 +351,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         rarityFilter.reset();
         statusFilter.reset();
         textFilter.reset();
-
-        if (unsupportedPopup != null) {
-            unselectFilterSet(unsupportedCheckBoxes, unsupportedFilterChoices);
-        }
+        unsupportedFilter.reset();
 
         disableUpdate = false;
     }
@@ -396,9 +366,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     public void closePopups() {
-        if (unsupportedPopup != null) {
-            unsupportedPopup.hidePopup();
-        }
     }
 
     @Override

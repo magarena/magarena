@@ -61,6 +61,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
 
         this.filterButton = new FilterButton(title, this);
         this.filterButton.setToolTipText(tooltip);
+        this.filterButton.setVisible(!title.isEmpty());
 
         this.dialog = new PopupDialog();
         this.dialog.addWindowFocusListener(new WindowAdapter() {
@@ -78,7 +79,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         });
         setEscapeKeyAction();
 
-        setLayout(new MigLayout("insets 0, fill", "fill", "fill"));
+        setLayout(new MigLayout("insets 0, fill, hidemode 3", "fill", "fill"));
         add(filterButton);
 
         setOpaque(false);
