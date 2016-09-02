@@ -4,21 +4,20 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 import javax.swing.JRadioButton;
 import magic.data.MagicFormat;
-import magic.data.MagicPredefinedFormat;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 
 @SuppressWarnings("serial")
-class FormatFBP extends FilterButtonPanel {
+class CubeFBP extends FilterButtonPanel {
 
     // translatable strings
-    private static final String _S7 = "Format";
+    private static final String _S6 = "Cube";
 
-    FormatFBP(ActionListener aListener) {
-        super(UiString.get(_S7));
+    CubeFBP(ActionListener aListener) {
+        super(UiString.get(_S6));
         setPopupContent(
-            MagicPredefinedFormat.getFilterValues(),
-            new JCheckBox[MagicPredefinedFormat.values().size()],
+            MagicFormat.getCubeFilterLabels(),
+            new JCheckBox[MagicFormat.getCubeFilterFormats().size()],
             new JRadioButton[FILTER_CHOICES.length],
             false,
             aListener
@@ -27,7 +26,7 @@ class FormatFBP extends FilterButtonPanel {
 
     @Override
     protected boolean isCardValid(final MagicCardDefinition card, final int i) {
-        final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
+        final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
         return fmt.isCardLegal(card);
     }
 
