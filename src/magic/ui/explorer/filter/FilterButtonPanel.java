@@ -39,7 +39,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     private static final String _S2 = "Match all selected";
     private static final String _S3 = "Exclude selected";
 
-    private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+    static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
 
     protected final String[] FILTER_CHOICES = {
@@ -49,7 +49,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     };
 
     private final JButton filterButton;
-    private final JDialog dialog;
+    protected final JDialog dialog;
     private boolean popupJustToggled = false;
 
     protected JCheckBox[] checkOptions;
