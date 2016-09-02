@@ -21,7 +21,6 @@ import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.MagicFormat;
-import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSetDefinitions;
 import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
@@ -53,7 +52,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     @StringContext(eg = "Set filter in Cards Explorer")
     private static final String _S5 = "Set";
     private static final String _S6 = "Cube";
-    private static final String _S7 = "Format";
     @StringContext(eg = "Type filter in cards explorer")
     private static final String _S8 = "Type";
     private static final String _S9 = "Search";
@@ -95,10 +93,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final MigLayout layout = new MigLayout();
     private final ICardFilterPanelListener listener;
 
-    // formats
-    private ButtonControlledPopup formatsPopup;
-    private JCheckBox[] formatsCheckBoxes;
-    private JRadioButton[] formatsFilterChoices;
+    private final FilterButtonPanel formatsFilter;
+
     // status
     private ButtonControlledPopup statusPopup;
     private JCheckBox[] statusCheckBoxes;
@@ -160,10 +156,16 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         disableUpdate = false;
 
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
+        layout.setColumnConstraints("fill");
+        layout.setRowConstraints("fill");
         setLayout(layout);
 
+        // filter buttons
         addCubeFilter();
-        addFormatsFilter();
+
+        formatsFilter = new FormatFBP(this);
+        add(formatsFilter);
+
         addSetsFilter();
         addCardTypeFilter();
         addCardSubtypeFilter();
@@ -224,14 +226,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         cubeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         final String[] filterValues = MagicFormat.getCubeFilterLabels();
         populateCheckboxPopup(cubePopup, filterValues, cubeCheckBoxes, cubeFilterChoices, false);
-    }
-
-    private void addFormatsFilter() {
-        formatsPopup = addFilterPopupPanel(UiString.get(_S7));
-        formatsCheckBoxes = new JCheckBox[MagicPredefinedFormat.values().size()];
-        formatsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        final String[] filterValues = MagicPredefinedFormat.getFilterValues();
-        populateCheckboxPopup(formatsPopup, filterValues, formatsCheckBoxes, formatsFilterChoices, false);
     }
 
     private ButtonControlledPopup addFilterPopupPanel(final String title, final String tooltip) {
@@ -367,15 +361,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
-        // format
-        if (!filterCheckboxes(cardDefinition, formatsCheckBoxes, formatsFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
-                    return fmt.isCardLegal(card);
-                }
-            })) {
+        if (formatsFilter.doesNotInclude(cardDefinition)) {
             return false;
         }
 
@@ -550,7 +536,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         closePopups();
 
         unselectFilterSet(cubeCheckBoxes, cubeFilterChoices);
-        unselectFilterSet(formatsCheckBoxes, formatsFilterChoices);
+        formatsFilter.reset();
         unselectFilterSet(setsCheckBoxes, setsFilterChoices);
         unselectFilterSet(typeCheckBoxes, typeFilterChoices);
         unselectFilterSet(colorCheckBoxes, colorFilterChoices);
@@ -580,7 +566,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     public void closePopups() {
         cubePopup.hidePopup();
-        formatsPopup.hidePopup();
         setsPopup.hidePopup();
         typePopup.hidePopup();
         colorPopup.hidePopup();
