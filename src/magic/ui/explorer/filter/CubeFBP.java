@@ -2,7 +2,6 @@ package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
-import javax.swing.JRadioButton;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
@@ -11,14 +10,13 @@ import magic.translate.UiString;
 class CubeFBP extends FilterButtonPanel {
 
     // translatable strings
-    private static final String _S6 = "Cube";
+     private static final String _S6 = "Cube";
 
     CubeFBP(ActionListener aListener) {
         super(UiString.get(_S6));
         setPopupContent(
             MagicFormat.getCubeFilterLabels(),
             new JCheckBox[MagicFormat.getCubeFilterFormats().size()],
-            new JRadioButton[FILTER_CHOICES.length],
             false,
             aListener
         );

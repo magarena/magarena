@@ -213,12 +213,12 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         final String migLayout,
         final Object[] checkboxValues,
         final JCheckBox[] newCheckboxes,
-        final JRadioButton[] newFilterButtons,
+
         final boolean hideAND,
         final ActionListener aListener) {
 
         this.checkOptions = newCheckboxes;
-        this.radioOptions = newFilterButtons;
+        this.radioOptions = new JRadioButton[FILTER_CHOICES.length];
 
         final JPanel dialogPanel = new DialogContentPanel();
 
@@ -247,32 +247,31 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
 
         final ButtonGroup bg = new ButtonGroup();
         for (int i = 0; i < FILTER_CHOICES.length; i++) {
-            newFilterButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
-            newFilterButtons[i].addActionListener(aListener);
-            newFilterButtons[i].setOpaque(false);
-            newFilterButtons[i].setForeground(TEXT_COLOR);
-            newFilterButtons[i].setFocusPainted(true);
-            newFilterButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+            radioOptions[i] = new JRadioButton(FILTER_CHOICES[i]);
+            radioOptions[i].addActionListener(aListener);
+            radioOptions[i].setOpaque(false);
+            radioOptions[i].setForeground(TEXT_COLOR);
+            radioOptions[i].setFocusPainted(true);
+            radioOptions[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             if (i == 0) {
-                newFilterButtons[0].setSelected(true);
+                radioOptions[0].setSelected(true);
             } else if (i == 1) {
-                newFilterButtons[1].setVisible(!hideAND);
+                radioOptions[1].setVisible(!hideAND);
             }
-            bg.add(newFilterButtons[i]);
-            dialogPanel.add(newFilterButtons[i]);
+            bg.add(radioOptions[i]);
+            dialogPanel.add(radioOptions[i]);
         }
 
-        this.dialog.add(dialogPanel);
+        dialog.add(dialogPanel);
     }
 
     protected void setPopupContent(
         Object[] filterValues,
         JCheckBox[] jCheckBox,
-        JRadioButton[] jRadioButton,
         boolean b,
         ActionListener aListener)
     {
-        setPopupContent("flowy, insets 2", filterValues, jCheckBox, jRadioButton, b, aListener);
+        setPopupContent("flowy, insets 2", filterValues, jCheckBox, b, aListener);
     }
 
 }

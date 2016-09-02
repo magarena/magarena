@@ -2,7 +2,6 @@ package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
-import javax.swing.JRadioButton;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRarity;
 import magic.translate.UiString;
@@ -18,7 +17,6 @@ class RarityFBP extends FilterButtonPanel {
         setPopupContent(
             MagicRarity.getDisplayNames(),
             new JCheckBox[MagicRarity.values().length],
-            new JRadioButton[FILTER_CHOICES.length],
             true,
             aListener
         );

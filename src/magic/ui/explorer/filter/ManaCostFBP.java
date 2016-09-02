@@ -2,7 +2,6 @@ package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
-import javax.swing.JRadioButton;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.translate.UiString;
@@ -26,7 +25,6 @@ class ManaCostFBP extends FilterButtonPanel {
             "flowx, wrap 5, insets 2, gap 8",
             COST_VALUES,
             new JCheckBox[COST_VALUES.length],
-            new JRadioButton[FILTER_CHOICES.length],
             true,
             aListener
         );

@@ -4,7 +4,6 @@ import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.swing.JCheckBox;
-import javax.swing.JRadioButton;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicType;
 import magic.translate.StringContext;
@@ -30,7 +29,6 @@ class TypeFBP extends FilterButtonPanel {
             "flowy, wrap 9, insets 2, gapy 6, gapx 20",
             types,
             new JCheckBox[types.length],
-            new JRadioButton[FILTER_CHOICES.length],
             false,
             aListener
         );

@@ -2,7 +2,6 @@ package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
-import javax.swing.JRadioButton;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSubType;
 import magic.translate.UiString;
@@ -18,7 +17,6 @@ class SubtypeFBP extends FilterButtonPanel {
         setPopupContent(
             MagicSubType.values(),
             new JCheckBox[MagicSubType.values().length],
-            new JRadioButton[FILTER_CHOICES.length],
             false,
             aListener
         );
