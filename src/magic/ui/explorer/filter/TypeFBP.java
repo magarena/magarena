@@ -3,7 +3,6 @@ package magic.ui.explorer.filter;
 import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicType;
 import magic.translate.StringContext;
@@ -24,11 +23,9 @@ class TypeFBP extends FilterButtonPanel {
 
     TypeFBP(ActionListener aListener, boolean isDeckEditor) {
         super(UiString.get(_S8));
-        Object[] types = getTypeFilterValues(isDeckEditor);
         setPopupContent(
             "flowy, wrap 9, insets 2, gapy 6, gapx 20",
-            types,
-            new JCheckBox[types.length],
+            getTypeFilterValues(isDeckEditor),
             false,
             aListener
         );

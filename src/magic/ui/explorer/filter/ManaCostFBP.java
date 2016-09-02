@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.translate.UiString;
@@ -24,7 +23,6 @@ class ManaCostFBP extends FilterButtonPanel {
         setPopupContent(
             "flowx, wrap 5, insets 2, gap 8",
             COST_VALUES,
-            new JCheckBox[COST_VALUES.length],
             true,
             aListener
         );

@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSubType;
 import magic.translate.UiString;
@@ -14,12 +13,7 @@ class SubtypeFBP extends FilterButtonPanel {
 
     SubtypeFBP(ActionListener aListener) {
         super(UiString.get(_S13));
-        setPopupContent(
-            MagicSubType.values(),
-            new JCheckBox[MagicSubType.values().length],
-            false,
-            aListener
-        );
+        setPopupContent(MagicSubType.values(), true, aListener);
     }
 
     @Override

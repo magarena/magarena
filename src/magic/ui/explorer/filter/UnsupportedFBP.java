@@ -1,25 +1,22 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
 class UnsupportedFBP extends FilterButtonPanel {
 
+    private final String[] statuses;
+
     UnsupportedFBP(ActionListener aListener) {
         super("Unsupported");
-        setPopupContent(
-            MagicCardDefinition.getUnsupportedStatuses().toArray(new String[0]),
-            new JCheckBox[MagicCardDefinition.getUnsupportedStatuses().size()],
-            false,
-            aListener
-        );
+        statuses = MagicCardDefinition.getUnsupportedStatuses();
+        setPopupContent(statuses, false, aListener);
     }
 
     @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
-        return card.hasStatus(getCheckboxes()[i].getText());
+        return card.hasStatus(statuses[i]);
     }
 
 }

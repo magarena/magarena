@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.model.MagicCardDefinition;
@@ -15,12 +14,7 @@ class FormatFBP extends FilterButtonPanel {
 
     FormatFBP(ActionListener aListener) {
         super(UiString.get(_S7));
-        setPopupContent(
-            MagicPredefinedFormat.getFilterValues(),
-            new JCheckBox[MagicPredefinedFormat.values().size()],
-            false,
-            aListener
-        );
+        setPopupContent(MagicPredefinedFormat.getFilterValues(), false, aListener);
     }
 
     @Override

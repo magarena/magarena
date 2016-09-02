@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRarity;
 import magic.translate.UiString;
@@ -14,12 +13,7 @@ class RarityFBP extends FilterButtonPanel {
 
     RarityFBP(ActionListener aListener) {
         super(UiString.get(_S14));
-        setPopupContent(
-            MagicRarity.getDisplayNames(),
-            new JCheckBox[MagicRarity.values().length],
-            true,
-            aListener
-        );
+        setPopupContent(MagicRarity.getDisplayNames(), true, aListener);
     }
 
     @Override

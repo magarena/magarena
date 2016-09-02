@@ -1065,12 +1065,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
     }
 
-    public static List<String> getUnsupportedStatuses() {
+    public static String[] getUnsupportedStatuses() {
         if (!isSorted) {
             Collections.sort(unsupportedStatuses);
             isSorted = true;
         }
-        return unsupportedStatuses;
+        return unsupportedStatuses.toArray(new String[0]);
     }
 
 }

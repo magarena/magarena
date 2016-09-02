@@ -149,8 +149,8 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         boolean resultOR = false;
         boolean resultAND = true;
 
-        for (int i=0; i < getCheckboxes().length; i++) {
-            if (getCheckboxes()[i].isSelected()) {
+        for (int i=0; i < checkOptions.length; i++) {
+            if (checkOptions[i].isSelected()) {
                 somethingSelected = true;
                 if (isCardValid(cardDef, i)) {
                     resultOR = true;
@@ -212,12 +212,9 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     protected void setPopupContent(
         final String migLayout,
         final Object[] checkboxValues,
-        final JCheckBox[] newCheckboxes,
-
         final boolean hideAND,
         final ActionListener aListener) {
 
-        this.checkOptions = newCheckboxes;
         this.radioOptions = new JRadioButton[FILTER_CHOICES.length];
 
         final JPanel dialogPanel = new DialogContentPanel();
@@ -226,14 +223,16 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
         checkboxesPanel.setOpaque(false);
 
-        for (int i=0;i<checkboxValues.length;i++) {
-            newCheckboxes[i]=new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
-            newCheckboxes[i].addActionListener(aListener);
-            newCheckboxes[i].setOpaque(false);
-            newCheckboxes[i].setForeground(TEXT_COLOR);
-            newCheckboxes[i].setFocusPainted(true);
-            newCheckboxes[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-            checkboxesPanel.add(newCheckboxes[i]);
+        // add checkboxes
+        this.checkOptions = new JCheckBox[checkboxValues.length];
+        for (int i = 0; i < checkboxValues.length; i++) {
+            this.checkOptions[i] = new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
+            this.checkOptions[i].addActionListener(aListener);
+            this.checkOptions[i].setOpaque(false);
+            this.checkOptions[i].setForeground(TEXT_COLOR);
+            this.checkOptions[i].setFocusPainted(true);
+            this.checkOptions[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+            checkboxesPanel.add(this.checkOptions[i]);
         }
 
         final JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
@@ -265,13 +264,8 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         dialog.add(dialogPanel);
     }
 
-    protected void setPopupContent(
-        Object[] filterValues,
-        JCheckBox[] jCheckBox,
-        boolean b,
-        ActionListener aListener)
-    {
-        setPopupContent("flowy, insets 2", filterValues, jCheckBox, b, aListener);
+    protected void setPopupContent(Object[] filterValues, boolean b, ActionListener aListener) {
+        setPopupContent("flowy, insets 2", filterValues, b, aListener);
     }
 
 }

@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
@@ -14,12 +13,7 @@ class CubeFBP extends FilterButtonPanel {
 
     CubeFBP(ActionListener aListener) {
         super(UiString.get(_S6));
-        setPopupContent(
-            MagicFormat.getCubeFilterLabels(),
-            new JCheckBox[MagicFormat.getCubeFilterFormats().size()],
-            false,
-            aListener
-        );
+        setPopupContent(MagicFormat.getCubeFilterLabels(), false, aListener);
     }
 
     @Override

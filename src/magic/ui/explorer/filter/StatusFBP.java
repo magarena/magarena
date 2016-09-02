@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
@@ -19,13 +18,7 @@ class StatusFBP extends FilterButtonPanel {
 
     StatusFBP(ActionListener aListener, boolean isDeckEditor) {
         super(UiString.get(_S4));
-        String[] filterValues = getStatusFilterValues(isDeckEditor);
-        setPopupContent(
-            filterValues,
-            new JCheckBox[filterValues.length],
-            false,
-            aListener
-        );
+        setPopupContent(getStatusFilterValues(isDeckEditor), false, aListener);
     }
 
     private String[] getStatusFilterValues(boolean isDeckEditor) {

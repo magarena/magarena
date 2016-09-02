@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.event.ActionListener;
-import javax.swing.JCheckBox;
 import magic.data.MagicSetDefinitions;
 import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
@@ -17,12 +16,7 @@ class SetsFBP extends FilterButtonPanel {
 
     SetsFBP(ActionListener aListener) {
         super(UiString.get(_S1));
-        setPopupContent(
-            MagicSetDefinitions.getFilterValues(),
-            new JCheckBox[MagicSets.values().length],
-            false,
-            aListener
-        );
+        setPopupContent(MagicSetDefinitions.getFilterValues(), false, aListener);
     }
 
     @Override
