@@ -21,11 +21,11 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
-import magic.ui.explorer.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
+import magic.ui.explorer.filter.CardFilterPanel;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
 import magic.ui.widget.FontsAndBorders;
@@ -203,10 +203,6 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         } else {
             ScreenController.showWarningMessage("Please select a valid card in the card pool to add it to the deck.");
         }
-    }
-
-    protected void close() {
-        filterPanel.closePopups();
     }
 
     @Override

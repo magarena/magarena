@@ -13,12 +13,12 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
-import magic.ui.explorer.filter.CardFilterPanel;
+import magic.translate.UiString;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
+import magic.ui.explorer.filter.CardFilterPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -113,10 +113,6 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         cardPoolDefs = filterPanel.getFilteredCards();
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
-    }
-
-    protected void close() {
-        filterPanel.closePopups();
     }
 
     @Override
