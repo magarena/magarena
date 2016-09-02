@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -29,21 +30,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final Dimension FILTER_BUTTON_PREFERRED_SIZE = new Dimension(108, 36);
     private static final Dimension FILTER_BUTTON_MINIMUM_SIZE = new Dimension(66, 36);
 
-    private final MigLayout layout = new MigLayout();
     private final ICardFilterPanelListener listener;
 
-    private final FilterButtonPanel formatsFilter;
-    private final FilterButtonPanel cubeFilter;
-    private final FilterButtonPanel setsFilter;
-    private final FilterButtonPanel typeFilter;
-    private final FilterButtonPanel subtypeFilter;
-    private final FilterButtonPanel colorFilter;
-    private final FilterButtonPanel costFilter;
-    private final FilterButtonPanel rarityFilter;
-    private final FilterButtonPanel statusFilter;
-    private final FilterButtonPanel textFilter;
-    private final FilterButtonPanel unsupportedFilter;
-
+    private final List<FilterButtonPanel> filterButtons = new ArrayList<>();
     private JButton resetButton;
 
     private int totalFilteredCards = 0;
@@ -56,106 +45,74 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     public CardFilterPanel(final ICardFilterPanelListener aListener) {
 
-        listener = aListener;
+        this.listener = aListener;
 
-        cardPool = listener.isDeckEditor()
+        cardPool = isDeckEditor()
             ? CardDefinitions.getDefaultPlayableCardDefs()
             : CardDefinitions.getAllCards();
 
-        disableUpdate = false;
+        createFilterButtons(aListener);
+        createResetButton();
+        refreshLayout();
+    }
 
-        // filter buttons
-        cubeFilter = new CubeFBP(this);
-        formatsFilter = new FormatFBP(this);
-        setsFilter = new SetsFBP(this);
-        typeFilter = new TypeFBP(this, aListener.isDeckEditor());
-        subtypeFilter = new SubtypeFBP(this);
-        colorFilter = new ColorFBP(this);
-        costFilter = new ManaCostFBP(this);
-        rarityFilter = new RarityFBP(this);
-        statusFilter = new StatusFBP(this, aListener.isDeckEditor());
-        textFilter = new TextSearchFBP(aListener);
-        unsupportedFilter = showUnsupportedFilter() ? new UnsupportedFBP(this) : new EmptyFBP();
+    private boolean isDeckEditor() {
+        return this.listener.isDeckEditor();
+    }
 
-        // layout filter buttons.
+    private void refreshLayout() {
+        MigLayout layout = new MigLayout();
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
         layout.setColumnConstraints("fill, 66:108");
         layout.setRowConstraints("fill, 36");
         setLayout(layout);
-        add(cubeFilter);
-        add(formatsFilter);
-        add(setsFilter);
-        add(typeFilter);
-        add(subtypeFilter);
-        add(colorFilter);
-        add(costFilter);
-        add(rarityFilter);
-        add(statusFilter);
-        add(textFilter);
-        add(unsupportedFilter);
+        // layout buttons in columns over two rows.
+        for (FilterButtonPanel fb : filterButtons) {
+            add(fb);
+        }
+        add(resetButton);
+    }
 
-        addResetButton();
+    private void createFilterButtons(ICardFilterPanelListener aListener) {
+        filterButtons.add(new CubeFBP(this));
+        filterButtons.add(new FormatFBP(this));
+        filterButtons.add(new SetsFBP(this));
+        filterButtons.add(new TypeFBP(this, isDeckEditor()));
+        filterButtons.add(new SubtypeFBP(this));
+        filterButtons.add(new ColorFBP(this));
+        filterButtons.add(new ManaCostFBP(this));
+        filterButtons.add(new RarityFBP(this));
+        filterButtons.add(new StatusFBP(this, isDeckEditor()));
+        filterButtons.add(new TextSearchFBP(aListener));
+        filterButtons.add(showUnsupportedFilter() ? new UnsupportedFBP(this) : new EmptyFBP());
     }
 
     private boolean showUnsupportedFilter() {
-        return !listener.isDeckEditor() && GeneralConfig.getInstance().showMissingCardData();
+        return !isDeckEditor() && GeneralConfig.getInstance().showMissingCardData();
     }
 
     private boolean isCardfiltered(final MagicCardDefinition cardDefinition) {
+
         // never show overlay cards
         if (cardDefinition.isOverlay()) {
             return false;
         }
 
-        if (textFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (cubeFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (formatsFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (setsFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (typeFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (subtypeFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (colorFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (costFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (rarityFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (statusFilter.doesNotInclude(cardDefinition)) {
-            return false;
-        }
-
-        if (unsupportedFilter.doesNotInclude(cardDefinition)) {
-            return false;
+        for (FilterButtonPanel filter : filterButtons) {
+            if (filter.doesNotInclude(cardDefinition)) {
+                return false;
+            }
         }
 
         return true;
     }
 
     private Stream<MagicCardDefinition> getFilteredStream() {
-        return cardPool.stream().filter(listener.isDeckEditor() ? card -> !card.isHidden() && isCardfiltered(card) : this::isCardfiltered);
+        return cardPool.stream()
+            .filter(isDeckEditor()
+                ? card -> !card.isHidden() && isCardfiltered(card)
+                : this::isCardfiltered
+            );
     }
 
     public List<MagicCardDefinition> getFilteredCards() {
@@ -177,21 +134,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             .count();
     }
 
-    public void resetFilters() {
+    private void resetFilters() {
         disableUpdate = true; // ignore any events caused by resetting filters
-
-        cubeFilter.reset();
-        formatsFilter.reset();
-        setsFilter.reset();
-        typeFilter.reset();
-        subtypeFilter.reset();
-        colorFilter.reset();
-        costFilter.reset();
-        rarityFilter.reset();
-        statusFilter.reset();
-        textFilter.reset();
-        unsupportedFilter.reset();
-
+        for (FilterButtonPanel filter : filterButtons) {
+            filter.reset();
+        }
         disableUpdate = false;
     }
 
@@ -208,7 +155,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
-    private void addResetButton() {
+    private void createResetButton() {
         resetButton = new JButton(UiString.get(_S15));
         resetButton.setToolTipText(UiString.get(_S16));
         resetButton.setFont(new Font("dialog", Font.BOLD, 12));
@@ -216,7 +163,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         resetButton.addActionListener(this);
         resetButton.setPreferredSize(FILTER_BUTTON_PREFERRED_SIZE);
         resetButton.setMinimumSize(FILTER_BUTTON_MINIMUM_SIZE);
-        add(resetButton);
     }
 
     public int getPlayableCardCount() {
