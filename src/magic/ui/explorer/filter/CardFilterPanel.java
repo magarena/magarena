@@ -23,7 +23,6 @@ import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.CardFilterTextField;
 import magic.ui.ICardFilterPanelListener;
-import magic.ui.MagicLogs;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -36,7 +35,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S1 = "Match any selected";
     private static final String _S2 = "Match all selected";
     private static final String _S3 = "Exclude selected";
-    private static final String _S4 = "Status";
     private static final String _S9 = "Search";
     private static final String _S10 = "Searches name, type, subtype and oracle text.";
     private static final String _S15 = "Reset";
@@ -68,11 +66,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final FilterButtonPanel colorFilter;
     private final FilterButtonPanel costFilter;
     private final FilterButtonPanel rarityFilter;
+    private final FilterButtonPanel statusFilter;
 
-    // status
-    private ButtonControlledPopup statusPopup;
-    private JCheckBox[] statusCheckBoxes;
-    private JRadioButton[] statusFilterChoices;
     // unsupported statuses
     private ButtonControlledPopup unsupportedPopup;
     private JCheckBox[] unsupportedCheckBoxes;
@@ -110,6 +105,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         colorFilter = new ColorFBP(this);
         costFilter = new ManaCostFBP(this);
         rarityFilter = new RarityFBP(this);
+        statusFilter = new StatusFBP(this, listener.isDeckEditor());
 
         // layout filter buttons.
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -124,8 +120,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         add(colorFilter);
         add(costFilter);
         add(rarityFilter);
+        add(statusFilter);
 
-        addStatusFilter();
         addOracleFilter();
         if (!listener.isDeckEditor() && GeneralConfig.getInstance().showMissingCardData()) {
             addUnsupportedFilter();
@@ -142,14 +138,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         btn.setPreferredSize(FILTER_BUTTON_PREFERRED_SIZE);
         btn.setMinimumSize(FILTER_BUTTON_MINIMUM_SIZE);
         add(btn);
-    }
-
-    private void addStatusFilter() {
-        final String[] filterValues = getStatusFilterValues();
-        statusPopup = addFilterPopupPanel(UiString.get(_S4));
-        statusCheckBoxes = new JCheckBox[filterValues.length];
-        statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        populateCheckboxPopup(statusPopup, filterValues, statusCheckBoxes, statusFilterChoices, false);
     }
 
     private void addUnsupportedFilter() {
@@ -318,6 +306,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
+        if (statusFilter.doesNotInclude(cardDefinition)) {
+            return false;
+        }
 
         // unsupported statuses
         if (unsupportedPopup != null && !filterCheckboxes(cardDefinition, unsupportedCheckBoxes, unsupportedFilterChoices,
@@ -327,28 +318,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                 return card.hasStatus(unsupportedCheckBoxes[i].getText());
             }
         })) {
-            return false;
-        }
-
-        // status
-        if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final String status = statusCheckBoxes[i].getText();
-                    if (status.equals(UiString.get(_S17))) {
-                        return MagicLogs.isCardInDownloadsLog(card);
-                    } else if (status.equals(UiString.get(_S18))) {
-                         return CardDefinitions.isCardPlayable(card);
-                    } else if (status.equals(UiString.get(_S19))) {
-                        return CardDefinitions.isCardMissing(card);
-                    } else if (status.equals(UiString.get(_S25))) {
-                        return CardDefinitions.isPotential(card);
-                    } else {
-                        return true;
-                    }
-                }
-            })) {
             return false;
         }
 
@@ -418,8 +387,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         colorFilter.reset();
         costFilter.reset();
         rarityFilter.reset();
-
-        unselectFilterSet(statusCheckBoxes, statusFilterChoices);
+        statusFilter.reset();
 
         if (unsupportedPopup != null) {
             unselectFilterSet(unsupportedCheckBoxes, unsupportedFilterChoices);
@@ -443,7 +411,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     public void closePopups() {
         oraclePopup.hidePopup();
-        statusPopup.hidePopup();
         if (unsupportedPopup != null) {
             unsupportedPopup.hidePopup();
         }
