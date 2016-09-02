@@ -52,8 +52,8 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     protected final JDialog dialog;
     private boolean popupJustToggled = false;
 
-    protected JCheckBox[] checkOptions;
-    protected JRadioButton[] radioOptions;
+    protected JCheckBox[] checkboxes;
+    protected JRadioButton[] radioButtons;
 
     protected abstract boolean isCardValid(final MagicCardDefinition card, final int i);
 
@@ -128,19 +128,19 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     }
 
     JCheckBox[] getCheckboxes() {
-        return checkOptions;
+        return checkboxes;
     }
 
     JRadioButton[] getFilterChoices() {
-        return radioOptions;
+        return radioButtons;
     }
 
     void reset() {
         dialog.setVisible(false);
-        for (JCheckBox checkbox : checkOptions) {
+        for (JCheckBox checkbox : checkboxes) {
             checkbox.setSelected(false);
         }
-        radioOptions[0].setSelected(true);
+        radioButtons[0].setSelected(true);
     }
 
     private boolean containsCard(MagicCardDefinition cardDef) {
@@ -149,8 +149,8 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         boolean resultOR = false;
         boolean resultAND = true;
 
-        for (int i=0; i < checkOptions.length; i++) {
-            if (checkOptions[i].isSelected()) {
+        for (int i=0; i < checkboxes.length; i++) {
+            if (checkboxes[i].isSelected()) {
                 somethingSelected = true;
                 if (isCardValid(cardDef, i)) {
                     resultOR = true;
@@ -215,7 +215,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         final boolean hideAND,
         final ActionListener aListener) {
 
-        this.radioOptions = new JRadioButton[FILTER_CHOICES.length];
+        this.radioButtons = new JRadioButton[FILTER_CHOICES.length];
 
         final JPanel dialogPanel = new DialogContentPanel();
 
@@ -224,15 +224,15 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         checkboxesPanel.setOpaque(false);
 
         // add checkboxes
-        this.checkOptions = new JCheckBox[checkboxValues.length];
+        checkboxes = new JCheckBox[checkboxValues.length];
         for (int i = 0; i < checkboxValues.length; i++) {
-            this.checkOptions[i] = new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
-            this.checkOptions[i].addActionListener(aListener);
-            this.checkOptions[i].setOpaque(false);
-            this.checkOptions[i].setForeground(TEXT_COLOR);
-            this.checkOptions[i].setFocusPainted(true);
-            this.checkOptions[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-            checkboxesPanel.add(this.checkOptions[i]);
+            checkboxes[i] = new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
+            checkboxes[i].addActionListener(aListener);
+            checkboxes[i].setOpaque(false);
+            checkboxes[i].setForeground(TEXT_COLOR);
+            checkboxes[i].setFocusPainted(true);
+            checkboxes[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+            checkboxesPanel.add(checkboxes[i]);
         }
 
         final JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
@@ -246,19 +246,19 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
 
         final ButtonGroup bg = new ButtonGroup();
         for (int i = 0; i < FILTER_CHOICES.length; i++) {
-            radioOptions[i] = new JRadioButton(FILTER_CHOICES[i]);
-            radioOptions[i].addActionListener(aListener);
-            radioOptions[i].setOpaque(false);
-            radioOptions[i].setForeground(TEXT_COLOR);
-            radioOptions[i].setFocusPainted(true);
-            radioOptions[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+            radioButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
+            radioButtons[i].addActionListener(aListener);
+            radioButtons[i].setOpaque(false);
+            radioButtons[i].setForeground(TEXT_COLOR);
+            radioButtons[i].setFocusPainted(true);
+            radioButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             if (i == 0) {
-                radioOptions[0].setSelected(true);
+                radioButtons[0].setSelected(true);
             } else if (i == 1) {
-                radioOptions[1].setVisible(!hideAND);
+                radioButtons[1].setVisible(!hideAND);
             }
-            bg.add(radioOptions[i]);
-            dialogPanel.add(radioOptions[i]);
+            bg.add(radioButtons[i]);
+            dialogPanel.add(radioButtons[i]);
         }
 
         dialog.add(dialogPanel);

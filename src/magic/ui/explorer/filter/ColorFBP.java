@@ -29,7 +29,7 @@ class ColorFBP extends FilterButtonPanel {
 
         final JPanel dialogPanel = new DialogContentPanel();
 
-        checkOptions = new JCheckBox[MagicColor.NR_COLORS];
+        checkboxes = new JCheckBox[MagicColor.NR_COLORS];
         final JPanel colorsPanel = new JPanel();
         colorsPanel.setLayout(new BoxLayout(colorsPanel, BoxLayout.X_AXIS));
         colorsPanel.setBorder(FontsAndBorders.DOWN_BORDER);
@@ -39,13 +39,13 @@ class ColorFBP extends FilterButtonPanel {
             final MagicColor color = MagicColor.values()[i];
             final JPanel colorPanel = new JPanel();
             colorPanel.setOpaque(false);
-            checkOptions[i] = new JCheckBox("", false);
-            checkOptions[i].addActionListener(aListener);
-            checkOptions[i].setOpaque(false);
-            checkOptions[i].setFocusPainted(true);
-            checkOptions[i].setAlignmentY(Component.CENTER_ALIGNMENT);
-            checkOptions[i].setActionCommand(Character.toString(color.getSymbol()));
-            colorPanel.add(checkOptions[i]);
+            checkboxes[i] = new JCheckBox("", false);
+            checkboxes[i].addActionListener(aListener);
+            checkboxes[i].setOpaque(false);
+            checkboxes[i].setFocusPainted(true);
+            checkboxes[i].setAlignmentY(Component.CENTER_ALIGNMENT);
+            checkboxes[i].setActionCommand(Character.toString(color.getSymbol()));
+            colorPanel.add(checkboxes[i]);
             colorPanel.add(new JLabel(MagicImages.getIcon(color.getManaType())));
             colorsPanel.add(colorPanel);
         }
@@ -53,19 +53,19 @@ class ColorFBP extends FilterButtonPanel {
         dialogPanel.add(colorsPanel);
 
         final ButtonGroup colorFilterBg = new ButtonGroup();
-        radioOptions = new JRadioButton[FILTER_CHOICES.length];
+        radioButtons = new JRadioButton[FILTER_CHOICES.length];
         for (int i = 0; i < FILTER_CHOICES.length; i++) {
-            radioOptions[i] = new JRadioButton(FILTER_CHOICES[i]);
-            radioOptions[i].addActionListener(aListener);
-            radioOptions[i].setOpaque(false);
-            radioOptions[i].setForeground(TEXT_COLOR);
-            radioOptions[i].setFocusPainted(true);
-            radioOptions[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+            radioButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
+            radioButtons[i].addActionListener(aListener);
+            radioButtons[i].setOpaque(false);
+            radioButtons[i].setForeground(TEXT_COLOR);
+            radioButtons[i].setFocusPainted(true);
+            radioButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             if (i == 0) {
-                radioOptions[i].setSelected(true);
+                radioButtons[i].setSelected(true);
             }
-            colorFilterBg.add(radioOptions[i]);
-            dialogPanel.add(radioOptions[i]);
+            colorFilterBg.add(radioButtons[i]);
+            dialogPanel.add(radioButtons[i]);
         }
 
         dialog.add(dialogPanel);
