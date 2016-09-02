@@ -21,7 +21,6 @@ import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
-import magic.ui.CardFilterTextField;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -35,8 +34,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S1 = "Match any selected";
     private static final String _S2 = "Match all selected";
     private static final String _S3 = "Exclude selected";
-    private static final String _S9 = "Search";
-    private static final String _S10 = "Searches name, type, subtype and oracle text.";
     private static final String _S15 = "Reset";
     private static final String _S16 = "Clears all filters";
     private static final String _S17 = "New cards";
@@ -67,14 +64,12 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final FilterButtonPanel costFilter;
     private final FilterButtonPanel rarityFilter;
     private final FilterButtonPanel statusFilter;
+    private final FilterButtonPanel textFilter;
 
     // unsupported statuses
     private ButtonControlledPopup unsupportedPopup;
     private JCheckBox[] unsupportedCheckBoxes;
     private JRadioButton[] unsupportedFilterChoices;
-    // oracle text
-    private ButtonControlledPopup oraclePopup;
-    private CardFilterTextField nameTextField = null;
     // ...
     private JButton resetButton;
 
@@ -100,12 +95,13 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         cubeFilter = new CubeFBP(this);
         formatsFilter = new FormatFBP(this);
         setsFilter = new SetsFBP(this);
-        typeFilter = new TypeFBP(this, listener.isDeckEditor());
+        typeFilter = new TypeFBP(this, aListener.isDeckEditor());
         subtypeFilter = new SubtypeFBP(this);
         colorFilter = new ColorFBP(this);
         costFilter = new ManaCostFBP(this);
         rarityFilter = new RarityFBP(this);
-        statusFilter = new StatusFBP(this, listener.isDeckEditor());
+        statusFilter = new StatusFBP(this, aListener.isDeckEditor());
+        textFilter = new TextSearchFBP(aListener);
 
         // layout filter buttons.
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -121,8 +117,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         add(costFilter);
         add(rarityFilter);
         add(statusFilter);
+        add(textFilter);
 
-        addOracleFilter();
         if (!listener.isDeckEditor() && GeneralConfig.getInstance().showMissingCardData()) {
             addUnsupportedFilter();
         } else {
@@ -263,15 +259,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
-        // search text in name, abilities, type, text, etc.
-        if (nameTextField != null) {
-            if (!nameTextField.getSearchTerms().isEmpty()) {
-                for (String searchTerm : nameTextField.getSearchTerms()) {
-                    if (!cardDefinition.hasText(searchTerm)) {
-                        return false;
-                    }
-                }
-            }
+        if (textFilter.doesNotInclude(cardDefinition)) {
+            return false;
         }
 
         if (cubeFilter.doesNotInclude(cardDefinition)) {
@@ -388,13 +377,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         costFilter.reset();
         rarityFilter.reset();
         statusFilter.reset();
+        textFilter.reset();
 
         if (unsupportedPopup != null) {
             unselectFilterSet(unsupportedCheckBoxes, unsupportedFilterChoices);
-        }
-
-        if (nameTextField != null) {
-            nameTextField.setText("");
         }
 
         disableUpdate = false;
@@ -410,7 +396,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     public void closePopups() {
-        oraclePopup.hidePopup();
         if (unsupportedPopup != null) {
             unsupportedPopup.hidePopup();
         }
@@ -427,13 +412,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             listener.refreshTable();
         }
         c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    }
-
-    private void addOracleFilter() {
-        oraclePopup = addFilterPopupPanel(UiString.get(_S9), UiString.get(_S10));
-        oraclePopup.setPopupSize(260, 38);
-        nameTextField = new CardFilterTextField(listener);
-        oraclePopup.add(nameTextField);
     }
 
     private void addResetButton() {

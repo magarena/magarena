@@ -57,9 +57,10 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
 
     protected abstract boolean isCardValid(final MagicCardDefinition card, final int i);
 
-    FilterButtonPanel(String title) {
+    FilterButtonPanel(String title, String tooltip) {
 
         this.filterButton = new FilterButton(title, this);
+        this.filterButton.setToolTipText(tooltip);
 
         this.dialog = new PopupDialog();
         this.dialog.addWindowFocusListener(new WindowAdapter() {
@@ -81,7 +82,10 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         add(filterButton);
 
         setOpaque(false);
+    }
 
+    FilterButtonPanel(String title) {
+        this(title, null);
     }
 
     private void setEscapeKeyAction() {
