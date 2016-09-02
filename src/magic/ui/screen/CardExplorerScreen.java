@@ -101,7 +101,7 @@ public class CardExplorerScreen
                         @Override
                         public void actionPerformed(final ActionEvent e) {
                             try {
-                                saveCardStatistics();
+                                MagicSetDefinitions.createSetStatistics();
                             } catch (IOException e1) {
                                 throw new RuntimeException(e1);
                             }
@@ -121,28 +121,6 @@ public class CardExplorerScreen
             missingCards.forEach(writer::println);
         }
         Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
-    }
-
-    private void saveCardStatistics() throws IOException {
-
-        throw new UnsupportedOperationException("Temporarily disabled by lodici while restructuring filter bar code.");
-
-//        ArrayList<String> allSetInfo = new ArrayList<String>();
-//        allSetInfo.add("Set,Cards,Playable,Unimplemented");
-//        for (int i = 0; i < content.filterPanel.setsCheckBoxes.length; i++) {
-//            content.filterPanel.resetFilters();
-//            content.filterPanel.setsCheckBoxes[i].setSelected(true);
-//            content.updateCardPool();
-//            String setText = content.filterPanel.setsCheckBoxes[i].getText() + "      " + content.generatePoolTitle();
-//            allSetInfo.add(setText.replaceAll("      ",",").replaceAll(" \\(\\d*\\.\\d%\\)","").replaceAll("Cards: ","").replaceAll("Playable: ","").replaceAll("Unimplemented: ",""));
-//        }
-//        final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
-//        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
-//            allSetInfo.forEach(writer::println);
-//        }
-//        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
-//        content.filterPanel.resetFilters();
-//        content.updateCardPool();
     }
 
     @Override

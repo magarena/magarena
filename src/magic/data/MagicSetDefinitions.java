@@ -1,11 +1,17 @@
 package magic.data;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicSetDefinition;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicSetDefinition;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicResources;
 
 public class MagicSetDefinitions {
@@ -43,6 +49,41 @@ public class MagicSetDefinitions {
 
     public static void clearLoadedSets() {
         loadedSets.clear();
+    }
+
+    /**
+     * Creates a csv file containing a list of all sets and the
+     * total number of playable/unplayable cards in each.
+     */
+    public static void createSetStatistics() throws IOException {
+
+        final List<MagicCardDefinition> cards = CardDefinitions.getAllCards();
+
+        final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
+        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
+            writer.println("Set,Cards,Playable,Unimplemented");
+            for (MagicSets s : MagicSets.values()) {
+                int totalPlayable = 0;
+                int totalUnplayable = 0;
+                for (MagicCardDefinition card : cards) {
+                    if (isCardInSet(card, s) && card.isPlayable()) {
+                        if (!card.isInvalid()) {
+                            totalPlayable++;
+                        } else {
+                            totalUnplayable++;
+                        }
+                    }
+                }
+                writer.printf("%s %s,%d,%d,%d\n",
+                    s.name().replaceAll("_", ""),
+                    s.getSetName(),
+                    totalPlayable + totalUnplayable,
+                    totalPlayable,
+                    totalUnplayable
+                );
+            }
+        }
+        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
     }
 
 }
