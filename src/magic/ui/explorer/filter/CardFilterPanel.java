@@ -24,7 +24,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicRarity;
-import magic.model.MagicSubType;
 import magic.translate.UiString;
 import magic.ui.CardFilterTextField;
 import magic.ui.ICardFilterPanelListener;
@@ -47,7 +46,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S10 = "Searches name, type, subtype and oracle text.";
     private static final String _S11 = "Color";
     private static final String _S12 = "Cost";
-    private static final String _S13 = "Subtype";
     private static final String _S14 = "Rarity";
     private static final String _S15 = "Reset";
     private static final String _S16 = "Clears all filters";
@@ -81,6 +79,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final FilterButtonPanel cubeFilter;
     private final FilterButtonPanel setsFilter;
     private final FilterButtonPanel typeFilter;
+    private final FilterButtonPanel subtypeFilter;
 
     // status
     private ButtonControlledPopup statusPopup;
@@ -98,10 +97,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private ButtonControlledPopup costPopup;
     private JCheckBox[] costCheckBoxes;
     private JRadioButton[] costFilterChoices;
-    // sub type
-    private ButtonControlledPopup subtypePopup;
-    private JCheckBox[] subtypeCheckBoxes;
-    private JRadioButton[] subtypeFilterChoices;
     // rarity
     private ButtonControlledPopup rarityPopup;
     private JCheckBox[] rarityCheckBoxes;
@@ -135,6 +130,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         formatsFilter = new FormatFBP(this);
         setsFilter = new SetsFBP(this);
         typeFilter = new TypeFBP(this, listener.isDeckEditor());
+        subtypeFilter = new SubtypeFBP(this);
 
         // layout filter buttons.
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -145,8 +141,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         add(formatsFilter);
         add(setsFilter);
         add(typeFilter);
+        add(subtypeFilter);
 
-        addCardSubtypeFilter();
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
@@ -230,9 +226,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             if (!p.equals(costPopup)) {
                 costPopup.hidePopup();
             }
-            if (!p.equals(subtypePopup)) {
-                subtypePopup.hidePopup();
-            }
+//            if (!p.equals(subtypePopup)) {
+//                subtypePopup.hidePopup();
+//            }
             if (!p.equals(rarityPopup)) {
                 rarityPopup.hidePopup();
             }
@@ -327,6 +323,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
+        if (subtypeFilter.doesNotInclude(cardDefinition)) {
+            return false;
+        }
+
         // unsupported statuses
         if (unsupportedPopup != null && !filterCheckboxes(cardDefinition, unsupportedCheckBoxes, unsupportedFilterChoices,
             new CardChecker() {
@@ -355,17 +355,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
-                }
-            })) {
-            return false;
-        }
-
-        // subtype
-        if (!filterCheckboxes(cardDefinition, subtypeCheckBoxes, subtypeFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasSubType(MagicSubType.values()[i]);
                 }
             })) {
             return false;
@@ -466,10 +455,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         formatsFilter.reset();
         setsFilter.reset();
         typeFilter.reset();
+        subtypeFilter.reset();
 
         unselectFilterSet(colorCheckBoxes, colorFilterChoices);
         unselectFilterSet(costCheckBoxes, costFilterChoices);
-        unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
         unselectFilterSet(statusCheckBoxes, statusFilterChoices);
 
@@ -496,7 +485,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     public void closePopups() {
         colorPopup.hidePopup();
         costPopup.hidePopup();
-        subtypePopup.hidePopup();
         rarityPopup.hidePopup();
         oraclePopup.hidePopup();
         statusPopup.hidePopup();
@@ -572,13 +560,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         costCheckBoxes = new JCheckBox[COST_VALUES.length];
         costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup("flowx, wrap 5, insets 2, gap 8", costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
-    }
-
-    private void addCardSubtypeFilter() {
-        subtypePopup = addFilterPopupPanel(UiString.get(_S13));
-        subtypeCheckBoxes = new JCheckBox[MagicSubType.values().length];
-        subtypeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        populateCheckboxPopup(subtypePopup, MagicSubType.values(), subtypeCheckBoxes, subtypeFilterChoices, false);
     }
 
     private void addCardRarityFilter() {

@@ -261,7 +261,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     }
 
     protected void setPopupContent(
-        String[] filterValues,
+        Object[] filterValues,
         JCheckBox[] jCheckBox,
         JRadioButton[] jRadioButton,
         boolean b,
