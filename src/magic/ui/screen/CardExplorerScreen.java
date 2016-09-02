@@ -10,7 +10,6 @@ import java.util.Collections;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
@@ -125,22 +124,25 @@ public class CardExplorerScreen
     }
 
     private void saveCardStatistics() throws IOException {
-        ArrayList<String> allSetInfo = new ArrayList<String>();
-        allSetInfo.add("Set,Cards,Playable,Unimplemented");
-        for (int i = 0; i < content.filterPanel.setsCheckBoxes.length; i++) {
-            content.filterPanel.resetFilters();
-            content.filterPanel.setsCheckBoxes[i].setSelected(true);
-            content.updateCardPool();
-            String setText = content.filterPanel.setsCheckBoxes[i].getText() + "      " + content.generatePoolTitle();
-            allSetInfo.add(setText.replaceAll("      ",",").replaceAll(" \\(\\d*\\.\\d%\\)","").replaceAll("Cards: ","").replaceAll("Playable: ","").replaceAll("Unimplemented: ",""));
-        }
-        final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
-        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
-            allSetInfo.forEach(writer::println);
-        }
-        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
-        content.filterPanel.resetFilters();
-        content.updateCardPool();
+
+        throw new UnsupportedOperationException("Temporarily disabled by lodici while restructuring filter bar code.");
+
+//        ArrayList<String> allSetInfo = new ArrayList<String>();
+//        allSetInfo.add("Set,Cards,Playable,Unimplemented");
+//        for (int i = 0; i < content.filterPanel.setsCheckBoxes.length; i++) {
+//            content.filterPanel.resetFilters();
+//            content.filterPanel.setsCheckBoxes[i].setSelected(true);
+//            content.updateCardPool();
+//            String setText = content.filterPanel.setsCheckBoxes[i].getText() + "      " + content.generatePoolTitle();
+//            allSetInfo.add(setText.replaceAll("      ",",").replaceAll(" \\(\\d*\\.\\d%\\)","").replaceAll("Cards: ","").replaceAll("Playable: ","").replaceAll("Unimplemented: ",""));
+//        }
+//        final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
+//        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
+//            allSetInfo.forEach(writer::println);
+//        }
+//        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
+//        content.filterPanel.resetFilters();
+//        content.updateCardPool();
     }
 
     @Override

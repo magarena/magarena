@@ -20,8 +20,6 @@ import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
-import magic.data.MagicSetDefinitions;
-import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
@@ -50,7 +48,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S4 = "Status";
     @StringContext(eg = "Set filter in Cards Explorer")
     private static final String _S5 = "Set";
-    private static final String _S6 = "Cube";
     @StringContext(eg = "Type filter in cards explorer")
     private static final String _S8 = "Type";
     private static final String _S9 = "Search";
@@ -94,6 +91,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private final FilterButtonPanel formatsFilter;
     private final FilterButtonPanel cubeFilter;
+    private final FilterButtonPanel setsFilter;
 
     // status
     private ButtonControlledPopup statusPopup;
@@ -103,10 +101,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private ButtonControlledPopup unsupportedPopup;
     private JCheckBox[] unsupportedCheckBoxes;
     private JRadioButton[] unsupportedFilterChoices;
-    // sets
-    private ButtonControlledPopup setsPopup;
-    public JCheckBox[] setsCheckBoxes;
-    private JRadioButton[] setsFilterChoices;
     //type
     private ButtonControlledPopup typePopup;
     private JCheckBox[] typeCheckBoxes;
@@ -154,6 +148,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         // filter buttons
         cubeFilter = new CubeFBP(this);
         formatsFilter = new FormatFBP(this);
+        setsFilter = new SetsFBP(this);
 
         // layout filter buttons.
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -162,8 +157,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         setLayout(layout);
         add(cubeFilter);
         add(formatsFilter);
+        add(setsFilter);
 
-        addSetsFilter();
         addCardTypeFilter();
         addCardSubtypeFilter();
         addCardColorFilter();
@@ -207,14 +202,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private String[] getStatusFilterValues() {
         return listener.isDeckEditor() ? new String[]{UiString.get(_S17)} : new String[]{UiString.get(_S17), UiString.get(_S18), UiString.get(_S19), UiString.get(_S25)};
-    }
-
-    private void addSetsFilter() {
-        setsPopup = addFilterPopupPanel(UiString.get(_S5));
-        setsCheckBoxes = new JCheckBox[MagicSets.values().length];
-        setsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        final String[] filterValues = MagicSetDefinitions.getFilterValues();
-        populateCheckboxPopup(setsPopup, filterValues, setsCheckBoxes, setsFilterChoices, false);
     }
 
     private ButtonControlledPopup addFilterPopupPanel(final String title, final String tooltip) {
@@ -346,15 +333,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
-        // sets
-        if (!filterCheckboxes(cardDefinition, setsCheckBoxes, setsFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicSets magicSet  = MagicSets.values()[i];
-                    return  MagicSetDefinitions.isCardInSet(card, magicSet);
-                }
-            })) {
+        if (setsFilter.doesNotInclude(cardDefinition)) {
             return false;
         }
 
@@ -518,7 +497,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
         cubeFilter.reset();
         formatsFilter.reset();
-        unselectFilterSet(setsCheckBoxes, setsFilterChoices);
+        setsFilter.reset();
         unselectFilterSet(typeCheckBoxes, typeFilterChoices);
         unselectFilterSet(colorCheckBoxes, colorFilterChoices);
         unselectFilterSet(costCheckBoxes, costFilterChoices);
@@ -546,7 +525,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     public void closePopups() {
-        setsPopup.hidePopup();
         typePopup.hidePopup();
         colorPopup.hidePopup();
         costPopup.hidePopup();
