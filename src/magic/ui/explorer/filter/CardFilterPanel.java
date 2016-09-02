@@ -20,7 +20,6 @@ import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicManaCost;
 import magic.model.MagicRarity;
 import magic.translate.UiString;
 import magic.ui.CardFilterTextField;
@@ -41,7 +40,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S4 = "Status";
     private static final String _S9 = "Search";
     private static final String _S10 = "Searches name, type, subtype and oracle text.";
-    private static final String _S12 = "Cost";
     private static final String _S14 = "Rarity";
     private static final String _S15 = "Reset";
     private static final String _S16 = "Clears all filters";
@@ -49,13 +47,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S18 = "Playable";
     private static final String _S19 = "Unimplemented";
     private static final String _S25 = "Potential";
-
-    private static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
-    static {
-        for (int i = 0; i <= MagicManaCost.MAXIMUM_MANA_COST; i++) {
-            COST_VALUES[i] = Integer.toString(i);
-        }
-    }
 
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
@@ -77,6 +68,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final FilterButtonPanel typeFilter;
     private final FilterButtonPanel subtypeFilter;
     private final FilterButtonPanel colorFilter;
+    private final FilterButtonPanel costFilter;
 
     // status
     private ButtonControlledPopup statusPopup;
@@ -86,10 +78,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private ButtonControlledPopup unsupportedPopup;
     private JCheckBox[] unsupportedCheckBoxes;
     private JRadioButton[] unsupportedFilterChoices;
-    // mana cost
-    private ButtonControlledPopup costPopup;
-    private JCheckBox[] costCheckBoxes;
-    private JRadioButton[] costFilterChoices;
     // rarity
     private ButtonControlledPopup rarityPopup;
     private JCheckBox[] rarityCheckBoxes;
@@ -125,6 +113,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         typeFilter = new TypeFBP(this, listener.isDeckEditor());
         subtypeFilter = new SubtypeFBP(this);
         colorFilter = new ColorFBP(this);
+        costFilter = new ManaCostFBP(this);
 
         // layout filter buttons.
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -137,8 +126,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         add(typeFilter);
         add(subtypeFilter);
         add(colorFilter);
+        add(costFilter);
 
-        addManaCostFilter();
         addCardRarityFilter();
         addStatusFilter();
         addOracleFilter();
@@ -217,9 +206,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 //            if (!p.equals(colorPopup)) {
 //                colorPopup.hidePopup();
 //            }
-            if (!p.equals(costPopup)) {
-                costPopup.hidePopup();
-            }
+//            if (!p.equals(costPopup)) {
+//                costPopup.hidePopup();
+//            }
 //            if (!p.equals(subtypePopup)) {
 //                subtypePopup.hidePopup();
 //            }
@@ -325,6 +314,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             return false;
         }
 
+        if (costFilter.doesNotInclude(cardDefinition)) {
+            return false;
+        }
+
         // unsupported statuses
         if (unsupportedPopup != null && !filterCheckboxes(cardDefinition, unsupportedCheckBoxes, unsupportedFilterChoices,
             new CardChecker() {
@@ -333,17 +326,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                 return card.hasStatus(unsupportedCheckBoxes[i].getText());
             }
         })) {
-            return false;
-        }
-
-        // cost
-        if (!filterCheckboxes(cardDefinition, costCheckBoxes, costFilterChoices,
-            new CardChecker() {
-                @Override
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
-                }
-            })) {
             return false;
         }
 
@@ -444,8 +426,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         typeFilter.reset();
         subtypeFilter.reset();
         colorFilter.reset();
+        costFilter.reset();
 
-        unselectFilterSet(costCheckBoxes, costFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
         unselectFilterSet(statusCheckBoxes, statusFilterChoices);
 
@@ -470,7 +452,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     }
 
     public void closePopups() {
-        costPopup.hidePopup();
         rarityPopup.hidePopup();
         oraclePopup.hidePopup();
         statusPopup.hidePopup();
@@ -497,13 +478,6 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         oraclePopup.setPopupSize(260, 38);
         nameTextField = new CardFilterTextField(listener);
         oraclePopup.add(nameTextField);
-    }
-
-    private void addManaCostFilter() {
-        costPopup = addFilterPopupPanel(UiString.get(_S12));
-        costCheckBoxes = new JCheckBox[COST_VALUES.length];
-        costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-        populateCheckboxPopup("flowx, wrap 5, insets 2, gap 8", costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);
     }
 
     private void addCardRarityFilter() {
