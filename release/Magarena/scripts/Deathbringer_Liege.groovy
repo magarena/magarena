@@ -27,7 +27,7 @@
             }
         }
     },
-    new OtherSpellIsCastTrigger() {
+    new OtherSpellIsCastTrigger(MagicTrigger.BEFORE_DEFAULT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (permanent.isFriend(cardOnStack) &&
