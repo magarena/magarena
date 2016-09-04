@@ -7,4 +7,3 @@ cost={8}{W}{W}
 effect=Put X 1/1 white Pegasus creature tokens with flying onto the battlefield, where X is your life total.
 timing=main
 oracle=Put X 1/1 white Pegasus creature tokens with flying onto the battlefield, where X is your life total.
-status=needs groovy
