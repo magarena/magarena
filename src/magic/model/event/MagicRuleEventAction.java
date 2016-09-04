@@ -1808,7 +1808,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokens(
-        ARG.PLAYERS + "( )?put(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield" + ARG.MODS + "( )?(for each " + ARG.WORDRUN + ")?",
+        ARG.PLAYERS + "( )?put(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield" + ARG.MODS + "( )?((for each|where X is) " + ARG.WORDRUN + ")?",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1822,7 +1822,8 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 final int multiplier = eachCount.getAmount(event);
-                final int total = tokenCount.getAmount(event) * multiplier;
+                int total = (eachCount != MagicAmountFactory.One && tokenCount == MagicAmountFactory.XCost) ?
+                    multiplier : tokenCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
                     game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                 }
