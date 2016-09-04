@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Rat,Rogue
 cost={3}{B}{B}
 pt=2/3
-ability=Rat creatures have fear.
-requires_groovy_code
+ability=Rat creatures have fear.;\
+        {T}, Sacrifice a Rat: Put X 1/1 black Rat creature tokens onto the battlefield, where X is the number of Rats you control.
 timing=main
 oracle=Rat creatures have fear.\n{T}, Sacrifice a Rat: Put X 1/1 black Rat creature tokens onto the battlefield, where X is the number of Rats you control.

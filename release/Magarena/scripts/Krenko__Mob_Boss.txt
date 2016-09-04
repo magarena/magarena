@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Goblin,Warrior
 cost={2}{R}{R}
 pt=3/3
+ability={T}: Put X 1/1 red Goblin creature tokens onto the battlefield, where X is the number of Goblins you control.
 timing=main
-requires_groovy_code
 oracle={T}: Put X 1/1 red Goblin creature tokens onto the battlefield, where X is the number of Goblins you control.
