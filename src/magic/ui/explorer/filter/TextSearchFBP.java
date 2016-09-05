@@ -49,13 +49,18 @@ class TextSearchFBP extends FilterButtonPanel {
 
     @Override
     void reset() {
-        dialog.setVisible(false);
         nameTextField.setText("");
+        hidePopup();
     }
 
     @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    protected boolean isFilterActive() {
+        return nameTextField.getText().trim().isEmpty() == false;
     }
 
 }

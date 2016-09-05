@@ -13,7 +13,6 @@ import java.util.TimerTask;
 import javax.swing.AbstractAction;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
-import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
@@ -48,7 +47,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         UiString.get(_S3)
     };
 
-    private final JButton filterButton;
+    private final FilterButton filterButton;
     protected final JDialog dialog;
     private boolean popupJustToggled = false;
 
@@ -73,7 +72,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
                 // immediately by disabling response for < 1 s
                 timer.schedule(new ResponsePreventer(), 300);
                 if (dialog.isVisible()) {
-                    dialog.setVisible(false);
+                    hidePopup();
                 }
             }
         });
@@ -97,7 +96,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         final AbstractAction closeAction = new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                dialog.setVisible(false);
+               hidePopup();
             }
         };
         root.getActionMap().put("closeDialog", closeAction);
@@ -112,6 +111,11 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         dialog.setVisible(true);
     }
 
+    protected void hidePopup() {
+        dialog.setVisible(false);
+        filterButton.setActiveFlag(isFilterActive());
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (popupJustToggled) {
@@ -123,7 +127,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
             showPopup();
         } else {
             // hide - taken care of by focusLost
-            dialog.setVisible(false);
+            hidePopup();
         }
     }
 
@@ -136,11 +140,11 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     }
 
     void reset() {
-        dialog.setVisible(false);
         for (JCheckBox checkbox : checkboxes) {
             checkbox.setSelected(false);
         }
         radioButtons[0].setSelected(true);
+        hidePopup();
     }
 
     private boolean containsCard(MagicCardDefinition cardDef) {
@@ -174,13 +178,14 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         return !containsCard(cardDefinition);
     }
 
-    class FilterButton extends JButton {
-        public FilterButton(String title, ActionListener aListener) {
-            super(title);
-            setFont(FontsAndBorders.FONT1);
-            setMinimumSize(new Dimension(66, 36));
-            addActionListener(aListener);
+    protected boolean isFilterActive() {
+        for (JCheckBox cb : checkboxes) {
+            if (cb.isSelected()) {
+                return true;
+            }
+
         }
+        return false;
     }
 
     class PopupDialog extends JDialog {
