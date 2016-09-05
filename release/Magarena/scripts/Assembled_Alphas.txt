@@ -7,7 +7,6 @@ type=Creature
 subtype=Wolf
 cost={5}{R}
 pt=5/5
-ability=Whenever SN blocks or becomes blocked by a creature, SN deals 3 damage to that creature and 3 damage to that creature's controller.
 timing=main
 oracle=Whenever Assembled Alphas blocks or becomes blocked by a creature, Assembled Alphas deals 3 damage to that creature and 3 damage to that creature's controller.
-status=needs groovy
+requires_groovy_code
