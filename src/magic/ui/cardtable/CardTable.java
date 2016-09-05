@@ -3,6 +3,7 @@ package magic.ui.cardtable;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
+import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -11,6 +12,7 @@ import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JViewport;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
@@ -24,6 +26,7 @@ import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
+import magic.model.MagicRandom;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -228,6 +231,27 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             titleBar.setVisible(b);
             refreshLayout();
         }
+    }
+
+    public void selectRandomCard() {
+        if (tableModel.getRowCount() > 0) {
+            int row = MagicRandom.nextRNGInt(tableModel.getRowCount());
+            table.setRowSelectionInterval(row, row);
+            scrollRowToViewportCenter(row);
+        }
+    }
+
+    private void scrollRowToViewportCenter(int row) {
+
+        JViewport viewport = (JViewport) table.getParent();
+        Rectangle viewRect = viewport.getViewRect();
+        Rectangle rect = table.getCellRect(row, 0, true);
+
+        int y = rect.y < viewRect.y || rect.y > (viewRect.y + viewRect.height)
+            ? rect.y - (viewRect.height / 2) + rect.height
+            : viewRect.y;
+
+        viewport.setViewPosition(new Point(viewRect.x, y));
     }
 
     private class ColumnListener extends MouseAdapter {

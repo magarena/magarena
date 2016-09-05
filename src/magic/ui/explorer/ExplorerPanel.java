@@ -138,6 +138,10 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         updateCardPool();
     }
 
+    public void selectRandomCard() {
+        cardPoolTable.selectRandomCard();
+    }
+
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
         public void mouseReleased(MouseEvent e) {

@@ -41,6 +41,8 @@ public class CardExplorerScreen
     private static final String _S2 = "Close";
     private static final String _S3 = "View Script";
     private static final String _S4 = "View the script and groovy files for the selected card.<br>(or double-click row)";
+    private static final String _S5 = "Lucky Dip";
+    private static final String _S6 = "Selects a random card from the list of cards displayed.";
 
     private final ExplorerPanel content;
 
@@ -74,6 +76,17 @@ public class CardExplorerScreen
                     @Override
                     public void actionPerformed(final ActionEvent e) {
                         content.showCardScriptScreen();
+                    }
+                }
+            )
+        );
+        buttons.add(new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.RANDOM_ICON),
+                UiString.get(UiString.get(_S5)), UiString.get(UiString.get(_S6)),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        content.selectRandomCard();
                     }
                 }
             )
