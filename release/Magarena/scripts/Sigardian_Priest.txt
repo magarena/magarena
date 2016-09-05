@@ -1,5 +1,6 @@
 name=Sigardian Priest
-image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_Qgcr086lZ7.png
+image=http://magiccards.info/scans/en/emn/42.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=C
 type=Creature

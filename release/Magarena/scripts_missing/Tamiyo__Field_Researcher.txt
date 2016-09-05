@@ -1,5 +1,6 @@
 name=Tamiyo, Field Researcher
-image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_Q09aZeYOnr.png
+image=http://magiccards.info/scans/en/emn/190.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=M
 type=Planeswalker

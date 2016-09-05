@@ -1,5 +1,6 @@
 name=Prying Questions
-image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_WDQrEOiUOv.png
+image=http://magiccards.info/scans/en/emn/101.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=U
 type=Sorcery

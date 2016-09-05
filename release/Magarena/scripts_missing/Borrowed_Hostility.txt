@@ -1,5 +1,6 @@
 name=Borrowed Hostility
-image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_qcoF97FflX.png
+image=http://magiccards.info/scans/en/emn/121.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=C
 type=Instant

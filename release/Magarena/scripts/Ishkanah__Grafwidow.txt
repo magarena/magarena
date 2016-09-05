@@ -1,5 +1,6 @@
 name=Ishkanah, Grafwidow
-image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_sbzUF2sxWO.png
+image=http://magiccards.info/scans/en/emn/162.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=M
 type=Legendary,Creature

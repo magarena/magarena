@@ -1,5 +1,6 @@
 name=Besmirch
-image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_7Szu3ZNAWq.png
+image=http://magiccards.info/scans/en/cn2/49.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=U
 type=Sorcery

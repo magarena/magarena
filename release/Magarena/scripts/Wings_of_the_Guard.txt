@@ -1,5 +1,6 @@
 name=Wings of the Guard
-image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_T9DxnmFdEl.png
+image=http://magiccards.info/scans/en/cn2/26.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=C
 type=Creature

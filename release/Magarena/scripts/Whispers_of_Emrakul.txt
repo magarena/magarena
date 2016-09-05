@@ -1,5 +1,6 @@
 name=Whispers of Emrakul
-image=http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/en_1UFcoc4ZXg.png
+image=http://magiccards.info/scans/en/emn/114.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,6 @@
 name=Keeper of Keys
-image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_HdlaE3x8ep.png
+image=http://magiccards.info/scans/en/cn2/34.jpg
+image_updated=2016-09-05
 value=2.500
 rarity=R
 type=Creature
