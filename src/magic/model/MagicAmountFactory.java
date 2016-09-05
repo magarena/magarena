@@ -167,4 +167,17 @@ public class MagicAmountFactory {
                     .orElse(0);
             }
         };
+
+    public static MagicAmount HighestCMCPermanentsYouControl =
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                return MagicTargetFilterFactory.PERMANENT_YOU_CONTROL
+                    .filter(source, player, MagicTargetHint.None)
+                    .stream()
+                    .mapToInt(it -> it.getConvertedCost())
+                    .max()
+                    .orElse(0);
+            }
+        };
 }

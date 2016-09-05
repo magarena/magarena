@@ -61,6 +61,11 @@ public enum MagicAmountParser {
             return MagicAmountFactory.GreatestPower;
         }
     },
+    HighestCMCPermanentsYouControl("the highest converted mana cost among permanents you control") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.HighestCMCPermanentsYouControl;
+        }
+    },
     XCost("x") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.XCost;
