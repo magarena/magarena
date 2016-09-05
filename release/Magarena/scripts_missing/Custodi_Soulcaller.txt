@@ -10,3 +10,4 @@ ability=Melee;\
         Whenever SN attacks, return target creature card with converted mana cost X or less from your graveyard to the battlefield, where X is the number of players you attacked with a creature this combat.
 timing=main
 oracle=Melee\nWhenever Custodi Soulcaller attacks, return target creature card with converted mana cost X or less from your graveyard to the battlefield, where X is the number of players you attacked with a creature this combat.
+status=needs groovy
