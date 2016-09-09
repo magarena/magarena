@@ -115,7 +115,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
         }
     },
-    BLACK_ZOMBIE("It is a black Zombie in addition to its other colors and types") {
+    BLACK_ZOMBIE("(it|that creature) is a black Zombie in addition to its other colors and types") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.AddBlack));
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
