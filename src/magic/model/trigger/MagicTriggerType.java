@@ -28,7 +28,8 @@ public enum MagicTriggerType {
     WhenAttacksUnblocked,   // permanent
     WhenTargeted,           // permanent
     WhenLoseControl,        // permanent
-    WhenBecomesState,       // MagicChangeStateAction
+    WhenBecomesState,       // ChangeStateAction
+    WhenPlayerBecomesState, // ChangePlayerStateAction
     WhenTransforms,         // permanent
     WhenTurnedFaceUp,       // permanent
     WhenChampioned,         // MagicExiledUntilThisLeavesPlayAction

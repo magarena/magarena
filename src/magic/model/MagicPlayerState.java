@@ -8,6 +8,7 @@ public enum MagicPlayerState {
     CantActivateAbilities("can't activate abilities this turn"),
     HasLostLife(""),
     HasGainedLife(""),
+    Monarch(""),
     ;
 
     private final String description;

@@ -233,6 +233,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return state.hasState(stateFlags);
     }
 
+    public boolean isMonarch() {
+        return hasState(MagicPlayerState.Monarch);
+    }
+
     public int getStateFlags() {
         return stateFlags;
     }
