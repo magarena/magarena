@@ -1,11 +1,12 @@
 name=Hamlet Captain
-image=http://magiccards.info/scans/en/isd/187.jpg
+image=http://magiccards.info/scans/en/emn/161.jpg
+image_updated=2016-09-09
 value=3.816
 rarity=U
 type=Creature
 subtype=Human,Warrior
 cost={1}{G}
 pt=2/2
-ability=Whenever SN attacks or blocks, other Human creatures you control get +1/+1 until end of turn.
+ability=Whenever SN attacks or blocks, other Humans you control get +1/+1 until end of turn.
 timing=main
-oracle=Whenever Hamlet Captain attacks or blocks, other Human creatures you control get +1/+1 until end of turn.
+oracle=Whenever Hamlet Captain attacks or blocks, other Humans you control get +1/+1 until end of turn.

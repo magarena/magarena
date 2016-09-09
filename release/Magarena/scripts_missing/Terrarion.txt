@@ -1,5 +1,6 @@
 name=Terrarion
-image=http://magiccards.info/scans/en/rav/273.jpg
+image=http://magiccards.info/scans/en/emn/201.jpg
+image_updated=2016-09-09
 value=3.318
 rarity=C
 type=Artifact

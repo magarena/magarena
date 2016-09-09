@@ -1,10 +1,10 @@
 name=Murder
-image=http://magiccards.info/scans/en/m13/101.jpg
+image=http://magiccards.info/scans/en/emn/97.jpg
 value=3.684
 removal=5
 rarity=C
 type=Instant
 cost={1}{B}{B}
-timing=removal
 effect=Destroy target creature.
+timing=removal
 oracle=Destroy target creature.

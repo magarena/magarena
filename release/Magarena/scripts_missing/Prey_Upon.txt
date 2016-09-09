@@ -1,5 +1,6 @@
 name=Prey Upon
-image=http://magiccards.info/scans/en/ddl/62.jpg
+image=http://magiccards.info/scans/en/emn/166.jpg
+image_updated=2016-09-09
 value=3.906
 rarity=C
 type=Sorcery
