@@ -1,7 +1,8 @@
 name=Tidal Wave
-image=http://magiccards.info/scans/en/mr/100.jpg
+image=http://magiccards.info/scans/en/ema/75.jpg
+image_updated=2016-09-10
 value=3.329
-rarity=U
+rarity=C
 type=Instant
 cost={2}{U}
 effect=Put a 5/5 blue Wall creature token with defender onto the battlefield. Sacrifice it at the beginning of the next end step.

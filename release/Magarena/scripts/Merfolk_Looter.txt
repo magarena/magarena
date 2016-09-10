@@ -1,7 +1,8 @@
 name=Merfolk Looter
-image=http://magiccards.info/scans/en/m12/65.jpg
+image=http://magiccards.info/scans/en/ema/61.jpg
+image_updated=2016-09-10
 value=4.000
-rarity=C
+rarity=U
 type=Creature
 subtype=Merfolk,Rogue
 cost={1}{U}

@@ -1,7 +1,8 @@
 name=Wildfire Emissary
-image=http://magiccards.info/scans/en/tsts/72.jpg
+image=http://magiccards.info/scans/en/ema/153.jpg
+image_updated=2016-09-10
 value=4.033
-rarity=U
+rarity=C
 type=Creature
 subtype=Efreet
 cost={3}{R}
