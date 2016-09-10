@@ -7,7 +7,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchant creature
+ability=Enchant creature;\
+        Enchanted creature can't attack or block.
 timing=aura
 enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.
