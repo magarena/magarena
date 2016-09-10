@@ -9,3 +9,4 @@ pt=5/7
 ability=Untap each creature you control with a +1/+1 counter on it during each other player's untap step.
 timing=main
 oracle=Untap each creature you control with a +1/+1 counter on it during each other player's untap step.
+status=needs groovy

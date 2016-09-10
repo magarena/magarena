@@ -7,3 +7,4 @@ cost={X}{R}
 effect=SN deals X damage to target creature or player. If a creature is dealt damage this way, it loses indestructible until end of turn. If that creature would die this turn, exile it instead.
 timing=main
 oracle=Burn from Within deals X damage to target creature or player. If a creature is dealt damage this way, it loses indestructible until end of turn. If that creature would die this turn, exile it instead.
+status=needs groovy

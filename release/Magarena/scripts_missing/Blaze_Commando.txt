@@ -9,3 +9,4 @@ pt=5/3
 ability=Whenever an instant or sorcery spell you control deals damage, put two 1/1 red and white Soldier creature tokens with haste onto the battlefield.
 timing=main
 oracle=Whenever an instant or sorcery spell you control deals damage, put two 1/1 red and white Soldier creature tokens with haste onto the battlefield.
+status=not supported: when-deals-damage

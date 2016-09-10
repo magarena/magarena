@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, sacrifice SN unless you pay {W}{W}.;\
         Whenever a red creature or spell deals damage, SN deals that much damage to that creature's or spell's controller.
 timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Justice unless you pay {W}{W}.\nWhenever a red creature or spell deals damage, Justice deals that much damage to that creature's or spell's controller.
+status=not supported: when-deals-damage
