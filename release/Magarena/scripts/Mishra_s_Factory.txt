@@ -1,5 +1,6 @@
 name=Mishra's Factory
-image=http://magiccards.info/scans/en/ddf/73.jpg
+image=http://magiccards.info/scans/en/ema/242.jpg
+image_updated=2016-09-10
 value=4.579
 rarity=U
 type=Land

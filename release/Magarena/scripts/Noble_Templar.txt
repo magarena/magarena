@@ -1,5 +1,6 @@
 name=Noble Templar
-image=http://magiccards.info/scans/en/ddo/21.jpg
+image=http://magiccards.info/scans/en/cns/75.jpg
+image_updated=2016-09-10
 value=3.500
 rarity=C
 type=Creature

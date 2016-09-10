@@ -1,6 +1,7 @@
 name=Plea for Power
-image=http://magiccards.info/scans/en/vma/87.jpg
-value=4.000
+image=http://magiccards.info/scans/en/cns/24.jpg
+image_updated=2016-09-10
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}

@@ -1,12 +1,13 @@
 name=Jace, the Mind Sculptor
-image=http://magiccards.info/scans/en/wwk/31.jpg
+image=http://magiccards.info/scans/en/ema/57.jpg
+image_updated=2016-09-10
 value=3.444
 rarity=M
 type=Planeswalker
 subtype=Jace
 cost={2}{U}{U}
-ability=−1: Return target creature to its owner's hand.
 loyalty=3
+ability=−1: Return target creature to its owner's hand.
 timing=main
 requires_groovy_code
 oracle=+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n0: Draw three cards, then put two cards from your hand on top of your library in any order.\n−1: Return target creature to its owner's hand.\n−12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.

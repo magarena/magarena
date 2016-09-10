@@ -1,5 +1,6 @@
 name=Nightscape Familiar
-image=http://magiccards.info/scans/en/vma/131.jpg
+image=http://magiccards.info/scans/en/c13/83.jpg
+image_updated=2016-09-10
 value=4.000
 rarity=C
 type=Creature
@@ -7,6 +8,6 @@ subtype=Zombie
 cost={1}{B}
 pt=1/1
 ability={1}{B}: Regenerate SN.
-requires_groovy_code
 timing=main
+requires_groovy_code
 oracle=Blue spells and red spells you cast cost {1} less to cast.\n{1}{B}: Regenerate Nightscape Familiar.

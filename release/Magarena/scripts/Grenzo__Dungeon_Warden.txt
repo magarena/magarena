@@ -1,5 +1,6 @@
 name=Grenzo, Dungeon Warden
-image=http://magiccards.info/scans/en/vma/254.jpg
+image=http://magiccards.info/scans/en/cns/47.jpg
+image_updated=2016-09-10
 value=4.059
 rarity=R
 type=Legendary,Creature

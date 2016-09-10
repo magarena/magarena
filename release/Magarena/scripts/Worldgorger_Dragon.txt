@@ -1,7 +1,8 @@
 name=Worldgorger Dragon
-image=http://magiccards.info/scans/en/vma/193.jpg
+image=http://magiccards.info/scans/en/ema/154.jpg
+image_updated=2016-09-10
 value=4.500
-rarity=R
+rarity=M
 type=Creature
 subtype=Nightmare,Dragon
 cost={3}{R}{R}{R}

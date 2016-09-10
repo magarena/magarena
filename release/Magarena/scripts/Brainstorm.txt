@@ -1,8 +1,8 @@
 name=Brainstorm
-image=http://magiccards.info/scans/en/c15/90.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ema/40.jpg
+image_updated=2016-09-10
 value=4.750
-rarity=C
+rarity=U
 type=Instant
 cost={U}
 timing=draw

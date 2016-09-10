@@ -1,10 +1,11 @@
 name=Deep Analysis
-image=http://magiccards.info/scans/en/vma/65.jpg
+image=http://magiccards.info/scans/en/ema/45.jpg
+image_updated=2016-09-10
 value=4.000
-rarity=U
+rarity=C
 type=Sorcery
 cost={3}{U}
-effect=Target player draws two cards.
 ability=Flashback—{1}{U}, Pay 3 life.
+effect=Target player draws two cards.
 timing=main
 oracle=Target player draws two cards.\nFlashback—{1}{U}, Pay 3 life.

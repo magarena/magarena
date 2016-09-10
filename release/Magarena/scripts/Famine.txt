@@ -1,5 +1,6 @@
 name=Famine
-image=http://magiccards.info/scans/en/vma/120.jpg
+image=http://magiccards.info/scans/en/c13/77.jpg
+image_updated=2016-09-10
 value=3.182
 rarity=U
 type=Sorcery

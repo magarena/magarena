@@ -1,5 +1,6 @@
 name=Elves of Deep Shadow
-image=http://magiccards.info/scans/en/ddj/47.jpg
+image=http://magiccards.info/scans/en/rav/161.jpg
+image_updated=2016-09-10
 value=4.122
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Goblin Trenches
-image=http://magiccards.info/scans/en/vma/253.jpg
+image=http://magiccards.info/scans/en/ema/203.jpg
+image_updated=2016-09-10
 value=4.337
 rarity=R
 type=Enchantment

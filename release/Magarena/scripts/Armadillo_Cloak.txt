@@ -1,11 +1,13 @@
 name=Armadillo Cloak
-image=http://magiccards.info/scans/en/vma/242.jpg
+image=http://magiccards.info/scans/en/ema/195.jpg
+image_updated=2016-09-10
 value=4.250
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}{W}
-ability=Enchanted creature gets +2/+2 and has trample.
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has trample.
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code=Spirit Link

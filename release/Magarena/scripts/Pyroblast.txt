@@ -1,7 +1,8 @@
 name=Pyroblast
-image=http://magiccards.info/scans/en/med/107.jpg
+image=http://magiccards.info/scans/en/ema/142.jpg
+image_updated=2016-09-10
 value=4.530
-rarity=C
+rarity=U
 type=Instant
 cost={R}
 effect=Choose one — (1) Counter target blue spell. (2) Destroy target blue permanent.

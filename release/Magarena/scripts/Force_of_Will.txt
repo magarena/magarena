@@ -1,10 +1,11 @@
 name=Force of Will
-image=http://magiccards.info/scans/en/vma/69.jpg
+image=http://magiccards.info/scans/en/ema/49.jpg
+image_updated=2016-09-10
 value=4.100
-rarity=R
+rarity=M
 type=Instant
 cost={3}{U}{U}
-timing=counter
 ability=You may pay 1 life and exile a blue card from your hand rather than pay SN's mana cost.
 effect=Counter target spell.
+timing=counter
 oracle=You may pay 1 life and exile a blue card from your hand rather than pay Force of Will's mana cost.\nCounter target spell.

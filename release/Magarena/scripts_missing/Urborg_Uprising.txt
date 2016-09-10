@@ -1,5 +1,6 @@
 name=Urborg Uprising
-image=http://magiccards.info/scans/en/vma/144.jpg
+image=http://magiccards.info/scans/en/ema/111.jpg
+image_updated=2016-09-10
 value=2.500
 rarity=C
 type=Sorcery

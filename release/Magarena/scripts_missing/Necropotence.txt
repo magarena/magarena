@@ -1,7 +1,8 @@
 name=Necropotence
-image=http://magiccards.info/scans/en/vma/130.jpg
+image=http://magiccards.info/scans/en/ema/98.jpg
+image_updated=2016-09-10
 value=4.833
-rarity=R
+rarity=M
 type=Enchantment
 cost={B}{B}{B}
 ability=Skip your draw step.;\

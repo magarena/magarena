@@ -1,11 +1,12 @@
 name=Decree of Justice
-image=http://magiccards.info/scans/en/ddo/7.jpg
+image=http://magiccards.info/scans/en/c14/70.jpg
+image_updated=2016-09-10
 value=2.500
 rarity=R
 type=Sorcery
 cost={X}{X}{2}{W}{W}
-effect=Put X 4/4 white Angel creature tokens with flying onto the battlefield.
 ability=Cycling {2}{W}
+effect=Put X 4/4 white Angel creature tokens with flying onto the battlefield.
 timing=main
 requires_groovy_code
 oracle=Put X 4/4 white Angel creature tokens with flying onto the battlefield.\nCycling {2}{W}\nWhen you cycle Decree of Justice, you may pay {X}. If you do, put X 1/1 white Soldier creature tokens onto the battlefield.

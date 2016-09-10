@@ -1,5 +1,6 @@
 name=Winter Orb
-image=http://magiccards.info/scans/en/med/173.jpg
+image=http://magiccards.info/scans/en/ema/234.jpg
+image_updated=2016-09-10
 value=4.515
 rarity=R
 type=Artifact

@@ -1,5 +1,6 @@
 name=Marchesa, the Black Rose
-image=http://magiccards.info/scans/en/vma/256.jpg
+image=http://magiccards.info/scans/en/cns/49.jpg
+image_updated=2016-09-10
 value=4.212
 rarity=M
 type=Legendary,Creature

@@ -1,10 +1,11 @@
 name=Flusterstorm
-image=http://magiccards.info/scans/en/vma/68.jpg
+image=http://magiccards.info/scans/en/cmd/46.jpg
+image_updated=2016-09-10
 value=4.500
 rarity=R
 type=Instant
 cost={U}
+ability=Storm
 effect=Counter target instant or sorcery spell unless its controller pays {1}.
-ability=storm
 timing=counter
 oracle=Counter target instant or sorcery spell unless its controller pays {1}.\nStorm

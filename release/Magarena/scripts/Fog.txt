@@ -1,5 +1,6 @@
 name=Fog
-image=http://magiccards.info/scans/en/m14/171.jpg
+image=http://magiccards.info/scans/en/ema/167.jpg
+image_updated=2016-09-10
 value=3.917
 rarity=C
 type=Instant

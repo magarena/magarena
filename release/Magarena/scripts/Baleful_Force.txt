@@ -1,5 +1,6 @@
 name=Baleful Force
-image=http://magiccards.info/scans/en/vma/105.jpg
+image=http://magiccards.info/scans/en/c13/70.jpg
+image_updated=2016-09-10
 value=4.000
 rarity=R
 type=Creature

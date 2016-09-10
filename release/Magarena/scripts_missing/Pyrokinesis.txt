@@ -1,7 +1,8 @@
 name=Pyrokinesis
-image=http://magiccards.info/scans/en/ddl/32.jpg
+image=http://magiccards.info/scans/en/ema/143.jpg
+image_updated=2016-09-10
 value=4.368
-rarity=U
+rarity=R
 type=Instant
 cost={4}{R}{R}
 effect=You may exile a red card from your hand rather than pay SN's mana cost.~SN deals 4 damage divided as you choose among any number of target creatures.

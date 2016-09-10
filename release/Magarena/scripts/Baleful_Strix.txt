@@ -1,7 +1,8 @@
 name=Baleful Strix
-image=http://magiccards.info/scans/en/vma/243.jpg
+image=http://magiccards.info/scans/en/ema/196.jpg
+image_updated=2016-09-10
 value=4.333
-rarity=U
+rarity=R
 type=Artifact,Creature
 subtype=Bird
 cost={U}{B}

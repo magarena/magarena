@@ -1,5 +1,6 @@
 name=Tyrant's Choice
-image=http://magiccards.info/scans/en/vma/143.jpg
+image=http://magiccards.info/scans/en/cns/30.jpg
+image_updated=2016-09-10
 value=3.400
 rarity=C
 type=Sorcery

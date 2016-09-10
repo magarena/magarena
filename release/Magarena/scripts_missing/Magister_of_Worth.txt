@@ -1,5 +1,6 @@
 name=Magister of Worth
-image=http://magiccards.info/scans/en/vma/255.jpg
+image=http://magiccards.info/scans/en/cns/48.jpg
+image_updated=2016-09-10
 value=4.150
 rarity=R
 type=Creature

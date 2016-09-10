@@ -1,5 +1,6 @@
 name=Coercive Portal
-image=http://magiccards.info/scans/en/vma/266.jpg
+image=http://magiccards.info/scans/en/cns/56.jpg
+image_updated=2016-09-10
 value=4.000
 rarity=M
 type=Artifact

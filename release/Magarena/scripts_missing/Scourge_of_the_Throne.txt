@@ -1,5 +1,6 @@
 name=Scourge of the Throne
-image=http://magiccards.info/scans/en/vma/184.jpg
+image=http://magiccards.info/scans/en/cns/35.jpg
+image_updated=2016-09-10
 value=3.969
 rarity=M
 type=Creature

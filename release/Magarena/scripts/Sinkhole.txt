@@ -1,5 +1,6 @@
 name=Sinkhole
-image=http://magiccards.info/scans/en/me4/97.jpg
+image=http://magiccards.info/scans/en/ema/106.jpg
+image_updated=2016-09-10
 value=4.606
 removal=3
 rarity=R

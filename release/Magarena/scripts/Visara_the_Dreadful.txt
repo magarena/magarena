@@ -1,7 +1,8 @@
 name=Visara the Dreadful
-image=http://magiccards.info/scans/en/vma/146.jpg
+image=http://magiccards.info/scans/en/ema/114.jpg
+image_updated=2016-09-10
 value=4.000
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Gorgon
 cost={3}{B}{B}{B}
