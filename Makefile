@@ -158,7 +158,7 @@ M1.%: clean $(EXE) release/Magarena/themes/felt_theme.zip
 	-rm Magarena-1.$*.zip
 	-rm Magarena-1.$*.app.zip
 	echo "preparing Lin/Win dist"
-	mkdir -p Magarena-1.$*/Magarena/mods
+	mkdir Magarena-1.$*
 	cp -r \
 			release/gpl-3.0.html \
 			release/Magarena.jar \
@@ -167,6 +167,7 @@ M1.%: clean $(EXE) release/Magarena/themes/felt_theme.zip
 			release/README.txt \
 			release/lib \
 			Magarena-1.$*
+	mkdir Magarena-1.$*/Magarena
 	cp -r \
 			release/Magarena/avatars \
 			release/Magarena/decks \
@@ -174,10 +175,11 @@ M1.%: clean $(EXE) release/Magarena/themes/felt_theme.zip
 			release/Magarena/scripts_missing \
 			release/Magarena/translations \
 			Magarena-1.$*/Magarena
+	mkdir Magarena-1.$*/Magarena/mods
 	cp \
 			release/Magarena/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
-	mkdir -p Magarena-1.$*/Magarena/themes
+	mkdir Magarena-1.$*/Magarena/themes
 	cp \
 			release/Magarena/themes/felt_theme.zip \
 			Magarena-1.$*/Magarena/themes
