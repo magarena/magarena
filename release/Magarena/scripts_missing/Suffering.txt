@@ -1,5 +1,6 @@
 name=Suffering
-image=http://magiccards.info/scans/en/ddh/72b.jpg
+image=http://magiccards.info/scans/en/in/294b.jpg
+image_updated=2016-09-10
 value=4.184
 rarity=U
 type=Sorcery

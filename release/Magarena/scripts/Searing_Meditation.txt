@@ -1,5 +1,6 @@
 name=Searing Meditation
-image=http://magiccards.info/scans/en/ddh/27.jpg
+image=http://magiccards.info/scans/en/rav/226.jpg
+image_updated=2016-09-10
 value=3.645
 rarity=R
 type=Enchantment

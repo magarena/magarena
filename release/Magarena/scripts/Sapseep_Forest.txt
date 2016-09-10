@@ -1,5 +1,6 @@
 name=Sapseep Forest
-image=http://magiccards.info/scans/en/ddh/36.jpg
+image=http://magiccards.info/scans/en/shm/279.jpg
+image_updated=2016-09-10
 value=2.625
 rarity=U
 type=Land

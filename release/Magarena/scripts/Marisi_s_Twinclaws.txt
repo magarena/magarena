@@ -1,5 +1,6 @@
 name=Marisi's Twinclaws
-image=http://magiccards.info/scans/en/ddh/17.jpg
+image=http://magiccards.info/scans/en/arb/140.jpg
+image_updated=2010-09-10
 value=3.000
 rarity=U
 type=Creature

@@ -1,5 +1,6 @@
 name=Surveilling Sprite
-image=http://magiccards.info/scans/en/ddh/43.jpg
+image=http://magiccards.info/scans/en/rav/67.jpg
+image_updated=2016-09-10
 value=3.152
 rarity=C
 type=Creature

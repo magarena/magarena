@@ -1,5 +1,6 @@
 name=Nacatl Hunt-Pride
-image=http://magiccards.info/scans/en/ddh/20.jpg
+image=http://magiccards.info/scans/en/cfx/13.jpg
+image_updated=2010-09-10
 value=2.477
 rarity=U
 type=Creature

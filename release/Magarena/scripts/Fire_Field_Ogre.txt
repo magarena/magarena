@@ -1,5 +1,6 @@
 name=Fire-Field Ogre
-image=http://magiccards.info/scans/en/ddh/53.jpg
+image=http://magiccards.info/scans/en/ala/168.jpg
+image_updated=2010-09-10
 value=2.845
 rarity=U
 type=Creature

@@ -1,5 +1,6 @@
 name=Loxodon Hierarch
-image=http://magiccards.info/scans/en/ddh/15.jpg
+image=http://magiccards.info/scans/en/rav/214.jpg
+image_updated=2016-09-10
 value=3.882
 rarity=R
 type=Creature

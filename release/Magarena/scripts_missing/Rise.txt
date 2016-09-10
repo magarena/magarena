@@ -1,5 +1,6 @@
 name=Rise
-image=http://magiccards.info/scans/en/ddh/73a.jpg
+image=http://magiccards.info/scans/en/di/156a.jpg
+image_updated=2016-09-10
 value=3.896
 rarity=U
 type=Sorcery

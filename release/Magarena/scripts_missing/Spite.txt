@@ -1,5 +1,6 @@
 name=Spite
-image=http://magiccards.info/scans/en/ddh/71a.jpg
+image=http://magiccards.info/scans/en/in/293a.jpg
+image_updated=2016-09-10
 value=3.333
 rarity=U
 type=Instant

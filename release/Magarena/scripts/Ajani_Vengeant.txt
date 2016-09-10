@@ -1,5 +1,6 @@
 name=Ajani Vengeant
-image=http://magiccards.info/scans/en/ddh/1.jpg
+image=http://magiccards.info/scans/en/ala/154.jpg
+image_updated=2016-09-10
 value=4.042
 rarity=M
 type=Planeswalker
