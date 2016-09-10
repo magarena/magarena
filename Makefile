@@ -146,9 +146,10 @@ cards/staples_unknown.txt: cards/staples.txt cards/unknown.txt
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 	
 release/Magarena/themes/felt_theme.zip:
+	-mkdir release/Magarena/themes
 	wget https://github.com/magarena/magarena-themes/releases/download/1.0/felt_theme.zip -O $@
 
-M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
+M1.%: clean $(EXE) release/Magarena/themes/felt_theme.zip
 	grep "VERSION.*1.$*" -Ir src/
 	grep "Release.*1.$*" release/README.txt
 	grep 1.$* -Ir Magarena.app/
@@ -178,7 +179,7 @@ M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
 			Magarena-1.$*/Magarena/mods
 	mkdir -p Magarena-1.$*/Magarena/themes
 	cp \
-			release/Magarena/mods/felt_theme.zip \
+			release/Magarena/themes/felt_theme.zip \
 			Magarena-1.$*/Magarena/themes
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 	echo "preparing Mac dist"
