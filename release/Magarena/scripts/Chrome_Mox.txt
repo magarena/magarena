@@ -1,7 +1,8 @@
 name=Chrome Mox
-image=http://magiccards.info/scans/en/mi/152.jpg
+image=http://magiccards.info/scans/en/ema/219.jpg
+image_updated=2016-09-10
 value=4.590
-rarity=R
+rarity=M
 type=Artifact
 cost={0}
 ability=When SN enters the battlefield, you may exile a nonartifact, nonland card from your hand.

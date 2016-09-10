@@ -1,6 +1,6 @@
 name=Scoured Barrens
-image=http://magiccards.info/scans/en/c15/303.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ema/244.jpg
+image_updated=2016-09-10
 value=3.333
 rarity=C
 type=Land

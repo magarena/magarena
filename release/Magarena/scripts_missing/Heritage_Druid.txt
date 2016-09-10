@@ -1,7 +1,8 @@
 name=Heritage Druid
-image=http://magiccards.info/scans/en/mt/126.jpg
+image=http://magiccards.info/scans/en/ema/171.jpg
+image_updated=2016-09-10
 value=4.339
-rarity=U
+rarity=R
 type=Creature
 subtype=Elf,Druid
 cost={G}

@@ -1,7 +1,8 @@
 name=Prismatic Lens
-image=http://magiccards.info/scans/en/ts/262.jpg
+image=http://magiccards.info/scans/en/ema/230.jpg
+image_updated=2016-09-10
 value=3.618
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={T}: Add {C} to your mana pool.;\

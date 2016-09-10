@@ -1,5 +1,6 @@
 name=Abundant Growth
-image=http://magiccards.info/scans/en/avr/167.jpg
+image=http://magiccards.info/scans/en/ema/156.jpg
+image_updated=2016-09-10
 value=3.796
 rarity=C
 type=Enchantment

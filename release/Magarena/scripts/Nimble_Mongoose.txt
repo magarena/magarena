@@ -1,7 +1,8 @@
 name=Nimble Mongoose
-image=http://magiccards.info/scans/en/od/258.jpg
+image=http://magiccards.info/scans/en/ema/179.jpg
+image_updated=2016-09-10
 value=4.476
-rarity=U
+rarity=C
 type=Creature
 subtype=Mongoose
 cost={G}

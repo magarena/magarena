@@ -1,7 +1,8 @@
 name=Yavimaya Enchantress
-image=http://magiccards.info/scans/en/10e/310.jpg
+image=http://magiccards.info/scans/en/ema/194.jpg
+image_updated=2016-09-10
 value=4.039
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Druid
 cost={2}{G}

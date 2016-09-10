@@ -1,11 +1,12 @@
 name=Sphinx of the Steel Wind
-image=http://magiccards.info/scans/en/c13/217.jpg
+image=http://magiccards.info/scans/en/ema/207.jpg
+image_updated=2016-09-10
 value=4.379
 rarity=M
 type=Artifact,Creature
 subtype=Sphinx
 cost={5}{W}{U}{B}
 pt=6/6
-ability=Flying;first strike;vigilance;lifelink;protection from red;protection from green
-timing=smain
+ability=Flying, first strike, vigilance, lifelink, protection from red, protection from green
+timing=main
 oracle=Flying, first strike, vigilance, lifelink, protection from red and from green

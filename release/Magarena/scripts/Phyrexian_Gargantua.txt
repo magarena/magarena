@@ -1,5 +1,6 @@
 name=Phyrexian Gargantua
-image=http://magiccards.info/scans/en/c14/154.jpg
+image=http://magiccards.info/scans/en/ema/101.jpg
+image_updated=2016-09-10
 value=4.024
 rarity=U
 type=Creature

@@ -1,5 +1,6 @@
 name=Twisted Abomination
-image=http://magiccards.info/scans/en/cns/129.jpg
+image=http://magiccards.info/scans/en/ema/110.jpg
+image_updated=2016-09-10
 value=3.750
 rarity=C
 type=Creature

@@ -1,13 +1,13 @@
 name=Pacifism
-image=http://magiccards.info/scans/en/dtk/29.jpg
+image=http://magiccards.info/scans/en/ema/23.jpg
+image_updated=2016-09-10
 value=4.032
 removal=3
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchant creature;\
-        Enchanted creature can't attack or block.
+ability=Enchant creature
 timing=aura
 enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.

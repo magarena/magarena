@@ -1,5 +1,6 @@
 name=Giant Solifuge
-image=http://magiccards.info/scans/en/gp/143.jpg
+image=http://magiccards.info/scans/en/ema/216.jpg
+image_updated=2016-09-10
 value=4.051
 rarity=R
 type=Creature
@@ -8,4 +9,4 @@ cost={2}{R/G}{R/G}
 pt=4/1
 ability=Trample; haste; shroud
 timing=fmain
-oracle=Trample; haste; shroud
+oracle=Trample, haste, shroud

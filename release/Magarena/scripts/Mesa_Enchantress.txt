@@ -1,8 +1,8 @@
 name=Mesa Enchantress
-image=http://magiccards.info/scans/en/c15/75.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ema/19.jpg
+image_updated=2016-09-10
 value=3.871
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Druid
 cost={1}{W}{W}

@@ -1,5 +1,6 @@
 name=Centaur Chieftain
-image=http://magiccards.info/scans/en/tr/122.jpg
+image=http://magiccards.info/scans/en/ema/160.jpg
+image_updated=2016-09-10
 value=4.138
 rarity=U
 type=Creature
@@ -8,5 +9,5 @@ cost={3}{G}
 pt=3/3
 ability=Haste;\
         As long as seven or more cards are in your graveyard, SN has "When SN enters the battlefield, creatures you control get +1/+1 and gain trample until end of turn."
-timing=main
+timing=fmain
 oracle=Haste\nThreshold — As long as seven or more cards are in your graveyard, Centaur Chieftain has "When Centaur Chieftain enters the battlefield, creatures you control get +1/+1 and gain trample until end of turn."

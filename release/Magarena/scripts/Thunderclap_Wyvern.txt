@@ -1,6 +1,6 @@
 name=Thunderclap Wyvern
-image=http://magiccards.info/scans/en/ori/218.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/ema/208.jpg
+image_updated=2016-09-10
 value=2.500
 rarity=U
 type=Creature
@@ -10,5 +10,5 @@ pt=2/3
 ability=Flash;\
         Flying;\
         Other creatures you control with flying get +1/+1.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nOther creatures you control with flying get +1/+1.

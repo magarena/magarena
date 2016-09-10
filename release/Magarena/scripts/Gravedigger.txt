@@ -1,5 +1,6 @@
 name=Gravedigger
-image=http://magiccards.info/scans/en/m15/99.jpg
+image=http://magiccards.info/scans/en/ema/89.jpg
+image_updated=2016-09-10
 value=3.417
 rarity=C
 type=Creature

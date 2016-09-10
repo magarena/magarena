@@ -1,7 +1,8 @@
 name=Ancestral Mask
-image=http://magiccards.info/scans/en/mm/229.jpg
+image=http://magiccards.info/scans/en/ema/157.jpg
+image_updated=2016-09-10
 value=4.254
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}

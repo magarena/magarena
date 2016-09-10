@@ -1,6 +1,6 @@
 name=Pilgrim's Eye
-image=http://magiccards.info/scans/en/bfz/226.jpg
-image_updated=2015-11-08
+image=http://magiccards.info/scans/en/ema/229.jpg
+image_updated=2016-09-10
 value=3.111
 rarity=C
 type=Artifact,Creature

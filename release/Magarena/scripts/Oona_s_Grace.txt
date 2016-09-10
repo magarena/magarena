@@ -1,10 +1,11 @@
 name=Oona's Grace
-image=http://magiccards.info/scans/en/eve/27.jpg
+image=http://magiccards.info/scans/en/ema/63.jpg
+image_updated=2016-09-10
 value=2.863
 rarity=C
 type=Instant
 cost={2}{U}
-effect=Target player draws a card.
 ability=Retrace
+effect=Target player draws a card.
 timing=draw
 oracle=Target player draws a card.\nRetrace

@@ -1,5 +1,6 @@
 name=Glare of Subdual
-image=http://magiccards.info/scans/en/rav/207.jpg
+image=http://magiccards.info/scans/en/ema/202.jpg
+image_updated=2016-09-10
 value=4.052
 rarity=R
 type=Enchantment

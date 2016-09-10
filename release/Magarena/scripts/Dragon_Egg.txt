@@ -1,12 +1,13 @@
 name=Dragon Egg
-image=http://magiccards.info/scans/en/m14/137.jpg
+image=http://magiccards.info/scans/en/ema/126.jpg
+image_updated=2016-09-10
 value=3.591
-rarity=U
+rarity=C
 type=Creature
 subtype=Dragon
 cost={2}{R}
 pt=0/2
 ability=Defender;\
         When SN dies, put a 2/2 red Dragon creature token with flying onto the battlefield.
-timing=main
+timing=smain
 oracle=Defender\nWhen Dragon Egg dies, put a 2/2 red Dragon creature token with flying onto the battlefield. It has "{R}: This creature gets +1/+0 until end of turn."

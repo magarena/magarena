@@ -1,9 +1,10 @@
 name=Tooth and Claw
-image=http://magiccards.info/scans/en/c13/127.jpg
+image=http://magiccards.info/scans/en/ema/151.jpg
+image_updated=2016-09-10
 value=3.400
-rarity=R
+rarity=U
 type=Enchantment
 cost={3}{R}
 ability=Sacrifice two creatures: Put a 3/1 red Beast creature token named Carnivore onto the battlefield.
-timing=main
+timing=enchantment
 oracle=Sacrifice two creatures: Put a 3/1 red Beast creature token named Carnivore onto the battlefield.

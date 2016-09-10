@@ -1,7 +1,8 @@
 name=Mistral Charger
-image=http://magiccards.info/scans/en/di/13.jpg
+image=http://magiccards.info/scans/en/ema/20.jpg
+image_updated=2016-09-10
 value=3.134
-rarity=U
+rarity=C
 type=Creature
 subtype=Pegasus
 cost={1}{W}

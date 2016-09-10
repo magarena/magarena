@@ -1,10 +1,11 @@
 name=Honden of Life's Web
-image=http://magiccards.info/scans/en/chk/213.jpg
+image=http://magiccards.info/scans/en/ema/172.jpg
+image_updated=2016-09-10
 value=3.647
 rarity=U
 type=Legendary,Enchantment
 subtype=Shrine
 cost={4}{G}
 ability=At the beginning of your upkeep, put a 1/1 colorless Spirit creature token onto the battlefield for each Shrine you control.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, put a 1/1 colorless Spirit creature token onto the battlefield for each Shrine you control.

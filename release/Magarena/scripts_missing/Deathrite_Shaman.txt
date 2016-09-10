@@ -1,5 +1,6 @@
 name=Deathrite Shaman
-image=http://magiccards.info/scans/en/rtr/213.jpg
+image=http://magiccards.info/scans/en/ema/215.jpg
+image_updated=2016-09-10
 value=4.443
 rarity=R
 type=Creature

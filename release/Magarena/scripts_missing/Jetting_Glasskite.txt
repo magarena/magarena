@@ -1,5 +1,6 @@
 name=Jetting Glasskite
-image=http://magiccards.info/scans/en/cns/100.jpg
+image=http://magiccards.info/scans/en/ema/58.jpg
+image_updated=2016-09-10
 value=3.429
 rarity=U
 type=Creature
@@ -7,7 +8,7 @@ subtype=Spirit
 cost={4}{U}{U}
 pt=4/4
 ability=Flying;\
-        Whenever SN becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.
+        Whenever SN becomes the target of a spell or ability for the first time each turn, counter that spell or ability.
 timing=main
-oracle=Flying\nWhenever Jetting Glasskite becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.
+oracle=Flying\nWhenever Jetting Glasskite becomes the target of a spell or ability for the first time each turn, counter that spell or ability.
 status=not supported: no-info

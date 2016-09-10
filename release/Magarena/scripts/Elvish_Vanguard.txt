@@ -1,7 +1,8 @@
 name=Elvish Vanguard
-image=http://magiccards.info/scans/en/on/259.jpg
+image=http://magiccards.info/scans/en/ema/164.jpg
+image_updated=2016-09-10
 value=4.273
-rarity=R
+rarity=C
 type=Creature
 subtype=Elf,Warrior
 cost={1}{G}

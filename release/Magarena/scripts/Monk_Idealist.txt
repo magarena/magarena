@@ -1,8 +1,8 @@
 name=Monk Idealist
-image=http://magiccards.info/scans/en/c15/76.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ema/21.jpg
+image_updated=2016-09-10
 value=3.829
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Monk,Cleric
 cost={2}{W}

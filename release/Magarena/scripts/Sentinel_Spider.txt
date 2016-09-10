@@ -1,5 +1,6 @@
 name=Sentinel Spider
-image=http://magiccards.info/scans/en/m13/189.jpg
+image=http://magiccards.info/scans/en/ema/185.jpg
+image_updated=2016-09-10
 value=3.831
 rarity=C
 type=Creature

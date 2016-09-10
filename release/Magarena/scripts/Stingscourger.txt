@@ -1,5 +1,6 @@
 name=Stingscourger
-image=http://magiccards.info/scans/en/mma/131.jpg
+image=http://magiccards.info/scans/en/ema/149.jpg
+image_updated=2016-09-10
 value=4.017
 removal=2
 rarity=C

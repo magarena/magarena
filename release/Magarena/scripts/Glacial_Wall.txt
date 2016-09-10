@@ -1,7 +1,8 @@
 name=Glacial Wall
-image=http://magiccards.info/scans/en/7e/78.jpg
+image=http://magiccards.info/scans/en/ema/53.jpg
+image_updated=2016-09-10
 value=3.011
-rarity=U
+rarity=C
 type=Creature
 subtype=Wall
 cost={2}{U}

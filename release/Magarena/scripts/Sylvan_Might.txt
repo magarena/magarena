@@ -1,10 +1,11 @@
 name=Sylvan Might
-image=http://magiccards.info/scans/en/od/277.jpg
+image=http://magiccards.info/scans/en/ema/188.jpg
+image_updated=2016-09-10
 value=3.531
-rarity=U
+rarity=C
 type=Instant
 cost={1}{G}
-effect=Target creature gets +2/+2 and gains trample until end of turn.
 ability=Flashback {2}{G}{G}
+effect=Target creature gets +2/+2 and gains trample until end of turn.
 timing=pump
 oracle=Target creature gets +2/+2 and gains trample until end of turn.\nFlashback {2}{G}{G}

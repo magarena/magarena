@@ -1,5 +1,6 @@
 name=Kird Ape
-image=http://magiccards.info/scans/en/ddh/2.jpg
+image=http://magiccards.info/scans/en/ema/137.jpg
+image_updated=2016-09-10
 value=4.484
 rarity=C
 type=Creature

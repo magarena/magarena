@@ -1,7 +1,8 @@
 name=Avarax
-image=http://magiccards.info/scans/en/on/187.jpg
+image=http://magiccards.info/scans/en/ema/117.jpg
+image_updated=2016-09-10
 value=3.111
-rarity=U
+rarity=C
 type=Creature
 subtype=Beast
 cost={3}{R}{R}
@@ -9,5 +10,5 @@ pt=3/3
 ability=Haste;\
         When SN enters the battlefield, you may search your library for a card named Avarax, reveal it, and put it into your hand. If you do, shuffle your library.;\
         {1}{R}: SN gets +1/+0 until end of turn.
-timing=main
+timing=fmain
 oracle=Haste\nWhen Avarax enters the battlefield, you may search your library for a card named Avarax, reveal it, and put it into your hand. If you do, shuffle your library.\n{1}{R}: Avarax gets +1/+0 until end of turn.

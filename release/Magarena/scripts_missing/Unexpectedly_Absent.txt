@@ -1,5 +1,6 @@
 name=Unexpectedly Absent
-image=http://magiccards.info/scans/en/c13/25.jpg
+image=http://magiccards.info/scans/en/ema/33.jpg
+image_updated=2016-09-10
 value=4.512
 rarity=R
 type=Instant

@@ -1,5 +1,6 @@
 name=Young Pyromancer
-image=http://magiccards.info/scans/en/m14/163.jpg
+image=http://magiccards.info/scans/en/ema/155.jpg
+image_updated=2016-09-10
 value=4.406
 rarity=U
 type=Creature

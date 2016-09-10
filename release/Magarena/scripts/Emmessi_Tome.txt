@@ -1,6 +1,6 @@
 name=Emmessi Tome
-image=http://magiccards.info/scans/en/tpr/221.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/ema/221.jpg
+image_updated=2016-09-10
 value=1.595
 rarity=U
 type=Artifact

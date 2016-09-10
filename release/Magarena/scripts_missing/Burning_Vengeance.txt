@@ -1,5 +1,6 @@
 name=Burning Vengeance
-image=http://magiccards.info/scans/en/isd/133.jpg
+image=http://magiccards.info/scans/en/ema/121.jpg
+image_updated=2016-09-10
 value=3.623
 rarity=U
 type=Enchantment

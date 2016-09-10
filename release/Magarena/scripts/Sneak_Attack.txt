@@ -1,9 +1,10 @@
 name=Sneak Attack
-image=http://magiccards.info/scans/en/us/218.jpg
+image=http://magiccards.info/scans/en/ema/148.jpg
+image_updated=2016-09-10
 value=4.552
-rarity=R
+rarity=M
 type=Enchantment
 cost={3}{R}
-ability={R}: You may put a creature card from your hand onto the battlefield. It gains haste. Sacrifice it at the beginning of the next end step. Activate this ability only if you have a creature card in your hand.
+ability={R}: You may put a creature card from your hand onto the battlefield. It gains haste. Sacrifice it at the beginning of the next end step. Activate this ability with AI only if you have a creature card in your hand.
 timing=enchantment
 oracle={R}: You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice the creature at the beginning of the next end step.

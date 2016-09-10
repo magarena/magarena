@@ -1,10 +1,11 @@
 name=Vindicate
-image=http://magiccards.info/scans/en/ap/126.jpg
+image=http://magiccards.info/scans/en/ema/210.jpg
+image_updated=2016-09-10
 value=4.582
 removal=5
 rarity=R
 type=Sorcery
 cost={1}{W}{B}
-timing=removal
 effect=Destroy target permanent.
+timing=removal
 oracle=Destroy target permanent.

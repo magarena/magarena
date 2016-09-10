@@ -1,5 +1,6 @@
 name=Blightsoil Druid
-image=http://magiccards.info/scans/en/mt/59.jpg
+image=http://magiccards.info/scans/en/ema/80.jpg
+image_updated=2016-09-10
 value=2.009
 rarity=C
 type=Creature

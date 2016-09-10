@@ -1,5 +1,6 @@
 name=Whitemane Lion
-image=http://magiccards.info/scans/en/c14/96.jpg
+image=http://magiccards.info/scans/en/ema/37.jpg
+image_updated=2016-09-10
 value=3.062
 rarity=C
 type=Creature

@@ -1,7 +1,8 @@
 name=Mother of Runes
-image=http://magiccards.info/scans/en/ddo/20.jpg
+image=http://magiccards.info/scans/en/ema/22.jpg
+image_updated=2016-09-10
 value=2.500
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Cleric
 cost={W}

@@ -1,12 +1,13 @@
 name=Duplicant
-image=http://magiccards.info/scans/en/cma/7.jpg
+image=http://magiccards.info/scans/en/ema/220.jpg
+image_updated=2016-09-10
 value=4.545
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter
 cost={6}
 pt=2/4
-ability=When SN enters the battlefield, you may exile another target nontoken creature.
-timing=artifact
+ability=When SN enters the battlefield, you may exile target nontoken creature.
+timing=main
 requires_groovy_code
 oracle=Imprint — When Duplicant enters the battlefield, you may exile target nontoken creature.\nAs long as a card exiled with Duplicant is a creature card, Duplicant has the power, toughness, and creature types of the last creature card exiled with Duplicant. It's still a Shapeshifter.

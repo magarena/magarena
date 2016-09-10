@@ -1,11 +1,11 @@
 name=Desperate Ravings
-image=http://magiccards.info/scans/en/c15/149.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ema/125.jpg
+image_updated=2016-09-10
 value=4.007
-rarity=U
+rarity=C
 type=Instant
 cost={1}{R}
-effect=Draw two cards, then discard a card at random.
 ability=Flashback {2}{U}
-timing=Draw
+effect=Draw two cards, then discard a card at random.
+timing=draw
 oracle=Draw two cards, then discard a card at random.\nFlashback {2}{U}

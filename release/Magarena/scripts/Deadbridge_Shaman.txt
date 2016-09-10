@@ -1,6 +1,6 @@
 name=Deadbridge Shaman
-image=http://magiccards.info/scans/en/ori/91.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/ema/85.jpg
+image_updated=2016-09-10
 value=2.500
 rarity=C
 type=Creature

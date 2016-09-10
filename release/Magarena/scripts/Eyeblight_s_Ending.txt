@@ -1,6 +1,6 @@
 name=Eyeblight's Ending
-image=http://magiccards.info/scans/en/dpa/25.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/ema/88.jpg
+image_updated=2016-09-10
 value=4.031
 rarity=C
 type=Tribal,Instant

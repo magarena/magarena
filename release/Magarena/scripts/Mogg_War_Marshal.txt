@@ -1,5 +1,6 @@
 name=Mogg War Marshal
-image=http://magiccards.info/scans/en/mma/122.jpg
+image=http://magiccards.info/scans/en/ema/139.jpg
+image_updated=2016-09-10
 value=4.300
 rarity=C
 type=Creature

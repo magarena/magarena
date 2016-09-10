@@ -1,5 +1,6 @@
 name=Aven Riftwatcher
-image=http://magiccards.info/scans/en/pc/1.jpg
+image=http://magiccards.info/scans/en/ema/1.jpg
+image_updated=2016-09-10
 value=3.809
 rarity=C
 type=Creature

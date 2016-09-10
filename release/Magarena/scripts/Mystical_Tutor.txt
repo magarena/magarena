@@ -1,7 +1,8 @@
 name=Mystical Tutor
-image=http://magiccards.info/scans/en/6e/83.jpg
+image=http://magiccards.info/scans/en/ema/62.jpg
+image_updated=2016-09-10
 value=4.604
-rarity=M
+rarity=R
 type=Instant
 cost={U}
 effect=Search your library for an instant or sorcery card and reveal that card. Shuffle your library, then put the card on top of it.

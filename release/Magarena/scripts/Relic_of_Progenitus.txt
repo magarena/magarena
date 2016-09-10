@@ -1,10 +1,11 @@
 name=Relic of Progenitus
-image=http://magiccards.info/scans/en/md1/21.jpg
+image=http://magiccards.info/scans/en/ema/231.jpg
+image_updated=2016-09-10
 value=4.462
-rarity=C
+rarity=U
 type=Artifact
 cost={1}
 ability={1}, Exile SN: Exile all cards from all graveyards.~Draw a card.
-timing=main
+timing=artifact
 requires_groovy_code
 oracle={T}: Target player exiles a card from his or her graveyard.\n{1}, Exile Relic of Progenitus: Exile all cards from all graveyards. Draw a card.

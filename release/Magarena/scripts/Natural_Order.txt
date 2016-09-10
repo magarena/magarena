@@ -1,7 +1,8 @@
 name=Natural Order
-image=http://magiccards.info/scans/en/jr/49.jpg
+image=http://magiccards.info/scans/en/ema/177.jpg
+image_updated=2016-09-10
 value=4.183
-rarity=R
+rarity=M
 type=Sorcery
 cost={2}{G}{G}
 ability=As an additional cost to cast SN, sacrifice a green creature.

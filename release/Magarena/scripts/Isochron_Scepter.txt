@@ -1,7 +1,8 @@
 name=Isochron Scepter
-image=http://magiccards.info/scans/en/ddj/16.jpg
+image=http://magiccards.info/scans/en/ema/223.jpg
+image_updated=2016-09-10
 value=4.491
-rarity=U
+rarity=R
 type=Artifact
 cost={2}
 ability=When SN enters the battlefield, you may exile an instant card with converted mana cost 2 or less from your hand.

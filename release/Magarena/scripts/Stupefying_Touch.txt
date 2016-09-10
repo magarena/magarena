@@ -1,13 +1,14 @@
 name=Stupefying Touch
-image=http://magiccards.info/scans/en/tr/48.jpg
+image=http://magiccards.info/scans/en/ema/74.jpg
+image_updated=2016-09-10
 value=3.017
-rarity=U
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         When SN enters the battlefield, draw a card.;\
         Enchanted creature can't activate abilities.
-enchant=default,neg creature
 timing=aura
+enchant=default,neg creature
 oracle=Enchant creature\nWhen Stupefying Touch enters the battlefield, draw a card.\nEnchanted creature's activated abilities can't be activated.

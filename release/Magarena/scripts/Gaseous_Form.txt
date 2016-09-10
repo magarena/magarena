@@ -1,11 +1,12 @@
 name=Gaseous Form
-image=http://magiccards.info/scans/en/tpr/51.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/ema/51.jpg
+image_updated=2016-09-10
 value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
+ability=Enchant creature
 timing=aura
 enchant=can't attack,creature
 requires_groovy_code

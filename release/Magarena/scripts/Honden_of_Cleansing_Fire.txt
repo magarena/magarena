@@ -1,10 +1,11 @@
 name=Honden of Cleansing Fire
-image=http://magiccards.info/scans/en/chk/14.jpg
+image=http://magiccards.info/scans/en/ema/13.jpg
+image_updated=2016-09-10
 value=3.727
 rarity=U
 type=Legendary,Enchantment
 subtype=Shrine
 cost={3}{W}
 ability=At the beginning of your upkeep, you gain 2 life for each Shrine you control.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, you gain 2 life for each Shrine you control.

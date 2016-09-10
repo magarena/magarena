@@ -1,5 +1,6 @@
 name=Keldon Marauders
-image=http://magiccards.info/scans/en/pc/102.jpg
+image=http://magiccards.info/scans/en/ema/136.jpg
+image_updated=2016-09-10
 value=3.662
 rarity=C
 type=Creature

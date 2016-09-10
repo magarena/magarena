@@ -1,5 +1,6 @@
 name=Wrath of God
-image=http://magiccards.info/scans/en/c13/27.jpg
+image=http://magiccards.info/scans/en/ema/38.jpg
+image_updated=2016-09-10
 value=4.435
 removal=2
 rarity=R

@@ -1,5 +1,6 @@
 name=Fervent Cathar
-image=http://magiccards.info/scans/en/avr/135.jpg
+image=http://magiccards.info/scans/en/ema/129.jpg
+image_updated=2016-09-10
 value=2.564
 rarity=C
 type=Creature
