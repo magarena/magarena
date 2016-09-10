@@ -1,5 +1,6 @@
 name=Fiery Hellhound
-image=http://magiccards.info/scans/en/ddi/49.jpg
+image=http://magiccards.info/scans/en/ori/284.jpg
+image_updated=2010-09-10
 value=2.864
 rarity=C
 type=Creature

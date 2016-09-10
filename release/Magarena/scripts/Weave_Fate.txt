@@ -1,5 +1,6 @@
 name=Weave Fate
-image=http://magiccards.info/scans/en/ktk/61.jpg
+image=http://magiccards.info/scans/en/ori/279.jpg
+image_updated=2010-09-10
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,6 @@
 name=Divine Verdict
-image=http://magiccards.info/scans/en/m15/271.jpg
+image=http://magiccards.info/scans/en/ori/274.jpg
+image_updated=2010-09-10
 value=2.400
 rarity=C
 type=Instant

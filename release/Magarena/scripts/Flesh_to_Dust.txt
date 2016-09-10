@@ -1,5 +1,6 @@
 name=Flesh to Dust
-image=http://magiccards.info/scans/en/m15/98.jpg
+image=http://magiccards.info/scans/en/ori/280.jpg
+image_updated=2010-09-10
 value=2.812
 rarity=C
 type=Instant
