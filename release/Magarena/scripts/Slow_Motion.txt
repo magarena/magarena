@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability=When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
+ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=destroy,neg creature
 requires_groovy_code

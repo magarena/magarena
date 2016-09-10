@@ -8,7 +8,7 @@ cost={B}{B}
 ability=Enchant creature;\
         Enchanted creature has infect.;\
         At the beginning of your upkeep, put a -1/-1 counter on enchanted creature.;\
-        When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has infect.\nAt the beginning of your upkeep, put a -1/-1 counter on enchanted creature.\nWhen Glistening Oil is put into a graveyard from the battlefield, return Glistening Oil to its owner's hand.
