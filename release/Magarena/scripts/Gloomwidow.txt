@@ -1,5 +1,6 @@
 name=Gloomwidow
-image=http://magiccards.info/scans/en/avr/180.jpg
+image=http://magiccards.info/scans/en/soi/206.jpg
+image_updated=2010-09-10
 value=2.667
 rarity=U
 type=Creature
