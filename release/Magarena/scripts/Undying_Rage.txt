@@ -8,7 +8,7 @@ subtype=Aura
 cost={2}{R}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 and can't block.;\
-        When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and can't block.\nWhen Undying Rage is put into a graveyard from the battlefield, return Undying Rage to its owner's hand.
