@@ -145,7 +145,7 @@ cards/staples_unknown.txt: cards/staples.txt cards/unknown.txt
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 	
-release/Magarena/mods/felt_theme.zip:
+release/Magarena/themes/felt_theme.zip:
 	wget https://github.com/magarena/magarena-themes/releases/download/1.0/felt_theme.zip -O $@
 
 M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
