@@ -1,5 +1,6 @@
 name=Pore Over the Pages
-image=http://magiccards.info/scans/en/ddq/28.jpg
+image=http://magiccards.info/scans/en/soi/79.jpg
+image_updated=2010-09-10
 value=2.500
 rarity=U
 type=Sorcery

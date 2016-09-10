@@ -1,5 +1,6 @@
 name=Nightmare
-image=http://magiccards.info/scans/en/m15/276.jpg
+image=http://magiccards.info/scans/en/ori/282.jpg
+image_updated=2010-09-10
 value=3.312
 rarity=R
 type=Creature

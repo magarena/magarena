@@ -1,5 +1,6 @@
 name=Unruly Mob
-image=http://magiccards.info/scans/en/isd/39.jpg
+image=http://magiccards.info/scans/en/soi/47.jpg
+image_updated=2010-09-10
 value=3.425
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Eerie Interlude
-image=http://magiccards.info/scans/en/ddq/8.jpg
+image=http://magiccards.info/scans/en/soi/16.jpg
+image_updated=2010-09-10
 value=2.500
 rarity=R
 type=Instant

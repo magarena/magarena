@@ -1,5 +1,6 @@
 name=Dead Weight
-image=http://magiccards.info/scans/en/isd/96.jpg
+image=http://magiccards.info/scans/en/soi/106.jpg
+image_updated=2010-09-10
 value=3.787
 rarity=C
 type=Enchantment

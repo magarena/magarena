@@ -1,5 +1,6 @@
 name=Aegis Angel
-image=http://magiccards.info/scans/en/m15/270.jpg
+image=http://magiccards.info/scans/en/ori/273.jpg
+image_updated=2010-09-10
 value=3.438
 rarity=R
 type=Creature

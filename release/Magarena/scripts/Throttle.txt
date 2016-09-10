@@ -1,5 +1,6 @@
 name=Throttle
-image=http://magiccards.info/scans/en/ktk/93.jpg
+image=http://magiccards.info/scans/en/soi/138.jpg
+image_updated=2010-09-10
 value=2.250
 rarity=C
 type=Instant

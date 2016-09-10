@@ -1,7 +1,8 @@
 name=Reckless Scholar
-image=http://magiccards.info/scans/en/cns/104.jpg
+image=http://magiccards.info/scans/en/soi/82.jpg
+image_updated=2010-09-10
 value=3.375
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={2}{U}

@@ -1,5 +1,6 @@
 name=Mind Rot
-image=http://magiccards.info/scans/en/dtk/110.jpg
+image=http://magiccards.info/scans/en/ori/281.jpg
+image_updated=2010-09-10
 value=2.500
 rarity=C
 type=Sorcery

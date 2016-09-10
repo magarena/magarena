@@ -1,5 +1,6 @@
 name=Catalog
-image=http://magiccards.info/scans/en/8e/65.jpg
+image=http://magiccards.info/scans/en/soi/51.jpg
+image_updated=2010-09-10
 value=2.971
 rarity=C
 type=Instant

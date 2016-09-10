@@ -1,7 +1,8 @@
 name=Lightning Axe
-image=http://magiccards.info/scans/en/ts/168.jpg
+image=http://magiccards.info/scans/en/soi/170.jpg
+image_updated=2010-09-10
 value=4.119
-rarity=C
+rarity=U
 type=Instant
 cost={R}
 ability=As an additional cost to cast SN, discard a card or pay {5}.

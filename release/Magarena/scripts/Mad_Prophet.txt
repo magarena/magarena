@@ -1,7 +1,8 @@
 name=Mad Prophet
-image=http://magiccards.info/scans/en/ddk/51.jpg
+image=http://magiccards.info/scans/en/soi/171.jpg
+image_updated=2010-09-10
 value=3.094
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Shaman
 cost={3}{R}

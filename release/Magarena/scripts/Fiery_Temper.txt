@@ -1,10 +1,11 @@
 name=Fiery Temper
-image=http://magiccards.info/scans/en/tsts/62.jpg
+image=http://magiccards.info/scans/en/soi/156.jpg
+image_updated=2010-09-10
 value=4.083
 rarity=C
 type=Instant
 cost={1}{R}{R}
-effect=SN deals 3 damage to target creature or player.
 ability=Madness {R}
+effect=SN deals 3 damage to target creature or player.
 timing=removal
 oracle=Fiery Temper deals 3 damage to target creature or player.\nMadness {R}
