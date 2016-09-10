@@ -8,7 +8,7 @@ subtype=Aura
 cost={G}
 ability=Enchant creature;\
         Enchanted creature gets +2/+0 and has trample.;\
-        When SN is put into a graveyard from the battlefield, return SN the graveyard to its owner's hand.
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=trample,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+0 and has trample.\nWhen Rancor is put into a graveyard from the battlefield, return Rancor to its owner's hand.
