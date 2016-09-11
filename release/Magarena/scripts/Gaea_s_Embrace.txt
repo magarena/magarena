@@ -1,5 +1,5 @@
 name=Gaea's Embrace
-image=http://magiccards.info/scans/en/vma/211.jpg
+image=http://magiccards.info/scans/en/us/255.jpg
 value=4.150
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Ivory Tower
-image=http://magiccards.info/scans/en/vma/269.jpg
+image=http://magiccards.info/scans/en/4e/346.jpg
 value=4.000
 rarity=U
 type=Artifact

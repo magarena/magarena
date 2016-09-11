@@ -1,5 +1,5 @@
 name=Skirk Drill Sergeant
-image=http://magiccards.info/scans/en/vma/185.jpg
+image=http://magiccards.info/scans/en/le/112.jpg
 value=2.500
 rarity=C
 type=Creature

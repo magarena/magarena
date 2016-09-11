@@ -1,5 +1,5 @@
 name=Masticore
-image=http://magiccards.info/scans/en/vma/275.jpg
+image=http://magiccards.info/scans/en/ud/134.jpg
 value=4.000
 rarity=M
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Addle
-image=http://magiccards.info/scans/en/vma/103.jpg
+image=http://magiccards.info/scans/en/in/91.jpg
 value=0.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Goblin Settler
-image=http://magiccards.info/scans/en/vma/172.jpg
+image=http://magiccards.info/scans/en/st/106.jpg
 value=3.689
 removal=1
 rarity=U

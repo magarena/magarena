@@ -1,5 +1,5 @@
 name=Spark Spray
-image=http://magiccards.info/scans/en/vma/188.jpg
+image=http://magiccards.info/scans/en/sc/105.jpg
 value=2.500
 rarity=C
 type=Instant

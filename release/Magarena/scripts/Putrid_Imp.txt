@@ -1,5 +1,5 @@
 name=Putrid Imp
-image=http://magiccards.info/scans/en/vma/135.jpg
+image=http://magiccards.info/scans/en/tr/77.jpg
 value=4.000
 rarity=C
 type=Creature

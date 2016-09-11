@@ -1,5 +1,5 @@
 name=Karn, Silver Golem
-image=http://magiccards.info/scans/en/vma/270.jpg
+image=http://magiccards.info/scans/en/us/298.jpg
 value=4.500
 rarity=M
 type=Legendary,Artifact,Creature

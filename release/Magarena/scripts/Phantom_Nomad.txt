@@ -1,5 +1,5 @@
 name=Phantom Nomad
-image=http://magiccards.info/scans/en/vma/38.jpg
+image=http://magiccards.info/scans/en/ju/17.jpg
 value=3.513
 rarity=C
 type=Creature

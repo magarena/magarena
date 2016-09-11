@@ -1,5 +1,5 @@
 name=Bayou
-image=http://magiccards.info/scans/en/vma/293.jpg
+image=http://magiccards.info/scans/en/rv/283.jpg
 value=4.500
 rarity=R
 type=Land

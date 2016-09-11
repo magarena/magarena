@@ -1,5 +1,5 @@
 name=Volcanic Island
-image=http://magiccards.info/scans/en/vma/324.jpg
+image=http://magiccards.info/scans/en/rv/306.jpg
 value=4.000
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Lion's Eye Diamond
-image=http://magiccards.info/scans/en/vma/271.jpg
+image=http://magiccards.info/scans/en/mr/272.jpg
 value=4.250
 rarity=M
 type=Artifact

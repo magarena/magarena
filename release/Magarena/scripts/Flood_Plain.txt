@@ -1,5 +1,5 @@
 name=Flood Plain
-image=http://magiccards.info/scans/en/vma/296.jpg
+image=http://magiccards.info/scans/en/ddi/34.jpg
 value=3.000
 rarity=U
 type=Land

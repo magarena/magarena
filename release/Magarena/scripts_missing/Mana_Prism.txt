@@ -1,5 +1,5 @@
 name=Mana Prism
-image=http://magiccards.info/scans/en/vma/273.jpg
+image=http://magiccards.info/scans/en/6e/296.jpg
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Mistmoon Griffin
-image=http://magiccards.info/scans/en/vma/34.jpg
+image=http://magiccards.info/scans/en/wl/137.jpg
 value=2.500
 rarity=C
 type=Creature

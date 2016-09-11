@@ -1,5 +1,5 @@
 name=Paralyze
-image=http://magiccards.info/scans/en/vma/132.jpg
+image=http://magiccards.info/scans/en/5e/47.jpg
 value=4.000
 rarity=C
 type=Enchantment

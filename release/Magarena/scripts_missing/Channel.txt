@@ -1,5 +1,5 @@
 name=Channel
-image=http://magiccards.info/scans/en/vma/200.jpg
+image=http://magiccards.info/scans/en/4e/120.jpg
 value=3.750
 rarity=M
 type=Sorcery

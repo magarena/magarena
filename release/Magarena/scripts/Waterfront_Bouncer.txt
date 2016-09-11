@@ -1,5 +1,5 @@
 name=Waterfront Bouncer
-image=http://magiccards.info/scans/en/vma/102.jpg
+image=http://magiccards.info/scans/en/mm/114.jpg
 value=4.500
 rarity=C
 type=Creature

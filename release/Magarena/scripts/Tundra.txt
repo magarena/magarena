@@ -1,5 +1,5 @@
 name=Tundra
-image=http://magiccards.info/scans/en/vma/322.jpg
+image=http://magiccards.info/scans/en/rv/304.jpg
 value=4.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Hulking Goblin
-image=http://magiccards.info/scans/en/vma/174.jpg
+image=http://magiccards.info/scans/en/st/107.jpg
 value=2.540
 rarity=C
 type=Creature

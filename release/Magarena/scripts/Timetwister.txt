@@ -1,5 +1,5 @@
 name=Timetwister
-image=http://magiccards.info/scans/en/vma/3.jpg
+image=http://magiccards.info/scans/en/un/85.jpg
 value=4.667
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Renewed Faith
-image=http://magiccards.info/scans/en/vma/42.jpg
+image=http://magiccards.info/scans/en/on/50.jpg
 value=2.000
 rarity=C
 type=Instant

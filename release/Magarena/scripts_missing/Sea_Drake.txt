@@ -1,5 +1,5 @@
 name=Sea Drake
-image=http://magiccards.info/scans/en/vma/92.jpg
+image=http://magiccards.info/scans/en/po2/45.jpg
 value=2.500
 rarity=R
 type=Creature

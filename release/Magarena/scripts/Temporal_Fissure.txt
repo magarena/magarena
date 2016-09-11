@@ -1,5 +1,5 @@
 name=Temporal Fissure
-image=http://magiccards.info/scans/en/vma/96.jpg
+image=http://magiccards.info/scans/en/sc/53.jpg
 value=2.932
 rarity=C
 type=Sorcery

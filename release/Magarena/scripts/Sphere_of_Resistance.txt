@@ -1,5 +1,5 @@
 name=Sphere of Resistance
-image=http://magiccards.info/scans/en/vma/284.jpg
+image=http://magiccards.info/scans/en/ex/139.jpg
 value=4.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Fireblast
-image=http://magiccards.info/scans/en/vma/159.jpg
+image=http://magiccards.info/scans/en/ddajvc/55.jpg
 value=4.443
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Tangle
-image=http://magiccards.info/scans/en/vma/237.jpg
+image=http://magiccards.info/scans/en/in/213.jpg
 value=4.000
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Yawgmoth's Bargain
-image=http://magiccards.info/scans/en/vma/147.jpg
+image=http://magiccards.info/scans/en/ud/75.jpg
 value=3.200
 rarity=M
 type=Enchantment

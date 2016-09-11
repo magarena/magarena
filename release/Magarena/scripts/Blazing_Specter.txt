@@ -1,5 +1,5 @@
 name=Blazing Specter
-image=http://magiccards.info/scans/en/vma/245.jpg
+image=http://magiccards.info/scans/en/in/236.jpg
 value=4.500
 rarity=R
 type=Creature

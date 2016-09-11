@@ -1,5 +1,5 @@
 name=Ancient Tomb
-image=http://magiccards.info/scans/en/vma/289.jpg
+image=http://magiccards.info/scans/en/tp/305.jpg
 value=4.333
 rarity=R
 type=Land

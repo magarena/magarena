@@ -1,5 +1,5 @@
 name=Volrath's Shapeshifter
-image=http://magiccards.info/scans/en/vma/101.jpg
+image=http://magiccards.info/scans/en/sh/48.jpg
 value=2.500
 rarity=R
 type=Creature

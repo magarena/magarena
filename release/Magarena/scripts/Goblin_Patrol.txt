@@ -1,5 +1,5 @@
 name=Goblin Patrol
-image=http://magiccards.info/scans/en/vma/169.jpg
+image=http://magiccards.info/scans/en/us/193.jpg
 value=3.424
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Orcish Lumberjack
-image=http://magiccards.info/scans/en/vma/179.jpg
+image=http://magiccards.info/scans/en/cstd/36.jpg
 value=4.500
 rarity=C
 type=Creature

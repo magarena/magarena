@@ -1,5 +1,5 @@
 name=Mana Drain
-image=http://magiccards.info/scans/en/vma/78.jpg
+image=http://magiccards.info/scans/en/lg/65.jpg
 value=3.750
 rarity=M
 type=Instant

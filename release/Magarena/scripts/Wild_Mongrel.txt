@@ -1,5 +1,5 @@
 name=Wild Mongrel
-image=http://magiccards.info/scans/en/vma/239.jpg
+image=http://magiccards.info/scans/en/od/283.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Deranged Hermit
-image=http://magiccards.info/scans/en/vma/202.jpg
+image=http://magiccards.info/scans/en/ul/101.jpg
 value=4.420
 rarity=R
 type=Creature

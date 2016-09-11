@@ -1,5 +1,5 @@
 name=Predatory Nightstalker
-image=http://magiccards.info/scans/en/vma/134.jpg
+image=http://magiccards.info/scans/en/po2/22.jpg
 value=2.500
 rarity=C
 type=Creature

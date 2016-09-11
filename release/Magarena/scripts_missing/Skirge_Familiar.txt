@@ -1,5 +1,5 @@
 name=Skirge Familiar
-image=http://magiccards.info/scans/en/vma/140.jpg
+image=http://magiccards.info/scans/en/us/157.jpg
 value=2.500
 rarity=C
 type=Creature

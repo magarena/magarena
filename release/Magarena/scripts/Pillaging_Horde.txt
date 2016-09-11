@@ -1,5 +1,5 @@
 name=Pillaging Horde
-image=http://magiccards.info/scans/en/vma/180.jpg
+image=http://magiccards.info/scans/en/po/147.jpg
 value=2.000
 rarity=R
 type=Creature

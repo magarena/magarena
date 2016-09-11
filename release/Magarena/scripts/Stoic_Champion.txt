@@ -1,5 +1,5 @@
 name=Stoic Champion
-image=http://magiccards.info/scans/en/vma/50.jpg
+image=http://magiccards.info/scans/en/le/21.jpg
 value=2.500
 rarity=U
 type=Creature

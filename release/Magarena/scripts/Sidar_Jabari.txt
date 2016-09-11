@@ -1,5 +1,5 @@
 name=Sidar Jabari
-image=http://magiccards.info/scans/en/vma/45.jpg
+image=http://magiccards.info/scans/en/mr/243.jpg
 value=3.844
 rarity=R
 type=Legendary,Creature

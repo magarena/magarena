@@ -1,5 +1,5 @@
 name=Exile
-image=http://magiccards.info/scans/en/vma/27.jpg
+image=http://magiccards.info/scans/en/6e/21.jpg
 value=3.500
 rarity=C
 type=Instant

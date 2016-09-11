@@ -1,5 +1,5 @@
 name=Nostalgic Dreams
-image=http://magiccards.info/scans/en/vma/222.jpg
+image=http://magiccards.info/scans/en/tr/135.jpg
 value=4.000
 rarity=U
 type=Sorcery

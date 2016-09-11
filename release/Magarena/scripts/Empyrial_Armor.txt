@@ -1,5 +1,5 @@
 name=Empyrial Armor
-image=http://magiccards.info/scans/en/vma/25.jpg
+image=http://magiccards.info/scans/en/wl/129.jpg
 value=3.500
 rarity=C
 type=Enchantment

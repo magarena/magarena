@@ -1,5 +1,5 @@
 name=Phyrexian Defiler
-image=http://magiccards.info/scans/en/vma/133.jpg
+image=http://magiccards.info/scans/en/ul/60.jpg
 value=3.500
 rarity=U
 type=Creature

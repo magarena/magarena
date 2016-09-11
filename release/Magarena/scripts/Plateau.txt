@@ -1,5 +1,5 @@
 name=Plateau
-image=http://magiccards.info/scans/en/vma/308.jpg
+image=http://magiccards.info/scans/en/rv/296.jpg
 value=4.500
 rarity=R
 type=Land

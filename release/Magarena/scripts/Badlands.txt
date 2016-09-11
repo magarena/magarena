@@ -1,5 +1,5 @@
 name=Badlands
-image=http://magiccards.info/scans/en/vma/291.jpg
+image=http://magiccards.info/scans/en/rv/282.jpg
 value=4.500
 rarity=R
 type=Land

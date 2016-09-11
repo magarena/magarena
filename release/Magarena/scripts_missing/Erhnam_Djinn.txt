@@ -1,5 +1,5 @@
 name=Erhnam Djinn
-image=http://magiccards.info/scans/en/vma/207.jpg
+image=http://magiccards.info/scans/en/ju/113.jpg
 value=2.500
 rarity=U
 type=Creature

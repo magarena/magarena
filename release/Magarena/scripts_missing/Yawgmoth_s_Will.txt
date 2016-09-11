@@ -1,5 +1,5 @@
 name=Yawgmoth's Will
-image=http://magiccards.info/scans/en/vma/148.jpg
+image=http://magiccards.info/scans/en/us/171.jpg
 value=5.000
 rarity=M
 type=Sorcery

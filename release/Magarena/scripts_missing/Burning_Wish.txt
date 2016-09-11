@@ -1,5 +1,5 @@
 name=Burning Wish
-image=http://magiccards.info/scans/en/vma/152.jpg
+image=http://magiccards.info/scans/en/ju/83.jpg
 value=2.500
 rarity=R
 type=Sorcery

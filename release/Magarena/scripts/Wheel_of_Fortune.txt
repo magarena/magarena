@@ -1,5 +1,5 @@
 name=Wheel of Fortune
-image=http://magiccards.info/scans/en/vma/192.jpg
+image=http://magiccards.info/scans/en/rv/184.jpg
 value=4.500
 rarity=M
 type=Sorcery

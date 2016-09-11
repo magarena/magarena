@@ -1,5 +1,5 @@
 name=Lurking Evil
-image=http://magiccards.info/scans/en/vma/127.jpg
+image=http://magiccards.info/scans/en/us/140.jpg
 value=2.500
 rarity=R
 type=Enchantment

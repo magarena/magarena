@@ -1,5 +1,5 @@
 name=Genesis
-image=http://magiccards.info/scans/en/vma/212.jpg
+image=http://magiccards.info/scans/en/ju/117.jpg
 value=4.000
 rarity=R
 type=Creature

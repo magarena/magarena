@@ -1,5 +1,5 @@
 name=Sudden Strength
-image=http://magiccards.info/scans/en/vma/233.jpg
+image=http://magiccards.info/scans/en/ju/132.jpg
 value=1.597
 rarity=C
 type=Instant

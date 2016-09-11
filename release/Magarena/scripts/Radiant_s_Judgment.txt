@@ -1,5 +1,5 @@
 name=Radiant's Judgment
-image=http://magiccards.info/scans/en/vma/41.jpg
+image=http://magiccards.info/scans/en/ul/22.jpg
 value=3.500
 removal=3
 rarity=C

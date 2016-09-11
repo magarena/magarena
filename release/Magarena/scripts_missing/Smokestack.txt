@@ -1,5 +1,5 @@
 name=Smokestack
-image=http://magiccards.info/scans/en/vma/282.jpg
+image=http://magiccards.info/scans/en/us/309.jpg
 value=4.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Tropical Island
-image=http://magiccards.info/scans/en/vma/321.jpg
+image=http://magiccards.info/scans/en/rv/303.jpg
 value=4.500
 rarity=R
 type=Land

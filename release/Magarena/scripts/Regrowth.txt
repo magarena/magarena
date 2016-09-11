@@ -1,5 +1,5 @@
 name=Regrowth
-image=http://magiccards.info/scans/en/vma/227.jpg
+image=http://magiccards.info/scans/en/rv/121.jpg
 value=4.500
 rarity=R
 type=Sorcery

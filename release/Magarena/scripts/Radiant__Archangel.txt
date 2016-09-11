@@ -1,5 +1,5 @@
 name=Radiant, Archangel
-image=http://magiccards.info/scans/en/vma/40.jpg
+image=http://magiccards.info/scans/en/ul/20.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Choking Sands
-image=http://magiccards.info/scans/en/vma/109.jpg
+image=http://magiccards.info/scans/en/mr/11.jpg
 value=4.000
 rarity=C
 type=Sorcery

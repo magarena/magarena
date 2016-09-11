@@ -1,5 +1,5 @@
 name=Goblin Goon
-image=http://magiccards.info/scans/en/vma/166.jpg
+image=http://magiccards.info/scans/en/le/99.jpg
 value=2.500
 rarity=R
 type=Creature

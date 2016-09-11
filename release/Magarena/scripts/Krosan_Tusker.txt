@@ -1,5 +1,5 @@
 name=Krosan Tusker
-image=http://magiccards.info/scans/en/c13/154.jpg
+image=http://magiccards.info/scans/en/cmd/164.jpg
 value=4.000
 rarity=C
 type=Creature

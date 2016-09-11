@@ -1,5 +1,5 @@
 name=Brain Freeze
-image=http://magiccards.info/scans/en/vma/57.jpg
+image=http://magiccards.info/scans/en/sc/29.jpg
 value=4.000
 rarity=U
 type=Instant

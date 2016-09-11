@@ -1,5 +1,5 @@
 name=Nature's Lore
-image=http://magiccards.info/scans/en/vma/220.jpg
+image=http://magiccards.info/scans/en/st/136.jpg
 value=4.000
 rarity=C
 type=Sorcery

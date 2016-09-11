@@ -1,5 +1,5 @@
 name=Mystic Zealot
-image=http://magiccards.info/scans/en/vma/35.jpg
+image=http://magiccards.info/scans/en/od/36.jpg
 value=3.380
 rarity=C
 type=Creature

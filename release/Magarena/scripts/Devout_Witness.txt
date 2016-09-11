@@ -1,5 +1,5 @@
 name=Devout Witness
-image=http://magiccards.info/scans/en/vma/24.jpg
+image=http://magiccards.info/scans/en/mm/17.jpg
 value=4.500
 rarity=C
 type=Creature

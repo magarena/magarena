@@ -1,5 +1,5 @@
 name=High Tide
-image=http://magiccards.info/scans/en/vma/73.jpg
+image=http://magiccards.info/scans/en/fe/35.jpg
 value=4.500
 rarity=U
 type=Instant

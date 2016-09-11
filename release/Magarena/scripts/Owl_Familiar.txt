@@ -1,5 +1,5 @@
 name=Owl Familiar
-image=http://magiccards.info/scans/en/vma/85.jpg
+image=http://magiccards.info/scans/en/st/43.jpg
 value=3.233
 rarity=C
 type=Creature

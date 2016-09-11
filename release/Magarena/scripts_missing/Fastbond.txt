@@ -1,5 +1,5 @@
 name=Fastbond
-image=http://magiccards.info/scans/en/vma/209.jpg
+image=http://magiccards.info/scans/en/rv/101.jpg
 value=4.875
 rarity=M
 type=Enchantment

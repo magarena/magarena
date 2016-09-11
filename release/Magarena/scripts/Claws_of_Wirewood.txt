@@ -1,5 +1,5 @@
 name=Claws of Wirewood
-image=http://magiccards.info/scans/en/vma/201.jpg
+image=http://magiccards.info/scans/en/sc/114.jpg
 value=3.091
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Æther Mutation
-image=http://magiccards.info/scans/en/vma/241.jpg
+image=http://magiccards.info/scans/en/ap/91.jpg
 value=3.500
 rarity=U
 type=Sorcery
