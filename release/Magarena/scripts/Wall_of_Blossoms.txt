@@ -1,6 +1,6 @@
 name=Wall of Blossoms
-image=http://magiccards.info/scans/en/c15/211.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/pc2/81.jpg
+image_updated=2016-09-11
 value=4.297
 rarity=U
 type=Creature

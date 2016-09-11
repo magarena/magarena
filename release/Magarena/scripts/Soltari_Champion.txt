@@ -1,8 +1,8 @@
 name=Soltari Champion
-image=http://magiccards.info/scans/en/tpr/29.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/118.jpg
+image_updated=2016-09-11
 value=4.408
-rarity=U
+rarity=R
 type=Creature
 subtype=Soltari,Soldier
 cost={2}{W}

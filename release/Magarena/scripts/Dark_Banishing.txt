@@ -1,5 +1,6 @@
 name=Dark Banishing
-image=http://magiccards.info/scans/en/dvd/50.jpg
+image=http://magiccards.info/scans/en/9e/122.jpg
+image_updated=2016-09-11
 value=3.911
 rarity=C
 type=Instant

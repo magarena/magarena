@@ -1,5 +1,6 @@
 name=Soltari Trooper
-image=http://magiccards.info/scans/en/vma/47.jpg
+image=http://magiccards.info/scans/en/tp/259.jpg
+image_updated=2016-09-11
 value=3.871
 rarity=C
 type=Creature

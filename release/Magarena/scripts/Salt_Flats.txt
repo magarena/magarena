@@ -1,5 +1,6 @@
 name=Salt Flats
-image=http://magiccards.info/scans/en/vma/310.jpg
+image=http://magiccards.info/scans/en/tp/330.jpg
+image_updated=2016-09-11
 value=2.838
 rarity=R
 type=Land

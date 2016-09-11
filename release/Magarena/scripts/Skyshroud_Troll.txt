@@ -1,6 +1,6 @@
 name=Skyshroud Troll
-image=http://magiccards.info/scans/en/tpr/193.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/151.jpg
+image_updated=2016-09-11
 value=3.452
 rarity=C
 type=Creature

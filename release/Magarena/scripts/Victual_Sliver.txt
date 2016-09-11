@@ -1,6 +1,6 @@
 name=Victual Sliver
-image=http://magiccards.info/scans/en/tpr/215.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/143.jpg
+image_updated=2016-09-11
 value=3.737
 rarity=U
 type=Creature

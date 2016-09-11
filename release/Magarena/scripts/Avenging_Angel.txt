@@ -1,8 +1,8 @@
 name=Avenging Angel
-image=http://magiccards.info/scans/en/tpr/6.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/219.jpg
+image_updated=2016-09-11
 value=3.317
-rarity=U
+rarity=R
 type=Creature
 subtype=Angel
 cost={3}{W}{W}

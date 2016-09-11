@@ -1,5 +1,6 @@
 name=Tradewind Rider
-image=http://magiccards.info/scans/en/vma/98.jpg
+image=http://magiccards.info/scans/en/tp/98.jpg
+image_updated=2016-09-11
 value=2.500
 rarity=R
 type=Creature

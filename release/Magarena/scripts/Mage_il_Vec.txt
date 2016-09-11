@@ -1,8 +1,8 @@
 name=Mage il-Vec
-image=http://magiccards.info/scans/en/tpr/140.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/ex/86.jpg
+image_updated=2016-09-11
 value=1.478
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={2}{R}

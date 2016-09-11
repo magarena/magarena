@@ -1,5 +1,6 @@
 name=Wall of Diffusion
-image=http://magiccards.info/scans/en/vma/191.jpg
+image=http://magiccards.info/scans/en/tp/211.jpg
+image_updated=2016-09-11
 value=3.184
 rarity=C
 type=Creature

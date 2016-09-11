@@ -1,6 +1,6 @@
 name=Hibernation Sliver
-image=http://magiccards.info/scans/en/tpr/209.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/140.jpg
+image_updated=2016-09-11
 value=4.145
 rarity=U
 type=Creature

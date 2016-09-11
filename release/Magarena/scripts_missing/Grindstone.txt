@@ -1,8 +1,8 @@
 name=Grindstone
-image=http://magiccards.info/scans/en/tpr/223.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/280.jpg
+image_updated=2016-09-11
 value=2.500
-rarity=M
+rarity=R
 type=Artifact
 cost={1}
 ability={3}, {T}: Target player puts the top two cards of his or her library into his or her graveyard. If both cards share a color, repeat this process.

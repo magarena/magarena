@@ -1,6 +1,6 @@
 name=Dauthi Horror
-image=http://magiccards.info/scans/en/tpr/94.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/16.jpg
+image_updated=2016-09-11
 value=4.083
 rarity=C
 type=Creature

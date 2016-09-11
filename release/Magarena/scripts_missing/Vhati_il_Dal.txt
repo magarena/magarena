@@ -1,6 +1,6 @@
 name=Vhati il-Dal
-image=http://magiccards.info/scans/en/tpr/214.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tsts/104.jpg
+image_updated=2016-09-11
 value=2.500
 rarity=R
 type=Legendary,Creature

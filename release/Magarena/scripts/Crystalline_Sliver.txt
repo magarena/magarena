@@ -1,6 +1,6 @@
 name=Crystalline Sliver
-image=http://magiccards.info/scans/en/tpr/207.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/139.jpg
+image_updated=2016-09-11
 value=4.421
 rarity=U
 type=Creature

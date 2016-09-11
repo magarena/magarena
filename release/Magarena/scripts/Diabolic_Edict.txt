@@ -1,5 +1,6 @@
 name=Diabolic Edict
-image=http://magiccards.info/scans/en/bd/23.jpg
+image=http://magiccards.info/scans/en/tp/22.jpg
+image_updated=2016-09-11
 value=4.574
 removal=3
 rarity=C

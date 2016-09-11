@@ -1,5 +1,6 @@
 name=Wayward Soul
-image=http://magiccards.info/scans/en/bd/18.jpg
+image=http://magiccards.info/scans/en/ex/51.jpg
+image_updated=2016-09-11
 value=3.019
 rarity=C
 type=Creature

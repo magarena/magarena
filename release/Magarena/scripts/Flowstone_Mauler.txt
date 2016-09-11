@@ -1,8 +1,8 @@
 name=Flowstone Mauler
-image=http://magiccards.info/scans/en/tpr/133.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/85.jpg
+image_updated=2016-09-11
 value=2.742
-rarity=U
+rarity=R
 type=Creature
 subtype=Beast
 cost={4}{R}{R}

@@ -1,6 +1,6 @@
 name=Commander Greven il-Vec
-image=http://magiccards.info/scans/en/tpr/88.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/9.jpg
+image_updated=2016-09-11
 value=4.007
 rarity=R
 type=Legendary,Creature

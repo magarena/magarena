@@ -1,12 +1,13 @@
 name=Necrologia
-image=http://magiccards.info/scans/en/tpr/110.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/7e/149.jpg
+image_updated=2016-09-11
 value=2.500
-rarity=R
+rarity=U
 type=Instant
 cost={3}{B}{B}
-ability=As an additional cost to cast SN, pay X life.
-effect=Cast SN only during your end step.~Draw X cards.
+ability=As an additional cost to cast SN, pay X life.;\
+        Cast SN only during your end step.     
+effect=Draw X cards.
 timing=removal
 oracle=Cast Necrologia only during your end step.\nAs an additional cost to cast Necrologia, pay X life.\nDraw X cards.
 status=not supported: non-mana-x-cost

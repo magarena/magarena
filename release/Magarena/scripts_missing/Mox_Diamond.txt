@@ -1,8 +1,8 @@
 name=Mox Diamond
-image=http://magiccards.info/scans/en/tpr/228.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/132.jpg
+image_updated=2016-09-11
 value=2.500
-rarity=M
+rarity=R
 type=Artifact
 cost={0}
 ability=If SN would enter the battlefield, you may discard a land card instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\

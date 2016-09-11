@@ -1,5 +1,6 @@
 name=Stalking Stones
-image=http://magiccards.info/scans/en/ddf/75.jpg
+image=http://magiccards.info/scans/en/mi/284.jpg
+image_updated=2016-09-11
 value=3.500
 rarity=U
 type=Land

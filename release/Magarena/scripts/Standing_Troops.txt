@@ -1,5 +1,6 @@
 name=Standing Troops
-image=http://magiccards.info/scans/en/ddo/25.jpg
+image=http://magiccards.info/scans/en/8e/48.jpg
+image_updated=2016-09-11
 value=2.636
 rarity=C
 type=Creature

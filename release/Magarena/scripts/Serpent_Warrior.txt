@@ -1,6 +1,6 @@
 name=Serpent Warrior
-image=http://magiccards.info/scans/en/tpr/117.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/9e/162.jpg
+image_updated=2016-09-11
 value=1.615
 rarity=C
 type=Creature

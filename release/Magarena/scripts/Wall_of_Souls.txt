@@ -1,6 +1,6 @@
 name=Wall of Souls
-image=http://magiccards.info/scans/en/tpr/123.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/sh/25.jpg
+image_updated=2016-09-11
 value=4.255
 rarity=U
 type=Creature

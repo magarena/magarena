@@ -1,6 +1,6 @@
 name=Ogre Shaman
-image=http://magiccards.info/scans/en/tpr/148.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/ex/91.jpg
+image_updated=2016-09-11
 value=2.922
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Exalted Dragon
-image=http://magiccards.info/scans/en/tpr/12.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/ex/6.jpg
+image_updated=2016-09-11
 value=2.500
 rarity=R
 type=Creature

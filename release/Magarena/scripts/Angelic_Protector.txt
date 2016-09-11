@@ -1,5 +1,6 @@
 name=Angelic Protector
-image=http://magiccards.info/scans/en/dvd/6.jpg
+image=http://magiccards.info/scans/en/tp/214.jpg
+image_updated=2016-09-11
 value=2.979
 rarity=U
 type=Creature

@@ -1,8 +1,8 @@
 name=Rootwater Hunter
-image=http://magiccards.info/scans/en/tpr/63.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/82.jpg
+image_updated=2016-09-11
 value=3.569
-rarity=U
+rarity=C
 type=Creature
 subtype=Merfolk
 cost={2}{U}

@@ -1,8 +1,8 @@
 name=Cataclysm
-image=http://magiccards.info/scans/en/tpr/8.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/ex/3.jpg
+image_updated=2016-09-11
 value=2.500
-rarity=M
+rarity=R
 type=Sorcery
 cost={2}{W}{W}
 effect=Each player chooses from among the permanents he or she controls an artifact, a creature, an enchantment, and a land, then sacrifices the rest.

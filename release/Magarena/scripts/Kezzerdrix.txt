@@ -1,5 +1,6 @@
 name=Kezzerdrix
-image=http://magiccards.info/scans/en/vma/124.jpg
+image=http://magiccards.info/scans/en/tp/33.jpg
+image_updated=2016-09-11
 value=2.875
 rarity=R
 type=Creature

@@ -1,5 +1,6 @@
 name=Crovax the Cursed
-image=http://magiccards.info/scans/en/vma/110.jpg
+image=http://magiccards.info/scans/en/sh/5.jpg
+image_updated=2016-09-11
 value=2.500
 rarity=R
 type=Legendary,Creature

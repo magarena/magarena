@@ -1,5 +1,6 @@
 name=Thopter Squadron
-image=http://magiccards.info/scans/en/vma/286.jpg
+image=http://magiccards.info/scans/en/ex/140.jpg
+image_updated=2016-09-11
 value=2.500
 rarity=R
 type=Artifact,Creature

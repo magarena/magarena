@@ -1,8 +1,8 @@
 name=Legacy's Allure
-image=http://magiccards.info/scans/en/tpr/56.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/71.jpg
+image_updated=2016-09-11
 value=3.912
-rarity=R
+rarity=U
 type=Enchantment
 cost={U}{U}
 ability=At the beginning of your upkeep, you may put a treasure counter on SN.

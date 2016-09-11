@@ -1,8 +1,8 @@
 name=Thrull Surgeon
-image=http://magiccards.info/scans/en/tpr/121.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/10e/183.jpg
+image_updated=2016-09-11
 value=2.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Thrull
 cost={1}{B}

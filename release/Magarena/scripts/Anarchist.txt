@@ -1,7 +1,7 @@
 name=Anarchist
 image=http://magiccards.info/scans/en/9e/173.jpg
 value=3.367
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={4}{R}

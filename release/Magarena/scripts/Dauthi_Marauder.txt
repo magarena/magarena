@@ -1,8 +1,8 @@
 name=Dauthi Marauder
-image=http://magiccards.info/scans/en/tpr/96.jpg
-image_updated=2015-11-14
+image=http://magiccards.info/scans/en/tp/17.jpg
+image_updated=2016-09-11
 value=3.889
-rarity=U
+rarity=C
 type=Creature
 subtype=Dauthi,Minion
 cost={2}{B}

@@ -1,6 +1,6 @@
 name=Silver Wyvern
-image=http://magiccards.info/scans/en/tpr/68.jpg
-image_updated=2015-11-16
+image=http://magiccards.info/scans/en/sh/43.jpg
+image_updated=2016-09-11
 value=2.500
 rarity=R
 type=Creature
