@@ -1,5 +1,6 @@
 name=Stun Sniper
-image=http://magiccards.info/scans/en/ddl/7.jpg
+image=http://magiccards.info/scans/en/arb/100.jpg
+image_updated=2016-09-12
 value=3.769
 rarity=U
 type=Creature

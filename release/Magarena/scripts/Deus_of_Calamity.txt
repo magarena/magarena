@@ -1,5 +1,6 @@
 name=Deus of Calamity
-image=http://magiccards.info/scans/en/ddl/54.jpg
+image=http://magiccards.info/scans/en/shm/204.jpg
+image_updated=2016-09-12
 value=3.868
 rarity=R
 type=Creature

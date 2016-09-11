@@ -1,5 +1,6 @@
 name=Zhur-Taa Druid
-image=http://magiccards.info/scans/en/ddl/48.jpg
+image=http://magiccards.info/scans/en/dgm/120.jpg
+image_updated=2016-09-12
 value=3.759
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Pyroclasm
-image=http://magiccards.info/scans/en/ddl/63.jpg
+image=http://magiccards.info/scans/en/m11/154.jpg
+image_updated=2016-09-12
 value=4.569
 removal=2
 rarity=U

@@ -1,5 +1,6 @@
 name=Fencing Ace
-image=http://magiccards.info/scans/en/ddl/5.jpg
+image=http://magiccards.info/scans/en/rtr/11.jpg
+image_updated=2016-09-12
 value=3.967
 rarity=U
 type=Creature

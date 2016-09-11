@@ -1,5 +1,6 @@
 name=Miraculous Recovery
-image=http://magiccards.info/scans/en/ddl/30.jpg
+image=http://magiccards.info/scans/en/vi/113.jpg
+image_updated=2016-09-12
 value=4.304
 rarity=U
 type=Instant

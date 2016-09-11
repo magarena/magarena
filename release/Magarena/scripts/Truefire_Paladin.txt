@@ -1,5 +1,6 @@
 name=Truefire Paladin
-image=http://magiccards.info/scans/en/ddl/8.jpg
+image=http://magiccards.info/scans/en/gtc/202.jpg
+image_updated=2016-09-12
 value=3.917
 rarity=U
 type=Creature

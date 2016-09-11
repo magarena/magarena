@@ -1,5 +1,6 @@
 name=Pay No Heed
-image=http://magiccards.info/scans/en/ddl/19.jpg
+image=http://magiccards.info/scans/en/tr/12.jpg
+image_updated=2016-09-12
 value=2.909
 rarity=C
 type=Instant

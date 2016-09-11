@@ -1,5 +1,6 @@
 name=Dawnstrike Paladin
-image=http://magiccards.info/scans/en/ddl/14.jpg
+image=http://magiccards.info/scans/en/m14/15.jpg
+image_updated=2016-09-12
 value=2.667
 rarity=C
 type=Creature

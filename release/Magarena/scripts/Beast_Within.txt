@@ -1,5 +1,6 @@
 name=Beast Within
-image=http://magiccards.info/scans/en/ddl/69.jpg
+image=http://magiccards.info/scans/en/pc2/57.jpg
+image_updated=2016-09-12
 value=4.561
 rarity=U
 type=Instant

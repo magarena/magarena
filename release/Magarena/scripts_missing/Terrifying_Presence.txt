@@ -1,5 +1,6 @@
 name=Terrifying Presence
-image=http://magiccards.info/scans/en/ddl/65.jpg
+image=http://magiccards.info/scans/en/avr/196.jpg
+image_updated=2016-09-12
 value=3.955
 rarity=C
 type=Instant
