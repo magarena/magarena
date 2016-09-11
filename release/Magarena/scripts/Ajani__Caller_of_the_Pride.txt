@@ -6,8 +6,8 @@ type=Planeswalker
 subtype=Ajani
 cost={1}{W}{W}
 ability=+1: You may put a +1/+1 counter on target creature.;\
-        −3: Target creature gains flying and double strike until end of turn.
+        −3: Target creature gains flying and double strike until end of turn.;\
+        −8: Put X 2/2 white Cat creature tokens onto the battlefield, where X is your life total.
 loyalty=4
 timing=main
-requires_groovy_code
 oracle=+1: Put a +1/+1 counter on up to one target creature.\n−3: Target creature gains flying and double strike until end of turn.\n−8: Put X 2/2 white Cat creature tokens onto the battlefield, where X is your life total.
