@@ -1,6 +1,5 @@
 name=Glimmerpoint Stag
 image=http://magiccards.info/scans/en/ema/12.jpg
-image_updated=2016-09-10
 value=3.857
 rarity=U
 type=Creature

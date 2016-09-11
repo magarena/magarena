@@ -1,6 +1,5 @@
 name=Malice
 image=http://magiccards.info/scans/en/in/293b.jpg
-image_updated=2016-09-10
 value=3.333
 rarity=U
 type=Instant

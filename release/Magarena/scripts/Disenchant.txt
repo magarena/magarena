@@ -1,6 +1,5 @@
 name=Disenchant
 image=http://magiccards.info/scans/en/7e/13.jpg
-image_updated=2016-09-11
 value=4.515
 removal=1
 rarity=C

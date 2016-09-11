@@ -1,6 +1,5 @@
 name=Jace, the Mind Sculptor
 image=http://magiccards.info/scans/en/ema/57.jpg
-image_updated=2016-09-10
 value=3.444
 rarity=M
 type=Planeswalker

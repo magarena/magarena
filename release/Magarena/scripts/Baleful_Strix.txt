@@ -1,6 +1,5 @@
 name=Baleful Strix
 image=http://magiccards.info/scans/en/ema/196.jpg
-image_updated=2016-09-10
 value=4.333
 rarity=R
 type=Artifact,Creature

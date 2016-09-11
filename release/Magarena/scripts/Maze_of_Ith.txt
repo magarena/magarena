@@ -1,6 +1,5 @@
 name=Maze of Ith
 image=http://magiccards.info/scans/en/ema/241.jpg
-image_updated=2016-09-10
 value=4.564
 rarity=R
 type=Land

@@ -1,6 +1,5 @@
 name=Carnassid
 image=http://magiccards.info/scans/en/sh/53.jpg
-image_updated=2016-09-11
 value=3.077
 rarity=R
 type=Creature

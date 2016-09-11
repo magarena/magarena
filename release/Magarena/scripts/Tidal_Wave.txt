@@ -1,6 +1,5 @@
 name=Tidal Wave
 image=http://magiccards.info/scans/en/ema/75.jpg
-image_updated=2016-09-10
 value=3.329
 rarity=C
 type=Instant

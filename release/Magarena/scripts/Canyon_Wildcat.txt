@@ -1,6 +1,5 @@
 name=Canyon Wildcat
 image=http://magiccards.info/scans/en/8e/181.jpg
-image_updated=2016-09-10
 value=3.289
 rarity=C
 type=Creature

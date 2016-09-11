@@ -1,6 +1,5 @@
 name=Legacy's Allure
 image=http://magiccards.info/scans/en/tp/71.jpg
-image_updated=2016-09-11
 value=3.912
 rarity=U
 type=Enchantment

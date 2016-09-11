@@ -1,6 +1,5 @@
 name=Plea for Power
 image=http://magiccards.info/scans/en/cns/24.jpg
-image_updated=2016-09-10
 value=2.500
 rarity=R
 type=Sorcery

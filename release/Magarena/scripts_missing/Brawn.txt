@@ -1,6 +1,5 @@
 name=Brawn
 image=http://magiccards.info/scans/en/ema/159.jpg
-image_updated=2016-09-10
 value=4.279
 rarity=U
 type=Creature

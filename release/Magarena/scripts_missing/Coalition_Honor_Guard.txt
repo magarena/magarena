@@ -1,6 +1,5 @@
 name=Coalition Honor Guard
 image=http://magiccards.info/scans/en/ema/6.jpg
-image_updated=2016-09-10
 value=4.028
 rarity=C
 type=Creature

@@ -1,6 +1,5 @@
 name=Commune with the Gods
 image=http://magiccards.info/scans/en/ema/162.jpg
-image_updated=2016-09-10
 value=3.183
 rarity=C
 type=Sorcery

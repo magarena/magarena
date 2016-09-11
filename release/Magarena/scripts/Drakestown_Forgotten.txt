@@ -1,6 +1,5 @@
 name=Drakestown Forgotten
 image=http://magiccards.info/scans/en/cns/27.jpg
-image_updated=2016-09-10
 value=3.812
 rarity=R
 type=Creature

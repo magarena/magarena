@@ -1,6 +1,5 @@
 name=Reckless Charge
 image=http://magiccards.info/scans/en/ema/144.jpg
-image_updated=2016-09-10
 value=4.016
 rarity=C
 type=Sorcery

@@ -1,6 +1,5 @@
 name=Starke of Rath
 image=http://magiccards.info/scans/en/tp/205.jpg
-image_updated=2016-09-11
 value=3.744
 rarity=R
 type=Legendary,Creature

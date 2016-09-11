@@ -1,6 +1,5 @@
 name=Sabertooth Wyvern
 image=http://magiccards.info/scans/en/ex/99.jpg
-image_updated=2016-09-11
 value=2.237
 rarity=U
 type=Creature

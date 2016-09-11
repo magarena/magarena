@@ -1,6 +1,5 @@
 name=Millikin
 image=http://magiccards.info/scans/en/ema/226.jpg
-image_updated=2016-09-10
 value=2.936
 rarity=U
 type=Artifact,Creature

@@ -1,6 +1,5 @@
 name=Silent Departure
 image=http://magiccards.info/scans/en/ema/72.jpg
-image_updated=2016-09-10
 value=3.412
 rarity=C
 type=Sorcery

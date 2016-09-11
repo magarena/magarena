@@ -1,6 +1,5 @@
 name=Torrent of Souls
 image=http://magiccards.info/scans/en/ema/217.jpg
-image_updated=2016-09-10
 value=3.425
 rarity=U
 type=Sorcery

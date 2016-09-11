@@ -1,6 +1,5 @@
 name=Soulcatcher
 image=http://magiccards.info/scans/en/ema/30.jpg
-image_updated=2016-09-10
 value=4.214
 rarity=U
 type=Creature

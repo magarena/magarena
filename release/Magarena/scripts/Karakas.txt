@@ -1,6 +1,5 @@
 name=Karakas
 image=http://magiccards.info/scans/en/ema/240.jpg
-image_updated=2016-09-10
 value=4.570
 rarity=M
 type=Legendary,Land

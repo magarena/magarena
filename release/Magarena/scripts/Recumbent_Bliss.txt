@@ -1,6 +1,5 @@
 name=Recumbent Bliss
 image=http://magiccards.info/scans/en/eve/13.jpg
-image_updated=2016-09-10
 value=3.232
 rarity=C
 type=Enchantment

@@ -1,6 +1,5 @@
 name=Charging Paladin
 image=http://magiccards.info/scans/en/st/12.jpg
-image_updated=2016-09-11
 value=2.927
 rarity=U
 type=Creature

@@ -1,6 +1,5 @@
 name=Fall
 image=http://magiccards.info/scans/en/di/156b.jpg
-image_updated=2016-09-10
 value=3.896
 rarity=U
 type=Sorcery

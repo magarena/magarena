@@ -1,6 +1,5 @@
 name=Night's Whisper
 image=http://magiccards.info/scans/en/ema/100.jpg
-image_updated=2016-09-10
 value=4.478
 rarity=C
 type=Sorcery

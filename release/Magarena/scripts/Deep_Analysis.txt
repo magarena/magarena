@@ -1,6 +1,5 @@
 name=Deep Analysis
 image=http://magiccards.info/scans/en/ema/45.jpg
-image_updated=2016-09-10
 value=4.000
 rarity=C
 type=Sorcery

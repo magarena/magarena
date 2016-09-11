@@ -1,6 +1,5 @@
 name=Dream Prowler
 image=http://magiccards.info/scans/en/9e/74.jpg
-image_updated=2016-09-11
 value=2.915
 rarity=U
 type=Creature

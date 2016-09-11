@@ -1,6 +1,5 @@
 name=Krakilin
 image=http://magiccards.info/scans/en/tp/129.jpg
-image_updated=2016-09-11
 value=4.015
 rarity=U
 type=Creature

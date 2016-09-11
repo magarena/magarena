@@ -1,6 +1,5 @@
 name=Carbonize
 image=http://magiccards.info/scans/en/ema/122.jpg
-image_updated=2016-09-10
 value=3.686
 rarity=C
 type=Instant

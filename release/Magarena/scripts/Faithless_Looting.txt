@@ -1,6 +1,5 @@
 name=Faithless Looting
 image=http://magiccards.info/scans/en/ema/128.jpg
-image_updated=2016-09-10
 value=4.347
 rarity=C
 type=Sorcery

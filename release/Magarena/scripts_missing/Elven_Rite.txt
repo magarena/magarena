@@ -1,6 +1,5 @@
 name=Elven Rite
 image=http://magiccards.info/scans/en/sh/56.jpg
-image_updated=2016-09-11
 value=2.500
 rarity=U
 type=Sorcery

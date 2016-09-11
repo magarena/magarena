@@ -1,6 +1,5 @@
 name=Duress
 image=http://magiccards.info/scans/en/ema/86.jpg
-image_updated=2016-09-10
 value=2.500
 rarity=C
 type=Sorcery

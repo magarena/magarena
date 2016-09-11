@@ -1,6 +1,5 @@
 name=Flame-Kin Zealot
 image=http://magiccards.info/scans/en/ema/201.jpg
-image_updated=2016-09-10
 value=4.000
 rarity=U
 type=Creature

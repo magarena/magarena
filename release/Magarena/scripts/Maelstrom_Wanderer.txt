@@ -1,6 +1,5 @@
 name=Maelstrom Wanderer
 image=http://magiccards.info/scans/en/ema/204.jpg
-image_updated=2016-09-10
 value=3.894
 rarity=M
 type=Legendary,Creature

@@ -1,6 +1,5 @@
 name=Ghitu Slinger
 image=http://magiccards.info/scans/en/ema/133.jpg
-image_updated=2016-09-10
 value=3.500
 removal=2
 rarity=U

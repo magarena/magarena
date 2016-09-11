@@ -1,6 +1,5 @@
 name=Armored Pegasus
 image=http://magiccards.info/scans/en/6e/5.jpg
-image_updated=2016-09-11
 value=2.579
 rarity=C
 type=Creature

@@ -1,6 +1,5 @@
 name=Spiritmonger
 image=http://magiccards.info/scans/en/cns/193.jpg
-image_updated=2016-09-10
 value=4.455
 rarity=R
 type=Creature

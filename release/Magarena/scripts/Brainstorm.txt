@@ -1,6 +1,5 @@
 name=Brainstorm
 image=http://magiccards.info/scans/en/ema/40.jpg
-image_updated=2016-09-10
 value=4.750
 rarity=U
 type=Instant

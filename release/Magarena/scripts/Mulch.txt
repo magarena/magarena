@@ -1,6 +1,5 @@
 name=Mulch
 image=http://magiccards.info/scans/en/isd/196.jpg
-image_updated=2016-09-11
 value=4.087
 rarity=C
 type=Sorcery

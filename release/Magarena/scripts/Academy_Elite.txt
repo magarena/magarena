@@ -1,6 +1,5 @@
 name=Academy Elite
 image=http://magiccards.info/scans/en/cns/20.jpg
-image_updated=2016-09-10
 value=3.083
 rarity=R
 type=Creature

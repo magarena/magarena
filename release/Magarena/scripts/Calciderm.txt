@@ -1,6 +1,5 @@
 name=Calciderm
 image=http://magiccards.info/scans/en/ema/5.jpg
-image_updated=2016-09-10
 value=3.977
 rarity=U
 type=Creature

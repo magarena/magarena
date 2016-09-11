@@ -1,6 +1,5 @@
 name=Prowling Pangolin
 image=http://magiccards.info/scans/en/ema/104.jpg
-image_updated=2016-09-10
 value=3.579
 rarity=C
 type=Creature

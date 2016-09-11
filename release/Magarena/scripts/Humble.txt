@@ -1,6 +1,5 @@
 name=Humble
 image=http://magiccards.info/scans/en/ema/14.jpg
-image_updated=2016-09-10
 value=4.384
 rarity=C
 type=Instant

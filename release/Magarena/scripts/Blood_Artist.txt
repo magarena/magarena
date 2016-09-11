@@ -1,6 +1,5 @@
 name=Blood Artist
 image=http://magiccards.info/scans/en/ema/81.jpg
-image_updated=2016-09-10
 value=3.955
 rarity=U
 type=Creature

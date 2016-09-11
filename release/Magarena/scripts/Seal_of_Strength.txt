@@ -1,6 +1,5 @@
 name=Seal of Strength
 image=http://magiccards.info/scans/en/ema/184.jpg
-image_updated=2016-09-10
 value=4.140
 rarity=C
 type=Enchantment

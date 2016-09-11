@@ -1,6 +1,5 @@
 name=Lowland Basilisk
 image=http://magiccards.info/scans/en/sh/59.jpg
-image_updated=2016-09-11
 value=3.145
 rarity=C
 type=Creature

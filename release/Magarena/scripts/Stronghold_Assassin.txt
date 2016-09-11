@@ -1,6 +1,5 @@
 name=Stronghold Assassin
 image=http://magiccards.info/scans/en/7e/166.jpg
-image_updated=2016-09-11
 value=4.346
 rarity=R
 type=Creature

@@ -1,6 +1,5 @@
 name=Reign of the Pit
 image=http://magiccards.info/scans/en/cns/29.jpg
-image_updated=2016-09-10
 value=4.050
 rarity=R
 type=Sorcery

@@ -1,6 +1,5 @@
 name=Giant Tortoise
 image=http://magiccards.info/scans/en/ema/52.jpg
-image_updated=2016-09-10
 value=3.235
 rarity=C
 type=Creature

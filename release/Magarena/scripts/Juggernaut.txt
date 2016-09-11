@@ -1,6 +1,5 @@
 name=Juggernaut
 image=http://magiccards.info/scans/en/ema/224.jpg
-image_updated=2016-09-10
 value=3.643
 rarity=U
 type=Artifact,Creature

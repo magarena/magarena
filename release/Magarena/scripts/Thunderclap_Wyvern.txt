@@ -1,6 +1,5 @@
 name=Thunderclap Wyvern
 image=http://magiccards.info/scans/en/ema/208.jpg
-image_updated=2016-09-10
 value=2.500
 rarity=U
 type=Creature

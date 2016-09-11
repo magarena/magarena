@@ -1,6 +1,5 @@
 name=Ticking Gnomes
 image=http://magiccards.info/scans/en/ema/233.jpg
-image_updated=2016-09-10
 value=2.656
 removal=1
 rarity=U

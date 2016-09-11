@@ -1,6 +1,5 @@
 name=Phyrexian Ingester
 image=http://magiccards.info/scans/en/ema/66.jpg
-image_updated=2016-09-10
 value=3.685
 rarity=U
 type=Creature

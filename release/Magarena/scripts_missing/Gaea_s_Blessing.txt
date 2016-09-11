@@ -1,6 +1,5 @@
 name=Gaea's Blessing
 image=http://magiccards.info/scans/en/ema/168.jpg
-image_updated=2016-09-10
 value=4.469
 rarity=U
 type=Sorcery

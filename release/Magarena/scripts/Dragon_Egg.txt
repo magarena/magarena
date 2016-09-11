@@ -1,6 +1,5 @@
 name=Dragon Egg
 image=http://magiccards.info/scans/en/ema/126.jpg
-image_updated=2016-09-10
 value=3.591
 rarity=C
 type=Creature

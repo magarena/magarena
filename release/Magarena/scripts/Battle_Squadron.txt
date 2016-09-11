@@ -1,6 +1,5 @@
 name=Battle Squadron
 image=http://magiccards.info/scans/en/ema/118.jpg
-image_updated=2016-09-10
 value=4.044
 rarity=U
 type=Creature

@@ -1,6 +1,5 @@
 name=Wee Dragonauts
 image=http://magiccards.info/scans/en/ema/212.jpg
-image_updated=2016-09-10
 value=3.883
 rarity=U
 type=Creature

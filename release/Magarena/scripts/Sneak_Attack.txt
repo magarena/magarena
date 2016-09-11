@@ -1,6 +1,5 @@
 name=Sneak Attack
 image=http://magiccards.info/scans/en/ema/148.jpg
-image_updated=2016-09-10
 value=4.552
 rarity=M
 type=Enchantment

@@ -1,6 +1,5 @@
 name=Living Death
 image=http://magiccards.info/scans/en/cmd/88.jpg
-image_updated=2016-09-10
 value=2.500
 rarity=R
 type=Sorcery

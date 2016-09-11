@@ -1,6 +1,5 @@
 name=Green Sun's Zenith
 image=http://magiccards.info/scans/en/ema/169.jpg
-image_updated=2016-09-10
 value=4.598
 rarity=R
 type=Sorcery

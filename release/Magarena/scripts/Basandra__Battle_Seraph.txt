@@ -1,6 +1,5 @@
 name=Basandra, Battle Seraph
 image=http://magiccards.info/scans/en/cns/184.jpg
-image_updated=2016-09-10
 value=3.800
 rarity=R
 type=Legendary,Creature

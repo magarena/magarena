@@ -1,6 +1,5 @@
 name=Ray of Command
 image=http://magiccards.info/scans/en/cmd/56.jpg
-image_updated=2016-09-10
 value=4.133
 removal=5
 rarity=C

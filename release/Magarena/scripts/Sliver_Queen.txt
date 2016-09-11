@@ -1,6 +1,5 @@
 name=Sliver Queen
 image=http://magiccards.info/scans/en/sh/141.jpg
-image_updated=2016-09-11
 value=4.460
 rarity=R
 type=Legendary,Creature

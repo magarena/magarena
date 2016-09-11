@@ -1,6 +1,5 @@
 name=Desperate Ravings
 image=http://magiccards.info/scans/en/ema/125.jpg
-image_updated=2016-09-10
 value=4.007
 rarity=C
 type=Instant

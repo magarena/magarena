@@ -1,6 +1,5 @@
 name=Rally the Peasants
 image=http://magiccards.info/scans/en/ema/25.jpg
-image_updated=2016-09-10
 value=3.588
 rarity=C
 type=Instant

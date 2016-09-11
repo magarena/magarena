@@ -1,6 +1,5 @@
 name=Patchwork Gnomes
 image=http://magiccards.info/scans/en/od/306.jpg
-image_updated=2016-09-11
 value=2.636
 rarity=U
 type=Artifact,Creature

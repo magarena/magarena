@@ -1,6 +1,5 @@
 name=Mistral Charger
 image=http://magiccards.info/scans/en/ema/20.jpg
-image_updated=2016-09-10
 value=3.134
 rarity=C
 type=Creature

@@ -1,6 +1,5 @@
 name=Shoreline Ranger
 image=http://magiccards.info/scans/en/ema/71.jpg
-image_updated=2016-09-10
 value=3.900
 rarity=C
 type=Creature

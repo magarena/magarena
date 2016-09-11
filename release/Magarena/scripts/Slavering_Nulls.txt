@@ -1,6 +1,5 @@
 name=Slavering Nulls
 image=http://magiccards.info/scans/en/wwk/92.jpg
-image_updated=2016-09-10
 value=3.359
 rarity=U
 type=Creature

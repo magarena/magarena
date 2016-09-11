@@ -1,6 +1,5 @@
 name=Spirit en-Kor
 image=http://magiccards.info/scans/en/sh/119.jpg
-image_updated=2016-09-11
 value=2.500
 rarity=C
 type=Creature

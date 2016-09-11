@@ -1,6 +1,5 @@
 name=Arcanis the Omnipotent
 image=http://magiccards.info/scans/en/ema/39.jpg
-image_updated=2016-09-10
 value=4.750
 rarity=R
 type=Legendary,Creature

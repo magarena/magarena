@@ -1,6 +1,5 @@
 name=Rootwater Hunter
 image=http://magiccards.info/scans/en/tp/82.jpg
-image_updated=2016-09-11
 value=3.569
 rarity=C
 type=Creature

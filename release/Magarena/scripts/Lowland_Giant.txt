@@ -1,6 +1,5 @@
 name=Lowland Giant
 image=http://magiccards.info/scans/en/tp/187.jpg
-image_updated=2016-09-11
 value=2.871
 rarity=C
 type=Creature

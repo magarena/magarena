@@ -1,6 +1,5 @@
 name=Chrome Mox
 image=http://magiccards.info/scans/en/ema/219.jpg
-image_updated=2016-09-10
 value=4.590
 rarity=M
 type=Artifact

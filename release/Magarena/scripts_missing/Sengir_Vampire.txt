@@ -1,6 +1,5 @@
 name=Sengir Vampire
 image=http://magiccards.info/scans/en/ori/283.jpg
-image_updated=2016-09-10
 value=3.667
 rarity=U
 type=Creature
