@@ -1,5 +1,5 @@
 name=Hamletback Goliath
-image=http://magiccards.info/scans/en/c15/156.jpg
+image=http://magiccards.info/scans/en/m13/136.jpg
 image_updated=2016-02-29
 value=3.623
 rarity=R

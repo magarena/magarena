@@ -1,5 +1,5 @@
 name=Vulturous Zombie
-image=http://magiccards.info/scans/en/c15/238.jpg
+image=http://magiccards.info/scans/en/cmd/236.jpg
 image_updated=2016-02-29
 value=3.722
 rarity=R

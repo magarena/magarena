@@ -1,5 +1,5 @@
 name=Day of the Dragons
-image=http://magiccards.info/scans/en/c15/91.jpg
+image=http://magiccards.info/scans/en/sc/31.jpg
 image_updated=2016-02-29
 value=4.340
 rarity=R

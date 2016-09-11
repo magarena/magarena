@@ -1,5 +1,5 @@
 name=Overwhelming Stampede
-image=http://magiccards.info/scans/en/c15/196.jpg
+image=http://magiccards.info/scans/en/mm2/153.jpg
 image_updated=2016-02-29
 value=4.258
 rarity=R

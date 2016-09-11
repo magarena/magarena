@@ -1,5 +1,5 @@
 name=Seal of Doom
-image=http://magiccards.info/scans/en/c15/135.jpg
+image=http://magiccards.info/scans/en/di/53.jpg
 image_updated=2016-02-29
 value=4.000
 removal=3

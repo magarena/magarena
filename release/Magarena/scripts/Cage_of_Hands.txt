@@ -1,5 +1,5 @@
 name=Cage of Hands
-image=http://magiccards.info/scans/en/c15/62.jpg
+image=http://magiccards.info/scans/en/pc2/4.jpg
 image_updated=2016-02-29
 value=3.233
 rarity=C

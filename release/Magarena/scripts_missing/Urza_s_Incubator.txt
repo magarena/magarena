@@ -1,5 +1,5 @@
 name=Urza's Incubator
-image=http://magiccards.info/scans/en/c15/273.jpg
+image=http://magiccards.info/scans/en/ud/142.jpg
 image_updated=2016-02-29
 value=4.290
 rarity=R

@@ -1,5 +1,5 @@
 name=Eternal Witness
-image=http://magiccards.info/scans/en/c15/183.jpg
+image=http://magiccards.info/scans/en/mma/144.jpg
 image_updated=2016-02-29
 value=4.534
 rarity=U

@@ -1,5 +1,5 @@
 name=Goblin Electromancer
-image=http://magiccards.info/scans/en/c15/220.jpg
+image=http://magiccards.info/scans/en/rtr/163.jpg
 image_updated=2016-02-29
 value=4.050
 rarity=C

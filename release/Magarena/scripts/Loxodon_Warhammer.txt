@@ -1,5 +1,5 @@
 name=Loxodon Warhammer
-image=http://magiccards.info/scans/en/c15/258.jpg
+image=http://magiccards.info/scans/en/c14/247.jpg
 image_updated=2016-02-29
 value=4.203
 rarity=R

@@ -1,5 +1,5 @@
 name=Rite of Replication
-image=http://magiccards.info/scans/en/c15/105.jpg
+image=http://magiccards.info/scans/en/c14/122.jpg
 image_updated=2016-02-29
 value=4.115
 rarity=R

@@ -1,5 +1,5 @@
 name=Indrik Stomphowler
-image=http://magiccards.info/scans/en/c15/186.jpg
+image=http://magiccards.info/scans/en/di/86.jpg
 image_updated=2016-02-29
 value=3.930
 rarity=U

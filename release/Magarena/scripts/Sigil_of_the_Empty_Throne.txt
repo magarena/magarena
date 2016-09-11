@@ -1,5 +1,5 @@
 name=Sigil of the Empty Throne
-image=http://magiccards.info/scans/en/c15/80.jpg
+image=http://magiccards.info/scans/en/ori/31.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=R

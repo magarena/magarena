@@ -1,5 +1,5 @@
 name=Mosswort Bridge
-image=http://magiccards.info/scans/en/c15/294.jpg
+image=http://magiccards.info/scans/en/arc/130.jpg
 image_updated=2016-02-29
 value=3.600
 rarity=R

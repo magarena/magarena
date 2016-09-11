@@ -1,5 +1,5 @@
 name=Hostility
-image=http://magiccards.info/scans/en/c15/158.jpg
+image=http://magiccards.info/scans/en/lw/176.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=R

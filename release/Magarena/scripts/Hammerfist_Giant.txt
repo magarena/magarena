@@ -1,5 +1,5 @@
 name=Hammerfist Giant
-image=http://magiccards.info/scans/en/c15/157.jpg
+image=http://magiccards.info/scans/en/rav/130.jpg
 image_updated=2016-02-29
 value=3.485
 rarity=R

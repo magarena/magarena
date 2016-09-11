@@ -1,5 +1,5 @@
 name=Temple of the False God
-image=http://magiccards.info/scans/en/c15/313.jpg
+image=http://magiccards.info/scans/en/c14/314.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=U

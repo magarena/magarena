@@ -1,5 +1,5 @@
 name=Forgotten Cave
-image=http://magiccards.info/scans/en/c15/284.jpg
+image=http://magiccards.info/scans/en/c14/296.jpg
 image_updated=2016-02-29
 value=2.000
 rarity=C

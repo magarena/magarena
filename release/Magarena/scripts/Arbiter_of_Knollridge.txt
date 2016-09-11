@@ -1,5 +1,5 @@
 name=Arbiter of Knollridge
-image=http://magiccards.info/scans/en/c15/59.jpg
+image=http://magiccards.info/scans/en/cmd/6.jpg
 image_updated=2016-02-29
 value=2.984
 rarity=R

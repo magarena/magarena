@@ -1,5 +1,5 @@
 name=Warstorm Surge
-image=http://magiccards.info/scans/en/c15/171.jpg
+image=http://magiccards.info/scans/en/pc2/54.jpg
 image_updated=2016-02-29
 value=3.780
 rarity=R

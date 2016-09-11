@@ -1,5 +1,5 @@
 name=Open the Vaults
-image=http://magiccards.info/scans/en/c15/77.jpg
+image=http://magiccards.info/scans/en/m10/21.jpg
 image_updated=2016-02-29
 value=4.190
 rarity=R

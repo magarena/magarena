@@ -1,5 +1,5 @@
 name=Orzhov Guildgate
-image=http://magiccards.info/scans/en/c15/299.jpg
+image=http://magiccards.info/scans/en/dgm/153.jpg
 image_updated=2016-02-29
 value=3.208
 rarity=C

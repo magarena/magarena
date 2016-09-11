@@ -1,5 +1,5 @@
 name=Reliquary Tower
-image=http://magiccards.info/scans/en/c15/301.jpg
+image=http://magiccards.info/scans/en/c14/308.jpg
 image_updated=2016-02-29
 value=3.475
 rarity=U

@@ -1,5 +1,5 @@
 name=Phyrexian Reclamation
-image=http://magiccards.info/scans/en/c15/133.jpg
+image=http://magiccards.info/scans/en/ul/63.jpg
 image_updated=2016-02-29
 value=4.286
 rarity=U

@@ -1,5 +1,5 @@
 name=Lorescale Coatl
-image=http://magiccards.info/scans/en/c15/225.jpg
+image=http://magiccards.info/scans/en/mm2/179.jpg
 image_updated=2016-02-29
 value=4.450
 rarity=U

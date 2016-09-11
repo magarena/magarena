@@ -1,5 +1,5 @@
 name=Boros Signet
-image=http://magiccards.info/scans/en/c15/247.jpg
+image=http://magiccards.info/scans/en/cmd/243.jpg
 image_updated=2016-02-29
 value=3.538
 rarity=C

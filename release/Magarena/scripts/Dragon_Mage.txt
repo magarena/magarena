@@ -1,5 +1,5 @@
 name=Dragon Mage
-image=http://magiccards.info/scans/en/c15/151.jpg
+image=http://magiccards.info/scans/en/sc/87.jpg
 image_updated=2016-02-29
 value=4.305
 rarity=R

@@ -1,5 +1,5 @@
 name=Treasury Thrull
-image=http://magiccards.info/scans/en/c15/235.jpg
+image=http://magiccards.info/scans/en/gtc/201.jpg
 image_updated=2016-02-29
 value=3.432
 rarity=R

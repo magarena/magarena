@@ -1,5 +1,5 @@
 name=Staff of Nin
-image=http://magiccards.info/scans/en/c15/270.jpg
+image=http://magiccards.info/scans/en/m13/217.jpg
 image_updated=2016-02-29
 value=3.875
 rarity=R

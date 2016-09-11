@@ -1,5 +1,5 @@
 name=Fallen Ideal
-image=http://magiccards.info/scans/en/c15/125.jpg
+image=http://magiccards.info/scans/en/ts/109.jpg
 image_updated=2016-02-29
 value=3.735
 rarity=U

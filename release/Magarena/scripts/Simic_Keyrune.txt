@@ -1,5 +1,5 @@
 name=Simic Keyrune
-image=http://magiccards.info/scans/en/c15/265.jpg
+image=http://magiccards.info/scans/en/gtc/237.jpg
 image_updated=2016-02-29
 value=3.128
 rarity=U

@@ -1,5 +1,5 @@
 name=Grisly Salvage
-image=http://magiccards.info/scans/en/c15/222.jpg
+image=http://magiccards.info/scans/en/rtr/165.jpg
 image_updated=2016-02-29
 value=3.835
 rarity=C

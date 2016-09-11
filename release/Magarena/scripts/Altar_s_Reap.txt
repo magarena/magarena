@@ -1,5 +1,5 @@
 name=Altar's Reap
-image=http://magiccards.info/scans/en/c15/112.jpg
+image=http://magiccards.info/scans/en/bfz/103.jpg
 image_updated=2016-02-29
 value=3.917
 rarity=C

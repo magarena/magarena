@@ -1,5 +1,5 @@
 name=Solemn Simulacrum
-image=http://magiccards.info/scans/en/c15/269.jpg
+image=http://magiccards.info/scans/en/c14/271.jpg
 image_updated=2016-02-29
 value=4.503
 rarity=R

@@ -1,5 +1,5 @@
 name=Golgari Guildmage
-image=http://magiccards.info/scans/en/c13/229.jpg
+image=http://magiccards.info/scans/en/cmd/201.jpg
 value=3.500
 rarity=U
 type=Creature

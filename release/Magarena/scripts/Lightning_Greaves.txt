@@ -1,5 +1,5 @@
 name=Lightning Greaves
-image=http://magiccards.info/scans/en/c15/257.jpg
+image=http://magiccards.info/scans/en/cmd/253.jpg
 image_updated=2016-02-29
 value=4.438
 rarity=U

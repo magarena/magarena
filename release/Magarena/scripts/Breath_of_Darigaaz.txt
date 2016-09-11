@@ -1,5 +1,5 @@
 name=Breath of Darigaaz
-image=http://magiccards.info/scans/en/c15/143.jpg
+image=http://magiccards.info/scans/en/cmd/112.jpg
 image_updated=2016-02-29
 value=4.091
 removal=3

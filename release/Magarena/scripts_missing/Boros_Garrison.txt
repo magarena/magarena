@@ -1,5 +1,5 @@
 name=Boros Garrison
-image=http://magiccards.info/scans/en/c15/279.jpg
+image=http://magiccards.info/scans/en/mm2/237.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=C

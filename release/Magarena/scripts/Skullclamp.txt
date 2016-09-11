@@ -1,5 +1,5 @@
 name=Skullclamp
-image=http://magiccards.info/scans/en/c15/267.jpg
+image=http://magiccards.info/scans/en/c14/268.jpg
 image_updated=2016-02-29
 value=4.500
 rarity=U

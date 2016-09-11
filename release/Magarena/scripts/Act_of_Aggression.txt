@@ -1,5 +1,5 @@
 name=Act of Aggression
-image=http://magiccards.info/scans/en/c15/141.jpg
+image=http://magiccards.info/scans/en/nph/78.jpg
 image_updated=2016-02-29
 value=3.567
 removal=5

@@ -1,5 +1,5 @@
 name=Izzet Boilerworks
-image=http://magiccards.info/scans/en/c15/290.jpg
+image=http://magiccards.info/scans/en/mm2/245.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=C

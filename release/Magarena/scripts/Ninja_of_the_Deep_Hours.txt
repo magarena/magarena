@@ -1,5 +1,5 @@
 name=Ninja of the Deep Hours
-image=http://magiccards.info/scans/en/c15/99.jpg
+image=http://magiccards.info/scans/en/pc2/21.jpg
 image_updated=2016-02-29
 value=4.554
 rarity=C

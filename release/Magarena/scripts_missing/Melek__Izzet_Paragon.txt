@@ -1,5 +1,5 @@
 name=Melek, Izzet Paragon
-image=http://magiccards.info/scans/en/c15/227.jpg
+image=http://magiccards.info/scans/en/dgm/84.jpg
 image_updated=2016-02-29
 value=3.821
 rarity=R
