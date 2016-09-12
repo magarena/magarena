@@ -1,5 +1,5 @@
 name=Sword of the Paruns
-image=http://magiccards.info/scans/en/c13/264.jpg
+image=http://magiccards.info/scans/en/gp/156.jpg
 value=3.833
 rarity=R
 type=Artifact

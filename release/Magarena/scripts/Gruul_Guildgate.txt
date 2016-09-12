@@ -1,5 +1,5 @@
 name=Gruul Guildgate
-image=http://magiccards.info/scans/en/c13/294.jpg
+image=http://magiccards.info/scans/en/dgm/150.jpg
 value=3.679
 rarity=C
 type=Land

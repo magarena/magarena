@@ -1,5 +1,5 @@
 name=Transguild Promenade
-image=http://magiccards.info/scans/en/c13/330.jpg
+image=http://magiccards.info/scans/en/rtr/249.jpg
 value=3.350
 rarity=C
 type=Land

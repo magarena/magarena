@@ -1,5 +1,5 @@
 name=Raven Familiar
-image=http://magiccards.info/scans/en/c13/55.jpg
+image=http://magiccards.info/scans/en/ul/39.jpg
 value=3.844
 rarity=U
 type=Creature

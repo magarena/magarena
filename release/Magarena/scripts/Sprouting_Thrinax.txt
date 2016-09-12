@@ -1,5 +1,5 @@
 name=Sprouting Thrinax
-image=http://magiccards.info/scans/en/c13/219.jpg
+image=http://magiccards.info/scans/en/ala/197.jpg
 value=3.781
 rarity=U
 type=Creature

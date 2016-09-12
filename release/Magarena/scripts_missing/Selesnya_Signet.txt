@@ -1,5 +1,5 @@
 name=Selesnya Signet
-image=http://magiccards.info/scans/en/c13/257.jpg
+image=http://magiccards.info/scans/en/cmd/258.jpg
 value=3.750
 rarity=C
 type=Artifact

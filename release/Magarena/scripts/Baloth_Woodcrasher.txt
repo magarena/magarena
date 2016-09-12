@@ -1,5 +1,5 @@
 name=Baloth Woodcrasher
-image=http://magiccards.info/scans/en/c13/136.jpg
+image=http://magiccards.info/scans/en/cmd/143.jpg
 value=3.441
 rarity=U
 type=Creature

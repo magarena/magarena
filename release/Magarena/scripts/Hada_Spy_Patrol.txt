@@ -1,5 +1,5 @@
 name=Hada Spy Patrol
-image=http://magiccards.info/scans/en/c13/46.jpg
+image=http://magiccards.info/scans/en/roe/71.jpg
 value=3.318
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Propaganda
-image=http://magiccards.info/scans/en/c13/53.jpg
+image=http://magiccards.info/scans/en/cmd/55.jpg
 value=4.367
 rarity=U
 type=Enchantment

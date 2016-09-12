@@ -1,5 +1,5 @@
 name=Brooding Saurian
-image=http://magiccards.info/scans/en/c13/138.jpg
+image=http://magiccards.info/scans/en/cs/106.jpg
 value=3.462
 rarity=R
 type=Creature

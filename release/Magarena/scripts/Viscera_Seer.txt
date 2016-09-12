@@ -1,5 +1,5 @@
 name=Viscera Seer
-image=http://magiccards.info/scans/en/c13/99.jpg
+image=http://magiccards.info/scans/en/m11/120.jpg
 value=3.962
 rarity=C
 type=Creature

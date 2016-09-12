@@ -1,5 +1,5 @@
 name=Arcane Sanctum
-image=http://magiccards.info/scans/en/c13/273.jpg
+image=http://magiccards.info/scans/en/ala/220.jpg
 value=3.824
 rarity=U
 type=Land

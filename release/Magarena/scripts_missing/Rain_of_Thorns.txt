@@ -1,5 +1,5 @@
 name=Rain of Thorns
-image=http://magiccards.info/scans/en/c13/163.jpg
+image=http://magiccards.info/scans/en/avr/190.jpg
 value=3.600
 rarity=U
 type=Sorcery

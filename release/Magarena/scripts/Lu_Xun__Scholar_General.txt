@@ -1,5 +1,5 @@
 name=Lu Xun, Scholar General
-image=http://magiccards.info/scans/en/c13/49.jpg
+image=http://magiccards.info/scans/en/p3k/48.jpg
 value=3.735
 rarity=R
 type=Legendary,Creature

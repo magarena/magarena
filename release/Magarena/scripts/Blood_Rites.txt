@@ -1,5 +1,5 @@
 name=Blood Rites
-image=http://magiccards.info/scans/en/c13/101.jpg
+image=http://magiccards.info/scans/en/chk/159.jpg
 value=2.346
 rarity=U
 type=Enchantment

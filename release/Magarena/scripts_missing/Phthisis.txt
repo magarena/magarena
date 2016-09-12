@@ -1,5 +1,5 @@
 name=Phthisis
-image=http://magiccards.info/scans/en/c13/85.jpg
+image=http://magiccards.info/scans/en/mma/93.jpg
 value=3.711
 rarity=U
 type=Sorcery

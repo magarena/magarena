@@ -1,5 +1,5 @@
 name=Prosperity
-image=http://magiccards.info/scans/en/c13/54.jpg
+image=http://magiccards.info/scans/en/6e/89.jpg
 value=4.318
 rarity=U
 type=Sorcery

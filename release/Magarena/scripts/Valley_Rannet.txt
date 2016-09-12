@@ -1,5 +1,5 @@
 name=Valley Rannet
-image=http://magiccards.info/scans/en/c13/224.jpg
+image=http://magiccards.info/scans/en/cmd/232.jpg
 value=3.333
 rarity=C
 type=Creature

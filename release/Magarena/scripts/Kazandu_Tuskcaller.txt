@@ -1,5 +1,5 @@
 name=Kazandu Tuskcaller
-image=http://magiccards.info/scans/en/c13/152.jpg
+image=http://magiccards.info/scans/en/roe/191.jpg
 value=3.706
 rarity=R
 type=Creature

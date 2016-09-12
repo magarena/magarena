@@ -1,5 +1,5 @@
 name=Soul Manipulation
-image=http://magiccards.info/scans/en/c13/215.jpg
+image=http://magiccards.info/scans/en/arb/29.jpg
 value=3.611
 rarity=C
 type=Instant

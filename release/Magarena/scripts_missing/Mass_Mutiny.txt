@@ -1,5 +1,5 @@
 name=Mass Mutiny
-image=http://magiccards.info/scans/en/c13/116.jpg
+image=http://magiccards.info/scans/en/pc2/48.jpg
 value=3.750
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Marrow Bats
-image=http://magiccards.info/scans/en/c13/82.jpg
+image=http://magiccards.info/scans/en/avr/113.jpg
 value=1.528
 rarity=U
 type=Creature

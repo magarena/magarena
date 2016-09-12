@@ -1,5 +1,5 @@
 name=Sejiri Refuge
-image=http://magiccards.info/scans/en/c13/320.jpg
+image=http://magiccards.info/scans/en/zen/224.jpg
 value=3.650
 rarity=U
 type=Land

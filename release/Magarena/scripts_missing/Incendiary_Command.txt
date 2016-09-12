@@ -1,5 +1,5 @@
 name=Incendiary Command
-image=http://magiccards.info/scans/en/c13/113.jpg
+image=http://magiccards.info/scans/en/lw/179.jpg
 value=3.615
 rarity=R
 type=Sorcery

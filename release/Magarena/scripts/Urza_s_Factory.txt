@@ -1,5 +1,5 @@
 name=Urza's Factory
-image=http://magiccards.info/scans/en/c13/331.jpg
+image=http://magiccards.info/scans/en/ts/280.jpg
 value=3.000
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Savage Lands
-image=http://magiccards.info/scans/en/c13/317.jpg
+image=http://magiccards.info/scans/en/ala/228.jpg
 value=3.733
 rarity=U
 type=Land

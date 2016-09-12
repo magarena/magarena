@@ -1,5 +1,5 @@
 name=Behemoth Sledge
-image=http://magiccards.info/scans/en/c13/178.jpg
+image=http://magiccards.info/scans/en/arb/65.jpg
 value=3.441
 rarity=U
 type=Artifact

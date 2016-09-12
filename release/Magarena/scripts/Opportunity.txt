@@ -1,5 +1,5 @@
 name=Opportunity
-image=http://magiccards.info/scans/en/c13/51.jpg
+image=http://magiccards.info/scans/en/7e/91.jpg
 value=4.206
 rarity=U
 type=Instant

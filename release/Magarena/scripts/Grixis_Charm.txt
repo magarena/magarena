@@ -1,5 +1,5 @@
 name=Grixis Charm
-image=http://magiccards.info/scans/en/c13/192.jpg
+image=http://magiccards.info/scans/en/ala/171.jpg
 value=3.909
 rarity=U
 type=Instant

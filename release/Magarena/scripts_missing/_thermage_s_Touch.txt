@@ -1,5 +1,5 @@
 name=Æthermage's Touch
-image=http://magiccards.info/scans/en/c13/176.jpg
+image=http://magiccards.info/scans/en/di/101.jpg
 value=3.278
 rarity=R
 type=Instant

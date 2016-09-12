@@ -1,5 +1,5 @@
 name=Greed
-image=http://magiccards.info/scans/en/c13/79.jpg
+image=http://magiccards.info/scans/en/7e/140.jpg
 value=4.357
 rarity=R
 type=Enchantment

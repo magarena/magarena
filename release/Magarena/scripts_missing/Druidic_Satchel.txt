@@ -1,5 +1,5 @@
 name=Druidic Satchel
-image=http://magiccards.info/scans/en/c13/242.jpg
+image=http://magiccards.info/scans/en/m12/207.jpg
 value=3.667
 rarity=R
 type=Artifact

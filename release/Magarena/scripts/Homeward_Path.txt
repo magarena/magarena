@@ -1,5 +1,5 @@
 name=Homeward Path
-image=http://magiccards.info/scans/en/c13/295.jpg
+image=http://magiccards.info/scans/en/cmd/277.jpg
 value=3.806
 rarity=R
 type=Land

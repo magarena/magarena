@@ -1,5 +1,5 @@
 name=Fecundity
-image=http://magiccards.info/scans/en/c13/145.jpg
+image=http://magiccards.info/scans/en/8e/247.jpg
 value=4.472
 rarity=U
 type=Enchantment

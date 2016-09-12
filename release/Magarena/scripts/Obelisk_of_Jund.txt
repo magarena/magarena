@@ -1,5 +1,5 @@
 name=Obelisk of Jund
-image=http://magiccards.info/scans/en/c13/252.jpg
+image=http://magiccards.info/scans/en/ala/215.jpg
 value=2.750
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Fireball
-image=http://magiccards.info/scans/en/c13/106.jpg
+image=http://magiccards.info/scans/en/m12/131.jpg
 value=2.500
 rarity=U
 type=Sorcery

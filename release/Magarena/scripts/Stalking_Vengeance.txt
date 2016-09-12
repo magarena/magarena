@@ -1,5 +1,5 @@
 name=Stalking Vengeance
-image=http://magiccards.info/scans/en/c13/121.jpg
+image=http://magiccards.info/scans/en/di/73.jpg
 value=3.708
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Cradle of Vitality
-image=http://magiccards.info/scans/en/c13/7.jpg
+image=http://magiccards.info/scans/en/ala/7.jpg
 value=3.632
 rarity=R
 type=Enchantment

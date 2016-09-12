@@ -1,5 +1,5 @@
 name=Tidehollow Strix
-image=http://magiccards.info/scans/en/c13/222.jpg
+image=http://magiccards.info/scans/en/ala/203.jpg
 value=3.676
 rarity=C
 type=Artifact,Creature

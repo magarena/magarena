@@ -1,5 +1,5 @@
 name=Army of the Damned
-image=http://magiccards.info/scans/en/c13/69.jpg
+image=http://magiccards.info/scans/en/isd/87.jpg
 value=3.833
 rarity=M
 type=Sorcery

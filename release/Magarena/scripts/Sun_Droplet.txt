@@ -1,5 +1,5 @@
 name=Sun Droplet
-image=http://magiccards.info/scans/en/c13/261.jpg
+image=http://magiccards.info/scans/en/arc/117.jpg
 value=3.633
 rarity=U
 type=Artifact

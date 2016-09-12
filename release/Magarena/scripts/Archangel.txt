@@ -1,5 +1,5 @@
 name=Archangel
-image=http://magiccards.info/scans/en/c13/5.jpg
+image=http://magiccards.info/scans/en/avr/5.jpg
 value=3.206
 rarity=R
 type=Creature

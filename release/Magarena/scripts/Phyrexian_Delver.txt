@@ -1,5 +1,5 @@
 name=Phyrexian Delver
-image=http://magiccards.info/scans/en/c13/86.jpg
+image=http://magiccards.info/scans/en/in/115.jpg
 value=4.237
 rarity=R
 type=Creature

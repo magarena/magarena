@@ -1,5 +1,5 @@
 name=Boros Charm
-image=http://magiccards.info/scans/en/c13/179.jpg
+image=http://magiccards.info/scans/en/gtc/148.jpg
 value=3.979
 rarity=U
 type=Instant

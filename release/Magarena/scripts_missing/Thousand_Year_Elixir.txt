@@ -1,5 +1,5 @@
 name=Thousand-Year Elixir
-image=http://magiccards.info/scans/en/c13/266.jpg
+image=http://magiccards.info/scans/en/lw/263.jpg
 value=4.229
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Flickerform
-image=http://magiccards.info/scans/en/c13/12.jpg
+image=http://magiccards.info/scans/en/rav/18.jpg
 value=3.536
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fiend Hunter
-image=http://magiccards.info/scans/en/c13/11.jpg
+image=http://magiccards.info/scans/en/isd/15.jpg
 value=3.783
 removal=2
 rarity=U

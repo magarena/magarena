@@ -1,5 +1,5 @@
 name=Divinity of Pride
-image=http://magiccards.info/scans/en/c13/228.jpg
+image=http://magiccards.info/scans/en/mma/188.jpg
 value=3.946
 rarity=R
 type=Creature

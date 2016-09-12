@@ -1,5 +1,5 @@
 name=Wall of Reverence
-image=http://magiccards.info/scans/en/c13/26.jpg
+image=http://magiccards.info/scans/en/cfx/20.jpg
 value=3.778
 rarity=R
 type=Creature
