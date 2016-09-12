@@ -1,5 +1,5 @@
 name=Doom Blade
-image=http://magiccards.info/scans/en/m14/96.jpg
+image=http://magiccards.info/scans/en/m12/95.jpg
 value=4.363
 removal=4
 rarity=C

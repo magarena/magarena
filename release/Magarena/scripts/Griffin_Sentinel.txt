@@ -1,5 +1,5 @@
 name=Griffin Sentinel
-image=http://magiccards.info/scans/en/m14/20.jpg
+image=http://magiccards.info/scans/en/m12/21.jpg
 value=3.400
 rarity=C
 type=Creature

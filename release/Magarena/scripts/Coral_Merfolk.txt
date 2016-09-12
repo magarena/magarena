@@ -1,5 +1,5 @@
 name=Coral Merfolk
-image=http://magiccards.info/scans/en/m14/49.jpg
+image=http://magiccards.info/scans/en/m12/49.jpg
 value=1.744
 rarity=C
 type=Creature

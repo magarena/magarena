@@ -1,5 +1,5 @@
 name=Volcanic Geyser
-image=http://magiccards.info/scans/en/m14/160.jpg
+image=http://magiccards.info/scans/en/m13/154.jpg
 value=4.045
 rarity=U
 type=Instant

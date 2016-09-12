@@ -1,5 +1,5 @@
 name=Sensory Deprivation
-image=http://magiccards.info/scans/en/m14/71.jpg
+image=http://magiccards.info/scans/en/isd/74.jpg
 value=2.167
 rarity=C
 type=Enchantment

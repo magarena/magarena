@@ -1,5 +1,5 @@
 name=Chandra's Outrage
-image=http://magiccards.info/scans/en/m14/133.jpg
+image=http://magiccards.info/scans/en/m12/125.jpg
 value=3.519
 removal=4
 rarity=C

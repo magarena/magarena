@@ -1,5 +1,5 @@
 name=Silence
-image=http://magiccards.info/scans/en/m14/35.jpg
+image=http://magiccards.info/scans/en/m11/30.jpg
 value=4.250
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Shimmering Grotto
-image=http://magiccards.info/scans/en/m14/229.jpg
+image=http://magiccards.info/scans/en/pc2/126.jpg
 value=3.069
 rarity=U
 type=Land

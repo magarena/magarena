@@ -1,5 +1,5 @@
 name=Giant Spider
-image=http://magiccards.info/scans/en/m14/175.jpg
+image=http://magiccards.info/scans/en/m12/177.jpg
 value=3.296
 rarity=C
 type=Creature

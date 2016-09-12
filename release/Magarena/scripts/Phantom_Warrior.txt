@@ -1,5 +1,5 @@
 name=Phantom Warrior
-image=http://magiccards.info/scans/en/m14/67.jpg
+image=http://magiccards.info/scans/en/m10/66.jpg
 value=3.767
 rarity=U
 type=Creature

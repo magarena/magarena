@@ -1,5 +1,5 @@
 name=Door of Destinies
-image=http://magiccards.info/scans/en/m14/208.jpg
+image=http://magiccards.info/scans/en/mt/143.jpg
 value=3.786
 rarity=R
 type=Artifact

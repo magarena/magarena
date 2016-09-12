@@ -1,5 +1,5 @@
 name=Elixir of Immortality
-image=http://magiccards.info/scans/en/m14/209.jpg
+image=http://magiccards.info/scans/en/m13/204.jpg
 value=3.516
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Traumatize
-image=http://magiccards.info/scans/en/m14/77.jpg
+image=http://magiccards.info/scans/en/m11/77.jpg
 value=3.856
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Angelic Wall
-image=http://magiccards.info/scans/en/m14/4.jpg
+image=http://magiccards.info/scans/en/avr/4.jpg
 value=3.054
 rarity=C
 type=Creature

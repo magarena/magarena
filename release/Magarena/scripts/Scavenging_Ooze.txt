@@ -1,5 +1,5 @@
 name=Scavenging Ooze
-image=http://magiccards.info/scans/en/m14/195.jpg
+image=http://magiccards.info/scans/en/cmd/170.jpg
 value=4.552
 rarity=R
 type=Creature

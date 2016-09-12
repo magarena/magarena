@@ -1,5 +1,5 @@
 name=Millstone
-image=http://magiccards.info/scans/en/m14/213.jpg
+image=http://magiccards.info/scans/en/10e/334.jpg
 value=3.635
 rarity=U
 type=Artifact

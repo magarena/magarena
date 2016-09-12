@@ -1,5 +1,5 @@
 name=Scroll Thief
-image=http://magiccards.info/scans/en/m14/69.jpg
+image=http://magiccards.info/scans/en/m13/66.jpg
 value=3.340
 rarity=C
 type=Creature

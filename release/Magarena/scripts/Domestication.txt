@@ -1,5 +1,5 @@
 name=Domestication
-image=http://magiccards.info/scans/en/m14/53.jpg
+image=http://magiccards.info/scans/en/roe/61.jpg
 value=2.356
 rarity=R
 type=Enchantment

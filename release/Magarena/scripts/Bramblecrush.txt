@@ -1,5 +1,5 @@
 name=Bramblecrush
-image=http://magiccards.info/scans/en/m14/165.jpg
+image=http://magiccards.info/scans/en/isd/172.jpg
 value=3.646
 removal=3
 rarity=U

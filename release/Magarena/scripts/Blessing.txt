@@ -1,5 +1,5 @@
 name=Blessing
-image=http://magiccards.info/scans/en/m14/8.jpg
+image=http://magiccards.info/scans/en/4e/259.jpg
 value=3.153
 rarity=U
 type=Enchantment
