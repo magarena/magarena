@@ -1,5 +1,5 @@
 name=Last Breath
-image=http://magiccards.info/scans/en/ths/22.jpg
+image=http://magiccards.info/scans/en/shm/11.jpg
 value=2.682
 rarity=C
 type=Instant

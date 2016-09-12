@@ -1,5 +1,5 @@
 name=Thoughtseize
-image=http://magiccards.info/scans/en/ths/107.jpg
+image=http://magiccards.info/scans/en/lw/145.jpg
 value=4.578
 rarity=R
 type=Sorcery

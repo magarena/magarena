@@ -1,5 +1,5 @@
 name=Magma Jet
-image=http://magiccards.info/scans/en/ths/128.jpg
+image=http://magiccards.info/scans/en/5dn/73.jpg
 value=2.500
 rarity=U
 type=Instant

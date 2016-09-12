@@ -1,5 +1,5 @@
 name=Griptide
-image=http://magiccards.info/scans/en/ddm/28.jpg
+image=http://magiccards.info/scans/en/dka/38.jpg
 value=3.389
 removal=3
 rarity=C

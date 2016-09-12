@@ -1,5 +1,5 @@
 name=Savage Surge
-image=http://magiccards.info/scans/en/ths/176.jpg
+image=http://magiccards.info/scans/en/rtr/133.jpg
 value=3.276
 rarity=C
 type=Instant

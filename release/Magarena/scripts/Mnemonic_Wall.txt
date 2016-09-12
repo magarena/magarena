@@ -1,5 +1,5 @@
 name=Mnemonic Wall
-image=http://magiccards.info/scans/en/c13/50.jpg
+image=http://magiccards.info/scans/en/roe/78.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -8,5 +8,5 @@ cost={4}{U}
 pt=0/4
 ability=Defender;\
         When SN enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
-timing=main
+timing=smain
 oracle=Defender\nWhen Mnemonic Wall enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.

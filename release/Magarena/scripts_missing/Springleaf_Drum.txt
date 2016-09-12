@@ -1,5 +1,5 @@
 name=Springleaf Drum
-image=http://magiccards.info/scans/en/bng/162.jpg
+image=http://magiccards.info/scans/en/lw/261.jpg
 value=3.767
 rarity=U
 type=Artifact

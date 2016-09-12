@@ -1,5 +1,5 @@
 name=Traveler's Amulet
-image=http://magiccards.info/scans/en/ths/221.jpg
+image=http://magiccards.info/scans/en/isd/234.jpg
 value=3.109
 rarity=C
 type=Artifact
