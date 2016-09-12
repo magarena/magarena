@@ -1,5 +1,5 @@
 name=Call to Heel
-image=http://magiccards.info/scans/en/ddj/18.jpg
+image=http://magiccards.info/scans/en/ala/32.jpg
 value=2.385
 rarity=C
 type=Instant

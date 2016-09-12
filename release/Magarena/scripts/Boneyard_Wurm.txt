@@ -1,5 +1,5 @@
 name=Boneyard Wurm
-image=http://magiccards.info/scans/en/ddj/51.jpg
+image=http://magiccards.info/scans/en/isd/171.jpg
 value=3.660
 rarity=U
 type=Creature

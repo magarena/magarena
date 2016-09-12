@@ -1,5 +1,5 @@
 name=Golgari Thug
-image=http://magiccards.info/scans/en/ddj/48.jpg
+image=http://magiccards.info/scans/en/rav/87.jpg
 value=4.533
 rarity=U
 type=Creature

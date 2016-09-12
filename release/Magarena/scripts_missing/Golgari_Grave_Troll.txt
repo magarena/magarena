@@ -1,5 +1,5 @@
 name=Golgari Grave-Troll
-image=http://magiccards.info/scans/en/ddj/60.jpg
+image=http://magiccards.info/scans/en/rav/167.jpg
 value=4.577
 rarity=R
 type=Creature

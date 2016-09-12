@@ -1,5 +1,5 @@
 name=Djinn Illuminatus
-image=http://magiccards.info/scans/en/ddj/12.jpg
+image=http://magiccards.info/scans/en/gp/142.jpg
 value=4.230
 rarity=R
 type=Creature

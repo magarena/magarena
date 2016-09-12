@@ -1,5 +1,5 @@
 name=Force Spike
-image=http://magiccards.info/scans/en/ddj/14.jpg
+image=http://magiccards.info/scans/en/7e/76.jpg
 value=4.453
 rarity=C
 type=Instant

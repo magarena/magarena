@@ -1,5 +1,5 @@
 name=Ghoul's Feast
-image=http://magiccards.info/scans/en/ddj/67.jpg
+image=http://magiccards.info/scans/en/mm/137.jpg
 value=3.850
 rarity=U
 type=Instant

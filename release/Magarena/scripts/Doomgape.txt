@@ -1,5 +1,5 @@
 name=Doomgape
-image=http://magiccards.info/scans/en/ddj/65.jpg
+image=http://magiccards.info/scans/en/eve/120.jpg
 value=4.058
 rarity=R
 type=Creature

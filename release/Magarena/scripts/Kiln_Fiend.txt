@@ -1,5 +1,5 @@
 name=Kiln Fiend
-image=http://magiccards.info/scans/en/ddj/2.jpg
+image=http://magiccards.info/scans/en/roe/153.jpg
 value=4.366
 rarity=C
 type=Creature

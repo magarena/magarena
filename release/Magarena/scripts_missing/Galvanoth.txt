@@ -1,5 +1,5 @@
 name=Galvanoth
-image=http://magiccards.info/scans/en/ddj/10.jpg
+image=http://magiccards.info/scans/en/mbs/62.jpg
 value=3.156
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Vacuumelt
-image=http://magiccards.info/scans/en/ddj/24.jpg
+image=http://magiccards.info/scans/en/gp/40.jpg
 value=1.821
 removal=2
 rarity=U

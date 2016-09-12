@@ -1,5 +1,5 @@
 name=Golgari Rotwurm
-image=http://magiccards.info/scans/en/ddj/63.jpg
+image=http://magiccards.info/scans/en/rav/210.jpg
 value=3.417
 rarity=C
 type=Creature

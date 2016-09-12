@@ -1,5 +1,5 @@
 name=Golgari Germination
-image=http://magiccards.info/scans/en/ddj/70.jpg
+image=http://magiccards.info/scans/en/rav/209.jpg
 value=4.188
 rarity=U
 type=Enchantment
