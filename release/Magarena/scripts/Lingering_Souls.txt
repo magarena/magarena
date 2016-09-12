@@ -1,5 +1,5 @@
 name=Lingering Souls
-image=http://magiccards.info/scans/en/md1/11.jpg
+image=http://magiccards.info/scans/en/dka/12.jpg
 value=3.542
 rarity=U
 type=Sorcery

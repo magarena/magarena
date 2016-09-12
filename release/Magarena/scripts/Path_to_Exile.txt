@@ -1,5 +1,5 @@
 name=Path to Exile
-image=http://magiccards.info/scans/en/md1/3.jpg
+image=http://magiccards.info/scans/en/mma/25.jpg
 value=4.300
 removal=5
 rarity=U

@@ -1,5 +1,5 @@
 name=Inquisition of Kozilek
-image=http://magiccards.info/scans/en/md1/4.jpg
+image=http://magiccards.info/scans/en/roe/115.jpg
 value=4.375
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Windbrisk Heights
-image=http://magiccards.info/scans/en/md1/18.jpg
+image=http://magiccards.info/scans/en/lw/281.jpg
 value=2.857
 rarity=R
 type=Land

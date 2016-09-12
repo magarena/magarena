@@ -1,5 +1,5 @@
 name=Honor of the Pure
-image=http://magiccards.info/scans/en/md1/6.jpg
+image=http://magiccards.info/scans/en/m12/23.jpg
 value=3.458
 rarity=R
 type=Enchantment

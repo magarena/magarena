@@ -1,5 +1,5 @@
 name=Elspeth, Knight-Errant
-image=http://magiccards.info/scans/en/md1/13.jpg
+image=http://magiccards.info/scans/en/mma/13.jpg
 value=4.128
 rarity=M
 type=Planeswalker

@@ -1,5 +1,5 @@
 name=Kataki, War's Wage
-image=http://magiccards.info/scans/en/md1/24.jpg
+image=http://magiccards.info/scans/en/mma/20.jpg
 value=4.409
 rarity=R
 type=Legendary,Creature
