@@ -1,5 +1,5 @@
 name=Obelisk of Undoing
-image=http://magiccards.info/scans/en/me4/217.jpg
+image=http://magiccards.info/scans/en/5e/392.jpg
 value=1.663
 rarity=R
 type=Artifact

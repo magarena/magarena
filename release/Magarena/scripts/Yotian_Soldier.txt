@@ -1,5 +1,5 @@
 name=Yotian Soldier
-image=http://magiccards.info/scans/en/me4/240.jpg
+image=http://magiccards.info/scans/en/mi/277.jpg
 value=3.643
 rarity=C
 type=Artifact,Creature

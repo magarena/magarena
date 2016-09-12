@@ -1,5 +1,5 @@
 name=Flying Carpet
-image=http://magiccards.info/scans/en/me4/201.jpg
+image=http://magiccards.info/scans/en/8e/301.jpg
 value=2.130
 rarity=C
 type=Artifact

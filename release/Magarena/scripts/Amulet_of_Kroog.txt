@@ -1,5 +1,5 @@
 name=Amulet of Kroog
-image=http://magiccards.info/scans/en/me4/179.jpg
+image=http://magiccards.info/scans/en/5e/347.jpg
 value=1.704
 rarity=C
 type=Artifact

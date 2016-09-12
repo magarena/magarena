@@ -1,5 +1,5 @@
 name=Talas Researcher
-image=http://magiccards.info/scans/en/me4/66.jpg
+image=http://magiccards.info/scans/en/po2/51.jpg
 value=2.690
 rarity=U
 type=Creature

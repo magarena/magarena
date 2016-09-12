@@ -1,5 +1,5 @@
 name=Reconstruction
-image=http://magiccards.info/scans/en/me4/59.jpg
+image=http://magiccards.info/scans/en/rv/77.jpg
 value=4.000
 rarity=C
 type=Sorcery

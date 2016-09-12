@@ -1,5 +1,5 @@
 name=Mana Matrix
-image=http://magiccards.info/scans/en/me4/213.jpg
+image=http://magiccards.info/scans/en/lg/230.jpg
 value=2.808
 rarity=R
 type=Artifact

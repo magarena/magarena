@@ -1,5 +1,5 @@
 name=Spotted Griffin
-image=http://magiccards.info/scans/en/me4/28.jpg
+image=http://magiccards.info/scans/en/po/190.jpg
 value=2.600
 rarity=C
 type=Creature

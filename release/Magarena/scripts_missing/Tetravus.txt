@@ -1,5 +1,5 @@
 name=Tetravus
-image=http://magiccards.info/scans/en/me4/233.jpg
+image=http://magiccards.info/scans/en/4e/368.jpg
 value=3.479
 rarity=R
 type=Artifact,Creature

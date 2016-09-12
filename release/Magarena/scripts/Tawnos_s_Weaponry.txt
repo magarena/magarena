@@ -1,5 +1,5 @@
 name=Tawnos's Weaponry
-image=http://magiccards.info/scans/en/me4/232.jpg
+image=http://magiccards.info/scans/en/5e/401.jpg
 value=2.750
 rarity=U
 type=Artifact

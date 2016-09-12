@@ -1,5 +1,5 @@
 name=Elephant Graveyard
-image=http://magiccards.info/scans/en/me4/244.jpg
+image=http://magiccards.info/scans/en/an/88.jpg
 value=4.194
 rarity=U
 type=Land

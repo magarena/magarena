@@ -1,5 +1,5 @@
 name=Ring of Renewal
-image=http://magiccards.info/scans/en/me4/224.jpg
+image=http://magiccards.info/scans/en/fe/174.jpg
 value=2.423
 rarity=R
 type=Artifact

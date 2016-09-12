@@ -1,5 +1,5 @@
 name=Power Artifact
-image=http://magiccards.info/scans/en/me4/57.jpg
+image=http://magiccards.info/scans/en/aq/55.jpg
 value=4.475
 rarity=R
 type=Enchantment

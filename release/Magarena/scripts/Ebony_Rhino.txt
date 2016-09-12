@@ -1,5 +1,5 @@
 name=Ebony Rhino
-image=http://magiccards.info/scans/en/me4/199.jpg
+image=http://magiccards.info/scans/en/hl/131.jpg
 value=2.058
 rarity=C
 type=Artifact,Creature

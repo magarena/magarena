@@ -1,5 +1,5 @@
 name=Drain Power
-image=http://magiccards.info/scans/en/me4/46.jpg
+image=http://magiccards.info/scans/en/5e/82.jpg
 value=4.050
 rarity=R
 type=Sorcery

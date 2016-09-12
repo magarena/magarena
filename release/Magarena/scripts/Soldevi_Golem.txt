@@ -1,5 +1,5 @@
 name=Soldevi Golem
-image=http://magiccards.info/scans/en/me4/228.jpg
+image=http://magiccards.info/scans/en/ia/313.jpg
 value=2.306
 rarity=U
 type=Artifact,Creature

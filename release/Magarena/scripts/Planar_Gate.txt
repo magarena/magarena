@@ -1,5 +1,5 @@
 name=Planar Gate
-image=http://magiccards.info/scans/en/me4/221.jpg
+image=http://magiccards.info/scans/en/lg/235.jpg
 value=3.143
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Transmute Artifact
-image=http://magiccards.info/scans/en/me4/69.jpg
+image=http://magiccards.info/scans/en/aq/58.jpg
 value=4.316
 rarity=R
 type=Sorcery

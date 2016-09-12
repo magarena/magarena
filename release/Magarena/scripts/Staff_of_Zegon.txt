@@ -1,5 +1,5 @@
 name=Staff of Zegon
-image=http://magiccards.info/scans/en/me4/229.jpg
+image=http://magiccards.info/scans/en/aq/30.jpg
 value=2.455
 rarity=C
 type=Artifact

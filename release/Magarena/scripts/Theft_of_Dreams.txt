@@ -1,5 +1,5 @@
 name=Theft of Dreams
-image=http://magiccards.info/scans/en/me4/67.jpg
+image=http://magiccards.info/scans/en/ex/49.jpg
 value=3.762
 rarity=U
 type=Sorcery

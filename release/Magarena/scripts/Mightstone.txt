@@ -1,5 +1,5 @@
 name=Mightstone
-image=http://magiccards.info/scans/en/me4/215.jpg
+image=http://magiccards.info/scans/en/aq/20.jpg
 value=2.333
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Last Chance
-image=http://magiccards.info/scans/en/me4/125.jpg
+image=http://magiccards.info/scans/en/st/110.jpg
 value=3.961
 rarity=R
 type=Sorcery

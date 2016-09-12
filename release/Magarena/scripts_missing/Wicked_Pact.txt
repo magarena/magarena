@@ -1,5 +1,5 @@
 name=Wicked Pact
-image=http://magiccards.info/scans/en/me4/102.jpg
+image=http://magiccards.info/scans/en/st/92.jpg
 value=3.312
 rarity=U
 type=Sorcery

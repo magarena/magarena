@@ -1,5 +1,5 @@
 name=Dread Wight
-image=http://magiccards.info/scans/en/me4/79.jpg
+image=http://magiccards.info/scans/en/ia/10.jpg
 value=3.762
 rarity=U
 type=Creature

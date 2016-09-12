@@ -1,5 +1,5 @@
 name=Library of Leng
-image=http://magiccards.info/scans/en/me4/211.jpg
+image=http://magiccards.info/scans/en/5e/387.jpg
 value=4.179
 rarity=C
 type=Artifact

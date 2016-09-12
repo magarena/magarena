@@ -1,5 +1,5 @@
 name=Weakstone
-image=http://magiccards.info/scans/en/me4/239.jpg
+image=http://magiccards.info/scans/en/aq/43.jpg
 value=2.167
 rarity=U
 type=Artifact

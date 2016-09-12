@@ -1,5 +1,5 @@
 name=Island Sanctuary
-image=http://magiccards.info/scans/en/me4/15.jpg
+image=http://magiccards.info/scans/en/5e/315.jpg
 value=4.293
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Stasis
-image=http://magiccards.info/scans/en/me4/64.jpg
+image=http://magiccards.info/scans/en/5e/127.jpg
 value=4.546
 rarity=R
 type=Enchantment

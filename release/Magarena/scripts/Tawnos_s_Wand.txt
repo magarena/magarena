@@ -1,5 +1,5 @@
 name=Tawnos's Wand
-image=http://magiccards.info/scans/en/me4/231.jpg
+image=http://magiccards.info/scans/en/4e/366.jpg
 value=2.920
 rarity=C
 type=Artifact

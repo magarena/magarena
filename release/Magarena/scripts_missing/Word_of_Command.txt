@@ -1,5 +1,5 @@
 name=Word of Command
-image=http://magiccards.info/scans/en/me4/103.jpg
+image=http://magiccards.info/scans/en/un/45.jpg
 value=4.500
 rarity=R
 type=Instant

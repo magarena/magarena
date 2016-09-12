@@ -1,5 +1,5 @@
 name=Obsianus Golem
-image=http://magiccards.info/scans/en/me4/218.jpg
+image=http://magiccards.info/scans/en/6e/302.jpg
 value=2.694
 rarity=C
 type=Artifact,Creature

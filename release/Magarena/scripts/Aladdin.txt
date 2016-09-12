@@ -1,5 +1,5 @@
 name=Aladdin
-image=http://magiccards.info/scans/en/me4/106.jpg
+image=http://magiccards.info/scans/en/ch/44.jpg
 value=3.886
 rarity=R
 type=Creature

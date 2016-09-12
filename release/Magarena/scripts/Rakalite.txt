@@ -1,5 +1,5 @@
 name=Rakalite
-image=http://magiccards.info/scans/en/me4/223.jpg
+image=http://magiccards.info/scans/en/ch/85.jpg
 value=1.029
 rarity=R
 type=Artifact

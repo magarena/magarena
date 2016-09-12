@@ -1,5 +1,5 @@
 name=Urza's Tower
-image=http://magiccards.info/scans/en/me4/259.jpg
+image=http://magiccards.info/scans/en/9e/329.jpg
 value=4.329
 rarity=B
 type=Land

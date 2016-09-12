@@ -1,5 +1,5 @@
 name=Ogre Taskmaster
-image=http://magiccards.info/scans/en/me4/128.jpg
+image=http://magiccards.info/scans/en/9e/205.jpg
 value=2.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Demonic Hordes
-image=http://magiccards.info/scans/en/me4/76.jpg
+image=http://magiccards.info/scans/en/rv/12.jpg
 value=4.011
 rarity=R
 type=Creature

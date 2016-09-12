@@ -1,5 +1,5 @@
 name=Rock Hydra
-image=http://magiccards.info/scans/en/me4/133.jpg
+image=http://magiccards.info/scans/en/rv/172.jpg
 value=3.865
 rarity=R
 type=Creature

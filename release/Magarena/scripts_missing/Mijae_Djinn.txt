@@ -1,5 +1,5 @@
 name=Mijae Djinn
-image=http://magiccards.info/scans/en/me4/127.jpg
+image=http://magiccards.info/scans/en/rv/165.jpg
 value=3.562
 rarity=R
 type=Creature

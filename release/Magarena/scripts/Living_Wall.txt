@@ -1,5 +1,5 @@
 name=Living Wall
-image=http://magiccards.info/scans/en/me4/212.jpg
+image=http://magiccards.info/scans/en/rv/262.jpg
 value=3.848
 rarity=U
 type=Artifact,Creature

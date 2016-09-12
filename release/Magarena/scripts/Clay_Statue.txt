@@ -1,5 +1,5 @@
 name=Clay Statue
-image=http://magiccards.info/scans/en/me4/189.jpg
+image=http://magiccards.info/scans/en/5e/355.jpg
 value=3.341
 rarity=U
 type=Artifact,Creature

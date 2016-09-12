@@ -1,5 +1,5 @@
 name=Goblin Shrine
-image=http://magiccards.info/scans/en/me4/122.jpg
+image=http://magiccards.info/scans/en/ch/50.jpg
 value=2.783
 rarity=C
 type=Enchantment

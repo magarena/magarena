@@ -1,5 +1,5 @@
 name=Al-abara's Carpet
-image=http://magiccards.info/scans/en/me4/177.jpg
+image=http://magiccards.info/scans/en/lg/213.jpg
 value=3.625
 rarity=R
 type=Artifact

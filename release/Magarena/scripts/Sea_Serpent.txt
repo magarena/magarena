@@ -1,5 +1,5 @@
 name=Sea Serpent
-image=http://magiccards.info/scans/en/me4/60.jpg
+image=http://magiccards.info/scans/en/5e/118.jpg
 value=1.485
 rarity=C
 type=Creature

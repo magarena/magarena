@@ -1,5 +1,5 @@
 name=Copy Artifact
-image=http://magiccards.info/scans/en/me4/44.jpg
+image=http://magiccards.info/scans/en/rv/53.jpg
 value=4.540
 rarity=R
 type=Enchantment

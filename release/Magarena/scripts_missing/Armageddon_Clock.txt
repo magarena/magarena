@@ -1,5 +1,5 @@
 name=Armageddon Clock
-image=http://magiccards.info/scans/en/me4/180.jpg
+image=http://magiccards.info/scans/en/4e/313.jpg
 value=3.889
 rarity=R
 type=Artifact

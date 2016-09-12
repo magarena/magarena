@@ -1,5 +1,5 @@
 name=Kormus Bell
-image=http://magiccards.info/scans/en/me4/210.jpg
+image=http://magiccards.info/scans/en/4e/350.jpg
 value=3.868
 rarity=R
 type=Artifact

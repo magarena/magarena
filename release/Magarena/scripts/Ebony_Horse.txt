@@ -1,5 +1,5 @@
 name=Ebony Horse
-image=http://magiccards.info/scans/en/me4/198.jpg
+image=http://magiccards.info/scans/en/4e/336.jpg
 value=2.294
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Gravebind
-image=http://magiccards.info/scans/en/me4/84.jpg
+image=http://magiccards.info/scans/en/ia/17.jpg
 value=2.429
 rarity=C
 type=Instant

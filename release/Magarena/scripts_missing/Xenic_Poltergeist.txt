@@ -1,5 +1,5 @@
 name=Xenic Poltergeist
-image=http://magiccards.info/scans/en/me4/104.jpg
+image=http://magiccards.info/scans/en/5e/68.jpg
 value=3.648
 rarity=U
 type=Creature

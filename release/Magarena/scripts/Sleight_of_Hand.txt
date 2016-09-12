@@ -1,5 +1,5 @@
 name=Sleight of Hand
-image=http://magiccards.info/scans/en/me4/62.jpg
+image=http://magiccards.info/scans/en/9e/99.jpg
 value=4.345
 rarity=C
 type=Sorcery

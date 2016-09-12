@@ -1,5 +1,5 @@
 name=Animate Artifact
-image=http://magiccards.info/scans/en/me4/38.jpg
+image=http://magiccards.info/scans/en/4e/60.jpg
 value=2.903
 rarity=U
 type=Enchantment

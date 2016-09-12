@@ -1,5 +1,5 @@
 name=Urza's Power Plant
-image=http://magiccards.info/scans/en/me4/258.jpg
+image=http://magiccards.info/scans/en/9e/328.jpg
 value=4.485
 rarity=B
 type=Land

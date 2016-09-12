@@ -1,5 +1,5 @@
 name=Goblin Firestarter
-image=http://magiccards.info/scans/en/me4/120.jpg
+image=http://magiccards.info/scans/en/po2/96.jpg
 value=2.914
 rarity=C
 type=Creature

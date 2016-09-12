@@ -1,5 +1,5 @@
 name=Alluring Scent
-image=http://magiccards.info/scans/en/me4/141.jpg
+image=http://magiccards.info/scans/en/st/124.jpg
 value=2.292
 rarity=C
 type=Sorcery

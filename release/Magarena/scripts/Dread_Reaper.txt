@@ -1,5 +1,5 @@
 name=Dread Reaper
-image=http://magiccards.info/scans/en/me4/78.jpg
+image=http://magiccards.info/scans/en/st/76.jpg
 value=2.375
 rarity=R
 type=Creature

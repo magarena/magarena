@@ -1,5 +1,5 @@
 name=Soul Shred
-image=http://magiccards.info/scans/en/me4/98.jpg
+image=http://magiccards.info/scans/en/po/35.jpg
 value=2.308
 rarity=C
 type=Sorcery

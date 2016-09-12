@@ -1,5 +1,5 @@
 name=Ebon Dragon
-image=http://magiccards.info/scans/en/me4/80.jpg
+image=http://magiccards.info/scans/en/po/13.jpg
 value=3.029
 rarity=R
 type=Creature

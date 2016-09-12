@@ -1,5 +1,5 @@
 name=Scarecrow
-image=http://magiccards.info/scans/en/me4/225.jpg
+image=http://magiccards.info/scans/en/dk/105.jpg
 value=2.810
 rarity=U
 type=Artifact,Creature

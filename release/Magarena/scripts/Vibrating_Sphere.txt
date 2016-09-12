@@ -1,5 +1,5 @@
 name=Vibrating Sphere
-image=http://magiccards.info/scans/en/me4/238.jpg
+image=http://magiccards.info/scans/en/ia/320.jpg
 value=1.500
 rarity=R
 type=Artifact

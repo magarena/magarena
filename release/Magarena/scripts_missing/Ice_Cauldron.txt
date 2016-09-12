@@ -1,5 +1,5 @@
 name=Ice Cauldron
-image=http://magiccards.info/scans/en/me4/206.jpg
+image=http://magiccards.info/scans/en/ia/296.jpg
 value=3.552
 rarity=R
 type=Artifact

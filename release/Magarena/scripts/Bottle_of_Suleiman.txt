@@ -1,5 +1,5 @@
 name=Bottle of Suleiman
-image=http://magiccards.info/scans/en/me4/184.jpg
+image=http://magiccards.info/scans/en/6e/275.jpg
 value=2.544
 rarity=R
 type=Artifact
