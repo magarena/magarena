@@ -1,5 +1,5 @@
 name=Body Double
-image=http://magiccards.info/scans/en/ddm/15.jpg
+image=http://magiccards.info/scans/en/pc/35.jpg
 value=4.500
 rarity=R
 type=Creature

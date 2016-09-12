@@ -1,5 +1,5 @@
 name=Jace, Architect of Thought
-image=http://magiccards.info/scans/en/ddm/1.jpg
+image=http://magiccards.info/scans/en/rtr/44.jpg
 value=3.500
 rarity=M
 type=Planeswalker

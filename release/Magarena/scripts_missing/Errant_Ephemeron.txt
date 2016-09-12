@@ -1,5 +1,5 @@
 name=Errant Ephemeron
-image=http://magiccards.info/scans/en/ddm/20.jpg
+image=http://magiccards.info/scans/en/mma/41.jpg
 value=2.500
 rarity=C
 type=Creature

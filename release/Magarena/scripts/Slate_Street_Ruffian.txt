@@ -1,5 +1,5 @@
 name=Slate Street Ruffian
-image=http://magiccards.info/scans/en/ddm/53.jpg
+image=http://magiccards.info/scans/en/gtc/78.jpg
 value=3.500
 rarity=C
 type=Creature

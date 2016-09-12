@@ -1,5 +1,5 @@
 name=Agoraphobia
-image=http://magiccards.info/scans/en/ddm/22.jpg
+image=http://magiccards.info/scans/en/gtc/30.jpg
 value=3.500
 rarity=U
 type=Enchantment

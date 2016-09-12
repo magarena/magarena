@@ -1,5 +1,5 @@
 name=Riftwing Cloudskate
-image=http://magiccards.info/scans/en/ddm/18.jpg
+image=http://magiccards.info/scans/en/mma/62.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Gatecreeper Vine
-image=http://magiccards.info/scans/en/ddm/48.jpg
+image=http://magiccards.info/scans/en/rtr/124.jpg
 value=3.591
 rarity=C
 type=Creature

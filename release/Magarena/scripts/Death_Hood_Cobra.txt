@@ -1,5 +1,5 @@
 name=Death-Hood Cobra
-image=http://magiccards.info/scans/en/ddm/47.jpg
+image=http://magiccards.info/scans/en/nph/108.jpg
 value=3.708
 rarity=C
 type=Creature

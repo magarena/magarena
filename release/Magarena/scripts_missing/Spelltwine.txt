@@ -1,5 +1,5 @@
 name=Spelltwine
-image=http://magiccards.info/scans/en/ddm/34.jpg
+image=http://magiccards.info/scans/en/m13/68.jpg
 value=3.778
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Phantasmal Bear
-image=http://magiccards.info/scans/en/ddm/4.jpg
+image=http://magiccards.info/scans/en/m12/70.jpg
 value=4.179
 rarity=C
 type=Creature

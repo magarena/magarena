@@ -1,5 +1,5 @@
 name=Prohibit
-image=http://magiccards.info/scans/en/ddm/25.jpg
+image=http://magiccards.info/scans/en/in/67.jpg
 value=3.792
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Summoner's Bane
-image=http://magiccards.info/scans/en/ddm/31.jpg
+image=http://magiccards.info/scans/en/zen/71.jpg
 value=3.650
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Vinelasher Kudzu
-image=http://magiccards.info/scans/en/ddm/50.jpg
+image=http://magiccards.info/scans/en/rav/189.jpg
 value=4.042
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Hypnotic Cloud
-image=http://magiccards.info/scans/en/ddm/67.jpg
+image=http://magiccards.info/scans/en/in/109.jpg
 value=3.429
 rarity=C
 type=Sorcery

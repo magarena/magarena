@@ -1,5 +1,5 @@
 name=Marsh Casualties
-image=http://magiccards.info/scans/en/ddm/69.jpg
+image=http://magiccards.info/scans/en/zen/101.jpg
 value=3.571
 removal=2
 rarity=U

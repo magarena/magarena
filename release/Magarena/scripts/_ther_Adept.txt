@@ -1,5 +1,5 @@
 name=Æther Adept
-image=http://magiccards.info/scans/en/ddm/12.jpg
+image=http://magiccards.info/scans/en/m12/41.jpg
 value=3.700
 removal=2
 rarity=C
