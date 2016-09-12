@@ -1,5 +1,5 @@
 name=Harm's Way
-image=http://magiccards.info/scans/en/ddg/23.jpg
+image=http://magiccards.info/scans/en/m10/14.jpg
 value=3.900
 rarity=U
 type=Instant

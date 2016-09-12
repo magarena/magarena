@@ -1,5 +1,5 @@
 name=Steward of Valeron
-image=http://magiccards.info/scans/en/ddg/11.jpg
+image=http://magiccards.info/scans/en/ala/198.jpg
 value=3.687
 rarity=C
 type=Creature

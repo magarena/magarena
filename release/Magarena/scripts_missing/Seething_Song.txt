@@ -1,5 +1,5 @@
 name=Seething Song
-image=http://magiccards.info/scans/en/ddg/70.jpg
+image=http://magiccards.info/scans/en/arc/46.jpg
 value=4.473
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Dragonspeaker Shaman
-image=http://magiccards.info/scans/en/ddg/53.jpg
+image=http://magiccards.info/scans/en/arc/36.jpg
 value=4.218
 rarity=U
 type=Creature

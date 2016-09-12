@@ -1,5 +1,5 @@
 name=Kabira Vindicator
-image=http://magiccards.info/scans/en/ddg/16.jpg
+image=http://magiccards.info/scans/en/roe/28.jpg
 value=3.400
 rarity=U
 type=Creature

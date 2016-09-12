@@ -1,5 +1,5 @@
 name=Silver Knight
-image=http://magiccards.info/scans/en/ddg/8.jpg
+image=http://magiccards.info/scans/en/sc/23.jpg
 value=4.288
 rarity=U
 type=Creature

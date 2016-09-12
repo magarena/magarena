@@ -1,5 +1,5 @@
 name=Knight of Cliffhaven
-image=http://magiccards.info/scans/en/ddg/4.jpg
+image=http://magiccards.info/scans/en/roe/29.jpg
 value=3.028
 rarity=C
 type=Creature

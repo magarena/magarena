@@ -1,5 +1,5 @@
 name=Kilnmouth Dragon
-image=http://magiccards.info/scans/en/ddg/59.jpg
+image=http://magiccards.info/scans/en/arc/44.jpg
 value=4.106
 rarity=R
 type=Creature

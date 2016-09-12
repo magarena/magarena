@@ -1,5 +1,5 @@
 name=Zhalfirin Commander
-image=http://magiccards.info/scans/en/ddg/13.jpg
+image=http://magiccards.info/scans/en/tsts/18.jpg
 value=3.682
 rarity=U
 type=Creature

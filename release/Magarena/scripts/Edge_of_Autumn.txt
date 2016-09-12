@@ -1,5 +1,5 @@
 name=Edge of Autumn
-image=http://magiccards.info/scans/en/ddg/25.jpg
+image=http://magiccards.info/scans/en/fut/144.jpg
 value=3.078
 rarity=C
 type=Sorcery

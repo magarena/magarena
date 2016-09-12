@@ -1,5 +1,5 @@
 name=Captive Flame
-image=http://magiccards.info/scans/en/ddg/68.jpg
+image=http://magiccards.info/scans/en/sok/96.jpg
 value=3.590
 rarity=U
 type=Enchantment

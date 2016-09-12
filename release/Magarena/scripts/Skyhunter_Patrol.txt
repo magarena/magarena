@@ -1,5 +1,5 @@
 name=Skyhunter Patrol
-image=http://magiccards.info/scans/en/ddg/19.jpg
+image=http://magiccards.info/scans/en/10e/41.jpg
 value=3.204
 rarity=C
 type=Creature

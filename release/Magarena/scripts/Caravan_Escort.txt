@@ -1,5 +1,5 @@
 name=Caravan Escort
-image=http://magiccards.info/scans/en/ddg/2.jpg
+image=http://magiccards.info/scans/en/roe/15.jpg
 value=3.081
 rarity=C
 type=Creature
