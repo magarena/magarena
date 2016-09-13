@@ -33,6 +33,7 @@ public enum MagicSubType {
     Contraption,
     Equipment,
     Fortification,
+    Vehicle,
 
     //enchantment subtypes
     Aura,
