@@ -6,14 +6,18 @@ import magic.model.MagicSource;
 import magic.model.action.DrawAction;
 
 public class MagicDrawEvent extends MagicEvent {
-    public MagicDrawEvent(final MagicSource source,final MagicPlayer player,final int amount) {
+    public MagicDrawEvent(final MagicSource source, final MagicPlayer player, final int amount, final String desc) {
         super(
             source,
             player,
             amount,
             EVENT_ACTION,
-            "PN " + genDescription(amount)
+            desc
         );
+    }
+
+    public MagicDrawEvent(final MagicSource source,final MagicPlayer player,final int amount) {
+        this(source, player, amount, "PN " + genDescription(amount));
     }
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
