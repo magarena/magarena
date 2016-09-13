@@ -507,6 +507,11 @@ public enum MagicAbility {
             );
         }
     },
+    Crew("crew " + ARG.NUMBER, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new MagicCrewActivation(ARG.number(arg)));
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {

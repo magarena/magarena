@@ -17,6 +17,10 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     boolean accept(final MagicSource source,final MagicPlayer player,final T target);
 
+    default List<T> filter(final MagicSource source, final MagicPlayer player) {
+        return filter(source, player, MagicTargetHint.None);
+    }
+
     List<T> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint);
 
     List<T> filter(final MagicSource source);

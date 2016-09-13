@@ -128,6 +128,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice AN_ARTIFACT_OR_CREATURE =
         new MagicTargetChoice("an artifact or creature");
 
+    public static final MagicTargetChoice AN_UNTAPPED_CREATURE_YOU_CONTROL =
+        new MagicTargetChoice("an untapped creature you control");
+
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE =
         new MagicTargetChoice("target artifact or creature");
 
