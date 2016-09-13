@@ -95,7 +95,7 @@ public enum MagicSubType {
 
     public static final Set<MagicSubType> ALL_LANDS = EnumSet.range(Plains, Gate);
 
-    public static final Set<MagicSubType> ALL_ARTIFACTS = EnumSet.range(Contraption, Fortification);
+    public static final Set<MagicSubType> ALL_ARTIFACTS = EnumSet.range(Contraption, Vehicle);
 
     public static final Set<MagicSubType> ALL_ENCHANTMENTS = EnumSet.range(Aura, Shrine);
 
