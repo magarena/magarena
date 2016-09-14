@@ -1,5 +1,5 @@
 name=Righteous Fury
-image=http://magiccards.info/scans/en/me2/30.jpg
+image=http://magiccards.info/scans/en/st/23.jpg
 value=3.956
 rarity=R
 type=Sorcery
