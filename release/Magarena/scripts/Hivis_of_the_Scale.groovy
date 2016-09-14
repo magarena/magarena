@@ -7,7 +7,7 @@ def NEG_TARGET_DRAGON = MagicTargetChoice.Negative("target Dragon")
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
 

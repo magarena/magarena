@@ -19,7 +19,7 @@ def SNOW_MOUNTAIN_CONDITION = new MagicCondition() {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPlayAbilityEvent(source),
                 new MagicPayManaCostEvent(source, "{1}{R}")

@@ -4,7 +4,7 @@
         "Flash"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             return [
                 MagicPayManaCostEvent.Cast(source, "{5}{W}{W}")
             ];

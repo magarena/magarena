@@ -10,7 +10,7 @@
         }
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             final int n = MagicCondition.METALCRAFT_CONDITION.accept(source) ? 1 : 0;
             return [
                 new MagicPayManaCostEvent(

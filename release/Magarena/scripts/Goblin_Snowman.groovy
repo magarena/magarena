@@ -19,7 +19,7 @@ def TARGET_CREATURE_BLOCKED_BY_SOURCE = {
         "Damage"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
 

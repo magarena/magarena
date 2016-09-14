@@ -5,7 +5,7 @@
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{2}{B}{G}"),
                 new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a nontoken creature to sacrifice"))

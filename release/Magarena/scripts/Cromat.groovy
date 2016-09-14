@@ -11,7 +11,7 @@ def CREATURE_BLOCKING_BLOCKED_BY_SN = new MagicPermanentFilterImpl() {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source, "{W}{B}")];
         }
 

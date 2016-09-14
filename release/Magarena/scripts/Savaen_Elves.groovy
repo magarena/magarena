@@ -16,7 +16,7 @@ def NEG_AURA_ATTACHED_TO_A_LAND = new MagicTargetChoice(
         "Destroy"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,"{G}{G}")

@@ -15,7 +15,7 @@ def FUNGUS_OR_SAPROLING_YOU_CONTROL = new MagicPermanentFilterImpl() {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicSacrificePermanentEvent(source, SACRIFICE_SAPROLING)];
         }
 

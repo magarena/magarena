@@ -5,7 +5,7 @@
         "Gain Life"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicSacrificePermanentEvent(
                     source,

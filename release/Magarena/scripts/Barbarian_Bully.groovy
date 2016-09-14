@@ -13,7 +13,7 @@ def action = {
         "Pump"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 MagicDiscardEvent.Random(source),
                 new MagicPlayAbilityEvent(source)

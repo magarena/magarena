@@ -10,7 +10,7 @@
         }
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             final int n = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(source).size();
             return n >= 10 ?
                 [MagicPayManaCostEvent.Cast(source,"{B}{B}")] :

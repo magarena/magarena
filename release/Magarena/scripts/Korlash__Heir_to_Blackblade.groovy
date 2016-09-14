@@ -27,7 +27,7 @@ def SWAMP_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         "Grandeur"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicDiscardChosenEvent(source,A_CARD_NAMED_KORLASH)];
         }
         @Override

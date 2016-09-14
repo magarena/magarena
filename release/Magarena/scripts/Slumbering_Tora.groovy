@@ -39,7 +39,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         "Becomes"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{2}"),
                 new MagicDiscardChosenEvent(source, A_SPIRIT_OR_ARCANE_CARD_FROM_HAND)

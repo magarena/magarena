@@ -7,7 +7,7 @@
         "+1/+1"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicExileCardPayManaCostEvent(
                     source,

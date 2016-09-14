@@ -17,7 +17,7 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
         "Token"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{1}")];
         }
         @Override

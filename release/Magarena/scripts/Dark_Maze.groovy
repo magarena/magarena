@@ -14,7 +14,7 @@ def COULD_ATTACK = new MagicCondition() {
         "Attack"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{0}"),
                 new MagicPlayAbilityEvent(source)

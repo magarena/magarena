@@ -4,7 +4,7 @@
         "Damage"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent permanent) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent permanent) {
             return [
                 new MagicTapEvent(permanent.getEquippedCreature())
             ];

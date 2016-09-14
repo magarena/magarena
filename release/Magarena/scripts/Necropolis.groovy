@@ -5,7 +5,7 @@ def A_CREATURE_CARD_FROM_GRAVEYARD = new MagicTargetChoice("a creature card from
         "+Counters"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicExileCardEvent(source, A_CREATURE_CARD_FROM_GRAVEYARD)];
         }
         @Override

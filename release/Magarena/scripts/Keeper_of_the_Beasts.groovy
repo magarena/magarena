@@ -18,7 +18,7 @@ def effect = MagicRuleEventAction.create("Put a 2/2 green Beast creature token o
         "Token"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{G}"),
                 new MagicTapEvent(source)

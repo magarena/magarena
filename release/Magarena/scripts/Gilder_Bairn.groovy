@@ -15,7 +15,7 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
         "+Counter"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{2}{G/U}"),
                 new MagicUntapEvent(source)

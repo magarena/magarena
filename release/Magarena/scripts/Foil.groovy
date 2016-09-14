@@ -22,7 +22,7 @@ def AN_ISLAND_CARD_FROM_HAND = new MagicTargetChoice(
         "Alt"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice ANOTHER_CARD_FROM_HAND = new MagicTargetChoice(
                 CARD_FROM_HAND.except(source),
                 MagicTargetHint.None,

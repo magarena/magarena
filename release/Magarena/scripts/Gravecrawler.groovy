@@ -11,7 +11,7 @@ def ZOMBIE_CONDITION = new MagicCondition() {
         "Cast"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             return [
                 new MagicPayManaCostEvent(source, "{B}")
             ];

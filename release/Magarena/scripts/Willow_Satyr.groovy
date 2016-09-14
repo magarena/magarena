@@ -7,7 +7,7 @@ def NEG_TARGET_LEGENDARY_CREATURE = MagicTargetChoice.Negative("target legendary
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
 

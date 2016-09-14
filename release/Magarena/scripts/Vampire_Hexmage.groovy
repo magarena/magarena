@@ -15,7 +15,7 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
         "Remove"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicSacrificeEvent(source)];
         }
         @Override

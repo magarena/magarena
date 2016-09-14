@@ -15,7 +15,7 @@ def TARGET_RED_INSTANT_OR_SORCERY = new MagicTargetChoice(
         "Counter"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicSacrificeEvent(source)
             ];

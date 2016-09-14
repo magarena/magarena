@@ -4,7 +4,7 @@
         "Destroy"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{2}{G}"),
                 new MagicPayLifeEvent(source,3 * (source.getCounters(MagicCounterType.Velocity))),

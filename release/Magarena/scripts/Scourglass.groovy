@@ -13,7 +13,7 @@ def NONLAND_NONARTIFACT_PERMANENT = new MagicPermanentFilterImpl() {
         "Destroy"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicSacrificeEvent(source)

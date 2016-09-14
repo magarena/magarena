@@ -10,7 +10,7 @@
         }
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             final int n = 2 * source.getController().getDomain();
             return [
                 new MagicPayManaCostEvent(

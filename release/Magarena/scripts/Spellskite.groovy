@@ -26,7 +26,7 @@ def event = {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source, "{U}")];
         }
 
@@ -41,7 +41,7 @@ def event = {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayLifeEvent(source, 2)];
         }
 

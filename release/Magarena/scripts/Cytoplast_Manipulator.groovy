@@ -8,7 +8,7 @@ def NEG_TARGET_CREATURE_WITH_PLUSONE_COUNTER = MagicTargetChoice.Negative("targe
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{U}")

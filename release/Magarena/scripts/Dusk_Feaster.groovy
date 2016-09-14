@@ -10,7 +10,7 @@
         }
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             final int n = MagicCondition.DELIRIUM_CONDITION.accept(source) ? 2 : 0;
             return [
                 new MagicPayManaCostEvent(source, source.getGameCost().reduce(n))

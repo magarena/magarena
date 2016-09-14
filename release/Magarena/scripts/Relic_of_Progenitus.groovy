@@ -13,7 +13,7 @@ def choice = new MagicTargetChoice("a card from your graveyard");
         "Exile one"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
         @Override

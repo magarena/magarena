@@ -40,7 +40,7 @@ public class MagicTransmuteActivation extends MagicCardAbilityActivation {
     }
 
     @Override
-    public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
             new MagicPayManaCostEvent(source, cost),
             new MagicDiscardSelfEvent(source)

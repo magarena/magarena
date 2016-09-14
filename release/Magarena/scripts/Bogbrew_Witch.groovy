@@ -19,7 +19,7 @@ def A_CARD_NAMED_NEWT_OR_CAULDRON = new MagicTargetChoice(
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{2}")

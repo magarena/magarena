@@ -15,7 +15,7 @@ def TARGET_OPPONENT_WHO_HAS_MORE_LIFE = new MagicTargetChoice(
         "Damage"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{R}"),
                 new MagicTapEvent(source)

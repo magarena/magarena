@@ -32,7 +32,7 @@ def action = {
         "Becomes"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{2}"),
                 new MagicBounceChosenPermanentEvent(source, A_LAND_YOU_CONTROL)

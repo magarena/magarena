@@ -13,7 +13,7 @@ def PLAINS_AND_SWAMP_CONDITION = new MagicCondition() {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             return [];
         }
     }

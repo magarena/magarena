@@ -27,7 +27,7 @@ def SACRIFICE_SPIRIT = new MagicTargetChoice("a Spirit creature to sacrifice");
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicRepeatedPermanentsEvent(source, SACRIFICE_SPIRIT, 3, MagicChainEventFactory.Sac)

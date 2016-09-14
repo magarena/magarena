@@ -17,7 +17,7 @@ def effect = MagicRuleEventAction.create("You gain 3 life.");
         "+Life"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{W}"),
                 new MagicTapEvent(source)

@@ -5,7 +5,7 @@
         "Cast"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
             final int amount = CREATURE_CARD_FROM_GRAVEYARD.except(source).filter(source.getController()).size() + 2;
             return [
                 new MagicPayManaCostEvent(source, "{"+amount+"}{B}{B}")

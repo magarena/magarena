@@ -7,7 +7,7 @@ def TARGET_EQUIPMENT_YOU_CONTROL = new MagicTargetChoice("target Equipment you c
         "Attach"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{0}")
             ];

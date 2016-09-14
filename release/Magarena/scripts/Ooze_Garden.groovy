@@ -7,7 +7,7 @@ def choice = new MagicTargetChoice("a non-Ooze creature to sacrifice");
         "Token"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{1}{G}"),
                 new MagicSacrificePermanentEvent(source,choice)

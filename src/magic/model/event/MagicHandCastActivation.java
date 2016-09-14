@@ -128,7 +128,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
 
         return new MagicHandCastActivation(conds, cardDef.getActivationHints(), name) {
             @Override
-            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
                 final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
                 for (final MagicMatchedCostEvent matched : matchedCostEvents) {
                     costEvents.add(matched.getEvent(source));
@@ -141,7 +141,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     public static final MagicHandCastActivation reduction(final MagicCardDefinition cardDef, final MagicAmount amount) {
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
             @Override
-            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
                 return Collections.<MagicEvent>singletonList(
                     new MagicPayManaCostEvent(
                         source,
@@ -161,7 +161,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     public static final MagicHandCastActivation affinity(final MagicCardDefinition cardDef, final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
             @Override
-            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
                 return Collections.<MagicEvent>singletonList(
                     new MagicPayManaCostEvent(
                         source,
@@ -184,7 +184,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
 
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Awaken") {
             @Override
-            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
                 final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
                 for (final MagicMatchedCostEvent matched : matchedCostEvents) {
                     costEvents.add(matched.getEvent(source));
@@ -216,7 +216,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     public static final MagicHandCastActivation emerge(final MagicCardDefinition cardDef, final MagicManaCost manaCost) {
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Emerge") {
             @Override
-            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
                 return Collections.<MagicEvent>singletonList(
                     new MagicEmergeCostEvent(
                         source,

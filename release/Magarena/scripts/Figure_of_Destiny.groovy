@@ -66,7 +66,7 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
         "Spirit"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{R/W}")
             ];
@@ -97,7 +97,7 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{R/W}{R/W}{R/W}")
             ];
@@ -130,7 +130,7 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{R/W}{R/W}{R/W}{R/W}{R/W}{R/W}")
             ];

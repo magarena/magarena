@@ -3,7 +3,7 @@ def Life = new MagicPermanentActivation(
         "+Life"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(source, SACRIFICE_CREATURE)

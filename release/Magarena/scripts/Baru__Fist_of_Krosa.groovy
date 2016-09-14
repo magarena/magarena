@@ -18,7 +18,7 @@ def A_CARD_NAMED_BARU = new MagicTargetChoice(
         "Grandeur"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicDiscardChosenEvent(source,A_CARD_NAMED_BARU)];
         }
         @Override

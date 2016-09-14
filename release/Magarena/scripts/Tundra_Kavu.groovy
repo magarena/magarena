@@ -36,7 +36,7 @@ def ST4 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         "Plains"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
         @Override
@@ -61,7 +61,7 @@ def ST4 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         "Island"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
         @Override

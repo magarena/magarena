@@ -19,7 +19,7 @@ def NEG_TARGET_AURA_ATTACHED_YOUR_CREATURE = new MagicTargetChoice(
     ) {
 
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicTapEvent(source)];
         }
 

@@ -14,7 +14,7 @@ def choice = new MagicTargetChoice(UNTAPPED_HUMAN_YOU_CONTROL, "an untapped Huma
         "Destroy"
     ) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{3}"),
