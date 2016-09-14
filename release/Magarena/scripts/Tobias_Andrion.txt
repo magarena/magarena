@@ -1,5 +1,5 @@
 name=Tobias Andrion
-image=http://magiccards.info/scans/en/me3/181.jpg
+image=http://magiccards.info/scans/en/lg/304.jpg
 value=1.282
 rarity=C
 type=Legendary,Creature

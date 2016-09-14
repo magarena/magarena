@@ -1,5 +1,5 @@
 name=Wall of Light
-image=http://magiccards.info/scans/en/me3/27.jpg
+image=http://magiccards.info/scans/en/lg/212.jpg
 value=3.021
 rarity=C
 type=Creature

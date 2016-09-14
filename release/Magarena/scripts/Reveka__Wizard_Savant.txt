@@ -1,5 +1,5 @@
 name=Reveka, Wizard Savant
-image=http://magiccards.info/scans/en/me3/49.jpg
+image=http://magiccards.info/scans/en/hl/47.jpg
 value=2.656
 rarity=U
 type=Legendary,Creature

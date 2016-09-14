@@ -1,5 +1,5 @@
 name=Kobold Overlord
-image=http://magiccards.info/scans/en/me3/105.jpg
+image=http://magiccards.info/scans/en/lg/153.jpg
 value=3.731
 rarity=U
 type=Creature

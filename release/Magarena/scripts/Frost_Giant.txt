@@ -1,5 +1,5 @@
 name=Frost Giant
-image=http://magiccards.info/scans/en/me3/101.jpg
+image=http://magiccards.info/scans/en/lg/146.jpg
 value=2.640
 rarity=U
 type=Creature

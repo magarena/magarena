@@ -1,5 +1,5 @@
 name=Knowledge Vault
-image=http://magiccards.info/scans/en/me3/198.jpg
+image=http://magiccards.info/scans/en/lg/225.jpg
 value=2.780
 rarity=U
 type=Artifact

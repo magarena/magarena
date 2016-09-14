@@ -1,5 +1,5 @@
 name=Bone Flute
-image=http://magiccards.info/scans/en/me3/192.jpg
+image=http://magiccards.info/scans/en/dk/94.jpg
 value=2.117
 rarity=C
 type=Artifact

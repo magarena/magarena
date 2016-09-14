@@ -1,5 +1,5 @@
 name=Hunting Cheetah
-image=http://magiccards.info/scans/en/me3/124.jpg
+image=http://magiccards.info/scans/en/p3k/138.jpg
 value=4.061
 rarity=C
 type=Creature

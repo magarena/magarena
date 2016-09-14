@@ -1,5 +1,5 @@
 name=Ivory Guardians
-image=http://magiccards.info/scans/en/me3/15.jpg
+image=http://magiccards.info/scans/en/5e/316.jpg
 value=1.622
 rarity=U
 type=Creature

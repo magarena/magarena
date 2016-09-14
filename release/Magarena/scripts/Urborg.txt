@@ -1,5 +1,5 @@
 name=Urborg
-image=http://magiccards.info/scans/en/me3/214.jpg
+image=http://magiccards.info/scans/en/lg/255.jpg
 value=4.250
 rarity=U
 type=Legendary,Land

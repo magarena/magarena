@@ -1,5 +1,5 @@
 name=Active Volcano
-image=http://magiccards.info/scans/en/me3/85.jpg
+image=http://magiccards.info/scans/en/ch/43.jpg
 value=3.662
 rarity=U
 type=Instant

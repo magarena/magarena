@@ -1,5 +1,5 @@
 name=Capture of Jingzhou
-image=http://magiccards.info/scans/en/me3/33.jpg
+image=http://magiccards.info/scans/en/p3k/38.jpg
 value=4.038
 rarity=R
 type=Sorcery

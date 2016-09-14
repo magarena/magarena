@@ -1,5 +1,5 @@
 name=Slashing Tiger
-image=http://magiccards.info/scans/en/me3/133.jpg
+image=http://magiccards.info/scans/en/p3k/145.jpg
 value=3.022
 rarity=C
 type=Creature

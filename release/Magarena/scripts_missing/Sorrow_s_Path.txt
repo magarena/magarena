@@ -1,5 +1,5 @@
 name=Sorrow's Path
-image=http://magiccards.info/scans/en/me3/211.jpg
+image=http://magiccards.info/scans/en/dk/116.jpg
 value=0.906
 rarity=R
 type=Land

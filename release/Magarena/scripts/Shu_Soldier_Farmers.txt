@@ -1,5 +1,5 @@
 name=Shu Soldier-Farmers
-image=http://magiccards.info/scans/en/me3/26.jpg
+image=http://magiccards.info/scans/en/p3k/27.jpg
 value=2.042
 rarity=C
 type=Creature

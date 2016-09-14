@@ -1,5 +1,5 @@
 name=Land Tax
-image=http://magiccards.info/scans/en/me3/17.jpg
+image=http://magiccards.info/scans/en/4e/284.jpg
 value=4.588
 rarity=R
 type=Enchantment

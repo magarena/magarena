@@ -1,5 +1,5 @@
 name=Hurloon Minotaur
-image=http://magiccards.info/scans/en/me3/102.jpg
+image=http://magiccards.info/scans/en/5e/240.jpg
 value=3.117
 rarity=C
 type=Creature

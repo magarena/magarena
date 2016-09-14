@@ -1,5 +1,5 @@
 name=Didgeridoo
-image=http://magiccards.info/scans/en/me3/194.jpg
+image=http://magiccards.info/scans/en/hl/130.jpg
 value=4.086
 rarity=U
 type=Artifact

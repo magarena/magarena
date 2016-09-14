@@ -1,5 +1,5 @@
 name=Amrou Kithkin
-image=http://magiccards.info/scans/en/me3/3.jpg
+image=http://magiccards.info/scans/en/4e/252.jpg
 value=3.044
 rarity=C
 type=Creature

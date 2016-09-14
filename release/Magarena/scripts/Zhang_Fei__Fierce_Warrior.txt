@@ -1,5 +1,5 @@
 name=Zhang Fei, Fierce Warrior
-image=http://magiccards.info/scans/en/me3/28.jpg
+image=http://magiccards.info/scans/en/p3k/32.jpg
 value=3.685
 rarity=U
 type=Legendary,Creature

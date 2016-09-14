@@ -1,5 +1,5 @@
 name=Fire Drake
-image=http://magiccards.info/scans/en/me3/98.jpg
+image=http://magiccards.info/scans/en/5e/226.jpg
 value=2.190
 rarity=C
 type=Creature

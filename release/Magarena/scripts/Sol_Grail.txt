@@ -1,5 +1,5 @@
 name=Sol Grail
-image=http://magiccards.info/scans/en/me3/201.jpg
+image=http://magiccards.info/scans/en/ai/173.jpg
 value=3.103
 rarity=C
 type=Artifact

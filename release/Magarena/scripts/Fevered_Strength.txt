@@ -1,5 +1,5 @@
 name=Fevered Strength
-image=http://magiccards.info/scans/en/me3/66.jpg
+image=http://magiccards.info/scans/en/ai/10.jpg
 value=2.733
 rarity=C
 type=Instant

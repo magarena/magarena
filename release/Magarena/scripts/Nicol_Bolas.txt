@@ -1,5 +1,5 @@
 name=Nicol Bolas
-image=http://magiccards.info/scans/en/me3/163.jpg
+image=http://magiccards.info/scans/en/tsts/98.jpg
 image_updated=2015-11-13
 value=4.136
 rarity=R

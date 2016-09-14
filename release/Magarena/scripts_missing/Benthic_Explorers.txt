@@ -1,5 +1,5 @@
 name=Benthic Explorers
-image=http://magiccards.info/scans/en/me3/29.jpg
+image=http://magiccards.info/scans/en/ai/36.jpg
 value=2.875
 rarity=C
 type=Creature

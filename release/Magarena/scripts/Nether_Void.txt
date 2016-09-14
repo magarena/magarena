@@ -1,5 +1,5 @@
 name=Nether Void
-image=http://magiccards.info/scans/en/me3/73.jpg
+image=http://magiccards.info/scans/en/lg/27.jpg
 value=4.642
 rarity=R
 type=World,Enchantment

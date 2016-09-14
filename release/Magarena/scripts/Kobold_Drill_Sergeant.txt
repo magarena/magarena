@@ -1,5 +1,5 @@
 name=Kobold Drill Sergeant
-image=http://magiccards.info/scans/en/me3/104.jpg
+image=http://magiccards.info/scans/en/lg/152.jpg
 value=2.892
 rarity=U
 type=Creature

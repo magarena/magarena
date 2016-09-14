@@ -1,5 +1,5 @@
 name=Heavy Fog
-image=http://magiccards.info/scans/en/me3/122.jpg
+image=http://magiccards.info/scans/en/p3k/136.jpg
 value=1.554
 rarity=C
 type=Instant

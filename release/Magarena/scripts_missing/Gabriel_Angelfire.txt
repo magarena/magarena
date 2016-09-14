@@ -1,5 +1,5 @@
 name=Gabriel Angelfire
-image=http://magiccards.info/scans/en/me3/148.jpg
+image=http://magiccards.info/scans/en/lg/266.jpg
 value=2.123
 rarity=R
 type=Legendary,Creature

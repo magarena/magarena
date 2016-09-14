@@ -1,5 +1,5 @@
 name=Nova Pentacle
-image=http://magiccards.info/scans/en/me3/200.jpg
+image=http://magiccards.info/scans/en/lg/234.jpg
 value=3.150
 rarity=R
 type=Artifact

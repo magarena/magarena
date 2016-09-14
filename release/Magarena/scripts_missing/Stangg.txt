@@ -1,5 +1,5 @@
 name=Stangg
-image=http://magiccards.info/scans/en/me3/177.jpg
+image=http://magiccards.info/scans/en/lg/300.jpg
 value=3.723
 rarity=U
 type=Legendary,Creature

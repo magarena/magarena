@@ -1,5 +1,5 @@
 name=Fire Sprites
-image=http://magiccards.info/scans/en/me3/118.jpg
+image=http://magiccards.info/scans/en/lg/100.jpg
 value=2.357
 rarity=C
 type=Creature

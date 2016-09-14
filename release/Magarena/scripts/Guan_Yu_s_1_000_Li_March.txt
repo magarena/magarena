@@ -1,5 +1,5 @@
 name=Guan Yu's 1,000-Li March
-image=http://magiccards.info/scans/en/me3/13.jpg
+image=http://magiccards.info/scans/en/p3k/7.jpg
 value=3.000
 rarity=R
 type=Sorcery

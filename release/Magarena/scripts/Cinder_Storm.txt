@@ -1,5 +1,5 @@
 name=Cinder Storm
-image=http://magiccards.info/scans/en/me3/91.jpg
+image=http://magiccards.info/scans/en/st/93.jpg
 value=3.080
 rarity=U
 type=Sorcery

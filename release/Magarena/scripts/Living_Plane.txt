@@ -1,5 +1,5 @@
 name=Living Plane
-image=http://magiccards.info/scans/en/me3/127.jpg
+image=http://magiccards.info/scans/en/lg/107.jpg
 value=3.862
 rarity=R
 type=World,Enchantment

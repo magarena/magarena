@@ -1,5 +1,5 @@
 name=Kjeldoran Frostbeast
-image=http://magiccards.info/scans/en/me3/156.jpg
+image=http://magiccards.info/scans/en/ia/374.jpg
 value=3.414
 rarity=U
 type=Creature

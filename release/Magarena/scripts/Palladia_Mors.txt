@@ -1,5 +1,5 @@
 name=Palladia-Mors
-image=http://magiccards.info/scans/en/me3/164.jpg
+image=http://magiccards.info/scans/en/lg/287.jpg
 value=3.904
 rarity=R
 type=Legendary,Creature

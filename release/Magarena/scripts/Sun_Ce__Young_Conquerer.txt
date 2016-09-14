@@ -1,5 +1,5 @@
 name=Sun Ce, Young Conquerer
-image=http://magiccards.info/scans/en/me3/52.jpg
+image=http://magiccards.info/scans/en/p3k/55.jpg
 value=3.441
 rarity=U
 type=Legendary,Creature

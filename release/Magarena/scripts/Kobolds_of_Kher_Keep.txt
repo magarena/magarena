@@ -1,5 +1,5 @@
 name=Kobolds of Kher Keep
-image=http://magiccards.info/scans/en/me3/107.jpg
+image=http://magiccards.info/scans/en/lg/226.jpg
 value=3.767
 rarity=C
 type=Creature

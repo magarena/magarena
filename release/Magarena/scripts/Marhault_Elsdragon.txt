@@ -1,5 +1,5 @@
 name=Marhault Elsdragon
-image=http://magiccards.info/scans/en/me3/161.jpg
+image=http://magiccards.info/scans/en/lg/284.jpg
 value=2.455
 rarity=U
 type=Legendary,Creature

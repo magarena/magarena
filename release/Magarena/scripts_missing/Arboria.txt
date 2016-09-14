@@ -1,5 +1,5 @@
 name=Arboria
-image=http://magiccards.info/scans/en/me3/113.jpg
+image=http://magiccards.info/scans/en/lg/88.jpg
 value=4.061
 rarity=R
 type=World,Enchantment

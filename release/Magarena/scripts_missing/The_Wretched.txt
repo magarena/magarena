@@ -1,5 +1,5 @@
 name=The Wretched
-image=http://magiccards.info/scans/en/me3/78.jpg
+image=http://magiccards.info/scans/en/5e/59.jpg
 value=3.869
 rarity=U
 type=Creature

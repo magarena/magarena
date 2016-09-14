@@ -1,5 +1,5 @@
 name=Immolation
-image=http://magiccards.info/scans/en/me3/103.jpg
+image=http://magiccards.info/scans/en/4e/222.jpg
 value=3.407
 rarity=C
 type=Enchantment

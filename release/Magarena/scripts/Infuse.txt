@@ -1,5 +1,5 @@
 name=Infuse
-image=http://magiccards.info/scans/en/me3/38.jpg
+image=http://magiccards.info/scans/en/ia/80.jpg
 value=2.414
 rarity=C
 type=Instant

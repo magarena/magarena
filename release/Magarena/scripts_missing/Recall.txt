@@ -1,5 +1,5 @@
 name=Recall
-image=http://magiccards.info/scans/en/me3/46.jpg
+image=http://magiccards.info/scans/en/6e/92.jpg
 value=3.564
 rarity=U
 type=Sorcery

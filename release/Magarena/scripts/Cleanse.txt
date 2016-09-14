@@ -1,5 +1,5 @@
 name=Cleanse
-image=http://magiccards.info/scans/en/me3/5.jpg
+image=http://magiccards.info/scans/en/lg/174.jpg
 value=3.821
 rarity=R
 type=Sorcery

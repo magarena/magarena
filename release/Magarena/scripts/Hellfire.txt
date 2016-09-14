@@ -1,5 +1,5 @@
 name=Hellfire
-image=http://magiccards.info/scans/en/me3/70.jpg
+image=http://magiccards.info/scans/en/lg/18.jpg
 value=4.182
 rarity=R
 type=Sorcery

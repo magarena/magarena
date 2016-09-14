@@ -1,5 +1,5 @@
 name=Forked Lightning
-image=http://magiccards.info/scans/en/me3/100.jpg
+image=http://magiccards.info/scans/en/po/135.jpg
 value=2.952
 rarity=U
 type=Sorcery

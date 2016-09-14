@@ -1,5 +1,5 @@
 name=Jerrard of the Closed Fist
-image=http://magiccards.info/scans/en/me3/154.jpg
+image=http://magiccards.info/scans/en/lg/275.jpg
 value=2.500
 rarity=C
 type=Legendary,Creature

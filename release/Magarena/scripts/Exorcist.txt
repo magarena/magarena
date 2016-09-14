@@ -1,5 +1,5 @@
 name=Exorcist
-image=http://magiccards.info/scans/en/me3/10.jpg
+image=http://magiccards.info/scans/en/dk/79.jpg
 value=3.828
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wei Infantry
-image=http://magiccards.info/scans/en/me3/80.jpg
+image=http://magiccards.info/scans/en/p3k/88.jpg
 value=2.368
 rarity=C
 type=Creature

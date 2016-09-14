@@ -1,5 +1,5 @@
 name=Anaba Ancestor
-image=http://magiccards.info/scans/en/me3/86.jpg
+image=http://magiccards.info/scans/en/hl/81.jpg
 value=2.549
 rarity=C
 type=Creature

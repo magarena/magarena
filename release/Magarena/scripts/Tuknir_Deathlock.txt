@@ -1,5 +1,5 @@
 name=Tuknir Deathlock
-image=http://magiccards.info/scans/en/me3/184.jpg
+image=http://magiccards.info/scans/en/lg/307.jpg
 value=2.000
 rarity=U
 type=Legendary,Creature

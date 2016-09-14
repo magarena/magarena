@@ -1,5 +1,5 @@
 name=The Lady of the Mountain
-image=http://magiccards.info/scans/en/me3/180.jpg
+image=http://magiccards.info/scans/en/lg/303.jpg
 value=2.400
 rarity=C
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Spiny Starfish
-image=http://magiccards.info/scans/en/me3/50.jpg
+image=http://magiccards.info/scans/en/ai/53.jpg
 value=4.290
 rarity=U
 type=Creature

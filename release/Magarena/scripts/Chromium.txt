@@ -1,5 +1,5 @@
 name=Chromium
-image=http://magiccards.info/scans/en/me3/147.jpg
+image=http://magiccards.info/scans/en/lg/264.jpg
 value=3.188
 rarity=R
 type=Legendary,Creature

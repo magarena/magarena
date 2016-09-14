@@ -1,5 +1,5 @@
 name=Lady Evangela
-image=http://magiccards.info/scans/en/me3/158.jpg
+image=http://magiccards.info/scans/en/lg/280.jpg
 value=3.136
 rarity=U
 type=Legendary,Creature

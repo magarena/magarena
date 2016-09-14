@@ -1,5 +1,5 @@
 name=Wei Night Raiders
-image=http://magiccards.info/scans/en/me3/81.jpg
+image=http://magiccards.info/scans/en/p3k/89.jpg
 value=3.485
 rarity=U
 type=Creature

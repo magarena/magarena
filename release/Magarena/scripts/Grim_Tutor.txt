@@ -1,5 +1,5 @@
 name=Grim Tutor
-image=http://magiccards.info/scans/en/me3/69.jpg
+image=http://magiccards.info/scans/en/st/79.jpg
 value=4.355
 rarity=R
 type=Sorcery

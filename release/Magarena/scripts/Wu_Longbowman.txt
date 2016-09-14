@@ -1,5 +1,5 @@
 name=Wu Longbowman
-image=http://magiccards.info/scans/en/me3/55.jpg
+image=http://magiccards.info/scans/en/p3k/61.jpg
 value=2.160
 rarity=C
 type=Creature

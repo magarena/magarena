@@ -1,5 +1,5 @@
 name=Arcades Sabboth
-image=http://magiccards.info/scans/en/me3/142.jpg
+image=http://magiccards.info/scans/en/lg/258.jpg
 value=3.250
 rarity=R
 type=Legendary,Creature

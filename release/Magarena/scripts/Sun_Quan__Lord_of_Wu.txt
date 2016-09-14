@@ -1,5 +1,5 @@
 name=Sun Quan, Lord of Wu
-image=http://magiccards.info/scans/en/me3/53.jpg
+image=http://magiccards.info/scans/en/p3k/56.jpg
 value=4.065
 rarity=R
 type=Legendary,Creature
