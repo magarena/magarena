@@ -59,6 +59,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     private int lifeGainThisTurn;
     private int poison;
     private int experience;
+    private int energy;
     private int preventDamage;
     private int extraTurns;
     private int drawnCards;
@@ -103,6 +104,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         lifeLossThisTurn = sourcePlayer.lifeLossThisTurn;
         poison=sourcePlayer.poison;
         experience=sourcePlayer.experience;
+        energy=sourcePlayer.energy;
         stateFlags=sourcePlayer.stateFlags;
         preventDamage=sourcePlayer.preventDamage;
         extraTurns=sourcePlayer.extraTurns;
@@ -146,6 +148,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
             lifeGainThisTurn,
             poison,
             experience,
+            energy,
             stateFlags,
             preventDamage,
             extraTurns,
@@ -183,6 +186,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         playerId=playerId*ID_FACTOR+life;
         playerId=playerId*ID_FACTOR+poison;
         playerId=playerId*ID_FACTOR+experience;
+        playerId=playerId*ID_FACTOR+energy;
         playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
         playerId=playerId*ID_FACTOR+permanents.getStateId();
         playerId=playerId*ID_FACTOR+hand.getStateId();
@@ -291,6 +295,14 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     public int getExperience() {
         return experience;
+    }
+
+    public void setEnergy(final int e) {
+        energy = e;
+    }
+
+    public int getEnergy() {
+        return energy;
     }
 
     public void changeExtraTurns(final int amount) {
@@ -867,6 +879,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
                 return getPoison();
             case Experience:
                 return getExperience();
+            case Energy:
+                return getEnergy();
             default:
                 return 0;
         }
@@ -878,6 +892,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
             poison += amount;
         } else if (counterType == MagicCounterType.Experience) {
             experience += amount;
+        } else if (counterType == MagicCounterType.Energy) {
+            energy += amount;
         } else {
             throw new RuntimeException(counterType + " cannot be modified on player");
         }
