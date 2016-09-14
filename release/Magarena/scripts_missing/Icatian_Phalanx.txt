@@ -1,5 +1,5 @@
 name=Icatian Phalanx
-image=http://magiccards.info/scans/en/me2/16.jpg
+image=http://magiccards.info/scans/en/5e/312.jpg
 value=2.135
 rarity=C
 type=Creature

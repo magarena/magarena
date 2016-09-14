@@ -1,5 +1,5 @@
 name=Order of the Sacred Torch
-image=http://magiccards.info/scans/en/me2/25.jpg
+image=http://magiccards.info/scans/en/6e/32.jpg
 value=3.741
 rarity=R
 type=Creature

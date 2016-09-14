@@ -1,5 +1,5 @@
 name=Flame Spirit
-image=http://magiccards.info/scans/en/me2/126.jpg
+image=http://magiccards.info/scans/en/6e/179.jpg
 value=1.857
 rarity=U
 type=Creature

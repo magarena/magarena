@@ -1,5 +1,5 @@
 name=Juxtapose
-image=http://magiccards.info/scans/en/med/41.jpg
+image=http://magiccards.info/scans/en/6e/77.jpg
 value=3.742
 rarity=U
 type=Sorcery

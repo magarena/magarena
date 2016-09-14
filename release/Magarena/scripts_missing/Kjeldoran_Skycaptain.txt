@@ -1,5 +1,5 @@
 name=Kjeldoran Skycaptain
-image=http://magiccards.info/scans/en/me2/23.jpg
+image=http://magiccards.info/scans/en/5e/321.jpg
 value=2.550
 rarity=C
 type=Creature

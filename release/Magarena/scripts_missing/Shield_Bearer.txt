@@ -1,5 +1,5 @@
 name=Shield Bearer
-image=http://magiccards.info/scans/en/me2/35.jpg
+image=http://magiccards.info/scans/en/5e/338.jpg
 value=2.617
 rarity=C
 type=Creature

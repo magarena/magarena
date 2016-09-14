@@ -1,5 +1,5 @@
 name=Clockwork Steed
-image=http://magiccards.info/scans/en/me2/205.jpg
+image=http://magiccards.info/scans/en/5e/357.jpg
 value=2.764
 rarity=U
 type=Artifact,Creature

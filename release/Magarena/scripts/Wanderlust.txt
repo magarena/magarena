@@ -1,5 +1,5 @@
 name=Wanderlust
-image=http://magiccards.info/scans/en/med/137.jpg
+image=http://magiccards.info/scans/en/5e/201.jpg
 value=2.398
 rarity=C
 type=Enchantment

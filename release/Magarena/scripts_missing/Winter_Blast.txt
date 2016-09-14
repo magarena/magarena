@@ -1,5 +1,5 @@
 name=Winter Blast
-image=http://magiccards.info/scans/en/med/138.jpg
+image=http://magiccards.info/scans/en/5e/205.jpg
 value=3.833
 rarity=U
 type=Sorcery

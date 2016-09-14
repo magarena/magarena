@@ -1,5 +1,5 @@
 name=Armor of Faith
-image=http://magiccards.info/scans/en/me2/4.jpg
+image=http://magiccards.info/scans/en/5e/284.jpg
 value=2.786
 rarity=C
 type=Enchantment

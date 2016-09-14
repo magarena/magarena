@@ -1,5 +1,5 @@
 name=Ashnod's Transmogrant
-image=http://magiccards.info/scans/en/med/152.jpg
+image=http://magiccards.info/scans/en/5e/350.jpg
 value=3.444
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Stampede
-image=http://magiccards.info/scans/en/me2/178.jpg
+image=http://magiccards.info/scans/en/5e/189.jpg
 value=3.239
 rarity=U
 type=Instant

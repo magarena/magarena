@@ -1,5 +1,5 @@
 name=Æther Storm
-image=http://magiccards.info/scans/en/me2/39.jpg
+image=http://magiccards.info/scans/en/5e/70.jpg
 value=3.259
 rarity=U
 type=Enchantment

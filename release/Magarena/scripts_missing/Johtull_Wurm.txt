@@ -1,5 +1,5 @@
 name=Johtull Wurm
-image=http://magiccards.info/scans/en/me2/168.jpg
+image=http://magiccards.info/scans/en/5e/168.jpg
 value=2.039
 rarity=U
 type=Creature

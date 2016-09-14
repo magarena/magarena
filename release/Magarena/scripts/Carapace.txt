@@ -1,5 +1,5 @@
 name=Carapace
-image=http://magiccards.info/scans/en/me2/155.jpg
+image=http://magiccards.info/scans/en/5e/143.jpg
 value=3.283
 rarity=C
 type=Enchantment

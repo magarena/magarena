@@ -1,5 +1,5 @@
 name=Knight of Stromgald
-image=http://magiccards.info/scans/en/me2/99.jpg
+image=http://magiccards.info/scans/en/5e/33.jpg
 value=4.012
 rarity=U
 type=Creature

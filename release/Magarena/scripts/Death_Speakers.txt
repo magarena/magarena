@@ -1,5 +1,5 @@
 name=Death Speakers
-image=http://magiccards.info/scans/en/med/7.jpg
+image=http://magiccards.info/scans/en/5e/300.jpg
 value=3.122
 rarity=C
 type=Creature

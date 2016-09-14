@@ -1,5 +1,5 @@
 name=Sibilant Spirit
-image=http://magiccards.info/scans/en/me2/67.jpg
+image=http://magiccards.info/scans/en/6e/98.jpg
 value=2.318
 rarity=R
 type=Creature

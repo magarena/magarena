@@ -1,5 +1,5 @@
 name=Jokulhaups
-image=http://magiccards.info/scans/en/med/100.jpg
+image=http://magiccards.info/scans/en/6e/192.jpg
 value=4.519
 rarity=R
 type=Sorcery

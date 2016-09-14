@@ -1,5 +1,5 @@
 name=Broken Visage
-image=http://magiccards.info/scans/en/me2/81.jpg
+image=http://magiccards.info/scans/en/5e/11.jpg
 value=3.485
 rarity=U
 type=Instant

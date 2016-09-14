@@ -1,5 +1,5 @@
 name=Death Ward
-image=http://magiccards.info/scans/en/med/8.jpg
+image=http://magiccards.info/scans/en/5e/301.jpg
 value=3.106
 rarity=C
 type=Instant

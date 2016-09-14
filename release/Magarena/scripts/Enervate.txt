@@ -1,5 +1,5 @@
 name=Enervate
-image=http://magiccards.info/scans/en/me2/47.jpg
+image=http://magiccards.info/scans/en/5e/84.jpg
 value=3.625
 rarity=C
 type=Instant

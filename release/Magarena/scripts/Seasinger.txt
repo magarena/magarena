@@ -1,5 +1,5 @@
 name=Seasinger
-image=http://magiccards.info/scans/en/med/49.jpg
+image=http://magiccards.info/scans/en/5e/121.jpg
 value=4.043
 rarity=U
 type=Creature

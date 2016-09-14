@@ -1,5 +1,5 @@
 name=Ice Floe
-image=http://magiccards.info/scans/en/me2/232.jpg
+image=http://magiccards.info/scans/en/5e/424.jpg
 value=3.900
 rarity=U
 type=Land

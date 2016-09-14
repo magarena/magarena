@@ -1,5 +1,5 @@
 name=Clockwork Beast
-image=http://magiccards.info/scans/en/med/153.jpg
+image=http://magiccards.info/scans/en/5e/356.jpg
 value=2.672
 rarity=U
 type=Artifact,Creature

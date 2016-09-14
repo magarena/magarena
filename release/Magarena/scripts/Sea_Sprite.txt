@@ -1,5 +1,5 @@
 name=Sea Sprite
-image=http://magiccards.info/scans/en/med/48.jpg
+image=http://magiccards.info/scans/en/5e/120.jpg
 value=3.303
 rarity=C
 type=Creature

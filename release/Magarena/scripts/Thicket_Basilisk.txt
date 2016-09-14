@@ -1,5 +1,5 @@
 name=Thicket Basilisk
-image=http://magiccards.info/scans/en/med/134.jpg
+image=http://magiccards.info/scans/en/6e/256.jpg
 value=3.202
 rarity=U
 type=Creature

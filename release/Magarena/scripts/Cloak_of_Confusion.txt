@@ -1,5 +1,5 @@
 name=Cloak of Confusion
-image=http://magiccards.info/scans/en/me2/82.jpg
+image=http://magiccards.info/scans/en/5e/13.jpg
 value=3.241
 rarity=C
 type=Enchantment

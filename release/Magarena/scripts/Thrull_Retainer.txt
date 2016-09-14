@@ -1,5 +1,5 @@
 name=Thrull Retainer
-image=http://magiccards.info/scans/en/med/84.jpg
+image=http://magiccards.info/scans/en/5e/60.jpg
 value=3.362
 rarity=C
 type=Enchantment

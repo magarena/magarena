@@ -1,5 +1,5 @@
 name=Sea Spirit
-image=http://magiccards.info/scans/en/me2/65.jpg
+image=http://magiccards.info/scans/en/5e/119.jpg
 value=2.457
 rarity=U
 type=Creature
