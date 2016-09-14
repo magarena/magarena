@@ -1,5 +1,5 @@
 name=Winds of Change
-image=http://magiccards.info/scans/en/med/111.jpg
+image=http://magiccards.info/scans/en/po/162.jpg
 value=3.809
 rarity=U
 type=Sorcery
