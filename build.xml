@@ -7,7 +7,7 @@
   <property name="source" value="1.8"/>
   <property name="target" value="1.8"/>
   <property name="lib" value="release/lib" />
-  <property name="groovy-version" value="2.4.5" />
+  <property name="groovy-version" value="2.4.7" />
   
   <path id="classpath">
       <fileset dir="${lib}">
