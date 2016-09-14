@@ -1,5 +1,5 @@
 name=Armor Thrull
-image=http://magiccards.info/scans/en/me2/77.jpg
+image=http://magiccards.info/scans/en/fe/1.jpg
 value=3.065
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Royal Trooper
-image=http://magiccards.info/scans/en/me2/32.jpg
+image=http://magiccards.info/scans/en/st/25.jpg
 value=3.021
 rarity=C
 type=Creature

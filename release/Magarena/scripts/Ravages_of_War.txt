@@ -1,5 +1,5 @@
 name=Ravages of War
-image=http://magiccards.info/scans/en/me2/27.jpg
+image=http://magiccards.info/scans/en/p3k/17.jpg
 value=4.033
 removal=2
 rarity=R

@@ -1,5 +1,5 @@
 name=Adarkar Sentinel
-image=http://magiccards.info/scans/en/me2/201.jpg
+image=http://magiccards.info/scans/en/ia/281.jpg
 value=2.616
 rarity=C
 type=Artifact,Creature

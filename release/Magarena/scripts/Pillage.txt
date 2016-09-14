@@ -1,5 +1,5 @@
 name=Pillage
-image=http://magiccards.info/scans/en/me2/146.jpg
+image=http://magiccards.info/scans/en/7e/207.jpg
 value=4.398
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Fumarole
-image=http://magiccards.info/scans/en/me2/194.jpg
+image=http://magiccards.info/scans/en/ia/369.jpg
 value=3.511
 rarity=U
 type=Sorcery

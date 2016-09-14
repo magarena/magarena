@@ -1,5 +1,5 @@
 name=Folk of the Pines
-image=http://magiccards.info/scans/en/me2/162.jpg
+image=http://magiccards.info/scans/en/ia/123.jpg
 value=2.459
 rarity=C
 type=Creature

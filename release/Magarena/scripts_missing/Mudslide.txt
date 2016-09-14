@@ -1,5 +1,5 @@
 name=Mudslide
-image=http://magiccards.info/scans/en/me2/136.jpg
+image=http://magiccards.info/scans/en/ia/204.jpg
 value=3.339
 rarity=R
 type=Enchantment

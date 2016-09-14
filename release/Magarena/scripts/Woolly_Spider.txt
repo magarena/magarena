@@ -1,5 +1,5 @@
 name=Woolly Spider
-image=http://magiccards.info/scans/en/me2/189.jpg
+image=http://magiccards.info/scans/en/ia/167.jpg
 value=3.667
 rarity=U
 type=Creature

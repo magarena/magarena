@@ -1,5 +1,5 @@
 name=Icy Prison
-image=http://magiccards.info/scans/en/me2/50.jpg
+image=http://magiccards.info/scans/en/ia/74.jpg
 value=3.429
 rarity=C
 type=Enchantment

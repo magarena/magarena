@@ -1,5 +1,5 @@
 name=Thermokarst
-image=http://magiccards.info/scans/en/me2/183.jpg
+image=http://magiccards.info/scans/en/ia/156.jpg
 value=3.929
 rarity=C
 type=Sorcery

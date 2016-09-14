@@ -1,5 +1,5 @@
 name=Soldevi Digger
-image=http://magiccards.info/scans/en/me2/221.jpg
+image=http://magiccards.info/scans/en/ai/174.jpg
 value=3.339
 rarity=U
 type=Artifact

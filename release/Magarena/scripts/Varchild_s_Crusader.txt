@@ -1,5 +1,5 @@
 name=Varchild's Crusader
-image=http://magiccards.info/scans/en/me2/152.jpg
+image=http://magiccards.info/scans/en/ai/121.jpg
 value=2.479
 rarity=C
 type=Creature

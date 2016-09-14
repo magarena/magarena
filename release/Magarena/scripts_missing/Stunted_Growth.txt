@@ -1,5 +1,5 @@
 name=Stunted Growth
-image=http://magiccards.info/scans/en/me2/179.jpg
+image=http://magiccards.info/scans/en/ia/154.jpg
 value=4.345
 rarity=R
 type=Sorcery

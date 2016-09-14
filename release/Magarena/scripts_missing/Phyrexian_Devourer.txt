@@ -1,5 +1,5 @@
 name=Phyrexian Devourer
-image=http://magiccards.info/scans/en/me2/216.jpg
+image=http://magiccards.info/scans/en/ai/167.jpg
 value=3.354
 rarity=U
 type=Artifact,Creature

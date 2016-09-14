@@ -1,5 +1,5 @@
 name=Burnout
-image=http://magiccards.info/scans/en/me2/121.jpg
+image=http://magiccards.info/scans/en/ai/101.jpg
 value=3.950
 rarity=U
 type=Instant

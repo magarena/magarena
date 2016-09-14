@@ -1,5 +1,5 @@
 name=Diabolic Vision
-image=http://magiccards.info/scans/en/me2/191.jpg
+image=http://magiccards.info/scans/en/ia/362.jpg
 value=3.771
 rarity=U
 type=Sorcery

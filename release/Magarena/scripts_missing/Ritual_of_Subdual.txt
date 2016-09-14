@@ -1,5 +1,5 @@
 name=Ritual of Subdual
-image=http://magiccards.info/scans/en/me2/174.jpg
+image=http://magiccards.info/scans/en/ia/149.jpg
 value=3.080
 rarity=R
 type=Enchantment

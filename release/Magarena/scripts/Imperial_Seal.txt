@@ -1,5 +1,5 @@
 name=Imperial Seal
-image=http://magiccards.info/scans/en/me2/96.jpg
+image=http://magiccards.info/scans/en/p3k/78.jpg
 value=4.646
 rarity=R
 type=Sorcery

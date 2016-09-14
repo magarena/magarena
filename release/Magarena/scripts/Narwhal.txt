@@ -1,5 +1,5 @@
 name=Narwhal
-image=http://magiccards.info/scans/en/me2/57.jpg
+image=http://magiccards.info/scans/en/hl/44.jpg
 value=3.820
 rarity=U
 type=Creature

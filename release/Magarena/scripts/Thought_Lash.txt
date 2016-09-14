@@ -1,5 +1,5 @@
 name=Thought Lash
-image=http://magiccards.info/scans/en/me2/70.jpg
+image=http://magiccards.info/scans/en/ai/58.jpg
 value=2.767
 rarity=R
 type=Enchantment

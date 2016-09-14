@@ -1,5 +1,5 @@
 name=Elvish Farmer
-image=http://magiccards.info/scans/en/me2/156.jpg
+image=http://magiccards.info/scans/en/fe/71.jpg
 value=3.234
 rarity=R
 type=Creature

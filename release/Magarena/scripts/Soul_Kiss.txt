@@ -1,5 +1,5 @@
 name=Soul Kiss
-image=http://magiccards.info/scans/en/me2/112.jpg
+image=http://magiccards.info/scans/en/ia/50.jpg
 value=2.536
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Whiteout
-image=http://magiccards.info/scans/en/me2/185.jpg
+image=http://magiccards.info/scans/en/ia/163.jpg
 value=2.944
 rarity=C
 type=Instant

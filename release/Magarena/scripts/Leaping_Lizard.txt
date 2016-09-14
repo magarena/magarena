@@ -1,5 +1,5 @@
 name=Leaping Lizard
-image=http://magiccards.info/scans/en/me2/171.jpg
+image=http://magiccards.info/scans/en/hl/63.jpg
 value=3.019
 rarity=C
 type=Creature

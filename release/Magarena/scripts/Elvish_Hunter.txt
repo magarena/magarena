@@ -1,5 +1,5 @@
 name=Elvish Hunter
-image=http://magiccards.info/scans/en/me2/157.jpg
+image=http://magiccards.info/scans/en/fe/73.jpg
 value=3.042
 rarity=C
 type=Creature

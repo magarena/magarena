@@ -1,5 +1,5 @@
 name=Soldevi Simulacrum
-image=http://magiccards.info/scans/en/me2/222.jpg
+image=http://magiccards.info/scans/en/ia/314.jpg
 value=2.121
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Dystopia
-image=http://magiccards.info/scans/en/me2/88.jpg
+image=http://magiccards.info/scans/en/ai/6.jpg
 value=4.391
 rarity=R
 type=Enchantment

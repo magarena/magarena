@@ -1,5 +1,5 @@
 name=Marjhan
-image=http://magiccards.info/scans/en/me2/54.jpg
+image=http://magiccards.info/scans/en/hl/39.jpg
 value=3.024
 rarity=R
 type=Creature

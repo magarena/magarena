@@ -1,5 +1,5 @@
 name=Royal Decree
-image=http://magiccards.info/scans/en/me2/31.jpg
+image=http://magiccards.info/scans/en/ai/146.jpg
 value=3.444
 rarity=R
 type=Enchantment

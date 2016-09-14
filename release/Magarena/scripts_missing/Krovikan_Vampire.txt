@@ -1,5 +1,5 @@
 name=Krovikan Vampire
-image=http://magiccards.info/scans/en/me2/102.jpg
+image=http://magiccards.info/scans/en/ia/29.jpg
 value=3.579
 rarity=U
 type=Creature

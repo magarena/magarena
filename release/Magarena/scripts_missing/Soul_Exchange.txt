@@ -1,5 +1,5 @@
 name=Soul Exchange
-image=http://magiccards.info/scans/en/me2/111.jpg
+image=http://magiccards.info/scans/en/fe/28.jpg
 value=4.353
 rarity=U
 type=Sorcery

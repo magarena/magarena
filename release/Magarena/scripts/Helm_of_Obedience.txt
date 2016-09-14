@@ -1,5 +1,5 @@
 name=Helm of Obedience
-image=http://magiccards.info/scans/en/me2/210.jpg
+image=http://magiccards.info/scans/en/ai/163.jpg
 value=4.369
 rarity=R
 type=Artifact

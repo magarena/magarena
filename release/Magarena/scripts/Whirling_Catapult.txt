@@ -1,5 +1,5 @@
 name=Whirling Catapult
-image=http://magiccards.info/scans/en/me2/224.jpg
+image=http://magiccards.info/scans/en/ai/181.jpg
 value=2.875
 rarity=U
 type=Artifact

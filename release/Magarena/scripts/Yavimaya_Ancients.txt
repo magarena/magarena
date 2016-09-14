@@ -1,5 +1,5 @@
 name=Yavimaya Ancients
-image=http://magiccards.info/scans/en/me2/190.jpg
+image=http://magiccards.info/scans/en/ai/91.jpg
 value=2.847
 rarity=U
 type=Creature

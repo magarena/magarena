@@ -1,5 +1,5 @@
 name=Phantasmal Mount
-image=http://magiccards.info/scans/en/me2/59.jpg
+image=http://magiccards.info/scans/en/ia/88.jpg
 value=2.875
 rarity=C
 type=Creature

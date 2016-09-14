@@ -1,5 +1,5 @@
 name=Misinformation
-image=http://magiccards.info/scans/en/me2/105.jpg
+image=http://magiccards.info/scans/en/ai/19.jpg
 value=4.016
 rarity=U
 type=Instant

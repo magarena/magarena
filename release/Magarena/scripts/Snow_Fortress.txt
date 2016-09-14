@@ -1,5 +1,5 @@
 name=Snow Fortress
-image=http://magiccards.info/scans/en/me2/220.jpg
+image=http://magiccards.info/scans/en/ia/312.jpg
 value=3.062
 rarity=U
 type=Artifact,Creature
