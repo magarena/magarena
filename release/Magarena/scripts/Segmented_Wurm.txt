@@ -1,5 +1,5 @@
 name=Segmented Wurm
-image=http://magiccards.info/scans/en/bd/68.jpg
+image=http://magiccards.info/scans/en/tp/344.jpg
 value=2.197
 rarity=U
 type=Creature

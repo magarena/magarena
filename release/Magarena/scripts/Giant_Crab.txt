@@ -1,5 +1,5 @@
 name=Giant Crab
-image=http://magiccards.info/scans/en/bd/9.jpg
+image=http://magiccards.info/scans/en/tp/66.jpg
 value=3.118
 rarity=C
 type=Creature

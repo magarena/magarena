@@ -1,5 +1,5 @@
 name=Feral Shadow
-image=http://magiccards.info/scans/en/bd/26.jpg
+image=http://magiccards.info/scans/en/6e/131.jpg
 value=2.783
 rarity=C
 type=Creature

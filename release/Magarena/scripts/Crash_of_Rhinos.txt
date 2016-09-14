@@ -1,5 +1,5 @@
 name=Crash of Rhinos
-image=http://magiccards.info/scans/en/bd/51.jpg
+image=http://magiccards.info/scans/en/mr/108.jpg
 value=3.551
 rarity=C
 type=Creature
