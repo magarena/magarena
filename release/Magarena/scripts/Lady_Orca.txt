@@ -1,5 +1,5 @@
 name=Lady Orca
-image=http://magiccards.info/scans/en/at/6.jpg
+image=http://magiccards.info/scans/en/lg/281.jpg
 value=1.574
 rarity=C
 type=Legendary,Creature

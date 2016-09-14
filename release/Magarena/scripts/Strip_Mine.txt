@@ -1,5 +1,5 @@
 name=Strip Mine
-image=http://magiccards.info/scans/en/at/5.jpg
+image=http://magiccards.info/scans/en/4e/189.jpg
 value=4.500
 rarity=R
 type=Land

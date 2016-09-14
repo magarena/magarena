@@ -1,5 +1,5 @@
 name=Aesthir Glider
-image=http://magiccards.info/scans/en/at/19.jpg
+image=http://magiccards.info/scans/en/ai/157.jpg
 value=2.650
 rarity=C
 type=Artifact,Creature
