@@ -13,4 +13,3 @@ ability=Flying;\
 transform=Abolisher of Bloodlines
 timing=main
 oracle=Flying\nSacrifice three other creatures: Transform Voldaren Pariah.\nMadness {B}{B}{B}
-status=needs other half
