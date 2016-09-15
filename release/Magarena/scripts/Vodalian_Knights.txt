@@ -1,5 +1,5 @@
 name=Vodalian Knights
-image=http://magiccards.info/scans/en/med/55.jpg
+image=http://magiccards.info/scans/en/fe/58.jpg
 value=2.735
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Spectral Bears
-image=http://magiccards.info/scans/en/med/131.jpg
+image=http://magiccards.info/scans/en/hl/72.jpg
 value=3.357
 rarity=U
 type=Creature

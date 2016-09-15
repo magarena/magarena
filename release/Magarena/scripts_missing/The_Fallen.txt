@@ -1,5 +1,5 @@
 name=The Fallen
-image=http://magiccards.info/scans/en/med/69.jpg
+image=http://magiccards.info/scans/en/dk/15.jpg
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblins of the Flarg
-image=http://magiccards.info/scans/en/med/98.jpg
+image=http://magiccards.info/scans/en/dk/69.jpg
 value=2.375
 rarity=C
 type=Creature

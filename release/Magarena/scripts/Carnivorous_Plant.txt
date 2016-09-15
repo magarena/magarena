@@ -1,5 +1,5 @@
 name=Carnivorous Plant
-image=http://magiccards.info/scans/en/med/115.jpg
+image=http://magiccards.info/scans/en/4e/119.jpg
 value=2.903
 rarity=U
 type=Creature

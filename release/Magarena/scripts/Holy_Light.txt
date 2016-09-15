@@ -1,5 +1,5 @@
 name=Holy Light
-image=http://magiccards.info/scans/en/med/16.jpg
+image=http://magiccards.info/scans/en/dk/83.jpg
 value=3.417
 rarity=C
 type=Instant

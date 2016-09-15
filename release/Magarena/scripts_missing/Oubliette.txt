@@ -1,5 +1,5 @@
 name=Oubliette
-image=http://magiccards.info/scans/en/med/79.jpg
+image=http://magiccards.info/scans/en/an/11.jpg
 value=3.941
 rarity=C
 type=Enchantment

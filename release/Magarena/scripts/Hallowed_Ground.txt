@@ -1,5 +1,5 @@
 name=Hallowed Ground
-image=http://magiccards.info/scans/en/med/14.jpg
+image=http://magiccards.info/scans/en/ia/253.jpg
 value=3.733
 rarity=U
 type=Enchantment

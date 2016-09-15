@@ -1,5 +1,5 @@
 name=Khabál Ghoul
-image=http://magiccards.info/scans/en/med/75.jpg
+image=http://magiccards.info/scans/en/an/10.jpg
 value=3.779
 rarity=R
 type=Creature

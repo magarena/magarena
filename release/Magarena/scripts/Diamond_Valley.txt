@@ -1,5 +1,5 @@
 name=Diamond Valley
-image=http://magiccards.info/scans/en/med/175.jpg
+image=http://magiccards.info/scans/en/an/87.jpg
 value=4.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Baron Sengir
-image=http://magiccards.info/scans/en/med/58.jpg
+image=http://magiccards.info/scans/en/hl/1.jpg
 value=3.944
 rarity=R
 type=Legendary,Creature

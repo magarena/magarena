@@ -1,5 +1,5 @@
 name=Yavimaya Ants
-image=http://magiccards.info/scans/en/med/140.jpg
+image=http://magiccards.info/scans/en/ai/93.jpg
 value=3.872
 rarity=U
 type=Creature

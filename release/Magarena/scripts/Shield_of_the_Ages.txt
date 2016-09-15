@@ -1,5 +1,5 @@
 name=Shield of the Ages
-image=http://magiccards.info/scans/en/med/165.jpg
+image=http://magiccards.info/scans/en/ia/310.jpg
 value=2.571
 rarity=U
 type=Artifact

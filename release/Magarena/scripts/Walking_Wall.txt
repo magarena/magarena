@@ -1,5 +1,5 @@
 name=Walking Wall
-image=http://magiccards.info/scans/en/med/172.jpg
+image=http://magiccards.info/scans/en/ia/321.jpg
 value=2.567
 rarity=U
 type=Artifact,Creature

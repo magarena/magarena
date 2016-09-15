@@ -1,5 +1,5 @@
 name=Mountain Yeti
-image=http://magiccards.info/scans/en/med/105.jpg
+image=http://magiccards.info/scans/en/lg/156.jpg
 value=3.689
 rarity=C
 type=Creature

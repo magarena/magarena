@@ -1,5 +1,5 @@
 name=Illusionary Forces
-image=http://magiccards.info/scans/en/med/38.jpg
+image=http://magiccards.info/scans/en/ia/75.jpg
 value=2.703
 rarity=U
 type=Creature

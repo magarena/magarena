@@ -1,5 +1,5 @@
 name=Fissure
-image=http://magiccards.info/scans/en/med/93.jpg
+image=http://magiccards.info/scans/en/4e/212.jpg
 value=3.777
 rarity=C
 type=Instant

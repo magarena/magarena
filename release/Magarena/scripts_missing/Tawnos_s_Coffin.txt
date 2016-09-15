@@ -1,5 +1,5 @@
 name=Tawnos's Coffin
-image=http://magiccards.info/scans/en/med/169.jpg
+image=http://magiccards.info/scans/en/aq/33.jpg
 value=3.897
 rarity=R
 type=Artifact

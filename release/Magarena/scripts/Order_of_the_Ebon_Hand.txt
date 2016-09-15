@@ -1,5 +1,5 @@
 name=Order of the Ebon Hand
-image=http://magiccards.info/scans/en/med/78.jpg
+image=http://magiccards.info/scans/en/fe/27.jpg
 value=4.476
 rarity=C
 type=Creature

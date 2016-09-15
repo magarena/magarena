@@ -1,5 +1,5 @@
 name=Contagion
-image=http://magiccards.info/scans/en/med/64.jpg
+image=http://magiccards.info/scans/en/ai/4.jpg
 value=4.571
 rarity=R
 type=Instant

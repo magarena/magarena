@@ -1,5 +1,5 @@
 name=Dakkon Blackblade
-image=http://magiccards.info/scans/en/med/143.jpg
+image=http://magiccards.info/scans/en/lg/265.jpg
 value=3.908
 rarity=R
 type=Legendary,Creature

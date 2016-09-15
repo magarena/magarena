@@ -1,5 +1,5 @@
 name=Homarid Spawning Bed
-image=http://magiccards.info/scans/en/med/36.jpg
+image=http://magiccards.info/scans/en/fe/43.jpg
 value=4.322
 rarity=U
 type=Enchantment

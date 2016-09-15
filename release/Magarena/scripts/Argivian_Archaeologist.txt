@@ -1,5 +1,5 @@
 name=Argivian Archaeologist
-image=http://magiccards.info/scans/en/med/3.jpg
+image=http://magiccards.info/scans/en/aq/94.jpg
 value=4.092
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Thunder Spirit
-image=http://magiccards.info/scans/en/med/27.jpg
+image=http://magiccards.info/scans/en/lg/208.jpg
 value=4.183
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Righteous Avengers
-image=http://magiccards.info/scans/en/med/25.jpg
+image=http://magiccards.info/scans/en/lg/203.jpg
 value=1.164
 rarity=C
 type=Creature

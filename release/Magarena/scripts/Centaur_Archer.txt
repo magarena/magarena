@@ -1,5 +1,5 @@
 name=Centaur Archer
-image=http://magiccards.info/scans/en/med/142.jpg
+image=http://magiccards.info/scans/en/ia/360.jpg
 value=3.283
 rarity=U
 type=Creature

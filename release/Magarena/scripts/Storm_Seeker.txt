@@ -1,5 +1,5 @@
 name=Storm Seeker
-image=http://magiccards.info/scans/en/med/132.jpg
+image=http://magiccards.info/scans/en/lg/119.jpg
 value=3.764
 rarity=U
 type=Instant

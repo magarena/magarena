@@ -1,5 +1,5 @@
 name=Goblin Mutant
-image=http://magiccards.info/scans/en/med/96.jpg
+image=http://magiccards.info/scans/en/ia/188.jpg
 value=2.900
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Chirurgeon
-image=http://magiccards.info/scans/en/med/94.jpg
+image=http://magiccards.info/scans/en/fe/110.jpg
 value=3.890
 rarity=C
 type=Creature

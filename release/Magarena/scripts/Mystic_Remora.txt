@@ -1,5 +1,5 @@
 name=Mystic Remora
-image=http://magiccards.info/scans/en/med/42.jpg
+image=http://magiccards.info/scans/en/ia/87.jpg
 value=4.569
 rarity=U
 type=Enchantment

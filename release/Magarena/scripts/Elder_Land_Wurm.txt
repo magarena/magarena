@@ -1,5 +1,5 @@
 name=Elder Land Wurm
-image=http://magiccards.info/scans/en/med/11.jpg
+image=http://magiccards.info/scans/en/4e/274.jpg
 value=1.959
 rarity=U
 type=Creature

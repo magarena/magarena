@@ -1,5 +1,5 @@
 name=Juzám Djinn
-image=http://magiccards.info/scans/en/med/74.jpg
+image=http://magiccards.info/scans/en/an/9.jpg
 value=4.324
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Hyalopterous Lemure
-image=http://magiccards.info/scans/en/med/72.jpg
+image=http://magiccards.info/scans/en/ia/21.jpg
 value=3.423
 rarity=C
 type=Creature

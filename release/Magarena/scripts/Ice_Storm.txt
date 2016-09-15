@@ -1,5 +1,5 @@
 name=Ice Storm
-image=http://magiccards.info/scans/en/med/122.jpg
+image=http://magiccards.info/scans/en/un/110.jpg
 value=4.189
 removal=3
 rarity=U

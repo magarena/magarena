@@ -1,5 +1,5 @@
 name=Lord of Tresserhorn
-image=http://magiccards.info/scans/en/med/149.jpg
+image=http://magiccards.info/scans/en/ai/193.jpg
 value=4.029
 rarity=R
 type=Legendary,Creature

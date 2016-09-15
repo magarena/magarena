@@ -1,5 +1,5 @@
 name=Energy Arc
-image=http://magiccards.info/scans/en/med/144.jpg
+image=http://magiccards.info/scans/en/ai/190.jpg
 value=3.750
 rarity=U
 type=Instant

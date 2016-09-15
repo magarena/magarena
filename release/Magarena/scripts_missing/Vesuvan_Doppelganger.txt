@@ -1,5 +1,5 @@
 name=Vesuvan Doppelganger
-image=http://magiccards.info/scans/en/med/54.jpg
+image=http://magiccards.info/scans/en/rv/88.jpg
 value=4.548
 rarity=R
 type=Creature
