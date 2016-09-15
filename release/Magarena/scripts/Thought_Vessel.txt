@@ -5,8 +5,7 @@ value=2.500
 rarity=C
 type=Artifact
 cost={2}
-ability=You have no maximum hand size.;\
-        {T}: Add {C} to your mana pool.
+ability={T}: Add {C} to your mana pool.
 timing=artifact
+requires_groovy_code=Spellbook
 oracle=You have no maximum hand size.\n{T}: Add {C} to your mana pool.
-status=needs groovy
