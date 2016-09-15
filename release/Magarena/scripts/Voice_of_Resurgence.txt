@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental
 cost={G}{W}
 pt=2/2
+ability=Whenever an opponent casts a spell, if it's your turn, put a green and white Elemental creature token onto the battlefield.;\
+        When SN dies, put a green and white Elemental creature token onto the battlefield.
 timing=main
-requires_groovy_code
 oracle=Whenever an opponent casts a spell during your turn or when Voice of Resurgence dies, put a green and white Elemental creature token onto the battlefield with "This creature's power and toughness are each equal to the number of creatures you control."
