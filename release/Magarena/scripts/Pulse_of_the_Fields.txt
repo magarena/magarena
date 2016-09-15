@@ -4,6 +4,6 @@ value=4.186
 rarity=R
 type=Instant
 cost={1}{W}{W}
+effect=You gain 4 life.~Then if an opponent has more life than you, return SN to its owner's hand.
 timing=main
-requires_groovy_code
 oracle=You gain 4 life. Then if an opponent has more life than you, return Pulse of the Fields to its owner's hand.

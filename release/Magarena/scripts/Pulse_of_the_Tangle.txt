@@ -4,6 +4,6 @@ value=4.340
 rarity=R
 type=Sorcery
 cost={1}{G}{G}
+effect=Put a 3/3 green Beast creature token onto the battlefield.~Then if an opponent controls more creatures than you, return SN to its owner's hand.
 timing=main
-requires_groovy_code
 oracle=Put a 3/3 green Beast creature token onto the battlefield. Then if an opponent controls more creatures than you, return Pulse of the Tangle to its owner's hand.
