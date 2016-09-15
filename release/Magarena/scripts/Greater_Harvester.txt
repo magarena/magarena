@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={2}{B}{B}{B}
 pt=5/6
-ability=At the beginning of your upkeep, sacrifice a permanent.
+ability=At the beginning of your upkeep, sacrifice a permanent.;\
+        Whenever SN deals combat damage to a player, that player sacrifices two permanents.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice a permanent.\nWhenever Greater Harvester deals combat damage to a player, that player sacrifices two permanents.

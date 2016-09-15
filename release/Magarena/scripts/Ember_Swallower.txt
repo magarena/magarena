@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{R}{R}
 pt=4/5
-ability={5}{R}{R}: Monstrosity 3.
+ability={5}{R}{R}: Monstrosity 3.;\
+        When SN becomes monstrous, each player sacrifices three lands.
 timing=main
-requires_groovy_code
 oracle={5}{R}{R}: Monstrosity 3.\nWhen Ember Swallower becomes monstrous, each player sacrifices three lands.

@@ -7,6 +7,6 @@ rarity=U
 type=Sorcery
 cost={2}{B}{B}
 ability=Cast SN with AI only if an opponent controls a creature.
+effect=Each player sacrifices two creatures.
 timing=removal
-requires_groovy_code
 oracle=Each player sacrifices two creatures.
