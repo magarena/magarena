@@ -5,8 +5,7 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={3}{R}{R}
-ability=Creatures named Lightning Rager can't attack you or planeswalkers you control.;\
+ability=As long as it's not your turn, creatures named Lightning Rager can't attack.;\
         At the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the battlefield.
 timing=enchantment
 oracle=Creatures named Lightning Rager can't attack you or planeswalkers you control.\nAt the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the battlefield. It has trample, haste, and "At the beginning of the end step, sacrifice this creature."
-status=needs groovy

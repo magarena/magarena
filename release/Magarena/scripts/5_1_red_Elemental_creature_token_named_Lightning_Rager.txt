@@ -1,0 +1,11 @@
+name=5/1 red Elemental creature token named Lightning Rager
+token=Lightning Rager
+image=https://media.wizards.com/2015/c15_9dsm28ccakCDSk2/en_KrFJ6WHvCU.png
+value=2
+type=Creature
+subtype=Elemental
+color=r
+ability=Trample, haste;\
+        At the beginning of the end step, sacrifice SN.
+pt=5/1
+oracle=Trample, haste\nAt the beginning of the end step, sacrifice Lightning Rager.
