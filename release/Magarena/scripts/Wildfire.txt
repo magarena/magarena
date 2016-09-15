@@ -4,6 +4,6 @@ value=4.029
 rarity=R
 type=Sorcery
 cost={4}{R}{R}
+effect=Each player sacrifices four lands.~SN deals 4 damage to each creature.
 timing=main
-requires_groovy_code
 oracle=Each player sacrifices four lands. Wildfire deals 4 damage to each creature.
