@@ -1923,18 +1923,28 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeChosen(
-        ARG.PLAYERS + "( )?sacrifice(s)? (?<permanent>[^\\.]*)",
+        ARG.PLAYERS + "( )?sacrifice(s)? (?<another>another )?(" + ARG.AMOUNT + " )?" + ARG.WORDRUN,
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Sacrifice"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent") + " you control");
-            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            final MagicTargetFilter<MagicPlayer> pfilter = ARG.playersParse(matcher);
+            final int amt = ARG.amount(matcher);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.wordrun(matcher)) + " you control";
+            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.Permanent(chosen);
+            final MagicTargetFilter<MagicPermanent> filter = matcher.group("another") != null ?
+                new MagicOtherPermanentTargetFilter(regular) : regular;
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter,
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
             return (game, event) -> {
-                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), it, choice));
+                for (final MagicPlayer it : ARG.players(event, matcher, pfilter)) {
+                    for (int i = 0; i < amt; i++) {
+                        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), it, choice));
+                    }
                 }
             };
         }

@@ -2749,7 +2749,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\belves\\b", "elf")
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\bmercenaries\\b", "mercenary")
-            .replaceAll("\\b(?!(controls|less|plains|opponents|graveyards|colorless|aurochs|pegasus|this|toughness|fungus|is|locus|counters)\\b)([a-z]+)s\\b", "$2");
+            .replaceAll("\\b(?!(controls|less|plains|opponents|graveyards|colorless|aurochs|pegasus|this|toughness|fungus|homunculus|is|locus|counters)\\b)([a-z]+)s\\b", "$2");
         return String.join(" named ", parts)
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
