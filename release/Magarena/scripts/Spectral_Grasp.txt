@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Enchant creature;\
-        Enchanted creature can't attack you or a planeswalker you control.;\
-        Enchanted creature can't block creatures you control.
+        As long as it's not your turn, enchanted creature can't attack.;\
+        As long as it's your turn, enchanted creature can't block.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack you or a planeswalker you control.\nEnchanted creature can't block creatures you control.
