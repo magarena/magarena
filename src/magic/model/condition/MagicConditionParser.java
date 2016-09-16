@@ -471,9 +471,7 @@ public enum MagicConditionParser {
     },
     NoneOnBattlefieldAlt("there are no " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.BattlefieldEqual(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)), 0
-            );
+            return NoneOnBattlefield.toCondition(arg);
         }
     },
     AtLeastOneOnBattlefield("there is (a|an) " + ARG.WORDRUN + " on the battlefield") {
@@ -481,6 +479,11 @@ public enum MagicConditionParser {
             return MagicConditionFactory.BattlefieldAtLeast(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)), 1
             );
+        }
+    },
+    IsOnBattlefield("(a|an) " + ARG.WORDRUN + " is on the battlefield") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return AtLeastOneOnBattlefield.toCondition(arg);
         }
     },
     FiveOrMoreIslands("there are " + ARG.AMOUNT + " or more " + ARG.WORDRUN + " on the battlefield") {
