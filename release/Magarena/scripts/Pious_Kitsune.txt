@@ -6,8 +6,7 @@ type=Creature
 subtype=Fox,Cleric
 cost={2}{W}
 pt=1/2
-ability=At the beginning of your upkeep, put a devotion counter on SN. Then if a creature named Eight-and-a-Half-Tails is on the battlefield, you gain 1 life for each devotion counter on SN.;\
+ability=At the beginning of your upkeep, put a devotion counter on SN.~Then if a creature named Eight-and-a-Half-Tails is on the battlefield, you gain 1 life for each devotion counter on SN.;\
         {T}, Remove a devotion counter from SN: You gain 1 life.
 timing=main
 oracle=At the beginning of your upkeep, put a devotion counter on Pious Kitsune. Then if a creature named Eight-and-a-Half-Tails is on the battlefield, you gain 1 life for each devotion counter on Pious Kitsune.\n{T}, Remove a devotion counter from Pious Kitsune: You gain 1 life.
-status=needs groovy
