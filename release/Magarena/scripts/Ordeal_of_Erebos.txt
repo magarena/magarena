@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{B}
 ability=Enchant creature;\
-        Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
+        Whenever enchanted creature attacks, put a +1/+1 counter on RN.~Then if enchanted creature has three or more +1/+1 counters on it, sacrifice SN.;\
         When you sacrifice SN, target player discards two cards.
 timing=aura
-enchant=default,creature
+enchant=pump,pos creature
 oracle=Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Erebos.\nWhen you sacrifice Ordeal of Erebos, target player discards two cards.
