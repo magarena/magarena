@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
-        Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
-        When you sacrifice SN, it deals 3 damage to target creature or player.
+        Whenever enchanted creature attacks, put a +1/+1 counter on RN.~Then if enchanted creature has three or more +1/+1 counters on it, sacrifice SN.;\
+        When you sacrifice SN, SN deals 3 damage to target creature or player.
 timing=aura
-enchant=default,creature
+enchant=pump,pos creature
 oracle=Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Purphoros.\nWhen you sacrifice Ordeal of Purphoros, it deals 3 damage to target creature or player.
