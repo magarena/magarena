@@ -525,6 +525,11 @@ public enum MagicConditionParser {
             return MagicCondition.OPP_MORE_LIFE;
         }
     },
+    YouMoreLife("you have more life than an opponent") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_MORE_LIFE;
+        }
+    },
     Morbid("a creature died this turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.CREATURE_DIED_THIS_TURN;
