@@ -235,6 +235,13 @@ public enum MagicConditionParser {
             return MagicConditionFactory.EnchantedIs(filter);
         }
     },
+    EnchantedCountersAtLeast("enchanted creature has " + ARG.AMOUNT + " or more " + ARG.WORD1 + " counters on it") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.EnchantedCounterAtLeast(counterType, amount);
+        }
+    },
     IsUntapped("(SN is|it's) untapped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.UNTAPPED_CONDITION;
