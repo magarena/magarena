@@ -5,6 +5,6 @@ rarity=R
 type=Tribal,Sorcery
 subtype=Giant
 cost={4}{W}{W}
+effect=You gain 10 life.~Then if you have more life than an opponent, put a 5/5 white Giant Warrior creature token onto the battlefield.
 timing=main
-requires_groovy_code
 oracle=You gain 10 life. Then if you have more life than an opponent, put a 5/5 white Giant Warrior creature token onto the battlefield.
