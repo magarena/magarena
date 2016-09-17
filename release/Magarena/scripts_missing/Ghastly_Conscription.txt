@@ -7,3 +7,4 @@ cost={5}{B}{B}
 effect=Exile all creature cards from target player's graveyard in a face-down pile, shuffle that pile, then manifest those cards.
 timing=main
 oracle=Exile all creature cards from target player's graveyard in a face-down pile, shuffle that pile, then manifest those cards.
+status=needs groovy

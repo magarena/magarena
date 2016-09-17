@@ -10,3 +10,4 @@ ability=SN can't be blocked as long as you control no other creatures.;\
         When SN deals combat damage to a player, exile it and the top card of your library in a face-down pile, shuffle that pile, then manifest those cards.
 timing=main
 oracle=Jeskai Infiltrator can't be blocked as long as you control no other creatures.\nWhen Jeskai Infiltrator deals combat damage to a player, exile it and the top card of your library in a face-down pile, shuffle that pile, then manifest those cards.
+status=needs groovy

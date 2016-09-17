@@ -9,3 +9,4 @@ pt=4/3
 ability=When SN dies, you may exile it. If you do, shuffle all creature cards from your graveyard into your library.
 timing=main
 oracle=When Rooting Kavu dies, you may exile it. If you do, shuffle all creature cards from your graveyard into your library.
+status=needs groovy

@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose white Citizen, blue Camarid, black 
         {3}, {T}: Put a 1/1 creature token of the chosen color and type onto the battlefield.
 timing=artifact
 oracle=As Sarpadian Empires, Vol. VII enters the battlefield, choose white Citizen, blue Camarid, black Thrull, red Goblin, or green Saproling.\n{3}, {T}: Put a 1/1 creature token of the chosen color and type onto the battlefield.
+status=needs groovy

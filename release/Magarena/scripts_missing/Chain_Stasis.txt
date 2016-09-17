@@ -7,3 +7,4 @@ cost={U}
 effect=You may tap or untap target creature. Then that creature's controller may pay {2}{U}. If the player does, he or she may copy this spell and may choose a new target for that copy.
 timing=removal
 oracle=You may tap or untap target creature. Then that creature's controller may pay {2}{U}. If the player does, he or she may copy this spell and may choose a new target for that copy.
+status=needs groovy
