@@ -182,6 +182,7 @@ public enum MagicIcon {
     PAGECOUNTER("study-counter.png"),
     SLEEPCOUNTER("sleep-counter.png"),
 
+    ENERGY("E.png"),
 
     MANA_ANY("anymana.gif"),
     MANA_PHYREXIAN_NULL("P.png"),
