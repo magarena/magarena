@@ -1,0 +1,254 @@
+Accomplished Automaton
+Acrobatic Maneuver
+Aerial Responder
+Aether Hub
+Aether Meltdown
+Aether Theorist
+Aether Tradewinds
+Aetherborn Marauder
+Aetherflux Reservoir
+Aethersquall Ancient
+Aetherstorm Roc
+Aethertorch Renegade
+Aetherworks Marvel
+Ambitious Aetherborn
+Angel of Invention
+Animation Module
+Appetite for the Unnatural
+Aradara Express
+Arborback Stomper
+Architect of the Untamed
+Armorcraft Judge
+Attune with Aether
+Authority of the Consuls
+Aviary Mechanic
+Ballista Charger
+Bastion Mastodon
+Blooming Marsh
+Blossoming Defense
+Bomat Bazaar Barge
+Bomat Courier
+Botanical Sanctum
+Brazen Scourge
+Bristling Hydra
+Built to Last
+Built to Smash
+Captured by the Consulate
+Cataclysmic Gearhulk
+Cathartic Reunion
+Ceremonious Rejection
+Chandra's Pyrohelix
+Chandra, Torch of Defiance
+Chief of the Foundry
+Cloudblazer
+Cogworker's Puzzleknot
+Combustible Gearhulk
+Commencement of Festivities
+Concealed Courtyard
+Confiscation Coup
+Consul's Shieldguard
+Consulate Skygate
+Consulate Surveillance
+Contraband Kingpin
+Cowl Prowler
+Creeping Mold
+Cultivator's Caravan
+Cultivator of Blades
+Curio Vendor
+Deadlock Trap
+Decoction Module
+Demolish
+Demolition Stomper
+Demon of Dark Schemes
+Depala, Pilot Exemplar
+Dhund Operative
+Diabolic Tutor
+Die Young
+Disappearing Act
+Dovin Baan
+Dramatic Reversal
+Dubious Challenge
+Dukhara Peafowl
+Dukhara Scavenger
+Durable Handicraft
+Dynavolt Tower
+Eager Construct
+Eddytrail Hawk
+Electrostatic Pummeler
+Elegant Edgecrafters
+Eliminate the Competition
+Embraal Bruiser
+Empyreal Voyager
+Engineered Might
+Era of Innovation
+Essence Extraction
+Experimental Aviator
+Fabrication Module
+Failed Inspection
+Fairgrounds Trumpeter
+Fairgrounds Warden
+Fateful Showdown
+Filigree Familiar
+Fireforger's Puzzleknot
+Fleetwheel Cruiser
+Forest
+Fortuitous Find
+Foundry Inspector
+Foundry Screecher
+Fragmentize
+Fretwork Colony
+Fumigate
+Furious Reprisal
+Gearseeker Serpent
+Gearshift Ace
+Ghirapur Guide
+Ghirapur Orrery
+Giant Spectacle
+Glassblower's Puzzleknot
+Glimmer of Genius
+Glint-Nest Crane
+Glint-Sleeve Artisan
+Gonti, Lord of Luxury
+Harnessed Lightning
+Harsh Scrutiny
+Hazardous Conditions
+Herald of the Fair
+Highspire Artisan
+Hightide Hermit
+Hijack
+Hunt the Weak
+Impeccable Timing
+Incendiary Sabotage
+Insidious Will
+Inspired Charge
+Inspiring Vantage
+Inventor's Apprentice
+Inventor's Goggles
+Inventors' Fair
+Iron League Steed
+Island
+Janjeet Sentry
+Kambal, Consul of Allocation
+Key to the City
+Kujar Seedsculptor
+Larger Than Life
+Lathnu Hellion
+Lawless Broker
+Live Fast
+Long-Finned Skywhale
+Longtusk Cub
+Lost Legacy
+Madcap Experiment
+Make Obsolete
+Malfunction
+Marionette Master
+Master Trinketeer
+Maulfist Doorbuster
+Maulfist Squad
+Metallurgic Summonings
+Metalspinner's Puzzleknot
+Metalwork Colossus
+Midnight Oil
+Mind Rot
+Minister of Inquiries
+Morbid Curiosity
+Mountain
+Multiform Wonder
+Narnam Cobra
+Nature's Way
+Night Market Lookout
+Nimble Innovator
+Ninth Bridge Patrol
+Nissa, Vital Force
+Noxious Gearhulk
+Ornamental Courage
+Ovalchase Daredevil
+Ovalchase Dragster
+Oviya Pashiri, Sage Lifecrafter
+Padeem, Consul of Innovation
+Panharmonicon
+Paradoxical Outcome
+Peema Outrider
+Perpetual Timepiece
+Pia Nalaar
+Plains
+Prakhata Club Security
+Prakhata Pillar-Bug
+Pressure Point
+Propeller Pioneer
+Prophetic Prism
+Quicksmith Genius
+Rashmi, Eternities Crafter
+Reckless Fireweaver
+Refurbish
+Renegade Freighter
+Renegade Tactics
+Restoration Gearsmith
+Revoke Privileges
+Revolutionary Rebuff
+Riparian Tiger
+Ruinous Gremlin
+Rush of Vitality
+Sage of Shaila's Claim
+Saheeli's Artistry
+Saheeli Rai
+Salivating Gremlins
+Scrapheap Scrounger
+Select for Inspection
+Self-Assembler
+Sequestered Stash
+Servant of the Conduit
+Servo Exhibition
+Shrewd Negotiation
+Sky Skiff
+Skyship Stalker
+Skysovereign, Consul Flagship
+Skyswirl Harrier
+Skywhaler's Shot
+Smuggler's Copter
+Snare Thopter
+Spark of Creativity
+Speedway Fanatic
+Spirebluff Canal
+Spireside Infiltrator
+Spontaneous Artist
+Start Your Engines
+Subtle Strike
+Swamp
+Syndicate Trafficker
+Take Down
+Tasseled Dromedary
+Territorial Gorger
+Terror of the Fairgrounds
+Tezzeret's Ambition
+Thriving Grubs
+Thriving Ibex
+Thriving Rats
+Thriving Rhino
+Thriving Turtle
+Tidy Conclusion
+Toolcraft Exemplar
+Torch Gauntlet
+Torrential Gearhulk
+Trusty Companion
+Underhanded Designs
+Unlicensed Disintegration
+Vedalken Blademaster
+Verdurous Gearhulk
+Veteran Motorist
+Visionary Augmenter
+Voltaic Brawler
+Wayward Giant
+Weaponcraft Enthusiast
+Weldfast Monitor
+Weldfast Wingsmith
+Welding Sparks
+Whirler Virtuoso
+Whirlermaker
+Wild Wanderer
+Wildest Dreams
+Wily Bandar
+Wind Drake
+Wispweaver Angel
+Woodweaver's Puzzleknot
+Workshop Assistant
