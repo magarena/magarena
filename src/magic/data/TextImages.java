@@ -50,6 +50,8 @@ public class TextImages {
         add("{Q}", MagicIcon.MANA_UNTAP);
         add("{P}", MagicIcon.MANA_PHYREXIAN_NULL);
 
+        add("{E}", MagicIcon.ENERGY);
+
         add(MagicCostManaType.Colorless, MagicIcon.MANA_COLORLESS);
         add(MagicCostManaType.Snow, MagicIcon.MANA_SNOW);
         add(MagicCostManaType.White, MagicIcon.MANA_WHITE);
