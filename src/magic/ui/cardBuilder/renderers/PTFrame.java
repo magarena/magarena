@@ -34,7 +34,11 @@ public class PTFrame {
             Graphics2D g2d = cardImage.createGraphics();
             g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
             g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
-            g2d.setColor(Color.BLACK);
+            if (cardDef.hasSubType(MagicSubType.Vehicle)) {
+                g2d.setColor(Color.WHITE);
+            } else {
+                g2d.setColor(Color.BLACK);
+            }
             FontRenderContext frc2 = g2d.getFontRenderContext();
 
             g2d.drawImage(ptImage, 273, 466, null);
@@ -230,6 +234,9 @@ public class PTFrame {
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
             return ResourceManager.colorlessPTPanel;
         }
+        if (cardDef.hasSubType(MagicSubType.Vehicle)) {
+            return ResourceManager.vehiclePTPanel;
+        }
         //Hybrid cards use colorless PT panel and banners
         if (cardDef.isMulti()) {
             return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.colorlessPTPanel : ResourceManager.multiPTPanel;
@@ -265,7 +272,7 @@ public class PTFrame {
     }
 
     private static String getPTText(IRenderableCard cardDef) {
-        return cardDef.hasType(MagicType.Creature) ? cardDef.getPowerToughnessText() : "";
+        return cardDef.hasType(MagicType.Creature) || cardDef.hasSubType(MagicSubType.Vehicle) ? cardDef.getPowerToughnessText() : "";
     }
 
     private static String getLoyaltyText(IRenderableCard cardDef) {

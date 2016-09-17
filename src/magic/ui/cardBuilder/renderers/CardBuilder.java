@@ -5,6 +5,7 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicAbility;
+import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.ui.cardBuilder.IRenderableCard;
 
@@ -118,7 +119,7 @@ public class CardBuilder {
     }
 
     private static BufferedImage makeBasicCard(IRenderableCard cardDef) {
-        BufferedImage cardImage = cardDef.hasAbility(MagicAbility.Devoid) ? Frame.getColorlessFrameType(cardDef) : Frame.getBasicFrameType(cardDef);
+        BufferedImage cardImage = determineBasicFrame(cardDef);
         Overlay.drawOverlay(cardImage, cardDef);
         Overlay.drawTextOverlay(cardImage, cardDef);
         if (cardDef.hasAbility(MagicAbility.LevelUp)) {
@@ -145,6 +146,16 @@ public class CardBuilder {
             image.getWidth() - 2 * cropSize,
             image.getHeight() - 2 * cropSize
         );
+    }
+
+    private static BufferedImage determineBasicFrame(IRenderableCard cardDef) {
+        if (cardDef.hasAbility(MagicAbility.Devoid)) {
+            return Frame.getColorlessFrameType(cardDef);
+        } else if (cardDef.hasSubType(MagicSubType.Vehicle)) {
+            return Frame.getVehicleFrameType(cardDef);
+        } else {
+            return Frame.getBasicFrameType(cardDef);
+        }
     }
 
 }

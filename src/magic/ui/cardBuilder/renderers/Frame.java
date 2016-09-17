@@ -1047,4 +1047,8 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessFrame);
     }
 
+    static BufferedImage getVehicleFrameType(IRenderableCard cardDef) {
+        return ResourceManager.newFrame(ResourceManager.vehicleFrame);
+    }
+
 }

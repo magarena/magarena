@@ -26,6 +26,7 @@ public class ResourceManager {
     public static final BufferedImage greenFrame = getComponent("gcard.jpg");
     public static final BufferedImage whiteFrame = getComponent("wcard.jpg");
     public static final BufferedImage landFrame = getComponent("lcard.jpg");
+    public static final BufferedImage vehicleFrame = getComponent("vcard.jpg");
     public static final BufferedImage redPTPanel = getComponent("rpt.png");
     public static final BufferedImage blackPTPanel = getComponent("bpt.png");
     public static final BufferedImage bluePTPanel = getComponent("upt.png");
@@ -34,6 +35,7 @@ public class ResourceManager {
     public static final BufferedImage colorlessPTPanel = getComponent("cpt.png");
     public static final BufferedImage artifactPTPanel = getComponent("apt.png");
     public static final BufferedImage multiPTPanel = getComponent("mpt.png");
+    public static final BufferedImage vehiclePTPanel = getComponent("vpt.png");
     public static final BufferedImage gainColorBlend = getComponent("color_blend.png");
     public static final BufferedImage gainHybridBlend = getComponent("blendingMask.png");
     public static final BufferedImage gainHybridBanner = getComponent("hybrid_blend.png");
