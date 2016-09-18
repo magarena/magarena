@@ -1452,6 +1452,12 @@ public enum MagicAbility {
             card.add(DamageIsDealtTrigger.Renown(n));
         }
     },
+    Fabricate("fabricate " + ARG.NUMBER,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.number(arg);
+            card.add(EntersBattlefieldTrigger.Fabricate(n));
+        }
+    },
     /*
     Suspend("suspend " + ARG.NUMBER + "( |—)" + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {

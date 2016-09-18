@@ -1,0 +1,8 @@
+name=1/1 colorless Servo artifact creature token
+token=Servo
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_b786LD89UN.png
+value=1
+pt=1/1
+color=
+subtype=Servo
+type=Artifact,Creature
