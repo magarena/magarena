@@ -8,15 +8,17 @@ import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
+
 import magic.data.GeneralConfig;
-import magic.ui.utility.GraphicsUtils;
+import magic.data.MagicIcon;
 import magic.ui.MagicImages;
-import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.ui.duel.animation.AnimationFx;
 import magic.ui.duel.animation.MagicAnimations;
+import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.GraphicsUtils;
+import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 
@@ -62,13 +64,26 @@ public class PlayerImagePanel extends AnimationPanel {
         // health
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         drawHealthValueOverlay(g2d, 0, 0, activeImage);
-
+        // monarch
+        drawMonarchOverlay(g2d);
         drawValidChoiceIndicator(g2d);
 
         // Animations
         drawDamageAlert(g2d);
         drawHealAlert(g2d);
 
+    }
+
+    private void drawMonarchOverlay(Graphics2D g2d) {
+        if (playerInfo.isMonarch()) {
+            final BufferedImage monarchImage = (BufferedImage)MagicImages.getIcon(MagicIcon.LOYALTYCOUNTER).getImage();
+            g2d.drawImage(
+                monarchImage,
+                4,
+                4,
+                null
+            );
+        }
     }
 
     private void drawValidChoiceIndicator(Graphics2D g2d) {

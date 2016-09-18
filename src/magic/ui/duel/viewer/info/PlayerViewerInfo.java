@@ -25,6 +25,7 @@ public class PlayerViewerInfo {
     public final MagicCardList library;
     public final List<PermanentViewerInfo> permanents;
     private final boolean isAi;
+    private final boolean isMonarch;
     public final String playerLabel;
     private final ImageIcon avatar;
     private int gamesWon;
@@ -43,6 +44,7 @@ public class PlayerViewerInfo {
         exile = new MagicCardList(player.getExile());
         library = new MagicCardList(player.getLibrary());
         isAi = player.isArtificial();
+        isMonarch = player.isMonarch();
         permanents = new ArrayList<>();
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game, permanent));
@@ -56,6 +58,10 @@ public class PlayerViewerInfo {
 
     public boolean isAi() {
         return this.isAi;
+    }
+
+    public boolean isMonarch() {
+        return isMonarch;
     }
 
     public boolean isHuman() {

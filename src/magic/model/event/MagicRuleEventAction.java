@@ -2271,6 +2271,14 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.doAction(new PlayTokenAction(event.getPlayer(), CardDefinitions.getToken("colorless Clue artifact token")));
         }
     },
+    BecomesMonarch(
+        "you become the monarch"
+    ){
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> game.doAction(new BecomeMonarchAction(event.getPlayer()));
+        }
+    },
     BecomeBlocked(
         ARG.PERMANENTS + " become(s)? blocked",
         MagicTiming.Block,
