@@ -195,6 +195,11 @@ public enum MagicCostEvent {
             return new MagicPayLifeEvent(source, ARG.number(arg));
         }
     },
+    PayEnergy("Pay " + ARG.ENERGY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicPayEnergyEvent(source, ARG.energy(arg));
+        }
+    },
     RemoveCounterSelf("Remove " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? from SN") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);

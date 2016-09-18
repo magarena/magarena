@@ -150,6 +150,14 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition YouEnergyAtLeast(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getController().getEnergy() >= n;
+            }
+        };
+    }
+
     public static MagicCondition YouLifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
