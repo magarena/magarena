@@ -10,3 +10,4 @@ ability=Flying;\
         {1}{B}, Exile SN: Put a 1/2 black Bat creature token with flying onto the battlefield. It has "{1}{B}, Sacrifice this creature: Return an exiled card named Sengir Nosferatu to the battlefield under its owner's control."
 timing=main
 oracle=Flying\n{1}{B}, Exile Sengir Nosferatu: Put a 1/2 black Bat creature token with flying onto the battlefield. It has "{1}{B}, Sacrifice this creature: Return an exiled card named Sengir Nosferatu to the battlefield under its owner's control."
+status=needs groovy

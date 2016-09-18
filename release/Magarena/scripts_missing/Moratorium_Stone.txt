@@ -8,3 +8,4 @@ ability={2}, {T}: Exile target card from a graveyard.;\
         {2}{W}{B}, {T}, Sacrifice SN: Exile target nonland card from a graveyard, all other cards from graveyards with the same name as that card, and all permanents with that name.
 timing=artifact
 oracle={2}, {T}: Exile target card from a graveyard.\n{2}{W}{B}, {T}, Sacrifice Moratorium Stone: Exile target nonland card from a graveyard, all other cards from graveyards with the same name as that card, and all permanents with that name.
+status=needs groovy

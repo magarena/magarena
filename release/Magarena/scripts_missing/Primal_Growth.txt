@@ -9,3 +9,4 @@ ability=Kicker—Sacrifice a creature.
 effect=Search your library for a basic land card, put that card onto the battlefield, then shuffle your library. If SN was kicked, instead search your library for up to two basic land cards, put them onto the battlefield, then shuffle your library.
 timing=main
 oracle=Kicker—Sacrifice a creature.\nSearch your library for a basic land card, put that card onto the battlefield, then shuffle your library. If Primal Growth was kicked, instead search your library for up to two basic land cards, put them onto the battlefield, then shuffle your library.
+status=needs groovy

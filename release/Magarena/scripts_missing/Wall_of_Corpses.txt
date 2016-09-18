@@ -10,3 +10,4 @@ ability=Defender;\
         {B}, Sacrifice SN: Destroy target creature SN is blocking.
 timing=smain
 oracle=Defender\n{B}, Sacrifice Wall of Corpses: Destroy target creature Wall of Corpses is blocking.
+status=needs groovy
