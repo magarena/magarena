@@ -24,6 +24,11 @@ public class ARG {
     public static final String THING = "(permanent|creature|artifact|land|player|opponent|spell or ability|spell|ability)";
     public static final String EVENQUOTES = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
 
+    public static final String ENERGY = "(?<energy>(\\{E\\})+)";
+    public static int energy(final Matcher m) {
+        return m.group("energy").length() / 3;
+    }
+
     public static final String NUMBER = "(?<number>[0-9]+)";
     public static int number(final Matcher m) {
         return Integer.parseInt(m.group("number"));

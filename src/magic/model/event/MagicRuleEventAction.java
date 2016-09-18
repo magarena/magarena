@@ -2737,6 +2737,23 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Energy(
+        ARG.PLAYERS + " get(s)? " + ARG.ENERGY,
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Poison"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.energy(matcher);
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return (game, event) -> {
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Energy, amount));
+                }
+            };
+        }
+    },
     ExtraTurn(
         ARG.PLAYERS + "( )?take(s)? " + ARG.AMOUNT + " extra turn(s)? after this one",
         MagicTargetHint.Positive,
