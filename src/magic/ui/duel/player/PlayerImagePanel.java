@@ -76,9 +76,8 @@ public class PlayerImagePanel extends AnimationPanel {
 
     private void drawMonarchOverlay(Graphics2D g2d) {
         if (playerInfo.isMonarch()) {
-            final BufferedImage monarchImage = (BufferedImage)MagicImages.getIcon(MagicIcon.LOYALTYCOUNTER).getImage();
             g2d.drawImage(
-                monarchImage,
+                MagicImages.getIcon(MagicIcon.LOYALTYCOUNTER).getImage(),
                 4,
                 4,
                 null
