@@ -14,6 +14,9 @@ public enum MagicPlayerState {
     private final String description;
     private final int mask;
 
+    // states that persist after cleanup
+    public static final int CLEANUP_MASK = Monarch.getMask();
+
     private MagicPlayerState(final String description) {
         this.description=description;
         this.mask=1<<ordinal();

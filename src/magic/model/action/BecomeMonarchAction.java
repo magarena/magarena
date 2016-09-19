@@ -4,13 +4,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 
-public class BecomeMonarchAction extends ChangePlayerStateAction {
+public class BecomeMonarchAction extends MagicAction {
 
     private final MagicPlayer player;
+    private boolean setPlayer = false;
+    private boolean clearOpponent = false;
 
-    public BecomeMonarchAction(MagicPlayer aPlayer) {
-        super(aPlayer, MagicPlayerState.Monarch);
-        player=aPlayer;
+    public BecomeMonarchAction(final MagicPlayer aPlayer) {
+        player = aPlayer;
     }
 
     @Override
@@ -18,9 +19,20 @@ public class BecomeMonarchAction extends ChangePlayerStateAction {
         if (!player.isMonarch()) {
             if (player.getOpponent().isMonarch()) {
                 player.getOpponent().clearState(MagicPlayerState.Monarch);
+                clearOpponent = true;
             }
             player.setState(MagicPlayerState.Monarch);
-            System.out.println("Player becomes monarch");
+            setPlayer = true;
+        }
+    }
+
+    @Override
+    public void undoAction(final MagicGame game) {
+        if (setPlayer) {
+            player.clearState(MagicPlayerState.Monarch);
+        }
+        if (clearOpponent) {
+            player.getOpponent().setState(MagicPlayerState.Monarch);
         }
     }
 }

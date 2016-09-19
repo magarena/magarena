@@ -13,6 +13,7 @@ public class ChangePlayerStateAction extends MagicAction {
 
     private final MagicPlayer player;
     private final MagicPlayerState state;
+    private boolean setPlayer = false;
 
     public ChangePlayerStateAction(final MagicPlayer aPlayer,final MagicPlayerState aState) {
         player = aPlayer;
@@ -47,18 +48,15 @@ public class ChangePlayerStateAction extends MagicAction {
             };
             game.doAction(new AddTriggerAction(cleanup));
         } else {
-            // until end of turn
-            game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
-                @Override
-                public void modPlayer(final MagicPermanent source, final MagicPlayer aPlayer) {
-                    if (player.getId() == aPlayer.getId()) {
-                        aPlayer.setState(state);
-                    }
-                }
-            }));
+            player.setState(state);
+            setPlayer = true;
         }
     }
 
     @Override
-    public void undoAction(final MagicGame game) {}
+    public void undoAction(final MagicGame game) {
+        if (setPlayer) {
+            player.clearState(state);
+        }
+    }
 }

@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerState;
 
 public class CleanupPlayerAction extends MagicAction {
 
@@ -12,6 +13,7 @@ public class CleanupPlayerAction extends MagicAction {
     private int oldLifeLost;
     private int oldLifeGained;
     private int oldCreaturesAttacked;
+    private int oldStateFlags;
 
     public CleanupPlayerAction(final MagicPlayer player) {
         this.player=player;
@@ -34,6 +36,8 @@ public class CleanupPlayerAction extends MagicAction {
         oldCreaturesAttacked=player.getCreaturesAttackedThisTurn();
         player.setCreaturesAttackedThisTurn(0);
 
+        oldStateFlags=player.getStateFlags();
+        player.setStateFlags(oldStateFlags & MagicPlayerState.CLEANUP_MASK);
 
         for (final MagicPermanent permanent : player.getPermanents()) {
             game.doAction(new CleanupPermanentAction(permanent));
@@ -49,5 +53,6 @@ public class CleanupPlayerAction extends MagicAction {
         player.setLifeGainThisTurn(oldLifeGained);
         player.setLifeLossThisTurn(oldLifeLost);
         player.setCreaturesAttackedThisTurn(oldCreaturesAttacked);
+        player.setStateFlags(oldStateFlags);
     }
 }
