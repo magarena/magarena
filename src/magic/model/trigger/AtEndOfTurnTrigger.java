@@ -7,8 +7,10 @@ import magic.model.MagicPlayer;
 import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.SacrificeAction;
 import magic.model.action.DestroyAction;
+import magic.model.action.DrawAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.data.CardDefinitions;
 
 public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public AtEndOfTurnTrigger(final int priority) {
@@ -122,6 +124,26 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
                 event.getPermanent(),
                 MagicLocationType.OwnersHand
             ));
+        }
+    };
+
+    public static final AtEndOfTurnTrigger Monarch = new AtEndOfTurnTrigger() {
+        @Override
+        public boolean accept(final MagicPermanent permanent, final MagicPlayer eotPlayer) {
+            return eotPlayer.isMonarch();
+        }
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
+            return new MagicEvent(
+                game.createDelayedSource(CardDefinitions.getCard("The Monarch"), eotPlayer),
+                eotPlayer,
+                this,
+                "PN draws a card."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new DrawAction(event.getPlayer()));
         }
     };
 }

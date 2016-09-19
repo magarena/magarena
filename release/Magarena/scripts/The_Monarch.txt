@@ -1,0 +1,9 @@
+name=The Monarch
+image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_OFPgMTjwcu.png
+type=Enchantment
+rarity=C
+color=
+value=2.500
+timing=main
+overlay
+oracle=At the beginning of your end step, draw a card\nWhenever a creature deals combat damage to you, its controller becomes the monarch.

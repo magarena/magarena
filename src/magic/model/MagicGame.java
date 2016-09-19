@@ -52,6 +52,8 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.OtherEntersBattlefieldTrigger;
 import magic.model.trigger.PreventDamageTrigger;
+import magic.model.trigger.AtEndOfTurnTrigger;
+import magic.model.trigger.DamageIsDealtTrigger;
 import magic.ui.MagicSound;
 
 public class MagicGame {
@@ -562,9 +564,16 @@ public class MagicGame {
         doDelayedActions();
         MagicPermanent.update(this);
 
-        // add Soulbond trigger here
         triggers = new MagicPermanentTriggerMap(additionalTriggers);
+
+        // add Soulbond trigger
         triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, OtherEntersBattlefieldTrigger.Soulbond));
+
+        // add Monarch triggers
+        triggers.add(new MagicPermanentTrigger(1, MagicPermanent.NONE, AtEndOfTurnTrigger.Monarch));
+        triggers.add(new MagicPermanentTrigger(2, MagicPermanent.NONE, DamageIsDealtTrigger.Monarch));
+
+        // prevent damage replacement
         triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, PreventDamageTrigger.GlobalPreventDamageToTarget));
 
         for (final MagicPlayer player : players) {
@@ -1033,6 +1042,10 @@ public class MagicGame {
 
     public int getPriorityPassedCount() {
         return priorityPassedCount;
+    }
+
+    public MagicSource createDelayedSource(final MagicCardDefinition cdef, final MagicPlayer controller) {
+        return new MagicCard(cdef, controller.map(this), getUniqueId());
     }
 
     public MagicSource createDelayedSource(final MagicObject obj, final MagicPlayer controller) {

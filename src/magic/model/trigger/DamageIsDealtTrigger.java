@@ -12,12 +12,14 @@ import magic.model.action.CastCardAction;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangePoisonAction;
 import magic.model.action.ChangeStateAction;
+import magic.model.action.BecomeMonarchAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetType;
+import magic.data.CardDefinitions;
 
 public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public DamageIsDealtTrigger(final int priority) {
@@ -34,7 +36,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDamageIsDealt;
     }
-    
+
     public static DamageIsDealtTrigger DamageToTarget(final MagicTargetFilter<MagicPermanent> filter, final MagicTargetFilter<MagicTarget> tfilter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new DamageIsDealtTrigger() {
             @Override
@@ -193,4 +195,31 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
             }
         };
     }
+
+    public static DamageIsDealtTrigger Monarch = new DamageIsDealtTrigger() {
+        @Override
+        public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+            return super.accept(permanent, damage) &&
+                damage.getSource().isCreaturePermanent() &&
+                damage.isCombat() &&
+                damage.isTargetPlayer() &&
+                damage.getTargetPlayer().isMonarch();
+        }
+
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
+            return new MagicEvent(
+                game.createDelayedSource(CardDefinitions.getCard("The Monarch"), damage.getTargetPlayer()),
+                damage.getTargetPlayer(),
+                damage.getSource().getController(),
+                this,
+                "RN becomes the monarch."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new BecomeMonarchAction(event.getRefPlayer()));
+        }
+    };
 }

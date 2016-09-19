@@ -25,9 +25,6 @@ public class MagicEndOfTurnPhase extends MagicPhase {
         game.doAction(new ReturnExiledAction());
 
         // End of turn triggers.
-        if (game.getTurnPlayer().isMonarch()) {
-            game.addEvent(new MagicDrawEvent(MagicSource.NONE,game.getTurnPlayer(),1));
-        }
         game.executeTrigger(MagicTriggerType.AtEndOfTurn,game.getTurnPlayer());
         game.setStep(MagicStep.ActivePlayer);
     }
