@@ -20,13 +20,15 @@ class TestMonarch extends TestGameBuilder {
         createPermanent(P,"Plains",8);
         createPermanent(P,"Chromatic Lantern");
         createPermanent(P,"Throne of the High City");
+        addToHand(P, "Keeper of Keys");
 
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Plains",8);
+        createPermanent(P,"Savannah Lions");
 
         return game;
     }
