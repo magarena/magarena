@@ -820,4 +820,10 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return !permanent.hasState(MagicPermanentState.Summoned);
         }
     };
+
+    public static MagicCondition YOU_ARE_MONARCH = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().isMonarch();
+        }
+    };
 }

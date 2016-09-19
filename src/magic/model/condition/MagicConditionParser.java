@@ -637,6 +637,11 @@ public enum MagicConditionParser {
             return MagicCondition.CAST_ANOTHER_SPELL_THIS_TURN;
         }
     },
+    YouAreMonarch("you're the monarch") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_ARE_MONARCH;
+        }
+    },
     ;
 
     private final Pattern pattern;
