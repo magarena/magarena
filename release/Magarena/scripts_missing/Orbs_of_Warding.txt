@@ -9,3 +9,4 @@ ability=You have hexproof.;\
         If a creature would deal damage to you, prevent 1 of that damage.
 timing=artifact
 oracle=You have hexproof.\nIf a creature would deal damage to you, prevent 1 of that damage.
+status=needs groovy

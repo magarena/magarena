@@ -9,3 +9,4 @@ pt=4/5
 ability=When SN enters the battlefield, it fights target creature an opponent controls chosen at random.
 timing=main
 oracle=When Scab-Clan Giant enters the battlefield, it fights target creature an opponent controls chosen at random.
+status=not supported: random-target

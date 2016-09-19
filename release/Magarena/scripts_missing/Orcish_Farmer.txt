@@ -9,3 +9,4 @@ pt=2/2
 ability={T}: Target land becomes a Swamp until its controller's next untap step.
 timing=main
 oracle={T}: Target land becomes a Swamp until its controller's next untap step.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Flying;\
         {T}: SN deals 2 damage to target creature or player chosen at random.
 timing=main
 oracle=Flying\n{T}: Goblin Test Pilot deals 2 damage to target creature or player chosen at random.
+status=not supported: random-target

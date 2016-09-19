@@ -10,3 +10,4 @@ ability=Flying;\
         {2}{U}{R}: Scry 1, then reveal the top card of your library. SN gets +X/+0 until end of turn, where X is that card's converted mana cost.
 timing=main
 oracle=Flying\n{2}{U}{R}: Scry 1, then reveal the top card of your library. Stormchaser Chimera gets +X/+0 until end of turn, where X is that card's converted mana cost.
+status=needs groovy

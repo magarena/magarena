@@ -11,3 +11,4 @@ ability={1}{R}, {T}: Put a mine counter on target land.;\
         When SN leaves the battlefield, remove all mine counters from all lands.
 timing=main
 oracle={1}{R}, {T}: Put a mine counter on target land.\nWhenever a land with a mine counter on it becomes tapped, destroy it.\nWhen Mine Layer leaves the battlefield, remove all mine counters from all lands.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={4}{R}{R}
 ability=Whenever a spell or ability is put onto the stack, if it has a single target, reselect its target at random.
 timing=enchantment
 oracle=Whenever a spell or ability is put onto the stack, if it has a single target, reselect its target at random.
+status=not supported: random-target

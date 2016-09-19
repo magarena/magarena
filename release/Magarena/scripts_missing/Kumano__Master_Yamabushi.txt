@@ -10,3 +10,4 @@ ability={1}{R}: SN deals 1 damage to target creature or player.;\
         If a creature dealt damage by SN this turn would die, exile it instead.
 timing=main
 oracle={1}{R}: Kumano, Master Yamabushi deals 1 damage to target creature or player.\nIf a creature dealt damage by Kumano this turn would die, exile it instead.
+status=needs groovy

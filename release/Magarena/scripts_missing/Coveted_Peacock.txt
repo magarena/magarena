@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN attacks, you may goad target creature defending player controls.
 timing=main
 oracle=Flying\nWhenever Coveted Peacock attacks, you may goad target creature defending player controls.
+status=not supported: goad

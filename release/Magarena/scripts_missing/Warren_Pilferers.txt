@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, return target creature card from your graveyard to your hand. If that card is a Goblin card, SN gains haste until end of turn.
 timing=main
 oracle=When Warren Pilferers enters the battlefield, return target creature card from your graveyard to your hand. If that card is a Goblin card, Warren Pilferers gains haste until end of turn.
+status=needs groovy

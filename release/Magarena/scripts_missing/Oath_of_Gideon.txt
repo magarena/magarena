@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, put two 1/1 white Kor Ally creature toke
         Each planeswalker you control enters the battlefield with an additional loyalty counter on it.
 timing=enchantment
 oracle=When Oath of Gideon enters the battlefield, put two 1/1 white Kor Ally creature tokens onto the battlefield.\nEach planeswalker you control enters the battlefield with an additional loyalty counter on it.
+status=needs groovy

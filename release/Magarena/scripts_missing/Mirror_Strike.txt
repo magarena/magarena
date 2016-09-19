@@ -7,3 +7,4 @@ cost={3}{W}
 effect=All combat damage that would be dealt to you this turn by target unblocked creature is dealt to its controller instead.
 timing=removal
 oracle=All combat damage that would be dealt to you this turn by target unblocked creature is dealt to its controller instead.
+status=needs groovy
