@@ -10,3 +10,4 @@ ability=Horsemanship;\
         When SN enters the battlefield, look at target opponent's hand.
 timing=main
 oracle=Horsemanship\nWhen Wu Scout enters the battlefield, look at target opponent's hand.
+status=not supported: reveal-hand

@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Look at target player's hand and choose up to two cards from it. That player discards those cards.
 timing=main
 oracle=Look at target player's hand and choose up to two cards from it. That player discards those cards.
+status=not supported: reveal-hand

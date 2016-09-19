@@ -7,3 +7,4 @@ cost={U}
 effect=Look at target player's hand.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
 oracle=Look at target player's hand.\nDraw a card at the beginning of the next turn's upkeep.
+status=not supported: reveal-hand

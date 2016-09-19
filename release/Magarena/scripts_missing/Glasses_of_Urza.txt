@@ -7,3 +7,4 @@ cost={1}
 ability={T}: Look at target player's hand.
 timing=artifact
 oracle={T}: Look at target player's hand.
+status=not supported: reveal-hand

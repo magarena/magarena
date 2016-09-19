@@ -9,3 +9,4 @@ pt=1/5
 ability=If you would draw a card, look at the top three cards of your library instead. Put one of those cards into your hand and the rest on the bottom of your library in any order.
 timing=main
 oracle=If you would draw a card, look at the top three cards of your library instead. Put one of those cards into your hand and the rest on the bottom of your library in any order.
+status=not supported: draw-replacement

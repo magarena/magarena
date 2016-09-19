@@ -9,3 +9,4 @@ pt=2/1
 ability=If you would draw a card while you have no cards in hand, instead draw two cards and lose 1 life.
 timing=main
 oracle=If you would draw a card while you have no cards in hand, instead draw two cards and lose 1 life.
+status=not supported: draw-replacement

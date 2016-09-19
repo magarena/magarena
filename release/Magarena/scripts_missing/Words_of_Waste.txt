@@ -7,3 +7,4 @@ cost={2}{B}
 ability={1}: The next time you would draw a card this turn, each opponent discards a card instead.
 timing=enchantment
 oracle={1}: The next time you would draw a card this turn, each opponent discards a card instead.
+status=not supported: draw-replacement

@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, look at target player's hand.
 timing=main
 oracle=Flying\nWhen Ingenious Thief enters the battlefield, look at target player's hand.
+status=not supported: reveal-hand

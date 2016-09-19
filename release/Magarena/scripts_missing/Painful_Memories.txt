@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Look at target opponent's hand and choose a card from it. Put that card on top of that player's library.
 timing=main
 oracle=Look at target opponent's hand and choose a card from it. Put that card on top of that player's library.
+status=not supported: reveal-hand

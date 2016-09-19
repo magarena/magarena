@@ -9,3 +9,4 @@ pt=1/2
 ability=Whenever SN becomes blocked, you may look at defending player's hand.
 timing=main
 oracle=Whenever Port Inspector becomes blocked, you may look at defending player's hand.
+status=not supported: reveal-hand

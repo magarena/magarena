@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, look at that player's hand and choose a card from it. The player discards that card.
 timing=main
 oracle=Flying\nWhen Doomsday Specter enters the battlefield, return a blue or black creature you control to its owner's hand.\nWhenever Doomsday Specter deals combat damage to a player, look at that player's hand and choose a card from it. The player discards that card.
+status=not supported: reveal-hand

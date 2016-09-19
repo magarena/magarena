@@ -10,3 +10,4 @@ pt=1/2
 ability=Whenever SN attacks, each opponent who doesn't control an Elf loses 1 life.
 timing=main
 oracle=Whenever Thornbow Archer attacks, each opponent who doesn't control an Elf loses 1 life.
+status=needs groovy

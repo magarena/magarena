@@ -10,3 +10,4 @@ ability=Equipped creature has "{2}: This creature gets +1/+0 until end of turn."
         Equip {3}
 timing=equipment
 oracle=Equipped creature has "{2}: This creature gets +1/+0 until end of turn."\nWhenever equipped creature deals damage to a blocking creature, Kusari-Gama deals that much damage to each other creature defending player controls.\nEquip {3}
+status=needs groovy

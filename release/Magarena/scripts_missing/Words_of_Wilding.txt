@@ -7,3 +7,4 @@ cost={2}{G}
 ability={1}: The next time you would draw a card this turn, put a 2/2 green Bear creature token onto the battlefield instead.
 timing=enchantment
 oracle={1}: The next time you would draw a card this turn, put a 2/2 green Bear creature token onto the battlefield instead.
+status=not supported: draw-replacement

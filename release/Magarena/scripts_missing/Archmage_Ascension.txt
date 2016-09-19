@@ -8,3 +8,4 @@ ability=At the beginning of each end step, if you drew two or more cards this tu
         As long as SN has six or more quest counters on it, if you would draw a card, you may instead search your library for a card, put that card into your hand, then shuffle your library.
 timing=enchantment
 oracle=At the beginning of each end step, if you drew two or more cards this turn, you may put a quest counter on Archmage Ascension.\nAs long as Archmage Ascension has six or more quest counters on it, if you would draw a card, you may instead search your library for a card, put that card into your hand, then shuffle your library.
+status=not supported: draw-replacement

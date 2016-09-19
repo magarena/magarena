@@ -7,3 +7,4 @@ cost={2}{R}
 ability=At end of combat, destroy each creature that blocked or was blocked this turn.
 timing=enchantment
 oracle=At end of combat, destroy each creature that blocked or was blocked this turn.
+status=needs groovy

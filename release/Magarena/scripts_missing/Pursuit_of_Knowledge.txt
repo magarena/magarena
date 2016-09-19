@@ -8,3 +8,4 @@ ability=If you would draw a card, you may put a study counter on SN instead.;\
         Remove three study counters from SN, Sacrifice SN: Draw seven cards.
 timing=enchantment
 oracle=If you would draw a card, you may put a study counter on Pursuit of Knowledge instead.\nRemove three study counters from Pursuit of Knowledge, Sacrifice Pursuit of Knowledge: Draw seven cards.
+status=not supported: draw-replacement

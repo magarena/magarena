@@ -10,3 +10,4 @@ ability=Flying;\
         You may cast SN from exile.
 timing=main
 oracle=Flying\nYou may cast Misthollow Griffin from exile.
+status=not supported: cast-from-exile

@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, look at target opponent's hand.
 timing=main
 oracle=When Telepathic Spies enters the battlefield, look at target opponent's hand.
+status=not supported: reveal-hand

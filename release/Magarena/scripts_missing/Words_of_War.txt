@@ -7,3 +7,4 @@ cost={2}{R}
 ability={1}: The next time you would draw a card this turn, SN deals 2 damage to target creature or player instead.
 timing=enchantment
 oracle={1}: The next time you would draw a card this turn, Words of War deals 2 damage to target creature or player instead.
+status=not supported: draw-replacement

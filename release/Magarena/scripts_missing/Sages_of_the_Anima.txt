@@ -9,3 +9,4 @@ pt=3/4
 ability=If you would draw a card, instead reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
 oracle=If you would draw a card, instead reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.
+status=not supported: draw-replacement

@@ -9,3 +9,4 @@ pt=0/0
 ability=Devour X, where X is the number of creatures devoured this way
 timing=main
 oracle=Devour X, where X is the number of creatures devoured this way
+status=needs groovy

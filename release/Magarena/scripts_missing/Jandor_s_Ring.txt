@@ -7,3 +7,4 @@ cost={6}
 ability={2}, {T}, Discard the last card you drew this turn: Draw a card.
 timing=artifact
 oracle={2}, {T}, Discard the last card you drew this turn: Draw a card.
+status=not supported: no-info

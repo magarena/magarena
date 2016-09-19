@@ -8,3 +8,4 @@ ability=Buyback—Pay 3 life, Discard a card at random.
 effect=Destroy target land.
 timing=main
 oracle=Buyback—Pay 3 life, Discard a card at random.\nDestroy target land.
+status=needs groovy

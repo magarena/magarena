@@ -10,3 +10,4 @@ ability=Trample;\
         Whenever SN deals combat damage to a player, you may look at that player's hand. If you do, you may cast a nonland card in it without paying that card's mana cost.
 timing=main
 oracle=Trample\nWhenever Mindleech Mass deals combat damage to a player, you may look at that player's hand. If you do, you may cast a nonland card in it without paying that card's mana cost.
+status=not supported: reveal-hand

@@ -9,3 +9,4 @@ ability=If you would gain life, you gain twice that much life instead.;\
         If you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.
 timing=artifact
 oracle=If you would gain life, you gain twice that much life instead.\nIf you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.
+status=not supported: draw-replacement
