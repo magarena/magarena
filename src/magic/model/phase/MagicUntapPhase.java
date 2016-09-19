@@ -24,7 +24,6 @@ public class MagicUntapPhase extends MagicPhase {
 
     private static void untap(final MagicGame game) {
         final MagicPlayer player=game.getTurnPlayer();
-        final boolean exhausted=player.hasState(MagicPlayerState.Exhausted);
 
         for (final MagicPermanent permanent : player.getPermanents()) {
             if (permanent.hasState(MagicPermanentState.Summoned)) {
@@ -33,8 +32,7 @@ public class MagicUntapPhase extends MagicPhase {
             }
             if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
                 game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext));
-            } else if (permanent.isTapped() && !permanent.hasAbility(MagicAbility.DoesNotUntap) &&
-                      (!exhausted || !(permanent.isLand() || permanent.isCreature()))) {
+            } else if (permanent.isTapped() && !permanent.hasAbility(MagicAbility.DoesNotUntap)) {
                 game.doAction(new UntapAction(permanent));
             }
         }

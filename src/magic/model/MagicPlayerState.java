@@ -2,7 +2,6 @@ package magic.model;
 
 public enum MagicPlayerState {
 
-    Exhausted("creatures and lands don't untap during your next untap step"),
     WasDealtDamage(""),
     CantCastSpells("can't cast spells this turn"),
     CantActivateAbilities("can't activate abilities this turn"),

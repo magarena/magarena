@@ -78,6 +78,7 @@ public class CardDefinitions {
                 "magic.model.stack",
                 "magic.model.target",
                 "magic.model.trigger",
+                "magic.model.phase",
                 "magic.card"
             ).addStaticStars(
                 "magic.model.target.MagicTargetFilterFactory",
