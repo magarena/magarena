@@ -1531,6 +1531,10 @@ public enum MagicAbility {
         return matcher;
     }
 
+    private static String renameThis(final String text) {
+        return text.replaceAll("\\b(T|t)his creature( |\\.|'s|\\b)", "SN$2");
+    }
+
     public static MagicAbility getAbility(final String name) {
         for (final MagicAbility ability : values()) {
             if (ability.matches(name)) {
@@ -1566,9 +1570,10 @@ public enum MagicAbility {
         final MagicAbilityList abilityList = new MagicAbilityList();
         final Matcher m = SUB_ABILITY_LIST.matcher(names);
         while (m.find()) {
-            final String name = m.group(1) != null ? m.group(1) :
+            final String part = m.group(1) != null ? m.group(1) :
                                 m.group(2) != null ? m.group(2) :
                                 m.group(3);
+            final String name = renameThis(part);
             getAbility(name).addAbility(abilityList, name);
         }
         return abilityList;
