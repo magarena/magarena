@@ -38,6 +38,7 @@ Cataclysmic Gearhulk
 Cathartic Reunion
 Ceremonious Rejection
 Chandra's Pyrohelix
+Chandra, Pyrogenius
 Chandra, Torch of Defiance
 Chief of the Foundry
 Cloudblazer
@@ -90,6 +91,7 @@ Fairgrounds Warden
 Fateful Showdown
 Filigree Familiar
 Fireforger's Puzzleknot
+Flame Lash
 Fleetwheel Cruiser
 Forest
 Fortuitous Find
@@ -109,6 +111,7 @@ Glimmer of Genius
 Glint-Nest Crane
 Glint-Sleeve Artisan
 Gonti, Lord of Luxury
+Guardian of the Great Conduit
 Harnessed Lightning
 Harsh Scrutiny
 Hazardous Conditions
@@ -134,6 +137,7 @@ Kujar Seedsculptor
 Larger Than Life
 Lathnu Hellion
 Lawless Broker
+Liberating Combustion
 Live Fast
 Long-Finned Skywhale
 Longtusk Cub
@@ -159,6 +163,7 @@ Nature's Way
 Night Market Lookout
 Nimble Innovator
 Ninth Bridge Patrol
+Nissa, Nature's Artisan
 Nissa, Vital Force
 Noxious Gearhulk
 Ornamental Courage
@@ -181,6 +186,7 @@ Quicksmith Genius
 Rashmi, Eternities Crafter
 Reckless Fireweaver
 Refurbish
+Renegade Firebrand
 Renegade Freighter
 Renegade Tactics
 Restoration Gearsmith
@@ -213,11 +219,13 @@ Spirebluff Canal
 Spireside Infiltrator
 Spontaneous Artist
 Start Your Engines
+Stone Quarry
 Subtle Strike
 Swamp
 Syndicate Trafficker
 Take Down
 Tasseled Dromedary
+Terrain Elemental
 Territorial Gorger
 Terror of the Fairgrounds
 Tezzeret's Ambition
@@ -234,6 +242,7 @@ Trusty Companion
 Underhanded Designs
 Unlicensed Disintegration
 Vedalken Blademaster
+Verdant Crescendo
 Verdurous Gearhulk
 Veteran Motorist
 Visionary Augmenter
@@ -250,5 +259,6 @@ Wildest Dreams
 Wily Bandar
 Wind Drake
 Wispweaver Angel
+Woodland Stream
 Woodweaver's Puzzleknot
 Workshop Assistant

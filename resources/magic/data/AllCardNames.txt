@@ -2146,6 +2146,7 @@ Chandra's Pyrohelix
 Chandra's Spitfire
 Chandra, Fire of Kaladesh
 Chandra, Flamecaller
+Chandra, Pyrogenius
 Chandra, Pyromaster
 Chandra, Roaring Flame
 Chandra, Torch of Defiance
@@ -4816,6 +4817,7 @@ Flame Fusillade
 Flame Jab
 Flame Javelin
 Flame Jet
+Flame Lash
 Flame Rift
 Flame Slash
 Flame Spirit
@@ -6018,6 +6020,7 @@ Guardian of Tazeem
 Guardian of Vitu-Ghazi
 Guardian of the Ages
 Guardian of the Gateless
+Guardian of the Great Conduit
 Guardian of the Guildpact
 Guardian's Magemark
 Guardians of Akrasa
@@ -7831,6 +7834,7 @@ Liability
 Liar's Pendulum
 Liberate
 Liberated Dwarf
+Liberating Combustion
 Library of Alexandria
 Library of Lat-Nam
 Library of Leng
@@ -9408,6 +9412,7 @@ Nissa's Judgment
 Nissa's Pilgrimage
 Nissa's Renewal
 Nissa's Revelation
+Nissa, Nature's Artisan
 Nissa, Sage Animist
 Nissa, Vastwood Seer
 Nissa, Vital Force
@@ -11061,6 +11066,7 @@ Rending Vines
 Rending Volley
 Renegade Demon
 Renegade Doppelganger
+Renegade Firebrand
 Renegade Freighter
 Renegade Krasis
 Renegade Tactics
@@ -14069,6 +14075,7 @@ Terra Eternal
 Terra Ravager
 Terra Stomper
 Terraformer
+Terrain Elemental
 Terrain Generator
 Terramorphic Expanse
 Terrarion
@@ -15105,6 +15112,7 @@ Vent Sentinel
 Ventifact Bottle
 Verdant Catacombs
 Verdant Confluence
+Verdant Crescendo
 Verdant Eidolon
 Verdant Embrace
 Verdant Field
