@@ -6,8 +6,8 @@ type=Creature
 subtype=Sliver
 cost={R}{W}
 pt=2/2
-ability=All Slivers have "{1}, Sacrifice SN: SN deals 1 damage to target creature or player.";\
-        All Slivers have "{1}, Sacrifice SN: Prevent the next 1 damage that would be dealt to target Sliver creature or player this turn."
+ability=All Slivers have "{1}, Sacrifice this permanent: This permanent deals 1 damage to target creature or player.";\
+        All Slivers have "{1}, Sacrifice this permanent: Prevent the next 1 damage that would be dealt to target Sliver creature or player this turn."
 static=all
 timing=main
 oracle=All Slivers have "{1}, Sacrifice this permanent: This permanent deals 1 damage to target creature or player."\nAll Slivers have "{1}, Sacrifice this permanent: Prevent the next 1 damage that would be dealt to target Sliver creature or player this turn."

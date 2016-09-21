@@ -7,6 +7,6 @@ subtype=Spirit
 cost={4}{U}{U}
 pt=5/5
 ability=Soulbond;\
-        As long as SN is paired with another creature, each of those creatures has "{1}{U}: Exile SN, then return it to the battlefield under your control."
+        As long as SN is paired with another creature, each of those creatures has "{1}{U}: Exile this creature, then return it to the battlefield under your control."
 timing=main
 oracle=Soulbond\nAs long as Deadeye Navigator is paired with another creature, each of those creatures has "{1}{U}: Exile this creature, then return it to the battlefield under your control."

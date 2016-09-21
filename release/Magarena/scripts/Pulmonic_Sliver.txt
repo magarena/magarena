@@ -6,7 +6,7 @@ type=Creature
 subtype=Sliver
 cost={3}{W}{W}
 pt=3/3
-ability=all sliver creatures have flying
+ability=All Sliver creatures have flying.
 timing=main
 static=all
 requires_groovy_code

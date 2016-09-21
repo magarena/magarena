@@ -5,7 +5,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{G}{G}
-ability=Enchanted creature gets +2/+2 and has "Whenever SN attacks, untap all lands you control.";\
+ability=Enchanted creature gets +2/+2 and has "Whenever this creature attacks, untap all lands you control.";\
         Totem armor
 timing=main
 enchant=pump,pos creature

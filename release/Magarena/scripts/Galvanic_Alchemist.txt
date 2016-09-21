@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={2}{U}
 pt=1/4
 ability=Soulbond;\
-        As long as SN is paired with another creature, each of those creatures has "{2}{U}: Untap SN."
+        As long as SN is paired with another creature, each of those creatures has "{2}{U}: Untap this creature."
 timing=main
 oracle=Soulbond\nAs long as Galvanic Alchemist is paired with another creature, each of those creatures has "{2}{U}: Untap this creature."

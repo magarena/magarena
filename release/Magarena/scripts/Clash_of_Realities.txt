@@ -4,7 +4,7 @@ value=2.828
 rarity=R
 type=Enchantment
 cost={3}{R}
-ability=All Spirits have "When SN enters the battlefield, you may have SN deal 3 damage to target non-Spirit creature.";\
-        Non-Spirit creatures have "When SN enters the battlefield, you may have SN deal 3 damage to target Spirit creature."
+ability=All Spirits have "When this permanent enters the battlefield, you may have SN deal 3 damage to target non-Spirit creature.";\
+        Non-Spirit creatures have "When this creature enters the battlefield, you may have SN deal 3 damage to target Spirit creature."
 timing=enchantment
 oracle=All Spirits have "When this permanent enters the battlefield, you may have it deal 3 damage to target non-Spirit creature."\nNon-Spirit creatures have "When this creature enters the battlefield, you may have it deal 3 damage to target Spirit creature."

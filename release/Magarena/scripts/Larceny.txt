@@ -4,6 +4,6 @@ value=3.129
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
-ability=creatures you control have "Whenever SN deals combat damage to a player, that player discards a card."
+ability=Whenever a creature you control deals combat damage to a player, that player discards a card.
 timing=enchantment
 oracle=Whenever a creature you control deals combat damage to a player, that player discards a card.

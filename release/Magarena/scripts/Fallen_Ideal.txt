@@ -7,7 +7,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 ability=Enchant creature;\
-        Enchanted creature has flying and "Sacrifice a creature: SN gets +2/+1 until end of turn.";\
+        Enchanted creature has flying and "Sacrifice a creature: This creature gets +2/+1 until end of turn.";\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,pos creature

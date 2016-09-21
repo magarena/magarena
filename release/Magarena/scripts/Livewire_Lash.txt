@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equipped creature gets +2/+0 and has "Whenever SN becomes the target of a spell, SN deals 2 damage to target creature or player.";\
+ability=Equipped creature gets +2/+0 and has "Whenever this creature becomes the target of a spell, this creature deals 2 damage to target creature or player.";\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +2/+0 and has "Whenever this creature becomes the target of a spell, this creature deals 2 damage to target creature or player."\nEquip {2}

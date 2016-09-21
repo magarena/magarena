@@ -7,6 +7,6 @@ subtype=Snake,Monk
 cost={4}{G}{G}
 pt=3/4
 ability=Other Snake creatures you control get +2/+2.;\
-        Snake creatures you control have "Whenever SN deals combat damage to a player, you may draw a card."
+        Whenever a Snake you control deals combat damage to a player, you may draw a card.
 timing=main
 oracle=Other Snake creatures you control get +2/+2.\nWhenever a Snake you control deals combat damage to a player, you may draw a card.

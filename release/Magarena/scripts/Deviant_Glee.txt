@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={B}
 ability=Enchant creature;\
-        Enchanted creature gets +2/+1 and has "{R}: SN gains trample until end of turn."
+        Enchanted creature gets +2/+1 and has "{R}: This creature gains trample until end of turn."
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+1 and has "{R}: This creature gains trample until end of turn."

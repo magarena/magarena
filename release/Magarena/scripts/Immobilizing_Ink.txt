@@ -7,7 +7,7 @@ subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.;\
-        Enchanted creature has "{1}, Discard a card: Untap SN."
+        Enchanted creature has "{1}, Discard a card: Untap this creature."
 timing=aura
 enchant=tap,creature
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nEnchanted creature has "{1}, Discard a card: Untap this creature."

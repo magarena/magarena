@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
-        Enchanted creature has "Whenever SN attacks, you may tap or untap target permanent."
+        Enchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."

@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Enchant creature;\
-        Enchanted creature gets +1/+1 and has "Whenever SN deals damage to an opponent, you may draw a card.";\
+        Enchanted creature gets +1/+1 and has "Whenever this creature deals damage to an opponent, you may draw a card.";\
         Totem armor
 timing=aura
 enchant=pump,pos creature

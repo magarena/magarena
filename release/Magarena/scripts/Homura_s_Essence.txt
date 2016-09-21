@@ -4,7 +4,7 @@ value=3.904
 rarity=R
 type=Legendary,Enchantment
 cost={4}{R}{R}
-ability=Creatures you control get +2/+2 and have flying and "{R}: SN gets +1/+0 until end of turn."
+ability=Creatures you control get +2/+2 and have flying and "{R}: This creature gets +1/+0 until end of turn."
 flip=Homura, Human Ascendant
 timing=main
 hidden

@@ -4,7 +4,7 @@ value=3.642
 rarity=R
 type=Enchantment
 cost={6}{U}
-ability=creatures your opponents control have "When SN becomes the target of a spell or ability, sacrifice it."
+ability=creatures your opponents control have "When this creature becomes the target of a spell or ability, sacrifice it."
 static=opponent
 timing=enchantment
 requires_groovy_code

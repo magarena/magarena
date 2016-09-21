@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}
 pt=2/1
-ability=all goblins have "Whenever SN deals combat damage to a player, that player discards a card."
+ability=Whenever a Goblin deals combat damage to a player, that player discards a card.
 timing=main
 oracle=Whenever a Goblin deals combat damage to a player, that player discards a card.

@@ -5,7 +5,7 @@ rarity=U
 type=Tribal,Artifact
 subtype=Wizard,Equipment
 cost={3}
-ability=Equipped creature has "Whenever you draw a card, SN gets +1/+1 and gains flying until end of turn" and "{4}: Draw a card.";\
+ability=Equipped creature has "Whenever you draw a card, this creature gets +1/+1 and gains flying until end of turn" and "{4}: Draw a card.";\
         Whenever a Wizard creature enters the battlefield, you may attach SN to RN.;\
         Equip {3}
 timing=equipment

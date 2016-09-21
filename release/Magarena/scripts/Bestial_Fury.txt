@@ -7,7 +7,7 @@ subtype=Aura
 cost={2}{R}
 ability=Enchant creature;\
         When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.;\
-        Enchanted creature has "Whenever SN becomes blocked, SN gets +4/+0 and gains trample until end of turn."
+        Whenever enchanted creature becomes blocked, RN gets +4/+0 and gains trample until end of turn.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhen Bestial Fury enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nWhenever enchanted creature becomes blocked, it gets +4/+0 and gains trample until end of turn.
