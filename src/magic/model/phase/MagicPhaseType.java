@@ -37,6 +37,7 @@ public enum MagicPhaseType {
         return this == BeginOfCombat ||
                this == DeclareAttackers ||
                this == DeclareBlockers ||
+               this == CombatDamage ||
                this == EndOfCombat;
     }
 
