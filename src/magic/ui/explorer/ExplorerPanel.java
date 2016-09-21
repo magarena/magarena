@@ -55,6 +55,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
         final JPanel rhs = new JPanel();
         rhs.setLayout(new MigLayout("flowy, insets 0, gapy 0"));
+        rhs.add(cardPoolTable.getTitleBar(), "w 100%");
         rhs.add(filterPanel, "w 100%, h " + FILTERS_PANEL_HEIGHT + "!");
         rhs.add(cardsPanel, "w 100%, h 100%");
         rhs.setOpaque(false);

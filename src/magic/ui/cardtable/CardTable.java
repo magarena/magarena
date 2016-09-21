@@ -254,6 +254,10 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         viewport.setViewPosition(new Point(viewRect.x, y));
     }
 
+    public TitleBar getTitleBar() {
+        return this.titleBar;
+    }
+    
     private class ColumnListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
