@@ -74,7 +74,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                 final MagicCardDefinition card = tableModel.getCardDef(row);
                 final boolean isRowSelected = table.isRowSelected(row);
                 if (isRowSelected) {
-                    c.setForeground(table.getSelectionForeground());
+                    c.setForeground(card.isInvalid() ? Color.LIGHT_GRAY : table.getSelectionForeground());
                 } else {
                     c.setForeground(card.isInvalid() ? Color.GRAY : defaultForeColor);
                 }
