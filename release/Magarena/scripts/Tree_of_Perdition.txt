@@ -7,8 +7,7 @@ type=Creature
 subtype=Plant
 cost={3}{B}
 pt=0/13
-ability=Defender;\
-        {T}: Exchange target opponent's life total with SN's toughness.
+ability=Defender
 timing=smain
 oracle=Defender\n{T}: Exchange target opponent's life total with Tree of Perdition's toughness.
-status=needs groovy
+requires_groovy_code
