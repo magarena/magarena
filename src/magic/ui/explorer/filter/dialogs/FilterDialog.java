@@ -27,8 +27,8 @@ public abstract class FilterDialog extends JDialog {
      */
     protected LayoutManager2 getLayoutManager() {
        return new MigLayout("flowy, gap 0, insets 0",
-                "[fill, grow]",             // column layout
-                "[fill, grow][50!, fill]"   // row layout
+                "[fill, grow]",        // column layout
+                "[fill, grow][fill]"   // row layout
         );
     }
 
