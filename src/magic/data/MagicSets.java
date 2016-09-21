@@ -2,7 +2,7 @@ package magic.data;
 
 public enum MagicSets {
 
-    KDL("Kadalesh"), //2016-09-30
+    KLD("Kaladesh"), //2016-09-30
     CN2("Conspiracy: Take the Crown"), //2016-08-26
     EMN("Eldritch Moon"), //2016-07-22
     EMA("Eternal Masters"), //2016-06-10
