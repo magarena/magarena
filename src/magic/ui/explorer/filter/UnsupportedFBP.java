@@ -54,4 +54,9 @@ class UnsupportedFBP extends FilterButtonPanel {
         return filterPane.hasSelectedCheckbox();
     }
 
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(statuses, filterPane.getSelected());
+    }
+
 }

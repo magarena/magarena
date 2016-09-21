@@ -2,6 +2,8 @@ package magic.ui.explorer.filter;
 
 import java.awt.Component;
 import java.awt.Dimension;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.BoxLayout;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
@@ -59,12 +61,23 @@ class ColorFBP extends FilterButtonPanel {
             }
             return false;
         }
+
+        private List<Integer> getSelected() {
+            final List<Integer> selected = new ArrayList<>();
+            for (int i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].isSelected()) {
+                    selected.add(i);
+                }
+            }
+            return selected;
+        }
     }
 
     // translatable strings
     private static final String _S11 = "Color";
 
     private final FilterValuesPanel valuesPanel;
+    private String filterTooltip = "";
 
     ColorFBP(IFilterListener aListener) {
         super(UiString.get(_S11));
@@ -106,6 +119,20 @@ class ColorFBP extends FilterButtonPanel {
     @Override
     protected boolean hasActiveFilterValue() {
         return valuesPanel.hasSelectedCheckbox();
+    }
+
+    @Override
+    protected String getFilterTooltip() {
+        final StringBuilder sb = new StringBuilder();
+        final List<Integer> selected = valuesPanel.getSelected();
+        if (!selected.isEmpty()) {
+            sb.append("<html>");
+            for (Integer i : selected) {
+                sb.append("• ").append(MagicColor.values()[i]).append("<br>");
+            }
+            sb.append("</html>");
+        }
+        return sb.toString();
     }
 
 }

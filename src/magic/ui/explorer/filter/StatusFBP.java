@@ -18,11 +18,13 @@ class StatusFBP extends FilterButtonPanel {
     private static final String _S25 = "Potential";
 
     private final ScrollableFilterPane filterPane;
+    private final String[] values;
 
     StatusFBP(IFilterListener aListener, boolean isDeckEditor) {
         super(UiString.get(_S4));
+        this.values = getStatusFilterValues(isDeckEditor);
         this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(getStatusFilterValues(isDeckEditor), this);
+        this.filterPane = new ScrollableFilterPane(values, this);
         setPopupContent();
     }
 
@@ -68,4 +70,8 @@ class StatusFBP extends FilterButtonPanel {
         return filterPane.hasSelectedCheckbox();
     }
 
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(values, filterPane.getSelected());
+    }
 }

@@ -4,7 +4,6 @@ import java.awt.Desktop;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
@@ -30,14 +29,6 @@ public class MagicSetDefinitions {
 
         return magicSetDef;
 
-    }
-
-    public static String[] getFilterValues() {
-        final List<String> values = new ArrayList<>();
-        for (MagicSets magicSet : MagicSets.values()) {
-            values.add(magicSet.toString().replace("_", "") + " " + magicSet.getSetName());
-        }
-        return values.toArray(new String[0]);
     }
 
     public static boolean isCardInSet(final MagicCardDefinition card, final MagicSets magicSet) {

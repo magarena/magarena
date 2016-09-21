@@ -66,4 +66,9 @@ class ManaCostFBP extends FilterButtonPanel {
         return filterPane.hasSelectedCheckbox();
     }
 
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(COST_VALUES, filterPane.getSelected());
+    }
+
 }

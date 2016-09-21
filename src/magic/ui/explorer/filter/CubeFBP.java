@@ -47,4 +47,9 @@ class CubeFBP extends FilterButtonPanel {
         return filterPane.hasSelectedCheckbox();
     }
 
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(MagicFormat.getCubeFilterLabels(), filterPane.getSelected());
+    }
+
 }

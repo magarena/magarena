@@ -67,4 +67,9 @@ class TextSearchFBP extends FilterButtonPanel {
         return isFilterActive();
     }
 
+    @Override
+    protected String getFilterTooltip() {
+        return nameTextField.getText().trim();
+    }
+
 }

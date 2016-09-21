@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -106,11 +105,6 @@ public class MagicPredefinedFormat extends MagicFormat {
 
     public String getFilename() {
         return filename;
-    }
-
-    public static String[] getFilterValues() {
-        final List<String> values = values().stream().map(MagicFormat::getName).collect(Collectors.toList());
-        return values.toArray(new String[0]);
     }
 
     private void loadMagicFormatFile() {

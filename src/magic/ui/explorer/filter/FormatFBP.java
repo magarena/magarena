@@ -1,5 +1,6 @@
 package magic.ui.explorer.filter;
 
+import java.util.stream.Collectors;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import magic.data.MagicFormat;
@@ -14,12 +15,22 @@ class FormatFBP extends FilterButtonPanel {
     private static final String _S7 = "Format";
 
     private final ScrollableFilterPane filterPane;
+    private final String[] values;
 
     FormatFBP(IFilterListener aListener) {
         super(UiString.get(_S7));
+        this.values = getFilterValues();
         this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(MagicPredefinedFormat.getFilterValues(), this);
+        this.filterPane = new ScrollableFilterPane(values, this);
         setPopupContent();
+    }
+
+
+    private String[] getFilterValues() {
+        return MagicPredefinedFormat.values().stream()
+                .map(MagicFormat::getName)
+                .collect(Collectors.toList())
+                .toArray(new String[0]);
     }
 
     @Override
@@ -39,13 +50,17 @@ class FormatFBP extends FilterButtonPanel {
 
     @Override
     protected boolean isCardValid(final MagicCardDefinition card, final int i) {
-        final MagicFormat fmt = MagicPredefinedFormat.values().get(i);
-        return fmt.isCardLegal(card);
+        return MagicPredefinedFormat.values().get(i).isCardLegal(card);
     }
 
     @Override
     protected boolean hasActiveFilterValue() {
         return filterPane.hasSelectedCheckbox();
+    }
+
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(values, filterPane.getSelected());
     }
 
 }

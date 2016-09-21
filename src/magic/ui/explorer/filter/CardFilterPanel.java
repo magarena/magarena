@@ -41,8 +41,6 @@ public class CardFilterPanel extends TexturedPanel
 
     private static List<MagicCardDefinition> cardPool;
 
-    private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
-
     private class ResetButton extends JButton {
         ResetButton() {
             super(UiString.get(_S15));
@@ -154,12 +152,10 @@ public class CardFilterPanel extends TexturedPanel
     }
 
     private void resetFilters() {
-        disableUpdate = true; // ignore any events caused by resetting filters
         for (FilterButtonPanel filter : filterButtons) {
             filter.reset();
         }
-        disableUpdate = false;
-        listener.refreshTable();
+        filterChanged();
     }
 
     public int getPlayableCardCount() {
@@ -177,8 +173,6 @@ public class CardFilterPanel extends TexturedPanel
 
     @Override
     public void filterChanged() {
-        if (!disableUpdate) {
-            listener.refreshTable();
-        }
+        listener.refreshTable();
     }
 }

@@ -13,11 +13,13 @@ class RarityFBP extends FilterButtonPanel {
     private static final String _S14 = "Rarity";
 
     private final ScrollableFilterPane filterPane;
+    private final String[] values;
 
     RarityFBP(IFilterListener aListener) {
         super(UiString.get(_S14));
+        this.values = MagicRarity.getDisplayNames();
         this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(MagicRarity.getDisplayNames(), this);
+        this.filterPane = new ScrollableFilterPane(values, this);
         setPopupContent();
     }
 
@@ -49,6 +51,11 @@ class RarityFBP extends FilterButtonPanel {
     @Override
     protected boolean hasActiveFilterValue() {
         return filterPane.hasSelectedCheckbox();
+    }
+
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(values, filterPane.getSelected());
     }
 
 }

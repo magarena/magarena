@@ -23,17 +23,19 @@ class TypeFBP extends FilterButtonPanel {
     private static final String _S24 = "Split";
 
     private final ScrollableFilterPane filterPane;
+    private final Object[] values;
 
     TypeFBP(IFilterListener aListener, boolean isDeckEditor) {
         super(UiString.get(_S8));
+        this.values = getTypeFilterValues(isDeckEditor);
         this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(getTypeFilterValues(isDeckEditor), this);
+        this.filterPane = new ScrollableFilterPane(values, this);
         setPopupContent();
     }
 
-    private Object[] getTypeFilterValues(boolean isDeckEditor) {
+    private String[] getTypeFilterValues(boolean isDeckEditor) {
 
-        final List<Object> types = MagicType.FILTER_TYPES.stream()
+        final List<String> types = MagicType.FILTER_TYPES.stream()
             .map(MagicType::getDisplayName)
             .collect(Collectors.toList());
 
@@ -46,7 +48,7 @@ class TypeFBP extends FilterButtonPanel {
             }
             types.add(UiString.get(_S24));
         }
-        return types.toArray();
+        return types.toArray(new String[types.size()]);
     }
 
     @Override
@@ -84,6 +86,11 @@ class TypeFBP extends FilterButtonPanel {
     @Override
     protected boolean hasActiveFilterValue() {
         return filterPane.hasSelectedCheckbox();
+    }
+
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(values, filterPane.getSelected());
     }
 
 }

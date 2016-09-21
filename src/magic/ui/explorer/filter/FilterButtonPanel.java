@@ -7,6 +7,7 @@ import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
@@ -54,12 +55,21 @@ abstract class FilterButtonPanel extends JPanel
                 radioButtons[i] = rb;
             }
         }
+
+        private String getSelectedOptionText() {
+            for (JRadioButton rb : radioButtons) {
+                if (rb.isSelected()) {
+                    return rb.getText();
+                }
+            }
+            throw new IndexOutOfBoundsException();
+        }
     }
 
     // translatable strings
-    private static final String _S1 = "Match any selected";
-    private static final String _S2 = "Match all selected";
-    private static final String _S3 = "Exclude selected";
+    private static final String _S1 = "Match any";
+    private static final String _S2 = "Match all";
+    private static final String _S3 = "Exclude";
 
     static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     protected static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
@@ -70,12 +80,16 @@ abstract class FilterButtonPanel extends JPanel
         UiString.get(_S3)
     };
 
+    // prevents multiple updates of the cards list when resetting multiple
+    // filters values at once via reset().
+    private boolean ignoreFilterChanges;
+
     private final ClickPreventer clickPreventer = new ClickPreventer();
     private FilterButton filterButton;
+    private final SearchOptionsPanel searchOptionsPanel;
+
     protected IFilterListener filterListener;
-
     protected JDialog popupDialog;
-
     protected JRadioButton[] radioButtons;
 
     protected abstract JCheckBox[] getCheckboxes();
@@ -83,6 +97,7 @@ abstract class FilterButtonPanel extends JPanel
 
     // CTR
     FilterButtonPanel(String title, String tooltip) {
+        this.searchOptionsPanel = new SearchOptionsPanel(this, hideSearchOptionsAND());
         createFilterButton(title, tooltip);
         createFilterPopupDialog();
         setEscapeKeyAction();
@@ -97,6 +112,7 @@ abstract class FilterButtonPanel extends JPanel
 
     // CTR
     public FilterButtonPanel() {
+        this.searchOptionsPanel = null;
         setOpaque(false);
     }
 
@@ -166,11 +182,14 @@ abstract class FilterButtonPanel extends JPanel
     }
 
     void reset() {
+        ignoreFilterChanges = true;
         for (JCheckBox checkbox : getCheckboxes()) {
             checkbox.setSelected(false);
         }
         radioButtons[0].setSelected(true);
+        filterButton.setToolTipText(null);
         hidePopup();
+        ignoreFilterChanges = false;
     }
 
     private boolean containsCard(MagicCardDefinition cardDef) {
@@ -238,15 +257,39 @@ abstract class FilterButtonPanel extends JPanel
         popupDialog.setSize(getPopupDialogSize());
         popupDialog.setLayout(getPopupDialogLayout());
         popupDialog.add(getFilterValuesComponent());
-        popupDialog.add(new SearchOptionsPanel(getSearchOptionsListener(), hideSearchOptionsAND()));
+        popupDialog.add(searchOptionsPanel);
     }
 
     abstract protected boolean hasActiveFilterValue();
+    
+    protected String getFilterTooltip() {
+        return null;
+    }
+
+    private String getSearchOptionText() {
+        return searchOptionsPanel.getSelectedOptionText();
+    }
+
+    protected String getFilterTooltip(Object[] values, List<Integer> selected) {
+        final StringBuilder sb = new StringBuilder();
+        if (!selected.isEmpty()) {
+            sb.append("<html><b><p>").append(getSearchOptionText()).append("</p></b>");
+            for (Integer i : selected) {
+                sb.append("• ").append(values[i]).append("<br>");
+            }
+            sb.append("</html>");
+        }
+        return sb.toString();
+    }
 
     @Override
     public void filterChanged() {
-        filterListener.filterChanged();
-        filterButton.setActiveFlag(hasActiveFilterValue());
+        if (!ignoreFilterChanges) {
+            filterListener.filterChanged();
+            filterButton.setActiveFlag(hasActiveFilterValue());
+            String tooltip = getFilterTooltip();
+            filterButton.setToolTipText(tooltip.isEmpty() ? null : tooltip);
+        }
     }
     
 }

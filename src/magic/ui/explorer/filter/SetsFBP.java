@@ -1,5 +1,7 @@
 package magic.ui.explorer.filter;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import magic.data.MagicSetDefinitions;
@@ -16,12 +18,22 @@ class SetsFBP extends FilterButtonPanel {
     private static final String _S1 = "Set";
 
     private final ScrollableFilterPane filterPane;
+    private final String[] values;
 
     SetsFBP(IFilterListener aListener) {
         super(UiString.get(_S1));
+        this.values = getFilterValues();
         this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(MagicSetDefinitions.getFilterValues(), this);
+        this.filterPane = new ScrollableFilterPane(values, this);
         setPopupContent();
+    }
+
+    private String[] getFilterValues() {
+        final List<String> values = new ArrayList<>();
+        for (MagicSets magicSet : MagicSets.values()) {
+            values.add(magicSet.toString().replace("_", "") + " " + magicSet.getSetName());
+        }
+        return values.toArray(new String[0]);
     }
 
     @Override
@@ -47,6 +59,11 @@ class SetsFBP extends FilterButtonPanel {
     @Override
     protected boolean hasActiveFilterValue() {
         return filterPane.hasSelectedCheckbox();
+    }
+
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(values, filterPane.getSelected());
     }
 
 }

@@ -1,6 +1,8 @@
 package magic.ui.explorer.filter;
 
 import java.awt.Component;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Stream;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
@@ -52,6 +54,16 @@ class ScrollableFilterPane extends JScrollPane {
         JCheckBox[] getCheckboxes() {
             return checkboxes;
         }
+
+        private List<Integer> getSelected() {
+            final List<Integer> selected = new ArrayList<>();
+            for (int i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].isSelected()) {
+                    selected.add(i);
+                }
+            }
+            return selected;
+        }
     }
 
     private final FilterPanel filterPanel;
@@ -88,4 +100,7 @@ class ScrollableFilterPane extends JScrollPane {
         return false;
     }
 
+    List<Integer> getSelected() {
+        return filterPanel.getSelected();
+    }
 }

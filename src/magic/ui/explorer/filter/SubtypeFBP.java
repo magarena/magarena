@@ -1,6 +1,7 @@
 package magic.ui.explorer.filter;
 
 import java.util.EnumSet;
+import java.util.stream.Stream;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import magic.model.MagicCardDefinition;
@@ -18,12 +19,13 @@ class SubtypeFBP extends FilterButtonPanel {
     SubtypeFBP(IFilterListener aListener) {
         super(UiString.get(_S13));
         this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(
-                EnumSet.allOf(MagicSubType.class).stream()
-                .map(s -> s.name().replace('_', ' ')),
-                this
-        );
+        this.filterPane = new ScrollableFilterPane(getValuesStream(), this);
         setPopupContent();
+    }
+
+    private Stream<String> getValuesStream() {
+        return EnumSet.allOf(MagicSubType.class).stream()
+                .map(s -> s.name().replace('_', ' '));
     }
 
     @Override
@@ -49,6 +51,11 @@ class SubtypeFBP extends FilterButtonPanel {
     @Override
     protected boolean hasActiveFilterValue() {
         return filterPane.hasSelectedCheckbox();
+    }
+
+    @Override
+    protected String getFilterTooltip() {
+        return getFilterTooltip(getValuesStream().toArray(), filterPane.getSelected());
     }
 
 }
