@@ -4,6 +4,6 @@ value=4.207
 rarity=R
 type=Enchantment
 cost={2}{W}
-ability=Nonwhite creatures with power 3 or greater have "SN doesn't untap during your untap step."
+ability=Nonwhite creatures with power 3 or greater don't untap during their controllers' untap steps.
 timing=enchantment
 oracle=Nonwhite creatures with power 3 or greater don't untap during their controllers' untap steps.

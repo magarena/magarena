@@ -5,6 +5,6 @@ rarity=U
 type=Enchantment
 cost={3}{U}{U}
 ability=When SN enters the battlefield, tap all red creatures.;\
-        Red creatures have "SN doesn't untap during your untap step."
+        Red creatures don't untap during their controllers' untap steps.
 timing=enchantment
 oracle=When Wrath of Marit Lage enters the battlefield, tap all red creatures.\nRed creatures don't untap during their controllers' untap steps.

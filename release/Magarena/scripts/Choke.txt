@@ -4,6 +4,6 @@ value=3.875
 rarity=U
 type=Enchantment
 cost={2}{G}
-ability=Islands have "SN doesn't untap during your untap step."
+ability=Islands don't untap during their controllers' untap steps.
 timing=enchantment
 oracle=Islands don't untap during their controllers' untap steps.

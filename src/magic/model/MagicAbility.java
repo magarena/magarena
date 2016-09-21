@@ -1439,7 +1439,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genABStatic(filter, abList));
         }
     },
-    LordGainCan(ARG.WORDRUN + " (?<any>(can|can't|doesn't|attack(s)?) .+)", 0) {
+    LordGainCan(ARG.WORDRUN + " (?<any>(can|can't|doesn't|don't untap|attack(s)?) .+)", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));

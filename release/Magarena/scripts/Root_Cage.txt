@@ -4,6 +4,6 @@ value=1.452
 rarity=U
 type=Enchantment
 cost={1}{G}
-ability=Mercenaries have "SN doesn't untap during your untap step."
+ability=Mercenaries don't untap during their controllers' untap steps.
 timing=enchantment
 oracle=Mercenaries don't untap during their controllers' untap steps.

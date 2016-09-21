@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant
 cost={3}{W}
 pt=3/3
-ability=Creatures with power 3 or greater have "SN doesn't untap during your untap step."
+ability=Creatures with power 3 or greater don't untap during their controllers' untap steps.
 timing=main
 oracle=Creatures with power 3 or greater don't untap during their controllers' untap steps.

@@ -7,7 +7,7 @@ subtype=Angel
 cost={1}{G}{W}{U}
 pt=3/4
 ability=Flying, vigilance;\
-        Creatures have "SN doesn't untap during your untap step."
+        Creatures don't untap during their controllers' untap steps.
 timing=main
 requires_groovy_code
 oracle=Flying, vigilance\nPlayers can't untap more than one creature during their untap steps.

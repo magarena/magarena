@@ -4,7 +4,7 @@ value=4.378
 rarity=R
 type=Enchantment
 cost={2}{U}
-ability=all creatures have "SN doesn't untap during your untap step.";\
+ability=Creatures don't untap during their controllers' untap steps.;\
         Whenever a creature enters the battlefield, untap all creatures.
 timing=enchantment
 oracle=Creatures don't untap during their controllers' untap steps.\nWhenever a creature enters the battlefield, untap all creatures.
