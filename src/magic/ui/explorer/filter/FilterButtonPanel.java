@@ -5,13 +5,9 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.Timer;
-import java.util.TimerTask;
 import javax.swing.AbstractAction;
-import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
@@ -19,19 +15,46 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JRootPane;
-import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
-import magic.ui.ScreenController;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-abstract class FilterButtonPanel extends JPanel implements ActionListener {
+abstract class FilterButtonPanel extends JPanel
+    implements IFilterListener {
+
+    /**
+     * Container panel for the search options radio buttons.
+     */
+    protected class SearchOptionsPanel extends JPanel {
+
+        SearchOptionsPanel(IFilterListener aListener, boolean hideAND) {
+            setLayout(new MigLayout("insets 0, gapy 0, flowy"));
+            createRadioButtons(aListener, hideAND);
+            setOpaque(false);
+        }
+
+        private void createRadioButtons(IFilterListener aListener, boolean hideAND) {
+            radioButtons = new JRadioButton[FILTER_CHOICES.length];
+            final ButtonGroup bg = new ButtonGroup();
+            for (int i = 0; i < FILTER_CHOICES.length; i++) {
+                final JRadioButton rb = new JRadioButton(FILTER_CHOICES[i]);
+                rb.addActionListener((e) -> { aListener.filterChanged(); });
+                rb.setOpaque(false);
+                rb.setForeground(TEXT_COLOR);
+                rb.setFocusPainted(true);
+                rb.setAlignmentX(Component.LEFT_ALIGNMENT);
+                rb.setSelected(i == 0);
+                rb.setVisible(i != 1 || (i == 1 && !hideAND));
+                bg.add(rb);
+                add(rb, "hidemode 3");
+                radioButtons[i] = rb;
+            }
+        }
+    }
 
     // translatable strings
     private static final String _S1 = "Match any selected";
@@ -39,7 +62,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     private static final String _S3 = "Exclude selected";
 
     static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
-    private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
+    protected static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
 
     protected final String[] FILTER_CHOICES = {
         UiString.get(_S1),
@@ -47,49 +70,69 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         UiString.get(_S3)
     };
 
-    private final FilterButton filterButton;
-    protected final JDialog dialog;
-    private boolean popupJustToggled = false;
+    private final ClickPreventer clickPreventer = new ClickPreventer();
+    private FilterButton filterButton;
+    protected IFilterListener filterListener;
 
-    protected JCheckBox[] checkboxes;
+    protected JDialog popupDialog;
+
     protected JRadioButton[] radioButtons;
 
+    protected abstract JCheckBox[] getCheckboxes();
     protected abstract boolean isCardValid(final MagicCardDefinition card, final int i);
 
+    // CTR
     FilterButtonPanel(String title, String tooltip) {
-
-        this.filterButton = new FilterButton(title, this);
-        this.filterButton.setToolTipText(tooltip);
-        this.filterButton.setVisible(!title.isEmpty());
-
-        this.dialog = new PopupDialog();
-        this.dialog.addWindowFocusListener(new WindowAdapter() {
-            private final Timer timer = new Timer();
-            @Override
-            public void windowLostFocus(WindowEvent e) {
-                popupJustToggled = true;
-                // don't allow clicks on hide button to reshow popup
-                // immediately by disabling response for < 1 s
-                timer.schedule(new ResponsePreventer(), 300);
-                if (dialog.isVisible()) {
-                    hidePopup();
-                }
-            }
-        });
+        createFilterButton(title, tooltip);
+        createFilterPopupDialog();
         setEscapeKeyAction();
-
-        setLayout(new MigLayout("insets 0, fill, hidemode 3", "fill", "fill"));
-        add(filterButton);
-
+        setLayout();
         setOpaque(false);
     }
 
+    // CTR
     FilterButtonPanel(String title) {
         this(title, null);
     }
 
+    // CTR
+    public FilterButtonPanel() {
+        setOpaque(false);
+    }
+
+    private void setLayout() {
+        setLayout(new MigLayout("insets 0, fill, hidemode 3", "fill", "fill"));
+        add(filterButton);
+    }
+
+    private void createFilterPopupDialog() {
+        this.popupDialog = new FilterPopupDialog();
+        this.popupDialog.addWindowFocusListener(new WindowAdapter() {
+            @Override
+            public void windowLostFocus(WindowEvent e) {
+                clickPreventer.start();
+                if (popupDialog.isVisible()) {
+                    hidePopup();
+                }
+            }
+        });
+    }
+
+    private void createFilterButton(String title, String tooltip) {
+        filterButton = new FilterButton(title, tooltip);
+        filterButton.addActionListener((e) -> {
+            doFilterButtonClickedAction();
+        });
+    }
+
+    private void doFilterButtonClickedAction() {
+        if (clickPreventer.isNotRunning()) {
+            showPopup();
+        }
+    }
+
     private void setEscapeKeyAction() {
-        JRootPane root = dialog.getRootPane();
+        JRootPane root = popupDialog.getRootPane();
         root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
 
         @SuppressWarnings("serial")
@@ -103,36 +146,19 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     }
 
     private void showPopup() {
-        // set location relative to button
-        final Point location = this.getLocation();
-        SwingUtilities.convertPointToScreen(location, this.getParent());
-        location.translate(0, this.getHeight());
-        dialog.setLocation(location);
-        dialog.setVisible(true);
+        if (!popupDialog.isVisible()) {
+            // set location relative to button
+            final Point location = this.getLocation();
+            SwingUtilities.convertPointToScreen(location, this.getParent());
+            location.translate(0, this.getHeight());
+            popupDialog.setLocation(location);
+            popupDialog.setVisible(true);
+        }
     }
 
     protected void hidePopup() {
-        dialog.setVisible(false);
+        popupDialog.setVisible(false);
         filterButton.setActiveFlag(isFilterActive());
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (popupJustToggled) {
-            // focus event just hid popup -> this event is probably from clicking on the hide button -> don't do anything
-            return;
-        }
-        // set popup visibility
-        if (!dialog.isVisible()) {
-            showPopup();
-        } else {
-            // hide - taken care of by focusLost
-            hidePopup();
-        }
-    }
-
-    JCheckBox[] getCheckboxes() {
-        return checkboxes;
     }
 
     JRadioButton[] getFilterChoices() {
@@ -140,7 +166,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     }
 
     void reset() {
-        for (JCheckBox checkbox : checkboxes) {
+        for (JCheckBox checkbox : getCheckboxes()) {
             checkbox.setSelected(false);
         }
         radioButtons[0].setSelected(true);
@@ -153,8 +179,8 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         boolean resultOR = false;
         boolean resultAND = true;
 
-        for (int i=0; i < checkboxes.length; i++) {
-            if (checkboxes[i].isSelected()) {
+        for (int i=0; i < getCheckboxes().length; i++) {
+            if (getCheckboxes()[i].isSelected()) {
                 somethingSelected = true;
                 if (isCardValid(cardDef, i)) {
                     resultOR = true;
@@ -179,7 +205,7 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
     }
 
     protected boolean isFilterActive() {
-        for (JCheckBox cb : checkboxes) {
+        for (JCheckBox cb : getCheckboxes()) {
             if (cb.isSelected()) {
                 return true;
             }
@@ -188,89 +214,39 @@ abstract class FilterButtonPanel extends JPanel implements ActionListener {
         return false;
     }
 
-    class PopupDialog extends JDialog {
-
-        private static final int STARTING_HEIGHT = 300;
-        private static final int STARTING_WIDTH = 260;
-
-        public PopupDialog() {
-            super(ScreenController.getMainFrame());
-            setUndecorated(true);
-            setSize(STARTING_WIDTH, STARTING_HEIGHT);
-        }
+    protected MigLayout getPopupDialogLayout() {
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][]");
     }
 
-    class DialogContentPanel extends TexturedPanel {
-        public DialogContentPanel() {
-            setBorder(FontsAndBorders.UP_BORDER);
-            setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-        }
+    protected JComponent getFilterValuesComponent() {
+        return new JPanel();
     }
 
-    private class ResponsePreventer extends TimerTask {
-        @Override
-        public void run() {
-            popupJustToggled = false;
-        }
+    protected Dimension getPopupDialogSize() {
+        return new Dimension(260, 300);
     }
 
-    protected void setPopupContent(
-        final String migLayout,
-        final Object[] checkboxValues,
-        final boolean hideAND,
-        final ActionListener aListener) {
-
-        this.radioButtons = new JRadioButton[FILTER_CHOICES.length];
-
-        final JPanel dialogPanel = new DialogContentPanel();
-
-        final JPanel checkboxesPanel = new JPanel(new MigLayout(migLayout));
-        checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        checkboxesPanel.setOpaque(false);
-
-        // add checkboxes
-        checkboxes = new JCheckBox[checkboxValues.length];
-        for (int i = 0; i < checkboxValues.length; i++) {
-            checkboxes[i] = new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
-            checkboxes[i].addActionListener(aListener);
-            checkboxes[i].setOpaque(false);
-            checkboxes[i].setForeground(TEXT_COLOR);
-            checkboxes[i].setFocusPainted(true);
-            checkboxes[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-            checkboxesPanel.add(checkboxes[i]);
-        }
-
-        final JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
-        scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT);
-        scrollPane.setBorder(FontsAndBorders.DOWN_BORDER);
-        scrollPane.setOpaque(false);
-        scrollPane.getViewport().setOpaque(false);
-        scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);
-        scrollPane.getVerticalScrollBar().setUnitIncrement(18);
-        dialogPanel.add(scrollPane);
-
-        final ButtonGroup bg = new ButtonGroup();
-        for (int i = 0; i < FILTER_CHOICES.length; i++) {
-            radioButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
-            radioButtons[i].addActionListener(aListener);
-            radioButtons[i].setOpaque(false);
-            radioButtons[i].setForeground(TEXT_COLOR);
-            radioButtons[i].setFocusPainted(true);
-            radioButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-            if (i == 0) {
-                radioButtons[0].setSelected(true);
-            } else if (i == 1) {
-                radioButtons[1].setVisible(!hideAND);
-            }
-            bg.add(radioButtons[i]);
-            dialogPanel.add(radioButtons[i]);
-        }
-
-        dialog.add(dialogPanel);
+    protected IFilterListener getSearchOptionsListener() {
+        return filterListener;
     }
 
-    protected void setPopupContent(Object[] filterValues, boolean b, ActionListener aListener) {
-        setPopupContent("flowy, insets 2", filterValues, b, aListener);
+    protected boolean hideSearchOptionsAND() {
+        return false;
     }
 
+    protected void setPopupContent() {
+        popupDialog.setSize(getPopupDialogSize());
+        popupDialog.setLayout(getPopupDialogLayout());
+        popupDialog.add(getFilterValuesComponent());
+        popupDialog.add(new SearchOptionsPanel(getSearchOptionsListener(), hideSearchOptionsAND()));
+    }
+
+    abstract protected boolean hasActiveFilterValue();
+
+    @Override
+    public void filterChanged() {
+        filterListener.filterChanged();
+        filterButton.setActiveFlag(hasActiveFilterValue());
+    }
+    
 }

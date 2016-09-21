@@ -1,10 +1,7 @@
-package magic.ui;
+package magic.ui.explorer.filter;
 
-import magic.translate.UiString;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -13,11 +10,13 @@ import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import magic.translate.UiString;
 import magic.ui.widget.*;
 import magic.ui.widget.TextPrompt.Show;
 
 @SuppressWarnings("serial")
-public class CardFilterTextField extends JTextField implements DocumentListener {
+class CardFilterTextField extends JTextField
+        implements DocumentListener {
 
     // translatable strings
     private static final String _S1 = "Search text...";
@@ -27,11 +26,11 @@ public class CardFilterTextField extends JTextField implements DocumentListener 
     private Timer searchTextTimer;
     private final Font defaultFont;
     private final Font searchingFont;
-    private final ICardFilterPanelListener listener;
+    private final IFilterListener listener;
 
     private final List<String> searchTerms = new ArrayList<>();
 
-    public CardFilterTextField(final ICardFilterPanelListener aListener) {
+    CardFilterTextField(final IFilterListener aListener) {
 
         this.listener = aListener;
         defaultFont = getFont();
@@ -65,13 +64,10 @@ public class CardFilterTextField extends JTextField implements DocumentListener 
 
     private void createSearchTextTimer() {
         if (searchTextTimer == null) {
-            searchTextTimer = new Timer(SEARCH_TIMER_DELAY, new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    searchTextTimer.stop();
-                    listener.refreshTable();
-                    setFont(defaultFont);
-                }
+            searchTextTimer = new Timer(SEARCH_TIMER_DELAY, (e) -> {
+                searchTextTimer.stop();
+                listener.filterChanged();
+                setFont(defaultFont);
             });
         }
     }
@@ -107,7 +103,7 @@ public class CardFilterTextField extends JTextField implements DocumentListener 
         }
     }
 
-    public List<String> getSearchTerms() {
+    List<String> getSearchTerms() {
         return searchTerms;
     }
 

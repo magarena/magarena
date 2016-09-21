@@ -1,6 +1,7 @@
 package magic.ui.explorer.filter;
 
-import java.awt.event.ActionListener;
+import javax.swing.JCheckBox;
+import javax.swing.JComponent;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
@@ -11,15 +12,39 @@ class CubeFBP extends FilterButtonPanel {
     // translatable strings
      private static final String _S6 = "Cube";
 
-    CubeFBP(ActionListener aListener) {
+    private final ScrollableFilterPane filterPane;
+
+    CubeFBP(IFilterListener aListener) {
         super(UiString.get(_S6));
-        setPopupContent(MagicFormat.getCubeFilterLabels(), false, aListener);
+        this.filterListener = aListener;
+        this.filterPane = new ScrollableFilterPane(MagicFormat.getCubeFilterLabels(), this);
+        setPopupContent();
+    }
+
+    @Override
+    protected IFilterListener getSearchOptionsListener() {
+        return filterListener;
+    }
+
+    @Override
+    protected JCheckBox[] getCheckboxes() {
+        return filterPane.getCheckboxes();
+    }
+
+    @Override
+    protected JComponent getFilterValuesComponent() {
+        return filterPane;
     }
 
     @Override
     protected boolean isCardValid(final MagicCardDefinition card, final int i) {
         final MagicFormat fmt = MagicFormat.getCubeFilterFormats().get(i);
         return fmt.isCardLegal(card);
+    }
+
+    @Override
+    protected boolean hasActiveFilterValue() {
+        return filterPane.hasSelectedCheckbox();
     }
 
 }

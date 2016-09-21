@@ -1,8 +1,9 @@
 package magic.ui.explorer.filter;
 
-import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.swing.JCheckBox;
+import javax.swing.JComponent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicType;
 import magic.translate.StringContext;
@@ -21,14 +22,13 @@ class TypeFBP extends FilterButtonPanel {
     private static final String _S23 = "Hidden";
     private static final String _S24 = "Split";
 
-    TypeFBP(ActionListener aListener, boolean isDeckEditor) {
+    private final ScrollableFilterPane filterPane;
+
+    TypeFBP(IFilterListener aListener, boolean isDeckEditor) {
         super(UiString.get(_S8));
-        setPopupContent(
-            "flowy, wrap 9, insets 2, gapy 6, gapx 20",
-            getTypeFilterValues(isDeckEditor),
-            false,
-            aListener
-        );
+        this.filterListener = aListener;
+        this.filterPane = new ScrollableFilterPane(getTypeFilterValues(isDeckEditor), this);
+        setPopupContent();
     }
 
     private Object[] getTypeFilterValues(boolean isDeckEditor) {
@@ -50,6 +50,21 @@ class TypeFBP extends FilterButtonPanel {
     }
 
     @Override
+    protected IFilterListener getSearchOptionsListener() {
+        return filterListener;
+    }
+
+    @Override
+    protected JCheckBox[] getCheckboxes() {
+        return filterPane.getCheckboxes();
+    }
+
+    @Override
+    protected JComponent getFilterValuesComponent() {
+        return filterPane;
+    }
+
+    @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
         if (getCheckboxes()[i].getText().equals(UiString.get(_S20))) {
             return card.isToken();
@@ -64,6 +79,11 @@ class TypeFBP extends FilterButtonPanel {
         } else {
             return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
         }
+    }
+
+    @Override
+    protected boolean hasActiveFilterValue() {
+        return filterPane.hasSelectedCheckbox();
     }
 
 }

@@ -1,13 +1,10 @@
 package magic.ui.explorer.filter;
 
+import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
 class EmptyFBP extends FilterButtonPanel {
-
-    EmptyFBP() {
-        super("");
-    }
 
     @Override
     boolean doesNotInclude(MagicCardDefinition cardDefinition) {
@@ -24,4 +21,13 @@ class EmptyFBP extends FilterButtonPanel {
         // not applicable.
     }
 
+    @Override
+    protected JCheckBox[] getCheckboxes() {
+        throw new UnsupportedOperationException("Not applicable.");
+    }
+
+    @Override
+    protected boolean hasActiveFilterValue() {
+        throw new UnsupportedOperationException("Not applicable.");
+    }
 }

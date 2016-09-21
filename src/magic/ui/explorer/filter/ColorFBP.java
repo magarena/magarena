@@ -1,80 +1,111 @@
 package magic.ui.explorer.filter;
 
 import java.awt.Component;
-import java.awt.event.ActionListener;
+import java.awt.Dimension;
 import javax.swing.BoxLayout;
-import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
+import magic.ui.MagicUI;
 import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 class ColorFBP extends FilterButtonPanel {
 
+    private class FilterValuesPanel extends JPanel {
+
+        private final JCheckBox[] checkboxes;
+
+        FilterValuesPanel() {
+            checkboxes = new JCheckBox[MagicColor.values().length];
+            setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+            setBorder(FontsAndBorders.DOWN_BORDER);
+            setOpaque(false);
+            for (int i = 0; i < MagicColor.NR_COLORS; i++) {
+                final MagicColor color = MagicColor.values()[i];
+                final JPanel colorPanel = new JPanel();
+                colorPanel.setOpaque(false);
+                final JCheckBox cb = new JCheckBox("", false);
+                cb.setOpaque(false);
+                cb.setFocusPainted(true);
+                cb.setAlignmentY(Component.CENTER_ALIGNMENT);
+                cb.setActionCommand(Character.toString(color.getSymbol()));
+                cb.addActionListener((e) -> {
+                    MagicUI.showBusyCursorFor(cb);
+                    ColorFBP.this.filterChanged();
+                    MagicUI.showDefaultCursorFor(cb);
+                });
+                checkboxes[i] = cb;
+                colorPanel.add(checkboxes[i]);
+                colorPanel.add(new JLabel(MagicImages.getIcon(color.getManaType())));
+                add(colorPanel);
+            }
+        }
+
+        private JCheckBox[] getCheckboxes() {
+            return checkboxes;
+        }
+
+        private boolean hasSelectedCheckbox() {
+            for (JCheckBox cb : checkboxes) {
+                if (cb.isSelected()) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
     // translatable strings
     private static final String _S11 = "Color";
 
-    ColorFBP(ActionListener aListener) {
+    private final FilterValuesPanel valuesPanel;
+
+    ColorFBP(IFilterListener aListener) {
         super(UiString.get(_S11));
-        doLayoutColorPanel(aListener);
+        this.filterListener = aListener;
+        this.valuesPanel = new FilterValuesPanel();
+        setPopupContent();
     }
 
-    private void doLayoutColorPanel(ActionListener aListener) {
+    @Override
+    protected JCheckBox[] getCheckboxes() {
+        return valuesPanel.getCheckboxes();
+    }
 
-        final JPanel dialogPanel = new DialogContentPanel();
+    @Override
+    protected JComponent getFilterValuesComponent() {
+        return valuesPanel;
+    }
 
-        checkboxes = new JCheckBox[MagicColor.NR_COLORS];
-        final JPanel colorsPanel = new JPanel();
-        colorsPanel.setLayout(new BoxLayout(colorsPanel, BoxLayout.X_AXIS));
-        colorsPanel.setBorder(FontsAndBorders.DOWN_BORDER);
-        colorsPanel.setOpaque(false);
-        dialog.setSize(280, 90);
-        for (int i = 0; i < MagicColor.NR_COLORS; i++) {
-            final MagicColor color = MagicColor.values()[i];
-            final JPanel colorPanel = new JPanel();
-            colorPanel.setOpaque(false);
-            checkboxes[i] = new JCheckBox("", false);
-            checkboxes[i].addActionListener(aListener);
-            checkboxes[i].setOpaque(false);
-            checkboxes[i].setFocusPainted(true);
-            checkboxes[i].setAlignmentY(Component.CENTER_ALIGNMENT);
-            checkboxes[i].setActionCommand(Character.toString(color.getSymbol()));
-            colorPanel.add(checkboxes[i]);
-            colorPanel.add(new JLabel(MagicImages.getIcon(color.getManaType())));
-            colorsPanel.add(colorPanel);
-        }
-        colorsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        dialogPanel.add(colorsPanel);
+    @Override
+    protected Dimension getPopupDialogSize() {
+        return new Dimension(280, 90);
+    }
 
-        final ButtonGroup colorFilterBg = new ButtonGroup();
-        radioButtons = new JRadioButton[FILTER_CHOICES.length];
-        for (int i = 0; i < FILTER_CHOICES.length; i++) {
-            radioButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
-            radioButtons[i].addActionListener(aListener);
-            radioButtons[i].setOpaque(false);
-            radioButtons[i].setForeground(TEXT_COLOR);
-            radioButtons[i].setFocusPainted(true);
-            radioButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-            if (i == 0) {
-                radioButtons[i].setSelected(true);
-            }
-            colorFilterBg.add(radioButtons[i]);
-            dialogPanel.add(radioButtons[i]);
-        }
+    @Override
+    protected IFilterListener getSearchOptionsListener() {
+        return filterListener;
+    }
 
-        dialog.add(dialogPanel);
-
+    @Override
+    protected boolean hideSearchOptionsAND() {
+        return false;
     }
 
     @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
         return card.hasColor(MagicColor.values()[i]);
+    }
+
+    @Override
+    protected boolean hasActiveFilterValue() {
+        return valuesPanel.hasSelectedCheckbox();
     }
 
 }

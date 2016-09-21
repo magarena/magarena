@@ -1,27 +1,27 @@
 package magic.ui.explorer.filter;
 
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.ICardFilterPanelListener;
+import magic.ui.MagicUI;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardFilterPanel extends TexturedPanel implements ActionListener {
+public class CardFilterPanel extends TexturedPanel 
+        implements IFilterListener {
 
     // translatable strings
     private static final String _S15 = "Reset";
@@ -33,7 +33,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private final ICardFilterPanelListener listener;
 
     private final List<FilterButtonPanel> filterButtons = new ArrayList<>();
-    private JButton resetButton;
+    private final JButton resetButton;
 
     private int totalFilteredCards = 0;
     private int playableCards = 0;
@@ -43,16 +43,35 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
+    private class ResetButton extends JButton {
+        ResetButton() {
+            super(UiString.get(_S15));
+            setToolTipText(UiString.get(_S16));
+            setFont(new Font("dialog", Font.BOLD, 12));
+            setForeground(new Color(127, 23, 23));
+            setPreferredSize(FILTER_BUTTON_PREFERRED_SIZE);
+            setMinimumSize(FILTER_BUTTON_MINIMUM_SIZE);
+            addActionListener(new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    MagicUI.showBusyCursorFor(resetButton);
+                    resetFilters();
+                    MagicUI.showDefaultCursorFor(resetButton);
+                }
+            });
+        }
+    }
+
     public CardFilterPanel(final ICardFilterPanelListener aListener) {
 
         this.listener = aListener;
+        this.resetButton = new ResetButton();
 
         cardPool = isDeckEditor()
             ? CardDefinitions.getDefaultPlayableCardDefs()
             : CardDefinitions.getAllCards();
 
         createFilterButtons(aListener);
-        createResetButton();
         refreshLayout();
     }
 
@@ -83,7 +102,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         filterButtons.add(new ManaCostFBP(this));
         filterButtons.add(new RarityFBP(this));
         filterButtons.add(new StatusFBP(this, isDeckEditor()));
-        filterButtons.add(new TextSearchFBP(aListener));
+        filterButtons.add(new TextSearchFBP(this));
         filterButtons.add(showUnsupportedFilter() ? new UnsupportedFBP(this) : new EmptyFBP());
     }
 
@@ -140,29 +159,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             filter.reset();
         }
         disableUpdate = false;
-    }
-
-    @Override
-    public void actionPerformed(final ActionEvent event) {
-        final Component c = (Component)event.getSource();
-        c.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        if (event.getSource().equals(resetButton)) {
-            resetFilters();
-        }
-        if (!disableUpdate) {
-            listener.refreshTable();
-        }
-        c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    }
-
-    private void createResetButton() {
-        resetButton = new JButton(UiString.get(_S15));
-        resetButton.setToolTipText(UiString.get(_S16));
-        resetButton.setFont(new Font("dialog", Font.BOLD, 12));
-        resetButton.setForeground(new Color(127, 23 ,23));
-        resetButton.addActionListener(this);
-        resetButton.setPreferredSize(FILTER_BUTTON_PREFERRED_SIZE);
-        resetButton.setMinimumSize(FILTER_BUTTON_MINIMUM_SIZE);
+        listener.refreshTable();
     }
 
     public int getPlayableCardCount() {
@@ -178,4 +175,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         return total == 0 ? totalFilteredCards : total;
     }
 
+    @Override
+    public void filterChanged() {
+        if (!disableUpdate) {
+            listener.refreshTable();
+        }
+    }
 }
