@@ -78,6 +78,10 @@ melvin
 ShawnieBoy
 
 - increase images available for crops and non-English cards. Crops are recommended for English users.
+- Add Kaladesh set and block format
+
+- fixed the following bugs:
+    * Added missing mana values for lands from SOI and OGW sets. These lands should now appear in random decks.
 
 Release 1.76 (August 28, 2016)
 ============
