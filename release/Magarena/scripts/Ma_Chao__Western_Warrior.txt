@@ -6,8 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={3}{R}{R}
 pt=3/3
-ability=Horsemanship;\
-        Whenever SN attacks alone, it can't be blocked this combat.
+ability=Horsemanship
 timing=main
+requires_groovy_code
 oracle=Horsemanship\nWhenever Ma Chao, Western Warrior attacks alone, it can't be blocked this combat.
-status=needs groovy
