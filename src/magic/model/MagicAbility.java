@@ -1532,7 +1532,7 @@ public enum MagicAbility {
     }
 
     private static String renameThis(final String text) {
-        return text.replaceAll("\\b(T|t)his creature( |\\.|'s|\\b)", "SN$2");
+        return text.replaceAll("\\b(T|t)his (creature|land|permanent)( |\\.|'s|\\b)", "SN$3");
     }
 
     public static MagicAbility getAbility(final String name) {
