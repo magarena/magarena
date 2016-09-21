@@ -43,6 +43,8 @@ As an additional cost to cast this spell, you may tap two untapped creatures you
 When you cast this spell, if its conspire cost was paid, copy it. If the spell has any targets, you may choose new targets for the copy.
 *Convoke
 For each colored mana in this spell’s total cost, you may tap an untapped creature of that color you control rather than pay that mana. For each generic mana in this spell’s total cost, you may tap an untapped creature you control rather than pay that mana.
+*Crew N
+Tap any number of creatures you control with total power N or more: This vehicle becomes an artifact creature until end of turn.
 *Cumulative Upkeep [cost]
 At the beginning of your upkeep, if this permanent is on the battlefield, put an age counter on this permanent. Then you may pay [cost] for each age counter on it. If you don’t, sacrifice it.
 *Cycling [cost]
@@ -69,6 +71,8 @@ This creature deals both first-strike and regular combat damage.
 As long as you have at least N cards in your library, if you would draw a card, you may instead put N cards from the top of your library into your graveyard and return this card from your graveyard to your hand.
 *Echo [cost]
 At the beginning of your upkeep, if this permanent came under your control since the beginning of your last upkeep, sacrifice it unless you pay [cost].
+*Emerge [cost]
+You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's converted mana cost.
 *Enchant [...]
 This card can only be attached to an [...].
 *Entwine [cost]
@@ -78,6 +82,8 @@ For the rest of the game, you can’t cast spells.
 At the beginning of each of your upkeeps for the rest of the game, copy this spell except for its epic ability. If the spell has any targets, you may choose new targets for the copy.
 *Equip [cost]
 [cost]: Attach this permanent to target creature you control. Activate this ability only any time you could cast a sorcery.
+*Escalate [cost]
+Pay this cost for each mode chosen beyond the first.
 *Evoke [cost]
 You may cast this card by paying [cost] rather than paying its mana cost.
 When this permanent enters the battlefield, if its evoke cost was paid, its controller sacrifices it.
@@ -89,6 +95,8 @@ Whenever a creature you control attacks alone, that creature gets +1/+1 until en
 When this creature enters the battlefield, you may sacrifice a creature.
 *Extort
 Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain life equal to the total life lost this way.
+*Fabricate N
+When this creature enters the battlefield, put N +1/+1 counters on it or create N 1/1 colorless Servo artifact creature tokens.
 *Fading N
 This permanent enters the battlefield with N fade counters on it.
 At the beginning of your upkeep, remove a fade counter from this permanent. If you can’t, sacrifice the permanent.
@@ -113,6 +121,8 @@ Play this ability only during your upkeep and only once each turn.
 Whenever this creature attacks and isn’t blocked, it gets +N/+0 until end of turn.
 *Fuse
 You may cast one or both halves of this card from your hand.
+*Goad [...]
+Until your next turn, that creature attacks each combat if able, and attacks a player other than you if able.
 *Graft N
 This permanent enters the battlefield with N +1/+1 counters on it.
 Whenever another creature enters the battlefield, if this permanent has a +1/+1 counter on it, you may move a +1/+1 counter from this permanent onto that creature.
@@ -154,6 +164,8 @@ When this Equipment enters the battlefield, put a 0/0 black Germ creature token 
 If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.
 *Megamorph [cost]
 You may cast this card face down as a 2/2 creature for {3}. Turn it face up at any time for its megamorph cost and put a +1/+1 counter on it.
+*Melee
+Whenever this creature attacks, it gets +1/+1 until end of turn for each opponent you attacked with a creature this combat.
 *Menace
 This creature can't be blocked except by two or more creatures.
 *Miracle [cost]
