@@ -2778,7 +2778,8 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-    },;
+    },
+    ;
 
     private final Pattern pattern;
     private final MagicTargetHint hint;
@@ -3018,6 +3019,7 @@ public enum MagicRuleEventAction {
     }
 
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
+    static final Pattern EFFECT_UNLESS = Pattern.compile(ARG.WORDRUN + " unless you " + ARG.COST, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_DO = Pattern.compile("you may " + ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_DONT = Pattern.compile("you may " + ARG.COST + "\\. if you don't, .+", Pattern.CASE_INSENSITIVE);
 
@@ -3033,7 +3035,13 @@ public enum MagicRuleEventAction {
         final Matcher ifMatcher = INTERVENING_IF.matcher(rule);
         final boolean ifMatched = ifMatcher.matches();
         final MagicCondition ifCond = ifMatched ? MagicConditionParser.build(ARG.cond(ifMatcher)) : MagicCondition.NONE;
-        final String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule;
+        String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule;
+
+        // rewrite effect unless clause into "you may <cost>, if you don't, <effect>"
+        final Matcher unlessMatcher = EFFECT_UNLESS.matcher(ruleWithoutIf);
+        if (unlessMatcher.matches()) {
+            ruleWithoutIf = "You may " + ARG.cost(unlessMatcher) + " If you don't, " + ARG.wordrun(unlessMatcher) + ".";
+        }
 
         // handle you may <cost>. if you do, <effect>
         final Matcher mayDoMatcher = MAY_DO.matcher(ruleWithoutIf);
