@@ -138,7 +138,7 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
                 game.createDelayedSource(CardDefinitions.getCard("The Monarch"), eotPlayer),
                 eotPlayer,
                 this,
-                "The monarch draws a card. (PN)"
+                "PN draws a card."
             );
         }
         @Override
