@@ -1,14 +1,15 @@
 package magic.ui.explorer.filter;
 
+import magic.ui.explorer.filter.buttons.FilterPanel;
 import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class FilterOptionsPanel extends JPanel {
+public class FilterOptionsPanel extends JPanel {
 
     private final SearchOperandCombo searchOptionCombo;
 
-    FilterOptionsPanel(final FilterButtonPanel fbp) {
+    public FilterOptionsPanel(final FilterPanel fbp) {
 
         searchOptionCombo = new SearchOperandCombo(fbp);
 
@@ -22,15 +23,15 @@ class FilterOptionsPanel extends JPanel {
         setOpaque(false);
     }
 
-    void reset() {
+    public void reset() {
         searchOptionCombo.setSelectedIndex(0);
     }
 
-    boolean isSelected(SearchOperand searchOption) {
+    public boolean isSelected(SearchOperand searchOption) {
         return searchOptionCombo.isSelected(searchOption);
     }
 
-    String getSearchOperandText() {
+    public String getSearchOperandText() {
         return searchOptionCombo.getSelectedOperandText();
     }
 

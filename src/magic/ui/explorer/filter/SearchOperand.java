@@ -3,7 +3,7 @@ package magic.ui.explorer.filter;
 import java.util.EnumSet;
 import java.util.Set;
 
-enum SearchOperand {
+public enum SearchOperand {
 
     MATCH_ANY("Match any"),
     MATCH_ALL("Match all"),

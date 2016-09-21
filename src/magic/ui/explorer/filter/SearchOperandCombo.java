@@ -1,5 +1,6 @@
 package magic.ui.explorer.filter;
 
+import magic.ui.explorer.filter.buttons.FilterPanel;
 import java.awt.event.ItemEvent;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
@@ -12,8 +13,8 @@ import magic.ui.ScreenController;
 @SuppressWarnings("serial")
 class SearchOperandCombo extends JComboBox<SearchOperand> {
 
-    SearchOperandCombo(final FilterButtonPanel fbp) {
-        setModel(new DefaultComboBoxModel<>(SearchOperand.getValues(fbp.hideSearchOptionsAND())));
+    SearchOperandCombo(final FilterPanel fbp) {
+        setModel(new DefaultComboBoxModel<>(SearchOperand.getValues(fbp.hideSearchOperandAND())));
         setLightWeightPopupEnabled(false);
         setFocusable(false);
         ((JLabel) getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);

@@ -1,5 +1,6 @@
 package magic.ui.explorer.filter;
 
+import magic.ui.explorer.filter.buttons.FilterPanel;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -10,7 +11,7 @@ import magic.ui.MagicUI;
 @SuppressWarnings("serial")
 class FilterResetButton extends JButton {
 
-    FilterResetButton(final FilterButtonPanel fbp) {
+    FilterResetButton(final FilterPanel fbp) {
         super("Reset");
         setFont(getFont().deriveFont(Font.BOLD, 12));
         setForeground(new Color(127, 23, 23));

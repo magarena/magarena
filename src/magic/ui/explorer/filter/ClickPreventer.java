@@ -6,11 +6,11 @@ import java.util.TimerTask;
 /**
  * Enables smooth toggling of the filter popup's visibility.
  */
-class ClickPreventer {
+public class ClickPreventer {
 
     private boolean isRunning = false;
 
-    void start() {
+    public void start() {
         isRunning = true;
         new Timer().schedule(new TimerTask() {
             @Override
@@ -20,7 +20,7 @@ class ClickPreventer {
         }, 300);
     }
 
-    boolean isNotRunning() {
+    public boolean isNotRunning() {
         return !isRunning;
     }
 }

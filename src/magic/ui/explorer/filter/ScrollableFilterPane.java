@@ -1,74 +1,23 @@
 package magic.ui.explorer.filter;
 
 import java.awt.Component;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
-import javax.swing.JCheckBox;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import magic.ui.MagicUI;
-import magic.ui.theme.ThemeFactory;
+import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
+/**
+ * Presents filter values as a scrollable list of checkboxes.
+ */
 @SuppressWarnings("serial")
-class ScrollableFilterPane extends JScrollPane {
+public class ScrollableFilterPane extends JScrollPane
+    implements IMultiSelectFilter {
 
-    private class FilterCheckBox extends JCheckBox {
+    private final CheckboxesFilterPanel filterPanel;
 
-        FilterCheckBox(String text) {
-            super(text);
-            setOpaque(false);
-            setForeground(ThemeFactory.getTheme().getTextColor());
-            setFocusPainted(true);
-            setAlignmentX(Component.LEFT_ALIGNMENT);
-        }
-
-    }
-
-    private class FilterPanel extends JPanel {
-
-        private final JCheckBox[] checkboxes;
-
-        FilterPanel(Object[] values, IFilterListener aListener) {
-
-            setLayout(new MigLayout("flowy, insets 2, gapy 4"));
-            setAlignmentX(Component.LEFT_ALIGNMENT);
-            setOpaque(false);
-
-            checkboxes = new JCheckBox[values.length];
-            for (int i = 0; i < values.length; i++) {
-                final JCheckBox cb = new FilterCheckBox(values[i].toString());
-                cb.addActionListener((e) -> {
-                    MagicUI.showBusyCursorFor(cb);
-                    aListener.filterChanged();
-                    MagicUI.showDefaultCursorFor(cb);
-                });
-                checkboxes[i] = cb;
-                add(checkboxes[i]);
-            }
-        }
-
-        JCheckBox[] getCheckboxes() {
-            return checkboxes;
-        }
-
-        private List<Integer> getSelected() {
-            final List<Integer> selected = new ArrayList<>();
-            for (int i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i].isSelected()) {
-                    selected.add(i);
-                }
-            }
-            return selected;
-        }
-    }
-
-    private final FilterPanel filterPanel;
-
-    ScrollableFilterPane(Object[] values, IFilterListener aListener) {
-        this.filterPanel = new FilterPanel(values, aListener);
+    public ScrollableFilterPane(Object[] values, FilterPanel fbp) {
+        this.filterPanel = new CheckboxesFilterPanel(values, fbp);
         setViewportView(filterPanel);
         setAlignmentX(Component.LEFT_ALIGNMENT);
         setBorder(FontsAndBorders.DOWN_BORDER);
@@ -77,28 +26,37 @@ class ScrollableFilterPane extends JScrollPane {
         getVerticalScrollBar().setUnitIncrement(18);
     }
 
-    ScrollableFilterPane(Stream<?> values, IFilterListener aListener) {
-        this(values.toArray(), aListener);
-    }
-
-    JCheckBox[] getCheckboxes() {
-        return filterPanel.getCheckboxes();
-    }
-
-    void setMigLayout(MigLayout miglayout) {
+    public void setMigLayout(MigLayout miglayout) {
         filterPanel.setLayout(miglayout);
     }
 
-    boolean hasSelectedCheckbox() {
-        for (JCheckBox cb : filterPanel.getCheckboxes()) {
-            if (cb.isSelected()) {
-                return true;
-            }
-        }
-        return false;
+    @Override
+    public boolean hasSelectedItem() {
+        return filterPanel.hasSelectedItem();
     }
 
-    List<Integer> getSelected() {
-        return filterPanel.getSelected();
+    @Override
+    public List<Integer> getSelectedItemIndexes() {
+        return filterPanel.getSelectedItemIndexes();
+    }
+
+    @Override
+    public int getItemsCount() {
+        return filterPanel.getItemsCount();
+    }
+
+    @Override
+    public boolean isItemSelected(int i) {
+        return filterPanel.isItemSelected(i);
+    }
+
+    @Override
+    public void reset() {
+        filterPanel.reset();
+    }
+
+    @Override
+    public String getItemText(int i) {
+        return filterPanel.getItemText(i);
     }
 }

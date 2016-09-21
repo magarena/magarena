@@ -11,11 +11,12 @@ import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import magic.translate.UiString;
+import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.*;
 import magic.ui.widget.TextPrompt.Show;
 
 @SuppressWarnings("serial")
-class CardFilterTextField extends JTextField
+public class CardFilterTextField extends JTextField
         implements DocumentListener {
 
     // translatable strings
@@ -26,13 +27,13 @@ class CardFilterTextField extends JTextField
     private Timer searchTextTimer;
     private final Font defaultFont;
     private final Font searchingFont;
-    private final IFilterListener listener;
+    private final FilterPanel fbp;
 
     private final List<String> searchTerms = new ArrayList<>();
 
-    CardFilterTextField(final IFilterListener aListener) {
+    public CardFilterTextField(final FilterPanel fbp) {
 
-        this.listener = aListener;
+        this.fbp = fbp;
         defaultFont = getFont();
         searchingFont = defaultFont.deriveFont(Font.BOLD);
 
@@ -66,7 +67,7 @@ class CardFilterTextField extends JTextField
         if (searchTextTimer == null) {
             searchTextTimer = new Timer(SEARCH_TIMER_DELAY, (e) -> {
                 searchTextTimer.stop();
-                listener.filterChanged();
+                fbp.filterChanged();
                 setFont(defaultFont);
             });
         }
@@ -103,7 +104,7 @@ class CardFilterTextField extends JTextField
         }
     }
 
-    List<String> getSearchTerms() {
+    public List<String> getSearchTerms() {
         return searchTerms;
     }
 

@@ -1,32 +1,31 @@
-package magic.ui.explorer.filter;
+package magic.ui.explorer.filter.buttons;
 
 import java.awt.Dimension;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
-import net.miginfocom.swing.MigLayout;
+import magic.ui.explorer.filter.CardFilterTextField;
+import magic.ui.explorer.filter.IFilterListener;
+import magic.ui.explorer.filter.dialogs.FilterDialog;
+import magic.ui.explorer.filter.dialogs.TextFilterDialog;
 
 @SuppressWarnings("serial")
-class TextSearchFBP extends FilterButtonPanel {
+public class SearchFilterPanel extends FilterPanel {
 
     // translatable strings
     private static final String _S9 = "Search";
     private static final String _S10 = "Searches name, type, subtype and oracle text.";
 
     private final CardFilterTextField nameTextField;
+    private FilterDialog filterDialog;
 
-    TextSearchFBP(IFilterListener aListener) {
+    public SearchFilterPanel(IFilterListener aListener) {
         super(UiString.get(_S9), UiString.get(_S10), aListener);
         this.nameTextField = new CardFilterTextField(this);
     }
 
     @Override
-    protected Dimension getFilterDialogSize() {
+    public Dimension getFilterDialogSize() {
         return new Dimension(260, 38);
-    }
-
-    @Override
-    protected MigLayout getFilterDialogLayout() {
-        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow]");
     }
 
     private boolean isCardValid(MagicCardDefinition card) {
@@ -41,13 +40,8 @@ class TextSearchFBP extends FilterButtonPanel {
     }
 
     @Override
-    protected boolean isCardValid(MagicCardDefinition card, int i) {
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    @Override
-    protected boolean hasActiveFilterValue() {
-        return nameTextField.getText().trim().isEmpty() == false;
+    protected boolean isFiltering() {
+        return filterDialog.isFiltering();
     }
 
     @Override
@@ -56,18 +50,15 @@ class TextSearchFBP extends FilterButtonPanel {
     }
 
     @Override
-    protected boolean matches(MagicCardDefinition aCard) {
+    public boolean matches(MagicCardDefinition aCard) {
         return isCardValid(aCard);
     }
 
     @Override
-    protected String getSearchOperandText() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     protected FilterDialog getFilterDialog() {
-        return new TextFilterDialog(this, this.nameTextField);
+        if (filterDialog == null) {
+            filterDialog = new TextFilterDialog(this, this.nameTextField);
+        }
+        return filterDialog;
     }
-
 }

@@ -1,11 +1,11 @@
-package magic.ui.explorer.filter;
+package magic.ui.explorer.filter.buttons;
 
 import java.awt.Dimension;
+import java.awt.LayoutManager;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
@@ -14,11 +14,13 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicUI;
+import magic.ui.explorer.filter.ClickPreventer;
+import magic.ui.explorer.filter.IFilterListener;
+import magic.ui.explorer.filter.dialogs.FilterDialog;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-abstract class FilterButtonPanel extends JPanel
-    implements IFilterListener {
+public abstract class FilterPanel extends JPanel {
 
     // prevents multiple updates of the cards list when resetting multiple
     // filters values at once via reset().
@@ -28,14 +30,15 @@ abstract class FilterButtonPanel extends JPanel
     private final ClickPreventer clickPreventer = new ClickPreventer();
 
     private IFilterListener filterListener;
-    protected FilterDialog filterDialog;
+    private FilterDialog filterDialog;
 
-    protected abstract boolean isCardValid(final MagicCardDefinition card, final int i);
-    protected abstract boolean hasActiveFilterValue();
-    protected abstract String getSearchOperandText();
+    public abstract boolean matches(MagicCardDefinition aCard);
+    protected abstract FilterDialog getFilterDialog();
+    protected abstract boolean isFiltering();
+    protected abstract String getFilterTooltip();
         
     // CTR
-    FilterButtonPanel(String title, String tooltip, IFilterListener aListener) {
+    FilterPanel(String title, String tooltip, IFilterListener aListener) {
         this.filterListener = aListener;
         createFilterButton(title, tooltip);
         setLayout();
@@ -43,12 +46,12 @@ abstract class FilterButtonPanel extends JPanel
     }
 
     // CTR
-    FilterButtonPanel(String title, IFilterListener aListener) {
+    FilterPanel(String title, IFilterListener aListener) {
         this(title, null, aListener);
     }
 
     // CTR
-    FilterButtonPanel() {
+    FilterPanel() {
         setOpaque(false);
     }
 
@@ -79,6 +82,20 @@ abstract class FilterButtonPanel extends JPanel
         });
     }
 
+    private void setFilterDialog() {
+        filterDialog = getFilterDialog();
+        filterDialog.addWindowFocusListener(new WindowAdapter() {
+            @Override
+            public void windowLostFocus(WindowEvent e) {
+                clickPreventer.start();
+                if (filterDialog.isVisible()) {
+                    hideFilterDialog();
+                }
+            }
+        });
+        setEscapeKeyAction();
+    }
+
     private void showFilterDialog() {
         if (filterDialog == null) {
             setFilterDialog();
@@ -95,10 +112,10 @@ abstract class FilterButtonPanel extends JPanel
 
     private void hideFilterDialog() {
         filterDialog.setVisible(false);
-        filterButton.setActiveFlag(hasActiveFilterValue());
+        filterButton.setActiveFlag(isFiltering());
     }
 
-    void resetStayOpen() {
+    public void resetStayOpen() {
         ignoreFilterChanges = true;
         filterDialog.reset();
         filterButton.setToolTipText(null);
@@ -107,7 +124,7 @@ abstract class FilterButtonPanel extends JPanel
         filterListener.filterChanged();
     }
 
-    void reset() {
+    public void reset() {
         if (filterDialog != null) {
             ignoreFilterChanges = true;
             filterDialog.reset();
@@ -117,75 +134,26 @@ abstract class FilterButtonPanel extends JPanel
         }
     }
 
-    protected MigLayout getFilterDialogLayout() {
-        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][50!, fill]");
-    }
-
-    protected Dimension getFilterDialogSize() {
+    /**
+     * Default filter dialog size.
+     */
+    public Dimension getFilterDialogSize() {
         return new Dimension(260, 300);
     }
 
-    protected boolean hideSearchOptionsAND() {
+    public boolean hideSearchOperandAND() {
         return false;
     }
 
-    protected String getFilterTooltip() {
-        return null;
-    }
-
-    protected String getFilterTooltip(Object[] values, List<Integer> selected) {
-        final StringBuilder sb = new StringBuilder();
-        if (!selected.isEmpty()) {
-            sb.append("<html><b><p>").append(getSearchOperandText()).append("</p></b>");
-            for (Integer i : selected) {
-                sb.append("• ").append(values[i]).append("<br>");
-            }
-            sb.append("</html>");
-        }
-        return sb.toString();
-    }
-
-    @Override
     public void filterChanged() {
         if (!ignoreFilterChanges) {
             filterListener.filterChanged();
-            filterButton.setActiveFlag(hasActiveFilterValue());
-            String tooltip = getFilterTooltip();
-            filterButton.setToolTipText(tooltip.isEmpty() ? null : tooltip);
+            filterButton.setActiveFlag(isFiltering());
+            filterButton.setToolTipText(getFilterTooltip());
         }
     }
 
-//    protected void setFilterDialog(FilterDialog aDialog) {
-//        filterDialog = aDialog;
-//        filterDialog.addWindowFocusListener(new WindowAdapter() {
-//            @Override
-//            public void windowLostFocus(WindowEvent e) {
-//                clickPreventer.start();
-//                if (filterDialog.isVisible()) {
-//                    hideFilterDialog();
-//                }
-//            }
-//        });
-//        setEscapeKeyAction();
-//    }
-    
-    protected abstract FilterDialog getFilterDialog();
-
-    private void setFilterDialog() {
-        filterDialog = getFilterDialog();
-        filterDialog.addWindowFocusListener(new WindowAdapter() {
-            @Override
-            public void windowLostFocus(WindowEvent e) {
-                clickPreventer.start();
-                if (filterDialog.isVisible()) {
-                    hideFilterDialog();
-                }
-            }
-        });
-        setEscapeKeyAction();
-    }
-
-    protected boolean matches(MagicCardDefinition aCard) {
-        return filterDialog == null ? true : filterDialog.filterMatches(aCard);
-    }
+    public LayoutManager getFilterPanelLayout() {
+        return null;
+    };
 }

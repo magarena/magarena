@@ -1,4 +1,4 @@
-package magic.ui.explorer.filter;
+package magic.ui.explorer.filter.buttons;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -23,6 +23,14 @@ class FilterButton extends JButton {
 
     void setActiveFlag(boolean isActive) {
         setFont(isActive ? ON_FONT : OFF_FONT);
-        setBorder(isActive ? BorderFactory.createMatteBorder(2, 2, 2, 2, MagicStyle.getRolloverColor()) : null);
+        setBorder(isActive 
+                ? BorderFactory.createMatteBorder(2, 2, 2, 2, MagicStyle.getRolloverColor())
+                : null
+        );
     }
+
+    @Override
+    public void setToolTipText(String text) {
+        super.setToolTipText(text != null && text.isEmpty() ? null : text);
+    }        
 }
