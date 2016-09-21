@@ -1,4 +1,4 @@
-name=Æther Tradewinds
+name=Aether Tradewinds
 image=http://magiccards.info/scans/en/cns/89.jpg
 value=3.200
 rarity=C
