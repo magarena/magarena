@@ -8,8 +8,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import magic.ui.MagicUI;
-import static magic.ui.explorer.filter.FilterButtonPanel.POPUP_CHECKBOXES_SIZE;
-import static magic.ui.explorer.filter.FilterButtonPanel.TEXT_COLOR;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -21,7 +20,7 @@ class ScrollableFilterPane extends JScrollPane {
         FilterCheckBox(String text) {
             super(text);
             setOpaque(false);
-            setForeground(TEXT_COLOR);
+            setForeground(ThemeFactory.getTheme().getTextColor());
             setFocusPainted(true);
             setAlignmentX(Component.LEFT_ALIGNMENT);
         }
@@ -75,7 +74,6 @@ class ScrollableFilterPane extends JScrollPane {
         setBorder(FontsAndBorders.DOWN_BORDER);
         setOpaque(false);
         getViewport().setOpaque(false);
-        setPreferredSize(POPUP_CHECKBOXES_SIZE);
         getVerticalScrollBar().setUnitIncrement(18);
     }
 

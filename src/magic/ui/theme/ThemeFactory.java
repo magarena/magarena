@@ -82,6 +82,10 @@ public class ThemeFactory {
         return currentTheme;
     }
 
+    public static Theme getTheme() {
+        return getInstance().currentTheme;
+    }
+
     public static ThemeFactory getInstance() {
         return INSTANCE;
     }

@@ -69,7 +69,7 @@ public class CardFilterPanel extends TexturedPanel
             ? CardDefinitions.getDefaultPlayableCardDefs()
             : CardDefinitions.getAllCards();
 
-        createFilterButtons(aListener);
+        createFilterButtons();
         refreshLayout();
     }
 
@@ -90,7 +90,7 @@ public class CardFilterPanel extends TexturedPanel
         add(resetButton);
     }
 
-    private void createFilterButtons(ICardFilterPanelListener aListener) {
+    private void createFilterButtons() {
         filterButtons.add(new CubeFBP(this));
         filterButtons.add(new FormatFBP(this));
         filterButtons.add(new SetsFBP(this));
@@ -108,20 +108,12 @@ public class CardFilterPanel extends TexturedPanel
         return !isDeckEditor() && GeneralConfig.getInstance().showMissingCardData();
     }
 
-    private boolean isCardfiltered(final MagicCardDefinition cardDefinition) {
-
-        // never show overlay cards
-        if (cardDefinition.isOverlay()) {
+    private boolean isCardfiltered(final MagicCardDefinition aCard) {
+        if (aCard.isOverlay()) {
             return false;
+        } else {
+            return filterButtons.stream().allMatch((filter) -> filter.matches(aCard));
         }
-
-        for (FilterButtonPanel filter : filterButtons) {
-            if (filter.doesNotInclude(cardDefinition)) {
-                return false;
-            }
-        }
-
-        return true;
     }
 
     private Stream<MagicCardDefinition> getFilteredStream() {

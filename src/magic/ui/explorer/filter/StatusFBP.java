@@ -1,11 +1,11 @@
 package magic.ui.explorer.filter;
 
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
+import java.awt.Dimension;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.MagicLogs;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class StatusFBP extends FilterButtonPanel {
@@ -17,15 +17,12 @@ class StatusFBP extends FilterButtonPanel {
     private static final String _S19 = "Unimplemented";
     private static final String _S25 = "Potential";
 
-    private final ScrollableFilterPane filterPane;
-    private final String[] values;
+    private String[] values;
+    private final boolean isDeckEditor;
 
     StatusFBP(IFilterListener aListener, boolean isDeckEditor) {
-        super(UiString.get(_S4));
-        this.values = getStatusFilterValues(isDeckEditor);
-        this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(values, this);
-        setPopupContent();
+        super(UiString.get(_S4), aListener);
+        this.isDeckEditor = isDeckEditor;
     }
 
     private String[] getStatusFilterValues(boolean isDeckEditor) {
@@ -35,43 +32,48 @@ class StatusFBP extends FilterButtonPanel {
     }
 
     @Override
-    protected IFilterListener getSearchOptionsListener() {
-        return filterListener;
-    }
-
-    @Override
-    protected JCheckBox[] getCheckboxes() {
-        return filterPane.getCheckboxes();
-    }
-
-    @Override
-    protected JComponent getFilterValuesComponent() {
-        return filterPane;
-    }
-
-    @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
-        final String status = getCheckboxes()[i].getText();
-        if (status.equals(UiString.get(_S17))) {
+        final String status = filterDialog.getItemText(i);
+        if (UiString.get(_S17).equals(status))
             return MagicLogs.isCardInDownloadsLog(card);
-        } else if (status.equals(UiString.get(_S18))) {
+        else if (UiString.get(_S18).equals(status))
             return CardDefinitions.isCardPlayable(card);
-        } else if (status.equals(UiString.get(_S19))) {
+        else if (UiString.get(_S19).equals(status))
             return CardDefinitions.isCardMissing(card);
-        } else if (status.equals(UiString.get(_S25))) {
+        else if (UiString.get(_S25).equals(status))
             return CardDefinitions.isPotential(card);
-        } else {
+        else
             return true;
-        }
     }
 
     @Override
     protected boolean hasActiveFilterValue() {
-        return filterPane.hasSelectedCheckbox();
+        return filterDialog.isFiltering();
     }
 
     @Override
     protected String getFilterTooltip() {
-        return getFilterTooltip(values, filterPane.getSelected());
+        return getFilterTooltip(values, filterDialog.getSelectedItemIndexes());
+    }
+
+    @Override
+    protected Dimension getFilterDialogSize() {
+        return new Dimension(260, 160);
+    }
+
+    @Override
+    protected MigLayout getFilterDialogLayout() {
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][50!, fill]");
+    }
+
+    @Override
+    protected String getSearchOperandText() {
+        return filterDialog.getSearchOperandText();
+    }
+
+    @Override
+    protected FilterDialog getFilterDialog() {
+        this.values = getStatusFilterValues(isDeckEditor);
+        return new CheckboxFilterDialog(this, values);
     }
 }

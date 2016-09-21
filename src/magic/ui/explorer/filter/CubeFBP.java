@@ -1,39 +1,24 @@
 package magic.ui.explorer.filter;
 
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
+import java.awt.Dimension;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class CubeFBP extends FilterButtonPanel {
 
     // translatable strings
-     private static final String _S6 = "Cube";
-
-    private final ScrollableFilterPane filterPane;
+    private static final String _S6 = "Cube";
 
     CubeFBP(IFilterListener aListener) {
-        super(UiString.get(_S6));
-        this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(MagicFormat.getCubeFilterLabels(), this);
-        setPopupContent();
+        super(UiString.get(_S6), aListener);
     }
 
     @Override
-    protected IFilterListener getSearchOptionsListener() {
-        return filterListener;
-    }
-
-    @Override
-    protected JCheckBox[] getCheckboxes() {
-        return filterPane.getCheckboxes();
-    }
-
-    @Override
-    protected JComponent getFilterValuesComponent() {
-        return filterPane;
+    protected FilterDialog getFilterDialog() {
+        return new CheckboxFilterDialog(this, MagicFormat.getCubeFilterLabels());
     }
 
     @Override
@@ -44,12 +29,29 @@ class CubeFBP extends FilterButtonPanel {
 
     @Override
     protected boolean hasActiveFilterValue() {
-        return filterPane.hasSelectedCheckbox();
+        return filterDialog.isFiltering();
     }
 
     @Override
     protected String getFilterTooltip() {
-        return getFilterTooltip(MagicFormat.getCubeFilterLabels(), filterPane.getSelected());
+        return getFilterTooltip(
+                MagicFormat.getCubeFilterLabels(),
+                filterDialog.getSelectedItemIndexes()
+        );
     }
 
+    @Override
+    protected Dimension getFilterDialogSize() {
+        return new Dimension(260, 300);
+    }
+
+    @Override
+    protected MigLayout getFilterDialogLayout() {
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][50!, fill]");
+    }
+
+    @Override
+    protected String getSearchOperandText() {
+        return filterDialog.getSearchOperandText();
+    }
 }

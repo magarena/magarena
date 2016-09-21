@@ -1,8 +1,9 @@
 package magic.ui.explorer.filter;
 
-import javax.swing.JCheckBox;
+import java.awt.Dimension;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class TextSearchFBP extends FilterButtonPanel {
@@ -14,15 +15,18 @@ class TextSearchFBP extends FilterButtonPanel {
     private final CardFilterTextField nameTextField;
 
     TextSearchFBP(IFilterListener aListener) {
-        super(UiString.get(_S9), UiString.get(_S10));
-        this.filterListener = aListener;
+        super(UiString.get(_S9), UiString.get(_S10), aListener);
         this.nameTextField = new CardFilterTextField(this);
-        doLayoutTextSearchPanel();
     }
 
-    private void doLayoutTextSearchPanel() {
-        popupDialog.setSize(260, 38);
-        popupDialog.getContentPane().add(nameTextField);
+    @Override
+    protected Dimension getFilterDialogSize() {
+        return new Dimension(260, 38);
+    }
+
+    @Override
+    protected MigLayout getFilterDialogLayout() {
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow]");
     }
 
     private boolean isCardValid(MagicCardDefinition card) {
@@ -37,39 +41,33 @@ class TextSearchFBP extends FilterButtonPanel {
     }
 
     @Override
-    boolean doesNotInclude(MagicCardDefinition cardDefinition) {
-        return !isCardValid(cardDefinition);
-    }
-
-    @Override
-    void reset() {
-        nameTextField.setText("");
-        hidePopup();
-    }
-
-    @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
         throw new UnsupportedOperationException("Not supported.");
     }
 
     @Override
-    protected boolean isFilterActive() {
-        return nameTextField.getText().trim().isEmpty() == false;
-    }
-
-    @Override
-    protected JCheckBox[] getCheckboxes() {
-        throw new UnsupportedOperationException("Not applicable.");
-    }
-
-    @Override
     protected boolean hasActiveFilterValue() {
-        return isFilterActive();
+        return nameTextField.getText().trim().isEmpty() == false;
     }
 
     @Override
     protected String getFilterTooltip() {
         return nameTextField.getText().trim();
+    }
+
+    @Override
+    protected boolean matches(MagicCardDefinition aCard) {
+        return isCardValid(aCard);
+    }
+
+    @Override
+    protected String getSearchOperandText() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    protected FilterDialog getFilterDialog() {
+        return new TextFilterDialog(this, this.nameTextField);
     }
 
 }

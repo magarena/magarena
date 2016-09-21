@@ -1,12 +1,11 @@
 package magic.ui.explorer.filter;
 
+import java.awt.Dimension;
 import java.util.EnumSet;
-import java.util.stream.Stream;
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSubType;
 import magic.translate.UiString;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class SubtypeFBP extends FilterButtonPanel {
@@ -14,33 +13,16 @@ class SubtypeFBP extends FilterButtonPanel {
     // translatable strings
     private static final String _S13 = "Subtype";
 
-    private final ScrollableFilterPane filterPane;
+    private String[] values;
 
     SubtypeFBP(IFilterListener aListener) {
-        super(UiString.get(_S13));
-        this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(getValuesStream(), this);
-        setPopupContent();
+        super(UiString.get(_S13), aListener);
     }
 
-    private Stream<String> getValuesStream() {
+    private String[] getSubTypesArray() {
         return EnumSet.allOf(MagicSubType.class).stream()
-                .map(s -> s.name().replace('_', ' '));
-    }
-
-    @Override
-    protected IFilterListener getSearchOptionsListener() {
-        return filterListener;
-    }
-
-    @Override
-    protected JCheckBox[] getCheckboxes() {
-        return filterPane.getCheckboxes();
-    }
-
-    @Override
-    protected JComponent getFilterValuesComponent() {
-        return filterPane;
+                .map(s -> s.name().replace('_', ' '))
+                .toArray(size -> new String[size]);
     }
 
     @Override
@@ -50,12 +32,32 @@ class SubtypeFBP extends FilterButtonPanel {
 
     @Override
     protected boolean hasActiveFilterValue() {
-        return filterPane.hasSelectedCheckbox();
+        return filterDialog.isFiltering();
     }
 
     @Override
     protected String getFilterTooltip() {
-        return getFilterTooltip(getValuesStream().toArray(), filterPane.getSelected());
+        return getFilterTooltip(values, filterDialog.getSelectedItemIndexes());
     }
 
+    @Override
+    protected Dimension getFilterDialogSize() {
+        return new Dimension(260, 300);
+    }
+
+    @Override
+    protected MigLayout getFilterDialogLayout() {
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][50!, fill]");
+    }
+
+    @Override
+    protected String getSearchOperandText() {
+        return filterDialog.getSearchOperandText();
+    }
+
+    @Override
+    protected FilterDialog getFilterDialog() {
+        this.values = getSubTypesArray();
+        return new CheckboxFilterDialog(this, values);
+    }
 }

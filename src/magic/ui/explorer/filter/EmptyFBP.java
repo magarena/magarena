@@ -1,19 +1,13 @@
 package magic.ui.explorer.filter;
 
-import javax.swing.JCheckBox;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
 class EmptyFBP extends FilterButtonPanel {
 
     @Override
-    boolean doesNotInclude(MagicCardDefinition cardDefinition) {
-        return false;
-    }
-
-    @Override
     protected boolean isCardValid(MagicCardDefinition card, int i) {
-        throw new UnsupportedOperationException("Not applicable.");
+        throw new UnsupportedOperationException("Not supported.");
     }
 
     @Override
@@ -22,12 +16,22 @@ class EmptyFBP extends FilterButtonPanel {
     }
 
     @Override
-    protected JCheckBox[] getCheckboxes() {
-        throw new UnsupportedOperationException("Not applicable.");
+    protected boolean hasActiveFilterValue() {
+        throw new UnsupportedOperationException("Not supported.");
     }
 
     @Override
-    protected boolean hasActiveFilterValue() {
-        throw new UnsupportedOperationException("Not applicable.");
+    protected boolean matches(MagicCardDefinition aCard) {
+        return true;
+    }
+
+    @Override
+    protected String getSearchOperandText() {
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    @Override
+    protected FilterDialog getFilterDialog() {
+        throw new UnsupportedOperationException("Not supported.");
     }
 }

@@ -1,8 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.Dimension;
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.translate.UiString;
@@ -21,39 +19,18 @@ class ManaCostFBP extends FilterButtonPanel {
         }
     }
 
-    private final ScrollableFilterPane filterPane;
-
     ManaCostFBP(IFilterListener aListener) {
-        super(UiString.get(_S12));
-        this.filterListener = aListener;
-        this.filterPane = new ScrollableFilterPane(COST_VALUES, this);
-        this.filterPane.setMigLayout(new MigLayout("flowx, wrap 6, insets 2, gap 8"));
-        setPopupContent();
+        super(UiString.get(_S12), aListener);
     }
 
     @Override
-    protected Dimension getPopupDialogSize() {
-        return new Dimension(300, 130);
+    protected Dimension getFilterDialogSize() {
+        return new Dimension(290, 140);
     }
 
     @Override
     protected boolean hideSearchOptionsAND() {
         return true;
-    }
-
-    @Override
-    protected IFilterListener getSearchOptionsListener() {
-        return filterListener;
-    }
-
-    @Override
-    protected JCheckBox[] getCheckboxes() {
-        return filterPane.getCheckboxes();
-    }
-
-    @Override
-    protected JComponent getFilterValuesComponent() {
-        return filterPane;
     }
 
     @Override
@@ -63,12 +40,26 @@ class ManaCostFBP extends FilterButtonPanel {
 
     @Override
     protected boolean hasActiveFilterValue() {
-        return filterPane.hasSelectedCheckbox();
+        return filterDialog.isFiltering();
     }
 
     @Override
     protected String getFilterTooltip() {
-        return getFilterTooltip(COST_VALUES, filterPane.getSelected());
+        return getFilterTooltip(COST_VALUES, filterDialog.getSelectedItemIndexes());
     }
 
+    @Override
+    protected MigLayout getFilterDialogLayout() {
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][50!, fill]");
+    }
+
+    @Override
+    protected String getSearchOperandText() {
+        return filterDialog.getSearchOperandText();
+    }
+
+    @Override
+    protected FilterDialog getFilterDialog() {
+        return new CostFilterDialog(this, COST_VALUES);
+    }
 }
