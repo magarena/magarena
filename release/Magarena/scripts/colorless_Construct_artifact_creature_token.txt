@@ -1,0 +1,7 @@
+name=colorless Construct artifact creature token
+token=Construct
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_ROHZBBAJrp.png
+value=2
+type=Artifact,Creature
+subtype=Construct
+color=
