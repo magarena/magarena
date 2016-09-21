@@ -4,6 +4,6 @@ value=4.263
 rarity=R
 type=Enchantment
 cost={1}{U}{B}
-ability=All creatures have "At the beginning of your upkeep, you may pay 1 life. If you don't, sacrifice this creature."
+ability=All creatures have "At the beginning of your upkeep, sacrifice this creature unless you pay 1 life."
 timing=enchantment
 oracle=All creatures have "At the beginning of your upkeep, sacrifice this creature unless you pay 1 life."

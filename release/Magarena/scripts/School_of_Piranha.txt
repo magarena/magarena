@@ -6,6 +6,6 @@ type=Creature
 subtype=Fish
 cost={1}{U}
 pt=3/3
-ability=At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {1}{U}.
 timing=main
 oracle=At the beginning of your upkeep, sacrifice School of Piranha unless you pay {1}{U}.

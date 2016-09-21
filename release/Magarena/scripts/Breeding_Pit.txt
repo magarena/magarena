@@ -4,7 +4,7 @@ value=3.344
 rarity=U
 type=Enchantment
 cost={3}{B}
-ability=At the beginning of your upkeep, you may pay {B}{B}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {B}{B}.;\
         At the beginning of your end step, put a 0/1 black Thrull creature token onto the battlefield.
 timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Breeding Pit unless you pay {B}{B}.\nAt the beginning of your end step, put a 0/1 black Thrull creature token onto the battlefield.

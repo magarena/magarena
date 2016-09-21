@@ -8,6 +8,6 @@ cost={2}{W}{W}{U}{U}{B}{B}
 pt=7/7
 ability=Flying;\
         Rampage 2;\
-        At the beginning of your upkeep, you may pay {W}{U}{B}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {W}{U}{B}.
 timing=main
 oracle=Flying\nRampage 2\nAt the beginning of your upkeep, sacrifice Chromium unless you pay {W}{U}{B}.

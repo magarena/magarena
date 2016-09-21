@@ -4,7 +4,7 @@ value=3.354
 rarity=R
 type=Enchantment
 cost={3}{B}{R}{G}
-ability=At the beginning of your upkeep, you may pay {2}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {2}.;\
         Whenever a creature dies, that creature's controller sacrifices a land.
 timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Earthlink unless you pay {2}.\nWhenever a creature dies, that creature's controller sacrifices a land.

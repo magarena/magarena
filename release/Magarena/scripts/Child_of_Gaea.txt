@@ -7,7 +7,7 @@ subtype=Elemental
 cost={3}{G}{G}{G}
 pt=7/7
 ability=Trample;\
-        At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.;\
+        At the beginning of your upkeep, sacrifice SN unless you pay {G}{G}.;\
         {1}{G}: Regenerate SN.
 timing=main
 oracle=Trample\nAt the beginning of your upkeep, sacrifice Child of Gaea unless you pay {G}{G}.\n{1}{G}: Regenerate Child of Gaea.

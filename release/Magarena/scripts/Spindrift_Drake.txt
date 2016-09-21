@@ -7,6 +7,6 @@ subtype=Drake
 cost={U}
 pt=2/1
 ability=Flying;\
-        At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {U}.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Spindrift Drake unless you pay {U}.

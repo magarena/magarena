@@ -7,7 +7,7 @@ subtype=Demon
 cost={4}{B}{B}{B}
 pt=6/4
 ability=First strike;\
-        At the beginning of your upkeep, you may pay {B}{B}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {B}{B}.;\
+        Whenever SN deals damage to a creature, exile RN.
 timing=main
-requires_groovy_code
 oracle=First strike\nAt the beginning of your upkeep, sacrifice Pit Spawn unless you pay {B}{B}.\nWhenever Pit Spawn deals damage to a creature, exile that creature.

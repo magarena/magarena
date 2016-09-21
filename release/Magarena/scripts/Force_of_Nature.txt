@@ -7,6 +7,6 @@ subtype=Elemental
 cost={2}{G}{G}{G}{G}
 pt=8/8
 ability=Trample;\
-        At the beginning of your upkeep, you may pay {G}{G}{G}{G}. If you don't, SN deals 8 damage to you.
+        At the beginning of your upkeep, SN deals 8 damage to you unless you pay {G}{G}{G}{G}.
 timing=main
 oracle=Trample\nAt the beginning of your upkeep, Force of Nature deals 8 damage to you unless you pay {G}{G}{G}{G}.

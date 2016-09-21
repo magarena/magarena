@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon,Minion
 cost={4}{B}{B}{B}
 pt=4/4
-ability=At the beginning of your upkeep, you may pay {B}{B}. If you don't, SN deals 2 damage to you.;\
+ability=At the beginning of your upkeep, SN deals 2 damage to you unless you pay {B}{B}.;\
         {T}: Target creature gets +3/-2 until end of turn.
 timing=main
 oracle=At the beginning of your upkeep, Minion of Tevesh Szat deals 2 damage to you unless you pay {B}{B}.\n{T}: Target creature gets +3/-2 until end of turn.

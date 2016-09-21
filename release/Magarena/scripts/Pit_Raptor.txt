@@ -7,6 +7,6 @@ subtype=Bird,Mercenary
 cost={2}{B}{B}
 pt=4/3
 ability=Flying, first strike;\
-        At the beginning of your upkeep, you may pay {2}{B}{B}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {2}{B}{B}.
 timing=main
 oracle=Flying, first strike\nAt the beginning of your upkeep, sacrifice Pit Raptor unless you pay {2}{B}{B}.

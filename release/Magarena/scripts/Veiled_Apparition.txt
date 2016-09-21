@@ -4,6 +4,6 @@ value=2.516
 rarity=U
 type=Enchantment
 cost={1}{U}
-ability=When an opponent casts a spell, if SN is an enchantment, SN becomes a 3/3 Illusion creature with flying and "At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN."
+ability=When an opponent casts a spell, if SN is an enchantment, SN becomes a 3/3 Illusion creature with flying and "At the beginning of your upkeep, sacrifice SN unless you pay {1}{U}."
 timing=enchantment
 oracle=When an opponent casts a spell, if Veiled Apparition is an enchantment, Veiled Apparition becomes a 3/3 Illusion creature with flying and "At the beginning of your upkeep, sacrifice Veiled Apparition unless you pay {1}{U}."

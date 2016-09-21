@@ -4,7 +4,7 @@ value=3.558
 rarity=R
 type=Enchantment
 cost={4}{G}{G}
-ability=At the beginning of your upkeep, you may pay {G}. If you don't, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {G}.
 timing=enchantment
 requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice Nature's Wrath unless you pay {G}.\nWhenever a player puts an Island or blue permanent onto the battlefield, he or she sacrifices an Island or blue permanent.\nWhenever a player puts a Swamp or black permanent onto the battlefield, he or she sacrifices a Swamp or black permanent.

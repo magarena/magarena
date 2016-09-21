@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={3}{U}
 ability=Enchant creature;\
-        At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN.;\
+        At the beginning of your upkeep, sacrifice SN unless you pay {1}{U}.;\
         You control enchanted creature.;\
         Enchanted creature gets +0/+1.
 timing=aura

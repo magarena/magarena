@@ -6,7 +6,7 @@ type=Creature
 subtype=Human
 cost={2}{W}
 pt=1/1
-ability=At the beginning of your upkeep, you may pay {1}{W}. If you don't, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {1}{W}.;\
+        Creatures can't attack.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice Peacekeeper unless you pay {1}{W}.\nCreatures can't attack.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={3}{G}
 pt=4/4
-ability=At the beginning of your upkeep, you may pay {G}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {G}.;\
         Soulshift 3
 timing=main
 oracle=At the beginning of your upkeep, sacrifice Kami of the Tended Garden unless you pay {G}.\nSoulshift 3

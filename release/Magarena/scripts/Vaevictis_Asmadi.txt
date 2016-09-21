@@ -7,7 +7,7 @@ subtype=Elder,Dragon
 cost={2}{B}{B}{R}{R}{G}{G}
 pt=7/7
 ability=Flying;\
-        At the beginning of your upkeep, you may pay {B}{R}{G}. If you don't, sacrifice SN.;\
+        At the beginning of your upkeep, sacrifice SN unless you pay {B}{R}{G}.;\
         {B}: SN gets +1/+0 until end of turn.;\
         {R}: SN gets +1/+0 until end of turn.;\
         {G}: SN gets +1/+0 until end of turn.

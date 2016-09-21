@@ -4,7 +4,7 @@ value=3.815
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=At the beginning of your upkeep, you may pay {W}{W}. If you don't, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {W}{W}.
 timing=enchantment
 requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice Conversion unless you pay {W}{W}.\nAll Mountains are Plains.

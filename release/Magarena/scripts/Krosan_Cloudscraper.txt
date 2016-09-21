@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast,Mutant
 cost={7}{G}{G}{G}
 pt=13/13
-ability=At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {G}{G}.;\
         Morph {7}{G}{G}
 timing=main
 oracle=At the beginning of your upkeep, sacrifice Krosan Cloudscraper unless you pay {G}{G}.\nMorph {7}{G}{G}

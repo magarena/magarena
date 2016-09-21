@@ -7,6 +7,6 @@ subtype=Harpy,Mercenary
 cost={B}
 pt=2/1
 ability=Flying;\
-        At the beginning of your upkeep, you may pay {2}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {2}.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Molting Harpy unless you pay {2}.

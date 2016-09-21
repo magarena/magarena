@@ -7,8 +7,8 @@ subtype=Elder,Dragon
 cost={2}{G}{G}{W}{W}{U}{U}
 pt=7/7
 ability=Flying;\
-        {W}: SN gets +0/+1 until end of turn.;\
-        At the beginning of your upkeep, you may pay {G}{W}{U}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {G}{W}{U}.;\
+        {W}: SN gets +0/+1 until end of turn.
 timing=main
 requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Arcades Sabboth unless you pay {G}{W}{U}.\nEach untapped creature you control gets +0/+2 as long as it's not attacking.\n{W}: Arcades Sabboth gets +0/+1 until end of turn.

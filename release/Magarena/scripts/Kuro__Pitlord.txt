@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Demon,Spirit
 cost={6}{B}{B}{B}
 pt=9/9
-ability=At the beginning of your upkeep, you may pay {B}{B}{B}{B}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {B}{B}{B}{B}.;\
         Pay 1 life: Target creature gets -1/-1 until end of turn.
 timing=main
 oracle=At the beginning of your upkeep, sacrifice Kuro, Pitlord unless you pay {B}{B}{B}{B}.\nPay 1 life: Target creature gets -1/-1 until end of turn.

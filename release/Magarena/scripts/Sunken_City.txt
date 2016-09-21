@@ -4,7 +4,7 @@ value=3.591
 rarity=U
 type=Enchantment
 cost={U}{U}
-ability=At the beginning of your upkeep, you may pay {U}{U}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {U}{U}.;\
         Blue creatures get +1/+1.
 static=all
 timing=enchantment

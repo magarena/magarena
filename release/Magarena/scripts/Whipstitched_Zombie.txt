@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={1}{B}
 pt=2/2
-ability=At the beginning of your upkeep, you may pay {B}. If you don't, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {B}.
 timing=main
 oracle=At the beginning of your upkeep, sacrifice Whipstitched Zombie unless you pay {B}.
