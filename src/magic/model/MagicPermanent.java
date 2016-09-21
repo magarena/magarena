@@ -435,7 +435,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     private static void updateProperties(final MagicGame game) {
-        for (final MagicLayer layer : MagicLayer.values()) {
+        for (final MagicLayer layer : MagicLayer.PERMANENT) {
             for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicPermanent perm : player.getPermanents()) {
                     perm.apply(layer);

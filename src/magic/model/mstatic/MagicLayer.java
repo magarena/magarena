@@ -1,5 +1,8 @@
 package magic.model.mstatic;
 
+import java.util.EnumSet;
+import java.util.Set;
+
 public enum MagicLayer {
     Card,        //0.  properties from the card, not formally defined in rules
     Copy,        //1.  copy
@@ -21,4 +24,6 @@ public enum MagicLayer {
     CostIncrease,
     CostReduction,
     ;
+
+    public static final Set<MagicLayer> PERMANENT = EnumSet.range(Card, SwitchPT);
 }
