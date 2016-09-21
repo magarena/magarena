@@ -98,7 +98,7 @@ class ColorFBP extends FilterButtonPanel {
 
     @Override
     protected Dimension getPopupDialogSize() {
-        return new Dimension(280, 90);
+        return new Dimension(280, 110);
     }
 
     @Override

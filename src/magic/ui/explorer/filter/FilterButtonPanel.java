@@ -1,7 +1,6 @@
 package magic.ui.explorer.filter;
 
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -9,17 +8,14 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.List;
 import javax.swing.AbstractAction;
-import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
 import magic.ui.theme.ThemeFactory;
 import net.miginfocom.swing.MigLayout;
 
@@ -27,58 +23,8 @@ import net.miginfocom.swing.MigLayout;
 abstract class FilterButtonPanel extends JPanel
     implements IFilterListener {
 
-    /**
-     * Container panel for the search options radio buttons.
-     */
-    protected class SearchOptionsPanel extends JPanel {
-
-        SearchOptionsPanel(IFilterListener aListener, boolean hideAND) {
-            setLayout(new MigLayout("insets 0, gapy 0, flowy"));
-            createRadioButtons(aListener, hideAND);
-            setOpaque(false);
-        }
-
-        private void createRadioButtons(IFilterListener aListener, boolean hideAND) {
-            radioButtons = new JRadioButton[FILTER_CHOICES.length];
-            final ButtonGroup bg = new ButtonGroup();
-            for (int i = 0; i < FILTER_CHOICES.length; i++) {
-                final JRadioButton rb = new JRadioButton(FILTER_CHOICES[i]);
-                rb.addActionListener((e) -> { aListener.filterChanged(); });
-                rb.setOpaque(false);
-                rb.setForeground(TEXT_COLOR);
-                rb.setFocusPainted(true);
-                rb.setAlignmentX(Component.LEFT_ALIGNMENT);
-                rb.setSelected(i == 0);
-                rb.setVisible(i != 1 || (i == 1 && !hideAND));
-                bg.add(rb);
-                add(rb, "hidemode 3");
-                radioButtons[i] = rb;
-            }
-        }
-
-        private String getSelectedOptionText() {
-            for (JRadioButton rb : radioButtons) {
-                if (rb.isSelected()) {
-                    return rb.getText();
-                }
-            }
-            throw new IndexOutOfBoundsException();
-        }
-    }
-
-    // translatable strings
-    private static final String _S1 = "Match any";
-    private static final String _S2 = "Match all";
-    private static final String _S3 = "Exclude";
-
     static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     protected static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-
-    protected final String[] FILTER_CHOICES = {
-        UiString.get(_S1),
-        UiString.get(_S2),
-        UiString.get(_S3)
-    };
 
     // prevents multiple updates of the cards list when resetting multiple
     // filters values at once via reset().
@@ -86,18 +32,17 @@ abstract class FilterButtonPanel extends JPanel
 
     private final ClickPreventer clickPreventer = new ClickPreventer();
     private FilterButton filterButton;
-    private final SearchOptionsPanel searchOptionsPanel;
+    private final FilterOptionsPanel filterOptionsPanel;
 
     protected IFilterListener filterListener;
     protected JDialog popupDialog;
-    protected JRadioButton[] radioButtons;
 
     protected abstract JCheckBox[] getCheckboxes();
     protected abstract boolean isCardValid(final MagicCardDefinition card, final int i);
 
     // CTR
     FilterButtonPanel(String title, String tooltip) {
-        this.searchOptionsPanel = new SearchOptionsPanel(this, hideSearchOptionsAND());
+        this.filterOptionsPanel = new FilterOptionsPanel(this);
         createFilterButton(title, tooltip);
         createFilterPopupDialog();
         setEscapeKeyAction();
@@ -112,7 +57,7 @@ abstract class FilterButtonPanel extends JPanel
 
     // CTR
     public FilterButtonPanel() {
-        this.searchOptionsPanel = null;
+        this.filterOptionsPanel = null;
         setOpaque(false);
     }
 
@@ -177,8 +122,16 @@ abstract class FilterButtonPanel extends JPanel
         filterButton.setActiveFlag(isFilterActive());
     }
 
-    JRadioButton[] getFilterChoices() {
-        return radioButtons;
+    void resetStayOpen() {
+        ignoreFilterChanges = true;
+        for (JCheckBox checkbox : getCheckboxes()) {
+            checkbox.setSelected(false);
+        }
+        filterOptionsPanel.reset();
+        filterButton.setToolTipText(null);
+        filterButton.setActiveFlag(false);
+        ignoreFilterChanges = false;
+        filterListener.filterChanged();
     }
 
     void reset() {
@@ -186,7 +139,7 @@ abstract class FilterButtonPanel extends JPanel
         for (JCheckBox checkbox : getCheckboxes()) {
             checkbox.setSelected(false);
         }
-        radioButtons[0].setSelected(true);
+        filterOptionsPanel.reset();
         filterButton.setToolTipText(null);
         hidePopup();
         ignoreFilterChanges = false;
@@ -208,15 +161,14 @@ abstract class FilterButtonPanel extends JPanel
                 }
             }
         }
-        if (getFilterChoices()[2].isSelected()) {
+        if (filterOptionsPanel.isSelected(SearchOperand.EXCLUDE)) {
             // exclude selected
             return !resultOR;
         }
         // otherwise return OR or AND result
         return !somethingSelected
-            || ((getFilterChoices()[0].isSelected() && resultOR)
-            || (getFilterChoices()[1].isSelected() && resultAND));
-
+            || ((filterOptionsPanel.isSelected(SearchOperand.MATCH_ANY) && resultOR)
+            || (filterOptionsPanel.isSelected(SearchOperand.MATCH_ALL) && resultAND));
     }
 
     boolean doesNotInclude(MagicCardDefinition cardDefinition) {
@@ -234,7 +186,7 @@ abstract class FilterButtonPanel extends JPanel
     }
 
     protected MigLayout getPopupDialogLayout() {
-        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][]");
+        return new MigLayout("flowy, gap 0, insets 0", "[fill, grow]", "[fill, grow][50!, fill]");
     }
 
     protected JComponent getFilterValuesComponent() {
@@ -257,7 +209,7 @@ abstract class FilterButtonPanel extends JPanel
         popupDialog.setSize(getPopupDialogSize());
         popupDialog.setLayout(getPopupDialogLayout());
         popupDialog.add(getFilterValuesComponent());
-        popupDialog.add(searchOptionsPanel);
+        popupDialog.add(filterOptionsPanel);
     }
 
     abstract protected boolean hasActiveFilterValue();
@@ -266,14 +218,14 @@ abstract class FilterButtonPanel extends JPanel
         return null;
     }
 
-    private String getSearchOptionText() {
-        return searchOptionsPanel.getSelectedOptionText();
+    private String getSearchOperandText() {
+        return filterOptionsPanel.getSearchOperandText();
     }
 
     protected String getFilterTooltip(Object[] values, List<Integer> selected) {
         final StringBuilder sb = new StringBuilder();
         if (!selected.isEmpty()) {
-            sb.append("<html><b><p>").append(getSearchOptionText()).append("</p></b>");
+            sb.append("<html><b><p>").append(getSearchOperandText()).append("</p></b>");
             for (Integer i : selected) {
                 sb.append("• ").append(values[i]).append("<br>");
             }
@@ -291,5 +243,5 @@ abstract class FilterButtonPanel extends JPanel
             filterButton.setToolTipText(tooltip.isEmpty() ? null : tooltip);
         }
     }
-    
+
 }
