@@ -4,6 +4,7 @@ image_updated=2016-02-29
 value=2.500
 rarity=U
 type=Land
+mana=u3b3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} or {B} to your mana pool.
 timing=land

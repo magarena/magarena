@@ -4,6 +4,7 @@ image_updated=2016-02-29
 value=2.500
 rarity=R
 type=Land
+mana=b3g3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} or {G} to your mana pool.;\
         {1}{B}{G}: SN becomes a 2/2 black and green Elemental creature with deathtouch until end of turn. It's still a land.

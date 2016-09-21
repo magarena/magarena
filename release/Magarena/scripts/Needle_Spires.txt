@@ -4,6 +4,7 @@ image_updated=2016-02-29
 value=2.500
 rarity=R
 type=Land
+mana=r3w3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {R} or {W} to your mana pool.;\
         {2}{R}{W}: SN becomes a 2/1 red and white Elemental creature with double strike until end of turn. It's still a land.
