@@ -1,0 +1,12 @@
+name=Maulfist Doorbuster
+image=http://magiccards.info/scans/en/kld/123.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={3}{R}
+pt=4/2
+ability=When SN enters the battlefield, you get {E}{E}.;\
+        Whenever SN attacks, you may pay {E}. If you do, target creature can't block this turn.
+timing=main
+oracle=When Maulfist Doorbuster enters the battlefield, you get {E}{E}.\nWhenever Maulfist Doorbuster attacks, you may pay {E}. If you do, target creature can't block this turn.

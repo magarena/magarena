@@ -1,0 +1,10 @@
+name=Cowl Prowler
+image=http://magiccards.info/scans/en/kld/149.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wurm
+cost={4}{G}{G}
+pt=6/6
+timing=main
+oracle=NONE

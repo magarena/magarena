@@ -1,0 +1,11 @@
+name=Weldfast Wingsmith
+image=http://magiccards.info/scans/en/kld/69.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={3}{U}
+pt=3/3
+ability=Whenever an artifact enters the battlefield under your control, SN gains flying until end of turn.
+timing=main
+oracle=Whenever an artifact enters the battlefield under your control, Weldfast Wingsmith gains flying until end of turn.

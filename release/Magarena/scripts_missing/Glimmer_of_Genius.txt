@@ -1,0 +1,9 @@
+name=Glimmer of Genius
+image=http://magiccards.info/scans/en/kld/49.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Scry 2, then draw two cards. You get {E}{E}.
+timing=removal
+oracle=Scry 2, then draw two cards. You get {E}{E}.

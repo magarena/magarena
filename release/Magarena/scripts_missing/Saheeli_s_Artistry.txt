@@ -1,0 +1,9 @@
+name=Saheeli's Artistry
+image=http://magiccards.info/scans/en/kld/62.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{U}{U}
+effect=Choose one or both — (1) Create a token that's a copy of target artifact. (2) Create a token that's a copy of target creature, except it's an artifact in addition to its other types.
+timing=main
+oracle=Choose one or both —\n• Create a token that's a copy of target artifact.\n• Create a token that's a copy of target creature, except it's an artifact in addition to its other types.

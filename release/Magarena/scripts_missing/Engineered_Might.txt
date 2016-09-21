@@ -1,0 +1,9 @@
+name=Engineered Might
+image=http://magiccards.info/scans/en/kld/181.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}{W}
+effect=Choose one — (1) Target creature gets +5/+5 and gains trample until end of turn. (2) Creatures you control get +2/+2 and gain vigilance until end of turn.
+timing=main
+oracle=Choose one —\n• Target creature gets +5/+5 and gains trample until end of turn.\n• Creatures you control get +2/+2 and gain vigilance until end of turn.

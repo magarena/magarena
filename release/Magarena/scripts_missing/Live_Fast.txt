@@ -1,0 +1,9 @@
+name=Live Fast
+image=http://magiccards.info/scans/en/kld/87.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=You draw two cards, lose 2 life, and get {E}{E}.
+timing=main
+oracle=You draw two cards, lose 2 life, and get {E}{E}.

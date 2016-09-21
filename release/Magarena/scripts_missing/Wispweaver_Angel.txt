@@ -1,0 +1,12 @@
+name=Wispweaver Angel
+image=http://magiccards.info/scans/en/kld/35.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={4}{W}{W}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, you may exile another target creature you control, then return that card to the battlefield under its owner's control.
+timing=main
+oracle=Flying\nWhen Wispweaver Angel enters the battlefield, you may exile another target creature you control, then return that card to the battlefield under its owner's control.

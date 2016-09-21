@@ -1,0 +1,9 @@
+name=Built to Last
+image=http://magiccards.info/scans/en/kld/7.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gets +2/+2 until end of turn. If it's an artifact creature, it gains indestructible until end of turn.
+timing=removal
+oracle=Target creature gets +2/+2 until end of turn. If it's an artifact creature, it gains indestructible until end of turn.

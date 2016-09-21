@@ -1,0 +1,14 @@
+name=Skyship Stalker
+image=http://magiccards.info/scans/en/kld/130.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}
+pt=3/3
+ability=Flying;\
+        {R}: SN gets +1/+0 until end of turn.;\
+        {R}: SN gains first strike until end of turn.;\
+        {R}: SN gains haste until end of turn.
+timing=main
+oracle=Flying\n{R}: Skyship Stalker gets +1/+0 until end of turn.\n{R}: Skyship Stalker gains first strike until end of turn.\n{R}: Skyship Stalker gains haste until end of turn.

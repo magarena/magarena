@@ -1,0 +1,11 @@
+name=Wayward Giant
+image=http://magiccards.info/scans/en/kld/139.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Giant
+cost={4}{R}
+pt=4/5
+ability=Menace
+timing=main
+oracle=Menace

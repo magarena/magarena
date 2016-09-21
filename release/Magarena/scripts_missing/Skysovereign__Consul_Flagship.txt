@@ -1,0 +1,13 @@
+name=Skysovereign, Consul Flagship
+image=http://magiccards.info/scans/en/kld/234.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+subtype=Vehicle
+cost={5}
+pt=6/5
+ability=Flying;\
+        Whenever SN enters the battlefield or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.;\
+        Crew 3
+timing=artifact
+oracle=Flying\nWhenever Skysovereign, Consul Flagship enters the battlefield or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.\nCrew 3

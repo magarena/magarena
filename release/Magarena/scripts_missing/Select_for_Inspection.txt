@@ -1,0 +1,9 @@
+name=Select for Inspection
+image=http://magiccards.info/scans/en/kld/63.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+effect=Return target tapped creature to its owner's hand. Scry 1.
+timing=removal
+oracle=Return target tapped creature to its owner's hand. Scry 1.

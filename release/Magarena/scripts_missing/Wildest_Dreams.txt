@@ -1,0 +1,9 @@
+name=Wildest Dreams
+image=http://magiccards.info/scans/en/kld/174.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{X}{G}
+effect=Return X target cards from your graveyard to your hand. Exile SN.
+timing=main
+oracle=Return X target cards from your graveyard to your hand. Exile Wildest Dreams.

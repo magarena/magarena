@@ -1,0 +1,12 @@
+name=Aradara Express
+image=http://magiccards.info/scans/en/kld/195.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Vehicle
+cost={5}
+pt=8/6
+ability=Menace;\
+        Crew 4
+timing=artifact
+oracle=Menace\nCrew 4

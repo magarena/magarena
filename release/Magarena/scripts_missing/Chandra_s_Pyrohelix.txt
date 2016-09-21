@@ -1,0 +1,9 @@
+name=Chandra's Pyrohelix
+image=http://magiccards.info/scans/en/kld/111.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+effect=SN deals 2 damage divided as you choose among one or two target creatures and/or players.
+timing=removal
+oracle=Chandra's Pyrohelix deals 2 damage divided as you choose among one or two target creatures and/or players.

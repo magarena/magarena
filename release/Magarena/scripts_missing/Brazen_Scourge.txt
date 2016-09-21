@@ -1,0 +1,11 @@
+name=Brazen Scourge
+image=http://magiccards.info/scans/en/kld/107.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Gremlin
+cost={1}{R}{R}
+pt=3/3
+ability=Haste
+timing=fmain
+oracle=Haste

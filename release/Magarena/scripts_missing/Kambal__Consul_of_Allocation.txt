@@ -1,0 +1,11 @@
+name=Kambal, Consul of Allocation
+image=http://magiccards.info/scans/en/kld/183.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Advisor
+cost={1}{W}{B}
+pt=2/3
+ability=Whenever an opponent casts a noncreature spell, that player loses 2 life and you gain 2 life.
+timing=main
+oracle=Whenever an opponent casts a noncreature spell, that player loses 2 life and you gain 2 life.

@@ -1,0 +1,12 @@
+name=Aetherborn Marauder
+image=http://magiccards.info/scans/en/kld/71.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Aetherborn,Rogue
+cost={3}{B}
+pt=2/2
+ability=Flying, lifelink;\
+        When SN enters the battlefield, move any number of +1/+1 counters from other permanents you control onto SN.
+timing=main
+oracle=Flying, lifelink\nWhen Aetherborn Marauder enters the battlefield, move any number of +1/+1 counters from other permanents you control onto Aetherborn Marauder.

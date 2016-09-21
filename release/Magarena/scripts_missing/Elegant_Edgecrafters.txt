@@ -1,0 +1,12 @@
+name=Elegant Edgecrafters
+image=http://magiccards.info/scans/en/kld/154.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Artificer
+cost={4}{G}{G}
+pt=3/4
+ability=SN can't be blocked by creatures with power 2 or less.;\
+        Fabricate 2
+timing=main
+oracle=Elegant Edgecrafters can't be blocked by creatures with power 2 or less.\nFabricate 2

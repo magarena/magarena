@@ -1,0 +1,12 @@
+name=Maulfist Squad
+image=http://magiccards.info/scans/en/kld/91.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={3}{B}
+pt=3/1
+ability=Menace;\
+        Fabricate 1
+timing=main
+oracle=Menace\nFabricate 1

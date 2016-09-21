@@ -1,0 +1,10 @@
+name=Dynavolt Tower
+image=http://magiccards.info/scans/en/kld/208.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever you cast an instant or sorcery spell, you get {E}{E}.;\
+        {T}, Pay {E}{E}{E}{E}{E}: SN deals 3 damage to target creature or player.
+timing=artifact
+oracle=Whenever you cast an instant or sorcery spell, you get {E}{E}.\n{T}, Pay {E}{E}{E}{E}{E}: Dynavolt Tower deals 3 damage to target creature or player.

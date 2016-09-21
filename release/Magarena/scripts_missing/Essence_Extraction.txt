@@ -1,0 +1,9 @@
+name=Essence Extraction
+image=http://magiccards.info/scans/en/kld/80.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{B}{B}
+effect=SN deals 3 damage to target creature and you gain 3 life.
+timing=removal
+oracle=Essence Extraction deals 3 damage to target creature and you gain 3 life.

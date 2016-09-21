@@ -1,0 +1,11 @@
+name=Wild Wanderer
+image=http://magiccards.info/scans/en/kld/173.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={3}{G}
+pt=3/2
+ability=When SN enters the battlefield, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=When Wild Wanderer enters the battlefield, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

@@ -1,0 +1,9 @@
+name=Rush of Vitality
+image=http://magiccards.info/scans/en/kld/99.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{B}
+effect=Target creature gets +1/+0 and gains lifelink and indestructible until end of turn.
+timing=removal
+oracle=Target creature gets +1/+0 and gains lifelink and indestructible until end of turn.

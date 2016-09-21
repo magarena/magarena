@@ -1,0 +1,11 @@
+name=Sage of Shaila's Claim
+image=http://magiccards.info/scans/en/kld/168.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=2/1
+ability=When SN enters the battlefield, you get {E}{E}{E}.
+timing=main
+oracle=When Sage of Shaila's Claim enters the battlefield, you get {E}{E}{E}.

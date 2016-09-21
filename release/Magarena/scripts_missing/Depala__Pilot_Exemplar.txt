@@ -1,0 +1,13 @@
+name=Depala, Pilot Exemplar
+image=http://magiccards.info/scans/en/kld/178.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Dwarf,Pilot
+cost={1}{R}{W}
+pt=3/3
+ability=Other Dwarves you control get +1/+1.;\
+        Each Vehicle you control gets +1/+1 as long as it's a creature.;\
+        Whenever SN becomes tapped, you may pay {X}. If you do, reveal the top X cards of your library, put all Dwarf and Vehicle cards from among them into your hand, then put the rest on the bottom of your library in a random order.
+timing=main
+oracle=Other Dwarves you control get +1/+1.\nEach Vehicle you control gets +1/+1 as long as it's a creature.\nWhenever Depala, Pilot Exemplar becomes tapped, you may pay {X}. If you do, reveal the top X cards of your library, put all Dwarf and Vehicle cards from among them into your hand, then put the rest on the bottom of your library in a random order.

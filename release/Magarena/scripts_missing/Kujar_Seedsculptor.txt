@@ -1,0 +1,11 @@
+name=Kujar Seedsculptor
+image=http://magiccards.info/scans/en/kld/159.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=1/2
+ability=When SN enters the battlefield, put a +1/+1 counter on target creature you control.
+timing=main
+oracle=When Kujar Seedsculptor enters the battlefield, put a +1/+1 counter on target creature you control.

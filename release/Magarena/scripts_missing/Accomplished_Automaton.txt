@@ -1,0 +1,11 @@
+name=Accomplished Automaton
+image=http://magiccards.info/scans/en/kld/191.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={7}
+pt=5/7
+ability=Fabricate 1
+timing=main
+oracle=Fabricate 1

@@ -1,0 +1,13 @@
+name=Smuggler's Copter
+image=http://magiccards.info/scans/en/kld/235.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={2}
+pt=3/3
+ability=Flying;\
+        Whenever SN attacks or blocks, you may draw a card. If you do, discard a card.;\
+        Crew 1
+timing=artifact
+oracle=Flying\nWhenever Smuggler's Copter attacks or blocks, you may draw a card. If you do, discard a card.\nCrew 1

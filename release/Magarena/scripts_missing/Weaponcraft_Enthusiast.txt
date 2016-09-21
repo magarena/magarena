@@ -1,0 +1,11 @@
+name=Weaponcraft Enthusiast
+image=http://magiccards.info/scans/en/kld/105.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Aetherborn,Artificer
+cost={2}{B}
+pt=0/1
+ability=Fabricate 2
+timing=main
+oracle=Fabricate 2

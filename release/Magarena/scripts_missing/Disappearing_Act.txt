@@ -1,0 +1,10 @@
+name=Disappearing Act
+image=http://magiccards.info/scans/en/kld/43.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}{U}
+ability=As an additional cost to cast SN, return a permanent you control to its owner's hand.
+effect=Counter target spell.
+timing=counter
+oracle=As an additional cost to cast Disappearing Act, return a permanent you control to its owner's hand.\nCounter target spell.

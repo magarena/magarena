@@ -1,0 +1,11 @@
+name=Night Market Lookout
+image=http://magiccards.info/scans/en/kld/95.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={B}
+pt=1/1
+ability=Whenever SN becomes tapped, each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Whenever Night Market Lookout becomes tapped, each opponent loses 1 life and you gain 1 life.

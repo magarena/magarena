@@ -1,0 +1,12 @@
+name=Propeller Pioneer
+image=http://magiccards.info/scans/en/kld/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={3}{W}
+pt=2/1
+ability=Flying;\
+        Fabricate 1
+timing=main
+oracle=Flying\nFabricate 1

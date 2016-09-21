@@ -1,0 +1,9 @@
+name=Tezzeret's Ambition
+image=http://magiccards.info/scans/en/kld/65.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{U}{U}
+effect=Draw three cards. If you control no artifacts, discard a card.
+timing=main
+oracle=Draw three cards. If you control no artifacts, discard a card.

@@ -1,0 +1,11 @@
+name=Spireside Infiltrator
+image=http://magiccards.info/scans/en/kld/133.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={2}{R}
+pt=3/2
+ability=Whenever SN becomes tapped, it deals 1 damage to each opponent.
+timing=main
+oracle=Whenever Spireside Infiltrator becomes tapped, it deals 1 damage to each opponent.

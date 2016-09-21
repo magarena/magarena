@@ -1,0 +1,10 @@
+name=Consulate Surveillance
+image=http://magiccards.info/scans/en/kld/10.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=When SN enters the battlefield, you get {E}{E}{E}{E}.;\
+        Pay {E}{E}: Prevent all damage that would be dealt to you this turn by a source of your choice.
+timing=enchantment
+oracle=When Consulate Surveillance enters the battlefield, you get {E}{E}{E}{E}.\nPay {E}{E}: Prevent all damage that would be dealt to you this turn by a source of your choice.

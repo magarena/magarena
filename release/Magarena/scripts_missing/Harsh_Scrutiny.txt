@@ -1,0 +1,9 @@
+name=Harsh Scrutiny
+image=http://magiccards.info/scans/en/kld/85.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={B}
+effect=Target opponent reveals his or her hand. You choose a creature card from it. That player discards that card. Scry 1.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a creature card from it. That player discards that card. Scry 1.

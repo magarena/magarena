@@ -1,0 +1,10 @@
+name=Ghirapur Orrery
+image=http://magiccards.info/scans/en/kld/216.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability=Each player may play an additional land on each of his or her turns.;\
+        At the beginning of each player's upkeep, if that player has no cards in hand, that player draws three cards.
+timing=artifact
+oracle=Each player may play an additional land on each of his or her turns.\nAt the beginning of each player's upkeep, if that player has no cards in hand, that player draws three cards.

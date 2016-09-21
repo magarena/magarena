@@ -1,0 +1,9 @@
+name=Built to Smash
+image=http://magiccards.info/scans/en/kld/108.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={R}
+effect=Target attacking creature gets +3/+3 until end of turn. If it's an artifact creature, it gains trample until end of turn.
+timing=removal
+oracle=Target attacking creature gets +3/+3 until end of turn. If it's an artifact creature, it gains trample until end of turn.

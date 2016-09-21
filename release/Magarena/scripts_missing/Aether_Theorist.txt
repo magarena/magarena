@@ -1,0 +1,12 @@
+name=Aether Theorist
+image=http://magiccards.info/scans/en/kld/37.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Rogue
+cost={1}{U}
+pt=1/3
+ability=When SN enters the battlefield, you get {E}{E}{E}.;\
+        {T}, Pay {E}: Scry 1.
+timing=main
+oracle=When Aether Theorist enters the battlefield, you get {E}{E}{E}.\n{T}, Pay {E}: Scry 1.

@@ -1,0 +1,9 @@
+name=Ceremonious Rejection
+image=http://magiccards.info/scans/en/kld/40.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}
+effect=Counter target colorless spell.
+timing=counter
+oracle=Counter target colorless spell.

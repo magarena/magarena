@@ -1,0 +1,13 @@
+name=Captured by the Consulate
+image=http://magiccards.info/scans/en/kld/8.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant creature you don't control;\
+        Enchanted creature can't attack.;\
+        Whenever an opponent casts a spell, if it has a single target, change the target to enchanted creature if able.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature you don't control\nEnchanted creature can't attack.\nWhenever an opponent casts a spell, if it has a single target, change the target to enchanted creature if able.

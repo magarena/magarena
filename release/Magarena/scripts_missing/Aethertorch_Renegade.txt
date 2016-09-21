@@ -1,0 +1,13 @@
+name=Aethertorch Renegade
+image=http://magiccards.info/scans/en/kld/106.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={2}{R}
+pt=1/2
+ability=When SN enters the battlefield, you get {E}{E}{E}{E}.;\
+        {T}, Pay {E}{E}: SN deals 1 damage to target creature.;\
+        {T}, Pay {E}{E}{E}{E}{E}{E}{E}{E}: SN deals 6 damage to target player.
+timing=main
+oracle=When Aethertorch Renegade enters the battlefield, you get {E}{E}{E}{E}.\n{T}, Pay {E}{E}: Aethertorch Renegade deals 1 damage to target creature.\n{T}, Pay {E}{E}{E}{E}{E}{E}{E}{E}: Aethertorch Renegade deals 6 damage to target player.

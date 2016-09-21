@@ -1,0 +1,9 @@
+name=Fragmentize
+image=http://magiccards.info/scans/en/kld/14.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={W}
+effect=Destroy target artifact or enchantment with converted mana cost 4 or less.
+timing=main
+oracle=Destroy target artifact or enchantment with converted mana cost 4 or less.

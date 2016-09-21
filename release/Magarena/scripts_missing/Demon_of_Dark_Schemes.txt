@@ -1,0 +1,14 @@
+name=Demon of Dark Schemes
+image=http://magiccards.info/scans/en/kld/73.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Demon
+cost={3}{B}{B}{B}
+pt=5/5
+ability=Flying;\
+        When SN enters the battlefield, all other creatures get -2/-2 until end of turn.;\
+        Whenever another creature dies, you get {E}.;\
+        {2}{B}, Pay {E}{E}{E}{E}: Put target creature card from a graveyard onto the battlefield under your control tapped.
+timing=main
+oracle=Flying\nWhen Demon of Dark Schemes enters the battlefield, all other creatures get -2/-2 until end of turn.\nWhenever another creature dies, you get {E}.\n{2}{B}, Pay {E}{E}{E}{E}: Put target creature card from a graveyard onto the battlefield under your control tapped.

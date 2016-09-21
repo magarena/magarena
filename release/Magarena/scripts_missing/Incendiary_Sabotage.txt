@@ -1,0 +1,10 @@
+name=Incendiary Sabotage
+image=http://magiccards.info/scans/en/kld/119.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}{R}
+ability=As an additional cost to cast SN, sacrifice an artifact.
+effect=SN deals 3 damage to each creature.
+timing=removal
+oracle=As an additional cost to cast Incendiary Sabotage, sacrifice an artifact.\nIncendiary Sabotage deals 3 damage to each creature.

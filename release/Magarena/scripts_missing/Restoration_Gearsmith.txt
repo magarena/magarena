@@ -1,0 +1,11 @@
+name=Restoration Gearsmith
+image=http://magiccards.info/scans/en/kld/185.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={2}{W}{B}
+pt=3/3
+ability=When SN enters the battlefield, return target artifact or creature card from your graveyard to your hand.
+timing=main
+oracle=When Restoration Gearsmith enters the battlefield, return target artifact or creature card from your graveyard to your hand.

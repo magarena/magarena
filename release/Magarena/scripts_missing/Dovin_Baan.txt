@@ -1,0 +1,13 @@
+name=Dovin Baan
+image=http://magiccards.info/scans/en/kld/179.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Dovin
+cost={2}{W}{U}
+loyalty=3
+ability=+1: Until your next turn, up to one target creature gets -3/-0 and its activated abilities can't be activated.;\
+        −1: You gain 2 life and draw a card.;\
+        −7: You get an emblem with "Your opponents can't untap more than two permanents during their untap steps."
+timing=main
+oracle=+1: Until your next turn, up to one target creature gets -3/-0 and its activated abilities can't be activated.\n−1: You gain 2 life and draw a card.\n−7: You get an emblem with "Your opponents can't untap more than two permanents during their untap steps."

@@ -1,0 +1,11 @@
+name=Ruinous Gremlin
+image=http://magiccards.info/scans/en/kld/128.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Gremlin
+cost={R}
+pt=1/1
+ability={2}{R}, Sacrifice SN: Destroy target artifact.
+timing=main
+oracle={2}{R}, Sacrifice Ruinous Gremlin: Destroy target artifact.

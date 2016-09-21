@@ -1,0 +1,12 @@
+name=Minister of Inquiries
+image=http://magiccards.info/scans/en/kld/57.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vedalken,Advisor
+cost={U}
+pt=1/2
+ability=When SN enters the battlefield, you get {E}{E}.;\
+        {T}, Pay {E}: Target player puts the top three cards of his or her library into his or her graveyard.
+timing=main
+oracle=When Minister of Inquiries enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Target player puts the top three cards of his or her library into his or her graveyard.

@@ -1,0 +1,9 @@
+name=Fumigate
+image=http://magiccards.info/scans/en/kld/15.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Destroy all creatures. You gain 1 life for each creature destroyed this way.
+timing=main
+oracle=Destroy all creatures. You gain 1 life for each creature destroyed this way.

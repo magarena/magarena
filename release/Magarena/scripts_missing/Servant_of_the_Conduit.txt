@@ -1,0 +1,12 @@
+name=Servant of the Conduit
+image=http://magiccards.info/scans/en/kld/169.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=2/2
+ability=When SN enters the battlefield, you get {E}{E}.;\
+        {T}, Pay {E}: Add one mana of any color to your mana pool.
+timing=main
+oracle=When Servant of the Conduit enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Add one mana of any color to your mana pool.

@@ -1,0 +1,12 @@
+name=Experimental Aviator
+image=http://magiccards.info/scans/en/kld/46.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={3}{U}{U}
+pt=0/3
+ability=Flying;\
+        When SN enters the battlefield, create two 1/1 colorless Thopter artifact creature tokens with flying.
+timing=main
+oracle=Flying\nWhen Experimental Aviator enters the battlefield, create two 1/1 colorless Thopter artifact creature tokens with flying.

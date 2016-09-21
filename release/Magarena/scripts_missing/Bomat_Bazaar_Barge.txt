@@ -1,0 +1,12 @@
+name=Bomat Bazaar Barge
+image=http://magiccards.info/scans/en/kld/198.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={4}
+pt=5/5
+ability=When SN enters the battlefield, draw a card.;\
+        Crew 3
+timing=artifact
+oracle=When Bomat Bazaar Barge enters the battlefield, draw a card.\nCrew 3

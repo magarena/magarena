@@ -1,0 +1,12 @@
+name=Foundry Screecher
+image=http://magiccards.info/scans/en/kld/82.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bat
+cost={2}{B}
+pt=2/1
+ability=Flying;\
+        SN gets +1/+0 as long as you control an artifact.
+timing=main
+oracle=Flying\nFoundry Screecher gets +1/+0 as long as you control an artifact.

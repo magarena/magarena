@@ -1,0 +1,11 @@
+name=Snare Thopter
+image=http://magiccards.info/scans/en/kld/236.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Thopter
+cost={4}
+pt=3/2
+ability=Flying, haste
+timing=main
+oracle=Flying, haste

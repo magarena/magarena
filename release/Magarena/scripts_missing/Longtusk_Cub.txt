@@ -1,0 +1,12 @@
+name=Longtusk Cub
+image=http://magiccards.info/scans/en/kld/161.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat
+cost={1}{G}
+pt=2/2
+ability=Whenever SN deals combat damage to a player, you get {E}{E}.;\
+        Pay {E}{E}: Put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever Longtusk Cub deals combat damage to a player, you get {E}{E}.\nPay {E}{E}: Put a +1/+1 counter on Longtusk Cub.

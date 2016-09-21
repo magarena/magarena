@@ -1,0 +1,13 @@
+name=Fleetwheel Cruiser
+image=http://magiccards.info/scans/en/kld/214.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={4}
+pt=5/3
+ability=Trample, haste;\
+        When SN enters the battlefield, it becomes an artifact creature until end of turn.;\
+        Crew 2
+timing=artifact
+oracle=Trample, haste\nWhen Fleetwheel Cruiser enters the battlefield, it becomes an artifact creature until end of turn.\nCrew 2

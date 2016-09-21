@@ -1,0 +1,11 @@
+name=Workshop Assistant
+image=http://magiccards.info/scans/en/kld/241.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=1/2
+ability=When SN dies, return another target artifact card from your graveyard to your hand.
+timing=main
+oracle=When Workshop Assistant dies, return another target artifact card from your graveyard to your hand.

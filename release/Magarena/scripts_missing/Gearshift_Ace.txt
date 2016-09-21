@@ -1,0 +1,12 @@
+name=Gearshift Ace
+image=http://magiccards.info/scans/en/kld/16.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Pilot
+cost={1}{W}
+pt=2/1
+ability=First strike;\
+        Whenever SN crews a Vehicle, that Vehicle gains first strike until end of turn.
+timing=main
+oracle=First strike\nWhenever Gearshift Ace crews a Vehicle, that Vehicle gains first strike until end of turn.

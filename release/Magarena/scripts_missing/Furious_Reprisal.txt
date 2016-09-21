@@ -1,0 +1,9 @@
+name=Furious Reprisal
+image=http://magiccards.info/scans/en/kld/115.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=SN deals 2 damage to each of two target creatures and/or players.
+timing=main
+oracle=Furious Reprisal deals 2 damage to each of two target creatures and/or players.

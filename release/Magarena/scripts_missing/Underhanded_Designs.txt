@@ -1,0 +1,10 @@
+name=Underhanded Designs
+image=http://magiccards.info/scans/en/kld/104.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{B}
+ability=Whenever an artifact enters the battlefield under your control, you may pay {1}. If you do, each opponent loses 1 life and you gain 1 life.;\
+        {1}{B}, Sacrifice SN: Destroy target creature. Activate this ability only if you control two or more artifacts.
+timing=enchantment
+oracle=Whenever an artifact enters the battlefield under your control, you may pay {1}. If you do, each opponent loses 1 life and you gain 1 life.\n{1}{B}, Sacrifice Underhanded Designs: Destroy target creature. Activate this ability only if you control two or more artifacts.

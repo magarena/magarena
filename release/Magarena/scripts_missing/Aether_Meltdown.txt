@@ -1,0 +1,14 @@
+name=Aether Meltdown
+image=http://magiccards.info/scans/en/kld/36.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Flash;\
+        Enchant creature or Vehicle;\
+        When SN enters the battlefield, you get {E}{E}.;\
+        Enchanted permanent gets -4/-0.
+timing=flash
+enchant=default,creature
+oracle=Flash\nEnchant creature or Vehicle\nWhen Aether Meltdown enters the battlefield, you get {E}{E}.\nEnchanted permanent gets -4/-0.

@@ -1,0 +1,9 @@
+name=Botanical Sanctum
+image=http://magiccards.info/scans/en/kld/244.jpg
+value=2.500
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped unless you control two or fewer other lands.;\
+        {T}: Add {G} or {U} to your mana pool.
+timing=land
+oracle=Botanical Sanctum enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {G} or {U} to your mana pool.

@@ -1,0 +1,12 @@
+name=Revoke Privileges
+image=http://magiccards.info/scans/en/kld/26.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Enchanted creature can't attack, block, or crew Vehicles.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature can't attack, block, or crew Vehicles.

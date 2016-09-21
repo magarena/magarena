@@ -1,0 +1,11 @@
+name=Dhund Operative
+image=http://magiccards.info/scans/en/kld/74.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={1}{B}
+pt=2/2
+ability=As long as you control an artifact, SN gets +1/+0 and has deathtouch.
+timing=main
+oracle=As long as you control an artifact, Dhund Operative gets +1/+0 and has deathtouch.

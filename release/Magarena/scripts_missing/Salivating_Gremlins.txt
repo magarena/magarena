@@ -1,0 +1,11 @@
+name=Salivating Gremlins
+image=http://magiccards.info/scans/en/kld/129.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Gremlin
+cost={2}{R}
+pt=2/3
+ability=Whenever an artifact enters the battlefield under your control, SN gets +2/+0 and gains trample until end of turn.
+timing=main
+oracle=Whenever an artifact enters the battlefield under your control, Salivating Gremlins gets +2/+0 and gains trample until end of turn.

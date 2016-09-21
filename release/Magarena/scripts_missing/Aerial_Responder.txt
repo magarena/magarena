@@ -1,0 +1,11 @@
+name=Aerial Responder
+image=http://magiccards.info/scans/en/kld/2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Soldier
+cost={1}{W}{W}
+pt=2/3
+ability=Flying, vigilance, lifelink
+timing=main
+oracle=Flying, vigilance, lifelink

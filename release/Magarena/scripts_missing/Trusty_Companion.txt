@@ -1,0 +1,12 @@
+name=Trusty Companion
+image=http://magiccards.info/scans/en/kld/33.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Hyena
+cost={1}{W}
+pt=3/2
+ability=Vigilance;\
+        SN can't attack alone.
+timing=main
+oracle=Vigilance\nTrusty Companion can't attack alone.

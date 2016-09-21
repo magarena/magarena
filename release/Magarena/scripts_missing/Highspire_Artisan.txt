@@ -1,0 +1,12 @@
+name=Highspire Artisan
+image=http://magiccards.info/scans/en/kld/157.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Artificer
+cost={2}{G}
+pt=0/3
+ability=Reach;\
+        Fabricate 1
+timing=main
+oracle=Reach\nFabricate 1

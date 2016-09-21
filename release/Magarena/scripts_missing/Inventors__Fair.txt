@@ -1,0 +1,10 @@
+name=Inventors' Fair
+image=http://magiccards.info/scans/en/kld/247.jpg
+value=2.500
+rarity=R
+type=Legendary,Land
+ability=At the beginning of your upkeep, if you control three or more artifacts, you gain 1 life.;\
+        {T}: Add {C} to your mana pool.;\
+        {4}, {T}, Sacrifice SN: Search your library for an artifact card, reveal it, put it into your hand, then shuffle your library. Activate this ability only if you control three or more artifacts.
+timing=land
+oracle=At the beginning of your upkeep, if you control three or more artifacts, you gain 1 life.\n{T}: Add {C} to your mana pool.\n{4}, {T}, Sacrifice Inventors' Fair: Search your library for an artifact card, reveal it, put it into your hand, then shuffle your library. Activate this ability only if you control three or more artifacts.

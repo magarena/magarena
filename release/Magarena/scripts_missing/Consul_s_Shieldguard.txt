@@ -1,0 +1,12 @@
+name=Consul's Shieldguard
+image=http://magiccards.info/scans/en/kld/11.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Soldier
+cost={3}{W}
+pt=3/4
+ability=When SN enters the battlefield, you get {E}{E}.;\
+        Whenever SN attacks, you may pay {E}. If you do, another target attacking creature gains indestructible until end of turn.
+timing=main
+oracle=When Consul's Shieldguard enters the battlefield, you get {E}{E}.\nWhenever Consul's Shieldguard attacks, you may pay {E}. If you do, another target attacking creature gains indestructible until end of turn.

@@ -1,0 +1,12 @@
+name=Iron League Steed
+image=http://magiccards.info/scans/en/kld/219.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=2/2
+ability=Haste;\
+        Fabricate 1
+timing=fmain
+oracle=Haste\nFabricate 1

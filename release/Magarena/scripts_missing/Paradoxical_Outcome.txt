@@ -1,0 +1,9 @@
+name=Paradoxical Outcome
+image=http://magiccards.info/scans/en/kld/60.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}
+effect=Return any number of target nonland, nontoken permanents you control to their owners' hands. Draw a card for each card returned to your hand this way.
+timing=removal
+oracle=Return any number of target nonland, nontoken permanents you control to their owners' hands. Draw a card for each card returned to your hand this way.

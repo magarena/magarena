@@ -1,0 +1,11 @@
+name=Narnam Cobra
+image=http://magiccards.info/scans/en/kld/224.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Snake
+cost={2}
+pt=2/1
+ability={G}: SN gains deathtouch until end of turn.
+timing=main
+oracle={G}: Narnam Cobra gains deathtouch until end of turn.

@@ -1,0 +1,9 @@
+name=Appetite for the Unnatural
+image=http://magiccards.info/scans/en/kld/141.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Destroy target artifact or enchantment. You gain 2 life.
+timing=removal
+oracle=Destroy target artifact or enchantment. You gain 2 life.

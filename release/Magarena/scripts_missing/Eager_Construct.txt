@@ -1,0 +1,11 @@
+name=Eager Construct
+image=http://magiccards.info/scans/en/kld/209.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=2/2
+ability=When SN enters the battlefield, each player may scry 1.
+timing=main
+oracle=When Eager Construct enters the battlefield, each player may scry 1.

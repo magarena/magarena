@@ -1,0 +1,12 @@
+name=Noxious Gearhulk
+image=http://magiccards.info/scans/en/mps/96.jpg
+value=2.500
+rarity=M
+type=Artifact,Creature
+subtype=Construct
+cost={4}{B}{B}
+pt=5/4
+ability=Menace;\
+        When SN enters the battlefield, you may destroy another target creature. If a creature is destroyed this way, you gain life equal to its toughness.
+timing=main
+oracle=Menace\nWhen Noxious Gearhulk enters the battlefield, you may destroy another target creature. If a creature is destroyed this way, you gain life equal to its toughness.

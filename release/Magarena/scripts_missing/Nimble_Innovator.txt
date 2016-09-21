@@ -1,0 +1,11 @@
+name=Nimble Innovator
+image=http://magiccards.info/scans/en/kld/58.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Artificer
+cost={3}{U}
+pt=2/2
+ability=When SN enters the battlefield, draw a card.
+timing=main
+oracle=When Nimble Innovator enters the battlefield, draw a card.

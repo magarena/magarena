@@ -1,0 +1,10 @@
+name=Decoction Module
+image=http://magiccards.info/scans/en/kld/205.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability=Whenever a creature enters the battlefield under your control, you get {E}.;\
+        {4}, {T}: Return target creature you control to its owner's hand.
+timing=artifact
+oracle=Whenever a creature enters the battlefield under your control, you get {E}.\n{4}, {T}: Return target creature you control to its owner's hand.

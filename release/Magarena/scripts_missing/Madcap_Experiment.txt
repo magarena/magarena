@@ -1,0 +1,9 @@
+name=Madcap Experiment
+image=http://magiccards.info/scans/en/kld/122.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{R}
+effect=Reveal cards from the top of your library until you reveal an artifact card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. SN deals damage to you equal to the number of cards revealed this way.
+timing=main
+oracle=Reveal cards from the top of your library until you reveal an artifact card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. Madcap Experiment deals damage to you equal to the number of cards revealed this way.

@@ -1,0 +1,13 @@
+name=Angel of Invention
+image=http://magiccards.info/scans/en/kld/4.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=2/1
+ability=Flying, vigilance, lifelink;\
+        Fabricate 2;\
+        Other creatures you control get +1/+1.
+timing=main
+oracle=Flying, vigilance, lifelink\nFabricate 2\nOther creatures you control get +1/+1.

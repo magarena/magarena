@@ -1,0 +1,12 @@
+name=Gonti, Lord of Luxury
+image=http://magiccards.info/scans/en/kld/84.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Aetherborn,Rogue
+cost={2}{B}{B}
+pt=2/3
+ability=Deathtouch;\
+        When SN enters the battlefield, look at the top four cards of target opponent's library, exile one of them face down, then put the rest on the bottom of that library in a random order. For as long as that card remains exiled, you may look at it, you may cast it, and you may spend mana as though it were mana of any type to cast it.
+timing=main
+oracle=Deathtouch\nWhen Gonti, Lord of Luxury enters the battlefield, look at the top four cards of target opponent's library, exile one of them face down, then put the rest on the bottom of that library in a random order. For as long as that card remains exiled, you may look at it, you may cast it, and you may spend mana as though it were mana of any type to cast it.

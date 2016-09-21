@@ -1,0 +1,9 @@
+name=Shrewd Negotiation
+image=http://magiccards.info/scans/en/kld/64.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{U}
+effect=Exchange control of target artifact you control and target artifact or creature you don't control.
+timing=main
+oracle=Exchange control of target artifact you control and target artifact or creature you don't control.

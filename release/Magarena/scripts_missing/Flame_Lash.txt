@@ -1,0 +1,9 @@
+name=Flame Lash
+image=http://magiccards.info/scans/en/kld/266.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+effect=SN deals 4 damage to target creature or player.
+timing=removal
+oracle=Flame Lash deals 4 damage to target creature or player.

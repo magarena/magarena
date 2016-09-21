@@ -1,0 +1,12 @@
+name=Architect of the Untamed
+image=http://magiccards.info/scans/en/kld/143.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Artificer,Druid
+cost={2}{G}
+pt=2/3
+ability=Whenever a land enters the battlefield under your control, you get {E}.;\
+        Pay {E}{E}{E}{E}{E}{E}{E}{E}: Create a 6/6 colorless Beast artifact creature token.
+timing=main
+oracle=Whenever a land enters the battlefield under your control, you get {E}.\nPay {E}{E}{E}{E}{E}{E}{E}{E}: Create a 6/6 colorless Beast artifact creature token.

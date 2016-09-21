@@ -1,0 +1,11 @@
+name=Weldfast Monitor
+image=http://magiccards.info/scans/en/kld/238.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Lizard
+cost={3}
+pt=3/2
+ability={R}: SN gains menace until end of turn.
+timing=main
+oracle={R}: Weldfast Monitor gains menace until end of turn.

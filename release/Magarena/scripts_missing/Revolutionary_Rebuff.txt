@@ -1,0 +1,9 @@
+name=Revolutionary Rebuff
+image=http://magiccards.info/scans/en/kld/61.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target nonartifact spell unless its controller pays {2}.
+timing=counter
+oracle=Counter target nonartifact spell unless its controller pays {2}.

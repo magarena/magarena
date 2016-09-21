@@ -1,0 +1,12 @@
+name=Spontaneous Artist
+image=http://magiccards.info/scans/en/kld/134.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, you get {E}.;\
+        Pay {E}: Target creature gains haste until end of turn.
+timing=main
+oracle=When Spontaneous Artist enters the battlefield, you get {E}.\nPay {E}: Target creature gains haste until end of turn.

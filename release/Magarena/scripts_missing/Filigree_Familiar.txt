@@ -1,0 +1,12 @@
+name=Filigree Familiar
+image=http://magiccards.info/scans/en/kld/212.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Fox
+cost={3}
+pt=2/2
+ability=When SN enters the battlefield, you gain 2 life.;\
+        When SN dies, draw a card.
+timing=main
+oracle=When Filigree Familiar enters the battlefield, you gain 2 life.\nWhen Filigree Familiar dies, draw a card.

@@ -1,0 +1,11 @@
+name=Reckless Fireweaver
+image=http://magiccards.info/scans/en/kld/126.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={1}{R}
+pt=1/3
+ability=Whenever an artifact enters the battlefield under your control, SN deals 1 damage to each opponent.
+timing=main
+oracle=Whenever an artifact enters the battlefield under your control, Reckless Fireweaver deals 1 damage to each opponent.

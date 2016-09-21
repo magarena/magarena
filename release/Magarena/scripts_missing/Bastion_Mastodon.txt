@@ -1,0 +1,11 @@
+name=Bastion Mastodon
+image=http://magiccards.info/scans/en/kld/197.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Elephant
+cost={5}
+pt=4/5
+ability={W}: SN gains vigilance until end of turn.
+timing=main
+oracle={W}: Bastion Mastodon gains vigilance until end of turn.

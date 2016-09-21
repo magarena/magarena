@@ -1,0 +1,12 @@
+name=Cultivator's Caravan
+image=http://magiccards.info/scans/en/kld/203.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=5/5
+ability={T}: Add one mana of any color to your mana pool.;\
+        Crew 3
+timing=artifact
+oracle={T}: Add one mana of any color to your mana pool.\nCrew 3

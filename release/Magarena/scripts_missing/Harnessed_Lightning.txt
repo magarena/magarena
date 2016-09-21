@@ -1,0 +1,9 @@
+name=Harnessed Lightning
+image=http://magiccards.info/scans/en/kld/117.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Choose target creature. You get {E}{E}{E}, then you may pay any amount of {E}. SN deals that much damage to that creature.
+timing=removal
+oracle=Choose target creature. You get {E}{E}{E}, then you may pay any amount of {E}. Harnessed Lightning deals that much damage to that creature.

@@ -1,0 +1,11 @@
+name=Renegade Firebrand
+image=http://magiccards.info/scans/en/kld/268.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=3/2
+ability=As long as you control a Chandra planeswalker, SN gets +1/+0 and has first strike.
+timing=main
+oracle=As long as you control a Chandra planeswalker, Renegade Firebrand gets +1/+0 and has first strike.

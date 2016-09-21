@@ -1,0 +1,11 @@
+name=Vedalken Blademaster
+image=http://magiccards.info/scans/en/kld/68.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Soldier
+cost={2}{U}
+pt=2/3
+ability=Prowess
+timing=main
+oracle=Prowess

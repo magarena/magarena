@@ -1,0 +1,12 @@
+name=Cataclysmic Gearhulk
+image=http://magiccards.info/scans/en/mps/9.jpg
+value=2.500
+rarity=M
+type=Artifact,Creature
+subtype=Construct
+cost={3}{W}{W}
+pt=4/5
+ability=Vigilance;\
+        When SN enters the battlefield, each player chooses an artifact, a creature, an enchantment, and a planeswalker from among the nonland permanents he or she controls, then sacrifices the rest.
+timing=main
+oracle=Vigilance\nWhen Cataclysmic Gearhulk enters the battlefield, each player chooses an artifact, a creature, an enchantment, and a planeswalker from among the nonland permanents he or she controls, then sacrifices the rest.

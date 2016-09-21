@@ -1,0 +1,12 @@
+name=Electrostatic Pummeler
+image=http://magiccards.info/scans/en/kld/210.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=1/1
+ability=When SN enters the battlefield, you get {E}{E}{E}.;\
+        Pay {E}{E}{E}: SN gets +X/+X until end of turn, where X is its power.
+timing=main
+oracle=When Electrostatic Pummeler enters the battlefield, you get {E}{E}{E}.\nPay {E}{E}{E}: Electrostatic Pummeler gets +X/+X until end of turn, where X is its power.

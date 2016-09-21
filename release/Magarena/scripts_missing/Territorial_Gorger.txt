@@ -1,0 +1,12 @@
+name=Territorial Gorger
+image=http://magiccards.info/scans/en/kld/136.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Gremlin
+cost={3}{R}
+pt=2/2
+ability=Trample;\
+        Whenever you get one or more {E}, SN gets +2/+2 until end of turn.
+timing=main
+oracle=Trample\nWhenever you get one or more {E}, Territorial Gorger gets +2/+2 until end of turn.

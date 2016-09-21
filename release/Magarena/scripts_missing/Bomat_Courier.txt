@@ -1,0 +1,13 @@
+name=Bomat Courier
+image=http://magiccards.info/scans/en/kld/199.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={1}
+pt=1/1
+ability=Haste;\
+        Whenever SN attacks, exile the top card of your library face down.;\
+        {R}, Discard your hand, Sacrifice SN: Put all cards exiled with SN into their owners' hands.
+timing=fmain
+oracle=Haste\nWhenever Bomat Courier attacks, exile the top card of your library face down.\n{R}, Discard your hand, Sacrifice Bomat Courier: Put all cards exiled with Bomat Courier into their owners' hands.

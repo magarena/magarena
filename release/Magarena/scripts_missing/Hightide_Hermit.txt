@@ -1,0 +1,13 @@
+name=Hightide Hermit
+image=http://magiccards.info/scans/en/kld/51.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Crab
+cost={4}{U}
+pt=4/4
+ability=Defender;\
+        When SN enters the battlefield, you get {E}{E}{E}{E}.;\
+        Pay {E}{E}: SN can attack this turn as though it didn't have defender.
+timing=smain
+oracle=Defender\nWhen Hightide Hermit enters the battlefield, you get {E}{E}{E}{E}.\nPay {E}{E}: Hightide Hermit can attack this turn as though it didn't have defender.

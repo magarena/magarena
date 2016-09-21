@@ -1,0 +1,12 @@
+name=Peema Outrider
+image=http://magiccards.info/scans/en/kld/166.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Artificer
+cost={2}{G}{G}
+pt=3/3
+ability=Trample;\
+        Fabricate 1
+timing=main
+oracle=Trample\nFabricate 1

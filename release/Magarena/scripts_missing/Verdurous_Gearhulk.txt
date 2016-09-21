@@ -1,0 +1,12 @@
+name=Verdurous Gearhulk
+image=http://magiccards.info/scans/en/mps/172.jpg
+value=2.500
+rarity=M
+type=Artifact,Creature
+subtype=Construct
+cost={3}{G}{G}
+pt=4/4
+ability=Trample;\
+        When SN enters the battlefield, distribute four +1/+1 counters among any number of target creatures you control.
+timing=main
+oracle=Trample\nWhen Verdurous Gearhulk enters the battlefield, distribute four +1/+1 counters among any number of target creatures you control.

@@ -1,0 +1,9 @@
+name=Panharmonicon
+image=http://magiccards.info/scans/en/kld/226.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability=If an artifact or creature entering the battlefield causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.
+timing=artifact
+oracle=If an artifact or creature entering the battlefield causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.

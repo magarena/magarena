@@ -1,0 +1,12 @@
+name=Ovalchase Dragster
+image=http://magiccards.info/scans/en/kld/225.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={4}
+pt=6/1
+ability=Trample, haste;\
+        Crew 1
+timing=artifact
+oracle=Trample, haste\nCrew 1

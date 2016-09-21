@@ -1,0 +1,12 @@
+name=Sky Skiff
+image=http://magiccards.info/scans/en/kld/233.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Vehicle
+cost={2}
+pt=2/3
+ability=Flying;\
+        Crew 1
+timing=artifact
+oracle=Flying\nCrew 1

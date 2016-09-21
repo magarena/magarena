@@ -1,0 +1,11 @@
+name=Torch Gauntlet
+image=http://magiccards.info/scans/en/kld/237.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+0.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +2/+0.\nEquip {2}

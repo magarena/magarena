@@ -1,0 +1,11 @@
+name=Aviary Mechanic
+image=http://magiccards.info/scans/en/kld/6.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dwarf,Artificer
+cost={1}{W}
+pt=2/2
+ability=When SN enters the battlefield, you may return another permanent you control to its owner's hand.
+timing=main
+oracle=When Aviary Mechanic enters the battlefield, you may return another permanent you control to its owner's hand.

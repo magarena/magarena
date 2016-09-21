@@ -1,0 +1,9 @@
+name=Skywhaler's Shot
+image=http://magiccards.info/scans/en/kld/29.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{W}
+effect=Destroy target creature with power 3 or greater. Scry 1.
+timing=removal
+oracle=Destroy target creature with power 3 or greater. Scry 1.

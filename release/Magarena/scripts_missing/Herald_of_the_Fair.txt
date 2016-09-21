@@ -1,0 +1,11 @@
+name=Herald of the Fair
+image=http://magiccards.info/scans/en/kld/18.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={2}{W}
+pt=3/2
+ability=When SN enters the battlefield, target creature you control gets +1/+1 until end of turn.
+timing=main
+oracle=When Herald of the Fair enters the battlefield, target creature you control gets +1/+1 until end of turn.

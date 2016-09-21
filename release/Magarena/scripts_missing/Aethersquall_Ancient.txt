@@ -1,0 +1,13 @@
+name=Aethersquall Ancient
+image=http://magiccards.info/scans/en/kld/39.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Leviathan
+cost={5}{U}{U}
+pt=6/6
+ability=Flying;\
+        At the beginning of your upkeep, you get {E}{E}{E}.;\
+        Pay {E}{E}{E}{E}{E}{E}{E}{E}: Return all other creatures to their owners' hands. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Flying\nAt the beginning of your upkeep, you get {E}{E}{E}.\nPay {E}{E}{E}{E}{E}{E}{E}{E}: Return all other creatures to their owners' hands. Activate this ability only any time you could cast a sorcery.

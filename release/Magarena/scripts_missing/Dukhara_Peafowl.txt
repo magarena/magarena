@@ -1,0 +1,11 @@
+name=Dukhara Peafowl
+image=http://magiccards.info/scans/en/kld/207.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Bird
+cost={4}
+pt=2/4
+ability={U}: SN gains flying until end of turn.
+timing=main
+oracle={U}: Dukhara Peafowl gains flying until end of turn.

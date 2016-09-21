@@ -1,0 +1,12 @@
+name=Embraal Bruiser
+image=http://magiccards.info/scans/en/kld/79.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=3/1
+ability=SN enters the battlefield tapped.;\
+        SN has menace as long as you control an artifact.
+timing=main
+oracle=Embraal Bruiser enters the battlefield tapped.\nEmbraal Bruiser has menace as long as you control an artifact.

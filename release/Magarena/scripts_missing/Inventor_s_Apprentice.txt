@@ -1,0 +1,11 @@
+name=Inventor's Apprentice
+image=http://magiccards.info/scans/en/kld/120.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={R}
+pt=1/2
+ability=SN gets +1/+1 as long as you control an artifact.
+timing=main
+oracle=Inventor's Apprentice gets +1/+1 as long as you control an artifact.

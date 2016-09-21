@@ -1,0 +1,11 @@
+name=Skyswirl Harrier
+image=http://magiccards.info/scans/en/kld/28.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={4}{W}
+pt=3/4
+ability=Flying
+timing=main
+oracle=Flying

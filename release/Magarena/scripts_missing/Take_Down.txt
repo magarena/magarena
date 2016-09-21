@@ -1,0 +1,9 @@
+name=Take Down
+image=http://magiccards.info/scans/en/kld/170.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={G}
+effect=Choose one — (1) SN deals 4 damage to target creature with flying. (2) SN deals 1 damage to each creature with flying.
+timing=main
+oracle=Choose one —\n• Take Down deals 4 damage to target creature with flying.\n• Take Down deals 1 damage to each creature with flying.

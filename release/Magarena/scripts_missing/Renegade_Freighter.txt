@@ -1,0 +1,12 @@
+name=Renegade Freighter
+image=http://magiccards.info/scans/en/kld/230.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=4/3
+ability=Whenever SN attacks, it gets +1/+1 and gains trample until end of turn.;\
+        Crew 2
+timing=artifact
+oracle=Whenever Renegade Freighter attacks, it gets +1/+1 and gains trample until end of turn.\nCrew 2

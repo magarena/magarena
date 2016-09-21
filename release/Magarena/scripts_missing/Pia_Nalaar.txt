@@ -1,0 +1,13 @@
+name=Pia Nalaar
+image=http://magiccards.info/scans/en/kld/124.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={2}{R}
+pt=2/2
+ability=When SN enters the battlefield, create a 1/1 colorless Thopter artifact creature token with flying.;\
+        {1}{R}: Target artifact creature gets +1/+0 until end of turn.;\
+        {1}, Sacrifice an artifact: Target creature can't block this turn.
+timing=main
+oracle=When Pia Nalaar enters the battlefield, create a 1/1 colorless Thopter artifact creature token with flying.\n{1}{R}: Target artifact creature gets +1/+0 until end of turn.\n{1}, Sacrifice an artifact: Target creature can't block this turn.

@@ -1,0 +1,10 @@
+name=Tasseled Dromedary
+image=http://magiccards.info/scans/en/kld/30.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Camel
+cost={W}
+pt=0/4
+timing=main
+oracle=NONE

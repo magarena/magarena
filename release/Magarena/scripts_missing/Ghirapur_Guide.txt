@@ -1,0 +1,11 @@
+name=Ghirapur Guide
+image=http://magiccards.info/scans/en/kld/156.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Scout
+cost={2}{G}
+pt=3/2
+ability={2}{G}: Target creature you control can't be blocked by creatures with power 2 or less this turn.
+timing=main
+oracle={2}{G}: Target creature you control can't be blocked by creatures with power 2 or less this turn.

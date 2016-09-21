@@ -1,0 +1,11 @@
+name=Dukhara Scavenger
+image=http://magiccards.info/scans/en/kld/77.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Crocodile
+cost={5}{B}
+pt=4/6
+ability=When SN enters the battlefield, you may put target artifact or creature card from your graveyard on top of your library.
+timing=main
+oracle=When Dukhara Scavenger enters the battlefield, you may put target artifact or creature card from your graveyard on top of your library.

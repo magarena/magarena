@@ -1,0 +1,12 @@
+name=Speedway Fanatic
+image=http://magiccards.info/scans/en/kld/132.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pilot
+cost={1}{R}
+pt=2/1
+ability=Haste;\
+        Whenever SN crews a Vehicle, that Vehicle gains haste until end of turn.
+timing=fmain
+oracle=Haste\nWhenever Speedway Fanatic crews a Vehicle, that Vehicle gains haste until end of turn.

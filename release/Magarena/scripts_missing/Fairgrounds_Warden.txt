@@ -1,0 +1,11 @@
+name=Fairgrounds Warden
+image=http://magiccards.info/scans/en/kld/13.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Soldier
+cost={2}{W}
+pt=1/3
+ability=When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.
+timing=main
+oracle=When Fairgrounds Warden enters the battlefield, exile target creature an opponent controls until Fairgrounds Warden leaves the battlefield.

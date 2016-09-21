@@ -1,0 +1,10 @@
+name=Prakhata Club Security
+image=http://magiccards.info/scans/en/kld/98.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Aetherborn,Warrior
+cost={3}{B}
+pt=3/4
+timing=main
+oracle=NONE
