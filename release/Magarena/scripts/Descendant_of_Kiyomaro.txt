@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{W}{W}
 pt=2/3
-ability=As long as you have more cards in hand than each opponent, SN gets +1/+2 and has "Whenever SN deals combat damage, you gain 3 life."
+ability=As long as you have more cards in hand than each opponent, SN gets +1/+2 and has "Whenever this creature deals combat damage, you gain 3 life."
 timing=main
 oracle=As long as you have more cards in hand than each opponent, Descendant of Kiyomaro gets +1/+2 and has "Whenever this creature deals combat damage, you gain 3 life."
