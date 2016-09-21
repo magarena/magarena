@@ -5,8 +5,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={5}
-ability=You have hexproof.;\
-        If a creature would deal damage to you, prevent 1 of that damage.
 timing=artifact
+requires_groovy_code=Spirit of the Hearth;Orbs of Warding
 oracle=You have hexproof.\nIf a creature would deal damage to you, prevent 1 of that damage.
-status=needs groovy
