@@ -1055,6 +1055,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl CREATURE_OR_NONBASIC_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() || (!target.hasType(MagicType.Basic) && target.isLand());
+        }
+    };
+
     public static final MagicPermanentFilterImpl ZOMBIE = permanent(MagicSubType.Zombie, Control.Any);
 
     public static final MagicPermanentFilterImpl FUNGUS = permanent(MagicSubType.Fungus, Control.Any);
@@ -2667,6 +2673,7 @@ public class MagicTargetFilterFactory {
         add("Spirit or enchantment", SPIRIT_OR_ENCHANTMENT);
         add("creature or enchantment", CREATURE_OR_ENCHANTMENT);
         add("creature or land", CREATURE_OR_LAND);
+        add("creature or nonbasic land", CREATURE_OR_NONBASIC_LAND);
         add("creature or planeswalker", CREATURE_OR_PLANESWALKER);
         add("creature or player", CREATURE_OR_PLAYER);
         add("creature or vehicle", CREATURE_OR_VEHICLE);
@@ -2763,6 +2770,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bin your graveyard\\b", "from your graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\bfrom all graveyards\\b", "from a graveyard")
+            .replaceAll("\\bplayed by your opponents\\b", "an opponent controls")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
             .replaceAll("\\byour opponents' graveyards\\b", "an opponent's graveyard")
             .replaceAll(" on the battlefield\\b", "")
