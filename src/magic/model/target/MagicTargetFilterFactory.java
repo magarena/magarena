@@ -1043,6 +1043,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl CREATURE_OR_VEHICLE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() && target.hasSubType(MagicSubType.Vehicle);
+        }
+    };
+
     public static final MagicPermanentFilterImpl ZOMBIE = permanent(MagicSubType.Zombie, Control.Any);
 
     public static final MagicPermanentFilterImpl FUNGUS = permanent(MagicSubType.Fungus, Control.Any);
@@ -2665,6 +2671,7 @@ public class MagicTargetFilterFactory {
         add("creature or land", CREATURE_OR_LAND);
         add("creature or planeswalker", CREATURE_OR_PLANESWALKER);
         add("creature or player", CREATURE_OR_PLAYER);
+        add("creature or vehicle", CREATURE_OR_VEHICLE);
         add("Sliver creature or player", SLIVER_CREATURE_OR_PLAYER);
         add("nontoken Elf", NONTOKEN_ELF);
         add("legendary Samurai", LEGENDARY_SAMURAI);
