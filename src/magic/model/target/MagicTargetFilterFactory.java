@@ -565,6 +565,12 @@ public class MagicTargetFilterFactory {
         3
     );
 
+    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_CMC_4_OR_LESS = new MagicCMCPermanentFilter(
+        ARTIFACT_OR_ENCHANTMENT,
+        Operator.LESS_THAN_OR_EQUAL,
+        4
+    );
+
     public static final MagicPermanentFilterImpl ARTIFACT_OR_LAND = permanentOr(MagicType.Artifact, MagicType.Land, Control.Any);
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_OR_LAND = new MagicPermanentFilterImpl() {
@@ -2651,6 +2657,7 @@ public class MagicTargetFilterFactory {
         add("artifact land", ARTIFACT_LAND);
         add("artifact or enchantment", ARTIFACT_OR_ENCHANTMENT);
         add("artifact or enchantment with converted mana cost 3 or less", ARTIFACT_OR_ENCHANTMENT_CMC_3_OR_LESS);
+        add("artifact or enchantment with converted mana cost 4 or less", ARTIFACT_OR_ENCHANTMENT_CMC_4_OR_LESS);
         add("artifact, enchantment, or land", ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         add("artifact, creature, or land", ARTIFACT_OR_CREATURE_OR_LAND);
         add("artifact, creature, or enchantment", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
