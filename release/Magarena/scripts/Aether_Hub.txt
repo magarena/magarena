@@ -3,6 +3,7 @@ image=http://magiccards.info/scans/en/kld/242.jpg
 value=2.500
 rarity=U
 type=Land
+mana=b2g2r2u2w2
 ability=When SN enters the battlefield, you get {E}.;\
         {T}: Add {C} to your mana pool.;\
         {T}, Pay {E}: Add one mana of any color to your mana pool.
