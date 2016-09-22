@@ -224,4 +224,8 @@ public final class UiString {
         translationsMap.clear();
     }
 
+    public static boolean isEnglish() {
+        return translationsMap.isEmpty();
+    }
+
 }

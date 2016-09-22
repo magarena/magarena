@@ -87,7 +87,11 @@ public class CardFilterPanel extends TexturedPanel
     }
 
     private boolean isDeckEditor() {
-        return this.listener.isDeckEditor();
+        return listener.isDeckEditor();
+    }
+
+    private boolean isNotDeckEditor() {
+        return !isDeckEditor();
     }
 
     private void refreshLayout() {
@@ -118,7 +122,9 @@ public class CardFilterPanel extends TexturedPanel
     }
 
     private boolean showUnsupportedFilter() {
-        return !isDeckEditor() && GeneralConfig.getInstance().showMissingCardData();
+        return isNotDeckEditor()
+                && GeneralConfig.getInstance().showMissingCardData()
+                && UiString.isEnglish();
     }
 
     private boolean isCardfiltered(final MagicCardDefinition aCard) {
