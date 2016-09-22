@@ -8,8 +8,7 @@ subtype=Spirit
 cost={U}
 pt=1/1
 ability=Flying;\
-        Whenever another Spirit enters the battlefield under your control, SN gets +1/+1 until end of turn.;\
-        Sacrifice SN: Counter target instant or sorcery spell unless its controller pays {X}, where X is SN's power.
+        Whenever another Spirit enters the battlefield under your control, SN gets +1/+1 until end of turn.
 timing=main
 oracle=Flying\nWhenever another Spirit enters the battlefield under your control, Mausoleum Wanderer gets +1/+1 until end of turn.\nSacrifice Mausoleum Wanderer: Counter target instant or sorcery spell unless its controller pays {X}, where X is Mausoleum Wanderer's power.
-status=needs groovy
+requires_groovy_code
