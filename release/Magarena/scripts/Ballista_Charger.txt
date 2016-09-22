@@ -6,7 +6,7 @@ type=Artifact
 subtype=Vehicle
 cost={5}
 pt=6/6
-ability=Whenever SN attacks, it deals 1 damage to target creature or player.;\
+ability=Whenever SN attacks, SN deals 1 damage to target creature or player.;\
         Crew 3
 timing=artifact
 oracle=Whenever Ballista Charger attacks, it deals 1 damage to target creature or player.\nCrew 3
