@@ -13,7 +13,8 @@ import magic.ui.explorer.filter.buttons.FilterPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ColorCheckBoxPanel extends JPanel {
+class ColorCheckBoxPanel extends JPanel
+    implements IFilterCheckBox {
 
     private final JCheckBox cb;
     private final JLabel lbl;
@@ -53,12 +54,19 @@ class ColorCheckBoxPanel extends JPanel {
         add(lbl);
     }
 
-    boolean isSelected() {
+    @Override
+    public boolean isSelected() {
         return cb.isSelected();
     }
 
-    void setSelected(boolean b) {
+    @Override
+    public void setSelected(boolean b) {
         cb.setSelected(b);
+    }
+
+    @Override
+    public String getText() {
+        return cb.getText();
     }
 
 }

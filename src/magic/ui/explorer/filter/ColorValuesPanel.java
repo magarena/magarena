@@ -1,14 +1,11 @@
 package magic.ui.explorer.filter;
 
-import java.util.ArrayList;
-import java.util.List;
 import magic.model.MagicColor;
 import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
-public class ColorValuesPanel extends FilterValuesPanel
-    implements IMultiSelectFilter {
+public class ColorValuesPanel extends FilterValuesPanel {
 
     private final ColorCheckBoxPanel[] colorPanels;
 
@@ -25,45 +22,7 @@ public class ColorValuesPanel extends FilterValuesPanel
     }
 
     @Override
-    public boolean hasSelectedItem() {
-        for (ColorCheckBoxPanel cb : colorPanels) {
-            if (cb.isSelected()) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    @Override
-    public List<Integer> getSelectedItemIndexes() {
-        final List<Integer> selected = new ArrayList<>();
-        for (int i = 0; i < colorPanels.length; i++) {
-            if (colorPanels[i].isSelected()) {
-                selected.add(i);
-            }
-        }
-        return selected;
-    }
-
-    @Override
-    public int getItemsCount() {
-        return colorPanels.length;
-    }
-
-    @Override
-    public boolean isItemSelected(int i) {
-        return colorPanels[i].isSelected();
-    }
-
-    @Override
-    public void reset() {
-        for (ColorCheckBoxPanel cb : colorPanels) {
-            cb.setSelected(false);
-        }
-    }
-
-    @Override
-    public String getItemText(int i) {
-        throw new UnsupportedOperationException("Not supported.");
+    protected IFilterCheckBox[] getCheckBoxes() {
+        return colorPanels;
     }
 }

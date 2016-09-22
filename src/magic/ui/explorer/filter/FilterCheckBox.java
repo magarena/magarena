@@ -5,7 +5,8 @@ import javax.swing.JCheckBox;
 import magic.ui.theme.ThemeFactory;
 
 @SuppressWarnings("serial")
-public class FilterCheckBox extends JCheckBox {
+class FilterCheckBox extends JCheckBox
+    implements IFilterCheckBox {
 
     FilterCheckBox(String text) {
         super(text);
@@ -13,5 +14,20 @@ public class FilterCheckBox extends JCheckBox {
         setForeground(ThemeFactory.getTheme().getTextColor());
         setFocusPainted(true);
         setAlignmentX(Component.LEFT_ALIGNMENT);
+    }
+
+    @Override
+    public boolean isSelected() {
+        return super.isSelected();
+    }
+
+    @Override
+    public void setSelected(boolean b) {
+        super.setSelected(b);
+    }
+
+    @Override
+    public String getText() {
+        return super.getText();
     }
 }
