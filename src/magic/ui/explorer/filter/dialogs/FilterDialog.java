@@ -1,7 +1,5 @@
 package magic.ui.explorer.filter.dialogs;
 
-import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.LayoutManager2;
 import javax.swing.JDialog;
 import magic.ui.ScreenController;
@@ -12,8 +10,6 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public abstract class FilterDialog extends JDialog {
-
-    private static final Color OPACITY_COLOR = new Color(255, 255, 255, 160);
 
     public abstract void reset();
     public abstract boolean isFiltering();
@@ -37,14 +33,7 @@ public abstract class FilterDialog extends JDialog {
     }
 
     private void setContentPane() {
-        TexturedPanel p = new TexturedPanel() {
-            @Override
-            public void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.setColor(OPACITY_COLOR);
-                g.fillRect(0, 0, getWidth(), getHeight());
-            }            
-        };
+        TexturedPanel p = new TexturedPanel();
         p.setBorder(FontsAndBorders.UP_BORDER);
         p.setLayout(getLayoutManager());
         setContentPane(p);

@@ -2,22 +2,19 @@ package magic.ui.explorer.filter;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JPanel;
 import magic.model.MagicColor;
 import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
-public class ColorsFilterPanel extends JPanel
+public class ColorsFilterPanel extends FilterValuesPanel
     implements IMultiSelectFilter {
 
     private final ColorCheckBoxPanel[] colorPanels;
 
     public ColorsFilterPanel(FilterPanel fbp) {
-       
-        setLayout(fbp.getFilterPanelLayout());
+        super(fbp);
         setBorder(FontsAndBorders.DOWN_BORDER);
-        setOpaque(false);
 
         colorPanels = new ColorCheckBoxPanel[MagicColor.NR_COLORS];
 

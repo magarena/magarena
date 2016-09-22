@@ -4,20 +4,17 @@ import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JCheckBox;
-import javax.swing.JPanel;
 import magic.ui.MagicUI;
 import magic.ui.explorer.filter.buttons.FilterPanel;
 
 @SuppressWarnings("serial")
-public class CheckboxesFilterPanel extends JPanel {
+public class CheckboxesFilterPanel extends FilterValuesPanel {
 
     private final JCheckBox[] checkboxes;
 
     CheckboxesFilterPanel(Object[] values, FilterPanel fbp) {
-
-        setLayout(fbp.getFilterPanelLayout());
-        setAlignmentX(Component.LEFT_ALIGNMENT);
-        setOpaque(false);
+        super(fbp);
+        setAlignmentX(Component.LEFT_ALIGNMENT);        
 
         checkboxes = new JCheckBox[values.length];
         for (int i = 0; i < values.length; i++) {
@@ -68,4 +65,5 @@ public class CheckboxesFilterPanel extends JPanel {
     String getItemText(int i) {
         return checkboxes[i].getText();
     }
+
 }
