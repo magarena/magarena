@@ -1,18 +1,18 @@
 package magic.model;
 
-import magic.data.MagicIcon;
-import magic.data.TextImages;
-import magic.model.choice.MagicBuilderManaCost;
-import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicManaCostCondition;
-
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import magic.data.MagicIcon;
+import magic.data.TextImages;
+import magic.model.choice.MagicBuilderManaCost;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicManaCostCondition;
 
 public class MagicManaCost {
 
@@ -380,6 +380,10 @@ public class MagicManaCost {
             COSTS_MAP.put(costText,cost);
         }
         return cost;
+    }
+
+    public static MagicManaCost create(final int amount) {
+        return create("{"+amount+"}");
     }
 
     public MagicManaCost reduce(final MagicCostManaType type, final int amt) {
