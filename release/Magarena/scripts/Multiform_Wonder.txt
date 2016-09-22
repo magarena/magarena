@@ -7,7 +7,10 @@ subtype=Construct
 cost={5}
 pt=3/3
 ability=When SN enters the battlefield, you get {E}{E}{E}.;\
-        Pay {E}: SN gains your choice of flying, vigilance, or lifelink until end of turn.;\
-        Pay {E}: SN gets +2/-2 or -2/+2 until end of turn.
+        Pay {E}: SN gains flying until end of turn.;\
+        Pay {E}: SN gains vigilance until end of turn.;\
+        Pay {E}: SN gains lifelink until end of turn.;\
+        Pay {E}: SN gets +2/-2 until end of turn.;\
+        Pay {E}: SN gets -2/+2 until end of turn.
 timing=main
 oracle=When Multiform Wonder enters the battlefield, you get {E}{E}{E}.\nPay {E}: Multiform Wonder gains your choice of flying, vigilance, or lifelink until end of turn.\nPay {E}: Multiform Wonder gets +2/-2 or -2/+2 until end of turn.
