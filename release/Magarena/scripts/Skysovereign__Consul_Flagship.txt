@@ -7,7 +7,7 @@ subtype=Vehicle
 cost={5}
 pt=6/5
 ability=Flying;\
-        Whenever SN enters the battlefield or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.;\
+        Whenever SN enters the battlefield or attacks, SN deals 3 damage to target creature or planeswalker an opponent controls.;\
         Crew 3
 timing=artifact
 oracle=Flying\nWhenever Skysovereign, Consul Flagship enters the battlefield or attacks, it deals 3 damage to target creature or planeswalker an opponent controls.\nCrew 3
