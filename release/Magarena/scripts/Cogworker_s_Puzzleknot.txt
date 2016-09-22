@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Artifact
 cost={2}
-ability=When SN enters the battlefield, create a 1/1 colorless Servo artifact creature token.;\
-        {1}{W}, Sacrifice SN: Create a 1/1 colorless Servo artifact creature token.
+ability=When SN enters the battlefield, put a 1/1 colorless Servo artifact creature token onto the battlefield.;\
+        {1}{W}, Sacrifice SN: Put a 1/1 colorless Servo artifact creature token onto the battlefield.
 timing=artifact
 oracle=When Cogworker's Puzzleknot enters the battlefield, create a 1/1 colorless Servo artifact creature token.\n{1}{W}, Sacrifice Cogworker's Puzzleknot: Create a 1/1 colorless Servo artifact creature token.
