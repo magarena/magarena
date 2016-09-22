@@ -25,7 +25,7 @@ public class ColorFilterPanel extends FilterPanel {
 
     @Override
     public Dimension getFilterDialogSize() {
-        return new Dimension(280, 88);
+        return new Dimension(280, 94);
     }
 
     public boolean isCardValid(MagicCardDefinition card, int i) {
