@@ -8,11 +8,11 @@ import magic.ui.MagicUI;
 import magic.ui.explorer.filter.buttons.FilterPanel;
 
 @SuppressWarnings("serial")
-public class CheckboxesFilterPanel extends FilterValuesPanel {
+public class CheckboxValuesPanel extends FilterValuesPanel {
 
     private final JCheckBox[] checkboxes;
 
-    CheckboxesFilterPanel(Object[] values, FilterPanel fbp) {
+    CheckboxValuesPanel(Object[] values, FilterPanel fbp) {
         super(fbp);
         setAlignmentX(Component.LEFT_ALIGNMENT);        
 

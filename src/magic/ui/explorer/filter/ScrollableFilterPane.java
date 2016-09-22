@@ -14,10 +14,10 @@ import net.miginfocom.swing.MigLayout;
 public class ScrollableFilterPane extends JScrollPane
     implements IMultiSelectFilter {
 
-    private final CheckboxesFilterPanel filterPanel;
+    private final CheckboxValuesPanel filterPanel;
 
     public ScrollableFilterPane(Object[] values, FilterPanel fbp) {
-        this.filterPanel = new CheckboxesFilterPanel(values, fbp);
+        this.filterPanel = new CheckboxValuesPanel(values, fbp);
         setViewportView(filterPanel);
         setAlignmentX(Component.LEFT_ALIGNMENT);
         setBorder(FontsAndBorders.DOWN_BORDER);

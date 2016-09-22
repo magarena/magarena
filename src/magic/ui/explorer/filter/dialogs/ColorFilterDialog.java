@@ -1,7 +1,7 @@
 package magic.ui.explorer.filter.dialogs;
 
 import magic.model.MagicCardDefinition;
-import magic.ui.explorer.filter.ColorsFilterPanel;
+import magic.ui.explorer.filter.ColorValuesPanel;
 import magic.ui.explorer.filter.FilterOptionsPanel;
 import magic.ui.explorer.filter.buttons.ColorFilterPanel;
 
@@ -15,7 +15,7 @@ public class ColorFilterDialog extends MultiSelectFilterDialog {
         this.fbp = fbp;
         this.filterOptionsPanel = new FilterOptionsPanel(fbp);
 
-        ColorsFilterPanel filterPanel = new ColorsFilterPanel(fbp);
+        ColorValuesPanel filterPanel = new ColorValuesPanel(fbp);
 
         setSize(fbp.getFilterDialogSize());
 

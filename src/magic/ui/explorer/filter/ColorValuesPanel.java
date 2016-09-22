@@ -7,12 +7,12 @@ import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
-public class ColorsFilterPanel extends FilterValuesPanel
+public class ColorValuesPanel extends FilterValuesPanel
     implements IMultiSelectFilter {
 
     private final ColorCheckBoxPanel[] colorPanels;
 
-    public ColorsFilterPanel(FilterPanel fbp) {
+    public ColorValuesPanel(FilterPanel fbp) {
         super(fbp);
         setBorder(FontsAndBorders.DOWN_BORDER);
 
