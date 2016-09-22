@@ -7,6 +7,6 @@ subtype=Turtle
 cost={U}
 pt=0/3
 ability=When SN enters the battlefield, you get {E}{E}.;\
-        Whenever SN attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it.
+        Whenever SN attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on SN.
 timing=main
 oracle=When Thriving Turtle enters the battlefield, you get {E}{E}.\nWhenever Thriving Turtle attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it.
