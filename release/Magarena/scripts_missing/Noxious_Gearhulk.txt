@@ -10,3 +10,4 @@ ability=Menace;\
         When SN enters the battlefield, you may destroy another target creature. If a creature is destroyed this way, you gain life equal to its toughness.
 timing=main
 oracle=Menace\nWhen Noxious Gearhulk enters the battlefield, you may destroy another target creature. If a creature is destroyed this way, you gain life equal to its toughness.
+status=not supported: blocking-restriction

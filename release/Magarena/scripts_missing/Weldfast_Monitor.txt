@@ -9,3 +9,4 @@ pt=3/2
 ability={R}: SN gains menace until end of turn.
 timing=main
 oracle={R}: Weldfast Monitor gains menace until end of turn.
+status=not supported: blocking-restriction

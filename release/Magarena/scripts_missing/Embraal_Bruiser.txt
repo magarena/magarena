@@ -10,3 +10,4 @@ ability=SN enters the battlefield tapped.;\
         SN has menace as long as you control an artifact.
 timing=main
 oracle=Embraal Bruiser enters the battlefield tapped.\nEmbraal Bruiser has menace as long as you control an artifact.
+status=not supported: blocking-restriction

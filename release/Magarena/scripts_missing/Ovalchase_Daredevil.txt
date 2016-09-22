@@ -9,3 +9,4 @@ pt=4/2
 ability=Whenever an artifact enters the battlefield under your control, you may return SN from your graveyard to your hand.
 timing=main
 oracle=Whenever an artifact enters the battlefield under your control, you may return Ovalchase Daredevil from your graveyard to your hand.
+status=not supported: trigger-from-graveyard

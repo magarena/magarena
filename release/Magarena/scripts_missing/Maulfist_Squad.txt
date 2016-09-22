@@ -10,3 +10,4 @@ ability=Menace;\
         Fabricate 1
 timing=main
 oracle=Menace\nFabricate 1
+status=not supported: blocking-restriction

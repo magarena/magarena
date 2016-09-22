@@ -11,3 +11,4 @@ ability={3}{B}{B}: Monstrosity 3.;\
         As long as SN is monstrous, it has menace.
 timing=main
 oracle={3}{B}{B}: Monstrosity 3.\nAs long as Sinuous Vermin is monstrous, it has menace.
+status=not supported: blocking-restriction

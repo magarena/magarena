@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Scry 2, then draw two cards. You get {E}{E}.
 timing=removal
 oracle=Scry 2, then draw two cards. You get {E}{E}.
+status=not supported: ordering-lib-top

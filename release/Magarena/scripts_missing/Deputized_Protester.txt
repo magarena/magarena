@@ -11,3 +11,4 @@ ability=Menace;\
         Melee
 timing=main
 oracle=Menace\nMelee
+status=not supported: blocking-restriction
