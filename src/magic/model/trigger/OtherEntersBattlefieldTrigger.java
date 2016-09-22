@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.action.ChangeCountersAction;
+import magic.model.action.TapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSoulbondEvent;
@@ -132,4 +133,16 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
             }
         }
     };
+
+    public static final OtherEntersBattlefieldTrigger Tapped(final MagicTargetFilter<MagicPermanent> filter) {
+        return new OtherEntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+                if (filter.accept(permanent, permanent.getController(), otherPermanent)) {
+                    game.doAction(TapAction.Enters(otherPermanent));
+                }
+                return MagicEvent.NONE;
+            }
+        };
+    }
 }

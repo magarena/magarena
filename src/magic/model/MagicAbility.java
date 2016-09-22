@@ -606,6 +606,12 @@ public enum MagicAbility {
             card.add(EntersTappedTrigger.create());
         }
     },
+    OtherEntersTapped(ARG.WORDRUN + " enter the battlefield tapped\\.", -10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            card.add(OtherEntersBattlefieldTrigger.Tapped(filter));
+        }
+    },
     EntersWithCounter("SN enters the battlefield with " + ARG.WORD1 + " " + ARG.WORD2 + " counter(s)? on it( for each " + ARG.WORDRUN + ")?\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String amount = ARG.word1(arg);
