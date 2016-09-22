@@ -7,3 +7,4 @@ cost={W}
 effect=Target creature gets +2/+2 until end of turn. If it's an artifact creature, it gains indestructible until end of turn.
 timing=removal
 oracle=Target creature gets +2/+2 until end of turn. If it's an artifact creature, it gains indestructible until end of turn.
+status=needs groovy

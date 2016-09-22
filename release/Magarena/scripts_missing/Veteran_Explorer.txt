@@ -9,3 +9,4 @@ pt=1/1
 ability=When SN dies, each player may search his or her library for up to two basic land cards and put them onto the battlefield. Then each player who searched his or her library this way shuffles it.
 timing=main
 oracle=When Veteran Explorer dies, each player may search his or her library for up to two basic land cards and put them onto the battlefield. Then each player who searched his or her library this way shuffles it.
+status=needs groovy
