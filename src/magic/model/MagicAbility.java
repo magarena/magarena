@@ -32,7 +32,7 @@ public enum MagicAbility {
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
     CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
-    CanAttackWithDefender("can attack as though (it|they) didn't have defender", 10),
+    CanAttackWithDefender("can attack (this turn )?as though (it|they) didn't have defender", 10),
     Hexproof("hexproof",80),
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
