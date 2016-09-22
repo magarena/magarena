@@ -7,6 +7,6 @@ subtype=Goat
 cost={3}{W}
 pt=2/4
 ability=When SN enters the battlefield, you get {E}{E}.;\
-        Whenever SN attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it.
+        Whenever SN attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on SN.
 timing=main
 oracle=When Thriving Ibex enters the battlefield, you get {E}{E}.\nWhenever Thriving Ibex attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it.
