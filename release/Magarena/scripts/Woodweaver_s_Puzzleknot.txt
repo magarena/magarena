@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Artifact
 cost={2}
-ability=When SN enters the battlefield, you gain 3 life and get {E}{E}{E}.;\
-        {2}{G}, Sacrifice SN: You gain 3 life and get {E}{E}{E}.
+ability=When SN enters the battlefield, you gain 3 life~and you get {E}{E}{E}.;\
+        {2}{G}, Sacrifice SN: You gain 3 life~and you get {E}{E}{E}.
 timing=artifact
 oracle=When Woodweaver's Puzzleknot enters the battlefield, you gain 3 life and get {E}{E}{E}.\n{2}{G}, Sacrifice Woodweaver's Puzzleknot: You gain 3 life and get {E}{E}{E}.
