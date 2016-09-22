@@ -7,3 +7,4 @@ cost={4}{U}
 effect=Exchange control of target artifact you control and target artifact or creature you don't control.
 timing=main
 oracle=Exchange control of target artifact you control and target artifact or creature you don't control.
+status=not supported: multiple-targets
