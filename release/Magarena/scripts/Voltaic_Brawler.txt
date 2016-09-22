@@ -7,6 +7,6 @@ subtype=Human,Warrior
 cost={R}{G}
 pt=3/2
 ability=When SN enters the battlefield, you get {E}{E}.;\
-        Whenever SN attacks, you may pay {E}. If you do, it gets +1/+1 and gains trample until end of turn.
+        Whenever SN attacks, you may pay {E}. If you do, SN gets +1/+1 and gains trample until end of turn.
 timing=main
 oracle=When Voltaic Brawler enters the battlefield, you get {E}{E}.\nWhenever Voltaic Brawler attacks, you may pay {E}. If you do, it gets +1/+1 and gains trample until end of turn.
