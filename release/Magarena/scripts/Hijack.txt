@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={1}{R}{R}
-effect=Gain control of target artifact or creature until end of turn. Untap it. It gains haste until end of turn.
+effect=Gain control of target artifact or creature until end of turn.~Untap *it*.~*It* gains haste until end of turn.
 timing=main
 oracle=Gain control of target artifact or creature until end of turn. Untap it. It gains haste until end of turn.
