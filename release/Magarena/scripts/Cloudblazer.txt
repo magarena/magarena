@@ -7,6 +7,6 @@ subtype=Human,Scout
 cost={3}{W}{U}
 pt=2/2
 ability=Flying;\
-        When SN enters the battlefield, you gain 2 life and draw two cards.
+        When SN enters the battlefield, you gain 2 life~and draw two cards.
 timing=main
 oracle=Flying\nWhen Cloudblazer enters the battlefield, you gain 2 life and draw two cards.
