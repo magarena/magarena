@@ -4,6 +4,6 @@ value=4.293
 rarity=R
 type=Artifact
 cost={3}
+ability=Permanents enter the battlefield tapped.
 timing=artifact
-requires_groovy_code
 oracle=Permanents enter the battlefield tapped.

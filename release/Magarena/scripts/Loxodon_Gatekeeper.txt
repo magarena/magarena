@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant,Soldier
 cost={2}{W}{W}
 pt=2/3
+ability=Artifacts, creatures, and lands your opponents control enter the battlefield tapped.
 timing=main
-requires_groovy_code
 oracle=Artifacts, creatures, and lands your opponents control enter the battlefield tapped.

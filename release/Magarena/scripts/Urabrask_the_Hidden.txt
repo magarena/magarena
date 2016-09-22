@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Praetor
 cost={3}{R}{R}
 pt=4/4
-ability=creatures you control have haste
+ability=Creatures you control have haste.;\
+        Creatures your opponents control enter the battlefield tapped.
 timing=fmain
-requires_groovy_code
 oracle=Creatures you control have haste.\nCreatures your opponents control enter the battlefield tapped.

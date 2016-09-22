@@ -4,7 +4,7 @@ value=4.123
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=extort
+ability=Extort;\
+        Artifacts and creatures your opponents control enter the battlefield tapped.
 timing=main
-requires_groovy_code
 oracle=Extort\nArtifacts and creatures your opponents control enter the battlefield tapped.

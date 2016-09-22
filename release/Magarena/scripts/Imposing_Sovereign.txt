@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={1}{W}
 pt=2/1
+ability=Creatures your opponents control enter the battlefield tapped.
 timing=main
-requires_groovy_code
 oracle=Creatures your opponents control enter the battlefield tapped.

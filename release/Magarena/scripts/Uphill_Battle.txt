@@ -4,6 +4,6 @@ value=3.580
 rarity=U
 type=Enchantment
 cost={2}{R}
+ability=Creatures played by your opponents enter the battlefield tapped.
 timing=main
-requires_groovy_code
 oracle=Creatures played by your opponents enter the battlefield tapped.

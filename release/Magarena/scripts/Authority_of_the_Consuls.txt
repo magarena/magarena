@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={W}
-ability=Whenever a creature enters the battlefield under an opponent's control, you gain 1 life.
+ability=Creatures your opponents control enter the battlefield tapped.;\
+        Whenever a creature enters the battlefield under an opponent's control, you gain 1 life.
 timing=enchantment
 oracle=Creatures your opponents control enter the battlefield tapped.\nWhenever a creature enters the battlefield under an opponent's control, you gain 1 life.
-requires_groovy_code

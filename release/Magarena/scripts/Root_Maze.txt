@@ -4,6 +4,6 @@ value=4.107
 rarity=R
 type=Enchantment
 cost={G}
+ability=Artifacts and lands enter the battlefield tapped.
 timing=main
-requires_groovy_code
 oracle=Artifacts and lands enter the battlefield tapped.
