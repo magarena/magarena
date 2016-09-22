@@ -8,6 +8,6 @@ cost={3}{G}{G}
 pt=4/4
 ability=Trample;\
         When SN enters the battlefield, you get {E}{E}.;\
-        Whenever SN attacks, you may pay {E}{E}. If you do, it gets +2/+2 until end of turn.
+        Whenever SN attacks, you may pay {E}{E}. If you do, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Trample\nWhen Riparian Tiger enters the battlefield, you get {E}{E}.\nWhenever Riparian Tiger attacks, you may pay {E}{E}. If you do, it gets +2/+2 until end of turn.
