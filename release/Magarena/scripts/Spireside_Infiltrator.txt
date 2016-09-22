@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{R}
 pt=3/2
-ability=Whenever SN becomes tapped, it deals 1 damage to each opponent.
+ability=Whenever SN becomes tapped, SN deals 1 damage to each opponent.
 timing=main
 oracle=Whenever Spireside Infiltrator becomes tapped, it deals 1 damage to each opponent.
