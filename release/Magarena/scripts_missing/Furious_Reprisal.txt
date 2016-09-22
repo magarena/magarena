@@ -7,3 +7,4 @@ cost={3}{R}
 effect=SN deals 2 damage to each of two target creatures and/or players.
 timing=main
 oracle=Furious Reprisal deals 2 damage to each of two target creatures and/or players.
+status=not supported: multiple-targets

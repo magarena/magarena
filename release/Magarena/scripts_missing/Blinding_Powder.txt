@@ -9,3 +9,4 @@ ability=Equipped creature has "Unattach SN: Prevent all combat damage that would
         Equip {2}
 timing=equipment
 oracle=Equipped creature has "Unattach Blinding Powder: Prevent all combat damage that would be dealt to this creature this turn."\nEquip {2}
+status=needs groovy
