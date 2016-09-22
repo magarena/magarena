@@ -1476,20 +1476,11 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL = creatureOr(MagicSubType.Werewolf, MagicSubType.Wolf, Control.You);
 
-    public static final MagicPermanentFilterImpl WOLF_OR_WEREWOLF = new MagicPermanentFilterImpl() {
-        @Override
-        public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
-            return target.hasSubType(MagicSubType.Wolf) || target.hasSubType(MagicSubType.Werewolf);
-        }
-    };
+    public static final MagicPermanentFilterImpl WOLF_OR_WEREWOLF = permanentOr(MagicSubType.Wolf, MagicSubType.Werewolf, Control.Any);
 
-    public static final MagicPermanentFilterImpl WOLF_OR_WEREWOLF_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        @Override
-        public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
-            return target.isController(player) &&
-                (target.hasSubType(MagicSubType.Wolf) || target.hasSubType(MagicSubType.Werewolf));
-        }
-    };
+    public static final MagicPermanentFilterImpl SERVO_OR_THOPTER = permanentOr(MagicSubType.Servo, MagicSubType.Thopter, Control.Any);
+
+    public static final MagicPermanentFilterImpl WOLF_OR_WEREWOLF_YOU_CONTROL = permanentOr(MagicSubType.Wolf, MagicSubType.Werewolf, Control.You);
 
     public static final MagicPermanentFilterImpl ATTACKING_WOLF_OR_WEREWOLF = new MagicPermanentFilterImpl() {
         @Override
@@ -2682,6 +2673,7 @@ public class MagicTargetFilterFactory {
         add("attacking Human", ATTACKING_HUMAN);
         add("Aura attached to a creature", AURA_ATTACHED_TO_CREATURE);
         add("wolf or werewolf", WOLF_OR_WEREWOLF);
+        add("servo or thopter", SERVO_OR_THOPTER);
         add("attacking wolf or werewolf", ATTACKING_WOLF_OR_WEREWOLF);
         add("human or an angel", HUMAN_OR_ANGEL);
 
