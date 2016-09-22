@@ -410,6 +410,13 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     };
 
+    public static MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+            flags.add(MagicSubType.Spirit);
+        }
+    };
+
     public static MagicStatic IsBlack = new MagicStatic(MagicLayer.Color) {
         @Override
         public int getColorFlags(final MagicPermanent permanent,final int flags) {
@@ -431,7 +438,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     };
 
-    public static MagicStatic AllCreatureTypesUntilEOT = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    public static MagicStatic AllCreatureTypesUntilEOT = new MagicStatic(MagicLayer.Type, UntilEOT) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
