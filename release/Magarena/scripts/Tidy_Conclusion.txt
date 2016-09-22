@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{B}{B}
-effect=Destroy target creature. You gain 1 life for each artifact you control.
+effect=Destroy target creature.~You gain 1 life for each artifact you control.
 timing=removal
 oracle=Destroy target creature. You gain 1 life for each artifact you control.
