@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{W}
-effect=Create two 1/1 colorless Servo artifact creature tokens.
+effect=Put two 1/1 colorless Servo artifact creature tokens onto the battlefield.
 timing=main
 oracle=Create two 1/1 colorless Servo artifact creature tokens.
