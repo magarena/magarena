@@ -1,0 +1,9 @@
+name=6/6 colorless Beast artifact creature token
+token=Beast
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_t4SGoWqjbW.png
+value=5
+type=Artifact,Creature
+subtype=Beast
+color=
+pt=6/6
+oracle=NONE
