@@ -5,7 +5,7 @@ import magic.ui.MagicUI;
 import magic.ui.explorer.filter.buttons.FilterPanel;
 
 @SuppressWarnings("serial")
-public class CheckboxValuesPanel extends FilterValuesPanel {
+public class CheckboxValuesPanel extends CheckBoxFilterValuesPanel {
 
     private final FilterCheckBox[] checkboxes;
 

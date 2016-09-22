@@ -7,14 +7,14 @@ import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
-public abstract class FilterValuesPanel extends TexturedPanel
+abstract class CheckBoxFilterValuesPanel extends TexturedPanel
     implements IMultiSelectFilter {
 
     private static final Color OPACITY_COLOR = new Color(255, 255, 255, 160);
 
     protected abstract IFilterCheckBox[] getCheckBoxes();
 
-    public FilterValuesPanel(FilterPanel fbp) {
+    CheckBoxFilterValuesPanel(FilterPanel fbp) {
         setBackground(OPACITY_COLOR);
         setLayout(fbp.getFilterPanelLayout());
     }

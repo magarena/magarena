@@ -5,7 +5,7 @@ import magic.ui.explorer.filter.buttons.FilterPanel;
 import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
-public class ColorValuesPanel extends FilterValuesPanel {
+public class ColorValuesPanel extends CheckBoxFilterValuesPanel {
 
     private final ColorCheckBoxPanel[] colorPanels;
 
