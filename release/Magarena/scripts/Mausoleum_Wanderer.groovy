@@ -26,7 +26,7 @@ def choice = MagicTargetChoice.Negative("target instant or sorcery spell");
             event.processTargetCardOnStack(game, {
                 final int amount = event.getPermanent().getPower();
                 game.logAppendX(event.getPlayer(), amount);
-                game.addEvent(new MagicCounterUnlessEvent(event.getSource(), it, MagicManaCost.create("{"+amount+"}")));
+                game.addEvent(new MagicCounterUnlessEvent(event.getSource(), it, MagicManaCost.create(amount)));
             });
         }
     }

@@ -15,7 +15,7 @@
             event.processTargetCardOnStack(game, {
                 final int amount = event.getPlayer().getDomain();
                 game.logAppendValue(event.getPlayer(),amount);
-                game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{" + amount + "}")));
+                game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create(amount)));
             });
         }
     }

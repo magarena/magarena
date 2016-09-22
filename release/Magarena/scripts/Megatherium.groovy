@@ -23,7 +23,7 @@ def action = {
                 event.getSource(),
                 player,
                 new MagicMayChoice(
-                    new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))
+                    new MagicPayManaCostChoice(MagicManaCost.create(amount))
                 ),
                 event.getPermanent(),
                 action,

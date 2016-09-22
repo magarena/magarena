@@ -11,7 +11,7 @@
             return amount > 0 ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))),
+                    new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create(amount))),
                     this,
                     "PN may\$ pay {"+amount+"}. If he or she doesn't, sacrifice SN."
                 ):

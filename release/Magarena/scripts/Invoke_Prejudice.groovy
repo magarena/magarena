@@ -26,7 +26,7 @@
                     cardOnStack.getController(),
                     new MagicMayChoice(
                         "Pay {"+amount+"}?",
-                        new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))
+                        new MagicPayManaCostChoice(MagicManaCost.create(amount))
                     ),
                     cardOnStack,
                     this,

@@ -18,7 +18,7 @@
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(),
                     it,
-                    MagicManaCost.create("{"+amount+"}")
+                    MagicManaCost.create(amount)
                 ));
                 game.doAction(new DealDamageAction(event.getSource(), it.getController(), amount));
             });

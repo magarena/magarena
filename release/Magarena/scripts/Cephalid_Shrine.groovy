@@ -23,7 +23,7 @@
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(),
                     event.getRefCardOnStack(),
-                    MagicManaCost.create("{"+amount+"}")
+                    MagicManaCost.create(amount)
                 ));
             }
         }

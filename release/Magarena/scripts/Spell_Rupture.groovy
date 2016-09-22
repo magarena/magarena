@@ -22,7 +22,7 @@
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(),
                     it,
-                    MagicManaCost.create("{"+power+"}")
+                    MagicManaCost.create(power)
                 ));
             });
         }

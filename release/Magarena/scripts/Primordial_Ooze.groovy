@@ -7,7 +7,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    new MagicPayManaCostChoice(MagicManaCost.create("{"+amount+"}"))
+                    new MagicPayManaCostChoice(MagicManaCost.create(amount))
                 ),
                 amount,
                 this,

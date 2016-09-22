@@ -10,7 +10,7 @@
                     upkeepPlayer,
                     new MagicMayChoice(
                         "Pay {"+cost+"}?",
-                        new MagicPayManaCostChoice(MagicManaCost.create("{"+cost+"}"))
+                        new MagicPayManaCostChoice(MagicManaCost.create(cost))
                     ),
                     enchanted,
                     this,

@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             final int amount = upkeepPlayer.getHandSize();
-            final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
+            final MagicManaCost cost = MagicManaCost.create(amount);
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(

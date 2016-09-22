@@ -16,7 +16,7 @@
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(),
                     it,
-                    MagicManaCost.create("{" + event.getRefInt() + "}")
+                    MagicManaCost.create(event.getRefInt())
                 ));
                 game.doAction(new ChangeLifeAction(event.getPlayer(),event.getRefInt()));
             });
