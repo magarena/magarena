@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{B}{R}
-effect=Destroy target creature. If you control an artifact, SN deals 3 damage to that creature's controller.
+effect=Destroy target creature.~If you control an artifact, SN deals 3 damage to that creature's controller.
 timing=removal
 oracle=Destroy target creature. If you control an artifact, Unlicensed Disintegration deals 3 damage to that creature's controller.
