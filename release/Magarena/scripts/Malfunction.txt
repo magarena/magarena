@@ -9,5 +9,5 @@ ability=Enchant artifact or creature;\
         When SN enters the battlefield, tap enchanted permanent.;\
         Enchanted permanent doesn't untap during its controller's untap step.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg artifact or creature
 oracle=Enchant artifact or creature\nWhen Malfunction enters the battlefield, tap enchanted permanent.\nEnchanted permanent doesn't untap during its controller's untap step.
