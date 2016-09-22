@@ -9,3 +9,4 @@ ability=Whenever equipped creature attacks, defending player reveals cards from 
         Equip {2}
 timing=equipment
 oracle=Whenever equipped creature attacks, defending player reveals cards from the top of his or her library until he or she reveals a land card. The creature gets +1/+0 until end of turn for each card revealed this way. That player puts the revealed cards into his or her graveyard.\nEquip {2}
+status=needs groovy

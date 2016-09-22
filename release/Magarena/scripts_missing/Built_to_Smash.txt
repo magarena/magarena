@@ -7,3 +7,4 @@ cost={R}
 effect=Target attacking creature gets +3/+3 until end of turn. If it's an artifact creature, it gains trample until end of turn.
 timing=removal
 oracle=Target attacking creature gets +3/+3 until end of turn. If it's an artifact creature, it gains trample until end of turn.
+status=needs groovy

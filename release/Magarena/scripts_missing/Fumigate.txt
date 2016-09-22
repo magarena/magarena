@@ -7,3 +7,4 @@ cost={3}{W}{W}
 effect=Destroy all creatures. You gain 1 life for each creature destroyed this way.
 timing=main
 oracle=Destroy all creatures. You gain 1 life for each creature destroyed this way.
+status=needs groovy

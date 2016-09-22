@@ -10,3 +10,4 @@ ability=Reach;\
         As long as you control a Nissa planeswalker, SN gets +2/+0 and has vigilance.
 timing=main
 oracle=Reach\nAs long as you control a Nissa planeswalker, Guardian of the Great Conduit gets +2/+0 and has vigilance.
+status=needs groovy

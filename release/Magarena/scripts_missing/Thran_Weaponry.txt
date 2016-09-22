@@ -9,3 +9,4 @@ ability=Echo {4};\
         {2}, {T}: All creatures get +2/+2 for as long as SN remains tapped.
 timing=artifact
 oracle=Echo {4}\nYou may choose not to untap Thran Weaponry during your untap step.\n{2}, {T}: All creatures get +2/+2 for as long as Thran Weaponry remains tapped.
+status=needs groovy

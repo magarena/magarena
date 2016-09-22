@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Draw two cards, then shuffle a card from your hand into your library.
 timing=main
 oracle=Draw two cards, then shuffle a card from your hand into your library.
+status=needs groovy
