@@ -7,3 +7,4 @@ cost={1}{R}
 effect=You may change any targets of target Arcane spell.
 timing=removal
 oracle=You may change any targets of target Arcane spell.
+status=not supported: change-target

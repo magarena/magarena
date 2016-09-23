@@ -10,3 +10,4 @@ ability=Vigilance;\
         SN can't attack alone.
 timing=main
 oracle=Vigilance\nTrusty Companion can't attack alone.
+status=not supported: attacking-restriction
