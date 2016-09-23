@@ -103,6 +103,8 @@ public enum MagicSubType {
 
     public static final Set<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Xenagos);
 
+    public static final Set<MagicSubType> FILTER_SUBTYPES = EnumSet.range(Plains,Zubera);
+
     private MagicSubType() {
     }
 

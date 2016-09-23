@@ -1,6 +1,5 @@
 package magic.ui.explorer.filter.buttons;
 
-import java.util.EnumSet;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSubType;
 import magic.translate.UiString;
@@ -23,7 +22,7 @@ public class SubTypeFilterPanel extends CheckBoxFilterPanel {
 
     @Override
     protected String[] getFilterValues() {
-        return EnumSet.allOf(MagicSubType.class).stream()
+        return MagicSubType.FILTER_SUBTYPES.stream()
                 .map(s -> s.name().replace('_', ' '))
                 .toArray(size -> new String[size]);
     }
