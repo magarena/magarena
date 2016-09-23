@@ -3,9 +3,8 @@ image=http://magiccards.info/scans/en/ai/184.jpg
 value=4.000
 rarity=R
 type=Land
-ability=If SN would enter the battlefield, sacrifice a Plains instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
-        {T}: Add {W} to your mana pool.;\
+ability={T}: Add {W} to your mana pool.;\
         {1}{W}, {T}: Put a 1/1 white Soldier creature token onto the battlefield.
 timing=land
 oracle=If Kjeldoran Outpost would enter the battlefield, sacrifice a Plains instead. If you do, put Kjeldoran Outpost onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {W} to your mana pool.\n{1}{W}, {T}: Put a 1/1 white Soldier creature token onto the battlefield.
-status=needs groovy
+requires_groovy_code
