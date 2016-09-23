@@ -71,8 +71,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.77 (September 24, 2016)
+Release 1.77 (September 25, 2016)
 ============
+kelsioboy
 lodici
 melvin
 ShawnieBoy
@@ -80,8 +81,39 @@ ShawnieBoy
 - increase images available for crops and non-English cards. Crops are recommended for English users.
 - Add Kaladesh set and block format
 
+    add "unsupported" filter button to explorer
+    add ability 'Melee'
+    add new frames for some double-sided cards - fixes minor image error
+    support 'where X is' in PutTokens
+    add basic visual indication to filter button if active.
+    update filter button highlight as filter value(s) are changed.
+    show filter criteria in tooltip on an active filter button.
+    Add Reset button for each filter and display search operands using a drop-down.
+    Add icon to action bar which will randomly select a card from the displayed list in explorer.
+    add ability 'Crew <n>'
+    extend SacrificeChosen to multiple permanents
+    add conditions 'an opponent controls more creatures than you' and 'an opponent has more life than you'
+    add condition 'you have more life than an opponent'
+    add condition 'if a <permanent> is on the battlefield'
+    add condition 'enchanted creature has <amount> or more <type> counters on it'
+    add ability '<permanents> enter the battlefield tapped'
+    improve readability of filter values on themes with darker backgrounds.
+    update keyword glossary
+    allow effect '<effect> unless you <cost>'
+    allow ability '<permament> don't untap during their controllers' untap steps.'
+    add condition 'you're the monarch', for #826
+    add effect 'you become the monarch'
+    add ability 'Fabricate <n>'
+    add effect '<player> get {E}+'
+    add cost 'Pay {E}+'
+
 - fixed the following bugs:
-    * Added missing mana values for lands from SOI and OGW sets. These lands should now appear in random decks.
+    * SOI and OGW lands not selected by random deck generator
+    fix Deathbringer Liege trigger order for white black spells
+    fix Warmonger's Chariot by removing extra check for color
+    fix duplicate draw message in log
+    fix Mana Vapors groovy to follow Exhaustion so that it affects lands are enter the battlefield after the effect
+    fix creature with Blazing Torch sacrifices itself to do damage instead of sacrificing Blazing Torch, fixes #882
 
 Release 1.76 (August 28, 2016)
 ============
