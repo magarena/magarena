@@ -7,6 +7,7 @@ type=Creature
 subtype=Human,Warrior
 cost={3}{G}
 pt=4/3
+ability=SN gets +1/+1 as long as there are four or more card types among cards in your graveyard.;\
+        SN has trample as long as there are four or more card types among cards in your graveyard.
 timing=main
 oracle=Delirium — Backwoods Survivalists gets +1/+1 and has trample as long as there are four or more card types among cards in your graveyard.
-requires_groovy_code
