@@ -6,8 +6,7 @@ type=Creature
 subtype=Elemental,Insect
 cost={6}{G}{G}
 pt=6/6
-ability=Trample;\
-        Whenever SN deals combat damage to a player, put that many 1/1 green Insect creature tokens onto the battlefield.
+ability=Trample
 timing=main
 oracle=Trample\nWhenever Living Hive deals combat damage to a player, put that many 1/1 green Insect creature tokens onto the battlefield.
-status=needs groovy
+requires_groovy_code
