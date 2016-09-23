@@ -19,6 +19,7 @@ import magic.ui.MagicImages;
 import magic.ui.MagicLogs;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.explorer.ExplorerPanel;
+import magic.ui.explorer.ExplorerScreenLayout;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -43,12 +44,14 @@ public class CardExplorerScreen
     private static final String _S4 = "View the script and groovy files for the selected card.<br>(or double-click row)";
     private static final String _S5 = "Lucky Dip";
     private static final String _S6 = "Selects a random card from the list of cards displayed.";
+    private static final String _S7 = "Change layout";
+    private static final String _S8 = "Cycles through a number of different screen layouts.";
 
-    private final ExplorerPanel content;
+    private final ExplorerPanel contentPanel;
 
     public CardExplorerScreen() {
-        content = new ExplorerPanel();
-        setContent(content);
+        contentPanel = new ExplorerPanel();
+        setContent(contentPanel);
     }
 
     @Override
@@ -65,63 +68,90 @@ public class CardExplorerScreen
     public MenuButton getRightAction() {
         return null;
     }
-
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(new ActionBarButton(
+    
+    private MenuButton getCardScriptButton() {
+        return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.EDIT_ICON),
                 UiString.get(_S3), UiString.get(_S4),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
-                        content.showCardScriptScreen();
+                        contentPanel.showCardScriptScreen();
                     }
                 }
-            )
         );
-        buttons.add(new ActionBarButton(
+    }
+    
+    private MenuButton getRandomCardButton() {
+        return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.RANDOM_ICON),
-                UiString.get(UiString.get(_S5)), UiString.get(UiString.get(_S6)),
+                UiString.get(_S5), UiString.get(_S6),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
-                        content.selectRandomCard();
+                        contentPanel.selectRandomCard();
                     }
                 }
-            )
         );
-        if (MagicSystem.isDevMode() || MagicSystem.isDebugMode()) {
-            buttons.add(new ActionBarButton(
-                    MagicImages.getIcon(MagicIcon.SAVE_ICON),
-                    "Save Missing Cards [DevMode Only]", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
-                    new AbstractAction() {
-                        @Override
-                        public void actionPerformed(final ActionEvent e) {
-                            try {
-                                saveMissingCardsList();
-                            } catch (IOException e1) {
-                                throw new RuntimeException(e1);
-                            }
+    }
+
+    private MenuButton getMissingCardsButton() {
+        return new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.SAVE_ICON),
+                "Save Missing Cards [DevMode Only]", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        try {
+                            saveMissingCardsList();
+                        } catch (IOException e1) {
+                            throw new RuntimeException(e1);
                         }
                     }
-                )
-            );
-            buttons.add(new ActionBarButton(
-                    MagicImages.getIcon(MagicIcon.STATS_ICON),
-                    "Save Statistics [DevMode Only]", "Creates CardStatistics.txt to view current card completion.",
-                    new AbstractAction() {
-                        @Override
-                        public void actionPerformed(final ActionEvent e) {
-                            try {
-                                MagicSetDefinitions.createSetStatistics();
-                            } catch (IOException e1) {
-                                throw new RuntimeException(e1);
-                            }
+                }
+        );
+    }
+
+    private MenuButton getStatsButton() {
+        return new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.STATS_ICON),
+                "Save Statistics [DevMode Only]", "Creates CardStatistics.txt to view current card completion.",
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        try {
+                            MagicSetDefinitions.createSetStatistics();
+                        } catch (IOException e1) {
+                            throw new RuntimeException(e1);
                         }
                     }
-                )
-            );
+                }
+        );
+    }
+
+    private MenuButton getLayoutButton() {
+        return new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.LAYOUT_ICON),
+                UiString.get(_S7), UiString.get(_S8),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        ExplorerScreenLayout.setNextLayout();
+                        contentPanel.refreshLayout();
+                    }        
+                }
+        );
+    }
+
+    @Override
+    public List<MenuButton> getMiddleActions() {
+        final List<MenuButton> buttons = new ArrayList<>();
+        buttons.add(getCardScriptButton());
+        buttons.add(getRandomCardButton());
+        buttons.add(getLayoutButton());
+        if (MagicSystem.isDevMode()) {
+            buttons.add(getMissingCardsButton());
+            buttons.add(getStatsButton());
         }
         return buttons;
     }

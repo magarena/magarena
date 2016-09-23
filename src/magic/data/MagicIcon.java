@@ -5,6 +5,7 @@ import java.util.Set;
 
 public enum MagicIcon {
 
+    LAYOUT_ICON("w-layout.png"),
     ILLEGAL_ICON("card_illegal.png"),
     LEGAL_ICON("card_legal.png"),
     BANNED_ICON("card_banned.png"),

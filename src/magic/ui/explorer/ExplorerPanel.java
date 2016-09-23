@@ -37,6 +37,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private List<MagicCardDefinition> cardPoolDefs;
     private ExplorerSidebarPanel sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
+    private final JPanel rhs = new JPanel();
 
     public ExplorerPanel() {
         setupExplorerPanel();
@@ -52,8 +53,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         sideBarPanel = new ExplorerSidebarPanel();
         filterPanel = new CardFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
-
-        final JPanel rhs = new JPanel();
+        
         rhs.setLayout(new MigLayout("flowy, insets 0, gapy 0"));
         rhs.add(cardPoolTable.getTitleBar(), "w 100%");
         rhs.add(filterPanel, "w 100%, h " + FILTERS_PANEL_HEIGHT + "!");
@@ -63,8 +63,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
         migLayout.setLayoutConstraints("insets 0, gap 0");
         setLayout(migLayout);
-        add(sideBarPanel, "h 100%");
-        add(rhs, "w 100%, h 100%");
+        refreshLayout();
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
@@ -162,4 +161,27 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         }
     }
 
+    private void doDefaultLayout() {
+        removeAll();
+        add(sideBarPanel, "h 100%");
+        add(rhs, "w 100%, h 100%");
+        validate();
+    }
+
+    private void doNoSidebarLayout() {
+        removeAll();
+        add(rhs, "w 100%, h 100%");
+        validate();
+    }
+
+    public void refreshLayout() {
+        final ExplorerScreenLayout layout = ExplorerScreenLayout.getLayout();
+        if (layout == ExplorerScreenLayout.DEFAULT) {
+            doDefaultLayout();
+        } else if (layout == ExplorerScreenLayout.NO_SIDEBAR) {
+            doNoSidebarLayout();
+        } else {
+            throw new IndexOutOfBoundsException();
+        }
+    }
 }
