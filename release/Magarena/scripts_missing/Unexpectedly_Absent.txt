@@ -7,3 +7,4 @@ cost={X}{W}{W}
 effect=Put target nonland permanent into its owner's library just beneath the top X cards of that library.
 timing=removal
 oracle=Put target nonland permanent into its owner's library just beneath the top X cards of that library.
+status=needs groovy

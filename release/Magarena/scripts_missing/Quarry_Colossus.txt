@@ -9,3 +9,4 @@ pt=5/6
 ability=When SN enters the battlefield, put target creature into its owner's library just beneath the top X cards of that library, where X is the number of Plains you control.
 timing=main
 oracle=When Quarry Colossus enters the battlefield, put target creature into its owner's library just beneath the top X cards of that library, where X is the number of Plains you control.
+status=needs groovy

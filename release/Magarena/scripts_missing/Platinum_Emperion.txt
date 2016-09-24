@@ -9,3 +9,4 @@ pt=8/8
 ability=Your life total can't change.
 timing=main
 oracle=Your life total can't change.
+status=not supported: players-cant

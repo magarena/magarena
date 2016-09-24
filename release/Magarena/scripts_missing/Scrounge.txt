@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Target opponent chooses an artifact card in his or her graveyard. Put that card onto the battlefield under your control.
 timing=main
 oracle=Target opponent chooses an artifact card in his or her graveyard. Put that card onto the battlefield under your control.
+status=needs groovy

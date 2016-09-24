@@ -8,3 +8,4 @@ cost={X}{B}{B}
 effect=Each player puts the top X cards of his or her library into his or her graveyard. For each creature card put into a graveyard this way, you put a 2/2 black Zombie creature token onto the battlefield tapped.
 timing=main
 oracle=Each player puts the top X cards of his or her library into his or her graveyard. For each creature card put into a graveyard this way, you put a 2/2 black Zombie creature token onto the battlefield tapped.
+status=needs groovy

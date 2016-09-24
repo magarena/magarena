@@ -9,3 +9,4 @@ pt=1/1
 ability={X}{B/P}: Remove up to X counters from target permanent. For each counter removed this way, SN gets +1/+0 until end of turn.
 timing=main
 oracle={X}{B/P}: Remove up to X counters from target permanent. For each counter removed this way, Hex Parasite gets +1/+0 until end of turn.
+status=not supported: remove-up-to
