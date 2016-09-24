@@ -17,14 +17,8 @@
             final int toughness = event.getPermanent().getToughness();
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                MagicCardDefinition.create(
-                    CardDefinitions.getToken("colorless Construct artifact creature token named Twin"),
-                    {
-                        it.setPowerToughness(power, toughness);
-                        it.setValue(power);
-                    }
-                ),
-                [MagicPlayMod.ATTACKING, MagicPlayMod.SACRIFICE_AT_END_OF_COMBAT]
+                CardDefinitions.getToken("colorless Construct artifact creature token named Twin"),
+                [MagicPlayMod.ATTACKING, MagicPlayMod.PT(power, toughness), MagicPlayMod.SACRIFICE_AT_END_OF_COMBAT]
             ));
         }
     }

@@ -15,13 +15,11 @@
                 x = Math.max(x,it.getPower());
             }
             game.logAppendValue(event.getPlayer(), x);
-            game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create(
+            game.doAction(new PlayTokenAction(
+                event.getPlayer(),
                 CardDefinitions.getToken("green Ooze creature token"),
-                {
-                    it.setPowerToughness(x, x);
-                    it.setValue(x);
-                }
-            )));
+                MagicPlayMod.PT(x,x)
+            ));
         }
     }
 ]

@@ -42,13 +42,8 @@
                 game.logAppendX(event.getPlayer(),X);
                 game.doAction(new PlayTokenAction(
                     it,
-                    MagicCardDefinition.create(
-                        CardDefinitions.getToken("blue Orb creature token with flying"),
-                        {
-                            it.setPowerToughness(X, X);
-                            it.setValue(X);
-                        }
-                    )
+                    CardDefinitions.getToken("blue Orb creature token with flying"),
+                    MagicPlayMod.PT(X, X)
                 ));
             });
         }

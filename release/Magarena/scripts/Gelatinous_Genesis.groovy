@@ -12,17 +12,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int x = event.getRefInt();
-            game.doAction(new PlayTokensAction(
-                event.getPlayer(),
-                MagicCardDefinition.create(
+            x.times {
+                game.doAction(new PlayTokenAction(
+                    event.getPlayer(),
                     CardDefinitions.getToken("green Ooze creature token"),
-                    {
-                        it.setPowerToughness(x, x);
-                        it.setValue(x);
-                    }
-                ),
-                x
-            ));
+                    MagicPlayMod.PT(x,x)
+                ));
+            }
         }
     }
 ]
