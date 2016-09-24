@@ -9,7 +9,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetPicker;
 
-public class MagicPlayAuraEvent extends MagicSpellCardEvent {
+public class MagicPlayAuraEvent extends MagicETBEvent {
 
     private final MagicTargetChoice targetChoiceCast;
     private final MagicTargetChoice targetChoiceOther;
