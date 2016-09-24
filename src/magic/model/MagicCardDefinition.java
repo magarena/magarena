@@ -512,9 +512,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         if (isLegendary()) {
             return (isSnow() ? "Legendary Snow " : "Legendary ") + getTypeString();
         }
-        if (isTribal()) {
-            return "Tribal " + getTypeString();
-        }
         if (isSnow()) {
             return "Snow " + getTypeString();
         }
