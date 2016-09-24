@@ -6,7 +6,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
 };
 
 [
-    new MagicSpellCardEvent() {
+    new MagicETBEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(

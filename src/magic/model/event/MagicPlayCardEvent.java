@@ -8,11 +8,11 @@ import magic.model.action.PlayCardFromStackAction;
 public class MagicPlayCardEvent {
     private MagicPlayCardEvent() {}
 
-    public static MagicSpellCardEvent create() {
+    public static MagicETBEvent create() {
         return INSTANCE;
     }
 
-    private static final MagicSpellCardEvent INSTANCE = new MagicSpellCardEvent() {
+    private static final MagicETBEvent INSTANCE = new MagicETBEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(

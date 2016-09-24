@@ -1,7 +1,7 @@
 def costEffect = new MagicRegularCostEvent("Sacrifice a Forest");
 
 [
-    new MagicSpellCardEvent() {
+    new MagicETBEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
