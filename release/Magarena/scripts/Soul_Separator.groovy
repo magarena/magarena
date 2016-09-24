@@ -38,10 +38,11 @@
                         card.getCardDefinition(),
                         {
                             it.setPowerToughness(1,1);
+                            it.addSubType(MagicSubType.Spirit);
                             it.addAbility(MagicAbility.Flying);
+                            it.setToken();
                         }
-                    ),
-                    MagicPlayMod.SPIRIT
+                    )
                 ));
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
