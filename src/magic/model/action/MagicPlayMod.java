@@ -90,6 +90,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste, MagicStatic.Forever));
         }
     },
+    FLYING() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new GainAbilityAction(perm, MagicAbility.Flying, MagicStatic.Forever));
+        }
+    },
     PERSIST() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.changeCounters(MagicCounterType.MinusOne,1);
@@ -201,5 +206,14 @@ public enum MagicPlayMod implements MagicPermanentAction {
             mods.add(MagicPlayMod.getPlayMod(name));
         }
         return mods;
+    }
+
+    public static MagicPermanentAction PT(final int p, final int t) {
+        return new MagicPermanentAction() {
+            public void doAction(final MagicPermanent perm) {
+                final MagicGame game = perm.getGame();
+                game.doAction(new AddStaticAction(perm, MagicStatic.genPTSetSelfStatic(p, t)));
+            }
+        };
     }
 }
