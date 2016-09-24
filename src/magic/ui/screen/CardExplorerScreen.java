@@ -19,6 +19,7 @@ import javax.swing.SwingConstants;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
+import magic.translate.StringContext;
 import magic.translate.UiString;
 import magic.ui.MagicFrame;
 import magic.ui.MagicImages;
@@ -53,6 +54,9 @@ public class CardExplorerScreen
     private static final String _S6 = "Selects a random card from the list of cards displayed.";
     private static final String _S7 = "Change layout";
     private static final String _S8 = "Cycles through a number of different screen layouts.";
+    @StringContext(eg = "Total number of cards displayed in explorer.")
+    private static final String _S9 = "%s cards";
+    private static final String _S10 = "Playable: %s   •   Unimplemented: %s";
 
     private final ExplorerPanel contentPanel;
     private final StatusPanel statusPanel;
@@ -77,7 +81,7 @@ public class CardExplorerScreen
     public MenuButton getRightAction() {
         return null;
     }
-    
+
     private MenuButton getCardScriptButton() {
         return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.EDIT_ICON),
@@ -90,7 +94,7 @@ public class CardExplorerScreen
                 }
         );
     }
-    
+
     private MenuButton getRandomCardButton() {
         return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.RANDOM_ICON),
@@ -147,7 +151,7 @@ public class CardExplorerScreen
                     public void actionPerformed(ActionEvent e) {
                         ExplorerScreenLayout.setNextLayout();
                         contentPanel.refreshLayout();
-                    }        
+                    }
                 }
         );
     }
@@ -248,10 +252,10 @@ public class CardExplorerScreen
         }
 
         void refreshTotals(int total, int playable, int missing) {
-            totals1.setText(String.format("%s cards",
-                    NumberFormat.getInstance().format(total))
+            totals1.setText(UiString.get(_S9,
+                NumberFormat.getInstance().format(total))
             );
-            totals2.setText(String.format("Playable: %s   •   Unimplemented: %s",
+            totals2.setText(UiString.get(_S10,
                     getCountCaption(total, playable),
                     getCountCaption(total, missing))
             );
