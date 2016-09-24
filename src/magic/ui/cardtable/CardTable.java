@@ -49,7 +49,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private final JTable table;
     private final ListSelectionModel selectionModel;
 
-    private  TitleBar titleBar;
+    private TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
     private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
     private final boolean isDeck;
@@ -254,10 +254,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         viewport.setViewPosition(new Point(viewRect.x, y));
     }
 
-    public TitleBar getTitleBar() {
-        return this.titleBar;
-    }
-    
     private class ColumnListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {

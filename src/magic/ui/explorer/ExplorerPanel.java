@@ -19,11 +19,13 @@ import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.explorer.filter.CardFilterPanel;
+import magic.ui.screen.CardExplorerScreen;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICardFilterPanelListener {
+public class ExplorerPanel extends JPanel
+        implements ICardSelectionListener, ICardFilterPanelListener {
 
     // translatable strings
     private static final String _S1 = "Cards:";
@@ -38,8 +40,10 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private ExplorerSidebarPanel sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
     private final JPanel rhs = new JPanel();
+    private final CardExplorerScreen screen;
 
-    public ExplorerPanel() {
+    public ExplorerPanel(CardExplorerScreen explorerScreen) {
+        this.screen = explorerScreen;
         setupExplorerPanel();
     }
 
@@ -55,7 +59,6 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         final Container cardsPanel = getMainContentContainer();
         
         rhs.setLayout(new MigLayout("flowy, insets 0, gapy 0"));
-        rhs.add(cardPoolTable.getTitleBar(), "w 100%");
         rhs.add(filterPanel, "w 100%, h " + FILTERS_PANEL_HEIGHT + "!");
         rhs.add(cardsPanel, "w 100%, h 100%");
         rhs.setOpaque(false);
@@ -74,13 +77,12 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
             //sideBarPanel.setCard(CardDefinitions.getCard("Damnation"));
         }
 
+        refreshScreenTotals();
     }
 
     private Container getMainContentContainer() {
-
         cardPoolDefs = filterPanel.getFilteredCards();
-
-        cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
+        cardPoolTable = new CardTable(cardPoolDefs);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
         cardPoolTable.addCardSelectionListener(this);
         return cardPoolTable;
@@ -133,9 +135,18 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         }
     }
 
+    private void refreshScreenTotals() {
+        screen.refreshTotals(
+                filterPanel.getTotalCardCount(),
+                filterPanel.getPlayableCardCount(),
+                filterPanel.getMissingCardCount()
+        );
+    }
+
     @Override
     public void refreshTable() {
         updateCardPool();
+        refreshScreenTotals();
     }
 
     public void selectRandomCard() {

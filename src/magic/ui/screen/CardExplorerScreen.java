@@ -1,15 +1,21 @@
 package magic.ui.screen;
 
+import java.awt.Color;
 import java.awt.Desktop;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import javax.swing.AbstractAction;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
@@ -31,6 +37,7 @@ import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
 import magic.utility.WikiPage;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
@@ -48,9 +55,11 @@ public class CardExplorerScreen
     private static final String _S8 = "Cycles through a number of different screen layouts.";
 
     private final ExplorerPanel contentPanel;
+    private final StatusPanel statusPanel;
 
     public CardExplorerScreen() {
-        contentPanel = new ExplorerPanel();
+        statusPanel = new StatusPanel();
+        contentPanel = new ExplorerPanel(this);
         setContent(contentPanel);
     }
 
@@ -183,6 +192,10 @@ public class CardExplorerScreen
         return WikiPage.CARDS_EXPLORER;
     }
 
+    public void refreshTotals(int total, int playable, int missing) {
+        statusPanel.refreshTotals(total, playable, missing);
+    }
+
     private class ScreenOptions extends ScreenOptionsOverlay {
 
         public ScreenOptions(final MagicFrame frame) {
@@ -203,7 +216,46 @@ public class CardExplorerScreen
 
     @Override
     public JPanel getStatusPanel() {
-        return null;
+        return statusPanel;
+    }
+
+    private final class StatusPanel extends JPanel {
+
+        private final JLabel totals1;
+        private final JLabel totals2;
+
+        StatusPanel() {
+            setOpaque(false);
+            totals1 = createLabel(16);
+            totals2 = createLabel(14);
+            setLayout(new MigLayout("insets 0, gap 2, flowy"));
+            add(totals1, "w 100%");
+            add(totals2, "w 100%");
+        }
+
+        private JLabel createLabel(int fontSize) {
+            final JLabel lbl = new JLabel();
+            lbl.setForeground(Color.WHITE);
+            lbl.setFont(new Font("Dialog", Font.PLAIN, fontSize));
+            lbl.setHorizontalAlignment(SwingConstants.CENTER);
+            return lbl;
+        }
+
+        private String getCountCaption(final int total, final int value) {
+            final double percent = value / (double)total * 100;
+            DecimalFormat df = new DecimalFormat("0.0");
+            return NumberFormat.getInstance().format(value) + " (" + (!Double.isNaN(percent) ? df.format(percent) : "0.0") + "%)";
+        }
+
+        void refreshTotals(int total, int playable, int missing) {
+            totals1.setText(String.format("%s cards",
+                    NumberFormat.getInstance().format(total))
+            );
+            totals2.setText(String.format("Playable: %s   •   Unimplemented: %s",
+                    getCountCaption(total, playable),
+                    getCountCaption(total, missing))
+            );
+        }
     }
 
 }
