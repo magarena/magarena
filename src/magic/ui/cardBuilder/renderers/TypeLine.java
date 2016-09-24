@@ -46,12 +46,12 @@ public class TypeLine {
             padding = 3;
             return cardTypeFontSmallest;
         }
-        if (cardType.length() > 40) {
+        if (cardType.length() > 39) {
             padding = 2;
             return cardTypeFontVerySmall;
 
         }
-        if (cardType.length() > 40) {
+        if (cardType.length() > 36) {
             padding = 2;
             return cardTypeFontSmall;
         }
