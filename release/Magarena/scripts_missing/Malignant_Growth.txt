@@ -9,3 +9,4 @@ ability=Cumulative upkeep {1};\
         At the beginning of each opponent's draw step, that player draws an additional card for each growth counter on SN, then SN deals damage to the player equal to the number of cards he or she drew this way.
 timing=enchantment
 oracle=Cumulative upkeep {1}\nAt the beginning of your upkeep, put a growth counter on Malignant Growth.\nAt the beginning of each opponent's draw step, that player draws an additional card for each growth counter on Malignant Growth, then Malignant Growth deals damage to the player equal to the number of cards he or she drew this way.
+status=needs groovy

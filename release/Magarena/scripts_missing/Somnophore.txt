@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN deals damage to a player, tap target creature that player controls. That creature doesn't untap during its controller's untap step for as long as SN remains on the battlefield.
 timing=main
 oracle=Flying\nWhenever Somnophore deals damage to a player, tap target creature that player controls. That creature doesn't untap during its controller's untap step for as long as Somnophore remains on the battlefield.
+status=needs groovy

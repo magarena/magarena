@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Pay {E}: Tap target creature or planeswalker. Its activated abilities can't be activated this turn.
 timing=artifact
 oracle=Deadlock Trap enters the battlefield tapped.\nWhen Deadlock Trap enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Tap target creature or planeswalker. Its activated abilities can't be activated this turn.
+status=needs groovy

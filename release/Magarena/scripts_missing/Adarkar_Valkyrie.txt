@@ -10,3 +10,4 @@ ability=Flying, vigilance;\
         {T}: When target creature other than SN dies this turn, return that card to the battlefield under your control.
 timing=main
 oracle=Flying, vigilance\n{T}: When target creature other than Adarkar Valkyrie dies this turn, return that card to the battlefield under your control.
+status=needs groovy

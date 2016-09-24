@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Destroy all enchantments.~If seven or more cards are in your graveyard, instead destroy all enchantments, then return all cards in your graveyard destroyed this way to the battlefield.
 timing=main
 oracle=Destroy all enchantments.\nThreshold — If seven or more cards are in your graveyard, instead destroy all enchantments, then return all cards in your graveyard destroyed this way to the battlefield.
+status=needs groovy

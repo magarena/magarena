@@ -7,3 +7,4 @@ cost={3}{B}
 effect=Target player sacrifices a creature. You gain life equal to that creature's toughness.~Rebound
 timing=main
 oracle=Target player sacrifices a creature. You gain life equal to that creature's toughness.\nRebound
+status=needs groovy

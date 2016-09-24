@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice an artifact or creature.
 effect=Draw cards equal to the converted mana cost of the sacrificed permanent.
 timing=main
 oracle=As an additional cost to cast Morbid Curiosity, sacrifice an artifact or creature.\nDraw cards equal to the converted mana cost of the sacrificed permanent.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={4}{R}
 ability=Whenever you cast a kicked spell, you may have SN deal damage to target creature or player equal to the number of times that spell was kicked.
 timing=enchantment
 oracle=Whenever you cast a kicked spell, you may have Rumbling Aftershocks deal damage to target creature or player equal to the number of times that spell was kicked.
+status=needs groovy

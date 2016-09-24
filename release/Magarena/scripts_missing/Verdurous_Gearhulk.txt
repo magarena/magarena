@@ -10,3 +10,4 @@ ability=Trample;\
         When SN enters the battlefield, distribute four +1/+1 counters among any number of target creatures you control.
 timing=main
 oracle=Trample\nWhen Verdurous Gearhulk enters the battlefield, distribute four +1/+1 counters among any number of target creatures you control.
+status=not supported: multiple-targets

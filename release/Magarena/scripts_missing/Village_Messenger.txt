@@ -11,3 +11,4 @@ ability=Haste;\
 transform=Moonrise Intruder
 timing=fmain
 oracle=Haste\nAt the beginning of each upkeep, if no spells were cast last turn, transform Village Messenger.
+status=not supported: other-half

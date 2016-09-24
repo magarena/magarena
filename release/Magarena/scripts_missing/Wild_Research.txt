@@ -8,3 +8,4 @@ ability={1}{W}: Search your library for an enchantment card and reveal that card
         {1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.
 timing=enchantment
 oracle={1}{W}: Search your library for an enchantment card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.\n{1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.
+status=needs groovy

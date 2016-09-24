@@ -7,3 +7,4 @@ cost={3}{R}
 effect=Vehicles you control become artifact creatures until end of turn. Creatures you control get +2/+0 until end of turn.
 timing=main
 oracle=Vehicles you control become artifact creatures until end of turn. Creatures you control get +2/+0 until end of turn.
+status=needs groovy

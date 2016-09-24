@@ -10,3 +10,4 @@ ability=Defender;\
         Whenever SN blocks a creature, that creature can't attack during its controller's next turn.
 timing=smain
 oracle=Defender\nWhenever Wall of Dust blocks a creature, that creature can't attack during its controller's next turn.
+status=needs groovy

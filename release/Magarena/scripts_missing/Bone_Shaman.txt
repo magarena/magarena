@@ -9,3 +9,4 @@ pt=3/3
 ability={B}: Until end of turn, SN gains "Creatures dealt damage by SN this turn can't be regenerated this turn."
 timing=main
 oracle={B}: Until end of turn, Bone Shaman gains "Creatures dealt damage by Bone Shaman this turn can't be regenerated this turn."
+status=needs groovy

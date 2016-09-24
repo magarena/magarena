@@ -9,3 +9,4 @@ pt=1/4
 ability=Each player can't cast more than one spell each turn.
 timing=main
 oracle=Each player can't cast more than one spell each turn.
+status=needs groovy

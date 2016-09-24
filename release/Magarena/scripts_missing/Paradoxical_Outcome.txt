@@ -7,3 +7,4 @@ cost={3}{U}
 effect=Return any number of target nonland, nontoken permanents you control to their owners' hands. Draw a card for each card returned to your hand this way.
 timing=removal
 oracle=Return any number of target nonland, nontoken permanents you control to their owners' hands. Draw a card for each card returned to your hand this way.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=You destroy four lands you control, then target opponent destroys four lands he or she controls. Then SN deals 4 damage to each creature.
 timing=main
 oracle=You destroy four lands you control, then target opponent destroys four lands he or she controls. Then Burning of Xinye deals 4 damage to each creature.
+status=needs groovy

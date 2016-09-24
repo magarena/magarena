@@ -7,3 +7,4 @@ cost={3}{B}
 effect=Each other player discards a card. You draw a card for each card discarded this way.
 timing=main
 oracle=Each other player discards a card. You draw a card for each card discarded this way.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={B}{B}{B}{B}
 effect=When you cast SN, any player may pay half his or her life, rounded up. If a player does, counter SN.~Take an extra turn after this one.
 timing=main
 oracle=When you cast Temporal Extortion, any player may pay half his or her life, rounded up. If a player does, counter Temporal Extortion.\nTake an extra turn after this one.
+status=needs groovy

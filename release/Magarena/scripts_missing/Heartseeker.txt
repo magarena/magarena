@@ -9,3 +9,4 @@ ability=Equipped creature gets +2/+1 and has "{T}, Unattach SN: Destroy target c
         Equip {5}
 timing=equipment
 oracle=Equipped creature gets +2/+1 and has "{T}, Unattach Heartseeker: Destroy target creature."\nEquip {5}
+status=needs groovy

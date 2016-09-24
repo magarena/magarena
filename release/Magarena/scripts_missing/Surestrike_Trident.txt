@@ -9,3 +9,4 @@ ability=Equipped creature has first strike and "{T}, Unattach SN: This creature 
         Equip {4}
 timing=equipment
 oracle=Equipped creature has first strike and "{T}, Unattach Surestrike Trident: This creature deals damage equal to its power to target player."\nEquip {4}
+status=needs groovy

@@ -8,3 +8,4 @@ ability={T}: Put the top two cards of your library into your graveyard.;\
         {2}, Exile SN: Shuffle any number of target cards from your graveyard into your library.
 timing=artifact
 oracle={T}: Put the top two cards of your library into your graveyard.\n{2}, Exile Perpetual Timepiece: Shuffle any number of target cards from your graveyard into your library.
+status=not supported: multiple-targets

@@ -8,3 +8,4 @@ cost={1}{G}{G}
 effect=Destroy target artifact or enchantment if its converted mana cost is less than or equal to the number of cards in your hand.~Draw a card.
 timing=removal
 oracle=Destroy target artifact or enchantment if its converted mana cost is less than or equal to the number of cards in your hand.\nDraw a card.
+status=needs groovy

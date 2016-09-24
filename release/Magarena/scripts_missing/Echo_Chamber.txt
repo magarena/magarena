@@ -7,3 +7,4 @@ cost={4}
 ability={4}, {T}: An opponent chooses target creature he or she controls. Put a token that's a copy of that creature onto the battlefield. That token gains haste until end of turn. Exile the token at the beginning of the next end step. Activate this ability only any time you could cast a sorcery.
 timing=artifact
 oracle={4}, {T}: An opponent chooses target creature he or she controls. Put a token that's a copy of that creature onto the battlefield. That token gains haste until end of turn. Exile the token at the beginning of the next end step. Activate this ability only any time you could cast a sorcery.
+status=needs groovy

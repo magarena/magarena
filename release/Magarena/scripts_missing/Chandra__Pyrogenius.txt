@@ -11,3 +11,4 @@ ability=+2: SN deals 2 damage to each opponent.;\
         −10: SN deals 6 damage to target player and each creature he or she controls.
 timing=main
 oracle=+2: Chandra, Pyrogenius deals 2 damage to each opponent.\n−3: Chandra, Pyrogenius deals 4 damage to target creature.\n−10: Chandra, Pyrogenius deals 6 damage to target player and each creature he or she controls.
+status=needs groovy

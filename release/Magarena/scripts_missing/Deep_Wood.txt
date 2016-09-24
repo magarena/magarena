@@ -8,3 +8,4 @@ ability=Cast SN only during the declare attackers step and only if you've been a
 effect=Prevent all damage that would be dealt to you this turn by attacking creatures.
 timing=removal
 oracle=Cast Deep Wood only during the declare attackers step and only if you've been attacked this step.\nPrevent all damage that would be dealt to you this turn by attacking creatures.
+status=needs groovy

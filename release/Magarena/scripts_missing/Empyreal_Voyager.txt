@@ -10,3 +10,4 @@ ability=Flying, trample;\
         Whenever SN deals combat damage to a player, you get that many {E}.
 timing=main
 oracle=Flying, trample\nWhenever Empyreal Voyager deals combat damage to a player, you get that many {E}.
+status=needs groovy
