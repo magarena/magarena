@@ -34,13 +34,18 @@
                 game.doAction(new ExileLinkAction(event.getPermanent(), card, MagicLocationType.Graveyard));
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    card,
-                    [MagicPlayMod.PT(1,1), MagicPlayMod.SPIRIT, MagicPlayMod.FLYING]
+                    MagicCardDefinition.token(
+                        card,
+                        {
+                            it.setPowerToughness(1,1);
+                            it.addSubType(MagicSubType.Spirit);
+                            it.addAbility(MagicAbility.Flying);
+                        }
+                    )
                 ));
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    CardDefinitions.getToken("black Zombie creature token"),
-                    MagicPlayMod.PT(card.getPower(), card.getToughness())
+                    CardDefinitions.getToken(card.getPower(), card.getToughness(), "black Zombie creature token")
                 ));
             });
         }

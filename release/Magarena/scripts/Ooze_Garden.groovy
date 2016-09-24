@@ -30,8 +30,7 @@ def choice = new MagicTargetChoice("a non-Ooze creature to sacrifice");
             game.logAppendValue(event.getPlayer(), x);
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                CardDefinitions.getToken("green Ooze creature token"),
-                MagicPlayMod.PT(x, x)
+                CardDefinitions.getToken(x, x, "green Ooze creature token")
             ));
         }
     }

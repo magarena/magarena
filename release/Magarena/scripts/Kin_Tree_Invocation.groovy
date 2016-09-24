@@ -17,8 +17,7 @@
             game.logAppendValue(event.getPlayer(), x);
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                CardDefinitions.getToken("black and green Spirit Warrior creature token"),
-                MagicPlayMod.PT(x, x)
+                CardDefinitions.getToken(x, x, "black and green Spirit Warrior creature token")
             ));
         }
     }

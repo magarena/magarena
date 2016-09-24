@@ -15,8 +15,7 @@
             final int x = event.getRefInt();
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                CardDefinitions.getToken("black Horror creature token"),
-                MagicPlayMod.PT(x, x)
+                CardDefinitions.getToken(x, x, "black Horror creature token")
             ));
         }
     }

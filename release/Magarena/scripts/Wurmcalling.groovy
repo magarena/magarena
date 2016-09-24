@@ -15,8 +15,7 @@
             final int x = event.getCardOnStack().getX();
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                CardDefinitions.getToken("green Wurm creature token"),
-                MagicPlayMod.PT(x,x)
+                CardDefinitions.getToken(x, x, "green Wurm creature token")
             ));
             if (event.isBuyback()) {
                 game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));

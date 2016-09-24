@@ -15,11 +15,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
                 final MagicCard target ->
+                final int power = target.getPower();
+                final int toughness = target.getToughness();
                 game.doAction(new ShiftCardAction(target, MagicLocationType.Graveyard, MagicLocationType.Exile));
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    CardDefinitions.getToken("black Zombie creature token"),
-                    MagicPlayMod.PT(target.getPower(), target.getToughness())
+                    CardDefinitions.getToken(power, toughness, "black Zombie creature token")
                 ));
             });
         }

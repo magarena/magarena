@@ -13,9 +13,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int x = event.getCardOnStack().getX();
             game.doAction(new PlayTokenAction(
-                event.getPlayer(), 
-                CardDefinitions.getToken("green Ooze creature token"),
-                MagicPlayMod.PT(x,x)
+                event.getPlayer(),
+                CardDefinitions.getToken(x, x, "green Ooze creature token")
             ));
         }
     }

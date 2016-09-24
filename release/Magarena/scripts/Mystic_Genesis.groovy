@@ -18,8 +18,7 @@
                 final int x = card.getConvertedCost();
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    CardDefinitions.getToken("green Ooze creature token"),
-                    MagicPlayMod.PT(x, x)
+                    CardDefinitions.getToken(x, x, "green Ooze creature token")
                 ));
             })
         }

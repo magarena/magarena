@@ -15,8 +15,7 @@
             game.logAppendValue(event.getPlayer(),x);
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                CardDefinitions.getToken("green Elemental creature token"),
-                MagicPlayMod.PT(x,x)
+                CardDefinitions.getToken(x, x, "green Elemental creature token")
             ));
         }
     }

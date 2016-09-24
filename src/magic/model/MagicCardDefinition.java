@@ -107,14 +107,11 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         initialize();
     }
 
-    public static MagicCardDefinition create(final MagicCardDefinitionInit init) {
-        final MagicCardDefinition cdef = new MagicCardDefinition();
-        init.initialize(cdef);
-        cdef.validate();
-        return cdef;
+    public static MagicCardDefinition token(final MagicObject obj, final MagicCardDefinitionInit init) {
+        return token(obj.getCardDefinition(), init);
     }
 
-    public static MagicCardDefinition create(final MagicCardDefinition template, final MagicCardDefinitionInit init) {
+    public static MagicCardDefinition token(final MagicCardDefinition template, final MagicCardDefinitionInit init) {
         final MagicCardDefinition cdef = new MagicCardDefinition();
         cdef.setName(template.getName());
         cdef.setDistinctName(template.getDistinctName());
@@ -122,9 +119,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         cdef.setColorFlags(template.getColorFlags());
         cdef.setSubTypes(template.genSubTypes());
         cdef.setTypeFlags(template.getTypeFlags());
-        if (template.isToken()) {
-            cdef.setToken();
-        }
+        cdef.setToken();
         cdef.setAbilityProperty(template.getAbilityProperty());
         cdef.setValue(template.getValue());
         cdef.setStatus(template.getStatus());

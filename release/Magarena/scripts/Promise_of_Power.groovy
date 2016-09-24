@@ -33,8 +33,7 @@ def TEXT2 = "PN puts an X/X black Demon creature token with flying onto the batt
                 game.logAppendValue(player,amount);
                 game.doAction(new PlayTokenAction(
                     player,
-                    CardDefinitions.getToken("black Demon creature token with flying"),
-                    MagicPlayMod.PT(amount, amount)
+                    CardDefinitions.getToken(amount, amount, "black Demon creature token with flying")
                 ));
             }
         }

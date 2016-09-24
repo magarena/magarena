@@ -2,7 +2,7 @@ def choice = new MagicTargetChoice("a Spirit permanent card from your library");
 
 def SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-        return target.hasSubType(MagicSubType.Spirit) && target.getCardDefinition().isPermanent();
+        return target.hasSubType(MagicSubType.Spirit) && target.isPermanentCard();
     }
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Graveyard;

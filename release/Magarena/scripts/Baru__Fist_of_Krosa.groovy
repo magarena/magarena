@@ -34,8 +34,7 @@ def A_CARD_NAMED_BARU = new MagicTargetChoice(
             final int x = event.getPlayer().getNrOfPermanents(MagicType.Land);
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                CardDefinitions.getToken("green Wurm creature token"),
-                MagicPlayMod.PT(x,x)
+                CardDefinitions.getToken(x, x, "green Wurm creature token")
             ));
         }
     }

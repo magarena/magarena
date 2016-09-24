@@ -33,8 +33,8 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                     ));
                     game.doAction(new PlayTokenAction(
                         event.getPlayer(),
-                        it,
-                        [MagicPlayMod.SPIRIT, MagicPlayMod.EXILE_AT_END_OF_YOUR_TURN]
+                        MagicCardDefinition.token(it, {it.addSubType(MagicSubType.Spirit)}),
+                        MagicPlayMod.EXILE_AT_END_OF_TURN
                     ));
                 });
             }

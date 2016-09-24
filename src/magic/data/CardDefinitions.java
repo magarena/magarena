@@ -252,6 +252,10 @@ public class CardDefinitions {
         }
     }
 
+    public static MagicCardDefinition getToken(final int p, final int t, final String name) {
+        return MagicCardDefinition.token(CardDefinitions.getToken(name), cdef -> cdef.setPowerToughness(p, t));
+    }
+
     public static MagicCardDefinition getToken(final String original) {
         final MagicCardDefinition token = getCard(original);
         if (token.isToken()) {

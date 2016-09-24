@@ -25,8 +25,8 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                 game.doAction(new DestroyAction(creature));
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    CardDefinitions.getToken("black Spirit creature token"),
-                    [MagicPlayMod.PT(power, toughness), MagicPlayMod.SACRIFICE_AT_END_OF_TURN]
+                    CardDefinitions.getToken(power, toughness, "black Spirit creature token"),
+                    MagicPlayMod.SACRIFICE_AT_END_OF_TURN
                 ));
             });
         }
