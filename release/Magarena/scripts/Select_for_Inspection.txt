@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={U}
-effect=Return target tapped creature to its owner's hand. Scry 1.
+effect=Return target tapped creature to its owner's hand.~Scry 1.
 timing=removal
 oracle=Return target tapped creature to its owner's hand. Scry 1.
