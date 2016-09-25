@@ -89,6 +89,16 @@ ShawnieBoy
 
 - new translatable strings: 10
 
+- changed/added the following to the card explorer:
+  * move totals to screen header
+  * highlight filter button if active
+  * show filter criteria in tooltip on an active filter button
+  * improve readability of filter values on themes with darker backgrounds
+  * add "Unsupported" filter
+  * add "Reset" button to each filter and display search operands using a drop-down
+  * add "Lucky Dip" button which randomly selects a card from the list
+  * add "Change layout" button that toggles the sidebar
+
 - added the following to the card script:
   * cost: Pay {E}+
   * condition: you're the monarch
@@ -106,16 +116,6 @@ ShawnieBoy
   * effect: <player> get {E}+
   * effect: you become the monarch
   * effect: Put X <token> onto the battlefield, where X is <amount>
-
-- changed/added the following to the card explorer:
-  * move totals to screen header
-  * highlight filter button if active
-  * show filter criteria in tooltip on an active filter button
-  * improve readability of filter values on themes with darker backgrounds
-  * add "Unsupported" filter
-  * add "Reset" button to each filter and display search operands using a drop-down
-  * add "Lucky Dip" button which randomly selects a card from the list
-  * add "Change layout" button that toggles the sidebar
 
 - fixed the following bugs:
   * duplicate draw message in game log
