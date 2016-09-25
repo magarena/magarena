@@ -1,5 +1,5 @@
 name=Nissa, Vital Force
-image=http://magiccards.info/scans/en/kld/163.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_ITMHMOYYf0.png
 value=2.500
 rarity=M
 type=Planeswalker

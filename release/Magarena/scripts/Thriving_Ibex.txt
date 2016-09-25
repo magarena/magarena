@@ -1,5 +1,5 @@
 name=Thriving Ibex
-image=http://magiccards.info/scans/en/kld/31.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_gc8JTCy9Cz.png
 value=2.500
 rarity=C
 type=Creature

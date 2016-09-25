@@ -1,5 +1,5 @@
 name=Inventors' Fair
-image=http://magiccards.info/scans/en/kld/247.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_kOE2NDAqZub.png
 value=2.500
 rarity=R
 type=Legendary,Land

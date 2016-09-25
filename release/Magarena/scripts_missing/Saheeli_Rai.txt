@@ -1,5 +1,5 @@
 name=Saheeli Rai
-image=http://magiccards.info/scans/en/kld/186.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_pDejnwbkHHb.png
 value=2.500
 rarity=M
 type=Planeswalker

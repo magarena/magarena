@@ -1,5 +1,5 @@
 name=Architect of the Untamed
-image=http://magiccards.info/scans/en/kld/143.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_2eg7RMes00b.png
 value=2.500
 rarity=R
 type=Creature

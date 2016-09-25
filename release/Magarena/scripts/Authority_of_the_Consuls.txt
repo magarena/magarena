@@ -1,5 +1,5 @@
 name=Authority of the Consuls
-image=http://magiccards.info/scans/en/kld/5.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_0ranYzPRuS.png
 value=2.500
 rarity=R
 type=Enchantment

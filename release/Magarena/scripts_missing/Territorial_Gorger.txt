@@ -1,5 +1,5 @@
 name=Territorial Gorger
-image=http://magiccards.info/scans/en/kld/136.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_uc7YO3uQ1g.png
 value=2.500
 rarity=R
 type=Creature

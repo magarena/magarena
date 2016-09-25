@@ -1,5 +1,5 @@
 name=Lost Legacy
-image=http://magiccards.info/scans/en/kld/88.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_yjg5320ohc.png
 value=2.500
 rarity=R
 type=Sorcery

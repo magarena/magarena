@@ -1,5 +1,5 @@
 name=Metalwork Colossus
-image=http://magiccards.info/scans/en/kld/222.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_NvSIc8TUbk.png
 value=2.500
 rarity=R
 type=Artifact,Creature

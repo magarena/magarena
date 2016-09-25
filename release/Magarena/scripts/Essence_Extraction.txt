@@ -1,5 +1,5 @@
 name=Essence Extraction
-image=http://magiccards.info/scans/en/kld/80.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_NgddJoEUwX.png
 value=2.500
 removal=3
 rarity=U

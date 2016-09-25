@@ -1,5 +1,5 @@
 name=Eddytrail Hawk
-image=http://magiccards.info/scans/en/kld/12.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_OLjpHaMSbx.png
 value=2.500
 rarity=C
 type=Creature

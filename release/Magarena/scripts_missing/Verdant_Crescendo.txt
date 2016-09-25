@@ -1,5 +1,5 @@
 name=Verdant Crescendo
-image=http://magiccards.info/scans/en/kld/273.jpg
+image=http://mythicspoiler.com/kld/cards/verdantcrescendo.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Aetherstorm Roc
-image=http://magiccards.info/scans/en/kld/3.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_siyU0uwm9b.png
 value=2.500
 rarity=R
 type=Creature

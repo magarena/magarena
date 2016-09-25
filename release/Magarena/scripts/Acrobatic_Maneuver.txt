@@ -1,5 +1,5 @@
 name=Acrobatic Maneuver
-image=http://magiccards.info/scans/en/kld/1.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_9MWwXmwX0k.png
 value=2.500
 rarity=C
 type=Instant

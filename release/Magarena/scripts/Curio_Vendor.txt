@@ -1,5 +1,5 @@
 name=Curio Vendor
-image=http://magiccards.info/scans/en/kld/42.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_DeZm9K4dj3.png
 value=2.500
 rarity=C
 type=Creature

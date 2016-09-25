@@ -1,5 +1,5 @@
 name=Nissa, Nature's Artisan
-image=http://magiccards.info/scans/en/kld/270.jpg
+image=http://mythicspoiler.com/kld/cards/nissanaturesartisan.jpg
 value=2.500
 rarity=M
 type=Planeswalker

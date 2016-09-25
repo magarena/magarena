@@ -1,5 +1,5 @@
 name=Disappearing Act
-image=http://magiccards.info/scans/en/kld/43.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_hVNEOHivfV.png
 value=2.500
 rarity=U
 type=Instant

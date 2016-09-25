@@ -1,5 +1,5 @@
 name=Syndicate Trafficker
-image=http://magiccards.info/scans/en/kld/101.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_6fCiKgmFY0b.png
 value=2.500
 rarity=R
 type=Creature

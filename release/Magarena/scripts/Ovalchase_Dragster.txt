@@ -1,5 +1,5 @@
 name=Ovalchase Dragster
-image=http://magiccards.info/scans/en/kld/225.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_RVAyvk1Di2.png
 value=2.500
 rarity=U
 type=Artifact

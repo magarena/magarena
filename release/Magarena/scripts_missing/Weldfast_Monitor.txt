@@ -1,5 +1,5 @@
 name=Weldfast Monitor
-image=http://magiccards.info/scans/en/kld/238.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_QMfmc7cfKu.png
 value=2.500
 rarity=C
 type=Artifact,Creature

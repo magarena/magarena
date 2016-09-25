@@ -1,5 +1,5 @@
 name=Self-Assembler
-image=http://magiccards.info/scans/en/kld/232.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_2V26S23k1z.png
 value=2.500
 rarity=C
 type=Artifact,Creature

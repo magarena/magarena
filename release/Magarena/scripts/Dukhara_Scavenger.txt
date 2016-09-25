@@ -1,5 +1,5 @@
 name=Dukhara Scavenger
-image=http://magiccards.info/scans/en/kld/77.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_V0mMIYYoJa.png
 value=2.500
 rarity=C
 type=Creature

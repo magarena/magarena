@@ -1,5 +1,5 @@
 name=Nimble Innovator
-image=http://magiccards.info/scans/en/kld/58.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_xiAVHC6Iwz.png
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Arborback Stomper
-image=http://magiccards.info/scans/en/kld/142.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_GkHJJ9bQvG.png
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Depala, Pilot Exemplar
-image=http://magiccards.info/scans/en/kld/178.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_nCw2Tg9rAC.png
 value=2.500
 rarity=R
 type=Legendary,Creature

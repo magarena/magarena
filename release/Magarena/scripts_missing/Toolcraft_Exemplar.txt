@@ -1,5 +1,5 @@
 name=Toolcraft Exemplar
-image=http://magiccards.info/scans/en/kld/32.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_buH9bCO6ZX.png
 value=2.500
 rarity=R
 type=Creature

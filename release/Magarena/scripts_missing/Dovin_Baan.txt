@@ -1,5 +1,5 @@
 name=Dovin Baan
-image=http://magiccards.info/scans/en/kld/179.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_NVmXolHdE1b.png
 value=2.500
 rarity=M
 type=Planeswalker

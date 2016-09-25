@@ -1,5 +1,5 @@
 name=Iron League Steed
-image=http://magiccards.info/scans/en/kld/219.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_5NndcmhxTc.png
 value=2.500
 rarity=U
 type=Artifact,Creature

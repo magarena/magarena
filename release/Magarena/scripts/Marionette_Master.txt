@@ -1,5 +1,5 @@
 name=Marionette Master
-image=http://magiccards.info/scans/en/kld/90.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_t62Hu5sZ0Y.png
 value=2.500
 rarity=R
 type=Creature

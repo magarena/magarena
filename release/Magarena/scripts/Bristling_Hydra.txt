@@ -1,5 +1,5 @@
 name=Bristling Hydra
-image=http://magiccards.info/scans/en/kld/147.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_wuMjzH4TNw.png
 value=2.500
 rarity=R
 type=Creature

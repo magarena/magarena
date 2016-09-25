@@ -1,5 +1,5 @@
 name=Gearshift Ace
-image=http://magiccards.info/scans/en/kld/16.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_c37ZSFKIxh.png
 value=2.500
 rarity=U
 type=Creature

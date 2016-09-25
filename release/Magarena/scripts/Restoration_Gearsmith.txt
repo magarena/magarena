@@ -1,5 +1,5 @@
 name=Restoration Gearsmith
-image=http://magiccards.info/scans/en/kld/185.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_zZuAtpNaox.png
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Fumigate
-image=http://magiccards.info/scans/en/kld/15.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_HpJJsK3R6H.png
 value=2.500
 rarity=R
 type=Sorcery

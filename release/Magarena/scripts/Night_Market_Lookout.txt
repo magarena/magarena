@@ -1,5 +1,5 @@
 name=Night Market Lookout
-image=http://magiccards.info/scans/en/kld/95.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_nxokD6JMiB.png
 value=2.500
 rarity=C
 type=Creature

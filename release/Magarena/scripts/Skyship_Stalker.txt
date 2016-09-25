@@ -1,5 +1,5 @@
 name=Skyship Stalker
-image=http://magiccards.info/scans/en/kld/130.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_6weqZMUejm.png
 value=2.500
 rarity=R
 type=Creature

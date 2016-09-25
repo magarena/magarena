@@ -1,5 +1,5 @@
 name=Tidy Conclusion
-image=http://magiccards.info/scans/en/kld/103.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_vukKpE7Nys.png
 value=2.500
 rarity=C
 type=Instant

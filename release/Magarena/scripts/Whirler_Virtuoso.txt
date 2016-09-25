@@ -1,5 +1,5 @@
 name=Whirler Virtuoso
-image=http://magiccards.info/scans/en/kld/190.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_5gERgs8jcW.png
 value=2.500
 rarity=U
 type=Creature

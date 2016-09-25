@@ -1,5 +1,5 @@
 name=Dukhara Peafowl
-image=http://magiccards.info/scans/en/kld/207.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_4WZWq9s84D.png
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Servo Exhibition
-image=http://magiccards.info/scans/en/kld/27.jpg
+image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_LKEgIyeywJ.png
 value=2.500
 rarity=U
 type=Sorcery

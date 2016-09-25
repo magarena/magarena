@@ -1,5 +1,5 @@
 name=Renegade Firebrand
-image=http://magiccards.info/scans/en/kld/268.jpg
+image=http://mythicspoiler.com/kld/cards/renegadefirebrand.jpg
 value=2.500
 rarity=U
 type=Creature
