@@ -78,47 +78,122 @@ lodici
 melvin
 ShawnieBoy
 
-UI changes
+- add Kaladesh set and block format
+
+- add new frames for some double-sided cards
+
+- update keyword glossary
+
+- increase images available for crops and non-English cards
+  crops are recommended for English users
+
 - new translatable strings: 10
-- explorer screen
-  - improve readability of filter values on themes with darker backgrounds.
-  - add Reset button to each filter and display search operands using a drop-down.
-  - show filter criteria in tooltip on an active filter button.
-  - highlight filter button if active.
-  - move totals to screen header.
-  - add screen layout button; add DEFAULT and NO_SIDEBAR layouts.
-  - Add new action icon which randomly selects a card from the list.
-  - Add new "unsupported" filter button (English only).
 
-- increase images available for crops and non-English cards. Crops are recommended for English users.
-- Add Kaladesh set and block format
+- added the following to the card script:
+   * cost: Pay {E}+
+   * condition: you're the monarch
+   * condition: an opponent has more life than you
+   * condition: you have more life than an opponent
+   * condition: an opponent controls more creatures than you
+   * condition: enchanted creature has <amount> or more <type> counters on it
+   * condition: if a <permanent> is on the battlefield
+   * ability: Melee
+   * ability: Crew <n>
+   * ability: Fabricate <n>
+   * ability: <permanents> enter the battlefield tapped
+   * ability: <permament> don't untap during their controllers' untap steps
+   * effect: <effect> unless you <cost>
+   * effect: <player> get {E}+
+   * effect: you become the monarch
+   * effect: Put X <token> onto the battlefield, where X is <amount>
 
-    add ability 'Melee'
-    add new frames for some double-sided cards - fixes minor image error
-    support 'where X is' in PutTokens
-    add ability 'Crew <n>'
-    extend SacrificeChosen to multiple permanents
-    add conditions 'an opponent controls more creatures than you' and 'an opponent has more life than you'
-    add condition 'you have more life than an opponent'
-    add condition 'if a <permanent> is on the battlefield'
-    add condition 'enchanted creature has <amount> or more <type> counters on it'
-    add ability '<permanents> enter the battlefield tapped'
-    update keyword glossary
-    allow effect '<effect> unless you <cost>'
-    allow ability '<permament> don't untap during their controllers' untap steps.'
-    add condition 'you're the monarch', for #826
-    add effect 'you become the monarch'
-    add ability 'Fabricate <n>'
-    add effect '<player> get {E}+'
-    add cost 'Pay {E}+'
+- changed/added the following to the card explorer:
+   * move totals to screen header
+   * highlight filter button if active
+   * show filter criteria in tooltip on an active filter button
+   * improve readability of filter values on themes with darker backgrounds
+   * add "Unsupported" filter
+   * add "Reset" button to each filter and display search operands using a drop-down
+   * add "Lucky Dip" button which randomly selects a card from the list
+   * add "Change layout" button that toggles the sidebar
 
 - fixed the following bugs:
+    * duplicate draw message in game log
     * SOI and OGW lands not selected by random deck generator
-    fix Deathbringer Liege trigger order for white black spells
-    fix Warmonger's Chariot by removing extra check for color
-    fix duplicate draw message in log
-    fix Mana Vapors groovy to follow Exhaustion so that it affects lands are enter the battlefield after the effect
-    fix creature with Blazing Torch sacrifices itself to do damage instead of sacrificing Blazing Torch, fixes #882
+    * Deathbringer Liege triggers fire in the wrong order
+    * Warmonger's Chariot second ability only applies when equipped creature is black
+    * Mana Vapors did not affect lands that entered the battlefield after it resolves
+    * Blazing Torch equippped creature sacrifices itself to do damage instead of sacrificing Blazing Torch (issue #882)
+
+- added the following cards:
+Abolisher of Bloodlines, Abu Ja'far, Accelerated Mutation,
+Accomplished Automaton, Acrobatic Maneuver, Adriana, Captain of the Guard,
+Aerial Responder, Aether Hub, Aether Meltdown, Aethersquall Ancient,
+Aether Theorist, Aethertorch Renegade, Ambitious Aetherborn,
+Angel of Invention, Appetite for the Unnatural, Arborback Stomper,
+Arcbond, Archdemon of Paliano, Architect of the Untamed, Armorcraft Judge,
+Armored Transport, Assembled Alphas, Authority of the Consuls,
+Aviary Mechanic, Backwoods Survivalists, Ballista Charger,
+Bastion Mastodon, Blooming Marsh, Blossoming Defense, Bomat Bazaar Barge,
+Botanical Sanctum, Brazen Scourge, Bristling Hydra, Canal Courier,
+Cathartic Reunion, Cemetery Recruitment, Ceremonious Rejection,
+Chasm Skulker, Chimney Imp, Cloudblazer, Cogworker's Puzzleknot,
+Commencement of Festivities, Concealed Courtyard, Consulate Skygate,
+Consul's Shieldguard, Contraband Kingpin, Cowl Prowler,
+Cultivator of Blades, Cultivator's Caravan, Curio Vendor,
+Decoction Module, Demolition Stomper, Demon of Dark Schemes,
+Deploy to the Front, Dhund Operative, Disappearing Act,
+Dramatic Reversal, Dream Leash, Dukhara Peafowl, Dukhara Scavenger,
+Durable Handicraft, Dynavolt Tower, Eddytrail Hawk, Efreet Weaponmaster,
+Electrostatic Pummeler, Elegant Edgecrafters, Engineered Might,
+Era of Innovation, Essence Extraction, Experimental Aviator,
+Fairgrounds Warden, Fang of the Pack, Filigree Familiar,
+Fireforger's Puzzleknot, Flame Lash, Fleetwheel Cruiser,
+Foundry Screecher, Fragmentize, Fretwork Colony, Fungal Sprouting,
+Garrulous Sycophant, Gearseeker Serpent, Ghirapur Guide,
+Glint-Nest Crane, Glint-Sleeve Artisan, Grenzo's Ruffians,
+Hallowed Spiritkeeper, Heart of Yavimaya, Herald of the Fair,
+Hermit of the Natterknolls, Highspire Artisan, Hightide Hermit,
+Hijack, Hollowborn Barghest, Illusionary Informant, Impeccable Timing,
+Incendiary Sabotage, Inspiring Vantage, Inventor's Apprentice,
+Inventors' Fair, Inventor's Goggles, Iron League Steed, Janjeet Sentry,
+Kambal, Consul of Allocation, Keeper of Keys, Key to the City,
+Kjeldoran Outpost, Kujar Seedsculptor, Larger Than Life, Lathnu Hellion,
+Lawless Broker, Leovold's Operative, Linvala, the Preserver,
+Live Fast, Living Hive, Lone Wolf of the Natterknolls,
+Long-Finned Skywhale, Longtusk Cub, Ma Chao, Western Warrior,
+Make Obsolete, Malfunction, Marchesa's Decree, Marionette Master,
+Master Trinketeer, Maulfist Doorbuster, Mausoleum Wanderer,
+Menagerie Liberator, Metalspinner's Puzzleknot, Midsummer Revel,
+Minister of Inquiries, Mox Diamond, Multiform Wonder, Narnam Cobra,
+Night Market Lookout, Nimble Innovator, Ninth Bridge Patrol,
+Nissa, Voice of Zendikar, Orbs of Warding, Ordeal of Erebos,
+Ordeal of Heliod, Ordeal of Nylea, Ordeal of Purphoros, Ordeal of Thassa,
+Ovalchase Dragster, Palace Sentinels, Peema Outrider, Pia Nalaar,
+Pious Kitsune, Prakhata Club Security, Prakhata Pillar-Bug,
+Propeller Pioneer, Quicksmith Genius, Reckless Fireweaver, Refurbish,
+Renegade Freighter, Renegade Tactics, Restoration Gearsmith, Retaliation,
+Revolutionary Rebuff, Riparian Tiger, Rite of the Raging Storm,
+Ruinous Gremlin, Rush of Vitality, Sage of Ancient Lore,
+Sage of Shaila's Claim, Salivating Gremlins, Select for Inspection,
+Self-Assembler, Servant of the Conduit, Servo Exhibition, Skyline Despot,
+Skyship Stalker, Sky Skiff, Skysovereign, Consul Flagship,
+Skyswirl Harrier, Slayer's Plate, Smuggler's Copter, Snare Thopter,
+Soul Separator, Spectral Grasp, Spirebluff Canal, Spireside Infiltrator,
+Spontaneous Artist, Storm Herd, Stunt Double, Survival Cache,
+Swallowing Plague, Syndicate Trafficker, Take Down, Tasseled Dromedary,
+Tenza, Godo's Maul, Terrain Elemental, Terror of the Fairgrounds,
+Tezzeret, Agent of Bolas, Tezzeret's Ambition, The Monarch,
+Thorn of the Black Rose, Thought Vessel, Thriving Grubs, Thriving Ibex,
+Thriving Rats, Thriving Rhino, Thriving Turtle, Throne of the High City,
+Throne Warden, Tidy Conclusion, Torch Gauntlet, Tree of Perdition,
+Underhanded Designs, Unlicensed Disintegration, Vedalken Blademaster,
+Visionary Augmenter, Voldaren Pariah, Voltaic Brawler, Vow of Duty,
+Vow of Flight, Vow of Lightning, Vow of Malice, Vow of Wildness,
+Weaponcraft Enthusiast, Weldfast Wingsmith, Werewolf of Ancient Hunger,
+Whirlermaker, Whirler Virtuoso, Wild Wanderer, Wily Bandar,
+Wings of the Guard, Wispweaver Angel, Woodweaver's Puzzleknot,
+Yuan Shao's Infantry
 
 Release 1.76 (August 28, 2016)
 ============
