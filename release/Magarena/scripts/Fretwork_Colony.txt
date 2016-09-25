@@ -7,6 +7,6 @@ subtype=Insect
 cost={1}{B}
 pt=1/1
 ability=SN can't block.;\
-        At the beginning of your upkeep, put a +1/+1 counter on SN and you lose 1 life.
+        At the beginning of your upkeep, put a +1/+1 counter on SN~and you lose 1 life.
 timing=main
 oracle=Fretwork Colony can't block.\nAt the beginning of your upkeep, put a +1/+1 counter on Fretwork Colony and you lose 1 life.
