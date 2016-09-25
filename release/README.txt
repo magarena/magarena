@@ -79,6 +79,7 @@ melvin
 ShawnieBoy
 
 UI changes
+- new translatable strings: 10
 - explorer screen
   - improve readability of filter values on themes with darker backgrounds.
   - add Reset button to each filter and display search operands using a drop-down.
