@@ -7,3 +7,4 @@ cost={U}
 effect=Counter target spell if it was kicked.
 timing=counter
 oracle=Counter target spell if it was kicked.
+status=needs groovy

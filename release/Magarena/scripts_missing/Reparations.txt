@@ -7,3 +7,4 @@ cost={1}{W}{U}
 ability=Whenever an opponent casts a spell that targets you or a creature you control, you may draw a card.
 timing=enchantment
 oracle=Whenever an opponent casts a spell that targets you or a creature you control, you may draw a card.
+status=needs groovy

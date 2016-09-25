@@ -10,3 +10,4 @@ ability=First strike;\
         Whenever SN crews a Vehicle, that Vehicle gains first strike until end of turn.
 timing=main
 oracle=First strike\nWhenever Gearshift Ace crews a Vehicle, that Vehicle gains first strike until end of turn.
+status=not supported: when-crews

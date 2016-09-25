@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Each player discards a card. Then each player who didn't discard a creature card this way loses 4 life.
 timing=main
 oracle=Each player discards a card. Then each player who didn't discard a creature card this way loses 4 life.
+status=needs groovy

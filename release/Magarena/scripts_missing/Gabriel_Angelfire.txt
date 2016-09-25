@@ -9,3 +9,4 @@ pt=4/4
 ability=At the beginning of your upkeep, choose flying, first strike, trample, or rampage 3. SN gains that ability until your next upkeep.
 timing=main
 oracle=At the beginning of your upkeep, choose flying, first strike, trample, or rampage 3. Gabriel Angelfire gains that ability until your next upkeep.
+status=needs groovy

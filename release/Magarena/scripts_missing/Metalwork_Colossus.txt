@@ -10,3 +10,4 @@ ability=SN costs {X} less to cast, where X is the total converted mana cost of n
         Sacrifice two artifacts: Return SN from your graveyard to your hand.
 timing=main
 oracle=Metalwork Colossus costs {X} less to cast, where X is the total converted mana cost of noncreature artifacts you control.\nSacrifice two artifacts: Return Metalwork Colossus from your graveyard to your hand.
+status=needs groovy

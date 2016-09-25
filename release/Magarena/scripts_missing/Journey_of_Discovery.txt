@@ -8,3 +8,4 @@ ability=Entwine {2}{G}
 effect=Choose one — (1) Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library. (2) You may play up to two additional lands this turn.
 timing=main
 oracle=Choose one —\n• Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library.\n• You may play up to two additional lands this turn.\nEntwine {2}{G}
+status=needs groovy

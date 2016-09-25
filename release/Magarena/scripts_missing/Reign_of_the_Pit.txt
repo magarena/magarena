@@ -7,3 +7,4 @@ cost={4}{B}{B}
 effect=Each player sacrifices a creature. Put an X/X black Demon creature token with flying onto the battlefield, where X is the total power of the creatures sacrificed this way.
 timing=main
 oracle=Each player sacrifices a creature. Put an X/X black Demon creature token with flying onto the battlefield, where X is the total power of the creatures sacrificed this way.
+status=needs groovy

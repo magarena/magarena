@@ -7,3 +7,4 @@ cost={2}{G}{G}
 effect=Starting with you, each player may put a permanent card from his or her hand onto the battlefield. Repeat this process until no one puts a card onto the battlefield.
 timing=main
 oracle=Starting with you, each player may put a permanent card from his or her hand onto the battlefield. Repeat this process until no one puts a card onto the battlefield.
+status=needs groovy

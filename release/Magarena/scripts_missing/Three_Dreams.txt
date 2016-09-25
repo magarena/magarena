@@ -7,3 +7,4 @@ cost={4}{W}
 effect=Search your library for up to three Aura cards with different names, reveal them, and put them into your hand. Then shuffle your library.
 timing=main
 oracle=Search your library for up to three Aura cards with different names, reveal them, and put them into your hand. Then shuffle your library.
+status=not supported: search-restriction

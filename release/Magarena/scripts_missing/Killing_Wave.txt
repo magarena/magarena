@@ -7,3 +7,4 @@ cost={X}{B}
 effect=For each creature, its controller sacrifices it unless he or she pays X life.
 timing=main
 oracle=For each creature, its controller sacrifices it unless he or she pays X life.
+status=needs groovy

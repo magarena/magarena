@@ -7,3 +7,4 @@ cost={4}{U}{R}
 effect=Choose target creature or player. Draw three cards, then discard a card. SN deals damage equal to the discarded card's converted mana cost to that creature or player.
 timing=main
 oracle=Choose target creature or player. Draw three cards, then discard a card. Blast of Genius deals damage equal to the discarded card's converted mana cost to that creature or player.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=1/1
 ability={T}: Until your next upkeep, target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost.
 timing=main
 oracle={T}: Until your next upkeep, target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost.
+status=needs groovy
