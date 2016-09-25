@@ -19,7 +19,7 @@ public class ImagesDownloadList extends ArrayList<DownloadableFile> {
             try {
                 add(new CardImageFile(card));
             } catch (final java.net.MalformedURLException ex) {
-                System.err.println("!!! Malformed URL " + card.getImageURL());
+                System.err.println("!!! Malformed URL for " + card + ": \"" + card.getImageURL() + "\"");
             }
         }
     }
