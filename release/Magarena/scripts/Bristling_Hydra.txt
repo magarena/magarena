@@ -7,6 +7,6 @@ subtype=Hydra
 cost={2}{G}{G}
 pt=4/3
 ability=When SN enters the battlefield, you get {E}{E}{E}.;\
-        Pay {E}{E}{E}: Put a +1/+1 counter on SN. It gains hexproof until end of turn.
+        Pay {E}{E}{E}: Put a +1/+1 counter on SN.~It gains hexproof until end of turn.
 timing=main
 oracle=When Bristling Hydra enters the battlefield, you get {E}{E}{E}.\nPay {E}{E}{E}: Put a +1/+1 counter on Bristling Hydra. It gains hexproof until end of turn.
