@@ -459,7 +459,7 @@ ShawnieBoy
   * loyalty for unimplemented Planeswalkers not displayed in cardbuilder
   * permanent can tap itself twice to pay for '{T}, tap an untapped ...'
   * Helm of Obedience did not check that cards entered the graveyard (issue #745)
-    
+
 - added the following cards:
 Aberrant Researcher, Aim High, Alms of the Vein, Always Watching,
 Ancient of the Equinox, Angelic Purge, Angel of Deliverance,
