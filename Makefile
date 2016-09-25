@@ -933,7 +933,7 @@ correct-release-label:
 	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${linux} -H"Content-Type: application/json" -d'{"name": "Magarena-${tag}.zip", "label":"Magarena-${tag}.zip for Linux/Windows"}' -u ${username}
 
 %_img.tsv:
-	paste <(cat conspiracy-take-crown | pup 'img attr{alt}') <(cat conspiracy-take-crown | pup 'img attr{src}') > $@
+	paste <(cat image-gallery | pup 'img attr{alt}') <(cat image-gallery | pup 'img attr{src}') > $@
 	# edit tsv file to use only ASCII characters
 
 %_fix_image:
