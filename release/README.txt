@@ -78,18 +78,23 @@ lodici
 melvin
 ShawnieBoy
 
+UI changes
+- explorer screen
+  - improve readability of filter values on themes with darker backgrounds.
+  - add Reset button to each filter and display search operands using a drop-down.
+  - show filter criteria in tooltip on an active filter button.
+  - highlight filter button if active.
+  - move totals to screen header.
+  - add screen layout button; add DEFAULT and NO_SIDEBAR layouts.
+  - Add new action icon which randomly selects a card from the list.
+  - Add new "unsupported" filter button (English only).
+
 - increase images available for crops and non-English cards. Crops are recommended for English users.
 - Add Kaladesh set and block format
 
-    add "unsupported" filter button to explorer
     add ability 'Melee'
     add new frames for some double-sided cards - fixes minor image error
     support 'where X is' in PutTokens
-    add basic visual indication to filter button if active.
-    update filter button highlight as filter value(s) are changed.
-    show filter criteria in tooltip on an active filter button.
-    Add Reset button for each filter and display search operands using a drop-down.
-    Add icon to action bar which will randomly select a card from the displayed list in explorer.
     add ability 'Crew <n>'
     extend SacrificeChosen to multiple permanents
     add conditions 'an opponent controls more creatures than you' and 'an opponent has more life than you'
@@ -97,7 +102,6 @@ ShawnieBoy
     add condition 'if a <permanent> is on the battlefield'
     add condition 'enchanted creature has <amount> or more <type> counters on it'
     add ability '<permanents> enter the battlefield tapped'
-    improve readability of filter values on themes with darker backgrounds.
     update keyword glossary
     allow effect '<effect> unless you <cost>'
     allow ability '<permament> don't untap during their controllers' untap steps.'
