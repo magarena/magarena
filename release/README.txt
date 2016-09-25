@@ -90,40 +90,40 @@ ShawnieBoy
 - new translatable strings: 10
 
 - added the following to the card script:
-   * cost: Pay {E}+
-   * condition: you're the monarch
-   * condition: an opponent has more life than you
-   * condition: you have more life than an opponent
-   * condition: an opponent controls more creatures than you
-   * condition: enchanted creature has <amount> or more <type> counters on it
-   * condition: if a <permanent> is on the battlefield
-   * ability: Melee
-   * ability: Crew <n>
-   * ability: Fabricate <n>
-   * ability: <permanents> enter the battlefield tapped
-   * ability: <permament> don't untap during their controllers' untap steps
-   * effect: <effect> unless you <cost>
-   * effect: <player> get {E}+
-   * effect: you become the monarch
-   * effect: Put X <token> onto the battlefield, where X is <amount>
+  * cost: Pay {E}+
+  * condition: you're the monarch
+  * condition: an opponent has more life than you
+  * condition: you have more life than an opponent
+  * condition: an opponent controls more creatures than you
+  * condition: enchanted creature has <amount> or more <type> counters on it
+  * condition: if a <permanent> is on the battlefield
+  * ability: Melee
+  * ability: Crew <n>
+  * ability: Fabricate <n>
+  * ability: <permanents> enter the battlefield tapped
+  * ability: <permament> don't untap during their controllers' untap steps
+  * effect: <effect> unless you <cost>
+  * effect: <player> get {E}+
+  * effect: you become the monarch
+  * effect: Put X <token> onto the battlefield, where X is <amount>
 
 - changed/added the following to the card explorer:
-   * move totals to screen header
-   * highlight filter button if active
-   * show filter criteria in tooltip on an active filter button
-   * improve readability of filter values on themes with darker backgrounds
-   * add "Unsupported" filter
-   * add "Reset" button to each filter and display search operands using a drop-down
-   * add "Lucky Dip" button which randomly selects a card from the list
-   * add "Change layout" button that toggles the sidebar
+  * move totals to screen header
+  * highlight filter button if active
+  * show filter criteria in tooltip on an active filter button
+  * improve readability of filter values on themes with darker backgrounds
+  * add "Unsupported" filter
+  * add "Reset" button to each filter and display search operands using a drop-down
+  * add "Lucky Dip" button which randomly selects a card from the list
+  * add "Change layout" button that toggles the sidebar
 
 - fixed the following bugs:
-    * duplicate draw message in game log
-    * SOI and OGW lands not selected by random deck generator
-    * Deathbringer Liege triggers fire in the wrong order
-    * Warmonger's Chariot second ability only applies when equipped creature is black
-    * Mana Vapors did not affect lands that entered the battlefield after it resolves
-    * Blazing Torch equippped creature sacrifices itself to do damage instead of sacrificing Blazing Torch (issue #882)
+  * duplicate draw message in game log
+  * SOI and OGW lands not selected by random deck generator
+  * Deathbringer Liege triggers fire in the wrong order
+  * Warmonger's Chariot second ability only applies when equipped creature is black
+  * Mana Vapors did not affect lands that entered the battlefield after it resolves
+  * Blazing Torch equippped creature sacrifices itself to do damage instead of sacrificing Blazing Torch (issue #882)
 
 - added the following cards:
 Abolisher of Bloodlines, Abu Ja'far, Accelerated Mutation,
@@ -204,14 +204,14 @@ ShawnieBoy
 - add Conspiracy: Take the Crown to sets and formats
 
 - added the following to the card script:
-    * condition: you've cast another spell this turn
+  * condition: you've cast another spell this turn
 
 - fixed the following bugs:
-    * Lambholt Pacifist can't attack when its power is greater than 4 (issue #819)
-    * Hope Against Hope missing AI enchant hint (issue #818)
-    * Lunarch Mantle missing AI enchant hint (issue #820)
-    * Ride Down doesn't give trample (issue #821)
-    * Ulrich of the Krallenhorde's pump trigger fires when he transforms into
+  * Lambholt Pacifist can't attack when its power is greater than 4 (issue #819)
+  * Hope Against Hope missing AI enchant hint (issue #818)
+  * Lunarch Mantle missing AI enchant hint (issue #820)
+  * Ride Down doesn't give trample (issue #821)
+  * Ulrich of the Krallenhorde's pump trigger fires when he transforms into
       Ulrich, Uncontested Alpha (issue #822)
 
 - added the following cards:
@@ -233,23 +233,23 @@ ShawnieBoy
 - add status property to indicate whether a missing card is supported
 
 - added the following to the card script:
-    * ability: Snow landwalk
-    * ability: Snow swampwalk
-    * ability: Snow forestwalk
-    * ability: Conspire
-    * ability: Emerge <mana cost>
-    * ability: <permanents> can't block it
-    * ability: SN cost {1} less to cast for each <amount>
-    * ability: Whenever <permanent> enters the battlefield under an opponent's control, <effect>.
-    * effect:  <players> lose <amount> life. You gain life equal to the life lost this way
-    * effect: <sn/rn> fights <permanent>
+  * ability: Snow landwalk
+  * ability: Snow swampwalk
+  * ability: Snow forestwalk
+  * ability: Conspire
+  * ability: Emerge <mana cost>
+  * ability: <permanents> can't block it
+  * ability: SN cost {1} less to cast for each <amount>
+  * ability: Whenever <permanent> enters the battlefield under an opponent's control, <effect>.
+  * effect:  <players> lose <amount> life. You gain life equal to the life lost this way
+  * effect: <sn/rn> fights <permanent>
 
 - fixed the following bugs:
-    * crash in deck editor when selecting subtypes (issue #802)
-    * changing folder name manually results in "Not enough free space" warning (issue #803)
-    * Grisly Salvage did not put rest of cards to graveyard (issue #791)
-    * Walker of the Wastes did not count the number of Wastes correctly (issue #793)
-    * Gate Smasher can be equipped on opponent's creature (issue #794)
+  * crash in deck editor when selecting subtypes (issue #802)
+  * changing folder name manually results in "Not enough free space" warning (issue #803)
+  * Grisly Salvage did not put rest of cards to graveyard (issue #791)
+  * Walker of the Wastes did not count the number of Wastes correctly (issue #793)
+  * Gate Smasher can be equipped on opponent's creature (issue #794)
 
 - added the following cards:
 Abundant Maw, Advanced Stitchwing, Æthertow, Agent of Acquisitions,
@@ -324,45 +324,45 @@ ShawnieBoy
 - add Eternal Masters to sets
 
 - added the following to the card script:
-    * condition: during combat after blockers are declared
-    * condition: during combat before blockers are declared
-    * condition: during the declare blockers step
-    * condition: enchanted creature is <filter>
-    * condition: equipped creature is <filter>
-    * cost: Exile <amount> <permanents>
-    * effect: You may <cost>. If you do, <effect>.
-    * effect: Remove <permanents> from combat.
-    * effect: Exile SN. (move SN to the exile zone when it resolves)
-    * effect: Return SN to its owner's hand. (move SN to its owner's hand when it resolves)
-    * effect: Put a token that's a copy of <permanent> onto the battlefield.
-    * effect: <permanents> get gains <ability> and gets (+|-)(X|0)/(+|-)(X|0) until end of turn, where X is <count>.
-    * effect: (SN|RN) assigns no combat damage this turn.
-    * effect: Look at the top <amount> cards of your library. You may reveal a <card> from among them and put it into your hand. Put the rest on the bottom of your library in any order.
-    * effect: Look at the top <amount> cards of your library. Put <amount> of them into your hand and the rest into your graveyard.
-    * effect: Look at the top <amount> cards of your library. Put <amount> of them in your hand and the rest on the bottom of your library in any order.
-    * effect: Reveal the top <amount> cards of your library. You may put a <card> from among them into your hand. Put the rest into your graveyard.
-    * effect: Transform <permanents>.
-    * effect: Exile <permanents> until SN leaves the battlefield.
-    * effect: Choose one (1) <effect> (2) <effect> (3) <effect> (4) <effect>
-    * effect: <permanents> becomes blocked.
-    * effect: <players> gain/lose life equal to <amount>.
-    * effect: Draw cards equal to <amount>.
-    * ability: Equip <cost> to a <filter>
-    * ability: <permanenst> get (+|-)(X|0)/(+|-)(X|0), where X is <count>.
-    * ability: (+|-)<N>: <effect> (loyalty ability)
-    * ability: If <condition>, you may <cost> rather than pay SN's mana cost.
-    * ability: When this creature transforms into SN, <effect>.
-    * ability: Whenever you sacrifice a <permanent>, <effect>.
-    * ability: Whenever a player sacrifices a <permanent>, <effect>.
-    * ability: Protection from multicolored
+  * condition: during combat after blockers are declared
+  * condition: during combat before blockers are declared
+  * condition: during the declare blockers step
+  * condition: enchanted creature is <filter>
+  * condition: equipped creature is <filter>
+  * cost: Exile <amount> <permanents>
+  * effect: You may <cost>. If you do, <effect>.
+  * effect: Remove <permanents> from combat.
+  * effect: Exile SN. (move SN to the exile zone when it resolves)
+  * effect: Return SN to its owner's hand. (move SN to its owner's hand when it resolves)
+  * effect: Put a token that's a copy of <permanent> onto the battlefield.
+  * effect: <permanents> get gains <ability> and gets (+|-)(X|0)/(+|-)(X|0) until end of turn, where X is <count>.
+  * effect: (SN|RN) assigns no combat damage this turn.
+  * effect: Look at the top <amount> cards of your library. You may reveal a <card> from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+  * effect: Look at the top <amount> cards of your library. Put <amount> of them into your hand and the rest into your graveyard.
+  * effect: Look at the top <amount> cards of your library. Put <amount> of them in your hand and the rest on the bottom of your library in any order.
+  * effect: Reveal the top <amount> cards of your library. You may put a <card> from among them into your hand. Put the rest into your graveyard.
+  * effect: Transform <permanents>.
+  * effect: Exile <permanents> until SN leaves the battlefield.
+  * effect: Choose one (1) <effect> (2) <effect> (3) <effect> (4) <effect>
+  * effect: <permanents> becomes blocked.
+  * effect: <players> gain/lose life equal to <amount>.
+  * effect: Draw cards equal to <amount>.
+  * ability: Equip <cost> to a <filter>
+  * ability: <permanenst> get (+|-)(X|0)/(+|-)(X|0), where X is <count>.
+  * ability: (+|-)<N>: <effect> (loyalty ability)
+  * ability: If <condition>, you may <cost> rather than pay SN's mana cost.
+  * ability: When this creature transforms into SN, <effect>.
+  * ability: Whenever you sacrifice a <permanent>, <effect>.
+  * ability: Whenever a player sacrifices a <permanent>, <effect>.
+  * ability: Protection from multicolored
 
 - fixed the following bugs:
-    * crash when double-clicking empty decks list in card explorer (issue #786)
-    * deck filter only matching lower case card name, should be case-insensitive
-    * trailing html tag shown due to trailing "\n" in string
-    * draw effect occurs before other effects (issue #205)
-    * Sigil of Valor counts the equipped creature (issue #773)
-    * Vampiric Tutor reveals selected card
+  * crash when double-clicking empty decks list in card explorer (issue #786)
+  * deck filter only matching lower case card name, should be case-insensitive
+  * trailing html tag shown due to trailing "\n" in string
+  * draw effect occurs before other effects (issue #205)
+  * Sigil of Valor counts the equipped creature (issue #773)
+  * Vampiric Tutor reveals selected card
 
 - added the following cards:
 Akroan Conscriptor, Aligned Hedron Network, Ancestral Memories,
@@ -455,10 +455,10 @@ ShawnieBoy
 - update Keyword Glossary
 
 - fixed the following bugs:
-    * incorrect transform-type symbols for transform cards in cardbuilder
-    * loyalty for unimplemented Planeswalkers not displayed in cardbuilder
-    * permanent can tap itself twice to pay for '{T}, tap an untapped ...'
-    * Helm of Obedience did not check that cards entered the graveyard (issue #745)
+  * incorrect transform-type symbols for transform cards in cardbuilder
+  * loyalty for unimplemented Planeswalkers not displayed in cardbuilder
+  * permanent can tap itself twice to pay for '{T}, tap an untapped ...'
+  * Helm of Obedience did not check that cards entered the graveyard (issue #745)
     
 - added the following cards:
 Aberrant Researcher, Aim High, Alms of the Vein, Always Watching,
@@ -530,30 +530,30 @@ ShawnieBoy
 - add Battle for Zendikar block
 
 - added the following to the card script:
-    * condition: there are four or more card types among cards in your graveyard (Delirium)
-    * ability: Skulk
-    * effect: Investigate.
-    * effect: <permanents> can't block SN this turn.
+  * condition: there are four or more card types among cards in your graveyard (Delirium)
+  * ability: Skulk
+  * effect: Investigate.
+  * effect: <permanents> can't block SN this turn.
 
 - fixed the following bugs:
-    * unable to sort cards by rarity or subtype
-    * decks with more than 4 non-basic lands considered legal
-    * model spells that target did not trigger when targeted triggers (issue #678)
-    * layout anomaly in stats panel on Linux (issue #683)
-    * confusing play animation when AI plays Smallpox (issue #695)
-    * custom ability icons incorrectly shown on battlefield card images (issue #704)
-    * Firemind top decks with Æ are not being parsed correctly (issue #718)
-    * unable to download large number of images due to HTTP errors (issue #729)
-    * Gallowbraid log message had 'lose' instead of 'pay'
-    * Scarwood Bandits should not lose control of artifact when control changes
-    * Zodiac Dragon should only trigger if you both own and control it (issue #690)
-    * Thorn of Amethyst increases the casting cost of creatures by {1} (issue #698)
-    * Genesis Wave duplicated cards played from library (issue #712)
-    * Zada's Commando can tap itself to use cohort (issue #715)
-    * Jace the Mind Sculptor reveals the card looked at in the may choice (issue #727)
-    * Wandering Fumarole's last ability could lead to infinite activation by AI (issue #732)
-    * Bane Alley Broker logs names of exiled cards (issue #738)
-    * Snapcaster Mage allows casting cards that could not be paid due to cost increasers (issue #741)
+  * unable to sort cards by rarity or subtype
+  * decks with more than 4 non-basic lands considered legal
+  * model spells that target did not trigger when targeted triggers (issue #678)
+  * layout anomaly in stats panel on Linux (issue #683)
+  * confusing play animation when AI plays Smallpox (issue #695)
+  * custom ability icons incorrectly shown on battlefield card images (issue #704)
+  * Firemind top decks with Æ are not being parsed correctly (issue #718)
+  * unable to download large number of images due to HTTP errors (issue #729)
+  * Gallowbraid log message had 'lose' instead of 'pay'
+  * Scarwood Bandits should not lose control of artifact when control changes
+  * Zodiac Dragon should only trigger if you both own and control it (issue #690)
+  * Thorn of Amethyst increases the casting cost of creatures by {1} (issue #698)
+  * Genesis Wave duplicated cards played from library (issue #712)
+  * Zada's Commando can tap itself to use cohort (issue #715)
+  * Jace the Mind Sculptor reveals the card looked at in the may choice (issue #727)
+  * Wandering Fumarole's last ability could lead to infinite activation by AI (issue #732)
+  * Bane Alley Broker logs names of exiled cards (issue #738)
+  * Snapcaster Mage allows casting cards that could not be paid due to cost increasers (issue #741)
 
 - added the following cards:
 Abduction, Academy Raider, Ætherplasm, Alaborn Zealot, Animate Wall,
@@ -1569,13 +1569,13 @@ PalladiaMors
   * effect: Put <permanent> on the bottom of its owner's library.
 
 - fixed the following bugs:
-   * modal effect did not ask for targets when putting effect on the stack
-   * not message shown when a player scry's but leave card on top
-   * missing reveal when card is shuffled into library instead of going to the graveyard
-   * missing AI hints for Banishing Light and Devour Flesh
-   * player avatars missing when resuming a game.
-   * Phyrexian Metamorph not able to copy an artifact
-   * Gilt-Leaf Archdruid's ability can be activated when you have only one druid
+  * modal effect did not ask for targets when putting effect on the stack
+  * not message shown when a player scry's but leave card on top
+  * missing reveal when card is shuffled into library instead of going to the graveyard
+  * missing AI hints for Banishing Light and Devour Flesh
+  * player avatars missing when resuming a game.
+  * Phyrexian Metamorph not able to copy an artifact
+  * Gilt-Leaf Archdruid's ability can be activated when you have only one druid
 
 - added the following cards:
 Active Volcano, Æther Shockwave, Ainok Guide, Aven Surveyor,
@@ -1665,15 +1665,15 @@ PalladiaMors
 ShawnieBoy
 
 - new splash screen design
- * show percentage complete instead of inaccurate card count (issue #26)
- * (experimental) can override default splash by adding a "splash.png" to the mods folder
+  * show percentage complete instead of inaccurate card count (issue #26)
+  * (experimental) can override default splash by adding a "splash.png" to the mods folder
 
 - new annotated card image popup
- * displays ability icons and ability description by hovering mouse over icon,
+  * displays ability icons and ability description by hovering mouse over icon,
    hold Ctrl key to prevent popup closing
- * displays modified PT with base PT
- * pauses game while popup is open
- * new setting to scale popup by screen or card size
+  * displays modified PT with base PT
+  * pauses game while popup is open
+  * new setting to scale popup by screen or card size
 
 - different ability icon sets can be associated with a theme
 
@@ -1695,13 +1695,13 @@ ShawnieBoy
 - add F1/wiki help for main menu screen
 
 - fixed the following bugs:
- * end-of-turn sound effect was hanging game on linux (issue #8)
- * able to sacrifice a creature to Desecreation when you have no creatures (issue #17)
- * suppress overlay if card image is too small (issue #24)
- * fix flickering game menu when opening via mouseclick in linux
- * untap cost checks for untapped permanents instead of tapped permanents
- * Sanctum Gargoyle missing flying (issue #23)
- * Crackleburr should not count itself when checking for two untapped red
+  * end-of-turn sound effect was hanging game on linux (issue #8)
+  * able to sacrifice a creature to Desecreation when you have no creatures (issue #17)
+  * suppress overlay if card image is too small (issue #24)
+  * fix flickering game menu when opening via mouseclick in linux
+  * untap cost checks for untapped permanents instead of tapped permanents
+  * Sanctum Gargoyle missing flying (issue #23)
+  * Crackleburr should not count itself when checking for two untapped red
    creatures or two tapped blue creatures (issue #11)
 
 - added the following cards:
@@ -1748,13 +1748,13 @@ ShawnieBoy
   player loses.
 
 - fixed the following bugs:
- * Mac launcher only allowed Java SE 7 to work, Java SE 8 did not work
- * turn highlight of avatar mistaken as choice indicator, fixed by removing
+  * Mac launcher only allowed Java SE 7 to work, Java SE 8 did not work
+  * turn highlight of avatar mistaken as choice indicator, fixed by removing
    the turn highlight as it is redudant (issue 407)
- * scrollbar was not right aligned correctly
- * Tolarian Sentinel's ability missing discard cost (issue 709)
- * Order of the Stars effect triggers after it comes into play
- * Wizard Replica missing flying
+  * scrollbar was not right aligned correctly
+  * Tolarian Sentinel's ability missing discard cost (issue 709)
+  * Order of the Stars effect triggers after it comes into play
+  * Wizard Replica missing flying
 
 - added the following cards:
 Abyssal Persecutor, Aegis Angel, Alloy Golem, Altar of the Brood,
@@ -2007,71 +2007,71 @@ ShawnieBoy
 - add icons for fear, intimidate, shroud, hexproof, and indestructible
 
 - added the following to the card script:
- * cost: sacrifice <amount> <permanents>
- * cost: tap <amount> untapped <permanents>
- * cost: untap <amount> tapped <permanents>
- * cost: put <amount> <counter type> counters on SN
- * cost: remove a <type> counter from a creature you control
- * cost: exile a <card>
- * effect: <effect>~<effect without choice>
- * effect: if <condition>, <effect>
- * effect: turn SN face down.
- * effect: turn <chosen> face down.
- * effect: turn <chosen> face up.
- * effect: flip SN.
- * effect: transform SN.
- * effect: cipher.
- * effect: detain <chosen>.
- * effect: populate.
- * effect: tap or untap <chosen>.
- * effect: tap all <group>.
- * effect: untap all <group>.
- * effect: exile all <group>.
- * effect: draw a card at the beginning of the next turn's upkeep.
- * effect: copy <chosen>. You may choose new targets for the copy.
- * effect: SN doesn't untap during your next untap step.
- * effect: <chosen> doesn't untap during your next untap step.
- * effect: tap <chosen>. it doesn't untap during its controller's next untap step.
- * effect: prevent all combat damage that would be dealt this turn.
- * effect: prevent all damage that would be dealt to <chosen> this turn.
- * effect: prevent all combat damage that would be dealt by <chosen> this turn.
- * ability: protection from <permanents>
- * ability: cannot be blocked by <permanents>
- * ability: cannot be blocked except by <permanents>
- * ability: morph <costs>
- * ability: Cast SN only <conditions>
- * ability: Cast SN with AI only <conditions>
- * ability: <activated ability> Activate this ability only <conditions>.
- * ability: SN's power and toughness are each equal to the number of <group>.
- * ability: SN gets <pt> and <abilities> unless <condition>.
- * ability: SN loses <ability> until end of turn.
- * ability: <chosen> loses <ability> until end of turn.
- * ability: When you cycle SN, <effect>
- * ability: Whenever a player cycles a card, <effect>
- * ability: Whenever a permanent is turned face up, <effect>.
- * ability: When SN becomes monstrous, <effect>.
- * ability: Whenever SN deals combat damage, <effect>.
+  * cost: sacrifice <amount> <permanents>
+  * cost: tap <amount> untapped <permanents>
+  * cost: untap <amount> tapped <permanents>
+  * cost: put <amount> <counter type> counters on SN
+  * cost: remove a <type> counter from a creature you control
+  * cost: exile a <card>
+  * effect: <effect>~<effect without choice>
+  * effect: if <condition>, <effect>
+  * effect: turn SN face down.
+  * effect: turn <chosen> face down.
+  * effect: turn <chosen> face up.
+  * effect: flip SN.
+  * effect: transform SN.
+  * effect: cipher.
+  * effect: detain <chosen>.
+  * effect: populate.
+  * effect: tap or untap <chosen>.
+  * effect: tap all <group>.
+  * effect: untap all <group>.
+  * effect: exile all <group>.
+  * effect: draw a card at the beginning of the next turn's upkeep.
+  * effect: copy <chosen>. You may choose new targets for the copy.
+  * effect: SN doesn't untap during your next untap step.
+  * effect: <chosen> doesn't untap during your next untap step.
+  * effect: tap <chosen>. it doesn't untap during its controller's next untap step.
+  * effect: prevent all combat damage that would be dealt this turn.
+  * effect: prevent all damage that would be dealt to <chosen> this turn.
+  * effect: prevent all combat damage that would be dealt by <chosen> this turn.
+  * ability: protection from <permanents>
+  * ability: cannot be blocked by <permanents>
+  * ability: cannot be blocked except by <permanents>
+  * ability: morph <costs>
+  * ability: Cast SN only <conditions>
+  * ability: Cast SN with AI only <conditions>
+  * ability: <activated ability> Activate this ability only <conditions>.
+  * ability: SN's power and toughness are each equal to the number of <group>.
+  * ability: SN gets <pt> and <abilities> unless <condition>.
+  * ability: SN loses <ability> until end of turn.
+  * ability: <chosen> loses <ability> until end of turn.
+  * ability: When you cycle SN, <effect>
+  * ability: Whenever a player cycles a card, <effect>
+  * ability: Whenever a permanent is turned face up, <effect>.
+  * ability: When SN becomes monstrous, <effect>.
+  * ability: Whenever SN deals combat damage, <effect>.
 
 - fixed the following bugs:
- * image files are corrupted due to partial download (issue 483)
- * tokens with variable power/toughness do not have their power/toughness copied (issue 523)
- * permanents that enters the battlefield modified may trigger based on pre-modified state (issue 624)
- * not refreshing background after import (issue 628)
- * missing cards notification message not updated after download (issue 638)
- * import incorrectly overwrites default cubes (issue 647)
- * card animation should not play in text mode (issue 661)
- * unsetting a filter causes an exception
- * Scion of Darkness' trigger not optional
- * Walking Archive triggers during the draw step, should be upkeep
- * Kami of the Waning Moon missing flying
- * Noxious Hatchling entered the battlefield with four +1/+1 counters, should be -1/-1 counters
- * Mindwarper missing {2}{B} from discard activation
- * Growth Spasm did not put land into play tapped
- * Wight of Precinct Six should count your opponent's graveyard, not active player's opponent's graveyard
- * Merfolk Mesmerist's ability missing tap
- * Perplex missing transmute ability
- * Lost Order of Jarkeld counts creatures of opponent, should be chosen player
- * Tidewalker's ability is a CDA not a static ability
+  * image files are corrupted due to partial download (issue 483)
+  * tokens with variable power/toughness do not have their power/toughness copied (issue 523)
+  * permanents that enters the battlefield modified may trigger based on pre-modified state (issue 624)
+  * not refreshing background after import (issue 628)
+  * missing cards notification message not updated after download (issue 638)
+  * import incorrectly overwrites default cubes (issue 647)
+  * card animation should not play in text mode (issue 661)
+  * unsetting a filter causes an exception
+  * Scion of Darkness' trigger not optional
+  * Walking Archive triggers during the draw step, should be upkeep
+  * Kami of the Waning Moon missing flying
+  * Noxious Hatchling entered the battlefield with four +1/+1 counters, should be -1/-1 counters
+  * Mindwarper missing {2}{B} from discard activation
+  * Growth Spasm did not put land into play tapped
+  * Wight of Precinct Six should count your opponent's graveyard, not active player's opponent's graveyard
+  * Merfolk Mesmerist's ability missing tap
+  * Perplex missing transmute ability
+  * Lost Order of Jarkeld counts creatures of opponent, should be chosen player
+  * Tidewalker's ability is a CDA not a static ability
 
 - added the following cards:
 Aboshan, Cephalid Emperor, Acceptable Losses, Ætherling,
@@ -2275,27 +2275,27 @@ ShawnieBoy
 - effects affecting all players now proceed in active players, then non-active player order
 
 - added the following to the card script:
- * effect: Each <player> discard <amount> cards [at random].
- * ability: legendary landwalk
- * ability: Channel - <costs>: <effect>
- * ability: Bloodrush - <costs>: <effect>
- * ability: madness <mana cost>
+  * effect: Each <player> discard <amount> cards [at random].
+  * ability: legendary landwalk
+  * ability: Channel - <costs>: <effect>
+  * ability: Bloodrush - <costs>: <effect>
+  * ability: madness <mana cost>
 
 - fixed the following bugs:
- * aura should drop off if it becomes a creature
- * when choosing a color the ui shows "Choose yes or no", should show "Choose a color"
- * choice of creature to sacrifice made when effects goes in the stack, should be when effect resolves
- * deck generates NPE in deck view (issue 618)
- * log messages showing in the wrong order (issue 619)
- * status filter not clearing with reset filters (issue 629)
- * reduce the chance of the AI to tap Faerie Conclave to pay for its animate ability
- * invalid deck prevents the deck editor from opening (issue 625)
- * Grenzo, Dungeon Warden crashes if your library is empty
- * Undertaker was missing 'Discard a card' in activation cost
- * Field of Souls' trigger isn't optional
- * Moat prevents creatures that gained flying from attacking
- * Scourge of Kher Ridges' second ability deals damage to itself
- * Death's Shadow's ability is a static ability, not CDA
+  * aura should drop off if it becomes a creature
+  * when choosing a color the ui shows "Choose yes or no", should show "Choose a color"
+  * choice of creature to sacrifice made when effects goes in the stack, should be when effect resolves
+  * deck generates NPE in deck view (issue 618)
+  * log messages showing in the wrong order (issue 619)
+  * status filter not clearing with reset filters (issue 629)
+  * reduce the chance of the AI to tap Faerie Conclave to pay for its animate ability
+  * invalid deck prevents the deck editor from opening (issue 625)
+  * Grenzo, Dungeon Warden crashes if your library is empty
+  * Undertaker was missing 'Discard a card' in activation cost
+  * Field of Souls' trigger isn't optional
+  * Moat prevents creatures that gained flying from attacking
+  * Scourge of Kher Ridges' second ability deals damage to itself
+  * Death's Shadow's ability is a static ability, not CDA
 
 - added the following cards:
 Aeronaut Tinkerer, Allied Strategies, Altac Bloodseeker, Amphin Pathmage,
