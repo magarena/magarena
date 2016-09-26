@@ -782,7 +782,9 @@ public class MagicGame {
 
         activeSource = event.getSource();
         event.executeEvent(this,choiceResults);
-        update();
+        if (hasNextEvent() && getNextEvent().hasChoice()) {
+            update();
+        }
     }
 
     public MagicEventQueue getEvents() {
