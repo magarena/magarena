@@ -71,6 +71,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.78 (October 30, 2016)
+============
+
 Release 1.77 (September 25, 2016)
 ============
 kelsioboy
