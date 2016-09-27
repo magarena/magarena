@@ -11,3 +11,4 @@ ability=Each opponent can't draw more than one card each turn.;\
         Whenever you or a permanent you control becomes the target of a spell or ability an opponent controls, you may draw a card.
 timing=main
 oracle=Each opponent can't draw more than one card each turn.\nWhenever you or a permanent you control becomes the target of a spell or ability an opponent controls, you may draw a card.
+status=not supported: players-cant

@@ -10,3 +10,4 @@ ability=Haste;\
         Whenever SN crews a Vehicle, that Vehicle gains haste until end of turn.
 timing=fmain
 oracle=Haste\nWhenever Speedway Fanatic crews a Vehicle, that Vehicle gains haste until end of turn.
+status=not supported: crews

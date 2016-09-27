@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Destroy target artifact. If that artifact had counters on it, put that many +1/+1 counters or charge counters on an artifact you control.
 timing=main
 oracle=Destroy target artifact. If that artifact had counters on it, put that many +1/+1 counters or charge counters on an artifact you control.
+status=needs groovy

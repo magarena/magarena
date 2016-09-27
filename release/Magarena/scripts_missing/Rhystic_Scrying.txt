@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Draw three cards. Then, if any player pays {2}, discard three cards.
 timing=main
 oracle=Draw three cards. Then, if any player pays {2}, discard three cards.
+status=needs groovy

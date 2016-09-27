@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Unless any player pays {2}, search your library for a card, put that card into your hand, then shuffle your library.
 timing=main
 oracle=Unless any player pays {2}, search your library for a card, put that card into your hand, then shuffle your library.
+status=needs groovy

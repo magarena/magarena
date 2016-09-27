@@ -9,3 +9,4 @@ pt=2/1
 ability=Whenever SN attacks or blocks, any player may exile a card from his or her graveyard. If a player does, SN assigns no combat damage this turn.
 timing=main
 oracle=Whenever Carrion Rats attacks or blocks, any player may exile a card from his or her graveyard. If a player does, Carrion Rats assigns no combat damage this turn.
+status=needs groovy

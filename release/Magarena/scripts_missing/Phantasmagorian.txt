@@ -10,3 +10,4 @@ ability=When you cast SN, any player may discard three cards. If a player does, 
         Discard three cards: Return SN from your graveyard to your hand.
 timing=main
 oracle=When you cast Phantasmagorian, any player may discard three cards. If a player does, counter Phantasmagorian.\nDiscard three cards: Return Phantasmagorian from your graveyard to your hand.
+status=needs groovy

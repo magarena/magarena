@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, each player may scry 1.
 timing=main
 oracle=When Eager Construct enters the battlefield, each player may scry 1.
+status=needs groovy

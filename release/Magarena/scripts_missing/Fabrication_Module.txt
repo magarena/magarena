@@ -8,3 +8,4 @@ ability=Whenever you get one or more {E}, put a +1/+1 counter on target creature
         {4}, {T}: You get {E}.
 timing=artifact
 oracle=Whenever you get one or more {E}, put a +1/+1 counter on target creature you control.\n{4}, {T}: You get {E}.
+status=not supported: when-get-e
