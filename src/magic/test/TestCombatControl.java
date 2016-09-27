@@ -18,14 +18,14 @@ class TestCombatControl extends TestGameBuilder {
         P.setLife(1);
         addToLibrary(P, "Island", 10);
         createPermanent(P,"Island", 7);
-        createPermanent(P, "Æther Spellbomb");
+        createPermanent(P, "Aether Spellbomb");
         addToHand(P,"Illusory Gains");
 
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Island", 20);
-        createPermanent(P, "Ætherplasm");
+        createPermanent(P, "Aetherplasm");
         createPermanent(P, "Dryad Arbor");
         addToHand(P, "Grizzly Bears");
         return game;
