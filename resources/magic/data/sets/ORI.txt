@@ -9,7 +9,7 @@ Alchemist's Vial
 Alhammarret's Archive
 Alhammarret, High Arbiter
 Ampryn Tactician
-Anchor to the Æther
+Anchor to the Aether
 Angel's Tomb
 Animist's Awakening
 Anointer of Champions
@@ -93,7 +93,7 @@ Forest
 Foundry of the Consuls
 Gaea's Revenge
 Gather the Pack
-Ghirapur Æther Grid
+Ghirapur Aether Grid
 Ghirapur Gearcrafter
 Gideon's Phalanx
 Gideon, Battle-Forged

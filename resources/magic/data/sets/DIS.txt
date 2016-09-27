@@ -9,7 +9,7 @@ Azorius Guildmage
 Azorius Herald
 Azorius Ploy
 Azorius Signet
-Azorius Æthermage
+Azorius Aethermage
 Beacon Hawk
 Biomantic Mastery
 Blessing of the Nephilim
@@ -187,4 +187,4 @@ Windreaver
 Wit's End
 Wrecking Ball
 Writ of Passage
-Æthermage's Touch
+Aethermage's Touch

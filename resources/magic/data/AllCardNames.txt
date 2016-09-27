@@ -1,32 +1,32 @@
-Ærathi Berserker
-Æther Adept
-Æther Barrier
-Æther Burst
-Æther Charge
-Æther Figment
-Æther Flash
-Æther Gale
-Æther Membrane
-Æther Mutation
-Æther Rift
-Æther Searcher
-Æther Shockwave
-Æther Snap
-Æther Spellbomb
-Æther Sting
-Æther Storm
-Æther Tide
-Æther Vial
-Æther Web
-Ætherflame Wall
-Ætherize
-Ætherling
-Æthermage's Touch
-Ætherplasm
-Æthersnatch
-Æthersnipe
-Ætherspouts
-Æthertow
+Aerathi Berserker
+Aether Adept
+Aether Barrier
+Aether Burst
+Aether Charge
+Aether Figment
+Aether Flash
+Aether Gale
+Aether Membrane
+Aether Mutation
+Aether Rift
+Aether Searcher
+Aether Shockwave
+Aether Snap
+Aether Spellbomb
+Aether Sting
+Aether Storm
+Aether Tide
+Aether Vial
+Aether Web
+Aetherflame Wall
+Aetherize
+Aetherling
+Aethermage's Touch
+Aetherplasm
+Aethersnatch
+Aethersnipe
+Aetherspouts
+Aethertow
 Abandon Hope
 Abandon Reason
 Abandoned Outpost
@@ -380,7 +380,7 @@ Ancestral Statue
 Ancestral Tribute
 Ancestral Vengeance
 Ancestral Vision
-Anchor to the Æther
+Anchor to the Aether
 Ancient Amphitheater
 Ancient Carp
 Ancient Crab
@@ -628,7 +628,7 @@ Arjun, the Shifting Flame
 Ark of Blight
 Arlinn Kord
 Arlinn, Embraced by the Moon
-Arm with Æther
+Arm with Aether
 Armada Wurm
 Armadillo Cloak
 Armageddon
@@ -897,7 +897,7 @@ Azami, Lady of Scrolls
 Azamuki, Treachery Incarnate
 Azimaet Drake
 Azor's Elocutors
-Azorius Æthermage
+Azorius Aethermage
 Azorius Arrester
 Azorius Chancery
 Azorius Charm
@@ -4970,7 +4970,7 @@ Fog Patch
 Fog of Gnats
 Fogwalker
 Foil
-Fold into Æther
+Fold into Aether
 Folk Medicine
 Folk of An-Havva
 Folk of the Pines
@@ -5135,7 +5135,7 @@ Frostling
 Frostweb Spider
 Frostwielder
 Frostwind Invoker
-Frozen Æther
+Frozen Aether
 Frozen Shade
 Frozen Solid
 Fruit of the First Tree
@@ -5252,7 +5252,7 @@ Gaseous Form
 Gate Hound
 Gate Smasher
 Gate to Phyrexia
-Gate to the Æther
+Gate to the Aether
 Gatecreeper Vine
 Gatekeeper of Malakir
 Gateway Shade
@@ -5346,7 +5346,7 @@ Ghastly Haunting
 Ghastly Remains
 Ghave, Guru of Spores
 Ghazbán Ogre
-Ghirapur Æther Grid
+Ghirapur Aether Grid
 Ghirapur Gearcrafter
 Ghirapur Guide
 Ghirapur Orrery
@@ -9568,7 +9568,7 @@ Oblivion Strike
 Oboro Breezecaller
 Oboro Envoy
 Oboro, Palace in the Clouds
-Obscuring Æther
+Obscuring Aether
 Observant Alseid
 Obsessive Search
 Obsessive Skinner
@@ -11844,7 +11844,7 @@ Scoria Cat
 Scoria Elemental
 Scoria Wurm
 Scorned Villager
-Scornful Æther-Lich
+Scornful Aether-Lich
 Scornful Egotist
 Scour
 Scour from Existence
@@ -13708,7 +13708,7 @@ Surge of Thoughtweft
 Surge of Zeal
 Surgespanner
 Surgical Extraction
-Surging Æther
+Surging Aether
 Surging Dementia
 Surging Flame
 Surging Might
@@ -13839,7 +13839,7 @@ Taiga
 Taigam's Scheming
 Taigam's Strike
 Tail Slash
-Tainted Æther
+Tainted Aether
 Tainted Field
 Tainted Isle
 Tainted Pact
@@ -14891,7 +14891,7 @@ Unnatural Speed
 Unnerve
 Unnerving Assault
 Unquestioned Authority
-Unravel the Æther
+Unravel the Aether
 Unruly Mob
 Unscythe, Killer of Kings
 Unseen Walker
@@ -15048,7 +15048,7 @@ Vectis Agents
 Vectis Dominator
 Vectis Silencers
 Vector Asp
-Vedalken Æthermage
+Vedalken Aethermage
 Vedalken Anatomist
 Vedalken Archmage
 Vedalken Blademaster

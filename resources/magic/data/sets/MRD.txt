@@ -1,4 +1,4 @@
-Æther Spellbomb
+Aether Spellbomb
 Alpha Myr
 Altar of Shadows
 Altar's Light
@@ -75,7 +75,7 @@ Forge Armor
 Fractured Loyalty
 Frogmite
 Galvanic Key
-Gate to the Æther
+Gate to the Aether
 Gilded Lotus
 Glimmervoid
 Glissa Sunseeker

@@ -168,4 +168,4 @@ Wind Drake
 Woodlot Crawler
 Zhur-Taa Ancient
 Zhur-Taa Druid
-Ætherling
+Aetherling

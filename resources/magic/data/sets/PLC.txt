@@ -47,7 +47,7 @@ Fa'adiyah Seer
 Fatal Frenzy
 Firefright Mage
 Frenetic Sliver
-Frozen Æther
+Frozen Aether
 Fungal Behemoth
 Fury Charm
 Gaea's Anthem
@@ -165,4 +165,4 @@ Waning Wurm
 Whitemane Lion
 Wild Pair
 Wistful Thinking
-Æther Membrane
+Aether Membrane
