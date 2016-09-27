@@ -1839,6 +1839,16 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    CreateTokens(
+        ARG.PLAYERS + "( )?create(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token(s)?[^\\.]*?(?= that's| for each| where|\\.))( that's)?" + ARG.MODS + "( )?((for each|where X is) " + ARG.WORDRUN + ")?",
+        MagicTiming.Token,
+        "Token"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PutTokens.getAction(matcher);
+        }
+    },
     Mill(
         ARG.PLAYERS + "( )?put(s)? the top " + ARG.AMOUNT + "?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard",
         MagicTiming.Draw,
@@ -2957,6 +2967,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(D|d)raw ", "PN draws ")
             .replaceAll("(Y|y)ou put ", "PN puts ")
             .replaceAll("(P|p)ut ", "PN puts ")
+            .replaceAll("(C|c)reate ", "PN creates ")
             .replaceAll("(S|s)acrifice ", "PN sacrifices ")
             .replaceAll("(Y|y)ou don't ", "PN doesn't ")
             .replaceAll("(Y|y)ou do ", "PN does ")
