@@ -6,6 +6,6 @@ type=Creature
 subtype=Aetherborn,Rogue
 cost={1}{B}
 pt=3/1
-ability={1}, Sacrifice an artifact: Put a +1/+1 counter on SN.~*It* gains indestructible until end of turn.
+ability={1}, Sacrifice an artifact: Put a +1/+1 counter on SN.~It gains indestructible until end of turn.
 timing=main
 oracle={1}, Sacrifice an artifact: Put a +1/+1 counter on Syndicate Trafficker. It gains indestructible until end of turn.
