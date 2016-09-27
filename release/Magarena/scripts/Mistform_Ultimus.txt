@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Illusion
 cost={3}{U}
 pt=3/3
-ability=SN is every creature type.
 timing=main
 oracle=Mistform Ultimus is every creature type.
+requires_groovy_code
