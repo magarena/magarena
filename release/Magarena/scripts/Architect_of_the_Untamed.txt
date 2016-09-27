@@ -7,6 +7,6 @@ subtype=Elf,Artificer,Druid
 cost={2}{G}
 pt=2/3
 ability=Whenever a land enters the battlefield under your control, you get {E}.;\
-        Pay {E}{E}{E}{E}{E}{E}{E}{E}: Put a 6/6 colorless Beast artifact creature token onto the battlefield.
+        Pay {E}{E}{E}{E}{E}{E}{E}{E}: Create a 6/6 colorless Beast artifact creature token.
 timing=main
 oracle=Whenever a land enters the battlefield under your control, you get {E}.\nPay {E}{E}{E}{E}{E}{E}{E}{E}: Create a 6/6 colorless Beast artifact creature token.

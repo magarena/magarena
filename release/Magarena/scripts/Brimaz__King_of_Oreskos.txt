@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Cat,Soldier
 cost={1}{W}{W}
 ability=Vigilance;\
-        Whenever SN attacks, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking.
+        Whenever SN attacks, create a 1/1 white Cat Soldier creature token with vigilance that's attacking.
 pt=3/4
 timing=main
 requires_groovy_code

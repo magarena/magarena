@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={4}, {T}: Put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.
+ability={4}, {T}: Create a 1/1 colorless Thopter artifact creature token with flying.
 timing=artifact
 oracle={4}, {T}: Create a 1/1 colorless Thopter artifact creature token with flying.

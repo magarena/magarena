@@ -7,6 +7,6 @@ subtype=Vedalken,Artificer
 cost={1}{U}{R}
 pt=2/3
 ability=When SN enters the battlefield, you get {E}{E}{E}.;\
-        Pay {E}{E}{E}: Put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.
+        Pay {E}{E}{E}: Create a 1/1 colorless Thopter artifact creature token with flying.
 timing=main
 oracle=When Whirler Virtuoso enters the battlefield, you get {E}{E}{E}.\nPay {E}{E}{E}: Create a 1/1 colorless Thopter artifact creature token with flying.
