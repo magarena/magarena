@@ -1,0 +1,11 @@
+name=Aether Burst
+image=http://magiccards.info/scans/en/od/60.jpg
+image_updated=2016-09-27
+value=3.985
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return up to X target creatures to their owners' hands, where X is one plus the number of cards named Aether Burst in all graveyards as you cast SN.
+timing=removal
+oracle=Return up to X target creatures to their owners' hands, where X is one plus the number of cards named Aether Burst in all graveyards as you cast Aether Burst.
+status=not supported: multiple-targets

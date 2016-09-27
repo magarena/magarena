@@ -1,0 +1,14 @@
+name=Aetherflame Wall
+image=http://magiccards.info/scans/en/ts/142.jpg
+image_updated=2016-09-27
+value=3.358
+rarity=C
+type=Creature
+subtype=Wall
+cost={1}{R}
+pt=0/4
+ability=Defender;\
+        SN can block creatures with shadow as though they didn't have shadow.;\
+        {R}: SN gets +1/+0 until end of turn.
+timing=smain
+oracle=Defender\nAetherflame Wall can block creatures with shadow as though they didn't have shadow.\n{R}: Aetherflame Wall gets +1/+0 until end of turn.

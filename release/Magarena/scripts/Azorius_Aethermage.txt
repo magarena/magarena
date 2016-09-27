@@ -1,0 +1,12 @@
+name=Azorius Aethermage
+image=http://magiccards.info/scans/en/di/104.jpg
+image_updated=2016-09-27
+value=3.188
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{W}{U}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever a permanent is returned to your hand, you may pay {1}. If you do, draw a card.

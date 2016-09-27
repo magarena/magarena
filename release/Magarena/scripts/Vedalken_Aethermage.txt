@@ -1,0 +1,14 @@
+name=Vedalken Aethermage
+image=http://magiccards.info/scans/en/fut/61.jpg
+image_updated=2016-09-27
+value=3.779
+rarity=C
+type=Creature
+subtype=Vedalken,Wizard
+cost={1}{U}
+pt=1/2
+ability=Flash;\
+        When SN enters the battlefield, return target Sliver to its owner's hand.;\
+        Wizardcycling {3}
+timing=main
+oracle=Flash\nWhen Vedalken Aethermage enters the battlefield, return target Sliver to its owner's hand.\nWizardcycling {3}

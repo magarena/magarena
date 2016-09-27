@@ -1,0 +1,12 @@
+name=Scornful Aether-Lich
+image=http://magiccards.info/scans/en/cfx/34.jpg
+image_updated=2016-09-27
+value=2.921
+rarity=U
+type=Artifact,Creature
+subtype=Zombie,Wizard
+cost={3}{U}
+pt=2/4
+ability={W}{B}: SN gains fear and vigilance until end of turn.
+timing=main
+oracle={W}{B}: Scornful Aether-Lich gains fear and vigilance until end of turn.

@@ -1,9 +1,0 @@
-name=Frozen Æther
-image=http://magiccards.info/scans/en/pc/54.jpg
-value=4.182
-rarity=U
-type=Enchantment
-cost={3}{U}
-ability=Artifacts, creatures, and lands your opponents control enter the battlefield tapped.
-timing=enchantment
-oracle=Artifacts, creatures, and lands your opponents control enter the battlefield tapped.

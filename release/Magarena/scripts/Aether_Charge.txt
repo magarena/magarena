@@ -1,0 +1,10 @@
+name=Aether Charge
+image=http://magiccards.info/scans/en/on/184.jpg
+image_updated=2016-09-27
+value=4.255
+rarity=U
+type=Enchantment
+cost={4}{R}
+ability=Whenever a Beast enters the battlefield under your control, you may have RN deal 4 damage to target opponent.
+timing=main
+oracle=Whenever a Beast enters the battlefield under your control, you may have it deal 4 damage to target opponent.

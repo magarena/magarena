@@ -1,0 +1,11 @@
+name=Surging Aether
+image=http://magiccards.info/scans/en/cs/47.jpg
+image_updated=2016-09-27
+value=1.578
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Ripple 4~Return target permanent to its owner's hand.
+timing=removal
+oracle=Ripple 4\nReturn target permanent to its owner's hand.
+status=not supported: ripple

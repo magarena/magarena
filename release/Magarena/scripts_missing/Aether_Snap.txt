@@ -1,0 +1,11 @@
+name=Aether Snap
+image=http://magiccards.info/scans/en/c14/133.jpg
+image_updated=2016-09-27
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Remove all counters from all permanents and exile all tokens.
+timing=main
+oracle=Remove all counters from all permanents and exile all tokens.
+status=needs groovy

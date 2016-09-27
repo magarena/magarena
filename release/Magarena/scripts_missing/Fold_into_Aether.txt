@@ -1,0 +1,11 @@
+name=Fold into Aether
+image=http://magiccards.info/scans/en/5dn/31.jpg
+image_updated=2016-09-27
+value=2.300
+rarity=U
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell. If that spell is countered this way, its controller may put a creature card from his or her hand onto the battlefield.
+timing=counter
+oracle=Counter target spell. If that spell is countered this way, its controller may put a creature card from his or her hand onto the battlefield.
+status=needs groovy

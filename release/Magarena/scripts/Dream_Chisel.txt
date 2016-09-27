@@ -4,6 +4,6 @@ value=3.464
 rarity=R
 type=Artifact
 cost={2}
-requires_groovy_code=Obscuring Æther
+requires_groovy_code=Obscuring Aether
 timing=artifact
 oracle=Face-down creature spells you cast cost {1} less to cast.

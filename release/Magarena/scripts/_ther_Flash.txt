@@ -1,9 +1,0 @@
-name=Æther Flash
-image=http://magiccards.info/scans/en/7e/172.jpg
-value=4.286
-rarity=U
-type=Enchantment
-cost={2}{R}{R}
-ability=Whenever a creature enters the battlefield, SN deals 2 damage to RN.
-timing=enchantment
-oracle=Whenever a creature enters the battlefield, Æther Flash deals 2 damage to it.

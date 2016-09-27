@@ -1,0 +1,10 @@
+name=Aether Barrier
+image=http://magiccards.info/scans/en/ne/27.jpg
+image_updated=2016-09-27
+value=3.833
+rarity=R
+type=Enchantment
+cost={2}{U}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever a player casts a creature spell, that player sacrifices a permanent unless he or she pays {1}.

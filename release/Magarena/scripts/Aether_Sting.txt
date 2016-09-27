@@ -1,0 +1,10 @@
+name=Aether Sting
+image=http://magiccards.info/scans/en/ud/76.jpg
+image_updated=2016-09-27
+value=3.589
+rarity=U
+type=Enchantment
+cost={3}{R}
+ability=Whenever an opponent casts a creature spell, SN deals 1 damage to that player.
+timing=enchantment
+oracle=Whenever an opponent casts a creature spell, Aether Sting deals 1 damage to that player.

@@ -1,0 +1,11 @@
+name=Aether Spellbomb
+image=http://magiccards.info/scans/en/mma/196.jpg
+image_updated=2016-09-27
+value=4.347
+rarity=C
+type=Artifact
+cost={1}
+ability={U}, Sacrifice SN: Return target creature to its owner's hand.;\
+        {1}, Sacrifice SN: Draw a card.
+timing=artifact
+oracle={U}, Sacrifice Aether Spellbomb: Return target creature to its owner's hand.\n{1}, Sacrifice Aether Spellbomb: Draw a card.

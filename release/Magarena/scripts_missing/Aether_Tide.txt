@@ -1,0 +1,12 @@
+name=Aether Tide
+image=http://magiccards.info/scans/en/ex/27.jpg
+image_updated=2016-09-27
+value=1.549
+rarity=C
+type=Sorcery
+cost={X}{U}
+ability=As an additional cost to cast SN, discard X creature cards.
+effect=Return X target creatures to their owners' hands.
+timing=main
+oracle=As an additional cost to cast Aether Tide, discard X creature cards.\nReturn X target creatures to their owners' hands.
+status=not supported: multiple-targets

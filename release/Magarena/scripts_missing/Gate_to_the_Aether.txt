@@ -1,0 +1,11 @@
+name=Gate to the Aether
+image=http://magiccards.info/scans/en/mi/174.jpg
+image_updated=2016-09-27
+value=4.026
+rarity=R
+type=Artifact
+cost={6}
+ability=At the beginning of each player's upkeep, that player reveals the top card of his or her library. If it's an artifact, creature, enchantment, or land card, the player may put it onto the battlefield.
+timing=artifact
+oracle=At the beginning of each player's upkeep, that player reveals the top card of his or her library. If it's an artifact, creature, enchantment, or land card, the player may put it onto the battlefield.
+status=needs groovy

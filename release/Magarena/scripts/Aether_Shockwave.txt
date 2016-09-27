@@ -1,0 +1,10 @@
+name=Aether Shockwave
+image=http://magiccards.info/scans/en/sok/1.jpg
+image_updated=2016-09-27
+value=2.645
+rarity=U
+type=Instant
+cost={3}{W}
+effect=Choose one — (1) Tap all Spirits. (2) Tap all non-Spirit creatures.
+timing=tapping
+oracle=Choose one —\n• Tap all Spirits.\n• Tap all non-Spirit creatures.

@@ -1,9 +1,0 @@
-name=Unravel the Æther
-image=http://magiccards.info/scans/en/bng/143.jpg
-value=4.408
-rarity=U
-type=Instant
-cost={1}{G}
-timing=removal
-requires_groovy_code=Deglamer
-oracle=Choose target artifact or enchantment. Its owner shuffles it into his or her library.

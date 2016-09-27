@@ -1,0 +1,11 @@
+name=Aether Vial
+image=http://magiccards.info/scans/en/mma/197.jpg
+image_updated=2016-09-27
+value=4.525
+rarity=U
+type=Artifact
+cost={1}
+timing=main
+ability=At the beginning of your upkeep, you may put a charge counter on SN.
+requires_groovy_code
+oracle=At the beginning of your upkeep, you may put a charge counter on Aether Vial.\n{T}: You may put a creature card with converted mana cost equal to the number of charge counters on Aether Vial from your hand onto the battlefield.

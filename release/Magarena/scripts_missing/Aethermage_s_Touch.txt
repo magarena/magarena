@@ -1,0 +1,10 @@
+name=Aethermage's Touch
+image=http://magiccards.info/scans/en/di/101.jpg
+image_updated=2016-09-27
+value=3.278
+rarity=R
+type=Instant
+cost={2}{W}{U}
+effect=Reveal the top four cards of your library. You may put a creature card from among them onto the battlefield. It gains "At the beginning of your end step, return this creature to its owner's hand." Then put the rest of the cards revealed this way on the bottom of your library in any order.
+timing=removal
+oracle=Reveal the top four cards of your library. You may put a creature card from among them onto the battlefield. It gains "At the beginning of your end step, return this creature to its owner's hand." Then put the rest of the cards revealed this way on the bottom of your library in any order.

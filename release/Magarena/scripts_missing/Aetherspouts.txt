@@ -1,0 +1,11 @@
+name=Aetherspouts
+image=http://magiccards.info/scans/en/m15/44.jpg
+image_updated=2016-09-27
+value=3.500
+rarity=R
+type=Instant
+cost={3}{U}{U}
+effect=For each attacking creature, its owner puts it on the top or bottom of his or her library.
+timing=removal
+oracle=For each attacking creature, its owner puts it on the top or bottom of his or her library.
+status=needs groovy

@@ -1,0 +1,11 @@
+name=Aether Mutation
+image=http://magiccards.info/scans/en/ap/91.jpg
+image_updated=2016-09-27
+value=3.500
+rarity=U
+type=Sorcery
+cost={3}{G}{U}
+timing=removal
+removal=2
+requires_groovy_code
+oracle=Return target creature to its owner's hand. Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that creature's converted mana cost.

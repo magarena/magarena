@@ -1,0 +1,10 @@
+name=Tainted Aether
+image=http://magiccards.info/scans/en/7e/167.jpg
+image_updated=2016-09-27
+value=4.132
+rarity=R
+type=Enchantment
+cost={2}{B}{B}
+ability=Whenever a creature enters the battlefield, RN's controller sacrifices a creature or land.
+timing=enchantment
+oracle=Whenever a creature enters the battlefield, its controller sacrifices a creature or land.
