@@ -270,6 +270,7 @@ public final class ScreenController {
     }
 
     public static void showWarningMessage(final String message) {
+        MagicSound.BEEP.play();
         JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
     }
 
