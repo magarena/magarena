@@ -30,10 +30,9 @@ import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
-import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
-public class MagicFrame extends MagicStickyFrame implements IImageDragDropListener {
+public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
 
     // translatable strings
     private static final String _S1 = "F11 : full screen";
@@ -71,7 +70,7 @@ public class MagicFrame extends MagicStickyFrame implements IImageDragDropListen
         setF12KeyInputMap();
 
         // Enable drag and drop of background image file.
-        new DropTarget(this, new ImageDropTargetListener(this));
+        new DropTarget(this, new FileDropTargetListener(this));
 
         setVisible(true);
     }
@@ -255,20 +254,6 @@ public class MagicFrame extends MagicStickyFrame implements IImageDragDropListen
         }
     }
 
-    @Override
-    public void setDroppedImageFile(File imageFile) {
-        final Path path = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image");
-        try {
-            FileUtils.copyFile(imageFile, path.toFile());
-        } catch (IOException ex) {
-            ScreenController.showWarningMessage(
-                    String.format("%s\n\n%s", UiString.get(_S6), ex.getMessage()));
-        }
-        config.setCustomBackground(true);
-        config.save();
-        refreshLookAndFeel();
-    }
-
     private void refreshBackground() {
         contentPanel.refreshBackground();
     }
@@ -288,6 +273,26 @@ public class MagicFrame extends MagicStickyFrame implements IImageDragDropListen
 
     public void setContentPanel(JPanel aPanel) {
         contentPanel.setContentPanel(aPanel);
+    }
+
+    @Override
+    public void onImageFileDropped(File imageFile) {
+        System.out.println("[TODO] onImageFileDropped : " + imageFile);
+//        final Path path = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image");
+//        try {
+//            FileUtils.copyFile(imageFile, path.toFile());
+//        } catch (IOException ex) {
+//            ScreenController.showWarningMessage(
+//                    String.format("%s\n\n%s", UiString.get(_S6), ex.getMessage()));
+//        }
+//        config.setCustomBackground(true);
+//        config.save();
+//        refreshLookAndFeel();
+    }
+
+    @Override
+    public void onZipFileDropped(File zipFile) {
+        System.out.println("[TODO] onZipFileDropped : " + zipFile);
     }
 
 }

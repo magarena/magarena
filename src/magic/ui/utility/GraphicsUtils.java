@@ -189,6 +189,10 @@ final public class GraphicsUtils {
         }
     }
 
+    public static boolean isValidImageFile(File aFile) {
+        return isValidImageFile(aFile.toPath());
+    }
+
     /**
      * The images returned by ImageIO are often in custom formats which can draw really,
      * really slowly. For best performance, it's often best to draw any image returned by
