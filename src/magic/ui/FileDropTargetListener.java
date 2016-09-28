@@ -22,7 +22,7 @@ import javax.activation.MimetypesFileTypeMap;
 
 public class FileDropTargetListener implements DropTargetListener {
 
-    private static final String IMAGE_FORMATS = "image bmp gif jpeg jpg png wbmp";
+    private static final String IMAGE_FORMATS = "bmp gif jpeg jpg png wbmp";
 
     private final IDragDropListener listener;
 
@@ -54,12 +54,12 @@ public class FileDropTargetListener implements DropTargetListener {
 
     private String tryMimetypesFileTypeMap(File aFile) {
         final MimetypesFileTypeMap mtftp = new MimetypesFileTypeMap();
-        mtftp.addMimeTypes(IMAGE_FORMATS);
+        mtftp.addMimeTypes("image " + IMAGE_FORMATS);
         mtftp.addMimeTypes("application/zip zip");
         return mtftp.getContentType(aFile);
     }
 
-    private String getFileType(File aFile) {
+    private String getMimeType(File aFile) {
         String mimeType = tryProbeContentType(aFile);
         if (mimeType == null) {
             mimeType = tryGuessContentTypeFromStream(aFile);
@@ -72,21 +72,23 @@ public class FileDropTargetListener implements DropTargetListener {
 
     private void doFileAction(File aFile) {
 
-        final String fileType = getFileType(aFile);
-        System.out.println(fileType);
+        final String mimeType = getMimeType(aFile);
+        System.out.println(mimeType);
 
-        if (fileType != null) {
+        if (mimeType != null) {
 
             // zip file
-            if ("application/zip".equals(fileType)) {
+            if ("application/zip".equals(mimeType)) {
                 listener.onZipFileDropped(aFile);
                 return;
             }
 
             // image file
-            if ("image".equals(fileType.split("/")[0])) {
-                final String format = fileType.split("/")[1].toLowerCase();
-                if (IMAGE_FORMATS.contains(format)) {
+            // on Windows, dragging an image from the browser directly
+            // returns a mime type of "image" thus the need to check parts.
+            final String[] parts = mimeType.split("/");
+            if ("image".equals(parts[0].toLowerCase())) {
+                if (parts.length == 1 || IMAGE_FORMATS.contains(parts[1].toLowerCase())) {
                     listener.onImageFileDropped(aFile);
                     return;
                 }
