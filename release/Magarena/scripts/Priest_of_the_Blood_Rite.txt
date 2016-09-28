@@ -7,7 +7,7 @@ type=Creature
 subtype=Human,Cleric
 cost={3}{B}{B}
 pt=2/2
-ability=When SN enters the battlefield, put a 5/5 black Demon creature token with flying onto the battlefield.;\
+ability=When SN enters the battlefield, create a 5/5 black Demon creature token with flying.;\
         At the beginning of your upkeep, you lose 2 life.
 timing=main
-oracle=When Priest of the Blood Rite enters the battlefield, put a 5/5 black Demon creature token with flying onto the battlefield.\nAt the beginning of your upkeep, you lose 2 life.
+oracle=When Priest of the Blood Rite enters the battlefield, create a 5/5 black Demon creature token with flying.\nAt the beginning of your upkeep, you lose 2 life.

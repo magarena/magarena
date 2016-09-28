@@ -5,7 +5,7 @@ rarity=C
 type=Land
 mana=g4
 ability=SN enters the battlefield tapped.;\
-        When SN enters the battlefield, put a 0/1 green Plant creature token onto the battlefield.;\
+        When SN enters the battlefield, create a 0/1 green Plant creature token.;\
         {T}: Add {G} to your mana pool.
 timing=land
-oracle=Khalni Garden enters the battlefield tapped.\nWhen Khalni Garden enters the battlefield, put a 0/1 green Plant creature token onto the battlefield.\n{T}: Add {G} to your mana pool.
+oracle=Khalni Garden enters the battlefield tapped.\nWhen Khalni Garden enters the battlefield, create a 0/1 green Plant creature token.\n{T}: Add {G} to your mana pool.

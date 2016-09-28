@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={6}{G}{G}
 pt=7/7
-ability=When SN leaves the battlefield, put a 4/4 green Elemental creature token onto the battlefield.;\
+ability=When SN leaves the battlefield, create a 4/4 green Elemental creature token.;\
         Evoke {4}{G}
 timing=main
-oracle=When Walker of the Grove leaves the battlefield, put a 4/4 green Elemental creature token onto the battlefield.\nEvoke {4}{G}
+oracle=When Walker of the Grove leaves the battlefield, create a 4/4 green Elemental creature token.\nEvoke {4}{G}
