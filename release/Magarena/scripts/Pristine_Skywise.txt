@@ -7,7 +7,6 @@ subtype=Dragon
 cost={4}{W}{U}
 pt=6/4
 ability=Flying;\
-        Whenever you cast a noncreature spell, untap SN. It gains protection from the color of your choice until end of turn.
+        Whenever you cast a noncreature spell, untap SN.~It gains protection from the color of your choice until end of turn.
 timing=main
 oracle=Flying\nWhenever you cast a noncreature spell, untap Pristine Skywise. It gains protection from the color of your choice until end of turn.
-status=needs groovy
