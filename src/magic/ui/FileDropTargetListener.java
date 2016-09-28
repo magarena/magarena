@@ -1,7 +1,6 @@
 package magic.ui;
 
 import java.awt.datatransfer.DataFlavor;
-import magic.ui.utility.GraphicsUtils;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.dnd.DnDConstants;
@@ -50,7 +49,7 @@ public class FileDropTargetListener implements DropTargetListener {
         // image file
         if ("image".equals(fileType.split("/")[0])) {
             final String format = fileType.split("/")[1].toLowerCase();
-            if (IMAGE_FORMATS.contains(format) && GraphicsUtils.isValidImageFile(aFile)) {
+            if (IMAGE_FORMATS.contains(format)) {
                 listener.onImageFileDropped(aFile);
                 return;
             }

@@ -30,6 +30,7 @@ import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
+import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
 public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
@@ -275,19 +276,48 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         contentPanel.setContentPanel(aPanel);
     }
 
+    private boolean replaceBackgroundImage(File newImage) {
+        try {
+            FileUtils.copyFile(newImage, MagicFileSystem.getBackgroundImageFile());
+            return true;
+        } catch (IOException ex) {
+            ScreenController.showWarningMessage(
+                    String.format("%s\n\n%s", 
+                            UiString.get(_S6),
+                            ex.getMessage()
+                    )
+            );
+        }
+        return false;
+    }
+
+    private void doSetCustomBackgroundImage(File imageFile) {
+
+        if (!GraphicsUtils.isValidImageFile(imageFile)) {
+            ScreenController.showWarningMessage("Invalid image file.");
+            return;
+        }
+
+        final String message = String.format("%s\n", UiString.get("Replace background image?"));
+        final Object[] params = {message};
+        final int response = JOptionPane.showConfirmDialog(
+                contentPanel,
+                params,
+                UiString.get("Confirmation required..."),
+                JOptionPane.YES_NO_OPTION);
+        
+        if (response == JOptionPane.YES_OPTION) {
+            if (replaceBackgroundImage(imageFile)) {
+                config.setCustomBackground(true);
+                config.save();
+                refreshLookAndFeel();
+            }
+        }
+    }
+
     @Override
     public void onImageFileDropped(File imageFile) {
-        System.out.println("[TODO] onImageFileDropped : " + imageFile);
-//        final Path path = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image");
-//        try {
-//            FileUtils.copyFile(imageFile, path.toFile());
-//        } catch (IOException ex) {
-//            ScreenController.showWarningMessage(
-//                    String.format("%s\n\n%s", UiString.get(_S6), ex.getMessage()));
-//        }
-//        config.setCustomBackground(true);
-//        config.save();
-//        refreshLookAndFeel();
+        doSetCustomBackgroundImage(imageFile);
     }
 
     @Override

@@ -31,6 +31,7 @@ import org.apache.commons.io.FilenameUtils;
  *
  */
 public final class MagicFileSystem {
+
     private MagicFileSystem() {}
 
     // card images
@@ -310,5 +311,13 @@ public final class MagicFileSystem {
 
     public static Path getThemesPath() {
         return getDataPath(DataPath.THEMES);
+    }
+
+    public static Path getBackgroundImagePath() {
+        return getDataPath(DataPath.MODS).resolve("background.image");
+    }
+
+    public static File getBackgroundImageFile() {
+        return getBackgroundImagePath().toFile();
     }
 }
