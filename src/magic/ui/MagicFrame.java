@@ -281,11 +281,9 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
             FileUtils.copyFile(newImage, MagicFileSystem.getBackgroundImageFile());
             return true;
         } catch (IOException ex) {
-            ScreenController.showWarningMessage(
-                    String.format("%s\n\n%s", 
-                            UiString.get(_S6),
-                            ex.getMessage()
-                    )
+            ScreenController.showWarningMessage(String.format("%s\n\n%s", 
+                    UiString.get(_S6),
+                    ex.getMessage())
             );
         }
         return false;
