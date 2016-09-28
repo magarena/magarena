@@ -18,7 +18,7 @@ class TestAEtherVial extends TestGameBuilder {
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
         createPermanent(P,"Rupture Spire",false,8);
-        addToHand(P,"AEther Vial",1);
+        addToHand(P,"Aether Vial",1);
         addToHand(P,"Legacy's Allure",1);
         addToHand(P,"Thieving Magpie",1);
         addToHand(P,"Thieving Magpie",1);
