@@ -8,13 +8,16 @@ import java.awt.dnd.DropTargetDragEvent;
 import java.awt.dnd.DropTargetDropEvent;
 import java.awt.dnd.DropTargetEvent;
 import java.awt.dnd.DropTargetListener;
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URLConnection;
 import java.nio.file.Files;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
-import javax.activation.MimetypesFileTypeMap;
 
 public class FileDropTargetListener implements DropTargetListener {
 
@@ -26,13 +29,34 @@ public class FileDropTargetListener implements DropTargetListener {
         this.listener = listener;
     }
 
-
-    private String getFileType(File aFile) {
+    /**
+     * This method seems to work well on linux, not so Windows
+     * where it always returns null.
+     */
+    private String tryProbeContentType(File aFile) {
         try {
             return Files.probeContentType(aFile.toPath());
         } catch (IOException ex) {
-            return MimetypesFileTypeMap.getDefaultFileTypeMap().getContentType(aFile);
+            System.err.println(ex);
+            return null;
         }
+    }
+
+    private String tryGuessContentTypeFromStream(File aFile) {
+        try (final InputStream is = new BufferedInputStream(new FileInputStream(aFile))) {
+            return URLConnection.guessContentTypeFromStream(is);
+        } catch (IOException ex) {
+            System.err.println(ex);
+            return null;
+        }
+    }
+
+    private String getFileType(File aFile) {
+        String mimeType = tryProbeContentType(aFile);
+        if (mimeType == null) {
+            mimeType = tryGuessContentTypeFromStream(aFile);
+        }
+        return mimeType;
     }
 
     private void doFileAction(File aFile) {
