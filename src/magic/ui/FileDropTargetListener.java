@@ -18,6 +18,7 @@ import java.nio.file.Files;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
+import javax.activation.MimetypesFileTypeMap;
 
 public class FileDropTargetListener implements DropTargetListener {
 
@@ -51,10 +52,20 @@ public class FileDropTargetListener implements DropTargetListener {
         }
     }
 
+    private String tryMimetypesFileTypeMap(File aFile) {
+        final MimetypesFileTypeMap mtftp = new MimetypesFileTypeMap();
+        mtftp.addMimeTypes(IMAGE_FORMATS);
+        mtftp.addMimeTypes("application/zip zip");
+        return mtftp.getContentType(aFile);
+    }
+
     private String getFileType(File aFile) {
         String mimeType = tryProbeContentType(aFile);
         if (mimeType == null) {
             mimeType = tryGuessContentTypeFromStream(aFile);
+        }
+        if (mimeType == null) {
+            mimeType = tryMimetypesFileTypeMap(aFile);
         }
         return mimeType;
     }
