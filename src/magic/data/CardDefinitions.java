@@ -160,13 +160,13 @@ public class CardDefinitions {
     }
 
     public static String getCanonicalName(String fullName) {
-        return fullName.replaceAll("[^A-Za-z0-9]", "_");
+        return fullName.replace("\u00C6", "Ae").replaceAll("[^A-Za-z0-9]", "_");
     }
 
     public static String getASCII(String fullName) {
         return Normalizer.normalize(fullName, Form.NFD)
                          .replaceAll("\\p{InCombiningDiacriticalMarks}+", "")
-                         .replace("\u00C6", "AE");
+                         .replace("\u00C6", "Ae");
     }
 
     private static void loadCardDefinition(final File file) {
