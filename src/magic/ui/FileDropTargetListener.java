@@ -62,6 +62,7 @@ public class FileDropTargetListener implements DropTargetListener {
         MagicSound.ALERT.play();
     }
 
+    @SuppressWarnings("unchecked")
     private Optional<File> getDroppedFile(Transferable trf) {
 
         // Get the data format of the first dropped item.
