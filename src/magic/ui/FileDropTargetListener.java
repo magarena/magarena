@@ -22,7 +22,7 @@ public class FileDropTargetListener implements DropTargetListener {
 
     private final IDragDropListener listener;
 
-    public FileDropTargetListener(final IDragDropListener listener) {        
+    public FileDropTargetListener(final IDragDropListener listener) {
         this.listener = listener;
     }
 
@@ -40,18 +40,21 @@ public class FileDropTargetListener implements DropTargetListener {
         final String fileType = getFileType(aFile);
         System.out.println(fileType);
 
-        // zip file
-        if ("application/zip".equals(fileType)) {
-            listener.onZipFileDropped(aFile);
-            return;
-        }
+        if (fileType != null) {
 
-        // image file
-        if ("image".equals(fileType.split("/")[0])) {
-            final String format = fileType.split("/")[1].toLowerCase();
-            if (IMAGE_FORMATS.contains(format)) {
-                listener.onImageFileDropped(aFile);
+            // zip file
+            if ("application/zip".equals(fileType)) {
+                listener.onZipFileDropped(aFile);
                 return;
+            }
+
+            // image file
+            if ("image".equals(fileType.split("/")[0])) {
+                final String format = fileType.split("/")[1].toLowerCase();
+                if (IMAGE_FORMATS.contains(format)) {
+                    listener.onImageFileDropped(aFile);
+                    return;
+                }
             }
         }
 
