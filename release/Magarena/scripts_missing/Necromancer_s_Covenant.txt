@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, exile all creature cards from target pla
         Zombies you control have lifelink.
 timing=enchantment
 oracle=When Necromancer's Covenant enters the battlefield, exile all creature cards from target player's graveyard, then put a 2/2 black Zombie creature token onto the battlefield for each card exiled this way.\nZombies you control have lifelink.
+status=needs groovy

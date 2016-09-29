@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Choose a color of a card in your graveyard. Add one mana of that color to your mana pool.
 timing=artifact
 oracle=Corrupted Grafstone enters the battlefield tapped.\n{T}: Choose a color of a card in your graveyard. Add one mana of that color to your mana pool.
+status=needs groovy

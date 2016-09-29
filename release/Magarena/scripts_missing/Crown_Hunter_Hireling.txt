@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, you become the monarch.;\
         SN can't attack unless defending player is the monarch.
 timing=main
 oracle=When Crown-Hunter Hireling enters the battlefield, you become the monarch.\nCrown-Hunter Hireling can't attack unless defending player is the monarch.
+status=needs groovy
