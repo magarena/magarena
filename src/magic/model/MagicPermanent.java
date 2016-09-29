@@ -465,6 +465,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 cachedAbilityFlags = getCardDefinition().genAbilityFlags();
                 cachedPowerToughness = getCardDefinition().genPowerToughness();
                 cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(getCardDefinition().getActivations());
+                cachedActivations.addAll(cardDefinition.getMorphActivations());
                 cachedManaActivations = new LinkedList<MagicManaActivation>(getCardDefinition().getManaActivations());
                 cachedTriggers = new LinkedList<MagicTrigger<?>>(getCardDefinition().getTriggers());
                 etbTriggers = new LinkedList<EntersBattlefieldTrigger>(getCardDefinition().getETBTriggers());
@@ -477,9 +478,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 break;
             case CDAPT:
                 getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
-                break;
-            case Game:
-                cachedActivations.addAll(cardDefinition.getMorphActivations());
                 break;
             default:
                 break;

@@ -22,8 +22,8 @@ class TestMorph extends TestGameBuilder {
         createPermanent(P, "Forest", false, 1);
         addToHand(P, "Backslide", 2);
         addToHand(P, "Giant Growth", 1);
-//        addToHand(P, "Lightning Bolt", 1);
-//        addToHand(P, "Ludevic's Test Subject", 2);
+        addToHand(P, "Lightning Bolt", 1);
+        addToHand(P, "Thousand Winds", 1);
 
         P = opponent;
 
