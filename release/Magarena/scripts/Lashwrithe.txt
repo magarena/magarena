@@ -10,3 +10,4 @@ ability=Living weapon;\
         Equip {B/P}{B/P}
 timing=equipment
 oracle=Living weapon\nEquipped creature gets +1/+1 for each Swamp you control.\nEquip {B/P}{B/P}
+requires_groovy_code
