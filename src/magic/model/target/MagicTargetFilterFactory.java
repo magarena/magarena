@@ -1051,7 +1051,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_OR_VEHICLE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isCreature() && target.hasSubType(MagicSubType.Vehicle);
+            return target.isCreature() || target.hasSubType(MagicSubType.Vehicle);
         }
     };
 
