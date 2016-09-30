@@ -503,12 +503,22 @@ public class MagicTargetChoice extends MagicChoice {
                 return new Object[]{opponent};
             }
         }
+        // There is at least one card
         if (targetFilter.acceptType(MagicTargetType.Library)) {
+            int showViewer = 5;
             final MagicCardList cards = new MagicCardList();
-            for (final Object card : validChoices) {
-                cards.add((MagicCard)card);
+            for (final Object obj : validChoices) {
+                final MagicCard card = (MagicCard)obj;
+                if (card.isInHand()) {
+                    showViewer = Math.min(showViewer, 0);
+                } else if (card.isInGraveyard()) {
+                    showViewer = Math.min(showViewer, 1);
+                } else if (card.isInLibrary()) {
+                    cards.add(card);
+                }
             }
             controller.showCards(cards);
+            controller.focusViewers(showViewer);
         }
         controller.setValidChoices(validChoices,false);
         controller.waitForInput();
