@@ -9,4 +9,4 @@ pt=4/4
 ability=Whenever you cast an artifact spell, you may search your graveyard, hand, and/or library for a card with the same name as that spell and put it onto the battlefield. If you search your library this way, shuffle it.
 timing=main
 oracle=Whenever you cast an artifact spell, you may search your graveyard, hand, and/or library for a card with the same name as that spell and put it onto the battlefield. If you search your library this way, shuffle it.
-status=not supported: search-multiple-locations
+status=needs groovy
