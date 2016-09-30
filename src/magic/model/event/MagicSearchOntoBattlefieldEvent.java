@@ -2,7 +2,6 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
@@ -54,7 +53,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                         MagicMessage.format("Found (%s).", card)
                     );
                     game.doAction(new AIRevealAction(card));
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),mods));
+                    game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),mods));
                 });
                 game.doAction(new ShuffleLibraryAction(event.getPlayer()));
             } else {
@@ -64,7 +63,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                         MagicMessage.format("Found (%s).", card)
                     );
                     game.doAction(new AIRevealAction(card));
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),mods));
+                    game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),mods));
                 });
                 game.doAction(new ShuffleLibraryAction(event.getPlayer()));
             }
