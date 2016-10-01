@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={1}{G}
 pt=3/3
-ability=Defender
+ability=Defender;\
+        {G}: SN can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.
 timing=smain
-requires_groovy_code
 oracle=Defender\nFormidable — {G}: Glade Watcher can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.

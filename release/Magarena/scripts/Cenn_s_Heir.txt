@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={1}{W}
 pt=1/1
+ability=Whenever SN attacks, SN gets +1/+1 until end of turn for each other attacking Kithkin.
 timing=main
-requires_groovy_code
 oracle=Whenever Cenn's Heir attacks, it gets +1/+1 until end of turn for each other attacking Kithkin.
