@@ -7,7 +7,6 @@ subtype=Phoenix
 cost={2}{R}{R}
 pt=3/3
 ability=Flying;\
-        Tribute 2;\
-        When SN enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."
+        Tribute 2 effect SN gains haste and "When this creature dies, return this creature from the graveyard to its owner's hand."
 timing=main
 oracle=Flying\nTribute 2\nWhen Flame-Wreathed Phoenix enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."
