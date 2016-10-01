@@ -4,7 +4,7 @@ value=4.260
 rarity=R
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {2}, {T}: Until end of turn, you may play creature cards as though they had flash.
+        {2}, {T}: Until end of turn, you may cast creature spells as though they had flash.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Until end of turn, you may play creature cards as though they had flash.
+oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Until end of turn, you may cast creature spells as though they had flash.
 status=not supported: card-modification

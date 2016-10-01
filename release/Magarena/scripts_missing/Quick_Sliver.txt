@@ -7,7 +7,7 @@ subtype=Sliver
 cost={1}{G}
 pt=1/1
 ability=Flash;\
-        Any player may play Sliver cards as though they had flash.
+        Any player may cast Sliver spells as though they had flash.
 timing=flash
-oracle=Flash\nAny player may play Sliver cards as though they had flash.
+oracle=Flash\nAny player may cast Sliver spells as though they had flash.
 status=not supported: card-modification
