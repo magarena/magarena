@@ -8,4 +8,4 @@ color=r
 ability=Flying;\
         {R}: SN gets +1/+0 until end of turn.
 pt=2/2
-oracle=Flying\nThis creature gets +1/+0 until end of turn
+oracle=Flying\n{R}: This creature gets +1/+0 until end of turn
