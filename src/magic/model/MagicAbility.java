@@ -462,11 +462,10 @@ public enum MagicAbility {
             card.add(DamageIsDealtTrigger.Poisonous(n));
         }
     },
-    Tribute("tribute " + ARG.NUMBER + " " + ARG.EFFECT, 10) {
+    Tribute("tribute " + ARG.NUMBER + " effect " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            final String effect  = ARG.effect(arg).replaceFirst("^effect ", "");
-            card.add(TributeTrigger.create(n, MagicRuleEventAction.create(effect)));
+            card.add(TributeTrigger.create(n, MagicRuleEventAction.create(ARG.effect(arg))));
         }
     },
     Bestow("bestow " + ARG.MANACOST, 10) {
