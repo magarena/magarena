@@ -1409,11 +1409,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLANKING = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl CREATURE_WITH_FLANKING = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isCreature() &&
-                target.isAttacking() &&
-                target.hasAbility(MagicAbility.Flanking);
+            return target.isCreature() && target.hasAbility(MagicAbility.Flanking);
         }
     };
 
@@ -2555,7 +2553,7 @@ public class MagicTargetFilterFactory {
         add("creature with another Aura attached to it", CREATURE_WITH_ANOTHER_AURA);
         add("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         add("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
-        add("attacking creature with flanking", ATTACKING_CREATURE_WITH_FLANKING);
+        add("creature with flanking", CREATURE_WITH_FLANKING);
         add("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         add("nontoken creature", NONTOKEN_CREATURE);
         add("Djinn or Efreet", DJINN_OR_EFREET);
@@ -3275,6 +3273,22 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl creature(final MagicPermanentState state, final Control control) {
         return permanent(state, MagicType.Creature, control);
+    }
+
+    public static final MagicPermanentFilterImpl permanent(final MagicPermanentState state, final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return target.hasState(state) && filter.accept(source, player, target);
+            }
+        };
+    }
+
+    public static final MagicPermanentFilterImpl permanentOr(final MagicPermanentState state1, final MagicPermanentState state2, final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return (target.hasState(state1) || target.hasState(state2)) && filter.accept(source, player, target);
+            }
+        };
     }
 
     public static final MagicCardFilterImpl card() {

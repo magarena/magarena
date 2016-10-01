@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import magic.model.ARG;
+import magic.model.MagicPermanentState;
 import magic.model.target.MagicTargetFilterFactory.Control;
 
 public enum MagicTargetFilterParser {
@@ -126,6 +127,26 @@ public enum MagicTargetFilterParser {
     CardFromAGraveyard(ARG.WORDRUN + " card from a graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchCardPrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Graveyard).from(MagicTargetType.OpponentsGraveyard);
+        }
+    },
+    AttackingOrBlocking("attacking or blocking " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.permanentOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)));
+        }
+    },
+    Attacking("attacking " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.permanent(MagicPermanentState.Attacking, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)));
+        }
+    },
+    Untapped("untapped " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)));
+        }
+    },
+    Tapped("tapped " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.permanent(MagicPermanentState.Tapped, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)));
         }
     },
     CreatureYouControlWith("creature you control with " + ARG.WORDRUN) {
