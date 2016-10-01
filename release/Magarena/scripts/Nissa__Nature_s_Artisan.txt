@@ -7,7 +7,7 @@ subtype=Nissa
 cost={4}{G}{G}
 loyalty=5
 ability=+3: You gain 3 life.;\
-        −4: Reveal the top two cards of your library. Put all land cards from among them onto the battlefield and the rest into your hand.;\
         −12: Creatures you control get +5/+5 and gain trample until end of turn.
 timing=main
 oracle=+3: You gain 3 life.\n−4: Reveal the top two cards of your library. Put all land cards from among them onto the battlefield and the rest into your hand.\n−12: Creatures you control get +5/+5 and gain trample until end of turn.
+requires_groovy_code
