@@ -48,7 +48,7 @@ public abstract class TributeTrigger extends EntersBattlefieldTrigger {
         return new MagicEvent(
             perm,
             perm.getOpponent(),
-            new MagicMayChoice(),
+            new MagicMayChoice("Put " + amt + " +1/+1 counters on " + perm + "?"),
             amt,
             EVENT_ACTION,
             "PN may$ put RN +1/+1 counters on SN."
