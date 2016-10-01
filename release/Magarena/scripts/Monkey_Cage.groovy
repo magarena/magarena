@@ -7,7 +7,7 @@
                     permanent,
                     otherPermanent,
                     this,
-                    "PN puts X 2/2 green Ape creature tokens onto the battlefield, where X is RN's converted mana cost."
+                    "PN puts X 2/2 green Monkey creature tokens onto the battlefield, where X is RN's converted mana cost."
                 ):
                 MagicEvent.NONE;
         }
@@ -19,7 +19,7 @@
             game.doAction(new SacrificeAction(event.getPermanent()));
             game.doAction(new PlayTokensAction(
                 player,
-                CardDefinitions.getToken("2/2 green Ape creature token"),
+                CardDefinitions.getToken("2/2 green Monkey creature token"),
                 amount
             ));
         }
