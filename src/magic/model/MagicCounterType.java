@@ -125,6 +125,7 @@ public enum MagicCounterType {
     Velocity("velocity","{vly}",0), //Possibly -1
     Verse("verse","{vrs}",1),
     Vitality("vitality","{vit}",1),
+    Vortex("vortex","{vtx}",1),
     Wage("wage","{wge}",0), //Possibly -1
     Winch("winch","{wch}",1),
     Wind("wind","{wnd}",0),
