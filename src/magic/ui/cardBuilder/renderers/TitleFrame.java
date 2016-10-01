@@ -80,6 +80,7 @@ public class TitleFrame {
             int yPos = 33;
             if (cardDef.isToken()) {
                 xPos = (int) (cardImage.getWidth() / 2 - metrics.getBounds().getWidth() / 2);
+                yPos = 27;
             } else if (cardDef.isPlaneswalker()) {
                 yPos = 25;
             }
