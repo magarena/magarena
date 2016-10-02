@@ -1386,7 +1386,7 @@ public enum MagicAbility {
             }
             final String abText = ARG.any(arg);
             if (abText != null) {
-                card.add(MagicStatic.genABStaticGame(
+                card.add(MagicStatic.genABStatic(
                     condition,
                     filter,
                     MagicAbility.getAbilityList(abText)

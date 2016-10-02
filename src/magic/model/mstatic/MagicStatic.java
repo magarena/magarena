@@ -184,19 +184,6 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
 
-    public static MagicStatic genABStaticGame(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(MagicLayer.Game, filter) {
-            @Override
-            public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-                abilityList.giveAbility(permanent, flags);
-            }
-            @Override
-            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                return condition.accept(source);
-            }
-        };
-    }
-
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.AbilityCond) {
             @Override
