@@ -1,0 +1,10 @@
+name=Pact of the Titan
+image=http://magiccards.info/scans/en/fut/103.jpg
+value=3.667
+rarity=R
+type=Instant
+cost={0}
+color=r
+timing=token
+oracle=Create a 4/4 red Giant creature token.\nAt the beginning of your next upkeep, pay {4}{R}. If you don't, you lose the game.
+requires_groovy_code
