@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature gets +1/+2.;\
-        Whenever an Artificer enters the battlefield under your control, you may attach SN to it.;\
+        Whenever an Artificer enters the battlefield under your control, you may attach SN to RN.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +1/+2.\nWhenever an Artificer enters the battlefield under your control, you may attach Inventor's Goggles to it.\nEquip {2}
