@@ -1327,6 +1327,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl GREEN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicColor.Green).and(MagicType.Creature).from(MagicTargetType.Graveyard);
 
+    public static final MagicCardFilterImpl GREEN_CREATURE_CARD_FROM_LIBRARY = card(MagicColor.Green).and(MagicType.Creature).from(MagicTargetType.Library);
+
     public static final MagicPermanentFilterImpl CREATURE_CONVERTED_2_OR_LESS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
