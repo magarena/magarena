@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=1/1
+ability=When SN has flying, flip SN.
 flip=Tobita, Master of Winds
 timing=main
-requires_groovy_code
 oracle=When Student of Elements has flying, flip it.

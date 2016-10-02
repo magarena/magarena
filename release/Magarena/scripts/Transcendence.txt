@@ -4,6 +4,7 @@ value=3.597
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}
+ability=When you have 20 or more life, you lose the game.
 timing=enchantment
 requires_groovy_code
 oracle=You don't lose the game for having 0 or less life.\nWhen you have 20 or more life, you lose the game.\nWhenever you lose life, you gain 2 life for each 1 life you lost.
