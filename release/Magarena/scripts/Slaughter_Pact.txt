@@ -4,7 +4,7 @@ value=4.312
 rarity=R
 type=Instant
 cost={0}
-effect=Destroy target nonblack creature.~At the beginning of your next upkeep, pay {2}{B}. If you don't, you lose the game.
+color=b
 timing=removal
 oracle=Destroy target nonblack creature.\nAt the beginning of your next upkeep, pay {2}{B}. If you don't, you lose the game.
-status=needs groovy
+requires_groovy_code
