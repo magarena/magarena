@@ -1,0 +1,8 @@
+name=4/4 red Giant creature token
+token=Giant
+image=http://cdn.staticneo.com/w/mtg/4/4c/Giant.jpg
+value=4
+type=Creature
+subtype=Giant
+color=r
+pt=4/4
