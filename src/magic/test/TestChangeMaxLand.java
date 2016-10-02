@@ -6,7 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
-class TestMaxLandChange extends TestGameBuilder {
+class TestChangeMaxLand extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

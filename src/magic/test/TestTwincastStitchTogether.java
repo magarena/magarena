@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
-class TestTwinCastStitchTogether extends TestGameBuilder {
+class TestTwincastStitchTogether extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
