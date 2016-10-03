@@ -5,6 +5,6 @@ rarity=R
 type=Instant
 cost={0}
 color=u
+effect=Counter target spell.~At the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.
 timing=counter
 oracle=Counter target spell.\nAt the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.
-requires_groovy_code

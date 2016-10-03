@@ -5,6 +5,6 @@ rarity=R
 type=Instant
 cost={0}
 color=g
+effect=Search your library for a green creature card, reveal it, and put it into your hand. Then shuffle your library.~At the beginning of your next upkeep, pay {2}{G}{G}. If you don't, you lose the game.
 timing=draw
 oracle=Search your library for a green creature card, reveal it, and put it into your hand. Then shuffle your library.\nAt the beginning of your next upkeep, pay {2}{G}{G}. If you don't, you lose the game.
-requires_groovy_code
