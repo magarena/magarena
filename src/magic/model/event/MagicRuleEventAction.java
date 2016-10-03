@@ -2032,6 +2032,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PayLose(
+        "At the beginning of your next upkeep, pay " + ARG.MANACOST + "\\. If you don't, you lose the game",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Lose"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> {
+                game.doAction(new AddTriggerAction(
+                    AtYourUpkeepTrigger.PayOrLose(
+                        event.getSource(),
+                        event.getPlayer(),
+                        ARG.manacost(matcher)
+                    )
+                ));
+            };
+        }
+    },
     WinGame(
         ARG.PLAYERS + " win(s)? the game",
         MagicTargetHint.Positive,

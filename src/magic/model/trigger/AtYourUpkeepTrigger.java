@@ -5,11 +5,15 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.MagicCard;
+import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.action.RevealAction;
+import magic.model.action.RemoveTriggerAction;
 import magic.model.action.LookAction;
+import magic.model.action.LoseGameAction;
 import magic.model.choice.MagicMayChoice;
 
 public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
@@ -68,6 +72,33 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
                             break;
                         }
                     }
+                }
+            }
+        };
+    }
+
+    public static final AtYourUpkeepTrigger PayOrLose(final MagicSource staleSource, final MagicPlayer stalePlayer, final String manaCost) {
+        return new AtYourUpkeepTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                return upkeepPlayer.getId() == stalePlayer.getId();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                game.addDelayedAction(new RemoveTriggerAction(this));
+                return new MagicEvent(
+                    game.createDelayedSource(staleSource, stalePlayer),
+                    this,
+                    "PN pays " + manaCost + ". If PN doesn't he or she loses the game."
+                );
+            }
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicEvent cost = new MagicPayManaCostEvent(event.getSource(), manaCost);
+                if (cost.isSatisfied()) {
+                    game.addEvent(cost);
+                } else {
+                    game.doAction(new LoseGameAction(event.getPlayer()));
                 }
             }
         };
