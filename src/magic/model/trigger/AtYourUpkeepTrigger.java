@@ -88,6 +88,7 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
                 game.addDelayedAction(new RemoveTriggerAction(this));
                 return new MagicEvent(
                     game.createDelayedSource(staleSource, stalePlayer),
+                    new MagicMayChoice("Pay " + manaCost + "?"),
                     this,
                     "PN pays " + manaCost + ". If PN doesn't he or she loses the game."
                 );
@@ -95,7 +96,7 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicEvent cost = new MagicPayManaCostEvent(event.getSource(), manaCost);
-                if (cost.isSatisfied()) {
+                if (event.isYes() && cost.isSatisfied()) {
                     game.addEvent(cost);
                 } else {
                     game.doAction(new LoseGameAction(event.getPlayer()));
