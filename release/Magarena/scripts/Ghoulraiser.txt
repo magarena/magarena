@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={1}{B}{B}
 pt=2/2
+ability=When SN enters the battlefield, return a Zombie card at random from your graveyard to your hand.
 timing=main
-requires_groovy_code
 oracle=When Ghoulraiser enters the battlefield, return a Zombie card at random from your graveyard to your hand.

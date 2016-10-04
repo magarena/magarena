@@ -4,6 +4,6 @@ value=3.087
 rarity=U
 type=Sorcery
 cost={3}{G}
+effect=Return two cards at random from your graveyard to your hand.
 timing=draw
-requires_groovy_code
 oracle=Return two cards at random from your graveyard to your hand.

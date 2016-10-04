@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/c14/300.jpg
 value=3.076
 rarity=C
 type=Land
-ability={T}: Add {C} to your mana pool.
+ability={T}: Add {C} to your mana pool.;\
+        {3}, {T}, Sacrifice SN: Return a creature card at random from your graveyard to your hand.
 timing=land
-requires_groovy_code
 oracle={T}: Add {C} to your mana pool.\n{3}, {T}, Sacrifice Haunted Fengraf: Return a creature card at random from your graveyard to your hand.

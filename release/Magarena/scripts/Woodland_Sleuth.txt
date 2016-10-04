@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Scout
 cost={3}{G}
 pt=2/3
+ability=When SN enters the battlefield, if a creature died this turn, return a creature card at random from your graveyard to your hand.
 timing=main
-requires_groovy_code
 oracle=Morbid — When Woodland Sleuth enters the battlefield, if a creature died this turn, return a creature card at random from your graveyard to your hand.
