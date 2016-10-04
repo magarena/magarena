@@ -468,6 +468,17 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition THAT_HELLBENT = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicEvent event) {
+            return event.getRefPlayer().getHandSize() == 0;
+        }
+        @Override
+        public boolean accept(final MagicSource source) {
+            throw new RuntimeException("accept(source) called on THAT_HELLBENT");
+        }
+    };
+
     public static MagicCondition ENCHANTED_IS_UNTAPPED_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
