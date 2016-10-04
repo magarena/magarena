@@ -4,6 +4,6 @@ value=3.812
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
+ability=At the beginning of your upkeep, if you have no cards in hand, target opponent discards his or her hand~and sacrifice SN.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of your upkeep, if you have no cards in hand, sacrifice Brink of Madness and target opponent discards his or her hand.

@@ -4,6 +4,6 @@ value=3.522
 rarity=R
 type=Enchantment
 cost={4}{W}{W}
+ability=At the beginning of your upkeep, if you control no other permanents and have no cards in hand, you win the game.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of your upkeep, if you control no permanents other than Barren Glory and have no cards in hand, you win the game.

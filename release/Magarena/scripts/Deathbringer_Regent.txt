@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={5}{B}{B}
 pt=5/6
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, if you cast it from your hand and there are five or more other creatures on the battlefield, destroy all other creatures.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhen Deathbringer Regent enters the battlefield, if you cast it from your hand and there are five or more other creatures on the battlefield, destroy all other creatures.

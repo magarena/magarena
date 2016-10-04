@@ -5,8 +5,8 @@ rarity=U
 type=Creature
 subtype=Siren
 cost={3}{U}{U}
-ability=Flying
+ability=Flying;\
+        Tribute 3 effect Gain control of target creature.
 pt=1/1
 timing=main
-requires_groovy_code
 oracle=Flying\nTribute 3\nWhen Siren of the Fanged Coast enters the battlefield, if tribute wasn't paid, gain control of target creature.
