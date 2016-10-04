@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Spirit
 cost={8}{B}{B}{G}{G}
 pt=8/8
-timing=main
+ability=When SN enters the battlefield, if you cast it from your hand, you may search your library for a Spirit permanent card, put it onto the battlefield, then shuffle your library.
 requires_groovy_code
+timing=main
 oracle=When Iname as One enters the battlefield, if you cast it from your hand, you may search your library for a Spirit permanent card, put it onto the battlefield, then shuffle your library.\nWhen Iname as One dies, you may exile it. If you do, return target Spirit permanent card from your graveyard to the battlefield.

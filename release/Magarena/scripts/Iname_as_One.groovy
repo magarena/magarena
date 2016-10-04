@@ -1,5 +1,3 @@
-def choice = new MagicTargetChoice("a Spirit permanent card from your library");
-
 def SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.hasSubType(MagicSubType.Spirit) && target.isPermanentCard();
@@ -16,30 +14,6 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
 );
 
 [
-    new EntersBattlefieldTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return permanent.hasState(MagicPermanentState.CastFromHand) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(),
-                    this,
-                    "PN may\$ search his or her library for a Spirit permanent card, " +
-                    "put it onto the battlefield, then shuffle his or her library."
-                ):
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                    event.getSource(),
-                    event.getPlayer(),
-                    choice
-                ));
-            }
-        }
-    },
     new ThisDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
