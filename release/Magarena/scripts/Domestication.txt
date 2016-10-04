@@ -5,8 +5,9 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
-ability=You control enchanted creature.
+ability=Enchant creature;\
+        You control enchanted creature.;\
+        At the beginning of your end step, if enchanted creature's power is 4 or greater, sacrifice SN.
 enchant=gain control,neg creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature\nYou control enchanted creature.\nAt the beginning of your end step, if enchanted creature's power is 4 or greater, sacrifice Domestication.

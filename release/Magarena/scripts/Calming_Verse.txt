@@ -5,6 +5,6 @@ rarity=C
 type=Sorcery
 cost={3}{G}
 ability=Cast SN with AI only if an opponent controls an enchantment.
+effect=Destroy all enchantments you don't control.~If you control an untapped land, destroy all enchantments you control.
 timing=main
-requires_groovy_code
 oracle=Destroy all enchantments you don't control. Then, if you control an untapped land, destroy all enchantments you control.
