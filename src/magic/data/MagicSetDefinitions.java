@@ -44,7 +44,7 @@ public class MagicSetDefinitions {
 
     /**
      * Creates a csv file containing a list of all sets and the
-     * total number of playable/unplayable cards in each.
+     * total number of playable/unplayable/potential cards in each.
      */
     public static void createSetStatistics() throws IOException {
 
@@ -52,25 +52,31 @@ public class MagicSetDefinitions {
 
         final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
         try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
-            writer.println("Set,Cards,Playable,Unimplemented");
-            for (MagicSets s : MagicSets.values()) {
+            writer.println("Set,Cards,Playable,Unimplemented,Potential");
+            for (MagicSets set : MagicSets.values()) {
                 int totalPlayable = 0;
                 int totalUnplayable = 0;
+                int totalPotential = 0;
                 for (MagicCardDefinition card : cards) {
-                    if (isCardInSet(card, s) && card.isPlayable()) {
-                        if (!card.isInvalid()) {
-                            totalPlayable++;
+                    if (isCardInSet(card, set) && card.isPlayable()) {
+                        if (card.isInvalid()) {
+                            if (CardDefinitions.isPotential(card)) {
+                                totalPotential++;
+                            } else {
+                                totalUnplayable++;
+                            }
                         } else {
-                            totalUnplayable++;
+                            totalPlayable++;
                         }
                     }
                 }
-                writer.printf("%s %s,%d,%d,%d\n",
-                    s.name().replaceAll("_", ""),
-                    s.getSetName(),
+                writer.printf("%s %s,%d,%d,%d,%d\n",
+                    set.name().replaceAll("_", ""),
+                    set.getSetName(),
                     totalPlayable + totalUnplayable,
                     totalPlayable,
-                    totalUnplayable
+                    totalUnplayable + totalPotential,
+                    totalPotential
                 );
             }
         }
