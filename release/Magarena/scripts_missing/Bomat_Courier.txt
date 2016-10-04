@@ -11,3 +11,4 @@ ability=Haste;\
         {R}, Discard your hand, Sacrifice SN: Put all cards exiled with SN into their owners' hands.
 timing=fmain
 oracle=Haste\nWhenever Bomat Courier attacks, exile the top card of your library face down.\n{R}, Discard your hand, Sacrifice Bomat Courier: Put all cards exiled with Bomat Courier into their owners' hands.
+status=not supported: exile-face-down
