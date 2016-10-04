@@ -10,6 +10,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
@@ -95,6 +96,19 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
                 return source.getController().getHandSize() >= n;
+            }
+        };
+    }
+
+    public static MagicCondition RNHandAtLeast(final int n) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicEvent event) {
+                return event.getRefPlayer().getHandSize() >= n;
+            }
+            @Override
+            public boolean accept(final MagicSource source) {
+                throw new RuntimeException("accept(source) called on RNHandAtLeast");
             }
         };
     }

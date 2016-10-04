@@ -152,6 +152,12 @@ public enum MagicConditionParser {
             return MagicCondition.THAT_HELLBENT;
         }
     },
+    ThatHandSize("RN has " + ARG.AMOUNT + " or more cards in hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            return MagicConditionFactory.RNHandAtLeast(amount);
+        }
+    },
     CountersAtMost("(SN|it) has " + ARG.AMOUNT + " or fewer " + ARG.WORD1 + " counters on (it|him)") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
