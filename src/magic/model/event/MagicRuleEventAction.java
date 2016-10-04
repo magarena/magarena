@@ -2262,8 +2262,11 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
             return (game, event) -> {
-                game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, amount));
-                game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Monstrous));
+                final MagicPermanent SN = event.getPermanent();
+                if (MagicCondition.NOT_MONSTROUS_CONDITION.accept(SN)) {
+                    game.doAction(new ChangeCountersAction(SN, MagicCounterType.PlusOne, amount));
+                    game.doAction(ChangeStateAction.Set(SN, MagicPermanentState.Monstrous));
+                }
             };
         }
 

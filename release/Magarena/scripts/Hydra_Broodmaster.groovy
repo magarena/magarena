@@ -48,12 +48,12 @@ def PutHydra = new MagicTrigger<Integer>() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
-            game.doAction(ChangeStateAction.Set(
-                event.getPermanent(),
-                MagicPermanentState.Monstrous
-            ));
-            game.executeTrigger(PutHydra, event.getPermanent(), event.getSource(), event.getRefInt());
+            final MagicPermanent SN = event.getPermanent();
+            if (MagicCondition.NOT_MONSTROUS_CONDITION.accept(SN)) {
+                game.doAction(new ChangeCountersAction(SN, MagicCounterType.PlusOne, event.getRefInt()));
+                game.doAction(ChangeStateAction.Set(SN, MagicPermanentState.Monstrous));
+                game.executeTrigger(PutHydra, SN, SN, event.getRefInt());
+            }
         }
     }
 ]
