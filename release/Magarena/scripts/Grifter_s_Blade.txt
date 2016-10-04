@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={3}
 ability=Flash;\
-        As SN enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature.;\
+        When SN enters the battlefield, attach SN to a creature you control.;\
         Equipped creature gets +1/+1.;\
         Equip {1}
 timing=flash
