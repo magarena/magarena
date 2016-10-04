@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{U}{U}
-effect=Counter target spell. Draw a card, then discard a card.
+effect=Counter target spell.~Draw a card, then discard a card.
 timing=counter
 oracle=Counter target spell. Draw a card, then discard a card.
