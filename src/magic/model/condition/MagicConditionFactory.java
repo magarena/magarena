@@ -380,4 +380,22 @@ public class MagicConditionFactory {
             }
         };
     }
+
+    public static MagicCondition compose(final MagicCondition... conds) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicEvent event) {
+                for (final MagicCondition cond : conds) {
+                    if (cond.accept(event) == false) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            @Override
+            public boolean accept(final MagicSource source) {
+                throw new RuntimeException("accept(source) called on compose");
+            }
+        };
+    }
 }

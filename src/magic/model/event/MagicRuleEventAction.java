@@ -3067,7 +3067,7 @@ public enum MagicRuleEventAction {
         // handle intervening if clause
         final Matcher ifMatcher = INTERVENING_IF.matcher(rule);
         final boolean ifMatched = ifMatcher.matches();
-        final MagicCondition ifCond = ifMatched ? MagicConditionParser.build(ARG.cond(ifMatcher)) : MagicCondition.NONE;
+        final MagicCondition ifCond = ifMatched ? MagicConditionParser.buildCompose(ARG.cond(ifMatcher)) : MagicCondition.NONE;
         String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule;
 
         // rewrite effect unless clause into "you may <cost>, if you don't, <effect>"
