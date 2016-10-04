@@ -7,4 +7,3 @@ cost={3}{R}
 effect=Return an instant card at random from your graveyard to your hand.~Rebound
 timing=main
 oracle=Return an instant card at random from your graveyard to your hand.\nRebound
-status=needs groovy
