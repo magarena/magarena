@@ -6,6 +6,7 @@ type=Creature
 subtype=Cyclops
 cost={4}{R}{R}
 pt=5/5
-ability=Trample;tribute 3 effect SN gains haste until end of turn.
+ability=Trample;\
+        Tribute 3 effect SN gains haste until end of turn.
 timing=main
 oracle=Trample\nTribute 3\nWhen Thunder Brute enters the battlefield, if tribute wasn't paid, it gains haste until end of turn.

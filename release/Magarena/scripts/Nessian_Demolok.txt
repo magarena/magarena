@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=3/3
-ability=tribute 3 effect Destroy target noncreature permanent.
+ability=Tribute 3 effect Destroy target noncreature permanent.
 timing=main
 oracle=Tribute 3\nWhen Nessian Demolok enters the battlefield, if tribute wasn't paid, destroy target noncreature permanent.

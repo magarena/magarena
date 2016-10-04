@@ -7,6 +7,6 @@ subtype=Archon
 cost={3}{W}{W}
 pt=3/3
 ability=Flying;\
-        tribute 2 effect Put two 1/1 white Bird creature tokens with flying onto the battlefield.
+        Tribute 2 effect Put two 1/1 white Bird creature tokens with flying onto the battlefield.
 timing=main
 oracle=Flying\nTribute 2\nWhen Ornitharch enters the battlefield, if tribute wasn't paid, put two 1/1 white Bird creature tokens with flying onto the battlefield.
