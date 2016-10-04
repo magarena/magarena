@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={G}
-effect=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. You get {E}{E}.
+effect=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.~You get {E}{E}.
 timing=main
 oracle=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. You get {E}{E}.
