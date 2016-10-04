@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental,Hound
 cost={2}{R}
 pt=2/2
+ability=At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, SN deals 2 damage to RN.
 timing=main
-requires_groovy_code=Paupers' Cage
 oracle=At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, Hellfire Mongrel deals 2 damage to him or her.
