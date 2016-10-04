@@ -113,6 +113,19 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition RNHandAtMost(final int n) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicEvent event) {
+                return event.getRefPlayer().getHandSize() <= n;
+            }
+            @Override
+            public boolean accept(final MagicSource source) {
+                throw new RuntimeException("accept(source) called on RNHandAtMost");
+            }
+        };
+    }
+
     public static MagicCondition LibraryAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
