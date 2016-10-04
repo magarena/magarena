@@ -7,3 +7,4 @@ cost={X}{X}{G}
 effect=Return X target cards from your graveyard to your hand. Exile SN.
 timing=main
 oracle=Return X target cards from your graveyard to your hand. Exile Wildest Dreams.
+status=not supported: multiple-targets
