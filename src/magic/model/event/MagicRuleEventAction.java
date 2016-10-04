@@ -1339,6 +1339,29 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    RecoverRandomCards(
+        "return " + ARG.AMOUNT + " " + ARG.WORDRUN + " at random from your graveyard to your hand",
+        MagicTargetHint.Positive,
+        MagicGraveyardTargetPicker.ReturnToHand,
+        MagicTiming.Draw,
+        "Return"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your graveyard");
+            return (game, event) -> {
+                final MagicCardList cards = new MagicCardList(filter.filter(event));
+                for (final MagicCard card : cards.getRandomCards(amount)) {
+                    game.doAction(new ShiftCardAction(
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersHand
+                    ));
+                }
+            };
+        }
+    },
     RecoverCards(
         "return " + ARG.CARDS + " to (your hand|its owner's hand|their owner's hand|their owners' hands)",
         MagicTargetHint.Positive,
