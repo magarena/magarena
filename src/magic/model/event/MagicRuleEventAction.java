@@ -388,7 +388,7 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return (game, event) -> {
                 final int amount = count.getAmount(event);
-                game.logAppendMessage(event.getPlayer(), "(" + amount + ")");
+                game.logAppendValue(event.getPlayer(), amount);
                 for (final MagicTarget target : ARG.targets(event, matcher, filter)) {
                     game.doAction(new DealDamageAction(
                         ARG.itSource(event, matcher),
@@ -784,7 +784,7 @@ public enum MagicRuleEventAction {
                 final int multiplier = eachCount.getAmount(event);
                 final int total = cardCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    game.logAppendValue(event.getPlayer(), total);
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     game.addEvent(new MagicDrawEvent(event.getSource(), it, total, ""));
@@ -831,7 +831,7 @@ public enum MagicRuleEventAction {
                 final int multiplier = eachCount.getAmount(event);
                 final int total = cardCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    game.logAppendValue(event.getPlayer(), total);
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     if (isRandom) {
@@ -899,7 +899,7 @@ public enum MagicRuleEventAction {
                 final int multiplier = count.getAmount(event);
                 final int total = amount * multiplier;
                 if (count != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    game.logAppendValue(event.getPlayer(), total);
                 }
                 int totalLost = 0;
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
@@ -928,7 +928,7 @@ public enum MagicRuleEventAction {
                 final int multiplier = eachCount.getAmount(event);
                 final int total = lifeCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    game.logAppendValue(event.getPlayer(), total);
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     game.doAction(new ChangeLifeAction(it, total));
@@ -951,7 +951,7 @@ public enum MagicRuleEventAction {
                 final int multiplier = count.getAmount(event);
                 final int total = amount * multiplier;
                 if (count != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    game.logAppendValue(event.getPlayer(), total);
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     game.doAction(new ChangeLifeAction(it, -total));
@@ -994,7 +994,7 @@ public enum MagicRuleEventAction {
                 final int power = powerCounter.getAmount(event);
                 final int toughness = toughnessCounter.getAmount(event);
                 if (count != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + amount + ")");
+                    game.logAppendValue(event.getPlayer(), amount);
                 }
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                     game.doAction(new ChangeTurnPTAction(it, power * amount, toughness * amount));
@@ -1020,7 +1020,7 @@ public enum MagicRuleEventAction {
                 final int X = countX.getAmount(event);
                 final int power = MagicAmountParser.getX(pt[0], X);
                 final int toughness = MagicAmountParser.getX(pt[1], X);
-                game.logAppendMessage(event.getPlayer(), "(X=" + X + ")");
+                game.logAppendX(event.getPlayer(), X);
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                     game.doAction(new ChangeTurnPTAction(it, power, toughness));
                     if (abilityList != null) {
@@ -1825,7 +1825,7 @@ public enum MagicRuleEventAction {
                 int total = (eachCount != MagicAmountFactory.One && tokenCount == MagicAmountFactory.XCost) ?
                     multiplier : tokenCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
-                    game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    game.logAppendValue(event.getPlayer(), total);
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     for (int i = 0; i < total; i++) {
