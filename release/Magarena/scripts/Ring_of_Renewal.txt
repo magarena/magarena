@@ -4,6 +4,6 @@ value=2.423
 rarity=R
 type=Artifact
 cost={5}
+ability={5}, {T}: Discard a card at random,~then draw two cards.
 timing=artifact
-requires_groovy_code
 oracle={5}, {T}: Discard a card at random, then draw two cards.
