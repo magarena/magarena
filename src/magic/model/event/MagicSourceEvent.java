@@ -38,15 +38,18 @@ public class MagicSourceEvent {
     }
 
     public MagicEvent getTriggerEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
-        return ifCond.accept(source) ? getEvent(source, player, ref) : MagicEvent.NONE;
+        final MagicEvent ev = getEvent(source, player, ref);
+        return ifCond.accept(ev) ? ev : MagicEvent.NONE;
     }
 
     public MagicEvent getTriggerEvent(final MagicSource source, final MagicCopyable ref) {
-        return ifCond.accept(source) ? getEvent(source, ref) : MagicEvent.NONE;
+        final MagicEvent ev = getEvent(source, ref);
+        return ifCond.accept(ev) ? ev : MagicEvent.NONE;
     }
 
     public MagicEvent getTriggerEvent(final MagicSource source) {
-        return ifCond.accept(source) ? getEvent(source) : MagicEvent.NONE;
+        final MagicEvent ev = getEvent(source);
+        return ifCond.accept(ev) ? ev : MagicEvent.NONE;
     }
 
     public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {

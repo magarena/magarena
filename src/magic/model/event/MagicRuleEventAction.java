@@ -3147,7 +3147,7 @@ public enum MagicRuleEventAction {
             choiceFact,
             picker,
             (game, event) -> {
-                if (ifCond.accept(event.getSource()) == false) {
+                if (ifCond.accept(event) == false) {
                     return;
                 }
 

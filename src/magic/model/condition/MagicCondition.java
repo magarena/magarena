@@ -39,6 +39,10 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         return matched;
     }
 
+    public boolean accept(final MagicEvent event) {
+        return accept(event.getSource());
+    }
+
     public abstract boolean accept(final MagicSource source);
 
     @Override
