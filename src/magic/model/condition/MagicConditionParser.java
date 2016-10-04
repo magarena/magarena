@@ -132,7 +132,7 @@ public enum MagicConditionParser {
             return MagicConditionFactory.HandAtLeast(amount);
         }
     },
-    Hellbent("you have no cards in hand") {
+    Hellbent("(you )?have no cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HELLBENT;
         }
@@ -257,6 +257,12 @@ public enum MagicConditionParser {
             final int amount = ARG.amount(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return MagicConditionFactory.EnchantedCounterAtLeast(counterType, amount);
+        }
+    },
+    EnchantedPowerAtLeast("enchanted creature's power is " + ARG.AMOUNT + " or greater") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            return MagicConditionFactory.EnchantedPowerAtLeast(amount);
         }
     },
     IsUntapped("(SN is|it's) untapped") {

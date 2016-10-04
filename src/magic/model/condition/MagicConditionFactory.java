@@ -47,6 +47,15 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition EnchantedPowerAtLeast(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return permanent.getEnchantedPermanent().getPower() >= n;
+            }
+        };
+    }
+
     public static MagicCondition CounterEqual(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
