@@ -275,6 +275,18 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl GREEN_CREATURE_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasColor(MagicColor.Green);
+        }
+    };
+
+    public static final MagicStackFilterImpl BLUE_CREATURE_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasColor(MagicColor.Blue);
+        }
+    };
+
     public static final MagicStackFilterImpl WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return (target.hasColor(MagicColor.White) || target.hasColor(MagicColor.Blue)) &&
@@ -2599,6 +2611,8 @@ public class MagicTargetFilterFactory {
         add("sorcery spell you control with converted mana cost 2 or less", SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
         add("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         add("creature spell with infect", CREATURE_SPELL_WITH_INFECT);
+        add("green creature spell", GREEN_CREATURE_SPELL);
+        add("blue creature spell", BLUE_CREATURE_SPELL);
         add("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         add("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
         add("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);

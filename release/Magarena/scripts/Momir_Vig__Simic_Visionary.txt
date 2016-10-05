@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Elf,Wizard
 cost={3}{G}{U}
 pt=2/2
+ability=Whenever you cast a green creature spell, you may search your library for a creature card and reveal it. If you do, shuffle your library and put that card on top of it.
 timing=main
 requires_groovy_code
 oracle=Whenever you cast a green creature spell, you may search your library for a creature card and reveal it. If you do, shuffle your library and put that card on top of it.\nWhenever you cast a blue creature spell, reveal the top card of your library. If it's a creature card, put that card into your hand.

@@ -1582,7 +1582,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<card>[^\\.]*?)(,| and)(?<reveal> reveal (it(,|\\.)|that card\\.))?( then)? shuffle your library(, then| and) put (that|the) card on top of it",
+        "search your library for (?<card>[^\\.]*?)(,| and)(?<reveal> reveal (it(,|\\.)|that card\\.))? (If you do, |then )?shuffle your library(, then| and) put (that|the) card on top of it",
         MagicTiming.Draw,
         "Search"
     ) {
