@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.deck.editor;
 
 import java.awt.event.ActionEvent;
 import java.io.File;
@@ -25,8 +25,8 @@ import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
 import magic.ui.MagicLogs;
-import magic.ui.deck.editor.DeckEditorScreenPanel;
-import magic.ui.deck.editor.IDeckEditorListener;
+import magic.ui.screen.deck.editor.DeckEditorScreenPanel;
+import magic.ui.screen.deck.editor.IDeckEditorListener;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -36,6 +36,8 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.DuelDecksScreen;
 import magic.utility.MagicFileSystem;
 import magic.utility.WikiPage;
 

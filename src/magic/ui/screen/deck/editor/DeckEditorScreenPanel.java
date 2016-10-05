@@ -1,4 +1,4 @@
-package magic.ui.deck.editor;
+package magic.ui.screen.deck.editor;
 
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;

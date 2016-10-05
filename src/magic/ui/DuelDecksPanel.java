@@ -29,7 +29,7 @@ import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.player.PlayerProfile;
 import magic.ui.cardtable.CardTable;
-import magic.ui.deck.editor.DeckSideBar;
+import magic.ui.screen.deck.editor.DeckSideBar;
 import magic.ui.player.PlayerDetailsPanel;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;

@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.cardtable.CardTablePanel;
-import magic.ui.deck.editor.DeckSideBar;
+import magic.ui.screen.deck.editor.DeckSideBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

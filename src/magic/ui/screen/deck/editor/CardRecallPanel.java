@@ -1,4 +1,4 @@
-package magic.ui.deck.editor;
+package magic.ui.screen.deck.editor;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;

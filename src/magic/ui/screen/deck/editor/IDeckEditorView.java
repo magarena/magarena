@@ -1,4 +1,4 @@
-package magic.ui.deck.editor;
+package magic.ui.screen.deck.editor;
 
 import java.util.List;
 import magic.model.MagicCardDefinition;
