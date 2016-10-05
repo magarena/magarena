@@ -10,8 +10,11 @@ import java.net.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
+
+import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
+import magic.data.LRUCache;
 import magic.data.MagicIcon;
 import magic.data.TextImages;
 import magic.model.DuelPlayerConfig;
@@ -19,8 +22,8 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicManaType;
+import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
-import magic.cardBuilder.renderers.CardBuilder;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;
@@ -65,7 +68,8 @@ public final class MagicImages {
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     private static final int MAX_IMAGES = 100;
-    private static final Map<String, BufferedImage> cache = new magic.data.LRUCache<>(MAX_IMAGES);
+    private static final Map<String, BufferedImage> cache = new LRUCache<>(MAX_IMAGES);
+    private static final Map<Long, BufferedImage> permanentCache = new LRUCache<>(MAX_IMAGES);
 
     /**
      * Gets preferred viewing size for a card image based on preset setting in preferences.
@@ -278,6 +282,35 @@ public final class MagicImages {
         return getMissingCardImage(aCard);
     }
 
+    private static BufferedImage createPermanentImage(MagicPermanent permanent) {
+
+        final MagicCardDefinition aCard = permanent.getCardDefinition();
+
+        if (permanent == null || permanent.getCardDefinition() == MagicCardDefinition.UNKNOWN) {
+            return getMissingCardImage();
+        }
+
+        if (MagicFileSystem.getCustomCardImageFile(aCard).exists()) {
+            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(aCard));
+        }
+
+        if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
+            return CardBuilder.getCardBuilderImage(permanent);
+        }
+
+        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(aCard).exists()) {
+            tryDownloadingImage(aCard);
+        }
+
+        if (MagicFileSystem.getCardImageFile(aCard).exists()) {
+            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(aCard));
+        }
+
+        // else get missing image proxy...
+        return CardBuilder.getCardBuilderImage(permanent);
+    }
+
+
     public static boolean isProxyImage(MagicCardDefinition aCard) {
 
         if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
@@ -308,6 +341,18 @@ public final class MagicImages {
         final BufferedImage image = createCardImage(aCard);
         if (image != MISSING_CARD) {
             cache.put(key, image);
+        }
+        return image;
+    }
+
+    public static BufferedImage getPermanentImage(MagicPermanent permanent) {
+        final Long key = permanent.getStateId();
+        if (permanentCache.containsKey(key)) {
+            return permanentCache.get(key);
+        }
+        final BufferedImage image = createPermanentImage(permanent);
+        if (image != MISSING_CARD) {
+            permanentCache.put(key, image);
         }
         return image;
     }
