@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.menu.help;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import magic.ui.ScreenController;
 import magic.ui.URLUtils;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;
