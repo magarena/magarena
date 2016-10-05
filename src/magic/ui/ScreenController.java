@@ -16,7 +16,7 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
-import magic.ui.duel.choice.MulliganChoicePanel;
+import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
 import magic.ui.screen.card.explorer.CardExplorerScreen;

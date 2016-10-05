@@ -1,4 +1,4 @@
-package magic.ui.duel.choice;
+package magic.ui.widget.duel.choice;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;

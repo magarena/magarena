@@ -20,7 +20,7 @@ import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
-import magic.ui.duel.choice.MulliganChoicePanel;
+import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;

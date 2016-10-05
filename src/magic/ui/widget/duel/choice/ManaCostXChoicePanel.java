@@ -1,4 +1,4 @@
-package magic.ui.duel.choice;
+package magic.ui.widget.duel.choice;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -9,7 +9,6 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.IGameController;
-import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
@@ -19,31 +18,30 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.message.TextLabel;
 
 @SuppressWarnings("serial")
-public class MultiKickerChoicePanel extends JPanel implements ActionListener {
+public class ManaCostXChoicePanel extends JPanel implements ActionListener {
 
     // translatable strings
-    private static final String _S1 = "Choose how many times to pay the %s cost of %s.";
+    private static final String _S1 = "Choose a value for X.";
 
+    private static final String MESSAGE = UiString.get(_S1);
     private static final Dimension BUTTON_DIMENSION=new Dimension(50,35);
 
     private final SwingGameController controller;
     private final JButton leftButton;
     private final JButton numberButton;
     private final JButton rightButton;
-    private final int maximumCount;
-    private int count;
+    private final int maximumX;
+    private int x;
 
-    public MultiKickerChoicePanel(final IGameController controller, final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) {
-
-        this.controller=(SwingGameController) controller;
-        this.maximumCount=maximumCount;
-        count=maximumCount;
+    public ManaCostXChoicePanel(final IGameController controller,final MagicSource source,final int maximumX) {
+        this.controller = (SwingGameController)controller;
+        this.maximumX=maximumX;
+        x=maximumX;
 
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final String message = UiString.get(_S1, name, cost.getText());
-        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));
@@ -57,7 +55,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         leftButton.setFocusable(false);
         buttonPanel.add(leftButton);
 
-        numberButton=new JButton(Integer.toString(count));
+        numberButton=new JButton(Integer.toString(x));
         numberButton.setPreferredSize(BUTTON_DIMENSION);
         numberButton.addActionListener(this);
         numberButton.setFocusable(false);
@@ -70,23 +68,23 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         buttonPanel.add(rightButton);
     }
 
-    public int getKicker() {
-        return count;
+    public int getValueForX() {
+        return x;
     }
 
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
         if (source==leftButton) {
-            if (count>0) {
-                count--;
-                numberButton.setText(Integer.toString(count));
+            if (x>1) {
+                x--;
+                numberButton.setText(Integer.toString(x));
                 numberButton.repaint();
             }
         } else if (source==rightButton) {
-            if (count<maximumCount) {
-                count++;
-                numberButton.setText(Integer.toString(count));
+            if (x<maximumX) {
+                x++;
+                numberButton.setText(Integer.toString(x));
                 numberButton.repaint();
             }
         } else {
