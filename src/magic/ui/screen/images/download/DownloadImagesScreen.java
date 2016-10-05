@@ -1,8 +1,9 @@
-package magic.ui.screen;
+package magic.ui.screen.images.download;
 
 import javax.swing.JPanel;
 import javax.swing.ToolTipManager;
 import magic.ui.image.download.DownloadDialogPanel;
+import magic.ui.screen.AbstractScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
