@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer;
+package magic.ui.widget.duel.viewer;
 
 import magic.ui.screen.duel.game.PermanentFilter;
 import magic.ui.IUpdatable;

@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer;
+package magic.ui.widget.duel.viewer;
 
 import java.awt.Component;
 import java.awt.Dimension;

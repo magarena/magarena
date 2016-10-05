@@ -6,7 +6,7 @@ import javax.swing.BorderFactory;
 import magic.model.MagicDeck;
 import magic.ui.deck.widget.DeckInfoPanel;
 import magic.ui.deck.widget.DeckPicker;
-import magic.ui.duel.viewer.CardViewer;
+import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;

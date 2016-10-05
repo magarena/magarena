@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
-import magic.ui.duel.viewer.CardViewer;
+import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import net.miginfocom.swing.MigLayout;
 

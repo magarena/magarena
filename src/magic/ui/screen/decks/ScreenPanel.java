@@ -9,7 +9,7 @@ import magic.model.MagicDeck;
 import magic.translate.UiString;
 import magic.ui.cardtable.CardTable;
 import magic.ui.deck.widget.DeckStatusPanel;
-import magic.ui.duel.viewer.CardViewer;
+import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import net.miginfocom.swing.MigLayout;
 

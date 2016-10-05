@@ -34,7 +34,7 @@ import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.DecksFilterDialog;
-import magic.ui.duel.viewer.CardViewer;
+import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;

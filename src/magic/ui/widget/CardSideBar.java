@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import javax.swing.JScrollPane;
 import magic.model.MagicCardDefinition;
-import magic.ui.duel.viewer.DeckEditorCardViewer;
+import magic.ui.widget.duel.viewer.DeckEditorCardViewer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer;
+package magic.ui.widget.duel.viewer;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

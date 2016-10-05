@@ -7,9 +7,9 @@ import java.beans.PropertyChangeListener;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
-import magic.ui.duel.viewer.ImageBattlefieldViewer;
-import magic.ui.duel.viewer.ImageCombatViewer;
-import magic.ui.duel.viewer.PlayerZoneViewer;
+import magic.ui.widget.duel.viewer.ImageBattlefieldViewer;
+import magic.ui.widget.duel.viewer.ImageCombatViewer;
+import magic.ui.widget.duel.viewer.PlayerZoneViewer;
 import magic.ui.widget.duel.sidebar.StackViewer;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 
