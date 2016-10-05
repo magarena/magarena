@@ -19,7 +19,7 @@ import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.cardtable.BasicDeckTablePanel;
+import magic.ui.widget.cards.table.BasicDeckTablePanel;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;

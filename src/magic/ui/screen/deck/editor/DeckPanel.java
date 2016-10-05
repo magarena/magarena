@@ -16,7 +16,7 @@ import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.cardtable.DeckTablePanel;
+import magic.ui.widget.cards.table.DeckTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 

@@ -5,7 +5,7 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.cardtable.CardTablePanel;
+import magic.ui.widget.cards.table.CardTablePanel;
 import magic.ui.screen.deck.editor.DeckSideBar;
 import net.miginfocom.swing.MigLayout;
 

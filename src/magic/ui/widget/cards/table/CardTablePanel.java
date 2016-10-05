@@ -1,20 +1,18 @@
-package magic.ui.cardtable;
+package magic.ui.widget.cards.table;
 
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
-import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JViewport;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
@@ -26,7 +24,6 @@ import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
-import magic.model.MagicRandom;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -34,7 +31,14 @@ import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardTable extends TexturedPanel implements ListSelectionListener {
+public class CardTablePanel extends TexturedPanel {
+
+    // fired when selection changes.
+    public static final String CP_CARD_SELECTED = "7f9bfa20-a363-4ce4-8491-8bfb219a808d";
+    // fired on mouse event.
+    public static final String CP_CARD_LCLICKED = "fb5f3d15-c764-4436-a790-4aa349c24b73";
+    public static final String CP_CARD_RCLICKED = "575ebbc6-c67b-45b5-9f3e-e03ae1d879be";
+    public static final String CP_CARD_DCLICKED = "d3a081c1-a66c-402a-814e-819678257d3b";
 
     // renderer that centers the contents of a column.
     static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
@@ -46,21 +50,19 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
     private final CardTableModel tableModel;
-    private final JTable table;
+    private JTable table;
     private final ListSelectionModel selectionModel;
 
-    private TitleBar titleBar;
+    private final TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
-    private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
-    private final boolean isDeck;
+    private boolean isAdjusting = false;
+    private int lastSelectedRow = -1;
 
-    public CardTable(final List<MagicCardDefinition> defs) {
-        this(defs, "", false);
+    public CardTablePanel(final List<MagicCardDefinition> defs) {
+        this(defs, "");
     }
 
-    public CardTable(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
-
-        this.isDeck = isDeck;
+    public CardTablePanel(final List<MagicCardDefinition> defs, final String title) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
@@ -74,7 +76,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                 final MagicCardDefinition card = tableModel.getCardDef(row);
                 final boolean isRowSelected = table.isRowSelected(row);
                 if (isRowSelected) {
-                    c.setForeground(card.isInvalid() ? Color.LIGHT_GRAY : table.getSelectionForeground());
+                    c.setForeground(table.getSelectionForeground());
                 } else {
                     c.setForeground(card.isInvalid() ? Color.GRAY : defaultForeColor);
                 }
@@ -89,9 +91,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
         table.setRowHeight(ROW_HEIGHT);
         table.setGridColor(GRID_COLOR);
-        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
-            table.addMouseMotionListener(new RowMouseOverListener());
-        }
 
         final TableColumnModel model = table.getColumnModel();
         setColumnWidths(model);
@@ -107,8 +106,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         // special renderer for mana symbols
         model.getColumn(CardTableColumn.Cost.ordinal()).setCellRenderer(new ManaCostCellRenderer());
 
-        // listener to change card image on selection
-        table.getSelectionModel().addListSelectionListener(this);
 
         // listener to sort on column header click
         final JTableHeader header = table.getTableHeader();
@@ -122,9 +119,12 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         scrollpane.getViewport().setOpaque(false);
 
         // add title
-        titleBar = null;
-        if (title.length() > 0) {
-            setTitle(title);
+        titleBar = new TitleBar(title);
+
+        table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
+        table.addMouseListener(getTableMouseAdapter());
+        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
+            table.addMouseMotionListener(new RowMouseOverListener());
         }
 
         setLayout(migLayout);
@@ -136,12 +136,48 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         return table.getColumnModel().getColumn(col.ordinal());
     }
 
+    private ListSelectionListener getTableListSelectionListener() {
+        return new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                isAdjusting = e.getValueIsAdjusting();
+                if (!isAdjusting) {
+                    firePropertyChange(CP_CARD_SELECTED, false, true);
+                }
+            }
+        };
+    }
+
+    private MouseAdapter getTableMouseAdapter() {
+        return new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (!isAdjusting) {
+                    if (SwingUtilities.isLeftMouseButton(e)) {
+                        if (hasDoubleClickListeners() && e.getClickCount() == 2) {
+                            firePropertyChange(CP_CARD_DCLICKED, false, true);
+                        } else {
+                            firePropertyChange(CP_CARD_LCLICKED, false, true);
+                        }
+                    } else if (SwingUtilities.isRightMouseButton(e)) {
+                        final Point p = e.getPoint();
+                        final int rowNumber = table.rowAtPoint(p);
+                        final boolean isRowSelected = table.isRowSelected(rowNumber);
+                        if (!isRowSelected) {
+                            table.getSelectionModel().setSelectionInterval(rowNumber, rowNumber);
+                        } else {
+                            firePropertyChange(CP_CARD_RCLICKED, false, true);
+                        }
+                    }
+                }
+            }
+        };
+    }
+
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
-        if (titleBar != null && titleBar.isVisible()) {
-            add(titleBar, "w 100%, h 26!");
-        }
+        add(titleBar, "w 100%, h 26!, hidemode 3");
         add(scrollpane, "w 100%, h 100%");
     }
 
@@ -153,24 +189,17 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     public void setDeckEditorSelectionMode() {
-        table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-    }
-
-    @Override
-    public void addMouseListener(final MouseListener m) {
-        table.addMouseListener(m);
+        //table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
     }
 
     public List<MagicCardDefinition> getSelectedCards() {
         final List<MagicCardDefinition> selectedCards = new ArrayList<>();
-
         for (final int row : table.getSelectedRows()) {
             final MagicCardDefinition card = tableModel.getCardDef(row);
             if (card != null) {
                 selectedCards.add(card);
             }
         }
-
         return selectedCards;
     }
 
@@ -199,59 +228,39 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     public void setCards(final List<MagicCardDefinition> defs) {
+        final boolean isRowSelected = table.getSelectedRow() != -1;
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
-        if (!isDeck) {
+        if (isRowSelected) {
             reselectLastCards();
         }
     }
 
     public void setTitle(final String title) {
-        if (titleBar != null) {
-            titleBar.setText(title);
-        } else {
-            titleBar = new TitleBar(title);
-        }
-    }
-
-    @Override
-    public void valueChanged(final ListSelectionEvent e) {
-        if (!e.getValueIsAdjusting()) {
-            // If cell selection is enabled, both row and column change events are fired
-            if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
-                final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
-                notifyCardSelectionListeners(card);
-            }
-        }
+        titleBar.setText(title);
     }
 
     public void setHeaderVisible(boolean b) {
-        if (titleBar != null) {
-            titleBar.setVisible(b);
-            refreshLayout();
-        }
+        titleBar.setVisible(b);
+        refreshLayout();
     }
 
-    public void selectRandomCard() {
-        if (tableModel.getRowCount() > 0) {
-            int row = MagicRandom.nextRNGInt(tableModel.getRowCount());
-            table.setRowSelectionInterval(row, row);
-            scrollRowToViewportCenter(row);
-        }
+    public void clearSelection() {
+        table.clearSelection();
     }
 
-    private void scrollRowToViewportCenter(int row) {
+    public JTable getDeckTable() {
+        return table;
+    }
 
-        JViewport viewport = (JViewport) table.getParent();
-        Rectangle viewRect = viewport.getViewRect();
-        Rectangle rect = table.getCellRect(row, 0, true);
+    public void setDeckTable(JTable aDeckTable) {
+        this.table = aDeckTable;
+        scrollpane.setViewportView(table);
+    }
 
-        int y = rect.y < viewRect.y || rect.y > (viewRect.y + viewRect.height)
-            ? rect.y - (viewRect.height / 2) + rect.height
-            : viewRect.y;
-
-        viewport.setViewPosition(new Point(viewRect.x, y));
+    public JTable getTable() {
+        return table;
     }
 
     private class ColumnListener extends MouseAdapter {
@@ -281,23 +290,20 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         public void mouseMoved(final MouseEvent e) {
             final Point p = e.getPoint();
             final int row = table.rowAtPoint(p);
-            final MagicCardDefinition card = tableModel.getCardDef(row);
-            notifyCardSelectionListeners(card);
+            if (row != lastSelectedRow) {
+                lastSelectedRow = row;
+            }
         }
     }
 
     @SuppressWarnings("serial")
     private static class ManaCostCellRenderer extends DefaultTableCellRenderer {
 
-        private MagicManaCost getManaCost(MagicCardDefinition card, Object value) {
-            return card.hasCost() ? (MagicManaCost)value : null;
-        }
-
         @Override
         public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int col) {
 
             final MagicCardDefinition card = ((CardTableModel)table.getModel()).getCardDef(row);
-            final CostPanel myRender = new CostPanel(getManaCost(card, value));
+            final CostPanel myRender = new CostPanel(card.isLand() || !card.isValid() ? null : (MagicManaCost)value);
 
             // match border and background formatting with default
             final JComponent defaultRender = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
@@ -330,16 +336,28 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
-    public void addCardSelectionListener(final ICardSelectionListener listener) {
-        cardSelectionListeners.add(listener);
+    private boolean hasDoubleClickListeners() {
+        return getPropertyChangeListeners(CP_CARD_DCLICKED).length > 0;
     }
 
-    private void notifyCardSelectionListeners(final MagicCardDefinition card) {
-        if (card != null) {
-            for (final ICardSelectionListener listener : cardSelectionListeners) {
-                listener.newCardSelected(card);
-            }
+    public void selectFirstRow() {
+        if (table.getRowCount() > 0) {
+            table.setRowSelectionInterval(0, 0);
+            firePropertyChange(CP_CARD_SELECTED, false, true);
         }
+    }
+
+    public void setSelectedCard(MagicCardDefinition aCard) {
+        final int index = tableModel.findCardIndex(aCard);
+        if (index != -1 && getSelectedCards().contains(aCard) == false) {
+            table.getSelectionModel().addSelectionInterval(index, index);
+        } else if (tableModel.getRowCount() > 0) {
+            table.getSelectionModel().addSelectionInterval(0, 0);
+        }
+    }
+
+    public TitleBar getTitleBar() {
+        return titleBar;
     }
 
     public void showCardCount(final boolean b) {

@@ -11,8 +11,8 @@ import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
-import magic.ui.cardtable.BasicDeckTablePanel;
-import magic.ui.cardtable.CardTablePanel;
+import magic.ui.widget.cards.table.BasicDeckTablePanel;
+import magic.ui.widget.cards.table.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 

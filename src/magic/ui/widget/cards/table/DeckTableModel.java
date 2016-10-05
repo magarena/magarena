@@ -1,18 +1,18 @@
-package magic.ui.cardtable;
+package magic.ui.widget.cards.table;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
+import javax.swing.table.AbstractTableModel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicManaCost;
 
-public class CardTableModel implements TableModel {
+@SuppressWarnings("serial")
+public class DeckTableModel extends AbstractTableModel {
 
     private static final NumberFormat RATING_FMT = new DecimalFormat("#0.0");
 
@@ -20,7 +20,7 @@ public class CardTableModel implements TableModel {
     private MagicCondensedDeck cardDefinitions;
     private Comparator<MagicCondensedCardDefinition> comp;
 
-    public CardTableModel(final List<MagicCardDefinition> cardDefs) {
+    public DeckTableModel(final List<MagicCardDefinition> cardDefs) {
         this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
         setCards(cardDefs);
     }
@@ -188,19 +188,5 @@ public class CardTableModel implements TableModel {
         return false;
     }
 
-    @Override
-    public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public void addTableModelListener(TableModelListener l) {
-        // do nothing.
-    }
-
-    @Override
-    public void removeTableModelListener(TableModelListener l) {
-        // do nothing.
-    }
 }
 

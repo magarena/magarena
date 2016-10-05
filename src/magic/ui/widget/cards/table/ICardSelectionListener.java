@@ -1,4 +1,4 @@
-package magic.ui.cardtable;
+package magic.ui.widget.cards.table;
 
 import magic.model.MagicCardDefinition;
 

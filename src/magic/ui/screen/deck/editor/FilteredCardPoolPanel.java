@@ -10,7 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.translate.UiString;
-import magic.ui.cardtable.CardTablePanel;
+import magic.ui.widget.cards.table.CardTablePanel;
 import magic.translate.StringContext;
 import net.miginfocom.swing.MigLayout;
 
