@@ -5,7 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Liliana
 cost={3}{B}{B}
-ability=+1: Target player discards a card.
+ability=+1: Target player discards a card.;\
+        −2: Search your library for a card, then shuffle your library and put that card on top of it.
 timing=main
 loyalty=5
 requires_groovy_code
