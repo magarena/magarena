@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.deck.hand;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -26,6 +26,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
 import net.miginfocom.swing.MigLayout;
