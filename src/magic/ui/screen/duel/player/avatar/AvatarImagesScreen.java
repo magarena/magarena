@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.player.avatar;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -39,8 +39,7 @@ import javax.swing.event.ListSelectionListener;
 import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.ScreenController;
-import magic.ui.avatar.AvatarImageSet;
-import magic.ui.avatar.WrapLayout;
+import magic.ui.widget.WrapLayout;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -52,6 +51,7 @@ import magic.ui.theme.Theme;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.ImageFileIO;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;

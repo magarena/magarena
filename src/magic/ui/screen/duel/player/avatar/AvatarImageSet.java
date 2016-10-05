@@ -1,4 +1,4 @@
-package magic.ui.avatar;
+package magic.ui.screen.duel.player.avatar;
 
 import magic.ui.MagicImages;
 import magic.ui.theme.PlayerAvatar;
@@ -19,23 +19,23 @@ import java.util.List;
 import magic.data.MagicIcon;
 import magic.ui.ImageFileIO;
 
-public class AvatarImageSet {
+class AvatarImageSet {
 
     private final static String IMAGES_FILTER = "*.{png,jpg}";
 
     private final Path path;
     private ImageIcon sampleImage = MagicImages.getIcon(MagicIcon.MISSING_ICON);
 
-    public AvatarImageSet(final Path path) {
+    AvatarImageSet(final Path path) {
         this.path = path;
         loadSampleImage();
     }
 
-    public String getName() {
+    String getName() {
         return path.getFileName().toString();
     }
 
-    public ImageIcon getSampleImage() {
+    ImageIcon getSampleImage() {
         return sampleImage;
     }
 
@@ -54,7 +54,7 @@ public class AvatarImageSet {
         }
     }
 
-    public List<Path> getImagePaths() {
+    List<Path> getImagePaths() {
         final List<Path> paths = new ArrayList<Path>();
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(this.path, IMAGES_FILTER)) {
             for (Path path : ds) {
