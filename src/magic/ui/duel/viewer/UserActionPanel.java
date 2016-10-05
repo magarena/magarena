@@ -21,7 +21,7 @@ import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.duel.SwingGameController;
-import magic.ui.message.TextLabel;
+import magic.ui.widget.message.TextLabel;
 
 @SuppressWarnings("serial")
 public class UserActionPanel extends JPanel implements ActionListener {

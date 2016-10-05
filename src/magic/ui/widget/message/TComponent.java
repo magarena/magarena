@@ -1,4 +1,4 @@
-package magic.ui.message;
+package magic.ui.widget.message;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

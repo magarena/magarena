@@ -1,25 +1,32 @@
-package magic.ui.message;
+package magic.ui.widget.message;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
-class EmptyComponent extends TComponent {
+class IconComponent extends TComponent {
+
+    private final ImageIcon icon;
+
+    IconComponent(final ImageIcon icon) {
+        this.icon = icon;
+    }
 
     @Override
     boolean requiresNewLine() {
-        return false;
+        return true;
     }
 
     @Override
     Dimension getPreferredSize() {
-        return new Dimension(0, 0);
+        return new Dimension(icon.getIconWidth() + 1, icon.getIconHeight());
     }
 
     @Override
     void paint(final JComponent com, final Graphics g, final int x, final int y) {
-        // nothing to paint.
+        icon.paintIcon(com, g, lx + x, ly + y);
     }
 
     @Override

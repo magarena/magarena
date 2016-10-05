@@ -13,7 +13,7 @@ import magic.ui.duel.viewer.info.StackViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
-import magic.ui.message.TextLabel;
+import magic.ui.widget.message.TextLabel;
 
 @SuppressWarnings("serial")
 class StackButton extends PanelButton implements IChoiceViewer {

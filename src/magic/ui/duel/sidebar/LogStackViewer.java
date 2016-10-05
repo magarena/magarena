@@ -18,7 +18,7 @@ import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.message.MessageStyle;
+import magic.ui.widget.message.MessageStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;

@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.Properties;
 import magic.ui.CardTextLanguage;
 import magic.ui.duel.animation.AnimationFx;
-import magic.ui.message.MessageStyle;
+import magic.ui.widget.message.MessageStyle;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.utility.MagicFileSystem;
 import magic.utility.SortedProperties;

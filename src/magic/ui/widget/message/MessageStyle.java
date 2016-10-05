@@ -1,4 +1,4 @@
-package magic.ui.message;
+package magic.ui.widget.message;
 
 public enum MessageStyle {
     PLAIN,

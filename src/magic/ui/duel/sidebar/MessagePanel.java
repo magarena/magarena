@@ -12,7 +12,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicMessage;
 import magic.ui.MagicImages;
 import magic.ui.duel.SwingGameController;
-import magic.ui.message.TextLabel;
+import magic.ui.widget.message.TextLabel;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
