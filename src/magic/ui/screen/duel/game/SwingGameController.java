@@ -62,7 +62,7 @@ import magic.ui.MagicImages;
 import magic.ui.MagicFileChoosers;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.ui.card.AnnotatedCardPanel;
+import magic.ui.widget.card.AnnotatedCardPanel;
 import magic.ui.widget.duel.animation.DrawCardAnimation;
 import magic.ui.widget.duel.animation.MagicAnimation;
 import magic.ui.widget.duel.animation.MagicAnimations;

@@ -1,4 +1,4 @@
-package magic.ui.card;
+package magic.ui.widget.card;
 
 import java.awt.AlphaComposite;
 import java.awt.BasicStroke;

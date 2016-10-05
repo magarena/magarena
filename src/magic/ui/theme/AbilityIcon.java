@@ -11,7 +11,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.ui.MagicImages;
-import magic.ui.card.CardIcon;
+import magic.ui.widget.card.CardIcon;
 import magic.ui.utility.MagicStyle;
 
 /**
