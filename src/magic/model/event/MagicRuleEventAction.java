@@ -1545,22 +1545,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToHand(
-        "search your library for (?<card>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library",
-        MagicTiming.Draw,
-        "Search"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card") + " from your library");
-            return (game, event) -> game.addEvent(new MagicSearchToLocationEvent(
-                event,
-                choice,
-                MagicLocationType.OwnersHand
-            ));
-        }
-    },
-    SearchLibraryToHandHidden(
-        "search your library for (?<card>[^\\.]*)( and|,) put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library",
+        "search your library for (?<card>[^\\.]*?)(?<reveal>, reveal (it|that card))?(, and |, | and )put (it|that card) into your hand(.|,) (If you do, |then )shuffle your library",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1571,7 +1556,7 @@ public enum MagicRuleEventAction {
                 event,
                 choice,
                 MagicLocationType.OwnersHand,
-                false
+                matcher.group("reveal") != null
             ));
         }
     },
