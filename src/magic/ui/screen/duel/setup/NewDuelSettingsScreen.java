@@ -27,7 +27,7 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.utility.MagicStyle;
-import magic.utility.WikiPage;
+import magic.ui.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -125,7 +125,7 @@ public class NewDuelSettingsScreen
     }
 
     @Override
-    public String getWikiPageName() {
+    public WikiPage getWikiPageName() {
         return WikiPage.NEW_DUEL;
     }
 

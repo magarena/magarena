@@ -35,7 +35,7 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.duel.decks.DuelDecksScreen;
-import magic.utility.WikiPage;
+import magic.ui.WikiPage;
 
 @SuppressWarnings("serial")
 public class DeckEditorSplitScreen
@@ -271,7 +271,7 @@ public class DeckEditorSplitScreen
     }
 
     @Override
-    public String getWikiPageName() {
+    public WikiPage getWikiPageName() {
         return WikiPage.DECK_EDITOR;
     }
 

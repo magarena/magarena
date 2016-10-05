@@ -38,7 +38,7 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
 import magic.ui.widget.StartGameButton;
 import magic.utility.MagicSystem;
-import magic.utility.WikiPage;
+import magic.ui.WikiPage;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen
@@ -249,7 +249,7 @@ public class DuelDecksScreen
     }
 
     @Override
-    public String getWikiPageName() {
+    public WikiPage getWikiPageName() {
         return WikiPage.DUEL_DECKS;
     }
 

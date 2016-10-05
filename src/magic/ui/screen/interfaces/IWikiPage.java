@@ -1,5 +1,7 @@
 package magic.ui.screen.interfaces;
 
+import magic.ui.WikiPage;
+
 public interface IWikiPage {
-    String getWikiPageName();
+    WikiPage getWikiPageName();
 }

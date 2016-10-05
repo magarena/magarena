@@ -36,7 +36,7 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
-import magic.utility.WikiPage;
+import magic.ui.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -191,7 +191,7 @@ public class CardExplorerScreen
     }
 
     @Override
-    public String getWikiPageName() {
+    public WikiPage getWikiPageName() {
         return WikiPage.CARDS_EXPLORER;
     }
 
