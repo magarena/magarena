@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -11,8 +11,8 @@ import magic.model.MagicColor;
 import magic.model.MagicType;
 import magic.ui.ImageFileIO;
 import magic.ui.MagicImages;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;
 

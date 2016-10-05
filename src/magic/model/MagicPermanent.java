@@ -34,7 +34,7 @@ import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.ui.cardBuilder.IRenderableCard;
+import magic.cardBuilder.IRenderableCard;
 
 public class MagicPermanent extends MagicObjectImpl implements MagicSource, MagicTarget, Comparable<MagicPermanent>, MagicMappable<MagicPermanent>, IRenderableCard {
 

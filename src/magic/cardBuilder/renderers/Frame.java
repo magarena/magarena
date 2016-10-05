@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
@@ -16,8 +16,8 @@ import magic.model.MagicManaType;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.event.MagicManaActivation;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 
 public class Frame {
 

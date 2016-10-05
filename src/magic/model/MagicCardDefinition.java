@@ -15,7 +15,7 @@ import magic.model.trigger.ThisCycleTrigger;
 import magic.model.trigger.ThisDrawnTrigger;
 import magic.model.trigger.ThisPutIntoGraveyardTrigger;
 import magic.model.trigger.ThisSpellIsCastTrigger;
-import magic.ui.cardBuilder.IRenderableCard;
+import magic.cardBuilder.IRenderableCard;
 import magic.utility.MagicFileSystem;
 
 public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {

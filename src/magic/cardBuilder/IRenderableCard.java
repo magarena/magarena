@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder;
+package magic.cardBuilder;
 
 import java.util.Collection;
 import java.util.Collections;

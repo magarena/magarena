@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -16,8 +16,8 @@ import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 
 public class PTFrame {
 

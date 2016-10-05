@@ -20,7 +20,7 @@ import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicManaType;
 import magic.model.player.PlayerProfile;
-import magic.ui.cardBuilder.renderers.CardBuilder;
+import magic.cardBuilder.renderers.CardBuilder;
 import magic.ui.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;

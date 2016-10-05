@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 
 import java.awt.Color;
@@ -9,8 +9,8 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicType;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 
 public class TypeLine {
     private static final Font cardTypeFont = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 16);

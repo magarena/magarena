@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -19,8 +19,8 @@ import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 
 public class TitleFrame {
 

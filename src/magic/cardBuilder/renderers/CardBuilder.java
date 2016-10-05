@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import magic.model.MagicAbility;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.ui.cardBuilder.IRenderableCard;
+import magic.cardBuilder.IRenderableCard;
 
 public class CardBuilder {
 

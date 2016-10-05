@@ -19,7 +19,7 @@ import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
-import magic.ui.cardBuilder.renderers.CardBuilder;
+import magic.cardBuilder.renderers.CardBuilder;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;

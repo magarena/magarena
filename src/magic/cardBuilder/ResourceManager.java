@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder;
+package magic.cardBuilder;
 
 import java.awt.Font;
 import java.awt.font.TextAttribute;

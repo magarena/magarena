@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 
 public class Overlay {
 

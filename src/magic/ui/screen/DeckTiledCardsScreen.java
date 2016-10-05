@@ -23,7 +23,7 @@ import magic.ui.MagicImages;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.ICardsCanvasListener;
-import magic.ui.cardBuilder.renderers.CardBuilder;
+import magic.cardBuilder.renderers.CardBuilder;
 import magic.ui.deck.editor.DeckSideBar;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;

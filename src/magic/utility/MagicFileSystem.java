@@ -22,7 +22,7 @@ import java.util.List;
 
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.ui.cardBuilder.IRenderableCard;
+import magic.cardBuilder.IRenderableCard;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 

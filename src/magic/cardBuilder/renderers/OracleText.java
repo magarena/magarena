@@ -1,4 +1,4 @@
-package magic.ui.cardBuilder.renderers;
+package magic.cardBuilder.renderers;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -26,8 +26,8 @@ import java.util.TreeMap;
 import magic.model.MagicColor;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
-import magic.ui.cardBuilder.IRenderableCard;
-import magic.ui.cardBuilder.ResourceManager;
+import magic.cardBuilder.IRenderableCard;
+import magic.cardBuilder.ResourceManager;
 import magic.ui.utility.GraphicsUtils;
 
 public class OracleText {
