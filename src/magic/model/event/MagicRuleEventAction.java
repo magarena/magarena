@@ -1561,7 +1561,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToHand(
-        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |then )shuffle your library",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1582,7 +1582,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<card>[^\\.]*?)(,| and) (?<reveal>reveal (it(,|\\.)|that card\\.))?( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it",
+        "search your library for (?<card>[^\\.]*?)(,| and)(?<reveal> reveal (it(,|\\.)|that card\\.))?( then)? shuffle your library(, then| and) put (that|the) card on top of it",
         MagicTiming.Draw,
         "Search"
     ) {
