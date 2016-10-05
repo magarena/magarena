@@ -1,4 +1,4 @@
-package magic.ui.screen.menu.main;
+package magic.ui.screen.menu.dev;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;

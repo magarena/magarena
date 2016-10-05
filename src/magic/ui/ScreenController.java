@@ -48,6 +48,7 @@ import magic.ui.screen.menu.settings.SettingsMenuScreen;
 import magic.ui.screen.menu.language.StartScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.ui.screen.menu.dev.DevMenuScreen;
 import magic.utility.MagicSystem;
 
 public final class ScreenController {
@@ -309,6 +310,10 @@ public final class ScreenController {
         } else {
             throw new RuntimeException("A screen is already hidden - only one allowed at a time!");
         }
+    }
+
+    public static void showDevMenuScreen() {
+        showScreen(new DevMenuScreen());
     }
 
 }

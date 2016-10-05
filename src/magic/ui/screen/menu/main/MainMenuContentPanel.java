@@ -4,6 +4,7 @@ import magic.exception.InvalidDeckException;
 import magic.ui.ScreenController;
 import magic.ui.screen.menu.MenuScreenContentPanel;
 import magic.ui.widget.alerter.AlertPanel;
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 class MainMenuContentPanel extends MenuScreenContentPanel {
@@ -28,6 +29,11 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
         addMenuItem(_S5, this::showDeckEditor);
         addMenuItem(_S6, this::showSettingsMenu);
         addMenuItem(_S7, this::showHelpMenu);
+        addSpace();
+        if (MagicSystem.isDevMode()) {
+            addMenuItem("DevMode...", this::showDevMenu);
+            addSpace();
+        }
         addMenuItem(_S8, this::doShutdown);
         refreshMenuLayout();
 
@@ -69,5 +75,9 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
 
     private void doShutdown() {
         ScreenController.closeActiveScreen(false);
+    }
+
+    private void showDevMenu() {
+        ScreenController.showDevMenuScreen();
     }
 }
