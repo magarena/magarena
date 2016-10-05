@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.card.script;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -23,6 +23,7 @@ import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.URLUtils;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.widget.CardSideBar;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
