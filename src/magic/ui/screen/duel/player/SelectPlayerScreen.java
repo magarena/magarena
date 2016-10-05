@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.player;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -29,6 +29,7 @@ import magic.model.player.PlayerProfiles;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;

@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.player;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
@@ -13,6 +13,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
 import magic.ui.player.HumanPlayerJList;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IStatusBar;
 
 @SuppressWarnings("serial")
