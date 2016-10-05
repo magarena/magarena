@@ -42,7 +42,7 @@ import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.deck.hand.SampleHandScreen;
 import magic.ui.screen.duel.player.SelectAiPlayerScreen;
 import magic.ui.screen.duel.player.SelectHumanPlayerScreen;
-import magic.ui.screen.SettingsMenuScreen;
+import magic.ui.screen.menu.settings.SettingsMenuScreen;
 import magic.ui.screen.StartScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;

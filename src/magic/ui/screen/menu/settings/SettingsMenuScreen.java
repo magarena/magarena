@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.menu.settings;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
@@ -9,6 +9,7 @@ import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.dialog.FiremindWorkerDialog;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.KeysStripPanel;
