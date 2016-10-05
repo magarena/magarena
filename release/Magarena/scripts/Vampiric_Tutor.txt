@@ -4,6 +4,6 @@ value=5.000
 rarity=M
 type=Instant
 cost={B}
+effect=Search your library for a card, then shuffle your library and put that card on top of it.~You lose 2 life.
 timing=removal
-requires_groovy_code
 oracle=Search your library for a card, then shuffle your library and put that card on top of it. You lose 2 life.

@@ -4,6 +4,6 @@ value=4.646
 rarity=R
 type=Sorcery
 cost={B}
+effect=Search your library for a card, then shuffle your library and put that card on top of it.~You lose 2 life.
 timing=main
-requires_groovy_code=Vampiric Tutor
 oracle=Search your library for a card, then shuffle your library and put that card on top of it. You lose 2 life.
