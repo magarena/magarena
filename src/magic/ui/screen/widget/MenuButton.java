@@ -153,4 +153,8 @@ public class MenuButton extends JButton {
         return getCloseScreenButton(UiString.get(_S1));
     }
 
+    public static MenuButton getTestButton() {
+        return new MenuButton("Test", closeScreenAction);
+    }
+
 }

@@ -1,6 +1,7 @@
 package magic.ui.screen.test;
 
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
 public class TestScreen extends HeaderFooterScreen {
@@ -9,6 +10,9 @@ public class TestScreen extends HeaderFooterScreen {
 
     public TestScreen() {
         super("Test Screen");
+        setLeftFooter(MenuButton.getTestButton());
+        setRightFooter(MenuButton.getTestButton());
+        addToFooter(MenuButton.getTestButton(), MenuButton.getTestButton());
 //        this.headerPanel = new ExplorerHeaderPanel();
 //        setHeaderContent(this.headerPanel);
 //        addToFooter(MenuButton.build(
