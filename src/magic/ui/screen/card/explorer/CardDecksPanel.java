@@ -1,4 +1,4 @@
-package magic.ui.explorer;
+package magic.ui.screen.card.explorer;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;

@@ -19,7 +19,7 @@ import magic.ui.prefs.PreferencesDialog;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
-import magic.ui.screen.CardExplorerScreen;
+import magic.ui.screen.card.explorer.CardExplorerScreen;
 import magic.ui.screen.CardScriptScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.deck.editor.DeckEditorSplitScreen;

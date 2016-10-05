@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.card.explorer;
 
 import java.awt.Color;
 import java.awt.Desktop;
@@ -25,8 +25,7 @@ import magic.ui.MagicFrame;
 import magic.ui.MagicImages;
 import magic.ui.MagicLogs;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.explorer.ExplorerPanel;
-import magic.ui.explorer.ExplorerScreenLayout;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;

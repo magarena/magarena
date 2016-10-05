@@ -1,4 +1,4 @@
-package magic.ui.explorer;
+package magic.ui.screen.card.explorer;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -16,7 +16,7 @@ import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.explorer.filter.CardFilterPanel;
-import magic.ui.screen.CardExplorerScreen;
+import magic.ui.screen.card.explorer.CardExplorerScreen;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
