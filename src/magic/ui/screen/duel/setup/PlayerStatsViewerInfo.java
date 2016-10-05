@@ -1,12 +1,12 @@
-package magic.ui.player;
+package magic.ui.screen.duel.setup;
 
 import magic.model.player.PlayerStatistics;
 
-public class PlayerStatsViewerInfo implements IPlayerStatsViewerInfo {
+class PlayerStatsViewerInfo implements IPlayerStatsViewerInfo {
 
     private final PlayerStatistics stats;
 
-    public PlayerStatsViewerInfo(final PlayerStatistics stats) {
+    PlayerStatsViewerInfo(final PlayerStatistics stats) {
         this.stats = stats;
     }
 

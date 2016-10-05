@@ -12,7 +12,6 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
-import magic.ui.player.HumanPlayerJList;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IStatusBar;
 

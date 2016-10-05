@@ -1,6 +1,6 @@
-package magic.ui.player;
+package magic.ui.screen.duel.setup;
 
-public class NullPlayerStatsViewerInfo implements IPlayerStatsViewerInfo {
+class NullPlayerStatsViewerInfo implements IPlayerStatsViewerInfo {
 
     @Override
     public String getLastPlayedDate() {

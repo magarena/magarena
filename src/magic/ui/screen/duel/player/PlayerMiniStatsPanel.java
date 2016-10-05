@@ -1,4 +1,4 @@
-package magic.ui.player;
+package magic.ui.screen.duel.player;
 
 import java.awt.Color;
 import javax.swing.BorderFactory;
@@ -13,7 +13,7 @@ import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class PlayerMiniStatsPanel extends JPanel {
+class PlayerMiniStatsPanel extends JPanel {
 
     // translatable strings
     @StringContext(eg = "player mini-stats heading representing games and duels [P]layed")
@@ -31,7 +31,7 @@ public class PlayerMiniStatsPanel extends JPanel {
     private PlayerStatistics stats;
     private final Color foreColor;
 
-    public PlayerMiniStatsPanel(final PlayerStatistics stats, final Color foreColor) {
+    PlayerMiniStatsPanel(final PlayerStatistics stats, final Color foreColor) {
         this.foreColor = foreColor;
         setLookAndFeel();
         setStats(stats);

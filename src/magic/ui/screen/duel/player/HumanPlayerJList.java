@@ -1,9 +1,9 @@
-package magic.ui.player;
+package magic.ui.screen.duel.player;
 
 import magic.model.player.PlayerProfile;
 
 @SuppressWarnings("serial")
-public class HumanPlayerJList extends PlayersJList {
+class HumanPlayerJList extends PlayersJList {
 
     @Override
     protected String getPlayerSettingsLabelText(PlayerProfile aProfile) {

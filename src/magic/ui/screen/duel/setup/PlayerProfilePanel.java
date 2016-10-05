@@ -1,10 +1,11 @@
-package magic.ui.player;
+package magic.ui.screen.duel.setup;
 
 import java.awt.Dimension;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicImages;
+import magic.ui.widget.player.PlayerDetailsPanel;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -12,17 +13,18 @@ import net.miginfocom.swing.MigLayout;
  *
  */
 @SuppressWarnings("serial")
-public class PlayerProfilePanel extends JPanel {
+class PlayerProfilePanel extends JPanel {
 
     private final MigLayout migLayout = new MigLayout();
     private final JLabel avatarLabel = new JLabel();
     private final PlayerDetailsPanel detailsPanel = new PlayerDetailsPanel();
 
-    public PlayerProfilePanel(final PlayerProfile player) {
+    PlayerProfilePanel(final PlayerProfile player) {
         setLookAndFeel();
         setPlayer(player);
     }
-    public PlayerProfilePanel() {
+
+    PlayerProfilePanel() {
         setLookAndFeel();
     }
 
@@ -32,7 +34,7 @@ public class PlayerProfilePanel extends JPanel {
         setLayout(migLayout);
     }
 
-    public void setPlayer(final PlayerProfile player) {
+    void setPlayer(final PlayerProfile player) {
         avatarLabel.setIcon(MagicImages.getPlayerAvatar(player).getIcon(2));
         detailsPanel.setPlayer(player);
         refreshLayout();

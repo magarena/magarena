@@ -1,4 +1,4 @@
-package magic.ui.player;
+package magic.ui.widget.player;
 
 import java.awt.Color;
 import javax.swing.JLabel;

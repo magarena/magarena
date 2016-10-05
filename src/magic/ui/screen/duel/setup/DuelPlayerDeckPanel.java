@@ -1,4 +1,4 @@
-package magic.ui.player;
+package magic.ui.screen.duel.setup;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -27,7 +27,7 @@ import net.miginfocom.swing.MigLayout;
  *
  */
 @SuppressWarnings("serial")
-public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
+class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     // translatable strings
     @StringContext(eg = "'Prebuilt deck' or 'Random deck'")
@@ -45,7 +45,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
     private DeckType deckType = DeckType.Random;
     private String deckValue = MagicDeckProfile.ANY_THREE;
 
-    public DuelPlayerDeckPanel(final MagicDeckProfile deckProfile) {
+    DuelPlayerDeckPanel(final MagicDeckProfile deckProfile) {
         setDeckType(deckProfile.getDeckType());
         setDeckValue(deckProfile.getDeckValue());
         addMouseListener(getMouseAdapter());
@@ -80,7 +80,8 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
         deckTypeLabel.setText(UiString.get(_S1, deckType));
         deckValueLabel.setText(getFormattedDeckValue());
     }
-    public DeckType getDeckType() {
+
+    DeckType getDeckType() {
         return deckType;
     }
 
@@ -88,7 +89,8 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
         deckValue = value;
         deckValueLabel.setText(getFormattedDeckValue());
     }
-    public String getDeckValue() {
+
+    String getDeckValue() {
         return deckValue;
     }
 
@@ -143,7 +145,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
         };
     }
 
-    public void setDeckProfile() {
+    void setDeckProfile() {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         final DeckChooserDialog dialog = new DeckChooserDialog(deckType, deckValue);
         if (!dialog.isCancelled()) {

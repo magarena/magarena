@@ -1,4 +1,4 @@
-package magic.ui.player;
+package magic.ui.screen.duel.setup;
 
 import java.awt.Color;
 import javax.swing.JLabel;
@@ -8,7 +8,7 @@ import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class PlayerStatsPanel extends JPanel {
+class PlayerStatsPanel extends JPanel {
 
     private static final String _S1 = "Last played:";
     private static final String _S2 = "Duels completed:";
@@ -22,7 +22,7 @@ public class PlayerStatsPanel extends JPanel {
 
     private static final IPlayerStatsViewerInfo NO_STATS = new NullPlayerStatsViewerInfo();
 
-    public PlayerStatsPanel(PlayerStatistics stats) {
+    PlayerStatsPanel(PlayerStatistics stats) {
 
         final MigLayout miglayout = new MigLayout("wrap 2, insets 2");
         miglayout.setColumnConstraints("[50%][50%, right]");

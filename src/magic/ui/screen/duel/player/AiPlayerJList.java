@@ -1,4 +1,4 @@
-package magic.ui.player;
+package magic.ui.screen.duel.player;
 
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
@@ -6,7 +6,7 @@ import magic.translate.StringContext;
 import magic.translate.UiString;
 
 @SuppressWarnings("serial")
-public class AiPlayerJList extends PlayersJList {
+class AiPlayerJList extends PlayersJList {
 
     // translatable strings
     @StringContext(eg="this is the AI level.")

@@ -25,8 +25,6 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.player.DuelPlayerDeckPanel;
-import magic.ui.player.DuelPlayerPanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.utility.MagicStyle;
 import magic.utility.WikiPage;

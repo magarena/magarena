@@ -1,4 +1,4 @@
-package magic.ui.player;
+package magic.ui.screen.duel.setup;
 
 import java.awt.Color;
 import javax.swing.BorderFactory;
