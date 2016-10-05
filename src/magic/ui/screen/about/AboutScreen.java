@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.about;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -17,6 +17,7 @@ import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;

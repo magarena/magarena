@@ -27,7 +27,7 @@ import magic.ui.screen.deck.editor.DeckEditorScreen;
 import magic.ui.screen.DeckTiledCardsScreen;
 import magic.ui.screen.DeckViewScreen;
 import magic.ui.deck.selector.DecksScreen;
-import magic.ui.screen.AboutScreen;
+import magic.ui.screen.about.AboutScreen;
 import magic.ui.screen.DownloadImagesScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
