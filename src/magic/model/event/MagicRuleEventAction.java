@@ -2265,6 +2265,15 @@ public enum MagicRuleEventAction {
         (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) ->
             game.doAction(new DetainAction(event.getPlayer(), creature)))
     ),
+    GoadChosen(
+        "goad " + ARG.CHOICE,
+        MagicTargetHint.Negative,
+        MagicMustAttackTargetPicker.create(),
+        MagicTiming.FirstMain,
+        "Goad",
+        (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) ->
+            game.doAction(new GoadAction(event.getPlayer(), creature)))
+    ),
     CopySpell(
         "copy " + ARG.CHOICE + "\\. You may choose new targets for (the|that) copy",
         MagicTiming.Spell,
@@ -2826,23 +2835,6 @@ public enum MagicRuleEventAction {
             return (game, event) -> {
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     game.doAction(new ChangeExtraTurnsAction(it, amount));
-                }
-            };
-        }
-    },
-    Goad(
-        "goad " + ARG.PERMANENTS,
-        MagicTargetHint.Negative,
-        MagicMustAttackTargetPicker.create(),
-        MagicTiming.FirstMain,
-        "Goad"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
-            return (game, event) -> {
-                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                    game.doAction(new GoadAction(event.getPlayer(),it));
                 }
             };
         }
