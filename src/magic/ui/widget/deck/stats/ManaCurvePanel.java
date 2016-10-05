@@ -1,4 +1,4 @@
-package magic.ui.deck.stats;
+package magic.ui.widget.deck.stats;
 
 import java.awt.Color;
 import javax.swing.BorderFactory;
