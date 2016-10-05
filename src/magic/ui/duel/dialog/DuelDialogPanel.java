@@ -2,7 +2,7 @@ package magic.ui.duel.dialog;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;

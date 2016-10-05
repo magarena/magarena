@@ -11,7 +11,7 @@ import javax.swing.border.CompoundBorder;
 import magic.data.MagicIcon;
 import magic.model.MagicMessage;
 import magic.ui.MagicImages;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.message.TextLabel;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;

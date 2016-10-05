@@ -7,7 +7,7 @@ import java.awt.Rectangle;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;

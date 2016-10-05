@@ -3,7 +3,7 @@ package magic.ui.duel.viewer;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;

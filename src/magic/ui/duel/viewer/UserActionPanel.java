@@ -20,7 +20,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.message.TextLabel;
 
 @SuppressWarnings("serial")

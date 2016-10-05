@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.dialog.prefs.ImageSizePresets;
 

@@ -12,7 +12,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.player.PlayerZoneButtonsPanel;

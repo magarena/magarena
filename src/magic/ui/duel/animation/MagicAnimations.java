@@ -8,7 +8,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.viewer.info.CardViewerInfo;
-import magic.ui.duel.DuelPanel;
+import magic.ui.screen.duel.game.DuelPanel;
 import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.utility.MagicSystem;

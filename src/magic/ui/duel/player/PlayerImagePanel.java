@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
-import magic.ui.duel.CounterOverlay;
+import magic.ui.screen.duel.game.CounterOverlay;
 import magic.ui.duel.animation.AnimationFx;
 import magic.ui.duel.animation.MagicAnimations;
 import magic.ui.duel.viewer.info.PlayerViewerInfo;

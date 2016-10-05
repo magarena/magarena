@@ -1,9 +1,9 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.duel.PermanentFilter;
+import magic.ui.screen.duel.game.PermanentFilter;
 import magic.ui.IUpdatable;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 

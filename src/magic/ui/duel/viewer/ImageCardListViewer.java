@@ -32,7 +32,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

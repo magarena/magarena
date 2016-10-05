@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.screen.duel.game;
 
 import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.ui.duel.viewer.info.PermanentViewerInfo;

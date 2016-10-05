@@ -11,7 +11,7 @@ import magic.model.IGameController;
 import magic.model.MagicColor;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;

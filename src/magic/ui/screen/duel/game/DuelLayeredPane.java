@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.screen.duel.game;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -12,7 +12,7 @@ import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 @SuppressWarnings("serial")
-public class DuelLayeredPane extends JLayeredPane {
+class DuelLayeredPane extends JLayeredPane {
 
     private final DuelPanel duelPanel;
     private final ZoneBackgroundLabel backgroundLabel;
@@ -20,7 +20,7 @@ public class DuelLayeredPane extends JLayeredPane {
     private final AnnotatedCardPanel imageCardViewer;
     private final DuelDialogPanel dialogPanel;
 
-    public DuelLayeredPane(final MagicGame aGame) {
+    DuelLayeredPane(final MagicGame aGame) {
 
         this.duelPanel = new DuelPanel(aGame);
 
@@ -66,7 +66,7 @@ public class DuelLayeredPane extends JLayeredPane {
         return duelPanel;
     }
 
-    public void updateView() {
+    void updateView() {
 //        backgroundLabel.setImage(GeneralConfig.getInstance().getTextView() == false);
         duelPanel.updateView();
 //        setVisible(true);
@@ -84,7 +84,7 @@ public class DuelLayeredPane extends JLayeredPane {
         return duelPanel.requestFocusInWindow();
     }
 
-    public DuelDialogPanel getDialogPanel() {
+    DuelDialogPanel getDialogPanel() {
         return dialogPanel;
     }
 

@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.theme.Theme;

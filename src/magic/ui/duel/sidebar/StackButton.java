@@ -7,7 +7,7 @@ import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.ui.duel.SwingGameController;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.info.StackViewerInfo;
 import magic.ui.theme.ThemeFactory;

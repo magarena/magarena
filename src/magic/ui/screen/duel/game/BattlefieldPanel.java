@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.screen.duel.game;
 
 import javax.swing.JPanel;
 import magic.model.MagicCardList;

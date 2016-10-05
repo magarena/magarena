@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.screen.duel.game;
 
 import java.awt.Color;
 import java.awt.Font;
