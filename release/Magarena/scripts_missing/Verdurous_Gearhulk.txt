@@ -1,5 +1,6 @@
 name=Verdurous Gearhulk
-image=http://magiccards.info/scans/en/mps/172.jpg
+image=http://magiccards.info/scans/en/kld/172.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=M
 type=Artifact,Creature

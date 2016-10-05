@@ -1,5 +1,6 @@
 name=Thriving Rhino
-image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_D8HC9XcRMo.png
+image=http://magiccards.info/scans/en/kld/171.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=C
 type=Creature

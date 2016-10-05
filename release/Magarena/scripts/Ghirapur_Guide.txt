@@ -1,5 +1,6 @@
 name=Ghirapur Guide
-image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_e7OIVYUq7p.png
+image=http://magiccards.info/scans/en/kld/156.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=U
 type=Creature

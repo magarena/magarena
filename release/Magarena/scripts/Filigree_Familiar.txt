@@ -1,5 +1,6 @@
 name=Filigree Familiar
-image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_xyaP1mPOtm.png
+image=http://magiccards.info/scans/en/kld/212.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=U
 type=Artifact,Creature

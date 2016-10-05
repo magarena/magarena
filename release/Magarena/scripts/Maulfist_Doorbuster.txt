@@ -1,5 +1,6 @@
 name=Maulfist Doorbuster
-image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_loLjhWJNxm.png
+image=http://magiccards.info/scans/en/kld/123.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=U
 type=Creature

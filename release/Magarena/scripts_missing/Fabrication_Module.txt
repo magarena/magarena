@@ -1,5 +1,6 @@
 name=Fabrication Module
-image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_1OxAnZnP1M.png
+image=http://magiccards.info/scans/en/kld/211.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=U
 type=Artifact

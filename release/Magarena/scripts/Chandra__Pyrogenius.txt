@@ -1,5 +1,6 @@
 name=Chandra, Pyrogenius
-image=http://mythicspoiler.com/kld/cards/chandrapyrogenius.jpg
+image=http://magiccards.info/scans/en/kld/265.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=M
 type=Planeswalker

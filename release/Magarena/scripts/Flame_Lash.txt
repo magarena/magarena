@@ -1,5 +1,6 @@
 name=Flame Lash
-image=http://mythicspoiler.com/kld/cards/flamelash.jpg
+image=http://magiccards.info/scans/en/kld/266.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=C
 type=Instant

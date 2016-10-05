@@ -1,5 +1,6 @@
 name=Liberating Combustion
-image=http://mythicspoiler.com/kld/cards/liberatingcombustion.jpg
+image=http://magiccards.info/scans/en/kld/267.jpg
+image_updated=2016-10-05
 value=2.500
 rarity=R
 type=Sorcery
