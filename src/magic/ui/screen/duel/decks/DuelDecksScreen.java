@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.decks;
 
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
@@ -26,6 +26,7 @@ import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
 import magic.cardBuilder.renderers.CardBuilder;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
