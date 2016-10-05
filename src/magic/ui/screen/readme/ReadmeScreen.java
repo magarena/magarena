@@ -1,8 +1,9 @@
-package magic.ui.screen;
+package magic.ui.screen.readme;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import javax.swing.JPanel;
+import magic.ui.screen.TextFileReaderScreen;
 import magic.ui.screen.interfaces.IStatusBar;
 
 @SuppressWarnings("serial")
