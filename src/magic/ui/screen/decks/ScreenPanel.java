@@ -1,4 +1,4 @@
-package magic.ui.deck.selector;
+package magic.ui.screen.decks;
 
 import java.awt.Dimension;
 import java.nio.file.Path;
