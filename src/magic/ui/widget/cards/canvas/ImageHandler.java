@@ -1,4 +1,4 @@
-package magic.ui.canvas.cards;
+package magic.ui.widget.cards.canvas;
 
 import javax.imageio.ImageIO;
 

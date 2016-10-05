@@ -1,8 +1,8 @@
 package magic.ui.screen.duel.player.zone;
 
 import magic.model.MagicCardList;
-import magic.ui.canvas.cards.CardsCanvas;
-import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
+import magic.ui.widget.cards.canvas.CardsCanvas;
+import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
