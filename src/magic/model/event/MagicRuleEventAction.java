@@ -2830,6 +2830,23 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Goad(
+        "goad " + ARG.PERMANENTS,
+        MagicTargetHint.Negative,
+        MagicMustAttackTargetPicker.create(),
+        MagicTiming.FirstMain,
+        "Goad"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new GoadAction(event.getPlayer(),it));
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
