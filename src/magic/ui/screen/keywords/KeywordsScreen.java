@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.keywords;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -14,6 +14,7 @@ import javax.swing.SwingUtilities;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.data.KeywordDefinitions;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
