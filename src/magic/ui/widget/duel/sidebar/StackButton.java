@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.viewer.info.StackViewerInfo;
+import magic.ui.duel.viewerinfo.StackViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;

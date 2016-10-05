@@ -2,7 +2,7 @@ package magic.ui.widget.duel.animation;
 
 import java.awt.Rectangle;
 import magic.model.MagicPlayer;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 
 /**
  * Animation when playing a card from hand.

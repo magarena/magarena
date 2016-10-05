@@ -15,7 +15,7 @@ import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.CounterOverlay;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;

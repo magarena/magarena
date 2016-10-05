@@ -12,7 +12,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.viewer.info.StackViewerInfo;
+import magic.ui.duel.viewerinfo.StackViewerInfo;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -7,10 +7,10 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.screen.duel.game.DuelPanel;
-import magic.ui.duel.viewer.info.GameViewerInfo;
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.utility.MagicSystem;
 
 public class MagicAnimations {

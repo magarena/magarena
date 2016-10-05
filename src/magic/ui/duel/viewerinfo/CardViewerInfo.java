@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer.info;
+package magic.ui.duel.viewerinfo;
 
 import java.awt.image.BufferedImage;
 import magic.model.MagicCard;

@@ -1,6 +1,6 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.model.MagicCardList;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.TabSelector;

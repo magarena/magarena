@@ -10,7 +10,7 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayer;
 import magic.ui.MagicImages;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.Timeline.TimelineState;
 import org.pushingpixels.trident.TimelineScenario;

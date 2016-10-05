@@ -9,7 +9,7 @@ import java.awt.RenderingHints;
 import java.awt.geom.Rectangle2D;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.ui.duel.viewer.info.GameViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;

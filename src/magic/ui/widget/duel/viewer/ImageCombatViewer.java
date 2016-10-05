@@ -1,8 +1,8 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewer.info.GameViewerInfo;
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
-import magic.ui.duel.viewer.info.PermanentViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import magic.ui.IChoiceViewer;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
@@ -16,7 +16,7 @@ import java.awt.Dimension;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

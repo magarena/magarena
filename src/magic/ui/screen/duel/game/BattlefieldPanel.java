@@ -4,7 +4,7 @@ import javax.swing.JPanel;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.widget.duel.sidebar.StackViewer;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 
 @SuppressWarnings("serial")
 public abstract class BattlefieldPanel extends JPanel {

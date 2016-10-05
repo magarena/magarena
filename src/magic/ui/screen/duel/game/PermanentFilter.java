@@ -1,8 +1,8 @@
 package magic.ui.screen.duel.game;
 
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
-import magic.ui.duel.viewer.info.PermanentViewerInfo;
-import magic.ui.duel.viewer.info.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;

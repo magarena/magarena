@@ -1,7 +1,7 @@
 package magic.ui.screen.duel.game;
 
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
-import magic.ui.duel.viewer.info.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.widget.duel.sidebar.DuelSideBarPanel;
 import java.awt.Dimension;
 import java.awt.Point;
@@ -27,7 +27,7 @@ import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
 import magic.ui.widget.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.widget.duel.viewer.ImageCardListViewer;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 

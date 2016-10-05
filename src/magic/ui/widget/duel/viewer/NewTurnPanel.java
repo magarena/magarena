@@ -5,7 +5,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.translate.UiString;
-import magic.ui.duel.viewer.info.GameViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;

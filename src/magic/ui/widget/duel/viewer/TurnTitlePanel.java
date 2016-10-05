@@ -1,6 +1,6 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewer.info.GameViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;

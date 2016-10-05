@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer.info;
+package magic.ui.duel.viewerinfo;
 
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;

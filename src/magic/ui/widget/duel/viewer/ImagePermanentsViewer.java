@@ -1,6 +1,6 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewer.info.PermanentViewerInfo;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.dialog.prefs.ImageSizePresets;
 
 @SuppressWarnings("serial")

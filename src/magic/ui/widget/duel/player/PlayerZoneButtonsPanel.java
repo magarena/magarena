@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicPlayerZone;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
