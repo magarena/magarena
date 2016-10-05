@@ -1,4 +1,4 @@
-package magic.ui.duel.player;
+package magic.ui.widget.duel.player;
 
 import java.awt.Color;
 import java.awt.Component;
