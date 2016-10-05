@@ -276,7 +276,7 @@ public class DeckEditorScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+    public boolean isScreenReadyToClose(final Object nextScreen) {
         if (!screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }

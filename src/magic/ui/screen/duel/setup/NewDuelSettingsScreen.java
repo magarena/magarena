@@ -117,7 +117,7 @@ public class NewDuelSettingsScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+    public boolean isScreenReadyToClose(final Object nextScreen) {
         if (isEachPlayerDeckValid(false)) {
             updateDuelConfig();
         }

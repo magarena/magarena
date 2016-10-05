@@ -23,7 +23,6 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGameLog;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.utility.GraphicsUtils;
@@ -238,7 +237,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                final AbstractScreen activeScreen = ScreenController.getActiveScreen();
+                final JPanel activeScreen = ScreenController.getActiveScreen();
                 activeScreen.setVisible(!activeScreen.isVisible());
             }
         });

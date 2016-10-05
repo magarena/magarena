@@ -25,7 +25,7 @@ public class DownloadImagesScreen extends AbstractScreen {
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+    public boolean isScreenReadyToClose(final Object nextScreen) {
         final boolean isBusy = dialogPanel.isBusy();
         ToolTipManager.sharedInstance().setEnabled(isBusy == false);
         return isBusy == false;

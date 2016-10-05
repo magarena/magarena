@@ -120,7 +120,7 @@ public class DecksScreen extends AbstractScreen implements IStatusBar, IActionBa
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+    public boolean isScreenReadyToClose(final Object nextScreen) {
         DecksFilterDialog.resetFilterHistory();
         return true;
     }

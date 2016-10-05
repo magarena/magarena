@@ -261,7 +261,7 @@ public class DeckEditorSplitScreen
      * @see magic.ui.MagScreen#canScreenClose()
      */
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+    public boolean isScreenReadyToClose(final Object nextScreen) {
         if (screenContent.isDeckEditor() && !screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }

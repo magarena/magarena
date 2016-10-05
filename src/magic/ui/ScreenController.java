@@ -4,6 +4,7 @@ import magic.translate.UiString;
 import magic.ui.utility.MagicStyle;
 import java.util.Stack;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
@@ -18,6 +19,7 @@ import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.MagicScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
 import magic.ui.screen.card.explorer.CardExplorerScreen;
 import magic.ui.screen.card.script.CardScriptScreen;
@@ -55,8 +57,8 @@ public final class ScreenController {
     private static final String _S3 = "Warning";
 
     private static MagicFrame mainFrame = null;
-    private static final Stack<AbstractScreen> screens = new Stack<>();
-    private static AbstractScreen hiddenScreen;
+    private static final Stack<Object> screens = new Stack<>();
+    private static Object hiddenScreen;
 
     public static MagicFrame getMainFrame() {
         if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
@@ -213,10 +215,21 @@ public final class ScreenController {
         }
     }
 
+    private static boolean isScreenReadyToClose(Object activeScreen, Object nextScreen) {
+
+        if (activeScreen instanceof AbstractScreen) {
+            return ((AbstractScreen)activeScreen).isScreenReadyToClose(nextScreen);
+        } else if (activeScreen instanceof MagicScreen) {
+            return ((MagicScreen)activeScreen).isScreenReadyToClose(nextScreen);
+        } else {
+            throw new UnsupportedOperationException("Not an AbstractScreen or MagicScreen!");
+        }
+    }
+
     private static void closeActiveScreen() {
-        final AbstractScreen activeScreen = screens.pop();
-        final AbstractScreen nextScreen = screens.peek();
-        if (activeScreen.isScreenReadyToClose(nextScreen)) {
+        final Object activeScreen = screens.pop();
+        final Object nextScreen = screens.peek();
+        if (isScreenReadyToClose(activeScreen, nextScreen)) {
             showScreen(screens.pop());
             if (nextScreen instanceof DuelGameScreen) {
                 ((DuelGameScreen) nextScreen).updateView();
@@ -236,32 +249,33 @@ public final class ScreenController {
         }
     }
 
-    private static void showScreen(AbstractScreen screen) {
+    private static void showScreen(Object screen) {
         if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
             screen = hiddenScreen;
             hiddenScreen = null;
         }
+
         setMainFrameScreen(screen);
         screens.push(screen);
-        screen.setVisible(true);
-        screen.requestFocus();
+        ((JPanel)screen).setVisible(true);
+        ((JPanel)screen).requestFocus();
     }
 
-    private static void setMainFrameScreen(final AbstractScreen screen) {
-        getMainFrame().setContentPanel(screen);
+    private static void setMainFrameScreen(final Object screen) {
+        getMainFrame().setContentPanel((JPanel)screen);
     }
 
     public static int getScreensStackSize() {
         return screens.size();
     }
 
-    public static AbstractScreen getActiveScreen() {
-        return screens.peek();
+    public static JPanel getActiveScreen() {
+        return (JPanel)screens.peek();
     }
 
     public static void refreshStyle() {
-        for (AbstractScreen screen : screens) {
-            MagicStyle.refreshComponentStyle(screen);
+        for (Object screen : screens) {
+            MagicStyle.refreshComponentStyle((JPanel)screen);
         }
     }
 
@@ -279,7 +293,7 @@ public final class ScreenController {
     }
 
     public static boolean isDuelActive() {
-        for (AbstractScreen screen : screens) {
+        for (Object screen : screens) {
             if (screen instanceof DuelDecksScreen || screen instanceof DuelGameScreen) {
                 return true;
             }
@@ -290,7 +304,7 @@ public final class ScreenController {
     public static void hideActiveScreen() {
         if (hiddenScreen == null) {
             hiddenScreen = screens.pop();
-            hiddenScreen.setVisible(false);
+            ((JPanel)hiddenScreen).setVisible(false);
             showScreen(screens.pop());
         } else {
             throw new RuntimeException("A screen is already hidden - only one allowed at a time!");
