@@ -1545,6 +1545,17 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl LEGENDARY_SPIRIT_PERMANENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            return target.hasSubType(MagicSubType.Spirit) &&
+                   target.hasType(MagicType.Legendary) &&
+                   target.isPermanentCard();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
+
     public static final MagicCardFilterImpl PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
@@ -2330,6 +2341,7 @@ public class MagicTargetFilterFactory {
         add("Mercenary permanent card with converted mana cost 4 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 4));
         add("Mercenary permanent card with converted mana cost 5 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 5));
         add("Mercenary permanent card with converted mana cost 6 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 6));
+        add("legendary Spirit permanent card from your library", LEGENDARY_SPIRIT_PERMANENT_CARD_FROM_LIBRARY);
 
         // <color|type|subtype> creature card from your library
         add("creature card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, 1));
