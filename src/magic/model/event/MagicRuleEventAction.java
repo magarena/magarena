@@ -1582,7 +1582,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|\\.)|that card\\.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it",
+        "search your library for (?<card>[^\\.]*?)(,| and) (?<reveal>reveal (it(,|\\.)|that card\\.))?( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1592,7 +1592,8 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.addEvent(new MagicSearchToLocationEvent(
                 event,
                 choice,
-                MagicLocationType.TopOfOwnersLibrary
+                MagicLocationType.TopOfOwnersLibrary,
+                matcher.group("reveal") != null
             ));
         }
     },
