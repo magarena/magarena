@@ -10,4 +10,3 @@ pt=4/2
 ability=Whenever SN attacks, you may goad target creature defending player controls.
 timing=main
 oracle=Whenever Goblin Racketeer attacks, you may goad target creature defending player controls.
-status=not supported: goad
