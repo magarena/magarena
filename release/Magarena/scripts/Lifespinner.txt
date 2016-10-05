@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={3}{G}
 pt=3/3
+ability={T}, Sacrifice three Spirits: Search your library for a legendary Spirit permanent card and put it onto the battlefield. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle={T}, Sacrifice three Spirits: Search your library for a legendary Spirit permanent card and put it onto the battlefield. Then shuffle your library.
