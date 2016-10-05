@@ -1,4 +1,4 @@
-package magic.ui.image.download;
+package magic.ui.screen.images.download;
 
 interface IDownloadListener {
     void setMessage(final String message);

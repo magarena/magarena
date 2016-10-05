@@ -1,4 +1,4 @@
-package magic.ui.image.download;
+package magic.ui.screen.images.download;
 
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;

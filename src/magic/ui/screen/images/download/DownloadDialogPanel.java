@@ -1,4 +1,4 @@
-package magic.ui.image.download;
+package magic.ui.screen.images.download;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -19,13 +19,13 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DownloadDialogPanel extends TexturedPanel implements PropertyChangeListener {
+class DownloadDialogPanel extends TexturedPanel implements PropertyChangeListener {
 
     private static final String _S1 = "Download card images";
 
     private final DialogMainPanel mainPanel;
 
-    public DownloadDialogPanel() {
+    DownloadDialogPanel() {
 
         setPreferredSize(new Dimension(460, 520));
         setBorder(
@@ -82,7 +82,7 @@ public class DownloadDialogPanel extends TexturedPanel implements PropertyChange
         }
     }
 
-    public boolean isBusy() {
+    boolean isBusy() {
         return mainPanel.isBusy();
     }
 

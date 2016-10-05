@@ -1,4 +1,4 @@
-package magic.ui.image.download;
+package magic.ui.screen.images.download;
 
 import java.awt.Font;
 import java.io.IOException;

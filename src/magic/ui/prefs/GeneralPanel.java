@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
-import magic.ui.image.download.DirectoryChooser;
+import magic.ui.screen.images.download.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
