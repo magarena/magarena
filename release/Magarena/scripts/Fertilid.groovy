@@ -24,7 +24,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                    event,
+                    event.getSource(),
+                    it,
                     new MagicFromCardFilterChoice(
                         BASIC_LAND_CARD_FROM_LIBRARY,
                         1,
