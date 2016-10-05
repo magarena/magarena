@@ -5,7 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Garruk
 cost={4}{G}{G}
-ability=−3: You may put a green creature card from your hand onto the battlefield.
+ability=+1: Reveal the top five cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.;\
+        −3: You may put a green creature card from your hand onto the battlefield.
 loyalty=4
 timing=main
 requires_groovy_code

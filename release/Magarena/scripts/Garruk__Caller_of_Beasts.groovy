@@ -1,28 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "PN reveals the top five cards of his or her library. PN puts all creature cards revealed this way into his or her hand and the rest on the bottom of his or her library in any order."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList top5 = event.getPlayer().getLibrary().getCardsFromTop(5);
-            game.doAction(new RevealAction(top5));
-            for (final MagicCard top : top5) {
-                game.doAction(new ShiftCardAction(
-                    top,
-                    MagicLocationType.OwnersLibrary,
-                    top.hasType(MagicType.Creature) ?
-                        MagicLocationType.OwnersHand :
-                        MagicLocationType.BottomOfOwnersLibrary
-                ));
-            }
-        }
-    },
     new MagicPlaneswalkerActivation(-7) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
