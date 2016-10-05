@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.setup;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
@@ -27,6 +27,7 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.player.DuelPlayerDeckPanel;
 import magic.ui.player.DuelPlayerPanel;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.utility.MagicStyle;
 import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;

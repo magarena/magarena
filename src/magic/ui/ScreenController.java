@@ -37,7 +37,7 @@ import magic.ui.screen.menu.migrate.ImportScreen;
 import magic.ui.screen.keywords.KeywordsScreen;
 import magic.ui.screen.menu.main.MainMenuScreen;
 import magic.ui.screen.duel.mulligan.MulliganScreen;
-import magic.ui.screen.NewDuelSettingsScreen;
+import magic.ui.screen.duel.setup.NewDuelSettingsScreen;
 import magic.ui.screen.ReadmeScreen;
 import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SelectAiPlayerScreen;
