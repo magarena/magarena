@@ -17,8 +17,8 @@ import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicImages;
-import magic.ui.duel.animation.AnimationFx;
-import magic.ui.duel.animation.MagicAnimations;
+import magic.ui.widget.duel.animation.AnimationFx;
+import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 

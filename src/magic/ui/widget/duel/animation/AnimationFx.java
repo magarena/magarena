@@ -1,4 +1,4 @@
-package magic.ui.duel.animation;
+package magic.ui.widget.duel.animation;
 
 public class AnimationFx {
 

@@ -1,4 +1,4 @@
-package magic.ui.duel.animation;
+package magic.ui.widget.duel.animation;
 
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;

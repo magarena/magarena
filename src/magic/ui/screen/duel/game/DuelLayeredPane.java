@@ -7,7 +7,7 @@ import java.awt.event.ComponentEvent;
 import javax.swing.JLayeredPane;
 import magic.model.MagicGame;
 import magic.ui.card.AnnotatedCardPanel;
-import magic.ui.duel.animation.AnimationPanel;
+import magic.ui.widget.duel.animation.AnimationPanel;
 import magic.ui.widget.duel.DuelDialogPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 

@@ -21,7 +21,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
-import magic.ui.duel.animation.GameLayoutInfo;
+import magic.ui.widget.duel.animation.GameLayoutInfo;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;

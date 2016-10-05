@@ -8,7 +8,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.translate.UiString;
-import magic.ui.duel.animation.AnimationFx;
+import magic.ui.widget.duel.animation.AnimationFx;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
