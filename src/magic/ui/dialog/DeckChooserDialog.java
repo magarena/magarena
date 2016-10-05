@@ -20,10 +20,10 @@ import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.deck.widget.CustomDecksComboxBox;
-import magic.ui.deck.widget.FiremindDecksComboxBox;
-import magic.ui.deck.widget.PrebuiltDecksComboxBox;
-import magic.ui.deck.widget.RandomDecksComboBox;
+import magic.ui.widget.deck.CustomDecksComboxBox;
+import magic.ui.widget.deck.FiremindDecksComboxBox;
+import magic.ui.widget.deck.PrebuiltDecksComboxBox;
+import magic.ui.widget.deck.RandomDecksComboBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

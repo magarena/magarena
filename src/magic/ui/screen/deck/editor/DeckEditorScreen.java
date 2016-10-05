@@ -35,7 +35,7 @@ import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
-import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.utility.MagicFileSystem;

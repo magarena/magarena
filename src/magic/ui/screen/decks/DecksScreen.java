@@ -9,7 +9,7 @@ import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;

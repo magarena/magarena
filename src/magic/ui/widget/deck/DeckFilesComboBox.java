@@ -1,4 +1,4 @@
-package magic.ui.deck.widget;
+package magic.ui.widget.deck;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;

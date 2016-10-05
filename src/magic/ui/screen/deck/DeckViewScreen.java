@@ -18,7 +18,7 @@ import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.screen.AbstractScreen;
 
 @SuppressWarnings("serial")

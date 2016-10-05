@@ -1,4 +1,4 @@
-package magic.ui.deck.widget;
+package magic.ui.widget.deck;
 
 import java.awt.Color;
 import java.awt.Font;
