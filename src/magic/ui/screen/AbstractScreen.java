@@ -1,11 +1,8 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import javax.swing.KeyStroke;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
@@ -32,8 +29,12 @@ public abstract class AbstractScreen extends JPanel {
     public AbstractScreen() {
         this.frame = ScreenController.getMainFrame();
         setOpaque(false);
-        setEscapeKeyInputMap();
-        setF1KeyInputMap();
+        setDefaultKeyboardActions();
+    }
+
+    private void setDefaultKeyboardActions() {
+        ScreenHelper.setKeyboardAction(this, KeyEvent.VK_ESCAPE, this::showOptionsMenuOrCloseScreen);
+        ScreenHelper.setKeyboardAction(this, KeyEvent.VK_F1, this::showWikiHelpPage);
     }
 
     protected void refreshActionBar() {
@@ -66,26 +67,6 @@ public abstract class AbstractScreen extends JPanel {
             this.actionbar = new ActionBar((IActionBar)this);
             add(actionbar, "w 100%, h 50!");
         }
-    }
-
-    private void setEscapeKeyInputMap() {
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "OptionsMenu");
-        getActionMap().put("OptionsMenu", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                showOptionsMenuOrCloseScreen();
-            }
-        });
-    }
-
-    private void setF1KeyInputMap() {
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0), "WikiHelp");
-        getActionMap().put("WikiHelp", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                showWikiHelpPage();
-            }
-        });
     }
 
     public void showWikiHelpPage() {
