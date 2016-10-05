@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.menu.language;
 
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
@@ -9,6 +9,7 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
