@@ -1,4 +1,4 @@
-package magic.ui.dialog;
+package magic.ui.screen.menu.main;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -14,14 +14,14 @@ import javax.swing.JTextArea;
 import magic.utility.FileIO;
 
 @SuppressWarnings("serial")
-public class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {
+class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {
 
     File file = null;
     String description;
     private final JTextArea textArea = new JTextArea();
     private final JScrollPane scrollPane = new JScrollPane(textArea);
 
-    public DeckDescriptionPreview(JFileChooser fc) {
+    DeckDescriptionPreview(JFileChooser fc) {
         setPreferredSize(new Dimension(200, 50));
         setLayout(new BorderLayout());
         textArea.setEditable(false);
@@ -31,7 +31,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         fc.addPropertyChangeListener(this);
     }
 
-    public void loadDescription() {
+    void loadDescription() {
         String content;
         description = "";
         try { //load deck description
@@ -55,7 +55,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         showDescription();
     }
 
-    public void showDescription() {
+    void showDescription() {
         textArea.setText(description);
         textArea.setCaretPosition(0);
     }

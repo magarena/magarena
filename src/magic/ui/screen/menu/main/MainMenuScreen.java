@@ -12,7 +12,6 @@ import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.dialog.DeckDescriptionPreview;
 import magic.ui.dialog.GameStateRunner;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IWikiPage;
