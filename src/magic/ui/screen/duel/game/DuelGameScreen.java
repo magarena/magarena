@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.game;
 
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
@@ -13,6 +13,7 @@ import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.DuelLayeredPane;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.GameLoadingMessage;
