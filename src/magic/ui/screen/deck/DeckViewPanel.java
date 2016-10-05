@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.deck;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -10,14 +10,14 @@ import magic.ui.screen.deck.editor.DeckSideBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckViewPanel extends JPanel {
+class DeckViewPanel extends JPanel {
 
     private MagicDeck deck;
     private final MigLayout migLayout = new MigLayout();
     private final DeckSideBar sideBarPanel;
     private final CardTablePanel deckTable;
 
-    public DeckViewPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
+    DeckViewPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
 
         this.deck = aDeck;
 
@@ -41,7 +41,7 @@ public class DeckViewPanel extends JPanel {
 
     }
 
-    public DeckViewPanel(final MagicDeck aDeck) {
+    DeckViewPanel(final MagicDeck aDeck) {
         this(aDeck, null);
     }
 
@@ -82,7 +82,7 @@ public class DeckViewPanel extends JPanel {
         add(deckTable, "w 100%, h 100%");
     }
 
-    public MagicDeck getDeck() {
+    MagicDeck getDeck() {
         return this.deck;
     }
 

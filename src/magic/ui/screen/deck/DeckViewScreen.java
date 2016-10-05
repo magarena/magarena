@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.deck;
 
 import java.awt.event.ActionEvent;
 import java.nio.file.Path;
@@ -19,6 +19,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.screen.AbstractScreen;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen
