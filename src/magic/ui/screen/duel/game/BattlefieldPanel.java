@@ -3,7 +3,7 @@ package magic.ui.screen.duel.game;
 import javax.swing.JPanel;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
-import magic.ui.duel.sidebar.StackViewer;
+import magic.ui.widget.duel.sidebar.StackViewer;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 
 @SuppressWarnings("serial")

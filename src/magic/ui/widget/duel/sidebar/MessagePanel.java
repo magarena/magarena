@@ -1,4 +1,4 @@
-package magic.ui.duel.sidebar;
+package magic.ui.widget.duel.sidebar;
 
 import java.awt.Color;
 import java.awt.Insets;

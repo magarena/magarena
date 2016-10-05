@@ -2,7 +2,7 @@ package magic.ui.screen.duel.game;
 
 import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.ui.duel.viewer.info.GameViewerInfo;
-import magic.ui.duel.sidebar.DuelSideBarPanel;
+import magic.ui.widget.duel.sidebar.DuelSideBarPanel;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;

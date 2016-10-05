@@ -1,4 +1,4 @@
-package magic.ui.duel.sidebar;
+package magic.ui.widget.duel.sidebar;
 
 import java.awt.Component;
 import java.awt.event.AdjustmentEvent;
