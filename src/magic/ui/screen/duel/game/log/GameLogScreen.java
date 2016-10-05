@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.game.log;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
@@ -13,6 +13,7 @@ import magic.ui.utility.DesktopUtils;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.screen.TextFileReaderScreen;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
