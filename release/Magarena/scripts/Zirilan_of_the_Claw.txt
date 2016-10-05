@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Viashino,Shaman
 cost={3}{R}{R}
 pt=3/4
+ability={1}{R}{R}, {T}: Search your library for a Dragon permanent card and put that card onto the battlefield. Then shuffle your library. That Dragon gains haste until end of turn. Exile it at the beginning of the next end step.
 timing=main
 oracle={1}{R}{R}, {T}: Search your library for a Dragon permanent card and put that card onto the battlefield. Then shuffle your library. That Dragon gains haste until end of turn. Exile it at the beginning of the next end step.
-requires_groovy_code
