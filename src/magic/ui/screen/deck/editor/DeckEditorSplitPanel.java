@@ -25,7 +25,7 @@ import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
-import magic.ui.explorer.filter.CardFilterPanel;
+import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
 import magic.ui.widget.FontsAndBorders;

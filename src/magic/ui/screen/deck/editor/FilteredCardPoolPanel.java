@@ -7,7 +7,7 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
-import magic.ui.explorer.filter.CardFilterPanel;
+import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.translate.UiString;
 import magic.ui.cardtable.CardTablePanel;
