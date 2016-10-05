@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.duel.player.zone;
 
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import java.util.Collections;
 import java.util.List;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen
