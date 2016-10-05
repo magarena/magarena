@@ -345,11 +345,6 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public JPanel getStatusPanel() {
         return null;
     }

@@ -12,7 +12,6 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
 import magic.ui.dialog.AiPropertiesDialog;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IStatusBar;
 
 @SuppressWarnings("serial")
@@ -42,11 +41,6 @@ public class SelectAiPlayerScreen
     @Override
     public String getScreenCaption() {
         return UiString.get(_S1);
-    }
-
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
     }
 
     @Override

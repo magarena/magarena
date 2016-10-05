@@ -164,11 +164,6 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
     public void updateMissingImagesNotification() {
         if (CONFIG.isMissingFiles()) {
             CONFIG.setIsMissingFiles(false);

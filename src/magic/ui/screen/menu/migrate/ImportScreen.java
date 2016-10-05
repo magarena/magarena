@@ -208,11 +208,6 @@ public class ImportScreen extends AbstractScreen {
 
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
     private class ProgressPanel extends JPanel {
 
         private int percentageComplete = 0;

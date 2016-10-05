@@ -56,11 +56,6 @@ public class CardZoneScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public JPanel getStatusPanel() {
         return null;
     }

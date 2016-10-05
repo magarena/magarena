@@ -111,11 +111,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public void requestFocus() {
         if (duelPane != null) {
             duelPane.requestFocus();

@@ -106,11 +106,6 @@ public class DeckViewScreen
         return UiString.get(_S8);
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
     private void setDeck(final MagicDeck deck) {
         screenContent.setDeck(deck);
         deckStatusPanel.setDeck(deck, false);

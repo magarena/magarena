@@ -235,11 +235,6 @@ public class DuelDecksScreen
         screenContent.updateDecksAfterEdit();
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
     public int getGamesPlayed() {
         return screenContent.getDuel().getGamesPlayed();
     }

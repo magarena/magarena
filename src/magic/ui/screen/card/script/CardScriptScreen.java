@@ -71,11 +71,6 @@ public class CardScriptScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public MenuButton getLeftAction() {
         return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }

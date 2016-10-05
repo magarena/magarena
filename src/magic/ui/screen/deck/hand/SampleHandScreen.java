@@ -152,11 +152,6 @@ public class SampleHandScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public JPanel getStatusPanel() {
         deckStatusPanel.setDeck(deck, false);
         return deckStatusPanel;

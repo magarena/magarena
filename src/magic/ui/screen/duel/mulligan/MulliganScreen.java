@@ -151,11 +151,6 @@ public class MulliganScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public WikiPage getWikiPageName() {
         return WikiPage.MULLIGAN;
     }

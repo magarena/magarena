@@ -163,11 +163,6 @@ public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActio
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public JPanel getStatusPanel() {
         return null;
     }

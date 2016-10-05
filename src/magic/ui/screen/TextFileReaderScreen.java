@@ -111,9 +111,4 @@ public abstract class TextFileReaderScreen extends AbstractScreen implements IAc
         return null;
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
 }

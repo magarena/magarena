@@ -71,11 +71,6 @@ public class AboutScreen extends AbstractScreen
         return panel;
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
     public void setImageScale(float f) {
         this.imageScale = f;
         repaint();

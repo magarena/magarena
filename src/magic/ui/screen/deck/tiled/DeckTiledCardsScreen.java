@@ -334,11 +334,6 @@ public class DeckTiledCardsScreen
     }
 
     @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
-    @Override
     public JPanel getStatusPanel() {
         return statusPanel;
     }

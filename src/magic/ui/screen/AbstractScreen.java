@@ -99,10 +99,9 @@ public abstract class AbstractScreen extends JPanel {
         return this instanceof IWikiPage;
     }
 
-    /**
-     * Gives the active screen the chance to prevent closing.
-     */
-    public abstract boolean isScreenReadyToClose(final AbstractScreen nextScreen);
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+        return true;
+    };
 
     protected MagicFrame getFrame() {
         return frame;

@@ -115,9 +115,4 @@ public class StartScreen extends AbstractScreen {
         });
     }
 
-    @Override
-    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return true;
-    }
-
 }
