@@ -10,6 +10,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.event.MagicManaActivation;
@@ -120,7 +121,15 @@ public interface IRenderableCard {
 
     default String getSubTypeText() {
         // returning from CardDefinition, no in-game changes
-        return getCardDefinition().getSubTypeText();
+        if (!hasAbility(MagicAbility.Changeling) && this instanceof MagicPermanent) {
+            StringBuilder subtypes = new StringBuilder();
+            for (final MagicSubType subType: getSubTypes()) {
+                subtypes.append(subType).append(" ");
+            }
+            return subtypes.toString();
+        } else {
+            return getCardDefinition().getSubTypeText();
+        }
     }
 
     default String getImageName() {
