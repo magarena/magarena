@@ -8,4 +8,3 @@ ability=Whenever an opponent discards a card, you may put a quest counter on SN.
         At the beginning of each opponent's upkeep, if that player has no cards in hand and SN has two or more quest counters on it, you may have that player lose 5 life.
 timing=enchantment
 oracle=Whenever an opponent discards a card, you may put a quest counter on Quest for the Nihil Stone.\nAt the beginning of each opponent's upkeep, if that player has no cards in hand and Quest for the Nihil Stone has two or more quest counters on it, you may have that player lose 5 life.
-status=needs groovy
