@@ -29,9 +29,14 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         super("DevMode Menu", true);
         addMenuItem("Load game", this::doLoadSavedGame);
         addMenuItem("Load test class", this::doLoadTestClass);
+        addMenuItem("Test screen", this::showTestScreen);
         addSpace();
         addMenuItem("Main menu", this::onCloseMenu);
         refreshMenuLayout();
+    }
+
+    private void showTestScreen() {
+        ScreenController.showTestScreen();
     }
     
     private void doLoadTestClass() {

@@ -19,6 +19,7 @@ import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.test.TestScreen;
 import magic.ui.screen.MagicScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
 import magic.ui.screen.card.explorer.CardExplorerScreen;
@@ -314,6 +315,10 @@ public final class ScreenController {
 
     public static void showDevMenuScreen() {
         showScreen(new DevMenuScreen());
+    }
+
+    public static void showTestScreen() {
+        showScreen(new TestScreen());
     }
 
 }
