@@ -3,7 +3,6 @@ package magic.ui.screen.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
@@ -39,7 +38,8 @@ public class ScreenFooterPanel extends TexturedPanel
 
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
                
-        addDefaultLeftButton(MenuButton.getCloseScreenButton());
+        // add close button as default.
+        setLeftButton(MenuButton.getCloseScreenButton());
 
         setLayout(new MigLayout(
                 "insets 0, gap 10, flowx, aligny 50%",
@@ -55,13 +55,6 @@ public class ScreenFooterPanel extends TexturedPanel
     public void refreshLayout() {
         validate();
         repaint();
-    }
-
-    private void addDefaultLeftButton(MenuButton btn) {
-        btn.setEnabled(btn.isRunnable());
-        btn.setIcon(MagicImages.getIcon(MagicIcon.BACK_ICON));
-        btn.setHorizontalTextPosition(SwingConstants.RIGHT);
-        leftPanel.add(btn);
     }
 
     @Override
@@ -95,10 +88,6 @@ public class ScreenFooterPanel extends TexturedPanel
             btn.setIcon(MagicImages.getIcon(MagicIcon.BACK_ICON));
             btn.setHorizontalTextPosition(SwingConstants.RIGHT);
             leftPanel.add(btn);
-        } else {
-            JLabel lbl = new JLabel();
-            lbl.setMinimumSize(new Dimension(120, PANEL_HEIGHT));
-            leftPanel.add(lbl);
         }
         leftPanel.revalidate();
     }
