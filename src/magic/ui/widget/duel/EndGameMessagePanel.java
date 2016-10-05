@@ -1,4 +1,4 @@
-package magic.ui.duel.dialog;
+package magic.ui.widget.duel;
 
 import java.awt.Dimension;
 import javax.swing.BorderFactory;

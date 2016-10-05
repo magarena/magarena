@@ -1,4 +1,4 @@
-package magic.ui.duel.dialog;
+package magic.ui.widget.duel;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
