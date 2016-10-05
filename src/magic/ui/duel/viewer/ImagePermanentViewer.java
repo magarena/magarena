@@ -27,7 +27,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewer.info.PermanentViewerInfo;
-import magic.ui.prefs.ImageSizePresets;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtils;

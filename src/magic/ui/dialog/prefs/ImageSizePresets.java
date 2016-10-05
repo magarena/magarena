@@ -1,4 +1,4 @@
-package magic.ui.prefs;
+package magic.ui.dialog.prefs;
 
 import java.awt.Dimension;
 import magic.data.GeneralConfig;

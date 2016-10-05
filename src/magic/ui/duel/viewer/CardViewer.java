@@ -20,7 +20,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.cardtable.ICardSelectionListener;
-import magic.ui.prefs.ImageSizePresets;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;

@@ -21,7 +21,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicManaType;
 import magic.model.player.PlayerProfile;
 import magic.cardBuilder.renderers.CardBuilder;
-import magic.ui.prefs.ImageSizePresets;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;

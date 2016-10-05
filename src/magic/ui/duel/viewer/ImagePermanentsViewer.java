@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.viewer.info.CardViewerInfo;
-import magic.ui.prefs.ImageSizePresets;
+import magic.ui.dialog.prefs.ImageSizePresets;
 
 @SuppressWarnings("serial")
 public class ImagePermanentsViewer extends JPanel {

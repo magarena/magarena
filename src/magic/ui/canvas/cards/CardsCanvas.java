@@ -23,7 +23,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import magic.model.MagicCard;
-import magic.ui.prefs.ImageSizePresets;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
