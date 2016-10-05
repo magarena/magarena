@@ -11,6 +11,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.ARG;
 import magic.model.event.MagicMorphActivation;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.AtEndOfCombatTrigger;
@@ -80,7 +81,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             ATTACKING.doAction(game, perm);
         }
     },
-    HASTE_UEOT("(it|that creature) gains haste until end of turn") {
+    HASTE_UEOT("(it|that " + ARG.WORD1 + ") gains haste until end of turn") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste));
         }
