@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.screen.menu.migrate;
 
 import java.awt.Color;
 import java.awt.GradientPaint;
@@ -19,6 +19,7 @@ import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
 import magic.ui.URLUtils;
 import magic.translate.UiString;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;

@@ -33,7 +33,7 @@ import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.ui.screen.duel.game.DuelGameScreen;
 import magic.ui.screen.duel.game.log.GameLogScreen;
 import magic.ui.screen.menu.help.HelpMenuScreen;
-import magic.ui.screen.ImportScreen;
+import magic.ui.screen.menu.migrate.ImportScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.MulliganScreen;
