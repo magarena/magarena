@@ -76,7 +76,7 @@ import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.screen.MulliganScreen;
+import magic.ui.screen.duel.mulligan.MulliganScreen;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
