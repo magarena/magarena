@@ -31,7 +31,7 @@ public class CaptionPanel extends JPanel {
 
     public CaptionPanel(final String screenCaption0) {
         this.screenCaption = screenCaption0;
-        setLayout(new MigLayout("insets 0, gap 4, flowx"));
+        setLayout(new MigLayout("insets 0, gap 4, flowx, aligny center"));
         setOpaque(false);
         add(getWizardIconButton());
         add(getTitlePanel());

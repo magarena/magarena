@@ -11,6 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
@@ -18,6 +19,9 @@ import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {
+
+    // translatable strings
+    private static final String _S1 = "Close";
 
     private final static Color COLOR_NORMAL = Color.WHITE;
     private final static Color COLOR_DISABLED = Color.DARK_GRAY;
@@ -143,6 +147,10 @@ public class MenuButton extends JButton {
                 (ImageIcon) defaultIcon,
                 COLOR_DISABLED)
         );
+    }
+
+    public static MenuButton getCloseScreenButton() {
+        return getCloseScreenButton(UiString.get(_S1));
     }
 
 }
