@@ -1,4 +1,4 @@
-package magic.ui.screen.card.explorer;
+package magic.ui.widget.card.decks;
 
 import java.awt.Component;
 import java.io.File;

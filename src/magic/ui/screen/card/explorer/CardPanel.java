@@ -1,5 +1,6 @@
 package magic.ui.screen.card.explorer;
 
+import magic.ui.widget.card.decks.CardDecksPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;

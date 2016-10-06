@@ -1,4 +1,4 @@
-package magic.ui.screen.card.explorer;
+package magic.ui.widget.card.decks;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -34,8 +34,11 @@ import static magic.utility.DeckUtils.getDeckFolder;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
+/**
+ * Displays a list of decks containing a given card (see {@code setCard()}).
+ */
 @SuppressWarnings("serial")
-class CardDecksPanel extends JPanel {
+public class CardDecksPanel extends JPanel {
 
     // translatable strings
     private static final String _S1 =  "Invalid Deck!";
@@ -113,7 +116,7 @@ class CardDecksPanel extends JPanel {
         return evt.getClickCount() == 2 && SwingUtilities.isLeftMouseButton(evt);
     }
 
-    void setCard(MagicCardDefinition aCard) {
+    public void setCard(MagicCardDefinition aCard) {
 
         if (worker != null && worker.isDone() == false && worker.isCancelled() == false) {
             worker.cancel(true);
