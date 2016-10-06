@@ -69,8 +69,7 @@ public final class MagicImages {
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     private static final int MAX_IMAGES = 100;
-    private static final Map<String, BufferedImage> cache = new LRUCache<>(MAX_IMAGES);
-    private static final Map<Long, BufferedImage> permanentCache = new LRUCache<>(MAX_IMAGES);
+    private static final Map<Long, BufferedImage> cache = new LRUCache<>(MAX_IMAGES);
 
     /**
      * Gets preferred viewing size for a card image based on preset setting in preferences.
@@ -306,12 +305,12 @@ public final class MagicImages {
         return ImageType.PROXY;
     }
 
-    public static BufferedImage getCardImage(MagicCardDefinition aCard) {
-        final String key = aCard.getDistinctName();
+    public static BufferedImage getCardImage(MagicCardDefinition cdef) {
+        final Long key = (long)cdef.getDistinctName().hashCode();
         if (cache.containsKey(key)) {
             return cache.get(key);
         }
-        final BufferedImage image = createImage(aCard);
+        final BufferedImage image = createImage(cdef);
         if (image != MISSING_CARD) {
             cache.put(key, image);
         }
@@ -320,12 +319,12 @@ public final class MagicImages {
 
     public static BufferedImage getPermanentImage(MagicPermanent permanent) {
         final Long key = permanent.getStateId();
-        if (permanentCache.containsKey(key)) {
-            return permanentCache.get(key);
+        if (cache.containsKey(key)) {
+            return cache.get(key);
         }
         final BufferedImage image = createImage(permanent);
         if (image != MISSING_CARD) {
-            permanentCache.put(key, image);
+            cache.put(key, image);
         }
         return image;
     }
