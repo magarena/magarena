@@ -17,7 +17,7 @@ import magic.ui.utility.MagicStyle;
 @SuppressWarnings("serial")
 public class MenuIconLabel extends JLabel {
 
-    private static final ImageIcon NORMAL_ICON = MagicImages.getIcon(MagicIcon.MENU_ICON);
+    private static final ImageIcon NORMAL_ICON = MagicImages.getIcon(MagicIcon.MENU);
     private static final Icon HILITE_ICON = GraphicsUtils.getRecoloredIcon(NORMAL_ICON, MagicStyle.getRolloverColor());
     private static final Icon PRESSED_ICON = GraphicsUtils.getRecoloredIcon(NORMAL_ICON, MagicStyle.getPressedColor());
 

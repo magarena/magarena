@@ -85,7 +85,7 @@ public class ScreenFooterPanel extends TexturedPanel
         leftPanel.removeAll();
         if (btn != null) {
             btn.setEnabled(btn.isRunnable());
-            btn.setIcon(MagicImages.getIcon(MagicIcon.BACK_ICON));
+            btn.setIcon(MagicImages.getIcon(MagicIcon.GO_BACK));
             btn.setHorizontalTextPosition(SwingConstants.RIGHT);
             leftPanel.add(btn);
         }
@@ -97,7 +97,7 @@ public class ScreenFooterPanel extends TexturedPanel
         if (btn != null) {
             btn.setEnabled(btn.isRunnable());
             if (btn.getIcon() == null) {
-                btn.setIcon(MagicImages.getIcon(MagicIcon.NEXT_ICON));
+                btn.setIcon(MagicImages.getIcon(MagicIcon.GO_NEXT));
             }
             btn.setHorizontalTextPosition(SwingConstants.LEFT);
             rightPanel.add(btn);

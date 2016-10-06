@@ -83,10 +83,10 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     private void refreshDisplay() {
         removeAll();
-        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.LIFE_ICON), "" + startLife), "h 100%");
+        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.LIFE), "" + startLife), "h 100%");
         add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.HAND_ICON), "" + handSize), "h 100%");
         add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.TARGET_ICON), "" + maxGames), "h 100%");
-        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.CUBE_ICON), " " + cube.getName()), "h 100%");
+        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.CUBE), " " + cube.getName()), "h 100%");
         revalidate();
         repaint();
     }

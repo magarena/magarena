@@ -110,8 +110,8 @@ public class FormatsLegalityPanel extends JPanel {
 
     private class FormatsListCellRenderer extends DefaultListCellRenderer {
 
-        private final ImageIcon LEGAL_ICON = MagicImages.getIcon(MagicIcon.LEGAL_ICON);
-        private final ImageIcon ILLEGAL_ICON = MagicImages.getIcon(MagicIcon.ILLEGAL_ICON);
+        private final ImageIcon LEGAL_ICON = MagicImages.getIcon(MagicIcon.LEGAL);
+        private final ImageIcon ILLEGAL_ICON = MagicImages.getIcon(MagicIcon.ILLEGAL);
         private final Color ALT_BCOLOR = new Color(242, 242, 242);
 
         @Override

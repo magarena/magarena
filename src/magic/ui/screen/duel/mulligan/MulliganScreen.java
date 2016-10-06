@@ -143,7 +143,7 @@ public class MulliganScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.MULLIGAN_ICON),
+                        MagicImages.getIcon(MagicIcon.MULLIGAN),
                         UiString.get(_S1), UiString.get(_S5),
                         takeMulliganAction)
                 );

@@ -84,7 +84,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
 
     private ActionBarButton getClearDeckActionButton() {
         return new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.CLEAR_ICON),
+                MagicImages.getIcon(MagicIcon.CLEAR),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 new AbstractAction() {

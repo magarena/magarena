@@ -138,7 +138,7 @@ public class DeckEditorScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.OPEN_ICON),
+                        MagicImages.getIcon(MagicIcon.OPEN),
                         UiString.get(_S4), UiString.get(_S5),
                         new AbstractAction() {
                             @Override
@@ -148,7 +148,7 @@ public class DeckEditorScreen
                         })
                 );
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.SAVE_ICON),
+                        MagicImages.getIcon(MagicIcon.SAVE),
                         UiString.get(_S6), UiString.get(_S7),
                         new AbstractAction() {
                             @Override
@@ -172,7 +172,7 @@ public class DeckEditorScreen
                         })
                 );
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.TILED_ICON),
+                        MagicImages.getIcon(MagicIcon.TILED),
                         UiString.get(_S11), UiString.get(_S12),
                         new AbstractAction() {
                             @Override

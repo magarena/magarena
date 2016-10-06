@@ -24,7 +24,7 @@ class AvatarImageSet {
     private final static String IMAGES_FILTER = "*.{png,jpg}";
 
     private final Path path;
-    private ImageIcon sampleImage = MagicImages.getIcon(MagicIcon.MISSING_ICON);
+    private ImageIcon sampleImage = MagicImages.getIcon(MagicIcon.MISSING);
 
     AvatarImageSet(final Path path) {
         this.path = path;

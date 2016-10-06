@@ -32,7 +32,7 @@ import net.miginfocom.swing.MigLayout;
 public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private static final Image TRANSFORM_ICON =
-            MagicImages.getIcon(MagicIcon.CYCLE_ICON).getImage();
+            MagicImages.getIcon(MagicIcon.CYCLE).getImage();
 
     private final Dimension IMAGE_SIZE = getImageSize();
 

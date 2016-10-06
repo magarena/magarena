@@ -131,11 +131,11 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
 
             setLayout(new MigLayout("gapx 20, aligny center"));
 
-            add(getIconLabel(MagicIcon.LEGAL_ICON, UiString.get(_S1)));
-            add(getIconLabel(MagicIcon.ILLEGAL_ICON, UiString.get(_S2)));
-            add(getIconLabel(MagicIcon.BANNED_ICON, UiString.get(_S3)));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S4), UiString.get(_S5)));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S6),
+            add(getIconLabel(MagicIcon.LEGAL, UiString.get(_S1)));
+            add(getIconLabel(MagicIcon.ILLEGAL, UiString.get(_S2)));
+            add(getIconLabel(MagicIcon.BANNED, UiString.get(_S3)));
+            add(getIconLabel(MagicIcon.RESTRICTED, UiString.get(_S4), UiString.get(_S5)));
+            add(getIconLabel(MagicIcon.RESTRICTED, UiString.get(_S6),
                     String.format("<html><b>%s</b><br>%s<br><i>Relentless Rats</i> %s <i>Shadowborn Apostle</i>.</html>",
                             UiString.get(_S7),
                             UiString.get(_S8),

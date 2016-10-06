@@ -45,19 +45,19 @@ public class ExplorerScreen extends HeaderFooterScreen {
 
     private void setFooterButtons() {
         addToFooter(
-                MenuButton.build(this::doShowScriptScreen, MagicIcon.EDIT_ICON, _S3, _S4),
-                MenuButton.build(this::doSelectRandomCard, MagicIcon.RANDOM_ICON, _S5, _S6),
-                MenuButton.build(this::doSwitchLayout, MagicIcon.LAYOUT_ICON, _S7, _S8)
+                MenuButton.build(this::doShowScriptScreen, MagicIcon.EDIT, _S3, _S4),
+                MenuButton.build(this::doSelectRandomCard, MagicIcon.RANDOM, _S5, _S6),
+                MenuButton.build(this::doSwitchLayout, MagicIcon.LAYOUT, _S7, _S8)
         );
         if (MagicSystem.isDevMode()) {
             addToFooter(
                     MenuButton.build(this::doSaveMissingCardsFile,
-                            MagicIcon.SAVE_ICON,
+                            MagicIcon.SAVE,
                             "[DevMode] Save missing cards file",
                             "Creates CardsMissingInMagarena.txt for use with the Scripts Builder."
                     ),
                     MenuButton.build(this::doCreateSetStats,
-                            MagicIcon.STATS_ICON,
+                            MagicIcon.STATS,
                             "[DevMode] Save statistics",
                             "Creates CardStatistics.txt to view current card completion."
                     )

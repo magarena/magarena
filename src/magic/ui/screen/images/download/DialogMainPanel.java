@@ -177,7 +177,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             closeButton.addActionListener(getCancelAction());
 
             final JButton helpButton = new JButton();
-            helpButton.setIcon(MagicImages.getIcon(MagicIcon.MISSING_ICON));
+            helpButton.setIcon(MagicImages.getIcon(MagicIcon.MISSING));
             helpButton.setFocusable(false);
             helpButton.addActionListener(new AbstractAction() {
                 @Override

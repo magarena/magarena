@@ -203,10 +203,10 @@ public class CardsLegalityPanel extends JPanel {
 
     private static class LegalityCellRenderer extends DefaultTableCellRenderer {
 
-        private static final JLabel BANNED_ICON = new JLabel(MagicImages.getIcon(MagicIcon.BANNED_ICON));
-        private static final JLabel RESTRICTED_ICON = new JLabel(MagicImages.getIcon(MagicIcon.RESTRICTED_ICON));
-        private static final JLabel LEGAL_ICON = new JLabel(MagicImages.getIcon(MagicIcon.LEGAL_ICON));
-        private static final JLabel ILLEGAL_ICON = new JLabel(MagicImages.getIcon(MagicIcon.ILLEGAL_ICON));
+        private static final JLabel BANNED_ICON = new JLabel(MagicImages.getIcon(MagicIcon.BANNED));
+        private static final JLabel RESTRICTED_ICON = new JLabel(MagicImages.getIcon(MagicIcon.RESTRICTED));
+        private static final JLabel LEGAL_ICON = new JLabel(MagicImages.getIcon(MagicIcon.LEGAL));
+        private static final JLabel ILLEGAL_ICON = new JLabel(MagicImages.getIcon(MagicIcon.ILLEGAL));
 
         private JLabel getLegalityIcon(final CardLegalityInfo dfl) {
             switch (dfl.getLegality()) {

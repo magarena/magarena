@@ -183,7 +183,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     private ActionBarButton getRandomDeckActionButton() {
         return new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.RANDOM_ICON),
+                MagicImages.getIcon(MagicIcon.RANDOM),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 new AbstractAction() {

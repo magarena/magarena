@@ -281,49 +281,49 @@ public class DeckTiledCardsScreen
         );
         if (deck.contains(MagicType.Land)) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.LANDS_ICON),
+                MagicImages.getIcon(MagicIcon.LANDS),
                 UiString.get(_S7), UiString.get(_S8),
                 new ShowCardsAction(CardTypeFilter.LANDS), false)
             );
         }
         if (deck.contains(MagicType.Creature)) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.CREATURES_ICON),
+                MagicImages.getIcon(MagicIcon.CREATURES),
                 UiString.get(_S5), UiString.get(_S6),
                 new ShowCardsAction(CardTypeFilter.CREATURES), false)
             );
         }
         if (deck.contains(MagicType.Artifact)) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.ARTIFACTS_ICON),
+                MagicImages.getIcon(MagicIcon.ARTIFACTS),
                 UiString.get(_S9), UiString.get(_S10),
                 new ShowCardsAction(CardTypeFilter.ARTIFACTS), false)
             );
         }
         if (deck.contains((MagicType.Enchantment))) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.ENCHANTMENTS_ICON),
+                MagicImages.getIcon(MagicIcon.ENCHANTMENTS),
                 UiString.get(_S13), UiString.get(_S14),
                 new ShowCardsAction(CardTypeFilter.ENCHANTMENTS), false)
             );
         }
         if (deck.contains(MagicType.Instant)) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.INSTANTS_ICON),
+                MagicImages.getIcon(MagicIcon.INSTANTS),
                 UiString.get(_S15), UiString.get(_S16),
                 new ShowCardsAction(CardTypeFilter.INSTANTS), false)
             );
         }
         if (deck.contains(MagicType.Sorcery)) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.SORCERIES_ICON),
+                MagicImages.getIcon(MagicIcon.SORCERIES),
                 UiString.get(_S17), UiString.get(_S18),
                 new ShowCardsAction(CardTypeFilter.SORCERIES), false)
             );
         }
         if (deck.contains(MagicType.Planeswalker)) {
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.PLANESWALKERS_ICON),
+                MagicImages.getIcon(MagicIcon.PLANESWALKERS),
                 UiString.get(_S19), UiString.get(_S20),
                 new ShowCardsAction(CardTypeFilter.PLANESWALKERS), true)
             );

@@ -65,8 +65,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         statsTable.setVisible(b);
         manaCurvePanel.setVisible(b);
         titlebarButton.setIcon(b
-            ? MagicImages.getIcon(MagicIcon.DOWNARROW_ICON)
-            : MagicImages.getIcon(MagicIcon.UPARROW_ICON)
+            ? MagicImages.getIcon(MagicIcon.ARROW_DOWN)
+            : MagicImages.getIcon(MagicIcon.ARROW_UP)
         );
     }
 

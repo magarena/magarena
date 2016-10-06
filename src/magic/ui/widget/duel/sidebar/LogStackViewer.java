@@ -108,7 +108,7 @@ class LogStackViewer extends JPanel {
         final List<JButton> btns = new ArrayList<>();
         btns.add(getMessageStyleActionButton());
         btns.add(getLogFileActionButton());
-        btns.add(getLogViewActionButton(MagicIcon.DOWNARROW_ICON));
+        btns.add(getLogViewActionButton(MagicIcon.ARROW_DOWN));
         for (JButton btn : btns) {
             btn.setFocusable(false);
         }
@@ -119,7 +119,7 @@ class LogStackViewer extends JPanel {
         final List<JButton> btns = new ArrayList<>();
         btns.add(getMessageStyleActionButton());
         btns.add(getLogFileActionButton());
-        btns.add(getLogViewActionButton(MagicIcon.UPARROW_ICON));
+        btns.add(getLogViewActionButton(MagicIcon.ARROW_UP));
         for (JButton btn : btns) {
             btn.setFocusable(false);
         }

@@ -55,7 +55,7 @@ class CardQuantityActionPanel extends JPanel {
                 minusButtonAction);
 
         incrementButton = new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.ARROWUP_ICON),
+                MagicImages.getIcon(MagicIcon.ARROWUP),
                 UiString.get(_S5),
                 UiString.get(_S6),
                 new AbstractAction() {
@@ -69,7 +69,7 @@ class CardQuantityActionPanel extends JPanel {
                     }
                 });
         decrementButton = new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.ARROWDOWN_ICON),
+                MagicImages.getIcon(MagicIcon.ARROWDOWN),
                 UiString.get(_S7),
                 UiString.get(_S8),
                 new AbstractAction() {

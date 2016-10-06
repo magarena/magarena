@@ -55,7 +55,7 @@ class ThemesActionPanel extends JPanel {
     }
 
     private JButton getThemeFolderButton(MouseListener aListener) {
-        JButton btn = new JButton(getActionIcon(MagicIcon.OPEN_ICON));
+        JButton btn = new JButton(getActionIcon(MagicIcon.OPEN));
         btn.setToolTipText(String.format("<b>%s</b><br>%s", UiString.get(_S1), UiString.get(_S2)));
         btn.addMouseListener(aListener);
         btn.addActionListener(new AbstractAction() {
@@ -68,7 +68,7 @@ class ThemesActionPanel extends JPanel {
     }
 
     private JButton getMoreThemesButton(MouseListener aListener) {
-        JButton btn = new JButton(getActionIcon(MagicIcon.OPTIONS_ICON));
+        JButton btn = new JButton(getActionIcon(MagicIcon.OPTIONS));
         btn.setToolTipText(String.format("<b>%s</b><br>%s", UiString.get(_S3), UiString.get(_S4)));
         btn.addMouseListener(aListener);
         btn.addActionListener(new AbstractAction() {

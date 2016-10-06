@@ -67,7 +67,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
         final List<MenuButton> buttons = new ArrayList<>();
         if (!isBasicView) {
             buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.OPEN_ICON),
+                        MagicImages.getIcon(MagicIcon.OPEN),
                         UiString.get(_S1), UiString.get(_S2, MagicGameLog.LOG_FILE),
                         new AbstractAction() {
                             @Override

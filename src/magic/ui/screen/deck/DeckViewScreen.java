@@ -81,7 +81,7 @@ public class DeckViewScreen
                         })
         );
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.TILED_ICON),
+                        MagicImages.getIcon(MagicIcon.TILED),
                         UiString.get(_S5), UiString.get(_S6),
                         new AbstractAction() {
                             @Override

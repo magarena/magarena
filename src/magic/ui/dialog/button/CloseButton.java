@@ -12,7 +12,7 @@ public class CloseButton extends MagicDialogButton {
 
     public CloseButton() {
         super(UiString.get(_S1));
-        setIcon(MagicImages.getIcon(MagicIcon.BANNED_ICON));
+        setIcon(MagicImages.getIcon(MagicIcon.BANNED));
     }
 
 }

@@ -69,7 +69,7 @@ public class TurnTitlePanel extends JPanel {
     private JButton getOptionsIconButton() {
 
         final JButton btn = new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.MENU_ICON),
+                MagicImages.getIcon(MagicIcon.MENU),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 new AbstractAction() {

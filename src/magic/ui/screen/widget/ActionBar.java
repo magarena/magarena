@@ -49,7 +49,7 @@ public class ActionBar extends TexturedPanel implements IThemeStyle {
         if (action != null) {
             action.setEnabled(action.isRunnable());
             if (action.getIcon() == null) {
-                action.setIcon(MagicImages.getIcon(MagicIcon.NEXT_ICON));
+                action.setIcon(MagicImages.getIcon(MagicIcon.GO_NEXT));
             }
             action.setHorizontalTextPosition(SwingConstants.LEFT);
             add(action);
@@ -79,7 +79,7 @@ public class ActionBar extends TexturedPanel implements IThemeStyle {
         MenuButton action = actionProvider.getLeftAction();
         if (action != null) {
             action.setEnabled(action.isRunnable());
-            action.setIcon(MagicImages.getIcon(MagicIcon.BACK_ICON));
+            action.setIcon(MagicImages.getIcon(MagicIcon.GO_BACK));
             action.setHorizontalTextPosition(SwingConstants.RIGHT);
             add(action);
         } else {

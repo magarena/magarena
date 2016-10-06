@@ -115,7 +115,7 @@ public class DeckEditorSplitScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.OPEN_ICON),
+                        MagicImages.getIcon(MagicIcon.OPEN),
                         "Select Deck", "Select an existing prebuilt or player deck.",
                         new AbstractAction() {
                             @Override
@@ -125,7 +125,7 @@ public class DeckEditorSplitScreen
                         })
                 );
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.SAVE_ICON),
+                        MagicImages.getIcon(MagicIcon.SAVE),
                         "Save Deck", "Save deck to file.",
                         new AbstractAction() {
                             @Override
@@ -149,7 +149,7 @@ public class DeckEditorSplitScreen
                         })
                 );
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.TILED_ICON),
+                        MagicImages.getIcon(MagicIcon.TILED),
                         "Deck View", "Shows complete deck using tiled card images.",
                         new AbstractAction() {
                             @Override

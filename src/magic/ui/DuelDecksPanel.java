@@ -205,7 +205,7 @@ public class DuelDecksPanel extends TexturedPanel {
 
     private ActionBarButton getNewDeckActionBarButton() {
         return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.RANDOM_ICON),
+            MagicImages.getIcon(MagicIcon.RANDOM),
             UiString.get(_S15),
             UiString.get(_S16),
             new AbstractAction() {
@@ -234,7 +234,7 @@ public class DuelDecksPanel extends TexturedPanel {
 
     private ActionBarButton getSwapDecksButton() {
         return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.SWAP_ICON),
+            MagicImages.getIcon(MagicIcon.SWAP),
             UiString.get(_S7), UiString.get(_S8),
             new AbstractAction() {
                 @Override

@@ -162,7 +162,7 @@ public class DuelDecksScreen
 
     private ActionBarButton getDeckEditorButton() {
         return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.DECK_ICON),
+            MagicImages.getIcon(MagicIcon.DECK),
             UiString.get(_S5), UiString.get(_S6),
             new AbstractAction() {
                 @Override
@@ -175,7 +175,7 @@ public class DuelDecksScreen
 
     private ActionBarButton getRestartButton() {
         return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.REFRESH_ICON),
+            MagicImages.getIcon(MagicIcon.REFRESH),
             UiString.get(_S10), UiString.get(_S11),
             new AbstractAction() {
                 @Override
@@ -202,7 +202,7 @@ public class DuelDecksScreen
 
     private ActionBarButton getTiledDeckButton() {
         return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.TILED_ICON),
+            MagicImages.getIcon(MagicIcon.TILED),
             UiString.get(_S12), UiString.get(_S13),
             new AbstractAction() {
                 @Override

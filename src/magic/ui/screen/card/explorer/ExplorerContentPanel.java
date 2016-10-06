@@ -16,7 +16,6 @@ import magic.ui.ScreenController;
 import magic.ui.widget.cards.table.CardTable;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.card.filter.CardFilterPanel;
-import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 

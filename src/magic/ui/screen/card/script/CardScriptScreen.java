@@ -85,7 +85,7 @@ public class CardScriptScreen
         final List<MenuButton> buttons = new ArrayList<>();
         if (MagicSystem.isDevMode()) {
             buttons.add(new ActionBarButton(
-                            MagicImages.getIcon(MagicIcon.REFRESH_ICON),
+                            MagicImages.getIcon(MagicIcon.REFRESH),
                             UiString.get(_S3), UiString.get(_S4),
                             new AbstractAction() {
                                 @Override

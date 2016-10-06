@@ -17,7 +17,7 @@ class LicenseButton extends ActionBarButton {
     private static final String _S12 = "Displays the license details.";
 
     LicenseButton() {
-        super(MagicImages.getIcon(MagicIcon.SCROLL_ICON),
+        super(MagicImages.getIcon(MagicIcon.SCROLL),
                 UiString.get(_S11),
                 UiString.get(_S12),
                 new AbstractAction() {

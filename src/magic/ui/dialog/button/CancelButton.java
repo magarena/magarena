@@ -12,7 +12,7 @@ public class CancelButton extends MagicDialogButton {
 
     public CancelButton() {
         super(UiString.get(_S1));
-        setIcon(MagicImages.getIcon(MagicIcon.BANNED_ICON));
+        setIcon(MagicImages.getIcon(MagicIcon.BANNED));
     }
 
 }

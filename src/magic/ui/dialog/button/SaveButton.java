@@ -12,7 +12,7 @@ public class SaveButton extends MagicDialogButton {
 
     public SaveButton(String text) {
         super(text);
-        setIcon(MagicImages.getIcon(MagicIcon.LEGAL_ICON));
+        setIcon(MagicImages.getIcon(MagicIcon.LEGAL));
     }
 
     public SaveButton() {

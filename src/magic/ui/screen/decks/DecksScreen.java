@@ -97,7 +97,7 @@ public class DecksScreen extends AbstractScreen implements IStatusBar, IActionBa
             }
         ));
         buttons.add(new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.TILED_ICON),
+            MagicImages.getIcon(MagicIcon.TILED),
             UiString.get(_S10), UiString.get(_S11),
             new AbstractAction() {
                 @Override
