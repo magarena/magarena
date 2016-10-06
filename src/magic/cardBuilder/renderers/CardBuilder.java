@@ -98,6 +98,7 @@ public class CardBuilder {
 
     private static BufferedImage makeToken(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getTokenFrameType(cardDef);
+        ImageFrame.drawImage(cardImage,cardDef);
         PTFrame.drawPTPanel(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);

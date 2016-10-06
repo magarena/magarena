@@ -59,6 +59,8 @@ public class ImageFrame {
         Graphics2D g2d = card.createGraphics();
         if (cardDef.isPlaneswalker()) {
             g2d.drawImage(getCardImage(cardDef), null, 27, 54);
+        } else if (cardDef.isToken()) {
+            g2d.drawImage(getCardImage(cardDef), null, 29, 64);
         } else {
             g2d.drawImage(getCardImage(cardDef), null, 29, 60);
         }
@@ -126,6 +128,16 @@ public class ImageFrame {
                     BufferedImage blend = GraphicsUtils.scale(ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend), 320, 201);
                     return Frame.getBlendedFrame(new BufferedImage(320, 210, BufferedImage.TYPE_INT_ARGB), blend, cropSmall);
                 }
+            } else if (cardDef.isToken()) {
+                if (cardDef.hasText()) {
+                    BufferedImage crop = GraphicsUtils.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 289);
+                    BufferedImage blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskSmall);
+                    return Frame.getBlendedFrame(new BufferedImage(320, 289, BufferedImage.TYPE_INT_ARGB), blend, crop);
+                } else {
+                    BufferedImage crop = GraphicsUtils.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 360);
+                    BufferedImage blend =ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
+                    return Frame.getBlendedFrame(new BufferedImage(320, 360, BufferedImage.TYPE_INT_ARGB), blend, crop);
+                }
             } else {
                 BufferedImage image = ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD);
                 return GraphicsUtils.scale(image, 316, 231);
@@ -133,6 +145,9 @@ public class ImageFrame {
         }
         if (cardDef.isPlaneswalker()) {
             return buildPlaneswalkerImage(cardDef);
+        }
+        if (cardDef.isToken()) {
+            return buildTokenImage(cardDef);
         }
         return buildDefaultImage(cardDef);
     }
@@ -157,6 +172,23 @@ public class ImageFrame {
         BufferedImage symbol = GraphicsUtils.scale(getDefaultSymbol(cardDef), WIDTH, HEIGHT);
         BufferedImage image = Frame.getBlendedFrame(new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB), blend, background);
         return getCompositeImage(image, symbol);
+    }
+
+    private static BufferedImage buildTokenImage(IRenderableCard cardDef) {
+        int WIDTH= 317;
+        int HEIGHT;
+        BufferedImage blend;
+        if (cardDef.hasText()) {
+            HEIGHT = 289;
+            blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskSmall);
+        } else {
+            HEIGHT = 360;
+            blend = ResourceManager.newFrame((ResourceManager.tokenImageMaskLarge));
+        }
+        BufferedImage background = GraphicsUtils.scale(getDefaultBackground(cardDef), WIDTH, HEIGHT);
+        BufferedImage symbol = GraphicsUtils.scale(getDefaultSymbol(cardDef), WIDTH, HEIGHT);
+        BufferedImage image = Frame.getBlendedFrame(new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB), blend, background);
+        return getCompositeImage(image,symbol);
     }
 
     static BufferedImage getCompositeImage(BufferedImage baseFrame, BufferedImage topFrame) {
