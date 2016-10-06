@@ -173,6 +173,9 @@ public class GeneralConfig {
     private static final String IMAGES_ON_DEMAND = "imagesOnDemand";
     private boolean imagesOnDemand = false;
 
+    private static final String CUSTOM_SCROLLBAR = "customScrollBar";
+    private boolean isCustomScrollBar = true;
+
     private boolean isStatsVisible = true;
 
     private GeneralConfig() { }
@@ -581,6 +584,7 @@ public class GeneralConfig {
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
         gameVolume = Integer.parseInt(properties.getProperty(GAME_VOLUME, "" + gameVolume));
         imagesOnDemand = Boolean.parseBoolean(properties.getProperty(IMAGES_ON_DEMAND, "" + imagesOnDemand));
+        isCustomScrollBar = Boolean.parseBoolean(properties.getProperty(CUSTOM_SCROLLBAR, "" + isCustomScrollBar));
     }
 
     public void load() {
@@ -633,6 +637,7 @@ public class GeneralConfig {
         properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
         properties.setProperty(GAME_VOLUME, String.valueOf(gameVolume));
         properties.setProperty(IMAGES_ON_DEMAND, String.valueOf(imagesOnDemand));
+        properties.setProperty(CUSTOM_SCROLLBAR, String.valueOf(isCustomScrollBar));
     }
 
     public void save() {
@@ -713,6 +718,10 @@ public class GeneralConfig {
         frameTop = aPoint.y;
         frameWidth = aSize.width;
         frameHeight = aSize.height;
+    }
+
+    public boolean isCustomScrollBar() {
+        return isCustomScrollBar;
     }
 
 }

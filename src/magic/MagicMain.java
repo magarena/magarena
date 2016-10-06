@@ -7,13 +7,12 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
 
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
+import magic.ui.UIManagerHelper;
 import magic.ui.UiExceptionHandler;
 import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
@@ -46,33 +45,14 @@ public class MagicMain {
         }
 
         // try to set the look and feel
-        setLookAndFeel("Nimbus");
+        UIManagerHelper.setLookAndFeel("Nimbus");
+        
         reporter.setMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 startUI();
             }
         });
-    }
-
-    private static void setLookAndFeel(final String laf) {
-        try {
-            for (final LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-                if (laf.equals(info.getName())) {
-                    UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-
-            // customize nimbus look
-            UIManager.getLookAndFeelDefaults().put("Table.showGrid", true);
-            // removes hardcoded border
-            UIManager.getLookAndFeelDefaults().put("ScrollPane[Enabled].borderPainter", null);
-        }
-        catch (Exception e) {
-            System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
-            e.printStackTrace();
-        }
     }
 
     /**
