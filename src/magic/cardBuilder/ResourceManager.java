@@ -232,6 +232,8 @@ public class ResourceManager {
     public static final BufferedImage greenLandBox = getComponent("land/gLandBox.jpg");
     public static final BufferedImage whiteLandBox = getComponent("land/wLandBox.jpg");
     public static final BufferedImage multiLandBox = getComponent("land/mLandBox.jpg");
+    public static final BufferedImage tokenImageMaskSmall = getComponent("token/imagemask2.png");
+    public static final BufferedImage tokenImageMaskLarge = getComponent("token/imagemask.png");
 
     //Font Map
     private static final String[] names = {};
