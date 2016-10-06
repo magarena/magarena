@@ -4,9 +4,30 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
+import magic.data.KeywordDefinitions;
+import magic.data.KeywordDefinitions.KeywordDefinition;
+import net.miginfocom.swing.MigLayout;
 
+/**
+ * A {@code Scrollable JPanel} that works better with
+ * {@code JScrollPane} than the standard {@code JPanel}.
+ * <p>
+ * This manages the layout and display of the list of {@code JTextArea} entries.
+ */
 @SuppressWarnings("serial")
-class ScrollablePanel extends JPanel implements Scrollable {
+class KeywordsScrollablePanel extends JPanel implements Scrollable {
+
+    KeywordsScrollablePanel() {
+        setLayout(new MigLayout("insets 10, gap 6 8, wrap 2"));
+        setOpaque(false);
+        refreshKeywords();
+    }
+
+    private void refreshKeywords() {
+        for (final KeywordDefinition keywordDefinition : KeywordDefinitions.getKeywordDefinitions()) {
+            add(new KeywordPanel(keywordDefinition), "w 10:100%, top");
+        }
+    }
 
     @Override
     public Dimension getPreferredScrollableViewportSize() {
