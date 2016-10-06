@@ -22,8 +22,8 @@ public class MScrollBarUI extends BasicScrollBarUI {
     private static final Color COLOR_D = new Color(182, 182, 182);
     private static final Color COLOR_E = new Color(218, 218, 218);
 
-    private static final Color[] DEFAULT_COLORS = new Color[]{COLOR_A, COLOR_C, COLOR_D};
-    private static final Color[] ROLLOVER_COLORS = new Color[]{COLOR_A, COLOR_B, COLOR_D};
+    private static final Color[] DEFAULT_COLORS = new Color[]{COLOR_A, COLOR_B, COLOR_C};
+    private static final Color[] ROLLOVER_COLORS = new Color[]{COLOR_A, COLOR_C, COLOR_C};
 
     public static MScrollBarUI createUI(JComponent c) {
         return new MScrollBarUI();
@@ -48,8 +48,8 @@ public class MScrollBarUI extends BasicScrollBarUI {
         // fill paint gradient
         //
         final Point endPoint = isVertical
-                ? new Point(r.width + r.width / 2, 0)
-                : new Point(0, r.height + r.height / 2);
+                ? new Point(r.width + r.width / 4, 0)
+                : new Point(0, r.height);
 
         final GradientPaint fillPaint = new GradientPaint(
             0, 0, colors[0], endPoint.x, endPoint.y, colors[1]
