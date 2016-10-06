@@ -56,35 +56,35 @@ public final class GameStateSnapshot {
             updateCardCount2(tsCard, cards);
         }
         for (final GameCardState card : cards.keySet()) {
-            gamePlayerState.addToPermanents(card.getCardName(), card.isTapped(), (int)cards.get(card));
+            gamePlayerState.addToPermanents(card.getCardName(), card.isTapped(), cards.get(card));
         }
     }
 
     private static void savePlayerGraveyardState(final MagicPlayer player, final GamePlayerState gamePlayerState) {
         final Map<MagicCardDefinition, Integer> cards = getZoneCardDefs(player.getGraveyard());
         for (MagicCardDefinition cardDef : cards.keySet()) {
-            gamePlayerState.addToGraveyard(cardDef.getName(), (int)cards.get(cardDef));
+            gamePlayerState.addToGraveyard(cardDef.getName(), cards.get(cardDef));
         }
     }
 
     private static void savePlayerHandState(final MagicPlayer player, final GamePlayerState gamePlayerState) {
         final Map<MagicCardDefinition, Integer> cards = getZoneCardDefs(player.getHand());
         for (MagicCardDefinition cardDef : cards.keySet()) {
-            gamePlayerState.addToHand(cardDef.getName(), (int)cards.get(cardDef));
+            gamePlayerState.addToHand(cardDef.getName(), cards.get(cardDef));
         }
     }
 
     private static void savePlayerLibraryState(final MagicPlayer player, final GamePlayerState gamePlayerState) {
         final Map<MagicCardDefinition, Integer> cards = getZoneCardDefs(player.getLibrary());
         for (MagicCardDefinition cardDef : cards.keySet()) {
-            gamePlayerState.addToLibrary(cardDef.getName(), (int)cards.get(cardDef));
+            gamePlayerState.addToLibrary(cardDef.getName(), cards.get(cardDef));
         }
     }
 
     private static void savePlayerExiledState(final MagicPlayer player, final GamePlayerState gamePlayerState) {
         final Map<MagicCardDefinition, Integer> cards = getZoneCardDefs(player.getExile());
         for (MagicCardDefinition cardDef : cards.keySet()) {
-            gamePlayerState.addToExiled(cardDef.getName(), (int)cards.get(cardDef));
+            gamePlayerState.addToExiled(cardDef.getName(), cards.get(cardDef));
         }
     }
 
