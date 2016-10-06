@@ -322,7 +322,9 @@ public class AnnotatedCardPanel extends JPanel {
     private BufferedImage getCardImage(final MagicObject magicObject) {
         if (magicObject instanceof MagicPermanent) {
             final MagicPermanent perm = (MagicPermanent)magicObject;
-            return canRevealTrueFace(perm) && perm.getCardDefinition() != perm.getRealCardDefinition() ? getCardImage(perm.getRealCardDefinition()) : MagicImages.getPermanentImage(perm);
+            return canRevealTrueFace(perm) && perm.getCardDefinition() != perm.getRealCardDefinition() ?
+                getCardImage(perm.getRealCardDefinition()) :
+                MagicImages.getCardImage(perm);
         } else {
             return getCardImage(magicObject.getCardDefinition());
         }

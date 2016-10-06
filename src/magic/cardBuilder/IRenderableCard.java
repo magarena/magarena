@@ -145,4 +145,8 @@ public interface IRenderableCard {
     default boolean hasTextOverlay() {
         return hasAbility(MagicAbility.LevelUp) || isLand();
     }
+
+    default long getRenderKey() {
+        return getCardDefinition().getDistinctName().hashCode();
+    }
 }

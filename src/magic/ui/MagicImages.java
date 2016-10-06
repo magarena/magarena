@@ -305,24 +305,12 @@ public final class MagicImages {
         return ImageType.PROXY;
     }
 
-    public static BufferedImage getCardImage(MagicCardDefinition cdef) {
-        final Long key = (long)cdef.getDistinctName().hashCode();
+    public static BufferedImage getCardImage(IRenderableCard face) {
+        final Long key = face.getRenderKey();
         if (cache.containsKey(key)) {
             return cache.get(key);
         }
-        final BufferedImage image = createImage(cdef);
-        if (image != MISSING_CARD) {
-            cache.put(key, image);
-        }
-        return image;
-    }
-
-    public static BufferedImage getPermanentImage(MagicPermanent permanent) {
-        final Long key = permanent.getStateId();
-        if (cache.containsKey(key)) {
-            return cache.get(key);
-        }
-        final BufferedImage image = createImage(permanent);
+        final BufferedImage image = createImage(face);
         if (image != MISSING_CARD) {
             cache.put(key, image);
         }

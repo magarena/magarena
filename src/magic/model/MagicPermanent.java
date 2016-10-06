@@ -204,6 +204,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return stateId;
     }
 
+    public long getRenderKey() {
+        return getStateId();
+    }
+
     private long getCountersHash() {
         final long[] keys = new long[counters.size() * 2];
         int idx = 0;
