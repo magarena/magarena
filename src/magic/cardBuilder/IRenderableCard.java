@@ -13,8 +13,8 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.MagicCostManaType;
 import magic.model.event.MagicManaActivation;
-import magic.data.MagicIcon;
 
 public interface IRenderableCard {
 
@@ -50,9 +50,9 @@ public interface IRenderableCard {
     }
 
     default boolean isHybrid() {
-        final List<MagicIcon> list = getCost().getIcons();
+        final List<MagicCostManaType> list = getCost().getCostManaTypes(0);
         //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
-        return Collections.disjoint(list, MagicIcon.COLOR_MANA) && !Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA);
+        return Collections.disjoint(list, MagicCostManaType.MONO) && !Collections.disjoint(list, MagicCostManaType.HYBRID);
     }
 
     default boolean isPlaneswalker() {
