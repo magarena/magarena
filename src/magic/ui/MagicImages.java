@@ -251,54 +251,59 @@ public final class MagicImages {
         }
     }
 
+    enum ImageType { UNKNOWN, CUSTOM, PROXY, FULL }
+
     private static BufferedImage createImage(IRenderableCard face) {
-
-        final MagicCardDefinition cdef = face.getCardDefinition();
-
-        if (face == null || cdef == MagicCardDefinition.UNKNOWN) {
-            return getMissingCardImage();
+        final ImageType type = getImageType(face);
+        switch (type) {
+            case UNKNOWN:
+                return getMissingCardImage();
+            case CUSTOM:
+                return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(face));
+            case PROXY:
+                return CardBuilder.getCardBuilderImage(face);
+            case FULL:
+                final MagicCardDefinition cdef = face.getCardDefinition();
+                if (!MagicFileSystem.getCardImageFile(cdef).exists()) {
+                    tryDownloadingImage(cdef);
+                }
+                if (MagicFileSystem.getCardImageFile(cdef).exists()) {
+                    return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(cdef));
+                }
         }
-
-        if (MagicFileSystem.getCustomCardImageFile(face).exists()) {
-            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(face));
-        }
-
-        if (MagicFileSystem.getCroppedCardImageFile(face).exists()) {
-            return CardBuilder.getCardBuilderImage(face);
-        }
-
-        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(cdef).exists()) {
-            tryDownloadingImage(cdef);
-        }
-
-        if (MagicFileSystem.getCardImageFile(cdef).exists()) {
-            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(cdef));
-        }
-
-        // else generate proxy
         return CardBuilder.getCardBuilderImage(face);
     }
 
     public static boolean isProxyImage(MagicCardDefinition aCard) {
+        return getImageType(aCard) == ImageType.PROXY;
+    }
 
-        if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
-            return false;
+    private static ImageType getImageType(IRenderableCard face) {
+
+        final MagicCardDefinition cdef = face.getCardDefinition();
+
+        if (face == null || cdef == MagicCardDefinition.UNKNOWN) {
+            return ImageType.UNKNOWN;
         }
 
-        if (MagicFileSystem.getCustomCardImageFile(aCard).exists()) {
-            return false;
+        if (MagicFileSystem.getCustomCardImageFile(face).exists()) {
+            return ImageType.CUSTOM;
         }
 
-        if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
-            return true;
+        if (MagicFileSystem.getCroppedCardImageFile(face).exists()) {
+            return ImageType.PROXY;
         }
 
-        if (MagicFileSystem.getCardImageFile(aCard).exists()) {
-            return false;
+        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(cdef).exists()) {
+            return ImageType.FULL;
+        }
+
+        if (MagicFileSystem.getCardImageFile(cdef).exists()) {
+            return ImageType.FULL;
         }
 
         // else missing image proxy...
-        return true;
+        return ImageType.PROXY;
     }
 
     public static BufferedImage getCardImage(MagicCardDefinition aCard) {
