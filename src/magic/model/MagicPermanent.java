@@ -1374,7 +1374,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
 
     @Override
     public String getSubTypeText() {
-        if (hasAbility(MagicAbility.Changeling)) {
+        if (cachedSubTypeFlags.containsAll(MagicSubType.ALL_CREATURES)) {
             return getCardDefinition().getSubTypeText();
         } else {
             StringBuilder subtypes = new StringBuilder();
