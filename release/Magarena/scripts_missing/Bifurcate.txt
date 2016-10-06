@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Search your library for a permanent card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.
 timing=main
 oracle=Search your library for a permanent card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.
+status=needs groovy
