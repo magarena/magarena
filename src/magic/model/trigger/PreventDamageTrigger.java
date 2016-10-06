@@ -25,12 +25,9 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
 
-            // Protection from source reduces damage to 0
-            if (target.isPermanent()) {
-                final MagicPermanent targetPermanent = (MagicPermanent)target;
-                if (targetPermanent.hasProtectionFrom(damage.getSource())) {
-                    damage.setAmount(0);
-                }
+            // Protection from source prevents all damage
+            if (target.isPermanent() && damage.getTargetPermanent().hasProtectionFrom(damage.getSource())) {
+                damage.prevent();
             }
 
             // Prevent x amount of damage
