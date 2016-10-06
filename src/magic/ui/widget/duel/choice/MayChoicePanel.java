@@ -10,7 +10,6 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import magic.data.MagicIcon;
-import magic.model.IGameController;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
@@ -32,9 +31,9 @@ public class MayChoicePanel extends JPanel implements ActionListener {
     private final JButton yesButton;
     private boolean yes;
 
-    public MayChoicePanel(final IGameController controllerObj,final MagicSource source,final String message) {
+    public MayChoicePanel(final SwingGameController controllerObj,final MagicSource source,final String message) {
 
-        this.controller = (SwingGameController) controllerObj;
+        this.controller = controllerObj;
 
         setLayout(new BorderLayout());
         setOpaque(false);

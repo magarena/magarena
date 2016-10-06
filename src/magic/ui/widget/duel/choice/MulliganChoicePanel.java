@@ -6,13 +6,13 @@ import magic.model.MagicSource;
 import javax.swing.SwingUtilities;
 
 import java.util.Collections;
-import magic.model.IGameController;
 import magic.ui.ScreenController;
+import magic.ui.screen.duel.game.SwingGameController;
 
 @SuppressWarnings("serial")
 public class MulliganChoicePanel extends MayChoicePanel {
 
-    public MulliganChoicePanel(final IGameController controller, final MagicSource source, final String message, final MagicCardList hand) {
+    public MulliganChoicePanel(final SwingGameController controller, final MagicSource source, final String message, final MagicCardList hand) {
         super(controller, source, message);
         SwingUtilities.invokeLater(new Runnable() {
             @Override

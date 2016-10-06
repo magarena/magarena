@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
-import magic.model.IGameController;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
@@ -33,9 +32,9 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
     private final int maximumCount;
     private int count;
 
-    public MultiKickerChoicePanel(final IGameController controller, final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) {
+    public MultiKickerChoicePanel(final SwingGameController controller, final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) {
 
-        this.controller=(SwingGameController) controller;
+        this.controller=controller;
         this.maximumCount=maximumCount;
         count=maximumCount;
 

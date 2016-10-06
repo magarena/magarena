@@ -9,7 +9,6 @@ import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import magic.model.IGameController;
 import magic.model.MagicSource;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.translate.UiString;
@@ -30,8 +29,8 @@ public class ModeChoicePanel extends JPanel implements ActionListener {
     private final List<Integer> modes;
     private int result;
 
-    public ModeChoicePanel(final IGameController aController, final MagicSource source, final List<Integer> aModes) {
-        controller = (SwingGameController) aController;
+    public ModeChoicePanel(final SwingGameController aController, final MagicSource source, final List<Integer> aModes) {
+        controller = aController;
         modes = aModes;
 
         setLayout(new BorderLayout());

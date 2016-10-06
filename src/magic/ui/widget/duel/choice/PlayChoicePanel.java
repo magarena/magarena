@@ -9,7 +9,6 @@ import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import magic.model.IGameController;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.ui.screen.duel.game.SwingGameController;
@@ -31,9 +30,9 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
     private final List<MagicPlayChoiceResult> results;
     private MagicPlayChoiceResult result;
 
-    public PlayChoicePanel(final IGameController controller, final MagicSource source, final List<MagicPlayChoiceResult> results) {
+    public PlayChoicePanel(final SwingGameController controller, final MagicSource source, final List<MagicPlayChoiceResult> results) {
 
-        this.controller=(SwingGameController) controller;
+        this.controller=controller;
         this.results=results;
 
         setLayout(new BorderLayout());

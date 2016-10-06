@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
-import magic.model.IGameController;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
@@ -33,8 +32,8 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
     private final int maximumX;
     private int x;
 
-    public ManaCostXChoicePanel(final IGameController controller,final MagicSource source,final int maximumX) {
-        this.controller = (SwingGameController)controller;
+    public ManaCostXChoicePanel(final SwingGameController controller,final MagicSource source,final int maximumX) {
+        this.controller = controller;
         this.maximumX=maximumX;
         x=maximumX;
 

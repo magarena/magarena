@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import magic.model.IGameController;
 import magic.model.MagicColor;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
@@ -29,8 +28,8 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
     private final SwingGameController controller;
     private MagicColor color;
 
-    public ColorChoicePanel(final IGameController controller,final MagicSource source) {
-        this.controller = (SwingGameController)controller;
+    public ColorChoicePanel(final SwingGameController controller,final MagicSource source) {
+        this.controller = controller;
 
         setLayout(new BorderLayout());
         setOpaque(false);
