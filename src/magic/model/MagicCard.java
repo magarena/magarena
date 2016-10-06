@@ -294,11 +294,8 @@ public class MagicCard
 
     public boolean isOnStack() {
         for (final MagicItemOnStack item : getGame().getStack()) {
-            if (item.isSpell()) {
-                final MagicCardOnStack spell = (MagicCardOnStack)item;
-                if (spell.getCard() == this) {
-                    return true;
-                }
+            if (item.isSpell() && item.getSource() == this) {
+                return true;
             }
         }
         return false;
