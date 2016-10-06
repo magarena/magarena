@@ -1373,6 +1373,19 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     @Override
+    public String getSubTypeText() {
+        if (hasAbility(MagicAbility.Changeling)) {
+            return getCardDefinition().getSubTypeText();
+        } else {
+            StringBuilder subtypes = new StringBuilder();
+            for (final MagicSubType subType: cachedSubTypeFlags) {
+                subtypes.append(subType).append(" ");
+            }
+            return subtypes.toString();
+        }
+    }
+
+    @Override
     public String getPowerToughnessText() {
         if (isCreature()) {
             return getPower() + "/" + getToughness();

@@ -121,15 +121,7 @@ public interface IRenderableCard {
 
     default String getSubTypeText() {
         // returning from CardDefinition, no in-game changes
-        if (!hasAbility(MagicAbility.Changeling) && this instanceof MagicPermanent) {
-            StringBuilder subtypes = new StringBuilder();
-            for (final MagicSubType subType: getSubTypes()) {
-                subtypes.append(subType).append(" ");
-            }
-            return subtypes.toString();
-        } else {
-            return getCardDefinition().getSubTypeText();
-        }
+        return getCardDefinition().getSubTypeText();
     }
 
     default String getImageName() {
