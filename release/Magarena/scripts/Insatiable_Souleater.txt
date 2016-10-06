@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Beast
 cost={4}
 pt=5/1
-ability={G/P}: SN gains trample until end of turn.;\
+ability={G}: SN gains trample until end of turn.;\
         Pay 2 life: SN gains trample until end of turn.
 timing=main
 oracle={G/P}: Insatiable Souleater gains trample until end of turn.

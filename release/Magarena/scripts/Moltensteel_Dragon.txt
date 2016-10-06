@@ -6,10 +6,10 @@ type=Artifact,Creature
 subtype=Dragon
 cost={4}{R/P}{R/P}
 pt=4/4
-ability=alt cost {4}{R/P}, Pay 2 life named Pay 2 life;\
+ability=alt cost {4}{R}, Pay 2 life named Pay 2 life;\
         alt cost {4}, Pay 4 life named Pay 4 life;\
         Flying;\
-        {R/P}: SN gets +1/+0 until end of turn.;\
+        {R}: SN gets +1/+0 until end of turn.;\
         Pay 2 life: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Flying\n{R/P}: Moltensteel Dragon gets +1/+0 until end of turn.

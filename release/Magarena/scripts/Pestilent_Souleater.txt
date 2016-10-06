@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Insect
 cost={5}
 pt=3/3
-ability={B/P}: SN gains infect until end of turn.;\
+ability={B}: SN gains infect until end of turn.;\
         Pay 2 life: SN gains infect until end of turn.
 timing=main
 oracle={B/P}: Pestilent Souleater gains infect until end of turn.

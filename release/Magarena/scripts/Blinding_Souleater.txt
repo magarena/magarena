@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Cleric
 cost={3}
 pt=1/3
-ability={W/P}, {T}: Tap target creature.;\
+ability={W}, {T}: Tap target creature.;\
         Pay 2 life, {T}: Tap target creature.
 timing=main
 oracle={W/P}, {T}: Tap target creature.

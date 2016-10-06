@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/2
-ability={U/P}: SN can't be blocked this turn.;\
+ability={U}: SN can't be blocked this turn.;\
         Pay 2 life: SN can't be blocked this turn.
 timing=main
 oracle={U/P}: Trespassing Souleater can't be blocked this turn.

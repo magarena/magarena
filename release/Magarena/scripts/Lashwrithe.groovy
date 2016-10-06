@@ -1,4 +1,4 @@
-def Pay2Life = MagicRegularCostEvent.build("{B/P}, Pay 2 life");
+def Pay2Life = MagicRegularCostEvent.build("{B}, Pay 2 life");
 def Pay4Life = MagicRegularCostEvent.build("Pay 4 life");
 
 [
