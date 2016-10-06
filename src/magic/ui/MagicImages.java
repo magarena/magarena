@@ -12,6 +12,7 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 
 import magic.cardBuilder.renderers.CardBuilder;
+import magic.cardBuilder.IRenderableCard;
 import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.data.LRUCache;
@@ -238,12 +239,6 @@ public final class MagicImages {
         return MISSING_CARD;
     }
 
-    public static BufferedImage getMissingCardImage(MagicCardDefinition cardDef) {
-        return cardDef == MagicCardDefinition.UNKNOWN
-            ? MISSING_CARD
-            : CardBuilder.getCardBuilderImage(cardDef);
-    }
-
     private static void tryDownloadingImage(MagicCardDefinition aCard) {
         if (proxy == null) {
             proxy = GeneralConfig.getInstance().getProxy();
@@ -256,60 +251,33 @@ public final class MagicImages {
         }
     }
 
-    private static BufferedImage createCardImage(MagicCardDefinition aCard) {
+    private static BufferedImage createImage(IRenderableCard face) {
 
-        if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
+        final MagicCardDefinition cdef = face.getCardDefinition();
+
+        if (face == null || cdef == MagicCardDefinition.UNKNOWN) {
             return getMissingCardImage();
         }
 
-        if (MagicFileSystem.getCustomCardImageFile(aCard).exists()) {
-            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(aCard));
+        if (MagicFileSystem.getCustomCardImageFile(face).exists()) {
+            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(face));
         }
 
-        if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
-            return CardBuilder.getCardBuilderImage(aCard);
+        if (MagicFileSystem.getCroppedCardImageFile(face).exists()) {
+            return CardBuilder.getCardBuilderImage(face);
         }
 
-        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(aCard).exists()) {
-            tryDownloadingImage(aCard);
+        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(cdef).exists()) {
+            tryDownloadingImage(cdef);
         }
 
-        if (MagicFileSystem.getCardImageFile(aCard).exists()) {
-            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(aCard));
+        if (MagicFileSystem.getCardImageFile(cdef).exists()) {
+            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(cdef));
         }
 
-        // else get missing image proxy...
-        return getMissingCardImage(aCard);
+        // else generate proxy
+        return CardBuilder.getCardBuilderImage(face);
     }
-
-    private static BufferedImage createPermanentImage(MagicPermanent permanent) {
-
-        final MagicCardDefinition aCard = permanent.getCardDefinition();
-
-        if (permanent == null || permanent.getCardDefinition() == MagicCardDefinition.UNKNOWN) {
-            return getMissingCardImage();
-        }
-
-        if (MagicFileSystem.getCustomCardImageFile(aCard).exists()) {
-            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(aCard));
-        }
-
-        if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
-            return CardBuilder.getCardBuilderImage(permanent);
-        }
-
-        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(aCard).exists()) {
-            tryDownloadingImage(aCard);
-        }
-
-        if (MagicFileSystem.getCardImageFile(aCard).exists()) {
-            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(aCard));
-        }
-
-        // else get missing image proxy...
-        return CardBuilder.getCardBuilderImage(permanent);
-    }
-
 
     public static boolean isProxyImage(MagicCardDefinition aCard) {
 
@@ -338,7 +306,7 @@ public final class MagicImages {
         if (cache.containsKey(key)) {
             return cache.get(key);
         }
-        final BufferedImage image = createCardImage(aCard);
+        final BufferedImage image = createImage(aCard);
         if (image != MISSING_CARD) {
             cache.put(key, image);
         }
@@ -350,7 +318,7 @@ public final class MagicImages {
         if (permanentCache.containsKey(key)) {
             return permanentCache.get(key);
         }
-        final BufferedImage image = createPermanentImage(permanent);
+        final BufferedImage image = createImage(permanent);
         if (image != MISSING_CARD) {
             permanentCache.put(key, image);
         }

@@ -9,6 +9,7 @@ import magic.model.phase.*;
 import magic.ai.MagicAIImpl;
 import magic.ui.MagicImages;
 import magic.data.CardDefinitions;
+import magic.cardBuilder.renderers.CardBuilder;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
@@ -20,7 +21,7 @@ import java.io.IOException;
 class TestCardBuilder extends TestGameBuilder {
     public MagicGame getGame() {
         for (final MagicCardDefinition cdef : CardDefinitions.getAllCards()) {
-            final BufferedImage buffImg = MagicImages.getMissingCardImage(cdef);
+            final BufferedImage buffImg = CardBuilder.getCardBuilderImage(cdef);
             int[] data = ((DataBufferInt) buffImg.getData().getDataBuffer()).getData();
 
             int hash = Arrays.hashCode(data);
