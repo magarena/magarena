@@ -13,6 +13,7 @@ public class TestScreen extends HeaderFooterScreen {
         setLeftFooter(MenuButton.getTestButton());
         setRightFooter(MenuButton.getTestButton());
         addToFooter(MenuButton.getTestButton(), MenuButton.getTestButton());
+        setMainContent(new TestContentPanel());
 //        this.headerPanel = new ExplorerHeaderPanel();
 //        setHeaderContent(this.headerPanel);
 //        addToFooter(MenuButton.build(
