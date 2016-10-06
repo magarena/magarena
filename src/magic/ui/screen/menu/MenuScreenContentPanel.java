@@ -31,6 +31,15 @@ public abstract class MenuScreenContentPanel extends JPanel {
         setOpaque(false);
     }
 
+    protected void addMenuItem(String name, int fontSize, Runnable action) {
+        mp.addMenuItem(UiString.get(name), fontSize, new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                action.run();
+            }
+        });
+    }
+
     protected void addMenuItem(String name, Runnable action) {
         mp.addMenuItem(UiString.get(name), new AbstractAction() {
             @Override

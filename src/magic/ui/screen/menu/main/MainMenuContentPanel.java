@@ -30,11 +30,14 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
         addMenuItem(_S6, this::showSettingsMenu);
         addMenuItem(_S7, this::showHelpMenu);
         addSpace();
-        if (MagicSystem.isDevMode()) {
-            addMenuItem("DevMode...", this::showDevMenu);
-            addSpace();
-        }
         addMenuItem(_S8, this::doShutdown);
+        if (MagicSystem.isDevMode()) {
+            addSpace();
+            addSpace();
+            addSpace();
+            addMenuItem("DevMode", 16, this::showDevMenu);
+        }
+
         refreshMenuLayout();
 
         add(alertPanel);
