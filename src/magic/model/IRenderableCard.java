@@ -1,19 +1,10 @@
-package magic.cardBuilder;
+package magic.model;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.HashSet;
-
-import magic.model.MagicAbility;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
-import magic.model.MagicType;
-import magic.model.MagicCostManaType;
 import magic.model.event.MagicManaActivation;
 
 public interface IRenderableCard {

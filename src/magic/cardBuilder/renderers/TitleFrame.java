@@ -19,7 +19,7 @@ import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 
 public class TitleFrame {

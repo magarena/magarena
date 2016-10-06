@@ -16,7 +16,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 
 public class PTFrame {

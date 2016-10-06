@@ -17,7 +17,6 @@ import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
-import magic.cardBuilder.IRenderableCard;
 
 public class MagicCard
     extends MagicObjectImpl

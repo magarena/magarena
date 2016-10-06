@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 
 public class Overlay {

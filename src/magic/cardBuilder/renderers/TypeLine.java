@@ -9,7 +9,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicType;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 
 public class TypeLine {

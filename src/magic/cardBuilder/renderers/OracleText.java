@@ -26,7 +26,7 @@ import java.util.TreeMap;
 import magic.model.MagicColor;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 import magic.ui.utility.GraphicsUtils;
 

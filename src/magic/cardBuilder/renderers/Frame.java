@@ -16,7 +16,7 @@ import magic.model.MagicManaType;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.event.MagicManaActivation;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 
 public class Frame {

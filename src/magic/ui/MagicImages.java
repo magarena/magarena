@@ -12,7 +12,7 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 
 import magic.cardBuilder.renderers.CardBuilder;
-import magic.cardBuilder.IRenderableCard;
+import magic.model.IRenderableCard;
 import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.data.LRUCache;
