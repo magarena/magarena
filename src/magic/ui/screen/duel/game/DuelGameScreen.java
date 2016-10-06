@@ -1,6 +1,5 @@
 package magic.ui.screen.duel.game;
 
-import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.SwingUtilities;
@@ -14,7 +13,6 @@ import magic.translate.UiString;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
-import magic.ui.widget.GameLoadingMessage;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -33,7 +31,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     private DuelLayeredPane duelPane;
     private SwingGameController controller;
-    private final GameLoadingMessage loadingMessage = new GameLoadingMessage();
 
     public DuelGameScreen(final MagicDuel duel) {
         showScreen(duel.nextGame());
@@ -51,7 +48,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             quickFixSpaceKeyShortcut();
         }
         startGameThread();
-        loadingMessage.setEnabled(false);
     }
 
     private DuelLayeredPane getScreenContent(final MagicGame aGame) {
@@ -192,12 +188,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
      */
     private void quickFixSpaceKeyShortcut() {
         duelPane.requestFocusInWindow();
-    }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        loadingMessage.render(g, getSize());
-        super.paintComponent(g);
     }
 
 }
