@@ -228,7 +228,9 @@ public class AnnotatedCardPanel extends JPanel {
         // don't overwrite original image with modified PT overlay, use a copy.
         final BufferedImage cardCanvas = !modifiedPT.isEmpty() ? getImageCopy(cardImage) : cardImage;
         // draw modified PT on original image so it is scaled properly.
-        drawPowerToughnessOverlay(cardCanvas);
+        if (MagicImages.isProxyImage(magicObject.getCardDefinition()) == false) {
+            drawPowerToughnessOverlay(cardCanvas);
+        }
         // scale card image if required.
         final BufferedImage scaledImage = GraphicsUtils.scale(cardCanvas, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
         //
