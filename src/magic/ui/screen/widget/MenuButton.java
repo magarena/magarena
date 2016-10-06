@@ -11,7 +11,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+import magic.data.MagicIcon;
 import magic.translate.UiString;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
@@ -155,6 +157,20 @@ public class MenuButton extends JButton {
 
     public static MenuButton getTestButton() {
         return new MenuButton("Test", closeScreenAction);
+    }
+
+    public static MenuButton build(Runnable action, MagicIcon icon, String title, String description) {
+        return new ActionBarButton(
+                MagicImages.getIcon(icon),
+                UiString.get(title),
+                UiString.get(description),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        action.run();
+                    }
+                }
+        );
     }
 
 }

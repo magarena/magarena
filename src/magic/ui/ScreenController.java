@@ -22,7 +22,7 @@ import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.test.TestScreen;
 import magic.ui.screen.MagicScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
-import magic.ui.screen.card.explorer.CardExplorerScreen;
+import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.ui.screen.card.script.CardScriptScreen;
 import magic.ui.screen.duel.player.zone.CardZoneScreen;
 import magic.ui.screen.deck.editor.DeckEditorSplitScreen;
@@ -98,7 +98,7 @@ public final class ScreenController {
     }
 
     public static void showCardExplorerScreen() {
-        showScreen(new CardExplorerScreen());
+        showScreen(new ExplorerScreen());
     }
 
     public static void showDeckEditor(final MagicDeck deck) {

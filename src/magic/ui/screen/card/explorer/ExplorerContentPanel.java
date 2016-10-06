@@ -16,12 +16,12 @@ import magic.ui.ScreenController;
 import magic.ui.widget.cards.table.CardTable;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.card.filter.CardFilterPanel;
-import magic.ui.screen.card.explorer.CardExplorerScreen;
+import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ExplorerPanel extends JPanel
+public class ExplorerContentPanel extends JPanel
         implements ICardSelectionListener, ICardFilterPanelListener {
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
@@ -32,9 +32,9 @@ public class ExplorerPanel extends JPanel
     private ExplorerSidebarPanel sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
     private final JPanel rhs = new JPanel();
-    private final CardExplorerScreen screen;
+    private final ExplorerScreen screen;
 
-    public ExplorerPanel(CardExplorerScreen explorerScreen) {
+    public ExplorerContentPanel(ExplorerScreen explorerScreen) {
         this.screen = explorerScreen;
         setupExplorerPanel();
     }
