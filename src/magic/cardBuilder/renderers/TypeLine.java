@@ -62,9 +62,7 @@ public class TypeLine {
     public static String getTypeLine(IRenderableCard cardDef) {
         StringBuilder typeLine = new StringBuilder();
         String subtype = cardDef.getSubTypeText();
-        MagicType.SUPERTYPES.stream().filter(cardDef::hasType).forEach(aSuperType -> {
-            typeLine.append(aSuperType).append(" ");
-        });
+        MagicType.SUPERTYPES.stream().filter(cardDef::hasType).forEach(aSuperType -> typeLine.append(aSuperType).append(" "));
         if (cardDef.isToken()) {
             typeLine.append("Token ");
         }
