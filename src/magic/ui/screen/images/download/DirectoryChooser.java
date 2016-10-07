@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import magic.translate.UiString;
 import magic.ui.ScreenController;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -57,7 +57,7 @@ public class DirectoryChooser extends JPanel {
     private void openFolderInFileManager() {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         try {
-            DesktopUtils.openDirectory(textField.getText());
+            DesktopHelper.openDirectory(textField.getText());
         } catch (IOException | IllegalArgumentException ex) {
             ScreenController.showWarningMessage(ex.getMessage());
         }

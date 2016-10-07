@@ -29,7 +29,7 @@ import magic.translate.UiString;
 import magic.exception.DesktopNotSupportedException;
 import magic.ui.ScreenController;
 import magic.ui.helpers.UrlHelper;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -172,7 +172,7 @@ class TranslationPanel extends JPanel {
 
         // 6. open file in default txt editor.
         try {
-            DesktopUtils.openFileInDefaultOsEditor(langFile);
+            DesktopHelper.openFileInDefaultOsEditor(langFile);
         } catch (IOException | DesktopNotSupportedException ex) {
             ScreenController.showWarningMessage(UiString.get(_S13, ex));
         }
@@ -181,7 +181,7 @@ class TranslationPanel extends JPanel {
 
     private void doOpenTranslationsFolder() throws IOException {
         final Path folder = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS);
-        DesktopUtils.openDirectory(folder.toString());
+        DesktopHelper.openDirectory(folder.toString());
     }
 
     private void setupEditMenuItem() {
@@ -247,7 +247,7 @@ class TranslationPanel extends JPanel {
                         return;
                     }
                     UiString.createTranslationFIle(langFile);
-                    DesktopUtils.openFileInDefaultOsEditor(langFile);
+                    DesktopHelper.openFileInDefaultOsEditor(langFile);
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {

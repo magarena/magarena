@@ -4,7 +4,6 @@ import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Composite;
-import java.awt.Cursor;
 import java.awt.GradientPaint;
 import java.awt.Graphics2D;
 import java.awt.Graphics;
@@ -28,7 +27,6 @@ import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
-import magic.ui.ScreenController;
 import magic.ui.image.filter.GrayScaleImageFilter;
 import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
@@ -232,12 +230,6 @@ final public class GraphicsUtils {
     }
 
     private static final Paint debugBorderPaint = new GradientPaint(0, 0, Color.red, 100, 100, Color.white, true);
-
-    public static void setBusyMouseCursor(final boolean b) {
-        ScreenController.getMainFrame().setCursor(
-                b ? Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR) :
-                    Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    }
 
     public static void setDebugBorder(final JComponent component) {
         component.setBorder(BorderFactory.createDashedBorder(debugBorderPaint));

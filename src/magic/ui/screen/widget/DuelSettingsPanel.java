@@ -10,11 +10,11 @@ import javax.swing.SwingConstants;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicFormat;
-import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicImages;
 import magic.ui.MagicFrame;
 import magic.translate.UiString;
 import magic.ui.dialog.DuelPropertiesDialog;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
@@ -95,9 +95,9 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
         return new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
-                GraphicsUtils.setBusyMouseCursor(true);
+                MouseHelper.showBusyCursor();
                 updateDuelSettings();
-                GraphicsUtils.setBusyMouseCursor(false);
+                MouseHelper.showDefaultCursor();
             }
             @Override
             public void mouseEntered(MouseEvent e) {

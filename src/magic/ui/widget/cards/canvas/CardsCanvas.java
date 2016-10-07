@@ -24,6 +24,7 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import magic.model.MagicCard;
 import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
@@ -86,12 +87,12 @@ public class CardsCanvas extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 if (!isAnimateThreadRunning) {
-                    GraphicsUtils.setBusyMouseCursor(true);
+                    MouseHelper.showBusyCursor();
                     final int cardIndex = getCardIndexAt(e.getPoint());
                     if (cardIndex >= 0) {
                         new CardImageOverlay(cards.get(cardIndex).getMagicCard());
                     }
-                    GraphicsUtils.setBusyMouseCursor(false);
+                    MouseHelper.showDefaultCursor();
                 }
             }
         });

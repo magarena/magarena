@@ -13,11 +13,12 @@ import magic.game.state.GameStateSnapshot;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.ScreenController;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;
 import static magic.utility.MagicFileSystem.getDataPath;
 import org.apache.commons.io.FileUtils;
+import static magic.utility.MagicFileSystem.getDataPath;
 
 final class GameplayReport {
     private GameplayReport() {}
@@ -56,7 +57,7 @@ final class GameplayReport {
     }
 
     static void openReportDirectory() throws IOException {
-        DesktopUtils.openDirectory(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.REPORTS).toString());
+        DesktopHelper.openDirectory(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.REPORTS).toString());
     }
 
     private static void createZipFile() throws IOException {

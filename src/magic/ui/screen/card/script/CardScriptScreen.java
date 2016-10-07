@@ -30,7 +30,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFileSystem;
@@ -234,7 +234,7 @@ public class CardScriptScreen
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     try {
-                        DesktopUtils.openFileInDefaultOsEditor(textFile);
+                        DesktopHelper.openFileInDefaultOsEditor(textFile);
                     } catch (IOException | DesktopNotSupportedException ex) {
                         ScreenController.showWarningMessage(UiString.get(_S7, textFile, ex.getMessage()));
                     }

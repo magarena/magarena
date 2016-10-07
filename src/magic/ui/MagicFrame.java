@@ -22,7 +22,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGameLog;
 import magic.ui.screen.ScreenHelper;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
@@ -216,7 +216,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         try {
             final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
             final File imageFile = GraphicsUtils.doScreenshotToFile(this.getContentPane(), filePath);
-            DesktopUtils.openFileInDefaultOsEditor(imageFile);
+            DesktopHelper.openFileInDefaultOsEditor(imageFile);
         } catch (IOException | DesktopNotSupportedException e) {
             e.printStackTrace();
             ScreenController.showWarningMessage(e.toString());

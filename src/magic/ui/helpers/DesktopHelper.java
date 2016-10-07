@@ -1,4 +1,4 @@
-package magic.ui.utility;
+package magic.ui.helpers;
 
 import java.awt.Desktop;
 import java.io.File;
@@ -6,19 +6,15 @@ import java.io.IOException;
 import magic.exception.DesktopNotSupportedException;
 import magic.translate.UiString;
 import magic.utility.MagicFileSystem;
-import static magic.utility.MagicFileSystem.getDataPath;
 import magic.utility.MagicSystem;
 
-
-public final class DesktopUtils {
+public final class DesktopHelper {
 
     // translatable strings
     private static final String _S1 = "Sorry, opening this file with the default application is not supported on this operating system.";
 
-    private DesktopUtils() {}
-
     public static void openMagicDirectory(final MagicFileSystem.DataPath directory) throws IOException {
-        openDirectory(getDataPath(directory).toString());
+        openDirectory(MagicFileSystem.getDataPath(directory).toString());
     }
 
     /**
@@ -56,5 +52,5 @@ public final class DesktopUtils {
         }
     }
 
-
+    private DesktopHelper() {}
 }

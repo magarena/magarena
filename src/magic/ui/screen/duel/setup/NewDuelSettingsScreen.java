@@ -16,7 +16,6 @@ import magic.model.MagicDeck;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
@@ -28,6 +27,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.utility.MagicStyle;
 import magic.ui.WikiPage;
+import magic.ui.helpers.MouseHelper;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -172,10 +172,10 @@ public class NewDuelSettingsScreen
             return new MouseAdapter() {
                 @Override
                 public void mouseReleased(MouseEvent e) {
-                    GraphicsUtils.setBusyMouseCursor(true);
+                    MouseHelper.showBusyCursor();
                     selectNewProfile(panel.getPlayer());
                     mouseExited(e);
-                    GraphicsUtils.setBusyMouseCursor(false);
+                    MouseHelper.showDefaultCursor();
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {

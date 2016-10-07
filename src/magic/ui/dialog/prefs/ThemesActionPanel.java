@@ -16,7 +16,7 @@ import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.helpers.UrlHelper;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
@@ -44,9 +44,9 @@ class ThemesActionPanel extends JPanel {
         File themeFile = ThemeFactory.getThemeFile(themeName);
         try {
             if (themeFile == null || themeFile.isFile()) {
-                DesktopUtils.openMagicDirectory(MagicFileSystem.DataPath.THEMES);
+                DesktopHelper.openMagicDirectory(MagicFileSystem.DataPath.THEMES);
             } else {
-                DesktopUtils.openDirectory(themeFile);
+                DesktopHelper.openDirectory(themeFile);
             }
         } catch (IOException ex) {
             System.err.println(ex);

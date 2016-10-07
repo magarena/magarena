@@ -9,7 +9,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.MagicGameLog;
-import magic.ui.utility.DesktopUtils;
+import magic.ui.helpers.DesktopHelper;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
@@ -73,7 +73,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 try {
-                                    DesktopUtils.openMagicDirectory(DataPath.LOGS);
+                                    DesktopHelper.openMagicDirectory(DataPath.LOGS);
                                 } catch (IOException ex) {
                                     ScreenController.showWarningMessage(UiString.get(_S3, ex.getMessage()));
                                 }
