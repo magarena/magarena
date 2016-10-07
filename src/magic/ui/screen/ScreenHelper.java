@@ -10,7 +10,7 @@ import javax.swing.KeyStroke;
 public final class ScreenHelper {
     private ScreenHelper() { }
 
-    public static void setKeyboardAction(JComponent widget, int keyEvent, Runnable action) {
+    public static void setKeyEvent(JComponent widget, int keyEvent, Runnable action) {
         String inputMapKey = "key_" + keyEvent;
         widget.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
                 KeyStroke.getKeyStroke(keyEvent, 0),

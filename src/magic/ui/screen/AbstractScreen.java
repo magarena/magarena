@@ -33,8 +33,8 @@ public abstract class AbstractScreen extends JPanel {
     }
 
     private void setDefaultKeyboardActions() {
-        ScreenHelper.setKeyboardAction(this, KeyEvent.VK_ESCAPE, this::showOptionsMenuOrCloseScreen);
-        ScreenHelper.setKeyboardAction(this, KeyEvent.VK_F1, this::showWikiHelpPage);
+        ScreenHelper.setKeyEvent(this, KeyEvent.VK_ESCAPE, this::showOptionsMenuOrCloseScreen);
+        ScreenHelper.setKeyEvent(this, KeyEvent.VK_F1, this::showWikiHelpPage);
     }
 
     protected void refreshActionBar() {

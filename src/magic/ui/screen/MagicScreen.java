@@ -4,7 +4,6 @@ import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.ui.URLUtils;
-import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
@@ -28,8 +27,7 @@ public abstract class MagicScreen extends JPanel {
     }
 
     private void setDefaultKeyboardActions() {
-        ScreenHelper.setKeyboardAction(this, KeyEvent.VK_ESCAPE, this::doEscapeKeyAction);
-        ScreenHelper.setKeyboardAction(this, KeyEvent.VK_F1, this::doF1KeyAction);
+        ScreenHelper.setKeyEvent(this, KeyEvent.VK_F1, this::doF1KeyAction);
     }
 
     protected void refreshLayout() {
@@ -41,10 +39,6 @@ public abstract class MagicScreen extends JPanel {
     protected void setMainContent(final JComponent aPanel) {
         this.contentPanel = aPanel;
         refreshLayout();
-    }
-
-    protected void doEscapeKeyAction() {
-        ScreenController.closeActiveScreen(true);
     }
 
     protected void doF1KeyAction() {

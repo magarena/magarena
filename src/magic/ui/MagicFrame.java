@@ -2,18 +2,15 @@ package magic.ui;
 
 import magic.translate.UiString;
 import java.awt.dnd.DropTarget;
-import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
-import javax.swing.AbstractAction;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.KeyStroke;
 import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
@@ -23,6 +20,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGameLog;
+import magic.ui.screen.ScreenHelper;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.utility.GraphicsUtils;
@@ -65,16 +63,26 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         contentPanel = new MagicFramePanel();
         contentPanel.setOpaque(true);
         setContentPane(contentPanel);
-        setF10KeyInputMap();
-        setF11KeyInputMap();
-        setF12KeyInputMap();
+
+        setKeyboardEventActions();
 
         // Enable drag and drop of background image file.
         new DropTarget(this, new FileDropTargetListener(this));
 
         setVisible(true);
     }
+    
+    private void setKeyboardEventActions() {
+        ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F10, this::doScreenshot);
+        ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F11, this::toggleFullScreenMode);
+        ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F12, this::toggleUI);
+        ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_ESCAPE, this::doEscapeKeyAction);
+    }
 
+    private void doEscapeKeyAction() {
+        ScreenController.closeActiveScreen(true);
+    }
+    
     private void addWindowListeners() {
         addWindowListener(new WindowAdapter() {
             @Override
@@ -204,45 +212,6 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         showDuel();
     }
 
-    /**
-     * F10 take a screen shot.
-     */
-    private void setF10KeyInputMap() {
-        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F10, 0), "Screenshot");
-        contentPanel.getActionMap().put("Screenshot", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                GraphicsUtils.setBusyMouseCursor(true);
-                doScreenshot();
-                GraphicsUtils.setBusyMouseCursor(false);
-            }
-        });
-    }
-
-    /**
-     * F11 key toggles full screen mode.
-     */
-    private void setF11KeyInputMap() {
-        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F11, 0), "FullScreen");
-        contentPanel.getActionMap().put("FullScreen", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                toggleFullScreenMode();
-            }
-        });
-    }
-
-    private void setF12KeyInputMap() {
-        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F12, 0), "HideMenu");
-        contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                final JPanel activeScreen = ScreenController.getActiveScreen();
-                activeScreen.setVisible(!activeScreen.isVisible());
-            }
-        });
-    }
-
     private void doScreenshot() {
         try {
             final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
@@ -320,6 +289,11 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     @Override
     public void onZipFileDropped(File zipFile) {
         System.out.println("[TODO] onZipFileDropped : " + zipFile);
+    }
+
+    private void toggleUI() {
+        final JPanel activeScreen = ScreenController.getActiveScreen();
+        activeScreen.setVisible(!activeScreen.isVisible());
     }
 
 }
