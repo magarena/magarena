@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.helpers;
 
 import java.awt.Component;
 import java.awt.Cursor;

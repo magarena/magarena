@@ -1,12 +1,12 @@
-package magic.ui;
+package magic.ui.helpers;
 
 import java.awt.Dimension;
 import javax.swing.UIManager;
 import magic.data.GeneralConfig;
 
-public final class UIManagerHelper {
+public final class LaFHelper {
 
-    private UIManagerHelper() {
+    private LaFHelper() {
     }
 
     public static void setLookAndFeel(final String laf) {

@@ -5,7 +5,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.SwingUtilities;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

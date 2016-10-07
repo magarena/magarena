@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.MagicColor;
 import magic.ui.MagicImages;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.widget.card.filter.button.FilterPanel;
 import net.miginfocom.swing.MigLayout;
 

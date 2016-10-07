@@ -15,7 +15,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.ICardFilterPanelListener;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.widget.card.filter.button.ColorFilterPanel;
 import magic.ui.widget.card.filter.button.CostFilterPanel;
 import magic.ui.widget.card.filter.button.CubeFilterPanel;

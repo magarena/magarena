@@ -13,7 +13,7 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.widget.card.filter.ClickPreventer;
 import magic.ui.widget.card.filter.IFilterListener;
 import magic.ui.widget.card.filter.dialog.FilterDialog;

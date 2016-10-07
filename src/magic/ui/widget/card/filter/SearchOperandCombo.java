@@ -7,7 +7,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")

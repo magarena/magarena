@@ -12,7 +12,7 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
-import magic.ui.UIManagerHelper;
+import magic.ui.helpers.LaFHelper;
 import magic.ui.UiExceptionHandler;
 import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
@@ -45,7 +45,7 @@ public class MagicMain {
         }
 
         // try to set the look and feel
-        UIManagerHelper.setLookAndFeel("Nimbus");
+        LaFHelper.setLookAndFeel("Nimbus");
         
         reporter.setMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {

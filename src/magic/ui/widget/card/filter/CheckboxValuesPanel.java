@@ -1,7 +1,7 @@
 package magic.ui.widget.card.filter;
 
 import java.awt.Component;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.widget.card.filter.button.FilterPanel;
 
 @SuppressWarnings("serial")

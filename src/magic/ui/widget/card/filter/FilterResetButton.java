@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import magic.translate.UiString;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 
 @SuppressWarnings("serial")
 class FilterResetButton extends JButton {

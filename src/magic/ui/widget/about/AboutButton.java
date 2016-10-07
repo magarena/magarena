@@ -7,9 +7,9 @@ import javax.swing.JButton;
 import magic.translate.StringContext;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
-import magic.ui.MouseHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.ScreenController;
-import magic.ui.WidgetHelper;
+import magic.ui.helpers.WidgetHelper;
 
 @SuppressWarnings("serial")
 class AboutButton extends JButton {
