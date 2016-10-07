@@ -17,7 +17,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;
 
@@ -70,7 +70,7 @@ public class CardImageOverlay extends TexturedPanel {
             Math.min(getWidth(), baseWidth) / (double) baseWidth,
             Math.min(getHeight(), baseHeight) / (double) baseHeight
         );
-        cardImage = GraphicsUtils.scale(baseImage, (int)(scale * baseWidth), (int)(scale * baseHeight));
+        cardImage = ImageHelper.scale(baseImage, (int)(scale * baseWidth), (int)(scale * baseHeight));
         repaint();
     }
 

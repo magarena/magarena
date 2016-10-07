@@ -21,7 +21,7 @@ import magic.ui.ScreenController;
 import magic.translate.StringContext;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 @SuppressWarnings("serial")
 public class PlayerZoneViewer extends JPanel implements ChangeListener {
@@ -56,8 +56,8 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
     private static ImageIcon getTabIcon(MagicIcon icon) {
         ImageIcon handIcon = MagicImages.getIcon(icon);
-        BufferedImage handImage = GraphicsUtils.getBufferedImage(handIcon);
-        BufferedImage scaledImage = GraphicsUtils.scale(handImage, 16, 16);
+        BufferedImage handImage = ImageHelper.getBufferedImage(handIcon);
+        BufferedImage scaledImage = ImageHelper.scale(handImage, 16, 16);
         return new ImageIcon(scaledImage);
     }
 

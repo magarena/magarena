@@ -28,7 +28,7 @@ import magic.model.MagicType;
 import magic.ui.MagicImages;
 import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 public class OracleText {
 
@@ -336,7 +336,7 @@ public class OracleText {
     ) {
 
         //setUp baseImage and Graphics2D
-        BufferedImage baseImage = GraphicsUtils.getCompatibleBufferedImage(
+        BufferedImage baseImage = ImageHelper.getCompatibleBufferedImage(
             (int) box.getWidth(),
             (int) box.getHeight(),
             Transparency.TRANSLUCENT);

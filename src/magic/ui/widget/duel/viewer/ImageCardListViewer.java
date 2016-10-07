@@ -31,7 +31,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.MagicImages;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.theme.Theme;
@@ -237,7 +237,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             final int x2=point.x+CARD_WIDTH;
             final int y2=point.y+CARD_HEIGHT;
 
-            final BufferedImage image = GraphicsUtils.scale(
+            final BufferedImage image = ImageHelper.scale(
                 MagicImages.getCardImage(cardDefinition),
                 CARD_WIDTH,
                 CARD_HEIGHT

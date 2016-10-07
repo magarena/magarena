@@ -21,7 +21,7 @@ import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.throbber.AbstractThrobber;
@@ -171,7 +171,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         } else {
             thisImage = aImage;
             gsImage = thisCard.isInvalid() && aImage != MagicImages.getMissingCardImage()
-                    ? GraphicsUtils.getGreyScaleImage(aImage)
+                    ? ImageHelper.getGreyScaleImage(aImage)
                     : null;
             isImagePending = false;
             throbber.setVisible(false);
@@ -215,7 +215,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         BufferedImage image = MagicImages.getCardImage(aCard);
 
         if (image.getWidth() != prefSize.width || image.getHeight() != prefSize.height) {
-            image = GraphicsUtils.scale(image, prefSize.width, prefSize.height);
+            image = ImageHelper.scale(image, prefSize.width, prefSize.height);
         }
 
         return image;

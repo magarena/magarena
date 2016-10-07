@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.JPanel;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 @SuppressWarnings("serial")
 public class TestContentPanel extends JPanel {
@@ -26,7 +26,7 @@ public class TestContentPanel extends JPanel {
         g2d.fillRect(0, 0, getWidth(), getHeight());
         g2d.setFont(getFont().deriveFont(48f));
         int w = g2d.getFontMetrics(g2d.getFont()).stringWidth("TEST");
-        GraphicsUtils.drawStringWithOutline(g2d, "TEST", (getWidth() -  w) / 2, (getHeight() - g2d.getFontMetrics().getHeight()) / 2);
+        ImageHelper.drawStringWithOutline(g2d, "TEST", (getWidth() -  w) / 2, (getHeight() - g2d.getFontMetrics().getHeight()) / 2);
         g2d.dispose();
     }
 }

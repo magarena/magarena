@@ -1,7 +1,7 @@
 package magic.ui;
 
 import magic.translate.UiString;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import java.awt.Component;
 import java.awt.Desktop;
 import java.nio.file.Path;
@@ -66,7 +66,7 @@ public class UiExceptionHandler extends FileExceptionHandler {
                 public void run() {
                     try {
                         final Path filePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("crash.png");
-                        GraphicsUtils.doScreenshotToFile(container, filePath);
+                        ImageHelper.doScreenshotToFile(container, filePath);
                     } catch (Exception e) {
                         System.err.println("ScreenShot failed : " + e.toString());
                     }

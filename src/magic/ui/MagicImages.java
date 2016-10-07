@@ -27,7 +27,7 @@ import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicResources;
 
@@ -39,7 +39,7 @@ public final class MagicImages {
     static {
         BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
         Dimension size = getPreferredImageSize(image);
-        BACK_IMAGE = GraphicsUtils.scale(image, size.width, size.height);
+        BACK_IMAGE = ImageHelper.scale(image, size.width, size.height);
     }
 
     // when the preferred image or icon is missing.
@@ -49,8 +49,8 @@ public final class MagicImages {
 
     // "M" logo variations.
     public static final BufferedImage LOGO = loadImage("logo.png");
-    public static final BufferedImage MENU_LOGO = GraphicsUtils.scale(LOGO, 40, 40);
-    public static final BufferedImage APP_LOGO = GraphicsUtils.scale(LOGO, 32, 32);
+    public static final BufferedImage MENU_LOGO = ImageHelper.scale(LOGO, 40, 40);
+    public static final BufferedImage APP_LOGO = ImageHelper.scale(LOGO, 32, 32);
 
     // About
     public static final BufferedImage ABOUT_LOGO = loadImage("magarena-logo.png");
@@ -118,7 +118,7 @@ public final class MagicImages {
 
     public static ImageIcon getSmallManaIcon(MagicIcon manaIcon) {
         if (!smallManaIcons.containsKey(manaIcon)) {
-            Image image = GraphicsUtils.scale(loadManaImage(manaIcon), 15, 15);
+            Image image = ImageHelper.scale(loadManaImage(manaIcon), 15, 15);
             smallManaIcons.put(manaIcon, new ImageIcon(image));
         }
         return smallManaIcons.get(manaIcon);
@@ -126,7 +126,7 @@ public final class MagicImages {
 
     public static ImageIcon getBigManaIcon(MagicIcon manaIcon) {
         if (!bigManaIcons.containsKey(manaIcon)) {
-            Image image = GraphicsUtils.scale(loadManaImage(manaIcon), 25, 25);
+            Image image = ImageHelper.scale(loadManaImage(manaIcon), 25, 25);
             bigManaIcons.put(manaIcon, new ImageIcon(image));
         }
         return bigManaIcons.get(manaIcon);

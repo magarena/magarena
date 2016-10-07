@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 import magic.model.MagicCard;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -314,7 +314,7 @@ public class CardsCanvas extends JPanel {
         final int W = canvasCard.getBounds().width;
         final int H = canvasCard.getBounds().height;
 
-        g.drawImage(GraphicsUtils.scale(canvasCard.getFrontImage(), W, H), X, Y, null);
+        g.drawImage(ImageHelper.scale(canvasCard.getFrontImage(), W, H), X, Y, null);
 
         if (stackDuplicateCards) {
             drawCardCount(g, X, Y, W, H, canvasCard);

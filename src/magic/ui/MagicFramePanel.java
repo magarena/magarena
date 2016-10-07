@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -106,7 +106,7 @@ class MagicFramePanel extends JPanel {
 
     private BufferedImage getBackgroundImage() {
         return GeneralConfig.getInstance().isCustomBackground()
-            ? GraphicsUtils.getCustomBackgroundImage()
+            ? ImageHelper.getCustomBackgroundImage()
             : activeTheme.getBackgroundImage();
     }
 
@@ -124,8 +124,8 @@ class MagicFramePanel extends JPanel {
             imageRect = new Rectangle(0, (ih - ih2) / 2, iw, ih2);
         }
 
-        final BufferedImage subImage = GraphicsUtils.getOptimizedSubimage(aImage, imageRect);
-        cachedImage = GraphicsUtils.scale(subImage, container.width, container.height);
+        final BufferedImage subImage = ImageHelper.getOptimizedSubimage(aImage, imageRect);
+        cachedImage = ImageHelper.scale(subImage, container.width, container.height);
         g.drawImage(cachedImage, 0, 0, this);
     }
 

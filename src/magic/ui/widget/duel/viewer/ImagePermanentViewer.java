@@ -30,7 +30,7 @@ import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.ImageDrawingUtils;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
@@ -269,7 +269,7 @@ public class ImagePermanentViewer extends JPanel {
             final int x2 = x1 + linkedRect.width - 1;
             final int y2 = y1 + linkedRect.height - 1;
 
-            final BufferedImage image = GraphicsUtils.scale(
+            final BufferedImage image = ImageHelper.scale(
                 MagicImages.getCardImage(linkedInfo.permanent),
                 linkedInfo.tapped ? linkedRect.height : linkedRect.width,
                 linkedInfo.tapped ? linkedRect.width : linkedRect.height

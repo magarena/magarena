@@ -1,4 +1,4 @@
-package magic.ui.utility;
+package magic.ui.helpers;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -30,10 +30,11 @@ import javax.swing.JComponent;
 import magic.ui.image.filter.GrayScaleImageFilter;
 import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 
-final public class GraphicsUtils {
+final public class ImageHelper {
 
     private static final GrayScaleImageFilter GRAYSCALE_FILTER = new GrayScaleImageFilter();
 
@@ -44,7 +45,7 @@ final public class GraphicsUtils {
             .getDefaultConfiguration() :
         null;
 
-    private GraphicsUtils() {}
+    private ImageHelper() {}
 
     public static BufferedImage scale(final BufferedImage img, final int targetWidth, final int targetHeight) {
         if (img.getWidth() == targetWidth && img.getHeight() == targetHeight) {
@@ -219,7 +220,7 @@ final public class GraphicsUtils {
         }
 
         return (image != null) ?
-            GraphicsUtils.getOptimizedImage(image) :
+            ImageHelper.getOptimizedImage(image) :
             MagicStyle.getTheme().getTexture(Theme.TEXTURE_BACKGROUND);
     }
 
@@ -237,7 +238,7 @@ final public class GraphicsUtils {
 
     public static BufferedImage getConvertedIcon(final ImageIcon icon) {
         final BufferedImage bi =
-                GraphicsUtils.getCompatibleBufferedImage(
+                ImageHelper.getCompatibleBufferedImage(
                         icon.getIconWidth(), icon.getIconHeight(), Transparency.TRANSLUCENT);
         final Graphics g = bi.createGraphics();
         // paint the Icon to the BufferedImage.
@@ -299,7 +300,7 @@ final public class GraphicsUtils {
     }
 
     public static BufferedImage getTranslucentImage(BufferedImage image, float opacity) {
-        final BufferedImage newImage = GraphicsUtils.getCompatibleBufferedImage(image);
+        final BufferedImage newImage = ImageHelper.getCompatibleBufferedImage(image);
         final Graphics2D g2d = newImage.createGraphics();
         g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacity));
         g2d.drawImage(image, 0, 0, null);
@@ -326,7 +327,7 @@ final public class GraphicsUtils {
      *  (see <a href="http://www.jhlabs.com/ip/managed_images.html">external link</a>)
      */
     public static BufferedImage getOptimizedSubimage(BufferedImage image, Rectangle rect) {
-        return GraphicsUtils.getOptimizedImage(image.getSubimage(rect.x, rect.y, rect.width, rect.height));
+        return ImageHelper.getOptimizedImage(image.getSubimage(rect.x, rect.y, rect.width, rect.height));
     }
 
 }

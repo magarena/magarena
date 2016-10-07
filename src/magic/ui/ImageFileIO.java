@@ -1,6 +1,6 @@
 package magic.ui;
 
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import java.awt.image.BufferedImage;
 import java.io.Closeable;
 import java.io.File;
@@ -36,7 +36,7 @@ public final class ImageFileIO {
             return def.get();
         } else {
             final BufferedImage optimizedImage =
-                    GraphicsUtils.getCompatibleBufferedImage(img.getWidth(), img.getHeight(), img.getTransparency());
+                    ImageHelper.getCompatibleBufferedImage(img.getWidth(), img.getHeight(), img.getTransparency());
             optimizedImage.getGraphics().drawImage(img, 0, 0 , null);
             return optimizedImage;
         }
@@ -49,7 +49,7 @@ public final class ImageFileIO {
             imageFile.delete();
             return null;
         }
-        BufferedImage optimizedImage = GraphicsUtils.getCompatibleBufferedImage(
+        BufferedImage optimizedImage = ImageHelper.getCompatibleBufferedImage(
             sourceImage.getWidth(),
             sourceImage.getHeight(),
             sourceImage.getTransparency()

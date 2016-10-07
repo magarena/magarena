@@ -13,7 +13,7 @@ import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -49,15 +49,15 @@ class StatsTable extends JPanel {
         for (MagicColor color : MagicColor.values()) {
             final ImageIcon colorIcon = MagicImages.getIcon(color.getManaType());
             manaIconOn[color.ordinal()] = colorIcon;
-            final Image gsImage =  GraphicsUtils.getGreyScaleImage(colorIcon.getImage());
-            manaIconOff[color.ordinal()] = new ImageIcon(GraphicsUtils.getTranslucentImage(gsImage, 0.3f));
+            final Image gsImage =  ImageHelper.getGreyScaleImage(colorIcon.getImage());
+            manaIconOff[color.ordinal()] = new ImageIcon(ImageHelper.getTranslucentImage(gsImage, 0.3f));
         }
     }
 
     private static void setTypeOffIcons() {
         for (MagicIcon icon : MagicIcon.TYPE_ICONS) {
             final ImageIcon colorIcon = MagicImages.getIcon(icon);
-            final Image fadedImage = GraphicsUtils.getTranslucentImage(colorIcon.getImage(), 0.2f);
+            final Image fadedImage = ImageHelper.getTranslucentImage(colorIcon.getImage(), 0.2f);
             typeIconOff.put(icon, new ImageIcon(fadedImage));
         }
     }

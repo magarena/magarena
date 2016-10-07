@@ -4,7 +4,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 class ImageScaler {
 
@@ -26,7 +26,7 @@ class ImageScaler {
         final double heightRatio = rect.getHeight() / origImage.getHeight();
         final double aspectRatio = Math.min(widthRatio, heightRatio);
 
-        scaledImage = GraphicsUtils.scale(
+        scaledImage = ImageHelper.scale(
             origImage,
             (int) (origImage.getWidth() * aspectRatio),
             (int) (origImage.getHeight() * aspectRatio),

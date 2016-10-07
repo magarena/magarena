@@ -14,10 +14,12 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.ScreenController;
 import magic.ui.helpers.DesktopHelper;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 import static magic.utility.MagicFileSystem.getDataPath;
 import org.apache.commons.io.FileUtils;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
 import static magic.utility.MagicFileSystem.getDataPath;
 
 final class GameplayReport {
@@ -42,7 +44,7 @@ final class GameplayReport {
 
     private static void saveScreenshot() throws IOException {
         final Path filePath = MagicFileSystem.getGameplayReportDirectory().resolve(SCREEN_FILE);
-        GraphicsUtils.doScreenshotToFile(ScreenController.getMainFrame().getContentPane(), filePath, IMAGE_TYPE);
+        ImageHelper.doScreenshotToFile(ScreenController.getMainFrame().getContentPane(), filePath, IMAGE_TYPE);
     }
 
     private static void saveGameState(MagicGame aGame) {

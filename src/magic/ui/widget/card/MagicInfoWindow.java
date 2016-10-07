@@ -9,7 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JWindow;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import net.miginfocom.swing.MigLayout;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -101,7 +101,7 @@ public class MagicInfoWindow extends JWindow {
     @Override
     public void setVisible(boolean aFlag) {
         super.setVisible(aFlag);
-        if (GraphicsUtils.isWindowTranslucencySupported()) {
+        if (ImageHelper.isWindowTranslucencySupported()) {
             if (aFlag == false) {
                 setOpacity(0f);
             } else {

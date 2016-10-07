@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import net.miginfocom.swing.MigLayout;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.callback.TimelineCallback;
@@ -56,7 +56,7 @@ public class AboutContentPanel extends JPanel
         BufferedImage image = MagicImages.ABOUT_LOGO;
         int scaledW = (int) (image.getWidth() * imageScale);
         int scaledH = (int) (image.getHeight() * imageScale);
-        BufferedImage scaled = GraphicsUtils.scale(image, scaledW, scaledH);
+        BufferedImage scaled = ImageHelper.scale(image, scaledW, scaledH);
         int posX = (getWidth() - scaled.getWidth()) / 2;
         int posY = (getHeight() - scaled.getHeight()) / 2;
         g.drawImage(scaled, posX, posY, null);

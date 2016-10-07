@@ -17,7 +17,7 @@ import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -40,14 +40,14 @@ public class PlayerImagePanel extends AnimationPanel {
     public PlayerImagePanel(final PlayerViewerInfo player) {
         this.playerInfo = player;
         activeImage = getPlayerAvatarImage();
-        inactiveImage = GraphicsUtils.getGreyScaleImage(activeImage);
+        inactiveImage = ImageHelper.getGreyScaleImage(activeImage);
         poisonCounter = new CounterOverlay(20, 20, Color.GREEN);
         damageCounter = new CounterOverlay(20, 20, Color.CYAN);
     }
 
     private BufferedImage getPlayerAvatarImage() {
         final ImageIcon icon = MagicImages.getIconSize3(this.playerInfo.player.getPlayerDefinition());
-        return GraphicsUtils.scale(GraphicsUtils.getConvertedIcon(icon), 74, 74);
+        return ImageHelper.scale(ImageHelper.getConvertedIcon(icon), 74, 74);
     }
 
     @Override
@@ -119,7 +119,7 @@ public class PlayerImagePanel extends AnimationPanel {
         final String text = Integer.toString(playerInfo.life);
         final int textX = x + 4;
         final int textY = y + image.getHeight(null) - 6;
-        GraphicsUtils.drawStringWithOutline(g2d, text, textX, textY);
+        ImageHelper.drawStringWithOutline(g2d, text, textX, textY);
     }
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {

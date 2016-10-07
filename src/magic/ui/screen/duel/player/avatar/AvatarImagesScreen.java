@@ -48,7 +48,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.ImageFileIO;
 import magic.translate.UiString;
 import magic.ui.screen.AbstractScreen;
@@ -115,7 +115,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
             final String filePath = imagePath.toAbsolutePath().toString();
             try (final InputStream ins = new FileInputStream(new File(filePath))) {
                 final BufferedImage image = ImageFileIO.toImg(ins, MagicImages.MISSING_BIG);
-                final ImageIcon icon = new ImageIcon(GraphicsUtils.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
+                final ImageIcon icon = new ImageIcon(ImageHelper.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
                 final JLabel iconLabel = new JLabel(icon);
                 imagePathMap.put(iconLabel, imagePath);
                 iconLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -160,7 +160,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
         icon.paintIcon(null, g, 0,0);
         g.dispose();
         rightActionButton = new ActionBarButton(
-            new ImageIcon(GraphicsUtils.scale(bi, 46, 46)),
+            new ImageIcon(ImageHelper.scale(bi, 46, 46)),
             UiString.get(_S1), UiString.get(_S2),
             new AbstractAction() {
                 @Override

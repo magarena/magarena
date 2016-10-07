@@ -15,7 +15,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JToggleButton;
 import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.MagicImages;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
@@ -129,10 +129,10 @@ public class ZoneToggleButton extends JToggleButton {
 
     private BufferedImage getZoneIconAsImage() {
         if (zoneIconImage == null) {
-            zoneIconImage = GraphicsUtils.getCompatibleBufferedImage(32, 32, Transparency.TRANSLUCENT);
+            zoneIconImage = ImageHelper.getCompatibleBufferedImage(32, 32, Transparency.TRANSLUCENT);
             Graphics2D g2d = (Graphics2D) zoneIconImage.getGraphics();
             g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-            final Image iconImage = GraphicsUtils.getConvertedIcon(MagicImages.getIcon(magicIcon));
+            final Image iconImage = ImageHelper.getConvertedIcon(MagicImages.getIcon(magicIcon));
             g2d.drawImage(iconImage, 0, 0, this);
             g2d.dispose();
         }
@@ -148,7 +148,7 @@ public class ZoneToggleButton extends JToggleButton {
         int textX = x + ((iconImage.getWidth(null) / 2) - (textWidth / 2));
         int textY = y - 6;
         if (valueStyle == ValueStyle.OUTLINE) {
-            GraphicsUtils.drawStringWithOutline(g2d, text, textX, textY);
+            ImageHelper.drawStringWithOutline(g2d, text, textX, textY);
         } else {
             g2d.drawString(text, textX, textY);
         }

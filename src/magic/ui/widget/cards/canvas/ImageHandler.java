@@ -10,7 +10,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.IOException;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 public class ImageHandler {
 
@@ -38,7 +38,7 @@ public class ImageHandler {
 
     public BufferedImage getAnnotatedImage(final String id, final Image sourceImage) {
         final BufferedImage pic
-                = GraphicsUtils.getCompatibleBufferedImage(
+                = ImageHelper.getCompatibleBufferedImage(
                         sourceImage.getWidth(observer),
                         sourceImage.getHeight(observer));
         Graphics2D g2d = (Graphics2D) pic.getGraphics();
@@ -67,7 +67,7 @@ public class ImageHandler {
                 final double aspectRatio = (double) sourceImage.getWidth() / sourceImage.getHeight();
                 final int newHeight = (int) (newWidth / aspectRatio);
                 final boolean useQualityScale = newWidth < sourceImage.getWidth();
-                scaledImage = GraphicsUtils.scale(
+                scaledImage = ImageHelper.scale(
                         sourceImage,
                         newWidth, newHeight,
                         RenderingHints.VALUE_INTERPOLATION_BILINEAR,
@@ -88,7 +88,7 @@ public class ImageHandler {
      */
     private BufferedImage loadImageResourceFromFile(final String filename) {
         final BufferedImage source = loadImage(filename);
-        final BufferedImage buffImage = GraphicsUtils.getCompatibleBufferedImage(source.getWidth(), source.getHeight());
+        final BufferedImage buffImage = ImageHelper.getCompatibleBufferedImage(source.getWidth(), source.getHeight());
         buffImage.getGraphics().drawImage(source, 0, 0, observer);
         return buffImage;
     }

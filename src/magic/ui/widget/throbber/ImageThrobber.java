@@ -8,7 +8,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.HierarchyEvent;
 import java.awt.image.BufferedImage;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 @SuppressWarnings("serial")
 public class ImageThrobber extends AbstractThrobber {
@@ -72,7 +72,7 @@ public class ImageThrobber extends AbstractThrobber {
             final boolean isShowingChanged = (e.getChangeFlags() & HierarchyEvent.SHOWING_CHANGED) == HierarchyEvent.SHOWING_CHANGED;
             if (isShowingChanged) {
                 displayImage = isColorSet
-                    ? GraphicsUtils.getColoredImage(sourceImage, getForeground())
+                    ? ImageHelper.getColoredImage(sourceImage, getForeground())
                     : sourceImage;
             }
         });

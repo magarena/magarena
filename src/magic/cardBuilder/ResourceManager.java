@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.imageio.ImageIO;
 
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 
 public class ResourceManager {
 
@@ -271,7 +271,7 @@ public class ResourceManager {
     private static BufferedImage getComponent(String imageName) {
         String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
-            return GraphicsUtils.getOptimizedImage(ImageIO.read(is));
+            return ImageHelper.getOptimizedImage(ImageIO.read(is));
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
@@ -280,14 +280,14 @@ public class ResourceManager {
     public static BufferedImage getImage(String name) {
         String fName = "/cardbuilder/images/" + name;
         try (final InputStream is = getJarResourceStream(fName)) {
-            return GraphicsUtils.getOptimizedImage(ImageIO.read(is));
+            return ImageHelper.getOptimizedImage(ImageIO.read(is));
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
     }
 
     public static BufferedImage newFrame(BufferedImage bi) {
-        return GraphicsUtils.getOptimizedImage(bi);
+        return ImageHelper.getOptimizedImage(bi);
     }
 
 }

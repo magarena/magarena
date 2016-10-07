@@ -15,7 +15,7 @@ import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
 
@@ -137,15 +137,15 @@ public class MenuButton extends JButton {
     @Override
     public void setIcon(final Icon defaultIcon) {
         super.setIcon(defaultIcon);
-        setRolloverIcon(GraphicsUtils.getRecoloredIcon(
+        setRolloverIcon(ImageHelper.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.getRolloverColor())
         );
-        setPressedIcon(GraphicsUtils.getRecoloredIcon(
+        setPressedIcon(ImageHelper.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.getPressedColor())
         );
-        setDisabledIcon(GraphicsUtils.getRecoloredIcon(
+        setDisabledIcon(ImageHelper.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 COLOR_DISABLED)
         );

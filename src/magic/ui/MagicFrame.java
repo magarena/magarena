@@ -23,7 +23,7 @@ import magic.model.MagicGameLog;
 import magic.ui.screen.ScreenHelper;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.helpers.DesktopHelper;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -215,7 +215,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     private void doScreenshot() {
         try {
             final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
-            final File imageFile = GraphicsUtils.doScreenshotToFile(this.getContentPane(), filePath);
+            final File imageFile = ImageHelper.doScreenshotToFile(this.getContentPane(), filePath);
             DesktopHelper.openFileInDefaultOsEditor(imageFile);
         } catch (IOException | DesktopNotSupportedException e) {
             e.printStackTrace();
@@ -259,7 +259,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
 
     private void doSetCustomBackgroundImage(File imageFile) {
 
-        if (!GraphicsUtils.isValidImageFile(imageFile)) {
+        if (!ImageHelper.isValidImageFile(imageFile)) {
             ScreenController.showWarningMessage("Invalid image file.");
             return;
         }

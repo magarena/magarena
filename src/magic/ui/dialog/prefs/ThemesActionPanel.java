@@ -17,7 +17,7 @@ import magic.ui.MagicSound;
 import magic.ui.helpers.UrlHelper;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.helpers.DesktopHelper;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -81,8 +81,8 @@ class ThemesActionPanel extends JPanel {
     }
 
     private ImageIcon getActionIcon(MagicIcon icon) {
-        final ImageIcon blackIcon = (ImageIcon) GraphicsUtils.getRecoloredIcon(MagicImages.getIcon(icon), Color.BLACK);
-        final BufferedImage scaledImage = GraphicsUtils.scale(GraphicsUtils.getConvertedIcon(blackIcon), 18, 18);
+        final ImageIcon blackIcon = (ImageIcon) ImageHelper.getRecoloredIcon(MagicImages.getIcon(icon), Color.BLACK);
+        final BufferedImage scaledImage = ImageHelper.scale(ImageHelper.getConvertedIcon(blackIcon), 18, 18);
         return new ImageIcon(scaledImage);
 
     }

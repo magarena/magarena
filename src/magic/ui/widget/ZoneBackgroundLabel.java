@@ -11,7 +11,7 @@ import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -158,7 +158,7 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
 
     private void createBackgroundImage() {
         cachedSize = new Dimension(getSize());
-        cachedImage = GraphicsUtils.getCompatibleBufferedImage(cachedSize.width, cachedSize.height);
+        cachedImage = ImageHelper.getCompatibleBufferedImage(cachedSize.width, cachedSize.height);
         final Graphics2D g2d = cachedImage.createGraphics();
         drawThemeBackground(g2d);
         g2d.dispose();

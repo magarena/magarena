@@ -41,7 +41,7 @@ import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.ui.theme.AbilityIcon;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
 import org.pushingpixels.trident.Timeline;
@@ -222,7 +222,7 @@ public class AnnotatedCardPanel extends JPanel {
 
     private void setPopupImage() {
         // create a blank canvas of the appropriate size.
-        popupImage = GraphicsUtils.getCompatibleBufferedImage(getWidth(), getHeight(), Transparency.TRANSLUCENT);
+        popupImage = ImageHelper.getCompatibleBufferedImage(getWidth(), getHeight(), Transparency.TRANSLUCENT);
         final Graphics g = popupImage.getGraphics();
         final Graphics2D g2d = (Graphics2D)g;
         // don't overwrite original image with modified PT overlay, use a copy.
@@ -232,7 +232,7 @@ public class AnnotatedCardPanel extends JPanel {
             drawPowerToughnessOverlay(cardCanvas);
         }
         // scale card image if required.
-        final BufferedImage scaledImage = GraphicsUtils.scale(cardCanvas, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
+        final BufferedImage scaledImage = ImageHelper.scale(cardCanvas, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
         //
         // draw card image onto popup canvas, right-aligned.
         g.drawImage(scaledImage, popupSize.width - imageOnlyPopupSize.width, 0, this);
@@ -242,7 +242,7 @@ public class AnnotatedCardPanel extends JPanel {
         if (MagicSystem.isDevMode() && magicObject != null && magicObject instanceof MagicPermanent) {
             final MagicPermanent card = (MagicPermanent) magicObject;
             g.setFont(FontsAndBorders.FONT1);
-            GraphicsUtils.drawStringWithOutline(g, Long.toString(card.getCard().getId()), 2, 14);
+            ImageHelper.drawStringWithOutline(g, Long.toString(card.getCard().getId()), 2, 14);
         }
 
     }
@@ -257,7 +257,7 @@ public class AnnotatedCardPanel extends JPanel {
     private BufferedImage getPTOverlay(Color maskColor) {
 
         // create fixed size empty transparent image.
-        final BufferedImage overlay = GraphicsUtils.getCompatibleBufferedImage(312, 445, Transparency.TRANSLUCENT);
+        final BufferedImage overlay = ImageHelper.getCompatibleBufferedImage(312, 445, Transparency.TRANSLUCENT);
         final Graphics2D g2d = overlay.createGraphics();
 
         // use a rectangular opaque mask to hide original P/T.
@@ -294,7 +294,7 @@ public class AnnotatedCardPanel extends JPanel {
         );
 
         // get transparent P/T overlay and size to card image.
-        final BufferedImage overlay = GraphicsUtils.scale(
+        final BufferedImage overlay = ImageHelper.scale(
             getPTOverlay(maskColor),
             cardImage.getWidth(),
             cardImage.getHeight()

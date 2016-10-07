@@ -8,7 +8,7 @@ import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.helpers.ImageHelper;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.Timeline.RepeatBehavior;
 
@@ -142,7 +142,7 @@ public abstract class AbstractThrobber extends JComponent {
             return null;
         }
 
-        final BufferedImage image = GraphicsUtils.getCompatibleBufferedImage(W, H, Transparency.TRANSLUCENT);
+        final BufferedImage image = ImageHelper.getCompatibleBufferedImage(W, H, Transparency.TRANSLUCENT);
         final Graphics2D g2d = image.createGraphics();
 
         if (isAntiAliasOn) {
