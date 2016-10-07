@@ -14,7 +14,7 @@ import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.utility.GraphicsUtils;
@@ -74,7 +74,7 @@ class ThemesActionPanel extends JPanel {
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                URLUtils.openURL(URLUtils.URL_THEMES);
+                UrlHelper.openURL(UrlHelper.URL_THEMES);
             }
         });
         return btn;

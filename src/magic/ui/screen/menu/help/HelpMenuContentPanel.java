@@ -1,7 +1,7 @@
 package magic.ui.screen.menu.help;
 
 import magic.ui.ScreenController;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.screen.menu.MenuScreenContentPanel;
 
 @SuppressWarnings("serial")
@@ -31,7 +31,7 @@ class HelpMenuContentPanel extends MenuScreenContentPanel {
     }
 
     void onOnlineHelpMenu() {
-        URLUtils.openURL(URLUtils.URL_USERGUIDE);
+        UrlHelper.openURL(UrlHelper.URL_USERGUIDE);
     }
 
     void onKeywordsMenu() {

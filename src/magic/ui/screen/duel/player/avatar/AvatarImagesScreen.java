@@ -37,7 +37,7 @@ import javax.swing.border.Border;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.ui.MagicImages;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.ScreenController;
 import magic.ui.widget.WrapLayout;
 import magic.ui.screen.interfaces.IActionBar;
@@ -338,7 +338,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
         buttons.add(new MenuButton(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                URLUtils.openURL(URLUtils.URL_AVATARS);
+                UrlHelper.openURL(UrlHelper.URL_AVATARS);
             }
         }, UiString.get(_S6)));
         return buttons;

@@ -3,7 +3,7 @@ package magic.ui.screen;
 import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
@@ -46,7 +46,7 @@ public abstract class MagicScreen extends JPanel {
     }
 
     public void showWikiHelpPage() {
-        URLUtils.openURL(wikiPage.getUrl());
+        UrlHelper.openURL(wikiPage.getUrl());
     }
 
     public boolean isScreenReadyToClose(final Object aScreen) {

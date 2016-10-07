@@ -1,5 +1,7 @@
 package magic.ui;
 
+import magic.ui.helpers.UrlHelper;
+
 public enum WikiPage {
     
     HOME("home"),
@@ -18,6 +20,6 @@ public enum WikiPage {
     }
 
     public String getUrl() {
-        return URLUtils.URL_WIKI + pageName;
+        return UrlHelper.URL_WIKI + pageName;
     }
 }

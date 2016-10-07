@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.helpers.UrlHelper;
 import magic.translate.UiString;
 import magic.ui.utility.MagicStyle;
 import java.awt.Color;
@@ -81,7 +82,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                URLUtils.openURL(URLUtils.URL_USERGUIDE);
+                UrlHelper.openURL(UrlHelper.URL_USERGUIDE);
                 hideOverlay();
             }
         });

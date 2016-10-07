@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.helpers;
 
 import java.awt.Desktop;
 import java.io.IOException;
@@ -7,8 +7,9 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import magic.ui.CardTextLanguage;
 
-public class URLUtils {
+public final class UrlHelper {
 
     public static final String URL_THEMES = "http://github.com/magarena/magarena/wiki/Themes";
     public static final String URL_AVATARS = "http://www.slightlymagic.net/forum/viewforum.php?f=89";
@@ -69,6 +70,7 @@ public class URLUtils {
         } catch (IOException ex) {
             return false;
         }
-
     }
+    
+    private UrlHelper() { }
 }

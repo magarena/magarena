@@ -3,7 +3,7 @@ package magic.ui.screen;
 import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
@@ -71,7 +71,7 @@ public abstract class AbstractScreen extends JPanel {
 
     public void showWikiHelpPage() {
         if (this.hasWikiPage()) {
-            URLUtils.openURL(((IWikiPage)this).getWikiPageName().getUrl());
+            UrlHelper.openURL(((IWikiPage)this).getWikiPageName().getUrl());
         }
     }
 

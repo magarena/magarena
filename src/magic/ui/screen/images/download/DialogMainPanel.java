@@ -15,7 +15,7 @@ import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.dialog.button.CloseButton;
 import net.miginfocom.swing.MigLayout;
 
@@ -182,7 +182,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             helpButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    URLUtils.openURL(URLUtils.URL_WIKI + "Download-images");
+                    UrlHelper.openURL(UrlHelper.URL_WIKI + "Download-images");
                 }
             });
             hintPanel.addHintSource(helpButton, String.format("<b>%s</b><br>%s",

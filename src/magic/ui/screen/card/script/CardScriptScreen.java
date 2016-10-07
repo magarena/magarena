@@ -22,7 +22,7 @@ import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.widget.CardSideBar;
 import magic.ui.screen.interfaces.IActionBar;
@@ -113,7 +113,7 @@ public class CardScriptScreen
     }
 
     private void openFiremindScriptsSubmissionWebpage() {
-        URLUtils.openURL(URLUtils.URL_FIREMIND_SCRIPTS);
+        UrlHelper.openURL(UrlHelper.URL_FIREMIND_SCRIPTS);
     }
 
     @Override

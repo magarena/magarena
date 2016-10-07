@@ -5,7 +5,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
@@ -40,7 +40,7 @@ public class NewVersionAlertButton extends AlertButton {
                         null,
                         buttons, buttons[0]);
                 if (rc == 0) {
-                    URLUtils.openURL(URLUtils.URL_HOMEPAGE);
+                    UrlHelper.openURL(UrlHelper.URL_HOMEPAGE);
                     // don't display alert again until next restart.
                     newVersion = "";
                 } else if (rc == 1) {

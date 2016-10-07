@@ -28,7 +28,7 @@ import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.exception.DesktopNotSupportedException;
 import magic.ui.ScreenController;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.utility.DesktopUtils;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
@@ -85,7 +85,7 @@ class TranslationPanel extends JPanel {
         final JMenuItem menu = new JMenuItem(new AbstractAction(UiString.get(UiString.get(_S17))) {
             @Override
             public void actionPerformed(ActionEvent e) {
-                URLUtils.openURL(URLUtils.URL_WIKI + "Translating-Magarena");
+                UrlHelper.openURL(UrlHelper.URL_WIKI + "Translating-Magarena");
             }
         });
         popupMenu.add(menu);

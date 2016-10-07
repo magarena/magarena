@@ -19,7 +19,7 @@ import magic.data.GeneralConfig;
 import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.MagicLogFile;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -119,7 +119,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
      */
     private URL getAlternateUrl(DownloadableFile aFile, CardTextLanguage textLang) {
         try {
-            return URLUtils.getAlternateMagicCardsImageUrl(aFile.getUrl(), textLang);
+            return UrlHelper.getAlternateMagicCardsImageUrl(aFile.getUrl(), textLang);
         } catch (MalformedURLException ex) {
             listener.setMessage(String.format("%s [%s]", ex.toString(), aFile.getUrl()));
             return null;
@@ -149,7 +149,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
 
     private boolean downloadAlternateCardImage(final CardImageFile aFile, CardTextLanguage aLang) {
         final URL altUrl = getAlternateUrl(aFile, aLang);
-        if (URLUtils.isUrlValid(altUrl)) {
+        if (UrlHelper.isUrlValid(altUrl)) {
             if (tryAlternateDownload(new DownloadableFile(aFile.getLocalFile(), altUrl), aLang)) {
                 doLog(aFile.getCardName(), aLang, altUrl);
                 return true;
@@ -198,7 +198,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         final File local = MagicFileSystem.getCroppedCardImageFile(imageFile.getCard());
         if (card.getImageURL().contains("magiccards.info/scans/")) {
             final URL remote = new URL(card.getImageURL().replace("/scans/", "/crop/"));
-            if (URLUtils.isUrlValid(remote)) {
+            if (UrlHelper.isUrlValid(remote)) {
                 if (tryDefaultDownload(new DownloadableFile(local, remote))) {
                     doLog(card.getCardTextName(), CardTextLanguage.ENGLISH, remote);
                     return true;

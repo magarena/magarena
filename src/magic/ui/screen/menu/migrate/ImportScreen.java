@@ -17,7 +17,7 @@ import javax.swing.SwingUtilities;
 import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
-import magic.ui.URLUtils;
+import magic.ui.helpers.UrlHelper;
 import magic.translate.UiString;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.widget.MenuButton;
@@ -113,7 +113,7 @@ public class ImportScreen extends AbstractScreen {
                 addMenuItem(UiString.get(UiString.get(_S5)), new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent ev) {
-                        URLUtils.openURL(URLUtils.URL_WIKI + "Upgrading-to-a-new-release");
+                        UrlHelper.openURL(UrlHelper.URL_WIKI + "Upgrading-to-a-new-release");
                     }
                 }, UiString.get(_S6));
 
