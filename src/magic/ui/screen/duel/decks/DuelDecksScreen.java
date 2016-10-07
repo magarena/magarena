@@ -36,7 +36,6 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
-import magic.ui.widget.StartGameButton;
 import magic.utility.MagicSystem;
 import magic.ui.WikiPage;
 
