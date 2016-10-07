@@ -1,5 +1,6 @@
 package magic.ui.screen.widget;
 
+import magic.ui.widget.about.AboutPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JPanel;
@@ -28,12 +29,12 @@ public class ScreenHeaderPanel extends TexturedPanel
 
     public final static int PANEL_HEIGHT = 50;
 
-    private final CaptionPanel titlePanel;
+    private final AboutPanel titlePanel;
     private JPanel contentPanel = TEMP_PANEL;
 
     public ScreenHeaderPanel(String title) {
 
-        this.titlePanel = new CaptionPanel(title);
+        this.titlePanel = new AboutPanel(title);
 
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
         refreshStyle();

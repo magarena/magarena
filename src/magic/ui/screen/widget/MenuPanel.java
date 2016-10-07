@@ -1,5 +1,6 @@
 package magic.ui.screen.widget;
 
+import magic.ui.widget.about.AboutPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
@@ -74,8 +75,8 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
         }
     }
 
-    private CaptionPanel getMenuTitlePanel() {
-        final CaptionPanel p = new CaptionPanel(this.title);
+    private AboutPanel getMenuTitlePanel() {
+        final AboutPanel p = new AboutPanel(this.title);
         p.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY));
         return p;
     }

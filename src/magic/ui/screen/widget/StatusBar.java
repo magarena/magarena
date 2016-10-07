@@ -1,5 +1,6 @@
 package magic.ui.screen.widget;
 
+import magic.ui.widget.about.AboutPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -44,7 +45,7 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
         setLayout(new MigLayout("insets 0 4 0 0, gap 12, aligny center", "[33%][][33%]"));
         if (magScreen != null) {
             final IStatusBar screen = (IStatusBar)magScreen;
-            add(new CaptionPanel(screen.getScreenCaption()));
+            add(new AboutPanel(screen.getScreenCaption()));
             add(screen.getStatusPanel() != null ? screen.getStatusPanel() : new JLabel(), "pushx, alignx center");
             add(new OptionsPanel(), "w 100%");
         }
