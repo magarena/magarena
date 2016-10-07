@@ -13,7 +13,7 @@ import magic.model.MagicMessage;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.message.MessageStyle;
 import magic.ui.widget.message.TextComponent;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

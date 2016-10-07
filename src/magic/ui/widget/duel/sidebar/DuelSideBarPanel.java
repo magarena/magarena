@@ -21,7 +21,7 @@ import magic.ui.widget.duel.viewer.GameStatusPanel;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;

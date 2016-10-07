@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.helpers.DesktopHelper;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;

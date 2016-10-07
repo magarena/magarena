@@ -41,7 +41,7 @@ import magic.ui.MagicFrame;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;

@@ -22,7 +22,7 @@ import magic.ui.widget.message.MessageStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

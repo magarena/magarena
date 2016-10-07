@@ -21,7 +21,7 @@ import javax.swing.SwingUtilities;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")

@@ -14,7 +14,7 @@ import javax.swing.event.TableModelEvent;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;

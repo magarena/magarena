@@ -27,7 +27,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.UiString;
 import magic.ui.ScreenController;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.utility.DeckUtils;
 import static magic.utility.DeckUtils.DECK_EXTENSION;
 import static magic.utility.DeckUtils.getDeckFolder;

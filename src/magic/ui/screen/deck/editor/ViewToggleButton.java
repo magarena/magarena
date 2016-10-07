@@ -10,7 +10,7 @@ import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class ViewToggleButton extends JToggleButton {

@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 
 public abstract class AbstractTheme implements Theme {
 

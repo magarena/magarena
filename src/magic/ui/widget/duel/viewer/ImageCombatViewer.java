@@ -6,7 +6,7 @@ import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import magic.ui.IChoiceViewer;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;

@@ -11,7 +11,7 @@ import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.StackViewerInfo;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.message.TextLabel;
 

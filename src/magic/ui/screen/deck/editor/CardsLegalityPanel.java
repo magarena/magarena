@@ -29,7 +29,7 @@ import magic.model.MagicDeck;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.translate.StringContext;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

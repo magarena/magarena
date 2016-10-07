@@ -7,7 +7,7 @@ import javax.swing.JComponent;
 import magic.data.TextImages;
 import magic.model.MagicMessage;
 import magic.ui.MagicImages;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.utility.MagicSystem;
 
 class TComponentBuilder {

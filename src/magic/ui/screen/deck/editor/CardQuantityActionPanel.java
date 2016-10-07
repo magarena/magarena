@@ -10,7 +10,7 @@ import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

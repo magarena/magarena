@@ -4,7 +4,7 @@ import java.awt.Component;
 import java.util.List;
 import javax.swing.JScrollPane;
 import magic.ui.widget.card.filter.button.FilterPanel;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 /**

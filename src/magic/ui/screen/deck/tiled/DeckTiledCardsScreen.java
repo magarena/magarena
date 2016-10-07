@@ -31,7 +31,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
 import net.miginfocom.swing.MigLayout;

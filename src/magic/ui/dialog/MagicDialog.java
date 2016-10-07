@@ -15,7 +15,7 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

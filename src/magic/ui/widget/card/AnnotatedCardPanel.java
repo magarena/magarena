@@ -42,7 +42,7 @@ import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.helpers.ImageHelper;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.utility.MagicSystem;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;

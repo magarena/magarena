@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui;
 
 import javax.swing.BorderFactory;
 import javax.swing.border.Border;

@@ -8,7 +8,7 @@ import javax.swing.JTextArea;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.translate.UiString;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 

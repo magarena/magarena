@@ -12,7 +12,7 @@ import javax.swing.SwingConstants;
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicImages;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

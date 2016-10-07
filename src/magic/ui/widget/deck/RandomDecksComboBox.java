@@ -3,7 +3,7 @@ package magic.ui.widget.deck;
 import magic.data.DeckGenerators;
 import magic.ui.MagicImages;
 import magic.model.MagicColor;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;

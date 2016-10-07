@@ -28,7 +28,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.model.MagicRandom;
 import magic.ui.widget.CostPanel;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;

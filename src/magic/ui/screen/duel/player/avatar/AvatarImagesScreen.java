@@ -52,7 +52,7 @@ import magic.ui.helpers.ImageHelper;
 import magic.ui.ImageFileIO;
 import magic.translate.UiString;
 import magic.ui.screen.AbstractScreen;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;

@@ -23,7 +23,7 @@ import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
 import net.miginfocom.swing.MigLayout;

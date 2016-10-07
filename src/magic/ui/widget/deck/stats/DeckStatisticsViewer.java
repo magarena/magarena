@@ -19,7 +19,7 @@ import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.ActionButtonTitleBar;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

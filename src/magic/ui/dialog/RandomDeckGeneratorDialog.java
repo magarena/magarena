@@ -16,7 +16,7 @@ import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 

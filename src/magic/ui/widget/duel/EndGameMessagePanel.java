@@ -11,7 +11,7 @@ import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.theme.Theme;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;

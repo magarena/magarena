@@ -1,6 +1,6 @@
 package magic.ui.screen.keywords;
 
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

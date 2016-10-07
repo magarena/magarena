@@ -2,7 +2,7 @@ package magic.ui.widget.card.filter;
 
 import magic.model.MagicColor;
 import magic.ui.widget.card.filter.button.FilterPanel;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class ColorValuesPanel extends CheckBoxFilterValuesPanel {

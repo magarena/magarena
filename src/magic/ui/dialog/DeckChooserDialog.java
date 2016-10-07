@@ -19,7 +19,7 @@ import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.FiremindDecksComboxBox;
 import magic.ui.widget.deck.PrebuiltDecksComboxBox;

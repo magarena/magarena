@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.MagicSound;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

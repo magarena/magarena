@@ -8,7 +8,7 @@ import magic.ui.widget.deck.DeckInfoPanel;
 import magic.ui.widget.deck.DeckPicker;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

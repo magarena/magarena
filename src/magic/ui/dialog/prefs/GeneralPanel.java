@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.screen.images.download.DirectoryChooser;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

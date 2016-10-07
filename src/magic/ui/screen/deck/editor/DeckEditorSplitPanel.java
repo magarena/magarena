@@ -28,7 +28,7 @@ import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;

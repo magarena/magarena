@@ -1,5 +1,6 @@
 package magic.ui.widget;
 
+import magic.ui.FontsAndBorders;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.OverlayLayout;

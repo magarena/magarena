@@ -8,7 +8,7 @@ import javax.swing.SwingConstants;
 import magic.data.CardStatistics;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -24,7 +24,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.widget.throbber.AbstractThrobber;

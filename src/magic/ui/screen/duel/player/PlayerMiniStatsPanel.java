@@ -9,7 +9,7 @@ import javax.swing.border.Border;
 import magic.model.player.PlayerStatistics;
 import magic.translate.StringContext;
 import magic.translate.UiString;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

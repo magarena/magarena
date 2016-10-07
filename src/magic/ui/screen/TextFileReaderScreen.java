@@ -9,7 +9,7 @@ import javax.swing.SwingUtilities;
 import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.FileIO;
 import net.miginfocom.swing.MigLayout;

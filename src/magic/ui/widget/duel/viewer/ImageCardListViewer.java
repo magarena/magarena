@@ -36,7 +36,7 @@ import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")

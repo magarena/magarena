@@ -13,7 +13,7 @@ import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.widget.duel.viewer.UserActionPanel;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.message.TextLabel;
 
 @SuppressWarnings("serial")

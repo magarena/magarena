@@ -1,5 +1,6 @@
 package magic.ui.widget;
 
+import magic.ui.FontsAndBorders;
 import java.io.File;
 import java.nio.file.Path;
 

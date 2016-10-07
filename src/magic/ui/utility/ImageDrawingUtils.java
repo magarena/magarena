@@ -23,7 +23,7 @@ import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicManaActivation;
 import magic.ui.MagicImages;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.FontsAndBorders;
 import magic.ui.theme.AbilityIcon;
 import magic.utility.MagicSystem;
 import magic.data.TextImages;
