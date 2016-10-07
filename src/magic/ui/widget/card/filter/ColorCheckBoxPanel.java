@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.MagicColor;
 import magic.ui.MagicImages;
-import magic.ui.MagicUI;
+import magic.ui.MouseHelper;
 import magic.ui.widget.card.filter.button.FilterPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,17 +29,17 @@ class ColorCheckBoxPanel extends JPanel
         cb.setAlignmentY(Component.CENTER_ALIGNMENT);
         cb.setActionCommand(Character.toString(color.getSymbol()));
         cb.addActionListener((e) -> {
-            MagicUI.showBusyCursorFor(cb);
+            MouseHelper.showBusyCursor(cb);
             fbp.filterChanged();
-            MagicUI.showDefaultCursorFor(cb);
+            MouseHelper.showDefaultCursor(cb);
         });
 
         final MouseAdapter onMouseClicked = new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                MagicUI.showBusyCursorFor(e.getComponent());
+                MouseHelper.showBusyCursor(e.getComponent());
                 cb.doClick();
-                MagicUI.showDefaultCursorFor(e.getComponent());
+                MouseHelper.showDefaultCursor(e.getComponent());
             }
         };
 

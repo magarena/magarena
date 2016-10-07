@@ -13,7 +13,7 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
-import magic.ui.MagicUI;
+import magic.ui.MouseHelper;
 import magic.ui.widget.card.filter.ClickPreventer;
 import magic.ui.widget.card.filter.IFilterListener;
 import magic.ui.widget.card.filter.dialog.FilterDialog;
@@ -64,9 +64,9 @@ public abstract class FilterPanel extends JPanel {
         filterButton = new FilterButton(title, tooltip);
         filterButton.addActionListener((e) -> {
             if (clickPreventer.isNotRunning()) {
-                MagicUI.showBusyCursorFor(filterButton);
+                MouseHelper.showBusyCursor(filterButton);
                 showFilterDialog();
-                MagicUI.showDefaultCursorFor(filterButton);
+                MouseHelper.showDefaultCursor(filterButton);
             }
         });
     }

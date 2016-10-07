@@ -15,7 +15,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.ICardFilterPanelListener;
-import magic.ui.MagicUI;
+import magic.ui.MouseHelper;
 import magic.ui.widget.card.filter.button.ColorFilterPanel;
 import magic.ui.widget.card.filter.button.CostFilterPanel;
 import magic.ui.widget.card.filter.button.CubeFilterPanel;
@@ -65,9 +65,9 @@ public class CardFilterPanel extends TexturedPanel
             addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    MagicUI.showBusyCursorFor(resetButton);
+                    MouseHelper.showBusyCursor(resetButton);
                     resetFilters();
-                    MagicUI.showDefaultCursorFor(resetButton);
+                    MouseHelper.showDefaultCursor(resetButton);
                 }
             });
         }

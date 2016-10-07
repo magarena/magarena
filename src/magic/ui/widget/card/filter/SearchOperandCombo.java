@@ -7,7 +7,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-import magic.ui.MagicUI;
+import magic.ui.MouseHelper;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -22,9 +22,9 @@ class SearchOperandCombo extends JComboBox<SearchOperand> {
         addItemListener((e) -> {
             if (e.getStateChange() == ItemEvent.SELECTED) {
                 SwingUtilities.invokeLater(() -> {
-                    MagicUI.showBusyCursorFor(ScreenController.getMainFrame());
+                    MouseHelper.showBusyCursor(ScreenController.getMainFrame());
                     fbp.filterChanged();
-                    MagicUI.showDefaultCursorFor(ScreenController.getMainFrame());
+                    MouseHelper.showDefaultCursor(ScreenController.getMainFrame());
                 });
             }
         });

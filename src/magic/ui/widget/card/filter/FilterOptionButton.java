@@ -5,7 +5,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.SwingUtilities;
-import magic.ui.MagicUI;
+import magic.ui.MouseHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -45,7 +45,7 @@ class FilterOptionButton extends JButton {
             public void mousePressed(MouseEvent e) {
                 if (isEnabled() && SwingUtilities.isLeftMouseButton(e)) {
                     setForeground(MagicStyle.getPressedColor());
-                    MagicUI.showBusyCursorFor(FilterOptionButton.this);
+                    MouseHelper.showBusyCursor(FilterOptionButton.this);
                 }
 
             }
@@ -54,7 +54,7 @@ class FilterOptionButton extends JButton {
             public void mouseReleased(MouseEvent e) {
                 if (isEnabled()) {
                     setForeground(Color.WHITE);
-                    MagicUI.showDefaultCursorFor(FilterOptionButton.this);
+                    MouseHelper.showDefaultCursor(FilterOptionButton.this);
                 }
             }
         });
