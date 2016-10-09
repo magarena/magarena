@@ -1,5 +1,6 @@
 package magic.ui.widget;
 
+import magic.ui.widget.M.MPlainTextViewer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -24,7 +25,7 @@ public class TextFileViewer extends TexturedPanel {
     private static final Font FILE_LINK_FONT = new Font("dialog", Font.PLAIN, 14);
     private final Color FILE_LINK_COLOR = Color.WHITE;
 
-    private final PlainTextViewer textReader = new PlainTextViewer();
+    private final MPlainTextViewer textViewer = new MPlainTextViewer();
     private final MFileLink fileLink = new MFileLink();
 
     public TextFileViewer() {
@@ -35,13 +36,11 @@ public class TextFileViewer extends TexturedPanel {
     protected void setLayout() {
         removeAll();
         add(fileLink.component(), "w 100%, h 34!, hidemode 3");
-        add(textReader, "w 100%, h 100%");
+        add(textViewer.component(), "w 100%, h 100%");
         revalidate();
     }
 
     private void setDefaultProperties() {
-
-//        ToolTipManager.sharedInstance().setDismissDelay(Integer.MAX_VALUE);
 
         setLayout(new MigLayout("insets 0, gap 0, flowy"));
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
@@ -72,7 +71,7 @@ public class TextFileViewer extends TexturedPanel {
     }
 
     public void setTextFile(final Path textFilePath) {
-        textReader.setText(getFileContents(textFilePath));
+        textViewer.setText(getFileContents(textFilePath));
         fileLink.setFile(textFilePath);
     }
 
