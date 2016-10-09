@@ -7,13 +7,16 @@ import magic.ui.widget.M.MTextFileViewer;
 @SuppressWarnings("serial")
 public class ReadmeScreen extends HeaderFooterScreen {
 
-    private final MTextFileViewer mainView;
+    private final MTextFileViewer mainView = new MTextFileViewer();
 
     public ReadmeScreen() {
         super("README");
-        this.mainView = new MTextFileViewer();
+        setDefaultProperties();
+        setMainContent(mainView.component());
+    }
+
+    private void setDefaultProperties() {
         mainView.setTextFile(Paths.get("README.txt"));
         mainView.setFileLinkVisible(false);
-        setMainContent(mainView.component());
     }
 }
