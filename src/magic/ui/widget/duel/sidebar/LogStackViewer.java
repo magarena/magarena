@@ -38,7 +38,9 @@ class LogStackViewer extends JPanel {
     private static final String _S5 = "Stack";
     private static final String _S6 = "Cycle message style";
     private static final String _S7 = "Click to cycle through various styles for the log/stack messages.";
-
+    private static final String _S8 =  "Keywords glossary";
+    private static final String _S9 = "Quick reference...";
+    
     private final LogViewer logViewer;
     private final StackViewer stackViewer;
     private final ActionButtonTitleBar logTitleBar;
@@ -104,10 +106,26 @@ class LogStackViewer extends JPanel {
         );
     }
 
+    private JButton getKeywordsActionButton() {
+        return new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.KEY),
+            UiString.get(UiString.get(_S8)),
+            UiString.get(UiString.get(_S9)),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    ScreenController.showKeywordsScreen();
+                }
+            }
+        );
+    }
+
+
     private List<JButton> getLogActionButtons() {
         final List<JButton> btns = new ArrayList<>();
-        btns.add(getMessageStyleActionButton());
+        btns.add(getKeywordsActionButton());
         btns.add(getLogFileActionButton());
+        btns.add(getMessageStyleActionButton());
         btns.add(getLogViewActionButton(MagicIcon.ARROW_DOWN));
         for (JButton btn : btns) {
             btn.setFocusable(false);
@@ -117,8 +135,9 @@ class LogStackViewer extends JPanel {
 
     private List<JButton> getStackActionButtons() {
         final List<JButton> btns = new ArrayList<>();
-        btns.add(getMessageStyleActionButton());
+        btns.add(getKeywordsActionButton());        
         btns.add(getLogFileActionButton());
+        btns.add(getMessageStyleActionButton());
         btns.add(getLogViewActionButton(MagicIcon.ARROW_UP));
         for (JButton btn : btns) {
             btn.setFocusable(false);

@@ -6,12 +6,13 @@ import java.util.Set;
 public enum MagicIcon {
 
     FIREMIND("w_firemind.png"),
+    KEY("w_key16.png"),
     LAYOUT("w-layout.png"),
     ILLEGAL("card_illegal.png"),
     LEGAL("card_legal.png"),
     BANNED("card_banned.png"),
     RESTRICTED("card_restricted.png"),
-    LOG_FILE("w_examine.png"),
+    LOG_FILE("w_log16.png"),
     ARROW_UP("w_up.png"),
     ARROW_DOWN("w_down.png"),
     MENU("w_menu5@18.png"),
