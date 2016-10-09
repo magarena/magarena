@@ -1,33 +1,19 @@
 package magic.ui.screen.readme;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import javax.swing.JPanel;
-import magic.ui.screen.TextFileReaderScreen;
-import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.widget.M.MTextFileViewer;
 
 @SuppressWarnings("serial")
-public class ReadmeScreen extends TextFileReaderScreen implements IStatusBar {
+public class ReadmeScreen extends HeaderFooterScreen {
 
-    private static final Path TEXT_FILE = Paths.get("README.txt");
+    private final MTextFileViewer mainView;
 
     public ReadmeScreen() {
-        setTextFile(TEXT_FILE);
+        super("README");
+        this.mainView = new MTextFileViewer();
+        mainView.setTextFile(Paths.get("README.txt"));
+        mainView.setFileLinkVisible(false);
+        setMainContent(mainView.component());
     }
-
-    @Override
-    protected String reprocessFileContents(String fileContent) {
-        return fileContent;
-    }
-
-    @Override
-    public String getScreenCaption() {
-        return TEXT_FILE.getFileName().toString();
-    }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
-    }
-
 }

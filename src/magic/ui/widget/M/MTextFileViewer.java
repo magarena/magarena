@@ -76,7 +76,7 @@ public class MTextFileViewer extends MWidget {
         fileLink.setFile(textFilePath);
     }
 
-    protected void setFileLinkVisible(boolean b) {
+    public void setFileLinkVisible(boolean b) {
         fileLink.setVisible(b);
         setLayout();
     }
