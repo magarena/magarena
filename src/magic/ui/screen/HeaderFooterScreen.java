@@ -64,5 +64,8 @@ public abstract class HeaderFooterScreen extends MagicScreen {
     protected final void setRightFooter(MenuButton btn) {
         footerPanel.setRightButton(btn);
     }
-}
 
+    protected void clearFooterButtons() {
+        footerPanel.clearFooterButtons();
+    }
+}

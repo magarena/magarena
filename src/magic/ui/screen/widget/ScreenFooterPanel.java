@@ -105,4 +105,9 @@ public class ScreenFooterPanel extends TexturedPanel
         rightPanel.revalidate();
     }
 
+    public void clearFooterButtons() {
+        middlePanel.removeAll();
+        revalidate();
+        isFirstButton = true;
+    }
 }

@@ -23,6 +23,7 @@ import java.util.List;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.IRenderableCard;
+import magic.model.MagicGameLog;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 
@@ -319,5 +320,9 @@ public final class MagicFileSystem {
 
     public static File getBackgroundImageFile() {
         return getBackgroundImagePath().toFile();
+    }
+
+    public static Path getGameLogPath() {
+        return getDataPath(DataPath.LOGS).resolve(MagicGameLog.LOG_FILE);
     }
 }

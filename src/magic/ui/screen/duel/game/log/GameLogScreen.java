@@ -1,117 +1,87 @@
 package magic.ui.screen.duel.game.log;
 
-import java.awt.event.ActionEvent;
-import java.io.IOException;
+import java.awt.Color;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
-import magic.model.MagicGameLog;
-import magic.ui.helpers.DesktopHelper;
-import magic.ui.MagicImages;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.screen.TextFileReaderScreen;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.M.MTextFileViewer;
 import magic.utility.MagicFileSystem;
-import magic.utility.MagicFileSystem.DataPath;
 
 @SuppressWarnings("serial")
-public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
-
-    private static boolean isBasicView = true;
+public class GameLogScreen extends HeaderFooterScreen {
 
     // translatable strings
-    private static final String _S1 = "Logs directory";
-    private static final String _S2 = "Opens the logs directory containing '%s' in the default file explorer.";
-    private static final String _S3 = "Could not open 'logs' directory : %s";
-    private static final String _S4 = "Basic View";
-    private static final String _S5 = "Filters log file to remove AI diagnostics.";
-    private static final String _S6 = "Detailed View";
-    private static final String _S7 = "Full log file, including AI diagnostics.";
+    private static final String _S1 = "Basic";
+    private static final String _S2 = "Complete";
+    private static final String _S4 = "Basic log";
+    private static final String _S5 = "Displays an abbreviated log, omitting the AI's thoughts.";
+    private static final String _S6 = "Complete log";
+    private static final String _S7 = "Displays the complete log file with insight into how the AI thinks.";
+    private static final String _S8 = "Game log";
 
-    private static final Path LOGS_DIRECTORY = MagicFileSystem.getDataPath(DataPath.LOGS);
-    private static final Path TEXT_FILE = LOGS_DIRECTORY.resolve(MagicGameLog.LOG_FILE);
+    private static final Path LOGFILE = MagicFileSystem.getGameLogPath();
+
+    // static so it restores the last view when the screen is next opened.
+    private static boolean isBasicLog = true;
+
+    private final MTextFileViewer mainView = new MTextFileViewer();
+    private final JLabel modeLabel = new JLabel(UiString.get(_S1));
 
     public GameLogScreen() {
+        super(UiString.get(_S8));
+        setDefaultProperties();
+        setHeaderContent(modeLabel);
+        setMainContent(mainView.component());
         reloadTextFile();
     }
 
+    private void setDefaultProperties() {
+        modeLabel.setForeground(Color.WHITE);
+        modeLabel.setFont(modeLabel.getFont().deriveFont(16f));
+        modeLabel.setHorizontalAlignment(SwingConstants.CENTER);
+    }        
+
+    private void setFooterButtons() {
+        clearFooterButtons();
+        if (isBasicLog) {
+            addToFooter(MenuButton.build(this::showDetailedLog, MagicIcon.SWAP, _S6, _S7));
+            modeLabel.setText(UiString.get(_S1));
+        } else {
+            addToFooter(MenuButton.build(this::showBasicLog, MagicIcon.SWAP, _S4, _S5));
+            modeLabel.setText(UiString.get(_S2));
+        }
+    }
+
     private void reloadTextFile() {
-        setTextFile(TEXT_FILE);
-        refreshActionBar();
+        mainView.setTextFile(LOGFILE, this::logFilter);
+        setFooterButtons();
     }
 
-    @Override
-    protected String reprocessFileContents(String fileContent) {
-        if (isBasicView) {
-            final String[] text = fileContent.split("\n");
-            final StringBuffer sb = new StringBuffer();
-            for (String line : text) {
-                if (line.startsWith("LOG")) {
-                    sb.append(line.substring(3).trim()).append("\n");
-                }
-            }
-            return sb.toString();
-        } else {
-            return fileContent;
-        }
+    /**
+     * If running in basic mode strips out any AI diagnostics.
+     */
+    private String logFilter(String text) {
+        return isBasicLog
+                ? Stream.of(text.split("\n"))
+                        .filter(line -> line.startsWith("LOG"))
+                        .map(line -> line.substring(3).trim())
+                        .collect(Collectors.joining("\n"))
+                : text;
     }
 
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        if (!isBasicView) {
-            buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.OPEN),
-                        UiString.get(_S1), UiString.get(_S2, MagicGameLog.LOG_FILE),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                try {
-                                    DesktopHelper.openMagicDirectory(DataPath.LOGS);
-                                } catch (IOException ex) {
-                                    ScreenController.showWarningMessage(UiString.get(_S3, ex.getMessage()));
-                                }
-                            }
-                        }));
-            buttons.add(
-                new ActionBarButton(
-                        UiString.get(_S4), UiString.get(_S5),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                isBasicView = true;
-                                reloadTextFile();
-                            }
-                        }));
-        } else {
-            buttons.add(
-                new ActionBarButton(
-                        UiString.get(_S6), UiString.get(_S7),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                isBasicView = false;
-                                reloadTextFile();
-                            }
-                        }));
-        }
-        return buttons;
+    private void showBasicLog() {
+        isBasicLog = true;
+        reloadTextFile();
     }
 
-    @Override
-    public String getScreenCaption() {
-        return TEXT_FILE.getFileName().toString();
+    private void showDetailedLog() {
+        isBasicLog = false;
+        reloadTextFile();
     }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
-    }
-
 }
