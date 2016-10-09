@@ -13,6 +13,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
 import magic.exception.DesktopNotSupportedException;
 import magic.translate.UiString;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.MouseHelper;
@@ -71,6 +72,8 @@ public class MFileLink extends MWidget {
     private void doRightClickAction() {
         if (file.isFile()) {
             doExploreContainingDirectory();
+        } else {
+            MagicSound.BEEP.play();
         }
     }
 
