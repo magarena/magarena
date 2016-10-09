@@ -45,12 +45,16 @@ public final class DesktopHelper {
                 // fails silently. The recommended solution is to use getRuntime().
                 Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + file.toString());
             } else {
-                Desktop.getDesktop().open(file);
+                Desktop.getDesktop().open(file.getAbsoluteFile());
             }
         } else {
             throw new DesktopNotSupportedException(UiString.get(_S1));
         }
     }
 
+    public static void openContainingDirectory(File aFile) throws IOException {
+        openDirectory(aFile.getAbsoluteFile().getParentFile());
+    }
+    
     private DesktopHelper() {}
 }
