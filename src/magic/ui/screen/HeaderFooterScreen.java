@@ -1,6 +1,6 @@
 package magic.ui.screen;
 
-import javax.swing.JPanel;
+import javax.swing.JComponent;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.ScreenFooterPanel;
 import magic.ui.screen.widget.MenuButton;
@@ -49,7 +49,7 @@ public abstract class HeaderFooterScreen extends MagicScreen {
         revalidate();
     }
 
-    protected final void setHeaderContent(JPanel aPanel) {
+    protected final void setHeaderContent(JComponent aPanel) {
         headerPanel.setContent(aPanel);
     }
 

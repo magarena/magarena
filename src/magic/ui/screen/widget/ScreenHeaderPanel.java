@@ -3,6 +3,7 @@ package magic.ui.screen.widget;
 import magic.ui.widget.about.AboutPanel;
 import java.awt.Color;
 import java.awt.Dimension;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -30,7 +31,7 @@ public class ScreenHeaderPanel extends TexturedPanel
     public final static int PANEL_HEIGHT = 50;
 
     private final AboutPanel titlePanel;
-    private JPanel contentPanel = TEMP_PANEL;
+    private JComponent contentPanel = TEMP_PANEL;
 
     public ScreenHeaderPanel(String title) {
 
@@ -54,7 +55,7 @@ public class ScreenHeaderPanel extends TexturedPanel
         setBackground(thisBG);
     }
 
-    public void setContent(JPanel aPanel) {
+    public void setContent(JComponent aPanel) {
         this.contentPanel = aPanel;
         refreshLayout();
     }
