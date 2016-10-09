@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.ui.MagicImages;
+import magic.ui.widget.M.MWidget;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -58,6 +59,10 @@ public class HintPanel extends JPanel {
     public void addHintSource(JComponent aComponent, String text) {
         aComponent.setToolTipText(text);
         aComponent.addMouseListener(tooltipMouseAdapter);
+    }
+
+    public void addHintSource(MWidget aWidget) {
+        aWidget.addMouseListener(tooltipMouseAdapter);
     }
 
     private void clearHint() {

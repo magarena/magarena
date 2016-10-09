@@ -1,25 +1,22 @@
 package magic.ui.screen.images.download;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Cursor;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import magic.translate.UiString;
 import magic.ui.ScreenController;
-import magic.ui.helpers.DesktopHelper;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MFileLink;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;
@@ -34,42 +31,31 @@ public class DirectoryChooser extends JPanel {
     private static final String _S3 = "Not enough free space!";
     private static final String _S2 = "Select images directory";
     private static final String _S4 = "A complete set of images requires at least 1.5 GB of free space.";
-    private static final String _S5 = "Card images folder";
-    private static final String _S6 = "Magarena will look for a card image here in one of the following sub-folders and in the order shown :- 'custom', 'crops', 'cards' or 'tokens'. If it is unable to find an image it will create a proxy image instead. Double-click to open this location in file manager.";
+    private static final String _S6 = "Magarena will look for a card image in one of the following sub-folders, in the order shown :- 'custom', 'crops', 'cards' or 'tokens'. <b>Left click</b> to explore the images folder.";
     private static final String _S7 = "Select or create a new images folder.";
 
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
 
     private final MigLayout layout = new MigLayout();
-    private final JTextField textField = new JTextField();
+    private final MFileLink imagesFolder = new MFileLink();
     private final JButton selectButton = new JButton();
     private File defaultPath;
 
     public DirectoryChooser(final Path defaultPath) {
         this.defaultPath = defaultPath.toFile();
-        setupTextField();
+        setupImagesFolderField();
         setupSelectButton();
         layout.setLayoutConstraints("insets 0, gap 0");
         setLayout(layout);
         refreshLayout();
     }
 
-    private void openFolderInFileManager() {
-        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        try {
-            DesktopHelper.openDirectory(textField.getText());
-        } catch (IOException | IllegalArgumentException ex) {
-            ScreenController.showWarningMessage(ex.getMessage());
-        }
-        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    }
-
     private void setImagesPath(final File f) {
         if (!f.equals(defaultPath)) {
             if (MagicFileSystem.directoryContains(MagicFileSystem.INSTALL_PATH, f.toPath())) {
-                textField.setText(MagicFileSystem.getDataPath(DataPath.IMAGES).toString());
+                imagesFolder.setFile(MagicFileSystem.getDataPath(DataPath.IMAGES));
             } else {
-                textField.setText(f.toString());
+                imagesFolder.setFile(f);
             }
             firePropertyChange(CP_FOLDER_CHANGED, defaultPath, f);
             defaultPath = f;
@@ -92,39 +78,22 @@ public class DirectoryChooser extends JPanel {
         });
     }
 
-    private void setupTextField() {
-        textField.setText(defaultPath.toString());
-        textField.setEditable(false);
-        textField.setToolTipText(UiString.get(_S6));
-        textField.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                final boolean isDoubleClick = (e.getButton() == MouseEvent.BUTTON1) && (e.getClickCount() == 2);
-                if (isDoubleClick && isEnabled()) {
-                    openFolderInFileManager();
-                }
-            }
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-            }
-            @Override
-            public void mouseExited(MouseEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
-
+    private void setupImagesFolderField() {
+        imagesFolder.setFile(defaultPath);
+        imagesFolder.setToolTipText(UiString.get(_S6));
+        imagesFolder.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createMatteBorder(1, 1, 1, 1, Color.GRAY), 
+                BorderFactory.createEmptyBorder(0, 4, 0, 0))
+        );
     }
 
     private void refreshLayout() {
-        add(textField, "w 100%");
+        add(imagesFolder.component(), "w 100%, h 100%");
         add(selectButton, "w 26!");
     }
 
     void addHintSources(HintPanel hintPanel) {
-        hintPanel.addHintSource(textField, String.format("<b>%s</b><br>%s",
-            UiString.get(_S5), UiString.get(_S6)
-        ));
+        hintPanel.addHintSource(imagesFolder);
         hintPanel.addHintSource(selectButton, String.format("<b>%s</b><br>%s",
             UiString.get(_S1), UiString.get(_S7)
         ));
@@ -164,13 +133,13 @@ public class DirectoryChooser extends JPanel {
     }
 
     public Path getPath() {
-        return Paths.get(textField.getText());
+        return imagesFolder.getFilePath();
     }
 
     @Override
     public void setFocusable(boolean b) {
         super.setFocusable(b);
-        textField.setFocusable(b);
+        imagesFolder.setFocusable(b);
     }
 
     @Override
@@ -184,7 +153,7 @@ public class DirectoryChooser extends JPanel {
     @Override
     public synchronized void addMouseListener(MouseListener l) {
         super.addMouseListener(l);
-        textField.addMouseListener(l);
+        imagesFolder.addMouseListener(l);
         selectButton.addMouseListener(l);
     }
 
