@@ -6,6 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.nio.file.Path;
+import java.util.function.Function;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import magic.ui.FontsAndBorders;
@@ -73,6 +74,15 @@ public class MTextFileViewer extends MWidget {
 
     public void setTextFile(final Path textFilePath) {
         textViewer.setText(getFileContents(textFilePath));
+        fileLink.setFile(textFilePath);
+    }
+
+    /**
+     * Before displaying the text from the file this applies a function
+     * that can be used to alter what is actually shown.
+     */
+    public void setTextFile(Path textFilePath, Function<String, String> filter) {
+        textViewer.setText(filter.apply(getFileContents(textFilePath)));
         fileLink.setFile(textFilePath);
     }
 
