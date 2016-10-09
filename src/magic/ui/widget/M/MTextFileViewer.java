@@ -72,6 +72,11 @@ public class MTextFileViewer extends MWidget {
         }
     }
 
+    public void setTextFile(final File aFile) {
+        textViewer.setText(getFileContents(aFile.toPath()));
+        fileLink.setFile(aFile.toPath());
+    }
+
     public void setTextFile(final Path textFilePath) {
         textViewer.setText(getFileContents(textFilePath));
         fileLink.setFile(textFilePath);
