@@ -32,7 +32,7 @@ public final class MagicResources {
         return getResourceFileContent("/magic/data/formats/" + magicFormat.getFilename() + ".fmt");
     }
 
-    private static InputStream getJarResourceStream(String filename) {
+    public static InputStream getJarResourceStream(String filename) {
         return instance.getClass().getResourceAsStream(filename);
     }
 
