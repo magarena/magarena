@@ -1,6 +1,7 @@
 package magic.awt;
 
 import java.awt.Font;
+import java.awt.GraphicsEnvironment;
 import java.awt.font.TextAttribute;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -40,6 +41,8 @@ public enum MagicFont {
     private void tryLoadFont() {
         try (final InputStream is = MagicResources.getJarResourceStream(ttfFile)) {
             font = Font.createFont(Font.TRUETYPE_FONT, is).deriveFont(FONT_MAP);
+            // register font so it works with html text.
+            GraphicsEnvironment.getLocalGraphicsEnvironment().registerFont(font);
         } catch (Exception ex) {
             System.err.println(ttfFile + " not loaded (using default) : " + ex);
             font = FALLBACK_FONT;
