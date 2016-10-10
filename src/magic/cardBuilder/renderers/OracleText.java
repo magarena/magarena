@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import magic.awt.MagicFont;
 
 import magic.model.MagicColor;
 import magic.model.MagicType;
@@ -36,7 +37,7 @@ public class OracleText {
     private static final int maxDistance = 260100;
     private static final double transparencyTolerance = 0.001;
     private static final int padding = 1;
-    private static final Font cardTextFont = ResourceManager.getFont("MPlantin.ttf").deriveFont(Font.PLAIN, 18);//scale down when long string
+    private static final Font cardTextFont = MagicFont.MPlantin.get().deriveFont(Font.PLAIN, 18);//scale down when long string
     private static final int topPadding = 7;
     private static final int leftPadding = 3;
 

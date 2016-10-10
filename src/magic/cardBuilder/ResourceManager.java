@@ -1,13 +1,8 @@
 package magic.cardBuilder;
 
-import java.awt.Font;
-import java.awt.font.TextAttribute;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import javax.imageio.ImageIO;
 
 import magic.ui.helpers.ImageHelper;
@@ -235,37 +230,10 @@ public class ResourceManager {
     public static final BufferedImage tokenImageMaskSmall = getComponent("token/imagemask2.png");
     public static final BufferedImage tokenImageMaskLarge = getComponent("token/imagemask.png");
 
-    //Font Map
-    private static final String[] names = {};
-    private static final Map<String, Font> fontCache = new ConcurrentHashMap<>(names.length);
     private static final String FRAMES_FOLDER = "/cardbuilder/frames/";
-
-    static {
-        for (String name : names) {
-            fontCache.put(name, getFont(name));
-        }
-    }
 
     private static InputStream getJarResourceStream(String filename) {
         return instance.getClass().getResourceAsStream(filename);
-    }
-
-    public static Font getFont(String name) {
-        Font font = fontCache.get(name);
-        if (font != null) {
-            return font;
-        }
-        String fName = "/cardbuilder/fonts/" + name;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            font = Font.createFont(Font.TRUETYPE_FONT, is);
-            Map<TextAttribute, Object> map = new Hashtable<>();
-            map.put(TextAttribute.KERNING, TextAttribute.KERNING_ON);
-            font = font.deriveFont(map);
-        } catch (Exception ex) {
-            System.err.println(fName + " not loaded.  Using serif font.");
-            font = new Font("serif", Font.PLAIN, 24);
-        }
-        return font;
     }
 
     private static BufferedImage getComponent(String imageName) {

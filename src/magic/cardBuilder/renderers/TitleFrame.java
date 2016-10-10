@@ -15,17 +15,17 @@ import java.awt.image.BufferedImage;
 import java.text.AttributedString;
 import java.util.List;
 import javax.swing.ImageIcon;
+import magic.awt.MagicFont;
 
 import magic.data.MagicIcon;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
 import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
 
 public class TitleFrame {
 
-    private static final Font cardNameFont = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 19);
-    private static final Font cardNameTokenFont = ResourceManager.getFont("Beleren Small Caps.ttf").deriveFont(Font.PLAIN, 20);
+    private static final Font cardNameFont = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 19);
+    private static final Font cardNameTokenFont = MagicFont.BelerenSmallCaps.get().deriveFont(Font.PLAIN, 20);
 
     static void drawManaCost(BufferedImage cardImage, IRenderableCard cardDef) {
         List<MagicIcon> manaCost = getManaCost(cardDef);

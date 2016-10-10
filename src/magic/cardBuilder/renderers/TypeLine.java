@@ -7,16 +7,17 @@ import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import magic.awt.MagicFont;
 
 import magic.model.MagicType;
 import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
 
 public class TypeLine {
-    private static final Font cardTypeFont = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 16);
-    private static final Font cardTypeFontSmall = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 15);
-    private static final Font cardTypeFontVerySmall = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 14);
-    private static final Font cardTypeFontSmallest = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 13);
+    private static final Font cardTypeFont = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 16);
+    private static final Font cardTypeFontSmall = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 15);
+    private static final Font cardTypeFontVerySmall = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 14);
+    private static final Font cardTypeFontSmallest = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 13);
     private static int padding;
 
     static void drawCardTypeLine(BufferedImage cardImage, IRenderableCard cardDef) {

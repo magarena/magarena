@@ -11,6 +11,7 @@ import java.awt.font.TextLayout;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import magic.awt.MagicFont;
 
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
@@ -21,9 +22,9 @@ import magic.cardBuilder.ResourceManager;
 
 public class PTFrame {
 
-    private static final Font cardPTFont = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 19);
-    private static final Font cardPTFontSmall = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 15);//scale down when triple figures
-    private static final Font cardLoyaltyFont = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 16);
+    private static final Font cardPTFont = MagicFont.BelerenBold.get().deriveFont(Font.PLAIN, 19);
+    private static final Font cardPTFontSmall = MagicFont.BelerenBold.get().deriveFont(Font.PLAIN, 15);//scale down when triple figures
+    private static final Font cardLoyaltyFont = MagicFont.BelerenBold.get().deriveFont(Font.PLAIN, 16);
 
     //draw ptPanel - The only layering requirement besides frame. Ability text must wrap around ptpanel intrusion if any.
     static void drawPTPanel(BufferedImage cardImage, IRenderableCard cardDef) {
