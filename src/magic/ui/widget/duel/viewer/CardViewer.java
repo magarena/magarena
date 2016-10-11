@@ -18,12 +18,12 @@ import javax.swing.Timer;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
-import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
+import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
 import net.miginfocom.swing.MigLayout;
@@ -63,10 +63,9 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
         cardLabel = getLabel("");
 
-        setLayout(new MigLayout("flowy, aligny center"));
-        add(new JLabel());
-        add(throbber, "alignx center");
-        add(cardLabel, "w 100%");
+        setLayout(new MigLayout("flowy, aligny center", "[fill, grow]"));
+        add(throbber);
+        add(cardLabel);
 
         setDefaultImage();
         setMouseListener();
