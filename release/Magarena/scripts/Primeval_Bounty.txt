@@ -4,8 +4,8 @@ value=3.684
 rarity=M
 type=Enchantment
 cost={5}{G}
-ability=Whenever you cast a creature spell, put a 3/3 green Beast creature token onto the battlefield.;\
+ability=Whenever you cast a creature spell, create a 3/3 green Beast creature token.;\
         Whenever you cast a noncreature spell, put three +1/+1 counters on target creature you control.;\
         Whenever a land enters the battlefield under your control, you gain 3 life.
 timing=enchantment
-oracle=Whenever you cast a creature spell, put a 3/3 green Beast creature token onto the battlefield.\nWhenever you cast a noncreature spell, put three +1/+1 counters on target creature you control.\nWhenever a land enters the battlefield under your control, you gain 3 life.
+oracle=Whenever you cast a creature spell, create a 3/3 green Beast creature token.\nWhenever you cast a noncreature spell, put three +1/+1 counters on target creature you control.\nWhenever a land enters the battlefield under your control, you gain 3 life.

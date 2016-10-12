@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{G}{W}{U}
 pt=2/4
-ability=When you cycle SN, you may put a 1/1 white Soldier creature token onto the battlefield.;\
-        When SN dies, you may put a 1/1 white Soldier creature token onto the battlefield.;\
+ability=When you cycle SN, you may create a 1/1 white Soldier creature token.;\
+        When SN dies, you may create a 1/1 white Soldier creature token.;\
         Cycling {2}{W}
 timing=main
-oracle=When you cycle Bant Sojourners or it dies, you may put a 1/1 white Soldier creature token onto the battlefield.\nCycling {2}{W}
+oracle=When you cycle Bant Sojourners or it dies, you may create a 1/1 white Soldier creature token.\nCycling {2}{W}

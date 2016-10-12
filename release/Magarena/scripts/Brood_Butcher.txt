@@ -8,7 +8,7 @@ subtype=Eldrazi,Drone
 cost={3}{B}{G}
 pt=3/3
 ability=Devoid;\
-        When SN enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield.;\
+        When SN enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token.;\
         {B}{G}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.
 timing=main
-oracle=Devoid\nWhen Brood Butcher enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."\n{B}{G}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.
+oracle=Devoid\nWhen Brood Butcher enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."\n{B}{G}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.

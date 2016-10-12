@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura
 cost={4}{G}
 ability=Enchant creature;\
-        When SN enters the battlefield, put a 2/2 green Wolf creature token onto the battlefield.;\
+        When SN enters the battlefield, create a 2/2 green Wolf creature token.;\
         Enchanted creature gets +2/+2.
 timing=aura
 enchant=pump,creature
-oracle=Enchant creature\nWhen Wolfkin Bond enters the battlefield, put a 2/2 green Wolf creature token onto the battlefield.\nEnchanted creature gets +2/+2.
+oracle=Enchant creature\nWhen Wolfkin Bond enters the battlefield, create a 2/2 green Wolf creature token.\nEnchanted creature gets +2/+2.

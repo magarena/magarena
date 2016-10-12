@@ -7,7 +7,7 @@ subtype=Goblin,Warrior
 cost={1}{R}
 pt=1/1
 ability=Echo {1}{R};\
-        When SN enters the battlefield, put a 1/1 red Goblin creature token onto the battlefield.;\
-        When SN dies, put a 1/1 red Goblin creature token onto the battlefield.
+        When SN enters the battlefield, create a 1/1 red Goblin creature token.;\
+        When SN dies, create a 1/1 red Goblin creature token.
 timing=main
-oracle=Echo {1}{R}\nWhen Mogg War Marshal enters the battlefield or dies, put a 1/1 red Goblin creature token onto the battlefield.
+oracle=Echo {1}{R}\nWhen Mogg War Marshal enters the battlefield or dies, create a 1/1 red Goblin creature token.

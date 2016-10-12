@@ -7,6 +7,6 @@ subtype=Spider
 cost={2}{R}{R}{G}{G}
 pt=5/6
 ability=Reach;\
-        Whenever an opponent casts a spell, put a 1/1 green Insect creature token onto the battlefield.
+        Whenever an opponent casts a spell, create a 1/1 green Insect creature token.
 timing=main
-oracle=Reach\nWhenever an opponent casts a spell, put a 1/1 green Insect creature token onto the battlefield.
+oracle=Reach\nWhenever an opponent casts a spell, create a 1/1 green Insect creature token.

@@ -7,6 +7,6 @@ subtype=Human,Knight
 cost={2}{W}
 pt=2/2
 ability=First strike;\
-        When SN enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+        When SN enters the battlefield, create a 1/1 white Soldier creature token.
 timing=main
-oracle=First strike\nWhen Attended Knight enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=First strike\nWhen Attended Knight enters the battlefield, create a 1/1 white Soldier creature token.

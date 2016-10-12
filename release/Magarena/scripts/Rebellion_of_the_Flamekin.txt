@@ -7,4 +7,4 @@ subtype=Elemental
 cost={3}{R}
 timing=enchantment
 requires_groovy_code
-oracle=Whenever you clash, you may pay {1}. If you do, put a 3/1 red Elemental Shaman creature token onto the battlefield. If you won, that token gains haste until end of turn.
+oracle=Whenever you clash, you may pay {1}. If you do, create a 3/1 red Elemental Shaman creature token. If you won, that token gains haste until end of turn.

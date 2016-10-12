@@ -7,6 +7,6 @@ subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
 ability=First strike;\
-        Whenever SN deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.
+        Whenever SN deals combat damage to a player, create a 1/1 white Soldier creature token.
 timing=main
-oracle=First strike\nWhenever Precinct Captain deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=First strike\nWhenever Precinct Captain deals combat damage to a player, create a 1/1 white Soldier creature token.

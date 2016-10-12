@@ -8,6 +8,6 @@ subtype=Eldrazi,Drone
 cost={2}{G}
 pt=2/2
 ability=Devoid;\
-        When SN enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield.
+        When SN enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token.
 timing=main
-oracle=Devoid\nWhen Scion Summoner enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nWhen Scion Summoner enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."

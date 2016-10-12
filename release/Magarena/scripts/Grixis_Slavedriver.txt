@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Giant
 cost={5}{B}
 pt=4/4
-ability=When SN leaves the battlefield, put a 2/2 black Zombie creature token onto the battlefield.;\
+ability=When SN leaves the battlefield, create a 2/2 black Zombie creature token.;\
         Unearth {3}{B}
 timing=main
-oracle=When Grixis Slavedriver leaves the battlefield, put a 2/2 black Zombie creature token onto the battlefield.\nUnearth {3}{B}
+oracle=When Grixis Slavedriver leaves the battlefield, create a 2/2 black Zombie creature token.\nUnearth {3}{B}

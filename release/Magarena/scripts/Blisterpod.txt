@@ -8,6 +8,6 @@ subtype=Eldrazi,Drone
 cost={G}
 pt=1/1
 ability=Devoid;\
-        When SN dies, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield.
+        When SN dies, create a 1/1 colorless Eldrazi Scion creature token.
 timing=main
-oracle=Devoid\nWhen Blisterpod dies, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nWhen Blisterpod dies, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."

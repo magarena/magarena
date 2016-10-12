@@ -7,6 +7,6 @@ subtype=Beast
 cost={4}{G}
 pt=5/3
 ability=When SN enters the battlefield, you gain 5 life.;\
-        When SN leaves the battlefield, put a 3/3 green Beast creature token onto the battlefield.
+        When SN leaves the battlefield, create a 3/3 green Beast creature token.
 timing=main
-oracle=When Thragtusk enters the battlefield, you gain 5 life.\nWhen Thragtusk leaves the battlefield, put a 3/3 green Beast creature token onto the battlefield.
+oracle=When Thragtusk enters the battlefield, you gain 5 life.\nWhen Thragtusk leaves the battlefield, create a 3/3 green Beast creature token.

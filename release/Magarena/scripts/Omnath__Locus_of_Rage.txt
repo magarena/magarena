@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Elemental
 cost={3}{R}{R}{G}{G}
 pt=5/5
-ability=Whenever a land enters the battlefield under your control, put a 5/5 red and green Elemental creature token onto the battlefield.;\
+ability=Whenever a land enters the battlefield under your control, create a 5/5 red and green Elemental creature token.;\
         Whenever SN or another Elemental you control dies, SN deals 3 damage to target creature or player.
 timing=main
-oracle=Landfall — Whenever a land enters the battlefield under your control, put a 5/5 red and green Elemental creature token onto the battlefield.\nWhenever Omnath, Locus of Rage or another Elemental you control dies, Omnath deals 3 damage to target creature or player.
+oracle=Landfall — Whenever a land enters the battlefield under your control, create a 5/5 red and green Elemental creature token.\nWhenever Omnath, Locus of Rage or another Elemental you control dies, Omnath deals 3 damage to target creature or player.

@@ -4,7 +4,7 @@ value=3.922
 rarity=R
 type=Enchantment
 cost={3}{G/U}{G/U}{G/U}
-ability=Whenever you cast a green spell, you may put a 2/2 green Wolf creature token onto the battlefield.;\
+ability=Whenever you cast a green spell, you may create a 2/2 green Wolf creature token.;\
         Whenever you cast a blue spell, you may put a 1/1 blue Bird creature token with flying onto the battlefield.
 timing=main
-oracle=Whenever you cast a green spell, you may put a 2/2 green Wolf creature token onto the battlefield.\nWhenever you cast a blue spell, you may put a 1/1 blue Bird creature token with flying onto the battlefield.
+oracle=Whenever you cast a green spell, you may create a 2/2 green Wolf creature token.\nWhenever you cast a blue spell, you may put a 1/1 blue Bird creature token with flying onto the battlefield.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={3}{U}
 pt=1/1
-ability=When SN enters the battlefield, put a 2/2 black Zombie creature token onto the battlefield.;\
+ability=When SN enters the battlefield, create a 2/2 black Zombie creature token.;\
         {2}{B}: Target Zombie gains deathtouch until end of turn.
 timing=main
-oracle=When Drunau Corpse Trawler enters the battlefield, put a 2/2 black Zombie creature token onto the battlefield.\n{2}{B}: Target Zombie gains deathtouch until end of turn.
+oracle=When Drunau Corpse Trawler enters the battlefield, create a 2/2 black Zombie creature token.\n{2}{B}: Target Zombie gains deathtouch until end of turn.

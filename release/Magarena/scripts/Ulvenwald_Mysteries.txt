@@ -5,6 +5,6 @@ rarity=U
 type=Enchantment
 cost={2}{G}
 ability=Whenever a nontoken creature you control dies, investigate.;\
-        Whenever you sacrifice a Clue, put a 1/1 white Human Soldier creature token onto the battlefield.
+        Whenever you sacrifice a Clue, create a 1/1 white Human Soldier creature token.
 timing=enchantment
-oracle=Whenever a nontoken creature you control dies, investigate.\nWhenever you sacrifice a Clue, put a 1/1 white Human Soldier creature token onto the battlefield.
+oracle=Whenever a nontoken creature you control dies, investigate.\nWhenever you sacrifice a Clue, create a 1/1 white Human Soldier creature token.

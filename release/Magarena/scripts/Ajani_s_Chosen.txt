@@ -9,4 +9,4 @@ cost={2}{W}{W}
 pt=3/3
 timing=main
 requires_groovy_code
-oracle=Whenever an enchantment enters the battlefield under your control, put a 2/2 white Cat creature token onto the battlefield. If that enchantment is an Aura, you may attach it to the token.
+oracle=Whenever an enchantment enters the battlefield under your control, create a 2/2 white Cat creature token. If that enchantment is an Aura, you may attach it to the token.

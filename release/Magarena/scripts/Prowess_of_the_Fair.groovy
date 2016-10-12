@@ -10,7 +10,7 @@
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may\$ put a 1/1 green Elf Warrior creature token onto the battlefield."
+                    "PN may\$ create a 1/1 green Elf Warrior creature token."
                 ) :
                 MagicEvent.NONE;
         }

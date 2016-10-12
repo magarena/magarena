@@ -7,6 +7,6 @@ subtype=Angel
 cost={4}{W}{W}
 pt=3/3
 ability=Flying;\
-        When SN enters the battlefield, put a 1/1 white Human creature token onto the battlefield.
+        When SN enters the battlefield, create a 1/1 white Human creature token.
 timing=main
-oracle=Flying\nWhen Voice of the Provinces enters the battlefield, put a 1/1 white Human creature token onto the battlefield.
+oracle=Flying\nWhen Voice of the Provinces enters the battlefield, create a 1/1 white Human creature token.

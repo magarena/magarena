@@ -11,7 +11,7 @@
                     source.getController(),
                     new MagicSimpleMayChoice(),
                     this,
-                    "PN may\$ put a 1/1 colorless Sliver creature token onto the battlefield."
+                    "PN may\$ create a 1/1 colorless Sliver creature token."
                 ):
                 MagicEvent.NONE;
         }

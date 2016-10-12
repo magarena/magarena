@@ -8,4 +8,4 @@ cost={3}{B}
 timing=aura
 enchant=sacrifice,neg creature
 requires_groovy_code
-oracle=Enchant creature\nAt the beginning of your upkeep, enchanted creature's controller sacrifices it and you put a 1/1 colorless Myr artifact creature token onto the battlefield.
+oracle=Enchant creature\nAt the beginning of your upkeep, enchanted creature's controller sacrifices it and you create a 1/1 colorless Myr artifact creature token.

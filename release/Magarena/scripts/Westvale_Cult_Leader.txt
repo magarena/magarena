@@ -7,8 +7,8 @@ subtype=Human,Cleric
 color=w
 pt=*/*
 ability=SN's power and toughness are each equal to the number of creatures you control.;\
-        At the beginning of your end step, put a 1/1 white and black Human Cleric creature token onto the battlefield.
+        At the beginning of your end step, create a 1/1 white and black Human Cleric creature token.
 transform=Hanweir Militia Captain
 timing=main
 hidden
-oracle=Westvale Cult Leader's power and toughness are each equal to the number of creatures you control.\nAt the beginning of your end step, put a 1/1 white and black Human Cleric creature token onto the battlefield.
+oracle=Westvale Cult Leader's power and toughness are each equal to the number of creatures you control.\nAt the beginning of your end step, create a 1/1 white and black Human Cleric creature token.

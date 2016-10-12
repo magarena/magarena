@@ -6,7 +6,7 @@ type=Creature
 subtype=Ogre,Rogue
 cost={3}{B}{B}
 pt=3/3
-ability=Whenever another nontoken creature dies, you may put a 1/1 black Rat creature token onto the battlefield.;\
+ability=Whenever another nontoken creature dies, you may create a 1/1 black Rat creature token.;\
         Rats you control have deathtouch.
 timing=main
-oracle=Whenever another nontoken creature dies, you may put a 1/1 black Rat creature token onto the battlefield.\nRats you control have deathtouch.
+oracle=Whenever another nontoken creature dies, you may create a 1/1 black Rat creature token.\nRats you control have deathtouch.

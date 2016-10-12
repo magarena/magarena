@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{B}
 pt=3/2
-ability=Whenever SN attacks, put a 2/1 black Warrior creature token onto the battlefield.;\
+ability=Whenever SN attacks, create a 2/1 black Warrior creature token.;\
         Dash {3}{B}
 timing=main
-oracle=Whenever Mardu Strike Leader attacks, put a 2/1 black Warrior creature token onto the battlefield.\nDash {3}{B}
+oracle=Whenever Mardu Strike Leader attacks, create a 2/1 black Warrior creature token.\nDash {3}{B}

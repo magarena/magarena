@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={4}{W}
 ability=Enchant creature;\
-        Enchanted creature has "At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield."
+        Enchanted creature has "At the beginning of your upkeep, create a 1/1 white Human creature token."
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield."
+oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, create a 1/1 white Human creature token."

@@ -4,6 +4,6 @@ value=3.370
 rarity=U
 type=Legendary,Land
 ability={T}: Add {C} to your mana pool.;\
-        When SN is put into a graveyard from the battlefield, put a 1/1 colorless Spirit creature token onto the battlefield.
+        When SN is put into a graveyard from the battlefield, create a 1/1 colorless Spirit creature token.
 timing=land
-oracle={T}: Add {C} to your mana pool.\nWhen Gods' Eye, Gate to the Reikai is put into a graveyard from the battlefield, put a 1/1 colorless Spirit creature token onto the battlefield.
+oracle={T}: Add {C} to your mana pool.\nWhen Gods' Eye, Gate to the Reikai is put into a graveyard from the battlefield, create a 1/1 colorless Spirit creature token.

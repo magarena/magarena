@@ -6,8 +6,8 @@ type=Creature
 subtype=Artificer
 cost={4}{W}
 pt=1/1
-ability=When SN enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.;\
+ability=When SN enters the battlefield, create a 3/3 colorless Golem artifact creature token.;\
         Golem creatures you control have vigilance.
 static=player
 timing=main
-oracle=When Sensor Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.\nGolem creatures you control have vigilance.
+oracle=When Sensor Splicer enters the battlefield, create a 3/3 colorless Golem artifact creature token.\nGolem creatures you control have vigilance.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={4}{B}{B}
 timing=main
 requires_groovy_code
-oracle=Destroy target creature. If that creature had a +1/+1 counter on it, put a 1/1 green Snake creature token onto the battlefield.
+oracle=Destroy target creature. If that creature had a +1/+1 counter on it, create a 1/1 green Snake creature token.

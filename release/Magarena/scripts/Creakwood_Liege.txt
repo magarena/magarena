@@ -8,7 +8,7 @@ cost={1}{B/G}{B/G}{B/G}
 pt=2/2
 ability=Other black creatures you control get +1/+1.;\
         Other green creatures you control get +1/+1.;\
-        At the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.
+        At the beginning of your upkeep, you may create a 1/1 black and green Worm creature token.
 static=player
 timing=main
-oracle=Other black creatures you control get +1/+1.\nOther green creatures you control get +1/+1.\nAt the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.
+oracle=Other black creatures you control get +1/+1.\nOther green creatures you control get +1/+1.\nAt the beginning of your upkeep, you may create a 1/1 black and green Worm creature token.

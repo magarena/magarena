@@ -7,6 +7,6 @@ subtype=Elf,Warrior
 cost={3}{B}{G}
 pt=4/4
 ability=At the beginning of your upkeep, you may have target opponent discard a card at random.;\
-        Whenever an opponent discards a card, you may put a 1/1 green Elf Warrior creature token onto the battlefield.
+        Whenever an opponent discards a card, you may create a 1/1 green Elf Warrior creature token.
 timing=main
-oracle=At the beginning of your upkeep, you may have target opponent discard a card at random.\nWhenever an opponent discards a card, you may put a 1/1 green Elf Warrior creature token onto the battlefield.
+oracle=At the beginning of your upkeep, you may have target opponent discard a card at random.\nWhenever an opponent discards a card, you may create a 1/1 green Elf Warrior creature token.
