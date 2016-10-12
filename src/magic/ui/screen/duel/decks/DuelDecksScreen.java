@@ -2,17 +2,12 @@ package magic.ui.screen.duel.decks;
 
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
-import java.util.Optional;
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import javax.swing.SwingWorker;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
 import magic.model.DuelPlayerConfig;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
@@ -21,7 +16,6 @@ import magic.ui.DuelDecksPanel;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.cardBuilder.renderers.CardBuilder;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
@@ -49,7 +43,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     private final DuelDecksPanel screenContent;
     private MagicGame nextGame = null;
     private final StartGameButton nextGameButton;
-    private StartupWorker worker;
+    private NewGameWorker worker;
 
     public DuelDecksScreen(final MagicDuel duel) {
         super(UiString.get(_S1));
@@ -73,16 +67,24 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
             );
         }
 
-        setHeaderContent(getStatusPanel());
+        setHeaderContent(getHeaderPanel());
         setFooterButtons();
         setWikiPage(WikiPage.DUEL_DECKS);
     }
 
     private void setFooterButtons() {
 
-        setLeftFooter(getLeftAction());
-        setRightFooter(getRightAction());
+        setLeftFooter(screenContent.getDuel().getGamesPlayed() == 0
+                ? MenuButton.getCloseScreenButton()
+                : MenuButton.build(this::doShowMainMenu, _S2)
+        );
 
+        setRightFooter(screenContent.getDuel().isFinished()
+                ? MenuButton.build(this::doRestartDuel, _S3)
+                : nextGameButton
+        );
+
+        // middle actions
         if (isNewDuel()) {
             addToFooter(
                     MenuButton.build(this::showDeckEditor,
@@ -111,18 +113,13 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
                 MagicIcon.TILED, _S12, _S13);
     }
 
-    private void doCloseScreen() {
+    /**
+     * Return to main menu without closing this screen.
+     */
+    private void doShowMainMenu() {
         ScreenController.showMainMenuScreen();
     }
                 
-    private MenuButton getLeftAction() {
-        if (screenContent.getDuel().getGamesPlayed() == 0) {
-            return MenuButton.getCloseScreenButton(UiString.get(_S2));
-        } else {
-            return MenuButton.build(this::doCloseScreen, _S2);
-        }
-    }
-
     private void startNextGame() {
         final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
         if (isLegalDeckAndShowErrors(players[0]) && isLegalDeckAndShowErrors(players[1])) {
@@ -147,14 +144,6 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
             ScreenController.getMainFrame().restartDuel();
         } catch (InvalidDeckException ex) {
             ScreenController.showWarningMessage(ex.getMessage());
-        }
-    }
-
-    private MenuButton getRightAction() {
-        if (!screenContent.getDuel().isFinished()) {
-            return nextGameButton;
-        } else {
-            return MenuButton.build(this::doRestartDuel, _S3);
         }
     }
 
@@ -212,7 +201,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
         return true;
     }
 
-    private JPanel getStatusPanel() {
+    private JPanel getHeaderPanel() {
         final DuelConfig config = screenContent.getDuel().getConfiguration();
         final DuelSettingsPanel panel = new DuelSettingsPanel(ScreenController.getMainFrame(), config);
         panel.setEnabled(false);
@@ -228,64 +217,13 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
         if (worker != null && worker.isDone() == false) {
             worker.cancel(true);
         }
-        worker = new StartupWorker(duel);
+        worker = new NewGameWorker(duel, this);
         worker.execute();
     }
 
-    private final class StartupWorker extends SwingWorker<MagicGame, Void> {
-
-        private final MagicDuel duel;
-
-        public StartupWorker(final MagicDuel aDuel) {
-            this.duel = aDuel;
-        }
-
-        private Optional<MagicCardDefinition> findFirstProxyCard(MagicDeck aDeck) {
-            return aDeck.stream()
-                .filter(card -> MagicImages.isProxyImage(card.getCardDefinition()))
-                .findFirst();
-        }
-
-        private Optional<MagicCardDefinition> findFirstProxyCardInDecks() {
-            Optional<MagicCardDefinition> proxy = findFirstProxyCard(duel.getPlayer(0).getDeck());
-            return proxy.isPresent() ? proxy : findFirstProxyCard(duel.getPlayer(1).getDeck());
-        }
-
-        private void loadCardBuilderIfRequired() {
-            if (!CardBuilder.IS_LOADED) {
-                Optional<MagicCardDefinition> proxy = findFirstProxyCardInDecks();
-                if (proxy.isPresent()) {
-                    CardBuilder.getCardBuilderImage(proxy.get());
-                }
-            }
-        }
-
-        @Override
-        protected MagicGame doInBackground() throws Exception {
-            loadCardBuilderIfRequired();
-            return duel.nextGame();
-        }
-
-        @Override
-        protected void done() {
-            nextGame = getNextGame();
-            nextGameButton.setBusy(nextGame == null);
-        }
-
-        private MagicGame getNextGame() {
-            try {
-                return get();
-            } catch (ExecutionException ex) {
-                throw new RuntimeException(ex);
-            } catch (InterruptedException ex) {
-                System.err.println(ex);
-                return null;
-            } catch (CancellationException ex) {
-                System.err.println("Worker cancelled : " + MagicSystem.getHeapUtilizationStats().replace("\n", ", "));
-                return null;
-            }
-        }
-
+    void setNextGame(MagicGame aGame) {
+        nextGame = aGame;
+        nextGameButton.setBusy(nextGame == null);
     }
 
 }
