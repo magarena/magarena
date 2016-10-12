@@ -7,7 +7,7 @@ type=Creature
 subtype=Zombie
 cost={B}
 pt=1/1
-ability={1}{B}, {T}, Discard a card: Put a 2/2 black Zombie creature token onto the battlefield.;\
+ability={1}{B}, {T}, Discard a card: Create a 2/2 black Zombie creature token.;\
         Tap three untapped Zombies you control: You draw a card and you lose 1 life.
 timing=main
-oracle={1}{B}, {T}, Discard a card: Put a 2/2 black Zombie creature token onto the battlefield.\nTap three untapped Zombies you control: You draw a card and you lose 1 life.
+oracle={1}{B}, {T}, Discard a card: Create a 2/2 black Zombie creature token.\nTap three untapped Zombies you control: You draw a card and you lose 1 life.

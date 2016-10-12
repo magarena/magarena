@@ -7,8 +7,8 @@ type=Planeswalker
 subtype=Gideon
 cost={2}{W}{W}
 ability=+1: Until end of turn, SN becomes a 5/5 Human Soldier Ally creature with indestructible that's still a planeswalker.~Prevent all damage that would be dealt to SN this turn.;\
-         0: Put a 2/2 white Knight Ally creature token onto the battlefield.
+         0: Create a 2/2 white Knight Ally creature token.
 loyalty=4
 timing=main
 requires_groovy_code
-oracle=+1: Until end of turn, Gideon, Ally of Zendikar becomes a 5/5 Human Soldier Ally creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.\n0: Put a 2/2 white Knight Ally creature token onto the battlefield.\n−4: You get an emblem with "Creatures you control get +1/+1."
+oracle=+1: Until end of turn, Gideon, Ally of Zendikar becomes a 5/5 Human Soldier Ally creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.\n0: Create a 2/2 white Knight Ally creature token.\n−4: You get an emblem with "Creatures you control get +1/+1."

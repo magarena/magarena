@@ -5,6 +5,6 @@ rarity=U
 type=Enchantment
 cost={B}
 ability=Whenever a creature dies, you may put a quest counter on SN.;\
-        Remove three quest counters from SN, Sacrifice SN: Put a 5/5 black Zombie Giant creature token onto the battlefield.
+        Remove three quest counters from SN, Sacrifice SN: Create a 5/5 black Zombie Giant creature token.
 timing=enchantment
-oracle=Whenever a creature dies, you may put a quest counter on Quest for the Gravelord.\nRemove three quest counters from Quest for the Gravelord and sacrifice it: Put a 5/5 black Zombie Giant creature token onto the battlefield.
+oracle=Whenever a creature dies, you may put a quest counter on Quest for the Gravelord.\nRemove three quest counters from Quest for the Gravelord and sacrifice it: Create a 5/5 black Zombie Giant creature token.

@@ -4,7 +4,7 @@ value=3.130
 rarity=U
 type=Enchantment
 cost={B}{B}
-ability={B}, Exile two creature cards from your graveyard: Put a 1/1 black Skeleton creature token onto the battlefield.;\
+ability={B}, Exile two creature cards from your graveyard: Create a 1/1 black Skeleton creature token.;\
         When SN leaves the battlefield, destroy all Skeleton tokens. They can't be regenerated.
 timing=enchantment
-oracle={B}, Exile two creature cards from your graveyard: Put a 1/1 black Skeleton creature token onto the battlefield. It has "{B}: Regenerate this creature."\nWhen Drudge Spell leaves the battlefield, destroy all Skeleton tokens. They can't be regenerated.
+oracle={B}, Exile two creature cards from your graveyard: Create a 1/1 black Skeleton creature token. It has "{B}: Regenerate this creature."\nWhen Drudge Spell leaves the battlefield, destroy all Skeleton tokens. They can't be regenerated.

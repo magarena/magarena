@@ -6,7 +6,7 @@ type=Planeswalker
 subtype=Freyalise
 cost={3}{G}{G}
 loyalty=3
-ability=+2: Put a 1/1 green Elf Druid creature token onto the battlefield.;\
+ability=+2: Create a 1/1 green Elf Druid creature token.;\
         −2: Destroy target artifact or enchantment.;\
         −6: Draw a card for each green creature you control.
 timing=main

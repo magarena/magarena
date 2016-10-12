@@ -7,6 +7,6 @@ subtype=Demon
 cost={5}{B}{B}
 pt=6/6
 ability=Flying, trample;\
-        At the beginning of your upkeep, sacrifice a non-Zombie creature.~Put a 2/2 black Zombie creature token onto the battlefield.
+        At the beginning of your upkeep, sacrifice a non-Zombie creature.~Create a 2/2 black Zombie creature token.
 timing=main
 oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a non-Zombie creature, then create a 2/2 black Zombie creature token.

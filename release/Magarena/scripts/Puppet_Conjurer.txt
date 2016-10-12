@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Human,Wizard
 cost={1}{B}
 pt=1/2
-ability={U}, {T}: Put a 0/1 blue Homunculus artifact creature token onto the battlefield.;\
+ability={U}, {T}: Create a 0/1 blue Homunculus artifact creature token.;\
         At the beginning of your upkeep, sacrifice a Homunculus.
 timing=main
-oracle={U}, {T}: Put a 0/1 blue Homunculus artifact creature token onto the battlefield.\nAt the beginning of your upkeep, sacrifice a Homunculus.
+oracle={U}, {T}: Create a 0/1 blue Homunculus artifact creature token.\nAt the beginning of your upkeep, sacrifice a Homunculus.

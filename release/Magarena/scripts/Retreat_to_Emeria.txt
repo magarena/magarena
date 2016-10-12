@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 cost={3}{W}
 ability=Whenever a land enters the battlefield under your control, choose one — \
-        (1) Put a 1/1 white Kor Ally creature token onto the battlefield. \
+        (1) Create a 1/1 white Kor Ally creature token. \
         (2) Creatures you control get +1/+1 until end of turn.
 timing=enchantment
-oracle=Landfall — Whenever a land enters the battlefield under your control, choose one —\n• Put a 1/1 white Kor Ally creature token onto the battlefield.\n• Creatures you control get +1/+1 until end of turn.
+oracle=Landfall — Whenever a land enters the battlefield under your control, choose one —\n• Create a 1/1 white Kor Ally creature token.\n• Creatures you control get +1/+1 until end of turn.

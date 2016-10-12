@@ -8,4 +8,4 @@ cost={G}{G}
 pt=1/2
 timing=main
 requires_groovy_code
-oracle={G}, {T}: Choose target opponent who controlled more creatures than you did as you activated this ability. Put a 2/2 green Beast creature token onto the battlefield.
+oracle={G}, {T}: Choose target opponent who controlled more creatures than you did as you activated this ability. Create a 2/2 green Beast creature token.

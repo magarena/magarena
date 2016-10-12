@@ -8,7 +8,7 @@ cost={3}{G}{W}
 pt=4/5
 ability=Flying;\
         Humans you control have hexproof.;\
-        {2}, Exile a card from your graveyard: Put a 1/1 white Human Soldier creature token onto the battlefield.
+        {2}, Exile a card from your graveyard: Create a 1/1 white Human Soldier creature token.
 timing=main
 requires_groovy_code=Spirit of the Hearth
-oracle=Flying\nYou and Humans you control have hexproof.\n{2}, Exile a card from your graveyard: Put a 1/1 white Human Soldier creature token onto the battlefield.
+oracle=Flying\nYou and Humans you control have hexproof.\n{2}, Exile a card from your graveyard: Create a 1/1 white Human Soldier creature token.

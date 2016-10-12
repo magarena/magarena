@@ -4,7 +4,7 @@ value=3.586
 rarity=C
 type=Artifact
 cost={1}
-ability={1}, {T}, Sacrifice SN: Put a 1/1 colorless Myr artifact creature token onto the battlefield.;\
+ability={1}, {T}, Sacrifice SN: Create a 1/1 colorless Myr artifact creature token.;\
         When SN is put into a graveyard from the battlefield, you may pay {W}. If you do, draw a card.
 timing=artifact
-oracle={1}, {T}, Sacrifice Origin Spellbomb: Put a 1/1 colorless Myr artifact creature token onto the battlefield.\nWhen Origin Spellbomb is put into a graveyard from the battlefield, you may pay {W}. If you do, draw a card.
+oracle={1}, {T}, Sacrifice Origin Spellbomb: Create a 1/1 colorless Myr artifact creature token.\nWhen Origin Spellbomb is put into a graveyard from the battlefield, you may pay {W}. If you do, draw a card.

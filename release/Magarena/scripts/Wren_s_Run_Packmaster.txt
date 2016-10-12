@@ -9,7 +9,7 @@ cost={3}{G}
 pt=5/5
 ability=Champion an Elf;\
         Each Wolf you control has deathtouch;\
-        {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.;\
+        {2}{G}: Create a 2/2 green Wolf creature token.;\
         Cast SN with AI only if you control an Elf
 timing=main
-oracle=Champion an Elf\n{2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.\nWolves you control have deathtouch.
+oracle=Champion an Elf\n{2}{G}: Create a 2/2 green Wolf creature token.\nWolves you control have deathtouch.

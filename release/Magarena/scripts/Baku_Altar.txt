@@ -5,6 +5,6 @@ rarity=R
 type=Artifact
 cost={2}
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
-        {2}, {T}, Remove a ki counter from SN: Put a 1/1 colorless Spirit creature token onto the battlefield.
+        {2}, {T}, Remove a ki counter from SN: Create a 1/1 colorless Spirit creature token.
 timing=artifact
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Baku Altar.\n{2}, {T}, Remove a ki counter from Baku Altar: Put a 1/1 colorless Spirit creature token onto the battlefield.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Baku Altar.\n{2}, {T}, Remove a ki counter from Baku Altar: Create a 1/1 colorless Spirit creature token.

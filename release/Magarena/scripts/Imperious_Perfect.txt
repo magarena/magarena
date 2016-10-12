@@ -7,7 +7,7 @@ subtype=Elf,Warrior
 cost={2}{G}
 pt=2/2
 ability=Other Elf creatures you control get +1/+1.;\
-        {G}, {T}: Put a 1/1 green Elf Warrior creature token onto the battlefield.
+        {G}, {T}: Create a 1/1 green Elf Warrior creature token.
 static=player
 timing=main
-oracle=Other Elf creatures you control get +1/+1.\n{G}, {T}: Put a 1/1 green Elf Warrior creature token onto the battlefield.
+oracle=Other Elf creatures you control get +1/+1.\n{G}, {T}: Create a 1/1 green Elf Warrior creature token.

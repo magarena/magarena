@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}{W}
 ability=Enchant land you control;\
-        Enchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token onto the battlefield.";\
+        Enchanted land has "{W}{W}, {T}: Create a 0/1 white Caribou creature token.";\
         Sacrifice a Caribou token: You gain 1 life.
 enchant=pump,land you control
 timing=aura
-oracle=Enchant land you control\nEnchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token onto the battlefield."\nSacrifice a Caribou token: You gain 1 life.
+oracle=Enchant land you control\nEnchanted land has "{W}{W}, {T}: Create a 0/1 white Caribou creature token."\nSacrifice a Caribou token: You gain 1 life.

@@ -5,6 +5,6 @@ rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{R}{R}
 ability=Creatures you control have haste.;\
-        {2}{R}, {T}, Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
+        {2}{R}, {T}, Sacrifice a land: Create a 3/3 colorless Golem enchantment artifact creature token.
 timing=artifact
-oracle=Creatures you control have haste.\n{2}{R}, {T}, Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
+oracle=Creatures you control have haste.\n{2}{R}, {T}, Sacrifice a land: Create a 3/3 colorless Golem enchantment artifact creature token.

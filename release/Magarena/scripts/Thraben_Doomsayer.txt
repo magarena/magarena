@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}{W}
 pt=2/2
-ability={T}: Put a 1/1 white Human creature token onto the battlefield.;\
+ability={T}: Create a 1/1 white Human creature token.;\
         As long as you have 5 or less life, other creatures you control get +2/+2.
 timing=main
-oracle={T}: Put a 1/1 white Human creature token onto the battlefield.\nFateful hour — As long as you have 5 or less life, other creatures you control get +2/+2.
+oracle={T}: Create a 1/1 white Human creature token.\nFateful hour — As long as you have 5 or less life, other creatures you control get +2/+2.

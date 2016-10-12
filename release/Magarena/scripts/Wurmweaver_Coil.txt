@@ -7,7 +7,7 @@ subtype=Aura
 cost={4}{G}{G}
 ability=Enchant green creature;\
         Enchanted creature gets +6/+6.;\
-        {G}{G}{G}, Sacrifice SN: Put a 6/6 green Wurm creature token onto the battlefield.
+        {G}{G}{G}, Sacrifice SN: Create a 6/6 green Wurm creature token.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant green creature\nEnchanted creature gets +6/+6.\n{G}{G}{G}, Sacrifice Wurmweaver Coil: Put a 6/6 green Wurm creature token onto the battlefield.
+oracle=Enchant green creature\nEnchanted creature gets +6/+6.\n{G}{G}{G}, Sacrifice Wurmweaver Coil: Create a 6/6 green Wurm creature token.

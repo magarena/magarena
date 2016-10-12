@@ -8,7 +8,7 @@ cost={3}{W}
 pt=5/6
 ability=Indestructible;\
         Other creatures you control have vigilance;\
-        {2}{W}{W}: Put a 2/1 white Cleric enchantment creature token onto the battlefield.
+        {2}{W}{W}: Create a 2/1 white Cleric enchantment creature token.
 timing=main
 requires_groovy_code
-oracle=Indestructible\nAs long as your devotion to white is less than five, Heliod isn't a creature.\nOther creatures you control have vigilance.\n{2}{W}{W}: Put a 2/1 white Cleric enchantment creature token onto the battlefield.
+oracle=Indestructible\nAs long as your devotion to white is less than five, Heliod isn't a creature.\nOther creatures you control have vigilance.\n{2}{W}{W}: Create a 2/1 white Cleric enchantment creature token.

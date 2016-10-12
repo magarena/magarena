@@ -8,6 +8,6 @@ cost={3}{G}
 pt=0/0
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
         {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
-        {2}, Remove a +1/+1 counter from SN: Put a 1/1 green Spike creature token onto the battlefield.
+        {2}, Remove a +1/+1 counter from SN: Create a 1/1 green Spike creature token.
 timing=main
-oracle=Spike Breeder enters the battlefield with three +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Breeder: Put a +1/+1 counter on target creature.\n{2}, Remove a +1/+1 counter from Spike Breeder: Put a 1/1 green Spike creature token onto the battlefield.
+oracle=Spike Breeder enters the battlefield with three +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Breeder: Put a +1/+1 counter on target creature.\n{2}, Remove a +1/+1 counter from Spike Breeder: Create a 1/1 green Spike creature token.

@@ -8,8 +8,8 @@ subtype=Eldrazi,Horror
 color=
 pt=3/5
 ability=Eldrazi you control have vigilance.;\
-        {2}, {T}, Sacrifice a non-Eldrazi creature: Put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+        {2}, {T}, Sacrifice a non-Eldrazi creature: Create a 3/2 colorless Eldrazi Horror creature token.
 transform=Extricator of Sin
 timing=main
 hidden
-oracle=Eldrazi you control have vigilance.\n{2}, {T}, Sacrifice a non-Eldrazi creature: Put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+oracle=Eldrazi you control have vigilance.\n{2}, {T}, Sacrifice a non-Eldrazi creature: Create a 3/2 colorless Eldrazi Horror creature token.
