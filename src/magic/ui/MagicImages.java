@@ -32,9 +32,10 @@ import magic.utility.MagicResources;
 
 public final class MagicImages {
 
-    public static final BufferedImage BACK_IMAGE;
+
     private static Proxy proxy;
 
+    public static final BufferedImage BACK_IMAGE;
     static {
         BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
         Dimension size = getPreferredImageSize(image);
@@ -233,10 +234,6 @@ public final class MagicImages {
         avatarsMap.clear();
     }
 
-    public static BufferedImage getMissingCardImage() {
-        return MISSING_CARD;
-    }
-
     private static void tryDownloadingImage(MagicCardDefinition aCard) {
         if (proxy == null) {
             proxy = GeneralConfig.getInstance().getProxy();
@@ -255,7 +252,7 @@ public final class MagicImages {
         final ImageType type = getImageType(face);
         switch (type) {
             case UNKNOWN:
-                return getMissingCardImage();
+                return MISSING_CARD;
             case CUSTOM:
                 return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(face));
             case PROXY:

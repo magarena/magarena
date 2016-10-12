@@ -169,7 +169,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             cardLabel.setVisible(true);
         } else {
             thisImage = aImage;
-            gsImage = thisCard.isInvalid() && aImage != MagicImages.getMissingCardImage()
+            gsImage = thisCard.isInvalid() && aImage != MagicImages.MISSING_CARD
                     ? ImageHelper.getGreyScaleImage(aImage)
                     : null;
             isImagePending = false;
