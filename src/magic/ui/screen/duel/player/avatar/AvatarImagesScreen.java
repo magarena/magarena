@@ -40,9 +40,7 @@ import magic.ui.MagicImages;
 import magic.ui.helpers.UrlHelper;
 import magic.ui.ScreenController;
 import magic.ui.widget.WrapLayout;
-import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
@@ -51,8 +49,8 @@ import magic.ui.theme.Theme;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.ImageFileIO;
 import magic.translate.UiString;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.FontsAndBorders;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -60,7 +58,7 @@ import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IActionBar {
+public class AvatarImagesScreen extends HeaderFooterScreen {
 
     // translatable strings.
     private static final String _S1 = "Select Avatar";
@@ -71,17 +69,20 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
     private static final String _S6 = "Get more avatars from the Magarena forum.";
 
     private JPanel viewer;
-    private MenuButton rightActionButton = null;
-    private JLabel selectedImageLabel = null;
+        private JLabel selectedImageLabel = null;
     private final IAvatarImageConsumer consumer;
     private final Map<JLabel, Path> imagePathMap = new HashMap<>();
 
     public AvatarImagesScreen(final IAvatarImageConsumer consumer) {
+        super(UiString.get(_S3));
         this.consumer = consumer;
-        setContent(getScreenContent());
+        setMainContent(getScreenContent());
+        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S4)));
+        addToFooter(MenuButton.build(this::doOpenAvatarsWebPage, _S5, _S6));
     }
-    public AvatarImagesScreen() {
-        this(null);
+    
+    private void doOpenAvatarsWebPage() {
+        UrlHelper.openURL(UrlHelper.URL_AVATARS);        
     }
 
     private JPanel getScreenContent() {
@@ -159,7 +160,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
         // paint the Icon to the BufferedImage.
         icon.paintIcon(null, g, 0,0);
         g.dispose();
-        rightActionButton = new ActionBarButton(
+        setRightFooter(new ActionBarButton(
             new ImageIcon(ImageHelper.scale(bi, 46, 46)),
             UiString.get(_S1), UiString.get(_S2),
             new AbstractAction() {
@@ -169,9 +170,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
                     ScreenController.closeActiveScreen(false);
                 }
             }
-        );
-
-        refreshActionBar();
+        ));
         this.selectedImageLabel = iconLabel;
     }
 
@@ -316,37 +315,4 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
         }
 
     }
-
-    @Override
-    public String getScreenCaption() {
-        return UiString.get(_S3);
-    }
-
-    @Override
-    public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton(UiString.get(_S4));
-    }
-
-    @Override
-    public MenuButton getRightAction() {
-        return rightActionButton;
-    }
-
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(new MenuButton(UiString.get(_S5), new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                UrlHelper.openURL(UrlHelper.URL_AVATARS);
-            }
-        }, UiString.get(_S6)));
-        return buttons;
-    }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
-    }
-
 }

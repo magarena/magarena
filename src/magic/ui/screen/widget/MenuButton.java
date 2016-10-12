@@ -160,12 +160,12 @@ public class MenuButton extends JButton {
     }
 
     /**
-     * Creates a new menu button.
+     * Creates an icon-only button with tooltip.<br>
      *
      * @param action click action
      * @param icon
-     * @param title tooltip title text <b>in English</b>.
-     * @param description tooltip body text <b>in English</b>.
+     * @param title tooltip title text (<b>in English</b>).
+     * @param description tooltip body text (<b>in English</b>).
      * @return
      */
     public static MenuButton build(Runnable action, MagicIcon icon, String title, String description) {
@@ -183,14 +183,35 @@ public class MenuButton extends JButton {
     }
 
     /**
-     * Creates a new menu button.
-     *
+     * Creates a text-only button with tooltip.
+     * 
      * @param action click action.
-     * @param text caption text <b>in English</b>.
+     * @param title button caption and tooltip title (<b>in English</b>).
+     * @param tooltip main tooltip text (<b>in English</b>).
      * @return
      */
-    public static MenuButton build(Runnable action, String text) {
-        return new ActionBarButton(UiString.get(text), new AbstractAction() {
+    public static MenuButton build(Runnable action, String title, String tooltip) {
+        return new ActionBarButton(
+                UiString.get(title),
+                UiString.get(tooltip),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        action.run();
+                    }
+                }
+        );
+    }
+
+    /**
+     * Creates a text-only button.
+     *
+     * @param action click action.
+     * @param text button caption (<b>in English</b>).
+     * @return
+     */
+    public static MenuButton build(Runnable action, String title) {
+        return new ActionBarButton(UiString.get(title), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 action.run();
