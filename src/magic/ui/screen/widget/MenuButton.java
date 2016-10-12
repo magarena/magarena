@@ -168,9 +168,9 @@ public class MenuButton extends JButton {
      * @param description tooltip body text (<b>in English</b>).
      * @return
      */
-    public static MenuButton build(Runnable action, MagicIcon icon, String title, String description) {
+    public static MenuButton build(Runnable action, ImageIcon image, String title, String description) {
         return new ActionBarButton(
-                MagicImages.getIcon(icon),
+                image,
                 UiString.get(title),
                 UiString.get(description),
                 new AbstractAction() {
@@ -180,6 +180,19 @@ public class MenuButton extends JButton {
                     }
                 }
         );
+    }
+
+    /**
+     * Creates an icon-only button with tooltip.<br>
+     *
+     * @param action click action
+     * @param icon
+     * @param title tooltip title text (<b>in English</b>).
+     * @param description tooltip body text (<b>in English</b>).
+     * @return
+     */
+    public static MenuButton build(Runnable action, MagicIcon icon, String title, String description) {
+        return build(action, MagicImages.getIcon(icon), title, description);
     }
 
     /**
