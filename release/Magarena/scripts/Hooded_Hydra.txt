@@ -7,8 +7,8 @@ subtype=Snake,Hydra
 cost={X}{G}{G}
 pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
-        When SN dies, put a 1/1 green Snake creature token onto the battlefield for each +1/+1 counter on it.;\
+        When SN dies, create a 1/1 green Snake creature token for each +1/+1 counter on it.;\
         Morph {3}{G}{G};
 timing=main
 requires_groovy_code
-oracle=Hooded Hydra enters the battlefield with X +1/+1 counters on it.\nWhen Hooded Hydra dies, put a 1/1 green Snake creature token onto the battlefield for each +1/+1 counter on it.\nMorph {3}{G}{G}\nAs Hooded Hydra is turned face up, put five +1/+1 counters on it.
+oracle=Hooded Hydra enters the battlefield with X +1/+1 counters on it.\nWhen Hooded Hydra dies, create a 1/1 green Snake creature token for each +1/+1 counter on it.\nMorph {3}{G}{G}\nAs Hooded Hydra is turned face up, put five +1/+1 counters on it.

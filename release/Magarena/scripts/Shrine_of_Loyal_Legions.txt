@@ -6,6 +6,6 @@ type=Artifact
 cost={2}
 ability=At the beginning of your upkeep, put a charge counter on SN.;\
         Whenever you cast a white spell, put a charge counter on SN.;\
-        {3}, {T}, Sacrifice SN: Put a 1/1 colorless Myr artifact creature token onto the battlefield for each charge counter on SN.
+        {3}, {T}, Sacrifice SN: Create a 1/1 colorless Myr artifact creature token for each charge counter on SN.
 timing=artifact
-oracle=At the beginning of your upkeep or whenever you cast a white spell, put a charge counter on Shrine of Loyal Legions.\n{3}, {T}, Sacrifice Shrine of Loyal Legions: Put a 1/1 colorless Myr artifact creature token onto the battlefield for each charge counter on Shrine of Loyal Legions.
+oracle=At the beginning of your upkeep or whenever you cast a white spell, put a charge counter on Shrine of Loyal Legions.\n{3}, {T}, Sacrifice Shrine of Loyal Legions: Create a 1/1 colorless Myr artifact creature token for each charge counter on Shrine of Loyal Legions.

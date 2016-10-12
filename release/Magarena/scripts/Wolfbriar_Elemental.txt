@@ -9,4 +9,4 @@ pt=4/4
 timing=main
 ability=Multikicker {G}
 requires_groovy_code
-oracle=Multikicker {G}\nWhen Wolfbriar Elemental enters the battlefield, put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked.
+oracle=Multikicker {G}\nWhen Wolfbriar Elemental enters the battlefield, create a 2/2 green Wolf creature token for each time it was kicked.

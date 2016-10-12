@@ -8,4 +8,4 @@ cost={3}{W}
 pt=1/2
 timing=main
 requires_groovy_code
-oracle=Chroma — When Springjack Shepherd enters the battlefield, put a 0/1 white Goat creature token onto the battlefield for each white mana symbol in the mana costs of permanents you control.
+oracle=Chroma — When Springjack Shepherd enters the battlefield, create a 0/1 white Goat creature token for each white mana symbol in the mana costs of permanents you control.

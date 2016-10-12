@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying\nWhenever Rith, the Awakener deals combat damage to a player, you may pay {2}{G}. If you do, choose a color, then put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color.
+oracle=Flying\nWhenever Rith, the Awakener deals combat damage to a player, you may pay {2}{G}. If you do, choose a color, then create a 1/1 green Saproling creature token for each permanent of that color.

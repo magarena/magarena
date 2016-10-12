@@ -4,7 +4,7 @@ value=4.139
 rarity=R
 type=Sorcery
 cost={3}{G}
-effect=Put a 1/1 green Saproling creature token onto the battlefield for each creature you control.
+effect=Create a 1/1 green Saproling creature token for each creature you control.
 timing=token
 requires_groovy_code
-oracle=You may cast Saproling Symbiosis as though it had flash if you pay {2} more to cast it.\nPut a 1/1 green Saproling creature token onto the battlefield for each creature you control.
+oracle=You may cast Saproling Symbiosis as though it had flash if you pay {2} more to cast it.\nCreate a 1/1 green Saproling creature token for each creature you control.

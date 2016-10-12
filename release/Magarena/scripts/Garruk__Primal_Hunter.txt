@@ -8,6 +8,6 @@ cost={2}{G}{G}{G}
 loyalty=3
 ability=+1: Create a 3/3 green Beast creature token.;\
         −3: Draw cards equal to the greatest power among creatures you control.;\
-        −6: Put a 6/6 green Wurm creature token onto the battlefield for each land you control.
+        −6: Create a 6/6 green Wurm creature token for each land you control.
 timing=main
-oracle=+1: Create a 3/3 green Beast creature token.\n−3: Draw cards equal to the greatest power among creatures you control.\n−6: Put a 6/6 green Wurm creature token onto the battlefield for each land you control.
+oracle=+1: Create a 3/3 green Beast creature token.\n−3: Draw cards equal to the greatest power among creatures you control.\n−6: Create a 6/6 green Wurm creature token for each land you control.

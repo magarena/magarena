@@ -11,7 +11,7 @@
                 permanent,
                 new MagicMayChoice("Pay cumulative upkeep?"),
                 this,
-                "PN may\$ have an opponent put a 1/1 red Survivor creature token onto the battlefield for each age counter on SN. " +
+                "PN may\$ have an opponent create a 1/1 red Survivor creature token for each age counter on SN. " +
                 "If he or she doesn't, sacrifice SN."
             );
         }

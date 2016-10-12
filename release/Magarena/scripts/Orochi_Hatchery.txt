@@ -6,6 +6,6 @@ rarity=R
 type=Artifact
 cost={X}{X}
 ability=SN enters the battlefield with X charge counters on it.;\
-        {5}, {T}: Put a 1/1 green Snake creature token onto the battlefield for each charge counter on SN.
+        {5}, {T}: Create a 1/1 green Snake creature token for each charge counter on SN.
 timing=artifact
-oracle=Orochi Hatchery enters the battlefield with X charge counters on it.\n{5}, {T}: Put a 1/1 green Snake creature token onto the battlefield for each charge counter on Orochi Hatchery.
+oracle=Orochi Hatchery enters the battlefield with X charge counters on it.\n{5}, {T}: Create a 1/1 green Snake creature token for each charge counter on Orochi Hatchery.
