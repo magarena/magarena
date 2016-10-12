@@ -173,4 +173,12 @@ public class MenuButton extends JButton {
         );
     }
 
+    public static MenuButton build(Runnable action, String text) {
+        return new ActionBarButton(text, new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                action.run();
+            }
+        });
+    }
 }

@@ -1,11 +1,8 @@
 package magic.ui.screen.duel.setup;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.nio.file.Path;
-import java.util.List;
-import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.utility.DeckUtils;
@@ -19,21 +16,16 @@ import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.utility.MagicStyle;
 import magic.ui.WikiPage;
 import magic.ui.helpers.MouseHelper;
+import magic.ui.screen.HeaderFooterScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class NewDuelSettingsScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar, IWikiPage {
+public class NewDuelSettingsScreen extends HeaderFooterScreen {
 
     // translatable strings
     private static final String _S1 = "New Duel Settings";
@@ -49,37 +41,25 @@ public class NewDuelSettingsScreen
     private final ScreenContent content;
 
     public NewDuelSettingsScreen() {
+        super(UiString.get(_S1));
         duelConfig.load();
-        content = new ScreenContent(duelConfig, getFrame());
-        setContent(content);
+        content = new ScreenContent(duelConfig, ScreenController.getMainFrame());
+        setMainContent(content);
+        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S2)));
+        setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S3)));
+        setWikiPage(WikiPage.NEW_DUEL);
     }
 
-    @Override
-    public String getScreenCaption() {
-        return UiString.get(_S1);
-    }
-
-    @Override
-    public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton(UiString.get(_S2));
-    }
-
-    @Override
-    public MenuButton getRightAction() {
-        return new MenuButton(UiString.get(_S3), new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (isEachPlayerDeckValid(true)) {
-                    updateDuelConfig();
-                    ScreenController.closeActiveScreen(false);
-                    try {
-                        getFrame().newDuel(duelConfig);
-                    } catch (InvalidDeckException ex) {
-                        ScreenController.showWarningMessage(UiString.get(_S4, ex.getMessage()));
-                    }
-                }
+    private void doNextAction() {
+        if (isEachPlayerDeckValid(true)) {
+            updateDuelConfig();
+            ScreenController.closeActiveScreen(false);
+            try {
+                ScreenController.getMainFrame().newDuel(duelConfig);
+            } catch (InvalidDeckException ex) {
+                ScreenController.showWarningMessage(UiString.get(_S4, ex.getMessage()));
             }
-        });
+        }
     }
 
     private boolean isEachPlayerDeckValid(final boolean showErrorDialog) {
@@ -112,21 +92,11 @@ public class NewDuelSettingsScreen
     }
 
     @Override
-    public List<MenuButton> getMiddleActions() {
-        return null;
-    }
-
-    @Override
     public boolean isScreenReadyToClose(final Object nextScreen) {
         if (isEachPlayerDeckValid(false)) {
             updateDuelConfig();
         }
         return true;
-    }
-
-    @Override
-    public WikiPage getWikiPageName() {
-        return WikiPage.NEW_DUEL;
     }
 
     private class ScreenContent extends JPanel implements IPlayerProfileListener {
@@ -270,11 +240,6 @@ public class NewDuelSettingsScreen
             }
         }
 
-    }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
     }
 
 }
