@@ -23,7 +23,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
@@ -281,7 +280,7 @@ public final class MagicImages {
 
         final MagicCardDefinition cdef = face.getCardDefinition();
 
-        if (face == null || cdef == MagicCardDefinition.UNKNOWN) {
+        if (cdef == MagicCardDefinition.UNKNOWN) {
             return ImageType.UNKNOWN;
         }
 
