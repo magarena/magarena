@@ -278,9 +278,7 @@ public final class MagicImages {
 
     private static ImageType getImageType(IRenderableCard face) {
 
-        final MagicCardDefinition cdef = face.getCardDefinition();
-
-        if (cdef == MagicCardDefinition.UNKNOWN) {
+        if (face.isUnknown()) {
             return ImageType.UNKNOWN;
         }
 
@@ -292,11 +290,12 @@ public final class MagicImages {
             return ImageType.PROXY;
         }
 
-        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(cdef).exists()) {
+        if (GeneralConfig.getInstance().getImagesOnDemand()
+                && !MagicFileSystem.getCardImageFile(face).exists()) {
             return ImageType.FULL;
         }
 
-        if (MagicFileSystem.getCardImageFile(cdef).exists()) {
+        if (MagicFileSystem.getCardImageFile(face).exists()) {
             return ImageType.FULL;
         }
 

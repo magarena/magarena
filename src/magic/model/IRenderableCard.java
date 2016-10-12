@@ -140,4 +140,8 @@ public interface IRenderableCard {
     default long getRenderKey() {
         return getCardDefinition().getDistinctName().hashCode();
     }
+
+    default boolean isUnknown() {
+        return getCardDefinition() == MagicCardDefinition.UNKNOWN;
+    }
 }

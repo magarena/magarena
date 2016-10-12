@@ -141,6 +141,10 @@ public final class MagicFileSystem {
         return new File(imageDirectory.toFile(), getImageFilename(card));
     }
 
+    public static File getCardImageFile(IRenderableCard face) {
+        return getCardImageFile(face.getCardDefinition());
+    }
+
     /**
      * Returns a File object representing the given card's cropped image file.
      */
