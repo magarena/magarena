@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={3}{G}{U}
 ability=Enchant land;\
-        Enchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."
+        Enchanted land has "{G}{U}, {T}: Create a 2/2 green and blue Drake creature token with flying."
 enchant=pump,pos land
 timing=aura
-oracle=Enchant land\nEnchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."
+oracle=Enchant land\nEnchanted land has "{G}{U}, {T}: Create a 2/2 green and blue Drake creature token with flying."

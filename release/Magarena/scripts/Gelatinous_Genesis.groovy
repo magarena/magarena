@@ -6,7 +6,7 @@
                 cardOnStack,
                 payedCost.getX(),
                 this,
-                "Put RN RN/RN green Ooze creature tokens onto the battlefield."
+                "PN creates RN RN/RN green Ooze creature tokens onto the battlefield."
             );
         }
         @Override

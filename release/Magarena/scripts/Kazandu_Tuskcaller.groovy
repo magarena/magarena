@@ -19,7 +19,7 @@
                 source,
                 amount >= 6 ? 2 : 1,
                 this,
-                "PN puts RN 3/3 green Elephant creature tokens onto the battlefield."
+                "PN creates RN 3/3 green Elephant creature tokens onto the battlefield."
             );
         }
 

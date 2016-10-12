@@ -6,4 +6,4 @@ type=Sorcery
 cost={X}{X}{G}
 timing=main
 requires_groovy_code
-oracle=Put X X/X green Ooze creature tokens onto the battlefield.
+oracle=Create X X/X green Ooze creature tokens.

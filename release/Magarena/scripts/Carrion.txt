@@ -7,4 +7,4 @@ cost={1}{B}{B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 timing=token
 requires_groovy_code
-oracle=As an additional cost to cast Carrion, sacrifice a creature.\nPut X 0/1 black Insect creature tokens onto the battlefield, where X is the sacrificed creature's power.
+oracle=As an additional cost to cast Carrion, sacrifice a creature.\nCreate X 0/1 black Insect creature tokens, where X is the sacrificed creature's power.

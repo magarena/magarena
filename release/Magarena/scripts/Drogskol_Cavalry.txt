@@ -8,6 +8,6 @@ cost={5}{W}{W}
 pt=4/4
 ability=Flying;\
         Whenever another Spirit enters the battlefield under your control, you gain 2 life.;\
-        {3}{W}: Put a 1/1 white Spirit creature token with flying onto the battlefield.
+        {3}{W}: Create a 1/1 white Spirit creature token with flying.
 timing=main
-oracle=Flying\nWhenever another Spirit enters the battlefield under your control, you gain 2 life.\n{3}{W}: Put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Flying\nWhenever another Spirit enters the battlefield under your control, you gain 2 life.\n{3}{W}: Create a 1/1 white Spirit creature token with flying.

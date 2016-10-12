@@ -4,7 +4,7 @@ value=3.170
 rarity=U
 type=Instant
 cost={2}{W}
-effect=Put three 1/1 white Soldier creature tokens onto the battlefield.
+effect=Create three 1/1 white Soldier creature tokens.
 timing=token
 requires_groovy_code
-oracle=Cast Even the Odds only if you control fewer creatures than each opponent.\nPut three 1/1 white Soldier creature tokens onto the battlefield.
+oracle=Cast Even the Odds only if you control fewer creatures than each opponent.\nCreate three 1/1 white Soldier creature tokens.

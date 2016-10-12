@@ -6,7 +6,7 @@
                 cardOnStack,
                 payedCost.getTarget(),
                 this,
-                "PN puts X 0/1 black Insect creature tokens onto the battlefield, where X is RN's power."
+                "PN creates X 0/1 black Insect creature tokens, where X is RN's power."
             );
         }
 

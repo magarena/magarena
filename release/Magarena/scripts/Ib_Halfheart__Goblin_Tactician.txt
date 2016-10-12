@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Goblin,Advisor
 cost={3}{R}
 pt=3/2
-ability=Sacrifice two Mountains: Put two 1/1 red Goblin creature tokens onto the battlefield.
+ability=Sacrifice two Mountains: Create two 1/1 red Goblin creature tokens.
 timing=fmain
 requires_groovy_code
-oracle=Whenever another Goblin you control becomes blocked, sacrifice it. If you do, it deals 4 damage to each creature blocking it.\nSacrifice two Mountains: Put two 1/1 red Goblin creature tokens onto the battlefield.
+oracle=Whenever another Goblin you control becomes blocked, sacrifice it. If you do, it deals 4 damage to each creature blocking it.\nSacrifice two Mountains: Create two 1/1 red Goblin creature tokens.

@@ -7,7 +7,7 @@ subtype=Construct
 cost={7}
 pt=0/0
 ability=SN enters the battlefield with five +1/+1 counters on it.;\
-        {1}, Remove a +1/+1 counter from SN: Put a 1/1 colorless Pentavite artifact creature token with flying onto the battlefield.;\
+        {1}, Remove a +1/+1 counter from SN: Create a 1/1 colorless Pentavite artifact creature token with flying.;\
         {1}, Sacrifice a Pentavite: Put a +1/+1 counter on SN.
 timing=main
-oracle=Pentavus enters the battlefield with five +1/+1 counters on it.\n{1}, Remove a +1/+1 counter from Pentavus: Put a 1/1 colorless Pentavite artifact creature token with flying onto the battlefield.\n{1}, Sacrifice a Pentavite: Put a +1/+1 counter on Pentavus.
+oracle=Pentavus enters the battlefield with five +1/+1 counters on it.\n{1}, Remove a +1/+1 counter from Pentavus: Create a 1/1 colorless Pentavite artifact creature token with flying.\n{1}, Sacrifice a Pentavite: Put a +1/+1 counter on Pentavus.

@@ -5,9 +5,9 @@ rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={4}{W}{W}
-ability=+1: Put three 1/1 white Soldier creature tokens onto the battlefield.;\
+ability=+1: Create three 1/1 white Soldier creature tokens.;\
         −3: Destroy all creatures with power 4 or greater.
 loyalty=4
 timing=main
 requires_groovy_code
-oracle=+1: Put three 1/1 white Soldier creature tokens onto the battlefield.\n−3: Destroy all creatures with power 4 or greater.\n−7: You get an emblem with "Creatures you control get +2/+2 and have flying."
+oracle=+1: Create three 1/1 white Soldier creature tokens.\n−3: Destroy all creatures with power 4 or greater.\n−7: You get an emblem with "Creatures you control get +2/+2 and have flying."

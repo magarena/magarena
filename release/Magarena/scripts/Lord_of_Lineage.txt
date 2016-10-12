@@ -8,8 +8,8 @@ color=b
 pt=5/5
 ability=Flying;\
         Other Vampire creatures you control get +2/+2.;\
-        {T}: Put a 2/2 black Vampire creature token with flying onto the battlefield.
+        {T}: Create a 2/2 black Vampire creature token with flying.
 transform=Bloodline Keeper
 timing=main
 hidden
-oracle=Flying\nOther Vampire creatures you control get +2/+2.\n{T}: Put a 2/2 black Vampire creature token with flying onto the battlefield.
+oracle=Flying\nOther Vampire creatures you control get +2/+2.\n{T}: Create a 2/2 black Vampire creature token with flying.

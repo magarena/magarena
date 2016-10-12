@@ -4,7 +4,7 @@ value=4.118
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability={1}{W}: Put a 4/4 white Angel creature token with flying onto the battlefield. Activate this ability only if SN has four or more quest counters on it.
+ability={1}{W}: Create a 4/4 white Angel creature token with flying. Activate this ability only if SN has four or more quest counters on it.
 requires_groovy_code
 timing=main
-oracle=At the beginning of each opponent's end step, if you didn't lose life this turn, you may put a quest counter on Luminarch Ascension.\n{1}{W}: Put a 4/4 white Angel creature token with flying onto the battlefield. Activate this ability only if Luminarch Ascension has four or more quest counters on it.
+oracle=At the beginning of each opponent's end step, if you didn't lose life this turn, you may put a quest counter on Luminarch Ascension.\n{1}{W}: Create a 4/4 white Angel creature token with flying. Activate this ability only if Luminarch Ascension has four or more quest counters on it.

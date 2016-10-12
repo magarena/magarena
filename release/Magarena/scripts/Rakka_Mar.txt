@@ -7,6 +7,6 @@ subtype=Human,Shaman
 cost={2}{R}{R}
 pt=2/2
 ability=Haste;\
-        {R}, {T}: Put a 3/1 red Elemental creature token with haste onto the battlefield.
+        {R}, {T}: Create a 3/1 red Elemental creature token with haste.
 timing=fmain
-oracle=Haste\n{R}, {T}: Put a 3/1 red Elemental creature token with haste onto the battlefield.
+oracle=Haste\n{R}, {T}: Create a 3/1 red Elemental creature token with haste.
