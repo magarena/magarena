@@ -7,7 +7,7 @@
                 permanent,
                 enchanted,
                 this,
-                "RN's controller sacrifices it and PN puts a 1/1 colorless Myr artifact creature token onto the battlefield."
+                "RN's controller sacrifices it and PN creates a 1/1 colorless Myr artifact creature token."
             );
         }
         @Override

@@ -7,7 +7,7 @@ subtype=Horse
 cost={4}
 pt=0/4
 ability=Defender;\
-        At the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
+        At the beginning of your upkeep, each opponent creates a 1/1 white Soldier creature token.
 timing=smain
 requires_groovy_code
-oracle=Defender\nWhen Akroan Horse enters the battlefield, an opponent gains control of it.\nAt the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
+oracle=Defender\nWhen Akroan Horse enters the battlefield, an opponent gains control of it.\nAt the beginning of your upkeep, each opponent creates a 1/1 white Soldier creature token.

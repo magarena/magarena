@@ -7,7 +7,7 @@
                 new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create("{1}"))),
                 winner,
                 this,
-                "PN may\$ pay {1}. If he or she does, PN puts a 3/1 red Elemental Shaman creature token onto the battlefield. " +
+                "PN may\$ pay {1}. If he or she does, PN creates a 3/1 red Elemental Shaman creature token. " +
                 "If PN won the clash, that token gains haste until end of turn. "
             );
         }

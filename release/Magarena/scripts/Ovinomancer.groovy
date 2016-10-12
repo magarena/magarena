@@ -19,7 +19,7 @@
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target creature\$. It can't be regenerated. "+
-                "That creature's controller puts a 0/1 green Sheep creature token onto the battlefield."
+                "That creature's controller creates a 0/1 green Sheep creature token."
             );
         }
 

@@ -7,7 +7,7 @@
                     permanent,
                     otherPermanent,
                     this,
-                    "PN puts a 2/2 white Cat creature token onto the battlefield."
+                    "PN creates a 2/2 white Cat creature token."
                 ):
                 MagicEvent.NONE;
         }

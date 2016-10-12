@@ -71,7 +71,7 @@
                 TARGET_OPPONENT,
                 this,
                 "SN gains trample until end of turn. " +
-                "Target opponent\$ puts a 1/1 green Hippo creature token onto the battlefield."
+                "Target opponent\$ creates a 1/1 green Hippo creature token."
             );
         }
         @Override

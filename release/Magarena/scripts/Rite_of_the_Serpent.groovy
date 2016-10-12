@@ -8,7 +8,7 @@
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature.\$ If that creature had a +1/+1 counter on it, "+
-                "PN puts a 1/1 green Snake creature token onto the battlefield."
+                "PN creates a 1/1 green Snake creature token."
             );
         }
         @Override

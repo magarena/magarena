@@ -31,7 +31,7 @@ def effect = MagicRuleEventAction.create("Create a 2/2 green Beast creature toke
                 source,
                 TARGET_OPPONENT_WHO_CONTROLS_MORE_CREATURES,
                 effect.getAction(),
-                "PN puts a 2/2 green Beast creature token onto the battlefield."
+                "PN creates a 2/2 green Beast creature token."
             );
         }
     }

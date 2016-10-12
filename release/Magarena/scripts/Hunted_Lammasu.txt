@@ -7,6 +7,6 @@ subtype=Lammasu
 cost={2}{W}{W}
 pt=5/5
 ability=Flying;\
-        When SN enters the battlefield, target opponent puts a 4/4 black Horror creature token onto the battlefield.
+        When SN enters the battlefield, target opponent creates a 4/4 black Horror creature token.
 timing=main
-oracle=Flying\nWhen Hunted Lammasu enters the battlefield, target opponent puts a 4/4 black Horror creature token onto the battlefield.
+oracle=Flying\nWhen Hunted Lammasu enters the battlefield, target opponent creates a 4/4 black Horror creature token.

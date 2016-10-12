@@ -10,4 +10,4 @@ ability=Cast SN with AI only if you control three or more basic lands.;\
         When SN enters the battlefield, you may return three basic lands you control to their owner's hand. If you don't, sacrifice SN.
 timing=main
 requires_groovy_code
-oracle=When Ovinomancer enters the battlefield, sacrifice it unless you return three basic lands you control to their owner's hand.\n{T}, Return Ovinomancer to its owner's hand: Destroy target creature. It can't be regenerated. That creature's controller puts a 0/1 green Sheep creature token onto the battlefield.
+oracle=When Ovinomancer enters the battlefield, sacrifice it unless you return three basic lands you control to their owner's hand.\n{T}, Return Ovinomancer to its owner's hand: Destroy target creature. It can't be regenerated. That creature's controller creates a 0/1 green Sheep creature token.
