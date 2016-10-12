@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 import magic.data.MagicIcon;
 import magic.ui.ImageFileIO;
+import magic.ui.helpers.ImageHelper;
 
 class AvatarImageSet {
 
@@ -47,21 +48,23 @@ class AvatarImageSet {
                 final String filePath = itr.next().toAbsolutePath().toString();
                 final InputStream ins = new FileInputStream(new File(filePath));
                 final BufferedImage image = ImageFileIO.toImg(ins, MagicImages.MISSING_BIG);
-                this.sampleImage = new ImageIcon(magic.ui.helpers.ImageHelper.scale(image, PlayerAvatar.MEDIUM_SIZE, PlayerAvatar.MEDIUM_SIZE));
+                this.sampleImage = new ImageIcon(ImageHelper.scale(image, 
+                        PlayerAvatar.MEDIUM_SIZE, PlayerAvatar.MEDIUM_SIZE)
+                );
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            System.err.println(ex);
         }
     }
 
     List<Path> getImagePaths() {
-        final List<Path> paths = new ArrayList<Path>();
+        final List<Path> paths = new ArrayList<>();
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(this.path, IMAGES_FILTER)) {
-            for (Path path : ds) {
-                paths.add(path);
+            for (Path p : ds) {
+                paths.add(p);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            System.err.println(ex);
         }
         return paths;
     }

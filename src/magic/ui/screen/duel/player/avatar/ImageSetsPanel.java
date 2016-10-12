@@ -70,7 +70,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         }
     }
 
-    private List<Path> getDirectoryPaths(final Path rootDirectory) {
+    private List<Path> getSortedDirectoryPaths(final Path rootDirectory) {
         final List<Path> paths = new ArrayList<>();
         try (DirectoryStream<Path> ds =
                 Files.newDirectoryStream(
@@ -82,6 +82,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         } catch (IOException ex) {
             System.err.println(ex);
         }
+        paths.sort((p1, p2) -> p1.getFileName().compareTo(p2.getFileName()));
         return paths;
     }
 
@@ -92,7 +93,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
     
     private List<AvatarImageSet> getAvatarImageSetsList() {
         final List<AvatarImageSet> imageSets = new ArrayList<>();
-        List<Path> directoryPaths = getDirectoryPaths(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.AVATARS));
+        List<Path> directoryPaths = getSortedDirectoryPaths(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.AVATARS));
         for (Path path : directoryPaths) {
             imageSets.add(loadImageSet(path));
         }
