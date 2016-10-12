@@ -234,15 +234,15 @@ public final class MagicImages {
         avatarsMap.clear();
     }
 
-    private static void tryDownloadingImage(MagicCardDefinition aCard) {
+    private static void tryDownloadingImage(IRenderableCard face) {
         if (proxy == null) {
             proxy = GeneralConfig.getInstance().getProxy();
         }
         try {
-            CardImageFile cif = new CardImageFile(aCard);
+            CardImageFile cif = new CardImageFile(face);
             cif.doDownload(proxy);
         } catch (IOException ex) {
-            System.err.println(aCard.getDistinctName() + " : " + ex);
+            System.err.println(face.getCardDefinition().getDistinctName() + " : " + ex);
         }
     }
 
@@ -258,12 +258,11 @@ public final class MagicImages {
             case PROXY:
                 return CardBuilder.getCardBuilderImage(face);
             case FULL:
-                final MagicCardDefinition cdef = face.getCardDefinition();
-                if (!MagicFileSystem.getCardImageFile(cdef).exists()) {
-                    tryDownloadingImage(cdef);
+                if (!MagicFileSystem.getCardImageFile(face).exists()) {
+                    tryDownloadingImage(face);
                 }
-                if (MagicFileSystem.getCardImageFile(cdef).exists()) {
-                    return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(cdef));
+                if (MagicFileSystem.getCardImageFile(face).exists()) {
+                    return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face));
                 }
         }
         return CardBuilder.getCardBuilderImage(face);

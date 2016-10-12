@@ -144,4 +144,8 @@ public interface IRenderableCard {
     default boolean isUnknown() {
         return getCardDefinition() == MagicCardDefinition.UNKNOWN;
     }
+
+    default String getImageUrl() {
+        return getCardDefinition().getImageURL();
+    }
 }
