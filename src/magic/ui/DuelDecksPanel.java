@@ -11,7 +11,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JLabel;
@@ -248,11 +247,11 @@ public class DuelDecksPanel extends TexturedPanel {
         );
     }
 
-    public Collection<? extends MenuButton> getActionBarButtons() {
+    public MenuButton[] getActionBarButtons() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(newDeckButton);
         buttons.add(getSwapDecksButton());
-        return buttons;
+        return buttons.toArray(new MenuButton[buttons.size()]);
     }
 
 }

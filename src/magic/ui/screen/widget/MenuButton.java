@@ -159,6 +159,15 @@ public class MenuButton extends JButton {
         return new MenuButton("Test", closeScreenAction);
     }
 
+    /**
+     * Creates a new menu button.
+     *
+     * @param action click action
+     * @param icon
+     * @param title tooltip title text <b>in English</b>.
+     * @param description tooltip body text <b>in English</b>.
+     * @return
+     */
     public static MenuButton build(Runnable action, MagicIcon icon, String title, String description) {
         return new ActionBarButton(
                 MagicImages.getIcon(icon),
@@ -173,8 +182,15 @@ public class MenuButton extends JButton {
         );
     }
 
+    /**
+     * Creates a new menu button.
+     *
+     * @param action click action.
+     * @param text caption text <b>in English</b>.
+     * @return
+     */
     public static MenuButton build(Runnable action, String text) {
-        return new ActionBarButton(text, new AbstractAction() {
+        return new ActionBarButton(UiString.get(text), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 action.run();

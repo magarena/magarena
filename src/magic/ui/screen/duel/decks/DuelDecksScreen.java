@@ -2,8 +2,6 @@ package magic.ui.screen.duel.decks;
 
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
@@ -21,28 +19,18 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.ui.DuelDecksPanel;
 import magic.ui.MagicImages;
-import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
 import magic.cardBuilder.renderers.CardBuilder;
-import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IOptionsMenu;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.interfaces.IWikiPage;
-import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
 import magic.utility.MagicSystem;
 import magic.ui.WikiPage;
+import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
-public class DuelDecksScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
+public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
     // translatable strings
     private static final String _S1 = "Duel Decks";
@@ -64,6 +52,7 @@ public class DuelDecksScreen
     private StartupWorker worker;
 
     public DuelDecksScreen(final MagicDuel duel) {
+        super(UiString.get(_S1));
 
         screenContent = new DuelDecksPanel(duel);
         nextGameButton = new StartGameButton(getStartDuelCaption(), getPlayGameAction());
@@ -74,7 +63,7 @@ public class DuelDecksScreen
 
         MagicImages.clearCache();
 
-        setContent(screenContent);
+        setMainContent(screenContent);
 
         if (MagicSystem.isAiVersusAi() == false) {
             doGameSetupInBackground(duel);
@@ -84,30 +73,54 @@ public class DuelDecksScreen
             );
         }
 
+        setHeaderContent(getStatusPanel());
+        setFooterButtons();
+        setWikiPage(WikiPage.DUEL_DECKS);
     }
 
-    @Override
-    public String getScreenCaption() {
-        return UiString.get(_S1);
+    private void setFooterButtons() {
+
+        setLeftFooter(getLeftAction());
+        setRightFooter(getRightAction());
+
+        if (isNewDuel()) {
+            addToFooter(
+                    MenuButton.build(this::showDeckEditor,
+                            MagicIcon.DECK, _S5, _S6),
+                    getTiledDeckCardImagesButton(),
+                    SampleHandActionButton.createInstance(getActiveDeck())
+            );
+            addToFooter(screenContent.getActionBarButtons());
+        
+        } else if (isDuelFinished()) {
+            addToFooter(getWinnerButton());
+        
+        } else { // duel in progress
+            addToFooter(
+                    getTiledDeckCardImagesButton(),
+                    SampleHandActionButton.createInstance(getActiveDeck()),
+                    MenuButton.build(this::doRestartDuel,
+                            MagicIcon.REFRESH, _S10, _S11)
+
+            );
+        }        
     }
 
-    @Override
-    public MenuButton getLeftAction() {
+    private MenuButton getTiledDeckCardImagesButton() {
+        return MenuButton.build(this::showTiledDeckCardImages,
+                MagicIcon.TILED, _S12, _S13);
+    }
+
+    private void doCloseScreen() {
+        ScreenController.showMainMenuScreen();
+    }
+                
+    private MenuButton getLeftAction() {
         if (screenContent.getDuel().getGamesPlayed() == 0) {
             return MenuButton.getCloseScreenButton(UiString.get(_S2));
         } else {
-            return new MenuButton(UiString.get(_S2), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    ScreenController.showMainMenuScreen();
-                }
-            });
+            return MenuButton.build(this::doCloseScreen, _S2);
         }
-    }
-
-    @Override
-    public void showOptionsMenuOverlay() {
-        new ScreenOptions(getFrame());
     }
 
     private void startNextGame() {
@@ -129,21 +142,19 @@ public class DuelDecksScreen
         };
     }
 
-    @Override
-    public MenuButton getRightAction() {
+    private void doRestartDuel() {
+        try {
+            ScreenController.getMainFrame().restartDuel();
+        } catch (InvalidDeckException ex) {
+            ScreenController.showWarningMessage(ex.getMessage());
+        }
+    }
+
+    private MenuButton getRightAction() {
         if (!screenContent.getDuel().isFinished()) {
             return nextGameButton;
         } else {
-            return new MenuButton(UiString.get(_S3), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    try {
-                        getFrame().restartDuel();
-                    } catch (InvalidDeckException ex) {
-                        ScreenController.showWarningMessage(ex.getMessage());
-                    }
-                }
-            });
+            return MenuButton.build(this::doRestartDuel, _S3);
         }
     }
 
@@ -159,34 +170,12 @@ public class DuelDecksScreen
         return screenContent.getDuel().isFinished();
     }
 
-    private ActionBarButton getDeckEditorButton() {
-        return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.DECK),
-            UiString.get(_S5), UiString.get(_S6),
-            new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    ScreenController.showDeckEditor(getActiveDeck());
-                }
-            }
-        );
+    private void showDeckEditor() {
+        ScreenController.showDeckEditor(getActiveDeck());
     }
 
-    private ActionBarButton getRestartButton() {
-        return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.REFRESH),
-            UiString.get(_S10), UiString.get(_S11),
-            new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    try {
-                        getFrame().restartDuel();
-                    } catch (InvalidDeckException ex) {
-                        ScreenController.showWarningMessage(ex.getMessage());
-                    }
-                }
-            }
-        );
+    private void showTiledDeckCardImages() {
+        ScreenController.showDeckView(getActiveDeck());
     }
 
     private MenuButton getWinnerButton() {
@@ -197,37 +186,6 @@ public class DuelDecksScreen
                 // do nothing
             }
         });
-    }
-
-    private ActionBarButton getTiledDeckButton() {
-        return new ActionBarButton(
-            MagicImages.getIcon(MagicIcon.TILED),
-            UiString.get(_S12), UiString.get(_S13),
-            new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    ScreenController.showDeckView(getActiveDeck());
-                }
-            }
-        );
-    }
-
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        if (isNewDuel()) {
-            buttons.add(getDeckEditorButton());
-            buttons.add(getTiledDeckButton());
-            buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
-            buttons.addAll(screenContent.getActionBarButtons());
-        } else if (isDuelFinished()) {
-            buttons.add(getWinnerButton());
-        } else { // duel in progress
-            buttons.add(getTiledDeckButton());
-            buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
-            buttons.add(getRestartButton());
-        }
-        return buttons;
     }
 
     public void updateDecksAfterEdit() {
@@ -242,29 +200,6 @@ public class DuelDecksScreen
         screenContent.getDuel().save(MagicDuel.getLatestDuelFile());
     }
 
-    @Override
-    public WikiPage getWikiPageName() {
-        return WikiPage.DUEL_DECKS;
-    }
-
-    private class ScreenOptions extends ScreenOptionsOverlay {
-
-        public ScreenOptions(final MagicFrame frame) {
-            super(frame);
-        }
-
-        @Override
-        protected MenuPanel getScreenMenu() {
-            return null;
-        }
-
-        @Override
-        protected boolean showPreferencesOption() {
-            return false;
-        }
-
-    }
-
     private boolean isLegalDeckAndShowErrors(DuelPlayerConfig aPlayer) {
         final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(aPlayer.getDeck()));
@@ -277,10 +212,9 @@ public class DuelDecksScreen
         return true;
     }
 
-    @Override
-    public JPanel getStatusPanel() {
+    private JPanel getStatusPanel() {
         final DuelConfig config = screenContent.getDuel().getConfiguration();
-        final DuelSettingsPanel panel = new DuelSettingsPanel(getFrame(), config);
+        final DuelSettingsPanel panel = new DuelSettingsPanel(ScreenController.getMainFrame(), config);
         panel.setEnabled(false);
         return panel;
     }
