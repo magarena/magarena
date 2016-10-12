@@ -7,4 +7,4 @@ cost={X}{G}
 ability=Buyback {2}{G}
 timing=main
 requires_groovy_code
-oracle=Buyback {2}{G}\nPut an X/X green Wurm creature token onto the battlefield.
+oracle=Buyback {2}{G}\nCreate an X/X green Wurm creature token.

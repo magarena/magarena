@@ -6,7 +6,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put an ${x}/${x} green Wurm creature token onto the battlefield. " +
+                "PN creates an ${x}/${x} green Wurm creature token. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }

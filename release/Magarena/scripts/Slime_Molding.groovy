@@ -6,7 +6,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put an ${x}/${x} green Ooze creature token onto the battlefield."
+                "PN creates an ${x}/${x} green Ooze creature token."
             );
         }
         @Override

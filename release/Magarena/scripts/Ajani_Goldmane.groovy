@@ -5,7 +5,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN puts a white Avatar creature token onto the battlefield. " +
+                "PN creates a white Avatar creature token. " +
                 "It has \"This creature's power and toughness are each equal to your life total.\""
             );
         }

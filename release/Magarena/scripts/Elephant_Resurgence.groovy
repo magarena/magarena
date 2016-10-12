@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each player puts a green Elephant creature token onto the battlefield. "+
+                "Each player creates a green Elephant creature token. "+
                 "Those creatures have \"This creature's power and toughness are each equal to "+
                 "the number of creature cards in its controller's graveyard.\""
             );
