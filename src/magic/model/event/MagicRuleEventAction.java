@@ -1796,8 +1796,8 @@ public enum MagicRuleEventAction {
                 MagicActivation.NO_COND;
         }
     },
-    PutTokenCopy(
-        "(you )?put a token onto the battlefield that's a copy of " + ARG.PERMANENTS + "\\." + ARG.MODS,
+    CreateTokenCopy(
+        "(you )?create a token that's a copy of " + ARG.PERMANENTS + "(?= and that's|,|\\.|$)( and that's)?" + ARG.MODS,
         MagicTiming.Token,
         "Token"
     ) {
@@ -1816,28 +1816,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PutTokenCopyAlt(
-        "(you )?put a token that's a copy of " + ARG.PERMANENTS + " onto the battlefield" + ARG.MODS,
-        MagicTiming.Token,
-        "Token"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PutTokenCopy.getAction(matcher);
-        }
-    },
-    CreateTokenCopy(
-        "(you )?create a token that's a copy of " + ARG.PERMANENTS + "(?= and that's|,|\\.|$)( and that's)?" + ARG.MODS,
-        MagicTiming.Token,
-        "Token"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PutTokenCopy.getAction(matcher);
-        }
-    },
-    PutTokens(
-        ARG.PLAYERS + "( )?put(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield" + ARG.MODS + "( )?((for each|where X is) " + ARG.WORDRUN + ")?",
+    CreateTokens(
+        ARG.PLAYERS + "( )?create(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token(s)?[^\\.]*?(?= that's| for each|,|\\.|$))( that's)?" + ARG.MODS + "( )?((for each|where X is) " + ARG.WORDRUN + ")?",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1866,16 +1846,6 @@ public enum MagicRuleEventAction {
                     }
                 }
             };
-        }
-    },
-    CreateTokens(
-        ARG.PLAYERS + "( )?create(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token(s)?[^\\.]*?(?= that's| for each|,|\\.|$))( that's)?" + ARG.MODS + "( )?((for each|where X is) " + ARG.WORDRUN + ")?",
-        MagicTiming.Token,
-        "Token"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PutTokens.getAction(matcher);
         }
     },
     Mill(
