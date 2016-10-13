@@ -1826,6 +1826,16 @@ public enum MagicRuleEventAction {
             return PutTokenCopy.getAction(matcher);
         }
     },
+    CreateTokenCopy(
+        "(you )?create a token that's a copy of " + ARG.PERMANENTS + "(?= and that's|,|\\.|$)( and that's)?" + ARG.MODS,
+        MagicTiming.Token,
+        "Token"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PutTokenCopy.getAction(matcher);
+        }
+    },
     PutTokens(
         ARG.PLAYERS + "( )?put(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield" + ARG.MODS + "( )?((for each|where X is) " + ARG.WORDRUN + ")?",
         MagicTiming.Token,
