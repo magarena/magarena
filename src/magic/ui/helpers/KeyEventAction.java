@@ -16,10 +16,14 @@ public final class KeyEventAction {
     private final JComponent com;
     private final Object key;
 
-    private KeyEventAction(JComponent c, Runnable r) {
+    private KeyEventAction(JComponent c, AbstractAction action) {
         com = c;
         key = UUID.randomUUID();
-        c.getActionMap().put(key, new AbstractAction() {
+        c.getActionMap().put(key, action);
+    }
+
+    private KeyEventAction(JComponent c, Runnable r) {
+        this(c, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 r.run();
@@ -62,6 +66,10 @@ public final class KeyEventAction {
      */
     public static KeyEventAction doAction(JComponent c, Runnable r) {
         return new KeyEventAction(c, r);
+    }
+
+    public static KeyEventAction doAction(JComponent c, AbstractAction a) {
+        return new KeyEventAction(c, a);
     }
 
 }

@@ -1,44 +1,38 @@
 package magic.ui.screen.duel.game;
 
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.ui.duel.viewerinfo.GameViewerInfo;
-import magic.ui.widget.duel.sidebar.DuelSideBarPanel;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
-import magic.ui.widget.duel.animation.GameLayoutInfo;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.helpers.KeyEventAction;
+import magic.ui.widget.ZoneBackgroundLabel;
+import magic.ui.widget.duel.animation.GameLayoutInfo;
+import magic.ui.widget.duel.sidebar.DuelSideBarPanel;
 import magic.ui.widget.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.widget.duel.viewer.ImageCardListViewer;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
-import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public final class DuelPanel extends JPanel {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-    private static final String ACTION_KEY="action";
-    private static final String UNDO_KEY="undo";
-    private static final String SWITCH_KEY="switch";
-    private static final String PASS_KEY="pass";
 
     private ZoneBackgroundLabel backgroundLabel;
     private SwingGameController controller;
@@ -63,8 +57,7 @@ public final class DuelPanel extends JPanel {
 
         updateView();
 
-        createActionMaps();
-        createShortcutKeys();
+        setKeyEventActions();
         createMouseListener();
 
         // TODO: should not have to run this, but required while sidebarPanel is created after battlefieldPanel.
@@ -83,38 +76,19 @@ public final class DuelPanel extends JPanel {
         });
     }
 
-    private void createShortcutKeys() {
-        //defining shortcut keys
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.SHIFT_MASK),PASS_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, InputEvent.SHIFT_MASK),PASS_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_BACK_SPACE, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_DELETE, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0),SWITCH_KEY);
-    }
+    private void setKeyEventActions() {
 
-    private void createActionMaps() {
-        getActionMap().put(ACTION_KEY, controller.getActionKeyPressedAction());
-        getActionMap().put(UNDO_KEY, new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent event) {
-                controller.undoKeyPressed();
-            }
-        });
-        getActionMap().put(SWITCH_KEY, new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                controller.switchKeyPressed();
-            }
-        });
-        getActionMap().put(PASS_KEY, new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                controller.passKeyPressed();
-            }
-        });
+        KeyEventAction.doAction(this, controller.getActionKeyPressedAction())
+            .on(0, KeyEvent.VK_RIGHT, KeyEvent.VK_SPACE);
+
+        KeyEventAction.doAction(this, ()->controller.undoKeyPressed())
+            .on(0, KeyEvent.VK_LEFT, KeyEvent.VK_BACK_SPACE, KeyEvent.VK_DELETE);
+
+        KeyEventAction.doAction(this, ()->controller.passKeyPressed())
+            .on(InputEvent.SHIFT_MASK, KeyEvent.VK_RIGHT, KeyEvent.VK_SPACE);
+
+        KeyEventAction.doAction(this, ()->controller.switchKeyPressed())
+            .on(0, KeyEvent.VK_S);
     }
 
     public boolean canClickAction() {
