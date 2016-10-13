@@ -38,7 +38,7 @@ class LogStackViewer extends JPanel {
     private static final String _S5 = "Stack";
     private static final String _S6 = "Cycle message style";
     private static final String _S7 = "Click to cycle through various styles for the log/stack messages.";
-    private static final String _S8 =  "Keywords glossary";
+    private static final String _S8 =  "Keywords glossary [K]";
     private static final String _S9 = "Quick reference...";
 
     private final LogViewer logViewer;

@@ -153,6 +153,10 @@ public class SwingGameController implements IUIGameController {
 
         KeyEventAction.doAction(gamePanel, this::showLogScreen)
             .on(0, KeyEvent.VK_L);
+
+        KeyEventAction.doAction(gamePanel, this::showKeywordsScreen)
+            .on(0, KeyEvent.VK_K);
+
     }
 
     private void setControlKeyMonitor() {
@@ -1104,6 +1108,10 @@ public class SwingGameController implements IUIGameController {
 
     private void showLogScreen() {
         ScreenController.showGameLogScreen();
+    }
+
+    private void showKeywordsScreen() {
+        ScreenController.showKeywordsScreen();
     }
 
 }
