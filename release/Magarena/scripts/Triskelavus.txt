@@ -8,6 +8,6 @@ cost={7}
 pt=1/1
 ability=Flying;\
         SN enters the battlefield with three +1/+1 counters on it.;\
-        {1}, Remove a +1/+1 counter from SN: Put a 1/1 colorless Triskelavite artifact creature token with flying onto the battlefield.
+        {1}, Remove a +1/+1 counter from SN: Create a 1/1 colorless Triskelavite artifact creature token with flying.
 timing=artifact
-oracle=Flying\nTriskelavus enters the battlefield with three +1/+1 counters on it.\n{1}, Remove a +1/+1 counter from Triskelavus: Put a 1/1 colorless Triskelavite artifact creature token with flying onto the battlefield. It has "Sacrifice this creature: This creature deals 1 damage to target creature or player."
+oracle=Flying\nTriskelavus enters the battlefield with three +1/+1 counters on it.\n{1}, Remove a +1/+1 counter from Triskelavus: Create a 1/1 colorless Triskelavite artifact creature token with flying. It has "Sacrifice this creature: This creature deals 1 damage to target creature or player."

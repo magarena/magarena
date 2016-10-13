@@ -8,6 +8,6 @@ cost={3}{W}{W}
 pt=*/*
 ability=Vigilance;\
         SN's power and toughness are each equal to the number of creatures you control.;\
-        When SN enters the battlefield, put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+        When SN enters the battlefield, create two 1/1 white Spirit creature tokens with flying.
 timing=main
-oracle=Vigilance\nGeist-Honored Monk's power and toughness are each equal to the number of creatures you control.\nWhen Geist-Honored Monk enters the battlefield, put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+oracle=Vigilance\nGeist-Honored Monk's power and toughness are each equal to the number of creatures you control.\nWhen Geist-Honored Monk enters the battlefield, create two 1/1 white Spirit creature tokens with flying.

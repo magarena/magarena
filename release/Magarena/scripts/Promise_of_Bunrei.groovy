@@ -8,8 +8,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Sacrifice SN. If PN does, " +
-                    "he or she puts four 1/1 colorless Spirit creature tokens onto the battlefield."
+                    "Sacrifice SN. If PN does, he or she creates four 1/1 colorless Spirit creature tokens."
                 ):
                 MagicEvent.NONE;
         }

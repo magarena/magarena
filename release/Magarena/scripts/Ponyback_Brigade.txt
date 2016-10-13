@@ -6,8 +6,8 @@ type=Creature
 subtype=Goblin,Warrior
 cost={3}{R}{W}{B}
 pt=2/2
-ability=When SN enters the battlefield, put three 1/1 red Goblin creature tokens onto the battlefield.;\
-        When SN is turned face up, put three 1/1 red Goblin creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create three 1/1 red Goblin creature tokens.;\
+        When SN is turned face up, create three 1/1 red Goblin creature tokens.;\
         Morph {2}{R}{W}{B}
 timing=main
-oracle=When Ponyback Brigade enters the battlefield or is turned face up, put three 1/1 red Goblin creature tokens onto the battlefield.\nMorph {2}{R}{W}{B}
+oracle=When Ponyback Brigade enters the battlefield or is turned face up, create three 1/1 red Goblin creature tokens.\nMorph {2}{R}{W}{B}

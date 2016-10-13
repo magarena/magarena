@@ -7,6 +7,6 @@ subtype=Wurm
 cost={5}{G}{G}
 pt=6/6
 ability=Trample;\
-        When SN dies, put a 6/6 black Wurm creature token with trample onto the battlefield.
+        When SN dies, create a 6/6 black Wurm creature token with trample.
 timing=main
-oracle=Trample\nWhen Penumbra Wurm dies, put a 6/6 black Wurm creature token with trample onto the battlefield.
+oracle=Trample\nWhen Penumbra Wurm dies, create a 6/6 black Wurm creature token with trample.

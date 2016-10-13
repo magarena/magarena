@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura
 cost={4}{W}
 ability=Enchant creature;\
-        When SN enters the battlefield, put a 2/2 white Knight creature token with vigilance onto the battlefield.;\
+        When SN enters the battlefield, create a 2/2 white Knight creature token with vigilance.;\
         Enchanted creature gets +2/+2 and has vigilance.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature\nWhen Knightly Valor enters the battlefield, put a 2/2 white Knight creature token with vigilance onto the battlefield.\nEnchanted creature gets +2/+2 and has vigilance.
+oracle=Enchant creature\nWhen Knightly Valor enters the battlefield, create a 2/2 white Knight creature token with vigilance.\nEnchanted creature gets +2/+2 and has vigilance.

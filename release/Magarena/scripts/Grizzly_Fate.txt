@@ -7,4 +7,4 @@ cost={3}{G}{G}
 ability=Flashback {5}{G}{G}
 timing=main
 requires_groovy_code
-oracle=Put two 2/2 green Bear creature tokens onto the battlefield.\nThreshold — Put four 2/2 green Bear creature tokens onto the battlefield instead if seven or more cards are in your graveyard.\nFlashback {5}{G}{G}
+oracle=Create two 2/2 green Bear creature tokens.\nThreshold — Put four 2/2 green Bear creature tokens onto the battlefield instead if seven or more cards are in your graveyard.\nFlashback {5}{G}{G}

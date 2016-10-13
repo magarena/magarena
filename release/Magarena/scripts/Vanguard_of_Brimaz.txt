@@ -7,6 +7,6 @@ subtype=Cat,Soldier
 cost={W}{W}
 pt=2/2
 ability=Vigilance;\
-        Whenever you cast a spell that targets SN, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
+        Whenever you cast a spell that targets SN, create a 1/1 white Cat Soldier creature token with vigilance.
 timing=main
-oracle=Vigilance\nHeroic — Whenever you cast a spell that targets Vanguard of Brimaz, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
+oracle=Vigilance\nHeroic — Whenever you cast a spell that targets Vanguard of Brimaz, create a 1/1 white Cat Soldier creature token with vigilance.

@@ -7,6 +7,6 @@ subtype=Angel
 cost={4}{W}{W}{W}
 pt=4/4
 ability=Flying;\
-        At the beginning of your upkeep, you may put a 1/1 white Spirit creature token with flying onto the battlefield.
+        At the beginning of your upkeep, you may create a 1/1 white Spirit creature token with flying.
 timing=main
-oracle=Flying\nAt the beginning of your upkeep, you may put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Flying\nAt the beginning of your upkeep, you may create a 1/1 white Spirit creature token with flying.

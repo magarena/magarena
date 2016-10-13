@@ -7,6 +7,6 @@ subtype=Giant
 cost={2}{W}
 pt=3/3
 ability=cumulative upkeep {W/U};\
-        When SN dies, put a 1/1 white Bird creature token with flying onto the battlefield for each age counter on SN.
+        When SN dies, create a 1/1 white Bird creature token with flying for each age counter on SN.
 timing=main
-oracle=Cumulative upkeep {W} or {U}\nWhen Jötun Owl Keeper dies, put a 1/1 white Bird creature token with flying onto the battlefield for each age counter on it.
+oracle=Cumulative upkeep {W} or {U}\nWhen Jötun Owl Keeper dies, create a 1/1 white Bird creature token with flying for each age counter on it.

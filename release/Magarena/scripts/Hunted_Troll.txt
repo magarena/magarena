@@ -6,7 +6,7 @@ type=Creature
 subtype=Troll,Warrior
 cost={2}{G}{G}
 pt=8/4
-ability=When SN enters the battlefield, target opponent puts four 1/1 blue Faerie creature tokens with flying onto the battlefield.;\
+ability=When SN enters the battlefield, target opponent creates four 1/1 blue Faerie creature tokens with flying.;\
         {G}: Regenerate SN.
 timing=main
-oracle=When Hunted Troll enters the battlefield, target opponent puts four 1/1 blue Faerie creature tokens with flying onto the battlefield.\n{G}: Regenerate Hunted Troll.
+oracle=When Hunted Troll enters the battlefield, target opponent creates four 1/1 blue Faerie creature tokens with flying.\n{G}: Regenerate Hunted Troll.

@@ -7,6 +7,6 @@ subtype=Spirit
 cost={1}{U}{U}
 pt=4/6
 ability=SN can't be blocked.;\
-        When SN enters the battlefield, target opponent puts five 1/1 red Goblin creature tokens onto the battlefield.
+        When SN enters the battlefield, target opponent creates five 1/1 red Goblin creature tokens.
 timing=main
-oracle=Hunted Phantasm can't be blocked.\nWhen Hunted Phantasm enters the battlefield, target opponent puts five 1/1 red Goblin creature tokens onto the battlefield.
+oracle=Hunted Phantasm can't be blocked.\nWhen Hunted Phantasm enters the battlefield, target opponent creates five 1/1 red Goblin creature tokens.

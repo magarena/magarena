@@ -7,6 +7,6 @@ subtype=Spirit
 cost={2}{W}
 pt=1/1
 ability=Whenever a creature token leaves the battlefield, put a +1/+1 counter on SN.;\
-        {2}{W}, Remove a +1/+1 counter from SN: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+        {2}{W}, Remove a +1/+1 counter from SN: Create two 1/1 white Spirit creature tokens with flying.
 timing=main
-oracle=Whenever a creature token leaves the battlefield, put a +1/+1 counter on Twilight Drover.\n{2}{W}, Remove a +1/+1 counter from Twilight Drover: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+oracle=Whenever a creature token leaves the battlefield, put a +1/+1 counter on Twilight Drover.\n{2}{W}, Remove a +1/+1 counter from Twilight Drover: Create two 1/1 white Spirit creature tokens with flying.

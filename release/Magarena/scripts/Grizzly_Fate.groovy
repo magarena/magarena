@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts two 2/2 green Bear creature tokens onto the battlefield. " +
-                "PN puts four 2/2 green Bear creature tokens onto the battlefield instead if seven or more cards are in his or her graveyard."
+                "PN creates two 2/2 green Bear creature tokens. " +
+                "PN creates four 2/2 green Bear creature tokens if seven or more cards are in his or her graveyard."
             );
         }
         @Override

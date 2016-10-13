@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={4}{W}
 pt=2/2
-ability=When SN enters the battlefield, put two 1/1 white Soldier creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create two 1/1 white Soldier creature tokens.;\
         {W}, Sacrifice a Soldier: Prevent all combat damage that would be dealt this turn.
 timing=main
-oracle=When Knight-Captain of Eos enters the battlefield, put two 1/1 white Soldier creature tokens onto the battlefield.\n{W}, Sacrifice a Soldier: Prevent all combat damage that would be dealt this turn.
+oracle=When Knight-Captain of Eos enters the battlefield, create two 1/1 white Soldier creature tokens.\n{W}, Sacrifice a Soldier: Prevent all combat damage that would be dealt this turn.

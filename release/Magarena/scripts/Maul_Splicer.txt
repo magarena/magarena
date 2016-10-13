@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Artificer
 cost={6}{G}
 pt=1/1
-ability=When SN enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create two 3/3 colorless Golem artifact creature tokens.;\
         Golem creatures you control have trample.
 static=player
 timing=main
-oracle=When Maul Splicer enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield.\nGolem creatures you control have trample.
+oracle=When Maul Splicer enters the battlefield, create two 3/3 colorless Golem artifact creature tokens.\nGolem creatures you control have trample.

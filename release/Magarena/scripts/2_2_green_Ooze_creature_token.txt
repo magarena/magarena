@@ -6,5 +6,5 @@ type=Creature
 subtype=Ooze
 color=g
 pt=2/2
-ability=When SN dies, put two 1/1 green Ooze creature tokens onto the battlefield.
-oracle=When this creature dies, put two 1/1 green Ooze creature tokens onto the battlefield.
+ability=When SN dies, create two 1/1 green Ooze creature tokens.
+oracle=When this creature dies, create two 1/1 green Ooze creature tokens.

@@ -7,7 +7,7 @@ subtype=Giant
 cost={4}{B}{B}
 pt=6/6
 ability=Deathtouch;\
-        When SN enters the battlefield, Put two 2/2 black Zombie creature tokens onto the battlefield.;\
-        Whenever SN attacks, put two 2/2 black Zombie creature tokens onto the battlefield.
+        When SN enters the battlefield, create two 2/2 black Zombie creature tokens.;\
+        Whenever SN attacks, create two 2/2 black Zombie creature tokens.
 timing=main
-oracle=Deathtouch\nWhenever Grave Titan enters the battlefield or attacks, put two 2/2 black Zombie creature tokens onto the battlefield.
+oracle=Deathtouch\nWhenever Grave Titan enters the battlefield or attacks, create two 2/2 black Zombie creature tokens.

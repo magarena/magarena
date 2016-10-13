@@ -6,8 +6,8 @@ type=Artifact
 subtype=Equipment
 cost={3}
 ability=Equipped creature gets +2/+2 and has protection from green and from blue.;\
-        Whenever equipped creature deals combat damage to a player, you put a 2/2 green Wolf creature token onto the battlefield~\
+        Whenever equipped creature deals combat damage to a player, you create a 2/2 green Wolf creature token~\
         and that player puts the top ten cards of his or her library into his or her graveyard.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature gets +2/+2 and has protection from green and from blue.\nWhenever equipped creature deals combat damage to a player, you put a 2/2 green Wolf creature token onto the battlefield and that player puts the top ten cards of his or her library into his or her graveyard.\nEquip {2}
+oracle=Equipped creature gets +2/+2 and has protection from green and from blue.\nWhenever equipped creature deals combat damage to a player, you create a 2/2 green Wolf creature token and that player puts the top ten cards of his or her library into his or her graveyard.\nEquip {2}

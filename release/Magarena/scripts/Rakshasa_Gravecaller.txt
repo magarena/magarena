@@ -7,6 +7,6 @@ subtype=Cat,Demon
 cost={4}{B}
 pt=3/6
 ability=Exploit;\
-        When SN exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.
+        When SN exploits a creature, create two 2/2 black Zombie creature tokens.
 timing=main
-oracle=Exploit\nWhen Rakshasa Gravecaller exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.
+oracle=Exploit\nWhen Rakshasa Gravecaller exploits a creature, create two 2/2 black Zombie creature tokens.

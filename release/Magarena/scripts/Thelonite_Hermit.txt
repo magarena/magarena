@@ -9,6 +9,6 @@ cost={3}{G}
 pt=1/1
 ability=Saproling creatures get +1/+1.;\
         Morph {3}{G}{G};\
-        When SN is turned face up, put four 1/1 green Saproling creature tokens onto the battlefield.
+        When SN is turned face up, create four 1/1 green Saproling creature tokens.
 timing=main
-oracle=Saproling creatures get +1/+1.\nMorph {3}{G}{G}\nWhen Thelonite Hermit is turned face up, put four 1/1 green Saproling creature tokens onto the battlefield.
+oracle=Saproling creatures get +1/+1.\nMorph {3}{G}{G}\nWhen Thelonite Hermit is turned face up, create four 1/1 green Saproling creature tokens.

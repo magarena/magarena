@@ -8,7 +8,7 @@ subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 and has flying.;\
-        When enchanted creature dies, put a 2/2 white Griffin creature token with flying onto the battlefield.
+        When enchanted creature dies, create a 2/2 white Griffin creature token with flying.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying.\nWhen enchanted creature dies, put a 2/2 white Griffin creature token with flying onto the battlefield.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying.\nWhen enchanted creature dies, create a 2/2 white Griffin creature token with flying.

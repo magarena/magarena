@@ -8,6 +8,6 @@ subtype=Eldrazi,Drone
 cost={3}{G}
 pt=1/1
 ability=Devoid;\
-        When SN enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield.
+        When SN enters the battlefield, create two 1/1 colorless Eldrazi Scion creature tokens.
 timing=main
-oracle=Devoid\nWhen Eyeless Watcher enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nWhen Eyeless Watcher enters the battlefield, create two 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."

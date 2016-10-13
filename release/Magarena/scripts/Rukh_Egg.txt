@@ -8,4 +8,4 @@ cost={3}{R}
 pt=0/3
 timing=main
 requires_groovy_code
-oracle=When Rukh Egg dies, put a 4/4 red Bird creature token with flying onto the battlefield at the beginning of the next end step.
+oracle=When Rukh Egg dies, create a 4/4 red Bird creature token with flying at the beginning of the next end step.

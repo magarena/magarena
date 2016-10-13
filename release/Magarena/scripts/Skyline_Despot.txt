@@ -9,6 +9,6 @@ cost={5}{R}{R}
 pt=5/5
 ability=Flying;\
         When SN enters the battlefield, you become the monarch.;\
-        At the beginning of your upkeep, if you're the monarch, put a 5/5 red Dragon creature token with flying onto the battlefield.
+        At the beginning of your upkeep, if you're the monarch, create a 5/5 red Dragon creature token with flying.
 timing=main
-oracle=Flying\nWhen Skyline Despot enters the battlefield, you become the monarch.\nAt the beginning of your upkeep, if you're the monarch, put a 5/5 red Dragon creature token with flying onto the battlefield.
+oracle=Flying\nWhen Skyline Despot enters the battlefield, you become the monarch.\nAt the beginning of your upkeep, if you're the monarch, create a 5/5 red Dragon creature token with flying.

@@ -6,4 +6,4 @@ type=Instant
 cost={4}{B}
 timing=removal
 requires_groovy_code
-oracle=Destroy target nonartifact attacking creature. It can't be regenerated. Put a black Spirit creature token with that creature's power and toughness onto the battlefield. Sacrifice the token at the beginning of the next end step.
+oracle=Destroy target nonartifact attacking creature. It can't be regenerated. Create a black Spirit creature token with that creature's power and toughness. Sacrifice the token at the beginning of the next end step.

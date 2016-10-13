@@ -10,7 +10,7 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target nonartifact attacking creature\$. It can't be regenerated. "+
-                "PN puts a black Spirit creature token with that creature's power and toughness onto the battlefield. "+
+                "PN creates a black Spirit creature token with that creature's power and toughness. "+
                 "Sacrifice the token at the beginning of the next end step."
             );
         }

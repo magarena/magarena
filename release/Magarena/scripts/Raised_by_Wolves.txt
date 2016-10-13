@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={3}{G}{G}
 ability=Enchant creature;\
-        When SN enters the battlefield, put two 2/2 green Wolf creature tokens onto the battlefield.;\
+        When SN enters the battlefield, create two 2/2 green Wolf creature tokens.;\
         Enchanted creature gets +1/+1 for each Wolf you control.
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature\nWhen Raised by Wolves enters the battlefield, put two 2/2 green Wolf creature tokens onto the battlefield.\nEnchanted creature gets +1/+1 for each Wolf you control.
+oracle=Enchant creature\nWhen Raised by Wolves enters the battlefield, create two 2/2 green Wolf creature tokens.\nEnchanted creature gets +1/+1 for each Wolf you control.

@@ -8,6 +8,6 @@ cost={3}{W}{W}
 pt=1/1
 ability=Flying;\
         Haunt;\
-        When SN enters the battlefield or the creature it haunts dies, put two 1/1 black Bat creature tokens with flying onto the battlefield.
+        When SN enters the battlefield or the creature it haunts dies, create two 1/1 black Bat creature tokens with flying.
 timing=main
-oracle=Flying\nHaunt\nWhen Belfry Spirit enters the battlefield or the creature it haunts dies, put two 1/1 black Bat creature tokens with flying onto the battlefield.
+oracle=Flying\nHaunt\nWhen Belfry Spirit enters the battlefield or the creature it haunts dies, create two 1/1 black Bat creature tokens with flying.

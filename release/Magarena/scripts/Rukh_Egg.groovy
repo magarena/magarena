@@ -7,7 +7,7 @@ def DelayedTrigger = {
             return new MagicEvent(
                 game.createDelayedSource(staleSource, stalePlayer),
                 this,
-                "PN puts a 4/4 red Bird creature token with flying onto the battlefield."
+                "PN creates a 4/4 red Bird creature token with flying."
             );
         }
         @Override
@@ -27,7 +27,7 @@ def DelayedTrigger = {
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 4/4 red Bird creature token with flying onto the battlefield at the beginning of the next end step."
+                "PN creates a 4/4 red Bird creature token with flying at the beginning of the next end step."
             );
         }
 

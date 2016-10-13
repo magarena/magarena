@@ -7,6 +7,6 @@ subtype=Dragon
 cost={2}{R}{R}{R}{G}
 pt=4/4
 ability=Flying;\
-        At the beginning of each upkeep, put a 1/1 red and green Dragon creature token with flying and devour 2 onto the battlefield.
+        At the beginning of each upkeep, create a 1/1 red and green Dragon creature token with flying and devour 2.
 timing=main
-oracle=Flying\nAt the beginning of each upkeep, put a 1/1 red and green Dragon creature token with flying and devour 2 onto the battlefield.
+oracle=Flying\nAt the beginning of each upkeep, create a 1/1 red and green Dragon creature token with flying and devour 2.

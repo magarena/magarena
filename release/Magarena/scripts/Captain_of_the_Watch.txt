@@ -8,7 +8,7 @@ cost={4}{W}{W}
 pt=3/3
 ability=Vigilance;\
         Other Soldier creatures you control get +1/+1 and have vigilance.;\
-        When SN enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
+        When SN enters the battlefield, create three 1/1 white Soldier creature tokens.
 static=player
 timing=main
-oracle=Vigilance\nOther Soldier creatures you control get +1/+1 and have vigilance.\nWhen Captain of the Watch enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
+oracle=Vigilance\nOther Soldier creatures you control get +1/+1 and have vigilance.\nWhen Captain of the Watch enters the battlefield, create three 1/1 white Soldier creature tokens.

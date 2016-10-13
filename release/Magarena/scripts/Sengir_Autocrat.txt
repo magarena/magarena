@@ -6,7 +6,7 @@ type=Creature
 subtype=Human
 cost={3}{B}
 pt=2/2
-ability=When SN enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create three 0/1 black Serf creature tokens.;\
         When SN leaves the battlefield, exile all Serf tokens.
 timing=main
-oracle=When Sengir Autocrat enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.\nWhen Sengir Autocrat leaves the battlefield, exile all Serf tokens.
+oracle=When Sengir Autocrat enters the battlefield, create three 0/1 black Serf creature tokens.\nWhen Sengir Autocrat leaves the battlefield, exile all Serf tokens.

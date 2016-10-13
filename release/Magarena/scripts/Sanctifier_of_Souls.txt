@@ -8,6 +8,6 @@ subtype=Human,Cleric
 cost={3}{W}
 pt=2/3
 ability=Whenever another creature enters the battlefield under your control, SN gets +1/+1 until end of turn.;\
-        {2}{W}, Exile a creature card from your graveyard: Put a 1/1 white Spirit creature token with flying onto the battlefield.
+        {2}{W}, Exile a creature card from your graveyard: Create a 1/1 white Spirit creature token with flying.
 timing=main
-oracle=Whenever another creature enters the battlefield under your control, Sanctifier of Souls gets +1/+1 until end of turn.\n{2}{W}, Exile a creature card from your graveyard: Put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Whenever another creature enters the battlefield under your control, Sanctifier of Souls gets +1/+1 until end of turn.\n{2}{W}, Exile a creature card from your graveyard: Create a 1/1 white Spirit creature token with flying.

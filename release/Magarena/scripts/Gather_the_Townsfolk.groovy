@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts two 1/1 white Human creature tokens onto the battlefield. " +
-                "If PN has 5 or less life, he or she puts five of those tokens onto the battlefield instead."
+                "PN creates two 1/1 white Human creature tokens. " +
+                "If PN has 5 or less life, he or she creates five of those tokens instead."
             );
         }
         @Override

@@ -5,6 +5,6 @@ rarity=C
 type=Enchantment
 cost={1}{R}
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
-        Remove three quest counters from SN, Sacrifice SN: Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step.
+        Remove three quest counters from SN, Sacrifice SN: Create a 7/1 red Elemental creature token with trample and haste. Exile it at the beginning of the next end step.
 timing=enchantment
-oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Zektar Shrine Expedition.\nRemove three quest counters from Zektar Shrine Expedition and sacrifice it: Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step.
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Zektar Shrine Expedition.\nRemove three quest counters from Zektar Shrine Expedition and sacrifice it: Create a 7/1 red Elemental creature token with trample and haste. Exile it at the beginning of the next end step.

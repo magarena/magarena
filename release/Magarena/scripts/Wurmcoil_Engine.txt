@@ -7,6 +7,6 @@ subtype=Wurm
 cost={6}
 pt=6/6
 ability=Deathtouch, lifelink;\
-        When SN dies, put a 3/3 colorless Wurm artifact creature token with deathtouch onto the battlefield.~Put a 3/3 colorless Wurm artifact creature token with lifelink onto the battlefield.
+        When SN dies, create a 3/3 colorless Wurm artifact creature token with deathtouch~and create a 3/3 colorless Wurm artifact creature token with lifelink.
 timing=main
-oracle=Deathtouch, lifelink\nWhen Wurmcoil Engine dies, put a 3/3 colorless Wurm artifact creature token with deathtouch and a 3/3 colorless Wurm artifact creature token with lifelink onto the battlefield.
+oracle=Deathtouch, lifelink\nWhen Wurmcoil Engine dies, create a 3/3 colorless Wurm artifact creature token with deathtouch and a 3/3 colorless Wurm artifact creature token with lifelink.

@@ -7,6 +7,6 @@ subtype=Human,Monk
 cost={2}{W}
 pt=2/2
 ability=Prowess;\
-        Whenever you cast a noncreature spell, put a 1/1 white Monk creature token with prowess onto the battlefield.
+        Whenever you cast a noncreature spell, create a 1/1 white Monk creature token with prowess.
 timing=main
-oracle=Prowess\nWhenever you cast a noncreature spell, put a 1/1 white Monk creature token with prowess onto the battlefield.
+oracle=Prowess\nWhenever you cast a noncreature spell, create a 1/1 white Monk creature token with prowess.

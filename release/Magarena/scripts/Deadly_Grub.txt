@@ -7,6 +7,6 @@ subtype=Insect
 cost={2}{B}
 pt=3/1
 ability=Vanishing 3;\
-        When SN dies, if it had no time counters on it, put a 6/1 green Insect creature token with shroud onto the battlefield.
+        When SN dies, if it had no time counters on it, create a 6/1 green Insect creature token with shroud.
 timing=main
-oracle=Vanishing 3\nWhen Deadly Grub dies, if it had no time counters on it, put a 6/1 green Insect creature token with shroud onto the battlefield.
+oracle=Vanishing 3\nWhen Deadly Grub dies, if it had no time counters on it, create a 6/1 green Insect creature token with shroud.
