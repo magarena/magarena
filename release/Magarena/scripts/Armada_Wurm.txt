@@ -7,6 +7,6 @@ subtype=Wurm
 cost={2}{G}{G}{W}{W}
 pt=5/5
 ability=Trample;\
-        When SN enters the battlefield, put a 5/5 green Wurm creature token with trample onto the battlefield.
+        When SN enters the battlefield, create a 5/5 green Wurm creature token with trample.
 timing=main
-oracle=Trample\nWhen Armada Wurm enters the battlefield, put a 5/5 green Wurm creature token with trample onto the battlefield.
+oracle=Trample\nWhen Armada Wurm enters the battlefield, create a 5/5 green Wurm creature token with trample.

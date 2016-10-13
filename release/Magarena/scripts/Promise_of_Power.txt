@@ -7,4 +7,4 @@ cost={2}{B}{B}{B}
 ability=Entwine {4}
 timing=main
 requires_groovy_code
-oracle=Choose one — \n• You draw five cards and you lose 5 life.\n• Put an X/X black Demon creature token with flying onto the battlefield, where X is the number of cards in your hand.\nEntwine {4}
+oracle=Choose one — \n• You draw five cards and you lose 5 life.\n• Create an X/X black Demon creature token with flying, where X is the number of cards in your hand.\nEntwine {4}

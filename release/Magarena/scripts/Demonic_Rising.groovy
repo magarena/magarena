@@ -1,4 +1,4 @@
-def effect = MagicRuleEventAction.create("Put a 5/5 black Demon creature token with flying onto the battlefield.");
+def effect = MagicRuleEventAction.create("Create a 5/5 black Demon creature token with flying.");
 
 [
     new AtEndOfTurnTrigger() {

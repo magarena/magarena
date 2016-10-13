@@ -8,6 +8,6 @@ subtype=Dragon
 cost={3}{R}{R}
 pt=6/6
 ability=Flying, haste;\
-        When SN enters the battlefield, target opponent puts three 2/2 white Knight creature tokens with first strike onto the battlefield.
+        When SN enters the battlefield, target opponent creates three 2/2 white Knight creature tokens with first strike.
 timing=main
-oracle=Flying, haste\nWhen Hunted Dragon enters the battlefield, target opponent puts three 2/2 white Knight creature tokens with first strike onto the battlefield.
+oracle=Flying, haste\nWhen Hunted Dragon enters the battlefield, target opponent creates three 2/2 white Knight creature tokens with first strike.

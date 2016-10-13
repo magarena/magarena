@@ -7,7 +7,7 @@
                 permanent,
                 blocked,
                 this,
-                "PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield blocking RN."
+                "PN creates a 1/1 white Cat Soldier creature token with vigilance that's blocking RN."
             );
         }
         @Override

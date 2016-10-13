@@ -7,6 +7,6 @@ subtype=Bird
 cost={2}{W}
 pt=0/3
 ability=Defender;\
-        When SN dies, put a 3/3 white Bird creature token with flying onto the battlefield.
+        When SN dies, create a 3/3 white Bird creature token with flying.
 timing=main
-oracle=Defender\nWhen Roc Egg dies, put a 3/3 white Bird creature token with flying onto the battlefield.
+oracle=Defender\nWhen Roc Egg dies, create a 3/3 white Bird creature token with flying.

@@ -7,6 +7,6 @@ subtype=Dragon
 cost={2}{R}
 pt=0/2
 ability=Defender;\
-        When SN dies, put a 2/2 red Dragon creature token with flying onto the battlefield.
+        When SN dies, create a 2/2 red Dragon creature token with flying.
 timing=smain
-oracle=Defender\nWhen Dragon Egg dies, put a 2/2 red Dragon creature token with flying onto the battlefield. It has "{R}: This creature gets +1/+0 until end of turn."
+oracle=Defender\nWhen Dragon Egg dies, create a 2/2 red Dragon creature token with flying. It has "{R}: This creature gets +1/+0 until end of turn."

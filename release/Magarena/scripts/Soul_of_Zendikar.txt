@@ -10,4 +10,4 @@ ability=Reach;\
         {3}{G}{G}: Create a 3/3 green Beast creature token.;\
         {3}{G}{G}, Exile SN from your graveyard: Create a 3/3 green Beast creature token.
 timing=main
-oracle=Reach\n{3}{G}{G}: Create a 3/3 green Beast creature token onto the battlefield.\n{3}{G}{G}, Exile Soul of Zendikar from your graveyard: Put a 3/3 green Beast creature token.
+oracle=Reach\n{3}{G}{G}: Create a 3/3 green Beast creature token.\n{3}{G}{G}, Exile Soul of Zendikar from your graveyard: Create a 3/3 green Beast creature token.

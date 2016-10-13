@@ -5,6 +5,6 @@ rarity=R
 type=Enchantment
 cost={2}{W}
 ability=At the beginning of your upkeep, you may sacrifice a Pegasus. If you don't, sacrifice SN.;\
-        {1}{W}: Put a 1/1 white Pegasus creature token with flying onto the battlefield.
+        {1}{W}: Create a 1/1 white Pegasus creature token with flying.
 timing=enchantment
-oracle=At the beginning of your upkeep, sacrifice Sacred Mesa unless you sacrifice a Pegasus.\n{1}{W}: Put a 1/1 white Pegasus creature token with flying onto the battlefield.
+oracle=At the beginning of your upkeep, sacrifice Sacred Mesa unless you sacrifice a Pegasus.\n{1}{W}: Create a 1/1 white Pegasus creature token with flying.

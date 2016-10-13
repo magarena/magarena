@@ -7,4 +7,4 @@ cost={2}{G}
 ability=Cast SN with AI only if you control a creature.
 timing=main
 requires_groovy_code
-oracle=Put an X/X green Ooze creature token onto the battlefield, where X is the greatest power among creatures you control.
+oracle=Create an X/X green Ooze creature token, where X is the greatest power among creatures you control.

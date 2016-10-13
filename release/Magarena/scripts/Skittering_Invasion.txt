@@ -6,5 +6,5 @@ type=Tribal,Sorcery
 subtype=Eldrazi
 cost={7}
 timing=token
-effect=Put five 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield.
-oracle=Put five 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool."
+effect=Create five 0/1 colorless Eldrazi Spawn creature tokens.
+oracle=Create five 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."

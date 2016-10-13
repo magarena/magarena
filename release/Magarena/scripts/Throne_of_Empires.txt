@@ -6,4 +6,4 @@ type=Artifact
 cost={4}
 timing=artifact
 requires_groovy_code
-oracle={1}, {T}: Create a 1/1 white Soldier creature token. Put five of those tokens onto the battlefield instead if you control artifacts named Crown of Empires and Scepter of Empires.
+oracle={1}, {T}: Create a 1/1 white Soldier creature token. Create five of those tokens onto the battlefield instead if you control artifacts named Crown of Empires and Scepter of Empires.

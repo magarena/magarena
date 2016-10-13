@@ -6,6 +6,6 @@ type=Artifact
 cost={4}
 ability=SN enters the battlefield with three charge counters on it.;\
         {G}{G}, {T}: Put a charge counter on SN.;\
-        {2}, {T}, Remove a charge counter from SN: Put a 1/1 green Insect creature token with infect onto the battlefield.
+        {2}, {T}, Remove a charge counter from SN: Create a 1/1 green Insect creature token with infect.
 timing=artifact
-oracle=Trigon of Infestation enters the battlefield with three charge counters on it.\n{G}{G}, {T}: Put a charge counter on Trigon of Infestation.\n{2}, {T}, Remove a charge counter from Trigon of Infestation: Put a 1/1 green Insect creature token with infect onto the battlefield.
+oracle=Trigon of Infestation enters the battlefield with three charge counters on it.\n{G}{G}, {T}: Put a charge counter on Trigon of Infestation.\n{2}, {T}, Remove a charge counter from Trigon of Infestation: Create a 1/1 green Insect creature token with infect.

@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
-        When SN enters the battlefield, put two 1/1 green Saproling creature tokens onto the battlefield.;\
+        When SN enters the battlefield, create two 1/1 green Saproling creature tokens.;\
         Enchanted creature has trample.
 timing=aura
 enchant=trample,pos creature
-oracle=Enchant creature\nWhen Fists of Ironwood enters the battlefield, put two 1/1 green Saproling creature tokens onto the battlefield.\nEnchanted creature has trample.
+oracle=Enchant creature\nWhen Fists of Ironwood enters the battlefield, create two 1/1 green Saproling creature tokens.\nEnchanted creature has trample.

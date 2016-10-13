@@ -7,7 +7,7 @@ subtype=Merfolk,Wizard
 cost={3}{U}
 pt=2/1
 ability=Protection from red;\
-        Elemental creatures you control get +1/+1.
+        Elemental creatures you control get +1/+1.;\
+        When SN enters the battlefield, create X 1/0 blue Elemental creature tokens, where X is your devotion to blue.
 timing=main
-requires_groovy_code
-oracle=Protection from red\nElemental creatures you control get +1/+1.\nWhen Master of Waves enters the battlefield, put a number of 1/0 blue Elemental creature tokens onto the battlefield equal to your devotion to blue.
+oracle=Protection from red\nElemental creatures you control get +1/+1.\nWhen Master of Waves enters the battlefield, create a number of 1/0 blue Elemental creature tokens equal to your devotion to blue.

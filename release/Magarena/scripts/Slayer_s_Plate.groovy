@@ -1,4 +1,4 @@
-def effect = MagicRuleEventAction.create("Put a 1/1 white Spirit creature token with flying onto the battlefield.")
+def effect = MagicRuleEventAction.create("Create a 1/1 white Spirit creature token with flying.")
 
 [
     new OtherDiesTrigger() {

@@ -8,6 +8,6 @@ subtype=Human,Advisor
 cost={5}{W}{B}
 pt=4/4
 ability=Vigilance, protection from creatures;\
-        Whenever a creature deals combat damage to you, destroy that creature.~Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
+        Whenever a creature deals combat damage to you, destroy that creature.~Create a 1/1 white and black Spirit creature token with flying.
 timing=main
-oracle=Vigilance, protection from creatures\nWhenever a creature deals combat damage to you, destroy that creature. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
+oracle=Vigilance, protection from creatures\nWhenever a creature deals combat damage to you, destroy that creature. Create a 1/1 white and black Spirit creature token with flying.

@@ -7,7 +7,7 @@ type=Artifact
 subtype=Equipment
 cost={2}
 ability=Equipped creature gets +1/+0.;\
-        Whenever equipped creature attacks, put a 1/1 white Kor Ally creature token onto the battlefield tapped and attacking.;\
+        Whenever equipped creature attacks, create a 1/1 white Kor Ally creature token that's tapped and attacking.;\
         Equip {1}
 timing=equipment
-oracle=Equipped creature gets +1/+0.\nWhenever equipped creature attacks, put a 1/1 white Kor Ally creature token onto the battlefield tapped and attacking.\nEquip {1}
+oracle=Equipped creature gets +1/+0.\nWhenever equipped creature attacks, create a 1/1 white Kor Ally creature token that's tapped and attacking.\nEquip {1}

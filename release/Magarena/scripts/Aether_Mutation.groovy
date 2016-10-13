@@ -8,7 +8,7 @@
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ to its owner's hand. " +
-                "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that creature's converted mana cost."
+                "PN creates X 1/1 green Saproling creature tokens, where X is that creature's converted mana cost."
             );
         }
         @Override

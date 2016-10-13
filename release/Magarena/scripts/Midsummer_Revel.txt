@@ -5,6 +5,6 @@ rarity=R
 type=Enchantment
 cost={3}{G}{G}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
-        {G}, Sacrifice SN: Put X 3/3 green Beast creature tokens onto the battlefield, where X is the number of verse counters on SN.
+        {G}, Sacrifice SN: Create X 3/3 green Beast creature tokens, where X is the number of verse counters on SN.
 timing=enchantment
-oracle=At the beginning of your upkeep, you may put a verse counter on Midsummer Revel.\n{G}, Sacrifice Midsummer Revel: Put X 3/3 green Beast creature tokens onto the battlefield, where X is the number of verse counters on Midsummer Revel.
+oracle=At the beginning of your upkeep, you may put a verse counter on Midsummer Revel.\n{G}, Sacrifice Midsummer Revel: Create X 3/3 green Beast creature tokens, where X is the number of verse counters on Midsummer Revel.

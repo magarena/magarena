@@ -7,6 +7,6 @@ subtype=Spirit,Cleric
 cost={1}{W}{U}
 pt=2/2
 ability=Hexproof;\
-        Whenever SN attacks, put a 4/4 white Angel creature token with flying onto the battlefield tapped and attacking. Exile that token at end of combat.
+        Whenever SN attacks, create a 4/4 white Angel creature token with flying that's tapped and attacking. Exile that token at end of combat.
 timing=main
-oracle=Hexproof\nWhenever Geist of Saint Traft attacks, put a 4/4 white Angel creature token with flying onto the battlefield tapped and attacking. Exile that token at end of combat.
+oracle=Hexproof\nWhenever Geist of Saint Traft attacks, create a 4/4 white Angel creature token with flying that's tapped and attacking. Exile that token at end of combat.

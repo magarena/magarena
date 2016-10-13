@@ -7,6 +7,6 @@ subtype=Plant,Wall
 cost={U}{U}
 pt=0/3
 ability=Defender;\
-        {U}{U}, {T}: Put a 0/1 blue Plant Wall creature token with defender named Kelp onto the battlefield.
+        {U}{U}, {T}: Create a 0/1 blue Plant Wall creature token with defender named Kelp.
 timing=smain
-oracle=Defender\n{U}{U}, {T}: Put a 0/1 blue Plant Wall creature token with defender named Kelp onto the battlefield.
+oracle=Defender\n{U}{U}, {T}: Create a 0/1 blue Plant Wall creature token with defender named Kelp.

@@ -4,7 +4,7 @@ value=3.500
 rarity=R
 type=Enchantment
 cost={R}{W}{B}
-ability=Whenever a nontoken creature you control attacks, put a 1/1 red Goblin creature token onto the battlefield tapped and attacking.;\
+ability=Whenever a nontoken creature you control attacks, create a 1/1 red Goblin creature token that's tapped and attacking.;\
         Sacrifice SN: Creatures you control get +0/+3 until end of turn.
 timing=enchantment
-oracle=Whenever a nontoken creature you control attacks, put a 1/1 red Goblin creature token onto the battlefield tapped and attacking.\nSacrifice Mardu Ascendancy: Creatures you control get +0/+3 until end of turn.
+oracle=Whenever a nontoken creature you control attacks, create a 1/1 red Goblin creature token that's tapped and attacking.\nSacrifice Mardu Ascendancy: Creatures you control get +0/+3 until end of turn.

@@ -7,8 +7,8 @@ subtype=Elf
 cost={3}{G}{G}
 pt=1/1
 ability=Echo {3}{G}{G};\
-        When SN enters the battlefield, put four 1/1 green Squirrel creature tokens onto the battlefield.;\
+        When SN enters the battlefield, create four 1/1 green Squirrel creature tokens.;\
         Squirrel creatures get +1/+1.
 static=all
 timing=main
-oracle=Echo {3}{G}{G}\nWhen Deranged Hermit enters the battlefield, put four 1/1 green Squirrel creature tokens onto the battlefield.\nSquirrel creatures get +1/+1.
+oracle=Echo {3}{G}{G}\nWhen Deranged Hermit enters the battlefield, create four 1/1 green Squirrel creature tokens.\nSquirrel creatures get +1/+1.

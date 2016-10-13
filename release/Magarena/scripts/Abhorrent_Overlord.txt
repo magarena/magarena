@@ -7,7 +7,7 @@ subtype=Demon
 cost={5}{B}{B}
 pt=6/6
 ability=Flying;\
-        When SN enters the battlefield, create X 1/1 black Harpy creature tokens with flying where X is your devotion to black.;\
+        When SN enters the battlefield, create X 1/1 black Harpy creature tokens with flying, where X is your devotion to black.;\
         At the beginning of your upkeep, sacrifice a creature.
 timing=main
 oracle=Flying\nWhen Abhorrent Overlord enters the battlefield, put a number of 1/1 black Harpy creature tokens with flying onto the battlefield equal to your devotion to black.\nAt the beginning of your upkeep, sacrifice a creature.

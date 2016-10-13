@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={6}{G}{G}
 ability=Enchant land;\
-        Enchanted land has "{T}: Put a 5/5 green Beast creature token with trample onto the battlefield."
+        Enchanted land has "{T}: Create a 5/5 green Beast creature token with trample."
 timing=aura
 enchant=pump,pos land
-oracle=Enchant land\nEnchanted land has "{T}: Put a 5/5 green Beast creature token with trample onto the battlefield."
+oracle=Enchant land\nEnchanted land has "{T}: Create a 5/5 green Beast creature token with trample."

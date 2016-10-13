@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts an X/X green Ooze creature token onto the battlefield, where X is the greatest power among creatures PN controls."
+                "PN creates an X/X green Ooze creature token, where X is the greatest power among creatures PN controls."
             );
         }
         @Override

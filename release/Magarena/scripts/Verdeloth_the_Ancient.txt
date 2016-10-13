@@ -9,6 +9,6 @@ pt=4/7
 ability=Kicker {X};\
         Saproling creatures get +1/+1.;\
         Other Treefolk creatures get +1/+1.;\
-        When SN enters the battlefield, if it was kicked, put X 1/1 green Saproling creature tokens onto the battlefield.
+        When SN enters the battlefield, if it was kicked, create X 1/1 green Saproling creature tokens.
 timing=main
-oracle=Kicker {X}\nSaproling creatures and other Treefolk creatures get +1/+1.\nWhen Verdeloth the Ancient enters the battlefield, if it was kicked, put X 1/1 green Saproling creature tokens onto the battlefield.
+oracle=Kicker {X}\nSaproling creatures and other Treefolk creatures get +1/+1.\nWhen Verdeloth the Ancient enters the battlefield, if it was kicked, create X 1/1 green Saproling creature tokens.

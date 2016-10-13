@@ -8,6 +8,6 @@ subtype=Human,Artificer
 cost={3}{U}
 pt=1/2
 ability=Flying;\
-        When SN enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.
+        When SN enters the battlefield, create a 1/1 colorless Thopter artifact creature token with flying.
 timing=main
-oracle=Flying\nWhen Aspiring Aeronaut enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.
+oracle=Flying\nWhen Aspiring Aeronaut enters the battlefield, create a 1/1 colorless Thopter artifact creature token with flying.

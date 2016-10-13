@@ -4,6 +4,6 @@ value=3.909
 rarity=R
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {3}{G}{W}, {T}, Tap another two untapped creatures you control, Sacrifice SN: Put an 8/8 green and white Elemental creature token with vigilance onto the battlefield.
+        {3}{G}{W}, {T}, Tap another two untapped creatures you control, Sacrifice SN: Create an 8/8 green and white Elemental creature token with vigilance.
 timing=main
-oracle={T}: Add {C} to your mana pool.\n{3}{G}{W}, {T}, Tap two untapped creatures you control, Sacrifice Grove of the Guardian: Put an 8/8 green and white Elemental creature token with vigilance onto the battlefield.
+oracle={T}: Add {C} to your mana pool.\n{3}{G}{W}, {T}, Tap two untapped creatures you control, Sacrifice Grove of the Guardian: Create an 8/8 green and white Elemental creature token with vigilance.

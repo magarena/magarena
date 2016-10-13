@@ -6,6 +6,6 @@ type=Tribal,Enchantment
 subtype=Elemental
 cost={1}{W}
 ability=Whenever you draw a card, you may put a hoofprint counter on SN.;\
-        {2}{W}, Remove four hoofprint counters from SN: Put a 4/4 white Elemental creature token with flying onto the battlefield. Activate this ability only during your turn.
+        {2}{W}, Remove four hoofprint counters from SN: Create a 4/4 white Elemental creature token with flying. Activate this ability only during your turn.
 timing=enchantment
-oracle=Whenever you draw a card, you may put a hoofprint counter on Hoofprints of the Stag.\n{2}{W}, Remove four hoofprint counters from Hoofprints of the Stag: Put a 4/4 white Elemental creature token with flying onto the battlefield. Activate this ability only during your turn.
+oracle=Whenever you draw a card, you may put a hoofprint counter on Hoofprints of the Stag.\n{2}{W}, Remove four hoofprint counters from Hoofprints of the Stag: Create a 4/4 white Elemental creature token with flying. Activate this ability only during your turn.

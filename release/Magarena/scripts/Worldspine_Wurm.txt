@@ -7,7 +7,7 @@ subtype=Wurm
 cost={8}{G}{G}{G}
 pt=15/15
 ability=Trample;\
-        When SN dies, put three 5/5 green Wurm creature tokens with trample onto the battlefield.;\
+        When SN dies, create three 5/5 green Wurm creature tokens with trample.;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=main
-oracle=Trample\nWhen Worldspine Wurm dies, put three 5/5 green Wurm creature tokens with trample onto the battlefield.\nWhen Worldspine Wurm is put into a graveyard from anywhere, shuffle it into its owner's library.
+oracle=Trample\nWhen Worldspine Wurm dies, create three 5/5 green Wurm creature tokens with trample.\nWhen Worldspine Wurm is put into a graveyard from anywhere, shuffle it into its owner's library.

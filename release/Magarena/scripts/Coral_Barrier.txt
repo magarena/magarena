@@ -7,6 +7,6 @@ subtype=Wall
 cost={2}{U}
 pt=1/3
 ability=Defender;\
-        When SN enters the battlefield, put a 1/1 blue Squid creature token with islandwalk onto the battlefield.
+        When SN enters the battlefield, create a 1/1 blue Squid creature token with islandwalk.
 timing=main
-oracle=Defender\nWhen Coral Barrier enters the battlefield, put a 1/1 blue Squid creature token with islandwalk onto the battlefield.
+oracle=Defender\nWhen Coral Barrier enters the battlefield, create a 1/1 blue Squid creature token with islandwalk.

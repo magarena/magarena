@@ -1,6 +1,6 @@
 def TEXT1 = "PN draws five cards and loses 5 life."
 
-def TEXT2 = "PN puts an X/X black Demon creature token with flying onto the battlefield, "+
+def TEXT2 = "PN creates an X/X black Demon creature token with flying, "+
             "where X is the number of cards in his or her hand as the token enters the battlefield."
 
 [

@@ -6,7 +6,7 @@ type=Creature
 subtype=Treefolk,Shaman
 cost={5}{G}{G}
 pt=4/5
-ability=When SN enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create three 1/1 white Kithkin Soldier creature tokens.;\
         {G}, Sacrifice a Kithkin: You gain 1 life.
 timing=main
-oracle=When Guardian of Cloverdell enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield.\n{G}, Sacrifice a Kithkin: You gain 1 life.
+oracle=When Guardian of Cloverdell enters the battlefield, create three 1/1 white Kithkin Soldier creature tokens.\n{G}, Sacrifice a Kithkin: You gain 1 life.
