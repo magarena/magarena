@@ -1,11 +1,10 @@
 package magic.ui.screen.widget;
 
-import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
-
 import java.awt.Point;
 import java.awt.event.MouseEvent;
+import javax.swing.AbstractAction;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 
@@ -20,9 +19,15 @@ public class ActionBarButton extends MenuButton {
             setToolTipText("<html><b>" + actionName + "</b><br>" + tooltip + "</html>");
         }
     }
+
     public ActionBarButton(ImageIcon icon, String actionName, String tooltip, AbstractAction action) {
         this(icon, actionName, tooltip, action, true);
     }
+
+    public ActionBarButton(ImageIcon icon, String actionName, AbstractAction action) {
+        this(icon, actionName, "", action);
+    }
+
     // CTR - text only action.
     public ActionBarButton(final String caption, final String tooltip, final AbstractAction action, final boolean showSeparator) {
         super(caption, action, tooltip, showSeparator);
@@ -30,12 +35,19 @@ public class ActionBarButton extends MenuButton {
             setToolTipText("<html><b>" + caption + "</b><br>" + tooltip + "</html>");
         }
     }
+
+    public ActionBarButton(AbstractAction action) {
+        this("", null, action);
+    }
+
     public ActionBarButton(final String caption, final String tooltip, final AbstractAction action) {
         this(caption, tooltip, action, true);
     }
+
     public ActionBarButton(final String caption, final AbstractAction action) {
         this(caption, null, action);
     }
+
     protected ActionBarButton() {}
 
     @Override

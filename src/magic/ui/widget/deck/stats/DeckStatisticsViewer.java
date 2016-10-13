@@ -16,10 +16,10 @@ import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.translate.UiString;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.ActionButtonTitleBar;
-import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -80,7 +80,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
     private ActionBarButton getLogViewActionButton() {
         return new ActionBarButton(
-            null, null,
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {

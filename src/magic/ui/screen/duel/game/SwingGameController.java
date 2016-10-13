@@ -75,6 +75,7 @@ import magic.ui.widget.duel.choice.ModeChoicePanel;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.widget.duel.choice.MultiKickerChoicePanel;
 import magic.ui.widget.duel.choice.PlayChoicePanel;
+import magic.ui.widget.duel.sidebar.LogStackViewer;
 import magic.ui.widget.duel.viewer.PlayerZoneViewer;
 import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.utility.MagicFileSystem;
@@ -96,6 +97,8 @@ public class SwingGameController implements IUIGameController {
 
     private final DuelLayeredPane duelPane;
     private final DuelPanel gamePanel;
+    private LogStackViewer logStackViewer;
+
     private final MagicGame game;
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
@@ -129,7 +132,7 @@ public class SwingGameController implements IUIGameController {
         this.game = aGame;
         gameViewerInfo = new GameViewerInfo(game);
         gamePanel = duelPane.getDuelPanel();
-        duelPane.getDuelPanel().setController(this);
+        gamePanel.setController(this);
         duelPane.getCardViewer().setController(this);
         clearValidChoices();
 
@@ -156,6 +159,9 @@ public class SwingGameController implements IUIGameController {
 
         KeyEventAction.doAction(gamePanel, this::showKeywordsScreen)
             .on(0, KeyEvent.VK_K);
+
+        KeyEventAction.doAction(gamePanel, this::switchLogStackLayout)
+            .on(0, KeyEvent.VK_M);
 
     }
 
@@ -1112,6 +1118,14 @@ public class SwingGameController implements IUIGameController {
 
     private void showKeywordsScreen() {
         ScreenController.showKeywordsScreen();
+    }
+
+    private void switchLogStackLayout() {
+        logStackViewer.switchLogVisibility();
+    }
+
+    public void setLogStackViewer(LogStackViewer logStackViewer) {
+        this.logStackViewer = logStackViewer;
     }
 
 }

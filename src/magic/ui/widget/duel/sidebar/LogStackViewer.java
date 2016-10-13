@@ -26,7 +26,7 @@ import magic.ui.widget.message.MessageStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class LogStackViewer extends JPanel {
+public class LogStackViewer extends JPanel {
 
     public static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
     public static final Color CHOICE_COLOR = Color.RED.darker();
@@ -38,8 +38,9 @@ class LogStackViewer extends JPanel {
     private static final String _S5 = "Stack";
     private static final String _S6 = "Cycle message style";
     private static final String _S7 = "Click to cycle through various styles for the log/stack messages.";
-    private static final String _S8 =  "Keywords glossary [K]";
+    private static final String _S8 = "Keywords glossary [K]";
     private static final String _S9 = "Quick reference...";
+    private static final String _S10 = "Hide/show log [M]";
 
     private final LogViewer logViewer;
     private final StackViewer stackViewer;
@@ -79,7 +80,7 @@ class LogStackViewer extends JPanel {
     private JButton getLogViewActionButton(MagicIcon aIcon) {
         return new ActionBarButton(
             MagicImages.getIcon(aIcon),
-            null, null,
+            UiString.get(_S10),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -179,11 +180,13 @@ class LogStackViewer extends JPanel {
         return GeneralConfig.getInstance().isLogMessagesVisible();
     }
 
-    private void switchLogVisibility() {
+    public void switchLogVisibility() {
         final boolean isLogVisible = !isLogVisible();
         GeneralConfig.getInstance().setLogMessagesVisible(isLogVisible);
         setLogVisible(isLogVisible);
         GeneralConfig.getInstance().save();
     }
+
+
 
 }
