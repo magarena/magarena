@@ -1,14 +1,11 @@
 package magic.ui.screen.duel.game;
 
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
-import magic.ui.duel.viewerinfo.GameViewerInfo;
 import java.awt.Dimension;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.Point;
 import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -25,7 +22,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
@@ -58,10 +54,15 @@ import magic.translate.StringContext;
 import magic.translate.UiString;
 import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
-import magic.ui.MagicImages;
 import magic.ui.MagicFileChoosers;
+import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.helpers.KeyEventAction;
+import magic.ui.screen.duel.mulligan.MulliganScreen;
 import magic.ui.widget.card.AnnotatedCardPanel;
 import magic.ui.widget.duel.animation.DrawCardAnimation;
 import magic.ui.widget.duel.animation.MagicAnimation;
@@ -76,7 +77,6 @@ import magic.ui.widget.duel.choice.MultiKickerChoicePanel;
 import magic.ui.widget.duel.choice.PlayChoicePanel;
 import magic.ui.widget.duel.viewer.PlayerZoneViewer;
 import magic.ui.widget.duel.viewer.UserActionPanel;
-import magic.ui.screen.duel.mulligan.MulliganScreen;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -134,6 +134,22 @@ public class SwingGameController implements IUIGameController {
         clearValidChoices();
 
         setControlKeyMonitor();
+        setKeyEventActions();
+    }
+
+    private void setKeyEventActions() {
+
+        KeyEventAction.doAction(gamePanel, this::actionKeyPressed)
+            .on(0, KeyEvent.VK_RIGHT, KeyEvent.VK_SPACE);
+
+        KeyEventAction.doAction(gamePanel, this::undoKeyPressed)
+            .on(0, KeyEvent.VK_LEFT, KeyEvent.VK_BACK_SPACE, KeyEvent.VK_DELETE);
+
+        KeyEventAction.doAction(gamePanel, this::passKeyPressed)
+            .on(InputEvent.SHIFT_MASK, KeyEvent.VK_RIGHT, KeyEvent.VK_SPACE);
+
+        KeyEventAction.doAction(gamePanel, this::switchPlayerZone)
+            .on(0, KeyEvent.VK_S);
     }
 
     private void setControlKeyMonitor() {
@@ -250,7 +266,7 @@ public class SwingGameController implements IUIGameController {
         input.offer(undoClicked);
     }
 
-    public void switchKeyPressed() {
+    public void switchPlayerZone() {
         playerZoneViewer.switchPlayerZone();
     }
 
@@ -262,7 +278,9 @@ public class SwingGameController implements IUIGameController {
     }
 
     public void actionKeyPressed() {
-        if (gamePanel.canClickAction()) {
+        if (duelPane.getDialogPanel().isVisible()) {
+            duelPane.getDialogPanel().setVisible(false);
+        } else if (gamePanel.canClickAction()) {
             actionClicked();
         }
     }
@@ -1079,22 +1097,6 @@ public class SwingGameController implements IUIGameController {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
             }
         }
-    }
-
-    @SuppressWarnings("serial")
-    private final AbstractAction actionKeyPressed = new AbstractAction() {
-        @Override
-        public void actionPerformed(final ActionEvent event) {
-            if (duelPane.getDialogPanel().isVisible()) {
-                duelPane.getDialogPanel().setVisible(false);
-            } else {
-                actionKeyPressed();
-            }
-        }
-    };
-
-    AbstractAction getActionKeyPressedAction() {
-        return actionKeyPressed;
     }
 
 }
