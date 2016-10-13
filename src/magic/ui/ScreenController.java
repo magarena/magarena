@@ -228,7 +228,7 @@ public final class ScreenController {
         }
     }
 
-    private static void closeActiveScreen() {
+    private static void doCloseActiveScreen() {
         final Object activeScreen = screens.pop();
         final Object nextScreen = screens.peek();
         if (isScreenReadyToClose(activeScreen, nextScreen)) {
@@ -247,8 +247,12 @@ public final class ScreenController {
         if (getScreensStackSize() == 1) {
             mainFrame.quitToDesktop(isEscapeKeyAction);
         } else {
-            closeActiveScreen();
+            doCloseActiveScreen();
         }
+    }
+
+    public static void closeActiveScreen() {
+        closeActiveScreen(false);
     }
 
     private static void showScreen(Object screen) {

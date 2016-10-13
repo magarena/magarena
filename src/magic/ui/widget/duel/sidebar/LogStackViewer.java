@@ -16,13 +16,13 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.translate.UiString;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.widget.message.MessageStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;
-import magic.ui.FontsAndBorders;
+import magic.ui.widget.message.MessageStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -32,7 +32,7 @@ class LogStackViewer extends JPanel {
     public static final Color CHOICE_COLOR = Color.RED.darker();
 
     // translatable strings
-    private static final String _S1 = "View log file";
+    private static final String _S1 = "View log file [L]";
     private static final String _S2 = "Shows the complete game log that is written to file.";
     private static final String _S4 = "Log";
     private static final String _S5 = "Stack";
@@ -40,7 +40,7 @@ class LogStackViewer extends JPanel {
     private static final String _S7 = "Click to cycle through various styles for the log/stack messages.";
     private static final String _S8 =  "Keywords glossary";
     private static final String _S9 = "Quick reference...";
-    
+
     private final LogViewer logViewer;
     private final StackViewer stackViewer;
     private final ActionButtonTitleBar logTitleBar;
@@ -135,7 +135,7 @@ class LogStackViewer extends JPanel {
 
     private List<JButton> getStackActionButtons() {
         final List<JButton> btns = new ArrayList<>();
-        btns.add(getKeywordsActionButton());        
+        btns.add(getKeywordsActionButton());
         btns.add(getLogFileActionButton());
         btns.add(getMessageStyleActionButton());
         btns.add(getLogViewActionButton(MagicIcon.ARROW_UP));

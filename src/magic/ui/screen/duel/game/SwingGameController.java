@@ -150,6 +150,9 @@ public class SwingGameController implements IUIGameController {
 
         KeyEventAction.doAction(gamePanel, this::switchPlayerZone)
             .on(0, KeyEvent.VK_S);
+
+        KeyEventAction.doAction(gamePanel, this::showLogScreen)
+            .on(0, KeyEvent.VK_L);
     }
 
     private void setControlKeyMonitor() {
@@ -1097,6 +1100,10 @@ public class SwingGameController implements IUIGameController {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
             }
         }
+    }
+
+    private void showLogScreen() {
+        ScreenController.showGameLogScreen();
     }
 
 }
