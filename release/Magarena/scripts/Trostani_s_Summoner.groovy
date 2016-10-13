@@ -5,9 +5,9 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 2/2 white Knight creature token with vigilance, " +
+                "PN creates a 2/2 white Knight creature token with vigilance, " +
                 "a 3/3 green Centaur creature token, and " +
-                "a 4/4 green Rhino creature token with trample onto the battlefield."
+                "a 4/4 green Rhino creature token with trample."
             );
         }
         @Override

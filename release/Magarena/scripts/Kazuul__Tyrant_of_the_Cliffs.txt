@@ -8,4 +8,4 @@ cost={3}{R}{R}
 pt=5/4
 timing=main
 requires_groovy_code
-oracle=Whenever a creature an opponent controls attacks, if you're the defending player, put a 3/3 red Ogre creature token onto the battlefield unless that creature's controller pays {3}.
+oracle=Whenever a creature an opponent controls attacks, if you're the defending player, create a 3/3 red Ogre creature token unless that creature's controller pays {3}.

@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G}{U}{U}
 timing=counter
 requires_groovy_code
-oracle=Counter target spell. Put an X/X green Ooze creature token onto the battlefield, where X is that spell's converted mana cost.
+oracle=Counter target spell. Create an X/X green Ooze creature token, where X is that spell's converted mana cost.

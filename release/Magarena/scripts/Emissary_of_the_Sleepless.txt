@@ -7,6 +7,6 @@ subtype=Spirit
 cost={4}{W}
 pt=2/4
 ability=Flying;\
-        When SN enters the battlefield, if a creature died this turn, put a 1/1 white Spirit creature token with flying onto the battlefield.
+        When SN enters the battlefield, if a creature died this turn, create a 1/1 white Spirit creature token with flying.
 timing=main
-oracle=Flying\nWhen Emissary of the Sleepless enters the battlefield, if a creature died this turn, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Flying\nWhen Emissary of the Sleepless enters the battlefield, if a creature died this turn, create a 1/1 white Spirit creature token with flying.

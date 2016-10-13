@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{G}{G}
 timing=main
 requires_groovy_code
-oracle=Each player puts a 1/1 green Cat creature token onto the battlefield for each untapped Forest he or she controls.
+oracle=Each player creates a 1/1 green Cat creature token for each untapped Forest he or she controls.

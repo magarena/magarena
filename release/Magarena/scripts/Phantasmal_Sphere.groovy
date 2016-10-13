@@ -31,7 +31,7 @@
                 permanent,
                 TARGET_OPPONENT,
                 this,
-                "Target opponent\$ puts an X/X blue Orb creature token with flying onto the battlefield, "+
+                "Target opponent\$ creates an X/X blue Orb creature token with flying, "+
                 "where X is the number of +1/+1 counters on SN."
             );
         }

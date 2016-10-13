@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a colorless Construct artifact creature token named Twin onto the battlefield attacking. "+
+                "PN creates a colorless Construct artifact creature token named Twin that's attacking. "+
                 "Its power is equal to SN's power and its toughness is equal to SN's toughness. "+
                 "Sacrifice the token at end of combat."
             );

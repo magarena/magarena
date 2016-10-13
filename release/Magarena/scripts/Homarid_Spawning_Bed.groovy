@@ -17,7 +17,7 @@
                 source,
                 payedCost.getTarget(),
                 this,
-                "PN puts X 1/1 blue Camarid creature tokens onto the battlefield, where X is RN's converted mana cost."
+                "PN creates X 1/1 blue Camarid creature tokens, where X is RN's converted mana cost."
             );
         }
 

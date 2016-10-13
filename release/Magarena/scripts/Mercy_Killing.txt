@@ -6,4 +6,4 @@ type=Instant
 cost={2}{G/W}
 timing=token
 requires_groovy_code
-oracle=Target creature's controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that creature's power.
+oracle=Target creature's controller sacrifices it, then creates X 1/1 green and white Elf Warrior creature tokens, where X is that creature's power.

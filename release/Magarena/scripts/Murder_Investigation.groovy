@@ -8,7 +8,7 @@
                     permanent,
                     enchantedPermanent,
                     this,
-                    "PN puts X 1/1 white Soldier creature tokens onto the battlefield, where X is RN's power. (X="+
+                    "PN creates X 1/1 white Soldier creature tokens, where X is RN's power. (X="+
                     enchantedPermanent.getPower()+")"
                 ):
                 MagicEvent.NONE;

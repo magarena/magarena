@@ -17,7 +17,7 @@
                 payedCost.getX(),
                 this,
                 "Choose a color. Target opponent\$ exiles the top RN cards of his or her library. " +
-                "For each card of the chosen color exiled this way, put a 1/1 blue and black Faerie Rogue creature token with flying onto the battlefield."
+                "For each card of the chosen color exiled this way, create a 1/1 blue and black Faerie Rogue creature token with flying."
             );
         }
 

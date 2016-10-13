@@ -11,7 +11,7 @@ def UNTAPPED_FOREST_YOU_CONTROL = new MagicPermanentFilterImpl() {
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each player puts a 1/1 green Cat creature token onto the battlefield for each untapped Forest he or she controls."
+                "Each player creates a 1/1 green Cat creature token for each untapped Forest he or she controls."
             );
         }
         @Override

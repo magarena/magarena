@@ -8,7 +8,7 @@
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature with flying.\$ If that creature was blue or black, "+
-                "PN puts a 1/2 green Spider creature token with reach onto the battlefield."
+                "PN creates a 1/2 green Spider creature token with reach."
             );
         }
         @Override

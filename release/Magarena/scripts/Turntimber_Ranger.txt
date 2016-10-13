@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Scout,Ally
 cost={3}{G}{G}
 pt=2/2
-ability=Whenever SN or another Ally enters the battlefield under your control, you may put a 2/2 green Wolf creature token onto the battlefield~and put a +1/+1 counter on SN.
+ability=Whenever SN or another Ally enters the battlefield under your control, you may create a 2/2 green Wolf creature token~and put a +1/+1 counter on SN.
 timing=main
 oracle=Whenever Turntimber Ranger or another Ally enters the battlefield under your control, you may create a 2/2 green Wolf creature token. If you do, put a +1/+1 counter on Turntimber Ranger.

@@ -7,6 +7,6 @@ subtype=Zombie
 cost={2}{B}{B}
 pt=4/3
 ability=Deathtouch;\
-        Whenever SN deals combat damage to a player, that player discards a card~and you put a 2/2 black Zombie creature token onto the battlefield tapped.
+        Whenever SN deals combat damage to a player, that player discards a card~and you create a 2/2 black Zombie creature token that's tapped.
 timing=main
-oracle=Deathtouch\nWhenever Liliana's Reaver deals combat damage to a player, that player discards a card and you put a 2/2 black Zombie creature token onto the battlefield tapped.
+oracle=Deathtouch\nWhenever Liliana's Reaver deals combat damage to a player, that player discards a card and you create a 2/2 black Zombie creature token that's tapped.

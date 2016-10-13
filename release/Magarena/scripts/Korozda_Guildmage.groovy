@@ -19,7 +19,7 @@
                 source.getController(),
                 payedCost.getTarget(),
                 this,
-                "PN puts X 1/1 green Saproling creature tokens onto the battlefield, where X is the sacrificed creature\$'s toughness."
+                "PN creates X 1/1 green Saproling creature tokens, where X is the sacrificed creature\$'s toughness."
             );
         }
 

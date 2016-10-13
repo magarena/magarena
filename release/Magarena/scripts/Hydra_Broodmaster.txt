@@ -8,4 +8,4 @@ cost={4}{G}{G}
 pt=7/7
 timing=main
 requires_groovy_code
-oracle={X}{X}{G}: Monstrosity X.\nWhen Hydra Broodmaster becomes monstrous, put X X/X green Hydra creature tokens onto the battlefield.
+oracle={X}{X}{G}: Monstrosity X.\nWhen Hydra Broodmaster becomes monstrous, create X X/X green Hydra creature tokens.

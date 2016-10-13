@@ -6,4 +6,4 @@ type=Artifact
 cost={3}
 timing=artifact
 requires_groovy_code
-oracle={3}, {T}, Tap three untapped Humans you control: Destroy target creature. Its controller puts a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle={3}, {T}, Tap three untapped Humans you control: Destroy target creature. Its controller creates a 1/1 white Spirit creature token with flying.

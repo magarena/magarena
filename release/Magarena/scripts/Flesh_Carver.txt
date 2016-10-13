@@ -10,4 +10,4 @@ ability=Intimidate;\
         {1}{B}, Sacrifice another creature: Put two +1/+1 counters on SN.
 timing=main
 requires_groovy_code
-oracle=Intimidate\n{1}{B}, Sacrifice another creature: Put two +1/+1 counters on Flesh Carver.\nWhen Flesh Carver dies, put an X/X black Horror creature token onto the battlefield, where X is Flesh Carver's power.
+oracle=Intimidate\n{1}{B}, Sacrifice another creature: Put two +1/+1 counters on Flesh Carver.\nWhen Flesh Carver dies, create an X/X black Horror creature token, where X is Flesh Carver's power.

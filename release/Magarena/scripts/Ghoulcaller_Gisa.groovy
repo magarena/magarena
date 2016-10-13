@@ -18,7 +18,7 @@
                 source,
                 payedCost.getTarget(),
                 this,
-                "PN puts X 2/2 black Zombie creature tokens onto the battlefield, where X is RN's power."
+                "PN creates X 2/2 black Zombie creature tokens, where X is RN's power."
             );
         }
 

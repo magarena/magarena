@@ -7,4 +7,4 @@ cost={G}{W}
 timing=removal
 removal=1
 requires_groovy_code
-oracle=Destroy target enchantment. Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that enchantment's converted mana cost.
+oracle=Destroy target enchantment. Create X 1/1 green Saproling creature tokens, where X is that enchantment's converted mana cost.

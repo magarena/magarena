@@ -6,4 +6,4 @@ type=Enchantment
 cost={2}{W}{W}
 timing=enchantment
 requires_groovy_code
-oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, create a 1/1 white Spirit creature token with flying.

@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts two tokens that are copies of SN onto the battlefield."
+                    "PN creates two tokens that are copies of SN."
                 ) :
                 MagicEvent.NONE;
         }

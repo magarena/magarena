@@ -29,7 +29,7 @@ def choice = new MagicTargetChoice(UNTAPPED_HUMAN_YOU_CONTROL, "an untapped Huma
                 TARGET_CREATURE,
                 MagicDestroyTargetPicker.Destroy,
                 this,
-                "Destroy target creature.\$ Its controller puts a 1/1 white Spirit creature token with flying onto the battlefield."
+                "Destroy target creature.\$ Its controller creates a 1/1 white Spirit creature token with flying."
             );
         }
 

@@ -7,7 +7,7 @@
                 this,
                 "Destroy all creatures. They can't be regenerated. " +
                 "If seven or more cards are in PN's graveyard, instead destroy all creatures, " +
-                "then PN puts two 1/1 white Spirit creature tokens with flying onto the battlefield. " +
+                "then PN creates two 1/1 white Spirit creature tokens with flying. " +
                 "Creatures destroyed this way can't be regenerated."
             );
         }

@@ -20,9 +20,9 @@
                 TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN exiles target creature card from his or her graveyard\$, then puts a token onto the battlefield "+
+                "PN exiles target creature card from his or her graveyard\$, then creates a token "+
                 "that's a copy of that card except it's 1/1, it's a Spirit in addition to its other types, and it has "+
-                "flying. PN puts a black Zombie creature token onto the battlefield with power equal to that card's "+
+                "flying. PN creates a black Zombie creature token with power equal to that card's "+
                 "power and toughness equal to that card's toughness."
             );
         }

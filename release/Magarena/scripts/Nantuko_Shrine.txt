@@ -6,4 +6,4 @@ type=Enchantment
 cost={1}{G}{G}
 timing=main
 requires_groovy_code
-oracle=Whenever a player casts a spell, that player puts X 1/1 green Squirrel creature tokens onto the battlefield, where X is the number of cards in all graveyards with the same name as that spell.
+oracle=Whenever a player casts a spell, that player creates X 1/1 green Squirrel creature tokens, where X is the number of cards in all graveyards with the same name as that spell.

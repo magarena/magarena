@@ -7,7 +7,7 @@
                 TARGET_CREATURE,
                 MagicSacrificeTargetPicker.create(),
                 this,
-                "Target creature's\$ controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that that creature's power."
+                "Target creature's\$ controller sacrifices it, then creates X 1/1 green and white Elf Warrior creature tokens, where X is that that creature's power."
             );
         }
         @Override

@@ -7,4 +7,4 @@ cost={6}{B}{G}
 timing=removal
 removal=4
 requires_groovy_code
-oracle=Destroy target nonblack creature. It can't be regenerated. Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that creature's converted mana cost.
+oracle=Destroy target nonblack creature. It can't be regenerated. Create X 1/1 green Saproling creature tokens, where X is that creature's converted mana cost.

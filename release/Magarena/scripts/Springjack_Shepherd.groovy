@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 0/1 white Goat creature token onto the battlefield for each white mana symbol in the mana costs of permanents he or she controls."
+                "PN creates a 0/1 white Goat creature token for each white mana symbol in the mana costs of permanents he or she controls."
             );
         }
         @Override

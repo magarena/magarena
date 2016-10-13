@@ -8,7 +8,7 @@
                     permanent,
                     amount,
                     this,
-                    "PN puts X 1/1 black Thrull creature tokens onto the battlefield, where X is ("+spell.getName()+")'s converted mana cost. (X="+amount+")"
+                    "PN creates X 1/1 black Thrull creature tokens, where X is ("+spell.getName()+")'s converted mana cost. (X="+amount+")"
                 ):
                 MagicEvent.NONE;
         }

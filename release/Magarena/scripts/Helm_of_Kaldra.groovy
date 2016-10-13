@@ -25,7 +25,7 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
             return new MagicEvent(
                 source,
                 this,
-                "PN puts a legendary 4/4 colorless Avatar creature token named Kaldra onto the battlefield and attach those Equipment to it."
+                "PN creates a legendary 4/4 colorless Avatar creature token named Kaldra and attach those Equipment to it."
             );
         }
         @Override

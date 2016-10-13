@@ -23,7 +23,7 @@ def action = {
                 TARGET_PLAYER,
                 this,
                 "Target player\$ sacrifices a creature. " +
-                "If a Goblin is sacrificed this way, that player puts two 1/1 black Goblin Rogue creature tokens onto the battlefield, " +
+                "If a Goblin is sacrificed this way, that player creates two 1/1 black Goblin Rogue creature tokens, " +
                 "and those tokens gain haste until end of turn."
             );
         }

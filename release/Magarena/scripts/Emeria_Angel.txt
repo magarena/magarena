@@ -7,6 +7,6 @@ subtype=Angel
 cost={2}{W}{W}
 pt=3/3
 ability=Flying;\
-        Whenever a land enters the battlefield under your control, you may put a 1/1 white Bird creature token with flying onto the battlefield.
+        Whenever a land enters the battlefield under your control, you may create a 1/1 white Bird creature token with flying.
 timing=main
-oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may put a 1/1 white Bird creature token with flying onto the battlefield.
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may create a 1/1 white Bird creature token with flying.

@@ -8,7 +8,7 @@ subtype=Construct
 cost={X}{X}
 pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
-        When SN dies, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield for each +1/+1 counter on SN.;\
+        When SN dies, create a 1/1 colorless Thopter artifact creature token with flying for each +1/+1 counter on SN.;\
         {1}, {T}: Put a +1/+1 counter on SN.
 timing=main
-oracle=Hangarback Walker enters the battlefield with X +1/+1 counters on it.\nWhen Hangarback Walker dies, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield for each +1/+1 counter on Hangarback Walker.\n{1}, {T}: Put a +1/+1 counter on Hangarback Walker.
+oracle=Hangarback Walker enters the battlefield with X +1/+1 counters on it.\nWhen Hangarback Walker dies, create a 1/1 colorless Thopter artifact creature token with flying for each +1/+1 counter on Hangarback Walker.\n{1}, {T}: Put a +1/+1 counter on Hangarback Walker.

@@ -6,4 +6,4 @@ type=Sorcery
 cost={1}{W}
 timing=main
 requires_groovy_code
-oracle=Create two 1/1 white Human creature tokens.\nFateful hour — If you have 5 or less life, put five of those tokens onto the battlefield instead.
+oracle=Create two 1/1 white Human creature tokens.\nFateful hour — If you have 5 or less life, create five of those tokens instead.

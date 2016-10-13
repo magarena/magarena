@@ -5,8 +5,8 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts X 2/2 black Zombie creature tokens onto the " +
-                "battlefield, where X is half the number of Zombies he or she controls, rounded down"
+                "PN creates X 2/2 black Zombie creature tokens, " + 
+                "where X is half the number of Zombies he or she controls, rounded down"
             );
         }
         @Override

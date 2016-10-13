@@ -20,7 +20,7 @@ def choice = new MagicTargetChoice("a non-Ooze creature to sacrifice");
                 source,
                 payedCost.getTarget(),
                 this,
-                "PN puts an X/X green Ooze creature token onto the battlefield, where X is the sacrificed creature's power."
+                "PN creates an X/X green Ooze creature token, where X is the sacrificed creature's power."
             );
         }
 

@@ -9,4 +9,4 @@ ability=Equipped creature has first strike, trample, and haste.;\
         Equip {2}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has first strike, trample, and haste.\n{1}: If you control Equipment named Helm of Kaldra, Sword of Kaldra, and Shield of Kaldra, put a legendary 4/4 colorless Avatar creature token named Kaldra onto the battlefield and attach those Equipment to it.\nEquip {2}
+oracle=Equipped creature has first strike, trample, and haste.\n{1}: If you control Equipment named Helm of Kaldra, Sword of Kaldra, and Shield of Kaldra, create a legendary 4/4 colorless Avatar creature token named Kaldra and attach those Equipment to it.\nEquip {2}

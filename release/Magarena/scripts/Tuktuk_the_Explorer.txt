@@ -7,6 +7,6 @@ subtype=Goblin
 cost={2}{R}
 pt=1/1
 ability=Haste;\
-        When SN dies, put a legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned onto the battlefield.
+        When SN dies, create a legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned.
 timing=fmain
-oracle=Haste\nWhen Tuktuk the Explorer dies, put a legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned onto the battlefield.
+oracle=Haste\nWhen Tuktuk the Explorer dies, create a legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned.

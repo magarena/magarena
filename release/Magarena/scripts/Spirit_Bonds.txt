@@ -4,7 +4,7 @@ value=3.500
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=Whenever a nontoken creature enters the battlefield under your control, you may pay {W}. If you do, put a 1/1 white Spirit creature token with flying onto the battlefield.;\
+ability=Whenever a nontoken creature enters the battlefield under your control, you may pay {W}. If you do, create a 1/1 white Spirit creature token with flying.;\
         {1}{W}, Sacrifice a Spirit: Target non-Spirit creature gains indestructible until end of turn.
 timing=main
-oracle=Whenever a nontoken creature enters the battlefield under your control, you may pay {W}. If you do, put a 1/1 white Spirit creature token with flying onto the battlefield.\n{1}{W}, Sacrifice a Spirit: Target non-Spirit creature gains indestructible until end of turn.
+oracle=Whenever a nontoken creature enters the battlefield under your control, you may pay {W}. If you do, create a 1/1 white Spirit creature token with flying.\n{1}{W}, Sacrifice a Spirit: Target non-Spirit creature gains indestructible until end of turn.

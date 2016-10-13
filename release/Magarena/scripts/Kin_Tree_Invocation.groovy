@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN puts an X/X black and green Spirit Warrior creature token onto the battlefield, where X is the greatest toughness among creatures PN controls."
+                "PN creates an X/X black and green Spirit Warrior creature token, where X is the greatest toughness among creatures PN controls."
             );
         }
         @Override

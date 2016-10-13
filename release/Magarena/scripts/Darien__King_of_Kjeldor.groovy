@@ -9,7 +9,7 @@
                     new MagicSimpleMayChoice(),
                     amount,
                     this,
-                    "PN may\$ put RN 1/1 white Soldier creature tokens onto the battlefield."
+                    "PN may\$ create RN 1/1 white Soldier creature tokens."
                 ):
                 MagicEvent.NONE;
         }

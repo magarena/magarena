@@ -10,4 +10,4 @@ ability=Flying;\
         Vanishing 3
 timing=main
 requires_groovy_code
-oracle=Flying\nVanishing 3\nWhen Chronozoa dies, if it had no time counters on it, put two tokens that are copies of it onto the battlefield.
+oracle=Flying\nVanishing 3\nWhen Chronozoa dies, if it had no time counters on it, create two tokens that are copies of it.

@@ -8,7 +8,7 @@
                     permanent,
                     cardOnStack,
                     this,
-                    "Counter RN. ${cardOnStack.getController()} puts X 1/1 white and blue Bird creature tokens with flying onto the battlefield, " +
+                    "Counter RN. ${cardOnStack.getController()} creates X 1/1 white and blue Bird creature tokens with flying, " +
                     "where X is RN's converted mana cost. (${cardOnStack.getConvertedCost()})"
                 );
         }

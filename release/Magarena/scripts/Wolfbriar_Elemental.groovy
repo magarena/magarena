@@ -7,7 +7,7 @@
                     permanent,
                     payedCost.getKicker(),
                     this,
-                    "PN puts a 2/2 green Wolf creature token onto the battlefield for each time SN was kicked. (RN)"
+                    "PN creates a 2/2 green Wolf creature token for each time SN was kicked. (RN)"
                 ):
                 MagicEvent.NONE;
         }

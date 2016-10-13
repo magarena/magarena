@@ -10,7 +10,7 @@
                     enchanted.getController(),
                     amount,
                     this,
-                    "PN puts RN 1/1 green Squirrel creature tokens onto the battlefield."
+                    "PN creates RN 1/1 green Squirrel creature tokens."
                 ) :
                 MagicEvent.NONE;
         }

@@ -6,4 +6,4 @@ type=Instant
 cost={3}{G}
 timing=removal
 requires_groovy_code
-oracle=Destroy target creature with flying. If that creature was blue or black, put a 1/2 green Spider creature token with reach onto the battlefield.
+oracle=Destroy target creature with flying. If that creature was blue or black, create a 1/2 green Spider creature token with reach.

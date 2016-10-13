@@ -7,7 +7,7 @@
                     permanent,
                     otherPermanent,
                     this,
-                    "PN puts X 2/2 green Monkey creature tokens onto the battlefield, where X is RN's converted mana cost."
+                    "PN creates X 2/2 green Monkey creature tokens, where X is RN's converted mana cost."
                 ):
                 MagicEvent.NONE;
         }

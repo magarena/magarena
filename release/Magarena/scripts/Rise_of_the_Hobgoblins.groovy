@@ -8,7 +8,7 @@
                     new MagicPayManaCostChoice(MagicManaCost.create("{X}"))
                 ),
                 this,
-                "PN may pay\$ {X}\$. If PN does, he or she puts X 1/1 red and white Goblin Soldier creature tokens onto the battlefield."
+                "PN may pay\$ {X}\$. If PN does, he or she creates X 1/1 red and white Goblin Soldier creature tokens."
             );
         }
 

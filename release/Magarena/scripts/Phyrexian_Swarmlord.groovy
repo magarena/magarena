@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 1/1 green Insect creature token with infect onto the battlefield "+
+                "PN creates a 1/1 green Insect creature token with infect "+
                 "for each poison counter PN's opponents have."
             );
         }

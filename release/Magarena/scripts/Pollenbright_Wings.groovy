@@ -7,7 +7,7 @@
                     permanent,
                     damage.getDealtAmount(),
                     this,
-                    "PN puts ${damage.getDealtAmount()} 1/1 green Saproling creature tokens onto the battlefield."
+                    "PN creates ${damage.getDealtAmount()} 1/1 green Saproling creature tokens."
                 ):
                 MagicEvent.NONE;
         }

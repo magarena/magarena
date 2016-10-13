@@ -6,7 +6,7 @@
                 permanent,
                 this,
                 "Exile SN and each other player (${permanent.getController().getOpponent().getName()}) "+
-                "puts a 3/3 black Angel creature token with flying onto the battlefield."
+                "creates a 3/3 black Angel creature token with flying."
             );
         }
         @Override

@@ -8,5 +8,5 @@ cost={6}{G}{G}
 pt=6/6
 ability=Trample
 timing=main
-oracle=Trample\nWhenever Living Hive deals combat damage to a player, put that many 1/1 green Insect creature tokens onto the battlefield.
+oracle=Trample\nWhenever Living Hive deals combat damage to a player, create that many 1/1 green Insect creature tokens.
 requires_groovy_code

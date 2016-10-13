@@ -7,4 +7,4 @@ type=Instant
 cost={R}{G}
 timing=removal
 requires_groovy_code
-oracle=Destroy target artifact. It can't be regenerated. Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that artifact's converted mana cost.
+oracle=Destroy target artifact. It can't be regenerated. Create X 1/1 green Saproling creature tokens, where X is that artifact's converted mana cost.

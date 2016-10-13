@@ -6,7 +6,7 @@
                 cardOnStack,
                 TARGET_SPELL,
                 this,
-                "Counter target spell. Put an X/X green Ooze creature token onto the battlefield, where X is that spell's converted mana cost."
+                "Counter target spell. PN creates an X/X green Ooze creature token, where X is that spell's converted mana cost."
             );
         }
         @Override

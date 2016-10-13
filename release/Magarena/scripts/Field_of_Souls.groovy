@@ -8,7 +8,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a 1/1 white Spirit creature token with flying onto the battlefield."
+                    "PN creates a 1/1 white Spirit creature token with flying."
                 ) :
                 MagicEvent.NONE;
         }

@@ -9,4 +9,4 @@ pt=2/2
 ability=When you control seven or more Thrulls, sacrifice SN.
 timing=main
 requires_groovy_code
-oracle=Whenever you cast a creature spell, put X 1/1 black Thrull creature tokens onto the battlefield, where X is that spell's converted mana cost.\nWhen you control seven or more Thrulls, sacrifice Endrek Sahr, Master Breeder.
+oracle=Whenever you cast a creature spell, create X 1/1 black Thrull creature tokens, where X is that spell's converted mana cost.\nWhen you control seven or more Thrulls, sacrifice Endrek Sahr, Master Breeder.

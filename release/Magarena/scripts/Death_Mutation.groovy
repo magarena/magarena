@@ -9,7 +9,7 @@
                 this,
                 "Destroy target nonblack creature\$. " +
                 "It can't be regenerated. " +
-                "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that creature's converted mana cost."
+                "Create X 1/1 green Saproling creature tokens, where X is that creature's converted mana cost."
             );
         }
         @Override

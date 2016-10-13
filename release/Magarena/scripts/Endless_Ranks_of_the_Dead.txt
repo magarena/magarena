@@ -6,4 +6,4 @@ type=Enchantment
 cost={2}{B}{B}
 timing=enchantment
 requires_groovy_code
-oracle=At the beginning of your upkeep, put X 2/2 black Zombie creature tokens onto the battlefield, where X is half the number of Zombies you control, rounded down.
+oracle=At the beginning of your upkeep, create X 2/2 black Zombie creature tokens, where X is half the number of Zombies you control, rounded down.

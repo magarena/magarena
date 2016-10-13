@@ -10,4 +10,4 @@ pt=3/4
 ability=Reach
 timing=main
 requires_groovy_code
-oracle=Reach\nWhen Seed Guardian dies, put an X/X green Elemental creature token onto the battlefield, where X is the number of creature cards in your graveyard.
+oracle=Reach\nWhen Seed Guardian dies, create an X/X green Elemental creature token, where X is the number of creature cards in your graveyard.

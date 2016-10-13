@@ -5,8 +5,8 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN exiles all creatures he or she controls. Then puts that many 5/5 " +
-                "red Dragon creature tokens with flying onto the battlefield."
+                "PN exiles all creatures he or she controls. " + 
+                "Then creates that many 5/5 red Dragon creature tokens with flying."
             );
         }
         @Override

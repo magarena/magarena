@@ -8,4 +8,4 @@ cost={4}{W}{W}
 pt=3/3
 timing=main
 requires_groovy_code
-oracle=Whenever you're dealt damage, you may put that many 1/1 white Soldier creature tokens onto the battlefield.
+oracle=Whenever you're dealt damage, you may create that many 1/1 white Soldier creature tokens.

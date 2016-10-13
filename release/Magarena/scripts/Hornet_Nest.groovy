@@ -8,7 +8,7 @@
                     permanent.getController(),
                     damage.getDealtAmount(),
                     this,
-                    "PN puts RN 1/1 green Insect creature tokens with flying and deathtouch onto the battlefield."
+                    "PN creates RN 1/1 green Insect creature tokens with flying and deathtouch."
                 ) :
                 MagicEvent.NONE;
         }

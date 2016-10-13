@@ -9,4 +9,4 @@ pt=4/4
 ability=Whenever a Forest enters the battlefield, green creatures you control get +1/+1 and gain trample until end of turn.
 timing=main
 requires_groovy_code
-oracle=Whenever a Forest enters the battlefield, green creatures you control get +1/+1 and gain trample until end of turn.\nGrandeur — Discard another card named Baru, Fist of Krosa: Put an X/X green Wurm creature token onto the battlefield, where X is the number of lands you control.
+oracle=Whenever a Forest enters the battlefield, green creatures you control get +1/+1 and gain trample until end of turn.\nGrandeur — Discard another card named Baru, Fist of Krosa: Create an X/X green Wurm creature token, where X is the number of lands you control.

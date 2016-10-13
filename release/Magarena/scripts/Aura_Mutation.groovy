@@ -8,7 +8,7 @@
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target enchantment\$. " +
-                "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that enchantment's converted mana cost."
+                "PN creates X 1/1 green Saproling creature tokens, where X is that enchantment's converted mana cost."
             );
         }
         @Override

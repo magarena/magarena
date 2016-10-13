@@ -5,7 +5,7 @@ def PutHydra = new MagicTrigger<Integer>() {
             perm,
             X,
             this,
-            "Put RN RN/RN green Hydra creature tokens onto the battlefield."
+            "PN creates RN RN/RN green Hydra creature tokens."
         );
     }
     @Override

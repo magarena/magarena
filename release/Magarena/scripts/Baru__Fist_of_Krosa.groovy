@@ -26,7 +26,7 @@ def A_CARD_NAMED_BARU = new MagicTargetChoice(
             return new MagicEvent(
                 source,
                 this,
-                "PN puts an X/X green Wurm creature token onto the battlefield, where X is the number of lands he or she controls."
+                "PN creates an X/X green Wurm creature token, where X is the number of lands he or she controls."
             );
         }
         @Override

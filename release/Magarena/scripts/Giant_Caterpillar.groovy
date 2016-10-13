@@ -7,7 +7,7 @@ def DelayedTrigger = {
             return new MagicEvent(
                 game.createDelayedSource(staleSource, stalePlayer),
                 this,
-                "PN puts a 1/1 green Insect creature token with flying named Butterfly onto the battlefield."
+                "PN creates a 1/1 green Insect creature token with flying named Butterfly."
             );
         }
         @Override
@@ -39,7 +39,7 @@ def DelayedTrigger = {
             return new MagicEvent(
                 source,
                 this,
-                "PN puts a 1/1 green Insect creature token with flying named Butterfly onto the battlefield "+
+                "PN creates a 1/1 green Insect creature token with flying named Butterfly "+
                 "at the beginning of the next end step."
             );
         }

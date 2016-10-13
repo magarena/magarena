@@ -8,4 +8,4 @@ cost={1}{G}
 timing=aura
 enchant=can't block,pos creature
 requires_groovy_code
-oracle=Enchant creature\nWhenever enchanted creature is dealt damage, its controller puts that many 1/1 green Squirrel creature tokens onto the battlefield.
+oracle=Enchant creature\nWhenever enchanted creature is dealt damage, its controller creates that many 1/1 green Squirrel creature tokens.

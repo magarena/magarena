@@ -10,7 +10,7 @@
                 ),
                 this,
                 "PN may\$ pay {2}{G}\$. If PN does, he or she chooses a color\$, "+
-                "then puts a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."
+                "then creates a 1/1 green Saproling creature token for each permanent of that color."
             );
         }
         @Override

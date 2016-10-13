@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts an X/X green Elemental creature token onto the battlefield, where X is the number of creature cards in PN's graveyard."
+                "PN creates an X/X green Elemental creature token, where X is the number of creature cards in PN's graveyard."
             );
         }
 

@@ -9,4 +9,4 @@ pt=5/4
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample\nWhenever Rapacious One deals combat damage to a player, put that many 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Trample\nWhenever Rapacious One deals combat damage to a player, create that many 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."

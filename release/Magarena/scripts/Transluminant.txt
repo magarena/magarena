@@ -8,4 +8,4 @@ cost={1}{G}
 pt=2/2
 timing=main
 requires_groovy_code
-oracle={W}, Sacrifice Transluminant: Put a 1/1 white Spirit creature token with flying onto the battlefield at the beginning of the next end step.
+oracle={W}, Sacrifice Transluminant: Create a 1/1 white Spirit creature token with flying at the beginning of the next end step.

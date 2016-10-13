@@ -5,9 +5,9 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put a 1/1 green Snake creature token, " +
-                    "a 2/2 green Wolf creature token and " +
-                    "a 3/3 green Elephant creature token onto the battlefield."
+                "PN creates a 1/1 green Snake creature token, " +
+                           "a 2/2 green Wolf creature token and " +
+                           "a 3/3 green Elephant creature token."
             );
         }
         @Override
