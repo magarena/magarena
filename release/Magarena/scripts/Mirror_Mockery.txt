@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
-        Whenever enchanted creature attacks, you may put a token onto the battlefield that's a copy of that creature. Exile that token at end of combat.
+        Whenever enchanted creature attacks, you may create a token that's a copy of that creature. Exile that token at end of combat.
 timing=aura
 enchant=copy,creature
-oracle=Enchant creature\nWhenever enchanted creature attacks, you may put a token onto the battlefield that's a copy of that creature. Exile that token at end of combat.
+oracle=Enchant creature\nWhenever enchanted creature attacks, you may create a token that's a copy of that creature. Exile that token at end of combat.

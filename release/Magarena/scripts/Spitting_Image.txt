@@ -6,5 +6,5 @@ type=Sorcery
 cost={4}{G/U}{G/U}
 timing=main
 ability=Retrace
-effect=Put a token that's a copy of target creature onto the battlefield.
-oracle=Put a token that's a copy of target creature onto the battlefield.\nRetrace
+effect=Create a token that's a copy of target creature.
+oracle=Create a token that's a copy of target creature.\nRetrace

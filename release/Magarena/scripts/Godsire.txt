@@ -7,6 +7,6 @@ subtype=Beast
 cost={4}{R}{G}{G}{W}
 pt=8/8
 ability=Vigilance;\
-        {T}: Put an 8/8 Beast creature token that's red, green, and white onto the battlefield.
+        {T}: Create an 8/8 red, green, and white Beast creature token.
 timing=main
-oracle=Vigilance\n{T}: Put an 8/8 Beast creature token that's red, green, and white onto the battlefield.
+oracle=Vigilance\n{T}: Create an 8/8 Beast creature token that's red, green, and white.

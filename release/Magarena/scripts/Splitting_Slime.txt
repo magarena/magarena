@@ -8,6 +8,6 @@ subtype=Ooze
 cost={3}{G}{G}
 pt=3/3
 ability={4}{G}{G}: Monstrosity 3.;\
-        When SN becomes monstrous, put a token onto the battlefield that's a copy of SN.
+        When SN becomes monstrous, create a token that's a copy of SN.
 timing=main
-oracle={4}{G}{G}: Monstrosity 3.\nWhen Splitting Slime becomes monstrous, put a token onto the battlefield that's a copy of Splitting Slime.
+oracle={4}{G}{G}: Monstrosity 3.\nWhen Splitting Slime becomes monstrous, create a token that's a copy of Splitting Slime.

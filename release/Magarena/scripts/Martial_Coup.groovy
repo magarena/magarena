@@ -6,7 +6,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put "+x+" 1/1 white Soldier creature tokens onto the battlefield." +
+                "PN creates "+x+" 1/1 white Soldier creature tokens onto the battlefield." +
                 (x >= 5 ? " Destroy all other creatures.":"")
             );
         }

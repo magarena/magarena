@@ -5,7 +5,7 @@ def Duplicate = new AtYourUpkeepTrigger() {
             new MagicEvent(
                 permanent,
                 this,
-                "PN puts a token onto the battlefield that's a copy of SN."
+                "PN creates a token that's a copy of SN."
             ):
             MagicEvent.NONE;
     }
@@ -36,7 +36,7 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
                 MagicCopyPermanentPicker.create(),
                 this,
                 "PN may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " +
-                "except it gains \"At the beginning of your upkeep, if this creature isn't a token, put a token onto the battlefield that's a copy of this creature.\""
+                "except it gains \"At the beginning of your upkeep, if this creature isn't a token, create a token that's a copy of this creature.\""
             );
         }
 

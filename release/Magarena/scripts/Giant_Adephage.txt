@@ -7,6 +7,6 @@ subtype=Insect
 cost={5}{G}{G}
 pt=7/7
 ability=Trample;\
-        Whenever SN deals combat damage to a player, put a token onto the battlefield that's a copy of SN.
+        Whenever SN deals combat damage to a player, create a token that's a copy of SN.
 timing=main
-oracle=Trample\nWhenever Giant Adephage deals combat damage to a player, put a token onto the battlefield that's a copy of Giant Adephage.
+oracle=Trample\nWhenever Giant Adephage deals combat damage to a player, create a token that's a copy of Giant Adephage.

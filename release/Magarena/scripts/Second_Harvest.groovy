@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "For each token PN controls, he or she puts a token onto the battlefield that's a copy of that permanent."
+                "For each token PN controls, he or she creates a token that's a copy of that permanent."
             );
         }
         @Override

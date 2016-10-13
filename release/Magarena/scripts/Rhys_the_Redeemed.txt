@@ -9,4 +9,4 @@ pt=1/1
 ability={2}{G/W}, {T}: Create a 1/1 green and white Elf Warrior creature token.
 timing=main
 requires_groovy_code
-oracle={2}{G/W}, {T}: Create a 1/1 green and white Elf Warrior creature token.\n{4}{G/W}{G/W}, {T}: For each creature token you control, put a token that's a copy of that creature onto the battlefield.
+oracle={2}{G/W}, {T}: Create a 1/1 green and white Elf Warrior creature token.\n{4}{G/W}{G/W}, {T}: For each creature token you control, create a token that's a copy of that creature.

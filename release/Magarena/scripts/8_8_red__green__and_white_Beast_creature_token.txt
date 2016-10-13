@@ -1,4 +1,4 @@
-name=8/8 Beast creature token that's red, green, and white
+name=8/8 red, green, and white Beast creature token
 token=Beast
 image=http://magiccards.info/extras/token/shards-of-alara/beast.jpg
 value=3

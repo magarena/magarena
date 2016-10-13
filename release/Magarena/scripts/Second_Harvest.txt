@@ -7,4 +7,4 @@ cost={2}{G}{G}
 ability=Cast SN with AI only if you control a token.
 timing=token
 requires_groovy_code
-oracle=For each token you control, put a token onto the battlefield that's a copy of that permanent.
+oracle=For each token you control, create a token that's a copy of that permanent.

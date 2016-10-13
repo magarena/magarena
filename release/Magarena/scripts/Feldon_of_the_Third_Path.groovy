@@ -18,7 +18,7 @@
                 TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN puts a token onto the battlefield that's a copy of target creature card in his or her graveyard\$, "+
+                "PN creates a token that's a copy of target creature card in his or her graveyard\$, "+
                 "except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step."
             );
         }

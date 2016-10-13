@@ -7,7 +7,7 @@
                 TARGET_CREATURE,
                 MagicCopyPermanentPicker.create(),
                 this,
-                "Put a token onto the battlefield that's a copy of target creature\$. " +
+                "PN creates a token that's a copy of target creature\$. " +
                 "If SN was kicked, create five of those tokens instead."
             );
         }

@@ -9,4 +9,4 @@ pt=0/0
 ability=Cast SN with AI only if there is a creature on the battlefield.
 timing=main
 requires_groovy_code
-oracle=You may have Progenitor Mimic enter the battlefield as a copy of any creature on the battlefield except it gains "At the beginning of your upkeep, if this creature isn't a token, put a token onto the battlefield that's a copy of this creature."
+oracle=You may have Progenitor Mimic enter the battlefield as a copy of any creature on the battlefield except it gains "At the beginning of your upkeep, if this creature isn't a token, create a token that's a copy of this creature."

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield."
+                "For each creature token on the battlefield, its controller creates a token that's a copy of that creature."
             );
         }
         @Override

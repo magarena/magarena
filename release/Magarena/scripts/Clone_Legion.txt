@@ -6,4 +6,4 @@ type=Sorcery
 cost={7}{U}{U}
 timing=main
 requires_groovy_code
-oracle=For each creature target player controls, put a token onto the battlefield that's a copy of that creature.
+oracle=For each creature target player controls, create a token that's a copy of that creature.

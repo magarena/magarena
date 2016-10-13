@@ -8,6 +8,6 @@ subtype=Goblin,Shaman
 cost={2}{R}{R}{R}
 pt=2/2
 ability=Haste;\
-        {T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.
+        {T}: Create a token that's a copy of target nonlegendary creature you control. That token has haste. Sacrifice it at the beginning of the next end step.
 timing=fmain
-oracle=Haste\n{T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.
+oracle=Haste\n{T}: Create a token that's a copy of target nonlegendary creature you control. That token has haste. Sacrifice it at the beginning of the next end step.

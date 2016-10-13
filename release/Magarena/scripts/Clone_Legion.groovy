@@ -6,7 +6,7 @@
                 cardOnStack,
                 TARGET_PLAYER_CONTROLS_CREATURE,
                 this,
-                "For each creature target player\$ controls, PN puts a token onto the battlefield that's a copy of that creature."
+                "For each creature target player\$ controls, PN creates a token that's a copy of that creature."
             );
         }
         @Override

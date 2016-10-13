@@ -7,6 +7,6 @@ subtype=Rat
 cost={1}{B}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of Rats you control.;\
-        {2}{B}, Discard a card: Put a token onto the battlefield that's a copy of SN.
+        {2}{B}, Discard a card: Create a token that's a copy of SN.
 timing=main
-oracle=Pack Rat's power and toughness are each equal to the number of Rats you control.\n{2}{B}, Discard a card: Put a token onto the battlefield that's a copy of Pack Rat.
+oracle=Pack Rat's power and toughness are each equal to the number of Rats you control.\n{2}{B}, Discard a card: Create a token that's a copy of Pack Rat.

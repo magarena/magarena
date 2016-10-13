@@ -15,7 +15,7 @@ def blocking = {
                 cardOnStack,
                 this,
                 "For each creature attacking PN or a planeswalker he or she controls, "+
-                "PN puts a token that's a copy of that creature onto the battlefield blocking that creature. "+
+                "PN creates a token that's a copy of that creature and that's blocking that creature. "+
                 "Exile those tokens at end of combat."
             );
         }
