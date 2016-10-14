@@ -30,7 +30,7 @@ public enum MagicIcon {
     INSTANTS("ui/w_instants.png"),
     KEY("ui/w_key16.png"),
     LANDS("ui/w_lands.png"),
-    LAYOUT("ui/w-layout.png"),
+    LAYOUT("ui/w_layout32D.png"),
     LEGAL("ui/card_legal.png"),
     LIFE("ui/w_life.png"),
     LOG_FILE("ui/w_log16.png"),

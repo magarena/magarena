@@ -176,6 +176,9 @@ public class GeneralConfig {
     private static final String CUSTOM_SCROLLBAR = "customScrollBar";
     private boolean isCustomScrollBar = true;
 
+    private static final String KEYWORDS_SCREEN = "keywordsScreen";
+    private String keywordsScreen;
+
     private boolean isStatsVisible = true;
 
     private GeneralConfig() { }
@@ -585,6 +588,7 @@ public class GeneralConfig {
         gameVolume = Integer.parseInt(properties.getProperty(GAME_VOLUME, "" + gameVolume));
         imagesOnDemand = Boolean.parseBoolean(properties.getProperty(IMAGES_ON_DEMAND, "" + imagesOnDemand));
         isCustomScrollBar = Boolean.parseBoolean(properties.getProperty(CUSTOM_SCROLLBAR, "" + isCustomScrollBar));
+        keywordsScreen = properties.getProperty(KEYWORDS_SCREEN, "");
     }
 
     public void load() {
@@ -638,12 +642,13 @@ public class GeneralConfig {
         properties.setProperty(GAME_VOLUME, String.valueOf(gameVolume));
         properties.setProperty(IMAGES_ON_DEMAND, String.valueOf(imagesOnDemand));
         properties.setProperty(CUSTOM_SCROLLBAR, String.valueOf(isCustomScrollBar));
+        properties.setProperty(KEYWORDS_SCREEN, keywordsScreen);
     }
 
     public void save() {
-        final Properties properties=new SortedProperties();
+        final Properties properties = new SortedProperties();
         save(properties);
-        try { //save config
+        try {
             FileIO.toFile(getConfigFile(), properties, "General configuration");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save general config");
@@ -722,6 +727,14 @@ public class GeneralConfig {
 
     public boolean isCustomScrollBar() {
         return isCustomScrollBar;
+    }
+
+    public void setKeywordsSettings(String text) {
+        keywordsScreen = text;
+    }
+
+    public String getKeywordsSettings() {
+        return keywordsScreen;
     }
 
 }

@@ -18,6 +18,7 @@ import magic.ui.ScreenController;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.button.LayoutButton;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {
@@ -232,4 +233,12 @@ public class MenuButton extends JButton {
             }
         });
     }
+
+    /**
+    * Action bar button used to change screen layout.
+    */
+    public static MenuButton buildLayoutButton(final Runnable action) {
+        return new LayoutButton(action);
+    }
+
 }
