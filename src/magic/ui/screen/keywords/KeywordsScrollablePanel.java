@@ -4,8 +4,6 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
-import magic.data.KeywordDefinitions;
-import magic.data.KeywordDefinitions.KeywordDefinition;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -24,8 +22,8 @@ class KeywordsScrollablePanel extends JPanel implements Scrollable {
     }
 
     private void refreshKeywords() {
-        for (final KeywordDefinition keywordDefinition : KeywordDefinitions.getKeywordDefinitions()) {
-            add(new KeywordPanel(keywordDefinition), "w 10:100%, top");
+        for (final Keyword keywordDefinition : KeywordsHelper.loadKeywordsFileToSortedArray())  {
+            add(new KeywordPanelA(keywordDefinition), "w 10:100%, top");
         }
     }
 

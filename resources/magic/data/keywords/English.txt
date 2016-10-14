@@ -1,74 +1,125 @@
+# 
+# Magarena keywords glossary.
+#
+# A blank like will be ignored.
+# A line starting with...
+# '#' will be ignored.
+# '*' is the keyword definition.
+# '@' is a list of card names (semi-colon delimiter) demonstrating the keyword.
+# none of the above is assumed to be the keyword description.
+#
+
 *Absorb N
 If a source would deal damage to this creature, prevent N of that damage.
+@Lymph Sliver
+
 *Affinity for [...]
 This spell costs you {1} less to cast for each [...] you control.
+@Frogmite;Razor Golem
+
 *Amplify N
 As this object enters the battlefield, reveal any number of cards from your hand that share a creature type with it. This permanent enters the battlefield with N +1/+1 counters on it for each card revealed this way. You can't reveal this card or any other cards that are entering the battlefield at the same time as this card.
+@Kilnmouth Dragon
+
 *Annihilator N
 Whenever this creature attacks, defending player sacrifices N permanents.
+@Artisan of Kozilek;Ulamog, the Infinite Gyre;Eldrazi Conscription
+
 *Aura Swap [cost]
 [cost]: You may exchange this permanent with an Aura card in your hand.
+@Arcanum Wings
+
 *Awaken N—[cost]
 You may pay [cost] rather than pay this spell's mana cost as you cast this spell.
 If this spell's awaken cost was paid, put N +1/+1 counters on target land you control. That land becomes a 0/0 Elemental creature with haste. It's still a land.
+@Earthen Arms
+
 *Banding
 Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.
+@Timber Wolves
+
 *Bands with other [...]
 Any creatures named [...] can attack in a band as long as at least one has "bands with other [...]" Bands are blocked as a group. If at least two creatures named [...] you control, one of which has "bands with other [...]," are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.
+@Adventurers' Guildhouse
+
 *Battle Cry
 Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.
+
 *Bestow [cost]
 You may cast this card by paying [cost] rather than its mana cost.
 If you chose to pay this spell’s bestow cost, it becomes an Aura enchantment and gains enchant creature. These effects last until one of two things happens: this spell has an illegal target as it resolves or the permanent this spell becomes, becomes unattached.
+
 *Bloodthirst N
 If an opponent was dealt damage this turn, this permanent enters the battlefield with N +1/+1 counters on it.
+
 *Bloodthirst X
 This permanent enters the battlefield with X +1/+1 counters on it, where X is the total damage your opponents have been dealt this turn.
+
 *Bushido N
 Whenever this creature blocks or becomes blocked, it gets +N/+N until end of turn.
+
 *Buyback [cost]
 You may pay an additional [cost] as you cast this spell.
 If the buyback cost was paid, put this spell into its owner’s hand instead of into that player’s graveyard as it resolves.
+
 *Cascade
 When you cast this spell, exile cards from the top of your library until you exile a nonland card whose converted mana cost is less than this spell’s converted mana cost. You may cast that card without paying its mana cost. Then put all cards exiled this way that weren’t cast on the bottom of your library in a random order.
+
 *Champion an [...]
 When this permanent enters the battlefield, sacrifice it unless you exile another [...] you control.
 When this permanent leaves the battlefield, return the exiled card to the battlefield under its owner’s control.
+
 *Changeling
 This object is every creature type at all times.
+
 *Cipher
 Then you may exile this spell card encoded on a creature you control. Whenever that creature deals combat damage to a player, its controller may cast a copy of this card without paying its mana cost.
+
 *Conspire
 As an additional cost to cast this spell, you may tap two untapped creatures you control that each share a color with it.
 When you cast this spell, if its conspire cost was paid, copy it. If the spell has any targets, you may choose new targets for the copy.
+
 *Convoke
 For each colored mana in this spell’s total cost, you may tap an untapped creature of that color you control rather than pay that mana. For each generic mana in this spell’s total cost, you may tap an untapped creature you control rather than pay that mana.
+
 *Crew N
 Tap any number of creatures you control with total power N or more: This vehicle becomes an artifact creature until end of turn.
+
 *Cumulative Upkeep [cost]
 At the beginning of your upkeep, if this permanent is on the battlefield, put an age counter on this permanent. Then you may pay [cost] for each age counter on it. If you don’t, sacrifice it.
+
 *Cycling [cost]
 [cost], Discard this card: Draw a card.
+
 *Dash [cost]
 You may cast this card by paying [cost] rather that its mana cost.
 If this spell’s dash cost was paid, return the permanent this spell becomes to its owner’s hand at the beginning of the next end step.
 As long as this permanent’s dash cost was paid, it has haste.
+
 *Deathtouch
 Any amount of damage this deals to a creature is enough to destroy it.
+
 *Defender
 This creature can't attack.
+
 *Delve
 For each generic mana in this spell’s total cost, you may exile a card from your graveyard rather than pay that mana.
+
 *Dethrone
 Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on this creature.
+
 *Devoid
 This object is colorless.
+
 *Devour N
 As this object enters the battlefield, you may sacrifice any number of creatures. This permanent enters the battlefield with N +1/+1 counters on it for each creature sacrificed this way.
+
 *Double Strike
 This creature deals both first-strike and regular combat damage.
+
 *Dredge N
 As long as you have at least N cards in your library, if you would draw a card, you may instead put N cards from the top of your library into your graveyard and return this card from your graveyard to your hand.
+
 *Echo [cost]
 At the beginning of your upkeep, if this permanent came under your control since the beginning of your last upkeep, sacrifice it unless you pay [cost].
 *Emerge [cost]
@@ -128,8 +179,11 @@ This permanent enters the battlefield with N +1/+1 counters on it.
 Whenever another creature enters the battlefield, if this permanent has a +1/+1 counter on it, you may move a +1/+1 counter from this permanent onto that creature.
 *Gravestorm
 When you cast this spell, put a copy of it onto the stack for each permanent that was put into a graveyard from battlefield this turn. If the spell has any targets, you may choose new targets for any of the copies.
+
 *Haste
 This creature can attack and {T} as soon as it comes under your control.
+@Ankle Shanker;Lightning Elemental
+
 *Haunt
 When this creature dies, exile it haunting target creature.
 *Hexproof

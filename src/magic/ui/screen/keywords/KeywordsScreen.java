@@ -27,9 +27,9 @@ public class KeywordsScreen extends HeaderFooterScreen {
     }
     
     private void setContent() {
-        setMainContent(ScreenLayout.getLayout() == ScreenLayout.Layout1
+        setMainContent(ScreenLayout.getLayout() == ScreenLayout.Layout_A
                 ? new ContentPanelA()
-                : new ContentPanelA()
+                : new ContentPanelB()
         );
         clearFooterButtons();
         addToFooter(MenuButton.buildLayoutButton(this::doChangeLayout));                
