@@ -4,47 +4,32 @@ import java.awt.event.ActionEvent;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.data.MagicSetDefinitions;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
-import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
-import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
 import magic.ui.MagicLogs;
-import magic.ui.screen.deck.editor.DeckEditorScreenPanel;
-import magic.ui.screen.deck.editor.IDeckEditorListener;
-import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.screen.interfaces.IOptionsMenu;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.interfaces.IWikiPage;
-import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.deck.DeckStatusPanel;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.utility.MagicFileSystem;
 import magic.ui.WikiPage;
+import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
-public class DeckEditorScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer, IDeckEditorListener {
+public class DeckEditorScreen extends HeaderFooterScreen
+    implements IDeckConsumer, IDeckEditorListener {
 
     // translatable strings
     private static final String _S1 = "Cancel";
@@ -71,23 +56,72 @@ public class DeckEditorScreen
     private DeckEditorScreenPanel screenContent;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
+    private MagicDeck deck;
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorScreen(final MagicDeck deck) {
+        super(UiString.get(_S14));
         isStandalone = false;
-        setScreenContent(deck);
-    }
-    // CTR : open Deck Editor in standalone mode starting with an empty deck.
-    public DeckEditorScreen() {
-        isStandalone = true;
-        setScreenContent(getMostRecentEditedDeck());
+        this.deck = deck;
+        useLoadingScreen(this::initUI);
     }
 
-    private void setScreenContent(final MagicDeck deck) {
+    // CTR : open Deck Editor in standalone mode starting with an empty deck.
+    public DeckEditorScreen() {
+        super(UiString.get(_S14));
+        isStandalone = true;
+        this.deck = getMostRecentEditedDeck();
+        useLoadingScreen(this::initUI);
+    }
+
+    @Override
+    protected boolean isCardDataRequired() {
+        return true;
+    }
+
+    private void initUI() {
         screenContent = new DeckEditorScreenPanel(deck, this);
         screenContent.setIsStandalone(isStandalone);
         setDeck(deck == null ? new MagicDeck() : deck);
-        setContent(screenContent);
+        setMainContent(screenContent);
+        setHeaderContent(deckStatusPanel);
+        setLeftFooter(getLeftAction());
+        setRightFooter(getRightAction());
+        setFooterButtons();
+        setWikiPage(WikiPage.DECK_EDITOR);
+    }
+    
+    private void showSampleHand() {
+        if (screenContent.getDeck().size() >= 7) {
+            ScreenController.showSampleHandScreen(screenContent.getDeck());
+        } else {
+            showInvalidActionMessage(UiString.get(_S10));
+        }
+    }    
+    
+    private void showTiledImagesView() {
+        if (screenContent.getDeck().size() > 0) {
+            ScreenController.showDeckView(screenContent.getDeck());
+        } else {
+            showInvalidActionMessage(UiString.get(_S13));
+        }
+    }
+
+    private void setFooterButtons() {
+        addToFooter(
+                MenuButton.build(this::loadDeck,
+                        MagicIcon.OPEN, UiString.get(_S4), UiString.get(_S5)
+                ),
+                MenuButton.build(this::saveDeck,
+                        MagicIcon.SAVE, UiString.get(_S6), UiString.get(_S7)
+                ),
+                MenuButton.build(this::showSampleHand,
+                        MagicIcon.HAND_ICON, UiString.get(_S8), UiString.get(_S9)
+                ),
+                MenuButton.build(this::showTiledImagesView,
+                        MagicIcon.TILED, UiString.get(_S11), UiString.get(_S12)
+                )
+        );
     }
 
     private static MagicDeck getMostRecentEditedDeck() {
@@ -112,13 +146,11 @@ public class DeckEditorScreen
         }
     }
 
-    @Override
     public MenuButton getLeftAction() {
         final String caption = (!isStandalone ? UiString.get(_S1) : UiString.get(_S2));
         return MenuButton.getCloseScreenButton(caption);
     }
 
-    @Override
     public MenuButton getRightAction() {
         if (!isStandalone) {
             return new MenuButton(UiString.get(_S3), new AbstractAction() {
@@ -134,73 +166,9 @@ public class DeckEditorScreen
         }
     }
 
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.OPEN),
-                        UiString.get(_S4), UiString.get(_S5),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                loadDeck();
-                            }
-                        })
-                );
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.SAVE),
-                        UiString.get(_S6), UiString.get(_S7),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                saveDeck();
-                            }
-                        })
-                );
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.HAND_ICON),
-                        UiString.get(_S8), UiString.get(_S9),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck().size() >= 7) {
-                                    ScreenController.showSampleHandScreen(screenContent.getDeck());
-                                } else {
-                                    showInvalidActionMessage(UiString.get(_S10));
-                                }
-                            }
-                        })
-                );
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.TILED),
-                        UiString.get(_S11), UiString.get(_S12),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck().size() > 0) {
-                                    ScreenController.showDeckView(screenContent.getDeck());
-                                } else {
-                                    showInvalidActionMessage(UiString.get(_S13));
-                                }
-                            }
-                        })
-                );
-
-        return buttons;
-    }
 
     private void showInvalidActionMessage(final String message) {
         ScreenController.showWarningMessage(message);
-    }
-
-    @Override
-    public String getScreenCaption() {
-        return UiString.get(_S14);
-    }
-
-    @Override
-    public void showOptionsMenuOverlay() {
-        new ScreenOptions(getFrame());
     }
 
     public void createNewEmptyDeck() {
@@ -235,7 +203,7 @@ public class DeckEditorScreen
                     ScreenController.showWarningMessage(UiString.get(_S16));
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            getFrame(),
+                            ScreenController.getMainFrame(),
                             UiString.get(_S17),
                             UiString.get(_S18),
                             JOptionPane.YES_NO_OPTION);
@@ -277,17 +245,17 @@ public class DeckEditorScreen
 
     @Override
     public boolean isScreenReadyToClose(final Object nextScreen) {
-        if (!screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
-            ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
+        if (super.isScreenReadyToClose(nextScreen)) {
+            if (screenContent == null) {
+                return true;
+            } else if (!screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
+                ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
+            }
+            MagicSetDefinitions.clearLoadedSets();
+            MagicLogs.clearLoadedLogs();
+            return true;
         }
-        MagicSetDefinitions.clearLoadedSets();
-        MagicLogs.clearLoadedLogs();
-        return true;
-    }
-
-    @Override
-    public WikiPage getWikiPageName() {
-        return WikiPage.DECK_EDITOR;
+        return false;
     }
 
     @Override
@@ -318,29 +286,6 @@ public class DeckEditorScreen
     @Override
     public void addCardToRecall(MagicCardDefinition card) {
         throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    private class ScreenOptions extends ScreenOptionsOverlay {
-
-        public ScreenOptions(final MagicFrame frame) {
-            super(frame);
-        }
-
-        @Override
-        protected MenuPanel getScreenMenu() {
-            return null;
-        }
-
-        @Override
-        protected boolean showPreferencesOption() {
-            return false;
-        }
-
-    }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return deckStatusPanel;
     }
 
 }
