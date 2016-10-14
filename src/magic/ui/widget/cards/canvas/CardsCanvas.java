@@ -446,7 +446,7 @@ public class CardsCanvas extends JPanel {
         currentCardIndex = -1;
         if (useAnimation) {
             executor.execute(getDealCardsRunnable(canvasCards));
-        } else {System.out.println("AAA");
+        } else {
             createListOfCardCanvasObjects(canvasCards);
             maxCardsVisible = cards.size();
             repaint();
