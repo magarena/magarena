@@ -11,13 +11,21 @@ import magic.ui.utility.MagicStyle;
 @SuppressWarnings("serial")
 public class ActionBarButton extends MenuButton {
 
+    private void setToolTip(String title, String tooltip) {
+        title = title == null ? "" : title.trim();
+        tooltip = tooltip == null ? "" : tooltip.trim();
+        if (title.isEmpty() && tooltip.isEmpty())
+            return;
+        final String s1 = !title.isEmpty() ? "<b>" + title + "</b>" : "";
+        final String s2 = s1 + (!title.isEmpty() && !tooltip.isEmpty() ? "<br>" : "") + tooltip;
+        setToolTipText("<html>" + s2 + "</html>");
+    }
+
     // CTR
     public ActionBarButton(ImageIcon icon, String actionName, String tooltip, AbstractAction action, boolean showSeparator) {
         super("", action, tooltip, showSeparator);
         setIcon(icon);
-        if (tooltip != null) {
-            setToolTipText("<html><b>" + actionName + "</b><br>" + tooltip + "</html>");
-        }
+        setToolTip(actionName, tooltip);
     }
 
     public ActionBarButton(ImageIcon icon, String actionName, String tooltip, AbstractAction action) {

@@ -181,7 +181,7 @@ public class MenuButton extends JButton {
     }
 
     public static MenuButton build(Runnable action, MagicIcon icon, String title) {
-        return build(action, MagicImages.getIcon(icon), title, "");
+        return build(action, MagicImages.getIcon(icon), title, null);
     }
 
     /**
