@@ -21,7 +21,6 @@ public abstract class HeaderFooterScreen extends MagicScreen {
         this.headerPanel = new ScreenHeaderPanel(title);
         this.footerPanel = new ScreenFooterPanel();
         setMigLayout();
-        refreshLayout();
     }
 
     private void setMigLayout() {
