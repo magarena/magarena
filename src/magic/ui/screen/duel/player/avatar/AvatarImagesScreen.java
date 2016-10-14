@@ -34,7 +34,9 @@ public class AvatarImagesScreen extends HeaderFooterScreen {
         this.contentPanel = new ContentPanel(this);
         setMainContent(contentPanel);
         setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S4)));
-        addToFooter(MenuButton.build(this::doOpenAvatarsWebPage, _S5, _S6));
+        addToFooter(MenuButton.build(this::doOpenAvatarsWebPage, 
+                UiString.get(_S5), UiString.get(_S6))
+        );
     }
     
     private void doOpenAvatarsWebPage() {

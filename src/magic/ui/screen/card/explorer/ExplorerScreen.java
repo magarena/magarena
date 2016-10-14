@@ -54,9 +54,15 @@ public class ExplorerScreen extends HeaderFooterScreen {
 
     private void setFooterButtons() {
         addToFooter(
-                MenuButton.build(this::doShowScriptScreen, MagicIcon.EDIT, _S3, _S4),
-                MenuButton.build(this::doSelectRandomCard, MagicIcon.RANDOM, _S5, _S6),
-                MenuButton.build(this::doSwitchLayout, MagicIcon.LAYOUT, _S7, _S8)
+                MenuButton.build(this::doShowScriptScreen, 
+                        MagicIcon.EDIT, UiString.get(_S3), UiString.get(_S4)
+                ),
+                MenuButton.build(this::doSelectRandomCard, 
+                        MagicIcon.RANDOM, UiString.get(_S5), UiString.get(_S6)
+                ),
+                MenuButton.build(this::doSwitchLayout, 
+                        MagicIcon.LAYOUT, UiString.get(_S7), UiString.get(_S8)
+                )
         );
         if (MagicSystem.isDevMode()) {
             addToFooter(

@@ -57,10 +57,14 @@ public class GameLogScreen extends HeaderFooterScreen {
     private void setFooterButtons() {
         clearFooterButtons();
         if (isBasicLog) {
-            addToFooter(MenuButton.build(this::showDetailedLog, MagicIcon.SWAP, _S6, _S7));
+            addToFooter(MenuButton.build(this::showDetailedLog, 
+                    MagicIcon.SWAP, UiString.get(_S6), UiString.get(_S7))
+            );
             modeLabel.setText(UiString.get(_S1));
         } else {
-            addToFooter(MenuButton.build(this::showBasicLog, MagicIcon.SWAP, _S4, _S5));
+            addToFooter(MenuButton.build(this::showBasicLog, 
+                    MagicIcon.SWAP, UiString.get(_S4), UiString.get(_S5))
+            );
             modeLabel.setText(UiString.get(_S2));
         }
     }

@@ -76,11 +76,11 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
         setLeftFooter(screenContent.getDuel().getGamesPlayed() == 0
                 ? MenuButton.getCloseScreenButton()
-                : MenuButton.build(this::doShowMainMenu, _S2)
+                : MenuButton.build(this::doShowMainMenu, UiString.get(_S2))
         );
 
         setRightFooter(screenContent.getDuel().isFinished()
-                ? MenuButton.build(this::doRestartDuel, _S3)
+                ? MenuButton.build(this::doRestartDuel, UiString.get(_S3))
                 : nextGameButton
         );
 
@@ -88,7 +88,8 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
         if (isNewDuel()) {
             addToFooter(
                     MenuButton.build(this::showDeckEditor,
-                            MagicIcon.DECK, _S5, _S6),
+                            MagicIcon.DECK, UiString.get(_S5), UiString.get(_S6)
+                    ),
                     getTiledDeckCardImagesButton(),
                     SampleHandActionButton.createInstance(getActiveDeck())
             );
@@ -102,15 +103,15 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
                     getTiledDeckCardImagesButton(),
                     SampleHandActionButton.createInstance(getActiveDeck()),
                     MenuButton.build(this::doRestartDuel,
-                            MagicIcon.REFRESH, _S10, _S11)
-
+                            MagicIcon.REFRESH, UiString.get(_S10), UiString.get(_S11)
+                    )
             );
         }        
     }
 
     private MenuButton getTiledDeckCardImagesButton() {
         return MenuButton.build(this::showTiledDeckCardImages,
-                MagicIcon.TILED, _S12, _S13);
+                MagicIcon.TILED, UiString.get(_S12), UiString.get(_S13));
     }
 
     /**

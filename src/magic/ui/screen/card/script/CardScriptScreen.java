@@ -32,11 +32,11 @@ public class CardScriptScreen extends HeaderFooterScreen {
 
     private void setFooterButtons() {
         addToFooter(MenuButton.build(this::openFiremindWebpage, 
-                MagicIcon.FIREMIND, _S5, _S6)
+                MagicIcon.FIREMIND, UiString.get(_S5), UiString.get(_S6))
         );
         if (MagicSystem.isDevMode()) {
             addToFooter(MenuButton.build(this::doReloadScript,
-                    MagicIcon.REFRESH, _S3, _S4)
+                    MagicIcon.REFRESH, UiString.get(_S3), UiString.get(_S4))
             );
         }
     }

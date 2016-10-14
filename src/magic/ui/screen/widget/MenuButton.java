@@ -170,9 +170,7 @@ public class MenuButton extends JButton {
      */
     public static MenuButton build(Runnable action, ImageIcon image, String title, String description) {
         return new ActionBarButton(
-                image,
-                UiString.get(title),
-                UiString.get(description),
+                image, title, description,
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -209,8 +207,7 @@ public class MenuButton extends JButton {
      */
     public static MenuButton build(Runnable action, String title, String tooltip) {
         return new ActionBarButton(
-                UiString.get(title),
-                UiString.get(tooltip),
+                title, tooltip,
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -228,7 +225,7 @@ public class MenuButton extends JButton {
      * @return
      */
     public static MenuButton build(Runnable action, String title) {
-        return new ActionBarButton(UiString.get(title), new AbstractAction() {
+        return new ActionBarButton(title, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 action.run();
