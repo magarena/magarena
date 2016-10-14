@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.awt.MagicFont;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicRandom;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import net.miginfocom.swing.MigLayout;
 
@@ -62,9 +63,9 @@ class KeywordPanelB extends JPanel {
     private void showExampleCard(Keyword keyword) {
         final List<MagicCardDefinition> cards = keyword.getExampleCards();
         if (!cards.isEmpty()) {
-//            cardsCanvas.setCard(cards.get(MagicRandom.nextRNGInt(cards.size())));
+            cardsCanvas.setCard(cards.get(MagicRandom.nextRNGInt(cards.size())));
         } else {
-//            cardsCanvas.clear();
+            cardsCanvas.clear();
         }      
     }
 

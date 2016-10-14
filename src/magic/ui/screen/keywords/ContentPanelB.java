@@ -1,7 +1,6 @@
 package magic.ui.screen.keywords;
 
 import java.awt.Color;
-import magic.data.CardDefinitions;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;
@@ -17,7 +16,7 @@ class ContentPanelB extends TexturedPanel {
         // due the lengthy load time of missing scripts. It would be much more
         // efficient in this particular case to check for the image directly
         // since we already have the card name.
-        CardDefinitions.getMissingCards();
+//        CardDefinitions.getMissingCards();
 
         KeywordPanelB keywordPanel = new KeywordPanelB();
 

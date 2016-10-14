@@ -15,6 +15,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -22,7 +23,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
+import magic.model.IRenderableCard;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.helpers.ImageHelper;
@@ -265,7 +268,7 @@ public class CardsCanvas extends JPanel {
     }
 
     private void drawCards(final Graphics g) {
-        if (this.getWidth() > 0) {
+        if (this.getWidth() > 0 && !cards.isEmpty()) {
             if (!getSize().equals(canvasSize) || refreshLayout || isAnimateThreadRunning) {
                 refreshLayout = false;
                 canvasSize = new Dimension(getSize());
@@ -433,6 +436,33 @@ public class CardsCanvas extends JPanel {
 
     public void setStackDuplicateCards(boolean stackDuplicateCards) {
         this.stackDuplicateCards = stackDuplicateCards;
+    }
+
+    public void refreshCards(final List<MagicCardDefinition> cards) {
+        final List<CardCanvas> canvasCards = cards.stream()
+                .map(card -> new CardCanvas(card))
+                .collect(Collectors.toList());
+        refreshLayout = true;
+        currentCardIndex = -1;
+        if (useAnimation) {
+            executor.execute(getDealCardsRunnable(canvasCards));
+        } else {System.out.println("AAA");
+            createListOfCardCanvasObjects(canvasCards);
+            maxCardsVisible = cards.size();
+            repaint();
+        }
+    }
+    
+    public void setCard(IRenderableCard aCard) {
+        final List<MagicCardDefinition> lst = new ArrayList<>();
+        lst.add(aCard.getCardDefinition());
+        refreshCards(lst);
+    }
+
+    public void clear() {
+        cards.clear();
+        cardTypeCount.clear();
+        repaint();
     }
 
 }
