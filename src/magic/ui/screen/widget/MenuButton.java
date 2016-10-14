@@ -182,6 +182,10 @@ public class MenuButton extends JButton {
         );
     }
 
+    public static MenuButton build(Runnable action, MagicIcon icon, String title) {
+        return build(action, MagicImages.getIcon(icon), title, "");
+    }
+
     /**
      * Creates an icon-only button with tooltip.<br>
      *
