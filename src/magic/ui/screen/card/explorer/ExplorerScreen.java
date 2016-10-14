@@ -30,11 +30,20 @@ public class ExplorerScreen extends HeaderFooterScreen {
     private static final String _S7 = "Change layout";
     private static final String _S8 = "Cycles through a number of different screen layouts.";
 
-    private final ExplorerContentPanel contentPanel;
-    private final ExplorerHeaderPanel headerPanel;
+    private ExplorerContentPanel contentPanel;
+    private ExplorerHeaderPanel headerPanel;
 
     public ExplorerScreen() {
         super(UiString.get(_S1));
+        useLoadingScreen(this::initUI);
+    }
+
+    @Override
+    protected boolean isCardDataRequired() {
+        return true;
+    }
+
+    private void initUI() {
         headerPanel = new ExplorerHeaderPanel();
         contentPanel = new ExplorerContentPanel(this);
         setHeaderContent(headerPanel);
@@ -106,9 +115,12 @@ public class ExplorerScreen extends HeaderFooterScreen {
 
     @Override
     public boolean isScreenReadyToClose(final Object nextScreen) {
-        MagicSetDefinitions.clearLoadedSets();
-        MagicLogs.clearLoadedLogs();
-        return true;
+        if (super.isScreenReadyToClose(nextScreen)) {
+            MagicSetDefinitions.clearLoadedSets();
+            MagicLogs.clearLoadedLogs();
+            return true;
+        }
+        return false;
     }
 
     public void refreshTotals(int total, int playable, int missing) {
