@@ -34,7 +34,7 @@ public class MenuButton extends JButton {
     public MenuButton(final String caption, final AbstractAction action, final String tooltip, final boolean showSeparator) {
         super(caption);
         this.isRunnable = (action != null);
-        this.hasSeparator = showSeparator;
+        this.hasSeparator = showSeparator && !isGroup;
         setFont(FontsAndBorders.FONT_MENU_BUTTON);
         setHorizontalAlignment(SwingConstants.CENTER);
         setForeground(COLOR_NORMAL);
@@ -231,5 +231,15 @@ public class MenuButton extends JButton {
                 action.run();
             }
         });
+    }
+
+    private static boolean isGroup = false;
+
+    public static void startGroup() {
+        isGroup = true;
+    }    
+
+    public static void endGroup() {
+        isGroup = false;
     }
 }
