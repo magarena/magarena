@@ -15,7 +15,6 @@ public class DeckStatusPanel extends JPanel {
     // translatable strings
     private static final String _S1 = "%d cards";
 
-    private final MigLayout migLayout = new MigLayout();
     private final JLabel deckNameLabel = new JLabel();
     private final JLabel deckSizeLabel = new JLabel();
 
@@ -31,12 +30,14 @@ public class DeckStatusPanel extends JPanel {
         deckNameLabel.setText(deck != null ? deck.getName() : "");
         deckSizeLabel.setText(showDeckSize && deck != null ? UiString.get(_S1, deck.size()): "");
         refreshLayout();
-        revalidate();
     }
 
     private void setLookAndFeel() {
         setOpaque(false);
-        setLayout(migLayout);
+        setLayout(new MigLayout(
+                "insets 0, gap 2, flowy, aligny center",
+                "[fill, grow]")
+        );
         // deck name label
         deckNameLabel.setForeground(Color.WHITE);
         deckNameLabel.setFont(new Font("Dialog", Font.PLAIN, 16));
@@ -49,9 +50,9 @@ public class DeckStatusPanel extends JPanel {
 
     public void refreshLayout() {
         removeAll();
-        migLayout.setLayoutConstraints("insets 0, gap 2, flowy");
-        add(deckNameLabel, "w 100%");
-        add(deckSizeLabel, "w 100%");
+        add(deckNameLabel);
+        add(deckSizeLabel);
+        revalidate();
     }
 
 }
