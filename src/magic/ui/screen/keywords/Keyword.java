@@ -29,7 +29,7 @@ class Keyword implements Comparable<Keyword> {
     List<MagicCardDefinition> getExampleCards() {
         try {
             return Stream.of(cards)
-                    .map(c -> CardDefinitions.getMissingOrCard(c))
+                    .map(c -> CardDefinitions.getCard(c))
                     .collect(Collectors.toList());
         } catch (Exception ex) {
             System.err.println(ex);
