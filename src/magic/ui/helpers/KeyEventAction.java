@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.util.UUID;
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
+import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 /**
@@ -30,6 +31,27 @@ public final class KeyEventAction {
     private KeyEventAction() {
         this.com = null;
         this.key = null;
+    }
+
+    /**
+     * Assigns one or more key events that will trigger an action
+     * only on the condition WHEN_IN_FOCUSED_WINDOW.
+     *
+     * @param keymod key modifier (see {@link java.awt.event.InputEvent}).
+     * @param events one or more {@link java.awt.event.KeyEvent} values.
+     *
+     * @return {@link KeyEventAction}
+     *
+     * @see javax.swing.KeyStroke
+     * @see java.awt.event.KeyEvent
+     * @see java.awt.event.InputEvent
+     */
+    public KeyEventAction onFocus(int keymod, int... events) {
+        for (int evt : events) {
+            com.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
+                    .put(KeyStroke.getKeyStroke(evt, keymod), key);
+        }
+        return this;
     }
 
     /**
