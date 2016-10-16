@@ -1,6 +1,6 @@
 name=Terror
-image=http://magiccards.info/scans/en/dpa/34.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/182.jpg
+image_updated=2016-10-16
 value=4.139
 removal=3
 rarity=C
