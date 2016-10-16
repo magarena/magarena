@@ -17,24 +17,24 @@ import javax.swing.SwingUtilities;
 import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
-import magic.ui.helpers.UrlHelper;
 import magic.translate.UiString;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.FontsAndBorders;
+import magic.ui.WikiPage;
+import magic.ui.screen.MagicScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ImportScreen extends AbstractScreen {
+public class ImportScreen extends MagicScreen {
 
     // translatable strings
     private static final String _S1 = "Import Settings?";
     private static final String _S2 = "Yes";
     private static final String _S3 = "Import settings from a previous version of Magarena.";
     private static final String _S4 = "No";
-    private static final String _S5 = "Help";
+    private static final String _S5 = "Help [F1]";
     private static final String _S6 = "Opens the related wiki page in your internet browser.";
     private static final String _S7 = "Importing...";
     private static final String _S8 = "Cancel";
@@ -43,7 +43,8 @@ public class ImportScreen extends AbstractScreen {
     private final StringBuffer sb = new StringBuffer();
 
     public ImportScreen() {
-        setContent(new ScreenContent());
+        setMainContent(new ScreenContent());
+        setWikiPage(WikiPage.IMPORT_SETTINGS);
     }
 
     private class ScreenContent extends JPanel{
@@ -113,7 +114,7 @@ public class ImportScreen extends AbstractScreen {
                 addMenuItem(UiString.get(UiString.get(_S5)), new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent ev) {
-                        UrlHelper.openURL(UrlHelper.URL_WIKI + "Upgrading-to-a-new-release");
+                        showWikiHelpPage();
                     }
                 }, UiString.get(_S6));
 

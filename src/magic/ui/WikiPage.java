@@ -11,7 +11,8 @@ public enum WikiPage {
     DUEL_DECKS("UIDeckView"),
     MAIN_MENU("Main-Menu-Screen"),
     MULLIGAN("Mulligan-Screen"),
-    NEW_DUEL("UINewDuel");
+    NEW_DUEL("UINewDuel"),
+    IMPORT_SETTINGS("Upgrading-to-a-new-release");
 
     private final String pageName;
 
