@@ -9,14 +9,14 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.MagicScreen;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class StartScreen extends AbstractScreen {
+public class StartScreen extends MagicScreen {
 
     // translatable strings
     private static final String _S1 = "Language";
@@ -30,7 +30,7 @@ public class StartScreen extends AbstractScreen {
             if (MagicSystem.isNewInstall() == false) {
                 showMainMenuScreen();
             } else {
-                setContent(new ScreenContent());
+                setMainContent(new ScreenContent());
             }
         });
     }
