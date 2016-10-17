@@ -1,29 +1,24 @@
 package magic.ui.screen.duel.player;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 import magic.model.player.AiProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
+import magic.ui.ScreenController;
 import magic.ui.dialog.AiPropertiesDialog;
-import magic.ui.screen.interfaces.IStatusBar;
 
 @SuppressWarnings("serial")
-public class SelectAiPlayerScreen
-    extends SelectPlayerScreen
-    implements IStatusBar {
+public class SelectAiPlayerScreen extends SelectPlayerScreen {
 
     // translatable strings
     private static final String _S1 =  "Select AI Player";
 
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
-        super(new AiPlayerJList());
+        super(UiString.get(_S1), new AiPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }
@@ -39,46 +34,26 @@ public class SelectAiPlayerScreen
     }
 
     @Override
-    public String getScreenCaption() {
-        return UiString.get(_S1);
-    }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
-    }
-
-    @Override
     protected int getPreferredWidth() {
         return 490;
     }
 
-    private class NewPlayerAction extends AbstractAction {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            createNewPlayerProfile();
+    @Override
+    protected void doNewPlayerAction() {
+        final AiPropertiesDialog dialog = new AiPropertiesDialog(ScreenController.getMainFrame());
+        final PlayerProfile newProfile = dialog.getPlayerProfile();
+        if (newProfile != null) {
+            PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
+            refreshProfilesJList(newProfile);
         }
-
-        private void createNewPlayerProfile() {
-            final AiPropertiesDialog dialog = new AiPropertiesDialog(getFrame());
-            final PlayerProfile newProfile = dialog.getPlayerProfile();
-            if (newProfile != null) {
-                PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
-                refreshProfilesJList(newProfile);
-            }
-        }
-
     }
 
-    private class EditPlayerAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            final AiProfile profile = (AiProfile)getSelectedPlayer();
-            new AiPropertiesDialog(getFrame(), profile);
-            getJList().repaint();
-            notifyPlayerUpdated(profile);
-        }
+    @Override
+    protected void doEditPlayerAction() {
+        final AiProfile profile = (AiProfile) getSelectedPlayer();
+        new AiPropertiesDialog(ScreenController.getMainFrame(), profile);
+        getJList().repaint();
+        notifyPlayerUpdated(profile);
     }
 
     @Override
@@ -94,16 +69,6 @@ public class SelectAiPlayerScreen
     @Override
     protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
         return PlayerProfiles.getAiPlayerProfiles();
-    }
-
-    @Override
-    protected AbstractAction getNewPlayerAction() {
-        return new NewPlayerAction();
-    }
-
-    @Override
-    protected AbstractAction getEditPlayerAction() {
-        return new EditPlayerAction();
     }
 
 }

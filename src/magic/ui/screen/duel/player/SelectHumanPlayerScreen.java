@@ -1,23 +1,18 @@
 package magic.ui.screen.duel.player;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import magic.model.player.HumanProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
-import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
-public class SelectHumanPlayerScreen
-    extends SelectPlayerScreen
-    implements IStatusBar {
+public class SelectHumanPlayerScreen extends SelectPlayerScreen {
 
     // translatable strings
     private static final String _S1 = "Select Player";
@@ -26,7 +21,7 @@ public class SelectHumanPlayerScreen
     private static final String _S4 = "Update Player";
 
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
-        super(new HumanPlayerJList());
+        super(UiString.get(_S1), new HumanPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }
@@ -42,67 +37,41 @@ public class SelectHumanPlayerScreen
     }
 
     @Override
-    public String getScreenCaption() {
-        return UiString.get(_S1);
-    }
-
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
-    }
-
-    @Override
     protected int getPreferredWidth() {
         return 490;
     }
 
-    private class NewPlayerAction extends AbstractAction {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            doNewPlayerProfile();
+    @Override
+    protected void doNewPlayerAction() {
+        final String newName = (String) JOptionPane.showInputDialog(
+            ScreenController.getMainFrame(),
+            String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
+            UiString.get(_S3),
+            JOptionPane.PLAIN_MESSAGE,
+            null, null, null);
+        if (newName != null && !newName.trim().isEmpty()) {
+            final PlayerProfile newProfile = HumanProfile.create(newName);
+            newProfile.save();
+            PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
+            refreshProfilesJList(newProfile);
         }
-
-        private void doNewPlayerProfile() {
-            final String newName = (String)JOptionPane.showInputDialog(
-                    getFrame(),
-                    String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
-                    UiString.get(_S3),
-                    JOptionPane.PLAIN_MESSAGE,
-                    null, null, null);
-            if (newName != null && !newName.trim().isEmpty()) {
-                final PlayerProfile newProfile = HumanProfile.create(newName);
-                newProfile.save();
-                PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
-                refreshProfilesJList(newProfile);
-            }
-        }
-
     }
 
-    private class EditPlayerAction extends AbstractAction {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            doEditPlayerProfile();
-            getJList().repaint();
+    @Override
+    protected void doEditPlayerAction() {
+        final PlayerProfile profile = getSelectedPlayer();
+        final String newName = (String) JOptionPane.showInputDialog(
+            ScreenController.getMainFrame(),
+            String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
+            UiString.get(_S4),
+            JOptionPane.PLAIN_MESSAGE,
+            null, null, profile.getPlayerName());
+        if (newName != null && !newName.trim().isEmpty()) {
+            profile.setPlayerName(newName.trim());
+            profile.save();
+            notifyPlayerUpdated(getSelectedPlayer());
         }
-
-        private void doEditPlayerProfile() {
-            final PlayerProfile profile = getSelectedPlayer();
-            final String newName = (String)JOptionPane.showInputDialog(
-                    getFrame(),
-                    String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
-                    UiString.get(_S4),
-                    JOptionPane.PLAIN_MESSAGE,
-                    null, null, profile.getPlayerName());
-            if (newName != null && !newName.trim().isEmpty()) {
-                profile.setPlayerName(newName.trim());
-                profile.save();
-                notifyPlayerUpdated(getSelectedPlayer());
-            }
-        }
-
+        getJList().repaint();
     }
 
     @Override
@@ -120,15 +89,4 @@ public class SelectHumanPlayerScreen
     protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
         return PlayerProfiles.getHumanPlayerProfiles();
     }
-
-    @Override
-    protected AbstractAction getNewPlayerAction() {
-        return new NewPlayerAction();
-    }
-
-    @Override
-    protected AbstractAction getEditPlayerAction() {
-        return new EditPlayerAction();
-    }
-
 }

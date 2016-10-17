@@ -21,30 +21,29 @@ import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.translate.UiString;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
-import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.helpers.KeyEventAction;
+import magic.ui.helpers.MouseHelper;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.Theme;
-import magic.ui.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class SelectPlayerScreen
-    extends AbstractScreen
-    implements IAvatarImageConsumer, IActionBar {
+public abstract class SelectPlayerScreen extends HeaderFooterScreen
+    implements IAvatarImageConsumer {
 
     // translatable strings
     private static final String _S1 = "Avatar";
@@ -73,27 +72,41 @@ public abstract class SelectPlayerScreen
     protected abstract void refreshProfilesJList();
     protected abstract void refreshProfilesJList(final PlayerProfile playerProfile);
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
-    protected abstract AbstractAction getNewPlayerAction();
-    protected abstract AbstractAction getEditPlayerAction();
+    protected abstract void doNewPlayerAction();
+    protected abstract void doEditPlayerAction();
 
     // CTR
-    protected SelectPlayerScreen(final JList<? extends PlayerProfile> playersJList) {
+    protected SelectPlayerScreen(String name, final JList<? extends PlayerProfile> playersJList) {
+        super(name);
         this.playersJList = playersJList;
         this.playersJList.addMouseListener(new DoubleClickAdapter());
-        setContent(new ScreenContent());
-        setEnterKeyInputMap();
+        setMainContent(new ScreenContent());
+        setFooter();
+        setKeyEvents();
     }
 
-    private void setEnterKeyInputMap() {
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "EnterAction");
-        getActionMap().put("EnterAction", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doNextAction();
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
+
+
+    private void setFooter() {
+        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S7)));
+        setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S9)));
+        addToFooter(
+            MenuButton.build(this::doEditPlayerAction,
+                UiString.get(_S10), UiString.get(_S11)
+            ),
+            MenuButton.build(this::doNewPlayerAction,
+                UiString.get(_S12), UiString.get(_S13)
+            ),
+            MenuButton.build(this::deleteSelectedPlayer,
+                UiString.get(_S6), UiString.get(_S15)
+            ),
+            new SelectAvatarActionButton()
+        );
+    }
+
+    private void setKeyEvents() {
+        KeyEventAction.doAction(this, this::doNextAction)
+            .onFocus(0, KeyEvent.VK_ENTER);
     }
 
     protected void setFocusInProfilesJList(final JList<? extends PlayerProfile> profilesJList) {
@@ -162,41 +175,32 @@ public abstract class SelectPlayerScreen
         }
     }
 
-    protected class DeletePlayerAction extends AbstractAction {
+    private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
+        final int action = JOptionPane.showOptionDialog(
+            ScreenController.getMainFrame(),
+            String.format("<html>%s<br>%s<br><br><b>%s</b></html>",
+                UiString.get(_S4, profile.getPlayerName()),
+                UiString.get(_S16),
+                UiString.get(_S17)),
+            UiString.get(_S5),
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            new String[]{UiString.get(_S6), UiString.get(_S7)}, UiString.get(_S7));
+        return (action == JOptionPane.YES_OPTION);
+    }
 
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            deleteSelectedPlayer();
-        }
-
-        private void deleteSelectedPlayer() {
-            final PlayerProfile condemnedPlayer = getSelectedPlayer();
-            if (PlayerProfiles.canDeleteProfile(condemnedPlayer)) {
-                if (isDeletePlayerConfirmedByUser(condemnedPlayer)) {
-                    PlayerProfiles.deletePlayer(condemnedPlayer);
-                    refreshProfilesJList();
-                    notifyPlayerDeleted(condemnedPlayer);
-                }
-            } else {
-                ScreenController.showWarningMessage(UiString.get(_S3));
+    private void deleteSelectedPlayer() {
+        final PlayerProfile condemnedPlayer = getSelectedPlayer();
+        if (PlayerProfiles.canDeleteProfile(condemnedPlayer)) {
+            if (isDeletePlayerConfirmedByUser(condemnedPlayer)) {
+                PlayerProfiles.deletePlayer(condemnedPlayer);
+                refreshProfilesJList();
+                notifyPlayerDeleted(condemnedPlayer);
             }
+        } else {
+            ScreenController.showWarningMessage(UiString.get(_S3));
         }
-
-        private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
-            final int action = JOptionPane.showOptionDialog(
-                    ScreenController.getMainFrame(),
-                    String.format("<html>%s<br>%s<br><br><b>%s</b></html>",
-                            UiString.get(_S4, profile.getPlayerName()),
-                            UiString.get(_S16),
-                            UiString.get(_S17)),
-                    UiString.get(_S5),
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.QUESTION_MESSAGE,
-                    null,
-                    new String[] {UiString.get(_S6), UiString.get(_S7)}, UiString.get(_S7));
-            return (action == JOptionPane.YES_OPTION);
-        }
-
     }
 
     private class ScreenContent extends JPanel {
@@ -236,8 +240,10 @@ public abstract class SelectPlayerScreen
     }
 
     protected void doNextAction() {
+        MouseHelper.showBusyCursor();
         notifyPlayerSelected(getSelectedPlayer());
         ScreenController.closeActiveScreen(false);
+        MouseHelper.showDefaultCursor();
     }
 
     protected class DoubleClickAdapter extends MouseAdapter {
@@ -280,32 +286,4 @@ public abstract class SelectPlayerScreen
     protected JList<? extends PlayerProfile> getJList() {
         return playersJList;
     }
-
-    @Override
-    public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton(UiString.get(_S7));
-    }
-
-    @Override
-    public MenuButton getRightAction() {
-        return new MenuButton(UiString.get(_S9), new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doNextAction();
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
-    }
-
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(new ActionBarButton(UiString.get(_S10), UiString.get(_S11), getEditPlayerAction()));
-        buttons.add(new ActionBarButton(UiString.get(_S12), UiString.get(_S13), getNewPlayerAction()));
-        buttons.add(new ActionBarButton(UiString.get(_S6), UiString.get(_S15), new DeletePlayerAction()));
-        buttons.add(new SelectAvatarActionButton());
-        return buttons;
-    }
-
 }
