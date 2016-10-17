@@ -2,11 +2,11 @@ package magic.ui.screen.images.download;
 
 import javax.swing.JPanel;
 import javax.swing.ToolTipManager;
-import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.MagicScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DownloadImagesScreen extends AbstractScreen {
+public class DownloadImagesScreen extends MagicScreen {
 
     private final DownloadDialogPanel dialogPanel;
 
@@ -14,10 +14,10 @@ public class DownloadImagesScreen extends AbstractScreen {
         // hint label replaces tooltips.
         ToolTipManager.sharedInstance().setEnabled(false);
         dialogPanel = new DownloadDialogPanel();
-        setContent(getContentPanel());
+        setMainContent(getContent());
     }
 
-    private JPanel getContentPanel() {
+    private JPanel getContent() {
         final JPanel panel = new JPanel(new MigLayout("alignx center, aligny center"));
         panel.setOpaque(false);
         panel.add(dialogPanel);
