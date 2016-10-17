@@ -4,43 +4,29 @@ import java.awt.event.ActionEvent;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import magic.data.DeckType;
-import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.data.MagicSetDefinitions;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
-import magic.ui.MagicFrame;
 import magic.ui.MagicLogs;
 import magic.ui.ScreenController;
-import magic.ui.ScreenOptionsOverlay;
-import magic.ui.screen.deck.editor.DeckEditorSplitPanel;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.screen.interfaces.IOptionsMenu;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.interfaces.IWikiPage;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.MenuPanel;
-import magic.ui.widget.deck.DeckStatusPanel;
-import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.ui.WikiPage;
+import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.duel.decks.DuelDecksScreen;
+import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.deck.DeckStatusPanel;
+import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
-public class DeckEditorSplitScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
+public class DeckEditorSplitScreen extends HeaderFooterScreen
+    implements IDeckConsumer {
 
     private final DeckEditorSplitPanel screenContent;
     private final boolean isStandalone;
@@ -48,14 +34,50 @@ public class DeckEditorSplitScreen
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorSplitScreen(final MagicDeck deck) {
+        super("Deck Editor");
         isStandalone = (deck == null);
         this.screenContent = new DeckEditorSplitPanel(deck);
-        setContent(this.screenContent);
+        setMainContent(this.screenContent);
+        setHeaderContent(deckStatusPanel);
+        setLeftFooter(getLeftAction());
+        setRightFooter(getRightAction());
+        addToFooter(
+            MenuButton.build(this::loadDeck,
+                MagicIcon.OPEN, "Select Deck", "Select an existing prebuilt or player deck."
+            ),
+            MenuButton.build(this::saveDeck,
+                MagicIcon.SAVE, "Save Deck", "Save deck to file."
+            ),
+            MenuButton.build(this::showSampleHand,
+                MagicIcon.HAND_ICON, "Sample Hand", "See what kind of Hand you might be dealt from this deck."
+            ),
+            MenuButton.build(this::showDeckImageView,
+                MagicIcon.TILED, "Deck View", "Shows complete deck using tiled card images."
+            )
+        );
+        setWikiPage(WikiPage.DECK_EDITOR);
     }
+
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorSplitScreen() {
         this(null);
         loadMostRecentDeck();
+    }
+
+    private void showSampleHand() {
+        if (screenContent.getDeck().size() >= 7) {
+            ScreenController.showSampleHandScreen(screenContent.getDeck());
+        } else {
+            showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+        }
+    }
+
+    private void showDeckImageView() {
+        if (screenContent.getDeck().size() > 0) {
+            ScreenController.showDeckView(screenContent.getDeck());
+        } else {
+            showInvalidActionMessage("Deck is empty! Nothing to show.");
+        }
     }
 
     private void loadMostRecentDeck() {
@@ -80,19 +102,11 @@ public class DeckEditorSplitScreen
         }
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
-    @Override
     public MenuButton getLeftAction() {
         final String caption = (!screenContent.isStandaloneDeckEditor() ? "Cancel" : "Close");
         return MenuButton.getCloseScreenButton(caption);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
-    @Override
     public MenuButton getRightAction() {
         if (!screenContent.isStandaloneDeckEditor()) {
             return new MenuButton("Use this deck", new AbstractAction() {
@@ -108,82 +122,8 @@ public class DeckEditorSplitScreen
         }
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.OPEN),
-                        "Select Deck", "Select an existing prebuilt or player deck.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                loadDeck();
-                            }
-                        })
-                );
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.SAVE),
-                        "Save Deck", "Save deck to file.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                saveDeck();
-                            }
-                        })
-                );
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.HAND_ICON),
-                        "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck().size() >= 7) {
-                                    ScreenController.showSampleHandScreen(screenContent.getDeck());
-                                } else {
-                                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
-                                }
-                            }
-                        })
-                );
-        buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.TILED),
-                        "Deck View", "Shows complete deck using tiled card images.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck().size() > 0) {
-                                    ScreenController.showDeckView(screenContent.getDeck());
-                                } else {
-                                    showInvalidActionMessage("Deck is empty! Nothing to show.");
-                                }
-                            }
-                        })
-                );
-
-        return buttons;
-    }
-
     private void showInvalidActionMessage(final String message) {
         ScreenController.showWarningMessage(message);
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
-    @Override
-    public String getScreenCaption() {
-        return "Deck Editor";
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagScreenOptionsMenu#showOptionsMenuOverlay()
-     */
-    @Override
-    public void showOptionsMenuOverlay() {
-        new ScreenOptions(getFrame());
     }
 
     public void createNewEmptyDeck() {
@@ -215,7 +155,7 @@ public class DeckEditorSplitScreen
                     ScreenController.showWarningMessage("This directory is reserved for prebuilt decks.\nPlease choose a different directory.");
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            getFrame(),
+                            ScreenController.getMainFrame(),
                             "Overwrite existing deck file?",
                             "Overwrite file",
                             JOptionPane.YES_NO_OPTION);
@@ -271,11 +211,6 @@ public class DeckEditorSplitScreen
     }
 
     @Override
-    public WikiPage getWikiPageName() {
-        return WikiPage.DECK_EDITOR;
-    }
-
-    @Override
     public void setDeck(MagicDeck deck, Path deckPath) {
         screenContent.setDeck(deck);
         setMostRecentDeck(deckPath.toString());
@@ -284,31 +219,5 @@ public class DeckEditorSplitScreen
 
     @Override
     public void setDeck(String deckName, DeckType deckType) { }
-
-    private class ScreenOptions extends ScreenOptionsOverlay {
-
-        public ScreenOptions(final MagicFrame frame) {
-            super(frame);
-        }
-
-        @Override
-        protected MenuPanel getScreenMenu() {
-            return null;
-        }
-
-        @Override
-        protected boolean showPreferencesOption() {
-            return false;
-        }
-
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
-    @Override
-    public JPanel getStatusPanel() {
-        return deckStatusPanel;
-    }
-
+    
 }
