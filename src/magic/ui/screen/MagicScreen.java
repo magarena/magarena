@@ -3,10 +3,9 @@ package magic.ui.screen;
 import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import javax.swing.SwingWorker;
 import magic.cardBuilder.renderers.CardBuilder;
-import magic.ui.helpers.UrlHelper;
 import magic.ui.WikiPage;
+import magic.ui.helpers.UrlHelper;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -22,7 +21,7 @@ public abstract class MagicScreen extends JPanel {
 
     private JComponent contentPanel = TEMP_PANEL;
     private WikiPage wikiPage = WikiPage.HOME;
-    private SwingWorker loadingWorker;
+    private ScreenLoaderWorker loadingWorker;
 
     public MagicScreen() {
         setOpaque(false);
@@ -37,7 +36,7 @@ public abstract class MagicScreen extends JPanel {
     protected void refreshLayout() {
         removeAll();
         add(contentPanel);
-        revalidate();   
+        revalidate();
     }
 
     protected void setMainContent(final JComponent aPanel) {
@@ -91,13 +90,13 @@ public abstract class MagicScreen extends JPanel {
      * @param r normally the screen's UI initialization code.
      */
     protected final void useLoadingScreen(Runnable r) {
-        
+
         final boolean needsCBuilder =
                 isCardBuilderRequired() && !CardBuilder.IS_LOADED;
-        
+
         final boolean needsCardData =
                 isCardDataRequired() && !MagicSystem.loadCards.isDone();
-        
+
         if (needsCardData || needsCBuilder) {
 
             ScreenLoadingPanel loadingPanel = new ScreenLoadingPanel(
@@ -108,7 +107,7 @@ public abstract class MagicScreen extends JPanel {
             loadingWorker.execute();
 
             setMainContent(loadingPanel);
-            
+
         } else {
             r.run();
         }
