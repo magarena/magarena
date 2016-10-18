@@ -72,22 +72,19 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
     }
 
     private void setFilterButtons() {
+        final List<MenuButton> btns = new ArrayList<>();
         for (CardTypeFilter f : CardTypeFilter.values()) {
             if (f == CardTypeFilter.ALL) {
-                addToFooter(
-                    MenuButton.build(() -> showCards(f), f.getTitle())
-                );
+                btns.add(MenuButton.build(() -> showCards(f), f.getTitle()));
             } else if (deck.contains(f.getMagicType())) {
-                addToFooter(
-                    MenuButton.build(() -> showCards(f), f.getIcon(), f.getTitle())
-                );
+                btns.add(MenuButton.build(() -> showCards(f), f.getIcon(), f.getTitle()));
             }
         }
+        addFooterGroup(btns.toArray(new MenuButton[btns.size()]));
     }
 
     private void setFooterButtons() {
         setFilterButtons();
-        // TODO: addToFooter(MenuButton.seperator());
         addToFooter(SampleHandActionButton.createInstance(deck));
     }
 

@@ -30,6 +30,9 @@ public class ScreenFooterPanel extends TexturedPanel
     private final JPanel middlePanel;
     private final JPanel rightPanel;
 
+    // True if button being added is the first.
+    private boolean isFirstFooter = true;
+
     public ScreenFooterPanel() {
 
         this.leftPanel = new ContentPanel();
@@ -64,18 +67,23 @@ public class ScreenFooterPanel extends TexturedPanel
         setBackground(thisBG);
     }
 
-    private boolean isFirstButton = true;
-
     public void addMiddleButtons(MenuButton[] buttons) {
         if (buttons != null) {
             for (MenuButton btn : buttons) {
-                middlePanel.add(btn, "w 60, h 40");
                 btn.setEnabled(btn.isRunnable());
-                btn.setBorder(BorderFactory.createCompoundBorder(
-                        BorderFactory.createMatteBorder(0, isFirstButton ? 1 : 0, 0, btn.hasSeparator() ? 1 : 0, Color.LIGHT_GRAY),
-                        BorderFactory.createEmptyBorder(0, 10, 0, 10)));
                 btn.setBorderPainted(true);
-                isFirstButton = false;
+                btn.setBorder(BorderFactory.createCompoundBorder(
+                        BorderFactory.createMatteBorder(
+                                0,
+                                isFirstFooter ? 1 : 0,
+                                0,
+                                btn.hasSeparator() ? 1 : 0,
+                                Color.LIGHT_GRAY
+                        ),
+                        BorderFactory.createEmptyBorder(0, 10, 0, 10))
+                );
+                middlePanel.add(btn, "w 60, h 40");
+                isFirstFooter = false;
             }
         }
         middlePanel.revalidate();
@@ -108,6 +116,36 @@ public class ScreenFooterPanel extends TexturedPanel
     public void clearFooterButtons() {
         middlePanel.removeAll();
         revalidate();
-        isFirstButton = true;
+        isFirstFooter = true;
     }
+
+    public void addFooterGroup(MenuButton[] btns) {
+        for (MenuButton btn : btns) {
+            final boolean isGroupFirst = btn == btns[0];
+            final boolean isGroupLast = btn == btns[btns.length - 1];
+            btn.setEnabled(btn.isRunnable());
+            btn.setBorderPainted(true);
+            btn.setBorder(BorderFactory.createCompoundBorder(
+                    BorderFactory.createMatteBorder(
+                            0,
+                            isFirstFooter ? 1 : 0,
+                            0,
+                            isGroupLast ? 1 : 0,
+                            Color.LIGHT_GRAY
+                    ),
+                    BorderFactory.createEmptyBorder(
+                            0,
+                            isGroupFirst ? 18 : 10,
+                            0,
+                            isGroupLast ? 18 : 10
+                    )
+            ));
+            middlePanel.add(btn, String.format("w %d, h 40",
+                    isGroupFirst || isGroupLast ? 60 : 50)
+            );
+            isFirstFooter = false;
+        }
+        middlePanel.revalidate();
+    }
+
 }
