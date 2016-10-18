@@ -1,7 +1,6 @@
 package magic.ui.screen;
 
 import javax.swing.JComponent;
-import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.ScreenFooterPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.ScreenHeaderPanel;
@@ -31,10 +30,6 @@ public abstract class HeaderFooterScreen extends MagicScreen {
         setLayout(layout);
     }
 
-    public boolean hasOptionsMenu() {
-        return this instanceof IOptionsMenu;
-    };
-    
     protected final void refreshFooter() {
         footerPanel.refreshLayout();
     }
