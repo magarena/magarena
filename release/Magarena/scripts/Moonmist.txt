@@ -4,7 +4,6 @@ value=3.880
 rarity=C
 type=Instant
 cost={1}{G}
-effect=Transform all Humans. Prevent all combat damage that would be dealt this turn by creatures other than Werewolves and Wolves.
-timing=removal
+timing=block
 oracle=Transform all Humans. Prevent all combat damage that would be dealt this turn by creatures other than Werewolves and Wolves.
-status=needs groovy
+requires_groovy_code
