@@ -18,7 +18,6 @@ import magic.model.player.PlayerProfile;
 import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.test.TestScreen;
 import magic.ui.screen.MagicScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
@@ -59,8 +58,8 @@ public final class ScreenController {
     private static final String _S3 = "Warning";
 
     private static MagicFrame mainFrame = null;
-    private static final Stack<Object> screens = new Stack<>();
-    private static Object hiddenScreen;
+    private static final Stack<MagicScreen> screens = new Stack<>();
+    private static MagicScreen hiddenScreen;
 
     public static MagicFrame getMainFrame() {
         if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
@@ -208,30 +207,16 @@ public final class ScreenController {
     public static void showPreferencesDialog() {
         final PreferencesDialog dialog = new PreferencesDialog(getMainFrame(), isDuelActive());
         if (dialog.isRestartRequired()) {
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    showMainMenuScreen();
-                }
+            SwingUtilities.invokeLater(() -> {
+                showMainMenuScreen();
             });
         }
     }
 
-    private static boolean isScreenReadyToClose(Object activeScreen, Object nextScreen) {
-
-        if (activeScreen instanceof AbstractScreen) {
-            return ((AbstractScreen)activeScreen).isScreenReadyToClose(nextScreen);
-        } else if (activeScreen instanceof MagicScreen) {
-            return ((MagicScreen)activeScreen).isScreenReadyToClose(nextScreen);
-        } else {
-            throw new UnsupportedOperationException("Not an AbstractScreen or MagicScreen!");
-        }
-    }
-
     private static void doCloseActiveScreen() {
-        final Object activeScreen = screens.pop();
-        final Object nextScreen = screens.peek();
-        if (isScreenReadyToClose(activeScreen, nextScreen)) {
+        final MagicScreen activeScreen = screens.pop();
+        final MagicScreen nextScreen = screens.peek();
+        if (activeScreen.isScreenReadyToClose(nextScreen)) {
             showScreen(screens.pop());
             if (nextScreen instanceof DuelGameScreen) {
                 ((DuelGameScreen) nextScreen).updateView();
@@ -255,7 +240,7 @@ public final class ScreenController {
         closeActiveScreen(false);
     }
 
-    private static void showScreen(Object screen) {
+    private static void showScreen(MagicScreen screen) {
         if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
             screen = hiddenScreen;
             hiddenScreen = null;
@@ -267,7 +252,7 @@ public final class ScreenController {
         ((JPanel)screen).requestFocus();
     }
 
-    private static void setMainFrameScreen(final Object screen) {
+    private static void setMainFrameScreen(final MagicScreen screen) {
         getMainFrame().setContentPanel((JPanel)screen);
     }
 
@@ -280,7 +265,7 @@ public final class ScreenController {
     }
 
     public static void refreshStyle() {
-        for (Object screen : screens) {
+        for (MagicScreen screen : screens) {
             MagicStyle.refreshComponentStyle((JPanel)screen);
         }
     }
@@ -299,7 +284,7 @@ public final class ScreenController {
     }
 
     public static boolean isDuelActive() {
-        for (Object screen : screens) {
+        for (MagicScreen screen : screens) {
             if (screen instanceof DuelDecksScreen || screen instanceof DuelGameScreen) {
                 return true;
             }

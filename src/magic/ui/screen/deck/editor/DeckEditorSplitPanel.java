@@ -26,8 +26,6 @@ import magic.ui.ScreenController;
 import magic.ui.widget.cards.table.CardTable;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.card.filter.CardFilterPanel;
-import magic.ui.screen.widget.ActionBar;
-import magic.ui.screen.widget.StatusBar;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicSystem;
@@ -137,11 +135,13 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
 
     }
 
+    private static final int PANEL_HEIGHT = 50;
+
     private int getDividerPosition() {
         final int splitPaneContentHeight =
                ScreenController.getMainFrame().getContentPane().getHeight() -
-               StatusBar.PANEL_HEIGHT -
-               ActionBar.PANEL_HEIGHT -
+               PANEL_HEIGHT -
+               PANEL_HEIGHT -
                FILTERS_PANEL_HEIGHT -
                (cardsSplitPane.getDividerSize() / 2);
         return (int)(splitPaneContentHeight * 0.46);
