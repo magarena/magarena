@@ -76,13 +76,8 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F10, this::doScreenshot);
         ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F11, this::toggleFullScreenMode);
         ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F12, this::toggleUI);
-        ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_ESCAPE, this::doEscapeKeyAction);
     }
 
-    private void doEscapeKeyAction() {
-        ScreenController.closeActiveScreen(true);
-    }
-    
     private void addWindowListeners() {
         addWindowListener(new WindowAdapter() {
             @Override

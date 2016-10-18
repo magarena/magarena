@@ -4,8 +4,11 @@ import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.cardBuilder.renderers.CardBuilder;
+import magic.ui.ScreenController;
 import magic.ui.WikiPage;
+import magic.ui.helpers.KeyEventAction;
 import magic.ui.helpers.UrlHelper;
+import magic.ui.screen.duel.game.DuelGameScreen;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -28,9 +31,20 @@ public abstract class MagicScreen extends JPanel {
         setDefaultKeyboardActions();
         setLayout(new MigLayout("insets 0, gap 0", "[fill, grow]", "[fill, grow]"));
     }
+    
+    private void doEscapeKeyAction() {
+        if (this instanceof DuelGameScreen) {
+            ((DuelGameScreen)this).showOptionsMenuOverlay();
+        } else {
+            ScreenController.closeActiveScreen(true);
+        }
+    }
 
     private void setDefaultKeyboardActions() {
-        ScreenHelper.setKeyEvent(this, KeyEvent.VK_F1, this::doF1KeyAction);
+        KeyEventAction.doAction(this, this::doEscapeKeyAction)
+            .onFocus(0, KeyEvent.VK_ESCAPE);
+        KeyEventAction.doAction(this, this::doF1KeyAction)
+            .onFocus(0, KeyEvent.VK_F1);
     }
 
     protected void refreshLayout() {
