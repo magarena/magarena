@@ -178,7 +178,7 @@ class StatsTable extends JPanel {
         }
 
         removeAll();
-        add(panel, "w 100%");
+        add(panel);
         revalidate();
     }
 

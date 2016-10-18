@@ -49,15 +49,18 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
         setDeck(new MagicDeck());
 
-        setLayout(new MigLayout("flowy, insets 0, gap 0"));
+        setLayout(new MigLayout(
+                "flowy, insets 0, gap 0",
+                "[center]"
+        ));
         refreshLayout();
     }
 
     private void refreshLayout() {
         removeAll();
         add(titleBar, "w 100%");
-        add(statsTable, "w 100%, hidemode 3");
-        add(manaCurvePanel, "alignx center, gaptop 2,  gapbottom 4, hidemode 3");
+        add(statsTable, "hidemode 3");
+        add(manaCurvePanel, "gaptop 2,  gapbottom 4, hidemode 3");
         revalidate();
     }
 
@@ -107,9 +110,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         titleBar.setText(UiString.get(_S2, statistics.totalCards));
         statsTable.setStats(statistics);
         manaCurvePanel.setStats(statistics);
-
-        revalidate();
-        repaint();
     }
 
     @Override
