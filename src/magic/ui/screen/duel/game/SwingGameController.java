@@ -1128,4 +1128,8 @@ public class SwingGameController implements IUIGameController {
         this.logStackViewer = logStackViewer;
     }
 
+    public void showGameOptionsOverlay() {
+        ((DuelGameScreen)duelPane.getParent()).showOptionsMenuOverlay();
+    }
+
 }

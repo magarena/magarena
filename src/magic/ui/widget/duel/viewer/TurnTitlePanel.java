@@ -2,7 +2,6 @@ package magic.ui.widget.duel.viewer;
 
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import java.awt.Color;
-import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
@@ -20,7 +19,6 @@ import magic.translate.StringContext;
 import magic.ui.utility.MagicStyle;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.translate.UiString;
-import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.theme.Theme;
 import magic.utility.MagicSystem;
@@ -75,7 +73,7 @@ public class TurnTitlePanel extends JPanel {
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
-                        showOptionsMenu();
+                        controller.showGameOptionsOverlay();
                     }
                 }
         );
@@ -94,19 +92,6 @@ public class TurnTitlePanel extends JPanel {
             });
         }
         return btn;
-    }
-
-    private void showOptionsMenu() {
-        Container parent = getParent();
-        while (parent != null) {
-            if (parent instanceof IOptionsMenu) {
-                break;
-            }
-            parent = parent.getParent();
-        }
-        if (parent != null) {
-            ((IOptionsMenu) parent).showOptionsMenuOverlay();
-        }
     }
 
     public void refresh(final GameViewerInfo gameInfo) {
