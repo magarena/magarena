@@ -1,6 +1,6 @@
 package magic.ui.screen.duel.mulligan;
 
-import com.sun.glass.events.KeyEvent;
+import java.awt.event.KeyEvent;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
