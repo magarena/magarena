@@ -96,7 +96,7 @@ public final class ScreenController {
     }
 
     public static void closeActiveScreen(final boolean isEscapeKeyAction) {
-        if (getScreensStackSize() == 1) {
+        if (screens.size() == 1) {
             mainFrame.quitToDesktop(isEscapeKeyAction);
         } else {
             doCloseActiveScreen();
@@ -121,10 +121,6 @@ public final class ScreenController {
 
     private static void setMainFrameScreen(final MScreen screen) {
         mainFrame.setContentPanel((JPanel)screen);
-    }
-
-    public static int getScreensStackSize() {
-        return screens.size();
     }
 
     public static JPanel getActiveScreen() {
