@@ -68,6 +68,117 @@ public final class ScreenController {
         return mainFrame;
     }
 
+    public static void showPreferencesDialog() {
+        final PreferencesDialog dialog = new PreferencesDialog(getMainFrame(), isDuelActive());
+        if (dialog.isRestartRequired()) {
+            SwingUtilities.invokeLater(() -> {
+                showMainMenuScreen();
+            });
+        }
+    }
+
+    private static void doCloseActiveScreen() {
+        final MScreen activeScreen = screens.pop();
+        final MScreen nextScreen = screens.peek();
+        if (activeScreen.isScreenReadyToClose(nextScreen)) {
+            showScreen(screens.pop());
+            if (nextScreen instanceof DuelGameScreen) {
+                ((DuelGameScreen) nextScreen).updateView();
+            } else if (nextScreen instanceof MainMenuScreen) {
+                ((MainMenuScreen) nextScreen).updateMissingImagesNotification();
+            }
+        } else {
+            screens.push(activeScreen);
+        }
+    }
+
+    public static void closeActiveScreen(final boolean isEscapeKeyAction) {
+        if (getScreensStackSize() == 1) {
+            mainFrame.quitToDesktop(isEscapeKeyAction);
+        } else {
+            doCloseActiveScreen();
+        }
+    }
+
+    public static void closeActiveScreen() {
+        closeActiveScreen(false);
+    }
+
+    private static void showScreen(MScreen screen) {
+        if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
+            screen = hiddenScreen;
+            hiddenScreen = null;
+        }
+
+        setMainFrameScreen(screen);
+        screens.push(screen);
+        ((JPanel)screen).setVisible(true);
+        ((JPanel)screen).requestFocus();
+    }
+
+    private static void setMainFrameScreen(final MScreen screen) {
+        getMainFrame().setContentPanel((JPanel)screen);
+    }
+
+    public static int getScreensStackSize() {
+        return screens.size();
+    }
+
+    public static JPanel getActiveScreen() {
+        return (JPanel)screens.peek();
+    }
+
+    public static void refreshStyle() {
+        for (MScreen screen : screens) {
+            MagicStyle.refreshComponentStyle((JPanel)screen);
+        }
+    }
+
+    public static void showInfoMessage(final String message) {
+        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S2), JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    public static void showWarningMessage(final String message) {
+        MagicSound.BEEP.play();
+        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
+    }
+
+    public static void showDuelSidebarDialog(final IUIGameController controller) {
+        new DuelSidebarLayoutDialog(getMainFrame(), controller);
+    }
+
+    public static boolean isDuelActive() {
+        for (MScreen screen : screens) {
+            if (screen instanceof DuelDecksScreen || screen instanceof DuelGameScreen) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void hideActiveScreen() {
+        if (hiddenScreen == null) {
+            hiddenScreen = screens.pop();
+            ((JPanel)hiddenScreen).setVisible(false);
+            showScreen(screens.pop());
+        } else {
+            throw new RuntimeException("A screen is already hidden - only one allowed at a time!");
+        }
+    }
+
+
+    //
+    // public show screens methods
+    //
+
+    public static void showDevMenuScreen() {
+        showScreen(new DevMenuScreen());
+    }
+
+    public static void showTestScreen() {
+        showScreen(new TestScreen());
+    }
+
     public static void showDuelDecksScreen(final MagicDuel duel) {
         if (!screens.isEmpty() && screens.peek() instanceof DuelDecksScreen) {
             screens.pop();
@@ -202,112 +313,6 @@ public final class ScreenController {
 
     public static void showDownloadImagesScreen() {
         showScreen(new DownloadImagesScreen());
-    }
-
-    public static void showPreferencesDialog() {
-        final PreferencesDialog dialog = new PreferencesDialog(getMainFrame(), isDuelActive());
-        if (dialog.isRestartRequired()) {
-            SwingUtilities.invokeLater(() -> {
-                showMainMenuScreen();
-            });
-        }
-    }
-
-    private static void doCloseActiveScreen() {
-        final MScreen activeScreen = screens.pop();
-        final MScreen nextScreen = screens.peek();
-        if (activeScreen.isScreenReadyToClose(nextScreen)) {
-            showScreen(screens.pop());
-            if (nextScreen instanceof DuelGameScreen) {
-                ((DuelGameScreen) nextScreen).updateView();
-            } else if (nextScreen instanceof MainMenuScreen) {
-                ((MainMenuScreen) nextScreen).updateMissingImagesNotification();
-            }
-        } else {
-            screens.push(activeScreen);
-        }
-    }
-
-    public static void closeActiveScreen(final boolean isEscapeKeyAction) {
-        if (getScreensStackSize() == 1) {
-            mainFrame.quitToDesktop(isEscapeKeyAction);
-        } else {
-            doCloseActiveScreen();
-        }
-    }
-
-    public static void closeActiveScreen() {
-        closeActiveScreen(false);
-    }
-
-    private static void showScreen(MScreen screen) {
-        if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
-            screen = hiddenScreen;
-            hiddenScreen = null;
-        }
-
-        setMainFrameScreen(screen);
-        screens.push(screen);
-        ((JPanel)screen).setVisible(true);
-        ((JPanel)screen).requestFocus();
-    }
-
-    private static void setMainFrameScreen(final MScreen screen) {
-        getMainFrame().setContentPanel((JPanel)screen);
-    }
-
-    public static int getScreensStackSize() {
-        return screens.size();
-    }
-
-    public static JPanel getActiveScreen() {
-        return (JPanel)screens.peek();
-    }
-
-    public static void refreshStyle() {
-        for (MScreen screen : screens) {
-            MagicStyle.refreshComponentStyle((JPanel)screen);
-        }
-    }
-
-    public static void showInfoMessage(final String message) {
-        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S2), JOptionPane.INFORMATION_MESSAGE);
-    }
-
-    public static void showWarningMessage(final String message) {
-        MagicSound.BEEP.play();
-        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
-    }
-
-    public static void showDuelSidebarDialog(final IUIGameController controller) {
-        new DuelSidebarLayoutDialog(getMainFrame(), controller);
-    }
-
-    public static boolean isDuelActive() {
-        for (MScreen screen : screens) {
-            if (screen instanceof DuelDecksScreen || screen instanceof DuelGameScreen) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public static void hideActiveScreen() {
-        if (hiddenScreen == null) {
-            hiddenScreen = screens.pop();
-            ((JPanel)hiddenScreen).setVisible(false);
-            showScreen(screens.pop());
-        } else {
-            throw new RuntimeException("A screen is already hidden - only one allowed at a time!");
-        }
-    }
-
-    public static void showDevMenuScreen() {
-        showScreen(new DevMenuScreen());
-    }
-
-    public static void showTestScreen() {
-        showScreen(new TestScreen());
     }
 
 }
