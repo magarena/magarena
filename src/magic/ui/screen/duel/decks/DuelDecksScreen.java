@@ -165,7 +165,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     }
 
     private void showTiledDeckCardImages() {
-        ScreenController.showDeckView(getActiveDeck());
+        ScreenController.showDeckTiledCardsScreen(getActiveDeck());
     }
 
     private MenuButton getWinnerButton() {

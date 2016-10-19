@@ -244,7 +244,7 @@ public final class ScreenController {
         }
     }
 
-    public static void showDeckView(final MagicDeck deck) {
+    public static void showDeckTiledCardsScreen(final MagicDeck deck) {
         showScreen(new DeckTiledCardsScreen(deck));
     }
 

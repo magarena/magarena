@@ -74,7 +74,7 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
 
     private void showDeckImageView() {
         if (screenContent.getDeck().size() > 0) {
-            ScreenController.showDeckView(screenContent.getDeck());
+            ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         } else {
             showInvalidActionMessage("Deck is empty! Nothing to show.");
         }

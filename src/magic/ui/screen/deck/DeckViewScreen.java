@@ -56,7 +56,7 @@ public class DeckViewScreen extends HeaderFooterScreen
 
     private void showDeckImageView() {
         if (screenContent.getDeck().size() > 0) {
-            ScreenController.showDeckView(screenContent.getDeck());
+            ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         } else {
             showInvalidActionMessage(UiString.get(_S7));
         }

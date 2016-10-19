@@ -75,7 +75,7 @@ public class DecksScreen extends HeaderFooterScreen {
         } else if (screenContent.getDeck().isValid() == false) {
             showInvalidActionMessage(UiString.get(_S13));
         } else {
-            ScreenController.showDeckView(screenContent.getDeck());
+            ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         }
     }
     

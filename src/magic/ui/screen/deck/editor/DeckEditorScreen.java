@@ -101,7 +101,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     
     private void showTiledImagesView() {
         if (screenContent.getDeck().size() > 0) {
-            ScreenController.showDeckView(screenContent.getDeck());
+            ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         } else {
             showInvalidActionMessage(UiString.get(_S13));
         }
