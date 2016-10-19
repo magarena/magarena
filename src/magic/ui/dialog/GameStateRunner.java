@@ -34,7 +34,7 @@ public class GameStateRunner
 
     public GameStateRunner(final MagicFrame frame) {
 
-        super(ScreenController.getMainFrame(), UiString.get("Test Classes (double-click to select)"), new Dimension(500, 460));
+        super(ScreenController.getFrame(), UiString.get("Test Classes (double-click to select)"), new Dimension(500, 460));
 
         setLookAndFeel();
         refreshLayout();

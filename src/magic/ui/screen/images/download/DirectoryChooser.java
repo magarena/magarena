@@ -70,7 +70,7 @@ public class DirectoryChooser extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 final JFileChooser fileChooser = new ImagesDirectoryChooser(defaultPath.toString());
-                final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
+                final int action = fileChooser.showOpenDialog(ScreenController.getFrame());
                 if (action == JFileChooser.APPROVE_OPTION) {
                     setImagesPath(fileChooser.getSelectedFile());
                 }

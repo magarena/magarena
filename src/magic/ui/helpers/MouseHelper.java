@@ -11,7 +11,7 @@ public final class MouseHelper {
     }
 
     public static void showDefaultCursor() {
-        showDefaultCursor(ScreenController.getMainFrame());
+        showDefaultCursor(ScreenController.getFrame());
     }
 
     public static void showBusyCursor(Component c) {
@@ -19,7 +19,7 @@ public final class MouseHelper {
     }
 
     public static void showBusyCursor() {
-        showBusyCursor(ScreenController.getMainFrame());
+        showBusyCursor(ScreenController.getFrame());
     }
     
     public static void showHandCursor(Component c) {

@@ -204,7 +204,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     private boolean generateRandomDeck() {
         final RandomDeckGeneratorDialog dialog = new RandomDeckGeneratorDialog(
-                ScreenController.getMainFrame(),
+                ScreenController.getFrame(),
                 getCardPoolSize(),
                 getDefaultDeckSize()
         );

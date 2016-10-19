@@ -121,7 +121,7 @@ public class PreferencesDialog
 
         this.setTitle(UiString.get(_S79));
         this.setSize(460, 530);
-        this.setLocationRelativeTo(ScreenController.getMainFrame());
+        this.setLocationRelativeTo(ScreenController.getFrame());
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);

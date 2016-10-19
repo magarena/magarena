@@ -23,8 +23,8 @@ public class UiExceptionHandler extends FileExceptionHandler {
     @Override
     public void reportException(final ExceptionReport report) {
         super.reportException(report);
-        if (ScreenController.getMainFrame() != null) {
-            doScreenShot(ScreenController.getMainFrame().getContentPane());
+        if (ScreenController.getFrame() != null) {
+            doScreenShot(ScreenController.getFrame().getContentPane());
         }
         doNotifyUser();
     }

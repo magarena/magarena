@@ -15,7 +15,7 @@ public abstract class FilterDialog extends JDialog {
     public abstract boolean isFiltering();
 
     FilterDialog() {
-        super(ScreenController.getMainFrame());
+        super(ScreenController.getFrame());
         setUndecorated(true);
         setSize(260, 300);
         setContentPane();

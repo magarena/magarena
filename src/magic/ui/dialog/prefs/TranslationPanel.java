@@ -207,7 +207,7 @@ class TranslationPanel extends JPanel {
         final File langFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS).resolve(lang + ".txt").toFile();
         if (langFile.exists()) {
             if (JOptionPane.showOptionDialog(
-                    ScreenController.getMainFrame(),
+                    ScreenController.getFrame(),
                     String.format("<html>%s</html>", UiString.get(_S2, lang)),
                     UiString.get(_S3),
                     JOptionPane.YES_NO_OPTION,

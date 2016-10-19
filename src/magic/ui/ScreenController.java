@@ -67,7 +67,7 @@ public final class ScreenController {
     private static final Stack<MScreen> screens = new Stack<>();
     private static MScreen hiddenScreen;
 
-    public static MagicFrame getMainFrame() {
+    public static MagicFrame getFrame() {
         return mainFrame;
     }
 

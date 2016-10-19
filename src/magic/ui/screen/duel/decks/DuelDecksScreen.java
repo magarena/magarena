@@ -142,7 +142,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
     private void doRestartDuel() {
         try {
-            ScreenController.getMainFrame().restartDuel();
+            ScreenController.getFrame().restartDuel();
         } catch (InvalidDeckException ex) {
             ScreenController.showWarningMessage(ex.getMessage());
         }
@@ -204,7 +204,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
     private JPanel getHeaderPanel() {
         final DuelConfig config = screenContent.getDuel().getConfiguration();
-        final DuelSettingsPanel panel = new DuelSettingsPanel(ScreenController.getMainFrame(), config);
+        final DuelSettingsPanel panel = new DuelSettingsPanel(ScreenController.getFrame(), config);
         panel.setEnabled(false);
         return panel;
     }

@@ -57,7 +57,7 @@ public class DecksFilterDialog extends MagicDialog {
     // CTR
     public DecksFilterDialog(final MagicFrame frame) {
 
-        super(ScreenController.getMainFrame(), UiString.get(_S3), new Dimension(400, 300));
+        super(ScreenController.getFrame(), UiString.get(_S3), new Dimension(400, 300));
 
         if (filterHistory.size() > 0) {
             deckFilter = filterHistory.get(historyIndex-1);

@@ -42,7 +42,7 @@ public class MagicFileChoosers {
                 }
                 if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            ScreenController.getMainFrame(),
+                            ScreenController.getFrame(),
                             "Overwrite existing saved game?",
                             "Overwrite file",
                             JOptionPane.YES_NO_OPTION);

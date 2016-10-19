@@ -50,7 +50,7 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
 
     private void doResumeDuel() {
         try {
-            ScreenController.getMainFrame().loadDuel();
+            ScreenController.getFrame().loadDuel();
         } catch (InvalidDeckException ex) {
             ScreenController.showWarningMessage(ex.getMessage());
         }

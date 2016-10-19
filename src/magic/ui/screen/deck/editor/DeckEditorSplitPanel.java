@@ -139,7 +139,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
 
     private int getDividerPosition() {
         final int splitPaneContentHeight =
-               ScreenController.getMainFrame().getContentPane().getHeight() -
+               ScreenController.getFrame().getContentPane().getHeight() -
                PANEL_HEIGHT -
                PANEL_HEIGHT -
                FILTERS_PANEL_HEIGHT -
@@ -380,7 +380,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         private void doClearDeck() {
             final int userResponse =
                     JOptionPane.showConfirmDialog(
-                            ScreenController.getMainFrame(),
+                            ScreenController.getFrame(),
                             "Remove all cards from deck?",
                             "Clear Deck",
                             JOptionPane.YES_NO_OPTION,

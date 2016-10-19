@@ -22,9 +22,9 @@ class SearchOperandCombo extends JComboBox<SearchOperand> {
         addItemListener((e) -> {
             if (e.getStateChange() == ItemEvent.SELECTED) {
                 SwingUtilities.invokeLater(() -> {
-                    MouseHelper.showBusyCursor(ScreenController.getMainFrame());
+                    MouseHelper.showBusyCursor(ScreenController.getFrame());
                     fbp.filterChanged();
-                    MouseHelper.showDefaultCursor(ScreenController.getMainFrame());
+                    MouseHelper.showDefaultCursor(ScreenController.getFrame());
                 });
             }
         });

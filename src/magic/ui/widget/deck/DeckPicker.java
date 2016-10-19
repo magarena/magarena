@@ -309,7 +309,7 @@ public class DeckPicker extends JPanel {
             filterButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    final DecksFilterDialog dialog = new DecksFilterDialog(ScreenController.getMainFrame());
+                    final DecksFilterDialog dialog = new DecksFilterDialog(ScreenController.getFrame());
                     dialog.setVisible(true);
                     if (!dialog.isCancelled()) {
                         deckFilter = dialog.getDeckFilter();

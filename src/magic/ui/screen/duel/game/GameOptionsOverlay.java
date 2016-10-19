@@ -21,7 +21,7 @@ class GameOptionsOverlay extends ScreenOptionsOverlay {
     private final SwingGameController controller;
 
     GameOptionsOverlay(SwingGameController controller) {
-        super(ScreenController.getMainFrame());
+        super(ScreenController.getFrame());
         this.controller = controller;
         controller.setGamePaused(true);
     }

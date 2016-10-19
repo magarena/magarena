@@ -203,7 +203,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
                     ScreenController.showWarningMessage(UiString.get(_S16));
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            ScreenController.getMainFrame(),
+                            ScreenController.getFrame(),
                             UiString.get(_S17),
                             UiString.get(_S18),
                             JOptionPane.YES_NO_OPTION);

@@ -33,6 +33,22 @@ import static magic.utility.MagicFileSystem.getDataPath;
 import static magic.utility.MagicFileSystem.getDataPath;
 import static magic.utility.MagicFileSystem.getDataPath;
 import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
 
 final class GameplayReport {
     private GameplayReport() {}
@@ -56,7 +72,7 @@ final class GameplayReport {
 
     private static void saveScreenshot() throws IOException {
         final Path filePath = MagicFileSystem.getGameplayReportDirectory().resolve(SCREEN_FILE);
-        ImageHelper.doScreenshotToFile(ScreenController.getMainFrame().getContentPane(), filePath, IMAGE_TYPE);
+        ImageHelper.doScreenshotToFile(ScreenController.getFrame().getContentPane(), filePath, IMAGE_TYPE);
     }
 
     private static void saveGameState(MagicGame aGame) {

@@ -40,7 +40,7 @@ public class SelectAiPlayerScreen extends SelectPlayerScreen {
 
     @Override
     protected void doNewPlayerAction() {
-        final AiPropertiesDialog dialog = new AiPropertiesDialog(ScreenController.getMainFrame());
+        final AiPropertiesDialog dialog = new AiPropertiesDialog(ScreenController.getFrame());
         final PlayerProfile newProfile = dialog.getPlayerProfile();
         if (newProfile != null) {
             PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
@@ -51,7 +51,7 @@ public class SelectAiPlayerScreen extends SelectPlayerScreen {
     @Override
     protected void doEditPlayerAction() {
         final AiProfile profile = (AiProfile) getSelectedPlayer();
-        new AiPropertiesDialog(ScreenController.getMainFrame(), profile);
+        new AiPropertiesDialog(ScreenController.getFrame(), profile);
         getJList().repaint();
         notifyPlayerUpdated(profile);
     }

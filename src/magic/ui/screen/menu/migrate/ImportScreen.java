@@ -85,7 +85,7 @@ public class ImportScreen extends MScreen {
 
         private void doImport() {
             final JFileChooser fileChooser = new MagarenaDirectoryChooser();
-            final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
+            final int action = fileChooser.showOpenDialog(ScreenController.getFrame());
             if (action == JFileChooser.APPROVE_OPTION) {
                 showImportProgressPanel(fileChooser.getSelectedFile());
             }

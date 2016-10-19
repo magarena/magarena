@@ -39,7 +39,7 @@ public class AiPropertiesDialog extends MagicDialog {
 
     public AiPropertiesDialog(final MagicFrame frame, final AiProfile profile) {
 
-        super(ScreenController.getMainFrame(), UiString.get(_S1), new Dimension(400, 260));
+        super(ScreenController.getFrame(), UiString.get(_S1), new Dimension(400, 260));
 
         this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());

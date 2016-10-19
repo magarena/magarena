@@ -141,7 +141,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     private void doClearDeck() {
         if (deck.size() > 0) {
             final int userResponse = JOptionPane.showOptionDialog(
-                    ScreenController.getMainFrame(),
+                    ScreenController.getFrame(),
                     String.format("<html>%s<br><br><b>%s</b></html>", UiString.get(_S3), UiString.get(_S4)),
                     UiString.get(_S5),
                     JOptionPane.YES_NO_OPTION,

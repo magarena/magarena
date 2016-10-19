@@ -44,7 +44,7 @@ public class SelectHumanPlayerScreen extends SelectPlayerScreen {
     @Override
     protected void doNewPlayerAction() {
         final String newName = (String) JOptionPane.showInputDialog(
-            ScreenController.getMainFrame(),
+            ScreenController.getFrame(),
             String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
             UiString.get(_S3),
             JOptionPane.PLAIN_MESSAGE,
@@ -61,7 +61,7 @@ public class SelectHumanPlayerScreen extends SelectPlayerScreen {
     protected void doEditPlayerAction() {
         final PlayerProfile profile = getSelectedPlayer();
         final String newName = (String) JOptionPane.showInputDialog(
-            ScreenController.getMainFrame(),
+            ScreenController.getFrame(),
             String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
             UiString.get(_S4),
             JOptionPane.PLAIN_MESSAGE,

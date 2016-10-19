@@ -47,7 +47,7 @@ public class DuelPropertiesDialog extends MagicDialog {
         final MagicFormat cube
     ) {
 
-        super(ScreenController.getMainFrame(), UiString.get(_S1), new Dimension(380, 260));
+        super(ScreenController.getFrame(), UiString.get(_S1), new Dimension(380, 260));
 
         lifeSliderPanel = new SliderPanel(UiString.get(_S2), (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
         handSizeSliderPanel = new SliderPanel(UiString.get(_S3), 6, 8, 1, handSize);

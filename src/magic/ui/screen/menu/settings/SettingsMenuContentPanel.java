@@ -52,7 +52,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
 
     private void showFiremindWorkerDialog() {
         if (firemindWorkerDialog == null || !firemindWorkerDialog.isDisplayable()) {
-            firemindWorkerDialog = new FiremindWorkerDialog(ScreenController.getMainFrame());
+            firemindWorkerDialog = new FiremindWorkerDialog(ScreenController.getFrame());
         } else {
             firemindWorkerDialog.setVisible(true);
         }
@@ -60,7 +60,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
 
     private void doResetRestart() {
         final int response = JOptionPane.showOptionDialog(
-                ScreenController.getMainFrame(),
+                ScreenController.getFrame(),
                 String.format("<html>%s<br><br><b>%s</b></html>", UiString.get(_S11), UiString.get(_S12)),
                 UiString.get(_S13),
                 JOptionPane.YES_NO_OPTION,
@@ -83,7 +83,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     }
 
     private void doToggleFullScreen() {
-        ScreenController.getMainFrame().toggleFullScreenMode();
+        ScreenController.getFrame().toggleFullScreenMode();
     }
 
     private void doCloseMenu() {

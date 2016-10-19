@@ -177,7 +177,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
     private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
         final int action = JOptionPane.showOptionDialog(
-            ScreenController.getMainFrame(),
+            ScreenController.getFrame(),
             String.format("<html>%s<br>%s<br><br><b>%s</b></html>",
                 UiString.get(_S4, profile.getPlayerName()),
                 UiString.get(_S16),

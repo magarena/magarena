@@ -155,7 +155,7 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
                     ScreenController.showWarningMessage("This directory is reserved for prebuilt decks.\nPlease choose a different directory.");
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            ScreenController.getMainFrame(),
+                            ScreenController.getFrame(),
                             "Overwrite existing deck file?",
                             "Overwrite file",
                             JOptionPane.YES_NO_OPTION);

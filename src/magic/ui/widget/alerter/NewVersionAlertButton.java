@@ -32,7 +32,7 @@ public class NewVersionAlertButton extends AlertButton {
                 setVisible(false);
                 String[] buttons = {UiString.get(_S2), UiString.get(_S3), UiString.get(_S4)};
                 int rc = JOptionPane.showOptionDialog(
-                        ScreenController.getMainFrame(),
+                        ScreenController.getFrame(),
                         UiString.get(_S1, newVersion),
                         UiString.get(_S5),
                         0,

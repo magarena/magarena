@@ -28,7 +28,7 @@ public class UpgradeJavaAlertButton extends AlertButton {
                 setVisible(false);
                 String[] buttons = {UiString.get(_S1)};
                 int rc = JOptionPane.showOptionDialog(
-                    ScreenController.getMainFrame(),
+                    ScreenController.getFrame(),
                     String.format("<html>%s<br><br>%s<br><br>%s</html>",
                         UiString.get(_S2),
                         UiString.get(_S3, JRE_VERSION),

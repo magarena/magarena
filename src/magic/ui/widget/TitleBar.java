@@ -20,7 +20,7 @@ public class TitleBar extends JPanel {
 
         setPreferredSize(new Dimension(getPreferredSize().width, 22));
         setMinimumSize(getPreferredSize());
-        setMaximumSize(new Dimension(ScreenController.getMainFrame().getSize().width, 22));
+        setMaximumSize(new Dimension(ScreenController.getFrame().getSize().width, 22));
 
         setLayout(new MigLayout("insets 0 4 0 4", "", "grow, fill"));
         add(label, "pushx");

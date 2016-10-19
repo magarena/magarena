@@ -105,8 +105,8 @@ public class AnnotatedCardPanel extends JPanel {
 
     private static Rectangle getWindowRect() {
         return new Rectangle(
-                    ScreenController.getMainFrame().getLocationOnScreen(),
-                    ScreenController.getMainFrame().getSize());
+                    ScreenController.getFrame().getLocationOnScreen(),
+                    ScreenController.getFrame().getSize());
     }
 
     private void setDelayedVisibilityTimer() {

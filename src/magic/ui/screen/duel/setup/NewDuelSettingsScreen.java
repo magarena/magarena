@@ -43,7 +43,7 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
     public NewDuelSettingsScreen() {
         super(UiString.get(_S1));
         duelConfig.load();
-        content = new ScreenContent(duelConfig, ScreenController.getMainFrame());
+        content = new ScreenContent(duelConfig, ScreenController.getFrame());
         setMainContent(content);
         setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S2)));
         setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S3)));
@@ -55,7 +55,7 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
             updateDuelConfig();
             ScreenController.closeActiveScreen(false);
             try {
-                ScreenController.getMainFrame().newDuel(duelConfig);
+                ScreenController.getFrame().newDuel(duelConfig);
             } catch (InvalidDeckException ex) {
                 ScreenController.showWarningMessage(UiString.get(_S4, ex.getMessage()));
             }

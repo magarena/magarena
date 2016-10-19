@@ -58,7 +58,7 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
     // CTR
     public RandomDeckGeneratorDialog(final MagicFrame frame, final int cardPoolSize, final int defaultDeckSize) {
 
-        super(ScreenController.getMainFrame(), UiString.get(_S5), new Dimension(460, 340));
+        super(ScreenController.getFrame(), UiString.get(_S5), new Dimension(460, 340));
 
         this.cardPoolSize = cardPoolSize;
 

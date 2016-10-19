@@ -41,7 +41,7 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
     
     private void doLoadTestClass() {
         MagicSystem.setIsTestGame(true);
-        new GameStateRunner(ScreenController.getMainFrame());
+        new GameStateRunner(ScreenController.getFrame());
     }
     
     private void onCloseMenu() {
@@ -60,7 +60,7 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         fileChooser.setAcceptAllFileFilterUsed(false);
         // Add the description preview pane
         fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
-        final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
+        final int action = fileChooser.showOpenDialog(ScreenController.getFrame());
         if (action == JFileChooser.APPROVE_OPTION) {
             return fileChooser.getSelectedFile();
         } else {

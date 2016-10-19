@@ -96,7 +96,7 @@ public class MagicMain {
             // set both player profile to AI for AI vs AI mode
             config.setPlayerProfile(0, config.getPlayerProfile(1));
 
-            ScreenController.getMainFrame().newDuel(config);
+            ScreenController.getFrame().newDuel(config);
             return;
         }
 
