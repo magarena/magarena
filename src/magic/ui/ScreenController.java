@@ -1,6 +1,7 @@
 package magic.ui;
 
 import java.util.Stack;
+import java.util.concurrent.Callable;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
@@ -16,6 +17,7 @@ import magic.model.player.PlayerProfile;
 import magic.translate.UiString;
 import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.about.AboutScreen;
 import magic.ui.screen.card.explorer.ExplorerScreen;
@@ -107,22 +109,6 @@ public final class ScreenController {
         closeActiveScreen(false);
     }
 
-    private static void showScreen(MScreen screen) {
-        if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
-            screen = hiddenScreen;
-            hiddenScreen = null;
-        }
-
-        setMainFrameScreen(screen);
-        screens.push(screen);
-        ((JPanel)screen).setVisible(true);
-        ((JPanel)screen).requestFocus();
-    }
-
-    private static void setMainFrameScreen(final MScreen screen) {
-        mainFrame.setContentPanel((JPanel)screen);
-    }
-
     public static JPanel getActiveScreen() {
         return (JPanel)screens.peek();
     }
@@ -169,145 +155,170 @@ public final class ScreenController {
         return !screens.isEmpty() && screens.peek() instanceof DuelDecksScreen;
     }
 
+    private static void setMainFrameScreen(final MScreen screen) {
+        mainFrame.setContentPanel((JPanel)screen);
+    }
+    
+    private static void showScreen(MScreen screen) {
+        if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
+            screen = hiddenScreen;
+            hiddenScreen = null;
+        }
+
+        setMainFrameScreen(screen);
+        screens.push(screen);
+        ((JPanel)screen).setVisible(true);
+        ((JPanel)screen).requestFocus();
+    }
+
+    private static void showScreen(Callable<MScreen> c) {
+        MouseHelper.showBusyCursor();
+        try {
+            showScreen(c.call());
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+        } finally {
+            MouseHelper.showDefaultCursor();
+        }
+    }
 
     //
     // public show screens methods
     //
 
     public static void showDevMenuScreen() {
-        showScreen(new DevMenuScreen());
+        showScreen(() -> new DevMenuScreen());
     }
 
     public static void showTestScreen() {
-        showScreen(new TestScreen());
+        showScreen(() -> new TestScreen());
     }
 
     public static void showDuelDecksScreen(final MagicDuel duel) {
         if (isDuelDecksScreenDisplayed()) {
             screens.pop();
         }
-        showScreen(new DuelDecksScreen(duel));
+        showScreen(() -> new DuelDecksScreen(duel));
     }
 
     public static void showMainMenuScreen() {
         screens.clear();
-        showScreen(new MainMenuScreen());
+        showScreen(() -> new MainMenuScreen());
     }
 
     public static void showReadMeScreen() {
-        showScreen(new ReadmeScreen());
+        showScreen(() -> new ReadmeScreen());
     }
 
     public static void showKeywordsScreen() {
-        showScreen(new KeywordsScreen());
+        showScreen(() -> new KeywordsScreen());
     }
 
     public static void showHelpMenuScreen() {
-        showScreen(new HelpMenuScreen());
+        showScreen(() -> new HelpMenuScreen());
     }
 
     public static void showSettingsMenuScreen() {
-        showScreen(new SettingsMenuScreen());
+        showScreen(() -> new SettingsMenuScreen());
     }
 
     public static void showCardExplorerScreen() {
-        showScreen(new ExplorerScreen());
+        showScreen(() -> new ExplorerScreen());
     }
 
     public static void showDeckEditor(final MagicDeck deck) {
         showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
-                ? new DeckEditorSplitScreen(deck)
-                : new DeckEditorScreen(deck));
+                ? () -> new DeckEditorSplitScreen(deck)
+                : () -> new DeckEditorScreen(deck));
     }
 
     public static void showDeckEditor() {
         showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
-                ? new DeckEditorSplitScreen()
-                : new DeckEditorScreen());
+                ? () -> new DeckEditorSplitScreen()
+                : () -> new DeckEditorScreen());
     }
 
     public static void showDeckViewScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
-        showScreen(new DeckViewScreen(deck, selectedCard));
+        showScreen(() -> new DeckViewScreen(deck, selectedCard));
     }
 
     public static void showSampleHandScreen(final MagicDeck deck) {
-        showScreen(new SampleHandScreen(deck));
+        showScreen(() -> new SampleHandScreen(deck));
     }
 
     public static void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
-        showScreen(new CardZoneScreen(cards, zoneName, animateCards));
+        showScreen(() -> new CardZoneScreen(cards, zoneName, animateCards));
     }
 
     public static void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         if (screens.peek() instanceof MulliganScreen) {
-            final MulliganScreen screen = (MulliganScreen) screens.peek();
+            MulliganScreen screen = (MulliganScreen) screens.peek();
             screen.dealNewHand(choicePanel, hand);
         } else {
-            showScreen(new MulliganScreen(choicePanel, hand));
+            showScreen(() -> new MulliganScreen(choicePanel, hand));
         }
     }
 
     public static void showDeckTiledCardsScreen(final MagicDeck deck) {
-        showScreen(new DeckTiledCardsScreen(deck));
+        showScreen(() -> new DeckTiledCardsScreen(deck));
     }
 
     public static void showSelectAiProfileScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
-        showScreen(new SelectAiPlayerScreen(listener, profile));
+        showScreen(() -> new SelectAiPlayerScreen(listener, profile));
     }
 
     public static void showSelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
-        showScreen(new SelectHumanPlayerScreen(listener, profile));
+        showScreen(() -> new SelectHumanPlayerScreen(listener, profile));
     }
 
     public static void showAvatarImagesScreen(final IAvatarImageConsumer consumer) {
-        showScreen(new AvatarImagesScreen(consumer));
+        showScreen(() -> new AvatarImagesScreen(consumer));
     }
 
     public static void showNewDuelSettingsScreen() {
-        showScreen(new NewDuelSettingsScreen());
+        showScreen(() -> new NewDuelSettingsScreen());
     }
 
     public static void showGameLogScreen() {
-        showScreen(new GameLogScreen());
+        showScreen(() -> new GameLogScreen());
     }
 
     public static void showCardScriptScreen(final MagicCardDefinition card) {
-        showScreen(new CardScriptScreen(card));
+        showScreen(() -> new CardScriptScreen(card));
     }
 
     public static void showDecksScreen(final IDeckConsumer deckConsumer) {
-        showScreen(new DecksScreen(deckConsumer));
+        showScreen(() -> new DecksScreen(deckConsumer));
     }
 
     public static void showDuelGameScreen(final MagicGame game) {
-        showScreen(new DuelGameScreen(game));
+        showScreen(() -> new DuelGameScreen(game));
     }
 
     public static void showDuelGameScreen(final MagicDuel duel) {
-        showScreen(new DuelGameScreen(duel));
+        showScreen(() -> new DuelGameScreen(duel));
     }
 
     public static void showStartScreen() {
         screens.clear();
-        showScreen(new StartScreen());
+        showScreen(() -> new StartScreen());
     }
 
     public static void showImportScreen() {
         screens.clear();
-        showScreen(new ImportScreen());
+        showScreen(() -> new ImportScreen());
     }
 
     public static void showAboutScreen() {
         if (screens.peek() instanceof AboutScreen) {
             // already open, do nothing
         } else {
-            showScreen(new AboutScreen());
+            showScreen(() -> new AboutScreen());
             mainFrame.getGlassPane().setVisible(false);
         }
     }
 
     public static void showDownloadImagesScreen() {
-        showScreen(new DownloadImagesScreen());
+        showScreen(() -> new DownloadImagesScreen());
     }
-
 }
