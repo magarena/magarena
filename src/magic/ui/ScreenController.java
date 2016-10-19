@@ -212,27 +212,19 @@ public final class ScreenController {
     }
 
     public static void showDeckEditor(final MagicDeck deck) {
-        if (GeneralConfig.getInstance().isSplitViewDeckEditor()) {
-            showScreen(new DeckEditorSplitScreen(deck));
-        } else {
-            showScreen(new DeckEditorScreen(deck));
-        }
+        showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
+                ? new DeckEditorSplitScreen(deck)
+                : new DeckEditorScreen(deck));
     }
 
     public static void showDeckEditor() {
-        if (GeneralConfig.getInstance().isSplitViewDeckEditor()) {
-            showScreen(new DeckEditorSplitScreen());
-        } else {
-            showScreen(new DeckEditorScreen());
-        }
+        showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
+                ? new DeckEditorSplitScreen()
+                : new DeckEditorScreen());
     }
 
     public static void showDeckViewScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
         showScreen(new DeckViewScreen(deck, selectedCard));
-    }
-
-    public static void showDeckViewScreen(MagicDeck deck) {
-        showScreen(new DeckViewScreen(deck));
     }
 
     public static void showSampleHandScreen(final MagicDeck deck) {
