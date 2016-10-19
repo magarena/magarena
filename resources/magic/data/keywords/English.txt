@@ -44,36 +44,46 @@ Any creatures named [...] can attack in a band as long as at least one has "band
 
 *Battle Cry
 Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.
+@Accorder Paladin
 
 *Bestow [cost]
 You may cast this card by paying [cost] rather than its mana cost.
 If you chose to pay this spell’s bestow cost, it becomes an Aura enchantment and gains enchant creature. These effects last until one of two things happens: this spell has an illegal target as it resolves or the permanent this spell becomes, becomes unattached.
+@Nighthowler;Celestial Archon
 
 *Bloodthirst N
 If an opponent was dealt damage this turn, this permanent enters the battlefield with N +1/+1 counters on it.
+@Battering Wurm
 
 *Bloodthirst X
 This permanent enters the battlefield with X +1/+1 counters on it, where X is the total damage your opponents have been dealt this turn.
+@Petrified Wood-Kin
 
 *Bushido N
 Whenever this creature blocks or becomes blocked, it gets +N/+N until end of turn.
+@Hand of Honor
 
 *Buyback [cost]
 You may pay an additional [cost] as you cast this spell.
 If the buyback cost was paid, put this spell into its owner’s hand instead of into that player’s graveyard as it resolves.
+@Lab Rats;Walk the Aeons
 
 *Cascade
 When you cast this spell, exile cards from the top of your library until you exile a nonland card whose converted mana cost is less than this spell’s converted mana cost. You may cast that card without paying its mana cost. Then put all cards exiled this way that weren’t cast on the bottom of your library in a random order.
+@Captured Sunlight
 
 *Champion an [...]
 When this permanent enters the battlefield, sacrifice it unless you exile another [...] you control.
 When this permanent leaves the battlefield, return the exiled card to the battlefield under its owner’s control.
+@Lightning Crafter
 
 *Changeling
 This object is every creature type at all times.
+@Moonglove Changeling
 
 *Cipher
 Then you may exile this spell card encoded on a creature you control. Whenever that creature deals combat damage to a player, its controller may cast a copy of this card without paying its mana cost.
+@Shadow Slice
 
 *Conspire
 As an additional cost to cast this spell, you may tap two untapped creatures you control that each share a color with it.
@@ -126,8 +136,11 @@ At the beginning of your upkeep, if this permanent came under your control since
 You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's converted mana cost.
 *Enchant [...]
 This card can only be attached to an [...].
+
 *Entwine [cost]
 You may choose all modes of this spell instead of just one. If you do, you pay an additional [cost].
+@Incite War;Wail of the Nim;Solar Tide
+
 *Epic
 For the rest of the game, you can’t cast spells.
 At the beginning of each of your upkeeps for the rest of the game, copy this spell except for its epic ability. If the spell has any targets, you may choose new targets for the copy.
