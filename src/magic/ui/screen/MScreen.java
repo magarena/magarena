@@ -13,7 +13,7 @@ import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class MagicScreen extends JPanel {
+public abstract class MScreen extends JPanel {
 
     private static final JPanel TEMP_PANEL = new JPanel() {
         @Override
@@ -26,7 +26,7 @@ public abstract class MagicScreen extends JPanel {
     private WikiPage wikiPage = WikiPage.HOME;
     private ScreenLoaderWorker loadingWorker;
 
-    public MagicScreen() {
+    public MScreen() {
         setOpaque(false);
         setDefaultKeyboardActions();
         setLayout(new MigLayout("insets 0, gap 0", "[fill, grow]", "[fill, grow]"));

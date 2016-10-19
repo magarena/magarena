@@ -2,11 +2,11 @@ package magic.ui.screen.menu.main;
 
 import magic.data.GeneralConfig;
 import magic.ui.WikiPage;
-import magic.ui.screen.MagicScreen;
+import magic.ui.screen.MScreen;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
-public class MainMenuScreen extends MagicScreen {
+public class MainMenuScreen extends MScreen {
 
     private final MainMenuContentPanel contentPanel;
 

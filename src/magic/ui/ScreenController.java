@@ -19,7 +19,7 @@ import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.test.TestScreen;
-import magic.ui.screen.MagicScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
 import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.ui.screen.card.script.CardScriptScreen;
@@ -58,8 +58,8 @@ public final class ScreenController {
     private static final String _S3 = "Warning";
 
     private static MagicFrame mainFrame = null;
-    private static final Stack<MagicScreen> screens = new Stack<>();
-    private static MagicScreen hiddenScreen;
+    private static final Stack<MScreen> screens = new Stack<>();
+    private static MScreen hiddenScreen;
 
     public static MagicFrame getMainFrame() {
         if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
@@ -214,8 +214,8 @@ public final class ScreenController {
     }
 
     private static void doCloseActiveScreen() {
-        final MagicScreen activeScreen = screens.pop();
-        final MagicScreen nextScreen = screens.peek();
+        final MScreen activeScreen = screens.pop();
+        final MScreen nextScreen = screens.peek();
         if (activeScreen.isScreenReadyToClose(nextScreen)) {
             showScreen(screens.pop());
             if (nextScreen instanceof DuelGameScreen) {
@@ -240,7 +240,7 @@ public final class ScreenController {
         closeActiveScreen(false);
     }
 
-    private static void showScreen(MagicScreen screen) {
+    private static void showScreen(MScreen screen) {
         if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
             screen = hiddenScreen;
             hiddenScreen = null;
@@ -252,7 +252,7 @@ public final class ScreenController {
         ((JPanel)screen).requestFocus();
     }
 
-    private static void setMainFrameScreen(final MagicScreen screen) {
+    private static void setMainFrameScreen(final MScreen screen) {
         getMainFrame().setContentPanel((JPanel)screen);
     }
 
@@ -265,7 +265,7 @@ public final class ScreenController {
     }
 
     public static void refreshStyle() {
-        for (MagicScreen screen : screens) {
+        for (MScreen screen : screens) {
             MagicStyle.refreshComponentStyle((JPanel)screen);
         }
     }
@@ -284,7 +284,7 @@ public final class ScreenController {
     }
 
     public static boolean isDuelActive() {
-        for (MagicScreen screen : screens) {
+        for (MScreen screen : screens) {
             if (screen instanceof DuelDecksScreen || screen instanceof DuelGameScreen) {
                 return true;
             }

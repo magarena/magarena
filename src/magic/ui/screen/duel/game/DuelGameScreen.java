@@ -4,11 +4,11 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.ui.screen.MagicScreen;
+import magic.ui.screen.MScreen;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
-public class DuelGameScreen extends MagicScreen {
+public class DuelGameScreen extends MScreen {
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
 

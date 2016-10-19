@@ -2,11 +2,11 @@ package magic.ui.screen.images.download;
 
 import javax.swing.JPanel;
 import javax.swing.ToolTipManager;
-import magic.ui.screen.MagicScreen;
+import magic.ui.screen.MScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DownloadImagesScreen extends MagicScreen {
+public class DownloadImagesScreen extends MScreen {
 
     private final DownloadDialogPanel dialogPanel;
 

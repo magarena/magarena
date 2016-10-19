@@ -10,7 +10,7 @@ import net.miginfocom.swing.MigLayout;
  * Basic template for a screen with a header and footer.
  */
 @SuppressWarnings("serial")
-public abstract class HeaderFooterScreen extends MagicScreen {
+public abstract class HeaderFooterScreen extends MScreen {
 
     private final ScreenHeaderPanel headerPanel;
     private final ScreenFooterPanel footerPanel;

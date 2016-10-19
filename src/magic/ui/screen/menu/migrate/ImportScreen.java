@@ -23,11 +23,11 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.FontsAndBorders;
 import magic.ui.WikiPage;
-import magic.ui.screen.MagicScreen;
+import magic.ui.screen.MScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ImportScreen extends MagicScreen {
+public class ImportScreen extends MScreen {
 
     // translatable strings
     private static final String _S1 = "Import Settings?";
