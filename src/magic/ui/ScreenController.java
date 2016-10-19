@@ -166,6 +166,10 @@ public final class ScreenController {
         }
     }
 
+    private static boolean isDuelDecksScreenDisplayed() {
+        return !screens.isEmpty() && screens.peek() instanceof DuelDecksScreen;
+    }
+
 
     //
     // public show screens methods
@@ -180,7 +184,7 @@ public final class ScreenController {
     }
 
     public static void showDuelDecksScreen(final MagicDuel duel) {
-        if (!screens.isEmpty() && screens.peek() instanceof DuelDecksScreen) {
+        if (isDuelDecksScreenDisplayed()) {
             screens.pop();
         }
         showScreen(new DuelDecksScreen(duel));
