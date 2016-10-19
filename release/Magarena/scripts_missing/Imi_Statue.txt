@@ -7,4 +7,4 @@ cost={3}
 ability=Players can't untap more than one artifact during their untap steps.
 timing=artifact
 oracle=Players can't untap more than one artifact during their untap steps.
-status=needs groovy
+status=not supported: cant-untap-more-than

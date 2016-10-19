@@ -7,3 +7,4 @@ cost={3}
 ability=As long as SN is untapped, players can't untap more than two permanents during their untap steps.
 timing=artifact
 oracle=As long as Static Orb is untapped, players can't untap more than two permanents during their untap steps.
+status=not supported: cant-untap-more-than
