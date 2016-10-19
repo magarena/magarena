@@ -3,7 +3,6 @@ package magic.ui;
 import java.util.Stack;
 import java.util.concurrent.Callable;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
