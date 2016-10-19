@@ -3,9 +3,9 @@ package magic.ui.screen.deck.editor;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
-import javax.swing.JScrollPane;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.widget.duel.viewer.DeckEditorCardViewer;
 import magic.ui.widget.TexturedPanel;
@@ -16,7 +16,7 @@ import net.miginfocom.swing.MigLayout;
 public class DeckSideBar extends TexturedPanel {
 
     private final MigLayout migLayout = new MigLayout();
-    private final JScrollPane cardScrollPane = new JScrollPane();
+    private final MScrollPane cardScrollPane = new MScrollPane();
     private final DeckEditorCardViewer cardViewer = new DeckEditorCardViewer();
     private final DeckInfoPanel deckInfo = new DeckInfoPanel();
 
@@ -34,8 +34,7 @@ public class DeckSideBar extends TexturedPanel {
         cardScrollPane.setViewportView(cardViewer);
         cardScrollPane.setBorder(null);
         cardScrollPane.setOpaque(false);
-        cardScrollPane.getViewport().setOpaque(false);
-        cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
+        cardScrollPane.setVScrollBarIncrement(10);
 
         final int BORDER_WIDTH = 1;
         setBorder(BorderFactory.createMatteBorder(0, 0, 0, BORDER_WIDTH, Color.BLACK));
@@ -48,7 +47,7 @@ public class DeckSideBar extends TexturedPanel {
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
         migLayout.setColumnConstraints("[fill, grow]");
         migLayout.setRowConstraints("[][fill, grow]");
-        add(cardScrollPane);
+        add(cardScrollPane.component());
         add(deckInfo);
         revalidate();
     }

@@ -1,7 +1,6 @@
 package magic.ui.widget.M;
 
 import javax.swing.JComponent;
-import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import magic.ui.FontsAndBorders;
@@ -12,7 +11,7 @@ import magic.ui.FontsAndBorders;
 @SuppressWarnings("serial")
 public class MPlainTextViewer extends MWidget {
 
-    private final JScrollPane scrollPane = new JScrollPane();
+    private final MScrollPane scrollPane = new MScrollPane();
     private final JTextArea textArea = new JTextArea();
 
     public MPlainTextViewer() {
@@ -28,17 +27,16 @@ public class MPlainTextViewer extends MWidget {
 
         scrollPane.setBorder(FontsAndBorders.BLACK_BORDER);
         scrollPane.setOpaque(false);
-        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        scrollPane.getVerticalScrollBar().setUnitIncrement(50);
-        scrollPane.getVerticalScrollBar().setBlockIncrement(50);
-        scrollPane.getViewport().setOpaque(false);
+        scrollPane.setHScrollBarAsNeeded();
+        scrollPane.setVScrollBarIncrement(50);
+        scrollPane.setVScrollBarBlockIncrement(50);
 
         scrollPane.setViewportView(textArea);
     }
 
     private void resetVerticalScrollbar() {
         SwingUtilities.invokeLater(() -> {
-            scrollPane.getVerticalScrollBar().setValue(0);
+            scrollPane.setVScrollBarValue(0);
         });
     }    
 
@@ -49,6 +47,6 @@ public class MPlainTextViewer extends MWidget {
 
     @Override
     public JComponent component() {
-        return scrollPane;
+        return scrollPane.component();
     }
 }

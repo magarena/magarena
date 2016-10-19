@@ -9,11 +9,11 @@ import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.widget.M.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -27,7 +27,7 @@ public class CardPanel extends JPanel {
 
     private final MigLayout layout = new MigLayout();
     private final CardViewer cardViewer;
-    private final JScrollPane cardScrollPane;
+    private final MScrollPane cardScrollPane;
     private final CardDecksPanel decksPanel = new CardDecksPanel();
     private final SplitterButton decksButton = new SplitterButton(UiString.get(_S1, 0));
     private boolean isImageVisible = true;
@@ -40,12 +40,11 @@ public class CardPanel extends JPanel {
         cardViewer = new CardViewer();
 
         // card image scroll pane
-        cardScrollPane = new JScrollPane();
+        cardScrollPane = new MScrollPane();
         cardScrollPane.setViewportView(cardViewer);
         cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         cardScrollPane.setOpaque(false);
-        cardScrollPane.getViewport().setOpaque(false);
-        cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
+        cardScrollPane.setVScrollBarIncrement(10);
 
         decksPanel.setOpaque(false);
         decksPanel.addPropertyChangeListener(
@@ -86,7 +85,7 @@ public class CardPanel extends JPanel {
     private void refreshLayout() {
         removeAll();
         final int minImageHeight = ImageSizePresets.SIZE_312x445.getSize().height + 1;
-        add(cardScrollPane, "hmin " + minImageHeight + ", hidemode 3");
+        add(cardScrollPane.component(), "hmin " + minImageHeight + ", hidemode 3");
         add(decksButton, "w 100%, h 16:24");
         add(decksPanel, "w 100%, growy, pushy, hmin 0");
         revalidate();

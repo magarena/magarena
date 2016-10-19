@@ -16,7 +16,7 @@ import javax.swing.plaf.basic.BasicScrollBarUI;
 public class MScrollBarUI extends BasicScrollBarUI {
 
     // Various colors of a gray hue.
-    private static final Color COLOR_A = new Color(234, 234, 234);
+    public static final Color COLOR_A = new Color(234, 234, 234);
     private static final Color COLOR_B = new Color(100, 100, 100);
     private static final Color COLOR_C = new Color(150, 150, 150);
     private static final Color COLOR_D = new Color(182, 182, 182);
