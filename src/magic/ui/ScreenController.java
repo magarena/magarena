@@ -158,9 +158,15 @@ public final class ScreenController {
     private static void setMainFrameScreen(final MScreen screen) {
         mainFrame.setContentPanel((JPanel)screen);
     }
+
+    private static boolean isScreenLoadedButHidden(MScreen screen) {
+        return hiddenScreen != null
+                && hiddenScreen.getClass().getName()
+                        .equals(screen.getClass().getName());
+    }
     
     private static void showScreen(MScreen screen) {
-        if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
+        if (isScreenLoadedButHidden(screen)) {
             screen = hiddenScreen;
             hiddenScreen = null;
         }
