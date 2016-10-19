@@ -272,7 +272,7 @@ public final class ScreenController {
         showScreen(new CardScriptScreen(card));
     }
 
-    public static void showDeckChooserScreen(final IDeckConsumer deckConsumer) {
+    public static void showDecksScreen(final IDeckConsumer deckConsumer) {
         showScreen(new DecksScreen(deckConsumer));
     }
 

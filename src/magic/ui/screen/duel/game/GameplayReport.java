@@ -21,6 +21,10 @@ import org.apache.commons.io.FileUtils;
 import static magic.utility.MagicFileSystem.getDataPath;
 import static magic.utility.MagicFileSystem.getDataPath;
 import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
+import static magic.utility.MagicFileSystem.getDataPath;
 
 final class GameplayReport {
     private GameplayReport() {}

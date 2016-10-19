@@ -176,7 +176,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     public void loadDeck() {
-        ScreenController.showDeckChooserScreen(this);
+        ScreenController.showDecksScreen(this);
     }
 
     private boolean isReservedDeckFolder(final Path saveFolder) {

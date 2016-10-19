@@ -131,7 +131,7 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
     }
 
     public void loadDeck() {
-        ScreenController.showDeckChooserScreen(this);
+        ScreenController.showDecksScreen(this);
     }
 
     public void saveDeck() {
