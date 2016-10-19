@@ -260,7 +260,7 @@ public final class ScreenController {
         showScreen(new AvatarImagesScreen(consumer));
     }
 
-    public static void showDuelPlayersScreen() {
+    public static void showNewDuelSettingsScreen() {
         showScreen(new NewDuelSettingsScreen());
     }
 

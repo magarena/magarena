@@ -57,7 +57,7 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
     }
 
     private void doNewDuel() {
-        ScreenController.showDuelPlayersScreen();
+        ScreenController.showNewDuelSettingsScreen();
     }
 
     private void showExplorerScreen() {
