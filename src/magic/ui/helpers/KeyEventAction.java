@@ -6,6 +6,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+import magic.ui.screen.MScreen;
 
 /**
  * Helper class that streamlines adding keyboard shortcuts
@@ -85,5 +86,19 @@ public final class KeyEventAction {
     public static KeyEventAction doAction(JComponent c, Runnable r) {
         return new KeyEventAction(c, r);
     }
+
+    /**
+     * Registers an action to run for a given {@link MScreen}.
+     * Key events that will trigger the action are added using the
+     * {@code on} method of the returned {@link KeyEventAction} object.
+     *
+     * @param s {@link MScreen}
+     * @param r action to perform as a {@link Runnable}.
+     * @return
+     */
+    public static KeyEventAction doAction(MScreen s, Runnable r) {
+        return s.getKeyEventAction(r);
+    }
+
 
 }

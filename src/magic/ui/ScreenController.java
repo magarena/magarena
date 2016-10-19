@@ -49,7 +49,6 @@ import magic.ui.screen.menu.migrate.ImportScreen;
 import magic.ui.screen.menu.settings.SettingsMenuScreen;
 import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.test.TestScreen;
-import magic.ui.utility.MagicStyle;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.utility.MagicSystem;
 
@@ -109,13 +108,13 @@ public final class ScreenController {
         closeActiveScreen(false);
     }
 
-    public static JPanel getActiveScreen() {
-        return (JPanel)screens.peek();
+    public static MScreen getActiveScreen() {
+        return screens.peek();
     }
 
     public static void refreshStyle() {
         for (MScreen screen : screens) {
-            MagicStyle.refreshComponentStyle((JPanel)screen);
+            screen.refreshStyle();
         }
     }
 
@@ -144,7 +143,7 @@ public final class ScreenController {
     public static void hideActiveScreen() {
         if (hiddenScreen == null) {
             hiddenScreen = screens.pop();
-            ((JPanel)hiddenScreen).setVisible(false);
+            hiddenScreen.setVisible(false);
             showScreen(screens.pop());
         } else {
             throw new RuntimeException("A screen is already hidden - only one allowed at a time!");
@@ -156,7 +155,7 @@ public final class ScreenController {
     }
 
     private static void setMainFrameScreen(final MScreen screen) {
-        mainFrame.setContentPanel((JPanel)screen);
+        mainFrame.setScreen(screen);
     }
 
     private static boolean isScreenLoadedButHidden(MScreen screen) {
@@ -170,11 +169,10 @@ public final class ScreenController {
             screen = hiddenScreen;
             hiddenScreen = null;
         }
-
         setMainFrameScreen(screen);
         screens.push(screen);
-        ((JPanel)screen).setVisible(true);
-        ((JPanel)screen).requestFocus();
+        screen.setVisible(true);
+        screen.requestFocus();
     }
 
     private static void showScreen(Callable<MScreen> c) {

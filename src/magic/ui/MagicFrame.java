@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
@@ -24,6 +23,7 @@ import magic.ui.screen.ScreenHelper;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.screen.MScreen;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -235,8 +235,8 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         refreshLookAndFeel();
     }
 
-    public void setContentPanel(JPanel aPanel) {
-        contentPanel.setContentPanel(aPanel);
+    public void setScreen(MScreen s) {
+        contentPanel.setScreen(s);
     }
 
     private boolean replaceBackgroundImage(File newImage) {
@@ -287,8 +287,8 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     }
 
     private void toggleUI() {
-        final JPanel activeScreen = ScreenController.getActiveScreen();
-        activeScreen.setVisible(!activeScreen.isVisible());
+        final MScreen screen = ScreenController.getActiveScreen();
+        screen.setVisible(!screen.isVisible());
     }
 
 }

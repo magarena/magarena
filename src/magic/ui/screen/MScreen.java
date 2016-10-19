@@ -1,10 +1,12 @@
 package magic.ui.screen;
 
+import magic.ui.ScreenController;
+import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.cardBuilder.renderers.CardBuilder;
-import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.helpers.UrlHelper;
@@ -13,7 +15,7 @@ import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class MScreen extends JPanel {
+public abstract class MScreen {
 
     private static final JPanel TEMP_PANEL = new JPanel() {
         @Override
@@ -22,16 +24,21 @@ public abstract class MScreen extends JPanel {
         }
     };
 
+    /**
+     * Reference to swing component representing a "screen".
+     */
+    private final JPanel screen = new JPanel();
+
     private JComponent contentPanel = TEMP_PANEL;
     private WikiPage wikiPage = WikiPage.HOME;
     private ScreenLoaderWorker loadingWorker;
 
     public MScreen() {
-        setOpaque(false);
+        screen.setOpaque(false);
+        screen.setLayout(new MigLayout("insets 0, gap 0", "[fill, grow]", "[fill, grow]"));
         setDefaultKeyboardActions();
-        setLayout(new MigLayout("insets 0, gap 0", "[fill, grow]", "[fill, grow]"));
     }
-    
+
     private void doEscapeKeyAction() {
         if (this instanceof DuelGameScreen) {
             ((DuelGameScreen)this).showOptionsMenuOverlay();
@@ -48,9 +55,9 @@ public abstract class MScreen extends JPanel {
     }
 
     protected void refreshLayout() {
-        removeAll();
-        add(contentPanel);
-        revalidate();
+        screen.removeAll();
+        screen.add(contentPanel);
+        screen.revalidate();
     }
 
     protected void setMainContent(final JComponent aPanel) {
@@ -71,14 +78,6 @@ public abstract class MScreen extends JPanel {
             loadingWorker.cancel(true);
         }
         return true;
-    }
-
-    @Override
-    public void setVisible(boolean isVisible) {
-        super.setVisible(isVisible);
-        if (isVisible) {
-            refreshLayout();
-        }
     }
 
     protected JComponent getContentPanel() {
@@ -127,4 +126,56 @@ public abstract class MScreen extends JPanel {
         }
     }
 
+
+    //
+    // Swing component delegates.
+    //
+
+    protected void setLayout(MigLayout layout) {
+        screen.setLayout(layout);
+    }
+
+    public void requestFocus() {
+        screen.requestFocus();
+    }
+
+    public boolean isVisible() {
+        return screen.isVisible();
+    }
+
+    public void setVisible(boolean isVisible) {
+        screen.setVisible(isVisible);
+        if (isVisible) {
+            refreshLayout();
+        }
+    }
+
+    protected void removeAll() {
+        screen.removeAll();
+    }
+
+    protected void add(Component c) {
+        screen.add(c);
+    }
+
+    protected void revalidate() {
+        screen.revalidate();
+    }
+
+    public void setCursor(Cursor c) {
+        screen.setCursor(c);
+    }
+
+    public KeyEventAction getKeyEventAction(Runnable r) {
+        return KeyEventAction.doAction(screen, r);
+    }
+
+    public void addToLayout(JComponent c, String layout) {
+         c.add(screen, layout);
+    }
+
+    public void refreshStyle() {
+        MScreenHelper.refreshComponentStyle(screen);
+    }
+    
 }

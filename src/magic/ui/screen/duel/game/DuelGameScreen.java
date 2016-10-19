@@ -56,13 +56,7 @@ public class DuelGameScreen extends MScreen {
     }
 
     public void showOptionsMenuOverlay() {
-        if (duelPane == null) {
-            //do nothing
-        } else if (duelPane.getDialogPanel().isVisible()) {
-            duelPane.getDialogPanel().setVisible(false);
-        } else {
-            new GameOptionsOverlay(controller);
-        }
+        controller.showGameOptionsOverlay();
     }
 
     public void updateView() {

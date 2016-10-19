@@ -174,7 +174,7 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
         if (deck != null) {
             fileChooser.setSelectedFile(new File(deck.getFilename()));
         }
-        final int action = fileChooser.showSaveDialog(this);
+        final int action = fileChooser.showSaveDialog(ScreenController.getFrame());
         if (action == JFileChooser.APPROVE_OPTION) {
             final String filename = fileChooser.getSelectedFile().getAbsolutePath();
             if (DeckUtils.saveDeck(filename, screenContent.getDeck())) {

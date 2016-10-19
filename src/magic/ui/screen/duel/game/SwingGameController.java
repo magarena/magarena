@@ -1129,7 +1129,13 @@ public class SwingGameController implements IUIGameController {
     }
 
     public void showGameOptionsOverlay() {
-        ((DuelGameScreen)duelPane.getParent()).showOptionsMenuOverlay();
+        if (duelPane == null) {
+            //do nothing
+        } else if (duelPane.getDialogPanel().isVisible()) {
+            duelPane.getDialogPanel().setVisible(false);
+        } else {
+            new GameOptionsOverlay(this);
+        }
     }
 
 }

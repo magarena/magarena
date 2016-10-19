@@ -10,6 +10,7 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.screen.MScreen;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -27,13 +28,6 @@ class MagicFramePanel extends JPanel {
     MagicFramePanel() {
         setBackground(BACKCOLOR);
         setLayout(new MigLayout("insets 0, gap 0, nogrid, novisualpadding"));
-    }
-
-    void setContentPanel(JPanel aPanel) {
-        removeAll();
-        add(aPanel, "dock center");
-        revalidate();
-        repaint();
     }
 
     private void drawMLogo(final Graphics g) {
@@ -139,6 +133,13 @@ class MagicFramePanel extends JPanel {
                 g.drawImage(aImage, x, y, this);
             }
         }
+    }
+
+    void setScreen(MScreen s) {
+        removeAll();
+        s.addToLayout(this, "dock center");
+        revalidate();
+        repaint();
     }
 
 }
