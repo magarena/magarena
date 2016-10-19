@@ -47,11 +47,17 @@ public abstract class MScreen {
         }
     }
 
+    private void showKeywordsScreen() {
+        ScreenController.showKeywordsScreen();
+    }
+
     private void setDefaultKeyboardActions() {
         KeyEventAction.doAction(this, this::doEscapeKeyAction)
             .onFocus(0, KeyEvent.VK_ESCAPE);
         KeyEventAction.doAction(this, this::doF1KeyAction)
             .onFocus(0, KeyEvent.VK_F1);
+        KeyEventAction.doAction(this, this::showKeywordsScreen)
+            .onFocus(0, KeyEvent.VK_K);
     }
 
     protected void refreshLayout() {
@@ -65,7 +71,7 @@ public abstract class MScreen {
         refreshLayout();
     }
 
-    protected void doF1KeyAction() {
+    private void doF1KeyAction() {
         showWikiHelpPage();
     }
 
