@@ -57,19 +57,22 @@ public final class ScreenController {
     private static final String _S2 = "Information";
     private static final String _S3 = "Warning";
 
-    private static MagicFrame mainFrame = null;
+    private static MagicFrame mainFrame;
+    static {
+        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
+            mainFrame = new MagicFrame(MagicSystem.SOFTWARE_TITLE);
+        }
+    }
+
     private static final Stack<MScreen> screens = new Stack<>();
     private static MScreen hiddenScreen;
 
     public static MagicFrame getMainFrame() {
-        if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
-            mainFrame = new MagicFrame(MagicSystem.SOFTWARE_TITLE);
-        }
         return mainFrame;
     }
 
     public static void showPreferencesDialog() {
-        final PreferencesDialog dialog = new PreferencesDialog(getMainFrame(), isDuelActive());
+        final PreferencesDialog dialog = new PreferencesDialog(mainFrame, isDuelActive());
         if (dialog.isRestartRequired()) {
             SwingUtilities.invokeLater(() -> {
                 showMainMenuScreen();
@@ -117,7 +120,7 @@ public final class ScreenController {
     }
 
     private static void setMainFrameScreen(final MScreen screen) {
-        getMainFrame().setContentPanel((JPanel)screen);
+        mainFrame.setContentPanel((JPanel)screen);
     }
 
     public static int getScreensStackSize() {
@@ -135,16 +138,16 @@ public final class ScreenController {
     }
 
     public static void showInfoMessage(final String message) {
-        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S2), JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(mainFrame, message, UiString.get(_S2), JOptionPane.INFORMATION_MESSAGE);
     }
 
     public static void showWarningMessage(final String message) {
         MagicSound.BEEP.play();
-        JOptionPane.showMessageDialog(getMainFrame(), message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(mainFrame, message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
     }
 
     public static void showDuelSidebarDialog(final IUIGameController controller) {
-        new DuelSidebarLayoutDialog(getMainFrame(), controller);
+        new DuelSidebarLayoutDialog(mainFrame, controller);
     }
 
     public static boolean isDuelActive() {
@@ -303,7 +306,7 @@ public final class ScreenController {
             // already open, do nothing
         } else {
             showScreen(new AboutScreen());
-            getMainFrame().getGlassPane().setVisible(false);
+            mainFrame.getGlassPane().setVisible(false);
         }
     }
 
