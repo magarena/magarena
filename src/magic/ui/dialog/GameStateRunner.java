@@ -18,7 +18,6 @@ import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingUtilities;
 import magic.test.TestGameBuilder;
-import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
@@ -32,9 +31,9 @@ public class GameStateRunner
 
     private JList<String> testClasses = new JList<>();
 
-    public GameStateRunner(final MagicFrame frame) {
+    public GameStateRunner() {
 
-        super(ScreenController.getFrame(), UiString.get("Test Classes (double-click to select)"), new Dimension(500, 460));
+        super(UiString.get("Test Classes (double-click to select)"), new Dimension(500, 460));
 
         setLookAndFeel();
         refreshLayout();

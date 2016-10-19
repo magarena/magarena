@@ -38,7 +38,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
     protected abstract MenuPanel getScreenMenu();
     protected abstract boolean showPreferencesOption();
 
-    public ScreenOptionsOverlay(final MagicFrame frame) {
+    public ScreenOptionsOverlay() {
 
         refreshStyle();
         setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
@@ -47,7 +47,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         screenMenu = getScreenMenu();
 
         addScreenSpecificMenu();
-        addGeneralOptionsMenu(frame);
+        addGeneralOptionsMenu();
 
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeMenu");
         getActionMap().put("closeMenu", new AbstractAction() {
@@ -61,12 +61,12 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         addMouseMotionListener(new MouseMotionAdapter() {});
         addKeyListener(new KeyAdapter() {});
 
-        frame.setGlassPane(this);
+        ScreenController.getFrame().setGlassPane(this);
         setVisible(true);
 
     }
 
-    private void addGeneralOptionsMenu(final MagicFrame frame) {
+    private void addGeneralOptionsMenu() {
 
         menu = new MenuPanel(UiString.get(_S1));
 
@@ -116,7 +116,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.quitToDesktop(false);
+                ScreenController.getFrame().quitToDesktop(false);
             }
         });
 

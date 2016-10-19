@@ -13,7 +13,6 @@ import magic.model.MagicDeck;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.screen.widget.DuelSettingsPanel;
@@ -43,7 +42,7 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
     public NewDuelSettingsScreen() {
         super(UiString.get(_S1));
         duelConfig.load();
-        content = new ScreenContent(duelConfig, ScreenController.getFrame());
+        content = new ScreenContent(duelConfig);
         setMainContent(content);
         setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S2)));
         setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S3)));
@@ -106,8 +105,8 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
         private final DuelPlayerPanel[] playerPanels = new DuelPlayerPanel[PLAYERS_COUNT];
         private final DuelPlayerDeckPanel[] newPlayerDeckPanels = new DuelPlayerDeckPanel[PLAYERS_COUNT];
 
-        public ScreenContent(final DuelConfig config, final MagicFrame frame) {
-            this.duelSettingsPanel = new DuelSettingsPanel(frame, config);
+        public ScreenContent(final DuelConfig config) {
+            this.duelSettingsPanel = new DuelSettingsPanel(config);
             for (int i = 0; i < PLAYERS_COUNT; i++) {
                 this.playerPanels[i] = getNewDuelPlayerPanel(config.getPlayerProfile(i));
                 this.newPlayerDeckPanels[i] = new DuelPlayerDeckPanel(config.getPlayerDeckProfile(i));

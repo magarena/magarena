@@ -8,7 +8,6 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
-import magic.ui.ScreenController;
 import magic.ui.dialog.AiPropertiesDialog;
 
 @SuppressWarnings("serial")
@@ -40,7 +39,7 @@ public class SelectAiPlayerScreen extends SelectPlayerScreen {
 
     @Override
     protected void doNewPlayerAction() {
-        final AiPropertiesDialog dialog = new AiPropertiesDialog(ScreenController.getFrame());
+        final AiPropertiesDialog dialog = new AiPropertiesDialog();
         final PlayerProfile newProfile = dialog.getPlayerProfile();
         if (newProfile != null) {
             PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
@@ -51,7 +50,7 @@ public class SelectAiPlayerScreen extends SelectPlayerScreen {
     @Override
     protected void doEditPlayerAction() {
         final AiProfile profile = (AiProfile) getSelectedPlayer();
-        new AiPropertiesDialog(ScreenController.getFrame(), profile);
+        new AiPropertiesDialog(profile);
         getJList().repaint();
         notifyPlayerUpdated(profile);
     }

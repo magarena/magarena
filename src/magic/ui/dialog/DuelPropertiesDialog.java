@@ -13,8 +13,6 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import magic.data.MagicFormat;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
@@ -40,14 +38,13 @@ public class DuelPropertiesDialog extends MagicDialog {
 
     // CTR : edit an existing profile.
     public DuelPropertiesDialog(
-        final MagicFrame frame,
         final int handSize,
         final int initialLife,
         final int maxGames,
         final MagicFormat cube
     ) {
 
-        super(ScreenController.getFrame(), UiString.get(_S1), new Dimension(380, 260));
+        super(UiString.get(_S1), new Dimension(380, 260));
 
         lifeSliderPanel = new SliderPanel(UiString.get(_S2), (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
         handSizeSliderPanel = new SliderPanel(UiString.get(_S3), 6, 8, 1, handSize);

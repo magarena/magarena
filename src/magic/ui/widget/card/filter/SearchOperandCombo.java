@@ -8,7 +8,6 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 class SearchOperandCombo extends JComboBox<SearchOperand> {
@@ -22,9 +21,9 @@ class SearchOperandCombo extends JComboBox<SearchOperand> {
         addItemListener((e) -> {
             if (e.getStateChange() == ItemEvent.SELECTED) {
                 SwingUtilities.invokeLater(() -> {
-                    MouseHelper.showBusyCursor(ScreenController.getFrame());
+                    MouseHelper.showBusyCursor();
                     fbp.filterChanged();
-                    MouseHelper.showDefaultCursor(ScreenController.getFrame());
+                    MouseHelper.showDefaultCursor();
                 });
             }
         });

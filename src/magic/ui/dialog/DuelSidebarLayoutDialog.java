@@ -12,7 +12,6 @@ import javax.swing.JPanel;
 import javax.swing.ListSelectionModel;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
-import magic.ui.MagicFrame;
 import magic.translate.UiString;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
@@ -38,8 +37,8 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     private final String currentLayout;
 
     // CTR
-    public DuelSidebarLayoutDialog(final MagicFrame frame, final IUIGameController controller) {
-        super(frame, UiString.get(_S1), new Dimension(280, 260));
+    public DuelSidebarLayoutDialog(final IUIGameController controller) {
+        super(UiString.get(_S1), new Dimension(280, 260));
         this.controller = controller;
         currentLayout = GeneralConfig.getInstance().getDuelSidebarLayout();
         setLookAndFeel();

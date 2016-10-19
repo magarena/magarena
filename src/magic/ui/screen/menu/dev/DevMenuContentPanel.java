@@ -41,7 +41,7 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
     
     private void doLoadTestClass() {
         MagicSystem.setIsTestGame(true);
-        new GameStateRunner(ScreenController.getFrame());
+        new GameStateRunner();
     }
     
     private void onCloseMenu() {

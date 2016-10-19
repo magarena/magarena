@@ -11,8 +11,6 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
@@ -56,9 +54,9 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
     private final SliderPanel maxColorsSlider;
 
     // CTR
-    public RandomDeckGeneratorDialog(final MagicFrame frame, final int cardPoolSize, final int defaultDeckSize) {
+    public RandomDeckGeneratorDialog(final int cardPoolSize, final int defaultDeckSize) {
 
-        super(ScreenController.getFrame(), UiString.get(_S5), new Dimension(460, 340));
+        super(UiString.get(_S5), new Dimension(460, 340));
 
         this.cardPoolSize = cardPoolSize;
 

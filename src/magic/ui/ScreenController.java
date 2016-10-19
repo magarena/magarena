@@ -129,7 +129,7 @@ public final class ScreenController {
     }
 
     public static void showDuelSidebarDialog(final IUIGameController controller) {
-        new DuelSidebarLayoutDialog(mainFrame, controller);
+        new DuelSidebarLayoutDialog(controller);
     }
 
     public static boolean isDuelActive() {

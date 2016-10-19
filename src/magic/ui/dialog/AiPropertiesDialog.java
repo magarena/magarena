@@ -13,8 +13,6 @@ import javax.swing.JTextField;
 import magic.ai.MagicAIImpl;
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
@@ -37,9 +35,9 @@ public class AiPropertiesDialog extends MagicDialog {
     private final SliderPanel lifeSliderPanel;
     private final JComboBox<MagicAIImpl> aiComboBox;
 
-    public AiPropertiesDialog(final MagicFrame frame, final AiProfile profile) {
+    public AiPropertiesDialog(final AiProfile profile) {
 
-        super(ScreenController.getFrame(), UiString.get(_S1), new Dimension(400, 260));
+        super(UiString.get(_S1), new Dimension(400, 260));
 
         this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
@@ -59,8 +57,8 @@ public class AiPropertiesDialog extends MagicDialog {
         setVisible(true);
     }
 
-    public AiPropertiesDialog(final MagicFrame frame) {
-        this(frame, null);
+    public AiPropertiesDialog() {
+        this(null);
     }
 
     private void refreshLayout() {

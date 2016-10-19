@@ -204,7 +204,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
     private JPanel getHeaderPanel() {
         final DuelConfig config = screenContent.getDuel().getConfiguration();
-        final DuelSettingsPanel panel = new DuelSettingsPanel(ScreenController.getFrame(), config);
+        final DuelSettingsPanel panel = new DuelSettingsPanel(config);
         panel.setEnabled(false);
         return panel;
     }

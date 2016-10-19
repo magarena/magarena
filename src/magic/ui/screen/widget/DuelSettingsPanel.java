@@ -11,7 +11,6 @@ import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicFormat;
 import magic.ui.MagicImages;
-import magic.ui.MagicFrame;
 import magic.translate.UiString;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.helpers.MouseHelper;
@@ -32,7 +31,6 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     private static final String _S4 = "Maximum games: %d (first to %d)";
     private static final String _S5 = "Cube: %s";
 
-    private final MagicFrame frame;
     private final DuelConfig config;
     private int startLife;
     private int handSize;
@@ -40,9 +38,8 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     private MagicFormat cube = MagicFormat.ALL;
     private final MouseAdapter mouseAdapter = getMouseAdapter();
 
-    public DuelSettingsPanel(final MagicFrame frame, final DuelConfig config) {
+    public DuelSettingsPanel(final DuelConfig config) {
 
-        this.frame = frame;
         this.config = config;
 
         startLife = config.getStartLife();
@@ -121,7 +118,6 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     public void updateDuelSettings() {
         final DuelPropertiesDialog dialog = new DuelPropertiesDialog(
-                frame,
                 handSize,
                 startLife,
                 maxGames,

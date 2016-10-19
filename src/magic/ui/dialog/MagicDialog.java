@@ -2,7 +2,6 @@ package magic.ui.dialog;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Frame;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
@@ -16,6 +15,7 @@ import javax.swing.SwingConstants;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import magic.ui.FontsAndBorders;
+import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -26,8 +26,8 @@ public abstract class MagicDialog extends JDialog {
     private final MigLayout migLayout = new MigLayout();
     private final JPanel contentPanel = new JPanel();
 
-    public MagicDialog(Frame owner, String title, Dimension size) {
-        super(owner);
+    public MagicDialog(String title, Dimension size) {
+        super(ScreenController.getFrame());
 
         setModalityType(ModalityType.APPLICATION_MODAL);
         setSize(size);

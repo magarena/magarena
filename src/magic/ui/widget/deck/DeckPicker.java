@@ -31,7 +31,6 @@ import magic.utility.DeckUtils;
 import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.widget.duel.viewer.CardViewer;
@@ -309,7 +308,7 @@ public class DeckPicker extends JPanel {
             filterButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    final DecksFilterDialog dialog = new DecksFilterDialog(ScreenController.getFrame());
+                    final DecksFilterDialog dialog = new DecksFilterDialog();
                     dialog.setVisible(true);
                     if (!dialog.isCancelled()) {
                         deckFilter = dialog.getDeckFilter();

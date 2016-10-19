@@ -20,8 +20,6 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.text.NumberFormatter;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
@@ -55,9 +53,9 @@ public class DecksFilterDialog extends MagicDialog {
     private final JButton resetButton = new JButton(UiString.get(_S2));
 
     // CTR
-    public DecksFilterDialog(final MagicFrame frame) {
+    public DecksFilterDialog() {
 
-        super(ScreenController.getFrame(), UiString.get(_S3), new Dimension(400, 300));
+        super(UiString.get(_S3), new Dimension(400, 300));
 
         if (filterHistory.size() > 0) {
             deckFilter = filterHistory.get(historyIndex-1);
