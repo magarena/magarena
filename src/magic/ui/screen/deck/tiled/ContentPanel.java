@@ -54,7 +54,7 @@ class ContentPanel extends JPanel implements ICardsCanvasListener {
     }
 
     @Override
-    public void cardSelected(MagicCard aCard) {
-        sidebar.setCard(aCard.getCardDefinition());
+    public void cardSelected(MagicCardDefinition aCard) {
+        sidebar.setCard(aCard);
     }
 }

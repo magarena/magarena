@@ -13,7 +13,6 @@ import java.awt.image.BufferedImage;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
@@ -26,7 +25,7 @@ public class CardImageOverlay extends TexturedPanel {
 
     private BufferedImage cardImage = null;
 
-    public CardImageOverlay(final MagicCard aCard) {
+    public CardImageOverlay(final MagicCardDefinition aCard) {
 
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeOverlay");
         getActionMap().put("closeOverlay", new AbstractAction() {
@@ -46,7 +45,7 @@ public class CardImageOverlay extends TexturedPanel {
         addComponentListener(new ComponentAdapter() {
             @Override
             public void componentResized(ComponentEvent e) {
-                drawCardImage(aCard.getCardDefinition());
+                drawCardImage(aCard);
             }
         });
 

@@ -93,7 +93,7 @@ public class CardsCanvas extends JPanel {
                     MouseHelper.showBusyCursor();
                     final int cardIndex = getCardIndexAt(e.getPoint());
                     if (cardIndex >= 0) {
-                        new CardImageOverlay(cards.get(cardIndex).getMagicCard());
+                        new CardImageOverlay(cards.get(cardIndex).getCardDefintion());
                     }
                     MouseHelper.showDefaultCursor();
                 }
@@ -113,7 +113,7 @@ public class CardsCanvas extends JPanel {
                 final int cardIndex = getCardIndexAt(event.getX(), event.getY());
                 if (currentCardIndex != cardIndex) {
                     if (cardIndex >= 0) {
-                        listener.cardSelected(cards.get(cardIndex).getMagicCard());
+                        listener.cardSelected(cards.get(cardIndex).getCardDefintion());
                     }
                     currentCardIndex = cardIndex;
                     repaint();

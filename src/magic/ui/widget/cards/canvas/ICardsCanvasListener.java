@@ -1,7 +1,7 @@
 package magic.ui.widget.cards.canvas;
 
-import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 
 public interface ICardsCanvasListener {
-    void cardSelected(MagicCard aCard);
+    void cardSelected(MagicCardDefinition aCard);
 }

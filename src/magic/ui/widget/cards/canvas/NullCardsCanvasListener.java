@@ -1,8 +1,8 @@
 package magic.ui.widget.cards.canvas;
 
-import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 
 public class NullCardsCanvasListener implements ICardsCanvasListener {
     @Override
-    public void cardSelected(MagicCard aCard) {}
+    public void cardSelected(MagicCardDefinition aCard) {}
 }
