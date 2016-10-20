@@ -90,8 +90,6 @@ public class DeckPicker extends JPanel {
         decksJList.setOpaque(false);
         decksJList.setBackground(new Color(0, 0, 0, 1));
         decksJList.setForeground(Color.BLACK);
-        decksJList.setSelectionBackground(HIGHLIGHT_BACK);
-        decksJList.setSelectionForeground(HIGHLIGHT_FORE);
         decksJList.setFocusable(true);
         decksJList.setCellRenderer(new DecksListCellRenderer());
         // scroll pane for deck names list
