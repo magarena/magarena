@@ -44,8 +44,7 @@ public class MagicMain {
             System.err.println("Initalization of engine took " + duration + "s");
         }
 
-        // try to set the look and feel
-        LaFHelper.setLookAndFeel("Nimbus");
+        LaFHelper.setDefaultLookAndFeel();
         
         reporter.setMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {
