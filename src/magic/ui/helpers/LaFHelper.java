@@ -1,9 +1,12 @@
 package magic.ui.helpers;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.UIDefaults;
 import javax.swing.UIManager;
 import magic.data.GeneralConfig;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 
 public final class LaFHelper {
 
@@ -17,7 +20,10 @@ public final class LaFHelper {
             // ** JTable
             //
             defaults.put("Table.showGrid", true);
-
+            // theme-based selection background color.
+            final Color oldColor = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
+            final Color newColor = ColorHelper.bleach1(oldColor, 0.2f);
+            defaults.put("Table[Enabled+Selected].textBackground", newColor);
 
             //
             // ** JList
