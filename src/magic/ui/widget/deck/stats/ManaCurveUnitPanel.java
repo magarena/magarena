@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
+import magic.ui.helpers.ColorHelper;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
@@ -17,7 +18,7 @@ class ManaCurveUnitPanel extends JPanel {
 
     static int MAX_VALUE = 0;
 
-    private static final Color COLOR1 = MagicStyle.bleach1(
+    private static final Color COLOR1 = ColorHelper.bleach1(
         MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND),
         0.2f
     );
