@@ -8,7 +8,6 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JComponent;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
@@ -26,6 +25,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.ui.widget.CostPanel;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -48,7 +48,7 @@ public class CardTablePanel extends TexturedPanel {
     private static final int ROW_HEIGHT = 20; //pixels
 
     private final MigLayout migLayout = new MigLayout();
-    private final JScrollPane scrollpane = new JScrollPane();
+    private final MScrollPane scrollpane = new MScrollPane();
     private final CardTableModel tableModel;
     private JTable table;
     private final ListSelectionModel selectionModel;
@@ -116,7 +116,6 @@ public class CardTablePanel extends TexturedPanel {
         scrollpane.setViewportView(table);
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
-        scrollpane.getViewport().setOpaque(false);
 
         // add title
         titleBar = new TitleBar(title);
@@ -178,7 +177,7 @@ public class CardTablePanel extends TexturedPanel {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
         add(titleBar, "w 100%, h 26!, hidemode 3");
-        add(scrollpane, "w 100%, h 100%");
+        add(scrollpane.component(), "w 100%, h 100%");
     }
 
     private void setColumnWidths(final TableColumnModel model) {

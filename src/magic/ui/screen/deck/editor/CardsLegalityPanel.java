@@ -12,7 +12,6 @@ import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
@@ -30,6 +29,7 @@ import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.translate.StringContext;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -52,7 +52,7 @@ public class CardsLegalityPanel extends JPanel {
     private static final int ROW_HEIGHT = 23; //pixels
 
     private final MigLayout migLayout = new MigLayout();
-    private final JScrollPane scrollpane = new JScrollPane();
+    private final MScrollPane scrollpane = new MScrollPane();
     private final CardsLegalityTableModel tableModel;
     private final JTable table;
     private boolean isAdjusting = false;
@@ -101,7 +101,7 @@ public class CardsLegalityPanel extends JPanel {
         // add table to scroll pane
         scrollpane.setViewportView(table);
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
-        scrollpane.getViewport().setBackground(Color.WHITE);
+        scrollpane.setBackground(Color.WHITE);
 
         titleLabel = new JLabel(UiString.get(_S1));
         titleLabel.setFont(getFont().deriveFont(Font.BOLD));
@@ -147,7 +147,7 @@ public class CardsLegalityPanel extends JPanel {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
         add(titleLabel, "w 100%, h 21!, hidemode 3");
-        add(scrollpane, "w 100%, h 100%");
+        add(scrollpane.component(), "w 100%, h 100%");
     }
 
     private void setColumnWidths(final TableColumnModel model) {

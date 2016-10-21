@@ -5,7 +5,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
@@ -15,6 +14,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -29,7 +29,7 @@ public class DeckTablePanel extends TexturedPanel {
     public static final String CP_CARD_RCLICKED = "0c0fc5c6-3be3-40f4-9b79-ded9e304a96d";
 
     private final MigLayout migLayout = new MigLayout();
-    private final JScrollPane scrollpane = new JScrollPane();
+    private final MScrollPane scrollpane = new MScrollPane();
     private final DeckTableModel tableModel;
     private JTable table;
 
@@ -52,7 +52,6 @@ public class DeckTablePanel extends TexturedPanel {
         scrollpane.setViewportView(table);
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
-        scrollpane.getViewport().setOpaque(false);
 
         // add title
         titleBar = new TitleBar(title);
@@ -118,7 +117,7 @@ public class DeckTablePanel extends TexturedPanel {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
         add(titleBar, "w 100%, h 26!, hidemode 3");
-        add(scrollpane, "w 100%, h 100%");
+        add(scrollpane.component(), "w 100%, h 100%");
     }
 
     public void setDeckEditorSelectionMode() {

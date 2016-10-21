@@ -2,12 +2,12 @@ package magic.ui.widget.cards.table;
 
 import java.awt.Color;
 import javax.swing.BorderFactory;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -18,7 +18,7 @@ public class BasicDeckTablePanel extends TexturedPanel {
     public static final String CP_CARD_SELECTED = "745278ab-0ea0-42fd-abf1-2cb1ec677909";
 
     private final MigLayout migLayout = new MigLayout();
-    private final JScrollPane scrollpane = new JScrollPane();
+    private final MScrollPane scrollpane = new MScrollPane();
     private JTable table;
     private boolean isAdjusting = false;
 
@@ -30,7 +30,6 @@ public class BasicDeckTablePanel extends TexturedPanel {
 
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
-        scrollpane.getViewport().setOpaque(false);
 
         setLayout(migLayout);
 
@@ -51,7 +50,7 @@ public class BasicDeckTablePanel extends TexturedPanel {
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
-        add(scrollpane, "w 100%, h 100%");
+        add(scrollpane.component(), "w 100%, h 100%");
     }
 
     public MagicCardDefinition getSelectedCard() {

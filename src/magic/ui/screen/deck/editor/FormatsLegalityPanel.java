@@ -12,7 +12,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -22,6 +21,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
+import magic.ui.widget.M.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -34,7 +34,7 @@ public class FormatsLegalityPanel extends JPanel {
     public static final String CP_FORMAT_SELECTED = "c8d61cfc-568a-488d-a0fb-f37ef1a39192";
 
     private final MigLayout migLayout = new MigLayout();
-    private final JScrollPane scrollpane = new JScrollPane();
+    private final MScrollPane scrollpane = new MScrollPane();
     private final JList<DeckLegalityInfo> formatsJList = new JList<>();
     private boolean isAdjusting = false;
     private int lastSelectedRow = 0;
@@ -48,7 +48,7 @@ public class FormatsLegalityPanel extends JPanel {
 
         // add table to scroll pane
         scrollpane.setViewportView(formatsJList);
-        scrollpane.getViewport().setBackground(Color.WHITE);
+        scrollpane.setBackground(Color.WHITE);
         scrollpane.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.DARK_GRAY));
 
         titleLabel = new JLabel(UiString.get(_S1));
@@ -80,7 +80,7 @@ public class FormatsLegalityPanel extends JPanel {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
         add(titleLabel, "w 100%, h 21!, hidemode 3");
-        add(scrollpane, "w 100%, h 100%");
+        add(scrollpane.component(), "w 100%, h 100%");
     }
 
     void setDeck(MagicDeck aDeck) {

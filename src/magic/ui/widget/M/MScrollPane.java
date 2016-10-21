@@ -1,5 +1,6 @@
 package magic.ui.widget.M;
 
+import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
@@ -66,5 +67,10 @@ public class MScrollPane extends MWidget {
 
     public void setVisible(boolean b) {
         scrollPane.setVisible(b);
+    }
+
+    public void setBackground(Color c) {
+        scrollPane.setBackground(c);
+        scrollPane.getViewport().setBackground(c);
     }
 }
