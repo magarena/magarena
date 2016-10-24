@@ -73,7 +73,7 @@ public class MagicSetDefinitions {
                 writer.printf("%s %s,%d,%d,%d,%d\n",
                     set.name().replaceAll("_", ""),
                     set.getSetName(),
-                    totalPlayable + totalUnplayable,
+                    totalPlayable + totalUnplayable + totalPotential,
                     totalPlayable,
                     totalUnplayable + totalPotential,
                     totalPotential
