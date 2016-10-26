@@ -31,14 +31,14 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     private static FiremindWorkerDialog firemindWorkerDialog;
 
     SettingsMenuContentPanel() {
-        super(_S1, true);
-        addMenuItem(_S2, this::showPreferencesDialog);
-        addMenuItem(_S3, this::showDowloadImagesDialog);
-        addMenuItem(_S4, this::showFiremindWorkerDialog);
-        addMenuItem(_S5, this::doToggleFullScreen);
-        addMenuItem(_S7, this::doResetRestart);
+        super(UiString.get(_S1), true);
+        addMenuItem(UiString.get(_S2), this::showPreferencesDialog);
+        addMenuItem(UiString.get(_S3), this::showDowloadImagesDialog);
+        addMenuItem(UiString.get(_S4), this::showFiremindWorkerDialog);
+        addMenuItem(UiString.get(_S5), this::doToggleFullScreen);
+        addMenuItem(UiString.get(_S7), this::doResetRestart);
         addSpace();
-        addMenuItem(_S6, this::doCloseMenu);
+        addMenuItem(UiString.get(_S6), this::doCloseMenu);
         refreshMenuLayout();
     }
 

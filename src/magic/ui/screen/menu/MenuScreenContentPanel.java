@@ -3,7 +3,6 @@ package magic.ui.screen.menu;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.translate.UiString;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;
@@ -15,7 +14,7 @@ public abstract class MenuScreenContentPanel extends JPanel {
 
     public MenuScreenContentPanel(String title, boolean showKeyStripPanel) {
 
-        mp = new MenuPanel(UiString.get(title));
+        mp = new MenuPanel(title);
         
         final MigLayout layout = new MigLayout();
         layout.setLayoutConstraints("insets 0, gap 0, flowy");
@@ -32,7 +31,7 @@ public abstract class MenuScreenContentPanel extends JPanel {
     }
 
     protected void addMenuItem(String name, int fontSize, Runnable action) {
-        mp.addMenuItem(UiString.get(name), fontSize, new AbstractAction() {
+        mp.addMenuItem(name, fontSize, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 action.run();
@@ -41,7 +40,7 @@ public abstract class MenuScreenContentPanel extends JPanel {
     }
 
     protected void addMenuItem(String name, String tooltip, Runnable action) {
-        mp.addMenuItem(UiString.get(name), new AbstractAction() {
+        mp.addMenuItem(name, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 action.run();
@@ -50,7 +49,7 @@ public abstract class MenuScreenContentPanel extends JPanel {
     }
 
     protected void addMenuItem(String name, Runnable action) {
-        mp.addMenuItem(UiString.get(name), new AbstractAction() {
+        mp.addMenuItem(name, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 action.run();

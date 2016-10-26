@@ -1,6 +1,7 @@
 package magic.ui.screen.menu.main;
 
 import magic.exception.InvalidDeckException;
+import magic.translate.UiString;
 import magic.ui.ScreenController;
 import magic.ui.screen.menu.MenuScreenContentPanel;
 import magic.ui.widget.alerter.AlertPanel;
@@ -22,15 +23,15 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
     private static final AlertPanel alertPanel = new AlertPanel();
 
     MainMenuContentPanel() {
-        super(_S1, false);
-        addMenuItem(_S2, this::doNewDuel);
-        addMenuItem(_S3, this::doResumeDuel);
-        addMenuItem(_S4, this::showExplorerScreen);
-        addMenuItem(_S5, this::showDeckEditor);
-        addMenuItem(_S6, this::showSettingsMenu);
-        addMenuItem(_S7, this::showHelpMenu);
+        super(UiString.get(_S1), false);
+        addMenuItem(UiString.get(_S2), this::doNewDuel);
+        addMenuItem(UiString.get(_S3), this::doResumeDuel);
+        addMenuItem(UiString.get(_S4), this::showExplorerScreen);
+        addMenuItem(UiString.get(_S5), this::showDeckEditor);
+        addMenuItem(UiString.get(_S6), this::showSettingsMenu);
+        addMenuItem(UiString.get(_S7), this::showHelpMenu);
         addSpace();
-        addMenuItem(_S8, this::doShutdown);
+        addMenuItem(UiString.get(_S8), this::doShutdown);
         if (MagicSystem.isDevMode()) {
             addSpace();
             addSpace();
