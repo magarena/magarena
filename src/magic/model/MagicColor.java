@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.EnumSet;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum MagicColor {
 
@@ -27,7 +27,7 @@ public enum MagicColor {
         this.name = name;
         this.symbol = symbol;
         this.mask = 1 << ordinal();
-        this.displayName = UiString.get(name);
+        this.displayName = MText.get(name);
     }
 
     /**

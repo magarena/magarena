@@ -2,7 +2,7 @@ package magic.ui.screen.card.script;
 
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.helpers.UrlHelper;
 import magic.ui.screen.widget.MenuButton;
 import magic.utility.MagicSystem;
@@ -23,7 +23,7 @@ public class CardScriptScreen extends HeaderFooterScreen {
     private final ScriptContentPanel content;
 
     public CardScriptScreen(final MagicCardDefinition card) {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         content = new ScriptContentPanel(card);
         setMainContent(content);
         setFooterButtons();
@@ -32,11 +32,11 @@ public class CardScriptScreen extends HeaderFooterScreen {
 
     private void setFooterButtons() {
         addToFooter(MenuButton.build(this::openFiremindWebpage, 
-                MagicIcon.FIREMIND, UiString.get(_S5), UiString.get(_S6))
+                MagicIcon.FIREMIND, MText.get(_S5), MText.get(_S6))
         );
         if (MagicSystem.isDevMode()) {
             addToFooter(MenuButton.build(this::doReloadScript,
-                    MagicIcon.REFRESH, UiString.get(_S3), UiString.get(_S4))
+                    MagicIcon.REFRESH, MText.get(_S3), MText.get(_S4))
             );
         }
     }

@@ -1,6 +1,6 @@
 package magic.ui;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import magic.utility.MagicFileSystem;
@@ -14,7 +14,7 @@ public class MagarenaDirectoryChooser extends JFileChooser {
 
     public MagarenaDirectoryChooser(Path currentDirectoryPath) {
         super(currentDirectoryPath.toFile());
-        setDialogTitle(UiString.get(_S1));
+        setDialogTitle(MText.get(_S1));
         setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         setAcceptAllFileFilterUsed(false);
     }
@@ -29,10 +29,9 @@ public class MagarenaDirectoryChooser extends JFileChooser {
         if (verifyImportPath(importPath)) {
             super.approveSelection();
         } else {
-            ScreenController.showWarningMessage(
-                    String.format("<html><b>%s</b><br>%s</html>",
-                            UiString.get(_S2),
-                            UiString.get(_S3))
+            ScreenController.showWarningMessage(String.format("<html><b>%s</b><br>%s</html>",
+                            MText.get(_S2),
+                            MText.get(_S3))
             );
         }
     }

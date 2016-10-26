@@ -8,7 +8,7 @@ import magic.model.player.HumanProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -21,7 +21,7 @@ public class SelectHumanPlayerScreen extends SelectPlayerScreen {
     private static final String _S4 = "Update Player";
 
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
-        super(UiString.get(_S1), new HumanPlayerJList());
+        super(MText.get(_S1), new HumanPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }
@@ -43,10 +43,9 @@ public class SelectHumanPlayerScreen extends SelectPlayerScreen {
 
     @Override
     protected void doNewPlayerAction() {
-        final String newName = (String) JOptionPane.showInputDialog(
-            ScreenController.getFrame(),
-            String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
-            UiString.get(_S3),
+        final String newName = (String) JOptionPane.showInputDialog(ScreenController.getFrame(),
+            String.format("<html><b>%s</b><br></html>", MText.get(_S2)),
+            MText.get(_S3),
             JOptionPane.PLAIN_MESSAGE,
             null, null, null);
         if (newName != null && !newName.trim().isEmpty()) {
@@ -60,10 +59,9 @@ public class SelectHumanPlayerScreen extends SelectPlayerScreen {
     @Override
     protected void doEditPlayerAction() {
         final PlayerProfile profile = getSelectedPlayer();
-        final String newName = (String) JOptionPane.showInputDialog(
-            ScreenController.getFrame(),
-            String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
-            UiString.get(_S4),
+        final String newName = (String) JOptionPane.showInputDialog(ScreenController.getFrame(),
+            String.format("<html><b>%s</b><br></html>", MText.get(_S2)),
+            MText.get(_S4),
             JOptionPane.PLAIN_MESSAGE,
             null, null, profile.getPlayerName());
         if (newName != null && !newName.trim().isEmpty()) {

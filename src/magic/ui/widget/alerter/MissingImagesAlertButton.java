@@ -5,7 +5,7 @@ import javax.swing.AbstractAction;
 import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -49,7 +49,7 @@ public class MissingImagesAlertButton extends AlertButton {
             hasChecked = true;
         }
         if (isMissingImages) {
-            return UiString.get(_S1);
+            return MText.get(_S1);
         } else {
             return "";
         }

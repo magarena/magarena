@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
@@ -53,8 +53,8 @@ public class LogStackViewer extends JPanel {
         this.logViewer = aLogBookViewer;
         this.stackViewer = aStackViewer;
 
-        logTitleBar = new ActionButtonTitleBar(UiString.get(_S4), getLogActionButtons());
-        stackTitleBar = new ActionButtonTitleBar(UiString.get(_S5), getStackActionButtons());
+        logTitleBar = new ActionButtonTitleBar(MText.get(_S4), getLogActionButtons());
+        stackTitleBar = new ActionButtonTitleBar(MText.get(_S5), getStackActionButtons());
 
         setOpaque(false);
         setBorders();
@@ -66,8 +66,8 @@ public class LogStackViewer extends JPanel {
     private JButton getLogFileActionButton() {
         return new ActionBarButton(
             MagicImages.getIcon(MagicIcon.LOG_FILE),
-            UiString.get(_S1),
-            UiString.get(_S2),
+            MText.get(_S1),
+            MText.get(_S2),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -80,7 +80,7 @@ public class LogStackViewer extends JPanel {
     private JButton getLogViewActionButton(MagicIcon aIcon) {
         return new ActionBarButton(
             MagicImages.getIcon(aIcon),
-            UiString.get(_S10),
+            MText.get(_S10),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -94,8 +94,8 @@ public class LogStackViewer extends JPanel {
         return new DialButton(
             MessageStyle.values().length,
             messageStyle.ordinal(),
-            UiString.get(_S6),
-            UiString.get(_S7),
+            MText.get(_S6),
+            MText.get(_S7),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -110,8 +110,8 @@ public class LogStackViewer extends JPanel {
     private JButton getKeywordsActionButton() {
         return new ActionBarButton(
             MagicImages.getIcon(MagicIcon.KEY),
-            UiString.get(UiString.get(_S8)),
-            UiString.get(UiString.get(_S9)),
+            MText.get(MText.get(_S8)),
+            MText.get(MText.get(_S9)),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {

@@ -4,7 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import magic.exception.DesktopNotSupportedException;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -48,7 +48,7 @@ public final class DesktopHelper {
                 Desktop.getDesktop().open(file.getAbsoluteFile());
             }
         } else {
-            throw new DesktopNotSupportedException(UiString.get(_S1));
+            throw new DesktopNotSupportedException(MText.get(_S1));
         }
     }
 

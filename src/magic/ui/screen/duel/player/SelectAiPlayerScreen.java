@@ -7,7 +7,7 @@ import magic.model.player.AiProfile;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.AiPropertiesDialog;
 
 @SuppressWarnings("serial")
@@ -17,7 +17,7 @@ public class SelectAiPlayerScreen extends SelectPlayerScreen {
     private static final String _S1 =  "Select AI Player";
 
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
-        super(UiString.get(_S1), new AiPlayerJList());
+        super(MText.get(_S1), new AiPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }

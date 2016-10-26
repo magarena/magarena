@@ -13,7 +13,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.DuelSidebarLayoutDialog;
 import magic.ui.dialog.prefs.PreferencesDialog;
 import magic.ui.helpers.MouseHelper;
@@ -118,12 +118,12 @@ public final class ScreenController {
     }
 
     public static void showInfoMessage(final String message) {
-        JOptionPane.showMessageDialog(mainFrame, message, UiString.get(_S2), JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(mainFrame, message, MText.get(_S2), JOptionPane.INFORMATION_MESSAGE);
     }
 
     public static void showWarningMessage(final String message) {
         MagicSound.BEEP.play();
-        JOptionPane.showMessageDialog(mainFrame, message, UiString.get(_S3), JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(mainFrame, message, MText.get(_S3), JOptionPane.WARNING_MESSAGE);
     }
 
     public static void showDuelSidebarDialog(final IUIGameController controller) {

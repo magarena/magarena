@@ -21,7 +21,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.firemind.FiremindClient;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -46,7 +46,7 @@ public class FiremindWorkerPanel extends JPanel {
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
     private final JButton runButton = new JButton();
-    private final JButton cancelButton = new JButton(UiString.get(_S1));
+    private final JButton cancelButton = new JButton(MText.get(_S1));
 
     private SwingWorker<String, Void> firemindWorker;
     private boolean isRunning = false;
@@ -56,9 +56,9 @@ public class FiremindWorkerPanel extends JPanel {
     }
     protected String getProgressCaption(){
         if(isRunning){
-            return UiString.get(_S2);
+            return MText.get(_S2);
         }else{
-            return UiString.get(_S3);
+            return MText.get(_S3);
         }
 
     }
@@ -68,7 +68,7 @@ public class FiremindWorkerPanel extends JPanel {
     }
 
     protected String getStartButtonCaption() {
-        return UiString.get(_S4);
+        return MText.get(_S4);
     }
 
     public FiremindWorkerPanel() {
@@ -108,7 +108,7 @@ public class FiremindWorkerPanel extends JPanel {
                     firemindWorker = getFiremindWorker(CONFIG.getProxy());
                     firemindWorker.execute();
                 }else{
-                    statusTextField.setText(UiString.get(_S5));
+                    statusTextField.setText(MText.get(_S5));
                 }
             }
         });
@@ -163,7 +163,7 @@ public class FiremindWorkerPanel extends JPanel {
 
     private JLabel getAccessKeyLabel() {
         final JLabel lbl = new JLabel();
-        lbl.setText(UiString.get(_S6));
+        lbl.setText(MText.get(_S6));
 //        lbl.setHorizontalAlignment(SwingConstants.LEFT);
 //        lbl.setHorizontalTextPosition(SwingConstants.LEADING);
         lbl.setOpaque(false);

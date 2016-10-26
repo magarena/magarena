@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicType;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.IFilterListener;
 import magic.utility.MagicSystem;
 
@@ -27,7 +27,7 @@ public class TypeFilterPanel extends CheckBoxFilterPanel {
     private final boolean isDeckEditor;
 
     public TypeFilterPanel(IFilterListener aListener, boolean isDeckEditor) {
-        super(UiString.get(_S8), aListener);
+        super(MText.get(_S8), aListener);
         this.isDeckEditor = isDeckEditor;
     }
 
@@ -37,15 +37,15 @@ public class TypeFilterPanel extends CheckBoxFilterPanel {
         final String text = cbDialog.getItemText(i);
 
         // check first - custom types specifically for use with filter.
-        if (UiString.get(_S20).equals(text))
+        if (MText.get(_S20).equals(text))
             return card.isToken();        
-        else if (UiString.get(_S21).equals(text))
+        else if (MText.get(_S21).equals(text))
             return card.isDoubleFaced();
-        else if (UiString.get(_S22).equals(text))
+        else if (MText.get(_S22).equals(text))
             return card.isFlipCard();
-        else if (UiString.get(_S23).equals(text))
+        else if (MText.get(_S23).equals(text))
             return card.isHidden();
-        else if (UiString.get(_S24).equals(text))
+        else if (MText.get(_S24).equals(text))
             return card.isSplitCard();
         else
             // "official" types
@@ -61,13 +61,13 @@ public class TypeFilterPanel extends CheckBoxFilterPanel {
             .collect(Collectors.toList());
 
         if (!isDeckEditor) {
-            types.add(UiString.get(_S20));
-            types.add(UiString.get(_S21));
-            types.add(UiString.get(_S22));
+            types.add(MText.get(_S20));
+            types.add(MText.get(_S21));
+            types.add(MText.get(_S22));
             if (MagicSystem.isDevMode()) {
-                types.add(UiString.get(_S23));
+                types.add(MText.get(_S23));
             }
-            types.add(UiString.get(_S24));
+            types.add(MText.get(_S24));
         }
         return types.toArray(new String[types.size()]);
     }

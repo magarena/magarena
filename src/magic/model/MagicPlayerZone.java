@@ -1,7 +1,7 @@
 package magic.model;
 
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum MagicPlayerZone {
 
@@ -14,7 +14,7 @@ public enum MagicPlayerZone {
     private final MagicIcon zoneIcon;
 
     private MagicPlayerZone(final String name, final MagicIcon icon) {
-        this.zoneName = UiString.get(name);
+        this.zoneName = MText.get(name);
         this.zoneIcon = icon;
     }
 

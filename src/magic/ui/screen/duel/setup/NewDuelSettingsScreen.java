@@ -14,7 +14,7 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.utility.MagicStyle;
@@ -40,12 +40,12 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
     private final ScreenContent content;
 
     public NewDuelSettingsScreen() {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         duelConfig.load();
         content = new ScreenContent(duelConfig);
         setMainContent(content);
-        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S2)));
-        setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S3)));
+        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S2)));
+        setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S3)));
         setWikiPage(WikiPage.NEW_DUEL);
     }
 
@@ -56,7 +56,7 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
             try {
                 ScreenController.getFrame().newDuel(duelConfig);
             } catch (InvalidDeckException ex) {
-                ScreenController.showWarningMessage(UiString.get(_S4, ex.getMessage()));
+                ScreenController.showWarningMessage(MText.get(_S4, ex.getMessage()));
             }
         }
     }
@@ -65,15 +65,15 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
         boolean isEachDeckValid = true;
         final StringBuffer sb = new StringBuffer();
         if (!content.isDeckValid(0)) {
-            sb.append(UiString.get(_S5, content.getPlayerProfile(0).getPlayerName())).append("\n");
+            sb.append(MText.get(_S5, content.getPlayerProfile(0).getPlayerName())).append("\n");
             isEachDeckValid = false;
         }
         if (!content.isDeckValid(1)) {
-            sb.append(UiString.get(_S5, content.getPlayerProfile(1).getPlayerName()));
+            sb.append(MText.get(_S5, content.getPlayerProfile(1).getPlayerName()));
             isEachDeckValid = false;
         }
         if (!isEachDeckValid && showErrorDialog) {
-            sb.insert(0, UiString.get(_S6));
+            sb.insert(0, MText.get(_S6));
             ScreenController.showWarningMessage(sb.toString());
         }
         return isEachDeckValid;

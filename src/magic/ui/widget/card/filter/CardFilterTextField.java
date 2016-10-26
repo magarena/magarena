@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.button.FilterPanel;
 import magic.ui.widget.*;
 import magic.ui.widget.TextPrompt.Show;
@@ -43,7 +43,7 @@ public class CardFilterTextField extends JTextField
     }
 
     private void setLookAndFeel() {
-        final TextPrompt promptField = new TextPrompt(UiString.get(_S1), this);
+        final TextPrompt promptField = new TextPrompt(MText.get(_S1), this);
         promptField.setShow(Show.FOCUS_LOST);
         promptField.changeStyle(Font.ITALIC);
         promptField.setForeground(Color.GRAY);

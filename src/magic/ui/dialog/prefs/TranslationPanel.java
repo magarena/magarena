@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.exception.DesktopNotSupportedException;
 import magic.ui.ScreenController;
 import magic.ui.helpers.UrlHelper;
@@ -82,7 +82,7 @@ class TranslationPanel extends JPanel {
     }
 
     private void setupHelpMenuItem() {
-        final JMenuItem menu = new JMenuItem(new AbstractAction(UiString.get(UiString.get(_S17))) {
+        final JMenuItem menu = new JMenuItem(new AbstractAction(MText.get(MText.get(_S17))) {
             @Override
             public void actionPerformed(ActionEvent e) {
                 UrlHelper.openURL(UrlHelper.URL_WIKI + "Translating-Magarena");
@@ -92,7 +92,7 @@ class TranslationPanel extends JPanel {
     }
 
     private void setupExplorerMenuItem() {
-        final JMenuItem itemReload = new JMenuItem(new AbstractAction(UiString.get(_S14)) {
+        final JMenuItem itemReload = new JMenuItem(new AbstractAction(MText.get(_S14)) {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -153,10 +153,10 @@ class TranslationPanel extends JPanel {
         }
 
         // 1. Build strings map from UI.
-        final Map<Long, String> latestStrings = UiString.getUiStringsMap();
+        final Map<Long, String> latestStrings = MText.getUiStringsMap();
 
         // 2. load map of escaped strings from translation file.
-        final Map<Long, String> langStrings = UiString.getEscapedStringsMap(langFile);
+        final Map<Long, String> langStrings = MText.getEscapedStringsMap(langFile);
 
         // 3. remove entries from 2. missing in 1.
         final Set<Long> latestKeys = latestStrings.keySet();
@@ -168,13 +168,13 @@ class TranslationPanel extends JPanel {
         latestStrings.putAll(langStrings);
 
         // 5. save 1. by overwriting existing translation file.
-        UiString.createTranslationFile(langFile, latestStrings);
+        MText.createTranslationFile(langFile, latestStrings);
 
         // 6. open file in default txt editor.
         try {
             DesktopHelper.openFileInDefaultOsEditor(langFile);
         } catch (IOException | DesktopNotSupportedException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S13, ex));
+            ScreenController.showWarningMessage(MText.get(_S13, ex));
         }
 
     }
@@ -185,7 +185,7 @@ class TranslationPanel extends JPanel {
     }
 
     private void setupEditMenuItem() {
-        editMenuItem.setAction(new AbstractAction(UiString.get(_S1)) {
+        editMenuItem.setAction(new AbstractAction(MText.get(_S1)) {
             @Override
             public void actionPerformed(ActionEvent e) {
                 getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
@@ -206,15 +206,14 @@ class TranslationPanel extends JPanel {
         final String lang = (String) languageCombo.getSelectedItem();
         final File langFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS).resolve(lang + ".txt").toFile();
         if (langFile.exists()) {
-            if (JOptionPane.showOptionDialog(
-                    ScreenController.getFrame(),
-                    String.format("<html>%s</html>", UiString.get(_S2, lang)),
-                    UiString.get(_S3),
+            if (JOptionPane.showOptionDialog(ScreenController.getFrame(),
+                    String.format("<html>%s</html>", MText.get(_S2, lang)),
+                    MText.get(_S3),
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    new String[]{UiString.get(_S15), UiString.get(_S16)},
-                    UiString.get(_S16)
+                    new String[]{MText.get(_S15), MText.get(_S16)},
+                    MText.get(_S16)
             ) == JOptionPane.YES_OPTION) {
                 langFile.delete();
                 refreshLanguageCombo();
@@ -223,7 +222,7 @@ class TranslationPanel extends JPanel {
     }
 
     private void setupDeleteMenuItem() {
-        deleteMenuItem.setAction(new AbstractAction(UiString.get(_S4)) {
+        deleteMenuItem.setAction(new AbstractAction(MText.get(_S4)) {
             @Override
             public void actionPerformed(ActionEvent e) {
                 getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
@@ -237,16 +236,16 @@ class TranslationPanel extends JPanel {
 
     private void doAddNewTranslationFile() {
         try {
-            final String text = JOptionPane.showInputDialog(null, UiString.get(_S5), UiString.get(_S6), JOptionPane.QUESTION_MESSAGE);
+            final String text = JOptionPane.showInputDialog(null, MText.get(_S5), MText.get(_S6), JOptionPane.QUESTION_MESSAGE);
             if (text != null) {
                 final String language = text.trim();
                 if (language.isEmpty() == false && language.equalsIgnoreCase("English") == false) {
                     File langFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS).resolve(language + ".txt").toFile();
                     if (langFile.exists()) {
-                        ScreenController.showWarningMessage(UiString.get(_S7));
+                        ScreenController.showWarningMessage(MText.get(_S7));
                         return;
                     }
-                    UiString.createTranslationFIle(langFile);
+                    MText.createTranslationFIle(langFile);
                     DesktopHelper.openFileInDefaultOsEditor(langFile);
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
@@ -256,20 +255,20 @@ class TranslationPanel extends JPanel {
                         }
                     });
                 } else {
-                    ScreenController.showWarningMessage(UiString.get(_S8));
+                    ScreenController.showWarningMessage(MText.get(_S8));
                 }
             }
         } catch (FileNotFoundException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S9, ex));
+            ScreenController.showWarningMessage(MText.get(_S9, ex));
         } catch (IOException | DesktopNotSupportedException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S10, ex));
+            ScreenController.showWarningMessage(MText.get(_S10, ex));
         } catch (URISyntaxException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S11, ex));
+            ScreenController.showWarningMessage(MText.get(_S11, ex));
         }
     }
 
     private void setupNewMenuItem() {
-        newMenuItem.setAction(new AbstractAction(UiString.get(_S12)) {
+        newMenuItem.setAction(new AbstractAction(MText.get(_S12)) {
             @Override
             public void actionPerformed(ActionEvent e) {
                 getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));

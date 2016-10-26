@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 @SuppressWarnings("serial")
 public class UpgradeJavaAlertButton extends AlertButton {
@@ -26,15 +26,14 @@ public class UpgradeJavaAlertButton extends AlertButton {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                String[] buttons = {UiString.get(_S1)};
-                int rc = JOptionPane.showOptionDialog(
-                    ScreenController.getFrame(),
+                String[] buttons = {MText.get(_S1)};
+                int rc = JOptionPane.showOptionDialog(ScreenController.getFrame(),
                     String.format("<html>%s<br><br>%s<br><br>%s</html>",
-                        UiString.get(_S2),
-                        UiString.get(_S3, JRE_VERSION),
-                        UiString.get(_S4)
+                        MText.get(_S2),
+                        MText.get(_S3, JRE_VERSION),
+                        MText.get(_S4)
                     ),
-                    UiString.get(_S5),
+                    MText.get(_S5),
                     0,
                     JOptionPane.WARNING_MESSAGE,
                     null,
@@ -50,7 +49,7 @@ public class UpgradeJavaAlertButton extends AlertButton {
     protected String getAlertCaption() {
         assert !SwingUtilities.isEventDispatchThread();
         if (NewVersionJsonParser.versionCompare(JRE_VERSION, "1.8") < 0) {
-            return UiString.get(_S5);
+            return MText.get(_S5);
         } else {
             return "";
         }

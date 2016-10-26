@@ -1,7 +1,7 @@
 package magic.model;
 
 import java.util.EnumSet;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum MagicRarity {
 
@@ -17,7 +17,7 @@ public enum MagicRarity {
     private final String displayName;
 
     private MagicRarity(final String aName, final char c) {
-        this.displayName = UiString.get(aName);
+        this.displayName = MText.get(aName);
         this.c = c;
     }
 

@@ -6,7 +6,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -83,7 +83,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     }
 
     private void notifyUser(final String brokenRules) {
-        ScreenController.showWarningMessage(UiString.get(_S1, brokenRules));
+        ScreenController.showWarningMessage(MText.get(_S1, brokenRules));
     }
 
     public boolean validateDeck(final boolean notifyUser) {

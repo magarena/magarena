@@ -1,6 +1,6 @@
 package magic.ui.screen.images.download;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 
 enum DownloadMode {
 
@@ -10,7 +10,7 @@ enum DownloadMode {
     private final String desc;
 
     private DownloadMode(String aDesc) {
-        this.desc = UiString.get(aDesc);
+        this.desc = MText.get(aDesc);
     }
 
     @Override

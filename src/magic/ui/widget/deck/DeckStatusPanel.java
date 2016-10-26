@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -28,7 +28,7 @@ public class DeckStatusPanel extends JPanel {
 
     public void setDeck(final MagicDeck deck, final boolean showDeckSize) {
         deckNameLabel.setText(deck != null ? deck.getName() : "");
-        deckSizeLabel.setText(showDeckSize && deck != null ? UiString.get(_S1, deck.size()): "");
+        deckSizeLabel.setText(showDeckSize && deck != null ? MText.get(_S1, deck.size()): "");
         refreshLayout();
     }
 

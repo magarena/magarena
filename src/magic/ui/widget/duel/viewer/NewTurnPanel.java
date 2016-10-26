@@ -4,7 +4,7 @@ import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
@@ -41,7 +41,7 @@ class NewTurnPanel extends JPanel {
 
     public void refreshData(final GameViewerInfo gameInfo) {
         iconLabel.setIcon(gameInfo.getTurnPlayer().getAvatar());
-        turnLabel.setText(UiString.get(_S1, gameInfo.getTurn()));
+        turnLabel.setText(MText.get(_S1, gameInfo.getTurn()));
     }
 
 }

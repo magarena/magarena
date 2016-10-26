@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -45,10 +45,10 @@ class HeaderPanel extends JPanel {
     private void setContent(final MagicGame game) {
         final MagicPlayer turnPlayer = game.getTurnPlayer();
         final MagicPlayer humanPlayer = game.getPlayer(0);
-        playingFirstLabel.setText(UiString.get(_S6,
+        playingFirstLabel.setText(MText.get(_S6,
                 turnPlayer == humanPlayer
-                        ? UiString.get(_S7)
-                        : UiString.get(_S8)));
+                        ? MText.get(_S7)
+                        : MText.get(_S8)));
         refreshLayout();
     }
 

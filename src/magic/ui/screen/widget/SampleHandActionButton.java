@@ -6,7 +6,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 @SuppressWarnings("serial")
 public final class SampleHandActionButton extends ActionBarButton {
@@ -21,7 +21,7 @@ public final class SampleHandActionButton extends ActionBarButton {
     public static ActionBarButton createInstance(final MagicDeck deck) {
         return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.HAND_ICON),
-                UiString.get(_S1), UiString.get(_S2),
+                MText.get(_S1), MText.get(_S2),
                 new SampleHandAction(deck));
     }
 
@@ -38,7 +38,7 @@ public final class SampleHandActionButton extends ActionBarButton {
             if (deck.size() >= 7) {
                 ScreenController.showSampleHandScreen(deck);
             } else {
-                showInvalidActionMessage(UiString.get(_S3));
+                showInvalidActionMessage(MText.get(_S3));
             }
         }
 

@@ -20,7 +20,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.text.NumberFormatter;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.deck.DeckFilter;
 import magic.ui.widget.deck.DeckFilter.NumericFilter;
@@ -49,13 +49,13 @@ public class DecksFilterDialog extends MagicDialog {
     private final JTextField cardNameFilterText = new JTextField();
     private final JTextField deckNameFilterText = new JTextField();
     private final JTextField deckDescFilterText = new JTextField();
-    private final JButton saveButton = new SaveButton(UiString.get(_S1));
-    private final JButton resetButton = new JButton(UiString.get(_S2));
+    private final JButton saveButton = new SaveButton(MText.get(_S1));
+    private final JButton resetButton = new JButton(MText.get(_S2));
 
     // CTR
     public DecksFilterDialog() {
 
-        super(UiString.get(_S3), new Dimension(400, 300));
+        super(MText.get(_S3), new Dimension(400, 300));
 
         if (filterHistory.size() > 0) {
             deckFilter = filterHistory.get(historyIndex-1);
@@ -116,13 +116,13 @@ public class DecksFilterDialog extends MagicDialog {
     private void refreshLayout() {
         final JPanel panel = getDialogContentPanel();
         panel.setLayout(new MigLayout("flowx, wrap 2"));
-        panel.add(getFilterCaptionLabel(UiString.get(_S4)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S4)), "alignx right");
         panel.add(deckSizeFilterPanel, "w 100%");
-        panel.add(getFilterCaptionLabel(UiString.get(_S5)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S5)), "alignx right");
         panel.add(deckNameFilterText, "w 100%");
-        panel.add(getFilterCaptionLabel(UiString.get(_S6)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S6)), "alignx right");
         panel.add(deckDescFilterText, "w 100%");
-        panel.add(getFilterCaptionLabel(UiString.get(_S7)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S7)), "alignx right");
         panel.add(cardNameFilterText, "w 100%");
         panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
     }

@@ -26,7 +26,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.translate.StringContext;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.M.MScrollPane;
@@ -103,7 +103,7 @@ public class CardsLegalityPanel extends JPanel {
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setBackground(Color.WHITE);
 
-        titleLabel = new JLabel(UiString.get(_S1));
+        titleLabel = new JLabel(MText.get(_S1));
         titleLabel.setFont(getFont().deriveFont(Font.BOLD));
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         titleLabel.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.DARK_GRAY));
@@ -228,7 +228,7 @@ public class CardsLegalityPanel extends JPanel {
             final JLabel lbl = getLegalityIcon(cardLegality);
 
             lbl.setToolTipText(String.format("<html>%s</html>",
-                    UiString.get(_S2,
+                    MText.get(_S2,
                             cardLegality.getCardName(),
                             cardLegality.getLegality().getDescription(),
                             cardLegality.getFormat().getName()))
@@ -262,8 +262,8 @@ public class CardsLegalityPanel extends JPanel {
             final Graphics2D g2d = (Graphics2D)g.create();
             g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
             g2d.setFont(FontsAndBorders.FONT2);
-            g2d.drawString(UiString.get(_S3, magicFormat.getName()), 20, 60);
-            g2d.drawString(UiString.get(_S4, magicFormat.getMinimumDeckSize()), 20, 84);
+            g2d.drawString(MText.get(_S3, magicFormat.getName()), 20, 60);
+            g2d.drawString(MText.get(_S4, magicFormat.getMinimumDeckSize()), 20, 84);
             g2d.dispose();
         }
     }

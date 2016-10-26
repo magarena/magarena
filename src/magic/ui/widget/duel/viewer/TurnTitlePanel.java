@@ -18,7 +18,7 @@ import magic.ui.MagicImages;
 import magic.translate.StringContext;
 import magic.ui.utility.MagicStyle;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.theme.Theme;
 import magic.utility.MagicSystem;
@@ -68,8 +68,8 @@ public class TurnTitlePanel extends JPanel {
 
         final JButton btn = new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.MENU),
-                UiString.get(_S1),
-                UiString.get(_S2),
+                MText.get(_S1),
+                MText.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
@@ -96,10 +96,10 @@ public class TurnTitlePanel extends JPanel {
 
     public void refresh(final GameViewerInfo gameInfo) {
         scoreLabel.setText(getScoreString(gameInfo));
-        scoreLabel.setToolTipText(UiString.get(_S3, gameInfo.getGamesRequiredToWinDuel()));
+        scoreLabel.setToolTipText(MText.get(_S3, gameInfo.getGamesRequiredToWinDuel()));
         gameLabel.setText(String.format("%s  •  %s  •  %s",
-                UiString.get(_S4, gameInfo.getGameNumber(), gameInfo.getMaxGames()),
-                UiString.get(_S5, gameInfo.getTurn()),
+                MText.get(_S4, gameInfo.getGameNumber(), gameInfo.getMaxGames()),
+                MText.get(_S5, gameInfo.getTurn()),
                 gameInfo.getTurnPlayer().getName())
         );
     }

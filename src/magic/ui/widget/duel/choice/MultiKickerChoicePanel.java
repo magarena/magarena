@@ -12,7 +12,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.message.TextLabel;
@@ -41,7 +41,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final String message = UiString.get(_S1, name, cost.getText());
+        final String message = MText.get(_S1, name, cost.getText());
         final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 

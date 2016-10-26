@@ -12,7 +12,7 @@ import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -77,7 +77,7 @@ class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     private void setDeckType(final DeckType value) {
         deckType = value;
-        deckTypeLabel.setText(UiString.get(_S1, deckType));
+        deckTypeLabel.setText(MText.get(_S1, deckType));
         deckValueLabel.setText(getFormattedDeckValue());
     }
 
@@ -98,13 +98,13 @@ class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
         if (deckType == DeckType.Random) {
             switch (deckValue) {
                 case MagicDeckProfile.ANY_THREE:
-                    return UiString.get(_S2);
+                    return MText.get(_S2);
                 case MagicDeckProfile.ANY_TWO:
-                    return UiString.get(_S3);
+                    return MText.get(_S3);
                 case MagicDeckProfile.ANY_ONE:
-                    return UiString.get(_S4);
+                    return MText.get(_S4);
                 case MagicDeckProfile.ANY_DECK:
-                    return UiString.get(_S5);
+                    return MText.get(_S5);
                 default:
                     if (deckValue.length() <= 3) {
                         return getVerboseColors(deckValue);

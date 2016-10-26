@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -50,10 +50,10 @@ public class ExplorerHeaderPanel extends JPanel {
     }
 
     public void refreshTotals(int total, int playable, int missing) {
-        totals1.setText(UiString.get(_S9,
+        totals1.setText(MText.get(_S9,
                 NumberFormat.getInstance().format(total))
         );
-        totals2.setText(UiString.get(_S10,
+        totals2.setText(MText.get(_S10,
                 getCountCaption(total, playable),
                 getCountCaption(total, missing))
         );

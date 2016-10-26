@@ -25,7 +25,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.MagicFileSystem.DataPath;
 
 public class DeckUtils {
@@ -145,12 +145,12 @@ public class DeckUtils {
         final MagicDeck deck = new MagicDeck();
 
         if (content.isEmpty()) {
-            deck.setInvalidDeck(UiString.get(_S1));
+            deck.setInvalidDeck(MText.get(_S1));
             return deck;
         }
 
         if (content.size() > DECK_FILE_MAX_LINES) {
-            deck.setInvalidDeck(UiString.get(_S2, DECK_FILE_MAX_LINES));
+            deck.setInvalidDeck(MText.get(_S2, DECK_FILE_MAX_LINES));
             return deck;
         }
 
@@ -163,7 +163,7 @@ public class DeckUtils {
 
             if (lineErrors.size() > MAX_LINE_ERRORS) {
                 lineErrors.remove(lineErrors.size()-1);
-                lineErrors.add(UiString.get(_S3));
+                lineErrors.add(MText.get(_S3));
                 deck.clear();
                 break;
             }
@@ -177,14 +177,14 @@ public class DeckUtils {
 
                     // check line length
                     if (line.length() > MAX_LINE_LENGTH) {
-                        lineErrors.add(UiString.get(_S4, lineNumber, MAX_LINE_LENGTH));
+                        lineErrors.add(MText.get(_S4, lineNumber, MAX_LINE_LENGTH));
                         continue;
                     }
 
                     // check for space delimiter
                     final int index = line.indexOf(' ');
                     if (index == -1) {
-                        lineErrors.add(String.format("%s\n%s", UiString.get(_S5, lineNumber), UiString.get(_S6)));
+                        lineErrors.add(String.format("%s\n%s", MText.get(_S5, lineNumber), MText.get(_S6)));
                         continue;
                     }
 
@@ -193,7 +193,7 @@ public class DeckUtils {
                     try {
                         cardQuantity = Integer.parseInt(line.substring(0,index));
                     } catch (NumberFormatException e) {
-                        lineErrors.add(String.format("%s\n%s", UiString.get(_S5, lineNumber), UiString.get(_S6)));
+                        lineErrors.add(String.format("%s\n%s", MText.get(_S5, lineNumber), MText.get(_S6)));
                         continue;
                     }
 
@@ -206,7 +206,7 @@ public class DeckUtils {
                     }
 
                     if (cardDefinition.isInvalid() || cardDefinition.isNonPlayable()) {
-                        lineErrors.add(UiString.get(_S7, lineNumber, cardDefinition.getName()));
+                        lineErrors.add(MText.get(_S7, lineNumber, cardDefinition.getName()));
                     }
 
                 }

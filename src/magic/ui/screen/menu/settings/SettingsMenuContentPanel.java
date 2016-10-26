@@ -3,7 +3,7 @@ package magic.ui.screen.menu.settings;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.dialog.FiremindWorkerDialog;
 import magic.ui.theme.ThemeFactory;
@@ -31,20 +31,20 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     private static FiremindWorkerDialog firemindWorkerDialog;
 
     SettingsMenuContentPanel() {
-        super(UiString.get(_S1), true);
-        addMenuItem(UiString.get(_S2), this::showPreferencesDialog);
-        addMenuItem(UiString.get(_S3), this::showDowloadImagesDialog);
-        addMenuItem(UiString.get(_S4), this::showFiremindWorkerDialog);
-        addMenuItem(UiString.get(_S5), this::doToggleFullScreen);
-        addMenuItem(UiString.get(_S7), this::doResetRestart);
+        super(MText.get(_S1), true);
+        addMenuItem(MText.get(_S2), this::showPreferencesDialog);
+        addMenuItem(MText.get(_S3), this::showDowloadImagesDialog);
+        addMenuItem(MText.get(_S4), this::showFiremindWorkerDialog);
+        addMenuItem(MText.get(_S5), this::doToggleFullScreen);
+        addMenuItem(MText.get(_S7), this::doResetRestart);
         addSpace();
-        addMenuItem(UiString.get(_S6), this::doCloseMenu);
+        addMenuItem(MText.get(_S6), this::doCloseMenu);
         refreshMenuLayout();
     }
 
     private void showDowloadImagesDialog() {
         if (GeneralConfig.getInstance().getImagesOnDemand()) {
-            ScreenController.showInfoMessage(UiString.get(_S16));
+            ScreenController.showInfoMessage(MText.get(_S16));
         } else {
             ScreenController.showDownloadImagesScreen();
         }
@@ -59,14 +59,13 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     }
 
     private void doResetRestart() {
-        final int response = JOptionPane.showOptionDialog(
-                ScreenController.getFrame(),
-                String.format("<html>%s<br><br><b>%s</b></html>", UiString.get(_S11), UiString.get(_S12)),
-                UiString.get(_S13),
+        final int response = JOptionPane.showOptionDialog(ScreenController.getFrame(),
+                String.format("<html>%s<br><br><b>%s</b></html>", MText.get(_S11), MText.get(_S12)),
+                MText.get(_S13),
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
                 null,
-                new String[]{UiString.get(_S14), UiString.get(_S15)}, UiString.get(_S15));
+                new String[]{MText.get(_S14), MText.get(_S15)}, MText.get(_S15));
         if (response == JOptionPane.YES_OPTION) {
             setVisible(false);
             SwingUtilities.invokeLater(() -> {

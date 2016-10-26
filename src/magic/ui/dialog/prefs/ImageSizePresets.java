@@ -2,7 +2,7 @@ package magic.ui.dialog.prefs;
 
 import java.awt.Dimension;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum ImageSizePresets {
 
@@ -26,7 +26,7 @@ public enum ImageSizePresets {
     @Override
     public String toString() {
         if (this == SIZE_ORIGINAL) {
-            return UiString.get(_S1);
+            return MText.get(_S1);
         } else {
             return String.format("%d x %d", size.width, size.height);
         }

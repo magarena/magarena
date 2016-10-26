@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
@@ -60,15 +60,15 @@ public class StartScreen extends MScreen {
 
         private void setLanguage(String aLanguage) throws FileNotFoundException {
             GeneralConfig.getInstance().setTranslation(aLanguage);
-            UiString.loadTranslationFile();
+            MText.loadTranslationFile();
             GeneralConfig.getInstance().save();
         }
 
         private void showLanguageMenu() {
 
-            final MenuPanel menuPanel = new MenuPanel(UiString.get(_S1));
+            final MenuPanel menuPanel = new MenuPanel(MText.get(_S1));
 
-            menuPanel.addMenuItem(UiString.get("English"), new AbstractAction() {
+            menuPanel.addMenuItem(MText.get("English"), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent ev) {
                     try {
@@ -89,8 +89,7 @@ public class StartScreen extends MScreen {
                             ScreenController.showImportScreen();
                         } catch (FileNotFoundException | NumberFormatException ex) {
                             System.err.println(ex);
-                            ScreenController.showWarningMessage(
-                                    String.format("%s\n\n%s", UiString.get(_S2), ex)
+                            ScreenController.showWarningMessage(String.format("%s\n\n%s", MText.get(_S2), ex)
                             );
                         }
                     }

@@ -1,6 +1,6 @@
 package magic.data;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum CardLegality {
     Legal(CardLegalityStrings._S1),
@@ -12,7 +12,7 @@ public enum CardLegality {
     private final String description;
 
     private CardLegality(String aString) {
-        this.description = UiString.get(aString);
+        this.description = MText.get(aString);
     }
 
     public String getDescription() {

@@ -3,7 +3,7 @@ package magic.ui.screen.duel.player;
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 @SuppressWarnings("serial")
 class AiPlayerJList extends PlayersJList {
@@ -18,8 +18,8 @@ class AiPlayerJList extends PlayersJList {
         final AiProfile profile = (AiProfile) aProfile;
         return String.format("<html>%s<br>%s: %d, %s: %d</html>",
                 profile.getAiType(),
-                UiString.get(_S2), profile.getAiLevel(),
-                UiString.get(_S3), profile.getExtraLife());
+                MText.get(_S2), profile.getAiLevel(),
+                MText.get(_S3), profile.getExtraLife());
     }
 
 }

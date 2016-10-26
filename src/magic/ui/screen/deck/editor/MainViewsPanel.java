@@ -9,7 +9,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -83,21 +83,21 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     private void addToggleButtons() {
 
-        toggleButtonsPanel.addToggleButton(UiString.get(_S1), new AbstractAction() {
+        toggleButtonsPanel.addToggleButton(MText.get(_S1), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 deckPanel.setDeckTable(deckTable);
                 setView(deckPanel);
             }
         });
-        toggleButtonsPanel.addToggleButton(UiString.get(_S2), new AbstractAction() {
+        toggleButtonsPanel.addToggleButton(MText.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 cardPoolPanel.setDeckTable(deckTable);
                 setView(cardPoolPanel);
             }
         });
-        toggleButtonsPanel.addToggleButton(UiString.get(_S3), new AbstractAction() {
+        toggleButtonsPanel.addToggleButton(MText.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 recallPanel.setDeckTable(deckTable);
@@ -105,7 +105,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             }
         });
         if (ScreenController.isDuelActive() == false) {
-            toggleButtonsPanel.addToggleButton(UiString.get(_S4), new AbstractAction() {
+            toggleButtonsPanel.addToggleButton(MText.get(_S4), new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     setView(legalityPanel);
@@ -113,7 +113,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             });
         }
 
-        toggleButtonsPanel.setSelectedToggleButton(UiString.get(_S1));
+        toggleButtonsPanel.setSelectedToggleButton(MText.get(_S1));
         toggleButtonsPanel.refreshLayout();
     }
 

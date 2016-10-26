@@ -2,7 +2,7 @@ package magic.ui.screen.deck.tiled;
 
 import magic.data.MagicIcon;
 import magic.model.MagicType;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 // translatable strings
 class Txt {
@@ -32,7 +32,7 @@ enum CardTypeFilter {
     private final MagicIcon icon;
 
     private CardTypeFilter(String title, MagicType aType, MagicIcon icon) {
-        this.title = UiString.get(title);
+        this.title = MText.get(title);
         this.mtype = aType;
         this.icon = icon;
     }

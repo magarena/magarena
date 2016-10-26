@@ -6,7 +6,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -21,13 +21,13 @@ class PreferredSizePanel extends JPanel {
 
     PreferredSizePanel(MouseListener aListener) {
         setLayout(new MigLayout("insets 0"));
-        add(new JLabel(UiString.get(_S1)));
+        add(new JLabel(MText.get(_S1)));
         add(getSizePresetsCombo(aListener));
         addMouseListener(aListener);
     }
 
     private String getTooltip() {
-        return UiString.get(_S2);
+        return MText.get(_S2);
     }
 
     private JComboBox<ImageSizePresets> getSizePresetsCombo(MouseListener aListener) {

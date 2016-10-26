@@ -6,7 +6,7 @@ import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.model.MagicCardList;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
@@ -31,16 +31,16 @@ public class MulliganScreen extends HeaderFooterScreen {
     private final MagicCardList hand;
 
     public MulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         this.choicePanel = choicePanel;
         this.hand = hand;
         isActive = true;
         setMainContent(getScreenContent(hand));
         setHeaderContent(new HeaderPanel(choicePanel.getGameController().getGame()));
-        setLeftFooter(MenuButton.build(this::doCancel, UiString.get(_S2)));
-        setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S3)));
+        setLeftFooter(MenuButton.build(this::doCancel, MText.get(_S2)));
+        setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S3)));
         addToFooter(MenuButton.build(this::doMulligan,
-                MagicIcon.MULLIGAN, UiString.get(_S1), UiString.get(_S5))
+                MagicIcon.MULLIGAN, MText.get(_S1), MText.get(_S5))
         );
         setWikiPage(WikiPage.MULLIGAN);
         KeyEventAction.doAction(this, this::doCancel)

@@ -6,7 +6,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -54,8 +54,8 @@ class AnimationsPanel extends JPanel {
     }
 
     private JCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
-        final JCheckBox cb = new JCheckBox(UiString.get(_S70), CONFIG.getAnimateGameplay());
-        cb.setToolTipText(UiString.get(_S71));
+        final JCheckBox cb = new JCheckBox(MText.get(_S70), CONFIG.getAnimateGameplay());
+        cb.setToolTipText(MText.get(_S71));
         cb.setFocusable(false);
         cb.addMouseListener(aListener);
         cb.addChangeListener((ChangeEvent e) -> {
@@ -65,24 +65,24 @@ class AnimationsPanel extends JPanel {
     }
 
     private SliderPanel getNewTurnAlertSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get(_S1), 1, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
-        sp.setToolTipText(UiString.get(_S2));
+        final SliderPanel sp = new SliderPanel(MText.get(_S1), 1, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
+        sp.setToolTipText(MText.get(_S2));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);
         return sp;
     }
 
     private SliderPanel getNonLandPreviewSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get(_S3), 1, 20, 1, CONFIG.getNonLandPreviewDuration() / 1000);
-        sp.setToolTipText(UiString.get(_S4));
+        final SliderPanel sp = new SliderPanel(MText.get(_S3), 1, 20, 1, CONFIG.getNonLandPreviewDuration() / 1000);
+        sp.setToolTipText(MText.get(_S4));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);
         return sp;
     }
 
     private SliderPanel getLandPreviewSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get(_S5), 1, 20, 1, CONFIG.getLandPreviewDuration() / 1000);
-        sp.setToolTipText(UiString.get(_S6));
+        final SliderPanel sp = new SliderPanel(MText.get(_S5), 1, 20, 1, CONFIG.getLandPreviewDuration() / 1000);
+        sp.setToolTipText(MText.get(_S6));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);
         return sp;

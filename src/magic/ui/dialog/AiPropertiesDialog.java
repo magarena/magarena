@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 import magic.ai.MagicAIImpl;
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.SliderPanel;
@@ -37,13 +37,13 @@ public class AiPropertiesDialog extends MagicDialog {
 
     public AiPropertiesDialog(final AiProfile profile) {
 
-        super(UiString.get(_S1), new Dimension(400, 260));
+        super(MText.get(_S1), new Dimension(400, 260));
 
         this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
 
-        lifeSliderPanel = new SliderPanel(UiString.get(_S2), 0, 10, 1, playerProfile.getExtraLife());
-        aiLevelSliderPanel = new SliderPanel(UiString.get(_S3), 1, 8, 1, playerProfile.getAiLevel());
+        lifeSliderPanel = new SliderPanel(MText.get(_S2), 0, 10, 1, playerProfile.getExtraLife());
+        aiLevelSliderPanel = new SliderPanel(MText.get(_S3), 1, 8, 1, playerProfile.getAiLevel());
 
         aiComboBox = new JComboBox<>();
         aiComboBox.setModel(new DefaultComboBoxModel<>(MagicAIImpl.SUPPORTED_AIS));
@@ -121,14 +121,14 @@ public class AiPropertiesDialog extends MagicDialog {
 
     private JPanel getAiTypePanel() {
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel(UiString.get(_S6)));
+        panel.add(new JLabel(MText.get(_S6)));
         panel.add(aiComboBox, "w 100%, left");
         return panel;
     }
 
     private JPanel getPlayerNamePanel() {
         final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel(UiString.get(_S7)));
+        panel.add(new JLabel(MText.get(_S7)));
         panel.add(playerNameTextField, "w 100%, left");
         return panel;
     }

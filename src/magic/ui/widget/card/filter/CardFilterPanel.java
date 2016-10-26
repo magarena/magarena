@@ -13,7 +13,7 @@ import javax.swing.JButton;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.widget.card.filter.button.ColorFilterPanel;
@@ -56,8 +56,8 @@ public class CardFilterPanel extends TexturedPanel
 
     private class ResetButton extends JButton {
         ResetButton() {
-            super(UiString.get(_S15));
-            setToolTipText(UiString.get(_S16));
+            super(MText.get(_S15));
+            setToolTipText(MText.get(_S16));
             setFont(new Font("dialog", Font.BOLD, 12));
             setForeground(new Color(127, 23, 23));
             setPreferredSize(FILTER_BUTTON_PREFERRED_SIZE);
@@ -124,7 +124,7 @@ public class CardFilterPanel extends TexturedPanel
     private boolean showUnsupportedFilter() {
         return isNotDeckEditor()
                 && GeneralConfig.getInstance().showMissingCardData()
-                && UiString.isEnglish();
+                && MText.isEnglish();
     }
 
     private boolean isCardfiltered(final MagicCardDefinition aCard) {

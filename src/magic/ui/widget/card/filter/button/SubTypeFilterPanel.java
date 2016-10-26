@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSubType;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.IFilterListener;
 
 @SuppressWarnings("serial")
@@ -16,7 +16,7 @@ public class SubTypeFilterPanel extends CheckBoxFilterPanel {
     private List<MagicSubType> subtypes;
 
     public SubTypeFilterPanel(IFilterListener aListener) {
-        super(UiString.get(_S13), aListener);
+        super(MText.get(_S13), aListener);
     }
 
     @Override

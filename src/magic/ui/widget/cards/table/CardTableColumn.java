@@ -1,6 +1,6 @@
 package magic.ui.widget.cards.table;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 
 enum CardTableColumn {
 
@@ -19,7 +19,7 @@ enum CardTableColumn {
     private boolean isSortDesc;
 
     private CardTableColumn(String aCaption, int aWidth) {
-        this.caption = UiString.get(aCaption);
+        this.caption = MText.get(aCaption);
         this.minWidth = aWidth;
     }
 

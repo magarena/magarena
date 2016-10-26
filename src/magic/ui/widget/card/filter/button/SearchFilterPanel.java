@@ -2,7 +2,7 @@ package magic.ui.widget.card.filter.button;
 
 import java.awt.Dimension;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.CardFilterTextField;
 import magic.ui.widget.card.filter.IFilterListener;
 import magic.ui.widget.card.filter.dialog.FilterDialog;
@@ -19,7 +19,7 @@ public class SearchFilterPanel extends FilterPanel {
     private FilterDialog filterDialog;
 
     public SearchFilterPanel(IFilterListener aListener) {
-        super(UiString.get(_S9), UiString.get(_S10), aListener);
+        super(MText.get(_S9), MText.get(_S10), aListener);
         this.nameTextField = new CardFilterTextField(this);
     }
 

@@ -4,7 +4,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicSound;
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -25,19 +25,19 @@ class AudioPanel extends JPanel {
     AudioPanel(MouseListener aListener) {
 
         uiVolumeSlider = new VolumeSliderPanel(config.getUiVolume(), MagicSound.ALERT);
-        uiVolumeSlider.setToolTipText(UiString.get(_S9));
+        uiVolumeSlider.setToolTipText(MText.get(_S9));
         uiVolumeSlider.setFocusable(false);
         uiVolumeSlider.addMouseListener(aListener);
 
         gameVolumeSlider = new VolumeSliderPanel(config.getGameVolume(), MagicSound.COMBAT);
-        gameVolumeSlider.setToolTipText(UiString.get(_S11));
+        gameVolumeSlider.setToolTipText(MText.get(_S11));
         gameVolumeSlider.setFocusable(false);
         gameVolumeSlider.addMouseListener(aListener);
 
         setLayout(new MigLayout("flowy, gapy 0, insets 16"));
-        add(getCaptionLabel(UiString.get(_S1)));
+        add(getCaptionLabel(MText.get(_S1)));
         add(uiVolumeSlider, "w 100%");
-        add(getCaptionLabel(UiString.get(_S2)), "gaptop 16");
+        add(getCaptionLabel(MText.get(_S2)), "gaptop 16");
         add(gameVolumeSlider, " w 100%");
         addMouseListener(aListener);
     }

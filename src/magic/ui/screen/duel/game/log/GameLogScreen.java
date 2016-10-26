@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HeaderFooterScreen;
@@ -34,10 +34,10 @@ public class GameLogScreen extends HeaderFooterScreen {
     private static boolean isBasicLog = true;
 
     private final MTextFileViewer mainView = new MTextFileViewer();
-    private final JLabel modeLabel = new JLabel(UiString.get(_S1));
+    private final JLabel modeLabel = new JLabel(MText.get(_S1));
 
     public GameLogScreen() {
-        super(UiString.get(_S8));
+        super(MText.get(_S8));
         setDefaultProperties();
         setHeaderContent(modeLabel);
         setMainContent(mainView.component());
@@ -58,14 +58,14 @@ public class GameLogScreen extends HeaderFooterScreen {
         clearFooterButtons();
         if (isBasicLog) {
             addToFooter(MenuButton.build(this::showDetailedLog, 
-                    MagicIcon.SWAP, UiString.get(_S6), UiString.get(_S7))
+                    MagicIcon.SWAP, MText.get(_S6), MText.get(_S7))
             );
-            modeLabel.setText(UiString.get(_S1));
+            modeLabel.setText(MText.get(_S1));
         } else {
             addToFooter(MenuButton.build(this::showBasicLog, 
-                    MagicIcon.SWAP, UiString.get(_S4), UiString.get(_S5))
+                    MagicIcon.SWAP, MText.get(_S4), MText.get(_S5))
             );
-            modeLabel.setText(UiString.get(_S2));
+            modeLabel.setText(MText.get(_S2));
         }
     }
 

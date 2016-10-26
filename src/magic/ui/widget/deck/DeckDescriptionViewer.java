@@ -7,7 +7,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -25,7 +25,7 @@ public class DeckDescriptionViewer extends JPanel {
 
         setOpaque(false);
 
-        final TitleBar titleBar = new TitleBar(UiString.get(_S1));
+        final TitleBar titleBar = new TitleBar(MText.get(_S1));
 
         textArea = new JTextArea();
         textArea.setLineWrap(true);

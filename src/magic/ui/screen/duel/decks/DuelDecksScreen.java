@@ -15,7 +15,7 @@ import magic.model.MagicGame;
 import magic.ui.DuelDecksPanel;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
@@ -46,7 +46,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     private NewGameWorker worker;
 
     public DuelDecksScreen(final MagicDuel duel) {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
 
         screenContent = new DuelDecksPanel(duel);
         nextGameButton = new StartGameButton(getStartDuelCaption(), getPlayGameAction());
@@ -76,19 +76,18 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
         setLeftFooter(screenContent.getDuel().getGamesPlayed() == 0
                 ? MenuButton.getCloseScreenButton()
-                : MenuButton.build(this::doShowMainMenu, UiString.get(_S2))
+                : MenuButton.build(this::doShowMainMenu, MText.get(_S2))
         );
 
         setRightFooter(screenContent.getDuel().isFinished()
-                ? MenuButton.build(this::doRestartDuel, UiString.get(_S3))
+                ? MenuButton.build(this::doRestartDuel, MText.get(_S3))
                 : nextGameButton
         );
 
         // middle actions
         if (isNewDuel()) {
-            addToFooter(
-                    MenuButton.build(this::showDeckEditor,
-                            MagicIcon.DECK, UiString.get(_S5), UiString.get(_S6)
+            addToFooter(MenuButton.build(this::showDeckEditor,
+                            MagicIcon.DECK, MText.get(_S5), MText.get(_S6)
                     ),
                     getTiledDeckCardImagesButton(),
                     SampleHandActionButton.createInstance(getActiveDeck())
@@ -99,11 +98,10 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
             addToFooter(getWinnerButton());
         
         } else { // duel in progress
-            addToFooter(
-                    getTiledDeckCardImagesButton(),
+            addToFooter(getTiledDeckCardImagesButton(),
                     SampleHandActionButton.createInstance(getActiveDeck()),
                     MenuButton.build(this::doRestartDuel,
-                            MagicIcon.REFRESH, UiString.get(_S10), UiString.get(_S11)
+                            MagicIcon.REFRESH, MText.get(_S10), MText.get(_S11)
                     )
             );
         }        
@@ -111,7 +109,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
     private MenuButton getTiledDeckCardImagesButton() {
         return MenuButton.build(this::showTiledDeckCardImages,
-                MagicIcon.TILED, UiString.get(_S12), UiString.get(_S13));
+                MagicIcon.TILED, MText.get(_S12), MText.get(_S13));
     }
 
     /**
@@ -149,7 +147,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     }
 
     private String getStartDuelCaption() {
-        return UiString.get(_S4, screenContent.getDuel().getGamesPlayed() + 1);
+        return MText.get(_S4, screenContent.getDuel().getGamesPlayed() + 1);
     }
 
     private boolean isNewDuel() {
@@ -170,7 +168,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
 
     private MenuButton getWinnerButton() {
         String winner = screenContent.getDuel().getWinningPlayerProfile().getPlayerName();
-        return new MenuButton(UiString.get(_S9, winner), new AbstractAction() {
+        return new MenuButton(MText.get(_S9, winner), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // do nothing
@@ -195,7 +193,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(aPlayer.getDeck()));
 
         if (brokenRulesText.length() > 0) {
-            ScreenController.showWarningMessage(UiString.get(_S14, aPlayer.getName(), brokenRulesText));
+            ScreenController.showWarningMessage(MText.get(_S14, aPlayer.getName(), brokenRulesText));
             return false;
         }
 

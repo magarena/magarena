@@ -9,7 +9,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicRandom;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.screen.widget.MenuButton;
@@ -29,7 +29,7 @@ public class SampleHandScreen extends HeaderFooterScreen {
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     public SampleHandScreen(final MagicDeck aDeck) {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         this.deck = aDeck;
         useLoadingScreen(this::initUI);
     }
@@ -48,7 +48,7 @@ public class SampleHandScreen extends HeaderFooterScreen {
         deckStatusPanel.setDeck(deck, false);
         setHeaderContent(deckStatusPanel);
         addToFooter(MenuButton.build(this::dealSampleHand, 
-                MagicIcon.REFRESH, UiString.get(_S3), UiString.get(_S4))
+                MagicIcon.REFRESH, MText.get(_S3), MText.get(_S4))
         );
     }
     

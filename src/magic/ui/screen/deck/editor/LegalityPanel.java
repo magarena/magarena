@@ -13,7 +13,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -131,15 +131,15 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
 
             setLayout(new MigLayout("gapx 20, aligny center"));
 
-            add(getIconLabel(MagicIcon.LEGAL, UiString.get(_S1)));
-            add(getIconLabel(MagicIcon.ILLEGAL, UiString.get(_S2)));
-            add(getIconLabel(MagicIcon.BANNED, UiString.get(_S3)));
-            add(getIconLabel(MagicIcon.RESTRICTED, UiString.get(_S4), UiString.get(_S5)));
-            add(getIconLabel(MagicIcon.RESTRICTED, UiString.get(_S6),
+            add(getIconLabel(MagicIcon.LEGAL, MText.get(_S1)));
+            add(getIconLabel(MagicIcon.ILLEGAL, MText.get(_S2)));
+            add(getIconLabel(MagicIcon.BANNED, MText.get(_S3)));
+            add(getIconLabel(MagicIcon.RESTRICTED, MText.get(_S4), MText.get(_S5)));
+            add(getIconLabel(MagicIcon.RESTRICTED, MText.get(_S6),
                     String.format("<html><b>%s</b><br>%s<br><i>Relentless Rats</i> %s <i>Shadowborn Apostle</i>.</html>",
-                            UiString.get(_S7),
-                            UiString.get(_S8),
-                            UiString.get(_S9))
+                            MText.get(_S7),
+                            MText.get(_S8),
+                            MText.get(_S9))
             ));
         }
 

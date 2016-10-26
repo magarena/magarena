@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.IFilterListener;
 
 @SuppressWarnings("serial")
@@ -14,7 +14,7 @@ public class FormatFilterPanel extends CheckBoxFilterPanel {
     private static final String _S7 = "Format";
 
     public FormatFilterPanel(IFilterListener aListener) {
-        super(UiString.get(_S7), aListener);
+        super(MText.get(_S7), aListener);
     }
 
     @Override

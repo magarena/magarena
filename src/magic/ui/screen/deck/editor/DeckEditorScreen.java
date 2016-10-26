@@ -17,7 +17,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicLogs;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
@@ -60,7 +60,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorScreen(final MagicDeck deck) {
-        super(UiString.get(_S14));
+        super(MText.get(_S14));
         isStandalone = false;
         this.deck = deck;
         useLoadingScreen(this::initUI);
@@ -68,7 +68,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorScreen() {
-        super(UiString.get(_S14));
+        super(MText.get(_S14));
         isStandalone = true;
         this.deck = getMostRecentEditedDeck();
         useLoadingScreen(this::initUI);
@@ -95,7 +95,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
         if (screenContent.getDeck().size() >= 7) {
             ScreenController.showSampleHandScreen(screenContent.getDeck());
         } else {
-            showInvalidActionMessage(UiString.get(_S10));
+            showInvalidActionMessage(MText.get(_S10));
         }
     }    
     
@@ -103,23 +103,22 @@ public class DeckEditorScreen extends HeaderFooterScreen
         if (screenContent.getDeck().size() > 0) {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         } else {
-            showInvalidActionMessage(UiString.get(_S13));
+            showInvalidActionMessage(MText.get(_S13));
         }
     }
 
     private void setFooterButtons() {
-        addToFooter(
-                MenuButton.build(this::loadDeck,
-                        MagicIcon.OPEN, UiString.get(_S4), UiString.get(_S5)
+        addToFooter(MenuButton.build(this::loadDeck,
+                        MagicIcon.OPEN, MText.get(_S4), MText.get(_S5)
                 ),
                 MenuButton.build(this::saveDeck,
-                        MagicIcon.SAVE, UiString.get(_S6), UiString.get(_S7)
+                        MagicIcon.SAVE, MText.get(_S6), MText.get(_S7)
                 ),
                 MenuButton.build(this::showSampleHand,
-                        MagicIcon.HAND_ICON, UiString.get(_S8), UiString.get(_S9)
+                        MagicIcon.HAND_ICON, MText.get(_S8), MText.get(_S9)
                 ),
                 MenuButton.build(this::showTiledImagesView,
-                        MagicIcon.TILED, UiString.get(_S11), UiString.get(_S12)
+                        MagicIcon.TILED, MText.get(_S11), MText.get(_S12)
                 )
         );
     }
@@ -147,13 +146,13 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     public MenuButton getLeftAction() {
-        final String caption = (!isStandalone ? UiString.get(_S1) : UiString.get(_S2));
+        final String caption = (!isStandalone ? MText.get(_S1) : MText.get(_S2));
         return MenuButton.getCloseScreenButton(caption);
     }
 
     public MenuButton getRightAction() {
         if (!isStandalone) {
-            return new MenuButton(UiString.get(_S3), new AbstractAction() {
+            return new MenuButton(MText.get(_S3), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     if (screenContent.validateDeck(true) && screenContent.applyDeckUpdates()) {
@@ -187,7 +186,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     public void saveDeck() {
 
         if (screenContent.getDeck().size() == 0) {
-            showInvalidActionMessage(UiString.get(_S15));
+            showInvalidActionMessage(MText.get(_S15));
             return;
         }
 
@@ -200,12 +199,11 @@ public class DeckEditorScreen extends HeaderFooterScreen
                     setSelectedFile(new File(filename + DeckUtils.DECK_EXTENSION));
                 }
                 if (isReservedDeckFolder(getSelectedFile().toPath().getParent())) {
-                    ScreenController.showWarningMessage(UiString.get(_S16));
+                    ScreenController.showWarningMessage(MText.get(_S16));
                 } else if (Files.exists(getSelectedFile().toPath())) {
-                    int response = JOptionPane.showConfirmDialog(
-                            ScreenController.getFrame(),
-                            UiString.get(_S17),
-                            UiString.get(_S18),
+                    int response = JOptionPane.showConfirmDialog(ScreenController.getFrame(),
+                            MText.get(_S17),
+                            MText.get(_S18),
                             JOptionPane.YES_NO_OPTION);
                     if (response == JOptionPane.YES_OPTION) {
                         super.approveSelection();
@@ -216,7 +214,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
             }
         };
         final MagicDeck deck = screenContent.getDeck();
-        fileChooser.setDialogTitle(UiString.get(_S19));
+        fileChooser.setDialogTitle(MText.get(_S19));
         fileChooser.setFileFilter(MagicFileChoosers.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         if (deck != null) {
@@ -231,7 +229,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
                 setDeck(screenContent.getDeck());
                 setMostRecentDeck(filename);
             } else {
-                ScreenController.showWarningMessage(UiString.get(_S20));
+                ScreenController.showWarningMessage(MText.get(_S20));
             }
         }
     }

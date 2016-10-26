@@ -4,7 +4,7 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.player.PlayerStatistics;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -37,31 +37,31 @@ class PlayerStatsPanel extends JPanel {
 
         removeAll();
 
-        add(getStatsLabel(UiString.get(_S1)));
+        add(getStatsLabel(MText.get(_S1)));
         add(getStatsLabel(stats.getLastPlayedDate()));
 
-        add(getStatsLabel(UiString.get(_S2)));
+        add(getStatsLabel(MText.get(_S2)));
         add(getStatsLabel(stats.getDuelsPlayed()));
 
-        add(getStatsLabel(UiString.get(_S3)));
+        add(getStatsLabel(MText.get(_S3)));
         add(getStatsLabel(stats.getDuelsWonLost()));
 
-        add(getStatsLabel(UiString.get(_S4)));
+        add(getStatsLabel(MText.get(_S4)));
         add(getStatsLabel(stats.getGamesPlayed()));
 
-        add(getStatsLabel(UiString.get(_S5)));
+        add(getStatsLabel(MText.get(_S5)));
         add(getStatsLabel(stats.getGamesWonLost()));
 
-        add(getStatsLabel(UiString.get(_S6)));
+        add(getStatsLabel(MText.get(_S6)));
         add(getStatsLabel(stats.getGamesConceded()));
 
-        add(getStatsLabel(UiString.get(_S7)));
+        add(getStatsLabel(MText.get(_S7)));
         add(getStatsLabel(stats.getTurnsPlayed()));
 
-        add(getStatsLabel(UiString.get(_S8)));
+        add(getStatsLabel(MText.get(_S8)));
         add(getStatsLabel(stats.getAverageTurnsPerGame()));
 
-        add(getStatsLabel(UiString.get(_S9)));
+        add(getStatsLabel(MText.get(_S9)));
         add(getStatsLabel(stats.getMostUsedColor()));
 
         revalidate();

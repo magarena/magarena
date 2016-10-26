@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.cards.table.CardTable;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.widget.duel.viewer.CardViewer;
@@ -89,7 +89,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
             deckFilePath = deckPath;
             sidebar.setDeck(deck);
             deckTable.setCards(deck);
-            deckTable.setTitle(UiString.get(_S14, deck.getName(), deck.size()));
+            deckTable.setTitle(MText.get(_S14, deck.getName(), deck.size()));
             deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
             splitter.setVisible(deck.isValid() || deck.size() > 0);
         } else {
@@ -97,7 +97,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
             deckFilePath = null;
             sidebar.setDeck(selectedDeck);
             deckTable.setCards(deck);
-            deckTable.setTitle(UiString.get(_S15));
+            deckTable.setTitle(MText.get(_S15));
             deckStatusPanel.setDeck(null, false);
             splitter.setVisible(false);
         }

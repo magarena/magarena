@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Set;
 import magic.model.IUIGameController;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public class MagicPlayChoice extends MagicChoice {
 
@@ -30,9 +30,9 @@ public class MagicPlayChoice extends MagicChoice {
     private static final String _S_SKIP_MESSAGE = "Right click {f} or Shift+Space to|skip till end of turn.";
 
     private static final String MESSAGE = String.format("%s|%s|[%s]",
-            UiString.get(_S_PLAY_MESSAGE),
-            UiString.get(_S_CONTINUE_MESSAGE),
-            UiString.get(_S_SKIP_MESSAGE)
+            MText.get(_S_PLAY_MESSAGE),
+            MText.get(_S_CONTINUE_MESSAGE),
+            MText.get(_S_SKIP_MESSAGE)
     );
 
     private static final MagicChoice INSTANCE=new MagicPlayChoice();
@@ -41,7 +41,7 @@ public class MagicPlayChoice extends MagicChoice {
     private static final Object[] PASS_CHOICE_RESULTS= {MagicPlayChoiceResult.SKIP};
 
     private MagicPlayChoice() {
-        super(UiString.get(_S_PLAY_MESSAGE));
+        super(MText.get(_S_PLAY_MESSAGE));
     }
 
     @Override
@@ -157,7 +157,7 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         if (validChoices.isEmpty()) {
-            controller.showMessage(source, UiString.get(_S_CONTINUE_MESSAGE));
+            controller.showMessage(source, MText.get(_S_CONTINUE_MESSAGE));
         } else {
             controller.showMessage(source,MESSAGE);
             controller.setValidChoices(validChoices,false);

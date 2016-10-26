@@ -19,7 +19,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.helpers.ImageHelper;
 
@@ -75,7 +75,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), getGraveyardZoneName(getAiPlayer()));
         tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), getExileZoneName(getUserPlayer()));
         tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), getExileZoneName(getAiPlayer()));
-        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), UiString.get(_S2, getUserPlayer().getName()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), MText.get(_S2, getUserPlayer().getName()));
         // this is used if the players are switched (ie. using the 'S' key).
         tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), getHandZoneName(getAiPlayer()));
         add(tabSelector, BorderLayout.WEST);
@@ -139,9 +139,8 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
                         showFullScreen, getExileZoneName(getAiPlayer()), false);
                 break;
             case 5:
-                showCards(
-                        other,
-                        showFullScreen, UiString.get(_S1), false);
+                showCards(other,
+                        showFullScreen, MText.get(_S1), false);
                 break;
             case 6:
                 showCards(
@@ -153,18 +152,18 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     }
 
     private String getHandZoneName(final PlayerViewerInfo player, final boolean hideName) {
-        return hideName ? "" : UiString.get(_S3, player.getName());
+        return hideName ? "" : MText.get(_S3, player.getName());
     }
     private String getHandZoneName(final PlayerViewerInfo player) {
         return getHandZoneName(player, false);
     }
 
     private String getGraveyardZoneName(final PlayerViewerInfo player) {
-        return UiString.get(_S4, player.getName());
+        return MText.get(_S4, player.getName());
     }
 
     private String getExileZoneName(final PlayerViewerInfo player) {
-        return UiString.get(_S5, player.getName());
+        return MText.get(_S5, player.getName());
     }
 
     private void showFullScreenZone(final MagicCardList aCardList, final String zoneName) {

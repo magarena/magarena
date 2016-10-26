@@ -1,7 +1,7 @@
 package magic.ui.widget.deck;
 
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public class DeckFilter {
 
@@ -13,11 +13,11 @@ public class DeckFilter {
     private static final String _S5 = "between";
 
     public enum NumericFilter {
-        Any(UiString.get(_S1)),
-        Equals(UiString.get(_S2), 1),
-        LessThan(UiString.get(_S3), 1),
-        GreaterThan(UiString.get(_S4), 1),
-        Between(UiString.get(_S5), 2)
+        Any(MText.get(_S1)),
+        Equals(MText.get(_S2), 1),
+        LessThan(MText.get(_S3), 1),
+        GreaterThan(MText.get(_S4), 1),
+        Between(MText.get(_S5), 2)
         ;
 
         private final String filterCaption;

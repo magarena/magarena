@@ -2,7 +2,7 @@ package magic.ui.screen.duel.game;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.screen.widget.MenuPanel;
@@ -28,23 +28,23 @@ class GameOptionsOverlay extends ScreenOptionsOverlay {
     @Override
     protected MenuPanel getScreenMenu() {
 
-        final MenuPanel menu = new MenuPanel(UiString.get(_S1));
+        final MenuPanel menu = new MenuPanel(MText.get(_S1));
 
-        menu.addMenuItem(UiString.get(_S2), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 controller.concede();
                 hideOverlay();
             }
         });
-        menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 controller.resetGame();
                 hideOverlay();
             }
         });
-        menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S7), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
@@ -52,7 +52,7 @@ class GameOptionsOverlay extends ScreenOptionsOverlay {
             }
         });
         menu.addBlankItem();
-        menu.addMenuItem(UiString.get(_S9), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S9), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 controller.createGameplayReport();
@@ -60,7 +60,7 @@ class GameOptionsOverlay extends ScreenOptionsOverlay {
             }
         });
         menu.addBlankItem();
-        menu.addMenuItem(UiString.get(_S8), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S8), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 hideOverlay();

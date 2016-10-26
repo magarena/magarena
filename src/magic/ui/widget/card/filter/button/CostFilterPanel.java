@@ -4,7 +4,7 @@ import java.awt.Dimension;
 import java.awt.LayoutManager;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.dialog.CheckboxFilterDialog;
 import magic.ui.widget.card.filter.IFilterListener;
 import net.miginfocom.swing.MigLayout;
@@ -16,7 +16,7 @@ public class CostFilterPanel extends CheckBoxFilterPanel {
     private static final String _S12 = "Cost";
 
     public CostFilterPanel(IFilterListener aListener) {
-        super(UiString.get(_S12), aListener);
+        super(MText.get(_S12), aListener);
     }
 
     @Override

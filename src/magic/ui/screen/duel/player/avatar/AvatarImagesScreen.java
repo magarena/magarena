@@ -11,7 +11,7 @@ import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.helpers.ImageHelper;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
@@ -29,13 +29,13 @@ public class AvatarImagesScreen extends HeaderFooterScreen {
     private final ContentPanel contentPanel;
 
     public AvatarImagesScreen(final IAvatarImageConsumer consumer) {
-        super(UiString.get(_S3));
+        super(MText.get(_S3));
         this.consumer = consumer;
         this.contentPanel = new ContentPanel(this);
         setMainContent(contentPanel);
-        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S4)));
+        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S4)));
         addToFooter(MenuButton.build(this::doOpenAvatarsWebPage, 
-                UiString.get(_S5), UiString.get(_S6))
+                MText.get(_S5), MText.get(_S6))
         );
     }
     
@@ -64,7 +64,7 @@ public class AvatarImagesScreen extends HeaderFooterScreen {
         g.dispose();
         setRightFooter(MenuButton.build(this::doSaveAvatarAndClose,
                 new ImageIcon(ImageHelper.scale(bi, 46, 46)),
-                UiString.get(_S1), UiString.get(_S2))
+                MText.get(_S1), MText.get(_S2))
         );
     }
 

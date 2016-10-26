@@ -25,7 +25,7 @@ import javax.swing.SwingUtilities;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
@@ -88,17 +88,16 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
 
     private void setFooter() {
-        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S7)));
-        setRightFooter(MenuButton.build(this::doNextAction, UiString.get(_S9)));
-        addToFooter(
-            MenuButton.build(this::doEditPlayerAction,
-                UiString.get(_S10), UiString.get(_S11)
+        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S7)));
+        setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S9)));
+        addToFooter(MenuButton.build(this::doEditPlayerAction,
+                MText.get(_S10), MText.get(_S11)
             ),
             MenuButton.build(this::doNewPlayerAction,
-                UiString.get(_S12), UiString.get(_S13)
+                MText.get(_S12), MText.get(_S13)
             ),
             MenuButton.build(this::deleteSelectedPlayer,
-                UiString.get(_S6), UiString.get(_S15)
+                MText.get(_S6), MText.get(_S15)
             ),
             new SelectAvatarActionButton()
         );
@@ -164,7 +163,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
     protected class SelectAvatarActionButton extends ActionBarButton {
         public SelectAvatarActionButton() {
-            super(UiString.get(_S1), UiString.get(_S2), new SelectAvatarAction());
+            super(MText.get(_S1), MText.get(_S2), new SelectAvatarAction());
         }
     }
 
@@ -176,17 +175,16 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
     }
 
     private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
-        final int action = JOptionPane.showOptionDialog(
-            ScreenController.getFrame(),
+        final int action = JOptionPane.showOptionDialog(ScreenController.getFrame(),
             String.format("<html>%s<br>%s<br><br><b>%s</b></html>",
-                UiString.get(_S4, profile.getPlayerName()),
-                UiString.get(_S16),
-                UiString.get(_S17)),
-            UiString.get(_S5),
+                MText.get(_S4, profile.getPlayerName()),
+                MText.get(_S16),
+                MText.get(_S17)),
+            MText.get(_S5),
             JOptionPane.YES_NO_OPTION,
             JOptionPane.QUESTION_MESSAGE,
             null,
-            new String[]{UiString.get(_S6), UiString.get(_S7)}, UiString.get(_S7));
+            new String[]{MText.get(_S6), MText.get(_S7)}, MText.get(_S7));
         return (action == JOptionPane.YES_OPTION);
     }
 
@@ -199,7 +197,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
                 notifyPlayerDeleted(condemnedPlayer);
             }
         } else {
-            ScreenController.showWarningMessage(UiString.get(_S3));
+            ScreenController.showWarningMessage(MText.get(_S3));
         }
     }
 

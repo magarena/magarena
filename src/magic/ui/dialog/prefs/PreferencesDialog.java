@@ -36,7 +36,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicFrame;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
@@ -119,7 +119,7 @@ public class PreferencesDialog
         super(frame, true);
         this.isGamePlayMode = isGamePlayMode;
 
-        this.setTitle(UiString.get(_S79));
+        this.setTitle(MText.get(_S79));
         this.setSize(460, 530);
         this.setLocationRelativeTo(ScreenController.getFrame());
         this.setResizable(false);
@@ -171,15 +171,15 @@ public class PreferencesDialog
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
         if (isGamePlayMode) {
-            tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
-            tabbedPane.addTab(UiString.get(_S5), themesPanel);
-            tabbedPane.addTab(UiString.get(_S6), audioPanel);
+            tabbedPane.addTab(MText.get(_S4), getGameplaySettingsTabbedPane());
+            tabbedPane.addTab(MText.get(_S5), themesPanel);
+            tabbedPane.addTab(MText.get(_S6), audioPanel);
         } else {
-            tabbedPane.addTab(UiString.get(_S3), generalPanel);
-            tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
-            tabbedPane.addTab(UiString.get(_S5), themesPanel);
-            tabbedPane.addTab(UiString.get(_S6), audioPanel);
-            tabbedPane.addTab(UiString.get(_S7), getNetworkSettingsPanel());
+            tabbedPane.addTab(MText.get(_S3), generalPanel);
+            tabbedPane.addTab(MText.get(_S4), getGameplaySettingsTabbedPane());
+            tabbedPane.addTab(MText.get(_S5), themesPanel);
+            tabbedPane.addTab(MText.get(_S6), audioPanel);
+            tabbedPane.addTab(MText.get(_S7), getNetworkSettingsPanel());
         }
         return tabbedPane;
     }
@@ -203,11 +203,11 @@ public class PreferencesDialog
         }
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 4"));
-        panel.add(getCaptionLabel(UiString.get(_S12)));
+        panel.add(getCaptionLabel(MText.get(_S12)));
         panel.add(proxyComboBox, "w 140!");
-        panel.add(getCaptionLabel(UiString.get(_S13)));
+        panel.add(getCaptionLabel(MText.get(_S13)));
         panel.add(proxyAddressTextField, "w 100%");
-        panel.add(getCaptionLabel(UiString.get(_S14)));
+        panel.add(getCaptionLabel(MText.get(_S14)));
         panel.add(proxyPortSpinner, "w 60!");
         return panel;
     }
@@ -246,29 +246,29 @@ public class PreferencesDialog
 
     private JScrollPane getGameplaySettingsPanel1() {
 
-        hideAIPromptCheckBox = new JCheckBox(getAsHtml(UiString.get(_S15)), config.getHideAiActionPrompt());
-        hideAIPromptCheckBox.setToolTipText(UiString.get(_S16));
+        hideAIPromptCheckBox = new JCheckBox(getAsHtml(MText.get(_S15)), config.getHideAiActionPrompt());
+        hideAIPromptCheckBox.setToolTipText(MText.get(_S16));
         setButtonPropertyDefaults(hideAIPromptCheckBox);
 
-        mulliganScreenCheckbox = new JCheckBox(getAsHtml(UiString.get(_S17)), config.getMulliganScreenActive());
+        mulliganScreenCheckbox = new JCheckBox(getAsHtml(MText.get(_S17)), config.getMulliganScreenActive());
         setButtonPropertyDefaults(mulliganScreenCheckbox);
 
-        touchscreenCheckBox = new JCheckBox(getAsHtml(UiString.get(_S20)), config.isTouchscreen());
+        touchscreenCheckBox = new JCheckBox(getAsHtml(MText.get(_S20)), config.isTouchscreen());
         setButtonPropertyDefaults(touchscreenCheckBox);
 
-        skipSingleCheckBox = new JCheckBox(getAsHtml(UiString.get(_S21)), config.getSkipSingle());
-        skipSingleCheckBox.setToolTipText(UiString.get(_S22));
+        skipSingleCheckBox = new JCheckBox(getAsHtml(MText.get(_S21)), config.getSkipSingle());
+        skipSingleCheckBox.setToolTipText(MText.get(_S22));
         setButtonPropertyDefaults(skipSingleCheckBox);
 
-        alwaysPassCheckBox = new JCheckBox(getAsHtml(UiString.get(_S23)), config.getAlwaysPass());
+        alwaysPassCheckBox = new JCheckBox(getAsHtml(MText.get(_S23)), config.getAlwaysPass());
         setButtonPropertyDefaults(alwaysPassCheckBox);
 
-        smartTargetCheckBox = new JCheckBox(getAsHtml(UiString.get(_S24)), config.getSmartTarget());
-        smartTargetCheckBox.setToolTipText(UiString.get(_S25));
+        smartTargetCheckBox = new JCheckBox(getAsHtml(MText.get(_S24)), config.getSmartTarget());
+        smartTargetCheckBox.setToolTipText(MText.get(_S25));
         setButtonPropertyDefaults(smartTargetCheckBox);
 
-        messageDelaySlider = new SliderPanel(getAsHtml(UiString.get(_S26)), 0, 3000, 500, config.getMessageDelay());
-        messageDelaySlider.setToolTipText(UiString.get(_S27));
+        messageDelaySlider = new SliderPanel(getAsHtml(MText.get(_S26)), 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider.setToolTipText(MText.get(_S27));
         messageDelaySlider.addMouseListener(this);
 
         final ScrollablePanel panel = new ScrollablePanel(new MigLayout("flowy, insets 16, gapy 10"));
@@ -334,15 +334,15 @@ public class PreferencesDialog
 
     private boolean setNewTranslation() {
         try {
-            UiString.loadTranslationFile();
+            MText.loadTranslationFile();
             isRestartRequired = true;
             return true;
 
         } catch (NumberFormatException ex) {
-            UiString.disableTranslations();
+            MText.disableTranslations();
             System.err.println(ex);
             ScreenController.showWarningMessage(String.format("%s\n%s\n\n%s",
-                    UiString.get(_S80), UiString.get(_S81), ex)
+                    MText.get(_S80), MText.get(_S81), ex)
             );
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
@@ -378,7 +378,7 @@ public class PreferencesDialog
     private boolean validateSettings() {
         if (isGamePlayMode == false) {
             if (isProxyUpdated && !isProxyValid()) {
-                ScreenController.showWarningMessage(UiString.get(_S37));
+                ScreenController.showWarningMessage(MText.get(_S37));
                 return false;
             }
         }
@@ -491,9 +491,9 @@ public class PreferencesDialog
 
     private JTabbedPane getGameplaySettingsTabbedPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab(UiString.get(_S3), getGameplaySettingsPanel1());
-        tabbedPane.addTab(UiString.get(_S68), gameImagesPanel);
-        tabbedPane.addTab(UiString.get(_S82), animationsPanel);
+        tabbedPane.addTab(MText.get(_S3), getGameplaySettingsPanel1());
+        tabbedPane.addTab(MText.get(_S68), gameImagesPanel);
+        tabbedPane.addTab(MText.get(_S82), animationsPanel);
         return tabbedPane;
     }
 

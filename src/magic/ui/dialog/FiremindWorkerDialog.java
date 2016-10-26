@@ -1,6 +1,6 @@
 package magic.ui.dialog;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -82,7 +82,7 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
     }
 
     private void setLookAndFeel() {
-        setTitle(UiString.get(_S1));
+        setTitle(MText.get(_S1));
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(360, 460);
@@ -104,7 +104,7 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
         cancelButton.setFocusable(false);
         cancelButton.addActionListener(this);
         // background button
-        backgroundButton.setText(UiString.get(_S3));
+        backgroundButton.setText(MText.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener(this);
         // layout

@@ -15,7 +15,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.screen.widget.ActionBarButton;
@@ -41,7 +41,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         setOpaque(false);
 
         titlebarButton = getLogViewActionButton();
-        titleBar = new ActionButtonTitleBar(UiString.get(_S1), getLogActionButtons());
+        titleBar = new ActionButtonTitleBar(MText.get(_S1), getLogActionButtons());
 
         statsTable = new StatsTable();
         manaCurvePanel = new ManaCurvePanel();
@@ -107,7 +107,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
             aDeck == null || !aDeck.isValid() ? new MagicDeck() : aDeck
         );
 
-        titleBar.setText(UiString.get(_S2, statistics.totalCards));
+        titleBar.setText(MText.get(_S2, statistics.totalCards));
         statsTable.setStats(statistics);
         manaCurvePanel.setStats(statistics);
     }

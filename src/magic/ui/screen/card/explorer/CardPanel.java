@@ -10,7 +10,7 @@ import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.widget.M.MScrollPane;
@@ -29,7 +29,7 @@ public class CardPanel extends JPanel {
     private final CardViewer cardViewer;
     private final MScrollPane cardScrollPane;
     private final CardDecksPanel decksPanel = new CardDecksPanel();
-    private final SplitterButton decksButton = new SplitterButton(UiString.get(_S1, 0));
+    private final SplitterButton decksButton = new SplitterButton(MText.get(_S1, 0));
     private boolean isImageVisible = true;
 
     public CardPanel() {
@@ -47,22 +47,20 @@ public class CardPanel extends JPanel {
         cardScrollPane.setVScrollBarIncrement(10);
 
         decksPanel.setOpaque(false);
-        decksPanel.addPropertyChangeListener(
-                CardDecksPanel.CP_DECKS_UPDATED,
+        decksPanel.addPropertyChangeListener(CardDecksPanel.CP_DECKS_UPDATED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
                         final int deckCount = (int) evt.getNewValue();
-                        decksButton.setText(UiString.get(_S1, deckCount));
+                        decksButton.setText(MText.get(_S1, deckCount));
                         decksButton.setForeground(deckCount > 0 ? Color.WHITE : Color.GRAY);
                     }
                 }
         );
 
-        decksButton.setToolTipText(
-                String.format("<html><b>%s</b><br>%s</html>",
-                        UiString.get(_S2),
-                        UiString.get(_S3)));
+        decksButton.setToolTipText(String.format("<html><b>%s</b><br>%s</html>",
+                        MText.get(_S2),
+                        MText.get(_S3)));
 
         decksButton.addActionListener(new AbstractAction() {
             @Override
@@ -98,7 +96,7 @@ public class CardPanel extends JPanel {
         }
 
         decksButton.setForeground(Color.GRAY);
-        decksButton.setText(UiString.get(_S4));
+        decksButton.setText(MText.get(_S4));
 
         cardViewer.setCard(aCardDef);
         decksPanel.setCard(aCardDef);

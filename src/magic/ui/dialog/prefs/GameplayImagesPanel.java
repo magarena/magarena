@@ -6,7 +6,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -37,31 +37,31 @@ class GameplayImagesPanel extends JPanel {
     GameplayImagesPanel(final MouseListener aListener) {
 
         // Card highlight setting.
-        final JLabel highlightLabel = new JLabel(UiString.get(_S41));
+        final JLabel highlightLabel = new JLabel(MText.get(_S41));
         final String[] Highlightchoices = {
-            UiString.get(_S42),
-            UiString.get(_S43),
-            UiString.get(_S44),
-            UiString.get(_S45)
+            MText.get(_S42),
+            MText.get(_S43),
+            MText.get(_S44),
+            MText.get(_S45)
         };
         highlightComboBox = new JComboBox<>(Highlightchoices);
         highlightComboBox.setSelectedItem(CONFIG.getHighlight());
-        highlightComboBox.setToolTipText(UiString.get(_S46));
+        highlightComboBox.setToolTipText(MText.get(_S46));
         highlightComboBox.setFocusable(false);
         highlightComboBox.addMouseListener(aListener);
 
-        mouseWheelPopupCheckBox = new JCheckBox(UiString.get(_S28), CONFIG.isMouseWheelPopup());
+        mouseWheelPopupCheckBox = new JCheckBox(MText.get(_S28), CONFIG.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
-        mouseWheelPopupCheckBox.setToolTipText(UiString.get(_S29));
+        mouseWheelPopupCheckBox.setToolTipText(MText.get(_S29));
         mouseWheelPopupCheckBox.addMouseListener(aListener);
 
-        popupDelaySlider = new SliderPanel(UiString.get(_S30), 0, 5000, 100, CONFIG.getPopupDelay());
-        popupDelaySlider.setToolTipText(UiString.get(_S31));
+        popupDelaySlider = new SliderPanel(MText.get(_S30), 0, 5000, 100, CONFIG.getPopupDelay());
+        popupDelaySlider.setToolTipText(MText.get(_S31));
         popupDelaySlider.addMouseListener(aListener);
 
-        pauseGamePopupCheckBox = new JCheckBox(UiString.get(_S34), CONFIG.isGamePausedOnPopup());
+        pauseGamePopupCheckBox = new JCheckBox(MText.get(_S34), CONFIG.isGamePausedOnPopup());
         pauseGamePopupCheckBox.setFocusable(false);
-        pauseGamePopupCheckBox.setToolTipText(UiString.get(_S35));
+        pauseGamePopupCheckBox.setToolTipText(MText.get(_S35));
         pauseGamePopupCheckBox.addMouseListener(aListener);
 
         setLayout(new MigLayout("flowx, wrap 2, insets 16, gapy 10"));

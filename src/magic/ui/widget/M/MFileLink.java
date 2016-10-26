@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
 import magic.exception.DesktopNotSupportedException;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.helpers.DesktopHelper;
@@ -41,7 +41,7 @@ public class MFileLink extends MWidget {
         try {
             DesktopHelper.openFileInDefaultOsEditor(file);
         } catch (IOException | DesktopNotSupportedException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S4, file, ex.getMessage()));
+            ScreenController.showWarningMessage(MText.get(_S4, file, ex.getMessage()));
         }
     }
 
@@ -49,7 +49,7 @@ public class MFileLink extends MWidget {
         try {
             DesktopHelper.openContainingDirectory(file);
         } catch (IOException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S4, file, ex.getMessage()));
+            ScreenController.showWarningMessage(MText.get(_S4, file, ex.getMessage()));
         }
     }
 
@@ -57,7 +57,7 @@ public class MFileLink extends MWidget {
         try {
             DesktopHelper.openDirectory(file);
         } catch (IOException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S4, file, ex.getMessage()));
+            ScreenController.showWarningMessage(MText.get(_S4, file, ex.getMessage()));
         }
     }
 
@@ -108,10 +108,10 @@ public class MFileLink extends MWidget {
     private void setToolTip() {
         if (file.isFile()) {
             label.setToolTipText(String.format("<html>%s<br>%s</html>",
-                    UiString.get(_S1), UiString.get(_S2))
+                    MText.get(_S1), MText.get(_S2))
             );
         } else if (file.isDirectory()) {
-            label.setToolTipText(String.format("<html>%s</html>", UiString.get(_S3)));
+            label.setToolTipText(String.format("<html>%s</html>", MText.get(_S3)));
         }
     }
 

@@ -2,7 +2,7 @@ package magic.ui.widget.card.filter;
 
 import java.util.EnumSet;
 import java.util.Set;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum SearchOperand {
 
@@ -22,7 +22,7 @@ public enum SearchOperand {
     private final String displayName;
 
     private SearchOperand(String text) {
-        this.displayName = UiString.get(text);
+        this.displayName = MText.get(text);
     }
 
     @Override

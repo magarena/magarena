@@ -15,7 +15,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.cards.table.DeckTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
@@ -85,8 +85,8 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     private ActionBarButton getClearDeckActionButton() {
         return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.CLEAR),
-                UiString.get(_S1),
-                UiString.get(_S2),
+                MText.get(_S1),
+                MText.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -140,14 +140,13 @@ class DeckPanel extends JPanel implements IDeckEditorView {
 
     private void doClearDeck() {
         if (deck.size() > 0) {
-            final int userResponse = JOptionPane.showOptionDialog(
-                    ScreenController.getFrame(),
-                    String.format("<html>%s<br><br><b>%s</b></html>", UiString.get(_S3), UiString.get(_S4)),
-                    UiString.get(_S5),
+            final int userResponse = JOptionPane.showOptionDialog(ScreenController.getFrame(),
+                    String.format("<html>%s<br><br><b>%s</b></html>", MText.get(_S3), MText.get(_S4)),
+                    MText.get(_S5),
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    new String[] {UiString.get(_S6), UiString.get(_S7)}, UiString.get(_S7));
+                    new String[] {MText.get(_S6), MText.get(_S7)}, MText.get(_S7));
             if (userResponse == JOptionPane.YES_OPTION) {
                 setDeck(null);
             }

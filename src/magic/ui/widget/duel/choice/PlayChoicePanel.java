@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.message.TextLabel;
@@ -23,7 +23,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
     // translatable strings
     private static final String _S1 = "Choose which ability to play.";
 
-    private static final String MESSAGE = UiString.get(_S1);
+    private static final String MESSAGE = MText.get(_S1);
     private static final Dimension BUTTON_DIMENSION=new Dimension(70,25);
 
     private final SwingGameController controller;

@@ -3,7 +3,7 @@ package magic.ui.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JLabel;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
@@ -31,11 +31,11 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
     private void refreshLayout() {
         removeAll();
         layout.setLayoutConstraints("gap 14, insets 0, center, center");
-        add(getLabel(UiString.get(_S1)));
-        add(getLabel(UiString.get(_S2)));
-        add(getLabel(UiString.get(_S3)));
-        add(getLabel(UiString.get(_S4)));
-        add(getLabel(UiString.get(_S5)));
+        add(getLabel(MText.get(_S1)));
+        add(getLabel(MText.get(_S2)));
+        add(getLabel(MText.get(_S3)));
+        add(getLabel(MText.get(_S4)));
+        add(getLabel(MText.get(_S5)));
     }
 
     @Override

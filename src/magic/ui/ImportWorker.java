@@ -17,7 +17,7 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.model.MagicLogger;
 import magic.model.player.PlayerProfiles;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import org.apache.commons.io.FileUtils;
@@ -44,8 +44,8 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     private static final String _S12 = "Please see the following file for more details -";
     private static final String _S13 = "- mods...";
 
-    private static final String OK_STRING = String.format("%s\n", UiString.get(_S3));
-    private static final String FAIL_STRING = String.format("%s\n", UiString.get(_S1));
+    private static final String OK_STRING = String.format("%s\n", MText.get(_S3));
+    private static final String FAIL_STRING = String.format("%s\n", MText.get(_S1));
 
     private static final FileFilter MODS_THEME_FILE_FILTER = (final File file) ->
         (file.isFile() && file.getName().endsWith("_theme.zip")) ||
@@ -98,8 +98,8 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
 
         if (!isOk) {
             ScreenController.showWarningMessage(String.format("%s\n\n%s\n%s",
-                UiString.get(_S11),
-                UiString.get(_S12),
+                MText.get(_S11),
+                MText.get(_S12),
                 "...\\Magarena\\logs\\import.log")
             );
         }
@@ -111,7 +111,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * have been added since the imported and current versions.
      */
     private void updateNewCardsLog() {
-        setProgressNote(UiString.get(_S2));
+        setProgressNote(MText.get(_S2));
         setProgress(0);
         final File scriptsDirectory = this.importDataPath.resolve("scripts").toFile();
         final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(scriptsDirectory);
@@ -151,7 +151,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * (see also {@link migrateModThemes})
      */
     private void importThemes() throws IOException {
-        setProgressNote(UiString.get(_S4));
+        setProgressNote(MText.get(_S4));
         final String directoryName = "themes";
         final Path targetPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.THEMES);
         final Path sourcePath = importDataPath.resolve(directoryName);
@@ -168,7 +168,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * If file already exists then imported version takes precedence.
      */
     private void importMods() throws IOException {
-        setProgressNote(UiString.get(_S13));
+        setProgressNote(MText.get(_S13));
         final String directoryName = "mods";
         final Path sourcePath = importDataPath.resolve(directoryName);
         if (sourcePath.toFile().exists()) {
@@ -198,7 +198,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * If setting already exists then imported value takes precedence.
      */
     private void importPreferences() throws IOException {
-        setProgressNote(UiString.get(_S5));
+        setProgressNote(MText.get(_S5));
 
         final String CONFIG_FILENAME = "general.cfg";
 
@@ -250,7 +250,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * If file already exists then imported version takes precedence.
      */
     private void importAvatars() throws IOException {
-        setProgressNote(UiString.get(_S6));
+        setProgressNote(MText.get(_S6));
         final String directoryName = "avatars";
         final Path sourcePath = importDataPath.resolve(directoryName);
         if (sourcePath.toFile().exists()) {
@@ -266,7 +266,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * If file already exists then imported version takes precedence.
      */
     private void importCustomDecks() throws IOException {
-        setProgressNote(UiString.get(_S7));
+        setProgressNote(MText.get(_S7));
         final String directoryName = "decks";
         final Path sourcePath = importDataPath.resolve(directoryName);
         if (sourcePath.toFile().exists()) {
@@ -281,7 +281,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * Delete "players" folder and replace with imported copy.
      */
     private void importPlayerProfiles() throws IOException {
-        setProgressNote(UiString.get(_S8));
+        setProgressNote(MText.get(_S8));
         final String directoryName = "players";
         final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
         FileUtils.deleteDirectory(targetPath.toFile());
@@ -297,7 +297,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      * Delete "duels" folder and replace with imported copy.
      */
     private void importNewDuelConfig() {
-        setProgressNote(UiString.get(_S9));
+        setProgressNote(MText.get(_S9));
         boolean isOk = true;
         final String directoryName = "duels";
         final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
@@ -354,7 +354,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
 
     private void importCardImages() {
 
-        setProgressNote(UiString.get(_S10));
+        setProgressNote(MText.get(_S10));
 
         // skip if user-defined location. This is stored in the general.cfg file.
         if (GeneralConfig.getInstance().isCustomCardImagesPath()) {

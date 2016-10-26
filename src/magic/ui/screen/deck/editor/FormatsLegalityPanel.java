@@ -20,7 +20,7 @@ import magic.data.MagicPredefinedFormat;
 import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.M.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
@@ -51,7 +51,7 @@ public class FormatsLegalityPanel extends JPanel {
         scrollpane.setBackground(Color.WHITE);
         scrollpane.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.DARK_GRAY));
 
-        titleLabel = new JLabel(UiString.get(_S1));
+        titleLabel = new JLabel(MText.get(_S1));
         titleLabel.setFont(getFont().deriveFont(Font.BOLD));
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         titleLabel.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.DARK_GRAY));

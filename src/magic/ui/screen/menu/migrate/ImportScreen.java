@@ -17,7 +17,7 @@ import javax.swing.SwingUtilities;
 import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;
@@ -95,28 +95,28 @@ public class ImportScreen extends MScreen {
 
             ImportMenuPanel() {
 
-                super(UiString.get(UiString.get(_S1)));
+                super(MText.get(MText.get(_S1)));
 
-                addMenuItem(UiString.get(UiString.get(_S2)), new AbstractAction() {
+                addMenuItem(MText.get(MText.get(_S2)), new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent ev) {
                         doImport();
                     }
-                }, UiString.get(_S3));
+                }, MText.get(_S3));
 
-                addMenuItem(UiString.get(UiString.get(_S4)), new AbstractAction() {
+                addMenuItem(MText.get(MText.get(_S4)), new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent ev) {
                         ScreenController.showMainMenuScreen();
                     }
                 });
 
-                addMenuItem(UiString.get(UiString.get(_S5)), new AbstractAction() {
+                addMenuItem(MText.get(MText.get(_S5)), new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent ev) {
                         showWikiHelpPage();
                     }
-                }, UiString.get(_S6));
+                }, MText.get(_S6));
 
                 refreshLayout();
 
@@ -137,10 +137,10 @@ public class ImportScreen extends MScreen {
 
             public ImportProgressPanel(File aFolder) {
 
-                super(UiString.get(UiString.get(_S7)));
+                super(MText.get(MText.get(_S7)));
 
                 cancelButton = new MenuButton(
-                        UiString.get(_S8),
+                        MText.get(_S8),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent ev) {

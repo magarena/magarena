@@ -9,7 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.theme.Theme;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -42,7 +42,7 @@ public class EndGameMessagePanel extends TexturedPanel {
         iconLabel.setPreferredSize(new Dimension(winningAvatar.getIconWidth(), winningAvatar.getIconHeight()));
         add(iconLabel, "alignx center");
         //
-        final JLabel winnerLabel = new JLabel(UiString.get(_S1, winningPlayer.getName()));
+        final JLabel winnerLabel = new JLabel(MText.get(_S1, winningPlayer.getName()));
         winnerLabel.setFont(FontsAndBorders.FONT3);
         winnerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         winnerLabel.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TEXT_FOREGROUND));

@@ -13,7 +13,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicSource;
 import magic.ui.MagicImages;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.duel.viewer.UserActionPanel;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.message.TextLabel;
@@ -46,7 +46,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(buttonPanel,BorderLayout.SOUTH);
 
-        yesButton=new JButton(UiString.get(_S1), MagicImages.getIcon(MagicIcon.OK));
+        yesButton=new JButton(MText.get(_S1), MagicImages.getIcon(MagicIcon.OK));
         yesButton.setPreferredSize(BUTTON_DIMENSION);
         yesButton.addActionListener(this);
         yesButton.setFocusable(false);
@@ -64,7 +64,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         yesButton.getActionMap().put("yes", yesAction);
 
 
-        final JButton noButton=new JButton(UiString.get(_S2), MagicImages.getIcon(MagicIcon.CANCEL));
+        final JButton noButton=new JButton(MText.get(_S2), MagicImages.getIcon(MagicIcon.CANCEL));
         noButton.setPreferredSize(BUTTON_DIMENSION);
         noButton.addActionListener(this);
         noButton.setFocusable(false);

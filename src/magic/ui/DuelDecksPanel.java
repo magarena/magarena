@@ -1,7 +1,7 @@
 package magic.ui;
 
 import java.awt.AlphaComposite;
-import magic.translate.UiString;
+import magic.translate.MText;
 import java.awt.Color;
 import java.awt.Composite;
 import java.awt.Cursor;
@@ -118,7 +118,7 @@ public class DuelDecksPanel extends TexturedPanel {
     }
 
     String generateTitle(final MagicDeck deck) {
-        return UiString.get(_S2, deck.getName(), deck.size());
+        return MText.get(_S2, deck.getName(), deck.size());
     }
 
     public MagicDuel getDuel() {
@@ -204,8 +204,8 @@ public class DuelDecksPanel extends TexturedPanel {
     private ActionBarButton getNewDeckActionBarButton() {
         return new ActionBarButton(
             MagicImages.getIcon(MagicIcon.RANDOM),
-            UiString.get(_S15),
-            UiString.get(_S16),
+            MText.get(_S15),
+            MText.get(_S16),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
@@ -233,7 +233,7 @@ public class DuelDecksPanel extends TexturedPanel {
     private ActionBarButton getSwapDecksButton() {
         return new ActionBarButton(
             MagicImages.getIcon(MagicIcon.SWAP),
-            UiString.get(_S7), UiString.get(_S8),
+            MText.get(_S7), MText.get(_S8),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {

@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.ListSelectionModel;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
@@ -38,7 +38,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
 
     // CTR
     public DuelSidebarLayoutDialog(final IUIGameController controller) {
-        super(UiString.get(_S1), new Dimension(280, 260));
+        super(MText.get(_S1), new Dimension(280, 260));
         this.controller = controller;
         currentLayout = GeneralConfig.getInstance().getDuelSidebarLayout();
         setLookAndFeel();
@@ -116,7 +116,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JButton getMoveUpButton() {
-        final JButton btn = new JButton(UiString.get(_S4));
+        final JButton btn = new JButton(MText.get(_S4));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -133,7 +133,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private JButton getMoveDownButton() {
-        final JButton btn = new JButton(UiString.get(_S5));
+        final JButton btn = new JButton(MText.get(_S5));
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {

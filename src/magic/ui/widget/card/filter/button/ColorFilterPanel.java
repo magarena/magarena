@@ -5,7 +5,7 @@ import java.awt.LayoutManager;
 import java.util.List;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.dialog.ColorFilterDialog;
 import magic.ui.widget.card.filter.dialog.FilterDialog;
 import magic.ui.widget.card.filter.IFilterListener;
@@ -20,7 +20,7 @@ public class ColorFilterPanel extends FilterPanel {
     private ColorFilterDialog cbDialog;
 
     public ColorFilterPanel(IFilterListener aListener) {
-        super(UiString.get(_S11), aListener);
+        super(MText.get(_S11), aListener);
     }
 
     @Override

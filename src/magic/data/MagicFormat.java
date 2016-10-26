@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.DeckUtils;
 
 public abstract class MagicFormat {
@@ -46,7 +46,7 @@ public abstract class MagicFormat {
     public static final MagicFormat ALL = new MagicFormat() {
         @Override
         public String getName() {
-            return UiString.get(_S1);
+            return MText.get(_S1);
         }
 
         @Override

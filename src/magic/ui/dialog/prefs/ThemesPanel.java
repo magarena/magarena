@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
@@ -26,7 +26,7 @@ class ThemesPanel extends JPanel {
     private static final String _S49 = "custom background";
     private static final String _S51 = "highlight color";
 
-    private static final String READONLY_COLOR_TIP = String.format("<b>%s</b><br>%s", UiString.get(_S1), UiString.get(_S2));
+    private static final String READONLY_COLOR_TIP = String.format("<b>%s</b><br>%s", MText.get(_S1), MText.get(_S2));
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final JCheckBox customBackgroundCheckBox;
@@ -58,7 +58,7 @@ class ThemesPanel extends JPanel {
         themeComboBox.setSelectedItem(selectedTheme.getName());
 
         customBackgroundCheckBox = new JCheckBox("", CONFIG.isCustomBackground());
-        customBackgroundCheckBox.setToolTipText(UiString.get(_S47));
+        customBackgroundCheckBox.setToolTipText(MText.get(_S47));
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(aListener);
 
@@ -72,7 +72,7 @@ class ThemesPanel extends JPanel {
         selectedTheme = aTheme;
         rollOverColorButton.setColor(MagicStyle.getRolloverColor(aTheme));
         rollOverColorButton.setLocked(false);
-        rollOverColorButton.setToolTipText(UiString.get(_S3));
+        rollOverColorButton.setToolTipText(MText.get(_S3));
         if (aTheme.hasValue(Theme.COLOR_MOUSEOVER)) {
             rollOverColorButton.setToolTipText(READONLY_COLOR_TIP);
             rollOverColorButton.setLocked(true);
@@ -83,9 +83,9 @@ class ThemesPanel extends JPanel {
         JPanel panel = new JPanel();
         panel.setLayout(new MigLayout("flowx, wrap 2"));
         panel.add(rollOverColorButton, "w 24!");
-        panel.add(new JLabel(UiString.get(_S51)));
+        panel.add(new JLabel(MText.get(_S51)));
         panel.add(customBackgroundCheckBox, "w 24!");
-        panel.add(new JLabel(UiString.get(_S49)));
+        panel.add(new JLabel(MText.get(_S49)));
         return panel;
     }
 

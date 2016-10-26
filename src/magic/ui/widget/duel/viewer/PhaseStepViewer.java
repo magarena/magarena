@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.model.phase.MagicPhaseType;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -41,18 +41,18 @@ public class PhaseStepViewer extends JPanel {
 
     private void setMyLayout() {
         setLayout(new MigLayout("insets 1 5 0 5, gap 0"));
-        setPhaseStepIndicator("UN", UiString.get(_S1));
-        setPhaseStepIndicator("UP", UiString.get(_S2));
-        setPhaseStepIndicator("DR", UiString.get(_S3));
-        setPhaseStepIndicator("M1", UiString.get(_S4));
-        setPhaseStepIndicator("BC", UiString.get(_S5));
-        setPhaseStepIndicator("DA", UiString.get(_S6));
-        setPhaseStepIndicator("DB", UiString.get(_S7));
-        setPhaseStepIndicator("CD", UiString.get(_S8));
-        setPhaseStepIndicator("EC", UiString.get(_S9));
-        setPhaseStepIndicator("M2", UiString.get(_S10));
-        setPhaseStepIndicator("ET", UiString.get(_S11));
-        setPhaseStepIndicator("CU", UiString.get(_S12));
+        setPhaseStepIndicator("UN", MText.get(_S1));
+        setPhaseStepIndicator("UP", MText.get(_S2));
+        setPhaseStepIndicator("DR", MText.get(_S3));
+        setPhaseStepIndicator("M1", MText.get(_S4));
+        setPhaseStepIndicator("BC", MText.get(_S5));
+        setPhaseStepIndicator("DA", MText.get(_S6));
+        setPhaseStepIndicator("DB", MText.get(_S7));
+        setPhaseStepIndicator("CD", MText.get(_S8));
+        setPhaseStepIndicator("EC", MText.get(_S9));
+        setPhaseStepIndicator("M2", MText.get(_S10));
+        setPhaseStepIndicator("ET", MText.get(_S11));
+        setPhaseStepIndicator("CU", MText.get(_S12));
     }
 
     private void setPhaseStep(int index) {

@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.CardStatistics;
 import magic.model.MagicColor;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import net.miginfocom.swing.MigLayout;
 
@@ -37,7 +37,7 @@ class CardColorStatsPanel extends JPanel {
                 final JLabel label = new JLabel(MagicImages.getIcon(color.getManaType()));
                 label.setHorizontalAlignment(JLabel.LEFT);
                 label.setIconTextGap(5);
-                label.setText(UiString.get(_S4,
+                label.setText(MText.get(_S4,
                     stats.colorCount[i],
                     stats.colorMono[i],
                     stats.colorLands[i])
@@ -46,7 +46,7 @@ class CardColorStatsPanel extends JPanel {
             }
         }
 
-        final JLabel allLabel = new JLabel(UiString.get(_S3,
+        final JLabel allLabel = new JLabel(MText.get(_S3,
             stats.monoColor,
             stats.multiColor,
             stats.colorless)
@@ -62,7 +62,7 @@ class CardColorStatsPanel extends JPanel {
         }
 
         removeAll();
-        add(DeckStatisticsViewer.getCaptionLabel(UiString.get(_S1)), "w 100%");
+        add(DeckStatisticsViewer.getCaptionLabel(MText.get(_S1)), "w 100%");
         add(panel, "w 100%");
         revalidate();
     }

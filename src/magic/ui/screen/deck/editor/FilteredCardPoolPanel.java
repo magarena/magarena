@@ -9,7 +9,7 @@ import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.cards.table.CardTablePanel;
 import magic.translate.StringContext;
 import net.miginfocom.swing.MigLayout;
@@ -108,7 +108,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     }
 
     private String getCardPoolTitle() {
-        return UiString.get(_S1, NumberFormat.getInstance().format(cardPool.size()));
+        return MText.get(_S1, NumberFormat.getInstance().format(cardPool.size()));
     }
 
     @Override

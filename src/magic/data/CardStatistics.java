@@ -10,7 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicRarity;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public class CardStatistics {
 
@@ -47,15 +47,13 @@ public class CardStatistics {
     );
     public static final int MANA_CURVE_SIZE = MANA_CURVE_TEXT.size();
 
-    public static final List<String> TYPE_NAMES = Collections.unmodifiableList(
-        Arrays.asList(
-            UiString.get(_S1),
-            UiString.get(_S2),
-            UiString.get(_S3),
-            UiString.get(_S4),
-            UiString.get(_S5),
-            UiString.get(_S6),
-            UiString.get(_S7)
+    public static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(MText.get(_S1),
+            MText.get(_S2),
+            MText.get(_S3),
+            MText.get(_S4),
+            MText.get(_S5),
+            MText.get(_S6),
+            MText.get(_S7)
         )
     );
     public static final int NR_OF_TYPES = TYPE_NAMES.size();

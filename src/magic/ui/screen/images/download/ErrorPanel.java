@@ -12,7 +12,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -27,7 +27,7 @@ class ErrorPanel extends JPanel {
 
     ErrorPanel() {
 
-        final JButton copyButton = new JButton(UiString.get(_S4));
+        final JButton copyButton = new JButton(MText.get(_S4));
         copyButton.setEnabled(false);
 
         textArea = new JTextArea();
@@ -66,7 +66,7 @@ class ErrorPanel extends JPanel {
                 final Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
                 final StringSelection textSelection = new StringSelection(textArea.getText());
                 clip.setContents(textSelection, null);
-                ScreenController.showInfoMessage(UiString.get(_S5));
+                ScreenController.showInfoMessage(MText.get(_S5));
             }
         });
 

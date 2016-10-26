@@ -5,7 +5,7 @@ import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 public enum MagicType {
 
@@ -66,7 +66,7 @@ public enum MagicType {
     private final String displayName;
 
     private MagicType(final String aName) {
-        this.displayName = UiString.get(aName);
+        this.displayName = MText.get(aName);
         mask = 1 << ordinal();
     }
 

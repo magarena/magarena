@@ -51,7 +51,7 @@ import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.MagicFileChoosers;
@@ -867,10 +867,9 @@ public class SwingGameController implements IUIGameController {
         }
         showMessage(MagicSource.NONE,
             String.format("{L} %s",
-                UiString.get(
-                    _S3,
+                MText.get(_S3,
                     game.getLosingPlayer(),
-                    gameConceded.get() ? UiString.get(_S1) : UiString.get(_S2)
+                    gameConceded.get() ? MText.get(_S1) : MText.get(_S2)
                 )
             )
         );
@@ -962,7 +961,7 @@ public class SwingGameController implements IUIGameController {
                 return new MayChoicePanel(
                     SwingGameController.this,
                     source,
-                    UiString.get(_S4, costText)
+                    MText.get(_S4, costText)
                 );
             }
         });
@@ -999,7 +998,7 @@ public class SwingGameController implements IUIGameController {
                 return new MayChoicePanel(
                         SwingGameController.this,
                         source,
-                        UiString.get(_S5, name, cost.getText()));
+                        MText.get(_S5, name, cost.getText()));
             }
         });
         return kickerPanel.isYesClicked() ? 1 : 0;
@@ -1026,9 +1025,9 @@ public class SwingGameController implements IUIGameController {
                         (player.getHandSize() == DuelConfig.getInstance().getHandSize() &&
                          GeneralConfig.getInstance().showMulliganScreen());
                 if (showMulliganScreen) {
-                    return new MulliganChoicePanel(SwingGameController.this, source, UiString.get(_S6), player.getPrivateHand());
+                    return new MulliganChoicePanel(SwingGameController.this, source, MText.get(_S6), player.getPrivateHand());
                 } else {
-                    return new MayChoicePanel(SwingGameController.this, source, UiString.get(_S6));
+                    return new MayChoicePanel(SwingGameController.this, source, MText.get(_S6));
                 }
             }
         });

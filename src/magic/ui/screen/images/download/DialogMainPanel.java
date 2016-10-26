@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
 import magic.ui.helpers.UrlHelper;
@@ -53,12 +53,12 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             (e) -> { refreshDownloadList(); }
         );
 
-        backgroundButton = new JButton(UiString.get(_S3));
+        backgroundButton = new JButton(MText.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener((a) -> { doRunInBackground(); });
         hintPanel.addHintSource(backgroundButton, String.format("<b>%s</b><br>%s",
-            UiString.get(_S3),
-            UiString.get(_S1))
+            MText.get(_S3),
+            MText.get(_S1))
         );
 
         buttonsPanel = new ButtonsPanel();
@@ -70,11 +70,10 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     }
 
     private String getDefaultHint() {
-        return String.format(
-            "<b>%s</b><br>%s<br><br><b>%s</b><br>%s<br><br>%s",
-            DownloadMode.CARDS.toString(), UiString.get(_S6),
-            DownloadMode.CROPS.toString(), UiString.get(_S7),
-            UiString.get(_S8)
+        return String.format("<b>%s</b><br>%s<br><br><b>%s</b><br>%s<br><br>%s",
+            DownloadMode.CARDS.toString(), MText.get(_S6),
+            DownloadMode.CROPS.toString(), MText.get(_S7),
+            MText.get(_S8)
         );
     }
 
@@ -186,7 +185,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
                 }
             });
             hintPanel.addHintSource(helpButton, String.format("<b>%s</b><br>%s",
-                UiString.get(_S2), UiString.get(_S4)
+                MText.get(_S2), MText.get(_S4)
             ));
 
             setLayout(new MigLayout("insets 0, alignx right, aligny bottom"));

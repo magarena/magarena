@@ -8,7 +8,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.CardTextLanguage;
 import net.miginfocom.swing.MigLayout;
 
@@ -38,13 +38,13 @@ class OptionsPanel extends JPanel {
         setLayout(new MigLayout("wrap 2, insets 0", "[right][]"));
 
         // image folder
-        add(new JLabel(UiString.get(_S1)));
+        add(new JLabel(MText.get(_S1)));
         add(imagesFolderChooser, "w 100%");
         // card text language
-        add(new JLabel(UiString.get(_S2)));
+        add(new JLabel(MText.get(_S2)));
         add(cboCardText);
         // download mode
-        add(getBoldLabel(UiString.get(_S3)));
+        add(getBoldLabel(MText.get(_S3)));
         add(cboDownloadMode);
     }
 
@@ -129,7 +129,7 @@ class OptionsPanel extends JPanel {
     void addHintSources(HintPanel hintPanel) {
         imagesFolderChooser.addHintSources(hintPanel);
         hintPanel.addHintSource(cboCardText, String.format("<b>%s</b><br>%s",
-            UiString.get(_S4), UiString.get(_S5)
+            MText.get(_S4), MText.get(_S5)
         ));
     }
 

@@ -2,7 +2,7 @@ package magic.ui.screen.card.explorer;
 
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicLogs;
 import magic.ui.WikiPage;
 import magic.ui.screen.widget.MenuButton;
@@ -24,7 +24,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
     private ExplorerHeaderPanel headerPanel;
 
     public ExplorerScreen() {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         useLoadingScreen(this::initUI);
     }
 
@@ -43,15 +43,14 @@ public class ExplorerScreen extends HeaderFooterScreen {
     }
 
     private void setFooterButtons() {
-        addToFooter(
-                MenuButton.build(this::doShowScriptScreen, 
-                        MagicIcon.EDIT, UiString.get(_S3), UiString.get(_S4)
+        addToFooter(MenuButton.build(this::doShowScriptScreen, 
+                        MagicIcon.EDIT, MText.get(_S3), MText.get(_S4)
                 ),
                 MenuButton.build(this::doSelectRandomCard, 
-                        MagicIcon.RANDOM, UiString.get(_S5), UiString.get(_S6)
+                        MagicIcon.RANDOM, MText.get(_S5), MText.get(_S6)
                 ),
                 MenuButton.build(this::doSwitchLayout, 
-                        MagicIcon.LAYOUT, UiString.get(_S7), UiString.get(_S8)
+                        MagicIcon.LAYOUT, MText.get(_S7), MText.get(_S8)
                 )
         );
     }

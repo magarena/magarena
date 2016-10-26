@@ -8,7 +8,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import magic.model.player.PlayerStatistics;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -54,14 +54,14 @@ class PlayerMiniStatsPanel extends JPanel {
         migLayout.setColumnConstraints("[][40!]");
         // stats table
         add(new JLabel());
-        add(getStatsLabel(UiString.get(_S1)), "w 100%");
-        add(getStatsLabel(UiString.get(_S2)), "w 100%");
-        add(getStatsLabel(UiString.get(_S3)), "w 100%");
-        add(getStatsLabel(UiString.get(_S4)), "w 60!");
+        add(getStatsLabel(MText.get(_S1)), "w 100%");
+        add(getStatsLabel(MText.get(_S2)), "w 100%");
+        add(getStatsLabel(MText.get(_S3)), "w 100%");
+        add(getStatsLabel(MText.get(_S4)), "w 60!");
         add(getStatsLabel(stats.getDuelsPlayed().toString()), "w 100%");
         add(getStatsLabel(stats.getDuelsWon().toString()), "w 100%");
         add(getStatsLabel(stats.getDuelsLost().toString()), "w 100%");
-        add(getStatsLabel(UiString.get(_S5)), "w 60!");
+        add(getStatsLabel(MText.get(_S5)), "w 60!");
         add(getStatsLabel(stats.getGamesPlayed().toString()), "w 100%");
         add(getStatsLabel(stats.getGamesWon().toString()), "w 100%");
         add(getStatsLabel(stats.getGamesLost().toString()), "w 100%");

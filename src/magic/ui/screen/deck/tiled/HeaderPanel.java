@@ -9,7 +9,7 @@ import javax.swing.SwingConstants;
 import magic.model.MagicCard;
 import magic.model.MagicDeck;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -58,9 +58,9 @@ class HeaderPanel extends JPanel {
         int cardCount = cards == null ? 0 : cards.size();
         if (filter != CardTypeFilter.ALL) {
             final int percentage = (int)((cardCount / (double) deck.size()) * 100);
-            return UiString.get(_S11, filter, cardCount, percentage);
+            return MText.get(_S11, filter, cardCount, percentage);
         } else {
-            return UiString.get(_S12, filter, cardCount);
+            return MText.get(_S12, filter, cardCount);
         }
     }
 

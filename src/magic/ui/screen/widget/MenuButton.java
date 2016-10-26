@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.helpers.ImageHelper;
@@ -153,7 +153,7 @@ public class MenuButton extends JButton {
     }
 
     public static MenuButton getCloseScreenButton() {
-        return getCloseScreenButton(UiString.get(_S1));
+        return getCloseScreenButton(MText.get(_S1));
     }
 
     public static MenuButton getTestButton() {

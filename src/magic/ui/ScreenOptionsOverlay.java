@@ -1,7 +1,7 @@
 package magic.ui;
 
 import magic.ui.helpers.UrlHelper;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.utility.MagicStyle;
 import java.awt.Color;
 import java.awt.Component;
@@ -68,24 +68,24 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
 
     private void addGeneralOptionsMenu() {
 
-        menu = new MenuPanel(UiString.get(_S1));
+        menu = new MenuPanel(MText.get(_S1));
 
         // Help stuff.
-        menu.addMenuItem(UiString.get(_S2), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showReadMeScreen();
                 hideOverlay();
             }
         });
-        menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 UrlHelper.openURL(UrlHelper.URL_USERGUIDE);
                 hideOverlay();
             }
         });
-        menu.addMenuItem(UiString.get(_S4), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S4), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showKeywordsScreen();
@@ -95,7 +95,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addBlankItem();
 
         if (showPreferencesOption()) {
-            menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
+            menu.addMenuItem(MText.get(_S5), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     hideAllMenuPanels();
@@ -106,14 +106,14 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
             menu.addBlankItem();
         }
 
-        menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S6), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showMainMenuScreen();
                 hideOverlay();
             }
         });
-        menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
+        menu.addMenuItem(MText.get(_S7), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.getFrame().quitToDesktop(false);
@@ -122,7 +122,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
 
         if (showGeneralCloseMenuOption()) {
             menu.addBlankItem();
-            menu.addMenuItem(new MenuButton(UiString.get(_S8), new AbstractAction() {
+            menu.addMenuItem(new MenuButton(MText.get(_S8), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     hideOverlay();

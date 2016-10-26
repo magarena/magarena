@@ -3,7 +3,7 @@ package magic.ui.widget.card.filter.button;
 import java.awt.Dimension;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRarity;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.card.filter.IFilterListener;
 
 @SuppressWarnings("serial")
@@ -13,7 +13,7 @@ public class RarityFilterPanel extends CheckBoxFilterPanel {
     private static final String _S14 = "Rarity";
 
     public RarityFilterPanel(IFilterListener aListener) {
-        super(UiString.get(_S14), aListener);
+        super(MText.get(_S14), aListener);
     }
 
     @Override

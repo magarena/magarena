@@ -2,7 +2,7 @@ package magic.ui.screen.keywords;
 
 import java.awt.event.KeyEvent;
 import magic.data.GeneralConfig;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HeaderFooterScreen;
@@ -15,7 +15,7 @@ public class KeywordsScreen extends HeaderFooterScreen {
     private static final String _S1 = "Keywords Glossary";
 
     public KeywordsScreen() {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         setDefaultProperties();
         setContent();
     }

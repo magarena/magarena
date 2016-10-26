@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.duel.animation.AnimationFx;
 import net.miginfocom.swing.MigLayout;
 
@@ -42,16 +42,16 @@ class AnimationFlagsPanel extends JPanel {
 
         this.listener = aListener;
 
-        createCheckBox(AnimationFx.DRAW_CARD, UiString.asHtml(_S1), UiString.get(_S2));
-        createCheckBox(AnimationFx.PLAY_CARD, UiString.asHtml(_S3), UiString.get(_S4));
-        createCheckBox(AnimationFx.FLIP_CARD, UiString.asHtml(_S5), UiString.get(_S6));
-        createCheckBox(AnimationFx.CARD_SHADOW, UiString.asHtml(_S7), UiString.get(_S8));
-        createCheckBox(AnimationFx.STATIC_ARROW, UiString.asHtml(_S9), UiString.get(_S10));
-        createCheckBox(AnimationFx.ELASTIC_ARROW, UiString.asHtml(_S20), UiString.get(_S21));
-        createCheckBox(AnimationFx.ZBUTTON_PULSE, UiString.asHtml(_S11), UiString.get(_S16));
-        createCheckBox(AnimationFx.AVATAR_PULSE, UiString.asHtml(_S12), UiString.get(_S17));
-        createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.asHtml(_S13), UiString.get(_S18));
-        createCheckBox(AnimationFx.CARD_FADEIN, UiString.asHtml(_S14), UiString.get(_S15));
+        createCheckBox(AnimationFx.DRAW_CARD, MText.asHtml(_S1), MText.get(_S2));
+        createCheckBox(AnimationFx.PLAY_CARD, MText.asHtml(_S3), MText.get(_S4));
+        createCheckBox(AnimationFx.FLIP_CARD, MText.asHtml(_S5), MText.get(_S6));
+        createCheckBox(AnimationFx.CARD_SHADOW, MText.asHtml(_S7), MText.get(_S8));
+        createCheckBox(AnimationFx.STATIC_ARROW, MText.asHtml(_S9), MText.get(_S10));
+        createCheckBox(AnimationFx.ELASTIC_ARROW, MText.asHtml(_S20), MText.get(_S21));
+        createCheckBox(AnimationFx.ZBUTTON_PULSE, MText.asHtml(_S11), MText.get(_S16));
+        createCheckBox(AnimationFx.AVATAR_PULSE, MText.asHtml(_S12), MText.get(_S17));
+        createCheckBox(AnimationFx.NEW_TURN_MSG, MText.asHtml(_S13), MText.get(_S18));
+        createCheckBox(AnimationFx.CARD_FADEIN, MText.asHtml(_S14), MText.get(_S15));
 
         setLayout(new MigLayout("flowx, wrap 2, insets 0, gapy 6, gapx 10"));
         for (JCheckBox cb : cbMap.values()) {

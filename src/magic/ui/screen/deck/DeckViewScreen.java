@@ -6,7 +6,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
@@ -29,15 +29,14 @@ public class DeckViewScreen extends HeaderFooterScreen
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     public DeckViewScreen(final MagicDeck deck, final MagicCardDefinition selectedCard) {
-        super(UiString.get(_S8));
+        super(MText.get(_S8));
         screenContent = new DeckViewPanel(deck, selectedCard);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
-        addToFooter(
-                MenuButton.build(this::showSampleHand,
-                        MagicIcon.HAND_ICON, UiString.get(_S2), UiString.get(_S3)),
+        addToFooter(MenuButton.build(this::showSampleHand,
+                        MagicIcon.HAND_ICON, MText.get(_S2), MText.get(_S3)),
                 MenuButton.build(this::showDeckImageView, 
-                        MagicIcon.TILED, UiString.get(_S5), UiString.get(_S6))                
+                        MagicIcon.TILED, MText.get(_S5), MText.get(_S6))                
         );
         setDeck(deck);
     }
@@ -50,7 +49,7 @@ public class DeckViewScreen extends HeaderFooterScreen
         if (screenContent.getDeck().size() >= 7) {
             ScreenController.showSampleHandScreen(screenContent.getDeck());
         } else {
-            showInvalidActionMessage(UiString.get(_S4));
+            showInvalidActionMessage(MText.get(_S4));
         }
     }
 
@@ -58,7 +57,7 @@ public class DeckViewScreen extends HeaderFooterScreen
         if (screenContent.getDeck().size() > 0) {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         } else {
-            showInvalidActionMessage(UiString.get(_S7));
+            showInvalidActionMessage(MText.get(_S7));
         }
     }
 

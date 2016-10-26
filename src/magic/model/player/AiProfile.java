@@ -3,7 +3,7 @@ package magic.model.player;
 import java.util.Properties;
 import magic.ai.MagicAIImpl;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.SortedProperties;
 
 public class AiProfile extends PlayerProfile {
@@ -95,16 +95,16 @@ public class AiProfile extends PlayerProfile {
 
     @Override
     public String getPlayerTypeLabel() {
-        return UiString.get(_S1, getAiType());
+        return MText.get(_S1, getAiType());
     }
 
     @Override
     public String getPlayerAttributeLabel() {
-        return UiString.get(_S2, getAiLevel(), getExtraLife());
+        return MText.get(_S2, getAiLevel(), getExtraLife());
     }
 
     @Override
     public String getPlayerLabel() {
-        return UiString.get(_S3, getPlayerName(), getAiLevel(), getAiType().name());
+        return MText.get(_S3, getPlayerName(), getAiLevel(), getAiType().name());
     }
 }

@@ -5,7 +5,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.EnumSet;
 import java.util.Set;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 /**
  * Ways to group decks.
@@ -29,7 +29,7 @@ public enum DeckType {
     private final String deckTypeCaption;
 
     private DeckType(final String caption) {
-        this.deckTypeCaption = UiString.get(caption);
+        this.deckTypeCaption = MText.get(caption);
     }
 
     @Override

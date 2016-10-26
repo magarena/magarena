@@ -9,7 +9,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicType;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
@@ -26,7 +26,7 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
     private HeaderPanel headerPanel;
 
     public DeckTiledCardsScreen(final MagicDeck aDeck) {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         this.deck = aDeck;
         useLoadingScreen(this::initUI);
     }

@@ -15,7 +15,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.FontsAndBorders;
@@ -39,7 +39,7 @@ public class DeckChooserDialog extends MagicDialog {
 
     public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
-        super(UiString.get(_S2), new Dimension(300, 180));
+        super(MText.get(_S2), new Dimension(300, 180));
 
         deckTypeCombo = getDeckTypeComboBox();
         deckTypeCombo.setSelectedItem(aDeckType);

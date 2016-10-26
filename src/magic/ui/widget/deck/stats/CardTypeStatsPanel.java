@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.CardStatistics;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -26,7 +26,7 @@ class CardTypeStatsPanel extends JPanel {
 
         removeAll();
 
-        add(DeckStatisticsViewer.getCaptionLabel(UiString.get(_S1)), "w 100%, wrap, span");
+        add(DeckStatisticsViewer.getCaptionLabel(MText.get(_S1)), "w 100%, wrap, span");
 
         for (int i = 0; i < CardStatistics.NR_OF_TYPES; i++) {
 

@@ -1,6 +1,6 @@
 package magic.ui.screen.menu.help;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.UrlHelper;
 import magic.ui.screen.menu.MenuScreenContentPanel;
@@ -17,13 +17,13 @@ class HelpMenuContentPanel extends MenuScreenContentPanel {
     private static final String _S6 = "Close menu";
 
     HelpMenuContentPanel() {
-        super(UiString.get(_S1), true);
-        addMenuItem(UiString.get(_S2), this::onReadMeMenu);
-        addMenuItem(UiString.get(_S3), this::onOnlineHelpMenu);
-        addMenuItem(UiString.get(_S4), this::onKeywordsMenu);
-        addMenuItem(UiString.get(_S5), this::onAboutMenu);
+        super(MText.get(_S1), true);
+        addMenuItem(MText.get(_S2), this::onReadMeMenu);
+        addMenuItem(MText.get(_S3), this::onOnlineHelpMenu);
+        addMenuItem(MText.get(_S4), this::onKeywordsMenu);
+        addMenuItem(MText.get(_S5), this::onAboutMenu);
         addSpace();
-        addMenuItem(UiString.get(_S6), this::onCloseMenu);
+        addMenuItem(MText.get(_S6), this::onCloseMenu);
         refreshMenuLayout();
     }
 

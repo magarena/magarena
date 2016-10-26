@@ -11,7 +11,7 @@ import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicFormat;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -65,11 +65,11 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
             setBorder(null);
             setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
             setToolTipText(String.format("<html><b>%s</b><br>%s<br>%s<br>%s<br>%s</html>",
-                    UiString.get(_S1),
-                    UiString.get(_S2, startLife),
-                    UiString.get(_S3, handSize),
-                    UiString.get(_S4, maxGames, getGamesRequiredToWinDuel()),
-                    UiString.get(_S5, cube.getLabel())
+                    MText.get(_S1),
+                    MText.get(_S2, startLife),
+                    MText.get(_S3, handSize),
+                    MText.get(_S4, maxGames, getGamesRequiredToWinDuel()),
+                    MText.get(_S5, cube.getLabel())
             ));
         }
     }

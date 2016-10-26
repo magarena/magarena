@@ -3,7 +3,7 @@ package magic.ui.widget.card.filter.button;
 import java.awt.Dimension;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicLogs;
 import magic.ui.widget.card.filter.IFilterListener;
 
@@ -20,7 +20,7 @@ public class StatusFilterPanel extends CheckBoxFilterPanel {
     private final boolean isDeckEditor;
 
     public StatusFilterPanel(IFilterListener aListener, boolean isDeckEditor) {
-        super(UiString.get(_S4), aListener);
+        super(MText.get(_S4), aListener);
         this.isDeckEditor = isDeckEditor;
     }
 
@@ -29,13 +29,13 @@ public class StatusFilterPanel extends CheckBoxFilterPanel {
         
         final String status = cbDialog.getItemText(i);
 
-        if (UiString.get(_S17).equals(status))
+        if (MText.get(_S17).equals(status))
             return MagicLogs.isCardInDownloadsLog(card);
-        else if (UiString.get(_S18).equals(status))
+        else if (MText.get(_S18).equals(status))
             return CardDefinitions.isCardPlayable(card);
-        else if (UiString.get(_S19).equals(status))
+        else if (MText.get(_S19).equals(status))
             return CardDefinitions.isCardMissing(card);
-        else if (UiString.get(_S25).equals(status))
+        else if (MText.get(_S25).equals(status))
             return CardDefinitions.isPotential(card);
         else
             return true;
@@ -49,11 +49,11 @@ public class StatusFilterPanel extends CheckBoxFilterPanel {
     @Override
     protected String[] getFilterValues() {
         return isDeckEditor
-            ? new String[]{UiString.get(_S17)}
+            ? new String[]{MText.get(_S17)}
             : new String[]{
-                UiString.get(_S17),
-                UiString.get(_S18),
-                UiString.get(_S19),
-                UiString.get(_S25)};
+                MText.get(_S17),
+                MText.get(_S18),
+                MText.get(_S19),
+                MText.get(_S25)};
     }
 }

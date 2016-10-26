@@ -31,7 +31,7 @@ import magic.utility.DeckUtils;
 import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
@@ -317,7 +317,7 @@ public class DeckPicker extends JPanel {
         }
 
         public void setDecksCount(final int deckCount) {
-            filterButton.setText(UiString.get(deckFilter == null ? _S1 : _S2, deckCount));
+            filterButton.setText(MText.get(deckFilter == null ? _S1 : _S2, deckCount));
         }
 
     }

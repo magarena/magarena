@@ -4,7 +4,7 @@ import java.util.List;
 import javax.swing.SwingWorker;
 import magic.cardBuilder.renderers.CardBuilder;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.utility.MagicSystem;
 
 class ScreenLoaderWorker extends SwingWorker<Void, String> {
@@ -30,12 +30,12 @@ class ScreenLoaderWorker extends SwingWorker<Void, String> {
     protected Void doInBackground() throws Exception {
 
         if (needsCardData) {
-            publish(UiString.get(_S1));
+            publish(MText.get(_S1));
             MagicSystem.loadCards.get();
         }
 
         if (needsCardBuilder) {
-            publish(UiString.get(_S2));
+            publish(MText.get(_S2));
             // Force CB to initialize.
             CardBuilder.getCardBuilderImage(MagicCardDefinition.UNKNOWN);
         }

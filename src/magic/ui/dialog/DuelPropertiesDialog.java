@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import magic.data.MagicFormat;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.widget.SliderPanel;
@@ -44,11 +44,11 @@ public class DuelPropertiesDialog extends MagicDialog {
         final MagicFormat cube
     ) {
 
-        super(UiString.get(_S1), new Dimension(380, 260));
+        super(MText.get(_S1), new Dimension(380, 260));
 
-        lifeSliderPanel = new SliderPanel(UiString.get(_S2), (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
-        handSizeSliderPanel = new SliderPanel(UiString.get(_S3), 6, 8, 1, handSize);
-        winsSliderPanel = new SliderPanel(UiString.get(_S4), 1, 11, 2, maxGames);
+        lifeSliderPanel = new SliderPanel(MText.get(_S2), (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
+        handSizeSliderPanel = new SliderPanel(MText.get(_S3), 6, 8, 1, handSize);
+        winsSliderPanel = new SliderPanel(MText.get(_S4), 1, 11, 2, maxGames);
 
         cubeComboBox = new JComboBox<>(MagicFormat.getDuelFormatsArray());
         cubeComboBox.setLightWeightPopupEnabled(false);
@@ -81,7 +81,7 @@ public class DuelPropertiesDialog extends MagicDialog {
 
     private JPanel getCubePanel() {
         final JPanel panel = new JPanel(new MigLayout());
-        final JLabel lbl = new JLabel(UiString.get(_S5));
+        final JLabel lbl = new JLabel(MText.get(_S5));
         lbl.setFont(lbl.getFont().deriveFont(Font.BOLD));
         panel.add(lbl);
         panel.add(cubeComboBox, "w 100%");

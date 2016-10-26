@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.CardTextLanguage;
 
 @SuppressWarnings("serial")
@@ -21,7 +21,7 @@ class PlayablePanel extends DownloadPanel {
 
     @Override
     protected String getProgressCaption() {
-        return UiString.get(_S1);
+        return MText.get(_S1);
     }
 
     @Override
@@ -35,7 +35,7 @@ class PlayablePanel extends DownloadPanel {
 
     @Override
     protected String getDownloadButtonCaption() {
-        return UiString.get(_S2);
+        return MText.get(_S2);
     }
 
     @Override

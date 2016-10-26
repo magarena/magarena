@@ -19,7 +19,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.SwingUtilities;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.button.CancelButton;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
@@ -33,7 +33,7 @@ public class GameStateRunner
 
     public GameStateRunner() {
 
-        super(UiString.get("Test Classes (double-click to select)"), new Dimension(500, 460));
+        super(MText.get("Test Classes (double-click to select)"), new Dimension(500, 460));
 
         setLookAndFeel();
         refreshLayout();
@@ -54,7 +54,7 @@ public class GameStateRunner
 
     private String[] getListOfTestClasses() throws IOException, URISyntaxException {
         final List<String> classes = new ArrayList<>();
-        for (final String c : UiString.getClassNamesInPackage(MagicSystem.getJarFile(), "magic.test")) {
+        for (final String c : MText.getClassNamesInPackage(MagicSystem.getJarFile(), "magic.test")) {
             final String longClassName = c.substring(0, c.length() - ".class".length());
             final String shortClassName = longClassName.substring(longClassName.lastIndexOf(".") + 1);
             final boolean isValid = shortClassName.startsWith("Test")

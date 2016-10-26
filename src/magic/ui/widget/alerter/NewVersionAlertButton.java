@@ -8,7 +8,7 @@ import magic.data.GeneralConfig;
 import magic.ui.helpers.UrlHelper;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 
 @SuppressWarnings("serial")
 public class NewVersionAlertButton extends AlertButton {
@@ -30,11 +30,10 @@ public class NewVersionAlertButton extends AlertButton {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                String[] buttons = {UiString.get(_S2), UiString.get(_S3), UiString.get(_S4)};
-                int rc = JOptionPane.showOptionDialog(
-                        ScreenController.getFrame(),
-                        UiString.get(_S1, newVersion),
-                        UiString.get(_S5),
+                String[] buttons = {MText.get(_S2), MText.get(_S3), MText.get(_S4)};
+                int rc = JOptionPane.showOptionDialog(ScreenController.getFrame(),
+                        MText.get(_S1, newVersion),
+                        MText.get(_S5),
                         0,
                         JOptionPane.INFORMATION_MESSAGE,
                         null,
@@ -67,7 +66,7 @@ public class NewVersionAlertButton extends AlertButton {
             hasChecked = true;
         }
         if (isNewVersionAvailable()) {
-            return UiString.get(_S6, newVersion);
+            return MText.get(_S6, newVersion);
         } else {
             return "";
         }

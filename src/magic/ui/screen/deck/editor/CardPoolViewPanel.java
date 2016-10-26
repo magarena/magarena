@@ -18,7 +18,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.widget.cards.table.BasicDeckTablePanel;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
 import magic.ui.screen.widget.ActionBarButton;
@@ -184,8 +184,8 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private ActionBarButton getRandomDeckActionButton() {
         return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.RANDOM),
-                UiString.get(_S1),
-                UiString.get(_S2),
+                MText.get(_S1),
+                MText.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {

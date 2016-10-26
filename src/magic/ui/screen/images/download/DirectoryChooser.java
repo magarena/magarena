@@ -13,7 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.M.MFileLink;
@@ -65,7 +65,7 @@ public class DirectoryChooser extends JPanel {
     private void setupSelectButton() {
         selectButton.setText("...");
         selectButton.setFont(FontsAndBorders.FONT1);
-        selectButton.setToolTipText(UiString.get(_S7));
+        selectButton.setToolTipText(MText.get(_S7));
         selectButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -80,7 +80,7 @@ public class DirectoryChooser extends JPanel {
 
     private void setupImagesFolderField() {
         imagesFolder.setFile(defaultPath);
-        imagesFolder.setToolTipText(UiString.get(_S6));
+        imagesFolder.setToolTipText(MText.get(_S6));
         imagesFolder.setBorder(BorderFactory.createCompoundBorder(
                 BorderFactory.createMatteBorder(1, 1, 1, 1, Color.GRAY), 
                 BorderFactory.createEmptyBorder(0, 4, 0, 0))
@@ -95,14 +95,14 @@ public class DirectoryChooser extends JPanel {
     void addHintSources(HintPanel hintPanel) {
         hintPanel.addHintSource(imagesFolder);
         hintPanel.addHintSource(selectButton, String.format("<b>%s</b><br>%s",
-            UiString.get(_S1), UiString.get(_S7)
+            MText.get(_S1), MText.get(_S7)
         ));
     }
 
     private static class ImagesDirectoryChooser extends JFileChooser {
         public ImagesDirectoryChooser(String currentDirectoryPath) {
             super(currentDirectoryPath);
-            setDialogTitle(UiString.get(_S2));
+            setDialogTitle(MText.get(_S2));
             setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             setAcceptAllFileFilterUsed(false);
             // disable the folder name textbox (see #803).
@@ -114,10 +114,9 @@ public class DirectoryChooser extends JPanel {
             if (directoryPath.toFile().getFreeSpace() > MIN_FREE_SPACE) {
                 super.approveSelection();
             } else {
-                ScreenController.showWarningMessage(
-                        String.format("<html><b>%s</b><br>%s<html>",
-                                UiString.get(_S3),
-                                UiString.get(_S4))
+                ScreenController.showWarningMessage(String.format("<html><b>%s</b><br>%s<html>",
+                                MText.get(_S3),
+                                MText.get(_S4))
                 );
             }
         }

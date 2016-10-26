@@ -11,7 +11,7 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.FontsAndBorders;
@@ -37,7 +37,7 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
     private static final String _S13 = "Lands:";
 
     private boolean isCancelled = false;
-    private final JButton saveButton = new SaveButton(UiString.get(_S1));
+    private final JButton saveButton = new SaveButton(MText.get(_S1));
     private final int cardPoolSize;
     private DeckGenerator deckGenerator = new DeckGenerator();
 
@@ -56,7 +56,7 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
     // CTR
     public RandomDeckGeneratorDialog(final int cardPoolSize, final int defaultDeckSize) {
 
-        super(UiString.get(_S5), new Dimension(460, 340));
+        super(MText.get(_S5), new Dimension(460, 340));
 
         this.cardPoolSize = cardPoolSize;
 
@@ -64,15 +64,15 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
         deckSizeSlider.addChangeListener(this);
 
         spellsSlider = new SliderPanel("", 0, 100, 1, 60, false);
-        spellsSlider.setToolTipText(UiString.get(_S2));
+        spellsSlider.setToolTipText(MText.get(_S2));
         spellsSlider.addChangeListener(this);
 
         creaturesSlider = new SliderPanel("", 0, 100, 1, 66, false);
-        creaturesSlider.setToolTipText(UiString.get(_S3));
+        creaturesSlider.setToolTipText(MText.get(_S3));
         creaturesSlider.addChangeListener(this);
 
         maxColorsSlider = new SliderPanel("", 1, 3, 1, 2, true);
-        maxColorsSlider.setToolTipText(UiString.get(_S4));
+        maxColorsSlider.setToolTipText(MText.get(_S4));
         maxColorsSlider.addChangeListener(this);
 
         refreshLayout();
@@ -113,26 +113,26 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
         final JPanel panel = getDialogContentPanel();
         panel.setLayout(new MigLayout("flowx, wrap 2"));
 
-        panel.add(getFilterCaptionLabel(UiString.get(_S6)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S6)), "alignx right");
         panel.add(new JLabel(Integer.toString(cardPoolSize)), "w 100%");
 
-        panel.add(getFilterCaptionLabel(UiString.get(_S7)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S7)), "alignx right");
         panel.add(deckSizeSlider, "w 100%");
 
-        panel.add(getFilterCaptionLabel(UiString.get(_S8)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S8)), "alignx right");
         panel.add(spellsSlider, "w 100%");
 
-        panel.add(getFilterCaptionLabel(UiString.get(_S9)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S9)), "alignx right");
         panel.add(creaturesSlider, "w 100%");
 
-        panel.add(getFilterCaptionLabel(UiString.get(_S10)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S10)), "alignx right");
         panel.add(maxColorsSlider, "w 100%");
 
-        panel.add(getFilterCaptionLabel(UiString.get(_S11)), "alignx right, gaptop 10");
+        panel.add(getFilterCaptionLabel(MText.get(_S11)), "alignx right, gaptop 10");
         panel.add(spellsLabel, "w 100%");
-        panel.add(getFilterCaptionLabel(UiString.get(_S12)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S12)), "alignx right");
         panel.add(creaturesLabel, "w 100%");
-        panel.add(getFilterCaptionLabel(UiString.get(_S13)), "alignx right");
+        panel.add(getFilterCaptionLabel(MText.get(_S13)), "alignx right");
         panel.add(landsLabel, "w 100%");
 
         panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom, spanx");

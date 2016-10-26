@@ -5,7 +5,7 @@ import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import magic.translate.StringContext;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.ScreenController;
@@ -36,7 +36,7 @@ class AboutButton extends JButton {
     }
 
     private void setDefaultProperties() {
-        setToolTipText(UiString.get(_S1));
+        setToolTipText(MText.get(_S1));
         MouseHelper.showHandCursor(this);
         WidgetHelper.setTransparent(this);
     }

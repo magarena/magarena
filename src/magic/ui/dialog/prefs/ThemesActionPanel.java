@@ -11,7 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.helpers.UrlHelper;
@@ -56,7 +56,7 @@ class ThemesActionPanel extends JPanel {
 
     private JButton getThemeFolderButton(MouseListener aListener) {
         JButton btn = new JButton(getActionIcon(MagicIcon.OPEN));
-        btn.setToolTipText(String.format("<b>%s</b><br>%s", UiString.get(_S1), UiString.get(_S2)));
+        btn.setToolTipText(String.format("<b>%s</b><br>%s", MText.get(_S1), MText.get(_S2)));
         btn.addMouseListener(aListener);
         btn.addActionListener(new AbstractAction() {
             @Override
@@ -69,7 +69,7 @@ class ThemesActionPanel extends JPanel {
 
     private JButton getMoreThemesButton(MouseListener aListener) {
         JButton btn = new JButton(getActionIcon(MagicIcon.OPTIONS));
-        btn.setToolTipText(String.format("<b>%s</b><br>%s", UiString.get(_S3), UiString.get(_S4)));
+        btn.setToolTipText(String.format("<b>%s</b><br>%s", MText.get(_S3), MText.get(_S4)));
         btn.addMouseListener(aListener);
         btn.addActionListener(new AbstractAction() {
             @Override

@@ -1,6 +1,5 @@
 package magic.translate;
 
-import magic.translate.StringContext;
 import groovy.json.StringEscapeUtils;
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,8 +24,8 @@ import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
-public final class UiString {
-    private UiString() { }
+public final class MText {
+    private MText() { }
 
     private static final String UTF_CHAR_SET = "UTF-8";
 

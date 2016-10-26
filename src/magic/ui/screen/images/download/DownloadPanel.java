@@ -21,7 +21,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.CardTextLanguage;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
@@ -39,7 +39,7 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
     protected final JButton downloadButton = new JButton();
-    private final JButton cancelButton = new JButton(UiString.get(_S1));
+    private final JButton cancelButton = new JButton(MText.get(_S1));
     protected final JProgressBar progressBar = new JProgressBar();
 
     private ImagesDownloadList files;

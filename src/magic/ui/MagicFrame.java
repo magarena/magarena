@@ -1,6 +1,6 @@
 package magic.ui;
 
-import magic.translate.UiString;
+import magic.translate.MText;
 import java.awt.dnd.DropTarget;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -53,7 +53,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         ToolTipManager.sharedInstance().setInitialDelay(400);
 
         // Setup frame.
-        this.setTitle(String.format("%s [%s]", frameTitle, UiString.get(_S1)));
+        this.setTitle(String.format("%s [%s]", frameTitle, MText.get(_S1)));
         this.setIconImage(MagicImages.APP_LOGO);
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListeners();
@@ -113,7 +113,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
             duel.load(duelFile);
             showDuel();
         } else {
-            ScreenController.showWarningMessage(UiString.get(_S2));
+            ScreenController.showWarningMessage(MText.get(_S2));
         }
     }
 
@@ -129,8 +129,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
 
         if (brokenRulesText.length() > 0) {
-            ScreenController.showWarningMessage(
-                    String.format("%s\n\n%s", UiString.get(_S3, playerName), brokenRulesText));
+            ScreenController.showWarningMessage(String.format("%s\n\n%s", MText.get(_S3, playerName), brokenRulesText));
             return false;
         }
 
@@ -164,12 +163,11 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         if (!confirmQuitToDesktop) {
             doShutdownMagarena();
         } else {
-            final String message = String.format("%s\n", UiString.get(_S4));
+            final String message = String.format("%s\n", MText.get(_S4));
             final Object[] params = {message};
-            final int n = JOptionPane.showConfirmDialog(
-                    contentPanel,
+            final int n = JOptionPane.showConfirmDialog(contentPanel,
                     params,
-                    UiString.get(_S5),
+                    MText.get(_S5),
                     JOptionPane.YES_NO_OPTION);
             if (n == JOptionPane.YES_OPTION) {
                 doShutdownMagarena();
@@ -245,7 +243,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
             return true;
         } catch (IOException ex) {
             ScreenController.showWarningMessage(String.format("%s\n\n%s", 
-                    UiString.get(_S6),
+                    MText.get(_S6),
                     ex.getMessage())
             );
         }
@@ -259,12 +257,11 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
             return;
         }
 
-        final String message = String.format("%s\n", UiString.get("Replace background image?"));
+        final String message = String.format("%s\n", MText.get("Replace background image?"));
         final Object[] params = {message};
-        final int response = JOptionPane.showConfirmDialog(
-                contentPanel,
+        final int response = JOptionPane.showConfirmDialog(contentPanel,
                 params,
-                UiString.get("Confirmation required..."),
+                MText.get("Confirmation required..."),
                 JOptionPane.YES_NO_OPTION);
         
         if (response == JOptionPane.YES_OPTION) {

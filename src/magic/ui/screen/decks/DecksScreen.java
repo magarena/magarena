@@ -1,7 +1,7 @@
 package magic.ui.screen.decks;
 
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.dialog.DecksFilterDialog;
@@ -32,27 +32,26 @@ public class DecksScreen extends HeaderFooterScreen {
     private final DeckStatusPanel deckStatusPanel;
 
     public DecksScreen(final IDeckConsumer deckConsumer) {
-        super(UiString.get(_S1));
+        super(MText.get(_S1));
         this.deckConsumer = deckConsumer;
         deckStatusPanel = new DeckStatusPanel();
         screenContent = new ScreenPanel(deckStatusPanel);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
-        setLeftFooter(MenuButton.getCloseScreenButton(UiString.get(_S2)));
-        setRightFooter(MenuButton.build(this::doSelectDeck, UiString.get(_S3)));
-        addToFooter(
-                MenuButton.build(this::showSampleHand,
-                        MagicIcon.HAND_ICON, UiString.get(_S6), UiString.get(_S7)),
+        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S2)));
+        setRightFooter(MenuButton.build(this::doSelectDeck, MText.get(_S3)));
+        addToFooter(MenuButton.build(this::showSampleHand,
+                        MagicIcon.HAND_ICON, MText.get(_S6), MText.get(_S7)),
                 MenuButton.build(this::showDeckImageView,
-                        MagicIcon.TILED, UiString.get(_S10), UiString.get(_S11))
+                        MagicIcon.TILED, MText.get(_S10), MText.get(_S11))
         );
     }
 
     private void doSelectDeck() {
         if (screenContent.getDeck() == null) {
-            showInvalidActionMessage(UiString.get(_S4));
+            showInvalidActionMessage(MText.get(_S4));
         } else if (screenContent.getDeck().isValid() == false) {
-            showInvalidActionMessage(UiString.get(_S5));
+            showInvalidActionMessage(MText.get(_S5));
         } else {
             deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
             ScreenController.closeActiveScreen(false);
@@ -61,9 +60,9 @@ public class DecksScreen extends HeaderFooterScreen {
 
     private void showSampleHand() {
         if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
-            showInvalidActionMessage(UiString.get(_S8));
+            showInvalidActionMessage(MText.get(_S8));
         } else if (screenContent.getDeck().isValid() == false) {
-            showInvalidActionMessage(UiString.get(_S9));
+            showInvalidActionMessage(MText.get(_S9));
         } else {
             ScreenController.showSampleHandScreen(screenContent.getDeck());
         }
@@ -71,9 +70,9 @@ public class DecksScreen extends HeaderFooterScreen {
 
     private void showDeckImageView() {
         if (screenContent.getDeck() == null || screenContent.getDeck().isEmpty()) {
-            showInvalidActionMessage(UiString.get(_S12));
+            showInvalidActionMessage(MText.get(_S12));
         } else if (screenContent.getDeck().isValid() == false) {
-            showInvalidActionMessage(UiString.get(_S13));
+            showInvalidActionMessage(MText.get(_S13));
         } else {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         }

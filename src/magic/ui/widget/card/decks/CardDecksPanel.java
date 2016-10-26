@@ -25,7 +25,7 @@ import javax.swing.SwingWorker;
 import javax.swing.Timer;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.translate.UiString;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.FontsAndBorders;
 import magic.utility.DeckUtils;
@@ -103,9 +103,8 @@ public class CardDecksPanel extends JPanel {
             if (deck.isValid()) {
                 ScreenController.showDeckViewScreen(deck, card);
             } else {
-                ScreenController.showWarningMessage(
-                    String.format("<html><b>%s</b><br>%s</html>",
-                        UiString.get(_S1),
+                ScreenController.showWarningMessage(String.format("<html><b>%s</b><br>%s</html>",
+                        MText.get(_S1),
                         deck.getDescription().replace("\n", "<br>"))
                 );
             }
