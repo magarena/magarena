@@ -74,6 +74,44 @@ Thank you for your support and have fun!
 Release 1.78 (October 30, 2016)
 ============
 
+up to commit 4cc156f75e6c7042e8653252be31731619e31f7f
+
+    Improving drag/drop code; now recognizes zip file.
+    reduce updates by only updating between events if the next one has a choice
+    Update card lists to contain Ae instead of Æ
+    support use of AE ligature in dec files during transition
+    update formats to include KLD and rotate Standard
+    add cardbuilder to rendering of permanents
+      allow IRenderable card to take a permanent's current subtypes
+    enable images for token permanents
+    Custom scrollbar with a more minimalist style to default "nimbus".
+
+- added the following to the card script:
+    support create token phrasing
+    allow searching from library + graveyard/hand (groovy)
+    add effect: At the beginning of your next upkeep, pay <mana cost>. If you don't, you lose the game
+    add condition: that player has no cards in hand
+    add condition: RN has <amount> or more cards in hand
+    add condition: RN has <amount> or fewer cards in hand
+    allow multiple conditions in intervening if clause
+    add condition: enchanted creature's power is <amount> or greater
+    add effect: return <card> at random from your graveyard to your hand
+    add effect: goad <permanents>, closes #825
+
+- fixed the following bugs:
+    fix crash due to Syndicate Trafficker, should not be using target reference
+    fix and test Deathbringer Liege trigger order, fixes #899
+    fix incorrect boolean opreator for CREATURE_OR_VEHICLE, fixes #922
+    fix: dragging an image directly from a browser into Magarena works again in Windows.
+    move morph activations to card layer as permanent no longer check game layer, fixes #921
+    fix missing activation cost in oracle text for 2/2 red Dragon token
+    remove genABStaticGame as permanents do not use the Game layer, fixes #928
+    fix script to use RN instead of 'it' as 'it' means SN, fixes #929
+    fix missing check for "isn't monstrous" when monstrousity resolves
+    fix Fertilid to have target player search
+
+- added the following cards:
+
 Release 1.77 (September 25, 2016)
 ============
 kelsioboy
