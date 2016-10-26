@@ -42,14 +42,17 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
     public void addMenuItem(final MenuButton button) {
         menuItems.add(button);
     }
+
     public void addMenuItem(final String caption, final AbstractAction action, final String tooltip) {
         addMenuItem(new MenuButton(caption, action, tooltip));
     }
+
     public void addMenuItem(final String caption, int fontSize, final AbstractAction action) {
         final MenuButton btn = new MenuButton(caption, action, null);
         btn.setFont(btn.getFont().deriveFont((float)fontSize));
         addMenuItem(btn);
     }
+
     public void addMenuItem(final String caption, final AbstractAction action) {
         addMenuItem(caption, action, null);
     }

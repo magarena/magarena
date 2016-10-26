@@ -40,6 +40,15 @@ public abstract class MenuScreenContentPanel extends JPanel {
         });
     }
 
+    protected void addMenuItem(String name, String tooltip, Runnable action) {
+        mp.addMenuItem(UiString.get(name), new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                action.run();
+            }
+        }, tooltip);
+    }
+
     protected void addMenuItem(String name, Runnable action) {
         mp.addMenuItem(UiString.get(name), new AbstractAction() {
             @Override
