@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.Locale;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -2641,7 +2642,7 @@ public class MagicTargetFilterFactory {
     }
 
     public static String toSingular(final String arg) {
-        final String[] parts = arg.toLowerCase().split(" named ");
+        final String[] parts = arg.toLowerCase(Locale.ENGLISH).split(" named ");
         parts[0] = parts[0]
             .replaceAll("\\bwerewolves\\b", "werewolf")
             .replaceAll("\\belves\\b", "elf")

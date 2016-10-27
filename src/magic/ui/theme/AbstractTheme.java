@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Locale;
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
@@ -116,7 +117,7 @@ public abstract class AbstractTheme implements Theme {
 
     @Override
     public ImageIcon getAbilityIcon(AbilityIcon ability) {
-        final String key = "icon_" + ability.name().toLowerCase();
+        final String key = "icon_" + ability.name().toLowerCase(Locale.ENGLISH);
         final Object value = themeMap.get(key);
         return value == null ? null : (ImageIcon)value;
     }

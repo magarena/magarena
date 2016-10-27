@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -221,7 +222,7 @@ public final class MagicFileSystem {
         final File[] files = scriptsDirectory.listFiles(new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".txt");
+                return name.toLowerCase(Locale.ENGLISH).endsWith(".txt");
             }
         });
         Arrays.sort(files);

@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -34,7 +35,7 @@ final public class MagicSystem {
         System.setProperty("http.agent", SOFTWARE_TITLE);
     }
 
-    public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
+    public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase(Locale.ENGLISH).startsWith("windows");
     private static final ProgressReporter reporter = new ProgressReporter();
 
     // Load card definitions in the background so that it does not delay the

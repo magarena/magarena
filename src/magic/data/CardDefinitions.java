@@ -411,7 +411,7 @@ public class CardDefinitions {
     private static File[] getSortedMissingScriptFiles() {
         final Path cardsPath = MagicFileSystem.getDataPath(DataPath.SCRIPTS_MISSING);
         final File[] files = cardsPath.toFile().listFiles((dir, name) -> {
-            return name.toLowerCase().endsWith(".txt");
+            return name.toLowerCase(Locale.ENGLISH).endsWith(".txt");
         });
         if (files != null) {
             Arrays.sort(files);

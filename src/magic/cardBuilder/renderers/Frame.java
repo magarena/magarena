@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 import magic.model.MagicColor;
@@ -380,7 +381,7 @@ public class Frame {
         //Check oracle for up to two basic land types
         String oracle = cardDef.getText();
         Collection<MagicColor> basicLandCount = EnumSet.noneOf(MagicColor.class);
-        if (oracle.toLowerCase().contains("search")) {
+        if (oracle.toLowerCase(Locale.ENGLISH).contains("search")) {
             MagicSubType.ALL_BASIC_LANDS.stream().filter(aSubType -> oracle.toLowerCase().contains(aSubType.toString().toLowerCase())).forEach(aSubType -> {
                 for (MagicColor color : MagicColor.values()) {
                     if (color.getLandSubType() == aSubType) {

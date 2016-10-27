@@ -5,6 +5,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import magic.data.GeneralConfig;
 import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
@@ -48,7 +49,7 @@ public class ThemeFactory {
     }
 
     private static Theme getBuiltInTheme(String themeName) {
-        switch (themeName.toLowerCase()) {
+        switch (themeName.toLowerCase(Locale.ENGLISH)) {
             case "wood":
                 return new DefaultTheme("wood", MagicImages.WOOD, MagicImages.MARBLE, Color.BLACK);
             case "granite":

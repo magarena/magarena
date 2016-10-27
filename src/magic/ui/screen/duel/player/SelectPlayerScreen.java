@@ -132,7 +132,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
         Collections.sort(profilesByName, new Comparator<PlayerProfile>() {
             @Override
             public int compare(PlayerProfile o1, PlayerProfile o2) {
-                return o1.getPlayerName().toLowerCase().compareTo(o2.getPlayerName().toLowerCase());
+                return o1.getPlayerName().compareToIgnoreCase(o2.getPlayerName());
             }
         });
         return profilesByName;

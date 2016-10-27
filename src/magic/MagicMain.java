@@ -1,13 +1,13 @@
 package magic;
 
-import magic.utility.ProgressReporter;
-import magic.ui.SplashProgressReporter;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
-
+import java.util.Locale;
 import javax.swing.SwingUtilities;
 
+import magic.utility.ProgressReporter;
+import magic.ui.SplashProgressReporter;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.test.TestGameBuilder;
@@ -106,7 +106,7 @@ public class MagicMain {
 
     private static void parseCommandline(final String[] args) {
         for (String arg : args) {
-            switch (arg.toLowerCase()) {
+            switch (arg.toLowerCase(Locale.ENGLISH)) {
             case "disablelogviewer":
                 GeneralConfig.getInstance().setLogMessagesVisible(false);
                 break;

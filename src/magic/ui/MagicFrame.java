@@ -8,6 +8,7 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.Locale;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.ToolTipManager;
@@ -43,7 +44,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     private boolean confirmQuitToDesktop = true;
 
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
-    public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
+    public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase(Locale.ENGLISH).startsWith("mac os x");
 
     private final MagicFramePanel contentPanel;
     private MagicDuel duel;

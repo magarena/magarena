@@ -17,6 +17,7 @@ import java.net.URLConnection;
 import java.nio.file.Files;
 import java.util.List;
 import java.util.Optional;
+import java.util.Locale;
 import java.util.stream.Stream;
 import javax.activation.MimetypesFileTypeMap;
 
@@ -87,8 +88,8 @@ public class FileDropTargetListener implements DropTargetListener {
             // on Windows, dragging an image from the browser directly
             // returns a mime type of "image" thus the need to check parts.
             final String[] parts = mimeType.split("/");
-            if ("image".equals(parts[0].toLowerCase())) {
-                if (parts.length == 1 || IMAGE_FORMATS.contains(parts[1].toLowerCase())) {
+            if ("image".equalsIgnoreCase(parts[0])) {
+                if (parts.length == 1 || IMAGE_FORMATS.contains(parts[1].toLowerCase(Locale.ENGLISH))) {
                     listener.onImageFileDropped(aFile);
                     return;
                 }
