@@ -27,6 +27,7 @@ import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
+import magic.ui.image.filter.ColorSwapImageFilter;
 import magic.ui.image.filter.GrayScaleImageFilter;
 import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
@@ -270,6 +271,14 @@ final public class ImageHelper {
         g2d.fillRect(0, 0, image.getWidth(), image.getHeight());
         g2d.setComposite(composite);
         g2d.dispose();
+    }
+
+    public static Icon getRecoloredIcon(ImageIcon icon, Color oldColor, Color newColor) {
+        final FilteredImageSource fis = new FilteredImageSource(
+                icon.getImage().getSource(),
+                new ColorSwapImageFilter(oldColor, newColor)
+        );
+        return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
     }
 
     public static Icon getRecoloredIcon(final ImageIcon defaultIcon, final Color newColor) {
