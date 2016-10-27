@@ -183,7 +183,7 @@ public class ImageFrame {
             blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskSmall);
         } else {
             HEIGHT = 360;
-            blend = ResourceManager.newFrame((ResourceManager.tokenImageMaskLarge));
+            blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
         }
         BufferedImage background = ImageHelper.scale(getDefaultBackground(cardDef), WIDTH, HEIGHT);
         BufferedImage symbol = ImageHelper.scale(getDefaultSymbol(cardDef), WIDTH, HEIGHT);
