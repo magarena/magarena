@@ -8,6 +8,8 @@ public enum MagicIcon {
     //
     // ../ui/... icons.
     //
+    CHECKBOX_OFF("ui/checkbox-16.png"),
+    CHECKBOX_ON("ui/checkbox-selected-16.png"),
     ARROWDOWN("ui/w_arrowdown.png"),
     ARROWUP("ui/w_arrowup.png"),
     ARROW_DOWN("ui/w_down.png"),
