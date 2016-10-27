@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
+import java.util.Locale;
 import magic.utility.ProgressReporter;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
@@ -57,7 +58,7 @@ public class UnimplementedParser {
 
     private static void setProperty(final MagicCardDefinition card, final String property, final String value) {
         try {
-            CardProperty.valueOf(property.toUpperCase()).setProperty(card, value);
+            CardProperty.valueOf(property.toUpperCase(Locale.ENGLISH)).setProperty(card, value);
         } catch (IllegalArgumentException e) {
             throw new RuntimeException("unknown card property value \"" + property + "\" = \"" + value + "\"");
         }

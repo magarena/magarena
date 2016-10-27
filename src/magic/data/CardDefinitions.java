@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Scanner;
+import java.util.Locale;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
@@ -90,7 +91,7 @@ public class CardDefinitions {
 
     private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         try {
-            CardProperty.valueOf(property.toUpperCase()).setProperty(card, value);
+            CardProperty.valueOf(property.toUpperCase(Locale.ENGLISH)).setProperty(card, value);
         } catch (IllegalArgumentException e) {
             throw new RuntimeException("unknown card property value \"" + property + "\" = \"" + value + "\"");
         }
