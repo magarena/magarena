@@ -88,8 +88,6 @@ public class ResourceManager {
     public static final BufferedImage gainColorTokenBlendText = getComponent("token/color_blend2.png");
     public static final BufferedImage gainTokenBanner = getComponent("token/hybrid_blend.png");
     public static final BufferedImage gainTokenBannerText = getComponent("token/hybrid_blend2.png");
-    public static final BufferedImage tokenImageBlend = getComponent("token/imagemask.png");
-    public static final BufferedImage tokenImageBlendText = getComponent("token/imagemask2.png");
     public static final BufferedImage artifactLevellerBox = getComponent("leveller/aLeveller.jpg");
     public static final BufferedImage whiteLevellerBox = getComponent("leveller/wLeveller.jpg");
     public static final BufferedImage whiteLandLevellerBox = getComponent("leveller/wlLeveller.jpg");
