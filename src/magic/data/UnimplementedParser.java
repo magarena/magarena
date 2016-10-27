@@ -60,7 +60,7 @@ public class UnimplementedParser {
         try {
             CardProperty.valueOf(property.toUpperCase(Locale.ENGLISH)).setProperty(card, value);
         } catch (IllegalArgumentException e) {
-            throw new RuntimeException("unknown card property value \"" + property + "\" = \"" + value + "\"");
+            throw new RuntimeException("unknown card property value \"" + property + "\" = \"" + value + "\"", e);
         }
     }
 
