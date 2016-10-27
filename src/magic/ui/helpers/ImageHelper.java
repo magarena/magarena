@@ -281,12 +281,14 @@ final public class ImageHelper {
         return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
     }
 
-    public static Icon getRecoloredIcon(final ImageIcon defaultIcon, final Color newColor) {
-        final FilteredImageSource fis = new FilteredImageSource(
-                defaultIcon.getImage().getSource(),
-                new WhiteColorSwapImageFilter(newColor)
-        );
-        return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
+    /**
+     * Converts a white icon to the specified color.
+     *
+     * @deprecated use {@link #getRecoloredIcon(ImageIcon, Color, Color) } instead.
+     */
+    @Deprecated
+    public static Icon getRecoloredIcon(ImageIcon icon, Color newColor) {
+        return getRecoloredIcon(icon, Color.WHITE, newColor);
     }
 
     /**
