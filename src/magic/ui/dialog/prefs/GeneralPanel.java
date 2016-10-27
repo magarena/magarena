@@ -1,13 +1,13 @@
 package magic.ui.dialog.prefs;
 
 import java.awt.event.MouseListener;
-import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.screen.images.download.DirectoryChooser;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -30,12 +30,12 @@ class GeneralPanel extends JPanel {
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
     private final TranslationPanel langPanel;
-    private final JCheckBox splitViewDeckEditorCheckBox;
-    private final JCheckBox previewCardOnSelectCheckBox;
-    private final JCheckBox missingCardDataCheckbox;
+    private final MCheckBox splitViewDeckEditorCheckBox;
+    private final MCheckBox previewCardOnSelectCheckBox;
+    private final MCheckBox missingCardDataCheckbox;
     private final PreferredSizePanel preferredSizePanel;
     private final DirectoryChooser imagesFolderChooser;
-    private final JCheckBox imagesOnDemandCheckbox;
+    private final MCheckBox imagesOnDemandCheckbox;
 
     GeneralPanel(MouseListener aListener) {
 
@@ -51,22 +51,22 @@ class GeneralPanel extends JPanel {
         preferredSizePanel = new PreferredSizePanel(aListener);
         preferredSizePanel.setFocusable(false);
 
-        imagesOnDemandCheckbox = new JCheckBox(MText.get(_S1), config.getImagesOnDemand());
+        imagesOnDemandCheckbox = new MCheckBox(MText.get(_S1), config.getImagesOnDemand());
         imagesOnDemandCheckbox.setToolTipText(MText.get(_S2));
         imagesOnDemandCheckbox.setFocusable(false);
         imagesOnDemandCheckbox.addMouseListener(aListener);
 
-        splitViewDeckEditorCheckBox = new JCheckBox(MText.get(_S57), config.isSplitViewDeckEditor());
+        splitViewDeckEditorCheckBox = new MCheckBox(MText.get(_S57), config.isSplitViewDeckEditor());
         splitViewDeckEditorCheckBox.setToolTipText(MText.get(_S58));
         splitViewDeckEditorCheckBox.setFocusable(false);
         splitViewDeckEditorCheckBox.addMouseListener(aListener);
 
-        previewCardOnSelectCheckBox = new JCheckBox(MText.get(_S59), config.isPreviewCardOnSelect());
+        previewCardOnSelectCheckBox = new MCheckBox(MText.get(_S59), config.isPreviewCardOnSelect());
         previewCardOnSelectCheckBox.setToolTipText(MText.get(_S60));
         previewCardOnSelectCheckBox.setFocusable(false);
         previewCardOnSelectCheckBox.addMouseListener(aListener);
 
-        missingCardDataCheckbox = new JCheckBox(MText.get(_S61), config.showMissingCardData());
+        missingCardDataCheckbox = new MCheckBox(MText.get(_S61), config.showMissingCardData());
         missingCardDataCheckbox.setToolTipText(MText.get(_S62));
         missingCardDataCheckbox.setFocusable(false);
         missingCardDataCheckbox.addMouseListener(aListener);
@@ -80,12 +80,12 @@ class GeneralPanel extends JPanel {
         add(getCaptionLabel(MText.get(MText.get(_S83))), "gaptop 10");
         add(imagesFolderChooser, "w 100%");
         add(preferredSizePanel, "w 100%");
-        add(imagesOnDemandCheckbox);
+        add(imagesOnDemandCheckbox.component());
         // explorer & editor
         add(getCaptionLabel(MText.get(_S64)), "gaptop 10");
-        add(splitViewDeckEditorCheckBox);
-        add(previewCardOnSelectCheckBox);
-        add(missingCardDataCheckbox);
+        add(splitViewDeckEditorCheckBox.component());
+        add(previewCardOnSelectCheckBox.component());
+        add(missingCardDataCheckbox.component());
     }
 
     void saveSettings() {

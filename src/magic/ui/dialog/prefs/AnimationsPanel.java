@@ -2,11 +2,11 @@ package magic.ui.dialog.prefs;
 
 import java.awt.Component;
 import java.awt.event.MouseListener;
-import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
+import magic.ui.widget.M.MCheckBox;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -25,7 +25,7 @@ class AnimationsPanel extends JPanel {
 
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private final JCheckBox animateCheckBox;
+    private final MCheckBox animateCheckBox;
     private final JPanel subPanel;
     private final AnimationFlagsPanel flagsPanel;
     private final SliderPanel landPreviewSlider;
@@ -42,7 +42,7 @@ class AnimationsPanel extends JPanel {
         animateCheckBox = getAnimateCheckbox(aListener, subPanel);
 
         setLayout(new MigLayout("flowy, insets 16, gapy 6"));
-        add(animateCheckBox);
+        add(animateCheckBox.component());
         add(subPanel, "w 100%");
 
     }
@@ -53,8 +53,8 @@ class AnimationsPanel extends JPanel {
         return panel;
     }
 
-    private JCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
-        final JCheckBox cb = new JCheckBox(MText.get(_S70), CONFIG.getAnimateGameplay());
+    private MCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
+        final MCheckBox cb = new MCheckBox(MText.get(_S70), CONFIG.getAnimateGameplay());
         cb.setToolTipText(MText.get(_S71));
         cb.setFocusable(false);
         cb.addMouseListener(aListener);

@@ -4,17 +4,17 @@ import java.awt.Component;
 import java.awt.event.MouseListener;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.translate.MText;
+import magic.ui.widget.M.MCheckBox;
 import magic.ui.widget.duel.animation.AnimationFx;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class AnimationFlagsPanel extends JPanel {
 
-    private final Map<Long, JCheckBox> cbMap = new LinkedHashMap<>();
+    private final Map<Long, MCheckBox> cbMap = new LinkedHashMap<>();
     private final MouseListener listener;
 
     private static final String _S1 = "Draw card from library";
@@ -54,13 +54,13 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.CARD_FADEIN, MText.asHtml(_S14), MText.get(_S15));
 
         setLayout(new MigLayout("flowx, wrap 2, insets 0, gapy 6, gapx 10"));
-        for (JCheckBox cb : cbMap.values()) {
-            add(cb, "aligny top");
+        for (MCheckBox cb : cbMap.values()) {
+            add(cb.component(), "aligny top");
         }
     }
 
     private void createCheckBox(long flag, String caption, String tooltip) {
-        final JCheckBox cb = new JCheckBox(caption, AnimationFx.isOn(flag));
+        final MCheckBox cb = new MCheckBox(caption, AnimationFx.isOn(flag));
         cb.setToolTipText(tooltip);
         cb.addMouseListener(listener);
         cb.setVerticalTextPosition(SwingConstants.TOP);

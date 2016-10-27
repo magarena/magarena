@@ -6,6 +6,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;
+import javax.swing.event.ChangeListener;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.helpers.ImageHelper;
@@ -71,6 +72,14 @@ public class MCheckBox extends MWidget {
 
     public boolean isSelected() {
         return cb.isSelected();
+    }
+
+    public void setVerticalTextPosition(int i) {
+        cb.setVerticalTextPosition(i);
+    }
+
+    public void addChangeListener(ChangeListener l) {
+        cb.addChangeListener(l);
     }
 
 }

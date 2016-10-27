@@ -5,7 +5,6 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.MouseListener;
 import javax.swing.BorderFactory;
-import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
@@ -17,6 +16,7 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.ColorButton;
+import magic.ui.widget.M.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -36,8 +36,8 @@ class ThemesPanel extends JPanel
     private static final String READONLY_COLOR_TIP = String.format("<b>%s</b><br>%s", MText.get(_S1), MText.get(_S2));
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private final JCheckBox cbCustomScrollbar;
-    private final JCheckBox customBackgroundCheckBox;
+    private final MCheckBox cbCustomScrollbar;
+    private final MCheckBox customBackgroundCheckBox;
     private final ColorButton rollOverColorButton;
     private final ThemesComboBox themeComboBox;
     
@@ -55,21 +55,22 @@ class ThemesPanel extends JPanel
         themeComboBox.addItemListener(this);
         themeComboBox.setSelectedItem(selectedTheme.getName());
 
-        customBackgroundCheckBox = new JCheckBox(MText.get(_S5), CONFIG.isCustomBackground());
+        customBackgroundCheckBox = new MCheckBox(MText.get(_S5), CONFIG.isCustomBackground());
         customBackgroundCheckBox.setToolTipText(MText.get(_S4));
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(aListener);
 
-        cbCustomScrollbar = new JCheckBox(MText.get(_S7), CONFIG.isCustomScrollBar());
+        cbCustomScrollbar = new MCheckBox(MText.get(_S7), CONFIG.isCustomScrollBar());
         cbCustomScrollbar.setToolTipText(MText.get(_S8));
         cbCustomScrollbar.setFocusable(false);
         cbCustomScrollbar.addMouseListener(aListener);
         cbCustomScrollbar.addItemListener(this);
 
-        setLayout(new MigLayout("flowy, insets 16, gapy 10", "[fill, grow]"));
+
+        setLayout(new MigLayout("flowy, insets 16, gapy 12", "[fill, grow]"));
         add(getThemeLayoutPanel(aListener));
-        add(customBackgroundCheckBox);
-        add(cbCustomScrollbar);
+        add(customBackgroundCheckBox.component());
+        add(cbCustomScrollbar.component());
     }
 
     private void setTheme(Theme aTheme) {

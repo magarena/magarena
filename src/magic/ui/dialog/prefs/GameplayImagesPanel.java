@@ -1,12 +1,12 @@
 package magic.ui.dialog.prefs;
 
 import java.awt.event.MouseListener;
-import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
+import magic.ui.widget.M.MCheckBox;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,9 +29,9 @@ class GameplayImagesPanel extends JPanel {
 
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private final JCheckBox mouseWheelPopupCheckBox;
+    private final MCheckBox mouseWheelPopupCheckBox;
     private final SliderPanel popupDelaySlider;
-    private final JCheckBox pauseGamePopupCheckBox;
+    private final MCheckBox pauseGamePopupCheckBox;
     private final JComboBox<String> highlightComboBox;
 
     GameplayImagesPanel(final MouseListener aListener) {
@@ -50,7 +50,7 @@ class GameplayImagesPanel extends JPanel {
         highlightComboBox.setFocusable(false);
         highlightComboBox.addMouseListener(aListener);
 
-        mouseWheelPopupCheckBox = new JCheckBox(MText.get(_S28), CONFIG.isMouseWheelPopup());
+        mouseWheelPopupCheckBox = new MCheckBox(MText.get(_S28), CONFIG.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
         mouseWheelPopupCheckBox.setToolTipText(MText.get(_S29));
         mouseWheelPopupCheckBox.addMouseListener(aListener);
@@ -59,7 +59,7 @@ class GameplayImagesPanel extends JPanel {
         popupDelaySlider.setToolTipText(MText.get(_S31));
         popupDelaySlider.addMouseListener(aListener);
 
-        pauseGamePopupCheckBox = new JCheckBox(MText.get(_S34), CONFIG.isGamePausedOnPopup());
+        pauseGamePopupCheckBox = new MCheckBox(MText.get(_S34), CONFIG.isGamePausedOnPopup());
         pauseGamePopupCheckBox.setFocusable(false);
         pauseGamePopupCheckBox.setToolTipText(MText.get(_S35));
         pauseGamePopupCheckBox.addMouseListener(aListener);
@@ -67,8 +67,8 @@ class GameplayImagesPanel extends JPanel {
         setLayout(new MigLayout("flowx, wrap 2, insets 16, gapy 10"));
         add(highlightLabel);
         add(highlightComboBox);
-        add(pauseGamePopupCheckBox, "spanx 2");
-        add(mouseWheelPopupCheckBox, "spanx 2");
+        add(pauseGamePopupCheckBox.component(), "spanx 2");
+        add(mouseWheelPopupCheckBox.component(), "spanx 2");
         add(popupDelaySlider, "w 100%, spanx 2");
     }
 

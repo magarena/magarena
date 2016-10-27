@@ -16,7 +16,6 @@ import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
@@ -46,6 +45,7 @@ import magic.ui.widget.SliderPanel;
 import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
+import magic.ui.widget.M.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -93,15 +93,15 @@ public class PreferencesDialog
     private final JComboBox<Proxy.Type> proxyComboBox = new JComboBox<>();
     private final JTextField proxyAddressTextField = new JTextField();
     private final JSpinner proxyPortSpinner = new JSpinner(new SpinnerNumberModel());
-    private JCheckBox touchscreenCheckBox;
-    private JCheckBox skipSingleCheckBox;
-    private JCheckBox alwaysPassCheckBox;
-    private JCheckBox smartTargetCheckBox;
+    private MCheckBox touchscreenCheckBox;
+    private MCheckBox skipSingleCheckBox;
+    private MCheckBox alwaysPassCheckBox;
+    private MCheckBox smartTargetCheckBox;
     private SliderPanel messageDelaySlider;
     private JButton saveButton;
     private JButton cancelButton;
-    private JCheckBox mulliganScreenCheckbox;
-    private JCheckBox hideAIPromptCheckBox;
+    private MCheckBox mulliganScreenCheckbox;
+    private MCheckBox hideAIPromptCheckBox;
 
     private final GeneralPanel generalPanel;
     private final AnimationsPanel animationsPanel;
@@ -238,7 +238,7 @@ public class PreferencesDialog
         return String.format("<html>%s</html>", text);
     }
 
-    private void setButtonPropertyDefaults(final AbstractButton btn) {
+    private void setButtonPropertyDefaults(MCheckBox btn) {
         btn.setFocusable(false);
         btn.setVerticalTextPosition(SwingConstants.TOP);
         btn.addMouseListener(this);
@@ -246,24 +246,24 @@ public class PreferencesDialog
 
     private JScrollPane getGameplaySettingsPanel1() {
 
-        hideAIPromptCheckBox = new JCheckBox(getAsHtml(MText.get(_S15)), config.getHideAiActionPrompt());
+        hideAIPromptCheckBox = new MCheckBox(getAsHtml(MText.get(_S15)), config.getHideAiActionPrompt());
         hideAIPromptCheckBox.setToolTipText(MText.get(_S16));
         setButtonPropertyDefaults(hideAIPromptCheckBox);
 
-        mulliganScreenCheckbox = new JCheckBox(getAsHtml(MText.get(_S17)), config.getMulliganScreenActive());
+        mulliganScreenCheckbox = new MCheckBox(getAsHtml(MText.get(_S17)), config.getMulliganScreenActive());
         setButtonPropertyDefaults(mulliganScreenCheckbox);
 
-        touchscreenCheckBox = new JCheckBox(getAsHtml(MText.get(_S20)), config.isTouchscreen());
+        touchscreenCheckBox = new MCheckBox(getAsHtml(MText.get(_S20)), config.isTouchscreen());
         setButtonPropertyDefaults(touchscreenCheckBox);
 
-        skipSingleCheckBox = new JCheckBox(getAsHtml(MText.get(_S21)), config.getSkipSingle());
+        skipSingleCheckBox = new MCheckBox(getAsHtml(MText.get(_S21)), config.getSkipSingle());
         skipSingleCheckBox.setToolTipText(MText.get(_S22));
         setButtonPropertyDefaults(skipSingleCheckBox);
 
-        alwaysPassCheckBox = new JCheckBox(getAsHtml(MText.get(_S23)), config.getAlwaysPass());
+        alwaysPassCheckBox = new MCheckBox(getAsHtml(MText.get(_S23)), config.getAlwaysPass());
         setButtonPropertyDefaults(alwaysPassCheckBox);
 
-        smartTargetCheckBox = new JCheckBox(getAsHtml(MText.get(_S24)), config.getSmartTarget());
+        smartTargetCheckBox = new MCheckBox(getAsHtml(MText.get(_S24)), config.getSmartTarget());
         smartTargetCheckBox.setToolTipText(MText.get(_S25));
         setButtonPropertyDefaults(smartTargetCheckBox);
 
@@ -274,12 +274,12 @@ public class PreferencesDialog
         final ScrollablePanel panel = new ScrollablePanel(new MigLayout("flowy, insets 16, gapy 10"));
         panel.setScrollableWidth(ScrollablePanel.ScrollableSizeHint.FIT);
 
-        panel.add(hideAIPromptCheckBox);
-        panel.add(mulliganScreenCheckbox);
-        panel.add(touchscreenCheckBox);
-        panel.add(skipSingleCheckBox);
-        panel.add(alwaysPassCheckBox);
-        panel.add(smartTargetCheckBox);
+        panel.add(hideAIPromptCheckBox.component());
+        panel.add(mulliganScreenCheckbox.component());
+        panel.add(touchscreenCheckBox.component());
+        panel.add(skipSingleCheckBox.component());
+        panel.add(alwaysPassCheckBox.component());
+        panel.add(smartTargetCheckBox.component());
         panel.add(messageDelaySlider, "w 100%");
 
         final JScrollPane scroller = new JScrollPane(panel);
