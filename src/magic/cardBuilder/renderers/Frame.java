@@ -382,7 +382,7 @@ public class Frame {
         String oracle = cardDef.getText();
         Collection<MagicColor> basicLandCount = EnumSet.noneOf(MagicColor.class);
         if (oracle.toLowerCase(Locale.ENGLISH).contains("search")) {
-            MagicSubType.ALL_BASIC_LANDS.stream().filter(aSubType -> oracle.toLowerCase().contains(aSubType.toString().toLowerCase())).forEach(aSubType -> {
+            MagicSubType.ALL_BASIC_LANDS.stream().filter(aSubType -> oracle.toLowerCase(Locale.ENGLISH).contains(aSubType.toString().toLowerCase(Locale.ENGLISH))).forEach(aSubType -> {
                 for (MagicColor color : MagicColor.values()) {
                     if (color.getLandSubType() == aSubType) {
                         basicLandCount.add(color);
