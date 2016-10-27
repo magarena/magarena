@@ -2,13 +2,17 @@ package magic.ui.dialog.prefs;
 
 import java.awt.Cursor;
 import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.MouseListener;
+import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
+import magic.ui.ScreenController;
+import magic.ui.helpers.LaFHelper;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
@@ -16,23 +20,29 @@ import magic.ui.widget.ColorButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ThemesPanel extends JPanel {
+class ThemesPanel extends JPanel
+    implements ItemListener {
 
     // translatable strings.
     private static final String _S1 = "This color is read-only.";
     private static final String _S2 = "Please remove 'color_mouseover' from the 'theme.properties' file to enable color selection.";
     private static final String _S3 = "This is the default color as 'color_mouseover' is not defined in the 'theme.properties' file.";
-    private static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
-    private static final String _S49 = "custom background";
-    private static final String _S51 = "highlight color";
+    private static final String _S4 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
+    private static final String _S5 = "Custom background";
+    private static final String _S6 = "Highlight color";
+    private static final String _S7 = "Custom scrollbar";
+    private static final String _S8 = "Minimalist style that fits better with the intended UI look and feel.";
 
     private static final String READONLY_COLOR_TIP = String.format("<b>%s</b><br>%s", MText.get(_S1), MText.get(_S2));
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
+    private final JCheckBox cbCustomScrollbar;
     private final JCheckBox customBackgroundCheckBox;
     private final ColorButton rollOverColorButton;
     private final ThemesComboBox themeComboBox;
+    
     private Theme selectedTheme = ThemeFactory.getInstance().getCurrentTheme();
+    private boolean refreshLAF = false;
 
     ThemesPanel(MouseListener aListener) {
 
@@ -42,30 +52,24 @@ class ThemesPanel extends JPanel {
 
         themeComboBox = new ThemesComboBox();
         themeComboBox.setFocusable(false);
-        themeComboBox.addItemListener((ItemEvent e) -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                SwingUtilities.invokeLater(() -> {
-                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    if (getSelectedThemeName().equals(selectedTheme.getName())) {
-                        setTheme(selectedTheme);
-                    } else {
-                        setTheme(ThemeFactory.getInstance().loadTheme(getSelectedThemeName()));
-                    }
-                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                });
-            }
-        });
+        themeComboBox.addItemListener(this);
         themeComboBox.setSelectedItem(selectedTheme.getName());
 
-        customBackgroundCheckBox = new JCheckBox("", CONFIG.isCustomBackground());
-        customBackgroundCheckBox.setToolTipText(MText.get(_S47));
+        customBackgroundCheckBox = new JCheckBox(MText.get(_S5), CONFIG.isCustomBackground());
+        customBackgroundCheckBox.setToolTipText(MText.get(_S4));
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(aListener);
 
-        setLayout(new MigLayout("flowx, wrap 2, insets 16, gapy 0"));
-        add(themeComboBox, "w 100%");
-        add(new ThemesActionPanel(this, aListener));
-        add(getSettingsPanel(), "w 100%, h 100%, spanx 2");
+        cbCustomScrollbar = new JCheckBox(MText.get(_S7), CONFIG.isCustomScrollBar());
+        cbCustomScrollbar.setToolTipText(MText.get(_S8));
+        cbCustomScrollbar.setFocusable(false);
+        cbCustomScrollbar.addMouseListener(aListener);
+        cbCustomScrollbar.addItemListener(this);
+
+        setLayout(new MigLayout("flowy, insets 16, gapy 10", "[fill, grow]"));
+        add(getThemeLayoutPanel(aListener));
+        add(customBackgroundCheckBox);
+        add(cbCustomScrollbar);
     }
 
     private void setTheme(Theme aTheme) {
@@ -79,26 +83,60 @@ class ThemesPanel extends JPanel {
         }
     }
 
-    private JPanel getSettingsPanel() {
-        JPanel panel = new JPanel();
-        panel.setLayout(new MigLayout("flowx, wrap 2"));
+    private JPanel getThemeLayoutPanel(MouseListener aListener) {
+        JPanel panel = new JPanel(new MigLayout("wrap 3, insets 0 0 10 0",
+            "[][grow][]"));
+        panel.add(themeComboBox, "spanx 2, w 100%");
+        panel.add(new ThemesActionPanel(this, aListener));
         panel.add(rollOverColorButton, "w 24!");
-        panel.add(new JLabel(MText.get(_S51)));
-        panel.add(customBackgroundCheckBox, "w 24!");
-        panel.add(new JLabel(MText.get(_S49)));
+        panel.add(new JLabel(MText.get(_S6)), "spanx 2");
+        panel.setBorder(BorderFactory.createMatteBorder(
+                0, 0, 1, 0, getBackground().darker()));
         return panel;
     }
 
+    private void refreshLAF() {
+        if (refreshLAF) {
+            refreshLAF = false;
+            LaFHelper.setDefaultLookAndFeel();
+            SwingUtilities.updateComponentTreeUI(ScreenController.getFrame());
+        }
+    }
+
     void saveSettings() {
+        CONFIG.setCustomScrollBar(cbCustomScrollbar.isSelected());
         CONFIG.setTheme(getSelectedThemeName());
         CONFIG.setCustomBackground(customBackgroundCheckBox.isSelected());
         if (!selectedTheme.hasValue(Theme.COLOR_MOUSEOVER)) {
             CONFIG.setRolloverColor(rollOverColorButton.getColor());
         }
+        refreshLAF();
     }
 
     String getSelectedThemeName() {
         return themeComboBox.getItemAt(themeComboBox.getSelectedIndex());
+    }
+
+    private void doThemeItemStateChanged(ItemEvent e) {
+        if (e.getStateChange() == ItemEvent.SELECTED) {
+            SwingUtilities.invokeLater(() -> {
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                if (getSelectedThemeName().equals(selectedTheme.getName())) {
+                    setTheme(selectedTheme);
+                } else {
+                    setTheme(ThemeFactory.getInstance().loadTheme(getSelectedThemeName()));
+                }
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            });
+        }
+    }
+
+    @Override
+    public void itemStateChanged(ItemEvent e) {
+        refreshLAF = true;
+        if (e.getSource() == themeComboBox) {
+            doThemeItemStateChanged(e);
+        }
     }
 
 }

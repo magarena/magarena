@@ -725,6 +725,10 @@ public class GeneralConfig {
         frameHeight = aSize.height;
     }
 
+    public void setCustomScrollBar(boolean b) {
+        isCustomScrollBar = b;
+    }
+
     public boolean isCustomScrollBar() {
         return isCustomScrollBar;
     }
