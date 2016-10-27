@@ -284,9 +284,8 @@ final public class ImageHelper {
     /**
      * Converts a white icon to the specified color.
      *
-     * @deprecated use {@link #getRecoloredIcon(ImageIcon, Color, Color) } instead.
+     * Recommend use {@link #getRecoloredIcon(ImageIcon, Color, Color) } instead.
      */
-    @Deprecated
     public static Icon getRecoloredIcon(ImageIcon icon, Color newColor) {
         return getRecoloredIcon(icon, Color.WHITE, newColor);
     }
