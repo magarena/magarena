@@ -14,16 +14,16 @@ import magic.ui.helpers.ImageHelper;
 @SuppressWarnings("serial")
 public class MCheckBox extends MWidget {
 
-    public static final ImageIcon OFF_ICON =
+    private static final ImageIcon OFF_ICON =
             MagicImages.getIcon(MagicIcon.CHECKBOX_OFF);
 
-    public static final ImageIcon ON_ICON =
+    private static final ImageIcon ON_ICON =
             MagicImages.getIcon(MagicIcon.CHECKBOX_ON);
 
-    public static final Icon DISABLED_OFF_ICON =
+    private static final Icon DISABLED_OFF_ICON =
             ImageHelper.getRecoloredIcon(OFF_ICON, Color.BLACK, Color.GRAY);
 
-    public static final Icon DISABLED_ON_ICON =
+    private static final Icon DISABLED_ON_ICON =
             ImageHelper.getRecoloredIcon(ON_ICON, Color.BLACK, Color.GRAY);
 
     private final JCheckBox cb = new JCheckBox();
