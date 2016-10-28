@@ -28,15 +28,6 @@ public class MCheckBox extends MWidget {
 
     private final JCheckBox cb = new JCheckBox();
 
-    public MCheckBox() {
-        setIcons();
-    }
-
-    public MCheckBox(String text) {
-        cb.setText(text);
-        setIcons();
-    }
-
     public MCheckBox(String text, boolean selected) {
         cb.setText(text);
         cb.setSelected(selected);
