@@ -26,4 +26,7 @@ public abstract class MWidget {
         component().addMouseListener(ml);
     }
 
+    public void setFocusable(boolean b) {
+        component().setFocusable(b);
+    }
 }

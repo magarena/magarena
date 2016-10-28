@@ -152,10 +152,6 @@ public class MFileLink extends MWidget {
         label.setVisible(b);
     }
 
-    public void setFocusable(boolean b) {
-        label.setFocusable(b);
-    }
-
     public void setBorder(Border aBorder) {
         label.setBorder(aBorder);
     }

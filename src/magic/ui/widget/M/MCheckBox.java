@@ -62,10 +62,6 @@ public class MCheckBox extends MWidget {
     //
     // JCheckBox delegates
     //
-    public void setFocusable(boolean b) {
-        cb.setFocusable(b);
-    }
-
     public void addItemListener(ItemListener l) {
         cb.addItemListener(l);
     }
