@@ -29,6 +29,8 @@ import java.util.stream.Stream;
 
 import groovy.lang.GroovyShell;
 import groovy.transform.CompileStatic;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
@@ -476,7 +478,12 @@ public class CardDefinitions {
 
     private static List<String> loadCardsSnapshotFile() {
         if (CARDS_SNAPSHOT_FILE.exists()) {
-            return MagicFileSystem.deserializeStringList(CARDS_SNAPSHOT_FILE);
+            try {
+                return MagicFileSystem.deserializeStringList(CARDS_SNAPSHOT_FILE);
+            } catch (Exception ex) {
+                Logger.getLogger(CardDefinitions.class.getName()).log(Level.WARNING, null, ex);
+                return new ArrayList<>();
+            }
         } else {
             saveCardsSnapshotFile();
             return new ArrayList<>();
