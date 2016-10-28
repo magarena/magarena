@@ -379,16 +379,19 @@ public class Frame {
             }
         });
         //Check oracle for up to two basic land types
-        String oracle = cardDef.getText();
+        String oracle = cardDef.getText().toLowerCase(Locale.ENGLISH);
         Collection<MagicColor> basicLandCount = EnumSet.noneOf(MagicColor.class);
-        if (oracle.toLowerCase(Locale.ENGLISH).contains("search")) {
-            MagicSubType.ALL_BASIC_LANDS.stream().filter(aSubType -> oracle.toLowerCase(Locale.ENGLISH).contains(aSubType.toString().toLowerCase(Locale.ENGLISH))).forEach(aSubType -> {
-                for (MagicColor color : MagicColor.values()) {
-                    if (color.getLandSubType() == aSubType) {
-                        basicLandCount.add(color);
+        if (oracle.contains("search")) {
+            MagicSubType.ALL_BASIC_LANDS
+                .stream()
+                .filter(aSubType -> oracle.contains(aSubType.toString().toLowerCase(Locale.ENGLISH)))
+                .forEach(aSubType -> {
+                    for (MagicColor color : MagicColor.values()) {
+                        if (color.getLandSubType() == aSubType) {
+                            basicLandCount.add(color);
+                        }
                     }
-                }
-            });
+                });
         }
         if (!basicLandCount.isEmpty() && basicLandCount.size() <= 2) {
             landColor.addAll(basicLandCount);
