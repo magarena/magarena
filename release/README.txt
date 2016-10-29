@@ -95,13 +95,14 @@ commit 4311952ba6f7f6bf551fe0003eaf28afd162db1e
 - play BEEP sound on showWarningMessage().
 - avatar sets sorted properly in linux.
 
+- add cardbuilder to rendering of permanents (English language with cropped images only)
+  * Permanent color, type, subtype and pt changes are displayed in-game
+  * Token copies of permanents display token frames
+    
     reduce updates by only updating between events if the next one has a choice
     Update card lists to contain Ae instead of Æ
     support use of AE ligature in dec files during transition
     update formats to include KLD and rotate Standard
-    add cardbuilder to rendering of permanents
-      allow IRenderable card to take a permanent's current subtypes
-    enable images for token permanents
 
 - added the following to the card script:
     support create token phrasing
