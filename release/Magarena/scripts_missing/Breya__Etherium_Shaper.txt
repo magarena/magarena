@@ -1,0 +1,12 @@
+name=Breya, Etherium Shaper
+image=http://magiccards.info/scans/en/c16/29.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact,Creature
+subtype=Human
+cost={W}{U}{B}{R}
+pt=4/4
+ability=When SN enters the battlefield, create two 1/1 blue Thopter artifact creature tokens with flying.;\
+        {2}, Sacrifice two artifacts: Choose one — (1) SN deals 3 damage to target player. (2) Target creature gets -4/-4 until end of turn. (3) You gain 5 life.
+timing=main
+oracle=When Breya, Etherium Shaper enters the battlefield, create two 1/1 blue Thopter artifact creature tokens with flying.\n{2}, Sacrifice two artifacts: Choose one —\n• Breya deals 3 damage to target player.\n• Target creature gets -4/-4 until end of turn.\n• You gain 5 life.

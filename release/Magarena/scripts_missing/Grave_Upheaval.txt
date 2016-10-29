@@ -1,0 +1,10 @@
+name=Grave Upheaval
+image=http://magiccards.info/scans/en/c16/31.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{B}{R}
+ability=Basic landcycling {2}
+effect=Put target creature card from a graveyard onto the battlefield under your control. It gains haste.
+timing=main
+oracle=Put target creature card from a graveyard onto the battlefield under your control. It gains haste.\nBasic landcycling {2}

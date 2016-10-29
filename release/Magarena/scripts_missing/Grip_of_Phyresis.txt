@@ -1,0 +1,9 @@
+name=Grip of Phyresis
+image=http://magiccards.info/scans/en/c16/9.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Gain control of target Equipment, then create a 0/0 black Germ creature token and attach that Equipment to it.
+timing=token
+oracle=Gain control of target Equipment, then create a 0/0 black Germ creature token and attach that Equipment to it.

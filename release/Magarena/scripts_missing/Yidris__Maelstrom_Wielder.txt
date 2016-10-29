@@ -1,0 +1,12 @@
+name=Yidris, Maelstrom Wielder
+image=http://magiccards.info/scans/en/c16/50.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Ogre,Wizard
+cost={U}{B}{R}{G}
+pt=5/4
+ability=Trample;\
+        Whenever SN deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.
+timing=main
+oracle=Trample\nWhenever SN deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.

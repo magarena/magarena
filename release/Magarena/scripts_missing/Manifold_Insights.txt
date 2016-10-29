@@ -1,0 +1,9 @@
+name=Manifold Insights
+image=http://magiccards.info/scans/en/c16/10.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{U}
+effect=Reveal the top ten cards of your library. Starting with the next opponent in turn order, each opponent chooses a different nonland card from among them. Put the chosen cards into your hand and the rest on the bottom of your library in a random order.
+timing=draw
+oracle=Reveal the top ten cards of your library. Starting with the next opponent in turn order, each opponent chooses a different nonland card from among them. Put the chosen cards into your hand and the rest on the bottom of your library in a random order.

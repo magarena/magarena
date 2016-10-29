@@ -1,0 +1,9 @@
+name=Benefactor's Draught
+image=http://magiccards.info/scans/en/c16/21.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{G}
+effect=Untap all creatures. Until end of turn, whenever a creature an opponent controls blocks, draw a card. Draw a card.
+timing=main
+oracle=Untap all creatures. Until end of turn, whenever a creature an opponent controls blocks, draw a card.\nDraw a card.

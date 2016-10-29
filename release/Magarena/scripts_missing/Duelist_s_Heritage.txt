@@ -1,0 +1,9 @@
+name=Duelist's Heritage
+image=http://magiccards.info/scans/en/c16/1.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=Whenever one or more creatures attack, you may have target attacking creature gain double strike until end of turn.
+timing=main
+oracle=Whenever one or more creatures attack, you may have target attacking creature gain double strike until end of turn.

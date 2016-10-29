@@ -1,0 +1,10 @@
+name=Treacherous Terrain
+image=http://magiccards.info/scans/en/c16/47.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={6}{R}{G}
+ability=Basic landcycling {2}
+effect=SN deals damage to each opponent equal to the number of lands that player controls.
+timing=main
+oracle=Treacherous Terrain deals damage to each opponent equal to the number of lands that player controls.\nBasic landcycling {2}

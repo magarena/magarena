@@ -1,0 +1,9 @@
+name=Ash Barrens
+image=http://magiccards.info/scans/en/c16/56.jpg
+value=2.500
+rarity=C
+type=Land
+ability={T}: Add {C} to your mana pool.;\
+        Basic landcycling {1}
+timing=land
+oracle={T}: Add {C} to your mana pool.\nBasic landcycling {1}

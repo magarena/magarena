@@ -1,0 +1,10 @@
+name=Sublime Exhalation
+image=http://magiccards.info/scans/en/c16/5.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={6}{W}
+ability=Undaunted
+effect=Destroy all creatures.
+timing=removal
+oracle=Undaunted\nDestroy all creatures.

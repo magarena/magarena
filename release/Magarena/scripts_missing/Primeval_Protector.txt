@@ -1,0 +1,12 @@
+name=Primeval Protector
+image=http://magiccards.info/scans/en/c16/23.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Avatar
+cost={10}{G}
+pt=10/10
+ability=SN costs {1} less to cast for each creature your opponents control.;\
+        When SN enters the battlefield, put a +1/+1 counter on each other creature you control.
+timing=main
+oracle=Primeval Protector costs {1} less to cast for each creature your opponents control.\nWhen Primeval Protector enters the battlefield, put a +1/+1 counter on each other creature you control.

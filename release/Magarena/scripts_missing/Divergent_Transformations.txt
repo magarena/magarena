@@ -1,0 +1,10 @@
+name=Divergent Transformations
+image=http://magiccards.info/scans/en/c16/17.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={6}{R}
+ability=Undaunted
+effect=Exile two target creatures. For each of those creatures, its controller reveals cards from the top of his or her library until he or she reveals a creature card, puts that card onto the battlefield, then shuffles the rest into his or her library.
+timing=removal
+oracle=Undaunted\nExile two target creatures. For each of those creatures, its controller reveals cards from the top of his or her library until he or she reveals a creature card, puts that card onto the battlefield, then shuffles the rest into his or her library.

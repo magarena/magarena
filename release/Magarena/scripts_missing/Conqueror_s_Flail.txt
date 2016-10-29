@@ -1,0 +1,12 @@
+name=Conqueror's Flail
+image=http://magiccards.info/scans/en/c16/53.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +1/+1 for each color among permanents you control.;\
+        As long as SN is attached to a creature, your opponent's can't cast spells during your turn.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature gets +1/+1 for each color among permanents you control.\nAs long as Conqueror's Flail is attached to a creature, your opponent's can't cast spells during your turn.\nEquip {2}

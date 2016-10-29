@@ -1,0 +1,9 @@
+name=Entrapment Maneuver
+image=http://magiccards.info/scans/en/c16/2.jpg
+value=2.500
+rarity=R
+type=instant
+cost={3}{W}
+effect=Target player sacrifices an attacking creature. You create X 1/1 white Soldier creature tokens, where X is that creature's toughness.
+timing=attack
+oracle=Target player sacrifices an attacking creature. You create X 1/1 white Soldier creature tokens, where X is that creature's toughness.

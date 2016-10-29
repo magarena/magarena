@@ -1,0 +1,13 @@
+name=Ikra Shidiqi, the Usurper
+image=http://magiccards.info/scans/en/c16/32.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Naga,Wizard
+cost={3}{B}{G}
+pt=3/7
+ability=Menace;\
+        Whenever a creature you control deals combat damage to a player, you gain life equal to that creature's toughness.;\
+        Partner
+timing=main
+oracle=Menace\nWhenever a creature you control deals combat damage to a player, you gain life equal to that creature's toughness.\nPartner

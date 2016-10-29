@@ -1,0 +1,13 @@
+name=Akiri, Line-Slinger
+image=http://magiccards.info/scans/en/c16/26.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Kor, Soldier, Ally
+cost={R}{W}
+pt=0/3
+ability=First strike, vigilance;\
+        SN gets +1/+0 for each artifact you control.;\
+        Partner
+timing=main
+oracle=First strike, vigilance\nAkiri, Line-Slinger gets +1/+0 for each artifact you control.\nPartner

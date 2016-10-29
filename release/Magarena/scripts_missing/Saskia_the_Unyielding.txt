@@ -1,0 +1,13 @@
+name=Saskia the Unyielding
+image=http://magiccards.info/scans/en/c16/41.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={B}{R}{G}{W}
+pt=3/4
+ability=Vigilance, haste;\
+        As SN enters the battlefield, choose a player.;\
+        Whenever a creature you control deals combat damage to a player, it deals that much damage to the chosen player.
+timing=main
+oracle=Vigilance, haste\nAs Saskia the Unyielding enters the battlefield, choose a player.\nWhenever a creature you control deals combat damage to a player, it deals that much damage to the chosen player.

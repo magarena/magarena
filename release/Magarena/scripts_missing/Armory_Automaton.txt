@@ -1,0 +1,11 @@
+name=Armory Automaton
+image=http://magiccards.info/scans/en/c16/51.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=2/2
+ability=Whenever SN enters the battlefield or attacks, you may attach any number of target Equipment to it.
+timing=main
+oracle=Whenever Armory Automaton enters the battlefield or attacks, you may attach any number of target Equipment to it.

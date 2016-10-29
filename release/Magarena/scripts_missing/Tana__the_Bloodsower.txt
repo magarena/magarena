@@ -1,0 +1,13 @@
+name=Tana, the Bloodsower
+image=http://magiccards.info/scans/en/c16/45.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elf,Druid
+cost={2}{R}{G}
+pt=2/2
+ability=Trample;\
+        Whenever SN deals combat damage to a player, create that many 1/1 green Saproling creature tokens.;\
+        Partner
+timing=main
+oracle=Trample\nWhenever Tana, the Bloodsower deals combat damage to a player, create that many 1/1 green Saproling creature tokens.\nPartner

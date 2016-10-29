@@ -1,0 +1,12 @@
+name=Vial Smasher the Fierce
+image=http://magiccards.info/scans/en/c16/49.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Goblin,Berserker
+cost={1}{B}{R}
+pt=2/3
+ability=Whenever you cast your first spell each turn, SN deals damage equal to that spell's converted mana cost to an opponent chosen at random.;\
+        Partner
+timing=main
+oracle=Whenever you cast your first spell each turn, Vial Smasher the Fierce deals damage equal to that spell's converted mana cost to an opponent chosen at random.\nPartner

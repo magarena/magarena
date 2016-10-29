@@ -1,0 +1,10 @@
+name=Curtains' Call
+image=http://magiccards.info/scans/en/c16/54.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={5}{B}
+ability=Undaunted
+effect=Destroy two target creatures.
+timing=removal
+oracle=Undaunted\nDestroy two target creatures.

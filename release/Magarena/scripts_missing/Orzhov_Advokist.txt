@@ -1,0 +1,11 @@
+name=Orzhov Advokist
+image=http://magiccards.info/scans/en/c16/3.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={2}{W}
+pt=1/4
+ability=At the beginning of your upkeep, each player may put two +1/+1 counters on a creature he or she controls. If a player does, creatures that player controls can't attack you or a planeswalker you control until your next turn.
+timing=main
+oracle=At the beginning of your upkeep, each player may put two +1/+1 counters on a creature he or she controls. If a player does, creatures that player controls can't attack you or a planeswalker you control until your next turn.

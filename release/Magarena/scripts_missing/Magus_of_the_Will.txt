@@ -1,0 +1,11 @@
+name=Magus of the Will
+image=http://magiccards.info/scans/en/c16/37.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=3/3
+ability={2}{B}, {T}, Exile SN: Until end of turn, you may play cards from your graveyard. If a card would be put into your graveyard from anywhere this turn, exile that card instead.
+timing=main
+oracle={2}{B}, {T}, Exile Magus of the Will: Until end of turn, you may play cards from your graveyard. If a card would be put into your graveyard from anywhere this turn, exile that card instead.

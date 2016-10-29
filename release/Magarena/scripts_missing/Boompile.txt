@@ -1,0 +1,9 @@
+name=Boompile
+image=http://magiccards.info/scans/en/c16/52.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability={T}: Flip a coin. If you win the flip, destroy all nonland permanents.
+timing=main
+oracle={T}: Flip a coin. If you win the flip, destroy all nonland permanents.

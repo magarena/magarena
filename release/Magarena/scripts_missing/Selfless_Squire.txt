@@ -1,0 +1,13 @@
+name=Selfless Squire
+image=http://magiccards.info/scans/en/c16/4.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=1/1
+ability=Flash;\
+        When SN enters the battlefield, prevent all damage that would be dealt to you this turn.;\
+        Whenever damage that would be dealt to you is prevented, put that many +1/+1 counters on SN.
+timing=flash
+oracle=Flash\nWhen Selfless Squire enters the battlefield, prevent all damage that would be dealt to you this turn.\nWhenever damage that would be dealt to you is prevented, put that many +1/+1 counters on Selfless Squire.

@@ -1,0 +1,12 @@
+name=Charging Cinderhorn
+image=http://magiccards.info/scans/en/c16/30.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental,Ox
+cost={3}{R}
+pt=4/2
+ability=Haste;\
+        At the beginning of each player's end step, if no creatures attacked this turn, put a fury counter on SN. Then SN deals damage equal to the number of fury counters on it to that player.
+timing=fmain
+oracle=Haste\nAt the beginning of each player's end step, if no creatures attacked this turn, put a fury counter on Charging Cinderhorn. Then Charging Cinderhorn deals damage equal to the number of fury counters on it to that player.

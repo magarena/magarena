@@ -1,0 +1,10 @@
+name=Seeds of Renewal
+image=http://magiccards.info/scans/en/c16/24.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={6}{G}
+ability=Undaunted
+effect=Return up to two target cards from your graveyard to your hand. Exile SN.
+timing=draw
+oracle=Undaunted\nReturn up to two target cards from your graveyard to your hand. Exile Seeds of Renewal.

@@ -1,0 +1,13 @@
+name=Silas Renn, Seeker Adept
+image=http://magiccards.info/scans/en/c16/43.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact,Creature
+subtype=Human
+cost={1}{U}{B}
+pt=2/2
+ability=Deathtouch;\
+        Whenever SN deals combat damage to a player, choose target artifact card in your graveyard. You may cast that card this turn.;\
+        Partner
+timing=main
+oracle=Deathtouch\nWhenever SN deals combat damage to a player, choose target artifact card in your graveyard. You may cast that card this turn.\nPartner

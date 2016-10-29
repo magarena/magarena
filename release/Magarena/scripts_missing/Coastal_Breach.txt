@@ -1,0 +1,10 @@
+name=Coastal Breach
+image=http://magiccards.info/scans/en/c16/5.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={6}{U}
+ability=Undaunted
+effect=Return all nonland permanents to their owners' hands.
+timing=removal
+oracle=Undaunted\nReturn all nonland permanents to their owners' hands.

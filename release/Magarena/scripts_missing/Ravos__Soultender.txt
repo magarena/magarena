@@ -1,0 +1,14 @@
+name=Ravos, Soultender
+image=http://magiccards.info/scans/en/c16/39.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={3}{W}{B}
+pt=2/2
+ability=Flying;\
+        Other creatures you control get +1/+1.;\
+        At the beginning of your upkeep, you may return target creature card from your graveyard to your hand.;\
+        Partner
+timing=main
+oracle=Flying\nOther creatures you control get +1/+1.\nAt the beginning of your upkeep, you may return target creature card from your graveyard to your hand.\nPartner

@@ -1,0 +1,9 @@
+name=Evolutionary Escalation
+image=http://magiccards.info/scans/en/c16/22.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=At the beginning of your upkeep, put three +1/+1 counters on target creature you control and three +1/+1 counters on target creature an opponent controls.
+timing=main
+oracle=At the beginning of your upkeep, put three +1/+1 counters on target creature you control and three +1/+1 counters on target creature an opponent controls.

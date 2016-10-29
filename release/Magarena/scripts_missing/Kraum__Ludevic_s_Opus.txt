@@ -1,0 +1,13 @@
+name=Kraum, Ludevic's Opus
+image=http://magiccards.info/scans/en/c16/34.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Zombie,Horror
+cost={3}{U}{R}
+pt=4/4
+ability=Flying, haste;\
+        Whenever an opponent casts his or her second spell each turn, draw a card.;\
+        Partner
+timing=main
+oracle=Flying, haste\nWhenever an opponent casts his or her second spell each turn, draw a card.\nPartner

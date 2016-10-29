@@ -1,0 +1,11 @@
+name=Kynaios and Tiro of Meletis
+image=http://magiccards.info/scans/en/c16/36.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={R}{G}{W}{U}
+pt=2/8
+ability=At the beginning of your end step, draw a card. Each player may put a land card from his or her hand onto the battlefield, then each opponent who didn't draws a card.
+timing=main
+oracle=At the beginning of your end step, draw a card. Each player may put a land card from his or her hand onto the battlefield, then each opponent who didn't draws a card.

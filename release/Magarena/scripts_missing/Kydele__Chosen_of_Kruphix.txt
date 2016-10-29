@@ -1,0 +1,12 @@
+name=Kydele, Chosen of Kruphix
+image=http://magiccards.info/scans/en/c16/35.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{G}{U}
+pt=2/3
+ability={T}: Add {C} to your mana pool for each card you've drawn this turn.;\
+        Partner
+timing=main
+oracle={T}: Add {C} to your mana pool for each card you've drawn this turn.\nPartner

@@ -1,0 +1,13 @@
+name=Ishai, Ojutai Dragonspeaker
+image=http://magiccards.info/scans/en/c16/33.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Bird,Monk
+cost={2}{W}{U}
+pt=1/1
+ability=Flying;\
+        Whenever an opponent casts a spell, put a +1/+1 counter on SN.;\
+        Partner
+timing=main
+oracle=Flying\nWhenever an opponent casts a spell, put a +1/+1 counter on Ishai, Ojutai Dragonspeaker.\nPartner

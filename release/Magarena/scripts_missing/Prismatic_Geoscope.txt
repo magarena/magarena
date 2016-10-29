@@ -1,0 +1,10 @@
+name=Prismatic Geoscope
+image=http://magiccards.info/scans/en/c16/55.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={5}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add X mana in any combination of colors to your mana pool, where X is the number of basic land types among lands you control.
+timing=main
+oracle=Prismatic Geoscope enters the battlefield tapped.\nDomain — {T}: Add X mana in any combination of colors to your mana pool, where X is the number of basic land types among lands you control.
