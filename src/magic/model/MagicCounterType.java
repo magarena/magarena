@@ -113,6 +113,7 @@ public enum MagicCounterType {
     Slime("slime","{slm}",1),
     Soot("soot","{sot}",-1), //Possibly 0
     Spore("spore","{spr}",1),
+    Spite("spite","{spt}",1),
     Storage("storage","{stg}",1),
     Strife("strife","{stf}",1),
     Study("study","{stu}",1),
