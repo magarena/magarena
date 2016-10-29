@@ -117,6 +117,7 @@ Fellwar Stone
 Festercreep
 Filigree Angel
 Forbidden Orchard
+Forest
 Forgotten Ancient
 Frenzied Fugue
 Frontier Bivouac
@@ -153,6 +154,7 @@ In Garruk's Wake
 Inspiring Call
 Iroas, God of Victory
 Ishai, Ojutai Dragonspeaker
+Island
 Izzet Boilerworks
 Jor Kadeen, the Prevailer
 Jungle Hollow
@@ -187,6 +189,7 @@ Mirror Entity
 Mirrorweave
 Mortify
 Mosswort Bridge
+Mountain
 Murmuring Bosk
 Mycoloth
 Mycosynth Wellspring
@@ -212,6 +215,7 @@ Orzhov Signet
 Parting Thoughts
 Past in Flames
 Phyrexian Rebirth
+Plains
 Primeval Protector
 Prismatic Geoscope
 Progenitor Mimic
@@ -279,6 +283,7 @@ Sublime Exhalation
 Sunforger
 Sungrass Prairie
 Sunpetal Grove
+Swamp
 Swan Song
 Swiftfoot Boots
 Swiftwater Cliffs
