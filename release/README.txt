@@ -76,14 +76,25 @@ Release 1.78 (October 30, 2016)
 
 commit 4311952ba6f7f6bf551fe0003eaf28afd162db1e
 
-    Add alternative keywords view; Shows example cards.
-    add option to show loading screen waiting for card data/cardbuilder to load.
-    Show/hide log messages during game using 'M' key.
-    Show/hide log screen during game using 'L' key.
-    Show/hide keywords screen using 'K' key.
-    custom scrollbar, checkbox
-      Add setting to switch of custom scrollbar in preferences dialog (closes #935).
-    Improving drag/drop code; now recognizes zip file.
+- New themes, avatars (see http://www.slightlymagic.net/forum/viewforum.php?f=89)
+  * Greenwood (@sevacro)
+  * Black & White (@sevacro)
+  * Avatar set: sevacro
+
+- new style checkbox implemented in preferences dialog.
+- new style scrollbar, toggle setting added to preferences dialog.
+- dev actions in Explorer moved to dev menu.
+- optional new style keywords screen (with example cards) added.
+- implement uniform table/list selection color based on theme.
+- show/hide keywords screen from anywhere using 'K' key.
+- show/hide log messages during game using 'M' key.
+- show/hide log screen during game using 'L' key.
+- center align deck stats so it looks better when using extra large image setting.
+- new log and keywords icon added to game log titlebar.
+- add confirmation prompt on change background image.
+- play BEEP sound on showWarningMessage().
+- avatar sets sorted properly in linux.
+
     reduce updates by only updating between events if the next one has a choice
     Update card lists to contain Ae instead of Æ
     support use of AE ligature in dec files during transition
@@ -91,7 +102,6 @@ commit 4311952ba6f7f6bf551fe0003eaf28afd162db1e
     add cardbuilder to rendering of permanents
       allow IRenderable card to take a permanent's current subtypes
     enable images for token permanents
-    Custom scrollbar with a more minimalist style to default "nimbus".
 
 - added the following to the card script:
     support create token phrasing
@@ -109,18 +119,13 @@ commit 4311952ba6f7f6bf551fe0003eaf28afd162db1e
     fix crash due to Syndicate Trafficker, should not be using target reference
     fix and test Deathbringer Liege trigger order, fixes #899
     fix incorrect boolean opreator for CREATURE_OR_VEHICLE, fixes #922
-    fix: dragging an image directly from a browser into Magarena works again in Windows.
     move morph activations to card layer as permanent no longer check game layer, fixes #921
     fix missing activation cost in oracle text for 2/2 red Dragon token
     remove genABStaticGame as permanents do not use the Game layer, fixes #928
     fix script to use RN instead of 'it' as 'it' means SN, fixes #929
     fix missing check for "isn't monstrous" when monstrousity resolves
     fix Fertilid to have target player search
-    fixes #944 : The strange case of the missing throbber!
-    fix menu button on game screen not showing menu.
-    fix button grouping (closes #947).
     set default JList selection colors to the same as JTable which fixes the default gray background used in the deck legality panel (see #440)
-    update DeckPicker JList to use default selection colors.
     specify LOCALE.ENGLISH when using toUpperCase to avoid locale sensitive behavior, for #959
     Avoid fatal exception if reading "snapshot.dat" fails for some reason (closes #956).
     Hybrid was checking for colorless hybrid instead of colored - Fixes rendering of hybrid cards
