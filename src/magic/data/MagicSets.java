@@ -3,7 +3,8 @@ package magic.data;
 public enum MagicSets {
 
     // Release date string should be in YYYY-MM-DD format.
-    
+
+    C16("Commander (2016 Edition)", "2016-11-11"),
     KLD("Kaladesh", "2016-09-30"),
     CN2("Conspiracy: Take the Crown", "2016-08-26"),
     EMN("Eldritch Moon", "2016-07-22"),
