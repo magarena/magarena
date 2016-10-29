@@ -74,8 +74,15 @@ Thank you for your support and have fun!
 Release 1.78 (October 30, 2016)
 ============
 
-up to commit 4cc156f75e6c7042e8653252be31731619e31f7f
+commit 4311952ba6f7f6bf551fe0003eaf28afd162db1e
 
+    Add alternative keywords view; Shows example cards.
+    add option to show loading screen waiting for card data/cardbuilder to load.
+    Show/hide log messages during game using 'M' key.
+    Show/hide log screen during game using 'L' key.
+    Show/hide keywords screen using 'K' key.
+    custom scrollbar, checkbox
+      Add setting to switch of custom scrollbar in preferences dialog (closes #935).
     Improving drag/drop code; now recognizes zip file.
     reduce updates by only updating between events if the next one has a choice
     Update card lists to contain Ae instead of Æ
@@ -109,6 +116,14 @@ up to commit 4cc156f75e6c7042e8653252be31731619e31f7f
     fix script to use RN instead of 'it' as 'it' means SN, fixes #929
     fix missing check for "isn't monstrous" when monstrousity resolves
     fix Fertilid to have target player search
+    fixes #944 : The strange case of the missing throbber!
+    fix menu button on game screen not showing menu.
+    fix button grouping (closes #947).
+    set default JList selection colors to the same as JTable which fixes the default gray background used in the deck legality panel (see #440)
+    update DeckPicker JList to use default selection colors.
+    specify LOCALE.ENGLISH when using toUpperCase to avoid locale sensitive behavior, for #959
+    Avoid fatal exception if reading "snapshot.dat" fails for some reason (closes #956).
+    Hybrid was checking for colorless hybrid instead of colored - Fixes rendering of hybrid cards
 
 - added the following cards:
 
