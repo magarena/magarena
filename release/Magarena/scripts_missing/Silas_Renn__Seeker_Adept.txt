@@ -10,4 +10,4 @@ ability=Deathtouch;\
         Whenever SN deals combat damage to a player, choose target artifact card in your graveyard. You may cast that card this turn.;\
         Partner
 timing=main
-oracle=Deathtouch\nWhenever SN deals combat damage to a player, choose target artifact card in your graveyard. You may cast that card this turn.\nPartner
+oracle=Deathtouch\nWhenever Silas Renn, Seeker Adept deals combat damage to a player, choose target artifact card in your graveyard. You may cast that card this turn.\nPartner
