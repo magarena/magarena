@@ -96,39 +96,38 @@ ShawnieBoy
   * implement uniform table/list selection color based on theme
   * new translatable strings: 26
 
-- generate proxy images for permanents based on current characteristics
-  * for English language with cropped images only
+- generate proxy images for permanents based on current characteristics for
+  English language with cropped images only
   * permanent color, type, subtype and pt changes are displayed in-game
   * token copies of permanents display token frames
 
 - added the following to the card script:
-    support create token phrasing
-    allow searching from library + graveyard/hand (groovy)
-    add effect: At the beginning of your next upkeep, pay <mana cost>. If you don't, you lose the game
-    add condition: that player has no cards in hand
-    add condition: RN has <amount> or more cards in hand
-    add condition: RN has <amount> or fewer cards in hand
-    allow multiple conditions in intervening if clause
-    add condition: enchanted creature's power is <amount> or greater
-    add effect: return <card> at random from your graveyard to your hand
-    add effect: goad <permanents>, closes #825
+  * support create token phrasing
+  * support searching from multiple locations via groovy code
+  * condition: that player has no cards in hand
+  * condition: RN has <amount> or more cards in hand
+  * condition: RN has <amount> or fewer cards in hand
+  * condition: enchanted creature's power is <amount> or greater
+  * effect: goad <permanents>
+  * effect: return <card> at random from your graveyard to your hand
+  * effect: At the beginning of your next upkeep, pay <mana cost>. If you don't, you lose the game
 
 - fixed the following bugs:
-    fix crash due to Syndicate Trafficker, should not be using target reference
-    fix and test Deathbringer Liege trigger order, fixes #899
-    fix incorrect boolean opreator for CREATURE_OR_VEHICLE, fixes #922
-    move morph activations to card layer as permanent no longer check game layer, fixes #921
-    fix missing activation cost in oracle text for 2/2 red Dragon token
-    remove genABStaticGame as permanents do not use the Game layer, fixes #928
-    fix script to use RN instead of 'it' as 'it' means SN, fixes #929
-    fix missing check for "isn't monstrous" when monstrousity resolves
-    fix Fertilid to have target player search
-    fix gray selection color used in the deck legality list (see #440)
-    specify LOCALE.ENGLISH when using toUpperCase to avoid locale sensitive behavior, for #959
-    Avoid fatal exception if reading "snapshot.dat" fails for some reason (closes #956).
-    Hybrid was checking for colorless hybrid instead of colored - Fixes rendering of hybrid cards
-    fix counters check in Decree of Silence to be only when trigger resolves, fixes #963
-    clean up player state on each update, fixes #962
+  * crash on card loading due to system locale setting (issue #959)
+  * crash when reading old version of snapshot.dat (issue #956)
+  * missing activation cost in oracle text for 2/2 red Dragon token
+  * missing check for "isn't monstrous" when monstrousity resolves
+  * incorrect proxy image generated for hybrid cards
+  * incorrect selection color used in the deck legality list (issue #440)
+  * Morph permanents could not be turned face up (issue #921)
+  * Syndicate Trafficker ability crashes when it resolves
+  * Deathbringer Liege's triggers fire in the wrong order (issue #899)
+  * Aether Meltdown could only enchant creature and Vehicle (issue #922)
+  * Fertilid cause controller to search, should be target player to search
+  * Slumbering Dragon could attack when it has less than five +1/+1 counters (issue #928)
+  * Inventor's Goggles doesn't attach to an Artificer entering the battlefield (issue #929)
+  * Grand Abolisher` won't let the opponent cast anything at all (issue #962)
+  * Decree of Silence is sacrificed whenever it has three or more depletion counters on it (issue #963)
 
 - added the following cards:
 Akiri, Line-Slinger, Arachnogenesis, Arlinn, Embraced by the Moon,
