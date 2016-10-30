@@ -134,7 +134,7 @@ class ThemesPanel extends JPanel
 
     @Override
     public void itemStateChanged(ItemEvent e) {
-        refreshLAF = true;
+        refreshLAF = e.getSource() == cbCustomScrollbar.component();
         if (e.getSource() == themeComboBox) {
             doThemeItemStateChanged(e);
         }
