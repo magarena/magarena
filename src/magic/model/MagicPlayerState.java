@@ -14,7 +14,15 @@ public enum MagicPlayerState {
     private final int mask;
 
     // states that persist after cleanup
-    public static final int CLEANUP_MASK = Monarch.getMask();
+    public static final int CLEANUP_MASK =
+        Monarch.getMask();
+
+    // states that persist during a turn
+    public static final int TURN_MASK =
+        Monarch.getMask() |
+        WasDealtDamage.getMask() |
+        HasLostLife.getMask() |
+        HasGainedLife.getMask();
 
     private MagicPlayerState(final String description) {
         this.description=description;

@@ -838,6 +838,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         switch (layer) {
             case Player:
                 cachedAbilityFlags = MagicAbility.noneOf();
+                stateFlags &= MagicPlayerState.TURN_MASK;
                 maxHandSize = 7;
                 break;
             default:
