@@ -1,5 +1,5 @@
 name=Conqueror's Flail
-image=http://magiccards.info/scans/en/c16/53.jpg
+image=http://media.wizards.com/2016/bn8f9t2zc_C16/TJvLtrbnaj_EN.png
 value=2.500
 rarity=R
 type=Artifact

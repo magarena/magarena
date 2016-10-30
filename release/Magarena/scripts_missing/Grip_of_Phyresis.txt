@@ -1,5 +1,5 @@
 name=Grip of Phyresis
-image=http://magiccards.info/scans/en/c16/9.jpg
+image=http://media.wizards.com/2016/bn8f9t2zc_C16/ISEZsZmvvT_EN.png
 value=2.500
 rarity=U
 type=Instant

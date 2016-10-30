@@ -1,5 +1,5 @@
 name=Primeval Protector
-image=http://magiccards.info/scans/en/c16/23.jpg
+image=http://media.wizards.com/2016/bn8f9t2zc_C16/ujfgaxFJAw_EN.png
 value=2.500
 rarity=R
 type=Creature

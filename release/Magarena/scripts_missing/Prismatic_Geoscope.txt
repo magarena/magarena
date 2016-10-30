@@ -1,5 +1,5 @@
 name=Prismatic Geoscope
-image=http://magiccards.info/scans/en/c16/55.jpg
+image=http://media.wizards.com/2016/bn8f9t2zc_C16/9SK3Wa4vyl_EN.png
 value=2.500
 rarity=R
 type=Artifact

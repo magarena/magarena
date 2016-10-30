@@ -1,5 +1,5 @@
 name=Curtains' Call
-image=http://magiccards.info/scans/en/c16/54.jpg
+image=http://media.wizards.com/2016/bn8f9t2zc_C16/xu8Mai5QfB_EN.png
 value=2.500
 rarity=R
 type=Instant
