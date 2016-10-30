@@ -5,6 +5,6 @@ rarity=U
 type=Sorcery
 cost={6}{R}{G}
 ability=Basic landcycling {2}
-effect=SN deals damage to each opponent equal to the number of lands that player controls.
 timing=main
 oracle=Treacherous Terrain deals damage to each opponent equal to the number of lands that player controls.\nBasic landcycling {2}
+requires_groovy_code
