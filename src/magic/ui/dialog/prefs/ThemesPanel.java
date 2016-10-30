@@ -52,8 +52,8 @@ class ThemesPanel extends JPanel
 
         themeComboBox = new ThemesComboBox();
         themeComboBox.setFocusable(false);
-        themeComboBox.addItemListener(this);
         themeComboBox.setSelectedItem(selectedTheme.getName());
+        themeComboBox.addItemListener(this);
 
         customBackgroundCheckBox = new MCheckBox(MText.get(_S5), CONFIG.isCustomBackground());
         customBackgroundCheckBox.setToolTipText(MText.get(_S4));
