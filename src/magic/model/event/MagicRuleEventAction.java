@@ -1876,10 +1876,14 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new ChangePlayerStateAction(
-                        it,
-                        MagicPlayerState.CantCastSpells
-                    ));
+                    game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
+                        @Override
+                        public void modPlayer(final MagicPermanent source, final MagicPlayer player) {
+                            if (player.getId() == it.getId()) {
+                                player.setState(MagicPlayerState.CantCastSpells);
+                            }
+                        }
+                    }));
                 }
             };
         }

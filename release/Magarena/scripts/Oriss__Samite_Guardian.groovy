@@ -32,13 +32,26 @@ def A_CARD_NAMED_ORISS = new MagicTargetChoice(
             );
         }
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game, {
-                game.doAction(new ChangePlayerStateAction(it, MagicPlayerState.CantCastSpells));
-                CREATURE_YOU_CONTROL.filter(it) each {
-                    final MagicPermanent creature ->
-                    game.doAction(new GainAbilityAction(creature, MagicAbility.CannotAttack));
-                }
+        public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
+            event.processTargetPlayer(outerGame, {
+                final MagicPlayer outerPlayer ->
+                outerGame.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Player, MagicStatic.UntilEOT) {
+                    @Override
+                    public void modPlayer(final MagicPermanent source, final MagicPlayer player) {
+                        if (player.getId() == outerPlayer.getId()) {
+                            player.setState(MagicPlayerState.CantCastSpells);
+                        }
+                    }
+                }));
+                outerGame.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
+                    @Override
+                    public void modGame(final MagicPermanent source, final MagicGame game) {
+                        final MagicPlayer p = outerPlayer.map(game);
+                        CREATURE_YOU_CONTROL.filter(p) each {
+                            it.addAbility(MagicAbility.CannotAttack);
+                        }
+                    }
+                }))
             });
         }
     }
