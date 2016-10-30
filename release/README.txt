@@ -82,7 +82,7 @@ ShawnieBoy
 
 - new themes and avatars
   * Greenwood theme by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19316
-  * Black & White by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19317
+  * Black & White theme by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19317
   * Avatar set by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19309
 
 - changed/added the following to the user interface:
