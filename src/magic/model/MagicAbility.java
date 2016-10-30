@@ -1463,6 +1463,17 @@ public enum MagicAbility {
             card.add(EntersBattlefieldTrigger.Fabricate(n));
         }
     },
+    Partner("Partner", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            //Does nothing as commander rules are not implemented
+        }
+    },
+    Undaunted("Undaunted", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicHandCastActivation.reduction(cardDef, MagicAmountFactory.One));
+        }
+    },
     /*
     Suspend("suspend " + ARG.NUMBER + "( |—)" + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
