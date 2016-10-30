@@ -123,10 +123,10 @@ ShawnieBoy
   * Syndicate Trafficker ability crashes when it resolves
   * Deathbringer Liege's triggers fire in the wrong order (issue #899)
   * Aether Meltdown could only enchant creature and Vehicle (issue #922)
-  * Fertilid cause controller to search, should be target player to search
+  * Fertilid's ability made controller search, should be target player
   * Slumbering Dragon could attack when it has less than five +1/+1 counters (issue #928)
   * Inventor's Goggles doesn't attach to an Artificer entering the battlefield (issue #929)
-  * Grand Abolisher` won't let the opponent cast anything at all (issue #962)
+  * Grand Abolisher won't let the opponent cast anything at all (issue #962)
   * Decree of Silence is sacrificed whenever it has three or more depletion counters on it (issue #963)
 
 - added the following cards:
