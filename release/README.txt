@@ -74,35 +74,27 @@ Thank you for your support and have fun!
 Release 1.78 (October 30, 2016)
 ============
 
-commit 4311952ba6f7f6bf551fe0003eaf28afd162db1e
+- update formats to include Kaladesh and Commander 2016, rotate Standard
 
-- New themes, avatars (see http://www.slightlymagic.net/forum/viewforum.php?f=89)
-  * Greenwood (@sevacro)
-  * Black & White (@sevacro)
-  * Avatar set: sevacro
+- new themes and avatars
+  * Greenwood theme by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19316
+  * Black & White by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19317
+  * Avatar set by sevacro, http://www.slightlymagic.net/forum/viewtopic.php?f=89&t=19309
 
-- new style checkbox implemented in preferences dialog.
-- new style scrollbar, toggle setting added to preferences dialog.
-- dev actions in Explorer moved to dev menu.
-- optional new style keywords screen (with example cards) added.
-- implement uniform table/list selection color based on theme.
-- show/hide keywords screen from anywhere using 'K' key.
-- show/hide log messages during game using 'M' key.
-- show/hide log screen during game using 'L' key.
-- center align deck stats so it looks better when using extra large image setting.
-- new log and keywords icon added to game log titlebar.
-- add confirmation prompt on change background image.
-- play BEEP sound on showWarningMessage().
-- avatar sets sorted properly in linux.
+- changed/added the following to the user interface:
+  * show/hide keywords screen from anywhere using 'K' key
+  * show/hide log messages during game using 'M' key
+  * show/hide log screen during game using 'L' key
+  * optional new style keywords screen with example cards
+  * new style checkbox implemented in preferences dialog
+  * new style scrollbar, toggle setting added to preferences dialog
+  * dev actions in Explorer moved to dev menu
+  * implement uniform table/list selection color based on theme
 
-- add cardbuilder to rendering of permanents (English language with cropped images only)
-  * Permanent color, type, subtype and pt changes are displayed in-game
-  * Token copies of permanents display token frames
-    
-    reduce updates by only updating between events if the next one has a choice
-    Update card lists to contain Ae instead of Æ
-    support use of AE ligature in dec files during transition
-    update formats to include KLD and rotate Standard
+- generate proxy images for permanents based on current characteristics
+  * for English language with cropped images only
+  * permanent color, type, subtype and pt changes are displayed in-game
+  * token copies of permanents display token frames
 
 - added the following to the card script:
     support create token phrasing
