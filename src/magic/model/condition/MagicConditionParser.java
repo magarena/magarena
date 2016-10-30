@@ -590,7 +590,7 @@ public enum MagicConditionParser {
             return MagicConditionFactory.OpponentLoseLifeOrMore(amount);
         }
     },
-    OpponentWasDealtDamage("an opponent was dealt damage this turn") {
+    OpponentWasDealtDamage("an opponent (was|has been) dealt damage this turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.OPPONENT_WAS_DEALT_DAMAGE;
         }
