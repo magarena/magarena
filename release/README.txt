@@ -94,6 +94,7 @@ ShawnieBoy
   * new style scrollbar, toggle setting added to preferences dialog
   * dev actions in Explorer moved to dev menu
   * implement uniform table/list selection color based on theme
+  * new translatable strings: 26
 
 - generate proxy images for permanents based on current characteristics
   * for English language with cropped images only
@@ -122,7 +123,7 @@ ShawnieBoy
     fix script to use RN instead of 'it' as 'it' means SN, fixes #929
     fix missing check for "isn't monstrous" when monstrousity resolves
     fix Fertilid to have target player search
-    set default JList selection colors to the same as JTable which fixes the default gray background used in the deck legality panel (see #440)
+    fix gray selection color used in the deck legality list (see #440)
     specify LOCALE.ENGLISH when using toUpperCase to avoid locale sensitive behavior, for #959
     Avoid fatal exception if reading "snapshot.dat" fails for some reason (closes #956).
     Hybrid was checking for colorless hybrid instead of colored - Fixes rendering of hybrid cards
