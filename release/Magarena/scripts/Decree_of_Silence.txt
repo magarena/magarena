@@ -4,8 +4,7 @@ value=3.843
 rarity=R
 type=Enchantment
 cost={6}{U}{U}
-ability=When SN has three or more depletion counters on it, sacrifice SN.;\
-        Cycling {4}{U}{U};\
+ability=Cycling {4}{U}{U};\
         When you cycle SN, you may counter target spell.
 timing=enchantment
 requires_groovy_code
