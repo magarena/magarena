@@ -130,23 +130,22 @@ ShawnieBoy
     clean up player state on each update, fixes #962
 
 - added the following cards:
-Aerathi Berserker, Akiri, Line-Slinger, Arachnogenesis,
-Arlinn, Embraced by the Moon, Arlinn Kord, Ash Barrens,
-Attune with Aether, Besmirch, Bloodcrazed Goblin, Boompile,
-Breya, Etherium Shaper, Bruse Tarl, Boorish Herder, Cavalry Master,
-Chandra, Pyrogenius, Coastal Breach, Coveted Peacock, Dark Supplicant,
-Domesticated Hydra, Failed Inspection, Flame-Wreathed Phoenix,
-Foundry Inspector, Ghirapur Orrery, Goblin Racketeer,
-Grave Upheaval, Grifter's Blade, Hellkite Tyrant, In Garruk's Wake,
-Ishai, Ojutai Dragonspeaker, Jeering Homunculus, Lashwrithe,
-Migratory Route, Mistform Ultimus, Moonmist, Nissa, Nature's Artisan,
-Ornamental Courage, Pact of Negation, Pact of the Titan,
-Primeval Protector, Pristine Skywise, Protector of the Crown,
-Quest for the Nihil Stone, Raving Dead, Ravos, Soultender, Razor Pendulum,
-Redeem the Lost, Skywhaler's Shot, Slaughter Pact, Stonehoof Chieftain,
-Structural Distortion, Sublime Exhalation, Summoner's Pact,
-Surreal Memoir, Sworn Defender, Valeron Wardens, Workshop Assistant,
-Zirilan of the Claw
+Akiri, Line-Slinger, Arachnogenesis, Arlinn, Embraced by the Moon,
+Arlinn Kord, Ash Barrens, Attune with Aether, Besmirch,
+Bloodcrazed Goblin, Boompile, Breya, Etherium Shaper,
+Bruse Tarl, Boorish Herder, Cavalry Master, Chandra, Pyrogenius,
+Coastal Breach, Coveted Peacock, Dark Supplicant, Domesticated Hydra,
+Failed Inspection, Flame-Wreathed Phoenix, Foundry Inspector,
+Ghirapur Orrery, Goblin Racketeer, Grave Upheaval, Grifter's Blade,
+Hellkite Tyrant, In Garruk's Wake, Ishai, Ojutai Dragonspeaker,
+Jeering Homunculus, Lashwrithe, Migratory Route, Mistform Ultimus,
+Moonmist, Nissa, Nature's Artisan, Ornamental Courage, Pact of Negation,
+Pact of the Titan, Primeval Protector, Pristine Skywise,
+Protector of the Crown, Quest for the Nihil Stone, Raving Dead,
+Ravos, Soultender, Razor Pendulum, Redeem the Lost, Skywhaler's Shot,
+Slaughter Pact, Stonehoof Chieftain, Structural Distortion,
+Sublime Exhalation, Summoner's Pact, Surreal Memoir, Sworn Defender,
+Valeron Wardens, Workshop Assistant, Zirilan of the Claw
 
 Release 1.77 (September 25, 2016)
 ============
