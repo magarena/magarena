@@ -4,8 +4,8 @@ value=3.013
 rarity=U
 type=Sorcery
 cost={2}{R}
-ability=Flashback {5}{R}
-effect=Discard all the cards in your hand, then draw that many cards.
+ability=Flashback {5}{R};\
+        Cast SN with AI only if you have one or more cards in hand.
 timing=main
 oracle=Discard all the cards in your hand, then draw that many cards.\nFlashback {5}{R}
-status=needs groovy
+requires_groovy_code=Tolarian Winds
