@@ -943,6 +943,10 @@ correct-release-label:
 	grep /$*/ -r release/Magarena/scripts_missing release/Magarena/scripts -l | parallel awk -f scripts/update_image.awk $*_img.tsv {} '>' {}.new
 	grep /$*/ -r release/Magarena/scripts_missing/*.txt release/Magarena/scripts/*.txt  -l | parallel mv {}.new {}
 
+# Match abilities in scripts_missing to existing groovy code
+#   assume scripts-builder/OUTPUT/scripts_missing contains card script for current cards
+#   groovy scripted effect/ability are those that are in scripts-builder generated card script but not present in actual card script
+#   search for these groovy effect/ability in release/Magarena/scripts_missing
 groovy_scripted.txt:
 	join -v2 -t'_' \
 	<(grep "effect=\|ability=\|^ "  -r release/Magarena/scripts/*.txt -h         | sed 's/^ *//;s/.*=//;s/;\\//' | sort | uniq) \
