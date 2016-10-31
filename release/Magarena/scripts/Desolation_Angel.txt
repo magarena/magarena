@@ -7,7 +7,7 @@ subtype=Angel
 cost={3}{B}{B}
 pt=5/4
 ability=Kicker {W}{W};\
-Flying
+        Flying
 timing=main
 requires_groovy_code
 oracle=Kicker {W}{W}\nFlying\nWhen Desolation Angel enters the battlefield, destroy all lands you control. If it was kicked, destroy all lands instead.

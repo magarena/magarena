@@ -7,7 +7,7 @@ subtype=Avatar
 cost={6}{B}{B}
 pt=6/5
 ability=Fear;\
-{T}: Destroy target creature. It can't be regenerated.
+        {T}: Destroy target creature. It can't be regenerated.
 timing=main
 requires_groovy_code
 oracle=If there are ten or more creature cards total in all graveyards, Avatar of Woe costs {6} less to cast.\nFear\n{T}: Destroy target creature. It can't be regenerated.
