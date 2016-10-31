@@ -67,4 +67,8 @@ public abstract class HeaderFooterScreen extends MScreen {
         footerPanel.addFooterGroup(btns);
     }
 
+    public void setHeaderOptions(JComponent c) {
+        headerPanel.setOptions(c);
+    }
+
 }

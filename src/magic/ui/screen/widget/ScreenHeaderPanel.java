@@ -15,23 +15,18 @@ import net.miginfocom.swing.MigLayout;
 public class ScreenHeaderPanel extends TexturedPanel
         implements IThemeStyle {
 
-    private static final JPanel TEMP_PANEL = new JPanel() {
+    private class PlaceHolderPanel extends JPanel {
         @Override
         public boolean isVisible() {
             return false;
         }
-    };
-
-    // translatable strings
-    private static final String _S1 = "Wiki Help [F1]";
-    private static final String _S2 = "Opens the wiki help page for this screen in your browser.";
-    private static final String _S3 = "Options Menu [ESC]";
-    private static final String _S4 = "Displays menu of common and screen specific options.";
+    }
 
     public final static int PANEL_HEIGHT = 50;
 
     private final AboutPanel titlePanel;
-    private JComponent contentPanel = TEMP_PANEL;
+    private JComponent contentPanel = new PlaceHolderPanel();
+    private JComponent optionsPanel = new PlaceHolderPanel();
 
     public ScreenHeaderPanel(String title) {
 
@@ -45,7 +40,7 @@ public class ScreenHeaderPanel extends TexturedPanel
                 "[33%, fill][fill, grow][33%, fill]",
                 "[fill, grow]")
         );
-        refreshLayout();
+        setLayout();
     }
 
     @Override
@@ -57,78 +52,20 @@ public class ScreenHeaderPanel extends TexturedPanel
 
     public void setContent(JComponent aPanel) {
         this.contentPanel = aPanel;
-        refreshLayout();
+        setLayout();
     }
 
-    private void refreshLayout() {
+    private void setLayout() {
         removeAll();
         add(titlePanel);
         add(contentPanel);
-        add(TEMP_PANEL);
+        add(optionsPanel);
         revalidate();
     }
 
-//    private class OptionsPanel extends JPanel {
-//
-//        private final MigLayout migLayout = new MigLayout();
-//        private JButton wikiButton;
-//        private JButton optionsButton;
-//
-//        public OptionsPanel() {
-//            setLookAndFeel();
-//            if (screen != null) {
-//                setupButtons();
-//                refreshLayout();
-//            }
-//        }
-//
-//        private void setupButtons() {
-//            // wiki button
-//            if (screen.hasWikiPage()) {
-//                wikiButton = new ActionBarButton(
-//                        MagicImages.getIcon(MagicIcon.HELP_ICON),
-//                        UiString.get(_S1),
-//                        UiString.get(_S2),
-//                        new AbstractAction() {
-//                            @Override
-//                            public void actionPerformed(final ActionEvent e) {
-//                                screen.showWikiHelpPage();
-//                            }
-//                        }
-//                );
-//            }
-//            // options button
-//            if (screen.hasOptionsMenu()) {
-//                optionsButton = new ActionBarButton(
-//                        MagicImages.getIcon(MagicIcon.OPTIONS_ICON),
-//                        UiString.get(_S3),
-//                        UiString.get(_S4),
-//                        new AbstractAction() {
-//                            @Override
-//                            public void actionPerformed(final ActionEvent e) {
-//                                ((IOptionsMenu)screen).showOptionsMenuOverlay();
-//                            }
-//                        }
-//                );
-//            }
-//        }
-//
-//        private void refreshLayout() {
-//            removeAll();
-//            migLayout.setLayoutConstraints("insets 0, gapx 0, alignx right");
-//            if (screen.hasOptionsMenu()) {
-//                add(optionsButton);
-//            }
-//            if (screen.hasWikiPage()) {
-//                add(wikiButton);
-//            }
-//        }
-//
-//        private void setLookAndFeel() {
-//            setOpaque(false);
-//            setLayout(migLayout);
-//        }
-//
-//    }
+    public void setOptions(JComponent c) {
+        this.optionsPanel = c;
+        setLayout();
+    }
 
 }

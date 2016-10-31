@@ -14,11 +14,13 @@ public class ActionBarButton extends MenuButton {
     private void setToolTip(String title, String tooltip) {
         title = title == null ? "" : title.trim();
         tooltip = tooltip == null ? "" : tooltip.trim();
-        if (title.isEmpty() && tooltip.isEmpty())
-            return;
-        final String s1 = !title.isEmpty() ? "<b>" + title + "</b>" : "";
-        final String s2 = s1 + (!title.isEmpty() && !tooltip.isEmpty() ? "<br>" : "") + tooltip;
-        setToolTipText("<html>" + s2 + "</html>");
+        if (title.isEmpty() && tooltip.isEmpty()) {
+            setToolTipText(null);
+        } else {
+            final String s1 = !title.isEmpty() ? "<b>" + title + "</b>" : "";
+            final String s2 = s1 + (!title.isEmpty() && !tooltip.isEmpty() ? "<br>" : "") + tooltip;
+            setToolTipText("<html>" + s2 + "</html>");
+        }
     }
 
     // CTR
@@ -34,6 +36,10 @@ public class ActionBarButton extends MenuButton {
 
     public ActionBarButton(ImageIcon icon, String actionName, AbstractAction action) {
         this(icon, actionName, "", action);
+    }
+
+    public ActionBarButton(ImageIcon icon, AbstractAction action) {
+        this(icon, null, action);
     }
 
     // CTR - text only action.

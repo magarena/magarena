@@ -17,6 +17,7 @@ public enum MagicIcon {
     ARTIFACTS("ui/w_artifacts.png"),
     BANNED("ui/card_banned.png"),
     CLEAR("ui/w_clear28.png"),
+    CLOSE("ui/close-24.png"),
     CREATURES("ui/w_creatures.png"),
     CUBE("ui/w_cube.png"),
     CYCLE("ui/w_cycle.png"),
@@ -42,6 +43,7 @@ public enum MagicIcon {
     MULLIGAN("ui/w_mulligan.png"),
     OPEN("ui/w_open.png"),
     OPTIONS("ui/w_book.png"),
+    OPTION_MENU("ui/options-menu-24.png"),
     PLANESWALKERS("ui/w_planeswalkers.png"),
     PLUS_ICON("ui/w_plus28.png"),
     RANDOM("ui/w_random32.png"),
@@ -52,6 +54,7 @@ public enum MagicIcon {
     SORCERIES("ui/w_sorceries.png"),
     STATS("ui/w_stats.png"),
     SWAP("ui/w_swap.png"),
+    SWITCH("ui/w_switch24.png"),
     TARGET_ICON("ui/w_target.png"),
     TILED("ui/w_tiled.png"),
 

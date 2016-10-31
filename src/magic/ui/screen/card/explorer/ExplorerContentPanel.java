@@ -126,6 +126,10 @@ public class ExplorerContentPanel extends JPanel
         cardPoolTable.selectRandomCard();
     }
 
+    void doSwitchStyle() {
+        cardPoolTable.doSwitchStyle();
+    }
+
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
         public void mouseReleased(MouseEvent e) {
@@ -159,13 +163,15 @@ public class ExplorerContentPanel extends JPanel
     }
 
     public void refreshLayout() {
-        final ExplorerScreenLayout layout = ExplorerScreenLayout.getLayout();
-        if (layout == ExplorerScreenLayout.DEFAULT) {
-            doDefaultLayout();
-        } else if (layout == ExplorerScreenLayout.NO_SIDEBAR) {
-            doNoSidebarLayout();
-        } else {
-            throw new IndexOutOfBoundsException();
+        switch (ExplorerScreenLayout.getLayout()) {
+            case DEFAULT:
+                doDefaultLayout();
+                break;
+            case NO_SIDEBAR:
+                doNoSidebarLayout();
+                break;
+            default:
+                throw new IndexOutOfBoundsException();
         }
     }
 }
