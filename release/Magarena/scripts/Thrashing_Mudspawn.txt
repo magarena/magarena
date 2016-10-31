@@ -6,8 +6,7 @@ type=Creature
 subtype=Beast
 cost={3}{B}{B}
 pt=4/4
-ability=Whenever SN is dealt damage, you lose that much life.;\
-        Morph {1}{B}{B}
+ability=Morph {1}{B}{B}
 timing=main
 oracle=Whenever Thrashing Mudspawn is dealt damage, you lose that much life.\nMorph {1}{B}{B}
-status=needs groovy
+requires_groovy_code=Filthy Cur
