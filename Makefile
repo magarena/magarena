@@ -943,32 +943,22 @@ correct-release-label:
 	grep /$*/ -r release/Magarena/scripts_missing release/Magarena/scripts -l | parallel awk -f scripts/update_image.awk $*_img.tsv {} '>' {}.new
 	grep /$*/ -r release/Magarena/scripts_missing/*.txt release/Magarena/scripts/*.txt  -l | parallel mv {}.new {}
 
-groovy_effects.txt:
+groovy_scripted.txt:
 	join -v2 -t'_' \
-	<(grep effect= -r release/Magarena/scripts -h | sort | uniq) \
-	<(grep effect= -r scripts-builder/OUTPUT/scripts_missing -h | sort | uniq) \
+	<(grep "effect=\|ability=\|^ "  -r release/Magarena/scripts/*.txt -h         | sed 's/^ *//;s/.*=//;s/;\\//' | sort | uniq) \
+	<(grep "effect=\|ability=\|^ "  -r scripts-builder/OUTPUT/scripts_missing -h | sed 's/^ *//;s/.*=//;s/;\\//' | sort | uniq) \
 	> $@
 
-requires_effects.txt: groovy_effects.txt
+requires_scripted.txt: groovy_scripted.txt
 	join -t'_' \
 	$^ \
-	<(grep effect= -r release/Magarena/scripts_missing -h | sort | uniq) \
+	<(grep "effect=\|ability=\|^ " -r release/Magarena/scripts_missing -h        | sed 's/^ *//;s/.*=//;s/;\\//' | sort | uniq) \
 	> $@
 
-requires_effects_candidate.txt: requires_effects.txt
-	cat $^ | sed 's/effect=//' | parallel grep '{}' -r release/Magarena/scripts_missing
+requires_scripted_candidate.txt: requires_scripted.txt
+	cat $^ | parallel -k grep '{}' -r release/Magarena/scripts_missing > $@
 
-groovy_ability.txt:
-	join -v2 -t'_' \
-	<(grep "ability=\|^ " -r release/Magarena/scripts/*.txt -h | sed 's/^ \+/ability=/;s/;\\//' | sort | uniq) \
-	<(grep "ability=\|^ " -r scripts-builder/OUTPUT/scripts_missing -h | sed 's/^ \+/ability=/;s/;\\//' | sort | uniq) \
-	> $@
-
-requires_ability.txt: groovy_ability.txt
-	join -t'_' \
-	$^ \
-	<(grep "ability=\|^ " -r release/Magarena/scripts_missing -h | sed 's/^ \+/ability=/;s/;\\//' | sort | uniq) \
-	> $@
-
-requires_ability_candidate.txt: requires_ability.txt
-	cat $^ | sed 's/ability=//' | parallel grep '{}' -r release/Magarena/scripts_missing
+requires_scripted_candidate:
+	rm groovy_scripted.txt requires_scripted.txt requires_scripted_candidate.txt
+	make requires_scripted_candidate.txt
+	diff requires_scripted_candidate.ignore requires_scripted_candidate.txt
