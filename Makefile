@@ -537,6 +537,9 @@ checks: \
 	check_tap_tap \
 	check_no_extra_space
 
+check_property_alignment:
+	grep "^[^ ][^=]\+$$" -r release/Magarena/scripts/*.txt  | grep -v requires | grep -v mana_or | grep -v hidden | grep -v overlay | grep -v '#' | ${NO_OUTPUT}
+
 remove_extra_missing:
 	git rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
 
