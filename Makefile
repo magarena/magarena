@@ -939,3 +939,15 @@ correct-release-label:
 %_fix_image:
 	grep /$*/ -r release/Magarena/scripts_missing release/Magarena/scripts -l | parallel awk -f scripts/update_image.awk $*_img.tsv {} '>' {}.new
 	grep /$*/ -r release/Magarena/scripts_missing/*.txt release/Magarena/scripts/*.txt  -l | parallel mv {}.new {}
+
+groovy_effects.txt:
+	join -v2 -t'_' \
+	<(grep effect= -r release/Magarena/scripts -h | sort) \
+	<(grep effect= -r scripts-builder/OUTPUT/scripts_missing -h | sort) \
+	> $@
+
+requires_effects.txt: groovy_effects.txt
+	join -t'_' \
+	groovy_effects.txt \
+	<(grep effect= -r release/Magarena/scripts_missing -h | sort) \
+	> $@
