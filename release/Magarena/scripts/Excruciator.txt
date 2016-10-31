@@ -6,7 +6,6 @@ type=Creature
 subtype=Avatar
 cost={6}{R}{R}
 pt=7/7
-ability=Damage that would be dealt by SN can't be prevented.
 timing=main
 oracle=Damage that would be dealt by Excruciator can't be prevented.
-status=needs groovy
+requires_groovy_code
