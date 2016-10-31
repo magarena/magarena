@@ -945,12 +945,30 @@ correct-release-label:
 
 groovy_effects.txt:
 	join -v2 -t'_' \
-	<(grep effect= -r release/Magarena/scripts -h | sort) \
-	<(grep effect= -r scripts-builder/OUTPUT/scripts_missing -h | sort) \
+	<(grep effect= -r release/Magarena/scripts -h | sort | uniq) \
+	<(grep effect= -r scripts-builder/OUTPUT/scripts_missing -h | sort | uniq) \
 	> $@
 
 requires_effects.txt: groovy_effects.txt
 	join -t'_' \
-	groovy_effects.txt \
-	<(grep effect= -r release/Magarena/scripts_missing -h | sort) \
+	$^ \
+	<(grep effect= -r release/Magarena/scripts_missing -h | sort | uniq) \
 	> $@
+
+requires_effects_candidate.txt: requires_effects.txt
+	cat $^ | sed 's/effect=//' | parallel grep '{}' -r release/Magarena/scripts_missing
+
+groovy_ability.txt:
+	join -v2 -t'_' \
+	<(grep "ability=\|^ " -r release/Magarena/scripts/*.txt -h | sed 's/^ \+/ability=/;s/;\\//' | sort | uniq) \
+	<(grep "ability=\|^ " -r scripts-builder/OUTPUT/scripts_missing -h | sed 's/^ \+/ability=/;s/;\\//' | sort | uniq) \
+	> $@
+
+requires_ability.txt: groovy_ability.txt
+	join -t'_' \
+	$^ \
+	<(grep "ability=\|^ " -r release/Magarena/scripts_missing -h | sed 's/^ \+/ability=/;s/;\\//' | sort | uniq) \
+	> $@
+
+requires_ability_candidate.txt: requires_ability.txt
+	cat $^ | sed 's/ability=//' | parallel grep '{}' -r release/Magarena/scripts_missing
