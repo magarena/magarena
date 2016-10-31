@@ -4,7 +4,17 @@ import java.awt.Color;
 
 public final class ColorHelper {
 
-  /**
+    /**
+     * http://stackoverflow.com/questions/3146055/formula-for-calculating-opposite-difference-for-hexadecimal-color
+     */
+    public static Color getOppositeColor(Color c) {
+        final int neg = 0xFFFFFF - c.getRGB();
+        // optional: set alpha to 255:
+        // int neg = (0xFFFFFF - originalRGB) | 0xFF000000;
+        return new Color(neg);
+    }
+
+   /**
    * Lightens a color by a given amount
    *
    * @param color The color to lighten

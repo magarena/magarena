@@ -20,13 +20,14 @@ import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.message.MessageStyle;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.utility.MagicFileSystem;
-import magic.utility.SortedProperties;
 
 public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE = new GeneralConfig();
 
     public static final String CONFIG_FILENAME="general.cfg";
+
+    private Properties settings;
 
     private boolean isMissingFiles = false;
 
@@ -540,6 +541,7 @@ public class GeneralConfig {
     }
 
     private void load(final Properties properties) {
+        this.settings = properties;
         frameLeft=Integer.parseInt(properties.getProperty(FRAME_LEFT,""+frameLeft));
         frameTop=Integer.parseInt(properties.getProperty(FRAME_TOP,""+frameTop));
         frameWidth=Integer.parseInt(properties.getProperty(FRAME_WIDTH,""+frameWidth));
@@ -646,10 +648,9 @@ public class GeneralConfig {
     }
 
     public void save() {
-        final Properties properties = new SortedProperties();
-        save(properties);
+        save(settings);
         try {
-            FileIO.toFile(getConfigFile(), properties, "General configuration");
+            FileIO.toFile(getConfigFile(), settings, "Magarena settings");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save general config");
         }
@@ -739,6 +740,14 @@ public class GeneralConfig {
 
     public String getKeywordsSettings() {
         return keywordsScreen;
+    }
+
+    public void set(String name, int value) {
+        settings.setProperty(name, Integer.toString(value));
+    }
+
+    public int getInt(String name, int value) {
+        return Integer.parseInt(settings.getProperty(name, Integer.toString(value)));
     }
 
 }
