@@ -11,3 +11,4 @@ ability=Flying, vigilance;\
 timing=main
 requires_groovy_code
 oracle=Flying, vigilance\nPlayers can't untap more than one creature during their untap steps.
+#Having more than one in play shouldn't allow untapping more than one creature

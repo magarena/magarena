@@ -7,3 +7,4 @@ cost={1}{W}
 timing=main
 requires_groovy_code
 oracle=Each player chooses a number of lands he or she controls equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players discard cards and sacrifice creatures the same way.
+#Choice should be what to keep, not what to sacrifice

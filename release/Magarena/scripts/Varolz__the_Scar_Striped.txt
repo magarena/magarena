@@ -10,3 +10,4 @@ ability=Sacrifice another creature: Regenerate SN.
 timing=main
 requires_groovy_code
 oracle=Each creature card in your graveyard has scavenge. The scavenge cost is equal to its mana cost.\nSacrifice another creature: Regenerate Varolz, the Scar-Striped.
+#Scavenge should function as a static ability

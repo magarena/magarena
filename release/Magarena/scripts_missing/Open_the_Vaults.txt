@@ -9,3 +9,4 @@ effect=Return all artifact and enchantment cards from all graveyards to the batt
 timing=main
 oracle=Return all artifact and enchantment cards from all graveyards to the battlefield under their owners' control.
 status=needs groovy
+#Issues with multiple players returning Auras from graveyards
