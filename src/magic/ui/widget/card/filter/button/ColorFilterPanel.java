@@ -72,6 +72,6 @@ public class ColorFilterPanel extends FilterPanel {
 
     @Override
     public LayoutManager getFilterPanelLayout() {
-        return new MigLayout("insets 0");
+        return new MigLayout("insets 0, gapx 8");
     }
 }

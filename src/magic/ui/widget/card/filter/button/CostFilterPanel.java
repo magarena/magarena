@@ -50,6 +50,6 @@ public class CostFilterPanel extends CheckBoxFilterPanel {
 
     @Override
     public LayoutManager getFilterPanelLayout() {
-        return new MigLayout("flowx, wrap 6, insets 2, gap 8");
+        return new MigLayout("flowx, wrap 6, insets 4, gap 10 9");
     }        
 }

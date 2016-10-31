@@ -1,19 +1,13 @@
 package magic.ui.widget.card.filter;
 
-import java.awt.Component;
-import javax.swing.JCheckBox;
-import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.M.MCheckBox;
 
 @SuppressWarnings("serial")
-class FilterCheckBox extends JCheckBox
+class FilterCheckBox extends MCheckBox
     implements IFilterCheckBox {
 
     FilterCheckBox(String text) {
         super(text);
-        setOpaque(false);
-        setForeground(ThemeFactory.getTheme().getTextColor());
-        setFocusPainted(true);
-        setAlignmentX(Component.LEFT_ALIGNMENT);
     }
 
     @Override

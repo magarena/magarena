@@ -1,6 +1,7 @@
 package magic.ui.widget.M;
 
 import java.awt.Color;
+import java.awt.event.ActionListener;
 import java.awt.event.ItemListener;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -34,6 +35,14 @@ public class MCheckBox extends MWidget {
         setIcons();
     }
 
+    public MCheckBox(String text) {
+        this(text, false);
+    }
+
+    public MCheckBox() {
+        setIcons();
+    }
+
     @Override
     public JComponent component() {
         return cb;
@@ -61,6 +70,10 @@ public class MCheckBox extends MWidget {
         return cb.isSelected();
     }
 
+    public void setSelected(boolean b) {
+        cb.setSelected(b);
+    }
+
     public void setVerticalTextPosition(int i) {
         cb.setVerticalTextPosition(i);
     }
@@ -69,4 +82,19 @@ public class MCheckBox extends MWidget {
         cb.addChangeListener(l);
     }
 
+    public void addActionListener(ActionListener l) {
+        cb.addActionListener(l);
+    }
+
+    public String getText() {
+        return cb.getText();
+    }
+
+    public void setActionCommand(String s) {
+        cb.setActionCommand(s);
+    }
+
+    public void doClick() {
+        cb.doClick();
+    }
 }

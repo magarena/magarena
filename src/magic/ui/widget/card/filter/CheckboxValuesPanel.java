@@ -22,7 +22,7 @@ public class CheckboxValuesPanel extends CheckBoxFilterValuesPanel {
                 MouseHelper.showDefaultCursor(cb);
             });
             checkboxes[i] = cb;
-            add(checkboxes[i]);
+            add(checkboxes[i].component());
         }
     }
 
