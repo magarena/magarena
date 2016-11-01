@@ -8,3 +8,4 @@ ability=Undaunted
 effect=Destroy two target creatures.
 timing=removal
 oracle=Undaunted\nDestroy two target creatures.
+status=not supported: multiple-targets

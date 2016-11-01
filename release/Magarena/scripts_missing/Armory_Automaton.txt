@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN enters the battlefield or attacks, you may attach any number of target Equipment to it.
 timing=main
 oracle=Whenever Armory Automaton enters the battlefield or attacks, you may attach any number of target Equipment to it.
+status=not supported: multiple-targets

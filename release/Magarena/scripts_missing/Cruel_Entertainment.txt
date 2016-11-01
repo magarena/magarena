@@ -7,3 +7,4 @@ cost={6}{B}
 effect=Choose target player and another target player. The first player controls the second player during the second player's next turn, and the second player controls the first player during the first player's next turn.
 timing=main
 oracle=Choose target player and another target player. The first player controls the second player during the second player's next turn, and the second player controls the first player during the first player's next turn.
+status=not supported: control-player

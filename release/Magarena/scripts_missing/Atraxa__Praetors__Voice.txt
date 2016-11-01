@@ -10,3 +10,4 @@ ability=Flying, vigilance, deathtouch, lifelink;\
         At the beginning of your end step, proliferate.
 timing=main
 oracle=Flying, vigilance, deathtouch, lifelink\nAt the beginning of your end step, proliferate.
+status=not supported: proliferate

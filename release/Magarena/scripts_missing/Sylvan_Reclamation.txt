@@ -8,3 +8,4 @@ ability=Basic landcycling {2}
 effect=Exile up to two target artifacts and/or enchantments.
 timing=removal
 oracle=Exile up to two target artifacts and/or enchantments.\nBasic landcycling {2}
+status=not supported: multiple-targets

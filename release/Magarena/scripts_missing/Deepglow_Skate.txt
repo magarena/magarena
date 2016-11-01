@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, double the number of each kind of counter on any number of target permanents.
 timing=main
 oracle=When Deepglow Skate enters the battlefield, double the number of each kind of counter on any number of target permanents.
+status=not supported: multiple-targets
