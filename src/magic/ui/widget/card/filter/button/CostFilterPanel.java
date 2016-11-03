@@ -25,11 +25,6 @@ public class CostFilterPanel extends CheckBoxFilterPanel {
     }
 
     @Override
-    public boolean hideSearchOperandAND() {
-        return true;
-    }
-
-    @Override
     public boolean isCardValid(MagicCardDefinition card, int i) {
         return values[i] == "X" ? card.hasX() : card.hasConvertedCost(Integer.parseInt(values[i]));
     }
