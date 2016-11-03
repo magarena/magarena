@@ -31,14 +31,15 @@ public class CostFilterPanel extends CheckBoxFilterPanel {
 
     @Override
     public boolean isCardValid(MagicCardDefinition card, int i) {
-        return card.hasConvertedCost(Integer.parseInt(values[i]));
+        return values[i] == "X" ? card.hasX() : card.hasConvertedCost(Integer.parseInt(values[i]));
     }
 
     @Override
     protected String[] getFilterValues() {
-        values =  new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
-        for (int i = 0; i <= MagicManaCost.MAXIMUM_MANA_COST; i++) {
-            values[i] = Integer.toString(i);
+        values =  new String[MagicManaCost.MAXIMUM_MANA_COST + 2];
+        values[0] = "X";
+        for (int i = 1; i <= MagicManaCost.MAXIMUM_MANA_COST + 1; i++) {
+            values[i] = Integer.toString(i-1);
         }
         return values;
     }
@@ -51,5 +52,5 @@ public class CostFilterPanel extends CheckBoxFilterPanel {
     @Override
     public LayoutManager getFilterPanelLayout() {
         return new MigLayout("flowx, wrap 6, insets 4, gap 10 9");
-    }        
+    }
 }
