@@ -1,0 +1,9 @@
+name=Phyrexian Rebirth
+image=http://magiccards.info/scans/en/mbs/15.jpg
+value=3.773
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+timing=main
+oracle=Destroy all creatures, then create an X/X colorless Horror artifact creature token, where X is the number of creatures destroyed this way.
+requires_groovy_code
