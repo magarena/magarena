@@ -8,3 +8,4 @@ ability=Undaunted
 effect=Return up to two target cards from your graveyard to your hand. Exile SN.
 timing=draw
 oracle=Undaunted\nReturn up to two target cards from your graveyard to your hand. Exile Seeds of Renewal.
+status=not supported: multiple-targets
