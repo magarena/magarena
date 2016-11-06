@@ -13,13 +13,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final ChangeLifeAction act = new ChangeLifeAction(it,-(it.getLife()+1)/2);
-                game.doAction(act);
-                if (event.isKicked()) {
-                    final int amount = -act.getLifeChange();
-                    final MagicPlayer player = event.getPlayer();
-                    game.logAppendValue(player,amount);
-                    game.doAction(new ChangeLifeAction(player,amount));
+                if (it.getLife()>0) {
+                    final ChangeLifeAction act = new ChangeLifeAction(it,-(it.getLife()+1)/2);
+                    game.doAction(act);
+                    if (event.isKicked()) {
+                        final int amount = -act.getLifeChange();
+                        final MagicPlayer player = event.getPlayer();
+                        game.logAppendValue(player,amount);
+                        game.doAction(new ChangeLifeAction(player,amount));
+                    }
                 }
             });
         }

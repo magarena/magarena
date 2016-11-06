@@ -12,7 +12,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             game.doAction(new DrawAction(player,4));
-            game.doAction(new ChangeLifeAction(player,-(player.getLife()+1)/2));
+            if (player.getLife()>0) {
+                game.doAction(new ChangeLifeAction(player,-(player.getLife()+1)/2));
+            }
         }
     }
 ]
