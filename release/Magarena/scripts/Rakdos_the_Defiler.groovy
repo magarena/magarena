@@ -9,25 +9,27 @@ def A_NON_DEMON_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
     "a non-Demon permanent to sacrifice"
 );
 
+def EVENT_ACTION = {
+    final MagicGame game, final MagicEvent event ->
+    def amt = (event.getPlayer().getNrOfPermanents(NON_DEMON_PERMANENT_YOU_CONTROL) + 1).intdiv(2);
+    game.addEvent(new MagicRepeatedPermanentsEvent(
+        event.getSource(),
+        event.getPlayer(),
+        A_NON_DEMON_PERMANENT_YOU_CONTROL,
+        amt,
+        MagicChainEventFactory.Sac
+    ));
+}
+
 [
     new ThisAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent creature) {
             return new MagicEvent(
                 permanent,
-                this,
+                EVENT_ACTION,
                 "PN sacrifices half the non-Demon permanents he or she controls, rounded up."
             );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicRepeatedPermanentsEvent(
-                event.getSource(),
-                A_NON_DEMON_PERMANENT_YOU_CONTROL,
-                (int)Math.ceil(event.getPlayer().getNrOfPermanents(NON_DEMON_PERMANENT_YOU_CONTROL)/2),
-                MagicChainEventFactory.Sac
-            ));
         }
     },
     new ThisCombatDamagePlayerTrigger() {
@@ -36,20 +38,9 @@ def A_NON_DEMON_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
             return new MagicEvent(
                 permanent,
                 damage.getTargetPlayer(),
-                this,
+                EVENT_ACTION,
                 "PN sacrifices half the non-Demon permanents he or she controls, rounded up."
             );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int n = (int)Math.ceil(event.getPlayer().getNrOfPermanents(NON_DEMON_PERMANENT_YOU_CONTROL)/2);
-            for (int i=n;i>0;i--) {
-                game.addEvent(new MagicSacrificePermanentEvent(
-                    event.getSource(),
-                    event.getPlayer(),
-                    A_NON_DEMON_PERMANENT_YOU_CONTROL
-                ));
-            }
         }
     }
 ]

@@ -27,8 +27,8 @@
             event.processTarget(game, {
                 final MagicPermanent permanent = event.getPermanent();
                 final int amount = event.getRefInt();
-                final int targetAmount = (int)Math.floor(amount/2);
-                final int playerAmount = (int)Math.ceil(amount/2);
+                def targetAmount = amount.intdiv(2);
+                def playerAmount = (amount+1).intdiv(2);
                 game.doAction(new DealDamageAction(permanent, it, targetAmount));
                 game.doAction(new DealDamageAction(permanent, event.getPlayer(), playerAmount));
             });
