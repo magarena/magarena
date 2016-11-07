@@ -21,8 +21,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                def amount = player.getLife().intdiv(2);
-                game.doAction(new DealDamageAction(event.getSource(), player, amount));
+                game.doAction(new DealDamageAction(
+                    event.getSource(),
+                    player,
+                    player.getHalfLifeRoundDown()
+                ));
             }
         }
     }

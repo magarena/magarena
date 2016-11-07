@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new ChangeLifeAction(player,-(player.getLife()+1)/2));
+            game.doAction(new ChangeLifeAction(player,-player.getHalfLifeRoundUp()));
         }
     },
 
@@ -31,9 +31,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            if (player.getLife()>0) {
-                game.doAction(new ChangeLifeAction(player,-(player.getLife()+1)/2));
-            }
+            game.doAction(new ChangeLifeAction(player,-player.getHalfLifeRoundUp()));
         }
     }
 ]

@@ -10,7 +10,7 @@ def EFFECT = MagicRuleEventAction.create("SN becomes a 4/4 Horror creature with 
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayLifeEvent(source,(source.getController().getLife().abs() + 1).intdiv(2))
+                new MagicPayLifeEvent(source, source.getController().getHalfLifeRoundUp())
             ];
         }
 

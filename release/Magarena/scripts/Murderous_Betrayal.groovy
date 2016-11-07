@@ -8,7 +8,7 @@
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{B}{B}"),
-                new MagicPayLifeEvent(source,(source.getController().getLife().abs() + 1).intdiv(2))
+                new MagicPayLifeEvent(source, source.getController().getHalfLifeRoundUp())
             ];
         }
 
