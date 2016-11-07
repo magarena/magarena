@@ -30,10 +30,12 @@ public abstract class MagicPhase {
                 game.update();
                 break;
             case ActivePlayer:
+                game.update();
                 game.checkStatePutTriggers();
                 game.addEvent(new MagicPriorityEvent(game.getTurnPlayer()));
                 break;
             case OtherPlayer:
+                game.update();
                 game.checkStatePutTriggers();
                 game.addEvent(new MagicPriorityEvent(game.getTurnPlayer().getOpponent()));
                 break;
