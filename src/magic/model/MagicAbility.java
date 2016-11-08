@@ -600,6 +600,11 @@ public enum MagicAbility {
             card.add(EntersBattlefieldTrigger.ChooseOpponent);
         }
     },
+    EntersChoosePlayer("As SN enters the battlefield, choose a player\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(EntersBattlefieldTrigger.ChoosePlayer);
+        }
+    },
     EntersTapped("SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(EntersTappedTrigger.create());
