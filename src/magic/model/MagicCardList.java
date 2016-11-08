@@ -145,18 +145,18 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         }
     }
 
-    private int getNrOfLands() {
-        int lands=0;
+    public int getNrOf(MagicType type) {
+        int amount=0;
         for (final MagicCard card : this) {
-            if (card.getCardDefinition().isLand()) {
-                lands++;
+            if (card.getCardDefinition().hasType(type)) {
+                amount++;
             }
         }
-        return lands;
+        return amount;
     }
 
     private boolean useSmartShuffle() {
-        final int lands = getNrOfLands();
+        final int lands = getNrOf(MagicType.Land);
         final int total = size();
         return lands == 16 && total == 40;
     }
