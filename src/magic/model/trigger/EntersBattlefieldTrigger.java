@@ -7,11 +7,13 @@ import magic.model.MagicGame;
 import magic.model.MagicMessage;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanentState;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
 import magic.model.action.PlayTokensAction;
 import magic.model.action.SacrificeAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -71,15 +73,20 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
         public MagicEvent executeTrigger(MagicGame game, MagicPermanent permanent, MagicPayedCost data) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.Negative("a Player"),
+                MagicTargetChoice.Negative("a player"),
                 this,
-                "PN chooses a player$"
+                "PN chooses a player$."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.getPermanent().setChosenPlayer(event.getChosenPlayer());
+            event.processTargetPlayer(game, new MagicPlayerAction() {
+                @Override
+                public void doAction(final MagicPlayer player) {
+                    event.getPermanent().setChosenPlayer(player);
+                }
+            });
         }
     };
 

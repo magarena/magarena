@@ -569,15 +569,6 @@ public class MagicEvent implements MagicCopyable {
         return chosen;
     }
 
-    public MagicPlayer getChosenPlayer() {
-        for (Object obj : chosen) {
-            if (obj instanceof  MagicPlayer) {
-                return (MagicPlayer)obj;
-            }
-        }
-        throw new RuntimeException("Unable to find player");
-    }
-
     private MagicTarget getLegalTarget(final MagicGame game) {
         for (final Object obj : chosen) {
             if (obj instanceof MagicTarget) {
