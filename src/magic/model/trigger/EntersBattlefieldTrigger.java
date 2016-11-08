@@ -79,7 +79,7 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.getPermanent().setChosenPlayer(event.getPlayer());
+            event.getPermanent().setChosenPlayer(event.getChosenPlayer());
         }
     };
 
