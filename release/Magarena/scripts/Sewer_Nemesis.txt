@@ -6,8 +6,7 @@ type=Creature
 subtype=Horror
 cost={3}{B}
 pt=*/*
-ability=As SN enters the battlefield, choose a player.;\
-        SN's power and toughness are each equal to the number of cards in the chosen player's graveyard.;\
-        Whenever the chosen player casts a spell, that player puts the top card of his or her library into his or her graveyard.
+ability=As SN enters the battlefield, choose a player.
 timing=main
 oracle=As Sewer Nemesis enters the battlefield, choose a player.\nSewer Nemesis's power and toughness are each equal to the number of cards in the chosen player's graveyard.\nWhenever the chosen player casts a spell, that player puts the top card of his or her library into his or her graveyard.
+requires_groovy_code
