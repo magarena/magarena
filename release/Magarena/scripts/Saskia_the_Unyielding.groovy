@@ -2,10 +2,8 @@
     new DamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return damage.isTargetPlayer() && 
-            damage.isCombat() &&
-            damage.getSource().isFriend(permanent) &&
-            damage.getSource().hasType(MagicType.Creature) ?
+            return damage.getSource().hasType(MagicType.Creature) && damage.getSource().isFriend(permanent) &&
+                   damage.isCombat() && damage.isTargetPlayer() ?
                 new MagicEvent(
                     damage.getSource(),
                     permanent.getChosenPlayer(),
