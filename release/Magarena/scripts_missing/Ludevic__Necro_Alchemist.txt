@@ -4,7 +4,7 @@ value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Human,Wizard
-cost={1}{R}{U}
+cost={1}{U}{R}
 pt=1/4
 ability=At the beginning of each player's end step, that player may draw a card if a player other than you lost life this turn.;\
         Partner

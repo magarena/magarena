@@ -7,5 +7,5 @@ subtype=Human,Merfolk
 cost={1}{G}{U}
 pt=1/4
 timing=main
+oracle={G}{U}, {T}: Double the number of each kind of counter on target artifact, creature, or land.
 requires_groovy_code
-oracle={G}{U}, {T}: For each counter on target artifact, creature, or land, put another of those counters on that permanent.

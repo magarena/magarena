@@ -5,6 +5,6 @@ removal=5
 rarity=C
 type=Instant
 cost={B}{R}
-timing=removal
 effect=Destroy target creature. It can't be regenerated.
+timing=removal
 oracle=Destroy target creature. It can't be regenerated.

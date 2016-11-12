@@ -4,9 +4,9 @@ value=3.818
 rarity=R
 type=Enchantment
 cost={1}{B}
-ability=Whenever an opponent discards a creature card, put a 2/2 black Zombie creature token onto the battlefield.;\
+ability=Whenever an opponent discards a creature card, create a 2/2 black Zombie creature token.;\
         Whenever an opponent discards a land card, add {B}{B} to your mana pool.;\
         Whenever an opponent discards a noncreature, nonland card, draw a card.
 timing=enchantment
-oracle=Whenever an opponent discards a creature card, put a 2/2 black Zombie creature token onto the battlefield.\nWhenever an opponent discards a land card, add {B}{B} to your mana pool.\nWhenever an opponent discards a noncreature, nonland card, draw a card.
+oracle=Whenever an opponent discards a creature card, create a 2/2 black Zombie creature token.\nWhenever an opponent discards a land card, add {B}{B} to your mana pool.\nWhenever an opponent discards a noncreature, nonland card, draw a card.
 status=not supported: add-multiple-mana

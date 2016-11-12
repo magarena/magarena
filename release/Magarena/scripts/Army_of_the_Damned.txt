@@ -7,4 +7,4 @@ cost={5}{B}{B}{B}
 effect=Create thirteen 2/2 black Zombie creature tokens that's tapped.
 ability=Flashback {7}{B}{B}{B}
 timing=main
-oracle=Create thirteen 2/2 black Zombie creature tokens that's tapped.\nFlashback {7}{B}{B}{B}
+oracle=Create thirteen tapped 2/2 black Zombie creature tokens.\nFlashback {7}{B}{B}{B}

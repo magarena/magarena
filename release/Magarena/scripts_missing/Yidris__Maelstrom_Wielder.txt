@@ -9,4 +9,4 @@ pt=5/4
 ability=Trample;\
         Whenever SN deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.
 timing=main
-oracle=Trample\nWhenever SN deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.
+oracle=Trample\nWhenever Yidris, Maelstrom Wielder deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.

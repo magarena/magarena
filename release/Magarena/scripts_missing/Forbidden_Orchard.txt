@@ -4,7 +4,7 @@ value=4.516
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool.;\
-        Whenever you tap SN for mana, target opponent puts a 1/1 colorless Spirit creature token onto the battlefield.
+        Whenever you tap SN for mana, target opponent creates a 1/1 colorless Spirit creature token.
 timing=land
-oracle={T}: Add one mana of any color to your mana pool.\nWhenever you tap Forbidden Orchard for mana, target opponent puts a 1/1 colorless Spirit creature token onto the battlefield.
+oracle={T}: Add one mana of any color to your mana pool.\nWhenever you tap Forbidden Orchard for mana, target opponent creates a 1/1 colorless Spirit creature token.
 status=not supported: when-tap-for-mana

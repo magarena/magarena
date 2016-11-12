@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Merfolk,Wizard
 cost={G}{U}
 pt=1/3
-ability={4}: Scry 1, then reveal the top card of your library. If it's a land card, put it onto the battlefield tapped. Otherwise draw a card.;\
+ability={4}: Scry 1, then reveal the top card of your library. If it's a land card, put it onto the battlefield tapped. Otherwise, draw a card.;\
         Partner
 timing=main
-oracle={4}: Scry 1, then reveal the top card of your library. If it's a land card, put it onto the battlefield tapped. Otherwise draw a card.\nPartner
+oracle={4}: Scry 1, then reveal the top card of your library. If it's a land card, put it onto the battlefield tapped. Otherwise, draw a card.\nPartner

@@ -7,5 +7,6 @@ subtype=Aura
 cost={3}{R}
 ability=Enchant permanent;\
         When SN enters the battlefield or at the beginning of your upkeep, gain control of enchanted permanent until end of turn. Untap that permanent. It gains haste until end of turn.
-timing=main
+timing=aura
+enchant=default,creature
 oracle=Enchant permanent\nWhen Frenzied Fugue enters the battlefield or at the beginning of your upkeep, gain control of enchanted permanent until end of turn. Untap that permanent. It gains haste until end of turn.
