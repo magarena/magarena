@@ -10,3 +10,4 @@ ability=Enchant player;\
         When enchanted player loses the game, you gain X life and draw X cards, where X is the number of spite counters on SN.
 timing=main
 oracle=Enchant player\nWhenever enchanted player casts a spell, put a spite counter on Curse of Vengeance.\nWhen enchanted player loses the game, you gain X life and draw X cards, where X is the number of spite counters on Curse of Vengeance.
+status=not supported: enchant-player
