@@ -1,5 +1,6 @@
 name=Allied Strategies
-image=http://magiccards.info/scans/en/pvc/63.jpg
+image=http://magiccards.info/scans/en/ps/20.jpg
+image_updated=2016-11-20
 value=3.029
 rarity=U
 type=Sorcery

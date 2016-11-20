@@ -1,7 +1,8 @@
 name=Akroma, Angel of Wrath
-image=http://magiccards.info/scans/en/dvd/1.jpg
+image=http://magiccards.info/scans/en/le/1.jpg
+image_updated=2016-11-20
 value=4.475
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Angel
 cost={5}{W}{W}{W}

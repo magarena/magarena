@@ -8,4 +8,4 @@ cost={2}{G}{W}
 pt=2/5
 ability=First strike; reach
 timing=main
-oracle=First strike; reach
+oracle=First strike, reach

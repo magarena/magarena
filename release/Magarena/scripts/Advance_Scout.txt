@@ -1,5 +1,6 @@
 name=Advance Scout
-image=http://magiccards.info/scans/en/br/2.jpg
+image=http://magiccards.info/scans/en/tp/213.jpg
+image_updated=2016-11-20
 value=3.645
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Ascendant Evincar
-image=http://magiccards.info/scans/en/dpa/19.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/pch/17.jpg
+image_updated=2016-11-20
 value=3.968
 rarity=R
 type=Legendary,Creature

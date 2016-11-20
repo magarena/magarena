@@ -1,5 +1,6 @@
 name=Albino Troll
-image=http://magiccards.info/scans/en/gvl/3.jpg
+image=http://magiccards.info/scans/en/us/231.jpg
+image_updated=2016-11-20
 value=3.902
 rarity=U
 type=Creature

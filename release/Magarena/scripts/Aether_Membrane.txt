@@ -1,6 +1,6 @@
 name=Aether Membrane
-image=http://magiccards.info/scans/en/ddi/48.jpg
-image_updated=2016-09-27
+image=http://magiccards.info/scans/en/pc/93.jpg
+image_updated=2016-11-20
 value=3.712
 rarity=U
 type=Creature

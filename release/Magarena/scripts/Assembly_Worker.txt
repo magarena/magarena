@@ -1,5 +1,6 @@
 name=Assembly-Worker
-image=http://magiccards.info/scans/en/ddf/45.jpg
+image=http://magiccards.info/scans/en/ts/248.jpg
+image_updated=2016-11-20
 value=2.851
 rarity=U
 type=Artifact,Creature

@@ -1,7 +1,8 @@
 name=Angelic Voices
-image=http://magiccards.info/scans/en/ch/59.jpg
+image=http://magiccards.info/scans/en/lg/173.jpg
+image_updated=2016-11-20
 value=2.310
-rarity=U
+rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=Creatures you control get +1/+1 as long as you control no nonartifact, nonwhite creatures.

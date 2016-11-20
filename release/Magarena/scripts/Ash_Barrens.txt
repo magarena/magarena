@@ -1,5 +1,6 @@
 name=Ash Barrens
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/kCB1yYO1nV_EN.png
+image=http://magiccards.info/scans/en/c16/56.jpg
+image_updated=2016-11-20
 value=2.500
 rarity=C
 type=Land

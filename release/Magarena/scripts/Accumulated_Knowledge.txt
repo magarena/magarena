@@ -1,5 +1,6 @@
 name=Accumulated Knowledge
-image=http://magiccards.info/scans/en/ddo/35.jpg
+image=http://magiccards.info/scans/en/ne/26.jpg
+image_updated=2016-11-20
 value=4.560
 rarity=C
 type=Instant
