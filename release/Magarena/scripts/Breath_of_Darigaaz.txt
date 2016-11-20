@@ -6,7 +6,7 @@ removal=3
 rarity=U
 type=Sorcery
 cost={1}{R}
+ability=Kicker {2}
 timing=removal
-ability=kicker {2}
-requires_groovy_code
 oracle=Kicker {2}\nBreath of Darigaaz deals 1 damage to each creature without flying and each player. If Breath of Darigaaz was kicked, it deals 4 damage to each creature without flying and each player instead.
+requires_groovy_code

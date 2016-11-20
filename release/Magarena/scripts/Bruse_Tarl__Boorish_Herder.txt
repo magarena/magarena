@@ -1,5 +1,6 @@
 name=Bruse Tarl, Boorish Herder
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/nqeWaa1SYR_EN.png
+image=http://magiccards.info/scans/en/c16/30.jpg
+image_updated=2016-11-20
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -9,5 +9,5 @@ pt=1/1
 ability=Flying;\
         SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {1}. If you do, untap SN.
-timing=artifact
+timing=main
 oracle=Flying\nBrass Gnat doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {1}. If you do, untap Brass Gnat.

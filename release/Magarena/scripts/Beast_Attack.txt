@@ -1,10 +1,11 @@
 name=Beast Attack
-image=http://magiccards.info/scans/en/gvl/23.jpg
+image=http://magiccards.info/scans/en/od/230.jpg
+image_updated=2016-11-20
 value=3.961
 rarity=U
 type=Instant
 cost={2}{G}{G}{G}
-effect=Create a 4/4 green Beast creature token.
 ability=Flashback {2}{G}{G}{G}
-timing=flash
+effect=Create a 4/4 green Beast creature token.
+timing=token
 oracle=Create a 4/4 green Beast creature token.\nFlashback {2}{G}{G}{G}

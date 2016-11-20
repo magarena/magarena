@@ -1,5 +1,6 @@
 name=Banisher Priest
-image=http://magiccards.info/scans/en/ddo/2.jpg
+image=http://magiccards.info/scans/en/m14/7.jpg
+image_updated=2016-11-20
 value=3.623
 rarity=U
 type=Creature

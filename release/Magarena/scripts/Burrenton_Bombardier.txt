@@ -1,7 +1,8 @@
 name=Burrenton Bombardier
-image=http://magiccards.info/scans/en/ddf/11.jpg
-rarity=C
+image=http://magiccards.info/scans/en/mt/3.jpg
+image_updated=2016-11-20
 value=2.860
+rarity=C
 type=Creature
 subtype=Kithkin,Soldier
 cost={2}{W}

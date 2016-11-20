@@ -1,7 +1,7 @@
 name=Brass Man
 image=http://magiccards.info/scans/en/4e/320.jpg
 value=3.423
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Construct
 cost={1}

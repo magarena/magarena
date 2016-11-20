@@ -1,7 +1,7 @@
 name=Bone Flute
 image=http://magiccards.info/scans/en/dk/94.jpg
 value=2.117
-rarity=C
+rarity=U
 type=Artifact
 cost={3}
 ability={2}, {T}: All creatures get -1/-0 until end of turn.

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
+ability=Enchant creature
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each of its colors.
+requires_groovy_code

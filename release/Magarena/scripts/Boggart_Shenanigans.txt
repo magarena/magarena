@@ -1,5 +1,6 @@
 name=Boggart Shenanigans
-image=http://magiccards.info/scans/en/evg/54.jpg
+image=http://magiccards.info/scans/en/lw/155.jpg
+image_updated=2016-11-20
 value=3.521
 rarity=U
 type=Tribal,Enchantment

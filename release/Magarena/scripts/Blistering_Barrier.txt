@@ -7,5 +7,5 @@ subtype=Wall
 cost={2}{R}
 pt=5/2
 ability=Defender
-timing=main
+timing=smain
 oracle=Defender

@@ -1,5 +1,6 @@
 name=Browbeat
-image=http://magiccards.info/scans/en/ddk/66.jpg
+image=http://magiccards.info/scans/en/pch/50.jpg
+image_updated=2016-11-20
 value=3.579
 rarity=U
 type=Sorcery

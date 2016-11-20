@@ -7,5 +7,5 @@ subtype=Human,Cleric
 cost={1}{W}
 pt=1/1
 ability=Protection from creatures
-timing=smain
+timing=main
 oracle=Protection from creatures

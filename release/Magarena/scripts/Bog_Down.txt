@@ -4,7 +4,7 @@ value=3.269
 rarity=C
 type=Sorcery
 cost={2}{B}
-ability=Kicker—Sacrifice two lands
+ability=Kicker—Sacrifice two lands.
 timing=main
-requires_groovy_code
 oracle=Kicker—Sacrifice two lands.\nTarget player discards two cards. If Bog Down was kicked, that player discards three cards instead.
+requires_groovy_code

@@ -8,5 +8,5 @@ cost={5}
 pt=3/3
 ability=SN has haste as long as you control a red creature.;\
         SN has wither as long as you control a green creature.
-timing=artifact
+timing=main
 oracle=Blazethorn Scarecrow has haste as long as you control a red creature.\nBlazethorn Scarecrow has wither as long as you control a green creature.

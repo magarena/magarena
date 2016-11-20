@@ -6,6 +6,7 @@ type=Creature
 subtype=Archon
 cost={6}{W}{W}{W}
 pt=5/6
-ability=Flying;creatures your opponents control can't attack.
+ability=Flying;\
+        Creatures your opponents control can't attack.
 timing=main
 oracle=Flying\nCreatures can't attack you.

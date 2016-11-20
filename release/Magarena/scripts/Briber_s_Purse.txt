@@ -6,5 +6,5 @@ type=Artifact
 cost={X}
 ability=SN enters the battlefield with X gem counters on it.;\
         {1}, {T}, Remove a gem counter from SN: Target creature can't attack or block this turn.
-timing=main
+timing=artifact
 oracle=Briber's Purse enters the battlefield with X gem counters on it.\n{1}, {T}, Remove a gem counter from Briber's Purse: Target creature can't attack or block this turn.

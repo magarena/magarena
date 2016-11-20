@@ -8,5 +8,5 @@ cost={1}{G}
 pt=2/1
 ability=SN can't be countered.;\
         Shroud
-timing=fmain
+timing=main
 oracle=Blurred Mongoose can't be countered.\nShroud

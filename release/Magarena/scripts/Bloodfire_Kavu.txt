@@ -1,5 +1,6 @@
 name=Bloodfire Kavu
-image=http://magiccards.info/scans/en/ddi/54.jpg
+image=http://magiccards.info/scans/en/ap/58.jpg
+image_updated=2016-11-20
 value=3.469
 rarity=U
 type=Creature

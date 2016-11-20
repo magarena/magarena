@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=Madness {2}{B}
 effect=All creatures get -2/-2 until end of turn.
 timing=main
-oracle=All creatures get -2/-2 until end of turn. \nMadness {2}{B}
+oracle=All creatures get -2/-2 until end of turn.\nMadness {2}{B}

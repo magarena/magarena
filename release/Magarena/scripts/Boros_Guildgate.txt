@@ -1,6 +1,6 @@
 name=Boros Guildgate
-image=http://magiccards.info/scans/en/c15/280.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/dgm/147.jpg
+image_updated=2016-11-20
 value=3.636
 rarity=C
 type=Land

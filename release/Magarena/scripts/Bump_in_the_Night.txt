@@ -1,10 +1,11 @@
 name=Bump in the Night
-image=http://magiccards.info/scans/en/ddk/57.jpg
+image=http://magiccards.info/scans/en/isd/92.jpg
+image_updated=2016-11-20
 value=3.558
 rarity=C
 type=Sorcery
 cost={B}
-effect=Target opponent loses 3 life.
 ability=Flashback {5}{R}
+effect=Target opponent loses 3 life.
 timing=main
 oracle=Target opponent loses 3 life.\nFlashback {5}{R}

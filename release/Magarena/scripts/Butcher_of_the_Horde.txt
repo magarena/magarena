@@ -12,3 +12,4 @@ ability=Flying.;\
         Sacrifice another creature: SN gains haste until end of turn.
 timing=main
 oracle=Flying\nSacrifice another creature: Butcher of the Horde gains your choice of vigilance, lifelink, or haste until end of turn.
+#Choice should be made on resolution - If duplicated, should be able to choose a different ability so 'Choose one' would not work here either

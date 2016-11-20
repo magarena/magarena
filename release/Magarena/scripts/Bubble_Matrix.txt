@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability=Prevent all damage that would be dealt to creatures.
-timing=main
+timing=artifact
 oracle=Prevent all damage that would be dealt to creatures.

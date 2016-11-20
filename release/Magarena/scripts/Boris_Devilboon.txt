@@ -1,7 +1,7 @@
 name=Boris Devilboon
 image=http://magiccards.info/scans/en/lg/263.jpg
 value=2.266
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Zombie,Wizard
 cost={3}{B}{R}

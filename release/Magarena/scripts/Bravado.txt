@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Cast SN with AI only if you control two or more creatures.
+ability=Cast SN with AI only if you control two or more creatures.;\
+        Enchant creature
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each other creature you control.
+requires_groovy_code

@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{G}
 # awkward wording as filter is evaluated with respect to blocker
 ability=Creatures with flying your opponents control can't block creatures your opponents control.
-timing=main
+timing=enchantment
 oracle=Creatures with flying can't block creatures you control.

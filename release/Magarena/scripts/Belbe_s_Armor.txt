@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability={X}, {T}: Target creature gets -X/+X until end of turn.
-timing=main
+timing=artifact
 oracle={X}, {T}: Target creature gets -X/+X until end of turn.

@@ -7,5 +7,5 @@ subtype=Shapeshifter
 cost={1}{R/W}
 pt=2/1
 timing=main
+oracle=Whenever you cast a spell that's both red and white, Battlegate Mimic has base power and toughness 4/2 until end of turn and gains first strike until end of turn.
 requires_groovy_code
-oracle=Whenever you cast a spell that's both red and white, Battlegate Mimic becomes 4/2 and gains first strike until end of turn.

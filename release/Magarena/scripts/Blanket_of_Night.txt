@@ -4,6 +4,6 @@ value=3.695
 rarity=U
 type=Enchantment
 cost={1}{B}{B}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Each land is a Swamp in addition to its other land types.
+requires_groovy_code

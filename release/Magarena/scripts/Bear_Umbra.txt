@@ -5,8 +5,9 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{G}{G}
-ability=Enchanted creature gets +2/+2 and has "Whenever this creature attacks, untap all lands you control.";\
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has "Whenever this creature attacks, untap all lands you control.";\
         Totem armor
-timing=main
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "Whenever this creature attacks, untap all lands you control."\nTotem armor

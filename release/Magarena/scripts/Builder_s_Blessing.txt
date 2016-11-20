@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={3}{W}
 ability=Untapped creatures you control get +0/+2.
-timing=main
+timing=enchantment
 oracle=Untapped creatures you control get +0/+2.

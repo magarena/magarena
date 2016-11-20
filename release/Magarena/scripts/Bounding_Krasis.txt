@@ -9,5 +9,5 @@ cost={1}{G}{U}
 pt=3/3
 ability=Flash;\
         When SN enters the battlefield, you may tap or untap target creature.
-timing=main
+timing=flash
 oracle=Flash\nWhen Bounding Krasis enters the battlefield, you may tap or untap target creature.

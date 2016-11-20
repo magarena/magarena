@@ -7,7 +7,6 @@ subtype=Goblin,Rogue
 cost={2}{R}
 pt=2/1
 ability=Plainswalk;\
-        {2}{R}, Sacrifice SN: Destroy target Scarecrow.;\
-        {2}{R}, Sacrifice SN: Destroy target Plains.
+        {2}{R}, Sacrifice SN: Destroy target Scarecrow or Plains.
 timing=main
 oracle=Plainswalk\n{2}{R}, Sacrifice Boggart Arsonists: Destroy target Scarecrow or Plains.

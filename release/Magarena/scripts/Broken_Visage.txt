@@ -1,9 +1,9 @@
 name=Broken Visage
 image=http://magiccards.info/scans/en/5e/11.jpg
 value=3.485
-rarity=U
+rarity=R
 type=Instant
 cost={4}{B}
 timing=removal
+oracle=Destroy target nonartifact attacking creature. It can't be regenerated. Create a black Spirit creature token. Its power is equal to that creature's power and its toughness is equal to that creature's toughness. Sacrifice the token at the beginning of the next end step.
 requires_groovy_code
-oracle=Destroy target nonartifact attacking creature. It can't be regenerated. Create a black Spirit creature token with that creature's power and toughness. Sacrifice the token at the beginning of the next end step.

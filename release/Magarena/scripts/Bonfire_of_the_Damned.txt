@@ -5,7 +5,7 @@ removal=2
 rarity=M
 type=Sorcery
 cost={X}{X}{R}
+ability=Miracle {X}{R}
 timing=removal
-ability=miracle {X}{R}
-requires_groovy_code
 oracle=Bonfire of the Damned deals X damage to target player and each creature he or she controls.\nMiracle {X}{R}
+requires_groovy_code

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{R}
 ability=Whenever a creature blocks, SN deals 1 damage to that creature's controller.
-timing=main
+timing=enchantment
 oracle=Whenever a creature blocks, Battle Strain deals 1 damage to that creature's controller.

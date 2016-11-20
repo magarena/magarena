@@ -1,7 +1,7 @@
 name=Balduvian Conjurer
 image=http://magiccards.info/scans/en/ia/58.jpg
-value=2.904
-rarity=C
+value=2.500
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}

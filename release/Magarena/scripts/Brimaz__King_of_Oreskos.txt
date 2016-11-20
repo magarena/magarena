@@ -5,9 +5,9 @@ rarity=M
 type=Legendary,Creature
 subtype=Cat,Soldier
 cost={1}{W}{W}
-ability=Vigilance;\
-        Whenever SN attacks, create a 1/1 white Cat Soldier creature token with vigilance that's attacking.
 pt=3/4
+ability=Vigilance;\
+        Whenever SN attacks, create a 1/1 white Cat Soldier creature token with vigilance that's attacking.;\
 timing=main
-requires_groovy_code
 oracle=Vigilance\nWhenever Brimaz, King of Oreskos attacks, create a 1/1 white Cat Soldier creature token with vigilance that's attacking.\nWhenever Brimaz blocks a creature, create a 1/1 white Cat Soldier creature token with vigilance that's blocking that creature.
+requires_groovy_code

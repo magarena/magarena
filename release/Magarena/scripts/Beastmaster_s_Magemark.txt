@@ -6,7 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 static=player
-timing=fmain
+ability=Enchant creature
+timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1.\nWhenever a creature you control that's enchanted becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.
+requires_groovy_code

@@ -1,5 +1,6 @@
 name=Bloodfire Colossus
-image=http://magiccards.info/scans/en/ddi/62.jpg
+image=http://magiccards.info/scans/en/10e/191.jpg
+image_updated=2016-11-20
 value=3.975
 rarity=R
 type=Creature

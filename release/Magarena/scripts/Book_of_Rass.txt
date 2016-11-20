@@ -1,5 +1,6 @@
 name=Book of Rass
-image=http://magiccards.info/scans/en/ch/75.jpg
+image=http://magiccards.info/scans/en/dk/95.jpg
+image_updated=2016-11-20
 value=2.571
 rarity=U
 type=Artifact

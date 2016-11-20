@@ -1,9 +1,10 @@
 name=Boompile
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/MZVig9LbLK_EN.png
+image=http://magiccards.info/scans/en/c16/52.jpg
+image_updated=2016-11-20
 value=2.500
 rarity=R
 type=Artifact
 cost={4}
 ability={T}: Flip a coin. If you win the flip, destroy all nonland permanents.
-timing=main
+timing=artifact
 oracle={T}: Flip a coin. If you win the flip, destroy all nonland permanents.

@@ -6,5 +6,5 @@ type=Artifact,Creature
 subtype=Sable
 cost={2}
 pt=2/1
-timing=artifact
+timing=main
 oracle=NONE

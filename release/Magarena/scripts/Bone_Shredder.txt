@@ -1,5 +1,6 @@
 name=Bone Shredder
-image=http://magiccards.info/scans/en/pvc/5.jpg
+image=http://magiccards.info/scans/en/ul/49.jpg
+image_updated=2016-11-20
 value=3.625
 removal=1
 rarity=U

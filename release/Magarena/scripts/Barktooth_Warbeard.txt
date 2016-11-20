@@ -1,7 +1,7 @@
 name=Barktooth Warbeard
 image=http://magiccards.info/scans/en/lg/261.jpg
 value=2.149
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Warrior
 cost={4}{B}{R}{R}
