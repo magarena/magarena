@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Rogue
 cost={R}
 pt=1/1
-ability={R}, Sacrifice SN: Target player shuffles his or her library.
 timing=main
 oracle={R}, Sacrifice Boggart Forager: Target player shuffles his or her library.
+requires_groovy_code
