@@ -1,6 +1,7 @@
 name=Balance
 image=http://magiccards.info/scans/en/ema/2.jpg
-value=2.500
+image_updated=2016-11-20
+value=4.750
 rarity=M
 type=Sorcery
 cost={1}{W}
