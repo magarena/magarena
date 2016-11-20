@@ -4,7 +4,7 @@ value=3.458
 rarity=R
 type=Enchantment
 cost={2}{B}{R}{R}
-ability=Whenever a creature you control attacks, *it* gets +2/+0 until end of turn.~SN deals 1 damage to you.
+ability=Whenever a creature you control attacks, RN gets +2/+0 until end of turn.~SN deals 1 damage to you.
 timing=enchantment
 oracle=Whenever a creature you control attacks, it gets +2/+0 until end of turn and Anthem of Rakdos deals 1 damage to you.\nHellbent — As long as you have no cards in hand, if a source you control would deal damage to a creature or player, it deals double that damage to that creature or player instead.
 requires_groovy_code

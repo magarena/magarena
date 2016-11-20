@@ -5,6 +5,6 @@ value=4.255
 rarity=U
 type=Enchantment
 cost={4}{R}
-ability=Whenever a Beast enters the battlefield under your control, you may have *it* deal 4 damage to target opponent.
+ability=Whenever a Beast enters the battlefield under your control, you may have RN deal 4 damage to target opponent.
 timing=enchantment
 oracle=Whenever a Beast enters the battlefield under your control, you may have it deal 4 damage to target opponent.
