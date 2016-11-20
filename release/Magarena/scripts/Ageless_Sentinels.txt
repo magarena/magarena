@@ -9,5 +9,5 @@ pt=4/4
 ability=Defender;\
         Flying;\
         When SN blocks, SN becomes a Bird Giant,~and SN loses defender.
-timing=main
+timing=smain
 oracle=Defender\nFlying\nWhen Ageless Sentinels blocks, it becomes a Bird Giant, and it loses defender.

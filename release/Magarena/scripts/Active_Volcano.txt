@@ -1,7 +1,7 @@
 name=Active Volcano
 image=http://magiccards.info/scans/en/ch/43.jpg
 value=3.662
-rarity=U
+rarity=C
 type=Instant
 cost={R}
 effect=Choose one — (1) Destroy target blue permanent. (2) Return target Island to its owner's hand.

@@ -8,5 +8,5 @@ cost={5}{G}{G}
 pt=5/5
 ability=When SN enters the battlefield, create a 0/1 green Plant creature token for each land you control.;\
         Whenever a land enters the battlefield under your control, you may put a +1/+1 counter on each Plant creature you control.
-timing=fmain
+timing=main
 oracle=When Avenger of Zendikar enters the battlefield, create a 0/1 green Plant creature token for each land you control.\nLandfall — Whenever a land enters the battlefield under your control, you may put a +1/+1 counter on each Plant creature you control.

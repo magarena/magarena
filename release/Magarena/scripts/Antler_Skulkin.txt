@@ -7,5 +7,5 @@ subtype=Scarecrow
 cost={5}
 pt=3/3
 ability={2}: Target white creature gains persist until end of turn.
-timing=artifact
+timing=main
 oracle={2}: Target white creature gains persist until end of turn.

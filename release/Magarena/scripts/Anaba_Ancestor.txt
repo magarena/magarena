@@ -1,7 +1,7 @@
 name=Anaba Ancestor
 image=http://magiccards.info/scans/en/hl/81.jpg
 value=2.549
-rarity=C
+rarity=R
 type=Creature
 subtype=Minotaur,Spirit
 cost={1}{R}

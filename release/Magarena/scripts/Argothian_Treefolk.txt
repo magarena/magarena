@@ -1,7 +1,7 @@
 name=Argothian Treefolk
 image=http://magiccards.info/scans/en/aq/60.jpg
 value=2.825
-rarity=U
+rarity=C
 type=Creature
 subtype=Treefolk
 cost={3}{G}{G}

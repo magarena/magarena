@@ -1,5 +1,6 @@
 name=Ambush Commander
-image=http://magiccards.info/scans/en/evg/1.jpg
+image=http://magiccards.info/scans/en/sc/111.jpg
+image_updated=2016-11-20
 value=4.316
 rarity=R
 type=Creature

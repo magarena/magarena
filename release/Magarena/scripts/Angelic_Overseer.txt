@@ -8,5 +8,5 @@ cost={3}{W}{W}
 pt=5/3
 ability=Flying;\
         As long as you control a Human, SN has hexproof and indestructible.
-timing=fmain
+timing=main
 oracle=Flying\nAs long as you control a Human, Angelic Overseer has hexproof and indestructible.

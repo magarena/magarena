@@ -6,5 +6,5 @@ type=Artifact
 cost={4}
 ability={2}, {T}, Sacrifice a land: Draw a card.~Put a charge counter on SN.;\
         Remove three charge counters from SN: Draw a card.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice a land: Draw a card and put a charge counter on Arcane Spyglass.\nRemove three charge counters from Arcane Spyglass: Draw a card.

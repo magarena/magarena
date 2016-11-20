@@ -1,7 +1,7 @@
 name=Anarchy
 image=http://magiccards.info/scans/en/ia/170.jpg
 value=4.390
-rarity=R
+rarity=U
 type=Sorcery
 cost={2}{R}{R}
 ability=Cast SN with AI only if an opponent controls a white permanent.

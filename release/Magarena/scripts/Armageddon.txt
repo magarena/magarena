@@ -1,8 +1,7 @@
 name=Armageddon
 image=http://magiccards.info/scans/en/st/6.jpg
 value=4.367
-removal=2
-rarity=M
+rarity=R
 type=Sorcery
 cost={3}{W}
 ability=Cast SN with AI only if an opponent controls a land.

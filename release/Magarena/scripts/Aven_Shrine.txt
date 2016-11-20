@@ -4,6 +4,6 @@ value=1.696
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Whenever a player casts a spell, that player gains X life, where X is the number of cards in all graveyards with the same name as that spell.
+requires_groovy_code

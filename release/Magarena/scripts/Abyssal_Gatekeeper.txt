@@ -1,5 +1,6 @@
 name=Abyssal Gatekeeper
-image=http://magiccards.info/scans/en/dvd/31.jpg
+image=http://magiccards.info/scans/en/wl/1.jpg
+image_updated=2016-11-20
 value=3.938
 rarity=C
 type=Creature

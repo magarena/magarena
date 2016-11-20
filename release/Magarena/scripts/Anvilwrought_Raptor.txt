@@ -7,5 +7,5 @@ subtype=Bird
 cost={4}
 pt=2/1
 ability=Flying, first strike
-timing=artifact
+timing=main
 oracle=Flying, first strike

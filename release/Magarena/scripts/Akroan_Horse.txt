@@ -1,5 +1,6 @@
 name=Akroan Horse
-image=http://magiccards.info/scans/en/ths/210.jpg
+image=http://magiccards.info/scans/en/c16/241.jpg
+image_updated=2016-11-20
 value=3.424
 rarity=R
 type=Artifact,Creature

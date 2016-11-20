@@ -1,7 +1,7 @@
 name=Archangel
 image=http://magiccards.info/scans/en/avr/5.jpg
 value=3.206
-rarity=R
+rarity=U
 type=Creature
 subtype=Angel
 cost={5}{W}{W}

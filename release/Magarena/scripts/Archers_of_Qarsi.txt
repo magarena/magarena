@@ -8,5 +8,5 @@ cost={3}{G}
 pt=5/2
 ability=Defender;\
         Reach
-timing=main
+timing=smain
 oracle=Defender\nReach

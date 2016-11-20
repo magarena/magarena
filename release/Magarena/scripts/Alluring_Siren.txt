@@ -6,6 +6,6 @@ type=Creature
 subtype=Siren
 cost={1}{U}
 pt=1/1
-timing=smain
-requires_groovy_code
+timing=main
 oracle={T}: Target creature an opponent controls attacks you this turn if able.
+requires_groovy_code

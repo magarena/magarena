@@ -4,6 +4,6 @@ value=4.393
 rarity=R
 type=Artifact
 cost={2}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=Sacrifice a creature: Target player puts a number of cards equal to the sacrificed creature's power from the top of his or her library into his or her graveyard.
+requires_groovy_code

@@ -7,5 +7,5 @@ subtype=Elemental,Warrior
 cost={B/R}{B/R}{B/R}
 pt=4/4
 ability=SN can't block.
-timing=fmain
+timing=main
 oracle=Ashenmoor Gouger can't block.

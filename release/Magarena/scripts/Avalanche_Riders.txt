@@ -10,5 +10,5 @@ pt=2/2
 ability=Haste;\
         Echo {3}{R};\
         When SN enters the battlefield, destroy target land.
-timing=main
+timing=fmain
 oracle=Haste\nEcho {3}{R}\nWhen Avalanche Riders enters the battlefield, destroy target land.

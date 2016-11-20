@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Whenever equipped creature attacks, put a +1/+1 counter on RN.;\
+ability=Whenever equipped creature attacks, put a +1/+1 counter on *it*.;\
         Equip {2}
-timing=main
+timing=equipment
 oracle=Whenever equipped creature attacks, put a +1/+1 counter on it.\nEquip {2}

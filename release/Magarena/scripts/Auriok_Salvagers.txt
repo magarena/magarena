@@ -1,7 +1,7 @@
 name=Auriok Salvagers
 image=http://magiccards.info/scans/en/mma/5.jpg
 value=3.557
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Soldier
 cost={3}{W}

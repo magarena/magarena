@@ -1,7 +1,7 @@
 name=Akroma's Memorial
 image=http://magiccards.info/scans/en/m13/200.jpg
 value=3.915
-rarity=R
+rarity=M
 type=Legendary,Artifact
 cost={7}
 ability=creatures you control have flying, first strike, vigilance, trample, haste, protection from black, protection from red

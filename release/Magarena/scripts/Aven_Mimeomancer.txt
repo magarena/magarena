@@ -7,6 +7,6 @@ subtype=Bird,Wizard
 cost={1}{W}{U}
 pt=3/1
 ability=Flying
-timing=smain
-requires_groovy_code
+timing=main
 oracle=Flying\nAt the beginning of your upkeep, you may put a feather counter on target creature. If you do, that creature has base power and toughness 3/1 and has flying for as long as it has a feather counter on it.
+requires_groovy_code

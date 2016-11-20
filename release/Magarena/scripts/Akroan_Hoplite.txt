@@ -1,5 +1,6 @@
 name=Akroan Hoplite
-image=http://magiccards.info/scans/en/ths/185.jpg
+image=http://magiccards.info/scans/en/cn2/197.jpg
+image_updated=2016-11-20
 value=3.570
 rarity=U
 type=Creature

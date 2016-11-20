@@ -1,7 +1,7 @@
 name=Azure Drake
 image=http://magiccards.info/scans/en/m11/46.jpg
 value=2.757
-rarity=U
+rarity=C
 type=Creature
 subtype=Drake
 cost={3}{U}

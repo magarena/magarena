@@ -1,7 +1,7 @@
 name=Anaba Spirit Crafter
 image=http://magiccards.info/scans/en/hl/86.jpg
 value=2.742
-rarity=C
+rarity=R
 type=Creature
 subtype=Minotaur,Shaman
 cost={2}{R}{R}

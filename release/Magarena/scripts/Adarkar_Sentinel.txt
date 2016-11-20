@@ -1,7 +1,7 @@
 name=Adarkar Sentinel
 image=http://magiccards.info/scans/en/ia/281.jpg
 value=2.616
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Soldier
 cost={5}

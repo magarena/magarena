@@ -4,6 +4,6 @@ value=3.500
 rarity=U
 type=Enchantment
 cost={2}{R}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=At the beginning of each player's upkeep, Ancient Runes deals damage to that player equal to the number of artifacts he or she controls.
+requires_groovy_code
