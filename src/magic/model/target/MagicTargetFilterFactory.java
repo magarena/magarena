@@ -847,6 +847,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR = permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.Any);
 
+    public static final MagicPermanentFilterImpl SCARECROW_OR_PLAINS = permanentOr(MagicSubType.Scarecrow, MagicSubType.Plains, Control.Any);
+
     public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK = permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.Any);
 
     public static final MagicPermanentFilterImpl GOBLIN_CREATURE = permanentAnd(MagicType.Creature, MagicSubType.Goblin, Control.Any);
@@ -2530,13 +2532,9 @@ public class MagicTargetFilterFactory {
         add("permanent that is enchanted", PERMANENT_ENCHANTED);
         add("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
         add("nonartifact permanent", NONARTIFACT_PERMANENT);
-        add("Goblin or Shaman", GOBLIN_OR_SHAMAN);
-        add("Treefolk or Warrior", TREEFOLK_OR_WARRIOR);
-        add("token", TOKEN);
-        add("Vampire or Zombie", VAMPIRE_OR_ZOMBIE);
-        add("Island or Swamp", ISLAND_OR_SWAMP);
 
         // <color|type|subtype>
+        add("token", TOKEN);
         add("creature you own", CREATURE_YOU_OWN);
         add("permanent you own or control", PERMANENT_YOU_OWN_OR_CONTROL);
         add("Insect, Rat, Spider, or Squirrel", INSECT_RAT_SPIDER_OR_SQUIRREL);
@@ -2574,6 +2572,12 @@ public class MagicTargetFilterFactory {
         add("wolf or werewolf", WOLF_OR_WEREWOLF);
         add("servo or thopter", SERVO_OR_THOPTER);
         add("human or an angel", HUMAN_OR_ANGEL);
+        add("Goblin or Shaman", GOBLIN_OR_SHAMAN);
+        add("Treefolk or Warrior", TREEFOLK_OR_WARRIOR);
+        add("Vampire or Zombie", VAMPIRE_OR_ZOMBIE);
+        add("Island or Swamp", ISLAND_OR_SWAMP);
+        add("Scarecrow or Plains", SCARECROW_OR_PLAINS);
+        add("Treefolk or Forest", FOREST_OR_TREEFOLK);
 
         // <color|type> spell
         add("spell", SPELL);
