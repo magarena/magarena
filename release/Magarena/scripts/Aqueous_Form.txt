@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=Enchanted creature can't be blocked.;\
+ability=Enchant creature;\
+        Enchanted creature can't be blocked.;\
         Whenever enchanted creature attacks, scry 1.
 timing=aura
 enchant=unblockable,pos creature

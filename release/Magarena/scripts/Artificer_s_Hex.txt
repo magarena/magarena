@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}
-enchant=destroy,neg equipment
+ability=Enchant Equipment
 timing=aura
-requires_groovy_code
+enchant=destroy,neg equipment
 oracle=Enchant Equipment\nAt the beginning of your upkeep, if enchanted Equipment is attached to a creature, destroy that creature.
+requires_groovy_code

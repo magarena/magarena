@@ -5,6 +5,6 @@ rarity=R
 type=Enchantment
 cost={1}{W}{W}
 ability=When SN enters the battlefield, you may exile target artifact or enchantment.
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=When Act of Authority enters the battlefield, you may exile target artifact or enchantment.\nAt the beginning of your upkeep, you may exile target artifact or enchantment. If you do, its controller gains control of Act of Authority.
+requires_groovy_code
