@@ -76,8 +76,8 @@ Release 1.79 (November 28, 2016)
 
 - changed/added the following to the user interface:
   * use custom checkboxes in Card Explorer filters
-  * add filter for 'X' in cost filte
-  * add 'Match all' for cost filter, e.g. X and 3
+  * add option to select 'X' in cost filter
+  * add 'Match all' option for cost filter, e.g. X and 3
   * add menu on Card Explorer to change style and layout of card pool
 
 - added the following to the card script:
