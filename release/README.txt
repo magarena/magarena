@@ -73,6 +73,9 @@ Thank you for your support and have fun!
 
 Release 1.79 (November 28, 2016)
 ============
+lodici
+melvin
+ShawnieBoy
 
 - changed/added the following to the user interface:
   * use custom checkboxes in Card Explorer filters
