@@ -1,7 +1,7 @@
 name=Cabal Ritual
 image=http://magiccards.info/scans/en/tr/51.jpg
 value=4.500
-rarity=U
+rarity=C
 type=Instant
 cost={1}{B}
 effect=Add {B}{B}{B} to your mana pool.~Add {B}{B}{B}{B}{B} to your mana pool instead if seven or more cards are in your graveyard.

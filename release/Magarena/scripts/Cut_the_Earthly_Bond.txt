@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={U}
-effect=Return target permanent that is enchanted to its owner's hand.
+effect=Return target enchanted permanent to its owner's hand.
 timing=removal
 oracle=Return target enchanted permanent to its owner's hand.

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
+ability=Enchant land
+timing=aura
 enchant=default,neg land
-timing=enchantment
-requires_groovy_code
 oracle=Enchant land\nAt the beginning of the upkeep of enchanted land's controller, Cursed Land deals 1 damage to that player.
+requires_groovy_code

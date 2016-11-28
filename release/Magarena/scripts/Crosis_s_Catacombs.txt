@@ -5,7 +5,7 @@ rarity=U
 type=Land
 subtype=Lair
 mana=u2b2r2
-ability=When SN enters the battlefield, you may return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN.;\
+ability=When SN enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.;\
         {T}: Add {U}, {B}, or {R} to your mana pool.
 timing=land
 oracle=When Crosis's Catacombs enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {U}, {B}, or {R} to your mana pool.

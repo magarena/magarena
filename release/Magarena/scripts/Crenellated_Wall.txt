@@ -8,5 +8,5 @@ cost={4}
 pt=0/4
 ability=Defender;\
         {T}: Target creature gets +0/+4 until end of turn.
-timing=artifact
+timing=smain
 oracle=Defender\n{T}: Target creature gets +0/+4 until end of turn.

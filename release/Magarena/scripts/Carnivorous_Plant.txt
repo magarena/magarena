@@ -1,7 +1,7 @@
 name=Carnivorous Plant
 image=http://magiccards.info/scans/en/4e/119.jpg
 value=2.903
-rarity=U
+rarity=C
 type=Creature
 subtype=Plant,Wall
 cost={3}{G}

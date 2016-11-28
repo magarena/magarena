@@ -1,5 +1,6 @@
 name=Cruel Edict
-image=http://magiccards.info/scans/en/dvd/48.jpg
+image=http://magiccards.info/scans/en/10e/133.jpg
+image_updated=2016-11-28
 value=3.914
 removal=2
 rarity=U

@@ -8,5 +8,5 @@ cost={3}{U}
 pt=1/4
 ability=Defender;\
         Evolve
-timing=main
+timing=smain
 oracle=Defender\nEvolve

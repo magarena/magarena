@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{B}
 ability=At the beginning of your upkeep, destroy target creature with a -1/-1 counter on it.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, destroy target creature with a -1/-1 counter on it.

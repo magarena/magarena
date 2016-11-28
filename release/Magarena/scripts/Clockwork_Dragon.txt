@@ -10,5 +10,5 @@ ability=Flying;\
         SN enters the battlefield with six +1/+1 counters on it.;\
         Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.;\
         {3}: Put a +1/+1 counter on SN.
-timing=artifact
+timing=main
 oracle=Flying\nClockwork Dragon enters the battlefield with six +1/+1 counters on it.\nWhenever Clockwork Dragon attacks or blocks, remove a +1/+1 counter from it at end of combat.\n{3}: Put a +1/+1 counter on Clockwork Dragon.

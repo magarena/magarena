@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{U}
-ability=You control enchanted Equipment.
+ability=Enchant Equipment;\
+        You control enchanted Equipment.
 timing=aura
 enchant=gain control,neg equipment
 requires_groovy_code

@@ -1,5 +1,6 @@
 name=Coral Trickster
-image=http://magiccards.info/scans/en/ddn/44.jpg
+image=http://magiccards.info/scans/en/ts/54.jpg
+image_updated=2016-11-28
 value=2.500
 rarity=C
 type=Creature

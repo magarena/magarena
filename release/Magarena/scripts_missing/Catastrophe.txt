@@ -1,5 +1,6 @@
 name=Catastrophe
-image=http://magiccards.info/scans/en/br/12.jpg
+image=http://magiccards.info/scans/en/us/6.jpg
+image_updated=2016-11-28
 value=4.222
 rarity=R
 type=Sorcery

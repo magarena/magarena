@@ -1,7 +1,7 @@
 name=Citanul Druid
 image=http://magiccards.info/scans/en/aq/61.jpg
 value=3.435
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Druid
 cost={1}{G}

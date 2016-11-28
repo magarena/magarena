@@ -4,7 +4,7 @@ value=3.917
 rarity=R
 type=Enchantment
 cost={2}{U}
-timing=main
 ability=Cast SN with AI only if there is an enchantment on the battlefield.
-requires_groovy_code
+timing=enchantment
 oracle=You may have Copy Enchantment enter the battlefield as a copy of any enchantment on the battlefield.
+requires_groovy_code

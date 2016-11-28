@@ -8,5 +8,5 @@ cost={2}{B}
 pt=1/4
 ability=Defender;\
         Sacrifice another creature: SN gains deathtouch until end of turn.
-timing=main
+timing=smain
 oracle=Defender\nSacrifice another creature: Corpse Blockade gains deathtouch until end of turn.

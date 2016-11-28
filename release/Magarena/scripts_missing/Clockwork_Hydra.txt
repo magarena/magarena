@@ -1,5 +1,6 @@
 name=Clockwork Hydra
-image=http://magiccards.info/scans/en/ddf/55.jpg
+image=http://magiccards.info/scans/en/ts/253.jpg
+image_updated=2016-11-28
 value=3.539
 rarity=U
 type=Artifact,Creature

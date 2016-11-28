@@ -1,6 +1,6 @@
 name=Cloud Sprite
-image=http://magiccards.info/scans/en/dpa/4.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/75.jpg
+image_updated=2016-11-28
 value=2.381
 rarity=C
 type=Creature

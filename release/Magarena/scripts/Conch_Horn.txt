@@ -4,6 +4,6 @@ value=2.922
 rarity=R
 type=Artifact
 cost={2}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle={1}, {T}, Sacrifice Conch Horn: Draw two cards, then put a card from your hand on top of your library.
+requires_groovy_code

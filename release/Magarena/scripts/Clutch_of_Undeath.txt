@@ -5,7 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{B}{B}
-enchant=pump,creature
+ability=Enchant creature
 timing=aura
-requires_groovy_code
+#Could easily be enchant=weaken -3/-3,neg creature
+enchant=pump,creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3 as long as it's a Zombie. Otherwise, it gets -3/-3.
+requires_groovy_code

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
+ability=Enchant artifact
 timing=aura
 enchant=sacrifice,neg artifact
-requires_groovy_code
 oracle=Enchant artifact\nAt the beginning of the upkeep of enchanted artifact's controller, Curse Artifact deals 2 damage to that player unless he or she sacrifices that artifact.
+requires_groovy_code

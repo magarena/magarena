@@ -4,6 +4,7 @@ value=3.914
 rarity=U
 type=Artifact
 cost={4}
+ability=As SN enters the battlefield, choose an opponent.
 timing=artifact
-requires_groovy_code
 oracle=As Cursed Rack enters the battlefield, choose an opponent.\nThe chosen player's maximum hand size is four.
+requires_groovy_code

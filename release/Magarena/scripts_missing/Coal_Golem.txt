@@ -1,7 +1,7 @@
 name=Coal Golem
 image=http://magiccards.info/scans/en/dk/96.jpg
 value=2.172
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={5}

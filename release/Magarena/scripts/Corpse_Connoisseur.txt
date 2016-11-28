@@ -1,5 +1,6 @@
 name=Corpse Connoisseur
-image=http://magiccards.info/scans/en/ddk/54.jpg
+image=http://magiccards.info/scans/en/arc/13.jpg
+image_updated=2016-11-28
 value=3.500
 rarity=U
 type=Creature

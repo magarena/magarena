@@ -1,5 +1,6 @@
 name=Crusade
-image=http://magiccards.info/scans/en/ddf/27.jpg
+image=http://magiccards.info/scans/en/6e/13.jpg
+image_updated=2016-11-28
 value=4.179
 rarity=R
 type=Enchantment

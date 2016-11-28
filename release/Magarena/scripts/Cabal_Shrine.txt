@@ -4,6 +4,6 @@ value=1.732
 rarity=R
 type=Enchantment
 cost={1}{B}{B}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Whenever a player casts a spell, that player discards X cards, where X is the number of cards in all graveyards with the same name as that spell.
+requires_groovy_code

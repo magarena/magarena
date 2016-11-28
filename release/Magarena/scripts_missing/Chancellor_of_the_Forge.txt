@@ -6,8 +6,8 @@ type=Creature
 subtype=Giant
 cost={4}{R}{R}{R}
 pt=5/5
-ability=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, put a 1/1 red Goblin creature token with haste onto the battlefield.;\
-        When SN enters the battlefield, put X 1/1 red Goblin creature tokens with haste onto the battlefield, where X is the number of creatures you control.
+ability=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, create a 1/1 red Goblin creature token with haste.;\
+        When SN enters the battlefield, create X 1/1 red Goblin creature tokens with haste, where X is the number of creatures you control.
 timing=main
-oracle=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, put a 1/1 red Goblin creature token with haste onto the battlefield.\nWhen Chancellor of the Forge enters the battlefield, put X 1/1 red Goblin creature tokens with haste onto the battlefield, where X is the number of creatures you control.
+oracle=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, create a 1/1 red Goblin creature token with haste.\nWhen Chancellor of the Forge enters the battlefield, create X 1/1 red Goblin creature tokens with haste, where X is the number of creatures you control.
 status=not supported: opening-hand

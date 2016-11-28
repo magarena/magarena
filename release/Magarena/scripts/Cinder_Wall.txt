@@ -8,5 +8,5 @@ cost={R}
 pt=3/3
 ability=Defender;\
         When SN blocks, destroy SN at end of combat.
-timing=main
+timing=smain
 oracle=Defender\nWhen Cinder Wall blocks, destroy it at end of combat.

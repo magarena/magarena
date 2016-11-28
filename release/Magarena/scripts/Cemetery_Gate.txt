@@ -8,5 +8,5 @@ cost={2}{B}
 pt=0/5
 ability=Defender;\
         Protection from black
-timing=main
+timing=smain
 oracle=Defender\nProtection from black

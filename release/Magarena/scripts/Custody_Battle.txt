@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-timing=enchantment
+ability=Enchant creature
+timing=aura
 enchant=pump,neg creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, target opponent gains control of this creature unless you sacrifice a land."
+requires_groovy_code

@@ -8,5 +8,5 @@ cost={3}
 pt=2/5
 ability=Defender;\
         SN enters the battlefield tapped.
-timing=main
+timing=smain
 oracle=Defender\nCustodian of the Trove enters the battlefield tapped.

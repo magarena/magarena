@@ -1,5 +1,6 @@
 name=Court Street Denizen
-image=http://magiccards.info/scans/en/ddo/5.jpg
+image=http://magiccards.info/scans/en/gtc/8.jpg
+image_updated=2016-11-28
 value=2.930
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Cyclone
 image=http://magiccards.info/scans/en/ch/34.jpg
 value=2.775
-rarity=R
+rarity=U
 type=Enchantment
 cost={2}{G}{G}
 ability=At the beginning of your upkeep, put a wind counter on SN, then sacrifice SN unless you pay {G} for each wind counter on it. If you pay, SN deals damage equal to the number of wind counters on it to each creature and each player.

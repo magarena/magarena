@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=Whenever a creature becomes the target of a spell or ability, return that creature to its owner's hand.
-timing=main
+timing=enchantment
 oracle=Whenever a creature becomes the target of a spell or ability, return that creature to its owner's hand.

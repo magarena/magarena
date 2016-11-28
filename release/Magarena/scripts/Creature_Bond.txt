@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-timing=main
+ability=Enchant creature
+timing=aura
 enchant=toughness,neg creature
-requires_groovy_code
 oracle=Enchant creature\nWhen enchanted creature dies, Creature Bond deals damage equal to that creature's toughness to the creature's controller.
+requires_groovy_code

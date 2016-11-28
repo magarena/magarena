@@ -4,6 +4,6 @@ value=3.633
 rarity=R
 type=Artifact
 cost={4}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle={X}: Chimeric Staff becomes an X/X Construct artifact creature until end of turn.
+requires_groovy_code

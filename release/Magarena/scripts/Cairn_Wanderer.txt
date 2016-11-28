@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={4}{B}
 pt=4/4
-ability=changeling
+ability=Changeling
 timing=main
 requires_groovy_code
 oracle=Changeling\nAs long as a creature card with flying is in a graveyard, Cairn Wanderer has flying. The same is true for fear, first strike, double strike, deathtouch, haste, landwalk, lifelink, protection, reach, trample, shroud, and vigilance.

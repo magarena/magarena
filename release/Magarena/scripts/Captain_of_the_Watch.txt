@@ -1,5 +1,6 @@
 name=Captain of the Watch
-image=http://magiccards.info/scans/en/ddo/3.jpg
+image=http://magiccards.info/scans/en/m13/8.jpg
+image_updated=2016-11-28
 value=3.990
 rarity=R
 type=Creature

@@ -1,5 +1,6 @@
 name=Cosi's Ravager
-image=http://magiccards.info/scans/en/ddi/52.jpg
+image=http://magiccards.info/scans/en/wwk/77.jpg
+image_updated=2016-11-28
 value=2.385
 rarity=C
 type=Creature

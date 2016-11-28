@@ -8,5 +8,5 @@ cost={1}{B}{B}
 pt=3/2
 ability=Defender;\
         {1}{B}: Regenerate SN.
-timing=main
+timing=smain
 oracle=Defender\n{1}{B}: Regenerate Carrion Wall.

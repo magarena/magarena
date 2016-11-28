@@ -8,5 +8,5 @@ cost={3}{W}
 pt=4/5
 ability=Defender;\
         Morph {4}{W}
-timing=main
+timing=smain
 oracle=Defender\nMorph {4}{W}

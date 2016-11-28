@@ -4,9 +4,10 @@ value=3.889
 rarity=R
 type=Sorcery
 cost={4}{W}{U}
-effect=Put four 1/1 white Bird creature tokens with flying onto the battlefield.~Fuse
+ability=Fuse
+effect=Create four 1/1 white Bird creature tokens with flying.
 split=Beck
-timing=main
+timing=token
 second_half
-oracle=Put four 1/1 white Bird creature tokens with flying onto the battlefield.\nFuse
+oracle=Create four 1/1 white Bird creature tokens with flying.\nFuse
 status=not supported: split-card

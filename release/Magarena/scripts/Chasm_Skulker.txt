@@ -7,6 +7,6 @@ subtype=Squid,Horror
 cost={2}{U}
 pt=1/1
 ability=Whenever you draw a card, put a +1/+1 counter on SN.;\
-        When SN dies, create X 1/1 blue Squid creature token with islandwalk, where X is the number of +1/+1 counters on SN.
+        When SN dies, create X 1/1 blue Squid creature tokens with islandwalk, where X is the number of +1/+1 counters on SN.
 timing=main
 oracle=Whenever you draw a card, put a +1/+1 counter on Chasm Skulker.\nWhen Chasm Skulker dies, create X 1/1 blue Squid creature tokens with islandwalk, where X is the number of +1/+1 counters on Chasm Skulker.

@@ -7,6 +7,6 @@ subtype=Beast
 cost={1}{R}{R}
 pt=7/6
 ability=Trample;\
-        At the beginning of your upkeep, you may sacrifice two lands. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you sacrifice two lands.
 timing=main
 oracle=Trample\nAt the beginning of your upkeep, sacrifice Cosmic Larva unless you sacrifice two lands.

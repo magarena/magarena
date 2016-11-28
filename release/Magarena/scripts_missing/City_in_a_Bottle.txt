@@ -1,7 +1,7 @@
 name=City in a Bottle
 image=http://magiccards.info/scans/en/an/74.jpg
 value=2.500
-rarity=M
+rarity=R
 type=Artifact
 cost={2}
 ability=Whenever a nontoken permanent originally printed in the Arabian Nights expansion other than SN is on the battlefield, its controller sacrifices it.;\

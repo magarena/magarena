@@ -5,6 +5,6 @@ rarity=U
 type=Enchantment
 cost={2}{W}
 ability=Cumulative upkeep {2}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Cumulative upkeep {2}\nAt the beginning of each player's upkeep, Cold Snap deals damage to that player equal to the number of snow lands he or she controls.
+requires_groovy_code

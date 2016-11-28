@@ -1,5 +1,6 @@
 name=Cryptic Annelid
-image=http://magiccards.info/scans/en/ddi/15.jpg
+image=http://magiccards.info/scans/en/fut/34.jpg
+image_updated=2016-11-28
 value=3.706
 rarity=U
 type=Creature

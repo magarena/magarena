@@ -1,6 +1,6 @@
 name=Cinder Pyromancer
-image=http://magiccards.info/scans/en/dpa/41.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/eve/50.jpg
+image_updated=2016-11-28
 value=2.992
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Cackling Fiend
-image=http://magiccards.info/scans/en/br/11.jpg
+image=http://magiccards.info/scans/en/us/121.jpg
+image_updated=2016-11-28
 value=2.538
 rarity=C
 type=Creature

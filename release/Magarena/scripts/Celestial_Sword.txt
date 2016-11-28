@@ -1,7 +1,7 @@
 name=Celestial Sword
 image=http://magiccards.info/scans/en/ia/289.jpg
 value=2.292
-rarity=U
+rarity=R
 type=Artifact
 cost={6}
 ability={3}, {T}: Target creature you control gets +3/+3 until end of turn.~Its controller sacrifices *it* at the beginning of the next end step.

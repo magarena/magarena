@@ -1,5 +1,6 @@
 name=Curfew
-image=http://magiccards.info/scans/en/br/17.jpg
+image=http://magiccards.info/scans/en/us/68.jpg
+image_updated=2016-11-28
 value=4.250
 rarity=C
 type=Instant

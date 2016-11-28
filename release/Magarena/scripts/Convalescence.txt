@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{W}
 ability=At the beginning of your upkeep, if you have 10 or less life, you gain 1 life.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, if you have 10 or less life, you gain 1 life.

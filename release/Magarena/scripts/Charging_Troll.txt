@@ -1,5 +1,6 @@
 name=Charging Troll
-image=http://magiccards.info/scans/en/pvc/45.jpg
+image=http://magiccards.info/scans/en/in/239.jpg
+image_updated=2016-11-28
 value=4.156
 rarity=U
 type=Creature

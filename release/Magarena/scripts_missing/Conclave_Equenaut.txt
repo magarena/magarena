@@ -1,5 +1,6 @@
 name=Conclave Equenaut
-image=http://magiccards.info/scans/en/ddf/19.jpg
+image=http://magiccards.info/scans/en/rav/9.jpg
+image_updated=2016-11-28
 value=2.118
 rarity=C
 type=Creature

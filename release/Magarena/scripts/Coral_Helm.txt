@@ -1,7 +1,7 @@
 name=Coral Helm
 image=http://magiccards.info/scans/en/5e/359.jpg
 value=1.625
-rarity=U
+rarity=R
 type=Artifact
 cost={3}
 ability={3}, Discard a card at random: Target creature gets +2/+2 until end of turn.

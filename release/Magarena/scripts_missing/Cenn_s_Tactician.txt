@@ -7,7 +7,7 @@ subtype=Kithkin,Soldier
 cost={W}
 pt=1/1
 ability={W}, {T}: Put a +1/+1 counter on target Soldier creature.;\
-        Each creature you control with a +1/+1 counter on it can block an additional creature.
+        Each creature you control with a +1/+1 counter on it can block an additional creature each combat.
 timing=main
-oracle={W}, {T}: Put a +1/+1 counter on target Soldier creature.\nEach creature you control with a +1/+1 counter on it can block an additional creature.
+oracle={W}, {T}: Put a +1/+1 counter on target Soldier creature.\nEach creature you control with a +1/+1 counter on it can block an additional creature each combat.
 status=not supported: block-multiple

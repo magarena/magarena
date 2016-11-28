@@ -4,6 +4,6 @@ value=4.222
 rarity=R
 type=Instant
 cost={3}{B}{B}
-effect=Destroy all creatures with converted mana cost 3 or less. They can't be regenerated.
+effect=Destroy each creature with converted mana cost 3 or less. They can't be regenerated.
 timing=removal
 oracle=Destroy each creature with converted mana cost 3 or less. They can't be regenerated.

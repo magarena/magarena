@@ -1,7 +1,7 @@
 name=Cloud of Faeries
 image=http://magiccards.info/scans/en/ul/29.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Faerie
 cost={1}{U}

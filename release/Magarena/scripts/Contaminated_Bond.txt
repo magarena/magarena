@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-ability=Whenever enchanted creature attacks or blocks, RN's controller loses 3 life.
+ability=Enchant creature;\
+        Whenever enchanted creature attacks or blocks, RN's controller loses 3 life.
 timing=aura
 enchant=can't attack or block,neg creature
 oracle=Enchant creature\nWhenever enchanted creature attacks or blocks, its controller loses 3 life.

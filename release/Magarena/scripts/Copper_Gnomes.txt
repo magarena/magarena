@@ -7,5 +7,5 @@ subtype=Gnome
 cost={2}
 pt=1/1
 ability={4}, Sacrifice SN: You may put an artifact card from your hand onto the battlefield.
-timing=artifact
+timing=main
 oracle={4}, Sacrifice Copper Gnomes: You may put an artifact card from your hand onto the battlefield.

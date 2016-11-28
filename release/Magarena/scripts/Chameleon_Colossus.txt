@@ -9,6 +9,6 @@ cost={2}{G}{G}
 pt=4/4
 ability=Changeling;\
         Protection from black;\
-        {2}{G}{G}: SN gets +X/+X until end of turn, where X is its power
+        {2}{G}{G}: SN gets +X/+X until end of turn, where X is its power.
 timing=main
 oracle=Changeling\nProtection from black\n{2}{G}{G}: Chameleon Colossus gets +X/+X until end of turn, where X is its power.

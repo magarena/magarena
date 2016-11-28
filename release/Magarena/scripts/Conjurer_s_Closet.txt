@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability=At the beginning of your end step, you may exile target creature you control, then return that card to the battlefield under your control.
-timing=main
+timing=artifact
 oracle=At the beginning of your end step, you may exile target creature you control, then return that card to the battlefield under your control.
