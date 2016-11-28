@@ -8,7 +8,7 @@ subtype=Elf,Shaman
 cost={3}{G}
 pt=2/4
 ability=Before you shuffle your deck to start the game, you may reveal this card from your deck and exile a creature card you drafted that isn't in your deck.;\
-        {X}, {T}: Put a token onto the battlefield that's a copy of a card you exiled with cards named Caller of the Untamed. X is the converted mana cost of that card.
+        {X}, {T}: Create a token that's a copy of a card you exiled with cards named Caller of the Untamed. X is the converted mana cost of that card.
 timing=main
-oracle=Before you shuffle your deck to start the game, you may reveal this card from your deck and exile a creature card you drafted that isn't in your deck.\n{X}, {T}: Put a token onto the battlefield that's a copy of a card you exiled with cards named Caller of the Untamed. X is the converted mana cost of that card.
+oracle=Before you shuffle your deck to start the game, you may reveal this card from your deck and exile a creature card you drafted that isn't in your deck.\n{X}, {T}: Create a token that's a copy of a card you exiled with cards named Caller of the Untamed. X is the converted mana cost of that card.
 status=not supported: draft

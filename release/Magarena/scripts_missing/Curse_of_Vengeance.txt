@@ -1,5 +1,6 @@
 name=Curse of Vengeance
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/4172RXJ8DG_EN.png
+image=http://magiccards.info/scans/en/c16/12.jpg
+image_updated=2016-11-28
 value=2.500
 rarity=R
 type=Enchantment
@@ -8,6 +9,7 @@ cost={B}
 ability=Enchant player;\
         Whenever enchanted player casts a spell, put a spite counter on SN.;\
         When enchanted player loses the game, you gain X life and draw X cards, where X is the number of spite counters on SN.
-timing=main
+timing=aura
+enchant=default,player
 oracle=Enchant player\nWhenever enchanted player casts a spell, put a spite counter on Curse of Vengeance.\nWhen enchanted player loses the game, you gain X life and draw X cards, where X is the number of spite counters on Curse of Vengeance.
 status=not supported: enchant-player

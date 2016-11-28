@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura,Curse
 cost={2}{B}
 ability=Enchant player;\
-        Whenever a player attacks enchanted player with one or more creatures, that attacking player may put a 2/2 black Zombie creature token onto the battlefield tapped.
+        Whenever a player attacks enchanted player with one or more creatures, that attacking player may create a tapped 2/2 black Zombie creature token.
 timing=aura
 enchant=default,player
-oracle=Enchant player\nWhenever a player attacks enchanted player with one or more creatures, that attacking player may put a 2/2 black Zombie creature token onto the battlefield tapped.
+oracle=Enchant player\nWhenever a player attacks enchanted player with one or more creatures, that attacking player may create a tapped 2/2 black Zombie creature token.
 status=not supported: enchant-player
