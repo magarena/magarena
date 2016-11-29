@@ -6,8 +6,7 @@ type=Snow,Creature
 subtype=Yeti
 cost={2}{R}{R}
 pt=3/3
-ability=When SN enters the battlefield, if it's on the battlefield, it deals damage equal to its power to target creature an opponent controls and that creature deals damage equal to its power to SN.;\
-        {2}{S}: Return SN to its owner's hand. Activate this ability only any time you could cast a sorcery.
+ability={2}{S}: Return SN to its owner's hand. Activate this ability only any time you could cast a sorcery.
 timing=main
+requires_groovy_code
 oracle=When Stalking Yeti enters the battlefield, if it's on the battlefield, it deals damage equal to its power to target creature an opponent controls and that creature deals damage equal to its power to Stalking Yeti.\n{2}{S}: Return Stalking Yeti to its owner's hand. Activate this ability only any time you could cast a sorcery.
-status=needs groovy
