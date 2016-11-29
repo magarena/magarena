@@ -7,8 +7,7 @@ type=Creature
 subtype=Hydra
 cost={4}{G}{G}
 pt=5/5
-ability=Trample;\
-        Whenever a land enters the battlefield under your control, put a +1/+1 counter on SN. If that land is a Forest, put two +1/+1 counters on SN instead.
+ability=Trample
 timing=main
+requires_groovy_code
 oracle=Trample\nLandfall — Whenever a land enters the battlefield under your control, put a +1/+1 counter on Oran-Rief Hydra. If that land is a Forest, put two +1/+1 counters on Oran-Rief Hydra instead.
-status=needs groovy
