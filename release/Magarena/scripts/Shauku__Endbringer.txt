@@ -7,9 +7,8 @@ subtype=Vampire
 cost={5}{B}{B}
 pt=5/5
 ability=Flying;\
-        SN can't attack if there's another creature on the battlefield.;\
+        SN can't attack unless there are no other creatures on the battlefield.;\
         At the beginning of your upkeep, you lose 3 life.;\
-        {T}: Exile target creature and put a +1/+1 counter on Shauku.
+        {T}: Exile target creature~and put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nShauku, Endbringer can't attack if there's another creature on the battlefield.\nAt the beginning of your upkeep, you lose 3 life.\n{T}: Exile target creature and put a +1/+1 counter on Shauku.
-status=needs groovy
