@@ -7,6 +7,6 @@ type=Creature
 subtype=Dwarf,Artificer
 cost={W}
 pt=1/1
-ability=At the beginning of combat on your turn, if you control an artifact, SN gets +2/+1 until end of turn. If you control three or more artifacts, it also gains first strike until end of turn.
+ability=At the beginning of combat on your turn, if you control an artifact, SN gets +2/+1 until end of turn.~If you control three or more artifacts, SN gains first strike until end of turn.
 timing=main
 oracle=At the beginning of combat on your turn, if you control an artifact, Toolcraft Exemplar gets +2/+1 until end of turn. If you control three or more artifacts, it also gains first strike until end of turn.
