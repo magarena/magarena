@@ -4,7 +4,6 @@ value=4.173
 rarity=U
 type=Enchantment
 cost={B}
-ability=Whenever another card is put into a graveyard from anywhere, exile that card.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever another card is put into a graveyard from anywhere, exile that card.
-status=needs groovy
