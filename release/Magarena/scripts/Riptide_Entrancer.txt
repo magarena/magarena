@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}{U}
 pt=1/1
-ability=Whenever SN deals combat damage to a player, you may sacrifice it. If you do, gain control of target creature that player controls.;\
+ability=Whenever SN deals combat damage to a player, you may sacrifice SN. If you do, gain control of target creature an opponent controls.;\
         Morph {U}{U}
 timing=main
 oracle=Whenever Riptide Entrancer deals combat damage to a player, you may sacrifice it. If you do, gain control of target creature that player controls.\nMorph {U}{U}
-status=needs groovy
