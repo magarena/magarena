@@ -10,4 +10,3 @@ ability={B}: SN deals 1 damage to each creature and each player.
 timing=main
 oracle={X}: Crypt Rats deals X damage to each creature and each player. Spend only black mana on X.
 #Unable to implement 'Spend only <mana> on X' Crypt Rats should be able to deal more than one damage at once, see Absorb and similar abilities.
-
