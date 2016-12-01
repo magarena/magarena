@@ -8,5 +8,5 @@ cost={5}{U}
 pt=6/5
 ability=Defender;\
         Megamorph {6}{U}
-timing=main
+timing=smain
 oracle=Defender\nMegamorph {6}{U}

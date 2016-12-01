@@ -1,7 +1,7 @@
 name=Domestication
 image=http://magiccards.info/scans/en/roe/61.jpg
 value=2.356
-rarity=R
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}{U}

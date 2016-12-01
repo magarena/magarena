@@ -1,7 +1,7 @@
 name=Dream Fracture
 image=http://magiccards.info/scans/en/cns/95.jpg
 value=3.800
-rarity=U
+rarity=C
 type=Instant
 cost={1}{U}{U}
 effect=Counter target spell.~Its controller draws a card.~Draw a card.

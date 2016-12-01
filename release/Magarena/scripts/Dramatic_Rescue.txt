@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={W}{U}
 effect=Return target creature to its owner's hand.~You gain 2 life.
-timing=pumpFlash
+timing=removal
 oracle=Return target creature to its owner's hand. You gain 2 life.

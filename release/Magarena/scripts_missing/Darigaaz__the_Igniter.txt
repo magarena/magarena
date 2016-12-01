@@ -1,5 +1,6 @@
 name=Darigaaz, the Igniter
-image=http://magiccards.info/scans/en/pvc/47.jpg
+image=http://magiccards.info/scans/en/in/243.jpg
+image_updated=2016-12-01
 value=4.080
 rarity=R
 type=Legendary,Creature

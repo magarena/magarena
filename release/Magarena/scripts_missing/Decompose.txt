@@ -1,5 +1,6 @@
 name=Decompose
-image=http://magiccards.info/scans/en/ddk/20.jpg
+image=http://magiccards.info/scans/en/od/128.jpg
+image_updated=2016-12-01
 value=2.400
 rarity=U
 type=Sorcery

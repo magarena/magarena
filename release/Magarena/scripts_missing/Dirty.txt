@@ -4,8 +4,9 @@ value=3.793
 rarity=U
 type=Sorcery
 cost={2}{G}
-effect=Return target card from your graveyard to your hand.~Fuse
 split=Down
+ability=Fuse
+effect=Return target card from your graveyard to your hand.
 timing=main
 second_half
 oracle=Return target card from your graveyard to your hand.\nFuse

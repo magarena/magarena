@@ -1,7 +1,7 @@
 name=Dread Wight
 image=http://magiccards.info/scans/en/ia/10.jpg
 value=3.762
-rarity=U
+rarity=R
 type=Creature
 subtype=Zombie
 cost={3}{B}{B}

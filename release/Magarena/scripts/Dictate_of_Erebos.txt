@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{B}{B}
 ability=Flash;\
         Whenever a creature you control dies, each opponent sacrifices a creature.
-timing=main
+timing=flash
 oracle=Flash\nWhenever a creature you control dies, each opponent sacrifices a creature.

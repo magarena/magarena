@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={B}
 pt=2/2
-timing=main
 ability=SN enters the battlefield tapped.
+timing=main
 oracle=Diregraf Ghoul enters the battlefield tapped.

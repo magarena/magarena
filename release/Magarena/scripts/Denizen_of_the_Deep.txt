@@ -1,6 +1,6 @@
 name=Denizen of the Deep
-image=http://magiccards.info/scans/en/dpa/7.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/80.jpg
+image_updated=2016-12-01
 value=3.368
 rarity=R
 type=Creature

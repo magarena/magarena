@@ -6,5 +6,5 @@ rarity=C
 type=Instant
 cost={U}
 timing=removal
+oracle=Target creature has base power and toughness 1/1 until end of turn.
 requires_groovy_code
-oracle=Target creature becomes 1/1 until end of turn.

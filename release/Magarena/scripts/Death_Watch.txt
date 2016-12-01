@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-timing=main
+ability=Enchant creature
+timing=aura
 enchant=destroy,neg creature
-requires_groovy_code
 oracle=Enchant creature\nWhen enchanted creature dies, its controller loses life equal to its power and you gain life equal to its toughness.
+requires_groovy_code

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T}: Target creature you control gets +2/+2 until end of turn.~Return *it* to its owner's hand at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={3}, {T}: Target creature you control gets +2/+2 until end of turn. Return it to its owner's hand at the beginning of the next end step.

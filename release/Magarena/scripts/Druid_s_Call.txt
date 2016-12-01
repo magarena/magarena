@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}
+ability=Enchant creature
 timing=aura
 enchant=can't block,pos creature
-requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature is dealt damage, its controller creates that many 1/1 green Squirrel creature tokens.
+requires_groovy_code

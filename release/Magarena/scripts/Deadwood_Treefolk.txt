@@ -6,7 +6,7 @@ type=Creature
 subtype=Treefolk
 cost={5}{G}
 pt=3/6
-ability=vanishing 3
+ability=Vanishing 3
 timing=main
-requires_groovy_code
 oracle=Vanishing 3\nWhen Deadwood Treefolk enters the battlefield or leaves the battlefield, return another target creature card from your graveyard to your hand.
+requires_groovy_code

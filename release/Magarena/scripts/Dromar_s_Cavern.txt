@@ -5,7 +5,7 @@ rarity=U
 type=Land
 subtype=Lair
 mana=w2u2b2
-ability=When SN enters the battlefield, you may return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN.;\
+ability=When SN enters the battlefield, sacrifice SN unless you return a non-Lair land you control to its owner's hand.;\
         {T}: Add {W}, {U}, or {B} to your mana pool.
 timing=land
 oracle=When Dromar's Cavern enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {W}, {U}, or {B} to your mana pool.

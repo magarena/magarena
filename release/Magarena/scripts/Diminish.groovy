@@ -14,7 +14,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 TARGET_CREATURE,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
-                "Target creature\$ becomes 1/1 until end of turn."
+                "Target creature\$ has base power and toughness 1/1 until end of turn."
             );
         }
         @Override

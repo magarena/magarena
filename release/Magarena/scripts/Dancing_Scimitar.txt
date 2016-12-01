@@ -1,7 +1,7 @@
 name=Dancing Scimitar
 image=http://magiccards.info/scans/en/9e/292.jpg
 value=3.089
-rarity=R
+rarity=U
 type=Artifact,Creature
 subtype=Spirit
 cost={4}

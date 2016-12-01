@@ -1,7 +1,7 @@
 name=Dryad Arbor
 image=http://magiccards.info/scans/en/fut/174.jpg
 value=4.409
-rarity=M
+rarity=U
 type=Land,Creature
 subtype=Forest,Dryad
 mana=g3

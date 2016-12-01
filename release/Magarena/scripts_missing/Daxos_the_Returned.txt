@@ -8,7 +8,7 @@ subtype=Zombie,Soldier
 cost={1}{W}{B}
 pt=2/2
 ability=Whenever you cast an enchantment spell, you get an experience counter.;\
-        {1}{W}{B}: Put a white and black Spirit enchantment creature token onto the battlefield.
+        {1}{W}{B}: Create a white and black Spirit enchantment creature token. It has "This creature's power and toughness are each equal to the number of experience counters you have."
 timing=main
-oracle=Whenever you cast an enchantment spell, you get an experience counter.\n{1}{W}{B}: Put a white and black Spirit enchantment creature token onto the battlefield. It has "This creature's power and toughness are each equal to the number of experience counters you have."
+oracle=Whenever you cast an enchantment spell, you get an experience counter.\n{1}{W}{B}: Create a white and black Spirit enchantment creature token. It has "This creature's power and toughness are each equal to the number of experience counters you have."
 status=needs groovy

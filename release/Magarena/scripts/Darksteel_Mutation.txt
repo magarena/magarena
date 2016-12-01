@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-timing=main
+ability=Enchant creature
+timing=aura
 enchant=default,creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature is an Insect artifact creature with base power and toughness 0/1 and has indestructible, and it loses all other abilities, card types, and creature types.
+requires_groovy_code

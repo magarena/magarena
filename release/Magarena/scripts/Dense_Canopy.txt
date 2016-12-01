@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{G}
 ability=Creatures with flying can block only creatures with flying.
-timing=main
+timing=enchantment
 oracle=Creatures with flying can block only creatures with flying.

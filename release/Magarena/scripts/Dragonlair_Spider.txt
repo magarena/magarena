@@ -1,5 +1,6 @@
 name=Dragonlair Spider
-image=http://magiccards.info/scans/en/cma/6.jpg
+image=http://magiccards.info/scans/en/pc2/87.jpg
+image_updated=2016-12-01
 value=3.812
 rarity=R
 type=Creature

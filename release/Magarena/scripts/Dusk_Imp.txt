@@ -1,6 +1,6 @@
 name=Dusk Imp
-image=http://magiccards.info/scans/en/dpa/23.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/140.jpg
+image_updated=2016-12-01
 value=2.484
 rarity=C
 type=Creature

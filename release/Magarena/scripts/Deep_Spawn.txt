@@ -1,13 +1,13 @@
 name=Deep Spawn
 image=http://magiccards.info/scans/en/fe/34.jpg
 value=3.088
-rarity=R
+rarity=U
 type=Creature
 subtype=Homarid
 cost={5}{U}{U}{U}
 pt=6/6
 ability=Trample;\
-        At the beginning of your upkeep, you may put the top two cards of your library into your graveyard. If you don't, sacrifice SN;\
+        At the beginning of your upkeep, sacrifice SN unless you put the top two cards of your library into your graveyard.;\
         {U}: SN gains shroud until end of turn.~SN doesn't untap during your next untap step.~Tap SN.
 timing=main
 oracle=Trample\nAt the beginning of your upkeep, sacrifice Deep Spawn unless you put the top two cards of your library into your graveyard.\n{U}: Deep Spawn gains shroud until end of turn and doesn't untap during your next untap step. Tap Deep Spawn.

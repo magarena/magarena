@@ -1,7 +1,7 @@
 name=Disharmony
 image=http://magiccards.info/scans/en/lg/140.jpg
 value=3.317
-rarity=U
+rarity=R
 type=Instant
 cost={2}{R}
 ability=Cast SN only during combat before blockers are declared.

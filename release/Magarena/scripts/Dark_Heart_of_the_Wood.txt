@@ -1,9 +1,9 @@
 name=Dark Heart of the Wood
 image=http://magiccards.info/scans/en/rav/200.jpg
 value=3.364
-rarity=C
+rarity=U
 type=Enchantment
 cost={B}{G}
 ability=Sacrifice a Forest: You gain 3 life.
-timing=main
+timing=enchantment
 oracle=Sacrifice a Forest: You gain 3 life.

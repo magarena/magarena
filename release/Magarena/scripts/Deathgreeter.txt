@@ -1,5 +1,6 @@
 name=Deathgreeter
-image=http://magiccards.info/scans/en/gvl/33.jpg
+image=http://magiccards.info/scans/en/ala/71.jpg
+image_updated=2016-11-30
 value=3.104
 rarity=C
 type=Creature

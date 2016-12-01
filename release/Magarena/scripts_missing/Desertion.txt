@@ -1,5 +1,6 @@
 name=Desertion
-image=http://magiccards.info/scans/en/cma/4.jpg
+image=http://magiccards.info/scans/en/6e/64.jpg
+image_updated=2016-12-01
 value=4.250
 rarity=R
 type=Instant

@@ -5,6 +5,6 @@ rarity=R
 type=Enchantment
 cost={1}{B}{R}
 ability=Goblin creatures get +1/+1.
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Goblin creatures get +1/+1.\nAll Goblins are black and are Zombies in addition to their other creature types.
+requires_groovy_code

@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{G}, Sacrifice SN: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=main
 oracle={1}{G}, Sacrifice Diligent Farmhand: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.\nIf Diligent Farmhand is in a graveyard, effects from spells named Muscle Burst count it as a card named Muscle Burst.
+#The code for counting this as Muscle Burst is on the card Muscle Burst

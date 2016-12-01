@@ -4,6 +4,6 @@ value=3.918
 rarity=R
 type=Enchantment
 cost={B}
-timing=main
+timing=enchantment
 requires_groovy_code
 oracle=All creatures are black.

@@ -7,6 +7,6 @@ subtype=Dragon
 cost={3}{W}{U}{B}
 pt=6/6
 ability=Flying
-timing=smain
-requires_groovy_code
+timing=main
 oracle=Flying\nWhenever Dromar, the Banisher deals combat damage to a player, you may pay {2}{U}. If you do, choose a color, then return all creatures of that color to their owners' hands.
+requires_groovy_code

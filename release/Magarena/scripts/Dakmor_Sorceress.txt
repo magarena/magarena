@@ -7,5 +7,5 @@ subtype=Human,Wizard
 cost={5}{B}
 pt=*/4
 ability=SN's power is equal to the number of Swamps you control.
-timing=smain
+timing=main
 oracle=Dakmor Sorceress's power is equal to the number of Swamps you control.

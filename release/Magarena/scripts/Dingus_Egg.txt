@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability=Whenever a land is put into a graveyard from the battlefield, SN deals 2 damage to that land's controller.
-timing=main
+timing=artifact
 oracle=Whenever a land is put into a graveyard from the battlefield, Dingus Egg deals 2 damage to that land's controller.

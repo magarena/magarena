@@ -7,5 +7,5 @@ subtype=Equipment
 cost={B}{R}
 ability={X}: Equipped creature gets +X/+0 until end of turn.;\
         Equip {1}
-timing=main
+timing=equipment
 oracle={X}: Equipped creature gets +X/+0 until end of turn.\nEquip {1}

@@ -7,6 +7,6 @@ subtype=Wall
 cost={4}{U}
 pt=4/5
 ability=Defender
-timing=main
+timing=smain
 requires_groovy_code
 oracle=Defender\n{0}: Dark Maze can attack this turn as though it didn't have defender. Exile it at the beginning of the next end step.

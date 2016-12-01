@@ -1,5 +1,6 @@
 name=Demonfire
-image=http://magiccards.info/scans/en/jvc/57.jpg
+image=http://magiccards.info/scans/en/di/60.jpg
+image_updated=2016-12-01
 value=2.500
 rarity=R
 type=Sorcery

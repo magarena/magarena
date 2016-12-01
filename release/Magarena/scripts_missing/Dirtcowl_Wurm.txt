@@ -1,5 +1,6 @@
 name=Dirtcowl Wurm
-image=http://magiccards.info/scans/en/br/19.jpg
+image=http://magiccards.info/scans/en/tp/115.jpg
+image_updated=2016-12-01
 value=3.943
 rarity=R
 type=Creature

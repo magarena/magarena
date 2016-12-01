@@ -1,10 +1,11 @@
 name=Devil's Play
-image=http://magiccards.info/scans/en/ddk/72.jpg
+image=http://magiccards.info/scans/en/isd/140.jpg
+image_updated=2016-12-01
 value=3.712
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=SN deals X damage to target creature or player.
 ability=Flashback {X}{R}{R}{R}
+effect=SN deals X damage to target creature or player.
 timing=main
 oracle=Devil's Play deals X damage to target creature or player.\nFlashback {X}{R}{R}{R}

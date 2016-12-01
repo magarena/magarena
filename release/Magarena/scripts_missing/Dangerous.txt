@@ -4,8 +4,9 @@ value=3.960
 rarity=U
 type=Sorcery
 cost={3}{G}
-effect=All creatures able to block target creature this turn do so.~Fuse
 split=Armed
+ability=Fuse
+effect=All creatures able to block target creature this turn do so.
 timing=main
 second_half
 oracle=All creatures able to block target creature this turn do so.\nFuse

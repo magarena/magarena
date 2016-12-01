@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=At the beginning of your upkeep, if an opponent controls three or more creatures, sacrifice SN.~Search your library for up to two creature cards and put those cards onto the battlefield. Then shuffle your library.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, if an opponent controls three or more creatures, sacrifice Defense of the Heart, search your library for up to two creature cards, and put those cards onto the battlefield. Then shuffle your library.

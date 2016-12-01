@@ -1,7 +1,7 @@
 name=Diamond Valley
 image=http://magiccards.info/scans/en/an/87.jpg
 value=4.500
-rarity=R
+rarity=U
 type=Land
 timing=land
 requires_groovy_code

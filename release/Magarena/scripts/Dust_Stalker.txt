@@ -10,5 +10,5 @@ pt=5/3
 ability=Devoid;\
         Haste;\
         At the beginning of each end step, if you control no other colorless creatures, return SN to its owner's hand.
-timing=main
+timing=fmain
 oracle=Devoid\nHaste\nAt the beginning of each end step, if you control no other colorless creatures, return Dust Stalker to its owner's hand.

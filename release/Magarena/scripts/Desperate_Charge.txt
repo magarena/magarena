@@ -1,7 +1,7 @@
 name=Desperate Charge
 image=http://magiccards.info/scans/en/p3k/74.jpg
 value=3.306
-rarity=C
+rarity=U
 type=Sorcery
 cost={2}{B}
 ability=Cast SN with AI only if you control a creature.

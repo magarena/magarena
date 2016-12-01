@@ -1,7 +1,7 @@
 name=Deathgrip
 image=http://magiccards.info/scans/en/5e/16.jpg
 value=3.534
-rarity=R
+rarity=U
 type=Enchantment
 cost={B}{B}
 ability={B}{B}: Counter target green spell.
