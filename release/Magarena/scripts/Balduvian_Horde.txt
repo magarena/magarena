@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Barbarian
 cost={2}{R}{R}
 pt=5/5
-ability=When SN enters the battlefield, you may discard a card at random. If you don't, sacrifice SN.
+ability=When SN enters the battlefield, sacrifice SN unless you discard a card at random.
 timing=main
 oracle=When Balduvian Horde enters the battlefield, sacrifice it unless you discard a card at random.

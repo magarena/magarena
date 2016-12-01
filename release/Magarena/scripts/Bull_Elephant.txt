@@ -7,6 +7,6 @@ subtype=Elephant
 cost={3}{G}
 pt=4/4
 ability=Cast SN with AI only if you control two or more Forests.;\
-        When SN enters the battlefield, you may return two Forests you control to their owner's hand. If you don't, sacrifice SN.
+        When SN enters the battlefield, sacrifice SN unless you return two Forests you control to their owner's hand.
 timing=main
 oracle=When Bull Elephant enters the battlefield, sacrifice it unless you return two Forests you control to their owner's hand.

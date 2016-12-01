@@ -7,6 +7,6 @@ subtype=Horror
 cost={4}{B}
 pt=4/3
 ability=Flying;\
-        Whenever SN becomes the target of a spell or ability, sacrifice it unless you discard a land card.
+        Whenever SN becomes the target of a spell or ability, sacrifice SN unless you discard a land card.
 timing=main
 oracle=Flying\nWhenever Cursed Monstrosity becomes the target of a spell or ability, sacrifice it unless you discard a land card.
