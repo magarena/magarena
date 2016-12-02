@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
+ability=Enchant land
 timing=aura
 enchant=default,land
-requires_groovy_code
 oracle=Enchant land\nEnchanted land is a Swamp.
+requires_groovy_code

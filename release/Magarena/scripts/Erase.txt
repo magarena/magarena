@@ -4,6 +4,6 @@ value=3.500
 rarity=C
 type=Instant
 cost={W}
-timing=removal
 effect=Exile target enchantment.
+timing=removal
 oracle=Exile target enchantment.

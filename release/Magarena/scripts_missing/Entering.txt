@@ -4,8 +4,9 @@ value=3.800
 rarity=R
 type=Sorcery
 cost={4}{B}{R}
-effect=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn.~Fuse
 split=Breaking
+ability=Fuse
+effect=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn.
 timing=main
 second_half
 oracle=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn.\nFuse

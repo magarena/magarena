@@ -1,5 +1,6 @@
 name=Exhume
-image=http://magiccards.info/scans/en/br/24.jpg
+image=http://magiccards.info/scans/en/us/134.jpg
+image_updated=2016-12-02
 value=4.500
 rarity=C
 type=Sorcery

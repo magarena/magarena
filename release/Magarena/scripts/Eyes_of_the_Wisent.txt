@@ -6,5 +6,5 @@ type=Tribal,Enchantment
 subtype=Elemental
 cost={1}{G}
 ability=Whenever an opponent casts a blue spell during your turn, you may create a 4/4 green Elemental creature token.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent casts a blue spell during your turn, you may create a 4/4 green Elemental creature token.

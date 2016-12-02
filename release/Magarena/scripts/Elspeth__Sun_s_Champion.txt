@@ -1,13 +1,14 @@
 name=Elspeth, Sun's Champion
-image=http://magiccards.info/scans/en/ddo/1.jpg
+image=http://magiccards.info/scans/en/ths/9.jpg
+image_updated=2016-12-02
 value=3.891
 rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={4}{W}{W}
+loyalty=4
 ability=+1: Create three 1/1 white Soldier creature tokens.;\
         −3: Destroy all creatures with power 4 or greater.
-loyalty=4
 timing=main
-requires_groovy_code
 oracle=+1: Create three 1/1 white Soldier creature tokens.\n−3: Destroy all creatures with power 4 or greater.\n−7: You get an emblem with "Creatures you control get +2/+2 and have flying."
+requires_groovy_code

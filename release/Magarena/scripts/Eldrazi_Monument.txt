@@ -8,6 +8,6 @@ cost={5}
 ability=Creatures you control get +1/+1;\
         Creatures you control have flying, indestructible
 static=player
-timing=main
+timing=artifact
 requires_groovy_code
 oracle=Creatures you control get +1/+1 and have flying and indestructible.\nAt the beginning of your upkeep, sacrifice a creature. If you can't, sacrifice Eldrazi Monument.

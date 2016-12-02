@@ -1,5 +1,6 @@
 name=Explore
-image=http://magiccards.info/scans/en/ddo/45.jpg
+image=http://magiccards.info/scans/en/wwk/99.jpg
+image_updated=2016-12-02
 value=3.801
 rarity=C
 type=Sorcery

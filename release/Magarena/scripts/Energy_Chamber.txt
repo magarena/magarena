@@ -1,5 +1,6 @@
 name=Energy Chamber
-image=http://magiccards.info/scans/en/ddf/64.jpg
+image=http://magiccards.info/scans/en/5dn/117.jpg
+image_updated=2016-12-02
 value=4.102
 rarity=U
 type=Artifact
@@ -7,5 +8,5 @@ cost={2}
 ability=At the beginning of your upkeep, choose one — \
         (1) Put a +1/+1 counter on target artifact creature. \
         (2) Put a charge counter on target noncreature artifact.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, choose one —\n• Put a +1/+1 counter on target artifact creature.\n• Put a charge counter on target noncreature artifact.

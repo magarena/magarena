@@ -1,7 +1,7 @@
 name=Exorcist
 image=http://magiccards.info/scans/en/dk/79.jpg
 value=3.828
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Cleric
 cost={W}{W}

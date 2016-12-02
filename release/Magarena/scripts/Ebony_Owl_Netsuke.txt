@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability=At the beginning of each opponent's upkeep, if that player has seven or more cards in hand, SN deals 4 damage to RN.
-timing=main
+timing=artifact
 oracle=At the beginning of each opponent's upkeep, if that player has seven or more cards in hand, Ebony Owl Netsuke deals 4 damage to him or her.

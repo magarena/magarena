@@ -5,8 +5,8 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equipped creature can block an additional creature.;\
+ability=Equipped creature can block an additional creature each combat.;\
         Equip {1}
 timing=equipment
-oracle=Equipped creature can block an additional creature.\nEquip {1}
+oracle=Equipped creature can block an additional creature each combat.\nEquip {1}
 status=not supported: block-multiple

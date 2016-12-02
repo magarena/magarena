@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{W}
 ability={2}{W}: Bolster 1. Activate this ability with AI only if you control a creature.
-timing=main
+timing=enchantment
 oracle={2}{W}: Bolster 1.

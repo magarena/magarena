@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{B}{B}
+ability=Enchant creature;\
+        You control enchanted creature.
 timing=aura
-ability=You control enchanted creature.
 enchant=gain control,neg creature
-requires_groovy_code
 oracle=Enchant creature\nYou control enchanted creature.\nAt the beginning of your upkeep, enchanted creature deals 1 damage to its owner.
+requires_groovy_code

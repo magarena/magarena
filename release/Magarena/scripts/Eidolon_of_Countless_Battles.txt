@@ -6,7 +6,7 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={1}{W}{W}
 pt=0/0
-ability=bestow {2}{W}{W}
+ability=Bestow {2}{W}{W}
 timing=main
-requires_groovy_code
 oracle=Bestow {2}{W}{W}\nEidolon of Countless Battles and enchanted creature each get +1/+1 for each creature you control and +1/+1 for each Aura you control.
+requires_groovy_code

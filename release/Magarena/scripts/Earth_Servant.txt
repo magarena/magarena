@@ -1,5 +1,6 @@
 name=Earth Servant
-image=http://magiccards.info/scans/en/ddi/60.jpg
+image=http://magiccards.info/scans/en/m11/134.jpg
+image_updated=2016-12-02
 value=2.562
 rarity=U
 type=Creature

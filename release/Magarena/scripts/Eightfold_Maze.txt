@@ -1,7 +1,7 @@
 name=Eightfold Maze
 image=http://magiccards.info/scans/en/p3k/2.jpg
 value=2.976
-rarity=U
+rarity=R
 type=Instant
 cost={2}{W}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.

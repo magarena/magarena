@@ -5,9 +5,9 @@ rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={3}{W}{W}
+loyalty=4
 ability=+2: You gain 1 life for each creature you control.;\
         −2: Create three 1/1 white Soldier creature tokens.
-loyalty=4
 timing=main
-requires_groovy_code
 oracle=+2: You gain 1 life for each creature you control.\n−2: Create three 1/1 white Soldier creature tokens.\n−5: Destroy all other permanents except for lands and tokens.
+requires_groovy_code

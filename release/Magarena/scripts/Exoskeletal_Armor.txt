@@ -7,6 +7,6 @@ subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature gets +X/+X, where X is the number of creature cards in all graveyards.
-timing=main
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +X/+X, where X is the number of creature cards in all graveyards.

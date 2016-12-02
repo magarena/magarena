@@ -1,10 +1,10 @@
 name=Errand of Duty
 image=http://magiccards.info/scans/en/ai/127.jpg
 value=2.661
-rarity=U
+rarity=C
 type=Instant
 cost={1}{W}
-effect=Put a 1/1 white Knight creature token with banding onto the battlefield.
+effect=Create a 1/1 white Knight creature token with banding.
 timing=removal
-oracle=Put a 1/1 white Knight creature token with banding onto the battlefield.
+oracle=Create a 1/1 white Knight creature token with banding.
 status=not supported: banding

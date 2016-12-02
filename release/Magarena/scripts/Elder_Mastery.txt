@@ -8,6 +8,6 @@ cost={3}{U}{B}{R}
 ability=Enchant creature;\
         Enchanted creature gets +3/+3 and has flying.;\
         Whenever enchanted creature deals damage to a player, that player discards two cards.
-timing=enchantment
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3 and has flying.\nWhenever enchanted creature deals damage to a player, that player discards two cards.

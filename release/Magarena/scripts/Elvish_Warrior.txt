@@ -1,6 +1,6 @@
 name=Elvish Warrior
-image=http://magiccards.info/scans/en/dpa/64.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/mt/120.jpg
+image_updated=2016-12-02
 value=3.527
 rarity=C
 type=Creature

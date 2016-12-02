@@ -4,6 +4,6 @@ value=4.568
 rarity=R
 type=Enchantment
 cost={G}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=You may play an additional land on each of your turns.
+requires_groovy_code

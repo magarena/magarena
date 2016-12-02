@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{G}
 ability=Tap an untapped creature you control: Untap target basic land.
-timing=main
+timing=enchantment
 oracle=Tap an untapped creature you control: Untap target basic land.

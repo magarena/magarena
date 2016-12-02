@@ -1,7 +1,7 @@
 name=Elven Lyre
 image=http://magiccards.info/scans/en/fe/172.jpg
 value=1.661
-rarity=C
+rarity=R
 type=Artifact
 cost={2}
 ability={1}, {T}, Sacrifice SN: Target creature gets +2/+2 until end of turn.
