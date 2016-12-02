@@ -7,7 +7,7 @@ subtype=Demon
 cost={2}{B}{B}
 pt=5/4
 ability=Flying;\
-        When SN enters the battlefield, exile it unless you sacrifice another creature.;\
+        When SN enters the battlefield, exile SN unless you sacrifice another creature.;\
         Undying
 timing=main
 oracle=Flying\nWhen Demonlord of Ashmouth enters the battlefield, exile it unless you sacrifice another creature.\nUndying
