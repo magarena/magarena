@@ -8,6 +8,6 @@ subtype=Faerie,Rogue
 cost={U}
 pt=2/1
 ability=Flying;\
-        When SN enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.
+        When SN enters the battlefield, sacrifice SN unless you return another creature you control to its owner's hand.
 timing=main
 oracle=Flying\nWhen Faerie Impostor enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.

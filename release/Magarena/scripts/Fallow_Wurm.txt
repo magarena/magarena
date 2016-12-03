@@ -6,6 +6,6 @@ type=Creature
 subtype=Wurm
 cost={2}{G}
 pt=4/4
-ability=When SN enters the battlefield, sacrifice it unless you discard a land card.
+ability=When SN enters the battlefield, sacrifice SN unless you discard a land card.
 timing=main
 oracle=When Fallow Wurm enters the battlefield, sacrifice it unless you discard a land card.
