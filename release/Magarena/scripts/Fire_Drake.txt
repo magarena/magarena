@@ -1,7 +1,7 @@
 name=Fire Drake
 image=http://magiccards.info/scans/en/5e/226.jpg
 value=2.190
-rarity=C
+rarity=U
 type=Creature
 subtype=Drake
 cost={1}{R}{R}

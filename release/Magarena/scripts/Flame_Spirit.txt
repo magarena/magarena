@@ -1,7 +1,7 @@
 name=Flame Spirit
 image=http://magiccards.info/scans/en/6e/179.jpg
 value=1.857
-rarity=U
+rarity=C
 type=Creature
 subtype=Elemental,Spirit
 cost={4}{R}

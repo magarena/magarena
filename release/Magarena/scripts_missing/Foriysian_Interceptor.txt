@@ -8,7 +8,7 @@ cost={3}{W}
 pt=0/5
 ability=Flash;\
         Defender;\
-        SN can block an additional creature.
+        SN can block an additional creature each combat.
 timing=flash
-oracle=Flash\nDefender\nForiysian Interceptor can block an additional creature.
+oracle=Flash\nDefender\nForiysian Interceptor can block an additional creature each combat.
 status=not supported: block-multiple

@@ -1,7 +1,7 @@
 name=Foul Spirit
 image=http://magiccards.info/scans/en/po2/13.jpg
 value=2.225
-rarity=C
+rarity=U
 type=Creature
 subtype=Spirit
 cost={2}{B}

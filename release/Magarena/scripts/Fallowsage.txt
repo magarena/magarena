@@ -7,5 +7,5 @@ subtype=Merfolk,Wizard
 cost={3}{U}
 pt=2/2
 ability=Whenever SN becomes tapped, you may draw a card.
-timing=fmain
+timing=main
 oracle=Whenever Fallowsage becomes tapped, you may draw a card.

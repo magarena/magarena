@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=Whenever enchanted creature blocks or becomes blocked, you may put a +1/+1 counter on RN.
+ability=Enchant creature;\
+        Whenever enchanted creature blocks or becomes blocked, you may put a +1/+1 counter on RN.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked, you may put a +1/+1 counter on it.

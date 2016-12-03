@@ -8,6 +8,6 @@ subtype=Human,Horror
 cost={2}{G}
 pt=1/1
 ability=When SN enters the battlefield, look at the top four cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.;\
-        When you sacrifice SN while casting a spell with emerge, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+        When you sacrifice SN while casting a spell with emerge, create a 3/2 colorless Eldrazi Horror creature token.
 timing=main
-oracle=When Foul Emissary enters the battlefield, look at the top four cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\nWhen you sacrifice Foul Emissary while casting a spell with emerge, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+oracle=When Foul Emissary enters the battlefield, look at the top four cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\nWhen you sacrifice Foul Emissary while casting a spell with emerge, create a 3/2 colorless Eldrazi Horror creature token.

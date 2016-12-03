@@ -1,5 +1,6 @@
 name=Flood
-image=http://magiccards.info/scans/en/br/28.jpg
+image=http://magiccards.info/scans/en/5e/87.jpg
+image_updated=2016-12-02
 value=3.857
 rarity=C
 type=Enchantment

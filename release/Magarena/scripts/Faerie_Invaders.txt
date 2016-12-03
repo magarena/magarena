@@ -1,5 +1,6 @@
 name=Faerie Invaders
-image=http://magiccards.info/scans/en/ddn/57.jpg
+image=http://magiccards.info/scans/en/m13/51.jpg
+image_updated=2016-12-02
 value=2.962
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Flame Javelin
-image=http://magiccards.info/scans/en/ddk/70.jpg
+image=http://magiccards.info/scans/en/shm/92.jpg
+image_updated=2016-12-02
 value=3.655
 rarity=U
 type=Instant

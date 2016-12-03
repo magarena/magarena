@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{U}
+ability=Enchant creature;\
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
+timing=aura
 enchant=gain control,creature
-ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
-timing=enchantment
-requires_groovy_code=Unhallowed Pact
 oracle=Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under your control.\nWhen Fool's Demise is put into a graveyard from the battlefield, return Fool's Demise to its owner's hand.
+requires_groovy_code=Unhallowed Pact

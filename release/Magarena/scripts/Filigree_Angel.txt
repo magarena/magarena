@@ -8,5 +8,5 @@ cost={5}{W}{W}{U}
 pt=4/4
 ability=Flying;\
         When SN enters the battlefield, you gain 3 life for each artifact you control.
-timing=artifact
+timing=main
 oracle=Flying\nWhen Filigree Angel enters the battlefield, you gain 3 life for each artifact you control.

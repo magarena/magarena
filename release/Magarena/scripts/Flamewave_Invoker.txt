@@ -1,5 +1,6 @@
 name=Flamewave Invoker
-image=http://magiccards.info/scans/en/jvc/40.jpg
+image=http://magiccards.info/scans/en/10e/202.jpg
+image_updated=2016-12-02
 value=3.061
 rarity=U
 type=Creature

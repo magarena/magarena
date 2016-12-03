@@ -8,5 +8,5 @@ cost={2}{U}
 pt=0/1
 ability=Exalted;\
         {U}, {T}: Draw a card, then discard a card.
-timing=main
+timing=fmain
 oracle=Exalted\n{U}, {T}: Draw a card, then discard a card.

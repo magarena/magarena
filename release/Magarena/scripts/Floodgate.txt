@@ -8,6 +8,6 @@ cost={3}{U}
 pt=0/5
 ability=Defender;\
         When SN has flying, sacrifice SN.
-timing=main
-requires_groovy_code
+timing=smain
 oracle=Defender\nWhen Floodgate has flying, sacrifice it.\nWhen Floodgate leaves the battlefield, it deals damage equal to half the number of Islands you control, rounded down, to each nonblue creature without flying.
+requires_groovy_code

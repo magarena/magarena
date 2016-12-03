@@ -6,6 +6,6 @@ type=World,Enchantment
 cost={2}{B}
 ability=At the beginning of each player's upkeep, that player loses 1 life.;\
         Whenever SN becomes the target of a spell, that spell's controller loses 5 life.
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Players can't gain life.\nAt the beginning of each player's upkeep, that player loses 1 life.\nWhenever Forsaken Wastes becomes the target of a spell, that spell's controller loses 5 life.
+requires_groovy_code

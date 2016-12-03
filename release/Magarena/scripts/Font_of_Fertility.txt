@@ -5,5 +5,5 @@ rarity=C
 type=Enchantment
 cost={G}
 ability={1}{G}, Sacrifice SN: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
-timing=main
+timing=enchantment
 oracle={1}{G}, Sacrifice Font of Fertility: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

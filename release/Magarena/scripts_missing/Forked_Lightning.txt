@@ -1,7 +1,7 @@
 name=Forked Lightning
 image=http://magiccards.info/scans/en/po/135.jpg
 value=2.952
-rarity=U
+rarity=R
 type=Sorcery
 cost={3}{R}
 effect=SN deals 4 damage divided as you choose among one, two, or three target creatures.

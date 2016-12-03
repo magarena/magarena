@@ -1,5 +1,6 @@
 name=Flame Slash
-image=http://magiccards.info/scans/en/ddk/60.jpg
+image=http://magiccards.info/scans/en/roe/145.jpg
+image_updated=2016-12-02
 value=3.855
 rarity=C
 type=Sorcery

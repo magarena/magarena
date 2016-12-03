@@ -1,5 +1,6 @@
 name=Fire Ants
-image=http://magiccards.info/scans/en/br/27.jpg
+image=http://magiccards.info/scans/en/us/187.jpg
+image_updated=2016-12-02
 value=4.290
 rarity=U
 type=Creature

@@ -5,5 +5,5 @@ rarity=C
 type=Enchantment
 cost={1}{W}
 ability={2}{W}, Sacrifice SN: You gain 7 life.
-timing=main
+timing=enchantment
 oracle={2}{W}, Sacrifice Font of Vigor: You gain 7 life.

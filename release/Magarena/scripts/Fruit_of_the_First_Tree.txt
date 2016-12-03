@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{G}
+ability=Enchant creature
 timing=aura
 enchant=pump,creature
-requires_groovy_code
 oracle=Enchant creature\nWhen enchanted creature dies, you gain X life and draw X cards, where X is its toughness.
+requires_groovy_code

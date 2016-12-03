@@ -1,5 +1,6 @@
 name=Frenzied Goblin
-image=http://magiccards.info/scans/en/ddn/2.jpg
+image=http://magiccards.info/scans/en/m15/142.jpg
+image_updated=2016-12-02
 value=3.667
 rarity=U
 type=Creature

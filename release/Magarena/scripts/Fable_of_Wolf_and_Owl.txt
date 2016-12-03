@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{G/U}{G/U}{G/U}
 ability=Whenever you cast a green spell, you may create a 2/2 green Wolf creature token.;\
         Whenever you cast a blue spell, you may create a 1/1 blue Bird creature token with flying.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a green spell, you may create a 2/2 green Wolf creature token.\nWhenever you cast a blue spell, you may create a 1/1 blue Bird creature token with flying.

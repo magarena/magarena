@@ -8,6 +8,6 @@ cost={1}{B/R}
 ability=Enchant creature;\
         As long as enchanted creature is black, enchanted creature gets +1/+1 and has wither.;\
         As long as enchanted creature is red, enchanted creature gets +1/+1 and has first strike.
-timing=enchantment
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nAs long as enchanted creature is black, it gets +1/+1 and has wither.\nAs long as enchanted creature is red, it gets +1/+1 and has first strike.

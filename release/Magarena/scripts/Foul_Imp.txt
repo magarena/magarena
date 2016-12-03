@@ -1,5 +1,6 @@
 name=Foul Imp
-image=http://magiccards.info/scans/en/dvd/32.jpg
+image=http://magiccards.info/scans/en/9e/132.jpg
+image_updated=2016-12-02
 value=3.368
 rarity=C
 type=Creature
@@ -8,5 +9,5 @@ cost={B}{B}
 pt=2/2
 ability=Flying;\
         When SN enters the battlefield, you lose 2 life.
-timing=smain
+timing=main
 oracle=Flying\nWhen Foul Imp enters the battlefield, you lose 2 life.

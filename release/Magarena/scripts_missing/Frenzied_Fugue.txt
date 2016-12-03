@@ -1,5 +1,6 @@
 name=Frenzied Fugue
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/MQZlOGSAzZ_EN.png
+image=http://magiccards.info/scans/en/c16/18.jpg
+image_updated=2016-12-02
 value=2.500
 rarity=U
 type=Enchantment

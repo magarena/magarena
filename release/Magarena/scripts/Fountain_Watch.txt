@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={3}{W}{W}
 pt=2/4
-ability=artifacts you control have shroud;\
-        enchantments you control have shroud
+ability=Artifacts you control have shroud.;\
+        Enchantments you control have shroud.
 timing=main
 oracle=Artifacts and enchantments you control have shroud.

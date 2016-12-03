@@ -1,5 +1,6 @@
 name=Fade into Antiquity
-image=http://magiccards.info/scans/en/ths/157.jpg
+image=http://magiccards.info/scans/en/cn2/181.jpg
+image_updated=2016-12-02
 value=3.440
 rarity=C
 type=Sorcery

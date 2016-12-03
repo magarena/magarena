@@ -1,5 +1,6 @@
 name=Fleeting Distraction
-image=http://magiccards.info/scans/en/ddn/60.jpg
+image=http://magiccards.info/scans/en/avr/53.jpg
+image_updated=2016-12-02
 value=1.698
 rarity=C
 type=Instant

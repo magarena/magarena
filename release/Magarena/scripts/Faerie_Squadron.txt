@@ -6,7 +6,7 @@ type=Creature
 subtype=Faerie
 cost={U}
 pt=1/1
+ability=Kicker {3}{U}
 timing=main
-ability=kicker {3}{U}
-requires_groovy_code
 oracle=Kicker {3}{U}\nIf Faerie Squadron was kicked, it enters the battlefield with two +1/+1 counters on it and with flying.
+requires_groovy_code
