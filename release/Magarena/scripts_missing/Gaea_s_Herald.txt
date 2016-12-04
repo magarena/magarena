@@ -1,6 +1,6 @@
 name=Gaea's Herald
-image=http://magiccards.info/scans/en/dpa/65.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/265.jpg
+image_updated=2016-12-04
 value=4.234
 rarity=R
 type=Creature

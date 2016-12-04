@@ -1,5 +1,6 @@
 name=Goblin Cohort
-image=http://magiccards.info/scans/en/evg/38.jpg
+image=http://magiccards.info/scans/en/bok/106.jpg
+image_updated=2016-12-04
 value=2.500
 rarity=C
 type=Creature

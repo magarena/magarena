@@ -8,5 +8,5 @@ subtype=Goblin,Warrior
 cost={1}{R}
 pt=2/2
 ability=SN can't block.
-timing=fmain
+timing=main
 oracle=Goblin Raider can't block.

@@ -1,6 +1,6 @@
 name=Greenweaver Druid
-image=http://magiccards.info/scans/en/dpa/68.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/zen/164.jpg
+image_updated=2016-12-04
 value=3.480
 rarity=U
 type=Creature

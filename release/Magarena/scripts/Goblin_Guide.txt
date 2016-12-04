@@ -7,6 +7,6 @@ subtype=Goblin,Scout
 cost={R}
 pt=2/2
 ability=Haste
-timing=main
-requires_groovy_code
+timing=fmain
 oracle=Haste\nWhenever Goblin Guide attacks, defending player reveals the top card of his or her library. If it's a land card, that player puts it into his or her hand.
+requires_groovy_code

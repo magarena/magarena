@@ -1,5 +1,6 @@
 name=Gerrard's Command
-image=http://magiccards.info/scans/en/pvc/53.jpg
+image=http://magiccards.info/scans/en/ps/109.jpg
+image_updated=2016-12-03
 value=4.229
 rarity=C
 type=Instant

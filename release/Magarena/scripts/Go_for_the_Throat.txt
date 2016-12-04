@@ -5,6 +5,6 @@ removal=4
 rarity=U
 type=Instant
 cost={1}{B}
-timing=removal
 effect=Destroy target nonartifact creature.
+timing=removal
 oracle=Destroy target nonartifact creature.

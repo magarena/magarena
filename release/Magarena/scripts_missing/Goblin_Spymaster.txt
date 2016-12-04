@@ -1,5 +1,6 @@
 name=Goblin Spymaster
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/ZZ3bAdHG7S_EN.png
+image=http://magiccards.info/scans/en/c16/19.jpg
+image_updated=2016-12-04
 value=2.500
 rarity=R
 type=Creature

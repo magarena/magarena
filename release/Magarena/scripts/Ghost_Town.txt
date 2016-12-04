@@ -5,5 +5,5 @@ rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
         {0}: Return SN to its owner's hand. Activate this ability only if it's not your turn.
-timing=main
+timing=land
 oracle={T}: Add {C} to your mana pool.\n{0}: Return Ghost Town to its owner's hand. Activate this ability only if it's not your turn.

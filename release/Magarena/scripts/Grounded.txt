@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
+ability=Enchant creature
 timing=aura
 enchant=lose flying,neg creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature loses flying.
+requires_groovy_code

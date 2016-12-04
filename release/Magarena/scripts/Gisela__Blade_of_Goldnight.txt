@@ -6,8 +6,8 @@ rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={4}{R}{W}{W}
-ability=Flying, first strike
 pt=5/5
+ability=Flying, first strike
 timing=main
-requires_groovy_code
 oracle=Flying, first strike\nIf a source would deal damage to an opponent or a permanent an opponent controls, that source deals double that damage to that player or permanent instead.\nIf a source would deal damage to you or a permanent you control, prevent half that damage, rounded up.
+requires_groovy_code

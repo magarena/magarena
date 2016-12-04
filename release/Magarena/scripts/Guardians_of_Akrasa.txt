@@ -8,5 +8,5 @@ cost={2}{W}
 pt=0/4
 ability=Defender;\
         Exalted
-timing=smain
+timing=fmain
 oracle=Defender\nExalted

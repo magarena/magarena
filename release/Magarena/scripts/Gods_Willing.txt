@@ -1,5 +1,6 @@
 name=Gods Willing
-image=http://magiccards.info/scans/en/ths/16.jpg
+image=http://magiccards.info/scans/en/cn2/88.jpg
+image_updated=2016-12-04
 value=3.509
 rarity=C
 type=Instant

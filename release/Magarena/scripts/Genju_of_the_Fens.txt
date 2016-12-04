@@ -1,11 +1,13 @@
 name=Genju of the Fens
-image=http://magiccards.info/scans/en/gvl/47.jpg
+image=http://magiccards.info/scans/en/bok/66.jpg
+image_updated=2016-12-03
 value=3.488
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}
+ability=Enchant Swamp
+timing=aura
 enchant=pump,pos swamp
-timing=enchantment
-requires_groovy_code
 oracle=Enchant Swamp\n{2}: Until end of turn, enchanted Swamp becomes a 2/2 black Spirit creature with "{B}: This creature gets +1/+1 until end of turn." It's still a land.\nWhen enchanted Swamp is put into a graveyard, you may return Genju of the Fens from your graveyard to your hand.
+requires_groovy_code

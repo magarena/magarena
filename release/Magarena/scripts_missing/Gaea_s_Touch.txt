@@ -1,7 +1,7 @@
 name=Gaea's Touch
 image=http://magiccards.info/scans/en/dk/40.jpg
 value=4.570
-rarity=U
+rarity=C
 type=Enchantment
 cost={G}{G}
 ability={0}: You may put a basic Forest card from your hand onto the battlefield. Activate this ability only any time you could cast a sorcery and only once each turn.;\

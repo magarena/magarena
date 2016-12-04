@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability=Whenever a nontoken creature enters the battlefield, if SN is untapped, that creature's controller creates a 1/1 colorless Myr artifact creature token.
-timing=main
+timing=artifact
 oracle=Whenever a nontoken creature enters the battlefield, if Genesis Chamber is untapped, that creature's controller creates a 1/1 colorless Myr artifact creature token.

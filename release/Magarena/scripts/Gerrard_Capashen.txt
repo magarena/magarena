@@ -1,5 +1,6 @@
 name=Gerrard Capashen
-image=http://magiccards.info/scans/en/pvc/46.jpg
+image=http://magiccards.info/scans/en/ap/11.jpg
+image_updated=2016-12-03
 value=3.866
 rarity=R
 type=Legendary,Creature

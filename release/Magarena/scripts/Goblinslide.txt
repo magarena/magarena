@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{R}
 ability=Whenever you cast a noncreature spell, you may pay {1}. If you do, create a 1/1 red Goblin creature token with haste.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a noncreature spell, you may pay {1}. If you do, create a 1/1 red Goblin creature token with haste.

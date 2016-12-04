@@ -7,6 +7,6 @@ subtype=Bird
 cost={W}
 pt=2/2
 ability=Flying;\
-        When SN enters the battlefield, you may return an artifact you control to its owner's hand. If you don't, sacrifice SN.
+        When SN enters the battlefield, sacrifice SN unless you return an artifact you control to its owner's hand.
 timing=main
 oracle=Flying\nWhen Glint Hawk enters the battlefield, sacrifice it unless you return an artifact you control to its owner's hand.

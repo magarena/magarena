@@ -1,10 +1,11 @@
 name=Geistflame
-image=http://magiccards.info/scans/en/ddk/61.jpg
+image=http://magiccards.info/scans/en/isd/144.jpg
+image_updated=2016-12-03
 value=3.625
 rarity=C
 type=Instant
 cost={R}
-effect=SN deals 1 damage to target creature or player.
 ability=Flashback {3}{R}
+effect=SN deals 1 damage to target creature or player.
 timing=removal
 oracle=Geistflame deals 1 damage to target creature or player.\nFlashback {3}{R}

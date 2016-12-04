@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={3}{W}{W}
 pt=2/2
-ability=flanking;\
+ability=Flanking;\
         Whenever SN attacks, you may tap target creature.;\
         Whenever SN becomes blocked, you may untap SN~and remove it from combat.
 timing=main

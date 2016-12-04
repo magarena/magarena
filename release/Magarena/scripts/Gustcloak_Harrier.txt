@@ -1,5 +1,6 @@
 name=Gustcloak Harrier
-image=http://magiccards.info/scans/en/ddo/10.jpg
+image=http://magiccards.info/scans/en/on/34.jpg
+image_updated=2016-12-04
 value=3.339
 rarity=C
 type=Creature

@@ -27,7 +27,7 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
                 source,
                 TARGET_PERMANENT_WITH_COUNTERS,
                 this,
-                "For each counter on target permanent\$, PN puts another of those counters on that permanent."
+                "Double the number of each kind of counter on target permanent\$."
             );
         }
         @Override

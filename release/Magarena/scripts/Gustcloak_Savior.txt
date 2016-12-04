@@ -1,5 +1,6 @@
 name=Gustcloak Savior
-image=http://magiccards.info/scans/en/ddo/11.jpg
+image=http://magiccards.info/scans/en/on/36.jpg
+image_updated=2016-12-04
 value=3.903
 rarity=R
 type=Creature

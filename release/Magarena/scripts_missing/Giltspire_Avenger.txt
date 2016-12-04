@@ -8,6 +8,6 @@ cost={G}{W}{U}
 pt=2/2
 ability=Exalted;\
         {T}: Destroy target creature that dealt damage to you this turn.
-timing=main
+timing=fmain
 oracle=Exalted\n{T}: Destroy target creature that dealt damage to you this turn.
 status=not supported: no-info

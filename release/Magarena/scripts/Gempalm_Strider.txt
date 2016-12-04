@@ -1,5 +1,6 @@
 name=Gempalm Strider
-image=http://magiccards.info/scans/en/evg/6.jpg
+image=http://magiccards.info/scans/en/le/127.jpg
+image_updated=2016-12-03
 value=3.397
 rarity=U
 type=Creature

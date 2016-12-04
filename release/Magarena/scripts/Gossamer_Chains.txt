@@ -5,5 +5,5 @@ rarity=C
 type=Enchantment
 cost={W}{W}
 ability=Return SN to its owner's hand: Prevent all combat damage that would be dealt by target unblocked creature this turn. Activate this ability during combat after blockers are declared.
-timing=main
+timing=enchantment
 oracle=Return Gossamer Chains to its owner's hand: Prevent all combat damage that would be dealt by target unblocked creature this turn.

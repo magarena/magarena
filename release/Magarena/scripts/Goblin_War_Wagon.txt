@@ -8,5 +8,5 @@ cost={4}
 pt=3/3
 ability=SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {2}. If you do, untap SN.
-timing=artifact
+timing=main
 oracle=Goblin War Wagon doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {2}. If you do, untap Goblin War Wagon.

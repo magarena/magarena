@@ -1,5 +1,6 @@
 name=Gempalm Avenger
-image=http://magiccards.info/scans/en/ddo/9.jpg
+image=http://magiccards.info/scans/en/le/14.jpg
+image_updated=2016-12-03
 value=2.875
 rarity=C
 type=Creature

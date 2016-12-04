@@ -1,5 +1,6 @@
 name=Goblin Sledder
-image=http://magiccards.info/scans/en/evg/41.jpg
+image=http://magiccards.info/scans/en/on/209.jpg
+image_updated=2016-12-04
 value=3.948
 rarity=C
 type=Creature

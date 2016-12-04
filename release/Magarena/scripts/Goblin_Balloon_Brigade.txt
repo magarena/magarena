@@ -1,7 +1,7 @@
 name=Goblin Balloon Brigade
 image=http://magiccards.info/scans/en/m11/140.jpg
 value=3.419
-rarity=U
+rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={R}

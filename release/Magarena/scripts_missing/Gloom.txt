@@ -1,7 +1,7 @@
 name=Gloom
 image=http://magiccards.info/scans/en/5e/27.jpg
 value=3.926
-rarity=R
+rarity=U
 type=Enchantment
 cost={2}{B}
 ability=White spells cost {3} more to cast.;\

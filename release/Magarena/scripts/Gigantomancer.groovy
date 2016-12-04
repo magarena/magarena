@@ -23,7 +23,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 TARGET_CREATURE_YOU_CONTROL,
                 new MagicBecomeTargetPicker(7,7,false),
                 this,
-                "Target creature\$ you control becomes 7/7 until end of turn."
+                "Target creature\$ you control has base power and toughness 7/7 until end of turn."
             );
         }
 

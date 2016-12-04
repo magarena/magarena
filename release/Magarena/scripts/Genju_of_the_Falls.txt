@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}
+ability=Enchant Island
+timing=aura
 enchant=pump,pos island
-timing=enchantment
-requires_groovy_code
 oracle=Enchant Island\n{2}: Enchanted Island becomes a 3/2 blue Spirit creature with flying until end of turn. It's still a land.\nWhen enchanted Island is put into a graveyard, you may return Genju of the Falls from your graveyard to your hand.
+requires_groovy_code

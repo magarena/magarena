@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{U}{U}
 ability=Creatures with flying get +2/+0.;\
         Creatures without flying get -2/-0.
-timing=main
+timing=enchantment
 oracle=Creatures with flying get +2/+0.\nCreatures without flying get -2/-0.

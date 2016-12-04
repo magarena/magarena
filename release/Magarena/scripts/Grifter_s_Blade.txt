@@ -11,3 +11,4 @@ ability=Flash;\
         Equip {1}
 timing=flash
 oracle=Flash\nAs Grifter's Blade enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature.\nEquipped creature gets +1/+1.\nEquip {1}
+#Should enter the battlefield attached, as a replacement effect. Avoiding potential 'when becomes attached' triggers

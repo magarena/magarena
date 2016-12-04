@@ -1,11 +1,13 @@
 name=Genju of the Cedars
-image=http://magiccards.info/scans/en/gvl/13.jpg
+image=http://magiccards.info/scans/en/bok/126.jpg
+image_updated=2016-12-03
 value=4.112
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Enchant Forest
+timing=aura
 enchant=pump,pos forest
-timing=enchantment
-requires_groovy_code
 oracle=Enchant Forest\n{2}: Enchanted Forest becomes a 4/4 green Spirit creature until end of turn. It's still a land.\nWhen enchanted Forest is put into a graveyard, you may return Genju of the Cedars from your graveyard to your hand.
+requires_groovy_code

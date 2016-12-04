@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={R}
+ability=Enchant Mountain
+timing=aura
 enchant=pump,pos mountain
-timing=enchantment
-requires_groovy_code
 oracle=Enchant Mountain\n{2}: Enchanted Mountain becomes a 6/1 red Spirit creature until end of turn. It's still a land.\nWhen enchanted Mountain is put into a graveyard, you may return Genju of the Spires from your graveyard to your hand.
+requires_groovy_code

@@ -6,6 +6,7 @@ type=Creature
 subtype=Elk
 cost={1}{G}{G}
 pt=3/3
-ability=SN can't be countered.;protection from blue;protection from black
+ability=SN can't be countered.;\
+        Protection from blue;protection from black
 timing=main
 oracle=Great Sable Stag can't be countered.\nProtection from blue and from black

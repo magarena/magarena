@@ -1,6 +1,6 @@
 name=Goblin Sky Raider
-image=http://magiccards.info/scans/en/dpa/46.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/210.jpg
+image_updated=2016-12-04
 value=1.364
 rarity=C
 type=Creature

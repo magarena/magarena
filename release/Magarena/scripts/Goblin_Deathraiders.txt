@@ -1,5 +1,6 @@
 name=Goblin Deathraiders
-image=http://magiccards.info/scans/en/ddn/6.jpg
+image=http://magiccards.info/scans/en/ala/169.jpg
+image_updated=2016-12-04
 value=3.150
 rarity=C
 type=Creature

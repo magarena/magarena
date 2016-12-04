@@ -6,9 +6,10 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Enchanted creature gets -1/-1.
 given_color=b
 given_subtype=Zombie
-timing=removal
+ability=Enchant creature;\
+        Enchanted creature gets -1/-1.
+timing=aura
 enchant=weaken -1/-1,neg creature
 oracle=Enchant creature\nEnchanted creature gets -1/-1 and is a black Zombie in addition to its other colors and types.

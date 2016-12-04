@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 cost={R}
 effect=SN deals damage equal to the number of Goblins you control to target player.
-timing=removal
-oracle=Goblin War Strike deals damage to target player equal to the number of Goblins you control.
+timing=main
+oracle=Goblin War Strike deals damage equal to the number of Goblins you control to target player.

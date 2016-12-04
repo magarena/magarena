@@ -1,5 +1,6 @@
 name=Gustcloak Sentinel
-image=http://magiccards.info/scans/en/ddo/12.jpg
+image=http://magiccards.info/scans/en/on/37.jpg
+image_updated=2016-12-04
 value=3.389
 rarity=U
 type=Creature

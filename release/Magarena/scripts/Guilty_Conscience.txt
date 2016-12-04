@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
+ability=Enchant creature
 timing=aura
 enchant=can't attack,neg creature
-requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature deals damage, Guilty Conscience deals that much damage to that creature.
+requires_groovy_code

@@ -1,7 +1,7 @@
 name=Grove of the Burnwillows
 image=http://magiccards.info/scans/en/fut/176.jpg
 value=3.949
-rarity=M
+rarity=R
 type=Land
 mana=r3g3
 ability={T}: Add {C} to your mana pool.

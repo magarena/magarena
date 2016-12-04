@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={4}{R}{W}
 ability=Whenever a creature you control attacks, put a +1/+1 counter on RN.
-timing=main
+timing=enchantment
 oracle=Whenever a creature you control attacks, put a +1/+1 counter on it.

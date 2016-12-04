@@ -1,5 +1,6 @@
 name=Gustcloak Skirmisher
-image=http://magiccards.info/scans/en/ddo/13.jpg
+image=http://magiccards.info/scans/en/on/38.jpg
+image_updated=2016-12-04
 value=3.262
 rarity=U
 type=Creature
