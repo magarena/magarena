@@ -7,3 +7,4 @@ cost={W}{W}
 effect=Exile all white creatures. For each creature exiled this way, its controller draws a card.
 timing=main
 oracle=Exile all white creatures. For each creature exiled this way, its controller draws a card.
+status=needs groovy

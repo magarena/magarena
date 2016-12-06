@@ -9,3 +9,4 @@ pt=3/3
 ability=Whenever SN attacks, if defending player controls no black nontoken permanents, it doesn't untap during your next untap step.
 timing=main
 oracle=Whenever Spectral Bears attacks, if defending player controls no black nontoken permanents, it doesn't untap during your next untap step.
+status=needs groovy

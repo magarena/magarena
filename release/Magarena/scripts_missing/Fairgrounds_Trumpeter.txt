@@ -10,3 +10,4 @@ pt=2/2
 ability=At the beginning of each end step, if a +1/+1 counter was placed on a permanent under your control this turn, put a +1/+1 counter on SN.
 timing=main
 oracle=At the beginning of each end step, if a +1/+1 counter was placed on a permanent under your control this turn, put a +1/+1 counter on Fairgrounds Trumpeter.
+status=not supported: no-info

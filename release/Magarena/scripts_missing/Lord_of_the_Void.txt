@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, exile the top seven cards of that player's library, then put a creature card from among them onto the battlefield under your control.
 timing=main
 oracle=Flying\nWhenever Lord of the Void deals combat damage to a player, exile the top seven cards of that player's library, then put a creature card from among them onto the battlefield under your control.
+status=needs groovy

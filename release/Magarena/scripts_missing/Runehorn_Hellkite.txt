@@ -10,3 +10,4 @@ ability=Flying;\
         {5}{R}, Exile SN from your graveyard: Each player discards his or her hand, then draws seven cards.
 timing=main
 oracle=Flying\n{5}{R}, Exile Runehorn Hellkite from your graveyard: Each player discards his or her hand, then draws seven cards.
+status=needs groovy

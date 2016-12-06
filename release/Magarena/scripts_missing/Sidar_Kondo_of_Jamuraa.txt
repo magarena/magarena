@@ -11,3 +11,4 @@ ability=Flanking;\
         Partner
 timing=main
 oracle=Flanking\nCreatures your opponents control without flying or reach can't block creatures with power 2 or less.\nPartner
+status=needs groovy
