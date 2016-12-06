@@ -4,7 +4,6 @@ value=3.446
 rarity=R
 type=Sorcery
 cost={5}{B}{B}
-effect=Each player's life total becomes the lowest life total among all players.
 timing=main
 oracle=Each player's life total becomes the lowest life total among all players.
-status=needs groovy
+requires_groovy_code
