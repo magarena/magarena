@@ -962,7 +962,8 @@ requires_scripted.txt: groovy_scripted.txt
 requires_scripted_candidate.txt: requires_scripted.txt
 	cat $^ | parallel -k grep '{}' -r release/Magarena/scripts_missing > $@
 
-requires_scripted_candidate:
+requires_scripted_candidate: cards/existing_master.txt
+	cd scripts-builder && make gen-groovy-all
 	rm groovy_scripted.txt requires_scripted.txt requires_scripted_candidate.txt
 	make requires_scripted_candidate.txt
 	diff requires_scripted_candidate.ignore requires_scripted_candidate.txt
