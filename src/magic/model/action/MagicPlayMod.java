@@ -154,7 +154,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.setState(MagicPermanentState.FaceDown);
         }
     },
-    FLIPPED() {
+    FLIPPED("flipped") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.setState(MagicPermanentState.Flipped);
         }
