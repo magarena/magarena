@@ -1,5 +1,6 @@
 name=Heedless One
-image=http://magiccards.info/scans/en/evg/7.jpg
+image=http://magiccards.info/scans/en/on/265.jpg
+image_updated=2016-12-10
 value=4.264
 rarity=U
 type=Creature

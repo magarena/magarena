@@ -9,5 +9,5 @@ pt=1/5
 ability=Defender;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Bane of Hanweir
-timing=main
+timing=smain
 oracle=Defender\nAt the beginning of each upkeep, if no spells were cast last turn, transform Hanweir Watchkeep.

@@ -8,5 +8,5 @@ cost={2}
 ability=Equipped creature gets +1/+1 and has trample.;\
         {G}{G}: Attach SN to target creature you control.;\
         Equip {1}
-timing=artifact
+timing=equipment
 oracle=Equipped creature gets +1/+1 and has trample.\n{G}{G}: Attach Horned Helm to target creature you control.\nEquip {1}

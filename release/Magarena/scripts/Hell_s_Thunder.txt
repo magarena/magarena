@@ -1,5 +1,6 @@
 name=Hell's Thunder
-image=http://magiccards.info/scans/en/ddn/10.jpg
+image=http://magiccards.info/scans/en/ala/103.jpg
+image_updated=2016-12-10
 value=3.627
 rarity=R
 type=Creature

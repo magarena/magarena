@@ -1,7 +1,7 @@
 name=Harrow
 image=http://magiccards.info/scans/en/c14/199.jpg
 value=4.206
-rarity=U
+rarity=C
 type=Instant
 cost={2}{G}
 ability=As an additional cost to cast SN, sacrifice a land.

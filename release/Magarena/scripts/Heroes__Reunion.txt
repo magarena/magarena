@@ -4,6 +4,6 @@ value=3.715
 rarity=U
 type=Instant
 cost={G}{W}
+effect=Target player gains 7 life.
 timing=draw
-effect= Target player gains 7 life.
 oracle=Target player gains 7 life.

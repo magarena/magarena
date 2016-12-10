@@ -1,7 +1,7 @@
 name=High Tide
 image=http://magiccards.info/scans/en/fe/35.jpg
 value=4.500
-rarity=U
+rarity=C
 type=Instant
 cost={U}
 effect=Until end of turn, whenever a player taps an Island for mana, that player adds {U} to his or her mana pool.

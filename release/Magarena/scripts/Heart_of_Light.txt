@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
+ability=Enchant creature
 timing=aura
 enchant=can't attack,creature
-requires_groovy_code
 oracle=Enchant creature\nPrevent all damage that would be dealt to and dealt by enchanted creature.
+requires_groovy_code

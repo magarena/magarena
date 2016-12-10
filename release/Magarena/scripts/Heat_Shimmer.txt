@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Create a token that's a copy of target creature. That token has haste. Exile it at the beginning of the next end step.
 timing=main
 oracle=Create a token that's a copy of target creature. That token has haste and "At the beginning of the end step, exile this permanent."
+#The exile should be an ability of the token, not a separate effect.

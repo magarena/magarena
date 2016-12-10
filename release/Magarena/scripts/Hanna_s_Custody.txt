@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{W}
 ability=All artifacts have shroud.
-timing=main
+timing=enchantment
 oracle=All artifacts have shroud.

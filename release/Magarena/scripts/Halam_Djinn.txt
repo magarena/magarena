@@ -7,6 +7,6 @@ subtype=Djinn
 cost={5}{R}
 pt=6/5
 ability=Haste
-timing=main
-requires_groovy_code
+timing=fmain
 oracle=Haste\nHalam Djinn gets -2/-2 as long as red is the most common color among all permanents or is tied for most common.
+requires_groovy_code

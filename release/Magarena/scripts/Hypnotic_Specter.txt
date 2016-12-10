@@ -1,7 +1,7 @@
 name=Hypnotic Specter
 image=http://magiccards.info/scans/en/m10/100.jpg
 value=4.571
-rarity=U
+rarity=R
 type=Creature
 subtype=Specter
 cost={1}{B}{B}

@@ -4,7 +4,7 @@ value=3.750
 rarity=R
 type=Enchantment
 cost={1}{B}{B}
-ability=When SN enters the battlefield, you may sacrifice four creatures. If you don't, sacrifice SN.;\
+ability=When SN enters the battlefield, sacrifice SN unless you sacrifice four creatures.;\
         Tap an untapped Swamp you control: SN deals 1 damage to target creature or player.
 timing=enchantment
 oracle=When Hecatomb enters the battlefield, sacrifice Hecatomb unless you sacrifice four creatures.\nTap an untapped Swamp you control: Hecatomb deals 1 damage to target creature or player.

@@ -7,3 +7,4 @@ cost={U}
 effect=Choose one — (1) Counter target red spell. (2) Destroy target red permanent.
 timing=counter
 oracle=Choose one —\n• Counter target spell if it's red.\n• Destroy target permanent if it's red.
+#The target needn't be red when it is targeted, color is only checked when it resolves.

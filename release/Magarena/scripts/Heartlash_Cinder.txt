@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Warrior
 cost={1}{R}
 pt=1/1
-ability=haste
-timing=main
-requires_groovy_code
+ability=Haste
+timing=fmain
 oracle=Haste\nChroma — When Heartlash Cinder enters the battlefield, it gets +X/+0 until end of turn, where X is the number of red mana symbols in the mana costs of permanents you control.
+requires_groovy_code

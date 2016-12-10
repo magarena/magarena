@@ -4,7 +4,8 @@ value=3.231
 rarity=U
 type=Sorcery
 cost={1}{R}
+ability=Buyback {2};\
+        Storm
 effect=Creatures you control get +1/+0 until end of turn.
-ability=buyback {2};storm
-timing=main
+timing=storm
 oracle=Buyback {2}\nCreatures you control get +1/+0 until end of turn.\nStorm

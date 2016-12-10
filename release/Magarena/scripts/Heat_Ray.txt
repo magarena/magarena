@@ -1,7 +1,7 @@
 name=Heat Ray
 image=http://magiccards.info/scans/en/m15/148.jpg
 value=3.200
-rarity=C
+rarity=U
 type=Instant
 cost={X}{R}
 effect=SN deals X damage to target creature.

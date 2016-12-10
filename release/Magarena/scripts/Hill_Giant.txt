@@ -1,6 +1,6 @@
 name=Hill Giant
-image=http://magiccards.info/scans/en/dpa/47.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/212.jpg
+image_updated=2016-12-10
 value=1.988
 rarity=C
 type=Creature

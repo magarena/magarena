@@ -1,7 +1,7 @@
 name=Hyalopterous Lemure
 image=http://magiccards.info/scans/en/ia/21.jpg
 value=3.423
-rarity=C
+rarity=U
 type=Creature
 subtype=Spirit
 cost={4}{B}

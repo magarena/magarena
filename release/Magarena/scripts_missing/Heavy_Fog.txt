@@ -1,7 +1,7 @@
 name=Heavy Fog
 image=http://magiccards.info/scans/en/p3k/136.jpg
 value=1.554
-rarity=C
+rarity=U
 type=Instant
 cost={1}{G}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.

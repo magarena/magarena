@@ -5,6 +5,6 @@ rarity=R
 type=Artifact
 cost={2}
 static=player
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=Creatures you control are Slivers in addition to their other creature types.
+requires_groovy_code

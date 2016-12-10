@@ -5,8 +5,10 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=Enchanted creature can't attack.
-enchant=can't attack,neg creature
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted creature can't attack.
 timing=aura
-requires_groovy_code
+enchant=can't attack,neg creature
 oracle=Enchant creature\nWhen Hobble enters the battlefield, draw a card.\nEnchanted creature can't attack.\nEnchanted creature can't block if it's black.
+requires_groovy_code

@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{G}
 ability=When an opponent casts an enchantment spell, if SN is an enchantment, SN becomes a 5/5 Treefolk creature.
-timing=main
+timing=enchantment
 oracle=When an opponent casts an enchantment spell, if Hidden Ancients is an enchantment, Hidden Ancients becomes a 5/5 Treefolk creature.

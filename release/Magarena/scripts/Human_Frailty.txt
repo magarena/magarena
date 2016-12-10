@@ -5,6 +5,6 @@ removal=2
 rarity=U
 type=Instant
 cost={B}
-timing=removal
 effect=Destroy target Human creature.
+timing=removal
 oracle=Destroy target Human creature.

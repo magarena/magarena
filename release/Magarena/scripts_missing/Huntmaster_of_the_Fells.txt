@@ -6,9 +6,9 @@ type=Creature
 subtype=Human,Werewolf
 cost={2}{R}{G}
 pt=2/2
-ability=Whenever this creature enters the battlefield or transforms into SN, put a 2/2 green Wolf creature token onto the battlefield and you gain 2 life.;\
+ability=Whenever this creature enters the battlefield or transforms into SN, create a 2/2 green Wolf creature token and you gain 2 life.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Ravager of the Fells
 timing=main
-oracle=Whenever this creature enters the battlefield or transforms into Huntmaster of the Fells, put a 2/2 green Wolf creature token onto the battlefield and you gain 2 life.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Huntmaster of the Fells.
+oracle=Whenever this creature enters the battlefield or transforms into Huntmaster of the Fells, create a 2/2 green Wolf creature token and you gain 2 life.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Huntmaster of the Fells.
 status=not supported: other-half

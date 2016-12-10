@@ -8,5 +8,5 @@ cost={2}{W}{W}
 pt=3/4
 ability=Battle cry;\
         Whenever SN attacks, create two 1/1 white Soldier creature tokens that's tapped and attacking.
-timing=fmain
-oracle=Battle cry\nWhenever Hero of Bladehold attacks, create two 1/1 white Soldier creature tokens that's tapped and attacking.
+timing=main
+oracle=Battle cry\nWhenever Hero of Bladehold attacks, create two 1/1 white Soldier creature tokens that are tapped and attacking.

@@ -4,6 +4,6 @@ value=3.518
 rarity=C
 type=Sorcery
 cost={1}{U}
-effect=Tap target creature an opponent controls. It doesn't untap during its controller's next untap step.~Cipher.
+effect=Tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.~Cipher
 timing=tapping
 oracle=Tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.\nCipher

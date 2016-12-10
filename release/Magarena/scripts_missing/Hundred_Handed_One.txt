@@ -1,5 +1,6 @@
 name=Hundred-Handed One
-image=http://magiccards.info/scans/en/ths/20.jpg
+image=http://magiccards.info/scans/en/cn2/93.jpg
+image_updated=2016-12-10
 value=3.561
 rarity=R
 type=Creature

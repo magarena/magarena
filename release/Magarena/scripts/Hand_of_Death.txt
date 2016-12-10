@@ -5,6 +5,6 @@ removal=4
 rarity=C
 type=Sorcery
 cost={2}{B}
-timing=main
 effect=Destroy target nonblack creature.
+timing=main
 oracle=Destroy target nonblack creature.

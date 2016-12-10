@@ -1,5 +1,6 @@
 name=Hero's Resolve
-image=http://magiccards.info/scans/en/tp/235.jpg
+image=http://magiccards.info/scans/en/6e/24.jpg
+image_updated=2016-12-10
 value=3.410
 rarity=C
 type=Enchantment

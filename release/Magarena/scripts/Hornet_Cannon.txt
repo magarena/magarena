@@ -1,5 +1,6 @@
 name=Hornet Cannon
-image=http://magiccards.info/scans/en/pvc/28.jpg
+image=http://magiccards.info/scans/en/sh/130.jpg
+image_updated=2016-12-10
 value=2.612
 rarity=U
 type=Artifact
