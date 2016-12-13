@@ -1,6 +1,6 @@
 name=Fertile Ground
-image=http://magiccards.info/scans/en/pch/71.jpg
-image_updated=2016-12-02
+image=http://magiccards.info/scans/en/lw/211.jpg
+image_updated=2016-12-13
 value=4.274
 rarity=C
 type=Enchantment

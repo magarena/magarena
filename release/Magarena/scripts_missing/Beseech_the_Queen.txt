@@ -1,5 +1,6 @@
 name=Beseech the Queen
-image=http://magiccards.info/scans/en/pch/19.jpg
+image=http://magiccards.info/scans/en/shm/57.jpg
+image_updated=2016-12-13
 value=3.577
 rarity=U
 type=Sorcery

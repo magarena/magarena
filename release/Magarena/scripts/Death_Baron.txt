@@ -1,5 +1,6 @@
 name=Death Baron
-image=http://magiccards.info/scans/en/pch/25.jpg
+image=http://magiccards.info/scans/en/ala/70.jpg
+image_updated=2016-12-13
 value=4.147
 rarity=R
 type=Creature

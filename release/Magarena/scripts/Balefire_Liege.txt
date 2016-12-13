@@ -1,5 +1,6 @@
 name=Balefire Liege
-image=http://magiccards.info/scans/en/pch/97.jpg
+image=http://magiccards.info/scans/en/eve/132.jpg
+image_updated=2016-12-13
 value=4.281
 rarity=R
 type=Creature

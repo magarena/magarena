@@ -1,6 +1,6 @@
 name=Furnace of Rath
-image=http://magiccards.info/scans/en/pch/55.jpg
-image_updated=2016-12-02
+image=http://magiccards.info/scans/en/10e/204.jpg
+image_updated=2016-12-13
 value=4.366
 rarity=R
 type=Enchantment

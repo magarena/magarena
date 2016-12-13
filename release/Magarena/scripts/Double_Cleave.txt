@@ -1,5 +1,6 @@
 name=Double Cleave
-image=http://magiccards.info/scans/en/pch/100.jpg
+image=http://magiccards.info/scans/en/eve/135.jpg
+image_updated=2016-12-13
 value=3.915
 rarity=C
 type=Instant

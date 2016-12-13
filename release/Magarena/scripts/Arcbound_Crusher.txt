@@ -1,5 +1,6 @@
 name=Arcbound Crusher
-image=http://magiccards.info/scans/en/pch/105.jpg
+image=http://magiccards.info/scans/en/ds/95.jpg
+image_updated=2016-12-13
 value=4.467
 rarity=U
 type=Artifact,Creature

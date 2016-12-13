@@ -1,5 +1,6 @@
 name=Darksteel Forge
-image=http://magiccards.info/scans/en/pch/111.jpg
+image=http://magiccards.info/scans/en/ds/110.jpg
+image_updated=2016-12-13
 value=3.681
 rarity=R
 type=Artifact

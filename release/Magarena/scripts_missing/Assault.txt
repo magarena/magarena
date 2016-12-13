@@ -1,5 +1,6 @@
 name=Assault
-image=http://magiccards.info/scans/en/pch/103a.jpg
+image=http://magiccards.info/scans/en/in/295a.jpg
+image_updated=2016-12-13
 value=3.628
 rarity=U
 type=Sorcery

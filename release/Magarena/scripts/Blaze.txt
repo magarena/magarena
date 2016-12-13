@@ -1,6 +1,6 @@
 name=Blaze
-image=http://magiccards.info/scans/en/pch/47.jpg
-image_updated=2016-11-20
+image=http://magiccards.info/scans/en/10e/190.jpg
+image_updated=2016-12-13
 value=3.158
 removal=4
 rarity=U
