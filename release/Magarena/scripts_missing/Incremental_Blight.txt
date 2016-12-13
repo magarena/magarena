@@ -1,5 +1,6 @@
 name=Incremental Blight
-image=http://magiccards.info/scans/en/arc/17.jpg
+image=http://magiccards.info/scans/en/shm/70.jpg
+image_updated=2016-12-13
 value=3.364
 rarity=U
 type=Sorcery

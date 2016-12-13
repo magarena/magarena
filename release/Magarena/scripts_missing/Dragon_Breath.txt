@@ -1,5 +1,6 @@
 name=Dragon Breath
-image=http://magiccards.info/scans/en/arc/33.jpg
+image=http://magiccards.info/scans/en/sc/86.jpg
+image_updated=2016-12-13
 value=4.344
 rarity=C
 type=Enchantment

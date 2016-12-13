@@ -1,5 +1,6 @@
 name=Bog Witch
-image=http://magiccards.info/scans/en/arc/11.jpg
+image=http://magiccards.info/scans/en/mm/118.jpg
+image_updated=2016-12-13
 value=4.000
 rarity=C
 type=Creature

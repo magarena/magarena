@@ -1,5 +1,6 @@
 name=Feral Hydra
-image=http://magiccards.info/scans/en/arc/53.jpg
+image=http://magiccards.info/scans/en/ala/131.jpg
+image_updated=2016-12-13
 value=3.000
 rarity=R
 type=Creature

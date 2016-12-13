@@ -1,5 +1,6 @@
 name=Batwing Brume
-image=http://magiccards.info/scans/en/arc/80.jpg
+image=http://magiccards.info/scans/en/eve/81.jpg
+image_updated=2016-12-13
 value=3.736
 rarity=U
 type=Instant
