@@ -2,7 +2,7 @@ name=Izzet Boilerworks
 image=http://magiccards.info/scans/en/mm2/245.jpg
 image_updated=2016-02-29
 value=2.500
-rarity=C
+rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\

@@ -1,5 +1,6 @@
 name=Inferno Trap
-image=http://magiccards.info/scans/en/ddn/67.jpg
+image=http://magiccards.info/scans/en/zen/133.jpg
+image_updated=2016-12-13
 value=2.000
 rarity=U
 type=Instant

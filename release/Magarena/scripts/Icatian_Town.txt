@@ -1,7 +1,7 @@
 name=Icatian Town
 image=http://magiccards.info/scans/en/6e/25.jpg
 value=3.455
-rarity=U
+rarity=R
 type=Sorcery
 cost={5}{W}
 effect=Create four 1/1 white Citizen creature tokens.

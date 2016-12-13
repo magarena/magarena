@@ -4,6 +4,6 @@ value=2.382
 rarity=C
 type=Sorcery
 cost={4}{W}
-timing=removal
 effect=Exile target creature or enchantment.
+timing=removal
 oracle=Exile target creature or enchantment.

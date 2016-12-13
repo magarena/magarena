@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{G}
 ability=Whenever a player cycles a card, you may put a +1/+1 counter on target creature.
-timing=main
+timing=enchantment
 oracle=Whenever a player cycles a card, you may put a +1/+1 counter on target creature.

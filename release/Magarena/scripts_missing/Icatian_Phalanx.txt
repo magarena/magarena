@@ -1,7 +1,7 @@
 name=Icatian Phalanx
 image=http://magiccards.info/scans/en/5e/312.jpg
 value=2.135
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

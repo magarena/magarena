@@ -1,7 +1,7 @@
 name=Invisibility
 image=http://magiccards.info/scans/en/m15/61.jpg
 value=2.100
-rarity=U
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}{U}

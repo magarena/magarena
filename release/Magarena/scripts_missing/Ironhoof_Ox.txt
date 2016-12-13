@@ -1,7 +1,7 @@
 name=Ironhoof Ox
 image=http://magiccards.info/scans/en/po2/70.jpg
 value=3.286
-rarity=C
+rarity=U
 type=Creature
 subtype=Ox
 cost={3}{G}{G}

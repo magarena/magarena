@@ -7,5 +7,5 @@ subtype=Merfolk,Rogue
 cost={U/B}{U/B}
 pt=2/1
 ability=SN can't block.;SN can't be blocked.
-timing=fmain
+timing=main
 oracle=Inkfathom Infiltrator can't block and can't be blocked.

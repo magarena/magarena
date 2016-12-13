@@ -4,7 +4,7 @@ value=3.070
 rarity=C
 type=Enchantment
 cost={1}{U}
-timing=enchantment
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
         Remove three quest counters from SN, Sacrifice SN: Draw two cards.
+timing=enchantment
 oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Ior Ruin Expedition.\nRemove three quest counters from Ior Ruin Expedition and sacrifice it: Draw two cards.

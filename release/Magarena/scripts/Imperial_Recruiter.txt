@@ -1,7 +1,7 @@
 name=Imperial Recruiter
 image=http://magiccards.info/scans/en/p3k/113.jpg
 value=4.082
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Advisor
 cost={2}{R}

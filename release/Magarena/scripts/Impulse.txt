@@ -1,5 +1,6 @@
 name=Impulse
-image=http://magiccards.info/scans/en/ddn/63.jpg
+image=http://magiccards.info/scans/en/vi/34.jpg
+image_updated=2016-12-13
 value=2.500
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Ihsan's Shade
 image=http://magiccards.info/scans/en/hl/16.jpg
 value=3.788
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Shade,Knight
 cost={3}{B}{B}{B}

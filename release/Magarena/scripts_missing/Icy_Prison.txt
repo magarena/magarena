@@ -1,7 +1,7 @@
 name=Icy Prison
 image=http://magiccards.info/scans/en/ia/74.jpg
 value=3.429
-rarity=C
+rarity=R
 type=Enchantment
 cost={U}{U}
 ability=When SN enters the battlefield, exile target creature.;\

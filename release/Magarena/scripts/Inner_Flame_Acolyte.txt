@@ -1,5 +1,6 @@
 name=Inner-Flame Acolyte
-image=http://magiccards.info/scans/en/jvc/41.jpg
+image=http://magiccards.info/scans/en/lw/181.jpg
+image_updated=2016-12-13
 value=3.656
 rarity=C
 type=Creature

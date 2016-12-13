@@ -8,6 +8,6 @@ cost={1}{U}{R}
 pt=0/3
 ability=Flash;\
         Haste
-timing=main
-requires_groovy_code
+timing=flash
 oracle=Flash\nHaste\n{T}: Izzet Staticaster deals 1 damage to target creature and each other creature with the same name as that creature.
+requires_groovy_code

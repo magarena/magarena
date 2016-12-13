@@ -1,9 +1,9 @@
 name=Ivory Tower
 image=http://magiccards.info/scans/en/4e/346.jpg
 value=4.000
-rarity=U
+rarity=R
 type=Artifact
 cost={1}
 timing=artifact
-requires_groovy_code
 oracle=At the beginning of your upkeep, you gain X life, where X is the number of cards in your hand minus 4.
+requires_groovy_code

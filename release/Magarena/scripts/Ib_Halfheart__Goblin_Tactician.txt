@@ -1,5 +1,6 @@
 name=Ib Halfheart, Goblin Tactician
-image=http://magiccards.info/scans/en/evg/43.jpg
+image=http://magiccards.info/scans/en/ts/163.jpg
+image_updated=2016-12-13
 value=4.045
 rarity=R
 type=Legendary,Creature

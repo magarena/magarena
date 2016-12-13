@@ -1,5 +1,6 @@
 name=Icatian Priest
-image=http://magiccards.info/scans/en/dvd/2.jpg
+image=http://magiccards.info/scans/en/10e/24.jpg
+image_updated=2016-12-13
 value=2.724
 rarity=U
 type=Creature
