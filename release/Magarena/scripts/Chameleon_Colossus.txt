@@ -1,6 +1,6 @@
 name=Chameleon Colossus
-image=http://magiccards.info/scans/en/arc/52.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mt/116.jpg
+image_updated=2016-12-13
 value=3.882
 rarity=R
 type=Creature

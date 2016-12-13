@@ -1,6 +1,6 @@
 name=Dregscape Zombie
-image=http://magiccards.info/scans/en/arc/14.jpg
-image_updated=2016-12-01
+image=http://magiccards.info/scans/en/pch/26.jpg
+image_updated=2016-12-13
 value=3.000
 rarity=C
 type=Creature

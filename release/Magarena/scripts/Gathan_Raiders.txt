@@ -1,5 +1,6 @@
 name=Gathan Raiders
-image=http://magiccards.info/scans/en/arc/40.jpg
+image=http://magiccards.info/scans/en/fut/99.jpg
+image_updated=2016-12-13
 value=3.934
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Fieldmist Borderpost
-image=http://magiccards.info/scans/en/arc/85.jpg
+image=http://magiccards.info/scans/en/arb/5.jpg
+image_updated=2016-12-13
 value=2.841
 rarity=C
 type=Artifact

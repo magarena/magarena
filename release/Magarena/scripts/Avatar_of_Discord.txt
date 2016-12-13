@@ -1,5 +1,6 @@
 name=Avatar of Discord
-image=http://magiccards.info/scans/en/arc/79.jpg
+image=http://magiccards.info/scans/en/di/140.jpg
+image_updated=2016-12-13
 value=3.764
 rarity=R
 type=Creature
