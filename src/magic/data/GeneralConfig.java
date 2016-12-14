@@ -96,9 +96,6 @@ public class GeneralConfig {
     private static final String CUSTOM_BACKGROUND = "customBackground";
     private boolean isCustomBackground = false;
 
-    private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
-    private boolean showMissingCardData = true;
-
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
     private String cardImagesPath = "";
 
@@ -402,14 +399,6 @@ public class GeneralConfig {
         isMulliganScreenActive = b;
     }
 
-    public boolean showMissingCardData() {
-        return showMissingCardData;
-    }
-    public void setShowMissingCardData(final boolean b) {
-        showMissingCardData = b;
-        CardDefinitions.resetMissingCardData();
-    }
-
     public int getNewTurnAlertDuration() {
         return newTurnAlertDuration;
     }
@@ -563,7 +552,6 @@ public class GeneralConfig {
         isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + isMulliganScreenActive));
         mostRecentDeckFilename = properties.getProperty(RECENT_DECK, mostRecentDeckFilename).trim();
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + isCustomBackground));
-        showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + showMissingCardData));
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, cardImagesPath);
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + animateGameplay));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+ deckFileMaxLines));
@@ -619,7 +607,6 @@ public class GeneralConfig {
         properties.setProperty(MULLIGAN_SCREEN, String.valueOf(isMulliganScreenActive));
         properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
         properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
-        properties.setProperty(SHOW_MISSING_CARD_DATA, String.valueOf(showMissingCardData));
         properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
         properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
         properties.setProperty(PROXY_SETTINGS, proxySettings);

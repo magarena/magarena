@@ -356,55 +356,15 @@ public class CardDefinitions {
         }
     }
 
-    /**
-     * Returns a list of card names which have yet to be implemented.
-     * <p>
-     * {@code cardsMap} contains a list of current playable cards.
-     * {@code AllCardsNames.txt} contains the name of every possible playable card.
-     * The difference is a list of unimplemented cards.
-     */
-    public static List<String> getMissingCardNames() throws IOException {
-        final List<String> missingCardNames = new ArrayList<>();
-        final InputStream stream = MagicResources.getAllCardNames();
-        try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
-            while (sc.hasNextLine()) {
-                final String cardName = sc.nextLine();
-                if (!allPlayableCardDefs.containsKey(getASCII(cardName))) {
-                    missingCardNames.add(cardName);
-                }
-            }
-        }
-        return missingCardNames;
-    }
-
-    private static void loadMissingCards(final List<String> missingCardNames) {
-
-        final HashMap<String, MagicCardDefinition> missingScripts = new HashMap<>();
-
-        if (GeneralConfig.getInstance().showMissingCardData()) {
-            final File[] scriptFiles = getSortedMissingScriptFiles();
-            if (scriptFiles != null) {
-                for (final File file : scriptFiles) {
-                    MagicCardDefinition cdef = prop2carddef(file, true);
-                    missingScripts.put(cdef.getAsciiName(), cdef);
-                }
-            }
-        }
-
+    private static void loadMissingCards() {
         missingCards = new HashMap<>();
-        for (String cardName : missingCardNames) {
-            final String cardKey = getASCII(cardName);
-            if (missingScripts.containsKey(cardKey)) {
-                missingCards.put(cardKey, missingScripts.get(cardKey));
-            } else {
-                final MagicCardDefinition card = new MagicCardDefinition();
-                card.setName(cardName);
-                card.setDistinctName(cardName);
-                card.setInvalid();
-                missingCards.put(cardKey, card);
+        final File[] scriptFiles = getSortedMissingScriptFiles();
+        if (scriptFiles != null) {
+            for (final File file : scriptFiles) {
+                MagicCardDefinition cdef = prop2carddef(file, true);
+                missingCards.put(cdef.getAsciiName(), cdef);
             }
         }
-
     }
 
     /**
@@ -463,15 +423,20 @@ public class CardDefinitions {
 
     public static synchronized Collection<MagicCardDefinition> getMissingCards() {
         if (missingCards == null) {
-            try {
-                loadMissingCards(getMissingCardNames());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            loadMissingCards();
         }
         return missingCards.values();
     }
+    
+    public static List<String> getMissingCardNames() {
+        List<String> names = new ArrayList<String>(missingCards.size());
+        for (final MagicCardDefinition cdef : getMissingCards()) {
+            names.add(cdef.getName());
+        }
+        return names;
+    }
 
+    
     private static void saveCardsSnapshotFile() {
         MagicFileSystem.serializeStringList(getPlayableNonTokenCardNames(), CARDS_SNAPSHOT_FILE);
     }

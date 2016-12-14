@@ -32,7 +32,6 @@ class GeneralPanel extends JPanel {
     private final TranslationPanel langPanel;
     private final MCheckBox splitViewDeckEditorCheckBox;
     private final MCheckBox previewCardOnSelectCheckBox;
-    private final MCheckBox missingCardDataCheckbox;
     private final PreferredSizePanel preferredSizePanel;
     private final DirectoryChooser imagesFolderChooser;
     private final MCheckBox imagesOnDemandCheckbox;
@@ -66,11 +65,6 @@ class GeneralPanel extends JPanel {
         previewCardOnSelectCheckBox.setFocusable(false);
         previewCardOnSelectCheckBox.addMouseListener(aListener);
 
-        missingCardDataCheckbox = new MCheckBox(MText.get(_S61), config.showMissingCardData());
-        missingCardDataCheckbox.setToolTipText(MText.get(_S62));
-        missingCardDataCheckbox.setFocusable(false);
-        missingCardDataCheckbox.addMouseListener(aListener);
-
         setLayout(new MigLayout("flowy, gapy 4, insets 16"));
 
         // lang
@@ -85,7 +79,6 @@ class GeneralPanel extends JPanel {
         add(getCaptionLabel(MText.get(_S64)), "gaptop 10");
         add(splitViewDeckEditorCheckBox.component());
         add(previewCardOnSelectCheckBox.component());
-        add(missingCardDataCheckbox.component());
     }
 
     void saveSettings() {
@@ -94,7 +87,6 @@ class GeneralPanel extends JPanel {
         config.setTranslation(langPanel.getSelectedLanguage());
         config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
         config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
-        config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
         config.setImagesOnDemand(imagesOnDemandCheckbox.isSelected());
     }
 

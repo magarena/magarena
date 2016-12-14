@@ -122,9 +122,7 @@ public class CardFilterPanel extends TexturedPanel
     }
 
     private boolean showUnsupportedFilter() {
-        return isNotDeckEditor()
-                && GeneralConfig.getInstance().showMissingCardData()
-                && MText.isEnglish();
+        return isNotDeckEditor() && MText.isEnglish();
     }
 
     private boolean isCardfiltered(final MagicCardDefinition aCard) {
