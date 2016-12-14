@@ -1,6 +1,5 @@
 package magic.data;
 
-import magic.utility.FileIO;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
@@ -15,10 +14,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+
 import magic.ui.CardTextLanguage;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.message.MessageStyle;
-import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 
 public class GeneralConfig {

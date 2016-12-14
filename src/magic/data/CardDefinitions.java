@@ -3,7 +3,6 @@ package magic.data;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.text.Normalizer;
@@ -14,23 +13,22 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Scanner;
-import java.util.Locale;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import groovy.lang.GroovyShell;
 import groovy.transform.CompileStatic;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
@@ -38,7 +36,6 @@ import magic.model.event.MagicHandCastActivation;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicResources;
 import magic.utility.MagicSystem;
 import magic.utility.ProgressReporter;
 import org.codehaus.groovy.control.CompilerConfiguration;
@@ -427,7 +424,7 @@ public class CardDefinitions {
         }
         return missingCards.values();
     }
-    
+
     public static List<String> getMissingCardNames() {
         List<String> names = new ArrayList<String>(getMissingCards().size());
         for (final MagicCardDefinition cdef : getMissingCards()) {
@@ -436,7 +433,7 @@ public class CardDefinitions {
         return names;
     }
 
-    
+
     private static void saveCardsSnapshotFile() {
         MagicFileSystem.serializeStringList(getPlayableNonTokenCardNames(), CARDS_SNAPSHOT_FILE);
     }
