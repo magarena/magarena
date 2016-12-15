@@ -57,10 +57,6 @@ public final class MagicResources {
         return instance.getClass().getResource("/magic/data/textures/" + imageFilename);
     }
 
-    public static InputStream getAllCardNames() {
-        return getJarResourceStream("/magic/data/AllCardNames.txt");
-    }
-
     public static URL getSoundUrl(final String filename) {
         return instance.getClass().getResource("/soundfx/" + filename);
     }
