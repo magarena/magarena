@@ -1,13 +1,13 @@
 package magic.data;
 
-import magic.utility.FileIO;
 import java.io.File;
 import java.util.Properties;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
-import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.utility.FileIO;
 import magic.utility.SortedProperties;
 
 public class DuelConfig {
@@ -106,7 +106,7 @@ public class DuelConfig {
             getPlayerConfig(i).setDeckProfile(
                     properties.getProperty(
                             getPlayerPrefix(i) + "deckProfile",
-                            DeckType.Random + ";" + MagicDeckProfile.ANY_THREE)
+                            DeckType.Random.name() + ";" + MagicDeckProfile.ANY_THREE)
             );
             if (loadPlayerDecks) {
                 getPlayerConfig(i).loadDeck(properties, getPlayerPrefix(i));
