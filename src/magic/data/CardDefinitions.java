@@ -353,7 +353,7 @@ public class CardDefinitions {
         }
     }
 
-    private static void loadMissingCards() {
+    public static void loadMissingCards() {
         missingCards = new HashMap<>();
         final File[] scriptFiles = getSortedMissingScriptFiles();
         if (scriptFiles != null) {
@@ -418,10 +418,8 @@ public class CardDefinitions {
         return card.hasStatus() ? isCardMissing(card) && !card.getStatus().contains("not supported") : isCardMissing(card);
     }
 
-    public static synchronized Collection<MagicCardDefinition> getMissingCards() {
-        if (missingCards == null) {
-            loadMissingCards();
-        }
+    public static Collection<MagicCardDefinition> getMissingCards() {
+        MagicSystem.waitForMissingCards();
         return missingCards.values();
     }
 

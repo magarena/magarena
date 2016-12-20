@@ -61,6 +61,27 @@ final public class MagicSystem {
         }
     };
 
+    public static final FutureTask<Void> loadMissing = new FutureTask<Void>(new Runnable() {
+        @Override
+        public void run() {
+            CardDefinitions.loadMissingCards();
+        }
+    }, null) {
+        @Override
+        protected void done() {
+            try {
+                if (!isCancelled()) {
+                    get();
+                }
+            } catch (ExecutionException ex) {
+                throw new RuntimeException(ex.getCause());
+            } catch (InterruptedException ex) {
+                // Shouldn't happen, we're invoked when computation is finished
+                throw new AssertionError(ex);
+            }
+        }
+    };
+
     public static void setIsTestGame(boolean b) {
         System.setProperty("testGame", b ? "Y" : "");
     }
@@ -124,6 +145,18 @@ final public class MagicSystem {
         return reporter.getMessage();
     }
 
+    public static void waitForMissingCards() {
+        if (loadMissing.isDone()) {
+            return;
+        } else {
+            try {
+                loadMissing.get();
+            } catch (final InterruptedException|ExecutionException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
+    }
+
     public static void waitForAllCards() {
         if (loadCards.isDone()) {
             return;
@@ -178,6 +211,7 @@ final public class MagicSystem {
                 CardDefinitions.postCardDefinitions();
             }
         });
+        background.execute(loadMissing);
         background.shutdown();
 
         // if parse scripts missing or pre-load abilities then load cards synchronously
