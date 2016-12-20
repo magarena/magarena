@@ -1,5 +1,6 @@
 package magic.ui;
 
+import java.awt.GraphicsEnvironment;
 import java.util.Stack;
 import java.util.concurrent.Callable;
 import javax.swing.JOptionPane;
@@ -59,7 +60,7 @@ public final class ScreenController {
 
     private static MagicFrame mainFrame;
     static {
-        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
+        if (!GraphicsEnvironment.isHeadless()) {
             mainFrame = new MagicFrame(MagicSystem.SOFTWARE_TITLE);
         }
     }
@@ -74,9 +75,7 @@ public final class ScreenController {
     public static void showPreferencesDialog() {
         final PreferencesDialog dialog = new PreferencesDialog(mainFrame, isDuelActive());
         if (dialog.isRestartRequired()) {
-            SwingUtilities.invokeLater(() -> {
-                showMainMenuScreen();
-            });
+            SwingUtilities.invokeLater(ScreenController::showMainMenuScreen);
         }
     }
 
@@ -112,9 +111,7 @@ public final class ScreenController {
     }
 
     public static void refreshStyle() {
-        for (MScreen screen : screens) {
-            screen.refreshStyle();
-        }
+        screens.forEach(MScreen::refreshStyle);
     }
 
     public static void showInfoMessage(final String message) {
@@ -158,11 +155,9 @@ public final class ScreenController {
     }
 
     private static boolean isScreenLoadedButHidden(MScreen screen) {
-        return hiddenScreen != null
-                && hiddenScreen.getClass().getName()
-                        .equals(screen.getClass().getName());
+        return hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName());
     }
-    
+
     private static void showScreen(MScreen screen) {
         if (isScreenLoadedButHidden(screen)) {
             screen = hiddenScreen;
@@ -190,11 +185,11 @@ public final class ScreenController {
     //
 
     public static void showDevMenuScreen() {
-        showScreen(() -> new DevMenuScreen());
+        showScreen(DevMenuScreen::new);
     }
 
     public static void showTestScreen() {
-        showScreen(() -> new TestScreen());
+        showScreen(TestScreen::new);
     }
 
     public static void showDuelDecksScreen(final MagicDuel duel) {
@@ -206,27 +201,27 @@ public final class ScreenController {
 
     public static void showMainMenuScreen() {
         screens.clear();
-        showScreen(() -> new MainMenuScreen());
+        showScreen(MainMenuScreen::new);
     }
 
     public static void showReadMeScreen() {
-        showScreen(() -> new ReadmeScreen());
+        showScreen(ReadmeScreen::new);
     }
 
     public static void showKeywordsScreen() {
-        showScreen(() -> new KeywordsScreen());
+        showScreen(KeywordsScreen::new);
     }
 
     public static void showHelpMenuScreen() {
-        showScreen(() -> new HelpMenuScreen());
+        showScreen(HelpMenuScreen::new);
     }
 
     public static void showSettingsMenuScreen() {
-        showScreen(() -> new SettingsMenuScreen());
+        showScreen(SettingsMenuScreen::new);
     }
 
     public static void showCardExplorerScreen() {
-        showScreen(() -> new ExplorerScreen());
+        showScreen(ExplorerScreen::new);
     }
 
     public static void showDeckEditor(final MagicDeck deck) {
@@ -237,8 +232,8 @@ public final class ScreenController {
 
     public static void showDeckEditor() {
         showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
-                ? () -> new DeckEditorSplitScreen()
-                : () -> new DeckEditorScreen());
+                ? DeckEditorSplitScreen::new
+                : DeckEditorScreen::new);
     }
 
     public static void showDeckViewScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
@@ -279,11 +274,11 @@ public final class ScreenController {
     }
 
     public static void showNewDuelSettingsScreen() {
-        showScreen(() -> new NewDuelSettingsScreen());
+        showScreen(NewDuelSettingsScreen::new);
     }
 
     public static void showGameLogScreen() {
-        showScreen(() -> new GameLogScreen());
+        showScreen(GameLogScreen::new);
     }
 
     public static void showCardScriptScreen(final MagicCardDefinition card) {
@@ -304,24 +299,24 @@ public final class ScreenController {
 
     public static void showStartScreen() {
         screens.clear();
-        showScreen(() -> new StartScreen());
+        showScreen(StartScreen::new);
     }
 
     public static void showImportScreen() {
         screens.clear();
-        showScreen(() -> new ImportScreen());
+        showScreen(ImportScreen::new);
     }
 
     public static void showAboutScreen() {
         if (screens.peek() instanceof AboutScreen) {
             // already open, do nothing
         } else {
-            showScreen(() -> new AboutScreen());
+            showScreen(AboutScreen::new);
             mainFrame.getGlassPane().setVisible(false);
         }
     }
 
     public static void showDownloadImagesScreen() {
-        showScreen(() -> new DownloadImagesScreen());
+        showScreen(DownloadImagesScreen::new);
     }
 }
