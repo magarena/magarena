@@ -56,9 +56,9 @@ public class CardDefinitions {
     // of that card that can be played.
 
     // Contains reference to all playable MagicCardDefinitions indexed by card name.
-    private static final ConcurrentMap<String, MagicCardDefinition> allPlayableCardDefs = new ConcurrentHashMap<>();
+    private static final Map<String, MagicCardDefinition> allPlayableCardDefs = new ConcurrentHashMap<>();
 
-    private static Map<String, MagicCardDefinition> missingCards = null;
+    private static final Map<String, MagicCardDefinition> missingCards = new ConcurrentHashMap<>();
 
     private static final AtomicInteger cdefIndex = new AtomicInteger(1);
 
@@ -267,7 +267,7 @@ public class CardDefinitions {
 
     public static MagicCardDefinition getMissingOrCard(final String original) {
         final String key = getASCII(original);
-        return missingCards != null && missingCards.containsKey(key) ? missingCards.get(key) : getCard(original);
+        return missingCards.containsKey(key) ? missingCards.get(key) : getCard(original);
     }
 
     public static MagicCardDefinition getCard(final String original) {
@@ -354,7 +354,6 @@ public class CardDefinitions {
     }
 
     public static void loadMissingCards() {
-        missingCards = new HashMap<>();
         final File[] scriptFiles = getSortedMissingScriptFiles();
         if (scriptFiles != null) {
             for (final File file : scriptFiles) {
@@ -376,13 +375,6 @@ public class CardDefinitions {
             Arrays.sort(files);
         }
         return files;
-    }
-
-    public static void resetMissingCardData() {
-        if (missingCards != null) {
-            missingCards.clear();
-            missingCards = null;
-        }
     }
 
     public static void checkForMissingFiles() {
@@ -411,7 +403,7 @@ public class CardDefinitions {
     }
 
     public static boolean isCardMissing(MagicCardDefinition card) {
-        return missingCards != null && missingCards.containsKey(card.getAsciiName());
+        return missingCards.containsKey(card.getAsciiName());
     }
 
     public static boolean isPotential(MagicCardDefinition card) {
