@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={1}{U}{U}
 pt=2/2
-ability=Whenever a spell or ability you control counters a spell, you may put a 1/1 blue Merfolk creature token onto the battlefield.;\
+ability=Whenever a spell or ability you control counters a spell, you may create a 1/1 blue Merfolk creature token.;\
         Tap seven untapped Merfolk you control: Counter target spell.
 timing=main
-oracle=Whenever a spell or ability you control counters a spell, you may put a 1/1 blue Merfolk creature token onto the battlefield.\nTap seven untapped Merfolk you control: Counter target spell.
+oracle=Whenever a spell or ability you control counters a spell, you may create a 1/1 blue Merfolk creature token.\nTap seven untapped Merfolk you control: Counter target spell.

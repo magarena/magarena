@@ -1,5 +1,6 @@
 name=Ludevic, Necro-Alchemist
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/ruX19neusP_EN.png
+image=http://magiccards.info/scans/en/c16/37.jpg
+image_updated=2016-12-21
 value=2.500
 rarity=M
 type=Legendary,Creature

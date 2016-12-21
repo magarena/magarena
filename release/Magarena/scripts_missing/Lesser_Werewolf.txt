@@ -1,7 +1,7 @@
 name=Lesser Werewolf
 image=http://magiccards.info/scans/en/lg/24.jpg
 value=2.638
-rarity=C
+rarity=U
 type=Creature
 subtype=Werewolf
 cost={3}{B}

@@ -1,7 +1,7 @@
 name=Lava Hounds
 image=http://magiccards.info/scans/en/8e/198.jpg
 value=3.000
-rarity=U
+rarity=R
 type=Creature
 subtype=Hound
 cost={2}{R}{R}

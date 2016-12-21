@@ -1,9 +1,9 @@
 name=Life Chisel
 image=http://magiccards.info/scans/en/lg/228.jpg
 value=3.560
-rarity=R
+rarity=U
 type=Artifact
 cost={4}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=Sacrifice a creature: You gain life equal to the sacrificed creature's toughness. Activate this ability only during your upkeep.
+requires_groovy_code

@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={3}
 ability=Whenever a nontoken creature you control dies, put a charge counter on SN.;\
-        At the beginning of your upkeep, if SN has five or more charge counters on it, remove all of them from it and put that many 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
+        At the beginning of your upkeep, if SN has five or more charge counters on it, remove all of them from it and create that many 3/1 red Elemental creature tokens with haste. Exile them at the beginning of the next end step.
 timing=artifact
-oracle=Whenever a nontoken creature you control dies, put a charge counter on Lightning Coils.\nAt the beginning of your upkeep, if Lightning Coils has five or more charge counters on it, remove all of them from it and put that many 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
+oracle=Whenever a nontoken creature you control dies, put a charge counter on Lightning Coils.\nAt the beginning of your upkeep, if Lightning Coils has five or more charge counters on it, remove all of them from it and create that many 3/1 red Elemental creature tokens with haste. Exile them at the beginning of the next end step.
 status=needs groovy

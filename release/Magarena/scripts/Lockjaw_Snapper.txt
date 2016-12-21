@@ -8,5 +8,5 @@ cost={4}
 pt=2/2
 ability=Wither;\
         When SN dies, put a -1/-1 counter on each creature with a -1/-1 counter on it.
-timing=artifact
+timing=main
 oracle=Wither\nWhen Lockjaw Snapper dies, put a -1/-1 counter on each creature with a -1/-1 counter on it.

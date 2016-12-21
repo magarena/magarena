@@ -1,6 +1,6 @@
 name=Llanowar Reborn
-image=http://magiccards.info/scans/en/arc/129.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/fut/171.jpg
+image_updated=2016-12-21
 value=3.850
 rarity=U
 type=Land
@@ -8,5 +8,5 @@ mana=g3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         Graft 1
-timing=land
+timing=tapland
 oracle=Llanowar Reborn enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nGraft 1

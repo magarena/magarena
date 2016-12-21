@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature gets +1/+0 and has first strike.
+ability=Enchant creature;\
+        Enchanted creature gets +1/+0 and has first strike.
 timing=aura
 enchant=first strike,pos creature
-requires_groovy_code
 oracle=You may cast Lightning Reflexes as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.\nEnchant creature\nEnchanted creature gets +1/+0 and has first strike.
+requires_groovy_code

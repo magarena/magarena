@@ -1,7 +1,7 @@
 name=Lady Caleria
 image=http://magiccards.info/scans/en/lg/279.jpg
 value=2.843
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Archer
 cost={3}{G}{G}{W}{W}

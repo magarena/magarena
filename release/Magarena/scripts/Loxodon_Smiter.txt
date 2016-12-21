@@ -6,7 +6,7 @@ type=Creature
 subtype=Elephant,Soldier
 cost={1}{G}{W}
 pt=4/4
-timing=main
 ability=SN can't be countered.;\
         If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.
+timing=main
 oracle=Loxodon Smiter can't be countered.\nIf a spell or ability an opponent controls causes you to discard Loxodon Smiter, put it onto the battlefield instead of putting it into your graveyard.

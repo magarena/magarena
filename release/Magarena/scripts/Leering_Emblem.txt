@@ -7,5 +7,5 @@ subtype=Equipment
 cost={2}
 ability=Whenever you cast a spell, if SN is being equipped, equipped creature gets +2/+2 until end of turn.;\
         Equip {2}
-timing=main
+timing=equipment
 oracle=Whenever you cast a spell, equipped creature gets +2/+2 until end of turn.\nEquip {2}

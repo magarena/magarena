@@ -1,5 +1,6 @@
 name=Lavaborn Muse
-image=http://magiccards.info/scans/en/ddk/50.jpg
+image=http://magiccards.info/scans/en/10e/216.jpg
+image_updated=2016-12-21
 value=3.400
 rarity=R
 type=Creature
@@ -7,5 +8,5 @@ subtype=Spirit
 cost={3}{R}
 pt=3/3
 ability=At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, SN deals 3 damage to RN.
-timing=smain
+timing=main
 oracle=At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, Lavaborn Muse deals 3 damage to him or her.

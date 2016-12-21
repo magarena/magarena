@@ -4,7 +4,7 @@ value=3.583
 rarity=U
 type=Enchantment
 cost={1}{U}
-timing=enchantment
 ability=At the beginning of your upkeep, you may put a verse counter on SN.
-requires_groovy_code
+timing=enchantment
 oracle=At the beginning of your upkeep, you may put a verse counter on Lilting Refrain.\nSacrifice Lilting Refrain: Counter target spell unless its controller pays {X}, where X is the number of verse counters on Lilting Refrain.
+requires_groovy_code

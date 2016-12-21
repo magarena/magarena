@@ -1,5 +1,6 @@
 name=Lightning Helix
-image=http://magiccards.info/scans/en/ddn/65.jpg
+image=http://magiccards.info/scans/en/mma/179.jpg
+image_updated=2016-12-21
 value=4.000
 removal=3
 rarity=U

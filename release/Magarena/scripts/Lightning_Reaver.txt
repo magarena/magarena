@@ -9,5 +9,5 @@ pt=3/3
 ability=Haste, fear;\
         Whenever SN deals combat damage to a player, put a charge counter on SN.;\
         At the beginning of your end step, SN deals damage equal to the number of charge counters on it to each opponent.
-timing=main
+timing=fmain
 oracle=Haste, fear\nWhenever Lightning Reaver deals combat damage to a player, put a charge counter on it.\nAt the beginning of your end step, Lightning Reaver deals damage equal to the number of charge counters on it to each opponent.

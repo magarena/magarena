@@ -1,7 +1,7 @@
 name=Lim-Dûl's High Guard
 image=http://magiccards.info/scans/en/ai/18.jpg
 value=3.595
-rarity=U
+rarity=C
 type=Creature
 subtype=Skeleton
 cost={1}{B}{B}

@@ -9,4 +9,4 @@ pt=4/3
 ability=Deathtouch;\
         Whenever SN deals combat damage to a player, that player discards a card~and you create a 2/2 black Zombie creature token that's tapped.
 timing=main
-oracle=Deathtouch\nWhenever Liliana's Reaver deals combat damage to a player, that player discards a card and you create a 2/2 black Zombie creature token that's tapped.
+oracle=Deathtouch\nWhenever Liliana's Reaver deals combat damage to a player, that player discards a card and you create a tapped 2/2 black Zombie creature token.

@@ -6,6 +6,6 @@ type=Land
 mana=b2r2
 ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {B} or {R} to your mana pool. Put a depletion counter on SN.
-timing=main
-requires_groovy_code=Land Cap
+timing=land
 oracle=Lava Tubes doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Lava Tubes.\n{T}: Add {B} or {R} to your mana pool. Put a depletion counter on Lava Tubes.
+requires_groovy_code=Land Cap

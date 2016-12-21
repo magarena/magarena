@@ -7,6 +7,6 @@ subtype=Elemental
 cost={2}{U}{U}
 pt=4/4
 ability=Flying;\
-        At the beginning of your upkeep, you may return a land you control to its owner's hand. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you return a land you control to its owner's hand.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Living Tsunami unless you return a land you control to its owner's hand.

@@ -1,5 +1,6 @@
 name=Loxodon Partisan
-image=http://magiccards.info/scans/en/ddo/17.jpg
+image=http://magiccards.info/scans/en/mbs/12.jpg
+image_updated=2016-12-21
 value=2.579
 rarity=C
 type=Creature

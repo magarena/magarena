@@ -9,5 +9,5 @@ pt=0/4
 ability=Defender;\
         {T}: SN deals 1 damage to each opponent.;\
         Whenever you cast a multicolored spell, untap SN.
-timing=main
+timing=smain
 oracle=Defender\n{T}: Lobber Crew deals 1 damage to each opponent.\nWhenever you cast a multicolored spell, untap Lobber Crew.

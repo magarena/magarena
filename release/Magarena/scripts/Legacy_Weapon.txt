@@ -4,7 +4,7 @@ value=4.153
 rarity=R
 type=Legendary,Artifact
 cost={7}
-ability=When SN is put into a graveyard from anywhere, shuffle it into its owner's library.;\
-        {W}{U}{B}{R}{G}: Exile target permanent.
+ability={W}{U}{B}{R}{G}: Exile target permanent.;\
+        If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
 timing=artifact
 oracle={W}{U}{B}{R}{G}: Exile target permanent.\nIf Legacy Weapon would be put into a graveyard from anywhere, reveal Legacy Weapon and shuffle it into its owner's library instead.

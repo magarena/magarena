@@ -1,7 +1,7 @@
 name=Lu Meng, Wu General
 image=http://magiccards.info/scans/en/p3k/46.jpg
 value=3.966
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{U}{U}

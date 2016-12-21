@@ -1,11 +1,12 @@
 name=Lithophage
-image=http://magiccards.info/scans/en/ddi/57.jpg
+image=http://magiccards.info/scans/en/mm/202.jpg
+image_updated=2016-12-21
 value=3.139
 rarity=R
 type=Creature
 subtype=Insect
 cost={3}{R}{R}
 pt=7/7
-ability=At the beginning of your upkeep, you may sacrifice a Mountain. If you don't, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN unless you sacrifice a Mountain.
 timing=main
 oracle=At the beginning of your upkeep, sacrifice Lithophage unless you sacrifice a Mountain.

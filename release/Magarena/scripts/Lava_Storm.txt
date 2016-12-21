@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=Choose one — (1) SN deals 2 damage to each attacking creature. (2) SN deals 2 damage to each blocking creature.
 timing=block
 oracle=Lava Storm deals 2 damage to each attacking creature or Lava Storm deals 2 damage to each blocking creature.
+#Choice is made on resolution - If the spell is copied, both choices should still be available

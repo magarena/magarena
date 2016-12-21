@@ -1,5 +1,6 @@
 name=Living Armor
-image=http://magiccards.info/scans/en/ch/83.jpg
+image=http://magiccards.info/scans/en/dk/101.jpg
+image_updated=2016-12-21
 value=3.033
 rarity=U
 type=Artifact

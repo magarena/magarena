@@ -7,7 +7,7 @@ subtype=Lizard
 cost={1}{U}
 pt=0/3
 ability=Defender
-timing=main
 transform=Ludevic's Abomination
-requires_groovy_code
+timing=smain
 oracle=Defender\n{1}{U}: Put a hatchling counter on Ludevic's Test Subject. Then if there are five or more hatchling counters on it, remove all of them and transform it.
+requires_groovy_code

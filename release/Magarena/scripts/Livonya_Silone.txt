@@ -1,7 +1,7 @@
 name=Livonya Silone
 image=http://magiccards.info/scans/en/lg/282.jpg
 value=3.263
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior
 cost={2}{R}{R}{G}{G}

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=Whenever a Mountain an opponent controls becomes tapped, you gain 1 life.
-timing=main
+timing=enchantment
 oracle=Whenever a Mountain an opponent controls becomes tapped, you gain 1 life.

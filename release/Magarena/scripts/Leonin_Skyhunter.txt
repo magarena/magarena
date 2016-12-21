@@ -1,7 +1,7 @@
 name=Leonin Skyhunter
 image=http://magiccards.info/scans/en/mbs/11.jpg
 value=3.304
-rarity=U
+rarity=C
 type=Creature
 subtype=Cat,Knight
 cost={W}{W}
