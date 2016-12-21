@@ -8,7 +8,7 @@ cost={4}{U}{U}{U}
 pt=12/12
 ability=Trample;\
         SN enters the battlefield tapped.;\
-        When SN enters the battlefield, sacrifice it unless you sacrifice five lands.;\
+        When SN enters the battlefield, sacrifice SN unless you sacrifice five lands.;\
         SN doesn't untap during your untap step.;\
         Whenever an Island enters the battlefield under your control, you may untap SN.
 timing=main
