@@ -7,7 +7,7 @@ subtype=Golem
 cost={4}
 pt=0/0
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
-        At the beginning of your upkeep, you may remove a +1/+1 counter from SN. If you don't, sacrifice SN.;\
+        At the beginning of your upkeep, sacrifice SN unless you remove a +1/+1 counter from SN.;\
         {1}, Discard a card: Put a +1/+1 counter on SN.
 timing=main
 oracle=Junk Golem enters the battlefield with three +1/+1 counters on it.\nAt the beginning of your upkeep, sacrifice Junk Golem unless you remove a +1/+1 counter from it.\n{1}, Discard a card: Put a +1/+1 counter on Junk Golem.

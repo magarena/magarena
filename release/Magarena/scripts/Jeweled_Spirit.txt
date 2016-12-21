@@ -11,3 +11,4 @@ ability=Flying;\
         Sacrifice two lands: SN gains protection from the color of your choice until end of turn.
 timing=main
 oracle=Flying\nSacrifice two lands: Jeweled Spirit gains protection from artifacts or from the color of your choice until end of turn.
+#Choice should be made on resolution, not on activation

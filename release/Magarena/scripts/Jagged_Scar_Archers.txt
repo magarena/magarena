@@ -1,6 +1,6 @@
 name=Jagged-Scar Archers
-image=http://magiccards.info/scans/en/dpa/72.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/lw/222.jpg
+image_updated=2016-12-20
 value=4.050
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Jedit Ojanen
 image=http://magiccards.info/scans/en/lg/274.jpg
 value=1.194
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Cat,Warrior
 cost={4}{W}{W}{U}

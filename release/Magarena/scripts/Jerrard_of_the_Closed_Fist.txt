@@ -1,7 +1,7 @@
 name=Jerrard of the Closed Fist
 image=http://magiccards.info/scans/en/lg/275.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Knight
 cost={3}{R}{G}{G}

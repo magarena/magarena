@@ -1,5 +1,6 @@
 name=Johan
-image=http://magiccards.info/scans/en/ch/112.jpg
+image=http://magiccards.info/scans/en/lg/276.jpg
+image_updated=2016-12-20
 value=3.284
 rarity=R
 type=Legendary,Creature

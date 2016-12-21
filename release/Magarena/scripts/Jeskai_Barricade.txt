@@ -9,5 +9,5 @@ pt=0/4
 ability=Flash;\
         Defender;\
         When SN enters the battlefield, you may return another target creature you control to its owner's hand.
-timing=main
+timing=flash
 oracle=Flash\nDefender\nWhen Jeskai Barricade enters the battlefield, you may return another target creature you control to its owner's hand.

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability=Whenever you cast a Spirit or Arcane spell, SN becomes a 4/4 Spirit artifact creature until end of turn.
-timing=main
+timing=artifact
 oracle=Whenever you cast a Spirit or Arcane spell, Jade Idol becomes a 4/4 Spirit artifact creature until end of turn.

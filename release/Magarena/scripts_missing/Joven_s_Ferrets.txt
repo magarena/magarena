@@ -1,7 +1,7 @@
 name=Joven's Ferrets
 image=http://magiccards.info/scans/en/hl/62.jpg
 value=4.010
-rarity=U
+rarity=C
 type=Creature
 subtype=Ferret
 cost={G}

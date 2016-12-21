@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 timing=artifact
-requires_groovy_code
+requires_groovy_code=Jinxed Idol;Jinxed Ring
 oracle=Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you.\nSacrifice a creature: Target opponent gains control of Jinxed Ring.

@@ -9,5 +9,5 @@ cost={G}
 pt=0/3
 ability=Defender;\
         Whenever a land enters the battlefield under your control, you gain 1 life.
-timing=main
+timing=smain
 oracle=Defender\nLandfall — Whenever a land enters the battlefield under your control, you gain 1 life.

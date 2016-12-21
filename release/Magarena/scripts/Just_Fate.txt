@@ -1,7 +1,7 @@
 name=Just Fate
 image=http://magiccards.info/scans/en/po2/137.jpg
 value=3.250
-rarity=C
+rarity=R
 type=Instant
 cost={2}{W}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.

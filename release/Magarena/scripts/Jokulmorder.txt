@@ -8,8 +8,9 @@ cost={4}{U}{U}{U}
 pt=12/12
 ability=Trample;\
         SN enters the battlefield tapped.;\
-        When SN enters the battlefield, you may sacrifice five lands. If you don't, sacrifice SN.;\
+        When SN enters the battlefield, sacrifice it unless you sacrifice five lands.;\
         SN doesn't untap during your untap step.;\
         Whenever an Island enters the battlefield under your control, you may untap SN.
 timing=main
 oracle=Trample\nJokulmorder enters the battlefield tapped.\nWhen Jokulmorder enters the battlefield, sacrifice it unless you sacrifice five lands.\nJokulmorder doesn't untap during your untap step.\nWhenever you play an Island, you may untap Jokulmorder.
+# Untap should only trigger on playing an Island, not one entering the battlefield by other means
