@@ -1,5 +1,6 @@
 name=Kor Skyfisher
-image=http://magiccards.info/scans/en/ddo/16.jpg
+image=http://magiccards.info/scans/en/zen/23.jpg
+image_updated=2016-12-21
 value=3.828
 rarity=C
 type=Creature

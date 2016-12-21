@@ -7,6 +7,6 @@ subtype=Zombie,Crocodile
 cost={4}{B}
 pt=4/4
 ability=Defender
-timing=main
-requires_groovy_code
+timing=smain
 oracle=Defender\n{1}{G}, Sacrifice another creature: You gain life equal to the sacrificed creature's toughness.
+requires_groovy_code

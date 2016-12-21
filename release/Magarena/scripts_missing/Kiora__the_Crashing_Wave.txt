@@ -1,5 +1,6 @@
 name=Kiora, the Crashing Wave
-image=http://magiccards.info/scans/en/ddo/34.jpg
+image=http://magiccards.info/scans/en/bng/149.jpg
+image_updated=2016-12-21
 value=2.500
 rarity=M
 type=Planeswalker
@@ -8,7 +9,7 @@ cost={2}{G}{U}
 loyalty=2
 ability=+1: Until your next turn, prevent all damage that would be dealt to and dealt by target permanent an opponent controls.;\
         −1: Draw a card. You may play an additional land this turn.;\
-        −5: You get an emblem with "At the beginning of your end step, put a 9/9 blue Kraken creature token onto the battlefield."
+        −5: You get an emblem with "At the beginning of your end step, create a 9/9 blue Kraken creature token."
 timing=main
-oracle=+1: Until your next turn, prevent all damage that would be dealt to and dealt by target permanent an opponent controls.\n−1: Draw a card. You may play an additional land this turn.\n−5: You get an emblem with "At the beginning of your end step, put a 9/9 blue Kraken creature token onto the battlefield."
+oracle=+1: Until your next turn, prevent all damage that would be dealt to and dealt by target permanent an opponent controls.\n−1: Draw a card. You may play an additional land this turn.\n−5: You get an emblem with "At the beginning of your end step, create a 9/9 blue Kraken creature token."
 status=needs groovy

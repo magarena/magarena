@@ -6,6 +6,6 @@ type=Creature
 subtype=Fox,Wizard
 cost={1}{W}{W}
 pt=2/1
-ability=protection from Spirits;protection from Arcane
+ability=Protection from Spirits;Protection from Arcane
 timing=main
 oracle=Protection from Spirits and from Arcane

@@ -1,5 +1,6 @@
 name=Keep Watch
-image=http://magiccards.info/scans/en/pch/10.jpg
+image=http://magiccards.info/scans/en/ju/43.jpg
+image_updated=2016-12-21
 value=3.774
 rarity=C
 type=Instant

@@ -6,7 +6,7 @@ type=Creature
 subtype=Kavu
 cost={1}{G}
 pt=2/2
+ability=Kicker {2}{G}
 timing=main
-ability=kicker {2}{G}
-requires_groovy_code
 oracle=Kicker {2}{G}\nIf Kavu Titan was kicked, it enters the battlefield with three +1/+1 counters on it and with trample.
+requires_groovy_code

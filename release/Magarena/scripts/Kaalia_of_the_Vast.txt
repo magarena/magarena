@@ -1,5 +1,6 @@
 name=Kaalia of the Vast
-image=http://magiccards.info/scans/en/cma/9.jpg
+image=http://magiccards.info/scans/en/cmd/206.jpg
+image_updated=2016-12-21
 value=4.089
 rarity=M
 type=Legendary,Creature

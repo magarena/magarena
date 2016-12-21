@@ -1,5 +1,6 @@
 name=Keepers of the Faith
-image=http://magiccards.info/scans/en/ch/65.jpg
+image=http://magiccards.info/scans/en/lg/193.jpg
+image_updated=2016-12-21
 value=1.795
 rarity=C
 type=Creature

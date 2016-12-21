@@ -1,5 +1,6 @@
 name=Kalonian Hydra
-image=http://magiccards.info/scans/en/m14/181.jpg
+image=http://magiccards.info/scans/en/c16/154.jpg
+image_updated=2016-12-21
 value=3.888
 rarity=M
 type=Creature

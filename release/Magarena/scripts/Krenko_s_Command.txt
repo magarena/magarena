@@ -1,5 +1,6 @@
 name=Krenko's Command
-image=http://magiccards.info/scans/en/ddn/25.jpg
+image=http://magiccards.info/scans/en/m13/139.jpg
+image_updated=2016-12-21
 value=3.618
 rarity=C
 type=Sorcery

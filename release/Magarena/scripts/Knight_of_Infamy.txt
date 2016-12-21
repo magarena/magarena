@@ -8,5 +8,5 @@ cost={1}{B}
 pt=2/1
 ability=Protection from white;\
         Exalted
-timing=main
+timing=fmain
 oracle=Protection from white\nExalted

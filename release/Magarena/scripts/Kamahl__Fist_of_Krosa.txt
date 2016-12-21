@@ -1,5 +1,6 @@
 name=Kamahl, Fist of Krosa
-image=http://magiccards.info/scans/en/arc/61.jpg
+image=http://magiccards.info/scans/en/on/268.jpg
+image_updated=2016-12-21
 value=4.317
 rarity=R
 type=Legendary,Creature

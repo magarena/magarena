@@ -1,7 +1,7 @@
 name=Kei Takahashi
 image=http://magiccards.info/scans/en/lg/278.jpg
 value=1.761
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Cleric
 cost={2}{G}{W}

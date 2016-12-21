@@ -1,5 +1,6 @@
 name=Krenko, Mob Boss
-image=http://magiccards.info/scans/en/ddn/15.jpg
+image=http://magiccards.info/scans/en/m13/138.jpg
+image_updated=2016-12-21
 value=4.000
 rarity=R
 type=Legendary,Creature

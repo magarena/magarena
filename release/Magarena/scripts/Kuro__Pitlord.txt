@@ -1,5 +1,6 @@
 name=Kuro, Pitlord
-image=http://magiccards.info/scans/en/dvd/44.jpg
+image=http://magiccards.info/scans/en/chk/123.jpg
+image_updated=2016-12-21
 value=3.614
 rarity=R
 type=Legendary,Creature

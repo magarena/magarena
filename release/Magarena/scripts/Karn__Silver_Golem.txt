@@ -1,7 +1,7 @@
 name=Karn, Silver Golem
 image=http://magiccards.info/scans/en/us/298.jpg
 value=4.500
-rarity=M
+rarity=R
 type=Legendary,Artifact,Creature
 subtype=Golem
 cost={5}

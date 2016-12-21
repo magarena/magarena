@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Knight
 cost={3}{W}
 pt=2/2
-ability=Flying; flanking ;\
+ability=Flying; flanking;\
         Suspend 3—{W}
 timing=main
-oracle=Flying, flanking \nSuspend 3—{W}
+oracle=Flying, flanking\nSuspend 3—{W}
 status=not supported: suspend

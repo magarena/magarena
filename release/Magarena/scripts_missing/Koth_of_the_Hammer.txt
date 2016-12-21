@@ -1,5 +1,6 @@
 name=Koth of the Hammer
-image=http://magiccards.info/scans/en/ddi/44.jpg
+image=http://magiccards.info/scans/en/som/94.jpg
+image_updated=2016-12-21
 value=4.041
 rarity=M
 type=Planeswalker

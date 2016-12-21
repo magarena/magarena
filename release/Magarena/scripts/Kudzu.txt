@@ -1,11 +1,12 @@
 name=Kudzu
 image=http://magiccards.info/scans/en/rv/112.jpg
 value=3.714
-rarity=U
+rarity=R
 type=Enchantment
 subtype=Aura
 cost={1}{G}{G}
+ability=Enchant land
 timing=aura
 enchant=destroy,neg land
-requires_groovy_code
 oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it. That land's controller attaches Kudzu to a land of his or her choice.
+requires_groovy_code

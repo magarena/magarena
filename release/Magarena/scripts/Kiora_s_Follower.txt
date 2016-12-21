@@ -1,5 +1,6 @@
 name=Kiora's Follower
-image=http://magiccards.info/scans/en/ddo/52.jpg
+image=http://magiccards.info/scans/en/bng/150.jpg
+image_updated=2016-12-21
 value=2.500
 rarity=U
 type=Creature

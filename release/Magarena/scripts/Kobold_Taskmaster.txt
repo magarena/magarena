@@ -1,7 +1,7 @@
 name=Kobold Taskmaster
 image=http://magiccards.info/scans/en/tsts/65.jpg
 value=3.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Kobold
 cost={1}{R}

@@ -1,7 +1,7 @@
 name=Kjeldoran Elite Guard
 image=http://magiccards.info/scans/en/cstd/2.jpg
 value=2.667
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={3}{W}

@@ -1,9 +1,9 @@
 name=Kismet
 image=http://magiccards.info/scans/en/6e/27.jpg
 value=4.338
-rarity=R
+rarity=U
 type=Enchantment
 cost={3}{W}
 ability=Artifacts, creatures, and lands played by your opponents enter the battlefield tapped.
-timing=main
+timing=enchantment
 oracle=Artifacts, creatures, and lands played by your opponents enter the battlefield tapped.

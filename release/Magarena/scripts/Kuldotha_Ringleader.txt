@@ -8,5 +8,5 @@ cost={4}{R}
 pt=4/4
 ability=Battle cry;\
         SN attacks each turn if able.
-timing=fmain
+timing=main
 oracle=Battle cry\nKuldotha Ringleader attacks each turn if able.

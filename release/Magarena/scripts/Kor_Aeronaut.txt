@@ -1,5 +1,6 @@
 name=Kor Aeronaut
-image=http://magiccards.info/scans/en/ddf/10.jpg
+image=http://magiccards.info/scans/en/zen/17.jpg
+image_updated=2016-12-21
 value=3.935
 rarity=U
 type=Creature
