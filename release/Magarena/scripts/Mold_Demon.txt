@@ -6,6 +6,6 @@ type=Creature
 subtype=Fungus,Demon
 cost={5}{B}{B}
 pt=6/6
-ability=When SN enters the battlefield, sacrifice it unless you sacrifice two Swamps.
+ability=When SN enters the battlefield, sacrifice SN unless you sacrifice two Swamps.
 timing=main
 oracle=When Mold Demon enters the battlefield, sacrifice it unless you sacrifice two Swamps.
