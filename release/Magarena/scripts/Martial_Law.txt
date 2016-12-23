@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=At the beginning of your upkeep, detain target creature an opponent controls.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, detain target creature an opponent controls.

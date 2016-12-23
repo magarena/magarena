@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Mercenary,Knight
 cost={2}{B}
 pt=4/4
-ability=When SN enters the battlefield, you may discard a creature card. If you don't, sacrifice SN.
+ability=When SN enters the battlefield, sacrifice SN unless you discard a creature card.
 timing=main
 oracle=When Mercenary Knight enters the battlefield, sacrifice it unless you discard a creature card.

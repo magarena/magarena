@@ -5,7 +5,7 @@ removal=2
 rarity=U
 type=Sorcery
 cost={B}{B}
+ability=Kicker {3}
 timing=removal
-ability=kicker {3}
-requires_groovy_code
 oracle=Kicker {3}\nCreatures target player controls get -1/-1 until end of turn. If Marsh Casualties was kicked, those creatures get -2/-2 until end of turn instead.
+requires_groovy_code

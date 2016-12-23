@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Cumulative upkeep {G}
-enchant=weaken,neg creature
+ability=Enchant creature;\
+        Cumulative upkeep {G}
 timing=aura
-requires_groovy_code=Parasitic Bond
+enchant=weaken,neg creature
 oracle=Enchant creature\nCumulative upkeep {G}\nAt the beginning of the upkeep of enchanted creature's controller, Maddening Wind deals 2 damage to that player.
+requires_groovy_code=Parasitic Bond

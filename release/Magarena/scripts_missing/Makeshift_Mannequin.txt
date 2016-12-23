@@ -1,5 +1,6 @@
 name=Makeshift Mannequin
-image=http://magiccards.info/scans/en/arc/20.jpg
+image=http://magiccards.info/scans/en/lw/124.jpg
+image_updated=2016-12-23
 value=3.689
 rarity=U
 type=Instant

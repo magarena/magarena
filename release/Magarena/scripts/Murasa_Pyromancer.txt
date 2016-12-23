@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Shaman,Ally
 cost={4}{R}{R}
 pt=3/2
-ability=Whenever SN or another Ally enters the battlefield under your control, \
-        you may have SN deal damage to target creature equal to the number of Allies you control.
+ability=Whenever SN or another Ally enters the battlefield under your control, you may have SN deal damage to target creature equal to the number of Allies you control.
 timing=main
 oracle=Whenever Murasa Pyromancer or another Ally enters the battlefield under your control, you may have Murasa Pyromancer deal damage to target creature equal to the number of Allies you control.

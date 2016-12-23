@@ -7,6 +7,6 @@ subtype=Wall
 cost={3}{U}
 pt=3/4
 ability=Defender;\
-        {W}: SN can attack as though it didn't have defender this turn.
-timing=main
+        {W}: SN can attack this turn as though it didn't have defender.
+timing=smain
 oracle=Defender\n{W}: Mirror Wall can attack this turn as though it didn't have defender.

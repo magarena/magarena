@@ -8,5 +8,5 @@ cost={5}{R}
 pt=6/3
 ability=Haste;\
         Multicolored creatures you control have haste.
-timing=main
+timing=fmain
 oracle=Haste\nMulticolored creatures you control have haste.

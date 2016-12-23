@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Masticore
 cost={4}
 pt=4/4
-ability=At the beginning of your upkeep, you may discard a card. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, sacrifice SN unless you discard a card.;\
         {4}, Exile a creature card from your graveyard: SN deals 4 damage to target creature or player.;\
         {2}: Regenerate SN.
 timing=main

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={5}
 ability=Whenever another nontoken artifact enters the battlefield under your control, you may pay {2}. If you do, create a token that's a copy of that artifact.
-timing=main
+timing=artifact
 oracle=Whenever another nontoken artifact enters the battlefield under your control, you may pay {2}. If you do, create a token that's a copy of that artifact.

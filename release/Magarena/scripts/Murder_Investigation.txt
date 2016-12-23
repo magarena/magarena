@@ -6,7 +6,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
+ability=Enchant creature you control
 timing=aura
 enchant=power,creature you control
-requires_groovy_code
 oracle=Enchant creature you control\nWhen enchanted creature dies, create X 1/1 white Soldier creature tokens, where X is its power.
+requires_groovy_code

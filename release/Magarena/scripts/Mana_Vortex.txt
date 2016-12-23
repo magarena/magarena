@@ -4,7 +4,7 @@ value=3.542
 rarity=R
 type=Enchantment
 cost={1}{U}{U}
-ability=When you cast SN, you may sacrifice a land. If you don't, counter SN.;\
+ability=When you cast SN, counter SN unless you sacrifice a land.;\
         At the beginning of each player's upkeep, that player sacrifices a land.;\
         When there are no lands on the battlefield, sacrifice SN.
 timing=enchantment

@@ -15,3 +15,4 @@ ability=When SN enters the battlefield, you get {E}{E}{E}.;\
         Pay {E}: SN gets -2/+2 until end of turn.
 timing=main
 oracle=When Multiform Wonder enters the battlefield, you get {E}{E}{E}.\nPay {E}: Multiform Wonder gains your choice of flying, vigilance, or lifelink until end of turn.\nPay {E}: Multiform Wonder gets +2/-2 or -2/+2 until end of turn.
+#Choice of which ability, or pt change should be made on resolution

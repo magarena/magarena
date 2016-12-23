@@ -8,4 +8,4 @@ cost={4}{U}
 pt=0/0
 timing=main
 requires_groovy_code
-oracle=You may have Mercurial Pretender enter the battlefield as a copy of any creature you control except it gains "{2}{U}{U}: Return this creature to its owner's hand."
+oracle=You may have Mercurial Pretender enter the battlefield as a copy of any creature you control, except it gains "{2}{U}{U}: Return this creature to its owner's hand."

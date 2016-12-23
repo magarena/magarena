@@ -4,8 +4,8 @@ value=3.250
 rarity=R
 type=Artifact
 cost={4}
-ability=When a spell or ability an opponent controls causes you to discard SN, put four 1/1 colorless Gnome artifact creature tokens onto the battlefield.;\
-        {4}, {T}: Put a 1/1 colorless Gnome artifact creature token onto the battlefield.
+ability=When a spell or ability an opponent controls causes you to discard SN, create four 1/1 colorless Gnome artifact creature tokens.;\
+        {4}, {T}: Create a 1/1 colorless Gnome artifact creature token.
 timing=artifact
-oracle=When a spell or ability an opponent controls causes you to discard Metrognome, put four 1/1 colorless Gnome artifact creature tokens onto the battlefield.\n{4}, {T}: Put a 1/1 colorless Gnome artifact creature token onto the battlefield.
+oracle=When a spell or ability an opponent controls causes you to discard Metrognome, create four 1/1 colorless Gnome artifact creature tokens.\n{4}, {T}: Create a 1/1 colorless Gnome artifact creature token.
 status=not supported: no-info

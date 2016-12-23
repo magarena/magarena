@@ -1,5 +1,6 @@
 name=Menacing Ogre
-image=http://magiccards.info/scans/en/pch/59.jpg
+image=http://magiccards.info/scans/en/on/219.jpg
+image_updated=2016-12-23
 value=3.485
 rarity=R
 type=Creature

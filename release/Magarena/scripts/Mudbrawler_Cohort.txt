@@ -8,5 +8,5 @@ cost={1}{R}
 pt=1/1
 ability=Haste;\
         SN gets +1/+1 as long as you control another red creature.
-timing=main
+timing=fmain
 oracle=Haste\nMudbrawler Cohort gets +1/+1 as long as you control another red creature.

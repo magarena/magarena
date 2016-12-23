@@ -1,5 +1,6 @@
 name=Mage Slayer
-image=http://magiccards.info/scans/en/pch/91.jpg
+image=http://magiccards.info/scans/en/arb/57.jpg
+image_updated=2016-12-23
 value=3.823
 rarity=U
 type=Artifact

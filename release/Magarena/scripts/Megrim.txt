@@ -1,6 +1,6 @@
 name=Megrim
-image=http://magiccards.info/scans/en/dpa/26.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/m10/104.jpg
+image_updated=2016-12-23
 value=3.925
 rarity=U
 type=Enchantment

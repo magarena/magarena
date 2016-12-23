@@ -4,6 +4,6 @@ value=1.619
 rarity=U
 type=Enchantment
 cost={3}{R}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=All lands are no longer snow.
+requires_groovy_code

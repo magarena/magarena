@@ -1,5 +1,6 @@
 name=Mind's Eye
-image=http://magiccards.info/scans/en/cma/13.jpg
+image=http://magiccards.info/scans/en/mi/205.jpg
+image_updated=2016-12-23
 value=4.109
 rarity=R
 type=Artifact

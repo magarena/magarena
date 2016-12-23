@@ -1,5 +1,6 @@
 name=Manifold Insights
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/Fe3EftvSxP_EN.png
+image=http://magiccards.info/scans/en/c16/10.jpg
+image_updated=2016-12-23
 value=2.500
 rarity=R
 type=Sorcery

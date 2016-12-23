@@ -1,7 +1,7 @@
 name=Merchant Scroll
 image=http://magiccards.info/scans/en/8e/91.jpg
 value=4.341
-rarity=C
+rarity=U
 type=Sorcery
 cost={1}{U}
 effect=Search your library for a blue instant card, reveal that card, and put it into your hand. Then shuffle your library.

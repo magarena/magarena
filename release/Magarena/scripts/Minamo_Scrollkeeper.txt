@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={1}{U}
 pt=2/3
 ability=Defender
-timing=main
-requires_groovy_code
+timing=smain
 oracle=Defender\nYour maximum hand size is increased by one.
+requires_groovy_code

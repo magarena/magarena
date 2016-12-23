@@ -8,5 +8,5 @@ subtype=Human,Warrior
 cost={2}{R}
 pt=2/2
 ability=When SN enters the battlefield, destroy target artifact.
-timing=fmain
+timing=main
 oracle=When Manic Vandal enters the battlefield, destroy target artifact.

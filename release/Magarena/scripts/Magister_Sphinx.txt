@@ -1,5 +1,6 @@
 name=Magister Sphinx
-image=http://magiccards.info/scans/en/arc/89.jpg
+image=http://magiccards.info/scans/en/cfx/116.jpg
+image_updated=2016-12-23
 value=3.883
 rarity=R
 type=Artifact,Creature
@@ -8,5 +9,5 @@ cost={4}{W}{U}{B}
 pt=5/5
 ability=Flying;\
         When SN enters the battlefield, target player's life total becomes 10.
-timing=artifact
+timing=main
 oracle=Flying\nWhen Magister Sphinx enters the battlefield, target player's life total becomes 10.

@@ -11,6 +11,6 @@ ability=Flash;\
         Flying;\
         Champion a Faerie;\
         Cast SN with AI only if you control a Faerie
-timing=main
-requires_groovy_code
+timing=flash
 oracle=Flash\nFlying\nChampion a Faerie\nWhen a Faerie is championed with Mistbind Clique, tap all lands target player controls.
+requires_groovy_code

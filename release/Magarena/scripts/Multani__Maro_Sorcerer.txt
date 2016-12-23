@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Elemental
 cost={4}{G}{G}
 pt=*/*
-ability=shroud
+ability=Shroud
 timing=main
-requires_groovy_code
 oracle=Shroud\nMultani, Maro-Sorcerer's power and toughness are each equal to the total number of cards in all players' hands.
+requires_groovy_code

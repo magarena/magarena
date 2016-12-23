@@ -10,7 +10,7 @@ ability=SN enters the battlefield with a number of +1/+1 counters on it equal to
         {X}, Remove X +1/+1 counters from Marath: Choose one — \
         (1) Put X +1/+1 counters on target creature. X can't be 0. \
         (2) Marath deals X damage to target creature or player. X can't be 0. \
-        (3) Put an X/X green Elemental creature token onto the battlefield. X can't be 0.
+        (3) Create an X/X green Elemental creature token. X can't be 0.
 timing=main
-oracle=Marath, Will of the Wild enters the battlefield with a number of +1/+1 counters on it equal to the amount of mana spent to cast it.\n{X}, Remove X +1/+1 counters from Marath: Choose one —\n• Put X +1/+1 counters on target creature. X can't be 0.\n• Marath deals X damage to target creature or player. X can't be 0.\n• Put an X/X green Elemental creature token onto the battlefield. X can't be 0.
+oracle=Marath, Will of the Wild enters the battlefield with a number of +1/+1 counters on it equal to the amount of mana spent to cast it.\n{X}, Remove X +1/+1 counters from Marath: Choose one —\n• Put X +1/+1 counters on target creature. X can't be 0.\n• Marath deals X damage to target creature or player. X can't be 0.\n• Create an X/X green Elemental creature token. X can't be 0.
 status=not supported: mana-spent

@@ -1,7 +1,7 @@
 name=Mountain Yeti
 image=http://magiccards.info/scans/en/lg/156.jpg
 value=3.689
-rarity=C
+rarity=U
 type=Creature
 subtype=Yeti
 cost={2}{R}{R}

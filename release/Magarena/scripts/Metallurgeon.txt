@@ -1,5 +1,6 @@
 name=Metallurgeon
-image=http://magiccards.info/scans/en/arc/2.jpg
+image=http://magiccards.info/scans/en/ala/19.jpg
+image_updated=2016-12-23
 value=3.125
 rarity=U
 type=Artifact,Creature
@@ -7,5 +8,5 @@ subtype=Human,Artificer
 cost={1}{W}
 pt=1/2
 ability={W}, {T}: Regenerate target artifact.
-timing=artifact
+timing=main
 oracle={W}, {T}: Regenerate target artifact.

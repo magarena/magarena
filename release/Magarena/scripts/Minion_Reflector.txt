@@ -7,3 +7,4 @@ cost={5}
 ability=Whenever a nontoken creature enters the battlefield under your control, you may pay {2}. If you do, create a token that's a copy of that creature. That token has haste. Sacrifice it at the beginning of the next end step.
 timing=artifact
 oracle=Whenever a nontoken creature enters the battlefield under your control, you may pay {2}. If you do, create a token that's a copy of that creature. That token has haste and "At the beginning of the end step, sacrifice this permanent."
+#The sacrifice is an ability of the token, not a separate effect. If the token is copied, it will be sacrificed at the beginning of the next end step.

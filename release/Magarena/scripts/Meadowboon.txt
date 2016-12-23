@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{W}{W}
 pt=3/3
-ability=evoke {3}{W}
+ability=Evoke {3}{W}
 timing=main
-requires_groovy_code
 oracle=When Meadowboon leaves the battlefield, put a +1/+1 counter on each creature target player controls.\nEvoke {3}{W}
+requires_groovy_code

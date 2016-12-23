@@ -8,5 +8,5 @@ cost={2}{U}
 pt=0/5
 ability=Defender, flying;\
         Morph {U}
-timing=main
+timing=smain
 oracle=Defender, flying\nMorph {U}

@@ -7,8 +7,8 @@ subtype=Faerie,Rogue
 cost={3}{B}
 pt=1/1
 ability=Flying;\
-        When SN enters the battlefield, put two 1/1 black Goblin Rogue creature tokens onto the battlefield.;\
+        When SN enters the battlefield, create two 1/1 black Goblin Rogue creature tokens.;\
         Sacrifice a Goblin: SN has base power and toughness 3/3 until end of turn.
 timing=main
-oracle=Flying\nWhen Marsh Flitter enters the battlefield, put two 1/1 black Goblin Rogue creature tokens onto the battlefield.\nSacrifice a Goblin: Marsh Flitter has base power and toughness 3/3 until end of turn.
+oracle=Flying\nWhen Marsh Flitter enters the battlefield, create two 1/1 black Goblin Rogue creature tokens.\nSacrifice a Goblin: Marsh Flitter has base power and toughness 3/3 until end of turn.
 status=needs groovy

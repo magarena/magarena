@@ -5,5 +5,5 @@ rarity=R
 type=Legendary,Enchantment
 cost={4}{U}{U}{U}
 ability=All creatures get -X/-0, where X is the number of cards in your hand.
-timing=main
+timing=enchantment
 oracle=All creatures get -X/-0, where X is the number of cards in your hand.

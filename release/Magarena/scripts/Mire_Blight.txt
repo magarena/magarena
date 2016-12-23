@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=When enchanted creature is dealt damage, destroy RN.
+ability=Enchant creature;\
+        When enchanted creature is dealt damage, destroy RN.
 timing=aura
 enchant=destroy,neg creature
 oracle=Enchant creature\nWhen enchanted creature is dealt damage, destroy it.

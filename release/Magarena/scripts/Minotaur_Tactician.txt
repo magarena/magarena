@@ -9,5 +9,5 @@ pt=1/1
 ability=Haste;\
         SN gets +1/+1 as long as you control a white creature.;\
         SN gets +1/+1 as long as you control a blue creature.
-timing=main
+timing=fmain
 oracle=Haste\nMinotaur Tactician gets +1/+1 as long as you control a white creature.\nMinotaur Tactician gets +1/+1 as long as you control a blue creature.

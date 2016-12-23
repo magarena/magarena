@@ -1,7 +1,7 @@
 name=Mana Prism
 image=http://magiccards.info/scans/en/6e/296.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Artifact
 cost={3}
 ability={T}: Add {C} to your mana pool.;\

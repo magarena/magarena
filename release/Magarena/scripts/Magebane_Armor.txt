@@ -5,9 +5,9 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
-ability=Equipped creature gets +2/+4;\
+ability=Equipped creature gets +2/+4.;\
         Prevent all noncombat damage that would be dealt to equipped creature.;\
         Equip {2}
-timing=main
-requires_groovy_code
+timing=equipment
 oracle=Equipped creature gets +2/+4 and loses flying.\nPrevent all noncombat damage that would be dealt to equipped creature.\nEquip {2}
+requires_groovy_code

@@ -1,7 +1,7 @@
 name=Mightstone
 image=http://magiccards.info/scans/en/aq/20.jpg
 value=2.333
-rarity=C
+rarity=U
 type=Artifact
 cost={4}
 ability=Attacking creatures get +1/+0.

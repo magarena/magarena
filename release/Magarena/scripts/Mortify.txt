@@ -5,6 +5,6 @@ removal=5
 rarity=U
 type=Instant
 cost={1}{W}{B}
-timing=removal
 effect=Destroy target creature or enchantment.
+timing=removal
 oracle=Destroy target creature or enchantment.

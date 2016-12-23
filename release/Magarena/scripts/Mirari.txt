@@ -1,7 +1,7 @@
 name=Mirari
 image=http://magiccards.info/scans/en/od/303.jpg
 value=4.115
-rarity=M
+rarity=R
 type=Legendary,Artifact
 cost={5}
 timing=artifact

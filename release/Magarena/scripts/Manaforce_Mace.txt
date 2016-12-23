@@ -7,5 +7,5 @@ subtype=Equipment
 cost={4}
 ability=Equipped creature gets +1/+1 for each basic land type among lands you control.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Domain — Equipped creature gets +1/+1 for each basic land type among lands you control.\nEquip {3}

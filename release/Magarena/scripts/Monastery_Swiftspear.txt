@@ -8,5 +8,5 @@ cost={R}
 pt=1/2
 ability=Haste;\
         Prowess
-timing=main
+timing=fmain
 oracle=Haste\nProwess

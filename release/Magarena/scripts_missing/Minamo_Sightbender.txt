@@ -1,5 +1,6 @@
 name=Minamo Sightbender
-image=http://magiccards.info/scans/en/ddi/5.jpg
+image=http://magiccards.info/scans/en/bok/41.jpg
+image_updated=2016-12-23
 value=2.542
 rarity=U
 type=Creature

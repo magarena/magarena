@@ -6,5 +6,5 @@ type=Artifact
 cost={1}
 ability={4}: Put a pressure counter on SN.;\
         {T}, Sacrifice SN: SN deals damage equal to the number of pressure counters on it to target creature or player.
-timing=main
+timing=artifact
 oracle={4}: Put a pressure counter on Magma Mine.\n{T}, Sacrifice Magma Mine: Magma Mine deals damage equal to the number of pressure counters on it to target creature or player.

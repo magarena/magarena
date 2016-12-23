@@ -1,7 +1,7 @@
 name=Mishra's Workshop
 image=http://magiccards.info/scans/en/aq/70.jpg
 value=4.833
-rarity=M
+rarity=R
 type=Land
 ability={T}: Add {C}{C}{C} to your mana pool. Spend this mana only to cast artifact spells.
 timing=land
