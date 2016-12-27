@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur,Scout
 cost={1}{R}
 pt=3/3
-ability=When SN enters the battlefield, sacrifice it unless you discard a card at random.
+ability=When SN enters the battlefield, sacrifice SN unless you discard a card at random.
 timing=main
 oracle=When Minotaur Explorer enters the battlefield, sacrifice it unless you discard a card at random.
