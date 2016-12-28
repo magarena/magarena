@@ -1,7 +1,8 @@
 name=Reyhan, Last of the Abzan
-image=http://media.wizards.com/2016/bn8f9t2zc_C16/N7eJSqqNPP_EN.png
+image=http://magiccards.info/scans/en/c16/40.jpg
+image_updated=2016-12-28
 value=2.500
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior
 cost={1}{B}{G}
