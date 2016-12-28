@@ -928,7 +928,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private boolean subTypeHasText(final String s) {
         final MagicSubType[] subTypeValues = MagicSubType.values();
         for (final MagicSubType subtype : subTypeValues) {
-            if (subTypeFlags.contains(subtype) && subtype.toString().toLowerCase().contains(s)) {
+            if (subTypeFlags.contains(subtype) && subtype.toString().toLowerCase(Locale.ENGLISH).contains(s)) {
                 return true;
             }
         }
@@ -937,7 +937,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     private boolean abilityHasText(final String s) {
         for (final MagicAbility ability : MagicAbility.values()) {
-            if (hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
+            if (hasAbility(ability) && ability.getName().toLowerCase(Locale.ENGLISH).contains(s)) {
                 return true;
             }
         }
@@ -945,13 +945,13 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public boolean hasText(String s) {
-        s = s.toLowerCase();
+        s = s.toLowerCase(Locale.ENGLISH);
         return
-            CardDefinitions.getASCII(distinctName).toLowerCase().contains(s) ||
-            CardDefinitions.getASCII(name).toLowerCase().contains(s) ||
+            CardDefinitions.getASCII(distinctName).toLowerCase(Locale.ENGLISH).contains(s) ||
+            CardDefinitions.getASCII(name).toLowerCase(Locale.ENGLISH).contains(s) ||
             subTypeHasText(s) ||
             abilityHasText(s) ||
-            CardDefinitions.getASCII(getText()).toLowerCase().contains(s);
+            CardDefinitions.getASCII(getText()).toLowerCase(Locale.ENGLISH).contains(s);
     }
 
     @Override
