@@ -27,17 +27,17 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.DeckType;
-import magic.utility.DeckUtils;
 import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.dialog.DecksFilterDialog;
-import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
+import magic.ui.widget.duel.viewer.CardViewer;
+import magic.utility.DeckUtils;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -197,7 +197,7 @@ public class DeckPicker extends JPanel {
         Collections.sort(decks, new Comparator<MagicDeck>() {
             @Override
             public int compare(MagicDeck o1, MagicDeck o2) {
-                return o1.getFilename().compareTo(o2.getFilename());
+                return o1.getFilename().compareToIgnoreCase(o2.getFilename());
             }
         });
     }
