@@ -73,6 +73,23 @@ Thank you for your support and have fun!
 
 Release 1.80 (December 31, 2016)
 ============
+kelsioboy
+lodici
+melvin
+ShawnieBoy
+
+- changed/added the following to the user interface:
+  * always show unimplemented cards in Card Explorer
+  * ignore case when sorting list of decks
+
+- fixed the following bugs:
+  * Russian UI crashes when clicking "New Game" (issue #1007)
+
+- added the following cards:
+Afiya Grove, Deadly Wanderings, Fumigate, Gahiji, Honored One,
+Oran-Rief Hydra, Padeem, Consul of Innovation, Planar Void, Repay in Kind,
+Riptide Entrancer, Shauku, Endbringer, Song of Serenity, Stalking Yeti,
+Toolcraft Exemplar, Winds of Rath
 
 Release 1.79 (November 28, 2016)
 ============
