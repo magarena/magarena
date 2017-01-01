@@ -1,5 +1,6 @@
 name=Nomadic Elf
-image=http://magiccards.info/scans/en/pvc/38.jpg
+image=http://magiccards.info/scans/en/in/200.jpg
+image_updated=2017-01-01
 value=3.000
 rarity=C
 type=Creature

@@ -4,6 +4,6 @@ value=3.983
 rarity=R
 type=Enchantment
 cost={3}{G}{G}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=All lands are 2/2 creatures that are still lands.
+requires_groovy_code

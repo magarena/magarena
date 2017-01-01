@@ -7,5 +7,5 @@ subtype=Beast
 cost={1}{G}{U}
 pt=5/6
 ability=When SN enters the battlefield, put a creature you control on top of its owner's library.
-timing=smain
+timing=main
 oracle=When Nulltread Gargantuan enters the battlefield, put a creature you control on top of its owner's library.

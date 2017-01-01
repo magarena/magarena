@@ -1,5 +1,6 @@
 name=Narrow Escape
-image=http://magiccards.info/scans/en/pvc/55.jpg
+image=http://magiccards.info/scans/en/zen/27.jpg
+image_updated=2017-01-01
 value=2.909
 rarity=C
 type=Instant

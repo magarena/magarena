@@ -1,7 +1,8 @@
 name=Nessian Asp
-image=http://magiccards.info/scans/en/ddo/48.jpg
+image=http://magiccards.info/scans/en/cn2/187.jpg
+image_updated=2017-01-01
 value=3.588
-rarity=C
+rarity=U
 type=Creature
 subtype=Snake
 cost={4}{G}

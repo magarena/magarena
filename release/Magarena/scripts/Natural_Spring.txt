@@ -1,6 +1,6 @@
 name=Natural Spring
-image=http://magiccards.info/scans/en/dpa/75.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/281.jpg
+image_updated=2017-01-01
 value=2.239
 rarity=C
 type=Sorcery

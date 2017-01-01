@@ -7,6 +7,6 @@ subtype=Cyclops
 cost={1}{U}{R}
 pt=1/4
 ability=Defender
-timing=main
-requires_groovy_code
+timing=smain
 oracle=Defender\nWhenever you cast an instant or sorcery spell, Nivix Cyclops gets +3/+0 until end of turn and can attack this turn as though it didn't have defender.
+requires_groovy_code

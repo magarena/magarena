@@ -8,6 +8,6 @@ cost={1}{G}
 ability=Enchant land;\
         When SN enters the battlefield, draw a card.
 given_subtype=Plains,Island,Swamp,Mountain,Forest
-enchant=pump,pos land
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nWhen Nylea's Presence enters the battlefield, draw a card.\nEnchanted land is every basic land type in addition to its other types.

@@ -8,7 +8,7 @@ subtype=Zombie
 cost={4}{B}{B}
 pt=0/0
 ability=SN enters the battlefield with five +1/+1 counters on it.;\
-        Whenever a player casts a spell, remove a +1/+1 counter from SN. If you do, put a 2/2 black Zombie creature token onto the battlefield.
+        Whenever a player casts a spell, remove a +1/+1 counter from SN. If you do, create a 2/2 black Zombie creature token.
 timing=main
-oracle=Noosegraf Mob enters the battlefield with five +1/+1 counters on it.\nWhenever a player casts a spell, remove a +1/+1 counter from Noosegraf Mob. If you do, put a 2/2 black Zombie creature token onto the battlefield.
+oracle=Noosegraf Mob enters the battlefield with five +1/+1 counters on it.\nWhenever a player casts a spell, remove a +1/+1 counter from Noosegraf Mob. If you do, create a 2/2 black Zombie creature token.
 status=needs groovy

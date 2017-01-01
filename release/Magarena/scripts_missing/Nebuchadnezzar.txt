@@ -1,7 +1,7 @@
 name=Nebuchadnezzar
 image=http://magiccards.info/scans/en/lg/285.jpg
 value=3.939
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
 cost={3}{U}{B}

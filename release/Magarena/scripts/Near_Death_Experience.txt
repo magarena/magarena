@@ -4,6 +4,6 @@ value=3.863
 rarity=R
 type=Enchantment
 cost={2}{W}{W}{W}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=At the beginning of your upkeep, if you have exactly 1 life, you win the game.
+requires_groovy_code

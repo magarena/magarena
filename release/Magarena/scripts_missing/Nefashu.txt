@@ -1,5 +1,6 @@
 name=Nefashu
-image=http://magiccards.info/scans/en/pch/34.jpg
+image=http://magiccards.info/scans/en/sc/70.jpg
+image_updated=2017-01-01
 value=3.816
 rarity=R
 type=Creature

@@ -1,7 +1,7 @@
 name=Narwhal
 image=http://magiccards.info/scans/en/hl/44.jpg
 value=3.820
-rarity=U
+rarity=R
 type=Creature
 subtype=Whale
 cost={2}{U}{U}

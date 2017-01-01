@@ -7,6 +7,6 @@ subtype=Wall
 cost={5}
 pt=0/1
 ability=Defender
-timing=artifact
-requires_groovy_code
+timing=smain
 oracle=Defender\nExile a creature card from your graveyard: Put X +0/+1 counters on Necropolis, where X is the exiled card's converted mana cost.
+requires_groovy_code

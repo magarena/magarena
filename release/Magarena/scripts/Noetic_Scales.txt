@@ -4,6 +4,6 @@ value=4.449
 rarity=R
 type=Artifact
 cost={4}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=At the beginning of each player's upkeep, return to its owner's hand each creature that player controls with power greater than the number of cards in his or her hand.
+requires_groovy_code

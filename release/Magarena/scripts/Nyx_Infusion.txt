@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-enchant=pump,creature
+ability=Enchant creature
 timing=aura
-requires_groovy_code
+enchant=pump,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 as long as it's an enchantment. Otherwise, it gets -2/-2.
+requires_groovy_code

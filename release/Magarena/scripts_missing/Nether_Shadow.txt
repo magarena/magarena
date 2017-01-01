@@ -1,7 +1,7 @@
 name=Nether Shadow
 image=http://magiccards.info/scans/en/5e/45.jpg
 value=4.034
-rarity=U
+rarity=R
 type=Creature
 subtype=Spirit
 cost={B}{B}

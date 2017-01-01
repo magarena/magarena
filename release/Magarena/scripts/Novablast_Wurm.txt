@@ -7,5 +7,5 @@ subtype=Wurm
 cost={3}{G}{G}{W}{W}
 pt=7/7
 ability=Whenever SN attacks, destroy all other creatures.
-timing=smain
+timing=main
 oracle=Whenever Novablast Wurm attacks, destroy all other creatures.

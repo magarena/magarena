@@ -1,5 +1,6 @@
 name=Noxious Ghoul
-image=http://magiccards.info/scans/en/pch/35.jpg
+image=http://magiccards.info/scans/en/le/77.jpg
+image_updated=2017-01-01
 value=4.186
 rarity=U
 type=Creature

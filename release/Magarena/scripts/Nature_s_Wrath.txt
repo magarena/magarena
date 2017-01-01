@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, sacrifice SN unless you pay {G}.
 timing=enchantment
 requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice Nature's Wrath unless you pay {G}.\nWhenever a player puts an Island or blue permanent onto the battlefield, he or she sacrifices an Island or blue permanent.\nWhenever a player puts a Swamp or black permanent onto the battlefield, he or she sacrifices a Swamp or black permanent.
+#This isn't just an 'enters the battlefield' effect. If you control Nature's Wrath and Flicker an opponent's blue creature, YOU will sacrifice an Island or blue permanent.

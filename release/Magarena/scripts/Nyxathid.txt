@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={1}{B}{B}
 pt=7/7
-timing=main
 ability=As SN enters the battlefield, choose an opponent.
-requires_groovy_code
+timing=main
 oracle=As Nyxathid enters the battlefield, choose an opponent.\nNyxathid gets -1/-1 for each card in the chosen player's hand.
+requires_groovy_code

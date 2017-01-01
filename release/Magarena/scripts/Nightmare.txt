@@ -9,5 +9,5 @@ cost={5}{B}
 pt=*/*
 ability=Flying;\
         SN's power and toughness are each equal to the number of Swamps you control.
-timing=smain
+timing=main
 oracle=Flying\nNightmare's power and toughness are each equal to the number of Swamps you control.

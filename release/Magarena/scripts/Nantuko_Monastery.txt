@@ -1,5 +1,6 @@
 name=Nantuko Monastery
-image=http://magiccards.info/scans/en/arc/131.jpg
+image=http://magiccards.info/scans/en/ju/142.jpg
+image_updated=2017-01-01
 value=4.257
 rarity=U
 type=Land

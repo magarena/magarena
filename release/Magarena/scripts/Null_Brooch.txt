@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}, Discard your hand: Counter target noncreature spell.
-timing=main
+timing=artifact
 oracle={2}, {T}, Discard your hand: Counter target noncreature spell.

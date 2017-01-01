@@ -9,5 +9,5 @@ pt=5/5
 ability=Flying;\
         Exalted;\
         Whenever SN attacks alone, defending player sacrifices a creature.
-timing=main
+timing=fmain
 oracle=Flying\nExalted\nWhenever Nefarox, Overlord of Grixis attacks alone, defending player sacrifices a creature.

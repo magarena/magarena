@@ -7,7 +7,7 @@ subtype=Cat,Warrior
 cost={3}{G}{G}{G}
 pt=3/3
 ability=SN must be blocked by exactly one creature if able.;\
-        Whenever SN attacks, put X tokens that are copies of SN onto the battlefield tapped and attacking, where X is the number of creatures defending player controls. Exile the tokens at the beginning of the next end step.
+        Whenever SN attacks, create X tokens that are copies of SN and that are tapped and attacking, where X is the number of creatures defending player controls. Exile the tokens at the beginning of the next end step.
 timing=main
-oracle=Nacatl War-Pride must be blocked by exactly one creature if able.\nWhenever Nacatl War-Pride attacks, put X tokens that are copies of Nacatl War-Pride onto the battlefield tapped and attacking, where X is the number of creatures defending player controls. Exile the tokens at the beginning of the next end step.
+oracle=Nacatl War-Pride must be blocked by exactly one creature if able.\nWhenever Nacatl War-Pride attacks, create X tokens that are copies of Nacatl War-Pride and that are tapped and attacking, where X is the number of creatures defending player controls. Exile the tokens at the beginning of the next end step.
 status=not supported: blocking-restriction
