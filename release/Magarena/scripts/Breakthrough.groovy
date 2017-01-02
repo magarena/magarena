@@ -5,15 +5,18 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN draws 4 cards, then keep X cards in his or her hand and discard the rest."
+                "PN draws 4 cards, then chooses X cards in his or her hand and discard the rest."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new DrawAction(event.getPlayer(), 4));
-            final int amount = event.getPlayer().getHandSize() - event.getCardOnStack().getX();
+            final MagicPlayer player = event.getPlayer();
+            game.doAction(new DrawAction(player, 4));
+            final int keep = event.getCardOnStack().getX();
+            game.logAppendX(player, keep);
+            final int amount = player.getHandSize() - keep;
             if (amount > 0) {
-                game.addEvent(new MagicDiscardEvent(event.getSource(),event.getPlayer(),amount));
+                game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
             }
         }
     }
