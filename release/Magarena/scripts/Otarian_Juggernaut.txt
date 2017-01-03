@@ -8,5 +8,5 @@ cost={4}
 pt=2/3
 ability=SN can't be blocked by Walls.;\
         As long as seven or more cards are in your graveyard, SN gets +3/+0 and attacks each turn if able.
-timing=artifact
+timing=main
 oracle=Otarian Juggernaut can't be blocked by Walls.\nThreshold — As long as seven or more cards are in your graveyard, Otarian Juggernaut gets +3/+0 and attacks each turn if able.

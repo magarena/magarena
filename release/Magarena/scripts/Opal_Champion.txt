@@ -5,5 +5,5 @@ rarity=C
 type=Enchantment
 cost={2}{W}
 ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 3/3 Knight creature with first strike.
-timing=main
+timing=enchantment
 oracle=When an opponent casts a creature spell, if Opal Champion is an enchantment, Opal Champion becomes a 3/3 Knight creature with first strike.

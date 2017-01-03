@@ -7,9 +7,9 @@ subtype=Nixilis
 cost={3}{B}{B}
 loyalty=3
 ability=+2: Each opponent loses 1 life. You gain life equal to the life lost this way.;\
-        −2: Put a 5/5 black Demon creature token with flying onto the battlefield. You lose 2 life.;\
+        −2: Create a 5/5 black Demon creature token with flying. You lose 2 life.;\
         −8: You get an emblem with "{1}{B}, Sacrifice a creature: You gain X life and draw X cards, where X is the sacrificed creature's power.";\
         SN can be your commander.
 timing=main
-oracle=+2: Each opponent loses 1 life. You gain life equal to the life lost this way.\n−2: Put a 5/5 black Demon creature token with flying onto the battlefield. You lose 2 life.\n−8: You get an emblem with "{1}{B}, Sacrifice a creature: You gain X life and draw X cards, where X is the sacrificed creature's power."\nOb Nixilis of the Black Oath can be your commander.
+oracle=+2: Each opponent loses 1 life. You gain life equal to the life lost this way.\n−2: Create a 5/5 black Demon creature token with flying. You lose 2 life.\n−8: You get an emblem with "{1}{B}, Sacrifice a creature: You gain X life and draw X cards, where X is the sacrificed creature's power."\nOb Nixilis of the Black Oath can be your commander.
 status=needs groovy

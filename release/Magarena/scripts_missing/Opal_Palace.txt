@@ -1,5 +1,6 @@
 name=Opal Palace
-image=http://magiccards.info/scans/en/c13/310.jpg
+image=http://magiccards.info/scans/en/c16/312.jpg
+image_updated=2017-01-03
 value=3.552
 rarity=C
 type=Land

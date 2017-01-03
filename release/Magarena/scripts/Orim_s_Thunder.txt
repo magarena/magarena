@@ -6,7 +6,7 @@ removal=2
 rarity=C
 type=Instant
 cost={2}{W}
+ability=Kicker {R}
 timing=removal
-ability=kicker {R}
-requires_groovy_code
 oracle=Kicker {R}\nDestroy target artifact or enchantment. If Orim's Thunder was kicked, it deals damage equal to that permanent's converted mana cost to target creature.
+requires_groovy_code

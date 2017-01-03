@@ -1,5 +1,6 @@
 name=Oni Possession
-image=http://magiccards.info/scans/en/dvd/51.jpg
+image=http://magiccards.info/scans/en/chk/135.jpg
+image_updated=2017-01-03
 value=2.500
 rarity=U
 type=Enchantment

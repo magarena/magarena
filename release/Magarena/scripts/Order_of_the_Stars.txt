@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={W}
 pt=0/1
-ability=defender
-timing=main
-requires_groovy_code
+ability=Defender
+timing=smain
 oracle=Defender\nAs Order of the Stars enters the battlefield, choose a color.\nOrder of the Stars has protection from the chosen color.
+requires_groovy_code

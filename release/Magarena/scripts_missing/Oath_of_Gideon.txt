@@ -5,8 +5,8 @@ value=2.500
 rarity=R
 type=Legendary,Enchantment
 cost={2}{W}
-ability=When SN enters the battlefield, put two 1/1 white Kor Ally creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create two 1/1 white Kor Ally creature tokens.;\
         Each planeswalker you control enters the battlefield with an additional loyalty counter on it.
 timing=enchantment
-oracle=When Oath of Gideon enters the battlefield, put two 1/1 white Kor Ally creature tokens onto the battlefield.\nEach planeswalker you control enters the battlefield with an additional loyalty counter on it.
+oracle=When Oath of Gideon enters the battlefield, create two 1/1 white Kor Ally creature tokens.\nEach planeswalker you control enters the battlefield with an additional loyalty counter on it.
 status=needs groovy

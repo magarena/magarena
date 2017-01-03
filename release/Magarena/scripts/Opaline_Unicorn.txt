@@ -1,5 +1,6 @@
 name=Opaline Unicorn
-image=http://magiccards.info/scans/en/ths/218.jpg
+image=http://magiccards.info/scans/en/cn2/213.jpg
+image_updated=2017-01-03
 value=3.326
 rarity=C
 type=Artifact,Creature

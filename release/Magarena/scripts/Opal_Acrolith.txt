@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{W}
 ability=Whenever an opponent casts a creature spell, if SN is an enchantment, SN becomes a 2/4 Soldier creature.;\
         {0}: SN becomes an enchantment. Activate this ability with AI only if SN is not an enchantment.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent casts a creature spell, if Opal Acrolith is an enchantment, Opal Acrolith becomes a 2/4 Soldier creature.\n{0}: Opal Acrolith becomes an enchantment.

@@ -5,6 +5,6 @@ removal=1
 rarity=U
 type=Instant
 cost={G}
-timing=removal
 effect=Destroy target artifact. It can't be regenerated.
+timing=removal
 oracle=Destroy target artifact. It can't be regenerated.

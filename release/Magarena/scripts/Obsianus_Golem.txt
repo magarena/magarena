@@ -1,7 +1,7 @@
 name=Obsianus Golem
 image=http://magiccards.info/scans/en/6e/302.jpg
 value=2.694
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={6}

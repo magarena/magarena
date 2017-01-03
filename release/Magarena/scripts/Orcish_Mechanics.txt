@@ -1,7 +1,7 @@
 name=Orcish Mechanics
 image=http://magiccards.info/scans/en/aq/92.jpg
 value=3.567
-rarity=U
+rarity=C
 type=Creature
 subtype=Orc
 cost={2}{R}

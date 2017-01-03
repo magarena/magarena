@@ -7,5 +7,5 @@ subtype=Spirit,Avatar
 cost={G/W}{G/W}{G/W}{G/W}{G/W}
 pt=5/5
 ability=protection from blue;protection from black;protection from red
-timing=fmain
+timing=main
 oracle=Protection from blue, from black, and from red

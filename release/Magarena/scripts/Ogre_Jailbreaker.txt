@@ -8,5 +8,5 @@ cost={3}{B}
 pt=4/4
 ability=Defender;\
         SN can attack as though it didn't have defender as long as you control a Gate.
-timing=main
+timing=smain
 oracle=Defender\nOgre Jailbreaker can attack as though it didn't have defender as long as you control a Gate.

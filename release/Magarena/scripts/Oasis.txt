@@ -1,7 +1,7 @@
 name=Oasis
 image=http://magiccards.info/scans/en/4e/185.jpg
 value=2.062
-rarity=C
+rarity=U
 type=Land
 ability={T}: Prevent the next 1 damage that would be dealt to target creature this turn.
 timing=land

@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={W}{W}{W}
 ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 3/4 Gargoyle creature with flying and protection from red.
-timing=main
+timing=enchantment
 oracle=When an opponent casts a creature spell, if Opal Guardian is an enchantment, Opal Guardian becomes a 3/4 Gargoyle creature with flying and protection from red.

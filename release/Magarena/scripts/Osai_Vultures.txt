@@ -1,7 +1,7 @@
 name=Osai Vultures
 image=http://magiccards.info/scans/en/4e/288.jpg
 value=2.250
-rarity=C
+rarity=U
 type=Creature
 subtype=Bird
 cost={1}{W}

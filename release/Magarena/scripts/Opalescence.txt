@@ -4,6 +4,6 @@ value=4.283
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Each other non-Aura enchantment is a creature in addition to its other types and has base power and base toughness each equal to its converted mana cost.
+requires_groovy_code

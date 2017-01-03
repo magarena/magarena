@@ -1,5 +1,6 @@
 name=Overrule
-image=http://magiccards.info/scans/en/ddi/32.jpg
+image=http://magiccards.info/scans/en/di/120.jpg
+image_updated=2017-01-03
 value=3.034
 rarity=C
 type=Instant

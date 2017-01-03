@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={4}{W}
 ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 5/5 Angel creature with flying and vigilance.
-timing=main
+timing=enchantment
 oracle=When an opponent casts a creature spell, if Opal Archangel is an enchantment, Opal Archangel becomes a 5/5 Angel creature with flying and vigilance.
