@@ -1,5 +1,6 @@
 name=Precinct Captain
-image=http://magiccards.info/scans/en/ddo/22.jpg
+image=http://magiccards.info/scans/en/rtr/17.jpg
+image_updated=2017-01-03
 value=3.800
 rarity=R
 type=Creature

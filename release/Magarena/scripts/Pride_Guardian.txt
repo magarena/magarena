@@ -8,5 +8,5 @@ cost={W}
 pt=0/3
 ability=Defender;\
         Whenever SN blocks, you gain 3 life.
-timing=main
+timing=smain
 oracle=Defender\nWhenever Pride Guardian blocks, you gain 3 life.

@@ -1,7 +1,8 @@
 name=Pestilence
-image=http://magiccards.info/scans/en/br/49.jpg
+image=http://magiccards.info/scans/en/6e/149.jpg
+image_updated=2017-01-03
 value=4.378
-rarity=C
+rarity=U
 type=Enchantment
 cost={2}{B}{B}
 ability=At the beginning of the end step, if no creatures are on the battlefield, sacrifice SN.;\

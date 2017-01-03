@@ -1,5 +1,6 @@
 name=Pygmy Pyrosaur
-image=http://magiccards.info/scans/en/ddi/46.jpg
+image=http://magiccards.info/scans/en/7e/208.jpg
+image_updated=2017-01-03
 value=3.154
 rarity=C
 type=Creature

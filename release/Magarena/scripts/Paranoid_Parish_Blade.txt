@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=3/2
-ability=SN gets +1/+0 as long as there are four or more card types among cards in your graveyard.;\
-        SN has first strike as long as there are four or more card types among cards in your graveyard.
+ability=SN gets +1/+0 and has first strike as long as there are four or more card types among cards in your graveyard.
 timing=main
 oracle=Delirium — Paranoid Parish-Blade gets +1/+0 and has first strike as long as there are four or more card types among cards in your graveyard.

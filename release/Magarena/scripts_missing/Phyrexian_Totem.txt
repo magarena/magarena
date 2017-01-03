@@ -1,5 +1,6 @@
 name=Phyrexian Totem
-image=http://magiccards.info/scans/en/pvc/20.jpg
+image=http://magiccards.info/scans/en/ts/261.jpg
+image_updated=2017-01-03
 value=3.938
 rarity=U
 type=Artifact

@@ -1,5 +1,6 @@
 name=Pyre Charger
-image=http://magiccards.info/scans/en/jvc/38.jpg
+image=http://magiccards.info/scans/en/shm/103.jpg
+image_updated=2017-01-03
 value=3.012
 rarity=U
 type=Creature

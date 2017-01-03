@@ -8,5 +8,5 @@ cost={1}{U}{U}
 pt=5/5
 ability=Defender;\
         When SN becomes the target of a spell or ability, sacrifice it.
-timing=main
+timing=smain
 oracle=Defender\nWhen Phantasmal Abomination becomes the target of a spell or ability, sacrifice it.

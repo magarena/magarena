@@ -1,5 +1,6 @@
 name=Phyrexian Battleflies
-image=http://magiccards.info/scans/en/pvc/3.jpg
+image=http://magiccards.info/scans/en/in/114.jpg
+image_updated=2017-01-03
 value=2.423
 rarity=C
 type=Creature

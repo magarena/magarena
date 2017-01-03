@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{B}
-enchant=weaken,neg creature
+ability=Enchant creature
 timing=aura
-requires_groovy_code
+enchant=weaken,neg creature
 oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, Parasitic Bond deals 2 damage to that player.
+requires_groovy_code

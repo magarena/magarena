@@ -7,8 +7,7 @@ subtype=Faerie,Wizard
 cost={3}{B}{B}
 pt=3/2
 ability=Flying;\
-        When SN enters the battlefield, put target creature card from an opponent's graveyard onto the battlefield under your control. \
-        It gains haste. At the beginning of your next end step, exile it.;\
-        persist
+        When SN enters the battlefield, put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. At the beginning of your next end step, exile it.;\
+        Persist
 timing=fmain
 oracle=Flying\nWhen Puppeteer Clique enters the battlefield, put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. At the beginning of your next end step, exile it.\nPersist

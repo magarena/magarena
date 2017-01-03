@@ -8,7 +8,7 @@ cost={W}{U}
 pt=1/1
 ability=Flying;\
         SN gets +1/+1 for each other creature with flying on the battlefield.;\
-        {2}{W}{U}, Reveal SN from your hand: Put a 1/1 white and blue Bird creature token with flying onto the battlefield.
+        {2}{W}{U}, Reveal SN from your hand: Create a 1/1 white and blue Bird creature token with flying.
 timing=main
-oracle=Flying\nPride of the Clouds gets +1/+1 for each other creature with flying on the battlefield.\nForecast — {2}{W}{U}, Reveal Pride of the Clouds from your hand: Put a 1/1 white and blue Bird creature token with flying onto the battlefield.
+oracle=Flying\nPride of the Clouds gets +1/+1 for each other creature with flying on the battlefield.\nForecast — {2}{W}{U}, Reveal Pride of the Clouds from your hand: Create a 1/1 white and blue Bird creature token with flying.
 status=not supported: forecast

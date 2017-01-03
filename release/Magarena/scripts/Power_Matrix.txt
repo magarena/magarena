@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={4}
 ability={T}: Target creature gets +1/+1 and gains flying, first strike, and trample until end of turn.
-timing=main
+timing=artifact
 oracle={T}: Target creature gets +1/+1 and gains flying, first strike, and trample until end of turn.

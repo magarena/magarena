@@ -6,6 +6,7 @@ type=Creature
 subtype=Zombie,Knight
 cost={1}{B}{B}
 pt=2/2
-ability=first strike;protection from red;protection from white;infect
+ability=First strike, protection from red, protection from white;\
+        Infect
 timing=main
 oracle=First strike, protection from red and from white\nInfect

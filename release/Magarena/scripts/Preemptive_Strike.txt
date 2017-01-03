@@ -4,6 +4,6 @@ value=3.854
 rarity=C
 type=Instant
 cost={1}{U}
-timing=counter
 effect=Counter target creature spell.
+timing=counter
 oracle=Counter target creature spell.

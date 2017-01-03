@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
+ability=Enchant creature
 timing=aura
 enchant=default,creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +2/+1 as long as it's black. Otherwise, it gets -1/-2.
+requires_groovy_code

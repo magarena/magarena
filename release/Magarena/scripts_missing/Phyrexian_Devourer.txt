@@ -1,7 +1,7 @@
 name=Phyrexian Devourer
 image=http://magiccards.info/scans/en/ai/167.jpg
 value=3.354
-rarity=U
+rarity=R
 type=Artifact,Creature
 subtype=Construct
 cost={6}

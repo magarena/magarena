@@ -8,5 +8,5 @@ cost={2}{U}
 pt=0/3
 ability=Defender;\
         Whenever SN blocks, you may draw a card.
-timing=main
+timing=smain
 oracle=Defender\nWhenever Psychic Membrane blocks, you may draw a card.

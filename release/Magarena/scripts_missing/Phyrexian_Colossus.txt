@@ -1,5 +1,6 @@
 name=Phyrexian Colossus
-image=http://magiccards.info/scans/en/pvc/16.jpg
+image=http://magiccards.info/scans/en/8e/309.jpg
+image_updated=2017-01-03
 value=4.134
 rarity=R
 type=Artifact,Creature

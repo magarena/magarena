@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/3
-ability=When SN enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create two 3/3 colorless Golem artifact creature tokens.;\
         Whenever a player casts an instant or sorcery spell that targets only a single Golem, that player copies that spell for each other Golem that spell could target. Each copy targets a different one of those Golems.
 timing=main
-oracle=When Precursor Golem enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield.\nWhenever a player casts an instant or sorcery spell that targets only a single Golem, that player copies that spell for each other Golem that spell could target. Each copy targets a different one of those Golems.
+oracle=When Precursor Golem enters the battlefield, create two 3/3 colorless Golem artifact creature tokens.\nWhenever a player casts an instant or sorcery spell that targets only a single Golem, that player copies that spell for each other Golem that spell could target. Each copy targets a different one of those Golems.

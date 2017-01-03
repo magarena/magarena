@@ -1,7 +1,7 @@
 name=Phantasmal Forces
 image=http://magiccards.info/scans/en/5e/106.jpg
 value=2.795
-rarity=C
+rarity=U
 type=Creature
 subtype=Illusion
 cost={3}{U}

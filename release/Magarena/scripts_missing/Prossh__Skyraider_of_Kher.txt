@@ -7,8 +7,8 @@ subtype=Dragon
 cost={3}{B}{R}{G}
 pt=5/5
 ability=Flying;\
-        When you cast SN, put X 0/1 red Kobold creature tokens named Kobolds of Kher Keep onto the battlefield, where X is the amount of mana spent to cast Prossh.;\
+        When you cast SN, create X 0/1 red Kobold creature tokens named Kobolds of Kher Keep, where X is the amount of mana spent to cast Prossh.;\
         Sacrifice another creature: Prossh gets +1/+0 until end of turn.
 timing=main
-oracle=Flying\nWhen you cast Prossh, Skyraider of Kher, put X 0/1 red Kobold creature tokens named Kobolds of Kher Keep onto the battlefield, where X is the amount of mana spent to cast Prossh.\nSacrifice another creature: Prossh gets +1/+0 until end of turn.
+oracle=Flying\nWhen you cast Prossh, Skyraider of Kher, create X 0/1 red Kobold creature tokens named Kobolds of Kher Keep, where X is the amount of mana spent to cast Prossh.\nSacrifice another creature: Prossh gets +1/+0 until end of turn.
 status=not supported: mana-spent

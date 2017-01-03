@@ -4,6 +4,6 @@ value=2.667
 rarity=U
 type=Artifact
 cost={1}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=Whenever a creature card is put into an opponent's graveyard from anywhere, you gain 1 life.
+requires_groovy_code

@@ -7,5 +7,5 @@ cost={3}{G}{G}
 ability=Cast SN with AI only if you control a creature token.;\
         Flashback {4}{G}{G}{G}
 timing=main
+oracle=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield.\nFlashback {4}{G}{G}{G}
 requires_groovy_code
-oracle=For each creature token on the battlefield, its controller creates a token that's a copy of that creature.\nFlashback {4}{G}{G}{G}

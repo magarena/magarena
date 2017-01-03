@@ -8,5 +8,5 @@ cost={6}
 pt=6/5
 ability=SN attacks each turn if able.;\
         {1}{S}: SN gets +1/+0 until end of turn.
-timing=artifact
+timing=main
 oracle=Phyrexian Snowcrusher attacks each turn if able.\n{1}{S}: Phyrexian Snowcrusher gets +1/+0 until end of turn.

@@ -1,5 +1,6 @@
 name=Peel from Reality
-image=http://magiccards.info/scans/en/ddo/40.jpg
+image=http://magiccards.info/scans/en/m15/74.jpg
+image_updated=2017-01-03
 value=2.500
 rarity=C
 type=Instant

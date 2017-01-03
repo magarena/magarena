@@ -1,5 +1,6 @@
 name=Plated Slagwurm
-image=http://magiccards.info/scans/en/gvl/12.jpg
+image=http://magiccards.info/scans/en/mi/127.jpg
+image_updated=2017-01-03
 value=4.260
 rarity=R
 type=Creature

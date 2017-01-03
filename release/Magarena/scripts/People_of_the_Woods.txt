@@ -7,5 +7,5 @@ subtype=Human
 cost={G}{G}
 pt=1/*
 ability=SN's toughness is equal to the number of Forests you control.
-timing=smain
+timing=main
 oracle=People of the Woods's toughness is equal to the number of Forests you control.

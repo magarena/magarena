@@ -1,7 +1,7 @@
 name=Predatory Nightstalker
 image=http://magiccards.info/scans/en/po2/22.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Nightstalker
 cost={3}{B}{B}

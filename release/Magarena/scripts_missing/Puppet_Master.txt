@@ -1,5 +1,6 @@
 name=Puppet Master
-image=http://magiccards.info/scans/en/ch/23.jpg
+image=http://magiccards.info/scans/en/lg/69.jpg
+image_updated=2017-01-03
 value=2.648
 rarity=U
 type=Enchantment

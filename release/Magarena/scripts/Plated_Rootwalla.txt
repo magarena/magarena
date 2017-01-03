@@ -1,5 +1,6 @@
 name=Plated Rootwalla
-image=http://magiccards.info/scans/en/br/52.jpg
+image=http://magiccards.info/scans/en/ex/116.jpg
+image_updated=2017-01-03
 value=2.203
 rarity=C
 type=Creature

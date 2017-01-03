@@ -1,5 +1,6 @@
 name=Primal Command
-image=http://magiccards.info/scans/en/arc/66.jpg
+image=http://magiccards.info/scans/en/lw/233.jpg
+image_updated=2017-01-03
 value=4.133
 rarity=R
 type=Sorcery

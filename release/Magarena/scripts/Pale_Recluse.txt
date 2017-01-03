@@ -1,5 +1,6 @@
 name=Pale Recluse
-image=http://magiccards.info/scans/en/arc/91.jpg
+image=http://magiccards.info/scans/en/arb/74.jpg
+image_updated=2017-01-03
 value=3.042
 rarity=C
 type=Creature
@@ -7,6 +8,6 @@ subtype=Spider
 cost={4}{G}{W}
 pt=4/5
 ability=Reach;\
-        Forestcycling {2};Plainscycling {2}
+        Forestcycling {2}; plainscycling {2}
 timing=main
 oracle=Reach\nForestcycling {2}, plainscycling {2}

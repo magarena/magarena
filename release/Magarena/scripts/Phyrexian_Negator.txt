@@ -1,7 +1,8 @@
 name=Phyrexian Negator
-image=http://magiccards.info/scans/en/pvc/1.jpg
+image=http://magiccards.info/scans/en/ud/65.jpg
+image_updated=2017-01-03
 value=3.908
-rarity=M
+rarity=R
 type=Creature
 subtype=Horror
 cost={2}{B}

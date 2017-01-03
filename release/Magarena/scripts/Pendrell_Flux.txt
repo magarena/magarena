@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature
 timing=aura
 enchant=sacrifice,neg creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you pay its mana cost."
+requires_groovy_code

@@ -1,7 +1,7 @@
 name=Peach Garden Oath
 image=http://magiccards.info/scans/en/8e/34.jpg
 value=3.591
-rarity=C
+rarity=U
 type=Sorcery
 cost={W}
 effect=You gain 2 life for each creature you control.

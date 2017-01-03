@@ -1,7 +1,7 @@
 name=Pernicious Deed
 image=http://magiccards.info/scans/en/cns/191.jpg
 value=4.571
-rarity=R
+rarity=M
 type=Enchantment
 cost={1}{B}{G}
 timing=enchantment

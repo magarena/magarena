@@ -7,4 +7,4 @@ type=Instant
 cost={U}
 effect=Destroy target creature. It can't be regenerated.~That creature's controller creates a 3/3 green Ape creature token.
 timing=removal
-oracle=Destroy target creature. It can't be regenerated. That creature's controller creates a 3/3 green Ape creature token.
+oracle=Destroy target creature. It can't be regenerated. Its controller creates a 3/3 green Ape creature token.

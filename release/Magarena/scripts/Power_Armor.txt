@@ -1,5 +1,6 @@
 name=Power Armor
-image=http://magiccards.info/scans/en/pvc/62.jpg
+image=http://magiccards.info/scans/en/in/309.jpg
+image_updated=2017-01-03
 value=2.788
 rarity=U
 type=Artifact

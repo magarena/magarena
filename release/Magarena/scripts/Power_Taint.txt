@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Cycling {2}
+ability=Enchant enchantment;\
+        Cycling {2}
 timing=aura
 enchant=default,neg enchantment
-requires_groovy_code
 oracle=Enchant enchantment\nAt the beginning of the upkeep of enchanted enchantment's controller, that player loses 2 life unless he or she pays {2}.\nCycling {2}
+requires_groovy_code

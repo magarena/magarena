@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{W}
+ability=Enchant creature
 timing=aura
 enchant=destroy,creature
-requires_groovy_code
 oracle=Enchant creature\nAll damage that would be dealt to you is dealt to enchanted creature instead.
+requires_groovy_code

@@ -5,5 +5,5 @@ rarity=M
 type=Artifact
 cost={4}
 ability={5}, {T}, Exile SN: Exile all nonland permanents.
-timing=main
+timing=artifact
 oracle={5}, {T}, Exile Perilous Vault: Exile all nonland permanents.

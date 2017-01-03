@@ -10,5 +10,5 @@ ability=Flash;\
         SN can't be countered.;\
         Prowess;\
         Return three lands you control to their owner's hand: Return SN to its owner's hand.
-timing=main
+timing=flash
 oracle=Flash\nPearl Lake Ancient can't be countered.\nProwess\nReturn three lands you control to their owner's hand: Return Pearl Lake Ancient to its owner's hand.
