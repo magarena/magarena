@@ -20,7 +20,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
                 TARGET_CREATURE,
                 new MagicBecomeTargetPicker(0,1,false),
                 this,
-                "Target creature\$ loses all abilities and becomes 0/1 until end of turn."
+                "Until end of turn, target creature\$ loses all abilities and has base power and toughness 0/1."
             );
         }
         @Override
