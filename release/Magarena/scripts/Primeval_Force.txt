@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={2}{G}{G}{G}
 pt=8/8
-ability=When SN enters the battlefield, sacrifice it unless you sacrifice three Forests.
+ability=When SN enters the battlefield, sacrifice SN unless you sacrifice three Forests.
 timing=main
 oracle=When Primeval Force enters the battlefield, sacrifice it unless you sacrifice three Forests.

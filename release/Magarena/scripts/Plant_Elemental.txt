@@ -6,6 +6,6 @@ type=Creature
 subtype=Plant,Elemental
 cost={1}{G}
 pt=3/4
-ability=When SN enters the battlefield, sacrifice it unless you sacrifice a Forest.
+ability=When SN enters the battlefield, sacrifice SN unless you sacrifice a Forest.
 timing=main
 oracle=When Plant Elemental enters the battlefield, sacrifice it unless you sacrifice a Forest.
