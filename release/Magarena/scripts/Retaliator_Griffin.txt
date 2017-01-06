@@ -7,6 +7,6 @@ subtype=Griffin
 cost={1}{R}{G}{W}
 pt=2/2
 ability=Flying
-timing=fmain
-requires_groovy_code
+timing=main
 oracle=Flying\nWhenever a source an opponent controls deals damage to you, you may put that many +1/+1 counters on Retaliator Griffin.
+requires_groovy_code

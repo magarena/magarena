@@ -6,7 +6,7 @@ type=Artifact
 cost={X}{4}
 ability=As SN enters the battlefield, choose a color and a creature type.;\
         SN enters the battlefield with X charge counters on it.;\
-        {4}, {T}: Put an X/X creature token of the chosen color and type onto the battlefield, where X is the number of charge counters on SN.
+        {4}, {T}: Create an X/X creature token of the chosen color and type, where X is the number of charge counters on SN.
 timing=artifact
-oracle=As Riptide Replicator enters the battlefield, choose a color and a creature type.\nRiptide Replicator enters the battlefield with X charge counters on it.\n{4}, {T}: Put an X/X creature token of the chosen color and type onto the battlefield, where X is the number of charge counters on Riptide Replicator.
+oracle=As Riptide Replicator enters the battlefield, choose a color and a creature type.\nRiptide Replicator enters the battlefield with X charge counters on it.\n{4}, {T}: Create an X/X creature token of the chosen color and type, where X is the number of charge counters on Riptide Replicator.
 status=not supported: choose-creature-type

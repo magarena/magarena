@@ -6,8 +6,8 @@ type=Creature
 subtype=Wurm
 cost={1}{G}{G}
 pt=6/6
-timing=main
 ability=Kicker {4};\
-        Vanishing 2;
-requires_groovy_code
+        Vanishing 2
+timing=main
 oracle=Kicker {4}\nVanishing 2\nIf Ravaging Riftwurm was kicked, it enters the battlefield with three additional time counters on it.
+requires_groovy_code

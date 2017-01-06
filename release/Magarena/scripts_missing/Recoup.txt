@@ -1,5 +1,6 @@
 name=Recoup
-image=http://magiccards.info/scans/en/ddk/63.jpg
+image=http://magiccards.info/scans/en/od/216.jpg
+image_updated=2017-01-06
 value=4.553
 rarity=U
 type=Sorcery

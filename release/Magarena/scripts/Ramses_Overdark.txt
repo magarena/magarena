@@ -1,11 +1,11 @@
 name=Ramses Overdark
 image=http://magiccards.info/scans/en/lg/292.jpg
 value=3.137
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Assassin
 cost={2}{U}{U}{B}{B}
 pt=4/3
-ability={T}: Destroy target creature that is enchanted.
+ability={T}: Destroy target enchanted creature.
 timing=main
 oracle={T}: Destroy target enchanted creature.

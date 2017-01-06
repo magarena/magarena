@@ -4,6 +4,6 @@ value=4.294
 rarity=R
 type=Enchantment
 cost={1}{R}{R}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=Whenever a creature is dealt damage, Repercussion deals that much damage to that creature's controller.
+requires_groovy_code

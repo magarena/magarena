@@ -1,5 +1,6 @@
 name=Reaper of the Wilds
-image=http://magiccards.info/scans/en/ddm/63.jpg
+image=http://magiccards.info/scans/en/ths/201.jpg
+image_updated=2017-01-06
 value=3.906
 rarity=R
 type=Creature

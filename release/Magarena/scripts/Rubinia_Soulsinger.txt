@@ -1,5 +1,6 @@
 name=Rubinia Soulsinger
-image=http://magiccards.info/scans/en/ch/118.jpg
+image=http://magiccards.info/scans/en/lg/296.jpg
+image_updated=2017-01-06
 value=4.146
 rarity=R
 type=Legendary,Creature

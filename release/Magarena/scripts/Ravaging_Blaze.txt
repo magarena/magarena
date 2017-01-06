@@ -7,4 +7,4 @@ type=Instant
 cost={X}{R}{R}
 effect=SN deals X damage to target creature.~If there are two or more instant and/or sorcery cards in your graveyard, SN deals X damage to that creature's controller.
 timing=removal
-oracle=Ravaging Blaze deals X damage to target creature. \nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, Ravaging Blaze also deals X damage to that creature's controller.
+oracle=Ravaging Blaze deals X damage to target creature.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, Ravaging Blaze also deals X damage to that creature's controller.

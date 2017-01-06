@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability=Whenever enchanted artifact becomes tapped, choose one — \
+ability=Enchant artifact an opponent controls;\
+        Whenever enchanted artifact becomes tapped, choose one — \
         (1) SN deals 1 damage to target player. \
         (2) Target player gains 1 life.
 timing=aura

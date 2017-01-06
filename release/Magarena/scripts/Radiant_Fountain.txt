@@ -5,5 +5,5 @@ rarity=C
 type=Land
 ability=When SN enters the battlefield, you gain 2 life.;\
         {T}: Add {C} to your mana pool.
-timing=main
+timing=land
 oracle=When Radiant Fountain enters the battlefield, you gain 2 life.\n{T}: Add {C} to your mana pool.

@@ -6,6 +6,6 @@ type=Land
 mana=u2b2
 ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {U} or {B} to your mana pool. Put a depletion counter on SN.
-timing=main
-requires_groovy_code=Land Cap
+timing=land
 oracle=River Delta doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from River Delta.\n{T}: Add {U} or {B} to your mana pool. Put a depletion counter on River Delta.
+requires_groovy_code=Land Cap

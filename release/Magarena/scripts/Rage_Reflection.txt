@@ -1,6 +1,6 @@
 name=Rage Reflection
-image=http://magiccards.info/scans/en/dpa/52.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/shm/104.jpg
+image_updated=2017-01-06
 value=3.484
 rarity=R
 type=Enchantment

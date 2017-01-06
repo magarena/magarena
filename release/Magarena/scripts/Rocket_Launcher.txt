@@ -4,8 +4,6 @@ value=3.164
 rarity=R
 type=Artifact
 cost={4}
-ability={2}: SN deals 1 damage to target creature or player.~\
-        Destroy SN at the beginning of the next end step. \
-        Activate this ability only if you've controlled SN continuously since the beginning of your most recent turn.
+ability={2}: SN deals 1 damage to target creature or player.~Destroy SN at the beginning of the next end step. Activate this ability only if you've controlled SN continuously since the beginning of your most recent turn.
 timing=artifact
 oracle={2}: Rocket Launcher deals 1 damage to target creature or player. Destroy Rocket Launcher at the beginning of the next end step. Activate this ability only if you've controlled Rocket Launcher continuously since the beginning of your most recent turn.

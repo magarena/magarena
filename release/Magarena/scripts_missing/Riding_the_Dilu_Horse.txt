@@ -1,7 +1,7 @@
 name=Riding the Dilu Horse
 image=http://magiccards.info/scans/en/p3k/144.jpg
 value=4.070
-rarity=U
+rarity=R
 type=Sorcery
 cost={2}{G}
 effect=Target creature gets +2/+2 and gains horsemanship.

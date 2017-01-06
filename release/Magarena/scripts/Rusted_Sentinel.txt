@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=3/4
-timing=main
 ability=SN enters the battlefield tapped.
+timing=main
 oracle=Rusted Sentinel enters the battlefield tapped.

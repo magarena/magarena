@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=Creatures with power 2 or less your opponents control can't attack.
-timing=main
+timing=enchantment
 oracle=Creatures with power 2 or less can't attack you.

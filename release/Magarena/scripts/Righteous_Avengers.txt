@@ -1,7 +1,7 @@
 name=Righteous Avengers
 image=http://magiccards.info/scans/en/lg/203.jpg
 value=1.164
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

@@ -1,5 +1,6 @@
 name=Rith, the Awakener
-image=http://magiccards.info/scans/en/pvc/48.jpg
+image=http://magiccards.info/scans/en/in/267.jpg
+image_updated=2017-01-06
 value=4.234
 rarity=R
 type=Legendary,Creature

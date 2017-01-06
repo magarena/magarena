@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{W}{U}
-enchant=pump,pos creature
+ability=Enchant creature
 timing=aura
-requires_groovy_code
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each card in its controller's hand.\nAt the beginning of the draw step of enchanted creature's controller, that player draws an additional card.
+requires_groovy_code

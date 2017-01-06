@@ -15,7 +15,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN becomes 3/3 until end of turn and can't be blocked this turn."
+                    "SN has base power and toughness 3/3 until end of turn and can't be blocked this turn."
                 ):
                 MagicEvent.NONE;
         }

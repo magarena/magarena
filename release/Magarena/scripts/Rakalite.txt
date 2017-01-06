@@ -1,10 +1,9 @@
 name=Rakalite
 image=http://magiccards.info/scans/en/ch/85.jpg
 value=1.029
-rarity=R
+rarity=U
 type=Artifact
 cost={6}
-ability={2}: Prevent the next 1 damage that would be dealt to target creature or player this turn.~\
-        Return SN to its owner's hand at the beginning of the next end step.
+ability={2}: Prevent the next 1 damage that would be dealt to target creature or player this turn.~Return SN to its owner's hand at the beginning of the next end step.
 timing=artifact
 oracle={2}: Prevent the next 1 damage that would be dealt to target creature or player this turn. Return Rakalite to its owner's hand at the beginning of the next end step.

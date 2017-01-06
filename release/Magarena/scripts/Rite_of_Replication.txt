@@ -5,7 +5,7 @@ value=4.115
 rarity=R
 type=Sorcery
 cost={2}{U}{U}
+ability=Kicker {5}
 timing=main
-ability=kicker {5}
-requires_groovy_code
 oracle=Kicker {5}\nCreate a token that's a copy of target creature. If Rite of Replication was kicked, create five of those tokens instead.
+requires_groovy_code

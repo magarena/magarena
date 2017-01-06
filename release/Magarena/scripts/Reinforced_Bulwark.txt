@@ -8,5 +8,5 @@ cost={3}
 pt=0/4
 ability=Defender;\
         {T}: Prevent the next 1 damage that would be dealt to you this turn.
-timing=main
+timing=smain
 oracle=Defender\n{T}: Prevent the next 1 damage that would be dealt to you this turn.

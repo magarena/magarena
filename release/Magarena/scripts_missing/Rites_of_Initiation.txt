@@ -1,7 +1,7 @@
 name=Rites of Initiation
 image=http://magiccards.info/scans/en/od/217.jpg
 value=3.000
-rarity=U
+rarity=C
 type=Instant
 cost={R}
 effect=Discard any number of cards at random. Creatures you control get +1/+0 until end of turn for each card discarded this way.

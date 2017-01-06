@@ -1,7 +1,7 @@
 name=Radiant, Archangel
 image=http://magiccards.info/scans/en/ul/20.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Angel
 cost={3}{W}{W}

@@ -6,8 +6,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability=vanishing 3
-timing=main
+ability=Enchant permanent;\
+        Vanishing 3
+timing=aura
 enchant=sacrifice,neg permanent
-requires_groovy_code
 oracle=Enchant permanent\nVanishing 3\nWhen Reality Acid leaves the battlefield, enchanted permanent's controller sacrifices it.
+requires_groovy_code

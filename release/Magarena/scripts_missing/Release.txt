@@ -4,7 +4,8 @@ value=3.853
 rarity=R
 type=Sorcery
 cost={4}{R}{W}
-effect=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.~Fuse
+ability=Fuse
+effect=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.
 split=Catch
 timing=main
 second_half

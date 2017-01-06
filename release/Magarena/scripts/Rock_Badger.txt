@@ -1,7 +1,7 @@
 name=Rock Badger
 image=http://magiccards.info/scans/en/10e/226.jpg
 value=1.818
-rarity=U
+rarity=C
 type=Creature
 subtype=Badger,Beast
 cost={4}{R}

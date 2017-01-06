@@ -1,5 +1,6 @@
 name=Rustic Clachan
-image=http://magiccards.info/scans/en/ddf/34.jpg
+image=http://magiccards.info/scans/en/mt/150.jpg
+image_updated=2017-01-06
 value=2.183
 rarity=R
 type=Land

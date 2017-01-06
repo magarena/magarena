@@ -7,6 +7,6 @@ subtype=Zombie,Soldier
 cost={1}{B}
 pt=3/3
 ability=Defender;\
-        {1}{U}: SN can attack as though it didn't have defender this turn.
+        {1}{U}: SN can attack this turn as though it didn't have defender.
 timing=main
 oracle=Defender\n{1}{U}: Returned Phalanx can attack this turn as though it didn't have defender.

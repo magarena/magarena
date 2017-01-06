@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Giant
 cost={1}{B}
 pt=3/3
-ability=Whenever SN attacks or blocks, you may exile a card from your graveyard. If you don't, sacrifice SN.
+ability=Whenever SN attacks or blocks, sacrifice SN unless you exile a card from your graveyard.
 timing=main
 oracle=Whenever Rotting Giant attacks or blocks, sacrifice it unless you exile a card from your graveyard.

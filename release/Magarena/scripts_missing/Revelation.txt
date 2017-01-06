@@ -1,5 +1,6 @@
 name=Revelation
-image=http://magiccards.info/scans/en/ch/40.jpg
+image=http://magiccards.info/scans/en/lg/116.jpg
+image_updated=2017-01-06
 value=3.103
 rarity=R
 type=World,Enchantment

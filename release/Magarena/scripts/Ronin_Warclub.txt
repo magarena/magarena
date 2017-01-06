@@ -8,5 +8,5 @@ cost={3}
 ability=Equipped creature gets +2/+1.;\
         Whenever a creature enters the battlefield under your control, attach SN to that creature.;\
         Equip {5}
-timing=enchantment
+timing=equipment
 oracle=Equipped creature gets +2/+1.\nWhenever a creature enters the battlefield under your control, attach Ronin Warclub to that creature.\nEquip {5}

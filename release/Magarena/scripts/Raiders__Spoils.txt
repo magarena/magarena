@@ -6,5 +6,5 @@ type=Enchantment
 cost={3}{B}
 ability=Creatures you control get +1/+0.;\
         Whenever a Warrior you control deals combat damage to a player, you may pay 1 life. If you do, draw a card.
-timing=main
+timing=enchantment
 oracle=Creatures you control get +1/+0.\nWhenever a Warrior you control deals combat damage to a player, you may pay 1 life. If you do, draw a card.

@@ -8,5 +8,5 @@ cost={3}{G}{W}
 pt=2/3
 ability=Exalted;\
         When SN enters the battlefield, you gain 3 life.
-timing=main
+timing=fmain
 oracle=Exalted\nWhen Rhox Bodyguard enters the battlefield, you gain 3 life.

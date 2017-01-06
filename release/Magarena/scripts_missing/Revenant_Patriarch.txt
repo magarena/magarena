@@ -1,5 +1,6 @@
 name=Revenant Patriarch
-image=http://magiccards.info/scans/en/ddk/16.jpg
+image=http://magiccards.info/scans/en/gp/59.jpg
+image_updated=2017-01-06
 value=2.950
 rarity=U
 type=Creature

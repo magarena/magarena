@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=4/5
-timing=main
 ability=SN enters the battlefield tapped.
+timing=main
 oracle=Rotting Legion enters the battlefield tapped.

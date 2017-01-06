@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Whenever enchanted artifact becomes tapped, RN's controller gets a poison counter.
+ability=Enchant artifact;\
+        Whenever enchanted artifact becomes tapped, RN's controller gets a poison counter.
 timing=aura
 enchant=tap,neg artifact
 oracle=Enchant artifact\nWhenever enchanted artifact becomes tapped, its controller gets a poison counter.

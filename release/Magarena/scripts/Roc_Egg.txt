@@ -8,5 +8,5 @@ cost={2}{W}
 pt=0/3
 ability=Defender;\
         When SN dies, create a 3/3 white Bird creature token with flying.
-timing=main
+timing=smain
 oracle=Defender\nWhen Roc Egg dies, create a 3/3 white Bird creature token with flying.

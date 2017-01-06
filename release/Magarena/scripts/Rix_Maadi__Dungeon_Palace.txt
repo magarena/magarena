@@ -5,5 +5,5 @@ rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
         {1}{B}{R}, {T}: Each player discards a card. Activate this ability only any time you could cast a sorcery.
-timing=main
+timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}{B}{R}, {T}: Each player discards a card. Activate this ability only any time you could cast a sorcery.

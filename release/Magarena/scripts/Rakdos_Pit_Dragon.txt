@@ -1,5 +1,6 @@
 name=Rakdos Pit Dragon
-image=http://magiccards.info/scans/en/jvc/44.jpg
+image=http://magiccards.info/scans/en/di/69.jpg
+image_updated=2017-01-06
 value=4.270
 rarity=R
 type=Creature

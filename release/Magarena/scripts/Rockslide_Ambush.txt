@@ -1,7 +1,7 @@
 name=Rockslide Ambush
 image=http://magiccards.info/scans/en/p3k/121.jpg
 value=3.676
-rarity=C
+rarity=U
 type=Sorcery
 cost={1}{R}
 effect=SN deals damage to target creature equal to the number of Mountains you control.

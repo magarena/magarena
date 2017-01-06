@@ -1,7 +1,7 @@
 name=Red Elemental Blast
 image=http://magiccards.info/scans/en/4e/236.jpg
 value=4.500
-rarity=U
+rarity=C
 type=Instant
 cost={R}
 effect=Choose one — (1) Counter target blue spell. (2) Destroy target blue permanent.

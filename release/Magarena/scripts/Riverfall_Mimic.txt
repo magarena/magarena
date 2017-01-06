@@ -7,5 +7,5 @@ subtype=Shapeshifter
 cost={1}{U/R}
 pt=2/1
 timing=main
+oracle=Whenever you cast a spell that's both blue and red, Riverfall Mimic has base power and toughness 3/3 until end of turn and can't be blocked this turn.
 requires_groovy_code
-oracle=Whenever you cast a spell that's both blue and red, Riverfall Mimic becomes 3/3 until end of turn and can't be blocked this turn.

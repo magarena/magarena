@@ -1,5 +1,6 @@
 name=Razormane Masticore
-image=http://magiccards.info/scans/en/ddf/56.jpg
+image=http://magiccards.info/scans/en/10e/340.jpg
+image_updated=2017-01-06
 value=4.509
 rarity=R
 type=Artifact,Creature
@@ -7,7 +8,7 @@ subtype=Masticore
 cost={5}
 pt=5/5
 ability=First strike;\
-        At the beginning of your upkeep, you may discard a card. If you don't, sacrifice SN.;\
+        At the beginning of your upkeep, sacrifice SN unless you discard a card.;\
         At the beginning of your draw step, you may have SN deal 3 damage to target creature.
-timing=artifact
+timing=main
 oracle=First strike\nAt the beginning of your upkeep, sacrifice Razormane Masticore unless you discard a card.\nAt the beginning of your draw step, you may have Razormane Masticore deal 3 damage to target creature.

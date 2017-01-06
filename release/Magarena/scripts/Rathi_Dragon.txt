@@ -7,6 +7,6 @@ subtype=Dragon
 cost={2}{R}{R}
 pt=5/5
 ability=Flying;\
-        When SN enters the battlefield, you may sacrifice two Mountains. If you don't, sacrifice SN.
+        When SN enters the battlefield, sacrifice SN unless you sacrifice two Mountains.
 timing=main
 oracle=Flying\nWhen Rathi Dragon enters the battlefield, sacrifice it unless you sacrifice two Mountains.

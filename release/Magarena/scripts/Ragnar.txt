@@ -1,7 +1,7 @@
 name=Ragnar
 image=http://magiccards.info/scans/en/lg/290.jpg
 value=3.128
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Cleric
 cost={G}{W}{U}
