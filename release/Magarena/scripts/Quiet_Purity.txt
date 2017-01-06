@@ -6,6 +6,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={W}
-timing=removal
 effect=Destroy target enchantment.
+timing=removal
 oracle=Destroy target enchantment.

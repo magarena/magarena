@@ -7,6 +7,6 @@ subtype=Aura
 cost={2}{B}
 ability=Enchant creature;\
         Enchanted creature gets -1/-1 for each Swamp you control.
-enchant=weaken,neg creature
 timing=aura
+enchant=weaken,neg creature
 oracle=Enchant creature\nEnchanted creature gets -1/-1 for each Swamp you control.

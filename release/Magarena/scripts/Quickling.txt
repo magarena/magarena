@@ -8,6 +8,6 @@ cost={1}{U}
 pt=2/2
 ability=Flash;\
         Flying;\
-        When SN enters the battlefield, you may return another creature you control to its owner's hand. If you don't, sacrifice SN.
+        When SN enters the battlefield, sacrifice SN unless you return another creature you control to its owner's hand.
 timing=flash
 oracle=Flash\nFlying\nWhen Quickling enters the battlefield, sacrifice it unless you return another creature you control to its owner's hand.
