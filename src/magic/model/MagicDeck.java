@@ -111,4 +111,8 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     DeckType getDeckType() {
         return deckType;
     }
+
+    public boolean isUnsaved() {
+        return deckFileChecksum == 0;
+    }
 }

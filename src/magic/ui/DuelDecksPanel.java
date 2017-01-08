@@ -1,7 +1,6 @@
 package magic.ui;
 
 import java.awt.AlphaComposite;
-import magic.translate.MText;
 import java.awt.Color;
 import java.awt.Composite;
 import java.awt.Cursor;
@@ -27,12 +26,13 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.player.PlayerProfile;
-import magic.ui.widget.cards.table.CardTable;
+import magic.translate.MText;
 import magic.ui.screen.deck.editor.DeckSideBar;
-import magic.ui.widget.player.PlayerDetailsPanel;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.cards.table.CardTable;
+import magic.ui.widget.player.PlayerDetailsPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -118,7 +118,7 @@ public class DuelDecksPanel extends TexturedPanel {
     }
 
     String generateTitle(final MagicDeck deck) {
-        return MText.get(_S2, deck.getName(), deck.size());
+        return deck.isUnsaved() ? deck.getName() + "  [ UNSAVED ]" : deck.getName();
     }
 
     public MagicDuel getDuel() {
