@@ -8,5 +8,5 @@ cost={1}{W}
 pt=1/1
 ability=Exalted;\
         {U}: SN gains shroud until end of turn.
-timing=main
+timing=fmain
 oracle=Exalted\n{U}: Sighted-Caste Sorcerer gains shroud until end of turn.

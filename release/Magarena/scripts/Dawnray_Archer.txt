@@ -8,5 +8,5 @@ cost={2}{U}
 pt=1/1
 ability=Exalted;\
         {W}, {T}: SN deals 1 damage to target attacking or blocking creature.
-timing=main
+timing=fmain
 oracle=Exalted\n{W}, {T}: Dawnray Archer deals 1 damage to target attacking or blocking creature.

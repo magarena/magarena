@@ -8,5 +8,5 @@ cost={1}{W}
 pt=1/1
 ability=Flying;\
         Exalted
-timing=main
+timing=fmain
 oracle=Flying\nExalted

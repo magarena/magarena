@@ -7,5 +7,5 @@ subtype=Beast
 cost={4}{G}{W}
 pt=5/4
 ability=Exalted
-timing=main
+timing=fmain
 oracle=Exalted

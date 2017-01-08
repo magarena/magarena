@@ -8,5 +8,5 @@ cost={W}{W}
 pt=2/2
 ability=First strike;\
         Exalted
-timing=main
+timing=fmain
 oracle=First strike\nExalted

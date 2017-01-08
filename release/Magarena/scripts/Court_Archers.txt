@@ -8,5 +8,5 @@ cost={2}{G}
 pt=1/3
 ability=Reach;\
         Exalted
-timing=main
+timing=fmain
 oracle=Reach\nExalted

@@ -10,5 +10,5 @@ ability=Flying;\
         Exalted;\
         Other creatures you control have exalted.
 static=player
-timing=main
+timing=fmain
 oracle=Flying\nExalted\nOther creatures you control have exalted.

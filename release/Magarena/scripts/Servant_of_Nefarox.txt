@@ -7,5 +7,5 @@ subtype=Human,Cleric
 cost={2}{B}
 pt=3/1
 ability=Exalted
-timing=main
+timing=fmain
 oracle=Exalted

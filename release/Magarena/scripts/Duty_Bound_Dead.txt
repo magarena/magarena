@@ -8,5 +8,5 @@ cost={B}
 pt=0/2
 ability=Exalted;\
         {3}{B}: Regenerate SN.
-timing=main
+timing=fmain
 oracle=Exalted\n{3}{B}: Regenerate Duty-Bound Dead.
