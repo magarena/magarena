@@ -8,24 +8,24 @@ import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import magic.data.DeckType;
-import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.MagicFileChoosers;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.MagicFileChoosers;
 import magic.ui.MagicLogs;
+import magic.ui.ScreenController;
+import magic.ui.WikiPage;
+import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
-import magic.ui.screen.duel.decks.DuelDecksScreen;
+import magic.utility.DeckUtils;
 import magic.utility.MagicFileSystem;
-import magic.ui.WikiPage;
-import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen extends HeaderFooterScreen
@@ -56,13 +56,13 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private DeckEditorScreenPanel screenContent;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
-    private MagicDeck deck;
+    private final MagicDeck startDeck;
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorScreen(final MagicDeck deck) {
         super(MText.get(_S14));
         isStandalone = false;
-        this.deck = deck;
+        this.startDeck = deck;
         useLoadingScreen(this::initUI);
     }
 
@@ -70,7 +70,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     public DeckEditorScreen() {
         super(MText.get(_S14));
         isStandalone = true;
-        this.deck = getMostRecentEditedDeck();
+        this.startDeck = getMostRecentEditedDeck();
         useLoadingScreen(this::initUI);
     }
 
@@ -80,9 +80,9 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private void initUI() {
-        screenContent = new DeckEditorScreenPanel(deck, this);
+        screenContent = new DeckEditorScreenPanel(startDeck, this);
         screenContent.setIsStandalone(isStandalone);
-        setDeck(deck == null ? new MagicDeck() : deck);
+        setDeck(startDeck);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
         setLeftFooter(getLeftAction());
@@ -90,15 +90,15 @@ public class DeckEditorScreen extends HeaderFooterScreen
         setFooterButtons();
         setWikiPage(WikiPage.DECK_EDITOR);
     }
-    
+
     private void showSampleHand() {
         if (screenContent.getDeck().size() >= 7) {
             ScreenController.showSampleHandScreen(screenContent.getDeck());
         } else {
             showInvalidActionMessage(MText.get(_S10));
         }
-    }    
-    
+    }
+
     private void showTiledImagesView() {
         if (screenContent.getDeck().size() > 0) {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
@@ -131,7 +131,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
                 return deck;
             }
         }
-        return null;
+        return new MagicDeck();
     }
 
     private static MagicDeck loadDeck(final Path deckFilePath) {
