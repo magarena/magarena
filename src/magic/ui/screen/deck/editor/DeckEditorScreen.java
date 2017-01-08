@@ -1,9 +1,8 @@
 package magic.ui.screen.deck.editor;
 
-import java.io.File;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
-import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import magic.data.DeckType;
 import magic.data.GeneralConfig;
@@ -13,7 +12,6 @@ import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
-import magic.ui.MagicFileChoosers;
 import magic.ui.MagicLogs;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
@@ -169,55 +167,70 @@ public class DeckEditorScreen extends HeaderFooterScreen
             || MagicFileSystem.isSamePath(saveFolder, DeckUtils.getFiremindDecksFolder());
     }
 
-    public void saveDeck() {
+    private Path tryGetDeckFilePath(String filename) {
+        try {
+            return MagicFileSystem.getDataPath(MagicFileSystem.DataPath.DECKS).resolve(filename);
+        } catch (InvalidPathException ex) {
+            System.err.println(ex);
+            ScreenController.showWarningMessage("Invalid deck filename :-\n" + ex.getMessage());
+            return null;
+        }
+    }
 
-        if (contentPanel.getDeck().isEmpty()) {
+    private void saveDeck() {
+
+        final MagicDeck deck = contentPanel.getDeck();
+
+        if (deck.isEmpty()) {
             ScreenController.showWarningMessage(MText.get(_S15));
             return;
         }
 
-        final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDeckFolder()) {
-            @Override
-            public void approveSelection() {
-                // first ensure filename has "dec" extension
-                String filename = getSelectedFile().getAbsolutePath();
-                if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
-                    setSelectedFile(new File(filename + DeckUtils.DECK_EXTENSION));
-                }
-                if (isReservedDeckFolder(getSelectedFile().toPath().getParent())) {
-                    ScreenController.showWarningMessage(MText.get(_S16));
-                } else if (Files.exists(getSelectedFile().toPath())) {
-                    int response = JOptionPane.showConfirmDialog(ScreenController.getFrame(),
-                            MText.get(_S17),
-                            MText.get(_S18),
-                            JOptionPane.YES_NO_OPTION);
-                    if (response == JOptionPane.YES_OPTION) {
-                        super.approveSelection();
-                    }
-                } else {
-                    super.approveSelection();
-                }
-            }
-        };
-        final MagicDeck deck = contentPanel.getDeck();
-        fileChooser.setDialogTitle(MText.get(_S19));
-        fileChooser.setFileFilter(MagicFileChoosers.DECK_FILEFILTER);
-        fileChooser.setAcceptAllFileFilterUsed(false);
-        if (deck != null) {
-            fileChooser.setSelectedFile(new File(deck.getFilename()));
+        // Prompt for name of deck (which is also used as the filename).
+        final String deckName = (String) JOptionPane.showInputDialog(
+            ScreenController.getFrame(),
+            MText.get("Deck name (must be a valid filename)"),
+            MText.get("Save player deck"),
+            JOptionPane.QUESTION_MESSAGE,
+            null, null, deck.getName()
+        );
+        if (deckName == null || deckName.trim().isEmpty()) {
+            return;
         }
-        final int action = fileChooser.showSaveDialog(ScreenController.getFrame());
-        if (action == JFileChooser.APPROVE_OPTION) {
-            final String filename = fileChooser.getSelectedFile().getAbsolutePath();
-            if (DeckUtils.saveDeck(filename, contentPanel.getDeck())) {
-                final String shortFilename = fileChooser.getSelectedFile().getName();
-                contentPanel.getDeck().setFilename(shortFilename);
-                setDeck(contentPanel.getDeck());
-                setMostRecentDeck(filename);
-            } else {
-                ScreenController.showWarningMessage(MText.get(_S20));
+
+        // add '.dec' file extension to end of filename if not present.
+        String filename = deckName.trim();
+        if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
+            filename += DeckUtils.DECK_EXTENSION;
+        }
+
+        // create deck file path - returns null if not valid (eg invalid char in filename).
+        Path deckFilePath = tryGetDeckFilePath(filename);
+        if (deckFilePath == null) {
+            return;
+        }
+
+        // if deck file already exists ask for overwrite confirmation.
+        if (Files.exists(deckFilePath)) {
+            int response = JOptionPane.showConfirmDialog(
+                ScreenController.getFrame(),
+                MText.get(_S17),
+                MText.get(_S18),
+                JOptionPane.YES_NO_OPTION
+            );
+            if (response != JOptionPane.YES_OPTION) {
+                return;
             }
         }
+
+        // finally can try to save deck to file.
+        if (DeckUtils.saveDeck(deckFilePath.toString(), deck)) {
+            setDeck(DeckUtils.loadDeckFromFile(deckFilePath));
+            setMostRecentDeck(deckFilePath.toString());
+        } else {
+            ScreenController.showWarningMessage(MText.get(_S20));
+        }
+
     }
 
     private void setMostRecentDeck(final String filename) {
