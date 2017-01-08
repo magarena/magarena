@@ -5,6 +5,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import magic.data.DeckType;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
@@ -28,7 +29,10 @@ public class DeckStatusPanel extends JPanel {
 
     public void setDeck(final MagicDeck deck, final boolean showDeckSize) {
         deckNameLabel.setText(deck != null ? deck.getName() : "");
-        deckSizeLabel.setText(showDeckSize && deck != null ? MText.get(_S1, deck.size()): "");
+        deckSizeLabel.setText(showDeckSize && deck != null
+            ? MText.get(_S1, deck.size())
+            : deck.getDeckType() != DeckType.Random ? deck.getDeckType().toString() : "[ UNSAVED ]"
+        );
         refreshLayout();
     }
 
