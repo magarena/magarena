@@ -125,8 +125,8 @@ public class DeckGenerators {
             customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         }
         DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
-        deck.setFilename("Random deck");
-        deck.setDescription("Randomly generated " + deckProfile.getColorText().toUpperCase() + " deck.");
+        deck.setFilename("Random_" + deckProfile.getColorText().toUpperCase() + "_deck");
+        deck.setDescription("Built using random color deck generator.");
     }
 
     /**
