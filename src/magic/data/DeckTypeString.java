@@ -7,7 +7,7 @@ final class DeckTypeString {
     private DeckTypeString() {};
 
     static final String _S1 = "Random";
-    static final String _S2 = "Prebuilt";
-    static final String _S3 = "Player";
-    static final String _S4 = "Firemind Top Decks";
+    static final String _S2 = "Prebuilt decks";
+    static final String _S3 = "Player decks";
+    static final String _S4 = "Firemind top decks";
 }

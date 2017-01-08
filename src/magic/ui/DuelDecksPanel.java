@@ -117,8 +117,18 @@ public class DuelDecksPanel extends TexturedPanel {
         newDeckButton.setEnabled(isRandomDeck && duel.getGamesPlayed() == 0);
     }
 
+    private static String getDeckNameWithType(MagicDeck deck) {
+        if (deck.getDeckType() != DeckType.Random) {
+            return deck.getDeckType().toString() + "  /  " + deck.getName();
+        } else {
+            return deck.getName();
+        }
+    }
+
     String generateTitle(final MagicDeck deck) {
-        return deck.isUnsaved() ? deck.getName() + "  [ UNSAVED ]" : deck.getName();
+        return deck.isUnsaved()
+            ? deck.getName() + "  [ UNSAVED ]"
+            : getDeckNameWithType(deck);
     }
 
     public MagicDuel getDuel() {

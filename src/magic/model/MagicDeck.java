@@ -108,7 +108,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         return deckFileChecksum;
     }
 
-    DeckType getDeckType() {
+    public DeckType getDeckType() {
         return deckType;
     }
 

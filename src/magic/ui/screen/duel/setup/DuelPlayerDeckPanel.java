@@ -11,14 +11,14 @@ import javax.swing.SwingConstants;
 import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 
@@ -31,7 +31,6 @@ class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     // translatable strings
     @StringContext(eg = "'Prebuilt deck' or 'Random deck'")
-    private static final String _S1 = "%s deck";
     private static final String _S2 = "Any three colors";
     private static final String _S3 = "Any two colors";
     private static final String _S4 = "Any single color";
@@ -77,7 +76,7 @@ class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     private void setDeckType(final DeckType value) {
         deckType = value;
-        deckTypeLabel.setText(MText.get(_S1, deckType));
+        deckTypeLabel.setText(deckType.toString());
         deckValueLabel.setText(getFormattedDeckValue());
     }
 
