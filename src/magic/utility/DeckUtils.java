@@ -1,12 +1,15 @@
 package magic.utility;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -16,17 +19,22 @@ import java.util.Map;
 import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.zip.CRC32;
 import magic.data.CardDefinitions;
+import magic.data.DeckType;
 import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
-import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
 import magic.translate.MText;
 import magic.utility.MagicFileSystem.DataPath;
+import org.apache.commons.io.FilenameUtils;
 
 public class DeckUtils {
 
@@ -224,6 +232,46 @@ public class DeckUtils {
         return deck;
     }
 
+    private static long getDeckFileChecksum(final Path deckFilePath) {
+        try (
+            InputStream fis = new FileInputStream(deckFilePath.toFile());
+            InputStream bis = new BufferedInputStream(fis);
+        ) {
+            CRC32 crc = new CRC32();
+            int cnt;
+            while ((cnt = bis.read()) != -1) {
+                crc.update(cnt);
+            }
+            return crc.getValue();
+        } catch (IOException ex) {
+            Logger.getLogger(DeckUtils.class.getName()).log(Level.WARNING, null, ex);
+            return 0;
+        }
+    }
+
+    private static boolean isSamePath(Path p1, Path p2) {
+        try {
+            return Files.isSameFile(p1, p2);
+        } catch (IOException ex) {
+            Logger.getLogger(DeckUtils.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+    }
+
+    private static DeckType getDeckType(Path deckFilePath) {
+        Path deckFolder = Paths.get(FilenameUtils.getFullPath(deckFilePath.toString()));
+        if (isSamePath(deckFolder, getPrebuiltDecksFolder())) {
+            return DeckType.Preconstructed;
+        }
+        if (isSamePath(deckFolder, getFiremindDecksFolder())) {
+            return DeckType.Firemind;
+        }
+        if (isSamePath(deckFolder, MagicFileSystem.getDataPath(DataPath.DECKS))) {
+            return DeckType.Custom;
+        }
+        throw new RuntimeException("Unable to determine deck type from " + deckFilePath);
+    }
+
     /**
      * Loads a deck file into a new MagicDeck instance.
      * <p>
@@ -234,6 +282,8 @@ public class DeckUtils {
         final List<String> lines = getDeckFileContent(deckFilePath.toString());
         final MagicDeck deck = parseDeckFileContent(lines);
         deck.setFilename(deckFilePath.getFileName().toString());
+        deck.setDeckFileChecksum(getDeckFileChecksum(deckFilePath));
+        deck.setDeckType(getDeckType(deckFilePath));
         return deck;
     }
 

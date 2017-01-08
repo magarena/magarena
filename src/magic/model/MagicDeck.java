@@ -19,14 +19,19 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public MagicDeck(final MagicDeck deck) {
         super(deck);
-        filename = deck.filename;
+        this.filename = deck.filename;
+        this.description = deck.description;
+        this.deckFileChecksum = deck.deckFileChecksum;
+        this.deckType = deck.deckType;
     }
 
     public void setContent(final MagicDeck deck) {
         clear();
         addAll(deck);
-        filename = deck.filename;
-        description = deck.description;
+        this.filename = deck.filename;
+        this.description = deck.description;
+        this.deckFileChecksum = deck.deckFileChecksum;
+        this.deckType = deck.deckType;
     }
 
     public void setFilename(final String name) {
@@ -89,12 +94,12 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         return this.stream().anyMatch(card -> card.hasType(type));
     }
 
-    void setDeckFileChecksum(long value) {
+    public void setDeckFileChecksum(long value) {
         this.deckFileChecksum = value;
         System.out.println("MagicDeck.setDeckFileChecksum : " + value);
     }
 
-    void setDeckType(DeckType deckType) {
+    public void setDeckType(DeckType deckType) {
         this.deckType = deckType;
         System.out.println("MagicDeck.setType : " + deckType.name());
     }
