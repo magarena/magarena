@@ -1,10 +1,8 @@
 package magic.ui.screen.deck.editor;
 
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import magic.data.DeckType;
@@ -85,96 +83,84 @@ public class DeckEditorScreen extends HeaderFooterScreen
         setDeck(startDeck);
         setMainContent(contentPanel);
         setHeaderContent(deckStatusPanel);
-        setLeftFooter(getLeftAction());
-        setRightFooter(getRightAction());
+        setLeftFooter(getLeftActionButton());
+        setRightFooter(getRightActionButton());
         setFooterButtons();
         setWikiPage(WikiPage.DECK_EDITOR);
     }
 
-    private void showSampleHand() {
+    private void showSampleHandScreen() {
         if (contentPanel.getDeck().size() >= 7) {
             ScreenController.showSampleHandScreen(contentPanel.getDeck());
         } else {
-            showInvalidActionMessage(MText.get(_S10));
+            ScreenController.showWarningMessage(MText.get(_S10));
         }
     }
 
-    private void showTiledImagesView() {
+    private void showDeckTiledCardsScreen() {
         if (contentPanel.getDeck().size() > 0) {
             ScreenController.showDeckTiledCardsScreen(contentPanel.getDeck());
         } else {
-            showInvalidActionMessage(MText.get(_S13));
+            ScreenController.showWarningMessage(MText.get(_S13));
         }
     }
 
     private void setFooterButtons() {
-        addToFooter(MenuButton.build(this::loadDeck,
-                        MagicIcon.OPEN, MText.get(_S4), MText.get(_S5)
-                ),
-                MenuButton.build(this::saveDeck,
-                        MagicIcon.SAVE, MText.get(_S6), MText.get(_S7)
-                ),
-                MenuButton.build(this::showSampleHand,
-                        MagicIcon.HAND_ICON, MText.get(_S8), MText.get(_S9)
-                ),
-                MenuButton.build(this::showTiledImagesView,
-                        MagicIcon.TILED, MText.get(_S11), MText.get(_S12)
-                )
+        addToFooter(
+            MenuButton.build(this::showDecksScreen,
+                MagicIcon.OPEN, MText.get(_S4), MText.get(_S5)
+            ),
+            MenuButton.build(this::saveDeck,
+                MagicIcon.SAVE, MText.get(_S6), MText.get(_S7)
+            ),
+            MenuButton.build(this::showSampleHandScreen,
+                MagicIcon.HAND_ICON, MText.get(_S8), MText.get(_S9)
+            ),
+            MenuButton.build(this::showDeckTiledCardsScreen,
+                MagicIcon.TILED, MText.get(_S11), MText.get(_S12)
+            )
         );
     }
 
     private static MagicDeck getMostRecentEditedDeck() {
-        final Path deckFilePath = GeneralConfig.getInstance().getMostRecentDeckFilePath();
+        Path deckFilePath = GeneralConfig.getInstance().getMostRecentDeckFilePath();
         if (deckFilePath != null) {
-            final MagicDeck deck = loadDeck(deckFilePath);
-            if (deck != null && deck.isValid()) {
-                return deck;
+            MagicDeck newDeck = tryLoadDeck(deckFilePath);
+            if (newDeck.isValid()) {
+                return newDeck;
             }
         }
         return new MagicDeck();
     }
 
-    private static MagicDeck loadDeck(final Path deckFilePath) {
+    private static MagicDeck tryLoadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
         } catch (InvalidDeckException ex) {
             // if the most recent deck is invalid for some reason then I think it suffices
             // to log the error to console and open the deck editor with an empty deck.
             System.err.println(ex);
-            return null;
+            return new MagicDeck();
         }
     }
 
-    public MenuButton getLeftAction() {
-        final String caption = (!isStandalone ? MText.get(_S1) : MText.get(_S2));
-        return MenuButton.getCloseScreenButton(caption);
+    private MenuButton getLeftActionButton() {
+        return MenuButton.getCloseScreenButton(!isStandalone ? MText.get(_S1) : MText.get(_S2));
     }
 
-    public MenuButton getRightAction() {
-        if (!isStandalone) {
-            return new MenuButton(MText.get(_S3), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    if (contentPanel.validateDeck(true) && contentPanel.applyDeckUpdates()) {
-                        ScreenController.closeActiveScreen(false);
-                    }
-                }
-            });
-        } else {
-            return null;
+    private void doUseDeckAction() {
+        if (contentPanel.validateDeck(true) && contentPanel.applyDeckUpdates()) {
+            ScreenController.closeActiveScreen(false);
         }
     }
 
-
-    private void showInvalidActionMessage(final String message) {
-        ScreenController.showWarningMessage(message);
+    private MenuButton getRightActionButton() {
+        return !isStandalone
+            ? MenuButton.build(this::doUseDeckAction, MText.get(_S3))
+            : null;
     }
 
-    public void createNewEmptyDeck() {
-        setDeck(new MagicDeck());
-    }
-
-    public void loadDeck() {
+    private void showDecksScreen() {
         ScreenController.showDecksScreen(this);
     }
 
@@ -185,8 +171,8 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     public void saveDeck() {
 
-        if (contentPanel.getDeck().size() == 0) {
-            showInvalidActionMessage(MText.get(_S15));
+        if (contentPanel.getDeck().isEmpty()) {
+            ScreenController.showWarningMessage(MText.get(_S15));
             return;
         }
 
