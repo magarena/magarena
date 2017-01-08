@@ -9,7 +9,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public static final int DEFAULT_SIZE = 40;
 
-    private String filename="Unsaved Deck";
+    private String filename = "";
     private String description = "";
     private boolean isDeckValid = true;
     private long deckFileChecksum = 0;
@@ -35,15 +35,16 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     }
 
     public void setFilename(final String name) {
-        this.filename = name.isEmpty() ? "Unsaved deck" : name;
+        this.filename = name.trim();
         System.out.println("MagicDeck.setFilename : " + filename);
     }
+
     public String getFilename() {
-        return filename;
+        return filename.isEmpty() ? "New deck" : filename;
     }
 
     public String getName() {
-        return DeckUtils.getDeckNameFromFilename(filename);
+        return DeckUtils.getDeckNameFromFilename(getFilename());
     }
 
     public String getDescription() {
@@ -63,7 +64,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     public boolean isValid() {
         if (!isDeckValid) {
             return false;
-        } else if (this.size() == 0) {
+        } else if (this.isEmpty()) {
             return false;
         } else {
             for (final MagicCardDefinition card : this) {
