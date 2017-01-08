@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.ArrayList;
+import magic.data.DeckType;
 import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
@@ -11,6 +12,9 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     private String filename="Unsaved Deck";
     private String description = "";
     private boolean isDeckValid = true;
+    private long deckFileChecksum = 0;
+    private DeckType deckType = DeckType.Random;
+
     public MagicDeck() {}
 
     public MagicDeck(final MagicDeck deck) {
@@ -26,7 +30,8 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     }
 
     public void setFilename(final String name) {
-        this.filename = name;
+        this.filename = name.isEmpty() ? "Unsaved deck" : name;
+        System.out.println("MagicDeck.setFilename : " + filename);
     }
     public String getFilename() {
         return filename;
@@ -82,5 +87,23 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public boolean contains(final MagicType type) {
         return this.stream().anyMatch(card -> card.hasType(type));
+    }
+
+    void setDeckFileChecksum(long value) {
+        this.deckFileChecksum = value;
+        System.out.println("MagicDeck.setDeckFileChecksum : " + value);
+    }
+
+    void setDeckType(DeckType deckType) {
+        this.deckType = deckType;
+        System.out.println("MagicDeck.setType : " + deckType.name());
+    }
+
+    long getDeckFileChecksum() {
+        return deckFileChecksum;
+    }
+
+    DeckType getDeckType() {
+        return deckType;
     }
 }

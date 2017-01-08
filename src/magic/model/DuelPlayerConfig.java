@@ -63,6 +63,14 @@ public class DuelPlayerConfig {
         throw new InvalidDeckException(String.format(ERR_MSG, cardName, ""));
     }
 
+    private long getDeckFileChecksum(Properties properties, String prefix) {
+        try {
+            return Long.valueOf(properties.getProperty(prefix + "deck.file.crc", "0"));
+        } catch (NumberFormatException ex) {
+            return 0;
+        }
+    }
+
     public void loadDeck(final Properties properties, final String prefix) {
         deck.clear();
         for (int i = 1; i <= properties.size(); i++) {
@@ -72,9 +80,18 @@ public class DuelPlayerConfig {
                 deck.add(getCard(cardName));
             }
         }
+        deck.setFilename(properties.getProperty(prefix + "deck.name", ""));
+        deck.setDeckType(DeckType.valueOf(properties.getProperty(prefix + "deck.file.type", "Random")));
+        deck.setDeckFileChecksum(getDeckFileChecksum(properties, prefix));
+        deck.setDescription(properties.getProperty(prefix + "deck.desc", ""));
     }
 
     public void save(final Properties properties, final String prefix) {
+
+        properties.setProperty(prefix + "deck.file.crc", Long.toString(deck.getDeckFileChecksum()));
+        properties.setProperty(prefix + "deck.file.type", deck.getDeckType().name());
+        properties.setProperty(prefix + "deck.name", deck.getName());
+        properties.setProperty(prefix + "deck.desc", deck.getDescription());
 
         properties.setProperty(prefix + PLAYER_DECK,
                 deckProfile.getDeckType().name() + ";" + deckProfile.getDeckValue()
