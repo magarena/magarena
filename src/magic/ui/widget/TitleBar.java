@@ -15,7 +15,7 @@ public class TitleBar extends JPanel {
 
     public TitleBar(final String text) {
 
-        label = new JLabel(text);
+        label = new JLabel(text); //, MagicImages.getSmallManaIcon(MagicIcon.SAVE), SwingConstants.LEFT);
         label.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
 
         setPreferredSize(new Dimension(getPreferredSize().width, 22));

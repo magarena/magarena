@@ -118,11 +118,9 @@ public class DuelDecksPanel extends TexturedPanel {
     }
 
     private static String getDeckNameWithType(MagicDeck deck) {
-        if (deck.getDeckType() != DeckType.Random) {
-            return deck.getDeckType().toString() + "  /  " + deck.getName();
-        } else {
-            return deck.getName();
-        }
+        return deck.getDeckType() != DeckType.Random
+            ? deck.getDeckType().toString() + "  /  " + deck.getName()
+            : deck.getName();
     }
 
     String generateTitle(final MagicDeck deck) {
