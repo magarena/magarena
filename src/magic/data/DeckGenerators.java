@@ -1,18 +1,17 @@
 package magic.data;
 
-import magic.utility.DeckUtils;
-import magic.utility.FileIO;
-import magic.generator.RandomDeckGenerator;
-
-import magic.model.DuelPlayerConfig;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
+import magic.generator.RandomDeckGenerator;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
+import magic.utility.DeckUtils;
+import magic.utility.FileIO;
 import magic.utility.MagicSystem;
 
 /**
@@ -126,6 +125,8 @@ public class DeckGenerators {
             customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         }
         DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
+        deck.setFilename("Random deck");
+        deck.setDescription("Randomly generated " + deckProfile.getColorText().toUpperCase() + " deck.");
     }
 
     /**
