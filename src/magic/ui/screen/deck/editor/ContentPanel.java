@@ -5,13 +5,13 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.ScreenController;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener {
+class ContentPanel extends JPanel implements IDeckEditorListener {
 
     // translatable strings
     private static final String _S1 = "This deck is illegal.\n\n%s";
@@ -24,7 +24,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     private final IDeckEditorListener listener;
     private boolean isStandalone = true;
 
-    public DeckEditorScreenPanel(final MagicDeck deck, final IDeckEditorListener aListener) {
+    ContentPanel(final MagicDeck deck, final IDeckEditorListener aListener) {
 
         MagicSystem.waitForAllCards();
 
@@ -51,7 +51,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         add(viewsPanel, "w 100%, h 100%");
     }
 
-    public void setCard(final MagicCardDefinition card) {
+    void setCard(final MagicCardDefinition card) {
         final int cardCount = viewsPanel.getDeck().getCardCount(card);
         sideBarPanel.setCard(card);
         sideBarPanel.setCardCount(cardCount);
@@ -62,11 +62,11 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         viewsPanel.setDeck(deck);
     }
 
-    public MagicDeck getDeck() {
+    MagicDeck getDeck() {
         return viewsPanel.getDeck();
     }
 
-    public boolean applyDeckUpdates() {
+    boolean applyDeckUpdates() {
         boolean updatesApplied = true;
         if (isUpdatingExistingDeck()) {
             if (validateDeck(false)) {
@@ -86,7 +86,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         ScreenController.showWarningMessage(MText.get(_S1, brokenRules));
     }
 
-    public boolean validateDeck(final boolean notifyUser) {
+    boolean validateDeck(final boolean notifyUser) {
         final String brokenRules = getBrokenRules(viewsPanel.getDeck());
         if (brokenRules.length() > 0) {
             if (notifyUser) {
@@ -97,7 +97,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         return true;
     }
 
-    public boolean isStandaloneDeckEditor() {
+    boolean isStandaloneDeckEditor() {
         return !isUpdatingExistingDeck();
     }
 
@@ -105,7 +105,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         return viewsPanel.isUpdatingExistingDeck();
     }
 
-    public void setIsStandalone(final boolean b) {
+    void setIsStandalone(final boolean b) {
         this.isStandalone = b;
     }
 

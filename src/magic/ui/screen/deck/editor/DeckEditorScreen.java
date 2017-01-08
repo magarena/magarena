@@ -53,7 +53,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private static final String _S19 = "Save deck";
     private static final String _S20 = "There was a problem saving the deck file!";
 
-    private DeckEditorScreenPanel screenContent;
+    private ContentPanel contentPanel;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private final MagicDeck startDeck;
@@ -80,10 +80,10 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private void initUI() {
-        screenContent = new DeckEditorScreenPanel(startDeck, this);
-        screenContent.setIsStandalone(isStandalone);
+        contentPanel = new ContentPanel(startDeck, this);
+        contentPanel.setIsStandalone(isStandalone);
         setDeck(startDeck);
-        setMainContent(screenContent);
+        setMainContent(contentPanel);
         setHeaderContent(deckStatusPanel);
         setLeftFooter(getLeftAction());
         setRightFooter(getRightAction());
@@ -92,16 +92,16 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private void showSampleHand() {
-        if (screenContent.getDeck().size() >= 7) {
-            ScreenController.showSampleHandScreen(screenContent.getDeck());
+        if (contentPanel.getDeck().size() >= 7) {
+            ScreenController.showSampleHandScreen(contentPanel.getDeck());
         } else {
             showInvalidActionMessage(MText.get(_S10));
         }
     }
 
     private void showTiledImagesView() {
-        if (screenContent.getDeck().size() > 0) {
-            ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
+        if (contentPanel.getDeck().size() > 0) {
+            ScreenController.showDeckTiledCardsScreen(contentPanel.getDeck());
         } else {
             showInvalidActionMessage(MText.get(_S13));
         }
@@ -155,7 +155,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
             return new MenuButton(MText.get(_S3), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    if (screenContent.validateDeck(true) && screenContent.applyDeckUpdates()) {
+                    if (contentPanel.validateDeck(true) && contentPanel.applyDeckUpdates()) {
                         ScreenController.closeActiveScreen(false);
                     }
                 }
@@ -185,7 +185,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     public void saveDeck() {
 
-        if (screenContent.getDeck().size() == 0) {
+        if (contentPanel.getDeck().size() == 0) {
             showInvalidActionMessage(MText.get(_S15));
             return;
         }
@@ -213,7 +213,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
                 }
             }
         };
-        final MagicDeck deck = screenContent.getDeck();
+        final MagicDeck deck = contentPanel.getDeck();
         fileChooser.setDialogTitle(MText.get(_S19));
         fileChooser.setFileFilter(MagicFileChoosers.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
@@ -223,10 +223,10 @@ public class DeckEditorScreen extends HeaderFooterScreen
         final int action = fileChooser.showSaveDialog(ScreenController.getFrame());
         if (action == JFileChooser.APPROVE_OPTION) {
             final String filename = fileChooser.getSelectedFile().getAbsolutePath();
-            if (DeckUtils.saveDeck(filename, screenContent.getDeck())) {
+            if (DeckUtils.saveDeck(filename, contentPanel.getDeck())) {
                 final String shortFilename = fileChooser.getSelectedFile().getName();
-                screenContent.getDeck().setFilename(shortFilename);
-                setDeck(screenContent.getDeck());
+                contentPanel.getDeck().setFilename(shortFilename);
+                setDeck(contentPanel.getDeck());
                 setMostRecentDeck(filename);
             } else {
                 ScreenController.showWarningMessage(MText.get(_S20));
@@ -244,9 +244,9 @@ public class DeckEditorScreen extends HeaderFooterScreen
     @Override
     public boolean isScreenReadyToClose(final Object nextScreen) {
         if (super.isScreenReadyToClose(nextScreen)) {
-            if (screenContent == null) {
+            if (contentPanel == null) {
                 return true;
-            } else if (!screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
+            } else if (!contentPanel.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
                 ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
             }
             MagicSetDefinitions.clearLoadedSets();
@@ -258,7 +258,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     @Override
     public void setDeck(final MagicDeck deck) {
-        screenContent.setDeck(deck);
+        contentPanel.setDeck(deck);
         deckStatusPanel.setDeck(deck, false);
     }
 
