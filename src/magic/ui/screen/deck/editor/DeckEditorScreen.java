@@ -178,11 +178,6 @@ public class DeckEditorScreen extends HeaderFooterScreen
         ScreenController.showDecksScreen(this);
     }
 
-    private boolean isReservedDeckFolder(final Path saveFolder) {
-        return MagicFileSystem.isSamePath(saveFolder, DeckUtils.getPrebuiltDecksFolder())
-            || MagicFileSystem.isSamePath(saveFolder, DeckUtils.getFiremindDecksFolder());
-    }
-
     private Path tryGetDeckFilePath(String filename) {
         try {
             return MagicFileSystem.getDataPath(MagicFileSystem.DataPath.DECKS).resolve(filename);
@@ -256,7 +251,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
         }
     }
 
-    private boolean isReadyToClose() {
+    private boolean isUserReadyToClose() {
         if (!editDeck.equals(refDeck)) {
             int response = JOptionPane.showConfirmDialog(
                 ScreenController.getFrame(),
@@ -275,7 +270,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
             if (contentPanel == null) {
                 return true;
             }
-            if (isStandaloneMode() && !isReadyToClose()) {
+            if (isStandaloneMode() && !isUserReadyToClose()) {
                 return false;
             }
             MagicSetDefinitions.clearLoadedSets();
