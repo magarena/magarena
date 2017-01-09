@@ -233,7 +233,16 @@ public class DuelDecksScreen extends HeaderFooterScreen
 
     @Override
     public boolean setDeck(MagicDeck newDeck) {
-        throw new UnsupportedOperationException();
+        MagicDeck oldDeck = getActiveDeck();
+        if (!newDeck.equals(oldDeck)) {
+            if (newDeck.isSameDeckFile(oldDeck)) {
+                // cards list has changed.
+                newDeck.setUnsavedStatus();
+            }
+            screenContent.setDeck(newDeck);
+            return true;
+        }
+        return true;
     }
 
 }

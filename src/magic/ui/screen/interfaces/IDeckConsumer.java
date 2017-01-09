@@ -6,6 +6,5 @@ import magic.model.MagicDeck;
 
 public interface IDeckConsumer {
     void setDeck(String deckName, DeckType deckType);
-    void setDeck(MagicDeck deck, Path deckPath);
-    //void setRandomDeck(String randomDeck);
+    boolean setDeck(MagicDeck deck, Path deckPath);
 }

@@ -16,7 +16,6 @@ import magic.ui.MagicLogs;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
@@ -48,6 +47,8 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private static final String _S18 = "Overwrite file";
     private static final String _S19 = "Save deck";
     private static final String _S20 = "There was a problem saving the deck file!";
+    private static final String _S21 = "Deck editor has unsaved changes which will be lost.\nDo you wish to continue?";
+    private static final String _S22 = "Confirmation required...";
 
     private ContentPanel contentPanel;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
@@ -55,6 +56,11 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     private static MagicDeck refDeck;
     static MagicDeck editDeck;
+
+    static void setNewDeck(MagicDeck newDeck) {
+        refDeck = newDeck == null ? new MagicDeck() : newDeck;
+        editDeck = new MagicDeck(refDeck);
+    }
 
     public DeckEditorScreen(IDeckEditorClient client) {
         super(MText.get(_S14));
@@ -71,11 +77,6 @@ public class DeckEditorScreen extends HeaderFooterScreen
         useLoadingScreen(this::initUI);
     }
 
-    private void setNewDeck(MagicDeck newDeck) {
-        refDeck = newDeck == null ? new MagicDeck() : newDeck;
-        editDeck = new MagicDeck(refDeck);
-    }
-
     @Override
     protected boolean isCardDataRequired() {
         return true;
@@ -86,7 +87,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private void initUI() {
-        contentPanel = new ContentPanel(refDeck, this);
+        contentPanel = new ContentPanel(this);
         contentPanel.setIsStandalone(isStandaloneMode());
         setDeck(refDeck);
         setMainContent(contentPanel);
@@ -157,8 +158,13 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private void doUseDeckAction() {
-        if (contentPanel.validateDeck(true) && contentPanel.applyDeckUpdates()) {
-            ScreenController.closeActiveScreen(false);
+        if (contentPanel.validateDeck(true)) {
+            if (!editDeck.equals(refDeck)) {
+                editDeck.setUnsavedStatus();
+            }
+            if (deckClient.setDeck(editDeck)) {
+                ScreenController.closeActiveScreen(false);
+            }
         }
     }
 
@@ -250,13 +256,27 @@ public class DeckEditorScreen extends HeaderFooterScreen
         }
     }
 
+    private boolean isReadyToClose() {
+        if (!editDeck.equals(refDeck)) {
+            int response = JOptionPane.showConfirmDialog(
+                ScreenController.getFrame(),
+                MText.get(_S21),
+                MText.get(_S22),
+                JOptionPane.YES_NO_OPTION
+            );
+            return response == JOptionPane.YES_OPTION;
+        }
+        return true;
+    }
+
     @Override
     public boolean isScreenReadyToClose(final Object nextScreen) {
         if (super.isScreenReadyToClose(nextScreen)) {
             if (contentPanel == null) {
                 return true;
-            } else if (!contentPanel.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
-                ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
+            }
+            if (isStandaloneMode() && !isReadyToClose()) {
+                return false;
             }
             MagicSetDefinitions.clearLoadedSets();
             MagicLogs.clearLoadedLogs();
@@ -267,14 +287,27 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     @Override
     public void setDeck(final MagicDeck deck) {
-        contentPanel.setDeck(deck);
-        deckStatusPanel.setDeck(deck, false);
+        setNewDeck(deck);
+        contentPanel.doRefreshView();
+        deckStatusPanel.setDeck(editDeck, false);
     }
 
     @Override
-    public void setDeck(MagicDeck deck, Path deckPath) {
-        setDeck(deck);
+    public boolean setDeck(MagicDeck newDeck, Path deckPath) {
+        if (!editDeck.equals(refDeck)) {
+            int response = JOptionPane.showConfirmDialog(
+                ScreenController.getFrame(),
+                MText.get(_S21),
+                MText.get(_S22),
+                JOptionPane.YES_NO_OPTION
+            );
+            if (response == JOptionPane.NO_OPTION) {
+                return false;
+            }
+        }
+        setDeck(newDeck);
         setMostRecentDeck(deckPath.toString());
+        return true;
     }
 
     @Override

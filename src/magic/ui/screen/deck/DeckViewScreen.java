@@ -5,12 +5,12 @@ import magic.data.DeckType;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.ScreenController;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
-import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen extends HeaderFooterScreen
@@ -71,8 +71,9 @@ public class DeckViewScreen extends HeaderFooterScreen
     }
 
     @Override
-    public void setDeck(MagicDeck deck, Path deckPath) {
+    public boolean setDeck(MagicDeck deck, Path deckPath) {
         setDeck(deck);
+        return true;
     }
 
     @Override

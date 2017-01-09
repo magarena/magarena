@@ -7,9 +7,9 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.translate.MText;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.translate.MText;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -37,13 +37,13 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
     private final JTable deckTable;
     private final IDeckEditorListener listener;
 
-    MainViewsPanel(final MagicDeck deck, final IDeckEditorListener aListener) {
+    MainViewsPanel(IDeckEditorListener aListener) {
 
         this.listener = aListener;
 
         deckActionPanel = new DeckActionPanel(getPlusButtonAction(), getMinusButtonAction());
 
-        deckPanel = new DeckPanel(deck, this, deckActionPanel.getQuantityPanel());
+        deckPanel = new DeckPanel(this, deckActionPanel.getQuantityPanel());
         cardPoolPanel = new CardPoolViewPanel(this, deckActionPanel.getQuantityPanel());
         recallPanel = new CardRecallPanel(this, deckActionPanel.getQuantityPanel());
         legalityPanel = new LegalityPanel();
@@ -202,20 +202,13 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
         return activeView.getSelectedCard();
     }
 
-    @Override
-    public void setDeck(final MagicDeck originalDeck) {
-        deckPanel.setDeck(originalDeck);
-        cardPoolPanel.setDeck(deckPanel.getDeck());
-        recallPanel.setDeck(deckPanel.getDeck());
-        legalityPanel.setDeck(deckPanel.getDeck());
+    void doRefreshView() {
+        deckPanel.doRefreshView();
+        legalityPanel.setDeck(DeckEditorScreen.editDeck);
     }
 
     MagicDeck getDeck() {
-        return deckPanel.getDeck();
-    }
-
-    void updateOriginalDeck() {
-        deckPanel.updateOriginalDeck();
+        return DeckEditorScreen.editDeck;
     }
 
     boolean isUpdatingExistingDeck() {
@@ -224,8 +217,6 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     @Override
     public void deckUpdated(MagicDeck deck) {
-        cardPoolPanel.setDeck(deck);
-        recallPanel.setDeck(deck);
         legalityPanel.setDeck(deck);
         listener.deckUpdated(deck);
     }
@@ -238,6 +229,11 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
     @Override
     public void addCardToRecall(MagicCardDefinition card) {
         recallPanel.addCardToRecall(card);
+    }
+
+    @Override
+    public void setDeck(MagicDeck deck) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }

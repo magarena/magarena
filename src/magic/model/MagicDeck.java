@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import magic.data.DeckType;
 import magic.utility.DeckUtils;
 
@@ -36,7 +37,6 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public void setFilename(final String name) {
         this.filename = name.trim();
-        System.out.println("MagicDeck.setFilename : " + filename);
     }
 
     public String getFilename() {
@@ -97,12 +97,10 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public void setDeckFileChecksum(long value) {
         this.deckFileChecksum = value;
-        System.out.println("MagicDeck.setDeckFileChecksum : " + value);
     }
 
     public void setDeckType(DeckType deckType) {
         this.deckType = deckType;
-        System.out.println("MagicDeck.setType : " + deckType.name());
     }
 
     long getDeckFileChecksum() {
@@ -115,5 +113,44 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public boolean isUnsaved() {
         return deckFileChecksum == 0;
+    }
+
+    public void setUnsavedStatus() {
+        deckFileChecksum = 0;
+        if (deckType != DeckType.Random) {
+            deckType = DeckType.Random;
+        }
+    }
+
+    public boolean isSameDeckFile(MagicDeck other) {
+        return this.deckFileChecksum == other.deckFileChecksum;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if (this == obj)
+            return true;
+        if (obj != null && obj instanceof MagicDeck) {
+            final MagicDeck other = (MagicDeck) obj;
+            if (!this.filename.equals(other.filename)) {
+                return false;
+            }
+            if (!this.description.equals(other.description)) {
+                return false;
+            }
+            if (this.deckFileChecksum != other.deckFileChecksum) {
+                return false;
+            }
+            if (this.deckType != other.deckType) {
+                return false;
+            }
+            if (this.size() != other.size()) {
+                return false;
+            }
+            Collections.sort(this, MagicCardDefinition.NAME_COMPARATOR_ASC);
+            Collections.sort(other, MagicCardDefinition.NAME_COMPARATOR_ASC);
+            return super.equals(other);
+        }
+        return false;
     }
 }

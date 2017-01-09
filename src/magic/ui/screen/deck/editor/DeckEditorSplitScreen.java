@@ -211,10 +211,11 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
     }
 
     @Override
-    public void setDeck(MagicDeck deck, Path deckPath) {
+    public boolean setDeck(MagicDeck deck, Path deckPath) {
         screenContent.setDeck(deck);
         setMostRecentDeck(deckPath.toString());
         deckStatusPanel.setDeck(deck, false);
+        return true;
     }
 
     @Override

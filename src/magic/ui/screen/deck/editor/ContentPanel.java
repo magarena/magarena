@@ -24,7 +24,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     private final IDeckEditorListener listener;
     private boolean isStandalone = true;
 
-    ContentPanel(final MagicDeck deck, final IDeckEditorListener aListener) {
+    ContentPanel(IDeckEditorListener aListener) {
 
         MagicSystem.waitForAllCards();
 
@@ -33,7 +33,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
         // lhs
         sideBarPanel = new DeckSideBar();
         // rhs
-        viewsPanel = new MainViewsPanel(deck, this);
+        viewsPanel = new MainViewsPanel(this);
         //
         setLookAndFeel();
         refreshLayout();
@@ -52,30 +52,17 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     void setCard(final MagicCardDefinition card) {
-        final int cardCount = viewsPanel.getDeck().getCardCount(card);
+        final int cardCount = DeckEditorScreen.editDeck.getCardCount(card);
         sideBarPanel.setCard(card);
         sideBarPanel.setCardCount(cardCount);
     }
 
-    @Override
-    public void setDeck(final MagicDeck deck) {
-        viewsPanel.setDeck(deck);
+    void doRefreshView() {
+        viewsPanel.doRefreshView();
     }
 
     MagicDeck getDeck() {
-        return viewsPanel.getDeck();
-    }
-
-    boolean applyDeckUpdates() {
-        boolean updatesApplied = true;
-        if (isUpdatingExistingDeck()) {
-            if (validateDeck(false)) {
-                viewsPanel.updateOriginalDeck();
-            } else {
-                updatesApplied = false;
-            }
-        }
-        return updatesApplied;
+        return DeckEditorScreen.editDeck;
     }
 
     private String getBrokenRules(final MagicDeck deck) {
@@ -87,7 +74,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     boolean validateDeck(final boolean notifyUser) {
-        final String brokenRules = getBrokenRules(viewsPanel.getDeck());
+        final String brokenRules = getBrokenRules(DeckEditorScreen.editDeck);
         if (brokenRules.length() > 0) {
             if (notifyUser) {
                 notifyUser(brokenRules);
@@ -126,6 +113,11 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
 
     @Override
     public void addCardToRecall(MagicCardDefinition card) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setDeck(MagicDeck deck) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

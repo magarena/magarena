@@ -119,6 +119,12 @@ class DuelDecksPanel extends TexturedPanel {
         newDeckButton.setEnabled(isRandomDeck && duel.getGamesPlayed() == 0);
     }
 
+    void setDeck(MagicDeck newDeck) {
+        getSelectedPlayer().setDeck(newDeck);
+        setDeck();
+        updateDecksAfterEdit();
+    }
+
     private static String getDeckNameWithType(MagicDeck deck) {
         return deck.getDeckType() != DeckType.Random
             ? deck.getDeckType().toString() + "  /  " + deck.getName()

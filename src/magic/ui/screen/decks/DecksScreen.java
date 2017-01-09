@@ -3,11 +3,11 @@ package magic.ui.screen.decks;
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.ScreenController;
-import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class DecksScreen extends HeaderFooterScreen {
@@ -53,8 +53,9 @@ public class DecksScreen extends HeaderFooterScreen {
         } else if (screenContent.getDeck().isValid() == false) {
             showInvalidActionMessage(MText.get(_S5));
         } else {
-            deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
-            ScreenController.closeActiveScreen(false);
+            if (deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath())) {
+                ScreenController.closeActiveScreen(false);
+            }
         }
     }
 
@@ -77,7 +78,7 @@ public class DecksScreen extends HeaderFooterScreen {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         }
     }
-    
+
     private void showInvalidActionMessage(final String message) {
         ScreenController.showWarningMessage(message);
     }
