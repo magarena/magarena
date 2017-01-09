@@ -7,6 +7,6 @@ subtype=Sphinx
 cost={4}{W}{U}{U}{B}
 pt=6/6
 ability=Flying
-timing=artifact
-requires_groovy_code
+timing=main
 oracle=Flying\nAt the beginning of your end step, you gain 3 life if Sphinx Sovereign is untapped. Otherwise, each opponent loses 3 life.
+requires_groovy_code

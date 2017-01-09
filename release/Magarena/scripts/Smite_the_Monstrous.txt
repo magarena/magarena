@@ -6,6 +6,6 @@ removal=3
 rarity=C
 type=Instant
 cost={3}{W}
-timing=removal
 effect=Destroy target creature with power 4 or greater.
+timing=removal
 oracle=Destroy target creature with power 4 or greater.

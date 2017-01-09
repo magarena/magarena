@@ -1,5 +1,6 @@
 name=Shipwreck Singer
-image=http://magiccards.info/scans/en/ths/203.jpg
+image=http://magiccards.info/scans/en/cn2/206.jpg
+image_updated=2017-01-08
 value=3.516
 rarity=U
 type=Creature

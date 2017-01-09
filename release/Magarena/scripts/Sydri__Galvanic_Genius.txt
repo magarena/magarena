@@ -1,5 +1,6 @@
 name=Sydri, Galvanic Genius
-image=http://magiccards.info/scans/en/c13/220.jpg
+image=http://magiccards.info/scans/en/c16/224.jpg
+image_updated=2016-01-09
 value=3.830
 rarity=M
 type=Legendary,Creature

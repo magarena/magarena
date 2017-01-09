@@ -1,5 +1,6 @@
 name=Sigil of Sleep
-image=http://magiccards.info/scans/en/ddi/25.jpg
+image=http://magiccards.info/scans/en/ud/46.jpg
+image_updated=2016-01-09
 value=4.274
 rarity=C
 type=Enchantment

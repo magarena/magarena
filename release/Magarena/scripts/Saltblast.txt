@@ -1,5 +1,6 @@
 name=Saltblast
-image=http://magiccards.info/scans/en/ddf/30.jpg
+image=http://magiccards.info/scans/en/pc/15.jpg
+image_updated=2017-01-07
 value=2.978
 rarity=U
 type=Sorcery

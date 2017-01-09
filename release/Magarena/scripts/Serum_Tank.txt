@@ -1,5 +1,6 @@
 name=Serum Tank
-image=http://magiccards.info/scans/en/pch/125.jpg
+image=http://magiccards.info/scans/en/mi/240.jpg
+image_updated=2017-01-07
 value=3.269
 rarity=U
 type=Artifact

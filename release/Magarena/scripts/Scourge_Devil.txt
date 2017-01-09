@@ -1,5 +1,6 @@
 name=Scourge Devil
-image=http://magiccards.info/scans/en/ddn/18.jpg
+image=http://magiccards.info/scans/en/ala/113.jpg
+image_updated=2017-01-07
 value=2.650
 rarity=U
 type=Creature

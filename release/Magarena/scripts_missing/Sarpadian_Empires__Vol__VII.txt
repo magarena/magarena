@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={3}
 ability=As SN enters the battlefield, choose white Citizen, blue Camarid, black Thrull, red Goblin, or green Saproling.;\
-        {3}, {T}: Put a 1/1 creature token of the chosen color and type onto the battlefield.
+        {3}, {T}: Create a 1/1 creature token of the chosen color and type.
 timing=artifact
-oracle=As Sarpadian Empires, Vol. VII enters the battlefield, choose white Citizen, blue Camarid, black Thrull, red Goblin, or green Saproling.\n{3}, {T}: Put a 1/1 creature token of the chosen color and type onto the battlefield.
+oracle=As Sarpadian Empires, Vol. VII enters the battlefield, choose white Citizen, blue Camarid, black Thrull, red Goblin, or green Saproling.\n{3}, {T}: Create a 1/1 creature token of the chosen color and type.
 status=needs groovy

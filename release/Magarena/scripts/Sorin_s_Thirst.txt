@@ -1,5 +1,6 @@
 name=Sorin's Thirst
-image=http://magiccards.info/scans/en/ddk/21.jpg
+image=http://magiccards.info/scans/en/m12/110.jpg
+image_updated=2017-01-08
 value=3.024
 removal=2
 rarity=C

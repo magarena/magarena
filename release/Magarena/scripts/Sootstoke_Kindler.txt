@@ -8,5 +8,5 @@ cost={1}{B/R}
 pt=1/1
 ability=Haste;\
         {T}: Target black or red creature gains haste until end of turn.
-timing=main
+timing=fmain
 oracle=Haste\n{T}: Target black or red creature gains haste until end of turn.

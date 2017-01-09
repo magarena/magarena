@@ -9,6 +9,6 @@ ability=Flash;\
         Enchant creature;\
         Enchanted creature gets +1/+1.;\
         {G}: Regenerate enchanted creature.
-enchant=pump,pos creature
 timing=pumpFlash
+enchant=pump,pos creature
 oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+1.\n{G}: Regenerate enchanted creature.

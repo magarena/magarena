@@ -6,5 +6,5 @@ type=Artifact
 cost={1}
 ability=SN enters the battlefield with six charge counters on it.;\
         {1}, {T}, Remove a charge counter from SN: Put a charge counter on target artifact.
-timing=main
+timing=artifact
 oracle=Surge Node enters the battlefield with six charge counters on it.\n{1}, {T}, Remove a charge counter from Surge Node: Put a charge counter on target artifact.

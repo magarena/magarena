@@ -9,6 +9,6 @@ ability=Enchant creature;\
         When SN enters the battlefield, you gain 3 life.;\
         Enchanted creature has flying.;\
         {W}: Put SN on top of its owner's library.
-enchant=pump,pos creature
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nWhen Soaring Hope enters the battlefield, you gain 3 life.\nEnchanted creature has flying.\n{W}: Put Soaring Hope on top of its owner's library.

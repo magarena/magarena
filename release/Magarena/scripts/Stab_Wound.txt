@@ -1,12 +1,13 @@
 name=Stab Wound
 image=http://magiccards.info/scans/en/m15/116.jpg
 value=3.600
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Enchanted creature gets -2/-2.
+ability=Enchant creature;\
+        Enchanted creature gets -2/-2.
 timing=aura
 enchant=weaken -2/-2,neg creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets -2/-2.\nAt the beginning of the upkeep of enchanted creature's controller, that player loses 2 life.
+requires_groovy_code

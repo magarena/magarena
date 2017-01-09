@@ -1,5 +1,6 @@
 name=Sentinel
-image=http://magiccards.info/scans/en/ch/87.jpg
+image=http://magiccards.info/scans/en/lg/239.jpg
+image_updated=2016-01-09
 value=4.206
 rarity=R
 type=Artifact,Creature

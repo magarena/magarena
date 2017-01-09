@@ -1,7 +1,7 @@
 name=Shu Elite Companions
 image=http://magiccards.info/scans/en/p3k/21.jpg
 value=3.217
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

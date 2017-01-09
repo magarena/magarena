@@ -1,7 +1,7 @@
 name=Shu Soldier-Farmers
 image=http://magiccards.info/scans/en/p3k/27.jpg
 value=2.042
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

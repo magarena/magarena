@@ -1,5 +1,6 @@
 name=Sustainer of the Realm
-image=http://magiccards.info/scans/en/dvd/8.jpg
+image=http://magiccards.info/scans/en/7e/52.jpg
+image_updated=2016-01-09
 value=3.367
 rarity=U
 type=Creature

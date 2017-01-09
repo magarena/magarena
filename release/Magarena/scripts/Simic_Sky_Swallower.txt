@@ -1,5 +1,6 @@
 name=Simic Sky Swallower
-image=http://magiccards.info/scans/en/ddo/56.jpg
+image=http://magiccards.info/scans/en/cmd/226.jpg
+image_updated=2017-01-08
 value=4.426
 rarity=R
 type=Creature

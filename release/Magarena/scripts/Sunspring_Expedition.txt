@@ -4,7 +4,7 @@ value=3.309
 rarity=C
 type=Enchantment
 cost={W}
-timing=enchantment
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
         Remove three quest counters from SN, Sacrifice SN: You gain 8 life.
+timing=enchantment
 oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Sunspring Expedition.\nRemove three quest counters from Sunspring Expedition and sacrifice it: You gain 8 life.

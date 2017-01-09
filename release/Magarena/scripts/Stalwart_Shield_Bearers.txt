@@ -8,5 +8,5 @@ cost={1}{W}
 pt=0/3
 ability=Defender;\
         Other creatures you control with defender get +0/+2.
-timing=main
+timing=smain
 oracle=Defender\nOther creatures you control with defender get +0/+2.

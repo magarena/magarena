@@ -1,11 +1,13 @@
 name=Serra's Boon
-image=http://magiccards.info/scans/en/dvd/18.jpg
+image=http://magiccards.info/scans/en/pc/17.jpg
+image_updated=2017-01-07
 value=2.485
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-enchant=pump,creature
+ability=Enchant creature
 timing=aura
-requires_groovy_code
+enchant=pump,creature
 oracle=Enchant creature\nEnchanted creature gets +1/+2 as long as it's white. Otherwise, it gets -2/-1.
+requires_groovy_code

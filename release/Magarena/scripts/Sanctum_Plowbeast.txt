@@ -7,6 +7,6 @@ subtype=Beast
 cost={4}{W}{U}
 pt=3/6
 ability=Defender;\
-        Plainscycling {2};Islandcycling {2}
-timing=artifact
+        Plainscycling {2};islandcycling {2}
+timing=smain
 oracle=Defender\nPlainscycling {2}, islandcycling {2}

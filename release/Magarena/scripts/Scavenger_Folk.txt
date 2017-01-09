@@ -1,7 +1,7 @@
 name=Scavenger Folk
 image=http://magiccards.info/scans/en/7e/267.jpg
 value=3.657
-rarity=C
+rarity=U
 type=Creature
 subtype=Human
 cost={G}

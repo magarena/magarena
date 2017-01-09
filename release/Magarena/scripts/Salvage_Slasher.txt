@@ -7,5 +7,5 @@ subtype=Human,Rogue
 cost={1}{B}
 pt=1/1
 ability=SN gets +1/+0 for each artifact card in your graveyard.
-timing=artifact
+timing=main
 oracle=Salvage Slasher gets +1/+0 for each artifact card in your graveyard.

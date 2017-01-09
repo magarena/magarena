@@ -4,6 +4,6 @@ value=4.179
 rarity=R
 type=Enchantment
 cost={2}{W}
-timing=main
-requires_groovy_code
+timing=enchantment
 oracle=As long as you control a permanent of each color, prevent all damage that would be dealt to you.
+requires_groovy_code

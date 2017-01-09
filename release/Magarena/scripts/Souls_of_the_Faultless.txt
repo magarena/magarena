@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={W}{B}{B}
 pt=0/4
-ability=defender
+ability=Defender
 timing=smain
-requires_groovy_code
 oracle=Defender\nWhenever Souls of the Faultless is dealt combat damage, you gain that much life and attacking player loses that much life.
+requires_groovy_code

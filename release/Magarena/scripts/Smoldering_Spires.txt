@@ -7,5 +7,5 @@ mana=r3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature can't block this turn.;\
         {T}: Add {R} to your mana pool.
-timing=fmain
+timing=tapland
 oracle=Smoldering Spires enters the battlefield tapped.\nWhen Smoldering Spires enters the battlefield, target creature can't block this turn.\n{T}: Add {R} to your mana pool.

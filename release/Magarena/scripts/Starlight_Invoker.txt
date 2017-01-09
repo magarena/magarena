@@ -1,7 +1,7 @@
 name=Starlight Invoker
 image=http://magiccards.info/scans/en/10e/47.jpg
 value=2.700
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Cleric,Mutant
 cost={1}{W}

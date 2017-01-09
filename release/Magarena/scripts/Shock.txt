@@ -1,5 +1,6 @@
 name=Shock
-image=http://magiccards.info/scans/en/ddn/21.jpg
+image=http://magiccards.info/scans/en/m12/154.jpg
+image_updated=2017-01-08
 value=2.000
 rarity=C
 type=Instant

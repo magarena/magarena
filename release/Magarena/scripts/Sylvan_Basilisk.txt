@@ -1,7 +1,7 @@
 name=Sylvan Basilisk
 image=http://magiccards.info/scans/en/10e/301.jpg
 value=4.173
-rarity=R
+rarity=U
 type=Creature
 subtype=Basilisk
 cost={3}{G}{G}

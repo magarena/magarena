@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, put a 2/2 white Reflection creature token onto the battlefield.;\
+ability=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, create a 2/2 white Reflection creature token.;\
         {0}: Destroy target Reflection.
 timing=enchantment
-oracle=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, put a 2/2 white Reflection creature token onto the battlefield.\n{0}: Destroy target Reflection.
+oracle=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, create a 2/2 white Reflection creature token.\n{0}: Destroy target Reflection.
 status=needs groovy

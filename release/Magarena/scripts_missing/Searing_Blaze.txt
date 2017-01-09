@@ -1,5 +1,6 @@
 name=Searing Blaze
-image=http://magiccards.info/scans/en/ddi/67.jpg
+image=http://magiccards.info/scans/en/wwk/90.jpg
+image_updated=2016-01-09
 value=4.022
 rarity=C
 type=Instant

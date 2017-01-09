@@ -1,5 +1,6 @@
 name=Spire Golem
-image=http://magiccards.info/scans/en/jvc/16.jpg
+image=http://magiccards.info/scans/en/ds/145.jpg
+image_updated=2016-01-09
 value=2.500
 rarity=C
 type=Artifact,Creature

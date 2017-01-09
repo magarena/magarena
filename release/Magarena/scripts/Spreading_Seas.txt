@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=When SN enters the battlefield, draw a card.
-timing=main
+ability=Enchant land;\
+        When SN enters the battlefield, draw a card.
+timing=aura
 enchant=default,land
-requires_groovy_code=Sea's Claim
 oracle=Enchant land\nWhen Spreading Seas enters the battlefield, draw a card.\nEnchanted land is an Island.
+requires_groovy_code=Sea's Claim

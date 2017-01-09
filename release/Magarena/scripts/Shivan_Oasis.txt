@@ -1,5 +1,6 @@
 name=Shivan Oasis
-image=http://magiccards.info/scans/en/pvc/65.jpg
+image=http://magiccards.info/scans/en/8e/326.jpg
+image_updated=2017-01-08
 value=3.350
 rarity=U
 type=Land

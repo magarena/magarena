@@ -7,5 +7,5 @@ subtype=Insect
 cost={3}{B}
 pt=3/3
 ability=SN can't block.
-timing=fmain
+timing=main
 oracle=Scavenging Scarab can't block.

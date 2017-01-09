@@ -8,5 +8,5 @@ cost={2}
 ability=Equipped creature has first strike.;\
         {R}{R}: Attach SN to target creature you control.;\
         Equip {1}
-timing=artifact
+timing=equipment
 oracle=Equipped creature has first strike.\n{R}{R}: Attach Sparring Collar to target creature you control.\nEquip {1}

@@ -7,5 +7,5 @@ subtype=Equipment
 cost={1}
 ability=Equipped creature gets +1/+0.;\
         Equip {0}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +1/+0.\nEquip {0}

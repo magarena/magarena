@@ -1,5 +1,6 @@
 name=Suntouched Myr
-image=http://magiccards.info/scans/en/pch/128.jpg
+image=http://magiccards.info/scans/en/5dn/160.jpg
+image_updated=2016-01-09
 value=2.320
 rarity=C
 type=Artifact,Creature

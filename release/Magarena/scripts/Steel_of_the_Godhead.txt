@@ -1,5 +1,6 @@
 name=Steel of the Godhead
-image=http://magiccards.info/scans/en/ddi/30.jpg
+image=http://magiccards.info/scans/en/shm/150.jpg
+image_updated=2016-01-09
 value=3.526
 rarity=C
 type=Enchantment
@@ -8,6 +9,6 @@ cost={2}{W/U}
 ability=Enchant creature;\
         As long as enchanted creature is white, enchanted creature gets +1/+1 and has lifelink.;\
         As long as enchanted creature is blue, enchanted creature gets +1/+1 and can't be blocked.
-timing=enchantment
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nAs long as enchanted creature is white, it gets +1/+1 and has lifelink.\nAs long as enchanted creature is blue, it gets +1/+1 and can't be blocked.

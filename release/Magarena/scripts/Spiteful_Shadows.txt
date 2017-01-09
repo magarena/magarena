@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
+ability=Enchant creature
 timing=aura
 enchant=can't block,neg creature
-requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature is dealt damage, it deals that much damage to its controller.
+requires_groovy_code

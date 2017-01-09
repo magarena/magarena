@@ -1,7 +1,7 @@
 name=Soul Kiss
 image=http://magiccards.info/scans/en/ia/50.jpg
 value=2.536
-rarity=U
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}

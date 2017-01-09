@@ -1,5 +1,6 @@
 name=Serrated Arrows
-image=http://magiccards.info/scans/en/gvl/20.jpg
+image=http://magiccards.info/scans/en/tsts/114.jpg
+image_updated=2017-01-07
 value=4.173
 removal=2
 rarity=C

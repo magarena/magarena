@@ -1,11 +1,11 @@
 name=Shu General
 image=http://magiccards.info/scans/en/p3k/25.jpg
 value=3.724
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=2/2
-ability=Vigilance, horsemanship
+ability=Vigilance; horsemanship
 timing=main
 oracle=Vigilance, horsemanship

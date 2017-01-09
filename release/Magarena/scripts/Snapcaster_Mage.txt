@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=2/1
-ability=flash
+ability=Flash
 timing=pumpFlash
-requires_groovy_code
 oracle=Flash\nWhen Snapcaster Mage enters the battlefield, target instant or sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.
+requires_groovy_code

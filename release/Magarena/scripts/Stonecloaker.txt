@@ -1,5 +1,6 @@
 name=Stonecloaker
-image=http://magiccards.info/scans/en/ddn/53.jpg
+image=http://magiccards.info/scans/en/pc/19.jpg
+image_updated=2016-01-09
 value=3.500
 rarity=U
 type=Creature

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
+ability=Enchant nonland permanent
 timing=aura
 enchant=sacrifice,neg nonland permanent
-requires_groovy_code
 oracle=Enchant nonland permanent\nAt the beginning of the upkeep of enchanted permanent's controller, that player sacrifices it unless he or she pays {X}, where X is its converted mana cost.
+requires_groovy_code

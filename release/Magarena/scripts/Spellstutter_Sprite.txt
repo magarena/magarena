@@ -8,6 +8,6 @@ cost={1}{U}
 pt=1/1
 ability=Flash;\
         Flying
-timing=counter
-requires_groovy_code
+timing=counterflash
 oracle=Flash\nFlying\nWhen Spellstutter Sprite enters the battlefield, counter target spell with converted mana cost X or less, where X is the number of Faeries you control.
+requires_groovy_code

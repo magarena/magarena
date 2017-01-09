@@ -1,5 +1,6 @@
 name=Surrakar Banisher
-image=http://magiccards.info/scans/en/ddo/43.jpg
+image=http://magiccards.info/scans/en/wwk/39.jpg
+image_updated=2016-01-09
 value=2.087
 rarity=C
 type=Creature

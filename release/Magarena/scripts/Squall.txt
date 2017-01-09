@@ -1,7 +1,7 @@
 name=Squall
 image=http://magiccards.info/scans/en/7e/271.jpg
 value=2.957
-rarity=U
+rarity=C
 type=Sorcery
 cost={2}{G}
 ability=Cast SN with AI only if an opponent controls a creature with flying.

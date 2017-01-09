@@ -25,7 +25,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 choice,
                 new MagicBecomeTargetPicker(0,2,false),
                 this,
-                "Target creature\$ other than SN becomes 0/2 until end of turn."
+                "Target creature\$ other than SN has base power and toughness 0/2 until end of turn."
             );
         }
 

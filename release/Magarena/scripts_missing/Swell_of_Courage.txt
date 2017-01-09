@@ -1,10 +1,12 @@
 name=Swell of Courage
-image=http://magiccards.info/scans/en/ddf/31.jpg
+image=http://magiccards.info/scans/en/mt/26.jpg
+image_updated=2016-01-09
 value=2.914
 rarity=U
 type=Instant
 cost={3}{W}{W}
-effect=Creatures you control get +2/+2 until end of turn.~Reinforce X—{X}{W}{W}
+ability=Reinforce X—{X}{W}{W}
+effect=Creatures you control get +2/+2 until end of turn.
 timing=removal
 oracle=Creatures you control get +2/+2 until end of turn.\nReinforce X—{X}{W}{W}
 status=needs groovy

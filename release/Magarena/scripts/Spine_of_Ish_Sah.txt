@@ -4,7 +4,7 @@ value=3.667
 rarity=R
 type=Artifact
 cost={7}
-ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.;\
-        When SN enters the battlefield, destroy target permanent.
+ability=When SN enters the battlefield, destroy target permanent.;\
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=artifact
 oracle=When Spine of Ish Sah enters the battlefield, destroy target permanent.\nWhen Spine of Ish Sah is put into a graveyard from the battlefield, return Spine of Ish Sah to its owner's hand.

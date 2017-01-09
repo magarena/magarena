@@ -1,5 +1,6 @@
 name=Sludge Strider
-image=http://magiccards.info/scans/en/pch/95.jpg
+image=http://magiccards.info/scans/en/cfx/126.jpg
+image_updated=2017-01-08
 value=3.011
 rarity=U
 type=Artifact,Creature

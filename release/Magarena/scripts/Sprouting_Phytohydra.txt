@@ -8,5 +8,5 @@ cost={4}{G}
 pt=0/2
 ability=Defender;\
         Whenever SN is dealt damage, you may create a token that's a copy of SN.
-timing=main
+timing=smain
 oracle=Defender\nWhenever Sprouting Phytohydra is dealt damage, you may create a token that's a copy of Sprouting Phytohydra.

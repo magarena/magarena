@@ -1,6 +1,6 @@
 name=Severed Legion
-image=http://magiccards.info/scans/en/dpa/33.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/177.jpg
+image_updated=2017-01-07
 value=3.596
 rarity=C
 type=Creature

@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature gets +0/+1 and has flying.
-enchant=pump,pos creature
+ability=Enchant creature;\
+        Enchanted creature gets +0/+1 and has flying.
 timing=aura
-requires_groovy_code=Lightning Reflexes
+enchant=pump,pos creature
 oracle=You may cast Soar as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.\nEnchant creature\nEnchanted creature gets +0/+1 and has flying.
+requires_groovy_code=Lightning Reflexes

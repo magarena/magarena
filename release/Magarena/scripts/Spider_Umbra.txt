@@ -1,5 +1,6 @@
 name=Spider Umbra
-image=http://magiccards.info/scans/en/arc/70.jpg
+image=http://magiccards.info/scans/en/roe/208.jpg
+image_updated=2016-01-09
 value=3.791
 rarity=C
 type=Enchantment

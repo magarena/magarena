@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-timing=main
+ability=Enchant land
+timing=aura
 enchant=default,land
-requires_groovy_code
 oracle=Enchant land\nEnchanted land is an Island.
+requires_groovy_code

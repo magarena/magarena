@@ -1,5 +1,6 @@
 name=Skirk Shaman
-image=http://magiccards.info/scans/en/evg/52.jpg
+image=http://magiccards.info/scans/en/pc/123.jpg
+image_updated=2017-01-08
 value=2.500
 rarity=C
 type=Creature

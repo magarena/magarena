@@ -1,7 +1,7 @@
 name=Sword of Fire and Ice
 image=http://magiccards.info/scans/en/mma/216.jpg
 value=4.563
-rarity=R
+rarity=M
 type=Artifact
 subtype=Equipment
 cost={3}

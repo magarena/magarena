@@ -1,7 +1,7 @@
 name=Sir Shandlar of Eberyn
 image=http://magiccards.info/scans/en/lg/297.jpg
 value=2.013
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Knight
 cost={4}{G}{W}

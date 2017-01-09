@@ -1,7 +1,7 @@
 name=Shyft
 image=http://magiccards.info/scans/en/ia/96.jpg
 value=2.661
-rarity=C
+rarity=R
 type=Creature
 subtype=Shapeshifter
 cost={4}{U}

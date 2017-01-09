@@ -1,5 +1,6 @@
 name=Swan Song
-image=http://magiccards.info/scans/en/ths/65.jpg
+image=http://magiccards.info/scans/en/c16/98.jpg
+image_updated=2016-01-09
 value=4.079
 rarity=R
 type=Instant

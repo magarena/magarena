@@ -1,13 +1,14 @@
 name=Scion of Darkness
-image=http://magiccards.info/scans/en/arc/23.jpg
+image=http://magiccards.info/scans/en/le/79.jpg
+image_updated=2017-01-07
 value=4.090
 rarity=R
 type=Creature
 subtype=Avatar
 cost={5}{B}{B}{B}
 pt=6/6
-timing=main
 ability=Trample;\
         Cycling {3}
-requires_groovy_code
+timing=main
 oracle=Trample\nWhenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.\nCycling {3}
+requires_groovy_code

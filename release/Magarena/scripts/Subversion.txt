@@ -1,5 +1,6 @@
 name=Subversion
-image=http://magiccards.info/scans/en/br/82.jpg
+image=http://magiccards.info/scans/en/ul/68.jpg
+image_updated=2016-01-09
 value=4.045
 rarity=R
 type=Enchantment

@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={4}
 ability=When SN enters the battlefield, you may exile a creature card from your hand.;\
-        {X}, {T}: Put a token that's a copy of the exiled card onto the battlefield. X is the converted mana cost of that card.
+        {X}, {T}: Create a token that's a copy of the exiled card. X is the converted mana cost of that card.
 timing=artifact
-oracle=Imprint — When Soul Foundry enters the battlefield, you may exile a creature card from your hand.\n{X}, {T}: Put a token that's a copy of the exiled card onto the battlefield. X is the converted mana cost of that card.
+oracle=Imprint — When Soul Foundry enters the battlefield, you may exile a creature card from your hand.\n{X}, {T}: Create a token that's a copy of the exiled card. X is the converted mana cost of that card.
 status=needs groovy

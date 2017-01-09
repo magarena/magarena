@@ -1,7 +1,7 @@
 name=Soldevi Digger
 image=http://magiccards.info/scans/en/ai/174.jpg
 value=3.339
-rarity=U
+rarity=R
 type=Artifact
 cost={2}
 timing=artifact

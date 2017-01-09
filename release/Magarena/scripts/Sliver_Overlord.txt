@@ -1,7 +1,7 @@
 name=Sliver Overlord
 image=http://magiccards.info/scans/en/sc/139.jpg
 value=4.232
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Sliver,Mutant
 cost={W}{U}{B}{R}{G}

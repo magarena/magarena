@@ -9,5 +9,5 @@ cost={7}{G}
 pt=8/8
 ability=Trample, indestructible;\
         Whenever another creature you control attacks, RN gains trample and indestructible until end of turn.
-timing=main
+timing=fmain
 oracle=Trample, indestructible\nWhenever another creature you control attacks, it gains trample and indestructible until end of turn.

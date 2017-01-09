@@ -8,5 +8,5 @@ cost={4}{R}{R}
 pt=6/4
 ability=Haste;\
         Echo—Sacrifice two lands.
-timing=main
+timing=fmain
 oracle=Haste\nEcho—Sacrifice two lands.

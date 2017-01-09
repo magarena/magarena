@@ -8,5 +8,5 @@ cost={X}
 pt=0/0
 ability=Defender;\
         SN enters the battlefield with X +1/+1 counters on it.
-timing=main
+timing=smain
 oracle=Defender\nShifting Wall enters the battlefield with X +1/+1 counters on it.

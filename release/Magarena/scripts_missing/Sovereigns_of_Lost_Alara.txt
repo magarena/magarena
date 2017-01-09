@@ -8,6 +8,6 @@ cost={4}{W}{U}
 pt=4/5
 ability=Exalted;\
         Whenever a creature you control attacks alone, you may search your library for an Aura card that could enchant that creature, put it onto the battlefield attached to that creature, then shuffle your library.
-timing=main
+timing=fmain
 oracle=Exalted\nWhenever a creature you control attacks alone, you may search your library for an Aura card that could enchant that creature, put it onto the battlefield attached to that creature, then shuffle your library.
 status=not supported: legal-aura

@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={3}{R}
 pt=2/4
-ability=When SN enters the battlefield, if you control two or more Gates, gain control of target creature an opponent controls until end of turn.\
-        ~Untap *that creature*.~*It* gains haste until end of turn.
-timing=main
+ability=When SN enters the battlefield, if you control two or more Gates, gain control of target creature an opponent controls until end of turn.~Untap *that creature*.~*It* gains haste until end of turn.
+timing=fmain
 oracle=When Smelt-Ward Gatekeepers enters the battlefield, if you control two or more Gates, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.

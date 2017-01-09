@@ -7,5 +7,5 @@ subtype=Human,Wizard
 cost={1}{U}{U}
 pt=1/1
 timing=main
+oracle={T}: Target creature other than Serendib Sorcerer has base power and toughness 0/2 until end of turn.
 requires_groovy_code=Sorceress Queen
-oracle={T}: Target creature other than Serendib Sorcerer becomes 0/2 until end of turn.

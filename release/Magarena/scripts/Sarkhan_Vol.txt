@@ -5,9 +5,9 @@ rarity=M
 type=Planeswalker
 subtype=Sarkhan
 cost={2}{R}{G}
+loyalty=4
 ability=+1: Creatures you control get +1/+1 and gain haste until end of turn.;\
         −2: Gain control of target creature until end of turn.~Untap *that creature*.~*It* gains haste until end of turn.;\
         −6: Create five 4/4 red Dragon creature tokens with flying.
-loyalty=4
 timing=main
 oracle=+1: Creatures you control get +1/+1 and gain haste until end of turn.\n−2: Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.\n−6: Create five 4/4 red Dragon creature tokens with flying.

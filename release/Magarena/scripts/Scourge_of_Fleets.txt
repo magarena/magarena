@@ -1,5 +1,6 @@
 name=Scourge of Fleets
-image=http://magiccards.info/scans/en/ddo/41.jpg
+image=http://magiccards.info/scans/en/jou/51.jpg
+image_updated=2017-01-07
 value=2.500
 rarity=R
 type=Creature

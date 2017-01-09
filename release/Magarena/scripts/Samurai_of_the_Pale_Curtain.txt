@@ -6,7 +6,7 @@ type=Creature
 subtype=Fox,Samurai
 cost={W}{W}
 pt=2/2
-ability=bushido 1
+ability=Bushido 1
 timing=main
-requires_groovy_code
 oracle=Bushido 1\nIf a permanent would be put into a graveyard, exile it instead.
+requires_groovy_code

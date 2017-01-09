@@ -1,5 +1,6 @@
 name=Stormfront Riders
-image=http://magiccards.info/scans/en/ddf/17.jpg
+image=http://magiccards.info/scans/en/pc/20.jpg
+image_updated=2016-01-09
 value=3.551
 rarity=U
 type=Creature
@@ -8,6 +9,6 @@ cost={4}{W}
 pt=4/3
 ability=Flying;\
         When SN enters the battlefield, return two creatures you control to their owner's hand.;\
-        Whenever SN or another creature is returned to your hand from the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+        Whenever SN or another creature is returned to your hand from the battlefield, create a 1/1 white Soldier creature token.
 timing=main
-oracle=Flying\nWhen Stormfront Riders enters the battlefield, return two creatures you control to their owner's hand.\nWhenever Stormfront Riders or another creature is returned to your hand from the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=Flying\nWhen Stormfront Riders enters the battlefield, return two creatures you control to their owner's hand.\nWhenever Stormfront Riders or another creature is returned to your hand from the battlefield, create a 1/1 white Soldier creature token.

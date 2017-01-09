@@ -7,8 +7,8 @@ subtype=Sorin
 cost={2}{W}{B}
 loyalty=4
 ability=+1: Until your next turn, creatures you control get +1/+0 and gain lifelink.;\
-        −2: Put a 2/2 black Vampire creature token with flying onto the battlefield.;\
+        −2: Create a 2/2 black Vampire creature token with flying.;\
         −6: You get an emblem with "At the beginning of each opponent's upkeep, that player sacrifices a creature."
 timing=main
-oracle=+1: Until your next turn, creatures you control get +1/+0 and gain lifelink.\n−2: Put a 2/2 black Vampire creature token with flying onto the battlefield.\n−6: You get an emblem with "At the beginning of each opponent's upkeep, that player sacrifices a creature."
+oracle=+1: Until your next turn, creatures you control get +1/+0 and gain lifelink.\n−2: Create a 2/2 black Vampire creature token with flying.\n−6: You get an emblem with "At the beginning of each opponent's upkeep, that player sacrifices a creature."
 status=needs groovy

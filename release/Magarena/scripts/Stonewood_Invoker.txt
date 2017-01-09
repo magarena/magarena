@@ -1,5 +1,6 @@
 name=Stonewood Invoker
-image=http://magiccards.info/scans/en/evg/11.jpg
+image=http://magiccards.info/scans/en/le/139.jpg
+image_updated=2016-01-09
 value=3.188
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Songstitcher
-image=http://magiccards.info/scans/en/br/75.jpg
+image=http://magiccards.info/scans/en/us/52.jpg
+image_updated=2017-01-08
 value=3.278
 rarity=U
 type=Creature

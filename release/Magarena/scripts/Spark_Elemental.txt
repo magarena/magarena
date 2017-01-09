@@ -1,7 +1,7 @@
 name=Spark Elemental
 image=http://magiccards.info/scans/en/10e/237.jpg
 value=3.141
-rarity=C
+rarity=U
 type=Creature
 subtype=Elemental
 cost={R}

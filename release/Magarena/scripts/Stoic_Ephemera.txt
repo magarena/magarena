@@ -9,5 +9,5 @@ pt=5/5
 ability=Defender;\
         Flying;\
         When SN blocks, sacrifice SN at end of combat.
-timing=main
+timing=smain
 oracle=Defender\nFlying\nWhen Stoic Ephemera blocks, sacrifice it at end of combat.

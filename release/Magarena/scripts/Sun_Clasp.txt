@@ -1,5 +1,6 @@
 name=Sun Clasp
-image=http://magiccards.info/scans/en/br/83.jpg
+image=http://magiccards.info/scans/en/vi/121.jpg
+image_updated=2016-01-09
 value=2.870
 rarity=C
 type=Enchantment
@@ -8,6 +9,6 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +1/+3.;\
         {W}: Return enchanted creature to its owner's hand.
-enchant=pump,creature
 timing=aura
+enchant=pump,creature
 oracle=Enchant creature\nEnchanted creature gets +1/+3.\n{W}: Return enchanted creature to its owner's hand.

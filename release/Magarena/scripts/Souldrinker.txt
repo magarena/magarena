@@ -1,5 +1,6 @@
 name=Souldrinker
-image=http://magiccards.info/scans/en/dvd/39.jpg
+image=http://magiccards.info/scans/en/tp/52.jpg
+image_updated=2017-01-08
 value=2.210
 rarity=U
 type=Creature

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted artifact can't attack or block;\
+ability=Enchant artifact;\
+        Enchanted artifact can't attack or block;\
         Enchanted artifact can't activate abilities.
 timing=aura
 enchant=default,neg artifact

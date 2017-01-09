@@ -1,7 +1,7 @@
 name=Strip Mine
 image=http://magiccards.info/scans/en/4e/189.jpg
 value=4.500
-rarity=R
+rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
         {T}, Sacrifice SN: Destroy target land.

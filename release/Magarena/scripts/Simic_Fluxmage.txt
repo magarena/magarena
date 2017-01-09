@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={2}{U}
 pt=1/2
-ability=evolve
+ability=Evolve
 timing=fmain
-requires_groovy_code
 oracle=Evolve\n{1}{U}, {T}: Move a +1/+1 counter from Simic Fluxmage onto target creature.
+requires_groovy_code

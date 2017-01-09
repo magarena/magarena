@@ -8,6 +8,6 @@ cost={2}{W}
 ability=Enchant land;\
         When SN enters the battlefield, create a 2/2 white Knight creature token with vigilance.;\
         Enchanted land has "{T}: Prevent the next 1 damage that would be dealt to you this turn."
-enchant=pump,pos land
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nWhen Security Blockade enters the battlefield, create a 2/2 white Knight creature token with vigilance.\nEnchanted land has "{T}: Prevent the next 1 damage that would be dealt to you this turn."

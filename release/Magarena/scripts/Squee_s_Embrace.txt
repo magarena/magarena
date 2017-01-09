@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.
+timing=aura
 enchant=pump,pos creature
-ability=Enchanted creature gets +2/+2.
-timing=enchantment
-requires_groovy_code=Wind Zendikon
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nWhen enchanted creature dies, return that card to its owner's hand.
+requires_groovy_code=Wind Zendikon

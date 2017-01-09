@@ -1,5 +1,6 @@
 name=Sarcomite Myr
-image=http://magiccards.info/scans/en/pch/13.jpg
+image=http://magiccards.info/scans/en/fut/56.jpg
+image_updated=2017-01-07
 value=2.707
 rarity=C
 type=Artifact,Creature

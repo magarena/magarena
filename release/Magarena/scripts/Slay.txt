@@ -1,5 +1,6 @@
 name=Slay
-image=http://magiccards.info/scans/en/pvc/25.jpg
+image=http://magiccards.info/scans/en/9e/163.jpg
+image_updated=2017-01-08
 value=3.350
 rarity=U
 type=Instant

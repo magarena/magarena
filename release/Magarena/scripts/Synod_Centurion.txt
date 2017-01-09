@@ -1,5 +1,6 @@
 name=Synod Centurion
-image=http://magiccards.info/scans/en/ddf/53.jpg
+image=http://magiccards.info/scans/en/5dn/161.jpg
+image_updated=2016-01-09
 value=3.741
 rarity=U
 type=Artifact,Creature

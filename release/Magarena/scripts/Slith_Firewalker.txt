@@ -1,12 +1,13 @@
 name=Slith Firewalker
-image=http://magiccards.info/scans/en/jvc/39.jpg
+image=http://magiccards.info/scans/en/mi/107.jpg
+image_updated=2017-01-08
 value=4.185
 rarity=U
 type=Creature
 subtype=Slith
 cost={R}{R}
 pt=1/1
-ability=haste;\
+ability=Haste;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=fmain
 oracle=Haste\nWhenever Slith Firewalker deals combat damage to a player, put a +1/+1 counter on it.

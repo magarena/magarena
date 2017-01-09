@@ -1,5 +1,6 @@
 name=Steam Blast
-image=http://magiccards.info/scans/en/br/81.jpg
+image=http://magiccards.info/scans/en/us/219.jpg
+image_updated=2016-01-09
 value=3.317
 rarity=U
 type=Sorcery

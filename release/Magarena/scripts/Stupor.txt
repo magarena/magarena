@@ -4,6 +4,6 @@ value=4.267
 rarity=U
 type=Sorcery
 cost={2}{B}
-timing=removal
-requires_groovy_code
+timing=main
 oracle=Target opponent discards a card at random, then discards a card.
+requires_groovy_code

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=3/2
-timing=main
 ability=When SN enters the battlefield, you may destroy target Vampire, Werewolf, or Zombie.
+timing=main
 oracle=When Slayer of the Wicked enters the battlefield, you may destroy target Vampire, Werewolf, or Zombie.

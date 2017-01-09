@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={B}
 ability=At the beginning of each opponent's upkeep, if that player has one or fewer cards in hand, RN loses 3 life.
-timing=main
+timing=enchantment
 oracle=At the beginning of each opponent's upkeep, if that player has one or fewer cards in hand, he or she loses 3 life.

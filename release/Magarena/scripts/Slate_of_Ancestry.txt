@@ -1,5 +1,6 @@
 name=Slate of Ancestry
-image=http://magiccards.info/scans/en/evg/25.jpg
+image=http://magiccards.info/scans/en/9e/308.jpg
+image_updated=2017-01-08
 value=2.500
 rarity=R
 type=Artifact

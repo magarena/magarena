@@ -1,5 +1,6 @@
 name=Shimian Night Stalker
-image=http://magiccards.info/scans/en/ch/8.jpg
+image=http://magiccards.info/scans/en/lg/30.jpg
+image_updated=2016-01-09
 value=3.155
 rarity=U
 type=Creature

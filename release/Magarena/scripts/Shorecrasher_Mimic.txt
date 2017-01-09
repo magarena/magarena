@@ -7,5 +7,5 @@ subtype=Shapeshifter
 cost={1}{G/U}
 pt=2/1
 timing=main
+oracle=Whenever you cast a spell that's both green and blue, Shorecrasher Mimic has base power and toughness 5/3 until end of turn and gains trample until end of turn.
 requires_groovy_code
-oracle=Whenever you cast a spell that's both green and blue, Shorecrasher Mimic becomes 5/3 and gains trample until end of turn.

@@ -1,7 +1,7 @@
 name=Springleaf Drum
 image=http://magiccards.info/scans/en/lw/261.jpg
 value=3.767
-rarity=U
+rarity=C
 type=Artifact
 cost={1}
 ability={T}, Tap another untapped creature you control: Add one mana of any color to your mana pool.

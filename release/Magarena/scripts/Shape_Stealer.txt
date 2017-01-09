@@ -7,5 +7,5 @@ subtype=Shapeshifter,Spirit
 cost={U}{U}
 pt=1/1
 timing=main
+oracle=Whenever Shape Stealer blocks or becomes blocked by a creature, change Shape Stealer's base power and toughness to that creature's power and toughness until end of turn.
 requires_groovy_code
-oracle=Whenever Shape Stealer blocks or becomes blocked by a creature, change Shape Stealer's power and toughness to that creature's power and toughness until end of turn.

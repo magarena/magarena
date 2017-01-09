@@ -1,5 +1,6 @@
 name=Serrated Biskelion
-image=http://magiccards.info/scans/en/ddf/46.jpg
+image=http://magiccards.info/scans/en/wl/156.jpg
+image_updated=2017-01-07
 value=3.750
 rarity=U
 type=Artifact,Creature

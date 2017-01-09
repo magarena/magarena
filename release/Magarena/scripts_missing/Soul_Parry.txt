@@ -1,5 +1,6 @@
 name=Soul Parry
-image=http://magiccards.info/scans/en/ddo/24.jpg
+image=http://magiccards.info/scans/en/som/21.jpg
+image_updated=2016-01-09
 value=2.500
 rarity=C
 type=Instant

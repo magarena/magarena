@@ -8,6 +8,6 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature has first strike.;\
         {1}{B}: Enchanted creature gets +2/+2 until end of turn.
-enchant=pump,pos creature
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature has first strike.\n{1}{B}: Enchanted creature gets +2/+2 until end of turn.

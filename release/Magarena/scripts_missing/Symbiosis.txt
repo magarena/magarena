@@ -1,5 +1,6 @@
 name=Symbiosis
-image=http://magiccards.info/scans/en/br/85.jpg
+image=http://magiccards.info/scans/en/us/275.jpg
+image_updated=2016-01-09
 value=3.446
 rarity=C
 type=Instant

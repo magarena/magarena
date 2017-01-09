@@ -1,7 +1,7 @@
 name=Shield Sphere
 image=http://magiccards.info/scans/en/ai/172.jpg
 value=4.380
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Wall
 cost={0}

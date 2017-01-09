@@ -1,7 +1,7 @@
 name=Singing Tree
 image=http://magiccards.info/scans/en/an/39.jpg
 value=4.036
-rarity=U
+rarity=R
 type=Creature
 subtype=Plant
 cost={3}{G}

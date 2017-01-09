@@ -1,5 +1,6 @@
 name=Sewer Rats
-image=http://magiccards.info/scans/en/br/70.jpg
+image=http://magiccards.info/scans/en/mr/37.jpg
+image_updated=2017-01-07
 value=2.556
 rarity=C
 type=Creature

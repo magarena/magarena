@@ -9,5 +9,5 @@ pt=1/3
 ability=Defender;\
         First strike;\
         Cycling {2}
-timing=main
+timing=smain
 oracle=Defender\nFirst strike\nCycling {2}

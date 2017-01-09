@@ -1,5 +1,6 @@
 name=Soot Imp
-image=http://magiccards.info/scans/en/dvd/37.jpg
+image=http://magiccards.info/scans/en/eve/43.jpg
+image_updated=2017-01-08
 value=3.273
 rarity=U
 type=Creature

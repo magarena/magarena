@@ -8,5 +8,5 @@ cost={2}{W}
 pt=1/4
 ability=Defender;\
         {1}{U}, Sacrifice SN: Counter target creature spell.
-timing=main
+timing=smain
 oracle=Defender\n{1}{U}, Sacrifice Soulsworn Jury: Counter target creature spell.

@@ -7,6 +7,6 @@ subtype=Cat
 cost={G}
 pt=3/2
 ability=Shroud;\
-        When SN enters the battlefield, you may sacrifice a land. If you don't, sacrifice SN.
+        When SN enters the battlefield, sacrifice SN unless you sacrifice a land.
 timing=main
 oracle=Shroud\nWhen Scythe Tiger enters the battlefield, sacrifice it unless you sacrifice a land.

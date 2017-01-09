@@ -4,8 +4,9 @@ value=2.565
 rarity=U
 type=Instant
 cost={1}{U}
-effect=Target creature gets -6/-0 until end of turn.~Fuse
 split=Protect
+ability=Fuse
+effect=Target creature gets -6/-0 until end of turn.
 timing=removal
 second_half
 oracle=Target creature gets -6/-0 until end of turn.\nFuse

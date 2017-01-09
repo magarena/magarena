@@ -7,7 +7,7 @@ subtype=Naga,Shaman
 cost={1}{B}{G}{U}
 pt=3/3
 ability=Whenever SN enters the battlefield or attacks, put the top three cards of your library into your graveyard.;\
-        Whenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.
+        Whenever one or more creature cards are put into your graveyard from your library, create a 2/2 black Zombie creature token.
 timing=main
-oracle=Whenever Sidisi, Brood Tyrant enters the battlefield or attacks, put the top three cards of your library into your graveyard.\nWhenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.
+oracle=Whenever Sidisi, Brood Tyrant enters the battlefield or attacks, put the top three cards of your library into your graveyard.\nWhenever one or more creature cards are put into your graveyard from your library, create a 2/2 black Zombie creature token.
 status=not supported: when-one-or-more

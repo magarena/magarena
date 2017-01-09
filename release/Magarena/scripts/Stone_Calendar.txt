@@ -1,7 +1,7 @@
 name=Stone Calendar
 image=http://magiccards.info/scans/en/dk/108.jpg
 value=3.057
-rarity=U
+rarity=R
 type=Artifact
 cost={5}
 requires_groovy_code

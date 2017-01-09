@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
+ability=Enchant creature you control;\
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=lifelink,creature you control
-ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
-requires_groovy_code=Spirit Link
 oracle=Enchant creature you control\nWhenever enchanted creature deals damage, you gain that much life.\nWhen Spirit Loop is put into a graveyard from the battlefield, return Spirit Loop to its owner's hand.
+requires_groovy_code=Spirit Link

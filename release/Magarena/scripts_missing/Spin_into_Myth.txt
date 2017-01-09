@@ -1,5 +1,6 @@
 name=Spin into Myth
-image=http://magiccards.info/scans/en/arc/8.jpg
+image=http://magiccards.info/scans/en/fut/60.jpg
+image_updated=2016-01-09
 value=3.667
 rarity=U
 type=Instant

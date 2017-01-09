@@ -1,7 +1,7 @@
 name=Snow Fortress
 image=http://magiccards.info/scans/en/ia/312.jpg
 value=3.062
-rarity=U
+rarity=R
 type=Artifact,Creature
 subtype=Wall
 cost={5}

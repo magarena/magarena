@@ -1,7 +1,7 @@
 name=Spinal Villain
 image=http://magiccards.info/scans/en/lg/161.jpg
 value=3.737
-rarity=U
+rarity=R
 type=Creature
 subtype=Beast
 cost={2}{R}

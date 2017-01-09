@@ -1,12 +1,12 @@
 name=Spirit Shackle
 image=http://magiccards.info/scans/en/4e/47.jpg
 value=2.077
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}{B}
 ability=Enchant creature;\
         Whenever enchanted creature becomes tapped, put a -0/-2 counter on RN.
-enchant=default,neg creature
 timing=aura
+enchant=default,neg creature
 oracle=Enchant creature\nWhenever enchanted creature becomes tapped, put a -0/-2 counter on it.

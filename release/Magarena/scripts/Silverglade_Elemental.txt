@@ -1,5 +1,6 @@
 name=Silverglade Elemental
-image=http://magiccards.info/scans/en/pch/78.jpg
+image=http://magiccards.info/scans/en/mm/269.jpg
+image_updated=2017-01-08
 value=4.095
 rarity=C
 type=Creature

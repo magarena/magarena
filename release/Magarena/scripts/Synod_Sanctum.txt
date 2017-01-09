@@ -1,5 +1,6 @@
 name=Synod Sanctum
-image=http://magiccards.info/scans/en/arc/120.jpg
+image=http://magiccards.info/scans/en/mi/252.jpg
+image_updated=2016-01-09
 value=3.920
 rarity=U
 type=Artifact

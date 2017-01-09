@@ -8,7 +8,7 @@ cost={4}{W}{B}
 loyalty=6
 ability=+1: Reveal the top card of your library and put that card into your hand. Each opponent loses life equal to its converted mana cost.;\
         −X: SN deals X damage to target creature or planeswalker and you gain X life.;\
-        −9: Put a number of 1/1 black Vampire Knight creature tokens with lifelink onto the battlefield equal to the highest life total among all players.
+        −9: Create a number of 1/1 black Vampire Knight creature tokens with lifelink equal to the highest life total among all players.
 timing=main
-oracle=+1: Reveal the top card of your library and put that card into your hand. Each opponent loses life equal to its converted mana cost.\n−X: Sorin, Grim Nemesis deals X damage to target creature or planeswalker and you gain X life.\n−9: Put a number of 1/1 black Vampire Knight creature tokens with lifelink onto the battlefield equal to the highest life total among all players.
+oracle=+1: Reveal the top card of your library and put that card into your hand. Each opponent loses life equal to its converted mana cost.\n−X: Sorin, Grim Nemesis deals X damage to target creature or planeswalker and you gain X life.\n−9: Create a number of 1/1 black Vampire Knight creature tokens with lifelink equal to the highest life total among all players.
 status=not supported: non-mana-x-cost

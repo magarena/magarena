@@ -1,5 +1,6 @@
 name=Skirk Fire Marshal
-image=http://magiccards.info/scans/en/evg/50.jpg
+image=http://magiccards.info/scans/en/on/229.jpg
+image_updated=2017-01-08
 value=4.046
 rarity=R
 type=Creature
