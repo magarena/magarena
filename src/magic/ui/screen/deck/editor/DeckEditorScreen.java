@@ -53,6 +53,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private ContentPanel contentPanel;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private final IDeckEditorClient deckClient;
+    private final DeckEditorController controller = DeckEditorController.instance;
 
     private static MagicDeck refDeck;
     static MagicDeck editDeck;
@@ -64,6 +65,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     public DeckEditorScreen(IDeckEditorClient client) {
         super(MText.get(_S14));
+        controller.setMainScreen(this);
         this.deckClient = client;
         setNewDeck(client.getDeck());
         useLoadingScreen(this::initUI);
@@ -72,6 +74,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorScreen() {
         super(MText.get(_S14));
+        controller.setMainScreen(this);
         this.deckClient = null;
         setNewDeck(getMostRecentEditedDeck());
         useLoadingScreen(this::initUI);

@@ -11,7 +11,6 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JTable;
-import magic.data.DeckGenerator;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -30,6 +29,8 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     // translatable strings
     private static final String _S1 = "Random Deck";
     private static final String _S2 = "Generate a random deck using current set of cards in card pool.";
+
+    private final DeckEditorController controller = DeckEditorController.instance;
 
     private final FilteredCardPoolPanel cardPoolPanel;
     private final CardQuantityActionPanel quantityPanel;
@@ -208,9 +209,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         );
         dialog.setVisible(true);
         if (!dialog.isCancelled()) {
-            final DeckGenerator deckGenerator = dialog.getDeckGenerator();
-            DeckEditorScreen.setNewDeck(deckGenerator.getRandomDeck(getCardPool()));
-            listener.setDeck(null);
+            controller.setNewDeck(dialog.getDeckGenerator().getRandomDeck(getCardPool()));
             return true;
         } else {
             return false;
