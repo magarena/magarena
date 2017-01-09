@@ -8,5 +8,5 @@ mana=w3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn.;\
         {T}: Add {W} to your mana pool.
-timing=land
+timing=fmain
 oracle=Sandstone Bridge enters the battlefield tapped.\nWhen Sandstone Bridge enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn.\n{T}: Add {W} to your mana pool.

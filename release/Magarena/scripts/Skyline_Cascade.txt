@@ -8,5 +8,5 @@ mana=u3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step.;\
         {T}: Add {U} to your mana pool.
-timing=land
+timing=fmain
 oracle=Skyline Cascade enters the battlefield tapped.\nWhen Skyline Cascade enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step.\n{T}: Add {U} to your mana pool.

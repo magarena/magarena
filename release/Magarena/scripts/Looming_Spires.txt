@@ -8,5 +8,5 @@ mana=r3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature gets +1/+1 and gains first strike until end of turn.;\
         {T}: Add {R} to your mana pool.
-timing=land
+timing=fmain
 oracle=Looming Spires enters the battlefield tapped.\nWhen Looming Spires enters the battlefield, target creature gets +1/+1 and gains first strike until end of turn.\n{T}: Add {R} to your mana pool.

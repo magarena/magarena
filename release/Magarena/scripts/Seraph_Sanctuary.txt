@@ -6,5 +6,5 @@ type=Land
 ability=When SN enters the battlefield, you gain 1 life.;\
         Whenever an Angel enters the battlefield under your control, you gain 1 life.;\
         {T}: Add {C} to your mana pool.
-timing=land
+timing=fmain
 oracle=When Seraph Sanctuary enters the battlefield, you gain 1 life.\nWhenever an Angel enters the battlefield under your control, you gain 1 life.\n{T}: Add {C} to your mana pool.
