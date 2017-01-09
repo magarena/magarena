@@ -125,7 +125,7 @@ public class DuelDecksPanel extends TexturedPanel {
 
     String generateTitle(final MagicDeck deck) {
         return deck.isUnsaved()
-            ? deck.getName() + "  [ UNSAVED ]"
+            ? "UNSAVED  /  " + deck.getName()
             : getDeckNameWithType(deck);
     }
 
