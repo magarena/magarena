@@ -12,7 +12,7 @@ final class DeckEditorController {
         this.mainScreen = screen;
     }
 
-    void setNewDeck(MagicDeck aDeck) {
+    void setDeck(MagicDeck aDeck) {
         mainScreen.setDeck(aDeck);
     }
 

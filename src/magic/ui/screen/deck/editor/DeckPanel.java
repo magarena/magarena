@@ -134,7 +134,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
                     null,
                     new String[] {MText.get(_S6), MText.get(_S7)}, MText.get(_S7));
             if (userResponse == JOptionPane.YES_OPTION) {
-                controller.setNewDeck(new MagicDeck());
+                controller.setDeck(new MagicDeck());
             }
         } else {
             MagicSound.BEEP.play();
