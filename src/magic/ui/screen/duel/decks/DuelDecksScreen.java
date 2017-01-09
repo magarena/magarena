@@ -12,7 +12,6 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.ui.DuelDecksPanel;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.MText;

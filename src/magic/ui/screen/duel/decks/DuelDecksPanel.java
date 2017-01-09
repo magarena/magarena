@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.screen.duel.decks;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -27,6 +27,9 @@ import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.player.PlayerProfile;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
+import magic.ui.ScreenController;
 import magic.ui.screen.deck.editor.DeckSideBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
@@ -36,17 +39,16 @@ import magic.ui.widget.player.PlayerDetailsPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DuelDecksPanel extends TexturedPanel {
+class DuelDecksPanel extends TexturedPanel {
 
     // translatable strings
-    private static final String _S2 = "Deck (%s) - %d cards";
     private static final String _S7 = "Swap Decks";
     private static final String _S8 = "Swap your deck with your opponent's.";
     private static final String _S15 = "Generate another deck";
     private static final String _S16 = "Based on the duel settings, randomly selects an existing prebuilt deck or<br>generates a random deck for the selected player.";
 
     // change properties
-    public static final String CP_DECK_CHANGED = "1fe41854-83e4-4a98-9c4b-46ca9f4c9550";
+    static final String CP_DECK_CHANGED = "1fe41854-83e4-4a98-9c4b-46ca9f4c9550";
 
     private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
@@ -55,7 +57,7 @@ public class DuelDecksPanel extends TexturedPanel {
     private final DeckSideBar sidebar;
     private final ActionBarButton newDeckButton;
 
-    public DuelDecksPanel(final MagicDuel duel) {
+    DuelDecksPanel(final MagicDuel duel) {
 
         this.duel = duel;
         newDeckButton = getNewDeckActionBarButton();
@@ -123,25 +125,21 @@ public class DuelDecksPanel extends TexturedPanel {
             : deck.getName();
     }
 
-    String generateTitle(final MagicDeck deck) {
+    private String generateTitle(final MagicDeck deck) {
         return deck.isUnsaved()
             ? "UNSAVED  /  " + deck.getName()
             : getDeckNameWithType(deck);
     }
 
-    public MagicDuel getDuel() {
+    MagicDuel getDuel() {
         return duel;
     }
 
-    public DuelPlayerConfig getSelectedPlayer() {
+    DuelPlayerConfig getSelectedPlayer() {
         return duel.getPlayers()[tabbedPane.getSelectedIndex()];
     }
 
-    public void setSelectedTab(final int tab) {
-        tabbedPane.setSelectedIndex(tab);
-    }
-
-    public void updateDecksAfterEdit() {
+    void updateDecksAfterEdit() {
         for (int i = 0; i < duel.getPlayers().length; i++) {
             final DuelPlayerConfig player = duel.getPlayers()[i];
             final MagicDeck deck = player.getDeck();
@@ -198,7 +196,7 @@ public class DuelDecksPanel extends TexturedPanel {
 
     }
 
-    public void generateDeck() {
+    private void generateDeck() {
         try {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             duel.buildDeck(getSelectedPlayer());
@@ -223,7 +221,7 @@ public class DuelDecksPanel extends TexturedPanel {
         );
     }
 
-    public void swapDecks() {
+    private void swapDecks() {
         duel.restart();
         final DuelPlayerConfig[] players = duel.getPlayers();
         final MagicDeckProfile deckProfile1 = players[0].getDeckProfile();
@@ -255,7 +253,7 @@ public class DuelDecksPanel extends TexturedPanel {
         );
     }
 
-    public MenuButton[] getActionBarButtons() {
+    MenuButton[] getActionBarButtons() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(newDeckButton);
         buttons.add(getSwapDecksButton());
