@@ -209,7 +209,8 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         dialog.setVisible(true);
         if (!dialog.isCancelled()) {
             final DeckGenerator deckGenerator = dialog.getDeckGenerator();
-            listener.setDeck(deckGenerator.getRandomDeck(getCardPool()));
+            DeckEditorScreen.setNewDeck(deckGenerator.getRandomDeck(getCardPool()));
+            listener.setDeck(null);
             return true;
         } else {
             return false;

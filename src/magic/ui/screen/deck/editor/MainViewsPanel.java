@@ -233,7 +233,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     @Override
     public void setDeck(MagicDeck deck) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        doRefreshView();
     }
 
 }
