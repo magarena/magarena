@@ -50,24 +50,30 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private static final String _S20 = "There was a problem saving the deck file!";
 
     private ContentPanel contentPanel;
-    private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
-    private final MagicDeck startDeck;
+    private final IDeckEditorClient deckClient;
 
-    // CTR : opens Deck Editor ready to update passed in deck.
-    public DeckEditorScreen(final MagicDeck deck) {
+    private static MagicDeck refDeck;
+    static MagicDeck editDeck;
+
+    public DeckEditorScreen(IDeckEditorClient client) {
         super(MText.get(_S14));
-        isStandalone = false;
-        this.startDeck = deck;
+        this.deckClient = client;
+        setNewDeck(client.getDeck());
         useLoadingScreen(this::initUI);
     }
 
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorScreen() {
         super(MText.get(_S14));
-        isStandalone = true;
-        this.startDeck = getMostRecentEditedDeck();
+        this.deckClient = null;
+        setNewDeck(getMostRecentEditedDeck());
         useLoadingScreen(this::initUI);
+    }
+
+    private void setNewDeck(MagicDeck newDeck) {
+        refDeck = newDeck == null ? new MagicDeck() : newDeck;
+        editDeck = new MagicDeck(refDeck);
     }
 
     @Override
@@ -75,10 +81,14 @@ public class DeckEditorScreen extends HeaderFooterScreen
         return true;
     }
 
+    private boolean isStandaloneMode() {
+        return deckClient == null;
+    }
+
     private void initUI() {
-        contentPanel = new ContentPanel(startDeck, this);
-        contentPanel.setIsStandalone(isStandalone);
-        setDeck(startDeck);
+        contentPanel = new ContentPanel(refDeck, this);
+        contentPanel.setIsStandalone(isStandaloneMode());
+        setDeck(refDeck);
         setMainContent(contentPanel);
         setHeaderContent(deckStatusPanel);
         setLeftFooter(getLeftActionButton());
@@ -143,7 +153,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private MenuButton getLeftActionButton() {
-        return MenuButton.getCloseScreenButton(!isStandalone ? MText.get(_S1) : MText.get(_S2));
+        return MenuButton.getCloseScreenButton(!isStandaloneMode() ? MText.get(_S1) : MText.get(_S2));
     }
 
     private void doUseDeckAction() {
@@ -153,7 +163,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private MenuButton getRightActionButton() {
-        return !isStandalone
+        return !isStandaloneMode()
             ? MenuButton.build(this::doUseDeckAction, MText.get(_S3))
             : null;
     }
@@ -234,7 +244,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private void setMostRecentDeck(final String filename) {
-        if (isStandalone) {
+        if (isStandaloneMode()) {
             GeneralConfig.getInstance().setMostRecentDeckFilename(filename);
             GeneralConfig.getInstance().save();
         }

@@ -12,18 +12,20 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.translate.MText;
+import magic.ui.WikiPage;
+import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.deck.editor.IDeckEditorClient;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
 import magic.utility.MagicSystem;
-import magic.ui.WikiPage;
-import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
-public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
+public class DuelDecksScreen extends HeaderFooterScreen
+    implements IDeckEditorClient {
 
     // translatable strings
     private static final String _S1 = "Duel Decks";
@@ -92,10 +94,10 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
                     SampleHandActionButton.createInstance(getActiveDeck())
             );
             addToFooter(screenContent.getActionBarButtons());
-        
+
         } else if (isDuelFinished()) {
             addToFooter(getWinnerButton());
-        
+
         } else { // duel in progress
             addToFooter(getTiledDeckCardImagesButton(),
                     SampleHandActionButton.createInstance(getActiveDeck()),
@@ -103,7 +105,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
                             MagicIcon.REFRESH, MText.get(_S10), MText.get(_S11)
                     )
             );
-        }        
+        }
     }
 
     private MenuButton getTiledDeckCardImagesButton() {
@@ -117,7 +119,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     private void doShowMainMenu() {
         ScreenController.showMainMenuScreen();
     }
-                
+
     private void startNextGame() {
         final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
         if (isLegalDeckAndShowErrors(players[0]) && isLegalDeckAndShowErrors(players[1])) {
@@ -158,7 +160,7 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     }
 
     private void showDeckEditor() {
-        ScreenController.showDeckEditor(getActiveDeck());
+        ScreenController.showDeckEditor(this);
     }
 
     private void showTiledDeckCardImages() {
@@ -222,6 +224,16 @@ public class DuelDecksScreen extends HeaderFooterScreen { // IOptionsMenu
     void setNextGame(MagicGame aGame) {
         nextGame = aGame;
         nextGameButton.setBusy(nextGame == null);
+    }
+
+    @Override
+    public MagicDeck getDeck() {
+        return getActiveDeck();
+    }
+
+    @Override
+    public boolean setDeck(MagicDeck newDeck) {
+        throw new UnsupportedOperationException();
     }
 
 }

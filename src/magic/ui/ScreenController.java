@@ -25,6 +25,7 @@ import magic.ui.screen.card.script.CardScriptScreen;
 import magic.ui.screen.deck.DeckViewScreen;
 import magic.ui.screen.deck.editor.DeckEditorScreen;
 import magic.ui.screen.deck.editor.DeckEditorSplitScreen;
+import magic.ui.screen.deck.editor.IDeckEditorClient;
 import magic.ui.screen.deck.hand.SampleHandScreen;
 import magic.ui.screen.deck.tiled.DeckTiledCardsScreen;
 import magic.ui.screen.decks.DecksScreen;
@@ -224,10 +225,10 @@ public final class ScreenController {
         showScreen(ExplorerScreen::new);
     }
 
-    public static void showDeckEditor(final MagicDeck deck) {
+    public static void showDeckEditor(IDeckEditorClient supplier) {
         showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
-                ? () -> new DeckEditorSplitScreen(deck)
-                : () -> new DeckEditorScreen(deck));
+                ? () -> new DeckEditorSplitScreen(supplier.getDeck())
+                : () -> new DeckEditorScreen(supplier));
     }
 
     public static void showDeckEditor() {
