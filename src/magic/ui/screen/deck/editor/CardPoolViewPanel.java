@@ -13,15 +13,15 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.data.DeckGenerator;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.translate.MText;
+import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
-import magic.translate.MText;
-import magic.ui.widget.cards.table.BasicDeckTablePanel;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
 import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.widget.cards.table.BasicDeckTablePanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -37,7 +37,6 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private final MigLayout miglayout = new MigLayout();
 
     private MagicCardDefinition selectedCard = MagicCardDefinition.UNKNOWN;
-    private MagicDeck deck = new MagicDeck();
     private final IDeckEditorListener listener;
     private final List<ActionBarButton> actionButtons = new ArrayList<>();
 
@@ -100,7 +99,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private void doCardPoolPanelSelectionAction() {
         if (cardPoolPanel.getSelectedCard() != null) {
             selectedCard = cardPoolPanel.getSelectedCard();
-            if (deck.contains(selectedCard) == false) {
+            if (DeckEditorScreen.editDeck.contains(selectedCard) == false) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -128,16 +127,16 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            deck.add(card);
+            DeckEditorScreen.editDeck.add(card);
         }
 
-        listener.deckUpdated(deck);
+        listener.deckUpdated(DeckEditorScreen.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
         listener.addCardToRecall(card);
 
-        deckPanel.getTableModel().setCards(deck);
+        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
@@ -153,22 +152,22 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
             return;
         }
 
-        if (deck.contains(card) == false) {
+        if (DeckEditorScreen.editDeck.contains(card) == false) {
             MagicSound.BEEP.play();
             return;
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            deck.remove(card);
+            DeckEditorScreen.editDeck.remove(card);
         }
 
-        listener.deckUpdated(deck);
+        listener.deckUpdated(DeckEditorScreen.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
         listener.addCardToRecall(card);
 
-        deckPanel.getTableModel().setCards(deck);
+        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
         deckPanel.getTable().repaint();
 
         if (card != deckPanel.getSelectedCard() && cardPoolPanel.getSelectedCard() != null) {
@@ -195,11 +194,11 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     }
 
     private int getDefaultDeckSize() {
-        return deck.size() < MagicDeck.DEFAULT_SIZE
+        return DeckEditorScreen.editDeck.size() < MagicDeck.DEFAULT_SIZE
                 ? ScreenController.isDuelActive() == false
                         ? 60
                         : MagicDeck.DEFAULT_SIZE
-                : deck.size();
+                : DeckEditorScreen.editDeck.size();
     }
 
     private boolean generateRandomDeck() {
@@ -247,10 +246,6 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     Collection<MagicCardDefinition> getCardPool() {
         return cardPoolPanel.getCardPool();
-    }
-
-    void setDeck(MagicDeck aDeck) {
-        this.deck = aDeck;
     }
 
     void setDeckTable(final JTable aDeckTable) {

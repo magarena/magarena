@@ -9,11 +9,10 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
 import magic.ui.MagicSound;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.cards.table.BasicDeckTablePanel;
 import magic.ui.widget.cards.table.CardTablePanel;
-import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -30,7 +29,6 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     private final List<MagicCardDefinition> recallCards;
     private MagicCardDefinition selectedCard = MagicCardDefinition.UNKNOWN;
     private final IDeckEditorListener listener;
-    private MagicDeck deck = new MagicDeck();
 
     CardRecallPanel(final IDeckEditorListener aListener, final CardQuantityActionPanel aPanel) {
 
@@ -74,7 +72,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     private void doRecallPanelSelectionAction() {
         if (getRecallSelectedCard() != null) {
             selectedCard = getRecallSelectedCard();
-            if (deck.contains(selectedCard) == false) {
+            if (DeckEditorScreen.editDeck.contains(selectedCard) == false) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -145,15 +143,15 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            deck.add(card);
+            DeckEditorScreen.editDeck.add(card);
         }
 
-        listener.deckUpdated(deck);
+        listener.deckUpdated(DeckEditorScreen.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
 
-        deckPanel.getTableModel().setCards(deck);
+        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
@@ -169,21 +167,21 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
             return;
         }
 
-        if (deck.contains(card) == false) {
+        if (DeckEditorScreen.editDeck.contains(card) == false) {
             MagicSound.BEEP.play();
             return;
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            deck.remove(card);
+            DeckEditorScreen.editDeck.remove(card);
         }
 
-        listener.deckUpdated(deck);
+        listener.deckUpdated(DeckEditorScreen.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
 
-        deckPanel.getTableModel().setCards(deck);
+        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
         deckPanel.getTable().repaint();
 
         if (card != deckPanel.getSelectedCard() && getRecallSelectedCard() != null) {
@@ -246,10 +244,6 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     @Override
     public void focusLost(FocusEvent e) {
         doFocusLostAction(e);
-    }
-
-    void setDeck(MagicDeck aDeck) {
-        this.deck = aDeck;
     }
 
 }
