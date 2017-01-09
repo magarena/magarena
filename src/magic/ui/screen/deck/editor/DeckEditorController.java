@@ -16,8 +16,5 @@ final class DeckEditorController {
         mainScreen.setDeck(aDeck);
     }
 
-    private DeckEditorController() {
-
-    }
-
+    private DeckEditorController() { }
 }

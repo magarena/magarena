@@ -39,7 +39,8 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     // fired on remove card from deck action.
     public static final String CP_REMOVE_FROM_DECK = "33e31608-cf6b-45a2-9fde-bafaaf66f2d2";
 
-    // UI components
+    private final DeckEditorController controller = DeckEditorController.instance;
+
     private final CardQuantityActionPanel quantityPanel;
     private final DeckTablePanel deckTablePanel;
     private final MigLayout miglayout = new MigLayout();
@@ -133,7 +134,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
                     null,
                     new String[] {MText.get(_S6), MText.get(_S7)}, MText.get(_S7));
             if (userResponse == JOptionPane.YES_OPTION) {
-                setDeck(new MagicDeck());
+                controller.setNewDeck(new MagicDeck());
             }
         } else {
             MagicSound.BEEP.play();
@@ -144,11 +145,6 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         deckTablePanel.setTitle(getDeckTitle());
         deckTablePanel.setDeck(DeckEditorScreen.editDeck);
         listener.deckUpdated(DeckEditorScreen.editDeck);
-    }
-
-    void setDeck(final MagicDeck newDeck) {
-        DeckEditorScreen.setNewDeck(newDeck);
-        doRefreshView();
     }
 
     @Override
