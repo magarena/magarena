@@ -1,12 +1,5 @@
 package magic.model.choice;
 
-import magic.model.MagicCostManaType;
-import magic.model.MagicGame;
-import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicSourceManaActivation;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,6 +8,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+import magic.model.MagicCostManaType;
+import magic.model.MagicGame;
+import magic.model.MagicManaType;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.event.MagicSourceManaActivation;
 
 public class MagicPayManaCostResultBuilder {
 
@@ -51,7 +50,7 @@ public class MagicPayManaCostResultBuilder {
             return true;
         }
 
-        assert types[index] != null : "types[index] is null";
+        assert types[index] != null : "types[index] is null, index=" + index;
 
         // Generate all available activations for mana cost type.
         final MagicCostManaType costManaType = types[index];
