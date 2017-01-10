@@ -204,17 +204,9 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
         return activeView.getSelectedCard();
     }
 
-    void doRefreshView() {
+    void doRefreshViews() {
         deckPanel.doRefreshView();
         legalityPanel.setDeck(controller.getDeck());
-    }
-
-    MagicDeck getDeck() {
-        return controller.getDeck();
-    }
-
-    boolean isUpdatingExistingDeck() {
-        return deckPanel.isUpdatingExistingDeck();
     }
 
     @Override
@@ -235,7 +227,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     @Override
     public void setDeck(MagicDeck deck) {
-        doRefreshView();
+        doRefreshViews();
     }
 
 }

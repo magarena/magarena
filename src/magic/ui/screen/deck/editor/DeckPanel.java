@@ -196,10 +196,6 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         return super.requestFocusInWindow();
     }
 
-    boolean isUpdatingExistingDeck() {
-        return controller.getDeck() != null;
-    }
-
     void setSelectedCard(MagicCardDefinition selectedCard) {
         deckTablePanel.setSelectedCard(selectedCard);
     }

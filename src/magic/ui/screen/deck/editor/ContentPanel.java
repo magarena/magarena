@@ -59,7 +59,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     void doRefreshView() {
-        viewsPanel.doRefreshView();
+        viewsPanel.doRefreshViews();
     }
 
     MagicDeck getDeck() {
@@ -83,14 +83,6 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
             return false;
         }
         return true;
-    }
-
-    boolean isStandaloneDeckEditor() {
-        return !isUpdatingExistingDeck();
-    }
-
-    private boolean isUpdatingExistingDeck() {
-        return viewsPanel.isUpdatingExistingDeck();
     }
 
     void setIsStandalone(final boolean b) {
