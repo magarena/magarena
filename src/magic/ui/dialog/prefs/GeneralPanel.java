@@ -5,8 +5,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
-import magic.ui.screen.images.download.DirectoryChooser;
 import magic.ui.FontsAndBorders;
+import magic.ui.screen.images.download.DirectoryChooser;
 import magic.ui.widget.M.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
@@ -21,8 +21,6 @@ class GeneralPanel extends JPanel {
     private static final String _S58 = "Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.";
     private static final String _S59 = "Preview card on select only.";
     private static final String _S60 = "By default, as you move the mouse cursor over a card entry it will display the image. If you find this a bit too sensitive then this setting will only change the image when the card entry is selected.";
-    private static final String _S61 = "Show unimplemented card data.";
-    private static final String _S62 = "If set then the Card Explorer will display extra data for each unimplemented card otherwise it will only show the card name. This setting can affect the time it takes the Card Explorer screen to open the first time it is accessed.";
     private static final String _S63 = "User Interface";
     private static final String _S64 = "Card Explorer & Deck Editor";
     private static final String _S83 = "Card images";
