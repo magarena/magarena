@@ -3,12 +3,13 @@ package magic.ui.screen.deck.editor;
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import magic.data.DeckType;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
-import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
@@ -138,10 +139,10 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private static MagicDeck tryLoadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
-        } catch (InvalidDeckException ex) {
+        } catch (RuntimeException ex) {
             // if the most recent deck is invalid for some reason then I think it suffices
             // to log the error to console and open the deck editor with an empty deck.
-            System.err.println(ex);
+            Logger.getLogger(DeckEditorScreen.class.getName()).log(Level.WARNING, null, ex);
             return new MagicDeck();
         }
     }
