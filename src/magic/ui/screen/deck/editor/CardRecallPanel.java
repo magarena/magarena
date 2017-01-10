@@ -21,6 +21,8 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = "5d3dc52f-b1b3-419e-a4ab-375c3c85d29c";
 
+    private final DeckEditorController controller = DeckEditorController.instance;
+
     private final CardQuantityActionPanel quantityPanel;
     private final BasicDeckTablePanel deckPanel;
     private final CardTablePanel recallTablePanel;
@@ -72,7 +74,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     private void doRecallPanelSelectionAction() {
         if (getRecallSelectedCard() != null) {
             selectedCard = getRecallSelectedCard();
-            if (DeckEditorScreen.editDeck.contains(selectedCard) == false) {
+            if (controller.editDeck.contains(selectedCard) == false) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -143,15 +145,15 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            DeckEditorScreen.editDeck.add(card);
+            controller.editDeck.add(card);
         }
 
-        listener.deckUpdated(DeckEditorScreen.editDeck);
+        listener.deckUpdated(controller.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
 
-        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
+        deckPanel.getTableModel().setCards(controller.editDeck);
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
@@ -167,21 +169,21 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
             return;
         }
 
-        if (DeckEditorScreen.editDeck.contains(card) == false) {
+        if (controller.editDeck.contains(card) == false) {
             MagicSound.BEEP.play();
             return;
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            DeckEditorScreen.editDeck.remove(card);
+            controller.editDeck.remove(card);
         }
 
-        listener.deckUpdated(DeckEditorScreen.editDeck);
+        listener.deckUpdated(controller.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
 
-        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
+        deckPanel.getTableModel().setCards(controller.editDeck);
         deckPanel.getTable().repaint();
 
         if (card != deckPanel.getSelectedCard() && getRecallSelectedCard() != null) {

@@ -55,28 +55,18 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private final IDeckEditorClient deckClient;
     private final DeckEditorController controller = DeckEditorController.instance;
 
-    private static MagicDeck refDeck;
-    static MagicDeck editDeck;
-
-    static void setNewDeck(MagicDeck newDeck) {
-        refDeck = newDeck == null ? new MagicDeck() : newDeck;
-        editDeck = new MagicDeck(refDeck);
-    }
-
     public DeckEditorScreen(IDeckEditorClient client) {
         super(MText.get(_S14));
-        controller.setMainScreen(this);
         this.deckClient = client;
-        setNewDeck(client.getDeck());
+        controller.init(this, client.getDeck());
         useLoadingScreen(this::initUI);
     }
 
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorScreen() {
         super(MText.get(_S14));
-        controller.setMainScreen(this);
         this.deckClient = null;
-        setNewDeck(getMostRecentEditedDeck());
+        controller.init(this, getMostRecentEditedDeck());
         useLoadingScreen(this::initUI);
     }
 
@@ -92,7 +82,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private void initUI() {
         contentPanel = new ContentPanel(this);
         contentPanel.setIsStandalone(isStandaloneMode());
-        setDeck(refDeck);
+        doRefreshViews();
         setMainContent(contentPanel);
         setHeaderContent(deckStatusPanel);
         setLeftFooter(getLeftActionButton());
@@ -162,10 +152,10 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     private void doUseDeckAction() {
         if (contentPanel.validateDeck(true)) {
-            if (!editDeck.equals(refDeck)) {
-                editDeck.setUnsavedStatus();
+            if (!controller.editDeck.equals(controller.refDeck)) {
+                controller.editDeck.setUnsavedStatus();
             }
-            if (deckClient.setDeck(editDeck)) {
+            if (deckClient.setDeck(controller.editDeck)) {
                 ScreenController.closeActiveScreen(false);
             }
         }
@@ -255,7 +245,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private boolean isUserReadyToClose() {
-        if (!editDeck.equals(refDeck)) {
+        if (!controller.editDeck.equals(controller.refDeck)) {
             int response = JOptionPane.showConfirmDialog(
                 ScreenController.getFrame(),
                 MText.get(_S21),
@@ -283,16 +273,19 @@ public class DeckEditorScreen extends HeaderFooterScreen
         return false;
     }
 
+    void doRefreshViews() {
+        contentPanel.doRefreshView();
+        deckStatusPanel.setDeck(controller.editDeck, false);
+    }
+
     @Override
     public void setDeck(final MagicDeck deck) {
-        setNewDeck(deck);
-        contentPanel.doRefreshView();
-        deckStatusPanel.setDeck(editDeck, false);
+        controller.setDeck(deck);
     }
 
     @Override
     public boolean setDeck(MagicDeck newDeck, Path deckPath) {
-        if (!editDeck.equals(refDeck)) {
+        if (!controller.editDeck.equals(controller.refDeck)) {
             int response = JOptionPane.showConfirmDialog(
                 ScreenController.getFrame(),
                 MText.get(_S21),

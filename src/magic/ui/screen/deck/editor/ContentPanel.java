@@ -17,6 +17,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     private static final String _S1 = "This deck is illegal.\n\n%s";
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+    private final DeckEditorController controller = DeckEditorController.instance;
 
     private final MigLayout migLayout = new MigLayout();
     private final DeckSideBar sideBarPanel; // LHS
@@ -52,7 +53,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     void setCard(final MagicCardDefinition card) {
-        final int cardCount = DeckEditorScreen.editDeck.getCardCount(card);
+        final int cardCount = controller.editDeck.getCardCount(card);
         sideBarPanel.setCard(card);
         sideBarPanel.setCardCount(cardCount);
     }
@@ -62,7 +63,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     MagicDeck getDeck() {
-        return DeckEditorScreen.editDeck;
+        return controller.editDeck;
     }
 
     private String getBrokenRules(final MagicDeck deck) {
@@ -74,7 +75,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     boolean validateDeck(final boolean notifyUser) {
-        final String brokenRules = getBrokenRules(DeckEditorScreen.editDeck);
+        final String brokenRules = getBrokenRules(controller.editDeck);
         if (brokenRules.length() > 0) {
             if (notifyUser) {
                 notifyUser(brokenRules);

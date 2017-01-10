@@ -100,7 +100,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private void doCardPoolPanelSelectionAction() {
         if (cardPoolPanel.getSelectedCard() != null) {
             selectedCard = cardPoolPanel.getSelectedCard();
-            if (DeckEditorScreen.editDeck.contains(selectedCard) == false) {
+            if (controller.editDeck.contains(selectedCard) == false) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -128,16 +128,16 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            DeckEditorScreen.editDeck.add(card);
+            controller.editDeck.add(card);
         }
 
-        listener.deckUpdated(DeckEditorScreen.editDeck);
+        listener.deckUpdated(controller.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
         listener.addCardToRecall(card);
 
-        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
+        deckPanel.getTableModel().setCards(controller.editDeck);
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
@@ -153,22 +153,22 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
             return;
         }
 
-        if (DeckEditorScreen.editDeck.contains(card) == false) {
+        if (controller.editDeck.contains(card) == false) {
             MagicSound.BEEP.play();
             return;
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            DeckEditorScreen.editDeck.remove(card);
+            controller.editDeck.remove(card);
         }
 
-        listener.deckUpdated(DeckEditorScreen.editDeck);
+        listener.deckUpdated(controller.editDeck);
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
         listener.addCardToRecall(card);
 
-        deckPanel.getTableModel().setCards(DeckEditorScreen.editDeck);
+        deckPanel.getTableModel().setCards(controller.editDeck);
         deckPanel.getTable().repaint();
 
         if (card != deckPanel.getSelectedCard() && cardPoolPanel.getSelectedCard() != null) {
@@ -195,11 +195,11 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     }
 
     private int getDefaultDeckSize() {
-        return DeckEditorScreen.editDeck.size() < MagicDeck.DEFAULT_SIZE
+        return controller.editDeck.size() < MagicDeck.DEFAULT_SIZE
                 ? ScreenController.isDuelActive() == false
                         ? 60
                         : MagicDeck.DEFAULT_SIZE
-                : DeckEditorScreen.editDeck.size();
+                : controller.editDeck.size();
     }
 
     private boolean generateRandomDeck() {

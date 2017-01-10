@@ -23,6 +23,8 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     public static final int DECK_ACTION_PANEL_WIDTH = 40;
 
+    private final DeckEditorController controller = DeckEditorController.instance;
+
     private final MigLayout miglayout = new MigLayout();
 
     private final ToggleButtonsPanel toggleButtonsPanel = new ToggleButtonsPanel();
@@ -204,11 +206,11 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     void doRefreshView() {
         deckPanel.doRefreshView();
-        legalityPanel.setDeck(DeckEditorScreen.editDeck);
+        legalityPanel.setDeck(controller.editDeck);
     }
 
     MagicDeck getDeck() {
-        return DeckEditorScreen.editDeck;
+        return controller.editDeck;
     }
 
     boolean isUpdatingExistingDeck() {
