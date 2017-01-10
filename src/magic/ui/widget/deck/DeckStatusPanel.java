@@ -27,11 +27,16 @@ public class DeckStatusPanel extends JPanel {
     }
 
     public void setDeck(final MagicDeck deck, final boolean showDeckSize) {
-        deckNameLabel.setText(deck != null ? deck.getName() : "");
-        deckSizeLabel.setText(showDeckSize && deck != null
-            ? MText.get(_S1, deck.size())
-            : deck.isUnsaved() ? "[ UNSAVED ]" : deck.getDeckType().toString()
-        );
+        if (deck != null) {
+            deckNameLabel.setText(deck.getName());
+            deckSizeLabel.setText(showDeckSize
+                ? MText.get(_S1, deck.size())
+                : deck.isUnsaved() ? "[ UNSAVED ]" : deck.getDeckType().toString()
+            );
+        } else {
+            deckNameLabel.setText("");
+            deckSizeLabel.setText("");
+        }
         refreshLayout();
     }
 
