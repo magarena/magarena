@@ -2,7 +2,7 @@ package magic.ui.screen.images.download;
 
 import magic.translate.MText;
 
-enum DownloadMode {
+public enum DownloadMode {
 
     CARDS(EnumStrings._S1),
     CROPS(EnumStrings._S2);

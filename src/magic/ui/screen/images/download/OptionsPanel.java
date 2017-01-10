@@ -93,12 +93,13 @@ class OptionsPanel extends JPanel {
     private void doDownloadModeChanged() {
         setEnabled(false);
         firePropertyChange(CP_OPTIONS_CHANGED, true, false);
+        CONFIG.setCardsDownloadMode((DownloadMode) cboDownloadMode.getSelectedItem());
     }
 
     private void setDownloadModeCombo() {
         cboDownloadMode.setFont(cboDownloadMode.getFont().deriveFont(Font.BOLD));
         cboDownloadMode.setModel(new DefaultComboBoxModel<>(DownloadMode.values()));
-        cboDownloadMode.getModel().setSelectedItem(cboDownloadMode.getItemAt(0));
+        cboDownloadMode.getModel().setSelectedItem(CONFIG.getCardsDownloadMode());
         cboDownloadMode.addItemListener((final ItemEvent e) -> {
             if (e.getStateChange() == ItemEvent.SELECTED) {
                 doDownloadModeChanged();
