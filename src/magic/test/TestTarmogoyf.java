@@ -6,6 +6,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
+/*
+* Tarmogoyf should not die when damaged by Lightning Bolt. The bolt should be in the graveyard before damage is dealt
+*
+* Issue #688
+* */
+
 class TestTarmogoyf extends TestGameBuilder {
     //Tarmogoyf should survive the lightning bolt
     public MagicGame getGame() {

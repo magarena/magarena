@@ -6,6 +6,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
+/*
+* Recreation of game state to show how the AI keeps shuffling Rishadan Pawnshop back into the deck
+*
+* Issue #201
+* */
+
 class TestRishadan extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);

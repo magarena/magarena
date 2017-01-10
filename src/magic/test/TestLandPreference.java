@@ -6,9 +6,15 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
-// There's 4 elves and a bunch of island in the AI's hand - after 4 draws it
-// will draw a Breaching Leviathan which it won't be able to cast as it hasn't
-// been playing any islands
+/* There's 4 elves and a bunch of island in the AI's hand - after 4 draws it
+* will draw a Breaching Leviathan which it won't be able to cast as it hasn't
+* been playing any islands
+*
+* Attempt to display AI declining to play lands
+*
+* Issue #333
+* */
+
 class TestLandPreference extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);

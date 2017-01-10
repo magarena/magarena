@@ -7,6 +7,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
+/*
+*Attempt to show the AI 'messing around' with Noxious Revival and Brave the Elements. Occasionally loops.
+*
+* Issue #174
+* */
+
 class TestNoxious extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 8);

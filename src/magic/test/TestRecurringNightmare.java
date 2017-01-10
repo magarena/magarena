@@ -5,6 +5,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
+/*
+* The creature sacrificed to activate Recurring Nightmare should not be a legal target for reanimation.
+*
+* Issue #573
+* */
+
 class TestRecurringNightmare extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();

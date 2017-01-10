@@ -1,12 +1,19 @@
 
 package magic.test;
 
+import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicDeckProfile;
-import magic.model.phase.*;
-import magic.ai.MagicAIImpl;
+import magic.model.phase.MagicUpkeepPhase;
+
+/*
+* Shows how it's possible to start activating an ability which then becomes illegal.
+*
+* Activate Foul Familar's ability, paying mana from Vesper Ghoul.
+*
+* Issue #226
+* */
 
 class TestNoChoice extends TestGameBuilder {
     public MagicGame getGame() {

@@ -6,6 +6,13 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
+/*
+*Test to try and get the AI to use Gilder Bairn. Using Gilder Bairn is the only win condition (Short of running out of cards)
+* MMAB has trouble. MCTS fares better.
+*
+* Issue #300
+* */
+
 class TestBairn extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);
