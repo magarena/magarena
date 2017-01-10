@@ -1,0 +1,184 @@
+Aegis Automaton
+Aerial Modification
+Aeronaut Admiral
+Aether Chaser
+Aether Herder
+Aether Inspector
+Aether Poisoner
+Aether Swooper
+Aethergeode Miner
+Aethersphere Harvester
+Aetherstream Leopard
+Aethertide Whale
+Aetherwind Basker
+Aid from the Cowl
+Airdrop Aeronauts
+Ajani Unyielding
+Alley Evasion
+Alley Strangler
+Audacious Infiltrator
+Augmenting Automaton
+Baral's Expertise
+Baral, Chief of Compliance
+Barricade Breaker
+Bastion Enforcer
+Bastion Inventor
+Battle at the Bridge
+Call for Unity
+Caught in the Brights
+Chandra's Revolution
+Cogwork Assembler
+Consulate Crackdown
+Consulate Dreadnought
+Consulate Turret
+Conviction
+Countless Gears Renegade
+Crackdown Construct
+Cruel Finality
+Daredevil Dragster
+Daring Demolition
+Dark Intimations
+Dawnfeather Eagle
+Deadeye Harpooner
+Decommission
+Defiant Salvager
+Deft Dismissal
+Destructive Tampering
+Disallow
+Dispersal Technician
+Druid of the Cowl
+Efficient Construction
+Embraal Gear-Smasher
+Enraged Giant
+Exquisite Archangel
+Fatal Push
+Felidar Guardian
+Fen Hauler
+Filigree Crawler
+Foundry Assembler
+Foundry Hornet
+Fourth Bridge Prowler
+Freejam Regent
+Frontline Rebel
+Ghirapur Osprey
+Gifted Aetherborn
+Glint-Sleeve Siphoner
+Gonti's Aether Heart
+Gonti's Machinations
+Greenbelt Rampager
+Greenwheel Liberator
+Gremlin Infestation
+Heart of Kiran
+Herald of Anguish
+Heroic Intervention
+Hidden Herbalists
+Hidden Stockpile
+Highspire Infusion
+Hinterland Drake
+Hope of Ghirapur
+Hungry Flames
+Ice Over
+Illusionist's Stratagem
+Implement of Combustion
+Implement of Examination
+Implement of Ferocity
+Implement of Improvement
+Implement of Malice
+Indomitable Creativity
+Inspiring Statuary
+Invigorated Rampage
+Ironclad Revolutionary
+Irontread Crusher
+Kari Zev's Expertise
+Kari Zev, Skyship Raider
+Lathnu Sailback
+Leave in the Dust
+Lifecraft Awakening
+Lifecraft Cavalry
+Lifecrafter's Bestiary
+Lifecrafter's Gift
+Lightning Runner
+Maulfist Revolutionary
+Maverick Thopterist
+Mechanized Production
+Merchant's Dockhand
+Metallic Mimic
+Metallic Rebuke
+Midnight Entourage
+Mobile Garrison
+Monstrous Onslaught
+Narnam Renegade
+Natural Obsolescence
+Negate
+Night Market Aeronaut
+Night Market Guard
+Oath of Ajani
+Ornithopter
+Outland Boar
+Pacification Array
+Paradox Engine
+Peacewalker Colossus
+Peema Aether-Seer
+Perilous Predicament
+Pia's Revolution
+Planar Bridge
+Precise Strike
+Prey Upon
+Prizefighter Construct
+Quicksmith Rebel
+Quicksmith Spy
+Ravenous Intruder
+Reckless Racer
+Release the Gremlins
+Renegade Map
+Renegade Rallier
+Renegade Wheelsmith
+Renegade's Getaway
+Reservoir Walker
+Resourceful Return
+Restoration Specialist
+Reverse Engineer
+Ridgescale Tusker
+Rishkar's Expertise
+Rishkar, Peema Renegade
+Rogue Refiner
+Salvage Scuttler
+Scrap Trawler
+Scrapper Champion
+Scrounging Bandar
+Secret Salvage
+Servo Schematic
+Shielded Aether Thief
+Shipwreck Moray
+Shock
+Siege Modification
+Silkweaver Elite
+Skyship Plunderer
+Sly Requisitioner
+Solemn Recruit
+Spire Patrol
+Spire of Industry
+Sram's Expertise
+Sram, Senior Edificer
+Sweatworks Brawler
+Take into Custody
+Tezzeret the Schemer
+Tezzeret's Touch
+Thopter Arrest
+Treasure Keeper
+Trophy Mage
+Unbridled Growth
+Universal Solvent
+Untethered Express
+Vengeful Rebel
+Verdant Automaton
+Walking Ballista
+Watchful Automaton
+Welder Automaton
+Weldfast Engineer
+Whir of Invention
+Wind-Kin Raiders
+Winding Constrictor
+Wrangle
+Yahenni's Expertise
+Yahenni, Undying Partisan
