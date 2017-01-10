@@ -10,11 +10,11 @@ public enum DownloadMode {
     private final String desc;
 
     private DownloadMode(String aDesc) {
-        this.desc = MText.get(aDesc);
+        this.desc = aDesc;
     }
 
     @Override
     public String toString() {
-        return desc;
+        return MText.get(desc);
     }
 }
