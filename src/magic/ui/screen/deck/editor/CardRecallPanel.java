@@ -74,7 +74,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     private void doRecallPanelSelectionAction() {
         if (getRecallSelectedCard() != null) {
             selectedCard = getRecallSelectedCard();
-            if (controller.editDeck.contains(selectedCard) == false) {
+            if (controller.getDeck().contains(selectedCard) == false) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -145,15 +145,15 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            controller.editDeck.add(card);
+            controller.getDeck().add(card);
         }
 
-        listener.deckUpdated(controller.editDeck);
+        listener.deckUpdated(controller.getDeck());
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
 
-        deckPanel.getTableModel().setCards(controller.editDeck);
+        deckPanel.getTableModel().setCards(controller.getDeck());
         deckPanel.getTable().repaint();
         deckPanel.setSelectedCard(card);
 
@@ -169,21 +169,21 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
             return;
         }
 
-        if (controller.editDeck.contains(card) == false) {
+        if (controller.getDeck().contains(card) == false) {
             MagicSound.BEEP.play();
             return;
         }
 
         for (int i = 0; i < quantityPanel.getQuantity(); i++) {
-            controller.editDeck.remove(card);
+            controller.getDeck().remove(card);
         }
 
-        listener.deckUpdated(controller.editDeck);
+        listener.deckUpdated(controller.getDeck());
 
         // Ensures the count overlay is updated on card image.
         listener.cardSelected(card);
 
-        deckPanel.getTableModel().setCards(controller.editDeck);
+        deckPanel.getTableModel().setCards(controller.getDeck());
         deckPanel.getTable().repaint();
 
         if (card != deckPanel.getSelectedCard() && getRecallSelectedCard() != null) {

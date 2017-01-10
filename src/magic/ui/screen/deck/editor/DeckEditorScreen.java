@@ -155,7 +155,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
             if (controller.hasDeckChanged()) {
                 controller.setDeckStatusToUnsaved();
             }
-            if (deckClient.setDeck(controller.editDeck)) {
+            if (deckClient.setDeck(controller.getDeck())) {
                 ScreenController.closeActiveScreen(false);
             }
         }
@@ -275,7 +275,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     void doRefreshViews() {
         contentPanel.doRefreshView();
-        deckStatusPanel.setDeck(controller.editDeck, false);
+        deckStatusPanel.setDeck(controller.getDeck(), false);
     }
 
     @Override

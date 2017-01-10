@@ -206,11 +206,11 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
     void doRefreshView() {
         deckPanel.doRefreshView();
-        legalityPanel.setDeck(controller.editDeck);
+        legalityPanel.setDeck(controller.getDeck());
     }
 
     MagicDeck getDeck() {
-        return controller.editDeck;
+        return controller.getDeck();
     }
 
     boolean isUpdatingExistingDeck() {

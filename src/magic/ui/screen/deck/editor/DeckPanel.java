@@ -54,7 +54,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
 
         actionButtons.add(getClearDeckActionButton());
 
-        deckTablePanel = new DeckTablePanel(controller.editDeck, getDeckTitle());
+        deckTablePanel = new DeckTablePanel(controller.getDeck(), getDeckTitle());
         deckTablePanel.setDeckEditorSelectionMode();
         deckTablePanel.setHeaderVisible(false);
         deckTablePanel.showCardCount(true);
@@ -63,7 +63,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         setLookAndFeel();
         refreshLayout();
 
-        if (!controller.editDeck.isEmpty()) {
+        if (!controller.getDeck().isEmpty()) {
             deckTablePanel.selectFirstRow();
         }
     }
@@ -109,7 +109,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     private String getDeckTitle() {
-        return String.format("   %s", controller.editDeck.getName());
+        return String.format("   %s", controller.getDeck().getName());
     }
 
     private void setLookAndFeel() {
@@ -125,7 +125,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     private void doClearDeck() {
-        if (!controller.editDeck.isEmpty()) {
+        if (!controller.getDeck().isEmpty()) {
             final int userResponse = JOptionPane.showOptionDialog(ScreenController.getFrame(),
                     String.format("<html>%s<br><br><b>%s</b></html>", MText.get(_S3), MText.get(_S4)),
                     MText.get(_S5),
@@ -143,8 +143,8 @@ class DeckPanel extends JPanel implements IDeckEditorView {
 
     void doRefreshView() {
         deckTablePanel.setTitle(getDeckTitle());
-        deckTablePanel.setDeck(controller.editDeck);
-        listener.deckUpdated(controller.editDeck);
+        deckTablePanel.setDeck(controller.getDeck());
+        listener.deckUpdated(controller.getDeck());
     }
 
     @Override
@@ -163,7 +163,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     private void removeSelectedCardFromDeck(final boolean isMouseClick) {
-        final int cardCount = controller.editDeck.getCardCount(getSelectedCard());
+        final int cardCount = controller.getDeck().getCardCount(getSelectedCard());
         int quantity = Math.min(cardCount, quantityPanel.getQuantity());
         if (cardCount - quantity < 1 && isMouseClick) {
             quantity = cardCount - 1;
@@ -175,17 +175,17 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     void addCardToDeck(final MagicCardDefinition card) {
-        controller.editDeck.add(card);
-        deckTablePanel.setCards(controller.editDeck);
+        controller.getDeck().add(card);
+        deckTablePanel.setCards(controller.getDeck());
         deckTablePanel.setSelectedCard(card);
-        listener.deckUpdated(controller.editDeck);
+        listener.deckUpdated(controller.getDeck());
     }
 
     void removeCardFromDeck(MagicCardDefinition card) {
-        controller.editDeck.remove(card);
-        deckTablePanel.setCards(controller.editDeck);
+        controller.getDeck().remove(card);
+        deckTablePanel.setCards(controller.getDeck());
         deckTablePanel.setSelectedCard(card);
-        listener.deckUpdated(controller.editDeck);
+        listener.deckUpdated(controller.getDeck());
     }
 
     @Override
@@ -197,7 +197,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     boolean isUpdatingExistingDeck() {
-        return controller.editDeck != null;
+        return controller.getDeck() != null;
     }
 
     void setSelectedCard(MagicCardDefinition selectedCard) {

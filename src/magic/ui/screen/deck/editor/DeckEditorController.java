@@ -4,11 +4,13 @@ import magic.model.MagicDeck;
 
 final class DeckEditorController {
 
+    private DeckEditorController() { }
+
     static final DeckEditorController instance = new DeckEditorController();
 
     private DeckEditorScreen mainScreen;
     private MagicDeck refDeck;
-    MagicDeck editDeck;
+    private MagicDeck editDeck;
 
     private void setDecks(MagicDeck aDeck) {
         refDeck = aDeck == null ? new MagicDeck() : aDeck;
@@ -25,7 +27,9 @@ final class DeckEditorController {
         mainScreen.doRefreshViews();
     }
 
-    private DeckEditorController() { }
+    MagicDeck getDeck() {
+        return editDeck;
+    }
 
     boolean hasDeckChanged() {
         return !editDeck.equals(refDeck);

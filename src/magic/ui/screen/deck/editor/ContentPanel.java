@@ -53,7 +53,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     void setCard(final MagicCardDefinition card) {
-        final int cardCount = controller.editDeck.getCardCount(card);
+        final int cardCount = controller.getDeck().getCardCount(card);
         sideBarPanel.setCard(card);
         sideBarPanel.setCardCount(cardCount);
     }
@@ -63,7 +63,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     MagicDeck getDeck() {
-        return controller.editDeck;
+        return controller.getDeck();
     }
 
     private String getBrokenRules(final MagicDeck deck) {
@@ -75,7 +75,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     }
 
     boolean validateDeck(final boolean notifyUser) {
-        final String brokenRules = getBrokenRules(controller.editDeck);
+        final String brokenRules = getBrokenRules(controller.getDeck());
         if (brokenRules.length() > 0) {
             if (notifyUser) {
                 notifyUser(brokenRules);
