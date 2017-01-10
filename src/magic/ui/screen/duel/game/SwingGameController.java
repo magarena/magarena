@@ -50,8 +50,8 @@ import magic.model.event.MagicPriorityEvent;
 import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.MagicFileChoosers;
@@ -1135,6 +1135,10 @@ public class SwingGameController implements IUIGameController {
         } else {
             new GameOptionsOverlay(this);
         }
+    }
+
+    public void setStackCount(int count) {
+        logStackViewer.setStackCount(count);
     }
 
 }

@@ -187,6 +187,7 @@ public class LogStackViewer extends JPanel {
         GeneralConfig.getInstance().save();
     }
 
-
-
+    public void setStackCount(int count) {
+        stackTitleBar.setText(MText.get(_S5) + " : " + count);
+    }
 }
