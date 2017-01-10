@@ -19,6 +19,8 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.zip.CRC32;
 import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
@@ -37,7 +39,7 @@ public final class MText {
         try {
             loadTranslationFile();
         } catch (Exception ex) {
-            System.err.println("Translation file error: " + ex);
+            Logger.getLogger(MText.class.getName()).log(Level.WARNING, null, ex);
         }
     }
 
