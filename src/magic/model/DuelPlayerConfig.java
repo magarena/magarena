@@ -5,6 +5,7 @@ import magic.data.CardDefinitions;
 import magic.data.DeckType;
 import magic.exception.InvalidDeckException;
 import magic.model.player.PlayerProfile;
+import magic.utility.DeckUtils;
 
 public class DuelPlayerConfig {
 
@@ -82,8 +83,11 @@ public class DuelPlayerConfig {
         }
         deck.setFilename(properties.getProperty(prefix + "deck.name", ""));
         deck.setDeckType(DeckType.valueOf(properties.getProperty(prefix + "deck.file.type", "Random")));
-        deck.setDeckFileChecksum(getDeckFileChecksum(properties, prefix));
         deck.setDescription(properties.getProperty(prefix + "deck.desc", ""));
+        // only set non-zero checksum if original deck file on which duel
+        // deck was based has not changed since the duel was created.
+        long cs = getDeckFileChecksum(properties, prefix);
+        deck.setDeckFileChecksum(cs > 0 && DeckUtils.getDeckFileChecksum(deck) == cs ? cs : 0);
     }
 
     public void save(final Properties properties, final String prefix) {

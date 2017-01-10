@@ -249,6 +249,12 @@ public class DeckUtils {
         }
     }
 
+    public static long getDeckFileChecksum(MagicDeck aDeck) {
+        Path deckPath = DeckType.getDeckFolder(aDeck.getDeckType());
+        Path deckFile = deckPath.resolve(aDeck.getName() + ".dec");
+        return getDeckFileChecksum(deckFile);
+    }
+
     private static boolean isSamePath(Path p1, Path p2) {
         try {
             return Files.isSameFile(p1, p2);
