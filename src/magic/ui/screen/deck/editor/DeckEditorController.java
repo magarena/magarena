@@ -7,7 +7,7 @@ final class DeckEditorController {
     static final DeckEditorController instance = new DeckEditorController();
 
     private DeckEditorScreen mainScreen;
-    MagicDeck refDeck;
+    private MagicDeck refDeck;
     MagicDeck editDeck;
 
     private void setDecks(MagicDeck aDeck) {
@@ -26,4 +26,12 @@ final class DeckEditorController {
     }
 
     private DeckEditorController() { }
+
+    boolean hasDeckChanged() {
+        return !editDeck.equals(refDeck);
+    }
+
+    void setDeckStatusToUnsaved() {
+        editDeck.setUnsavedStatus();
+    }
 }

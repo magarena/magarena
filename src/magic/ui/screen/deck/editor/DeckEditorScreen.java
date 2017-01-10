@@ -152,8 +152,8 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     private void doUseDeckAction() {
         if (contentPanel.validateDeck(true)) {
-            if (!controller.editDeck.equals(controller.refDeck)) {
-                controller.editDeck.setUnsavedStatus();
+            if (controller.hasDeckChanged()) {
+                controller.setDeckStatusToUnsaved();
             }
             if (deckClient.setDeck(controller.editDeck)) {
                 ScreenController.closeActiveScreen(false);
@@ -245,7 +245,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
     }
 
     private boolean isUserReadyToClose() {
-        if (!controller.editDeck.equals(controller.refDeck)) {
+        if (controller.hasDeckChanged()) {
             int response = JOptionPane.showConfirmDialog(
                 ScreenController.getFrame(),
                 MText.get(_S21),
@@ -285,7 +285,7 @@ public class DeckEditorScreen extends HeaderFooterScreen
 
     @Override
     public boolean setDeck(MagicDeck newDeck, Path deckPath) {
-        if (!controller.editDeck.equals(controller.refDeck)) {
+        if (controller.hasDeckChanged()) {
             int response = JOptionPane.showConfirmDialog(
                 ScreenController.getFrame(),
                 MText.get(_S21),
