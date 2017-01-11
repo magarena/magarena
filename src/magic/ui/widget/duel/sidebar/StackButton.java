@@ -7,13 +7,14 @@ import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.StackViewerInfo;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.message.TextLabel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class StackButton extends PanelButton implements IChoiceViewer {
@@ -21,7 +22,7 @@ class StackButton extends PanelButton implements IChoiceViewer {
     private final StackViewerInfo stackInfo;
     private final SwingGameController controller;
 
-    StackButton(SwingGameController aController, final StackViewerInfo stackInfo, final int maxWidth) {
+    StackButton(SwingGameController aController, StackViewerInfo stackInfo, int maxWidth, int itemNum) {
 
         this.controller = aController;
         this.stackInfo = stackInfo;
@@ -35,7 +36,16 @@ class StackButton extends PanelButton implements IChoiceViewer {
         final JLabel sourceLabel = new JLabel(stackInfo.name);
         sourceLabel.setIcon(stackInfo.icon);
         sourceLabel.setFont(sourceLabel.getFont().deriveFont(Font.BOLD | Font.ITALIC));
-        panel.add(sourceLabel, BorderLayout.NORTH);
+
+        final JLabel itemLabel = new JLabel("#" + Integer.toString(itemNum));
+        itemLabel.setFont(sourceLabel.getFont().deriveFont(Font.BOLD | Font.ITALIC));
+
+        final JPanel headerPanel = new JPanel(new MigLayout("insets 0", "[fill, grow][]4"));
+        headerPanel.setOpaque(false);
+        headerPanel.add(sourceLabel);
+        headerPanel.add(itemLabel);
+
+        panel.add(headerPanel, BorderLayout.NORTH);
 
         final TextLabel textLabel = new TextLabel(
             stackInfo.description,
