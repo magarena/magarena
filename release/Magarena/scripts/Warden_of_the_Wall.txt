@@ -6,6 +6,6 @@ type=Artifact
 cost={3}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {C} to your mana pool.
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=Warden of the Wall enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\nAs long as it's not your turn, Warden of the Wall is a 2/3 Gargoyle artifact creature with flying.
+requires_groovy_code

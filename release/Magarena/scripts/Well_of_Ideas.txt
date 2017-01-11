@@ -7,5 +7,5 @@ cost={5}{U}
 ability=When SN enters the battlefield, draw two cards.;\
         At the beginning of each other player's draw step, that player draws an additional card.;\
         At the beginning of your draw step, draw two additional cards.
-timing=main
+timing=enchantment
 oracle=When Well of Ideas enters the battlefield, draw two cards.\nAt the beginning of each other player's draw step, that player draws an additional card.\nAt the beginning of your draw step, draw two additional cards.

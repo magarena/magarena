@@ -1,5 +1,6 @@
 name=Wall of Heat
-image=http://magiccards.info/scans/en/br/95.jpg
+image=http://magiccards.info/scans/en/lg/167.jpg
+image_updated=2011-01-11
 value=3.227
 rarity=C
 type=Creature

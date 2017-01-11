@@ -1,5 +1,6 @@
 name=Wickerbough Elder
-image=http://magiccards.info/scans/en/arc/74.jpg
+image=http://magiccards.info/scans/en/eve/80.jpg
+image_updated=2017-01-11
 value=4.174
 rarity=C
 type=Creature

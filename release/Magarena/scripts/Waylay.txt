@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Create three 2/2 white Knight creature tokens. Exile them at the beginning of the next end step.
 timing=token
 oracle=Create three 2/2 white Knight creature tokens. Exile them at the beginning of the next cleanup step.
+#Should be cleanup step

@@ -1,7 +1,7 @@
 name=Wyluli Wolf
 image=http://magiccards.info/scans/en/6e/270.jpg
 value=2.359
-rarity=C
+rarity=R
 type=Creature
 subtype=Wolf
 cost={1}{G}

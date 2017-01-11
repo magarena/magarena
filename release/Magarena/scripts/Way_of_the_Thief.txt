@@ -8,6 +8,6 @@ cost={3}{U}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2.;\
         Enchanted creature can't be blocked as long as you control a Gate.
-timing=main
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nEnchanted creature can't be blocked as long as you control a Gate.

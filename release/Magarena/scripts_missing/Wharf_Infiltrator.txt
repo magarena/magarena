@@ -9,7 +9,7 @@ cost={1}{U}
 pt=1/1
 ability=Skulk;\
         Whenever SN deals combat damage to a player, you may draw a card. If you do, discard a card.;\
-        Whenever you discard a creature card, you may pay {2}. If you do, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+        Whenever you discard a creature card, you may pay {2}. If you do, create a 3/2 colorless Eldrazi Horror creature token.
 timing=main
-oracle=Skulk\nWhenever Wharf Infiltrator deals combat damage to a player, you may draw a card. If you do, discard a card.\nWhenever you discard a creature card, you may pay {2}. If you do, put a 3/2 colorless Eldrazi Horror creature token onto the battlefield.
+oracle=Skulk\nWhenever Wharf Infiltrator deals combat damage to a player, you may draw a card. If you do, discard a card.\nWhenever you discard a creature card, you may pay {2}. If you do, create a 3/2 colorless Eldrazi Horror creature token.
 status=not supported: when-discard

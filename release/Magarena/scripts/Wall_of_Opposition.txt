@@ -1,7 +1,8 @@
 name=Wall of Opposition
-image=http://magiccards.info/scans/en/ch/56.jpg
+image=http://magiccards.info/scans/en/lg/168.jpg
+image_updated=2011-01-11
 value=2.735
-rarity=U
+rarity=R
 type=Creature
 subtype=Wall
 cost={3}{R}{R}

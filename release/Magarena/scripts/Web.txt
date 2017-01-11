@@ -1,7 +1,7 @@
 name=Web
 image=http://magiccards.info/scans/en/9e/281.jpg
 value=2.727
-rarity=R
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}

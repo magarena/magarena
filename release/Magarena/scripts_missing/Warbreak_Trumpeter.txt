@@ -7,7 +7,7 @@ subtype=Goblin
 cost={R}
 pt=1/1
 ability=Morph {X}{X}{R};\
-        When SN is turned face up, put X 1/1 red Goblin creature tokens onto the battlefield.
+        When SN is turned face up, create X 1/1 red Goblin creature tokens.
 timing=main
-oracle=Morph {X}{X}{R}\nWhen Warbreak Trumpeter is turned face up, put X 1/1 red Goblin creature tokens onto the battlefield.
+oracle=Morph {X}{X}{R}\nWhen Warbreak Trumpeter is turned face up, create X 1/1 red Goblin creature tokens.
 status=not supported: no-info

@@ -7,6 +7,6 @@ subtype=Kraken
 cost={3}{U}{U}{B}
 pt=5/8
 ability=Islandwalk, swampwalk
-timing=smain
-requires_groovy_code
+timing=main
 oracle=Islandwalk, swampwalk\nWhenever Wrexial, the Risen Deep deals combat damage to a player, you may cast target instant or sorcery card from that player's graveyard without paying its mana cost. If that card would be put into a graveyard this turn, exile it instead.
+requires_groovy_code

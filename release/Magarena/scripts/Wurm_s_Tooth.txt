@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability=Whenever a player casts a green spell, you may gain 1 life.
-timing=fmain
+timing=artifact
 oracle=Whenever a player casts a green spell, you may gain 1 life.

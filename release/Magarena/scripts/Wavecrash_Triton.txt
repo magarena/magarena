@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={2}{U}
 pt=1/4
-ability=Whenever you cast a spell that targets SN, tap target creature an opponent controls. It doesn't untap during its controller's next untap step.
+ability=Whenever you cast a spell that targets SN, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Wavecrash Triton, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.

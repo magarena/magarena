@@ -5,6 +5,6 @@ removal=3
 rarity=U
 type=Sorcery
 cost={2}{G}
-timing=main
 effect=Destroy target creature with flying.
+timing=main
 oracle=Destroy target creature with flying.

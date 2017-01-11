@@ -1,5 +1,6 @@
 name=Wane
-image=http://magiccards.info/scans/en/arc/101b.jpg
+image=http://magiccards.info/scans/en/in/296b.jpg
+image_updated=2017-01-11
 value=4.148
 rarity=U
 type=Instant

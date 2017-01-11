@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{G}{G}
 pt=4/4
-timing=main
 ability=Multikicker {G}
-requires_groovy_code
+timing=main
 oracle=Multikicker {G}\nWhen Wolfbriar Elemental enters the battlefield, create a 2/2 green Wolf creature token for each time it was kicked.
+requires_groovy_code

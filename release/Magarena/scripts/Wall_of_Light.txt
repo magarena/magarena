@@ -1,7 +1,7 @@
 name=Wall of Light
 image=http://magiccards.info/scans/en/lg/212.jpg
 value=3.021
-rarity=C
+rarity=U
 type=Creature
 subtype=Wall
 cost={2}{W}

@@ -1,7 +1,7 @@
 name=Witch Hunter
 image=http://magiccards.info/scans/en/tsts/17.jpg
 value=3.675
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Cleric
 cost={2}{W}{W}

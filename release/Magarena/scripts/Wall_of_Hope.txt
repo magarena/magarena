@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={W}
 pt=0/3
-ability=defender
-timing=main
-requires_groovy_code
+ability=Defender
+timing=smain
 oracle=Defender\nWhenever Wall of Hope is dealt damage, you gain that much life.
+requires_groovy_code

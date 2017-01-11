@@ -8,6 +8,6 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature can't be blocked by white creatures.;\
         Enchanted creature gets +2/+2 as long as an opponent controls a white permanent.
-enchant=pump,pos creature
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature can't be blocked by white creatures.\nEnchanted creature gets +2/+2 as long as an opponent controls a white permanent.

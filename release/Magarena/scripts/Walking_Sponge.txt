@@ -11,3 +11,4 @@ ability={T}: Target creature loses flying until end of turn.;\
         {T}: Target creature loses trample until end of turn.
 timing=main
 oracle={T}: Target creature loses your choice of flying, first strike, or trample until end of turn.
+#Choice should be made on resolution

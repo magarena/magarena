@@ -7,5 +7,5 @@ subtype=Construct
 cost={2}
 pt=1/1
 ability={T}: You may put a land card from your hand onto the battlefield.
-timing=artifact
+timing=main
 oracle={T}: You may put a land card from your hand onto the battlefield.

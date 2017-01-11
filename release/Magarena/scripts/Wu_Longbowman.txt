@@ -1,7 +1,7 @@
 name=Wu Longbowman
 image=http://magiccards.info/scans/en/p3k/61.jpg
 value=2.160
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier,Archer
 cost={2}{U}

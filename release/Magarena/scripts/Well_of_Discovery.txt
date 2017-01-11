@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability=At the beginning of your end step, if you control no untapped lands, draw a card.
-timing=main
+timing=artifact
 oracle=At the beginning of your end step, if you control no untapped lands, draw a card.

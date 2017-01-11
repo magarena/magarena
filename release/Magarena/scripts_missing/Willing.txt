@@ -4,7 +4,8 @@ value=3.758
 rarity=R
 type=Instant
 cost={1}{W}{B}
-effect=Creatures you control gain deathtouch and lifelink until end of turn.~Fuse
+ability=Fuse
+effect=Creatures you control gain deathtouch and lifelink until end of turn.
 split=Ready
 timing=pump
 second_half

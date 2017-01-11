@@ -1,7 +1,7 @@
 name=Wei Elite Companions
 image=http://magiccards.info/scans/en/p3k/87.jpg
 value=2.750
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={4}{B}

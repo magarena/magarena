@@ -1,5 +1,6 @@
 name=Whims of the Fates
-image=http://magiccards.info/scans/en/bng/115.jpg
+image=http://magiccards.info/scans/en/c16/139.jpg
+image_updated=2017-01-11
 value=3.333
 rarity=R
 type=Sorcery

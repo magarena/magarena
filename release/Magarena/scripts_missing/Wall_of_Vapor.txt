@@ -1,5 +1,6 @@
 name=Wall of Vapor
-image=http://magiccards.info/scans/en/ch/27.jpg
+image=http://magiccards.info/scans/en/lg/84.jpg
+image_updated=2017-01-11
 value=2.302
 rarity=C
 type=Creature

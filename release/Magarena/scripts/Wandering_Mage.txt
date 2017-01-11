@@ -7,8 +7,7 @@ subtype=Human,Cleric,Wizard
 cost={W}{U}{B}
 pt=0/3
 ability={W}, Pay 1 life: Prevent the next 2 damage that would be dealt to target creature this turn.;\
-        {U}: Prevent the next 1 damage that would be dealt to target Cleric this turn.;\
-        {U}: Prevent the next 1 damage that would be dealt to target Wizard this turn.;\
+        {U}: Prevent the next 1 damage that would be dealt to target Cleric or Wizard creature this turn.;\
         {B}, Put a -1/-1 counter on a creature you control: Prevent the next 2 damage that would be dealt to target player this turn.
 timing=main
 oracle={W}, Pay 1 life: Prevent the next 2 damage that would be dealt to target creature this turn.\n{U}: Prevent the next 1 damage that would be dealt to target Cleric or Wizard creature this turn.\n{B}, Put a -1/-1 counter on a creature you control: Prevent the next 2 damage that would be dealt to target player this turn.

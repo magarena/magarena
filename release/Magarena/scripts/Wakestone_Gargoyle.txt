@@ -1,12 +1,12 @@
 name=Wakestone Gargoyle
 image=http://magiccards.info/scans/en/cns/88.jpg
 value=3.786
-rarity=R
+rarity=U
 type=Creature
 subtype=Gargoyle
 cost={3}{W}
 pt=3/4
 ability=Defender, flying;\
         {1}{W}: Creatures you control with defender can attack as though they didn't have defender this turn.
-timing=main
+timing=smain
 oracle=Defender, flying\n{1}{W}: Creatures you control with defender can attack this turn as though they didn't have defender.

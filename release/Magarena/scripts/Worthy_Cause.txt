@@ -4,8 +4,8 @@ value=2.594
 rarity=U
 type=Instant
 cost={W}
-ability=Buyback {2};\
-        As an additional cost to cast SN, sacrifice a creature.
+ability=As an additional cost to cast SN, sacrifice a creature.;\
+        Buyback {2}
 timing=pump
-requires_groovy_code
 oracle=Buyback {2}\nAs an additional cost to cast Worthy Cause, sacrifice a creature.\nYou gain life equal to the sacrificed creature's toughness.
+requires_groovy_code

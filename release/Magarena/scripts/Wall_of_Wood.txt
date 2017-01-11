@@ -1,6 +1,6 @@
 name=Wall of Wood
-image=http://magiccards.info/scans/en/dpa/89.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/309.jpg
+image_updated=2011-01-11
 value=1.820
 rarity=C
 type=Creature

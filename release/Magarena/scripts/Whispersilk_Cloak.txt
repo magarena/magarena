@@ -1,7 +1,7 @@
 name=Whispersilk Cloak
 image=http://magiccards.info/scans/en/pc2/115.jpg
 value=3.959
-rarity=C
+rarity=U
 type=Artifact
 subtype=Equipment
 cost={3}

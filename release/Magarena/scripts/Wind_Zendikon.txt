@@ -5,12 +5,13 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-enchant=pump,pos land
+ability=Enchant land
 given_ability=Flying
 given_color=u
 given_type=Creature
 given_subtype=Elemental
 set_pt=2/2
-timing=enchantment
-requires_groovy_code
+timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nEnchanted land is a 2/2 blue Elemental creature with flying. It's still a land.\nWhen enchanted land dies, return that card to its owner's hand.
+requires_groovy_code

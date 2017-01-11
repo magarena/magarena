@@ -7,6 +7,6 @@ subtype=Bird
 cost={W}
 pt=2/1
 ability=Flying;\
-        SN can't attack unless you control a Knight or Soldier.
+        SN can't attack unless you control a Knight or a Soldier.
 timing=main
 oracle=Flying\nWar Falcon can't attack unless you control a Knight or a Soldier.

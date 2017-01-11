@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={3}
 ability=At the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard.
-timing=main
+timing=artifact
 oracle=At the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard.

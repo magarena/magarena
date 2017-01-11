@@ -1,7 +1,7 @@
 name=Wormwood Treefolk
 image=http://magiccards.info/scans/en/dk/55.jpg
 value=2.694
-rarity=U
+rarity=R
 type=Creature
 subtype=Treefolk
 cost={3}{G}{G}

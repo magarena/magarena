@@ -8,5 +8,5 @@ cost={4}
 pt=2/4
 ability=SN has vigilance as long as you control a white creature.;\
         SN has flying as long as you control a blue creature.
-timing=artifact
+timing=main
 oracle=Watchwing Scarecrow has vigilance as long as you control a white creature.\nWatchwing Scarecrow has flying as long as you control a blue creature.

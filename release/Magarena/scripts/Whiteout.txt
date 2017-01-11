@@ -1,7 +1,7 @@
 name=Whiteout
 image=http://magiccards.info/scans/en/ia/163.jpg
 value=2.944
-rarity=C
+rarity=U
 type=Instant
 cost={1}{G}
 ability=Sacrifice a snow land: Return SN from your graveyard to your hand.

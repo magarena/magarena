@@ -1,11 +1,12 @@
 name=Warp Artifact
 image=http://magiccards.info/scans/en/5e/66.jpg
 value=2.917
-rarity=C
+rarity=R
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-enchant=default,neg artifact
+ability=Enchant artifact
 timing=aura
-requires_groovy_code
+enchant=default,neg artifact
 oracle=Enchant artifact\nAt the beginning of the upkeep of enchanted artifact's controller, Warp Artifact deals 1 damage to that player.
+requires_groovy_code

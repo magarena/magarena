@@ -1,5 +1,6 @@
 name=Waterspout Djinn
-image=http://magiccards.info/scans/en/jvc/11.jpg
+image=http://magiccards.info/scans/en/vi/50.jpg
+image_updated=2017-01-11
 value=2.500
 rarity=U
 type=Creature
@@ -7,6 +8,6 @@ subtype=Djinn
 cost={2}{U}{U}
 pt=4/4
 ability=Flying;\
-        At the beginning of your upkeep, you may return an untapped Island you control to its owner's hand. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you return an untapped Island you control to its owner's hand.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Waterspout Djinn unless you return an untapped Island you control to its owner's hand.

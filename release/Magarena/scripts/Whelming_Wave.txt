@@ -1,5 +1,6 @@
 name=Whelming Wave
-image=http://magiccards.info/scans/en/ddo/44.jpg
+image=http://magiccards.info/scans/en/bng/57.jpg
+image_updated=2017-01-11
 value=3.800
 rarity=R
 type=Sorcery

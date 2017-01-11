@@ -8,5 +8,5 @@ cost={W}{U}{B}
 pt=2/2
 ability=Lifelink;\
         SN has flying as long as an artifact card is in your graveyard.
-timing=artifact
+timing=main
 oracle=Lifelink\nWindwright Mage has flying as long as an artifact card is in your graveyard.

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability=At the beginning of your end step, if you control no untapped lands, you gain 2 life.
-timing=main
+timing=artifact
 oracle=At the beginning of your end step, if you control no untapped lands, you gain 2 life.

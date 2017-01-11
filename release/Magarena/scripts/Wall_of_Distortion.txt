@@ -8,5 +8,5 @@ cost={2}{B}{B}
 pt=1/3
 ability=Defender;\
         {2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
-timing=main
+timing=smain
 oracle=Defender\n{2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.

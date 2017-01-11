@@ -7,5 +7,5 @@ subtype=Golem
 cost={6}
 pt=4/4
 ability=Morph {5}
-timing=artifact
+timing=main
 oracle=Morph {5}

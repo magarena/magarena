@@ -1,8 +1,8 @@
 name=Wall of Spears
-image=http://magiccards.info/scans/en/dpa/96.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/8e/320.jpg
+image_updated=2011-01-11
 value=3.036
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Wall
 cost={3}

@@ -8,5 +8,5 @@ cost={3}
 pt=2/2
 ability=SN has flying as long as you control a blue creature.;\
         SN has persist as long as you control a black creature.
-timing=artifact
+timing=main
 oracle=Wingrattle Scarecrow has flying as long as you control a blue creature.\nWingrattle Scarecrow has persist as long as you control a black creature.

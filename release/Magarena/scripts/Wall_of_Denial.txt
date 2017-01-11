@@ -1,5 +1,6 @@
 name=Wall of Denial
-image=http://magiccards.info/scans/en/ddi/11.jpg
+image=http://magiccards.info/scans/en/cmd/237.jpg
+image_updated=2011-01-11
 value=3.784
 rarity=U
 type=Creature

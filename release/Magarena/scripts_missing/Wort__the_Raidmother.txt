@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={4}{R/G}{R/G}
 pt=3/3
-ability=When SN enters the battlefield, put two 1/1 red and green Goblin Warrior creature tokens onto the battlefield.;\
+ability=When SN enters the battlefield, create two 1/1 red and green Goblin Warrior creature tokens.;\
         Each red or green instant or sorcery spell you cast has conspire.
 timing=main
-oracle=When Wort, the Raidmother enters the battlefield, put two 1/1 red and green Goblin Warrior creature tokens onto the battlefield.\nEach red or green instant or sorcery spell you cast has conspire.
+oracle=When Wort, the Raidmother enters the battlefield, create two 1/1 red and green Goblin Warrior creature tokens.\nEach red or green instant or sorcery spell you cast has conspire.
 status=not supported: spell-modification

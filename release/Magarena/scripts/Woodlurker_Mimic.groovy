@@ -15,7 +15,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN becomes 4/5 and gains wither until end of turn."
+                    "SN has base power and toughness 4/5 until end of turn and gains wither until end of turn."
                 ):
                 MagicEvent.NONE;
         }
