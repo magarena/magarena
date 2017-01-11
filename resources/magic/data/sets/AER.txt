@@ -14,6 +14,9 @@ Aetherwind Basker
 Aid from the Cowl
 Airdrop Aeronauts
 Ajani Unyielding
+Ajani's Aid
+Ajani's Comrade
+Ajani, Valiant Protector
 Alley Evasion
 Alley Strangler
 Audacious Infiltrator
@@ -85,6 +88,7 @@ Implement of Ferocity
 Implement of Improvement
 Implement of Malice
 Indomitable Creativity
+Inspiring Roar
 Inspiring Statuary
 Invigorated Rampage
 Ironclad Revolutionary
@@ -119,6 +123,7 @@ Pacification Array
 Paradox Engine
 Peacewalker Colossus
 Peema Aether-Seer
+Pendulum of Patterns
 Perilous Predicament
 Pia's Revolution
 Planar Bridge
@@ -160,11 +165,16 @@ Spire Patrol
 Spire of Industry
 Sram's Expertise
 Sram, Senior Edificer
+Submerged Boneyard
 Sweatworks Brawler
 Take into Custody
 Tezzeret the Schemer
+Tezzeret's Betrayal
+Tezzeret's Simulacrum
 Tezzeret's Touch
+Tezzeret, Master of Metal
 Thopter Arrest
+Tranquil Expanse
 Treasure Keeper
 Trophy Mage
 Unbridled Growth
