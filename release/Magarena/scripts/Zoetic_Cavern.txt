@@ -6,5 +6,5 @@ rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
         Morph {2}
-timing=main
+timing=land
 oracle={T}: Add {C} to your mana pool.\nMorph {2}

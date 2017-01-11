@@ -1,7 +1,7 @@
 name=Zhang Fei, Fierce Warrior
 image=http://magiccards.info/scans/en/p3k/32.jpg
 value=3.685
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={4}{W}{W}

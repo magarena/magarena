@@ -5,6 +5,6 @@ rarity=R
 type=Artifact
 cost={3}
 ability=You may choose not to untap SN during your untap step.
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=You may choose not to untap Zelyon Sword during your untap step.\n{3}, {T}: Target creature gets +2/+0 for as long as Zelyon Sword remains tapped.
+requires_groovy_code

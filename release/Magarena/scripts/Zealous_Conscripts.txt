@@ -8,5 +8,5 @@ cost={4}{R}
 pt=3/3
 ability=Haste;\
         When SN enters the battlefield, gain control of target permanent until end of turn.~Untap *that permanent*.~*It* gains haste until end of turn.
-timing=main
+timing=fmain
 oracle=Haste\nWhen Zealous Conscripts enters the battlefield, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.

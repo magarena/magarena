@@ -1,7 +1,7 @@
 name=Zombie Master
 image=http://magiccards.info/scans/en/6e/162.jpg
 value=4.395
-rarity=U
+rarity=R
 type=Creature
 subtype=Zombie
 cost={1}{B}{B}
