@@ -5,6 +5,6 @@ removal=1
 rarity=C
 type=Instant
 cost={1}{W}
-timing=removal
 effect=Destroy target Spirit or enchantment.
+timing=removal
 oracle=Destroy target Spirit or enchantment.

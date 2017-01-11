@@ -1,7 +1,7 @@
 name=Urza's Tower
 image=http://magiccards.info/scans/en/9e/329.jpg
 value=4.329
-rarity=B
+rarity=U
 type=Land
 subtype=Urza's,Tower
 ability={T}: Add {C} to your mana pool. If you control an Urza's Mine and an Urza's Power-Plant, add {C}{C}{C} to your mana pool instead.

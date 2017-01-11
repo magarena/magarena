@@ -8,6 +8,6 @@ subtype=Aura
 cost={1}{B}{B}
 ability=Enchant land;\
         Enchanted land has "{T}, Pay 1 life: Draw a card."
-enchant=sacrifice,pos land
 timing=aura
+enchant=sacrifice,pos land
 oracle=Enchant land\nEnchanted land has "{T}, Pay 1 life: Draw a card."

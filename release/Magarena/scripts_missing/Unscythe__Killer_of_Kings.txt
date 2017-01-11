@@ -6,8 +6,8 @@ type=Legendary,Artifact
 subtype=Equipment
 cost={U}{B}{B}{R}
 ability=Equipped creature gets +3/+3 and has first strike.;\
-        Whenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, put a 2/2 black Zombie creature token onto the battlefield.;\
+        Whenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, create a 2/2 black Zombie creature token.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature gets +3/+3 and has first strike.\nWhenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, put a 2/2 black Zombie creature token onto the battlefield.\nEquip {2}
+oracle=Equipped creature gets +3/+3 and has first strike.\nWhenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, create a 2/2 black Zombie creature token.\nEquip {2}
 status=needs groovy

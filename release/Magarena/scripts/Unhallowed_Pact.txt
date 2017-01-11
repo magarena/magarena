@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
+ability=Enchant creature
 timing=aura
 enchant=gain control,neg creature
-requires_groovy_code
 oracle=Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under your control.
+requires_groovy_code

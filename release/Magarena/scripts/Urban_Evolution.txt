@@ -1,5 +1,6 @@
 name=Urban Evolution
-image=http://magiccards.info/scans/en/ddo/57.jpg
+image=http://magiccards.info/scans/en/gtc/204.jpg
+image_updated=2017-01-11
 value=3.547
 rarity=U
 type=Sorcery

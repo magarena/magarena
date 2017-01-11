@@ -1,5 +1,6 @@
 name=Urborg Syphon-Mage
-image=http://magiccards.info/scans/en/arc/27.jpg
+image=http://magiccards.info/scans/en/ts/139.jpg
+image_updated=2017-01-11
 value=2.500
 rarity=C
 type=Creature

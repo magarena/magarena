@@ -1,5 +1,6 @@
 name=Undead Warchief
-image=http://magiccards.info/scans/en/pch/44.jpg
+image=http://magiccards.info/scans/en/sc/78.jpg
+image_updated=2017-01-11
 value=4.302
 rarity=U
 type=Creature

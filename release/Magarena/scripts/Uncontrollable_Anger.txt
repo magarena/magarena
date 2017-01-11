@@ -1,7 +1,7 @@
 name=Uncontrollable Anger
 image=http://magiccards.info/scans/en/cns/155.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}{R}
