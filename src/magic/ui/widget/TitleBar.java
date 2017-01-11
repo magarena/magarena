@@ -15,15 +15,15 @@ public class TitleBar extends JPanel {
 
     public TitleBar(final String text) {
 
-        label = new JLabel(text); //, MagicImages.getSmallManaIcon(MagicIcon.SAVE), SwingConstants.LEFT);
+        label = new JLabel(text);
         label.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
 
         setPreferredSize(new Dimension(getPreferredSize().width, 22));
         setMinimumSize(getPreferredSize());
         setMaximumSize(new Dimension(ScreenController.getFrame().getSize().width, 22));
 
-        setLayout(new MigLayout("insets 0 4 0 4", "", "grow, fill"));
-        add(label, "pushx");
+        setLayout(new MigLayout("insets 0 4 0 4", "[grow, fill][]", "[grow, fill]"));
+        add(label);
 
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
 
@@ -33,4 +33,7 @@ public class TitleBar extends JPanel {
         label.setText(text);
     }
 
+    public JLabel getLabel() {
+        return label;
+    }
 }

@@ -24,6 +24,7 @@ public enum MagicIcon {
     DECK("ui/w_deck.png"),
     EDIT("ui/w_edit.png"),
     ENCHANTMENTS("ui/w_enchantments.png"),
+    FAST_FORWARD("ui/fast-forward-16.png"),
     FIREMIND("ui/w_firemind.png"),
     GO_BACK("ui/w_back.png"),
     GO_NEXT("ui/w_next.png"),

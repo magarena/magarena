@@ -1,24 +1,23 @@
 package magic.model.choice;
 
-import magic.data.GeneralConfig;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.MagicPermanentState;
-import magic.model.event.MagicActivation;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceActivation;
-import magic.model.phase.MagicPhaseType;
-import magic.exception.UndoClickedException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;
-import magic.translate.StringContext;
+import magic.model.MagicGame;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.event.MagicActivation;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceActivation;
+import magic.model.phase.MagicPhaseType;
 import magic.translate.MText;
+import magic.translate.StringContext;
 
 public class MagicPlayChoice extends MagicChoice {
 
@@ -116,9 +115,7 @@ public class MagicPlayChoice extends MagicChoice {
         //skip if phase is combat damage, not supposed to be able to do
         //anything but resolve triggers
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
-            if (game.getStack().hasItem()) {
-                controller.pause(GeneralConfig.getInstance().getMessageDelay());
-            }
+            controller.doStackItemPause();
             return PASS_CHOICE_RESULTS;
         }
 
@@ -136,10 +133,7 @@ public class MagicPlayChoice extends MagicChoice {
             }
 
             if (skip) {
-                //pause if there is an item on the stack
-                if (game.getStack().hasItem()) {
-                    controller.pause(GeneralConfig.getInstance().getMessageDelay());
-                }
+                controller.doStackItemPause();
                 return PASS_CHOICE_RESULTS;
             }
         }

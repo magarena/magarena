@@ -22,6 +22,9 @@ public interface IUIGameController extends IGameController {
     void updateGameView();
     void waitForInput() throws UndoClickedException;
     void refreshSidebarLayout();
+    void setStackFastForward(boolean b);
+    boolean isStackFastForward();
+    void doStackItemPause();
 
     // Choices
     MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException;
@@ -34,5 +37,4 @@ public interface IUIGameController extends IGameController {
     int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException;
     int getPayManaCostXChoice(final MagicSource source, final int maximumX) throws UndoClickedException;
     MagicPlayChoiceResult getPlayChoice(final MagicSource source, final List<MagicPlayChoiceResult> results) throws UndoClickedException;
-
 }

@@ -25,7 +25,7 @@ public class ActionButtonTitleBar extends TitleBar {
             actionsPanel.add(btn, "w 16!, h 16!");
         }
 
-        add(actionsPanel, "alignx right");
+        add(actionsPanel, "alignx right, hidemode 3");
 
     }
 

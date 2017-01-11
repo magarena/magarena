@@ -6,19 +6,27 @@ import java.awt.Font;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+import javax.swing.Icon;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.model.IUIGameController;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
+import magic.ui.helpers.ImageHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;
@@ -27,6 +35,10 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class LogStackViewer extends JPanel {
+
+    private static final Icon FFORWARD_ICON = ImageHelper.getRecoloredIcon(
+        MagicIcon.FAST_FORWARD, Color.black, Color.white
+    );
 
     public static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
     public static final Color CHOICE_COLOR = Color.RED.darker();
@@ -41,20 +53,45 @@ public class LogStackViewer extends JPanel {
     private static final String _S8 = "Keywords glossary [K]";
     private static final String _S9 = "Quick reference...";
     private static final String _S10 = "Hide/show log [M]";
+    private static final String _S11 = "Click to fast-forward stack.";
 
     private final LogViewer logViewer;
     private final StackViewer stackViewer;
     private final ActionButtonTitleBar logTitleBar;
     private final ActionButtonTitleBar stackTitleBar;
     private MessageStyle messageStyle = GeneralConfig.getInstance().getLogMessageStyle();
+    private int stackCount = 0;
+    private final IUIGameController controller;
 
-    LogStackViewer(LogViewer aLogBookViewer, StackViewer aStackViewer) {
+    LogStackViewer(LogViewer aLogBookViewer, StackViewer aStackViewer, IUIGameController controller) {
 
         this.logViewer = aLogBookViewer;
         this.stackViewer = aStackViewer;
+        this.controller = controller;
 
         logTitleBar = new ActionButtonTitleBar(MText.get(_S4), getLogActionButtons());
         stackTitleBar = new ActionButtonTitleBar(MText.get(_S5), getStackActionButtons());
+        stackTitleBar.getLabel().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (stackCount > 0) {
+                    controller.setStackFastForward(true);
+                    MouseHelper.showDefaultCursor(stackTitleBar);
+                }
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                if (stackCount > 0 && !controller.isStackFastForward()) {
+                    MouseHelper.showHandCursor(stackTitleBar);
+                } else {
+                    MouseHelper.showDefaultCursor(stackTitleBar);
+                }
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                MouseHelper.showDefaultCursor(stackTitleBar);
+            }
+        });
 
         setOpaque(false);
         setBorders();
@@ -187,7 +224,22 @@ public class LogStackViewer extends JPanel {
         GeneralConfig.getInstance().save();
     }
 
-    public void setStackCount(int count) {
-        stackTitleBar.setText(MText.get(_S5) + " : " + count);
+    public void setStackCount(int newCount) {
+        if (newCount == 0 || controller.isStackFastForward()) {
+            final JLabel lbl = stackTitleBar.getLabel();
+            lbl.setText(MText.get(_S5) + " : " + newCount);
+            lbl.setIcon(null);
+            lbl.setToolTipText(null);
+        } else {
+            final JLabel lbl = stackTitleBar.getLabel();
+            lbl.setText(MText.get(_S5) + " : " + newCount + " ");
+            lbl.setIcon(FFORWARD_ICON);
+            lbl.setToolTipText(MText.get(_S11));
+            lbl.setHorizontalTextPosition(SwingConstants.LEADING);
+        }
+        if (stackCount > 0 && newCount == 0) {
+            controller.setStackFastForward(false);
+        }
+        stackCount = newCount;
     }
 }

@@ -103,6 +103,8 @@ public class SwingGameController implements IUIGameController {
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
+    private final AtomicBoolean isStackFastForward = new AtomicBoolean(false);
+    private final AtomicBoolean isPauseCancelled = new AtomicBoolean(false);
     private final Collection<IChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices = Collections.emptySet();
     private AnnotatedCardPanel cardPopup;
@@ -208,12 +210,18 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void pause(final int t) {
+        assert !SwingUtilities.isEventDispatchThread();
         disableActionUndoButtons();
-        try { //sleep
-            Thread.sleep(t);
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
+        int tick = 0;
+        while (tick < t && isPauseCancelled.get() == false) {
+            try {
+                Thread.sleep(10);
+            } catch (final InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+            tick += 10;
         }
+        isPauseCancelled.set(false);
     }
 
     private static void invokeAndWait(final Runnable task) {
@@ -1141,4 +1149,27 @@ public class SwingGameController implements IUIGameController {
         logStackViewer.setStackCount(count);
     }
 
+    private int getStackItemPause() {
+        return isStackFastForward.get() == true ? 0 : CONFIG.getMessageDelay();
+    }
+
+    @Override
+    public void setStackFastForward(boolean b) {
+        isPauseCancelled.set(b);
+        isStackFastForward.set(b);
+    }
+
+    @Override
+    public boolean isStackFastForward() {
+        return isStackFastForward.get();
+    }
+
+    @Override
+    public void doStackItemPause() {
+        if (game.getStack().hasItem()) {
+            if (getStackItemPause() > 0) {
+                pause(getStackItemPause());
+            }
+        }
+    }
 }
