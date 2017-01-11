@@ -8,6 +8,6 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature gets +1/+1.;\
         {1}{U}: Return SN to its owner's hand.
-enchant=pump,pos creature
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1.\n{1}{U}: Return Viscerid Armor to its owner's hand.

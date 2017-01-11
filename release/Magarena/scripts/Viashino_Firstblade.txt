@@ -8,5 +8,5 @@ cost={1}{R}{W}
 pt=2/2
 ability=Haste;\
         When SN enters the battlefield, SN gets +2/+2 until end of turn.
-timing=main
+timing=fmain
 oracle=Haste\nWhen Viashino Firstblade enters the battlefield, it gets +2/+2 until end of turn.

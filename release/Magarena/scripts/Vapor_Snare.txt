@@ -7,7 +7,7 @@ subtype=Aura
 cost={4}{U}
 ability=Enchant creature;\
         You control enchanted creature.;\
-        At the beginning of your upkeep, you may return a land you control to its owner's hand. If you don't, sacrifice SN.
-enchant=gain control,neg creature
+        At the beginning of your upkeep, sacrifice SN unless you return a land you control to its owner's hand.
 timing=aura
+enchant=gain control,neg creature
 oracle=Enchant creature\nYou control enchanted creature.\nAt the beginning of your upkeep, sacrifice Vapor Snare unless you return a land you control to its owner's hand.

@@ -10,5 +10,5 @@ pt=1/2
 ability=Flash;\
         When SN enters the battlefield, return target Sliver to its owner's hand.;\
         Wizardcycling {3}
-timing=main
+timing=flash
 oracle=Flash\nWhen Vedalken Aethermage enters the battlefield, return target Sliver to its owner's hand.\nWizardcycling {3}

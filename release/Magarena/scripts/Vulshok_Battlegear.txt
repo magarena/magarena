@@ -1,5 +1,6 @@
 name=Vulshok Battlegear
-image=http://magiccards.info/scans/en/ddi/68.jpg
+image=http://magiccards.info/scans/en/mi/272.jpg
+image_updated=2017-01-11
 value=3.857
 rarity=U
 type=Artifact

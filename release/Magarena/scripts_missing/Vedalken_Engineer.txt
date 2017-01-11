@@ -1,5 +1,6 @@
 name=Vedalken Engineer
-image=http://magiccards.info/scans/en/pch/15.jpg
+image=http://magiccards.info/scans/en/ds/35.jpg
+image_updated=2017-01-11
 value=4.454
 rarity=C
 type=Creature

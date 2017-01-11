@@ -1,5 +1,6 @@
 name=Vampire's Bite
-image=http://magiccards.info/scans/en/ddk/19.jpg
+image=http://magiccards.info/scans/en/zen/117.jpg
+image_updated=2017-01-11
 value=3.077
 rarity=C
 type=Instant

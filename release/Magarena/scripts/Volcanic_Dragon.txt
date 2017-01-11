@@ -1,7 +1,7 @@
 name=Volcanic Dragon
 image=http://magiccards.info/scans/en/m12/158.jpg
 value=3.656
-rarity=R
+rarity=U
 type=Creature
 subtype=Dragon
 cost={4}{R}{R}

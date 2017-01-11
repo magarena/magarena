@@ -8,5 +8,5 @@ cost={3}{G}{U}{B}
 pt=6/6
 ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{G}. If you do, put six +1/+1 counters on SN.
-timing=smain
+timing=main
 oracle=Flying\nWhenever Vorosh, the Hunter deals combat damage to a player, you may pay {2}{G}. If you do, put six +1/+1 counters on Vorosh.

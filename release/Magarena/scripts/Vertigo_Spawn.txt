@@ -8,5 +8,5 @@ cost={1}{U}
 pt=0/3
 ability=Defender;\
         Whenever SN blocks a creature, tap that creature.~That creature doesn't untap during its controller's next untap step.
-timing=main
+timing=smain
 oracle=Defender\nWhenever Vertigo Spawn blocks a creature, tap that creature. That creature doesn't untap during its controller's next untap step.

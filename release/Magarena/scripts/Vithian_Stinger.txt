@@ -1,5 +1,6 @@
 name=Vithian Stinger
-image=http://magiccards.info/scans/en/ddk/47.jpg
+image=http://magiccards.info/scans/en/ala/120.jpg
+image_updated=2017-01-11
 value=3.577
 rarity=C
 type=Creature

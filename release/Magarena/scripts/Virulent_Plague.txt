@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={2}{B}
 ability=Creature tokens get -2/-2.
-timing=main
+timing=enchantment
 oracle=Creature tokens get -2/-2.

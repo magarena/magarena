@@ -1,5 +1,6 @@
 name=Vampire Bats
-image=http://magiccards.info/scans/en/gvl/35.jpg
+image=http://magiccards.info/scans/en/10e/186.jpg
+image_updated=2017-01-11
 value=3.348
 rarity=C
 type=Creature

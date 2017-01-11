@@ -8,5 +8,5 @@ cost={3}{R}
 pt=2/4
 ability=Defender;\
         {1}{R}, {T}: SN deals damage to target player equal to the number of creatures with defender you control.
-timing=main
+timing=smain
 oracle=Defender\n{1}{R}, {T}: Vent Sentinel deals damage to target player equal to the number of creatures with defender you control.

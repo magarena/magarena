@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={1}
 ability={2}, Sacrifice SN: Exile target creature. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={2}, Sacrifice Voyager Staff: Exile target creature. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.

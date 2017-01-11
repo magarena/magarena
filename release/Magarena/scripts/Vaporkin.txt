@@ -1,5 +1,6 @@
 name=Vaporkin
-image=http://magiccards.info/scans/en/ths/72.jpg
+image=http://magiccards.info/scans/en/cn2/124.jpg
+image_updated=2017-01-11
 value=3.382
 rarity=C
 type=Creature

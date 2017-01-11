@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire,Shaman
 cost={B}{B}
 pt=2/1
-ability=first strike
-timing=fmain
-requires_groovy_code
+ability=First strike
+timing=main
 oracle=First strike\nSacrifice Vampire Hexmage: Remove all counters from target permanent.
+requires_groovy_code

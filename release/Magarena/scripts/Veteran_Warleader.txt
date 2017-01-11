@@ -14,3 +14,4 @@ ability=SN's power and toughness are each equal to the number of creatures you c
         (3) SN gains trample until end of turn.
 timing=main
 oracle=Veteran Warleader's power and toughness are each equal to the number of creatures you control.\nTap another untapped Ally you control: Veteran Warleader gains your choice of first strike, vigilance, or trample until end of turn.
+#Choice should be made on resolution

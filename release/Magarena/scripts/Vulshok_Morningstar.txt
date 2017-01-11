@@ -1,7 +1,8 @@
 name=Vulshok Morningstar
-image=http://magiccards.info/scans/en/ddi/66.jpg
+image=http://magiccards.info/scans/en/9e/315.jpg
+image_updated=2017-01-11
 value=3.433
-rarity=C
+rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}

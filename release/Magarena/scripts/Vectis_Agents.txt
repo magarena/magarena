@@ -7,5 +7,5 @@ subtype=Human,Rogue
 cost={3}{U}{B}
 pt=4/3
 ability={U}{B}: SN gets -2/-0 and can't be blocked this turn.
-timing=artifact
+timing=main
 oracle={U}{B}: Vectis Agents gets -2/-0 until end of turn and can't be blocked this turn.

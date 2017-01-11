@@ -8,5 +8,5 @@ cost={1}{R}
 pt=2/2
 ability=Haste;\
         SN attacks each turn if able.
-timing=main
+timing=fmain
 oracle=Haste\nValley Dasher attacks each turn if able.

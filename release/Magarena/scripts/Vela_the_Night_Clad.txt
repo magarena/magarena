@@ -1,5 +1,6 @@
 name=Vela the Night-Clad
-image=http://magiccards.info/scans/en/cma/18.jpg
+image=http://magiccards.info/scans/en/pc2/107.jpg
+image_updated=2017-01-11
 value=3.614
 rarity=M
 type=Legendary,Creature

@@ -7,6 +7,6 @@ subtype=Human,Warrior
 cost={4}{R}
 pt=2/2
 ability=Haste
-timing=main
-requires_groovy_code
+timing=fmain
 oracle=Haste\nWhen Vulshok Battlemaster enters the battlefield, attach all Equipment on the battlefield to it.
+requires_groovy_code

@@ -1,5 +1,6 @@
 name=Veteran Armorsmith
-image=http://magiccards.info/scans/en/ddo/27.jpg
+image=http://magiccards.info/scans/en/m10/38.jpg
+image_updated=2017-01-11
 value=4.101
 rarity=C
 type=Creature
@@ -8,5 +9,5 @@ cost={W}{W}
 pt=2/3
 ability=Other Soldier creatures you control get +0/+1.
 static=player
-timing=main
+timing=fmain
 oracle=Other Soldier creatures you control get +0/+1.

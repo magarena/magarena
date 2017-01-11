@@ -6,6 +6,6 @@ type=Creature
 subtype=Boar,Beast
 cost={2}{R}{R}
 pt=5/5
-ability=When SN enters the battlefield, you may sacrifice an artifact. If you don't, sacrifice SN.
+ability=When SN enters the battlefield, sacrifice SN unless you sacrifice an artifact.
 timing=main
 oracle=When Vulshok War Boar enters the battlefield, sacrifice it unless you sacrifice an artifact.

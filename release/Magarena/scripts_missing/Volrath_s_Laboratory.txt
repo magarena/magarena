@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={5}
 ability=As SN enters the battlefield, choose a color and a creature type.;\
-        {5}, {T}: Put a 2/2 creature token of the chosen color and type onto the battlefield.
+        {5}, {T}: Create a 2/2 creature token of the chosen color and type.
 timing=artifact
-oracle=As Volrath's Laboratory enters the battlefield, choose a color and a creature type.\n{5}, {T}: Put a 2/2 creature token of the chosen color and type onto the battlefield.
+oracle=As Volrath's Laboratory enters the battlefield, choose a color and a creature type.\n{5}, {T}: Create a 2/2 creature token of the chosen color and type.
 status=not supported: choose-creature-type

@@ -1,5 +1,6 @@
 name=Vanish into Memory
-image=http://magiccards.info/scans/en/ddi/31.jpg
+image=http://magiccards.info/scans/en/cs/133.jpg
+image_updated=2017-01-11
 value=3.355
 rarity=U
 type=Instant

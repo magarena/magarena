@@ -1,5 +1,6 @@
 name=Venerable Monk
-image=http://magiccards.info/scans/en/dvd/5.jpg
+image=http://magiccards.info/scans/en/10e/55.jpg
+image_updated=2017-01-11
 value=2.395
 rarity=C
 type=Creature

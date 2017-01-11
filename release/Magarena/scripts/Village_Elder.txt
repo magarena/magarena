@@ -1,5 +1,6 @@
 name=Village Elder
-image=http://magiccards.info/scans/en/br/94.jpg
+image=http://magiccards.info/scans/en/mr/149.jpg
+image_updated=2017-01-11
 value=2.324
 rarity=C
 type=Creature
