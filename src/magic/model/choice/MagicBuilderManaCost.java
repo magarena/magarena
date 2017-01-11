@@ -1,6 +1,7 @@
 package magic.model.choice;
 
 import magic.model.MagicCostManaType;
+import magic.model.MagicManaCost;
 
 import java.util.Arrays;
 import java.util.List;
@@ -23,6 +24,11 @@ public class MagicBuilderManaCost {
         typeCount=0;
         minimumAmount=0;
         XCount=0;
+    }
+
+    public MagicBuilderManaCost(final MagicManaCost cost) {
+        this();
+        cost.addTo(this);
     }
 
     public MagicBuilderManaCost(final MagicBuilderManaCost cost) {

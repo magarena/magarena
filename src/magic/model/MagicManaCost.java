@@ -335,8 +335,7 @@ public class MagicManaCost {
 
     public MagicBuilderManaCost getBuilderCost() {
         if (builderCost == null) {
-            builderCost=new MagicBuilderManaCost();
-            addTo(builderCost);
+            builderCost = new MagicBuilderManaCost(this);
         }
         return builderCost;
     }
