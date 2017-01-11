@@ -1,7 +1,7 @@
 name=Trip Wire
 image=http://magiccards.info/scans/en/p3k/156.jpg
 value=1.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={2}{G}
 effect=Destroy target creature with horsemanship.

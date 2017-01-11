@@ -1,7 +1,7 @@
 name=Tuknir Deathlock
 image=http://magiccards.info/scans/en/lg/307.jpg
 value=2.000
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
 cost={R}{R}{G}{G}

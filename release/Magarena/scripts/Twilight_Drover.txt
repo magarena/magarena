@@ -1,5 +1,6 @@
 name=Twilight Drover
-image=http://magiccards.info/scans/en/ddk/9.jpg
+image=http://magiccards.info/scans/en/rav/33.jpg
+image_updated=2017-01-11
 value=3.529
 rarity=R
 type=Creature

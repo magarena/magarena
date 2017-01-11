@@ -7,5 +7,5 @@ subtype=Equipment
 cost={2}
 ability=Equipped creature gets +3/+0 and attacks each turn if able.;\
         Equip {3}
-timing=main
+timing=equipment
 oracle=Equipped creature gets +3/+0 and attacks each turn if able.\nEquip {3}

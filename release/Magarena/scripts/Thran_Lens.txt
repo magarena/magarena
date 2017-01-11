@@ -4,6 +4,6 @@ value=3.703
 rarity=R
 type=Artifact
 cost={2}
-timing=main
-requires_groovy_code
+timing=artifact
 oracle=All permanents are colorless.
+requires_groovy_code

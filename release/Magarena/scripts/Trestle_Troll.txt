@@ -9,5 +9,5 @@ pt=1/4
 ability=Defender;\
         Reach;\
         {1}{B}{G}: Regenerate SN.
-timing=main
+timing=smain
 oracle=Defender\nReach\n{1}{B}{G}: Regenerate Trestle Troll.

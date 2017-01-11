@@ -6,8 +6,7 @@ type=Creature
 subtype=Merfolk
 cost={3}{U}
 pt=1/2
-ability=When SN enters the battlefield, reveal the top four cards of your library. \
-        Put all Merfolk cards revealed this way into your hand and the rest on the bottom of your library in any order.;\
+ability=When SN enters the battlefield, reveal the top four cards of your library. Put all Merfolk cards revealed this way into your hand and the rest on the bottom of your library in any order.;\
         {3}{U}: SN gains flying until end of turn.
 timing=main
 oracle=When Tidal Courier enters the battlefield, reveal the top four cards of your library. Put all Merfolk cards revealed this way into your hand and the rest on the bottom of your library in any order.\n{3}{U}: Tidal Courier gains flying until end of turn.

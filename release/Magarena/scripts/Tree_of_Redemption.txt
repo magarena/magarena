@@ -6,7 +6,7 @@ type=Creature
 subtype=Plant
 cost={3}{G}
 pt=0/13
-ability=defender
-timing=main
-requires_groovy_code
+ability=Defender
+timing=smain
 oracle=Defender\n{T}: Exchange your life total with Tree of Redemption's toughness.
+requires_groovy_code

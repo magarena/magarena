@@ -5,5 +5,5 @@ rarity=C
 type=Sorcery
 cost={1}{G}
 effect=You gain 1 life for each tapped artifact, creature, and land you control.
-timing=smain
+timing=main
 oracle=You gain 1 life for each tapped artifact, creature, and land you control.

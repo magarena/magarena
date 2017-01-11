@@ -1,12 +1,13 @@
 name=Tibalt, the Fiend-Blooded
-image=http://magiccards.info/scans/en/ddk/41.jpg
+image=http://magiccards.info/scans/en/avr/161.jpg
+image_updated=2017-01-11
 value=2.962
 rarity=M
 type=Planeswalker
 subtype=Tibalt
 cost={R}{R}
-ability=+1: Draw a card, then discard a card at random.
 loyalty=2
+ability=+1: Draw a card, then discard a card at random.
 timing=main
-requires_groovy_code
 oracle=+1: Draw a card, then discard a card at random.\n−4: Tibalt, the Fiend-Blooded deals damage equal to the number of cards in target player's hand to that player.\n−6: Gain control of all creatures until end of turn. Untap them. They gain haste until end of turn.
+requires_groovy_code

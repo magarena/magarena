@@ -6,8 +6,8 @@ type=Creature
 subtype=Elemental
 cost={2}{U}
 pt=*/*
-timing=main
 ability=SN enters the battlefield with a time counter on it for each Island you control.;\
         Vanishing 0;\
         SN's power and toughness are each equal to the number of time counters on it.
+timing=main
 oracle=Tidewalker enters the battlefield with a time counter on it for each Island you control.\nVanishing\nTidewalker's power and toughness are each equal to the number of time counters on it.

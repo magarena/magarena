@@ -1,5 +1,6 @@
 name=The Mimeoplasm
-image=http://magiccards.info/scans/en/cma/12.jpg
+image=http://magiccards.info/scans/en/cmd/210.jpg
+image_updated=2017-01-11
 value=4.063
 rarity=M
 type=Legendary,Creature

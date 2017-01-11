@@ -1,7 +1,7 @@
 name=Thought Courier
 image=http://magiccards.info/scans/en/9e/104.jpg
 value=3.650
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}

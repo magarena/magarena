@@ -6,6 +6,6 @@ type=Creature
 subtype=Wurm
 cost={2}{G}
 pt=4/4
-ability=When SN enters the battlefield, you may discard a land card. If you don't, sacrifice SN.
+ability=When SN enters the battlefield, sacrifice SN unless you discard a land card.
 timing=main
 oracle=When Thundering Wurm enters the battlefield, sacrifice it unless you discard a land card.

@@ -1,7 +1,7 @@
 name=Tracker
 image=http://magiccards.info/scans/en/dk/52.jpg
 value=3.848
-rarity=U
+rarity=R
 type=Creature
 subtype=Human
 cost={2}{G}

@@ -9,5 +9,5 @@ pt=0/5
 ability=Defender;\
         At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Create a 1/1 green Saproling creature token.
-timing=main
+timing=smain
 oracle=Defender\nAt the beginning of your upkeep, put a spore counter on Thallid Shell-Dweller.\nRemove three spore counters from Thallid Shell-Dweller: Create a 1/1 green Saproling creature token.

@@ -1,6 +1,6 @@
 name=The Rack
-image=http://magiccards.info/scans/en/dpa/95.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/tsts/113.jpg
+image_updated=2017-01-10
 value=4.368
 rarity=U
 type=Artifact

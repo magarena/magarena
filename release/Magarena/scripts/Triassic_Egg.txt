@@ -1,5 +1,6 @@
 name=Triassic Egg
-image=http://magiccards.info/scans/en/ch/90.jpg
+image=http://magiccards.info/scans/en/lg/242.jpg
+image_updated=2017-01-11
 value=3.409
 rarity=R
 type=Artifact

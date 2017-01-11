@@ -4,7 +4,8 @@ value=3.628
 rarity=U
 type=Sorcery
 cost={2}{U}
-effect=Remove all +1/+1 counters from target creature you control. Draw that many cards.~Fuse
+ability=Fuse
+effect=Remove all +1/+1 counters from target creature you control. Draw that many cards.
 split=Give
 timing=main
 second_half

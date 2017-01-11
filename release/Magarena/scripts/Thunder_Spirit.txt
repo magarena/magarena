@@ -1,7 +1,7 @@
 name=Thunder Spirit
 image=http://magiccards.info/scans/en/lg/208.jpg
 value=4.183
-rarity=U
+rarity=R
 type=Creature
 subtype=Elemental,Spirit
 cost={1}{W}{W}

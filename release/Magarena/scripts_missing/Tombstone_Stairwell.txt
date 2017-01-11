@@ -5,7 +5,7 @@ rarity=R
 type=World,Enchantment
 cost={2}{B}{B}
 ability=Cumulative upkeep {1}{B};\
-        At the beginning of each upkeep, if SN is on the battlefield, each player puts a 2/2 black Zombie creature token with haste named Tombspawn onto the battlefield for each creature card in his or her graveyard.;\
+        At the beginning of each upkeep, if SN is on the battlefield, each player creates a 2/2 black Zombie creature token with haste named Tombspawn for each creature card in his or her graveyard.;\
         At the beginning of each end step or when SN leaves the battlefield, destroy all tokens put onto the battlefield with SN. They can't be regenerated.
 timing=enchantment
-oracle=Cumulative upkeep {1}{B}\nAt the beginning of each upkeep, if Tombstone Stairwell is on the battlefield, each player puts a 2/2 black Zombie creature token with haste named Tombspawn onto the battlefield for each creature card in his or her graveyard.\nAt the beginning of each end step or when Tombstone Stairwell leaves the battlefield, destroy all tokens put onto the battlefield with Tombstone Stairwell. They can't be regenerated.
+oracle=Cumulative upkeep {1}{B}\nAt the beginning of each upkeep, if Tombstone Stairwell is on the battlefield, each player creates a 2/2 black Zombie creature token with haste named Tombspawn for each creature card in his or her graveyard.\nAt the beginning of each end step or when Tombstone Stairwell leaves the battlefield, destroy all tokens put onto the battlefield with Tombstone Stairwell. They can't be regenerated.

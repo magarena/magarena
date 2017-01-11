@@ -1,6 +1,6 @@
 name=Taurean Mauler
-image=http://magiccards.info/scans/en/arc/49.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mt/109.jpg
+image_updated=2017-01-10
 value=4.264
 rarity=R
 type=Creature

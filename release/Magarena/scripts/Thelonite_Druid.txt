@@ -1,7 +1,7 @@
 name=Thelonite Druid
 image=http://magiccards.info/scans/en/fe/92.jpg
 value=3.867
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Cleric,Druid
 cost={2}{G}

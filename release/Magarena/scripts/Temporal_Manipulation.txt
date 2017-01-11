@@ -5,5 +5,5 @@ rarity=R
 type=Sorcery
 cost={3}{U}{U}
 effect=Take an extra turn after this one.
-timing=smain
+timing=main
 oracle=Take an extra turn after this one.

@@ -7,6 +7,6 @@ subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
         Whenever enchanted creature attacks, enchanted creature gets +X/+0 until end of turn, where X is your devotion to red.
+timing=aura
 enchant=pump,pos creature
-timing=main
 oracle=Enchant creature\nWhenever enchanted creature attacks, it gets +X/+0 until end of turn, where X is your devotion to red.

@@ -1,5 +1,6 @@
 name=Terminate
-image=http://magiccards.info/scans/en/ddk/64.jpg
+image=http://magiccards.info/scans/en/cmd/231.jpg
+image_updated=2017-01-10
 value=4.272
 removal=5
 rarity=C

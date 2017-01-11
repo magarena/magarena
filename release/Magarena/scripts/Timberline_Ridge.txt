@@ -6,6 +6,6 @@ type=Land
 mana=r2g2
 ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {R} or {G} to your mana pool. Put a depletion counter on SN.
-timing=main
-requires_groovy_code=Land Cap
+timing=land
 oracle=Timberline Ridge doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Timberline Ridge.\n{T}: Add {R} or {G} to your mana pool. Put a depletion counter on Timberline Ridge.
+requires_groovy_code=Land Cap

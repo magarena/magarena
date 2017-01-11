@@ -1,7 +1,7 @@
 name=Triangle of War
 image=http://magiccards.info/scans/en/vi/158.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Artifact
 cost={1}
 ability={2}, Sacrifice SN: Target creature you control fights target creature an opponent controls.

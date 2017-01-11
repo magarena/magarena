@@ -1,7 +1,7 @@
 name=Thrull Retainer
 image=http://magiccards.info/scans/en/5e/60.jpg
 value=3.362
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}

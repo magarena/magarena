@@ -7,5 +7,5 @@ subtype=Human,Soldier
 cost={R}{W}
 pt=2/1
 ability={T}: Target creature can't attack or block this turn.
-timing=smain
+timing=main
 oracle={T}: Target creature can't attack or block this turn.

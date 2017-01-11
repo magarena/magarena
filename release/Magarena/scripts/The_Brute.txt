@@ -8,6 +8,6 @@ cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +1/+0.;\
         {R}{R}{R}: Regenerate enchanted creature.
-enchant=pump,pos creature
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+0.\n{R}{R}{R}: Regenerate enchanted creature.

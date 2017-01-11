@@ -6,6 +6,6 @@ type=Creature
 subtype=Leviathan
 cost={6}{U}{U}{U}
 pt=9/9
-ability=Whenever SN attacks, you may sacrifice an Island. If you don't, sacrifice SN.
+ability=Whenever SN attacks, sacrifice SN unless you sacrifice an Island.
 timing=main
 oracle=Whenever Thing from the Deep attacks, sacrifice it unless you sacrifice an Island.

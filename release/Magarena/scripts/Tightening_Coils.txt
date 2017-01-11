@@ -6,8 +6,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature gets -6/-0.
+ability=Enchant creature;\
+        Enchanted creature gets -6/-0.
 timing=aura
 enchant=lose flying,neg creature
-requires_groovy_code=Grounded
 oracle=Enchant creature\nEnchanted creature gets -6/-0 and loses flying.
+requires_groovy_code=Grounded

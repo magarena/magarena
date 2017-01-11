@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={2}, {T}: SN deals 1 damage to target player.
-timing=main
+timing=artifact
 oracle={2}, {T}: Telim'Tor's Darts deals 1 damage to target player.

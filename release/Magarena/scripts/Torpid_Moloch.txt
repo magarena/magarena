@@ -8,5 +8,5 @@ cost={R}
 pt=3/2
 ability=Defender;\
         Sacrifice three lands: SN loses defender until end of turn.
-timing=main
+timing=smain
 oracle=Defender\nSacrifice three lands: Torpid Moloch loses defender until end of turn.

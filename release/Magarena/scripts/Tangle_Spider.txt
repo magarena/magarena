@@ -1,7 +1,7 @@
 name=Tangle Spider
 image=http://magiccards.info/scans/en/10e/303.jpg
 value=2.260
-rarity=C
+rarity=U
 type=Creature
 subtype=Spider
 cost={4}{G}{G}

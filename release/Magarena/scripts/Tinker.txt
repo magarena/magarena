@@ -1,10 +1,10 @@
 name=Tinker
 image=http://magiccards.info/scans/en/ul/45.jpg
 value=4.603
-rarity=M
+rarity=U
 type=Sorcery
 cost={2}{U}
 ability=As an additional cost to cast SN, sacrifice an artifact.
-effect=Search your library for an artifact card and put it onto the battlefield. Then shuffle your library.
+effect=Search your library for an artifact card and put that card onto the battlefield. Then shuffle your library.
 timing=main
 oracle=As an additional cost to cast Tinker, sacrifice an artifact.\nSearch your library for an artifact card and put that card onto the battlefield. Then shuffle your library.

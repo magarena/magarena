@@ -1,5 +1,6 @@
 name=Tribal Unity
-image=http://magiccards.info/scans/en/pch/80.jpg
+image=http://magiccards.info/scans/en/on/294.jpg
+image_updated=2017-01-11
 value=3.075
 rarity=U
 type=Instant

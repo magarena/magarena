@@ -1,7 +1,7 @@
 name=Torsten Von Ursus
 image=http://magiccards.info/scans/en/lg/306.jpg
 value=2.091
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{G}{G}{W}

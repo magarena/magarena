@@ -1,5 +1,6 @@
 name=Terrain Generator
-image=http://magiccards.info/scans/en/jvc/29.jpg
+image=http://magiccards.info/scans/en/ne/143.jpg
+image_updated=2017-01-10
 value=4.306
 rarity=U
 type=Land

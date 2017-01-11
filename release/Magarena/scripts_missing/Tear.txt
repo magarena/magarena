@@ -4,7 +4,8 @@ value=4.315
 rarity=U
 type=Instant
 cost={W}
-effect=Destroy target enchantment.~Fuse
+ability=Fuse
+effect=Destroy target enchantment.
 split=Wear
 timing=removal
 second_half

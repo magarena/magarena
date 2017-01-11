@@ -1,5 +1,6 @@
 name=Thornscape Apprentice
-image=http://magiccards.info/scans/en/pvc/37.jpg
+image=http://magiccards.info/scans/en/in/215.jpg
+image_updated=2017-01-11
 value=3.964
 rarity=C
 type=Creature

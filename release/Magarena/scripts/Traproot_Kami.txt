@@ -8,5 +8,5 @@ cost={G}
 pt=0/*
 ability=Defender; reach;\
         SN's toughness is equal to the number of Forests on the battlefield.
-timing=main
+timing=smain
 oracle=Defender, reach\nTraproot Kami's toughness is equal to the number of Forests on the battlefield.

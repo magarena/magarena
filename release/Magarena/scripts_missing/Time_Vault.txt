@@ -1,7 +1,7 @@
 name=Time Vault
 image=http://magiccards.info/scans/en/un/275.jpg
 value=4.833
-rarity=M
+rarity=R
 type=Artifact
 cost={2}
 ability=SN enters the battlefield tapped.;\

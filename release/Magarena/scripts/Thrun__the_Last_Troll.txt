@@ -9,5 +9,5 @@ pt=4/4
 ability=SN can't be countered.;\
         Hexproof;\
         {1}{G}: Regenerate SN.
-timing=fmain
+timing=main
 oracle=Thrun, the Last Troll can't be countered.\nHexproof\n{1}{G}: Regenerate Thrun.

@@ -8,5 +8,5 @@ cost={6}
 pt=4/4
 ability=SN has wither as long as you control a green creature.;\
         SN has vigilance as long as you control a white creature.
-timing=artifact
+timing=main
 oracle=Thornwatch Scarecrow has wither as long as you control a green creature.\nThornwatch Scarecrow has vigilance as long as you control a white creature.

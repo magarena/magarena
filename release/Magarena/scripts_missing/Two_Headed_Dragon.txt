@@ -1,5 +1,6 @@
 name=Two-Headed Dragon
-image=http://magiccards.info/scans/en/arc/50.jpg
+image=http://magiccards.info/scans/en/8e/229.jpg
+image_updated=2017-01-11
 value=4.220
 rarity=R
 type=Creature

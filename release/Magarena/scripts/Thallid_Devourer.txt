@@ -1,7 +1,7 @@
 name=Thallid Devourer
 image=http://magiccards.info/scans/en/fe/91.jpg
 value=3.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Fungus
 cost={1}{G}{G}

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={R}
+ability=Enchant creature
 timing=aura
 enchant=pump,creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +3/+0 as long as it's attacking. Otherwise, it gets -2/-1.
+requires_groovy_code

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={T}: Target creature can't be blocked by Walls this turn.
-timing=main
+timing=artifact
 oracle={T}: Target creature can't be blocked by Walls this turn.

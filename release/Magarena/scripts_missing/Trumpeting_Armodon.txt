@@ -1,5 +1,6 @@
 name=Trumpeting Armodon
-image=http://magiccards.info/scans/en/br/90.jpg
+image=http://magiccards.info/scans/en/tp/156.jpg
+image_updated=2017-01-11
 value=2.860
 rarity=U
 type=Creature

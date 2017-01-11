@@ -1,7 +1,7 @@
 name=Trinket Mage
 image=http://magiccards.info/scans/en/som/48.jpg
 value=4.455
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={2}{U}

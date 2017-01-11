@@ -1,7 +1,7 @@
 name=The Wretched
 image=http://magiccards.info/scans/en/5e/59.jpg
 value=3.869
-rarity=U
+rarity=R
 type=Creature
 subtype=Demon
 cost={3}{B}{B}

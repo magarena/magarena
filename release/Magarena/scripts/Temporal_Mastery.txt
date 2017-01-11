@@ -4,7 +4,7 @@ value=4.087
 rarity=M
 type=Sorcery
 cost={5}{U}{U}
-timing=smain
-ability=miracle {1}{U}
-requires_groovy_code
+ability=Miracle {1}{U}
+timing=main
 oracle=Take an extra turn after this one. Exile Temporal Mastery.\nMiracle {1}{U}
+requires_groovy_code

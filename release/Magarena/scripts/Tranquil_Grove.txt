@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={1}{G}
 ability={1}{G}{G}: Destroy all other enchantments.
-timing=main
+timing=enchantment
 oracle={1}{G}{G}: Destroy all other enchantments.

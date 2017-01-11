@@ -1,7 +1,7 @@
 name=Tobias Andrion
 image=http://magiccards.info/scans/en/lg/304.jpg
 value=1.282
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Advisor
 cost={3}{W}{U}

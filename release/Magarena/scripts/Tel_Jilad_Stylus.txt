@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={1}
 ability={T}: Put target permanent you own on the bottom of your library.
-timing=main
+timing=artifact
 oracle={T}: Put target permanent you own on the bottom of your library.

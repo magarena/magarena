@@ -1,6 +1,6 @@
 name=Thelonite Hermit
-image=http://magiccards.info/scans/en/arc/71.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ts/228.jpg
+image_updated=2017-01-10
 value=4.167
 rarity=R
 type=Creature

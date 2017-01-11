@@ -1,6 +1,6 @@
 name=Talara's Battalion
-image=http://magiccards.info/scans/en/dpa/84.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/eve/77.jpg
+image_updated=2017-01-11
 value=4.160
 rarity=R
 type=Creature

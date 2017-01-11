@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={2}
 ability={T}: Tap target artifact you don't control.
-timing=main
+timing=artifact
 oracle={T}: Tap target artifact you don't control.

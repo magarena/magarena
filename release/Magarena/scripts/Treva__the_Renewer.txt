@@ -1,5 +1,6 @@
 name=Treva, the Renewer
-image=http://magiccards.info/scans/en/pvc/49.jpg
+image=http://magiccards.info/scans/en/in/280.jpg
+image_updated=2017-01-11
 value=4.061
 rarity=R
 type=Legendary,Creature
@@ -7,6 +8,6 @@ subtype=Dragon
 cost={3}{G}{W}{U}
 pt=6/6
 ability=Flying
-timing=smain
-requires_groovy_code
+timing=main
 oracle=Flying\nWhenever Treva, the Renewer deals combat damage to a player, you may pay {2}{W}. If you do, choose a color, then you gain 1 life for each permanent of that color.
+requires_groovy_code

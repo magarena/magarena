@@ -8,6 +8,6 @@ cost={2}{U/B}
 ability=Flash;\
         Enchant creature;\
         Enchanted creature gets -3/-0.
-timing=removal
+timing=flash
 enchant=weaken -3/-0,neg creature
 oracle=Flash\nEnchant creature\nEnchanted creature gets -3/-0.

@@ -7,6 +7,6 @@ subtype=Aura
 cost={B}
 ability=Enchant creature;\
         {1}{B}: Put a -1/-1 counter on enchanted creature.
-enchant=weaken,creature
 timing=aura
+enchant=weaken,creature
 oracle=Enchant creature\n{1}{B}: Put a -1/-1 counter on enchanted creature.

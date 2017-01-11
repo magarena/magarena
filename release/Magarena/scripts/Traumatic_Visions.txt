@@ -1,5 +1,6 @@
 name=Traumatic Visions
-image=http://magiccards.info/scans/en/ddn/69.jpg
+image=http://magiccards.info/scans/en/mma/68.jpg
+image_updated=2017-01-11
 value=2.647
 rarity=C
 type=Instant

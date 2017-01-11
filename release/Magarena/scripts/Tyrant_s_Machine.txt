@@ -5,5 +5,5 @@ rarity=C
 type=Artifact
 cost={2}
 ability={4}, {T}: Tap target creature.
-timing=main
+timing=artifact
 oracle={4}, {T}: Tap target creature.

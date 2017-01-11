@@ -6,7 +6,7 @@ rarity=R
 type=Sorcery
 cost={4}{W}{W}
 ability=Cast SN with AI only if an opponent controls a creature.;\
-        miracle {W}
+        Miracle {W}
 timing=removal
-requires_groovy_code
 oracle=Put all creatures on the bottom of their owners' libraries.\nMiracle {W}
+requires_groovy_code

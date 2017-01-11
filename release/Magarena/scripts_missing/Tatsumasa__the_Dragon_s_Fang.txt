@@ -6,8 +6,8 @@ type=Legendary,Artifact
 subtype=Equipment
 cost={6}
 ability=Equipped creature gets +5/+5.;\
-        {6}, Exile SN: Put a 5/5 blue Dragon Spirit creature token with flying onto the battlefield. Return Tatsumasa to the battlefield under its owner's control when that token dies.;\
+        {6}, Exile SN: Create a 5/5 blue Dragon Spirit creature token with flying. Return Tatsumasa to the battlefield under its owner's control when that token dies.;\
         Equip {3}
 timing=equipment
-oracle=Equipped creature gets +5/+5.\n{6}, Exile Tatsumasa, the Dragon's Fang: Put a 5/5 blue Dragon Spirit creature token with flying onto the battlefield. Return Tatsumasa to the battlefield under its owner's control when that token dies.\nEquip {3}
+oracle=Equipped creature gets +5/+5.\n{6}, Exile Tatsumasa, the Dragon's Fang: Create a 5/5 blue Dragon Spirit creature token with flying. Return Tatsumasa to the battlefield under its owner's control when that token dies.\nEquip {3}
 status=needs groovy

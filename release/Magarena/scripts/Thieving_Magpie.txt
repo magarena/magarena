@@ -1,6 +1,6 @@
 name=Thieving Magpie
-image=http://magiccards.info/scans/en/dpa/16.jpg
-image_updated=2015-11-11
+image=http://magiccards.info/scans/en/10e/115.jpg
+image_updated=2017-01-10
 value=4.280
 rarity=U
 type=Creature

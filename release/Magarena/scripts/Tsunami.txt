@@ -1,7 +1,7 @@
 name=Tsunami
 image=http://magiccards.info/scans/en/5e/196.jpg
 value=3.957
-rarity=R
+rarity=U
 type=Sorcery
 cost={3}{G}
 ability=Cast SN with AI only if an opponent controls an Island.

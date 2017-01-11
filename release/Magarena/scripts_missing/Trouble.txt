@@ -4,7 +4,8 @@ value=4.026
 rarity=U
 type=Sorcery
 cost={2}{R}
-effect=SN deals damage to target player equal to the number of cards in that player's hand.~Fuse
+ability=Fuse
+effect=SN deals damage to target player equal to the number of cards in that player's hand.
 split=Toil
 timing=main
 second_half

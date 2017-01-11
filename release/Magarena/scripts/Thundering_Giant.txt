@@ -1,7 +1,7 @@
 name=Thundering Giant
 image=http://magiccards.info/scans/en/m15/165.jpg
 value=2.333
-rarity=U
+rarity=C
 type=Creature
 subtype=Giant
 cost={3}{R}{R}

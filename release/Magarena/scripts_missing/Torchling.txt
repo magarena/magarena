@@ -1,5 +1,6 @@
 name=Torchling
-image=http://magiccards.info/scans/en/ddi/58.jpg
+image=http://magiccards.info/scans/en/pc/110.jpg
+image_updated=2017-01-11
 value=3.468
 rarity=R
 type=Creature

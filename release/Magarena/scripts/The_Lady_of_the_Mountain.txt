@@ -1,7 +1,7 @@
 name=The Lady of the Mountain
 image=http://magiccards.info/scans/en/lg/303.jpg
 value=2.400
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Giant
 cost={4}{R}{G}

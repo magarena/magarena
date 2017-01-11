@@ -1,7 +1,7 @@
 name=Talas Researcher
 image=http://magiccards.info/scans/en/po2/51.jpg
 value=2.690
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Pirate,Wizard
 cost={4}{U}

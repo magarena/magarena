@@ -17,9 +17,9 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN creates a 1/1 white Soldier creature token." +
-                "Create five of those tokens onto the battlefield instead if PN controls " +
-                "artifacts named Crown of Empires and Scepter of Empires."
+                "PN creates a 1/1 white Soldier creature token. "+
+                "PN creates five of those tokens instead if PN controls artifacts named "+
+                "Crown of Empires and Scepter of Empires."
             );
         }
 
