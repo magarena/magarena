@@ -1,7 +1,7 @@
 name=Yawgmoth's Bargain
 image=http://magiccards.info/scans/en/ud/75.jpg
 value=3.200
-rarity=M
+rarity=R
 type=Enchantment
 cost={4}{B}{B}
 ability=Skip your draw step.;\

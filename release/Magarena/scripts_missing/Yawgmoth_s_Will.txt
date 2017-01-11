@@ -1,7 +1,7 @@
 name=Yawgmoth's Will
 image=http://magiccards.info/scans/en/us/171.jpg
 value=5.000
-rarity=M
+rarity=R
 type=Sorcery
 cost={2}{B}
 effect=Until end of turn, you may play cards from your graveyard.~If a card would be put into your graveyard from anywhere this turn, exile that card instead.

@@ -1,7 +1,7 @@
 name=Yavimaya Ancients
 image=http://magiccards.info/scans/en/ai/91.jpg
 value=2.847
-rarity=U
+rarity=C
 type=Creature
 subtype=Treefolk
 cost={3}{G}{G}
