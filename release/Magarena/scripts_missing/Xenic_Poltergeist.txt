@@ -1,7 +1,7 @@
 name=Xenic Poltergeist
 image=http://magiccards.info/scans/en/5e/68.jpg
 value=3.648
-rarity=U
+rarity=R
 type=Creature
 subtype=Spirit
 cost={1}{B}{B}

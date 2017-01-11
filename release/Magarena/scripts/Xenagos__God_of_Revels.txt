@@ -6,7 +6,7 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={3}{R}{G}
 pt=6/5
-ability=indestructible
+ability=Indestructible
 timing=main
-requires_groovy_code
 oracle=Indestructible\nAs long as your devotion to red and green is less than seven, Xenagos isn't a creature.\nAt the beginning of combat on your turn, another target creature you control gains haste and gets +X/+X until end of turn, where X is that creature's power.
+requires_groovy_code

@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={8}
 ability={5}: Until end of turn, SN becomes an 8/8 Golem artifact creature with trample.
-timing=main
+timing=artifact
 oracle={5}: Until end of turn, Xanthic Statue becomes an 8/8 Golem artifact creature with trample.

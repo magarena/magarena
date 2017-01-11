@@ -7,8 +7,8 @@ subtype=Xenagos
 cost={2}{R}{G}
 loyalty=3
 ability=+1: Add X mana in any combination of {R} and/or {G} to your mana pool, where X is the number of creatures you control.;\
-        0: Put a 2/2 red and green Satyr creature token with haste onto the battlefield.;\
+        0: Create a 2/2 red and green Satyr creature token with haste.;\
         −6: Exile the top seven cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield.
 timing=main
-oracle=+1: Add X mana in any combination of {R} and/or {G} to your mana pool, where X is the number of creatures you control.\n0: Put a 2/2 red and green Satyr creature token with haste onto the battlefield.\n−6: Exile the top seven cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield.
+oracle=+1: Add X mana in any combination of {R} and/or {G} to your mana pool, where X is the number of creatures you control.\n0: Create a 2/2 red and green Satyr creature token with haste.\n−6: Exile the top seven cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield.
 status=not supported: add-multiple-mana
