@@ -3,6 +3,8 @@ package magic.ui.screen.duel.decks;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
@@ -17,7 +19,9 @@ import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
+import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
+import magic.model.player.PlayerProfiles;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
@@ -30,7 +34,7 @@ import magic.ui.widget.cards.table.CardTable;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DuelDecksPanel extends TexturedPanel {
+class DuelDecksPanel extends TexturedPanel implements IPlayerProfileListener {
 
     // translatable strings
     private static final String _S7 = "Swap Decks";
@@ -47,6 +51,8 @@ class DuelDecksPanel extends TexturedPanel {
     private final CardTable[] cardTables;
     private final DeckSideBar sidebar;
     private final ActionBarButton newDeckButton;
+
+    private boolean isTabChanged = false;
 
     DuelDecksPanel(final MagicDuel duel) {
 
@@ -86,6 +92,18 @@ class DuelDecksPanel extends TexturedPanel {
             ((PlayerPanel) tabbedPane.getTabComponentAt(newIndex)).setSelected(true);
             ((PlayerPanel) tabbedPane.getTabComponentAt(oldIndex)).setSelected(false);
             setDeck();
+            isTabChanged = true;
+        });
+
+        tabbedPane.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                super.mousePressed(e);
+                if (!isTabChanged && duel.getGamesPlayed() == 0) {
+                    doSelectPlayer();
+                }
+                isTabChanged = false;
+            }
         });
 
         tabbedPane.setPreferredSize(new Dimension(800, 0));
@@ -99,6 +117,15 @@ class DuelDecksPanel extends TexturedPanel {
         ((PlayerPanel) tabbedPane.getTabComponentAt(1)).setSelected(false);
 
         setDeck();
+    }
+
+    private void doSelectPlayer() {
+        PlayerProfile playerProfile = getSelectedPlayer().getProfile();
+        if (playerProfile.isHuman()) {
+            ScreenController.showSelectHumanPlayerScreen(this, playerProfile);
+        } else {
+            ScreenController.showSelectAiProfileScreen(this, playerProfile);
+        }
     }
 
     private void setDeck() {
@@ -211,4 +238,36 @@ class DuelDecksPanel extends TexturedPanel {
         return buttons.toArray(new MenuButton[buttons.size()]);
     }
 
+    @Override
+    public void PlayerProfileUpdated(PlayerProfile player) {
+        tabbedPane.setTabComponentAt(
+            tabbedPane.getSelectedIndex(),
+            new PlayerPanel(player, duel)
+        );
+    }
+
+    @Override
+    public void PlayerProfileDeleted(PlayerProfile deletedPlayer) {
+        PlayerProfile newPlayer = deletedPlayer.isHuman()
+            ? PlayerProfiles.getDefaultHumanPlayer()
+            : PlayerProfiles.getDefaultAiPlayer();
+        duel.getConfiguration().setPlayerProfile(deletedPlayer.isHuman() ? 0 : 1, newPlayer);
+        tabbedPane.setTabComponentAt(
+            tabbedPane.getSelectedIndex(),
+            new PlayerPanel(newPlayer, duel)
+        );
+    }
+
+    @Override
+    public void PlayerProfileSelected(PlayerProfile player) {
+        saveSelectedPlayerProfile(player);
+        tabbedPane.setTabComponentAt(
+            tabbedPane.getSelectedIndex(),
+            new PlayerPanel(player, duel)
+        );
+    }
+
+    private void saveSelectedPlayerProfile(final PlayerProfile player) {
+        duel.getConfiguration().setPlayerProfile(player.isHuman() ? 0 : 1, player);
+    }
 }
