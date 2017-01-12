@@ -1,6 +1,5 @@
 package magic.ui.widget.cards.table;
 
-import java.awt.Color;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
@@ -19,8 +18,6 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.FontsAndBorders;
-import magic.ui.theme.Theme;
-import magic.ui.utility.MagicStyle;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -75,10 +72,7 @@ public class CardTable extends TexturedPanel
 
         setLayout(migLayout);
         refreshLayout();
-
-        final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-        final Color thisBG = MagicStyle.getTranslucentColor(refBG, 230);
-        setBackground(thisBG);
+        setEmptyBackgroundColor();
     }
 
     private void refreshLayout() {
@@ -192,8 +186,13 @@ public class CardTable extends TexturedPanel
         viewport.setViewPosition(new Point(viewRect.x, y));
     }
 
+    private void setEmptyBackgroundColor() {
+        setBackground(ExplorerTableStyle.getStyle().getEmptyBackgroundColor());
+    }
+
     public void doSwitchStyle() {
         table.doSwitchStyle();
+        setEmptyBackgroundColor();
     }
 
     private class ColumnListener extends MouseAdapter {

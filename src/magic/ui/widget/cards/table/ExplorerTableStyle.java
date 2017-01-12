@@ -1,15 +1,18 @@
 package magic.ui.widget.cards.table;
 
+import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import magic.data.GeneralConfig;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 
 public enum ExplorerTableStyle {
 
-    LIGHT,
-    DARK,
-    THEME;
-    
+    LIGHT(Color.WHITE),
+    DARK(Color.BLACK),
+    THEME(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String CONFIG_SETTING = "explorer.table.style";
 
@@ -39,5 +42,15 @@ public enum ExplorerTableStyle {
 
     public static ExplorerTableStyle getStyle() {
         return style;
+    }
+
+    private final Color emptyBackgroundColor;
+
+    private ExplorerTableStyle(Color emptyBackgroundColor) {
+        this.emptyBackgroundColor = MagicStyle.getTranslucentColor(emptyBackgroundColor, 230);
+    }
+
+    public Color getEmptyBackgroundColor() {
+        return this.emptyBackgroundColor;
     }
 }
