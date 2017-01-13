@@ -8,7 +8,6 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
 import magic.data.DeckType;
@@ -76,10 +75,7 @@ class DuelDecksPanel extends TexturedPanel implements IPlayerProfileListener {
             cardTables[i] = new CardTable(player.getDeck(), generateTitle(player.getDeck()), true);
             cardTables[i].addCardSelectionListener(sidebar.getCardViewer());
             cardTables[i].showCardCount(true);
-
-            final JPanel tabPanel = new JPanel(new MigLayout("insets 0"));
-            tabPanel.add(cardTables[i], "w 100%, h 100%");
-            tabbedPane.addTab(null, tabPanel);
+            tabbedPane.addTab(null, cardTables[i]);
 
             final DuelConfig duelConfig = duel.getConfiguration();
             final PlayerProfile profile = duelConfig.getPlayerProfile(i);
