@@ -6,6 +6,6 @@ type=Creature
 subtype=Aetherborn,Artificer
 cost={2}{B}
 pt=2/2
-ability=Sacrifice an artifact or creature: Put a +1/+1 counter on SN. Activate this ability only any time you could cast a sorcery.
+ability=Sacrifice an artifact or creature: Put a +1/+1 counter on SN. Activate this ability only any time you could cast a sorcery. Activate this ability with AI only if you control another artifact or creature.
 timing=main
 oracle=Sacrifice an artifact or creature: Put a +1/+1 counter on Defiant Salvager. Activate this ability only any time you could cast a sorcery.
