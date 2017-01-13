@@ -7,3 +7,4 @@ cost={X}{B}
 effect=Improvise~Target creature gets -X/-X until end of turn. You gain X life.
 timing=main
 oracle=Improvise\nTarget creature gets -X/-X until end of turn. You gain X life.
+status=not supported: improvise

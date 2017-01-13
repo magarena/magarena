@@ -11,3 +11,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Each other creature you control of the chosen type enters the battlefield with an additional +1/+1 counter on it.
 timing=main
 oracle=As Metallic Mimic enters the battlefield, choose a creature type.\nMetallic Mimic is the chosen type in addition to its other types.\nEach other creature you control of the chosen type enters the battlefield with an additional +1/+1 counter on it.
+status=not supported: choose-creature-type

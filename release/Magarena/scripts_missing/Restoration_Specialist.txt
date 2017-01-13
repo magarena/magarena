@@ -9,3 +9,4 @@ pt=2/1
 ability={W}, Sacrifice SN: Return up to one target artifact card and up to one target enchantment card from your graveyard to your hand.
 timing=main
 oracle={W}, Sacrifice Restoration Specialist: Return up to one target artifact card and up to one target enchantment card from your graveyard to your hand.
+status=not supported: multiple-targets

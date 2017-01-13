@@ -7,3 +7,4 @@ cost={3}
 ability=Nonartifact spells you cast have improvise.
 timing=artifact
 oracle=Nonartifact spells you cast have improvise.
+status=not supported: improvise

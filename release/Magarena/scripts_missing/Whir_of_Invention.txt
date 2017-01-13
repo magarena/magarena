@@ -7,3 +7,4 @@ cost={X}{U}{U}{U}
 effect=Improvise~Search your library for an artifact card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.
 timing=removal
 oracle=Improvise\nSearch your library for an artifact card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.
+status=not supported: improvise

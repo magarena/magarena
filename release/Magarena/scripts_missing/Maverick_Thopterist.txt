@@ -10,3 +10,4 @@ ability=Improvise;\
         When SN enters the battlefield, create two 1/1 colorless Thopter artifact creature tokens with flying.
 timing=main
 oracle=Improvise\nWhen Maverick Thopterist enters the battlefield, create two 1/1 colorless Thopter artifact creature tokens with flying.
+status=not supported: improvise

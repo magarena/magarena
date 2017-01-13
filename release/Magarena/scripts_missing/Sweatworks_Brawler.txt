@@ -10,3 +10,4 @@ ability=Improvise;\
         Menace
 timing=main
 oracle=Improvise\nMenace
+status=not supported: blocking-restriction

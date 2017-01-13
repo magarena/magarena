@@ -10,3 +10,4 @@ ability=Improvise;\
         Whenever a nontoken artifact you control is put into a graveyard from the battlefield, create a 1/1 colorless Servo artifact creature token.
 timing=main
 oracle=Improvise\nWhenever a nontoken artifact you control is put into a graveyard from the battlefield, create a 1/1 colorless Servo artifact creature token.
+status=not supported: improvise

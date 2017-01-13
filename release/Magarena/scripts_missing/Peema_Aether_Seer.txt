@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, you get an amount of {E} equal to the gr
         Pay {E}{E}{E}: Target creature blocks this turn if able.
 timing=main
 oracle=When Peema Aether-Seer enters the battlefield, you get an amount of {E} equal to the greatest power among creatures you control.\nPay {E}{E}{E}: Target creature blocks this turn if able.
+status=not supported: blocking-restriction

@@ -10,3 +10,4 @@ ability=Improvise;\
         Trample, haste
 timing=main
 oracle=Improvise\nTrample, haste
+status=not supported: improvise

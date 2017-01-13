@@ -10,3 +10,4 @@ ability=Improvise;\
         Flying
 timing=main
 oracle=Improvise\nFlying
+status=not supported: improvise

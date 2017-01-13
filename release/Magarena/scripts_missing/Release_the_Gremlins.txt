@@ -7,3 +7,4 @@ cost={X}{X}{R}
 effect=Destroy X target artifacts. Create X 2/2 red Gremlin creature tokens.
 timing=main
 oracle=Destroy X target artifacts. Create X 2/2 red Gremlin creature tokens.
+status=not supported: multiple-targets

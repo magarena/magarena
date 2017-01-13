@@ -11,3 +11,4 @@ ability=Improvise;\
         {1}{R}: SN gets +2/+0 until end of turn.
 timing=main
 oracle=Improvise\nFlying\n{1}{R}: Freejam Regent gets +2/+0 until end of turn.
+status=not supported: improvise

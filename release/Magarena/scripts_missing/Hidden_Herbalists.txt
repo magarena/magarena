@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, add {G}{G} to your mana pool.
 timing=main
 oracle=Revolt — When Hidden Herbalists enters the battlefield, if a permanent you controlled left the battlefield this turn, add {G}{G} to your mana pool.
+status=not supported: add-multiple-mana

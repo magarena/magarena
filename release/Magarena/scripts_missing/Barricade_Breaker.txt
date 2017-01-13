@@ -10,3 +10,4 @@ ability=Improvise;\
         SN attacks each combat if able.
 timing=main
 oracle=Improvise\nBarricade Breaker attacks each combat if able.
+status=not supported: improvise

@@ -10,3 +10,4 @@ ability=Improvise;\
         Hexproof
 timing=main
 oracle=Improvise\nHexproof
+status=not supported: improvise

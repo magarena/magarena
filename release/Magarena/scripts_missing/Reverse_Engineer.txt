@@ -7,3 +7,4 @@ cost={3}{U}{U}
 effect=Improvise~Draw three cards.
 timing=main
 oracle=Improvise\nDraw three cards.
+status=not supported: improvise

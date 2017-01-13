@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Improvise~Counter target spell unless its controller pays {3}.
 timing=counter
 oracle=Improvise\nCounter target spell unless its controller pays {3}.
+status=not supported: improvise

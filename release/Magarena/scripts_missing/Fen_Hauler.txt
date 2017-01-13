@@ -10,3 +10,4 @@ ability=Improvise;\
         SN can't be blocked by artifact creatures.
 timing=main
 oracle=Improvise\nFen Hauler can't be blocked by artifact creatures.
+status=not supported: improvise
