@@ -1,0 +1,10 @@
+name=Implement of Examination
+image=http://magiccards.info/scans/en/aer/156.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={U}, Sacrifice SN: Draw a card.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=artifact
+oracle={U}, Sacrifice Implement of Examination: Draw a card.\nWhen Implement of Examination is put into a graveyard from the battlefield, draw a card.

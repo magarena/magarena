@@ -1,0 +1,11 @@
+name=Outland Boar
+image=http://magiccards.info/scans/en/aer/132.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Boar
+cost={2}{R}{G}
+pt=4/4
+ability=SN can't be blocked by creatures with power 2 or less.
+timing=main
+oracle=Outland Boar can't be blocked by creatures with power 2 or less.

@@ -1,0 +1,10 @@
+name=Prizefighter Construct
+image=http://magiccards.info/scans/en/aer/172.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=6/2
+timing=main
+oracle=NONE

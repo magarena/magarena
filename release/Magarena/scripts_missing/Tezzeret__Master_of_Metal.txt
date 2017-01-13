@@ -1,0 +1,13 @@
+name=Tezzeret, Master of Metal
+image=http://magiccards.info/scans/en/aer/190.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Tezzeret
+cost={4}{U}{B}
+loyalty=5
+ability=+1: Reveal cards from the top of your library until you reveal an artifact card. Put that card into your hand and the rest on the bottom of your library in a random order.;\
+        −3: Target opponent loses life equal to the number of artifacts you control.;\
+        −8: Gain control of all artifacts and creatures target opponent controls.
+timing=main
+oracle=+1: Reveal cards from the top of your library until you reveal an artifact card. Put that card into your hand and the rest on the bottom of your library in a random order.\n−3: Target opponent loses life equal to the number of artifacts you control.\n−8: Gain control of all artifacts and creatures target opponent controls.

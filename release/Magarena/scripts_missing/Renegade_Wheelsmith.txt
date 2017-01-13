@@ -1,0 +1,11 @@
+name=Renegade Wheelsmith
+image=http://magiccards.info/scans/en/aer/134.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Pilot
+cost={1}{R}{W}
+pt=3/2
+ability=Whenever SN becomes tapped, target creature can't block this turn.
+timing=main
+oracle=Whenever Renegade Wheelsmith becomes tapped, target creature can't block this turn.

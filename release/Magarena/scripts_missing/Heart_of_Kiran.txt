@@ -1,0 +1,13 @@
+name=Heart of Kiran
+image=http://magiccards.info/scans/en/aer/153.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+subtype=Vehicle
+cost={2}
+pt=4/4
+ability=Flying, vigilance;\
+        Crew 3;\
+        You may remove a loyalty counter from a planeswalker you control rather than pay SN's crew cost.
+timing=artifact
+oracle=Flying, vigilance\nCrew 3\nYou may remove a loyalty counter from a planeswalker you control rather than pay Heart of Kiran's crew cost.

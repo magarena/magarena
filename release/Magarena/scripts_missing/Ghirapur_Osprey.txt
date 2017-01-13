@@ -1,0 +1,11 @@
+name=Ghirapur Osprey
+image=http://magiccards.info/scans/en/aer/20.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={2}{W}
+pt=2/2
+ability=Flying
+timing=main
+oracle=Flying

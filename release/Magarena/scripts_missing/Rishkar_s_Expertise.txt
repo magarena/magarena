@@ -1,0 +1,9 @@
+name=Rishkar's Expertise
+image=http://magiccards.info/scans/en/aer/123.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{G}{G}
+effect=Draw cards equal to the greatest power among creatures you control.~You may cast a card with converted mana cost 5 or less from your hand without paying its mana cost.
+timing=main
+oracle=Draw cards equal to the greatest power among creatures you control.\nYou may cast a card with converted mana cost 5 or less from your hand without paying its mana cost.

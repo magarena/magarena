@@ -1,0 +1,12 @@
+name=Shipwreck Moray
+image=http://magiccards.info/scans/en/aer/45.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fish
+cost={3}{U}
+pt=0/5
+ability=When SN enters the battlefield, you get {E}{E}{E}{E}.;\
+        Pay {E}: SN gets +2/-2 until end of turn.
+timing=main
+oracle=When Shipwreck Moray enters the battlefield, you get {E}{E}{E}{E}.\nPay {E}: Shipwreck Moray gets +2/-2 until end of turn.

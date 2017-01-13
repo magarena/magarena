@@ -1,0 +1,13 @@
+name=Aerial Modification
+image=http://magiccards.info/scans/en/aer/1.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={4}{W}
+ability=Enchant creature or Vehicle;\
+        As long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.;\
+        Enchanted creature gets +2/+2 and has flying.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature or Vehicle\nAs long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.\nEnchanted creature gets +2/+2 and has flying.

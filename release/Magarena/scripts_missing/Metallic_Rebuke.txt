@@ -1,0 +1,9 @@
+name=Metallic Rebuke
+image=http://magiccards.info/scans/en/aer/39.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Improvise~Counter target spell unless its controller pays {3}.
+timing=counter
+oracle=Improvise\nCounter target spell unless its controller pays {3}.

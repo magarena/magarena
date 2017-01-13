@@ -1,0 +1,13 @@
+name=Yahenni, Undying Partisan
+image=http://magiccards.info/scans/en/aer/74.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Aetherborn,Vampire
+cost={2}{B}
+pt=2/2
+ability=Haste;\
+        Whenever a creature an opponent controls dies, put a +1/+1 counter on SN.;\
+        Sacrifice another creature: Yahenni gains indestructible until end of turn.
+timing=fmain
+oracle=Haste\nWhenever a creature an opponent controls dies, put a +1/+1 counter on Yahenni, Undying Partisan.\nSacrifice another creature: Yahenni gains indestructible until end of turn.

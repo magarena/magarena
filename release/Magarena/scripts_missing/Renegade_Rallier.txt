@@ -1,0 +1,11 @@
+name=Renegade Rallier
+image=http://magiccards.info/scans/en/aer/133.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{G}{W}
+pt=3/2
+ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, return target permanent card with converted mana cost 2 or less from your graveyard to the battlefield.
+timing=main
+oracle=Revolt — When Renegade Rallier enters the battlefield, if a permanent you controlled left the battlefield this turn, return target permanent card with converted mana cost 2 or less from your graveyard to the battlefield.

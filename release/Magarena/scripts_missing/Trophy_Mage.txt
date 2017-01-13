@@ -1,0 +1,11 @@
+name=Trophy Mage
+image=http://magiccards.info/scans/en/aer/48.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/2
+ability=When SN enters the battlefield, you may search your library for an artifact card with converted mana cost 3, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When Trophy Mage enters the battlefield, you may search your library for an artifact card with converted mana cost 3, reveal it, put it into your hand, then shuffle your library.

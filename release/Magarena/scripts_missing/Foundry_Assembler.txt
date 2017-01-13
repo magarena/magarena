@@ -1,0 +1,11 @@
+name=Foundry Assembler
+image=http://magiccards.info/scans/en/aer/151.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Assembly_Worker
+cost={5}
+pt=3/3
+ability=Improvise
+timing=main
+oracle=Improvise

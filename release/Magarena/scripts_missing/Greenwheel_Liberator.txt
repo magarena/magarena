@@ -1,0 +1,11 @@
+name=Greenwheel Liberator
+image=http://magiccards.info/scans/en/aer/108.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={1}{G}
+pt=2/1
+ability=SN enters the battlefield with two +1/+1 counters on it if a permanent you controlled left the battlefield this turn.
+timing=main
+oracle=Revolt — Greenwheel Liberator enters the battlefield with two +1/+1 counters on it if a permanent you controlled left the battlefield this turn.

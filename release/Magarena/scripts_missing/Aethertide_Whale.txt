@@ -1,0 +1,13 @@
+name=Aethertide Whale
+image=http://magiccards.info/scans/en/aer/27.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Whale
+cost={4}{U}{U}
+pt=6/4
+ability=Flying;\
+        When SN enters the battlefield, you get {E}{E}{E}{E}{E}{E}.;\
+        Pay {E}{E}{E}{E}: Return SN to its owner's hand.
+timing=main
+oracle=Flying\nWhen Aethertide Whale enters the battlefield, you get {E}{E}{E}{E}{E}{E}.\nPay {E}{E}{E}{E}: Return Aethertide Whale to its owner's hand.

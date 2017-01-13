@@ -1,0 +1,14 @@
+name=Herald of Anguish
+image=http://magiccards.info/scans/en/aer/64.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Demon
+cost={5}{B}{B}
+pt=5/5
+ability=Improvise;\
+        Flying;\
+        At the beginning of your end step, each opponent discards a card.;\
+        {1}{B}, Sacrifice an artifact: Target creature gets -2/-2 until end of turn.
+timing=main
+oracle=Improvise\nFlying\nAt the beginning of your end step, each opponent discards a card.\n{1}{B}, Sacrifice an artifact: Target creature gets -2/-2 until end of turn.

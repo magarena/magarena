@@ -1,0 +1,9 @@
+name=Leave in the Dust
+image=http://magiccards.info/scans/en/aer/37.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Return target nonland permanent to its owner's hand.~Draw a card.
+timing=removal
+oracle=Return target nonland permanent to its owner's hand.\nDraw a card.

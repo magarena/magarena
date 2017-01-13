@@ -1,0 +1,9 @@
+name=Daring Demolition
+image=http://magiccards.info/scans/en/aer/55.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}{B}
+effect=Destroy target creature or Vehicle.
+timing=main
+oracle=Destroy target creature or Vehicle.

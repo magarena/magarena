@@ -1,0 +1,13 @@
+name=Caught in the Brights
+image=http://magiccards.info/scans/en/aer/10.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Enchanted creature can't attack or block.;\
+        When a Vehicle you control attacks, exile enchanted creature.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature can't attack or block.\nWhen a Vehicle you control attacks, exile enchanted creature.

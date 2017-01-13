@@ -1,0 +1,12 @@
+name=Mechanized Production
+image=http://magiccards.info/scans/en/aer/38.jpg
+value=2.500
+rarity=M
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=Enchant artifact you control;\
+        At the beginning of your upkeep, create a token that's a copy of enchanted artifact. Then if you control eight or more artifacts with the same name as one another, you win the game.
+timing=aura
+enchant=default,creature
+oracle=Enchant artifact you control\nAt the beginning of your upkeep, create a token that's a copy of enchanted artifact. Then if you control eight or more artifacts with the same name as one another, you win the game.

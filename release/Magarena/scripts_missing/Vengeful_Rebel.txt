@@ -1,0 +1,11 @@
+name=Vengeful Rebel
+image=http://magiccards.info/scans/en/aer/73.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Aetherborn,Warrior
+cost={2}{B}
+pt=3/2
+ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, target creature an opponent controls gets -3/-3 until end of turn.
+timing=main
+oracle=Revolt — When Vengeful Rebel enters the battlefield, if a permanent you controlled left the battlefield this turn, target creature an opponent controls gets -3/-3 until end of turn.

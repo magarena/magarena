@@ -1,0 +1,11 @@
+name=Salvage Scuttler
+image=http://magiccards.info/scans/en/aer/43.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Crab
+cost={4}{U}
+pt=4/4
+ability=Whenever SN attacks, return an artifact you control to its owner's hand.
+timing=main
+oracle=Whenever Salvage Scuttler attacks, return an artifact you control to its owner's hand.

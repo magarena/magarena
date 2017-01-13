@@ -1,0 +1,10 @@
+name=Renegade Map
+image=http://magiccards.info/scans/en/aer/173.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability=SN enters the battlefield tapped.;\
+        {T}, Sacrifice SN: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.
+timing=artifact
+oracle=Renegade Map enters the battlefield tapped.\n{T}, Sacrifice Renegade Map: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.

@@ -1,0 +1,13 @@
+name=Aetherstream Leopard
+image=http://magiccards.info/scans/en/aer/103.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={2}{G}
+pt=2/3
+ability=Trample;\
+        When SN enters the battlefield, you get {E}.;\
+        Whenever SN attacks, you may pay {E}. If you do, it gets +2/+0 until end of turn.
+timing=main
+oracle=Trample\nWhen Aetherstream Leopard enters the battlefield, you get {E}.\nWhenever Aetherstream Leopard attacks, you may pay {E}. If you do, it gets +2/+0 until end of turn.

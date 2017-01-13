@@ -1,0 +1,12 @@
+name=Ice Over
+image=http://magiccards.info/scans/en/aer/35.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant artifact or creature;\
+        Enchanted permanent doesn't untap during its controller's untap step.
+timing=aura
+enchant=default,creature
+oracle=Enchant artifact or creature\nEnchanted permanent doesn't untap during its controller's untap step.

@@ -1,0 +1,9 @@
+name=Alley Evasion
+image=http://magiccards.info/scans/en/aer/6.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Choose one — (1) Target creature you control gets +1/+2 until end of turn. (2) Return target creature you control to its owner's hand.
+timing=removal
+oracle=Choose one —\n• Target creature you control gets +1/+2 until end of turn.\n• Return target creature you control to its owner's hand.

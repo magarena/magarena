@@ -1,0 +1,11 @@
+name=Alley Strangler
+image=http://magiccards.info/scans/en/aer/52.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Aetherborn,Rogue
+cost={2}{B}
+pt=2/3
+ability=Menace
+timing=main
+oracle=Menace

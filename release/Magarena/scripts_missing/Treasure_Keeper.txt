@@ -1,0 +1,11 @@
+name=Treasure Keeper
+image=http://magiccards.info/scans/en/aer/177.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=3/3
+ability=When SN dies, reveal cards from the top of your library until you reveal a nonland card with converted mana cost 3 or less. You may cast that card without paying its mana cost. Put all revealed cards not cast this way on the bottom of your library in a random order.
+timing=main
+oracle=When Treasure Keeper dies, reveal cards from the top of your library until you reveal a nonland card with converted mana cost 3 or less. You may cast that card without paying its mana cost. Put all revealed cards not cast this way on the bottom of your library in a random order.

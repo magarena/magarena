@@ -1,0 +1,9 @@
+name=Deft Dismissal
+image=http://magiccards.info/scans/en/aer/17.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{W}
+effect=SN deals 3 damage divided as you choose among one, two, or three target attacking or blocking creatures.
+timing=removal
+oracle=Deft Dismissal deals 3 damage divided as you choose among one, two, or three target attacking or blocking creatures.

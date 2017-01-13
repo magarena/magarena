@@ -1,0 +1,10 @@
+name=Lifecrafter's Bestiary
+image=http://magiccards.info/scans/en/aer/162.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=At the beginning of your upkeep, scry 1.;\
+        Whenever you cast a creature spell, you may pay {G}. If you do, draw a card.
+timing=artifact
+oracle=At the beginning of your upkeep, scry 1.\nWhenever you cast a creature spell, you may pay {G}. If you do, draw a card.

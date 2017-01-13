@@ -1,0 +1,10 @@
+name=Lathnu Sailback
+image=http://magiccards.info/scans/en/aer/89.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Lizard
+cost={4}{R}
+pt=5/4
+timing=main
+oracle=NONE

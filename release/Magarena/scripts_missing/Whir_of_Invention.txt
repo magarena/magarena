@@ -1,0 +1,9 @@
+name=Whir of Invention
+image=http://magiccards.info/scans/en/aer/49.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{U}{U}{U}
+effect=Improvise~Search your library for an artifact card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.
+timing=removal
+oracle=Improvise\nSearch your library for an artifact card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.

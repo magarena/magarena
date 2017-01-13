@@ -1,0 +1,12 @@
+name=Reckless Racer
+image=http://magiccards.info/scans/en/aer/95.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pilot
+cost={2}{R}
+pt=2/3
+ability=First strike;\
+        Whenever SN becomes tapped, you may discard a card. If you do, draw a card.
+timing=main
+oracle=First strike\nWhenever Reckless Racer becomes tapped, you may discard a card. If you do, draw a card.

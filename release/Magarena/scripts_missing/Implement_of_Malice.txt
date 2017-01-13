@@ -1,0 +1,10 @@
+name=Implement of Malice
+image=http://magiccards.info/scans/en/aer/159.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={2}
+ability={B}, Sacrifice SN: Target player discards a card. Activate this ability only any time you could cast a sorcery.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=artifact
+oracle={B}, Sacrifice Implement of Malice: Target player discards a card. Activate this ability only any time you could cast a sorcery.\nWhen Implement of Malice is put into a graveyard from the battlefield, draw a card.

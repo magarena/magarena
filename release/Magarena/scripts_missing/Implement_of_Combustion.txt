@@ -1,0 +1,10 @@
+name=Implement of Combustion
+image=http://magiccards.info/scans/en/aer/155.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability={R}, Sacrifice SN: It deals 1 damage to target player.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=artifact
+oracle={R}, Sacrifice Implement of Combustion: It deals 1 damage to target player.\nWhen Implement of Combustion is put into a graveyard from the battlefield, draw a card.

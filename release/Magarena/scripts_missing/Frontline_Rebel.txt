@@ -1,0 +1,11 @@
+name=Frontline Rebel
+image=http://magiccards.info/scans/en/aer/82.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=3/3
+ability=SN attacks each combat if able.
+timing=main
+oracle=Frontline Rebel attacks each combat if able.

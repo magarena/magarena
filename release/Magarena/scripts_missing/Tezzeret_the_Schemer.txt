@@ -1,0 +1,13 @@
+name=Tezzeret the Schemer
+image=http://magiccards.info/scans/en/aer/137.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Tezzeret
+cost={2}{U}{B}
+loyalty=5
+ability=+1: Create a colorless artifact token named Etherium Cell with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
+        −2: Target creature gets +X/-X until end of turn, where X is the number of artifacts you control.;\
+        −7: You get an emblem with "At the beginning of combat on your turn, target artifact you control becomes an artifact creature with base power and toughness 5/5."
+timing=main
+oracle=+1: Create a colorless artifact token named Etherium Cell with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\n−2: Target creature gets +X/-X until end of turn, where X is the number of artifacts you control.\n−7: You get an emblem with "At the beginning of combat on your turn, target artifact you control becomes an artifact creature with base power and toughness 5/5."

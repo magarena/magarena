@@ -1,0 +1,9 @@
+name=Dark Intimations
+image=http://magiccards.info/scans/en/aer/128.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{U}{B}{R}
+effect=Each opponent sacrifices a creature or planeswalker, then discards a card. You return a creature or planeswalker card from your graveyard to your hand, then draw a card.~When you cast a Bolas planeswalker spell, exile SN from your graveyard. That planeswalker enters the battlefield with an additional loyalty counter on it.
+timing=main
+oracle=Each opponent sacrifices a creature or planeswalker, then discards a card. You return a creature or planeswalker card from your graveyard to your hand, then draw a card.\nWhen you cast a Bolas planeswalker spell, exile Dark Intimations from your graveyard. That planeswalker enters the battlefield with an additional loyalty counter on it.

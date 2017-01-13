@@ -1,0 +1,9 @@
+name=Destructive Tampering
+image=http://magiccards.info/scans/en/aer/78.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{R}
+effect=Choose one — (1) Destroy target artifact. (2) Creatures without flying can't block this turn.
+timing=main
+oracle=Choose one —\n• Destroy target artifact.\n• Creatures without flying can't block this turn.

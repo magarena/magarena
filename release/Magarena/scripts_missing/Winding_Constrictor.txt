@@ -1,0 +1,12 @@
+name=Winding Constrictor
+image=http://magiccards.info/scans/en/aer/140.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Snake
+cost={B}{G}
+pt=2/3
+ability=If one or more counters would be placed on an artifact or creature you control, that many plus one of each of those kinds of counters are placed on that permanent instead.;\
+        If you would get one or more counters, you get that many plus one of each of those kinds of counters instead.
+timing=main
+oracle=If one or more counters would be placed on an artifact or creature you control, that many plus one of each of those kinds of counters are placed on that permanent instead.\nIf you would get one or more counters, you get that many plus one of each of those kinds of counters instead.

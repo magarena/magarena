@@ -1,0 +1,11 @@
+name=Verdant Automaton
+image=http://magiccards.info/scans/en/aer/180.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=1/2
+ability={3}{G}: Put a +1/+1 counter on SN.
+timing=main
+oracle={3}{G}: Put a +1/+1 counter on Verdant Automaton.

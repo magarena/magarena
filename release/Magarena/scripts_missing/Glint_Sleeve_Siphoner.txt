@@ -1,0 +1,13 @@
+name=Glint-Sleeve Siphoner
+image=http://magiccards.info/scans/en/aer/62.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Rogue
+cost={1}{B}
+pt=2/1
+ability=Menace;\
+        Whenever SN enters the battlefield or attacks, you get {E}.;\
+        At the beginning of your upkeep, you may pay {E}{E}. If you do, you draw a card and you lose 1 life.
+timing=main
+oracle=Menace\nWhenever Glint-Sleeve Siphoner enters the battlefield or attacks, you get {E}.\nAt the beginning of your upkeep, you may pay {E}{E}. If you do, you draw a card and you lose 1 life.

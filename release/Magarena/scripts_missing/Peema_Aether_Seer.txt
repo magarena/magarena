@@ -1,0 +1,12 @@
+name=Peema Aether-Seer
+image=http://magiccards.info/scans/en/aer/119.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Druid
+cost={3}{G}
+pt=3/2
+ability=When SN enters the battlefield, you get an amount of {E} equal to the greatest power among creatures you control.;\
+        Pay {E}{E}{E}: Target creature blocks this turn if able.
+timing=main
+oracle=When Peema Aether-Seer enters the battlefield, you get an amount of {E} equal to the greatest power among creatures you control.\nPay {E}{E}{E}: Target creature blocks this turn if able.

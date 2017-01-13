@@ -1,0 +1,12 @@
+name=Bastion Inventor
+image=http://magiccards.info/scans/en/aer/30.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Artificer
+cost={5}{U}
+pt=4/4
+ability=Improvise;\
+        Hexproof
+timing=main
+oracle=Improvise\nHexproof

@@ -1,0 +1,14 @@
+name=Aethersphere Harvester
+image=http://magiccards.info/scans/en/aer/142.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=3/5
+ability=Flying;\
+        When SN enters the battlefield, you get {E}{E}.;\
+        Pay {E}: SN gains lifelink until end of turn.;\
+        Crew 1
+timing=artifact
+oracle=Flying\nWhen Aethersphere Harvester enters the battlefield, you get {E}{E}.\nPay {E}: Aethersphere Harvester gains lifelink until end of turn.\nCrew 1

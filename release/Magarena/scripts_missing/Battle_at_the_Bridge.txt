@@ -1,0 +1,9 @@
+name=Battle at the Bridge
+image=http://magiccards.info/scans/en/aer/53.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{B}
+effect=Improvise~Target creature gets -X/-X until end of turn. You gain X life.
+timing=main
+oracle=Improvise\nTarget creature gets -X/-X until end of turn. You gain X life.

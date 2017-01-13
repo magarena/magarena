@@ -1,0 +1,11 @@
+name=Tezzeret's Simulacrum
+image=http://magiccards.info/scans/en/aer/193.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={3}
+pt=2/3
+ability={T}: Target opponent loses 1 life. If you control a Tezzeret planeswalker, that player loses 3 life instead.
+timing=main
+oracle={T}: Target opponent loses 1 life. If you control a Tezzeret planeswalker, that player loses 3 life instead.

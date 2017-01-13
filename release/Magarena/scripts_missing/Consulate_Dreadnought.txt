@@ -1,0 +1,11 @@
+name=Consulate Dreadnought
+image=http://magiccards.info/scans/en/aer/146.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={1}
+pt=7/11
+ability=Crew 6
+timing=artifact
+oracle=Crew 6

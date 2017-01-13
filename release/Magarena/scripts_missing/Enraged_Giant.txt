@@ -1,0 +1,12 @@
+name=Enraged Giant
+image=http://magiccards.info/scans/en/aer/80.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Giant
+cost={5}{R}
+pt=4/4
+ability=Improvise;\
+        Trample, haste
+timing=main
+oracle=Improvise\nTrample, haste

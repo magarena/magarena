@@ -1,0 +1,12 @@
+name=Lightning Runner
+image=http://magiccards.info/scans/en/aer/90.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human,Warrior
+cost={3}{R}{R}
+pt=2/2
+ability=Double strike, haste;\
+        Whenever SN attacks, you get {E}{E}, then you may pay {E}{E}{E}{E}{E}{E}{E}{E}. If you pay, untap all creatures you control, and after this phase, there is an additional combat phase.
+timing=main
+oracle=Double strike, haste\nWhenever Lightning Runner attacks, you get {E}{E}, then you may pay {E}{E}{E}{E}{E}{E}{E}{E}. If you pay, untap all creatures you control, and after this phase, there is an additional combat phase.

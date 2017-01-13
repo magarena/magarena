@@ -1,0 +1,13 @@
+name=Aether Chaser
+image=http://magiccards.info/scans/en/aer/76.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={1}{R}
+pt=2/1
+ability=First strike;\
+        When SN enters the battlefield, you get {E}{E}.;\
+        Whenever SN attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.
+timing=main
+oracle=First strike\nWhen Aether Chaser enters the battlefield, you get {E}{E}.\nWhenever Aether Chaser attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.

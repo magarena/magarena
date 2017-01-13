@@ -1,0 +1,11 @@
+name=Hidden Herbalists
+image=http://magiccards.info/scans/en/aer/110.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=2/2
+ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, add {G}{G} to your mana pool.
+timing=main
+oracle=Revolt — When Hidden Herbalists enters the battlefield, if a permanent you controlled left the battlefield this turn, add {G}{G} to your mana pool.

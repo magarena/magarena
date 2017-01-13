@@ -1,0 +1,9 @@
+name=Paradox Engine
+image=http://magiccards.info/scans/en/aer/169.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+cost={5}
+ability=Whenever you cast a spell, untap all nonland permanents you control.
+timing=artifact
+oracle=Whenever you cast a spell, untap all nonland permanents you control.

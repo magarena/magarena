@@ -1,0 +1,11 @@
+name=Dispersal Technician
+image=http://magiccards.info/scans/en/aer/32.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Artificer
+cost={4}{U}
+pt=3/2
+ability=When SN enters the battlefield, you may return target artifact to its owner's hand.
+timing=main
+oracle=When Dispersal Technician enters the battlefield, you may return target artifact to its owner's hand.

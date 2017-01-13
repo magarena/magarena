@@ -1,0 +1,12 @@
+name=Maverick Thopterist
+image=http://magiccards.info/scans/en/aer/130.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={3}{U}{R}
+pt=2/2
+ability=Improvise;\
+        When SN enters the battlefield, create two 1/1 colorless Thopter artifact creature tokens with flying.
+timing=main
+oracle=Improvise\nWhen Maverick Thopterist enters the battlefield, create two 1/1 colorless Thopter artifact creature tokens with flying.

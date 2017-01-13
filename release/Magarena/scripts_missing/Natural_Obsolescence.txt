@@ -1,0 +1,9 @@
+name=Natural Obsolescence
+image=http://magiccards.info/scans/en/aer/118.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Put target artifact on the bottom of its owner's library.
+timing=removal
+oracle=Put target artifact on the bottom of its owner's library.

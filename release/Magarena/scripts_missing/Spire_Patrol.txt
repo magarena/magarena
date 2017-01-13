@@ -1,0 +1,12 @@
+name=Spire Patrol
+image=http://magiccards.info/scans/en/aer/136.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{U}
+pt=3/2
+ability=Flying;\
+        When SN enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
+timing=main
+oracle=Flying\nWhen Spire Patrol enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.

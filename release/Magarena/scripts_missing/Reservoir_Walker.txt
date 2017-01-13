@@ -1,0 +1,11 @@
+name=Reservoir Walker
+image=http://magiccards.info/scans/en/aer/174.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=3/3
+ability=When SN enters the battlefield, you gain 3 life and get {E}{E}{E}.
+timing=main
+oracle=When Reservoir Walker enters the battlefield, you gain 3 life and get {E}{E}{E}.

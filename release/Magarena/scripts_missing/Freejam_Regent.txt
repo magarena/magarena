@@ -1,0 +1,13 @@
+name=Freejam Regent
+image=http://magiccards.info/scans/en/aer/81.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{R}{R}
+pt=4/4
+ability=Improvise;\
+        Flying;\
+        {1}{R}: SN gets +2/+0 until end of turn.
+timing=main
+oracle=Improvise\nFlying\n{1}{R}: Freejam Regent gets +2/+0 until end of turn.

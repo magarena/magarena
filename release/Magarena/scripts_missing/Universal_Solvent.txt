@@ -1,0 +1,9 @@
+name=Universal Solvent
+image=http://magiccards.info/scans/en/aer/178.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability={7}, {T}, Sacrifice SN: Destroy target permanent.
+timing=artifact
+oracle={7}, {T}, Sacrifice Universal Solvent: Destroy target permanent.

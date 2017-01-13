@@ -1,0 +1,13 @@
+name=Gremlin Infestation
+image=http://magiccards.info/scans/en/aer/83.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{R}
+ability=Enchant artifact;\
+        At the beginning of your end step, SN deals 2 damage to enchanted artifact's controller.;\
+        When enchanted artifact is put into a graveyard, create a 2/2 red Gremlin creature token.
+timing=aura
+enchant=default,creature
+oracle=Enchant artifact\nAt the beginning of your end step, Gremlin Infestation deals 2 damage to enchanted artifact's controller.\nWhen enchanted artifact is put into a graveyard, create a 2/2 red Gremlin creature token.

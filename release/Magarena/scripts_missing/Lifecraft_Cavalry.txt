@@ -1,0 +1,12 @@
+name=Lifecraft Cavalry
+image=http://magiccards.info/scans/en/aer/113.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={4}{G}
+pt=4/4
+ability=Trample;\
+        SN enters the battlefield with two +1/+1 counters on it if a permanent you controlled left the battlefield this turn.
+timing=main
+oracle=Trample\nRevolt — Lifecraft Cavalry enters the battlefield with two +1/+1 counters on it if a permanent you controlled left the battlefield this turn.

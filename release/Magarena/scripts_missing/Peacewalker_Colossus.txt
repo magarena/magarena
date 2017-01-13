@@ -1,0 +1,12 @@
+name=Peacewalker Colossus
+image=http://magiccards.info/scans/en/aer/170.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=6/6
+ability={1}{W}: Another target Vehicle you control becomes an artifact creature until end of turn.;\
+        Crew 4
+timing=artifact
+oracle={1}{W}: Another target Vehicle you control becomes an artifact creature until end of turn.\nCrew 4

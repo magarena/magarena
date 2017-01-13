@@ -1,0 +1,11 @@
+name=Aegis Automaton
+image=http://magiccards.info/scans/en/aer/141.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=0/3
+ability={4}{W}: Return another target creature you control to its owner's hand.
+timing=main
+oracle={4}{W}: Return another target creature you control to its owner's hand.

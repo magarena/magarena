@@ -1,0 +1,9 @@
+name=Highspire Infusion
+image=http://magiccards.info/scans/en/aer/111.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +3/+3 until end of turn. You get {E}{E}.
+timing=removal
+oracle=Target creature gets +3/+3 until end of turn. You get {E}{E}.

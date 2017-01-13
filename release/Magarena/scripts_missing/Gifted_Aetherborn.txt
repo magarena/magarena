@@ -1,0 +1,11 @@
+name=Gifted Aetherborn
+image=http://magiccards.info/scans/en/aer/61.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Aetherborn,Vampire
+cost={B}{B}
+pt=2/3
+ability=Deathtouch, lifelink
+timing=main
+oracle=Deathtouch, lifelink

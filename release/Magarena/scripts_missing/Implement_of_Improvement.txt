@@ -1,0 +1,10 @@
+name=Implement of Improvement
+image=http://magiccards.info/scans/en/aer/158.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability={W}, Sacrifice SN: You gain 2 life.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=artifact
+oracle={W}, Sacrifice Implement of Improvement: You gain 2 life.\nWhen Implement of Improvement is put into a graveyard from the battlefield, draw a card.

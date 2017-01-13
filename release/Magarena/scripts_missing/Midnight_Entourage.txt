@@ -1,0 +1,12 @@
+name=Midnight Entourage
+image=http://magiccards.info/scans/en/aer/66.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Aetherborn,Rogue
+cost={2}{B}{B}
+pt=3/3
+ability=Other Aetherborn you control get +1/+1.;\
+        Whenever SN or another Aetherborn you control dies, you draw a card and you lose 1 life.
+timing=main
+oracle=Other Aetherborn you control get +1/+1.\nWhenever Midnight Entourage or another Aetherborn you control dies, you draw a card and you lose 1 life.

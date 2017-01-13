@@ -1,0 +1,13 @@
+name=Tezzeret's Touch
+image=http://magiccards.info/scans/en/aer/138.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}{B}
+ability=Enchant artifact;\
+        Enchanted artifact is a creature with base power and toughness 5/5 in addition to its other types.;\
+        When enchanted artifact is put into a graveyard, return that card to its owner's hand.
+timing=aura
+enchant=default,creature
+oracle=Enchant artifact\nEnchanted artifact is a creature with base power and toughness 5/5 in addition to its other types.\nWhen enchanted artifact is put into a graveyard, return that card to its owner's hand.

@@ -1,0 +1,13 @@
+name=Metallic Mimic
+image=http://magiccards.info/scans/en/aer/164.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Shapeshifter
+cost={2}
+pt=2/1
+ability=As SN enters the battlefield, choose a creature type.;\
+        SN is the chosen type in addition to its other types.;\
+        Each other creature you control of the chosen type enters the battlefield with an additional +1/+1 counter on it.
+timing=main
+oracle=As Metallic Mimic enters the battlefield, choose a creature type.\nMetallic Mimic is the chosen type in addition to its other types.\nEach other creature you control of the chosen type enters the battlefield with an additional +1/+1 counter on it.

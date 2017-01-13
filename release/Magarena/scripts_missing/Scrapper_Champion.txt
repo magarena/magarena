@@ -1,0 +1,13 @@
+name=Scrapper Champion
+image=http://magiccards.info/scans/en/aer/97.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={3}{R}
+pt=2/2
+ability=Double strike;\
+        When SN enters the battlefield, you get {E}{E}.;\
+        Whenever SN attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it.
+timing=main
+oracle=Double strike\nWhen Scrapper Champion enters the battlefield, you get {E}{E}.\nWhenever Scrapper Champion attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it.

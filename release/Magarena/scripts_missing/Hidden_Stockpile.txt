@@ -1,0 +1,10 @@
+name=Hidden Stockpile
+image=http://magiccards.info/scans/en/aer/129.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={W}{B}
+ability=At the beginning of your end step, if a permanent you controlled left the battlefield this turn, create a 1/1 colorless Servo artifact creature token.;\
+        {1}, Sacrifice a creature: Scry 1.
+timing=enchantment
+oracle=Revolt — At the beginning of your end step, if a permanent you controlled left the battlefield this turn, create a 1/1 colorless Servo artifact creature token.\n{1}, Sacrifice a creature: Scry 1.

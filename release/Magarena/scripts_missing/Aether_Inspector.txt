@@ -1,0 +1,13 @@
+name=Aether Inspector
+image=http://magiccards.info/scans/en/aer/3.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dwarf,Artificer
+cost={3}{W}
+pt=2/3
+ability=Vigilance;\
+        When SN enters the battlefield, you get {E}{E}.;\
+        Whenever SN attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.
+timing=main
+oracle=Vigilance\nWhen Aether Inspector enters the battlefield, you get {E}{E}.\nWhenever Aether Inspector attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.

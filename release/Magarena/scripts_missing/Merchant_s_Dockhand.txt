@@ -1,0 +1,11 @@
+name=Merchant's Dockhand
+image=http://magiccards.info/scans/en/aer/163.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={1}
+pt=1/2
+ability={3}{U}, {T}, Tap X untapped artifacts you control: Look at the top X cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+timing=main
+oracle={3}{U}, {T}, Tap X untapped artifacts you control: Look at the top X cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.

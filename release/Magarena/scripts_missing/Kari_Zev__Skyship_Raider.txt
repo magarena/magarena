@@ -1,0 +1,12 @@
+name=Kari Zev, Skyship Raider
+image=http://magiccards.info/scans/en/aer/87.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Pirate
+cost={1}{R}
+pt=1/3
+ability=First strike, menace;\
+        Whenever SN attacks, create a legendary 2/1 red Monkey creature token named Ragavan that's tapped and attacking. Exile that token at end of combat.
+timing=main
+oracle=First strike, menace\nWhenever Kari Zev, Skyship Raider attacks, create a legendary 2/1 red Monkey creature token named Ragavan that's tapped and attacking. Exile that token at end of combat.

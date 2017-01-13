@@ -1,0 +1,10 @@
+name=Pendulum of Patterns
+image=http://magiccards.info/scans/en/aer/192.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield, you gain 3 life.;\
+        {5}, {T}, Sacrifice SN: Draw a card.
+timing=artifact
+oracle=When Pendulum of Patterns enters the battlefield, you gain 3 life.\n{5}, {T}, Sacrifice Pendulum of Patterns: Draw a card.

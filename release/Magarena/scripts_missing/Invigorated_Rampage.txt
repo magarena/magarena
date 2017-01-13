@@ -1,0 +1,9 @@
+name=Invigorated Rampage
+image=http://magiccards.info/scans/en/aer/86.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Choose one — (1) Target creature gets +4/+0 and gains trample until end of turn. (2) Two target creatures each get +2/+0 and gain trample until end of turn.
+timing=removal
+oracle=Choose one —\n• Target creature gets +4/+0 and gains trample until end of turn.\n• Two target creatures each get +2/+0 and gain trample until end of turn.

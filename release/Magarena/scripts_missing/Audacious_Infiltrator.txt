@@ -1,0 +1,11 @@
+name=Audacious Infiltrator
+image=http://magiccards.info/scans/en/aer/7.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dwarf,Rogue
+cost={1}{W}
+pt=3/1
+ability=SN can't be blocked by artifact creatures.
+timing=main
+oracle=Audacious Infiltrator can't be blocked by artifact creatures.

@@ -1,0 +1,9 @@
+name=Disallow
+image=http://magiccards.info/scans/en/aer/31.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{U}{U}
+effect=Counter target spell, activated ability, or triggered ability.
+timing=counter
+oracle=Counter target spell, activated ability, or triggered ability.

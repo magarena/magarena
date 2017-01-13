@@ -1,0 +1,12 @@
+name=Wind-Kin Raiders
+image=http://magiccards.info/scans/en/aer/50.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={4}{U}{U}
+pt=4/3
+ability=Improvise;\
+        Flying
+timing=main
+oracle=Improvise\nFlying

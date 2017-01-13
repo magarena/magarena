@@ -1,0 +1,9 @@
+name=Heroic Intervention
+image=http://magiccards.info/scans/en/aer/109.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{G}
+effect=Permanents you control gain hexproof and indestructible until end of turn.
+timing=removal
+oracle=Permanents you control gain hexproof and indestructible until end of turn.

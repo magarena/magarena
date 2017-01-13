@@ -1,0 +1,13 @@
+name=Aether Swooper
+image=http://magiccards.info/scans/en/aer/26.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Artificer
+cost={1}{U}
+pt=1/2
+ability=Flying;\
+        When SN enters the battlefield, you get {E}{E}.;\
+        Whenever SN attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.
+timing=main
+oracle=Flying\nWhen Aether Swooper enters the battlefield, you get {E}{E}.\nWhenever Aether Swooper attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.

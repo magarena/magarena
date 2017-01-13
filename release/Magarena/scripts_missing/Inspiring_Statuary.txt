@@ -1,0 +1,9 @@
+name=Inspiring Statuary
+image=http://magiccards.info/scans/en/aer/160.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=Nonartifact spells you cast have improvise.
+timing=artifact
+oracle=Nonartifact spells you cast have improvise.

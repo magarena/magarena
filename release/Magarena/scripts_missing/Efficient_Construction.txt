@@ -1,0 +1,9 @@
+name=Efficient Construction
+image=http://magiccards.info/scans/en/aer/33.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{U}
+ability=Whenever you cast an artifact spell, create a 1/1 colorless Thopter artifact creature token with flying.
+timing=enchantment
+oracle=Whenever you cast an artifact spell, create a 1/1 colorless Thopter artifact creature token with flying.

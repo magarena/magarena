@@ -1,0 +1,11 @@
+name=Rogue Refiner
+image=http://magiccards.info/scans/en/aer/135.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={1}{G}{U}
+pt=3/2
+ability=When SN enters the battlefield, draw a card and you get {E}{E}.
+timing=main
+oracle=When Rogue Refiner enters the battlefield, draw a card and you get {E}{E}.

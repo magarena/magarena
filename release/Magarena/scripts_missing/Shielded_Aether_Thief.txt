@@ -1,0 +1,13 @@
+name=Shielded Aether Thief
+image=http://magiccards.info/scans/en/aer/44.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vedalken,Rogue
+cost={1}{U}
+pt=0/4
+ability=Flash;\
+        Whenever SN blocks, you get {E}.;\
+        {T}, Pay {E}{E}{E}: Draw a card.
+timing=flash
+oracle=Flash\nWhenever Shielded Aether Thief blocks, you get {E}.\n{T}, Pay {E}{E}{E}: Draw a card.

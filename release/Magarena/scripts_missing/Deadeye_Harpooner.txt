@@ -1,0 +1,11 @@
+name=Deadeye Harpooner
+image=http://magiccards.info/scans/en/aer/15.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Warrior
+cost={2}{W}
+pt=2/2
+ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, destroy target tapped creature an opponent controls.
+timing=main
+oracle=Revolt — When Deadeye Harpooner enters the battlefield, if a permanent you controlled left the battlefield this turn, destroy target tapped creature an opponent controls.

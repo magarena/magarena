@@ -1,0 +1,11 @@
+name=Defiant Salvager
+image=http://magiccards.info/scans/en/aer/56.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Aetherborn,Artificer
+cost={2}{B}
+pt=2/2
+ability=Sacrifice an artifact or creature: Put a +1/+1 counter on SN. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Sacrifice an artifact or creature: Put a +1/+1 counter on Defiant Salvager. Activate this ability only any time you could cast a sorcery.

@@ -1,0 +1,9 @@
+name=Illusionist's Stratagem
+image=http://magiccards.info/scans/en/aer/36.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Exile up to two target creatures you control, then return those cards to the battlefield under their owner's control.~Draw a card.
+timing=removal
+oracle=Exile up to two target creatures you control, then return those cards to the battlefield under their owner's control.\nDraw a card.

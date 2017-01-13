@@ -1,0 +1,12 @@
+name=Dawnfeather Eagle
+image=http://magiccards.info/scans/en/aer/14.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={4}{W}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn.
+timing=main
+oracle=Flying\nWhen Dawnfeather Eagle enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn.

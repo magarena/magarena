@@ -1,0 +1,12 @@
+name=Sweatworks Brawler
+image=http://magiccards.info/scans/en/aer/100.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={3}{R}
+pt=3/3
+ability=Improvise;\
+        Menace
+timing=main
+oracle=Improvise\nMenace

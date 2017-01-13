@@ -1,0 +1,11 @@
+name=Felidar Guardian
+image=http://magiccards.info/scans/en/aer/19.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat,Beast
+cost={3}{W}
+pt=1/4
+ability=When SN enters the battlefield, you may exile another target permanent you control, then return that card to the battlefield under its owner's control.
+timing=main
+oracle=When Felidar Guardian enters the battlefield, you may exile another target permanent you control, then return that card to the battlefield under its owner's control.

@@ -1,0 +1,10 @@
+name=Gonti's Machinations
+image=http://magiccards.info/scans/en/aer/63.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={B}
+ability=Whenever you lose life for the first time each turn, you get {E}.;\
+        Pay {E}{E}, Sacrifice SN: Each opponent loses 3 life. You gain life equal to the life lost this way.
+timing=enchantment
+oracle=Whenever you lose life for the first time each turn, you get {E}.\nPay {E}{E}, Sacrifice Gonti's Machinations: Each opponent loses 3 life. You gain life equal to the life lost this way.

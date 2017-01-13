@@ -1,0 +1,11 @@
+name=Cogwork Assembler
+image=http://magiccards.info/scans/en/aer/145.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Assembly_Worker
+cost={3}
+pt=2/3
+ability={7}: Create a token that's a copy of target artifact. That token gains haste. Exile it at the beginning of the next end step.
+timing=main
+oracle={7}: Create a token that's a copy of target artifact. That token gains haste. Exile it at the beginning of the next end step.

@@ -1,0 +1,9 @@
+name=Indomitable Creativity
+image=http://magiccards.info/scans/en/aer/85.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={X}{R}{R}{R}
+effect=Destroy X target artifacts and/or creatures. For each permanent destroyed this way, its controller reveals cards from the top of his or her library until an artifact or creature card is revealed and exiles that card. Those players put the exiled cards onto the battlefield, then shuffle their libraries.
+timing=main
+oracle=Destroy X target artifacts and/or creatures. For each permanent destroyed this way, its controller reveals cards from the top of his or her library until an artifact or creature card is revealed and exiles that card. Those players put the exiled cards onto the battlefield, then shuffle their libraries.

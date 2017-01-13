@@ -1,0 +1,11 @@
+name=Fourth Bridge Prowler
+image=http://magiccards.info/scans/en/aer/60.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={B}
+pt=1/1
+ability=When SN enters the battlefield, you may have target creature get -1/-1 until end of turn.
+timing=main
+oracle=When Fourth Bridge Prowler enters the battlefield, you may have target creature get -1/-1 until end of turn.

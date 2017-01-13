@@ -1,0 +1,9 @@
+name=Perilous Predicament
+image=http://magiccards.info/scans/en/aer/68.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{B}
+effect=Each opponent sacrifices an artifact creature and a nonartifact creature.
+timing=removal
+oracle=Each opponent sacrifices an artifact creature and a nonartifact creature.

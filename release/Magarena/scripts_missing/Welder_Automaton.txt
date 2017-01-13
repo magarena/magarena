@@ -1,0 +1,11 @@
+name=Welder Automaton
+image=http://magiccards.info/scans/en/aer/183.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=2/1
+ability={3}{R}: SN deals 1 damage to each opponent.
+timing=main
+oracle={3}{R}: Welder Automaton deals 1 damage to each opponent.

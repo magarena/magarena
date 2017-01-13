@@ -1,0 +1,12 @@
+name=Daredevil Dragster
+image=http://magiccards.info/scans/en/aer/149.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=4/4
+ability=At end of combat, if SN attacked or blocked this combat, put a velocity counter on it. Then if it has two or more velocity counters on it, sacrifice it and draw two cards.;\
+        Crew 2
+timing=artifact
+oracle=At end of combat, if Daredevil Dragster attacked or blocked this combat, put a velocity counter on it. Then if it has two or more velocity counters on it, sacrifice it and draw two cards.\nCrew 2

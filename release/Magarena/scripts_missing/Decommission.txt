@@ -1,0 +1,9 @@
+name=Decommission
+image=http://magiccards.info/scans/en/aer/16.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Destroy target artifact or enchantment.~If a permanent you controlled left the battlefield this turn, you gain 3 life.
+timing=removal
+oracle=Destroy target artifact or enchantment.\nRevolt — If a permanent you controlled left the battlefield this turn, you gain 3 life.

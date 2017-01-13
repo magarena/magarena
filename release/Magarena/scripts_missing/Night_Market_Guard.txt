@@ -1,0 +1,11 @@
+name=Night Market Guard
+image=http://magiccards.info/scans/en/aer/166.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=3/1
+ability=SN can block an additional creature each combat.
+timing=main
+oracle=Night Market Guard can block an additional creature each combat.

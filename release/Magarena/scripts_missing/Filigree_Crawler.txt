@@ -1,0 +1,11 @@
+name=Filigree Crawler
+image=http://magiccards.info/scans/en/aer/150.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Insect
+cost={4}
+pt=2/2
+ability=When SN dies, create a 1/1 colorless Thopter artifact creature token with flying.
+timing=main
+oracle=When Filigree Crawler dies, create a 1/1 colorless Thopter artifact creature token with flying.

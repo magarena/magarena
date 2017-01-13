@@ -1,0 +1,12 @@
+name=Hope of Ghirapur
+image=http://magiccards.info/scans/en/aer/154.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact,Creature
+subtype=Thopter
+cost={1}
+pt=1/1
+ability=Flying;\
+        Sacrifice SN: Until your next turn, target player who was dealt combat damage by SN this turn can't cast noncreature spells.
+timing=main
+oracle=Flying\nSacrifice Hope of Ghirapur: Until your next turn, target player who was dealt combat damage by Hope of Ghirapur this turn can't cast noncreature spells.

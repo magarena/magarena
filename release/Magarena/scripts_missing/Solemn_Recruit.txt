@@ -1,0 +1,12 @@
+name=Solemn Recruit
+image=http://magiccards.info/scans/en/aer/22.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dwarf,Warrior
+cost={1}{W}{W}
+pt=2/2
+ability=Double strike;\
+        At the beginning of your end step, if a permanent you controlled left the battlefield this turn, put a +1/+1 counter on SN.
+timing=main
+oracle=Double strike\nRevolt — At the beginning of your end step, if a permanent you controlled left the battlefield this turn, put a +1/+1 counter on Solemn Recruit.

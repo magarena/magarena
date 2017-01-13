@@ -1,0 +1,13 @@
+name=Unbridled Growth
+image=http://magiccards.info/scans/en/aer/126.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant land;\
+        Enchanted land has "{T}: Add one mana of any color to your mana pool.";\
+        Sacrifice SN: Draw a card.
+timing=aura
+enchant=default,creature
+oracle=Enchant land\nEnchanted land has "{T}: Add one mana of any color to your mana pool."\nSacrifice Unbridled Growth: Draw a card.

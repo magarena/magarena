@@ -1,0 +1,12 @@
+name=Ajani's Comrade
+image=http://magiccards.info/scans/en/aer/187.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Soldier
+cost={1}{G}
+pt=2/2
+ability=Trample;\
+        At the beginning of combat on your turn, if you control an Ajani planeswalker, put a +1/+1 counter on SN.
+timing=main
+oracle=Trample\nAt the beginning of combat on your turn, if you control an Ajani planeswalker, put a +1/+1 counter on Ajani's Comrade.

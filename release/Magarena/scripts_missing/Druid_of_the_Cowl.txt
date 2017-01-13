@@ -1,0 +1,11 @@
+name=Druid of the Cowl
+image=http://magiccards.info/scans/en/aer/106.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=1/3
+ability={T}: Add {G} to your mana pool.
+timing=main
+oracle={T}: Add {G} to your mana pool.

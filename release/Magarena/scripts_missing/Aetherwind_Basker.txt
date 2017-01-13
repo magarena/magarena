@@ -1,0 +1,13 @@
+name=Aetherwind Basker
+image=http://magiccards.info/scans/en/aer/104.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Lizard
+cost={4}{G}{G}{G}
+pt=7/7
+ability=Trample;\
+        Whenever SN enters the battlefield or attacks, you get {E} for each creature you control.;\
+        Pay {E}: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Trample\nWhenever Aetherwind Basker enters the battlefield or attacks, you get {E} for each creature you control.\nPay {E}: Aetherwind Basker gets +1/+1 until end of turn.

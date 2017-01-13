@@ -1,0 +1,11 @@
+name=Countless Gears Renegade
+image=http://magiccards.info/scans/en/aer/13.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dwarf,Artificer
+cost={1}{W}
+pt=2/2
+ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, create a 1/1 colorless Servo artifact creature token.
+timing=main
+oracle=Revolt — When Countless Gears Renegade enters the battlefield, if a permanent you controlled left the battlefield this turn, create a 1/1 colorless Servo artifact creature token.

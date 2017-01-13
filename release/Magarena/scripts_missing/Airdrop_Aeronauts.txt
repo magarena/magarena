@@ -1,0 +1,12 @@
+name=Airdrop Aeronauts
+image=http://magiccards.info/scans/en/aer/5.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Scout
+cost={3}{W}{W}
+pt=4/3
+ability=Flying;\
+        When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, you gain 5 life.
+timing=main
+oracle=Flying\nRevolt — When Airdrop Aeronauts enters the battlefield, if a permanent you controlled left the battlefield this turn, you gain 5 life.

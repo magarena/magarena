@@ -1,0 +1,11 @@
+name=Ridgescale Tusker
+image=http://magiccards.info/scans/en/aer/121.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=5/5
+ability=When SN enters the battlefield, put a +1/+1 counter on each other creature you control.
+timing=main
+oracle=When Ridgescale Tusker enters the battlefield, put a +1/+1 counter on each other creature you control.

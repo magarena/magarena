@@ -1,0 +1,9 @@
+name=Pacification Array
+image=http://magiccards.info/scans/en/aer/168.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability={2}, {T}: Tap target artifact or creature.
+timing=artifact
+oracle={2}, {T}: Tap target artifact or creature.

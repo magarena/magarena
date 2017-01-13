@@ -1,0 +1,11 @@
+name=Weldfast Engineer
+image=http://magiccards.info/scans/en/aer/139.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={1}{B}{R}
+pt=3/3
+ability=At the beginning of combat on your turn, target artifact creature you control gets +2/+0 until end of turn.
+timing=main
+oracle=At the beginning of combat on your turn, target artifact creature you control gets +2/+0 until end of turn.

@@ -1,0 +1,11 @@
+name=Irontread Crusher
+image=http://magiccards.info/scans/en/aer/161.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Vehicle
+cost={4}
+pt=6/6
+ability=Crew 3
+timing=artifact
+oracle=Crew 3

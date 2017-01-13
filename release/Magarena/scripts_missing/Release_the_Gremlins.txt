@@ -1,0 +1,9 @@
+name=Release the Gremlins
+image=http://magiccards.info/scans/en/aer/96.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{X}{R}
+effect=Destroy X target artifacts. Create X 2/2 red Gremlin creature tokens.
+timing=main
+oracle=Destroy X target artifacts. Create X 2/2 red Gremlin creature tokens.

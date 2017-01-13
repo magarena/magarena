@@ -1,0 +1,10 @@
+name=Oath of Ajani
+image=http://magiccards.info/scans/en/aer/131.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={G}{W}
+ability=When SN enters the battlefield, put a +1/+1 counter on each creature you control.;\
+        Planeswalker spells you cast cost {1} less to cast.
+timing=enchantment
+oracle=When Oath of Ajani enters the battlefield, put a +1/+1 counter on each creature you control.\nPlaneswalker spells you cast cost {1} less to cast.

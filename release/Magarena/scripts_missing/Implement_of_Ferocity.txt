@@ -1,0 +1,10 @@
+name=Implement of Ferocity
+image=http://magiccards.info/scans/en/aer/157.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability={G}, Sacrifice SN: Put a +1/+1 counter on target creature. Activate this ability only any time you could cast a sorcery.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=artifact
+oracle={G}, Sacrifice Implement of Ferocity: Put a +1/+1 counter on target creature. Activate this ability only any time you could cast a sorcery.\nWhen Implement of Ferocity is put into a graveyard from the battlefield, draw a card.

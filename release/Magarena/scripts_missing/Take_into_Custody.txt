@@ -1,0 +1,9 @@
+name=Take into Custody
+image=http://magiccards.info/scans/en/aer/47.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+effect=Tap target creature. It doesn't untap during its controller's next untap step.
+timing=removal
+oracle=Tap target creature. It doesn't untap during its controller's next untap step.

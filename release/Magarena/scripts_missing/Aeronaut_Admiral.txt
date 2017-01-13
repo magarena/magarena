@@ -1,0 +1,12 @@
+name=Aeronaut Admiral
+image=http://magiccards.info/scans/en/aer/2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pilot
+cost={3}{W}
+pt=3/1
+ability=Flying;\
+        Vehicles you control have flying.
+timing=main
+oracle=Flying\nVehicles you control have flying.

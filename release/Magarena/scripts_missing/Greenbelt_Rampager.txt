@@ -1,0 +1,11 @@
+name=Greenbelt Rampager
+image=http://magiccards.info/scans/en/aer/107.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elephant
+cost={G}
+pt=3/4
+ability=When SN enters the battlefield, pay {E}{E}. If you can't, return SN to its owner's hand and you get {E}.
+timing=main
+oracle=When Greenbelt Rampager enters the battlefield, pay {E}{E}. If you can't, return Greenbelt Rampager to its owner's hand and you get {E}.

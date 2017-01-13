@@ -1,0 +1,12 @@
+name=Baral, Chief of Compliance
+image=http://magiccards.info/scans/en/aer/28.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/3
+ability=Instant and sorcery spells you cast cost {1} less to cast.;\
+        Whenever a spell or ability you control counters a spell, you may draw a card. If you do, discard a card.
+timing=main
+oracle=Instant and sorcery spells you cast cost {1} less to cast.\nWhenever a spell or ability you control counters a spell, you may draw a card. If you do, discard a card.

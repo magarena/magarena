@@ -1,0 +1,11 @@
+name=Sram, Senior Edificer
+image=http://magiccards.info/scans/en/aer/23.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Dwarf,Advisor
+cost={1}{W}
+pt=2/2
+ability=Whenever you cast an Aura, Equipment, or Vehicle spell, draw a card.
+timing=main
+oracle=Whenever you cast an Aura, Equipment, or Vehicle spell, draw a card.

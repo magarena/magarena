@@ -1,0 +1,9 @@
+name=Reverse Engineer
+image=http://magiccards.info/scans/en/aer/42.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{U}{U}
+effect=Improvise~Draw three cards.
+timing=main
+oracle=Improvise\nDraw three cards.

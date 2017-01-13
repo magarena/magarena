@@ -1,0 +1,11 @@
+name=Ravenous Intruder
+image=http://magiccards.info/scans/en/aer/94.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Gremlin
+cost={1}{R}
+pt=1/2
+ability=Sacrifice an artifact: SN gets +2/+2 until end of turn.
+timing=main
+oracle=Sacrifice an artifact: Ravenous Intruder gets +2/+2 until end of turn.

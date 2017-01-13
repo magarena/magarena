@@ -1,0 +1,12 @@
+name=Aethergeode Miner
+image=http://magiccards.info/scans/en/aer/4.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dwarf,Scout
+cost={1}{W}
+pt=3/1
+ability=Whenever SN attacks, you get {E}{E}.;\
+        Pay {E}{E}: Exile SN, then return it to the battlefield under its owner's control.
+timing=main
+oracle=Whenever Aethergeode Miner attacks, you get {E}{E}.\nPay {E}{E}: Exile Aethergeode Miner, then return it to the battlefield under its owner's control.

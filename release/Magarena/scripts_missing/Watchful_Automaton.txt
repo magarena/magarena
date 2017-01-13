@@ -1,0 +1,11 @@
+name=Watchful Automaton
+image=http://magiccards.info/scans/en/aer/182.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=2/2
+ability={2}{U}: Scry 1.
+timing=main
+oracle={2}{U}: Scry 1.

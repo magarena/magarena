@@ -1,0 +1,10 @@
+name=Gonti's Aether Heart
+image=http://magiccards.info/scans/en/aer/152.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+cost={6}
+ability=Whenever SN or another artifact enters the battlefield under your control, you get {E}{E}.;\
+        Pay {E}{E}{E}{E}{E}{E}{E}{E}, Exile SN: Take an extra turn after this one.
+timing=artifact
+oracle=Whenever Gonti's Aether Heart or another artifact enters the battlefield under your control, you get {E}{E}.\nPay {E}{E}{E}{E}{E}{E}{E}{E}, Exile Gonti's Aether Heart: Take an extra turn after this one.

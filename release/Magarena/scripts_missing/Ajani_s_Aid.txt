@@ -1,0 +1,10 @@
+name=Ajani's Aid
+image=http://magiccards.info/scans/en/aer/188.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{G}{W}
+ability=When SN enters the battlefield, you may search your library and/or graveyard for a card named Ajani, Valiant Protector, reveal it, and put it into your hand. If you search your library this way, shuffle it.;\
+        Sacrifice SN: Prevent all combat damage a creature of your choice would deal this turn.
+timing=enchantment
+oracle=When Ajani's Aid enters the battlefield, you may search your library and/or graveyard for a card named Ajani, Valiant Protector, reveal it, and put it into your hand. If you search your library this way, shuffle it.\nSacrifice Ajani's Aid: Prevent all combat damage a creature of your choice would deal this turn.

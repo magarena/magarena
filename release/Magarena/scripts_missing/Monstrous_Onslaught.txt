@@ -1,0 +1,9 @@
+name=Monstrous Onslaught
+image=http://magiccards.info/scans/en/aer/116.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}{G}
+effect=SN deals X damage divided as you choose among any number of target creatures, where X is the greatest power among creatures you control as you cast SN.
+timing=main
+oracle=Monstrous Onslaught deals X damage divided as you choose among any number of target creatures, where X is the greatest power among creatures you control as you cast Monstrous Onslaught.

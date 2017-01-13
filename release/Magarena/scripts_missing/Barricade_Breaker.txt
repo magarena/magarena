@@ -1,0 +1,12 @@
+name=Barricade Breaker
+image=http://magiccards.info/scans/en/aer/144.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Juggernaut
+cost={7}
+pt=7/5
+ability=Improvise;\
+        SN attacks each combat if able.
+timing=main
+oracle=Improvise\nBarricade Breaker attacks each combat if able.

@@ -1,0 +1,9 @@
+name=Yahenni's Expertise
+image=http://magiccards.info/scans/en/aer/75.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+effect=All creatures get -3/-3 until end of turn.~You may cast a card with converted mana cost 3 or less from your hand without paying its mana cost.
+timing=main
+oracle=All creatures get -3/-3 until end of turn.\nYou may cast a card with converted mana cost 3 or less from your hand without paying its mana cost.

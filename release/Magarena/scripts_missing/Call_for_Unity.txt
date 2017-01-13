@@ -1,0 +1,10 @@
+name=Call for Unity
+image=http://magiccards.info/scans/en/aer/9.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{W}{W}
+ability=At the beginning of your end step, if a permanent you controlled left the battlefield this turn, put a unity counter on SN.;\
+        Creatures you control get +1/+1 for each unity counter on SN.
+timing=enchantment
+oracle=Revolt — At the beginning of your end step, if a permanent you controlled left the battlefield this turn, put a unity counter on Call for Unity.\nCreatures you control get +1/+1 for each unity counter on Call for Unity.

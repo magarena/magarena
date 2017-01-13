@@ -1,0 +1,9 @@
+name=Pia's Revolution
+image=http://magiccards.info/scans/en/aer/91.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=Whenever a nontoken artifact is put into your graveyard from the battlefield, return that card to your hand unless target opponent has SN deal 3 damage to him or her.
+timing=enchantment
+oracle=Whenever a nontoken artifact is put into your graveyard from the battlefield, return that card to your hand unless target opponent has Pia's Revolution deal 3 damage to him or her.

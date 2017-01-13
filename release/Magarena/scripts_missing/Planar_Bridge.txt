@@ -1,0 +1,9 @@
+name=Planar Bridge
+image=http://magiccards.info/scans/en/aer/171.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+cost={6}
+ability={8}, {T}: Search your library for a permanent card, put it onto the battlefield, then shuffle your library.
+timing=artifact
+oracle={8}, {T}: Search your library for a permanent card, put it onto the battlefield, then shuffle your library.

@@ -1,0 +1,10 @@
+name=Consulate Turret
+image=http://magiccards.info/scans/en/aer/147.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: You get {E}.;\
+        {T}, Pay {E}{E}{E}: SN deals 2 damage to target player.
+timing=artifact
+oracle={T}: You get {E}.\n{T}, Pay {E}{E}{E}: Consulate Turret deals 2 damage to target player.

@@ -1,0 +1,13 @@
+name=Untethered Express
+image=http://magiccards.info/scans/en/aer/179.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={4}
+pt=4/4
+ability=Trample;\
+        Whenever SN attacks, put a +1/+1 counter on it.;\
+        Crew 1
+timing=artifact
+oracle=Trample\nWhenever Untethered Express attacks, put a +1/+1 counter on it.\nCrew 1

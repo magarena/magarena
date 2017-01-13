@@ -1,0 +1,12 @@
+name=Silkweaver Elite
+image=http://magiccards.info/scans/en/aer/125.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Archer
+cost={2}{G}
+pt=2/2
+ability=Reach;\
+        When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, draw a card.
+timing=main
+oracle=Reach\nRevolt — When Silkweaver Elite enters the battlefield, if a permanent you controlled left the battlefield this turn, draw a card.

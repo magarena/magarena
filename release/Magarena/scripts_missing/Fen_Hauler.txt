@@ -1,0 +1,12 @@
+name=Fen Hauler
+image=http://magiccards.info/scans/en/aer/58.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={6}{B}
+pt=5/5
+ability=Improvise;\
+        SN can't be blocked by artifact creatures.
+timing=main
+oracle=Improvise\nFen Hauler can't be blocked by artifact creatures.

@@ -1,0 +1,9 @@
+name=Aid from the Cowl
+image=http://magiccards.info/scans/en/aer/105.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{G}{G}
+ability=At the beginning of your end step, if a permanent you controlled left the battlefield this turn, reveal the top card of your library. If it's a permanent card, you may put it onto the battlefield. Otherwise, you may put it on the bottom of your library.
+timing=enchantment
+oracle=Revolt — At the beginning of your end step, if a permanent you controlled left the battlefield this turn, reveal the top card of your library. If it's a permanent card, you may put it onto the battlefield. Otherwise, you may put it on the bottom of your library.

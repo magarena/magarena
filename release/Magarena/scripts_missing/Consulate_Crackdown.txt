@@ -1,0 +1,9 @@
+name=Consulate Crackdown
+image=http://magiccards.info/scans/en/aer/11.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{W}{W}
+ability=When SN enters the battlefield, exile all artifacts your opponents control until SN leaves the battlefield.
+timing=enchantment
+oracle=When Consulate Crackdown enters the battlefield, exile all artifacts your opponents control until Consulate Crackdown leaves the battlefield.

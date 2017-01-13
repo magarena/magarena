@@ -1,0 +1,9 @@
+name=Baral's Expertise
+image=http://magiccards.info/scans/en/aer/29.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+effect=Return up to three target artifacts and/or creatures to their owners' hands.~You may cast a card with converted mana cost 4 or less from your hand without paying its mana cost.
+timing=main
+oracle=Return up to three target artifacts and/or creatures to their owners' hands.\nYou may cast a card with converted mana cost 4 or less from your hand without paying its mana cost.
