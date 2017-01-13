@@ -23,7 +23,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
-import magic.ui.widget.cards.table.CardTable;
+import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.FontsAndBorders;
@@ -37,8 +37,8 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private CardTable cardPoolTable;
-    private CardTable deckTable;
+    private CardTablePanelB cardPoolTable;
+    private CardTablePanelB deckTable;
     private CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
@@ -99,14 +99,14 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         // card pool
         cardPoolDefs = filterPanel.getFilteredCards();
 
-        cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
+        cardPoolTable = new CardTablePanelB(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
         cardPoolTable.addCardSelectionListener(this);
 
         cardPoolTable.setDeckEditorSelectionMode();
 
         deckDefs = this.deck;
-        deckTable = new CardTable(deckDefs, generateDeckTitle(deckDefs), true);
+        deckTable = new CardTablePanelB(deckDefs, generateDeckTitle(deckDefs), true);
         deckTable.addMouseListener(new DeckMouseListener());
         deckTable.addCardSelectionListener(this);
         deckTable.setDeckEditorSelectionMode();

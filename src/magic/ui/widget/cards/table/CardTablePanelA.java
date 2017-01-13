@@ -31,7 +31,7 @@ import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardTablePanel extends TexturedPanel {
+public class CardTablePanelA extends TexturedPanel {
 
     // fired when selection changes.
     public static final String CP_CARD_SELECTED = "7f9bfa20-a363-4ce4-8491-8bfb219a808d";
@@ -57,11 +57,11 @@ public class CardTablePanel extends TexturedPanel {
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
 
-    public CardTablePanel(final List<MagicCardDefinition> defs) {
+    public CardTablePanelA(final List<MagicCardDefinition> defs) {
         this(defs, "");
     }
 
-    public CardTablePanel(final List<MagicCardDefinition> defs, final String title) {
+    public CardTablePanelA(final List<MagicCardDefinition> defs, final String title) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 

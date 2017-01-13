@@ -24,7 +24,7 @@ import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardTable extends TexturedPanel
+public class CardTablePanelB extends TexturedPanel
         implements ListSelectionListener {
 
     private final MigLayout migLayout = new MigLayout();
@@ -36,11 +36,11 @@ public class CardTable extends TexturedPanel
     private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
     private final boolean isDeck;
 
-    public CardTable(final List<MagicCardDefinition> defs) {
+    public CardTablePanelB(final List<MagicCardDefinition> defs) {
         this(defs, "", false);
     }
 
-    public CardTable(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
+    public CardTablePanelB(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
 
         this.isDeck = isDeck;
         this.lastSelectedCards = new ArrayList<>();

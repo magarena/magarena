@@ -13,7 +13,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
-import magic.ui.widget.cards.table.CardTable;
+import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.utility.MagicSystem;
@@ -25,7 +25,7 @@ public class ExplorerContentPanel extends JPanel
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
-    private CardTable cardPoolTable;
+    private CardTablePanelB cardPoolTable;
     public CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
     private ExplorerSidebarPanel sideBarPanel;
@@ -73,7 +73,7 @@ public class ExplorerContentPanel extends JPanel
 
     private Container getMainContentContainer() {
         cardPoolDefs = filterPanel.getFilteredCards();
-        cardPoolTable = new CardTable(cardPoolDefs);
+        cardPoolTable = new CardTablePanelB(cardPoolDefs);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
         cardPoolTable.addCardSelectionListener(this);
         return cardPoolTable;

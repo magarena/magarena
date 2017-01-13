@@ -12,7 +12,7 @@ import magic.model.MagicCardDefinition;
 import magic.ui.MagicSound;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.cards.table.BasicDeckTablePanel;
-import magic.ui.widget.cards.table.CardTablePanel;
+import magic.ui.widget.cards.table.CardTablePanelA;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -25,7 +25,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
 
     private final CardQuantityActionPanel quantityPanel;
     private final BasicDeckTablePanel deckPanel;
-    private final CardTablePanel recallTablePanel;
+    private final CardTablePanelA recallTablePanel;
     private final MigLayout miglayout = new MigLayout();
 
     private final List<MagicCardDefinition> recallCards;
@@ -40,7 +40,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         deckPanel = new BasicDeckTablePanel();
 
         recallCards = new ArrayList<>();
-        recallTablePanel = new CardTablePanel(recallCards, "");
+        recallTablePanel = new CardTablePanelA(recallCards, "");
         recallTablePanel.setDeckEditorSelectionMode();
         recallTablePanel.setHeaderVisible(false);
 
@@ -92,24 +92,21 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
                         doDeckPanelSelectionAction();
                     }
                 });
-        recallTablePanel.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_SELECTED,
+        recallTablePanel.addPropertyChangeListener(CardTablePanelA.CP_CARD_SELECTED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
                         doRecallPanelSelectionAction();
                     }
                 });
-        recallTablePanel.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_LCLICKED,
+        recallTablePanel.addPropertyChangeListener(CardTablePanelA.CP_CARD_LCLICKED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
                         addSelectedCardToDeck();
                     }
                 });
-        recallTablePanel.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_RCLICKED,
+        recallTablePanel.addPropertyChangeListener(CardTablePanelA.CP_CARD_RCLICKED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {

@@ -29,7 +29,7 @@ import magic.ui.screen.deck.editor.DeckSideBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.cards.table.CardTable;
+import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.cards.table.ExplorerTableStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -48,7 +48,7 @@ class DuelDecksPanel extends TexturedPanel implements IPlayerProfileListener {
     private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
-    private final CardTable[] cardTables;
+    private final CardTablePanelB[] cardTables;
     private final DeckSideBar sidebar;
     private final ActionBarButton newDeckButton;
 
@@ -67,13 +67,13 @@ class DuelDecksPanel extends TexturedPanel implements IPlayerProfileListener {
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 
         final DuelPlayerConfig[] players = duel.getPlayers();
-        cardTables = new CardTable[players.length];
+        cardTables = new CardTablePanelB[players.length];
 
         for (int i = 0; i < players.length; i++) {
 
             final DuelPlayerConfig player = players[i];
 
-            cardTables[i] = new CardTable(player.getDeck(), generateTitle(player.getDeck()), true);
+            cardTables[i] = new CardTablePanelB(player.getDeck(), generateTitle(player.getDeck()), true);
             cardTables[i].addCardSelectionListener(sidebar.getCardViewer());
             cardTables[i].showCardCount(true);
             tabbedPane.addTab(null, cardTables[i]);

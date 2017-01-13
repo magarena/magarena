@@ -5,7 +5,7 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.widget.cards.table.CardTablePanel;
+import magic.ui.widget.cards.table.CardTablePanelA;
 import magic.ui.screen.deck.editor.DeckSideBar;
 import net.miginfocom.swing.MigLayout;
 
@@ -15,7 +15,7 @@ class DeckViewPanel extends JPanel {
     private MagicDeck deck;
     private final MigLayout migLayout = new MigLayout();
     private final DeckSideBar sideBarPanel;
-    private final CardTablePanel deckTable;
+    private final CardTablePanelA deckTable;
 
     DeckViewPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
 
@@ -24,7 +24,7 @@ class DeckViewPanel extends JPanel {
         sideBarPanel = new DeckSideBar();
         sideBarPanel.setDeck(deck);
 
-        deckTable = new CardTablePanel(this.deck, "  " + this.deck.getName());
+        deckTable = new CardTablePanelA(this.deck, "  " + this.deck.getName());
         deckTable.setDeckEditorSelectionMode();
         deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
@@ -46,8 +46,7 @@ class DeckViewPanel extends JPanel {
     }
 
     private void setDeckTablePropChangeListeners() {
-        deckTable.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_SELECTED,
+        deckTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_SELECTED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {

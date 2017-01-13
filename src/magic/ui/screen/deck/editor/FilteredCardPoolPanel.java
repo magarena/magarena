@@ -10,7 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.ICardFilterPanelListener;
 import magic.translate.MText;
-import magic.ui.widget.cards.table.CardTablePanel;
+import magic.ui.widget.cards.table.CardTablePanelA;
 import magic.translate.StringContext;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,7 +29,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
     private final CardFilterPanel filterPanel;
-    private final CardTablePanel cardPoolTable;
+    private final CardTablePanelA cardPoolTable;
     private final MigLayout miglayout = new MigLayout();
     private List<MagicCardDefinition> cardPool;
 
@@ -37,7 +37,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
         filterPanel = new CardFilterPanel(this);
         cardPool = filterPanel.getFilteredCards();
-        cardPoolTable = new CardTablePanel(cardPool, getCardPoolTitle());
+        cardPoolTable = new CardTablePanelA(cardPool, getCardPoolTitle());
 
         setLookAndFeel();
         refreshLayout();
@@ -48,8 +48,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
     private void setPropertyChangeListeners() {
 
-        cardPoolTable.addPropertyChangeListener(
-            CardTablePanel.CP_CARD_SELECTED,
+        cardPoolTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_SELECTED,
             new PropertyChangeListener() {
                 @Override
                 public void propertyChange(PropertyChangeEvent evt) {
@@ -57,8 +56,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
                 }
             });
 
-        cardPoolTable.addPropertyChangeListener(
-            CardTablePanel.CP_CARD_LCLICKED,
+        cardPoolTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_LCLICKED,
             new PropertyChangeListener() {
                 @Override
                 public void propertyChange(PropertyChangeEvent evt) {
@@ -66,8 +64,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
                 }
             });
 
-        cardPoolTable.addPropertyChangeListener(
-            CardTablePanel.CP_CARD_RCLICKED,
+        cardPoolTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_RCLICKED,
             new PropertyChangeListener() {
                 @Override
                 public void propertyChange(PropertyChangeEvent evt) {

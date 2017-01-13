@@ -8,7 +8,7 @@ import magic.data.DeckType;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.widget.cards.table.CardTable;
+import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.widget.duel.viewer.CardViewer;
 import net.miginfocom.swing.MigLayout;
@@ -22,7 +22,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
 
     private MagicDeck selectedDeck = null;
     private Path deckFilePath = null;
-    private final CardTable deckTable;
+    private final CardTablePanelB deckTable;
     private final CardViewer cardViewer = new CardViewer();
     private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
     private final DeckStatusPanel deckStatusPanel;
@@ -35,7 +35,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         setOpaque(false);
 
         selectedDeck = new MagicDeck();
-        deckTable = new CardTable(selectedDeck, "{deckName}", true);
+        deckTable = new CardTablePanelB(selectedDeck, "{deckName}", true);
         deckTable.addCardSelectionListener(cardViewer);
         deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
