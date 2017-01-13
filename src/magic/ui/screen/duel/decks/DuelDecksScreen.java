@@ -268,12 +268,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
         return true;
     }
 
-    public void doSwitchLayout() {
-//        ExplorerScreenLayout.setNextLayout();
-//        screenContent.refreshLayout();
-    }
-
-    void doSwitchStyle() {
-        screenContent.doSwitchStyle();
+    void setCardsTableStyle() {
+        screenContent.setCardsTableStyle();
     }
 }

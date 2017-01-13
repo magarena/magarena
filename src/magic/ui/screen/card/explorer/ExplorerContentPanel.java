@@ -13,9 +13,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
+import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.cards.table.ICardSelectionListener;
-import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -126,8 +126,8 @@ public class ExplorerContentPanel extends JPanel
         cardPoolTable.selectRandomCard();
     }
 
-    void doSwitchStyle() {
-        cardPoolTable.doSwitchStyle();
+    void setCardsTableStyle() {
+        cardPoolTable.setStyle();
     }
 
     private class CardPoolMouseListener extends MouseAdapter {

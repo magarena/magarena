@@ -38,7 +38,8 @@ class OptionsPanel extends JPanel {
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        listener.doSwitchStyle();
+                        CardsTableStyle.setNextStyle();
+                        listener.setCardsTableStyle();
                     }
                 }
         );

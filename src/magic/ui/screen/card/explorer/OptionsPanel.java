@@ -50,7 +50,8 @@ class OptionsPanel extends JPanel {
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        listener.doSwitchStyle();
+                        CardsTableStyle.setNextStyle();
+                        listener.setCardsTableStyle();
                     }
                 }
         );
@@ -76,7 +77,7 @@ class OptionsPanel extends JPanel {
 
         setOpaque(false);
     }
-    
+
     private void setLayout() {
         removeAll();
         if (isMenuOpen) {
@@ -86,7 +87,7 @@ class OptionsPanel extends JPanel {
             add(styleButton, "h 24!, gapbottom 2");
             add(closeButton, "spany 2, gapbottom 2");
         } else {
-            add(menuButton, "spany 2");            
+            add(menuButton, "spany 2");
         }
         revalidate();
         repaint();

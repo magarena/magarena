@@ -6,8 +6,8 @@ import magic.data.MagicSetDefinitions;
 import magic.translate.MText;
 import magic.ui.MagicLogs;
 import magic.ui.WikiPage;
-import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.cards.table.CardsTableStyle;
 
 @SuppressWarnings("serial")
@@ -50,7 +50,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
                 MenuButton.build(this::doShowScriptScreen,
                         MagicIcon.EDIT, MText.get(_S3), MText.get(_S4)
                 ),
-                MenuButton.build(this::doSelectRandomCard, 
+                MenuButton.build(this::doSelectRandomCard,
                         MagicIcon.RANDOM, MText.get(_S5), MText.get(_S6)
                 )
         );
@@ -90,7 +90,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
         headerPanel.refreshTotals(total, playable, missing);
     }
 
-    void doSwitchStyle() {
-        contentPanel.doSwitchStyle();
+    void setCardsTableStyle() {
+        contentPanel.setCardsTableStyle();
     }
 }

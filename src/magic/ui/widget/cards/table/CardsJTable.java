@@ -150,11 +150,6 @@ public class CardsJTable extends JTable
         }
     }
 
-    void doSwitchStyle() {
-        CardsTableStyle.setNextStyle();
-        setStyle(CardsTableStyle.getStyle());
-    }
-
     /******************************************************************
      * DARK THEME
      ******************************************************************/
@@ -432,8 +427,7 @@ public class CardsJTable extends JTable
         }
     }
 
-    void setStyle(CardsTableStyle newStyle) {
-        CardsTableStyle.setStyle(newStyle);
+    void setStyle() {
         setColumnRenderers();
         setStyleProperties();
         repaint();
