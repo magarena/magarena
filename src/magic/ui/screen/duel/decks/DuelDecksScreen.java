@@ -3,7 +3,6 @@ package magic.ui.screen.duel.decks;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
@@ -13,6 +12,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
@@ -41,6 +41,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
     private static final String _S13 = "Shows complete deck using tiled card images.";
     private static final String _S14 = "%s's deck is illegal.\n\n%s";
 
+    private final DuelSettingsPanel settingsPanel;
     private final DuelDecksPanel screenContent;
     private MagicGame nextGame = null;
     private final StartGameButton nextGameButton;
@@ -68,9 +69,24 @@ public class DuelDecksScreen extends HeaderFooterScreen
             );
         }
 
-        setHeaderContent(getHeaderPanel());
+        final DuelConfig config = duel.getConfiguration();
+
+        settingsPanel = new DuelSettingsPanel(config);
+        settingsPanel.setEnabled(duel.getGamesPlayed() == 0);
+        settingsPanel.setBorder(null);
+        settingsPanel.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
+        settingsPanel.addPropertyChangeListener(
+            DuelSettingsPanel.CP_CONFIG_UPDATED, evt -> onConfigUpdate()
+        );
+
+
+        setHeaderContent(settingsPanel);
         setFooterButtons();
         setWikiPage(WikiPage.DUEL_DECKS);
+    }
+
+    private void onConfigUpdate() {
+        doGameSetupInBackground(screenContent.getDuel());
     }
 
     private void setFooterButtons() {
@@ -128,11 +144,20 @@ public class DuelDecksScreen extends HeaderFooterScreen
         }
     }
 
+    private void updateDuelConfig() {
+        final DuelConfig config = screenContent.getDuel().getConfiguration();
+        config.setStartLife(settingsPanel.getStartLife());
+        config.setHandSize(settingsPanel.getHandSize());
+        config.setNrOfGames(settingsPanel.getNrOfGames());
+        config.setCube(settingsPanel.getCube());
+    }
+
     private AbstractAction getPlayGameAction() {
         return new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                updateDuelConfig();
                 startNextGame();
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
@@ -199,13 +224,6 @@ public class DuelDecksScreen extends HeaderFooterScreen
         }
 
         return true;
-    }
-
-    private JPanel getHeaderPanel() {
-        final DuelConfig config = screenContent.getDuel().getConfiguration();
-        final DuelSettingsPanel panel = new DuelSettingsPanel(config);
-        panel.setEnabled(false);
-        return panel;
     }
 
     private MagicDeck getActiveDeck() {

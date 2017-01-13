@@ -1,6 +1,5 @@
 package magic.ui;
 
-import magic.translate.MText;
 import java.awt.dnd.DropTarget;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -20,13 +19,14 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGameLog;
-import magic.ui.screen.ScreenHelper;
-import magic.ui.theme.ThemeFactory;
+import magic.translate.MText;
 import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.MScreen;
-import magic.utility.MagicFileSystem.DataPath;
+import magic.ui.screen.ScreenHelper;
+import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
 import org.apache.commons.io.FileUtils;
 
@@ -72,7 +72,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
 
         setVisible(true);
     }
-    
+
     private void setKeyboardEventActions() {
         ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F10, this::doScreenshot);
         ScreenHelper.setKeyEvent(contentPanel, KeyEvent.VK_F11, this::toggleFullScreenMode);
@@ -110,7 +110,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     public void loadDuel() {
         final File duelFile=MagicDuel.getLatestDuelFile();
         if (duelFile.exists()) {
-            duel=new MagicDuel();
+            duel=new MagicDuel(DuelConfig.getInstance());
             duel.load(duelFile);
             showDuel();
         } else {
@@ -243,7 +243,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
             FileUtils.copyFile(newImage, MagicFileSystem.getBackgroundImageFile());
             return true;
         } catch (IOException ex) {
-            ScreenController.showWarningMessage(String.format("%s\n\n%s", 
+            ScreenController.showWarningMessage(String.format("%s\n\n%s",
                     MText.get(_S6),
                     ex.getMessage())
             );
@@ -264,7 +264,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
                 params,
                 MText.get("Confirmation required..."),
                 JOptionPane.YES_NO_OPTION);
-        
+
         if (response == JOptionPane.YES_OPTION) {
             if (replaceBackgroundImage(imageFile)) {
                 config.setCustomBackground(true);

@@ -8,17 +8,17 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.data.DuelConfig;
-import magic.data.MagicIcon;
 import magic.data.MagicFormat;
-import magic.ui.MagicImages;
+import magic.data.MagicIcon;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -30,6 +30,8 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     private static final String _S3 = "Initial Hand size: %d";
     private static final String _S4 = "Maximum games: %d (first to %d)";
     private static final String _S5 = "Cube: %s";
+
+    public static final String CP_CONFIG_UPDATED = "298714cb-ba00-4356-9b6b-c70bb4a7367e";
 
     private final DuelConfig config;
     private int startLife;
@@ -130,6 +132,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
             cube = dialog.getCube();
             saveSettings();
             refreshDisplay();
+            firePropertyChange(CP_CONFIG_UPDATED, false, true);
         }
     }
 
