@@ -23,8 +23,8 @@ import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
-import magic.ui.widget.CostPanel;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.CostPanel;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -51,7 +51,6 @@ public class CardTablePanel extends TexturedPanel {
     private final MScrollPane scrollpane = new MScrollPane();
     private final CardTableModel tableModel;
     private JTable table;
-    private final ListSelectionModel selectionModel;
 
     private final TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
@@ -83,7 +82,6 @@ public class CardTablePanel extends TexturedPanel {
                 return c;
             }
         };
-        this.selectionModel = table.getSelectionModel();
         this.lastSelectedCards = new ArrayList<>();
 
         table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
