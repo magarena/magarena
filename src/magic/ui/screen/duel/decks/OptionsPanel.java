@@ -11,7 +11,6 @@ import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.ui.FontsAndBorders;
 import magic.ui.helpers.ImageHelper;
-import magic.ui.screen.card.explorer.*;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.widget.cards.table.CardsTableStyle;
@@ -27,23 +26,11 @@ class OptionsPanel extends JPanel {
             ImageHelper.getRecoloredIcon(MagicIcon.CLOSE, Color.BLACK, Color.WHITE);
 
     private boolean isMenuOpen = false;
-    private final BigDialButton layoutButton;
     private final BigDialButton styleButton;
     private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
 
     OptionsPanel(final DuelDecksScreen listener) {
-
-        layoutButton = new BigDialButton(
-                ExplorerScreenLayout.values().length,
-                ExplorerScreenLayout.getLayout().ordinal(),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        listener.doSwitchLayout();
-                    }
-                }
-        );
 
         styleButton = new BigDialButton(
                 CardsTableStyle.values().length,
@@ -81,8 +68,6 @@ class OptionsPanel extends JPanel {
     private void setLayout() {
         removeAll();
         if (isMenuOpen) {
-            add(getLabel("Layout"), "ax center");
-            add(layoutButton, "h 24!, gapbottom 2");
             add(getLabel("Style"), "ax center");
             add(styleButton, "h 24!, gapbottom 2");
             add(closeButton, "spany 2, gapbottom 2");
