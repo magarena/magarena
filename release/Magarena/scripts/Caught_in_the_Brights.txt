@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block.;\
         When a Vehicle you control attacks, exile enchanted creature.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.\nWhen a Vehicle you control attacks, exile enchanted creature.
