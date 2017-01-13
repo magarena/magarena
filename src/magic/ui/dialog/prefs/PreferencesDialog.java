@@ -36,16 +36,16 @@ import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicFrame;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.theme.Theme;
-import magic.ui.FontsAndBorders;
-import magic.ui.widget.SliderPanel;
-import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.M.MCheckBox;
+import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -250,7 +250,7 @@ public class PreferencesDialog
         hideAIPromptCheckBox.setToolTipText(MText.get(_S16));
         setButtonPropertyDefaults(hideAIPromptCheckBox);
 
-        mulliganScreenCheckbox = new MCheckBox(getAsHtml(MText.get(_S17)), config.getMulliganScreenActive());
+        mulliganScreenCheckbox = new MCheckBox(getAsHtml(MText.get(_S17)), config.showMulliganScreen());
         setButtonPropertyDefaults(mulliganScreenCheckbox);
 
         touchscreenCheckBox = new MCheckBox(getAsHtml(MText.get(_S20)), config.isTouchscreen());
@@ -301,7 +301,7 @@ public class PreferencesDialog
         config.setAlwaysPass(alwaysPassCheckBox.isSelected());
         config.setSmartTarget(smartTargetCheckBox.isSelected());
         config.setMessageDelay(messageDelaySlider.getValue());
-        config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
+        config.setShowMulliganScreen(mulliganScreenCheckbox.isSelected());
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
 
         if (isGamePlayMode == false) {

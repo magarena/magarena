@@ -396,10 +396,7 @@ public class GeneralConfig {
         return isMulliganScreenActive;
     }
 
-    public boolean getMulliganScreenActive() {
-        return isMulliganScreenActive;
-    }
-    public void setMulliganScreenActive(final boolean b) {
+    public void setShowMulliganScreen(final boolean b) {
         isMulliganScreenActive = b;
     }
 
