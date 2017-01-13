@@ -39,7 +39,7 @@ public class ExplorerJTable extends JTable
                 BorderFactory.createMatteBorder(1, 0, 1, 0, MagicStyle.getRolloverColor()),
                 BorderFactory.createEmptyBorder(0, 1, 0, 0)
             );
-    
+
     private final Color defaultForeColor = getForeground();
     private int mouseOverRow = -1;
     private final CardTableModel tableModel;
@@ -140,7 +140,7 @@ public class ExplorerJTable extends JTable
             default: throw new UnsupportedOperationException();
         }
     }
-    
+
     private DefaultTableCellRenderer getCostRenderer() {
         switch (ExplorerTableStyle.getStyle()) {
             case LIGHT: return defaultCostRenderer;
@@ -152,9 +152,7 @@ public class ExplorerJTable extends JTable
 
     void doSwitchStyle() {
         ExplorerTableStyle.setNextStyle();
-        setColumnRenderers();
-        setStyleProperties();
-        repaint();
+        setStyle(ExplorerTableStyle.getStyle());
     }
 
     /******************************************************************
@@ -185,7 +183,7 @@ public class ExplorerJTable extends JTable
 
         ((JComponent) cell).setOpaque(true);
         ((JComponent) cell).setBorder(NO_FOCUS_BORDER);
-        
+
         // Text Color
         final Color c1 = isRowSelected
                 ? card.isInvalid()
@@ -200,7 +198,7 @@ public class ExplorerJTable extends JTable
                 ? getSelectionBackground()
                 : isAlternate ? DEF_ROW_COLOR_NEG : ALT_ROW_COLOR_NEG
         );
-        
+
         return cell;
     }
 
@@ -432,5 +430,12 @@ public class ExplorerJTable extends JTable
             mouseOverRow = row;
             repaint();
         }
+    }
+
+    void setStyle(ExplorerTableStyle newStyle) {
+        ExplorerTableStyle.setStyle(newStyle);
+        setColumnRenderers();
+        setStyleProperties();
+        repaint();
     }
 }

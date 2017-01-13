@@ -195,6 +195,11 @@ public class CardTable extends TexturedPanel
         setEmptyBackgroundColor();
     }
 
+    public void setStyle(ExplorerTableStyle newStyle) {
+        table.setStyle(newStyle);
+        setEmptyBackgroundColor();
+    }
+
     private class ColumnListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {

@@ -30,6 +30,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.cards.table.CardTable;
+import magic.ui.widget.cards.table.ExplorerTableStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -265,5 +266,14 @@ class DuelDecksPanel extends TexturedPanel implements IPlayerProfileListener {
 
     private void saveSelectedPlayerProfile(final PlayerProfile player) {
         duel.getConfiguration().setPlayerProfile(player.isHuman() ? 0 : 1, player);
+    }
+
+    void refreshLayout() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void doSwitchStyle() {
+        cardTables[0].doSwitchStyle();
+        cardTables[1].setStyle(ExplorerTableStyle.getStyle());
     }
 }

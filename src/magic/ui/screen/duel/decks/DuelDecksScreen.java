@@ -46,6 +46,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
     private MagicGame nextGame = null;
     private final StartGameButton nextGameButton;
     private NewGameWorker worker;
+    private OptionsPanel optionsPanel;
 
     public DuelDecksScreen(final MagicDuel duel) {
         super(MText.get(_S1));
@@ -81,6 +82,10 @@ public class DuelDecksScreen extends HeaderFooterScreen
 
 
         setHeaderContent(settingsPanel);
+
+        optionsPanel = new OptionsPanel(this);
+        setHeaderOptions(optionsPanel);
+
         setFooterButtons();
         setWikiPage(WikiPage.DUEL_DECKS);
     }
@@ -263,4 +268,12 @@ public class DuelDecksScreen extends HeaderFooterScreen
         return true;
     }
 
+    public void doSwitchLayout() {
+//        ExplorerScreenLayout.setNextLayout();
+//        screenContent.refreshLayout();
+    }
+
+    void doSwitchStyle() {
+        screenContent.doSwitchStyle();
+    }
 }

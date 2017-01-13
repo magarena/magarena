@@ -32,11 +32,15 @@ public enum ExplorerTableStyle {
         CONFIG.set(CONFIG_SETTING, style.ordinal());
     }
 
+    static void setStyle(ExplorerTableStyle newStyle) {
+        style = newStyle;
+    }
+
     private ExplorerTableStyle next() {
         return values()[(this.ordinal()+1) % values().length];
     }
 
-    static void setNextStyle() {
+    public static void setNextStyle() {
         style = style.next();
     }
 
