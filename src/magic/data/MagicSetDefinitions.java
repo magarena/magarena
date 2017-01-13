@@ -52,31 +52,38 @@ public class MagicSetDefinitions {
 
         final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
         try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
-            writer.println("Set,Cards,Playable,Unimplemented,Potential");
+            writer.println("Set,Cards,Playable,Unimplemented,Potential,No Status");
             for (MagicSets set : MagicSets.values()) {
                 int totalPlayable = 0;
                 int totalUnplayable = 0;
                 int totalPotential = 0;
+                int totalStatus = 0;
                 for (MagicCardDefinition card : cards) {
-                    if (isCardInSet(card, set) && card.isPlayable()) {
-                        if (card.isInvalid()) {
-                            if (CardDefinitions.isPotential(card)) {
-                                totalPotential++;
+                    if (isCardInSet(card, set)) {
+                        if (!card.hasStatus() && CardDefinitions.isPotential(card)) {
+                            totalStatus++;
+                        }
+                        if (card.isPlayable()) {
+                            if (card.isInvalid()) {
+                                if (CardDefinitions.isPotential(card)) {
+                                    totalPotential++;
+                                } else {
+                                    totalUnplayable++;
+                                }
                             } else {
-                                totalUnplayable++;
+                                totalPlayable++;
                             }
-                        } else {
-                            totalPlayable++;
                         }
                     }
                 }
-                writer.printf("%s %s,%d,%d,%d,%d\n",
+                writer.printf("%s %s,%d,%d,%d,%d,%d\n",
                     set.name().replaceAll("_", ""),
                     set.getSetName(),
                     totalPlayable + totalUnplayable + totalPotential,
                     totalPlayable,
                     totalUnplayable + totalPotential,
-                    totalPotential
+                    totalPotential,
+                    totalStatus
                 );
             }
         }
