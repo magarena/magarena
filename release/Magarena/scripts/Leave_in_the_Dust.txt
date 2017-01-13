@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={3}{U}
 effect=Return target nonland permanent to its owner's hand.~Draw a card.
-timing=bounce
+timing=removal
 oracle=Return target nonland permanent to its owner's hand.\nDraw a card.
