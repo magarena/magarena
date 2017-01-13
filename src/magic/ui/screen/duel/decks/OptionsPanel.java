@@ -14,7 +14,7 @@ import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.card.explorer.*;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
-import magic.ui.widget.cards.table.ExplorerTableStyle;
+import magic.ui.widget.cards.table.CardsTableStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -46,8 +46,8 @@ class OptionsPanel extends JPanel {
         );
 
         styleButton = new BigDialButton(
-                ExplorerTableStyle.values().length,
-                ExplorerTableStyle.getStyle().ordinal(),
+                CardsTableStyle.values().length,
+                CardsTableStyle.getStyle().ordinal(),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {

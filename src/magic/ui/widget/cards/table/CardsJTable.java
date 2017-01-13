@@ -54,7 +54,7 @@ public class CardsJTable extends JTable
     }
 
     private void setMouseListeners() {
-        if (ExplorerTableStyle.getStyle() == ExplorerTableStyle.THEME) {
+        if (CardsTableStyle.getStyle() == CardsTableStyle.THEME) {
             addMouseMotionListener(this);
             addMouseListener(this);
         } else {
@@ -74,8 +74,8 @@ public class CardsJTable extends JTable
     }
 
     private void setStyleProperties() {
-        setShowGrid(ExplorerTableStyle.getStyle() != ExplorerTableStyle.THEME);
-        setGridColor(ExplorerTableStyle.getStyle() == ExplorerTableStyle.LIGHT ? GRID_COLOR : DEFAULT_GRID_COLOR);
+        setShowGrid(CardsTableStyle.getStyle() != CardsTableStyle.THEME);
+        setGridColor(CardsTableStyle.getStyle() == CardsTableStyle.LIGHT ? GRID_COLOR : DEFAULT_GRID_COLOR);
         setMouseListeners();
     }
 
@@ -133,7 +133,7 @@ public class CardsJTable extends JTable
     */
     @Override
     public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
-        switch (ExplorerTableStyle.getStyle()) {
+        switch (CardsTableStyle.getStyle()) {
             case LIGHT: return prepareDefaultRenderer(renderer, row, column);
             case THEME: return prepareThemedRenderer(renderer, row, column);
             case DARK: return prepareMidnightRenderer(renderer, row, column);
@@ -142,7 +142,7 @@ public class CardsJTable extends JTable
     }
 
     private DefaultTableCellRenderer getCostRenderer() {
-        switch (ExplorerTableStyle.getStyle()) {
+        switch (CardsTableStyle.getStyle()) {
             case LIGHT: return defaultCostRenderer;
             case THEME: return themedCostRenderer;
             case DARK: return midnightCostRenderer;
@@ -151,8 +151,8 @@ public class CardsJTable extends JTable
     }
 
     void doSwitchStyle() {
-        ExplorerTableStyle.setNextStyle();
-        setStyle(ExplorerTableStyle.getStyle());
+        CardsTableStyle.setNextStyle();
+        setStyle(CardsTableStyle.getStyle());
     }
 
     /******************************************************************
@@ -432,8 +432,8 @@ public class CardsJTable extends JTable
         }
     }
 
-    void setStyle(ExplorerTableStyle newStyle) {
-        ExplorerTableStyle.setStyle(newStyle);
+    void setStyle(CardsTableStyle newStyle) {
+        CardsTableStyle.setStyle(newStyle);
         setColumnRenderers();
         setStyleProperties();
         repaint();

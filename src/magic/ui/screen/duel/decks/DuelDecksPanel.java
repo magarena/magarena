@@ -30,7 +30,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.cards.table.CardTablePanelB;
-import magic.ui.widget.cards.table.ExplorerTableStyle;
+import magic.ui.widget.cards.table.CardsTableStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -274,6 +274,6 @@ class DuelDecksPanel extends TexturedPanel implements IPlayerProfileListener {
 
     void doSwitchStyle() {
         cardTables[0].doSwitchStyle();
-        cardTables[1].setStyle(ExplorerTableStyle.getStyle());
+        cardTables[1].setStyle(CardsTableStyle.getStyle());
     }
 }

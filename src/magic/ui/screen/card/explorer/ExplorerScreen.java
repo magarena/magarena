@@ -8,7 +8,7 @@ import magic.ui.MagicLogs;
 import magic.ui.WikiPage;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.widget.cards.table.ExplorerTableStyle;
+import magic.ui.widget.cards.table.CardsTableStyle;
 
 @SuppressWarnings("serial")
 public class ExplorerScreen extends HeaderFooterScreen {
@@ -71,7 +71,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
 
     private void doSaveSettings() {
         ExplorerScreenLayout.save();
-        ExplorerTableStyle.save();
+        CardsTableStyle.save();
         GeneralConfig.getInstance().save();
     }
 

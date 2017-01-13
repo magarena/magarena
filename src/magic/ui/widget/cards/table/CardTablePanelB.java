@@ -187,7 +187,7 @@ public class CardTablePanelB extends TexturedPanel
     }
 
     private void setEmptyBackgroundColor() {
-        setBackground(ExplorerTableStyle.getStyle().getEmptyBackgroundColor());
+        setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
 
     public void doSwitchStyle() {
@@ -195,7 +195,7 @@ public class CardTablePanelB extends TexturedPanel
         setEmptyBackgroundColor();
     }
 
-    public void setStyle(ExplorerTableStyle newStyle) {
+    public void setStyle(CardsTableStyle newStyle) {
         table.setStyle(newStyle);
         setEmptyBackgroundColor();
     }
