@@ -24,7 +24,7 @@ import magic.ui.utility.MagicStyle;
 import magic.ui.widget.CostPanel;
 
 @SuppressWarnings("serial")
-public class ExplorerJTable extends JTable
+public class CardsJTable extends JTable
     implements MouseListener, MouseMotionListener {
 
     private static final int ROW_HEIGHT = 20; // pixels
@@ -45,7 +45,7 @@ public class ExplorerJTable extends JTable
     private final CardTableModel tableModel;
 
 
-    public ExplorerJTable(CardTableModel dm) {
+    public CardsJTable(CardTableModel dm) {
         super(dm);
         this.tableModel = dm;
         setDefaultProperties();

@@ -30,7 +30,7 @@ public class CardTablePanelB extends TexturedPanel
     private final MigLayout migLayout = new MigLayout();
     private final MScrollPane scrollpane = new MScrollPane();
     private final CardTableModel tableModel;
-    private final ExplorerJTable table;
+    private final CardsJTable table;
     private TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
     private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
@@ -46,7 +46,7 @@ public class CardTablePanelB extends TexturedPanel
         this.lastSelectedCards = new ArrayList<>();
 
         this.tableModel = new CardTableModel(defs);
-        this.table = new ExplorerJTable(tableModel);
+        this.table = new CardsJTable(tableModel);
 
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
