@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={1}{G}
 effect=Permanents you control gain hexproof and indestructible until end of turn.
-timing=removal
+timing=pump
 oracle=Permanents you control gain hexproof and indestructible until end of turn.

@@ -7,5 +7,5 @@ subtype=Beast
 cost={3}{G}{G}
 pt=5/5
 ability=When SN enters the battlefield, put a +1/+1 counter on each other creature you control.
-timing=main
+timing=fmain
 oracle=When Ridgescale Tusker enters the battlefield, put a +1/+1 counter on each other creature you control.

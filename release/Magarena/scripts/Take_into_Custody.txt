@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={U}
 effect=Tap target creature. It doesn't untap during its controller's next untap step.
-timing=removal
+timing=tap
 oracle=Tap target creature. It doesn't untap during its controller's next untap step.
