@@ -2790,7 +2790,7 @@ public enum MagicRuleEventAction {
         }
     },
     Energy(
-        ARG.PLAYERS + " get(s)? " + ARG.ENERGY,
+        ARG.PLAYERS + "( )?get(s)? " + ARG.ENERGY,
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Poison"
