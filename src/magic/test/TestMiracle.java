@@ -1,11 +1,10 @@
 package magic.test;
 
+import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicDeckProfile;
-import magic.model.phase.*;
-import magic.ai.MagicAIImpl;
+import magic.model.phase.MagicUpkeepPhase;
 
 class TestMiracle extends TestGameBuilder {
     public MagicGame getGame() {
@@ -20,19 +19,19 @@ class TestMiracle extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Forest", 20);
-        addToLibrary(P, "Terminus", 1);
-        createPermanent(P, "Wastes", false, 8);
-        createPermanent(P, "Chromatic Lantern", false, 1);
-        createPermanent(P, "Grizzly Bears", false, 4);
+        addToLibrary(P, "Terminus");
+        createPermanent(P, "Wastes", 8);
+        createPermanent(P, "Chromatic Lantern");
+        createPermanent(P, "Grizzly Bears",4);
 
         P = opponent;
 
         P.setLife(15);
         addToLibrary(P, "Forest", 20);
-        addToLibrary(P, "Terminus", 1);
-        createPermanent(P, "Wastes", false, 8);
-        createPermanent(P, "Chromatic Lantern", false, 1);
-        createPermanent(P, "Grizzly Bears", false, 1);
+        addToLibrary(P, "Terminus");
+        createPermanent(P, "Wastes", 8);
+        createPermanent(P, "Chromatic Lantern");
+        createPermanent(P, "Grizzly Bears");
 
         return game;
     }
