@@ -4,12 +4,15 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.action.AIRevealAction;
 import magic.model.action.CastCardAction;
+import magic.model.action.EnqueueTriggerAction;
 
 public class MiracleTrigger extends ThisDrawnTrigger {
 
@@ -20,24 +23,44 @@ public class MiracleTrigger extends ThisDrawnTrigger {
     }
 
     @Override
+    public boolean usesStack() {
+        return false;
+    }
+
+    @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent none,final MagicCard card) {
-        return card.getOwner().getDrawnCards() == 1 ?
+        final MagicPlayer player = card.getOwner();
+        return player.getDrawnCards() == 1 ?
             new MagicEvent(
-                card,
-                card.getOwner(),
+                player.isHuman() ? card : MagicSource.NONE,
+                player,
                 new MagicMayChoice(
+                    player.isHuman() ? "Reveal this card and cast it for its miracle cost?" : "...",
                     new MagicPayManaCostChoice(game.modCost(card, cost))
                 ),
-                this,
-                "You may$ reveal this card and cast it for its miracle cost."
+                card,
+                this::executeEvent,
+                ""
             ):
             MagicEvent.NONE;
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicCard card = event.getCard();
+        final MagicCard card = event.getRefCard();
         if (event.isYes() && card.isInHand()) {
             game.doAction(new AIRevealAction(card));
+            game.doAction(new EnqueueTriggerAction(new MagicEvent(
+                card,
+                card.getOwner(),
+                card,
+                this::executeTriggerEvent,
+                "PN reveals SN and cast it."
+            )));
+        }
+    }
+    private void executeTriggerEvent(final MagicGame game, final MagicEvent event) {
+        final MagicCard card = event.getRefCard();
+        if (card.isInHand()) {
             game.doAction(CastCardAction.WithoutManaCost(
                 event.getPlayer(),
                 card,
