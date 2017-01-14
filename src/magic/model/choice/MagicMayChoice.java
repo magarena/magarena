@@ -176,6 +176,8 @@ public class MagicMayChoice extends MagicChoice {
         }
 
         controller.disableActionButton(false);
+        game.snapshot();
+
         if (!controller.getMayChoice(source, getDescription())) {
             return choiceResults;
         }
