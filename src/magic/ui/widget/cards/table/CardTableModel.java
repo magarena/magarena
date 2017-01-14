@@ -15,11 +15,11 @@ import magic.model.MagicManaCost;
 @SuppressWarnings("serial")
 public class CardTableModel extends AbstractTableModel {
 
-    private static final NumberFormat RATING_FMT = new DecimalFormat("#0.0");
+    protected static final NumberFormat RATING_FMT = new DecimalFormat("#0.0");
 
-    private boolean showCardCount = false;
-    private MagicCondensedDeck cardDefinitions;
-    private Comparator<MagicCondensedCardDefinition> comp;
+    protected boolean showCardCount = false;
+    protected MagicCondensedDeck cardDefinitions;
+    protected Comparator<MagicCondensedCardDefinition> comp;
 
     public CardTableModel(final List<MagicCardDefinition> cardDefs) {
         this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
