@@ -2265,7 +2265,7 @@ public class MagicTargetFilterFactory {
         addp("instant, sorcery, or creature card", INSTANT_SORCERY_OR_CREATURE_CARD);
         addp("artifact or creature card", ARTIFACT_OR_CREATURE_CARD);
         addp("colorless creature card", COLORLESS_CREATURE_CARD);
-        addp("creature card in a graveyard", CREATURE_CARD_FROM_GRAVEYARD);
+        addp("creature card in a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
 
         // ... card
         addp("instant or sorcery card", INSTANT_OR_SORCERY_CARD);
