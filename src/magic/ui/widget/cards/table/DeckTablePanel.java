@@ -41,12 +41,18 @@ public class DeckTablePanel extends TexturedPanel {
 
     public DeckTablePanel(final List<MagicCardDefinition> defs, final String title) {
 
-        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
+        this.lastSelectedCards = new ArrayList<>();
 
         this.tableModel = new CardTableModel(defs);
-        this.table = new DeckJTable(tableModel, getForeground());
+        this.table = new CardsJTable(tableModel);
 
-        this.lastSelectedCards = new ArrayList<>();
+        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
+            table.addMouseMotionListener(new RowMouseOverListener());
+        }
+
+        // listener to change card image on selection
+        this.listSelListener = getTableListSelectionListener();
+        table.getSelectionModel().addListSelectionListener(listSelListener);
 
         // add table to scroll pane
         scrollpane.setViewportView(table);
@@ -56,16 +62,16 @@ public class DeckTablePanel extends TexturedPanel {
         // add title
         titleBar = new TitleBar(title);
 
-        this.listSelListener = getTableListSelectionListener();
-        table.getSelectionModel().addListSelectionListener(listSelListener);
+        // Raise events on mouse clicks.
         table.addMouseListener(getTableMouseAdapter());
-        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
-            table.addMouseMotionListener(new RowMouseOverListener());
-        }
 
         setLayout(migLayout);
         refreshLayout();
+        setEmptyBackgroundColor();
+    }
 
+    private void setEmptyBackgroundColor() {
+        setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
 
     private ListSelectionListener getTableListSelectionListener() {

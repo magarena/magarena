@@ -24,7 +24,6 @@ public class BasicDeckTablePanel extends TexturedPanel {
 
     public BasicDeckTablePanel() {
 
-        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.DARK_GRAY));
         setFocusable(true);
 
@@ -32,7 +31,11 @@ public class BasicDeckTablePanel extends TexturedPanel {
         scrollpane.setOpaque(false);
 
         setLayout(migLayout);
+        setEmptyBackgroundColor();
+    }
 
+    private void setEmptyBackgroundColor() {
+        setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
 
     private ListSelectionListener getTableListSelectionListener() {
