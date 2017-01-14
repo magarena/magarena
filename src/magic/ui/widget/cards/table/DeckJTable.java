@@ -16,7 +16,7 @@ import javax.swing.table.TableColumnModel;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-class DeckTable extends JTable {
+class DeckJTable extends JTable {
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 20; // pixels
@@ -28,7 +28,7 @@ class DeckTable extends JTable {
     private final DeckTableModel tableModel;
     private final Color defaultForeColor;
 
-    DeckTable(DeckTableModel aTableModel, Color aColor) {
+    DeckJTable(DeckTableModel aTableModel, Color aColor) {
 
         super(aTableModel);
 

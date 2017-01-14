@@ -44,7 +44,7 @@ public class DeckTablePanel extends TexturedPanel {
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         this.tableModel = new DeckTableModel(defs);
-        this.table = new DeckTable(tableModel, getForeground());
+        this.table = new DeckJTable(tableModel, getForeground());
 
         this.lastSelectedCards = new ArrayList<>();
 
