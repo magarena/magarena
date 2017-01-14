@@ -1748,8 +1748,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl ZOMBIE_CARD_FROM_GRAVEYARD = card(MagicSubType.Zombie).from(MagicTargetType.Graveyard);
-
     public static final MagicCardFilterImpl ZOMBIE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard ||
