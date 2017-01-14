@@ -30,7 +30,7 @@ public class DeckTablePanel extends TexturedPanel {
 
     private final MigLayout migLayout = new MigLayout();
     private final MScrollPane scrollpane = new MScrollPane();
-    private final DeckTableModel tableModel;
+    private final CardTableModel tableModel;
     private JTable table;
 
     private final TitleBar titleBar;
@@ -43,7 +43,7 @@ public class DeckTablePanel extends TexturedPanel {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
-        this.tableModel = new DeckTableModel(defs);
+        this.tableModel = new CardTableModel(defs);
         this.table = new DeckJTable(tableModel, getForeground());
 
         this.lastSelectedCards = new ArrayList<>();

@@ -25,10 +25,10 @@ class DeckJTable extends JTable {
     private static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
     static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }
 
-    private final DeckTableModel tableModel;
+    private final CardTableModel tableModel;
     private final Color defaultForeColor;
 
-    DeckJTable(DeckTableModel aTableModel, Color aColor) {
+    DeckJTable(CardTableModel aTableModel, Color aColor) {
 
         super(aTableModel);
 

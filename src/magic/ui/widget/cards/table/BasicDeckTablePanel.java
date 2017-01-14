@@ -81,8 +81,8 @@ public class BasicDeckTablePanel extends TexturedPanel {
         return table;
     }
 
-    public DeckTableModel getTableModel() {
-        return (DeckTableModel) table.getModel();
+    public CardTableModel getTableModel() {
+        return (CardTableModel) table.getModel();
     }
 
     public void setSelectedCard(MagicCardDefinition aCard) {

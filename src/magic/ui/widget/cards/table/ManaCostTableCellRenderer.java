@@ -15,7 +15,7 @@ class ManaCostTableCellRenderer extends DefaultTableCellRenderer {
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int col) {
 
-        final MagicCardDefinition card = ((DeckTableModel) table.getModel()).getCardDef(row);
+        final MagicCardDefinition card = ((CardTableModel) table.getModel()).getCardDef(row);
         final CostPanel myRender = new CostPanel(card.isLand() || !card.isValid() ? null : (MagicManaCost) value);
 
         // match border and background formatting with default
