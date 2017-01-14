@@ -54,7 +54,7 @@ public class MiracleTrigger extends ThisDrawnTrigger {
                 card.getOwner(),
                 card,
                 this::executeTriggerEvent,
-                "PN reveals SN and cast it."
+                "PN reveals SN and casts it."
             )));
         }
     }
