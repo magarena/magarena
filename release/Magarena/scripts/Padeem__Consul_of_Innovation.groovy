@@ -24,7 +24,10 @@
                 }
             }
             if (highest.isController(player)) {
+                game.logAppendMessage(player, "(Yes)");
                 game.doAction(new DrawAction(player));
+            } else {
+                game.logAppendMessage(player, "(No)");
             }
         }
     }
