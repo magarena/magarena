@@ -21,8 +21,7 @@ public class LeavesReturnExiledTrigger extends LeavesBattlefieldTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
-        if (act.isPermanent(permanent) &&
-            !permanent.getExiledCards().isEmpty()) {
+        if (act.isPermanent(permanent) && !permanent.getExiledCards().isEmpty()) {
             final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
             return new MagicEvent(
                 permanent,
