@@ -4,6 +4,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
+import magic.model.MagicMessage;
 import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.ReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
@@ -26,9 +27,7 @@ public class LeavesReturnExiledTrigger extends LeavesBattlefieldTrigger {
             return new MagicEvent(
                 permanent,
                 this,
-                clist.size() > 1 ?
-                    "Return exiled cards to the battlefield." :
-                    "Return " + clist.get(0) + " to the battlefield."
+                "Return " + MagicMessage.getTokenizedCardNames(clist) + " to the battlefield."
             );
         }
         return MagicEvent.NONE;

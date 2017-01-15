@@ -147,7 +147,7 @@ public class MagicMessage {
         return cards.stream()
             .map(card -> MagicMessage.getCardToken(card))
             .sorted()
-            .collect(Collectors.joining(", ", "", cards.isEmpty() ? "" : "."));
+            .collect(Collectors.joining(", "));
     }
 
 }
