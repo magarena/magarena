@@ -660,6 +660,12 @@ public class SwingGameController implements IUIGameController {
         if (isReadyToAnimate() == false) {
             return;
         }
+
+        // skip animation when newGameInfo is result of undo
+        if (newGameInfo.getUndoPoints() < oldGameInfo.getUndoPoints()) {
+            return;
+        }
+
         animation = MagicAnimations.getGameplayAnimation(oldGameInfo, newGameInfo, gamePanel);
         if (animation != null) {
             animation.isRunning.set(true);
