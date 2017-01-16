@@ -14,7 +14,7 @@ import magic.utility.MagicFileSystem;
  */
 public final class MagicCardImages {
 
-    private enum ImageType { 
+    private enum ImageType {
         UNKNOWN,
         CUSTOM,
         PROXY,
@@ -76,8 +76,13 @@ public final class MagicCardImages {
                     tryDownloadingImage(face);
                 }
                 if (MagicFileSystem.getCardImageFile(face).exists()) {
-                    return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face));
+                    if (GeneralConfig.getInstance().getCardTextLanguage() == CardTextLanguage.ENGLISH) {
+                        return face.isPlaneswalker() || face.isFlipCard() || face.isToken() ? ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face)) : CardBuilder.getCardBuilderImage(face);
+                    } else {
+                        return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face));
+                    }
                 }
+
         }
         return CardBuilder.getCardBuilderImage(face);
     }

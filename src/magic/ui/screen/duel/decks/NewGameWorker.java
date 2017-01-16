@@ -18,8 +18,8 @@ class NewGameWorker extends SwingWorker<MagicGame, Void> {
     private final DuelDecksScreen screen;
 
     NewGameWorker(final MagicDuel aDuel, final DuelDecksScreen aScreen) {
-        this.duel = aDuel;
-        this.screen = aScreen;
+        duel = aDuel;
+        screen = aScreen;
     }
 
     private Optional<MagicCardDefinition> findFirstProxyCard(MagicDeck aDeck) {
@@ -36,9 +36,7 @@ class NewGameWorker extends SwingWorker<MagicGame, Void> {
     private void loadCardBuilderIfRequired() {
         if (!CardBuilder.IS_LOADED) {
             Optional<MagicCardDefinition> proxy = findFirstProxyCardInDecks();
-            if (proxy.isPresent()) {
-                CardBuilder.getCardBuilderImage(proxy.get());
-            }
+            proxy.ifPresent(CardBuilder::getCardBuilderImage);
         }
     }
 

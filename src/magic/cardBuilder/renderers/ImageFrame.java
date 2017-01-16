@@ -135,7 +135,7 @@ public class ImageFrame {
                     return Frame.getBlendedFrame(new BufferedImage(320, 289, BufferedImage.TYPE_INT_ARGB), blend, crop);
                 } else {
                     BufferedImage crop = ImageHelper.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 360);
-                    BufferedImage blend =ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
+                    BufferedImage blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
                     return Frame.getBlendedFrame(new BufferedImage(320, 360, BufferedImage.TYPE_INT_ARGB), blend, crop);
                 }
             } else {
@@ -152,8 +152,12 @@ public class ImageFrame {
         return buildDefaultImage(cardDef);
     }
 
-
     private static BufferedImage buildDefaultImage(IRenderableCard cardDef) {
+        File fullImage = MagicFileSystem.getCardImageFile(cardDef);
+        if (fullImage.exists()) {
+            BufferedImage full = ImageHelper.scale(ImageFileIO.toImg(fullImage, MagicImages.MISSING_CARD),375,523);
+            return full.getSubimage(29, 60, 316, 231);
+        }
         return getCompositeImage(getDefaultBackground(cardDef), getDefaultSymbol(cardDef));
     }
 
