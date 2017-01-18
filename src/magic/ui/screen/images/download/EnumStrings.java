@@ -7,6 +7,6 @@ final class EnumStrings {
     private EnumStrings() {}
 
     // DownloadMode
-    static final String _S1 = "Card images";
-    static final String _S2 = "Cropped images";
+    static final String _S1 = "as printed";
+    static final String _S2 = "rendered in-game";
 }

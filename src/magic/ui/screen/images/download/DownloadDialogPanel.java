@@ -10,18 +10,18 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class DownloadDialogPanel extends TexturedPanel implements PropertyChangeListener {
 
-    private static final String _S1 = "Download card images";
+    private static final String _S1 = "Setup card images";
 
     private final DialogMainPanel mainPanel;
 

@@ -7,6 +7,7 @@ import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.model.IRenderableCard;
+import magic.ui.screen.images.download.DownloadMode;
 import magic.utility.MagicFileSystem;
 
 /**
@@ -21,6 +22,7 @@ public final class MagicCardImages {
         FULL
     }
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static Proxy proxy;
 
     private static ImageType getImageType(IRenderableCard face) {
@@ -37,7 +39,7 @@ public final class MagicCardImages {
             return ImageType.PROXY;
         }
 
-        if (GeneralConfig.getInstance().getImagesOnDemand()
+        if (CONFIG.getImagesOnDemand()
                 && !MagicFileSystem.getCardImageFile(face).exists()) {
             return ImageType.FULL;
         }
@@ -52,7 +54,7 @@ public final class MagicCardImages {
 
     private static void tryDownloadingImage(IRenderableCard face) {
         if (proxy == null) {
-            proxy = GeneralConfig.getInstance().getProxy();
+            proxy = CONFIG.getProxy();
         }
         try {
             CardImageFile cif = new CardImageFile(face);
@@ -76,13 +78,14 @@ public final class MagicCardImages {
                     tryDownloadingImage(face);
                 }
                 if (MagicFileSystem.getCardImageFile(face).exists()) {
-                    if (GeneralConfig.getInstance().getCardTextLanguage() == CardTextLanguage.ENGLISH) {
-                        return face.isPlaneswalker() || face.isFlipCard() || face.isToken() ? ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face)) : CardBuilder.getCardBuilderImage(face);
-                    } else {
+                    if (CONFIG.getCardsDownloadMode() == DownloadMode.CARDS || CONFIG.getCardTextLanguage() != CardTextLanguage.ENGLISH) {
                         return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face));
+                    } else {
+                        return face.isPlaneswalker() || face.isFlipCard() || face.isToken()
+                            ? ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face))
+                            : CardBuilder.getCardBuilderImage(face);
                     }
                 }
-
         }
         return CardBuilder.getCardBuilderImage(face);
     }

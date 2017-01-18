@@ -6,8 +6,8 @@ import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.dialog.FiremindWorkerDialog;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.screen.menu.MenuScreenContentPanel;
+import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
@@ -16,7 +16,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     // translatable strings.
     private static final String _S1 = "Settings Menu";
     private static final String _S2 = "Preferences";
-    private static final String _S3 = "Download card images";
+    private static final String _S3 = "Setup card images";
     private static final String _S4 = "Run Firemind Worker";
     private static final String _S5 = "Toggle full-screen";
     private static final String _S6 = "Close menu";
@@ -88,5 +88,5 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     private void doCloseMenu() {
         ScreenController.closeActiveScreen(false);
     }
-    
+
 }
