@@ -235,7 +235,9 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
             final CardImageFile imageFile = (CardImageFile) dFile;
 
             if (displayMode == CardImageDisplayMode.PROXY) {
-                doDownloadCroppedImage(imageFile);
+                if (!doDownloadCroppedImage(imageFile)) {
+                    doDownloadPrintedImage(imageFile, textLang);
+                }
             } else {
                 doDownloadPrintedImage(imageFile, textLang);
             }
