@@ -15,7 +15,7 @@ class PlayablePanel extends DownloadPanel {
     private static final String _S1 = "Playable";
     private static final String _S2 = "Download";
 
-    PlayablePanel(DownloadMode aMode, CardTextLanguage aLang, DialogMainPanel aPanel) {
+    PlayablePanel(CardImageDisplayMode aMode, CardTextLanguage aLang, DialogMainPanel aPanel) {
         super(aMode, aLang, aPanel);
     }
 
@@ -25,7 +25,7 @@ class PlayablePanel extends DownloadPanel {
     }
 
     @Override
-    public Stream<MagicCardDefinition> getCards(final DownloadMode mode) {
+    public Stream<MagicCardDefinition> getCards(final CardImageDisplayMode mode) {
         return DownloadPanel.getCards(
                 CardDefinitions.getAllPlayableCardDefs(),
                 GeneralConfig.getInstance().getPlayableImagesDownloadDate(),

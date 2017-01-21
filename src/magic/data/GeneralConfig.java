@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.Properties;
 import magic.ui.CardTextLanguage;
 import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.screen.images.download.DownloadMode;
+import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.message.MessageStyle;
 import magic.utility.FileIO;
@@ -178,8 +178,8 @@ public class GeneralConfig {
     private static final String KEYWORDS_SCREEN = "keywordsScreen";
     private String keywordsScreen;
 
-    private static final String CARDS_DOWNLOAD_MODE = "cardsDownloadMode";
-    private DownloadMode cardsDownloadMode = DownloadMode.CARDS;
+    private static final String CARD_DISPLAY_MODE = "cardImageDisplayMode";
+    private CardImageDisplayMode cardDisplayMode = CardImageDisplayMode.PRINTED;
 
     private boolean isStatsVisible = true;
 
@@ -580,7 +580,7 @@ public class GeneralConfig {
         imagesOnDemand = Boolean.parseBoolean(properties.getProperty(IMAGES_ON_DEMAND, "" + imagesOnDemand));
         isCustomScrollBar = Boolean.parseBoolean(properties.getProperty(CUSTOM_SCROLLBAR, "" + isCustomScrollBar));
         keywordsScreen = properties.getProperty(KEYWORDS_SCREEN, "");
-        cardsDownloadMode = DownloadMode.valueOf(properties.getProperty(CARDS_DOWNLOAD_MODE, cardsDownloadMode.name()));
+        cardDisplayMode = CardImageDisplayMode.valueOf(properties.getProperty(CARD_DISPLAY_MODE, cardDisplayMode.name()));
     }
 
     public void load() {
@@ -634,7 +634,7 @@ public class GeneralConfig {
         properties.setProperty(IMAGES_ON_DEMAND, String.valueOf(imagesOnDemand));
         properties.setProperty(CUSTOM_SCROLLBAR, String.valueOf(isCustomScrollBar));
         properties.setProperty(KEYWORDS_SCREEN, keywordsScreen);
-        properties.setProperty(CARDS_DOWNLOAD_MODE, cardsDownloadMode.name());
+        properties.setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
     }
 
     public void save() {
@@ -740,12 +740,12 @@ public class GeneralConfig {
         return Integer.parseInt(settings.getProperty(name, Integer.toString(value)));
     }
 
-    public DownloadMode getCardsDownloadMode() {
-        return cardsDownloadMode;
+    public CardImageDisplayMode getCardImageDisplayMode() {
+        return cardDisplayMode;
     }
 
-    public void setCardsDownloadMode(DownloadMode newMode) {
-        cardsDownloadMode = newMode;
+    public void setCardImageDisplayMode(CardImageDisplayMode newMode) {
+        cardDisplayMode = newMode;
     }
 
 }

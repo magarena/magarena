@@ -15,7 +15,7 @@ class UnimplementedPanel extends DownloadPanel {
     private static final String _S1 = "Unimplemented";
     private static final String _S2 = "Download";
 
-    UnimplementedPanel(DownloadMode aMode, CardTextLanguage aLang, DialogMainPanel aPanel) {
+    UnimplementedPanel(CardImageDisplayMode aMode, CardTextLanguage aLang, DialogMainPanel aPanel) {
         super(aMode, aLang, aPanel);
     }
 
@@ -25,7 +25,7 @@ class UnimplementedPanel extends DownloadPanel {
     }
 
     @Override
-    public Stream<MagicCardDefinition> getCards(final DownloadMode mode) {
+    public Stream<MagicCardDefinition> getCards(final CardImageDisplayMode mode) {
         return DownloadPanel.getCards(
                 CardDefinitions.getMissingCards(),
                 GeneralConfig.getInstance().getUnimplementedImagesDownloadDate(),

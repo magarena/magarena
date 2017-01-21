@@ -8,15 +8,15 @@ import magic.data.ImagesDownloadList;
 class ScanWorker extends SwingWorker<ImagesDownloadList, Void> {
 
     private final IScanListener listener;
-    private final DownloadMode downloadType;
+    private final CardImageDisplayMode displayMode;
     private ImagesDownloadList downloadList;
 
-    ScanWorker(final IScanListener aListener, final DownloadMode aType) {
+    ScanWorker(final IScanListener aListener, final CardImageDisplayMode mode) {
         this.listener = aListener;
-        this.downloadType = aType;
+        this.displayMode = mode;
     }
 
-    static ImagesDownloadList getImagesDownloadList(IScanListener aListener, DownloadMode aMode) {
+    static ImagesDownloadList getImagesDownloadList(IScanListener aListener, CardImageDisplayMode aMode) {
         // synchronized to speed up scanning by preventing
         // multiple scanners accessing filesystem at the same time.
         synchronized (ScanWorker.class) {
@@ -26,7 +26,7 @@ class ScanWorker extends SwingWorker<ImagesDownloadList, Void> {
 
     @Override
     protected ImagesDownloadList doInBackground() throws Exception {
-        return getImagesDownloadList(listener, downloadType);
+        return getImagesDownloadList(listener, displayMode);
     }
 
     @Override

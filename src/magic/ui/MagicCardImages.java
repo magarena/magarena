@@ -7,7 +7,7 @@ import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.model.IRenderableCard;
-import magic.ui.screen.images.download.DownloadMode;
+import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.utility.MagicFileSystem;
 
 /**
@@ -78,7 +78,7 @@ public final class MagicCardImages {
                     tryDownloadingImage(face);
                 }
                 if (MagicFileSystem.getPrintedCardImage(face).exists()) {
-                    if (CONFIG.getCardsDownloadMode() == DownloadMode.CARDS || CONFIG.getCardTextLanguage() != CardTextLanguage.ENGLISH) {
+                    if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PRINTED || CONFIG.getCardTextLanguage() != CardTextLanguage.ENGLISH) {
                         return ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face));
                     } else {
                         return face.isPlaneswalker() || face.isFlipCard() || face.isToken()

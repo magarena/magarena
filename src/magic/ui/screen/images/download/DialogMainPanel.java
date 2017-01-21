@@ -71,8 +71,8 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private String getDefaultHint() {
         return String.format("<b>%s</b><br>%s<br><br><b>%s</b><br>%s<br><br>%s",
-            DownloadMode.CARDS.toString(), MText.get(_S6),
-            DownloadMode.CROPS.toString(), MText.get(_S7),
+            CardImageDisplayMode.PRINTED.toString(), MText.get(_S6),
+            CardImageDisplayMode.PROXY.toString(), MText.get(_S7),
             MText.get(_S8)
         );
     }
@@ -82,7 +82,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     }
 
     private void refreshDownloadList() {
-        final DownloadMode mode = optionsPanel.getDownloadMode();
+        final CardImageDisplayMode mode = optionsPanel.getDisplayMode();
         final CardTextLanguage lang = optionsPanel.getCardTextLanguage();
         for (DownloadPanel panel : downloadPanels) {
             panel.refreshDownloadList(mode, lang);
@@ -116,7 +116,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private DownloadPanel getPlayableDownloaderPanel() {
         final DownloadPanel playableDownloaderPanel = new PlayablePanel(
-            optionsPanel.getDownloadMode(),
+            optionsPanel.getDisplayMode(),
             optionsPanel.getCardTextLanguage(),
             this
         );
@@ -126,7 +126,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private DownloadPanel getUnimplementedDownloaderPanel() {
         final DownloadPanel unimplementedDownloaderPanel = new UnimplementedPanel(
-            optionsPanel.getDownloadMode(),
+            optionsPanel.getDisplayMode(),
             optionsPanel.getCardTextLanguage(),
             this
         );

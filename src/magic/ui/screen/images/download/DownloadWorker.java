@@ -32,21 +32,21 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     private ImagesDownloadList downloadList;
     private final IDownloadListener listener;
     private final CardTextLanguage textLanguage;
-    private final DownloadMode downloadMode;
+    private final CardImageDisplayMode displayMode;
     private boolean updateDownloadDate = true;
     private boolean isLogging = true;
     private int serverBusyCooldown = 1; // in millisecs
 
-    DownloadWorker(IDownloadListener aListener, CardTextLanguage aLanguage, DownloadMode aMode) {
+    DownloadWorker(IDownloadListener aListener, CardTextLanguage aLanguage, CardImageDisplayMode aMode) {
         this.listener = aListener;
         this.textLanguage = aLanguage;
-        this.downloadMode = aMode;
+        this.displayMode = aMode;
         this.proxy = GeneralConfig.getInstance().getProxy();
     }
 
     @Override
     protected Void doInBackground() throws MalformedURLException {
-        this.downloadList = ScanWorker.getImagesDownloadList((IScanListener)listener, downloadMode);
+        this.downloadList = ScanWorker.getImagesDownloadList((IScanListener)listener, displayMode);
         doDownloadImages(textLanguage);
         return null;
     }
@@ -179,7 +179,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
             // if local file exists then download was triggered by the
             // 'image_updated' script property. But download failed so
             // remove local image so it becomes 'missing' instead.
-            updateDownloadDate = downloadMode != DownloadMode.CROPS && doDeleteLocalImageFile(aFile.getLocalFile());
+            updateDownloadDate = displayMode != CardImageDisplayMode.PROXY && doDeleteLocalImageFile(aFile.getLocalFile());
             listener.setMessage(String.format("%s [%s]", ex.toString(), aFile.getFilename()));
             setServerBusyCooldown(ex.toString());
             return false;
@@ -208,7 +208,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         return false;
     }
 
-    private void doDownloadCardImage(CardImageFile imageFile, CardTextLanguage textLang) throws MalformedURLException {
+    private void doDownloadPrintedImage(CardImageFile imageFile, CardTextLanguage textLang) throws MalformedURLException {
         if (textLang.isEnglish() || !downloadAlternateCardImage(imageFile, textLang)) {
             downloadDefaultCardImage(imageFile);
         }
@@ -228,16 +228,16 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
 
         initializeLogFiles();
         int fileCount = 0;
-        updateDownloadDate = downloadMode != DownloadMode.CROPS;
+        updateDownloadDate = displayMode != CardImageDisplayMode.PROXY;
 
         for (DownloadableFile dFile : downloadList) {
 
             final CardImageFile imageFile = (CardImageFile) dFile;
 
-            if (downloadMode == DownloadMode.CROPS) {
+            if (displayMode == CardImageDisplayMode.PROXY) {
                 doDownloadCroppedImage(imageFile);
             } else {
-                doDownloadCardImage(imageFile, textLang);
+                doDownloadPrintedImage(imageFile, textLang);
             }
             doPause(serverBusyCooldown);
 

@@ -2,14 +2,14 @@ package magic.ui.screen.images.download;
 
 import magic.translate.MText;
 
-public enum DownloadMode {
+public enum CardImageDisplayMode {
 
-    CARDS(EnumStrings._S1),
-    CROPS(EnumStrings._S2);
+    PRINTED(EnumStrings._S1),
+    PROXY(EnumStrings._S2);
 
     private final String desc;
 
-    private DownloadMode(String aDesc) {
+    private CardImageDisplayMode(String aDesc) {
         this.desc = aDesc;
     }
 
