@@ -1,7 +1,6 @@
 package magic.ui.screen.images.download;
 
 import java.io.File;
-import magic.ui.CardTextLanguage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.Proxy;
@@ -18,9 +17,10 @@ import magic.data.DownloadableFile;
 import magic.data.GeneralConfig;
 import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
+import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
-import magic.ui.helpers.UrlHelper;
 import magic.ui.MagicLogFile;
+import magic.ui.helpers.UrlHelper;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -195,7 +195,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
 
     private boolean doDownloadCroppedImage(CardImageFile imageFile) throws MalformedURLException {
         final MagicCardDefinition card = imageFile.getCard();
-        final File local = MagicFileSystem.getCroppedCardImageFile(imageFile.getCard());
+        final File local = MagicFileSystem.getCroppedCardImage(imageFile.getCard());
         if (card.getImageURL().contains("magiccards.info/scans/")) {
             final URL remote = new URL(card.getImageURL().replace("/scans/", "/crop/"));
             if (UrlHelper.isUrlValid(remote)) {

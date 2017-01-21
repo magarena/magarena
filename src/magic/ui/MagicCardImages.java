@@ -35,16 +35,16 @@ public final class MagicCardImages {
             return ImageType.CUSTOM;
         }
 
-        if (MagicFileSystem.getCroppedCardImageFile(face).exists()) {
+        if (MagicFileSystem.getCroppedCardImage(face).exists()) {
             return ImageType.PROXY;
         }
 
         if (CONFIG.getImagesOnDemand()
-                && !MagicFileSystem.getCardImageFile(face).exists()) {
+                && !MagicFileSystem.getPrintedCardImage(face).exists()) {
             return ImageType.FULL;
         }
 
-        if (MagicFileSystem.getCardImageFile(face).exists()) {
+        if (MagicFileSystem.getPrintedCardImage(face).exists()) {
             return ImageType.FULL;
         }
 
@@ -74,15 +74,15 @@ public final class MagicCardImages {
             case PROXY:
                 return CardBuilder.getCardBuilderImage(face);
             case FULL:
-                if (!MagicFileSystem.getCardImageFile(face).exists()) {
+                if (!MagicFileSystem.getPrintedCardImage(face).exists()) {
                     tryDownloadingImage(face);
                 }
-                if (MagicFileSystem.getCardImageFile(face).exists()) {
+                if (MagicFileSystem.getPrintedCardImage(face).exists()) {
                     if (CONFIG.getCardsDownloadMode() == DownloadMode.CARDS || CONFIG.getCardTextLanguage() != CardTextLanguage.ENGLISH) {
-                        return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face));
+                        return ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face));
                     } else {
                         return face.isPlaneswalker() || face.isFlipCard() || face.isToken()
-                            ? ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(face))
+                            ? ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face))
                             : CardBuilder.getCardBuilderImage(face);
                     }
                 }

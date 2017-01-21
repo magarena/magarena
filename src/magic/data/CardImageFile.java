@@ -12,7 +12,7 @@ public class CardImageFile extends DownloadableFile {
 
     public CardImageFile(IRenderableCard face) throws MalformedURLException {
         super(
-            MagicFileSystem.getCardImageFile(face),
+            MagicFileSystem.getPrintedCardImage(face),
             new URL(face.getImageUrl())
         );
         this.card = face.getCardDefinition();
@@ -20,7 +20,7 @@ public class CardImageFile extends DownloadableFile {
 
     public CardImageFile(final MagicCardDefinition aCard) throws MalformedURLException {
         super(
-            MagicFileSystem.getCardImageFile(aCard),
+            MagicFileSystem.getPrintedCardImage(aCard),
             new URL(aCard.getImageURL())
         );
         this.card = aCard;

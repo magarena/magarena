@@ -135,21 +135,21 @@ public final class MagicFileSystem {
     /**
      * Returns a File object representing the given card's image file.
      */
-    public static File getCardImageFile(final MagicCardDefinition card) {
+    public static File getPrintedCardImage(final MagicCardDefinition card) {
         final Path imageDirectory = card.isToken() ?
                 getImagesPath(ImagesPath.TOKENS) :
                 getImagesPath(ImagesPath.CARDS);
         return new File(imageDirectory.toFile(), getImageFilename(card));
     }
 
-    public static File getCardImageFile(IRenderableCard face) {
-        return getCardImageFile(face.getCardDefinition());
+    public static File getPrintedCardImage(IRenderableCard face) {
+        return getPrintedCardImage(face.getCardDefinition());
     }
 
     /**
      * Returns a File object representing the given card's cropped image file.
      */
-    public static File getCroppedCardImageFile(final IRenderableCard cardDef) {
+    public static File getCroppedCardImage(final IRenderableCard cardDef) {
         final Path imageDirectory = getImagesPath(ImagesPath.CROPS);
         return new File(imageDirectory.toFile(), cardDef.getImageName() + ".jpg");
     }
@@ -302,10 +302,10 @@ public final class MagicFileSystem {
         if (getCustomCardImageFile(aCard).exists()) {
             return false;
         }
-        if (getCroppedCardImageFile(aCard).exists()) {
+        if (getCroppedCardImage(aCard).exists()) {
             return false;
         }
-        if (getCardImageFile(aCard).exists()) {
+        if (getPrintedCardImage(aCard).exists()) {
             return false;
         }
         return true;

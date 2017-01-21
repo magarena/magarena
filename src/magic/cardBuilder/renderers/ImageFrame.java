@@ -116,7 +116,7 @@ public class ImageFrame {
     }
 
     public static BufferedImage getCardImage(IRenderableCard cardDef) {
-        File cropFile = MagicFileSystem.getCroppedCardImageFile(cardDef);
+        File cropFile = MagicFileSystem.getCroppedCardImage(cardDef);
         if (cropFile.exists()) {
             if (cardDef.isPlaneswalker()) {
                 BufferedImage crop = ImageHelper.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 234);
@@ -153,7 +153,7 @@ public class ImageFrame {
     }
 
     private static BufferedImage buildDefaultImage(IRenderableCard cardDef) {
-        File fullImage = MagicFileSystem.getCardImageFile(cardDef);
+        File fullImage = MagicFileSystem.getPrintedCardImage(cardDef);
         if (fullImage.exists()) {
             BufferedImage full = ImageHelper.scale(ImageFileIO.toImg(fullImage, MagicImages.MISSING_CARD),375,523);
             return full.getSubimage(29, 60, 316, 231);

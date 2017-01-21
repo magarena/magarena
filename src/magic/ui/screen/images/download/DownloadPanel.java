@@ -16,13 +16,13 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
-import magic.data.ImagesDownloadList;
 import magic.data.GeneralConfig;
+import magic.data.ImagesDownloadList;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
-import magic.ui.MagicImages;
 import magic.translate.MText;
 import magic.ui.CardTextLanguage;
+import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -225,18 +225,19 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
         return countInteger;
     }
 
-    protected static Stream<MagicCardDefinition> getCards(Collection<MagicCardDefinition> cards, Date aDate, DownloadMode mode) {
+    private static boolean isImageFileMissing(MagicCardDefinition card, DownloadMode mode) {
         if (mode == DownloadMode.CARDS) {
-            return cards.stream()
-                .filter(MagicCardDefinition::hasImageUrl)
-                .filter(card -> card.isImageUpdatedAfter(aDate)
-                    || !MagicFileSystem.getCardImageFile(card).exists());
+            return !MagicFileSystem.getPrintedCardImage(card).exists();
         } else {
-            return cards.stream()
-                .filter(MagicCardDefinition::hasImageUrl)
-                .filter(card -> card.isImageUpdatedAfter(aDate)
-                    || !MagicFileSystem.getCroppedCardImageFile(card).exists());
+           return !MagicFileSystem.getCroppedCardImage(card).exists()
+               && !MagicFileSystem.getPrintedCardImage(card).exists();
         }
+    }
+
+    protected static Stream<MagicCardDefinition> getCards(Collection<MagicCardDefinition> cards, Date aDate, DownloadMode mode) {
+        return cards.stream()
+            .filter(MagicCardDefinition::hasImageUrl)
+            .filter(card -> card.isImageUpdatedAfter(aDate) || isImageFileMissing(card, mode));
     }
 
     void setLocked(boolean b) {
