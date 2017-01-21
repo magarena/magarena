@@ -19,7 +19,7 @@ public final class MagicCardImages {
         UNKNOWN,
         CUSTOM,
         PROXY,
-        FULL
+        PRINTED
     }
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
@@ -35,24 +35,19 @@ public final class MagicCardImages {
             return ImageType.CUSTOM;
         }
 
-        if (MagicFileSystem.getCroppedCardImage(face).exists()) {
+        if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PROXY) {
             return ImageType.PROXY;
         }
 
-        if (CONFIG.getImagesOnDemand()
-                && !MagicFileSystem.getPrintedCardImage(face).exists()) {
-            return ImageType.FULL;
-        }
-
-        if (MagicFileSystem.getPrintedCardImage(face).exists()) {
-            return ImageType.FULL;
+        if (MagicFileSystem.getPrintedCardImage(face).exists() || CONFIG.getImagesOnDemand()) {
+            return ImageType.PRINTED;
         }
 
         // else missing image proxy...
         return ImageType.PROXY;
     }
 
-    private static void tryDownloadingImage(IRenderableCard face) {
+    private static void tryDownloadingPrintedImage(IRenderableCard face) {
         if (proxy == null) {
             proxy = CONFIG.getProxy();
         }
@@ -73,9 +68,10 @@ public final class MagicCardImages {
                 return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(face));
             case PROXY:
                 return CardBuilder.getCardBuilderImage(face);
-            case FULL:
+            case PRINTED:
                 if (!MagicFileSystem.getPrintedCardImage(face).exists()) {
-                    tryDownloadingImage(face);
+                    // on-demand image download.
+                    tryDownloadingPrintedImage(face);
                 }
                 if (MagicFileSystem.getPrintedCardImage(face).exists()) {
                     if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PRINTED || CONFIG.getCardTextLanguage() != CardTextLanguage.ENGLISH) {
