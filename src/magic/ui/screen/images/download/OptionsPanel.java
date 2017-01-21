@@ -17,7 +17,7 @@ class OptionsPanel extends JPanel {
 
     private static final String _S1 = "Images folder:";
     private static final String _S2 = "Card text:";
-    private static final String _S3 = "Display as:";
+    private static final String _S3 = "Display:";
     private static final String _S4 = "Preferred card text language";
     private static final String _S5 = "If a language other than English is selected then Magarena will try to find and download a card image for the given language. If no image is found then it will download the default English edition instead.";
 

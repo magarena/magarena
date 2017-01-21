@@ -5,8 +5,6 @@ package magic.ui.screen.images.download;
  */
 final class EnumStrings {
     private EnumStrings() {}
-
-    // DownloadMode
-    static final String _S1 = "as printed";
-    static final String _S2 = "rendered in-game";
+    static final String _S1 = "as originally printed";
+    static final String _S2 = "as rendered proxy";
 }
