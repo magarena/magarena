@@ -15,7 +15,7 @@ import magic.model.trigger.ThisCycleTrigger;
 import magic.model.trigger.ThisDrawnTrigger;
 import magic.model.trigger.ThisPutIntoGraveyardTrigger;
 import magic.model.trigger.ThisSpellIsCastTrigger;
-import magic.utility.MagicFileSystem;
+import magic.ui.MagicCardImages;
 
 public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
@@ -1002,7 +1002,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_ASC= (cd1, cd2) -> TOUGHNESS_COMPARATOR_DESC.compare(cd2, cd1);
 
     public boolean isImageFileMissing() {
-        return MagicFileSystem.isCardImageMissing(this);
+        return MagicCardImages.isCardImageMissing(this);
     }
 
     public void setPowerToughnessText(String string) {

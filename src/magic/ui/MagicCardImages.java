@@ -1,12 +1,16 @@
 package magic.ui;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.net.Proxy;
+import java.nio.file.Path;
+import java.util.Arrays;
 import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.model.IRenderableCard;
+import magic.model.MagicCardDefinition;
 import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.utility.MagicFileSystem;
 
@@ -22,8 +26,29 @@ public final class MagicCardImages {
         PRINTED
     }
 
+    private static final String[] CUSTOM_IMAGE_ENDINGS = new String[]{".jpg", ".full.jpg"};
+
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static Proxy proxy;
+
+    private static File getCustomCardImageFile(IRenderableCard face, String ending) {
+        Path imagesFolder = MagicFileSystem.getImagesPath(MagicFileSystem.ImagesPath.CUSTOM);
+        return new File(imagesFolder.toFile(), face.getImageName() + ending);
+    }
+
+    private static boolean customCardImageExists(IRenderableCard face) {
+        return Arrays.stream(CUSTOM_IMAGE_ENDINGS)
+            .anyMatch(ending -> getCustomCardImageFile(face, ending).exists());
+    }
+
+    private static BufferedImage getCustomCardImage(IRenderableCard face) {
+        return Arrays.stream(CUSTOM_IMAGE_ENDINGS)
+            .map(ending -> getCustomCardImageFile(face, ending))
+            .filter(f -> f.exists())
+            .map(f -> ImageFileIO.getOptimizedImage(f))
+            .findFirst()
+            .orElse(MagicImages.MISSING_CARD);
+    }
 
     private static ImageType getImageType(IRenderableCard face) {
 
@@ -31,7 +56,7 @@ public final class MagicCardImages {
             return ImageType.UNKNOWN;
         }
 
-        if (MagicFileSystem.getCustomCardImageFile(face).exists()) {
+        if (customCardImageExists(face)) {
             return ImageType.CUSTOM;
         }
 
@@ -65,7 +90,7 @@ public final class MagicCardImages {
             case UNKNOWN:
                 return MagicImages.MISSING_CARD;
             case CUSTOM:
-                return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(face));
+                return getCustomCardImage(face);
             case PROXY:
                 return CardBuilder.getCardBuilderImage(face);
             case PRINTED:
@@ -88,6 +113,12 @@ public final class MagicCardImages {
 
     public static boolean isProxyImage(IRenderableCard face) {
         return getImageType(face) == ImageType.PROXY;
+    }
+
+    public static boolean isCardImageMissing(MagicCardDefinition aCard) {
+        return !customCardImageExists(aCard)
+            && !MagicFileSystem.getCroppedCardImage(aCard).exists()
+            && !MagicFileSystem.getPrintedCardImage(aCard).exists();
     }
 
     private MagicCardImages() {}

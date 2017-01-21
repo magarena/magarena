@@ -20,10 +20,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-
 import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
 import magic.model.IRenderableCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicGameLog;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -41,7 +40,7 @@ public final class MagicFileSystem {
     public static final String TOKEN_IMAGE_FOLDER = "tokens";
     private static final String CARD_IMAGE_EXT = ".jpg";
 
-    private enum ImagesPath {
+    public enum ImagesPath {
 
         CARDS(CARD_IMAGE_FOLDER),
         TOKENS(TOKEN_IMAGE_FOLDER),
@@ -124,7 +123,7 @@ public final class MagicFileSystem {
         return directory.getPath();
     }
 
-    private static Path getImagesPath(final ImagesPath imageType) {
+    public static Path getImagesPath(final ImagesPath imageType) {
         return imageType.getPath();
     }
 
@@ -153,12 +152,6 @@ public final class MagicFileSystem {
         final Path imageDirectory = getImagesPath(ImagesPath.CROPS);
         return new File(imageDirectory.toFile(), cardDef.getImageName() + ".jpg");
     }
-
-    public static File getCustomCardImageFile(final IRenderableCard cardDef) {
-        final Path imageDirectory = getImagesPath(ImagesPath.CUSTOM);
-        return new File(imageDirectory.toFile(), cardDef.getImageName() + ".jpg");
-    }
-
 
     /**
      * Deletes all directory contents and then directory itself.
@@ -296,19 +289,6 @@ public final class MagicFileSystem {
     public static void clearGameplayReportDirectory() throws IOException {
         verifyDirectoryPath(getGameplayReportDirectory());
         FileUtils.cleanDirectory(getGameplayReportDirectory().toFile());
-    }
-
-    public static boolean isCardImageMissing(MagicCardDefinition aCard) {
-        if (getCustomCardImageFile(aCard).exists()) {
-            return false;
-        }
-        if (getCroppedCardImage(aCard).exists()) {
-            return false;
-        }
-        if (getPrintedCardImage(aCard).exists()) {
-            return false;
-        }
-        return true;
     }
 
     public static File[] getThemes() {
