@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={1}{G}{U}
 pt=3/2
-ability=When SN enters the battlefield, draw a card and you get {E}{E}.
+ability=When SN enters the battlefield, draw a card.~You get {E}{E}.
 timing=main
 oracle=When Rogue Refiner enters the battlefield, draw a card and you get {E}{E}.
