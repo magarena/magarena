@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 cost={2}
-ability=When SN enters the battlefield or is put into a graveyard from the battlefield, create a 1/1 colorless Servo artifact creature token.
+ability=When SN enters the battlefield, create a 1/1 colorless Servo artifact creature token.;\
+        When SN is put into a graveyard from the battlefield, create a 1/1 colorless Servo artifact creature token.
 timing=artifact
 oracle=When Servo Schematic enters the battlefield or is put into a graveyard from the battlefield, create a 1/1 colorless Servo artifact creature token.
