@@ -76,6 +76,7 @@ public class LogStackViewer extends JPanel {
             public void mousePressed(MouseEvent e) {
                 if (stackCount > 0) {
                     controller.setStackFastForward(true);
+                    hideFastForwardIcon();
                     MouseHelper.showDefaultCursor(stackTitleBar);
                 }
             }
@@ -224,12 +225,17 @@ public class LogStackViewer extends JPanel {
         GeneralConfig.getInstance().save();
     }
 
+    private void hideFastForwardIcon() {
+        JLabel lbl = stackTitleBar.getLabel();
+        lbl.setIcon(null);
+        lbl.setToolTipText(null);
+    }
+
     public void setStackCount(int newCount) {
         if (newCount == 0 || controller.isStackFastForward()) {
             final JLabel lbl = stackTitleBar.getLabel();
             lbl.setText(MText.get(_S5) + " : " + newCount);
-            lbl.setIcon(null);
-            lbl.setToolTipText(null);
+            hideFastForwardIcon();
         } else {
             final JLabel lbl = stackTitleBar.getLabel();
             lbl.setText(MText.get(_S5) + " : " + newCount + " ");
