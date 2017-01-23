@@ -5,9 +5,10 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}{B}
-ability=Enchant artifact;\
-        Enchanted artifact is a creature with base power and toughness 5/5 in addition to its other types.;\
-        When enchanted artifact is put into a graveyard, return that card to its owner's hand.
+ability=Enchant artifact
+set_pt=5/5
+given_type=Creature
 timing=aura
-enchant=default,creature
+enchant=pump,pos artifact
 oracle=Enchant artifact\nEnchanted artifact is a creature with base power and toughness 5/5 in addition to its other types.\nWhen enchanted artifact is put into a graveyard, return that card to its owner's hand.
+requires_groovy_code=Wind Zendikon
