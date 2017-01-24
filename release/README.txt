@@ -73,6 +73,26 @@ Thank you for your support and have fun!
 
 Release 1.81 (January 29, 2017)
 ============
+    up to commit bb561f16e75edef171cb9dff4794f070cfc0f498
+    rename Download card images to setup card images
+      add Display setting, replaces full/crops
+    track decks used in a duel
+    updated Banned/Restricted lists for 20.01.17
+    Can now update duel settings from DuelDecksScreen (closes #1028).
+    store undo point during MagicMayChoice, for #1031
+    Card image displayed is now dependent on whether user selected 'as printed' or 'rendered in-game'.
+    Enable display of cropped images from full-image files for ENG cards
+    add AER to Sets, Blocks and Formats
+    Click on selected player to open player selection screen.
+    support '<card name>.full.jpg' pattern as a custom image file.
+    Show stack count.
+    closes #699 :  Option to speed up progression through the stack.
+    fixes #1021 : Fix cards table background.
+    use getTokenizedCardNames to generate card names when returning cards from exile, fixes #1033
+    use the 'Double-Checked Locking using Volatile' idiom, for #696
+    do not show card due to Miracle unless it is revealed, for #325
+    fixes #1024 : Exception on selecting Player decks in Decks screen.
+    fix for #1023 : Exception on opening Deck Editor ("Unable to determine deck type...").
 
 Release 1.80 (December 31, 2016)
 ============
