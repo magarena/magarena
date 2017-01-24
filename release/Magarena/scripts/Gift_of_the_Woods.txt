@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant creature;\
-        Whenever enchanted creature blocks or becomes blocked, RN gets +0/+3 until end of turn.~You gain 1 life.
+        Whenever enchanted creature blocks or becomes blocked, RN gets +0/+3 until end of turn~and you gain 1 life.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked, it gets +0/+3 until end of turn and you gain 1 life.

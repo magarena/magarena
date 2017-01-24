@@ -4,6 +4,6 @@ value=2.724
 rarity=U
 type=Sorcery
 cost={5}{U}
-effect=Target opponent discards two cards.~You draw two cards.
+effect=Target opponent discards two cards~and you draw two cards.
 timing=main
 oracle=You draw two cards and target opponent discards two cards.

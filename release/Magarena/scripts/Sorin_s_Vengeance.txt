@@ -4,6 +4,6 @@ value=4.129
 rarity=R
 type=Sorcery
 cost={4}{B}{B}{B}
-effect=SN deals 10 damage to target player.~You gain 10 life.
+effect=SN deals 10 damage to target player~and you gain 10 life.
 timing=main
 oracle=Sorin's Vengeance deals 10 damage to target player and you gain 10 life.

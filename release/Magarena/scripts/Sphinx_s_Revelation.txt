@@ -4,6 +4,6 @@ value=4.013
 rarity=M
 type=Instant
 cost={X}{W}{U}{U}
-effect=You gain X life.~You draw X cards.
+effect=You gain X life~and draw X cards.
 timing=main
 oracle=You gain X life and draw X cards.

@@ -1,4 +1,4 @@
-def EFFECT1 = MagicRuleEventAction.create("SN deals 1 damage to target creature.~You gain 1 life.");
+def EFFECT1 = MagicRuleEventAction.create("SN deals 1 damage to target creature~and you gain 1 life.");
 
 def EFFECT2 = MagicRuleEventAction.create("Target creature gains first strike until end of turn.");
 

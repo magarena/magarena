@@ -4,6 +4,6 @@ value=2.400
 rarity=C
 type=Sorcery
 cost={2}{B}
-effect=SN deals 2 damage to target opponent.~You gain 2 life.
+effect=SN deals 2 damage to target opponent~and you gain 2 life.
 timing=main
 oracle=Vampiric Touch deals 2 damage to target opponent and you gain 2 life.

@@ -4,6 +4,6 @@ value=1.117
 rarity=U
 type=Sorcery
 cost={5}{B}{B}
-effect=SN deals 4 damage to target creature or player.~You gain 4 life.
+effect=SN deals 4 damage to target creature or player~and you gain 4 life.
 timing=main
 oracle=Vampiric Feast deals 4 damage to target creature or player and you gain 4 life.

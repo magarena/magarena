@@ -5,6 +5,6 @@ removal=2
 rarity=C
 type=Instant
 cost={2}{B}
-effect=SN deals 2 damage to target creature.~You gain 2 life.
+effect=SN deals 2 damage to target creature~and you gain 2 life.
 timing=removal
 oracle=Douse in Gloom deals 2 damage to target creature and you gain 2 life.

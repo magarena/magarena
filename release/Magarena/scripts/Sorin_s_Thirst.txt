@@ -6,6 +6,6 @@ removal=2
 rarity=C
 type=Instant
 cost={B}{B}
-effect=SN deals 2 damage to target creature.~You gain 2 life.
+effect=SN deals 2 damage to target creature~and you gain 2 life.
 timing=removal
 oracle=Sorin's Thirst deals 2 damage to target creature and you gain 2 life.

@@ -4,6 +4,6 @@ value=3.201
 rarity=R
 type=Instant
 cost={W}{U}{U}{B}
-effect=Counter target spell.~Its controller loses 3 life.~You gain 3 life.
+effect=Counter target spell.~Its controller loses 3 life~and you gain 3 life.
 timing=counter
 oracle=Counter target spell. Its controller loses 3 life and you gain 3 life.
