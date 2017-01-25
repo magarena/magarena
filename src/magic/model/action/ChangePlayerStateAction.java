@@ -1,13 +1,8 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
-import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.AtUpkeepTrigger;
 
 public class ChangePlayerStateAction extends MagicAction {
 
@@ -22,7 +17,7 @@ public class ChangePlayerStateAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (player.hasState(state) == false) {
+        if (!player.hasState(state)) {
             player.setState(state);
             setPlayer = true;
         }

@@ -516,6 +516,9 @@ public enum MagicConditionParser {
             return AtLeastOneOnBattlefield.toCondition(arg);
         }
     },
+    Revolt("a permanent you controlled left the battlefield this turn") {
+        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.PERMANENT_YOU_CONTROLLED_LEFT_BATTLEFIELD;}
+    },
     FiveOrMoreIslands("there are " + ARG.AMOUNT + " or more " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldAtLeast(

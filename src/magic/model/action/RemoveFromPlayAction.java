@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerState;
 import magic.model.trigger.MagicTriggerType;
 
 public class RemoveFromPlayAction extends MagicAction {
@@ -100,6 +101,7 @@ public class RemoveFromPlayAction extends MagicAction {
 
         game.doAction(new MoveCardAction(permanent,toLocation));
         game.addDelayedAction(new RemoveTriggersStaticsAction(permanent));
+        game.doAction(new ChangePlayerStateAction(controller, MagicPlayerState.Revolt));
 
         if (permanent.isFaceDown()) {
             game.doAction(new RevealAction(permanent.getCard()));

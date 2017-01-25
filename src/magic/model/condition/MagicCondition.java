@@ -740,6 +740,12 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition PERMANENT_YOU_CONTROLLED_LEFT_BATTLEFIELD = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getController().hasState(MagicPlayerState.Revolt);
+        }
+    };
+
     public static MagicCondition YOU_ATTACKED_WITH_CREATURE = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();

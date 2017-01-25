@@ -8,6 +8,7 @@ public enum MagicPlayerState {
     HasLostLife(""),
     HasGainedLife(""),
     Monarch(""),
+    Revolt("") //has had a controlled permanent leave the battlefield
     ;
 
     private final String description;
@@ -22,7 +23,8 @@ public enum MagicPlayerState {
         Monarch.getMask() |
         WasDealtDamage.getMask() |
         HasLostLife.getMask() |
-        HasGainedLife.getMask();
+        HasGainedLife.getMask() |
+        Revolt.getMask();
 
     private MagicPlayerState(final String description) {
         this.description=description;
