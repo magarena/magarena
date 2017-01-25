@@ -71,6 +71,7 @@ public class CardsJTable extends JTable
         setOpaque(false);
         setForeground(ColorHelper.getOppositeColor(getForeground()));
         setStyleProperties();
+        setFillsViewportHeight(true);
     }
 
     private void setStyleProperties() {
