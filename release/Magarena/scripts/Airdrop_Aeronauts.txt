@@ -8,5 +8,5 @@ cost={3}{W}{W}
 pt=4/3
 ability=Flying;\
         When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, you gain 5 life.
-timing=main
+timing=smain
 oracle=Flying\nRevolt — When Airdrop Aeronauts enters the battlefield, if a permanent you controlled left the battlefield this turn, you gain 5 life.
