@@ -8,5 +8,5 @@ cost={2}{G}
 pt=2/2
 ability=Reach;\
         When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, draw a card.
-timing=main
+timing=smain
 oracle=Reach\nRevolt — When Silkweaver Elite enters the battlefield, if a permanent you controlled left the battlefield this turn, draw a card.
