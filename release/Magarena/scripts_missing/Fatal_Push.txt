@@ -7,3 +7,4 @@ cost={B}
 effect=Destroy target creature if it has converted mana cost 2 or less.~Destroy that creature if it has converted mana cost 4 or less instead if a permanent you controlled left the battlefield this turn.
 timing=removal
 oracle=Destroy target creature if it has converted mana cost 2 or less.\nRevolt — Destroy that creature if it has converted mana cost 4 or less instead if a permanent you controlled left the battlefield this turn.
+#Can target any creature, but only destroys if mana cost value is correct
