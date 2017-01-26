@@ -1571,17 +1571,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.getConvertedCost() <= 3 && cardDefinition.isPermanent();
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
-
     public static final MagicCardFilterImpl ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.getConvertedCost() <= 1 && target.hasType(MagicType.Artifact);
@@ -2332,7 +2321,9 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> permanent card from your graveyard
         add("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD);
-        add("permanent card with converted mana cost 3 or less from your graveyard", PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
+        add("permanent card with converted mana cost 3 or less from your graveyard", anyPermanentCardMaxCMC(MagicTargetType.Graveyard, 3));
+        add("permanent card with converted mana cost 2 or less from your graveyard", anyPermanentCardMaxCMC(MagicTargetType.Graveyard, 2));
+
 
         // <color|type|subtype> creature card from your graveyard
         add("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
@@ -2371,7 +2362,6 @@ public class MagicTargetFilterFactory {
         add("Mercenary permanent card with converted mana cost 5 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 5));
         add("Mercenary permanent card with converted mana cost 6 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 6));
         add("legendary Spirit permanent card from your library", LEGENDARY_SPIRIT_PERMANENT_CARD_FROM_LIBRARY);
-        add("permanent card with converted mana cost 2 or less from your graveyard", anyPermanentCardMaxCMC(MagicTargetType.Graveyard, 6));
 
         // <color|type|subtype> creature card from your library
         add("creature card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, 1));
