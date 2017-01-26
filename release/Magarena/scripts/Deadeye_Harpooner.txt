@@ -7,5 +7,5 @@ subtype=Dwarf,Warrior
 cost={2}{W}
 pt=2/2
 ability=When SN enters the battlefield, if a permanent you controlled left the battlefield this turn, destroy target tapped creature an opponent controls.
-timing=smain
+timing=main
 oracle=Revolt — When Deadeye Harpooner enters the battlefield, if a permanent you controlled left the battlefield this turn, destroy target tapped creature an opponent controls.
