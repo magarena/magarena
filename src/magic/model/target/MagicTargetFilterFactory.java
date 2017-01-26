@@ -1987,11 +1987,15 @@ public class MagicTargetFilterFactory {
         };
     }
 
-    public static final MagicCardFilterImpl anyPermanentCardMaxCMC(final MagicTargetType from, final int cmc) {
+    public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
             public boolean accept(MagicSource source, MagicPlayer player, MagicCard target) {
                 return target.isPermanentCard() &&
                     target.getConvertedCost() <= cmc;
+            }
+
+            public boolean acceptType(final MagicTargetType targetType) {
+                return targetType == from;
             }
         };
     }
@@ -2321,9 +2325,8 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> permanent card from your graveyard
         add("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD);
-        add("permanent card with converted mana cost 3 or less from your graveyard", anyPermanentCardMaxCMC(MagicTargetType.Graveyard, 3));
-        add("permanent card with converted mana cost 2 or less from your graveyard", anyPermanentCardMaxCMC(MagicTargetType.Graveyard, 2));
-
+        add("permanent card with converted mana cost 3 or less from your graveyard", permanentCardMaxCMC(MagicTargetType.Graveyard, 3));
+        add("permanent card with converted mana cost 2 or less from your graveyard", permanentCardMaxCMC(MagicTargetType.Graveyard, 2));
 
         // <color|type|subtype> creature card from your graveyard
         add("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
