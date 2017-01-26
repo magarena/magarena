@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.Locale;
@@ -28,7 +29,7 @@ public class Frame {
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         boolean enchantmentPermanent = cardDef.hasType(MagicType.Enchantment) &&
             (cardDef.hasType(MagicType.Creature) || cardDef.hasType(MagicType.Artifact));
-        List<MagicColor> landColor = new ArrayList<>();
+        Set<MagicColor> landColor = new HashSet<>();
         if (land) {
             baseFrame = ResourceManager.newFrame(enchantmentPermanent ? ResourceManager.landNyx : ResourceManager.landFrame);
             //Land Colors
@@ -114,7 +115,7 @@ public class Frame {
         boolean hasText = cardDef.hasText();
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
-        List<MagicColor> landColor = new ArrayList<>();
+        Set<MagicColor> landColor = new HashSet<>();
         //Land Colors
         if (land) {
             landColor = getLandColors(cardDef);
@@ -306,7 +307,7 @@ public class Frame {
     // only with color pairs for Hybrid cards and the
     // colored piping for 'dual color' multicolor or land cards
     static List<MagicColor> getColorPairOrder(IRenderableCard cardDef) {
-        List<MagicColor> colors = new ArrayList<>();
+        Set<MagicColor> colors = new HashSet<>();
         //Get colors
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
@@ -316,7 +317,7 @@ public class Frame {
         return getColorPairOrder(colors);
     }
 
-    static List<MagicColor> getColorPairOrder(List<MagicColor> colors) {
+    static List<MagicColor> getColorPairOrder(Set<MagicColor> colors) {
         assert colors.size() == 2 : "Size of colors should be 2 but it is " + colors.size();
         List<MagicColor> orderedColors = new ArrayList<>(colors);
 
@@ -361,27 +362,21 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessNyx);
     }
 
-    static List<MagicColor> getLandColors(IRenderableCard cardDef) {
+    static Set<MagicColor> getLandColors(IRenderableCard cardDef) {
         Collection<MagicManaActivation> landActivations = cardDef.getManaActivations();
-        List<MagicColor> landColor = new ArrayList<>();
-        //Check mana activations
+        Set<MagicColor> landColor = new HashSet<>();
+        //Add mana activations
         if (!landActivations.isEmpty()) {
             for (MagicManaActivation activation : landActivations) {
                 landColor.addAll(activation.getManaTypes().stream().filter(manaType -> manaType != MagicManaType.Colorless).map(MagicManaType::getColor).collect(Collectors.toList()));
             }
         }
-        //Check basic land types
-        MagicSubType.ALL_BASIC_LANDS.stream().filter(cardDef::hasSubType).forEach(aSubType -> {
-            for (MagicColor color : MagicColor.values()) {
-                if (color.getLandSubType() == aSubType) {
-                    landColor.add(color);
-                }
-            }
-        });
-        //Check oracle for up to two basic land types
+        //Add basic land types
+        landColor.addAll(getBasicLandColors(cardDef));
+        //Check oracle for up to two basic land types if no other mana generation present
         String oracle = cardDef.getText().toLowerCase(Locale.ENGLISH);
         Collection<MagicColor> basicLandCount = EnumSet.noneOf(MagicColor.class);
-        if (oracle.contains("search")) {
+        if (oracle.contains("search") && landColor.isEmpty()) {
             MagicSubType.ALL_BASIC_LANDS
                 .stream()
                 .filter(aSubType -> oracle.contains(aSubType.toString().toLowerCase(Locale.ENGLISH)))
@@ -396,11 +391,19 @@ public class Frame {
         if (!basicLandCount.isEmpty() && basicLandCount.size() <= 2) {
             landColor.addAll(basicLandCount);
         }
-        //Check for duplicate entries and only return those duplicates
-        List<MagicColor> toReturn = new ArrayList<>();
-        Set<MagicColor> set1 = EnumSet.noneOf(MagicColor.class);
-        toReturn.addAll(landColor.stream().filter(color -> !set1.add(color)).collect(Collectors.toList()));
-        return toReturn.isEmpty() ? landColor : toReturn;
+        return landColor;
+    }
+
+    static Set<MagicColor> getBasicLandColors(IRenderableCard cardDef) {
+        Set<MagicColor> basicColor = new HashSet<>();
+        MagicSubType.ALL_BASIC_LANDS.stream().filter(cardDef::hasSubType).forEach(aSubType -> {
+            for (MagicColor color : MagicColor.values()) {
+                if (color.getLandSubType() == aSubType) {
+                    basicColor.add(color);
+                }
+            }
+        });
+        return basicColor;
     }
 
     private static BufferedImage getLandFrame(MagicColor color) {
@@ -600,7 +603,7 @@ public class Frame {
     static BufferedImage getPlaneswalkerFrameType(IRenderableCard cardDef) {
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
-        List<MagicColor> landColor = new ArrayList<>();
+        Set<MagicColor> landColor = new HashSet<>();
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
             BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
             if (land) {
@@ -740,7 +743,7 @@ public class Frame {
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         boolean transform = !cardDef.isHidden();
-        List<MagicColor> landColor = new ArrayList<>();
+        Set<MagicColor> landColor = new HashSet<>();
         BufferedImage baseFrame = ResourceManager.newFrame(transform ? ResourceManager.colorlessTransform : ResourceManager.colorlessHidden);
         if (land) {
             baseFrame = ResourceManager.newFrame(transform ? ResourceManager.colorlessLandTransform : ResourceManager.colorlessLandHidden);
@@ -891,7 +894,7 @@ public class Frame {
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         boolean transform = !cardDef.isHidden();
-        List<MagicColor> landColor = new ArrayList<>();
+        Set<MagicColor> landColor = new HashSet<>();
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) <= 3) {
             BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
             if (land) {

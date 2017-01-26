@@ -18,17 +18,17 @@ import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
-import magic.awt.MagicFont;
 
+import magic.awt.MagicFont;
+import magic.cardBuilder.ResourceManager;
+import magic.model.IRenderableCard;
 import magic.model.MagicColor;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
-import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
 import magic.ui.helpers.ImageHelper;
 
 public class OracleText {
@@ -57,21 +57,22 @@ public class OracleText {
             );
 
         } else if (cardDef.hasType(MagicType.Land)) {
-            List<MagicColor> landColors = Frame.getLandColors(cardDef);
-            BufferedImage landImage = null;
-            if (landColors.size() == 1) {
-                for (MagicColor color : landColors) {
-                    landImage = getLandImage(color);
+            //Currently ignoring colorless basic lands with no type - no watermark for colorless yet
+            Set<MagicColor> landColors = Frame.getLandColors(cardDef);
+            if (landColors.equals(Frame.getBasicLandColors(cardDef))) {
+                BufferedImage landImage = null;
+                if (landColors.size() == 1) {
+                    landImage = getLandImage(landColors.iterator().next());
+                } else if (landColors.size() == 2 ){
+                    landImage = getHybridLandImage(landColors);
                 }
-            } else {
-                landImage = getHybridLandImage(landColors);
-            }
-            if (landImage != null) { //Currently ignoring colorless basic lands with no type - no watermark for colorless yet
-                Graphics2D g2d = cardImage.createGraphics();
-                int heightPadding = (int) ((textBoxBounds.getHeight() - landImage.getHeight()) / 2);
-                int widthPadding = (int) ((textBoxBounds.getWidth() - landImage.getWidth()) / 2);
-                g2d.drawImage(landImage, 30 + widthPadding, 327 + heightPadding, null);
-                g2d.dispose();
+                if (landImage != null) {
+                    Graphics2D g2d = cardImage.createGraphics();
+                    int heightPadding = (int)((textBoxBounds.getHeight() - landImage.getHeight()) / 2);
+                    int widthPadding = (int)((textBoxBounds.getWidth() - landImage.getWidth()) / 2);
+                    g2d.drawImage(landImage, 30 + widthPadding, 327 + heightPadding, null);
+                    g2d.dispose();
+                }
             }
         }
     }
@@ -401,7 +402,7 @@ public class OracleText {
     }
 
     public static AttributedString textIconReplace(final String text) {
-        final String compacted = text.replaceAll("\\{[^\\}]+\\}", "M");
+        final String compacted = text.replaceAll("\\{[^}]+}", "M");
         final AttributedString attrString = new AttributedString(compacted);
         for (int i = 0, j = 0; i < text.length(); i++, j++) {
             char c = text.charAt(i);

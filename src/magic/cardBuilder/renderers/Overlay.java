@@ -3,13 +3,15 @@ package magic.cardBuilder.renderers;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
+import magic.cardBuilder.ResourceManager;
+import magic.model.IRenderableCard;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
-import magic.model.IRenderableCard;
-import magic.cardBuilder.ResourceManager;
 
 public class Overlay {
 
@@ -154,7 +156,7 @@ public class Overlay {
     static BufferedImage getLevellerOverlay(IRenderableCard cardDef) {
         boolean artifact = cardDef.isArtifact();
         boolean land = cardDef.isLand();
-        List<MagicColor> landColors = new ArrayList<>();
+        Set<MagicColor> landColors = new HashSet<>();
         BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLevellerBox);
         if (artifact) {
             return ResourceManager.newFrame(ResourceManager.artifactLevellerBox);
@@ -190,7 +192,7 @@ public class Overlay {
     }
 
     static BufferedImage getLandOverlay(IRenderableCard cardDef) {
-        List<MagicColor> landColors = Frame.getLandColors(cardDef);
+        Set<MagicColor> landColors = Frame.getLandColors(cardDef);
         if (landColors.size() > 1) {
             if (landColors.size() == 2) {
                 List<BufferedImage> colorFrames = new ArrayList<>(2);
