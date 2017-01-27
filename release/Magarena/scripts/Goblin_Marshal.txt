@@ -7,7 +7,6 @@ subtype=Goblin,Warrior
 cost={4}{R}{R}
 pt=3/3
 ability=Echo {4}{R}{R};\
-        When SN enters the battlefield, create two 1/1 red Goblin creature tokens.;\
-        When SN dies, create two 1/1 red Goblin creature tokens.
+        When SN enters the battlefield or dies, create two 1/1 red Goblin creature tokens.
 timing=main
 oracle=Echo {4}{R}{R}\nWhen Goblin Marshal enters the battlefield or dies, create two 1/1 red Goblin creature tokens.
