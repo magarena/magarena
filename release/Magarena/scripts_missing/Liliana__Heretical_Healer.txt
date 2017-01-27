@@ -8,7 +8,7 @@ subtype=Human,Cleric
 cost={1}{B}{B}
 pt=2/3
 ability=Lifelink;\
-        Whenever another nontoken creature you control dies, exile SN, then return her to the battlefield transformed under her owner's control. If you do, create a 2/2 black Zombie creature token.
+        Whenever another nontoken creature you control dies, exile SN, then return it to the battlefield transformed under its owner's control. If you do, create a 2/2 black Zombie creature token.
 timing=main
 transform=Liliana, Defiant Necromancer
 oracle=Lifelink\nWhenever another nontoken creature you control dies, exile Liliana, Heretical Healer, then return her to the battlefield transformed under her owner's control. If you do, create a 2/2 black Zombie creature token.

@@ -7,7 +7,7 @@ subtype=Human,Warrior
 cost={4}{R}{G}{W}
 pt=2/4
 ability=When SN enters the battlefield, create X 1/1 Sand Warrior creature tokens that are red, green, and white at the beginning of your next upkeep, where X is the number of lands you control at that time.;\
-        When Hazezon leaves the battlefield, exile all Sand Warriors.
+        When SN leaves the battlefield, exile all Sand Warriors.
 timing=main
 oracle=When Hazezon Tamar enters the battlefield, create X 1/1 Sand Warrior creature tokens that are red, green, and white at the beginning of your next upkeep, where X is the number of lands you control at that time.\nWhen Hazezon leaves the battlefield, exile all Sand Warriors.
 status=needs groovy

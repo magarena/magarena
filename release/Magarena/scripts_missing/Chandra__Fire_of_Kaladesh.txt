@@ -8,7 +8,7 @@ subtype=Human,Shaman
 cost={1}{R}{R}
 pt=2/2
 ability=Whenever you cast a red spell, untap SN.;\
-        {T}: SN deals 1 damage to target player. If Chandra has dealt 3 or more damage this turn, exile her, then return her to the battlefield transformed under her owner's control.
+        {T}: SN deals 1 damage to target player. If SN has dealt 3 or more damage this turn, exile SN, then return it to the battlefield transformed under its owner's control.
 timing=main
 transform=Chandra, Roaring Flame
 oracle=Whenever you cast a red spell, untap Chandra, Fire of Kaladesh.\n{T}: Chandra, Fire of Kaladesh deals 1 damage to target player. If Chandra has dealt 3 or more damage this turn, exile her, then return her to the battlefield transformed under her owner's control.

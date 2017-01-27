@@ -7,9 +7,9 @@ subtype=Elemental,Beast
 cost={R}{G}{W}
 pt=0/0
 ability=SN enters the battlefield with a number of +1/+1 counters on it equal to the amount of mana spent to cast it.;\
-        {X}, Remove X +1/+1 counters from Marath: Choose one — \
+        {X}, Remove X +1/+1 counters from SN: Choose one — \
         (1) Put X +1/+1 counters on target creature. X can't be 0. \
-        (2) Marath deals X damage to target creature or player. X can't be 0. \
+        (2) SN deals X damage to target creature or player. X can't be 0. \
         (3) Create an X/X green Elemental creature token. X can't be 0.
 timing=main
 oracle=Marath, Will of the Wild enters the battlefield with a number of +1/+1 counters on it equal to the amount of mana spent to cast it.\n{X}, Remove X +1/+1 counters from Marath: Choose one —\n• Put X +1/+1 counters on target creature. X can't be 0.\n• Marath deals X damage to target creature or player. X can't be 0.\n• Create an X/X green Elemental creature token. X can't be 0.

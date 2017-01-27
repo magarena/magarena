@@ -8,7 +8,7 @@ cost={1}{W}{U}{B}{R}{G}
 pt=5/5
 ability=Haste;\
         At the beginning of each player's upkeep, that player untaps SN and gains control of it.;\
-        Whenever Karona attacks, creatures of the creature type of your choice get +3/+3 until end of turn.
+        Whenever SN attacks, creatures of the creature type of your choice get +3/+3 until end of turn.
 timing=fmain
 oracle=Haste\nAt the beginning of each player's upkeep, that player untaps Karona, False God and gains control of it.\nWhenever Karona attacks, creatures of the creature type of your choice get +3/+3 until end of turn.
 status=not supported: choose-creature-type

@@ -8,7 +8,7 @@ subtype=Elf,Scout
 cost={2}{G}
 pt=2/2
 ability=When SN enters the battlefield, you may search your library for a basic Forest card, reveal it, put it into your hand, then shuffle your library.;\
-        Whenever a land enters the battlefield under your control, if you control seven or more lands, exile Nissa, then return her to the battlefield transformed under her owner's control.
+        Whenever a land enters the battlefield under your control, if you control seven or more lands, exile SN, then return it to the battlefield transformed under its owner's control.
 timing=main
 transform=Nissa, Sage Animist
 oracle=When Nissa, Vastwood Seer enters the battlefield, you may search your library for a basic Forest card, reveal it, put it into your hand, then shuffle your library.\nWhenever a land enters the battlefield under your control, if you control seven or more lands, exile Nissa, then return her to the battlefield transformed under her owner's control.

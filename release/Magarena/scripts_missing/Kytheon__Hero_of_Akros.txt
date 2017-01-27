@@ -7,8 +7,8 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={W}
 pt=2/1
-ability=At end of combat, if SN and at least two other creatures attacked this combat, exile Kytheon, then return him to the battlefield transformed under his owner's control.;\
-        {2}{W}: Kytheon gains indestructible until end of turn.
+ability=At end of combat, if SN and at least two other creatures attacked this combat, exile SN, then return it to the battlefield transformed under its owner's control.;\
+        {2}{W}: SN gains indestructible until end of turn.
 timing=main
 transform=Gideon, Battle-Forged
 oracle=At end of combat, if Kytheon, Hero of Akros and at least two other creatures attacked this combat, exile Kytheon, then return him to the battlefield transformed under his owner's control.\n{2}{W}: Kytheon gains indestructible until end of turn.

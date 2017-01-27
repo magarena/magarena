@@ -7,8 +7,8 @@ subtype=Zombie,Knight
 cost={1}{B}{B}
 pt=3/3
 ability=You may cast SN from your graveyard, but not from anywhere else.;\
-        As long as Haakon is on the battlefield, you may play Knight cards from your graveyard.;\
-        When Haakon dies, you lose 2 life.
+        As long as SN is on the battlefield, you may play Knight cards from your graveyard.;\
+        When SN dies, you lose 2 life.
 timing=main
 oracle=You may cast Haakon, Stromgald Scourge from your graveyard, but not from anywhere else.\nAs long as Haakon is on the battlefield, you may play Knight cards from your graveyard.\nWhen Haakon dies, you lose 2 life.
 status=not supported: may-play-card

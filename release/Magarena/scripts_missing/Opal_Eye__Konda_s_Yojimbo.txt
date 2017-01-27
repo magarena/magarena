@@ -9,7 +9,7 @@ pt=1/4
 ability=Defender;\
         Bushido 1;\
         {T}: The next time a source of your choice would deal damage this turn, that damage is dealt to SN instead.;\
-        {1}{W}: Prevent the next 1 damage that would be dealt to Opal-Eye this turn.
+        {1}{W}: Prevent the next 1 damage that would be dealt to SN this turn.
 timing=smain
 oracle=Defender\nBushido 1\n{T}: The next time a source of your choice would deal damage this turn, that damage is dealt to Opal-Eye, Konda's Yojimbo instead.\n{1}{W}: Prevent the next 1 damage that would be dealt to Opal-Eye this turn.
 status=not supported: source-deal-damage

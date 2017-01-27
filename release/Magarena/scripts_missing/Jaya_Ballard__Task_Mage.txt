@@ -8,7 +8,7 @@ cost={1}{R}{R}
 pt=2/2
 ability={R}, {T}, Discard a card: Destroy target blue permanent.;\
         {1}{R}, {T}, Discard a card: SN deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn.;\
-        {5}{R}{R}, {T}, Discard a card: Jaya Ballard deals 6 damage to each creature and each player.
+        {5}{R}{R}, {T}, Discard a card: SN deals 6 damage to each creature and each player.
 timing=main
 oracle={R}, {T}, Discard a card: Destroy target blue permanent.\n{1}{R}, {T}, Discard a card: Jaya Ballard, Task Mage deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn.\n{5}{R}{R}, {T}, Discard a card: Jaya Ballard deals 6 damage to each creature and each player.
 status=needs groovy

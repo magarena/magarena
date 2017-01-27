@@ -8,7 +8,7 @@ cost={B}{G}
 pt=1/1
 ability=Haste;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on it.;\
-        Counters remain on Skullbriar as it moves to any zone other than a player's hand or library.
+        Counters remain on SN as it moves to any zone other than a player's hand or library.
 timing=fmain
 oracle=Haste\nWhenever Skullbriar, the Walking Grave deals combat damage to a player, put a +1/+1 counter on it.\nCounters remain on Skullbriar as it moves to any zone other than a player's hand or library.
 status=not supported: counters-remain

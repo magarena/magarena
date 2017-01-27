@@ -7,7 +7,7 @@ subtype=Dragon
 cost={3}{U}{R}{G}
 pt=6/6
 ability=Flying;\
-        Whenever SN deals combat damage to a player, you may pay {2}{U}. If you do, exile the top card of your library face down. You may look at that card for as long as it remains exiled. You may play that card without paying its mana cost for as long as Intet remains on the battlefield.
+        Whenever SN deals combat damage to a player, you may pay {2}{U}. If you do, exile the top card of your library face down. You may look at that card for as long as it remains exiled. You may play that card without paying its mana cost for as long as SN remains on the battlefield.
 timing=main
 oracle=Flying\nWhenever Intet, the Dreamer deals combat damage to a player, you may pay {2}{U}. If you do, exile the top card of your library face down. You may look at that card for as long as it remains exiled. You may play that card without paying its mana cost for as long as Intet remains on the battlefield.
 status=not supported: may-play-card

@@ -8,7 +8,7 @@ subtype=Dragon
 cost={3}{B}{R}{G}
 pt=6/6
 ability=Flying;\
-        Whenever SN deals combat damage to a player, you may pay {2}{R}. If you do, choose a color, then that player reveals his or her hand and Darigaaz deals damage to the player equal to the number of cards of that color revealed this way.
+        Whenever SN deals combat damage to a player, you may pay {2}{R}. If you do, choose a color, then that player reveals his or her hand and SN deals damage to the player equal to the number of cards of that color revealed this way.
 timing=main
 oracle=Flying\nWhenever Darigaaz, the Igniter deals combat damage to a player, you may pay {2}{R}. If you do, choose a color, then that player reveals his or her hand and Darigaaz deals damage to the player equal to the number of cards of that color revealed this way.
 status=not supported: reveal-hand

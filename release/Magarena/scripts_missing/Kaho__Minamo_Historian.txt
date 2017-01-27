@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={2}{U}{U}
 pt=2/2
 ability=When SN enters the battlefield, search your library for up to three instant cards and exile them. Then shuffle your library.;\
-        {X}, {T}: You may cast a card with converted mana cost X exiled with Kaho without paying its mana cost.
+        {X}, {T}: You may cast a card with converted mana cost X exiled with SN without paying its mana cost.
 timing=main
 oracle=When Kaho, Minamo Historian enters the battlefield, search your library for up to three instant cards and exile them. Then shuffle your library.\n{X}, {T}: You may cast a card with converted mana cost X exiled with Kaho without paying its mana cost.

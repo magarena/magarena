@@ -7,7 +7,7 @@ subtype=Hydra
 cost={2}{G}{G}
 pt=5/5
 ability={X}{X}{G}: Monstrosity X.;\
-        When SN becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.
+        When SN becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to SN.
 timing=main
 oracle={X}{X}{G}: Monstrosity X.\nWhen Polukranos, World Eater becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.
 status=not supported: multiple-targets
