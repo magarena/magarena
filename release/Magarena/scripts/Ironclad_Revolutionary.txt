@@ -6,6 +6,6 @@ type=Creature
 subtype=Aetherborn,Artificer
 cost={4}{B}{B}
 pt=4/4
-ability=When SN enters the battlefield, you may sacrifice an artifact. If you do, put two +1/+1 counters on SN and each opponent loses 2 life.
+ability=When SN enters the battlefield, you may sacrifice an artifact. If you do, put two +1/+1 counters on SN~and each opponent loses 2 life.
 timing=main
 oracle=When Ironclad Revolutionary enters the battlefield, you may sacrifice an artifact. If you do, put two +1/+1 counters on Ironclad Revolutionary and each opponent loses 2 life.
