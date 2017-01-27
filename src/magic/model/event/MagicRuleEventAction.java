@@ -2791,9 +2791,9 @@ public enum MagicRuleEventAction {
     },
     Energy(
         ARG.PLAYERS + "( )?get(s)? " + ARG.ENERGY,
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Poison"
+        MagicTargetHint.Positive,
+        MagicTiming.Pump,
+        "Energy"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
