@@ -67,7 +67,7 @@ public class ImageFrame {
         g2d.dispose();
     }
 
-    public static BufferedImage getDefaultBackground(IRenderableCard cardDef) {
+    private static BufferedImage getDefaultBackground(IRenderableCard cardDef) {
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid() || (cardDef.isToken() && cardDef.getNumColors() == 2)) {
                 List<BufferedImage> colorDefaults = Frame.getColorPairOrder(cardDef).stream().filter(cardDef::hasColor).map(ImageFrame::defaultBackground).collect(Collectors.toList());
@@ -94,23 +94,18 @@ public class ImageFrame {
         return ResourceManager.newFrame(ResourceManager.defaultColorless);
     }
 
-    public static BufferedImage getDefaultSymbol(IRenderableCard cardDef) {
+    private static BufferedImage getDefaultSymbol(IRenderableCard cardDef) {
         Set<MagicType> cardTypes = cardDef.getTypes();
-        cardTypes.remove(MagicType.Legendary);
+        cardTypes.removeAll(MagicType.SUPERTYPES);
         cardTypes.remove(MagicType.Tribal);
-        cardTypes.remove(MagicType.World);
-        cardTypes.remove(MagicType.Basic);
-        cardTypes.remove(MagicType.Snow);
         if (cardTypes.size() > 1) {
             if (cardDef.isCreature()) {
                 return ResourceManager.newFrame(ResourceManager.creatureSymbol);
             }
             return ResourceManager.newFrame(ResourceManager.multiSymbol);
         }
-        for (MagicType type : MagicType.values()) {
-            if (cardTypes.contains(type)) {
-                return defaultSymbol(type);
-            }
+        if (!cardTypes.isEmpty()) {
+            return defaultSymbol(cardTypes.iterator().next());
         }
         return ResourceManager.newFrame(ResourceManager.magarenaSymbol);
     }
@@ -179,7 +174,6 @@ public class ImageFrame {
     }
 
     private static BufferedImage buildTokenImage(IRenderableCard cardDef) {
-        int WIDTH= 317;
         int HEIGHT;
         BufferedImage blend;
         if (cardDef.hasText()) {
@@ -189,6 +183,7 @@ public class ImageFrame {
             HEIGHT = 360;
             blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
         }
+        int WIDTH = 317;
         BufferedImage background = ImageHelper.scale(getDefaultBackground(cardDef), WIDTH, HEIGHT);
         BufferedImage symbol = ImageHelper.scale(getDefaultSymbol(cardDef), WIDTH, HEIGHT);
         BufferedImage image = Frame.getBlendedFrame(new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB), blend, background);
