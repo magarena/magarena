@@ -553,6 +553,16 @@ public enum MagicAbility {
             ));
         }
     },
+    EntersDiesEffect("When SN enters the battlefield or dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(EntersBattlefieldTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+            card.add(ThisDiesTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     EntersAttackEffect("Whenever SN enters the battlefield or attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(EntersBattlefieldTrigger.create(
