@@ -64,7 +64,7 @@ public class TitleFrame {
         String plainName = cardDef.getName();
         if (!plainName.isEmpty()) {
             //Add space to end of name to enable .end character ligatures
-            AttributedString cardName = new AttributedString(plainName+" ");
+            AttributedString cardName = new AttributedString(plainName + ' ');
             Graphics2D g2d = cardImage.createGraphics();
             g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
             g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);

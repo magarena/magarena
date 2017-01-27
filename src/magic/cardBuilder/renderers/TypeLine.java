@@ -37,7 +37,7 @@ public class TypeLine {
             } else {
                 yPos = 301;
             }
-            g2d.drawString(cardType + " ", 32, yPos + metrics.getAscent() + padding);
+            g2d.drawString(cardType + ' ', 32, yPos + metrics.getAscent() + padding);
             g2d.dispose();
         }
     }
@@ -63,7 +63,7 @@ public class TypeLine {
     public static String getTypeLine(IRenderableCard cardDef) {
         StringBuilder typeLine = new StringBuilder();
         String subtype = cardDef.getSubTypeText();
-        MagicType.SUPERTYPES.stream().filter(cardDef::hasType).forEach(aSuperType -> typeLine.append(aSuperType).append(" "));
+        MagicType.SUPERTYPES.stream().filter(cardDef::hasType).forEach(aSuperType -> typeLine.append(aSuperType).append(' '));
         if (cardDef.isToken()) {
             typeLine.append("Token ");
         }
