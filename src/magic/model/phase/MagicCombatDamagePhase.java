@@ -7,7 +7,7 @@ import magic.ui.MagicSound;
 
 public class MagicCombatDamagePhase extends MagicPhase {
 
-    private static final MagicPhase INSTANCE=new MagicCombatDamagePhase();
+    private static final MagicPhase INSTANCE = new MagicCombatDamagePhase();
 
     private MagicCombatDamagePhase() {
         super(MagicPhaseType.CombatDamage);
@@ -19,33 +19,53 @@ public class MagicCombatDamagePhase extends MagicPhase {
 
     @Override
     protected void executeBeginStep(final MagicGame game) {
-        final MagicPlayer attackingPlayer=game.getTurnPlayer();
-        final MagicPlayer defendingPlayer=attackingPlayer.getOpponent();
-        final int lifeBefore=defendingPlayer.getLife();
-        final int poisonBefore=defendingPlayer.getPoison();
-        final String playerName = defendingPlayer.getName();
+        final MagicPlayer attackingPlayer = game.getTurnPlayer();
+        final MagicPlayer defendingPlayer = attackingPlayer.getOpponent();
+        final int defenderLifeBefore = defendingPlayer.getLife();
+        final int defenderPoisonBefore = defendingPlayer.getPoison();
+        final String defenderName = defendingPlayer.getName();
+        final int attackerLifeBefore = attackingPlayer.getLife();
+        final int attackerPoisonBefore = attackingPlayer.getPoison();
+        final String attackerName = attackingPlayer.getName();
 
         //deal first strike damage
         if (game.getStep() == MagicStep.Begin) {
-            game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer, true));
+            game.doAction(new CombatDamageAction(attackingPlayer, defendingPlayer, true));
         } else {
-        //deal regular damage
-            game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer, false));
+            //deal regular damage
+            game.doAction(new CombatDamageAction(attackingPlayer, defendingPlayer, false));
         }
 
-        final int lifeAfter=defendingPlayer.getLife();
-        final int poisonAfter=defendingPlayer.getPoison();
-        final StringBuilder message=new StringBuilder();
-        if (lifeAfter>lifeBefore) {
-            message.append(" gains ").append(lifeAfter-lifeBefore).append(" life.");
-        } else if (lifeAfter<lifeBefore) {
-            message.append(" loses ").append(lifeBefore-lifeAfter).append(" life.");
+        //combat message for defender
+        final int defenderLifeAfter = defendingPlayer.getLife();
+        final int defenderPoisonAfter = defendingPlayer.getPoison();
+        final StringBuilder message = new StringBuilder();
+        if (defenderLifeAfter > defenderLifeBefore) {
+            message.append(" gains ").append(defenderLifeAfter - defenderLifeBefore).append(" life.");
+        } else if (defenderLifeAfter < defenderLifeBefore) {
+            message.append(" loses ").append(defenderLifeBefore - defenderLifeAfter).append(" life.");
         }
-        if (poisonAfter>poisonBefore) {
-            message.append(" gets ").append(poisonAfter-poisonBefore).append(" poison counters.");
+        if (defenderPoisonAfter > defenderPoisonBefore) {
+            message.append(" gets ").append(defenderPoisonAfter - defenderPoisonBefore).append(" poison counters.");
         }
-        if (message.length()>0) {
-            game.logMessage(defendingPlayer,"{c}" + playerName + message.toString());
+        if (message.length() > 0) {
+            game.logMessage(defendingPlayer, "{c}" + defenderName + message);
+        }
+
+        //combat message for attacker
+        final int attackerLifeAfter = attackingPlayer.getLife();
+        final int attackerPoisonAfter = attackingPlayer.getPoison();
+        final StringBuilder attackerMessage = new StringBuilder();
+        if (attackerLifeAfter > attackerLifeBefore) {
+            attackerMessage.append(" gains ").append(attackerLifeAfter - attackerLifeBefore).append(" life.");
+        } else if (attackerLifeAfter < attackerLifeBefore) {
+            attackerMessage.append(" loses ").append(attackerLifeBefore - attackerLifeAfter).append(" life.");
+        }
+        if (attackerPoisonAfter > attackerPoisonBefore) {
+            attackerMessage.append(" gets ").append(attackerPoisonAfter - attackerPoisonBefore).append(" poison counters.");
+        }
+        if (message.length() > 0) {
+            game.logMessage(attackingPlayer, "{c}" + attackerName + attackerMessage);
         }
 
         if (game.getStep() == MagicStep.Begin) {
