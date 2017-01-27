@@ -124,6 +124,7 @@ public enum MagicCounterType {
     Training("training","{tng}",0),
     Trap("trap","{trp}",0), //Possibly 1
     Treasure("treasure","{tre}",1),
+    Unity("unity", "{uty}",1),
     Velocity("velocity","{vly}",0), //Possibly -1
     Verse("verse","{vrs}",1),
     Vitality("vitality","{vit}",1),
