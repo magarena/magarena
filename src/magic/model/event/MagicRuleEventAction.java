@@ -2806,6 +2806,23 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Experience(
+        ARG.PLAYERS + " get(s)? " + ARG.AMOUNT + " experience counter(s)?",
+        MagicTargetHint.Positive,
+        MagicTiming.Pump,
+        "Experience"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return (game, event) -> {
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Experience, amount));
+                }
+            };
+        }
+    },
     ExtraTurn(
         ARG.PLAYERS + "( )?take(s)? " + ARG.AMOUNT + " extra turn(s)? after this one",
         MagicTargetHint.Positive,
