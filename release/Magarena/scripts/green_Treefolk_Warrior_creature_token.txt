@@ -6,3 +6,4 @@ type=Creature
 subtype=Treefolk,Warrior
 color=g
 ability=SN's power and toughness are each equal to the number of Forests you control.
+oracle=This creature's power and toughness are each equal to the number of Forests you control.
