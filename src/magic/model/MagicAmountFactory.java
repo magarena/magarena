@@ -27,6 +27,15 @@ public class MagicAmountFactory {
         };
     }
 
+    public static MagicAmount CountersOnController(final MagicCounterType type) {
+        return new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                return source.getController().getCounters(type);
+            }
+        };
+    }
+
     public static MagicAmount Devotion(final MagicColor color) {
         return new MagicAmount() {
             @Override
