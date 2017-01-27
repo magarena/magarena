@@ -8,6 +8,6 @@ cost={2}{B}
 pt=2/2
 ability=Haste;\
         Whenever a creature an opponent controls dies, put a +1/+1 counter on SN.;\
-        Sacrifice another creature: Yahenni gains indestructible until end of turn.
+        Sacrifice another creature: SN gains indestructible until end of turn.
 timing=fmain
 oracle=Haste\nWhenever a creature an opponent controls dies, put a +1/+1 counter on Yahenni, Undying Partisan.\nSacrifice another creature: Yahenni gains indestructible until end of turn.
