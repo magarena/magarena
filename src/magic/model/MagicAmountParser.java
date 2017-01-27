@@ -56,6 +56,11 @@ public enum MagicAmountParser {
             return MagicAmountFactory.ColorsOnPerms;
         }
     },
+    ExperienceCounter("experience counters you have") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.CountersOnController(MagicCounterType.Experience);
+        }
+    },
     GreatestPower("the greatest power among creatures you control") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.GreatestPower;
