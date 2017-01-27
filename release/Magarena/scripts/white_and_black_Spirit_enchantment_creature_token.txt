@@ -1,0 +1,9 @@
+name=white and black Spirit enchantment creature token
+token=Spirit
+image=http://media.wizards.com/2015/c15_9dsm28ccakCDSk2/en_YIG8kZUUvK.png
+value=1
+type=Enchantment,Creature
+subtype=Spirit
+color=wb
+ability=SN's power and toughness are each equal to the number of experience counters you have.
+oracle=This creature's power and toughness are each equal to the number of experience counters you have.
