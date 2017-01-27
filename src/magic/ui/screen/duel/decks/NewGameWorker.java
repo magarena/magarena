@@ -1,15 +1,12 @@
 package magic.ui.screen.duel.decks;
 
-import java.util.Optional;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import javax.swing.SwingWorker;
 import magic.cardBuilder.renderers.CardBuilder;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.ui.MagicImages;
 import magic.utility.MagicSystem;
 
 class NewGameWorker extends SwingWorker<MagicGame, Void> {
@@ -22,27 +19,19 @@ class NewGameWorker extends SwingWorker<MagicGame, Void> {
         screen = aScreen;
     }
 
-    private Optional<MagicCardDefinition> findFirstProxyCard(MagicDeck aDeck) {
-        return aDeck.stream()
-                .filter(card -> MagicImages.isProxyImage(card.getCardDefinition()))
-                .findFirst();
-    }
-
-    private Optional<MagicCardDefinition> findFirstProxyCardInDecks() {
-        Optional<MagicCardDefinition> proxy = findFirstProxyCard(duel.getPlayer(0).getDeck());
-        return proxy.isPresent() ? proxy : findFirstProxyCard(duel.getPlayer(1).getDeck());
-    }
-
-    private void loadCardBuilderIfRequired() {
+    private void doLoadCardBuilder() {
         if (!CardBuilder.IS_LOADED) {
-            Optional<MagicCardDefinition> proxy = findFirstProxyCardInDecks();
-            proxy.ifPresent(CardBuilder::getCardBuilderImage);
+            long start_time = System.currentTimeMillis();
+            System.out.println("loading CardBuilder (" + MagicSystem.getHeapUtilizationStats() + ")");
+            CardBuilder.getCardBuilderImage(MagicCardDefinition.UNKNOWN);
+            double duration = (double) (System.currentTimeMillis() - start_time) / 1000;
+            System.out.println("done in " + duration + "s (" + MagicSystem.getHeapUtilizationStats() + ")");
         }
     }
 
     @Override
     protected MagicGame doInBackground() throws Exception {
-        loadCardBuilderIfRequired();
+        doLoadCardBuilder();
         return duel.nextGame();
     }
 
