@@ -22,7 +22,7 @@ def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ cast target nonland card\$ from his or her hand without paying its mana cost."
+                "PN may\$ cast a nonland card\$ from his or her hand without paying its mana cost."
             );
         }
         @Override
