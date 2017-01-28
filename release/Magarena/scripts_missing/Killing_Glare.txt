@@ -7,4 +7,4 @@ cost={X}{B}
 effect=Destroy target creature with power X or less.
 timing=removal
 oracle=Destroy target creature with power X or less.
-status=needs groovy
+status=not supported: x-cost-as-target

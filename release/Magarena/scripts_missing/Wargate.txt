@@ -7,4 +7,4 @@ cost={X}{G}{W}{U}
 effect=Search your library for a permanent card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.
 timing=main
 oracle=Search your library for a permanent card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.
-status=needs groovy
+status=not supported: x-cost-as-target

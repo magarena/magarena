@@ -8,4 +8,4 @@ ability=Buyback {3}
 effect=Counter target spell with converted mana cost X.
 timing=counter
 oracle=Buyback {3}\nCounter target spell with converted mana cost X.
-status=needs groovy
+status=not supported: x-cost-as-target

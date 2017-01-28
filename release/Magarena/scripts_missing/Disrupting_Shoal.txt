@@ -9,4 +9,4 @@ ability=You may exile a blue card with converted mana cost X from your hand rath
 effect=Counter target spell if its converted mana cost is X.
 timing=counter
 oracle=You may exile a blue card with converted mana cost X from your hand rather than pay Disrupting Shoal's mana cost.\nCounter target spell if its converted mana cost is X.
-status=needs groovy
+status=not supported: x-cost-as-target

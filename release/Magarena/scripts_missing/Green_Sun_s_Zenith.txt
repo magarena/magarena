@@ -7,4 +7,4 @@ cost={X}{G}
 effect=Search your library for a green creature card with converted mana cost X or less, put it onto the battlefield, then shuffle your library. Shuffle SN into its owner's library.
 timing=main
 oracle=Search your library for a green creature card with converted mana cost X or less, put it onto the battlefield, then shuffle your library. Shuffle Green Sun's Zenith into its owner's library.
-status=needs groovy
+status=not supported: x-cost-as-target
