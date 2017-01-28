@@ -1,11 +1,12 @@
 package magic.model.choice;
 
-import magic.model.MagicGame;
-import magic.model.MagicMappable;
-import magic.model.score.MagicScoreResult;
-
 import java.util.Arrays;
 import java.util.LinkedList;
+
+import magic.model.MagicGame;
+import magic.model.MagicMappable;
+import magic.model.MurmurHash3;
+import magic.model.score.MagicScoreResult;
 
 /** First creature in array is the attacker, the other creatures are blockers. */
 @SuppressWarnings("serial")
@@ -81,6 +82,6 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
                 idx++;
             }
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

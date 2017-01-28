@@ -1,12 +1,13 @@
 package magic.model.stack;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+
 import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MurmurHash3;
 import magic.model.event.MagicActivation;
-
-import java.util.Arrays;
-import java.util.LinkedList;
 
 @SuppressWarnings("serial")
 public class MagicStack extends LinkedList<MagicItemOnStack> {
@@ -127,6 +128,6 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
             keys[idx] = item.getStateId();
             idx++;
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

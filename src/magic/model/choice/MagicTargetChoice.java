@@ -1,13 +1,21 @@
 package magic.model.choice;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 import magic.data.GeneralConfig;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MurmurHash3;
 import magic.model.event.MagicEvent;
+import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -15,13 +23,6 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
-import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.exception.UndoClickedException;
-
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
-import magic.model.IUIGameController;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
@@ -443,7 +444,7 @@ public class MagicTargetChoice extends MagicChoice {
 
     @Override
     public long getStateId() {
-        return magic.model.MurmurHash3.hash(new long[] {
+        return MurmurHash3.hash(new long[] {
             targetDescription.hashCode(),
             targetFilter.hashCode(),
             (targeted ? 1L : -1L),

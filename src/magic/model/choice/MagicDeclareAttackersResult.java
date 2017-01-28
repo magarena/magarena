@@ -1,12 +1,13 @@
 package magic.model.choice;
 
-import magic.model.MagicGame;
-import magic.model.MagicMappable;
-import magic.model.MagicPermanent;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+
+import magic.model.MagicGame;
+import magic.model.MagicMappable;
+import magic.model.MagicPermanent;
+import magic.model.MurmurHash3;
 
 @SuppressWarnings("serial")
 public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> implements MagicMappable<MagicDeclareAttackersResult> {
@@ -47,6 +48,6 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
             keys[idx] = permanent.getStateId();
             idx++;
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

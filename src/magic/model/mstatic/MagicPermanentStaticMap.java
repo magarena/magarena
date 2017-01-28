@@ -1,8 +1,5 @@
 package magic.model.mstatic;
 
-import magic.model.MagicCopyMap;
-import magic.model.MagicPermanent;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.EnumMap;
@@ -10,6 +7,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
+
+import magic.model.MagicCopyMap;
+import magic.model.MagicPermanent;
+import magic.model.MurmurHash3;
 
 public class MagicPermanentStaticMap {
 
@@ -118,6 +119,6 @@ public class MagicPermanentStaticMap {
                 keys[idx] = mpstatic.getStatic().hashCode(); idx++;
             }
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

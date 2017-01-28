@@ -3,6 +3,7 @@ package magic.model.choice;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicSource;
+import magic.model.MurmurHash3;
 import magic.model.event.MagicSourceActivation;
 
 public class MagicPlayChoiceResult implements MagicMappable<MagicPlayChoiceResult> {
@@ -49,7 +50,7 @@ public class MagicPlayChoiceResult implements MagicMappable<MagicPlayChoiceResul
 
     @Override
     public long getId() {
-        return magic.model.MurmurHash3.hash(new long[] {
+        return MurmurHash3.hash(new long[] {
             sourceActivation.source.getStateId(),
             sourceActivation.activation.hashCode(),
         });

@@ -1,6 +1,11 @@
 package magic.model.stack;
 
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -11,16 +16,12 @@ import magic.model.MagicObject;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MurmurHash3;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MoveCardAction;
 import magic.model.event.MagicCardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
-import magic.model.action.MagicPermanentAction;
-
-import java.util.List;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 
 public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
@@ -88,7 +89,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     @Override
     public long getStateId() {
-        return magic.model.MurmurHash3.hash(new long[] {
+        return MurmurHash3.hash(new long[] {
             super.getStateId(),
             moveLocation.ordinal(),
             fromLocation.ordinal(),

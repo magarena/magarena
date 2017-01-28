@@ -1,24 +1,10 @@
 package magic.model.event;
 
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicColor;
-import magic.model.MagicCopyMap;
-import magic.model.MagicCopyable;
-import magic.model.MagicGame;
-import magic.model.MagicMessage;
-import magic.model.MagicObject;
-import magic.model.MagicObjectImpl;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.MagicSubType;
+import magic.model.*;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicItemOnStackAction;
@@ -39,7 +25,6 @@ import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
-import magic.exception.GameException;
 
 public class MagicEvent implements MagicCopyable {
 
@@ -772,7 +757,7 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public long getStateId() {
-        return magic.model.MurmurHash3.hash(new long[] {
+        return MurmurHash3.hash(new long[] {
             //don't call getStateId if source is MagicItemOnStack to avoid infinite loop
             (source instanceof MagicItemOnStack) ? -1L : source.getStateId(),
             player.getId(),

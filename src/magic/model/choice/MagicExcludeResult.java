@@ -1,14 +1,15 @@
 package magic.model.choice;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.MurmurHash3;
 import magic.model.action.ChangeStateAction;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class MagicExcludeResult implements MagicMappable<MagicExcludeResult> {
 
@@ -73,6 +74,6 @@ public class MagicExcludeResult implements MagicMappable<MagicExcludeResult> {
         }
         keys[idx] = excludeFlags;
         idx++;
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

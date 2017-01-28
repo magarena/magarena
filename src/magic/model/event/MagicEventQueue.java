@@ -1,8 +1,9 @@
 package magic.model.event;
 
-import magic.model.MagicCopyMap;
-
 import java.util.LinkedList;
+
+import magic.model.MagicCopyMap;
+import magic.model.MurmurHash3;
 
 @SuppressWarnings("serial")
 public class MagicEventQueue extends LinkedList<MagicEvent> {
@@ -22,6 +23,6 @@ public class MagicEventQueue extends LinkedList<MagicEvent> {
             keys[idx] = event.getStateId();
             idx++;
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

@@ -1,13 +1,14 @@
 package magic.model.choice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import magic.model.MagicCard;
+import magic.model.MagicCopyMap;
+import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
-import magic.model.MagicCopyable;
-import magic.model.MagicCopyMap;
-
-import java.util.List;
-import java.util.ArrayList;
+import magic.model.MurmurHash3;
 
 @SuppressWarnings("serial")
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable<MagicCardChoiceResult>, MagicCopyable {
@@ -63,6 +64,6 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
             keys[idx] = card.getStateId();
             idx++;
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

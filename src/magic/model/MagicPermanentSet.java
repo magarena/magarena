@@ -29,6 +29,6 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
             keys[idx] = permanent.getStateId();
             idx++;
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

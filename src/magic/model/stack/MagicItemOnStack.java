@@ -4,6 +4,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCopyMap;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicObject;
@@ -12,10 +13,9 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.MagicCounterType;
+import magic.model.MurmurHash3;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetNone;
@@ -214,12 +214,12 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
         for (int i = 0; i < arr.length; i++) {
             keys[i] = MagicObjectImpl.getStateId(arr[i]);
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 
     @Override
     public long getStateId() {
-        return magic.model.MurmurHash3.hash(new long[] {
+        return MurmurHash3.hash(new long[] {
             source     != null ? source.getStateId() : -1L,
             controller != null ? controller.getId()  : -1L,
             activation != null ? activation.hashCode()   : -1L,

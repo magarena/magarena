@@ -1,15 +1,16 @@
 package magic.model.trigger;
 
-import magic.model.MagicCopyMap;
-import magic.model.MagicPermanent;
-import magic.exception.GameException;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.EnumMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.PriorityQueue;
+
+import magic.exception.GameException;
+import magic.model.MagicCopyMap;
+import magic.model.MagicPermanent;
+import magic.model.MurmurHash3;
 
 public class MagicPermanentTriggerMap {
 
@@ -97,6 +98,6 @@ public class MagicPermanentTriggerMap {
                 keys[idx] = mptrigger.getTrigger().hashCode(); idx++;
             }
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 }

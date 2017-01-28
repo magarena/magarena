@@ -167,7 +167,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
             activationPriority.getActivationId(),
             cachedAbilityFlags.hashCode()
         };
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 
     String getIdString() {
