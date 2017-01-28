@@ -10,4 +10,4 @@ ability={X}{U}{U}, {T}: Return target creature with converted mana cost X to its
         Discard another card named Linessa, Zephyr Mage: Target player returns a creature he or she controls to its owner's hand, then repeats this process for an artifact, an enchantment, and a land.
 timing=main
 oracle={X}{U}{U}, {T}: Return target creature with converted mana cost X to its owner's hand.\nGrandeur — Discard another card named Linessa, Zephyr Mage: Target player returns a creature he or she controls to its owner's hand, then repeats this process for an artifact, an enchantment, and a land.
-status=needs groovy
+status=not supported: x-cost-as-target

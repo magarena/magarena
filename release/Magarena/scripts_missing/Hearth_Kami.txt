@@ -9,4 +9,4 @@ pt=2/1
 ability={X}, Sacrifice SN: Destroy target artifact with converted mana cost X.
 timing=main
 oracle={X}, Sacrifice Hearth Kami: Destroy target artifact with converted mana cost X.
-status=needs groovy
+status=not supported: x-cost-as-target

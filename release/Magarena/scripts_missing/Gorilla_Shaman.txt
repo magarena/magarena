@@ -9,4 +9,4 @@ pt=1/1
 ability={X}{X}{1}: Destroy target noncreature artifact with converted mana cost X.
 timing=main
 oracle={X}{X}{1}: Destroy target noncreature artifact with converted mana cost X.
-status=needs groovy
+status=not supported: x-cost-as-target
