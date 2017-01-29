@@ -12,7 +12,6 @@ import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicSourceActivation;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -505,10 +504,6 @@ public class MagicCard
 
     @Override
     public String getPowerToughnessText() {
-        if (isCreature()) {
-            return getPower()+"/"+getToughness();
-        } else {
-            return "";
-        }
+        return isCreature() || hasSubType(MagicSubType.Vehicle) ? getPower() + "/" + getToughness() : "";
     }
 }

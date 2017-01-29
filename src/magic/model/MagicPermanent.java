@@ -1390,10 +1390,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
 
     @Override
     public String getPowerToughnessText() {
-        if (isCreature()) {
-            return getPower() + "/" + getToughness();
-        } else {
-            return "";
-        }
+        return isCreature() || hasSubType(MagicSubType.Vehicle) ? getPower() + "/" + getToughness() : "";
     }
 }
