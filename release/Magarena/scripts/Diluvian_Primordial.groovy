@@ -20,7 +20,7 @@
                     game.doAction(CastCardAction.WithoutManaCost(
                         event.getPlayer(),
                         it,
-                        MagicLocationType.Graveyard,
+                        MagicLocationType.OpponentsGraveyard,
                         MagicLocationType.Exile
                     ));
                 });
