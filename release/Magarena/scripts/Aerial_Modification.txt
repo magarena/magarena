@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={4}{W}
 ability=Enchant creature or Vehicle;\
-        As long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.;\
         Enchanted creature gets +2/+2 and has flying.
 timing=aura
-enchant=default,creature
+enchant=flying,pos creature or Vehicle
 oracle=Enchant creature or Vehicle\nAs long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.\nEnchanted creature gets +2/+2 and has flying.
+requires_groovy_code
