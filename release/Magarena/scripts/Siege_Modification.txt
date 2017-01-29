@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
 ability=Enchant creature or Vehicle;\
-        As long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.;\
         Enchanted creature gets +3/+0 and has first strike.
 timing=aura
-enchant=default,creature
+enchant=first strike,pos creature or Vehicle
 oracle=Enchant creature or Vehicle\nAs long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.\nEnchanted creature gets +3/+0 and has first strike.
+requires_groovy_code=Aerial Modification
