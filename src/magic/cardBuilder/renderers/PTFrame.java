@@ -28,7 +28,7 @@ public class PTFrame {
 
     //draw ptPanel - The only layering requirement besides frame. Ability text must wrap around ptpanel intrusion if any.
     static void drawPTPanel(BufferedImage cardImage, IRenderableCard cardDef) {
-        String ptText = getPTText(cardDef);
+        String ptText = cardDef.getPowerToughnessText();
 
         if (!ptText.isEmpty()) {
             BufferedImage ptImage = getPTPanelImage(cardDef);
@@ -177,7 +177,7 @@ public class PTFrame {
     private static String[] getLevellerPTText(IRenderableCard cardDef) {
         String[] abilities = OracleText.getOracleAsLines(cardDef);
         ArrayList<String> text = new ArrayList<>(3);
-        text.add(getPTText(cardDef));
+        text.add(cardDef.getPowerToughnessText());
         for (String ability : abilities) {
             if (ability.matches("\\d+/\\d+")) {
                 text.add(ability);
@@ -272,10 +272,6 @@ public class PTFrame {
         return ResourceManager.colorlessHiddenPTPanel;
     }
 
-    private static String getPTText(IRenderableCard cardDef) {
-        return cardDef.hasType(MagicType.Creature) || cardDef.hasSubType(MagicSubType.Vehicle) ? cardDef.getPowerToughnessText() : "";
-    }
-
     private static String getLoyaltyText(IRenderableCard cardDef) {
         return cardDef.hasType(MagicType.Planeswalker) ? Integer.toString(cardDef.getStartingLoyalty()) : "";
     }
@@ -291,7 +287,7 @@ public class PTFrame {
     }
 
     static void drawHiddenPTPanel(BufferedImage cardImage, IRenderableCard cardDef) {
-        String ptText = getPTText(cardDef);
+        String ptText = cardDef.getPowerToughnessText();
 
         if (!ptText.isEmpty()) {
             BufferedImage ptImage = getHiddenPTPanelImage(cardDef);
