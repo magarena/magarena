@@ -139,9 +139,8 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         if (game.shouldSkip()) {
-            if (game.getStack().isEmpty() == false) {
-                game.clearSkipTurnTill();
-            } else if (game.isPhase(MagicPhaseType.DeclareAttackers) && game.getNrOfPermanents(MagicPermanentState.Attacking) > 0) {
+            // clear skip till EOT if someone declares attacks
+            if (game.isPhase(MagicPhaseType.DeclareAttackers) && game.getNrOfPermanents(MagicPermanentState.Attacking) > 0) {
                 game.clearSkipTurnTill();
             } else {
                 return PASS_CHOICE_RESULTS;

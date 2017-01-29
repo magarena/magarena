@@ -44,6 +44,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.choice.MagicPlayChoice;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPriorityEvent;
@@ -751,6 +752,10 @@ public class SwingGameController implements IUIGameController {
         final Object[] choiceResults;
         if (event.getPlayer().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
+            // clear skip till EOT if AI plays something
+            if (event.getChoice() == MagicPlayChoice.getInstance() && choiceResults[0] != MagicPlayChoiceResult.PASS && choiceResults[0] != MagicPlayChoiceResult.SKIP) {
+                game.clearSkipTurnTill();
+            }
         } else {
             try {
                 choiceResults = getPlayerNextEventChoiceResults(event);
