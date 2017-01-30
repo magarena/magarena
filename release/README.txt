@@ -71,6 +71,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.82 (February 26, 2017)
+============
+
 Release 1.81 (January 30, 2017)
 ============
 lodici
