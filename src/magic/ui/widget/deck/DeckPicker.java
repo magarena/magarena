@@ -173,7 +173,7 @@ public class DeckPicker extends JPanel {
                 return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()));
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
-                return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()).resolve("firemind"));
+                return getFilteredDecksListData(DeckUtils.getFiremindDecksFolder());
             default:
                 return new MagicDeck[0];
         }

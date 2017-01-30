@@ -62,8 +62,9 @@ public class DeckUtils {
     }
 
     public static Path getFiremindDecksFolder() {
-        final Path decksPath = Paths.get(getDeckFolder());
-        return decksPath.resolve("firemind");
+        Path decksPath = Paths.get(getDeckFolder()).resolve("firemind");
+        MagicFileSystem.verifyDirectoryPath(decksPath);
+        return decksPath;
     }
 
     public static void createDeckFolder() {

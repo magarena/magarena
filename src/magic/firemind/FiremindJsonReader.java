@@ -3,13 +3,13 @@ package magic.firemind;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.ArrayList;
-import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.json.DownloadableJsonFile;
 import magic.model.MagicDeck;
+import magic.utility.DeckUtils;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import org.apache.commons.io.FileUtils;
@@ -65,9 +65,8 @@ public final class FiremindJsonReader {
             return;
         }
 
-        // Ensure Firemind decks directory exists.
-        final Path firemindDecksPath = MagicFileSystem.getDataPath(DataPath.DECKS).resolve("firemind");
-        MagicFileSystem.verifyDirectoryPath(firemindDecksPath);
+        // Also ensures Firemind decks directory exists.
+        final Path firemindDecksPath = DeckUtils.getFiremindDecksFolder();
 
         downloadLatestJsonFile(jsonFile);
         if (jsonFile.length() == 0) {
