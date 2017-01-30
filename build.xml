@@ -44,6 +44,10 @@
       <get src="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar" 
          dest="${lib}/json-20140107.jar" 
          skipexisting="true" />
+      <echo message="downloading H2 database library to ${lib}"/>     
+      <get src="http://repo2.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193.jar" 
+         dest="${lib}/h2-1.4.193.jar" 
+         skipexisting="true" />      
   </target>
 
   <!-- init - Create temporary directory to build the program -->
@@ -84,7 +88,7 @@
                           lib/commons-io-2.4.jar
                           lib/trident-1.3.jar 
                           lib/json-20140107.jar
-                          lib/tinysound-1.1.1.jar" />
+                          lib/h2-1.4.193.jar" />
       </manifest>
     </jar>
   </target>
@@ -99,7 +103,7 @@
                           lib/commons-io-2.4.jar
                           lib/trident-1.3.jar 
                           lib/json-20140107.jar
-                          lib/tinysound-1.1.1.jar" />
+                          lib/h2-1.4.193.jar" />
       </manifest>
     </jar>
   </target>
