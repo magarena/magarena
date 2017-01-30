@@ -73,26 +73,70 @@ Thank you for your support and have fun!
 
 Release 1.81 (January 29, 2017)
 ============
-    up to commit bb561f16e75edef171cb9dff4794f070cfc0f498
-    rename Download card images to setup card images
-      add Display setting, replaces full/crops
-    track decks used in a duel
-    updated Banned/Restricted lists for 20.01.17
-    Can now update duel settings from DuelDecksScreen (closes #1028).
-    store undo point during MagicMayChoice, for #1031
-    Card image displayed is now dependent on whether user selected 'as printed' or 'rendered in-game'.
-    Enable display of cropped images from full-image files for ENG cards
-    add AER to Sets, Blocks and Formats
-    Click on selected player to open player selection screen.
-    support '<card name>.full.jpg' pattern as a custom image file.
-    Show stack count.
-    closes #699 :  Option to speed up progression through the stack.
-    fixes #1021 : Fix cards table background.
-    use getTokenizedCardNames to generate card names when returning cards from exile, fixes #1033
-    use the 'Double-Checked Locking using Volatile' idiom, for #696
-    do not show card due to Miracle unless it is revealed, for #325
-    fixes #1024 : Exception on selecting Player decks in Decks screen.
-    fix for #1023 : Exception on opening Deck Editor ("Unable to determine deck type...").
+lodici
+melvin
+ShawnieBoy
+
+- updated Banned/Restricted lists for 20.01.17
+- add AER to Sets, Blocks and Formats
+
+- added the following usability improvements
+  * add log messages for attacker and defender for life and poison changes
+  * improve logic of skip until end of turn when there are many items on the stack
+  * rename "Download card images" to "Setup card images" and add "Display" setting
+  * track decks used in a duel
+  * enable duel settings to be updated from decks screen
+  * allow players to undo an optional choice
+  * enable display of cropped images from full-image files for ENG cards
+  * support '<card name>.full.jpg' pattern as a custom image file
+  * show stack count and add button to speed up progression through the stack
+
+- added the following to the card script:
+  * condition: if a permanent you controlled left the battlefield this turn
+  * trigger: When SN enters the battlefield or dies, <effect>
+
+- fixed the following bugs:
+  * name of Mircale cards revealed to opponent when it is not cast (issue #325)
+  * crash when determining ways to pay mana cost (issue #696)
+  * cards table background is not translucent (issue #1021)
+  * crash on opening Deck Editor (issue #1023)
+  * crash on selecting Player decks in decks screen (issue #1024)
+  * cards returned from exile did not show blue links (issue #1033)
+  * deck panel doesn't update when adding cards (issue #1043)
+  * basic lands which can tap for any color showing irregular symbols (issue #1045)
+
+- added the following cards:
+Aegis Automaton, Aerial Modification, Aeronaut Admiral, Aether Chaser,
+Aethergeode Miner, Aether Herder, Aether Inspector, Aether Poisoner,
+Aethersphere Harvester, Aetherstream Leopard, Aether Swooper,
+Aethertide Whale, Airdrop Aeronauts, Alley Evasion, Audacious Infiltrator,
+Augmenting Automaton, Bastion Enforcer, Call for Unity,
+Caught in the Brights, Cogwork Assembler, Consulate Crackdown,
+Consulate Dreadnought, Consulate Turret, Countless Gears Renegade,
+Cruel Finality, Daring Demolition, Dawnfeather Eagle, Daxos the Returned,
+Deadeye Harpooner, Decommission, Defiant Salvager, Destructive Tampering,
+Diluvian Primordial, Disallow, Dispersal Technician, Druid of the Cowl,
+Efficient Construction, Embraal Gear-Smasher, Felidar Guardian,
+Filigree Crawler, Foundry Hornet, Fourth Bridge Prowler,
+Frontline Rebel, Ghirapur Osprey, Gifted Aetherborn,
+Gonti's Aether Heart, Heroic Intervention, Hidden Stockpile,
+Highspire Infusion, Hinterland Drake, Ice Over, Implement of Combustion,
+Implement of Examination, Implement of Ferocity, Implement of Improvement,
+Implement of Malice, Inspiring Roar, Ironclad Revolutionary,
+Irontread Crusher, Lathnu Sailback, Leave in the Dust,
+Lifecrafter's Bestiary, Memory Plunder, Midnight Entourage,
+Mobile Garrison, Natural Obsolescence, Outland Boar, Pacification Array,
+Paradox Engine, Peacewalker Colossus, Pendulum of Patterns, Planar Bridge,
+Precise Strike, Prizefighter Construct, Ravenous Intruder, Reckless Racer,
+Renegade Map, Renegade Rallier, Renegade's Getaway, Renegade Wheelsmith,
+Reservoir Walker, Resourceful Return, Ridgescale Tusker,
+Rogue Refiner, Salvage Scuttler, Scrapper Champion, Servo Schematic,
+Shielded Aether Thief, Shipwreck Moray, Siege Modification,
+Silkweaver Elite, Solemn Recruit, Spire of Industry, Spire Patrol,
+Take into Custody, Tezzeret's Touch, Thopter Arrest, Unbridled Growth,
+Universal Solvent, Untethered Express, Vengeful Rebel, Verdant Automaton,
+Walking Ballista, Watchful Automaton, Welder Automaton, Weldfast Engineer,
+Wrangle, Yahenni, Undying Partisan
 
 Release 1.80 (December 31, 2016)
 ============
