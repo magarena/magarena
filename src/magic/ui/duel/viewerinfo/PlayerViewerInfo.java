@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
 import magic.model.MagicCardList;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -17,6 +18,8 @@ public class PlayerViewerInfo {
     private final String name;
     public final int life;
     public final int poison;
+    public final int energy;
+    public final int experience;
     public final int preventDamage;
     public final int lands;
     public final MagicCardList hand;
@@ -36,7 +39,9 @@ public class PlayerViewerInfo {
         name = player.getName();
         playerLabel = player.getPlayerDefinition().getProfile().getPlayerLabel();
         life = player.getLife();
-        poison = player.getPoison();
+        poison = player.getCounters(MagicCounterType.Poison);
+        energy = player.getCounters(MagicCounterType.Energy);
+        experience = player.getCounters(MagicCounterType.Experience);
         preventDamage = player.getPreventDamage();
         lands = player.getNrOfPermanents(MagicType.Land);
         hand = new MagicCardList(player.getHand());
@@ -53,11 +58,11 @@ public class PlayerViewerInfo {
     }
 
     public ImageIcon getAvatar() {
-        return this.avatar;
+        return avatar;
     }
 
     public boolean isAi() {
-        return this.isAi;
+        return isAi;
     }
 
     public boolean isMonarch() {
@@ -65,15 +70,15 @@ public class PlayerViewerInfo {
     }
 
     public boolean isHuman() {
-        return !isAi();
+        return !isAi;
     }
 
     public boolean isPlayerTurn() {
-        return this.isPlayerTurn;
+        return isPlayerTurn;
     }
 
     public int getGamesWon() {
-        return this.gamesWon;
+        return gamesWon;
     }
 
     void setGamesWon(int gamesWon) {
@@ -81,7 +86,7 @@ public class PlayerViewerInfo {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
 }
