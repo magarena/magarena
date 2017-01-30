@@ -1,25 +1,24 @@
 package magic.model.trigger;
 
+import magic.data.CardDefinitions;
+import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicCard;
-import magic.model.MagicLocationType;
+import magic.model.action.BecomeMonarchAction;
 import magic.model.action.CastCardAction;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.ChangePoisonAction;
 import magic.model.action.ChangeStateAction;
-import magic.model.action.BecomeMonarchAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
-import magic.data.CardDefinitions;
 
 public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public DamageIsDealtTrigger(final int priority) {
