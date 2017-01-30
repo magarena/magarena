@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 game.doAction(new DrawAction(it, 3));
                 game.doAction(new ChangeLifeAction(it, -3));
-                game.doAction(new ChangePoisonAction(it, 3));
+                game.doAction(new ChangeCountersAction(it, MagicCounterType.Poison, 3));
             });
         }
     }
