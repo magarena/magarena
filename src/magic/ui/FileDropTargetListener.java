@@ -16,8 +16,8 @@ import java.io.InputStream;
 import java.net.URLConnection;
 import java.nio.file.Files;
 import java.util.List;
-import java.util.Optional;
 import java.util.Locale;
+import java.util.Optional;
 import java.util.stream.Stream;
 import javax.activation.MimetypesFileTypeMap;
 
@@ -93,6 +93,12 @@ public class FileDropTargetListener implements DropTargetListener {
                     listener.onImageFileDropped(aFile);
                     return;
                 }
+            }
+
+            // game snapshot file
+            if (aFile.getName().equals("snapshot.game")) {
+                listener.onGameSnapshotDropped(aFile);
+                return;
             }
         }
 

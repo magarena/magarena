@@ -8,4 +8,6 @@ public interface IDragDropListener {
 
     public void onZipFileDropped(File zipFile);
 
+    public void onGameSnapshotDropped(File aFile);
+
 }

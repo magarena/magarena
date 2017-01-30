@@ -15,6 +15,7 @@ import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.OSXAdapter;
 import magic.exception.DesktopNotSupportedException;
+import magic.game.state.GameLoader;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
@@ -287,6 +288,12 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     private void toggleUI() {
         final MScreen screen = ScreenController.getActiveScreen();
         screen.setVisible(!screen.isVisible());
+    }
+
+    @Override
+    public void onGameSnapshotDropped(File aFile) {
+        MagicSystem.setIsTestGame(true);
+        ScreenController.showDuelGameScreen(GameLoader.loadSavedGame(aFile));
     }
 
 }
