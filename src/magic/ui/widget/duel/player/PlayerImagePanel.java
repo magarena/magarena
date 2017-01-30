@@ -8,17 +8,15 @@ import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
-
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
-import magic.ui.screen.duel.game.CounterOverlay;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.helpers.ImageHelper;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.helpers.ImageHelper;
-import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 
@@ -27,8 +25,6 @@ public class PlayerImagePanel extends AnimationPanel {
 
     private static final Font HEALTH_FONT = new Font("Dialog", Font.BOLD, 20);
 
-    private final CounterOverlay poisonCounter;
-    private final CounterOverlay damageCounter;
     private final BufferedImage activeImage;
     private final Image inactiveImage;
     private PlayerViewerInfo playerInfo;
@@ -41,8 +37,6 @@ public class PlayerImagePanel extends AnimationPanel {
         this.playerInfo = player;
         activeImage = getPlayerAvatarImage();
         inactiveImage = ImageHelper.getGreyScaleImage(activeImage);
-        poisonCounter = new CounterOverlay(20, 20, Color.GREEN);
-        damageCounter = new CounterOverlay(20, 20, Color.CYAN);
     }
 
     private BufferedImage getPlayerAvatarImage() {
@@ -58,9 +52,6 @@ public class PlayerImagePanel extends AnimationPanel {
 
         g2d.drawImage(playerInfo.isPlayerTurn() ? activeImage : inactiveImage, 0, 0, this);
 
-        // counters
-        drawPoisonCountersOverlay(g2d);
-        drawShieldDamageOverlay(g2d);
         // health
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         drawHealthValueOverlay(g2d, 0, 0, activeImage);
@@ -134,31 +125,6 @@ public class PlayerImagePanel extends AnimationPanel {
         } else {
             repaint();
         }
-    }
-
-    private void drawPoisonCountersOverlay(final Graphics2D g2d) {
-        if (playerInfo.poison > 0) {
-            poisonCounter.setCounterValue(playerInfo.poison);
-            final BufferedImage counterImage = poisonCounter.getCounterImage();
-            g2d.drawImage(
-                    counterImage,
-                    getWidth() - counterImage.getWidth() - 4,
-                    getHeight() - counterImage.getHeight() - 4,
-                    null);
-        }
-    }
-
-    private void drawShieldDamageOverlay(final Graphics2D g2d) {
-        if (playerInfo.preventDamage > 0) {
-            damageCounter.setCounterValue(playerInfo.preventDamage);
-            final BufferedImage counterImage = damageCounter.getCounterImage();
-            g2d.drawImage(
-                    counterImage,
-                    getWidth() - counterImage.getWidth() - 4,
-                    4,
-                    null);
-        }
-
     }
 
     public int getDamageColorOpacity() {
