@@ -161,7 +161,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new ChangePoisonAction(event.getRefPlayer(), n));
+                game.doAction(new ChangeCountersAction(event.getRefPlayer(), MagicCounterType.Poison, n));
             }
         };
     }

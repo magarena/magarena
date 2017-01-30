@@ -2784,7 +2784,7 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new ChangePoisonAction(it, amount));
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Poison, amount));
                 }
             };
         }
