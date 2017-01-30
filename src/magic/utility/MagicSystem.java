@@ -120,14 +120,12 @@ final public class MagicSystem {
     }
 
     public static String getHeapUtilizationStats() {
-        final float mb = 1024 * 1024;
+        final int mb = 1024*1024;
         final Runtime runtime = Runtime.getRuntime();
-        return String.format("Used: %.1f • Free: %.1f • Total: %.1f • Max: %.1f",
-            (runtime.totalMemory() - runtime.freeMemory()) / mb,
-            runtime.freeMemory() / mb,
-            runtime.totalMemory() / mb,
-            runtime.maxMemory() / mb
-        );
+        return "Used Memory: " + (runtime.totalMemory() - runtime.freeMemory()) / mb + "M" +
+               "\nFree Memory: " + runtime.freeMemory() / mb  + "M" +
+               "\nTotal Memory: " + runtime.totalMemory() / mb  + "M" +
+               "\nMax Memory: " + runtime.maxMemory() / mb  + "M";
     }
 
     /**
