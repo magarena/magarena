@@ -62,7 +62,7 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
 
         countersPanel = new PlayerCountersPanel();
 
-        setLayout(new MigLayout("flowy, insets 0, gap 0"));
+        setLayout(new MigLayout("flowy, insets 0, gap 1"));
         add(panel1, "w 100%");
         add(countersPanel, "w 100%, h 20!");
 
