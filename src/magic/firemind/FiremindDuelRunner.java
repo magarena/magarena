@@ -49,9 +49,9 @@ public class FiremindDuelRunner {
             File theDir = new File("duels/" + duel.id);
             theDir.mkdir();
 
-            deck1 = saveDeckFile("duels/" + duel.id + "/" + "deck1",
+            deck1 = saveDeckFile("firemind-duel-" + duel.id + "deck1",
                     duel.deck1_text);
-            deck2 = saveDeckFile("duels/" + duel.id + "/" + "deck2",
+            deck2 = saveDeckFile("firemind-duel-" + duel.id + "deck2",
                     duel.deck2_text);
             loadCardsInDeck(duel.deck1_text);
             loadCardsInDeck(duel.deck2_text);
@@ -140,8 +140,8 @@ public class FiremindDuelRunner {
 
     private static String saveDeckFile(String name, String content) {
         try {
+            name = DeckUtils.getDeckFolder()+"/"+name;
             File deckFile = new File(name + ".dec");
-            deckFile.getParentFile().mkdirs();
             deckFile.createNewFile();
             FileWriter fw = new FileWriter(deckFile.getAbsoluteFile());
             BufferedWriter bw = new BufferedWriter(fw);
