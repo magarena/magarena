@@ -49,7 +49,7 @@ public enum CardProperty {
     SUBTYPE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setSubTypes(value.split(COMMA));
-            card.setSubtypeText(value);
+            card.setSubTypeText(value);
         }
     },
     COLOR() {
