@@ -15,7 +15,7 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ exile target creature card\$ from his or her graveyard. " +
+                "PN may\$ exile target creature card from his or her graveyard\$. " +
                 "If he or she does, create a token that's a copy " +
                 "of that card except it's a Spirit in addition to its other types. " +
                 "Exile it at the beginning of the next end step."
