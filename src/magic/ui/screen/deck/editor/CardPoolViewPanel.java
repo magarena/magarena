@@ -285,4 +285,9 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
         return actionButtons;
     }
 
+    @Override
+    public void notifyShowing() {
+        // not applicable.
+    }
+
 }

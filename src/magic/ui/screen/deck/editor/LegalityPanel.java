@@ -12,8 +12,8 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.MagicImages;
 import magic.translate.MText;
+import magic.ui.MagicImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -120,6 +120,11 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
     @Override
     public List<ActionBarButton> getActionButtons() {
         return new ArrayList<>();
+    }
+
+    @Override
+    public void notifyShowing() {
+        // TODO : lazy load legality data on tab click.
     }
 
     private static class LegalityLegendPanel extends TexturedPanel {

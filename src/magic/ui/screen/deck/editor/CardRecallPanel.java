@@ -245,4 +245,9 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         doFocusLostAction(e);
     }
 
+    @Override
+    public void notifyShowing() {
+        // not applicable.
+    }
+
 }

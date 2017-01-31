@@ -8,21 +8,20 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
-
-import magic.model.IRenderableCard;
 import magic.data.GeneralConfig;
 import magic.data.LRUCache;
 import magic.data.MagicIcon;
 import magic.data.TextImages;
 import magic.model.DuelPlayerConfig;
+import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicManaType;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.theme.PlayerAvatar;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
 public final class MagicImages {
@@ -229,7 +228,7 @@ public final class MagicImages {
     public static boolean isProxyImage(IRenderableCard face) {
         return MagicCardImages.isProxyImage(face);
     }
-   
+
     public static BufferedImage getCardImage(IRenderableCard face) {
         final Long key = face.getRenderKey();
         if (cache.containsKey(key)) {
@@ -248,6 +247,24 @@ public final class MagicImages {
 
     public static void clearCache() {
         cache.clear();
+    }
+
+    public static ImageIcon getIcon(final MagicManaType mtype, final boolean small) {
+        switch (mtype) {
+        case Colorless:
+            return small ? getSmallManaIcon(MagicIcon.MANA_1) : getBigManaIcon(MagicIcon.MANA_1);
+        case Black:
+            return small ? getSmallManaIcon(MagicIcon.MANA_BLACK) : getBigManaIcon(MagicIcon.MANA_BLACK);
+        case Blue:
+            return small ? getSmallManaIcon(MagicIcon.MANA_BLUE) : getBigManaIcon(MagicIcon.MANA_BLUE);
+        case Green:
+            return small ? getSmallManaIcon(MagicIcon.MANA_GREEN) : getBigManaIcon(MagicIcon.MANA_GREEN);
+        case Red:
+            return small ? getSmallManaIcon(MagicIcon.MANA_RED) : getBigManaIcon(MagicIcon.MANA_RED);
+        case White:
+            return small ? getSmallManaIcon(MagicIcon.MANA_WHITE) : getBigManaIcon(MagicIcon.MANA_WHITE);
+        }
+        throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
 }

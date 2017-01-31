@@ -223,4 +223,9 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         return actionButtons;
     }
 
+    @Override
+    public void notifyShowing() {
+        // not applicable
+    }
+
 }
