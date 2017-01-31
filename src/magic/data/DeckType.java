@@ -1,11 +1,11 @@
 package magic.data;
 
-import magic.utility.DeckUtils;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.EnumSet;
 import java.util.Set;
 import magic.translate.MText;
+import magic.utility.DeckUtils;
 
 /**
  * Ways to group decks.
@@ -21,10 +21,9 @@ public enum DeckType {
     Random(DeckTypeString._S1),
     Preconstructed(DeckTypeString._S2),
     Custom(DeckTypeString._S3),
-    Firemind(DeckTypeString._S4)
+    Firemind(DeckTypeString._S4),
+    Popular("Popular decks")
     ;
-
-    public static final Set<DeckType> PREDEFINED_DECKS = EnumSet.range(Preconstructed, Firemind);
 
     private final String deckTypeCaption;
 
@@ -43,6 +42,12 @@ public enum DeckType {
             case Firemind: return DeckUtils.getFiremindDecksFolder();
             default: return Paths.get(DeckUtils.getDeckFolder());
         }
+    }
+
+    public static final Set<DeckType> getPredefinedDecks() {
+        return GeneralConfig.isGameStatsOn()
+            ? EnumSet.range(Preconstructed, Popular)
+            : EnumSet.range(Preconstructed, Firemind);
     }
 
 }

@@ -220,5 +220,10 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
 
     @Override
     public void setDeck(String deckName, DeckType deckType) { }
-    
+
+    @Override
+    public void setDeck(MagicDeck deck) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

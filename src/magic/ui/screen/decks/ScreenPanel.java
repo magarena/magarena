@@ -11,6 +11,7 @@ import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.widget.duel.viewer.CardViewer;
+import magic.utility.DeckUtils;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -79,7 +80,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
 
     @Override
     public void setDeck(String deckName, DeckType deckType) {
-        System.out.println(deckName + ", " + deckType);
+        System.out.println("setDeck(" + deckName + ", " + deckType + ")");
     }
 
     @Override
@@ -102,6 +103,17 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
             splitter.setVisible(false);
         }
         return true;
+    }
+
+    @Override
+    public void setDeck(MagicDeck deck) {
+        selectedDeck = deck;
+        deckFilePath = DeckUtils.getDeckPath(deck);
+        sidebar.setDeck(deck);
+        deckTable.setCards(deck);
+        deckTable.setTitle(MText.get(_S14, deck.getName(), deck.size()));
+        deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
+        splitter.setVisible(deck.isValid() || deck.size() > 0);
     }
 
 }

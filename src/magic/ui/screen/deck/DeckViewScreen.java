@@ -35,8 +35,8 @@ public class DeckViewScreen extends HeaderFooterScreen
         setHeaderContent(deckStatusPanel);
         addToFooter(MenuButton.build(this::showSampleHand,
                         MagicIcon.HAND_ICON, MText.get(_S2), MText.get(_S3)),
-                MenuButton.build(this::showDeckImageView, 
-                        MagicIcon.TILED, MText.get(_S5), MText.get(_S6))                
+                MenuButton.build(this::showDeckImageView,
+                        MagicIcon.TILED, MText.get(_S5), MText.get(_S6))
         );
         setDeck(deck);
     }
@@ -65,7 +65,8 @@ public class DeckViewScreen extends HeaderFooterScreen
         ScreenController.showWarningMessage(message);
     }
 
-    private void setDeck(final MagicDeck deck) {
+    @Override
+    public void setDeck(MagicDeck deck) {
         screenContent.setDeck(deck);
         deckStatusPanel.setDeck(deck, false);
     }

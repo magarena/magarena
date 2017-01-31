@@ -27,6 +27,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.DeckType;
+import magic.data.stats.MagicStats;
 import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
@@ -143,7 +144,7 @@ public class DeckPicker extends JPanel {
 
     final public void refreshContent() {
         // deck types combo
-        final DeckType deckTypes[] = DeckType.PREDEFINED_DECKS.toArray(new DeckType[0]);
+        final DeckType deckTypes[] = DeckType.getPredefinedDecks().toArray(new DeckType[0]);
         deckTypeJCombo.setModel(new DefaultComboBoxModel<>(deckTypes));
         deckTypeJCombo.setSelectedIndex(0);
         refreshDecksList();
@@ -160,9 +161,13 @@ public class DeckPicker extends JPanel {
         } else {
             filterPanel.setDecksCount(0);
             for (IDeckConsumer listener : listeners) {
-                listener.setDeck(new MagicDeck(), null);
+                listener.setDeck(new MagicDeck());
             }
         }
+    }
+
+    private MagicDeck[] getPopularDecks() {
+       return MagicStats.getMostPlayedDecks().toArray(new MagicDeck[0]);
     }
 
     private MagicDeck[] getDecksListData() {
@@ -174,6 +179,8 @@ public class DeckPicker extends JPanel {
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
                 return getFilteredDecksListData(DeckUtils.getFiremindDecksFolder());
+            case Popular:
+                return getPopularDecks();
             default:
                 return new MagicDeck[0];
         }
@@ -249,6 +256,8 @@ public class DeckPicker extends JPanel {
                             for (IDeckConsumer listener : listeners) {
                                 if (selectedDeckType == DeckType.Random) {
                                     listener.setDeck(deck.getName(), selectedDeckType);
+                                } else if (selectedDeckType == DeckType.Popular) {
+                                    listener.setDeck(deck);
                                 } else {
                                     listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                                 }

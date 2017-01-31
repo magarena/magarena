@@ -459,4 +459,9 @@ public class DeckUtils {
         return distinctCards;
     }
 
+    public static Path getDeckPath(MagicDeck deck) {
+        Path deckPath = DeckType.getDeckFolder(deck.getDeckType());
+        return deckPath.resolve(deck.getName() + ".dec");
+    }
+
 }
