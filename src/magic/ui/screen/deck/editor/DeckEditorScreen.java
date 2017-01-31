@@ -43,10 +43,8 @@ public class DeckEditorScreen extends HeaderFooterScreen
     private static final String _S13 = "Deck is empty! Nothing to show.";
     private static final String _S14 = "Deck Editor";
     private static final String _S15 = "Deck is empty! Nothing to save.";
-    private static final String _S16 = "This directory is reserved for prebuilt decks.\nPlease choose a different directory.";
     private static final String _S17 = "Overwrite existing deck file?";
     private static final String _S18 = "Overwrite file";
-    private static final String _S19 = "Save deck";
     private static final String _S20 = "There was a problem saving the deck file!";
     private static final String _S21 = "Deck editor has unsaved changes which will be lost.\nDo you wish to continue?";
     private static final String _S22 = "Confirmation required...";
@@ -68,6 +66,13 @@ public class DeckEditorScreen extends HeaderFooterScreen
         super(MText.get(_S14));
         this.deckClient = null;
         controller.init(this, getMostRecentEditedDeck());
+        useLoadingScreen(this::initUI);
+    }
+
+    public DeckEditorScreen(MagicDeck aDeck) {
+        super(MText.get(_S14));
+        this.deckClient = null;
+        controller.init(this, aDeck);
         useLoadingScreen(this::initUI);
     }
 

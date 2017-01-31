@@ -10,6 +10,7 @@ import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
 import magic.data.MagicSetDefinitions;
 import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
@@ -41,21 +42,28 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         addMenuItem("Create missing cards file", "Creates CardsMissingInMagarena.txt for use with ScriptsBuilder.", this::doSaveMissingCardsFile);
         addMenuItem("Create card stats file", "Creates CardStatistics.txt to view current card completion.", this::doCreateSetStats);
         addSpace();
+        if (GeneralConfig.isGameStatsOn()) {
+            addMenuItem("Game stats", this::showStatsScreen);
+        }
         addMenuItem("Test screen", this::showTestScreen);
         addSpace();
         addMenuItem("Main menu", this::onCloseMenu);
         refreshMenuLayout();
     }
 
+    private void showStatsScreen() {
+        ScreenController.showStatsScreen();
+    }
+
     private void showTestScreen() {
         ScreenController.showTestScreen();
     }
-    
+
     private void doLoadTestClass() {
         MagicSystem.setIsTestGame(true);
         new GameStateRunner();
     }
-    
+
     private void onCloseMenu() {
         ScreenController.closeActiveScreen(false);
     }
@@ -64,7 +72,7 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         MagicSystem.setIsTestGame(true);
         loadSavedGame();
     }
-    
+
     private static File getSaveGameFile() {
         final JFileChooser fileChooser = new JFileChooser(MagicFileSystem.getDataPath().toFile());
         fileChooser.setDialogTitle("Load & resume saved game");

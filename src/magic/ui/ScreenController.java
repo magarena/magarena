@@ -48,7 +48,9 @@ import magic.ui.screen.menu.language.StartScreen;
 import magic.ui.screen.menu.main.MainMenuScreen;
 import magic.ui.screen.menu.migrate.ImportScreen;
 import magic.ui.screen.menu.settings.SettingsMenuScreen;
+import magic.ui.screen.player.PlayerScreen;
 import magic.ui.screen.readme.ReadmeScreen;
+import magic.ui.screen.stats.StatsScreen;
 import magic.ui.screen.test.TestScreen;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.utility.MagicSystem;
@@ -193,6 +195,10 @@ public final class ScreenController {
         showScreen(TestScreen::new);
     }
 
+    public static void showStatsScreen() {
+        showScreen(StatsScreen::new);
+    }
+
     public static void showDuelDecksScreen(final MagicDuel duel) {
         if (isDuelDecksScreenDisplayed()) {
             screens.pop();
@@ -223,6 +229,12 @@ public final class ScreenController {
 
     public static void showCardExplorerScreen() {
         showScreen(ExplorerScreen::new);
+    }
+
+    public static void showDeckEditor(MagicDeck aDeck) {
+        showScreen(GeneralConfig.getInstance().isSplitViewDeckEditor()
+                ? () -> new DeckEditorSplitScreen(aDeck)
+                : () -> new DeckEditorScreen(aDeck));
     }
 
     public static void showDeckEditor(IDeckEditorClient supplier) {
@@ -319,5 +331,9 @@ public final class ScreenController {
 
     public static void showDownloadImagesScreen() {
         showScreen(DownloadImagesScreen::new);
+    }
+
+    public static void showPlayerScreen(String guid) {
+        showScreen(() -> new PlayerScreen(guid));
     }
 }
