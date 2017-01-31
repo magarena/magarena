@@ -176,18 +176,18 @@ public class MagicMayChoice extends MagicChoice {
         }
 
         controller.disableActionButton(false);
+        final boolean chosen = controller.getMayChoice(source, getDescription());
+        if (chosen) {
+            // Yes is chosen.
+            choiceResults[0]=YES_CHOICE;
+            for (int index=0;index<choices.length;index++) {
+                final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,event);
+                choiceResults[index+1]=partialChoiceResults[0];
+            }
+        }
+
         game.snapshot();
 
-        if (!controller.getMayChoice(source, getDescription())) {
-            return choiceResults;
-        }
-
-        // Yes is chosen.
-        choiceResults[0]=YES_CHOICE;
-        for (int index=0;index<choices.length;index++) {
-            final Object[] partialChoiceResults=choices[index].getPlayerChoiceResults(controller,game,event);
-            choiceResults[index+1]=partialChoiceResults[0];
-        }
         return choiceResults;
     }
 
