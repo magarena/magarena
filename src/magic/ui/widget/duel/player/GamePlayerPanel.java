@@ -21,7 +21,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
 
-    private static final int PANEL_HEIGHT = 100;
+    private static final int PANEL_HEIGHT = 80;
 
     private PlayerViewerInfo playerInfo;
     private PlayerZoneButtonsPanel zoneButtonsPanel;
@@ -61,10 +61,10 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
         panel1.add(zoneButtonsPanel, "w 100%, h 100%");
 
         countersPanel = new PlayerCountersPanel();
+        panel1.add(countersPanel, "w 100%, h 100%, spany 2");
 
-        setLayout(new MigLayout("flowy, insets 0, gap 1"));
-        add(panel1, "w 100%");
-        add(countersPanel, "w 100%, h 20!");
+        setLayout(new MigLayout("insets 0, gap 0"));
+        add(panel1, "w 100%, h 100%");
 
         if (controller != null) {
             controller.registerChoiceViewer(this);
