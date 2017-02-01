@@ -388,4 +388,22 @@ public class H2Database {
         }
     }
 
+    public List<DeckStatsInfo> getTopWinningDecks(int limit) throws SQLException {
+        final List<DeckStatsInfo> decks = new ArrayList<>();
+        try (Connection conn = getReadOnlyConnection()) {
+            PreparedStatement ps1 = conn.prepareStatement(
+                "SELECT DECK, DECK_CRC, DECK_TYPE, P "
+                + "FROM WINNING_DECKS LIMIT ?",
+                ResultSet.TYPE_FORWARD_ONLY,
+                ResultSet.CONCUR_READ_ONLY
+            );
+            ps1.setInt(1, limit);
+            ResultSet rs = ps1.executeQuery();
+            while (rs.next()) {
+                decks.add(getNewDeckStatsInfo(rs));
+            }
+        }
+        return decks;
+    }
+
 }

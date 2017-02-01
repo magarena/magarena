@@ -155,6 +155,17 @@ public final class MagicStats {
         return new ArrayList<>();
     }
 
+    public static String getSchemaVersion() {
+        if (CONFIG.isGameStatsEnabled()) {
+            try {
+                return getDB().getSchemaVersion();
+            } catch (Exception ex) {
+                HandleErrorDisableStats(ex);
+            }
+        }
+        return "";
+    }
+
     private static List<DeckStatsInfo> getMostPlayedDecks(int limit) {
         if (CONFIG.isGameStatsEnabled()) {
             try {
@@ -179,15 +190,28 @@ public final class MagicStats {
         return decks;
     }
 
-    public static String getSchemaVersion() {
+    private static List<DeckStatsInfo> getTopWinningDecks(int limit) {
         if (CONFIG.isGameStatsEnabled()) {
             try {
-                return getDB().getSchemaVersion();
+                return getDB().getTopWinningDecks(limit);
             } catch (Exception ex) {
                 HandleErrorDisableStats(ex);
             }
         }
-        return "";
+        return new ArrayList<>();
+    }
+
+    public static List<MagicDeck> getTopWinningDecks() {
+        List<MagicDeck> decks = new ArrayList<>();
+        for (DeckStatsInfo info : getTopWinningDecks(20)) {
+            MagicDeck deck = DeckUtils.loadDeckFromFile(
+                info.deckName, DeckType.valueOf(info.deckType)
+            );
+            if (DeckUtils.getDeckFileChecksum(deck) == info.deckCheckSum) {
+                decks.add(deck);
+            }
+        }
+        return decks;
     }
 
 }

@@ -170,6 +170,10 @@ public class DeckPicker extends JPanel {
        return MagicStats.getMostPlayedDecks().toArray(new MagicDeck[0]);
     }
 
+    private MagicDeck[] getWinningDecks() {
+       return MagicStats.getTopWinningDecks().toArray(new MagicDeck[0]);
+    }
+
     private MagicDeck[] getDecksListData() {
         switch (selectedDeckType) {
             case Preconstructed:
@@ -179,8 +183,10 @@ public class DeckPicker extends JPanel {
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
                 return getFilteredDecksListData(DeckUtils.getFiremindDecksFolder());
-            case Popular:
+            case PopularDecks:
                 return getPopularDecks();
+            case WinningDecks:
+                return getWinningDecks();
             default:
                 return new MagicDeck[0];
         }
@@ -256,7 +262,9 @@ public class DeckPicker extends JPanel {
                             for (IDeckConsumer listener : listeners) {
                                 if (selectedDeckType == DeckType.Random) {
                                     listener.setDeck(deck.getName(), selectedDeckType);
-                                } else if (selectedDeckType == DeckType.Popular) {
+                                } else if (selectedDeckType == DeckType.PopularDecks) {
+                                    listener.setDeck(deck);
+                                } else if (selectedDeckType == DeckType.WinningDecks) {
                                     listener.setDeck(deck);
                                 } else {
                                     listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));

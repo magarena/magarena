@@ -22,7 +22,8 @@ public enum DeckType {
     Preconstructed(DeckTypeString._S2),
     Custom(DeckTypeString._S3),
     Firemind(DeckTypeString._S4),
-    Popular("Popular decks")
+    PopularDecks("Popular decks"),
+    WinningDecks("Winning decks")
     ;
 
     private final String deckTypeCaption;
@@ -46,7 +47,7 @@ public enum DeckType {
 
     public static final Set<DeckType> getPredefinedDecks() {
         return GeneralConfig.isGameStatsOn()
-            ? EnumSet.range(Preconstructed, Popular)
+            ? EnumSet.range(Preconstructed, WinningDecks)
             : EnumSet.range(Preconstructed, Firemind);
     }
 
