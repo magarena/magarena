@@ -184,7 +184,7 @@ public class GeneralConfig {
     private boolean isStatsVisible = true;
 
     private static final String GAME_STATS = "gameStats";
-    private boolean logGameStats = false;
+    private boolean logGameStats = true;
 
     private GeneralConfig() { }
 
