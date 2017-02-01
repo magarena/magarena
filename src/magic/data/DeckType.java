@@ -15,15 +15,14 @@ import magic.utility.DeckUtils;
  */
 public enum DeckType {
 
-    // TODO: Favourite("Favourite"),           // most used decks
     // TODO: Bookmarked("Bookmarked"),         // decks tagged by player
-    // TODO: Recent("Recently Played"),        // last 20 most recently played decks
     Random(DeckTypeString._S1),
     Preconstructed(DeckTypeString._S2),
     Custom(DeckTypeString._S3),
     Firemind(DeckTypeString._S4),
     PopularDecks("Popular decks"),
-    WinningDecks("Winning decks")
+    WinningDecks("Winning decks"),
+    RecentDecks("Recently played decks")
     ;
 
     private final String deckTypeCaption;
@@ -47,7 +46,7 @@ public enum DeckType {
 
     public static final Set<DeckType> getPredefinedDecks() {
         return GeneralConfig.isGameStatsOn()
-            ? EnumSet.range(Preconstructed, WinningDecks)
+            ? EnumSet.range(Preconstructed, RecentDecks)
             : EnumSet.range(Preconstructed, Firemind);
     }
 

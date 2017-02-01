@@ -214,4 +214,29 @@ public final class MagicStats {
         return decks;
     }
 
+    private static List<DeckStatsInfo> getRecentlyPlayedDecks(int limit) {
+        if (CONFIG.isGameStatsEnabled()) {
+            try {
+                return getDB().getRecentlyPlayedDecks(limit);
+            } catch (Exception ex) {
+                HandleErrorDisableStats(ex);
+            }
+        }
+        return new ArrayList<>();
+    }
+
+    public static List<MagicDeck> getRecentlyPlayedDecks() {
+        List<MagicDeck> decks = new ArrayList<>();
+        for (DeckStatsInfo info : getRecentlyPlayedDecks(20)) {
+            MagicDeck deck = DeckUtils.loadDeckFromFile(
+                info.deckName, DeckType.valueOf(info.deckType)
+            );
+            if (DeckUtils.getDeckFileChecksum(deck) == info.deckCheckSum) {
+                decks.add(deck);
+            }
+        }
+        return decks;
+    }
+
+
 }
