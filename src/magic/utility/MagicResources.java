@@ -2,6 +2,7 @@ package magic.utility;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URL;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
@@ -61,4 +62,9 @@ public final class MagicResources {
         return instance.getClass().getResource("/soundfx/" + filename);
     }
 
+    public static InputStreamReader getH2ScriptFile(String filename) {
+        return new InputStreamReader(
+            getJarResourceStream("/h2/stats/" + filename)
+        );
+    }
 }

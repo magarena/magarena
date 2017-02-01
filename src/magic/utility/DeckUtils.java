@@ -294,6 +294,11 @@ public class DeckUtils {
         return deck;
     }
 
+    public static MagicDeck loadDeckFromFile(String name, DeckType deckType) {
+        Path deckPath = DeckType.getDeckFolder(deckType);
+        return loadDeckFromFile(deckPath.resolve(name + ".dec"));
+    }
+
     public static void loadAndSetPlayerDeck(final String filename, final DuelPlayerConfig player) {
 
         final MagicDeck deck = loadDeckFromFile(Paths.get(filename));
@@ -329,7 +334,7 @@ public class DeckUtils {
     /**
      * Find up to 3 of the most common colors in the deck.
      */
-    private static String getDeckColor(final MagicDeck deck) {
+    public static String getDeckColor(final MagicDeck deck) {
         final int[] colorCount = getDeckColorCount(deck);
         final StringBuilder colorText = new StringBuilder();
         while (colorText.length() < 3) {

@@ -6,14 +6,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
 import magic.data.DeckGenerators;
-import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
+import magic.data.stats.MagicStats;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
+import magic.utility.DeckUtils;
 import magic.utility.FileIO;
-import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
-import magic.utility.MagicSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.SortedProperties;
 
 public class MagicDuel {
@@ -97,10 +97,7 @@ public class MagicDuel {
             startPlayer = playerIndex;
         }
 
-        if (game.isReal() && !MagicSystem.isTestGame() && !MagicSystem.isAiVersusAi()) {
-            duelConfig.getPlayerProfile(0).getStats().update(won, game.getPlayer(0), game);
-            duelConfig.getPlayerProfile(1).getStats().update(!won, game.getPlayer(1), game);
-        }
+        MagicStats.logStats(this, game);
     }
 
     public MagicGame nextGame() {

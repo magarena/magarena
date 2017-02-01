@@ -183,6 +183,9 @@ public class GeneralConfig {
 
     private boolean isStatsVisible = true;
 
+    private static final String GAME_STATS = "gameStats";
+    private boolean logGameStats = false;
+
     private GeneralConfig() { }
 
     public Proxy getProxy() {
@@ -581,6 +584,7 @@ public class GeneralConfig {
         isCustomScrollBar = Boolean.parseBoolean(properties.getProperty(CUSTOM_SCROLLBAR, "" + isCustomScrollBar));
         keywordsScreen = properties.getProperty(KEYWORDS_SCREEN, "");
         cardDisplayMode = CardImageDisplayMode.valueOf(properties.getProperty(CARD_DISPLAY_MODE, cardDisplayMode.name()));
+        logGameStats = Boolean.parseBoolean(properties.getProperty(GAME_STATS, "" + logGameStats));
     }
 
     public void load() {
@@ -635,6 +639,7 @@ public class GeneralConfig {
         properties.setProperty(CUSTOM_SCROLLBAR, String.valueOf(isCustomScrollBar));
         properties.setProperty(KEYWORDS_SCREEN, keywordsScreen);
         properties.setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
+        properties.setProperty(GAME_STATS, String.valueOf(logGameStats));
     }
 
     public void save() {
@@ -746,6 +751,18 @@ public class GeneralConfig {
 
     public void setCardImageDisplayMode(CardImageDisplayMode newMode) {
         cardDisplayMode = newMode;
+    }
+
+    public void setGameStatsEnabled(boolean b) {
+        logGameStats = b;
+    }
+
+    public boolean isGameStatsEnabled() {
+        return logGameStats;
+    }
+
+    public static boolean isGameStatsOn() {
+        return getInstance().isGameStatsEnabled();
     }
 
 }

@@ -33,6 +33,7 @@ class GeneralPanel extends JPanel {
     private final PreferredSizePanel preferredSizePanel;
     private final DirectoryChooser imagesFolderChooser;
     private final MCheckBox imagesOnDemandCheckbox;
+    private final MCheckBox gameStatsCheckbox;
 
     GeneralPanel(MouseListener aListener) {
 
@@ -63,6 +64,11 @@ class GeneralPanel extends JPanel {
         previewCardOnSelectCheckBox.setFocusable(false);
         previewCardOnSelectCheckBox.addMouseListener(aListener);
 
+        gameStatsCheckbox = new MCheckBox(MText.get("Game statistics."), config.isGameStatsEnabled());
+        gameStatsCheckbox.setToolTipText(MText.get("Keeps detailed statistics of each game played which is used to generate P/W/L totals for each deck, adds a games history tab to the deck editor and new dynamically generated deck groups such as \"most played\", \"top winning\", etc. to the deck selection screen."));
+        gameStatsCheckbox.setFocusable(false);
+        gameStatsCheckbox.addMouseListener(aListener);
+
         setLayout(new MigLayout("flowy, gapy 4, insets 16"));
 
         // lang
@@ -77,6 +83,8 @@ class GeneralPanel extends JPanel {
         add(getCaptionLabel(MText.get(_S64)), "gaptop 10");
         add(splitViewDeckEditorCheckBox.component());
         add(previewCardOnSelectCheckBox.component());
+        //
+        add(gameStatsCheckbox.component(), "w 100%, gaptop 20");
     }
 
     void saveSettings() {
@@ -86,6 +94,7 @@ class GeneralPanel extends JPanel {
         config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
         config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
         config.setImagesOnDemand(imagesOnDemandCheckbox.isSelected());
+        config.setGameStatsEnabled(gameStatsCheckbox.isSelected());
     }
 
     private JLabel getCaptionLabel(String text) {

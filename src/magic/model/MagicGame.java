@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -114,6 +115,8 @@ public class MagicGame {
     private boolean hintTiming = true;
     private boolean hintPriority = true;
     private boolean hintTarget = true;
+
+    private final long startTimeMilli = Instant.now().toEpochMilli();
 
     public static MagicGame getInstance() {
         return INSTANCE;
@@ -915,6 +918,10 @@ public class MagicGame {
         return losingPlayer;
     }
 
+    public MagicPlayer getWinner() {
+        return players[0] == losingPlayer ? players[1] : players[0];
+    }
+
     public MagicSource getActiveSource() {
         return activeSource;
     }
@@ -1406,5 +1413,9 @@ public class MagicGame {
         if (isReal()) {
             aSound.play();
         }
+    }
+
+    public long getStartTimeMilli() {
+        return startTimeMilli;
     }
 }
