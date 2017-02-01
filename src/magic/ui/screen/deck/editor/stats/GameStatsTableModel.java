@@ -1,12 +1,11 @@
 package magic.ui.screen.deck.editor.stats;
 
-import magic.data.stats.GameStatsInfo;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.swing.table.AbstractTableModel;
+import magic.data.stats.GameStatsInfo;
 import magic.data.stats.MagicStats;
 import magic.model.MagicDeck;
-import magic.ui.screen.stats.*;
 
 /**
  * Game statistics for a deck.

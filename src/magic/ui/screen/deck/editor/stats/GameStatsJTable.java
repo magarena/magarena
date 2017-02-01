@@ -17,7 +17,7 @@ import magic.data.DeckType;
 import magic.ui.ScreenController;
 import magic.ui.helpers.ColorHelper;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.screen.stats.*;
+import magic.ui.screen.stats.TableColumnAdjuster;
 import magic.ui.widget.cards.table.CardsTableStyle;
 import magic.utility.DeckUtils;
 
