@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
+import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
@@ -21,7 +22,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
 
-    private static final int PANEL_HEIGHT = 80;
+    private static final int PANEL_HEIGHT = 82;
 
     private PlayerViewerInfo playerInfo;
     private PlayerZoneButtonsPanel zoneButtonsPanel;
@@ -33,7 +34,7 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
 
         this.playerInfo = playerInfo;
 
-        setOpaque(false);
+        setBorder(FontsAndBorders.BLACK_BORDER);
         setPreferredSize(new Dimension(0, PANEL_HEIGHT));
         setMinimumSize(getPreferredSize());
 

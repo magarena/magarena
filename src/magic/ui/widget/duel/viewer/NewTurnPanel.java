@@ -1,13 +1,11 @@
 package magic.ui.widget.duel.viewer;
 
-import java.awt.Color;
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.translate.MText;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
-import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -28,7 +26,6 @@ class NewTurnPanel extends JPanel {
     private void setLookAndFeel() {
         setOpaque(true);
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
-        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         turnLabel.setFont(turnLabel.getFont().deriveFont(26f));
         turnLabel.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
     }

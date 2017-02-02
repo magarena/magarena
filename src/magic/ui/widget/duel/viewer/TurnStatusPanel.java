@@ -1,10 +1,8 @@
 package magic.ui.widget.duel.viewer;
 
-import java.awt.Color;
-import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
@@ -25,7 +23,6 @@ public class TurnStatusPanel extends JPanel {
 
     private void setLookAndFeel() {
         setOpaque(true);
-        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         //
         phaseStepViewer.setOpaque(false);
