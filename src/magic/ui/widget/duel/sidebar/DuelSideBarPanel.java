@@ -34,7 +34,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     private final GamePlayerPanel[] playerPanels = new GamePlayerPanel[TOTAL_PLAYERS];
     private final LogStackViewer logStackViewer;
-    private final LogViewer logBookViewer;
     private final GameStatusPanel gameStatusPanel;
     private final SwingGameController controller;
     private final List<LayoutSlot> layoutSlots = new ArrayList<>();
@@ -43,8 +42,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
         this.controller = controller;
 
-        logBookViewer = new LogViewer(controller);
-        logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer, controller);
+        logStackViewer = new LogStackViewer(imageStackViewer, controller);
         controller.setLogStackViewer(logStackViewer);
 
         gameStatusPanel= new GameStatusPanel(controller);
@@ -94,7 +92,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         playerPanels[0].updateDisplay(gameInfo.getPlayerInfo(false));
         playerPanels[1].updateDisplay(gameInfo.getPlayerInfo(true));
         gameStatusPanel.update();
-        logBookViewer.update();
+        logStackViewer.update();
     }
 
     @Override

@@ -27,6 +27,7 @@ import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.helpers.MouseHelper;
+import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;
@@ -63,11 +64,12 @@ public class LogStackViewer extends JPanel {
     private int stackCount = 0;
     private final IUIGameController controller;
 
-    LogStackViewer(LogViewer aLogBookViewer, StackViewer aStackViewer, IUIGameController controller) {
+    LogStackViewer(StackViewer aStackViewer, SwingGameController controller) {
 
-        this.logViewer = aLogBookViewer;
         this.stackViewer = aStackViewer;
         this.controller = controller;
+
+        logViewer = new LogViewer(controller);
 
         logTitleBar = new ActionButtonTitleBar(MText.get(_S4), getLogActionButtons());
         stackTitleBar = new ActionButtonTitleBar(MText.get(_S5), getStackActionButtons());
@@ -247,5 +249,9 @@ public class LogStackViewer extends JPanel {
             controller.setStackFastForward(false);
         }
         stackCount = newCount;
+    }
+
+    void update() {
+        logViewer.update();
     }
 }
