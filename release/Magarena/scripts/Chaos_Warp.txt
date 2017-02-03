@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{R}
-effect=The owner of target permanent shuffles it into his or her library, then reveals the top card of his or her library. If it's a permanent card, he or she puts it onto the battlefield.
 timing=removal
 oracle=The owner of target permanent shuffles it into his or her library, then reveals the top card of his or her library. If it's a permanent card, he or she puts it onto the battlefield.
-status=needs groovy
+requires_groovy_code
