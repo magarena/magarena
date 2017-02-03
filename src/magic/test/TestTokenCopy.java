@@ -22,6 +22,8 @@ class TestTokenCopy extends TestGameBuilder {
 
         addToLibrary(P, "Forest", 20);
         addToGraveyard(P,"Captain of the Watch");
+        addToHand(P, "Cackling Counterpart");
+        addToHand(P, "Copy Artifact");
         createPermanent(P, "Forest", 10);
         createPermanent(P, "Chromatic Lantern");
         createPermanent(P, "Cogwork Assembler");
