@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.TableColumnModel;
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
@@ -13,7 +14,7 @@ import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class CardsTablePanel extends TexturedPanel {
+abstract class CardsTablePanel extends TexturedPanel {
 
     protected final MScrollPane scrollpane = new MScrollPane();
     private final TitleBar titleBar;
@@ -23,11 +24,20 @@ class CardsTablePanel extends TexturedPanel {
     protected final CardTableModel tableModel;
     protected List<MagicCardDefinition> lastSelectedCards = new ArrayList<>();
 
+    protected abstract MouseAdapter getRowMouseOverListener();
+
     public CardsTablePanel(List<MagicCardDefinition> defs, String title) {
+
         tableModel = new CardTableModel(defs);
         table = new CardsJTable(tableModel);
+
         titleBar = new TitleBar(title);
         setTitle(title);
+
+        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
+            table.addMouseMotionListener(getRowMouseOverListener());
+        }
+        
         setLayout(migLayout);
         refreshLayout();
     }

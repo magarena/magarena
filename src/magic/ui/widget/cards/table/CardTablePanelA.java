@@ -11,7 +11,6 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.JTableHeader;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
 
@@ -30,10 +29,6 @@ public class CardTablePanelA extends CardsTablePanel {
 
     public CardTablePanelA(final List<MagicCardDefinition> defs, final String title) {
         super(defs, title);
-
-        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
-            table.addMouseMotionListener(new RowMouseOverListener());
-        }
 
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
@@ -55,6 +50,20 @@ public class CardTablePanelA extends CardsTablePanel {
 
     public CardTablePanelA(final List<MagicCardDefinition> defs) {
         this(defs, "");
+    }
+
+    @Override
+    protected MouseAdapter getRowMouseOverListener() {
+        return new MouseAdapter() {
+            @Override
+            public void mouseMoved(final MouseEvent e) {
+                final Point p = e.getPoint();
+                final int row = table.rowAtPoint(p);
+                if (row != lastSelectedRow) {
+                    lastSelectedRow = row;
+                }
+            }
+        };
     }
 
     private void setEmptyBackgroundColor() {
@@ -139,17 +148,6 @@ public class CardTablePanelA extends CardsTablePanel {
 
     public JTable getTable() {
         return table;
-    }
-
-    private class RowMouseOverListener extends MouseAdapter {
-        @Override
-        public void mouseMoved(final MouseEvent e) {
-            final Point p = e.getPoint();
-            final int row = table.rowAtPoint(p);
-            if (row != lastSelectedRow) {
-                lastSelectedRow = row;
-            }
-        }
     }
 
     private boolean hasDoubleClickListeners() {

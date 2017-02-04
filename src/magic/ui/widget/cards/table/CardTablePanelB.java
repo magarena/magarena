@@ -13,7 +13,6 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.JTableHeader;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.FontsAndBorders;
@@ -30,10 +29,6 @@ public class CardTablePanelB extends CardsTablePanel
 
         this.isDeck = isDeck;
 
-        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
-            table.addMouseMotionListener(new RowMouseOverListener());
-        }
-
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(this);
 
@@ -47,6 +42,19 @@ public class CardTablePanelB extends CardsTablePanel
         scrollpane.setOpaque(false);
 
         setEmptyBackgroundColor();
+    }
+
+    @Override
+    protected MouseAdapter getRowMouseOverListener() {
+        return new MouseAdapter() {
+            @Override
+            public void mouseMoved(final MouseEvent e) {
+                final Point p = e.getPoint();
+                final int row = table.rowAtPoint(p);
+                final MagicCardDefinition card = tableModel.getCardDef(row);
+                notifyCardSelectionListeners(card);
+            }
+        };
     }
 
     public CardTablePanelB(List<MagicCardDefinition> defs, boolean isDeck) {
@@ -127,16 +135,6 @@ public class CardTablePanelB extends CardsTablePanel
     public void setStyle() {
         table.setStyle();
         setEmptyBackgroundColor();
-    }
-
-    private class RowMouseOverListener extends MouseAdapter {
-        @Override
-        public void mouseMoved(final MouseEvent e) {
-            final Point p = e.getPoint();
-            final int row = table.rowAtPoint(p);
-            final MagicCardDefinition card = tableModel.getCardDef(row);
-            notifyCardSelectionListeners(card);
-        }
     }
 
     public void addCardSelectionListener(final ICardSelectionListener listener) {
