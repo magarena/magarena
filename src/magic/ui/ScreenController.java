@@ -22,7 +22,7 @@ import magic.ui.screen.MScreen;
 import magic.ui.screen.about.AboutScreen;
 import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.ui.screen.card.script.CardScriptScreen;
-import magic.ui.screen.deck.DeckViewScreen;
+import magic.ui.screen.deck.DeckScreen;
 import magic.ui.screen.deck.editor.DeckEditorScreen;
 import magic.ui.screen.deck.editor.DeckEditorSplitScreen;
 import magic.ui.screen.deck.editor.IDeckEditorClient;
@@ -250,7 +250,7 @@ public final class ScreenController {
     }
 
     public static void showDeckViewScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
-        showScreen(() -> new DeckViewScreen(deck, selectedCard));
+        showScreen(() -> new DeckScreen(deck, selectedCard));
     }
 
     public static void showSampleHandScreen(final MagicDeck deck) {

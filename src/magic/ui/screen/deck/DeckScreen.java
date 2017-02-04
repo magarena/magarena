@@ -13,7 +13,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
-public class DeckViewScreen extends HeaderFooterScreen
+public class DeckScreen extends HeaderFooterScreen
     implements IDeckConsumer {
 
     // translatable strings
@@ -25,12 +25,12 @@ public class DeckViewScreen extends HeaderFooterScreen
     private static final String _S7 = "Deck is empty! Nothing to show.";
     private static final String _S8 = "Deck";
 
-    private DeckViewPanel screenContent;
+    private DeckScreenPanel screenContent;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
-    public DeckViewScreen(final MagicDeck deck, final MagicCardDefinition selectedCard) {
+    public DeckScreen(final MagicDeck deck, final MagicCardDefinition selectedCard) {
         super(MText.get(_S8));
-        screenContent = new DeckViewPanel(deck, selectedCard);
+        screenContent = new DeckScreenPanel(deck, selectedCard);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
         addToFooter(MenuButton.build(this::showSampleHand,
@@ -41,7 +41,7 @@ public class DeckViewScreen extends HeaderFooterScreen
         setDeck(deck);
     }
 
-    public DeckViewScreen(final MagicDeck deck) {
+    public DeckScreen(final MagicDeck deck) {
         this(deck, null);
     }
 

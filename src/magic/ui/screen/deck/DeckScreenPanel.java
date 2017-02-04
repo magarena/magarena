@@ -10,14 +10,14 @@ import magic.ui.widget.cards.table.CardTablePanelA;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckViewPanel extends JPanel {
+class DeckScreenPanel extends JPanel {
 
     private MagicDeck deck;
     private final MigLayout migLayout = new MigLayout();
     private final DeckSideBar sideBarPanel;
     private final CardTablePanelA deckTable;
 
-    DeckViewPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
+    DeckScreenPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
 
         this.deck = aDeck;
 
@@ -40,7 +40,7 @@ class DeckViewPanel extends JPanel {
 
     }
 
-    DeckViewPanel(final MagicDeck aDeck) {
+    DeckScreenPanel(final MagicDeck aDeck) {
         this(aDeck, null);
     }
 
