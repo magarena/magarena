@@ -11,7 +11,6 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import magic.model.MagicCardDefinition;
-import magic.ui.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class CardTablePanelA extends CardsTablePanel {
@@ -32,15 +31,8 @@ public class CardTablePanelA extends CardsTablePanel {
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
 
-        // add table to scroll pane
-        scrollpane.setViewportView(table);
-        scrollpane.setBorder(FontsAndBorders.NO_BORDER);
-        scrollpane.setOpaque(false);
-
         // Raise events on mouse clicks.
         table.addMouseListener(getTableMouseAdapter());
-
-        setEmptyBackgroundColor();
     }
 
     public CardTablePanelA(final List<MagicCardDefinition> defs) {
@@ -59,10 +51,6 @@ public class CardTablePanelA extends CardsTablePanel {
                 }
             }
         };
-    }
-
-    private void setEmptyBackgroundColor() {
-        setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
 
     private ListSelectionListener getTableListSelectionListener() {

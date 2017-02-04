@@ -9,6 +9,7 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import magic.ui.FontsAndBorders;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -42,13 +43,24 @@ abstract class CardsTablePanel extends TexturedPanel {
         // listener to sort on column header click
         final JTableHeader header = table.getTableHeader();
         header.addMouseListener(new ColumnListener());
-        
+
+        // add table to scroll pane
+        scrollpane.setViewportView(table);
+        scrollpane.setBorder(FontsAndBorders.NO_BORDER);
+        scrollpane.setOpaque(false);
+
         setLayout(migLayout);
         refreshLayout();
+
+        setEmptyBackgroundColor();
     }
 
     public CardsTablePanel(List<MagicCardDefinition> defs) {
         this(defs, "");
+    }
+
+    protected void setEmptyBackgroundColor() {
+        setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
 
     private void refreshLayout() {

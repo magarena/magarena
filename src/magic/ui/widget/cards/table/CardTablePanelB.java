@@ -14,7 +14,6 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
-import magic.ui.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class CardTablePanelB extends CardsTablePanel
@@ -30,13 +29,6 @@ public class CardTablePanelB extends CardsTablePanel
 
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(this);
-
-        // add table to scroll pane
-        scrollpane.setViewportView(table);
-        scrollpane.setBorder(FontsAndBorders.NO_BORDER);
-        scrollpane.setOpaque(false);
-
-        setEmptyBackgroundColor();
     }
 
     @Override
@@ -121,10 +113,6 @@ public class CardTablePanelB extends CardsTablePanel
             : viewRect.y;
 
         viewport.setViewPosition(new Point(viewRect.x, y));
-    }
-
-    private void setEmptyBackgroundColor() {
-        setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
 
     public void setStyle() {
