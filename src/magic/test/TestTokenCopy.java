@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 /**
  * Displays ways of generating a token copy of a permanent -
  * Issue #1040 regarding Seance, and #1044 regarding their display with cardbuilder
+ * Issue #1063 Copies of Copy Artifact lose the Enchantment type
  */
 
 class TestTokenCopy extends TestGameBuilder {
@@ -24,6 +25,8 @@ class TestTokenCopy extends TestGameBuilder {
         addToGraveyard(P,"Captain of the Watch");
         addToHand(P, "Cackling Counterpart");
         addToHand(P, "Copy Artifact");
+        addToHand(P, "Copy Enchantment");
+        addToHand(P, "Tranquility");
         createPermanent(P, "Forest", 10);
         createPermanent(P, "Chromatic Lantern");
         createPermanent(P, "Cogwork Assembler");
