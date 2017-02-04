@@ -2023,6 +2023,20 @@ public class MagicTargetFilterFactory {
         };
     }
 
+    public static final MagicCardFilterImpl permanentCardEqualCMC(final MagicType type, final MagicTargetType from, final int cmc) {
+        return new MagicCardFilterImpl() {
+            public boolean accept(MagicSource source, MagicPlayer player, MagicCard target) {
+                return target.isPermanentCard() &&
+                    target.hasType(type) &&
+                    target.getConvertedCost() == cmc;
+            }
+
+            public boolean acceptType(MagicTargetType targetType) {
+                return targetType == from;
+            }
+        };
+    }
+
     public static final MagicCardFilterImpl BASIC_LAND_CARD = card(MagicType.Basic).and(MagicType.Land);
 
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = card(MagicType.Basic).and(MagicType.Land).from(MagicTargetType.Library);
@@ -2359,6 +2373,7 @@ public class MagicTargetFilterFactory {
         add("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
         add("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
         add("artifact card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, 6));
+        add("artifact card with converted mana cost 3 from your library", permanentCardEqualCMC(MagicType.Artifact, MagicTargetType.Library, 3));
 
         // <color|type|subtype> permanent card from your library
         add("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
