@@ -4,7 +4,9 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
 import magic.model.MagicCardDefinition;
@@ -20,10 +22,18 @@ public class CardTableModel extends AbstractTableModel {
     protected boolean showCardCount = false;
     protected MagicCondensedDeck cardDefinitions;
     protected Comparator<MagicCondensedCardDefinition> comp;
+    private final Map<CardTableColumn, Boolean> sortDesc = new HashMap<>();
 
     public CardTableModel(final List<MagicCardDefinition> cardDefs) {
-        this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_ASC;
+        resetColumnSortOrder();
         setCards(cardDefs);
+    }
+
+    private void resetColumnSortOrder() {
+        this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_ASC;
+        for (CardTableColumn col : CardTableColumn.values()) {
+            sortDesc.put(col, false);
+        }
     }
 
     public void showCardCount(final boolean b) {
@@ -55,49 +65,53 @@ public class CardTableModel extends AbstractTableModel {
         }
     }
 
+    private boolean isSortDesc(CardTableColumn col) {
+        return sortDesc.get(col);
+    }
+
     private Comparator<MagicCondensedCardDefinition> getSortComparator(final CardTableColumn col) {
         switch(col) {
             case Rating:
                 return showCardCount
-                    ? col.isSortDesc()
+                    ? isSortDesc(col)
                         ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC
                         : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC
-                    : col.isSortDesc()
+                    : isSortDesc(col)
                         ? MagicCondensedCardDefinition.RATING_COMPARATOR_ASC
                         : MagicCondensedCardDefinition.RATING_COMPARATOR_DESC;
 
             case CardName:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.NAME_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
 
             case Cost:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.CONVERTED_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.CONVERTED_COMPARATOR_DESC;
 
             case Power:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.POWER_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.POWER_COMPARATOR_DESC;
 
             case Toughness:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_DESC;
 
             case Type:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.TYPE_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.TYPE_COMPARATOR_DESC;
 
             case Subtype:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_DESC;
 
             case Rarity:
-                return col.isSortDesc()
+                return isSortDesc(col)
                     ? MagicCondensedCardDefinition.RARITY_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.RARITY_COMPARATOR_DESC;
 
@@ -113,7 +127,7 @@ public class CardTableModel extends AbstractTableModel {
         if (comp != null) {
             // new sort
             Collections.sort(cardDefinitions, comp);
-            col.setSortDesc(!col.isSortDesc());
+            sortDesc.put(col, !sortDesc.get(col));
         } else {
             // didn't select valid new sort -> reset to old
             comp = oldComp;

@@ -16,7 +16,6 @@ enum CardTableColumn {
 
     private final String caption;
     private final int minWidth;
-    private boolean isSortDesc;
 
     private CardTableColumn(String aCaption, int aWidth) {
         this.caption = MText.get(aCaption);
@@ -33,12 +32,5 @@ enum CardTableColumn {
 
     static int getMinWidth(int i) {
         return values()[i].getMinWidth();
-    }
-    boolean isSortDesc() {
-        return isSortDesc;
-    }
-
-    void setSortDesc(boolean b) {
-        this.isSortDesc = b;
     }
 }
