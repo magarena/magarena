@@ -17,12 +17,11 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.M.MScrollPane;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckTablePanel extends TexturedPanel {
+public class DeckTablePanel extends CardsTablePanel {
 
     // fired when selection changes.
     public static final String CP_CARD_SELECTED = "21b18a13-afbb-4d6a-9edc-3119653f4560";

@@ -19,12 +19,11 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.FontsAndBorders;
 import magic.ui.widget.M.MScrollPane;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardTablePanelB extends TexturedPanel
+public class CardTablePanelB extends CardsTablePanel
         implements ListSelectionListener {
 
     private final MigLayout migLayout = new MigLayout();
