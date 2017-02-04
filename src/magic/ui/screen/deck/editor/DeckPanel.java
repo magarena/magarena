@@ -55,7 +55,6 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         actionButtons.add(getClearDeckActionButton());
 
         deckTablePanel = new DeckTablePanel(controller.getDeck());
-        deckTablePanel.setDeckEditorSelectionMode();
         deckTablePanel.showCardCount(true);
         setDeckTablePropChangeListeners();
 

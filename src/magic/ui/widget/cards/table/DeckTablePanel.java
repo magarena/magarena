@@ -96,10 +96,6 @@ public class DeckTablePanel extends CardsTablePanel {
         };
     }
 
-    public void setDeckEditorSelectionMode() {
-        //table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-    }
-
     public List<MagicCardDefinition> getSelectedCards() {
         final List<MagicCardDefinition> selectedCards = new ArrayList<>();
         for (final int row : table.getSelectedRows()) {
