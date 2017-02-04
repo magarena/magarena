@@ -22,7 +22,7 @@ public class CardTableModel extends AbstractTableModel {
     protected Comparator<MagicCondensedCardDefinition> comp;
 
     public CardTableModel(final List<MagicCardDefinition> cardDefs) {
-        this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
+        this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_ASC;
         setCards(cardDefs);
     }
 

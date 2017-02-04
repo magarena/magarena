@@ -981,9 +981,11 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return getName();
     }
 
-    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC = (cd1, cd2) -> cd1.getName().compareTo(cd2.getName());
+    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC =
+        (cd1, cd2) -> cd1.getName().compareTo(cd2.getName());
 
-    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC = (cd1, cd2) -> NAME_COMPARATOR_DESC.compare(cd2, cd1);
+    public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC =
+        (cd1, cd2) -> cd2.getName().compareTo(cd1.getName());
 
     public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_DESC = (cd1, cd2) -> {
         final int cdif=cd1.getConvertedCost()-cd2.getConvertedCost();
