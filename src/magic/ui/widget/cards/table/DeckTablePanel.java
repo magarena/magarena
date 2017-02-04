@@ -10,6 +10,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -53,6 +55,10 @@ public class DeckTablePanel extends TexturedPanel {
         // listener to change card image on selection
         this.listSelListener = getTableListSelectionListener();
         table.getSelectionModel().addListSelectionListener(listSelListener);
+
+        // listener to sort on column header click
+        final JTableHeader header = table.getTableHeader();
+        header.addMouseListener(new ColumnListener());
 
         // add table to scroll pane
         scrollpane.setViewportView(table);
@@ -234,6 +240,28 @@ public class DeckTablePanel extends TexturedPanel {
 
     public void showCardCount(final boolean b) {
         tableModel.showCardCount(b);
+    }
+
+    private class ColumnListener extends MouseAdapter {
+        @Override
+        public void mouseClicked(final MouseEvent e) {
+            final TableColumnModel colModel = table.getColumnModel();
+            final int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
+            final int modelIndex = colModel.getColumn(columnModelIndex).getModelIndex();
+
+            if (modelIndex < 0) {
+                return;
+            }
+
+            // sort
+            tableModel.sort(modelIndex);
+
+            // redraw
+            table.tableChanged(new TableModelEvent(tableModel));
+            table.repaint();
+
+            reselectLastCards();
+        }
     }
 
 }
