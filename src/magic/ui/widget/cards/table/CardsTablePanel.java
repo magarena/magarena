@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.event.TableModelEvent;
+import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -37,6 +38,10 @@ abstract class CardsTablePanel extends TexturedPanel {
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(getRowMouseOverListener());
         }
+
+        // listener to sort on column header click
+        final JTableHeader header = table.getTableHeader();
+        header.addMouseListener(new ColumnListener());
         
         setLayout(migLayout);
         refreshLayout();
@@ -84,7 +89,7 @@ abstract class CardsTablePanel extends TexturedPanel {
         }
     }
 
-    protected class ColumnListener extends MouseAdapter {
+    private class ColumnListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
             final TableColumnModel colModel = table.getColumnModel();

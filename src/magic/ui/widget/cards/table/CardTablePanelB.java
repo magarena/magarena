@@ -12,7 +12,6 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
-import javax.swing.table.JTableHeader;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.FontsAndBorders;
@@ -31,10 +30,6 @@ public class CardTablePanelB extends CardsTablePanel
 
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(this);
-
-        // listener to sort on column header click
-        final JTableHeader header = table.getTableHeader();
-        header.addMouseListener(new ColumnListener());
 
         // add table to scroll pane
         scrollpane.setViewportView(table);
