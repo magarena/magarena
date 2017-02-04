@@ -23,8 +23,13 @@ public class TestRevolt extends TestGameBuilder {
         P.setLife(20);
         P.changeCounters(MagicCounterType.Energy, 4);
         addToLibrary(P,"Forest", 20);
+        createPermanent(P, "Forest", 10);
+        createPermanent(P, "Chromatic Lantern");
+        createPermanent(P, "Ruin Ghost");
+        createPermanent(P, "Eldrazi Displacer");
         createPermanent(P,"Aethergeode Miner");
         createPermanent(P, "Solemn Recruit");
+        addToHand(P,"Solemn Recruit");
 
         P = opponent;
         P.setLife(20);
