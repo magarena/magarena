@@ -33,7 +33,7 @@ public class DeckTablePanel extends TexturedPanel {
     private final MigLayout migLayout = new MigLayout();
     private final MScrollPane scrollpane = new MScrollPane();
     private final CardTableModel tableModel;
-    private JTable table;
+    private CardsJTable table;
 
     private final TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
@@ -198,11 +198,11 @@ public class DeckTablePanel extends TexturedPanel {
         table.clearSelection();
     }
 
-    public JTable getDeckTable() {
+    public CardsJTable getDeckTable() {
         return table;
     }
 
-    public void setDeckTable(JTable aDeckTable) {
+    public void setDeckTable(CardsJTable aDeckTable) {
         this.table = aDeckTable;
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // ensures horizontal scrollbar is visible.
         scrollpane.setViewportView(table);

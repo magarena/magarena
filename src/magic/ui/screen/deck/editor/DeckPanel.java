@@ -8,7 +8,6 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTable;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -17,6 +16,7 @@ import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.widget.cards.table.CardsJTable;
 import magic.ui.widget.cards.table.DeckTablePanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -200,11 +200,11 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         deckTablePanel.setSelectedCard(selectedCard);
     }
 
-    JTable getDeckTable() {
+    CardsJTable getDeckTable() {
         return deckTablePanel.getDeckTable();
     }
 
-    void setDeckTable(final JTable aDeckTable) {
+    void setDeckTable(CardsJTable aDeckTable) {
         deckTablePanel.setDeckTable(aDeckTable);
     }
 

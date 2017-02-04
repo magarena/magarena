@@ -4,7 +4,6 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import javax.swing.JTable;
 import javax.swing.JToggleButton;
 import magic.data.GeneralConfig;
 import magic.data.stats.MagicStats;
@@ -15,6 +14,7 @@ import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.deck.editor.stats.DeckStatsPanel;
+import magic.ui.widget.cards.table.CardsJTable;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -42,7 +42,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
     private final DeckStatsPanel statsPanel;
 
     private IDeckEditorView activeView;
-    private final JTable deckTable;
+    private final CardsJTable deckTable;
     private final IDeckEditorListener listener;
     private JToggleButton statsToggleButton;
 
