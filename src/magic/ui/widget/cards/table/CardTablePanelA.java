@@ -15,9 +15,7 @@ import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TitleBar;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardTablePanelA extends CardsTablePanel {
@@ -29,12 +27,7 @@ public class CardTablePanelA extends CardsTablePanel {
     public static final String CP_CARD_RCLICKED = "575ebbc6-c67b-45b5-9f3e-e03ae1d879be";
     public static final String CP_CARD_DCLICKED = "d3a081c1-a66c-402a-814e-819678257d3b";
 
-    private final MigLayout migLayout = new MigLayout();
-    private final MScrollPane scrollpane = new MScrollPane();
-    private final CardTableModel tableModel;
-    private CardsJTable table;
     private final TitleBar titleBar;
-    private List<MagicCardDefinition> lastSelectedCards;
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
 
@@ -43,10 +36,10 @@ public class CardTablePanelA extends CardsTablePanel {
     }
 
     public CardTablePanelA(final List<MagicCardDefinition> defs, final String title) {
+        super(defs);
 
         this.lastSelectedCards = new ArrayList<>();
 
-        this.tableModel = new CardTableModel(defs);
         this.table = new CardsJTable(tableModel);
 
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {

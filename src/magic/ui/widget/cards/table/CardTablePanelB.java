@@ -18,20 +18,13 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TitleBar;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardTablePanelB extends CardsTablePanel
         implements ListSelectionListener {
 
-    private final MigLayout migLayout = new MigLayout();
-    private final MScrollPane scrollpane = new MScrollPane();
-    private final CardTableModel tableModel;
-    private final CardsJTable table;
     private TitleBar titleBar;
-    private List<MagicCardDefinition> lastSelectedCards;
     private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
     private final boolean isDeck;
 
@@ -40,11 +33,11 @@ public class CardTablePanelB extends CardsTablePanel
     }
 
     public CardTablePanelB(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
+        super(defs);
 
         this.isDeck = isDeck;
         this.lastSelectedCards = new ArrayList<>();
 
-        this.tableModel = new CardTableModel(defs);
         this.table = new CardsJTable(tableModel);
 
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
