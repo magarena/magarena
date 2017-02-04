@@ -13,7 +13,6 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
@@ -98,30 +97,6 @@ public class CardTablePanelB extends CardsTablePanel
         return selectedCards;
     }
 
-    private void reselectLastCards() {
-        // select previous card if possible
-        if (lastSelectedCards.size() > 0) {
-            final List<MagicCardDefinition> newSelectedCards = new ArrayList<>();
-            for (final MagicCardDefinition card : lastSelectedCards) {
-                final int index = tableModel.findCardIndex(card);
-                if (index != -1) {
-                    // previous card still in list
-                    table.getSelectionModel().addSelectionInterval(index,index);
-                    newSelectedCards.add(card);
-                }
-            }
-            lastSelectedCards = newSelectedCards;
-        } else {
-            setSelectedRow();
-        }
-    }
-
-    private void setSelectedRow() {
-        if (table.getRowCount() > 0) {
-            table.setRowSelectionInterval(0, 0);
-        }
-    }
-
     public void setCards(final List<MagicCardDefinition> defs) {
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
@@ -185,28 +160,6 @@ public class CardTablePanelB extends CardsTablePanel
     public void setStyle() {
         table.setStyle();
         setEmptyBackgroundColor();
-    }
-
-    private class ColumnListener extends MouseAdapter {
-        @Override
-        public void mouseClicked(final MouseEvent e) {
-            final TableColumnModel colModel = table.getColumnModel();
-            final int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
-            final int modelIndex = colModel.getColumn(columnModelIndex).getModelIndex();
-
-            if (modelIndex < 0) {
-                return;
-            }
-
-            // sort
-            tableModel.sort(modelIndex);
-
-            // redraw
-            table.tableChanged(new TableModelEvent(tableModel));
-            table.repaint();
-
-            reselectLastCards();
-        }
     }
 
     private class RowMouseOverListener extends MouseAdapter {

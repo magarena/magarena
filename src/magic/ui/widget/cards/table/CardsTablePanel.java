@@ -1,6 +1,11 @@
 package magic.ui.widget.cards.table;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.List;
+import javax.swing.event.TableModelEvent;
+import javax.swing.table.TableColumnModel;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
@@ -18,5 +23,51 @@ class CardsTablePanel extends TexturedPanel {
 
     public CardsTablePanel(List<MagicCardDefinition> defs) {
         tableModel = new CardTableModel(defs);
+    }
+
+    private void setSelectedRow() {
+        if (table.getRowCount() > 0) {
+            table.setRowSelectionInterval(0, 0);
+        }
+    }
+
+    protected void reselectLastCards() {
+        // select previous card if possible
+        if (lastSelectedCards.size() > 0) {
+            final List<MagicCardDefinition> newSelectedCards = new ArrayList<>();
+            for (final MagicCardDefinition card : lastSelectedCards) {
+                final int index = tableModel.findCardIndex(card);
+                if (index != -1) {
+                    // previous card still in list
+                    table.getSelectionModel().addSelectionInterval(index,index);
+                    newSelectedCards.add(card);
+                }
+            }
+            lastSelectedCards = newSelectedCards;
+        } else {
+            setSelectedRow();
+        }
+    }
+
+    protected class ColumnListener extends MouseAdapter {
+        @Override
+        public void mouseClicked(final MouseEvent e) {
+            final TableColumnModel colModel = table.getColumnModel();
+            final int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
+            final int modelIndex = colModel.getColumn(columnModelIndex).getModelIndex();
+
+            if (modelIndex < 0) {
+                return;
+            }
+
+            // sort
+            tableModel.sort(modelIndex);
+
+            // redraw
+            table.tableChanged(new TableModelEvent(tableModel));
+            table.repaint();
+
+            reselectLastCards();
+        }
     }
 }
