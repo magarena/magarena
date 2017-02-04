@@ -14,7 +14,6 @@ import javax.swing.table.JTableHeader;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
 public class CardTablePanelA extends CardsTablePanel {
@@ -26,16 +25,11 @@ public class CardTablePanelA extends CardsTablePanel {
     public static final String CP_CARD_RCLICKED = "575ebbc6-c67b-45b5-9f3e-e03ae1d879be";
     public static final String CP_CARD_DCLICKED = "d3a081c1-a66c-402a-814e-819678257d3b";
 
-    private final TitleBar titleBar;
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
 
-    public CardTablePanelA(final List<MagicCardDefinition> defs) {
-        this(defs, "");
-    }
-
     public CardTablePanelA(final List<MagicCardDefinition> defs, final String title) {
-        super(defs);
+        super(defs, title);
 
         this.lastSelectedCards = new ArrayList<>();
 
@@ -57,18 +51,16 @@ public class CardTablePanelA extends CardsTablePanel {
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
 
-        // add title
-        titleBar = new TitleBar(title);
-
         // Raise events on mouse clicks.
         table.addMouseListener(getTableMouseAdapter());
 
-        setLayout(migLayout);
-        refreshLayout();
         setEmptyBackgroundColor();
-
     }
 
+    public CardTablePanelA(final List<MagicCardDefinition> defs) {
+        this(defs, "");
+    }
+    
     private void setEmptyBackgroundColor() {
         setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }
@@ -111,13 +103,6 @@ public class CardTablePanelA extends CardsTablePanel {
         };
     }
 
-    private void refreshLayout() {
-        removeAll();
-        migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
-        add(titleBar, "w 100%, h 26!, hidemode 3");
-        add(scrollpane.component(), "w 100%, h 100%");
-    }
-
     public void setDeckEditorSelectionMode() {
         //table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
     }
@@ -141,15 +126,6 @@ public class CardTablePanelA extends CardsTablePanel {
         if (isRowSelected) {
             reselectLastCards();
         }
-    }
-
-    public void setTitle(final String title) {
-        titleBar.setText(title);
-    }
-
-    public void setHeaderVisible(boolean b) {
-        titleBar.setVisible(b);
-        refreshLayout();
     }
 
     public void clearSelection() {
@@ -198,10 +174,6 @@ public class CardTablePanelA extends CardsTablePanel {
         } else if (tableModel.getRowCount() > 0) {
             table.getSelectionModel().addSelectionInterval(0, 0);
         }
-    }
-
-    public TitleBar getTitleBar() {
-        return titleBar;
     }
 
     public void showCardCount(final boolean b) {

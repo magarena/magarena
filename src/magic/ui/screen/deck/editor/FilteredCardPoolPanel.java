@@ -7,11 +7,11 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.model.MagicCardDefinition;
-import magic.ui.widget.card.filter.CardFilterPanel;
-import magic.ui.ICardFilterPanelListener;
 import magic.translate.MText;
-import magic.ui.widget.cards.table.CardTablePanelA;
 import magic.translate.StringContext;
+import magic.ui.ICardFilterPanelListener;
+import magic.ui.widget.card.filter.CardFilterPanel;
+import magic.ui.widget.cards.table.CardTablePanelA;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -82,7 +82,6 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
     private void refreshLayout() {
         removeAll();
-        add(cardPoolTable.getTitleBar(), "w 100%, h 26!");
         add(filterPanel, "w 100%, h " + FILTERS_PANEL_HEIGHT + "!");
         add(cardPoolTable, "w 100%, h 100%");
         revalidate();

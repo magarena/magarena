@@ -40,9 +40,8 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
         deckPanel = new BasicDeckTablePanel();
 
         recallCards = new ArrayList<>();
-        recallTablePanel = new CardTablePanelA(recallCards, "");
+        recallTablePanel = new CardTablePanelA(recallCards);
         recallTablePanel.setDeckEditorSelectionMode();
-        recallTablePanel.setHeaderVisible(false);
 
         setPropertyChangeListeners();
 

@@ -13,7 +13,7 @@ public class TitleBar extends JPanel {
 
     private final JLabel label;
 
-    public TitleBar(final String text) {
+    public TitleBar(String text) {
 
         label = new JLabel(text);
         label.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
@@ -26,7 +26,10 @@ public class TitleBar extends JPanel {
         add(label);
 
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+    }
 
+    public TitleBar() {
+        this("");
     }
 
     public void setText(final String text) {

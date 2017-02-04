@@ -9,20 +9,44 @@ import javax.swing.table.TableColumnModel;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class CardsTablePanel extends TexturedPanel {
 
     protected final MScrollPane scrollpane = new MScrollPane();
+    private final TitleBar titleBar;
 
     protected CardsJTable table;
     protected final MigLayout migLayout = new MigLayout();
     protected final CardTableModel tableModel;
     protected List<MagicCardDefinition> lastSelectedCards;
 
-    public CardsTablePanel(List<MagicCardDefinition> defs) {
+    public CardsTablePanel(List<MagicCardDefinition> defs, String title) {
         tableModel = new CardTableModel(defs);
+        titleBar = new TitleBar(title);
+        setTitle(title);
+        setLayout(migLayout);
+        refreshLayout();
+    }
+
+    public CardsTablePanel(List<MagicCardDefinition> defs) {
+        this(defs, "");
+    }
+
+    private void refreshLayout() {
+        removeAll();
+        migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
+        add(titleBar, "w 100%, h 26!, hidemode 3");
+        add(scrollpane.component(), "w 100%, h 100%");
+        revalidate();
+    }
+
+    public void setTitle(final String title) {
+        titleBar.setText(title);
+        titleBar.setVisible(!title.isEmpty());
+        refreshLayout();
     }
 
     private void setSelectedRow() {

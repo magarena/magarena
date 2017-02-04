@@ -17,22 +17,16 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
 public class CardTablePanelB extends CardsTablePanel
         implements ListSelectionListener {
 
-    private TitleBar titleBar;
     private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
     private final boolean isDeck;
 
-    public CardTablePanelB(final List<MagicCardDefinition> defs) {
-        this(defs, "", false);
-    }
-
     public CardTablePanelB(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
-        super(defs);
+        super(defs, title);
 
         this.isDeck = isDeck;
         this.lastSelectedCards = new ArrayList<>();
@@ -55,24 +49,15 @@ public class CardTablePanelB extends CardsTablePanel
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
 
-        // add title
-        titleBar = null;
-        if (title.length() > 0) {
-            setTitle(title);
-        }
-
-        setLayout(migLayout);
-        refreshLayout();
         setEmptyBackgroundColor();
     }
 
-    private void refreshLayout() {
-        removeAll();
-        migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
-        if (titleBar != null && titleBar.isVisible()) {
-            add(titleBar, "w 100%, h 26!");
-        }
-        add(scrollpane.component(), "w 100%, h 100%");
+    public CardTablePanelB(List<MagicCardDefinition> defs, boolean isDeck) {
+        this(defs, "", isDeck);
+    }
+
+    public CardTablePanelB(List<MagicCardDefinition> defs) {
+        this(defs, false);
     }
 
     public void setDeckEditorSelectionMode() {
@@ -106,14 +91,6 @@ public class CardTablePanelB extends CardsTablePanel
         }
     }
 
-    public void setTitle(final String title) {
-        if (titleBar != null) {
-            titleBar.setText(title);
-        } else {
-            titleBar = new TitleBar(title);
-        }
-    }
-
     @Override
     public void valueChanged(final ListSelectionEvent e) {
         if (!e.getValueIsAdjusting()) {
@@ -122,13 +99,6 @@ public class CardTablePanelB extends CardsTablePanel
                 final MagicCardDefinition card = tableModel.getCardDef(table.getSelectionModel().getLeadSelectionIndex());
                 notifyCardSelectionListeners(card);
             }
-        }
-    }
-
-    public void setHeaderVisible(boolean b) {
-        if (titleBar != null) {
-            titleBar.setVisible(b);
-            refreshLayout();
         }
     }
 

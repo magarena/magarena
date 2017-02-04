@@ -15,7 +15,6 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
 public class DeckTablePanel extends CardsTablePanel {
@@ -26,12 +25,11 @@ public class DeckTablePanel extends CardsTablePanel {
     public static final String CP_CARD_LCLICKED = "d1b4df60-feb9-4bfe-88e2-49cd823efeb0";
     public static final String CP_CARD_RCLICKED = "0c0fc5c6-3be3-40f4-9b79-ded9e304a96d";
 
-    private final TitleBar titleBar;
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
     private final ListSelectionListener listSelListener;
 
-    public DeckTablePanel(final List<MagicCardDefinition> defs, final String title) {
+    public DeckTablePanel(final List<MagicCardDefinition> defs) {
         super(defs);
 
         this.lastSelectedCards = new ArrayList<>();
@@ -55,14 +53,9 @@ public class DeckTablePanel extends CardsTablePanel {
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
 
-        // add title
-        titleBar = new TitleBar(title);
-
         // Raise events on mouse clicks.
         table.addMouseListener(getTableMouseAdapter());
 
-        setLayout(migLayout);
-        refreshLayout();
         setEmptyBackgroundColor();
     }
 
@@ -115,13 +108,6 @@ public class DeckTablePanel extends CardsTablePanel {
         };
     }
 
-    private void refreshLayout() {
-        removeAll();
-        migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
-        add(titleBar, "w 100%, h 26!, hidemode 3");
-        add(scrollpane.component(), "w 100%, h 100%");
-    }
-
     public void setDeckEditorSelectionMode() {
         //table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
     }
@@ -149,15 +135,6 @@ public class DeckTablePanel extends CardsTablePanel {
         tableModel.setCards(defs);
         table.repaint();
         table.getSelectionModel().addListSelectionListener(listSelListener);
-    }
-
-    public void setTitle(final String title) {
-        titleBar.setText(title);
-    }
-
-    public void setHeaderVisible(boolean b) {
-        titleBar.setVisible(b);
-        refreshLayout();
     }
 
     public void clearSelection() {
@@ -198,10 +175,6 @@ public class DeckTablePanel extends CardsTablePanel {
         } else if (tableModel.getRowCount() > 0) {
             table.getSelectionModel().addSelectionInterval(0, 0);
         }
-    }
-
-    public TitleBar getTitleBar() {
-        return titleBar;
     }
 
     public void showCardCount(final boolean b) {

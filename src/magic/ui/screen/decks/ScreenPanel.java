@@ -6,7 +6,6 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
 import magic.model.MagicDeck;
-import magic.translate.MText;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.deck.DeckStatusPanel;
@@ -16,10 +15,6 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class ScreenPanel extends JPanel implements IDeckConsumer {
-
-    // translatable strings
-    private static final String _S14 = "%s (%d cards)";
-    private static final String _S15 = "NO DECK";
 
     private MagicDeck selectedDeck = null;
     private Path deckFilePath = null;
@@ -36,9 +31,8 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         setOpaque(false);
 
         selectedDeck = new MagicDeck();
-        deckTable = new CardTablePanelB(selectedDeck, "{deckName}", true);
+        deckTable = new CardTablePanelB(selectedDeck, true);
         deckTable.addCardSelectionListener(cardViewer);
-        deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
 
         sidebar = new SidebarPanel(this);
@@ -90,7 +84,6 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
             deckFilePath = deckPath;
             sidebar.setDeck(deck);
             deckTable.setCards(deck);
-            deckTable.setTitle(MText.get(_S14, deck.getName(), deck.size()));
             deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
             splitter.setVisible(deck.isValid() || deck.size() > 0);
         } else {
@@ -98,7 +91,6 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
             deckFilePath = null;
             sidebar.setDeck(selectedDeck);
             deckTable.setCards(deck);
-            deckTable.setTitle(MText.get(_S15));
             deckStatusPanel.setDeck(null, false);
             splitter.setVisible(false);
         }
@@ -111,7 +103,6 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         deckFilePath = DeckUtils.getDeckPath(deck);
         sidebar.setDeck(deck);
         deckTable.setCards(deck);
-        deckTable.setTitle(MText.get(_S14, deck.getName(), deck.size()));
         deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
         splitter.setVisible(deck.isValid() || deck.size() > 0);
     }

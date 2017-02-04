@@ -5,8 +5,8 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.widget.cards.table.CardTablePanelA;
 import magic.ui.screen.deck.editor.DeckSideBar;
+import magic.ui.widget.cards.table.CardTablePanelA;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -24,9 +24,8 @@ class DeckViewPanel extends JPanel {
         sideBarPanel = new DeckSideBar();
         sideBarPanel.setDeck(deck);
 
-        deckTable = new CardTablePanelA(this.deck, "  " + this.deck.getName());
+        deckTable = new CardTablePanelA(this.deck);
         deckTable.setDeckEditorSelectionMode();
-        deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
         setDeckTablePropChangeListeners();
 

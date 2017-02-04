@@ -54,9 +54,8 @@ class DeckPanel extends JPanel implements IDeckEditorView {
 
         actionButtons.add(getClearDeckActionButton());
 
-        deckTablePanel = new DeckTablePanel(controller.getDeck(), getDeckTitle());
+        deckTablePanel = new DeckTablePanel(controller.getDeck());
         deckTablePanel.setDeckEditorSelectionMode();
-        deckTablePanel.setHeaderVisible(false);
         deckTablePanel.showCardCount(true);
         setDeckTablePropChangeListeners();
 
@@ -108,10 +107,6 @@ class DeckPanel extends JPanel implements IDeckEditorView {
                 });
     }
 
-    private String getDeckTitle() {
-        return String.format("   %s", controller.getDeck().getName());
-    }
-
     private void setLookAndFeel() {
         setOpaque(false);
         setLayout(miglayout);
@@ -142,7 +137,6 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     void doRefreshView() {
-        deckTablePanel.setTitle(getDeckTitle());
         deckTablePanel.setDeck(controller.getDeck());
         listener.deckUpdated(controller.getDeck());
     }
