@@ -21,10 +21,11 @@ class CardsTablePanel extends TexturedPanel {
     protected CardsJTable table;
     protected final MigLayout migLayout = new MigLayout();
     protected final CardTableModel tableModel;
-    protected List<MagicCardDefinition> lastSelectedCards;
+    protected List<MagicCardDefinition> lastSelectedCards = new ArrayList<>();
 
     public CardsTablePanel(List<MagicCardDefinition> defs, String title) {
         tableModel = new CardTableModel(defs);
+        table = new CardsJTable(tableModel);
         titleBar = new TitleBar(title);
         setTitle(title);
         setLayout(migLayout);

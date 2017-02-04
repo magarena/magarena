@@ -32,10 +32,6 @@ public class DeckTablePanel extends CardsTablePanel {
     public DeckTablePanel(final List<MagicCardDefinition> defs) {
         super(defs);
 
-        this.lastSelectedCards = new ArrayList<>();
-
-        this.table = new CardsJTable(tableModel);
-
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
         }

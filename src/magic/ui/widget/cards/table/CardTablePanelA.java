@@ -31,10 +31,6 @@ public class CardTablePanelA extends CardsTablePanel {
     public CardTablePanelA(final List<MagicCardDefinition> defs, final String title) {
         super(defs, title);
 
-        this.lastSelectedCards = new ArrayList<>();
-
-        this.table = new CardsJTable(tableModel);
-
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
         }
@@ -60,7 +56,7 @@ public class CardTablePanelA extends CardsTablePanel {
     public CardTablePanelA(final List<MagicCardDefinition> defs) {
         this(defs, "");
     }
-    
+
     private void setEmptyBackgroundColor() {
         setBackground(CardsTableStyle.getStyle().getEmptyBackgroundColor());
     }

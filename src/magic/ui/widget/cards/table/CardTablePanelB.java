@@ -29,9 +29,6 @@ public class CardTablePanelB extends CardsTablePanel
         super(defs, title);
 
         this.isDeck = isDeck;
-        this.lastSelectedCards = new ArrayList<>();
-
-        this.table = new CardsJTable(tableModel);
 
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
