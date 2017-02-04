@@ -24,7 +24,7 @@ public class PaginationPanel extends JPanel {
         this.paginator = paginator;
 
         setOpaque(false);
-        setLayout(new MigLayout("insets 0, alignx center"));
+        setLayout(new MigLayout("insets 4, alignx center"));
 
         firstButton = new JButton("|<");
         firstButton.setEnabled(false);

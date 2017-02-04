@@ -30,10 +30,11 @@ public class DeckStatsPanel extends TexturedPanel
         this.deck = deck;
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         scrollpane.setOpaque(false);
-        scrollpane.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY));
+        scrollpane.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.BLACK));
         paginator = new PaginationPanel(this);
-        setLayout(new MigLayout("flowy", "[fill, grow]"));
-        add(scrollpane.component(), "w 100%, h 100%");
+        paginator.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.GRAY));
+        setLayout(new MigLayout("flowy, insets 0", "[fill, grow]", "[fill, grow]0[]"));
+        add(scrollpane.component());
         add(paginator);
     }
 
