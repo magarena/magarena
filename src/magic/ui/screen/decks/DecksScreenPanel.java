@@ -14,7 +14,7 @@ import magic.utility.DeckUtils;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ScreenPanel extends JPanel implements IDeckConsumer {
+class DecksScreenPanel extends JPanel implements IDeckConsumer {
 
     private MagicDeck selectedDeck = null;
     private Path deckFilePath = null;
@@ -24,7 +24,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
     private final DeckStatusPanel deckStatusPanel;
     private final SidebarPanel sidebar;
 
-    ScreenPanel(DeckStatusPanel deckStatusPanel) {
+    DecksScreenPanel(DeckStatusPanel deckStatusPanel) {
 
         this.deckStatusPanel = deckStatusPanel;
 
