@@ -11,3 +11,4 @@ ability=Flying, lifelink;\
         When SN enters the battlefield, move any number of +1/+1 counters from other permanents you control onto SN.
 timing=main
 oracle=Flying, lifelink\nWhen Aetherborn Marauder enters the battlefield, move any number of +1/+1 counters from other permanents you control onto Aetherborn Marauder.
+status=not supported: any-number-of
