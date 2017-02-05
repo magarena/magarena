@@ -302,6 +302,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl AURA_EQUIPMENT_OR_VEHICLE_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(MagicSource source, MagicPlayer player, MagicItemOnStack target) {
+            return target.isSpell(MagicSubType.Aura) ||
+                target.isSpell(MagicSubType.Equipment) ||
+                target.isSpell(MagicSubType.Vehicle);
+        }
+    };
+
     public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL = spellOr(MagicType.Instant, MagicType.Sorcery);
 
     public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL_YOU_CONTROL = spellOr(MagicType.Instant, MagicType.Sorcery, Control.You);
@@ -2659,6 +2667,7 @@ public class MagicTargetFilterFactory {
         add("colorless spell", COLORLESS_SPELL);
         add("colorless spell with converted mana cost 7 or greater", COLORLESS_SPELL_CMC_7_OR_MORE);
         add("creature spell with converted mana cost 3 or less", CREATURE_SPELL_CMC_3_OR_LESS);
+        add("aura, equipment, or vehicle spell", AURA_EQUIPMENT_OR_VEHICLE_SPELL);
 
         // player
         add("opponent", OPPONENT);
