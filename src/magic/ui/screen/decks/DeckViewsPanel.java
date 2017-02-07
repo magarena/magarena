@@ -10,6 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.helpers.MouseHelper;
+import magic.ui.widget.deck.legality.LegalityPanel;
 import magic.ui.widget.deck.stats.IPwlWorkerListener;
 import net.miginfocom.swing.MigLayout;
 
@@ -26,7 +27,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
 
     private final ToggleButtonsPanel toggleButtonsPanel = new ToggleButtonsPanel();
     private final DeckPanel deckPanel;
-//    private final LegalityPanel legalityPanel;
+    private final LegalityPanel legalityPanel;
 //    private final DeckStatsPanel statsPanel;
     private JToggleButton statsToggleButton;
 
@@ -36,10 +37,10 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
     public DeckViewsPanel() {
 
         deckPanel = new DeckPanel();
-//        legalityPanel = new LegalityPanel();
+        legalityPanel = new LegalityPanel();
 //        statsPanel = new DeckStatsPanel(new MagicDeck());
 //
-//        legalityPanel.setVisible(false);
+        legalityPanel.setVisible(false);
 //        statsPanel.setVisible(false);
 
         activeView = deckPanel;
@@ -65,7 +66,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MouseHelper.showBusyCursor((Component) e.getSource());
-//                setView(legalityPanel);
+                setView(legalityPanel);
                 MouseHelper.showHandCursor((Component) e.getSource());
             }
         });
@@ -89,7 +90,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
         miglayout.setLayoutConstraints("insets 0, gap 0, flowy");
         add(toggleButtonsPanel, "w 100%, h 34!");
         add(deckPanel, "w 100%, h 100%, hidemode 3");
-//        add(legalityPanel, "w 100%, h 100%, hidemode 3");
+        add(legalityPanel, "w 100%, h 100%, hidemode 3");
 //        add(statsPanel, "w 100%, h 100%, hidemode 3");
         revalidate();
     }
@@ -113,7 +114,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
     void doRefreshViews() {
         System.out.println("DeckViewsPanel.doRefreshViews");
         deckPanel.setDeck(deck);
-//        legalityPanel.setDeck(deck);
+        legalityPanel.setDeck(deck);
 //        statsPanel.setDeck(deck);
         setView(activeView);
     }
