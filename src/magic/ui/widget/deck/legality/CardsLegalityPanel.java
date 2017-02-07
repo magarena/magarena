@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor;
+package magic.ui.widget.deck.legality;
 
 import java.awt.Color;
 import java.awt.Component;

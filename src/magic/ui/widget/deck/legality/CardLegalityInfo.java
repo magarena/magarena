@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor;
+package magic.ui.widget.deck.legality;
 
 import magic.data.CardLegality;
 import magic.data.MagicFormat;

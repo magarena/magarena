@@ -1,5 +1,6 @@
-package magic.ui.screen.deck.editor;
+package magic.ui.widget.deck.legality;
 
+import magic.ui.widget.deck.legality.CardLegalityInfo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

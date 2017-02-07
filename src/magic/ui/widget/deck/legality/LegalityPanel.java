@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor;
+package magic.ui.widget.deck.legality;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -14,12 +14,13 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicImages;
+import magic.ui.screen.deck.editor.IDeckEditorView;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class LegalityPanel extends JPanel implements IDeckEditorView {
+public class LegalityPanel extends JPanel implements IDeckEditorView {
 
     // translatable strings
     private static final String _S1 = "Legal";
@@ -43,7 +44,7 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
     private final MigLayout miglayout = new MigLayout();
     private MagicDeck deck = new MagicDeck();
 
-    LegalityPanel() {
+    public LegalityPanel() {
 
         formatsLegalityPanel = new FormatsLegalityPanel();
         cardsLegalityPanel = new CardsLegalityPanel();
@@ -102,7 +103,7 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
         return cardsLegalityPanel.getSelectedCard();
     }
 
-    void setDeck(final MagicDeck aDeck) {
+    public void setDeck(final MagicDeck aDeck) {
         this.deck = aDeck;
         formatsLegalityPanel.setDeck(aDeck);
     }

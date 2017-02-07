@@ -14,6 +14,7 @@ import magic.ui.ScreenController;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.deck.editor.stats.DeckStatsPanel;
 import magic.ui.widget.cards.table.CardsJTable;
+import magic.ui.widget.deck.legality.LegalityPanel;
 import magic.ui.widget.deck.stats.IPwlWorkerListener;
 import net.miginfocom.swing.MigLayout;
 
