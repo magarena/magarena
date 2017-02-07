@@ -9,6 +9,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.deck.editor.IDeckEditorView;
+import magic.ui.screen.decks.IDeckView;
 import magic.ui.screen.stats.IPagination;
 import magic.ui.screen.stats.PaginationPanel;
 import magic.ui.screen.widget.ActionBarButton;
@@ -18,7 +19,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckStatsPanel extends TexturedPanel
-    implements IDeckEditorView, IPagination {
+    implements IDeckEditorView, IDeckView, IPagination {
 
     private GameStatsTableModel tm;
     private GameStatsJTable table;
