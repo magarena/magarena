@@ -2,6 +2,7 @@ package magic.data;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
@@ -125,7 +126,7 @@ public class DeckGenerators {
             customGenerator.generateDeck(MagicDeck.DEFAULT_SIZE, deckProfile, deck);
         }
         DeckGenerator.addBasicLandsToDeck(deck, deckProfile, MagicDeck.DEFAULT_SIZE);
-        deck.setFilename("Random_" + deckProfile.getColorText().toUpperCase() + "_deck");
+        deck.setFilename("Random_" + deckProfile.getColorText().toUpperCase(Locale.ENGLISH) + "_deck");
         deck.setDescription("Built using random color deck generator.");
     }
 
