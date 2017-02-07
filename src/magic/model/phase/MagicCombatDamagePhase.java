@@ -68,6 +68,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
             game.logMessage(attackingPlayer, "{c}" + attackerName + attackerMessage);
         }
 
+        //End combat damage steps
         if (game.getStep() == MagicStep.Begin) {
             game.setStep(MagicStep.ActivePlayer);
         } else {
