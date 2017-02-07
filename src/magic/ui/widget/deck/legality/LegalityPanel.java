@@ -15,12 +15,14 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.screen.deck.editor.IDeckEditorView;
+import magic.ui.screen.decks.IDeckView;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class LegalityPanel extends JPanel implements IDeckEditorView {
+public class LegalityPanel extends JPanel
+    implements IDeckEditorView, IDeckView {
 
     // translatable strings
     private static final String _S1 = "Legal";
@@ -105,7 +107,6 @@ public class LegalityPanel extends JPanel implements IDeckEditorView {
 
     public void setDeck(final MagicDeck aDeck) {
         this.deck = aDeck;
-        formatsLegalityPanel.setDeck(aDeck);
     }
 
     @Override
@@ -125,7 +126,8 @@ public class LegalityPanel extends JPanel implements IDeckEditorView {
 
     @Override
     public void notifyShowing() {
-        // TODO : lazy load legality data on tab click.
+        System.out.println("LegalityPanel.notifyShowing");
+        formatsLegalityPanel.setDeck(deck);
     }
 
     private static class LegalityLegendPanel extends TexturedPanel {
