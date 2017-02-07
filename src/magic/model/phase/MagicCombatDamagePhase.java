@@ -39,17 +39,17 @@ public class MagicCombatDamagePhase extends MagicPhase {
         //combat message for defender
         final int defenderLifeAfter = defendingPlayer.getLife();
         final int defenderPoisonAfter = defendingPlayer.getPoison();
-        final StringBuilder message = new StringBuilder();
+        final StringBuilder defenderMessage = new StringBuilder();
         if (defenderLifeAfter > defenderLifeBefore) {
-            message.append(" gains ").append(defenderLifeAfter - defenderLifeBefore).append(" life.");
+            defenderMessage.append(" gains ").append(defenderLifeAfter - defenderLifeBefore).append(" life.");
         } else if (defenderLifeAfter < defenderLifeBefore) {
-            message.append(" loses ").append(defenderLifeBefore - defenderLifeAfter).append(" life.");
+            defenderMessage.append(" loses ").append(defenderLifeBefore - defenderLifeAfter).append(" life.");
         }
         if (defenderPoisonAfter > defenderPoisonBefore) {
-            message.append(" gets ").append(defenderPoisonAfter - defenderPoisonBefore).append(" poison counters.");
+            defenderMessage.append(" gets ").append(defenderPoisonAfter - defenderPoisonBefore).append(" poison counters.");
         }
-        if (message.length() > 0) {
-            game.logMessage(defendingPlayer, "{c}" + defenderName + message);
+        if (defenderMessage.length() > 0) {
+            game.logMessage(defendingPlayer, "{c}" + defenderName + defenderMessage);
         }
 
         //combat message for attacker
@@ -64,7 +64,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
         if (attackerPoisonAfter > attackerPoisonBefore) {
             attackerMessage.append(" gets ").append(attackerPoisonAfter - attackerPoisonBefore).append(" poison counters.");
         }
-        if (message.length() > 0) {
+        if (attackerMessage.length() > 0) {
             game.logMessage(attackingPlayer, "{c}" + attackerName + attackerMessage);
         }
 
