@@ -7,15 +7,18 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.screen.deck.editor.DeckSideBar;
 import magic.ui.widget.cards.table.CardTablePanelA;
+import magic.ui.widget.deck.stats.IPwlWorkerListener;
+import magic.ui.widget.deck.stats.PwlWorker;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckScreenPanel extends JPanel {
+class DeckScreenPanel extends JPanel implements IPwlWorkerListener {
 
     private MagicDeck deck;
     private final MigLayout migLayout = new MigLayout();
     private final DeckSideBar sideBarPanel;
     private final CardTablePanelA deckTable;
+    private PwlWorker pwlWorker;
 
     DeckScreenPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
 
@@ -86,6 +89,17 @@ class DeckScreenPanel extends JPanel {
 
     void setDeck(MagicDeck aDeck) {
         this.deck = aDeck;
+        doPWLStatsQuery(deck);
     }
 
+    @Override
+    public void setPlayedWonLost(String pwl) {
+        sideBarPanel.setPlayedWonLost(pwl);
+    }
+
+    private void doPWLStatsQuery(MagicDeck deck) {
+        pwlWorker = new PwlWorker(deck);
+        pwlWorker.setListeners(sideBarPanel);
+        pwlWorker.execute();
+    }
 }

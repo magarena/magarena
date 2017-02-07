@@ -6,14 +6,15 @@ import javax.swing.BorderFactory;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.widget.M.MScrollPane;
-import magic.ui.widget.duel.viewer.CardViewer;
-import magic.ui.widget.duel.viewer.DeckEditorCardViewer;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.deck.DeckInfoPanel;
+import magic.ui.widget.deck.stats.IPwlWorkerListener;
+import magic.ui.widget.duel.viewer.CardViewer;
+import magic.ui.widget.duel.viewer.DeckEditorCardViewer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckSideBar extends TexturedPanel {
+public class DeckSideBar extends TexturedPanel implements IPwlWorkerListener {
 
     private final MigLayout migLayout = new MigLayout();
     private final MScrollPane cardScrollPane = new MScrollPane();
@@ -66,6 +67,11 @@ public class DeckSideBar extends TexturedPanel {
 
     public CardViewer getCardViewer() {
         return cardViewer;
+    }
+
+    @Override
+    public void setPlayedWonLost(String pwl) {
+        deckInfo.setPlayedWonLost(pwl);
     }
 
 }

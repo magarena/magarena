@@ -3,21 +3,16 @@ package magic.ui.widget.deck.stats;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CancellationException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import javax.swing.SwingWorker;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.CardStatistics;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.data.stats.MagicStats;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.translate.MText;
@@ -36,13 +31,10 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private static final String _S1 = "Deck Statistics";
     private static final String _S2 = "%d card deck";
 
-    private static final Logger LOGGER = Logger.getLogger(DeckStatisticsViewer.class.getName());
-
     private final ActionButtonTitleBar titleBar;
     private final ManaCurvePanel manaCurvePanel;
     private final ActionBarButton titlebarButton;
     private final StatsTable statsTable;
-    private SwingWorker<String, Void> pwlWorker;
     private String pwl = "";
     private CardStatistics statistics;
     private MagicDeck thisDeck;
@@ -127,37 +119,15 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         manaCurvePanel.setStats(statistics);
         if (isNewDeck(aDeck)) {
             this.thisDeck = aDeck;
-            doStatsQueryPWL(aDeck);
         }
-        setPlayedWinLost(pwl);
+        setPlayedWonLost(pwl);
     }
 
-    private void setPlayedWinLost(String newPWL) {
+    public void setPlayedWonLost(String newPWL) {
         pwl = newPWL;
         titleBar.setText(MText.get(_S2, statistics.totalCards)
             + (!newPWL.isEmpty() ? "   •   " + newPWL : "")
         );
-    }
-
-    private void doStatsQueryPWL(MagicDeck aDeck) {
-        final MagicDeck deckCopy = new MagicDeck(aDeck);
-        pwlWorker = new SwingWorker<String, Void>() {
-            @Override
-            protected String doInBackground() throws Exception {
-                return MagicStats.getPlayedWonLost(deckCopy);
-            }
-            @Override
-            protected void done() {
-                try {
-                    setPlayedWinLost(get());
-                } catch (CancellationException ex) {
-                    LOGGER.log(Level.INFO, "pwlWorker cancelled.");
-                } catch (Exception ex) {
-                    LOGGER.log(Level.SEVERE, null, ex);
-                }
-            }
-        };
-        pwlWorker.execute();
     }
 
     @Override

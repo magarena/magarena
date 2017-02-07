@@ -6,7 +6,6 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import magic.data.GeneralConfig;
-import magic.data.stats.MagicStats;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
@@ -15,10 +14,12 @@ import magic.ui.ScreenController;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.deck.editor.stats.DeckStatsPanel;
 import magic.ui.widget.cards.table.CardsJTable;
+import magic.ui.widget.deck.stats.IPwlWorkerListener;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class MainViewsPanel extends JPanel implements IDeckEditorListener {
+class MainViewsPanel extends JPanel
+    implements IDeckEditorListener, IPwlWorkerListener  {
 
     // translatable strings
     private static final String _S1 = "Deck";
@@ -132,7 +133,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             });
         }
 
-        statsToggleButton = toggleButtonsPanel.addToggleButton(getStatsTabCaption(), new AbstractAction() {
+        statsToggleButton = toggleButtonsPanel.addToggleButton("", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MouseHelper.showBusyCursor((Component) e.getSource());
@@ -144,10 +145,6 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
 
         toggleButtonsPanel.setSelectedToggleButton(MText.get(_S1));
         toggleButtonsPanel.refreshLayout();
-    }
-
-    private String getStatsTabCaption() {
-        return MagicStats.getPlayedWonLost(controller.getDeck());
     }
 
     private void addPropertyChangeListeners() {
@@ -242,7 +239,6 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
         deckPanel.doRefreshView();
         legalityPanel.setDeck(controller.getDeck());
         statsPanel.setDeck(controller.getDeck());
-        statsToggleButton.setText(getStatsTabCaption());
         activeView.notifyShowing();
     }
 
@@ -265,6 +261,11 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
     @Override
     public void setDeck(MagicDeck deck) {
         doRefreshViews();
+    }
+
+    @Override
+    public void setPlayedWonLost(String pwl) {
+        statsToggleButton.setText(pwl);
     }
 
 }

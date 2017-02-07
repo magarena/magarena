@@ -7,6 +7,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.translate.MText;
 import magic.ui.ScreenController;
+import magic.ui.widget.deck.stats.PwlWorker;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -24,6 +25,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     private final MainViewsPanel viewsPanel; // RHS
     private final IDeckEditorListener listener;
     private boolean isStandalone = true;
+    private PwlWorker pwlWorker;
 
     ContentPanel(IDeckEditorListener aListener) {
 
@@ -96,6 +98,7 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
             CONFIG.save();
         }
         listener.deckUpdated(deck);
+        doPWLStatsQuery(deck);
     }
 
     @Override
@@ -112,6 +115,12 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     @Override
     public void setDeck(MagicDeck deck) {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    private void doPWLStatsQuery(MagicDeck deck) {
+        pwlWorker = new PwlWorker(deck);
+        pwlWorker.setListeners(sideBarPanel, viewsPanel);
+        pwlWorker.execute();
     }
 
 }

@@ -9,6 +9,7 @@ import magic.model.MagicDeck;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.widget.cards.table.CardTablePanelB;
 import magic.ui.widget.deck.DeckStatusPanel;
+import magic.ui.widget.deck.stats.PwlWorker;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.utility.DeckUtils;
 import net.miginfocom.swing.MigLayout;
@@ -23,6 +24,7 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
     private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
     private final DeckStatusPanel deckStatusPanel;
     private final SidebarPanel sidebar;
+    private PwlWorker pwlWorker;
 
     DecksScreenPanel(DeckStatusPanel deckStatusPanel) {
 
@@ -74,7 +76,7 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
 
     @Override
     public void setDeck(String deckName, DeckType deckType) {
-        System.out.println("setDeck(" + deckName + ", " + deckType + ")");
+        throw new UnsupportedOperationException("setDeck(" + deckName + ", " + deckType + ")");
     }
 
     @Override
@@ -94,17 +96,19 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
             deckStatusPanel.setDeck(null, false);
             splitter.setVisible(false);
         }
+        doPWLStatsQuery(deck);
         return true;
     }
 
     @Override
     public void setDeck(MagicDeck deck) {
-        selectedDeck = deck;
-        deckFilePath = DeckUtils.getDeckPath(deck);
-        sidebar.setDeck(deck);
-        deckTable.setCards(deck);
-        deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
-        splitter.setVisible(deck.isValid() || deck.size() > 0);
+        setDeck(deck, DeckUtils.getDeckPath(deck));
+    }
+
+    private void doPWLStatsQuery(MagicDeck deck) {
+        pwlWorker = new PwlWorker(deck);
+        pwlWorker.setListeners(sidebar);
+        pwlWorker.execute();
     }
 
 }

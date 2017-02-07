@@ -4,16 +4,17 @@ import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import magic.model.MagicDeck;
+import magic.ui.FontsAndBorders;
+import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.deck.DeckInfoPanel;
 import magic.ui.widget.deck.DeckPicker;
+import magic.ui.widget.deck.stats.IPwlWorkerListener;
 import magic.ui.widget.duel.viewer.CardViewer;
-import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class SidebarPanel extends TexturedPanel {
+class SidebarPanel extends TexturedPanel implements IPwlWorkerListener {
 
     private final DeckPicker deckPicker;
     private final DeckInfoPanel deckInfo;
@@ -51,6 +52,11 @@ class SidebarPanel extends TexturedPanel {
 
     void setDeck(MagicDeck deck) {
         deckInfo.setDeck(deck);
+    }
+
+    @Override
+    public void setPlayedWonLost(String pwl) {
+        deckInfo.setPlayedWonLost(pwl);
     }
 
 }

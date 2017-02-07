@@ -49,4 +49,8 @@ public class DeckInfoPanel extends TexturedPanel {
         descViewer.setDeckDescription(aDeck);
     }
 
+    public void setPlayedWonLost(String pwl) {
+        statsViewer.setPlayedWonLost(pwl);
+    }
+
 }
