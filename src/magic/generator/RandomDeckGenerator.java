@@ -38,12 +38,10 @@ public class RandomDeckGenerator {
 
         spellCards.clear();
         final List<MagicCardDefinition> cardPool = CardDefinitions.getSpellCards();
-        for (int rarity =  getMinRarity(); rarity <= getMaxRarity(); rarity++) {
+        for (int rarity = getMinRarity(); rarity <= getMaxRarity(); rarity++) {
             for (final MagicCardDefinition card : cardPool) {
                 if (card.getRarity() >= getMinRarity() && card.getRarity() <= rarity && cubeDefinition.isCardLegal(card)) {
-                    if (acceptPossibleSpellCard(card)) {
-                        spellCards.add(card);
-                    }
+                    spellCards.add(card);
                 }
             }
         }
@@ -57,10 +55,6 @@ public class RandomDeckGenerator {
         return 4;
     }
 
-    public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
-        return true;
-    }
-
     private void genLands() {
         if (cubeDefinition == null) {
             return;
@@ -68,7 +62,7 @@ public class RandomDeckGenerator {
 
         landCards.clear();
         CardDefinitions.getNonBasicLandCards()
-            .filter(card -> cubeDefinition.isCardLegal(card) && acceptPossibleLandCard(card))
+            .filter(card -> cubeDefinition.isCardLegal(card))
             .forEach(card -> addCopiesToLandCardsList(card, 4));
     }
 
@@ -76,10 +70,6 @@ public class RandomDeckGenerator {
         for (int count = amount; count > 0; count--) {
             landCards.add(aCard);
         }
-    }
-
-    public boolean acceptPossibleLandCard(final MagicCardDefinition card) {
-        return true;
     }
 
     public void generateDeck(final int size, final MagicDeckProfile profile, final MagicDeck deck) {
