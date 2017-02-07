@@ -12,6 +12,7 @@ class DeckPanel extends JPanel implements IDeckView {
     private final DeckViewTablePanel tablePanel;
     private MagicDeck deck = new MagicDeck();
     private boolean isNewDeck = true;
+    private MagicCardDefinition selectCard;
 
     DeckPanel() {
         this.tablePanel = new DeckViewTablePanel(deck);
@@ -33,11 +34,21 @@ class DeckPanel extends JPanel implements IDeckView {
         }
     }
 
+    void setDeck(MagicDeck deck, MagicCardDefinition selectCard) {
+        if (this.deck != deck) {
+            this.deck = deck;
+            isNewDeck = true;
+        }
+        this.selectCard = selectCard;
+    }
+
     @Override
     public void notifyShowing() {
         if (isNewDeck) {
-            tablePanel.setCards(deck);
+            tablePanel.setCards(deck, selectCard);
             isNewDeck = false;
+        } else {
+            tablePanel.setSelectedCard(selectCard);
         }
     }
 

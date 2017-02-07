@@ -111,16 +111,20 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
         setLayout(miglayout);
     }
 
-    void doRefreshViews() {
-        deckPanel.setDeck(deck);
+    private void doRefreshViews(MagicCardDefinition selectCard) {
+        deckPanel.setDeck(deck, selectCard);
         legalityPanel.setDeck(deck);
         statsPanel.setDeck(deck);
         setView(activeView);
     }
 
-    public void setDeck(MagicDeck deck) {
+    public void setDeck(MagicDeck deck, MagicCardDefinition selectCard) {
         this.deck = deck;
-        doRefreshViews();
+        doRefreshViews(selectCard);
+    }
+
+    public void setDeck(MagicDeck deck) {
+        setDeck(deck, null);
     }
 
     @Override

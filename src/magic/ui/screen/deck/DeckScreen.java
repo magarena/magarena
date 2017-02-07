@@ -1,20 +1,16 @@
 package magic.ui.screen.deck;
 
-import java.nio.file.Path;
-import magic.data.DeckType;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
-public class DeckScreen extends HeaderFooterScreen
-    implements IDeckConsumer {
+public class DeckScreen extends HeaderFooterScreen {
 
     // translatable strings
     private static final String _S2 = "Sample Hand";
@@ -38,7 +34,7 @@ public class DeckScreen extends HeaderFooterScreen
                 MenuButton.build(this::showDeckImageView,
                         MagicIcon.TILED, MText.get(_S5), MText.get(_S6))
         );
-        setDeck(deck);
+        deckStatusPanel.setDeck(deck, false);
     }
 
     public DeckScreen(final MagicDeck deck) {
@@ -64,20 +60,4 @@ public class DeckScreen extends HeaderFooterScreen
     private void showInvalidActionMessage(final String message) {
         ScreenController.showWarningMessage(message);
     }
-
-    @Override
-    public void setDeck(MagicDeck deck) {
-        screenContent.setDeck(deck);
-        deckStatusPanel.setDeck(deck, false);
-    }
-
-    @Override
-    public boolean setDeck(MagicDeck deck, Path deckPath) {
-        setDeck(deck);
-        return true;
-    }
-
-    @Override
-    public void setDeck(String deckName, DeckType deckType) { }
-
 }

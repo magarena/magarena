@@ -12,6 +12,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.SwingUtilities;
 import javax.swing.event.TableModelEvent;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
 import magic.ui.screen.decks.ICardsTableListener;
 
 @SuppressWarnings("serial")
@@ -77,13 +78,17 @@ public class DeckViewTablePanel extends CardsTablePanel {
         };
     }
 
-    public void setCards(final List<MagicCardDefinition> defs) {
+    private void setCards(final List<MagicCardDefinition> defs) {
         ignoreListSelectionListener = true;
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
         ignoreListSelectionListener = false;
-        reselectLastCards();
+    }
+
+    public void setCards(MagicDeck deck, MagicCardDefinition selectCard) {
+        setCards(deck);
+        setSelectedCard(selectCard);
     }
 
     private void notifyCardSelected(MagicCardDefinition card) {
@@ -124,11 +129,12 @@ public class DeckViewTablePanel extends CardsTablePanel {
     }
 
     public void setSelectedCard(MagicCardDefinition card) {
-        final int index = tableModel.findCardIndex(card);
+        int index = card != null ? tableModel.findCardIndex(card) : -1;
         if (index != -1) {
             table.getSelectionModel().addSelectionInterval(index, index);
             scrollRowToViewportCenter(index);
         } else if (tableModel.getRowCount() > 0) {
+            // no card specified, select first row.
             table.getSelectionModel().addSelectionInterval(0, 0);
         }
     }
