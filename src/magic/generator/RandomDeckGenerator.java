@@ -1,16 +1,16 @@
 package magic.generator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import magic.data.CardDefinitions;
+import magic.data.DeckGenerator;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
-
-import java.util.ArrayList;
-import java.util.List;
-import magic.data.DeckGenerator;
 
 public class RandomDeckGenerator {
 
