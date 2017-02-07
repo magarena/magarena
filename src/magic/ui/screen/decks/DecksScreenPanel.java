@@ -5,9 +5,10 @@ import java.nio.file.Path;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.widget.cards.table.CardTablePanelB;
+import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.widget.deck.stats.PwlWorker;
 import magic.ui.widget.duel.viewer.CardViewer;
@@ -15,15 +16,16 @@ import magic.utility.DeckUtils;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DecksScreenPanel extends JPanel implements IDeckConsumer {
+class DecksScreenPanel extends JPanel
+    implements IDeckConsumer, ICardsTableListener {
 
     private MagicDeck selectedDeck = null;
     private Path deckFilePath = null;
-    private final CardTablePanelB deckTable;
     private final CardViewer cardViewer = new CardViewer();
     private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
     private final DeckStatusPanel deckStatusPanel;
     private final SidebarPanel sidebar;
+    private final DeckViewsPanel viewsPanel;
     private PwlWorker pwlWorker;
 
     DecksScreenPanel(DeckStatusPanel deckStatusPanel) {
@@ -33,16 +35,14 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
         setOpaque(false);
 
         selectedDeck = new MagicDeck();
-        deckTable = new CardTablePanelB(selectedDeck, true);
-        deckTable.addCardSelectionListener(cardViewer);
-        deckTable.showCardCount(true);
 
         sidebar = new SidebarPanel(this);
+        viewsPanel = new DeckViewsPanel();
+        viewsPanel.setCardsTableListeners(this);
 
-        setLayout(new MigLayout("insets 0, gap 0"));
-        add(sidebar, "h 100%");
-        add(getDeckDetailsPane(), "w 100%, h 100%");
-
+        setLayout(new MigLayout("insets 0", "[]0[fill, grow]", "fill, grow"));
+        add(sidebar);
+        add(getDeckDetailsPane());
     }
 
     MagicDeck getDeck() {
@@ -55,7 +55,7 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
 
     private JSplitPane getDeckDetailsPane() {
         splitter.setOneTouchExpandable(false);
-        splitter.setLeftComponent(deckTable);
+        splitter.setLeftComponent(viewsPanel);
         splitter.setRightComponent(getCardDetailsPanel());
         splitter.setDividerSize(14);
         splitter.setBorder(null);
@@ -85,18 +85,17 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
             selectedDeck = deck;
             deckFilePath = deckPath;
             sidebar.setDeck(deck);
-            deckTable.setCards(deck);
             deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
             splitter.setVisible(deck.isValid() || deck.size() > 0);
         } else {
             selectedDeck = null;
             deckFilePath = null;
             sidebar.setDeck(selectedDeck);
-            deckTable.setCards(deck);
             deckStatusPanel.setDeck(null, false);
             splitter.setVisible(false);
         }
         doPWLStatsQuery(deck);
+        viewsPanel.setDeck(deck);
         return true;
     }
 
@@ -107,8 +106,22 @@ class DecksScreenPanel extends JPanel implements IDeckConsumer {
 
     private void doPWLStatsQuery(MagicDeck deck) {
         pwlWorker = new PwlWorker(deck);
-        pwlWorker.setListeners(sidebar);
+        pwlWorker.setListeners(sidebar, viewsPanel);
         pwlWorker.execute();
     }
 
+    @Override
+    public void onCardSelected(MagicCardDefinition card) {
+        cardViewer.setCard(card);
+    }
+
+    @Override
+    public void onLeftClick(MagicCardDefinition card) {
+        // not applicable.
+    }
+
+    @Override
+    public void onRightClick(MagicCardDefinition card) {
+        new CardImageOverlay(card);
+    }
 }
