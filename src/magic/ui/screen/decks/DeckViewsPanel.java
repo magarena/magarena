@@ -97,7 +97,6 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
     }
 
     private void setView(IDeckView aView) {
-        System.out.println("DeckViewsPanel.setView");
         aView.notifyShowing();
         if (activeView != null) {
             activeView.setVisible(false);
@@ -113,7 +112,6 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
     }
 
     void doRefreshViews() {
-        System.out.println("DeckViewsPanel.doRefreshViews");
         deckPanel.setDeck(deck);
         legalityPanel.setDeck(deck);
         statsPanel.setDeck(deck);

@@ -126,7 +126,6 @@ public class LegalityPanel extends JPanel
 
     @Override
     public void notifyShowing() {
-        System.out.println("LegalityPanel.notifyShowing");
         formatsLegalityPanel.setDeck(deck);
     }
 

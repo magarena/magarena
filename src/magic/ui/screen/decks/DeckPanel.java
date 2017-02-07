@@ -35,7 +35,6 @@ class DeckPanel extends JPanel implements IDeckView {
 
     @Override
     public void notifyShowing() {
-        System.out.println("DeckPanel.notifyShowing");
         if (isNewDeck) {
             tablePanel.setCards(deck);
             isNewDeck = false;

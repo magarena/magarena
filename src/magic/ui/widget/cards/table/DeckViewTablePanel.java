@@ -40,11 +40,7 @@ public class DeckViewTablePanel extends CardsTablePanel {
                 ListSelectionModel lsm = table.getSelectionModel();
                 // If cell selection is enabled, both row and column change events are fired
                 if (ev.getSource() == lsm && table.getRowSelectionAllowed()) {
-                    MagicCardDefinition card = tableModel.getCardDef(lsm.getLeadSelectionIndex());
-                    if (card == null) {
-                        System.out.println(tableModel.getRowCount() + ", " + lsm.getLeadSelectionIndex());
-                    }
-                    notifyCardSelected(card);
+                    notifyCardSelected(tableModel.getCardDef(lsm.getLeadSelectionIndex()));
                 }
             }
         });
@@ -82,7 +78,6 @@ public class DeckViewTablePanel extends CardsTablePanel {
     }
 
     public void setCards(final List<MagicCardDefinition> defs) {
-        System.out.println("DeckViewTablePanel.setCards: " + defs.size());
         ignoreListSelectionListener = true;
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
@@ -92,7 +87,6 @@ public class DeckViewTablePanel extends CardsTablePanel {
     }
 
     private void notifyCardSelected(MagicCardDefinition card) {
-        System.out.println("DeckViewTablePanel.notifyCardSelected: " + card + ", l=" + listeners.size());
         for (ICardsTableListener listener : listeners) {
             SwingUtilities.invokeLater(() -> {
                 listener.onCardSelected(card == null ? MagicCardDefinition.UNKNOWN : card);
