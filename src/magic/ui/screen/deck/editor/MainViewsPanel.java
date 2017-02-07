@@ -175,10 +175,6 @@ class MainViewsPanel extends JPanel
             LegalityPanel.CP_CARD_SELECTED,
             evt -> deckPanel.setSelectedCard(legalityPanel.getSelectedCard())
         );
-        legalityPanel.addPropertyChangeListener(
-            LegalityPanel.CP_CARD_DCLICKED,
-            evt -> deckPanel.setSelectedCard(legalityPanel.getSelectedCard())
-        );
     }
 
     private void doAddCardToDeck(final MagicCardDefinition card) {

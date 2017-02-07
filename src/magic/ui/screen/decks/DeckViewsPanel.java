@@ -130,6 +130,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
 
     public void setCardsTableListeners(ICardsTableListener... listeners) {
         deckPanel.setCardsTableListeners(listeners);
+        legalityPanel.setCardsTableListeners(listeners);
     }
 
     public void setSelectedCard(MagicCardDefinition card) {

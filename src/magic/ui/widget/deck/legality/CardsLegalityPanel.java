@@ -8,6 +8,9 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
@@ -25,10 +28,11 @@ import magic.data.MagicFormat;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.MagicImages;
 import magic.translate.MText;
 import magic.translate.StringContext;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
+import magic.ui.screen.decks.ICardsTableListener;
 import magic.ui.widget.M.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
@@ -45,8 +49,6 @@ public class CardsLegalityPanel extends JPanel {
 
     // fired when selection changes.
     public static final String CP_CARD_SELECTED = "019f0246-bd63-4efd-a7cf-fefabea053e3";
-    // fired on mouse event.
-    public static final String CP_CARD_DCLICKED = "02bd98e4-fccf-4152-bcef-c5ea85c5313b";
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 23; //pixels
@@ -59,6 +61,7 @@ public class CardsLegalityPanel extends JPanel {
     private int lastSelectedRow = -1;
     private final JLabel titleLabel;
     private  MagicFormat magicFormat;
+    private final List<ICardsTableListener> listeners = new ArrayList<>();
 
     public CardsLegalityPanel() {
 
@@ -121,11 +124,28 @@ public class CardsLegalityPanel extends JPanel {
             public void valueChanged(ListSelectionEvent e) {
                 isAdjusting = e.getValueIsAdjusting();
                 if (!isAdjusting) {
-                    firePropertyChange(CP_CARD_SELECTED, false, true);
                     lastSelectedRow = table.getSelectedRow();
+                    notifyCardSelected(tableModel.getCardDef(lastSelectedRow));
+                    firePropertyChange(CP_CARD_SELECTED, false, true);
                 }
             }
         };
+    }
+
+    private void notifyOnLeftClick(MagicCardDefinition card) {
+        for (ICardsTableListener listener : listeners) {
+            SwingUtilities.invokeLater(() -> {
+                listener.onLeftClick(card);
+            });
+        }
+    }
+
+    private void notifyOnRightClick(MagicCardDefinition card) {
+        for (ICardsTableListener listener : listeners) {
+            SwingUtilities.invokeLater(() -> {
+                listener.onRightClick(card);
+            });
+        }
     }
 
     private MouseAdapter getTableMouseAdapter() {
@@ -133,10 +153,13 @@ public class CardsLegalityPanel extends JPanel {
             @Override
             public void mousePressed(MouseEvent e) {
                 if (!isAdjusting) {
+                    int mouseRow = table.rowAtPoint(e.getPoint());
+                    MagicCardDefinition card = tableModel.getCardDef(mouseRow);
+                    card = card == null ? MagicCardDefinition.UNKNOWN : card;
                     if (SwingUtilities.isLeftMouseButton(e)) {
-                        if (hasDoubleClickListeners() && e.getClickCount() == 2) {
-                            firePropertyChange(CP_CARD_DCLICKED, false, true);
-                        }
+                        notifyOnLeftClick(card);
+                    } else if (SwingUtilities.isRightMouseButton(e)) {
+                        notifyOnRightClick(card);
                     }
                 }
             }
@@ -195,10 +218,6 @@ public class CardsLegalityPanel extends JPanel {
             setBorder(noFocusBorder);
             return this;
         }
-    }
-
-    private boolean hasDoubleClickListeners() {
-        return getPropertyChangeListeners(CP_CARD_DCLICKED).length > 0;
     }
 
     private static class LegalityCellRenderer extends DefaultTableCellRenderer {
@@ -268,4 +287,16 @@ public class CardsLegalityPanel extends JPanel {
         }
     }
 
+    private void notifyCardSelected(MagicCardDefinition card) {
+        for (ICardsTableListener listener : listeners) {
+            SwingUtilities.invokeLater(() -> {
+                listener.onCardSelected(card == null ? MagicCardDefinition.UNKNOWN : card);
+            });
+        }
+    }
+
+    void setCardsTableListeners(ICardsTableListener[] listeners) {
+        this.listeners.clear();
+        this.listeners.addAll(Arrays.asList(listeners));
+    }
 }

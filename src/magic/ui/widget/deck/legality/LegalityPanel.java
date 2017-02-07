@@ -15,6 +15,7 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.screen.deck.editor.IDeckEditorView;
+import magic.ui.screen.decks.ICardsTableListener;
 import magic.ui.screen.decks.IDeckView;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
@@ -37,7 +38,6 @@ public class LegalityPanel extends JPanel
 
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = "c5f420c3-dc1c-4d1b-a07b-0d055716207d";
-    public static final String CP_CARD_DCLICKED = "0dda4041-f44d-4980-8c87-c11cf7b1dc06";
 
     private static final JPanel HELP_PANEL = new LegalityLegendPanel();
 
@@ -65,14 +65,6 @@ public class LegalityPanel extends JPanel
                 @Override
                 public void propertyChange(PropertyChangeEvent evt) {
                     firePropertyChange(CP_CARD_SELECTED, false, true);
-                }
-            });
-        cardsLegalityPanel.addPropertyChangeListener(
-            CardsLegalityPanel.CP_CARD_DCLICKED,
-            new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    firePropertyChange(CP_CARD_DCLICKED, false, true);
                 }
             });
         formatsLegalityPanel.addPropertyChangeListener(
@@ -161,6 +153,10 @@ public class LegalityPanel extends JPanel
             return getIconLabel(magicIcon, text, null);
         }
 
+    }
+
+    public void setCardsTableListeners(ICardsTableListener[] listeners) {
+        cardsLegalityPanel.setCardsTableListeners(listeners);
     }
 
 }
