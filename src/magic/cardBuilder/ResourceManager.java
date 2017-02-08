@@ -3,12 +3,11 @@ package magic.cardBuilder;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import javax.imageio.ImageIO;
-import java.util.HashMap;
 import java.util.Map;
+import javax.imageio.ImageIO;
 
-import magic.ui.helpers.ImageHelper;
 import magic.data.LRUCache;
+import magic.ui.helpers.ImageHelper;
 
 public class ResourceManager {
 
@@ -23,24 +22,6 @@ public class ResourceManager {
 
     private static InputStream getJarResourceStream(String filename) {
         return instance.getClass().getResourceAsStream(filename);
-    }
-
-    private static BufferedImage getComponent(String imageName) {
-        String fName = FRAMES_FOLDER + imageName;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            return ImageHelper.getOptimizedImage(ImageIO.read(is));
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    private static BufferedImage getImage(String name) {
-        String fName = "/cardbuilder/images/" + name;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            return ImageHelper.getOptimizedImage(ImageIO.read(is));
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
     }
 
     public static BufferedImage getImage(final CardResource cr) {
