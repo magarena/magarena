@@ -50,4 +50,8 @@ public enum DeckType {
             : EnumSet.range(Preconstructed, Firemind);
     }
 
+    public static final DeckType[] getDuelDeckTypes() {
+        return EnumSet.range(Random, Firemind).toArray(new DeckType[0]);
+    }
+
 }

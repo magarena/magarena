@@ -16,9 +16,9 @@ import javax.swing.SwingUtilities;
 import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
 import magic.translate.MText;
+import magic.ui.FontsAndBorders;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
-import magic.ui.FontsAndBorders;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.FiremindDecksComboxBox;
 import magic.ui.widget.deck.PrebuiltDecksComboxBox;
@@ -68,7 +68,7 @@ public class DeckChooserDialog extends MagicDialog {
 
     private JComboBox<DeckType> getDeckTypeComboBox() {
         final JComboBox<DeckType> cbo = new JComboBox<>();
-        cbo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
+        cbo.setModel(new DefaultComboBoxModel<>(DeckType.getDuelDeckTypes()));
         cbo.setLightWeightPopupEnabled(false);
         cbo.setFocusable(false);
         cbo.setFont(FontsAndBorders.FONT2);
