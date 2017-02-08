@@ -19,6 +19,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
+import magic.cardBuilder.CardResource;
 
 public class PTFrame {
 
@@ -70,7 +71,7 @@ public class PTFrame {
         int width = 12;
         int height = 34;
         if (!loyaltyText.equals("0")) {
-            BufferedImage loyaltyImage = ResourceManager.loyaltyPanel;
+            BufferedImage loyaltyImage = ResourceManager.getImage(CardResource.loyaltyPanel);
             g2d.drawImage(loyaltyImage, 302, 460, null);
             drawPanelText(g2d, new Rectangle(326, 462, width, height), loyaltyText, cardLoyaltyFont);
         }
@@ -123,11 +124,11 @@ public class PTFrame {
 
     private static BufferedImage getLoyaltyPanel(String activation) {
         if (activation.startsWith("+")) {
-            return ResourceManager.loyaltyUp;
+            return ResourceManager.getImage(CardResource.loyaltyUp);
         } else if (activation.startsWith("0")) {
-            return ResourceManager.loyaltyEven;
+            return ResourceManager.getImage(CardResource.loyaltyEven);
         } else {
-            return ResourceManager.loyaltyDown;
+            return ResourceManager.getImage(CardResource.loyaltyDown);
         }
     }
 
@@ -200,47 +201,47 @@ public class PTFrame {
     private static BufferedImage getPTPanel(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.whitePTPanel;
+                return ResourceManager.getImage(CardResource.whitePTPanel);
             case Blue:
-                return ResourceManager.bluePTPanel;
+                return ResourceManager.getImage(CardResource.bluePTPanel);
             case Black:
-                return ResourceManager.blackPTPanel;
+                return ResourceManager.getImage(CardResource.blackPTPanel);
             case Red:
-                return ResourceManager.redPTPanel;
+                return ResourceManager.getImage(CardResource.redPTPanel);
             case Green:
-                return ResourceManager.greenPTPanel;
+                return ResourceManager.getImage(CardResource.greenPTPanel);
             default:
-                return ResourceManager.colorlessPTPanel;
+                return ResourceManager.getImage(CardResource.colorlessPTPanel);
         }
     }
 
     private static BufferedImage getHiddenPTPanel(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.whiteHiddenPTPanel;
+                return ResourceManager.getImage(CardResource.whiteHiddenPTPanel);
             case Blue:
-                return ResourceManager.blueHiddenPTPanel;
+                return ResourceManager.getImage(CardResource.blueHiddenPTPanel);
             case Black:
-                return ResourceManager.blackHiddenPTPanel;
+                return ResourceManager.getImage(CardResource.blackHiddenPTPanel);
             case Red:
-                return ResourceManager.redHiddenPTPanel;
+                return ResourceManager.getImage(CardResource.redHiddenPTPanel);
             case Green:
-                return ResourceManager.greenHiddenPTPanel;
+                return ResourceManager.getImage(CardResource.greenHiddenPTPanel);
             default:
-                return ResourceManager.colorlessHiddenPTPanel;
+                return ResourceManager.getImage(CardResource.colorlessHiddenPTPanel);
         }
     }
 
     private static BufferedImage getPTPanelImage(IRenderableCard cardDef) {
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
-            return ResourceManager.colorlessPTPanel;
+            return ResourceManager.getImage(CardResource.colorlessPTPanel);
         }
         if (cardDef.hasSubType(MagicSubType.Vehicle)) {
-            return ResourceManager.vehiclePTPanel;
+            return ResourceManager.getImage(CardResource.vehiclePTPanel);
         }
         //Hybrid cards use colorless PT panel and banners
         if (cardDef.isMulti()) {
-            return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.colorlessPTPanel : ResourceManager.multiPTPanel;
+            return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.getImage(CardResource.colorlessPTPanel) : ResourceManager.getImage(CardResource.multiPTPanel);
         }
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
@@ -248,18 +249,18 @@ public class PTFrame {
             }
         }
         if (cardDef.hasType(MagicType.Artifact)) {
-            return ResourceManager.artifactPTPanel;
+            return ResourceManager.getImage(CardResource.artifactPTPanel);
         }
-        return ResourceManager.colorlessPTPanel;
+        return ResourceManager.getImage(CardResource.colorlessPTPanel);
     }
 
     private static BufferedImage getHiddenPTPanelImage(IRenderableCard cardDef) {
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
-            return ResourceManager.colorlessHiddenPTPanel;
+            return ResourceManager.getImage(CardResource.colorlessHiddenPTPanel);
         }
         //Hybrid cards use colorless PT panel and banners
         if (cardDef.isMulti()) {
-            return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.colorlessHiddenPTPanel : ResourceManager.multiHiddenPTPanel;
+            return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.getImage(CardResource.colorlessHiddenPTPanel) : ResourceManager.getImage(CardResource.multiHiddenPTPanel);
         }
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
@@ -267,9 +268,9 @@ public class PTFrame {
             }
         }
         if (cardDef.hasType(MagicType.Artifact)) {
-            return ResourceManager.artifactHiddenPTPanel;
+            return ResourceManager.getImage(CardResource.artifactHiddenPTPanel);
         }
-        return ResourceManager.colorlessHiddenPTPanel;
+        return ResourceManager.getImage(CardResource.colorlessHiddenPTPanel);
     }
 
     private static String getLoyaltyText(IRenderableCard cardDef) {
@@ -314,20 +315,20 @@ public class PTFrame {
 
     static void drawTransformSymbol(BufferedImage cardImage, IRenderableCard cardDef) {
         Graphics2D g2d = cardImage.createGraphics();
-        BufferedImage typeSymbol = ResourceManager.daySymbol;
+        BufferedImage typeSymbol = ResourceManager.getImage(CardResource.daySymbol);
         if (cardDef.isHidden()) {
             if (cardDef.hasSubType(MagicSubType.Eldrazi)){
-                typeSymbol = ResourceManager.eldraziSymbol;
+                typeSymbol = ResourceManager.getImage(CardResource.eldraziSymbol);
             }
             else if (cardDef.isPlaneswalker() && !cardDef.getTransformedDefinition().isPlaneswalker()){
-                typeSymbol = ResourceManager.planeswalkerTypeSymbol;
+                typeSymbol = ResourceManager.getImage(CardResource.planeswalkerTypeSymbol);
             } else {
-                typeSymbol = ResourceManager.nightSymbol;
+                typeSymbol = ResourceManager.getImage(CardResource.nightSymbol);
             }
         } else if (cardDef.isCreature() && cardDef.getTransformedDefinition().isPlaneswalker()) {
-            typeSymbol = ResourceManager.sparkSymbol;
+            typeSymbol = ResourceManager.getImage(CardResource.sparkSymbol);
         } else if (cardDef.getTransformedDefinition().hasSubType(MagicSubType.Eldrazi)) {
-            typeSymbol = ResourceManager.moonSymbol;
+            typeSymbol = ResourceManager.getImage(CardResource.moonSymbol);
         }
         if (cardDef.isPlaneswalker()) {
             g2d.drawImage(typeSymbol, 21, 18, null);

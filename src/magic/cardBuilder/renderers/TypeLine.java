@@ -12,6 +12,7 @@ import magic.awt.MagicFont;
 import magic.model.MagicType;
 import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
+import magic.cardBuilder.CardResource;
 
 public class TypeLine {
     private static final Font cardTypeFont = MagicFont.JaceBelerenBold.get().deriveFont(Font.PLAIN, 16);
@@ -76,15 +77,15 @@ public class TypeLine {
     }
 
     public static void drawRarity(BufferedImage cardImage, IRenderableCard cardDef) {
-        BufferedImage rarity = ResourceManager.common;
+        BufferedImage rarity = ResourceManager.getImage(CardResource.common);
         if (cardDef.getRarityChar() == 'U') {
-            rarity = ResourceManager.uncommon;
+            rarity = ResourceManager.getImage(CardResource.uncommon);
         }
         if (cardDef.getRarityChar() == 'R') {
-            rarity = ResourceManager.rare;
+            rarity = ResourceManager.getImage(CardResource.rare);
         }
         if (cardDef.getRarityChar() == 'M') {
-            rarity = ResourceManager.mythic;
+            rarity = ResourceManager.getImage(CardResource.mythic);
         }
         Graphics2D g2d = cardImage.createGraphics();
         int ypos = 297;

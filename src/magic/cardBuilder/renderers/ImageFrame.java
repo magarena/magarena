@@ -13,6 +13,7 @@ import magic.ui.ImageFileIO;
 import magic.ui.MagicImages;
 import magic.model.IRenderableCard;
 import magic.cardBuilder.ResourceManager;
+import magic.cardBuilder.CardResource;
 import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 
@@ -21,15 +22,15 @@ public class ImageFrame {
     private static BufferedImage defaultBackground(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.defaultWhite);
+                return ResourceManager.newFrame(CardResource.defaultWhite);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.defaultBlue);
+                return ResourceManager.newFrame(CardResource.defaultBlue);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.defaultBlack);
+                return ResourceManager.newFrame(CardResource.defaultBlack);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.defaultRed);
+                return ResourceManager.newFrame(CardResource.defaultRed);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.defaultGreen);
+                return ResourceManager.newFrame(CardResource.defaultGreen);
         }
         return null;
     }
@@ -37,19 +38,19 @@ public class ImageFrame {
     private static BufferedImage defaultSymbol(MagicType type) {
         switch (type) {
             case Artifact:
-                return ResourceManager.newFrame(ResourceManager.artifactSymbol);
+                return ResourceManager.newFrame(CardResource.artifactSymbol);
             case Creature:
-                return ResourceManager.newFrame(ResourceManager.creatureSymbol);
+                return ResourceManager.newFrame(CardResource.creatureSymbol);
             case Enchantment:
-                return ResourceManager.newFrame(ResourceManager.enchantmentSymbol);
+                return ResourceManager.newFrame(CardResource.enchantmentSymbol);
             case Instant:
-                return ResourceManager.newFrame(ResourceManager.instantSymbol);
+                return ResourceManager.newFrame(CardResource.instantSymbol);
             case Land:
-                return ResourceManager.newFrame(ResourceManager.landSymbol);
+                return ResourceManager.newFrame(CardResource.landSymbol);
             case Planeswalker:
-                return ResourceManager.newFrame(ResourceManager.planeswalkerSymbol);
+                return ResourceManager.newFrame(CardResource.planeswalkerSymbol);
             case Sorcery:
-                return ResourceManager.newFrame(ResourceManager.sorcerySymbol);
+                return ResourceManager.newFrame(CardResource.sorcerySymbol);
             default:
                 return null;
         }
@@ -73,11 +74,11 @@ public class ImageFrame {
                 List<BufferedImage> colorDefaults = Frame.getColorPairOrder(cardDef).stream().filter(cardDef::hasColor).map(ImageFrame::defaultBackground).collect(Collectors.toList());
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorDefaults.get(0)),
-                    ResourceManager.newFrame(ResourceManager.defaultHybridBlend),
+                    ResourceManager.newFrame(CardResource.defaultHybridBlend),
                     ResourceManager.newFrame(colorDefaults.get(1))
                 );
             } else {
-                return ResourceManager.newFrame(ResourceManager.defaultMulti);
+                return ResourceManager.newFrame(CardResource.defaultMulti);
             }
         }
         for (MagicColor color : MagicColor.values()) {
@@ -86,12 +87,12 @@ public class ImageFrame {
             }
         }
         if (cardDef.hasType(MagicType.Land)) {
-            return ResourceManager.newFrame(ResourceManager.defaultLand);
+            return ResourceManager.newFrame(CardResource.defaultLand);
         }
         if (cardDef.hasType(MagicType.Artifact)) {
-            return ResourceManager.newFrame(ResourceManager.defaultArtifact);
+            return ResourceManager.newFrame(CardResource.defaultArtifact);
         }
-        return ResourceManager.newFrame(ResourceManager.defaultColorless);
+        return ResourceManager.newFrame(CardResource.defaultColorless);
     }
 
     private static BufferedImage getDefaultSymbol(IRenderableCard cardDef) {
@@ -100,14 +101,14 @@ public class ImageFrame {
         cardTypes.remove(MagicType.Tribal);
         if (cardTypes.size() > 1) {
             if (cardDef.isCreature()) {
-                return ResourceManager.newFrame(ResourceManager.creatureSymbol);
+                return ResourceManager.newFrame(CardResource.creatureSymbol);
             }
-            return ResourceManager.newFrame(ResourceManager.multiSymbol);
+            return ResourceManager.newFrame(CardResource.multiSymbol);
         }
         if (!cardTypes.isEmpty()) {
             return defaultSymbol(cardTypes.iterator().next());
         }
-        return ResourceManager.newFrame(ResourceManager.magarenaSymbol);
+        return ResourceManager.newFrame(CardResource.magarenaSymbol);
     }
 
     public static BufferedImage getCardImage(IRenderableCard cardDef) {
@@ -116,21 +117,21 @@ public class ImageFrame {
             if (cardDef.isPlaneswalker()) {
                 BufferedImage crop = ImageHelper.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 234);
                 if (OracleText.getPlaneswalkerAbilityCount(cardDef) <= 3) {
-                    BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
+                    BufferedImage blend = ResourceManager.newFrame(CardResource.getPlaneswalkerImageBlend);
                     return Frame.getBlendedFrame(new BufferedImage(320, 234, BufferedImage.TYPE_INT_ARGB), blend, crop);
                 } else {
                     BufferedImage cropSmall = crop.getSubimage(0, 0, 320, 201);
-                    BufferedImage blend = ImageHelper.scale(ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend), 320, 201);
+                    BufferedImage blend = ImageHelper.scale(ResourceManager.newFrame(CardResource.getPlaneswalkerImageBlend), 320, 201);
                     return Frame.getBlendedFrame(new BufferedImage(320, 210, BufferedImage.TYPE_INT_ARGB), blend, cropSmall);
                 }
             } else if (cardDef.isToken()) {
                 if (cardDef.hasText()) {
                     BufferedImage crop = ImageHelper.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 289);
-                    BufferedImage blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskSmall);
+                    BufferedImage blend = ResourceManager.newFrame(CardResource.tokenImageMaskSmall);
                     return Frame.getBlendedFrame(new BufferedImage(320, 289, BufferedImage.TYPE_INT_ARGB), blend, crop);
                 } else {
                     BufferedImage crop = ImageHelper.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 360);
-                    BufferedImage blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
+                    BufferedImage blend = ResourceManager.newFrame(CardResource.tokenImageMaskLarge);
                     return Frame.getBlendedFrame(new BufferedImage(320, 360, BufferedImage.TYPE_INT_ARGB), blend, crop);
                 }
             } else {
@@ -162,10 +163,10 @@ public class ImageFrame {
         BufferedImage blend;
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) <= 3) {
             HEIGHT = 234;
-            blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
+            blend = ResourceManager.newFrame(CardResource.getPlaneswalkerImageBlend);
         } else {
             HEIGHT = 201;
-            blend = ImageHelper.scale(ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend), WIDTH, HEIGHT);
+            blend = ImageHelper.scale(ResourceManager.newFrame(CardResource.getPlaneswalkerImageBlend), WIDTH, HEIGHT);
         }
         BufferedImage background = ImageHelper.scale(getDefaultBackground(cardDef), WIDTH, HEIGHT);
         BufferedImage symbol = ImageHelper.scale(getDefaultSymbol(cardDef), WIDTH, HEIGHT);
@@ -178,10 +179,10 @@ public class ImageFrame {
         BufferedImage blend;
         if (cardDef.hasText()) {
             HEIGHT = 289;
-            blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskSmall);
+            blend = ResourceManager.newFrame(CardResource.tokenImageMaskSmall);
         } else {
             HEIGHT = 360;
-            blend = ResourceManager.newFrame(ResourceManager.tokenImageMaskLarge);
+            blend = ResourceManager.newFrame(CardResource.tokenImageMaskLarge);
         }
         int WIDTH = 317;
         BufferedImage background = ImageHelper.scale(getDefaultBackground(cardDef), WIDTH, HEIGHT);

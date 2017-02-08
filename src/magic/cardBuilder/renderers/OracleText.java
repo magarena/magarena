@@ -26,6 +26,7 @@ import java.util.TreeMap;
 
 import magic.awt.MagicFont;
 import magic.cardBuilder.ResourceManager;
+import magic.cardBuilder.CardResource;
 import magic.model.IRenderableCard;
 import magic.model.MagicColor;
 import magic.model.MagicType;
@@ -139,49 +140,49 @@ public class OracleText {
     private static BufferedImage getLandImage(MagicColor color) {
         switch (color) {
             case Black:
-                return ResourceManager.blackLandImage;
+                return ResourceManager.getImage(CardResource.blackLandImage);
             case Blue:
-                return ResourceManager.blueLandImage;
+                return ResourceManager.getImage(CardResource.blueLandImage);
             case Green:
-                return ResourceManager.greenLandImage;
+                return ResourceManager.getImage(CardResource.greenLandImage);
             case Red:
-                return ResourceManager.redLandImage;
+                return ResourceManager.getImage(CardResource.redLandImage);
             case White:
-                return ResourceManager.whiteLandImage;
+                return ResourceManager.getImage(CardResource.whiteLandImage);
         }
         return null;
     }
 
     private static BufferedImage getHybridLandImage(Collection<MagicColor> colors) {
         if (colors.contains(MagicColor.Black) && colors.contains(MagicColor.Green)) {
-            return ResourceManager.bgLandImage;
+            return ResourceManager.getImage(CardResource.bgLandImage);
         }
         if (colors.contains(MagicColor.Black) && colors.contains(MagicColor.Red)) {
-            return ResourceManager.brLandImage;
+            return ResourceManager.getImage(CardResource.brLandImage);
         }
         if (colors.contains(MagicColor.Green) && colors.contains(MagicColor.Blue)) {
-            return ResourceManager.guLandImage;
+            return ResourceManager.getImage(CardResource.guLandImage);
         }
         if (colors.contains(MagicColor.Green) && colors.contains(MagicColor.White)) {
-            return ResourceManager.gwLandImage;
+            return ResourceManager.getImage(CardResource.gwLandImage);
         }
         if (colors.contains(MagicColor.Red) && colors.contains(MagicColor.Green)) {
-            return ResourceManager.rgLandImage;
+            return ResourceManager.getImage(CardResource.rgLandImage);
         }
         if (colors.contains(MagicColor.Red) && colors.contains(MagicColor.White)) {
-            return ResourceManager.rwLandImage;
+            return ResourceManager.getImage(CardResource.rwLandImage);
         }
         if (colors.contains(MagicColor.Blue) && colors.contains(MagicColor.Black)) {
-            return ResourceManager.ubLandImage;
+            return ResourceManager.getImage(CardResource.ubLandImage);
         }
         if (colors.contains(MagicColor.Blue) && colors.contains(MagicColor.Red)) {
-            return ResourceManager.urLandImage;
+            return ResourceManager.getImage(CardResource.urLandImage);
         }
         if (colors.contains(MagicColor.White) && colors.contains(MagicColor.Black)) {
-            return ResourceManager.wbLandImage;
+            return ResourceManager.getImage(CardResource.wbLandImage);
         }
         if (colors.contains(MagicColor.White) && colors.contains(MagicColor.Blue)) {
-            return ResourceManager.wuLandImage;
+            return ResourceManager.getImage(CardResource.wuLandImage);
         }
         return null;
     }

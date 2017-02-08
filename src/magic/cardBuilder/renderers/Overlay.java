@@ -9,6 +9,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import magic.cardBuilder.ResourceManager;
+import magic.cardBuilder.CardResource;
 import magic.model.IRenderableCard;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
@@ -18,88 +19,88 @@ public class Overlay {
     static BufferedImage getDevoidMask(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteDevoidFrame);
+                return ResourceManager.newFrame(CardResource.whiteDevoidFrame);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueDevoidFrame);
+                return ResourceManager.newFrame(CardResource.blueDevoidFrame);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackDevoidFrame);
+                return ResourceManager.newFrame(CardResource.blackDevoidFrame);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenDevoidFrame);
+                return ResourceManager.newFrame(CardResource.greenDevoidFrame);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redDevoidFrame);
+                return ResourceManager.newFrame(CardResource.redDevoidFrame);
         }
-        return ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
+        return ResourceManager.newFrame(CardResource.colorlessDevoidFrame);
     }
 
     static BufferedImage getMiracleMask(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteMiracle);
+                return ResourceManager.newFrame(CardResource.whiteMiracle);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueMiracle);
+                return ResourceManager.newFrame(CardResource.blueMiracle);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackMiracle);
+                return ResourceManager.newFrame(CardResource.blackMiracle);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenMiracle);
+                return ResourceManager.newFrame(CardResource.greenMiracle);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redMiracle);
+                return ResourceManager.newFrame(CardResource.redMiracle);
         }
-        return ResourceManager.newFrame(ResourceManager.colorlessMiracle);
+        return ResourceManager.newFrame(CardResource.colorlessMiracle);
     }
 
     static BufferedImage getLevellerMask(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLevellerBox);
+                return ResourceManager.newFrame(CardResource.whiteLevellerBox);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLevellerBox);
+                return ResourceManager.newFrame(CardResource.blueLevellerBox);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLevellerBox);
+                return ResourceManager.newFrame(CardResource.blackLevellerBox);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLevellerBox);
+                return ResourceManager.newFrame(CardResource.greenLevellerBox);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redLevellerBox);
+                return ResourceManager.newFrame(CardResource.redLevellerBox);
         }
-        return ResourceManager.newFrame(ResourceManager.colorlessLevellerBox);
+        return ResourceManager.newFrame(CardResource.colorlessLevellerBox);
     }
 
     static BufferedImage getLandMask(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLandBox);
+                return ResourceManager.newFrame(CardResource.whiteLandBox);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLandBox);
+                return ResourceManager.newFrame(CardResource.blueLandBox);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLandBox);
+                return ResourceManager.newFrame(CardResource.blackLandBox);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLandBox);
+                return ResourceManager.newFrame(CardResource.greenLandBox);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redLandBox);
+                return ResourceManager.newFrame(CardResource.redLandBox);
         }
-        return ResourceManager.newFrame(ResourceManager.multiLandBox);
+        return ResourceManager.newFrame(CardResource.multiLandBox);
     }
 
     static BufferedImage getLevellerLandMask(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLandLevellerBox);
+                return ResourceManager.newFrame(CardResource.whiteLandLevellerBox);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLandLevellerBox);
+                return ResourceManager.newFrame(CardResource.blueLandLevellerBox);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLandLevellerBox);
+                return ResourceManager.newFrame(CardResource.blackLandLevellerBox);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLandLevellerBox);
+                return ResourceManager.newFrame(CardResource.greenLandLevellerBox);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redLandLevellerBox);
+                return ResourceManager.newFrame(CardResource.redLandLevellerBox);
         }
-        return ResourceManager.newFrame(ResourceManager.colorlessLandLevellerBox);
+        return ResourceManager.newFrame(CardResource.colorlessLandLevellerBox);
     }
 
     static BufferedImage getDevoidOverlay(IRenderableCard cardDef) {
         boolean artifact = cardDef.isArtifact();
-        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
+        BufferedImage baseFrame = ResourceManager.newFrame(CardResource.colorlessDevoidFrame);
         if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.artifactDevoidFrame);
+            baseFrame = ResourceManager.newFrame(CardResource.artifactDevoidFrame);
         }
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
@@ -107,11 +108,11 @@ public class Overlay {
                 colorFrames.addAll(Frame.getColorPairOrder(cardDef).stream().map(Overlay::getDevoidMask).collect(Collectors.toList()));
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
-                    ResourceManager.newFrame(ResourceManager.gainHybridBlend),
+                    ResourceManager.newFrame(CardResource.gainHybridBlend),
                     ResourceManager.newFrame(colorFrames.get(1))
                 );
             } else {
-                return ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
+                return ResourceManager.newFrame(CardResource.multiDevoidFrame);
             }
         }
         //Mono
@@ -126,9 +127,9 @@ public class Overlay {
 
     static BufferedImage getMiracleOverlay(IRenderableCard cardDef) {
         boolean artifact = cardDef.isArtifact();
-        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessMiracle);
+        BufferedImage baseFrame = ResourceManager.newFrame(CardResource.colorlessMiracle);
         if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.artifactMiracle);
+            baseFrame = ResourceManager.newFrame(CardResource.artifactMiracle);
         }
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
@@ -136,11 +137,11 @@ public class Overlay {
                 colorFrames.addAll(Frame.getColorPairOrder(cardDef).stream().map(Overlay::getMiracleMask).collect(Collectors.toList()));
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
-                    ResourceManager.newFrame(ResourceManager.gainHybridBlend),
+                    ResourceManager.newFrame(CardResource.gainHybridBlend),
                     ResourceManager.newFrame(colorFrames.get(1))
                 );
             } else {
-                return ResourceManager.newFrame(ResourceManager.multiMiracle);
+                return ResourceManager.newFrame(CardResource.multiMiracle);
             }
         }
         //Mono
@@ -157,9 +158,9 @@ public class Overlay {
         boolean artifact = cardDef.isArtifact();
         boolean land = cardDef.isLand();
         Set<MagicColor> landColors = new HashSet<>();
-        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLevellerBox);
+        BufferedImage baseFrame = ResourceManager.newFrame(CardResource.colorlessLevellerBox);
         if (artifact) {
-            return ResourceManager.newFrame(ResourceManager.artifactLevellerBox);
+            return ResourceManager.newFrame(CardResource.artifactLevellerBox);
         }
         if (land) {
             landColors = Frame.getLandColors(cardDef);
@@ -174,11 +175,11 @@ public class Overlay {
                 }
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
-                    ResourceManager.newFrame(ResourceManager.gainTextBoxHybridBlend),
+                    ResourceManager.newFrame(CardResource.gainTextBoxHybridBlend),
                     ResourceManager.newFrame(colorFrames.get(1))
                 );
             } else {
-                return ResourceManager.newFrame(land ? ResourceManager.multiLandLevellerBox : ResourceManager.multiLevellerBox);
+                return ResourceManager.newFrame(land ? CardResource.multiLandLevellerBox : CardResource.multiLevellerBox);
             }
         }
         //Mono
@@ -188,7 +189,7 @@ public class Overlay {
             }
         }
         //Colorless
-        return land ? ResourceManager.newFrame(ResourceManager.colorlessLandLevellerBox) : baseFrame;
+        return land ? ResourceManager.newFrame(CardResource.colorlessLandLevellerBox) : baseFrame;
     }
 
     static BufferedImage getLandOverlay(IRenderableCard cardDef) {
@@ -199,11 +200,11 @@ public class Overlay {
                 colorFrames.addAll(Frame.getColorPairOrder(landColors).stream().map(Overlay::getLandMask).collect(Collectors.toList()));
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
-                    ResourceManager.newFrame(ResourceManager.gainTextBoxHybridBlend),
+                    ResourceManager.newFrame(CardResource.gainTextBoxHybridBlend),
                     ResourceManager.newFrame(colorFrames.get(1))
                 );
             } else {
-                return ResourceManager.newFrame(ResourceManager.multiLandBox);
+                return ResourceManager.newFrame(CardResource.multiLandBox);
             }
         }
         //Mono
@@ -212,7 +213,7 @@ public class Overlay {
                 return getLandMask(color);
             }
         }
-        return ResourceManager.newFrame(ResourceManager.multiLandBox);
+        return ResourceManager.newFrame(CardResource.multiLandBox);
     }
 
     public static void drawOverlay(BufferedImage cardImage, IRenderableCard cardDef) {
