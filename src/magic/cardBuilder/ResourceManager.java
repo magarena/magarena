@@ -4,10 +4,16 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import javax.imageio.ImageIO;
+import java.util.HashMap;
+import java.util.Map;
 
 import magic.ui.helpers.ImageHelper;
+import magic.data.LRUCache;
 
 public class ResourceManager {
+
+    private static final int MAX_IMAGES = 100;
+    private static final Map<String, BufferedImage> cache = new LRUCache<>(MAX_IMAGES);
 
     // Used as reference class for accessing JAR resources.
     private static final ResourceManager instance = new ResourceManager();
@@ -228,7 +234,8 @@ public class ResourceManager {
     public static final BufferedImage tokenImageMaskSmall = getComponent("token/imagemask2.png");
     public static final BufferedImage tokenImageMaskLarge = getComponent("token/imagemask.png");
 
-    private static final String FRAMES_FOLDER = "/cardbuilder/frames/";
+    static final String FRAMES_FOLDER = "/cardbuilder/frames/";
+    static final String IMAGES_FOLDER = "/cardbuilder/images/";
 
     private static InputStream getJarResourceStream(String filename) {
         return instance.getClass().getResourceAsStream(filename);
@@ -243,10 +250,24 @@ public class ResourceManager {
         }
     }
 
-    public static BufferedImage getImage(String name) {
+    private static BufferedImage getImage(String name) {
         String fName = "/cardbuilder/images/" + name;
         try (final InputStream is = getJarResourceStream(fName)) {
             return ImageHelper.getOptimizedImage(ImageIO.read(is));
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    private static BufferedImage getImage(final CardResource cr) {
+        String fName = cr.path;
+        if (cache.containsKey(fName)) {
+            return cache.get(fName);
+        }
+        try (final InputStream is = getJarResourceStream(fName)) {
+            final BufferedImage bi = ImageHelper.getOptimizedImage(ImageIO.read(is));
+            cache.put(fName, bi);
+            return bi;
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
