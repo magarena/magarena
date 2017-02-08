@@ -94,6 +94,7 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
         return 1;
     }
 
+    @Override
     public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         if (hasChoice()) {
             return !card.isCreature() || card.hasAbility(ability);

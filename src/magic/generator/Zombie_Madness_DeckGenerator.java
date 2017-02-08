@@ -33,6 +33,7 @@ public class Zombie_Madness_DeckGenerator extends RandomDeckGenerator {
         return 2;
     }
 
+    @Override
     public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
         return !card.isCreature() || card.hasSubType(MagicSubType.Zombie);
     }
