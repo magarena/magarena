@@ -11,7 +11,9 @@ import magic.ui.helpers.ImageHelper;
 
 public class ResourceManager {
 
-    private static final int MAX_IMAGES = 100;
+    // empirically size of 50 results in 0.1% of requests being cache misses
+    // larger values only provides marginal improvements
+    private static final int MAX_IMAGES = 50;
     private static final Map<String, BufferedImage> cache = new LRUCache<>(MAX_IMAGES);
 
     // Used as reference class for accessing JAR resources.
