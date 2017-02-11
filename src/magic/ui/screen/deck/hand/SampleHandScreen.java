@@ -34,11 +34,6 @@ public class SampleHandScreen extends HeaderFooterScreen {
         useLoadingScreen(this::initUI);
     }
 
-    @Override
-    protected boolean isCardBuilderRequired() {
-        return MagicImages.hasProxyImage(deck);
-    }
-
     private void initUI() {
         content = new CardsCanvas();
         content.setAnimationDelay(50, 20);

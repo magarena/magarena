@@ -4,7 +4,6 @@ import java.util.Optional;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import javax.swing.SwingWorker;
-import magic.cardBuilder.renderers.CardBuilder;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
@@ -22,27 +21,8 @@ class NewGameWorker extends SwingWorker<MagicGame, Void> {
         screen = aScreen;
     }
 
-    private Optional<MagicCardDefinition> findFirstProxyCard(MagicDeck aDeck) {
-        return aDeck.stream()
-                .filter(card -> MagicImages.isProxyImage(card.getCardDefinition()))
-                .findFirst();
-    }
-
-    private Optional<MagicCardDefinition> findFirstProxyCardInDecks() {
-        Optional<MagicCardDefinition> proxy = findFirstProxyCard(duel.getPlayer(0).getDeck());
-        return proxy.isPresent() ? proxy : findFirstProxyCard(duel.getPlayer(1).getDeck());
-    }
-
-    private void loadCardBuilderIfRequired() {
-        if (!CardBuilder.IS_LOADED) {
-            Optional<MagicCardDefinition> proxy = findFirstProxyCardInDecks();
-            proxy.ifPresent(CardBuilder::getCardBuilderImage);
-        }
-    }
-
     @Override
     protected MagicGame doInBackground() throws Exception {
-        loadCardBuilderIfRequired();
         return duel.nextGame();
     }
 

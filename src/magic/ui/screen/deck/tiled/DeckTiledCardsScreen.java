@@ -31,11 +31,6 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
         useLoadingScreen(this::initUI);
     }
 
-    @Override
-    protected boolean isCardBuilderRequired() {
-        return MagicImages.hasProxyImage(deck);
-    }
-
     private void initUI() {
         assert SwingUtilities.isEventDispatchThread();
         headerPanel = new HeaderPanel();

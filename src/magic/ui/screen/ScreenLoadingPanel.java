@@ -16,14 +16,12 @@ import net.miginfocom.swing.MigLayout;
 class ScreenLoadingPanel extends TexturedPanel {
 
     private final Runnable runnable;
-    private final boolean needsCardBuilder;
     private final boolean needsCardData;
     
     private AbstractThrobber throbber;
     private final JLabel lbl = new JLabel();
 
-    ScreenLoadingPanel(Runnable r, boolean cb, boolean cdata) {
-        this.needsCardBuilder = cb;
+    ScreenLoadingPanel(Runnable r, boolean cdata) {
         this.needsCardData = cdata;
         this.runnable = r;
         setDefaultProperties();
@@ -57,10 +55,6 @@ class ScreenLoadingPanel extends TexturedPanel {
 
     Runnable getRunnable() {
         return runnable;
-    }
-
-    boolean isCardBuilderNeeded() {
-        return needsCardBuilder;
     }
 
     boolean isCardDataNeeded() {

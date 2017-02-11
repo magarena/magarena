@@ -6,7 +6,6 @@ import java.awt.Cursor;
 import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
-import magic.cardBuilder.renderers.CardBuilder;
 import magic.ui.WikiPage;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.helpers.UrlHelper;
@@ -94,33 +93,23 @@ public abstract class MScreen {
         this.wikiPage = wikiPage;
     }
 
-    protected boolean isCardBuilderRequired() {
-        return false;
-    }
-
     protected boolean isCardDataRequired() {
         return false;
     }
 
     /**
-     * Displays a loading screen if waiting for
-     * CardBuilder or card data to be loaded.
+     * Displays a loading screen if waiting for card data to be loaded.
      *
      * @param r normally the screen's UI initialization code.
      */
     protected final void useLoadingScreen(Runnable r) {
 
-        final boolean needsCBuilder =
-                isCardBuilderRequired() && !CardBuilder.IS_LOADED;
-
         final boolean needsCardData =
                 isCardDataRequired() && !MagicSystem.loadCards.isDone();
 
-        if (needsCardData || needsCBuilder) {
+        if (needsCardData) {
 
-            ScreenLoadingPanel loadingPanel = new ScreenLoadingPanel(
-                    r, needsCBuilder, needsCardData
-            );
+            ScreenLoadingPanel loadingPanel = new ScreenLoadingPanel(r, needsCardData);
 
             loadingWorker = new ScreenLoaderWorker(loadingPanel);
             loadingWorker.execute();
