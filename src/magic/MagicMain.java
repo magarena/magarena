@@ -11,6 +11,7 @@ import magic.ui.SplashProgressReporter;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.test.TestGameBuilder;
+import magic.game.state.GameLoader;
 import magic.ui.ScreenController;
 import magic.ui.helpers.LaFHelper;
 import magic.ui.UiExceptionHandler;
@@ -45,7 +46,7 @@ public class MagicMain {
         }
 
         LaFHelper.setDefaultLookAndFeel();
-        
+
         reporter.setMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -84,6 +85,14 @@ public class MagicMain {
         final String testGame = System.getProperty("testGame");
         if (testGame != null) {
             ScreenController.showDuelGameScreen(TestGameBuilder.buildGame(testGame));
+            return;
+        }
+
+        // -DsaveGame=X, where X is the path to a snapshot.game
+        final String saveGame = System.getProperty("saveGame");
+        if (saveGame != null) {
+            final File f = new File(saveGame);
+            ScreenController.showDuelGameScreen(GameLoader.loadSavedGame(f));
             return;
         }
 

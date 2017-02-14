@@ -88,7 +88,7 @@ final public class MagicSystem {
     }
 
     public static boolean isTestGame() {
-        return (System.getProperty("testGame") != null && !System.getProperty("testGame").isEmpty());
+        return System.getProperty("testGame") != null || System.getProperty("saveGame") != null;
     }
 
     public static boolean isDevMode() {

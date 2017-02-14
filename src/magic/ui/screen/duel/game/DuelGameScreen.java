@@ -19,7 +19,7 @@ public class DuelGameScreen extends MScreen {
         showScreen(duel.nextGame());
     }
 
-    // CTR - called when using -DtestGame=X argument.
+    // CTR - called when using -DtestGame=X or -DsaveGame=X
     public DuelGameScreen(final MagicGame game) {
         showScreen(game);
     }

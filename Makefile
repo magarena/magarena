@@ -200,6 +200,9 @@ release/Magarena-%.jar:
 tags: $(SRC)
 	ctags -R src
 
+%.game.run: $(MAG)
+	$(DEBUG) -DsaveGame=$*.game -Dmagarena.dir=`pwd`/release -jar $^ 2>&1
+
 Test%.run: $(MAG)
 	$(DEBUG) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
 
