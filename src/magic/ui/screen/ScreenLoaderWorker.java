@@ -2,7 +2,6 @@ package magic.ui.screen;
 
 import java.util.List;
 import javax.swing.SwingWorker;
-import magic.model.MagicCardDefinition;
 import magic.translate.MText;
 import magic.utility.MagicSystem;
 
@@ -10,7 +9,6 @@ class ScreenLoaderWorker extends SwingWorker<Void, String> {
 
     // translatable strings
     private static final String _S1 = "loading card data";
-    private static final String _S2 = "loading proxy image generator";
 
     private final Runnable runnable;
     private final boolean needsCardData;
