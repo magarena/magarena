@@ -60,6 +60,7 @@ Thanks to
   ShawnieBoy for implementing new cards, the M logo, and general image enhancements
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
+  Zac610 for the Italian UI translation
   Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components
   XMage for the ArrowBuilder code
   neoedmund for the download images-on-demand implementation
