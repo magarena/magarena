@@ -1,14 +1,10 @@
 package magic.ui.screen.duel.decks;
 
-import java.util.Optional;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import javax.swing.SwingWorker;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.ui.MagicImages;
 import magic.utility.MagicSystem;
 
 class NewGameWorker extends SwingWorker<MagicGame, Void> {

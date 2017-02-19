@@ -10,10 +10,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicType;
 import magic.translate.MText;
-import magic.ui.MagicImages;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
-import magic.ui.screen.HeaderFooterScreen;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen extends HeaderFooterScreen {

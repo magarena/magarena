@@ -6,12 +6,21 @@ import javax.swing.table.AbstractTableModel;
 import magic.data.stats.GameStatsInfo;
 import magic.data.stats.MagicStats;
 import magic.model.MagicDeck;
+import magic.translate.MText;
 
 /**
  * Game statistics for a deck.
  */
 @SuppressWarnings("serial")
 class GameStatsTableModel extends AbstractTableModel {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Game";
+    private static final String _S2 = "Config";
+    private static final String _S3 = "Player";
+    private static final String _S4 = "Opponent";
+    private static final String _S5 = "Opponent deck";
+    private static final String _S6 = "Result";
 
     private static final int PAGE_SIZE = 8;
 
@@ -55,12 +64,12 @@ class GameStatsTableModel extends AbstractTableModel {
     @Override
     public String getColumnName(int columnIndex) {
         switch (columnIndex) {
-        case 0: return "Game";
-        case 1: return "Config";
-        case 2: return "Player";
-        case 3: return "Opponent";
-        case 4: return "Opponent deck";
-        case 5: return "Result";
+        case 0: return MText.get(_S1);
+        case 1: return MText.get(_S2);
+        case 2: return MText.get(_S3);
+        case 3: return MText.get(_S4);
+        case 4: return MText.get(_S5);
+        case 5: return MText.get(_S6);
         default: return "???";
         }
     }

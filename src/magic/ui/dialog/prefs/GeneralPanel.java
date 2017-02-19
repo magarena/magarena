@@ -24,6 +24,8 @@ class GeneralPanel extends JPanel {
     private static final String _S63 = "User Interface";
     private static final String _S64 = "Card Explorer & Deck Editor";
     private static final String _S83 = "Card images";
+    private static final String _S10 = "Save game statistics.";
+    private static final String _S11 = "Keeps a record of each game played to generate Played/Won/Lost totals and play history for each deck. The data is stored in \\Magarena\\stats.";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -64,8 +66,8 @@ class GeneralPanel extends JPanel {
         previewCardOnSelectCheckBox.setFocusable(false);
         previewCardOnSelectCheckBox.addMouseListener(aListener);
 
-        gameStatsCheckbox = new MCheckBox(MText.get("Game statistics."), config.isGameStatsEnabled());
-        gameStatsCheckbox.setToolTipText(MText.get("Keeps detailed statistics of each game played which is used to generate P/W/L totals for each deck, adds a games history tab to the deck editor and new dynamically generated deck groups such as \"most played\", \"top winning\", etc. to the deck selection screen."));
+        gameStatsCheckbox = new MCheckBox(MText.get(_S10), config.isGameStatsEnabled());
+        gameStatsCheckbox.setToolTipText(MText.get(_S11));
         gameStatsCheckbox.setFocusable(false);
         gameStatsCheckbox.addMouseListener(aListener);
 

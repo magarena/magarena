@@ -5,13 +5,22 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import magic.data.stats.GameStatsInfo;
 import magic.model.MagicDeck;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.data.stats.GameStatsInfo;
+import magic.translate.MText;
 
 
 class DeckGameStats {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "version";
+    private static final String _S2 = "<br>level: %d, +life: %d";
+    private static final String _S3 = "life: %d<br>hand: %d";
+    private static final String _S4 = "won in";
+    private static final String _S5 = "lost in";
+    private static final String _S6 = "conceded";
 
     private final GameStatsInfo dto;
     private final MagicDeck deck;
@@ -31,7 +40,7 @@ class DeckGameStats {
     String getGameInfo() {
         LocalDateTime ldt = getLocalTimeFromEpoch(dto.timeStart);
         String start = ldt.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
-        return start + "<br>version " + dto.magarenaVersion;
+        return start + String.format("<br>%s %s", MText.get(_S1), dto.magarenaVersion);
     }
 
     String getOpponentInfo() {
@@ -40,7 +49,9 @@ class DeckGameStats {
         String aiType = isPlayerDeck ? dto.player2AiType : dto.player1AiType;
         int aiLevel = isPlayerDeck ? dto.player2AiLevel : dto.player1AiLevel;
         int aiXLife = isPlayerDeck ? dto.player2AiXtraLife : dto.player1AiXtraLife;
-        String aiInfo = aiType != null ? aiType + "<br>" + "level: " + aiLevel + ", +life: " + aiXLife : "";
+        String aiInfo = aiType != null
+            ? aiType + MText.get(_S2, aiLevel, aiXLife)
+            : "";
         PlayerProfile player = PlayerProfiles.getPlayerProfiles().get(playerProfileId);
         player = player != null && player.isArtificial() ? null : player;
         boolean isTempPlayer = player == null;
@@ -61,7 +72,9 @@ class DeckGameStats {
         String aiType = isPlayerDeck ? dto.player1AiType : dto.player2AiType;
         int aiLevel = isPlayerDeck ? dto.player1AiLevel : dto.player2AiLevel;
         int aiXLife = isPlayerDeck ? dto.player1AiXtraLife : dto.player2AiXtraLife;
-        String aiInfo = aiType != null ? aiType + "<br>" + "level: " + aiLevel + ", +life: " + aiXLife : "";
+        String aiInfo = aiType != null
+            ? aiType + MText.get(_S2, aiLevel, aiXLife)
+            : "";
         PlayerProfile player = PlayerProfiles.getPlayerProfiles().get(playerProfileId);
         player = player != null && player.isArtificial() ? null : player;
         boolean isTempPlayer = player == null;
@@ -73,12 +86,15 @@ class DeckGameStats {
     String getResultInfo() {
         int playerNum = dto.player1DeckName.equals(deck.getName()) ? 1 : 2;
         int winningPlayer = Integer.parseInt(dto.winningPlayerProfile);
-        return (winningPlayer == playerNum ? "won in " : "lost in ")
-            + dto.turns + (dto.isConceded ? " (conceded)" : "");
+        return String.format("%s %d %s",
+            winningPlayer == playerNum ? MText.get(_S4) : MText.get(_S5),
+            dto.turns,
+            dto.isConceded ? "(" + MText.get(_S6) + ")" : ""
+        ).trim();
     }
 
     String getConfigInfo() {
-        return "life: " + dto.startLife + "<br>hand :" + dto.startHandSize;
+        return MText.get(_S3, dto.startLife, dto.startHandSize);
     }
 
 }

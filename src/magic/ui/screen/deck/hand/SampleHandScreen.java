@@ -8,13 +8,12 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicRandom;
-import magic.ui.MagicImages;
 import magic.translate.MText;
-import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
-import magic.ui.widget.cards.canvas.CardsCanvas;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.deck.DeckStatusPanel;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.cards.canvas.CardsCanvas;
+import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
+import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen extends HeaderFooterScreen {
@@ -42,11 +41,11 @@ public class SampleHandScreen extends HeaderFooterScreen {
         setMainContent(content);
         deckStatusPanel.setDeck(deck, false);
         setHeaderContent(deckStatusPanel);
-        addToFooter(MenuButton.build(this::dealSampleHand, 
+        addToFooter(MenuButton.build(this::dealSampleHand,
                 MagicIcon.REFRESH, MText.get(_S3), MText.get(_S4))
         );
     }
-    
+
     private void dealSampleHand() {
         if (!content.isBusy()) {
             content.refresh(getRandomHand(deck));

@@ -1,13 +1,11 @@
 package magic.ui.widget.deck.legality;
 
-import magic.ui.widget.deck.legality.CardLegalityInfo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
-
 import magic.data.CardLegality;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;

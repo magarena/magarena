@@ -35,8 +35,6 @@ import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.theme.Theme;
-import magic.ui.utility.MagicStyle;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.utility.DeckUtils;
 import net.miginfocom.swing.MigLayout;
@@ -47,9 +45,6 @@ public class DeckPicker extends JPanel {
     // translatable strings
     private static final String _S1 = "All Decks (%d)";
     private static final String _S2 = "Filtered Decks (%d)";
-
-    private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-    private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
 
     // ui components
     private final MigLayout migLayout = new MigLayout();

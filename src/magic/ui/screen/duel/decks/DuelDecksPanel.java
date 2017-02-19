@@ -39,6 +39,7 @@ class DuelDecksPanel extends TexturedPanel
     implements IPlayerProfileListener, IPwlWorkerListener {
 
     // translatable strings
+    private static final String _S1 = "UNSAVED";
     private static final String _S7 = "Swap Decks";
     private static final String _S8 = "Swap your deck with your opponent's.";
     private static final String _S15 = "Generate another deck";
@@ -151,7 +152,7 @@ class DuelDecksPanel extends TexturedPanel
 
     private String generateTitle(final MagicDeck deck) {
         return deck.isUnsaved()
-            ? "UNSAVED  /  " + deck.getName()
+            ? MText.get(_S1) + "  /  " + deck.getName()
             : getDeckNameWithType(deck);
     }
 
