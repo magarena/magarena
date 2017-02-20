@@ -16,7 +16,6 @@ import magic.model.DuelPlayerConfig;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicDeck;
 import magic.model.MagicManaType;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
@@ -225,10 +224,6 @@ public final class MagicImages {
         avatarsMap.clear();
     }
 
-    public static boolean isProxyImage(IRenderableCard face) {
-        return MagicCardImages.isProxyImage(face);
-    }
-
     public static BufferedImage getCardImage(IRenderableCard face) {
         final Long key = face.getRenderKey();
         if (cache.containsKey(key)) {
@@ -239,10 +234,6 @@ public final class MagicImages {
             cache.put(key, image);
         }
         return image;
-    }
-
-    public static boolean hasProxyImage(MagicDeck aDeck) {
-        return aDeck.stream().anyMatch(card -> MagicImages.isProxyImage(card));
     }
 
     public static void clearCache() {

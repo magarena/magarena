@@ -35,6 +35,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicCardImages;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
@@ -238,7 +239,7 @@ public class AnnotatedCardPanel extends JPanel {
         // don't overwrite original image with modified PT overlay, use a copy.
         final BufferedImage cardCanvas = !modifiedPT.isEmpty() ? getImageCopy(cardImage) : cardImage;
         // draw modified PT on original image so it is scaled properly.
-        if (magicObject != null && MagicImages.isProxyImage(magicObject.getCardDefinition()) == false) {
+        if (magicObject != null && MagicCardImages.isProxyImage(magicObject.getCardDefinition()) == false) {
             drawPowerToughnessOverlay(cardCanvas);
         }
         // scale card image if required.

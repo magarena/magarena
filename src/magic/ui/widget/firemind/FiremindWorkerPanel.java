@@ -4,7 +4,6 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.net.Proxy;
 import java.nio.file.Path;
 import java.util.List;
 import javax.swing.AbstractAction;
@@ -51,8 +50,8 @@ public class FiremindWorkerPanel extends JPanel {
     private SwingWorker<String, Void> firemindWorker;
     private boolean isRunning = false;
 
-    protected SwingWorker<String, Void> getFiremindWorker(final Proxy proxy) {
-        return new FiremindWorkerRunner(); //TODO (downloadList, CONFIG.getProxy());
+    protected SwingWorker<String, Void> getFiremindWorker() {
+        return new FiremindWorkerRunner(); //TODO (downloadList);
     }
     protected String getProgressCaption(){
         if(isRunning){
@@ -105,7 +104,7 @@ public class FiremindWorkerPanel extends JPanel {
                 if (FiremindClient.checkMagarenaVersion(MagicSystem.VERSION)){
                     setRunningState();
                     notifyStatusChanged(true);
-                    firemindWorker = getFiremindWorker(CONFIG.getProxy());
+                    firemindWorker = getFiremindWorker();
                     firemindWorker.execute();
                 }else{
                     statusTextField.setText(MText.get(_S5));
