@@ -6,17 +6,16 @@ import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
-import magic.ui.CardTextLanguage;
 
 @SuppressWarnings("serial")
 class PlayablePanel extends DownloadPanel {
 
     // translatable strings
-    private static final String _S1 = "Playable";
+    private static final String _S1 = "Missing images for playable cards";
     private static final String _S2 = "Download";
 
-    PlayablePanel(CardImageDisplayMode aMode, CardTextLanguage aLang, DialogMainPanel aPanel) {
-        super(aMode, aLang, aPanel);
+    PlayablePanel(CardImageDisplayMode aMode, DialogMainPanel aPanel) {
+        super(aMode, aPanel);
     }
 
     @Override

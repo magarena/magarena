@@ -3,6 +3,7 @@ package magic.ui.screen.images.download;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
@@ -14,8 +15,8 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import magic.translate.MText;
-import magic.ui.ScreenController;
 import magic.ui.FontsAndBorders;
+import magic.ui.ScreenController;
 import magic.ui.widget.M.MFileLink;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -82,7 +83,7 @@ public class DirectoryChooser extends JPanel {
         imagesFolder.setFile(defaultPath);
         imagesFolder.setToolTipText(MText.get(_S6));
         imagesFolder.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createMatteBorder(1, 1, 1, 1, Color.GRAY), 
+                BorderFactory.createMatteBorder(1, 1, 1, 1, Color.GRAY),
                 BorderFactory.createEmptyBorder(0, 4, 0, 0))
         );
     }
@@ -97,6 +98,10 @@ public class DirectoryChooser extends JPanel {
         hintPanel.addHintSource(selectButton, String.format("<b>%s</b><br>%s",
             MText.get(_S1), MText.get(_S7)
         ));
+    }
+
+    void setBold(boolean b) {
+        imagesFolder.setFont(imagesFolder.getFont().deriveFont(b ? Font.BOLD : Font.PLAIN));
     }
 
     private static class ImagesDirectoryChooser extends JFileChooser {

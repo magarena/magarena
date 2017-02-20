@@ -3,7 +3,6 @@ package magic.ui.screen.images.download;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.Proxy;
 import java.net.URL;
 import java.nio.file.Files;
 import java.time.LocalDateTime;
@@ -14,40 +13,35 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
-import magic.data.GeneralConfig;
 import magic.data.ImagesDownloadList;
-import magic.model.MagicCardDefinition;
+import magic.exception.DownloadException;
 import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
 import magic.ui.MagicLogFile;
-import magic.ui.helpers.UrlHelper;
-import magic.utility.MagicFileSystem;
+import magic.ui.PrintedCardImage;
+import magic.ui.ProxyCardImage;
 import magic.utility.MagicSystem;
 
 class DownloadWorker extends SwingWorker<Void, Integer> {
 
     private static final MagicLogFile missingLog = new MagicLogFile("downloaded-images");
 
-    private final Proxy proxy;
     private ImagesDownloadList downloadList;
     private final IDownloadListener listener;
-    private final CardTextLanguage textLanguage;
     private final CardImageDisplayMode displayMode;
     private boolean updateDownloadDate = true;
     private boolean isLogging = true;
     private int serverBusyCooldown = 1; // in millisecs
 
-    DownloadWorker(IDownloadListener aListener, CardTextLanguage aLanguage, CardImageDisplayMode aMode) {
+    DownloadWorker(IDownloadListener aListener, CardImageDisplayMode aMode) {
         this.listener = aListener;
-        this.textLanguage = aLanguage;
         this.displayMode = aMode;
-        this.proxy = GeneralConfig.getInstance().getProxy();
     }
 
     @Override
     protected Void doInBackground() throws MalformedURLException {
         this.downloadList = ScanWorker.getImagesDownloadList((IScanListener)listener, displayMode);
-        doDownloadImages(textLanguage);
+        doDownloadImages();
         return null;
     }
 
@@ -113,49 +107,10 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         }
     }
 
-    /**
-     * Gets alternate magiccards.info image url for given card text language.
-     * If it fails then displays reason in error log panel and returns null url.
-     */
-    private URL getAlternateUrl(DownloadableFile aFile, CardTextLanguage textLang) {
-        try {
-            return UrlHelper.getAlternateMagicCardsImageUrl(aFile.getUrl(), textLang);
-        } catch (MalformedURLException ex) {
-            listener.setMessage(String.format("%s [%s]", ex.toString(), aFile.getUrl()));
-            return null;
-        }
-    }
-
     private void setServerBusyCooldown(String errmsg) {
         if (errmsg.contains("HTTP response code: 503")) {
             serverBusyCooldown += 100;
         }
-    }
-
-    /**
-     * Attempts to download alternate card image.
-     * If it fails displays reason in error log panel.
-     */
-    private boolean tryAlternateDownload(final DownloadableFile aFile, CardTextLanguage aLang) {
-        try {
-            aFile.doDownload(proxy);
-        } catch (IOException ex) {
-            listener.setMessage(String.format("%s [%s (%s)]", ex.toString(), aFile.getFilename(), aLang));
-            setServerBusyCooldown(ex.toString());
-            return false;
-        }
-        return true;
-    }
-
-    private boolean downloadAlternateCardImage(final CardImageFile aFile, CardTextLanguage aLang) {
-        final URL altUrl = getAlternateUrl(aFile, aLang);
-        if (UrlHelper.isUrlValid(altUrl)) {
-            if (tryAlternateDownload(new DownloadableFile(aFile.getLocalFile(), altUrl), aLang)) {
-                doLog(aFile.getCardName(), aLang, altUrl);
-                return true;
-            }
-        }
-        return false;
     }
 
     private boolean doDeleteLocalImageFile(File aFile) {
@@ -168,50 +123,30 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         return true;
     }
 
-    /**
-     * Attempts to download default card image.
-     * If it fails displays reason in error log panel.
-     */
-    private boolean tryDefaultDownload(final DownloadableFile aFile) {
+    private void downloadPrintedImage(CardImageFile imageFile) {
         try {
-            aFile.doDownload(proxy);
-        } catch (IOException ex) {
-            // if local file exists then download was triggered by the
-            // 'image_updated' script property. But download failed so
-            // remove local image so it becomes 'missing' instead.
-            updateDownloadDate = displayMode != CardImageDisplayMode.PROXY && doDeleteLocalImageFile(aFile.getLocalFile());
-            listener.setMessage(String.format("%s [%s]", ex.toString(), aFile.getFilename()));
+            PrintedCardImage.tryDownloadingPrintedImage(imageFile);
+        } catch (DownloadException ex) {
+            listener.setMessage(ex.getMessage());
             setServerBusyCooldown(ex.toString());
-            return false;
-        }
-        return true;
-    }
-
-    private void downloadDefaultCardImage(final CardImageFile aFile) {
-        if (tryDefaultDownload(aFile)) {
-            doLog(aFile.getCardName(), CardTextLanguage.ENGLISH, null);
-        }
-    }
-
-    private boolean doDownloadCroppedImage(CardImageFile imageFile) throws MalformedURLException {
-        final MagicCardDefinition card = imageFile.getCard();
-        final File local = MagicFileSystem.getCroppedCardImage(imageFile.getCard());
-        if (card.getImageURL().contains("magiccards.info/scans/")) {
-            final URL remote = new URL(card.getImageURL().replace("/scans/", "/crop/"));
-            if (UrlHelper.isUrlValid(remote)) {
-                if (tryDefaultDownload(new DownloadableFile(local, remote))) {
-                    doLog(card.getCardTextName(), CardTextLanguage.ENGLISH, remote);
-                    return true;
-                }
+            if (ex.getCause() instanceof IOException) {
+                // if local image file already existed before download then
+                // download was triggered by the 'image_updated' script property.
+                // As download failed remove local image so it gets picked up
+                // by the missing image trigger instead. If unable to remove
+                // local image then don't update 'imageDownloaderRunDate'.
+                updateDownloadDate = doDeleteLocalImageFile(imageFile.getLocalFile());
             }
         }
-        return false;
     }
 
-    private void doDownloadPrintedImage(CardImageFile imageFile, CardTextLanguage textLang) throws MalformedURLException {
-        if (textLang.isEnglish() || !downloadAlternateCardImage(imageFile, textLang)) {
-            downloadDefaultCardImage(imageFile);
+    private boolean tryDownloadingCroppedImage(CardImageFile imageFile) {
+        try {
+            return ProxyCardImage.tryDownloadingCroppedImage(imageFile);
+        } catch (DownloadException | MalformedURLException ex) {
+            System.err.println(String.format("%s [%s]", ex.toString(), imageFile.getFilename()));
         }
+        return false;
     }
 
     private void doPause(int millisecs) {
@@ -222,24 +157,23 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         }
     }
 
-    private void doDownloadImages(CardTextLanguage textLang) throws MalformedURLException {
+    private void doDownloadImages() throws MalformedURLException {
 
         assert !SwingUtilities.isEventDispatchThread();
 
         initializeLogFiles();
         int fileCount = 0;
-        updateDownloadDate = displayMode != CardImageDisplayMode.PROXY;
 
         for (DownloadableFile dFile : downloadList) {
 
             final CardImageFile imageFile = (CardImageFile) dFile;
 
             if (displayMode == CardImageDisplayMode.PROXY) {
-                if (!doDownloadCroppedImage(imageFile)) {
-                    doDownloadPrintedImage(imageFile, textLang);
+                if (!tryDownloadingCroppedImage(imageFile)) {
+                    downloadPrintedImage(imageFile);
                 }
             } else {
-                doDownloadPrintedImage(imageFile, textLang);
+                downloadPrintedImage(imageFile);
             }
             doPause(serverBusyCooldown);
 

@@ -190,15 +190,13 @@ public class GeneralConfig {
 
     public Proxy getProxy() {
         final String DELIM = "\\|";
-        final String proxyString = proxySettings.trim();
-        if (proxyString.isEmpty() || proxyString.split(DELIM).length != 3) {
-            return Proxy.NO_PROXY;
-        } else {
-            final Proxy.Type proxyType = Proxy.Type.valueOf(proxyString.split(DELIM)[0]);
-            final int port = Integer.parseInt(proxyString.split(DELIM)[1]);
-            final String urlAddress = proxyString.split(DELIM)[2];
+        if (!proxySettings.isEmpty() && proxySettings.split(DELIM).length == 3) {
+            Proxy.Type proxyType = Proxy.Type.valueOf(proxySettings.split(DELIM)[0]);
+            int port = Integer.parseInt(proxySettings.split(DELIM)[1]);
+            String urlAddress = proxySettings.split(DELIM)[2];
             return new Proxy(proxyType, new InetSocketAddress(urlAddress, port));
         }
+        return Proxy.NO_PROXY;
     }
 
     public void setProxy(final Proxy proxy) {
@@ -212,6 +210,10 @@ public class GeneralConfig {
         } else {
             proxySettings = "";
         }
+    }
+
+    public String getProxySettings() {
+        return proxySettings;
     }
 
     public int getDeckFileMaxLines() {
@@ -559,7 +561,7 @@ public class GeneralConfig {
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, cardImagesPath);
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + animateGameplay));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+ deckFileMaxLines));
-        proxySettings = properties.getProperty(PROXY_SETTINGS, proxySettings);
+        proxySettings = properties.getProperty(PROXY_SETTINGS, proxySettings).trim();
         firemindAccessToken = properties.getProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
         newTurnAlertDuration = Integer.parseInt(properties.getProperty(NEWTURN_ALERT_DURATION,"" + newTurnAlertDuration));
         landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + landPreviewDuration));

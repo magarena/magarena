@@ -2,7 +2,6 @@ package magic.data.json;
 
 import java.io.File;
 import java.io.IOException;
-import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
@@ -23,7 +22,7 @@ public final class NewVersionJsonParser {
     private static boolean downloadJsonToFile(final File jsonFile) {
         try {
             final DownloadableJsonFile downloadFile = new DownloadableJsonFile("https://magarena.github.io/current.json", jsonFile);
-            downloadFile.doDownload(GeneralConfig.getInstance().getProxy());
+            downloadFile.doDownload();
             if (jsonFile.length() == 0) {
                 System.err.println("new version json file is empty!");
                 return false;

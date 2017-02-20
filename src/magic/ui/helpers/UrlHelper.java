@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import magic.data.DownloadableFile;
 import magic.ui.CardTextLanguage;
 
 public final class UrlHelper {
@@ -43,10 +44,10 @@ public final class UrlHelper {
     /**
      * Returns a {@code magiccards.info} image url for a given non-English language code.
      */
-    public static URL getAlternateMagicCardsImageUrl(URL defaultUrl, CardTextLanguage lang) throws MalformedURLException {
+    public static URL getAltMagicCardsInfoUrl(DownloadableFile aFile, CardTextLanguage lang) throws MalformedURLException {
         final String BASE = "/magiccards.info/scans/";
         final String TARGET = BASE + "en/";
-        final String s = defaultUrl.toExternalForm();
+        final String s = aFile.getUrl().toExternalForm();
         return s.contains(TARGET)
             ? new URL(s.replaceAll(TARGET, BASE + lang.getMagicCardsCode() + "/"))
             : null;
@@ -71,6 +72,6 @@ public final class UrlHelper {
             return false;
         }
     }
-    
+
     private UrlHelper() { }
 }

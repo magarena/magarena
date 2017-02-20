@@ -2,13 +2,12 @@ package magic.ui;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
-import java.net.Proxy;
 import java.nio.file.Path;
 import java.util.Arrays;
-import magic.cardBuilder.renderers.CardBuilder;
-import magic.data.CardImageFile;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import magic.data.GeneralConfig;
+import magic.exception.DownloadException;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.screen.images.download.CardImageDisplayMode;
@@ -26,17 +25,18 @@ public final class MagicCardImages {
         PRINTED
     }
 
+    private static final Logger LOGGER = Logger.getLogger(MagicCardImages.class.getName());
+
     private static final String[] CUSTOM_IMAGE_ENDINGS = new String[]{".jpg", ".full.jpg"};
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-    private static Proxy proxy;
 
     private static File getCustomCardImageFile(IRenderableCard face, String ending) {
         Path imagesFolder = MagicFileSystem.getImagesPath(MagicFileSystem.ImagesPath.CUSTOM);
         return new File(imagesFolder.toFile(), face.getImageName() + ending);
     }
 
-    private static boolean customCardImageExists(IRenderableCard face) {
+    public static boolean isCustomCardImageFound(IRenderableCard face) {
         return Arrays.stream(CUSTOM_IMAGE_ENDINGS)
             .anyMatch(ending -> getCustomCardImageFile(face, ending).exists());
     }
@@ -50,21 +50,26 @@ public final class MagicCardImages {
             .orElse(MagicImages.MISSING_CARD);
     }
 
+    private static boolean printedImageExists(IRenderableCard face) {
+        return MagicFileSystem.getPrintedCardImage(face).exists();
+    }
+
     private static ImageType getImageType(IRenderableCard face) {
 
         if (face.isUnknown()) {
             return ImageType.UNKNOWN;
         }
 
-        if (customCardImageExists(face)) {
+        if (isCustomCardImageFound(face)) {
             return ImageType.CUSTOM;
         }
 
-        if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PROXY) {
+        if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PROXY
+            && !face.isPlaneswalker() && !face.isFlipCard() && !face.isToken()) {
             return ImageType.PROXY;
         }
 
-        if (MagicFileSystem.getPrintedCardImage(face).exists() || CONFIG.getImagesOnDemand()) {
+        if (printedImageExists(face) || CONFIG.getImagesOnDemand()) {
             return ImageType.PRINTED;
         }
 
@@ -72,53 +77,60 @@ public final class MagicCardImages {
         return ImageType.PROXY;
     }
 
-    private static void tryDownloadingPrintedImage(IRenderableCard face) {
-        if (proxy == null) {
-            proxy = CONFIG.getProxy();
-        }
+    private static BufferedImage getPrintedCardImage(IRenderableCard face) {
         try {
-            CardImageFile cif = new CardImageFile(face);
-            cif.doDownload(proxy);
-        } catch (IOException ex) {
-            System.err.println(face.getCardDefinition().getDistinctName() + " : " + ex);
+            return PrintedCardImage.get(face);
+        } catch (DownloadException ex) {
+            LOGGER.log(Level.SEVERE, null, ex);
+            return MagicImages.MISSING_CARD;
+        }
+    }
+
+    private static BufferedImage getProxyCardImage(IRenderableCard face) {
+        try {
+            return ProxyCardImage.get(face);
+        } catch (DownloadException ex) {
+            LOGGER.log(Level.SEVERE, null, ex);
+            return MagicImages.MISSING_CARD;
         }
     }
 
     public static BufferedImage createImage(IRenderableCard face) {
         final ImageType type = getImageType(face);
         switch (type) {
-            case UNKNOWN:
-                return MagicImages.MISSING_CARD;
-            case CUSTOM:
-                return getCustomCardImage(face);
-            case PROXY:
-                return CardBuilder.getCardBuilderImage(face);
-            case PRINTED:
-                if (!MagicFileSystem.getPrintedCardImage(face).exists()) {
-                    // on-demand image download.
-                    tryDownloadingPrintedImage(face);
-                }
-                if (MagicFileSystem.getPrintedCardImage(face).exists()) {
-                    if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PRINTED || CONFIG.getCardTextLanguage() != CardTextLanguage.ENGLISH) {
-                        return ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face));
-                    } else {
-                        return face.isPlaneswalker() || face.isFlipCard() || face.isToken()
-                            ? ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face))
-                            : CardBuilder.getCardBuilderImage(face);
-                    }
-                }
+            case UNKNOWN: return MagicImages.MISSING_CARD;
+            case CUSTOM:  return getCustomCardImage(face);
+            case PROXY:   return getProxyCardImage(face);
+            case PRINTED: return getPrintedCardImage(face);
         }
-        return CardBuilder.getCardBuilderImage(face);
+        throw new RuntimeException("Unsupported image type: " + type);
     }
 
     public static boolean isProxyImage(IRenderableCard face) {
         return getImageType(face) == ImageType.PROXY;
     }
 
+    public static boolean isPrintedCardImageMissing(MagicCardDefinition card) {
+        return !MagicFileSystem.getPrintedCardImage(card).exists();
+    }
+
+    private static boolean customCardImageMissing(MagicCardDefinition card) {
+        return !isCustomCardImageFound(card);
+    }
+
+    public static boolean isCroppedCardImageMissing(MagicCardDefinition card) {
+        return !MagicFileSystem.getCroppedCardImage(card).exists();
+    }
+
     public static boolean isCardImageMissing(MagicCardDefinition aCard) {
-        return !customCardImageExists(aCard)
-            && !MagicFileSystem.getCroppedCardImage(aCard).exists()
-            && !MagicFileSystem.getPrintedCardImage(aCard).exists();
+        if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PRINTED) {
+            return customCardImageMissing(aCard)
+                && isPrintedCardImageMissing(aCard);
+        } else { // PROXY
+            return customCardImageMissing(aCard)
+                && isCroppedCardImageMissing(aCard)
+                && isPrintedCardImageMissing(aCard);
+        }
     }
 
     private MagicCardImages() {}

@@ -6,7 +6,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import magic.data.GeneralConfig;
 import magic.data.json.DownloadableJsonFile;
 import magic.model.MagicDeck;
 import magic.utility.DeckUtils;
@@ -30,7 +29,7 @@ public final class FiremindJsonReader {
         try {
             final DownloadableJsonFile downloadFile =
                     new DownloadableJsonFile("https://www.firemind.ch/decks/top.json", jsonFile);
-            downloadFile.doDownload(GeneralConfig.getInstance().getProxy());
+            downloadFile.doDownload();
         } catch (IOException ex) {
             System.err.println("Download of json file failed : " + ex.getMessage());
         }

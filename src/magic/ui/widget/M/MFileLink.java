@@ -148,6 +148,10 @@ public class MFileLink extends MWidget {
         label.setFont(aFont);
     }
 
+    public Font getFont() {
+        return label.getFont();
+    }
+
     public void setVisible(boolean b) {
         label.setVisible(b);
     }

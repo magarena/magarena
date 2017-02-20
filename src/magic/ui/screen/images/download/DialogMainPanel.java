@@ -13,10 +13,9 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.translate.MText;
-import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
-import magic.ui.helpers.UrlHelper;
 import magic.ui.dialog.button.CloseButton;
+import magic.ui.helpers.UrlHelper;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -31,8 +30,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     private static final String _S3 = "Run in background...";
     private static final String _S4 = "Opens a page containing more information on this screen in your internet browser.";
     private static final String _S6 = "Downloads card images that are missing or out-of-date in the 'cards' and 'tokens' folders.";
-    private static final String _S7 = "Downloads cropped images that are missing or out-of-date in the 'crops' folder. <b>Not 100% coverage</b>, currently there is not a downloadable cropped image for every card.";
-    private static final String _S8 = "Magarena will display the first image it finds using the folder order:- 'custom', 'crops', 'cards' or 'tokens'. If a cropped image is found or the image is missing then a proxy card image will be generated.";
+    private static final String _S7 = "<b>Not 100% coverage</b>. Please note there may be a bit of a delay the first time a proxy image is requested while the rendering sub-system is loaded and intialized.";
 
     private final JButton backgroundButton;
     private final OptionsPanel optionsPanel;
@@ -46,13 +44,6 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
         hintPanel = new HintPanel(getDefaultHint());
 
-        optionsPanel = new OptionsPanel();
-        optionsPanel.addHintSources(hintPanel);
-        optionsPanel.setEnabled(false);
-        optionsPanel.addPropertyChangeListener(OptionsPanel.CP_OPTIONS_CHANGED,
-            (e) -> { refreshDownloadList(); }
-        );
-
         backgroundButton = new JButton(MText.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener((a) -> { doRunInBackground(); });
@@ -63,17 +54,20 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
         buttonsPanel = new ButtonsPanel();
 
+        optionsPanel = new OptionsPanel(this);
+        optionsPanel.addHintSources(hintPanel);
+
         setDownloadPanels();
         setLookAndFeel();
         refreshLayout();
+        updateComponentState();
 
     }
 
     private String getDefaultHint() {
-        return String.format("<b>%s</b><br>%s<br><br><b>%s</b><br>%s<br><br>%s",
+        return String.format("<b>%s</b><br>%s<br><br><b>%s</b><br>%s",
             CardImageDisplayMode.PRINTED.toString(), MText.get(_S6),
-            CardImageDisplayMode.PROXY.toString(), MText.get(_S7),
-            MText.get(_S8)
+            CardImageDisplayMode.PROXY.toString(), MText.get(_S7)
         );
     }
 
@@ -82,18 +76,18 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     }
 
     private void refreshDownloadList() {
-        final CardImageDisplayMode mode = optionsPanel.getDisplayMode();
-        final CardTextLanguage lang = optionsPanel.getCardTextLanguage();
+        CardImageDisplayMode mode = optionsPanel.getCardImageDisplayMode();
         for (DownloadPanel panel : downloadPanels) {
-            panel.refreshDownloadList(mode, lang);
+            panel.doCancel();
+            panel.refreshDownloadList(mode);
         }
     }
 
     private void setDownloadPanels() {
         downloadPanels.add(getPlayableDownloaderPanel());
         downloadPanels.add(getUnimplementedDownloaderPanel());
-        downloadPanel.setLayout(new MigLayout("flowy, insets 6 0 6 0, gapy 0"));
-        downloadPanel.setBorder(BorderFactory.createMatteBorder(1, 0, 1, 0, Color.GRAY));
+        downloadPanel.setLayout(new MigLayout("flowy, insets 0 0 6 0, gapy 0"));
+        downloadPanel.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY));
         for (DownloadPanel panel : downloadPanels) {
             downloadPanel.add(panel, "w 100%");
         }
@@ -116,8 +110,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private DownloadPanel getPlayableDownloaderPanel() {
         final DownloadPanel playableDownloaderPanel = new PlayablePanel(
-            optionsPanel.getDisplayMode(),
-            optionsPanel.getCardTextLanguage(),
+            optionsPanel.getCardImageDisplayMode(),
             this
         );
         playableDownloaderPanel.addPropertyChangeListener(DownloadPanel.CP_STATE_CHANGED, this);
@@ -126,8 +119,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private DownloadPanel getUnimplementedDownloaderPanel() {
         final DownloadPanel unimplementedDownloaderPanel = new UnimplementedPanel(
-            optionsPanel.getDisplayMode(),
-            optionsPanel.getCardTextLanguage(),
+            optionsPanel.getCardImageDisplayMode(),
             this
         );
         unimplementedDownloaderPanel.addPropertyChangeListener(DownloadPanel.CP_STATE_CHANGED, this);
@@ -146,12 +138,17 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
                 activePanel = panel;
             }
         }
+        if (optionsPanel != null) {
+            optionsPanel.setEnabled(!isDownloading);
+        }
+        for (DownloadPanel panel : downloadPanels) {
+            panel.setEnabled(!optionsPanel.isOnDemand());
+        }
         if (activePanel != null) {
             for (DownloadPanel panel : downloadPanels) {
                 panel.setLocked(panel != activePanel);
             }
         }
-        optionsPanel.setEnabled(!isScanning && !isDownloading);
         buttonsPanel.setIsDownloading(isDownloading);
     }
 
@@ -163,6 +160,20 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             }
         }
         return false;
+    }
+
+    void doOnImageFolderChanged() {
+        refreshDownloadList();
+        updateComponentState();
+    }
+
+    void doOnDisplayModeChanged() {
+        refreshDownloadList();
+        updateComponentState();
+    }
+
+    void doOnDemandChanged() {
+        updateComponentState();
     }
 
     private class ButtonsPanel extends JPanel {
@@ -204,6 +215,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         for (DownloadPanel panel : downloadPanels) {
             panel.doCancel();
         }
+        optionsPanel.saveSettings();
         firePropertyChange(CP_CLOSE, true, false);
     }
 

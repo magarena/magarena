@@ -6,17 +6,16 @@ import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
-import magic.ui.CardTextLanguage;
 
 @SuppressWarnings("serial")
 class UnimplementedPanel extends DownloadPanel {
 
     // translatable strings
-    private static final String _S1 = "Unimplemented";
+    private static final String _S1 = "Missing images for unimplemented cards";
     private static final String _S2 = "Download";
 
-    UnimplementedPanel(CardImageDisplayMode aMode, CardTextLanguage aLang, DialogMainPanel aPanel) {
-        super(aMode, aLang, aPanel);
+    UnimplementedPanel(CardImageDisplayMode aMode, DialogMainPanel aPanel) {
+        super(aMode, aPanel);
     }
 
     @Override

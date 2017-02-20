@@ -14,6 +14,11 @@ import org.apache.commons.io.FileUtils;
 
 public class DownloadableFile {
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+
+    private static String proxySettings = "";
+    private static Proxy proxy = Proxy.NO_PROXY;
+
     private final File localFile;
     private final URL remoteFile;
 
@@ -34,24 +39,24 @@ public class DownloadableFile {
         return localFile.getName();
     }
 
-    public void doDownload(final Proxy proxy) throws IOException {
+    public void doDownload() throws IOException {
         final File tempFile = new File(localFile.getParent(), "~" + localFile.getName());
-        downloadToFile(proxy, remoteFile, tempFile);
+        downloadToFile(remoteFile, tempFile);
         Files.move(tempFile.toPath(), localFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
 
-    public static void downloadToFile(final Proxy proxy, final URL url, final File file) throws IOException {
-        if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
-            downloadUsingProxy(proxy, url, file);
-        } else {
-            FileUtils.copyURLToFile(url, file, 10000, 5000);
+    private static Proxy getProxy() {
+        if (!proxySettings.equals(CONFIG.getProxySettings())) {
+            proxySettings = CONFIG.getProxySettings();
+            proxy = CONFIG.getProxy();
         }
+        return proxy;
     }
 
-    private static void downloadUsingProxy(final Proxy proxy, final URL url, final File file) throws IOException {
+    private static void downloadUsingProxy(URL url, File file) throws IOException {
         try (
             final OutputStream outputStream = new BufferedOutputStream(new FileOutputStream(file));
-            final InputStream inputStream = url.openConnection(proxy).getInputStream()) {
+            final InputStream inputStream = url.openConnection(getProxy()).getInputStream()) {
             final byte[] buffer = new byte[65536];
             while (true) {
                 final int len = inputStream.read(buffer);
@@ -63,6 +68,14 @@ public class DownloadableFile {
         } catch (final Exception ex) {
             file.delete();
             throw ex;
+        }
+    }
+
+    public static void downloadToFile(URL url, File file) throws IOException {
+        if (getProxy() != Proxy.NO_PROXY && getProxy().type() != Proxy.Type.DIRECT) {
+            downloadUsingProxy(url, file);
+        } else {
+            FileUtils.copyURLToFile(url, file, 10000, 5000);
         }
     }
 
