@@ -15,7 +15,7 @@ public enum ImageSizePresets {
     SIZE_680x960(680, 960),
     SIZE_745x1040(745, 1040);
 
-    private static final String _S1 =  "Original";
+    private static final String _S1 =  "Default";
 
     private final Dimension size;
 
