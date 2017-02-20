@@ -254,7 +254,7 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
     @Override
     public void setEnabled(boolean b) {
         super.setEnabled(b);
-        downloadButton.setEnabled(b);
+        downloadButton.setEnabled(b && imagesScanner.isDone());
         progressBar.setEnabled(b);
         captionLabel.setEnabled(b);
     }
