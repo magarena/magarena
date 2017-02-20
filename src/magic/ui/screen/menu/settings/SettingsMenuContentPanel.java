@@ -26,7 +26,6 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     private static final String _S13 = "Reset & Restart";
     private static final String _S14 = "Yes";
     private static final String _S15 = "No";
-    private static final String _S16 = "Please switch off the 'Download images on demand' setting in preferences first.";
 
     private static FiremindWorkerDialog firemindWorkerDialog;
 
@@ -43,11 +42,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     }
 
     private void showDowloadImagesDialog() {
-        if (GeneralConfig.getInstance().getImagesOnDemand()) {
-            ScreenController.showInfoMessage(MText.get(_S16));
-        } else {
-            ScreenController.showDownloadImagesScreen();
-        }
+        ScreenController.showDownloadImagesScreen();
     }
 
     private void showFiremindWorkerDialog() {
