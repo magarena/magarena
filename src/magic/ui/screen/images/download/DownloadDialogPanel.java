@@ -41,6 +41,8 @@ class DownloadDialogPanel extends TexturedPanel implements PropertyChangeListene
         add(mainPanel, "w 100%, h 100%");
 
         doSetStyle(this);
+        setOpaque(false);
+        setBackground(MagicStyle.getTranslucentColor(Color.WHITE, 240));
     }
 
     private DialogMainPanel getMainPanel() {
