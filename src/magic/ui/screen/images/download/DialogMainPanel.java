@@ -29,8 +29,8 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     private static final String _S2 = "Wiki help page";
     private static final String _S3 = "Run in background...";
     private static final String _S4 = "Opens a page containing more information on this screen in your internet browser.";
-    private static final String _S6 = "Downloads card images that are missing or out-of-date in the 'cards' and 'tokens' folders.";
-    private static final String _S7 = "<b>Not 100% coverage</b>. Please note there may be a bit of a delay the first time a proxy image is requested while the rendering sub-system is loaded and intialized.";
+    private static final String _S6 = "Displays the printed card image. The images are downloaded to the 'cards' and 'tokens' folders.";
+    private static final String _S7 = "Displays a proxy image that is generated as required using cropped images downloaded to the 'crops' folder.";
 
     private final JButton backgroundButton;
     private final OptionsPanel optionsPanel;

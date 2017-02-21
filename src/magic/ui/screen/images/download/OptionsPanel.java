@@ -23,12 +23,12 @@ class OptionsPanel extends JPanel {
     private static final String _S3 = "Display card image as:";
     private static final String _S4 = "Preferred card text language";
     private static final String _S5 = "If a language other than English is selected then Magarena will first try to download a card image with text in that language. If no image is found then it will download the default English card image instead.";
-    private static final String _S11 = "Not applicable to rendered proxy images.";
+    private static final String _S11 = "*** Not applicable to rendered proxy images ***";
     private static final String _S6 = "Download on demand:";
-    private static final String _S7 = "Only downloads card images as needed. Switch off if you want to download all images in one go, use proxy frames with cropped images or download non-English card images.";
+    private static final String _S7 = "Downloads card images as needed. Recommended if you have a fast internet connection.";
     private static final String _S8 = "Preferred display size:";
     private static final String _S9 = "Sets the size of the card image displayed in card explorer and deck editor as well as popup images during a game. Select 'Default' to display the card image at its native size. Otherwise it will be scaled up or down to the selected preset.";
-    private static final String _S10 = "** This has no affect on the size of an image that is downloaded **";
+    private static final String _S10 = "*** This has no affect on the size of an image that is downloaded ***";
 
     private final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
