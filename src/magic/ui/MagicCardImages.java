@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.GeneralConfig;
 import magic.exception.DownloadException;
 import magic.model.IRenderableCard;
@@ -81,8 +82,8 @@ public final class MagicCardImages {
         try {
             return PrintedCardImage.get(face);
         } catch (DownloadException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
-            return MagicImages.MISSING_CARD;
+            System.err.println(ex.toString());
+            return CardBuilder.getCardBuilderImage(face);
         }
     }
 
