@@ -43,6 +43,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     private static final String _S11 = "There was problem during the import process.";
     private static final String _S12 = "Please see the following file for more details -";
     private static final String _S13 = "- mods...";
+    private static final String _S14 = "- game stats...";
 
     private static final String OK_STRING = String.format("%s\n", MText.get(_S3));
     private static final String FAIL_STRING = String.format("%s\n", MText.get(_S1));
@@ -64,6 +65,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     @Override
     public Boolean doInBackground() throws IOException {
         if (!isCancelled()) { importPreferences(); }
+        if (!isCancelled()) { importGameStats(); }
         if (!isCancelled()) { importNewDuelConfig(); }
         if (!isCancelled()) { importPlayerProfiles(); }
         if (!isCancelled()) { importCustomDecks(); }
@@ -104,6 +106,23 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
             );
         }
 
+    }
+
+    /**
+     * Copies H2 game stats database file BUT ONLY if the stats folder
+     * has been not yet been created (ie. post-install, not if you re-run
+     * the import process via the "Reset & restart" option).
+     */
+    private void importGameStats() throws IOException {
+        setProgressNote(MText.get(_S14));
+        String directoryName = "stats";
+        Path sourcePath = importDataPath.resolve(directoryName);
+        Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
+        if (sourcePath.toFile().exists() && !targetPath.toFile().exists()) {
+            IOFileFilter dbSuffixFilter = FileFilterUtils.suffixFileFilter(".db");
+            FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile(), dbSuffixFilter);
+        }
+        setProgressNote(OK_STRING);
     }
 
     /**

@@ -19,7 +19,6 @@ import magic.data.DeckGenerators;
 import magic.data.GeneralConfig;
 import magic.data.MagicCustomFormat;
 import magic.data.UnimplementedParser;
-import magic.data.stats.MagicStats;
 import magic.model.MagicGameLog;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -206,9 +205,6 @@ final public class MagicSystem {
 
         // Queue up tasks to run synchronously on a single background thread.
         final ExecutorService background = Executors.newSingleThreadExecutor();
-        if (GeneralConfig.getInstance().isGameStatsEnabled()) {
-            background.execute(() -> { MagicStats.init(); });
-        }
         background.execute(loadCards);
         background.execute(() -> { CardDefinitions.postCardDefinitions(); });
         background.execute(loadMissing);
