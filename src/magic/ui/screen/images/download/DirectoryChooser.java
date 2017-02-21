@@ -32,8 +32,10 @@ public class DirectoryChooser extends JPanel {
     private static final String _S3 = "Not enough free space!";
     private static final String _S2 = "Select images directory";
     private static final String _S4 = "A complete set of images requires at least 1.5 GB of free space.";
-    private static final String _S6 = "Magarena will look for a card image in one of the following sub-folders, in the order shown :- 'custom', 'crops', 'cards' or 'tokens'. <b>Left click</b> to explore the images folder.";
+    private static final String _S6 = "Magarena will look for a card image in one of the following sub-folders, in the order shown :- 'custom', 'crops', 'cards' or 'tokens'.";
     private static final String _S7 = "Select or create a new images folder.";
+    private static final String _S8 = "Card images folder";
+    private static final String _S9 = "left click to explore";
 
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
 
@@ -81,7 +83,9 @@ public class DirectoryChooser extends JPanel {
 
     private void setupImagesFolderField() {
         imagesFolder.setFile(defaultPath);
-        imagesFolder.setToolTipText(MText.get(_S6));
+        imagesFolder.setToolTipText(String.format("<b>%s</b> (%s)<br>%s",
+            MText.get(_S8), MText.get(_S9), MText.get(_S6))
+        );
         imagesFolder.setBorder(BorderFactory.createCompoundBorder(
                 BorderFactory.createMatteBorder(1, 1, 1, 1, Color.GRAY),
                 BorderFactory.createEmptyBorder(0, 4, 0, 0))
