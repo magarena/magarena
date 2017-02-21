@@ -2,6 +2,8 @@ package magic.ui.widget.duel.viewer;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
@@ -27,6 +29,23 @@ public class PhaseStepViewer extends JPanel {
     private static final String _S11 = "Ending Phase : End of Turn Step";
     private static final String _S12 = "Ending Phase : Clean Up Step";
 
+    // use a LinkedHashMap to retain insertion order.
+    private static final Map<MagicPhaseType, String> phasesMap = new LinkedHashMap<>();
+    static {
+        phasesMap.put(MagicPhaseType.Untap, _S1);
+        phasesMap.put(MagicPhaseType.Upkeep, _S2);
+        phasesMap.put(MagicPhaseType.Draw, _S3);
+        phasesMap.put(MagicPhaseType.FirstMain, _S4);
+        phasesMap.put(MagicPhaseType.BeginOfCombat, _S5);
+        phasesMap.put(MagicPhaseType.DeclareAttackers, _S6);
+        phasesMap.put(MagicPhaseType.DeclareBlockers, _S7);
+        phasesMap.put(MagicPhaseType.CombatDamage, _S8);
+        phasesMap.put(MagicPhaseType.EndOfCombat, _S9);
+        phasesMap.put(MagicPhaseType.SecondMain, _S10);
+        phasesMap.put(MagicPhaseType.EndOfTurn, _S11);
+        phasesMap.put(MagicPhaseType.Cleanup, _S12);
+    }
+
     private static final Color COLOR_ON = MagicStyle.getRolloverColor();
     private static final Color COLOR_OFF = Color.LIGHT_GRAY;
     private static final Font FONT_ON = new Font("dialog", Font.BOLD, 12);
@@ -41,18 +60,9 @@ public class PhaseStepViewer extends JPanel {
 
     private void setMyLayout() {
         setLayout(new MigLayout("insets 1 5 0 5, gap 0"));
-        setPhaseStepIndicator("UN", MText.get(_S1));
-        setPhaseStepIndicator("UP", MText.get(_S2));
-        setPhaseStepIndicator("DR", MText.get(_S3));
-        setPhaseStepIndicator("M1", MText.get(_S4));
-        setPhaseStepIndicator("BC", MText.get(_S5));
-        setPhaseStepIndicator("DA", MText.get(_S6));
-        setPhaseStepIndicator("DB", MText.get(_S7));
-        setPhaseStepIndicator("CD", MText.get(_S8));
-        setPhaseStepIndicator("EC", MText.get(_S9));
-        setPhaseStepIndicator("M2", MText.get(_S10));
-        setPhaseStepIndicator("ET", MText.get(_S11));
-        setPhaseStepIndicator("CU", MText.get(_S12));
+        for (MagicPhaseType phase : phasesMap.keySet()) {
+            setPhaseStepIndicator(phase.getAbbreviation(), MText.get(phasesMap.get(phase)));
+        }
     }
 
     private void setPhaseStep(int index) {
