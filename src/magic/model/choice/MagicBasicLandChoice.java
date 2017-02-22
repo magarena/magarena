@@ -1,5 +1,11 @@
 package magic.model.choice;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -7,16 +13,12 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilterFactory;
-import magic.exception.UndoClickedException;
-
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import magic.model.IUIGameController;
 
 /** Contains optimal decision logic for each choice type. */
 public class MagicBasicLandChoice extends MagicChoice {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Choose yes or no.";
 
     private static final int ALL=0;
     private static final int MOST=1;
@@ -37,7 +39,7 @@ public class MagicBasicLandChoice extends MagicChoice {
     private final int type;
 
     private MagicBasicLandChoice(final int type) {
-        super("Choose yes or no.");
+        super(_S1);
         this.type=type;
     }
 
