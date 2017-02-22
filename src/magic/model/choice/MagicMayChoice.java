@@ -26,7 +26,7 @@ public class MagicMayChoice extends MagicChoice {
     private final int manaChoiceResultIndex;
     private final int targetChoiceResultIndex;
 
-    private static final MagicChoice satisfied(final MagicMatchedCostEvent cost) {
+    private static MagicChoice satisfied(final MagicMatchedCostEvent cost) {
         return new MagicChoice("satisfied") {
             @Override
             public Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
@@ -88,10 +88,6 @@ public class MagicMayChoice extends MagicChoice {
         this(_S1, choices);
     }
 
-    private MagicChoice[] getChoices() {
-        return choices;
-    }
-
     @Override
     public MagicTargetChoice getTargetChoice() {
         return targetChoice;
@@ -126,7 +122,7 @@ public class MagicMayChoice extends MagicChoice {
         final Object[] noChoiceResults=new Object[nrOfChoiceResults];
         noChoiceResults[0]=NO_CHOICE;
 
-        final List<Collection<?>> optionsList=new ArrayList<Collection<?>>(nrOfChoices);
+        final List<Collection<?>> optionsList=new ArrayList<>(nrOfChoices);
         for (int index=0;index<nrOfChoices;index++) {
             if (!choices[index].hasOptions(game,player,source,true)) {
                 return Collections.singletonList(noChoiceResults);
@@ -134,12 +130,12 @@ public class MagicMayChoice extends MagicChoice {
             optionsList.add(choices[index].getArtificialOptions(game,event));
         }
 
-        final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+        final List<Object[]> choiceResultsList=new ArrayList<>();
         final Object[] yesChoiceResults=new Object[nrOfChoiceResults];
         yesChoiceResults[0]=YES_CHOICE;
 
         int index=0;
-        final LinkedList<Iterator<?>> iterators=new LinkedList<Iterator<?>>();
+        final LinkedList<Iterator<?>> iterators=new LinkedList<>();
         iterators.addLast(optionsList.get(0).iterator());
         while (index>=0) {
             final Iterator<?> iterator=iterators.getLast();
