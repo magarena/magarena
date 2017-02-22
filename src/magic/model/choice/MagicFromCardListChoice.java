@@ -11,7 +11,6 @@ import magic.model.IUIGameController;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 
@@ -62,7 +61,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         upTo = aUpTo;
     }
 
-    private static final String genDescription(final int amount, final String description, final boolean aUpTo) {
+    private static String genDescription(final int amount, final String description, final boolean aUpTo) {
         final String paddedDesc = description.isEmpty() ? description : " " + description;
 
         if (amount == 0) {
@@ -140,12 +139,10 @@ public class MagicFromCardListChoice extends MagicChoice {
     // FIXME: need to implement ordering of cards for AI, needed by scry
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
-        final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
-        final List<Object> options = new ArrayList<Object>();
-        final List<MagicCard> oList = new ArrayList<MagicCard>();
-        final List<Boolean> known = new ArrayList<Boolean>(oList.size());
+        final List<Object> options = new ArrayList<>();
+        final List<MagicCard> oList = new ArrayList<>();
+        final List<Boolean> known = new ArrayList<>(oList.size());
 
         //map the cards to the current game
         for (final MagicCard card : choiceList) {
@@ -180,11 +177,10 @@ public class MagicFromCardListChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
-        final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
 
         final MagicCardChoiceResult result = new MagicCardChoiceResult();
-        final Set<Object> validCards = new HashSet<Object>(choiceList);
+        final Set<Object> validCards = new HashSet<>(choiceList);
         int actualAmount = Math.min(amount, validCards.size());
         if (actualAmount == 0) {
             final String message = result.size() > 0 ? result.toString() + "|" + getDescription() : getDescription();
