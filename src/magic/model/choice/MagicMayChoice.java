@@ -1,13 +1,5 @@
 package magic.model.choice;
 
-import magic.data.GeneralConfig;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicMatchedCostEvent;
-import magic.exception.UndoClickedException;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -15,9 +7,19 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import magic.data.GeneralConfig;
+import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicMatchedCostEvent;
 
 public class MagicMayChoice extends MagicChoice {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Proceed with \"may\" action?";
 
     private final MagicChoice[] choices;
     private final MagicTargetChoice targetChoice;
@@ -83,7 +85,7 @@ public class MagicMayChoice extends MagicChoice {
     }
 
     public MagicMayChoice(final MagicChoice... choices) {
-        this("Proceed with \"may\" action?", choices);
+        this(_S1, choices);
     }
 
     private MagicChoice[] getChoices() {
