@@ -29,7 +29,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         upTo = aUpTo;
     }
 
-    private static final String genDescription(final int amount, final String description, final boolean aUpTo) {
+    private static String genDescription(final int amount, final String description, final boolean aUpTo) {
         final String paddedDesc = description.isEmpty() ? description : " " + description;
 
         if (aUpTo && amount == 1) {
@@ -106,11 +106,10 @@ public class MagicFromCardFilterChoice extends MagicChoice {
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
-        final List<Object> options = new ArrayList<Object>();
+        final List<Object> options = new ArrayList<>();
         final List<MagicCard> oList = player.filterCards(filter);
-        final List<Boolean> known = new ArrayList<Boolean>(oList.size());
+        final List<Boolean> known = new ArrayList<>(oList.size());
 
         //reveal the cards
         for (final MagicCard card : oList) {
@@ -146,7 +145,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         final MagicCardChoiceResult result = new MagicCardChoiceResult();
         final List<MagicCard> choiceList = player.filterCards(filter);
         final MagicCardList showList = new MagicCardList(choiceList);
-        final Set<Object> validCards = new HashSet<Object>(choiceList);
+        final Set<Object> validCards = new HashSet<>(choiceList);
         int actualAmount = Math.min(amount, validCards.size());
         if (actualAmount == 0) {
             controller.showCards(showList);
