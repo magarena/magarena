@@ -1,5 +1,12 @@
 package magic.model.choice;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
@@ -8,25 +15,19 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import magic.model.IUIGameController;
 
 public class MagicDeclareBlockersChoice extends MagicChoice {
 
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Declare blockers.";
+    private static final String _S_BLOCKER_MESSAGE = "Click on a creature to declare as blocker or remove from combat.|Press {f} to continue.";
+    private static final String _S_ATTACKER_MESSAGE = "Click on an attacking creature to declare as blocker.";
+    private static final String _S_CONTINUE_MESSAGE = "Press {f} to continue.";
+
     private static final MagicDeclareBlockersChoice INSTANCE=new MagicDeclareBlockersChoice();
 
-    private static final String BLOCKER_MESSAGE="Click on a creature to declare as blocker or remove from combat.|Press {f} to continue.";
-    private static final String ATTACKER_MESSAGE="Click on an attacking creature to declare as blocker.";
-    private static final String CONTINUE_MESSAGE="Press {f} to continue.";
-
     private MagicDeclareBlockersChoice() {
-        super("Declare blockers.");
+        super(_S1);
     }
 
     @Override
@@ -77,10 +78,10 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                 final Set<MagicPermanent> candidateBlockers=builder.getCandidateBlockers();
                 controller.focusViewers(-1);
                 if (candidateBlockers.isEmpty()) {
-                    controller.showMessage(source,CONTINUE_MESSAGE);
+                    controller.showMessage(source,_S_CONTINUE_MESSAGE);
                 } else {
                     controller.setValidChoices(new HashSet<Object>(candidateBlockers),true);
-                    controller.showMessage(source,BLOCKER_MESSAGE);
+                    controller.showMessage(source,_S_BLOCKER_MESSAGE);
                 }
                 controller.enableForwardButton();
                 controller.waitForInput();
@@ -103,7 +104,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                 } else {
                     controller.setSourceCardDefinition(blocker);
                     controller.setValidChoices(new HashSet<Object>(builder.getBlockableAttackers(blocker)),true);
-                    controller.showMessage(blocker,ATTACKER_MESSAGE);
+                    controller.showMessage(blocker,_S_ATTACKER_MESSAGE);
                     controller.disableActionButton(false);
                     controller.waitForInput();
                     controller.setSourceCardDefinition(MagicSource.NONE);
