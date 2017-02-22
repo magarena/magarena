@@ -1,24 +1,22 @@
 package magic.model.choice;
 
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;
+import magic.model.MagicCard;
+import magic.model.MagicCardList;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
 
 public class MagicFromCardListChoice extends MagicChoice {
 
-    private final String displayMessage;
     private final MagicCardList showList;
     private final List<MagicCard> choiceList;
     private final int amount;
@@ -62,7 +60,6 @@ public class MagicFromCardListChoice extends MagicChoice {
         showList = new MagicCardList(aShowList);
         amount = aAmount;
         upTo = aUpTo;
-        displayMessage = genDescription(aAmount, description, aUpTo);
     }
 
     private static final String genDescription(final int amount, final String description, final boolean aUpTo) {
@@ -190,7 +187,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         final Set<Object> validCards=new HashSet<Object>(choiceList);
         int actualAmount=Math.min(amount,validCards.size());
         if (actualAmount == 0) {
-            final String message=result.size()>0?result.toString()+"|"+displayMessage:displayMessage;
+            final String message=result.size()>0?result.toString()+"|"+getDescription():getDescription();
             controller.showCards(showList);
             controller.focusViewers(5);
             controller.showMessage(source,message);
@@ -201,7 +198,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             return new Object[]{result};
         } else {
             for (;actualAmount>0;actualAmount--) {
-                final String message=result.size()>0?result.toString()+"|"+displayMessage:displayMessage;
+                final String message=result.size()>0?result.toString()+"|"+getDescription():getDescription();
                 controller.showCards(showList);
                 controller.focusViewers(5);
                 controller.disableActionButton(false);
