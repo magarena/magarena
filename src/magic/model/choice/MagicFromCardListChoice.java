@@ -13,8 +13,15 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.translate.MText;
 
 public class MagicFromCardListChoice extends MagicChoice {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Choose up to 1 card";
+    private static final String _S2 = "Choose up to %d cards";
+    private static final String _S3 = "Choose a card";
+    private static final String _S4 = "Choose %d cards";
 
     private final MagicCardList showList;
     private final List<MagicCard> choiceList;
@@ -67,13 +74,13 @@ public class MagicFromCardListChoice extends MagicChoice {
         if (amount == 0) {
             return description;
         } else if (aUpTo && amount == 1) {
-            return "Choose up to 1 card" + paddedDesc + ".";
+            return _S1 + paddedDesc + ".";
         } else if (aUpTo && amount != 1) {
-            return "Choose up to " + amount + " cards" + paddedDesc + ".";
+            return MText.get(_S2, amount) + paddedDesc + ".";
         } else if (!aUpTo && amount == 1) {
-            return "Choose a card" + paddedDesc + ".";
+            return _S3 + paddedDesc + ".";
         } else {
-            return "Choose " + amount + " cards" + paddedDesc + ".";
+            return MText.get(_S4, amount) + paddedDesc + ".";
         }
     }
 
