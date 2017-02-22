@@ -26,35 +26,35 @@ public class MagicFromCardListChoice extends MagicChoice {
         this(new MagicCardList(), showList, 0, false, description);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final int amount) {
         this(choiceList, choiceList, amount, false);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final String description) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final int amount, final String description) {
         this(choiceList, choiceList, amount, false, description);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final boolean upTo) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final int amount, final boolean upTo) {
         this(choiceList, choiceList, amount, upTo);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final boolean upTo, final String description) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final int amount, final boolean upTo, final String description) {
         this(choiceList, choiceList, amount, upTo, description);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final List<MagicCard> showList, final int amount) {
         this(choiceList, showList, amount, false);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount, final String description) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final List<MagicCard> showList, final int amount, final String description) {
         this(choiceList, showList, amount, false, description);
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount, final boolean upTo) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList, final List<MagicCard> showList, final int amount, final boolean upTo) {
         this(choiceList, showList, amount, upTo, "");
     }
 
-    public MagicFromCardListChoice(final List<MagicCard> aChoiceList,final List<MagicCard> aShowList,final int aAmount, final boolean aUpTo, final String description) {
+    public MagicFromCardListChoice(final List<MagicCard> aChoiceList, final List<MagicCard> aShowList, final int aAmount, final boolean aUpTo, final String description) {
         super(genDescription(aAmount, description, aUpTo));
         choiceList = aChoiceList;
         showList = new MagicCardList(aShowList);
@@ -71,7 +71,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             return "Choose up to 1 card" + paddedDesc + ".";
         } else if (aUpTo && amount != 1) {
             return "Choose up to " + amount + " cards" + paddedDesc + ".";
-        } else if (!aUpTo && amount==1) {
+        } else if (!aUpTo && amount == 1) {
             return "Choose a card" + paddedDesc + ".";
         } else {
             return "Choose " + amount + " cards" + paddedDesc + ".";
@@ -97,9 +97,9 @@ public class MagicFromCardListChoice extends MagicChoice {
             return;
         }
 
-        cards[count]=cList.get(index);
-        createOptions(options,cList,cards,count+1,limit,index+1);
-        createOptions(options,cList,cards,count,limit,index+1);
+        cards[count] = cList.get(index);
+        createOptions(options, cList, cards, count + 1, limit, index + 1);
+        createOptions(options, cList, cards, count, limit, index + 1);
     }
 
     private void createOptionsUpTo(
@@ -125,7 +125,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             // use 1 to cnt copies of first
             for (int i = 0; i < cnt && count + i + 1 <= limit; i++) {
                 cards[count + i] = cList.get(index + i);
-                createOptionsUpTo(options,cList,cards,count + i + 1,limit,index + cnt);
+                createOptionsUpTo(options, cList, cards, count + i + 1, limit, index + cnt);
             }
 
             // use 0 copies of first
@@ -133,7 +133,7 @@ public class MagicFromCardListChoice extends MagicChoice {
                 cards[count + i] = null;
             }
 
-            createOptionsUpTo(options,cList,cards,count,limit,index + cnt);
+            createOptionsUpTo(options, cList, cards, count, limit, index + cnt);
         }
     }
 
@@ -161,13 +161,13 @@ public class MagicFromCardListChoice extends MagicChoice {
         final List<MagicCard> cList = new MagicCardList(oList);
         Collections.sort(cList);
 
-        final int actualAmount = Math.min(amount,cList.size());
+        final int actualAmount = Math.min(amount, cList.size());
         if (actualAmount == 0) {
             options.add(new MagicCardChoiceResult());
         } else if (upTo) {
-            createOptionsUpTo(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
+            createOptionsUpTo(options, cList, new MagicCard[actualAmount], 0, actualAmount, 0);
         } else {
-            createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
+            createOptions(options, cList, new MagicCard[actualAmount], 0, actualAmount, 0);
         }
 
         //hide the cards
@@ -183,27 +183,27 @@ public class MagicFromCardListChoice extends MagicChoice {
         final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
 
-        final MagicCardChoiceResult result=new MagicCardChoiceResult();
-        final Set<Object> validCards=new HashSet<Object>(choiceList);
-        int actualAmount=Math.min(amount,validCards.size());
+        final MagicCardChoiceResult result = new MagicCardChoiceResult();
+        final Set<Object> validCards = new HashSet<Object>(choiceList);
+        int actualAmount = Math.min(amount, validCards.size());
         if (actualAmount == 0) {
-            final String message=result.size()>0?result.toString()+"|"+getDescription():getDescription();
+            final String message = result.size() > 0 ? result.toString() + "|" + getDescription() : getDescription();
             controller.showCards(showList);
             controller.focusViewers(5);
-            controller.showMessage(source,message);
+            controller.showMessage(source, message);
             controller.enableForwardButton();
             controller.waitForInput();
             controller.clearCards();
             controller.focusViewers(0);
             return new Object[]{result};
         } else {
-            for (;actualAmount>0;actualAmount--) {
-                final String message=result.size()>0?result.toString()+"|"+getDescription():getDescription();
+            for (; actualAmount > 0; actualAmount--) {
+                final String message = result.size() > 0 ? result.toString() + "|" + getDescription() : getDescription();
                 controller.showCards(showList);
                 controller.focusViewers(5);
                 controller.disableActionButton(false);
-                controller.setValidChoices(validCards,false);
-                controller.showMessage(source,message);
+                controller.setValidChoices(validCards, false);
+                controller.showMessage(source, message);
                 if (upTo) {
                     controller.enableForwardButton();
                 }
@@ -211,7 +211,7 @@ public class MagicFromCardListChoice extends MagicChoice {
                 if (controller.isActionClicked()) {
                     controller.clearCards();
                     controller.focusViewers(0);
-                    return new Object[] {result};
+                    return new Object[]{result};
                 }
                 final MagicCard card = controller.getChoiceClicked();
                 validCards.remove(card);
