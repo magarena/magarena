@@ -1,5 +1,10 @@
 package magic.model.choice;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -8,12 +13,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
-import magic.model.IUIGameController;
 
 public class MagicDeclareAttackersChoice extends MagicChoice {
 
@@ -29,15 +28,12 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
         return MagicDeclareAttackersResultBuilder.buildResults(game,player);
     }
 
     @Override
     public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
-
         final MagicDeclareAttackersResult result = new MagicDeclareAttackersResult();
         final MagicCombatCreatureBuilder builder = new MagicCombatCreatureBuilder(game,player,player.getOpponent());
         builder.buildBlockers();
