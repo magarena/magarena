@@ -13,16 +13,19 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.translate.StringContext;
 
 public class MagicDeclareAttackersChoice extends MagicChoice {
 
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Declare attackers.";
+    @StringContext(eg = "{f} will be replaced by an icon. | represents a new line.")
+    private static final String _S2 = "Click on a creature to declare as attacker or remove it from combat.|Press {f} to continue.";
+
     private static final MagicDeclareAttackersChoice INSTANCE = new MagicDeclareAttackersChoice();
 
-    private static final String MESSAGE =
-        "Click on a creature to declare as attacker or remove it from combat.|Press {f} to continue.";
-
     private MagicDeclareAttackersChoice() {
-        super("Declare attackers.");
+        super(_S1);
     }
 
     @Override
@@ -78,7 +81,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
         }
 
         controller.focusViewers(-1);
-        controller.showMessage(source,MESSAGE);
+        controller.showMessage(source, _S2);
         controller.setValidChoices(validChoices,true);
         controller.enableForwardButton();
         controller.updateGameView();
