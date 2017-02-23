@@ -12,7 +12,7 @@ import magic.translate.MText;
  * Game statistics for a deck.
  */
 @SuppressWarnings("serial")
-class GameStatsTableModel extends AbstractTableModel {
+class DeckGamesTableModel extends AbstractTableModel {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Game";
@@ -24,19 +24,19 @@ class GameStatsTableModel extends AbstractTableModel {
 
     private static final int PAGE_SIZE = 8;
 
-    private final List<DeckGameStats> gameStats;
+    private final List<DeckGame> gameStats;
     private final int totalGames;
     private final int totalPages;
     private int currentPage = 1;
 
-    GameStatsTableModel(MagicDeck deck, int page) {
+    DeckGamesTableModel(MagicDeck deck, int page) {
         this.totalGames = MagicStats.getTotalGamesPlayed(deck);
         this.totalPages = ((totalGames - 1) / PAGE_SIZE) + 1;
         currentPage = page;
         gameStats = getDeckGameStats(deck, MagicStats.getGameStats(deck, PAGE_SIZE, getGamesToSkip()));
     }
 
-    GameStatsTableModel(MagicDeck deck) {
+    DeckGamesTableModel(MagicDeck deck) {
         this(deck, 1);
     }
 
@@ -44,9 +44,9 @@ class GameStatsTableModel extends AbstractTableModel {
         return currentPage == 1 ? 0 : (currentPage - 1) * PAGE_SIZE;
     }
 
-    private List<DeckGameStats> getDeckGameStats(MagicDeck deck, List<GameStatsInfo> gameStats) {
+    private List<DeckGame> getDeckGameStats(MagicDeck deck, List<GameStatsInfo> gameStats) {
         return gameStats.stream()
-            .map(s -> new DeckGameStats(deck, s))
+            .map(s -> new DeckGame(deck, s))
             .collect(Collectors.toList());
     }
 
@@ -89,7 +89,7 @@ class GameStatsTableModel extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int row, int col) {
-        DeckGameStats stats = gameStats.get(row);
+        DeckGame stats = gameStats.get(row);
         switch (col) {
         case 0: return "<html>" + stats.getGameInfo() + "</html>";
         case 1: return "<html>" + stats.getConfigInfo() + "</html>";

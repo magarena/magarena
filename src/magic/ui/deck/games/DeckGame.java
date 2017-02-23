@@ -11,7 +11,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.MText;
 
-class DeckGameStats {
+class DeckGame {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "version";
@@ -24,7 +24,7 @@ class DeckGameStats {
     private final GameStatsInfo dto;
     private final MagicDeck deck;
 
-    DeckGameStats(MagicDeck deck, GameStatsInfo dto) {
+    DeckGame(MagicDeck deck, GameStatsInfo dto) {
         this.deck = deck;
         this.dto = dto;
     }

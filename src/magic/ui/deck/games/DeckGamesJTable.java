@@ -22,7 +22,7 @@ import magic.ui.widget.cards.table.CardsTableStyle;
 import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
-class GameStatsJTable extends JTable {
+class DeckGamesJTable extends JTable {
 
     private static final int ROW_HEIGHT = 40; // pixels
 
@@ -42,7 +42,7 @@ class GameStatsJTable extends JTable {
     private Color DEFAULT_GRID_COLOR;
     private final TableColumnAdjuster tca;
 
-    GameStatsJTable(TableModel dm) {
+    DeckGamesJTable(TableModel dm) {
         super(dm);
         setDefaultProperties();
         setDefaultColumnProperties();
@@ -60,7 +60,7 @@ class GameStatsJTable extends JTable {
                 int col = columnAtPoint(ev.getPoint());
                 if (col == 1 || col == 10) { // P1_ID, P2_ID
                     final TableModel dm = getModel();
-                    MouseHelper.showBusyCursor(GameStatsJTable.this);
+                    MouseHelper.showBusyCursor(DeckGamesJTable.this);
                     ScreenController.showPlayerScreen((String)dm.getValueAt(row, col));
                     MouseHelper.showDefaultCursor();
 
@@ -71,7 +71,7 @@ class GameStatsJTable extends JTable {
                     DeckType deckType = DeckType.valueOf((String) dm.getValueAt(row, col + 2));
                     long fileChecksum = DeckUtils.getDeckFileChecksum(deckName, deckType);
                     if (fileChecksum == expectedChecksum) {
-                        MouseHelper.showBusyCursor(GameStatsJTable.this);
+                        MouseHelper.showBusyCursor(DeckGamesJTable.this);
                         ScreenController.showDeckEditor(DeckUtils.loadDeckFromFile(deckName, deckType));
                         MouseHelper.showDefaultCursor();
                     }

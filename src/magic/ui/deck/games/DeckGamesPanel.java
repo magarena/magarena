@@ -18,16 +18,16 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckStatsPanel extends TexturedPanel
+public class DeckGamesPanel extends TexturedPanel
     implements IDeckEditorView, IDeckView, IPagination {
 
-    private GameStatsTableModel tm;
-    private GameStatsJTable table;
+    private DeckGamesTableModel tm;
+    private DeckGamesJTable table;
     private final MScrollPane scrollpane = new MScrollPane();
     private final PaginationPanel paginator;
     private MagicDeck deck;
 
-    public DeckStatsPanel(MagicDeck deck) {
+    public DeckGamesPanel(MagicDeck deck) {
         this.deck = deck;
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         scrollpane.setOpaque(false);
@@ -40,11 +40,11 @@ public class DeckStatsPanel extends TexturedPanel
     }
 
     private void refreshStatsTable() {
-        tm = new GameStatsTableModel(deck);
+        tm = new DeckGamesTableModel(deck);
     }
 
     private void refreshStatsTable(int page) {
-        tm = new GameStatsTableModel(deck, page);
+        tm = new DeckGamesTableModel(deck, page);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class DeckStatsPanel extends TexturedPanel
                 refreshStatsTable();
             }
             if (tm != null) {
-                table = new GameStatsJTable(tm);
+                table = new DeckGamesJTable(tm);
                 scrollpane.setViewportView(table);
                 paginator.refresh();
             }
