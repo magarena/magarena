@@ -53,9 +53,4 @@ class DeckColorLabel extends JLabel {
         setPreferredSize(new Dimension(preferredWidth, 16));
     }
 
-    // CTR
-    DeckColorLabel(final MagicDeck deck) {
-        this (getDeckColorSymbols(deck));
-    }
-
 }
