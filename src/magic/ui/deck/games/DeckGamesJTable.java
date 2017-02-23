@@ -2,9 +2,6 @@ package magic.ui.deck.games;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
 import javax.swing.JComponent;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
@@ -13,13 +10,9 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
-import magic.data.DeckType;
-import magic.ui.ScreenController;
 import magic.ui.helpers.ColorHelper;
-import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.stats.TableColumnAdjuster;
 import magic.ui.widget.cards.table.CardsTableStyle;
-import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
 class DeckGamesJTable extends JTable {
@@ -49,53 +42,6 @@ class DeckGamesJTable extends JTable {
         setColumnRenderers();
         tca = new TableColumnAdjuster(this);
         tca.adjustColumns();
-        setMouseListeners();
-    }
-
-    private void setMouseListeners() {
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(MouseEvent ev) {
-                int row = rowAtPoint(ev.getPoint());
-                int col = columnAtPoint(ev.getPoint());
-                if (col == 1 || col == 10) { // P1_ID, P2_ID
-                    final TableModel dm = getModel();
-                    MouseHelper.showBusyCursor(DeckGamesJTable.this);
-                    ScreenController.showPlayerScreen((String)dm.getValueAt(row, col));
-                    MouseHelper.showDefaultCursor();
-
-                } else if (col == 5 || col == 14) { // P1_DECK, P2_DECK
-                    final TableModel dm = getModel();
-                    String deckName = (String) dm.getValueAt(row, col);
-                    long expectedChecksum = Long.parseLong((String) dm.getValueAt(row, col + 1));
-                    DeckType deckType = DeckType.valueOf((String) dm.getValueAt(row, col + 2));
-                    long fileChecksum = DeckUtils.getDeckFileChecksum(deckName, deckType);
-                    if (fileChecksum == expectedChecksum) {
-                        MouseHelper.showBusyCursor(DeckGamesJTable.this);
-                        ScreenController.showDeckEditor(DeckUtils.loadDeckFromFile(deckName, deckType));
-                        MouseHelper.showDefaultCursor();
-                    }
-                }
-            }
-        });
-        addMouseMotionListener(new MouseMotionListener() {
-            private int lastCol = -1;
-            @Override
-            public void mouseDragged(MouseEvent e) { }
-            @Override
-            public void mouseMoved(MouseEvent e) {
-                JTable aTable = (JTable) e.getSource();
-                int mCol = aTable.columnAtPoint(e.getPoint());
-                if (mCol == 1 || mCol == 10 || mCol == 5 || mCol == 14) {
-                    aTable.repaint();
-                    MouseHelper.showHandCursor(aTable);
-                } else if (lastCol == 1 || lastCol == 10 || lastCol == 5 || lastCol == 14) {
-                    aTable.repaint();
-                    MouseHelper.showDefaultCursor(aTable);
-                }
-                lastCol = mCol;
-            }
-        });
     }
 
     private void setColumnRenderers() {
