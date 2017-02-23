@@ -10,7 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.screen.deck.editor.stats.DeckStatsPanel;
+import magic.ui.deck.games.DeckStatsPanel;
 import magic.ui.widget.deck.legality.LegalityPanel;
 import magic.ui.widget.deck.stats.IPwlWorkerListener;
 import net.miginfocom.swing.MigLayout;

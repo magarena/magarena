@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor.stats;
+package magic.ui.deck.games;
 
 import java.awt.Color;
 import java.util.ArrayList;

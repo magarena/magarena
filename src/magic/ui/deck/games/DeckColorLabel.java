@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor.stats;
+package magic.ui.deck.games;
 
 import java.awt.Dimension;
 import javax.swing.JLabel;
@@ -15,27 +15,9 @@ import net.miginfocom.swing.MigLayout;
  * Normally used to display the color of a deck.
  */
 @SuppressWarnings("serial")
-public class DeckColorLabel extends JLabel {
+class DeckColorLabel extends JLabel {
 
     private static final int ICON_GAPX = 1;
-
-    // CTR
-    public DeckColorLabel(final String deckColorSymbols) {
-
-        final int colorCount = deckColorSymbols.length();
-
-        if (colorCount > 0) {
-            setLayout(new MigLayout("insets 0, gapx " + ICON_GAPX));
-            for (int i = 0; i < colorCount; i++) {
-                final MagicManaType manaType = MagicColor.getColor(deckColorSymbols.charAt(i)).getManaType();
-                final JLabel iconLabel = new JLabel(MagicImages.getIcon(manaType, true));
-                add(iconLabel, "w 16!, h 16!");
-            }
-        }
-
-        final int preferredWidth = (colorCount * 16) + (colorCount * ICON_GAPX);
-        setPreferredSize(new Dimension(preferredWidth, 16));
-    }
 
     /**
      * Returns a string of characters as defined in {@link MagicColor} where each
@@ -54,7 +36,25 @@ public class DeckColorLabel extends JLabel {
     }
 
     // CTR
-    public DeckColorLabel(final MagicDeck deck) {
+    DeckColorLabel(final String deckColorSymbols) {
+
+        final int colorCount = deckColorSymbols.length();
+
+        if (colorCount > 0) {
+            setLayout(new MigLayout("insets 0, gapx " + ICON_GAPX));
+            for (int i = 0; i < colorCount; i++) {
+                final MagicManaType manaType = MagicColor.getColor(deckColorSymbols.charAt(i)).getManaType();
+                final JLabel iconLabel = new JLabel(MagicImages.getIcon(manaType, true));
+                add(iconLabel, "w 16!, h 16!");
+            }
+        }
+
+        final int preferredWidth = (colorCount * 16) + (colorCount * ICON_GAPX);
+        setPreferredSize(new Dimension(preferredWidth, 16));
+    }
+
+    // CTR
+    DeckColorLabel(final MagicDeck deck) {
         this (getDeckColorSymbols(deck));
     }
 

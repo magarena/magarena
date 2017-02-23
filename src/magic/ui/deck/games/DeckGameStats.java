@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor.stats;
+package magic.ui.deck.games;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -10,7 +10,6 @@ import magic.model.MagicDeck;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.MText;
-
 
 class DeckGameStats {
 

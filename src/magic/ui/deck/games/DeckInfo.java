@@ -1,9 +1,9 @@
-package magic.ui.screen.deck.editor.stats;
+package magic.ui.deck.games;
 
-public class DeckInfo {
+class DeckInfo {
 
-    final public String deckName;
-    final public String deckColor;
+    final String deckName;
+    final String deckColor;
 
     DeckInfo(String deckName, String deckColor) {
         this.deckName = deckName;

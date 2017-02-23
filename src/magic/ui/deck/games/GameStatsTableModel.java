@@ -1,4 +1,4 @@
-package magic.ui.screen.deck.editor.stats;
+package magic.ui.deck.games;
 
 import java.util.List;
 import java.util.stream.Collectors;
