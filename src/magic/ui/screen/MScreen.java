@@ -78,7 +78,7 @@ public abstract class MScreen {
         UrlHelper.openURL(wikiPage.getUrl());
     }
 
-    public boolean isScreenReadyToClose(final Object aScreen) {
+    public boolean isScreenReadyToClose(MScreen aScreen) {
         if (loadingWorker != null && !loadingWorker.isDone()) {
             loadingWorker.cancel(true);
         }
