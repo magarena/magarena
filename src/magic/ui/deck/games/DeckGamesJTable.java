@@ -45,16 +45,8 @@ class DeckGamesJTable extends JTable {
     }
 
     private void setColumnRenderers() {
-        getColumnModel().getColumn(4).setCellRenderer(new DeckCellRenderer());
-//        // P1_ID
-//        getColumnModel().getColumn(1).setCellRenderer(new PlayerCellRenderer());
-//        // P2_ID
-//        getColumnModel().getColumn(10).setCellRenderer(new PlayerCellRenderer());
-//        // WINNER
-//        getColumnModel().getColumn(19).setCellRenderer(new PlayerCellRenderer());
-//        // P1_DECK
-//        getColumnModel().getColumn(5).setCellRenderer(new DeckCellRenderer());
-//        getColumnModel().getColumn(14).setCellRenderer(new DeckCellRenderer());
+        getColumnModel().getColumn(0).setCellRenderer(new GameCellRenderer());
+        getColumnModel().getColumn(3).setCellRenderer(new DeckCellRenderer());
     }
 
     private void setDefaultColumnProperties() {

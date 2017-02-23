@@ -16,7 +16,6 @@ class DeckGamesTableModel extends AbstractTableModel {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Game";
-    private static final String _S2 = "Config";
     private static final String _S3 = "Player";
     private static final String _S4 = "Opponent";
     private static final String _S5 = "Opponent deck";
@@ -58,18 +57,17 @@ class DeckGamesTableModel extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 6;
+        return 5;
     }
 
     @Override
     public String getColumnName(int columnIndex) {
         switch (columnIndex) {
         case 0: return MText.get(_S1);
-        case 1: return MText.get(_S2);
-        case 2: return MText.get(_S3);
-        case 3: return MText.get(_S4);
-        case 4: return MText.get(_S5);
-        case 5: return MText.get(_S6);
+        case 1: return MText.get(_S3);
+        case 2: return MText.get(_S4);
+        case 3: return MText.get(_S5);
+        case 4: return MText.get(_S6);
         default: return "???";
         }
     }
@@ -77,7 +75,8 @@ class DeckGamesTableModel extends AbstractTableModel {
     @Override
     public Class<?> getColumnClass(int col) {
         switch (col) {
-        case 4: return DeckInfo.class;
+        case 0: return DeckGame.class;
+        case 3: return DeckInfo.class;
         default: return String.class;
         }
     }
@@ -91,12 +90,11 @@ class DeckGamesTableModel extends AbstractTableModel {
     public Object getValueAt(int row, int col) {
         DeckGame stats = gameStats.get(row);
         switch (col) {
-        case 0: return "<html>" + stats.getGameInfo() + "</html>";
-        case 1: return "<html>" + stats.getConfigInfo() + "</html>";
-        case 2: return "<html>" + stats.getPlayerInfo() + "</html>";
-        case 3: return "<html>" + stats.getOpponentInfo() + "</html>";
-        case 4: return stats.getOpponentDeckInfo();
-        case 5: return stats.getResultInfo();
+        case 0: return stats;
+        case 1: return "<html>" + stats.getPlayerInfo() + "</html>";
+        case 2: return "<html>" + stats.getOpponentInfo() + "</html>";
+        case 3: return stats.getOpponentDeckInfo();
+        case 4: return stats.getResultInfo();
         default: return "???";
         }
     }

@@ -14,7 +14,7 @@ class DeckGame {
 
     // translatable UI text (prefix with _S).
     private static final String _S2 = "<br>level: %d, +life: %d";
-    private static final String _S3 = "life: %d<br>hand: %d";
+    private static final String _S3 = "life: %d • hand: %d";
     private static final String _S4 = "won in";
     private static final String _S5 = "lost in";
     private static final String _S6 = "conceded";
@@ -47,7 +47,7 @@ class DeckGame {
         );
     }
 
-    String getGameInfo() {
+    String getGamePeriod() {
 
         LocalDateTime timeStart = getLocalTimeFromEpoch(dto.timeStart);
         LocalDateTime timeEnd = LocalDateTime.now();
