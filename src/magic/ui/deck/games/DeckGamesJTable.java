@@ -55,8 +55,8 @@ class DeckGamesJTable extends JTable {
         final TableColumnModel cm = getColumnModel();
         // set initial column widths.
         for (int i = 0; i < cm.getColumnCount(); i++) {
-            cm.getColumn(i).setMinWidth(120);
-            cm.getColumn(i).setPreferredWidth(120);
+            cm.getColumn(i).setMinWidth(130);
+            cm.getColumn(i).setPreferredWidth(130);
         }
         final JTableHeader header = getTableHeader();
         header.setReorderingAllowed(true);
