@@ -46,6 +46,8 @@ class DeckGamesJTable extends JTable {
 
     private void setColumnRenderers() {
         getColumnModel().getColumn(0).setCellRenderer(new GameCellRenderer());
+        getColumnModel().getColumn(1).setCellRenderer(new PlayerCellRenderer());
+        getColumnModel().getColumn(2).setCellRenderer(new PlayerCellRenderer());
         getColumnModel().getColumn(3).setCellRenderer(new DeckCellRenderer());
     }
 

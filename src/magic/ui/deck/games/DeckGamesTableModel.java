@@ -76,6 +76,8 @@ class DeckGamesTableModel extends AbstractTableModel {
     public Class<?> getColumnClass(int col) {
         switch (col) {
         case 0: return DeckGame.class;
+        case 1: return PlayerInfo.class;
+        case 2: return PlayerInfo.class;
         case 3: return DeckInfo.class;
         default: return String.class;
         }
@@ -91,8 +93,8 @@ class DeckGamesTableModel extends AbstractTableModel {
         DeckGame stats = gameStats.get(row);
         switch (col) {
         case 0: return stats;
-        case 1: return "<html>" + stats.getPlayerInfo() + "</html>";
-        case 2: return "<html>" + stats.getOpponentInfo() + "</html>";
+        case 1: return stats.getDeckPlayerInfo();
+        case 2: return stats.getOpponentInfo();
         case 3: return stats.getOpponentDeckInfo();
         case 4: return stats.getResultInfo();
         default: return "???";
