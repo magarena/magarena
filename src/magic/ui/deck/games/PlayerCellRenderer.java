@@ -5,9 +5,14 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
+import magic.translate.MText;
 
 @SuppressWarnings("serial")
 class PlayerCellRenderer extends DefaultTableCellRenderer {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "level:%d +life:%d";
+
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         PlayerInfo playerInfo = (PlayerInfo) value;
@@ -16,10 +21,9 @@ class PlayerCellRenderer extends DefaultTableCellRenderer {
                 playerInfo.getHumanPlayerName()
             )
             : String.format(
-                "<html><center>%s <small>level:%d +life:%d</small><br><small>%s</small></center></html>",
+                "<html><center>%s <small>%s</small><br><small>%s</small></center></html>",
                 playerInfo.getAiType().name(),
-                playerInfo.getAiLevel(),
-                playerInfo.getAiXtraLife(),
+                MText.get(_S1, playerInfo.getAiLevel(), playerInfo.getAiXtraLife()),
                 playerInfo.getAiType().toString()
             );
         JLabel lbl = new JLabel(text);
