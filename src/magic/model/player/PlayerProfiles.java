@@ -25,12 +25,11 @@ public final class PlayerProfiles {
 
     private static final Path profilesPath = MagicFileSystem.getDataPath(DataPath.PLAYERS);
     private static final HashMap<String, PlayerProfile> profilesMap = new HashMap<>();
-
-    public static void refreshMap() {
-        setProfilesMap();
+    static {
+        refreshMap();
     }
 
-    private static void setProfilesMap() {
+    public static void refreshMap() {
         profilesMap.clear();
         // Humans
         for (Path path : getProfilePaths("human")) {
