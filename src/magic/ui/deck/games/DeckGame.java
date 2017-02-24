@@ -15,9 +15,6 @@ class DeckGame {
 
     // translatable UI text (prefix with _S).
     private static final String _S3 = "life: %d • hand: %d";
-    private static final String _S4 = "won in";
-    private static final String _S5 = "lost in";
-    private static final String _S6 = "conceded";
     private static final String _S7 = "%d years ago";
     private static final String _S8 = "a year ago";
     private static final String _S9 = "%d months ago";
@@ -125,14 +122,6 @@ class DeckGame {
         int playerNum = gameInfo.player1DeckName.equals(deck.getName()) ? 1 : 2;
         int winningPlayer = Integer.parseInt(gameInfo.winningPlayerProfile);
         return winningPlayer == playerNum;
-    }
-
-    String getResultInfo() {
-        return String.format("%s %d %s",
-            isWinner() ? MText.get(_S4) : MText.get(_S5),
-            gameInfo.turns,
-            gameInfo.isConceded ? "(" + MText.get(_S6) + ")" : ""
-        ).trim();
     }
 
     String getConfigInfo() {
