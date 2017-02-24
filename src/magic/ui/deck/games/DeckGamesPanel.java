@@ -126,7 +126,7 @@ public class DeckGamesPanel extends TexturedPanel
 
     @Override
     public MagicCardDefinition getSelectedCard() {
-        return null;
+        return MagicCardDefinition.UNKNOWN;
     }
 
     private void setTableModel() {
