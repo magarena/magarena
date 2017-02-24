@@ -8,6 +8,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.FontsAndBorders;
+import magic.ui.ScreenController;
 import magic.ui.screen.deck.editor.IDeckEditorView;
 import magic.ui.screen.decks.IDeckView;
 import magic.ui.screen.stats.IPagination;
@@ -54,7 +55,7 @@ public class DeckGamesPanel extends TexturedPanel
                 refreshStatsTable();
             }
             if (tm != null) {
-                table = new DeckGamesJTable(tm);
+                table = new DeckGamesJTable(tm, !ScreenController.isDeckScreenShowing());
                 scrollpane.setViewportView(table);
                 paginator.refresh();
             }

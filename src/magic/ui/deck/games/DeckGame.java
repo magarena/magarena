@@ -114,8 +114,18 @@ class DeckGame {
 
     DeckInfo getOpponentDeckInfo() {
         return gameInfo.player1DeckName.equals(deck.getName())
-            ? new DeckInfo(gameInfo.player2DeckName, gameInfo.player2DeckColor)
-            : new DeckInfo(gameInfo.player1DeckName, gameInfo.player1DeckColor);
+            ? new DeckInfo(
+                gameInfo.player2DeckName,
+                DeckType.valueOf(gameInfo.player2DeckType),
+                gameInfo.player2DeckFileChecksum,
+                gameInfo.player2DeckColor
+            )
+            : new DeckInfo(
+                gameInfo.player1DeckName,
+                DeckType.valueOf(gameInfo.player1DeckType),
+                gameInfo.player1DeckFileChecksum,
+                gameInfo.player1DeckColor
+            );
     }
 
     boolean isWinner() {

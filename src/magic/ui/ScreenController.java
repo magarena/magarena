@@ -249,8 +249,12 @@ public final class ScreenController {
                 : DeckEditorScreen::new);
     }
 
-    public static void showDeckViewScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
+    public static void showDeckScreen(MagicDeck deck, MagicCardDefinition selectedCard) {
         showScreen(() -> new DeckScreen(deck, selectedCard));
+    }
+
+    public static void showDeckScreen(MagicDeck deck) {
+        showScreen(() -> new DeckScreen(deck));
     }
 
     public static void showSampleHandScreen(final MagicDeck deck) {
@@ -335,5 +339,9 @@ public final class ScreenController {
 
     public static void showPlayerScreen(String guid) {
         showScreen(() -> new PlayerScreen(guid));
+    }
+
+    public static boolean isDeckScreenShowing() {
+        return !screens.isEmpty() && screens.peek() instanceof DeckScreen;
     }
 }
