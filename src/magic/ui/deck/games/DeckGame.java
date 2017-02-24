@@ -121,11 +121,15 @@ class DeckGame {
             : new DeckInfo(gameInfo.player1DeckName, gameInfo.player1DeckColor);
     }
 
-    String getResultInfo() {
+    boolean isWinner() {
         int playerNum = gameInfo.player1DeckName.equals(deck.getName()) ? 1 : 2;
         int winningPlayer = Integer.parseInt(gameInfo.winningPlayerProfile);
+        return winningPlayer == playerNum;
+    }
+
+    String getResultInfo() {
         return String.format("%s %d %s",
-            winningPlayer == playerNum ? MText.get(_S4) : MText.get(_S5),
+            isWinner() ? MText.get(_S4) : MText.get(_S5),
             gameInfo.turns,
             gameInfo.isConceded ? "(" + MText.get(_S6) + ")" : ""
         ).trim();
@@ -133,6 +137,10 @@ class DeckGame {
 
     String getConfigInfo() {
         return MText.get(_S3, gameInfo.startLife, gameInfo.startHandSize);
+    }
+
+    int getTurns() {
+        return gameInfo.turns;
     }
 
 }

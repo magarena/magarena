@@ -45,19 +45,21 @@ class DeckGamesJTable extends JTable {
     }
 
     private void setColumnRenderers() {
-        getColumnModel().getColumn(0).setCellRenderer(new GameCellRenderer());
-        getColumnModel().getColumn(1).setCellRenderer(new PlayerCellRenderer());
+        getColumnModel().getColumn(0).setCellRenderer(new ResultCellRenderer());
+        getColumnModel().getColumn(1).setCellRenderer(new GameCellRenderer());
         getColumnModel().getColumn(2).setCellRenderer(new PlayerCellRenderer());
-        getColumnModel().getColumn(3).setCellRenderer(new DeckCellRenderer());
+        getColumnModel().getColumn(3).setCellRenderer(new PlayerCellRenderer());
+        getColumnModel().getColumn(4).setCellRenderer(new DeckCellRenderer());
     }
 
     private void setDefaultColumnProperties() {
         final TableColumnModel cm = getColumnModel();
         // set initial column widths.
-        for (int i = 0; i < cm.getColumnCount(); i++) {
-            cm.getColumn(i).setMinWidth(130);
-            cm.getColumn(i).setPreferredWidth(130);
-        }
+        cm.getColumn(0).setMinWidth(30);
+        cm.getColumn(1).setMinWidth(130);
+        cm.getColumn(2).setMinWidth(170);
+        cm.getColumn(3).setMinWidth(170);
+        cm.getColumn(4).setMinWidth(180);
         final JTableHeader header = getTableHeader();
         header.setReorderingAllowed(true);
         final DefaultTableCellRenderer renderer =
@@ -87,7 +89,7 @@ class DeckGamesJTable extends JTable {
     @Override
     public void setModel(TableModel dataModel) {
         super.setModel(dataModel);
-         setColumnRenderers();
+        setColumnRenderers();
         if (tca != null) {
             tca.adjustColumns();
         }

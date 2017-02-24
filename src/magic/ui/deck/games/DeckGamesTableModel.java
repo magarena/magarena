@@ -19,7 +19,6 @@ class DeckGamesTableModel extends AbstractTableModel {
     private static final String _S3 = "Player";
     private static final String _S4 = "Opponent";
     private static final String _S5 = "Opponent deck";
-    private static final String _S6 = "Result";
 
     private static final int PAGE_SIZE = 8;
 
@@ -63,11 +62,11 @@ class DeckGamesTableModel extends AbstractTableModel {
     @Override
     public String getColumnName(int columnIndex) {
         switch (columnIndex) {
-        case 0: return MText.get(_S1);
-        case 1: return MText.get(_S3);
-        case 2: return MText.get(_S4);
-        case 3: return MText.get(_S5);
-        case 4: return MText.get(_S6);
+        case 0: return "";
+        case 1: return MText.get(_S1);
+        case 2: return MText.get(_S3);
+        case 3: return MText.get(_S4);
+        case 4: return MText.get(_S5);
         default: return "???";
         }
     }
@@ -76,9 +75,10 @@ class DeckGamesTableModel extends AbstractTableModel {
     public Class<?> getColumnClass(int col) {
         switch (col) {
         case 0: return DeckGame.class;
-        case 1: return PlayerInfo.class;
+        case 1: return DeckGame.class;
         case 2: return PlayerInfo.class;
-        case 3: return DeckInfo.class;
+        case 3: return PlayerInfo.class;
+        case 4: return DeckInfo.class;
         default: return String.class;
         }
     }
@@ -93,10 +93,10 @@ class DeckGamesTableModel extends AbstractTableModel {
         DeckGame stats = gameStats.get(row);
         switch (col) {
         case 0: return stats;
-        case 1: return stats.getDeckPlayerInfo();
-        case 2: return stats.getOpponentInfo();
-        case 3: return stats.getOpponentDeckInfo();
-        case 4: return stats.getResultInfo();
+        case 1: return stats;
+        case 2: return stats.getDeckPlayerInfo();
+        case 3: return stats.getOpponentInfo();
+        case 4: return stats.getOpponentDeckInfo();
         default: return "???";
         }
     }
