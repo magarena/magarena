@@ -1,5 +1,6 @@
 package magic.data.stats.h2;
 
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,6 +19,7 @@ import magic.model.MagicPlayer;
 import magic.model.player.AiProfile;
 import magic.model.player.PlayerProfile;
 import magic.utility.DeckUtils;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 import org.h2.jdbcx.JdbcConnectionPool;
 
@@ -41,9 +43,10 @@ public class H2Database {
     }
 
     public static String getDatabaseFile() {
+        Path statsPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.STATS);
         return MagicSystem.isDevMode() || MagicSystem.isTestGame()
-            ? "./Magarena/stats/game-stats-dev"
-            : "./Magarena/stats/game-stats";
+            ? statsPath.resolve("game-stats-dev").toAbsolutePath().toString()
+            : statsPath.resolve("game-stats").toAbsolutePath().toString();
     }
 
     private JdbcConnectionPool getConnectionPool() {
