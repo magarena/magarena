@@ -16,6 +16,7 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 import magic.data.DeckType;
 import magic.model.MagicDeck;
+import magic.translate.MText;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.helpers.ColorHelper;
@@ -26,6 +27,9 @@ import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
 class DeckGamesJTable extends JTable {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Opponent deck";
 
     private static final int ROW_HEIGHT = 40; // pixels
 
@@ -91,7 +95,7 @@ class DeckGamesJTable extends JTable {
                 if (fileChecksum == deckInfo.checksum) {
                     MouseHelper.showBusyCursor(DeckGamesJTable.this);
                     MagicDeck deck = DeckUtils.loadDeckFromFile(deckInfo.deckName, deckInfo.deckType);
-                    ScreenController.showDeckScreen(deck);
+                    ScreenController.showDeckScreen(deck, MText.get(_S1));
                     mouseHoverListener.clear();
                     MouseHelper.showDefaultCursor();
                 }

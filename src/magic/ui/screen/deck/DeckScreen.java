@@ -24,21 +24,24 @@ public class DeckScreen extends HeaderFooterScreen {
     private DeckScreenPanel screenContent;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
-    public DeckScreen(final MagicDeck deck, final MagicCardDefinition selectedCard) {
-        super(MText.get(_S8));
+    private DeckScreen(MagicDeck deck, MagicCardDefinition selectedCard, String title) {
+        super(title);
         screenContent = new DeckScreenPanel(deck, selectedCard);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
-        addToFooter(MenuButton.build(this::showSampleHand,
-                        MagicIcon.HAND_ICON, MText.get(_S2), MText.get(_S3)),
-                MenuButton.build(this::showDeckImageView,
-                        MagicIcon.TILED, MText.get(_S5), MText.get(_S6))
+        addToFooter(
+            MenuButton.build(this::showSampleHand, MagicIcon.HAND_ICON, MText.get(_S2), MText.get(_S3)),
+            MenuButton.build(this::showDeckImageView,MagicIcon.TILED, MText.get(_S5), MText.get(_S6))
         );
         deckStatusPanel.setDeck(deck, false);
     }
 
-    public DeckScreen(final MagicDeck deck) {
-        this(deck, null);
+    public DeckScreen(final MagicDeck deck, final MagicCardDefinition selectedCard) {
+        this(deck, selectedCard, MText.get(_S8));
+    }
+
+    public DeckScreen(MagicDeck deck, String title) {
+        this(deck, null, title);
     }
 
     private void showSampleHand() {

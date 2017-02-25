@@ -253,8 +253,8 @@ public final class ScreenController {
         showScreen(() -> new DeckScreen(deck, selectedCard));
     }
 
-    public static void showDeckScreen(MagicDeck deck) {
-        showScreen(() -> new DeckScreen(deck));
+    public static void showDeckScreen(MagicDeck deck, String title) {
+        showScreen(() -> new DeckScreen(deck, title));
     }
 
     public static void showSampleHandScreen(final MagicDeck deck) {
