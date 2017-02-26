@@ -15,13 +15,13 @@ public abstract class MenuScreenContentPanel extends JPanel {
     public MenuScreenContentPanel(String title, boolean showKeyStripPanel) {
 
         mp = new MenuPanel(title);
-        
+
         final MigLayout layout = new MigLayout();
         layout.setLayoutConstraints("insets 0, gap 0, flowy");
         layout.setRowConstraints("[30!][100%, center][30!, bottom]");
         layout.setColumnConstraints("[center, fill, grow]");
         setLayout(layout);
-        
+
         add(mp, "cell 0 1");
         if (showKeyStripPanel) {
             add(new KeysStripPanel());
@@ -60,10 +60,14 @@ public abstract class MenuScreenContentPanel extends JPanel {
     protected void addSpace() {
         mp.addBlankItem();
     }
-    
+
     protected void refreshMenuLayout() {
         mp.refreshLayout();
+        repaint();
     }
 
+    protected void clearMenuItems() {
+        mp.clearMenuItems();
+    }
 
 }

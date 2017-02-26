@@ -24,6 +24,13 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
 
     MainMenuContentPanel() {
         super(MText.get(_S1), false);
+        setMenuItems(MagicSystem.isDevMode());
+        add(alertPanel);
+        refreshAlerts();
+    }
+
+    private void setMenuItems(boolean showDevMenuItem) {
+        clearMenuItems();
         addMenuItem(MText.get(_S2), this::doNewDuel);
         addMenuItem(MText.get(_S3), this::doResumeDuel);
         addMenuItem(MText.get(_S4), this::showExplorerScreen);
@@ -32,17 +39,13 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
         addMenuItem(MText.get(_S7), this::showHelpMenu);
         addSpace();
         addMenuItem(MText.get(_S8), this::doShutdown);
-        if (MagicSystem.isDevMode()) {
+        if (showDevMenuItem) {
             addSpace();
             addSpace();
             addSpace();
             addMenuItem("DevMode", 16, this::showDevMenu);
         }
-
         refreshMenuLayout();
-
-        add(alertPanel);
-        refreshAlerts();
     }
 
     void refreshAlerts() {
@@ -66,7 +69,7 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
     }
 
     private void showDeckEditor() {
-        ScreenController.showDeckEditor();        
+        ScreenController.showDeckEditor();
     }
 
     private void showSettingsMenu() {
@@ -83,5 +86,17 @@ class MainMenuContentPanel extends MenuScreenContentPanel {
 
     private void showDevMenu() {
         ScreenController.showDevMenuScreen();
+        if (!MagicSystem.isDevMode()) {
+            hideDevModeMenuItem();
+        }
+    }
+
+    void showDevModeMenuItem() {
+        setMenuItems(true);
+    }
+
+    void hideDevModeMenuItem() {
+        setMenuItems(false);
+        MainMenuScreen.isCtrlKeyPressed = false;
     }
 }

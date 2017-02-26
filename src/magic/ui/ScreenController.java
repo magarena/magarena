@@ -344,4 +344,8 @@ public final class ScreenController {
     public static boolean isDeckScreenShowing() {
         return !screens.isEmpty() && screens.peek() instanceof DeckScreen;
     }
+
+    public static boolean isActive(MScreen aScreen) {
+        return screens.peek() == aScreen;
+    }
 }

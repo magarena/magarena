@@ -1,17 +1,17 @@
 package magic.ui.screen.widget;
 
-import magic.ui.widget.about.AboutPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.about.AboutPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -76,6 +76,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
         for (MenuButton menuItem : menuItems) {
             add(menuItem, "w 100%");
         }
+        revalidate();
     }
 
     private AboutPanel getMenuTitlePanel() {
@@ -90,6 +91,10 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
         final Color thisBG = MagicStyle.getTranslucentColor(refBG, 200);
         setBorder(FontsAndBorders.BLACK_BORDER);
         setBackground(thisBG);
+    }
+
+    public void clearMenuItems() {
+        menuItems.clear();
     }
 
 }
