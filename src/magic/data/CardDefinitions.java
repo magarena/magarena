@@ -1,5 +1,7 @@
 package magic.data;
 
+import groovy.lang.GroovyShell;
+import groovy.transform.CompileStatic;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,13 +13,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -26,13 +26,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import groovy.lang.GroovyShell;
-import groovy.transform.CompileStatic;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.event.MagicHandCastActivation;
+import magic.ui.MagicCardImages;
+import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -49,6 +48,8 @@ public class CardDefinitions {
 
     private static final File SCRIPTS_DIRECTORY =
             MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
+
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     // A MagicCardDefinition is a bit of a misnomer in that it represents a single
     // playable aspect of a card. For example, double faced or flip cards will be
@@ -377,17 +378,34 @@ public class CardDefinitions {
         return files;
     }
 
-    public static void checkForMissingFiles() {
-        new Thread(() -> {
-            GeneralConfig.getInstance().setIsMissingFiles(isMissingPlayableImages());
-        }).start();
+    public static boolean requiresNewImageDownload(MagicCardDefinition card, Date lastDownloadDate) {
+        if (!card.hasImageUrl()) {
+            return false;
+        }
+        if (MagicCardImages.isCustomCardImageFound(card)) {
+            return false;
+        }
+        if (card.isImageUpdatedAfter(lastDownloadDate)) {
+            return true;
+        }
+        if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PRINTED) {
+            return MagicCardImages.isPrintedCardImageMissing(card);
+        } else { // PROXY
+            return MagicCardImages.isCroppedCardImageMissing(card)
+                && MagicCardImages.isPrintedCardImageMissing(card);
+        }
     }
 
     public static boolean isMissingPlayableImages() {
-        final Date aDate = GeneralConfig.getInstance().getPlayableImagesDownloadDate();
+        Date aDate = CONFIG.getPlayableImagesDownloadDate();
         return getAllPlayableCardDefs().stream()
-            .filter(MagicCardDefinition::hasImageUrl)
-            .anyMatch(card -> card.isImageUpdatedAfter(aDate) || card.isImageFileMissing());
+            .anyMatch(card -> requiresNewImageDownload(card, aDate));
+    }
+
+    public static void checkForMissingFiles() {
+        new Thread(() -> {
+            CONFIG.setIsMissingFiles(isMissingPlayableImages());
+        }).start();
     }
 
     public static String getScriptFilename(final MagicCardDefinition card) {
