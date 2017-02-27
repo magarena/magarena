@@ -72,27 +72,42 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.82 (February 26, 2017)
+Release 1.82 (February 27, 2017)
 ============
+lodici
+melvin
+Mike
+Sergio Lo Cascio
+ShawnieBoy
 
-- new Italian translation.
+- add Italian translation
+
+- reduce memory usage of generating proxy image with cardbuilder
 
 - changed/added the following to the user interface:
-  * displays a record of games Played / Won / Lost for each non-random deck.
-  * new games played P/W/L tab added to deck editor.
-  * deck legality and P/W/L tabs added to the Decks and Deck screens.  
-  * new deck groups - Popular, Recently played and Winning.
-  * consolidate all card image settings into Setup card images dialog.
-  * on-demand downloading of images improved.
-  * displays shield, poison, energy and experience counters in player panel (see #850).
-  * add ability to drag and drop a `snapshot.game` file into Magarena to load game (see #1053).  
-  * attach prompt panel to turn panel instead of player (closes #1057).  
+  * displays a record of games Played / Won / Lost for each non-random deck
+  * new games played P/W/L tab added to deck editor
+  * deck legality and P/W/L tabs added to the Decks and Deck screens
+  * new deck groups - Popular, Recently played and Winning
+  * consolidate all card image settings into Setup card images dialog
+  * on-demand downloading of images improved
+  * displays shield, poison, energy and experience counters in player panel (issue #850)
+  * add ability to drag and drop a snapshot.game file into Magarena to load game (issue #1053)
+  * attach prompt panel to turn panel instead of player (issue #1057)
   * new translatable strings: 71
-  
+
 - fixed the following bugs:
-  * Restore code to sort deck table columns (fixes #1064).
-  * User prompt context image sticks around too long (fixes #1060).
-  * Creates `firemind` decks folder if it does not exist to prevent exception (see #1051).
+  * Captain of the Watch copy made by Seance doesn't create Soldier tokens (issue #1040)
+  * exception due to missing firemind deck folder (issue #1051)
+  * unable to undo past a May choice (issue #1054)
+  * user prompt context image sticks around too long (issue #1060)
+  * unable to sort deck via column headers like card pool (issue #1064)
+  * exception when clicking on Select in DecksScreen and returning to the deck editor screen (issue #1082)
+  * missing images alert but dialog displays nothing to download (issue #1083)
+  * Legacy format missing OGW and SOI sets
+
+- added the following cards:
+Chaos Warp, Mechanized Production, Sram, Senior Edificer, Trophy Mage
 
 Release 1.81 (January 30, 2017)
 ============
