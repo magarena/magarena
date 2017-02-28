@@ -129,6 +129,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     public final void setCard(final MagicCardDefinition aCard) {
 
+        if (aCard == null) {
+            System.err.println("CardViewer.setCard() : aCard is null!");
+            return;
+        }
+
         if (aCard == thisCard) {
             return;
         }

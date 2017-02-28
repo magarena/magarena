@@ -713,11 +713,8 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void showMessage(final MagicSource source, final String message) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                userActionPanel.showMessage(getMessageWithSource(source, message));
-            }
+        SwingUtilities.invokeLater(() -> {
+            userActionPanel.showMessage(getMessageWithSource(source, MText.get(message)));
         });
     }
 

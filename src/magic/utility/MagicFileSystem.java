@@ -87,7 +87,8 @@ public final class MagicFileSystem {
         TRANSLATIONS("translations"),
         IMAGES("images"),
         REPORTS("reports"),
-        THEMES("themes")
+        THEMES("themes"),
+        STATS("stats")
         ;
 
         private final Path directoryPath;

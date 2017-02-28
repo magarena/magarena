@@ -19,7 +19,7 @@ public final class UrlHelper {
     public static final String URL_USERGUIDE = URL_WIKI;
     public static final String URL_FIREMIND_SCRIPTS = "http://www.firemind.ch/card_script_submissions/new";
     public static final String URL_HOMEPAGE = "http://magarena.github.io/";
-
+    
     public static void openURL(final String url) {
         try {
             Desktop desktop = null;
@@ -57,14 +57,14 @@ public final class UrlHelper {
      * Quickly checks to see whether URL is reachable.
      */
     public static boolean isUrlValid(final URL url) {
-
+    	final int timeout = 2000;//time, in milliseconds, used for opening URLConnection
         if (url == null)
             return false;
 
         try {
             final HttpURLConnection huc = (HttpURLConnection) url.openConnection();
             huc.setRequestMethod("HEAD");
-            huc.setConnectTimeout(2000);
+            huc.setConnectTimeout(timeout); //connection time
             final int responseCode = huc.getResponseCode();
             return responseCode == HttpURLConnection.HTTP_OK;
 

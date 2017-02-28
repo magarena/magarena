@@ -12,7 +12,7 @@ import magic.translate.MText;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.screen.deck.editor.stats.DeckStatsPanel;
+import magic.ui.deck.games.DeckGamesPanel;
 import magic.ui.widget.cards.table.CardsJTable;
 import magic.ui.widget.deck.legality.LegalityPanel;
 import magic.ui.widget.deck.stats.IPwlWorkerListener;
@@ -41,7 +41,7 @@ class MainViewsPanel extends JPanel
     private final CardPoolViewPanel cardPoolPanel;
     private final CardRecallPanel recallPanel;
     private final LegalityPanel legalityPanel;
-    private final DeckStatsPanel statsPanel;
+    private final DeckGamesPanel statsPanel;
 
     private IDeckEditorView activeView;
     private final CardsJTable deckTable;
@@ -58,7 +58,7 @@ class MainViewsPanel extends JPanel
         cardPoolPanel = new CardPoolViewPanel(this, deckActionPanel.getQuantityPanel());
         recallPanel = new CardRecallPanel(this, deckActionPanel.getQuantityPanel());
         legalityPanel = new LegalityPanel();
-        statsPanel = new DeckStatsPanel(controller.getDeck());
+        statsPanel = new DeckGamesPanel(controller.getDeck());
 
         this.deckTable = deckPanel.getDeckTable();
 
@@ -215,9 +215,8 @@ class MainViewsPanel extends JPanel
             activeView.setVisible(false);
         }
         aView.setVisible(true);
-        deckActionPanel.setVisible(
-            aView instanceof LegalityPanel == false
-            && aView instanceof DeckStatsPanel == false
+        deckActionPanel.setVisible(aView instanceof LegalityPanel == false
+            && aView instanceof DeckGamesPanel == false
         );
         activeView = aView;
         refreshLayout();

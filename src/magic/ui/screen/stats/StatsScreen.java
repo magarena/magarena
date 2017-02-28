@@ -3,6 +3,7 @@ package magic.ui.screen.stats;
 import java.sql.SQLException;
 import magic.data.stats.MagicStats;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
@@ -39,7 +40,7 @@ public class StatsScreen extends HeaderFooterScreen {
     }
 
     @Override
-    public boolean isScreenReadyToClose(Object aScreen) {
+    public boolean isScreenReadyToClose(MScreen aScreen) {
         return super.isScreenReadyToClose(aScreen)
                 && contentPanel.isReadyToClose();
     }

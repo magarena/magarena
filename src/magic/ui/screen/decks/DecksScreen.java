@@ -5,6 +5,7 @@ import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
@@ -84,7 +85,7 @@ public class DecksScreen extends HeaderFooterScreen {
     }
 
     @Override
-    public boolean isScreenReadyToClose(final Object nextScreen) {
+    public boolean isScreenReadyToClose(MScreen nextScreen) {
         DecksFilterDialog.resetFilterHistory();
         return true;
     }

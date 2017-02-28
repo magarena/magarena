@@ -25,7 +25,7 @@ public class DownloadImagesScreen extends MScreen {
     }
 
     @Override
-    public boolean isScreenReadyToClose(final Object nextScreen) {
+    public boolean isScreenReadyToClose(MScreen nextScreen) {
         final boolean isBusy = dialogPanel.isBusy();
         ToolTipManager.sharedInstance().setEnabled(isBusy == false);
         return isBusy == false;

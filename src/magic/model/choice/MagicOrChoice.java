@@ -1,17 +1,20 @@
 package magic.model.choice;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import magic.data.GeneralConfig;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import magic.model.IUIGameController;
 
 public class MagicOrChoice extends MagicChoice {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Choose the mode.";
 
     private final MagicChoice[] choices;
 
@@ -21,7 +24,7 @@ public class MagicOrChoice extends MagicChoice {
     }
 
     public MagicOrChoice(final MagicChoice... choices) {
-        this("Choose the mode.", choices);
+        this(_S1, choices);
     }
 
     @Override

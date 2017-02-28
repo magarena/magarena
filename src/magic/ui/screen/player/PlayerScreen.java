@@ -10,10 +10,6 @@ import magic.ui.screen.widget.MenuButton;
 @SuppressWarnings("serial")
 public class PlayerScreen extends HeaderFooterScreen {
 
-    static {
-        PlayerProfiles.refreshMap();
-    }
-
     public PlayerScreen() {
 
         // mandatory screen title, everything else is optional.

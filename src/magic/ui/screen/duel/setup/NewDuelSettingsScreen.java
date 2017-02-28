@@ -6,6 +6,7 @@ import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
@@ -76,7 +77,7 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
     }
 
     @Override
-    public boolean isScreenReadyToClose(final Object nextScreen) {
+    public boolean isScreenReadyToClose(MScreen nextScreen) {
         if (isEachPlayerDeckValid(false)) {
             updateDuelConfig();
         }

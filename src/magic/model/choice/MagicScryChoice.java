@@ -1,24 +1,26 @@
 package magic.model.choice;
 
+import java.util.List;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-import java.util.ArrayList;
-import java.util.List;
-import magic.model.IUIGameController;
 
 public class MagicScryChoice extends MagicMayChoice {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Move this card from the top of the library to the bottom?";
+
     public MagicScryChoice() {
-        super("Move this card from the top of the library to the bottom?");
+        super(_S1);
     }
 
     @Override
     public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
         if (player.getLibrary().isEmpty()) {
             return NO_CHOICE_LIST;
         } else {

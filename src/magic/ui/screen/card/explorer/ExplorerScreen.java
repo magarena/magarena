@@ -7,6 +7,7 @@ import magic.translate.MText;
 import magic.ui.MagicLogs;
 import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.cards.table.CardsTableStyle;
 
@@ -76,7 +77,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
     }
 
     @Override
-    public boolean isScreenReadyToClose(final Object nextScreen) {
+    public boolean isScreenReadyToClose(MScreen nextScreen) {
         if (super.isScreenReadyToClose(nextScreen)) {
             MagicSetDefinitions.clearLoadedSets();
             MagicLogs.clearLoadedLogs();

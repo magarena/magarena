@@ -10,7 +10,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.screen.deck.editor.stats.DeckStatsPanel;
+import magic.ui.deck.games.DeckGamesPanel;
 import magic.ui.widget.deck.legality.LegalityPanel;
 import magic.ui.widget.deck.stats.IPwlWorkerListener;
 import net.miginfocom.swing.MigLayout;
@@ -29,7 +29,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
     private final ToggleButtonsPanel toggleButtonsPanel = new ToggleButtonsPanel();
     private final DeckPanel deckPanel;
     private final LegalityPanel legalityPanel;
-    private final DeckStatsPanel statsPanel;
+    private final DeckGamesPanel statsPanel;
     private JToggleButton statsToggleButton;
 
     private IDeckView activeView;
@@ -39,7 +39,7 @@ public class DeckViewsPanel extends JPanel implements IPwlWorkerListener {
 
         deckPanel = new DeckPanel();
         legalityPanel = new LegalityPanel();
-        statsPanel = new DeckStatsPanel(new MagicDeck());
+        statsPanel = new DeckGamesPanel(new MagicDeck());
 
         legalityPanel.setVisible(false);
         statsPanel.setVisible(false);

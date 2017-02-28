@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="launch4j/demo/ConsoleApp/src"/>
+	<classpathentry kind="src" path="launch4j/demo/SimpleApp/src"/>
+	<classpathentry kind="src" path="launch4j/src"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="launch4j/demo/ConsoleApp/ConsoleApp.jar"/>
+	<classpathentry kind="lib" path="launch4j/demo/SimpleApp/SimpleApp.jar"/>
+	<classpathentry kind="lib" path="launch4j/launch4j.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/forms.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/formsrt.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/foxtrot.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/looks.jar"/>
+	<classpathentry kind="lib" path="launch4j/lib/xstream.jar"/>
+	<classpathentry kind="lib" path="lib/appbundler-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

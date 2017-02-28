@@ -15,6 +15,7 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+import magic.data.CardDefinitions;
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.GeneralConfig;
@@ -22,12 +23,11 @@ import magic.data.ImagesDownloadList;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
-import magic.ui.MagicCardImages;
 import magic.ui.MagicImages;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadListener {
+public abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadListener {
 
     static final String CP_STATE_CHANGED = "5234acd4-e05d-4fc4-a599-95ecd34aa893";
 
@@ -225,26 +225,8 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
         return countInteger;
     }
 
-    private static boolean requiresNewImageDownload(MagicCardDefinition card, Date lastDownloadDate) {
-        if (!card.hasImageUrl()) {
-            return false;
-        }
-        if (MagicCardImages.isCustomCardImageFound(card)) {
-            return false;
-        }
-        if (card.isImageUpdatedAfter(lastDownloadDate)) {
-            return true;
-        }
-        if (CONFIG.getCardImageDisplayMode() == CardImageDisplayMode.PRINTED) {
-            return MagicCardImages.isPrintedCardImageMissing(card);
-        } else { // PROXY
-            return MagicCardImages.isCroppedCardImageMissing(card)
-                && MagicCardImages.isPrintedCardImageMissing(card);
-        }
-    }
-
-    protected static Stream<MagicCardDefinition> getCards(Collection<MagicCardDefinition> cards, Date aDate, CardImageDisplayMode mode) {
-        return cards.stream().filter(card -> requiresNewImageDownload(card, aDate));
+    public static Stream<MagicCardDefinition> getCards(Collection<MagicCardDefinition> cards, Date aDate, CardImageDisplayMode mode) {
+        return cards.stream().filter(card -> CardDefinitions.requiresNewImageDownload(card, aDate));
     }
 
     void setLocked(boolean b) {

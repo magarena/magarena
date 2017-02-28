@@ -101,7 +101,7 @@ public class CardDecksPanel extends JPanel {
             final File deckFile = decksJList.getModel().getElementAt(row);
             final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFile.toPath());
             if (deck.isValid()) {
-                ScreenController.showDeckViewScreen(deck, card);
+                ScreenController.showDeckScreen(deck, card);
             } else {
                 ScreenController.showWarningMessage(String.format("<html><b>%s</b><br>%s</html>",
                         MText.get(_S1),

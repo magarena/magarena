@@ -2,13 +2,16 @@ package magic.ui.screen.stats;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.sql.SQLException;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
+import magic.data.stats.h2.H2Database;
 import magic.ui.FontsAndBorders;
+import magic.ui.widget.M.MFileLink;
 import magic.ui.widget.M.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -128,8 +131,12 @@ class StatsContentPanel extends TexturedPanel implements IPagination {
 
             gamesSpinner.setValue(10);
 
+            MFileLink dbLink = new MFileLink();
+            dbLink.setFile(new File(H2Database.getDatabaseFile() + ".mv.db"));
+
             add(runButton, "w 200!");
             add(gamesSpinner, "w 60!");
+            add(dbLink.component(), "w 100%");
         }
 
         private void setRunButtonEnabled(boolean b) {
