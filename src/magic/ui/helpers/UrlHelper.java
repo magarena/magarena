@@ -57,6 +57,7 @@ public final class UrlHelper {
      * Quickly checks to see whether URL is reachable.
      */
     public static boolean isUrlValid(final URL url) {
+    	final int timeout= 2000; // time, in milliseconds, used for open a  link  referenced by this URLConnection. 
 
         if (url == null)
             return false;
@@ -64,7 +65,7 @@ public final class UrlHelper {
         try {
             final HttpURLConnection huc = (HttpURLConnection) url.openConnection();
             huc.setRequestMethod("HEAD");
-            huc.setConnectTimeout(2000);
+            huc.setConnectTimeout(timeout); // Using constant named
             final int responseCode = huc.getResponseCode();
             return responseCode == HttpURLConnection.HTTP_OK;
 
