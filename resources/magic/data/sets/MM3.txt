@@ -1,0 +1,249 @@
+Abrupt Decay
+Abyssal Specter
+Advent of the Wurm
+Aethermage's Touch
+Aethertow
+Agent of Masks
+Agony Warp
+Ancient Grudge
+Arachnus Spinner
+Arachnus Web
+Arcane Sanctum
+Arid Mesa
+Attended Knight
+Auger Spree
+Augur of Bolas
+Avacyn's Pilgrim
+Azorius Guildgate
+Azorius Signet
+Azure Mage
+Baloth Cage Trap
+Banishing Stroke
+Basilisk Collar
+Battle-Rattle Shaman
+Blade Splicer
+Blood Moon
+Bone Splinters
+Bonfire of the Damned
+Boros Guildgate
+Boros Reckoner
+Boros Signet
+Bronzebeak Moa
+Broodmate Dragon
+Burning-Tree Emissary
+Cackling Counterpart
+Call of the Conclave
+Call of the Herd
+Carnage Gladiator
+Cavern of Souls
+Centaur Healer
+Chandra's Outrage
+Coiling Oracle
+Compulsive Research
+Corpse Connoisseur
+Cower in Fear
+Craterhoof Behemoth
+Crippling Chill
+Cruel Ultimatum
+Crumbling Necropolis
+Cyclonic Rift
+Damnation
+Damping Matrix
+Deadeye Navigator
+Death-Hood Cobra
+Death's Shadow
+Delirium Skeins
+Deputy of Acquittals
+Desecration Demon
+Dimir Guildgate
+Dimir Signet
+Dinrova Horror
+Domri Rade
+Dragon Fodder
+Dregscape Zombie
+Druid's Deliverance
+Dynacharge
+Entomber Exarch
+Entreat the Angels
+Evil Twin
+Explore
+Extractor Demon
+Eyes in the Skies
+Falkenrath Aristocrat
+Falkenrath Noble
+Familiar's Ruse
+Fiery Justice
+Fists of Ironwood
+Flickerwisp
+Forbidden Alchemy
+Gaea's Anthem
+Ghor-Clan Rampager
+Ghostly Flicker
+Giantbaiting
+Gideon's Lawkeeper
+Gift of Orzhova
+Gifts Ungiven
+Gnawing Zombie
+Goblin Assault
+Goblin Electromancer
+Goblin Guide
+Golgari Germination
+Golgari Guildgate
+Golgari Rotwurm
+Golgari Signet
+Graceful Reprieve
+Grafdigger's Cage
+Grasp of Phantoms
+Griselbrand
+Grisly Spectacle
+Grixis Slavedriver
+Ground Assault
+Gruul Guildgate
+Gruul Signet
+Gruul War Chant
+Hanweir Lancer
+Harmonize
+Hellrider
+Hungry Spriggan
+Inquisition of Kozilek
+Intangible Virtue
+Izzet Charm
+Izzet Guildgate
+Izzet Signet
+Jungle Shrine
+Kathari Bomber
+Kor Hookmaster
+Kor Skyfisher
+Kraken Hatchling
+Liliana of the Veil
+Lingering Souls
+Linvala, Keeper of Silence
+Lone Missionary
+Madcap Skills
+Magma Jet
+Marsh Flats
+Master Splicer
+Might of Old Krosa
+Mind Shatter
+Mist Raven
+Mistmeadow Witch
+Misty Rainforest
+Mizzium Mortars
+Mogg Flunkies
+Molten Rain
+Momentary Blink
+Moroii
+Mortician Beetle
+Mudbutton Torchrunner
+Mystic Genesis
+Mystical Teachings
+Night Terrors
+Niv-Mizzet, Dracogenius
+Obzedat, Ghost Council
+Ogre Jailbreaker
+Olivia Voldaren
+Opportunity
+Orzhov Guildgate
+Orzhov Signet
+Past in Flames
+Path to Exile
+Penumbra Spider
+Phantasmal Image
+Pilfered Plans
+Pit Keeper
+Pitfall Trap
+Primal Command
+Putrefy
+Pyrewild Shaman
+Pyroclasm
+Pyromancer Ascension
+Rakdos Guildgate
+Rakdos Signet
+Ranger of Eos
+Recover
+Restoration Angel
+Revive
+Rewind
+Rhox War Monk
+Rootborn Defenses
+Rubblebelt Maaka
+Savage Lands
+Scalding Tarn
+Scavenging Ooze
+Scorched Rusalka
+Scourge Devil
+Sea Gate Oracle
+Seal of Doom
+Seal of Primordium
+Seaside Citadel
+Sedraxis Specter
+Selesnya Guildgate
+Selesnya Signet
+Sensor Splicer
+Serum Visions
+Sever the Bloodline
+Shimmering Grotto
+Simic Guildgate
+Simic Signet
+Simic Sky Swallower
+Sin Collector
+Skirsdag Cultist
+Skyknight Legionnaire
+Slaughterhorn
+Slime Molding
+Snapcaster Mage
+Soul Manipulation
+Soul Ransom
+Soul Warden
+Spell Pierce
+Sphinx's Revelation
+Spike Jester
+Spire Monitor
+Sprouting Thrinax
+Stoic Angel
+Stony Silence
+Strength in Numbers
+Summoning Trap
+Sundering Growth
+Sunhome Guildmage
+Sylvan Ranger
+Séance
+Talon Trooper
+Tandem Lookout
+Tarmogoyf
+Tattermunge Witch
+Teleportal
+Temporal Mastery
+Terminate
+Terminus
+Thornscape Battlemage
+Thragtusk
+Thunderous Wrath
+Thundersong Trumpeter
+Torrent of Souls
+Tower Gargoyle
+Traitorous Instinct
+Ulvenwald Tracker
+Unburial Rites
+Unflinching Courage
+Urban Evolution
+Urbis Protector
+Vampire Aristocrat
+Vampire Nighthawk
+Vanish into Memory
+Venser, Shaper Savant
+Verdant Catacombs
+Vital Splicer
+Vithian Stinger
+Voice of Resurgence
+Wake the Reflections
+Wall of Denial
+Wall of Frost
+Wayfaring Temple
+Wing Splicer
+Wingcrafter
+Woolly Thoctar
+Wort, the Raidmother
+Youthful Knight
+Zealous Conscripts
+Zur the Enchanter
