@@ -118,7 +118,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         String directoryName = "stats";
         Path sourcePath = importDataPath.resolve(directoryName);
         Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
-        if (sourcePath.toFile().exists() && !targetPath.toFile().exists()) {
+        if (sourcePath.toFile().exists() && MagicFileSystem.isEmpty(targetPath)) {
             IOFileFilter dbSuffixFilter = FileFilterUtils.suffixFileFilter(".db");
             FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile(), dbSuffixFilter);
         }
