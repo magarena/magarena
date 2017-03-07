@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
+import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.widget.ActionBarButton;
@@ -18,6 +19,9 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class OptionsPanel extends JPanel {
+
+    // translatable UI text (prefix with _S).
+    private static final String _S1 = "Style";
 
     private static final Icon MENU_ICON =
             ImageHelper.getRecoloredIcon(MagicIcon.OPTION_MENU, Color.BLACK, Color.WHITE);
@@ -69,7 +73,7 @@ class OptionsPanel extends JPanel {
     private void setLayout() {
         removeAll();
         if (isMenuOpen) {
-            add(getLabel("Style"), "ax center");
+            add(getLabel(MText.get(_S1)), "ax center");
             add(styleButton, "h 24!, gapbottom 2");
             add(closeButton, "spany 2, gapbottom 2");
         } else {
