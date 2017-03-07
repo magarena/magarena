@@ -312,7 +312,10 @@ public final class MagicFileSystem {
         return getDataPath(DataPath.LOGS).resolve(MagicGameLog.LOG_FILE);
     }
 
-    public static boolean isEmpty(Path path) throws IOException {
+    public static boolean isMissingOrEmpty(Path path) throws IOException {
+        if (!Files.exists(path)) {
+            return true;
+        }
         if (Files.isDirectory(path)) {
             try (DirectoryStream<Path> dirStream = Files.newDirectoryStream(path)) {
                 return !dirStream.iterator().hasNext();
