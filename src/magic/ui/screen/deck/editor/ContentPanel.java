@@ -111,4 +111,8 @@ class ContentPanel extends JPanel {
         pwlWorker.execute();
     }
 
+    void showDecksScreen() {
+        screen.showDecksScreen();
+    }
+
 }

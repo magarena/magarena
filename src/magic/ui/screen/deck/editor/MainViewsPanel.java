@@ -2,9 +2,12 @@ package magic.ui.screen.deck.editor;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
+import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -94,9 +97,25 @@ class MainViewsPanel extends JPanel
         };
     }
 
+    private void setOpenDecksScreenOnClick(JToggleButton btn) {
+        btn.addMouseListener(new MouseAdapter() {
+            private boolean isSelected;
+            @Override
+            public void mousePressed(MouseEvent e) {
+                isSelected = btn.isSelected();
+            }
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (isSelected && SwingUtilities.isLeftMouseButton(e)) {
+                    container.showDecksScreen();
+                }
+            }
+        });
+    }
+
     private void addToggleButtons() {
 
-        toggleButtonsPanel.addToggleButton(MText.get(_S1), new AbstractAction() {
+        JToggleButton btn = toggleButtonsPanel.addToggleButton(MText.get(_S1), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MouseHelper.showBusyCursor((Component) e.getSource());
@@ -105,6 +124,8 @@ class MainViewsPanel extends JPanel
                 MouseHelper.showHandCursor((Component) e.getSource());
             }
         });
+        setOpenDecksScreenOnClick(btn);
+
         toggleButtonsPanel.addToggleButton(MText.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {

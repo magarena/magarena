@@ -175,7 +175,7 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
             : null;
     }
 
-    private void showDecksScreen() {
+    void showDecksScreen() {
         ScreenController.showDecksScreen(this);
     }
 
