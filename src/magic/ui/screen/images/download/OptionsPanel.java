@@ -23,12 +23,14 @@ class OptionsPanel extends JPanel {
     private static final String _S3 = "Display card image as:";
     private static final String _S4 = "Preferred card text language";
     private static final String _S5 = "If a language other than English is selected then Magarena will first try to download a card image with text in that language. If no image is found then it will download the default English card image instead.";
-    private static final String _S11 = "*** Not applicable to rendered proxy images ***";
     private static final String _S6 = "Download on demand:";
     private static final String _S7 = "Downloads card images as needed. Recommended if you have a fast internet connection.";
     private static final String _S8 = "Preferred display size:";
     private static final String _S9 = "Sets the size of the card image displayed in card explorer and deck editor as well as popup images during a game. Select 'Default' to display the card image at its native size. Otherwise it will be scaled up or down to the selected preset.";
     private static final String _S10 = "*** This has no affect on the size of an image that is downloaded ***";
+    private static final String _S11 = "*** Not applicable to rendered proxy images ***";
+    private static final String _S12 = "Yes";
+    private static final String _S13 = "No";
 
     private final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -130,7 +132,7 @@ class OptionsPanel extends JPanel {
             @Override
             public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
-                setText((Boolean) value == true ? "Yes" : "No");
+                setText((Boolean) value == true ? MText.get(_S12) : MText.get(_S13));
                 setForeground(cboOnDemand.isEnabled() ? getForeground() : Color.GRAY);
                 return this;
             }
