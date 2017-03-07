@@ -10,7 +10,6 @@ import magic.data.DeckType;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicLogs;
@@ -25,8 +24,7 @@ import magic.utility.DeckUtils;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
-public class DeckEditorScreen extends HeaderFooterScreen
-    implements IDeckConsumer, IDeckEditorListener {
+public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsumer {
 
     // translatable strings
     private static final String _S1 = "Cancel";
@@ -314,19 +312,8 @@ public class DeckEditorScreen extends HeaderFooterScreen
     @Override
     public void setDeck(String deckName, DeckType deckType) { }
 
-    @Override
-    public void deckUpdated(MagicDeck deck) {
+    void deckUpdated(MagicDeck deck) {
         deckStatusPanel.setDeck(deck, false);
-    }
-
-    @Override
-    public void cardSelected(MagicCardDefinition card) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public void addCardToRecall(MagicCardDefinition card) {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }

@@ -12,7 +12,7 @@ import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ContentPanel extends JPanel implements IDeckEditorListener {
+class ContentPanel extends JPanel {
 
     // translatable strings
     private static final String _S1 = "This deck is illegal.\n\n%s";
@@ -23,15 +23,15 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
     private final MigLayout migLayout = new MigLayout();
     private final DeckSideBar sideBarPanel; // LHS
     private final MainViewsPanel viewsPanel; // RHS
-    private final IDeckEditorListener listener;
+    private final DeckEditorScreen screen;
     private boolean isStandalone = true;
     private PwlWorker pwlWorker;
 
-    ContentPanel(IDeckEditorListener aListener) {
+    ContentPanel(DeckEditorScreen screen) {
 
         MagicSystem.waitForAllCards();
 
-        this.listener = aListener;
+        this.screen = screen;
 
         // lhs
         sideBarPanel = new DeckSideBar();
@@ -91,30 +91,18 @@ class ContentPanel extends JPanel implements IDeckEditorListener {
         this.isStandalone = b;
     }
 
-    @Override
-    public void deckUpdated(MagicDeck deck) {
+    void deckUpdated(MagicDeck deck) {
         if (deck.isEmpty() && isStandalone) {
             CONFIG.setMostRecentDeckFilename("");
             CONFIG.save();
         }
-        listener.deckUpdated(deck);
+        screen.deckUpdated(deck);
         doPWLStatsQuery(deck);
     }
 
-    @Override
-    public void cardSelected(MagicCardDefinition card) {
+    void cardSelected(MagicCardDefinition card) {
         setCard(card);
         sideBarPanel.setDeck(getDeck());
-    }
-
-    @Override
-    public void addCardToRecall(MagicCardDefinition card) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    @Override
-    public void setDeck(MagicDeck deck) {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     private void doPWLStatsQuery(MagicDeck deck) {
