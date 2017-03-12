@@ -1,7 +1,6 @@
 package magic.data;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.EnumSet;
 import java.util.Set;
 import magic.translate.MText;
@@ -40,7 +39,7 @@ public enum DeckType {
         switch (deckType) {
             case Preconstructed: return DeckUtils.getPrebuiltDecksFolder();
             case Firemind: return DeckUtils.getFiremindDecksFolder();
-            default: return Paths.get(DeckUtils.getDecksFolder());
+            default: return DeckUtils.getDecksFolder();
         }
     }
 

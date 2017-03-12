@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -178,7 +177,7 @@ public class DeckPicker extends JPanel {
             case Preconstructed:
                 return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
             case Custom:
-                return getFilteredDecksListData(Paths.get(DeckUtils.getDecksFolder()));
+                return getFilteredDecksListData(DeckUtils.getDecksFolder());
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
                 return getFilteredDecksListData(DeckUtils.getFiremindDecksFolder());
@@ -283,9 +282,9 @@ public class DeckPicker extends JPanel {
                     case Preconstructed:
                         return DeckUtils.getPrebuiltDecksFolder().resolve(deckName + ".dec");
                     case Custom:
-                        return Paths.get(DeckUtils.getDecksFolder()).resolve(deckName + ".dec");
+                        return DeckUtils.getDecksFolder().resolve(deckName + ".dec");
                     case Firemind:
-                        return Paths.get(DeckUtils.getDecksFolder()).resolve("firemind").resolve(deckName + ".dec");
+                        return DeckUtils.getDecksFolder().resolve("firemind").resolve(deckName + ".dec");
                     default:
                         throw new RuntimeException("getDeckPath() not implemented for decktype: " + deckType);
                 }

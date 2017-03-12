@@ -26,13 +26,13 @@ import javax.swing.Timer;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
-import magic.ui.ScreenController;
 import magic.ui.FontsAndBorders;
+import magic.ui.ScreenController;
 import magic.utility.DeckUtils;
 import static magic.utility.DeckUtils.DECK_EXTENSION;
+import static magic.utility.DeckUtils.getDecksFolder;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
-import static magic.utility.DeckUtils.getDecksFolder;
 
 /**
  * Displays a list of decks containing a given card (see {@code setCard()}).
@@ -159,7 +159,7 @@ public class CardDecksPanel extends JPanel {
                 final List<File> matchingDeckFiles = new ArrayList<>();
                 if (cardDef != null && !isCancelled()) {
                     final List<File> allDeckFiles = new ArrayList<>();
-                    retrieveDeckFiles(new File(getDecksFolder()), allDeckFiles);
+                    retrieveDeckFiles(getDecksFolder().toFile(), allDeckFiles);
                     for (File deckFile : allDeckFiles) {
                         if (isCancelled()) {
                             break;

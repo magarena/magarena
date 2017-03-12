@@ -142,7 +142,7 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
             return;
         }
 
-        final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDecksFolder()) {
+        final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDecksFolder().toString()) {
             @Override
             public void approveSelection() {
                 // first ensure filename has "dec" extension

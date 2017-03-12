@@ -52,24 +52,24 @@ public class DeckUtils {
 
     private static final String[] CARD_TYPES={"creatures","spells","lands"};
 
-    public static String getDecksFolder() {
-        return MagicFileSystem.getDataPath(DataPath.DECKS).toString();
+    public static Path getDecksFolder() {
+        return MagicFileSystem.getDataPath(DataPath.DECKS);
     }
 
     public static Path getPrebuiltDecksFolder() {
-        Path decksPath = Paths.get(getDecksFolder()).resolve("prebuilt");
+        Path decksPath = getDecksFolder().resolve("prebuilt");
         MagicFileSystem.verifyDirectoryPath(decksPath);
         return decksPath;
     }
 
     public static Path getFiremindDecksFolder() {
-        Path decksPath = Paths.get(getDecksFolder()).resolve("firemind");
+        Path decksPath = getDecksFolder().resolve("firemind");
         MagicFileSystem.verifyDirectoryPath(decksPath);
         return decksPath;
     }
 
     public static void createDeckFolder() {
-        final File deckFolderFile=new File(getDecksFolder());
+        final File deckFolderFile = getDecksFolder().toFile();
         if (!deckFolderFile.exists() && !deckFolderFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + getDecksFolder());
         }
@@ -466,5 +466,5 @@ public class DeckUtils {
         return Files.isSameFile(dir, getPlayerDecksFolder())
             || Files.isSameFile(dir, getPrebuiltDecksFolder())
             || Files.isSameFile(dir, getFiremindDecksFolder());
-    }    
+    }
 }

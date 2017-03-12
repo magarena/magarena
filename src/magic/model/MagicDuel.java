@@ -3,7 +3,6 @@ package magic.model;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
@@ -158,7 +157,7 @@ public class MagicDuel {
                 setDeckFromFile(player, DeckUtils.getPrebuiltDecksFolder());
                 break;
             case Custom:
-                setDeckFromFile(player, Paths.get(DeckUtils.getDecksFolder()));
+                setDeckFromFile(player, DeckUtils.getDecksFolder());
                 break;
             case Firemind:
                 setDeckFromFile(player, DeckUtils.getFiremindDecksFolder());
