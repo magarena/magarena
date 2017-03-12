@@ -360,7 +360,7 @@ public class DeckUtils {
         return colorText.toString();
     }
 
-    private static List<File> getDeckFiles() {
+    public static List<File> getDeckFiles() {
         try {
             DeckFileVisitor dfv = new DeckFileVisitor();
             Files.walkFileTree(MagicFileSystem.getDataPath(DataPath.DECKS), dfv);

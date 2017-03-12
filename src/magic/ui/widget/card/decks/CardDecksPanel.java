@@ -29,8 +29,6 @@ import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.ScreenController;
 import magic.utility.DeckUtils;
-import static magic.utility.DeckUtils.DECK_EXTENSION;
-import static magic.utility.DeckUtils.getDecksFolder;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -158,9 +156,7 @@ public class CardDecksPanel extends JPanel {
             private List<File> getDecksContainingCard(final MagicCardDefinition cardDef) {
                 final List<File> matchingDeckFiles = new ArrayList<>();
                 if (cardDef != null && !isCancelled()) {
-                    final List<File> allDeckFiles = new ArrayList<>();
-                    retrieveDeckFiles(getDecksFolder().toFile(), allDeckFiles);
-                    for (File deckFile : allDeckFiles) {
+                    for (File deckFile : DeckUtils.getDeckFiles()) {
                         if (isCancelled()) {
                             break;
                         }
@@ -181,20 +177,6 @@ public class CardDecksPanel extends JPanel {
 
                 }
                 return matchingDeckFiles;
-            }
-
-            private void retrieveDeckFiles(final File folder, final List<File> deckFiles) {
-                final File[] files = folder.listFiles();
-                for (final File file : files) {
-                    if (isCancelled()) {
-                        break;
-                    }
-                    if (file.isDirectory()) {
-                        retrieveDeckFiles(file, deckFiles);
-                    } else if (file.getName().endsWith(DECK_EXTENSION)) {
-                        deckFiles.add(file);
-                    }
-                }
             }
 
             /**
