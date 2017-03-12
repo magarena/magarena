@@ -9,19 +9,18 @@ import java.io.StringWriter;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
-import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
 import magic.headless.HeadlessGameController;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.DuelPlayerConfig;
 import magic.model.MagicRandom;
 import magic.model.player.AiProfile;
+import magic.utility.DeckUtils;
 import magic.utility.MagicSystem;
 
 public class FiremindDuelRunner {
@@ -140,8 +139,7 @@ public class FiremindDuelRunner {
 
     private static String saveDeckFile(String name, String content) {
         try {
-            name = DeckUtils.getDecksFolder()+"/"+name;
-            File deckFile = new File(name + ".dec");
+            File deckFile = DeckUtils.getDecksFolder().resolve(name + ".dec").toFile();
             deckFile.createNewFile();
             FileWriter fw = new FileWriter(deckFile.getAbsoluteFile());
             BufferedWriter bw = new BufferedWriter(fw);
