@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 public class CustomDecksComboxBox extends DeckFilesComboBox {
 
     public CustomDecksComboxBox() {
-        super(Paths.get(DeckUtils.getDeckFolder()));
+        super(Paths.get(DeckUtils.getDecksFolder()));
     }
 
 }

@@ -140,7 +140,7 @@ public class FiremindDuelRunner {
 
     private static String saveDeckFile(String name, String content) {
         try {
-            name = DeckUtils.getDeckFolder()+"/"+name;
+            name = DeckUtils.getDecksFolder()+"/"+name;
             File deckFile = new File(name + ".dec");
             deckFile.createNewFile();
             FileWriter fw = new FileWriter(deckFile.getAbsoluteFile());

@@ -178,7 +178,7 @@ public class DeckPicker extends JPanel {
             case Preconstructed:
                 return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
             case Custom:
-                return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()));
+                return getFilteredDecksListData(Paths.get(DeckUtils.getDecksFolder()));
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
                 return getFilteredDecksListData(DeckUtils.getFiremindDecksFolder());
@@ -283,9 +283,9 @@ public class DeckPicker extends JPanel {
                     case Preconstructed:
                         return DeckUtils.getPrebuiltDecksFolder().resolve(deckName + ".dec");
                     case Custom:
-                        return Paths.get(DeckUtils.getDeckFolder()).resolve(deckName + ".dec");
+                        return Paths.get(DeckUtils.getDecksFolder()).resolve(deckName + ".dec");
                     case Firemind:
-                        return Paths.get(DeckUtils.getDeckFolder()).resolve("firemind").resolve(deckName + ".dec");
+                        return Paths.get(DeckUtils.getDecksFolder()).resolve("firemind").resolve(deckName + ".dec");
                     default:
                         throw new RuntimeException("getDeckPath() not implemented for decktype: " + deckType);
                 }

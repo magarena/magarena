@@ -40,7 +40,7 @@ public enum DeckType {
         switch (deckType) {
             case Preconstructed: return DeckUtils.getPrebuiltDecksFolder();
             case Firemind: return DeckUtils.getFiremindDecksFolder();
-            default: return Paths.get(DeckUtils.getDeckFolder());
+            default: return Paths.get(DeckUtils.getDecksFolder());
         }
     }
 
