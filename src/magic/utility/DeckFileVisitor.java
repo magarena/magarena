@@ -20,8 +20,8 @@ class DeckFileVisitor extends SimpleFileVisitor<Path> {
     private final List<File> files = new ArrayList<>();
 
     private static boolean isValidDeckFolder(Path dir) throws IOException {
-        return Files.isSameFile(dir, DeckUtils.getPrebuiltDecksFolder())
-            || Files.isSameFile(dir, MagicFileSystem.getDataPath(MagicFileSystem.DataPath.DECKS))
+        return Files.isSameFile(dir, DeckUtils.getPlayerDecksFolder())
+            || Files.isSameFile(dir, DeckUtils.getPrebuiltDecksFolder())
             || Files.isSameFile(dir, DeckUtils.getFiremindDecksFolder());
     }
 

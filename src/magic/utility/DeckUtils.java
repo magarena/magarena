@@ -458,4 +458,8 @@ public class DeckUtils {
         return deckPath.resolve(deck.getName() + ".dec");
     }
 
+    static Path getPlayerDecksFolder() {
+        return MagicFileSystem.getDataPath(MagicFileSystem.DataPath.DECKS);
+    }
+
 }
