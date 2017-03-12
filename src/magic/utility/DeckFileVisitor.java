@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.PathMatcher;
 import java.nio.file.SimpleFileVisitor;
@@ -19,15 +18,9 @@ class DeckFileVisitor extends SimpleFileVisitor<Path> {
 
     private final List<File> files = new ArrayList<>();
 
-    private static boolean isValidDeckFolder(Path dir) throws IOException {
-        return Files.isSameFile(dir, DeckUtils.getPlayerDecksFolder())
-            || Files.isSameFile(dir, DeckUtils.getPrebuiltDecksFolder())
-            || Files.isSameFile(dir, DeckUtils.getFiremindDecksFolder());
-    }
-
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-        return isValidDeckFolder(dir)
+        return DeckUtils.isValidDeckFolder(dir)
             ? FileVisitResult.CONTINUE
             : FileVisitResult.SKIP_SUBTREE;
     }

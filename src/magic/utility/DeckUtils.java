@@ -462,4 +462,9 @@ public class DeckUtils {
         return MagicFileSystem.getDataPath(MagicFileSystem.DataPath.DECKS);
     }
 
+    static boolean isValidDeckFolder(Path dir) throws IOException {
+        return Files.isSameFile(dir, getPlayerDecksFolder())
+            || Files.isSameFile(dir, getPrebuiltDecksFolder())
+            || Files.isSameFile(dir, getFiremindDecksFolder());
+    }    
 }
