@@ -57,8 +57,9 @@ public class DeckUtils {
     }
 
     public static Path getPrebuiltDecksFolder() {
-        final Path decksPath = Paths.get(getDeckFolder());
-        return decksPath.resolve("prebuilt");
+        Path decksPath = Paths.get(getDeckFolder()).resolve("prebuilt");
+        MagicFileSystem.verifyDirectoryPath(decksPath);
+        return decksPath;
     }
 
     public static Path getFiremindDecksFolder() {
@@ -359,14 +360,13 @@ public class DeckUtils {
         return colorText.toString();
     }
 
-    private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
-        final File[] files=folder.listFiles();
-        for (final File file : files) {
-            if (file.isDirectory()) {
-                retrieveDeckFiles(file,deckFiles);
-            } else if (file.getName().endsWith(DECK_EXTENSION)) {
-                deckFiles.add(file);
-            }
+    private static List<File> getDeckFiles() {
+        try {
+            DeckFileVisitor dfv = new DeckFileVisitor();
+            Files.walkFileTree(MagicFileSystem.getDataPath(DataPath.DECKS), dfv);
+            return dfv.getFiles();
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
@@ -375,8 +375,7 @@ public class DeckUtils {
      *  (includes both custom & prebuilt decks).
      */
     public static void loadRandomDeckFile(final DuelPlayerConfig player) {
-        final List<File> deckFiles = new ArrayList<>();
-        retrieveDeckFiles(MagicFileSystem.getDataPath(DataPath.DECKS).toFile(), deckFiles);
+        List<File> deckFiles = getDeckFiles();
         if (deckFiles.isEmpty()) {
             // Creates a simple default deck.
             final MagicDeck deck = player.getDeck();
@@ -427,11 +426,7 @@ public class DeckUtils {
     public static List<File> getDecksContainingCard(final MagicCardDefinition cardDef) {
         final List<File> matchingDeckFiles = new ArrayList<>();
         if (cardDef != null) {
-
-            final List<File> allDeckFiles = new ArrayList<>();
-            retrieveDeckFiles(new File(getDeckFolder()), allDeckFiles);
-
-            for (File deckFile : allDeckFiles) {
+            for (File deckFile : getDeckFiles()) {
                 try (final BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(deckFile), "UTF-8"))) {
                     String line;
                     while ((line = br.readLine()) != null) {
@@ -446,7 +441,6 @@ public class DeckUtils {
                     throw new RuntimeException(ex);
                 }
             }
-
         }
         return matchingDeckFiles;
     };
