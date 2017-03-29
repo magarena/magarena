@@ -8,3 +8,4 @@ release/Magarena/decks/*.dec
 release/Magarena/reports
 doc/doxygen/
 doc/doxygen*.tmp
+/bin/
