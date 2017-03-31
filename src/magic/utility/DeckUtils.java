@@ -254,7 +254,7 @@ public class DeckUtils {
     public static long getDeckFileChecksum(String name, DeckType deckType) {
         Path deckPath = DeckType.getDeckFolder(deckType);
         Path deckFile = deckPath.resolve(name + ".dec");
-        return getDeckFileChecksum(deckFile);
+        return deckFile.toFile().exists() ? getDeckFileChecksum(deckFile) : -1;
     }
 
     public static long getDeckFileChecksum(MagicDeck aDeck) {
@@ -291,6 +291,9 @@ public class DeckUtils {
      * @return
      */
     public static MagicDeck loadDeckFromFile(final Path deckFilePath) {
+        if (!deckFilePath.toFile().exists()) {
+            return new MagicDeck();
+        }
         final List<String> lines = getDeckFileContent(deckFilePath.toString());
         final MagicDeck deck = parseDeckFileContent(lines);
         deck.setFilename(deckFilePath.getFileName().toString());
