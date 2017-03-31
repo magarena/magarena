@@ -72,8 +72,25 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.83 (March 26, 2017)
+Release 1.83 (March 31, 2017)
 ============
+lodici
+ManuSayure
+melvin
+ShawnieBoy
+
+- clicking on already selected deck tab opens the deck selection screen
+
+- add Modern Masters 2017 Edition
+
+- increase the number of UI strings that can be translated
+
+- update Russian translation
+
+- fixed the following bugs:
+  * 1.82 stats database not imported into 1.83 (issue #1087)
+  * crash when selected random deck is in an unknown folder (issue #1088)
+  * flanking only triggers for the first blocker (issue #1090)
 
 Release 1.82 (February 27, 2017)
 ============
