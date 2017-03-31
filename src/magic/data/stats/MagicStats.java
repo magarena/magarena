@@ -166,6 +166,19 @@ public final class MagicStats {
         return "";
     }
 
+    private static List<MagicDeck> getTopDecks(List<DeckStatsInfo> decksInfo) {
+        List<MagicDeck> decks = new ArrayList<>();
+        for (DeckStatsInfo info : decksInfo) {
+            MagicDeck deck = DeckUtils.loadDeckFromFile(
+                info.deckName, DeckType.valueOf(info.deckType)
+            );
+            if (DeckUtils.getDeckFileChecksum(deck) == info.deckCheckSum) {
+                decks.add(deck);
+            }
+        }
+        return decks;
+    }
+
     private static List<DeckStatsInfo> getMostPlayedDecks(int limit) {
         if (CONFIG.isGameStatsEnabled()) {
             try {
@@ -178,16 +191,7 @@ public final class MagicStats {
     }
 
     public static List<MagicDeck> getMostPlayedDecks() {
-        List<MagicDeck> decks = new ArrayList<>();
-        for (DeckStatsInfo info : getMostPlayedDecks(20)) {
-            MagicDeck deck = DeckUtils.loadDeckFromFile(
-                info.deckName, DeckType.valueOf(info.deckType)
-            );
-            if (DeckUtils.getDeckFileChecksum(deck) == info.deckCheckSum) {
-                decks.add(deck);
-            }
-        }
-        return decks;
+        return getTopDecks(getMostPlayedDecks(20));
     }
 
     private static List<DeckStatsInfo> getTopWinningDecks(int limit) {
@@ -202,16 +206,7 @@ public final class MagicStats {
     }
 
     public static List<MagicDeck> getTopWinningDecks() {
-        List<MagicDeck> decks = new ArrayList<>();
-        for (DeckStatsInfo info : getTopWinningDecks(20)) {
-            MagicDeck deck = DeckUtils.loadDeckFromFile(
-                info.deckName, DeckType.valueOf(info.deckType)
-            );
-            if (DeckUtils.getDeckFileChecksum(deck) == info.deckCheckSum) {
-                decks.add(deck);
-            }
-        }
-        return decks;
+        return getTopDecks(getTopWinningDecks(20));
     }
 
     private static List<DeckStatsInfo> getRecentlyPlayedDecks(int limit) {
@@ -226,16 +221,7 @@ public final class MagicStats {
     }
 
     public static List<MagicDeck> getRecentlyPlayedDecks() {
-        List<MagicDeck> decks = new ArrayList<>();
-        for (DeckStatsInfo info : getRecentlyPlayedDecks(20)) {
-            MagicDeck deck = DeckUtils.loadDeckFromFile(
-                info.deckName, DeckType.valueOf(info.deckType)
-            );
-            if (DeckUtils.getDeckFileChecksum(deck) == info.deckCheckSum) {
-                decks.add(deck);
-            }
-        }
-        return decks;
+        return getTopDecks(getRecentlyPlayedDecks(20));
     }
 
 
