@@ -7,7 +7,7 @@ import magic.model.MagicPermanentList;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class FlankingTrigger extends BecomesBlockedTrigger {
+public class FlankingTrigger extends ThisBecomesBlockedByTrigger {
 
     private static final FlankingTrigger INSTANCE = new FlankingTrigger();
 
@@ -18,31 +18,21 @@ public class FlankingTrigger extends BecomesBlockedTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
-        if (permanent == blocked) {
-            final MagicPermanentList plist = new MagicPermanentList();
-            for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-                if (!blocker.hasAbility(MagicAbility.Flanking)) {
-                    plist.add(blocker);
-                }
-            }
-            if (!plist.isEmpty()) {
-                return new MagicEvent(
-                    permanent,
-                    plist,
-                    this,
-                    plist.size() > 1 ?
-                        "Blocking creatures get -1/-1 until end of turn." :
-                        plist.get(0) + " gets -1/-1 until end of turn."
-                );
-            }
-        }
-        return MagicEvent.NONE;
+    public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
+        return super.accept(permanent, blocker) && blocker.hasAbility(MagicAbility.Flanking) == false;
+    }
+
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
+        return new MagicEvent(
+            permanent,
+            blocker,
+            this,
+            "RN gets -1/-1 until end of turn."
+        );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        for (final MagicPermanent blocker : event.getRefPermanentList()) {
-            game.doAction(new ChangeTurnPTAction(blocker,-1,-1));
-        }
+        game.doAction(new ChangeTurnPTAction(event.getRefPermanent(),-1,-1));
     }
 }
