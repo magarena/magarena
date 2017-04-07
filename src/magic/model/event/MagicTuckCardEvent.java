@@ -20,16 +20,6 @@ public class MagicTuckCardEvent extends MagicEvent {
         );
     }
 
-    public MagicTuckCardEvent(final MagicSource source, final MagicPlayer player, final boolean log) {
-        super(
-            source,
-            player,
-            MagicTargetChoice.A_CARD_FROM_HAND,
-            EVENT_ACTION,
-            ""
-        );
-    }
-
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         event.processTargetCard(game, (final MagicCard card) ->
             game.doAction(new DiscardCardAction(
