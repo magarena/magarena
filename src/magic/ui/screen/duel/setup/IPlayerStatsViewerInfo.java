@@ -2,7 +2,7 @@ package magic.ui.screen.duel.setup;
 
 interface IPlayerStatsViewerInfo {
 
-    static final String NO_VALUE = "---";
+    String NO_VALUE = "---";
 
     String getLastPlayedDate();
     String getDuelsPlayed();

@@ -10,5 +10,5 @@ public interface IDeckEditorView {
     void doPlusButtonAction();
     void doMinusButtonAction();
     List<ActionBarButton> getActionButtons();
-    public void notifyShowing();
+    void notifyShowing();
 }

@@ -7,6 +7,5 @@ public interface IDeckEditorListener {
     void deckUpdated(final MagicDeck deck);
     void cardSelected(final MagicCardDefinition card);
     void setDeck(MagicDeck deck);
-
-    public void addCardToRecall(MagicCardDefinition card);
+    void addCardToRecall(MagicCardDefinition card);
 }

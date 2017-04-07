@@ -3,11 +3,7 @@ package magic.ui;
 import java.io.File;
 
 public interface IDragDropListener {
-
-    public void onImageFileDropped(File imageFile);
-
-    public void onZipFileDropped(File zipFile);
-
-    public void onGameSnapshotDropped(File aFile);
-
+    void onImageFileDropped(File imageFile);
+    void onZipFileDropped(File zipFile);
+    void onGameSnapshotDropped(File aFile);
 }

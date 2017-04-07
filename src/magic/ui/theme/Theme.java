@@ -67,5 +67,5 @@ public interface Theme {
 
     BufferedImage getBackgroundImage();
 
-    public boolean hasValue(String name);
+    boolean hasValue(String name);
 }
