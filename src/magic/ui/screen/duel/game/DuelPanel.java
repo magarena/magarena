@@ -10,7 +10,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
-import magic.model.MagicGame;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
@@ -38,8 +37,7 @@ public final class DuelPanel extends JPanel {
     private BattlefieldPanel battlefieldPanel;
     private ResolutionProfileResult result;
 
-    public DuelPanel(final MagicGame game) {
-
+    public DuelPanel() {
         setOpaque(false);
         setFocusable(true);
     }
