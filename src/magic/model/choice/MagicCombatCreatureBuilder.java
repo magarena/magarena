@@ -1,14 +1,13 @@
 package magic.model.choice;
 
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 
 public class MagicCombatCreatureBuilder {
 
@@ -44,14 +43,14 @@ public class MagicCombatCreatureBuilder {
         blockers=new HashSet<MagicCombatCreature>();
         for (final MagicPermanent permanent : defendingPlayer.getPermanents()) {
             if (permanent.canBlock()) {
-                blockers.add(new MagicCombatCreature(game,permanent));
+                blockers.add(new MagicCombatCreature(permanent));
             }
         }
         return blockers.size()>0;
     }
 
     private MagicCombatCreature createAttacker(final MagicPermanent permanent) {
-        final MagicCombatCreature attacker=new MagicCombatCreature(game,permanent);
+        final MagicCombatCreature attacker=new MagicCombatCreature(permanent);
         attacker.setAttacker(game,blockers);
         return attacker;
     }

@@ -1,16 +1,15 @@
 package magic.model.choice;
 
-import magic.ai.ArtificialScoringSystem;
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import magic.ai.ArtificialScoringSystem;
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
 
 public class MagicCombatCreature {
 
@@ -23,7 +22,7 @@ public class MagicCombatCreature {
     int attackerScore;
     private final Set<MagicAbility> flags;
 
-    MagicCombatCreature(final MagicGame game,final MagicPermanent permanent) {
+    MagicCombatCreature(final MagicPermanent permanent) {
         this.permanent = permanent;
         this.score = permanent.getScore();
         final MagicPowerToughness pt = permanent.getPowerToughness();
