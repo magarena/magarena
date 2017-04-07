@@ -1,11 +1,11 @@
 package magic.model.target;
 
+import magic.model.MagicAmount;
+import magic.model.MagicAmountFactory;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicAmount;
-import magic.model.MagicAmountFactory;
 import magic.model.event.MagicEvent;
 
 public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
@@ -23,6 +23,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
         count = aCount;
     }
 
+    // Do not remove redundant parameter, this method signature is called from groovy.
     public MagicWeakenTargetPicker(final int amountPower,final int aAmountToughness) {
         amountToughness = aAmountToughness;
         count = MagicAmountFactory.One;
