@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -41,7 +42,7 @@ public abstract class MagicTargetPicker<T> {
 
     static {
         register("pump", MagicPumpTargetPicker.create());
-        register("weaken", new MagicWeakenTargetPicker(0));
+        register("weaken", new MagicWeakenTargetPicker(0,0));
         register("flying", MagicFlyingTargetPicker.create());
         register("lifelink", MagicLifelinkTargetPicker.create());
         register("copy", MagicCopyPermanentPicker.create());

@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import magic.data.CardDefinitions;
 import magic.model.*;
 import magic.model.action.*;
@@ -1223,7 +1224,7 @@ public enum MagicRuleEventAction {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             if (counterType.getName().contains("-")) {
                 final String[] pt = counterType.getName().split("/");
-                return new MagicWeakenTargetPicker(-Integer.parseInt(pt[1]));
+                return new MagicWeakenTargetPicker(-Integer.parseInt(pt[0]), -Integer.parseInt(pt[1]));
             } else if (counterType.getName().contains("+")) {
                 return MagicPumpTargetPicker.create();
             } else {
