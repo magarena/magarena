@@ -10,7 +10,7 @@ public class ColorFilterDialog extends MultiSelectFilterDialog {
 
     private final ColorFilterPanel fbp;
 
-    public ColorFilterDialog(final ColorFilterPanel fbp, Object[] filterValues) {
+    public ColorFilterDialog(final ColorFilterPanel fbp) {
 
         this.fbp = fbp;
         this.filterOptionsPanel = new FilterOptionsPanel(fbp);

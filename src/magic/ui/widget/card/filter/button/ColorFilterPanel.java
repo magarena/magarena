@@ -6,9 +6,9 @@ import java.util.List;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.translate.MText;
+import magic.ui.widget.card.filter.IFilterListener;
 import magic.ui.widget.card.filter.dialog.ColorFilterDialog;
 import magic.ui.widget.card.filter.dialog.FilterDialog;
-import magic.ui.widget.card.filter.IFilterListener;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -48,7 +48,7 @@ public class ColorFilterPanel extends FilterPanel {
     @Override
     protected FilterDialog getFilterDialog() {
         if (cbDialog == null) {
-            cbDialog = new ColorFilterDialog(this, MagicColor.values());
+            cbDialog = new ColorFilterDialog(this);
         }
         return cbDialog;
     }
