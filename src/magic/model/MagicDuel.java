@@ -40,10 +40,6 @@ public class MagicDuel {
         this(new DuelConfig());
     }
 
-    public MagicDuel(final DuelConfig configuration,final MagicDuel duel) {
-        this(configuration);
-    }
-
     public DuelConfig getConfiguration() {
         return duelConfig;
     }
