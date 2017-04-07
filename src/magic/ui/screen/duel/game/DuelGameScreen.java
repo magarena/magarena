@@ -34,7 +34,7 @@ public class DuelGameScreen extends MScreen {
     }
 
     private DuelLayeredPane getScreenContent(final MagicGame aGame) {
-        duelPane = new DuelLayeredPane(aGame);
+        duelPane = new DuelLayeredPane();
         controller = new SwingGameController(duelPane, aGame);
         return duelPane;
     }
