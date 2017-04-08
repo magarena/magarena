@@ -1,11 +1,10 @@
 package magic.test;
 
+import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicDeckProfile;
 import magic.model.phase.*;
-import magic.ai.MagicAIImpl;
 
 class TestAnafenza extends TestGameBuilder {
     public MagicGame getGame() {

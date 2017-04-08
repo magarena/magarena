@@ -1,20 +1,18 @@
 package magic.model.action;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import magic.ai.ArtificialScoringSystem;
-import magic.model.MagicPayedCost;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicObject;
+import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-
-import java.util.Collections;
-import java.util.Arrays;
-import java.util.List;
 
 public class PlayCardFromStackAction extends MagicAction {
 

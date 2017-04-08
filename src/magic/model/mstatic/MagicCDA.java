@@ -1,5 +1,7 @@
 package magic.model.mstatic;
 
+import java.util.Set;
+import magic.model.MagicAmount;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
@@ -7,11 +9,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
-import magic.model.MagicAmount;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTarget;
-
-import java.util.Set;
 
 /*
 604.3a A static ability is a characteristic-defining ability if it meets

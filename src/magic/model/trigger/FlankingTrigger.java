@@ -3,7 +3,6 @@ package magic.model.trigger;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 

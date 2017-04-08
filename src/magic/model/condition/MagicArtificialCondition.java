@@ -1,9 +1,8 @@
 package magic.model.condition;
 
-import magic.model.MagicGame;
 import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
 import magic.model.event.MagicConditionEvent;
+import magic.model.event.MagicEvent;
 
 public class MagicArtificialCondition extends MagicCondition {
 

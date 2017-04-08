@@ -2,9 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicManaCost;
 import magic.model.action.TapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTapTargetPicker;

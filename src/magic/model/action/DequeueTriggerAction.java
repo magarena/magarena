@@ -1,7 +1,6 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
 
 public class DequeueTriggerAction extends MagicAction {

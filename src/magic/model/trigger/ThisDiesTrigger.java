@@ -1,9 +1,8 @@
 package magic.model.trigger;
 
+import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicCard;
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicHauntEvent;

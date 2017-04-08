@@ -1,15 +1,13 @@
 package magic.model.event;
 
+import java.util.LinkedList;
+import java.util.List;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicSource;
 import magic.model.action.CastCardAction;
-import magic.model.stack.MagicCardOnStack;
-
-import java.util.LinkedList;
-import java.util.List;
 
 public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
 

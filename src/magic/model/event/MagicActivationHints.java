@@ -1,8 +1,5 @@
 package magic.model.event;
 
-import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-
 public class MagicActivationHints {
 
     /** timing */

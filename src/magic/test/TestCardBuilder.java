@@ -1,22 +1,17 @@
 package magic.test;
 
-import magic.model.MagicDuel;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicDeckProfile;
-import magic.model.phase.*;
-import magic.ai.MagicAIImpl;
-import magic.ui.MagicImages;
-import magic.data.CardDefinitions;
-import magic.cardBuilder.renderers.CardBuilder;
-
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
-import javax.imageio.ImageIO;
-import java.util.Arrays;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import javax.imageio.ImageIO;
+import magic.ai.MagicAIImpl;
+import magic.cardBuilder.renderers.CardBuilder;
+import magic.data.CardDefinitions;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDuel;
+import magic.model.MagicGame;
 
 class TestCardBuilder extends TestGameBuilder {
     public MagicGame getGame() {

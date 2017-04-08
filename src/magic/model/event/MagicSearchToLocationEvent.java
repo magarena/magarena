@@ -6,12 +6,11 @@ import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
+import magic.model.action.AIRevealAction;
 import magic.model.action.ShiftCardAction;
 import magic.model.action.ShuffleLibraryAction;
-import magic.model.action.AIRevealAction;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicCardChoiceResult;
+import magic.model.choice.MagicChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchToLocationEvent extends MagicEvent {

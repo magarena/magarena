@@ -1,11 +1,10 @@
 package magic.model.event;
 
-import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.DrawAction;
 import magic.model.action.ShuffleCardsIntoLibraryAction;
 import magic.model.choice.MagicMulliganChoice;

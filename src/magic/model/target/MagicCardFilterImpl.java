@@ -1,19 +1,17 @@
 package magic.model.target;
 
-import magic.model.MagicCard;
-import magic.model.MagicColor;
-import magic.model.MagicAbility;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicType;
-import magic.model.MagicSubType;
-import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicColor;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
     public List<MagicCard> filter(final MagicSource source) {

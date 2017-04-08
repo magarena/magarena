@@ -2,7 +2,6 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 

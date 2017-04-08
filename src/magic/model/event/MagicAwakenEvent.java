@@ -1,23 +1,21 @@
 package magic.model.event;
 
+import java.util.Set;
+import magic.model.MagicAbility;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
-import magic.model.MagicCounterType;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicAbility;
+import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.AddStaticAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.action.GainAbilityAction;
-
-import java.util.Set;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 
 public class MagicAwakenEvent extends MagicEvent {
     final private static MagicTargetChoice tchoice = new MagicTargetChoice("target land you control");

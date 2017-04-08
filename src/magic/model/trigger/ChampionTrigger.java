@@ -1,13 +1,12 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.action.ExileLinkAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;

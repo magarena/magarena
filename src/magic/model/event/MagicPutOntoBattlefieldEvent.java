@@ -1,19 +1,17 @@
 package magic.model.event;
 
+import java.util.Arrays;
+import java.util.List;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
+import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.ReturnCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
-
-import java.util.Arrays;
-import java.util.List;
-import magic.model.MagicMessage;
 
 public class MagicPutOntoBattlefieldEvent extends MagicEvent {
 

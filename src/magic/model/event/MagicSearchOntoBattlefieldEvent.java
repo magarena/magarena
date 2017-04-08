@@ -1,21 +1,19 @@
 package magic.model.event;
 
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
-import magic.model.action.ReturnCardAction;
-import magic.model.action.ShuffleLibraryAction;
-import magic.model.action.AIRevealAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicChoice;
-import magic.model.choice.MagicCardChoiceResult;
-import magic.model.target.MagicGraveyardTargetPicker;
-
 import java.util.Arrays;
 import java.util.List;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
 import magic.model.MagicMessage;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.action.AIRevealAction;
+import magic.model.action.MagicPermanentAction;
+import magic.model.action.ReturnCardAction;
+import magic.model.action.ShuffleLibraryAction;
+import magic.model.choice.MagicCardChoiceResult;
+import magic.model.choice.MagicChoice;
+import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
     public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPermanentAction... mods) {

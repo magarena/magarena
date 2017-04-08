@@ -1,17 +1,10 @@
-
 package magic.model.event;
 
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
-import magic.model.MagicCardDefinition;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicPlayMod;
-import magic.model.action.PlayCardFromStackAction;
-import magic.model.condition.MagicCondition;
-
 import java.util.Arrays;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicManaCost;
+import magic.model.condition.MagicCondition;
 
 public class MagicSurgeActivation extends MagicHandCastActivation {
 

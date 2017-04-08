@@ -1,6 +1,5 @@
 package magic.model.action;
 
-import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;

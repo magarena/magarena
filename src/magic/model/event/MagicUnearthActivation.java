@@ -1,17 +1,14 @@
 package magic.model.event;
 
+import java.util.Arrays;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.MagicSource;
-import magic.model.MagicCardDefinition;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.ReanimateAction;
-import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.stack.MagicAbilityOnStack;
-import java.util.Arrays;
 
 public class MagicUnearthActivation extends MagicCardAbilityActivation {
 

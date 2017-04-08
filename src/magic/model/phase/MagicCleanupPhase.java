@@ -3,14 +3,12 @@ package magic.model.phase;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.phase.MagicPhaseType;
 import magic.model.action.ChangeExtraTurnsAction;
 import magic.model.action.CleanupPlayerAction;
 import magic.model.action.CleanupTurnStaticsAction;
 import magic.model.action.CleanupTurnTriggersAction;
 import magic.model.action.PayDelayedCostsAction;
 import magic.model.event.MagicDiscardEvent;
-import magic.model.event.MagicEvent;
 
 public class MagicCleanupPhase extends MagicPhase {
 

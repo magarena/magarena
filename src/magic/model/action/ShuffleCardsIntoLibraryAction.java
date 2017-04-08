@@ -1,14 +1,10 @@
 package magic.model.action;
 
-import magic.model.MagicGame;
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicPlayer;
-import magic.model.MagicLocationType;
-
 import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPlayer;
 
 public class ShuffleCardsIntoLibraryAction extends MagicAction {
 

@@ -1,11 +1,9 @@
 package magic.model;
 
-import magic.utility.MagicSystem;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Iterator;
 import java.util.ListIterator;
+import magic.utility.MagicSystem;
 
 public class MagicLogBook {
 

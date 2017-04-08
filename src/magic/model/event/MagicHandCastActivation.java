@@ -1,16 +1,18 @@
 package magic.model.event;
 
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import magic.model.MagicAmount;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
-import magic.model.MagicSource;
-import magic.model.MagicPermanent;
 import magic.model.MagicManaCost;
-import magic.model.MagicCostManaType;
-import magic.model.MagicAmount;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.PlayCardAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
@@ -18,10 +20,6 @@ import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetFilter;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Collections;
 
 public class MagicHandCastActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
 

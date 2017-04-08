@@ -2,7 +2,6 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
-import magic.model.stack.MagicTriggerOnStack;
 
 public class PutStateTriggerOnStackAction extends MagicAction {
 

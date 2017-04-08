@@ -1,15 +1,14 @@
 package magic.model.choice;
 
+import java.util.Collection;
+import java.util.List;
 import magic.data.GeneralConfig;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import magic.model.IUIGameController;
 
 public class MagicSimpleMayChoice extends MagicChoice {
 

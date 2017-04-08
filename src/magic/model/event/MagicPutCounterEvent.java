@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicPumpTargetPicker;
 

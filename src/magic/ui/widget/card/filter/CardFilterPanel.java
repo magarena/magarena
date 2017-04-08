@@ -11,11 +11,11 @@ import java.util.stream.Stream;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import magic.data.CardDefinitions;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.helpers.MouseHelper;
+import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.card.filter.button.ColorFilterPanel;
 import magic.ui.widget.card.filter.button.CostFilterPanel;
 import magic.ui.widget.card.filter.button.CubeFilterPanel;
@@ -29,11 +29,10 @@ import magic.ui.widget.card.filter.button.StatusFilterPanel;
 import magic.ui.widget.card.filter.button.SubTypeFilterPanel;
 import magic.ui.widget.card.filter.button.TypeFilterPanel;
 import magic.ui.widget.card.filter.button.UnsupportedFilterPanel;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardFilterPanel extends TexturedPanel 
+public class CardFilterPanel extends TexturedPanel
         implements IFilterListener {
 
     // translatable strings

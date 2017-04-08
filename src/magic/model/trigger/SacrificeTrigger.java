@@ -2,11 +2,10 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicLocationType;
+import magic.model.action.RemoveFromPlayAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
-import magic.model.action.RemoveFromPlayAction;
 
 public abstract class SacrificeTrigger extends MagicTrigger<RemoveFromPlayAction> {
     public SacrificeTrigger(final int priority) {

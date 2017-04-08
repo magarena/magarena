@@ -1,15 +1,13 @@
 package magic.ai;
 
-import magic.model.MagicGame;
-import magic.model.event.MagicEvent;
-import magic.model.MagicPlayer;
-import magic.model.MagicGameLog;
-import magic.exception.GameException;
-
 import java.util.Collections;
-import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import magic.model.MagicGame;
+import magic.model.MagicGameLog;
+import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
 
 /*
  * MTD(f) algorithm by Aske Plaat

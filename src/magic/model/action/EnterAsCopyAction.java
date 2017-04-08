@@ -1,14 +1,12 @@
 package magic.model.action;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicObject;
 import magic.model.stack.MagicCardOnStack;
-
-import java.util.Collections;
-import java.util.Arrays;
-import java.util.List;
-import java.util.LinkedList;
 
 public class EnterAsCopyAction extends MagicAction {
 

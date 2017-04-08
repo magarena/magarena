@@ -6,7 +6,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.AttachAction;
 import magic.model.action.PlayTokenAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.event.MagicEvent;
 
 /**

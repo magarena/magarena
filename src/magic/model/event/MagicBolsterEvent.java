@@ -3,8 +3,6 @@ package magic.model.event;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicPTTargetFilter;

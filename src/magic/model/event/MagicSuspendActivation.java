@@ -1,20 +1,15 @@
 package magic.model.event;
 
+import java.util.Arrays;
 import magic.model.MagicCard;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ShiftCardAction;
-import magic.model.stack.MagicAbilityOnStack;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
-
-import java.util.Arrays;
 
 public class MagicSuspendActivation extends MagicCardAbilityActivation {
 

@@ -1,17 +1,15 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
+import java.util.Arrays;
 import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.PutItemOnStackAction;
-
-import java.util.Arrays;
 
 public class MagicCyclingActivation extends MagicCardAbilityActivation {
 
