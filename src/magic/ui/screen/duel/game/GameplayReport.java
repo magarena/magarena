@@ -17,7 +17,6 @@ import magic.ui.helpers.DesktopHelper;
 import magic.ui.helpers.ImageHelper;
 import magic.utility.MagicFileSystem;
 import org.apache.commons.io.FileUtils;
-import static magic.utility.MagicFileSystem.getDataPath;
 
 final class GameplayReport {
     private GameplayReport() {}
@@ -64,7 +63,7 @@ final class GameplayReport {
         final byte[] buf = new byte[1024];
         final String[] filenames = new String[]{SCREEN_FILE, GAME_FILE, LOG_FILE};
 
-        final File zipFile = getDataPath(MagicFileSystem.DataPath.REPORTS).resolve(ZIP_FILE).toFile();
+        final File zipFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.REPORTS).resolve(ZIP_FILE).toFile();
         try (final ZipOutputStream out = new ZipOutputStream(new FileOutputStream(zipFile))) {
 
             for (String filename : filenames) {
