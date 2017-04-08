@@ -24,6 +24,7 @@ public enum MagicSound {
     BEEP("noAction.wav"),
     BOOM("boom.wav"),
     REMOVE_CARD("cardTakeOutPackage1.wav"),
+    CLICK("click.wav"),
 
     // gameSounds - keep sorted and verify enumset range if changed.
     COMBAT("combat.au"),
@@ -32,7 +33,7 @@ public enum MagicSound {
     RESOLVE("resolve.au"),
     WIN("win.au");
 
-    private static final Set<MagicSound> uiSounds = EnumSet.range(ADD_CARD, REMOVE_CARD);
+    private static final Set<MagicSound> uiSounds = EnumSet.range(ADD_CARD, CLICK);
     private static final Set<MagicSound> gameSounds = EnumSet.range(COMBAT, WIN);
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
