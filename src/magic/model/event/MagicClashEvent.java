@@ -1,11 +1,10 @@
 package magic.model.event;
 
 import magic.model.MagicCard;
+import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCardList;
-import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicClashEvent extends MagicEvent {

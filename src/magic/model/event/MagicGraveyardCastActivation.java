@@ -1,9 +1,8 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicLocationType;
-import magic.model.event.MagicEvent;
+import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
 
 public class MagicGraveyardCastActivation extends MagicHandCastActivation {

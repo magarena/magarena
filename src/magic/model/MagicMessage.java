@@ -1,13 +1,12 @@
 package magic.model;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.stream.Collectors;
-import java.util.Arrays;
+import magic.model.choice.MagicCardChoiceResult;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.choice.MagicCardChoiceResult;
-import magic.model.ARG;
 
 public class MagicMessage {
 

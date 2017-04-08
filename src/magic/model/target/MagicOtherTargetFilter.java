@@ -1,8 +1,7 @@
 package magic.model.target;
 
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
-import magic.model.target.MagicTarget;
+import magic.model.MagicSource;
 
 // reference can not be used because game is copied.
 public class MagicOtherTargetFilter extends MagicTargetFilterImpl {

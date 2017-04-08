@@ -1,6 +1,7 @@
 package magic.firemind;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,30 +11,24 @@ import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.UnknownHostException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.TimeZone;
 import java.util.List;
-import java.text.SimpleDateFormat;
-
+import java.util.TimeZone;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
-import magic.firemind.Duel;
-
-import org.apache.commons.io.FileUtils;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.json.JSONArray;
-
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-
-import java.io.File;
+import org.apache.commons.io.FileUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class FiremindClient {
 
