@@ -374,7 +374,6 @@ public class MagicConditionFactory {
                     MagicTargetFilterFactory.card(color).from(MagicTargetType.Hand),
                     (MagicCard)source
                 );
-                final MagicGame game = source.getGame();
                 final MagicPlayer player = source.getController();
                 return filter.filter(player).size() >= amt;
             }

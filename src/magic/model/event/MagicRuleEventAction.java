@@ -4,7 +4,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import magic.data.CardDefinitions;
 import magic.model.*;
 import magic.model.action.*;
@@ -564,7 +563,6 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return (game, event) -> event.processTargetPermanent(game, (final MagicPermanent other) -> {
                 final MagicPermanent it = ARG.itPermanent(event, matcher);
                 game.doAction(new DealDamageAction(it, other, it.getPower()));

@@ -41,7 +41,6 @@ public class MagicCleanupPhase extends MagicPhase {
 
     private static void nextTurn(final MagicGame game) {
         final MagicPlayer turnPlayer=game.getTurnPlayer();
-        final MagicPlayer opponentPlayer=game.getTurnPlayer().getOpponent();
         if (!turnPlayer.getBuilderCost().isEmpty()) {
             game.doAction(new PayDelayedCostsAction(turnPlayer));
         }
