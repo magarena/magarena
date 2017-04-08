@@ -16,6 +16,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private static final int CAN_TAP=1<<8;
 
     private int amountToughness;
+    private int amountPower;
     private final MagicAmount count;
 
     public MagicWeakenTargetPicker(final MagicAmount aCount) {
@@ -23,9 +24,9 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
         count = aCount;
     }
 
-    // Do not remove redundant parameter, this method signature is called from groovy.
-    public MagicWeakenTargetPicker(final int amountPower,final int aAmountToughness) {
+    public MagicWeakenTargetPicker(final int aAmountPower,final int aAmountToughness) {
         amountToughness = aAmountToughness;
+        amountPower = aAmountPower;
         count = MagicAmountFactory.One;
     }
 
@@ -73,7 +74,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
         }
 
         // Third level.
-        score+=Math.max(15,pt.getPositivePower());
+        score+=Math.max(15,pt.getPositivePower() - amountPower);
 
         return score;
     }
