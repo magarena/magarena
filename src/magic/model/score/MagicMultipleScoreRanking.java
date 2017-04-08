@@ -42,9 +42,7 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
     }
 
     public boolean addScore(final int score) {
-        return left == 0 ? (best ? score > worstScore
-                                 : score < worstScore)
-                         :true;
+        return left != 0 || (best ? score > worstScore : score < worstScore);
     }
 
     public void addScoreResult(final MagicScoreResult result) {

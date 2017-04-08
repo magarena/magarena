@@ -14,7 +14,7 @@ public class MagicArtificialCondition extends MagicCondition {
 
     @Override
     public boolean accept(final MagicSource source) {
-        return source.getGame().isArtificial() ? cond.accept(source) : true;
+        return !source.getGame().isArtificial() || cond.accept(source);
     }
 
     @Override
