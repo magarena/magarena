@@ -5,11 +5,11 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Composite;
 import java.awt.GradientPaint;
-import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice.WindowTranslucency;
 import java.awt.GraphicsDevice;
+import java.awt.GraphicsDevice.WindowTranslucency;
 import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Paint;
@@ -34,14 +34,14 @@ import magic.ui.image.filter.GrayScaleImageFilter;
 import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 final public class ImageHelper {
 
     private static final GrayScaleImageFilter GRAYSCALE_FILTER = new GrayScaleImageFilter();
 
-    private final static GraphicsConfiguration GC = (java.awt.GraphicsEnvironment.isHeadless() == false) ?
+    private final static GraphicsConfiguration GC = (GraphicsEnvironment.isHeadless() == false) ?
         GraphicsEnvironment
             .getLocalGraphicsEnvironment()
             .getDefaultScreenDevice()
