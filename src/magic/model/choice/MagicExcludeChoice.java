@@ -1,16 +1,14 @@
 package magic.model.choice;
 
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import magic.model.IUIGameController;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
 
 public class MagicExcludeChoice extends MagicChoice {
 
@@ -28,7 +26,6 @@ public class MagicExcludeChoice extends MagicChoice {
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
         final List<MagicPermanent> excludePermanents=new ArrayList<MagicPermanent>();
         for (final MagicPermanent permanent : player.getPermanents()) {

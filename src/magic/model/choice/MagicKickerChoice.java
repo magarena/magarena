@@ -1,18 +1,17 @@
 package magic.model.choice;
 
-import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import magic.exception.UndoClickedException;
 import magic.model.IUIGameController;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
 
 // Kicker choice results : 0 = other choice, 1 = number of times kicked, 2 = kicker mana cost result
 public class MagicKickerChoice extends MagicChoice {
@@ -98,7 +97,6 @@ public class MagicKickerChoice extends MagicChoice {
     @Override
     public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
         final Collection<?> otherOptions;
         if (otherChoice.isValid()) {

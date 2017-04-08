@@ -128,7 +128,6 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     @Override
     public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);

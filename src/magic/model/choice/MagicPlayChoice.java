@@ -46,7 +46,6 @@ public class MagicPlayChoice extends MagicChoice {
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
         // When something is already on top of stack for the player, always pass.
         if (game.getStack().hasItemOnTopOfPlayer(player)) {

@@ -107,7 +107,6 @@ public class MagicColorChoice extends MagicChoice {
     @Override
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
         switch (type) {
             case MOST: return getArtificialMostOptions(game,player);
@@ -119,7 +118,6 @@ public class MagicColorChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
-        final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
 
         controller.disableActionButton(false);

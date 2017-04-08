@@ -27,7 +27,6 @@ public class MagicMulliganChoice extends MagicChoice {
     @Override
     public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
 
         int costSum = 0;
         for (final MagicCard card: player.getLibrary()){

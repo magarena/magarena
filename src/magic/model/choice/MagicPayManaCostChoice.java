@@ -1,5 +1,13 @@
 package magic.model.choice;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+import magic.exception.GameException;
+import magic.exception.UndoClickedException;
+import magic.model.IUIGameController;
 import magic.model.MagicCostManaType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
@@ -8,14 +16,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.exception.UndoClickedException;
-import magic.exception.GameException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-import magic.model.IUIGameController;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {
@@ -84,7 +84,6 @@ public class MagicPayManaCostChoice extends MagicChoice {
     @Override
     public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
-        final MagicSource source = event.getSource();
         //in simulation use delayed pay mana cost
         final List<Object> choices = (List<Object>)buildDelayedPayManaCostResults(game,player);
         return new Object[]{choices.get(MagicRandom.nextRNGInt(choices.size()))};
