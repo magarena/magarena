@@ -102,12 +102,12 @@ public class DeckGamesPanel extends TexturedPanel
 
     @Override
     public boolean hasPrevPage() {
-        return tm != null ? tm.hasPrevPage() : false;
+        return tm != null && tm.hasPrevPage();
     }
 
     @Override
     public boolean hasNextPage() {
-        return tm != null ? tm.hasNextPage() : false;
+        return tm != null && tm.hasNextPage();
     }
 
     @Override

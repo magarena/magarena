@@ -3,9 +3,9 @@ package magic.ui.widget.card.filter.button;
 import java.awt.LayoutManager;
 import java.util.List;
 import magic.model.MagicCardDefinition;
+import magic.ui.widget.card.filter.IFilterListener;
 import magic.ui.widget.card.filter.dialog.CheckboxFilterDialog;
 import magic.ui.widget.card.filter.dialog.FilterDialog;
-import magic.ui.widget.card.filter.IFilterListener;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -45,7 +45,7 @@ public abstract class CheckBoxFilterPanel extends FilterPanel {
 
     @Override
     public boolean matches(MagicCardDefinition aCard) {
-        return cbDialog == null ? true : cbDialog.filterMatches(aCard);
+        return cbDialog == null || cbDialog.filterMatches(aCard);
     }
 
     protected CheckboxFilterDialog getCheckBoxFilterDialog() {

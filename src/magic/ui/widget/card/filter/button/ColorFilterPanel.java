@@ -55,7 +55,7 @@ public class ColorFilterPanel extends FilterPanel {
 
     @Override
     public boolean matches(MagicCardDefinition aCard) {
-        return cbDialog == null ? true : cbDialog.filterMatches(aCard);
+        return cbDialog == null || cbDialog.filterMatches(aCard);
     }
 
     private String getFilterTooltip(Object[] values, List<Integer> selected) {
