@@ -6,7 +6,6 @@ import java.util.EnumMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.PriorityQueue;
-
 import magic.exception.GameException;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPermanent;
@@ -66,7 +65,6 @@ public class MagicPermanentTriggerMap {
     }
 
     public MagicPermanentTrigger remove(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
-        final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
         for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
             final Collection<MagicPermanentTrigger> triggers = type.getValue();
             for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {

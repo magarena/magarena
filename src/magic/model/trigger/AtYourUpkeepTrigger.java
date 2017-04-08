@@ -1,20 +1,20 @@
 package magic.model.trigger;
 
+import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
-import magic.model.MagicCard;
 import magic.model.MagicSource;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicEventAction;
-import magic.model.event.MagicPayManaCostEvent;
-import magic.model.action.RevealAction;
-import magic.model.action.RemoveTriggerAction;
+import magic.model.MagicSubType;
 import magic.model.action.LookAction;
 import magic.model.action.LoseGameAction;
+import magic.model.action.RemoveTriggerAction;
+import magic.model.action.RevealAction;
 import magic.model.choice.MagicMayChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
+import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
     public AtYourUpkeepTrigger(final int priority) {
@@ -41,7 +41,6 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
         return new AtYourUpkeepTrigger() {
             final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
                 if (event.isYes()) {
-                    final MagicCard card = event.getRefCard();
                     game.doAction(new RevealAction(event.getRefCard()));
                     action.executeEvent(game, event);
                 }
