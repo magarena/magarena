@@ -2,12 +2,10 @@ package magic.model.action;
 
 import java.util.Arrays;
 import java.util.List;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
-import magic.model.MagicLocationType;
 
 public class ReturnCardAction extends MagicAction {
 
