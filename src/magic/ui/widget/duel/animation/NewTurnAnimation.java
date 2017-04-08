@@ -6,7 +6,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
-import java.awt.geom.Rectangle2D;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
@@ -44,9 +43,9 @@ class NewTurnAnimation extends MagicAnimation {
         final String s = "Turn " + gameInfo.getTurn();
         int w = g2d.getFontMetrics(f).stringWidth(s);
         int h = g2d.getFontMetrics(f).getAscent(); // .getHeight();
-        final Rectangle2D test = g2d.getFontMetrics(f).getStringBounds(s, g);
         int x = (rect.width / 2) - (w / 2);
         g2d.drawString(s, x, rect.y + h + ((rect.height - h) / 2));
+//        final Rectangle2D test = g2d.getFontMetrics(f).getStringBounds(s, g);
 //        g2d.drawRect(x, rect.y + ((rect.height - h) / 2), (int)test.getWidth(), (int)test.getHeight());
         g2d.dispose();
     }

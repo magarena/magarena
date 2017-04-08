@@ -213,7 +213,6 @@ public class CardsJTable extends JTable
 
             final MagicCardDefinition card = tableModel.getCardDef(row);
             final CostPanel costPanel = new CostPanel(card.hasCost() ? card.getCost() : null);
-            final boolean isRowSelected = isRowSelected(row);
             final boolean isAlternate = row % 2 == 0;
 
             costPanel.setBackground(isSelected
