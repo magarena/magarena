@@ -1,6 +1,5 @@
 package magic.ui.dialog;
 
-import magic.translate.MText;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -16,11 +15,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.ui.*;
+import magic.translate.MText;
+import magic.ui.FontsAndBorders;
+import magic.ui.MagicFrame;
+import magic.ui.dialog.button.CancelButton;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.dialog.button.CancelButton;
-import magic.ui.FontsAndBorders;
 import magic.ui.widget.firemind.FiremindWorkerPanel;
 import net.miginfocom.swing.MigLayout;
 
