@@ -9,6 +9,7 @@ import magic.ai.MagicAIImpl;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
 import magic.data.stats.MagicStats;
+import magic.exception.InvalidDeckException;
 import magic.headless.HeadlessGameController;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;
@@ -18,6 +19,8 @@ import magic.model.player.AiProfile;
 import magic.utility.DeckUtils;
 
 class TestGameRunner extends SwingWorker<Void, Integer> {
+
+    private static final Logger LOGGER = Logger.getLogger(TestGameRunner.class.getName());
 
     private static MagicAIImpl[] ai = {MagicAIImpl.MMABFast, MagicAIImpl.MMABFast};
     private static int[] str = {1, 1};
@@ -32,18 +35,28 @@ class TestGameRunner extends SwingWorker<Void, Integer> {
         this.totalGames = totalGames;
     }
 
+    private void playGame() {
+        final MagicDuel duel = setupDuel();
+        final MagicGame game = duel.nextGame();
+        game.setArtificial(true);
+        //maximum duration of a game is 1 minute
+        final HeadlessGameController controller = new HeadlessGameController(game, 60000);
+        controller.runGame();
+        MagicStats.saveGameData(game);
+    }
+
     @Override
     protected Void doInBackground() throws Exception {
         System.out.println("=== running test games : " + totalGames + " ===");
         for (int i = 0; i < totalGames; i++) {
-            final MagicDuel duel = setupDuel();
-            final MagicGame game = duel.nextGame();
-            game.setArtificial(true);
-            //maximum duration of a game is 1 minute
-            final HeadlessGameController controller = new HeadlessGameController(game, 60000);
-            controller.runGame();
-            MagicStats.saveGameData(game);
-            publish(i + 1);
+            try {
+                playGame();
+                publish(i + 1);
+            } catch (InvalidDeckException ex) {
+                // ignore game if exception due to bad deck.
+                LOGGER.log(Level.WARNING, null, ex);
+                i -= 1;
+            }
         }
         return null;
     }
@@ -52,9 +65,10 @@ class TestGameRunner extends SwingWorker<Void, Integer> {
     protected void done() {
         try {
             get();
-            listener.onTestGameRunnerFinished();
         } catch (InterruptedException | ExecutionException ex) {
-            Logger.getLogger(TestGameRunner.class.getName()).log(Level.SEVERE, null, ex);
+            LOGGER.log(Level.SEVERE, null, ex);
+        } finally {
+            listener.onTestGameRunnerFinished();
         }
     }
 
