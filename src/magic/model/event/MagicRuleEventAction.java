@@ -3020,6 +3020,8 @@ public enum MagicRuleEventAction {
             .replaceAll("(S|s)acrifice ", "PN sacrifices ")
             .replaceAll("(Y|y)ou don't\\b", "PN doesn't")
             .replaceAll("(Y|y)ou do\\b", "PN does")
+            .replaceAll("(Y|y)ou win\\b", "PN wins")
+            .replaceAll("(Y|y)ou have ", "PN has ")
             .replaceAll("(Y|y)ou gain ", "PN gains ")
             .replaceAll("(Y|y)ou lose ", "PN loses ")
             .replaceAll("(Y|y)ou control\\b", "PN controls")
