@@ -57,7 +57,7 @@ public final class UrlHelper {
      * Quickly checks to see whether URL is reachable.
      */
     public static boolean isUrlValid(final URL url) {
-    	final int timeout= 2000; // time, in milliseconds, used for open a  link  referenced by this URLConnection. 
+        final int timeout= 2000; // time, in milliseconds, used for open a  link  referenced by this URLConnection. 
 
         if (url == null)
             return false;
