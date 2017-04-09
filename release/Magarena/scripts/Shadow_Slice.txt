@@ -4,6 +4,6 @@ value=2.472
 rarity=C
 type=Sorcery
 cost={4}{B}
-effect=Target opponent loses 3 life.~Cipher
+effect=Target opponent loses 3 life.~Cipher.
 timing=main
 oracle=Target opponent loses 3 life.\nCipher

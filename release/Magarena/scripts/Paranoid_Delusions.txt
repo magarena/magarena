@@ -4,6 +4,6 @@ value=2.865
 rarity=C
 type=Sorcery
 cost={U}{B}
-effect=Target player puts the top three cards of his or her library into his or her graveyard.~Cipher
+effect=Target player puts the top three cards of his or her library into his or her graveyard.~Cipher.
 timing=main
 oracle=Target player puts the top three cards of his or her library into his or her graveyard.\nCipher

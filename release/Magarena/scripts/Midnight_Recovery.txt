@@ -4,6 +4,6 @@ value=2.739
 rarity=C
 type=Sorcery
 cost={3}{B}
-effect=Return target creature card from your graveyard to your hand.~Cipher
+effect=Return target creature card from your graveyard to your hand.~Cipher.
 timing=main
 oracle=Return target creature card from your graveyard to your hand.\nCipher

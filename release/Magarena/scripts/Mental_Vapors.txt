@@ -4,6 +4,6 @@ value=2.427
 rarity=U
 type=Sorcery
 cost={3}{B}
-effect=Target player discards a card.~Cipher
+effect=Target player discards a card.~Cipher.
 timing=main
 oracle=Target player discards a card.\nCipher

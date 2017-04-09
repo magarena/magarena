@@ -4,6 +4,6 @@ value=2.585
 rarity=C
 type=Sorcery
 cost={3}{U}
-effect=Draw a card.~Cipher
+effect=Draw a card.~Cipher.
 timing=main
 oracle=Draw a card.\nCipher
