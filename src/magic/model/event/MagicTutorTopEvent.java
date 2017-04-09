@@ -23,17 +23,22 @@ public class MagicTutorTopEvent {
                     game.doAction(new RevealAction(event.getRefCardList()));
                 }
                 event.processChosenCards(game, (final MagicCard chosen) -> {
-                    for (final MagicCard card : event.getRefCardList()) {
-                        if (card == chosen && reveal == 1) {
-                            game.doAction(new RevealAction(card));
-                        }
-                        game.doAction(new ShiftCardAction(
-                            card,
-                            MagicLocationType.OwnersLibrary,
-                            card == chosen ? MagicLocationType.OwnersHand : rest
-                        ));
+                    if (reveal == 1) {
+                        game.doAction(new RevealAction(chosen));
                     }
+                    game.doAction(new ShiftCardAction(
+                        chosen,
+                        MagicLocationType.OwnersLibrary,
+                        MagicLocationType.OwnersHand
+                    ));
                 });
+                for (final MagicCard card : event.getRefCardList()) {
+                    game.doAction(new ShiftCardAction(
+                        card,
+                        MagicLocationType.OwnersLibrary,
+                        rest
+                    ));
+                }
             }
         };
     }
