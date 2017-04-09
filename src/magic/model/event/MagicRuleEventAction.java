@@ -3034,7 +3034,7 @@ public enum MagicRuleEventAction {
             .replaceAll("PN's hand ", "his or her hand ")
             .replaceAll("PN searches ", "search ")
             .replaceAll("PN shuffles ", "shuffle ")
-            .replaceAll("PN draws", "draw ")
+            .replaceAll("PN draws ", "draw ")
             .replaceAll("(D|d)raws ", "$1raw ")
             .replaceAll("(S|s)acrifices ", "$1acrifice ")
             .replaceAll("(G|g)ains ", "$1ain ")
