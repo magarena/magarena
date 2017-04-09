@@ -3015,7 +3015,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou draw ", "PN draws ")
             .replaceAll("(D|d)raw ", "PN draws ")
             .replaceAll("(Y|y)ou put ", "PN puts ")
-            .replaceAll("(P|p)ut ", "PN puts ")
+            .replaceAll("(?<!may )(P|p)ut ", "PN puts ")
             .replaceAll("(C|c)reate ", "PN creates ")
             .replaceAll("(S|s)acrifice ", "PN sacrifices ")
             .replaceAll("(Y|y)ou don't ", "PN doesn't ")
