@@ -3009,7 +3009,7 @@ public enum MagicRuleEventAction {
         final String withIndicator = addChoiceIndicator(choice, text);
         return withIndicator
             .replaceAll("discard ", "discards ")
-            .replaceAll("reveal ", "reveals ")
+            .replaceAll("(?<!may )reveal ", "reveals ")
             .replaceAll("(S|s)earch your ", "PN searches his or her ")
             .replaceAll("(S|s)huffle your ", "PN shuffles his or her ")
             .replaceAll("(Y|y)ou draw ", "PN draws ")
