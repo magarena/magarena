@@ -3049,7 +3049,7 @@ public enum MagicRuleEventAction {
     public static String addChoiceIndicator(final MagicChoice choice, final String text) {
         final MagicTargetChoice tchoice = choice.getTargetChoice();
         if (tchoice.isValid()) {
-            final Pattern p = Pattern.compile(Pattern.quote(tchoice.getTargetDescription()), Pattern.CASE_INSENSITIVE);
+            final Pattern p = Pattern.compile(Pattern.quote(tchoice.getTargetDescription()) + "('s)?", Pattern.CASE_INSENSITIVE);
             final Matcher m = p.matcher(text);
             return m.replaceFirst("$0\\$");
         } else if (choice.isValid()) {
