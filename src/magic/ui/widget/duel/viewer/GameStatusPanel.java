@@ -39,7 +39,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
     private void refreshLayout() {
         removeAll();
         setLayout(migLayout);
-        add(isNewTurnNotification ? newTurnPanel : turnStatusPanel, "w 100%, h 100%");
+        add(isNewTurnNotification ? newTurnPanel : turnStatusPanel, "w 100%, h 58!");
         add(userActionPanel, "w 100%, h 100%");
         revalidate();
         repaint();

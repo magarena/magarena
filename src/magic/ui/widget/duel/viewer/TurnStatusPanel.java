@@ -33,7 +33,7 @@ public class TurnStatusPanel extends JPanel {
         miglayout.setColumnConstraints("fill");
         removeAll();
         add(turnTitlePanel);
-        add(phaseStepViewer, "aligny bottom, pushy");
+        add(phaseStepViewer, "aligny bottom, pushy, gapbottom 4");
     }
 
     public void refresh(final GameViewerInfo gameInfo) {
