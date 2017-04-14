@@ -37,6 +37,7 @@ public enum MagicSubType {
 
     //enchantment subtypes
     Aura,
+    Cartouche,
     Curse,
     Shrine,
 
