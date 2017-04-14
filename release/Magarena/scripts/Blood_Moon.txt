@@ -4,6 +4,6 @@ value=4.483
 rarity=R
 type=Enchantment
 cost={2}{R}
-timing=main
+timing=enchantment
 requires_groovy_code
 oracle=Nonbasic lands are Mountains.

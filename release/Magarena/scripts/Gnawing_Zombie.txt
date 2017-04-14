@@ -1,7 +1,7 @@
 name=Gnawing Zombie
 image=http://magiccards.info/scans/en/m14/99.jpg
 value=3.293
-rarity=U
+rarity=C
 type=Creature
 subtype=Zombie
 cost={1}{B}
