@@ -116,8 +116,8 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         if (choice1.isValid() && choice2.isValid()) {
             throw new RuntimeException("effect cannot have two valid choices: \"" + rule + "\"");
         }
-        final String desc1 = MagicRuleEventAction.personalize(choice1, text1);
-        final String desc2 = MagicRuleEventAction.personalize(choice2, text2);
+        final String desc1 = MagicRuleEventAction.personalizeWithChoice(choice1, text1);
+        final String desc2 = MagicRuleEventAction.personalizeWithChoice(choice2, text2);
 
         return new MagicSpellCardEvent() {
             @Override
