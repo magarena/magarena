@@ -41,6 +41,7 @@ Channeler Initiate
 Colossapede
 Combat Celebrant
 Commit
+Companion of the Trials
 Compelling Argument
 Comply
 Compulsory Rest
@@ -58,6 +59,7 @@ Decision Paralysis
 Deem Worthy
 Defiant Greatmaw
 Desert Cerodon
+Desiccated Naga
 Destined
 Devoted Crop-Mate
 Dispossess
@@ -91,16 +93,20 @@ Fling
 Floodwaters
 Forest
 Forsake the Worldly
+Foul Orchard
 Galestrike
 Gate to the Afterlife
 Giant Spider
 Gideon of the Trials
 Gideon's Intervention
+Gideon's Resolve
+Gideon, Martial Paragon
 Gift of Paradise
 Glorious End
 Glory-Bound Initiate
 Glorybringer
 Glyph Keeper
+Graceful Cat
 Grasping Dunes
 Gravedigger
 Greater Sandwurm
@@ -139,7 +145,9 @@ Labyrinth Guardian
 Lay Bare the Heart
 Lay Claim
 Lead
+Liliana's Influence
 Liliana's Mastery
+Liliana, Death Wielder
 Liliana, Death's Majesty
 Limits of Solidarity
 Lord of the Accursed
@@ -226,6 +234,7 @@ Spring
 Start
 Stinging Shot
 Stir the Sands
+Stone Quarry
 Sunscorched Desert
 Supernatural Stamina
 Supply Caravan
@@ -234,6 +243,7 @@ Sweltering Suns
 Synchronized Strike
 Tah-Crop Elite
 Tah-Crop Skirmisher
+Tattered Mummy
 Temmet, Vizier of Naktamun
 Those Who Serve
 Thresher Lizard
