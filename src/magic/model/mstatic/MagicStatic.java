@@ -411,6 +411,13 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
     };
 
+    public static MagicStatic IsWhite = new MagicStatic(MagicLayer.Color) {
+        @Override
+        public int getColorFlags(final MagicPermanent permanent, final int flags) {
+            return MagicColor.White.getMask();
+        }
+    };
+
     public static MagicStatic AddBlack = new MagicStatic(MagicLayer.Color) {
         @Override
         public int getColorFlags(final MagicPermanent permanent,final int flags) {

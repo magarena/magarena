@@ -389,6 +389,12 @@ public enum MagicAbility {
             card.add(new MagicFlashbackActivation(cardDef, matchedCostEvents));
         }
     },
+    Embalm("embalm " + ARG.MANACOST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(new MagicEmbalmActivation(manaCost));
+        }
+    },
     Scavenge("scavenge " + ARG.MANACOST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
