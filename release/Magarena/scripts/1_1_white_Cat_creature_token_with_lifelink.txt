@@ -1,0 +1,10 @@
+name=1/1 white Cat creature token with lifelink
+token=Cat
+image=http://media.wizards.com/2017/dw466ytu5_akh/en_sz4TjDakcm.png
+value=1
+type=Creature
+subtype=Cat
+color=w
+ability=Lifelink
+pt=1/1
+oracle=Lifelink
