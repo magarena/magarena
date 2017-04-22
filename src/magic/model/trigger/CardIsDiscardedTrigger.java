@@ -45,4 +45,18 @@ public abstract class CardIsDiscardedTrigger extends OtherPutIntoGraveyardTrigge
             }
         };
     }
+
+    public static CardIsDiscardedTrigger you(final MagicSourceEvent sourceEvent) {
+        return new CardIsDiscardedTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
+                return super.accept(permanent, act) && permanent.isFriend(act.card);
+            }
+
+            @Override
+            public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
+                return sourceEvent.getTriggerEvent(source, card.getOwner());
+            }
+        };
+    }
 }

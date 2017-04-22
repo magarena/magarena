@@ -1224,6 +1224,13 @@ public enum MagicAbility {
             ));
         }
     },
+    WheneverYouCycleOrDiscard("Whenever you cycle or discard a(nother)? card, " + ARG.EFFECT, 0) {
+      protected  void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+          card.add(CardIsDiscardedTrigger.you(
+              MagicRuleEventAction.create(ARG.effect(arg))
+          ));
+      }
+    },
     WheneverPlayerDiscard("Whenever a player discards a card, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(CardIsDiscardedTrigger.player(
