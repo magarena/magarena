@@ -1,0 +1,12 @@
+name=Decimator Beetle
+image=http://magiccards.info/scans/en/akh/197.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect
+cost={3}{B}{G}
+pt=4/5
+ability=When SN enters the battlefield, put a -1/-1 counter on target creature you control.;\
+        Whenever SN attacks, remove a -1/-1 counter from target creature you control and put a -1/-1 counter on up to one target creature defending player controls.
+timing=main
+oracle=When Decimator Beetle enters the battlefield, put a -1/-1 counter on target creature you control.\nWhenever Decimator Beetle attacks, remove a -1/-1 counter from target creature you control and put a -1/-1 counter on up to one target creature defending player controls.

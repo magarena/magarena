@@ -1,0 +1,11 @@
+name=Watchful Naga
+image=http://magiccards.info/scans/en/akh/193.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Naga,Wizard
+cost={2}{G}
+pt=2/2
+ability=You may exert SN as it attacks. When you do, draw a card.
+timing=main
+oracle=You may exert Watchful Naga as it attacks. When you do, draw a card.

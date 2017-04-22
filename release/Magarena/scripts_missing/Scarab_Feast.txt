@@ -1,0 +1,10 @@
+name=Scarab Feast
+image=http://magiccards.info/scans/en/akh/106.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+ability=Cycling {B}
+effect=Exile up to three target cards from a single graveyard.
+timing=removal
+oracle=Exile up to three target cards from a single graveyard.\nCycling {B}

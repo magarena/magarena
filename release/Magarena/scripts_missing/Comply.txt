@@ -1,0 +1,11 @@
+name=Comply
+image=http://magiccards.info/scans/en/akh/221b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={W}
+effect=Aftermath~Choose a card name. Until your next turn, your opponents can't cast spells with the chosen name.
+split=Failure
+timing=main
+second_half
+oracle=Aftermath\nChoose a card name. Until your next turn, your opponents can't cast spells with the chosen name.

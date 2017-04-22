@@ -1,0 +1,12 @@
+name=Trueheart Duelist
+image=http://magiccards.info/scans/en/akh/35.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{W}
+pt=2/2
+ability=SN can block an additional creature each combat.;\
+        Embalm {2}{W}
+timing=main
+oracle=Trueheart Duelist can block an additional creature each combat.\nEmbalm {2}{W}

@@ -1,0 +1,11 @@
+name=Weaver of Currents
+image=http://magiccards.info/scans/en/akh/209.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Naga,Druid
+cost={1}{G}{U}
+pt=2/2
+ability={T}: Add {C}{C} to your mana pool.
+timing=main
+oracle={T}: Add {C}{C} to your mana pool.

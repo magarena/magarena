@@ -1,0 +1,10 @@
+name=Embalmer's Tools
+image=http://magiccards.info/scans/en/akh/227.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability=Activated abilities of creature cards in your graveyard cost {1} less to activate.;\
+        Tap an untapped Zombie you control: Target player puts the top card of his or her library into his or her graveyard.
+timing=artifact
+oracle=Activated abilities of creature cards in your graveyard cost {1} less to activate.\nTap an untapped Zombie you control: Target player puts the top card of his or her library into his or her graveyard.

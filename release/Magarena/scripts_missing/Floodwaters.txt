@@ -1,0 +1,10 @@
+name=Floodwaters
+image=http://magiccards.info/scans/en/akh/53.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{U}{U}
+ability=Cycling {2}
+effect=Return up to two target creatures to their owners' hands.
+timing=main
+oracle=Return up to two target creatures to their owners' hands.\nCycling {2}

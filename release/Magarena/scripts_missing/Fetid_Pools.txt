@@ -1,0 +1,10 @@
+name=Fetid Pools
+image=http://magiccards.info/scans/en/akh/243.jpg
+value=2.500
+rarity=R
+type=Land
+subtype=Island,Swamp
+ability=SN enters the battlefield tapped.;\
+        Cycling {2}
+timing=land
+oracle=Fetid Pools enters the battlefield tapped.\nCycling {2}

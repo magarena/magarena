@@ -1,0 +1,11 @@
+name=Hekma Sentinels
+image=http://magiccards.info/scans/en/akh/56.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{U}
+pt=2/3
+ability=Whenever you cycle or discard a card, SN gets +1/+1 until end of turn.
+timing=main
+oracle=Whenever you cycle or discard a card, Hekma Sentinels gets +1/+1 until end of turn.

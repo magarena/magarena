@@ -1,0 +1,11 @@
+name=Desert Cerodon
+image=http://magiccards.info/scans/en/akh/128.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{R}
+pt=6/4
+ability=Cycling {R}
+timing=main
+oracle=Cycling {R}

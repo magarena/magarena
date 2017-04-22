@@ -1,0 +1,10 @@
+name=Oracle's Vault
+image=http://magiccards.info/scans/en/akh/234.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability={2}, {T}: Exile the top card of your library. Until end of turn, you may play that card. Put a brick counter on SN.;\
+        {T}: Exile the top card of your library. Until end of turn, you may play that card without paying its mana cost. Activate this ability only if there are three or more brick counters on SN.
+timing=artifact
+oracle={2}, {T}: Exile the top card of your library. Until end of turn, you may play that card. Put a brick counter on Oracle's Vault.\n{T}: Exile the top card of your library. Until end of turn, you may play that card without paying its mana cost. Activate this ability only if there are three or more brick counters on Oracle's Vault.

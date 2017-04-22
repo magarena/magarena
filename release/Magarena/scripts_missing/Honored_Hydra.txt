@@ -1,0 +1,12 @@
+name=Honored Hydra
+image=http://magiccards.info/scans/en/akh/172.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Snake,Hydra
+cost={5}{G}
+pt=6/6
+ability=Trample;\
+        Embalm {3}{G}
+timing=main
+oracle=Trample\nEmbalm {3}{G}

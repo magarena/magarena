@@ -1,0 +1,9 @@
+name=Time to Reflect
+image=http://magiccards.info/scans/en/akh/33.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={W}
+effect=Exile target creature that blocked or was blocked by a Zombie this turn.
+timing=removal
+oracle=Exile target creature that blocked or was blocked by a Zombie this turn.

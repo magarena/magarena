@@ -1,0 +1,12 @@
+name=Cruel Reality
+image=http://magiccards.info/scans/en/akh/84.jpg
+value=2.500
+rarity=M
+type=Enchantment
+subtype=Aura,Curse
+cost={5}{B}{B}
+ability=Enchant player;\
+        At the beginning of enchanted player's upkeep, that player sacrifices a creature or planeswalker. If the player can't, he or she loses 5 life.
+timing=aura
+enchant=default,creature
+oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player sacrifices a creature or planeswalker. If the player can't, he or she loses 5 life.

@@ -1,0 +1,9 @@
+name=Hapatra's Mark
+image=http://magiccards.info/scans/en/akh/169.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={G}
+effect=Target creature you control gains hexproof until end of turn. Remove all -1/-1 counters from it.
+timing=removal
+oracle=Target creature you control gains hexproof until end of turn. Remove all -1/-1 counters from it.

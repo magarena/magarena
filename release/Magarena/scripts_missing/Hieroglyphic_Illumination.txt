@@ -1,0 +1,10 @@
+name=Hieroglyphic Illumination
+image=http://magiccards.info/scans/en/akh/57.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+ability=Cycling {U}
+effect=Draw two cards.
+timing=removal
+oracle=Draw two cards.\nCycling {U}

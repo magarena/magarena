@@ -1,0 +1,11 @@
+name=Memory
+image=http://magiccards.info/scans/en/akh/211b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{U}{U}
+effect=Aftermath~Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards.
+split=Commit
+timing=main
+second_half
+oracle=Aftermath\nEach player shuffles his or her hand and graveyard into his or her library, then draws seven cards.

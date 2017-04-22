@@ -1,0 +1,13 @@
+name=Cartouche of Solidarity
+image=http://magiccards.info/scans/en/akh/7.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura,Cartouche
+cost={W}
+ability=Enchant creature you control;\
+        When SN enters the battlefield, create a 1/1 white Warrior creature token with vigilance.;\
+        Enchanted creature gets +1/+1 and has first strike.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature you control\nWhen Cartouche of Solidarity enters the battlefield, create a 1/1 white Warrior creature token with vigilance.\nEnchanted creature gets +1/+1 and has first strike.

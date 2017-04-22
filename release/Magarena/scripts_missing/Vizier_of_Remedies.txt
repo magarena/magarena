@@ -1,0 +1,11 @@
+name=Vizier of Remedies
+image=http://magiccards.info/scans/en/akh/38.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=2/1
+ability=If one or more -1/-1 counters would be put on a creature you control, that many -1/-1 counters minus one are put on it instead.
+timing=main
+oracle=If one or more -1/-1 counters would be put on a creature you control, that many -1/-1 counters minus one are put on it instead.

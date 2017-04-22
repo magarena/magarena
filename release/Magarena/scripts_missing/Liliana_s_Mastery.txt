@@ -1,0 +1,10 @@
+name=Liliana's Mastery
+image=http://magiccards.info/scans/en/akh/98.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{B}{B}
+ability=Zombies you control get +1/+1.;\
+        When SN enters the battlefield, create two 2/2 black Zombie creature tokens.
+timing=enchantment
+oracle=Zombies you control get +1/+1.\nWhen Liliana's Mastery enters the battlefield, create two 2/2 black Zombie creature tokens.

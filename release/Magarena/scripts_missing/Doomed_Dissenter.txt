@@ -1,0 +1,11 @@
+name=Doomed Dissenter
+image=http://magiccards.info/scans/en/akh/87.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={1}{B}
+pt=1/1
+ability=When SN dies, create a 2/2 black Zombie creature token.
+timing=main
+oracle=When Doomed Dissenter dies, create a 2/2 black Zombie creature token.

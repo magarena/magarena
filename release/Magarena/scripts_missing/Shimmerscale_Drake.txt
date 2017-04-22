@@ -1,0 +1,12 @@
+name=Shimmerscale Drake
+image=http://magiccards.info/scans/en/akh/70.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Drake
+cost={4}{U}
+pt=3/4
+ability=Flying;\
+        Cycling {2}
+timing=main
+oracle=Flying\nCycling {2}

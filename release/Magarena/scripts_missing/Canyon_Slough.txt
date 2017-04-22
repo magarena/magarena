@@ -1,0 +1,10 @@
+name=Canyon Slough
+image=http://magiccards.info/scans/en/akh/239.jpg
+value=2.500
+rarity=R
+type=Land
+subtype=Swamp,Mountain
+ability=SN enters the battlefield tapped.;\
+        Cycling {2}
+timing=land
+oracle=Canyon Slough enters the battlefield tapped.\nCycling {2}

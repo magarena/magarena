@@ -1,0 +1,13 @@
+name=Curator of Mysteries
+image=http://magiccards.info/scans/en/akh/49.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={2}{U}{U}
+pt=4/4
+ability=Flying;\
+        Whenever you cycle or discard another card, scry 1.;\
+        Cycling {U}
+timing=main
+oracle=Flying\nWhenever you cycle or discard another card, scry 1.\nCycling {U}

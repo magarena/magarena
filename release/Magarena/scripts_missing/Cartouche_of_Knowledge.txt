@@ -1,0 +1,13 @@
+name=Cartouche of Knowledge
+image=http://magiccards.info/scans/en/akh/45.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura,Cartouche
+cost={1}{U}
+ability=Enchant creature you control;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted creature gets +1/+1 and has flying.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature you control\nWhen Cartouche of Knowledge enters the battlefield, draw a card.\nEnchanted creature gets +1/+1 and has flying.

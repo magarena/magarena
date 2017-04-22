@@ -1,0 +1,11 @@
+name=Scaled Behemoth
+image=http://magiccards.info/scans/en/akh/184.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Crocodile
+cost={4}{G}{G}
+pt=6/7
+ability=Hexproof
+timing=main
+oracle=Hexproof

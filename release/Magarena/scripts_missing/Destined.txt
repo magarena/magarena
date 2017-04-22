@@ -1,0 +1,10 @@
+name=Destined
+image=http://magiccards.info/scans/en/akh/217a.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{B}
+effect=Target creature gets +1/+0 and gains indestructible until end of turn.
+split=Lead
+timing=removal
+oracle=Target creature gets +1/+0 and gains indestructible until end of turn.

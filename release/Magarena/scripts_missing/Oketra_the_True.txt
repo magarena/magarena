@@ -1,0 +1,13 @@
+name=Oketra the True
+image=http://magiccards.info/scans/en/akh/21.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=God
+cost={3}{W}
+pt=3/6
+ability=Double strike, indestructible;\
+        SN can't attack or block unless you control at least three other creatures.;\
+        {3}{W}: Create a 1/1 white Warrior creature token with vigilance.
+timing=main
+oracle=Double strike, indestructible\nOketra the True can't attack or block unless you control at least three other creatures.\n{3}{W}: Create a 1/1 white Warrior creature token with vigilance.

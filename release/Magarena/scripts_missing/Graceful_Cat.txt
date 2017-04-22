@@ -1,0 +1,11 @@
+name=Graceful Cat
+image=http://magiccards.info/scans/en/akh/273.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={2}{W}
+pt=2/2
+ability=Whenever SN attacks, it gets +1/+1 until end of turn.
+timing=main
+oracle=Whenever Graceful Cat attacks, it gets +1/+1 until end of turn.

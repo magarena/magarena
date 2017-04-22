@@ -1,0 +1,11 @@
+name=Naga Oracle
+image=http://magiccards.info/scans/en/akh/62.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Cleric
+cost={3}{U}
+pt=2/4
+ability=When SN enters the battlefield, look at the top three cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.
+timing=main
+oracle=When Naga Oracle enters the battlefield, look at the top three cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.

@@ -1,0 +1,11 @@
+name=Watchers of the Dead
+image=http://magiccards.info/scans/en/akh/238.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Cat
+cost={2}
+pt=2/2
+ability=Exile SN: Each opponent chooses two cards in his or her graveyard and exiles the rest.
+timing=main
+oracle=Exile Watchers of the Dead: Each opponent chooses two cards in his or her graveyard and exiles the rest.

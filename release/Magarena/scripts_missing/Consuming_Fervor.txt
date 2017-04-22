@@ -1,0 +1,12 @@
+name=Consuming Fervor
+image=http://magiccards.info/scans/en/akh/126.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3 and has "At the beginning of your upkeep, put a -1/-1 counter on this creature."
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +3/+3 and has "At the beginning of your upkeep, put a -1/-1 counter on this creature."

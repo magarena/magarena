@@ -1,0 +1,13 @@
+name=Cartouche of Zeal
+image=http://magiccards.info/scans/en/akh/124.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura,Cartouche
+cost={R}
+ability=Enchant creature you control;\
+        When SN enters the battlefield, target creature can't block this turn.;\
+        Enchanted creature gets +1/+1 and has haste.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature you control\nWhen Cartouche of Zeal enters the battlefield, target creature can't block this turn.\nEnchanted creature gets +1/+1 and has haste.

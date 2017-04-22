@@ -1,0 +1,12 @@
+name=Angler Drake
+image=http://magiccards.info/scans/en/akh/41.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Drake
+cost={4}{U}{U}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, you may return target creature to its owner's hand.
+timing=main
+oracle=Flying\nWhen Angler Drake enters the battlefield, you may return target creature to its owner's hand.

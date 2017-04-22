@@ -1,0 +1,10 @@
+name=Onward
+image=http://magiccards.info/scans/en/akh/218a.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=Target creature gets +X/+0 until end of turn, where X is its power.
+split=Victory
+timing=removal
+oracle=Target creature gets +X/+0 until end of turn, where X is its power.

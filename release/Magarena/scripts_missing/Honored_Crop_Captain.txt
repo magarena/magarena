@@ -1,0 +1,11 @@
+name=Honored Crop-Captain
+image=http://magiccards.info/scans/en/akh/200.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={R}{W}
+pt=3/2
+ability=Whenever SN attacks, other attacking creatures get +1/+0 until end of turn.
+timing=main
+oracle=Whenever Honored Crop-Captain attacks, other attacking creatures get +1/+0 until end of turn.

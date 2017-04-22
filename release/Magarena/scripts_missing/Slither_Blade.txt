@@ -1,0 +1,11 @@
+name=Slither Blade
+image=http://magiccards.info/scans/en/akh/71.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Rogue
+cost={U}
+pt=1/2
+ability=SN can't be blocked.
+timing=main
+oracle=Slither Blade can't be blocked.

@@ -1,0 +1,9 @@
+name=Electrify
+image=http://magiccards.info/scans/en/akh/129.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+effect=SN deals 4 damage to target creature.
+timing=removal
+oracle=Electrify deals 4 damage to target creature.

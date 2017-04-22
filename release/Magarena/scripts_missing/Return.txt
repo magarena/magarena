@@ -1,0 +1,11 @@
+name=Return
+image=http://magiccards.info/scans/en/akh/212b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}
+effect=Aftermath~Exile target card from a graveyard. Create a 2/2 black Zombie creature token.
+split=Never
+timing=main
+second_half
+oracle=Aftermath\nExile target card from a graveyard. Create a 2/2 black Zombie creature token.

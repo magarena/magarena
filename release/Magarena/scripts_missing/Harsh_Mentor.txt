@@ -1,0 +1,11 @@
+name=Harsh Mentor
+image=http://magiccards.info/scans/en/akh/135.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={1}{R}
+pt=2/2
+ability=Whenever an opponent activates an ability of an artifact, creature, or land on the battlefield, if it isn't a mana ability, SN deals 2 damage to that player.
+timing=main
+oracle=Whenever an opponent activates an ability of an artifact, creature, or land on the battlefield, if it isn't a mana ability, Harsh Mentor deals 2 damage to that player.

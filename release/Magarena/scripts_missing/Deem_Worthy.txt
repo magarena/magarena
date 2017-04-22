@@ -1,0 +1,11 @@
+name=Deem Worthy
+image=http://magiccards.info/scans/en/akh/127.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{R}
+ability=Cycling {3}{R};\
+        When you cycle SN, you may have it deal 2 damage to target creature.
+effect=SN deals 7 damage to target creature.
+timing=removal
+oracle=Deem Worthy deals 7 damage to target creature.\nCycling {3}{R}\nWhen you cycle Deem Worthy, you may have it deal 2 damage to target creature.

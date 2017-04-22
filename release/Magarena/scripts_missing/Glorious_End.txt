@@ -1,0 +1,9 @@
+name=Glorious End
+image=http://magiccards.info/scans/en/akh/133.jpg
+value=2.500
+rarity=M
+type=Instant
+cost={2}{R}
+effect=End the turn.~At the beginning of your next end step, you lose the game.
+timing=removal
+oracle=End the turn.\nAt the beginning of your next end step, you lose the game.

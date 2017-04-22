@@ -1,0 +1,11 @@
+name=Festering Mummy
+image=http://magiccards.info/scans/en/akh/91.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={B}
+pt=1/1
+ability=When SN dies, you may put a -1/-1 counter on target creature.
+timing=main
+oracle=When Festering Mummy dies, you may put a -1/-1 counter on target creature.

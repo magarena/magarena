@@ -1,0 +1,10 @@
+name=Haze of Pollen
+image=http://magiccards.info/scans/en/akh/171.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+ability=Cycling {3}
+effect=Prevent all combat damage that would be dealt this turn.
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn.\nCycling {3}

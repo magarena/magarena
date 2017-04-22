@@ -1,0 +1,10 @@
+name=Kefnet's Monument
+image=http://magiccards.info/scans/en/akh/231.jpg
+value=2.500
+rarity=U
+type=Legendary,Artifact
+cost={3}
+ability=Blue creature spells you cast cost {1} less to cast.;\
+        Whenever you cast a creature spell, target creature an opponent controls doesn't untap during its controller's next untap step.
+timing=artifact
+oracle=Blue creature spells you cast cost {1} less to cast.\nWhenever you cast a creature spell, target creature an opponent controls doesn't untap during its controller's next untap step.

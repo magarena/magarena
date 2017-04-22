@@ -1,0 +1,10 @@
+name=Sweltering Suns
+image=http://magiccards.info/scans/en/akh/149.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{R}{R}
+ability=Cycling {3}
+effect=SN deals 3 damage to each creature.
+timing=main
+oracle=Sweltering Suns deals 3 damage to each creature.\nCycling {3}

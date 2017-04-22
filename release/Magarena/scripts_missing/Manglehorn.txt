@@ -1,0 +1,12 @@
+name=Manglehorn
+image=http://magiccards.info/scans/en/akh/175.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={2}{G}
+pt=2/2
+ability=When SN enters the battlefield, you may destroy target artifact.;\
+        Artifacts your opponents control enter the battlefield tapped.
+timing=main
+oracle=When Manglehorn enters the battlefield, you may destroy target artifact.\nArtifacts your opponents control enter the battlefield tapped.

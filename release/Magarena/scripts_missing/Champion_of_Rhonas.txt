@@ -1,0 +1,11 @@
+name=Champion of Rhonas
+image=http://magiccards.info/scans/en/akh/159.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Jackal,Warrior
+cost={3}{G}
+pt=3/3
+ability=You may exert SN as it attacks. When you do, you may put a creature card from your hand onto the battlefield.
+timing=main
+oracle=You may exert Champion of Rhonas as it attacks. When you do, you may put a creature card from your hand onto the battlefield.

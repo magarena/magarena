@@ -1,0 +1,12 @@
+name=Regal Caracal
+image=http://magiccards.info/scans/en/akh/24.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat
+cost={3}{W}{W}
+pt=3/3
+ability=Other Cats you control get +1/+1 and have lifelink.;\
+        When SN enters the battlefield, create two 1/1 white Cat creature tokens with lifelink.
+timing=main
+oracle=Other Cats you control get +1/+1 and have lifelink.\nWhen Regal Caracal enters the battlefield, create two 1/1 white Cat creature tokens with lifelink.

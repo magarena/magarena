@@ -1,0 +1,10 @@
+name=Luxa River Shrine
+image=http://magiccards.info/scans/en/akh/232.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={1}, {T}: You gain 1 life. Put a brick counter on SN.;\
+        {T}: You gain 2 life. Activate this ability only if there are three or more brick counters on SN.
+timing=artifact
+oracle={1}, {T}: You gain 1 life. Put a brick counter on Luxa River Shrine.\n{T}: You gain 2 life. Activate this ability only if there are three or more brick counters on Luxa River Shrine.

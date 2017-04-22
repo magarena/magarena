@@ -1,0 +1,12 @@
+name=Horror of the Broken Lands
+image=http://magiccards.info/scans/en/akh/95.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Horror
+cost={4}{B}
+pt=4/4
+ability=Whenever you cycle or discard another card, SN gets +2/+1 until end of turn.;\
+        Cycling {B}
+timing=main
+oracle=Whenever you cycle or discard another card, Horror of the Broken Lands gets +2/+1 until end of turn.\nCycling {B}

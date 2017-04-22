@@ -1,0 +1,10 @@
+name=Scattered Groves
+image=http://magiccards.info/scans/en/akh/247.jpg
+value=2.500
+rarity=R
+type=Land
+subtype=Forest,Plains
+ability=SN enters the battlefield tapped.;\
+        Cycling {2}
+timing=land
+oracle=Scattered Groves enters the battlefield tapped.\nCycling {2}

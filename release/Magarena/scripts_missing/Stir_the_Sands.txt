@@ -1,0 +1,11 @@
+name=Stir the Sands
+image=http://magiccards.info/scans/en/akh/110.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{B}{B}
+ability=Cycling {3}{B};\
+        When you cycle SN, create a 2/2 black Zombie creature token.
+effect=Create three 2/2 black Zombie creature tokens.
+timing=main
+oracle=Create three 2/2 black Zombie creature tokens.\nCycling {3}{B}\nWhen you cycle Stir the Sands, create a 2/2 black Zombie creature token.

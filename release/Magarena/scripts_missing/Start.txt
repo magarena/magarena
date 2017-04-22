@@ -1,0 +1,10 @@
+name=Start
+image=http://magiccards.info/scans/en/akh/215a.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{W}
+effect=Create two 1/1 white Warrior creature tokens with vigilance.
+split=Finish
+timing=removal
+oracle=Create two 1/1 white Warrior creature tokens with vigilance.

@@ -1,0 +1,12 @@
+name=Vizier of Many Faces
+image=http://magiccards.info/scans/en/akh/74.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Shapeshifter,Cleric
+cost={2}{U}{U}
+pt=0/0
+ability=You may have SN enter the battlefield as a copy of any creature on the battlefield, except if SN was embalmed, the token has no mana cost, it's white, and it's a Zombie in addition to its other types.;\
+        Embalm {3}{U}{U}
+timing=main
+oracle=You may have Vizier of Many Faces enter the battlefield as a copy of any creature on the battlefield, except if Vizier of Many Faces was embalmed, the token has no mana cost, it's white, and it's a Zombie in addition to its other types.\nEmbalm {3}{U}{U}

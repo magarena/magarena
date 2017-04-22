@@ -1,0 +1,11 @@
+name=Tah-Crop Skirmisher
+image=http://magiccards.info/scans/en/akh/72.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Warrior
+cost={1}{U}
+pt=2/1
+ability=Embalm {3}{U}
+timing=main
+oracle=Embalm {3}{U}

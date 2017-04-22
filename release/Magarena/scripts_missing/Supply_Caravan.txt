@@ -1,0 +1,11 @@
+name=Supply Caravan
+image=http://magiccards.info/scans/en/akh/30.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Camel
+cost={4}{W}
+pt=3/5
+ability=When SN enters the battlefield, if you control a tapped creature, create a 1/1 white Warrior creature token with vigilance.
+timing=main
+oracle=When Supply Caravan enters the battlefield, if you control a tapped creature, create a 1/1 white Warrior creature token with vigilance.

@@ -1,0 +1,10 @@
+name=Heaven
+image=http://magiccards.info/scans/en/akh/224a.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{G}
+effect=SN deals X damage to each creature with flying.
+split=Earth
+timing=removal
+oracle=Heaven deals X damage to each creature with flying.

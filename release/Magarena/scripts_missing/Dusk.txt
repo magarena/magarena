@@ -1,0 +1,10 @@
+name=Dusk
+image=http://magiccards.info/scans/en/akh/210a.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{W}{W}
+effect=Destroy all creatures with power 3 or greater.
+split=Dawn
+timing=main
+oracle=Destroy all creatures with power 3 or greater.

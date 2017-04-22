@@ -1,0 +1,11 @@
+name=Pitiless Vizier
+image=http://magiccards.info/scans/en/akh/103.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Minotaur,Cleric
+cost={3}{B}
+pt=4/2
+ability=Whenever you cycle or discard a card, SN gains indestructible until end of turn.
+timing=main
+oracle=Whenever you cycle or discard a card, Pitiless Vizier gains indestructible until end of turn.

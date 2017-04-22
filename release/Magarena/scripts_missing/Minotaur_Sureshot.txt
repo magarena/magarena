@@ -1,0 +1,12 @@
+name=Minotaur Sureshot
+image=http://magiccards.info/scans/en/akh/143.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Minotaur,Archer
+cost={2}{R}
+pt=2/3
+ability=Reach;\
+        {1}{R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=Reach\n{1}{R}: Minotaur Sureshot gets +1/+0 until end of turn.

@@ -1,0 +1,12 @@
+name=Enigma Drake
+image=http://magiccards.info/scans/en/akh/198.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Drake
+cost={1}{U}{R}
+pt=*/4
+ability=Flying;\
+        SN's power is equal to the number of instant and sorcery cards in your graveyard.
+timing=main
+oracle=Flying\nEnigma Drake's power is equal to the number of instant and sorcery cards in your graveyard.

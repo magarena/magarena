@@ -1,0 +1,13 @@
+name=Glyph Keeper
+image=http://magiccards.info/scans/en/akh/55.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={3}{U}{U}
+pt=5/3
+ability=Flying;\
+        Whenever SN becomes the target of a spell or ability for the first time each turn, counter that spell or ability.;\
+        Embalm {5}{U}{U}
+timing=main
+oracle=Flying\nWhenever Glyph Keeper becomes the target of a spell or ability for the first time each turn, counter that spell or ability.\nEmbalm {5}{U}{U}

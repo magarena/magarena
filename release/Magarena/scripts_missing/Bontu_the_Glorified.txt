@@ -1,0 +1,13 @@
+name=Bontu the Glorified
+image=http://magiccards.info/scans/en/akh/82.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=God
+cost={2}{B}
+pt=4/6
+ability=Menace, indestructible;\
+        SN can't attack or block unless a creature died under your control this turn.;\
+        {1}{B}, Sacrifice another creature: Scry 1. Each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Menace, indestructible\nBontu the Glorified can't attack or block unless a creature died under your control this turn.\n{1}{B}, Sacrifice another creature: Scry 1. Each opponent loses 1 life and you gain 1 life.

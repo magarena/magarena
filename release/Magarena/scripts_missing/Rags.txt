@@ -1,0 +1,10 @@
+name=Rags
+image=http://magiccards.info/scans/en/akh/222a.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+effect=All creatures get -2/-2 until end of turn.
+split=Riches
+timing=main
+oracle=All creatures get -2/-2 until end of turn.

@@ -1,0 +1,10 @@
+name=Colossapede
+image=http://magiccards.info/scans/en/akh/161.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={4}{G}
+pt=5/5
+timing=main
+oracle=NONE

@@ -1,0 +1,10 @@
+name=Cascading Cataracts
+image=http://magiccards.info/scans/en/akh/240.jpg
+value=2.500
+rarity=R
+type=Land
+ability=Indestructible;\
+        {T}: Add {C} to your mana pool.;\
+        {5}, {T}: Add five mana in any combination of colors to your mana pool.
+timing=land
+oracle=Indestructible\n{T}: Add {C} to your mana pool.\n{5}, {T}: Add five mana in any combination of colors to your mana pool.

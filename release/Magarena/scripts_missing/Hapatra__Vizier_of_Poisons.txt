@@ -1,0 +1,12 @@
+name=Hapatra, Vizier of Poisons
+image=http://magiccards.info/scans/en/akh/199.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={B}{G}
+pt=2/2
+ability=Whenever SN deals combat damage to a player, you may put a -1/-1 counter on target creature.;\
+        Whenever you put one or more -1/-1 counters on a creature, create a 1/1 green Snake creature token with deathtouch.
+timing=main
+oracle=Whenever Hapatra, Vizier of Poisons deals combat damage to a player, you may put a -1/-1 counter on target creature.\nWhenever you put one or more -1/-1 counters on a creature, create a 1/1 green Snake creature token with deathtouch.

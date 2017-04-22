@@ -1,0 +1,12 @@
+name=Soul-Scar Mage
+image=http://magiccards.info/scans/en/akh/148.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={R}
+pt=1/2
+ability=Prowess;\
+        If a source you control would deal noncombat damage to a creature an opponent controls, put that many -1/-1 counters on that creature instead.
+timing=main
+oracle=Prowess\nIf a source you control would deal noncombat damage to a creature an opponent controls, put that many -1/-1 counters on that creature instead.

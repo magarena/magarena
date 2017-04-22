@@ -1,0 +1,10 @@
+name=Trial of Knowledge
+image=http://magiccards.info/scans/en/akh/73.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{U}
+ability=When SN enters the battlefield, draw three cards, then discard a card.;\
+        When a Cartouche enters the battlefield under your control, return SN to its owner's hand.
+timing=enchantment
+oracle=When Trial of Knowledge enters the battlefield, draw three cards, then discard a card.\nWhen a Cartouche enters the battlefield under your control, return Trial of Knowledge to its owner's hand.

@@ -1,0 +1,10 @@
+name=Djeru's Resolve
+image=http://magiccards.info/scans/en/akh/11.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+ability=Cycling {2}
+effect=Untap target creature. Prevent all damage that would be dealt to it this turn.
+timing=removal
+oracle=Untap target creature. Prevent all damage that would be dealt to it this turn.\nCycling {2}

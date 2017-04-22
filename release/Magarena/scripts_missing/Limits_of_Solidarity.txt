@@ -1,0 +1,10 @@
+name=Limits of Solidarity
+image=http://magiccards.info/scans/en/akh/140.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{R}
+ability=Cycling {2}
+effect=Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.
+timing=main
+oracle=Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.\nCycling {2}

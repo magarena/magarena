@@ -1,0 +1,10 @@
+name=New Perspectives
+image=http://magiccards.info/scans/en/akh/63.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={5}{U}
+ability=When SN enters the battlefield, draw three cards.;\
+        As long as you have seven or more cards in hand, you may pay {0} rather than pay cycling costs.
+timing=enchantment
+oracle=When New Perspectives enters the battlefield, draw three cards.\nAs long as you have seven or more cards in hand, you may pay {0} rather than pay cycling costs.

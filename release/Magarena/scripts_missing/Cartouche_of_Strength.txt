@@ -1,0 +1,13 @@
+name=Cartouche of Strength
+image=http://magiccards.info/scans/en/akh/158.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura,Cartouche
+cost={2}{G}
+ability=Enchant creature you control;\
+        When SN enters the battlefield, you may have enchanted creature fight target creature an opponent controls.;\
+        Enchanted creature gets +1/+1 and has trample.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature you control\nWhen Cartouche of Strength enters the battlefield, you may have enchanted creature fight target creature an opponent controls.\nEnchanted creature gets +1/+1 and has trample.

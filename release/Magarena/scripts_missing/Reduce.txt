@@ -1,0 +1,10 @@
+name=Reduce
+image=http://magiccards.info/scans/en/akh/216a.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {3}.
+split=Rubble
+timing=counter
+oracle=Counter target spell unless its controller pays {3}.

@@ -1,0 +1,11 @@
+name=Initiate's Companion
+image=http://magiccards.info/scans/en/akh/174.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={1}{G}
+pt=3/1
+ability=Whenever SN deals combat damage to a player, untap target creature or land.
+timing=main
+oracle=Whenever Initiate's Companion deals combat damage to a player, untap target creature or land.

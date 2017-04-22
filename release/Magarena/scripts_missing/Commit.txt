@@ -1,0 +1,10 @@
+name=Commit
+image=http://magiccards.info/scans/en/akh/211a.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}
+effect=Put target spell or nonland permanent into its owner's library second from the top.
+split=Memory
+timing=removal
+oracle=Put target spell or nonland permanent into its owner's library second from the top.

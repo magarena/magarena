@@ -1,0 +1,12 @@
+name=River Serpent
+image=http://magiccards.info/scans/en/akh/66.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={5}{U}
+pt=5/5
+ability=SN can't attack unless there are five or more cards in your graveyard.;\
+        Cycling {U}
+timing=main
+oracle=River Serpent can't attack unless there are five or more cards in your graveyard.\nCycling {U}

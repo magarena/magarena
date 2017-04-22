@@ -1,0 +1,11 @@
+name=Tattered Mummy
+image=http://magiccards.info/scans/en/akh/278.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Jackal
+cost={1}{B}
+pt=1/2
+ability=When SN dies, each opponent loses 2 life.
+timing=main
+oracle=When Tattered Mummy dies, each opponent loses 2 life.

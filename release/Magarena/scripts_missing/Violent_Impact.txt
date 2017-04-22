@@ -1,0 +1,10 @@
+name=Violent Impact
+image=http://magiccards.info/scans/en/akh/154.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{R}
+ability=Cycling {2}
+effect=Destroy target artifact or land.
+timing=main
+oracle=Destroy target artifact or land.\nCycling {2}

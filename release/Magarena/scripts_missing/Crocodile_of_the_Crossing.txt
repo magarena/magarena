@@ -1,0 +1,12 @@
+name=Crocodile of the Crossing
+image=http://magiccards.info/scans/en/akh/162.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Crocodile
+cost={3}{G}
+pt=5/4
+ability=Haste;\
+        When SN enters the battlefield, put a -1/-1 counter on target creature you control.
+timing=fmain
+oracle=Haste\nWhen Crocodile of the Crossing enters the battlefield, put a -1/-1 counter on target creature you control.

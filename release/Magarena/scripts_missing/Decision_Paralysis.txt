@@ -1,0 +1,9 @@
+name=Decision Paralysis
+image=http://magiccards.info/scans/en/akh/50.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
+timing=removal
+oracle=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.

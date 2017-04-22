@@ -1,0 +1,13 @@
+name=Lay Claim
+image=http://magiccards.info/scans/en/akh/61.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={5}{U}{U}
+ability=Enchant permanent;\
+        You control enchanted permanent.;\
+        Cycling {2}
+timing=aura
+enchant=default,creature
+oracle=Enchant permanent\nYou control enchanted permanent.\nCycling {2}

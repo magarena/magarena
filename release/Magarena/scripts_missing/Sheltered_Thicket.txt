@@ -1,0 +1,10 @@
+name=Sheltered Thicket
+image=http://magiccards.info/scans/en/akh/248.jpg
+value=2.500
+rarity=R
+type=Land
+subtype=Mountain,Forest
+ability=SN enters the battlefield tapped.;\
+        Cycling {2}
+timing=land
+oracle=Sheltered Thicket enters the battlefield tapped.\nCycling {2}

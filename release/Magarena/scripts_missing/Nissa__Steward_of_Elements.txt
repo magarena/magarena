@@ -1,0 +1,13 @@
+name=Nissa, Steward of Elements
+image=http://magiccards.info/scans/en/akh/204.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Nissa
+cost={X}{G}{U}
+loyalty=X
+ability=+2: Scry 2.;\
+        0: Look at the top card of your library. If it's a land card or a creature card with converted mana cost less than or equal to the number of loyalty counters on SN, you may put that card onto the battlefield.;\
+        −6: Untap up to two target lands you control. They become 5/5 Elemental creatures with flying and haste until end of turn. They're still lands.
+timing=main
+oracle=+2: Scry 2.\n0: Look at the top card of your library. If it's a land card or a creature card with converted mana cost less than or equal to the number of loyalty counters on Nissa, Steward of Elements, you may put that card onto the battlefield.\n−6: Untap up to two target lands you control. They become 5/5 Elemental creatures with flying and haste until end of turn. They're still lands.

@@ -1,0 +1,9 @@
+name=Dispossess
+image=http://magiccards.info/scans/en/akh/86.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{B}
+effect=Choose an artifact card name. Search target opponent's graveyard, hand, and library for any number of cards with the chosen name and exile them. Then that player shuffles his or her library.
+timing=main
+oracle=Choose an artifact card name. Search target opponent's graveyard, hand, and library for any number of cards with the chosen name and exile them. Then that player shuffles his or her library.

@@ -1,0 +1,12 @@
+name=Bone Picker
+image=http://magiccards.info/scans/en/akh/81.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird
+cost={3}{B}
+pt=3/2
+ability=SN costs {3} less to cast if a creature died this turn.;\
+        Flying, deathtouch
+timing=main
+oracle=Bone Picker costs {3} less to cast if a creature died this turn.\nFlying, deathtouch

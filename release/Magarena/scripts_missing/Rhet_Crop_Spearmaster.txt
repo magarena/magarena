@@ -1,0 +1,11 @@
+name=Rhet-Crop Spearmaster
+image=http://magiccards.info/scans/en/akh/26.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{W}
+pt=3/1
+ability=You may exert SN as it attacks. When you do, it gets +1/+0 and gains first strike until end of turn.
+timing=main
+oracle=You may exert Rhet-Crop Spearmaster as it attacks. When you do, it gets +1/+0 and gains first strike until end of turn.

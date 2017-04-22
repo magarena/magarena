@@ -1,0 +1,12 @@
+name=Dread Wanderer
+image=http://magiccards.info/scans/en/akh/88.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Jackal
+cost={B}
+pt=2/1
+ability=SN enters the battlefield tapped.;\
+        {2}{B}: Return SN from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery and only if you have one or fewer cards in hand.
+timing=main
+oracle=Dread Wanderer enters the battlefield tapped.\n{2}{B}: Return Dread Wanderer from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery and only if you have one or fewer cards in hand.

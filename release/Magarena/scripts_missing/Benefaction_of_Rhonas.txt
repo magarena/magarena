@@ -1,0 +1,9 @@
+name=Benefaction of Rhonas
+image=http://magiccards.info/scans/en/akh/156.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{G}
+effect=Reveal the top five cards of your library. You may put a creature card and/or an enchantment card from among them into your hand. Put the rest into your graveyard.
+timing=main
+oracle=Reveal the top five cards of your library. You may put a creature card and/or an enchantment card from among them into your hand. Put the rest into your graveyard.

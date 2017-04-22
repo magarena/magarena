@@ -1,0 +1,10 @@
+name=Sunscorched Desert
+image=http://magiccards.info/scans/en/akh/249.jpg
+value=2.500
+rarity=C
+type=Land
+subtype=Desert
+ability=When SN enters the battlefield, it deals 1 damage to target player.;\
+        {T}: Add {C} to your mana pool.
+timing=land
+oracle=When Sunscorched Desert enters the battlefield, it deals 1 damage to target player.\n{T}: Add {C} to your mana pool.

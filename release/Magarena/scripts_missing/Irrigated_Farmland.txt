@@ -1,0 +1,10 @@
+name=Irrigated Farmland
+image=http://magiccards.info/scans/en/akh/245.jpg
+value=2.500
+rarity=R
+type=Land
+subtype=Plains,Island
+ability=SN enters the battlefield tapped.;\
+        Cycling {2}
+timing=land
+oracle=Irrigated Farmland enters the battlefield tapped.\nCycling {2}

@@ -1,0 +1,9 @@
+name=Winds of Rebuke
+image=http://magiccards.info/scans/en/akh/76.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return target nonland permanent to its owner's hand. Each player puts the top two cards of his or her library into his or her graveyard.
+timing=removal
+oracle=Return target nonland permanent to its owner's hand. Each player puts the top two cards of his or her library into his or her graveyard.

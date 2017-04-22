@@ -1,0 +1,11 @@
+name=Injury
+image=http://magiccards.info/scans/en/akh/213b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{R}
+effect=Aftermath~SN deals 2 damage to target creature and 2 damage to target player.
+split=Insult
+timing=main
+second_half
+oracle=Aftermath\nInjury deals 2 damage to target creature and 2 damage to target player.

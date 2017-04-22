@@ -1,0 +1,11 @@
+name=Earth
+image=http://magiccards.info/scans/en/akh/224b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{R}{R}
+effect=Aftermath~SN deals X damage to each creature without flying.
+split=Heaven
+timing=main
+second_half
+oracle=Aftermath\nEarth deals X damage to each creature without flying.

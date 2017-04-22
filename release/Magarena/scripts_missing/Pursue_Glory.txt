@@ -1,0 +1,10 @@
+name=Pursue Glory
+image=http://magiccards.info/scans/en/akh/147.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+ability=Cycling {2}
+effect=Attacking creatures get +2/+0 until end of turn.
+timing=removal
+oracle=Attacking creatures get +2/+0 until end of turn.\nCycling {2}

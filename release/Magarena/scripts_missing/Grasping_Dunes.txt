@@ -1,0 +1,10 @@
+name=Grasping Dunes
+image=http://magiccards.info/scans/en/akh/244.jpg
+value=2.500
+rarity=U
+type=Land
+subtype=Desert
+ability={T}: Add {C} to your mana pool.;\
+        {1}, {T}, Sacrifice SN: Put a -1/-1 counter on target creature. Activate this ability only any time you could cast a sorcery.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{1}, {T}, Sacrifice Grasping Dunes: Put a -1/-1 counter on target creature. Activate this ability only any time you could cast a sorcery.

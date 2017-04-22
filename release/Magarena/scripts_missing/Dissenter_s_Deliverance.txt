@@ -1,0 +1,10 @@
+name=Dissenter's Deliverance
+image=http://magiccards.info/scans/en/akh/164.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+ability=Cycling {G}
+effect=Destroy target artifact.
+timing=removal
+oracle=Destroy target artifact.\nCycling {G}

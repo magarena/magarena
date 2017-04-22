@@ -1,0 +1,12 @@
+name=Winged Shepherd
+image=http://magiccards.info/scans/en/akh/39.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Angel
+cost={5}{W}
+pt=3/3
+ability=Flying, vigilance;\
+        Cycling {W}
+timing=main
+oracle=Flying, vigilance\nCycling {W}

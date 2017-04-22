@@ -1,0 +1,11 @@
+name=Manticore of the Gauntlet
+image=http://magiccards.info/scans/en/akh/142.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Manticore
+cost={4}{R}
+pt=5/4
+ability=When SN enters the battlefield, put a -1/-1 counter on target creature you control. SN deals 3 damage to target opponent.
+timing=main
+oracle=When Manticore of the Gauntlet enters the battlefield, put a -1/-1 counter on target creature you control. Manticore of the Gauntlet deals 3 damage to target opponent.

@@ -1,0 +1,12 @@
+name=Greater Sandwurm
+image=http://magiccards.info/scans/en/akh/168.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wurm
+cost={5}{G}{G}
+pt=7/7
+ability=SN can't be blocked by creatures with power 2 or less.;\
+        Cycling {2}
+timing=main
+oracle=Greater Sandwurm can't be blocked by creatures with power 2 or less.\nCycling {2}

@@ -1,0 +1,12 @@
+name=Sacred Cat
+image=http://magiccards.info/scans/en/akh/27.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={W}
+pt=1/1
+ability=Lifelink;\
+        Embalm {W}
+timing=main
+oracle=Lifelink\nEmbalm {W}

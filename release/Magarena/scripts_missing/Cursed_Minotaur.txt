@@ -1,0 +1,11 @@
+name=Cursed Minotaur
+image=http://magiccards.info/scans/en/akh/85.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Minotaur
+cost={2}{B}
+pt=3/2
+ability=Menace
+timing=main
+oracle=Menace

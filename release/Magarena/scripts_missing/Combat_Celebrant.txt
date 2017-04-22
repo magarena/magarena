@@ -1,0 +1,11 @@
+name=Combat Celebrant
+image=http://magiccards.info/scans/en/akh/125.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=4/1
+ability=If SN hasn't been exerted this turn, you may exert it as it attacks. When you do, untap all other creatures you control and after this phase, there is an additional combat phase.
+timing=main
+oracle=If Combat Celebrant hasn't been exerted this turn, you may exert it as it attacks. When you do, untap all other creatures you control and after this phase, there is an additional combat phase.

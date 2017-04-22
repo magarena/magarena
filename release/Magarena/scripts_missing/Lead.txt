@@ -1,0 +1,11 @@
+name=Lead
+image=http://magiccards.info/scans/en/akh/217b.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Aftermath~All creatures able to block target creature this turn do so.
+split=Destined
+timing=main
+second_half
+oracle=Aftermath\nAll creatures able to block target creature this turn do so.

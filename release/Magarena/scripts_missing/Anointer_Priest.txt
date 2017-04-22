@@ -1,0 +1,12 @@
+name=Anointer Priest
+image=http://magiccards.info/scans/en/akh/3.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/3
+ability=Whenever a creature token enters the battlefield under your control, you gain 1 life.;\
+        Embalm {3}{W}
+timing=main
+oracle=Whenever a creature token enters the battlefield under your control, you gain 1 life.\nEmbalm {3}{W}

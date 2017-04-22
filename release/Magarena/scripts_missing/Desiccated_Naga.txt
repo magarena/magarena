@@ -1,0 +1,11 @@
+name=Desiccated Naga
+image=http://magiccards.info/scans/en/akh/276.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Naga
+cost={2}{B}
+pt=3/2
+ability={3}{B}: Target opponent loses 2 life and you gain 2 life. Activate this ability only if you control a Liliana planeswalker.
+timing=main
+oracle={3}{B}: Target opponent loses 2 life and you gain 2 life. Activate this ability only if you control a Liliana planeswalker.

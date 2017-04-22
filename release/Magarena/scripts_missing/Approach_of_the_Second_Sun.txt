@@ -1,0 +1,9 @@
+name=Approach of the Second Sun
+image=http://magiccards.info/scans/en/akh/4.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={6}{W}
+effect=If SN was cast from your hand and you've cast another spell named Approach of the Second Sun this game, you win the game. Otherwise, put SN into its owner's library seventh from the top and you gain 7 life.
+timing=main
+oracle=If Approach of the Second Sun was cast from your hand and you've cast another spell named Approach of the Second Sun this game, you win the game. Otherwise, put Approach of the Second Sun into its owner's library seventh from the top and you gain 7 life.

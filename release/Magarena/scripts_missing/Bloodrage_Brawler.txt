@@ -1,0 +1,11 @@
+name=Bloodrage Brawler
+image=http://magiccards.info/scans/en/akh/121.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Minotaur,Warrior
+cost={1}{R}
+pt=4/3
+ability=When SN enters the battlefield, discard a card.
+timing=main
+oracle=When Bloodrage Brawler enters the battlefield, discard a card.

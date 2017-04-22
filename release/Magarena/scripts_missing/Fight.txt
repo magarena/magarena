@@ -1,0 +1,11 @@
+name=Fight
+image=http://magiccards.info/scans/en/akh/220b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{G}
+effect=Aftermath~Target creature you control fights target creature an opponent controls.
+split=Prepare
+timing=main
+second_half
+oracle=Aftermath\nTarget creature you control fights target creature an opponent controls.

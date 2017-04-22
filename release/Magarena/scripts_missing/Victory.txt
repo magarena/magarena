@@ -1,0 +1,11 @@
+name=Victory
+image=http://magiccards.info/scans/en/akh/218b.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{W}
+effect=Aftermath~Target creature gains double strike until end of turn.
+split=Onward
+timing=main
+second_half
+oracle=Aftermath\nTarget creature gains double strike until end of turn.

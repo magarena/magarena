@@ -1,0 +1,14 @@
+name=Samut, Voice of Dissent
+image=http://magiccards.info/scans/en/akh/205.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={3}{R}{G}
+pt=3/4
+ability=Flash;\
+        Double strike, vigilance, haste;\
+        Other creatures you control have haste.;\
+        {W}, {T}: Untap another target creature.
+timing=flash
+oracle=Flash\nDouble strike, vigilance, haste\nOther creatures you control have haste.\n{W}, {T}: Untap another target creature.

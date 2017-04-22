@@ -1,0 +1,12 @@
+name=Battlefield Scavenger
+image=http://magiccards.info/scans/en/akh/118.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Jackal,Rogue
+cost={1}{R}
+pt=2/2
+ability=You may exert SN as it attacks.;\
+        Whenever you exert a creature, you may discard a card. If you do, draw a card.
+timing=main
+oracle=You may exert Battlefield Scavenger as it attacks.\nWhenever you exert a creature, you may discard a card. If you do, draw a card.

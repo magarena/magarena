@@ -1,0 +1,12 @@
+name=Shefet Monitor
+image=http://magiccards.info/scans/en/akh/186.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Lizard
+cost={5}{G}
+pt=6/5
+ability=Cycling {3}{G};\
+        When you cycle SN, you may search your library for a basic land card or a Desert card, put it onto the battlefield, then shuffle your library.
+timing=main
+oracle=Cycling {3}{G}\nWhen you cycle Shefet Monitor, you may search your library for a basic land card or a Desert card, put it onto the battlefield, then shuffle your library.

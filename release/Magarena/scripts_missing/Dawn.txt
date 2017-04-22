@@ -1,0 +1,11 @@
+name=Dawn
+image=http://magiccards.info/scans/en/akh/210b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Aftermath~Return all creature cards with power 2 or less from your graveyard to your hand.
+split=Dusk
+timing=main
+second_half
+oracle=Aftermath\nReturn all creature cards with power 2 or less from your graveyard to your hand.

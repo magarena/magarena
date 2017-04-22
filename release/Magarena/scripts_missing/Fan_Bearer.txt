@@ -1,0 +1,11 @@
+name=Fan Bearer
+image=http://magiccards.info/scans/en/akh/12.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={W}
+pt=1/2
+ability={2}, {T}: Tap target creature.
+timing=main
+oracle={2}, {T}: Tap target creature.

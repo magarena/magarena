@@ -1,0 +1,11 @@
+name=Thresher Lizard
+image=http://magiccards.info/scans/en/akh/150.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Lizard
+cost={2}{R}
+pt=3/2
+ability=SN gets +1/+2 as long as you have one or fewer cards in hand.
+timing=main
+oracle=Thresher Lizard gets +1/+2 as long as you have one or fewer cards in hand.

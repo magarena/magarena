@@ -1,0 +1,11 @@
+name=Ahn-Crop Champion
+image=http://magiccards.info/scans/en/akh/194.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={2}{G}{W}
+pt=4/4
+ability=You may exert SN as it attacks. When you do, untap all other creatures you control.
+timing=main
+oracle=You may exert Ahn-Crop Champion as it attacks. When you do, untap all other creatures you control.

@@ -1,0 +1,12 @@
+name=Blighted Bat
+image=http://magiccards.info/scans/en/akh/80.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Bat
+cost={2}{B}
+pt=2/1
+ability=Flying;\
+        {1}: SN gains haste until end of turn.
+timing=main
+oracle=Flying\n{1}: Blighted Bat gains haste until end of turn.

@@ -1,0 +1,12 @@
+name=Companion of the Trials
+image=http://magiccards.info/scans/en/akh/271.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird,Soldier
+cost={2}{W}
+pt=2/2
+ability=Flying;\
+        {1}{W}: Untap target creature. Activate this ability only if you control a Gideon planeswalker.
+timing=main
+oracle=Flying\n{1}{W}: Untap target creature. Activate this ability only if you control a Gideon planeswalker.

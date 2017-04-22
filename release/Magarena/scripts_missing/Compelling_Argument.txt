@@ -1,0 +1,10 @@
+name=Compelling Argument
+image=http://magiccards.info/scans/en/akh/47.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{U}
+ability=Cycling {U}
+effect=Target player puts the top five cards of his or her library into his or her graveyard.
+timing=main
+oracle=Target player puts the top five cards of his or her library into his or her graveyard.\nCycling {U}

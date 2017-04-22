@@ -1,0 +1,11 @@
+name=Cast Out
+image=http://magiccards.info/scans/en/akh/8.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=Flash;\
+        When SN enters the battlefield, exile target nonland permanent an opponent controls until SN leaves the battlefield.;\
+        Cycling {W}
+timing=flash
+oracle=Flash\nWhen Cast Out enters the battlefield, exile target nonland permanent an opponent controls until Cast Out leaves the battlefield.\nCycling {W}

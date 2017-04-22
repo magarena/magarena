@@ -1,0 +1,10 @@
+name=Trial of Strength
+image=http://magiccards.info/scans/en/akh/191.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=When SN enters the battlefield, create a 4/2 green Beast creature token.;\
+        When a Cartouche enters the battlefield under your control, return SN to its owner's hand.
+timing=enchantment
+oracle=When Trial of Strength enters the battlefield, create a 4/2 green Beast creature token.\nWhen a Cartouche enters the battlefield under your control, return Trial of Strength to its owner's hand.

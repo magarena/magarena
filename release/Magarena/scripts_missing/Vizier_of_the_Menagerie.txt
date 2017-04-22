@@ -1,0 +1,13 @@
+name=Vizier of the Menagerie
+image=http://magiccards.info/scans/en/akh/192.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Naga,Cleric
+cost={3}{G}
+pt=3/4
+ability=You may look at the top card of your library.;\
+        You may cast the top card of your library if it's a creature card.;\
+        You may spend mana as though it were mana of any type to cast creature spells.
+timing=main
+oracle=You may look at the top card of your library.\nYou may cast the top card of your library if it's a creature card.\nYou may spend mana as though it were mana of any type to cast creature spells.

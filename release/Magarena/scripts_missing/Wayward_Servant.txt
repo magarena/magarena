@@ -1,0 +1,11 @@
+name=Wayward Servant
+image=http://magiccards.info/scans/en/akh/208.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={W}{B}
+pt=2/2
+ability=Whenever another Zombie enters the battlefield under your control, each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Whenever another Zombie enters the battlefield under your control, each opponent loses 1 life and you gain 1 life.

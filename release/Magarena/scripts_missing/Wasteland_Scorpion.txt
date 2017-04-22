@@ -1,0 +1,12 @@
+name=Wasteland Scorpion
+image=http://magiccards.info/scans/en/akh/116.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Scorpion
+cost={2}{B}
+pt=2/2
+ability=Deathtouch;\
+        Cycling {2}
+timing=main
+oracle=Deathtouch\nCycling {2}

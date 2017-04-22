@@ -1,0 +1,13 @@
+name=Oketra's Attendant
+image=http://magiccards.info/scans/en/akh/22.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird,Soldier
+cost={3}{W}{W}
+pt=3/3
+ability=Flying;\
+        Cycling {2};\
+        Embalm {3}{W}{W}
+timing=main
+oracle=Flying\nCycling {2}\nEmbalm {3}{W}{W}

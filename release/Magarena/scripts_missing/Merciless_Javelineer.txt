@@ -1,0 +1,11 @@
+name=Merciless Javelineer
+image=http://magiccards.info/scans/en/akh/202.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Minotaur,Warrior
+cost={2}{B}{R}
+pt=4/2
+ability={2}, Discard a card: Put a -1/-1 counter on target creature. That creature can't block this turn.
+timing=main
+oracle={2}, Discard a card: Put a -1/-1 counter on target creature. That creature can't block this turn.

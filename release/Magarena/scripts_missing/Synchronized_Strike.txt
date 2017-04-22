@@ -1,0 +1,9 @@
+name=Synchronized Strike
+image=http://magiccards.info/scans/en/akh/190.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Untap up to two target creatures. They each get +2/+2 until end of turn.
+timing=removal
+oracle=Untap up to two target creatures. They each get +2/+2 until end of turn.

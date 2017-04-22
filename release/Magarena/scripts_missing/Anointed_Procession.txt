@@ -1,0 +1,9 @@
+name=Anointed Procession
+image=http://magiccards.info/scans/en/akh/2.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability=If an effect would create one or more tokens under your control, it creates twice that many of those tokens instead.
+timing=enchantment
+oracle=If an effect would create one or more tokens under your control, it creates twice that many of those tokens instead.

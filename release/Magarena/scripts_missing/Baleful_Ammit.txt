@@ -1,0 +1,12 @@
+name=Baleful Ammit
+image=http://magiccards.info/scans/en/akh/79.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Crocodile,Demon
+cost={2}{B}
+pt=4/3
+ability=Lifelink;\
+        When SN enters the battlefield, put a -1/-1 counter on target creature you control.
+timing=main
+oracle=Lifelink\nWhen Baleful Ammit enters the battlefield, put a -1/-1 counter on target creature you control.

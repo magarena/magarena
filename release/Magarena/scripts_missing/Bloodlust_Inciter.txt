@@ -1,0 +1,11 @@
+name=Bloodlust Inciter
+image=http://magiccards.info/scans/en/akh/120.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={R}
+pt=1/1
+ability={T}: Target creature gains haste until end of turn.
+timing=main
+oracle={T}: Target creature gains haste until end of turn.

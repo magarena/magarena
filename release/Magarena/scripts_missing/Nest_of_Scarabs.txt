@@ -1,0 +1,9 @@
+name=Nest of Scarabs
+image=http://magiccards.info/scans/en/akh/101.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{B}
+ability=Whenever you put one or more -1/-1 counters on a creature, create that many 1/1 black Insect creature tokens.
+timing=enchantment
+oracle=Whenever you put one or more -1/-1 counters on a creature, create that many 1/1 black Insect creature tokens.

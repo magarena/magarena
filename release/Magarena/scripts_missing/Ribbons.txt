@@ -1,0 +1,11 @@
+name=Ribbons
+image=http://magiccards.info/scans/en/akh/223b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{B}{B}
+effect=Aftermath~Each opponent loses X life.
+split=Cut
+timing=main
+second_half
+oracle=Aftermath\nEach opponent loses X life.

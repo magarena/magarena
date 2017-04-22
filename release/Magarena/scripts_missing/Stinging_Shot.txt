@@ -1,0 +1,10 @@
+name=Stinging Shot
+image=http://magiccards.info/scans/en/akh/189.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={G}
+ability=Cycling {2}
+effect=Put three -1/-1 counters on target creature with flying.
+timing=removal
+oracle=Put three -1/-1 counters on target creature with flying.\nCycling {2}

@@ -1,0 +1,12 @@
+name=Khenra Charioteer
+image=http://magiccards.info/scans/en/akh/201.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Jackal,Warrior
+cost={1}{R}{G}
+pt=3/3
+ability=Trample;\
+        Other creatures you control have trample.
+timing=main
+oracle=Trample\nOther creatures you control have trample.

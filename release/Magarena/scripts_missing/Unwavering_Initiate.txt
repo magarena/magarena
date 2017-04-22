@@ -1,0 +1,12 @@
+name=Unwavering Initiate
+image=http://magiccards.info/scans/en/akh/36.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{W}
+pt=3/2
+ability=Vigilance;\
+        Embalm {4}{W}
+timing=main
+oracle=Vigilance\nEmbalm {4}{W}
