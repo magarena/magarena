@@ -2060,6 +2060,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_DESERT_CARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
+            return (target.hasType(MagicType.Basic) && target.hasType(MagicType.Land)) ||
+                target.hasSubType(MagicSubType.Desert);
+        }
+    };
+
     public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return (target.hasType(MagicType.Basic) && target.hasType(MagicType.Land)) ||
@@ -2322,6 +2329,7 @@ public class MagicTargetFilterFactory {
         addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
         addp("noncreature card", NONCREATURE_CARD);
         addp("nonartifact, nonland card", NONARTIFACT_NONLAND_CARD);
+        addp("basic land card or a Desert card", BASIC_LAND_CARD_OR_DESERT_CARD);
         addp("basic land card or a Gate card", BASIC_LAND_CARD_OR_GATE_CARD);
         addp("Plains, Island, Swamp, Mountain or Forest card", LAND_CARD_WITH_BASIC_LAND_TYPE);
         addp("Plains or Island card", card(MagicSubType.Plains).or(MagicSubType.Island));
