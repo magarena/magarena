@@ -8,5 +8,5 @@ cost={2}{U}
 ability=Enchant creature;\
         Enchanted creature has base power and toughness 0/2.
 timing=aura
-enchant=default,creature
+enchant=default,neg creature
 oracle=Enchant creature\nEnchanted creature has base power and toughness 0/2.

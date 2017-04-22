@@ -1,9 +1,0 @@
-name=Impeccable Timing
-image=http://magiccards.info/scans/en/akh/18.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{W}
-effect=SN deals 3 damage to target attacking or blocking creature.
-timing=removal
-oracle=Impeccable Timing deals 3 damage to target attacking or blocking creature.

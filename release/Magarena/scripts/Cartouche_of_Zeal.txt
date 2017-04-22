@@ -9,5 +9,5 @@ ability=Enchant creature you control;\
         When SN enters the battlefield, target creature can't block this turn.;\
         Enchanted creature gets +1/+1 and has haste.
 timing=aura
-enchant=default,creature
+enchant=haste,creature you control
 oracle=Enchant creature you control\nWhen Cartouche of Zeal enters the battlefield, target creature can't block this turn.\nEnchanted creature gets +1/+1 and has haste.

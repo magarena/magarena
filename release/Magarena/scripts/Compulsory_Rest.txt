@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block.;\
         Enchanted creature has "{2}, Sacrifice this creature: You gain 2 life."
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.\nEnchanted creature has "{2}, Sacrifice this creature: You gain 2 life."

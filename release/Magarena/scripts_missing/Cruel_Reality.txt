@@ -8,5 +8,5 @@ cost={5}{B}{B}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, that player sacrifices a creature or planeswalker. If the player can't, he or she loses 5 life.
 timing=aura
-enchant=default,creature
+enchant=default,player
 oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player sacrifices a creature or planeswalker. If the player can't, he or she loses 5 life.

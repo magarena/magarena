@@ -8,5 +8,5 @@ cost={G}
 ability=Enchant creature;\
         Enchanted creature has "Whenever this creature deals combat damage to a player, you may draw a card."
 timing=aura
-enchant=default,creature
+enchant=default,pos creature
 oracle=Enchant creature\nEnchanted creature has "Whenever this creature deals combat damage to a player, you may draw a card."

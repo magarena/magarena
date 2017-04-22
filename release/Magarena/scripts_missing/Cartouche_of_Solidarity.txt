@@ -9,5 +9,5 @@ ability=Enchant creature you control;\
         When SN enters the battlefield, create a 1/1 white Warrior creature token with vigilance.;\
         Enchanted creature gets +1/+1 and has first strike.
 timing=aura
-enchant=default,creature
+enchant=first strike,creature you control
 oracle=Enchant creature you control\nWhen Cartouche of Solidarity enters the battlefield, create a 1/1 white Warrior creature token with vigilance.\nEnchanted creature gets +1/+1 and has first strike.
