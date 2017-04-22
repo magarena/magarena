@@ -11,3 +11,4 @@ ability=Enchant land;\
 timing=aura
 enchant=default,land
 oracle=Enchant land\nWhen Gift of Paradise enters the battlefield, you gain 3 life.\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."
+status=not supported: add-multiple-mana

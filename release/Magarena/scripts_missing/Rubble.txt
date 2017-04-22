@@ -9,3 +9,4 @@ split=Reduce
 timing=main
 second_half
 oracle=Aftermath\nUp to three target lands don't untap during their controller's next untap step.
+status=not supported: split-card

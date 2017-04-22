@@ -8,3 +8,4 @@ effect=Create a 3/3 green Hippo creature token.
 split=Feed
 timing=main
 oracle=Create a 3/3 green Hippo creature token.
+status=not supported: split-card

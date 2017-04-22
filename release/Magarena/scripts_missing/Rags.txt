@@ -8,3 +8,4 @@ effect=All creatures get -2/-2 until end of turn.
 split=Riches
 timing=main
 oracle=All creatures get -2/-2 until end of turn.
+status=not supported: split-card

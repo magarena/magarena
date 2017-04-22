@@ -9,3 +9,4 @@ split=Mouth
 timing=main
 second_half
 oracle=Aftermath\nDraw a card for each creature you control with power 3 or greater.
+status=not supported: split-card

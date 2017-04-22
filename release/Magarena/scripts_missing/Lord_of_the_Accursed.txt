@@ -10,3 +10,4 @@ ability=Other Zombies you control get +1/+1.;\
         {1}{B}, {T}: All Zombies gain menace until end of turn.
 timing=main
 oracle=Other Zombies you control get +1/+1.\n{1}{B}, {T}: All Zombies gain menace until end of turn.
+status=not supported: blocking-restriction

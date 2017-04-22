@@ -8,3 +8,4 @@ effect=Target creature gets +X/+0 until end of turn, where X is its power.
 split=Victory
 timing=removal
 oracle=Target creature gets +X/+0 until end of turn, where X is its power.
+status=not supported: split-card

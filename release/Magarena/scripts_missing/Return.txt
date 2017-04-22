@@ -9,3 +9,4 @@ split=Never
 timing=main
 second_half
 oracle=Aftermath\nExile target card from a graveyard. Create a 2/2 black Zombie creature token.
+status=not supported: split-card

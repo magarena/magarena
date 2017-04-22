@@ -8,3 +8,4 @@ effect=Counter target spell unless its controller pays {3}.
 split=Rubble
 timing=counter
 oracle=Counter target spell unless its controller pays {3}.
+status=not supported: split-card

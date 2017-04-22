@@ -8,3 +8,4 @@ effect=Create two 1/1 white Warrior creature tokens with vigilance.
 split=Finish
 timing=removal
 oracle=Create two 1/1 white Warrior creature tokens with vigilance.
+status=not supported: split-card

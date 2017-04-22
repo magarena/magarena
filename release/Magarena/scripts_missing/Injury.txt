@@ -9,3 +9,4 @@ split=Insult
 timing=main
 second_half
 oracle=Aftermath\nInjury deals 2 damage to target creature and 2 damage to target player.
+status=not supported: split-card

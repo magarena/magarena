@@ -8,3 +8,4 @@ effect=Destroy all creatures with power 3 or greater.
 split=Dawn
 timing=main
 oracle=Destroy all creatures with power 3 or greater.
+status=not supported: split-card

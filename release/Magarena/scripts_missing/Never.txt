@@ -8,3 +8,4 @@ effect=Destroy target creature or planeswalker.
 split=Return
 timing=main
 oracle=Destroy target creature or planeswalker.
+status=not supported: split-card

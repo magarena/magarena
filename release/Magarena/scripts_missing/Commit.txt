@@ -8,3 +8,4 @@ effect=Put target spell or nonland permanent into its owner's library second fro
 split=Memory
 timing=removal
 oracle=Put target spell or nonland permanent into its owner's library second from the top.
+status=not supported: split-card

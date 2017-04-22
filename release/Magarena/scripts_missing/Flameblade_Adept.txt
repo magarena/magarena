@@ -10,3 +10,4 @@ ability=Menace;\
         Whenever you cycle or discard a card, SN gets +1/+0 until end of turn.
 timing=main
 oracle=Menace\nWhenever you cycle or discard a card, Flameblade Adept gets +1/+0 until end of turn.
+status=not supported: blocking-restriction

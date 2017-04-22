@@ -8,3 +8,4 @@ effect=Untap target creature. It gets +2/+2 and gains lifelink until end of turn
 split=Fight
 timing=removal
 oracle=Untap target creature. It gets +2/+2 and gains lifelink until end of turn.
+status=not supported: split-card

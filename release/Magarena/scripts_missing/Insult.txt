@@ -8,3 +8,4 @@ effect=Damage can't be prevented this turn. If a source you control would deal d
 split=Injury
 timing=main
 oracle=Damage can't be prevented this turn. If a source you control would deal damage this turn, it deals double that damage instead.
+status=not supported: split-card

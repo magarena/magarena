@@ -8,3 +8,4 @@ effect=Search your library for a basic land card, put it onto the battlefield ta
 split=Mind
 timing=main
 oracle=Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+status=not supported: split-card

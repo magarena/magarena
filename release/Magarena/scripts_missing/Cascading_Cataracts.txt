@@ -8,3 +8,4 @@ ability=Indestructible;\
         {5}, {T}: Add five mana in any combination of colors to your mana pool.
 timing=land
 oracle=Indestructible\n{T}: Add {C} to your mana pool.\n{5}, {T}: Add five mana in any combination of colors to your mana pool.
+status=not supported: add-multiple-mana

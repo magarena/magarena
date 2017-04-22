@@ -9,3 +9,4 @@ split=Cut
 timing=main
 second_half
 oracle=Aftermath\nEach opponent loses X life.
+status=not supported: split-card

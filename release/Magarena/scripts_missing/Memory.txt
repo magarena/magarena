@@ -9,3 +9,4 @@ split=Commit
 timing=main
 second_half
 oracle=Aftermath\nEach player shuffles his or her hand and graveyard into his or her library, then draws seven cards.
+status=not supported: split-card

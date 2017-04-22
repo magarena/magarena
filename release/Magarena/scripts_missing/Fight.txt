@@ -9,3 +9,4 @@ split=Prepare
 timing=main
 second_half
 oracle=Aftermath\nTarget creature you control fights target creature an opponent controls.
+status=not supported: split-card

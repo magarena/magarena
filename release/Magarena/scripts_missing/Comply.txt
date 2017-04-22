@@ -9,3 +9,4 @@ split=Failure
 timing=main
 second_half
 oracle=Aftermath\nChoose a card name. Until your next turn, your opponents can't cast spells with the chosen name.
+status=not supported: split-card

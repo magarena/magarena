@@ -8,3 +8,4 @@ ability={2}, {T}: Add one mana of any color to your mana pool. Put a brick count
         {T}: Add three mana of any one color to your mana pool. Activate this ability only if there are three or more brick counters on SN.
 timing=artifact
 oracle={2}, {T}: Add one mana of any color to your mana pool. Put a brick counter on Pyramid of the Pantheon.\n{T}: Add three mana of any one color to your mana pool. Activate this ability only if there are three or more brick counters on Pyramid of the Pantheon.
+status=not supported: add-multiple-mana

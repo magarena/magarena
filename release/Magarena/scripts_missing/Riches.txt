@@ -9,3 +9,4 @@ split=Rags
 timing=main
 second_half
 oracle=Aftermath\nEach opponent chooses a creature he or she controls. You gain control of those creatures.
+status=not supported: split-card

@@ -8,3 +8,4 @@ effect=SN deals X damage to each creature with flying.
 split=Earth
 timing=removal
 oracle=Heaven deals X damage to each creature with flying.
+status=not supported: split-card

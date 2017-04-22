@@ -9,3 +9,4 @@ split=Heaven
 timing=main
 second_half
 oracle=Aftermath\nEarth deals X damage to each creature without flying.
+status=not supported: split-card

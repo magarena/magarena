@@ -7,3 +7,4 @@ cost={2}{G}{U}
 ability=At the beginning of your precombat main phase, remove all flood counters from SN. If no counters were removed this way, put a flood counter on SN and draw a card. Otherwise, add {C}{G}{U} to your mana pool.
 timing=enchantment
 oracle=At the beginning of your precombat main phase, remove all flood counters from Bounty of the Luxa. If no counters were removed this way, put a flood counter on Bounty of the Luxa and draw a card. Otherwise, add {C}{G}{U} to your mana pool.
+status=not supported: add-multiple-mana

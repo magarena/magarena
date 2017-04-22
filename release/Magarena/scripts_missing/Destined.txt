@@ -8,3 +8,4 @@ effect=Target creature gets +1/+0 and gains indestructible until end of turn.
 split=Lead
 timing=removal
 oracle=Target creature gets +1/+0 and gains indestructible until end of turn.
+status=not supported: split-card

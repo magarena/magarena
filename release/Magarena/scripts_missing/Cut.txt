@@ -8,3 +8,4 @@ effect=SN deals 4 damage to target creature.
 split=Ribbons
 timing=main
 oracle=Cut deals 4 damage to target creature.
+status=not supported: split-card

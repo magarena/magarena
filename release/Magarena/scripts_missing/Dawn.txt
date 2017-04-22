@@ -9,3 +9,4 @@ split=Dusk
 timing=main
 second_half
 oracle=Aftermath\nReturn all creature cards with power 2 or less from your graveyard to your hand.
+status=not supported: split-card

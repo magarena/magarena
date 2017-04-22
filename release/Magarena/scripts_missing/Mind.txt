@@ -9,3 +9,4 @@ split=Spring
 timing=removal
 second_half
 oracle=Aftermath\nDraw two cards.
+status=not supported: split-card

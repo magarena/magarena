@@ -10,3 +10,4 @@ split=Start
 timing=main
 second_half
 oracle=Aftermath\nAs an additional cost to cast Finish, sacrifice a creature.\nDestroy target creature.
+status=not supported: split-card

@@ -9,3 +9,4 @@ split=Destined
 timing=main
 second_half
 oracle=Aftermath\nAll creatures able to block target creature this turn do so.
+status=not supported: split-card

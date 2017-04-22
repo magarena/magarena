@@ -8,3 +8,4 @@ effect=Return target spell to its owner's hand.
 split=Comply
 timing=removal
 oracle=Return target spell to its owner's hand.
+status=not supported: split-card
