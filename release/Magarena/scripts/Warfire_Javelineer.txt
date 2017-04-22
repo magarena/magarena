@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur,Warrior
 cost={3}{R}
 pt=2/3
-ability=When SN enters the battlefield, it deals X damage to target creature an opponent controls, where X is the number of instant and sorcery cards in your graveyard.
+ability=When SN enters the battlefield, SN deals X damage to target creature an opponent controls, where X is the number of instant and sorcery cards in your graveyard.
 timing=main
 oracle=When Warfire Javelineer enters the battlefield, it deals X damage to target creature an opponent controls, where X is the number of instant and sorcery cards in your graveyard.
