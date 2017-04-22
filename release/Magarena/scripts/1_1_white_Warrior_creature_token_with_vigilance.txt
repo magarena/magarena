@@ -1,0 +1,10 @@
+name=1/1 white Warrior creature token with vigilance
+token=Warrior
+image=http://media.wizards.com/2017/dw466ytu5_akh/en_MGhKsBQ06g.png
+value=1
+type=Creature
+subtype=Warrior
+color=w
+pt=1/1
+ability=Vigilance
+oracle=Vigilance
