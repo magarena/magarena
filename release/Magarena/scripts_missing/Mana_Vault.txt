@@ -6,7 +6,7 @@ type=Artifact
 cost={1}
 ability=SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {4}. If you do, untap SN.;\
-        At the beginning of your draw step, if SN is tapped, it deals 1 damage to you.;\
+        At the beginning of your draw step, if SN is tapped, SN deals 1 damage to you.;\
         {T}: Add {C}{C}{C} to your mana pool.
 timing=artifact
 oracle=Mana Vault doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap Mana Vault.\nAt the beginning of your draw step, if Mana Vault is tapped, it deals 1 damage to you.\n{T}: Add {C}{C}{C} to your mana pool.

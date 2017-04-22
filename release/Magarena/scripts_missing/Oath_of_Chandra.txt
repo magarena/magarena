@@ -5,7 +5,7 @@ value=2.500
 rarity=R
 type=Legendary,Enchantment
 cost={1}{R}
-ability=When SN enters the battlefield, it deals 3 damage to target creature an opponent controls.;\
+ability=When SN enters the battlefield, SN deals 3 damage to target creature an opponent controls.;\
         At the beginning of each end step, if a planeswalker entered the battlefield under your control this turn, SN deals 2 damage to each opponent.
 timing=enchantment
 oracle=When Oath of Chandra enters the battlefield, it deals 3 damage to target creature an opponent controls.\nAt the beginning of each end step, if a planeswalker entered the battlefield under your control this turn, Oath of Chandra deals 2 damage to each opponent.
