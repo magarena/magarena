@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Legendary,Artifact
 cost={3}
-ability=Red creature spells you cast cost {1} less to cast.;\
-        Whenever you cast a creature spell, you may discard a card. If you do, draw a card.
+ability=Whenever you cast a creature spell, you may discard a card. If you do, draw a card.
 timing=artifact
 oracle=Red creature spells you cast cost {1} less to cast.\nWhenever you cast a creature spell, you may discard a card. If you do, draw a card.
+requires_groovy_code

@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Legendary,Artifact
 cost={3}
-ability=Green creature spells you cast cost {1} less to cast.;\
-        Whenever you cast a creature spell, target creature you control gets +2/+2 and gains trample until end of turn.
+ability=Whenever you cast a creature spell, target creature you control gets +2/+2 and gains trample until end of turn.
 timing=artifact
 oracle=Green creature spells you cast cost {1} less to cast.\nWhenever you cast a creature spell, target creature you control gets +2/+2 and gains trample until end of turn.
+requires_groovy_code
