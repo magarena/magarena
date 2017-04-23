@@ -109,6 +109,15 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition HandAtMost(final int n) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(MagicSource source) {
+                return source.getController().getHandSize() <= n;
+            }
+        };
+    }
+
     public static MagicCondition RNHandAtLeast(final int n) {
         return new MagicCondition() {
             @Override

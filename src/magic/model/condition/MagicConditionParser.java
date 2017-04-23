@@ -132,6 +132,12 @@ public enum MagicConditionParser {
             return MagicConditionFactory.HandAtLeast(amount);
         }
     },
+    HandFewer("you have " + ARG.AMOUNT +" or fewer cards in hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            return MagicConditionFactory.HandAtMost(amount);
+        }
+    },
     Hellbent("(you )?have no cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HELLBENT;
