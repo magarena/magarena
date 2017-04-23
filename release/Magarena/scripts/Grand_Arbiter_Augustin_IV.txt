@@ -6,6 +6,8 @@ type=Legendary,Creature
 subtype=Human,Advisor
 cost={2}{W}{U}
 pt=2/3
+ability=White spells you cast cost {1} less to cast.;\
+        Blue spells you cast cost {1} less to cast.
 requires_groovy_code
 timing=main
 oracle=White spells you cast cost {1} less to cast.\nBlue spells you cast cost {1} less to cast.\nSpells your opponents cast cost {1} more to cast.

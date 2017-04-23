@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Legendary,Artifact
 cost={3}
-ability=Whenever you cast a creature spell, each opponent loses 1 life and you gain 1 life.
+ability=Black creature spells you cast cost {1} less to cast.;\
+        Whenever you cast a creature spell, each opponent loses 1 life and you gain 1 life.
 timing=artifact
 oracle=Black creature spells you cast cost {1} less to cast.\nWhenever you cast a creature spell, each opponent loses 1 life and you gain 1 life.
-requires_groovy_code
