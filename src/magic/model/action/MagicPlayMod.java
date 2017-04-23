@@ -133,12 +133,6 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddStaticAction(perm, MagicStatic.Nightmare));
         }
     },
-    EMBALM() {
-      protected void doAction(final MagicGame game, final MagicPermanent perm) {
-          game.doAction(new AddStaticAction(perm, MagicStatic.IsWhite));
-          game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
-      }
-    },
     BESTOWED() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.Bestowed));

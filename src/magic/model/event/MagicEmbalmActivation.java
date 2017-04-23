@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCardDefinitionInit;
+import magic.model.MagicColor;
+import magic.model.MagicSubType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
@@ -16,6 +19,12 @@ public class MagicEmbalmActivation extends MagicCardAbilityActivation {
 
     private static final MagicCondition[] COND = new MagicCondition[]{ MagicCondition.SORCERY_CONDITION };
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Token);
+    private static final MagicCardDefinitionInit EMBALMED = (MagicCardDefinition it) -> {
+        it.setColors("w");
+        it.setCost(MagicManaCost.NONE);
+        it.addSubType(MagicSubType.Zombie);
+    };
+
     final MagicManaCost cost;
 
     public MagicEmbalmActivation(final MagicManaCost aCost) {
@@ -51,10 +60,12 @@ public class MagicEmbalmActivation extends MagicCardAbilityActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayTokenAction(
-                event.getPlayer(),
+        game.doAction(new PlayTokenAction(
+            event.getPlayer(),
+            MagicCardDefinition.token(
                 event.getCard(),
-                MagicPlayMod.EMBALM
-            ));
+                EMBALMED
+            )
+        ));
     }
 }
