@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={4}{W}
-ability=If a source an opponent controls would deal damage to you, prevent 1 of that damage.
 timing=enchantment
 oracle=If a source an opponent controls would deal damage to you, prevent 1 of that damage.
+requires_groovy_code=Guardian Seraph
