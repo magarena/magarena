@@ -9,5 +9,5 @@ ability=Enchant permanent;\
         You control enchanted permanent.;\
         Cycling {2}
 timing=aura
-enchant=control,permanent
+enchant=gain control,neg permanent
 oracle=Enchant permanent\nYou control enchanted permanent.\nCycling {2}
