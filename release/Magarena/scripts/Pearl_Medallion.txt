@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={2}
-requires_groovy_code
+ability=White spells you cast cost {1} less to cast.
 timing=artifact
 oracle=White spells you cast cost {1} less to cast.

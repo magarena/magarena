@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={3}
-ability=Spirit creatures you control get +1/+1.
-requires_groovy_code
+ability=Arcane spells you cast cost {1} less to cast.;\
+        Spirit creatures you control get +1/+1.
 timing=artifact
 oracle=Arcane spells you cast cost {1} less to cast.\nSpirit creatures you control get +1/+1.

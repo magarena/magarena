@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}{W}
 pt=1/1
-ability=Soldier creatures you control get +1/+2.
-requires_groovy_code
+ability=Soldier spells you cast cost {1} less to cast.;\
+        Soldier creatures you control get +1/+2.
 timing=main
 oracle=Soldier spells you cast cost {1} less to cast.\nSoldier creatures you control get +1/+2.

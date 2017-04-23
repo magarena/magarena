@@ -7,6 +7,6 @@ type=Creature
 subtype=Goblin,Rogue
 cost={2}{R}
 pt=1/3
-requires_groovy_code
+ability=Giant spells you cast cost {2} less to cast.
 timing=main
 oracle=Giant spells you cast cost {2} less to cast.

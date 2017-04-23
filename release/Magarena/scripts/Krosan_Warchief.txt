@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={2}{G}
 pt=2/2
-ability={1}{G}: Regenerate target Beast.
-requires_groovy_code
+ability=Beast spells you cast cost {1} less to cast.;\
+        {1}{G}: Regenerate target Beast.
 timing=main
 oracle=Beast spells you cast cost {1} less to cast.\n{1}{G}: Regenerate target Beast.

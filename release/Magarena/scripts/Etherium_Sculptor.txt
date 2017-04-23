@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Vedalken,Artificer
 cost={1}{U}
 pt=1/2
-requires_groovy_code
+ability=Artifact spells you cast cost {1} less to cast.
 timing=main
 oracle=Artifact spells you cast cost {1} less to cast.

@@ -7,7 +7,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}{R}
 pt=2/2
-ability=Goblin creatures you control have haste.
-requires_groovy_code
+ability=Goblin spells you cast cost {1} less to cast.;\
+        Goblin creatures you control have haste.
 timing=main
 oracle=Goblin spells you cast cost {1} less to cast.\nGoblin creatures you control have haste.

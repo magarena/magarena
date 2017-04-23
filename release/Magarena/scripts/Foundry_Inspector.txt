@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=3/2
+ability=Artifact spells you cast cost {1} less to cast.
 timing=main
 oracle=Artifact spells you cast cost {1} less to cast.
-requires_groovy_code=Etherium Sculptor

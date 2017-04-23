@@ -7,7 +7,7 @@ type=Creature
 subtype=Centaur,Shaman
 cost={1}{G}
 pt=2/2
-ability=Whenever you cast an enchantment spell, you gain 1 life.
-requires_groovy_code
+ability=Enchantment spells you cast cost {1} less to cast.;\
+        Whenever you cast an enchantment spell, you gain 1 life.
 timing=main
 oracle=Enchantment spells you cast cost {1} less to cast.\nWhenever you cast an enchantment spell, you gain 1 life.
