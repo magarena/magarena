@@ -8,3 +8,4 @@ ability=Activated abilities of creature cards in your graveyard cost {1} less to
         Tap an untapped Zombie you control: Target player puts the top card of his or her library into his or her graveyard.
 timing=artifact
 oracle=Activated abilities of creature cards in your graveyard cost {1} less to activate.\nTap an untapped Zombie you control: Target player puts the top card of his or her library into his or her graveyard.
+status=not supported: complex-cost-modification
