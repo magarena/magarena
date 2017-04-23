@@ -1,0 +1,8 @@
+name=2/2 red Gremlin creature token
+token=Gremlin
+image=http://media.wizards.com/2016/c1lRLirbrl_AER/en_EBAuYV3Zn3.png
+value=2
+pt=2/2
+color=R
+type=Creature
+subtype=Gremlin
