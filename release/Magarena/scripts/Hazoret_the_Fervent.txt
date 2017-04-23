@@ -8,6 +8,6 @@ cost={3}{R}
 pt=5/4
 ability=Indestructible, haste;\
         SN can't attack or block unless you have one or fewer cards in hand.;\
-        {2}{R}, Discard a card: Hazoret deals 2 damage to each opponent.
+        {2}{R}, Discard a card: SN deals 2 damage to each opponent.
 timing=main
 oracle=Indestructible, haste\nHazoret the Fervent can't attack or block unless you have one or fewer cards in hand.\n{2}{R}, Discard a card: Hazoret deals 2 damage to each opponent.
