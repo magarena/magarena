@@ -10,3 +10,4 @@ ability=SN can block an additional creature each combat.;\
         Embalm {2}{W}
 timing=main
 oracle=Trueheart Duelist can block an additional creature each combat.\nEmbalm {2}{W}
+status=not supported: block-multiple
