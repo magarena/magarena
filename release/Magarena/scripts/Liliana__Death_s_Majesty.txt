@@ -6,7 +6,7 @@ type=Planeswalker
 subtype=Liliana
 cost={3}{B}{B}
 loyalty=5
-ability=+1: Create a 2/2 black Zombie creature token. Put the top two cards of your library into your graveyard.;\
+ability=+1: Create a 2/2 black Zombie creature token.~Put the top two cards of your library into your graveyard.;\
         −3: Return target creature card from your graveyard to the battlefield. That creature is a black Zombie in addition to its other colors and types.;\
         −7: Destroy all non-Zombie creatures.
 timing=main
