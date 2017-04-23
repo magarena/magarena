@@ -11,6 +11,8 @@ import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicCard;
+import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
@@ -520,6 +522,19 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicEvent event = effect.getTriggerEvent(source);
                 if (event.isValid()) {
                     game.doAction(new PutStateTriggerOnStackAction(event));
+                }
+            }
+        };
+    }
+
+    public static MagicStatic YourCostReduction(final MagicTargetFilter<MagicCard> filter, int n) {
+        return new MagicStatic(MagicLayer.CostReduction) {
+            @Override
+            public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+                if (filter.accept(source, source.getController(), card) && source.isFriend(card)) {
+                    return cost.reduce(n);
+                } else {
+                    return cost;
                 }
             }
         };
