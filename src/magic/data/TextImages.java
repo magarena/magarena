@@ -147,6 +147,7 @@ public class TextImages {
         add(MagicCounterType.Fuse, MagicIcon.FUSECOUNTER);
         add(MagicCounterType.Page, MagicIcon.PAGECOUNTER);
         add(MagicCounterType.Sleep, MagicIcon.SLEEPCOUNTER);
+        add(MagicCounterType.Brick, MagicIcon.BRICKCOUNTER);
     }
 
     private static void add(final MagicCounterType key, final MagicIcon icon) {

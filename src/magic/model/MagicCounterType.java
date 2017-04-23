@@ -30,6 +30,7 @@ public enum MagicCounterType {
     Blood("blood","{bld}",0),
     Bounty("bounty","{bty}",-1),
     Bribery("bribery","{brb}",-1),
+    Brick("brick","{brk}", 1),
     Carrion("carrion","{crn}",1),
     Charge("charge","{chg}",1),
     Corpse("corpse","{cor}",1),

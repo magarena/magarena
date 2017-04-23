@@ -192,6 +192,7 @@ public enum MagicIcon {
     FUSECOUNTER("fuse-counter.png"),
     PAGECOUNTER("study-counter.png"),
     SLEEPCOUNTER("sleep-counter.png"),
+    BRICKCOUNTER("goldcounter.png"),
 
     ENERGY("E.png"),
 
