@@ -11,9 +11,10 @@
 
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-            return source.getOpponent().getNrOfPermanents(MagicType.Creature) >= source.getController().getNrOfPermanents(MagicType.Creature) + 4 ?
-                [MagicPayManaCostEvent.Cast(source,"{G}{G}")] :
-                [MagicPayManaCostEvent.Cast(source,"{6}{G}{G}")];
+            final int n = source.getOpponent().getNrOfPermanents(MagicType.Creature) >= source.getController().getNrOfPermanents(MagicType.Creature) + 4 ? 6 : 0;
+            return [
+                new MagicPayManaCostEvent(source, source.getGameCost().reduce(n))
+            ];
         }
     }
 ]

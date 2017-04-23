@@ -11,10 +11,10 @@
 
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-            final int n = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(source).size();
-            return n >= 10 ?
-                [MagicPayManaCostEvent.Cast(source,"{B}{B}")] :
-                [MagicPayManaCostEvent.Cast(source,"{6}{B}{B}")];
+            final int n = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(source).size() >= 10 ? 6 : 0;
+            return [
+                new MagicPayManaCostEvent(source, source.getGameCost().reduce(n))
+            ];
         }
     }
 ]
