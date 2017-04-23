@@ -68,7 +68,7 @@ public enum MagicSubType {
     Fish, Flagbearer, Fox, Frog, Fungus, Gargoyle, Germ, Giant, Gnome, Goat,
     Goblin, God, Golem, Gorgon, Graveborn, Gremlin, Griffin, Hag, Harpy, Hellion, Hippo,
     Hippogriff, Homarid, Homunculus, Horror, Horse, Hound, Human, Hydra, Hyena,
-    Illusion, Imp, Incarnation, Insect, Jellyfish, Juggernaut, Kavu, Kirin,
+    Illusion, Imp, Incarnation, Insect, Jackal, Jellyfish, Juggernaut, Kavu, Kirin,
     Kithkin, Knight, Kobold, Kor, Kraken, Lamia, Lammasu, Leech, Leviathan, Lhurgoyf,
     Licid, Lizard, Manticore, Masticore, Mercenary, Merfolk, Metathran, Minion,
     Minotaur, Mole, Monger, Mongoose, Monk, Monkey, Moonfolk, Mutant, Myr, Mystic, Naga, Nautilus,
