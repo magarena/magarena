@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={X}{G}
-effect=Put X +1/+1 counters on target artifact you control. If it isn't a creature or Vehicle, it becomes a 0/0 Construct artifact creature.
 timing=removal
 oracle=Put X +1/+1 counters on target artifact you control. If it isn't a creature or Vehicle, it becomes a 0/0 Construct artifact creature.
+requires_groovy_code
