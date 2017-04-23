@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Distribute two -1/-1 counters among one or two target creatures.
 timing=removal
 oracle=Distribute two -1/-1 counters among one or two target creatures.
+status=not supported: multiple-targets

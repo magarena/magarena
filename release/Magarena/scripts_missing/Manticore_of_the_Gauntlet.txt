@@ -9,3 +9,4 @@ pt=5/4
 ability=When SN enters the battlefield, put a -1/-1 counter on target creature you control. SN deals 3 damage to target opponent.
 timing=main
 oracle=When Manticore of the Gauntlet enters the battlefield, put a -1/-1 counter on target creature you control. Manticore of the Gauntlet deals 3 damage to target opponent.
+status=not supported: multiple-targets

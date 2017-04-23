@@ -7,3 +7,4 @@ cost={X}{U}{U}
 effect=X target creatures can't be blocked this turn. Until end of turn, those creatures gain "Whenever this creature deals combat damage to a player, draw a card."
 timing=main
 oracle=X target creatures can't be blocked this turn. Until end of turn, those creatures gain "Whenever this creature deals combat damage to a player, draw a card."
+status=not supported: multiple-targets

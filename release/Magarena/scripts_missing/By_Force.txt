@@ -7,3 +7,4 @@ cost={X}{R}
 effect=Destroy X target artifacts.
 timing=main
 oracle=Destroy X target artifacts.
+status=not supported: multiple-targets

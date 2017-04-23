@@ -8,3 +8,4 @@ ability=Cycling {2}
 effect=Return up to two target creatures to their owners' hands.
 timing=main
 oracle=Return up to two target creatures to their owners' hands.\nCycling {2}
+status=not supported: multiple-targets

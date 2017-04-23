@@ -8,3 +8,4 @@ ability=Cycling {2}
 effect=Return up to two target creature cards from your graveyard to your hand.
 timing=main
 oracle=Return up to two target creature cards from your graveyard to your hand.\nCycling {2}
+status=not supported: multiple-targets

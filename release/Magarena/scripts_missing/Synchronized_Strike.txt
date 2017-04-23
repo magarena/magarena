@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Untap up to two target creatures. They each get +2/+2 until end of turn.
 timing=removal
 oracle=Untap up to two target creatures. They each get +2/+2 until end of turn.
+status=not supported: multiple-targets
