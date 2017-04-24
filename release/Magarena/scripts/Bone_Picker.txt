@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={3}{B}
 pt=3/2
-ability=Flying, deathtouch
+ability=SN costs {3} less to cast if a creature died this turn.;\
+        Flying, deathtouch
 timing=main
 oracle=Bone Picker costs {3} less to cast if a creature died this turn.\nFlying, deathtouch
-requires_groovy_code
