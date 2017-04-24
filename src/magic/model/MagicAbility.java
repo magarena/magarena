@@ -433,10 +433,17 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.affinity(cardDef, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
         }
     },
-    SelfLessToCast("SN costs \\{1\\} less to cast for each " + ARG.ANY + "\\.", 10) {
+    SelfLessToCastEach("SN costs \\{1\\} less to cast for each " + ARG.ANY + "\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             card.add(MagicHandCastActivation.reduction(cardDef, MagicAmountParser.build(ARG.any(arg))));
+        }
+    },
+    SelfLessToCastCond("SN costs \\{" + ARG.NUMBER + "\\} less to cast if " + ARG.COND + "\\.", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final MagicCondition cond = MagicConditionParser.build(ARG.cond(arg));
+            card.add(MagicHandCastActivation.reduction(cardDef, ARG.number(arg), cond));
         }
     },
     CardLessToCast(ARG.WORDRUN + " spells you cast cost \\{" + ARG.NUMBER + "\\} less to cast\\.", 10) {

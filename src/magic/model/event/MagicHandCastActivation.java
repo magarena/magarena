@@ -156,6 +156,25 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
         };
     }
 
+    public static final MagicHandCastActivation reduction(final MagicCardDefinition cardDef, final int amt, final MagicCondition cond) {
+        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
+            @Override
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+                final int n = cond.accept(source) ? amt : 0;
+                return Collections.<MagicEvent>singletonList(
+                    new MagicPayManaCostEvent(
+                        source,
+                        source.getGameCost().reduce(n)
+                    )
+                );
+            }
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                cdef.setHandAct(this);
+            }
+        };
+    }
+
     public static final MagicHandCastActivation affinity(final MagicCardDefinition cardDef, final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
             @Override
