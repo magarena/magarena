@@ -44,12 +44,14 @@ public class MagicPredefinedFormat extends MagicFormat {
     public static final MagicFormat BATTLE_FOR_ZENDIKAR_BLOCK = new MagicPredefinedFormat("Battle for Zendikar block", "battle_for_zendikar_block");
     public static final MagicFormat SHADOWS_OVER_INNISTRAD_BLOCK = new MagicPredefinedFormat("Shadows over Innistrad block", "shadows_over_innistrad_block");
     public static final MagicFormat KALADESH_BLOCK = new MagicPredefinedFormat("Kaladesh block", "kaladesh_block");
+    public static final MagicFormat AMONKHET_BLOCK = new MagicPredefinedFormat("Amonkhet block", "amonkhet_block");
 
     private static final List<MagicFormat> values = Collections.unmodifiableList(Arrays.asList(
         STANDARD,
         MODERN,
         LEGACY,
         VINTAGE,
+        AMONKHET_BLOCK,
         KALADESH_BLOCK,
         SHADOWS_OVER_INNISTRAD_BLOCK,
         BATTLE_FOR_ZENDIKAR_BLOCK,
