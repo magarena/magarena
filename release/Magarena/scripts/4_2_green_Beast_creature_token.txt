@@ -1,0 +1,8 @@
+name=4/2 green Beast creature token
+token=Beast
+image=http://media.wizards.com/2017/dw466ytu5_akh/en_y6a4yyYcr2.png
+value=3
+type=Creature
+subtype=Beast
+color=g
+pt=4/2
