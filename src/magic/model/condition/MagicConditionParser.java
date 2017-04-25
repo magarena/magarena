@@ -677,6 +677,11 @@ public enum MagicConditionParser {
             return MagicCondition.CAST_ANOTHER_SPELL_THIS_TURN;
         }
     },
+    CastNonCreatureSpellThisTurn("you've cast a noncreature spell this turn") {
+        public  MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.CAST_A_NONCREATURE_SPELL_THIS_TURN;
+        }
+    },
     YouAreMonarch("you're the monarch") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOU_ARE_MONARCH;

@@ -829,6 +829,12 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition CAST_A_NONCREATURE_SPELL_THIS_TURN = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNonCreatureSpellsCast() > 0;
+        }
+    };
+
     public static MagicCondition DEFENDING_POISONED = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getGame().getDefendingPlayer().getPoison() > 0;
