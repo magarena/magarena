@@ -387,8 +387,9 @@ public class MagicCard
     public boolean hasColor(final MagicColor color) {
         if (isSplitCard()) {
             return color.hasColor(getColorFlags()) || getCardDefinition().getSplitDefinition().hasColor(color);
+        } else {
+            return color.hasColor(getColorFlags());
         }
-        return color.hasColor(getColorFlags());
     }
 
     @Override
