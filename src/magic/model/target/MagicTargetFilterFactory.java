@@ -2917,6 +2917,26 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
 
+    public static MagicTargetFilter<MagicPermanent> matchPlaneswalkerPrefix(final String arg, final String prefix, final Control control) {
+        for (final MagicColor c : MagicColor.values()) {
+            if (prefix.equalsIgnoreCase(c.getName())) {
+                return planeswalker(c, control);
+            }
+        }
+        for (final MagicSubType st : MagicSubType.values()) {
+            if (prefix.equalsIgnoreCase(st.toString())) {
+                return planeswalker(st, control);
+            }
+        }
+        final String withSuffix = prefix + " planeswalker";
+        if (single.containsKey(withSuffix)) {
+            @SuppressWarnings("unchecked")
+            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(withSuffix);
+            return permanent(filter, control);
+        }
+        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+    }
+
     public enum Control {
         Any,
         You,
@@ -3222,6 +3242,26 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasState(state) && filter.accept(source, player, target);
+            }
+        };
+    }
+
+    public static final MagicPermanentFilterImpl planeswalker(final MagicSubType subtype, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return target.isPlaneswalker() &&
+                    target.hasSubType(subtype) &&
+                    control.matches(player,target);
+            }
+        };
+    }
+
+    public static final MagicPermanentFilterImpl planeswalker(final MagicColor color, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return target.isPlaneswalker() &&
+                    target.hasColor(color) &&
+                    control.matches(player,target);
             }
         };
     }

@@ -199,6 +199,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
         }
     },
+    Planeswalker(ARG.WORDRUN + " planeswalker") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return  MagicTargetFilterFactory.matchPlaneswalkerPrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+        }
+    },
     Spell(ARG.WORDRUN + " spell") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchSpellPrefix(arg.group(), ARG.wordrun(arg));
