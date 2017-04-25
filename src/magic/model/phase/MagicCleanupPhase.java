@@ -59,6 +59,7 @@ public class MagicCleanupPhase extends MagicPhase {
         for (final MagicPlayer player : game.getPlayers()) {
             player.setSpellsCastLastTurn(player.getSpellsCast());
             player.setSpellsCast(0);
+            player.setNonCreatureSpellsCast(0);
         }
     }
 

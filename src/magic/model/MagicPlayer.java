@@ -66,6 +66,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     private int startingHandSize;
     private int maxHandSize;
     private int spellsCast;
+    private int nonCreatureSpellsCast;
     private int spellsCastLastTurn;
     private int creaturesAttackedThisTurn;
     private final MagicCardList hand;
@@ -111,6 +112,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         drawnCards=sourcePlayer.drawnCards;
         maxHandSize=sourcePlayer.maxHandSize;
         spellsCast=sourcePlayer.spellsCast;
+        nonCreatureSpellsCast=sourcePlayer.nonCreatureSpellsCast;
         spellsCastLastTurn=sourcePlayer.spellsCastLastTurn;
         creaturesAttackedThisTurn=sourcePlayer.creaturesAttackedThisTurn;
         hand=new MagicCardList(copyMap, sourcePlayer.hand);
@@ -155,6 +157,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
             drawnCards,
             maxHandSize,
             spellsCast,
+            nonCreatureSpellsCast,
             spellsCastLastTurn,
             creaturesAttackedThisTurn,
             hand.getUnorderedStateId(),
@@ -379,6 +382,18 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     public void incSpellsCast() {
         spellsCast++;
+    }
+
+    public int getNonCreatureSpellsCast() {
+        return nonCreatureSpellsCast;
+    }
+
+    public void setNonCreatureSpellsCast(final int count) {
+        nonCreatureSpellsCast=count;
+    }
+
+    public void incNonCreatureSpellsCast() {
+        nonCreatureSpellsCast++;
     }
 
     public void setSpellsCast(final int count) {
