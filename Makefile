@@ -344,7 +344,7 @@ ref/MagicCompRules_latest.txt:
 	wget `curl http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules | grep -o "http://media.*\.txt"` -O $@
 
 ref/rules.txt: ref/MagicCompRules_latest.txt
-	iconv -f UTF-16LE -t UTF-8 $^ | fmt -s > $@
+	iconv -f ISO-8859-1 -t UTF-8 $^ | fmt -s > $@
 	flip -bu $@
 
 resources/magic/data/icons/missing_card.png:
