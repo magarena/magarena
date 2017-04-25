@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={X}{U}{U}
-effect=Draw X cards, then discard a card.
+effect=Draw X cards,~then discard a card.
 timing=removal
 oracle=Draw X cards, then discard a card.
