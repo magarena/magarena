@@ -65,6 +65,14 @@ public enum MagicConditionParser {
             );
         }
     },
+    ControlAtLeast2("you control at least " + ARG.AMOUNT + " " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.YouControlAtLeast(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                ARG.amount(arg)
+            );
+        }
+    },
     ControlAtMost("you control " + ARG.AMOUNT + " or fewer " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlAtMost(
