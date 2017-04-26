@@ -34,7 +34,7 @@ public final class DuelPanel extends JPanel {
     private SwingGameController controller;
 
     private DuelSideBarPanel sidebarPanel;
-    private ImageModeBattlefieldPanel battlefieldPanel;
+    private BattlefieldPanel battlefieldPanel;
     private ResolutionProfileResult result;
 
     public DuelPanel() {
@@ -46,7 +46,7 @@ public final class DuelPanel extends JPanel {
 
         this.controller = aController;
 
-        battlefieldPanel = new ImageModeBattlefieldPanel(controller);
+        battlefieldPanel = new BattlefieldPanel(controller);
 
         sidebarPanel = new DuelSideBarPanel(controller);
 
@@ -218,7 +218,6 @@ public final class DuelPanel extends JPanel {
         assert SwingUtilities.isEventDispatchThread();
 
         final GameLayoutInfo info = new GameLayoutInfo(this.getSize());
-        final ImageModeBattlefieldPanel battlefield = (ImageModeBattlefieldPanel) battlefieldPanel;
 
         info.setTurnPanelLayout(sidebarPanel.getTurnPanelLayout(this));
 
@@ -230,8 +229,8 @@ public final class DuelPanel extends JPanel {
             info.setHandButtonLayout(playerIndex, sidebarPanel.getHandButtonLayout(playerInfo, this));
 
             final ImageBattlefieldViewer battlefieldViewer = playerIndex == 0
-                ? battlefield.imagePlayerPermanentViewer
-                : battlefield.imageOpponentPermanentViewer;
+                ? battlefieldPanel.imagePlayerPermanentViewer
+                : battlefieldPanel.imageOpponentPermanentViewer;
 
             info.setPermanentsZoneLayout(
                 playerIndex,

@@ -14,7 +14,7 @@ import magic.ui.widget.duel.viewer.ImageCombatViewer;
 import magic.ui.widget.duel.viewer.PlayerZoneViewer;
 
 @SuppressWarnings("serial")
-public class ImageModeBattlefieldPanel extends JPanel {
+public class BattlefieldPanel extends JPanel {
 
     private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
@@ -23,7 +23,7 @@ public class ImageModeBattlefieldPanel extends JPanel {
     public final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
 
-    public ImageModeBattlefieldPanel(final SwingGameController controller) {
+    public BattlefieldPanel(final SwingGameController controller) {
 
         playerZoneViewer = controller.getPlayerZoneViewer();
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
