@@ -27,7 +27,6 @@ import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
 import magic.exception.UndoClickedException;
 import magic.game.state.GameState;
@@ -56,7 +55,6 @@ import magic.translate.StringContext;
 import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.MagicFileChoosers;
-import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
@@ -184,7 +182,7 @@ public class SwingGameController implements IUIGameController {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                userActionPanel.enableButton(MagicImages.getIcon(MagicIcon.FORWARD));
+                userActionPanel.enableButton();
             }
         });
     }

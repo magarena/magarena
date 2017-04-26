@@ -57,6 +57,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
         actionPanel.add(busyLabel,"1");
 
         actionButton=new JButton();
+        actionButton.setIcon(MagicImages.getIcon(MagicIcon.FORWARD));
         actionButton.setFocusable(false);
         actionButton.addActionListener(this);
         actionButton.addMouseListener(new MouseAdapter() {
@@ -141,10 +142,9 @@ public class UserActionPanel extends JPanel implements ActionListener {
         undoButton.setEnabled(allowUndo);
     }
 
-    public void enableButton(final ImageIcon icon) {
+    public void enableButton() {
         actionEnabled=true;
         enableUndoButton(false);
-        actionButton.setIcon(icon);
         actionCardLayout.show(actionPanel,"2");
         repaint();
     }
