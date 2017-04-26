@@ -179,31 +179,22 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void enableForwardButton() {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                userActionPanel.enableButton();
-            }
+        SwingUtilities.invokeLater(() -> {
+            userActionPanel.enableButton();
         });
     }
 
     @Override
     public void disableActionButton(final boolean thinking) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                userActionPanel.disableButton(thinking);
-            }
+        SwingUtilities.invokeLater(() -> {
+            userActionPanel.disableButton(thinking);
         });
     }
 
     private void disableActionUndoButtons() {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                userActionPanel.disableButton(false);
-                userActionPanel.enableUndoButton(true);
-            }
+        SwingUtilities.invokeLater(() -> {
+            userActionPanel.disableButton(false);
+            userActionPanel.enableUndoButton(true);
         });
     }
 
@@ -232,11 +223,8 @@ public class SwingGameController implements IUIGameController {
     }
 
     private void waitForUIUpdates() {
-        invokeAndWait(new Runnable() {
-            @Override
-            public void run() {
-                //do nothing, ensure that event dispatch queue is cleared
-            }
+        invokeAndWait(() -> {
+            //do nothing, ensure that event dispatch queue is cleared
         });
     }
 
@@ -262,16 +250,13 @@ public class SwingGameController implements IUIGameController {
     private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
         final AtomicReference<E> ref = new AtomicReference<>();
         final AtomicReference<Exception> except = new AtomicReference<>();
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    final E content = func.call();
-                    ref.set(content);
-                    userActionPanel.setContentPanel(content);
-                } catch (Exception ex) {
-                    except.set(ex);
-                }
+        SwingUtilities.invokeLater(() -> {
+            try {
+                final E content = func.call();
+                ref.set(content);
+                userActionPanel.setContentPanel(content);
+            } catch (Exception ex) {
+                except.set(ex);
             }
         });
         waitForInput();
@@ -555,11 +540,8 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void focusViewers(final int handGraveyard) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                gamePanel.focusViewers(handGraveyard);
-            }
+        SwingUtilities.invokeLater(() -> {
+            gamePanel.focusViewers(handGraveyard);
         });
     }
 
@@ -570,11 +552,8 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void showCards(final MagicCardList cards) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                gamePanel.showCards(cards);
-            }
+        SwingUtilities.invokeLater(() -> {
+            gamePanel.showCards(cards);
         });
     }
 
@@ -596,11 +575,8 @@ public class SwingGameController implements IUIGameController {
     @Override
     public void clearValidChoices() {
         // called from both edt and application threads.
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                clearDisplayedValidChoices();
-            }
+        SwingUtilities.invokeLater(() -> {
+            clearDisplayedValidChoices();
         });
         showMessage(MagicSource.NONE, "");
     }
@@ -617,14 +593,11 @@ public class SwingGameController implements IUIGameController {
     @Override
     public void setValidChoices(final Set<?> aValidChoices, final boolean aCombatChoice) {
         assert !SwingUtilities.isEventDispatchThread();
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                clearDisplayedValidChoices();
-                validChoices = new HashSet<>(aValidChoices);
-                combatChoice = aCombatChoice;
-                showValidChoices();
-            }
+        SwingUtilities.invokeLater(() -> {
+            clearDisplayedValidChoices();
+            validChoices = new HashSet<>(aValidChoices);
+            combatChoice = aCombatChoice;
+            showValidChoices();
         });
     }
 
@@ -835,14 +808,11 @@ public class SwingGameController implements IUIGameController {
             updateGameView();
         } else {
             game.advanceDuel();
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        gamePanel.close();
-                    } catch (InvalidDeckException ex) {
-                        ScreenController.showWarningMessage(ex.getMessage());
-                    }
+            SwingUtilities.invokeLater(() -> {
+                try {
+                    gamePanel.close();
+                } catch (InvalidDeckException ex) {
+                    ScreenController.showWarningMessage(ex.getMessage());
                 }
             });
             running.set(false);
@@ -872,11 +842,8 @@ public class SwingGameController implements IUIGameController {
     private void showEndGameMessage() {
         assert !SwingUtilities.isEventDispatchThread();
         if (!MagicSystem.isAiVersusAi() && !MagicSystem.isDebugMode()) {
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    duelPane.getDialogPanel().showEndGameMessage(SwingGameController.this);
-                }
+            SwingUtilities.invokeLater(() -> {
+                duelPane.getDialogPanel().showEndGameMessage(SwingGameController.this);
             });
         }
         showMessage(MagicSource.NONE,
