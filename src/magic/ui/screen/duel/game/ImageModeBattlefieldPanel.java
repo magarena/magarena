@@ -7,11 +7,10 @@ import java.beans.PropertyChangeListener;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.widget.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.widget.duel.viewer.ImageCombatViewer;
 import magic.ui.widget.duel.viewer.PlayerZoneViewer;
-import magic.ui.widget.duel.sidebar.StackViewer;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
 
 @SuppressWarnings("serial")
 public class ImageModeBattlefieldPanel extends BattlefieldPanel {
@@ -22,7 +21,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     public final ImageBattlefieldViewer imagePlayerPermanentViewer;
     public final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
-    private final StackViewer imageStackViewer;
 
     public ImageModeBattlefieldPanel(final SwingGameController controller) {
 
@@ -30,7 +28,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
-        imageStackViewer = new StackViewer(controller);
 
         playerZoneViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
                 new PropertyChangeListener() {
@@ -42,7 +39,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
                 });
 
         setLayout(null);
-        add(imageStackViewer);
         add(playerZoneViewer);
         add(imagePlayerPermanentViewer);
         add(imageOpponentPermanentViewer);
@@ -57,7 +53,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imagePlayerPermanentViewer.update();
         imageOpponentPermanentViewer.update();
         imageCombatViewer.update();
-        imageStackViewer.update();
     }
 
     @Override
@@ -77,11 +72,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imagePlayerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImagePlayerPermanentViewer));
         imageOpponentPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageOpponentPermanentViewer));
         imageCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageCombatViewer));
-    }
-
-    @Override
-    public StackViewer getStackViewer() {
-        return imageStackViewer;
     }
 
     @Override

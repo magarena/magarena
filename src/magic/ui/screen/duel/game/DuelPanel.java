@@ -48,7 +48,7 @@ public final class DuelPanel extends JPanel {
 
         battlefieldPanel = new ImageModeBattlefieldPanel(controller);
 
-        sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
+        sidebarPanel = new DuelSideBarPanel(controller);
 
         updateView();
 

@@ -64,11 +64,11 @@ public class LogStackViewer extends JPanel {
     private int stackCount = 0;
     private final IUIGameController controller;
 
-    LogStackViewer(StackViewer aStackViewer, SwingGameController controller) {
+    LogStackViewer(SwingGameController controller) {
 
-        this.stackViewer = aStackViewer;
         this.controller = controller;
 
+        stackViewer = new StackViewer(controller);
         logViewer = new LogViewer(controller);
 
         logTitleBar = new ActionButtonTitleBar(MText.get(_S4), getLogActionButtons());
@@ -253,5 +253,6 @@ public class LogStackViewer extends JPanel {
 
     void update() {
         logViewer.update();
+        stackViewer.update();
     }
 }

@@ -38,11 +38,11 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private final SwingGameController controller;
     private final List<LayoutSlot> layoutSlots = new ArrayList<>();
 
-    public DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
+    public DuelSideBarPanel(final SwingGameController controller) {
 
         this.controller = controller;
 
-        logStackViewer = new LogStackViewer(imageStackViewer, controller);
+        logStackViewer = new LogStackViewer(controller);
         controller.setLogStackViewer(logStackViewer);
 
         gameStatusPanel= new GameStatusPanel(controller);
