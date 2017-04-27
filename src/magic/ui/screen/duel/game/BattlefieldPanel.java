@@ -2,9 +2,12 @@ package magic.ui.screen.duel.game;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
@@ -46,6 +49,19 @@ public class BattlefieldPanel extends JPanel {
         add(imageCombatViewer);
 
         setOpaque(false);
+
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (controller.waitingForUser() && e.getClickCount() == 2) {
+                    if (SwingUtilities.isLeftMouseButton(e)) {
+                        controller.actionClicked();
+                    } else if (SwingUtilities.isRightMouseButton(e)) {
+                        controller.passKeyPressed();
+                    }
+                }
+            }
+        });
     }
 
     public void doUpdate() {

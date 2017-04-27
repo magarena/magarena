@@ -1145,4 +1145,8 @@ public class SwingGameController implements IUIGameController {
             }
         }
     }
+
+    boolean waitingForUser() {
+        return userActionPanel.isActionEnabled();
+    }
 }
