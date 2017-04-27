@@ -2,6 +2,7 @@ package magic.ui.widget.duel.viewer;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Insets;
@@ -10,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -20,11 +22,19 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.message.TextLabel;
+import magic.ui.widget.throbber.AbstractThrobber;
+import magic.ui.widget.throbber.ImageThrobber;
 
 @SuppressWarnings("serial")
 public class UserActionPanel extends JPanel implements ActionListener {
+
+    private static final BufferedImage BUSY_IMAGE = ImageHelper.getBufferedImage(
+        (ImageIcon) ImageHelper.getRecoloredIcon(
+            MagicIcon.AI_THINKING, Color.BLACK, Color.GRAY)
+    );
 
     public static final int TEXT_WIDTH=230;
 
@@ -35,6 +45,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     private final CardLayout actionCardLayout;
     private final JPanel contentPanel;
     private boolean actionEnabled;
+    private final AbstractThrobber busyItem;
 
     public UserActionPanel(final SwingGameController controller) {
 
@@ -52,9 +63,11 @@ public class UserActionPanel extends JPanel implements ActionListener {
         final JLabel emptyLabel=new JLabel("");
         actionPanel.add(emptyLabel,"0");
 
-        final JLabel busyLabel=new JLabel(MagicImages.getIcon(MagicIcon.BUSY));
-        busyLabel.setHorizontalAlignment(JLabel.CENTER);
-        actionPanel.add(busyLabel,"1");
+        busyItem = new ImageThrobber.Builder(BUSY_IMAGE)
+            .antiAlias(true)
+            .spinPeriod(3000)
+            .build();
+        actionPanel.add(busyItem,"1");
 
         actionButton=new JButton();
         actionButton.setIcon(MagicImages.getIcon(MagicIcon.FORWARD));

@@ -74,6 +74,8 @@ public class ImageThrobber extends AbstractThrobber {
                 displayImage = isColorSet
                     ? ImageHelper.getColoredImage(sourceImage, getForeground())
                     : sourceImage;
+                isExactFit = (sourceImage.getWidth() == getWidth() && sourceImage.getHeight() == getHeight());
+                centerPoint = new Point(getWidth() / 2, getHeight() / 2);
             }
         });
 
