@@ -34,7 +34,7 @@ public final class DuelPanel extends JPanel {
     private SwingGameController controller;
 
     private DuelSideBarPanel sidebarPanel;
-    private BattlefieldPanel battlefieldPanel;
+    private ImageModeBattlefieldPanel battlefieldPanel;
     private ResolutionProfileResult result;
 
     public DuelPanel() {

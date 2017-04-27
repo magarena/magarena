@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import javax.swing.JPanel;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
@@ -13,7 +14,7 @@ import magic.ui.widget.duel.viewer.ImageCombatViewer;
 import magic.ui.widget.duel.viewer.PlayerZoneViewer;
 
 @SuppressWarnings("serial")
-public class ImageModeBattlefieldPanel extends BattlefieldPanel {
+public class ImageModeBattlefieldPanel extends JPanel {
 
     private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
@@ -47,7 +48,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         setOpaque(false);
     }
 
-    @Override
     public void doUpdate() {
         playerZoneViewer.update();
         imagePlayerPermanentViewer.update();
@@ -55,18 +55,15 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imageCombatViewer.update();
     }
 
-    @Override
     public void showCards(final MagicCardList cards) {
         playerZoneViewer.showCards(cards);
         playerZoneViewer.setSelectedTab(5);
     }
 
-    @Override
     public void focusViewers(int handGraveyard) {
         playerZoneViewer.setSelectedTab(handGraveyard);
     }
 
-    @Override
     public void resizeComponents(ResolutionProfileResult result) {
         playerZoneViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageHandGraveyardViewer));
         imagePlayerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImagePlayerPermanentViewer));
@@ -81,7 +78,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         g.drawImage(overlayImage, 0, 0, this);
     }
 
-    @Override
     public void highlightCard(CardViewerInfo cardInfo, boolean b) {
         if (!imagePlayerPermanentViewer.highlightCard(cardInfo, b))
             if (!imageOpponentPermanentViewer.highlightCard(cardInfo, b))
