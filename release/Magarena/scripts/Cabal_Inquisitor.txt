@@ -8,4 +8,4 @@ cost={1}{B}
 pt=1/1
 ability={1}{B}, {T}, Exile two cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery, and only if seven or more cards are in your graveyard.
 timing=main
-oracle=Threshold — {1}{B}, {T}, Exile two cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery, and only if seven or more cards are in your graveyard.
+oracle=Threshold — {1}{B}, {T}, Exile two cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery and only if seven or more cards are in your graveyard.
