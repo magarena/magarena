@@ -74,17 +74,79 @@ Thank you for your support and have fun!
 
 Release 1.84 (April 30, 2017)
 ============
+lodici
+melvin
+ShawnieBoy
+vmassuchetto
+
+- include the set Amonkhet and update banned and restricted list
+
+- Arch Linux package for Magarena in AUR
 
 - changed/added the following to the user interface:
   * double-click an empty area of the battlefield to pass (issue #1070)
   * new animation image when AI is thinking during a game
-  * play click sound when rotating style/layout dial.
+  * play click sound when rotating style/layout dial
+
+- added the following to the card script:
+  * condition: <n> or fewer cards in hand
+  * condition: you've cast a noncreature spell this turn
+  * trigger: Whenever you cycle or discard a card, <effect>
+  * ability: <spell> you cast cost {n} less to cast
+  * ability: SN costs {n} less to cast if <condition>
+  * ability: Embalm <cost>
 
 - fixed the following bugs:
-  * sidebar components repositioning during a game (issue #1102)
   * style/layout dial out of sync on right click (issue #1097)
   * top decks exception if deck file is missing (issue #1093)
+  * various grammatical errors in effect text (issue #1095 and #1100)
+  * sidebar components repositioning during a game (issue #1102)
+  * Vessel of Nascency does not move cards to graveyard if option is not taken (issue #1094)
+  * Cat Soldier creature token missing the Soldier subtype
 
+- added the following cards:
+Ajani's Comrade, Angel of Sanctions, Angler Drake, Anointer Priest,
+Archfiend of Ifnir, Aven Initiate, Aven Wind Guide, Baleful Ammit,
+Binding Mummy, Blazing Volley, Blighted Bat, Bloodlust Inciter,
+Bloodrage Brawler, Bone Picker, Bontu's Monument, Canyon Slough,
+Careful Consideration, Cartouche of Ambition, Cartouche of Knowledge,
+Cartouche of Solidarity, Cartouche of Zeal, Cast Out, Celestial Mantle,
+Censor, Channeler Initiate, Colossapede, Companion of the Trials,
+Compelling Argument, Compulsory Rest, Consuming Fervor,
+Cradle of the Accursed, Crocodile of the Crossing, Cryptic Serpent,
+Curator of Mysteries, Deem Worthy, Desert Cerodon, Desiccated Naga,
+Dissenter's Deliverance, Djeru's Resolve, Doomed Dissenter,
+Drake Haven, Dread Wanderer, Dune Beetle, Electrify, Enigma Drake,
+Faith of the Devoted, Fan Bearer, Festering Mummy, Fetid Pools,
+Final Reward, Forsake the Worldly, Galestrike, Graceful Cat,
+Grasping Dunes, Greater Sandwurm, Gremlin Infestation, Grim Strider,
+Guardian of the Great Conduit, Haunting Hymn, Haze of Pollen,
+Hazoret's Monument, Hazoret the Fervent, Hekma Sentinels,
+Hieroglyphic Illumination, Honed Khopesh, Honored Crop-Captain,
+Honored Hydra, Horror of the Broken Lands, Hyena Pack,
+Illusory Wrappings, Initiate's Companion, Irrigated Farmland,
+Kefnet's Monument, Khenra Charioteer, Labyrinth Guardian,
+Lay Claim, Lifecraft Awakening, Liliana, Death's Majesty,
+Liliana's Mastery, Limits of Solidarity, Luxa River Shrine, Manglehorn,
+Metalwork Colossus, Miasmic Mummy, Might of Old Krosa, Minotaur Sureshot,
+Neheb, the Worthy, Nimble-Blade Khenra, Oashra Cultivator, Oath of Ajani,
+Oketra's Attendant, Oketra's Monument, Oketra the True, Ornery Kudu,
+Painful Lesson, Pathmaker Initiate, Pitiless Vizier, Pouncing Cheetah,
+Protection of the Hekma, Pull from Tomorrow, Pursue Glory, Regal Caracal,
+Renegade Firebrand, Rhonas's Monument, Rhonas the Indomitable,
+River Serpent, Runehorn Hellkite, Ruthless Sniper, Sacred Cat,
+Samut, Voice of Dissent, Scalding Tongs, Scaled Behemoth,
+Scattered Groves, Scribe of the Mindful, Seeker of Insight,
+Seraph of the Suns, Shadowstorm Vizier, Shed Weakness, Shefet Monitor,
+Sheltered Thicket, Shimmerscale Drake, Sixth Sense, Slither Blade,
+Sparring Mummy, Stinging Shot, Stir the Sands, Sulfurous Blast,
+Sunscorched Desert, Supply Caravan, Sweltering Suns, Tah-Crop Skirmisher,
+Tapestry of the Ages, Tattered Mummy, Temmet, Vizier of Naktamun,
+Those Who Serve, Thresher Lizard, Throne of the God-Pharaoh,
+Trial of Ambition, Trial of Knowledge, Trial of Solidarity,
+Trial of Strength, Trial of Zeal, Unwavering Initiate, Violent Impact,
+Vizier of Tumbling Sands, Warfire Javelineer, Wasteland Scorpion,
+Wayward Servant, Winds of Rebuke, Winged Shepherd, Zenith Seeker
 
 Release 1.83 (March 31, 2017)
 ============
