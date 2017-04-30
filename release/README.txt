@@ -75,6 +75,17 @@ Thank you for your support and have fun!
 Release 1.84 (April 30, 2017)
 ============
 
+- changed/added the following to the user interface:
+  * double-click an empty area of the battlefield to pass (issue #1070)
+  * new animation image when AI is thinking during a game
+  * play click sound when rotating style/layout dial.
+
+- fixed the following bugs:
+  * sidebar components repositioning during a game (issue #1102)
+  * style/layout dial out of sync on right click (issue #1097)
+  * top decks exception if deck file is missing (issue #1093)
+
+
 Release 1.83 (March 31, 2017)
 ============
 lodici
