@@ -5,7 +5,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{W}
-effect=Target player sacrifices an attacking creature. You create X 1/1 white Soldier creature tokens, where X is that creature's toughness.
+ability=Cast SN with AI only if an opponent controls an attacking creature.
 timing=attack
 oracle=Target player sacrifices an attacking creature. You create X 1/1 white Soldier creature tokens, where X is that creature's toughness.
-status=needs groovy
+requires_groovy_code
