@@ -9,3 +9,4 @@ ability=Basic landcycling {2}
 effect=Draw cards equal to the number of cards in your hand, then discard a card for each card drawn this way.
 timing=draw
 oracle=Draw cards equal to the number of cards in your hand, then discard a card for each card drawn this way.\nBasic landcycling {2}
+#Takes into account draw replacement effects
