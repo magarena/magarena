@@ -5,6 +5,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}
-effect=Destroy target creature. You draw X cards and you lose X life, where X is the number of counters on that creature.
+effect=Destroy target creature.~You draw X cards and you lose X life, where X is the number of counters on that creature.
 timing=removal
 oracle=Destroy target creature. You draw X cards and you lose X life, where X is the number of counters on that creature.
