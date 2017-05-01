@@ -6,7 +6,7 @@
                 permanent,
                 permanent.getEnchantedPermanent(),
                 this,
-                "PN gains control of RN. Untap that permanent. It gains haste until end of turn."
+                "PN gains control of RN until end of turn. Untap that permanent. It gains haste until end of turn."
             );
         }
 
@@ -26,7 +26,7 @@
                 permanent,
                 permanent.getEnchantedPermanent(),
                 this,
-                "PN gains control of RN. Untap that permanent. It gains haste until end of turn."
+                "PN gains control of RN until end of turn. Untap that permanent. It gains haste until end of turn."
             );
         }
         @Override
