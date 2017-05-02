@@ -7,4 +7,3 @@ cost={4}
 ability={2}, {T}: Draw a card. Activate this ability only if you've cast a noncreature spell this turn.
 timing=artifact
 oracle={2}, {T}: Draw a card. Activate this ability only if you've cast a noncreature spell this turn.
-status=not supported: no-info

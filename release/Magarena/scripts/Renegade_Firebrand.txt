@@ -10,4 +10,3 @@ pt=3/2
 ability=As long as you control a Chandra planeswalker, SN gets +1/+0 and has first strike.
 timing=main
 oracle=As long as you control a Chandra planeswalker, Renegade Firebrand gets +1/+0 and has first strike.
-status=needs groovy
