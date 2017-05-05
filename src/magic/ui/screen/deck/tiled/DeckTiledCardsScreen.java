@@ -1,14 +1,12 @@
 package magic.ui.screen.deck.tiled;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
+import java.util.stream.Collectors;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.model.MagicType;
 import magic.translate.MText;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
@@ -44,16 +42,10 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
     }
 
     private List<MagicCardDefinition> getFilteredDeck(MagicDeck deck, CardTypeFilter filterType) {
-        List<MagicCardDefinition> cards = new ArrayList<>();
-        for (MagicCardDefinition cardDef : deck) {
-            Set<MagicType> cardType = cardDef.getCardType();
-            if (filterType == CardTypeFilter.ALL
-                    || cardType.contains(filterType.getMagicType())) {
-                cards.add(cardDef);
-            }
-        }
-        Collections.sort(cards, SORT_BY_NAME);
-        return cards;
+        return deck.stream()
+            .filter(c -> filterType == CardTypeFilter.ALL || c.getCardType().contains(filterType.getMagicType()))
+            .sorted(SORT_BY_NAME)
+            .collect(Collectors.toList());
     }
 
     private void showCards(CardTypeFilter filter) {
