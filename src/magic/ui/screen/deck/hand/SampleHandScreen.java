@@ -1,13 +1,10 @@
 package magic.ui.screen.deck.hand;
 
-import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 import magic.data.MagicIcon;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCardList;
 import magic.model.MagicDeck;
-import magic.model.MagicRandom;
 import magic.translate.MText;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
@@ -37,7 +34,7 @@ public class SampleHandScreen extends HeaderFooterScreen {
         content = new CardsCanvas();
         content.setAnimationDelay(50, 20);
         content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        content.refresh(getRandomHand(deck));
+        content.refresh(getSampleHand(deck));
         setMainContent(content);
         deckStatusPanel.setDeck(deck, false);
         setHeaderContent(deckStatusPanel);
@@ -48,23 +45,13 @@ public class SampleHandScreen extends HeaderFooterScreen {
 
     private void dealSampleHand() {
         if (!content.isBusy()) {
-            content.refresh(getRandomHand(deck));
+            content.refresh(getSampleHand(deck));
         }
     }
 
-    private List<MagicCard> getRandomHand(final MagicDeck deck) {
-        final MagicCardList library = new MagicCardList();
-        for (MagicCardDefinition magicCardDef : deck) {
-            library.add(new MagicCard(magicCardDef, null, 0));
-        }
-        library.shuffle(MagicRandom.nextRNGInt());
-        if (library.size() >= 7) {
-            final List<MagicCard> hand = library.subList(0, 7);
-            Collections.sort(hand);
-            return hand;
-        } else {
-            return null;
-        }
+    private List<MagicCardDefinition> getSampleHand(MagicDeck deck) {
+        return deck.getRandomCards(7).stream()
+            .sorted(MagicCardDefinition.SORT_BY_NAME)
+            .collect(Collectors.toList());
     }
-
 }
