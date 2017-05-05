@@ -3,17 +3,20 @@ package magic.ui.screen.duel.mulligan;
 import java.awt.event.KeyEvent;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicCardList;
-import magic.ui.ScreenController;
 import magic.translate.MText;
-import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
-import magic.ui.widget.cards.canvas.CardsCanvas;
-import magic.ui.widget.duel.choice.MulliganChoicePanel;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
+import magic.ui.screen.HandZoneLayout;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.cards.canvas.CardsCanvas;
+import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
+import magic.ui.widget.duel.choice.MulliganChoicePanel;
 
 @SuppressWarnings("serial")
 public class MulliganScreen extends HeaderFooterScreen {
@@ -29,6 +32,7 @@ public class MulliganScreen extends HeaderFooterScreen {
     private CardsCanvas cardsCanvas;
     private MulliganChoicePanel choicePanel;
     private final MagicCardList hand;
+    private OptionsPanel optionsPanel;
 
     public MulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         super(MText.get(_S1));
@@ -36,7 +40,9 @@ public class MulliganScreen extends HeaderFooterScreen {
         this.hand = hand;
         isActive = true;
         setMainContent(getScreenContent(hand));
+        optionsPanel = new OptionsPanel(this);
         setHeaderContent(new HeaderPanel(choicePanel.getGameController().getGame()));
+        setHeaderOptions(optionsPanel);
         setLeftFooter(MenuButton.build(this::doCancel, MText.get(_S2)));
         setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S3)));
         addToFooter(MenuButton.build(this::doMulligan,
@@ -53,6 +59,7 @@ public class MulliganScreen extends HeaderFooterScreen {
 
     private JPanel getScreenContent(final MagicCardList hand) {
         cardsCanvas = new CardsCanvas();
+        setCardsLayout();
         cardsCanvas.setAnimationEnabled(true);
         cardsCanvas.setAnimationDelay(50, 20);
         cardsCanvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
@@ -100,4 +107,38 @@ public class MulliganScreen extends HeaderFooterScreen {
             }
         }
     }
+
+    private void setCardsLayout() {
+        switch (HandZoneLayout.getLayout()) {
+        case STACKED_DUPLICATES:
+            cardsCanvas.setStackDuplicateCards(true);
+            break;
+        case NO_STACKING:
+            cardsCanvas.setStackDuplicateCards(false);
+            break;
+        default:
+            throw new IndexOutOfBoundsException();
+        }
+    }
+
+    void doSwitchLayout() {
+        HandZoneLayout.setNextLayout();
+        setCardsLayout();
+    }
+
+    private void doSaveSettings() {
+        HandZoneLayout.save();
+        GeneralConfig.getInstance().save();
+    }
+
+    @Override
+    public boolean isScreenReadyToClose(MScreen nextScreen) {
+        if (super.isScreenReadyToClose(nextScreen)) {
+            doSaveSettings();
+            return true;
+        }
+        return false;
+    }
+
+
 }
