@@ -59,6 +59,7 @@ public class CardsCanvas extends JPanel {
     private int currentCardIndex = -1;
     private boolean refreshLayout = false;
     private ICardsCanvasListener listener = new NullCardsCanvasListener();
+    private List<? extends IRenderableCard> renderableCards;
 
     public CardsCanvas() {
 
@@ -220,6 +221,10 @@ public class CardsCanvas extends JPanel {
     }
 
     public void refresh(List<? extends IRenderableCard> newCards, Dimension aSize) {
+        if (newCards == null) {
+            return;
+        }
+        renderableCards = newCards;
         List<CardCanvas> canvasCards = getCanvasCards(newCards);
         this.preferredCardSize = aSize;
         refreshLayout = true;
@@ -322,6 +327,9 @@ public class CardsCanvas extends JPanel {
     }
 
     private void drawCardCount(Graphics g, int X, int Y, int W, int H, final CardCanvas card) {
+        if (cardTypeCount.isEmpty()) {
+            return;
+        }
         final int cardCount = cardTypeCount.get(card.hashCode());
         if (cardCount > 1) {
             g.setColor(Color.WHITE);
@@ -433,6 +441,14 @@ public class CardsCanvas extends JPanel {
 
     public void setStackDuplicateCards(boolean stackDuplicateCards) {
         this.stackDuplicateCards = stackDuplicateCards;
+        if (renderableCards != null) {
+            List<CardCanvas> canvasCards = getCanvasCards(renderableCards);
+            refreshLayout = true;
+            currentCardIndex = -1;
+            createListOfCardCanvasObjects(canvasCards);
+            maxCardsVisible = cards.size();
+            repaint();
+        }
     }
 
     public void setCard(IRenderableCard aCard) {
