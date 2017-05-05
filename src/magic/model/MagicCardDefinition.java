@@ -19,6 +19,12 @@ import magic.ui.MagicCardImages;
 
 public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
+    /**
+     * Comparator for sorting instances of {@code MagicCardDefinition} by distinct name.
+     */
+    public static final Comparator<MagicCardDefinition> SORT_BY_NAME =
+        (o1, o2) -> o1.getDistinctName().compareTo(o2.getDistinctName());
+
     private static final List<String> unsupportedStatuses = new ArrayList<>();
     private static boolean isSorted = false;
 

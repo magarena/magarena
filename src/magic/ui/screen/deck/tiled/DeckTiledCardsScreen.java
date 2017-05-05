@@ -1,7 +1,6 @@
 package magic.ui.screen.deck.tiled;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.swing.SwingUtilities;
@@ -14,9 +13,6 @@ import magic.ui.screen.widget.SampleHandActionButton;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen extends HeaderFooterScreen {
-
-    private static final Comparator<MagicCardDefinition> SORT_BY_NAME =
-        (o1, o2) -> o1.getDistinctName().compareTo(o2.getDistinctName());
 
     // translatable strings
     private static final String _S1 = "Deck image view";
@@ -44,7 +40,7 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
     private List<MagicCardDefinition> getFilteredDeck(MagicDeck deck, CardTypeFilter filterType) {
         return deck.stream()
             .filter(c -> filterType == CardTypeFilter.ALL || c.getCardType().contains(filterType.getMagicType()))
-            .sorted(SORT_BY_NAME)
+            .sorted(MagicCardDefinition.SORT_BY_NAME)
             .collect(Collectors.toList());
     }
 
