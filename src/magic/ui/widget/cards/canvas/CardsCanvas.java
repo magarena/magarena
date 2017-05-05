@@ -1,8 +1,6 @@
 package magic.ui.widget.cards.canvas;
 
 import java.awt.BasicStroke;
-import javax.swing.JPanel;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -23,12 +21,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
+import javax.swing.JPanel;
 import magic.model.IRenderableCard;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.helpers.MouseHelper;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -222,8 +219,8 @@ public class CardsCanvas extends JPanel {
         }
     }
 
-    public void refresh(final List<MagicCard> newCards, final Dimension aSize) {
-        final List<CardCanvas> canvasCards = getCanvasCards(newCards);
+    public void refresh(List<? extends IRenderableCard> newCards, Dimension aSize) {
+        List<CardCanvas> canvasCards = getCanvasCards(newCards);
         this.preferredCardSize = aSize;
         refreshLayout = true;
         currentCardIndex = -1;
@@ -236,11 +233,11 @@ public class CardsCanvas extends JPanel {
         }
     }
 
-    public void refresh(final List<MagicCard> newCards) {
+    public void refresh(List<? extends IRenderableCard> newCards) {
         refresh(newCards, preferredCardSize);
     }
 
-    private List<CardCanvas> getCanvasCards(List<MagicCard> cards) {
+    private List<CardCanvas> getCanvasCards(List<? extends IRenderableCard> cards) {
         return cards.stream()
             .map(card -> new CardCanvas(card))
             .collect(Collectors.toList());
@@ -438,25 +435,10 @@ public class CardsCanvas extends JPanel {
         this.stackDuplicateCards = stackDuplicateCards;
     }
 
-    public void refreshCards(final List<MagicCardDefinition> cards) {
-        final List<CardCanvas> canvasCards = cards.stream()
-                .map(card -> new CardCanvas(card))
-                .collect(Collectors.toList());
-        refreshLayout = true;
-        currentCardIndex = -1;
-        if (useAnimation) {
-            executor.execute(getDealCardsRunnable(canvasCards));
-        } else {
-            createListOfCardCanvasObjects(canvasCards);
-            maxCardsVisible = cards.size();
-            repaint();
-        }
-    }
-    
     public void setCard(IRenderableCard aCard) {
-        final List<MagicCardDefinition> lst = new ArrayList<>();
-        lst.add(aCard.getCardDefinition());
-        refreshCards(lst);
+        List<IRenderableCard> lst = new ArrayList<>();
+        lst.add(aCard);
+        refresh(lst);
     }
 
     public void clear() {
