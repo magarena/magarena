@@ -5,7 +5,6 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import magic.model.IRenderableCard;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 
@@ -14,16 +13,10 @@ final class CardCanvas {
     private Dimension cardSize;
     private Point position;
     private final Rectangle boundary = new Rectangle();
-    private final IRenderableCard cardDef;
+    private final IRenderableCard card;
 
-    public CardCanvas(final MagicCard card) {
-        this.cardDef = card.getCardDefinition();
-        this.cardSize = new Dimension();
-        setPosition(new Point(0, 0));
-    }
-
-    public CardCanvas(final MagicCardDefinition cardDef) {
-        this.cardDef = cardDef;
+    public CardCanvas(final IRenderableCard card) {
+        this.card = card;
         this.cardSize = new Dimension();
         setPosition(new Point(0, 0));
     }
@@ -48,7 +41,7 @@ final class CardCanvas {
     }
 
     public BufferedImage getFrontImage() {
-        return MagicImages.getCardImage(cardDef);
+        return MagicImages.getCardImage(card);
     }
 
     public BufferedImage getBackImage() {
@@ -64,7 +57,7 @@ final class CardCanvas {
     }
 
     MagicCardDefinition getCardDefintion() {
-        return cardDef.getCardDefinition();
+        return card.getCardDefinition();
     }
 
 }
