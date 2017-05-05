@@ -2,6 +2,7 @@ package magic.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import magic.data.DeckType;
 import magic.utility.DeckUtils;
 
@@ -152,5 +153,15 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
             return super.equals(other);
         }
         return false;
+    }
+
+    /**
+     *  Shuffles a copy of the deck and returns the first {@code count}
+     *  cards or all cards, whichever is smaller.
+     */
+    public List<MagicCardDefinition> getRandomCards(int count) {
+        List<MagicCardDefinition> cards = new ArrayList<>(this);
+        Collections.shuffle(cards, new MagicRandom(MagicRandom.nextRNGInt()));
+        return cards.subList(0, Math.min(count, size()));
     }
 }
