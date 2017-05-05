@@ -2,10 +2,10 @@ package magic.ui.screen.deck.tiled;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import javax.swing.SwingUtilities;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicType;
@@ -16,6 +16,9 @@ import magic.ui.screen.widget.SampleHandActionButton;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen extends HeaderFooterScreen {
+
+    private static final Comparator<MagicCardDefinition> SORT_BY_NAME =
+        (o1, o2) -> o1.getDistinctName().compareTo(o2.getDistinctName());
 
     // translatable strings
     private static final String _S1 = "Deck image view";
@@ -40,27 +43,21 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
         showCards(CardTypeFilter.ALL);
     }
 
-    private List<MagicCard> getFilteredDeck(final MagicDeck deck, final CardTypeFilter filterType) {
-
-        final List<MagicCard> cards = new ArrayList<>();
-
+    private List<MagicCardDefinition> getFilteredDeck(MagicDeck deck, CardTypeFilter filterType) {
+        List<MagicCardDefinition> cards = new ArrayList<>();
         for (MagicCardDefinition cardDef : deck) {
-
-            final Set<MagicType> cardType = cardDef.getCardType();
-            final MagicCard card = new MagicCard(cardDef, null, 0);
-
+            Set<MagicType> cardType = cardDef.getCardType();
             if (filterType == CardTypeFilter.ALL
                     || cardType.contains(filterType.getMagicType())) {
-                cards.add(card);
+                cards.add(cardDef);
             }
         }
-
-        Collections.sort(cards);
+        Collections.sort(cards, SORT_BY_NAME);
         return cards;
     }
 
     private void showCards(CardTypeFilter filter) {
-        final List<MagicCard> cards = getFilteredDeck(deck, filter);
+        final List<MagicCardDefinition> cards = getFilteredDeck(deck, filter);
         content.refresh(cards);
         headerPanel.setContent(deck, filter, cards);
     }

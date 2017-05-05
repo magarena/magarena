@@ -6,10 +6,10 @@ import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -54,7 +54,7 @@ class HeaderPanel extends JPanel {
         revalidate();
     }
 
-    private String getFilterCaption(CardTypeFilter filter, MagicDeck deck, List<MagicCard> cards) {
+    private String getFilterCaption(CardTypeFilter filter, MagicDeck deck, List<MagicCardDefinition> cards) {
         int cardCount = cards == null ? 0 : cards.size();
         if (filter != CardTypeFilter.ALL) {
             final int percentage = (int)((cardCount / (double) deck.size()) * 100);
@@ -64,7 +64,7 @@ class HeaderPanel extends JPanel {
         }
     }
 
-    void setContent(MagicDeck deck, CardTypeFilter filter, List<MagicCard> cards) {
+    void setContent(MagicDeck deck, CardTypeFilter filter, List<MagicCardDefinition> cards) {
         deckNameLabel.setText(deck.getName());
         filterLabel.setText(getFilterCaption(filter, deck, cards));
         refreshLayout();

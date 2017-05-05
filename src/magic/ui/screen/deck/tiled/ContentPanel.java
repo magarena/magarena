@@ -2,7 +2,6 @@ package magic.ui.screen.deck.tiled;
 
 import java.util.List;
 import javax.swing.JPanel;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.screen.deck.editor.DeckSideBar;
@@ -16,7 +15,7 @@ class ContentPanel extends JPanel implements ICardsCanvasListener {
     private final DeckSideBar sidebar;
     private final CardsCanvas canvas;
 
-    public ContentPanel(final MagicDeck aDeck) {
+    ContentPanel(final MagicDeck aDeck) {
 
         sidebar = new DeckSideBar();
         sidebar.setDeck(aDeck);
@@ -38,17 +37,17 @@ class ContentPanel extends JPanel implements ICardsCanvasListener {
 
     }
 
-    public void refreshLayout() {
+    void refreshLayout() {
         removeAll();
         add(sidebar, "h 100%");
         add(canvas, "w 100%, h 100%");
         revalidate();
     }
 
-    public void refresh(List<MagicCard> cards) {
+    void refresh(List<MagicCardDefinition> cards) {
         sidebar.setCard(cards.isEmpty()
-                ? MagicCardDefinition.UNKNOWN
-                : cards.get(0).getCardDefinition()
+            ? MagicCardDefinition.UNKNOWN
+            : cards.get(0)
         );
         canvas.refresh(cards);
     }
