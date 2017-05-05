@@ -19,13 +19,10 @@
             game.doAction(new PlayTokenAction(player, event.getRefPermanent()));
             final HashMap<String, Integer> names = new HashMap<>();
             ARTIFACT_YOU_CONTROL.filter(player) each {
-                if (names.containsKey(it.getName())) {
-                    names.put(it.getName(), names.get(it.getName())+1);
-                } else {
-                    names.put(it.getName(), 1);  
-                }
+                final int v = names.containsKey(it.getName()) ? names.get(it.getName()) : 0;
+                names.put(it.getName(), v + 1);
             }
-            if (Collections.max(names.values()) >=8) {
+            if (!names.isEmpty() && Collections.max(names.values()) >= 8) {
                 game.doAction(new LoseGameAction(player.getOpponent()));
             }
         }
