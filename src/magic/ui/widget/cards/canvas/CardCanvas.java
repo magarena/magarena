@@ -56,7 +56,7 @@ final class CardCanvas {
         cardSize = new Dimension(cardWidth, cardHeight);
     }
 
-    MagicCardDefinition getCardDefintion() {
+    MagicCardDefinition getCardDefinition() {
         return card.getCardDefinition();
     }
 
