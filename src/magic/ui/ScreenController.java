@@ -48,6 +48,7 @@ import magic.ui.screen.menu.language.StartScreen;
 import magic.ui.screen.menu.main.MainMenuScreen;
 import magic.ui.screen.menu.migrate.ImportScreen;
 import magic.ui.screen.menu.settings.SettingsMenuScreen;
+import magic.ui.screen.menu.wip.WipMenuScreen;
 import magic.ui.screen.player.PlayerScreen;
 import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.stats.StatsScreen;
@@ -341,6 +342,11 @@ public final class ScreenController {
         showScreen(() -> new PlayerScreen(guid));
     }
 
+    public static void showWipMenuScreen() {
+        showScreen(WipMenuScreen::new);
+    }
+
+
     public static boolean isDeckScreenShowing() {
         return !screens.isEmpty() && screens.peek() instanceof DeckScreen;
     }
@@ -348,4 +354,5 @@ public final class ScreenController {
     public static boolean isActive(MScreen aScreen) {
         return screens.peek() == aScreen;
     }
+
 }

@@ -40,26 +40,32 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         super("DevMode Menu", true);
         addMenuItem("Load game", this::doLoadSavedGame);
         addMenuItem("Load test class", this::doLoadTestClass);
-        addSpace();
         addMenuItem("Create missing cards file", "Creates CardsMissingInMagarena.txt for use with ScriptsBuilder.", this::doSaveMissingCardsFile);
         addMenuItem("Create card stats file", "Creates CardStatistics.txt to view current card completion.", this::doCreateSetStats);
-        addSpace();
         if (GeneralConfig.isGameStatsOn()) {
             addMenuItem("Game stats", this::showStatsScreen);
         }
-        addMenuItem("Test screen", this::showTestScreen);
+        addSpace();
         addSpace();
         addMenuItem("Main menu", this::onCloseMenu);
+        if (MagicSystem.isDevMode()) {
+            addSpace();
+            addSpace();
+            addSpace();
+            addSpace();
+            addSpace();
+            addMenuItem("work-in-progress...", 16, this::showWipMenuScreen);
+        }
         refreshMenuLayout();
         mp.setBorder(BorderFactory.createLineBorder(Color.RED));
     }
 
-    private void showStatsScreen() {
-        ScreenController.showStatsScreen();
+    private void showWipMenuScreen() {
+        ScreenController.showWipMenuScreen();
     }
 
-    private void showTestScreen() {
-        ScreenController.showTestScreen();
+    private void showStatsScreen() {
+        ScreenController.showStatsScreen();
     }
 
     private void doLoadTestClass() {
