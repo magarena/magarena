@@ -3017,7 +3017,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(S|s)earch your ", "PN searches his or her ")
             .replaceAll("(S|s)huffle your ", "PN shuffles his or her ")
             .replaceAll("(Y|y)ou draw ", "PN draws ")
-            .replaceAll("(D|d)raw ", "PN draws ")
+            .replaceAll("(?<!may )(D|d)raw ", "PN draws ")
             .replaceAll("(Y|y)ou put ", "PN puts ")
             .replaceAll("(?<!may )(P|p)ut ", "PN puts ")
             .replaceAll("((Y|y)ou )?(C|c)reate ", "PN creates ")
