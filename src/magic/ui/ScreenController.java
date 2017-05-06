@@ -53,6 +53,7 @@ import magic.ui.screen.player.PlayerScreen;
 import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.stats.StatsScreen;
 import magic.ui.screen.test.TestScreen;
+import magic.ui.screen.wip.cardflow.CardFlowScreen;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.utility.MagicSystem;
 
@@ -346,6 +347,9 @@ public final class ScreenController {
         showScreen(WipMenuScreen::new);
     }
 
+    public static void showCardFlowScreen() {
+        showScreen(CardFlowScreen::new);
+    }
 
     public static boolean isDeckScreenShowing() {
         return !screens.isEmpty() && screens.peek() instanceof DeckScreen;
