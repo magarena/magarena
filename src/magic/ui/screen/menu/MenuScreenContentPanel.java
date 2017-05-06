@@ -10,7 +10,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public abstract class MenuScreenContentPanel extends JPanel {
 
-    private final MenuPanel mp;
+    protected final MenuPanel mp;
 
     public MenuScreenContentPanel(String title, boolean showKeyStripPanel) {
 

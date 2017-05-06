@@ -1,5 +1,6 @@
 package magic.ui.screen.menu.dev;
 
+import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -7,6 +8,7 @@ import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;
+import javax.swing.BorderFactory;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 import magic.data.CardDefinitions;
@@ -49,6 +51,7 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         addSpace();
         addMenuItem("Main menu", this::onCloseMenu);
         refreshMenuLayout();
+        mp.setBorder(BorderFactory.createLineBorder(Color.RED));
     }
 
     private void showStatsScreen() {
