@@ -100,6 +100,10 @@ public class MagicSourceEvent {
         return rule.getChoice(matcher);
     }
 
+    public MagicChoice getEventChoice() {
+        return choiceFact.build(MagicSource.NONE, MagicPlayer.NONE, MagicEvent.NO_REF);
+    }
+
     public MagicTargetPicker<?> getPicker() {
         return rule.getPicker(matcher);
     }

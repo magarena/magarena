@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}
-effect=Target creature gets +2/+2 until end of turn.~You may remove a -1/-1 counter from *it*.
+effect=Target creature gets +2/+2 until end of turn.~Remove a -1/-1 counter from *it*.
 timing=removal
 oracle=Target creature gets +2/+2 until end of turn. You may remove a -1/-1 counter from it.

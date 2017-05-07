@@ -2995,6 +2995,9 @@ public enum MagicRuleEventAction {
                 if (hasReference == false && riderSourceEvent.getChoice().isValid()) {
                     throw new RuntimeException("rider should not have choice: \"" + part[i] + "\"");
                 }
+                if (riderSourceEvent.getEventChoice() instanceof MagicMayChoice) {
+                    throw new RuntimeException("rider should not have choice: \"" + part[i] + "\"");
+                }
 
                 acts[i] = riderSourceEvent.getEventAction();
                 part[i] = matcher.replaceAll("$1");
