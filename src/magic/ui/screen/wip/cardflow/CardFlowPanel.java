@@ -361,7 +361,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         contentImage = ImageHelper.getCompatibleBufferedImage(
                 this.getWidth(), selectedImageSize.height, Transparency.OPAQUE);
 
-        final Graphics2D g2d = (Graphics2D) contentImage.createGraphics();
+        final Graphics2D g2d = contentImage.createGraphics();
 
         g2d.setColor(imageBackgroundColor);
         g2d.fillRect(0, 0, contentImage.getWidth(), contentImage.getHeight());

@@ -61,7 +61,7 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     private BufferedImage getTestImage(final Color aColor, final String text) {
         final BufferedImage image = ImageHelper.getCompatibleBufferedImage(CardFlowPanel.MAX_IMAGE_SIZE.width, CardFlowPanel.MAX_IMAGE_SIZE.height);
-        final Graphics2D g2d = (Graphics2D) image.createGraphics();
+        final Graphics2D g2d = image.createGraphics();
         g2d.setColor(aColor);
         g2d.fillRect(0, 0, image.getWidth(), image.getHeight());
         g2d.setColor(Color.WHITE);
