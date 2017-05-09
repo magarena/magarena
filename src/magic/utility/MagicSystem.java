@@ -113,6 +113,10 @@ final public class MagicSystem {
         return Boolean.getBoolean("selfMode");
     }
 
+    public static void setAiVersusAi(boolean b) {
+        System.setProperty("selfMode", String.valueOf(b));
+    }
+
     /**
      * add "-DshowStats=true" to output startup statistics to console.
      */

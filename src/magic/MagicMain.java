@@ -3,26 +3,25 @@ package magic;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
-import java.util.Locale;
 import javax.swing.SwingUtilities;
-
-import magic.utility.ProgressReporter;
-import magic.ui.SplashProgressReporter;
 import magic.data.DuelConfig;
-import magic.data.GeneralConfig;
-import magic.test.TestGameBuilder;
 import magic.game.state.GameLoader;
+import magic.model.player.AiProfile;
+import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
-import magic.ui.helpers.LaFHelper;
+import magic.ui.SplashProgressReporter;
 import magic.ui.UiExceptionHandler;
-import magic.utility.MagicSystem;
+import magic.ui.helpers.LaFHelper;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicSystem;
+import magic.utility.ProgressReporter;
 
 public class MagicMain {
 
     private static SplashScreen splash;
     private static ProgressReporter reporter = new ProgressReporter();
+    private static CommandLineArgs cmdline;
 
     public static void main(final String[] args) {
 
@@ -31,7 +30,7 @@ public class MagicMain {
         setSplashScreen();
 
         System.out.println(MagicSystem.getRuntimeParameters());
-        parseCommandline(args);
+        cmdline = new CommandLineArgs(args);
 
         // show the data folder being used
         System.out.println("Data folder : "+ MagicFileSystem.getDataPath());
@@ -96,13 +95,19 @@ public class MagicMain {
             return;
         }
 
-        // -DselfMode=true
+        // AI vs AI game.
         if (MagicSystem.isAiVersusAi()) {
+
+            System.out.println("");
+            System.err.println("=== AI vs AI ===");
+
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
+            config.setPlayerProfile(0, AiProfile.create(cmdline.getAi1(), cmdline.getAi1Level()));
+            config.setPlayerProfile(1, AiProfile.create(cmdline.getAi2(), cmdline.getAi2Level()));
 
-            // set both player profile to AI for AI vs AI mode
-            config.setPlayerProfile(0, config.getPlayerProfile(1));
+            System.out.println("P1 : " + config.getPlayerProfile(0).getPlayerLabel());
+            System.out.println("P2 : " + config.getPlayerProfile(1).getPlayerLabel());
 
             ScreenController.getFrame().newDuel(config);
             return;
@@ -111,15 +116,5 @@ public class MagicMain {
         // normal UI startup.
         ScreenController.showStartScreen();
 
-    }
-
-    private static void parseCommandline(final String[] args) {
-        for (String arg : args) {
-            switch (arg.toLowerCase(Locale.ENGLISH)) {
-            case "disablelogviewer":
-                GeneralConfig.getInstance().setLogMessagesVisible(false);
-                break;
-            }
-        }
     }
 }
