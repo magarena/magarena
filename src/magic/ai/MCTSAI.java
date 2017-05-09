@@ -60,7 +60,7 @@ Monte-Carlo Tree Search in Lines of Action
   use evaluation score to keep k-best moves
   mixed: start with corrective, rest of the moves use greedy
 */
-public class MCTSAI implements MagicAI {
+public class MCTSAI extends MagicAI {
 
     private static int MIN_SCORE = Integer.MAX_VALUE;
     static int MIN_SIM = Integer.MAX_VALUE;
@@ -68,8 +68,6 @@ public class MCTSAI implements MagicAI {
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
     private int sims = 0;
-
-    private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
     static {
         if (System.getProperty("min_sim") != null) {
@@ -106,6 +104,7 @@ public class MCTSAI implements MagicAI {
         MagicGameLog.log(message);
     }
 
+    @Override
     public Object[] findNextEventChoiceResults(final MagicGame startGame, final MagicPlayer scorePlayer) {
 
         // Determine possible choices
@@ -132,7 +131,7 @@ public class MCTSAI implements MagicAI {
         log("MCTS cached=" + root.getNumSim());
 
         sims = 0;
-        final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
+        final ExecutorService executor = Executors.newFixedThreadPool(getMaxThreads());
         final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
 
         // ensure tree update runs at least once

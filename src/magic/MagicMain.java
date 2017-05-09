@@ -4,6 +4,7 @@ import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
 import javax.swing.SwingUtilities;
+import magic.ai.MagicAI;
 import magic.data.DuelConfig;
 import magic.game.state.GameLoader;
 import magic.model.player.AiProfile;
@@ -108,6 +109,7 @@ public class MagicMain {
 
             System.out.println("P1 : " + config.getPlayerProfile(0).getPlayerLabel());
             System.out.println("P2 : " + config.getPlayerProfile(1).getPlayerLabel());
+            System.out.println("AI threads : " + MagicAI.getMaxThreads());
 
             ScreenController.getFrame().newDuel(config);
             return;

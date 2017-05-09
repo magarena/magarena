@@ -1,6 +1,7 @@
 package magic;
 
 import java.util.Locale;
+import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.GeneralConfig;
 import magic.ui.widget.duel.animation.MagicAnimations;
@@ -43,6 +44,10 @@ class CommandLineArgs {
 
             case "--nofx": // turns off gameplay animations for session (does not change preferences).
                 MagicAnimations.setEnabled(false);
+                break;
+
+            case "--threads": // limits the number of threads AI uses when running simulated games.
+                MagicAI.setMaxThreads(Integer.parseInt(args[i + 1].trim()));
                 break;
 
             }

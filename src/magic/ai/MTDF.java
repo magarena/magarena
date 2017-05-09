@@ -13,7 +13,7 @@ import magic.model.event.MagicEvent;
  * MTD(f) algorithm by Aske Plaat
  * https://askeplaat.wordpress.com/534-2/mtdf-algorithm/
  */
-public class MTDF implements MagicAI {
+public class MTDF extends MagicAI {
 
     private final boolean CHEAT;
     private final Map<Long,TTEntry> table = new HashMap<>();
@@ -24,6 +24,7 @@ public class MTDF implements MagicAI {
         CHEAT = aCheat;
     }
 
+    @Override
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final long startTime = System.currentTimeMillis();

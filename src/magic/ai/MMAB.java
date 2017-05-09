@@ -1,21 +1,19 @@
 package magic.ai;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.phase.MagicStep;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-
-public class MMAB implements MagicAI {
+public class MMAB extends MagicAI {
 
     private static final long SEC_TO_NANO=1000000000L;
-    private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
     private final boolean CHEAT;
     private final boolean DECKSTR;
@@ -57,10 +55,10 @@ public class MMAB implements MagicAI {
         // submit jobs
         final ArtificialPruneScoreRef scoreRef = new ArtificialPruneScoreRef(new ArtificialMultiPruneScore());
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
-        final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
+        final ExecutorService executor = Executors.newFixedThreadPool(getMaxThreads());
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
-        final int rounds = (size + THREADS - 1) / THREADS;
+        final int rounds = (size + getMaxThreads() - 1) / getMaxThreads();
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
 
         for (final Object[] choice : choices) {

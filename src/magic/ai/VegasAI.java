@@ -1,20 +1,18 @@
 package magic.ai;
 
-import magic.model.MagicGame;
-import magic.model.MagicGameLog;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicEvent;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import magic.model.MagicGame;
+import magic.model.MagicGameLog;
+import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
 
-public class VegasAI implements MagicAI {
+public class VegasAI extends MagicAI {
 
     private static final long SEC_TO_NANO=1000000000L;
-    private static final int THREADS=Runtime.getRuntime().availableProcessors();
 
     private final boolean CHEAT;
 
@@ -49,10 +47,10 @@ public class VegasAI implements MagicAI {
         }
 
         // Multiple choices
-        final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
+        final ExecutorService executor = Executors.newFixedThreadPool(getMaxThreads());
         final List<VegasScore> scores=new ArrayList<VegasScore>();
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
-        final int rounds = (size + THREADS - 1) / THREADS;
+        final int rounds = (size + getMaxThreads() - 1) / getMaxThreads();
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
         for (final Object[] choiceResults : choiceResultsList) {
             final VegasScore score=new VegasScore(choiceResults);
