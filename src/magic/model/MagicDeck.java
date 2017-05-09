@@ -164,4 +164,14 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         Collections.shuffle(cards, new MagicRandom(MagicRandom.nextRNGInt()));
         return cards.subList(0, Math.min(count, size()));
     }
+
+    /**
+     * Returns the deck name with a type prefix
+     * eg. "Firemind top decks / legacy.Merfolk"
+     */
+    public String getQualifiedName() {
+        return getDeckType() != DeckType.Random
+            ? getDeckType().toString() + "  /  " + getName()
+            : getName();
+    }
 }

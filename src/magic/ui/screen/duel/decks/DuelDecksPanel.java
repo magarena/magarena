@@ -144,16 +144,10 @@ class DuelDecksPanel extends TexturedPanel
         updateDecksAfterEdit();
     }
 
-    private static String getDeckNameWithType(MagicDeck deck) {
-        return deck.getDeckType() != DeckType.Random
-            ? deck.getDeckType().toString() + "  /  " + deck.getName()
-            : deck.getName();
-    }
-
     private String generateTitle(final MagicDeck deck) {
         return deck.isUnsaved()
             ? MText.get(_S1) + "  /  " + deck.getName()
-            : getDeckNameWithType(deck);
+            : deck.getQualifiedName();
     }
 
     MagicDuel getDuel() {

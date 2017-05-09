@@ -89,4 +89,8 @@ public class PlayerViewerInfo {
         return name;
     }
 
+    public String getQualifiedDeckName() {
+        return player.getPlayerDefinition().getDeck().getQualifiedName();
+    }
+
 }

@@ -12,12 +12,16 @@ import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicPlayerZone;
-import magic.ui.screen.duel.game.SwingGameController;
+import magic.translate.MText;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.screen.duel.game.SwingGameController;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class PlayerZoneButtonsPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Library";
 
     private static ButtonGroup buttonGroup = new ButtonGroup();
     private final Map<MagicPlayerZone, ZoneToggleButton> zoneButtons;
@@ -33,6 +37,11 @@ public class PlayerZoneButtonsPanel extends JPanel {
         zoneButtons = new LinkedHashMap<>();
         zoneButtons.put(MagicPlayerZone.LIBRARY, getZoneToggleButton(
                 MagicPlayerZone.LIBRARY, playerInfo.library.size(), false)
+        );
+        zoneButtons.get(MagicPlayerZone.LIBRARY).setToolTipText(
+            String.format("<html><b>%s</b><br>%s</html>",
+                MText.get(_S1),
+                playerInfo.getQualifiedDeckName())
         );
         zoneButtons.put(MagicPlayerZone.HAND, getZoneToggleButton(
                 MagicPlayerZone.HAND, playerInfo.hand.size(), true)
