@@ -3,6 +3,7 @@ package magic;
 import java.util.Locale;
 import magic.ai.MagicAIImpl;
 import magic.data.GeneralConfig;
+import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicSystem;
 
 class CommandLineArgs {
@@ -38,6 +39,10 @@ class CommandLineArgs {
 
             case "--str2": // level of AI player #2 [--str2 8].
                 setAi2Level(Integer.parseInt(args[i + 1].trim()));
+                break;
+
+            case "--nofx": // turns off gameplay animations for session (does not change preferences).
+                MagicAnimations.setEnabled(false);
                 break;
 
             }

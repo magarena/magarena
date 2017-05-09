@@ -8,20 +8,25 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
-import magic.ui.screen.duel.game.DuelPanel;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.screen.duel.game.DuelPanel;
 import magic.utility.MagicSystem;
 
 public class MagicAnimations {
     private MagicAnimations() {}
 
     private static GameLayoutInfo layoutInfo;
+    private static boolean isEnabled = true;
 
     public static MagicAnimation getGameplayAnimation(
         final GameViewerInfo oldGameInfo,
         final GameViewerInfo newGameInfo,
         final DuelPanel gamePanel) {
+
+        if (!isEnabled) {
+            return null;
+        }
 
         if (isOn(AnimationFx.DRAW_CARD) && isDrawCardEvent(newGameInfo)) {
             return getDrawCardAnimation(oldGameInfo, newGameInfo, gamePanel);
@@ -164,6 +169,10 @@ public class MagicAnimations {
         System.out.printf("  graveyard %d : %d\n", tpOld.graveyard.size(), tpNew.graveyard.size());
         System.out.printf("  permanents %d : %d\n", tpOld.permanents.size(), tpNew.permanents.size());
         System.out.printf("  stack %d : %d\n", oldGameInfo.getStack().size(), newGameInfo.getStack().size());
+    }
+
+    public static void setEnabled(boolean b) {
+        isEnabled = b;
     }
 
 }
