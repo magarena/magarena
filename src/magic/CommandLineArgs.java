@@ -3,6 +3,7 @@ package magic;
 import java.util.Locale;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
+import magic.data.DuelConfig;
 import magic.utility.MagicSystem;
 
 class CommandLineArgs {
@@ -14,6 +15,7 @@ class CommandLineArgs {
     private boolean isAnimationsEnabled = true;
     private int maxAiThreads = MagicAI.getMaxThreads();
     private boolean isDevMode = false;
+    private int games = DuelConfig.DEFAULT_GAMES;
 
     CommandLineArgs(final String[] args) {
 
@@ -50,8 +52,16 @@ class CommandLineArgs {
                 isDevMode = true;
                 break;
 
+            case "--games": // "best of..." games total in AI v AI game. (eg. --games 3 = best of 3 games)
+                setGames(Integer.parseInt(args[i + 1].trim()));
+
             }
         }
+    }
+
+    private void setGames(int games) {
+        this.games = games;
+        MagicSystem.setAiVersusAi(true);
     }
 
     private void setAi1(MagicAIImpl ai1) {
@@ -98,6 +108,10 @@ class CommandLineArgs {
 
     boolean isDevMode() {
         return isDevMode;
+    }
+
+    int getGames() {
+        return games;
     }
 
 }
