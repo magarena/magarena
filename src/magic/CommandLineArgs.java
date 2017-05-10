@@ -16,6 +16,7 @@ class CommandLineArgs {
     private int maxAiThreads = MagicAI.getMaxThreads();
     private boolean isDevMode = false;
     private int games = DuelConfig.DEFAULT_GAMES;
+    private int startLife = DuelConfig.DEFAULT_LIFE;
 
     CommandLineArgs(final String[] args) {
 
@@ -24,6 +25,10 @@ class CommandLineArgs {
             final String arg = args[i];
             switch (arg.toLowerCase(Locale.ENGLISH)) {
 
+            //
+            // setting any of the following arguments will
+            // automatically run an AI vs AI game.
+            //
             case "--ai1": // MagicAIImpl class to load as player 1. (eg. --ai1 MMABFast)
                 setAi1(MagicAIImpl.valueOf(args[i + 1].trim()));
                 break;
@@ -40,6 +45,17 @@ class CommandLineArgs {
                 setAi2Level(Integer.parseInt(args[i + 1].trim()));
                 break;
 
+            case "--games": // "best of..." games total in AI v AI game. (eg. --games 3 = best of 3 games)
+                setGames(Integer.parseInt(args[i + 1].trim()));
+                break;
+
+            case "--life": // initial life for each AI player. (eg. --life 10)
+                setStartLife(Integer.parseInt(args[i + 1].trim()));
+                break;
+
+            //
+            // other settings.
+            //
             case "--nofx": // turns off gameplay animations for session (does not change preferences).
                 isAnimationsEnabled = false;
                 break;
@@ -52,11 +68,13 @@ class CommandLineArgs {
                 isDevMode = true;
                 break;
 
-            case "--games": // "best of..." games total in AI v AI game. (eg. --games 3 = best of 3 games)
-                setGames(Integer.parseInt(args[i + 1].trim()));
-
             }
         }
+    }
+
+    private void setStartLife(int life) {
+        this.startLife = life;
+        MagicSystem.setAiVersusAi(true);
     }
 
     private void setGames(int games) {
@@ -84,6 +102,7 @@ class CommandLineArgs {
 
     private void setAi1Level(int ai1Level) {
         this.ai1Level = ai1Level;
+        MagicSystem.setAiVersusAi(true);
     }
 
     int getAi1Level() {
@@ -92,6 +111,7 @@ class CommandLineArgs {
 
     private void setAi2Level(int ai2Level) {
         this.ai2Level = ai2Level;
+        MagicSystem.setAiVersusAi(true);
     }
 
     int getAi2Level() {
@@ -112,6 +132,10 @@ class CommandLineArgs {
 
     int getGames() {
         return games;
+    }
+
+    int getLife() {
+        return startLife;
     }
 
 }

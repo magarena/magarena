@@ -108,6 +108,7 @@ public class MagicMain {
             config.setPlayerProfile(0, AiProfile.create(cmdline.getAi1(), cmdline.getAi1Level()));
             config.setPlayerProfile(1, AiProfile.create(cmdline.getAi2(), cmdline.getAi2Level()));
             config.setNrOfGames(cmdline.getGames());
+            config.setStartLife(cmdline.getLife());
 
             System.out.println("P1 : " + config.getPlayerProfile(0).getPlayerLabel());
             System.out.println("P2 : " + config.getPlayerProfile(1).getPlayerLabel());
