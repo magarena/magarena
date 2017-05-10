@@ -3,7 +3,6 @@ package magic;
 import java.util.Locale;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
-import magic.data.GeneralConfig;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicSystem;
 
@@ -20,10 +19,6 @@ class CommandLineArgs {
 
             final String arg = args[i];
             switch (arg.toLowerCase(Locale.ENGLISH)) {
-
-            case "disablelogviewer":
-                GeneralConfig.getInstance().setLogMessagesVisible(false);
-                break;
 
             case "--ai1": // MagicAIImpl class to load as player 1. (eg. --ai1 MMABFast)
                 setAi1(MagicAIImpl.valueOf(args[i + 1].trim()));
