@@ -16,7 +16,6 @@ class CommandLineArgs {
 
     CommandLineArgs(final String[] args) {
 
-        // default setting shown in braces if applicable.
         for (int i = 0; i < args.length; i++) {
 
             final String arg = args[i];
@@ -26,19 +25,19 @@ class CommandLineArgs {
                 GeneralConfig.getInstance().setLogMessagesVisible(false);
                 break;
 
-            case "--ai1": // MagicAIImpl class to load as player 1. [--ai1 MMABFast]
+            case "--ai1": // MagicAIImpl class to load as player 1. (eg. --ai1 MMABFast)
                 setAi1(MagicAIImpl.valueOf(args[i + 1].trim()));
                 break;
 
-            case "--ai2": // MagicAIImpl class to load as player 2. [--ai2 MMABFast]
+            case "--ai2": // MagicAIImpl class to load as player 2. (eg. --ai2 MMABFast)
                 setAi2(MagicAIImpl.valueOf(args[i + 1].trim()));
                 break;
 
-            case "--str1": // level of AI player #1 [--str1 8].
+            case "--str1": // level of AI player #1. (eg. --str1 8)
                 setAi1Level(Integer.parseInt(args[i + 1].trim()));
                 break;
 
-            case "--str2": // level of AI player #2 [--str2 8].
+            case "--str2": // level of AI player #2. (eg. --str2 8)
                 setAi2Level(Integer.parseInt(args[i + 1].trim()));
                 break;
 
@@ -46,7 +45,7 @@ class CommandLineArgs {
                 MagicAnimations.setEnabled(false);
                 break;
 
-            case "--threads": // limits the number of threads AI uses when running simulated games.
+            case "--threads": // limits the number of threads AI uses. (eg. --threads 2)
                 MagicAI.setMaxThreads(Integer.parseInt(args[i + 1].trim()));
                 break;
 
