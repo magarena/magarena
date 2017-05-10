@@ -50,6 +50,10 @@ class CommandLineArgs {
                 MagicAI.setMaxThreads(Integer.parseInt(args[i + 1].trim()));
                 break;
 
+            case "--devmode": // enables access to additional functionality.
+                MagicSystem.setIsDevMode(true);
+                break;
+
             }
         }
     }

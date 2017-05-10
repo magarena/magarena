@@ -28,10 +28,8 @@ final public class MagicSystem {
     public static final String VERSION = "1.85";
 
     public static final String SOFTWARE_TITLE;
-    private static final boolean DEV_MODE;
     static {
-        DEV_MODE = Boolean.getBoolean("devMode") || Boolean.getBoolean("debug");
-        SOFTWARE_TITLE = "Magarena " + VERSION + (DEV_MODE ? " [DEV MODE]" : "");
+        SOFTWARE_TITLE = "Magarena " + VERSION + (isDevMode() ? " [DEV MODE]" : "");
         System.setProperty("http.agent", SOFTWARE_TITLE);
     }
 
@@ -92,7 +90,11 @@ final public class MagicSystem {
     }
 
     public static boolean isDevMode() {
-        return DEV_MODE;
+        return Boolean.getBoolean("devMode") || Boolean.getBoolean("debug");
+    }
+    
+    public static void setIsDevMode(boolean b) {
+        System.setProperty("devMode", String.valueOf(b));
     }
 
     public static boolean isDebugMode() {
