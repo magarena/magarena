@@ -3,7 +3,6 @@ package magic;
 import java.util.Locale;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
-import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicSystem;
 
 class CommandLineArgs {
@@ -12,6 +11,9 @@ class CommandLineArgs {
     private MagicAIImpl ai2 = MagicAIImpl.MMABFast;
     private int ai1Level = 8;
     private int ai2Level = 8;
+    private boolean isAnimationsEnabled = true;
+    private int maxAiThreads = MagicAI.getMaxThreads();
+    private boolean isDevMode = false;
 
     CommandLineArgs(final String[] args) {
 
@@ -37,15 +39,15 @@ class CommandLineArgs {
                 break;
 
             case "--nofx": // turns off gameplay animations for session (does not change preferences).
-                MagicAnimations.setEnabled(false);
+                isAnimationsEnabled = false;
                 break;
 
             case "--threads": // limits the number of threads AI uses. (eg. --threads 2)
-                MagicAI.setMaxThreads(Integer.parseInt(args[i + 1].trim()));
+                maxAiThreads = Integer.parseInt(args[i + 1].trim());
                 break;
 
             case "--devmode": // enables access to additional functionality.
-                MagicSystem.setIsDevMode(true);
+                isDevMode = true;
                 break;
 
             }
@@ -84,6 +86,18 @@ class CommandLineArgs {
 
     int getAi2Level() {
         return ai2Level;
+    }
+
+    boolean isAnimationsEnabled() {
+        return isAnimationsEnabled;
+    }
+
+    int getMaxThreads() {
+        return maxAiThreads;
+    }
+
+    boolean isDevMode() {
+        return isDevMode;
     }
 
 }

@@ -13,6 +13,7 @@ import magic.ui.ScreenController;
 import magic.ui.SplashProgressReporter;
 import magic.ui.UiExceptionHandler;
 import magic.ui.helpers.LaFHelper;
+import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
@@ -22,7 +23,6 @@ public class MagicMain {
 
     private static SplashScreen splash;
     private static ProgressReporter reporter = new ProgressReporter();
-    private static CommandLineArgs cmdline;
 
     public static void main(final String[] args) {
 
@@ -31,7 +31,12 @@ public class MagicMain {
         setSplashScreen();
 
         System.out.println(MagicSystem.getRuntimeParameters());
-        cmdline = new CommandLineArgs(args);
+
+        // parse command line
+        final CommandLineArgs cmdline = new CommandLineArgs(args);
+        MagicAnimations.setEnabled(cmdline.isAnimationsEnabled());
+        MagicAI.setMaxThreads(cmdline.getMaxThreads());
+        MagicSystem.setIsDevMode(cmdline.isDevMode());
 
         // show the data folder being used
         System.out.println("Data folder : "+ MagicFileSystem.getDataPath());
@@ -48,11 +53,7 @@ public class MagicMain {
         LaFHelper.setDefaultLookAndFeel();
 
         reporter.setMessage("Starting UI...");
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                startUI();
-            }
-        });
+        SwingUtilities.invokeLater(() -> { startUI(cmdline); });
     }
 
     /**
@@ -79,7 +80,7 @@ public class MagicMain {
         }
     }
 
-    private static void startUI() {
+    private static void startUI(CommandLineArgs cmdline) {
 
         // -DtestGame=X, where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");
