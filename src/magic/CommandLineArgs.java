@@ -17,6 +17,7 @@ class CommandLineArgs {
     private boolean isDevMode = false;
     private int games = DuelConfig.DEFAULT_GAMES;
     private int startLife = DuelConfig.DEFAULT_LIFE;
+    private String testClass;
 
     CommandLineArgs(final String[] args) {
 
@@ -66,6 +67,10 @@ class CommandLineArgs {
 
             case "--devmode": // enables access to additional functionality.
                 isDevMode = true;
+                break;
+
+            case "--test": // Runs specified test game, equivalent to -DtestGame VM arg. (eg. --test TestAura)
+                System.setProperty("testGame", args[i + 1].trim());
                 break;
 
             }
