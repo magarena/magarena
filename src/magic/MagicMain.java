@@ -14,7 +14,6 @@ import magic.ui.SplashProgressReporter;
 import magic.ui.UiExceptionHandler;
 import magic.ui.WikiPage;
 import magic.ui.helpers.LaFHelper;
-import magic.ui.helpers.UrlHelper;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -59,7 +58,7 @@ public class MagicMain {
 
         if (cmdline.showHelp()) {
             System.err.println("--help specified - opening wiki page and exit...\n" + WikiPage.COMMAND_LINE.getUrl());
-            UrlHelper.openURL(WikiPage.COMMAND_LINE.getUrl());
+            WikiPage.show(WikiPage.COMMAND_LINE);
             System.exit(0);
         }
 

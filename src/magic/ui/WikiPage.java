@@ -13,7 +13,10 @@ public enum WikiPage {
     MULLIGAN("Mulligan-Screen"),
     NEW_DUEL("UINewDuel"),
     IMPORT_SETTINGS("Upgrading-to-a-new-release"),
-    COMMAND_LINE("Command-line-arguments");
+    COMMAND_LINE("Command-line-arguments"),
+    TRANSLATING("Translating-Magarena"),
+    IMAGE_DOWNLOADS("Download-images")
+    ;
 
     private final String pageName;
 
@@ -23,5 +26,9 @@ public enum WikiPage {
 
     public String getUrl() {
         return UrlHelper.URL_WIKI + pageName;
+    }
+
+    public static void show(WikiPage page) {
+        UrlHelper.openURL(page.getUrl());
     }
 }

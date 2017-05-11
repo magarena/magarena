@@ -14,8 +14,8 @@ import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.MagicImages;
+import magic.ui.WikiPage;
 import magic.ui.dialog.button.CloseButton;
-import magic.ui.helpers.UrlHelper;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -192,7 +192,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             helpButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    UrlHelper.openURL(UrlHelper.URL_WIKI + "Download-images");
+                    WikiPage.show(WikiPage.IMAGE_DOWNLOADS);
                 }
             });
             hintPanel.addHintSource(helpButton, String.format("<b>%s</b><br>%s",
