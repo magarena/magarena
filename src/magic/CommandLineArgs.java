@@ -18,6 +18,8 @@ class CommandLineArgs {
     private int games = DuelConfig.DEFAULT_GAMES;
     private int startLife = DuelConfig.DEFAULT_LIFE;
     private boolean showHelp = false;
+    private String deck1 = "";
+    private String deck2 = "";
 
     CommandLineArgs(final String[] args) {
 
@@ -54,6 +56,14 @@ class CommandLineArgs {
                 setStartLife(Integer.parseInt(args[i + 1].trim()));
                 break;
 
+            case "--deck1": // set player 1 deck (see wiki page for value syntax)
+                setDeck1(args[i + 1].trim());
+                break;
+
+            case "--deck2": // set player 2 deck (see wiki page for value syntax)
+                setDeck2(args[i + 1].trim());
+                break;
+
             //
             // other settings.
             //
@@ -79,6 +89,16 @@ class CommandLineArgs {
 
             }
         }
+    }
+
+    private void setDeck2(String deck) {
+        this.deck2 = deck;
+        MagicSystem.setAiVersusAi(true);
+    }
+
+    private void setDeck1(String deck) {
+        this.deck1 = deck;
+        MagicSystem.setAiVersusAi(true);
     }
 
     private void setStartLife(int life) {
@@ -149,6 +169,14 @@ class CommandLineArgs {
 
     boolean showHelp() {
         return showHelp;
+    }
+
+    String getDeck1() {
+        return deck1;
+    }
+
+    String getDeck2() {
+        return deck2;
     }
 
 }

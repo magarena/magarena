@@ -470,4 +470,25 @@ public class DeckUtils {
             || Files.isSameFile(dir, getPrebuiltDecksFolder())
             || Files.isSameFile(dir, getFiremindDecksFolder());
     }
+
+    /**
+     * Returns string as {@code filename}.dec
+     */
+    public static String getNormalizedFilename(String filename) {
+        return filename.endsWith(".dec") ? filename : filename + ".dec";
+    }
+
+    /**
+     * Searches for a deck file and returns the first matching file
+     * in the \decks\* folder structure.
+     */
+    public static File findDeckFile(String filename) {
+        String target = getNormalizedFilename(filename);
+        for (File deckFile : DeckUtils.getDeckFiles()) {
+            if (target.equals(deckFile.getName())) {
+                return deckFile;
+            }
+        }
+        return null;
+    }
 }

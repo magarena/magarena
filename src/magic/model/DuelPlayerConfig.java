@@ -39,6 +39,7 @@ public class DuelPlayerConfig {
 
     public void setDeck(final MagicDeck aDeck) {
         deck.setContent(aDeck);
+        setDeckProfile(deck.getDeckType().name() + ";" + deck.getName());
     }
 
     private static String getDeckPrefix(final String prefix, final int index) {
