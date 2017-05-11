@@ -17,7 +17,7 @@ class CommandLineArgs {
     private boolean isDevMode = false;
     private int games = DuelConfig.DEFAULT_GAMES;
     private int startLife = DuelConfig.DEFAULT_LIFE;
-    private String testClass;
+    private boolean showHelp = false;
 
     CommandLineArgs(final String[] args) {
 
@@ -71,6 +71,10 @@ class CommandLineArgs {
 
             case "--test": // Runs specified test game, equivalent to -DtestGame VM arg. (eg. --test TestAura)
                 System.setProperty("testGame", args[i + 1].trim());
+                break;
+
+            case "--help": // shows wiki help page in browser.
+                showHelp = true;
                 break;
 
             }
@@ -141,6 +145,10 @@ class CommandLineArgs {
 
     int getLife() {
         return startLife;
+    }
+
+    boolean showHelp() {
+        return showHelp;
     }
 
 }

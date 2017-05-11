@@ -12,7 +12,9 @@ import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
 import magic.ui.SplashProgressReporter;
 import magic.ui.UiExceptionHandler;
+import magic.ui.WikiPage;
 import magic.ui.helpers.LaFHelper;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.widget.duel.animation.MagicAnimations;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -32,11 +34,8 @@ public class MagicMain {
 
         System.out.println(MagicSystem.getRuntimeParameters());
 
-        // parse command line
         final CommandLineArgs cmdline = new CommandLineArgs(args);
-        MagicAnimations.setEnabled(cmdline.isAnimationsEnabled());
-        MagicAI.setMaxThreads(cmdline.getMaxThreads());
-        MagicSystem.setIsDevMode(cmdline.isDevMode());
+        parseCommandLine(cmdline);
 
         // show the data folder being used
         System.out.println("Data folder : "+ MagicFileSystem.getDataPath());
@@ -54,6 +53,19 @@ public class MagicMain {
 
         reporter.setMessage("Starting UI...");
         SwingUtilities.invokeLater(() -> { startUI(cmdline); });
+    }
+
+    private static void parseCommandLine(CommandLineArgs cmdline) {
+
+        if (cmdline.showHelp()) {
+            System.err.println("--help specified - opening wiki page and exit...\n" + WikiPage.COMMAND_LINE.getUrl());
+            UrlHelper.openURL(WikiPage.COMMAND_LINE.getUrl());
+            System.exit(0);
+        }
+
+        MagicAnimations.setEnabled(cmdline.isAnimationsEnabled());
+        MagicAI.setMaxThreads(cmdline.getMaxThreads());
+        MagicSystem.setIsDevMode(cmdline.isDevMode());
     }
 
     /**

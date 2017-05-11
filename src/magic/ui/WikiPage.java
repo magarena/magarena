@@ -3,7 +3,7 @@ package magic.ui;
 import magic.ui.helpers.UrlHelper;
 
 public enum WikiPage {
-    
+
     HOME("home"),
     CARDS_EXPLORER("UICardExplorer"),
     CARD_SCRIPTING("UICardScriptViewer"),
@@ -12,7 +12,8 @@ public enum WikiPage {
     MAIN_MENU("Main-Menu-Screen"),
     MULLIGAN("Mulligan-Screen"),
     NEW_DUEL("UINewDuel"),
-    IMPORT_SETTINGS("Upgrading-to-a-new-release");
+    IMPORT_SETTINGS("Upgrading-to-a-new-release"),
+    COMMAND_LINE("Command-line-arguments");
 
     private final String pageName;
 
