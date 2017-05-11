@@ -20,6 +20,7 @@ import magic.model.MagicManaType;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.theme.AvatarImages;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
@@ -205,7 +206,9 @@ public final class MagicImages {
 
     private static BufferedImage getAvatarImage(PlayerProfile profile) {
         File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
-        return file.exists() ? ImageFileIO.toImg(file, MISSING_BIG) : MISSING_BIG;
+        return file.exists()
+                ? ImageFileIO.toImg(file, MISSING_BIG)
+                : ImageFileIO.toImg(AvatarImages.getRandomAvatarFile(), MISSING_BIG);
     }
 
     public static PlayerAvatar getPlayerAvatar(PlayerProfile profile) {

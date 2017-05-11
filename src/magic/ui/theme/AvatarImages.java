@@ -2,12 +2,15 @@ package magic.ui.theme;
 
 import java.io.File;
 import java.util.Arrays;
+import java.util.Collection;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
-import magic.ui.MagicImages;
+import magic.model.MagicRandom;
 import magic.ui.ImageFileIO;
+import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import org.apache.commons.io.FileUtils;
 
 public class AvatarImages {
 
@@ -56,5 +59,16 @@ public class AvatarImages {
 
     public static AvatarImages getInstance() {
         return INSTANCE;
+    }
+
+    public static File getRandomAvatarFile() {
+        final Collection<File> files = FileUtils.listFiles(
+            MagicFileSystem.getDataPath(DataPath.AVATARS).toFile(),
+            new String[]{"png"},
+            true
+        );
+        return files.stream()
+            .skip(MagicRandom.nextRNGInt(files.size() - 1))
+            .findFirst().orElse(new File(""));
     }
 }
