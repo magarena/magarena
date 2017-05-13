@@ -95,10 +95,6 @@ public class GameViewerInfo {
         return priorityPlayer;
     }
 
-    public boolean isVisiblePlayer(final MagicPlayer player) {
-        return playerInfo.player==player;
-    }
-
     public List<StackViewerInfo> getStack() {
         return stack;
     }
