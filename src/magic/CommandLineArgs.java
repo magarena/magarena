@@ -14,7 +14,7 @@ class CommandLineArgs {
     private int ai2Level = 8;
     private boolean isAnimationsEnabled = true;
     private int maxAiThreads = MagicAI.getMaxThreads();
-    private boolean isDevMode = false;
+    private boolean isDevMode = MagicSystem.isDevMode();
     private int games = DuelConfig.DEFAULT_GAMES;
     private int startLife = DuelConfig.DEFAULT_LIFE;
     private boolean showHelp = false;
