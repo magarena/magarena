@@ -106,10 +106,10 @@ public class TurnTitlePanel extends JPanel {
 
     private String getScoreString(final GameViewerInfo gameInfo) {
         return String.format("%s %d - %d %s",
-                gameInfo.getPlayerInfo(false).getName(),
-                gameInfo.getPlayerInfo(false).getGamesWon(),
-                gameInfo.getPlayerInfo(true).getGamesWon(),
-                gameInfo.getPlayerInfo(true).getName()
+                gameInfo.getMainPlayer().getName(),
+                gameInfo.getMainPlayer().getGamesWon(),
+                gameInfo.getOpponent().getGamesWon(),
+                gameInfo.getOpponent().getName()
         );
     }
 

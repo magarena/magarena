@@ -219,7 +219,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
      * is created whenever ViewerInfo is updated.</b>
      */
     private PlayerViewerInfo getUserPlayer() {
-        return controller.getGameViewerInfo().getPlayerInfo(false);
+        return controller.getGameViewerInfo().getMainPlayer();
     }
 
     /**
@@ -229,7 +229,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
      * is created whenever ViewerInfo is updated.</b>
      */
     private PlayerViewerInfo getAiPlayer() {
-        return controller.getGameViewerInfo().getPlayerInfo(true);
+        return controller.getGameViewerInfo().getOpponent();
     }
 
     private int getZoneButtonIndex(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {

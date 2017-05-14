@@ -55,7 +55,7 @@ public final class DuelPanel extends JPanel {
         createMouseListener();
 
         // TODO: should not have to run this, but required while sidebarPanel is created after battlefieldPanel.
-        controller.notifyPlayerZoneChanged(controller.getGameViewerInfo().getPlayerInfo(false), MagicPlayerZone.HAND);
+        controller.notifyPlayerZoneChanged(controller.getGameViewerInfo().getMainPlayer(), MagicPlayerZone.HAND);
         controller.setUserActionPanel(sidebarPanel.getGameStatusPanel().getUserActionPanel());
 
     }

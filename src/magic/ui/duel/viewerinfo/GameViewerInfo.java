@@ -19,8 +19,6 @@ public class GameViewerInfo {
     private static final int MAX_LOG = 50;
 
     private final List<PlayerViewerInfo> players = new ArrayList<>();
-    private final PlayerViewerInfo playerInfo;
-    private final PlayerViewerInfo opponentInfo;
     private final List<StackItemViewerInfo> stack = new ArrayList<>();
     private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
     private final int turn;
@@ -36,12 +34,9 @@ public class GameViewerInfo {
             players.add(new PlayerViewerInfo(game, mplayer));
         }
 
-        playerInfo = players.get(0);
-        opponentInfo = players.get(1);
-
         // TODO: MagicPlayer should be responsible for keeping track of games won.
-        playerInfo.setGamesWon(game.getDuel().getGamesWon());
-        opponentInfo.setGamesWon(game.getDuel().getGamesPlayed() - game.getDuel().getGamesWon());
+        players.get(0).setGamesWon(game.getDuel().getGamesWon());
+        players.get(1).setGamesWon(game.getDuel().getGamesPlayed() - game.getDuel().getGamesWon());
 
         turn = game.getTurn();
         gamesRequiredToWin = game.getDuel().getConfiguration().getGamesRequiredToWinDuel();
@@ -76,8 +71,21 @@ public class GameViewerInfo {
         }
     }
 
-    public PlayerViewerInfo getPlayerInfo(final boolean opponent) {
-        return opponent ? opponentInfo : playerInfo;
+    /**
+     * This is the player (usually human but can be AI) whose cards
+     * are shown by default in {@code PlayerZoneViewer}.
+     */
+    public PlayerViewerInfo getMainPlayer() {
+        return players.get(0);
+    }
+
+    /**
+     * The other player (usually AI) challenging the main player.
+     */
+    public PlayerViewerInfo getOpponent() {
+        return players.stream()
+            .filter(p -> p != getMainPlayer())
+            .findFirst().get();
     }
 
     /**

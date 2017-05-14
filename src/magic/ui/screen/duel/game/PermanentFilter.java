@@ -1,11 +1,11 @@
 package magic.ui.screen.duel.game;
 
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.ui.duel.viewerinfo.PermanentViewerInfo;
-import magic.ui.duel.viewerinfo.GameViewerInfo;
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 
 public class PermanentFilter {
 
@@ -35,14 +35,11 @@ public class PermanentFilter {
         return permanentInfo.root;
     }
 
-    public SortedSet<PermanentViewerInfo> getPermanents(final GameViewerInfo viewerInfo, final boolean opponent) {
-        final PlayerViewerInfo player = viewerInfo.getPlayerInfo(opponent);
-        final SortedSet<PermanentViewerInfo> permanents = new TreeSet<>(PERMANENT_COMPARATOR);
-        for (final PermanentViewerInfo permanentInfo : player.permanents) {
-            if (accept(permanentInfo)) {
-                permanents.add(permanentInfo);
-            }
-        }
+    public SortedSet<PermanentViewerInfo> getPermanents(GameViewerInfo gameInfo, boolean isOpponent) {
+        PlayerViewerInfo player = isOpponent ? gameInfo.getOpponent() : gameInfo.getMainPlayer();
+        SortedSet<PermanentViewerInfo> permanents = new TreeSet<>(PERMANENT_COMPARATOR);
+        player.permanents.stream().filter(p -> accept(p))
+            .forEach(p -> permanents.add(p));
         return permanents;
     }
 
