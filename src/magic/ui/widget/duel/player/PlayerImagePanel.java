@@ -40,7 +40,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private BufferedImage getPlayerAvatarImage() {
-        final ImageIcon icon = MagicImages.getIconSize3(this.playerInfo.player.getPlayerDefinition());
+        final ImageIcon icon = MagicImages.getIconSize3(this.playerInfo.player.getConfig());
         return ImageHelper.scale(ImageHelper.getConvertedIcon(icon), 74, 74);
     }
 

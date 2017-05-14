@@ -183,7 +183,7 @@ public class H2Database {
     private int getPlayerId(Connection conn, MagicPlayer player) throws SQLException {
         return player.isArtificial()
             ? getAiPlayerId(conn, player.getAiProfile())
-            : getHumanPlayerId(conn, player.getPlayerDefinition().getProfile());
+            : getHumanPlayerId(conn, player.getConfig().getProfile());
     }
 
 
@@ -215,7 +215,7 @@ public class H2Database {
 
             for (int i = 0; i < game.getPlayers().length; i++) {
                 MagicPlayer player = game.getPlayer(i);
-                MagicDeck deck = player.getPlayerDefinition().getDeck();
+                MagicDeck deck = player.getConfig().getDeck();
                 try (PreparedStatement ps = conn.prepareStatement(SQL)) {
                     ps.setLong(1, game.getStartTimeMilli());
                     ps.setInt(2, i + 1);

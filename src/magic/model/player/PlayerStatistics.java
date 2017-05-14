@@ -168,7 +168,7 @@ public class PlayerStatistics {
         }
 
         final int[] colorCount = new int[MagicColor.NR_COLORS];
-        final MagicDeck deck = player.getPlayerDefinition().getDeck();
+        final MagicDeck deck = player.getConfig().getDeck();
         for (final MagicCardDefinition card : deck) {
             if (!card.isLand()) {
                 for (final MagicColor color : MagicColor.values()) {

@@ -50,7 +50,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     private static final int LOSING_POISON=10;
     private static final long ID_FACTOR=31;
 
-    private final DuelPlayerConfig playerDefinition;
+    private final DuelPlayerConfig playerConfig;
     private final int index;
 
     private int stateFlags;
@@ -81,8 +81,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     private long[] keys;
 
-    MagicPlayer(final int aLife,final DuelPlayerConfig aPlayerDefinition,final int aIndex) {
-        playerDefinition = aPlayerDefinition;
+    MagicPlayer(final int aLife,final DuelPlayerConfig playerConfig,final int aIndex) {
+        this.playerConfig = playerConfig;
         index = aIndex;
         life = aLife;
 
@@ -98,7 +98,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     private MagicPlayer(final MagicCopyMap copyMap, final MagicPlayer sourcePlayer) {
         copyMap.put(sourcePlayer, this);
 
-        playerDefinition = sourcePlayer.playerDefinition;
+        playerConfig = sourcePlayer.playerConfig;
         index = sourcePlayer.index;
         life = sourcePlayer.life;
         lifeGainThisTurn = sourcePlayer.lifeGainThisTurn;
@@ -199,7 +199,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     @Override
     public String toString() {
-        return playerDefinition.getName();
+        return playerConfig.getName();
     }
 
     public Set<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
@@ -216,8 +216,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return set;
     }
 
-    public DuelPlayerConfig getPlayerDefinition() {
-        return playerDefinition;
+    public DuelPlayerConfig getConfig() {
+        return playerConfig;
     }
 
     public int getIndex() {
@@ -455,7 +455,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     // check for thread.isInterrupted to terminate early when interrupted
     void createHandAndLibrary(final int handSize) {
         startingHandSize = handSize;
-        final MagicDeck deck = playerDefinition.getDeck();
+        final MagicDeck deck = playerConfig.getDeck();
         Thread thread = Thread.currentThread();
         for (int i = 0; i < deck.size() && thread.isInterrupted() == false; i++) {
             final MagicCardDefinition cardDefinition = deck.get(i);
@@ -741,7 +741,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     @Override
     public String getName() {
-        return playerDefinition.getName();
+        return playerConfig.getName();
     }
 
     @Override
@@ -923,14 +923,14 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     public boolean isHuman() {
-        return playerDefinition.getProfile().isHuman();
+        return playerConfig.getProfile().isHuman();
     }
 
     public boolean isArtificial() {
-        return playerDefinition.getProfile().isArtificial();
+        return playerConfig.getProfile().isArtificial();
     }
 
     public AiProfile getAiProfile() {
-        return (AiProfile)playerDefinition.getProfile();
+        return (AiProfile)playerConfig.getProfile();
     }
 }

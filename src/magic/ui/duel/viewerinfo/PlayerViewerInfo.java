@@ -40,10 +40,10 @@ public class PlayerViewerInfo {
         this.player = player;
         hasPriority = game.getPriorityPlayer() == player;
         playerIndex = player.getIndex();
-        deckName = player.getPlayerDefinition().getDeck().getQualifiedName();
+        deckName = player.getConfig().getDeck().getQualifiedName();
         isPlayerTurn = player == game.getTurnPlayer();
         name = player.getName();
-        playerLabel = player.getPlayerDefinition().getProfile().getPlayerLabel();
+        playerLabel = player.getConfig().getProfile().getPlayerLabel();
         life = player.getLife();
         poison = player.getCounters(MagicCounterType.Poison);
         energy = player.getCounters(MagicCounterType.Energy);
@@ -60,7 +60,7 @@ public class PlayerViewerInfo {
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game, permanent));
         }
-        avatar = MagicImages.getIconSize4(player.getPlayerDefinition());
+        avatar = MagicImages.getIconSize4(player.getConfig());
     }
 
     public ImageIcon getAvatar() {
