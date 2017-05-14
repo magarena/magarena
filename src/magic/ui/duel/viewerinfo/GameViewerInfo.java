@@ -80,20 +80,27 @@ public class GameViewerInfo {
         return opponent ? opponentInfo : playerInfo;
     }
 
-    public PlayerViewerInfo getAttackingPlayerInfo() {
-        return playerInfo.isPlayerTurn() ? playerInfo : opponentInfo;
-    }
-
-    public PlayerViewerInfo getDefendingPlayerInfo() {
-        return playerInfo.isPlayerTurn() ? opponentInfo : playerInfo;
-    }
-
+    /**
+     * The player whose turn it is.
+     */
     public PlayerViewerInfo getTurnPlayer() {
         return players.stream()
             .filter(p -> p.isPlayerTurn())
             .findFirst().get();
     }
 
+    /**
+     * The player whose turn it is not.
+     */
+    public PlayerViewerInfo getNonTurnPlayer() {
+        return players.stream()
+            .filter(p -> p.isPlayerTurn() == false)
+            .findFirst().get();
+    }
+
+    /**
+     * The player who has priority.
+     */
     public PlayerViewerInfo getPriorityPlayer() {
         return players.stream()
             .filter(p -> p.hasPriority())

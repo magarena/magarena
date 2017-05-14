@@ -1,22 +1,20 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewerinfo.GameViewerInfo;
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.ui.duel.viewerinfo.PermanentViewerInfo;
-import magic.ui.IChoiceViewer;
-import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.FontsAndBorders;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import java.util.stream.Stream;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import magic.ui.FontsAndBorders;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -50,25 +48,18 @@ public class ImageCombatViewer extends JPanel implements IChoiceViewer {
     }
 
     public void update() {
-        final SortedSet<PermanentViewerInfo> creatures =
+
+        SortedSet<PermanentViewerInfo> creatures =
             new TreeSet<>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
 
-        final GameViewerInfo viewerInfo = controller.getGameViewerInfo();
+        PlayerViewerInfo attacker = controller.getGameViewerInfo().getTurnPlayer();
+        PlayerViewerInfo defender = controller.getGameViewerInfo().getNonTurnPlayer();
 
-        final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
-        for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {
-            if (permanentInfo.attacking) {
-                creatures.add(permanentInfo);
-            }
-        }
-
-        //add in blockers whose attacker is destroyed
-        final PlayerViewerInfo defendingPlayerInfo=viewerInfo.getDefendingPlayerInfo();
-        for (final PermanentViewerInfo permanentInfo : defendingPlayerInfo.permanents) {
-            if (permanentInfo.blocking && permanentInfo.blockingInvalid) {
-                creatures.add(permanentInfo);
-            }
-        }
+        Stream.concat(
+            attacker.permanents.stream().filter(p -> p.attacking),
+            // add in blockers whose attacker is destroyed
+            defender.permanents.stream().filter(p -> p.blocking && p.blockingInvalid)
+        ).forEach(p -> creatures.add(p));
 
         permanentsViewer.viewPermanents(creatures);
     }
