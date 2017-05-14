@@ -89,7 +89,9 @@ public class GameViewerInfo {
     }
 
     public PlayerViewerInfo getTurnPlayer() {
-        return playerInfo.isPlayerTurn() ? playerInfo : opponentInfo;
+        return players.stream()
+            .filter(p -> p.isPlayerTurn())
+            .findFirst().get();
     }
 
     public PlayerViewerInfo getPriorityPlayer() {
