@@ -8,7 +8,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
 import magic.data.GeneralConfig;
 import magic.exception.GameException;
 import magic.model.action.AddEventAction;
@@ -46,6 +45,8 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
+import magic.model.trigger.AtEndOfTurnTrigger;
+import magic.model.trigger.DamageIsDealtTrigger;
 import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicPermanentTriggerList;
 import magic.model.trigger.MagicPermanentTriggerMap;
@@ -53,8 +54,6 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.OtherEntersBattlefieldTrigger;
 import magic.model.trigger.PreventDamageTrigger;
-import magic.model.trigger.AtEndOfTurnTrigger;
-import magic.model.trigger.DamageIsDealtTrigger;
 import magic.ui.MagicSound;
 
 public class MagicGame {
@@ -314,13 +313,11 @@ public class MagicGame {
         sb.append('\n');
         sb.append(keys[0]);
         for (int i = 1; i < keys.length; i++) {
-            sb.append(' ');
-            sb.append(keys[i]);
+            sb.append(' ').append(keys[i]);
         }
-        sb.append('\n');
-        sb.append(players[0].getIdString());
-        sb.append('\n');
-        sb.append(players[1].getIdString());
+        for (MagicPlayer player : players) {
+            sb.append('\n').append(player.getIdString());
+        }
         return sb.toString();
     }
 
@@ -329,8 +326,9 @@ public class MagicGame {
         id = id*ID_FACTOR + turn;
         id = id*ID_FACTOR + phase.getType().ordinal();
         id = id*ID_FACTOR + score + pruneScore;
-        id = players[0].getPlayerId(id);
-        id = players[1].getPlayerId(id);
+        for (MagicPlayer player : players) {
+            id = player.getPlayerId(id);
+        }
         return id;
     }
 
@@ -460,10 +458,11 @@ public class MagicGame {
 
     private void changePhase(final MagicPhase aPhase) {
         phase = aPhase;
-        step=MagicStep.Begin;
-        priorityPassedCount=0;
-        players[0].getActivationPriority().clear();
-        players[1].getActivationPriority().clear();
+        step = MagicStep.Begin;
+        priorityPassedCount = 0;
+        for (MagicPlayer player : players) {
+            player.getActivationPriority().clear();
+        }
     }
 
     public MagicPhase getPhase() {
@@ -931,23 +930,27 @@ public class MagicGame {
     }
 
     public int getNrOfPermanents(final MagicPermanentState state) {
-        return players[0].getNrOfPermanents(state) +
-               players[1].getNrOfPermanents(state);
+        return Arrays.stream(players)
+            .mapToInt(p -> p.getNrOfPermanents(state))
+            .sum();
     }
 
     public int getNrOfPermanents(final MagicType type) {
-        return players[0].getNrOfPermanents(type) +
-               players[1].getNrOfPermanents(type);
+        return Arrays.stream(players)
+            .mapToInt(p -> p.getNrOfPermanents(type))
+            .sum();
     }
 
     public int getNrOfPermanents(final MagicSubType subType) {
-        return players[0].getNrOfPermanents(subType) +
-               players[1].getNrOfPermanents(subType);
+        return Arrays.stream(players)
+            .mapToInt(p -> p.getNrOfPermanents(subType))
+            .sum();
     }
 
     public int getNrOfPermanents(final MagicColor color) {
-        return players[0].getNrOfPermanents(color) +
-               players[1].getNrOfPermanents(color);
+        return Arrays.stream(players)
+            .mapToInt(p -> p.getNrOfPermanents(color))
+            .sum();
     }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
@@ -955,8 +958,9 @@ public class MagicGame {
     }
 
     public int getNrOfPermanents(final MagicSource source, final MagicTargetFilter<MagicPermanent> filter) {
-        return players[0].getNrOfPermanents(source, filter) +
-               players[1].getNrOfPermanents(source, filter);
+        return Arrays.stream(players)
+            .mapToInt(p -> p.getNrOfPermanents(source, filter))
+            .sum();
     }
 
     public boolean canPlaySorcery(final MagicPlayer controller) {
