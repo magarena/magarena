@@ -18,7 +18,7 @@ public class StackItemViewerInfo {
     public final String name;
     public final ImageIcon icon;
     public final String description;
-    public final boolean visible;
+    public final boolean isControllerMainPlayer;
 
     StackItemViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
@@ -27,7 +27,7 @@ public class StackItemViewerInfo {
             itemOnStack.getCardDefinition();
         name=itemOnStack.getName();
         description=itemOnStack.getDescription();
-        visible=itemOnStack.getController()==game.getVisiblePlayer();
+        isControllerMainPlayer = itemOnStack.getController() == game.getPlayer(0);
         icon = getIcon(itemOnStack);
     }
 

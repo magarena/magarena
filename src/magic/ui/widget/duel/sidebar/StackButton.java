@@ -22,19 +22,19 @@ class StackButton extends PanelButton implements IChoiceViewer {
     private final StackItemViewerInfo stackInfo;
     private final SwingGameController controller;
 
-    StackButton(SwingGameController aController, StackItemViewerInfo stackInfo, int maxWidth, int itemNum) {
+    StackButton(SwingGameController aController, StackItemViewerInfo stackItem, int maxWidth, int itemNum) {
 
         this.controller = aController;
-        this.stackInfo = stackInfo;
+        this.stackInfo = stackItem;
 
         final JPanel panel = new JPanel();
         panel.setOpaque(false);
-        panel.setBorder(FontsAndBorders.getPlayerBorder(stackInfo.visible));
+        panel.setBorder(FontsAndBorders.getPlayerBorder(stackItem.isControllerMainPlayer));
         panel.setLayout(new BorderLayout(0, 0));
         setComponent(panel);
 
-        final JLabel sourceLabel = new JLabel(stackInfo.name);
-        sourceLabel.setIcon(stackInfo.icon);
+        final JLabel sourceLabel = new JLabel(stackItem.name);
+        sourceLabel.setIcon(stackItem.icon);
         sourceLabel.setFont(sourceLabel.getFont().deriveFont(Font.BOLD | Font.ITALIC));
 
         final JLabel itemLabel = new JLabel("#" + Integer.toString(itemNum));
@@ -48,7 +48,7 @@ class StackButton extends PanelButton implements IChoiceViewer {
         panel.add(headerPanel, BorderLayout.NORTH);
 
         final TextLabel textLabel = new TextLabel(
-            stackInfo.description,
+            stackItem.description,
             LogStackViewer.MESSAGE_FONT,
             maxWidth,
             false,

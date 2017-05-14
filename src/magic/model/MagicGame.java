@@ -92,7 +92,6 @@ public class MagicGame {
     private boolean artificial;
     private boolean immediate;
     private boolean disableLog;
-    private final MagicPlayer visiblePlayer;
     private MagicPlayer turnPlayer;
     private MagicPlayer losingPlayer = MagicPlayer.NONE;
     private MagicPhase phase;
@@ -149,8 +148,7 @@ public class MagicGame {
         events=new MagicEventQueue();
         stack=new MagicStack();
         pendingStack=new MagicStack();
-        visiblePlayer=players[0];
-        scorePlayer=visiblePlayer;
+        scorePlayer=players[0];
         turnPlayer=startPlayer;
         actions=new MagicActionList();
         delayedActions=new MagicActionList();
@@ -189,7 +187,6 @@ public class MagicGame {
             player.setGame(this);
         }
         scorePlayer=copyMap.copy(aScorePlayer);
-        visiblePlayer=copyMap.copy(game.visiblePlayer);
         turnPlayer=copyMap.copy(game.turnPlayer);
         losingPlayer=copyMap.copy(game.losingPlayer);
         payedCost=copyMap.copy(game.payedCost);
@@ -876,13 +873,6 @@ public class MagicGame {
 
     MagicPlayer getOpponent(final MagicPlayer player) {
         return players[1-player.getIndex()];
-    }
-
-    /**
-     * Player whose hand is shown by default at the start of a game.
-     */
-    public MagicPlayer getVisiblePlayer() {
-        return visiblePlayer;
     }
 
     public void setTurnPlayer(final MagicPlayer aTurnPlayer) {

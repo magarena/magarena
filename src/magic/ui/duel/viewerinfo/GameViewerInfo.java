@@ -33,7 +33,7 @@ public class GameViewerInfo {
 
     public GameViewerInfo(final MagicGame game) {
 
-        final MagicPlayer player = game.getVisiblePlayer();
+        final MagicPlayer player = game.getPlayer(0);
         playerInfo = new PlayerViewerInfo(game, player);
         opponentInfo = new PlayerViewerInfo(game, player.getOpponent());
         priorityPlayer = game.getPriorityPlayer() == player ? playerInfo : opponentInfo;
