@@ -53,7 +53,7 @@ public class ImageCombatViewer extends JPanel implements IChoiceViewer {
         final SortedSet<PermanentViewerInfo> creatures =
             new TreeSet<>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
 
-        final GameViewerInfo viewerInfo = controller.getViewerInfo();
+        final GameViewerInfo viewerInfo = controller.getGameViewerInfo();
 
         final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
         for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {

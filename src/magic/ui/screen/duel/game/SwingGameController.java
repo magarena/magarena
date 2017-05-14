@@ -605,7 +605,7 @@ public class SwingGameController implements IUIGameController {
         return validChoices;
     }
 
-    public GameViewerInfo getViewerInfo() {
+    public GameViewerInfo getGameViewerInfo() {
         return gameViewerInfo;
     }
 

@@ -43,7 +43,7 @@ class LogViewer extends TexturedPanel {
 
     void update() {
         boolean isRemoved = false;
-        final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
+        final List<MagicMessage> msgs = controller.getGameViewerInfo().getLog();
         final int n = msgs.size();
         int i = 0;
         for (int c = 0; c < messagePanels.getComponentCount();) {

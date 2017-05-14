@@ -56,7 +56,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
     }
 
     public void update() {
-        turnStatusPanel.refresh(controller.getViewerInfo());
+        turnStatusPanel.refresh(controller.getGameViewerInfo());
     }
 
     @Override

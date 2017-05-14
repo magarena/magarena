@@ -61,7 +61,7 @@ public class StackViewer extends JPanel implements IChoiceViewer {
         buttons.clear();
 
         // Display stack items
-        final List<StackViewerInfo> stack = controller.getViewerInfo().getStack();
+        final List<StackViewerInfo> stack = controller.getGameViewerInfo().getStack();
         final int stackSize = stack.size();
         for (int i = 0; i < stackSize; i++) {
             final StackViewerInfo stackInfo = stack.get(i);

@@ -395,7 +395,7 @@ public class AnnotatedCardPanel extends JPanel {
     public void setVisible(final boolean isVisible) {
         super.setVisible(isVisible);
         if (controller != null && CONFIG.isGamePausedOnPopup()) {
-            final boolean aiHasPriority = controller.getViewerInfo().getPriorityPlayer().isAi();
+            final boolean aiHasPriority = controller.getGameViewerInfo().getPriorityPlayer().isAi();
             controller.setGamePaused(isVisible && aiHasPriority);
         }
     }

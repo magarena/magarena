@@ -150,7 +150,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     }
 
     public void enableUndoButton(final boolean thinking) {
-        final int undoPoints=controller.getViewerInfo().getUndoPoints();
+        final int undoPoints=controller.getGameViewerInfo().getUndoPoints();
         final boolean allowUndo=undoPoints>0&&!thinking;
         undoButton.setEnabled(allowUndo);
     }
@@ -189,7 +189,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
      * for use with the GameStatusPanel component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
-        return controller.getViewerInfo().getPriorityPlayer().getAvatar();
+        return controller.getGameViewerInfo().getPriorityPlayer().getAvatar();
     }
 
 }

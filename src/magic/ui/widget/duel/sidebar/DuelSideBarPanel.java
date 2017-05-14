@@ -57,8 +57,8 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     private void createPlayerPanels() {
         PlayerZoneButtonsPanel.clearButtonGroup();
-        PlayerViewerInfo playerInfo = controller.getViewerInfo().getPlayerInfo(false);
-        PlayerViewerInfo opponentInfo = controller.getViewerInfo().getPlayerInfo(true);
+        PlayerViewerInfo playerInfo = controller.getGameViewerInfo().getPlayerInfo(false);
+        PlayerViewerInfo opponentInfo = controller.getGameViewerInfo().getPlayerInfo(true);
         playerPanels[0] = new GamePlayerPanel(controller, playerInfo);
         playerPanels[1] = new GamePlayerPanel(controller, opponentInfo);
     }
@@ -97,7 +97,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     @Override
     public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        if (playerInfo == controller.getViewerInfo().getPlayerInfo(true)) {
+        if (playerInfo == controller.getGameViewerInfo().getPlayerInfo(true)) {
             playerPanels[1].setActiveZone(zone);
         } else {
             playerPanels[0].setActiveZone(zone);

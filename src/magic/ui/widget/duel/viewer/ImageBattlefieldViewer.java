@@ -55,7 +55,7 @@ public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUp
 
     @Override
     public void update() {
-        permanentsViewer.viewPermanents(permanentFilter.getPermanents(controller.getViewerInfo(), opponent));
+        permanentsViewer.viewPermanents(permanentFilter.getPermanents(controller.getGameViewerInfo(), opponent));
     }
 
     @Override
