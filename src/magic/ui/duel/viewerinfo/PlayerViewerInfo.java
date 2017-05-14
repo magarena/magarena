@@ -33,10 +33,11 @@ public class PlayerViewerInfo {
     private final boolean isAi;
     private final boolean isMonarch;
     public final String playerLabel;
-    private final ImageIcon avatar;
     private int gamesWon;
     private final boolean hasPriority;
     private final boolean isWinner;
+    private final ImageIcon newTurnAvatar;
+    private final ImageIcon playerPanelAvatar;
 
     PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
         this.player = player;
@@ -63,11 +64,22 @@ public class PlayerViewerInfo {
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game, permanent));
         }
-        avatar = MagicImages.getIconSize4(player.getConfig());
+        newTurnAvatar = MagicImages.getIconSize4(this.getConfig());
+        playerPanelAvatar =  MagicImages.getIconSize3(this.getConfig());
     }
 
-    public ImageIcon getAvatar() {
-        return avatar;
+    /**
+     * Avatar image displayed at the start of the player's turn.
+     */
+    public ImageIcon getNewTurnAvatar() {
+        return newTurnAvatar;
+    }
+
+    /**
+     * Avatar image displayed in game panel.
+     */
+    public ImageIcon getPlayerPanelAvatar() {
+        return playerPanelAvatar;
     }
 
     public boolean isAi() {
@@ -116,7 +128,7 @@ public class PlayerViewerInfo {
     public DuelPlayerConfig getConfig() {
         return player.getConfig();
     }
-	
+
     boolean isWinner() {
         return isWinner;
     }

@@ -37,7 +37,7 @@ class NewTurnPanel extends JPanel {
     }
 
     public void refreshData(final GameViewerInfo gameInfo) {
-        iconLabel.setIcon(gameInfo.getTurnPlayer().getAvatar());
+        iconLabel.setIcon(gameInfo.getTurnPlayer().getNewTurnAvatar());
         turnLabel.setText(MText.get(_S1, gameInfo.getTurn()));
     }
 

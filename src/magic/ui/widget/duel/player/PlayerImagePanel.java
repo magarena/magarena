@@ -7,7 +7,6 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
-import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
@@ -27,21 +26,23 @@ public class PlayerImagePanel extends AnimationPanel {
 
     private final BufferedImage activeImage;
     private final Image inactiveImage;
-    private PlayerViewerInfo playerInfo;
+    private PlayerViewerInfo player;
     private int life = 0;
     private int damageColorOpacity = 0;
     private int healColorOpacity = 0;
     private boolean isValidChoiceVisible = false;
 
     public PlayerImagePanel(final PlayerViewerInfo player) {
-        this.playerInfo = player;
+        this.player = player;
         activeImage = getPlayerAvatarImage();
         inactiveImage = ImageHelper.getGreyScaleImage(activeImage);
     }
 
     private BufferedImage getPlayerAvatarImage() {
-        final ImageIcon icon = MagicImages.getIconSize3(this.playerInfo.player.getConfig());
-        return ImageHelper.scale(ImageHelper.getConvertedIcon(icon), 74, 74);
+        return ImageHelper.scale(
+            ImageHelper.getConvertedIcon(player.getPlayerPanelAvatar()),
+            74, 74
+        );
     }
 
     @Override
@@ -50,7 +51,7 @@ public class PlayerImagePanel extends AnimationPanel {
 
         final Graphics2D g2d = (Graphics2D) g;
 
-        g2d.drawImage(playerInfo.isPlayerTurn() ? activeImage : inactiveImage, 0, 0, this);
+        g2d.drawImage(player.isPlayerTurn() ? activeImage : inactiveImage, 0, 0, this);
 
         // health
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
@@ -66,7 +67,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private void drawMonarchOverlay(Graphics2D g2d) {
-        if (playerInfo.isMonarch()) {
+        if (player.isMonarch()) {
             g2d.drawImage(
                 MagicImages.getIcon(MagicIcon.LOYALTYCOUNTER).getImage(),
                 4,
@@ -107,14 +108,14 @@ public class PlayerImagePanel extends AnimationPanel {
 
     private void drawHealthValueOverlay(final Graphics2D g2d, final int x, final int y, final Image image) {
         g2d.setFont(HEALTH_FONT);
-        final String text = Integer.toString(playerInfo.life);
+        final String text = Integer.toString(player.life);
         final int textX = x + 4;
         final int textY = y + image.getHeight(null) - 6;
         ImageHelper.drawStringWithOutline(g2d, text, textX, textY);
     }
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {
-        this.playerInfo = playerInfo;
+        this.player = playerInfo;
         final boolean isDamage = life > playerInfo.life;
         final boolean isHeal = life < playerInfo.life && life > 0;
         life = playerInfo.life;

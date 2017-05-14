@@ -7,7 +7,6 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
-import magic.ui.MagicImages;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
@@ -29,7 +28,7 @@ public class EndGameMessagePanel extends TexturedPanel {
         setOpaque(true);
         setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
         //
-        final JLabel iconLabel = new JLabel(MagicImages.getIconSize3(game.getWinningPlayer().getConfig()));
+        final JLabel iconLabel = new JLabel(game.getWinningPlayer().getPlayerPanelAvatar());
         final Icon winningAvatar = iconLabel.getIcon();
         iconLabel.setPreferredSize(new Dimension(winningAvatar.getIconWidth(), winningAvatar.getIconHeight()));
         add(iconLabel, "alignx center");
