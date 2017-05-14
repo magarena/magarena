@@ -3,6 +3,7 @@ package magic.ui.duel.viewerinfo;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardList;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -35,9 +36,11 @@ public class PlayerViewerInfo {
     private final ImageIcon avatar;
     private int gamesWon;
     private final boolean hasPriority;
+    private final boolean isWinner;
 
     PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
         this.player = player;
+        isWinner = game.getWinner() == player;
         hasPriority = game.getPriorityPlayer() == player;
         playerIndex = player.getIndex();
         deckName = player.getConfig().getDeck().getQualifiedName();
@@ -108,5 +111,13 @@ public class PlayerViewerInfo {
 
     boolean hasPriority() {
         return hasPriority;
-    } 
+    }
+
+    public DuelPlayerConfig getConfig() {
+        return player.getConfig();
+    }
+	
+    boolean isWinner() {
+        return isWinner;
+    }
 }

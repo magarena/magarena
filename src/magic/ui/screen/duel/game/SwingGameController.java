@@ -843,7 +843,7 @@ public class SwingGameController implements IUIGameController {
         assert !SwingUtilities.isEventDispatchThread();
         if (!MagicSystem.isAiVersusAi() && !MagicSystem.isDebugMode()) {
             SwingUtilities.invokeLater(() -> {
-                duelPane.getDialogPanel().showEndGameMessage(SwingGameController.this);
+                duelPane.getDialogPanel().showEndGameMessage(gameViewerInfo);
             });
         }
         showMessage(MagicSource.NONE,

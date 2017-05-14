@@ -234,4 +234,10 @@ public class GameViewerInfo {
         return this.undoPoints;
     }
 
+    public PlayerViewerInfo getWinningPlayer() {
+        return players.stream()
+            .filter(p -> p.isWinner())
+            .findFirst().get();
+    }
+
 }

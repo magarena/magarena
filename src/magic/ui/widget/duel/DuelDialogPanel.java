@@ -2,8 +2,8 @@ package magic.ui.widget.duel;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.FontsAndBorders;
+import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,9 +29,9 @@ public class DuelDialogPanel extends TexturedPanel {
 
     }
 
-    public void showEndGameMessage(final SwingGameController controller) {
+    public void showEndGameMessage(GameViewerInfo game) {
         removeAll();
-        add(new EndGameMessagePanel(controller));
+        add(new EndGameMessagePanel(game));
         setVisible(true);
     }
 
