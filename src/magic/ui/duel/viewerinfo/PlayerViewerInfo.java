@@ -23,6 +23,7 @@ public class PlayerViewerInfo {
     public final int experience;
     public final int preventDamage;
     public final int lands;
+    private final String deckName;
     public final MagicCardList hand;
     public final MagicCardList graveyard;
     public final MagicCardList exile;
@@ -37,6 +38,7 @@ public class PlayerViewerInfo {
     PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
         this.player = player;
         playerIndex = player.getIndex();
+        deckName = player.getPlayerDefinition().getDeck().getQualifiedName();
         isPlayerTurn = player == game.getTurnPlayer();
         name = player.getName();
         playerLabel = player.getPlayerDefinition().getProfile().getPlayerLabel();
@@ -92,7 +94,7 @@ public class PlayerViewerInfo {
     }
 
     public String getQualifiedDeckName() {
-        return player.getPlayerDefinition().getDeck().getQualifiedName();
+        return deckName;
     }
 
     /**
