@@ -102,11 +102,7 @@ public class MagicAnimations {
 
         setLayoutInfo(gamePanel, newGameInfo, cardInfo);
 
-        return new DrawCardAnimation(
-            newGameInfo.getTurnPlayer().player,
-            cardInfo,
-            layoutInfo
-        );
+        return new DrawCardAnimation(newGameInfo.getTurnPlayer(), cardInfo, layoutInfo);
     }
 
     /**
@@ -137,7 +133,7 @@ public class MagicAnimations {
 
         setLayoutInfo(gamePanel, newGameInfo, cardInfo);
 
-        return new PlayCardAnimation(tpNew.player, cardInfo, layoutInfo);
+        return new PlayCardAnimation(tpNew, cardInfo, layoutInfo);
     }
 
     public static void debugPrint(MagicAnimation animation) {

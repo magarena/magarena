@@ -8,9 +8,9 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.model.MagicPlayer;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.Timeline.TimelineState;
 import org.pushingpixels.trident.TimelineScenario;
@@ -39,21 +39,21 @@ abstract class CardAnimation extends MagicAnimation {
     private ImageScaler backImageScaler;
     private Dimension previewSize;
     private Rectangle imageRect = new Rectangle();
-    private final MagicPlayer player;
+    private final PlayerViewerInfo player;
     private final CardViewerInfo cardInfo;
 
     // abstract methods
     protected abstract Rectangle getStart();
     protected abstract Rectangle getEnd();
 
-    CardAnimation(MagicPlayer aPlayer, CardViewerInfo cardInfo, GameLayoutInfo layoutInfo) {
+    CardAnimation(PlayerViewerInfo aPlayer, CardViewerInfo cardInfo, GameLayoutInfo layoutInfo) {
         this.player = aPlayer;
         this.cardInfo = cardInfo;
-        this.playerIndex = aPlayer.getIndex();
+        this.playerIndex = aPlayer.getPlayerIndex();
         this.layoutInfo = layoutInfo;
     }
 
-    protected MagicPlayer getPlayer() {
+    protected PlayerViewerInfo getPlayer() {
         return player;
     }
 
