@@ -14,6 +14,7 @@ import magic.ui.MagicImages;
 public class PlayerViewerInfo {
 
     public final MagicPlayer player;
+    private final int playerIndex;
     private final boolean isPlayerTurn;
     private final String name;
     public final int life;
@@ -35,6 +36,7 @@ public class PlayerViewerInfo {
 
     PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
         this.player = player;
+        playerIndex = player.getIndex();
         isPlayerTurn = player == game.getTurnPlayer();
         name = player.getName();
         playerLabel = player.getPlayerDefinition().getProfile().getPlayerLabel();
@@ -91,6 +93,13 @@ public class PlayerViewerInfo {
 
     public String getQualifiedDeckName() {
         return player.getPlayerDefinition().getDeck().getQualifiedName();
+    }
+
+    /**
+     * 0 = player, 1 = opponent.
+     */
+    public int getPlayerIndex() {
+        return playerIndex;
     }
 
 }

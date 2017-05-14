@@ -223,7 +223,7 @@ public final class DuelPanel extends JPanel {
 
         for (PlayerViewerInfo playerInfo : gameInfo.getPlayers()) {
 
-            final int playerIndex = playerInfo.player.getIndex();
+            final int playerIndex = playerInfo.getPlayerIndex();
 
             info.setLibraryButtonLayout(playerIndex, sidebarPanel.getLibraryButtonLayout(playerInfo, this));
             info.setHandButtonLayout(playerIndex, sidebarPanel.getHandButtonLayout(playerInfo, this));
