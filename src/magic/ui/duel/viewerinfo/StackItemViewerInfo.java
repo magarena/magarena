@@ -11,7 +11,7 @@ import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.ui.MagicImages;
 
-public class StackViewerInfo {
+public class StackItemViewerInfo {
 
     public final MagicItemOnStack itemOnStack;
     public final MagicCardDefinition cardDefinition;
@@ -20,7 +20,7 @@ public class StackViewerInfo {
     public final String description;
     public final boolean visible;
 
-    StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
+    StackItemViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
         cardDefinition=itemOnStack.getController().isHuman() ?
             itemOnStack.getRealCardDefinition() :

@@ -22,7 +22,7 @@ public class GameViewerInfo {
     private final PlayerViewerInfo playerInfo;
     private final PlayerViewerInfo opponentInfo;
     private final PlayerViewerInfo priorityPlayer;
-    private final List<StackViewerInfo> stack = new ArrayList<>();
+    private final List<StackItemViewerInfo> stack = new ArrayList<>();
     private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
     private final int turn;
     private final int gamesRequiredToWin;
@@ -60,7 +60,7 @@ public class GameViewerInfo {
 
     private void setStackViewerInfo(final MagicGame game) {
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
-            stack.add(new StackViewerInfo(game,itemOnStack));
+            stack.add(new StackItemViewerInfo(game,itemOnStack));
         }
     }
 
@@ -95,7 +95,7 @@ public class GameViewerInfo {
         return priorityPlayer;
     }
 
-    public List<StackViewerInfo> getStack() {
+    public List<StackItemViewerInfo> getStack() {
         return stack;
     }
 
@@ -151,7 +151,7 @@ public class GameViewerInfo {
     }
 
     private MagicCardOnStack searchForCardOnStack(long magicCardId) {
-        for (StackViewerInfo item : stack) {
+        for (StackItemViewerInfo item : stack) {
             if (item.isMagicCard(magicCardId)) {
                 return (MagicCardOnStack) item.itemOnStack;
             }

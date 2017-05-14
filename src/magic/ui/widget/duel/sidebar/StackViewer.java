@@ -11,7 +11,7 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.viewerinfo.StackViewerInfo;
+import magic.ui.duel.viewerinfo.StackItemViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
 import net.miginfocom.swing.MigLayout;
 
@@ -61,10 +61,10 @@ public class StackViewer extends JPanel implements IChoiceViewer {
         buttons.clear();
 
         // Display stack items
-        final List<StackViewerInfo> stack = controller.getGameViewerInfo().getStack();
+        final List<StackItemViewerInfo> stack = controller.getGameViewerInfo().getStack();
         final int stackSize = stack.size();
         for (int i = 0; i < stackSize; i++) {
-            final StackViewerInfo stackInfo = stack.get(i);
+            final StackItemViewerInfo stackInfo = stack.get(i);
             StackButton btn = new StackButton(controller, stackInfo, maxWidth, stackSize - i);
             buttons.add(btn);
             stackScrollablePanel.add(btn, "w 100%");

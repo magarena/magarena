@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.viewerinfo.StackViewerInfo;
+import magic.ui.duel.viewerinfo.StackItemViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
@@ -19,10 +19,10 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class StackButton extends PanelButton implements IChoiceViewer {
 
-    private final StackViewerInfo stackInfo;
+    private final StackItemViewerInfo stackInfo;
     private final SwingGameController controller;
 
-    StackButton(SwingGameController aController, StackViewerInfo stackInfo, int maxWidth, int itemNum) {
+    StackButton(SwingGameController aController, StackItemViewerInfo stackInfo, int maxWidth, int itemNum) {
 
         this.controller = aController;
         this.stackInfo = stackInfo;
