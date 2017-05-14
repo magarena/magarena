@@ -17,7 +17,6 @@ import magic.utility.SortedProperties;
 
 public class MagicDuel {
 
-    private static final String OPPONENT = "duel.opponent";
     private static final String GAME = "duel.game";
     private static final String PLAYED = "duel.played";
     private static final String WON = "duel.won";
