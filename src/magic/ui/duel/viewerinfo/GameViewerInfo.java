@@ -1,7 +1,6 @@
 package magic.ui.duel.viewerinfo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import magic.model.MagicCard;
@@ -19,9 +18,9 @@ public class GameViewerInfo {
 
     private static final int MAX_LOG = 50;
 
+    private final List<PlayerViewerInfo> players = new ArrayList<>();
     private final PlayerViewerInfo playerInfo;
     private final PlayerViewerInfo opponentInfo;
-    private final PlayerViewerInfo priorityPlayer;
     private final List<StackItemViewerInfo> stack = new ArrayList<>();
     private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
     private final int turn;
@@ -33,10 +32,12 @@ public class GameViewerInfo {
 
     public GameViewerInfo(final MagicGame game) {
 
-        final MagicPlayer player = game.getPlayer(0);
-        playerInfo = new PlayerViewerInfo(game, player);
-        opponentInfo = new PlayerViewerInfo(game, player.getOpponent());
-        priorityPlayer = game.getPriorityPlayer() == player ? playerInfo : opponentInfo;
+        for (MagicPlayer mplayer : game.getPlayers()) {
+            players.add(new PlayerViewerInfo(game, mplayer));
+        }
+
+        playerInfo = players.get(0);
+        opponentInfo = players.get(1);
 
         // TODO: MagicPlayer should be responsible for keeping track of games won.
         playerInfo.setGamesWon(game.getDuel().getGamesWon());
@@ -55,7 +56,7 @@ public class GameViewerInfo {
     }
 
     public List<PlayerViewerInfo> getPlayers() {
-        return Arrays.asList(playerInfo, opponentInfo);
+        return players;
     }
 
     private void setStackViewerInfo(final MagicGame game) {
@@ -92,7 +93,9 @@ public class GameViewerInfo {
     }
 
     public PlayerViewerInfo getPriorityPlayer() {
-        return priorityPlayer;
+        return players.stream()
+            .filter(p -> p.hasPriority())
+            .findFirst().get();
     }
 
     public List<StackItemViewerInfo> getStack() {
@@ -105,10 +108,8 @@ public class GameViewerInfo {
 
     public CardViewerInfo getCardViewerInfo(long magicCardId) {
 
-        final PlayerViewerInfo[] players = new PlayerViewerInfo[] {playerInfo, opponentInfo};
-
         // first check permanents...
-        final MagicPermanent perm = searchForCardInPermanents(magicCardId, players);
+        final MagicPermanent perm = searchForCardInPermanents(magicCardId);
         if (perm != null) {
             return new CardViewerInfo(perm);
         }
@@ -131,7 +132,7 @@ public class GameViewerInfo {
 
         for (MagicPlayerZone aZone : zones) {
             if (card == MagicCard.NONE) {
-                card = searchForCardInZone(magicCardId, aZone, players);
+                card = searchForCardInZone(magicCardId, aZone);
             } else {
                 break;
             }
@@ -169,7 +170,7 @@ public class GameViewerInfo {
         throw new RuntimeException("Invalid MagicPlayerZone : " + aZone);
     }
 
-    private MagicCard searchForCardInZone(long magicCardId, MagicPlayerZone zone, PlayerViewerInfo[] players) {
+    private MagicCard searchForCardInZone(long magicCardId, MagicPlayerZone zone) {
         for (final PlayerViewerInfo player : players) {
             final MagicCardList cards = getMagicCardList(zone, player);
             for (final MagicCard card : cards) {
@@ -181,7 +182,7 @@ public class GameViewerInfo {
         return MagicCard.NONE;
     }
 
-    private MagicPermanent searchForCardInPermanents(long magicCardId, PlayerViewerInfo[] players) {
+    private MagicPermanent searchForCardInPermanents(long magicCardId) {
         for (final PlayerViewerInfo player : players) {
             for (final PermanentViewerInfo info : player.permanents) {
                 if (info.magicCardId == magicCardId) {

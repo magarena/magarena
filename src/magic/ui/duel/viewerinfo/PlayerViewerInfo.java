@@ -34,9 +34,11 @@ public class PlayerViewerInfo {
     public final String playerLabel;
     private final ImageIcon avatar;
     private int gamesWon;
+    private final boolean hasPriority;
 
     PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
         this.player = player;
+        hasPriority = game.getPriorityPlayer() == player;
         playerIndex = player.getIndex();
         deckName = player.getPlayerDefinition().getDeck().getQualifiedName();
         isPlayerTurn = player == game.getTurnPlayer();
@@ -104,4 +106,7 @@ public class PlayerViewerInfo {
         return playerIndex;
     }
 
+    boolean hasPriority() {
+        return hasPriority;
+    } 
 }
