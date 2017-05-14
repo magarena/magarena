@@ -12,7 +12,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.model.MagicDuel;
 import magic.model.player.PlayerProfile;
-import magic.ui.MagicImages;
 import magic.ui.widget.player.PlayerDetailsPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -24,7 +23,7 @@ class PlayerPanel extends JPanel {
     PlayerPanel(PlayerProfile profile, MagicDuel duel) {
         setLayout(new MigLayout("insets 0"));
         setOpaque(false);
-        add(new JLabel(MagicImages.getPlayerAvatar(profile).getIcon(4)));
+        add(new JLabel(profile.getAvatar().getIcon(4)));
         add(new PlayerDetailsPanel(profile, Color.BLACK), "w 100%");
         add(getScoreLabel(getScore(profile, duel)), "w 100%");
         setPreferredSize(new Dimension(280, 54));

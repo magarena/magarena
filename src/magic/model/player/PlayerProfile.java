@@ -1,11 +1,15 @@
 package magic.model.player;
 
+import java.awt.GraphicsEnvironment;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 import java.util.UUID;
+import magic.ui.MagicImages;
+import magic.ui.theme.PlayerAvatar;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -16,6 +20,7 @@ public abstract class PlayerProfile {
     private Path profilePath = null;
     private String playerName = "";
     private PlayerStatistics stats;
+    private PlayerAvatar avatar;
 
     abstract protected void loadProperties();
     abstract public void save();
@@ -150,5 +155,20 @@ public abstract class PlayerProfile {
 
     public String getPlayerLabel() {
         return playerName;
+    }
+
+    public PlayerAvatar getAvatar() {
+        if (avatar == null && !GraphicsEnvironment.isHeadless()) {
+            BufferedImage image = MagicImages.getAvatarImage(this);
+            avatar = new PlayerAvatar(image);
+        }
+        return avatar;
+    }
+
+    /**
+     * Forces re-loading of avatar image the next time it is requested.
+     */
+    public void clearCachedAvatar() {
+        avatar = null;
     }
 }

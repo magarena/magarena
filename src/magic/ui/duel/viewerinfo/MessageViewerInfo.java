@@ -2,7 +2,6 @@ package magic.ui.duel.viewerinfo;
 
 import javax.swing.ImageIcon;
 import magic.model.MagicMessage;
-import magic.ui.MagicImages;
 
 public class MessageViewerInfo {
 
@@ -17,7 +16,7 @@ public class MessageViewerInfo {
         phase = msg.getPhaseType().getAbbreviation();
         turn = new Integer(msg.getTurn());
         life = new Integer(msg.getLife());
-        avatar = MagicImages.getIconSize1(msg.getPlayer().getConfig());
+        avatar = msg.getPlayer().getProfile().getAvatar().getIcon(1);
     }
 
     public String getText() {

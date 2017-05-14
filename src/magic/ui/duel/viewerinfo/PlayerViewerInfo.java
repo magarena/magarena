@@ -10,7 +10,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.ui.MagicImages;
 
 public class PlayerViewerInfo {
 
@@ -64,8 +63,8 @@ public class PlayerViewerInfo {
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game, permanent));
         }
-        newTurnAvatar = MagicImages.getIconSize4(this.getConfig());
-        playerPanelAvatar =  MagicImages.getIconSize3(this.getConfig());
+        newTurnAvatar = player.getProfile().getAvatar().getIcon(4);
+        playerPanelAvatar = player.getProfile().getAvatar().getIcon(3);
     }
 
     /**

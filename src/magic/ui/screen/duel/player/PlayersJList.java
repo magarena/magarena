@@ -10,9 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
 import magic.model.player.PlayerProfile;
-import magic.ui.MagicImages;
-import magic.ui.utility.MagicStyle;
 import magic.ui.FontsAndBorders;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -61,7 +60,7 @@ abstract class PlayersJList extends JList<PlayerProfile> {
         }
 
         private JLabel getAvatarPortrait() {
-            return new JLabel(MagicImages.getPlayerAvatar(profile).getIcon(2));
+            return new JLabel(profile.getAvatar().getIcon(2));
         }
 
         private JPanel getNamePanel() {

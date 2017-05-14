@@ -1,7 +1,6 @@
 package magic.ui;
 
 import java.awt.Dimension;
-import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -12,7 +11,6 @@ import magic.data.GeneralConfig;
 import magic.data.LRUCache;
 import magic.data.MagicIcon;
 import magic.data.TextImages;
-import magic.model.DuelPlayerConfig;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -21,7 +19,6 @@ import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.theme.AvatarImages;
-import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
 public final class MagicImages {
@@ -57,7 +54,6 @@ public final class MagicImages {
     private static final Map<MagicIcon, ImageIcon> smallManaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> bigManaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
-    private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     private static final int MAX_IMAGES = 100;
     private static final Map<Long, BufferedImage> cache = new LRUCache<>(MAX_IMAGES);
@@ -183,48 +179,11 @@ public final class MagicImages {
         return getIcon(TextImages.getIcon(manaSymbol));
     }
 
-
-    public static ImageIcon getIconSize1(DuelPlayerConfig playerDef) {
-        return getSizedAvatarImageIcon(playerDef, 1);
-    }
-
-    public static ImageIcon getIconSize2(DuelPlayerConfig playerDef) {
-        return getSizedAvatarImageIcon(playerDef, 2);
-    }
-
-    public static ImageIcon getIconSize3(DuelPlayerConfig playerDef) {
-        return getSizedAvatarImageIcon(playerDef, 3);
-    }
-
-    public static ImageIcon getIconSize4(DuelPlayerConfig playerDef) {
-        return getSizedAvatarImageIcon(playerDef, 4);
-    }
-
-    private static ImageIcon getSizedAvatarImageIcon(DuelPlayerConfig playerDef, int size) {
-        return getPlayerAvatar(playerDef.getProfile()).getIcon(size);
-    }
-
-    private static BufferedImage getAvatarImage(PlayerProfile profile) {
+    public static BufferedImage getAvatarImage(PlayerProfile profile) {
         File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
         return file.exists()
                 ? ImageFileIO.toImg(file, MISSING_BIG)
                 : ImageFileIO.toImg(AvatarImages.getRandomAvatarFile(), MISSING_BIG);
-    }
-
-    public static PlayerAvatar getPlayerAvatar(PlayerProfile profile) {
-        if (GraphicsEnvironment.isHeadless() == false) {
-            String key = profile.getId();
-            if (!avatarsMap.containsKey(key)) {
-                avatarsMap.put(key, new PlayerAvatar(getAvatarImage(profile)));
-            }
-            return avatarsMap.get(key);
-        } else {
-            return null;
-        }
-    }
-
-    public static void getClearAvatarsCache() {
-        avatarsMap.clear();
     }
 
     public static BufferedImage getCardImage(IRenderableCard face) {
