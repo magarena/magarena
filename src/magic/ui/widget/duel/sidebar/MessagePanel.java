@@ -128,6 +128,6 @@ class MessagePanel extends JPanel {
     }
 
     private JLabel getPlayerAvatar() {
-        return new JLabel(message.getPlayerProfile().getAvatar().getIcon(1));
+        return new JLabel(MagicImages.getIconSize1(message.getPlayerConfig()));
     }
 }

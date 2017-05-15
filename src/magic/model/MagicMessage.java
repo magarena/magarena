@@ -14,7 +14,6 @@ public class MagicMessage {
     public static final char CARD_ID_DELIMITER = '~';
 
     private final DuelPlayerConfig playerConfig;
-    private final PlayerProfile playerProfile;
     private final int playerIndex;
     private final int life;
     private final int turn;
@@ -24,15 +23,10 @@ public class MagicMessage {
     MagicMessage(final MagicGame game,final MagicPlayer player,final String text) {
         this.playerIndex=player.getIndex();
         this.playerConfig=player.getConfig();
-        this.playerProfile=player.getProfile();
         this.life=player.getLife();
         this.turn=game.getTurn();
         this.phaseType=game.getPhase().getType();
         this.text=text;
-    }
-
-    public PlayerProfile getPlayerProfile() {
-        return playerProfile;
     }
 
     public int getPlayerIndex() {

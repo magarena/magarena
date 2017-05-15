@@ -14,7 +14,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
 import magic.model.player.AiProfile;
-import magic.model.player.PlayerProfile;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
@@ -933,9 +932,5 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     public AiProfile getAiProfile() {
         return (AiProfile)playerConfig.getProfile();
-    }
-
-    public PlayerProfile getProfile() {
-        return playerConfig.getProfile();
     }
 }

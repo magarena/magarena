@@ -27,6 +27,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.helpers.MouseHelper;
@@ -145,7 +146,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        playerProfile.clearCachedAvatar();
+        MagicImages.getClearAvatarsCache();
     }
 
     @Override
