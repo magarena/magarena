@@ -7,27 +7,40 @@ import java.util.stream.Collectors;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.player.PlayerProfile;
 
 public class MagicMessage {
 
     public static final char CARD_ID_DELIMITER = '~';
 
-    private final MagicPlayer player;
+    private final DuelPlayerConfig playerConfig;
+    private final PlayerProfile playerProfile;
+    private final int playerIndex;
     private final int life;
     private final int turn;
     private final MagicPhaseType phaseType;
     private final String text;
 
     MagicMessage(final MagicGame game,final MagicPlayer player,final String text) {
-        this.player=player;
+        this.playerIndex=player.getIndex();
+        this.playerConfig=player.getConfig();
+        this.playerProfile=player.getProfile();
         this.life=player.getLife();
         this.turn=game.getTurn();
         this.phaseType=game.getPhase().getType();
         this.text=text;
     }
 
-    public MagicPlayer getPlayer() {
-        return player;
+    public PlayerProfile getPlayerProfile() {
+        return playerProfile;
+    }
+
+    public int getPlayerIndex() {
+        return playerIndex;
+    }
+
+    public DuelPlayerConfig getPlayerConfig() {
+        return playerConfig;
     }
 
     public int getLife() {

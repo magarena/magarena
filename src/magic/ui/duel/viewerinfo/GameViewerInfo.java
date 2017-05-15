@@ -20,7 +20,7 @@ public class GameViewerInfo {
 
     private final List<PlayerViewerInfo> players = new ArrayList<>();
     private final List<StackItemViewerInfo> stack = new ArrayList<>();
-    private final List<MessageViewerInfo> log = new ArrayList<>(MAX_LOG);
+    private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
     private final int turn;
     private final int gamesRequiredToWin;
     private final int gameNumber;
@@ -67,7 +67,7 @@ public class GameViewerInfo {
         int n = game.getLogBook().size();
         final Iterator<MagicMessage> iter = game.getLogBook().listIterator(Math.max(0, n - MAX_LOG));
         while (iter.hasNext()) {
-            log.add(new MessageViewerInfo(iter.next()));
+            log.add(iter.next());
         }
     }
 
@@ -119,7 +119,7 @@ public class GameViewerInfo {
         return stack;
     }
 
-    public List<MessageViewerInfo> getLog() {
+    public List<MagicMessage> getLog() {
         return log;
     }
 

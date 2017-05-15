@@ -12,7 +12,7 @@ public class MagicLogBook {
     MagicLogBook() {}
 
     public boolean add(final MagicMessage msg) {
-        final String player = msg.getPlayer().getIndex() == 0 ? "P" : "C";
+        final String player = msg.getPlayerIndex() == 0 ? "P" : "C";
         MagicGameLog.log("LOG (" + player + "): " + msg.getText());
         if (MagicSystem.isDebugMode()) {
             System.err.println("LOG: " + msg.getText());

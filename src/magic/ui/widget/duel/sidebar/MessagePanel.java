@@ -9,11 +9,11 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.CompoundBorder;
 import magic.data.MagicIcon;
-import magic.ui.FontsAndBorders;
+import magic.model.MagicMessage;
 import magic.ui.MagicImages;
-import magic.ui.duel.viewerinfo.MessageViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.message.TextLabel;
+import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -27,14 +27,11 @@ class MessagePanel extends JPanel {
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
 
-    private final MessageViewerInfo message;
+    private final MagicMessage message;
 
-    MessagePanel(
-        final MessageViewerInfo message0,
-        final JComponent container,
-        SwingGameController aController) {
+    MessagePanel(final MagicMessage message0, final JComponent container, SwingGameController aController) {
 
-        this.message = message0;
+        message = message0;
 
         setOpaque(false);
         setBorder(SEPARATOR_BORDER);
@@ -42,7 +39,7 @@ class MessagePanel extends JPanel {
         setMessagePanelLayout(container, aController);
     }
 
-    MessageViewerInfo getMessage() {
+    MagicMessage getMessage() {
         return message;
     }
 
@@ -90,7 +87,7 @@ class MessagePanel extends JPanel {
     }
 
     private JLabel getPhaseLabel() {
-        final JLabel phaseLabel=new JLabel(message.getPhase());
+        final JLabel phaseLabel=new JLabel(message.getPhaseType().getAbbreviation());
         phaseLabel.setFont(FontsAndBorders.FONT0);
         phaseLabel.setHorizontalAlignment(JLabel.RIGHT);
         return phaseLabel;
@@ -111,7 +108,7 @@ class MessagePanel extends JPanel {
     private JPanel getPlayerPanel() {
         final JPanel playerPanel = new JPanel(new MigLayout("insets 0", "[]2[]"));
         playerPanel.setOpaque(false);
-        playerPanel.add(new JLabel(message.getPlayerAvatar()));
+        playerPanel.add(getPlayerAvatar());
         playerPanel.add(getPlayerLifePanel());
         return playerPanel;
     }
@@ -128,5 +125,9 @@ class MessagePanel extends JPanel {
         lifePanel.add(new JLabel(MagicImages.getIcon(MagicIcon.REGENERATED)), "center");
         lifePanel.add(lifeLabel, "w 100%");
         return lifePanel;
+    }
+
+    private JLabel getPlayerAvatar() {
+        return new JLabel(message.getPlayerProfile().getAvatar().getIcon(1));
     }
 }

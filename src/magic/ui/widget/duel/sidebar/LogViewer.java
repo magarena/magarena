@@ -9,12 +9,12 @@ import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import magic.data.GeneralConfig;
-import magic.ui.FontsAndBorders;
-import magic.ui.duel.viewerinfo.MessageViewerInfo;
+import magic.model.MagicMessage;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.message.MessageStyle;
 import magic.ui.widget.message.TextComponent;
+import magic.ui.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -43,12 +43,12 @@ class LogViewer extends TexturedPanel {
 
     void update() {
         boolean isRemoved = false;
-        final List<MessageViewerInfo> msgs = controller.getGameViewerInfo().getLog();
+        final List<MagicMessage> msgs = controller.getGameViewerInfo().getLog();
         final int n = msgs.size();
         int i = 0;
         for (int c = 0; c < messagePanels.getComponentCount();) {
             final MessagePanel mp = (MessagePanel)messagePanels.getComponent(c);
-            final MessageViewerInfo msg = i < n ? msgs.get(i) : null;
+            final MagicMessage msg = i < n ? msgs.get(i) : null;
             if (mp.getMessage() == msg) {
                 i++;
                 c++;
@@ -67,8 +67,8 @@ class LogViewer extends TexturedPanel {
         }
     }
 
-    private MessagePanel getNewMessagePanel(MessageViewerInfo msg) {
-        return new MessagePanel(msg, this, controller);
+    private MessagePanel getNewMessagePanel(final MagicMessage message) {
+        return new MessagePanel(message, this, controller);
     }
 
     void setMessageStyle(MessageStyle aStyle) {
