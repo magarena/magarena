@@ -658,6 +658,9 @@ check_no_extra_space:
 check_no_status:
 	grep "status"  -r release/Magarena/scripts | ${NO_OUTPUT}
 
+check_model_ui:
+	grep "magic.ui" -r src/magic/model | ${NO_OUTPUT}
+
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
 		tail -n +`grep -n "random seed" $$i | tail -1 | cut -d':' -f1` $$i; \
