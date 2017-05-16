@@ -359,17 +359,14 @@ public class SwingGameController implements IUIGameController {
     }
 
     /**
+     * Displays a popup image for a card on the battlefield.
      *
      * @param cardObject
      * @param index
      * @param cardRect : screen position & size of selected card on battlefield.
      * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */
-    public void viewCardPopup(
-        final MagicObject cardObject,
-        final Rectangle cardRect,
-        final boolean popupAboveBelowOnly,
-        final int popupDelay) {
+    public void showCardPopupFromBattlefield(MagicObject cardObject, Rectangle cardRect, boolean popupAboveBelowOnly) {
 
         // mouse wheel rotation event can fire more than once
         // so ignore all but the first event.
@@ -449,11 +446,7 @@ public class SwingGameController implements IUIGameController {
         }
 
         cardPopup.setLocation(x,y);
-        cardPopup.showDelayed(popupDelay);
-    }
-
-    public void viewCardPopup(final MagicObject cardObject, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
-        viewCardPopup(cardObject, cardRect, popupAboveBelowOnly, getPopupDelay());
+        cardPopup.showDelayed(getPopupDelay());
     }
 
     public boolean isPopupVisible() {

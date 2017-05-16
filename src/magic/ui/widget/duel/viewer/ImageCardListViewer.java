@@ -170,7 +170,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         final Point point=cardPoints.get(index);
         final Rectangle rect=
                 new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
-        controller.viewCardPopup(card, rect, true);
+        controller.showCardPopupFromBattlefield(card, rect, true);
     }
 
     private int getCardIndexAt(final int x,final int y) {
