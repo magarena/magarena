@@ -3,6 +3,8 @@ package magic.ui.widget.duel.sidebar;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Set;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -35,6 +37,16 @@ class StackButton extends PanelButton implements IChoiceViewer {
         final JLabel sourceLabel = new JLabel(stackItem.name);
         sourceLabel.setIcon(stackItem.icon);
         sourceLabel.setFont(sourceLabel.getFont().deriveFont(Font.BOLD | Font.ITALIC));
+        sourceLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                doShowCardImage();
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                controller.hideInfo();
+            }
+        });
 
         final JLabel itemLabel = new JLabel("#" + Integer.toString(itemNum));
         itemLabel.setFont(sourceLabel.getFont().deriveFont(Font.BOLD | Font.ITALIC));
@@ -66,16 +78,6 @@ class StackButton extends PanelButton implements IChoiceViewer {
     @Override
     public void mouseClicked() {
         controller.processClick(stackInfo.itemOnStack);
-    }
-
-    @Override
-    public void mouseEntered() {
-        doShowCardImage();
-    }
-
-    @Override
-    public void mouseExited() {
-        controller.hideInfo();
     }
 
     @Override
