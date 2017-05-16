@@ -1,7 +1,5 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.utility.ImageDrawingUtils;
-import magic.ui.IChoiceViewer;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -26,17 +24,19 @@ import java.util.Set;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.model.MagicType;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
+import magic.model.MagicType;
+import magic.ui.FontsAndBorders;
+import magic.ui.IChoiceViewer;
 import magic.ui.MagicImages;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.FontsAndBorders;
+import magic.ui.utility.ImageDrawingUtils;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -55,9 +55,9 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
     private MagicCardList cardList;
     private List<Point> cardPoints;
     private Set<?> validChoices;
-    private boolean showInfo;
     private int currentCardIndex = 0;
     private int cardStep = 0;
+    private CardImageViewerMode imageMode = CardImageViewerMode.PLAIN;
 
     public ImageCardListViewer(final SwingGameController controller) {
 
@@ -100,7 +100,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
                 final int cardIndex = getCardIndexAt(event.getX(), event.getY());
                 final boolean isCardChanged = (currentCardIndex != cardIndex);
                 if (cardIndex >= 0) {
-                    if (isCardChanged) {
+                    if (isCardChanged && imageMode != CardImageViewerMode.FACEDOWN) {
                         if (!CONFIG.isMouseWheelPopup() || controller.isPopupVisible()) {
                             showCardPopup(cardIndex);
                         } else {
@@ -183,7 +183,10 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         return -1;
     }
 
-    public void setCardList(final MagicCardList aCardList,final boolean aShowInfo) {
+    public void setCardList(MagicCardList aCardList, CardImageViewerMode mode) {
+
+        this.imageMode = mode;
+
         final List<Point> tCardPoints=new ArrayList<Point>();
         final int cardCount = aCardList.size();
         final int preferredWidth = CARD_WIDTH * cardCount + (cardCount - 1) * SPACING;
@@ -209,7 +212,6 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         this.cardStep = step > CARD_WIDTH ? CARD_WIDTH : step;
         this.cardList=aCardList;
         this.cardPoints=tCardPoints;
-        this.showInfo=aShowInfo;
     }
 
     @Override
@@ -238,7 +240,9 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             final int y2=point.y+CARD_HEIGHT;
 
             final BufferedImage image = ImageHelper.scale(
-                MagicImages.getCardImage(cardDefinition),
+                imageMode == CardImageViewerMode.FACEDOWN
+                    ? MagicImages.MISSING_CARD
+                    : MagicImages.getCardImage(cardDefinition),
                 CARD_WIDTH,
                 CARD_HEIGHT
             );
@@ -247,7 +251,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             ImageDrawingUtils.drawCardId(g, card.getId(), x1, 0);
 
             //draw the overlay icons
-            if (showInfo) {
+            if (imageMode == CardImageViewerMode.DECORATED) {
                 if (cardDefinition.isLand()) {
                     ImageDrawingUtils.drawManaInfo(
                         g,

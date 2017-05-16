@@ -20,6 +20,7 @@ import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.TabSelector;
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class PlayerZoneViewer extends JPanel implements ChangeListener {
@@ -68,14 +69,14 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         setLayout(new BorderLayout(6, 0));
 
         tabSelector = new TabSelector(this);
-        tabSelector.addTab(tabIcons.get(MagicIcon.HAND_ZONE), getHandZoneName(getUserPlayer()));
-        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), getGraveyardZoneName(getUserPlayer()));
-        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), getGraveyardZoneName(getAiPlayer()));
-        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), getExileZoneName(getUserPlayer()));
-        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), getExileZoneName(getAiPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.HAND_ZONE), "");
+        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), "");
+        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), "");
+        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), "");
+        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), "");
         tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), MText.get(_S2, getUserPlayer().getName()));
         // this is used if the players are switched (ie. using the 'S' key).
-        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), getHandZoneName(getAiPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
         add(tabSelector, BorderLayout.WEST);
 
         add(imageCardsListViewer, BorderLayout.CENTER);
@@ -100,68 +101,83 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         update(false);
     }
 
-    private void showCards(final MagicCardList cards, final boolean showFullScreen, final String cardZoneTitle, final boolean showCardIcons) {
-        if (showFullScreen) {
+    private void showCards(MagicCardList cards, boolean isFullScreen, String cardZoneTitle, CardImageViewerMode mode) {
+        if (isFullScreen) {
             showFullScreenZone(cards, cardZoneTitle);
         } else {
-            imageCardsListViewer.setCardList(cards, showCardIcons);
+            imageCardsListViewer.setCardList(cards, mode);
             firePropertyChange(CP_PLAYER_ZONE, null, cardZoneTitle);
         }
     }
 
-    private void update(final boolean showFullScreen) {
+    private String getZoneName(PlayerViewerInfo player, MagicPlayerZone zone) {
+        switch (zone) {
+            case HAND: return MText.get(_S3, player.getName());
+            case GRAVEYARD: return MText.get(_S4, player.getName());
+            case EXILE: return MText.get(_S5, player.getName());
+        }
+        throw new RuntimeException("Unsupported MagicPlayerZone : " + zone);
+    }
+
+    private void update(boolean showFullScreen) {
         switch (tabSelector.getSelectedTab()) {
-            case 0:
+            case 0: // main player hand
                 showCards(
-                        getUserPlayer().hand,
-                        showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi()), true);
+                    getUserPlayer().hand,
+                    showFullScreen,
+                    !showFullScreen && !getUserPlayer().isAi()
+                        ? ""
+                        : getZoneName(getUserPlayer(), MagicPlayerZone.HAND),
+                    CardImageViewerMode.DECORATED
+                );
                 break;
-            case 1:
-                showCards(
-                        getUserPlayer().graveyard,
-                        showFullScreen, getGraveyardZoneName(getUserPlayer()), false);
+            case 1: // main player graveyard
+                showCards(getUserPlayer().graveyard,
+                    showFullScreen,
+                    getZoneName(getUserPlayer(), MagicPlayerZone.GRAVEYARD),
+                    CardImageViewerMode.PLAIN
+                );
                 break;
-            case 2:
-                showCards(
-                        getAiPlayer().graveyard,
-                        showFullScreen, getGraveyardZoneName(getAiPlayer()), false);
+            case 2: // opponent graveyard
+                showCards(getAiPlayer().graveyard,
+                    showFullScreen,
+                    getZoneName(getAiPlayer(), MagicPlayerZone.GRAVEYARD),
+                    CardImageViewerMode.PLAIN
+                );
                 break;
-            case 3:
-                showCards(
-                        getUserPlayer().exile,
-                        showFullScreen, getExileZoneName(getUserPlayer()), false);
+            case 3: // main player exile
+                showCards(getUserPlayer().exile,
+                    showFullScreen,
+                    getZoneName(getUserPlayer(), MagicPlayerZone.EXILE),
+                    CardImageViewerMode.PLAIN
+                );
                 break;
-            case 4:
-                showCards(
-                        getAiPlayer().exile,
-                        showFullScreen, getExileZoneName(getAiPlayer()), false);
+            case 4: // opponent exile
+                showCards(getAiPlayer().exile,
+                    showFullScreen,
+                    getZoneName(getAiPlayer(), MagicPlayerZone.EXILE),
+                    CardImageViewerMode.PLAIN
+                );
                 break;
-            case 5:
+            case 5:// main player choice
                 showCards(cardsToChoose,
-                        showFullScreen, MText.get(_S1), false);
+                    showFullScreen,
+                    MText.get(_S1),
+                    CardImageViewerMode.PLAIN
+                );
                 break;
-            case 6:
+            case 6: // opponent hand
                 showCards(
-                        getAiPlayer().hand,
-                        showFullScreen, getHandZoneName(getAiPlayer()), false);
+                    getAiPlayer().hand,
+                    showFullScreen,
+                    getZoneName(getAiPlayer(), MagicPlayerZone.HAND),
+                    getUserPlayer().isAi() || MagicSystem.isDevMode() || MagicSystem.isTestGame()
+                        ? CardImageViewerMode.PLAIN
+                        : CardImageViewerMode.FACEDOWN
+                );
                 break;
         }
         repaint();
-    }
-
-    private String getHandZoneName(final PlayerViewerInfo player, final boolean hideName) {
-        return hideName ? "" : MText.get(_S3, player.getName());
-    }
-    private String getHandZoneName(final PlayerViewerInfo player) {
-        return getHandZoneName(player, false);
-    }
-
-    private String getGraveyardZoneName(final PlayerViewerInfo player) {
-        return MText.get(_S4, player.getName());
-    }
-
-    private String getExileZoneName(final PlayerViewerInfo player) {
-        return MText.get(_S5, player.getName());
     }
 
     private void showFullScreenZone(final MagicCardList aCardList, final String zoneName) {
