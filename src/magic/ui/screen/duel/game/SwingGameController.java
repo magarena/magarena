@@ -790,6 +790,16 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
+    private Dimension getPopupContainerSize(int inset) {
+        return new Dimension(
+            gamePanel.getSize().width,
+            gamePanel.getSize().height
+            - DefaultResolutionProfile.PLAYER_ZONE_VIEWER_HEIGHT
+            - DefaultResolutionProfile.SPACING
+            - DefaultResolutionProfile.BATTLEFIELD_INSET - inset * 2
+        );
+    }
+
     /**
      * Displays a popup image for a card associated with the user prompt
      * or a stack item.
@@ -801,19 +811,8 @@ public class SwingGameController implements IUIGameController {
         }
 
         final int INSET = 2;
-        int popupX = DefaultResolutionProfile.getPanelWidthLHS() + INSET;
-        int popupY = INSET;
-
-        Dimension containerSize = new Dimension(
-            gamePanel.getSize().width,
-            gamePanel.getSize().height
-            - DefaultResolutionProfile.PLAYER_ZONE_VIEWER_HEIGHT
-            - DefaultResolutionProfile.SPACING
-            - DefaultResolutionProfile.BATTLEFIELD_INSET - INSET * 2
-        );
-
-        cardPopup.setCardForPrompt(card, containerSize);
-        cardPopup.setLocation(popupX, popupY);
+        cardPopup.setCardForPrompt(card, getPopupContainerSize(INSET));
+        cardPopup.setLocation(DefaultResolutionProfile.getPanelWidthLHS() + INSET , INSET);
         cardPopup.showDelayed(0);
     }
 
@@ -827,19 +826,8 @@ public class SwingGameController implements IUIGameController {
         }
 
         final int INSET = 2;
-        int popupX = DefaultResolutionProfile.getPanelWidthLHS() + INSET;
-        int popupY = INSET;
-
-        Dimension containerSize = new Dimension(
-            gamePanel.getSize().width,
-            gamePanel.getSize().height
-            - DefaultResolutionProfile.PLAYER_ZONE_VIEWER_HEIGHT
-            - DefaultResolutionProfile.SPACING
-            - DefaultResolutionProfile.BATTLEFIELD_INSET - INSET * 2
-        );
-
-        cardPopup.setCard(card, containerSize);
-        cardPopup.setLocation(popupX, popupY);
+        cardPopup.setCard(card, getPopupContainerSize(INSET));
+        cardPopup.setLocation(DefaultResolutionProfile.getPanelWidthLHS() + INSET , INSET);
         cardPopup.showDelayed(0);
     }
 
