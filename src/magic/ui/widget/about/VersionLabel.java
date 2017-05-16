@@ -9,7 +9,7 @@ import magic.utility.MagicSystem;
 class VersionLabel extends JLabel {
 
     VersionLabel() {
-        super(MagicSystem.SOFTWARE_TITLE);
+        super(MagicSystem.getVersionTitle());
         setFont(FontsAndBorders.FONT0);
         setForeground(Color.WHITE);
     }

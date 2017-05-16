@@ -66,7 +66,7 @@ public final class ScreenController {
     private static MagicFrame mainFrame;
     static {
         if (!GraphicsEnvironment.isHeadless()) {
-            mainFrame = new MagicFrame(MagicSystem.SOFTWARE_TITLE);
+            mainFrame = new MagicFrame(MagicSystem.getVersionTitle());
         }
     }
 

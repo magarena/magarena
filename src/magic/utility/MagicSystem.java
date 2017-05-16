@@ -26,11 +26,8 @@ final public class MagicSystem {
     private MagicSystem() {}
 
     public static final String VERSION = "1.85";
-
-    public static final String SOFTWARE_TITLE;
     static {
-        SOFTWARE_TITLE = "Magarena " + VERSION + (isDevMode() ? " [DEV MODE]" : "");
-        System.setProperty("http.agent", SOFTWARE_TITLE);
+        System.setProperty("http.agent", "Magarena " + VERSION);
     }
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase(Locale.ENGLISH).startsWith("windows");
@@ -80,6 +77,10 @@ final public class MagicSystem {
         }
     };
 
+    public static String getVersionTitle() {
+        return "Magarena " + VERSION + (isDevMode() ? " [DEV MODE]" : "");
+    }
+
     public static void setIsTestGame(boolean b) {
         System.setProperty("testGame", b ? "Y" : "");
     }
@@ -92,7 +93,7 @@ final public class MagicSystem {
     public static boolean isDevMode() {
         return Boolean.getBoolean("devMode") || Boolean.getBoolean("debug");
     }
-    
+
     public static void setIsDevMode(boolean b) {
         System.setProperty("devMode", String.valueOf(b));
     }
