@@ -77,7 +77,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
         // this is used if the players are switched (ie. using the 'S' key).
         tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
-        add(tabSelector, BorderLayout.WEST);
+//        add(tabSelector, BorderLayout.WEST);
 
         add(imageCardsListViewer, BorderLayout.CENTER);
     }
