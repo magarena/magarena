@@ -19,8 +19,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
+import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
@@ -46,6 +48,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     private final JPanel contentPanel;
     private boolean actionEnabled;
     private final AbstractThrobber busyItem;
+    private final JLabel imageLabel = new JLabel();
 
     public UserActionPanel(final SwingGameController controller) {
 
@@ -62,6 +65,9 @@ public class UserActionPanel extends JPanel implements ActionListener {
 
         final JLabel emptyLabel=new JLabel("");
         actionPanel.add(emptyLabel,"0");
+
+        imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        actionPanel.add(imageLabel, "4");
 
         busyItem = new ImageThrobber.Builder(BUSY_IMAGE)
             .antiAlias(true)
@@ -134,6 +140,14 @@ public class UserActionPanel extends JPanel implements ActionListener {
         contentPanel.add(newContent,BorderLayout.CENTER);
         revalidate();
         repaint();
+        if (controller.getSourceCardDefinition() != MagicCardDefinition.UNKNOWN) {
+            BufferedImage image = MagicImages.getCardImage(controller.getSourceCardDefinition());
+            ImageIcon icon = new ImageIcon(ImageHelper.scale(image, 30, 48));
+            imageLabel.setIcon(icon);
+            actionCardLayout.show(actionPanel, "4");
+        } else {
+            actionCardLayout.show(actionPanel, "1");
+        }
     }
 
     public void showMessage(final String message) {
