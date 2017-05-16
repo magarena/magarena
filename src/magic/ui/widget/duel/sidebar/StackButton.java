@@ -3,7 +3,6 @@ package magic.ui.widget.duel.sidebar;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -61,12 +60,7 @@ class StackButton extends PanelButton implements IChoiceViewer {
     }
 
     private void doShowCardImage() {
-        final Rectangle rect = new Rectangle(
-            getParent().getLocationOnScreen().x,
-            getLocationOnScreen().y,
-            getParent().getWidth(),
-            getHeight());
-        controller.viewInfoRight(stackInfo.cardDefinition, 0, rect);
+        controller.showCardPopupFromSidebar(stackInfo.cardDefinition);
     }
 
     @Override

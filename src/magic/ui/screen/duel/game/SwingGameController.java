@@ -358,32 +358,6 @@ public class SwingGameController implements IUIGameController {
         cardPopup.showDelayed(popupDelay);
     }
 
-    public void viewCardPopupCentered(final MagicObject cardObject, final int popupDelay) {
-
-        // mouse wheel rotation event can fire more than once
-        // so ignore all but the first event.
-        if (cardObject == cardPopup.getMagicObject()) {
-            return;
-        }
-
-        // ignore if user wants current popup to remain open
-        // so they can view ability icon tooltips.
-        if (isControlKeyDown && cardPopup.isVisible()) {
-            return;
-        }
-
-        final Rectangle containerZone = gamePanel.getBattlefieldPanelBounds();
-
-        // set popup image and size.
-        cardPopup.setCard(cardObject, containerZone.getSize());
-
-        final int x = containerZone.x + (int)((containerZone.getWidth() / 2) - (cardPopup.getWidth() / 2));
-        final int y = containerZone.y + (int)((containerZone.getHeight() / 2) - (cardPopup.getHeight() / 2));
-        cardPopup.setLocation(x,y);
-
-        cardPopup.showDelayed(popupDelay);
-    }
-
     /**
      *
      * @param cardObject
@@ -484,34 +458,6 @@ public class SwingGameController implements IUIGameController {
 
     public boolean isPopupVisible() {
         return cardPopup.isVisible();
-    }
-
-    /**
-     *
-     * @param cardObject
-     * @param cardRect : screen position & size of selected card on battlefield.
-     */
-    public void viewCardPopup(final MagicObject cardObject, final Rectangle cardRect) {
-        viewCardPopup(cardObject, cardRect, false);
-    }
-
-    public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-        final Dimension gamePanelSize = gamePanel.getSize();
-        // update rect position so it is relative to container instead of screen.
-        final Point pointOnScreen = gamePanel.getLocationOnScreen();
-        rect.x -= pointOnScreen.x;
-        rect.y -= pointOnScreen.y;
-        final int x = rect.x + rect.width + 10;
-        cardPopup.setCardForPrompt(cardDefinition, gamePanelSize);
-        final int maxY = gamePanelSize.height - cardPopup.getHeight();
-        int y = rect.y + (rect.height-cardPopup.getHeight()) / 2;
-        if (y < 0) {
-            y = 0;
-        } else if (y > maxY) {
-            y = maxY;
-        }
-        cardPopup.setLocation(x,y);
-        cardPopup.showDelayed(getPopupDelay());
     }
 
     private int getPopupDelay() {
@@ -865,9 +811,12 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
-    public void showChoiceCardPopup() {
+    /**
+     * Displays a popup image for a card associated with a UI component
+     * in the sidebar such as the user prompt, stack items and log messages.
+     */
+    public void showCardPopupFromSidebar(MagicCardDefinition card) {
 
-        MagicCardDefinition card = getSourceCardDefinition();
         if (card.isUnknown()) {
             return;
         }
@@ -887,6 +836,10 @@ public class SwingGameController implements IUIGameController {
         cardPopup.setCardForPrompt(card, containerSize);
         cardPopup.setLocation(popupX, popupY);
         cardPopup.showDelayed(0);
+    }
+
+    public void showChoiceCardPopup() {
+        showCardPopupFromSidebar(sourceCardDefinition);
     }
 
     /**
