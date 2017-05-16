@@ -691,6 +691,7 @@ public class SwingGameController implements IUIGameController {
         } else {
             game.restore();
         }
+        clearCardsToChoose();
     }
 
     @Override
