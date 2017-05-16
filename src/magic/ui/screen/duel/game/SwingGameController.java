@@ -344,20 +344,6 @@ public class SwingGameController implements IUIGameController {
         this.userActionPanel = userActionPanel;
     }
 
-    private void viewCardPopupCentered(CardViewerInfo cardInfo, final int popupDelay) {
-
-        final Rectangle containerZone = gamePanel.getBattlefieldPanelBounds();
-
-        // set popup image and size.
-        cardPopup.setCard(cardInfo, containerZone.getSize());
-
-        final int x = containerZone.x + (int)((containerZone.getWidth() / 2) - (cardPopup.getWidth() / 2));
-        final int y = containerZone.y + (int)((containerZone.getHeight() / 2) - (cardPopup.getHeight() / 2));
-        cardPopup.setLocation(x,y);
-
-        cardPopup.showDelayed(popupDelay);
-    }
-
     /**
      * Displays a popup image for a card on the battlefield.
      *
@@ -805,8 +791,8 @@ public class SwingGameController implements IUIGameController {
     }
 
     /**
-     * Displays a popup image for a card associated with a UI component
-     * in the sidebar such as the user prompt, stack items and log messages.
+     * Displays a popup image for a card associated with the user prompt
+     * or a stack item.
      */
     public void showCardPopupFromSidebar(MagicCardDefinition card) {
 
@@ -827,6 +813,32 @@ public class SwingGameController implements IUIGameController {
         );
 
         cardPopup.setCardForPrompt(card, containerSize);
+        cardPopup.setLocation(popupX, popupY);
+        cardPopup.showDelayed(0);
+    }
+
+    /**
+     * Displays a popup image for a card associated with a log message.
+     */
+    public void showCardPopupFromSidebar(CardViewerInfo card) {
+
+        if (card.isEmpty()) {
+            return;
+        }
+
+        final int INSET = 2;
+        int popupX = DefaultResolutionProfile.getPanelWidthLHS() + INSET;
+        int popupY = INSET;
+
+        Dimension containerSize = new Dimension(
+            gamePanel.getSize().width,
+            gamePanel.getSize().height
+            - DefaultResolutionProfile.PLAYER_ZONE_VIEWER_HEIGHT
+            - DefaultResolutionProfile.SPACING
+            - DefaultResolutionProfile.BATTLEFIELD_INSET - INSET * 2
+        );
+
+        cardPopup.setCard(card, containerSize);
         cardPopup.setLocation(popupX, popupY);
         cardPopup.showDelayed(0);
     }
@@ -1048,7 +1060,7 @@ public class SwingGameController implements IUIGameController {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardViewerInfo(magicCardId);
             if (cardInfo.isNotEmpty()) {
-                viewCardPopupCentered(cardInfo, 0);
+                showCardPopupFromSidebar(cardInfo);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
             }
