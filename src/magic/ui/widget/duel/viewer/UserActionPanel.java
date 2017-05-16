@@ -49,6 +49,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     private boolean actionEnabled;
     private final AbstractThrobber busyItem;
     private final JLabel imageLabel = new JLabel();
+    private String actionPanelId = "0";
 
     public UserActionPanel(final SwingGameController controller) {
 
@@ -136,6 +137,11 @@ public class UserActionPanel extends JPanel implements ActionListener {
         contentPanel.removeAll();
     }
 
+    private void setActionPanel(String id) {
+        this.actionPanelId = id;
+        actionCardLayout.show(actionPanel, id);
+    }
+
     public void setContentPanel(final JComponent newContent) {
         clearContentPanel();
         contentPanel.add(newContent,BorderLayout.CENTER);
@@ -145,9 +151,9 @@ public class UserActionPanel extends JPanel implements ActionListener {
             BufferedImage image = MagicImages.getCardImage(controller.getSourceCardDefinition());
             ImageIcon icon = new ImageIcon(ImageHelper.scale(image, 30, 48));
             imageLabel.setIcon(icon);
-            actionCardLayout.show(actionPanel, "4");
+            setActionPanel("4");
         } else {
-            actionCardLayout.show(actionPanel, "1");
+            setActionPanel(actionPanelId);
         }
     }
 
@@ -173,14 +179,14 @@ public class UserActionPanel extends JPanel implements ActionListener {
     public void enableButton() {
         actionEnabled=true;
         enableUndoButton(false);
-        actionCardLayout.show(actionPanel,"2");
+        setActionPanel("2");
         repaint();
     }
 
     public void disableButton(final boolean thinking) {
         actionEnabled=false;
         enableUndoButton(thinking);
-        actionCardLayout.show(actionPanel,thinking?"1":"0");
+        setActionPanel(thinking ? "1" : "0");
         repaint();
     }
 
