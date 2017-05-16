@@ -472,14 +472,14 @@ public class SwingGameController implements IUIGameController {
     }
 
     @Override
-    public void clearCards() {
-        showCards(new MagicCardList());
+    public void clearCardsToChoose() {
+        showCardsToChoose(new MagicCardList());
     }
 
     @Override
-    public void showCards(final MagicCardList cards) {
+    public void showCardsToChoose(final MagicCardList cards) {
         SwingUtilities.invokeLater(() -> {
-            gamePanel.showCards(cards);
+            gamePanel.showCardsToChoose(cards);
         });
     }
 

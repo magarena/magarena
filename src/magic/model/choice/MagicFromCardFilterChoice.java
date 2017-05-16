@@ -155,17 +155,17 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         final Set<Object> validCards = new HashSet<>(choiceList);
         int actualAmount = Math.min(amount, validCards.size());
         if (actualAmount == 0) {
-            controller.showCards(showList);
+            controller.showCardsToChoose(showList);
             controller.focusViewers(5);
             controller.enableForwardButton();
             controller.waitForInput();
-            controller.clearCards();
+            controller.clearCardsToChoose();
             controller.focusViewers(0);
             return new Object[]{result};
         } else {
             for (; actualAmount > 0; actualAmount--) {
                 final String message = result.size() > 0 ? result.toString() + "|" + getDescription() : getDescription();
-                controller.showCards(showList);
+                controller.showCardsToChoose(showList);
                 controller.focusViewers(5);
                 controller.disableActionButton(false);
                 controller.setValidChoices(validCards, false);
@@ -175,7 +175,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
                 }
                 controller.waitForInput();
                 if (controller.isActionClicked()) {
-                    controller.clearCards();
+                    controller.clearCardsToChoose();
                     controller.focusViewers(0);
                     return new Object[]{result};
                 }
@@ -184,7 +184,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
                 result.add(card);
             }
         }
-        controller.clearCards();
+        controller.clearCardsToChoose();
         controller.focusViewers(0);
         return new Object[]{result};
     }

@@ -1,27 +1,25 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.model.MagicCardList;
-import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.widget.TabSelector;
-
-import javax.swing.JPanel;
-import javax.swing.JToggleButton;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import java.awt.BorderLayout;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.JToggleButton;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import magic.data.MagicIcon;
+import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
-import magic.ui.ScreenController;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.MagicImages;
+import magic.ui.ScreenController;
+import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.widget.TabSelector;
 
 @SuppressWarnings("serial")
 public class PlayerZoneViewer extends JPanel implements ChangeListener {
@@ -41,7 +39,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
     private final SwingGameController controller;
     private final TabSelector tabSelector;
-    private final MagicCardList other = new MagicCardList();
+    private final MagicCardList cardsToChoose = new MagicCardList();
     private JToggleButton selectedTab = null;
     private final ImageCardListViewer imageCardsListViewer;
 
@@ -93,9 +91,9 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         setSelectedTab(selectedTab, false);
     }
 
-    public void showCards(final MagicCardList cards) {
-        other.clear();
-        other.addAll(cards);
+    public void showCardsToChoose(final MagicCardList cards) {
+        cardsToChoose.clear();
+        cardsToChoose.addAll(cards);
     }
 
     public void update() {
@@ -139,7 +137,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
                         showFullScreen, getExileZoneName(getAiPlayer()), false);
                 break;
             case 5:
-                showCards(other,
+                showCards(cardsToChoose,
                         showFullScreen, MText.get(_S1), false);
                 break;
             case 6:

@@ -9,7 +9,7 @@ public interface IUIGameController extends IGameController {
 
     <T> T getChoiceClicked();
     boolean isActionClicked();
-    void clearCards();
+    void clearCardsToChoose();
     void clearValidChoices();
     void disableActionButton(final boolean thinking);
     void enableForwardButton();
@@ -17,7 +17,7 @@ public interface IUIGameController extends IGameController {
     void pause(final int t);
     void setSourceCardDefinition(final MagicSource source);
     void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice);
-    void showCards(final MagicCardList cards);
+    void showCardsToChoose(final MagicCardList cards);
     void showMessage(final MagicSource source,final String message);
     void updateGameView();
     void waitForInput() throws UndoClickedException;

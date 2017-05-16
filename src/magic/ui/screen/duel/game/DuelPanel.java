@@ -86,8 +86,8 @@ public final class DuelPanel extends JPanel {
         battlefieldPanel.focusViewers(handGraveyard);
     }
 
-    public void showCards(final MagicCardList cards) {
-        battlefieldPanel.showCards(cards);
+    public void showCardsToChoose(final MagicCardList cards) {
+        battlefieldPanel.showCardsToChoose(cards);
     }
 
     public void update(final GameViewerInfo gameInfo) {

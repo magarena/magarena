@@ -42,7 +42,7 @@ public class MagicScryChoice extends MagicMayChoice {
 
         final MagicCardList cards = new MagicCardList();
         cards.add(player.getLibrary().getCardAtTop());
-        controller.showCards(cards);
+        controller.showCardsToChoose(cards);
 
         controller.disableActionButton(false);
 
@@ -50,7 +50,7 @@ public class MagicScryChoice extends MagicMayChoice {
             choiceResults[0]=YES_CHOICE;
         }
 
-        controller.clearCards();
+        controller.clearCardsToChoose();
 
         return choiceResults;
     }

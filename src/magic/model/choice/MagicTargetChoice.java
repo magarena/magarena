@@ -515,13 +515,13 @@ public class MagicTargetChoice extends MagicChoice {
                     cards.add(card);
                 }
             }
-            controller.showCards(cards);
+            controller.showCardsToChoose(cards);
             controller.focusViewers(showViewer);
         }
         controller.setValidChoices(validChoices,false);
         controller.waitForInput();
         if (targetFilter.acceptType(MagicTargetType.Library)) {
-            controller.clearCards();
+            controller.clearCardsToChoose();
         }
         return new Object[]{controller.getChoiceClicked()};
     }
