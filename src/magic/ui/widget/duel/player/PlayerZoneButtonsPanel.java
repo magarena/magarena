@@ -13,8 +13,11 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicPlayerZone;
 import magic.translate.MText;
+import magic.ui.ScreenController;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
+import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.duel.game.SwingGameController;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -26,7 +29,7 @@ public class PlayerZoneButtonsPanel extends JPanel {
     private static ButtonGroup buttonGroup = new ButtonGroup();
     private final Map<MagicPlayerZone, ZoneToggleButton> zoneButtons;
     private final SwingGameController controller;
-    private final PlayerViewerInfo playerInfo;
+    private PlayerViewerInfo playerInfo;
 
     public PlayerZoneButtonsPanel(final PlayerViewerInfo playerInfo, final SwingGameController controller) {
 
@@ -35,14 +38,7 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
         // LinkedHashMap so insertion order is retained.
         zoneButtons = new LinkedHashMap<>();
-        zoneButtons.put(MagicPlayerZone.LIBRARY, getZoneToggleButton(
-                MagicPlayerZone.LIBRARY, playerInfo.library.size(), false)
-        );
-        zoneButtons.get(MagicPlayerZone.LIBRARY).setToolTipText(
-            String.format("<html><b>%s</b><br>%s</html>",
-                MText.get(_S1),
-                playerInfo.getQualifiedDeckName())
-        );
+        zoneButtons.put(MagicPlayerZone.LIBRARY, getLibraryZoneButton(playerInfo));
         zoneButtons.put(MagicPlayerZone.HAND, getZoneToggleButton(
                 MagicPlayerZone.HAND, playerInfo.hand.size(), true)
         );
@@ -67,6 +63,36 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
         setOpaque(false);
 
+    }
+
+    private ZoneToggleButton getLibraryZoneButton(PlayerViewerInfo player) {
+        ZoneToggleButton btn = getZoneToggleButton(
+            MagicPlayerZone.LIBRARY,
+            player.library.size(),
+            false
+        );
+        btn.setToolTipText(
+            String.format("<html><b>%s</b><br>%s</html>",
+                MText.get(_S1),
+                player.getQualifiedDeckName())
+        );
+        if (MagicSystem.isDevMode() || MagicSystem.isTestGame()) {
+            btn.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseReleased(MouseEvent e) {
+                    ScreenController.showLibraryZoneScreen(playerInfo.library);
+                }
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    MouseHelper.showHandCursor(PlayerZoneButtonsPanel.this);
+                }
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    MouseHelper.showDefaultCursor();
+                }
+            });
+        }
+        return btn;
     }
 
     private ZoneToggleButton getZoneToggleButton(final MagicPlayerZone zone, final int cardCount, final boolean isActive) {
@@ -95,12 +121,12 @@ public class PlayerZoneButtonsPanel extends JPanel {
     }
 
     void updateDisplay(final PlayerViewerInfo playerInfo) {
+        this.playerInfo = playerInfo;
         if (playerInfo != null) {
             zoneButtons.get(MagicPlayerZone.HAND).setNumberOfCardsInZone(playerInfo.hand.size());
             zoneButtons.get(MagicPlayerZone.LIBRARY).setNumberOfCardsInZone(playerInfo.library.size());
             zoneButtons.get(MagicPlayerZone.GRAVEYARD).setNumberOfCardsInZone(playerInfo.graveyard.size());
             zoneButtons.get(MagicPlayerZone.EXILE).setNumberOfCardsInZone(playerInfo.exile.size());
-
         }
     }
 

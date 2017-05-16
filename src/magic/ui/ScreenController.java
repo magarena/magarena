@@ -37,6 +37,7 @@ import magic.ui.screen.duel.player.SelectAiPlayerScreen;
 import magic.ui.screen.duel.player.SelectHumanPlayerScreen;
 import magic.ui.screen.duel.player.avatar.AvatarImagesScreen;
 import magic.ui.screen.duel.player.zone.CardZoneScreen;
+import magic.ui.screen.duel.player.zone.LibraryZoneScreen;
 import magic.ui.screen.duel.setup.NewDuelSettingsScreen;
 import magic.ui.screen.images.download.DownloadImagesScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
@@ -263,8 +264,12 @@ public final class ScreenController {
         showScreen(() -> new SampleHandScreen(deck));
     }
 
-    public static void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
+    public static void showCardZoneScreen(MagicCardList cards, String zoneName, boolean animateCards) {
         showScreen(() -> new CardZoneScreen(cards, zoneName, animateCards));
+    }
+
+    public static void showLibraryZoneScreen(MagicCardList library) {
+        showScreen(() -> new LibraryZoneScreen(library));
     }
 
     public static void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
