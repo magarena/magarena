@@ -57,6 +57,7 @@ import magic.ui.IPlayerZoneListener;
 import magic.ui.MagicFileChoosers;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
+import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.duel.viewerinfo.GameViewerInfo;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
@@ -865,11 +866,27 @@ public class SwingGameController implements IUIGameController {
     }
 
     public void showChoiceCardPopup() {
-        final MagicCardDefinition cardDefinition = getSourceCardDefinition();
-        if (cardDefinition != MagicCardDefinition.UNKNOWN) {
-            final Point point = userActionPanel.getLocationOnScreen();
-            viewInfoRight(cardDefinition, 0, new Rectangle(point.x, point.y-20, userActionPanel.getWidth(), userActionPanel.getHeight()));
+
+        MagicCardDefinition card = getSourceCardDefinition();
+        if (card.isUnknown()) {
+            return;
         }
+
+        final int INSET = 2;
+        int popupX = DefaultResolutionProfile.getPanelWidthLHS() + INSET;
+        int popupY = INSET;
+
+        Dimension containerSize = new Dimension(
+            gamePanel.getSize().width,
+            gamePanel.getSize().height
+            - DefaultResolutionProfile.PLAYER_ZONE_VIEWER_HEIGHT
+            - DefaultResolutionProfile.SPACING
+            - DefaultResolutionProfile.BATTLEFIELD_INSET - INSET * 2
+        );
+
+        cardPopup.setCardForPrompt(card, containerSize);
+        cardPopup.setLocation(popupX, popupY);
+        cardPopup.showDelayed(0);
     }
 
     /**

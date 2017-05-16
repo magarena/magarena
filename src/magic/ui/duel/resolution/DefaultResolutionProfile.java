@@ -7,7 +7,7 @@ import magic.ui.utility.MagicStyle;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 
-    private static final int PLAYER_ZONE_VIEWER_HEIGHT = 145;
+    public static final int PLAYER_ZONE_VIEWER_HEIGHT = 145;
     private static final int SIDEBAR_WIDTH = 300;
 
     // this is the gap between the edge of the RHS panel and its content.
