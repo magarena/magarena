@@ -1,22 +1,30 @@
 package magic.ui.screen.deck.tiled;
 
+import java.awt.image.BufferedImage;
 import java.util.List;
 import javax.swing.JPanel;
+import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.MagicImages;
+import magic.ui.ScreenController;
 import magic.ui.screen.deck.editor.DeckSideBar;
-import magic.ui.widget.cards.canvas.CardImageOverlay;
+import magic.ui.screen.wip.cardflow.ICardFlowProvider;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ContentPanel extends JPanel implements ICardsCanvasListener {
+class ContentPanel extends JPanel
+    implements ICardsCanvasListener, ICardFlowProvider {
 
     private final DeckSideBar sidebar;
     private final CardsCanvas canvas;
+    private List<? extends IRenderableCard> cards;
 
     ContentPanel(final MagicDeck aDeck) {
+
+        this.cards = aDeck;
 
         sidebar = new DeckSideBar();
         sidebar.setDeck(aDeck);
@@ -46,6 +54,7 @@ class ContentPanel extends JPanel implements ICardsCanvasListener {
     }
 
     void refresh(List<MagicCardDefinition> cards) {
+        this.cards = cards;
         sidebar.setCard(cards.isEmpty()
             ? MagicCardDefinition.UNKNOWN
             : cards.get(0)
@@ -58,8 +67,32 @@ class ContentPanel extends JPanel implements ICardsCanvasListener {
         sidebar.setCard(aCard);
     }
 
+    private int startImageIndex = 0;
+
     @Override
     public void cardClicked(int index, MagicCardDefinition card) {
-        new CardImageOverlay(card);
+        for (int i = 0; i < cards.size(); i++) {
+            if (cards.get(i) == card) {
+                startImageIndex = i;
+                ScreenController.showCardFlowScreen(this, "Deck");
+                break;
+            }
+        }
     }
+
+    @Override
+    public BufferedImage getImage(int index) {
+        return MagicImages.getCardImage(cards.get(index));
+    }
+
+    @Override
+    public int getImagesCount() {
+        return cards.size();
+    }
+
+    @Override
+    public int getStartImageIndex() {
+        return startImageIndex;
+    }
+
 }
