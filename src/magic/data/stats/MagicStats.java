@@ -58,17 +58,25 @@ public final class MagicStats {
     }
 
     /**
-     * Currently only stats are only logged when at the end of game you click on
+     *  Only log game stats for a normal human vs AI game.
+     */
+    private static boolean isNormalGame(MagicGame game) {
+        return !game.isArtificial()
+            && !MagicSystem.isTestGame()
+            && !MagicSystem.isDevMode()
+            && !MagicSystem.isAiVersusAi();
+    }
+
+    /**
+     * Currently stats are only logged when, at the end of game, you click on
      * the resume button to take you back to the duel decks screen. If after the
      * game ends you open the menu and click back to the main menu no stats are logged.
      */
     public static void logStats(MagicDuel duel, MagicGame game) {
-        // Don't log stats for AI simulated or test games.
-        if (game.isArtificial() || MagicSystem.isTestGame()) {
-            return;
+        if (isNormalGame(game)) {
+            saveGameData(game);
+            logFileBasedStats(duel, game);
         }
-        saveGameData(game);
-        logFileBasedStats(duel, game);
     }
 
     /**
