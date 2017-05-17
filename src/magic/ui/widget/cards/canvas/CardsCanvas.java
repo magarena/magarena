@@ -23,6 +23,7 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import javax.swing.JPanel;
 import magic.model.IRenderableCard;
+import magic.model.MagicCardDefinition;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.helpers.MouseHelper;
@@ -87,11 +88,15 @@ public class CardsCanvas extends JPanel {
             }
             @Override
             public void mouseReleased(MouseEvent e) {
-                if (!isAnimateThreadRunning) {
+                if (!isAnimateThreadRunning ) {
                     MouseHelper.showBusyCursor();
-                    final int cardIndex = getCardIndexAt(e.getPoint());
-                    if (cardIndex >= 0) {
-                        new CardImageOverlay(cards.get(cardIndex).getCardDefinition());
+                    int cardIndex = getCardIndexAt(e.getPoint());
+                    if (!(listener instanceof NullCardsCanvasListener)) {
+                        listener.cardClicked(
+                            cardIndex,
+                            cardIndex >= 0
+                                ? cards.get(cardIndex).getCardDefinition()
+                                : MagicCardDefinition.UNKNOWN);
                     }
                     MouseHelper.showDefaultCursor();
                 }

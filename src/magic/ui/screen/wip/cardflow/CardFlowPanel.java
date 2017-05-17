@@ -31,7 +31,6 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
 
     private static final int SLOT_OVERLAP = 140;
 
-    private List<BufferedImage> images = new ArrayList<>();
     private int activeImageIndex = 0;
     private final CardFlowTimeline timeline;
     private BufferedImage contentImage;
@@ -40,8 +39,9 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     private Color imageBackgroundColor = getBackground();
     private final List<Rectangle> slots = new ArrayList<>();
     private Rectangle activeSlot;
-    private Dimension selectedImageSize;
+    private Dimension selectedImageSize = MAX_IMAGE_SIZE;
     private List<ICardFlowListener> listeners = new ArrayList<>();
+    private final ICardFlowProvider provider;
 
     private enum FlowDirection {
         LEFT,
@@ -49,21 +49,17 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     }
     private FlowDirection flowDirection = FlowDirection.RIGHT;
 
-    CardFlowPanel() {
+    CardFlowPanel(final ICardFlowProvider provider) {
+        this.provider = provider;
         setRedrawOnResize();
         setScrollUsingMouseWheel();
         setScrollKeys();
-        timeline = new CardFlowTimeline(this);
+        timeline = new CardFlowTimeline(this, provider.getAnimationDuration());
+        activeImageIndex = provider.getStartImageIndex();
     }
 
-    public void setImages(final List<BufferedImage> images) {
-        this.images = images;
-        if (images.size() > 0) {
-            activeImageIndex = images.size() / 2;
-            assert activeImageIndex >= 0 && activeImageIndex < images.size();
-        }
-        repaint();
-        notifyListeners();
+    private int getSourceSize() {
+        return provider.getImagesCount();
     }
 
     private void drawCards(final Graphics2D g2d) {
@@ -77,6 +73,9 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
 
     }
 
+    /**
+     * Useful for debugging.
+     */
     private void drawSlots(final Graphics2D g2d) {
         // draw all available visible slots.
         g2d.setColor(Color.GRAY);
@@ -84,6 +83,10 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         for (Rectangle r : slots) {
             g2d.drawRect(r.x, r.y, r.width - 1, r.height - 1);
         }
+    }
+
+    private BufferedImage getImage(int index) {
+        return provider.getImage(index);
     }
 
     private void drawLeadingImages(final Graphics2D g2d, final int activeSlotIndex) {
@@ -112,7 +115,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                         startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
                 );
 
-                final BufferedImage image = images.get(i);
+                final BufferedImage image = getImage(i);
                 g2d.drawImage(image, drawRect.x, drawRect.y, drawRect.width, drawRect.height, null);
 
             }
@@ -121,10 +124,10 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
 
     private void drawTrailingImages(final Graphics2D g2d, final int activeSlotIndex) {
 
-        if (activeImageIndex < images.size()) {
+        if (activeImageIndex < getSourceSize()) {
 
             final int startImage =
-                    Math.min(slots.size() - activeSlotIndex, images.size() - activeImageIndex)
+                    Math.min(slots.size() - activeSlotIndex, getSourceSize() - activeImageIndex)
                     + activeImageIndex
                     - 1;
 
@@ -149,7 +152,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                         startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
                 );
 
-                final BufferedImage image = images.get(i);
+                final BufferedImage image = getImage(i);
                 g2d.drawImage(image, drawRect.x, drawRect.y, drawRect.width, drawRect.height, null);
 
             }
@@ -174,12 +177,10 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                 startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
         );
 
-        g2d.drawImage(images.get(activeImageIndex),
-                imageRect.x,
-                imageRect.y,
-                imageRect.width,
-                imageRect.height,
-                null);
+        BufferedImage image = ImageHelper.scale(
+            getImage(activeImageIndex), imageRect.width, imageRect.height
+        );
+        g2d.drawImage(image, imageRect.x, imageRect.y, null);
 
     }
 
@@ -205,7 +206,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                 startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
         );
 
-        g2d.drawImage(images.get(activeImageIndex - 1),
+        g2d.drawImage(getImage(activeImageIndex - 1),
                 imageRect.x,
                 imageRect.y,
                 imageRect.width,
@@ -216,7 +217,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
 
     private void drawActiveImagePlusOne(final Graphics2D g2d, final int activeSlotIndex) {
 
-        if (activeImageIndex == images.size() - 1) {
+        if (activeImageIndex == getSourceSize() - 1) {
             return;
         }
 
@@ -233,7 +234,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                 startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
         );
 
-        g2d.drawImage(images.get(activeImageIndex + 1),
+        g2d.drawImage(getImage(activeImageIndex + 1),
                 imageRect.x,
                 imageRect.y,
                 imageRect.width,
@@ -366,7 +367,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         g2d.setColor(imageBackgroundColor);
         g2d.fillRect(0, 0, contentImage.getWidth(), contentImage.getHeight());
 
-        if (images.size() > 0) {
+        if (getSourceSize() > 0) {
             drawCards(g2d);
         }
 
@@ -414,7 +415,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     }
 
     public int getImagesCount() {
-        return images.size();
+        return getSourceSize();
     }
 
     public void doClickLeft() {
@@ -430,7 +431,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
 
     public void doClickRight() {
         if (timeline.getState() == Timeline.TimelineState.IDLE) {
-            if (activeImageIndex < images.size() - 1) {
+            if (activeImageIndex < getSourceSize() - 1) {
                 flowDirection = FlowDirection.LEFT;
                 activeImageIndex = activeImageIndex + 1;
                 timelinePulse = 0.0f;

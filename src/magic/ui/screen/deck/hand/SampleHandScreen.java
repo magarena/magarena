@@ -1,6 +1,5 @@
 package magic.ui.screen.deck.hand;
 
-import magic.ui.screen.HandZoneLayout;
 import java.util.List;
 import java.util.stream.Collectors;
 import magic.data.GeneralConfig;
@@ -8,15 +7,19 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
+import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
+import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
-public class SampleHandScreen extends HeaderFooterScreen {
+public class SampleHandScreen extends HeaderFooterScreen
+    implements ICardsCanvasListener {
 
     // translatable strings
     private static final String _S1 = "Sample Hand";
@@ -36,6 +39,7 @@ public class SampleHandScreen extends HeaderFooterScreen {
 
     private void initUI() {
         content = new CardsCanvas();
+        content.setListener(this);
         setCardsLayout();
         content.setAnimationDelay(50, 20);
         content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
@@ -92,5 +96,15 @@ public class SampleHandScreen extends HeaderFooterScreen {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void cardSelected(MagicCardDefinition aCard) {
+        // not applicable
+    }
+
+    @Override
+    public void cardClicked(int index, MagicCardDefinition card) {
+        new CardImageOverlay(card);
     }
 }

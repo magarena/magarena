@@ -34,12 +34,12 @@ class CardFlowTimeline extends Timeline {
                 }
             });
         } catch (RuntimeException ex) {
-            LOGGER.log(Level.WARNING, null, ex);
+            LOGGER.log(Level.WARNING, ex.getMessage());
         }
     }
 
-    CardFlowTimeline(TimelineCallback aCallback) {
-        setDuration(500);
+    CardFlowTimeline(TimelineCallback aCallback, long durationMs) {
+        setDuration(durationMs);
         setEase(new Spline(0.8f));
         addCallback(aCallback);
     }

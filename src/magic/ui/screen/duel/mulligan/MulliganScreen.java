@@ -5,21 +5,25 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.helpers.KeyEventAction;
+import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
+import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 
 @SuppressWarnings("serial")
-public class MulliganScreen extends HeaderFooterScreen {
+public class MulliganScreen extends HeaderFooterScreen
+    implements ICardsCanvasListener {
 
     // translatable string
     private static final String _S1 = "Vancouver Mulligan";
@@ -59,6 +63,7 @@ public class MulliganScreen extends HeaderFooterScreen {
 
     private JPanel getScreenContent(final MagicCardList hand) {
         cardsCanvas = new CardsCanvas();
+        cardsCanvas.setListener(this);
         setCardsLayout();
         cardsCanvas.setAnimationEnabled(true);
         cardsCanvas.setAnimationDelay(50, 20);
@@ -138,6 +143,16 @@ public class MulliganScreen extends HeaderFooterScreen {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void cardSelected(MagicCardDefinition aCard) {
+        // not applicable
+    }
+
+    @Override
+    public void cardClicked(int index, MagicCardDefinition card) {
+        new CardImageOverlay(card);
     }
 
 

@@ -5,6 +5,7 @@ import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.screen.deck.editor.DeckSideBar;
+import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import net.miginfocom.swing.MigLayout;
@@ -55,5 +56,10 @@ class ContentPanel extends JPanel implements ICardsCanvasListener {
     @Override
     public void cardSelected(MagicCardDefinition aCard) {
         sidebar.setCard(aCard);
+    }
+
+    @Override
+    public void cardClicked(int index, MagicCardDefinition card) {
+        new CardImageOverlay(card);
     }
 }

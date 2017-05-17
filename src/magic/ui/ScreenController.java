@@ -55,6 +55,7 @@ import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.stats.StatsScreen;
 import magic.ui.screen.test.TestScreen;
 import magic.ui.screen.wip.cardflow.CardFlowScreen;
+import magic.ui.screen.wip.cardflow.ICardFlowProvider;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.utility.MagicSystem;
 
@@ -354,6 +355,10 @@ public final class ScreenController {
 
     public static void showCardFlowScreen() {
         showScreen(CardFlowScreen::new);
+    }
+
+    public static void showCardFlowScreen(ICardFlowProvider provider, String screenTitle) {
+        showScreen(() -> new CardFlowScreen(provider, screenTitle));
     }
 
     public static boolean isDeckScreenShowing() {
