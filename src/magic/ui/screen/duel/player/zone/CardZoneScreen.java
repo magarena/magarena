@@ -1,24 +1,30 @@
 package magic.ui.screen.duel.player.zone;
 
+import java.awt.image.BufferedImage;
 import java.util.Collections;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
+import magic.ui.MagicImages;
+import magic.ui.ScreenController;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.widget.cards.canvas.CardImageOverlay;
+import magic.ui.screen.wip.cardflow.ICardFlowProvider;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen extends HeaderFooterScreen
-    implements ICardsCanvasListener {
+    implements ICardsCanvasListener, ICardFlowProvider {
 
     private final CardsCanvas content;
     private final MagicCardList cards;
+    private int startImageIndex = 0;
+    private final String zoneName;
 
     public CardZoneScreen(final MagicCardList cardsIn, final String zoneName, final boolean animateCards) {
 
         super(zoneName);
+        this.zoneName = zoneName;
 
         this.cards = new MagicCardList(cardsIn);
         content = new CardsCanvas();
@@ -43,6 +49,27 @@ public class CardZoneScreen extends HeaderFooterScreen
 
     @Override
     public void cardClicked(int index, MagicCardDefinition card) {
-        new CardImageOverlay(card);
+        for (int i = index; i < cards.size(); i++) {
+            if (cards.get(i).getCardDefinition() == card) {
+                startImageIndex = i;
+                ScreenController.showCardFlowScreen(this, zoneName);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public BufferedImage getImage(int index) {
+        return MagicImages.getCardImage(cards.get(index));
+    }
+
+    @Override
+    public int getImagesCount() {
+        return cards.size();
+    }
+
+    @Override
+    public int getStartImageIndex() {
+        return startImageIndex;
     }
 }
