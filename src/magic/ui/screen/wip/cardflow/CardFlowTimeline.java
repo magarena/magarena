@@ -1,9 +1,7 @@
 package magic.ui.screen.wip.cardflow;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.pushingpixels.trident.Timeline;
-import org.pushingpixels.trident.TridentConfig;
 import org.pushingpixels.trident.callback.TimelineCallback;
 import org.pushingpixels.trident.ease.Spline;
 
@@ -24,19 +22,19 @@ class CardFlowTimeline extends Timeline {
      * Must be run before any instance of Timeline is created in the application otherwise it will
      * generate the "cannot replace the pulse source thread once it's running..." error.
      */
-    static {
-        try {
-            TridentConfig.getInstance().setPulseSource(() -> {
-                try {
-                    Thread.sleep(30);
-                } catch (InterruptedException ex) {
-                    LOGGER.log(Level.WARNING, null, ex);
-                }
-            });
-        } catch (RuntimeException ex) {
-            LOGGER.log(Level.WARNING, ex.getMessage());
-        }
-    }
+//    static {
+//        try {
+//            TridentConfig.getInstance().setPulseSource(() -> {
+//                try {
+//                    Thread.sleep(30);
+//                } catch (InterruptedException ex) {
+//                    LOGGER.log(Level.WARNING, null, ex);
+//                }
+//            });
+//        } catch (RuntimeException ex) {
+//            LOGGER.log(Level.WARNING, ex.getMessage());
+//        }
+//    }
 
     CardFlowTimeline(TimelineCallback aCallback, long durationMs) {
         setDuration(durationMs);
