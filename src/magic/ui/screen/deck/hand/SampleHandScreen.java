@@ -1,17 +1,22 @@
 package magic.ui.screen.deck.hand;
 
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
+import magic.ui.MagicImages;
+import magic.ui.ScreenController;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.cards.canvas.CardImageOverlay;
+import magic.ui.screen.wip.cardflow.ICardFlowProvider;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
@@ -19,7 +24,7 @@ import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen extends HeaderFooterScreen
-    implements ICardsCanvasListener {
+    implements ICardsCanvasListener, ICardFlowProvider {
 
     // translatable strings
     private static final String _S1 = "Sample Hand";
@@ -30,6 +35,8 @@ public class SampleHandScreen extends HeaderFooterScreen
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private OptionsPanel optionsPanel;
+    private List<? extends IRenderableCard> renderableCards = new ArrayList<>();
+    private int startImageIndex = 0;
 
     public SampleHandScreen(final MagicDeck aDeck) {
         super(MText.get(_S1));
@@ -61,9 +68,11 @@ public class SampleHandScreen extends HeaderFooterScreen
     }
 
     private List<MagicCardDefinition> getSampleHand(MagicDeck deck) {
-        return deck.getRandomCards(7).stream()
+        List<MagicCardDefinition> cards = deck.getRandomCards(7).stream()
             .sorted(MagicCardDefinition.SORT_BY_NAME)
             .collect(Collectors.toList());
+        renderableCards = cards;
+        return cards;
     }
 
     private void setCardsLayout() {
@@ -105,6 +114,27 @@ public class SampleHandScreen extends HeaderFooterScreen
 
     @Override
     public void cardClicked(int index, MagicCardDefinition card) {
-        new CardImageOverlay(card);
+        for (int i = index; i < renderableCards.size(); i++) {
+            if (renderableCards.get(i) == card) {
+                startImageIndex = i;
+                ScreenController.showCardFlowScreen(this, MText.get(_S1));
+                break;
+            }
+        }
+    }
+
+    @Override
+    public BufferedImage getImage(int index) {
+        return MagicImages.getCardImage(renderableCards.get(index));
+    }
+
+    @Override
+    public int getImagesCount() {
+        return renderableCards.size();
+    }
+
+    @Override
+    public int getStartImageIndex() {
+        return startImageIndex;
     }
 }
