@@ -1,4 +1,4 @@
-package magic.ui.screen.wip.cardflow;
+package magic.ui.screen.cardflow;
 
 import java.util.logging.Logger;
 import org.pushingpixels.trident.Timeline;

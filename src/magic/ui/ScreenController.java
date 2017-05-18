@@ -54,8 +54,8 @@ import magic.ui.screen.player.PlayerScreen;
 import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.stats.StatsScreen;
 import magic.ui.screen.test.TestScreen;
-import magic.ui.screen.wip.cardflow.CardFlowScreen;
-import magic.ui.screen.wip.cardflow.ICardFlowProvider;
+import magic.ui.screen.cardflow.CardFlowScreen;
+import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.utility.MagicSystem;
 

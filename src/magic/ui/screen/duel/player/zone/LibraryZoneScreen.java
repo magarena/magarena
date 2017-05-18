@@ -7,7 +7,7 @@ import magic.model.MagicCardList;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.wip.cardflow.ICardFlowProvider;
+import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 

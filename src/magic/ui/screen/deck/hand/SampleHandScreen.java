@@ -16,7 +16,7 @@ import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.wip.cardflow.ICardFlowProvider;
+import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;

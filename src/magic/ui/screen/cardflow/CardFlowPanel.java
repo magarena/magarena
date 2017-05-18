@@ -1,4 +1,4 @@
-package magic.ui.screen.wip.cardflow;
+package magic.ui.screen.cardflow;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

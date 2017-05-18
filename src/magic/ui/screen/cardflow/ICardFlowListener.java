@@ -1,4 +1,4 @@
-package magic.ui.screen.wip.cardflow;
+package magic.ui.screen.cardflow;
 
 public interface ICardFlowListener {
 

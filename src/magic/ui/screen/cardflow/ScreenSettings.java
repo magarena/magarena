@@ -1,4 +1,4 @@
-package magic.ui.screen.wip.cardflow;
+package magic.ui.screen.cardflow;
 
 import magic.data.GeneralConfig;
 import magic.ui.dialog.prefs.ImageSizePresets;
