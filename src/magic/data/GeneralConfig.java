@@ -186,6 +186,9 @@ public class GeneralConfig {
     private static final String GAME_STATS = "gameStats";
     private boolean logGameStats = true;
 
+    private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
+    private String cardFlowScreenSettings;
+
     private GeneralConfig() { }
 
     public Proxy getProxy() {
@@ -587,6 +590,7 @@ public class GeneralConfig {
         keywordsScreen = properties.getProperty(KEYWORDS_SCREEN, "");
         cardDisplayMode = CardImageDisplayMode.valueOf(properties.getProperty(CARD_DISPLAY_MODE, cardDisplayMode.name()));
         logGameStats = Boolean.parseBoolean(properties.getProperty(GAME_STATS, "" + logGameStats));
+        cardFlowScreenSettings = properties.getProperty(CARDFLOW_SCREEN_SETTINGS, "");
     }
 
     public void load() {
@@ -642,6 +646,7 @@ public class GeneralConfig {
         properties.setProperty(KEYWORDS_SCREEN, keywordsScreen);
         properties.setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
         properties.setProperty(GAME_STATS, String.valueOf(logGameStats));
+        properties.setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
     }
 
     public void save() {
@@ -765,6 +770,14 @@ public class GeneralConfig {
 
     public static boolean isGameStatsOn() {
         return getInstance().isGameStatsEnabled();
+    }
+
+    public String getCardFlowScreenSettings() {
+        return cardFlowScreenSettings;
+    }
+
+    public void setCardFlowScreenSettings(String settings) {
+        cardFlowScreenSettings = settings;
     }
 
 }

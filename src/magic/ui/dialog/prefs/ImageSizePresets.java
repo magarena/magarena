@@ -44,4 +44,8 @@ public enum ImageSizePresets {
             return preset.getSize();
         }
     }
+
+    public ImageSizePresets next() {
+        return values()[(this.ordinal()+1) % values().length];
+    }
 }

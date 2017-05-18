@@ -14,13 +14,13 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.callback.TimelineCallback;
@@ -28,22 +28,22 @@ import org.pushingpixels.trident.callback.TimelineCallback;
 @SuppressWarnings("serial")
 class CardFlowPanel extends JPanel implements TimelineCallback {
 
-    // magiccards.info = (312, 445), mtgimages.com = (480, 680)
-    public static final Dimension MAX_IMAGE_SIZE = new Dimension(312, 445);
-
     private static final int SLOT_OVERLAP = 140;
+
+    private ImageSizePresets sizePreset;
 
     private int activeImageIndex = 0;
     private final CardFlowTimeline timeline;
-    private BufferedImage contentImage;
+    private BufferedImage cardflowImage;
     private Dimension currentSize = new Dimension();
     private float timelinePulse = 1.0f;
     private Color imageBackgroundColor = getBackground();
     private final List<Rectangle> slots = new ArrayList<>();
     private Rectangle activeSlot;
-    private Dimension selectedImageSize = MAX_IMAGE_SIZE;
+    private Dimension selectedImageSize = getMaxImageSize();
     private final List<ICardFlowListener> listeners = new ArrayList<>();
     private final ICardFlowProvider provider;
+    private final ScreenSettings settings;
 
     private enum FlowDirection {
         LEFT,
@@ -51,14 +51,58 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     }
     private FlowDirection flowDirection = FlowDirection.RIGHT;
 
-    CardFlowPanel(final ICardFlowProvider provider) {
+    CardFlowPanel(final ICardFlowProvider provider, ScreenSettings settings) {
         this.provider = provider;
-        setRedrawOnResize();
+        this.settings = settings;
+        sizePreset = settings.getImageSizePreset();
         setScrollUsingMouseWheel();
         setScrollKeys();
         timeline = new CardFlowTimeline(this, provider.getAnimationDuration());
         activeImageIndex = provider.getStartImageIndex();
         setOnMouseClick();
+        setLayout(null);
+        setOpaque(false);
+        setRedrawOnResize();
+    }
+
+    private void repaintCardFlowImage() {
+        currentSize = new Dimension(getSize());
+        calculateImageSlots();
+        createCardFlowImage();
+        repaint();
+    }
+
+    private void setRedrawOnResize() {
+        addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                if (getSize().equals(currentSize) == false) {
+                    repaintCardFlowImage();
+                }
+            }
+        });
+    }
+
+    private void createCardFlowImage() {
+
+        cardflowImage = ImageHelper.getCompatibleBufferedImage(
+            getWidth(),
+            selectedImageSize.height,
+            settings.useOpaqueImage() ? Transparency.OPAQUE : Transparency.TRANSLUCENT
+        );
+
+        final Graphics2D g2d = cardflowImage.createGraphics();
+
+        if (settings.useOpaqueImage()) {
+            g2d.setColor(imageBackgroundColor);
+            g2d.fillRect(0, 0, cardflowImage.getWidth(), cardflowImage.getHeight());
+        }
+
+        if (getSourceSize() > 0) {
+            drawCards(g2d);
+        }
+
+        g2d.dispose();
     }
 
     private void setOnMouseClick() {
@@ -287,10 +331,12 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         final int canvasWidth = getWidth();
         final int canvasHeight = getHeight();
 
-        final Dimension maxImageSize = MAX_IMAGE_SIZE;
+        final Dimension maxImageSize = getMaxImageSize();
         final double imageAspectRatio = maxImageSize.width / (double) maxImageSize.height;
 
-        selectedImageSize = new Dimension((int) (canvasHeight * imageAspectRatio), canvasHeight);
+        selectedImageSize = maxImageSize.height > canvasHeight
+            ? new Dimension((int)(canvasHeight * imageAspectRatio), canvasHeight)
+            : maxImageSize;
 
         int x = canvasWidth / 2 - selectedImageSize.width / 2;
         int xLeft = x;
@@ -327,31 +373,12 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
 
     }
 
-    private void setRedrawOnResize() {
-        addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(ComponentEvent e) {
-                if (getSize().equals(currentSize) == false) {
-                    currentSize = new Dimension(getSize());
-                    calculateImageSlots();
-                    drawContentImage();
-                    repaint();
-                } else {
-                    System.out.println("SAME SIZE!");
-                }
-            }
-        });
-    }
-
     private void setScrollUsingMouseWheel() {
-        addMouseWheelListener(new MouseWheelListener() {
-            @Override
-            public void mouseWheelMoved(MouseWheelEvent ev) {
-                if (ev.getPreciseWheelRotation() > 0) { // rotate wheel towards you.
-                    doClickRight();
-                } else if (ev.getWheelRotation() < 0) { // rotate wheel away from you.
-                    doClickLeft();
-                }
+        addMouseWheelListener((MouseWheelEvent ev) -> {
+            if (ev.getPreciseWheelRotation() > 0) { // rotate wheel towards you.
+                doClickRight();
+            } else if (ev.getWheelRotation() < 0) { // rotate wheel away from you.
+                doClickLeft();
             }
         });
     }
@@ -375,28 +402,10 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         });
     }
 
-    private void drawContentImage() {
-
-        contentImage = ImageHelper.getCompatibleBufferedImage(
-                this.getWidth(), selectedImageSize.height, Transparency.OPAQUE);
-
-        final Graphics2D g2d = contentImage.createGraphics();
-
-        g2d.setColor(imageBackgroundColor);
-        g2d.fillRect(0, 0, contentImage.getWidth(), contentImage.getHeight());
-
-        if (getSourceSize() > 0) {
-            drawCards(g2d);
-        }
-
-        g2d.dispose();
-
-    }
-
     @Override
     public void onTimelinePulse(float arg0, float arg1) {
         timelinePulse = arg1;
-        drawContentImage();
+        createCardFlowImage();
         repaint();
     }
 
@@ -411,14 +420,14 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        if (contentImage != null) {
+        if (cardflowImage != null) {
             final Rectangle clipRect = new Rectangle(
                     0,
-                    this.getHeight() / 2 - contentImage.getHeight() / 2,
-                    contentImage.getWidth(),
-                    contentImage.getHeight());
+                    this.getHeight() / 2 - cardflowImage.getHeight() / 2,
+                    cardflowImage.getWidth(),
+                    cardflowImage.getHeight());
             g.setClip(clipRect);
-            g.drawImage(contentImage, clipRect.x, clipRect.y, this);
+            g.drawImage(cardflowImage, clipRect.x, clipRect.y, this);
         }
     }
 
@@ -484,33 +493,25 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     }
 
     @Override
-    public void setOpaque(boolean isOpaque) {
-        // If not opaque, animation is much less smoother with frequent flickering.
-        super.setOpaque(true);
-    }
-
-    @Override
-    public Dimension getPreferredSize() {
-        return new Dimension(super.getPreferredSize().width, MAX_IMAGE_SIZE.height);
-    }
-
-    @Override
-    public Dimension getMinimumSize() {
-        return new Dimension(super.getMinimumSize().width, MAX_IMAGE_SIZE.height);
-    }
-
-    @Override
-    public Dimension getMaximumSize() {
-        return new Dimension(super.getMaximumSize().width, MAX_IMAGE_SIZE.height);
-    }
-
-    @Override
     public void setBackground(Color bg) {
         imageBackgroundColor = bg;
         // Ideally panel height should be at preferred size to match height of
         // card flow image but if not then delineate image and this JPanel (on
         // which the image is painted) with a darker background color.
         super.setBackground(bg.darker());
+    }
+
+    private Dimension getMaxImageSize() {
+        if (sizePreset == null || sizePreset == ImageSizePresets.SIZE_ORIGINAL) {
+            return ImageSizePresets.SIZE_312x445.getSize();
+        } else {
+            return sizePreset.getSize();
+        }
+    }
+
+    void setImageSize(ImageSizePresets preset) {
+        this.sizePreset = preset;
+        repaintCardFlowImage();
     }
 
 }

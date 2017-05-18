@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
-import javax.swing.JPanel;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.model.IRenderableCard;
@@ -15,7 +14,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
+import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
 import net.miginfocom.swing.MigLayout;
 
@@ -27,45 +28,45 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     private final CardFlowPanel cardFlowPanel;
     private List<IRenderableCard> cards;
-    private final MenuButton activeImageButton = new MenuButton("", null);
+    private final MenuButton imageIndexButton = new MenuButton("", null);
     private final ICardFlowProvider provider;
+    private final OptionsPanel optionsPanel;
+    private final ScreenSettings settings = new ScreenSettings();
 
      public CardFlowScreen(ICardFlowProvider provider, String screenTitle) {
         super(screenTitle);
         this.provider = provider;
-        cardFlowPanel = new CardFlowPanel(provider);
+        optionsPanel = new OptionsPanel(this, settings);
+        cardFlowPanel = new CardFlowPanel(provider, settings);
         initialize();
      }
 
     public CardFlowScreen() {
         super("Cardflow Test Screen");
         this.provider = this;
-        cardFlowPanel = new CardFlowPanel(this);
+        optionsPanel = new OptionsPanel(this, settings);
+        cardFlowPanel = new CardFlowPanel(this, settings);
         initialize();
     }
 
     private void initialize() {
 
-        cardFlowPanel.setBackground(BACKGROUND_COLOR);
         cardFlowPanel.addListener(this);
+        cardFlowPanel.setBackground(BACKGROUND_COLOR);
 
-        final JPanel panel = new JPanel(new MigLayout("insets 0, aligny center"));
-        panel.setOpaque(false);
-        final int h = CardFlowPanel.MAX_IMAGE_SIZE.height + 20;
-        panel.add(cardFlowPanel, "w 100%, h " + h + "!, aligny center");
-
-        setMainContent(panel);
+        setMainContent(cardFlowPanel);
 
         MenuButton[] btns = new MenuButton[3];
         btns[0] = getScrollBackButton();
-        btns[1] = activeImageButton;
+        btns[1] = imageIndexButton;
         btns[2] = getScrollForwardsButton();
         addFooterGroup(btns);
 
-        activeImageButton.setText(String.format("%d of %d",
+        imageIndexButton.setText(String.format("%d of %d",
             provider.getStartImageIndex() + 1, provider.getImagesCount())
         );
 
+        setHeaderOptions(optionsPanel);
     }
 
     private MenuButton getScrollForwardsButton() {
@@ -104,8 +105,7 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     @Override
     public void setNewActiveImage(int activeImageIndex) {
-        System.out.printf("setNewActiveImage = %d of %d\n", activeImageIndex, cardFlowPanel.getImagesCount() - 1);
-        activeImageButton.setText(String.format("%d of %d",
+        imageIndexButton.setText(String.format("%d of %d",
             activeImageIndex + 1, provider.getImagesCount())
         );
     }
@@ -131,4 +131,18 @@ public class CardFlowScreen extends HeaderFooterScreen
     public void cardFlowClicked() {
         ScreenController.closeActiveScreen();
     }
+
+    void setImageSize(ImageSizePresets preset) {
+        cardFlowPanel.setImageSize(preset);
+    }
+
+    @Override
+    public boolean isScreenReadyToClose(MScreen aScreen) {
+        if (super.isScreenReadyToClose(aScreen)) {
+            optionsPanel.saveSettings();
+            return true;
+        }
+        return false;
+    }
+
 }
