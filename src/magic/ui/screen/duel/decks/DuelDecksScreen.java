@@ -13,6 +13,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
+import magic.ui.IDeckProvider;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
@@ -25,7 +26,7 @@ import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen extends HeaderFooterScreen
-    implements IDeckEditorClient {
+    implements IDeckEditorClient, IDeckProvider {
 
     // translatable strings
     private static final String _S1 = "Duel Decks";
@@ -112,7 +113,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
                             MagicIcon.DECK, MText.get(_S5), MText.get(_S6)
                     ),
                     getTiledDeckCardImagesButton(),
-                    SampleHandActionButton.createInstance(getActiveDeck())
+                    SampleHandActionButton.createInstance(this)
             );
             addToFooter(screenContent.getActionBarButtons());
 
@@ -121,7 +122,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
 
         } else { // duel in progress
             addToFooter(getTiledDeckCardImagesButton(),
-                    SampleHandActionButton.createInstance(getActiveDeck()),
+                    SampleHandActionButton.createInstance(this),
                     MenuButton.build(this::doRestartDuel,
                             MagicIcon.REFRESH, MText.get(_S10), MText.get(_S11)
                     )

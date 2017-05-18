@@ -3,10 +3,10 @@ package magic.ui.screen.widget;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import magic.data.MagicIcon;
-import magic.model.MagicDeck;
+import magic.translate.MText;
+import magic.ui.IDeckProvider;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.translate.MText;
 
 @SuppressWarnings("serial")
 public final class SampleHandActionButton extends ActionBarButton {
@@ -18,25 +18,25 @@ public final class SampleHandActionButton extends ActionBarButton {
 
     private SampleHandActionButton() {}
 
-    public static ActionBarButton createInstance(final MagicDeck deck) {
+    public static ActionBarButton createInstance(final IDeckProvider provider) {
         return new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.HAND_ICON),
-                MText.get(_S1), MText.get(_S2),
-                new SampleHandAction(deck));
+            MagicImages.getIcon(MagicIcon.HAND_ICON),
+            MText.get(_S1), MText.get(_S2),
+            new SampleHandAction(provider));
     }
 
     private static class SampleHandAction extends AbstractAction {
 
-        private final MagicDeck deck;
+        private final IDeckProvider provider;
 
-        public SampleHandAction(final MagicDeck deck) {
-            this.deck = deck;
+        public SampleHandAction(final IDeckProvider provider) {
+            this.provider = provider;
         }
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (deck.size() >= 7) {
-                ScreenController.showSampleHandScreen(deck);
+            if (provider.getDeck().size() >= 7) {
+                ScreenController.showSampleHandScreen(provider.getDeck());
             } else {
                 showInvalidActionMessage(MText.get(_S3));
             }

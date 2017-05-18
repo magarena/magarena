@@ -7,12 +7,14 @@ import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
+import magic.ui.IDeckProvider;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
 
 @SuppressWarnings("serial")
-public class DeckTiledCardsScreen extends HeaderFooterScreen {
+public class DeckTiledCardsScreen extends HeaderFooterScreen
+    implements IDeckProvider {
 
     // translatable strings
     private static final String _S1 = "Deck image view";
@@ -64,7 +66,12 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen {
 
     private void setFooterButtons() {
         setFilterButtons();
-        addToFooter(SampleHandActionButton.createInstance(deck));
+        addToFooter(SampleHandActionButton.createInstance(this));
+    }
+
+    @Override
+    public MagicDeck getDeck() {
+        return deck;
     }
 
 }
