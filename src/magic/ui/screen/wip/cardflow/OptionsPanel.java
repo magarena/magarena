@@ -103,7 +103,6 @@ class OptionsPanel extends JPanel {
     }
 
     void saveSettings() {
-        System.out.println("OptionsPanel.saveSettings");
         settings.setImageSizePreset(sizePreset);
         settings.save();
     }
