@@ -14,6 +14,7 @@ import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.MagicImages;
+import magic.ui.ScreenController;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
 import net.miginfocom.swing.MigLayout;
@@ -124,5 +125,10 @@ public class CardFlowScreen extends HeaderFooterScreen
     @Override
     public int getImagesCount() {
         return getCards().size();
+    }
+
+    @Override
+    public void cardFlowClicked() {
+        ScreenController.closeActiveScreen();
     }
 }

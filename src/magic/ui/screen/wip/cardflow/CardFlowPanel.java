@@ -11,6 +11,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
@@ -40,7 +42,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     private final List<Rectangle> slots = new ArrayList<>();
     private Rectangle activeSlot;
     private Dimension selectedImageSize = MAX_IMAGE_SIZE;
-    private List<ICardFlowListener> listeners = new ArrayList<>();
+    private final List<ICardFlowListener> listeners = new ArrayList<>();
     private final ICardFlowProvider provider;
 
     private enum FlowDirection {
@@ -56,6 +58,22 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         setScrollKeys();
         timeline = new CardFlowTimeline(this, provider.getAnimationDuration());
         activeImageIndex = provider.getStartImageIndex();
+        setOnMouseClick();
+    }
+
+    private void setOnMouseClick() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (e.getPoint().x < activeSlot.x) {
+                    doClickLeft();
+                } else if (e.getPoint().x > activeSlot.x + activeSlot.width) {
+                    doClickRight();
+                } else {
+                    notifyOnMouseClick();
+                }
+            }
+        });
     }
 
     private int getSourceSize() {
@@ -386,7 +404,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     public void onTimelineStateChanged(Timeline.TimelineState arg0, Timeline.TimelineState arg1, float arg2, float arg3) {
         if (arg0 == Timeline.TimelineState.DONE && arg1 == Timeline.TimelineState.IDLE) {
             onTimelinePulse(0, 1.0f);
-            notifyListeners();
+            notifyOnNewActiveImage();
         }
     }
 
@@ -404,7 +422,13 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         }
     }
 
-    private void notifyListeners() {
+    private void notifyOnMouseClick() {
+        for (ICardFlowListener listener : listeners) {
+            listener.cardFlowClicked();
+        }
+    }
+
+    private void notifyOnNewActiveImage() {
         for (ICardFlowListener aListener : listeners) {
             aListener.setNewActiveImage(activeImageIndex);
         }
