@@ -10,8 +10,8 @@ import magic.data.GeneralConfig;
   */
 public enum HandZoneLayout {
 
-    STACKED_DUPLICATES,     // default, as per pre-1.85 behaviour.
-    NO_STACKING;
+    STACKED_DUPLICATES("Stacked"),     // default, as per pre-1.85 behaviour.
+    NO_STACKING("Unstacked");
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String CONFIG_SETTING = "hand.zone.layout";
@@ -38,5 +38,19 @@ public enum HandZoneLayout {
 
     public static void setLayout(int i) {
         activeLayout = HandZoneLayout.values()[i];
+    }
+
+    /**
+     * Instance fields and methods.
+     */
+
+    private final String displayName;
+
+    private HandZoneLayout(final String displayName) {
+        this.displayName = displayName;
+    }
+
+    public String getDisplayName() {
+        return displayName;
     }
 }

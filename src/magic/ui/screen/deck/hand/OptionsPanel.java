@@ -115,6 +115,6 @@ class OptionsPanel extends JPanel
 
     @Override
     public void onMouseEntered(int dialPosition) {
-        // not supported.
+        screen.flashLayoutSetting();
     }
 }
