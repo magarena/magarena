@@ -22,6 +22,46 @@ public class BigDialButton extends ActionBarButton {
     private final int positions;
     private int position;
 
+    public BigDialButton(IDialButtonHandler handler) {
+
+        super(null);
+
+        this.positions = handler.getDialPositionsCount();
+        this.position = handler.getDialPosition();
+        INTERVAL = 360 / positions;
+
+        rotateIconImage();
+        
+        addMouseListener(new MouseAdapter() {
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (SwingUtilities.isLeftMouseButton(e)) {
+                    if (handler.doLeftClickAction(getNextPosition())) {
+                        position = getNextPosition();
+                    } else {
+                        MagicSound.BEEP.play();
+                        return;
+                    }
+                } else if (SwingUtilities.isRightMouseButton(e)) {
+                    if (handler.doRightClickAction(getPreviousPosition())) {
+                        position = getPreviousPosition();
+                    } else {
+                        MagicSound.BEEP.play();
+                        return;
+                    }
+                }
+                rotateIconImage();
+                MagicSound.CLICK.play();
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                handler.onMouseEntered(position);
+            }
+        });
+    }
+
     public BigDialButton(int count, int start, String caption, String tooltip, AbstractAction action) {
 
         super(caption, tooltip, action);
@@ -34,18 +74,28 @@ public class BigDialButton extends ActionBarButton {
 
         addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseReleased(MouseEvent e) {
+            public void mouseClicked(MouseEvent e) {
                 if (SwingUtilities.isLeftMouseButton(e)) {
-                    position = position >= positions - 1 ? 0 : position + 1;
-                    rotateIconImage();
-                    MagicSound.CLICK.play();
+                    position = getNextPosition();
+                } else if (SwingUtilities.isRightMouseButton(e)) {
+                    position = getPreviousPosition();
                 }
+                rotateIconImage();
+                MagicSound.CLICK.play();
             }
         });
     }
 
     public BigDialButton(int count, int start, AbstractAction action) {
         this(count, start, null, null, action);
+    }
+
+    private int getPreviousPosition() {
+        return position == 0 ? positions - 1  : position - 1;
+    }
+
+    private int getNextPosition() {
+        return position >= positions - 1 ? 0 : position + 1;
     }
 
     private static final GradientPaint tintColor =

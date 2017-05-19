@@ -15,10 +15,12 @@ import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
+import magic.ui.screen.widget.IDialButtonHandler;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class OptionsPanel extends JPanel {
+class OptionsPanel extends JPanel
+    implements IDialButtonHandler {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Scale";
@@ -35,24 +37,15 @@ class OptionsPanel extends JPanel {
     private final ActionBarButton closeButton;
     private ImageSizePresets sizePreset;
     private final ScreenSettings settings;
+    private final CardFlowScreen screen;
 
-    OptionsPanel(final CardFlowScreen listener, final ScreenSettings settings) {
+    OptionsPanel(final CardFlowScreen screen, final ScreenSettings settings) {
 
+        this.screen = screen;
         this.settings = settings;
         sizePreset = settings.getImageSizePreset();
 
-        scaleButton = new BigDialButton(
-                ImageSizePresets.values().length - 1,
-                sizePreset.ordinal(),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        sizePreset = sizePreset.next();
-                        sizePreset = sizePreset == ImageSizePresets.SIZE_ORIGINAL ? ImageSizePresets.SIZE_223x310 : sizePreset;
-                        listener.setImageSize(sizePreset);
-                    }
-                }
-        );
+        scaleButton = new BigDialButton(this);
 
         menuButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
             @Override
@@ -105,5 +98,42 @@ class OptionsPanel extends JPanel {
     void saveSettings() {
         settings.setImageSizePreset(sizePreset);
         settings.save();
+    }
+
+    @Override
+    public int getDialPositionsCount() {
+        // one less since not interested in SIZE_ORIGINAL.
+        return ImageSizePresets.values().length - 1;
+    }
+
+    @Override
+    public int getDialPosition() {
+        // dial position one less since not including SIZE_ORIGINAL;
+        return sizePreset.ordinal() - 1;
+    }
+
+    private void setImageSizePreset(int ordinal) {
+        sizePreset = ImageSizePresets.values()[ordinal];
+        sizePreset = sizePreset == ImageSizePresets.SIZE_ORIGINAL
+            ? ImageSizePresets.SIZE_ORIGINAL.next()
+            : sizePreset;
+        screen.setImageSize(sizePreset);
+    }
+
+    @Override
+    public boolean doLeftClickAction(int dialPosition) {
+        setImageSizePreset(dialPosition + 1);
+        return true;
+    }
+
+    @Override
+    public boolean doRightClickAction(int dialPosition) {
+        setImageSizePreset(dialPosition + 1);
+        return true;
+    }
+
+    @Override
+    public void onMouseEntered(int position) {
+        screen.flashImageSizePreset(ImageSizePresets.values()[position + 1]);
     }
 }
