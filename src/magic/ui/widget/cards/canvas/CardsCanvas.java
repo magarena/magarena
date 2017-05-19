@@ -91,7 +91,7 @@ public class CardsCanvas extends JPanel {
                 if (!isAnimateThreadRunning ) {
                     MouseHelper.showBusyCursor();
                     int cardIndex = getCardIndexAt(e.getPoint());
-                    if (!(listener instanceof NullCardsCanvasListener)) {
+                    if (cardIndex >= 0 && !(listener instanceof NullCardsCanvasListener)) {
                         listener.cardClicked(
                             cardIndex,
                             cardIndex >= 0
