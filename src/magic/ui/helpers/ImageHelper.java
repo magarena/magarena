@@ -275,7 +275,7 @@ final public class ImageHelper {
         g2d.dispose();
     }
 
-    public static Icon getRecoloredIcon(ImageIcon icon, Color oldColor, Color newColor) {
+    public static ImageIcon getRecoloredIcon(ImageIcon icon, Color oldColor, Color newColor) {
         final FilteredImageSource fis = new FilteredImageSource(
                 icon.getImage().getSource(),
                 new ColorSwapImageFilter(oldColor, newColor)
@@ -283,7 +283,7 @@ final public class ImageHelper {
         return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
     }
 
-    public static Icon getRecoloredIcon(MagicIcon icon, Color oldColor, Color newColor) {
+    public static ImageIcon getRecoloredIcon(MagicIcon icon, Color oldColor, Color newColor) {
         return getRecoloredIcon(MagicImages.getIcon(icon), oldColor, newColor);
     }
 

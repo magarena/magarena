@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -37,7 +36,7 @@ public class TurnTitlePanel extends JPanel {
     private static final String _S4 = "Game %d / %d";
     private static final String _S5 = "Turn %d";
 
-    private static final Icon MENU_ICON = ImageHelper.getRecoloredIcon(
+    private static final ImageIcon MENU_ICON = ImageHelper.getRecoloredIcon(
         MagicIcon.OPTION_MENU_TINY, Color.BLACK, Color.WHITE
     );
 
@@ -72,10 +71,8 @@ public class TurnTitlePanel extends JPanel {
 
     private JButton getOptionsIconButton() {
 
-        final JButton btn = new ActionBarButton(
-                (ImageIcon) MENU_ICON,
-                MText.get(_S1),
-                MText.get(_S2),
+        final JButton btn = new ActionBarButton(MENU_ICON,
+                MText.get(_S1), MText.get(_S2),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {

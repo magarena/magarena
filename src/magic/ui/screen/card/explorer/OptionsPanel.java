@@ -3,7 +3,6 @@ package magic.ui.screen.card.explorer;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -24,7 +23,7 @@ class OptionsPanel extends JPanel {
     private static final String _S1 = "Layout";
     private static final String _S2 = "Style";
 
-    private static final Icon MENU_ICON =
+    private static final ImageIcon MENU_ICON =
             ImageHelper.getRecoloredIcon(MagicIcon.OPTION_MENU, Color.BLACK, Color.WHITE);
 
     private boolean isMenuOpen = false;
@@ -58,7 +57,7 @@ class OptionsPanel extends JPanel {
                 }
         );
 
-        menuButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
+        menuButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 doToggleMenuOptions();
