@@ -18,7 +18,6 @@ import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardFlowScreen extends HeaderFooterScreen
@@ -26,26 +25,30 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     private static final Color BACKGROUND_COLOR = new Color(18, 30, 49);
 
+    private final CardFlowLayeredPane layeredPane;
     private final CardFlowPanel cardFlowPanel;
     private List<IRenderableCard> cards;
     private final MenuButton imageIndexButton = new MenuButton("", null);
     private final ICardFlowProvider provider;
     private final OptionsPanel optionsPanel;
     private final ScreenSettings settings = new ScreenSettings();
+    private final FlashTextOverlay flashOverlay = new FlashTextOverlay();
 
-     public CardFlowScreen(ICardFlowProvider provider, String screenTitle) {
+    public CardFlowScreen(ICardFlowProvider provider, String screenTitle) {
         super(screenTitle);
         this.provider = provider;
         optionsPanel = new OptionsPanel(this, settings);
         cardFlowPanel = new CardFlowPanel(provider, settings);
+        layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
         initialize();
-     }
+    }
 
     public CardFlowScreen() {
         super("Cardflow Test Screen");
         this.provider = this;
         optionsPanel = new OptionsPanel(this, settings);
         cardFlowPanel = new CardFlowPanel(this, settings);
+        layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
         initialize();
     }
 
@@ -54,7 +57,7 @@ public class CardFlowScreen extends HeaderFooterScreen
         cardFlowPanel.addListener(this);
         cardFlowPanel.setBackground(BACKGROUND_COLOR);
 
-        setMainContent(cardFlowPanel);
+        setMainContent(layeredPane);
 
         MenuButton[] btns = new MenuButton[3];
         btns[0] = getScrollBackButton();
@@ -134,6 +137,7 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     void setImageSize(ImageSizePresets preset) {
         cardFlowPanel.setImageSize(preset);
+        flashOverlay.flashText(preset.name().replaceAll("SIZE_", "").replaceAll("x", " x "));
     }
 
     @Override
