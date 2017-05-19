@@ -36,7 +36,7 @@ public class MulliganScreen extends HeaderFooterScreen
     private CardsCanvas cardsCanvas;
     private MulliganChoicePanel choicePanel;
     private final MagicCardList hand;
-    private OptionsPanel optionsPanel;
+    private final OptionsPanel optionsPanel;
 
     public MulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         super(MText.get(_S1));
@@ -126,11 +126,6 @@ public class MulliganScreen extends HeaderFooterScreen
         }
     }
 
-    void doSwitchLayout() {
-        HandZoneLayout.setNextLayout();
-        setCardsLayout();
-    }
-
     private void doSaveSettings() {
         HandZoneLayout.save();
         GeneralConfig.getInstance().save();
@@ -153,6 +148,11 @@ public class MulliganScreen extends HeaderFooterScreen
     @Override
     public void cardClicked(int index, MagicCardDefinition card) {
         new CardImageOverlay(card);
+    }
+
+    void setCardsLayout(int ordinal) {
+        HandZoneLayout.setLayout(ordinal);
+        setCardsLayout();
     }
 
 
