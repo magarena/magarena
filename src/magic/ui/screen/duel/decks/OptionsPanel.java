@@ -13,11 +13,13 @@ import magic.ui.FontsAndBorders;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
+import magic.ui.screen.widget.IDialButtonHandler;
 import magic.ui.widget.cards.table.CardsTableStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class OptionsPanel extends JPanel {
+class OptionsPanel extends JPanel
+    implements IDialButtonHandler {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Style";
@@ -29,20 +31,13 @@ class OptionsPanel extends JPanel {
     private final BigDialButton styleButton;
     private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
+    private final DuelDecksScreen screen;
 
-    OptionsPanel(final DuelDecksScreen listener) {
+    OptionsPanel(final DuelDecksScreen screen) {
 
-        styleButton = new BigDialButton(
-                CardsTableStyle.values().length,
-                CardsTableStyle.getStyle().ordinal(),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        CardsTableStyle.setNextStyle();
-                        listener.setCardsTableStyle();
-                    }
-                }
-        );
+        this.screen = screen;
+
+        styleButton = new BigDialButton(this);
 
         menuButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
             @Override
@@ -90,5 +85,32 @@ class OptionsPanel extends JPanel {
         lbl.setFont(FontsAndBorders.FONT0);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
+    }
+
+    @Override
+    public int getDialPositionsCount() {
+        return CardsTableStyle.values().length;
+    }
+
+    @Override
+    public int getDialPosition() {
+        return CardsTableStyle.getStyle().ordinal();
+    }
+
+    @Override
+    public boolean doLeftClickAction(int dialPosition) {
+        CardsTableStyle.setNextStyle();
+        screen.setCardsTableStyle();
+        return true;
+    }
+
+    @Override
+    public boolean doRightClickAction(int dialPosition) {
+        return false; // not supported
+    }
+
+    @Override
+    public void onMouseEntered(int dialPosition) {
+        // not supported
     }
 }
