@@ -510,10 +510,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             case SwitchPT:
                 mstatic.modPowerToughness(source, this, cachedPowerToughness);
                 break;
-            case Game:
-                mstatic.modAbilityFlags(source, this, cachedAbilityFlags);
-                mstatic.modPowerToughness(source, this, cachedPowerToughness);
-                break;
             default:
                 break;
         }
