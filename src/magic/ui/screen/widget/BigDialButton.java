@@ -78,7 +78,8 @@ public class BigDialButton extends ActionBarButton {
                 if (SwingUtilities.isLeftMouseButton(e)) {
                     position = getNextPosition();
                 } else if (SwingUtilities.isRightMouseButton(e)) {
-                    position = getPreviousPosition();
+                    MagicSound.BEEP.play();
+                    return;
                 }
                 rotateIconImage();
                 MagicSound.CLICK.play();
