@@ -26,9 +26,6 @@ class OptionsPanel extends JPanel {
     private static final Icon MENU_ICON =
             ImageHelper.getRecoloredIcon(MagicIcon.OPTION_MENU, Color.BLACK, Color.WHITE);
 
-    private static final Icon CLOSE_MENU =
-            ImageHelper.getRecoloredIcon(MagicIcon.CLOSE, Color.BLACK, Color.WHITE);
-
     private boolean isMenuOpen = false;
     private final BigDialButton styleButton;
     private final ActionBarButton menuButton;
@@ -55,7 +52,7 @@ class OptionsPanel extends JPanel {
             }
         });
 
-        closeButton = new ActionBarButton((ImageIcon) CLOSE_MENU, new AbstractAction() {
+        closeButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 doToggleMenuOptions();
