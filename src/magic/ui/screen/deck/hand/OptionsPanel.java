@@ -1,6 +1,5 @@
 package magic.ui.screen.deck.hand;
 
-import magic.ui.screen.HandZoneLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
@@ -13,12 +12,15 @@ import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
+import magic.ui.screen.widget.IDialButtonHandler;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class OptionsPanel extends JPanel {
+class OptionsPanel extends JPanel
+    implements IDialButtonHandler {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Layout";
@@ -33,19 +35,13 @@ class OptionsPanel extends JPanel {
     private final BigDialButton layoutButton;
     private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
+    private final SampleHandScreen screen;
 
-    OptionsPanel(final SampleHandScreen listener) {
+    OptionsPanel(final SampleHandScreen screen) {
 
-        layoutButton = new BigDialButton(
-                HandZoneLayout.values().length,
-                HandZoneLayout.getLayout().ordinal(),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        listener.doSwitchLayout();
-                    }
-                }
-        );
+        this.screen = screen;
+
+        layoutButton = new BigDialButton(this);
 
         menuButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
             @Override
@@ -93,5 +89,32 @@ class OptionsPanel extends JPanel {
         lbl.setFont(FontsAndBorders.FONT0);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
+    }
+
+    @Override
+    public int getDialPositionsCount() {
+        return HandZoneLayout.values().length;
+    }
+
+    @Override
+    public int getDialPosition() {
+        return HandZoneLayout.getLayout().ordinal();
+    }
+
+    @Override
+    public boolean doLeftClickAction(int dialPosition) {
+        screen.setCardsLayout(dialPosition);
+        return true;
+    }
+
+    @Override
+    public boolean doRightClickAction(int dialPosition) {
+        screen.setCardsLayout(dialPosition);
+        return true;
+    }
+
+    @Override
+    public void onMouseEntered(int dialPosition) {
+        // not supported.
     }
 }

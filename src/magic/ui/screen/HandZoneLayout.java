@@ -32,19 +32,11 @@ public enum HandZoneLayout {
         CONFIG.set(CONFIG_SETTING, activeLayout.ordinal());
     }
 
-    private HandZoneLayout next() {
-        return values()[(this.ordinal()+1) % values().length];
-    }
-
     public static HandZoneLayout getLayout() {
         return activeLayout;
     }
 
     public static void setLayout(int i) {
         activeLayout = HandZoneLayout.values()[i];
-    }
-
-    public static void setNextLayout() {
-        activeLayout = activeLayout.next();
     }
 }

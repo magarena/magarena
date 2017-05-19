@@ -15,8 +15,8 @@ import magic.ui.ScreenController;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.cardflow.ICardFlowProvider;
+import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
@@ -88,11 +88,6 @@ public class SampleHandScreen extends HeaderFooterScreen
         }
     }
 
-    void doSwitchLayout() {
-        HandZoneLayout.setNextLayout();
-        setCardsLayout();
-    }
-
     private void doSaveSettings() {
         HandZoneLayout.save();
         GeneralConfig.getInstance().save();
@@ -136,5 +131,10 @@ public class SampleHandScreen extends HeaderFooterScreen
     @Override
     public int getStartImageIndex() {
         return startImageIndex;
+    }
+
+    void setCardsLayout(int ordinal) {
+        HandZoneLayout.setLayout(ordinal);
+        setCardsLayout();
     }
 }
