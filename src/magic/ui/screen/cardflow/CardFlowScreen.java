@@ -135,9 +135,13 @@ public class CardFlowScreen extends HeaderFooterScreen
         ScreenController.closeActiveScreen();
     }
 
+    void flashImageSizePreset(ImageSizePresets preset) {
+        flashOverlay.flashText(preset.name().replaceAll("SIZE_", "").replaceAll("x", " x "));
+    }
+
     void setImageSize(ImageSizePresets preset) {
         cardFlowPanel.setImageSize(preset);
-        flashOverlay.flashText(preset.name().replaceAll("SIZE_", "").replaceAll("x", " x "));
+        flashImageSizePreset(preset);
     }
 
     @Override
