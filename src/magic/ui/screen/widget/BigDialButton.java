@@ -13,6 +13,7 @@ import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
 import magic.ui.MagicSound;
 import magic.ui.helpers.ImageHelper;
+import magic.ui.helpers.MouseHelper;
 
 @SuppressWarnings("serial")
 public class BigDialButton extends ActionBarButton {
@@ -56,8 +57,15 @@ public class BigDialButton extends ActionBarButton {
 
             @Override
             public void mouseEntered(MouseEvent e) {
+                MouseHelper.showHandCursor(BigDialButton.this);
                 handler.onMouseEntered(position);
             }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                MouseHelper.showDefaultCursor();
+            }
+
         });
     }
 
