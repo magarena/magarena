@@ -25,7 +25,6 @@ class OptionsPanel extends ScreenOptionsPanel {
     private boolean isMenuOpen = false;
     private final BigDialButton layoutButton;
     private final BigDialButton styleButton;
-    private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
     private final ExplorerScreen screen;
 
@@ -35,13 +34,6 @@ class OptionsPanel extends ScreenOptionsPanel {
 
         layoutButton = new BigDialButton(getLayoutHandler());
         styleButton = new BigDialButton(getStyleHandler());
-
-        menuButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                doToggleMenuOptions();
-            }
-        });
 
         closeButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
             @Override
@@ -126,7 +118,8 @@ class OptionsPanel extends ScreenOptionsPanel {
         repaint();
     }
 
-    private void doToggleMenuOptions() {
+    @Override
+    protected void doToggleMenuOptions() {
         isMenuOpen = !isMenuOpen;
         setLayout();
     }

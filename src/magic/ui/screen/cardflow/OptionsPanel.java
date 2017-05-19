@@ -24,7 +24,6 @@ class OptionsPanel extends ScreenOptionsPanel
 
     private boolean isMenuOpen = false;
     private final BigDialButton scaleButton;
-    private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
     private ImageSizePresets sizePreset;
     private final ScreenSettings settings;
@@ -37,13 +36,6 @@ class OptionsPanel extends ScreenOptionsPanel
         sizePreset = settings.getImageSizePreset();
 
         scaleButton = new BigDialButton(this);
-
-        menuButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                doToggleMenuOptions();
-            }
-        });
 
         closeButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
             @Override
@@ -73,7 +65,8 @@ class OptionsPanel extends ScreenOptionsPanel
         repaint();
     }
 
-    private void doToggleMenuOptions() {
+    @Override
+    protected void doToggleMenuOptions() {
         isMenuOpen = !isMenuOpen;
         setLayout();
     }

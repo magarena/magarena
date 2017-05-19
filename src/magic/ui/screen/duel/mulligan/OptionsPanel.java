@@ -24,7 +24,6 @@ class OptionsPanel extends ScreenOptionsPanel
 
     private boolean isMenuOpen = false;
     private final BigDialButton layoutButton;
-    private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
     private final MulliganScreen screen;
 
@@ -33,13 +32,6 @@ class OptionsPanel extends ScreenOptionsPanel
         this.screen = screen;
 
         layoutButton = new BigDialButton(this);
-
-        menuButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                doToggleMenuOptions();
-            }
-        });
 
         closeButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
             @Override
@@ -69,7 +61,8 @@ class OptionsPanel extends ScreenOptionsPanel
         repaint();
     }
 
-    private void doToggleMenuOptions() {
+    @Override
+    protected void doToggleMenuOptions() {
         isMenuOpen = !isMenuOpen;
         setLayout();
     }
