@@ -9,7 +9,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
 import magic.ui.MagicSound;
@@ -60,35 +59,6 @@ public class BigDialButton extends ActionBarButton {
                 handler.onMouseEntered(position);
             }
         });
-    }
-
-    private BigDialButton(int count, int start, String caption, String tooltip, AbstractAction action) {
-
-        super(caption, tooltip, action);
-
-        this.positions = count;
-        this.position = start;
-        this.INTERVAL = 360 / positions;
-
-        rotateIconImage();
-
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (SwingUtilities.isLeftMouseButton(e)) {
-                    position = getNextPosition();
-                } else if (SwingUtilities.isRightMouseButton(e)) {
-                    MagicSound.BEEP.play();
-                    return;
-                }
-                rotateIconImage();
-                MagicSound.CLICK.play();
-            }
-        });
-    }
-
-    public BigDialButton(int count, int start, AbstractAction action) {
-        this(count, start, null, null, action);
     }
 
     private int getPreviousPosition() {
