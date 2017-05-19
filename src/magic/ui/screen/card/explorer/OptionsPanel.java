@@ -82,13 +82,13 @@ class OptionsPanel extends JPanel {
     private void setLayout() {
         removeAll();
         if (isMenuOpen) {
-            add(getLabel(MText.get(_S1)), "ax center");
-            add(layoutButton, "h 24!, gapbottom 2");
-            add(getLabel(MText.get(_S2)), "ax center");
-            add(styleButton, "h 24!, gapbottom 2");
-            add(closeButton, "spany 2, gapbottom 2");
+            add(getLabel(MText.get(_S1)), "ax center, w 60!");
+            add(layoutButton, "ax center, h 24!, w 24!, gapbottom 2");
+            add(getLabel(MText.get(_S2)), "ax center, w 60!");
+            add(styleButton, "ax center, h 24!, w 24!, gapbottom 2");
+            add(closeButton, "spany 2, h 32!, w 32!");
         } else {
-            add(menuButton, "spany 2");
+            add(menuButton, "spany 2, h 32!, w 32!");
         }
         revalidate();
         repaint();
