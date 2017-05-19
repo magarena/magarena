@@ -18,7 +18,6 @@ class OptionsPanel extends ScreenOptionsPanel
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Scale";
 
-    private boolean isMenuOpen = false;
     private final BigDialButton scaleButton;
     private ImageSizePresets sizePreset;
     private final ScreenSettings settings;

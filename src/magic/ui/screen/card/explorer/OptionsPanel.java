@@ -18,7 +18,6 @@ class OptionsPanel extends ScreenOptionsPanel {
     private static final String _S1 = "Layout";
     private static final String _S2 = "Style";
 
-    private boolean isMenuOpen = false;
     private final BigDialButton layoutButton;
     private final BigDialButton styleButton;
     private final ExplorerScreen screen;
