@@ -5,27 +5,22 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.helpers.ImageHelper;
+import magic.ui.screen.ScreenOptionsPanel;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class OptionsPanel extends JPanel
+class OptionsPanel extends ScreenOptionsPanel
     implements IDialButtonHandler {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Scale";
-
-    private static final ImageIcon MENU_ICON =
-            ImageHelper.getRecoloredIcon(MagicIcon.OPTION_MENU, Color.BLACK, Color.WHITE);
 
     private boolean isMenuOpen = false;
     private final BigDialButton scaleButton;
