@@ -13,6 +13,7 @@ import magic.ui.FontsAndBorders;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
+import magic.ui.screen.widget.IDialButtonHandler;
 import magic.ui.widget.cards.table.CardsTableStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -31,31 +32,14 @@ class OptionsPanel extends JPanel {
     private final BigDialButton styleButton;
     private final ActionBarButton menuButton;
     private final ActionBarButton closeButton;
+    private final ExplorerScreen screen;
 
-    OptionsPanel(final ExplorerScreen listener) {
+    OptionsPanel(final ExplorerScreen screen) {
 
-        layoutButton = new BigDialButton(
-                ExplorerScreenLayout.values().length,
-                ExplorerScreenLayout.getLayout().ordinal(),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        listener.doSwitchLayout();
-                    }
-                }
-        );
+        this.screen = screen;
 
-        styleButton = new BigDialButton(
-                CardsTableStyle.values().length,
-                CardsTableStyle.getStyle().ordinal(),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        CardsTableStyle.setNextStyle();
-                        listener.setCardsTableStyle();
-                    }
-                }
-        );
+        layoutButton = new BigDialButton(getLayoutHandler());
+        styleButton = new BigDialButton(getStyleHandler());
 
         menuButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
             @Override
@@ -77,6 +61,59 @@ class OptionsPanel extends JPanel {
         setLayout();
 
         setOpaque(false);
+    }
+
+    private IDialButtonHandler getStyleHandler() {
+        return new IDialButtonHandler() {
+            @Override
+            public int getDialPositionsCount() {
+                return CardsTableStyle.values().length;
+            }
+            @Override
+            public int getDialPosition() {
+                return CardsTableStyle.getStyle().ordinal();
+            }
+            @Override
+            public boolean doLeftClickAction(int dialPosition) {
+                CardsTableStyle.setNextStyle();
+                screen.setCardsTableStyle();
+                return true;
+            }
+            @Override
+            public boolean doRightClickAction(int dialPosition) {
+                return false; // not supported.
+            }
+            @Override
+            public void onMouseEntered(int dialPosition) {
+                // not supported
+            }
+        };
+    }
+
+    private IDialButtonHandler getLayoutHandler() {
+        return new IDialButtonHandler() {
+            @Override
+            public int getDialPositionsCount() {
+                return ExplorerScreenLayout.values().length;
+            }
+            @Override
+            public int getDialPosition() {
+                return ExplorerScreenLayout.getLayout().ordinal();
+            }
+            @Override
+            public boolean doLeftClickAction(int dialPosition) {
+                screen.doSwitchLayout();
+                return true;
+            }
+            @Override
+            public boolean doRightClickAction(int dialPosition) {
+                return false; // not supported.
+            }
+            @Override
+            public void onMouseEntered(int dialPosition) {
+                // not supported.
+            }
+        };
     }
 
     private void setLayout() {
