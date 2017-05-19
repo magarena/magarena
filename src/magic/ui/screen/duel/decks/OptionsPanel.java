@@ -35,7 +35,8 @@ class OptionsPanel extends ScreenOptionsPanel
         setOpaque(false);
     }
 
-    private void setLayout() {
+    @Override
+    protected void setLayout() {
         removeAll();
         if (isMenuOpen) {
             add(getLabel(MText.get(_S1)), "ax center, w 60!");
@@ -46,12 +47,6 @@ class OptionsPanel extends ScreenOptionsPanel
         }
         revalidate();
         repaint();
-    }
-
-    @Override
-    protected void doToggleMenuOptions() {
-        isMenuOpen = !isMenuOpen;
-        setLayout();
     }
 
     private JLabel getLabel(String text) {

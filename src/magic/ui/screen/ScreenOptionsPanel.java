@@ -21,7 +21,7 @@ public abstract class ScreenOptionsPanel extends JPanel {
 
     protected boolean isMenuOpen = false;
 
-    protected abstract void doToggleMenuOptions();
+    protected abstract void setLayout();
 
     public ScreenOptionsPanel() {
 
@@ -38,8 +38,10 @@ public abstract class ScreenOptionsPanel extends JPanel {
                 doToggleMenuOptions();
             }
         });
-
     }
 
-
+    private void doToggleMenuOptions() {
+        isMenuOpen = !isMenuOpen;
+        setLayout();
+    }
 }
