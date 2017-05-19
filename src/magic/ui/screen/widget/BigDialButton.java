@@ -31,7 +31,7 @@ public class BigDialButton extends ActionBarButton {
         INTERVAL = 360 / positions;
 
         rotateIconImage();
-        
+
         addMouseListener(new MouseAdapter() {
 
             @Override
@@ -62,7 +62,7 @@ public class BigDialButton extends ActionBarButton {
         });
     }
 
-    public BigDialButton(int count, int start, String caption, String tooltip, AbstractAction action) {
+    private BigDialButton(int count, int start, String caption, String tooltip, AbstractAction action) {
 
         super(caption, tooltip, action);
 
