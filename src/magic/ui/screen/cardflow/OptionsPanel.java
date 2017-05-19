@@ -1,16 +1,12 @@
 package magic.ui.screen.cardflow;
 
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.ScreenOptionsPanel;
-import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
 import net.miginfocom.swing.MigLayout;
@@ -24,7 +20,6 @@ class OptionsPanel extends ScreenOptionsPanel
 
     private boolean isMenuOpen = false;
     private final BigDialButton scaleButton;
-    private final ActionBarButton closeButton;
     private ImageSizePresets sizePreset;
     private final ScreenSettings settings;
     private final CardFlowScreen screen;
@@ -36,13 +31,6 @@ class OptionsPanel extends ScreenOptionsPanel
         sizePreset = settings.getImageSizePreset();
 
         scaleButton = new BigDialButton(this);
-
-        closeButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                doToggleMenuOptions();
-            }
-        });
 
         setLayout(new MigLayout(
                 "flowy, wrap 2, gap 0 2, insets 0 0 2 0, ax right, ay center"
