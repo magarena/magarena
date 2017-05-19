@@ -26,7 +26,7 @@ public class FlashTextOverlay extends TexturedPanel {
     private final Timer timer =
         new Timer(1200, (e) -> {setVisible(false); });
 
-    public FlashTextOverlay() {
+    public FlashTextOverlay(int width, int height) {
 
         addMouseListener(new MouseAdapter() {
             @Override
@@ -42,11 +42,15 @@ public class FlashTextOverlay extends TexturedPanel {
             }
         });
 
-        setPreferredSize(new Dimension(400, 60));
+        setPreferredSize(new Dimension(width, height));
 
-        setBackground(MagicStyle.getTranslucentColor(Color.DARK_GRAY, 200));
+        setBackground(MagicStyle.getTranslucentColor(Color.DARK_GRAY, 240));
         setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
         setVisible(false);
+    }
+
+    public FlashTextOverlay() {
+        this(400, 60);
     }
 
     public void flashText(String text) {
