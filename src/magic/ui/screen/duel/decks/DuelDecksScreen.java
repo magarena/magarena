@@ -22,6 +22,7 @@ import magic.ui.screen.deck.editor.IDeckEditorClient;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
+import magic.ui.widget.cards.table.CardsTableStyle;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -47,7 +48,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
     private MagicGame nextGame = null;
     private final StartGameButton nextGameButton;
     private NewGameWorker worker;
-    private OptionsPanel optionsPanel;
+    private final OptionsPanel optionsPanel;
 
     public DuelDecksScreen(final MagicDuel duel) {
         super(MText.get(_S1));
@@ -269,7 +270,8 @@ public class DuelDecksScreen extends HeaderFooterScreen
         return true;
     }
 
-    void setCardsTableStyle() {
+    void setCardsTableStyle(int dialPosition) {
+        CardsTableStyle.setStyle(dialPosition);
         screenContent.setCardsTableStyle();
     }
 }

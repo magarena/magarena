@@ -99,14 +99,14 @@ class OptionsPanel extends JPanel
 
     @Override
     public boolean doLeftClickAction(int dialPosition) {
-        CardsTableStyle.setNextStyle();
-        screen.setCardsTableStyle();
+        screen.setCardsTableStyle(dialPosition);
         return true;
     }
 
     @Override
     public boolean doRightClickAction(int dialPosition) {
-        return false; // not supported
+        screen.setCardsTableStyle(dialPosition);
+        return true;
     }
 
     @Override

@@ -32,8 +32,12 @@ public enum CardsTableStyle {
         CONFIG.set(CONFIG_SETTING, style.ordinal());
     }
 
-    static void setStyle(CardsTableStyle newStyle) {
+    public static void setStyle(CardsTableStyle newStyle) {
         style = newStyle;
+    }
+
+    public static void setStyle(int ordinal) {
+        style = CardsTableStyle.values()[ordinal];
     }
 
     private CardsTableStyle next() {
