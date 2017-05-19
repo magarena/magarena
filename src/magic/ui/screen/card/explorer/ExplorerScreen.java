@@ -91,7 +91,8 @@ public class ExplorerScreen extends HeaderFooterScreen {
         headerPanel.refreshTotals(total, playable, missing);
     }
 
-    void setCardsTableStyle() {
+    void setCardsTableStyle(int dialPosition) {
+        CardsTableStyle.setStyle(dialPosition);
         contentPanel.setCardsTableStyle();
     }
 }
