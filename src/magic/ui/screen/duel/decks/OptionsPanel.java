@@ -9,7 +9,6 @@ import magic.ui.screen.ScreenOptionsPanel;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
 import magic.ui.widget.cards.table.CardsTableStyle;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class OptionsPanel extends ScreenOptionsPanel
@@ -22,17 +21,9 @@ class OptionsPanel extends ScreenOptionsPanel
     private final DuelDecksScreen screen;
 
     OptionsPanel(final DuelDecksScreen screen) {
-
         this.screen = screen;
-
         styleButton = new BigDialButton(this);
-
-        setLayout(new MigLayout(
-                "flowy, wrap 2, gap 0 2, insets 0 0 2 0, ax right, ay center"
-        ));
         setLayout();
-
-        setOpaque(false);
     }
 
     @Override

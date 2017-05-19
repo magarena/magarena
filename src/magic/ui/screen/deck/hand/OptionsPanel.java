@@ -9,7 +9,6 @@ import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.ScreenOptionsPanel;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class OptionsPanel extends ScreenOptionsPanel
@@ -22,17 +21,9 @@ class OptionsPanel extends ScreenOptionsPanel
     private final SampleHandScreen screen;
 
     OptionsPanel(final SampleHandScreen screen) {
-
         this.screen = screen;
-
         layoutButton = new BigDialButton(this);
-
-        setLayout(new MigLayout(
-                "flowy, wrap 2, gap 0 2, insets 0 0 2 0, ax right, ay center"
-        ));
         setLayout();
-
-        setOpaque(false);
     }
 
     @Override

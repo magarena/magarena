@@ -9,7 +9,6 @@ import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.ScreenOptionsPanel;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class OptionsPanel extends ScreenOptionsPanel
@@ -24,19 +23,11 @@ class OptionsPanel extends ScreenOptionsPanel
     private final CardFlowScreen screen;
 
     OptionsPanel(final CardFlowScreen screen, final ScreenSettings settings) {
-
         this.screen = screen;
         this.settings = settings;
         sizePreset = settings.getImageSizePreset();
-
         scaleButton = new BigDialButton(this);
-
-        setLayout(new MigLayout(
-                "flowy, wrap 2, gap 0 2, insets 0 0 2 0, ax right, ay center"
-        ));
         setLayout();
-
-        setOpaque(false);
     }
 
     @Override

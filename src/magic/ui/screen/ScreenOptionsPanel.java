@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.widget.ActionBarButton;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public abstract class ScreenOptionsPanel extends JPanel {
@@ -38,6 +39,12 @@ public abstract class ScreenOptionsPanel extends JPanel {
                 doToggleMenuOptions();
             }
         });
+
+        setLayout(new MigLayout(
+            "flowy, wrap 2, gap 0 2, insets 0 0 2 0, ax right, ay center"
+        ));
+
+        setOpaque(false);
     }
 
     private void doToggleMenuOptions() {

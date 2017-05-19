@@ -9,7 +9,6 @@ import magic.ui.screen.ScreenOptionsPanel;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
 import magic.ui.widget.cards.table.CardsTableStyle;
-import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class OptionsPanel extends ScreenOptionsPanel {
@@ -23,18 +22,10 @@ class OptionsPanel extends ScreenOptionsPanel {
     private final ExplorerScreen screen;
 
     OptionsPanel(final ExplorerScreen screen) {
-
         this.screen = screen;
-
         layoutButton = new BigDialButton(getLayoutHandler());
         styleButton = new BigDialButton(getStyleHandler());
-
-        setLayout(new MigLayout(
-                "flowy, wrap 2, gap 0 2, insets 0 0 2 0, ax right, ay center"
-        ));
         setLayout();
-
-        setOpaque(false);
     }
 
     private IDialButtonHandler getStyleHandler() {
