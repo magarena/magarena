@@ -14,6 +14,7 @@ import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
+import magic.ui.screen.cardflow.FlashTextOverlay;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.canvas.CardsCanvas;
@@ -33,17 +34,21 @@ public class MulliganScreen extends HeaderFooterScreen
 
     private volatile static boolean isActive = false;
 
+    private MulliganLayeredPane layeredPane;
     private CardsCanvas cardsCanvas;
     private MulliganChoicePanel choicePanel;
     private final MagicCardList hand;
     private final OptionsPanel optionsPanel;
+    private final FlashTextOverlay flashOverlay;
 
     public MulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         super(MText.get(_S1));
         this.choicePanel = choicePanel;
         this.hand = hand;
+        flashOverlay = new FlashTextOverlay(600, 60);
         isActive = true;
-        setMainContent(getScreenContent(hand));
+        layeredPane = new MulliganLayeredPane(getScreenContent(hand), flashOverlay);
+        setMainContent(layeredPane);
         optionsPanel = new OptionsPanel(this);
         setHeaderContent(new HeaderPanel(choicePanel.getGameController().getGame()));
         setHeaderOptions(optionsPanel);
@@ -150,10 +155,13 @@ public class MulliganScreen extends HeaderFooterScreen
         new CardImageOverlay(card);
     }
 
+    void flashLayoutSetting() {
+        flashOverlay.flashText(HandZoneLayout.getLayout().getDisplayName());
+    }
+
     void setCardsLayout(int ordinal) {
         HandZoneLayout.setLayout(ordinal);
         setCardsLayout();
+        flashLayoutSetting();
     }
-
-
 }

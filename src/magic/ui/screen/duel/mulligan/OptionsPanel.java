@@ -115,6 +115,6 @@ class OptionsPanel extends JPanel
 
     @Override
     public void onMouseEntered(int dialPosition) {
-        //System.out.println(HandZoneLayout.values()[dialPosition]);
+        screen.flashLayoutSetting();
     }
 }
