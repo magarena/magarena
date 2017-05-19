@@ -1,5 +1,8 @@
 package magic;
 
+import java.awt.DisplayMode;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
@@ -26,6 +29,7 @@ import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
 import magic.utility.ProgressReporter;
+import org.pushingpixels.trident.TridentConfig;
 
 public class MagicMain {
 
@@ -63,12 +67,68 @@ public class MagicMain {
         SwingUtilities.invokeLater(() -> { startUI(cmdline); });
     }
 
+
+    private static void printRefreshRate() {
+        System.out.println("=== Screen devices refresh rates ===");
+        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsDevice[] gs = ge.getScreenDevices();
+        for (int i = 0; i < gs.length; i++) {
+            DisplayMode dm = gs[i].getDisplayMode();
+            int refreshRate = dm.getRefreshRate();
+            if (refreshRate == DisplayMode.REFRESH_RATE_UNKNOWN) {
+                System.err.printf("[%d] Unknown rate\n", i);
+            } else {
+                System.out.printf("[%d] %d Hz", i, refreshRate);
+                System.out.println();
+            }
+        }
+    }
+
+
+    /**
+     * Sets custom pulse behavior - higher frame rate, lower frame rate or dynamic frame rate.
+     * <p>
+     * By default, Trident timelines are driven by a dedicated thread that wakes up every 40ms and
+     * updates all the timelines. When the CPU is not heavily used this results in 25 frames-per-second
+     * refresh rate for Trident-driven UI animations - consistent with the frame rate of theatrical films
+     * and non-interlaced PAL television standard.
+     * <p>
+     * (see https://kenai.com/projects/trident/pages/CustomPulseSource)
+     *
+     * Must be run before any instance of Timeline is created in the application otherwise it will
+     * generate the "cannot replace the pulse source thread once it's running..." error.
+     */
+    private static void setTridentFPS(int fps) {
+        long sleepMs = 1000L / fps;
+        try {
+            TridentConfig.getInstance().setPulseSource(() -> {
+                try {
+                    Thread.sleep(sleepMs);
+                } catch (InterruptedException ex) {
+                    LOGGER.log(Level.WARNING, null, ex);
+                }
+            });
+        } catch (RuntimeException ex) {
+            LOGGER.log(Level.WARNING, ex.getMessage());
+        }
+    }
+
     private static void parseCommandLine(CommandLineArgs cmdline) {
 
         if (cmdline.showHelp()) {
             System.err.println("--help specified - opening wiki page and exit...\n" + WikiPage.COMMAND_LINE.getUrl());
             WikiPage.show(WikiPage.COMMAND_LINE);
             System.exit(0);
+        }
+
+        if (cmdline.showFPS()) {
+            printRefreshRate();
+            System.exit(0);
+        }
+
+        if (cmdline.getFPS() > 0) {
+            setTridentFPS(cmdline.getFPS());
+            System.out.println("Trident FPS = " + cmdline.getFPS());
         }
 
         MagicAnimations.setEnabled(cmdline.isAnimationsEnabled());

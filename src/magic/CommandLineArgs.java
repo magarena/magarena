@@ -20,6 +20,8 @@ class CommandLineArgs {
     private boolean showHelp = false;
     private String deck1 = "";
     private String deck2 = "";
+    private boolean showFps = false;
+    private int fps;
 
     CommandLineArgs(final String[] args) {
 
@@ -67,6 +69,14 @@ class CommandLineArgs {
             //
             // other settings.
             //
+            case "--fps": // sets the desired frames-per-second for the Trident animation library.
+                fps = Integer.parseInt(args[i + 1].trim());
+                break;
+
+            case "--showfps": // displays refresh rate in hertz for each screen device.
+                showFps = true;
+                break;
+
             case "--nofx": // turns off gameplay animations for session (does not change preferences).
                 isAnimationsEnabled = false;
                 break;
@@ -177,6 +187,14 @@ class CommandLineArgs {
 
     String getDeck2() {
         return deck2;
+    }
+
+    boolean showFPS() {
+        return showFps;
+    }
+
+    int getFPS() {
+        return fps;
     }
 
 }
