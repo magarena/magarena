@@ -29,7 +29,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
     // translatable strings
     @StringContext(eg = "as in 'Other' player zone")
-    private static final String _S1 = "Choose a card";
+    private static final String _S1 = "Other";
     private static final String _S2 = "Other : %s";
     private static final String _S3 = "%s Hand";
     private static final String _S4 = "%s Graveyard";
@@ -74,7 +74,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), "");
         tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), "");
         tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), "");
-        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
+        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), MText.get(_S2, getUserPlayer().getName()));
         // this is used if the players are switched (ie. using the 'S' key).
         tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
 //        add(tabSelector, BorderLayout.WEST);
@@ -92,10 +92,9 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         setSelectedTab(selectedTab, false);
     }
 
-    public void showCardsToChoose(MagicCardList cards) {
+    public void showCardsToChoose(final MagicCardList cards) {
         cardsToChoose.clear();
         cardsToChoose.addAll(cards);
-        setSelectedTab(5);
     }
 
     public void update() {
@@ -221,7 +220,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         } else if (newPlayerZoneIndex == 4) {
             controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.EXILE);
         } else if (newPlayerZoneIndex == 5) {
-            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.CHOICE);
+            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.LIBRARY);
         } else if (newPlayerZoneIndex == 6) {
             controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.HAND);
         }
@@ -301,12 +300,6 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
                 break;
             default:
                 // do ntohing
-        }
-    }
-
-    public void showChoiceViewerIfActive() {
-        if (!cardsToChoose.isEmpty()) {
-            setSelectedTab(5);
         }
     }
 

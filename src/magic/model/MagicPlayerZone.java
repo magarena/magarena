@@ -8,8 +8,7 @@ public enum MagicPlayerZone {
     HAND(MagicPlayerZoneStrings._S1, MagicIcon.HAND_ZONE),
     LIBRARY(MagicPlayerZoneStrings._S2, MagicIcon.LIBRARY_ZONE),
     GRAVEYARD(MagicPlayerZoneStrings._S3, MagicIcon.GRAVEYARD_ZONE),
-    EXILE(MagicPlayerZoneStrings._S4, MagicIcon.EXILE_ZONE),
-    CHOICE("", null);
+    EXILE(MagicPlayerZoneStrings._S4, MagicIcon.EXILE_ZONE);
 
     private final String zoneName;
     private final MagicIcon zoneIcon;

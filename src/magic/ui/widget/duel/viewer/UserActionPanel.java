@@ -110,7 +110,6 @@ public class UserActionPanel extends JPanel implements ActionListener {
             @Override
             public void mouseEntered(MouseEvent e) {
                 controller.showChoiceCardPopup();
-                controller.getPlayerZoneViewer().showChoiceViewerIfActive();
             }
         });
 
