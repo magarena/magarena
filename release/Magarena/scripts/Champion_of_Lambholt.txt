@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{G}{G}
 pt=1/1
-ability=Creatures your opponents control with power less than SN's power can't block creatures.;\
+ability=Creatures your opponents control with power less than SN's power can't block.;\
         Whenever another creature enters the battlefield under your control, put a +1/+1 counter on SN.
 timing=main
 oracle=Creatures with power less than Champion of Lambholt's power can't block creatures you control.\nWhenever another creature enters the battlefield under your control, put a +1/+1 counter on Champion of Lambholt.
