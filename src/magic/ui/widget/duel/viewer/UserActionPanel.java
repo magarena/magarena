@@ -67,6 +67,12 @@ public class UserActionPanel extends JPanel implements ActionListener {
         actionPanel.add(emptyLabel,"0");
 
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        imageLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                controller.showChoiceCardPopup();
+            }
+        });
         actionPanel.add(imageLabel, "4");
 
         busyItem = new ImageThrobber.Builder(BUSY_IMAGE)
