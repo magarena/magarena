@@ -34,8 +34,7 @@ import magic.ui.widget.throbber.ImageThrobber;
 public class UserActionPanel extends JPanel implements ActionListener {
 
     private static final BufferedImage BUSY_IMAGE = ImageHelper.getBufferedImage(
-        (ImageIcon) ImageHelper.getRecoloredIcon(
-            MagicIcon.AI_THINKING, Color.BLACK, Color.GRAY)
+        ImageHelper.getRecoloredIcon(MagicIcon.AI_THINKING, Color.BLACK, Color.GRAY)
     );
 
     public static final int TEXT_WIDTH=230;

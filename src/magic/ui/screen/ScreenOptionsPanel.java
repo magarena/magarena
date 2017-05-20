@@ -33,7 +33,7 @@ public abstract class ScreenOptionsPanel extends JPanel {
             }
         });
 
-        closeButton = new ActionBarButton((ImageIcon) MENU_ICON, new AbstractAction() {
+        closeButton = new ActionBarButton(MENU_ICON, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 doToggleMenuOptions();
