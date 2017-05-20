@@ -18,6 +18,7 @@ import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.MScreen;
 import magic.ui.screen.deck.editor.IDeckEditorClient;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
@@ -273,5 +274,14 @@ public class DuelDecksScreen extends HeaderFooterScreen
     void setCardsTableStyle(int dialPosition) {
         CardsTableStyle.setStyle(dialPosition);
         screenContent.setCardsTableStyle();
+    }
+
+    @Override
+    public boolean isScreenReadyToClose(MScreen nextScreen) {
+        if (super.isScreenReadyToClose(nextScreen)) {
+            CardsTableStyle.save();
+            return true;
+        }
+        return false;
     }
 }
