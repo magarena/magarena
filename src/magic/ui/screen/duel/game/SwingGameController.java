@@ -312,6 +312,7 @@ public class SwingGameController implements IUIGameController {
             choiceClicked = MagicTargetNone.getInstance();
             setSourceCardDefinition(MagicSource.NONE);
             clearValidChoices();
+            clearCardsToChoose();
             resume(true);
         }
     }
@@ -473,7 +474,7 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void clearCardsToChoose() {
-        showCardsToChoose(new MagicCardList());
+        showCardsToChoose(MagicCardList.NONE);
     }
 
     @Override

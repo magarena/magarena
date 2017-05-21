@@ -7,6 +7,8 @@ import java.util.List;
 @SuppressWarnings("serial")
 public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable {
 
+    public static final MagicCardList NONE = new MagicCardList();
+
     public MagicCardList() {}
 
     public MagicCardList(final List<MagicCard> cardList) {

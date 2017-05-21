@@ -73,7 +73,9 @@ public class BattlefieldPanel extends JPanel {
 
     public void showCardsToChoose(final MagicCardList cards) {
         playerZoneViewer.showCardsToChoose(cards);
-        playerZoneViewer.setSelectedTab(5);
+        if (cards != MagicCardList.NONE) {
+            playerZoneViewer.setSelectedTab(5);
+        }
     }
 
     public void focusViewers(int handGraveyard) {
