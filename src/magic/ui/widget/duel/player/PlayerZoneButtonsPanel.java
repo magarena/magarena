@@ -49,9 +49,16 @@ public class PlayerZoneButtonsPanel extends JPanel {
                 MagicPlayerZone.EXILE, playerInfo.exile.size(), true)
         );
 
+        // hidden zone button that is activated whenever player is
+        // required to choose one or more cards.
+        zoneButtons.put(MagicPlayerZone.CHOICE, getZoneToggleButton(
+                MagicPlayerZone.CHOICE, 0, true)
+        );
+        zoneButtons.get(MagicPlayerZone.CHOICE).setVisible(false);
+
         setLayout(new MigLayout("insets 0 2 0 0"));
         for (ZoneToggleButton button : zoneButtons.values()) {
-            add(button);
+            add(button, "hidemode 3");
         }
 
         setOpaque(false);
