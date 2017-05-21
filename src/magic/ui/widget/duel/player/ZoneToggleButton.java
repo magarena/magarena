@@ -12,14 +12,17 @@ import java.awt.RenderingHints;
 import java.awt.Stroke;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import java.util.Set;
 import javax.swing.JToggleButton;
 import magic.data.MagicIcon;
+import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
-import magic.ui.helpers.ImageHelper;
 import magic.ui.MagicImages;
+import magic.ui.helpers.ImageHelper;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.duel.animation.MagicAnimations;
-import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 
 
@@ -46,6 +49,8 @@ public class ZoneToggleButton extends JToggleButton {
     private boolean animateOnChange = false;
     private boolean isActive = false;
     private boolean isHighlighted = false;
+    private boolean hasChoices = false;
+    private MagicCardList cards;
 
     public int getImageOffset() {
         return imageOffset;
@@ -57,25 +62,24 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     // CTR
-    private ZoneToggleButton(final MagicPlayerZone zone, final int cardCount, final ValueStyle valueStyle, final boolean isActive) {
-
+    private ZoneToggleButton(final MagicPlayerZone zone, final MagicCardList cards, final ValueStyle valueStyle, final boolean isActive) {
         this.playerZone = zone;
         this.magicIcon = zone.getIcon();
         this.valueStyle = valueStyle;
         this.animateOnChange = true;
         this.isActive = isActive;
+        setCards(cards);
         setToolTipText(zone.getName());
         setEnabled(false);
         setFocusable(false);
         setRolloverEnabled(false);
         setContentAreaFilled(false);
-        setNumberOfCardsInZone(cardCount);
         setMinimumSize(new Dimension(40, 60));
     }
 
     // CTR
-    ZoneToggleButton(final MagicPlayerZone playerZone, final int cardCount, final boolean isActive) {
-        this(playerZone, cardCount, ValueStyle.NORMAL, isActive);
+    ZoneToggleButton(final MagicPlayerZone playerZone, final MagicCardList cards, final boolean isActive) {
+        this(playerZone, cards, ValueStyle.NORMAL, isActive);
     }
 
     public MagicPlayerZone getPlayerZone() {
@@ -100,6 +104,10 @@ public class ZoneToggleButton extends JToggleButton {
         }
 
         drawZoneValueOverlay((Graphics2D)g, cardCountString, x, getHeight(), image);
+
+        if (hasChoices) {
+            drawSelectedRoundBorder(g, MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_BORDER));
+        }
 
         if (isSelected()) {
             drawSelectedRoundBorder(g);
@@ -154,7 +162,12 @@ public class ZoneToggleButton extends JToggleButton {
         }
     }
 
-    final void setNumberOfCardsInZone(final int cardCount) {
+    final void setCards(final MagicCardList cards) {
+        this.cards = cards;
+        setNumberOfCardsInZone(cards.size());
+    }
+
+    private void setNumberOfCardsInZone(final int cardCount) {
         final boolean isModified = !Integer.toString(cardCount).equals(cardCountString);
         cardCountString = Integer.toString(cardCount);
         if (isModified) {
@@ -193,6 +206,15 @@ public class ZoneToggleButton extends JToggleButton {
             }
             repaint();
         }
+    }
+
+    void setValidChoices(Set<?> validChoices) {
+        hasChoices = cards.stream().anyMatch(card -> validChoices.contains(card));
+        repaint();
+    }
+
+    boolean isNot(MagicPlayerZone aZone) {
+        return playerZone != aZone;
     }
 
 }

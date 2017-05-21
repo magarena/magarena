@@ -85,6 +85,11 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
 
     @Override
     public void showValidChoices(Set<?> validChoices) {
+
+        if (playerInfo.isHuman()) {
+            zoneButtonsPanel.showValidChoices(validChoices);
+        }
+
         final boolean isValid = isThisPlayerValidChoice(validChoices);
         if (GeneralConfig.getInstance().showGameplayAnimations()) {
             avatarPanel.doPulsingBorderAnimation(isValid);

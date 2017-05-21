@@ -8,9 +8,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
 import magic.translate.MText;
 import magic.ui.ScreenController;
@@ -40,19 +42,19 @@ public class PlayerZoneButtonsPanel extends JPanel {
         zoneButtons = new LinkedHashMap<>();
         zoneButtons.put(MagicPlayerZone.LIBRARY, getLibraryZoneButton(playerInfo));
         zoneButtons.put(MagicPlayerZone.HAND, getZoneToggleButton(
-                MagicPlayerZone.HAND, playerInfo.hand.size(), true)
+                MagicPlayerZone.HAND, playerInfo.hand, true)
         );
         zoneButtons.put(MagicPlayerZone.GRAVEYARD, getZoneToggleButton(
-                MagicPlayerZone.GRAVEYARD, playerInfo.graveyard.size(), true)
+                MagicPlayerZone.GRAVEYARD, playerInfo.graveyard, true)
         );
         zoneButtons.put(MagicPlayerZone.EXILE, getZoneToggleButton(
-                MagicPlayerZone.EXILE, playerInfo.exile.size(), true)
+                MagicPlayerZone.EXILE, playerInfo.exile, true)
         );
 
         // hidden zone button that is activated whenever player is
         // required to choose one or more cards.
         zoneButtons.put(MagicPlayerZone.CHOICE, getZoneToggleButton(
-                MagicPlayerZone.CHOICE, 0, true)
+                MagicPlayerZone.CHOICE, MagicCardList.NONE, true)
         );
         zoneButtons.get(MagicPlayerZone.CHOICE).setVisible(false);
 
@@ -68,7 +70,7 @@ public class PlayerZoneButtonsPanel extends JPanel {
     private ZoneToggleButton getLibraryZoneButton(PlayerViewerInfo player) {
         ZoneToggleButton btn = getZoneToggleButton(
             MagicPlayerZone.LIBRARY,
-            player.library.size(),
+            player.library,
             false
         );
         btn.setToolTipText(
@@ -95,9 +97,9 @@ public class PlayerZoneButtonsPanel extends JPanel {
         return btn;
     }
 
-    private ZoneToggleButton getZoneToggleButton(final MagicPlayerZone zone, final int cardCount, final boolean isActive) {
+    private ZoneToggleButton getZoneToggleButton(final MagicPlayerZone zone, final MagicCardList cards, final boolean isActive) {
 
-        final ZoneToggleButton btn = new ZoneToggleButton(zone, cardCount, isActive);
+        final ZoneToggleButton btn = new ZoneToggleButton(zone, cards, isActive);
         btn.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
@@ -123,10 +125,10 @@ public class PlayerZoneButtonsPanel extends JPanel {
     void updateDisplay(final PlayerViewerInfo playerInfo) {
         this.playerInfo = playerInfo;
         if (playerInfo != null) {
-            zoneButtons.get(MagicPlayerZone.HAND).setNumberOfCardsInZone(playerInfo.hand.size());
-            zoneButtons.get(MagicPlayerZone.LIBRARY).setNumberOfCardsInZone(playerInfo.library.size());
-            zoneButtons.get(MagicPlayerZone.GRAVEYARD).setNumberOfCardsInZone(playerInfo.graveyard.size());
-            zoneButtons.get(MagicPlayerZone.EXILE).setNumberOfCardsInZone(playerInfo.exile.size());
+            zoneButtons.get(MagicPlayerZone.HAND).setCards(playerInfo.hand);
+            zoneButtons.get(MagicPlayerZone.LIBRARY).setCards(playerInfo.library);
+            zoneButtons.get(MagicPlayerZone.GRAVEYARD).setCards(playerInfo.graveyard);
+            zoneButtons.get(MagicPlayerZone.EXILE).setCards(playerInfo.exile);
         }
     }
 
@@ -158,6 +160,17 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
     void doHighlightPlayerZone(MagicPlayerZone zone, boolean b) {
         zoneButtons.get(zone).doHighlight(b);
+    }
+
+    private boolean isValidChoiceButton(ZoneToggleButton btn) {
+        return btn.isNot(MagicPlayerZone.LIBRARY)
+            && btn.isNot(MagicPlayerZone.CHOICE);
+    }
+
+    void showValidChoices(Set<?> validChoices) {
+        zoneButtons.values().stream()
+            .filter(btn -> isValidChoiceButton(btn))
+            .forEach(btn -> btn.setValidChoices(validChoices));
     }
 
 }
