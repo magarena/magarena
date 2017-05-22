@@ -4,8 +4,8 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
-import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -25,15 +25,15 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicType;
+import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
-import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.ImageDrawingUtils;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class ImagePermanentViewer extends JPanel {
@@ -59,21 +59,26 @@ public class ImagePermanentViewer extends JPanel {
     private static int currentCardIndex = -1;
     private long highlightedId = 0;
 
-    public ImagePermanentViewer(final ImagePermanentsViewer viewer,final PermanentViewerInfo permanentInfo) {
-        this.viewer=viewer;
-        this.permanentInfo=permanentInfo;
-        linkedInfos=new ArrayList<PermanentViewerInfo>();
-        buildLinkedPermanents(linkedInfos,permanentInfo);
-        linkedLogicalRectangles=new ArrayList<Rectangle>();
-        logicalSize=calculateLogicalSize(linkedLogicalRectangles);
-        linkedScreenRectangles=Collections.emptyList();
+    // TEMP DEBUG ONLY. Can be used to compare the performance
+    // between using a cached image versus creating an image from
+    // scratch each time paintComponent() is called.
+    private static final boolean USE_CACHED_IMAGE = true;
 
+    private BufferedImage cachedImage;
+
+    public ImagePermanentViewer(final ImagePermanentsViewer viewer, final PermanentViewerInfo permanentInfo) {
+        this.viewer = viewer;
+        this.permanentInfo = permanentInfo;
+        linkedInfos = new ArrayList<>();
+        buildLinkedPermanents(linkedInfos, permanentInfo);
+        linkedLogicalRectangles = new ArrayList<>();
+        logicalSize = calculateLogicalSize(linkedLogicalRectangles);
+        linkedScreenRectangles = Collections.emptyList();
         setOpaque(false);
 
         setMouseListener();
         setMouseMotionListener();
         setMouseWheelListener();
-
     }
 
     private void setMouseWheelListener() {
@@ -109,7 +114,7 @@ public class ImagePermanentViewer extends JPanel {
                 }
                 currentCardIndex = cardIndex;
                 if (linkedScreenRectangles.size() > 1) {
-                    repaint();
+                    redrawCachedImage();
                 }
             }
         });
@@ -142,12 +147,12 @@ public class ImagePermanentViewer extends JPanel {
                 viewer.getController().hideInfo();
                 currentCardIndex = -1;
                 isMouseOver = false;
-                repaint();
+                redrawCachedImage();
             }
             @Override
             public void mouseEntered(MouseEvent e) {
                 isMouseOver = true;
-                repaint();
+                redrawCachedImage();
             }
         });
     }
@@ -214,6 +219,7 @@ public class ImagePermanentViewer extends JPanel {
             screenRect.height=(logicalRect.height*height)/logicalSize.height;
             linkedScreenRectangles.add(screenRect);
         }
+        createCachedImage();
     }
 
     public int getPosition() {
@@ -248,8 +254,7 @@ public class ImagePermanentViewer extends JPanel {
         g2d.translate(-x1, -y1);
     }
 
-    @Override
-    public void paintComponent(final Graphics g) {
+    private void drawPermanent(final Graphics g) {
 
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics = g.getFontMetrics();
@@ -386,6 +391,18 @@ public class ImagePermanentViewer extends JPanel {
         }
     }
 
+    @Override
+    public void paintComponent(final Graphics g) {
+        if (USE_CACHED_IMAGE) {
+            if (cachedImage == null) {
+                createCachedImage();
+            }
+            g.drawImage(cachedImage, 0, 0, null);
+        } else {
+            drawPermanent(g);
+        }
+    }
+
     /**
      * draw filled rectangle using translucent color over visible portion of card.
      */
@@ -412,6 +429,23 @@ public class ImagePermanentViewer extends JPanel {
 
     void doShowHighlight(long id) {
         highlightedId = id;
+        redrawCachedImage();
+    }
+
+    private void createCachedImage() {
+        cachedImage = ImageHelper.getCompatibleBufferedImage(
+            logicalSize.width, logicalSize.height, BufferedImage.TRANSLUCENT);
+        Graphics2D g2d = cachedImage.createGraphics();
+        drawPermanent(g2d);
+        g2d.dispose();
+    }
+
+    /**
+     * Should be called whenever the permanent's visual state changes
+     * (eg. tapped/untapped, new ability/mana icon, highlight, etc).
+     */
+    void redrawCachedImage() {
+        createCachedImage();
         repaint();
     }
 

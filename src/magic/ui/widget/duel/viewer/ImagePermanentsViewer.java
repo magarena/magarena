@@ -1,6 +1,5 @@
 package magic.ui.widget.duel.viewer;
 
-import magic.ui.duel.viewerinfo.PermanentViewerInfo;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.ArrayList;
@@ -10,9 +9,10 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.duel.viewerinfo.CardViewerInfo;
+import magic.ui.duel.viewerinfo.PermanentViewerInfo;
+import magic.ui.screen.duel.game.SwingGameController;
 
 @SuppressWarnings("serial")
 public class ImagePermanentsViewer extends JPanel {
@@ -212,7 +212,7 @@ public class ImagePermanentsViewer extends JPanel {
     public void showValidChoices(final Set<?> aValidChoices) {
         this.validChoices=aValidChoices;
         for (final ImagePermanentViewer viewer : viewers) {
-            viewer.repaint();
+            viewer.redrawCachedImage();
         }
     }
 
