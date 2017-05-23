@@ -209,7 +209,6 @@ public class ImagePermanentViewer extends JPanel {
     @Override
     public void setSize(final int width,final int height) {
         super.setSize(width,height);
-
         linkedScreenRectangles=new ArrayList<Rectangle>();
         for (final Rectangle logicalRect : linkedLogicalRectangles) {
             final Rectangle screenRect=new Rectangle();
@@ -219,7 +218,7 @@ public class ImagePermanentViewer extends JPanel {
             screenRect.height=(logicalRect.height*height)/logicalSize.height;
             linkedScreenRectangles.add(screenRect);
         }
-        createCachedImage();
+        cachedImage = null;
     }
 
     public int getPosition() {
@@ -395,6 +394,8 @@ public class ImagePermanentViewer extends JPanel {
     public void paintComponent(final Graphics g) {
         if (USE_CACHED_IMAGE) {
             if (cachedImage == null) {
+                // this should be the only call to createCachedImage().
+                // https://github.com/magarena/magarena/issues/1127#issuecomment-303268704
                 createCachedImage();
             }
             g.drawImage(cachedImage, 0, 0, null);
@@ -445,7 +446,7 @@ public class ImagePermanentViewer extends JPanel {
      * (eg. tapped/untapped, new ability/mana icon, highlight, etc).
      */
     void redrawCachedImage() {
-        createCachedImage();
+        cachedImage = null;
         repaint();
     }
 
