@@ -306,4 +306,10 @@ final public class MagicSystem {
         return Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME)) == false;
     }
 
+    public static boolean isNotNormalGame() {
+        return MagicSystem.isAiVersusAi()
+            || MagicSystem.isDevMode()
+            || MagicSystem.isTestGame();
+    }
+
 }

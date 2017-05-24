@@ -15,6 +15,7 @@ import magic.model.MagicPlayerZone;
 import magic.translate.MText;
 import magic.translate.StringContext;
 import magic.ui.MagicImages;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.helpers.ImageHelper;
@@ -205,10 +206,15 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
     }
 
-    public void setPlayerZone(final PlayerViewerInfo playerInfo, final MagicPlayerZone zone) {
-        final int tabIndex = getZoneButtonIndex(playerInfo, zone);
-        final boolean showFullScreen = tabSelector.getSelectedTab() == tabIndex;
-        setSelectedTab(tabIndex, showFullScreen);
+    public void setPlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        int tabIndex = getZoneButtonIndex(playerInfo, zone);
+        if (tabSelector.getSelectedTab() != tabIndex) {
+            setSelectedTab(tabIndex, false);
+        } else if (tabIndex != 6 || MagicSystem.isNotNormalGame()) {
+            setSelectedTab(tabIndex, true);
+        } else {
+            MagicSound.BEEP.play();
+        }
     }
 
     private void notifyPlayerZoneListeners(final int newPlayerZoneIndex) {
