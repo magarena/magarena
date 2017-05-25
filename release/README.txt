@@ -75,6 +75,30 @@ Thank you for your support and have fun!
 Release 1.85 (May 31, 2017)
 ============
 
+- changed/added the following to the user interface:
+  * show and switch player zones using keys, 1 or Z (hand), 2 or X (graveyard) and 3 or C (exile).
+  * optimized battlefield graphics for smoother animation (see also --fps command line parameter).
+  * highlight player zone button if it contains a valid choice. (issue #239).
+  * right click dial option button to turn anti-clockwise.
+  * new M-circle icon for menu/options button.
+  * new command-line parameters (see https://github.com/magarena/magarena/wiki/Command-line-arguments).
+  * show alternative card-flow screen by clicking on card image in screens showing tiled card images.
+  * enables the library zone button but only in dev and test modes.
+  * remove the vertical zone button bar from battlefield.
+  * restores display of cards choice when mouse enters the user prompt. (issue #559)
+  * shows opponent hand cards face down unless devmode or test game. (issue #217)
+  * show thumbnail image of triggering card in user prompt as visual cue.
+  * display the popup image for the card associated with a user prompt above cards in player zone.
+  * display random avatar image if missing - useful in test and AI vs AI games.
+  * displays the deck name and type in the Library zone icon tooltip.
+  * add work-in-progress menu accessible from devmode menu.
+  * change border color of devmode menu as a visual indicator.
+  * add setting to switch between stacked and unstacked layouts in mulligan and sample hand screens. (issue #1115)
+   
+- fixed the following bugs:  
+  * cards table style not saved when set in duel decks screen. (issue #1110)
+  * sample hand button in duel decks screen shows wrong cards. (issue #1122)
+
 
 Release 1.84 (April 30, 2017)
 ============
