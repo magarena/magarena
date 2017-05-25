@@ -172,7 +172,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         if (zoneChanged || showFullScreenZone) {
             update(showFullScreenZone);
             if (zoneChanged) {
-                notifyPlayerZoneListeners(Integer.parseInt(btn.getActionCommand()));
+                notifyPlayerZoneListeners(TabSelector.getTabIndex(btn));
             }
         }
 
@@ -181,7 +181,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     }
 
     public void setPlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        int tabIndex = getZoneButtonIndex(playerInfo, zone);
+        int tabIndex = tabSelector.getTabIndex(zone, playerInfo.getPlayerIndex());
         if (tabSelector.getSelectedTab() != tabIndex) {
             setSelectedTab(tabIndex, false);
         } else if (tabIndex != 6 || MagicSystem.isNotNormalGame()) {
@@ -229,61 +229,16 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         return controller.getGameViewerInfo().getOpponent();
     }
 
-    private int getZoneButtonIndex(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        if (playerInfo.player == getUserPlayer().player) {
-            switch (zone) {
-                case HAND:
-                    return 0;
-                case GRAVEYARD:
-                    return 1;
-                case EXILE:
-                    return 3;
-                case LIBRARY:
-                    return 5;
-                default:
-                    throw new RuntimeException("No zone viewer available!");
-            }
-        } else {
-            switch (zone) {
-                case HAND:
-                    return 6;
-                case GRAVEYARD:
-                    return 2;
-                case EXILE:
-                    return 4;
-                default:
-                    throw new RuntimeException("No zone viewer available!");
-            }
-        }
-    }
-
     public ImageCardListViewer getImageCardsListViewer() {
         return imageCardsListViewer;
     }
 
+    public void setOrSwitchZone(MagicPlayerZone aZone) {
+        tabSelector.setOrSwitchZone(aZone);
+    }
+
     public void switchPlayerZone() {
-        switch (Integer.parseInt(selectedTab.getActionCommand())) {
-            case 0: // P0 hand
-                setSelectedTab(6);
-                break;
-            case 1: // P0 graveyard
-                setSelectedTab(2);
-                break;
-            case 2: // P1 graveyard
-                setSelectedTab(1);
-                break;
-            case 3: // P0 exile
-                setSelectedTab(4);
-                break;
-            case 4: // P1 exile
-                setSelectedTab(3);
-                break;
-            case 6: // P1 hand
-                setSelectedTab(0);
-                break;
-            default:
-                // do ntohing
-        }
+        setOrSwitchZone(tabSelector.getZone());
     }
 
     public void showChoiceViewerIfActive() {

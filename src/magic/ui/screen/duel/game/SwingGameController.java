@@ -153,9 +153,6 @@ public class SwingGameController implements IUIGameController {
         KeyEventAction.doAction(gamePanel, this::passKeyPressed)
             .on(InputEvent.SHIFT_MASK, KeyEvent.VK_RIGHT, KeyEvent.VK_SPACE);
 
-        KeyEventAction.doAction(gamePanel, this::switchPlayerZone)
-            .on(0, KeyEvent.VK_S);
-
         KeyEventAction.doAction(gamePanel, this::showLogScreen)
             .on(0, KeyEvent.VK_L);
 
@@ -165,6 +162,15 @@ public class SwingGameController implements IUIGameController {
         KeyEventAction.doAction(gamePanel, this::switchLogStackLayout)
             .on(0, KeyEvent.VK_M);
 
+        // switch & set player zones.
+        KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.switchPlayerZone())
+            .on(0, KeyEvent.VK_S);
+        KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.setOrSwitchZone(MagicPlayerZone.HAND))
+            .on(0, KeyEvent.VK_1, KeyEvent.VK_Z);
+        KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.setOrSwitchZone(MagicPlayerZone.GRAVEYARD))
+            .on(0, KeyEvent.VK_2, KeyEvent.VK_X);
+        KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.setOrSwitchZone(MagicPlayerZone.EXILE))
+            .on(0, KeyEvent.VK_3, KeyEvent.VK_C);
     }
 
     private void setControlKeyMonitor() {
@@ -270,10 +276,6 @@ public class SwingGameController implements IUIGameController {
 
     private void resume(final boolean undoClicked) {
         input.offer(undoClicked);
-    }
-
-    public void switchPlayerZone() {
-        playerZoneViewer.switchPlayerZone();
     }
 
     public void passKeyPressed() {
