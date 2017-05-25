@@ -4,11 +4,14 @@ import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
@@ -32,6 +35,15 @@ public class PlayerZoneButtonsPanel extends JPanel {
     private final Map<MagicPlayerZone, ZoneToggleButton> zoneButtons;
     private final SwingGameController controller;
     private PlayerViewerInfo playerInfo;
+
+    public static int[] getKeyBindings(MagicPlayerZone aZone) {
+        switch (aZone) {
+            case HAND: return new int[]{KeyEvent.VK_1, KeyEvent.VK_Z};
+            case GRAVEYARD: return new int[]{KeyEvent.VK_2, KeyEvent.VK_X};
+            case EXILE: return new int[]{KeyEvent.VK_3, KeyEvent.VK_C};
+            default: return new int[]{};
+        }
+    }
 
     public PlayerZoneButtonsPanel(final PlayerViewerInfo playerInfo, final SwingGameController controller) {
 
@@ -97,6 +109,15 @@ public class PlayerZoneButtonsPanel extends JPanel {
         return btn;
     }
 
+    private String getTooltipText(MagicPlayerZone aZone) {
+        String keyText = Arrays.stream(getKeyBindings(aZone))
+            .mapToObj(k -> KeyEvent.getKeyText(k))
+            .collect(Collectors.joining(","));
+        return keyText.isEmpty()
+            ? String.format("<html><b>%s</b></html>", aZone.getName())
+            : String.format("<html><b>%s</b> [%s]</html>", aZone.getName(), keyText);
+    }
+
     private ZoneToggleButton getZoneToggleButton(final MagicPlayerZone zone, final MagicCardList cards, final boolean isActive) {
 
         final ZoneToggleButton btn = new ZoneToggleButton(zone, cards, isActive);
@@ -118,6 +139,7 @@ public class PlayerZoneButtonsPanel extends JPanel {
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
         });
+        btn.setToolTipText(getTooltipText(zone));
         buttonGroup.add(btn);
         return btn;
     }

@@ -75,6 +75,7 @@ import magic.ui.widget.duel.choice.ModeChoicePanel;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.ui.widget.duel.choice.MultiKickerChoicePanel;
 import magic.ui.widget.duel.choice.PlayChoicePanel;
+import magic.ui.widget.duel.player.PlayerZoneButtonsPanel;
 import magic.ui.widget.duel.sidebar.LogStackViewer;
 import magic.ui.widget.duel.viewer.PlayerZoneViewer;
 import magic.ui.widget.duel.viewer.UserActionPanel;
@@ -166,11 +167,11 @@ public class SwingGameController implements IUIGameController {
         KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.switchPlayerZone())
             .on(0, KeyEvent.VK_S);
         KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.setOrSwitchZone(MagicPlayerZone.HAND))
-            .on(0, KeyEvent.VK_1, KeyEvent.VK_Z);
+            .on(0, PlayerZoneButtonsPanel.getKeyBindings(MagicPlayerZone.HAND));
         KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.setOrSwitchZone(MagicPlayerZone.GRAVEYARD))
-            .on(0, KeyEvent.VK_2, KeyEvent.VK_X);
+            .on(0, PlayerZoneButtonsPanel.getKeyBindings(MagicPlayerZone.GRAVEYARD));
         KeyEventAction.doAction(gamePanel, () -> playerZoneViewer.setOrSwitchZone(MagicPlayerZone.EXILE))
-            .on(0, KeyEvent.VK_3, KeyEvent.VK_C);
+            .on(0, PlayerZoneButtonsPanel.getKeyBindings(MagicPlayerZone.EXILE));
     }
 
     private void setControlKeyMonitor() {

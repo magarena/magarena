@@ -69,7 +69,6 @@ public class ZoneToggleButton extends JToggleButton {
         this.animateOnChange = true;
         this.isActive = isActive;
         setCards(cards);
-        setToolTipText(zone.getName());
         setEnabled(false);
         setFocusable(false);
         setRolloverEnabled(false);
