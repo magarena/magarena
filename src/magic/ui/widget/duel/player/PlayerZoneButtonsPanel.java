@@ -38,9 +38,9 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
     public static int[] getKeyBindings(MagicPlayerZone aZone) {
         switch (aZone) {
-            case HAND: return new int[]{KeyEvent.VK_1, KeyEvent.VK_Z};
-            case GRAVEYARD: return new int[]{KeyEvent.VK_2, KeyEvent.VK_X};
-            case EXILE: return new int[]{KeyEvent.VK_3, KeyEvent.VK_C};
+            case HAND: return new int[]{KeyEvent.VK_1, KeyEvent.VK_Z, KeyEvent.VK_NUMPAD1};
+            case GRAVEYARD: return new int[]{KeyEvent.VK_2, KeyEvent.VK_X, KeyEvent.VK_NUMPAD2};
+            case EXILE: return new int[]{KeyEvent.VK_3, KeyEvent.VK_C, KeyEvent.VK_NUMPAD3};
             default: return new int[]{};
         }
     }
