@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.BoxLayout;
-import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import magic.model.MagicPlayerZone;
 
 @SuppressWarnings("serial")
 public class TabSelector extends JPanel implements ActionListener {
@@ -64,9 +64,8 @@ public class TabSelector extends JPanel implements ActionListener {
         setSelectedTab(selectedTab, false);
     }
 
-    public void addTab(final ImageIcon icon,final String toolTip) {
-
-        final JToggleButton button=new JToggleButton(icon);
+    public void addTab(MagicPlayerZone zone, int player) {
+        final JToggleButton button = new JToggleButton();
         button.setToolTipText(null);
         button.setBackground(this.backgroundColor);
         button.setFocusable(false);
@@ -76,7 +75,7 @@ public class TabSelector extends JPanel implements ActionListener {
         buttons.add(button);
         buttonPanel.add(button);
 
-        if (buttons.size()==1) {
+        if (buttons.size() == 1) {
             showTab(button);
         }
     }

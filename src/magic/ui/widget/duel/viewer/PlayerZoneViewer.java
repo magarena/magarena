@@ -1,32 +1,23 @@
 package magic.ui.widget.duel.viewer;
 
 import java.awt.BorderLayout;
-import java.awt.image.BufferedImage;
-import java.util.HashMap;
-import java.util.Map;
-import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import magic.data.MagicIcon;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayerZone;
 import magic.translate.MText;
 import magic.translate.StringContext;
-import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
-import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.widget.TabSelector;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class PlayerZoneViewer extends JPanel implements ChangeListener {
-
-    private static final Map<MagicIcon, ImageIcon> tabIcons = getTabIcons();
 
     // translatable strings
     @StringContext(eg = "as in 'Other' player zone")
@@ -45,22 +36,6 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     private JToggleButton selectedTab = null;
     private final ImageCardListViewer imageCardsListViewer;
 
-    private static Map<MagicIcon, ImageIcon> getTabIcons() {
-        Map<MagicIcon, ImageIcon> icons = new HashMap<>();
-        icons.put(MagicIcon.HAND_ZONE, getTabIcon(MagicIcon.HAND_ZONE));
-        icons.put(MagicIcon.GRAVEYARD_ZONE, getTabIcon(MagicIcon.GRAVEYARD_ZONE));
-        icons.put(MagicIcon.EXILE_ZONE, getTabIcon(MagicIcon.EXILE_ZONE));
-        icons.put(MagicIcon.LIBRARY_ZONE, getTabIcon(MagicIcon.LIBRARY_ZONE));
-        return icons;
-    }
-
-    private static ImageIcon getTabIcon(MagicIcon icon) {
-        ImageIcon handIcon = MagicImages.getIcon(icon);
-        BufferedImage handImage = ImageHelper.getBufferedImage(handIcon);
-        BufferedImage scaledImage = ImageHelper.scale(handImage, 16, 16);
-        return new ImageIcon(scaledImage);
-    }
-
     public PlayerZoneViewer(final SwingGameController controller) {
 
         this.controller = controller;
@@ -70,14 +45,13 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         setLayout(new BorderLayout(6, 0));
 
         tabSelector = new TabSelector(this);
-        tabSelector.addTab(tabIcons.get(MagicIcon.HAND_ZONE), "");
-        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), "");
-        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), "");
-        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), "");
-        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), "");
-        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
-        // this is used if the players are switched (ie. using the 'S' key).
-        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), "");
+        tabSelector.addTab(MagicPlayerZone.HAND, 0);
+        tabSelector.addTab(MagicPlayerZone.GRAVEYARD, 0);
+        tabSelector.addTab(MagicPlayerZone.GRAVEYARD, 1);
+        tabSelector.addTab(MagicPlayerZone.EXILE, 0);
+        tabSelector.addTab(MagicPlayerZone.EXILE, 1);
+        tabSelector.addTab(MagicPlayerZone.LIBRARY, 0);
+        tabSelector.addTab(MagicPlayerZone.HAND, 1);
 //        add(tabSelector, BorderLayout.WEST);
 
         add(imageCardsListViewer, BorderLayout.CENTER);
