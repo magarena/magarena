@@ -10,6 +10,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.target.MagicOtherCardTargetFilter;
@@ -156,6 +157,14 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
                 return source.getController().getGraveyard().size() >= n;
+            }
+        };
+    }
+
+    public static MagicCondition GraveyardTypeAtLeast(final MagicType type, final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return MagicTargetFilterFactory.card(type).from(MagicTargetType.Graveyard).filter(source).size() >= n;
             }
         };
     }

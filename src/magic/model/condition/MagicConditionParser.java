@@ -10,6 +10,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
+import magic.model.MagicType;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetFilter;
@@ -347,6 +348,11 @@ public enum MagicConditionParser {
     MostCardsInHand("you have more cards in hand than each opponent") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.MOST_CARDS_IN_HAND_CONDITION;
+        }
+    },
+    CreaturesInGraveyardAtLeast4("(you have|there are) four or more creature cards in your graveyard") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.GraveyardTypeAtLeast(MagicType.Creature, 4);
         }
     },
     WarriorCardInGraveyard("a Warrior card is in your graveyard") {
