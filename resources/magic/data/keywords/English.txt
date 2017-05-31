@@ -1,12 +1,14 @@
 # 
 # Magarena keywords glossary.
 #
-# A blank like will be ignored.
-# A line starting with...
+# - A blank line will be ignored.
+#
+# - A line starting with...
 # '#' will be ignored.
 # '*' is the keyword definition.
-# '@' is a list of card names (semi-colon delimiter) demonstrating the keyword.
-# none of the above is assumed to be the keyword description.
+# '@' is an optional list of one or more card names (separated by a semi-colon) demonstrating the keyword.
+#
+# - none of the above is assumed to be the keyword description.
 #
 
 *Absorb N
