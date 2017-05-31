@@ -58,7 +58,7 @@
 2461835117 = Choisissez jusqu'à %d cartes
 1762410613 = Choisissez une carte
 0424192153 = Choisissez %d cartes
-3582684418 = ▫Proceed with \"may\" action?
+3582684418 = Procédez avec l'action \ pouvoir \"?
 1367094520 = Choisissez le mode.
 3689109508 = Jouez à une carte ou à une capacité.
 # 3864448769 eg. {f} will be replaced by an icon.
@@ -109,19 +109,19 @@
 1539499086 = S'il vous plaît envisager de soumettre un rapport d'incident afin que l'équipe de développement puisse enquêter.
 2659210019 = Souhaitez-vous ouvrir le répertoire des journaux de crash dans l'explorateur de fichiers?
 1060428211 = ▫life: %d \u2022 hand: %d
-1540598200 = ▫%d years ago
-1810074802 = ▫a year ago
-0841709928 = ▫%d months ago
-3985237059 = ▫a month ago
-1132922218 = ▫%d weeks ago
-2282236261 = ▫a week ago
-0857216086 = ▫%d days ago
-0040000040 = ▫a day ago
-3795409823 = ▫%d hours ago
-0261712171 = ▫an hour ago
-1751009867 = ▫%d minutes ago
-1050780815 = ▫a minute ago
-1237081127 = ▫a few seconds ago
+1540598200 = %d plusieurs années depuis
+1810074802 = une année depuis
+0841709928 = %d plusieurs mois depuis
+3985237059 = un mois depuis
+1132922218 = %d plusieurs semaines depuis
+2282236261 = une semaine depuis
+0857216086 = %d plusieurs jours depuis
+0040000040 = un jour depuis
+3795409823 = %d plusieurs heures depuis
+0261712171 = une heure depuis
+1751009867 = %d plusieurs minutes depuis
+1050780815 = une minute depuis
+1237081127 = plusieurs secondes depuis
 2276770895 = deck Adversaire
 2199494322 = Jeu
 2679471955 = Joueur
@@ -155,7 +155,7 @@
 3878951167 = Pourcentage maximal de sorts attribués aux cartes de créature.
 3239845433 = Nombre maximum de couleurs à utiliser dans le deck.
 3362129497 = Générateur de deck aléatoire
-1554441093 = ▫Card Pool:
+1554441093 = Regrouper Carte:
 3454679158 = Deck taille:
 0873057591 = Sorts (%):
 3034968918 = Max. Créatures (%):
@@ -221,15 +221,15 @@
 3812957800 = Conserve un enregistrement de chaque jeu joué pour générer les totaux Joués / gagnés / perdus et l'historique de jeu pour chaque deck. Les données sont stockées dans \\ Magarena \\ stats.
 0753088835 = Défaut
 0026480598 = Général
-4056856275 = ▫Jouabilité
+4056856275 = Jouabilité
 1454688268 = Thème
 3652983185 = Audio
 2939797024 = Réseau
-1057546059 = ▫Proxy:
+1057546059 = Proxy:
 0678364137 = URL:
 1197344509 = Port:
 3846904029 = [Expérimental] Supprime les invites d'action IA
-1858389849 = Si cette option est activée, masque les invites AI dans le panneau d'action de l'utilisateur. Seuls les messages vous demandant de prendre une décision seront affichés.
+1858389849 = Si cette option est activée, masque les invites IA dans le panneau d'action de l'utilisateur. Seuls les messages vous demandant de prendre une décision seront affichés.
 3750946178 = Utilisez l'écran Mulligan
 2891019627 = Double-cliquez pour lancer ou activer la capacité (pour l'écran tactile)
 3198427936 = Passer automatiquement la priorité
@@ -258,7 +258,7 @@
 1580937304 = Couleur en surbrillance
 0232613354 = Barre de défilement personnalisée
 3742481174 = Un style minimaliste qui s'harmonise mieux avec l'aspect IU prévu.
-0554135844 = ▫Edit
+0554135844 = Editer
 0404279630 = Supprimez le fichier de traduction <b>% s </ b>?
 2758934940 = Supprimer le fichier de traduction
 1035893169 = Effacer
@@ -270,7 +270,7 @@
 3391989999 = Impossible d'ouvrir le fichier de traduction.\n%s
 2364246897 = Impossible de localiser JAR.\n%s
 4168995852 = Nouvelle traduction
-0005807920 = ▫Impossible d'ouvrir le fichier dans l'éditeur 'txt' par défaut.\n%s
+0005807920 = Impossible d'ouvrir le fichier dans l'éditeur 'txt' par défaut.\n%s
 0868026068 = Explorateur de fichiers
 1303016265 = Oui
 4063104189 = Non
@@ -286,7 +286,7 @@
 2603922263 = Licence Magarena
 1234048218 = Ce programme est un logiciel gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la Licence publique générale GNU telle que publiée par Free Software Foundation.
 3231149880 = Affiche les détails de la licence.
-0476410532 = ▫decks: %d
+0476410532 = decks: %d
 1893253750 = Liste des decks contenant cette carte
 1173555256 = Double-cliquez sur le nom du deck pour afficher le deck complet.
 1170586075 = recherche...
@@ -295,10 +295,10 @@
 0959113337 = Jouable: %s   \u2022   Non implémenté: %s
 1004292042 = Explorateur de cartes
 0055431008 = Voir Script
-3040047565 = ▫View the script and groovy files for the selected card.<br>(or double-click row)
-0623606758 = ▫Lucky Dip
+3040047565 = Affichez le script et les fichiers groovy pour la carte sélectionnée.<br>(ou double-cliquez sur la rangée)
+0623606758 = Tirage au sort
 2582276425 = Sélectionne une carte aléatoire à partir de la liste des cartes affichées.
-1033268948 = ▫Layout
+1033268948 = Agencement
 4068251502 = Style
 4121886317 = Script de la carte
 2769603427 = Recharger
@@ -346,7 +346,7 @@
 1114478998 = ▫Clear Deck?
 # 3448976220 eg. Cards: 290
 3448976220 = Cartes: %s
-0451146151 = ▫Card Pool
+0451146151 = Carte groupe
 2719972385 = Rappel de la carte
 0658622440 = Légalité
 2939984231 = Rafraîchir
@@ -520,7 +520,7 @@
 1763024292 = F1: Aide
 2193539280 = F10: Capture d'écran
 0657116729 = F11: Plein écran
-0101965706 = ▫F12: Background
+0101965706 = F12: Arrière plan
 0219843941 = ESC: Options / Fermer
 0197262689 = <b> Clic gauche </b> pour ouvrir le fichier.
 1085435003 = <b> Cliquez avec le bouton droit sur </b> pour explorer le répertoire contenant.
@@ -617,7 +617,7 @@
 2108594841 = Afficher le fichier journal [L]
 3734573452 = Affiche le journal complet du jeu qui est écrit dans le fichier.
 3077713445 = Journal
-2154386542 = ▫Stack
+2154386542 = Groupe
 1055342633 = Cycle de style de message
 3097010425 = ▫Cliquez pour parcourir différents styles pour les messages de journal / Stack.
 4121134411 = Glossaire des mots clés [K]
