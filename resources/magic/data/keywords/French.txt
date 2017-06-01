@@ -1,0 +1,339 @@
+# 
+# Magarena keywords glossary.
+#
+# - A blank line will be ignored.
+#
+# - A line starting with...
+# '#' will be ignored.
+# '*' is the keyword definition.
+# '@' is an optional list of one or more card names (separated by a semi-colon) demonstrating the keyword.
+#
+# - none of the above is assumed to be the keyword description.
+#
+
+*Absorb N
+Si une source infligeait des dégâts à cette créature, prévoyez N de ces dommages.
+@Lymph Sliver
+
+*Affinity for [...]
+Ce sort vous coûte {1} moins à jeter pour chaque [...] vous contrôlez.
+@Frogmite;Razor Golem
+
+*Amplify N
+Lorsque cet objet entre dans le champ de bataille, révéler un certain nombre de cartes de votre main qui partagent un type de créature. Ce permanent entre sur le champ de bataille avec N + 1 / + 1 compteurs pour chaque carte révélée de cette façon. Vous ne pouvez pas révéler cette carte ou d'autres cartes qui entrent sur le champ de bataille en même temps que cette carte.
+@Kilnmouth Dragon
+
+*Annihilator N
+Chaque fois que cette créature attaque, le défenseur du joueur sacrifie N permanents.
+@Artisan of Kozilek;Ulamog, the Infinite Gyre;Eldrazi Conscription
+
+*Aura Swap [cost]
+[Coût]: Vous pouvez échanger ce permanent avec une carte Aura dans votre main.
+@Arcanum Wings
+
+*Awaken N—[cost]
+Vous pouvez payer [coût] plutôt que de payer le coût de mana de ce sort en jetant ce sort.
+Si le coût de réveil de ce sort a été payé, mettez des compteurs N + 1 / + 1 sur les terres ciblées que vous contrôlez. Cette terre devient une créature élémentaire 0/0 avec hâte. C'est encore une terre.
+@Earthen Arms
+
+*Banding
+Toutes les créatures avec bandes, et jusqu'à un sans, peuvent attaquer une bande. Les groupes sont bloqués en groupe. Si des créatures avec des bandes que vous contrôlez bloquent ou sont bloquées par une créature, vous divisez les dégâts de combat de cette créature, et non son contrôleur, parmi toutes les créatures qu'elle bloque ou bloque.
+@Timber Wolves
+
+*Bands with other [...]
+Toutes les créatures nommées [...] peuvent attaquer dans une bande tant qu'une au moins une "bandes avec d'autres [...]" Les groupes sont bloqués en groupe. Si au moins deux créatures nommées [...] vous contrôlez, dont l'une a "des bandes avec d'autres [...]" bloquent ou sont bloquées par la même créature, vous divisez les dégâts de combat de cette créature, pas son contrôleur, Parmi toutes les créatures, elle est bloquée ou bloquante.
+@Adventurers' Guildhouse
+
+*Battle Cry
+Chaque fois que cette créature attaque, l'autre créature attaquante obtient + 1 / + 0 jusqu'à la fin du tour.
+@Accorder Paladin
+
+*Bestow [cost]
+Vous pouvez jeter cette carte en payant [coût] plutôt que son coût de mana.
+Si vous choisissez de payer le prix de ce sortilège, cela devient un enchantement de l'Aura et gagne une créature enchanteur. Ces effets durent jusqu'à ce que l'une des deux choses se produise: ce sort a une cible illégale au fur et à mesure qu'il résout ou le permanent de ce sortilège devient décisif.
+@Nighthowler;Celestial Archon
+
+*Bloodthirst N
+Si un adversaire a été blessé à ce tour, ce permanent entre sur le champ de bataille avec N + 1 / + 1 compteurs sur celui-ci.
+@Battering Wurm
+
+*Bloodthirst X
+Ce permanent entre dans le champ de bataille avec des compteurs X + 1 / + 1, où X est le dégât total auquel vos adversaires ont été traités ce tour.
+@Petrified Wood-Kin
+
+*Bushido N
+Chaque fois que cette créature bloque ou devient bloquée, elle obtient + N / + N jusqu'à la fin du tour.
+@Hand of Honor
+
+*Buyback [cost]
+Vous pouvez payer un supplément [coût] lorsque vous lancez ce sort.
+Si le coût du rachat a été payé, placez ce sort dans la main de son propriétaire au lieu du cimetière de ce joueur lorsqu'il résout.
+@Lab Rats;Walk the Aeons
+
+*Cascade
+Lorsque vous lancez ce sort, exilez les cartes du haut de votre bibliothèque jusqu'à ce que vous exilez une carte non-pays dont le coût de mana converti est inférieur au coût de mana converti de ce sort. Vous pouvez jeter cette carte sans payer son coût de mana. Ensuite, placez toutes les cartes exilées de cette façon qui n'ont pas été jetées au bas de votre bibliothèque dans un ordre aléatoire.
+@Captured Sunlight
+
+*Champion an [...]
+Quand ce permanent entre dans le champ de bataille, sacrifiez-le à moins d'exiler un autre [...] vous contrôlez.
+Lorsque ce permanent quitte le champ de bataille, retournez la carte exilée sur le champ de bataille sous le contrôle de son propriétaire.
+@Lightning Crafter
+
+*Changeling
+Cet objet est chaque type de créature en tout temps.
+@Moonglove Changeling
+
+*Cipher
+Ensuite, vous pouvez exiler cette carte de sortilège encodée sur une créature que vous contrôlez. Chaque fois que cette créature inflige des dégâts de combat à un joueur, son contrôleur peut jeter une copie de cette carte sans payer son coût de mana.
+@Shadow Slice
+
+*Conspire
+Comme un coût supplémentaire pour jeter ce sort, vous pouvez toucher deux créatures inexploitées que vous contrôlez que chacune partage une couleur avec elle.
+Lorsque vous lancez ce sort, si son coût conspiré a été payé, copiez-le. Si le sort a des cibles, vous pouvez choisir de nouvelles cibles pour la copie.
+
+*Convoke
+Pour chaque mana coloré dans le coût total de ce sort, vous pouvez toucher une créature inexploitée de cette couleur que vous contrôlez plutôt que de payer ce mana. Pour chaque mana générique dans le coût total de ce sort, vous pouvez toucher une créature inexploitée que vous contrôlez plutôt que de payer ce mana.
+
+*Crew N
+Appuyez sur n'importe quel nombre de créatures que vous contrôlez avec une puissance totale N ou plus: ce véhicule devient une créature artefact jusqu'à la fin du tour.
+
+*Cumulative Upkeep [cost]
+Au début de votre entretien, si ce permanent est sur le champ de bataille, mettez un compteur d'âge sur ce permanent. Ensuite, vous pouvez payer [coût] pour chaque compteur d'âge. Si vous ne le faites pas, sacrifiez-le.
+
+*Cycling [cost]
+[Coût], Jeter cette carte: dessinez une carte.
+
+*Dash [cost]
+Vous pouvez jeter cette carte en payant [coût] plutôt que son coût de mana.
+Si le coût du tiret de ce sort a été payé, renvoyez le permanent, ce sortilège devient à la main de son propriétaire au début de la prochaine étape finale.
+Tant que le coût de tiret de ce permanent a été payé, il a hâte.
+
+*Deathtouch
+Tout dommage infligé à une créature est suffisant pour la détruire.
+
+*Defender
+Cette créature ne peut pas attaquer.
+
+*Delve
+Pour chaque mana générique dans le coût total de ce sort, vous pouvez exiler une carte de votre cimetière plutôt que de payer ce mana.
+
+*Dethrone
+Chaque fois que cette créature attaque le joueur avec le plus de vie ou attaché pour la plupart de la vie, mettez un compteur + 1 / + 1 sur cette créature.
+
+*Devoid
+Cet objet est incolore.
+
+*Devour N
+Lorsque cet objet entre dans le champ de bataille, vous pouvez sacrifier un nombre quelconque de créatures. Ce permanent entre dans le champ de bataille avec N + 1 / + 1 compteurs pour chaque créature sacrifiée de cette façon.
+
+*Double Strike
+Cette créature traite les dégâts de combat de première attaque et de combat régulier.
+
+*Dredge N
+Tant que vous avez au moins N cartes dans votre bibliothèque, si vous dessinez une carte, vous pouvez placer N cartes du haut de votre bibliothèque dans votre cimetière et retourner cette carte de votre cimetière à votre main.
+
+*Echo [cost]
+Au début de votre entretien, si ce permanent était sous votre contrôle depuis le début de votre dernier entretien, sacrifiez-le, sauf si vous payez [coût].
+*Emerge [cost]
+Vous pouvez jeter ce sort en sacrifiant une créature et en payant le coût émergent réduit par le coût de mana converti de cette créature.
+*Enchant [...]
+Cette carte ne peut être attachée qu'à un [...].
+
+*Entwine [cost]
+Vous pouvez choisir tous les modes de ce sort au lieu d'un seul. Si vous le faites, vous payez un [coût supplémentaire].
+@Incite War;Wail of the Nim;Solar Tide
+
+*Epic
+Pour le reste du jeu, vous ne pouvez pas lancer des sorts.
+Au début de chacune de vos prises de vue pour le reste du jeu, copiez ce sort à l'exception de sa capacité épique. Si le sort a des cibles, vous pouvez choisir de nouvelles cibles pour la copie.
+*Equip [cost]
+[Coût]: joignez cette créature permanente à la cible que vous contrôlez. Activez cette capacité uniquement à chaque fois que vous pourriez lancer une sorcellerie.
+*Escalate [cost]
+Payer ce coût pour chaque mode choisi au-delà de la première.
+*Evoke [cost]
+Vous pouvez lancer cette carte en payant [coût] plutôt que de payer son coût de mana.
+Lorsque ce permanent entre sur le champ de bataille, si son coût evoke a été payé, son contrôleur le sacrifie.
+*Evolve
+Chaque fois qu'une créature entre sur le champ de bataille sous votre contrôle, si la puissance de cette créature est supérieure à la puissance de cette créature et / ou que la ténacité de cette créature est supérieure à la dureté de cette créature, mettez un compteur + 1 / + 1 sur cette créature.
+*Exalted
+Chaque fois qu'une créature contrôle les attaques, cette créature obtient + 1 / + 1 jusqu'à la fin du tour.
+*Exploit
+Lorsque cette créature entre dans le champ de bataille, vous pouvez sacrifier une créature.
+*Extort
+Chaque fois que vous lancez un sort, vous pouvez payer {W / B}. Si vous le faites, chaque adversaire perd 1 vie et vous gagnez une vie égale à la vie totale perdue de cette façon.
+*Fabricate N
+Lorsque cette créature entre sur le champ de bataille, mettez N + 1 / + 1 compteurs sur elle ou créez des jetons de créations artefacts Servo N 1/1 incolores.
+*Fading N
+Ce permanent entre dans le champ de bataille avec des compteurs N FADE sur celui-ci.
+Au début de votre entretien, retirez un compteur de fondu de ce permanent. Si vous ne pouvez pas, sacrifiez le permanent.
+*Fear
+Cette créature ne peut être bloquée que par des créatures artefactées et / ou des créatures noires.
+*First Strike
+Cette créature inflige des dégâts de combat avant les créatures sans la première grève.
+*Flanking
+Chaque fois que cette créature devient bloquée par une créature sans flanquer, la créature bloquante obtient -1 / -1 jusqu'à la fin du tour.
+*Flash
+Vous pouvez jouer cette carte chaque fois que vous pouvez lancer un instant.
+*Flashback [cost]
+Vous pouvez jeter cette carte de votre cimetière en payant [coût] plutôt que de payer son coût de mana.
+Si le coût du flashback a été payé, exilez cette carte au lieu de la mettre n'importe où à l'autre moment où elle quitterait la pile.
+*Flying
+Cette créature ne peut être bloquée que par des créatures à volant ou à portée.
+*Forecast — [cost]
+Jouez cette capacité uniquement pendant votre entretien et une seule fois par tour.
+*Fortify [cost]
+[Coût]: joignez cette fortification pour cibler les terres que vous contrôlez. Activez cette capacité uniquement à chaque fois que vous pourriez lancer une sorcellerie.
+*Frenzy N
+Chaque fois que cette créature attaque et n'est pas bloquée, elle obtient + N / + 0 jusqu'à la fin du tour.
+*Fuse
+Vous pouvez lancer une ou deux moitiés de cette carte de votre main.
+*Goad [...]
+Jusqu'à votre prochain tour, cette créature attaque chaque combat si possible et attaque un joueur autre que vous si possible.
+*Graft N
+Ce permanent entre dans le champ de bataille avec N + 1 / + 1 compteurs sur celui-ci.
+Chaque fois qu'une autre créature entre sur le champ de bataille, si ce permanent a un compteur + 1 / + 1, vous pouvez déplacer un compteur + 1 / + 1 de ce permanent sur cette créature.
+*Gravestorm
+Lorsque vous lancez ce sort, mettez une copie sur la pile pour chaque permanent qui a été placé dans un cimetière depuis le champ de bataille ce tour. Si le sort a des cibles, vous pouvez choisir de nouvelles cibles pour l'une des copies.
+
+*Haste
+Cette créature peut attaquer et {T} dès qu'elle est sous votre contrôle.
+@Ankle Shanker;Lightning Elemental
+
+*Haunt
+Quand cette créature meurt, exile la créature ciblée.
+*Hexproof
+Ce permanent ne peut pas être la cible de sorts ou de capacités que vos adversaires contrôlent.
+*Hidden Agenda
+Lorsque vous mettez cette carte de conspiration dans la zone de commande, tournez-la vers le bas et nommez en secret une carte.
+*Hideaway
+Cette terre entre en champ de bataille. Lorsque cela se produit, regardez les quatre premières cartes de votre bibliothèque, exilez une face vers le bas, puis mettez le reste au bas de votre bibliothèque.
+*Horsemanship
+Cette créature ne peut être bloquée que par des créatures avec équitation.
+*Indestructible
+Les dommages et les effets qui disent "détruire" ne le détruisent pas.
+*Infect
+Cette créature inflige des dommages aux créatures sous la forme de compteurs -1 / -1 et aux joueurs sous la forme de compteurs de poison.
+*Ingest
+Chaque fois que cette créature inflige des dégâts de combat à un joueur, ce joueur exile la carte supérieure de sa bibliothèque.
+*Intimidate
+Cette créature ne peut être bloquée que par des créatures artefactées et / ou des créatures qui partagent une couleur avec elle.
+*Investigate
+Mettez un jeton incontournable sur le champ de bataille avec "{2}, sacrifiez cet artefact: dessinez une carte".
+*Kicker [cost]
+Vous pouvez payer un supplément [coût] lorsque vous lancez ce sort.
+*[Type] Landwalk
+Cette créature ne peut pas être bloquée tant que la défense des contrôles du joueur est un [type].
+*Level Up [cost]
+[Coût]: Mettre un compteur de niveau sur ce permanent. Activez cette capacité uniquement à chaque fois que vous pourriez lancer une sorcellerie.
+*Lifelink
+Les dommages causés par cette créature vous font également gagner cette vie.
+*Living Weapon
+Lorsque cet équipement entre sur le champ de bataille, mettez un jeton de créature de germe noir 0/0 sur le champ de bataille, puis attachez-lui cet équipement.
+*Madness [cost]
+Si vous retirez cette carte, jetez-la en exil. Lorsque vous le faites, lancez-le pour son coût de folie ou placez-le dans votre cimetière.
+*Megamorph [cost]
+Vous pouvez jeter cette carte face vers le bas en tant que créature 2/2 pour {3}. Tournez-le vers le haut à tout moment pour son coût de mégamphore et mettez un compteur + 1 / + 1 sur celui-ci.
+*Melee
+Chaque fois que cette créature attaque, il obtient + 1 / + 1 jusqu'à la fin du tour pour chaque adversaire que vous avez attaqué avec une créature ce combat.
+*Menace
+Cette créature ne peut être bloquée que par deux créatures ou plus.
+*Miracle [cost]
+Vous pouvez jeter cette carte pour son coût Miracle lorsque vous la dessinez si c'est la première carte que vous avez dessinée ce tour.
+*Modular N
+Cela entre en jeu avec des compteurs N + 1 / + 1. Lorsqu'il est placé dans un cimetière, vous pouvez mettre ses compteurs + 1 / + 1 sur une créature artefact cible.
+*Morph [cost]
+Vous pouvez jeter ce visage vers le bas comme une créature 2/2 pour {3}. Tournez-le face en tout temps pour son coût de morph.
+*Multikicker [cost]
+Vous pouvez payer un [coût supplémentaire] autant de fois que vous lancez ce sort.
+*Myriad
+Chaque fois que cette créature attaque, pour chaque adversaire autre que le joueur défendeur, vous pouvez mettre un jeton qui est une copie de cette créature sur le champ de bataille tapoté et attaquant ce joueur ou un planificateur qu'il ou elle contrôle. Exilez les jetons à la fin du combat.
+*Ninjutsu [cost]
+[Coût], Renvoyez un attaquant non bloqué que vous contrôlez à la main: Mettez cette carte sur le champ de bataille à partir de votre main attaquée et attaquée.
+*[Subtype] Offering
+Vous pouvez jeter cette carte à tout moment, vous pouvez jeter un instant en sacrifiant un [sous-type] permanent. Si vous le faites, le coût total de l'émission de cette carte est réduit par le coût du mana permanent consécutif à la sacrifices.
+*Outlast [cost]
+[Coût], {T}: Mettez un compteur + 1 / + 1 sur cette créature. Dépassé uniquement en sorcellerie.
+*Overload [cost]
+Vous pouvez jeter ce sort pour son coût de surcharge. Si vous le faites, modifiez son texte en remplaçant toutes les instances de 'cible' par 'chacune'.
+*Partner
+Vous pouvez avoir deux commandants si les deux ont un partenaire.
+*Persist
+Lorsque ce permanent est placé dans un cimetière du champ de bataille, s'il n'avait pas de compteurs -1 / -1, remettez-le sur le champ de bataille sous le contrôle de son propriétaire avec un compteur -1 / -1 sur celui-ci.
+*Phasing
+Cette phase s'effectue avant que vous ne vous détipiez pendant chacune de vos étapes de décompte. Bien qu'il soit éliminé, il est traité comme s'il n'existait pas.
+*Poisonous N
+Chaque fois que cette créature inflige des dégâts de combat à un joueur, ce joueur reçoit N compteurs de poison.
+*Protection [quality]
+Cela ne peut pas être bloqué, ciblé, infligé des dégâts, ou enchanté par quelque chose [qualité].
+*Provoke
+Chaque fois que cela attaque, vous risquez que la créature ciblée défend les contrôles du joueur de l'être et de le bloquer si possible.
+*Prowess
+Chaque fois que vous lancez un sort non créatif, cette créature obtient + 1 / + 1 jusqu'à la fin du tour.
+*Prowl [cost]
+Vous pouvez jeter ce prix pour votre vélo si vous avez causé un dégât de combat à un joueur ce tour avec un [sous-type].
+*Rampage N
+Chaque fois que cette créature devient bloquée, elle obtient + N / + N jusqu'à la fin du tour pour chaque créature qui la bloque au-delà de la première.
+*Reach
+Cette créature peut bloquer les créatures avec le volant.
+*Rebound
+Si ce sort a été jeté de votre main, au lieu de le mettre dans votre cimetière à mesure qu'il résout, exilez-le et, au début de votre prochain entretien, vous pouvez jeter cette carte de l'exil sans payer son coût de mana.
+*Recover [cost]
+Quand une créature est placée dans votre cimetière depuis le champ de bataille, vous pouvez payer [coût]. Si vous le faites, renvoyez cette carte de votre cimetière à votre main. Sinon, exilez cette carte.
+*Reinforce N — [cost]
+[Coût], Jeter cette carte: mettez N + 1 / + 1 compteurs sur la créature ciblée.
+*Renown N
+Chaque fois que cette créature inflige des dégâts de combat à un joueur, s'il n'est pas reconnu, mettez le compteur N + 1 / + 1 pour qu'il soit reconnu.
+*Replicate [cost]
+Lorsque vous lancez ce sort, copiez-le pour chaque fois que vous avez payé son coût de réplication. Vous pouvez choisir de nouvelles cibles pour les copies.
+*Retrace
+Vous pouvez jeter cette carte de votre cimetière en rejetant une carte terrestre en tant que coût supplémentaire pour la lancer.
+*Ripple N
+Lorsque vous lancez ce sort, vous pouvez révéler les premières cartes N de votre bibliothèque ou, si vous avez moins de N cartes dans votre bibliothèque, vous pouvez révéler toutes les cartes de votre bibliothèque. Si vous révéler des cartes de votre bibliothèque de cette façon, vous pouvez jeter toutes ces cartes avec le même nom que ce sort sans payer leurs frais de mana, puis mettez toutes les cartes révélées qui ne sont pas jetées de cette façon au bas de votre bibliothèque dans n'importe quel ordre.
+*Scavenge [cost]
+[Coût], exilez cette carte de votre cimetière: Mettez un nombre de + 1 / + 1 compteurs égal à la puissance de cette carte sur la créature ciblée. Scavenge seulement comme une sorcellerie.
+*Shadow
+Cette créature peut bloquer ou être bloquée par des créatures à l'ombre.
+*Shroud
+Ce permanent ou joueur ne peut pas être la cible de sorts ou de capacités.
+*Skulk
+Cette créature ne peut pas être bloquée par des créatures plus puissantes.
+*Soulbond
+Vous pouvez associer cette créature à une autre créature non accompagnée lorsque vous entrez sur le champ de bataille. Ils restent jumelés aussi longtemps que vous les contrôlez tous les deux.
+*Soulshift N
+Lorsque cette créature décède, vous pouvez retourner la carte Target Spirit avec un coût de mana converti N ou moins de votre cimetière à votre main.
+*Splice onto [type] [cost]
+Lorsque vous lancez un sort [type], vous pouvez révéler cette carte de votre main et payer son coût d'épissure. Si vous le faites, ajoutez les effets de cette carte sur ce sort.
+*Split Second
+Tant que ce sort est sur la pile, les joueurs ne peuvent pas lancer des sorts ou activer des capacités qui ne sont pas des capacités de mana.
+*Storm
+Lorsque vous jouez ce sort, mettez une copie sur la pile pour chaque autre sortilège qui a été joué avant ce tour. Si le sort a des cibles, vous pouvez choisir de nouvelles cibles pour n'importe quel nombre de copies.
+*Sunburst
+Cela entre dans le champ de bataille avec un compteur (+ 1 / + 1 ou charge) pour chaque couleur de mana dépensé pour le lancer.
+*Surge [cost]
+Vous pouvez jeter un sort pour son coût de surtension si vous ou un coéquipier ont lancé un autre sort au même tour.
+*Suspend N — (cost)
+Plutôt que de lancer cette carte de votre main, vous pouvez payer [coût] et l'exiler avec N compteurs de temps sur elle. Au début de votre entretien, retirez un compteur horaire. Lorsque le dernier est retiré, lancez-le sans payer son coût de mana. Il a hâte.
+*Totem Armor
+Si une enchantement permanent serait détruit, supprimez tout dégât marqué et détruisez cet Aura.
+*Trample
+Cette créature peut infliger des dégâts excessifs de combat au défenseur du joueur ou de l'avionwalker en attaque.
+*Transfigure [cost]
+[Coût], sacrifiez ce permanent: recherchez votre bibliothèque pour une carte de créature avec le même coût de mana converti que ce permanent et mettez-le sur le champ de bataille. Ensuite, mélanger votre bibliothèque. Activez cette capacité uniquement à chaque fois que vous pourriez lancer une sorcellerie.
+*Transmute [cost]
+[Coût], Jeter cette carte: recherchez votre bibliothèque pour une carte avec le même coût de mana converti que cette carte, la révéler et la mettre dans votre main. Ensuite, mélanger votre bibliothèque. Transmettez seulement comme une sorcellerie.
+*Tribute N
+Lorsque cette créature entre dans le champ de bataille, choisissez un adversaire. Ce joueur peut avoir cette créature entrer sur le champ de bataille avec un N + 1 / + 1 supplémentaires compteurs sur elle.
+*Undaunted
+Ce sort coûte {1} moin cher pour chaque opposant.
+*Undying
+Lorsque cette créature décède, si elle n'avait pas de compteurs + 1 / + 1, renvoyez-la sur le champ de bataille sous le contrôle de son propriétaire avec un compteur + 1 / + 1.
+*Unearth [cost]
+[Coût]: renvoie cette carte de votre cimetière au champ de bataille. Il se hâte. Exilez-le au début de la prochaine étape ou si vous quitterez le champ de bataille. N'entrez qu'une sorcellerie.
+*Unleash
+Vous pouvez avoir cette créature entre dans le champ de bataille avec un compteur + 1 / + 1 sur elle. Il ne peut pas bloquer tant qu'il dispose d'un compteur + 1 / + 1.
+*Vanishing
+Cette créature / Aura entre en champ de bataille avec quatre compteurs de temps. Au début de votre entretien, enlevez un compteur horaire. Lorsque le dernier est enlevé, sacrifiez-le.
+*Vigilance
+Attaquer ne cause pas cette créature.
+*Wither
+Cela influe sur des dommages aux créatures sous forme de compteurs -1 / -1.
