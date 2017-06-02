@@ -63,6 +63,10 @@ public class CardDefinitions {
 
     private static final AtomicInteger cdefIndex = new AtomicInteger(1);
 
+    static {
+        CompilerConfiguration.DEFAULT.getOptimizationOptions().put(CompilerConfiguration.INVOKEDYNAMIC, Boolean.TRUE);
+    }
+
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
         new CompilerConfiguration().addCompilationCustomizers(
