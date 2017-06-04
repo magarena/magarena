@@ -26,7 +26,7 @@ public class AnimationPanel extends JPanel {
         setVisible(false);
 
         setCancelPreviewOnLeftClick();
-        setCancelAnimationOnSpaceOrEscape();
+        setCancelOnKeyPress();
         setCancelOnResize();
     }
 
@@ -52,10 +52,14 @@ public class AnimationPanel extends JPanel {
         });
     }
 
-    private void setCancelAnimationOnSpaceOrEscape() {
+    private void setCancelOnKeyPress() {
         getActionMap().put("CancelAction", getCancelAction());
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0), "CancelAction");
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "CancelAction");
+        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
+            .put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0), "CancelAction");
+        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
+            .put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "CancelAction");
+        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
+            .put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0), "CancelAction");
     }
 
     private AbstractAction getCancelAction() {
