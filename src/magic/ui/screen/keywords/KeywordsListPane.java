@@ -1,15 +1,16 @@
 package magic.ui.screen.keywords;
 
 import java.awt.Color;
+import java.io.IOException;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 
 @SuppressWarnings("serial")
 class KeywordsListPane extends JScrollPane {
 
-    KeywordsListPane(final KeywordPanelB keywordPanel) {
+    KeywordsListPane(final KeywordPanelB keywordPanel) throws IOException {
 
-        JList<Keyword> list = new JList<>(KeywordsHelper.loadKeywordsFileToSortedArray());
+        JList<Keyword> list = new JList<>(KeywordsHelper.getKeywords());
 
         list.setLayoutOrientation(JList.VERTICAL_WRAP);
         list.setVisibleRowCount(-1);

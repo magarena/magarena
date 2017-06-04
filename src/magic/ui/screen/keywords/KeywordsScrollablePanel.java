@@ -2,6 +2,7 @@ package magic.ui.screen.keywords;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
+import java.io.IOException;
 import javax.swing.JPanel;
 import javax.swing.Scrollable;
 import net.miginfocom.swing.MigLayout;
@@ -15,14 +16,14 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class KeywordsScrollablePanel extends JPanel implements Scrollable {
 
-    KeywordsScrollablePanel() {
+    KeywordsScrollablePanel() throws IOException {
         setLayout(new MigLayout("insets 10, gap 6 8, wrap 2"));
         setOpaque(false);
         refreshKeywords();
     }
 
-    private void refreshKeywords() {
-        for (final Keyword keywordDefinition : KeywordsHelper.loadKeywordsFileToSortedArray())  {
+    private void refreshKeywords() throws IOException {
+        for (final Keyword keywordDefinition : KeywordsHelper.getKeywords()) {
             add(new KeywordPanelA(keywordDefinition), "w 10:100%, top");
         }
     }

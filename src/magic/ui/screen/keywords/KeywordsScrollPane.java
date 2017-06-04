@@ -1,5 +1,6 @@
 package magic.ui.screen.keywords;
 
+import java.io.IOException;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
@@ -11,7 +12,7 @@ import javax.swing.SwingUtilities;
 @SuppressWarnings("serial")
 class KeywordsScrollPane extends JScrollPane {
 
-    KeywordsScrollPane() {
+    KeywordsScrollPane() throws IOException {
         setDefaultProperties();
         getViewport().add(new KeywordsScrollablePanel());
         setScrollbarToTop();

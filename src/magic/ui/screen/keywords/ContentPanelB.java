@@ -1,13 +1,13 @@
 package magic.ui.screen.keywords;
 
 import java.awt.Color;
+import java.io.IOException;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ContentPanelB extends TexturedPanel {
+class ContentPanelB extends ScreenContentPanel {
 
     ContentPanelB() {
 
@@ -18,16 +18,17 @@ class ContentPanelB extends TexturedPanel {
         // since we already have the card name.
 //        CardDefinitions.getMissingCards();
 
-        KeywordPanelB keywordPanel = new KeywordPanelB();
+        try {
+            KeywordPanelB keywordPanel = new KeywordPanelB();
+            setLayout(new MigLayout("", "[grow, fill][500!, grow, fill]", "[grow, fill]"));
+            add(new KeywordsListPane(keywordPanel));
+            add(keywordPanel);
+        } catch (IOException ex) {
+            showKeywordsFileError(ex);
+        }
 
-        setLayout(new MigLayout("", "[grow, fill][500!, grow, fill]", "[grow, fill]"));
-        add(new KeywordsListPane(keywordPanel));
-        add(keywordPanel);
-
-//        setBackground(ActionBar.getBackgroundColor().darker());
         final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
         final Color thisBG = MagicStyle.getTranslucentColor(refBG, 220);
         setBackground(thisBG.darker());
-
     }
 }
