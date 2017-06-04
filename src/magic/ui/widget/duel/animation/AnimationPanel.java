@@ -1,16 +1,14 @@
 package magic.ui.widget.duel.animation;
 
 import java.awt.Graphics;
-import java.awt.event.ActionEvent;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
+import magic.ui.helpers.KeyEventAction;
 
 @SuppressWarnings("serial")
 public class AnimationPanel extends JPanel {
@@ -53,22 +51,8 @@ public class AnimationPanel extends JPanel {
     }
 
     private void setCancelOnKeyPress() {
-        getActionMap().put("CancelAction", getCancelAction());
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
-            .put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0), "CancelAction");
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
-            .put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "CancelAction");
-        getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW)
-            .put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0), "CancelAction");
-    }
-
-    private AbstractAction getCancelAction() {
-        return new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                animation.doCancelAction();
-            }
-        };
+        KeyEventAction.doAction(this, () -> animation.doCancelAction())
+            .onFocus(0, KeyEvent.VK_SPACE, KeyEvent.VK_ESCAPE, KeyEvent.VK_RIGHT);
     }
 
     @Override
