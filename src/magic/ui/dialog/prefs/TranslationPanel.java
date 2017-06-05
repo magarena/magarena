@@ -54,6 +54,8 @@ class TranslationPanel extends JPanel {
     private static final String _S15 = "Yes";
     private static final String _S16 = "No";
     private static final String _S17 = "Help";
+    private static final String _S18 = "Error reading translation file";
+    private static final String _S19 = "Ensure encoding is \"UTF-8 without BOM\".";
 
     private final JComboBox<String> languageCombo = new JComboBox<>();
     private final JButton menuButton = new JButton();
@@ -191,8 +193,11 @@ class TranslationPanel extends JPanel {
                 getParent().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 try {
                     doEditTranslationFile();
-                } catch (URISyntaxException | IOException ex) {
-                    ScreenController.showWarningMessage(ex.getMessage());
+                } catch (RuntimeException | URISyntaxException | IOException ex) {
+                    ScreenController.showWarningMessage(String.format(
+                        "<html>%s:<br><br><i>%s</i><br><br>%s</html>",
+                        MText.get(_S18), ex.getMessage(), MText.get(_S19))
+                    );
                 } finally {
                     getParent().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 }
