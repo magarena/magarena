@@ -1,14 +1,20 @@
 package magic.ui.screen.menu.language;
 
 import java.awt.event.ActionEvent;
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.ScreenController;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
@@ -21,6 +27,8 @@ public class StartScreen extends MScreen {
     // translatable strings
     private static final String _S1 = "Language";
     private static final String _S2 = "Invalid translation file.";
+
+    private static final Logger LOGGER = Logger.getLogger(StartScreen.class.getName());
 
     private List<String> translations;
 
@@ -64,6 +72,20 @@ public class StartScreen extends MScreen {
             GeneralConfig.getInstance().save();
         }
 
+        private String getTranslationVersion(String lang) {
+            String version = "";
+            File file = MagicFileSystem.getTranslationFile(lang);
+            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+                String line = br.readLine();
+                if (line != null && line.startsWith("@")) {
+                    version = line.substring(1).trim();
+                }
+            } catch (IOException ex) {
+                LOGGER.log(Level.WARNING, null, ex);
+            }
+            return version;
+        }
+
         private void showLanguageMenu() {
 
             final MenuPanel menuPanel = new MenuPanel(MText.get(_S1));
@@ -81,7 +103,8 @@ public class StartScreen extends MScreen {
             });
 
             for (final String translation : translations) {
-                menuPanel.addMenuItem(translation, new AbstractAction() {
+                String caption = (translation + " " + getTranslationVersion(translation)).trim();
+                menuPanel.addMenuItem(caption, new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
                         try {

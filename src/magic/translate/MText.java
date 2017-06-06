@@ -93,10 +93,17 @@ public final class MText {
         try (final Scanner sc = new Scanner(txtFile, UTF_CHAR_SET)) {
             while (sc.hasNextLine()) {
                 final String line = sc.nextLine().trim();
-                if (line.startsWith("#") == false && line.isEmpty() == false) {
-                    final int equalsChar = line.indexOf('=');
-                    final long stringId = Long.valueOf(line.substring(0, equalsChar).trim());
-                    final String translation = line.substring(equalsChar + 1).trim();
+
+                if (line.startsWith("#") || line.isEmpty()) {
+                    // ignore comments and blank lines.
+
+                } else if (line.startsWith("@")) {
+                    // Magarena version
+
+                } else {
+                    int equalsChar = line.indexOf('=');
+                    long stringId = Long.valueOf(line.substring(0, equalsChar).trim());
+                    String translation = line.substring(equalsChar + 1).trim();
                     stringsMap.put(stringId, unescape ? StringEscapeUtils.unescapeJava(translation) : translation);
                 }
             }
@@ -206,6 +213,7 @@ public final class MText {
 
     public static void createTranslationFile(File txtFile, Map<Long, String> stringsMap) throws FileNotFoundException, UnsupportedEncodingException {
         try (final PrintWriter writer = new PrintWriter(txtFile, UTF_CHAR_SET)) {
+            writer.println("@" + MagicSystem.VERSION);
             for (Map.Entry<Long, String> entry : stringsMap.entrySet()) {
                 final Long key = entry.getKey();
                 if (annotations.containsKey(key)) {

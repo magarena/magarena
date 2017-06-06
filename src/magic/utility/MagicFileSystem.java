@@ -324,4 +324,8 @@ public final class MagicFileSystem {
             throw new IOException("Specified path is not a valid directory : " + path);
         }
     }
+
+    public static File getTranslationFile(String lang) {
+        return getDataPath(DataPath.TRANSLATIONS).resolve(lang + ".txt").toFile();
+    }
 }
