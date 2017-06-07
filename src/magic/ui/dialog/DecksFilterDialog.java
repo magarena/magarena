@@ -22,10 +22,10 @@ import javax.swing.SwingUtilities;
 import javax.swing.text.NumberFormatter;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.deck.DeckFilter;
-import magic.ui.widget.deck.DeckFilter.NumericFilter;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
+import magic.ui.widget.deck.DeckFilter;
+import magic.ui.widget.deck.DeckFilter.NumericFilter;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -55,7 +55,7 @@ public class DecksFilterDialog extends MagicDialog {
     // CTR
     public DecksFilterDialog() {
 
-        super(MText.get(_S3), new Dimension(400, 300));
+        super(MText.get(_S3), new Dimension(460, 300));
 
         if (filterHistory.size() > 0) {
             deckFilter = filterHistory.get(historyIndex-1);
@@ -136,7 +136,7 @@ public class DecksFilterDialog extends MagicDialog {
 
     private JPanel getButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, aligny bottom"));
-        buttonPanel.add(resetButton, "w 80!, alignx left");
+        buttonPanel.add(resetButton, "w 110!, alignx left");
         buttonPanel.add(getCancelButton(), "alignx right, pushx");
         buttonPanel.add(saveButton, "alignx right");
         return buttonPanel;
