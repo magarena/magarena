@@ -3,6 +3,7 @@ package magic.ui.screen;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import magic.data.GeneralConfig;
+import magic.translate.MText;
 
 /**
  * Various layouts for the card images displayed in a
@@ -10,8 +11,8 @@ import magic.data.GeneralConfig;
   */
 public enum HandZoneLayout {
 
-    STACKED_DUPLICATES("Stacked"),     // default, as per pre-1.85 behaviour.
-    NO_STACKING("Unstacked");
+    STACKED_DUPLICATES(UIText._S1),     // default, as per pre-1.85 behaviour.
+    NO_STACKING(UIText._S2);
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String CONFIG_SETTING = "hand.zone.layout";
@@ -47,10 +48,19 @@ public enum HandZoneLayout {
     private final String displayName;
 
     private HandZoneLayout(final String displayName) {
-        this.displayName = displayName;
+        this.displayName = MText.get(displayName);
     }
 
     public String getDisplayName() {
         return displayName;
     }
+}
+
+/**
+ * translatable strings
+ */
+final class UIText {
+    private UIText() {}
+    static final String _S1 = "Stacked";
+    static final String _S2 = "Unstacked";
 }
