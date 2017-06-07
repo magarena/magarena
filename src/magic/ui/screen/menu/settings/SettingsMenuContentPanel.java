@@ -18,7 +18,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     private static final String _S2 = "Preferences";
     private static final String _S3 = "Setup card images";
     private static final String _S4 = "Run Firemind Worker";
-    private static final String _S5 = "Toggle full-screen";
+    private static final String _S5 = "Toggle full-screen on/off";
     private static final String _S6 = "Close menu";
     private static final String _S7 = "Reset & Restart";
     private static final String _S11 = "Reset settings to default and run startup wizard?";
