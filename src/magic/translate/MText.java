@@ -1,9 +1,11 @@
 package magic.translate;
 
 import groovy.json.StringEscapeUtils;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -28,6 +30,8 @@ import magic.utility.MagicSystem;
 
 public final class MText {
     private MText() { }
+
+    private static final Logger LOGGER = Logger.getLogger(MText.class.getName());
 
     private static final String UTF_CHAR_SET = "UTF-8";
 
@@ -235,6 +239,21 @@ public final class MText {
 
     public static boolean isEnglish() {
         return translationsMap.isEmpty();
+    }
+
+    public static String getTranslationVersion(String lang) {
+        if (!lang.equals("English")) {
+            File file = MagicFileSystem.getTranslationFile(lang);
+            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+                String line = br.readLine();
+                if (line != null && line.startsWith("@")) {
+                    return line.substring(1).trim();
+                }
+            } catch (IOException ex) {
+                LOGGER.log(Level.WARNING, null, ex);
+            }
+        }
+        return "";
     }
 
 }

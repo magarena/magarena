@@ -1,5 +1,6 @@
 package magic.ui.dialog.prefs;
 
+import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -17,16 +18,18 @@ import java.util.Map;
 import java.util.Set;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListCellRenderer;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JList;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.translate.MText;
 import magic.exception.DesktopNotSupportedException;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.helpers.DesktopHelper;
@@ -126,7 +129,19 @@ class TranslationPanel extends JPanel {
         });
     }
 
+    private DefaultListCellRenderer getLanguageComboRenderer() {
+        return new DefaultListCellRenderer() {
+            @Override
+            public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                String lang = value.toString();
+                String newValue = (lang + " " + MText.getTranslationVersion(lang)).trim();
+                return super.getListCellRendererComponent(list, newValue, index, isSelected, cellHasFocus);
+            }
+        };
+    }
+
     private void setupComboBox() {
+        languageCombo.setRenderer(getLanguageComboRenderer());
         refreshLanguageCombo();
         languageCombo.addItemListener(new ItemListener() {
             @Override
