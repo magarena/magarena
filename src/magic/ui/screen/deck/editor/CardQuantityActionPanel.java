@@ -7,10 +7,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.translate.MText;
-import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
+import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -21,10 +21,9 @@ class CardQuantityActionPanel extends JPanel {
     private static final String _S2 = "Add selected card to deck (or left click row).";
     private static final String _S3 = "Remove card";
     private static final String _S4 = "Remove selected card from deck (or right click row).";
-    private static final String _S5 = "Increment";
-    private static final String _S6 = "Increase the quantity by one. Maximum is ten.";
-    private static final String _S7 = "Decrement";
-    private static final String _S8 = "Decrease the quantity by one. Minium is one.";
+    private static final String _S5 = "Increase by one";
+    private static final String _S6 = "Maximum is ten.";
+    private static final String _S7 = "Decrease by one";
     private static final String _S9 = "Must use this button to remove last instance of a card.";
 
     // UI components
@@ -71,7 +70,6 @@ class CardQuantityActionPanel extends JPanel {
         decrementButton = new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.ARROWDOWN),
                 MText.get(_S7),
-                MText.get(_S8),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
