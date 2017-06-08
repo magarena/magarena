@@ -43,16 +43,21 @@ class DevMenuContentPanel extends NewMenuScreenContentPanel {
         if (GeneralConfig.isGameStatsOn()) {
             addMenuItem("Game stats", this::showStatsScreen);
         }
-        if (MagicSystem.isDevMode()) {
-            addSpace();
-            addMenuItem("work-in-progress...", 16, this::showWipMenuScreen);
-        }
+        addMenuItem("Test screen", this::showTestScreen);
+//        if (MagicSystem.isDevMode()) {
+//            addSpace();
+//            addMenuItem("work-in-progress...", 16, this::showWipMenuScreen);
+//        }
         refreshMenuLayout();
     }
 
-    private void showWipMenuScreen() {
-        ScreenController.showWipMenuScreen();
+    private void showTestScreen() {
+        ScreenController.showTestScreen();
     }
+
+//    private void showWipMenuScreen() {
+//        ScreenController.showWipMenuScreen();
+//    }
 
     private void showStatsScreen() {
         ScreenController.showStatsScreen();
