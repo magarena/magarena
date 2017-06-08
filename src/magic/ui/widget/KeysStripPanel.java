@@ -3,14 +3,12 @@ package magic.ui.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import magic.translate.MText;
-import magic.ui.screen.interfaces.IThemeStyle;
-import magic.ui.theme.Theme;
-import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
+public class KeysStripPanel extends JPanel {
 
     // translatable strings
     private static final String _S1 = "F1: Help";
@@ -24,8 +22,8 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
     public KeysStripPanel() {
         setPreferredSize(new Dimension(0, 22));
         setLayout(layout);
-        refreshStyle();
         refreshLayout();
+        setOpaque(false);
     }
 
     private void refreshLayout() {
@@ -36,13 +34,6 @@ public class KeysStripPanel extends TexturedPanel implements IThemeStyle {
         add(getLabel(MText.get(_S3)));
         add(getLabel(MText.get(_S4)));
         add(getLabel(MText.get(_S5)));
-    }
-
-    @Override
-    public final void refreshStyle() {
-        final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-        final Color thisBG = MagicStyle.getTranslucentColor(refBG, 240);
-        setBackground(thisBG);
     }
 
     private JLabel getLabel(final String text) {

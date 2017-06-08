@@ -3,14 +3,15 @@ package magic.ui.screen.widget;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -25,7 +26,7 @@ public class ScreenFooterPanel extends TexturedPanel
     }
 
     public final static int PANEL_HEIGHT = 50;
-    
+
     private final JPanel leftPanel;
     private final JPanel middlePanel;
     private final JPanel rightPanel;
@@ -40,7 +41,7 @@ public class ScreenFooterPanel extends TexturedPanel
         this.rightPanel = new ContentPanel();
 
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
-               
+
         // add close button as default.
         setLeftButton(MenuButton.getCloseScreenButton());
 
@@ -146,6 +147,14 @@ public class ScreenFooterPanel extends TexturedPanel
             isFirstFooter = false;
         }
         middlePanel.revalidate();
+    }
+
+    public void setFooterContent(JComponent obj) {
+        removeAll();
+        add(this.leftPanel);
+        add(obj);
+        add(this.rightPanel);
+        revalidate();
     }
 
 }
