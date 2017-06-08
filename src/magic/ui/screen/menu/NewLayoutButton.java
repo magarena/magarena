@@ -1,4 +1,4 @@
-package magic.ui.screen.menu.main;
+package magic.ui.screen.menu;
 
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;

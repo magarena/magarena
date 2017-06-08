@@ -1,4 +1,4 @@
-package magic.ui.screen.menu.main;
+package magic.ui.screen.menu;
 
 import java.awt.Point;
 import java.awt.event.MouseEvent;

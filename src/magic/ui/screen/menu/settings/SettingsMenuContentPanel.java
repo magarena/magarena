@@ -6,7 +6,7 @@ import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.dialog.FiremindWorkerDialog;
-import magic.ui.screen.menu.main.NewMenuScreenContentPanel;
+import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
 

@@ -1,5 +1,6 @@
 package magic.ui.screen.menu.main;
 
+import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.exception.InvalidDeckException;
 import magic.translate.MText;
 import magic.ui.ScreenController;

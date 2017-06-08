@@ -16,7 +16,7 @@ import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
 import magic.ui.ScreenController;
 import magic.ui.dialog.GameStateRunner;
-import magic.ui.screen.menu.main.NewMenuScreenContentPanel;
+import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 

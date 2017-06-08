@@ -3,7 +3,7 @@ package magic.ui.screen.menu.help;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.UrlHelper;
-import magic.ui.screen.menu.main.NewMenuScreenContentPanel;
+import magic.ui.screen.menu.NewMenuScreenContentPanel;
 
 @SuppressWarnings("serial")
 class HelpMenuContentPanel extends NewMenuScreenContentPanel {
