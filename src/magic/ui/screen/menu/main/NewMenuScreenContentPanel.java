@@ -15,7 +15,7 @@ import net.miginfocom.swing.MigLayout;
 public abstract class NewMenuScreenContentPanel extends TexturedPanel
     implements IThemeStyle {
 
-    protected final NewMenuPanel mp;
+    private final NewMenuPanel mp;
 
     public NewMenuScreenContentPanel(boolean showKeyStripPanel) {
 
