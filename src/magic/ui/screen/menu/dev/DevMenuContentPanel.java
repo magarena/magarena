@@ -1,6 +1,5 @@
 package magic.ui.screen.menu.dev;
 
-import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +7,6 @@ import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;
-import javax.swing.BorderFactory;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 import magic.data.CardDefinitions;
@@ -18,12 +16,12 @@ import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
 import magic.ui.ScreenController;
 import magic.ui.dialog.GameStateRunner;
-import magic.ui.screen.menu.MenuScreenContentPanel;
+import magic.ui.screen.menu.main.NewMenuScreenContentPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
-class DevMenuContentPanel extends MenuScreenContentPanel {
+class DevMenuContentPanel extends NewMenuScreenContentPanel {
 
     private static final FileFilter TEST_FILE_FILTER = new FileFilter() {
         @Override
@@ -37,7 +35,7 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
     };
 
     DevMenuContentPanel() {
-        super("DevMode Menu", true);
+        super(false);
         addMenuItem("Load game", this::doLoadSavedGame);
         addMenuItem("Load test class", this::doLoadTestClass);
         addMenuItem("Create missing cards file", "Creates CardsMissingInMagarena.txt for use with ScriptsBuilder.", this::doSaveMissingCardsFile);
@@ -45,19 +43,11 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
         if (GeneralConfig.isGameStatsOn()) {
             addMenuItem("Game stats", this::showStatsScreen);
         }
-        addSpace();
-        addSpace();
-        addMenuItem("Main menu", this::onCloseMenu);
         if (MagicSystem.isDevMode()) {
-            addSpace();
-            addSpace();
-            addSpace();
-            addSpace();
             addSpace();
             addMenuItem("work-in-progress...", 16, this::showWipMenuScreen);
         }
         refreshMenuLayout();
-        mp.setBorder(BorderFactory.createLineBorder(Color.RED));
     }
 
     private void showWipMenuScreen() {
@@ -71,10 +61,6 @@ class DevMenuContentPanel extends MenuScreenContentPanel {
     private void doLoadTestClass() {
         MagicSystem.setIsTestGame(true);
         new GameStateRunner();
-    }
-
-    private void onCloseMenu() {
-        ScreenController.closeActiveScreen(false);
     }
 
     private void doLoadSavedGame() {
