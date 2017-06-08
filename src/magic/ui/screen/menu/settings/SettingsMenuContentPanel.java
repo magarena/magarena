@@ -6,20 +6,19 @@ import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.dialog.FiremindWorkerDialog;
-import magic.ui.screen.menu.MenuScreenContentPanel;
+import magic.ui.screen.menu.main.NewMenuScreenContentPanel;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
-class SettingsMenuContentPanel extends MenuScreenContentPanel {
+class SettingsMenuContentPanel extends NewMenuScreenContentPanel {
 
     // translatable strings.
-    private static final String _S1 = "Settings Menu";
     private static final String _S2 = "Preferences";
     private static final String _S3 = "Setup card images";
     private static final String _S4 = "Run Firemind Worker";
     private static final String _S5 = "Toggle full-screen on/off";
-    private static final String _S6 = "Close menu";
+    private static final String _S6 = "Main menu";
     private static final String _S7 = "Reset & Restart";
     private static final String _S11 = "Reset settings to default and run startup wizard?";
     private static final String _S12 = "This action cannot be undone!";
@@ -30,7 +29,7 @@ class SettingsMenuContentPanel extends MenuScreenContentPanel {
     private static FiremindWorkerDialog firemindWorkerDialog;
 
     SettingsMenuContentPanel() {
-        super(MText.get(_S1), true);
+        super(false);
         addMenuItem(MText.get(_S2), this::showPreferencesDialog);
         addMenuItem(MText.get(_S3), this::showDowloadImagesDialog);
         addMenuItem(MText.get(_S4), this::showFiremindWorkerDialog);
