@@ -4,13 +4,20 @@ import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;
 import magic.data.GeneralConfig;
+import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
+import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
+import magic.ui.screen.widget.MenuButton;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
-public class MainMenuScreen extends MScreen {
+public class MainMenuScreen extends HeaderFooterScreen {
+
+    // translatable strings
+    private static final String _S1 = "Main menu";
+    private static final String _S2 = "Quit";
 
     private static final KeyboardFocusManager KBM = KeyboardFocusManager.getCurrentKeyboardFocusManager();
 
@@ -44,13 +51,20 @@ public class MainMenuScreen extends MScreen {
     };
 
     public MainMenuScreen() {
+        super(MText.get(_S1));
         MagicSystem.setIsTestGame(false);
         contentPanel = new MainMenuContentPanel();
         setMainContent(contentPanel);
+        setLeftFooter(null);
+        addToFooter(MenuButton.build(this::doCloseScreen, MText.get(_S2)));
         setWikiPage(WikiPage.MAIN_MENU);
         if (!MagicSystem.isDevMode()) {
             KBM.addKeyEventDispatcher(keyEventDispatcher);
         }
+    }
+
+    private void doCloseScreen() {
+        ScreenController.closeActiveScreen();
     }
 
     private void showDevModeMenuItem() {
