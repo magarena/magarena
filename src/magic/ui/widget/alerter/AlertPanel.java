@@ -26,7 +26,7 @@ public class AlertPanel extends JPanel {
     }
 
     private void refreshLayout() {
-        miglayout.setLayoutConstraints("insets 1 2 0 4, hidemode 3");
+        miglayout.setLayoutConstraints("insets 1 2 0 4, hidemode 3, ay center, ax center");
         for (AlertButton btn : alertButtons) {
             add(btn);
         }

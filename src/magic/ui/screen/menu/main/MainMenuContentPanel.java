@@ -4,7 +4,6 @@ import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.exception.InvalidDeckException;
 import magic.translate.MText;
 import magic.ui.ScreenController;
-import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -18,13 +17,9 @@ class MainMenuContentPanel extends NewMenuScreenContentPanel {
     private static final String _S6 = "Settings";
     private static final String _S7 = "Help";
 
-    private static final AlertPanel alertPanel = new AlertPanel();
-
     MainMenuContentPanel() {
         super(false);
         setMenuItems(MagicSystem.isDevMode());
-        add(alertPanel);
-        refreshAlerts();
     }
 
     private void setMenuItems(boolean showDevMenuItem) {
@@ -40,10 +35,6 @@ class MainMenuContentPanel extends NewMenuScreenContentPanel {
             addMenuItem("DevMode", 16, this::showDevMenu);
         }
         refreshMenuLayout();
-    }
-
-    void refreshAlerts() {
-        alertPanel.refreshAlerts();
     }
 
     private void doResumeDuel() {

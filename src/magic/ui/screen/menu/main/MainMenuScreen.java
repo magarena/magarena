@@ -10,6 +10,7 @@ import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -20,6 +21,7 @@ public class MainMenuScreen extends HeaderFooterScreen {
     private static final String _S2 = "Quit";
 
     private static final KeyboardFocusManager KBM = KeyboardFocusManager.getCurrentKeyboardFocusManager();
+    private static final AlertPanel alertPanel = new AlertPanel();
 
     private final MainMenuContentPanel contentPanel;
 
@@ -55,12 +57,14 @@ public class MainMenuScreen extends HeaderFooterScreen {
         MagicSystem.setIsTestGame(false);
         contentPanel = new MainMenuContentPanel();
         setMainContent(contentPanel);
+        setHeaderContent(alertPanel);
         setLeftFooter(null);
         addToFooter(MenuButton.build(this::doCloseScreen, MText.get(_S2)));
         setWikiPage(WikiPage.MAIN_MENU);
         if (!MagicSystem.isDevMode()) {
             KBM.addKeyEventDispatcher(keyEventDispatcher);
         }
+        alertPanel.refreshAlerts();
     }
 
     private void doCloseScreen() {
@@ -78,7 +82,7 @@ public class MainMenuScreen extends HeaderFooterScreen {
     public void updateMissingImagesNotification() {
         if (GeneralConfig.getInstance().isMissingFiles()) {
             GeneralConfig.getInstance().setIsMissingFiles(false);
-            contentPanel.refreshAlerts();
+            alertPanel.refreshAlerts();
         }
     }
 
