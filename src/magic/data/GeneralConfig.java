@@ -189,6 +189,9 @@ public class GeneralConfig {
     private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
     private String cardFlowScreenSettings;
 
+    private static final String CUSTOM_FONTS = "custom.fonts";
+    private boolean useCustomFonts = true;
+
     private GeneralConfig() { }
 
     public Proxy getProxy() {
@@ -591,6 +594,7 @@ public class GeneralConfig {
         cardDisplayMode = CardImageDisplayMode.valueOf(properties.getProperty(CARD_DISPLAY_MODE, cardDisplayMode.name()));
         logGameStats = Boolean.parseBoolean(properties.getProperty(GAME_STATS, "" + logGameStats));
         cardFlowScreenSettings = properties.getProperty(CARDFLOW_SCREEN_SETTINGS, "");
+        useCustomFonts = Boolean.parseBoolean(properties.getProperty(CUSTOM_FONTS, "" + useCustomFonts));
     }
 
     public void load() {
@@ -647,6 +651,7 @@ public class GeneralConfig {
         properties.setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
         properties.setProperty(GAME_STATS, String.valueOf(logGameStats));
         properties.setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
+        properties.setProperty(CUSTOM_FONTS, String.valueOf(useCustomFonts));
     }
 
     public void save() {
@@ -778,6 +783,14 @@ public class GeneralConfig {
 
     public void setCardFlowScreenSettings(String settings) {
         cardFlowScreenSettings = settings;
+    }
+
+    public boolean useCustomFonts() {
+        return useCustomFonts;
+    }
+
+    public void setUseCustomFonts(boolean b) {
+        useCustomFonts = b;
     }
 
 }

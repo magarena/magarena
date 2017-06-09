@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import magic.awt.MagicFont;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
@@ -245,7 +246,8 @@ class NewMenuButton extends JButton {
     }
 
     public static Font getDisplayFont() {
-        return MText.canUseCustomFonts() ? CUSTOM_FONT : DEFAULT_FONT;
+        return MText.canUseCustomFonts() && GeneralConfig.getInstance().useCustomFonts()
+            ? CUSTOM_FONT : DEFAULT_FONT;
     }
 
 }
