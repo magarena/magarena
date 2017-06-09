@@ -2,6 +2,7 @@ package magic.ui.screen.menu;
 
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -11,6 +12,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+import magic.awt.MagicFont;
 import magic.data.MagicIcon;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
@@ -27,6 +29,8 @@ class NewMenuButton extends JButton {
 
     private final static Color COLOR_NORMAL = Color.WHITE;
     private final static Color COLOR_DISABLED = Color.DARK_GRAY;
+    private static final Font CUSTOM_FONT = MagicFont.JaceBelerenBold.get().deriveFont(32f);
+    private static final Font DEFAULT_FONT = FontsAndBorders.FONT_MENU_BUTTON.deriveFont(30.0f);
 
     private boolean isRunnable;
     private boolean hasSeparator;
@@ -35,7 +39,7 @@ class NewMenuButton extends JButton {
         super(caption);
         this.isRunnable = (action != null);
         this.hasSeparator = showSeparator;
-        setFont(FontsAndBorders.FONT_MENU_BUTTON.deriveFont(30.0f));
+        setFont(getDisplayFont());
         setHorizontalAlignment(SwingConstants.CENTER);
         setForeground(COLOR_NORMAL);
         setButtonTransparent();
@@ -238,6 +242,10 @@ class NewMenuButton extends JButton {
     */
     public static NewMenuButton buildLayoutButton(final Runnable action) {
         return new NewLayoutButton(action);
+    }
+
+    public static Font getDisplayFont() {
+        return MText.canUseCustomFonts() ? CUSTOM_FONT : DEFAULT_FONT;
     }
 
 }
