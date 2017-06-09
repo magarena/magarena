@@ -1,17 +1,4 @@
-¦1.86¦1
-# 3410717526 eg. {f} will be replaced by an icon. | represents a new line.
-3410717526 = ▫Click on a creature to declare as attacker or remove from combat.|Press {f} to continue.
-3432516076 = ▫Error reading translation file
-3869587315 = ▫Ensure encoding is \"UTF-8 without BOM\".
-2230615025 = ▫Stacked
-3448258317 = ▫Unstacked
-1116470770 = ▫Increase by one
-2771525700 = ▫Maximum is ten.
-4055741459 = ▫Decrease by one
-0478911262 = ▫Invalid keywords file.
-1690697036 = ▫Main menu
-3818420395 = ▫Quit
-1445765220 = ▫Toggle full-screen on/off
+¦1.85¦1
 1441438772 = Est légal
 3128437712 = Est illégal
 3508543659 = Est interdit
@@ -62,6 +49,8 @@
 1759655335 = Choisissez des têtes ou des queues
 2805059655 = Choisissez une couleur.
 3462051701 = Déclarez les attaquants.
+# 0820565042 eg. {f} will be replaced by an icon. | represents a new line.
+0820565042 = Cliquez sur une créature pour déclarer comme attaquant ou supprimez-le du combat. | Appuyez sur {f} pour continuer.
 1341943828 = Déclarer les bloqueurs.
 2533594575 = Cliquez sur une créature pour déclarer comme bloqueur ou supprimer-le du combat. | Appuyez sur {f} pour continuer.
 4240891505 = Cliquez sur une créature attaquante pour déclarer comme bloqueur.
@@ -331,6 +320,10 @@
 2374856845 = Ajouter la Carte sélectionnée au Deck (ou à la rangée, clic gauche).
 4184661482 = Supprimer la Carte
 0736696355 = Supprimez la Carte sélectionnée du Deck (ou la rangée, clic droit).
+3615081709 = Incrément
+4194509842 = Augmenter la quantité par un. Maximum est dix.
+2069643244 = Décrement
+0391863698 = Diminuez la quantité par un. Minimum est un.
 1083993486 = Utilisez ce bouton pour supprimer la dernière instance d'une Carte.
 1544943228 = Ce Deck est illégal.\n\n%s
 3022729711 = Utilisez ce Deck
@@ -499,7 +492,9 @@
 2171396134 = Télécharger
 0534677077 = Images manquantes pour les Cartes non utilisées
 0790035322 = Mots-clés Glossaire
+1640912267 = Menu d'aide
 2874748309 = À propos de Magarena
+1034062502 = Fermer le menu
 0766317539 = Langage
 3297432705 = Fichier de traduction invalide.
 3987539703 = Nouveau duel
@@ -511,6 +506,8 @@
 0639716368 = Aide [F1]
 2258392056 = Ouvre la page wiki associée dans votre navigateur Internet.
 2224295428 = Importation...
+1898508145 = Paramètres du Menu
+2823720574 = Basculer en Mode Plein écran
 4067345257 = Réinitialiser et Redémarrer
 2586492251 = Réinitialiser les paramètres par défaut et lancer l'assistant de démarrage?
 0932815095 = %s jeux
