@@ -1,4 +1,4 @@
-¦1.68
+¦1.68¦1
 3665117018 = Houve um problema durante o processo de importação.
 0462512377 = Favor ver o seguinte arquivo para mais detalhes -
 0659992221 = Ver arquivo de registro
