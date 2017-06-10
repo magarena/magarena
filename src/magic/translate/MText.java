@@ -5,8 +5,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
@@ -275,7 +275,7 @@ public final class MText {
     public static String getTranslationVersion(String lang) {
         if (!lang.equals("English")) {
             File file = MagicFileSystem.getTranslationFile(lang);
-            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), UTF_CHAR_SET))) {
                 String line = br.readLine();
                 if (line != null && line.startsWith(HEADER_CHAR)) {
                     return line.substring(1).trim().split(HEADER_CHAR)[0];
