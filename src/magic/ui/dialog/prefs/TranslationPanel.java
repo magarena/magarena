@@ -146,7 +146,9 @@ class TranslationPanel extends JPanel {
         languageCombo.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                setStateOfActionButtons();
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    setStateOfActionButtons();
+                }
             }
         });
         languageCombo.setFocusable(false);
