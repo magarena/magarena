@@ -160,7 +160,7 @@ public class MagicMain {
         }
     }
 
-    private static void setPlayerDeck(String deckArg, DuelPlayerConfig player) {
+    public static void setPlayerDeck(String deckArg, DuelPlayerConfig player) {
 
         if (deckArg.isEmpty()) {
             player.setDeckProfile("Random;***");

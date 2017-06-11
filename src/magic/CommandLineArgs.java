@@ -10,8 +10,8 @@ class CommandLineArgs {
 
     private MagicAIImpl ai1 = MagicAIImpl.MMABFast;
     private MagicAIImpl ai2 = MagicAIImpl.MMABFast;
-    private int ai1Level = 8;
-    private int ai2Level = 8;
+    private int ai1Level = 6;
+    private int ai2Level = 6;
     private boolean isAnimationsEnabled = true;
     private int maxAiThreads = MagicAI.getMaxThreads();
     private boolean isDevMode = MagicSystem.isDevMode();
@@ -22,6 +22,7 @@ class CommandLineArgs {
     private String deck2 = "";
     private boolean showFps = false;
     private int fps;
+    private int duels = 1;
 
     CommandLineArgs(final String[] args) {
 
@@ -64,6 +65,13 @@ class CommandLineArgs {
 
             case "--deck2": // set player 2 deck (see wiki page for value syntax)
                 setDeck2(args[i + 1].trim());
+                break;
+
+            //
+            // HeadlessAiGame-only settings
+            //
+            case "--duels": // the number of duels to playe [--duels 1].
+                duels = Integer.parseInt(args[i + 1].trim());
                 break;
 
             //
@@ -195,6 +203,10 @@ class CommandLineArgs {
 
     int getFPS() {
         return fps;
+    }
+
+    int getDuels() {
+        return duels;
     }
 
 }
