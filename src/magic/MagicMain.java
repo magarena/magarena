@@ -40,14 +40,21 @@ public class MagicMain {
 
     public static void main(final String[] args) {
 
+        final CommandLineArgs cmdline = new CommandLineArgs(args);
+
+        // transfer control to HeadlessAIGame
+        if (cmdline.isHeadless()) {
+            HeadlessAIGame.main(cmdline);
+            return;
+        }
+
+        parseCommandLine(cmdline);
+
         Thread.setDefaultUncaughtExceptionHandler(new UiExceptionHandler());
 
         setSplashScreen();
 
         System.out.println(MagicSystem.getRuntimeParameters());
-
-        final CommandLineArgs cmdline = new CommandLineArgs(args);
-        parseCommandLine(cmdline);
 
         // show the data folder being used
         System.out.println("Data folder : "+ MagicFileSystem.getDataPath());

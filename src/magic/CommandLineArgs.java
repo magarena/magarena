@@ -21,6 +21,7 @@ class CommandLineArgs {
     private String deck1 = "";
     private String deck2 = "";
     private boolean showFps = false;
+    private boolean headless = false;
     private int fps;
     private int duels = 1;
 
@@ -70,6 +71,9 @@ class CommandLineArgs {
             //
             // HeadlessAiGame-only settings
             //
+            case "--headless":
+                headless = true;
+                break;
             case "--duels": // the number of duels to playe [--duels 1].
                 duels = Integer.parseInt(args[i + 1].trim());
                 break;
@@ -199,6 +203,10 @@ class CommandLineArgs {
 
     boolean showFPS() {
         return showFps;
+    }
+
+    boolean isHeadless() {
+        return headless;
     }
 
     int getFPS() {

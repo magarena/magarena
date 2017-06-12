@@ -14,7 +14,7 @@ import magic.ui.WikiPage;
 import magic.utility.MagicSystem;
 import magic.utility.ProgressReporter;
 
-public class HeadlessAiGame {
+public class HeadlessAIGame {
 
     private static final String H1 = String.join("", Collections.nCopies(60, "="));
     private static final String H2 = String.join("", Collections.nCopies(60, "-"));
@@ -64,9 +64,10 @@ public class HeadlessAiGame {
         MagicSystem.setIsDevMode(cmdline.isDevMode());
     }
 
-    private static void parseCommandLineAndRun(String[] args) {
+    public static void main(final CommandLineArgs cmdline) {
 
-        CommandLineArgs cmdline = new CommandLineArgs(args);
+        Thread.setDefaultUncaughtExceptionHandler(new ConsoleExceptionHandler());
+
         parseCommandLine(cmdline);
 
         MagicSystem.initialize(new ProgressReporter());
@@ -81,20 +82,6 @@ public class HeadlessAiGame {
         // run getGames() games getDuels() times.
         for (int i = 0; i < cmdline.getDuels(); i++) {
             runDuel(cmdline, i+1);
-        }
-    }
-
-    public static void main(final String[] args) {
-
-        Thread.setDefaultUncaughtExceptionHandler(new ConsoleExceptionHandler());
-
-        try {
-            parseCommandLineAndRun(args);
-        } catch (RuntimeException ex) {
-            System.err.println(ex);
-            System.err.println();
-            System.err.println("Usage: java -cp <path to Magarena.jar/exe> magic.HeadlessAiGame --help");
-            System.err.println("- to display wiki page in browser");
         }
     }
 
