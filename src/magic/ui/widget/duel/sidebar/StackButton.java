@@ -46,6 +46,14 @@ class StackButton extends PanelButton implements IChoiceViewer {
             public void mouseExited(MouseEvent e) {
                 controller.hideInfo();
             }
+            @Override
+            public void mousePressed(MouseEvent e) {
+                StackButton.this.dispatchEvent(e);
+            }
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                StackButton.this.dispatchEvent(e);
+            }
         });
 
         final JLabel itemLabel = new JLabel("#" + Integer.toString(itemNum));
