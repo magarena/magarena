@@ -10,13 +10,16 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
+import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.StackItemViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class StackViewer extends JPanel implements IChoiceViewer {
+public class StackViewer extends TexturedPanel
+    implements IChoiceViewer {
 
     private final SwingGameController controller;
     private final Collection<StackButton> buttons;
@@ -31,7 +34,7 @@ public class StackViewer extends JPanel implements IChoiceViewer {
         buttons=new ArrayList<>();
 
         refreshLayout();
-        setOpaque(false);
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
     }
 
     private void refreshLayout() {

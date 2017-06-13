@@ -1,18 +1,17 @@
 package magic.ui.widget;
 
-import magic.ui.FontsAndBorders;
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-import javax.swing.OverlayLayout;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+import javax.swing.OverlayLayout;
 import javax.swing.SwingUtilities;
+import magic.ui.FontsAndBorders;
 
 @SuppressWarnings("serial")
-public abstract class PanelButton extends TexturedPanel {
+public abstract class PanelButton extends JPanel {
 
     private final JPanel layeredPanel;
     private final JPanel overlayPanel;
@@ -21,6 +20,7 @@ public abstract class PanelButton extends TexturedPanel {
     public PanelButton() {
         setLayout(new BorderLayout());
         setBorder(FontsAndBorders.UP_BORDER);
+        setOpaque(false);
 
         // create subpanel with overlay manager so color overlay and buttons overlap
         layeredPanel = new JPanel();
