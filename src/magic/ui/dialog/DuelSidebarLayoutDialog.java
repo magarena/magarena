@@ -13,10 +13,10 @@ import javax.swing.ListSelectionModel;
 import magic.data.GeneralConfig;
 import magic.model.IUIGameController;
 import magic.translate.MText;
-import magic.ui.theme.Theme;
-import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -38,7 +38,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
 
     // CTR
     public DuelSidebarLayoutDialog(final IUIGameController controller) {
-        super(MText.get(_S1), new Dimension(280, 260));
+        super(MText.get(_S1), new Dimension(300, 260));
         this.controller = controller;
         currentLayout = GeneralConfig.getInstance().getDuelSidebarLayout();
         setLookAndFeel();
