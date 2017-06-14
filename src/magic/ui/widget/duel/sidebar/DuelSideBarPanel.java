@@ -61,6 +61,8 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         PlayerViewerInfo opponentInfo = controller.getGameViewerInfo().getOpponent();
         playerPanels[0] = new GamePlayerPanel(controller, playerInfo);
         playerPanels[1] = new GamePlayerPanel(controller, opponentInfo);
+        controller.registerChoiceViewer(playerPanels[0]);
+        controller.registerChoiceViewer(playerPanels[1]);
     }
 
     public GameStatusPanel getGameStatusPanel() {

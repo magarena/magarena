@@ -7,20 +7,18 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.helpers.ImageHelper;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.duel.animation.AnimationFx;
-import magic.ui.widget.duel.animation.MagicAnimations;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 
 @SuppressWarnings("serial")
-public class PlayerImagePanel extends AnimationPanel {
+public class PlayerImagePanel extends JPanel {
 
     private static final Font HEALTH_FONT = new Font("Dialog", Font.BOLD, 20);
 
@@ -30,7 +28,6 @@ public class PlayerImagePanel extends AnimationPanel {
     private int life = 0;
     private int damageColorOpacity = 0;
     private int healColorOpacity = 0;
-    private boolean isValidChoiceVisible = false;
 
     public PlayerImagePanel(final PlayerViewerInfo player) {
         this.player = player;
@@ -58,12 +55,9 @@ public class PlayerImagePanel extends AnimationPanel {
         drawHealthValueOverlay(g2d, 0, 0, activeImage);
         // monarch
         drawMonarchOverlay(g2d);
-        drawValidChoiceIndicator(g2d);
-
         // Animations
         drawDamageAlert(g2d);
         drawHealAlert(g2d);
-
     }
 
     private void drawMonarchOverlay(Graphics2D g2d) {
@@ -74,21 +68,6 @@ public class PlayerImagePanel extends AnimationPanel {
                 4,
                 null
             );
-        }
-    }
-
-    private void drawValidChoiceIndicator(Graphics2D g2d) {
-        if (MagicAnimations.isOn(AnimationFx.AVATAR_PULSE)) {
-            drawPulsingBorder(g2d);
-        } else {
-            drawValidChoiceOverlay(g2d);
-        }
-    }
-
-    private void drawValidChoiceOverlay(Graphics2D g2d) {
-        if (isValidChoiceVisible) {
-            g2d.setColor(ThemeFactory.getInstance().getCurrentTheme().getChoiceColor());
-            g2d.fillRect(0, 0, getWidth(), getHeight());
         }
     }
 
@@ -166,10 +145,4 @@ public class PlayerImagePanel extends AnimationPanel {
             timeline.play();
         }
     }
-
-    void showValidChoiceIndicator(boolean b) {
-        this.isValidChoiceVisible = b;
-        repaint();
-    }
-
 }

@@ -1,7 +1,6 @@
 package magic.ui.widget.duel.sidebar;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -12,13 +11,13 @@ import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.StackItemViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.PanelButton;
+import magic.ui.widget.ChoiceOverlayPanelButton;
 import magic.ui.widget.message.TextLabel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class StackButton extends PanelButton implements IChoiceViewer {
+class StackButton extends ChoiceOverlayPanelButton
+    implements IChoiceViewer {
 
     private final StackItemViewerInfo stackInfo;
     private final SwingGameController controller;
@@ -84,17 +83,18 @@ class StackButton extends PanelButton implements IChoiceViewer {
     }
 
     @Override
-    public void mouseClicked() {
+    public void onMouseClicked() {
         controller.processClick(stackInfo.itemOnStack);
     }
 
     @Override
     public void showValidChoices(final Set<?> validChoices) {
-        setValid(validChoices.contains(stackInfo.itemOnStack));
+        setIsValidChoice(validChoices.contains(stackInfo.itemOnStack));
     }
 
     @Override
-    public Color getValidColor() {
-        return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+    public void setIsValidChoice(boolean valid) {
+        super.setIsValidChoice(valid);
+        repaint();
     }
 }

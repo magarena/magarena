@@ -4,8 +4,8 @@ import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -18,10 +18,10 @@ import java.util.List;
 import java.util.Map;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import magic.ui.FontsAndBorders;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.FontsAndBorders;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -84,7 +84,7 @@ public class TextLabel extends JPanel {
 
             // so StackButton works when it is a selectable choice.
             private void doDispatchEvent(MouseEvent ev) {
-                ev.getComponent().getParent().getParent().getParent().dispatchEvent(ev);
+                ev.getComponent().getParent().getParent().dispatchEvent(ev);
             }
 
             @Override

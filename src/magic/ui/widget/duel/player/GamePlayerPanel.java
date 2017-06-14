@@ -1,21 +1,16 @@
 package magic.ui.widget.duel.player;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
 import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.screen.duel.game.SwingGameController;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.PanelButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -25,52 +20,27 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
     private static final int PANEL_HEIGHT = 82;
 
     private PlayerViewerInfo playerInfo;
-    private PlayerZoneButtonsPanel zoneButtonsPanel;
-    private PlayerImagePanel avatarPanel;
-    private final PanelButton avatarButton;
+    private final PlayerZoneButtonsPanel zoneButtonsPanel;
     private final PlayerCountersPanel countersPanel;
+    private final PlayerAvatarButton avatarButton;
 
-    public GamePlayerPanel(final SwingGameController controller, final PlayerViewerInfo playerInfo) {
+    public GamePlayerPanel(SwingGameController controller, final PlayerViewerInfo playerInfo) {
 
         this.playerInfo = playerInfo;
+
+        zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo, controller);
+        avatarButton = new PlayerAvatarButton(playerInfo, controller);
+        countersPanel = new PlayerCountersPanel();
+
+        setLayout(new MigLayout("flowy, insets 0, gap 4 1, wrap 2"));
+        add(avatarButton, "w 80!, h 80!, spany 2");
+        add(getPlayerLabel(), "gaptop 3");
+        add(zoneButtonsPanel, "w 100%, h 100%");
+        add(countersPanel, "w 100%, h 100%, spany 2");
 
         setBorder(FontsAndBorders.BLACK_BORDER);
         setPreferredSize(new Dimension(0, PANEL_HEIGHT));
         setMinimumSize(getPreferredSize());
-
-        zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo, controller);
-
-        avatarPanel = new PlayerImagePanel(playerInfo);
-        avatarPanel.setOpaque(false);
-
-        avatarButton = new PanelButton() {
-            @Override
-            public Color getValidColor() {
-                return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-            }
-            @Override
-            public void mouseClicked() {
-                controller.processClick(playerInfo.player);
-            }
-        };
-        avatarButton.setComponent(avatarPanel);
-
-        JPanel panel1 = new JPanel(new MigLayout("flowy, insets 0, gap 4 1, wrap 2"));
-        panel1.setOpaque(false);
-        panel1.add(avatarButton, "w 80!, h 80!, spany 2");
-        panel1.add(getPlayerLabel(), "gaptop 3");
-        panel1.add(zoneButtonsPanel, "w 100%, h 100%");
-
-        countersPanel = new PlayerCountersPanel();
-        panel1.add(countersPanel, "w 100%, h 100%, spany 2");
-
-        setLayout(new MigLayout("insets 0, gap 0"));
-        add(panel1, "w 100%, h 100%");
-
-        if (controller != null) {
-            controller.registerChoiceViewer(this);
-        }
-
     }
 
     private JLabel getPlayerLabel() {
@@ -85,23 +55,15 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
 
     @Override
     public void showValidChoices(Set<?> validChoices) {
-
+        avatarButton.showAsValidChoice(isThisPlayerValidChoice(validChoices));
         if (playerInfo.isHuman()) {
             zoneButtonsPanel.showValidChoices(validChoices);
-        }
-
-        final boolean isValid = isThisPlayerValidChoice(validChoices);
-        if (GeneralConfig.getInstance().showGameplayAnimations()) {
-            avatarPanel.doPulsingBorderAnimation(isValid);
-            avatarButton.setValidNoOverlay(isValid);
-        } else {
-            avatarButton.setValid(isValid);
         }
     }
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {
         this.playerInfo = playerInfo;
-        avatarPanel.updateDisplay(playerInfo);
+        avatarButton.updateDisplay(playerInfo);
         zoneButtonsPanel.updateDisplay(playerInfo);
         countersPanel.updateDisplay(playerInfo);
     }
