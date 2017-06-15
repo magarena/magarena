@@ -1,4 +1,7 @@
 # Magarena
+
+[![CircleCI](https://circleci.com/gh/magarena/magarena.svg?style=shield)](https://circleci.com/gh/magarena/magarena)
+
 Homepage: http://magarena.github.io
 
 Forum   : http://www.slightlymagic.net/forum/viewforum.php?f=82
