@@ -1,6 +1,9 @@
 # Magarena
 
 [![CircleCI](https://circleci.com/gh/magarena/magarena.svg?style=shield)](https://circleci.com/gh/magarena/magarena)
+[![](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
+
+
 
 Homepage: http://magarena.github.io
 
