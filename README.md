@@ -1,8 +1,7 @@
 [![Magarena logo](https://raw.githubusercontent.com/wiki/magarena/magarena/screenshots/bw-logo.png)](https://magarena.github.io/)
 
 [![CircleCI](https://circleci.com/gh/magarena/magarena.svg?style=shield)](https://circleci.com/gh/magarena/magarena)
-[![](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
-
+[![Total downloads of latest release of Magarena](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
 
 
 Homepage: http://magarena.github.io
