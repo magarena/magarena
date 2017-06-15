@@ -8,32 +8,7 @@ Homepage: http://magarena.github.io
 
 Forum   : http://www.slightlymagic.net/forum/viewforum.php?f=82
 
-Requires: Java Runtime Environment 8 (http://java.com) or above must be installed on your computer
-
-Starting Magarena:
-* On Windows, double click on Magarena.exe
-* On Linux, execute ./Magarena.sh.
-* On Mac, double click the Magarena icon
-
-### Keyboard Controls
-
-#### General
-* Escape : pauses game and displays options for current screen.
-         if no options associated with screen then closes screen.
-* F11    : toggle full screen mode.
-* F12    : hide UI so you can admire the background art in all its glory!
-
-#### Duel Screen
-* Right arrow, Space              : action button
-* Shift+Right arrow, Shift+Space  : skip until end of turn
-* Left arrow, Backspace, Delete   : undo button
-* Y key                           : yes button
-* N key                           : no button
-* S key                           : switch between player and AI view
-
-Selecting the AI to play against:
-  The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
-  The difficulty level is the maximum number of seconds the AI has to make a move.
+Requires Java 8 or greater (see [Getting Started](https://github.com/magarena/magarena/wiki/Getting-Started)).
 
 ### Thanks to
 -  ubeefx for creating such a great game
