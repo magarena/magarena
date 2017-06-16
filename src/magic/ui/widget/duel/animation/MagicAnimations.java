@@ -38,7 +38,6 @@ public class MagicAnimations {
 
         if (isOn(AnimationFx.NEW_TURN_MSG) && isNewTurnEvent(oldGameInfo, newGameInfo)) {
             gamePanel.doNewTurnNotification(newGameInfo);
-//            return getNewTurnAnimation(newGameInfo, gamePanel);
         }
 
         return null;
@@ -62,11 +61,6 @@ public class MagicAnimations {
             return !isShowingMulliganScreen && config.getNewTurnAlertDuration() > 0;
         }
         return false;
-    }
-
-    private static MagicAnimation getNewTurnAnimation(GameViewerInfo newGameInfo, DuelPanel gamePanel) {
-        setLayoutInfo(gamePanel, newGameInfo, CardViewerInfo.NO_CARD);
-        return new NewTurnAnimation(newGameInfo, layoutInfo);
     }
 
     private static void setLayoutInfo(DuelPanel gamePanel, GameViewerInfo newGameInfo, CardViewerInfo cardInfo) {
