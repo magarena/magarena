@@ -142,7 +142,7 @@ class ScreenContentPanel extends JPanel implements IPlayerProfileListener {
     }
 
     @Override
-    public void PlayerProfileSelected(PlayerProfile player) {
+    public void playerProfileSelected(PlayerProfile player) {
         getDuelPlayerPanel(player).setPlayer(player);
         saveSelectedPlayerProfile(player);
     }
