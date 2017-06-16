@@ -147,7 +147,7 @@ public class ImagePermanentsViewer extends JPanel {
             float largestScaledCardSize = 0;
 
             // approximate number of rows needed to contain all the cards
-            for (r = (creatures.size() == 0 || nonCreatures.size() == 0) ? 1 : 2; r < numCards; r++) {
+            for (r = (creatures.isEmpty() || nonCreatures.isEmpty()) ? 1 : 2; r < numCards; r++) {
                 float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
 
                 // max width and height for a card using this number of rows
