@@ -271,7 +271,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
     private synchronized void notifyPlayerDeleted(final PlayerProfile player) {
         for (final IPlayerProfileListener listener : listeners) {
-            listener.PlayerProfileDeleted(player);
+            listener.playerProfileDeleted(player);
         }
     }
 

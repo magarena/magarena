@@ -129,7 +129,7 @@ class ScreenContentPanel extends JPanel implements IPlayerProfileListener {
     }
 
     @Override
-    public void PlayerProfileDeleted(PlayerProfile deletedPlayer) {
+    public void playerProfileDeleted(PlayerProfile deletedPlayer) {
         if (deletedPlayer.isHuman()) {
             final PlayerProfile playerProfile = PlayerProfiles.getDefaultHumanPlayer();
             DuelConfig.getInstance().setPlayerProfile(0, playerProfile);

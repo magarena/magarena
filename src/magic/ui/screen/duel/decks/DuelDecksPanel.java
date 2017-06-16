@@ -242,7 +242,7 @@ class DuelDecksPanel extends TexturedPanel
     }
 
     @Override
-    public void PlayerProfileDeleted(PlayerProfile deletedPlayer) {
+    public void playerProfileDeleted(PlayerProfile deletedPlayer) {
         PlayerProfile newPlayer = deletedPlayer.isHuman()
             ? PlayerProfiles.getDefaultHumanPlayer()
             : PlayerProfiles.getDefaultAiPlayer();
