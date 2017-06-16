@@ -5,8 +5,8 @@ import java.awt.LayoutManager;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.translate.MText;
-import magic.ui.widget.card.filter.dialog.CheckboxFilterDialog;
 import magic.ui.widget.card.filter.IFilterListener;
+import magic.ui.widget.card.filter.dialog.CheckboxFilterDialog;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -26,7 +26,7 @@ public class CostFilterPanel extends CheckBoxFilterPanel {
 
     @Override
     public boolean isCardValid(MagicCardDefinition card, int i) {
-        return values[i] == "X" ? card.hasX() : card.hasConvertedCost(Integer.parseInt(values[i]));
+        return "X".equals(values[i]) ? card.hasX() : card.hasConvertedCost(Integer.parseInt(values[i]));
     }
 
     @Override
