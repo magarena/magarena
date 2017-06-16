@@ -37,7 +37,6 @@ public class CardsCanvas extends JPanel {
 
     private static final Color MOUSE_OVER_COLOR = MagicStyle.getRolloverColor();
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 20);
-    private static final Color MOUSE_OVER_BORDER_COLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 160);
 
     private int dealCardDelay = 80; // milliseconds
     private int removeCardDelay = 50; // millseconds
@@ -297,6 +296,7 @@ public class CardsCanvas extends JPanel {
         }
     }
 
+//    private static final Color MOUSE_OVER_BORDER_COLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 160);
 //    private void drawHighlightBorder(Graphics2D g2d, Rectangle rect) {
 //        final int w = 4;
 //        g2d.setStroke(new BasicStroke(w));
