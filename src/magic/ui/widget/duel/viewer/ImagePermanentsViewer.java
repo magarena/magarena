@@ -8,7 +8,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
-import magic.data.GeneralConfig;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.duel.viewerinfo.PermanentViewerInfo;
@@ -17,7 +16,6 @@ import magic.ui.screen.duel.game.SwingGameController;
 @SuppressWarnings("serial")
 public class ImagePermanentsViewer extends JPanel {
 
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final int POSITION_SPACING = 60;
     private static final int HORIZONTAL_SPACING = 40;
     private static final int VERTICAL_SPACING = 30;
