@@ -15,15 +15,7 @@ public class ImagePanel extends JPanel {
 
     public enum ScaleMode {AUTOMATIC, PERFORMANCE, QUALITY};
 
-    private ScaleMode scaleMode = ScaleMode.AUTOMATIC;
-
-    // If the display image has a diagonal length less than this
-    // value and scale mode is AUTOMATIC then render using re-sampling
-    // for improved image quality.
-    private int highQualityDiagonalMaximum = 415;
-
     private BufferedImage sourceImage = null;
-    private BufferedImage scaledImage = null;
 
     private Dimension sourceSizeWhenVertical;
     private Dimension sourceSizeWhenHorizontal;
@@ -55,10 +47,6 @@ public class ImagePanel extends JPanel {
         this.sourceSizeWhenHorizontal = new Dimension(image.getHeight(), image.getWidth());
     }
 
-    public void setScaleMode(ScaleMode mode) {
-        this.scaleMode = mode;
-    }
-
     public void repack() {
         this.setSize(this.getDisplayedImageSize());
     }
@@ -87,18 +75,12 @@ public class ImagePanel extends JPanel {
      * can ONLY have either a vertical or horizontal orientation.
      */
     public void setRotation(int degrees) {
-        this.degreesOfRotation = degrees; // getRotationToNearest(degrees, 90);
+        this.degreesOfRotation = degrees;
         repaint();
     }
 
     public int getRotation() {
         return this.degreesOfRotation;
-    }
-
-    private int getRotationToNearest(int requestedRotation, int nearestRotation) {
-        // Ensure requested rotation falls with -360..0..360 degree range first.
-        requestedRotation = requestedRotation - (360 * (requestedRotation / 360));
-        return (int)(Math.rint((double) requestedRotation / nearestRotation) * nearestRotation);
     }
 
     public Dimension getSourceImageSize(boolean asDisplayed) {
@@ -123,58 +105,9 @@ public class ImagePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (sourceImage != null) {
-//            if (this.scaleMode == ScaleMode.AUTOMATIC) {
-//                if (this.getDisplayedImageDiagonalLength() <= this.highQualityDiagonalMaximum) {
-//                    paintWithResampling((Graphics2D) g);
-//                } else {
-//                    paintWithoutResampling((Graphics2D) g);
-//                }
-//            } else if (this.scaleMode == ScaleMode.QUALITY) {
-//                paintWithResampling((Graphics2D) g);
-//            } else {
-//                paintWithoutResampling((Graphics2D) g);
-//            }
             paintWithoutResampling((Graphics2D) g);
         }
     }
-
-//    private void paintWithResampling(Graphics2D g2d) {
-//        System.out.println("paintWithResampling()");
-//
-//        if (sizeToFit) { setScaleToFit(); }
-//
-//        if (this.imageScale != 1) {
-//            createScaledImage();
-//            if (scaledImage != null) {
-//                //System.out.println("Scaling");
-//                    g2d.drawImage(scaledImage, getAffineTransform(scaledImage, false), null);
-//            }
-//        } else {
-//            //System.out.println("No scaling");
-//            g2d.drawImage(sourceImage, getAffineTransform(sourceImage, false), null);
-//        }
-//
-//    }
-
-//    /**
-//     * Uses Morten Nobel's java-image-scaling library to resize image.
-//     * <p>
-//     * This produces superior quality to the affine scaling as image sizes
-//     * are reduced but at the cost of performance and increased cpu usage.
-//     * </p>
-//     * @throws InterruptedException
-//     * @throws InvocationTargetException
-//     */
-//    private void createScaledImage() {
-//        float scaling = (float) ImagePanel.this.imageScale;
-//        if (scaling != 1) {
-//            DimensionConstrain d = DimensionConstrain.createRelativeDimension(scaling);
-//            ResampleOp resampler = new ResampleOp(d);
-//            scaledImage = resampler.filter(sourceImage, null);
-//        } else {
-//            scaledImage = sourceImage;
-//        }
-//    }
 
     /**
      * Renders image without using any additional re-sampling.
@@ -185,7 +118,6 @@ public class ImagePanel extends JPanel {
      * </p>
      */
     private void paintWithoutResampling(Graphics2D g2d) {
-//        System.out.println("paintWithoutResampling()");
         // These make a visible difference...
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
         g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
@@ -313,7 +245,6 @@ public class ImagePanel extends JPanel {
 
     public void clearImage() {
         this.sourceImage = null;
-        this.scaledImage = null;
         repaint();
     }
 
