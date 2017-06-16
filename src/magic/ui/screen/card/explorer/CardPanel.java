@@ -13,7 +13,7 @@ import magic.model.MagicCardDefinition;
 import magic.translate.MText;
 import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.dialog.prefs.ImageSizePresets;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

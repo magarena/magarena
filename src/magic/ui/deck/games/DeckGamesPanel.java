@@ -14,7 +14,7 @@ import magic.ui.screen.decks.IDeckView;
 import magic.ui.screen.stats.IPagination;
 import magic.ui.screen.stats.PaginationPanel;
 import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

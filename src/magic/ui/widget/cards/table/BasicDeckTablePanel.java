@@ -7,7 +7,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

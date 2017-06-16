@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.ScreenController;
-import magic.ui.widget.M.MFileLink;
+import magic.ui.mwidgets.MFileLink;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;

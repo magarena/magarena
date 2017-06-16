@@ -13,7 +13,7 @@ import javax.swing.table.TableColumnModel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;

@@ -1,6 +1,6 @@
 package magic.ui.widget.card.filter;
 
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 
 @SuppressWarnings("serial")
 class FilterCheckBox extends MCheckBox

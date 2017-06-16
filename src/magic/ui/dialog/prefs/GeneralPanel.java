@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -21,7 +21,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
 import magic.translate.MText;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

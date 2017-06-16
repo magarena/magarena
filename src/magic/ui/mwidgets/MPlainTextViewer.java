@@ -1,4 +1,4 @@
-package magic.ui.widget.M;
+package magic.ui.mwidgets;
 
 import javax.swing.JComponent;
 import javax.swing.JTextArea;

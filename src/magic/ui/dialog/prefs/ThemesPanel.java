@@ -16,7 +16,7 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.ColorButton;
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -7,7 +7,7 @@ import javax.swing.JSplitPane;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.CardSideBar;
-import magic.ui.widget.M.MTextFileViewer;
+import magic.ui.mwidgets.MTextFileViewer;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 

@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import magic.model.MagicColor;
 import magic.ui.MagicImages;
 import magic.ui.helpers.MouseHelper;
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.card.filter.button.FilterPanel;
 import net.miginfocom.swing.MigLayout;
 

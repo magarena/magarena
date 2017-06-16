@@ -3,7 +3,7 @@ package magic.ui.helpers;
 import java.awt.Component;
 import java.awt.Cursor;
 import magic.ui.ScreenController;
-import magic.ui.widget.M.MWidget;
+import magic.ui.mwidgets.MWidget;
 
 public final class MouseHelper {
 

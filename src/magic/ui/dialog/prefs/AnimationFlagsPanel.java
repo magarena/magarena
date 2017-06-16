@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.translate.MText;
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.duel.animation.AnimationFx;
 import net.miginfocom.swing.MigLayout;
 

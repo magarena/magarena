@@ -44,7 +44,7 @@ import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 

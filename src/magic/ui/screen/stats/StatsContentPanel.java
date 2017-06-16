@@ -11,8 +11,8 @@ import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import magic.data.stats.h2.H2Database;
 import magic.ui.FontsAndBorders;
-import magic.ui.widget.M.MFileLink;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MFileLink;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

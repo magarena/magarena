@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import magic.model.MagicCardDefinition;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.duel.viewer.DeckEditorCardViewer;
 import net.miginfocom.swing.MigLayout;
 

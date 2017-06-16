@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import magic.data.GeneralConfig;
 import magic.translate.MText;
-import magic.ui.widget.M.MCheckBox;
+import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 

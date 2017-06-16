@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.widget.M.MScrollPane;
+import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.deck.DeckInfoPanel;
 import magic.ui.widget.deck.stats.IPwlWorkerListener;

@@ -1,4 +1,4 @@
-package magic.ui.widget.M;
+package magic.ui.mwidgets;
 
 import java.awt.Color;
 import java.awt.event.ActionListener;

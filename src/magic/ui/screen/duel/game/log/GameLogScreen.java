@@ -13,7 +13,7 @@ import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.M.MTextFileViewer;
+import magic.ui.mwidgets.MTextFileViewer;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")

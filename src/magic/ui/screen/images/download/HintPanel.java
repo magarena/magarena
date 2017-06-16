@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.ui.MagicImages;
-import magic.ui.widget.M.MWidget;
+import magic.ui.mwidgets.MWidget;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
