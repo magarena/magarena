@@ -223,7 +223,6 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         final FontMetrics metrics=g.getFontMetrics();
         final Graphics2D g2d=(Graphics2D)g;
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-        final Stroke defaultStroke = g2d.getStroke();
 
         final Point mousePoint = MouseInfo.getPointerInfo().getLocation();
         SwingUtilities.convertPointFromScreen(mousePoint, this);
@@ -297,13 +296,13 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
                 mouseOverRect = rect;
             }
         }
-        paintMouseOverHighlight2(g2d, mouseOverRect, defaultStroke);
+        paintMouseOverHighlight2(g2d, mouseOverRect);
     }
 
     /**
      * draw filled rectangle using translucent color over visible portion of card.
      */
-    private void paintMouseOverHighlight2(final Graphics2D g2d, final Rectangle rect, final Stroke defaultStroke) {
+    private void paintMouseOverHighlight2(final Graphics2D g2d, final Rectangle rect) {
         g2d.setPaint(MOUSE_OVER_TCOLOR);
         g2d.fillRect(rect.x + 1, rect.y + 1, rect.width - 2, rect.height - 2);
     }
