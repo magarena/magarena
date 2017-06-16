@@ -1,20 +1,20 @@
 package magic.ui.utility;
 
-import magic.ui.helpers.ImageHelper;
 import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.font.TextAttribute;
 import java.awt.image.ImageObserver;
+import java.text.AttributedString;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import javax.swing.ImageIcon;
-import java.text.AttributedString;
-import java.awt.font.TextAttribute;
 import magic.data.MagicIcon;
+import magic.data.TextImages;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
@@ -22,11 +22,11 @@ import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicManaActivation;
-import magic.ui.MagicImages;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.theme.AbilityIcon;
 import magic.utility.MagicSystem;
-import magic.data.TextImages;
 
 public class ImageDrawingUtils {
 
@@ -115,7 +115,7 @@ public class ImageDrawingUtils {
                 final MagicIcon icon = TextImages.getIcon(counterType.getText());
                 g.drawImage(MagicImages.getIcon(icon).getImage(),ax,ay,observer);
                 if (amount > 1) {
-                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14);
                 }
                 ax+=inc;
             }
@@ -123,7 +123,7 @@ public class ImageDrawingUtils {
         return ax;
     }
 
-    private static void drawStringWithOutline(final Graphics g, final String str, int x, int y, final ImageObserver observer) {
+    private static void drawStringWithOutline(final Graphics g, final String str, int x, int y) {
         g.setColor(FontsAndBorders.GRAY2);
         g.drawString(str,x+1,y);
         g.drawString(str,x-1,y);
