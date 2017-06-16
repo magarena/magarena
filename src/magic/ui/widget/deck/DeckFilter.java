@@ -73,10 +73,7 @@ public class DeckFilter {
         if (!isDeckDescValid(deck)) {
             return false;
         }
-        if (!isCardInDeck(deck)) {
-            return false;
-        }
-        return true;
+        return isCardInDeck(deck);
     }
 
     private boolean isDeckDescValid(final MagicDeck deck) {
