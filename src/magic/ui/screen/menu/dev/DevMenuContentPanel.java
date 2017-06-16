@@ -35,7 +35,6 @@ class DevMenuContentPanel extends NewMenuScreenContentPanel {
     };
 
     DevMenuContentPanel() {
-        super(false);
         addMenuItem("Load game", this::doLoadSavedGame);
         addMenuItem("Load test class", this::doLoadTestClass);
         addMenuItem("Create missing cards file", "Creates CardsMissingInMagarena.txt for use with ScriptsBuilder.", this::doSaveMissingCardsFile);

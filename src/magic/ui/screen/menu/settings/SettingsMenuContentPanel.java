@@ -29,7 +29,6 @@ class SettingsMenuContentPanel extends NewMenuScreenContentPanel {
     private static FiremindWorkerDialog firemindWorkerDialog;
 
     SettingsMenuContentPanel() {
-        super(false);
         addMenuItem(MText.get(_S2), this::showPreferencesDialog);
         addMenuItem(MText.get(_S3), this::showDowloadImagesDialog);
         addMenuItem(MText.get(_S4), this::showFiremindWorkerDialog);

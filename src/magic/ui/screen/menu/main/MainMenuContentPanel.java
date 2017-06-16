@@ -1,9 +1,9 @@
 package magic.ui.screen.menu.main;
 
-import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.exception.InvalidDeckException;
 import magic.translate.MText;
 import magic.ui.ScreenController;
+import magic.ui.screen.menu.NewMenuScreenContentPanel;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -18,7 +18,6 @@ class MainMenuContentPanel extends NewMenuScreenContentPanel {
     private static final String _S7 = "Help";
 
     MainMenuContentPanel() {
-        super(false);
         setMenuItems(MagicSystem.isDevMode());
     }
 

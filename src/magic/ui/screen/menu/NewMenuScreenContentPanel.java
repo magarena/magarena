@@ -7,7 +7,6 @@ import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.widget.KeysStripPanel;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -17,7 +16,7 @@ public abstract class NewMenuScreenContentPanel extends TexturedPanel
 
     private final NewMenuPanel mp;
 
-    public NewMenuScreenContentPanel(boolean showKeyStripPanel) {
+    public NewMenuScreenContentPanel() {
 
         mp = new NewMenuPanel();
 
@@ -26,11 +25,7 @@ public abstract class NewMenuScreenContentPanel extends TexturedPanel
         layout.setRowConstraints("[30!][100%, center][30!, bottom]");
         layout.setColumnConstraints("[center, fill, grow]");
         setLayout(layout);
-
         add(mp, "cell 0 1");
-        if (showKeyStripPanel) {
-            add(new KeysStripPanel());
-        }
 
         refreshStyle();
         setOpaque(false);

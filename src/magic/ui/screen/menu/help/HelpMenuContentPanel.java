@@ -16,7 +16,6 @@ class HelpMenuContentPanel extends NewMenuScreenContentPanel {
     private static final String _S6 = "Main menu";
 
     HelpMenuContentPanel() {
-        super(false);
         addMenuItem(MText.get(_S2), this::onReadMeMenu);
         addMenuItem(MText.get(_S3), this::onOnlineHelpMenu);
         addMenuItem(MText.get(_S4), this::onKeywordsMenu);
