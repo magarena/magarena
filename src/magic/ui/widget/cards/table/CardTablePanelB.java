@@ -1,13 +1,11 @@
 package magic.ui.widget.cards.table;
 
 import java.awt.Point;
-import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JViewport;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -100,19 +98,6 @@ public class CardTablePanelB extends CardsTablePanel
             table.setRowSelectionInterval(row, row);
             scrollRowToViewportCenter(row);
         }
-    }
-
-    private void scrollRowToViewportCenter(int row) {
-
-        JViewport viewport = (JViewport) table.getParent();
-        Rectangle viewRect = viewport.getViewRect();
-        Rectangle rect = table.getCellRect(row, 0, true);
-
-        int y = rect.y < viewRect.y || rect.y > (viewRect.y + viewRect.height)
-            ? rect.y - (viewRect.height / 2) + rect.height
-            : viewRect.y;
-
-        viewport.setViewPosition(new Point(viewRect.x, y));
     }
 
     public void setStyle() {
