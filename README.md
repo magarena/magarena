@@ -3,7 +3,8 @@
 [![CircleCI](https://circleci.com/gh/magarena/magarena.svg?style=shield)](https://circleci.com/gh/magarena/magarena)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6a4ee8930864225a7add5494af39a55)](https://www.codacy.com/app/Magarena/magarena?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=magarena/magarena&amp;utm_campaign=Badge_Grade)
 [![Latest version](https://img.shields.io/github/release/magarena/magarena.svg)](https://github.com/magarena/magarena/releases)
-[![Total downloads of latest release of Magarena](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
+[![Latest version total downloads](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
+[![All versions total downloads](https://img.shields.io/github/downloads/magarena/magarena/total.svg)](https://magarena.github.io/)
 
 Homepage: http://magarena.github.io
 
