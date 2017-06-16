@@ -42,10 +42,10 @@ class ContentPanel extends JPanel {
         this.screen = screen;
         setOpaque(false);
         add(new ImageSetsPanel(screen), "w 240!, h 100%");
-        add(getAvatarImageSetViewer(screen), "w 100%, h 100%");
+        add(getAvatarImageSetViewer(), "w 100%, h 100%");
     }
 
-    private JScrollPane getAvatarImageSetViewer(AvatarImagesScreen screen) {
+    private JScrollPane getAvatarImageSetViewer() {
 
         viewer = new TexturedPanel();
         viewer.setLayout(new WrapLayout());
