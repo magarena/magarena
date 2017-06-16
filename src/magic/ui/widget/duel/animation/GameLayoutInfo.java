@@ -8,7 +8,6 @@ public class GameLayoutInfo {
     private final Rectangle permanentsZone[] = new Rectangle[2];
     private final Rectangle libraryButton[] = new Rectangle[2];
     private final Rectangle handButton[] = new Rectangle[2];
-    private Rectangle cardInHand = new Rectangle();
     private Rectangle stackViewer = new Rectangle();
     private final Dimension gamePanelSize;
     private Rectangle turnPanel = new Rectangle();
@@ -23,10 +22,6 @@ public class GameLayoutInfo {
 
     public void setHandButtonLayout(int playerIndex, Rectangle rect) {
         handButton[playerIndex] = rect;
-    }
-
-    public void setCardInHandLayout(final Rectangle aRectangle) {
-        cardInHand = new Rectangle(aRectangle);
     }
 
     public void setStackLayout(Rectangle aRectangle) {

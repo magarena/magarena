@@ -2,7 +2,6 @@ package magic.ui.widget.duel.viewer;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -31,7 +30,6 @@ import magic.model.MagicType;
 import magic.ui.FontsAndBorders;
 import magic.ui.IChoiceViewer;
 import magic.ui.MagicImages;
-import magic.ui.duel.viewerinfo.CardViewerInfo;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.duel.game.SwingGameController;
 import magic.ui.theme.Theme;
@@ -311,26 +309,5 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
     public void showValidChoices(final Set<?> aValidChoices) {
         this.validChoices=aValidChoices;
         repaint();
-    }
-
-    public Point getCardPosition(final CardViewerInfo cardInfo) {
-        Point cardPosition = null;
-        for (int index=0; index < cardList.size(); index++) {
-            final MagicCard card = cardList.get(index);
-            if (card.getId() == cardInfo.getId()) {
-                cardPosition = cardPoints.get(index);
-                break;
-            }
-        }
-        if (cardPosition != null) {
-            cardPosition = new Point(
-                    cardPosition.x + getParent().getParent().getLocation().x + 45,
-                    cardPosition.y + getParent().getLocation().y);
-        }
-        return cardPosition;
-    }
-
-    public Dimension getCardSize() {
-        return new Dimension(CARD_WIDTH, CARD_HEIGHT);
     }
 }
