@@ -150,6 +150,16 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         return provider.getImage(index);
     }
 
+    private void drawCardImage(Graphics2D g2d, BufferedImage image, Rectangle startRect, Rectangle endRect) {
+        Rectangle drawRect = new Rectangle(
+            startRect.x - (int) ((startRect.x - endRect.x) * timelinePulse),
+            0,
+            startRect.width + (int) ((endRect.width - startRect.width) * timelinePulse),
+            startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
+        );
+        g2d.drawImage(image, drawRect.x, drawRect.y, drawRect.width, drawRect.height, null);
+    }
+
     private void drawLeadingImages(final Graphics2D g2d, final int activeSlotIndex) {
 
         if (activeImageIndex > 0) {
@@ -167,18 +177,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                                 : slots.get(imageSlot)
                         : slots.get(imageSlot + 1);
 
-                final Rectangle endRect = slots.get(imageSlot);
-
-                final Rectangle drawRect = new Rectangle(
-                        startRect.x - (int) ((startRect.x - endRect.x) * timelinePulse),
-                        0,
-                        startRect.width + (int) ((endRect.width - startRect.width) * timelinePulse),
-                        startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
-                );
-
-                final BufferedImage image = getImage(i);
-                g2d.drawImage(image, drawRect.x, drawRect.y, drawRect.width, drawRect.height, null);
-
+                drawCardImage(g2d, getImage(i), startRect, slots.get(imageSlot));
             }
         }
     }
@@ -204,18 +203,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
                                 ? slots.get(imageSlot + 1)
                                 : slots.get(imageSlot);
 
-                final Rectangle endRect = slots.get(imageSlot);
-
-                final Rectangle drawRect = new Rectangle(
-                        startRect.x - (int) ((startRect.x - endRect.x) * timelinePulse),
-                        0,
-                        startRect.width + (int) ((endRect.width - startRect.width) * timelinePulse),
-                        startRect.height + (int) ((endRect.height - startRect.height) * timelinePulse)
-                );
-
-                final BufferedImage image = getImage(i);
-                g2d.drawImage(image, drawRect.x, drawRect.y, drawRect.width, drawRect.height, null);
-
+                drawCardImage(g2d, getImage(i), startRect, slots.get(imageSlot));
             }
         }
     }
