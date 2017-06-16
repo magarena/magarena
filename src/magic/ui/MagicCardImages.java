@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.Arrays;
-import java.util.logging.Logger;
 import magic.cardBuilder.renderers.CardBuilder;
 import magic.data.GeneralConfig;
 import magic.exception.DownloadException;
@@ -24,8 +23,6 @@ public final class MagicCardImages {
         PROXY,
         PRINTED
     }
-
-    private static final Logger LOGGER = Logger.getLogger(MagicCardImages.class.getName());
 
     private static final String[] CUSTOM_IMAGE_ENDINGS = new String[]{".jpg", ".full.jpg"};
 
