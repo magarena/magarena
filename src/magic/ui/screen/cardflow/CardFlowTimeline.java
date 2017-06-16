@@ -1,13 +1,10 @@
 package magic.ui.screen.cardflow;
 
-import java.util.logging.Logger;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.callback.TimelineCallback;
 import org.pushingpixels.trident.ease.Spline;
 
 class CardFlowTimeline extends Timeline {
-
-    private static final Logger LOGGER = Logger.getLogger(CardFlowTimeline.class.getName());
 
     /**
      * Sets custom pulse behavior - higher frame rate, lower frame rate or dynamic frame rate.
