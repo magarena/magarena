@@ -160,7 +160,7 @@ public class ImagePermanentsViewer extends JPanel {
                     scaledCardWidth = (scaledCardHeight / CARD_HEIGHT) * CARD_WIDTH;
                 } else {
                     // width is limiting factor on size of scaled card
-                    scaledCardHeight = (scaledCardWidth / CARD_WIDTH) * CARD_HEIGHT;;
+                    scaledCardHeight = (scaledCardWidth / CARD_WIDTH) * CARD_HEIGHT;
                 }
                 numCardsPerRow = (float) Math.ceil(screenWidth / scaledCardWidth); // scaled -> more cards can fit per row
 
