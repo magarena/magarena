@@ -22,7 +22,6 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     // translatable strings
     @StringContext(eg = "as in 'Other' player zone")
     private static final String _S1 = "Choose a card";
-    private static final String _S2 = "Other : %s";
     private static final String _S3 = "%s Hand";
     private static final String _S4 = "%s Graveyard";
     private static final String _S5 = "%s Exile";
