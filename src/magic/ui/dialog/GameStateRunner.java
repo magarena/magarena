@@ -67,7 +67,7 @@ public class GameStateRunner
         return classes.toArray(new String[classes.size()]);
     }
 
-    private void LoadTestClassAndRun(String testClassName) {
+    private void loadTestClassAndRun(String testClassName) {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         ScreenController.showDuelGameScreen(TestGameBuilder.buildGame(testClassName));
         doCancelAndClose();
@@ -87,7 +87,7 @@ public class GameStateRunner
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (SwingUtilities.isLeftMouseButton(e) && e.getClickCount() == 2) {
-                    LoadTestClassAndRun(testClasses.getSelectedValue());
+                    loadTestClassAndRun(testClasses.getSelectedValue());
                 }
             }
         });
