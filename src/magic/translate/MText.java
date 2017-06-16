@@ -273,7 +273,7 @@ public final class MText {
     }
 
     public static String getTranslationVersion(String lang) {
-        if (!lang.equals("English")) {
+        if (!"English".equals(lang)) {
             File file = MagicFileSystem.getTranslationFile(lang);
             try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), UTF_CHAR_SET))) {
                 String line = br.readLine();

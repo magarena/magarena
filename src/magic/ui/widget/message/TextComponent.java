@@ -49,7 +49,7 @@ public class TextComponent extends TComponent {
         if (isInteractive() && messageStyle != MessageStyle.PLAINBOLDMONO) {
             return interactiveColor;
         }
-        if (text.equals("(") || text.equals(")")) {
+        if ("(".equals(text) || ")".equals(text)) {
             return messageStyle != MessageStyle.PLAINBOLDMONO
                 ? interactiveColor
                 : choiceColor;

@@ -50,7 +50,7 @@ public final class PlayerProfiles {
         List<Path> profilePaths = getDirectoryPaths(playersPath);
         if (profilePaths.isEmpty()) {
             try {
-                if (playerType.equals("human")) {
+                if ("human".equals(playerType)) {
                     createDefaultHumanPlayerProfiles();
                 } else {
                     createDefaultAiPlayerProfiles();

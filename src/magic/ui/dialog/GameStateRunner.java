@@ -18,8 +18,8 @@ import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingUtilities;
 import magic.test.TestGameBuilder;
-import magic.ui.ScreenController;
 import magic.translate.MText;
+import magic.ui.ScreenController;
 import magic.ui.dialog.button.CancelButton;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
@@ -58,8 +58,8 @@ public class GameStateRunner
             final String longClassName = c.substring(0, c.length() - ".class".length());
             final String shortClassName = longClassName.substring(longClassName.lastIndexOf(".") + 1);
             final boolean isValid = shortClassName.startsWith("Test")
-                && !shortClassName.equals("TestGameBuilder")
-                && !shortClassName.equals("TestGameBuilder$1");
+                && !"TestGameBuilder".equals(shortClassName)
+                && !"TestGameBuilder$1".equals(shortClassName);
             if (isValid) {
                 classes.add(shortClassName);
             }
