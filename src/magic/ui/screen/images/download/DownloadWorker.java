@@ -3,7 +3,6 @@ package magic.ui.screen.images.download;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.nio.file.Files;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -15,7 +14,6 @@ import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
 import magic.exception.DownloadException;
-import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
 import magic.ui.MagicLogFile;
 import magic.ui.PrintedCardImage;
@@ -71,22 +69,6 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
 
     private boolean isLoggingOn() {
         return isLogging && MagicSystem.isDevMode();
-    }
-
-    /**
-     * Experimental, currently only available in devMode and missing mode.
-     */
-    private void doLog(String cardName, CardTextLanguage aLang, URL cardUrl) {
-        if (isLoggingOn()) {
-            synchronized (missingLog) {
-                try {
-                    missingLog.log(cardName, aLang, cardUrl);
-                } catch (IOException ex) {
-                    System.err.println("doLog: " + ex);
-                    isLogging = false;
-                }
-            }
-        }
     }
 
     /**
