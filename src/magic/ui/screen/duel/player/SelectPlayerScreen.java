@@ -265,7 +265,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
     protected synchronized void notifyPlayerUpdated(final PlayerProfile player) {
         for (final IPlayerProfileListener listener : listeners) {
-            listener.PlayerProfileUpdated(player);
+            listener.playerProfileUpdated(player);
         }
     }
 

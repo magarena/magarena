@@ -234,7 +234,7 @@ class DuelDecksPanel extends TexturedPanel
     }
 
     @Override
-    public void PlayerProfileUpdated(PlayerProfile player) {
+    public void playerProfileUpdated(PlayerProfile player) {
         tabbedPane.setTabComponentAt(
             tabbedPane.getSelectedIndex(),
             new PlayerPanel(player, duel)
