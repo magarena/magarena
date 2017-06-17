@@ -31,8 +31,8 @@ class MulliganLayeredPane extends JLayeredPane {
     private void updateLayout() {
         removeAll();
         // layers from bottom to top.
-        add(contentPanel, new Integer(0));
-        add(flashOverlay, new Integer(1));
+        add(contentPanel, Integer.valueOf(0));
+        add(flashOverlay, Integer.valueOf(1));
         revalidate();
     }
 
