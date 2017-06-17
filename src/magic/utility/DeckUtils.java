@@ -1,13 +1,10 @@
 package magic.utility;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -37,6 +34,7 @@ import magic.model.MagicRandom;
 import magic.translate.MText;
 import magic.utility.MagicFileSystem.DataPath;
 import org.apache.commons.io.FilenameUtils;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class DeckUtils {
 
