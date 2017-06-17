@@ -25,6 +25,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
         return cost;
     }
 
+    @Override
     public String toString() {
         return cost.getText() + x;
     }
