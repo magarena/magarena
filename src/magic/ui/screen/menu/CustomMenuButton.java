@@ -13,13 +13,9 @@ class CustomMenuButton extends MenuButton {
     private static final Font CUSTOM_FONT = MagicFont.JaceBelerenBold.get().deriveFont(32f);
     private static final Font DEFAULT_FONT = FontsAndBorders.FONT_MENU_BUTTON.deriveFont(30.0f);
 
-    CustomMenuButton(String caption, AbstractAction action, String tooltip, boolean showSeparator) {
+    CustomMenuButton(String caption, AbstractAction action, String tooltip) {
         super(caption, action, tooltip);
         setFont(getDisplayFont());
-    }
-
-    CustomMenuButton(String caption, AbstractAction action, String tooltip) {
-        this(caption, action, tooltip, true);
     }
 
     CustomMenuButton(String caption, AbstractAction action) {
