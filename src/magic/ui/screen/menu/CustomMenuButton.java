@@ -26,10 +26,6 @@ class CustomMenuButton extends MenuButton {
         this(caption, action, null);
     }
 
-    CustomMenuButton() {
-        // default to super class.
-    }
-
     public static Font getDisplayFont() {
         return MText.canUseCustomFonts() && GeneralConfig.getInstance().useCustomFonts()
             ? CUSTOM_FONT

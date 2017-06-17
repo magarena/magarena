@@ -62,8 +62,6 @@ class NewActionBarButton extends CustomMenuButton {
         this(caption, null, action);
     }
 
-    protected NewActionBarButton() {}
-
     @Override
     public Point getToolTipLocation(MouseEvent event) {
         return new Point(0, -45);
