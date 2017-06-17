@@ -5,13 +5,11 @@ import java.util.Arrays;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardDefinitionInit;
-import magic.model.MagicColor;
 import magic.model.MagicSubType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.action.MagicPlayMod;
 import magic.model.action.PlayTokenAction;
 import magic.model.condition.MagicCondition;
 
