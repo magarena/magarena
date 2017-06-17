@@ -22,6 +22,7 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
 
     public OtherEntersBattlefieldTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherComesIntoPlay;
     }

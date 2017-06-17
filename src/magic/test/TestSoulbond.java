@@ -17,6 +17,7 @@ import magic.model.phase.MagicMainPhase;
 // is no longer under your control, or stops being a creature.
 class TestSoulbond extends TestGameBuilder {
 
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

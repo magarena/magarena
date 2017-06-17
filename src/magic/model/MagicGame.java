@@ -289,6 +289,7 @@ public class MagicGame {
         return stateId;
     }
 
+    @Override
     public String toString() {
         return "GAME: " +
                "id=" + stateId + " " +

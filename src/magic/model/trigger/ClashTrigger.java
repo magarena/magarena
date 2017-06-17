@@ -9,6 +9,7 @@ public abstract class ClashTrigger extends MagicTrigger<MagicPlayer> {
 
     public ClashTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenClash;
     }

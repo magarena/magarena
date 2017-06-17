@@ -9,18 +9,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPlayer> {
+    @Override
     public List<MagicPlayer> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicPlayer> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicPlayer> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicPlayer> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicPlayer> targets=new ArrayList<MagicPlayer>();
@@ -37,6 +41,7 @@ public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPl
 
         return targets;
     }
+    @Override
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType==MagicTargetType.Player;
     }

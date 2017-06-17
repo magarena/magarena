@@ -119,6 +119,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
         return MagicTargetNone.getInstance();
     }
 
+    @Override
     public long getId() {
         return id;
     }
@@ -228,6 +229,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
         });
     }
 
+    @Override
     public abstract boolean isSpell();
 
     public abstract boolean canBeCountered();

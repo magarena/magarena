@@ -30,6 +30,7 @@ public class LookAction extends MagicAction {
         desc = aDesc;
     }
 
+    @Override
     public void doAction(final MagicGame game) {
         if (cards.isEmpty()) {
             return;
@@ -43,6 +44,7 @@ public class LookAction extends MagicAction {
         ));
     }
 
+    @Override
     public void undoAction(final MagicGame game) {
         //do nothing for now
     }

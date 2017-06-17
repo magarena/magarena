@@ -14,6 +14,7 @@ import magic.model.phase.MagicUpkeepPhase;
 
 class TestTarmogoyf extends TestGameBuilder {
     //Tarmogoyf should survive the lightning bolt
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);
         final MagicGame game=duel.nextGame();

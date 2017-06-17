@@ -13,6 +13,7 @@ public abstract class AtBeginOfCombatTrigger extends MagicTrigger<MagicPlayer> {
 
     public AtBeginOfCombatTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtBeginOfCombat;
     }

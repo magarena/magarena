@@ -13,6 +13,7 @@ public abstract class AtDrawTrigger extends MagicTrigger<MagicPlayer> {
 
     public AtDrawTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtDraw;
     }

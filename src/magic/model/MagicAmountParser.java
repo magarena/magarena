@@ -9,42 +9,50 @@ import magic.model.target.MagicTargetFilterFactory;
 public enum MagicAmountParser {
 
     YourLife("your life total") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.LifeTotal;
         }
     },
     Domain("basic land type(s)? among lands you control") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Domain;
         }
     },
     Devotion("your devotion to " + ARG.COLOR) {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             final MagicColor color = MagicColor.getColor(ARG.color(arg));
             return MagicAmountFactory.Devotion(color);
         }
     },
     Equipment("Equipment attached to (it|SN)") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Equipment;
         }
     },
     Aura("Aura attached to (it|SN)") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Aura;
         }
     },
     ItsPower("(its|SN's) power") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.SN_Power;
         }
     },
     AllCounterOnSN("counter(s)? on (it|SN)") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.AllCountersOnSource;
         }
     },
     CounterOnSN(ARG.WORD1 + " counter(s)? on (it|SN)") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.CounterOnSource(
                 MagicCounterType.getCounterRaw(ARG.word1(arg))
@@ -52,46 +60,55 @@ public enum MagicAmountParser {
         }
     },
     ColorOnPerms("color among permanents you control") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.ColorsOnPerms;
         }
     },
     ExperienceCounter("experience counters you have") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.CountersOnController(MagicCounterType.Experience);
         }
     },
     GreatestPower("the greatest power among creatures you control") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.GreatestPower;
         }
     },
     HighestCMCPermanentsYouControl("the highest converted mana cost among permanents you control") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.HighestCMCPermanentsYouControl;
         }
     },
     XCost("x") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.XCost;
         }
     },
     NegXCost("-x") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.NegXCost;
         }
     },
     Player("player") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Constant(2);
         }
     },
     Number("[^ ]+") {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Constant(EnglishToInt.convert(arg.group()));
         }
     },
     FromFilter(ARG.ANY) {
+        @Override
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.FromFilter(
                 MagicTargetFilterFactory.Target(ARG.any(arg))

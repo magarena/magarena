@@ -38,18 +38,22 @@ public class Saint___Hero_DeckGenerator extends RandomDeckGenerator {
         return colorText;
     }
 
+    @Override
     public int getMinRarity() {
         return 2;
     }
 
+    @Override
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
 
+    @Override
     public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
 
+    @Override
     public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }

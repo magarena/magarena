@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
 class TestHandSize extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS,8);
         final MagicGame game=duel.nextGame();

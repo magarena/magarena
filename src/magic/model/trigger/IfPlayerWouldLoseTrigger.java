@@ -9,6 +9,7 @@ public abstract class IfPlayerWouldLoseTrigger extends MagicTrigger<LoseGameActi
 
     public IfPlayerWouldLoseTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.IfPlayerWouldLose;
     }

@@ -11,6 +11,7 @@ import magic.model.phase.*;
 // 3. wait for 1000 log messages to appear in log
 // 4. Try to continue the game normally, it will be slower than before
 class TestSlowLog extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
         final MagicGame game=duel.nextGame();

@@ -32,6 +32,7 @@ public class MagicRandom extends Random {
 
     // from http://demesos.blogspot.com/2011/09/replacing-java-random-generator.html
     // parameters are from Numerical Recipes 3E, pg 347
+    @Override
     protected int next(int nbits) {
         long x = state;
         x ^= (x << 21);

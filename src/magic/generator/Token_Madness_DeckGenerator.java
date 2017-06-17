@@ -44,6 +44,7 @@ public class Token_Madness_DeckGenerator extends RandomDeckGenerator {
         return colorText;
     }
 
+    @Override
     public int getMinRarity() {
         return 2;
     }
@@ -53,14 +54,17 @@ public class Token_Madness_DeckGenerator extends RandomDeckGenerator {
         return !card.isCreature() || card.hasText("token");
     }
 
+    @Override
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
 
+    @Override
     public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
 
+    @Override
     public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }

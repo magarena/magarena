@@ -857,6 +857,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return children.get(0);
     }
 
+    @Override
     public Iterator<MCTSGameTree> iterator() {
         return children.iterator();
     }

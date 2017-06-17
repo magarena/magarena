@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
 class TestMiracle extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTSC, 6);
         final MagicGame game=duel.nextGame();

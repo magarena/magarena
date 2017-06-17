@@ -13,6 +13,7 @@ public abstract class OtherDrawnTrigger extends MagicTrigger<MagicCard> {
 
     public OtherDrawnTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherDrawn;
     }

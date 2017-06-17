@@ -92,6 +92,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         return getPermanentEvent(source,MagicPayedCost.NO_COST).getChoice();
     }
 
+    @Override
     public abstract Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source);
 
     public abstract MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost);

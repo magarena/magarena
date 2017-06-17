@@ -161,6 +161,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         }
     }
 
+    @Override
     public long getId() {
         return id;
     }
@@ -173,6 +174,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return !isValid();
     }
 
+    @Override
     public long getStateId() {
         stateId = stateId != 0 ? stateId : MurmurHash3.hash(new long[]{
             cardDefinition.getIndex(),
@@ -203,6 +205,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return stateId;
     }
 
+    @Override
     public long getRenderKey() {
         return getStateId();
     }
@@ -240,6 +243,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return card;
     }
 
+    @Override
     public boolean isToken() {
         return card.isToken();
     }
@@ -248,10 +252,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return !card.isToken();
     }
 
+    @Override
     public boolean isDoubleFaced() {
         return card.isDoubleFaced();
     }
 
+    @Override
     public boolean isFlipCard() {
         return card.isFlipCard();
     }
@@ -335,6 +341,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return cachedActivations;
     }
 
+    @Override
     public Collection<MagicManaActivation> getManaActivations() {
         return cachedManaActivations;
     }
@@ -375,6 +382,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return name.isEmpty() == false && name.equalsIgnoreCase(other);
     }
 
+    @Override
     public String getName() {
         final String name = getCardDefinition().getName();
         if (name.isEmpty() && getGame().isReal()) {
@@ -578,6 +586,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return counters.size() > 0;
     }
 
+    @Override
     public boolean hasSubType(final MagicSubType subType) {
         return cachedSubTypeFlags.contains(subType);
     }
@@ -1125,6 +1134,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return cachedTypeFlags;
     }
 
+    @Override
     public boolean hasType(final MagicType type) {
         return type.hasType(getTypeFlags());
     }
@@ -1137,10 +1147,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return isArtifact() && hasSubType(MagicSubType.Equipment);
     }
 
+    @Override
     public boolean isArtifact() {
         return hasType(MagicType.Artifact);
     }
 
+    @Override
     public boolean isEnchantment() {
         return hasType(MagicType.Enchantment);
     }
@@ -1157,6 +1169,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return hasState(MagicPermanentState.Flipped);
     }
 
+    @Override
     public boolean isSplitCard() {
         return false;
     }

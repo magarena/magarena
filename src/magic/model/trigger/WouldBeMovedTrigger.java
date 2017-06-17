@@ -9,6 +9,7 @@ public abstract class WouldBeMovedTrigger extends MagicTrigger<MoveCardAction> {
 
     public WouldBeMovedTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WouldBeMoved;
     }

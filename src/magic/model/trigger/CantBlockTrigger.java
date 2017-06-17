@@ -13,6 +13,7 @@ public abstract class CantBlockTrigger extends MagicTrigger<MagicPermanent> {
 
     public CantBlockTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.CantBlock;
     }

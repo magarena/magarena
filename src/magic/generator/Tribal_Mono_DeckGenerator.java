@@ -91,6 +91,7 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
         return colorText;
     }
 
+    @Override
     public int getMinRarity() {
         return 1;
     }
@@ -104,10 +105,12 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
         }
     }
 
+    @Override
     public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 
+    @Override
     public boolean ignoreMaxCost() {
         return false;
     }

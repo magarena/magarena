@@ -16,6 +16,7 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
 
     public AtUpkeepTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtUpkeep;
     }

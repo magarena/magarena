@@ -76,6 +76,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
         }
     }
 
+    @Override
     protected void executeEndOfPhase(final MagicGame game) {
         executeBeginStep(game);
     }

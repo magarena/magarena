@@ -14,18 +14,22 @@ import magic.model.MagicType;
 import magic.model.event.MagicEvent;
 
 public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard> {
+    @Override
     public List<MagicCard> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicCard> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicCard> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicCard> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final List<MagicCard> targets = new ArrayList<MagicCard>();
 
@@ -78,6 +82,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl or(final MagicType type) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasType(type);
             }
@@ -86,6 +91,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl or(final MagicSubType subType) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasSubType(subType);
             }
@@ -94,6 +100,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl or(final MagicColor color) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasColor(color);
             }
@@ -102,6 +109,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl or(final MagicAbility ability) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasAbility(ability);
             }
@@ -110,6 +118,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl and(final MagicType type) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasType(type);
             }
@@ -118,6 +127,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl and(final MagicSubType subType) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasSubType(subType);
             }
@@ -126,6 +136,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl and(final MagicColor color) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasColor(color);
             }
@@ -134,6 +145,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl and(final MagicAbility ability) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasAbility(ability);
             }
@@ -142,6 +154,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl permanent() {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.isPermanentCard();
             }
@@ -150,6 +163,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl cmcLEQ(final int n) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.getConvertedCost() <= n;
             }
@@ -158,6 +172,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl powerLEQ(final int n) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.getPower() <= n;
             }
@@ -166,9 +181,11 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public MagicCardFilterImpl from(final MagicTargetType location) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target);
             }
+            @Override
             public boolean acceptType(final MagicTargetType targetType) {
                 return curr.acceptType(targetType) || targetType == location;
             }

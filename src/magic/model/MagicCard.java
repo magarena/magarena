@@ -146,14 +146,17 @@ public class MagicCard
         return card;
     }
 
+    @Override
     public long getId() {
         return id;
     }
 
+    @Override
     public long getStateId() {
         return (getCardDefinition().getIndex() * 10L + (aiKnown ? 1 : 0) + (gameKnown ? 2 : 0) + (token ? 4 : 0)) ^ counters.hashCode();
     }
 
+    @Override
     public MagicCardDefinition getCardDefinition() {
         return isKnown() ? cardDefinition : MagicCardDefinition.UNKNOWN;
     }
@@ -167,14 +170,17 @@ public class MagicCard
         return token;
     }
 
+    @Override
     public boolean isDoubleFaced() {
         return getCardDefinition().isDoubleFaced();
     }
 
+    @Override
     public boolean isFlipCard() {
         return getCardDefinition().isFlipCard();
     }
 
+    @Override
     public boolean isSplitCard() {
         return getCardDefinition().isSplitCard();
     }

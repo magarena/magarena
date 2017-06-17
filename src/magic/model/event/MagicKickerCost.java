@@ -31,6 +31,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
         return new MagicKickerCost(aCost, "conspire");
     }
 
+    @Override
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,

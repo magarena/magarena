@@ -14,6 +14,7 @@ public abstract class SacrificeTrigger extends MagicTrigger<RemoveFromPlayAction
 
     public SacrificeTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenSacrifice;
     }

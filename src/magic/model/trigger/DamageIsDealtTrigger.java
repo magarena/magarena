@@ -28,10 +28,12 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public DamageIsDealtTrigger() {
     }
 
+    @Override
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
         return damage.getDealtAmount() > 0;
     }
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDamageIsDealt;
     }

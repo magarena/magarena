@@ -199,6 +199,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         secondHalf = true;
     }
 
+    @Override
     public boolean isSecondHalf() {
         return secondHalf;
     }
@@ -207,6 +208,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         hidden = true;
     }
 
+    @Override
     public boolean isHidden() {
         return hidden;
     }
@@ -289,6 +291,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
      *
      * @see getDistinctName()
      */
+    @Override
     public String getName() {
         return name;
     }
@@ -336,6 +339,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return index;
     }
 
+    @Override
     public String getImageName() {
         return token ?
             CardDefinitions.getCanonicalName(distinctName):
@@ -404,6 +408,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return rarity == null ? "" : rarity.getName();
     }
 
+    @Override
     public Character getRarityChar() {
         return rarity == null ? 'C' : rarity.getChar();//Return common for null rarity
     }
@@ -412,6 +417,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         token=true;
     }
 
+    @Override
     public boolean isToken() {
         return token;
     }
@@ -441,6 +447,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return cardType;
     }
 
+    @Override
     public boolean hasType(final MagicType type) {
         return (typeFlags&type.getMask())!=0;
     }
@@ -454,6 +461,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return flipCardDefinition;
     }
 
+    @Override
     public MagicCardDefinition getTransformedDefinition() {
         if (transformCardDefinition == null) {
             transformCardDefinition = isDoubleFaced() ?
@@ -463,6 +471,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return transformCardDefinition;
     }
 
+    @Override
     public MagicCardDefinition getSplitDefinition() {
         if (splitCardDefinition == null) {
             splitCardDefinition = isSplitCard() ?
@@ -472,6 +481,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return splitCardDefinition;
     }
 
+    @Override
     public MagicCardDefinition getCardDefinition() {
         return this;
     }
@@ -484,6 +494,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return hasSubType(MagicSubType.Equipment);
     }
 
+    @Override
     public boolean isPlaneswalker() {
         return hasType(MagicType.Planeswalker);
     }
@@ -516,14 +527,17 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return !isSpell();
     }
 
+    @Override
     public boolean isFlipCard() {
         return flipCardName != null;
     }
 
+    @Override
     public boolean isDoubleFaced() {
         return transformCardName != null;
     }
 
+    @Override
     public boolean isSplitCard() {
         return splitCardName != null;
     }
@@ -575,6 +589,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return subTypeFlags.clone();
     }
 
+    @Override
     public EnumSet<MagicSubType> getSubTypes() {
         final EnumSet<MagicSubType> subTypes = genSubTypes();
         applyCDASubType(null, null, subTypes);
@@ -595,6 +610,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return brackets.substring(1, brackets.length() - 1);
     }
 
+    @Override
     public boolean hasSubType(final MagicSubType subType) {
         return getSubTypes().contains(subType);
     }
@@ -608,6 +624,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         assert !hasCost() || colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
     }
 
+    @Override
     public boolean hasColor(final MagicColor color) {
         return (colorFlags&color.getMask())!=0;
     }
@@ -616,6 +633,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return colorFlags == 0;
     }
 
+    @Override
     public int getColorFlags() {
         return colorFlags;
     }
@@ -687,6 +705,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
     }
 
+    @Override
     public MagicManaCost getCost() {
         return cost;
     }
@@ -741,6 +760,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         startingLoyalty = aLoyalty;
     }
 
+    @Override
     public int getStartingLoyalty() {
         return startingLoyalty;
     }
@@ -768,6 +788,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
     }
 
+    @Override
     public void addAbility(final MagicAbility ability) {
         abilityFlags.add(ability);
     }
@@ -776,6 +797,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return abilityFlags.clone();
     }
 
+    @Override
     public boolean hasAbility(final MagicAbility ability) {
         return abilityFlags.contains(ability);
     }
@@ -784,6 +806,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         this.text = text;
     }
 
+    @Override
     public String getText() {
         return text;
     }
@@ -808,6 +831,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return timing;
     }
 
+    @Override
     public void add(final MagicChangeCardDefinition mod) {
         mod.change(this);
     }
@@ -941,6 +965,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         manaActivations.add(activation);
     }
 
+    @Override
     public Collection<MagicManaActivation> getManaActivations() {
         return manaActivations;
     }
@@ -1039,6 +1064,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         powerToughnessText = string;
     }
 
+    @Override
     public String getPowerToughnessText() {
         return powerToughnessText;
     }
@@ -1047,6 +1073,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         subTypeText = string.replaceAll("(\\w),(\\w)", "$1, $2");// Not automatically adding space unless space is there
     }
 
+    @Override
     public String getSubTypeText() {
         return subTypeText;
     }

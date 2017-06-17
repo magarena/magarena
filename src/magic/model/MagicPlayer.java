@@ -139,10 +139,12 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         currGame = game;
     }
 
+    @Override
     public MagicGame getGame() {
         return currGame;
     }
 
+    @Override
     public long getStateId() {
         keys = new long[] {
             life,
@@ -202,6 +204,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return playerConfig.getName();
     }
 
+    @Override
     public Set<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         Set<MagicSourceActivation<? extends MagicSource>> set = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
         for (final MagicCard card : hand) {
@@ -224,6 +227,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return index;
     }
 
+    @Override
     public long getId() {
         return 1000000000L + index;
     }

@@ -25,6 +25,7 @@ public class MagicDashActivation extends MagicHandCastActivation {
         cost = aCost;
     }
 
+    @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
             new MagicPayManaCostEvent(

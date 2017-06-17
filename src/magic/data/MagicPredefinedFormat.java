@@ -158,6 +158,7 @@ public class MagicPredefinedFormat extends MagicFormat {
         return maximumCardCopies;
     }
 
+    @Override
     public boolean isDeckLegal(final MagicDeck aDeck) {
         if (aDeck.size() < minimumDeckSize) {
             return false;

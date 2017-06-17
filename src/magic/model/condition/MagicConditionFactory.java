@@ -23,6 +23,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition CounterAtMost(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return permanent.getCounters(counterType) <= n;
@@ -32,6 +33,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition CounterAtLeast(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return permanent.getCounters(counterType) >= n;
@@ -41,6 +43,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition EnchantedCounterAtLeast(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return permanent.getEnchantedPermanent().getCounters(counterType) >= n;
@@ -50,6 +53,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition EnchantedPowerAtLeast(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return permanent.getEnchantedPermanent().getPower() >= n;
@@ -59,6 +63,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition CounterEqual(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return permanent.getCounters(counterType) == n;
@@ -72,6 +77,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition HasSubType(final MagicSubType subtype) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.hasSubType(subtype);
             }
@@ -80,6 +86,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition NotSubType(final MagicSubType subtype) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.hasSubType(subtype) == false;
             }
@@ -88,6 +95,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition HasAbility(final MagicAbility ability) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.hasAbility(ability);
             }
@@ -96,6 +104,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition NoAbility(final MagicAbility ability) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.hasAbility(ability) == false;
             }
@@ -104,6 +113,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition HandAtLeast(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getHandSize() >= n;
             }
@@ -147,6 +157,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition LibraryAtLeast(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getLibrary().size() >= n;
             }
@@ -155,6 +166,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition GraveyardAtLeast(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getGraveyard().size() >= n;
             }
@@ -163,6 +175,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition GraveyardTypeAtLeast(final MagicType type, final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return MagicTargetFilterFactory.card(type).from(MagicTargetType.Graveyard).filter(source).size() >= n;
             }
@@ -171,6 +184,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition DevotionAtLeast(final MagicColor color, final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getDevotion(color) >= n;
             }
@@ -179,6 +193,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition EnchantedIs(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return filter.accept(source, source.getController(), permanent.getEnchantedPermanent());
@@ -188,6 +203,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition EquippedIs(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return filter.accept(source, source.getController(), permanent.getEquippedCreature());
@@ -197,6 +213,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition SelfIs(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return filter.accept(source, source.getController(), permanent);
@@ -206,6 +223,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition YouEnergyAtLeast(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getEnergy() >= n;
             }
@@ -214,6 +232,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition YouLifeAtLeast(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getLife() >= n;
             }
@@ -222,6 +241,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition YouLifeOrLess(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getLife() <= n;
             }
@@ -230,6 +250,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition YouGainLifeOrMore(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().getLifeGainThisTurn() >= n;
             }
@@ -238,6 +259,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition OpponentGainLifeOrMore(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getOpponent().getLifeGainThisTurn() >= n;
             }
@@ -246,6 +268,7 @@ public class MagicConditionFactory {
 
     public static MagicCondition OpponentLoseLifeOrMore(final int n) {
         return new MagicCondition() {
+            @Override
             public boolean accept(final MagicSource source) {
                 return source.getOpponent().getLifeLossThisTurn() >= n;
             }

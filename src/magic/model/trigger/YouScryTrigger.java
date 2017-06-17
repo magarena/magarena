@@ -13,6 +13,7 @@ public abstract class YouScryTrigger extends MagicTrigger<MagicPlayer> {
 
     public YouScryTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenScry;
     }

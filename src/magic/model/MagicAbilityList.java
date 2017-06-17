@@ -22,6 +22,7 @@ public class MagicAbilityList implements MagicAbilityStore {
     private List<MagicManaActivation> manaActivations =
         new LinkedList<MagicManaActivation>();
 
+    @Override
     public void add(final MagicChangeCardDefinition ccd) {
         if (ccd instanceof MagicPermanentActivation) {
             permActivations.add((MagicPermanentActivation)ccd);
@@ -38,6 +39,7 @@ public class MagicAbilityList implements MagicAbilityStore {
         return abilities.get(0);
     }
 
+    @Override
     public void addAbility(final MagicAbility ability) {
         abilities.add(ability);
     }

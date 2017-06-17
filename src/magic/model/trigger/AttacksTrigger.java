@@ -13,6 +13,7 @@ public abstract class AttacksTrigger extends MagicTrigger<MagicPermanent> {
 
     public AttacksTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenAttacks;
     }

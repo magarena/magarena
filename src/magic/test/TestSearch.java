@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicEndOfTurnPhase;
 
 class TestSearch extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

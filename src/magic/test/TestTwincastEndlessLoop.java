@@ -12,6 +12,7 @@ import magic.model.phase.MagicMainPhase;
 // 3. pass priority
 class TestTwincastEndlessLoop extends TestGameBuilder {
 
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

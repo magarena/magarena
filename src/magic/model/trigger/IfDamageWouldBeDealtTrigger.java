@@ -10,10 +10,12 @@ public abstract class IfDamageWouldBeDealtTrigger extends MagicTrigger<MagicDama
         super(priority);
     }
 
+    @Override
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
         return damage.getAmount() > 0;
     }
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.IfDamageWouldBeDealt;
     }

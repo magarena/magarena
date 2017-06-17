@@ -29,6 +29,7 @@ public class Zombie_Madness_DeckGenerator extends RandomDeckGenerator {
         return colorText;
     }
 
+    @Override
     public int getMinRarity() {
         return 2;
     }
@@ -38,10 +39,12 @@ public class Zombie_Madness_DeckGenerator extends RandomDeckGenerator {
         return !card.isCreature() || card.hasSubType(MagicSubType.Zombie);
     }
 
+    @Override
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, cards);
     }
 
+    @Override
     public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }

@@ -40,6 +40,7 @@ public class White_Metal_DeckGenerator extends RandomDeckGenerator {
         return colorText;
     }
 
+    @Override
     public int getMinRarity() {
         return 2;
     }
@@ -49,18 +50,22 @@ public class White_Metal_DeckGenerator extends RandomDeckGenerator {
         return !card.isCreature() || card.isArtifact();
     }
 
+    @Override
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, spells);
     }
 
+    @Override
     public void addRequiredLands(final MagicCondensedDeck deck) {
         addRequiredCards(deck, lands);
     }
 
+    @Override
     public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 
+    @Override
     public boolean ignoreMaxColorless() {
         return true;
     }

@@ -16,6 +16,7 @@ import magic.model.phase.MagicUpkeepPhase;
 * */
 
 class TestNoChoice extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 1);
         final MagicGame game=duel.nextGame();

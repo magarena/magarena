@@ -14,6 +14,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 
 class TestCardBuilder extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         for (final MagicCardDefinition cdef : CardDefinitions.getAllCards()) {
             final BufferedImage buffImg = CardBuilder.getCardBuilderImage(cdef);

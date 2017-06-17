@@ -56,6 +56,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
 
         @SuppressWarnings("serial")
         final AbstractAction yesAction = new AbstractAction() {
+            @Override
             public void actionPerformed(final ActionEvent evt) {
                 yes = true;
                 controller.actionClicked();
@@ -74,6 +75,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
 
         @SuppressWarnings("serial")
         final AbstractAction noAction = new AbstractAction() {
+            @Override
             public void actionPerformed(final ActionEvent evt) {
                 yes = false;
                 controller.actionClicked();

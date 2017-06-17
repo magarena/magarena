@@ -9,6 +9,7 @@ public abstract class LoseControlTrigger extends MagicTrigger<MagicPermanent> {
 
     public LoseControlTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenLoseControl;
     }

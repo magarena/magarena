@@ -11,6 +11,7 @@ class TestCostReduction extends TestGameBuilder {
      * AI is able to win if it casts Ruby Medallion and plays two Mountains, this give 8 Mountains.
      * Then AI can casts Bonefire for X = 4 and be able to pay the 9 - 1 mana required
      */
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
         final MagicGame game=duel.nextGame();

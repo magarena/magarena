@@ -60,12 +60,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     }
 
     public static MagicCondition NONE = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return true;
         }
     };
 
     public static MagicCondition CARD_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicCard card = (MagicCard)source;
             final MagicCardDefinition cardDefinition = card.getCardDefinition();
@@ -81,6 +83,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition HAND_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicCard card = (MagicCard)source;
             return card.isInHand();
@@ -88,6 +91,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition GRAVEYARD_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicCard card = (MagicCard)source;
             return card.isInGraveyard();
@@ -95,6 +99,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition NINJUTSU_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.DeclareBlockers) ||
@@ -104,6 +109,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition NOT_SORCERY_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.canPlaySorcery(source.getController()) == false;
@@ -111,6 +117,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition NOT_MONSTROUS_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.hasState(MagicPermanentState.Monstrous) == false;
@@ -118,6 +125,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition NOT_EXCLUDE_COMBAT_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.hasState(MagicPermanentState.ExcludeFromCombat) == false;
@@ -125,6 +133,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition SORCERY_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.canPlaySorcery(source.getController());
@@ -132,6 +141,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition BEFORE_YOUR_ATTACK_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return source.isFriend(game.getTurnPlayer()) &&
@@ -140,6 +150,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition DECLARE_ATTACKERS = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.DeclareAttackers);
@@ -147,6 +158,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition YOUR_UPKEEP_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.Upkeep) && source.isFriend(game.getTurnPlayer());
@@ -154,6 +166,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition ANY_UPKEEP_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.Upkeep);
@@ -161,6 +174,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition OPPONENTS_UPKEEP_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.Upkeep) && source.isEnemy(game.getTurnPlayer());
@@ -168,6 +182,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition YOUR_TURN_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return source.isFriend(game.getTurnPlayer());
@@ -207,6 +222,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition BEEN_ATTACKED = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return source.isEnemy(game.getTurnPlayer()) &&
@@ -215,6 +231,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition END_OF_COMBAT_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.EndOfCombat);
@@ -222,6 +239,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition DURING_COMBAT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.getPhase().getType().ordinal() >= MagicPhaseType.BeginOfCombat.ordinal() &&
@@ -230,6 +248,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition DURING_COMBAT_AFTER_BLOCKERS = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.DeclareBlockers) ||
@@ -238,6 +257,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition DURING_BLOCKERS = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.DeclareBlockers);
@@ -245,6 +265,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition DURING_COMBAT_BEFORE_BLOCKERS = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.getPhase().getType().ordinal() >= MagicPhaseType.BeginOfCombat.ordinal() &&
@@ -253,6 +274,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition AFTER_COMBAT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.getPhase().getType().ordinal() > MagicPhaseType.EndOfCombat.ordinal();
@@ -260,6 +282,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition CAN_TAP_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.canTap();
@@ -267,6 +290,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition CAN_UNTAP_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.canUntap();
@@ -274,6 +298,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition TAPPED_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isTapped();
@@ -281,6 +306,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition UNTAPPED_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isUntapped();
@@ -288,6 +314,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_BLOCKED_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isBlocked();
@@ -295,6 +322,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_ATTACKING_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isAttacking();
@@ -302,6 +330,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_ATTACKING_ALONE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isAttacking() && source.getController().getNrOfAttackers() == 1;
@@ -309,6 +338,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition ABILITY_ONCE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getAbilityPlayedThisTurn() < 1;
@@ -326,6 +356,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition ABILITY_TWICE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getAbilityPlayedThisTurn() < 2;
@@ -343,6 +374,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition ABILITY_THRICE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getAbilityPlayedThisTurn() < 3;
@@ -360,18 +392,21 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition NOT_CREATURE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return !source.isCreaturePermanent();
         }
     };
 
     public static MagicCondition METALCRAFT_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanents(MagicType.Artifact) >= 3;
         }
     };
 
     public static MagicCondition CAN_REGENERATE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.canRegenerate();
@@ -379,42 +414,49 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition THREE_ATTACKERS_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfAttackers() >= 3;
         }
     };
 
     public static MagicCondition PLAINS_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().controlsPermanent(MagicSubType.Plains);
         }
     };
 
     public static MagicCondition ISLAND_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().controlsPermanent(MagicSubType.Island);
         }
     };
 
     public static MagicCondition SWAMP_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().controlsPermanent(MagicSubType.Swamp);
         }
     };
 
     public static MagicCondition MOUNTAIN_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().controlsPermanent(MagicSubType.Mountain);
         }
     };
 
     public static MagicCondition FOREST_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().controlsPermanent(MagicSubType.Forest);
         }
     };
 
     public static MagicCondition LEAST_FIVE_OTHER_MOUNTAINS = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             final MagicOtherPermanentTargetFilter filter = new MagicOtherPermanentTargetFilter(
@@ -426,12 +468,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition THRESHOLD_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getGraveyard().size() >= 7;
         }
     };
 
     public static MagicCondition DELIRIUM_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             final MagicCardList graveyard = source.getController().getGraveyard();
             int count = 0;
@@ -445,24 +489,28 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition FATEFUL_HOUR = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getLife() <= 5;
         }
     };
 
     public static MagicCondition HELLBENT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getHandSize() == 0;
         }
     };
 
     public static MagicCondition OPPONENT_HELLBENT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getOpponent().getHandSize() == 0;
         }
     };
 
     public static MagicCondition ANY_HELLBENT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getOpponent().getHandSize() == 0 || source.getController().getHandSize() == 0;
         }
@@ -480,6 +528,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition ENCHANTED_IS_UNTAPPED_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getEnchantedPermanent().isUntapped();
@@ -487,6 +536,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition ENCHANTED_IS_BASIC_MOUNTAIN = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent enchanted = ((MagicPermanent)source).getEnchantedPermanent();
             return enchanted.hasType(MagicType.Basic) && enchanted.hasSubType(MagicSubType.Mountain);
@@ -494,6 +544,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition HAS_EXILED_CARD = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getExiledCard().isValid();
@@ -501,6 +552,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition HAS_EXILED_CREATURE_CARD = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             final MagicCard card = permanent.getExiledCard();
@@ -509,6 +561,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition HAS_EQUIPPED_CREATURE = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getEquippedCreature().isCreature();
@@ -516,6 +569,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_EQUIPPED = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isEquipped();
@@ -523,6 +577,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_ENCHANTED = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isEnchanted();
@@ -530,6 +585,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_ENCHANTMENT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isEnchantment();
@@ -537,6 +593,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_NOT_ENCHANTMENT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return !permanent.isEnchantment();
@@ -544,6 +601,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_MONSTROUS_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.hasState(MagicPermanentState.Monstrous);
@@ -551,6 +609,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition IS_RENOWNED_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.hasState(MagicPermanentState.Renowned);
@@ -558,12 +617,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition EMPTY_GRAVEYARD_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getGraveyard().isEmpty();
         }
     };
 
     public static MagicCondition LIBRARY_HAS_20_OR_LESS_CARDS_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();
             return player.getLibrary().size() <= 20 || player.getOpponent().getLibrary().size() <= 20;
@@ -571,18 +632,21 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition OPP_GRAVEYARD_WITH_10_OR_MORE_CARDS_CONDTITION = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return source.getOpponent().getGraveyard().size() >= 10;
         }
     };
 
     public static MagicCondition OPP_NOT_CONTROL_WHITE_OR_BLUE_CREATURE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return !source.getOpponent().controlsPermanent(MagicTargetFilterFactory.WHITE_OR_BLUE_CREATURE);
         }
     };
 
     public static MagicCondition MOST_CARDS_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             final MagicPlayer player = source.getController();
             return player.getHandSize() > player.getOpponent().getHandSize();
@@ -590,6 +654,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition EXACTLY_SEVEN_CARDS_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             final MagicPlayer player = source.getController();
             return player.getHandSize() == 7;
@@ -597,30 +662,35 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition OPPONENT_TEN_OR_LESS_LIFE = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return source.getOpponent().getLife() <= 10;
         }
     };
 
     public static MagicCondition OPPONENT_WAS_DEALT_DAMAGE = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return source.getOpponent().hasState(MagicPlayerState.WasDealtDamage);
         }
     };
 
     public static MagicCondition OPPONENT_HAS_GREATER_OR_EQUAL_LIFE = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return source.getOpponent().getLife() >= source.getController().getLife();
         }
     };
 
     public static MagicCondition YOU_30_OR_MORE_LIFE = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return source.getController().getLife() >= 30;
         }
     };
 
     public static MagicCondition YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return YOU_30_OR_MORE_LIFE.accept(source) &&
                 OPPONENT_TEN_OR_LESS_LIFE.accept(source);
@@ -632,12 +702,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     public static MagicCondition HAS_ARTIFACT_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.ARTIFACT_CARD_FROM_GRAVEYARD, 1);
 
     public static MagicCondition OPP_NOT_CONTROL_CREATURE_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return !source.getOpponent().controlsPermanent(MagicType.Creature);
         }
     };
 
     public static MagicCondition NOT_YOUR_TURN_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return source.isEnemy(game.getTurnPlayer());
@@ -734,6 +806,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition CREATURE_DIED_THIS_TURN = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return game.getCreatureDiedThisTurn();
@@ -741,12 +814,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition PERMANENT_YOU_CONTROLLED_LEFT_BATTLEFIELD = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             return source.getController().hasState(MagicPlayerState.Revolt);
         }
     };
 
     public static MagicCondition YOU_ATTACKED_WITH_CREATURE = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();
             return player.getCreaturesAttackedThisTurn() >= 1;
@@ -754,6 +829,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition CREATURE_IN_A_GRAVEYARD = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();
             return MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(player).size() > 0;
@@ -763,6 +839,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     public static MagicCondition HAS_CREATURE_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD, 1);
 
     public static MagicCondition HAS_CREATURE_IN_HAND = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             final MagicPlayer player = source.getController();
             return MagicTargetFilterFactory.CREATURE_CARD_FROM_HAND.filter(player).size() > 0;
@@ -770,6 +847,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition HAS_EQUIPMENT_IN_HAND = new MagicCondition() {
+        @Override
         public boolean accept(MagicSource source) {
             final MagicPlayer player = source.getController();
             return MagicTargetFilterFactory.EQUIPMENT_CARD_FROM_HAND.filter(player).size() > 0;
@@ -777,6 +855,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition INSTANT_OR_SORCERY_IN_A_GRAVEYARD = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();
             return !MagicTargetFilterFactory.INSTANT_OR_SORCERY_CARD_FROM_ALL_GRAVEYARDS.filter(player).isEmpty();
@@ -784,6 +863,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition SPELL_MASTERY_CONDITION = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();
             return MagicTargetFilterFactory.INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD.filter(player).size() >= 2;
@@ -791,6 +871,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition FORMIDABLE = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final List<MagicPermanent> creatures = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(source.getController());
             int totalPower = 0;
@@ -802,6 +883,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition CAST_FROM_HAND = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.hasState(MagicPermanentState.CastFromHand);
@@ -809,6 +891,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition WAS_NONCREATURE_ARTIFACT = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.getCardDefinition().hasType(MagicType.Artifact) &&
@@ -817,6 +900,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition WAS_KICKED = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicCardOnStack spell = (MagicCardOnStack)source;
             return spell.isKicked();
@@ -824,24 +908,28 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition CAST_ANOTHER_SPELL_THIS_TURN = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getSpellsCast() > 0;
         }
     };
 
     public static MagicCondition CAST_A_NONCREATURE_SPELL_THIS_TURN = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().getNonCreatureSpellsCast() > 0;
         }
     };
 
     public static MagicCondition DEFENDING_POISONED = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getGame().getDefendingPlayer().getPoison() > 0;
         }
     };
 
     public static MagicCondition CONTROL_SINCE_LAST_TURN = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return !permanent.hasState(MagicPermanentState.Summoned);
@@ -849,6 +937,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     };
 
     public static MagicCondition YOU_ARE_MONARCH = new MagicCondition() {
+        @Override
         public boolean accept(final MagicSource source) {
             return source.getController().isMonarch();
         }

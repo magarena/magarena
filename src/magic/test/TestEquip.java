@@ -8,6 +8,7 @@ import magic.model.phase.MagicMainPhase;
 // demonstrates MiniMax AI also moves equipment between creatures until all mana is spend.
 // interesting is how "Strider Harness" shows the bug, but "Barbed Battlegear" does not.
 class TestEquip extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

@@ -31,6 +31,7 @@ public class MagicPayedCost implements MagicCopyable {
         kicker = payedCost.kicker;
     }
 
+    @Override
     public MagicCopyable copy(final MagicCopyMap copyMap) {
         return new MagicPayedCost(copyMap, this);
     }

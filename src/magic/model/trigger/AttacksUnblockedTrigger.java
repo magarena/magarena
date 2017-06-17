@@ -13,6 +13,7 @@ public abstract class AttacksUnblockedTrigger extends MagicTrigger<MagicPermanen
 
     public AttacksUnblockedTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenAttacksUnblocked;
     }

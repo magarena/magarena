@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
 class TestPhyrexianMana extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

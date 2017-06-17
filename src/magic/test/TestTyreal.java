@@ -9,6 +9,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.phase.MagicMainPhase;
 
 class TestTyreal extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
     final MagicDuel duel = createDuel();
     final MagicGame game = duel.nextGame();

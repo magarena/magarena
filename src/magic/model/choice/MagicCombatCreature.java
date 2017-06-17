@@ -68,6 +68,7 @@ public class MagicCombatCreature {
         return permanent.getName();
     }
 
+    @Override
     public String toString() {
         final StringBuilder builder=new StringBuilder();
         builder.append(permanent.getName());

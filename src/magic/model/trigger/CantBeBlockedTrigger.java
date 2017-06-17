@@ -13,6 +13,7 @@ public abstract class CantBeBlockedTrigger extends MagicTrigger<MagicPermanent> 
 
     public CantBeBlockedTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.CannotBeBlocked;
     }

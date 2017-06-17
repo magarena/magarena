@@ -18,6 +18,7 @@ public abstract class AtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
 
     public AtEndOfCombatTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfCombat;
     }

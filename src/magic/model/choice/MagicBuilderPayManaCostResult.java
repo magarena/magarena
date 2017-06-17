@@ -95,6 +95,7 @@ public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult, Co
         return count;
     }
 
+    @Override
     public void doAction(final MagicGame game,final MagicPlayer player) {
         for (final MagicSourceManaActivationResult result : results) {
             result.doActivation(game);

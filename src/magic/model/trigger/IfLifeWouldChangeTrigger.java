@@ -9,6 +9,7 @@ public abstract class IfLifeWouldChangeTrigger extends MagicTrigger<ChangeLifeAc
 
     public IfLifeWouldChangeTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.IfLifeWouldChange;
     }

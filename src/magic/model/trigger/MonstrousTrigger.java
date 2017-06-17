@@ -11,6 +11,7 @@ public abstract class MonstrousTrigger extends BecomesStateTrigger {
 
     public MonstrousTrigger() {}
 
+    @Override
     public boolean accept(final MagicPermanent permanent, final ChangeStateAction data) {
         return data.state == MagicPermanentState.Monstrous;
     }

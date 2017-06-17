@@ -10,18 +10,22 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 
 public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
+    @Override
     public List<MagicTarget> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicTarget> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicTarget> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
 
+    @Override
     public List<MagicTarget> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicTarget> targets=new ArrayList<MagicTarget>();

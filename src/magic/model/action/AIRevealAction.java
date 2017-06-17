@@ -30,6 +30,7 @@ public class AIRevealAction extends MagicAction {
         newValue = aNewValue;
     }
 
+    @Override
     public void doAction(final MagicGame game) {
         for (final MagicCard card : cards) {
             known.add(card.isGameKnown());
@@ -37,6 +38,7 @@ public class AIRevealAction extends MagicAction {
         }
     }
 
+    @Override
     public void undoAction(final MagicGame game) {
         for (int i = 0; i < cards.size(); i++) {
             cards.get(i).setGameKnown(known.get(i));

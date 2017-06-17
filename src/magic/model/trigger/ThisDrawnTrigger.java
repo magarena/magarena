@@ -10,6 +10,7 @@ public abstract class ThisDrawnTrigger extends MagicTrigger<MagicCard> {
 
     public ThisDrawnTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDrawn;
     }

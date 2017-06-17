@@ -13,12 +13,14 @@ public abstract class BlocksTrigger extends MagicTrigger<MagicPermanent> {
 
     public BlocksTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBlocks;
     }
 
     public static BlocksTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new BlocksTrigger() {
+            @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
                 return filter.accept(permanent, permanent.getController(), blocker);
             }

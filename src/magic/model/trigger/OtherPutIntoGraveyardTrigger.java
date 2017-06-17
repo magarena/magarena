@@ -11,6 +11,7 @@ public abstract class OtherPutIntoGraveyardTrigger extends MagicTrigger<MoveCard
 
     public OtherPutIntoGraveyardTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherPutIntoGraveyard;
     }

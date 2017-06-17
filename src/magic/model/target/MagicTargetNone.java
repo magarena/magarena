@@ -113,10 +113,12 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
         return INSTANCE;
     }
 
+    @Override
     public long getId() {
         return hashCode();
     }
 
+    @Override
     public long getStateId() {
         return hashCode();
     }

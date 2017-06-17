@@ -752,6 +752,7 @@ public class MagicEvent implements MagicCopyable {
         return choice.hasOptions(player.getGame(), player, source, false);
     }
 
+    @Override
     public String toString() {
         return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }

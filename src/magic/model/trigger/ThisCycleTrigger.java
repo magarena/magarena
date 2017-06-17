@@ -14,6 +14,7 @@ public abstract class ThisCycleTrigger extends MagicTrigger<MagicCard> {
 
     public ThisCycleTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenCycle;
     }

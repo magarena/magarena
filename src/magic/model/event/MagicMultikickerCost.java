@@ -24,6 +24,7 @@ public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEv
         return new MagicMultikickerCost(aManaCost, "replicate");
     }
 
+    @Override
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,

@@ -15,6 +15,7 @@ public abstract class BecomesTargetTrigger extends MagicTrigger<MagicItemOnStack
 
     public BecomesTargetTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenTargeted;
     }

@@ -19,6 +19,7 @@ public class VegasScore {
         return choiceResults;
     }
 
+    @Override
     public String toString() {
         final StringBuilder buffer=new StringBuilder();
         buffer.append("[").append(getScore()).append('/').append(count).append("]");

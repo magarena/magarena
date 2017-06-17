@@ -28,6 +28,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         currentDuelId = duel_id;
     }
 
+    @Override
     public void uncaughtException(final Thread th, final Throwable ex) {
         buildReport(MagicGame.getInstance(), th, ex);
         ex.printStackTrace();

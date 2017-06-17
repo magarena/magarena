@@ -20,9 +20,11 @@ public class MagicTransmuteActivation extends MagicCardAbilityActivation {
 
     private static MagicTargetChoice getTransmuteChoice(final int cmc) {
         final MagicCardFilterImpl transmuteFilter = new MagicCardFilterImpl() {
+            @Override
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return target.getConvertedCost() == cmc;
             }
+            @Override
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == MagicTargetType.Library;
             }

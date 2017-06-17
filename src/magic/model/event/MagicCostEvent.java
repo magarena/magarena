@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
 public enum MagicCostEvent {
 
     SacrificeSelf("Sacrifice (SN|this permanent|this land)") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicSacrificeEvent((MagicPermanent)source);
         }
@@ -28,6 +29,7 @@ public enum MagicCostEvent {
         }
     },
     SacrificeMultiple("Sacrifice (?<another>another )?(" + ARG.AMOUNT + " )?" + ARG.ANY) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg)) + " you control";
@@ -43,6 +45,7 @@ public enum MagicCostEvent {
         }
     },
     BounceSelf("Return SN to its owner's hand") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicBouncePermanentEvent(source, (MagicPermanent)source);
         }
@@ -52,6 +55,7 @@ public enum MagicCostEvent {
         }
     },
     BounceMultiple("Return ((?<another>another )|" + ARG.AMOUNT + " )?" + ARG.ANY + " to (their|its) owner's hand") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
@@ -67,28 +71,33 @@ public enum MagicCostEvent {
         }
     },
     DiscardAll("Discard( all the cards in)? your hand") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardHandEvent(source);
         }
     },
     DiscardSelf("Discard SN") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardSelfEvent((MagicCard)source);
         }
     },
     DiscardCards("Discard " + ARG.AMOUNT + " card(s)?") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);
             return new MagicDiscardEvent(source, amount);
         }
     },
     DiscardCardsRandom("Discard " + ARG.AMOUNT + " card(s)? at random") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);
             return MagicDiscardEvent.Random(source, amount);
         }
     },
     DiscardChosen("Discard " + ARG.ANY) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final String chosen = ARG.any(arg) + " from your hand";
             final MagicTargetFilter<MagicCard> regular = MagicTargetFilterFactory.Card(chosen);
@@ -97,6 +106,7 @@ public enum MagicCostEvent {
         }
     },
     ExileSelf("Exile SN") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicExileEvent((MagicPermanent)source);
         }
@@ -106,16 +116,19 @@ public enum MagicCostEvent {
         }
     },
     ExileCardSelf("Exile SN from your graveyard") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicExileSelfEvent((MagicCard)source, MagicLocationType.Graveyard);
         }
     },
     ExileTopNCardsLibrary("Exile the top( " + ARG.AMOUNT + ")? card(s)? of your library") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
     ExileCards("Exile " + ARG.AMOUNT + " (?<any>.*card.*)") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
@@ -134,6 +147,7 @@ public enum MagicCostEvent {
         }
     },
     ExileMultiple("Exile ((?<another>another )|" + ARG.AMOUNT + " )?" + ARG.ANY) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
@@ -149,6 +163,7 @@ public enum MagicCostEvent {
         }
     },
     TapSelf("\\{T\\}") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicTapEvent((MagicPermanent)source);
         }
@@ -158,6 +173,7 @@ public enum MagicCostEvent {
         }
     },
     UntapSelf("\\{Q\\}") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicUntapEvent((MagicPermanent)source);
         }
@@ -167,6 +183,7 @@ public enum MagicCostEvent {
         }
     },
     TapMultiple("Tap (?<another>another )?(" + ARG.AMOUNT + " )?untapped " + ARG.ANY) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
@@ -179,6 +196,7 @@ public enum MagicCostEvent {
         }
     },
     UntapMultiple("Untap (?<another>another )?(" + ARG.AMOUNT + " )?tapped " + ARG.ANY) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
@@ -191,16 +209,19 @@ public enum MagicCostEvent {
         }
     },
     PayLife("Pay " + ARG.NUMBER + " life") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicPayLifeEvent(source, ARG.number(arg));
         }
     },
     PayEnergy("Pay " + ARG.ENERGY) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicPayEnergyEvent(source, ARG.energy(arg));
         }
     },
     RemoveCounterSelf("Remove " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? from SN") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
@@ -212,12 +233,14 @@ public enum MagicCostEvent {
         }
     },
     RemoveCounterChosen("Remove a " + ARG.WORD1 + " counter from a creature you control") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return new MagicRemoveCounterChosenEvent(source, counterType);
         }
     },
     AddCounterSelf("Put " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on SN") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
@@ -229,17 +252,20 @@ public enum MagicCostEvent {
         }
     },
     AddCounterChosen("Put a " + ARG.WORD1 + " counter on a creature you control") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return new MagicAddCounterChosenEvent(source, counterType);
         }
     },
     PayMana("(pay )?" + ARG.MANACOST) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicPayManaCostEvent(source, MagicManaCost.create(ARG.manacost(arg)));
         }
     },
     AltManaCost("(pay )?alt mana cost " + ARG.MANACOST) {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final MagicManaCost origCost = MagicManaCost.create(ARG.manacost(arg));
             final MagicManaCost cost = origCost == MagicManaCost.ZERO ? MagicManaCost.NONE : origCost;
@@ -249,11 +275,13 @@ public enum MagicCostEvent {
         }
     },
     DamageYou("SN deals " + ARG.NUMBER + " damage to you") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return MagicRuleEventAction.create(arg.group()).getEvent(source);
         }
     },
     DoesntUntap("SN doesn't untap during your next untap step") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return MagicRuleEventAction.create(arg.group()).getEvent(source);
         }
@@ -263,6 +291,7 @@ public enum MagicCostEvent {
         }
     },
     MillSelf("Put the top( " + ARG.AMOUNT + ")? card(s)? of your library into your graveyard") {
+        @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicMillEvent(source, ARG.amount(arg));
         }

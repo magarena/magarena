@@ -51,6 +51,7 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
 
     public EntersBattlefieldTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenComesIntoPlay;
     }

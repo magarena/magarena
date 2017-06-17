@@ -13,6 +13,7 @@ public abstract class OtherDiesTrigger extends MagicTrigger<MagicPermanent> {
 
     public OtherDiesTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherDies;
     }

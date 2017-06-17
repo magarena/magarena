@@ -1778,6 +1778,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Tapping,
         "Untap"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return (game, event) -> {

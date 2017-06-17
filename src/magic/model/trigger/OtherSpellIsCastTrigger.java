@@ -15,6 +15,7 @@ public abstract class OtherSpellIsCastTrigger extends MagicTrigger<MagicCardOnSt
 
     public OtherSpellIsCastTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherSpellIsCast;
     }

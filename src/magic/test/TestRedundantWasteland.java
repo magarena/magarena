@@ -11,6 +11,7 @@ import magic.model.phase.*;
  * Instead AI wastes the Wastelands to destroy Dark Citadel.
  */
 class TestRedundantWasteland extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
         final MagicGame game=duel.nextGame();

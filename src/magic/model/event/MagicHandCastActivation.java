@@ -53,6 +53,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
         return usesStack;
     }
 
+    @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return source.getCostEvent();
     }

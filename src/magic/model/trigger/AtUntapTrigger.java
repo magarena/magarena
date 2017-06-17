@@ -13,6 +13,7 @@ public abstract class AtUntapTrigger extends MagicTrigger<MagicPlayer> {
 
     public AtUntapTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtUntap;
     }

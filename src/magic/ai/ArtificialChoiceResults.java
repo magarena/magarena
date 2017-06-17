@@ -11,6 +11,7 @@ public class ArtificialChoiceResults {
         this.choiceResults=choiceResults;
     }
 
+    @Override
     public String toString() {
         final StringBuilder buffer=new StringBuilder();
         buffer.append('[').append(worker).append('/').append(gameCount).append('/').append(aiScore).append(']');

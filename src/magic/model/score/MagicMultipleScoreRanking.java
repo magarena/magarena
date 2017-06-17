@@ -41,10 +41,12 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
         left=maxSize;
     }
 
+    @Override
     public boolean addScore(final int score) {
         return left != 0 || (best ? score > worstScore : score < worstScore);
     }
 
+    @Override
     public void addScoreResult(final MagicScoreResult result) {
         results.add(result);
         if (left==0) {

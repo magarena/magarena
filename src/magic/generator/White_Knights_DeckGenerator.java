@@ -29,6 +29,7 @@ public class White_Knights_DeckGenerator extends RandomDeckGenerator {
         return colorText;
     }
 
+    @Override
     public int getMinRarity() {
         return 2;
     }
@@ -38,14 +39,17 @@ public class White_Knights_DeckGenerator extends RandomDeckGenerator {
         return !card.isCreature() || card.hasSubType(MagicSubType.Knight);
     }
 
+    @Override
     public void addRequiredSpells(final MagicCondensedDeck deck) {
         addRequiredCards(deck, cards);
     }
 
+    @Override
     public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 
+    @Override
     public boolean ignoreMaxCost() {
         return true;
     }

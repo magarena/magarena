@@ -8,6 +8,7 @@ import magic.model.phase.MagicMainPhase;
 class TestManifest extends TestGameBuilder {
     // issue #151
     // Carrion Crow should not manifest tapped
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

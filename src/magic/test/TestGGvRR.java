@@ -11,6 +11,7 @@ class TestGGvRR extends TestGameBuilder {
      * Guildpack which has protection from monocolored
      * Fixed by making the protection check use getColorFlags in addition to getColoredTypeg
      */
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();

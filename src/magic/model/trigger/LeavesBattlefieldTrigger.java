@@ -15,6 +15,7 @@ public abstract class LeavesBattlefieldTrigger extends MagicTrigger<RemoveFromPl
 
     public LeavesBattlefieldTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenLeavesPlay;
     }

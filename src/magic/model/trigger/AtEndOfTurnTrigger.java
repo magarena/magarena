@@ -19,6 +19,7 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
 
     public AtEndOfTurnTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfTurn;
     }

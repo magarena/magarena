@@ -12,6 +12,7 @@ import magic.model.action.ShiftCardAction;
 public abstract class ThisCombatDamagePlayerTrigger extends DamageIsDealtTrigger {
     public ThisCombatDamagePlayerTrigger() {}
 
+    @Override
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
         return super.accept(permanent, damage) &&
                damage.isSource(permanent) &&

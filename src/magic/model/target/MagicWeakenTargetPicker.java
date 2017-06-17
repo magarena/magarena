@@ -30,6 +30,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
         count = MagicAmountFactory.One;
     }
 
+    @Override
     public MagicWeakenTargetPicker create(final String arg) {
         final String[] args = arg.replace('+','0').split("/");
         final int p = -Integer.parseInt(args[0]);

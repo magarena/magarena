@@ -13,6 +13,7 @@ public abstract class ProtectionTrigger extends MagicTrigger<MagicPermanent> {
 
     public ProtectionTrigger() {}
 
+    @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.Protection;
     }

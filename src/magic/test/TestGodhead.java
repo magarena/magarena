@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
 class TestGodhead extends TestGameBuilder {
+    @Override
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
