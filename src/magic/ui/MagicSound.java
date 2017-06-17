@@ -80,7 +80,7 @@ public enum MagicSound {
      */
     public void play(int volPercent) {
         if (volPercent > 0 && volPercent <= 100) {
-            executor.submit(() -> {
+            executor.execute(() -> {
                 playSound(soundUrl, volPercent);
             });
         }
