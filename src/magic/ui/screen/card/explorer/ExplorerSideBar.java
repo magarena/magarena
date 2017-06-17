@@ -1,6 +1,5 @@
 package magic.ui.screen.card.explorer;
 
-import magic.ui.widget.card.decks.CardDecksPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -8,16 +7,17 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
-import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
-import magic.ui.widget.duel.viewer.CardViewer;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.mwidgets.MScrollPane;
+import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.card.decks.CardDecksPanel;
+import magic.ui.widget.duel.viewer.CardViewer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class CardPanel extends JPanel {
+public class ExplorerSideBar extends TexturedPanel {
 
     // translatable strings
     private static final String _S1 = "decks: %d";
@@ -32,9 +32,7 @@ public class CardPanel extends JPanel {
     private final SplitterButton decksButton = new SplitterButton(MText.get(_S1, 0));
     private boolean isImageVisible = true;
 
-    public CardPanel() {
-
-        setOpaque(false);
+    public ExplorerSideBar() {
 
         // card image viewer
         cardViewer = new CardViewer();

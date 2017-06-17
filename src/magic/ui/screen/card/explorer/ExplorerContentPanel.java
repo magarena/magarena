@@ -28,7 +28,7 @@ public class ExplorerContentPanel extends JPanel
     private CardTablePanelB cardPoolTable;
     public CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
-    private ExplorerSidebarPanel sideBarPanel;
+    private ExplorerSideBar sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
     private final JPanel rhs = new JPanel();
     private final ExplorerScreen screen;
@@ -45,7 +45,7 @@ public class ExplorerContentPanel extends JPanel
         setOpaque(false);
 
         // create ui components.
-        sideBarPanel = new ExplorerSidebarPanel();
+        sideBarPanel = new ExplorerSideBar();
         filterPanel = new CardFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
 
