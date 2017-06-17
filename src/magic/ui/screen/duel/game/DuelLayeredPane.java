@@ -46,11 +46,11 @@ class DuelLayeredPane extends JLayeredPane {
     private void updateLayout() {
         removeAll();
         // game board layers from bottom to top.
-        add(backgroundLabel, 0);    // background image.
-        add(duelPanel, 1);          // sidebar and battlefield.
-        add(animationPanel, 2);     // animations.
-        add(imageCardViewer, 3);    // card popup.
-        add(dialogPanel, 4);        // dialogs.
+        add(backgroundLabel, new Integer(0));    // background image.
+        add(duelPanel, new Integer(1));          // sidebar and battlefield.
+        add(animationPanel, new Integer(2));     // animations.
+        add(imageCardViewer, new Integer(3));    // card popup.
+        add(dialogPanel, new Integer(4));        // dialogs.
         revalidate();
     }
 
