@@ -1,7 +1,7 @@
 [![Magarena - a single player fantasy card game](https://raw.githubusercontent.com/wiki/magarena/magarena/screenshots/bw-logo.png)](https://magarena.github.io/)
 
 [![CircleCI](https://circleci.com/gh/magarena/magarena.svg?style=shield)](https://circleci.com/gh/magarena/magarena)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6a4ee8930864225a7add5494af39a55)](https://www.codacy.com/app/Magarena/magarena?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=magarena/magarena&amp;utm_campaign=Badge_Grade)
+[![Codacy](https://img.shields.io/codacy/grade/b6a4ee8930864225a7add5494af39a55.svg)](https://www.codacy.com/app/Magarena/magarena?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=magarena/magarena&amp;utm_campaign=Badge_Grade)
 [![Latest version](https://img.shields.io/github/release/magarena/magarena.svg)](https://github.com/magarena/magarena/releases)
 [![Latest version total downloads](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
 [![All versions total downloads](https://img.shields.io/github/downloads/magarena/magarena/total.svg)](https://magarena.github.io/)
