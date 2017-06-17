@@ -23,7 +23,7 @@ import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
-class NewMenuButton extends JButton {
+class CustomMenuButton extends JButton {
 
     // translatable strings
     private static final String _S1 = "Close";
@@ -36,7 +36,7 @@ class NewMenuButton extends JButton {
     private boolean isRunnable;
     private boolean hasSeparator;
 
-    NewMenuButton(final String caption, final AbstractAction action, final String tooltip, final boolean showSeparator) {
+    CustomMenuButton(final String caption, final AbstractAction action, final String tooltip, final boolean showSeparator) {
         super(caption);
         this.isRunnable = (action != null);
         this.hasSeparator = showSeparator;
@@ -52,13 +52,13 @@ class NewMenuButton extends JButton {
             addActionListener(action);
         }
     }
-    NewMenuButton(final String caption, final AbstractAction action, final String tooltip) {
+    CustomMenuButton(final String caption, final AbstractAction action, final String tooltip) {
         this(caption, action, tooltip, true);
     }
-    NewMenuButton(final String caption, final AbstractAction action) {
+    CustomMenuButton(final String caption, final AbstractAction action) {
         this(caption, action, null);
     }
-    NewMenuButton() {
+    CustomMenuButton() {
         isRunnable = false;
         hasSeparator = false;
     }
@@ -135,8 +135,8 @@ class NewMenuButton extends JButton {
         }
     };
 
-    public static NewMenuButton getCloseScreenButton(final String caption) {
-        return new NewMenuButton(caption, closeScreenAction);
+    public static CustomMenuButton getCloseScreenButton(final String caption) {
+        return new CustomMenuButton(caption, closeScreenAction);
     }
 
     @Override
@@ -156,12 +156,12 @@ class NewMenuButton extends JButton {
         );
     }
 
-    public static NewMenuButton getCloseScreenButton() {
+    public static CustomMenuButton getCloseScreenButton() {
         return getCloseScreenButton(MText.get(_S1));
     }
 
-    public static NewMenuButton getTestButton() {
-        return new NewMenuButton("Test", closeScreenAction);
+    public static CustomMenuButton getTestButton() {
+        return new CustomMenuButton("Test", closeScreenAction);
     }
 
     /**
@@ -173,7 +173,7 @@ class NewMenuButton extends JButton {
      * @param description tooltip body text (<b>in English</b>).
      * @return
      */
-    public static NewMenuButton build(Runnable action, ImageIcon image, String title, String description) {
+    public static CustomMenuButton build(Runnable action, ImageIcon image, String title, String description) {
         return new NewActionBarButton(
                 image, title, description,
                 new AbstractAction() {
@@ -185,7 +185,7 @@ class NewMenuButton extends JButton {
         );
     }
 
-    public static NewMenuButton build(Runnable action, MagicIcon icon, String title) {
+    public static CustomMenuButton build(Runnable action, MagicIcon icon, String title) {
         return build(action, MagicImages.getIcon(icon), title, null);
     }
 
@@ -198,7 +198,7 @@ class NewMenuButton extends JButton {
      * @param description tooltip body text (<b>in English</b>).
      * @return
      */
-    public static NewMenuButton build(Runnable action, MagicIcon icon, String title, String description) {
+    public static CustomMenuButton build(Runnable action, MagicIcon icon, String title, String description) {
         return build(action, MagicImages.getIcon(icon), title, description);
     }
 
@@ -210,7 +210,7 @@ class NewMenuButton extends JButton {
      * @param tooltip main tooltip text (<b>in English</b>).
      * @return
      */
-    public static NewMenuButton build(Runnable action, String title, String tooltip) {
+    public static CustomMenuButton build(Runnable action, String title, String tooltip) {
         return new NewActionBarButton(
                 title, tooltip,
                 new AbstractAction() {
@@ -229,7 +229,7 @@ class NewMenuButton extends JButton {
      * @param text button caption (<b>in English</b>).
      * @return
      */
-    public static NewMenuButton build(Runnable action, String title) {
+    public static CustomMenuButton build(Runnable action, String title) {
         return new NewActionBarButton(title, new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -241,7 +241,7 @@ class NewMenuButton extends JButton {
     /**
     * Action bar button used to change screen layout.
     */
-    public static NewMenuButton buildLayoutButton(final Runnable action) {
+    public static CustomMenuButton buildLayoutButton(final Runnable action) {
         return new NewLayoutButton(action);
     }
 

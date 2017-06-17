@@ -12,23 +12,23 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class NewMenuPanel extends JPanel {
 
-    private final List<NewMenuButton> menuItems = new ArrayList<>();
+    private final List<CustomMenuButton> menuItems = new ArrayList<>();
 
     NewMenuPanel() {
         setMenuPanelLayout();
         setOpaque(false);
     }
 
-    public void addMenuItem(final NewMenuButton button) {
+    public void addMenuItem(final CustomMenuButton button) {
         menuItems.add(button);
     }
 
     public void addMenuItem(final String caption, final AbstractAction action, final String tooltip) {
-        addMenuItem(new NewMenuButton(caption, action, tooltip));
+        addMenuItem(new CustomMenuButton(caption, action, tooltip));
     }
 
     public void addMenuItem(final String caption, int fontSize, final AbstractAction action) {
-        final NewMenuButton btn = new NewMenuButton(caption, action, null);
+        final CustomMenuButton btn = new CustomMenuButton(caption, action, null);
         btn.setFont(btn.getFont().deriveFont((float)fontSize));
         addMenuItem(btn);
     }
@@ -38,7 +38,7 @@ class NewMenuPanel extends JPanel {
     }
 
     public void addBlankItem() {
-        final NewMenuButton emptyButton = new NewMenuButton("", null);
+        final CustomMenuButton emptyButton = new CustomMenuButton("", null);
         emptyButton.setMinimumSize(new Dimension(0, 10));
         menuItems.add(emptyButton);
     }
@@ -62,7 +62,7 @@ class NewMenuPanel extends JPanel {
         final double percentInc = 0.22D;
         final double percentHeight = 0.5D;
 
-        Font f = NewMenuButton.getDisplayFont();
+        Font f = CustomMenuButton.getDisplayFont();
         FontMetrics fm = menuItems.get(0).getFontMetrics(f);
         double calc1 = (fm.getHeight() - baseFontSize) / baseFontSize;
         double calc2 = (calc1 / percentInc) * percentHeight;
@@ -79,7 +79,7 @@ class NewMenuPanel extends JPanel {
                 "insets 0 6 6 6, gapy " + getGapY() + ", flowy, ax center",
                 "[center]")
             );
-            for (NewMenuButton menuItem : menuItems) {
+            for (CustomMenuButton menuItem : menuItems) {
                 add(menuItem);
             }
             revalidate();
