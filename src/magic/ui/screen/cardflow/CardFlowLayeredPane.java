@@ -29,8 +29,8 @@ class CardFlowLayeredPane extends JLayeredPane {
     private void updateLayout() {
         removeAll();
         // layers from bottom to top.
-        add(cardFlowPanel, new Integer(0));
-        add(flashOverlay, new Integer(1));
+        add(cardFlowPanel, 0);
+        add(flashOverlay, 1);
         revalidate();
     }
 

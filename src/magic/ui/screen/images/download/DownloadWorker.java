@@ -164,7 +164,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
             if (isCancelled()) {
                 return;
             } else {
-                publish(new Integer(fileCount));
+                publish(fileCount);
             }
         }
 

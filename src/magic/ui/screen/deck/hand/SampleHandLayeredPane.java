@@ -31,8 +31,8 @@ class SampleHandLayeredPane extends JLayeredPane {
     private void updateLayout() {
         removeAll();
         // layers from bottom to top.
-        add(cardsCanvas, new Integer(0));
-        add(flashOverlay, new Integer(1));
+        add(cardsCanvas, 0);
+        add(flashOverlay, 1);
         revalidate();
     }
 
