@@ -86,8 +86,11 @@ public class MoveCardAction extends MagicAction {
                 case Exile:
                     owner.getExile().addToTop(card);
                     break;
-                default:
+                case Battlefield:
                     //do nothing
+                    break;
+                default:
+                    throw new RuntimeException("Unsupported location for MoveCardAction: " + toLocation);
             }
         }
 
@@ -124,8 +127,11 @@ public class MoveCardAction extends MagicAction {
                 case Exile:
                     owner.getExile().remove(card);
                     break;
-                default:
+                case Battlefield:
                     //do nothing
+                    break;
+                default:
+                    throw new RuntimeException("Unsupported location for MoveCardAction: " + toLocation);
             }
         }
     }
