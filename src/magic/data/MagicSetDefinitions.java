@@ -1,5 +1,7 @@
 package magic.data;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.awt.Desktop;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -51,7 +53,7 @@ public class MagicSetDefinitions {
         final List<MagicCardDefinition> cards = CardDefinitions.getAllCards();
 
         final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.csv");
-        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
+        try (final PrintWriter writer = new PrintWriter(savePath.toFile(), UTF_8.name())) {
             writer.println("Set,Cards,Playable,Unimplemented,Potential,No Status");
             for (MagicSets set : MagicSets.values()) {
                 int totalPlayable = 0;

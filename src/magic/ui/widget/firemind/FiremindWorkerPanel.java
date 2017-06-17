@@ -1,8 +1,11 @@
 package magic.ui.widget.firemind;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.List;
@@ -19,10 +22,10 @@ import magic.FiremindQueueWorker;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.firemind.FiremindClient;
-import magic.ui.MagicImages;
 import magic.translate.MText;
-import magic.utility.MagicFileSystem.DataPath;
+import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -84,11 +87,11 @@ public class FiremindWorkerPanel extends JPanel {
     protected void saveDownloadLog(final List<String> downloadLog) {
         final Path logPath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve(getLogFilename());
         System.out.println("saving log : " + logPath);
-        try (final PrintWriter writer = new PrintWriter(logPath.toFile())) {
+        try (final PrintWriter writer = new PrintWriter(logPath.toFile(), UTF_8.name())) {
             for (String cardName : downloadLog) {
                 writer.println(cardName);
             }
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException|UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
     }

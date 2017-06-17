@@ -1,6 +1,9 @@
 package magic.model;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,7 +28,7 @@ public class MagicGameLog {
 
     public static void initialize() {
         try {
-            writer = new PrintWriter(gameLog);
+            writer = new PrintWriter(gameLog, UTF_8.name());
             final StringBuilder sb = new StringBuilder();
             sb.append("MAGARENA GAME LOG");
             sb.append('\n');
@@ -38,7 +41,7 @@ public class MagicGameLog {
             sb.append(" ").append(System.getProperty("os.arch"));
             sb.append("\n\n");
             log(sb.toString());
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException|UnsupportedEncodingException e) {
             System.err.println("Unable to create game log");
         }
     }

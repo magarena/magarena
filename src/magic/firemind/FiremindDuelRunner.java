@@ -1,11 +1,15 @@
 package magic.firemind;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.io.Writer;
+import java.nio.file.Files;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -141,7 +145,7 @@ public class FiremindDuelRunner {
         try {
             File deckFile = DeckUtils.getDecksFolder().resolve(name + ".dec").toFile();
             deckFile.createNewFile();
-            FileWriter fw = new FileWriter(deckFile.getAbsoluteFile());
+            Writer fw = Files.newBufferedWriter(deckFile.getAbsoluteFile().toPath(), UTF_8);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(content);
             bw.close();

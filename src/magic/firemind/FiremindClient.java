@@ -1,5 +1,7 @@
 package magic.firemind;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -156,12 +158,12 @@ public class FiremindClient {
             parent.put("win_deck1", win_deck1);
             parent.put("magarena_version_major", magarena_version_major);
             parent.put("magarena_version_minor", magarena_version_minor);
-            parent.put("log", new String(Files.readAllBytes(Paths.get(logFile))));
+            parent.put("log", new String(Files.readAllBytes(Paths.get(logFile)), UTF_8));
             con.setDoOutput(true);
 
             con.setDoInput(true);
             OutputStreamWriter wr = new OutputStreamWriter(
-                    con.getOutputStream());
+                    con.getOutputStream(), UTF_8);
             wr.write(parent.toString());
             wr.flush();
             int HttpResult = con.getResponseCode();
@@ -199,7 +201,7 @@ public class FiremindClient {
 
             con.setDoInput(true);
             OutputStreamWriter wr = new OutputStreamWriter(
-                    con.getOutputStream());
+                    con.getOutputStream(), UTF_8);
             wr.write(parent.toString());
             wr.flush();
             int HttpResult = con.getResponseCode();

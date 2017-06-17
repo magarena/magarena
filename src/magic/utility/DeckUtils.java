@@ -1,5 +1,7 @@
 package magic.utility;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -101,7 +103,7 @@ public class DeckUtils {
 
         BufferedWriter writer = null;
         try { //save deck
-            writer = new BufferedWriter(new FileWriter(filename));
+            writer = Files.newBufferedWriter(Paths.get(filename), UTF_8);
             for (int index=0;index<=2;index++) {
                 final SortedMap<String,Integer> cardMap=cardMaps.get(index);
                 if (!cardMap.isEmpty()) {

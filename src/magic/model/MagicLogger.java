@@ -1,7 +1,10 @@
 package magic.model;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,9 +41,9 @@ public class MagicLogger {
     public void writeLog() {
         sb.append("WRITTEN ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
         sb.append('\n');
-        try (final PrintWriter writer = new PrintWriter(logFile)) {
+        try (final PrintWriter writer = new PrintWriter(logFile, UTF_8.name())) {
             writer.println(sb.toString());
-        } catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException|UnsupportedEncodingException ex) {
             System.err.println("Failed to save " + logFile + " - " + ex);
         } finally {
             sb.setLength(0);

@@ -1,5 +1,7 @@
 package magic;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,7 +21,7 @@ public class FiremindQueueWorker {
             pb.redirectErrorStream(true);
             try {
                 Process p = pb.start();
-                Reader reader = new InputStreamReader(p.getInputStream());
+                Reader reader = new InputStreamReader(p.getInputStream(), UTF_8);
                 BufferedReader br = new BufferedReader(reader);
                 String line;
                 while ((line = br.readLine()) != null)

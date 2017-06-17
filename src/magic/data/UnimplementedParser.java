@@ -1,19 +1,22 @@
 package magic.data;
 
-import magic.utility.FileIO;
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Properties;
 import java.util.Locale;
-import magic.utility.ProgressReporter;
+import java.util.Properties;
 import magic.model.MagicCardDefinition;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.ProgressReporter;
 
 public class UnimplementedParser {
 
@@ -90,12 +93,12 @@ public class UnimplementedParser {
     private static void saveParsedCardsList(List<MagicCardDefinition> cardList, String filename) {
         final Path LOGS_PATH = MagicFileSystem.getDataPath(DataPath.LOGS);
         final File LOG_FILE = LOGS_PATH.resolve(filename + ".log").toFile();
-        try (final PrintWriter writer = new PrintWriter(LOG_FILE)) {
+        try (final PrintWriter writer = new PrintWriter(LOG_FILE, UTF_8.name())) {
             for (MagicCardDefinition card : cardList) {
                 final String cardName = card.getName();
                 writer.println(cardName);
             }
-        } catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException|UnsupportedEncodingException ex) {
             System.err.println("Failed to save " + LOG_FILE + " - " + ex);
         }
     }
@@ -103,11 +106,11 @@ public class UnimplementedParser {
     private static void saveParseErrorLog(final List<String> error) {
         final Path LOGS_PATH = MagicFileSystem.getDataPath(DataPath.LOGS);
         final File LOG_FILE = LOGS_PATH.resolve("parse_errors.log").toFile();
-        try (final PrintWriter writer = new PrintWriter(LOG_FILE)) {
+        try (final PrintWriter writer = new PrintWriter(LOG_FILE, UTF_8.name())) {
             for (String errorMessage : error) {
                 writer.println(errorMessage);
             }
-        } catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException|UnsupportedEncodingException ex) {
             System.err.println("Failed to save " + LOG_FILE + " - " + ex);
         }
     }

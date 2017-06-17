@@ -1,5 +1,7 @@
 package magic.ui.screen.menu.dev;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -98,7 +100,7 @@ class DevMenuContentPanel extends NewMenuScreenContentPanel {
         final List<String> missingCards = CardDefinitions.getMissingCardNames();
         Collections.sort(missingCards);
         final Path savePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("CardsMissingInMagarena.txt");
-        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
+        try (final PrintWriter writer = new PrintWriter(savePath.toFile(), UTF_8.name())) {
             missingCards.forEach(writer::println);
         }
         Desktop.getDesktop().open(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).toFile());

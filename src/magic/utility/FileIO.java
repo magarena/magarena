@@ -1,5 +1,9 @@
 package magic.utility;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.nio.file.StandardOpenOption.APPEND;
+import static java.nio.file.StandardOpenOption.CREATE;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.Closeable;
@@ -13,9 +17,10 @@ import java.io.InputStreamReader;
 import java.io.Writer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
-import java.util.Properties;
-import java.util.List;
 import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
+import java.util.List;
+import java.util.Properties;
 
 public class FileIO {
 
@@ -78,7 +83,7 @@ public class FileIO {
     public static void toFile(final File aFile, final String aContents, final boolean append) throws IOException {
         Writer output = null;
         try {
-            output = new BufferedWriter(new FileWriter(aFile, append));
+            output = Files.newBufferedWriter(aFile.toPath(), UTF_8, append ? new StandardOpenOption[] {CREATE, APPEND} : new StandardOpenOption[] {CREATE});
             output.write(aContents);
         } finally {
             close(output);

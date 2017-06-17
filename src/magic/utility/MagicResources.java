@@ -1,5 +1,7 @@
 package magic.utility;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -53,7 +55,7 @@ public final class MagicResources {
 
     public static InputStreamReader getH2ScriptFile(String filename) {
         return new InputStreamReader(
-            getJarResourceStream("/h2/stats/" + filename)
+            getJarResourceStream("/h2/stats/" + filename), UTF_8
         );
     }
 }
