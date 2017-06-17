@@ -128,7 +128,7 @@ public class FiremindWorkerPanel extends JPanel {
     }
 
     private void doCancelFiremindWorker() {
-        if (firemindWorker != null && !firemindWorker.isCancelled() & !firemindWorker.isDone()) {
+        if (firemindWorker != null && !firemindWorker.isCancelled() && !firemindWorker.isDone()) {
             firemindWorker.cancel(true);
             setButtonState(false);
         }

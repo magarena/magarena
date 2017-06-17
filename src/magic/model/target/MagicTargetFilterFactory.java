@@ -1449,7 +1449,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_PLANESWALKER = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return (target.isCreature() && target.hasAbility(MagicAbility.Flying) == false) | target.isPlaneswalker();
+            return (target.isCreature() && target.hasAbility(MagicAbility.Flying) == false) || target.isPlaneswalker();
         }
     };
 

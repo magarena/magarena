@@ -163,7 +163,7 @@ public class CardDecksPanel extends JPanel {
                         try (final BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(deckFile), "UTF-8"))) {
                             String line;
                             while ((line = br.readLine()) != null && !isCancelled()) {
-                                if (!line.startsWith("#") & !line.startsWith(">") & !line.trim().isEmpty()) {
+                                if (!line.startsWith("#") && !line.startsWith(">") && !line.trim().isEmpty()) {
                                     if (line.substring(line.indexOf(" ")).trim().equals(cardDef.getName())) {
                                         matchingDeckFiles.add(deckFile);
                                         break;
