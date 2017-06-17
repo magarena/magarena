@@ -395,6 +395,12 @@ public enum MagicAbility {
             card.add(new MagicEmbalmActivation(manaCost));
         }
     },
+    Eternalize("eternalize " + ARG.MANACOST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(new MagicEternalizeActivation(manaCost));
+        }
+    },
     Scavenge("scavenge " + ARG.MANACOST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
