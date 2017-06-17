@@ -9,7 +9,7 @@ import javax.swing.SwingUtilities;
 import magic.ui.helpers.UrlHelper;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.helpers.ImageHelper;
 import magic.translate.MText;
 import magic.ui.screen.HeaderFooterScreen;
@@ -33,8 +33,8 @@ public class AvatarImagesScreen extends HeaderFooterScreen {
         this.consumer = consumer;
         this.contentPanel = new ContentPanel(this);
         setMainContent(contentPanel);
-        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S4)));
-        addToFooter(MenuButton.build(this::doOpenAvatarsWebPage, 
+        setLeftFooter(PlainMenuButton.getCloseScreenButton(MText.get(_S4)));
+        addToFooter(PlainMenuButton.build(this::doOpenAvatarsWebPage, 
                 MText.get(_S5), MText.get(_S6))
         );
     }
@@ -62,7 +62,7 @@ public class AvatarImagesScreen extends HeaderFooterScreen {
         // paint the Icon to the BufferedImage.
         icon.paintIcon(null, g, 0,0);
         g.dispose();
-        setRightFooter(MenuButton.build(this::doSaveAvatarAndClose,
+        setRightFooter(PlainMenuButton.build(this::doSaveAvatarAndClose,
                 new ImageIcon(ImageHelper.scale(bi, 46, 46)),
                 MText.get(_S1), MText.get(_S2))
         );

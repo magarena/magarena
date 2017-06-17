@@ -35,7 +35,7 @@ import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TexturedPanel;
@@ -88,15 +88,15 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
 
     private void setFooter() {
-        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S7)));
-        setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S9)));
-        addToFooter(MenuButton.build(this::doEditPlayerAction,
+        setLeftFooter(PlainMenuButton.getCloseScreenButton(MText.get(_S7)));
+        setRightFooter(PlainMenuButton.build(this::doNextAction, MText.get(_S9)));
+        addToFooter(PlainMenuButton.build(this::doEditPlayerAction,
                 MText.get(_S10), MText.get(_S11)
             ),
-            MenuButton.build(this::doNewPlayerAction,
+            PlainMenuButton.build(this::doNewPlayerAction,
                 MText.get(_S12), MText.get(_S13)
             ),
-            MenuButton.build(this::deleteSelectedPlayer,
+            PlainMenuButton.build(this::deleteSelectedPlayer,
                 MText.get(_S6), MText.get(_S15)
             ),
             new SelectAvatarActionButton()

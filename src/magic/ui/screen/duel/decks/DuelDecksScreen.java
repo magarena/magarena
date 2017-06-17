@@ -21,7 +21,7 @@ import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.deck.editor.IDeckEditorClient;
 import magic.ui.screen.widget.DuelSettingsPanel;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
 import magic.ui.widget.cards.table.CardsTableStyle;
 import magic.utility.MagicSystem;
@@ -100,18 +100,18 @@ public class DuelDecksScreen extends HeaderFooterScreen
     private void setFooterButtons() {
 
         setLeftFooter(screenContent.getDuel().getGamesPlayed() == 0
-                ? MenuButton.getCloseScreenButton()
-                : MenuButton.build(this::doShowMainMenu, MText.get(_S2))
+                ? PlainMenuButton.getCloseScreenButton()
+                : PlainMenuButton.build(this::doShowMainMenu, MText.get(_S2))
         );
 
         setRightFooter(screenContent.getDuel().isFinished()
-                ? MenuButton.build(this::doRestartDuel, MText.get(_S3))
+                ? PlainMenuButton.build(this::doRestartDuel, MText.get(_S3))
                 : nextGameButton
         );
 
         // middle actions
         if (isNewDuel()) {
-            addToFooter(MenuButton.build(this::showDeckEditor,
+            addToFooter(PlainMenuButton.build(this::showDeckEditor,
                             MagicIcon.DECK, MText.get(_S5), MText.get(_S6)
                     ),
                     getTiledDeckCardImagesButton(),
@@ -125,15 +125,15 @@ public class DuelDecksScreen extends HeaderFooterScreen
         } else { // duel in progress
             addToFooter(getTiledDeckCardImagesButton(),
                     SampleHandActionButton.createInstance(this),
-                    MenuButton.build(this::doRestartDuel,
+                    PlainMenuButton.build(this::doRestartDuel,
                             MagicIcon.REFRESH, MText.get(_S10), MText.get(_S11)
                     )
             );
         }
     }
 
-    private MenuButton getTiledDeckCardImagesButton() {
-        return MenuButton.build(this::showTiledDeckCardImages,
+    private PlainMenuButton getTiledDeckCardImagesButton() {
+        return PlainMenuButton.build(this::showTiledDeckCardImages,
                 MagicIcon.TILED, MText.get(_S12), MText.get(_S13));
     }
 
@@ -200,9 +200,9 @@ public class DuelDecksScreen extends HeaderFooterScreen
         ScreenController.showDeckTiledCardsScreen(getActiveDeck());
     }
 
-    private MenuButton getWinnerButton() {
+    private PlainMenuButton getWinnerButton() {
         String winner = screenContent.getDuel().getWinningPlayerProfile().getPlayerName();
-        return new MenuButton(MText.get(_S9, winner), new AbstractAction() {
+        return new PlainMenuButton(MText.get(_S9, winner), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // do nothing

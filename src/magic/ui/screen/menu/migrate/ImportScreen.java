@@ -18,7 +18,7 @@ import magic.ui.ImportWorker;
 import magic.ui.MagarenaDirectoryChooser;
 import magic.ui.ScreenController;
 import magic.translate.MText;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.FontsAndBorders;
@@ -131,7 +131,7 @@ public class ImportScreen extends MScreen {
         private class ImportProgressPanel extends MenuPanel implements PropertyChangeListener {
 
             private final JPanel panel = new JPanel(new MigLayout("insets 4 0 0 0, flowy"));
-            private final MenuButton cancelButton;
+            private final PlainMenuButton cancelButton;
             private ImportWorker importWorker;
             private final ProgressPanel progressBar = new ProgressPanel();
 
@@ -139,7 +139,7 @@ public class ImportScreen extends MScreen {
 
                 super(MText.get(MText.get(_S7)));
 
-                cancelButton = new MenuButton(
+                cancelButton = new PlainMenuButton(
                         MText.get(_S8),
                         new AbstractAction() {
                             @Override

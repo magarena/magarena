@@ -4,7 +4,7 @@ import magic.data.MagicIcon;
 import magic.ui.ScreenController;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.card.explorer.ExplorerHeaderPanel;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
 public class TestScreen extends HeaderFooterScreen {
@@ -21,15 +21,14 @@ public class TestScreen extends HeaderFooterScreen {
         setHeaderContent(new ExplorerHeaderPanel());
 
         // adds a default "Close" button if not specified.
-        setLeftFooter(MenuButton.getTestButton());
+        setLeftFooter(PlainMenuButton.getTestButton());
 
         // Optional or one button allowed.
-        setRightFooter(MenuButton.getTestButton());
+        setRightFooter(PlainMenuButton.getTestButton());
 
         // adds a variable number of MenuButtons to central footer.
-        addToFooter(
-                MenuButton.getTestButton(), 
-                MenuButton.build(this::showTestMessage,
+        addToFooter(PlainMenuButton.getTestButton(), 
+                PlainMenuButton.build(this::showTestMessage,
                         MagicIcon.STATS,
                         "Testing", "Click to test...")
             );

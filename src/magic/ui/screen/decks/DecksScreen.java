@@ -7,7 +7,7 @@ import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
@@ -39,11 +39,11 @@ public class DecksScreen extends HeaderFooterScreen {
         screenContent = new DecksScreenPanel(deckStatusPanel);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
-        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S2)));
-        setRightFooter(MenuButton.build(this::doSelectDeck, MText.get(_S3)));
-        addToFooter(MenuButton.build(this::showSampleHand,
+        setLeftFooter(PlainMenuButton.getCloseScreenButton(MText.get(_S2)));
+        setRightFooter(PlainMenuButton.build(this::doSelectDeck, MText.get(_S3)));
+        addToFooter(PlainMenuButton.build(this::showSampleHand,
                         MagicIcon.HAND_ICON, MText.get(_S6), MText.get(_S7)),
-                MenuButton.build(this::showDeckImageView,
+                PlainMenuButton.build(this::showDeckImageView,
                         MagicIcon.TILED, MText.get(_S10), MText.get(_S11))
         );
     }

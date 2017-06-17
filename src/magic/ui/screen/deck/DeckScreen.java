@@ -6,7 +6,7 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
@@ -29,9 +29,8 @@ public class DeckScreen extends HeaderFooterScreen {
         screenContent = new DeckScreenPanel(deck, selectedCard);
         setMainContent(screenContent);
         setHeaderContent(deckStatusPanel);
-        addToFooter(
-            MenuButton.build(this::showSampleHand, MagicIcon.HAND_ICON, MText.get(_S2), MText.get(_S3)),
-            MenuButton.build(this::showDeckImageView,MagicIcon.TILED, MText.get(_S5), MText.get(_S6))
+        addToFooter(PlainMenuButton.build(this::showSampleHand, MagicIcon.HAND_ICON, MText.get(_S2), MText.get(_S3)),
+            PlainMenuButton.build(this::showDeckImageView,MagicIcon.TILED, MText.get(_S5), MText.get(_S6))
         );
         deckStatusPanel.setDeck(deck, false);
     }

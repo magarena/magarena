@@ -7,7 +7,7 @@ import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
 public class NewDuelSettingsScreen extends HeaderFooterScreen {
@@ -30,8 +30,8 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
         duelConfig.load();
         contentPanel = new ScreenContentPanel(duelConfig);
         setMainContent(contentPanel);
-        setLeftFooter(MenuButton.getCloseScreenButton(MText.get(_S2)));
-        setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S3)));
+        setLeftFooter(PlainMenuButton.getCloseScreenButton(MText.get(_S2)));
+        setRightFooter(PlainMenuButton.build(this::doNextAction, MText.get(_S3)));
         setWikiPage(WikiPage.NEW_DUEL);
     }
 

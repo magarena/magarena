@@ -13,7 +13,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import magic.ui.screen.interfaces.IThemeStyle;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TexturedPanel;
@@ -122,7 +122,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
 
         if (showGeneralCloseMenuOption()) {
             menu.addBlankItem();
-            menu.addMenuItem(new MenuButton(MText.get(_S8), new AbstractAction() {
+            menu.addMenuItem(new PlainMenuButton(MText.get(_S8), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     hideOverlay();

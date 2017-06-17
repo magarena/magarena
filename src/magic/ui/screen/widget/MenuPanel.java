@@ -20,7 +20,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
     private static final Dimension PREFERRED_SIZE = new Dimension(320, 405);
 
     private final String title;
-    private final List<MenuButton> menuItems = new ArrayList<>();
+    private final List<PlainMenuButton> menuItems = new ArrayList<>();
 
     public MenuPanel() {
         this(null);
@@ -39,16 +39,16 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
 
     }
 
-    public void addMenuItem(final MenuButton button) {
+    public void addMenuItem(final PlainMenuButton button) {
         menuItems.add(button);
     }
 
     public void addMenuItem(final String caption, final AbstractAction action, final String tooltip) {
-        addMenuItem(new MenuButton(caption, action, tooltip));
+        addMenuItem(new PlainMenuButton(caption, action, tooltip));
     }
 
     public void addMenuItem(final String caption, int fontSize, final AbstractAction action) {
-        final MenuButton btn = new MenuButton(caption, action, null);
+        final PlainMenuButton btn = new PlainMenuButton(caption, action, null);
         btn.setFont(btn.getFont().deriveFont((float)fontSize));
         addMenuItem(btn);
     }
@@ -58,7 +58,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
     }
 
     public void addBlankItem() {
-        final MenuButton emptyButton = new MenuButton("", null);
+        final PlainMenuButton emptyButton = new PlainMenuButton("", null);
         emptyButton.setMinimumSize(new Dimension(0, 10));
         menuItems.add(emptyButton);
     }
@@ -73,7 +73,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
         if (this.title != null) {
             add(getMenuTitlePanel(), "w 100%, pad 0 0 10 0, gapbottom 20");
         }
-        for (MenuButton menuItem : menuItems) {
+        for (PlainMenuButton menuItem : menuItems) {
             add(menuItem, "w 100%");
         }
         revalidate();

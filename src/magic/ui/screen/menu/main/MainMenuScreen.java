@@ -9,7 +9,7 @@ import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicSystem;
 
@@ -59,7 +59,7 @@ public class MainMenuScreen extends HeaderFooterScreen {
         setMainContent(contentPanel);
         setHeaderContent(alertPanel);
         setLeftFooter(null);
-        addToFooter(MenuButton.build(this::doCloseScreen, MText.get(_S2)));
+        addToFooter(PlainMenuButton.build(this::doCloseScreen, MText.get(_S2)));
         setWikiPage(WikiPage.MAIN_MENU);
         if (!MagicSystem.isDevMode()) {
             KBM.addKeyEventDispatcher(keyEventDispatcher);

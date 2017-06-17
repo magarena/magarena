@@ -17,7 +17,7 @@ import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.cardflow.FlashTextOverlay;
 import magic.ui.screen.cardflow.ICardFlowProvider;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
 import magic.ui.widget.cards.canvas.ICardsCanvasListener;
@@ -64,7 +64,7 @@ public class SampleHandScreen extends HeaderFooterScreen
         optionsPanel = new OptionsPanel(this);
         setHeaderContent(deckStatusPanel);
         setHeaderOptions(optionsPanel);
-        addToFooter(MenuButton.build(this::dealSampleHand,
+        addToFooter(PlainMenuButton.build(this::dealSampleHand,
                 MagicIcon.REFRESH, MText.get(_S3), MText.get(_S4))
         );
     }

@@ -4,7 +4,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
 import magic.ui.helpers.UrlHelper;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.utility.MagicSystem;
 import magic.ui.WikiPage;
 import magic.ui.helpers.MouseHelper;
@@ -31,11 +31,11 @@ public class CardScriptScreen extends HeaderFooterScreen {
     }
 
     private void setFooterButtons() {
-        addToFooter(MenuButton.build(this::openFiremindWebpage, 
+        addToFooter(PlainMenuButton.build(this::openFiremindWebpage, 
                 MagicIcon.FIREMIND, MText.get(_S5), MText.get(_S6))
         );
         if (MagicSystem.isDevMode()) {
-            addToFooter(MenuButton.build(this::doReloadScript,
+            addToFooter(PlainMenuButton.build(this::doReloadScript,
                     MagicIcon.REFRESH, MText.get(_S3), MText.get(_S4))
             );
         }

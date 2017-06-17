@@ -6,7 +6,7 @@ import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
 public class KeywordsScreen extends HeaderFooterScreen {
@@ -32,7 +32,7 @@ public class KeywordsScreen extends HeaderFooterScreen {
                 : new ContentPanelB()
         );
         clearFooterButtons();
-        addToFooter(MenuButton.buildLayoutButton(this::doChangeLayout));                
+        addToFooter(PlainMenuButton.buildLayoutButton(this::doChangeLayout));                
         doSaveSettings();        
     }
 

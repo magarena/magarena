@@ -12,7 +12,7 @@ import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.mwidgets.MTextFileViewer;
 import magic.utility.MagicFileSystem;
 
@@ -57,12 +57,12 @@ public class GameLogScreen extends HeaderFooterScreen {
     private void setFooterButtons() {
         clearFooterButtons();
         if (isBasicLog) {
-            addToFooter(MenuButton.build(this::showDetailedLog, 
+            addToFooter(PlainMenuButton.build(this::showDetailedLog, 
                     MagicIcon.SWAP, MText.get(_S6), MText.get(_S7))
             );
             modeLabel.setText(MText.get(_S1));
         } else {
-            addToFooter(MenuButton.build(this::showBasicLog, 
+            addToFooter(PlainMenuButton.build(this::showBasicLog, 
                     MagicIcon.SWAP, MText.get(_S4), MText.get(_S5))
             );
             modeLabel.setText(MText.get(_S2));

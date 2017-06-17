@@ -2,10 +2,10 @@ package magic.ui.screen.duel.decks;
 
 import javax.swing.AbstractAction;
 import magic.translate.MText;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
-class StartGameButton extends MenuButton {
+class StartGameButton extends PlainMenuButton {
 
     private static final String _S1 = "Preparing game, please wait...";
 

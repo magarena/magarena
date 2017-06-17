@@ -9,7 +9,7 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.IDeckProvider;
 import magic.ui.screen.HeaderFooterScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
 
 @SuppressWarnings("serial")
@@ -53,15 +53,15 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen
     }
 
     private void setFilterButtons() {
-        final List<MenuButton> btns = new ArrayList<>();
+        final List<PlainMenuButton> btns = new ArrayList<>();
         for (CardTypeFilter f : CardTypeFilter.values()) {
             if (f == CardTypeFilter.ALL) {
-                btns.add(MenuButton.build(() -> showCards(f), f.getTitle()));
+                btns.add(PlainMenuButton.build(() -> showCards(f), f.getTitle()));
             } else if (deck.contains(f.getMagicType())) {
-                btns.add(MenuButton.build(() -> showCards(f), f.getIcon(), f.getTitle()));
+                btns.add(PlainMenuButton.build(() -> showCards(f), f.getIcon(), f.getTitle()));
             }
         }
-        addFooterGroup(btns.toArray(new MenuButton[btns.size()]));
+        addFooterGroup(btns.toArray(new PlainMenuButton[btns.size()]));
     }
 
     private void setFooterButtons() {

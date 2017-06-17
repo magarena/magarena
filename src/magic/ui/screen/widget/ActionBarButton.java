@@ -9,7 +9,7 @@ import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
-public class ActionBarButton extends MenuButton {
+public class ActionBarButton extends PlainMenuButton {
 
     private void setToolTip(String title, String tooltip) {
         title = title == null ? "" : title.trim();

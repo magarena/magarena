@@ -17,7 +17,7 @@ import magic.ui.ScreenController;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
 public class CardFlowScreen extends HeaderFooterScreen
@@ -28,7 +28,7 @@ public class CardFlowScreen extends HeaderFooterScreen
     private final CardFlowLayeredPane layeredPane;
     private final CardFlowPanel cardFlowPanel;
     private List<IRenderableCard> cards;
-    private final MenuButton imageIndexButton = new MenuButton("", null);
+    private final PlainMenuButton imageIndexButton = new PlainMenuButton("", null);
     private final ICardFlowProvider provider;
     private final OptionsPanel optionsPanel;
     private final ScreenSettings settings = new ScreenSettings();
@@ -59,7 +59,7 @@ public class CardFlowScreen extends HeaderFooterScreen
 
         setMainContent(layeredPane);
 
-        MenuButton[] btns = new MenuButton[3];
+        PlainMenuButton[] btns = new PlainMenuButton[3];
         btns[0] = getScrollBackButton();
         btns[1] = imageIndexButton;
         btns[2] = getScrollForwardsButton();
@@ -72,8 +72,8 @@ public class CardFlowScreen extends HeaderFooterScreen
         setHeaderOptions(optionsPanel);
     }
 
-    private MenuButton getScrollForwardsButton() {
-        MenuButton btn = MenuButton.build(this::doScrollForwards,
+    private PlainMenuButton getScrollForwardsButton() {
+        PlainMenuButton btn = PlainMenuButton.build(this::doScrollForwards,
             MagicIcon.GO_NEXT,
             "Scroll forwards",
             "You can also use the right arrow key or by moving the mouse-wheel back."
@@ -81,8 +81,8 @@ public class CardFlowScreen extends HeaderFooterScreen
         return btn;
     }
 
-    private MenuButton getScrollBackButton() {
-        MenuButton btn = MenuButton.build(this::doScrollBack,
+    private PlainMenuButton getScrollBackButton() {
+        PlainMenuButton btn = PlainMenuButton.build(this::doScrollBack,
             MagicIcon.GO_BACK,
             "Scroll back",
             "You can also use the left arrow key or by moving the mouse-wheel forwards."

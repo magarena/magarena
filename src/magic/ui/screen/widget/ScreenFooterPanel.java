@@ -43,7 +43,7 @@ public class ScreenFooterPanel extends TexturedPanel
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
 
         // add close button as default.
-        setLeftButton(MenuButton.getCloseScreenButton());
+        setLeftButton(PlainMenuButton.getCloseScreenButton());
 
         setLayout(new MigLayout(
                 "insets 0, gap 10, flowx, aligny 50%",
@@ -68,9 +68,9 @@ public class ScreenFooterPanel extends TexturedPanel
         setBackground(thisBG);
     }
 
-    public void addMiddleButtons(MenuButton[] buttons) {
+    public void addMiddleButtons(PlainMenuButton[] buttons) {
         if (buttons != null) {
-            for (MenuButton btn : buttons) {
+            for (PlainMenuButton btn : buttons) {
                 btn.setEnabled(btn.isRunnable());
                 btn.setBorderPainted(true);
                 btn.setBorder(BorderFactory.createCompoundBorder(
@@ -90,7 +90,7 @@ public class ScreenFooterPanel extends TexturedPanel
         middlePanel.revalidate();
     }
 
-    public void setLeftButton(MenuButton btn) {
+    public void setLeftButton(PlainMenuButton btn) {
         leftPanel.removeAll();
         if (btn != null) {
             btn.setEnabled(btn.isRunnable());
@@ -101,7 +101,7 @@ public class ScreenFooterPanel extends TexturedPanel
         leftPanel.revalidate();
     }
 
-    public void setRightButton(MenuButton btn) {
+    public void setRightButton(PlainMenuButton btn) {
         rightPanel.removeAll();
         if (btn != null) {
             btn.setEnabled(btn.isRunnable());
@@ -120,8 +120,8 @@ public class ScreenFooterPanel extends TexturedPanel
         isFirstFooter = true;
     }
 
-    public void addFooterGroup(MenuButton[] btns) {
-        for (MenuButton btn : btns) {
+    public void addFooterGroup(PlainMenuButton[] btns) {
+        for (PlainMenuButton btn : btns) {
             final boolean isGroupFirst = btn == btns[0];
             final boolean isGroupLast = btn == btns[btns.length - 1];
             btn.setEnabled(btn.isRunnable());

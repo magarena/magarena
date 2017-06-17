@@ -21,7 +21,7 @@ import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.duel.decks.DuelDecksScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.utility.DeckUtils;
 
@@ -42,17 +42,16 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
         setHeaderContent(deckStatusPanel);
         setLeftFooter(getLeftAction());
         setRightFooter(getRightAction());
-        addToFooter(
-            MenuButton.build(this::loadDeck,
+        addToFooter(PlainMenuButton.build(this::loadDeck,
                 MagicIcon.OPEN, "Select Deck", "Select an existing prebuilt or player deck."
             ),
-            MenuButton.build(this::saveDeck,
+            PlainMenuButton.build(this::saveDeck,
                 MagicIcon.SAVE, "Save Deck", "Save deck to file."
             ),
-            MenuButton.build(this::showSampleHand,
+            PlainMenuButton.build(this::showSampleHand,
                 MagicIcon.HAND_ICON, "Sample Hand", "See what kind of Hand you might be dealt from this deck."
             ),
-            MenuButton.build(this::showDeckImageView,
+            PlainMenuButton.build(this::showDeckImageView,
                 MagicIcon.TILED, "Deck View", "Shows complete deck using tiled card images."
             )
         );
@@ -103,14 +102,14 @@ public class DeckEditorSplitScreen extends HeaderFooterScreen
         }
     }
 
-    public MenuButton getLeftAction() {
+    public PlainMenuButton getLeftAction() {
         final String caption = (!screenContent.isStandaloneDeckEditor() ? "Cancel" : "Close");
-        return MenuButton.getCloseScreenButton(caption);
+        return PlainMenuButton.getCloseScreenButton(caption);
     }
 
-    public MenuButton getRightAction() {
+    public PlainMenuButton getRightAction() {
         if (!screenContent.isStandaloneDeckEditor()) {
-            return new MenuButton("Use this deck", new AbstractAction() {
+            return new PlainMenuButton("Use this deck", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     if (screenContent.validateDeck(true) && screenContent.applyDeckUpdates()) {

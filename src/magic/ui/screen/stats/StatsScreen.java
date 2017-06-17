@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import magic.data.stats.MagicStats;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
 public class StatsScreen extends HeaderFooterScreen {
@@ -25,7 +25,7 @@ public class StatsScreen extends HeaderFooterScreen {
         }
         setMainContent(contentPanel);
 
-        setLeftFooter(MenuButton.getCloseScreenButton());
+        setLeftFooter(PlainMenuButton.getCloseScreenButton());
 
         // Optional or one button allowed.
         //setRightFooter(MenuButton.getTestButton());

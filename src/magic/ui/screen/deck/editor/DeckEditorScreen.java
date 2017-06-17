@@ -18,7 +18,7 @@ import magic.ui.WikiPage;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
 import magic.utility.DeckUtils;
 import magic.utility.MagicFileSystem;
@@ -116,17 +116,16 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
     }
 
     private void setFooterButtons() {
-        addToFooter(
-            MenuButton.build(this::showDecksScreen,
+        addToFooter(PlainMenuButton.build(this::showDecksScreen,
                 MagicIcon.OPEN, MText.get(_S4), MText.get(_S5)
             ),
-            MenuButton.build(this::saveDeck,
+            PlainMenuButton.build(this::saveDeck,
                 MagicIcon.SAVE, MText.get(_S6), MText.get(_S7)
             ),
-            MenuButton.build(this::showSampleHandScreen,
+            PlainMenuButton.build(this::showSampleHandScreen,
                 MagicIcon.HAND_ICON, MText.get(_S8), MText.get(_S9)
             ),
-            MenuButton.build(this::showDeckTiledCardsScreen,
+            PlainMenuButton.build(this::showDeckTiledCardsScreen,
                 MagicIcon.TILED, MText.get(_S11), MText.get(_S12)
             )
         );
@@ -154,8 +153,8 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
         }
     }
 
-    private MenuButton getLeftActionButton() {
-        return MenuButton.getCloseScreenButton(!isStandaloneMode() ? MText.get(_S1) : MText.get(_S2));
+    private PlainMenuButton getLeftActionButton() {
+        return PlainMenuButton.getCloseScreenButton(!isStandaloneMode() ? MText.get(_S1) : MText.get(_S2));
     }
 
     private void doUseDeckAction() {
@@ -169,9 +168,9 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
         }
     }
 
-    private MenuButton getRightActionButton() {
+    private PlainMenuButton getRightActionButton() {
         return !isStandaloneMode()
-            ? MenuButton.build(this::doUseDeckAction, MText.get(_S3))
+            ? PlainMenuButton.build(this::doUseDeckAction, MText.get(_S3))
             : null;
     }
 

@@ -15,7 +15,7 @@ import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.cardflow.FlashTextOverlay;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.canvas.CardsCanvas;
 import magic.ui.widget.cards.canvas.CardsCanvas.LayoutMode;
@@ -52,9 +52,9 @@ public class MulliganScreen extends HeaderFooterScreen
         optionsPanel = new OptionsPanel(this);
         setHeaderContent(new HeaderPanel(choicePanel.getGameController().getGame()));
         setHeaderOptions(optionsPanel);
-        setLeftFooter(MenuButton.build(this::doCancel, MText.get(_S2)));
-        setRightFooter(MenuButton.build(this::doNextAction, MText.get(_S3)));
-        addToFooter(MenuButton.build(this::doMulligan,
+        setLeftFooter(PlainMenuButton.build(this::doCancel, MText.get(_S2)));
+        setRightFooter(PlainMenuButton.build(this::doNextAction, MText.get(_S3)));
+        addToFooter(PlainMenuButton.build(this::doMulligan,
                 MagicIcon.MULLIGAN, MText.get(_S1), MText.get(_S5))
         );
         setWikiPage(WikiPage.MULLIGAN);
