@@ -8,6 +8,7 @@
   <property name="target" value="1.8"/>
   <property name="lib" value="release/lib" />
   <property name="groovy-version" value="2.4.7" />
+  <property name="error-prone-version" value="2.0.19" />
   
   <path id="classpath">
       <fileset dir="${lib}">
@@ -48,6 +49,10 @@
       <get src="http://repo2.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193.jar" 
          dest="${lib}/h2-1.4.193.jar" 
          skipexisting="true" />      
+      <echo message="downloading errorprone lib"/>
+      <get src="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_ant/${error-prone-version}/error_prone_ant-${error-prone-version}.jar"
+         dest="lib/error_prone_ant-${error-prone-version}.jar"
+         skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
@@ -63,10 +68,21 @@
 
   <!-- build - Compile sources and copy resources to build directory -->
   <target depends="init,deps" name="build">
-    <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" encoding="UTF-8" destdir="build" source="${source}" target="${target}">
+    <javac
+        includeantruntime="false"
+        debug="true"
+        debuglevel="${debuglevel}"
+        encoding="UTF-8"
+        destdir="build"
+        source="${source}"
+        target="${target}"
+        compiler="com.google.errorprone.ErrorProneAntCompilerAdapter">
         <src path="src"/>
         <compilerarg value="-Xlint"/>
         <classpath refid="classpath" />
+        <compilerclasspath>
+            <pathelement location="lib/error_prone_ant-${error-prone-version}.jar"/>
+        </compilerclasspath>
     </javac>
     <copy includeemptydirs="false" todir="build">
       <fileset dir="resources">
