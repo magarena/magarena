@@ -167,7 +167,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         return gameStatusPanel.getTurnPanelLayout(container);
     }
 
-    private class LayoutSlot {
+    private static class LayoutSlot {
 
         private JComponent component;
         private String constraints;

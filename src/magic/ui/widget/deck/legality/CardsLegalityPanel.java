@@ -211,7 +211,7 @@ public class CardsLegalityPanel extends JPanel {
         }
     }
 
-    private class HideCellFocusRenderer extends DefaultTableCellRenderer {
+    private static class HideCellFocusRenderer extends DefaultTableCellRenderer {
         @Override
         public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
             super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);

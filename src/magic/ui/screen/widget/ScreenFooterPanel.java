@@ -18,7 +18,7 @@ import net.miginfocom.swing.MigLayout;
 public class ScreenFooterPanel extends TexturedPanel
         implements IThemeStyle {
 
-    private class ContentPanel extends JPanel {
+    private static class ContentPanel extends JPanel {
         public ContentPanel() {
             setLayout(new MigLayout("insets 0, gap 0"));
             setOpaque(false);

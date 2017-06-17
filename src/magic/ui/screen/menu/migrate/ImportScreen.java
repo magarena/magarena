@@ -209,7 +209,7 @@ public class ImportScreen extends MScreen {
 
     }
 
-    private class ProgressPanel extends JPanel {
+    private static class ProgressPanel extends JPanel {
 
         private int percentageComplete = 0;
 

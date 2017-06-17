@@ -95,7 +95,7 @@ public class StackViewer extends TexturedPanel
      * correctly based on whether the vertical scrollbar is visible or not.
      */
     @SuppressWarnings("serial")
-    private final class ScrollablePanel extends JPanel implements Scrollable {
+    private static final class ScrollablePanel extends JPanel implements Scrollable {
 
         @Override
         public Dimension getPreferredScrollableViewportSize() {

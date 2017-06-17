@@ -11,7 +11,7 @@ public enum SearchOperand {
     EXCLUDE(MyStrings._S3);
 
     // Translatable strings.
-    private class MyStrings {
+    private static class MyStrings {
         static final String _S1 = "Match any";
         static final String _S2 = "Match all";
         static final String _S3 = "Exclude";

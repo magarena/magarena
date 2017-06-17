@@ -115,7 +115,7 @@ class DeckGamesJTable extends JTable {
         repaint();
     }
 
-    private class MouseHoverListener extends MouseMotionAdapter {
+    private static class MouseHoverListener extends MouseMotionAdapter {
         private int lastMCol = -1;
         private int lastMRow = -1;
         @Override

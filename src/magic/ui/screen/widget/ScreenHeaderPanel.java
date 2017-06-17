@@ -15,7 +15,7 @@ import net.miginfocom.swing.MigLayout;
 public class ScreenHeaderPanel extends TexturedPanel
         implements IThemeStyle {
 
-    private class PlaceHolderPanel extends JPanel {
+    private static class PlaceHolderPanel extends JPanel {
         @Override
         public boolean isVisible() {
             return false;

@@ -79,7 +79,7 @@ class LogViewer extends TexturedPanel {
         GeneralConfig.getInstance().save();
     }
 
-    private class LogScrollPane extends JScrollPane {
+    private static class LogScrollPane extends JScrollPane {
 
         private static final int INCREMENT = 108;
 

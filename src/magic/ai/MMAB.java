@@ -132,7 +132,7 @@ public class MMAB extends MagicAI {
         return sourceGame.map(bestAchoice.choiceResults);
     }
 
-class MMABWorker {
+static class MMABWorker {
 
     private final boolean CHEAT;
     private final long id;

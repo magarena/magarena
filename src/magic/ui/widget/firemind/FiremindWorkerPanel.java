@@ -191,7 +191,7 @@ public class FiremindWorkerPanel extends JPanel {
         firePropertyChange("isRunning", oldState, newValue);
     }
 
-    private class FiremindWorkerRunner extends SwingWorker<String, Void> {
+    private static class FiremindWorkerRunner extends SwingWorker<String, Void> {
         @Override
         protected String doInBackground() throws Exception {
             // restarts after 25 games

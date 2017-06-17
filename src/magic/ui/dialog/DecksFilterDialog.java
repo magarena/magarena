@@ -163,7 +163,7 @@ public class DecksFilterDialog extends MagicDialog {
         };
     }
 
-    private class DeckSizeFilterPanel extends JPanel {
+    private static class DeckSizeFilterPanel extends JPanel {
 
         // ui components
         private final MigLayout migLayout = new MigLayout();

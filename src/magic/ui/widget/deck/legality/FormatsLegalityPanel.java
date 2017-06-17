@@ -108,7 +108,7 @@ public class FormatsLegalityPanel extends JPanel {
         return lst.toArray(new DeckLegalityInfo[0]);
     }
 
-    private class FormatsListCellRenderer extends DefaultListCellRenderer {
+    private static class FormatsListCellRenderer extends DefaultListCellRenderer {
 
         private final ImageIcon LEGAL_ICON = MagicImages.getIcon(MagicIcon.LEGAL);
         private final ImageIcon ILLEGAL_ICON = MagicImages.getIcon(MagicIcon.ILLEGAL);
@@ -148,7 +148,7 @@ public class FormatsLegalityPanel extends JPanel {
 
     }
 
-    private class DeckLegalityInfo {
+    private static class DeckLegalityInfo {
 
         private final MagicFormat magicFormat;
         private boolean isDeckLegal = true;
