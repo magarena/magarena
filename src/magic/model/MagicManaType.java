@@ -81,7 +81,7 @@ public enum MagicManaType {
             case Green: return MagicColor.Green;
             case Red: return MagicColor.Red;
             case White: return MagicColor.White;
+            default: throw new RuntimeException("No color available for MagicManaType " + this);
         }
-        throw new RuntimeException("No color available for MagicManaType " + this);
     }
 }

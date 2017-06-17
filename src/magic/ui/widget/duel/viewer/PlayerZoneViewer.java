@@ -92,8 +92,8 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
             case HAND: return MText.get(_S3, player.getName());
             case GRAVEYARD: return MText.get(_S4, player.getName());
             case EXILE: return MText.get(_S5, player.getName());
+            default: throw new RuntimeException("Unsupported MagicPlayerZone : " + zone);
         }
-        throw new RuntimeException("Unsupported MagicPlayerZone : " + zone);
     }
 
     private void update(boolean showFullScreen) {

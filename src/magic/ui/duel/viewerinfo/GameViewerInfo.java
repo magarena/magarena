@@ -183,8 +183,8 @@ public class GameViewerInfo {
             case EXILE: return aPlayer.exile;
             case HAND: return aPlayer.hand;
             case LIBRARY: return aPlayer.library;
+            default: throw new RuntimeException("Invalid MagicPlayerZone : " + aZone);
         }
-        throw new RuntimeException("Invalid MagicPlayerZone : " + aZone);
     }
 
     private MagicCard searchForCardInZone(long magicCardId, MagicPlayerZone zone) {

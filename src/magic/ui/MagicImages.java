@@ -175,8 +175,9 @@ public final class MagicImages {
                 return getSmallManaIcon(MagicIcon.MANA_RED);
             case White:
                 return getSmallManaIcon(MagicIcon.MANA_WHITE);
+            default:
+                throw new RuntimeException("No icon available for MagicManaType " + mtype);
         }
-        throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
     public static ImageIcon getIcon(String manaSymbol) {
@@ -245,20 +246,21 @@ public final class MagicImages {
 
     public static ImageIcon getIcon(final MagicManaType mtype, final boolean small) {
         switch (mtype) {
-        case Colorless:
-            return small ? getSmallManaIcon(MagicIcon.MANA_1) : getBigManaIcon(MagicIcon.MANA_1);
-        case Black:
-            return small ? getSmallManaIcon(MagicIcon.MANA_BLACK) : getBigManaIcon(MagicIcon.MANA_BLACK);
-        case Blue:
-            return small ? getSmallManaIcon(MagicIcon.MANA_BLUE) : getBigManaIcon(MagicIcon.MANA_BLUE);
-        case Green:
-            return small ? getSmallManaIcon(MagicIcon.MANA_GREEN) : getBigManaIcon(MagicIcon.MANA_GREEN);
-        case Red:
-            return small ? getSmallManaIcon(MagicIcon.MANA_RED) : getBigManaIcon(MagicIcon.MANA_RED);
-        case White:
-            return small ? getSmallManaIcon(MagicIcon.MANA_WHITE) : getBigManaIcon(MagicIcon.MANA_WHITE);
+            case Colorless:
+                return small ? getSmallManaIcon(MagicIcon.MANA_1) : getBigManaIcon(MagicIcon.MANA_1);
+            case Black:
+                return small ? getSmallManaIcon(MagicIcon.MANA_BLACK) : getBigManaIcon(MagicIcon.MANA_BLACK);
+            case Blue:
+                return small ? getSmallManaIcon(MagicIcon.MANA_BLUE) : getBigManaIcon(MagicIcon.MANA_BLUE);
+            case Green:
+                return small ? getSmallManaIcon(MagicIcon.MANA_GREEN) : getBigManaIcon(MagicIcon.MANA_GREEN);
+            case Red:
+                return small ? getSmallManaIcon(MagicIcon.MANA_RED) : getBigManaIcon(MagicIcon.MANA_RED);
+            case White:
+                return small ? getSmallManaIcon(MagicIcon.MANA_WHITE) : getBigManaIcon(MagicIcon.MANA_WHITE);
+            default:
+                throw new RuntimeException("No icon available for MagicManaType " + mtype);
         }
-        throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
 }

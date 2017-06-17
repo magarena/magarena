@@ -169,7 +169,7 @@ public enum MagicSubType {
             case Swamp: return MagicAbility.Swampwalk;
             case Mountain: return MagicAbility.Mountainwalk;
             case Forest: return MagicAbility.Forestwalk;
+            default: throw new RuntimeException("No landwalk ability for MagicSubType " + this);
         }
-        throw new RuntimeException("No landwalk ability for MagicSubType " + this);
     }
 }

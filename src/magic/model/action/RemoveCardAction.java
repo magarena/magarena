@@ -37,6 +37,7 @@ public class RemoveCardAction extends MagicAction {
             case Exile:
                 index=owner.getExile().removeCard(card);
                 break;
+            default: throw new RuntimeException("Unsupported location for RemoveCardAction: " + locationType);
         }
         game.setStateCheckRequired();
     }
@@ -62,6 +63,7 @@ public class RemoveCardAction extends MagicAction {
             case Exile:
                 owner.getExile().add(index,card);
                 break;
+            default: throw new RuntimeException("Unsupported location for RemoveCardAction: " + locationType);
         }
     }
 

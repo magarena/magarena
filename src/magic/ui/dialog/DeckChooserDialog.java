@@ -154,19 +154,21 @@ public class DeckChooserDialog extends MagicDialog {
 
         private JComboBox<String> getDecksCombo(final DeckType deckType) {
             switch (deckType) {
-            case Random:
-                deckNameCombo = new RandomDecksComboBox("");
-                break;
-            case Preconstructed:
-                deckNameCombo = new PrebuiltDecksComboxBox();
-                break;
-            case Custom:
-                deckNameCombo = new CustomDecksComboxBox();
-                break;
-            case Firemind:
-                FiremindJsonReader.refreshTopDecks();
-                deckNameCombo = new FiremindDecksComboxBox();
-                break;
+                case Random:
+                    deckNameCombo = new RandomDecksComboBox("");
+                    break;
+                case Preconstructed:
+                    deckNameCombo = new PrebuiltDecksComboxBox();
+                    break;
+                case Custom:
+                    deckNameCombo = new CustomDecksComboxBox();
+                    break;
+                case Firemind:
+                    FiremindJsonReader.refreshTopDecks();
+                    deckNameCombo = new FiremindDecksComboxBox();
+                    break;
+                default:
+                    throw new RuntimeException("Not a duel deck type: " + deckType);
             }
             deckNameCombo.setSelectedItem(defaultDeckName);
             defaultDeckName = "";

@@ -200,6 +200,8 @@ public final class DuelPanel extends JPanel {
             case OwnersLibrary:
                 sidebarPanel.doHighlightPlayerZone(cardInfo, MagicPlayerZone.LIBRARY, b);
                 break;
+            default:
+                //do nothing
         }
     }
 
