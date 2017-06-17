@@ -14,11 +14,13 @@ public class ReclaimExiledCardAction extends MagicAction {
         this.card = card;
     }
 
+    @Override
     public void doAction(final MagicGame game) {
         game.doAction(new ShiftCardAction(card, MagicLocationType.Exile, MagicLocationType.OwnersHand));
         source.removeExiledCard(card);
     }
 
+    @Override
     public void undoAction(final MagicGame game) {
         source.addExiledCard(card);
     }
