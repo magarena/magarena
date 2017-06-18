@@ -33,7 +33,7 @@ public class SampleHandScreen extends HandCanvasScreen
     private static final String _S4 = "Deal a new sample hand.";
 
     private SampleHandLayeredPane layeredPane;
-    private CardsCanvas content;
+    private CardsCanvas cardsCanvas;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private OptionsPanel optionsPanel;
@@ -50,14 +50,14 @@ public class SampleHandScreen extends HandCanvasScreen
 
     private void initUI() {
 
-        content = new CardsCanvas();
-        content.setListener(this);
+        cardsCanvas = new CardsCanvas();
+        cardsCanvas.setListener(this);
         setCardsLayout();
-        content.setAnimationDelay(50, 20);
-        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        content.refresh(getSampleHand(deck));
+        cardsCanvas.setAnimationDelay(50, 20);
+        cardsCanvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+        cardsCanvas.refresh(getSampleHand(deck));
 
-        layeredPane = new SampleHandLayeredPane(content, flashOverlay);
+        layeredPane = new SampleHandLayeredPane(cardsCanvas, flashOverlay);
         setMainContent(layeredPane);
 
         deckStatusPanel.setDeck(deck, false);
@@ -70,8 +70,8 @@ public class SampleHandScreen extends HandCanvasScreen
     }
 
     private void dealSampleHand() {
-        if (!content.isBusy()) {
-            content.refresh(getSampleHand(deck));
+        if (!cardsCanvas.isBusy()) {
+            cardsCanvas.refresh(getSampleHand(deck));
         }
     }
 
@@ -86,10 +86,10 @@ public class SampleHandScreen extends HandCanvasScreen
     private void setCardsLayout() {
         switch (HandZoneLayout.getLayout()) {
         case STACKED_DUPLICATES:
-            content.setStackDuplicateCards(true);
+            cardsCanvas.setStackDuplicateCards(true);
             break;
         case NO_STACKING:
-            content.setStackDuplicateCards(false);
+            cardsCanvas.setStackDuplicateCards(false);
             break;
         default:
             throw new IndexOutOfBoundsException();
