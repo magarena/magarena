@@ -15,7 +15,6 @@ import magic.ui.ScreenController;
 import magic.ui.screen.HandCanvasScreen;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.MScreen;
-import magic.ui.screen.cardflow.FlashTextOverlay;
 import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.cards.canvas.CardsCanvas;
@@ -33,18 +32,15 @@ public class SampleHandScreen extends HandCanvasScreen
     private static final String _S4 = "Deal a new sample hand.";
 
     private SampleHandLayeredPane layeredPane;
-    private CardsCanvas cardsCanvas;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private OptionsPanel optionsPanel;
     private List<? extends IRenderableCard> renderableCards = new ArrayList<>();
     private int startImageIndex = 0;
-    private final FlashTextOverlay flashOverlay;
 
     public SampleHandScreen(final MagicDeck aDeck) {
         super(MText.get(_S1));
         this.deck = aDeck;
-        flashOverlay = new FlashTextOverlay(600, 60);
         useLoadingScreen(this::initUI);
     }
 
