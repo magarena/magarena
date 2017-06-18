@@ -114,19 +114,6 @@ public class MulliganScreen extends HandCanvasScreen
         }
     }
 
-    private void setCardsLayout() {
-        switch (HandZoneLayout.getLayout()) {
-        case STACKED_DUPLICATES:
-            cardsCanvas.setStackDuplicateCards(true);
-            break;
-        case NO_STACKING:
-            cardsCanvas.setStackDuplicateCards(false);
-            break;
-        default:
-            throw new IndexOutOfBoundsException();
-        }
-    }
-
     private void doSaveSettings() {
         HandZoneLayout.save();
         GeneralConfig.getInstance().save();
@@ -149,15 +136,5 @@ public class MulliganScreen extends HandCanvasScreen
     @Override
     public void cardClicked(int index, MagicCardDefinition card) {
         new CardImageOverlay(card);
-    }
-
-    void flashLayoutSetting() {
-        flashOverlay.flashText(HandZoneLayout.getLayout().getDisplayName());
-    }
-
-    void setCardsLayout(int ordinal) {
-        HandZoneLayout.setLayout(ordinal);
-        setCardsLayout();
-        flashLayoutSetting();
     }
 }

@@ -13,4 +13,27 @@ public abstract class HandCanvasScreen extends HeaderFooterScreen {
         flashOverlay = new FlashTextOverlay(600, 60);
     }
 
+    protected void setCardsLayout() {
+        switch (HandZoneLayout.getLayout()) {
+        case STACKED_DUPLICATES:
+            cardsCanvas.setStackDuplicateCards(true);
+            break;
+        case NO_STACKING:
+            cardsCanvas.setStackDuplicateCards(false);
+            break;
+        default:
+            throw new IndexOutOfBoundsException();
+        }
+    }
+
+    public void flashLayoutSetting() {
+        flashOverlay.flashText(HandZoneLayout.getLayout().getDisplayName());
+    }
+
+    public void setCardsLayout(int ordinal) {
+        HandZoneLayout.setLayout(ordinal);
+        setCardsLayout();
+        flashLayoutSetting();
+    }
+
 }

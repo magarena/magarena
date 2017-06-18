@@ -79,18 +79,6 @@ public class SampleHandScreen extends HandCanvasScreen
         return cards;
     }
 
-    private void setCardsLayout() {
-        switch (HandZoneLayout.getLayout()) {
-        case STACKED_DUPLICATES:
-            cardsCanvas.setStackDuplicateCards(true);
-            break;
-        case NO_STACKING:
-            cardsCanvas.setStackDuplicateCards(false);
-            break;
-        default:
-            throw new IndexOutOfBoundsException();
-        }
-    }
 
     private void doSaveSettings() {
         HandZoneLayout.save();
@@ -136,15 +124,4 @@ public class SampleHandScreen extends HandCanvasScreen
     public int getStartImageIndex() {
         return startImageIndex;
     }
-
-    void flashLayoutSetting() {
-        flashOverlay.flashText(HandZoneLayout.getLayout().getDisplayName());
-    }
-
-    void setCardsLayout(int ordinal) {
-        HandZoneLayout.setLayout(ordinal);
-        setCardsLayout();
-        flashLayoutSetting();
-    }
-
 }
