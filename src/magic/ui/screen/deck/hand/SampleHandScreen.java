@@ -12,7 +12,7 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.screen.HandStyleScreen;
+import magic.ui.screen.HandCanvasScreen;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.cardflow.FlashTextOverlay;
@@ -24,7 +24,7 @@ import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
-public class SampleHandScreen extends HandStyleScreen
+public class SampleHandScreen extends HandCanvasScreen
     implements ICardsCanvasListener, ICardFlowProvider {
 
     // translatable strings

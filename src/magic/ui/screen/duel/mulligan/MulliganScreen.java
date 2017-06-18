@@ -11,7 +11,7 @@ import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.helpers.KeyEventAction;
-import magic.ui.screen.HandStyleScreen;
+import magic.ui.screen.HandCanvasScreen;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.cardflow.FlashTextOverlay;
@@ -23,7 +23,7 @@ import magic.ui.widget.cards.canvas.ICardsCanvasListener;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 
 @SuppressWarnings("serial")
-public class MulliganScreen extends HandStyleScreen
+public class MulliganScreen extends HandCanvasScreen
     implements ICardsCanvasListener {
 
     // translatable string
