@@ -29,6 +29,8 @@ public class RemoveCardAction extends MagicAction {
                 }
                 break;
             case OwnersLibrary:
+            case TopOfOwnersLibrary:
+            case BottomOfOwnersLibrary:
                 index=owner.getLibrary().removeCard(card);
                 break;
             case Graveyard:
@@ -55,6 +57,8 @@ public class RemoveCardAction extends MagicAction {
                 owner.addCardToHand(card,index);
                 break;
             case OwnersLibrary:
+            case TopOfOwnersLibrary:
+            case BottomOfOwnersLibrary:
                 owner.getLibrary().add(index,card);
                 break;
             case Graveyard:
