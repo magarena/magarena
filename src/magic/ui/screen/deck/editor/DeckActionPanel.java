@@ -12,7 +12,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class DeckActionPanel extends TexturedPanel {
 
-    public static final Color BACKGROUND_COLOR = MagicStyle.getTranslucentColor(Color.DARK_GRAY, 230);
+    private static final Color BACKGROUND_COLOR = MagicStyle.getTranslucentColor(Color.DARK_GRAY, 230);
 
     private static final JPanel EMPTY_PANEL = new JPanel();
     static {
