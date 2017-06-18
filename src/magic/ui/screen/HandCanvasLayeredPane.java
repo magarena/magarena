@@ -1,19 +1,19 @@
-package magic.ui.screen.duel.mulligan;
+package magic.ui.screen;
 
 import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
-import magic.ui.screen.cardflow.*;
+import magic.ui.screen.cardflow.FlashTextOverlay;
 
 @SuppressWarnings("serial")
-class MulliganLayeredPane extends JLayeredPane {
+public class HandCanvasLayeredPane extends JLayeredPane {
 
     private final JPanel contentPanel;
     private final FlashTextOverlay flashOverlay;
 
-    MulliganLayeredPane(final JPanel contentPanel, final FlashTextOverlay flashOverlay) {
+    public HandCanvasLayeredPane(final JPanel contentPanel, final FlashTextOverlay flashOverlay) {
 
         this.contentPanel = contentPanel;
         this.flashOverlay = flashOverlay;

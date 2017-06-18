@@ -12,6 +12,7 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
+import magic.ui.screen.HandCanvasLayeredPane;
 import magic.ui.screen.HandCanvasOptionsPanel;
 import magic.ui.screen.HandCanvasScreen;
 import magic.ui.screen.HandZoneLayout;
@@ -32,7 +33,7 @@ public class SampleHandScreen extends HandCanvasScreen
     private static final String _S3 = "Refresh";
     private static final String _S4 = "Deal a new sample hand.";
 
-    private SampleHandLayeredPane layeredPane;
+    private HandCanvasLayeredPane layeredPane;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private List<? extends IRenderableCard> renderableCards = new ArrayList<>();
@@ -53,7 +54,7 @@ public class SampleHandScreen extends HandCanvasScreen
         cardsCanvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         cardsCanvas.refresh(getSampleHand(deck));
 
-        layeredPane = new SampleHandLayeredPane(cardsCanvas, flashOverlay);
+        layeredPane = new HandCanvasLayeredPane(cardsCanvas, flashOverlay);
         setMainContent(layeredPane);
 
         deckStatusPanel.setDeck(deck, false);
