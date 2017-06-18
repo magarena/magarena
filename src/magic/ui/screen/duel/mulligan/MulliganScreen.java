@@ -11,6 +11,7 @@ import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
 import magic.ui.helpers.KeyEventAction;
+import magic.ui.screen.HandCanvasOptionsPanel;
 import magic.ui.screen.HandCanvasScreen;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.MScreen;
@@ -36,7 +37,6 @@ public class MulliganScreen extends HandCanvasScreen
     private MulliganLayeredPane layeredPane;
     private MulliganChoicePanel choicePanel;
     private final MagicCardList hand;
-    private final OptionsPanel optionsPanel;
 
     public MulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         super(MText.get(_S1));
@@ -45,7 +45,7 @@ public class MulliganScreen extends HandCanvasScreen
         isActive = true;
         layeredPane = new MulliganLayeredPane(getScreenContent(hand), flashOverlay);
         setMainContent(layeredPane);
-        optionsPanel = new OptionsPanel(this);
+        optionsPanel = new HandCanvasOptionsPanel(this);
         setHeaderContent(new HeaderPanel(choicePanel.getGameController().getGame()));
         setHeaderOptions(optionsPanel);
         setLeftFooter(PlainMenuButton.build(this::doCancel, MText.get(_S2)));

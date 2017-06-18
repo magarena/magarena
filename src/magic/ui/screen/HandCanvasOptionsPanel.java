@@ -1,26 +1,24 @@
-package magic.ui.screen.duel.mulligan;
+package magic.ui.screen;
 
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
-import magic.ui.screen.HandZoneLayout;
-import magic.ui.screen.ScreenOptionsPanel;
 import magic.ui.screen.widget.BigDialButton;
 import magic.ui.screen.widget.IDialButtonHandler;
 
 @SuppressWarnings("serial")
-class OptionsPanel extends ScreenOptionsPanel
+public class HandCanvasOptionsPanel extends ScreenOptionsPanel
     implements IDialButtonHandler {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Layout";
 
     private final BigDialButton layoutButton;
-    private final MulliganScreen screen;
+    private final HandCanvasScreen screen;
 
-    OptionsPanel(final MulliganScreen screen) {
+    public HandCanvasOptionsPanel(final HandCanvasScreen screen) {
         this.screen = screen;
         layoutButton = new BigDialButton(this);
         setLayout();

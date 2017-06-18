@@ -12,6 +12,7 @@ import magic.model.MagicDeck;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
+import magic.ui.screen.HandCanvasOptionsPanel;
 import magic.ui.screen.HandCanvasScreen;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.MScreen;
@@ -34,7 +35,6 @@ public class SampleHandScreen extends HandCanvasScreen
     private SampleHandLayeredPane layeredPane;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
-    private OptionsPanel optionsPanel;
     private List<? extends IRenderableCard> renderableCards = new ArrayList<>();
     private int startImageIndex = 0;
 
@@ -57,7 +57,7 @@ public class SampleHandScreen extends HandCanvasScreen
         setMainContent(layeredPane);
 
         deckStatusPanel.setDeck(deck, false);
-        optionsPanel = new OptionsPanel(this);
+        optionsPanel = new HandCanvasOptionsPanel(this);
         setHeaderContent(deckStatusPanel);
         setHeaderOptions(optionsPanel);
         addToFooter(PlainMenuButton.build(this::dealSampleHand,
