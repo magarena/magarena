@@ -8,6 +8,7 @@ public abstract class HandCanvasScreen extends HeaderFooterScreen {
     protected CardsCanvas cardsCanvas;
     protected final FlashTextOverlay flashOverlay;
     protected HandCanvasOptionsPanel optionsPanel;
+    protected HandCanvasLayeredPane layeredPane;
 
     public HandCanvasScreen(String title) {
         super(title);

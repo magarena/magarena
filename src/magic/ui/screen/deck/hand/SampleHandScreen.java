@@ -33,7 +33,6 @@ public class SampleHandScreen extends HandCanvasScreen
     private static final String _S3 = "Refresh";
     private static final String _S4 = "Deal a new sample hand.";
 
-    private HandCanvasLayeredPane layeredPane;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
     private List<? extends IRenderableCard> renderableCards = new ArrayList<>();

@@ -35,7 +35,6 @@ public class MulliganScreen extends HandCanvasScreen
 
     private volatile static boolean isActive = false;
 
-    private HandCanvasLayeredPane layeredPane;
     private MulliganChoicePanel choicePanel;
     private final MagicCardList hand;
 
