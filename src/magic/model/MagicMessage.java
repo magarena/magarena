@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.player.PlayerProfile;
 
 public class MagicMessage {
 
