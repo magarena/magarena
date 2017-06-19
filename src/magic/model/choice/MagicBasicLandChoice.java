@@ -43,7 +43,7 @@ public class MagicBasicLandChoice extends MagicChoice {
         this.type=type;
     }
 
-    private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
+    private static Collection<Object> getArtificialMostOptions(final MagicPlayer player) {
         final Collection<MagicPermanent> targets = MagicTargetFilterFactory.PERMANENT.filter(player);
         final int[] counts=new int[MagicSubType.ALL_BASIC_LANDS.size()];
         for (final MagicPermanent permanent : targets) {
@@ -67,7 +67,7 @@ public class MagicBasicLandChoice extends MagicChoice {
         return Collections.<Object>singletonList(bestSubType);
     }
 
-    private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
+    private static Collection<Object> getArtificialUnsummonOptions(final MagicPlayer player) {
 
         final Collection<MagicPermanent> targets = MagicTargetFilterFactory.CREATURE.filter(player);
         final int[] scores=new int[MagicSubType.ALL_BASIC_LANDS.size()];
@@ -101,8 +101,8 @@ public class MagicBasicLandChoice extends MagicChoice {
         final MagicPlayer player = event.getPlayer();
 
         switch (type) {
-            case MOST: return getArtificialMostOptions(game,player);
-            case UNSUMMON: return getArtificialUnsummonOptions(game,player);
+            case MOST: return getArtificialMostOptions(player);
+            case UNSUMMON: return getArtificialUnsummonOptions(player);
             default: return LAND_OPTIONS;
         }
     }
