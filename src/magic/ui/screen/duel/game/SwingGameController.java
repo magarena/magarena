@@ -1106,10 +1106,8 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void doStackItemPause() {
-        if (game.getStack().hasItem()) {
-            if (getStackItemPause() > 0) {
-                pause(getStackItemPause());
-            }
+        if (game.getStack().hasItem() && getStackItemPause() > 0) {
+            pause(getStackItemPause());
         }
     }
 
