@@ -3,11 +3,11 @@ package magic.game.state;
 import java.io.File;
 import java.util.List;
 import magic.ai.MagicAIImpl;
+import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.DuelPlayerConfig;
 import magic.model.phase.MagicMainPhase;
 import magic.model.player.AiProfile;
 import magic.model.player.HumanProfile;
@@ -27,8 +27,8 @@ public final class GameLoader {
     private static MagicGame getGameState(final GameState gameState, final MagicDuel duel) {
         final MagicGame game = duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
-        setPlayerGameState(game.getPlayer(0), gameState.getPlayer(0), game);
-        setPlayerGameState(game.getPlayer(1), gameState.getPlayer(1), game);
+        setPlayerGameState(game.getPlayer(0), gameState.getPlayer(0));
+        setPlayerGameState(game.getPlayer(1), gameState.getPlayer(1));
         return game;
     }
 
@@ -55,7 +55,7 @@ public final class GameLoader {
         return duel;
     }
 
-    private static void setPlayerGameState(final MagicPlayer player, final GamePlayerState playerState, final MagicGame game) {
+    private static void setPlayerGameState(final MagicPlayer player, final GamePlayerState playerState) {
 
         player.setLife(playerState.getLife());
 
