@@ -2,8 +2,6 @@ package magic.exception.handler;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -14,6 +12,7 @@ import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.utility.MagicSystem;
 import magic.exception.GameException;
+import magic.model.MagicLogger;
 
 
 public class ExceptionReport {
@@ -22,15 +21,7 @@ public class ExceptionReport {
 
     public ExceptionReport(final Thread th, final Throwable ex) {
 
-        sb.append("CRASH REPORT FOR MAGARENA THREAD ").append(th);
-        sb.append('\n');
-        sb.append("CREATED ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
-        sb.append('\n');
-        sb.append("MAGARENA VERSION ").append(MagicSystem.VERSION);
-        sb.append(", JRE ").append(System.getProperty("java.version"));
-        sb.append(", OS ").append(System.getProperty("os.name"));
-        sb.append("_").append(System.getProperty("os.version"));
-        sb.append(" ").append(System.getProperty("os.arch"));
+        MagicLogger.setLogHeader(sb, "CRASH REPORT FOR MAGARENA THREAD " + th);
         sb.append("\n================================\n");
         sb.append(MagicSystem.getHeapUtilizationStats());
         sb.append("\n================================\n");

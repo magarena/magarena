@@ -1,15 +1,11 @@
 package magic.model;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
-
 import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
 import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.io.UnsupportedEncodingException;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicSystem;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class MagicGameLog {
     private MagicGameLog() {}
@@ -30,15 +26,7 @@ public class MagicGameLog {
         try {
             writer = new PrintWriter(gameLog, UTF_8.name());
             final StringBuilder sb = new StringBuilder();
-            sb.append("MAGARENA GAME LOG");
-            sb.append('\n');
-            sb.append("CREATED ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
-            sb.append('\n');
-            sb.append("MAGARENA VERSION ").append(MagicSystem.VERSION);
-            sb.append(", JRE ").append(System.getProperty("java.version"));
-            sb.append(", OS ").append(System.getProperty("os.name"));
-            sb.append("_").append(System.getProperty("os.version"));
-            sb.append(" ").append(System.getProperty("os.arch"));
+            MagicLogger.setLogHeader(sb, "MAGARENA GAME LOG");
             sb.append("\n\n");
             log(sb.toString());
         } catch (FileNotFoundException|UnsupportedEncodingException e) {
