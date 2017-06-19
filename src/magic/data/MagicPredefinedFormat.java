@@ -1,11 +1,10 @@
 package magic.data;
 
-import java.util.Collections;
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.utility.DeckUtils;
@@ -152,10 +151,6 @@ public class MagicPredefinedFormat extends MagicFormat {
     @Override
     public int getMinimumDeckSize() {
         return minimumDeckSize;
-    }
-
-    private int getMaximumCardCopies() {
-        return maximumCardCopies;
     }
 
     @Override
