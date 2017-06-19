@@ -1,7 +1,5 @@
 package magic.model;
 
-import java.nio.charset.Charset;
-
 /**
  * MurmurHash3 implementation in Java, based on Austin Appleby's <a href=
  * "https://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp"
@@ -17,7 +15,6 @@ import java.nio.charset.Charset;
  * @since 5.0
  */
 public class MurmurHash3 {
-   private static final Charset UTF8 = Charset.forName("UTF-8");
 
    static class State {
       long h1;
