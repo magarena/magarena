@@ -594,10 +594,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return true;
     }
 
-    private static int obj2StringHash(final Object obj) {
-        return obj2String(obj).hashCode();
-    }
-
     static String obj2String(final Object obj) {
         if (obj == null) {
             return "null";
@@ -745,14 +741,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return getV() + MCTSAI.UCB1_C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
     }
 
-    private double getRatio() {
-        return (getSum() + MCTSAI.RATIO_K)/(getNumSim() + 2*MCTSAI.RATIO_K);
-    }
-
-    private double getNormal() {
-        return Math.max(1.0, getV() + 2 * Math.sqrt(getVar()));
-    }
-
     //decrease score of lose node, boost score of win nodes
     double modify(final double sc) {
         if ((!parent.isAI() && isAIWin()) || (parent.isAI() && isAILose())) {
@@ -761,15 +749,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
             return sc + 2.0;
         } else {
             return sc;
-        }
-    }
-
-    private double getVar() {
-        final int MIN_SAMPLES = 10;
-        if (numSim < MIN_SAMPLES) {
-            return 1.0;
-        } else {
-            return S/(numSim - 1);
         }
     }
 
@@ -811,10 +790,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         steps = aSteps;
     }
 
-    private int getEvalScore() {
-        return evalScore;
-    }
-
     double getDecision() {
         //boost decision score of win nodes by BOOST
         final int BOOST = 1000000;
@@ -842,10 +817,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     double getV() {
         return getSum() / numSim;
-    }
-
-    private double getSecureScore() {
-        return getV() + 1.0/Math.sqrt(numSim);
     }
 
     void addChild(final MCTSGameTree child) {
