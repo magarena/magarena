@@ -51,7 +51,7 @@ public class MagicColorChoice extends MagicChoice {
         this.type=type;
     }
 
-    private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
+    private static Collection<Object> getArtificialMostOptions(final MagicPlayer player) {
         final Collection<MagicPermanent> targets = MagicTargetFilterFactory.PERMANENT.filter(player);
         final int[] counts=new int[MagicColor.NR_COLORS];
         for (final MagicPermanent permanent : targets) {
@@ -75,7 +75,7 @@ public class MagicColorChoice extends MagicChoice {
         return Collections.<Object>singletonList(bestColor);
     }
 
-    private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
+    private static Collection<Object> getArtificialUnsummonOptions(final MagicPlayer player) {
 
         final Collection<MagicPermanent> targets = MagicTargetFilterFactory.CREATURE.filter(player);
         final int[] scores=new int[MagicColor.NR_COLORS];
@@ -109,8 +109,8 @@ public class MagicColorChoice extends MagicChoice {
         final MagicPlayer player = event.getPlayer();
 
         switch (type) {
-            case MOST: return getArtificialMostOptions(game,player);
-            case UNSUMMON: return getArtificialUnsummonOptions(game,player);
+            case MOST: return getArtificialMostOptions(player);
+            case UNSUMMON: return getArtificialUnsummonOptions(player);
             case RED_WHITE_BLUE: return RED_WHITE_BLUE_OPTIONS;
             default: return COLOR_OPTIONS;
         }
