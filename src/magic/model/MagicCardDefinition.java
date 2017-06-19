@@ -167,10 +167,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         abilityProperty = value;
     }
 
-    private String getAbilityProperty() {
-        return abilityProperty;
-    }
-
     public void setRequiresGroovy(final String value) {
         requiresGroovy = value;
     }
@@ -420,10 +416,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     @Override
     public boolean isToken() {
         return token;
-    }
-
-    private void setTypeFlags(final int tf) {
-        typeFlags = tf;
     }
 
     int getTypeFlags() {
