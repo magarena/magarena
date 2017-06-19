@@ -1,21 +1,20 @@
 package magic;
 
 import java.io.File;
-
-import magic.headless.HeadlessGameController;
 import magic.ai.MagicAIImpl;
-import magic.utility.DeckUtils;
+import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
+import magic.exception.handler.ConsoleExceptionHandler;
+import magic.headless.HeadlessGameController;
+import magic.model.DuelPlayerConfig;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicRandom;
-import magic.model.MagicDeckProfile;
-import magic.model.DuelPlayerConfig;
 import magic.model.player.AiProfile;
-import magic.data.DeckGenerators;
-import magic.exception.handler.ConsoleExceptionHandler;
-import magic.utility.ProgressReporter;
+import magic.utility.DeckUtils;
 import magic.utility.MagicSystem;
+import magic.utility.ProgressReporter;
 
 public class DeckStrCal {
 
@@ -27,7 +26,6 @@ public class DeckStrCal {
     private static String[] deck = {"", ""};
     private static MagicAIImpl[] ai = {MagicAIImpl.MMAB, MagicAIImpl.MMAB};
     private static int[] str = {6, 6};
-    private static boolean duplicate = false;
 
     // Command line parsing.
     private static boolean parseArguments(final String[] args) {
@@ -97,8 +95,6 @@ public class DeckStrCal {
                     System.err.println("ERROR! seed is not an integer");
                     validArgs = false;
                 }
-            } else if ("--duplicate".equals(curr)) {
-                duplicate = true;
             } else {
                 System.err.println("Error: unknown option " + curr);
                 validArgs = false;
