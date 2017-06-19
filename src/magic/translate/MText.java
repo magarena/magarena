@@ -100,13 +100,12 @@ public final class MText {
         try (final Scanner sc = new Scanner(txtFile, UTF_CHAR_SET)) {
             while (sc.hasNextLine()) {
                 final String line = sc.nextLine().trim();
-
                 if (line.startsWith("#") || line.isEmpty()) {
                     // ignore comments and blank lines.
-
-                } else if (line.startsWith(HEADER_CHAR)) {
+                    continue;
+                }
+                if (line.startsWith(HEADER_CHAR)) {
                     parseHeaderLine(line, txtFile.getName());
-
                 } else {
                     int equalsChar = line.indexOf('=');
                     long stringId = Long.valueOf(line.substring(0, equalsChar).trim());
