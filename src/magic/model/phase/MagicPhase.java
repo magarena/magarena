@@ -7,8 +7,6 @@ import magic.ui.MagicSound;
 
 public abstract class MagicPhase {
 
-    private static final int MAX_PRIORITY_PASSED_COUNT=6;
-
     private final MagicPhaseType type;
 
     protected abstract void executeBeginStep(final MagicGame game);
