@@ -79,6 +79,12 @@
         compiler="com.google.errorprone.ErrorProneAntCompilerAdapter">
         <src path="src"/>
         <compilerarg value="-Xlint"/>
+        <!--
+        <compilerarg value="-XepPatchChecks:MissingOverride,DefaultCharset,ClassCanBeStatic,ShortCircuitBoolean"/>
+        <compilerarg value="-XepPatchLocation:IN_PLACE"/>
+        -->
+        <compilerarg value="-Xep:ImmutableEnumChecker:OFF"/>
+        <compilerarg value="-Xep:OperatorPrecedence:OFF"/>
         <classpath refid="classpath" />
         <compilerclasspath>
             <pathelement location="lib/error_prone_ant-${error-prone-version}.jar"/>
