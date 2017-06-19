@@ -742,7 +742,7 @@ bytes_per_card.%:
 reminder.txt: cards/cards.xml
 	grep 'reminder="[^"]*"' $^ -o | sed 's/reminder=//' | sort | uniq -c | sort -rn > $@
 
-FILES = release/Magarena/**/*.txt release/Magarena/**/*.groovy release/Magarena/decks/**/*.dec src/**/*.java
+FILES = release/Magarena/**/*.txt release/Magarena/**/*.groovy release/Magarena/decks/**/*.dec src/**/*.java resources/magic/data/formats/*.fmt
 
 normalize_files:
 	# add newline at end of file
@@ -751,6 +751,8 @@ normalize_files:
 	shopt -s globstar; sed -i -e 's/\x0D$$//'  ${FILES}
 	# convert tab to four spaces
 	shopt -s globstar; sed -i -e 's/\t/    /g' ${FILES}
+	# remove BOM
+	shopt -s globstar; sed -i -e '1s/^\xef\xbb\xbf//' ${FILES}
 	# remove empty lines in scripts
 	sed -i -e '/^\s*$$/d' release/Magarena/scripts/*.txt
 	# use mtgimage for image
