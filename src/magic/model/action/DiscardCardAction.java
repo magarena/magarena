@@ -7,7 +7,6 @@ import magic.model.MagicPlayer;
 
 public class DiscardCardAction extends MagicAction {
 
-    private final MagicPlayer player;
     private final MagicCard card;
     private final MagicLocationType toLocation;
 
@@ -16,7 +15,6 @@ public class DiscardCardAction extends MagicAction {
     }
 
     public DiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard, final MagicLocationType aToLocation) {
-        player = aPlayer;
         card = aCard;
         toLocation = aToLocation;
     }
