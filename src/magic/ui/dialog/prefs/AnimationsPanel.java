@@ -26,7 +26,6 @@ class AnimationsPanel extends JPanel {
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MCheckBox animateCheckBox;
-    private final JPanel subPanel;
     private final AnimationFlagsPanel flagsPanel;
     private final SliderPanel landPreviewSlider;
     private final SliderPanel nonlandPreviewSlider;
@@ -38,7 +37,7 @@ class AnimationsPanel extends JPanel {
         landPreviewSlider = getLandPreviewSlider(aListener);
         nonlandPreviewSlider = getNonLandPreviewSlider(aListener);
         newTurnAlertSlider = getNewTurnAlertSlider(aListener);
-        subPanel = getAnimationSubPanel();
+        JPanel subPanel = getAnimationSubPanel();
         animateCheckBox = getAnimateCheckbox(aListener, subPanel);
 
         setLayout(new MigLayout("flowy, insets 16, gapy 6"));
