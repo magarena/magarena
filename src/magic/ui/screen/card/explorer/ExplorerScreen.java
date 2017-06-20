@@ -23,7 +23,6 @@ public class ExplorerScreen extends HeaderFooterScreen {
 
     private ExplorerContentPanel contentPanel;
     private ExplorerHeaderPanel headerPanel;
-    private OptionsPanel optionsPanel;
 
     public ExplorerScreen() {
         super(MText.get(_S1));
@@ -38,9 +37,8 @@ public class ExplorerScreen extends HeaderFooterScreen {
     private void initUI() {
         headerPanel = new ExplorerHeaderPanel();
         contentPanel = new ExplorerContentPanel(this);
-        optionsPanel = new OptionsPanel(this);
         setHeaderContent(headerPanel);
-        setHeaderOptions(optionsPanel);
+        setHeaderOptions(new OptionsPanel(this));
         setMainContent(contentPanel);
         setFooterButtons();
         setWikiPage(WikiPage.CARDS_EXPLORER);
