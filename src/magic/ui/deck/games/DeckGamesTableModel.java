@@ -23,13 +23,11 @@ class DeckGamesTableModel extends AbstractTableModel {
     private static final int PAGE_SIZE = 8;
 
     private final List<DeckGame> gameStats;
-    private final int totalGames;
     private final int totalPages;
     private int currentPage = 1;
 
     DeckGamesTableModel(MagicDeck deck, int page) {
-        this.totalGames = MagicStats.getTotalGamesPlayed(deck);
-        this.totalPages = ((totalGames - 1) / PAGE_SIZE) + 1;
+        this.totalPages = ((MagicStats.getTotalGamesPlayed(deck) - 1) / PAGE_SIZE) + 1;
         currentPage = page;
         gameStats = getDeckGameStats(deck, MagicStats.getGameStats(deck, PAGE_SIZE, getGamesToSkip()));
     }
