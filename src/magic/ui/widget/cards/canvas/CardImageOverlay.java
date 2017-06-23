@@ -14,6 +14,8 @@ import java.awt.image.BufferedImage;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+import magic.data.MagicSetDefinitions;
+import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
@@ -26,10 +28,12 @@ public class CardImageOverlay extends TexturedPanel {
 
     private BufferedImage cardImage = null;
     private boolean isSplitCard = false;
+    private boolean isNewStyleSplitCard = false;
 
     public CardImageOverlay(final MagicCardDefinition aCard) {
 
         isSplitCard = aCard.isSplitCard();
+        isNewStyleSplitCard = MagicSetDefinitions.isCardInSet(aCard, MagicSets.AKH);
 
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeOverlay");
         getActionMap().put("closeOverlay", new AbstractAction() {
@@ -67,6 +71,7 @@ public class CardImageOverlay extends TexturedPanel {
 
     private void drawCardImage(final MagicCardDefinition aCard) {
         isSplitCard = aCard.isSplitCard();
+        isNewStyleSplitCard = MagicSetDefinitions.isCardInSet(aCard, MagicSets.AKH);
         BufferedImage baseImage = MagicImages.getCardImage(aCard);
         int baseWidth = baseImage.getWidth();
         int baseHeight = baseImage.getHeight();
@@ -81,7 +86,7 @@ public class CardImageOverlay extends TexturedPanel {
     private void drawSplitCard(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
         g2d.translate(this.getWidth() / 2, this.getHeight() / 2);
-        g2d.rotate(Math.toRadians(90));
+        g2d.rotate(Math.toRadians(isNewStyleSplitCard ? -90 : 90));
         g2d.translate(-cardImage.getWidth() / 2, -cardImage.getHeight() / 2);
         g2d.drawImage(cardImage, 0, 0, null);
     }
