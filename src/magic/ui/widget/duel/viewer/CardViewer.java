@@ -23,6 +23,7 @@ import magic.ui.MagicImages;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.table.ICardSelectionListener;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
@@ -96,11 +97,13 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             public void mouseClicked(MouseEvent e) {
                 if (thisCard.hasMultipleAspects()) {
                     switchCardAspect();
+                } else if (thisCard.isSplitCard()) {
+                    new CardImageOverlay(thisCard);
                 }
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                defaultCursor = thisCard.hasMultipleAspects()
+                defaultCursor = thisCard.hasMultipleAspects() || thisCard.isSplitCard()
                         ? Cursor.HAND_CURSOR
                         : Cursor.DEFAULT_CURSOR;
                 setCursor(Cursor.getPredefinedCursor(defaultCursor));
