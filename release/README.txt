@@ -92,9 +92,9 @@ ShawnieBoy
   * ability: Eternalize <cost>
 
 - fixed the following bugs:
-  * Aftermath cards rotated in the wrong way when clicked on in explorer
-  * mouse cursor set to hand icon on edge of selectable stack item.
-  * mouse click not detected on card name in stack item
+  * Aftermath cards rotated in the wrong way when clicked on in explorer (issue #782)
+  * mouse cursor set to hand icon on edge of selectable stack item
+  * mouse click not detected on card name in stack item (issue #1148)
   * Grenzo, Dungeon Warden did not remove card from bottom of library
   * Memory Plunder and Diluvian Primordial did not remove card from opponents graveyard
 
