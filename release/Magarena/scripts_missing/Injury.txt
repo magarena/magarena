@@ -4,8 +4,9 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{R}
-effect=Aftermath~SN deals 2 damage to target creature and 2 damage to target player.
 split=Insult
+ability=Aftermath
+effect=SN deals 2 damage to target creature and 2 damage to target player.
 timing=main
 second_half
 oracle=Aftermath\nInjury deals 2 damage to target creature and 2 damage to target player.

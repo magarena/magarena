@@ -4,8 +4,9 @@ value=2.500
 rarity=U
 type=Instant
 cost={4}{U}{U}
-effect=Aftermath~Draw two cards.
 split=Spring
+ability=Aftermath
+effect=Draw two cards.
 timing=removal
 second_half
 oracle=Aftermath\nDraw two cards.

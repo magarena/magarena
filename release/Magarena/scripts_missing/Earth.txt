@@ -4,8 +4,9 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}{R}
-effect=Aftermath~SN deals X damage to each creature without flying.
 split=Heaven
+ability=Aftermath
+effect=SN deals X damage to each creature without flying.
 timing=main
 second_half
 oracle=Aftermath\nEarth deals X damage to each creature without flying.

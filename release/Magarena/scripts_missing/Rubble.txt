@@ -4,8 +4,9 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{R}
-effect=Aftermath~Up to three target lands don't untap during their controller's next untap step.
 split=Reduce
+ability=Aftermath
+effect=Up to three target lands don't untap during their controller's next untap step.
 timing=main
 second_half
 oracle=Aftermath\nUp to three target lands don't untap during their controller's next untap step.

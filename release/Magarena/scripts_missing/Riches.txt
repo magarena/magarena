@@ -4,8 +4,9 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={5}{U}{U}
-effect=Aftermath~Each opponent chooses a creature he or she controls. You gain control of those creatures.
 split=Rags
+ability=Aftermath
+effect=Each opponent chooses a creature he or she controls. You gain control of those creatures.
 timing=main
 second_half
 oracle=Aftermath\nEach opponent chooses a creature he or she controls. You gain control of those creatures.

@@ -4,8 +4,9 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}
-effect=Aftermath~Each opponent loses X life.
 split=Cut
+ability=Aftermath
+effect=Each opponent loses X life.
 timing=main
 second_half
 oracle=Aftermath\nEach opponent loses X life.

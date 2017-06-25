@@ -4,9 +4,10 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}
-ability=As an additional cost to cast SN, sacrifice a creature.
-effect=Aftermath~Destroy target creature.
 split=Start
+ability=Aftermath;\
+		As an additional cost to cast SN, sacrifice a creature.
+effect=Destroy target creature.
 timing=main
 second_half
 oracle=Aftermath\nAs an additional cost to cast Finish, sacrifice a creature.\nDestroy target creature.

@@ -4,8 +4,9 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}
-effect=Aftermath~Target creature you control fights target creature an opponent controls.
 split=Prepare
+ability=Aftermath
+effect=Target creature you control fights target creature an opponent controls.
 timing=main
 second_half
 oracle=Aftermath\nTarget creature you control fights target creature an opponent controls.

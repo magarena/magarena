@@ -4,8 +4,9 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={W}
-effect=Aftermath~Choose a card name. Until your next turn, your opponents can't cast spells with the chosen name.
 split=Failure
+ability=Aftermath
+effect=Choose a card name. Until your next turn, your opponents can't cast spells with the chosen name.
 timing=main
 second_half
 oracle=Aftermath\nChoose a card name. Until your next turn, your opponents can't cast spells with the chosen name.
