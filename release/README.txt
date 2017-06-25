@@ -86,7 +86,7 @@ ShawnieBoy
   * change style of main menu for bettter consistency and remove width restrictions on options
   * displays version of Magarena against which a translation was generated
   * cancel animation on right arrow key press
-  * click on split card image in explorer to show correctly rotated image.
+  * click on split card image in explorer to show correctly rotated image
 
 - added the following to the card script:
   * condition: four or more creature cards in graveyard
