@@ -61,6 +61,7 @@ Thanks to
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
   Zac610 for the Italian UI translation
+  LoubiTek for the French UI translations
   Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components
   XMage for the ArrowBuilder code
   neoedmund for the download images-on-demand implementation
@@ -74,6 +75,31 @@ Thank you for your support and have fun!
 
 Release 1.86 (June 30, 2017)
 ============
+lodici
+melvin
+ShawnieBoy
+
+- added French translation
+
+- changed/added the following to the user interface:
+  * improve stack item highlight when selectable
+  * change style of main menu for bettter consistency and remove width restrictions on options
+  * displays version of Magarena against which a translation was generated
+  * cancel animation on right arrow key press
+
+- added the following to the card script:
+  * condition: four or more creature cards in graveyard
+  * ability: Eternalize <cost>
+
+- fixed the following bugs:
+  * Aftermath cards rotated in the wrong way when clicked on in explorer
+  * mouse cursor set to hand icon on edge of selectable stack item.
+  * mouse click not detected on card name in stack item
+  * Grenzo, Dungeon Warden did not remove card from bottom of library
+  * Memory Plunder and Diluvian Primordial did not remove card from opponents graveyard
+
+- added the following cards:
+Oversold Cemetery, Pit Keeper, Shadows of the Past
 
 Release 1.85 (May 28, 2017)
 ============
