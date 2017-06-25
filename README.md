@@ -41,6 +41,7 @@ Requires Java 8 or greater (see [Getting Started](https://github.com/magarena/ma
   - PalladiaMors for the Portuguese UI translation
   - kannikkiy for the Russian UI translation
   - Zac610 for the Italian UI translation
+  - LoubiTek for the French UI translation
   - Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components
   - XMage for the ArrowBuilder code
   - neoedmund for the download images-on-demand implementation
