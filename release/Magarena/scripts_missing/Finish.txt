@@ -6,7 +6,7 @@ type=Sorcery
 cost={2}{B}
 split=Start
 ability=Aftermath;\
-		As an additional cost to cast SN, sacrifice a creature.
+        As an additional cost to cast SN, sacrifice a creature.
 effect=Destroy target creature.
 timing=main
 second_half
