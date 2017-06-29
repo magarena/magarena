@@ -5,7 +5,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{B}
-effect=Remove all counters from all permanents and exile all tokens.
 timing=main
 oracle=Remove all counters from all permanents and exile all tokens.
-status=needs groovy
+requires_groovy_code
