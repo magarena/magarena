@@ -173,7 +173,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.setState(MagicPermanentState.Manifest);
         }
     },
-    MORPH() {
+    MORPH("face down") {
         @Override
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.setState(MagicPermanentState.FaceDown);
