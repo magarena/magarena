@@ -9,3 +9,4 @@ effect=For each attacking creature, its owner puts it on the top or bottom of hi
 timing=removal
 oracle=For each attacking creature, its owner puts it on the top or bottom of his or her library.
 status=needs groovy
+#If an effect puts two or more cards on the top or bottom of a library at the same time, the owner of those cards may arrange them in any order. That library’s owner doesn’t reveal the order in which the cards go into his or her library.
