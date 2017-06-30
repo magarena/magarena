@@ -8,3 +8,4 @@ cost={4}{U}
 effect=Look at the top three cards of your library. You may put those cards on the bottom of your library in any order. If you do, return SN to its owner's hand. Otherwise, draw three cards.
 timing=main
 oracle=Look at the top three cards of your library. You may put those cards on the bottom of your library in any order. If you do, return Petals of Insight to its owner's hand. Otherwise, draw three cards.
+status=not supported: in-any-order

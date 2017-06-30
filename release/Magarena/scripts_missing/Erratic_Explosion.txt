@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Choose target creature or player. Reveal cards from the top of your library until you reveal a nonland card. SN deals damage equal to that card's converted mana cost to that creature or player. Put the revealed cards on the bottom of your library in any order.
 timing=main
 oracle=Choose target creature or player. Reveal cards from the top of your library until you reveal a nonland card. Erratic Explosion deals damage equal to that card's converted mana cost to that creature or player. Put the revealed cards on the bottom of your library in any order.
+status=not supported: in-any-order

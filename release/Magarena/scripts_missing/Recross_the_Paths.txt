@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Reveal cards from the top of your library until you reveal a land card. Put that card onto the battlefield and the rest on the bottom of your library in any order. Clash with an opponent. If you win, return SN to its owner's hand.
 timing=main
 oracle=Reveal cards from the top of your library until you reveal a land card. Put that card onto the battlefield and the rest on the bottom of your library in any order. Clash with an opponent. If you win, return Recross the Paths to its owner's hand.
+status=not supported: in-any-order

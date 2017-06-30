@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Look at the top six cards of your library. Put up to two creature cards with converted mana cost 3 or less from among them onto the battlefield. Put the rest on the bottom of your library in any order.
 timing=removal
 oracle=Look at the top six cards of your library. Put up to two creature cards with converted mana cost 3 or less from among them onto the battlefield. Put the rest on the bottom of your library in any order.
+status=not supported: in-any-order

@@ -11,4 +11,4 @@ ability=Flying;\
         Whenever you cast a spell, put the cards in your hand on the bottom of your library in any order, then draw that many cards.
 timing=main
 oracle=Flying\nWhenever you cast a spell, put the cards in your hand on the bottom of your library in any order, then draw that many cards.
-status=needs groovy
+status=not supported: in-any-order

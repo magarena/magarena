@@ -11,3 +11,4 @@ ability=+2: Reveal the top three cards of your library. Put all nonland permanen
         −9: Put five +1/+1 counters on each creature you control and five loyalty counters on each other planeswalker you control.
 timing=main
 oracle=+2: Reveal the top three cards of your library. Put all nonland permanent cards revealed this way into your hand and the rest on the bottom of your library in any order.\n−2: Exile target creature. Its controller gains life equal to its power.\n−9: Put five +1/+1 counters on each creature you control and five loyalty counters on each other planeswalker you control.
+status=not supported: in-any-order

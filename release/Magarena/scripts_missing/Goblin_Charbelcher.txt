@@ -7,4 +7,4 @@ cost={4}
 ability={3}, {T}: Reveal cards from the top of your library until you reveal a land card. SN deals damage equal to the number of nonland cards revealed this way to target creature or player. If the revealed land card was a Mountain, SN deals double that damage instead. Put the revealed cards on the bottom of your library in any order.
 timing=artifact
 oracle={3}, {T}: Reveal cards from the top of your library until you reveal a land card. Goblin Charbelcher deals damage equal to the number of nonland cards revealed this way to target creature or player. If the revealed land card was a Mountain, Goblin Charbelcher deals double that damage instead. Put the revealed cards on the bottom of your library in any order.
-status=needs groovy
+status=not supported: in-any-order

@@ -7,4 +7,4 @@ cost={1}{U}{U}
 effect=Look at the top X cards of your library, where X is the number of artifacts you control. Put one of those cards into your hand and the rest on the bottom of your library in any order.
 timing=removal
 oracle=Look at the top X cards of your library, where X is the number of artifacts you control. Put one of those cards into your hand and the rest on the bottom of your library in any order.
-status=needs groovy
+status=not supported: in-any-order
