@@ -2789,7 +2789,7 @@ public enum MagicRuleEventAction {
         }
     },
     Energy(
-        ARG.PLAYERS + "( )?get(s)? " + ARG.ENERGY,
+        ARG.PLAYERS + "( )?get(s)? " + ARG.ENERGY + "( for each " + ARG.WORDRUN + ")?",
         MagicTargetHint.Positive,
         MagicTiming.Pump,
         "Energy"
@@ -2797,10 +2797,13 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.energy(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
+                final int multiplier = eachCount.getAmount(event);
+                final int total = amount * multiplier;
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Energy, amount));
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Energy, total));
                 }
             };
         }
