@@ -4,7 +4,7 @@ value=3.464
 rarity=R
 type=Artifact
 cost={4}
-ability=You may choose not to untap SN during your untap step.
+ability=You may choose not to untap SN during your untap step.;\
+        {4}, {T}: Tap target artifact, creature, or land. That permanent doesn't untap during its controller's untap step for as long as SN remains tapped.
 timing=artifact
 oracle=You may choose not to untap Amber Prison during your untap step.\n{4}, {T}: Tap target artifact, creature, or land. That permanent doesn't untap during its controller's untap step for as long as Amber Prison remains tapped.
-requires_groovy_code

@@ -6,7 +6,7 @@ type=Creature
 subtype=Leech
 cost={2}{B}
 pt=1/1
-ability=You may choose not to untap SN during your untap step.
+ability=You may choose not to untap SN during your untap step.;\
+        {T}: Tap target land. It doesn't untap during its controller's untap step for as long as SN remains tapped.
 timing=main
-requires_groovy_code=Mole Worms
 oracle=You may choose not to untap Mana Leech during your untap step.\n{T}: Tap target land. It doesn't untap during its controller's untap step for as long as Mana Leech remains tapped.
