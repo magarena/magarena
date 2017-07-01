@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Faerie
 cost={2}{G}{W}{U}
 pt=2/3
-ability=You may choose not to untap SN during your untap step.
+ability=You may choose not to untap SN during your untap step.;\
+        {T}: Gain control of target creature for as long as you control SN and SN remains tapped.
 timing=main
-requires_groovy_code
 oracle=You may choose not to untap Rubinia Soulsinger during your untap step.\n{T}: Gain control of target creature for as long as you control Rubinia and Rubinia remains tapped.
