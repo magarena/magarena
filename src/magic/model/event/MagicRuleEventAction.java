@@ -285,6 +285,25 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    ExilePlayerGraveyard(
+        "exile all cards from " + ARG.PLAYERS + "'s graveyard",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Exile"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return (game, event) -> {
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
+                    for (final MagicCard card : graveyard) {
+                        game.doAction(new ShiftCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                    }
+                }
+            };
+        }
+    },
     ExileCards(
         "exile " + ARG.CARDS,
         MagicTargetHint.Negative,
