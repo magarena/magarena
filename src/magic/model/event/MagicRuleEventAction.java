@@ -2720,7 +2720,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    GainControlRemains(
+    GainControlRemainsTapped(
         "gain control of " + ARG.PERMANENTS + " for as long as you control SN and SN remains tapped",
         MagicTargetHint.Negative,
         MagicExileTargetPicker.create(),
@@ -2735,6 +2735,29 @@ public enum MagicRuleEventAction {
                     game.doAction(new AddStaticAction(
                         event.getPermanent(),
                         MagicStatic.ControlAsLongAsYouControlSourceAndSourceIsTapped(
+                            event.getPlayer(),
+                            it
+                        )
+                    ));
+                }
+            };
+        }
+    },
+    GainControlRemainsOnBattlefield(
+        "gain control of " + ARG.PERMANENTS + " for as long as SN remains on the battlefield",
+        MagicTargetHint.Negative,
+        MagicExileTargetPicker.create(),
+        MagicTiming.Removal,
+        "Control"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new AddStaticAction(
+                        event.getPermanent(),
+                        MagicStatic.ControlAsLongAsSourceIsOnBattlefield(
                             event.getPlayer(),
                             it
                         )
