@@ -1753,6 +1753,27 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    TapRemains(
+        "tap " + ARG.PERMANENTS + "\\. (It|That " + ARG.THING + ") doesn't untap during its controller's untap step for as long as SN remains tapped.",
+        MagicTargetHint.Negative,
+        MagicTapTargetPicker.Tap,
+        MagicTiming.Tapping,
+        "Tap"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new TapAction(it));
+                    game.doAction(new AddStaticAction(
+                        event.getPermanent(),
+                        MagicStatic.AsLongAsCond(it, MagicAbility.DoesNotUntap, MagicCondition.TAPPED_CONDITION)
+                    ));
+                }
+            };
+        }
+    },
     Tap(
         "tap " + ARG.PERMANENTS,
         MagicTargetHint.Negative,
