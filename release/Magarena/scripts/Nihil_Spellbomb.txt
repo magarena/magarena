@@ -4,7 +4,7 @@ value=4.483
 rarity=C
 type=Artifact
 cost={1}
-ability=When SN is put into a graveyard from the battlefield, you may pay {B}. If you do, draw a card.
+ability={T}, Sacrifice SN: Exile all cards from target player's graveyard.;\
+        When SN is put into a graveyard from the battlefield, you may pay {B}. If you do, draw a card.
 timing=artifact
 oracle={T}, Sacrifice Nihil Spellbomb: Exile all cards from target player's graveyard.\nWhen Nihil Spellbomb is put into a graveyard from the battlefield, you may pay {B}. If you do, draw a card.
-requires_groovy_code=Tormod's Crypt

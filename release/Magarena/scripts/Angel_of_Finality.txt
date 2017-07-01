@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=3/4
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, exile all cards from target player's graveyard.
 timing=main
-requires_groovy_code=Bojuka Bog
 oracle=Flying\nWhen Angel of Finality enters the battlefield, exile all cards from target player's graveyard.

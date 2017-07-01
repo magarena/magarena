@@ -4,6 +4,6 @@ value=3.850
 rarity=U
 type=Artifact
 cost={0}
+ability={T}, Sacrifice SN: Exile all cards from target player's graveyard.
 timing=artifact
 oracle={T}, Sacrifice Tormod's Crypt: Exile all cards from target player's graveyard.
-requires_groovy_code
