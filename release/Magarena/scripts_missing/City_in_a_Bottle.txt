@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Artifact
 cost={2}
-ability=Whenever another nontoken permanent with a name originally printed in the Arabian Nights expansion other than SN is on the battlefield, its controller sacrifices it.;\
+ability=Whenever another nontoken permanent with a name originally printed in the Arabian Nights expansion is on the battlefield, its controller sacrifices it.;\
         Players can't cast spells or play lands with a name originally printed in the Arabian Nights expansion.
 timing=artifact
-oracle=Whenever another nontoken permanent with a name originally printed in the Arabian Nights expansion other than City in a Bottle is on the battlefield, its controller sacrifices it.\nPlayers can't cast spells or play lands with a name originally printed in the Arabian Nights expansion.
+oracle=Whenever another nontoken permanent with a name originally printed in the Arabian Nights expansion is on the battlefield, its controller sacrifices it.\nPlayers can't cast spells or play lands with a name originally printed in the Arabian Nights expansion.
 status=not supported: players-cant
