@@ -2,7 +2,6 @@ package magic.ui.screen.duel.player;
 
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -15,7 +14,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
@@ -34,7 +32,6 @@ import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
-import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
@@ -90,7 +87,8 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
     private void setFooter() {
         setLeftFooter(PlainMenuButton.getCloseScreenButton(MText.get(_S7)));
         setRightFooter(PlainMenuButton.build(this::doNextAction, MText.get(_S9)));
-        addToFooter(PlainMenuButton.build(this::doEditPlayerAction,
+        addToFooter(
+            PlainMenuButton.build(this::doEditPlayerAction,
                 MText.get(_S10), MText.get(_S11)
             ),
             PlainMenuButton.build(this::doNewPlayerAction,
@@ -99,8 +97,14 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
             PlainMenuButton.build(this::deleteSelectedPlayer,
                 MText.get(_S6), MText.get(_S15)
             ),
-            new SelectAvatarActionButton()
+            PlainMenuButton.build(this::showAvatarsScreen,
+                MText.get(_S1), MText.get(_S2)
+            )
         );
+    }
+
+    private void showAvatarsScreen() {
+        ScreenController.showAvatarImagesScreen(this);
     }
 
     private void setKeyEvents() {
@@ -159,19 +163,6 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
 
     protected PlayerProfile getSelectedPlayer() {
         return playersJList.getSelectedValue();
-    }
-
-    protected class SelectAvatarActionButton extends ActionBarButton {
-        public SelectAvatarActionButton() {
-            super(MText.get(_S1), MText.get(_S2), new SelectAvatarAction());
-        }
-    }
-
-    private class SelectAvatarAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            ScreenController.showAvatarImagesScreen(SelectPlayerScreen.this);
-        }
     }
 
     private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
