@@ -13,9 +13,6 @@ import magic.ui.utility.MagicStyle;
 @SuppressWarnings("serial")
 public abstract class MenuButton extends JButton {
 
-    // translatable strings
-    protected static final String _S1 = "Close";
-
     protected static final Color COLOR_NORMAL = Color.WHITE;
     protected static final Color COLOR_DISABLED = Color.DARK_GRAY;
 

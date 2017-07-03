@@ -17,6 +17,9 @@ import magic.ui.widget.button.LayoutButton;
 @SuppressWarnings("serial")
 public class PlainMenuButton extends MenuButton {
 
+    // translatable strings
+    private static final String _S1 = "Close";
+
     private final boolean hasSeparator;
 
     public PlainMenuButton(String caption, AbstractAction action, String tooltip, boolean showSeparator) {
