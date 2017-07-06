@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={1}{U}
 effect=Return target nonland permanent to its owner's hand.
+split=Oblivion
 timing=removal
 oracle=Return target nonland permanent to its owner's hand.
+status=not supported: split-card

@@ -5,5 +5,7 @@ rarity=R
 type=Sorcery
 cost={1}{G}
 effect=Until end of turn, creatures you control gain trample and "Whenever this creature deals combat damage to a player, draw a card."
+split=Despair
 timing=main
 oracle=Until end of turn, creatures you control gain trample and "Whenever this creature deals combat damage to a player, draw a card."
+status=not supported: split-card

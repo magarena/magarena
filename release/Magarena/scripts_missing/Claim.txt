@@ -5,5 +5,7 @@ rarity=U
 type=Sorcery
 cost={B}
 effect=Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
+split=Fame
 timing=main
 oracle=Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
+status=not supported: split-card

@@ -6,5 +6,8 @@ type=Sorcery
 cost={3}{W}
 ability=Aftermath
 effect=Exile any number of target creatures that have -1/-1 counters on them.
+split=Grind
 timing=main
+second_half
 oracle=Aftermath\nExile any number of target creatures that have -1/-1 counters on them.
+status=not supported: split-card

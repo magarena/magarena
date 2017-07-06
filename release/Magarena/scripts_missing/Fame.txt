@@ -6,5 +6,8 @@ type=Sorcery
 cost={1}{R}
 ability=Aftermath
 effect=Target creature gets +2/+0 and gains haste until end of turn.
+split=Claim
 timing=main
+second_half
 oracle=Aftermath\nTarget creature gets +2/+0 and gains haste until end of turn.
+status=not supported: split-card

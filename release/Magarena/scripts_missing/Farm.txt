@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={2}{W}
 effect=Destroy target attacking or blocking creature.
+split=Market
 timing=removal
 oracle=Destroy target attacking or blocking creature.
+status=not supported: split-card

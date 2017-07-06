@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={2}{R}
 effect=SN deals damage to target creature equal to the number of lands you control.
+split=Survive
 timing=removal
 oracle=Struggle deals damage to target creature equal to the number of lands you control.
+status=not supported: split-card

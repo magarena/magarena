@@ -6,5 +6,8 @@ type=Sorcery
 cost={1}{W}
 ability=Aftermath
 effect=Tap up to two target creatures your opponents control. Creatures you control gain vigilance until end of turn.
+Split=Appeal
 timing=main
+second_half
 oracle=Aftermath\nTap up to two target creatures your opponents control. Creatures you control gain vigilance until end of turn.
+status=not supported: split-card

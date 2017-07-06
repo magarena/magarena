@@ -5,5 +5,7 @@ rarity=R
 type=Sorcery
 cost={U}
 effect=Scry 3.
+split=Believe
 timing=main
 oracle=Scry 3.
+status=not supported: split-card

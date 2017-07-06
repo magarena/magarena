@@ -6,5 +6,8 @@ type=Sorcery
 cost={3}{R}
 ability=Aftermath
 effect=Discard any number of cards, then draw that many cards.
+split=Leave
 timing=main
+second_half
 oracle=Aftermath\nDiscard any number of cards, then draw that many cards.
+status=not supported: split-card

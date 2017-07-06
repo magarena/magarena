@@ -6,5 +6,8 @@ type=Instant
 cost={2}{U}
 ability=Aftermath
 effect=Copy target instant or sorcery spell. You may choose new targets for the copy.
+split=Refuse
 timing=removal
+second_half
 oracle=Aftermath\nCopy target instant or sorcery spell. You may choose new targets for the copy.
+status=not supported: split-card

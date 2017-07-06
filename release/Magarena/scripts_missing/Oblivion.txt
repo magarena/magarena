@@ -6,5 +6,8 @@ type=Sorcery
 cost={4}{B}
 ability=Aftermath
 effect=Target opponent discards two cards.
+split=Consign
 timing=main
+second_half
 oracle=Aftermath\nTarget opponent discards two cards.
+status=not supported: split-card

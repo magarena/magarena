@@ -5,5 +5,7 @@ rarity=R
 type=Instant
 cost={3}{R}
 effect=SN deals damage to target spell's controller equal to that spell's converted mana cost.
+split=Cooperate
 timing=removal
 oracle=Refuse deals damage to target spell's controller equal to that spell's converted mana cost.
+status=not supported: split-card

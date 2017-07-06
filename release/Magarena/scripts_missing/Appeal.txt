@@ -5,5 +5,7 @@ rarity=U
 type=Sorcery
 cost={G}
 effect=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of creatures you control.
+split=Authority
 timing=main
 oracle=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of creatures you control.
+status=not supported: split-card
