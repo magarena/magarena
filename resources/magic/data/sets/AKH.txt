@@ -38,6 +38,7 @@ Cast Out
 Censor
 Champion of Rhonas
 Channeler Initiate
+Cinder Barrens
 Colossapede
 Combat Celebrant
 Commit
@@ -93,6 +94,7 @@ Fling
 Floodwaters
 Forest
 Forsake the Worldly
+Forsaken Sanctuary
 Foul Orchard
 Galestrike
 Gate to the Afterlife
@@ -124,6 +126,7 @@ Heart-Piercer Manticore
 Heaven
 Hekma Sentinels
 Hieroglyphic Illumination
+Highland Lake
 Honed Khopesh
 Honored Crop-Captain
 Honored Hydra
@@ -155,6 +158,7 @@ Luxa River Shrine
 Magma Spray
 Manglehorn
 Manticore of the Gauntlet
+Meandering River
 Memory
 Merciless Javelineer
 Miasmic Mummy
@@ -235,6 +239,7 @@ Start
 Stinging Shot
 Stir the Sands
 Stone Quarry
+Submerged Boneyard
 Sunscorched Desert
 Supernatural Stamina
 Supply Caravan
@@ -248,8 +253,10 @@ Temmet, Vizier of Naktamun
 Those Who Serve
 Thresher Lizard
 Throne of the God-Pharaoh
+Timber Gorge
 Time to Reflect
 Tormenting Voice
+Tranquil Expanse
 Trespasser's Curse
 Trial of Ambition
 Trial of Knowledge
@@ -276,4 +283,5 @@ Wayward Servant
 Weaver of Currents
 Winds of Rebuke
 Winged Shepherd
+Woodland Stream
 Zenith Seeker
