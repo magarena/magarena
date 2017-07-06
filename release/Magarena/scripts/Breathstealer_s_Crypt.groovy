@@ -1,26 +1,42 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+        final MagicCard card = event.getRefCard();
+        final MagicPlayer player = card.getOwner();
+        final MagicEvent costEvent = new MagicPayLifeEvent(event.getSource(), player, 3);
+        if (event.isYes() && costEvent.isSatisfied()) {
+            game.addEvent(costEvent);
+        } else if (card.isInHand()) {
+            game.logAppendMessage(player, player.getName() + " discards " + card.getName());
+            game.doAction(new DiscardCardAction(player, card));
+        }
+}
 [
     new OtherDrawnTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
-            return card.hasType(MagicType.Creature) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice("Pay 3 life? If not, discard " + card),
-                    card,
-                    this,
-                    "PN may\$ pay 3 life. If PN doesn't, discard RN."
-                ) :
-                MagicEvent.NONE;
+            new MagicEvent(
+                permanent,
+                card.getController(),
+                card,
+                this,
+                "PN draws a card and reveals it. If it's a creature card, "+
+                "that player discards it unless he or she pays 3 life."
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicEvent costEvent = new MagicPayLifeEvent(event.getSource(), 3);
             final MagicCard card = event.getRefCard();
-            if (event.isYes() && costEvent.isSatisfied()) {
-                game.addEvent(costEvent);
-            } else if (card.isInHand()) {
-                game.doAction(new DiscardCardAction(event.getPlayer(), card));
+            game.doAction(new RevealAction(card));
+            if (card.hasType(MagicType.Creature)) {
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    card.getController(),
+                    new MagicMayChoice(),
+                    card,
+                    action,
+                    "PN may pay 3 life.\$ If not, discard " + card
+                ));
             }
         }
     }
