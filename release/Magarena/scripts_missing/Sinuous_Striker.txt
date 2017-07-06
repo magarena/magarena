@@ -1,0 +1,12 @@
+name=Sinuous Striker
+image=http://magiccards.info/scans/en/hou/45.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Naga,Warrior
+cost={2}{U}
+pt=2/2
+ability={U}: SN gets +1/-1 until end of turn.;\
+        Eternalize—{3}{U}{U}, Discard a card.
+timing=main
+oracle={U}: Sinuous Striker gets +1/-1 until end of turn.\nEternalize—{3}{U}{U}, Discard a card.

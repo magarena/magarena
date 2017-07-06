@@ -1,0 +1,13 @@
+name=Overwhelming Splendor
+image=http://magiccards.info/scans/en/hou/19.jpg
+value=2.500
+rarity=M
+type=Enchantment
+subtype=Aura,Curse
+cost={6}{W}{W}
+ability=Enchant player;\
+        Creatures enchanted player controls lose all abilities and have base power and toughness 1/1.;\
+        Enchanted player can't activate abilities that aren't mana abilities or loyalty abilities.
+timing=aura
+enchant=default,creature
+oracle=Enchant player\nCreatures enchanted player controls lose all abilities and have base power and toughness 1/1.\nEnchanted player can't activate abilities that aren't mana abilities or loyalty abilities.

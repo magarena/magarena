@@ -1,0 +1,10 @@
+name=Riddleform
+image=http://magiccards.info/scans/en/hou/43.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=Whenever you cast a noncreature spell, you may have SN become a 3/3 Sphinx creature with flying in addition to its other types until end of turn.;\
+        {2}{U}: Scry 1.
+timing=enchantment
+oracle=Whenever you cast a noncreature spell, you may have Riddleform become a 3/3 Sphinx creature with flying in addition to its other types until end of turn.\n{2}{U}: Scry 1.

@@ -1,0 +1,11 @@
+name=Marauding Boneslasher
+image=http://magiccards.info/scans/en/hou/70.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Minotaur
+cost={2}{B}
+pt=3/3
+ability=SN can't block unless you control another Zombie.
+timing=main
+oracle=Marauding Boneslasher can't block unless you control another Zombie.

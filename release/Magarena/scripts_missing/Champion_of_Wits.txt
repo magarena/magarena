@@ -1,0 +1,12 @@
+name=Champion of Wits
+image=http://magiccards.info/scans/en/hou/31.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Naga,Wizard
+cost={2}{U}
+pt=2/1
+ability=When SN enters the battlefield, you may draw cards equal to its power. If you do, discard two cards.;\
+        Eternalize {5}{U}{U}
+timing=main
+oracle=When Champion of Wits enters the battlefield, you may draw cards equal to its power. If you do, discard two cards.\nEternalize {5}{U}{U}

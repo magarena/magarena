@@ -1,0 +1,11 @@
+name=Grisly Survivor
+image=http://magiccards.info/scans/en/hou/64.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Minotaur,Warrior
+cost={2}{B}
+pt=2/3
+ability=Whenever you cycle or discard a card, SN gets +2/+0 until end of turn.
+timing=main
+oracle=Whenever you cycle or discard a card, Grisly Survivor gets +2/+0 until end of turn.

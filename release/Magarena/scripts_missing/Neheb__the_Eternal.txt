@@ -1,0 +1,12 @@
+name=Neheb, the Eternal
+image=http://magiccards.info/scans/en/hou/104.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Zombie,Minotaur,Warrior
+cost={3}{R}{R}
+pt=4/6
+ability=Afflict 3;\
+        At the beginning of your postcombat main phase, add {R} to your mana pool for each 1 life your opponents have lost this turn.
+timing=main
+oracle=Afflict 3\nAt the beginning of your postcombat main phase, add {R} to your mana pool for each 1 life your opponents have lost this turn.

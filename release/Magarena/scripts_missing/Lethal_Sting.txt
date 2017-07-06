@@ -1,0 +1,10 @@
+name=Lethal Sting
+image=http://magiccards.info/scans/en/hou/67.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+ability=As an additional cost to cast SN, put a -1/-1 counter on a creature you control.
+effect=Destroy target creature.
+timing=main
+oracle=As an additional cost to cast Lethal Sting, put a -1/-1 counter on a creature you control.\nDestroy target creature.

@@ -1,0 +1,9 @@
+name=Abrade
+image=http://magiccards.info/scans/en/hou/83.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Choose one — (1) SN deals 3 damage to target creature. (2) Destroy target artifact.
+timing=removal
+oracle=Choose one —\n• Abrade deals 3 damage to target creature.\n• Destroy target artifact.

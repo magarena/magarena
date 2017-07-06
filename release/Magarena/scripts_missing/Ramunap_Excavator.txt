@@ -1,0 +1,11 @@
+name=Ramunap Excavator
+image=http://magiccards.info/scans/en/hou/129.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Naga,Cleric
+cost={2}{G}
+pt=2/3
+ability=You may play land cards from your graveyard.
+timing=main
+oracle=You may play land cards from your graveyard.

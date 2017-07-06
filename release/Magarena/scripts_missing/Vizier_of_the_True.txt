@@ -1,0 +1,12 @@
+name=Vizier of the True
+image=http://magiccards.info/scans/en/hou/28.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=3/2
+ability=You may exert SN as it attacks.;\
+        Whenever you exert a creature, tap target creature an opponent controls.
+timing=main
+oracle=You may exert Vizier of the True as it attacks.\nWhenever you exert a creature, tap target creature an opponent controls.

@@ -1,0 +1,11 @@
+name=Dagger of the Worthy
+image=http://magiccards.info/scans/en/hou/160.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+0 and has afflict 1.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +2/+0 and has afflict 1.\nEquip {2}

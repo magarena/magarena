@@ -1,0 +1,12 @@
+name=Manticore Eternal
+image=http://magiccards.info/scans/en/hou/103.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Manticore
+cost={3}{R}{R}
+pt=5/4
+ability=Afflict 3;\
+        SN attacks each combat if able.
+timing=main
+oracle=Afflict 3\nManticore Eternal attacks each combat if able.

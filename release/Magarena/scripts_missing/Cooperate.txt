@@ -1,0 +1,10 @@
+name=Cooperate
+image=http://magiccards.info/scans/en/hou/156b.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{U}
+ability=Aftermath
+effect=Copy target instant or sorcery spell. You may choose new targets for the copy.
+timing=removal
+oracle=Aftermath\nCopy target instant or sorcery spell. You may choose new targets for the copy.

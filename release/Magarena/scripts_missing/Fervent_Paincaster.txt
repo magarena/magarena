@@ -1,0 +1,12 @@
+name=Fervent Paincaster
+image=http://magiccards.info/scans/en/hou/91.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{R}
+pt=3/1
+ability={T}: SN deals 1 damage to target player.;\
+        {T}, Exert SN: It deals 1 damage to target creature.
+timing=main
+oracle={T}: Fervent Paincaster deals 1 damage to target player.\n{T}, Exert Fervent Paincaster: It deals 1 damage to target creature.

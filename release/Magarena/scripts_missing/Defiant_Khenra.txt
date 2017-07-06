@@ -1,0 +1,10 @@
+name=Defiant Khenra
+image=http://magiccards.info/scans/en/hou/89.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Jackal,Warrior
+cost={1}{R}
+pt=2/2
+timing=main
+oracle=NONE

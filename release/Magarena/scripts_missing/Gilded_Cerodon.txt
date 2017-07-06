@@ -1,0 +1,11 @@
+name=Gilded Cerodon
+image=http://magiccards.info/scans/en/hou/94.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{R}
+pt=4/4
+ability=Whenever SN attacks, if you control a Desert or there is a Desert card in your graveyard, target creature can't block this turn.
+timing=main
+oracle=Whenever Gilded Cerodon attacks, if you control a Desert or there is a Desert card in your graveyard, target creature can't block this turn.

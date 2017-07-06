@@ -1,0 +1,9 @@
+name=Refuse
+image=http://magiccards.info/scans/en/hou/156a.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{R}
+effect=SN deals damage to target spell's controller equal to that spell's converted mana cost.
+timing=removal
+oracle=Refuse deals damage to target spell's controller equal to that spell's converted mana cost.

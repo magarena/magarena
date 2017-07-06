@@ -1,0 +1,11 @@
+name=Devotee of Strength
+image=http://magiccards.info/scans/en/hou/113.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Naga,Wizard
+cost={2}{G}
+pt=3/2
+ability={4}{G}: Target creature gets +2/+2 until end of turn.
+timing=main
+oracle={4}{G}: Target creature gets +2/+2 until end of turn.

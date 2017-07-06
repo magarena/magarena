@@ -1,0 +1,13 @@
+name=Djeru, With Eyes Open
+image=http://magiccards.info/scans/en/hou/10.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={3}{W}{W}
+pt=4/3
+ability=Vigilance;\
+        When SN enters the battlefield, you may search your library for a planeswalker card, reveal it, put it into your hand, then shuffle your library.;\
+        If a source would deal damage to a planeswalker you control, prevent 1 of that damage.
+timing=main
+oracle=Vigilance\nWhen Djeru, With Eyes Open enters the battlefield, you may search your library for a planeswalker card, reveal it, put it into your hand, then shuffle your library.\nIf a source would deal damage to a planeswalker you control, prevent 1 of that damage.

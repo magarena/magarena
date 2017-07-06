@@ -1,0 +1,12 @@
+name=Aerial Guide
+image=http://magiccards.info/scans/en/hou/29.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        Whenever SN attacks, another target attacking creature gains flying until end of turn.
+timing=main
+oracle=Flying\nWhenever Aerial Guide attacks, another target attacking creature gains flying until end of turn.

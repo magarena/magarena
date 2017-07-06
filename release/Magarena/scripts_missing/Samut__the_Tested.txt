@@ -1,0 +1,13 @@
+name=Samut, the Tested
+image=http://magiccards.info/scans/en/hou/144.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Samut
+cost={2}{R}{G}
+loyalty=4
+ability=+1: Up to one target creature gains double strike until end of turn.;\
+        −2: SN deals 2 damage divided as you choose among one or two target creatures and/or players.;\
+        −7: Search your library for up to two creature and/or planeswalker cards, put them onto the battlefield, then shuffle your library.
+timing=main
+oracle=+1: Up to one target creature gains double strike until end of turn.\n−2: Samut, the Tested deals 2 damage divided as you choose among one or two target creatures and/or players.\n−7: Search your library for up to two creature and/or planeswalker cards, put them onto the battlefield, then shuffle your library.

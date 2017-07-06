@@ -1,0 +1,11 @@
+name=Quarry Beetle
+image=http://magiccards.info/scans/en/hou/127.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect
+cost={4}{G}
+pt=4/5
+ability=When SN enters the battlefield, you may return target land card from your graveyard to the battlefield.
+timing=main
+oracle=When Quarry Beetle enters the battlefield, you may return target land card from your graveyard to the battlefield.

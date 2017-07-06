@@ -1,0 +1,11 @@
+name=Dune Diviner
+image=http://magiccards.info/scans/en/hou/114.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Naga,Cleric
+cost={2}{G}
+pt=2/3
+ability={1}, Tap an untapped Desert you control: You gain 1 life.
+timing=main
+oracle={1}, Tap an untapped Desert you control: You gain 1 life.

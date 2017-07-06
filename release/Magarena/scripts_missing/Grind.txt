@@ -1,0 +1,9 @@
+name=Grind
+image=http://magiccards.info/scans/en/hou/155a.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{B}
+effect=Put a -1/-1 counter on each of up to two target creatures.
+timing=main
+oracle=Put a -1/-1 counter on each of up to two target creatures.

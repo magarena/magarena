@@ -1,0 +1,12 @@
+name=Wildfire Eternal
+image=http://magiccards.info/scans/en/hou/109.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Jackal,Cleric
+cost={3}{R}
+pt=1/4
+ability=Afflict 4;\
+        Whenever SN attacks and isn't blocked, you may cast an instant or sorcery card from your hand without paying its mana cost.
+timing=main
+oracle=Afflict 4\nWhenever Wildfire Eternal attacks and isn't blocked, you may cast an instant or sorcery card from your hand without paying its mana cost.

@@ -1,0 +1,12 @@
+name=Crested Sunmare
+image=http://magiccards.info/scans/en/hou/6.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Horse
+cost={3}{W}{W}
+pt=5/5
+ability=Other Horses you control have indestructible.;\
+        At the beginning of each end step, if you gained life this turn, create a 5/5 white Horse creature token.
+timing=main
+oracle=Other Horses you control have indestructible.\nAt the beginning of each end step, if you gained life this turn, create a 5/5 white Horse creature token.

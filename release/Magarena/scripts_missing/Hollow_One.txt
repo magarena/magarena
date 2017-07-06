@@ -1,0 +1,12 @@
+name=Hollow One
+image=http://magiccards.info/scans/en/hou/163.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=4/4
+ability=SN costs {2} less to cast for each card you've cycled or discarded this turn.;\
+        Cycling {2}
+timing=main
+oracle=Hollow One costs {2} less to cast for each card you've cycled or discarded this turn.\nCycling {2}

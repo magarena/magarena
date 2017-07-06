@@ -1,0 +1,9 @@
+name=Oketra's Last Mercy
+image=http://magiccards.info/scans/en/hou/18.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{W}{W}
+effect=Your life total becomes equal to your starting life total. Lands you control don't untap during your next untap step.
+timing=main
+oracle=Your life total becomes equal to your starting life total. Lands you control don't untap during your next untap step.

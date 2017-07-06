@@ -1,0 +1,12 @@
+name=Granitic Titan
+image=http://magiccards.info/scans/en/hou/95.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{R}{R}
+pt=5/4
+ability=Menace;\
+        Cycling {2}
+timing=main
+oracle=Menace\nCycling {2}

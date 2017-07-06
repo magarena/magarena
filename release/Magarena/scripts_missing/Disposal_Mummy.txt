@@ -1,0 +1,11 @@
+name=Disposal Mummy
+image=http://magiccards.info/scans/en/hou/9.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Jackal
+cost={2}{W}
+pt=2/3
+ability=When SN enters the battlefield, exile target card from an opponent's graveyard.
+timing=main
+oracle=When Disposal Mummy enters the battlefield, exile target card from an opponent's graveyard.

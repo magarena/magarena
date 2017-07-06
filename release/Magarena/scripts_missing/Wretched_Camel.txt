@@ -1,0 +1,11 @@
+name=Wretched Camel
+image=http://magiccards.info/scans/en/hou/82.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Camel
+cost={1}{B}
+pt=2/1
+ability=When SN dies, if you control a Desert or there is a Desert card in your graveyard, target player discards a card.
+timing=main
+oracle=When Wretched Camel dies, if you control a Desert or there is a Desert card in your graveyard, target player discards a card.

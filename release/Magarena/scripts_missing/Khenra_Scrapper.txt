@@ -1,0 +1,12 @@
+name=Khenra Scrapper
+image=http://magiccards.info/scans/en/hou/100.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Jackal,Warrior
+cost={2}{R}
+pt=2/3
+ability=Menace;\
+        You may exert SN as it attacks. When you do, it gets +2/+0 until end of turn.
+timing=main
+oracle=Menace\nYou may exert Khenra Scrapper as it attacks. When you do, it gets +2/+0 until end of turn.

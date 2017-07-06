@@ -1,0 +1,11 @@
+name=Chaos Maw
+image=http://magiccards.info/scans/en/hou/87.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Hellion
+cost={5}{R}{R}
+pt=6/6
+ability=When SN enters the battlefield, it deals 3 damage to each other creature.
+timing=main
+oracle=When Chaos Maw enters the battlefield, it deals 3 damage to each other creature.

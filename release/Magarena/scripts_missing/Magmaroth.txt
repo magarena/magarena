@@ -1,0 +1,12 @@
+name=Magmaroth
+image=http://magiccards.info/scans/en/hou/102.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=5/5
+ability=At the beginning of your upkeep, put a -1/-1 counter on SN.;\
+        Whenever you cast a noncreature spell, remove a -1/-1 counter from SN.
+timing=main
+oracle=At the beginning of your upkeep, put a -1/-1 counter on Magmaroth.\nWhenever you cast a noncreature spell, remove a -1/-1 counter from Magmaroth.

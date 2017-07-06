@@ -1,0 +1,9 @@
+name=Torment of Hailfire
+image=http://magiccards.info/scans/en/hou/77.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{B}{B}
+effect=Repeat the following process X times. Each opponent loses 3 life unless that player sacrifices a nonland permanent or discards a card.
+timing=main
+oracle=Repeat the following process X times. Each opponent loses 3 life unless that player sacrifices a nonland permanent or discards a card.

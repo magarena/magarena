@@ -1,0 +1,9 @@
+name=Ambuscade
+image=http://magiccards.info/scans/en/hou/110.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Target creature you control gets +1/+0 until end of turn. It deals damage equal to its power to target creature an opponent controls.
+timing=removal
+oracle=Target creature you control gets +1/+0 until end of turn. It deals damage equal to its power to target creature an opponent controls.

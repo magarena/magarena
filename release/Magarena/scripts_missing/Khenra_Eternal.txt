@@ -1,0 +1,11 @@
+name=Khenra Eternal
+image=http://magiccards.info/scans/en/hou/66.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Jackal,Warrior
+cost={1}{B}
+pt=2/2
+ability=Afflict 1
+timing=main
+oracle=Afflict 1

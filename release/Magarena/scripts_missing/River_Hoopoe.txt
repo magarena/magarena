@@ -1,0 +1,12 @@
+name=River Hoopoe
+image=http://magiccards.info/scans/en/hou/143.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird
+cost={G}{U}
+pt=1/3
+ability=Flying;\
+        {3}{G}{U}: You gain 2 life and draw a card.
+timing=main
+oracle=Flying\n{3}{G}{U}: You gain 2 life and draw a card.

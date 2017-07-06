@@ -1,0 +1,11 @@
+name=Lurching Rotbeast
+image=http://magiccards.info/scans/en/hou/69.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Beast
+cost={3}{B}
+pt=4/2
+ability=Cycling {B}
+timing=main
+oracle=Cycling {B}

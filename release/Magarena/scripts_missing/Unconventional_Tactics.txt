@@ -1,0 +1,9 @@
+name=Unconventional Tactics
+image=http://magiccards.info/scans/en/hou/27.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{W}
+effect=Target creature gets +3/+3 and gains flying until end of turn.~Whenever a Zombie enters the battlefield under your control, you may pay {W}. If you do, return SN from your graveyard to your hand.
+timing=main
+oracle=Target creature gets +3/+3 and gains flying until end of turn.\nWhenever a Zombie enters the battlefield under your control, you may pay {W}. If you do, return Unconventional Tactics from your graveyard to your hand.

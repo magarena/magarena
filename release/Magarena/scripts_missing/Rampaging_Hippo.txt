@@ -1,0 +1,12 @@
+name=Rampaging Hippo
+image=http://magiccards.info/scans/en/hou/128.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hippo
+cost={4}{G}{G}
+pt=5/6
+ability=Trample;\
+        Cycling {2}
+timing=main
+oracle=Trample\nCycling {2}

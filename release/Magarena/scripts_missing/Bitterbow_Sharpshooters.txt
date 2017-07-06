@@ -1,0 +1,11 @@
+name=Bitterbow Sharpshooters
+image=http://magiccards.info/scans/en/hou/112.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Jackal,Archer
+cost={4}{G}
+pt=4/4
+ability=Vigilance, reach
+timing=main
+oracle=Vigilance, reach

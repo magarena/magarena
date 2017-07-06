@@ -1,0 +1,11 @@
+name=Brambleweft Behemoth
+image=http://magiccards.info/scans/en/hou/202.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{G}{G}
+pt=6/6
+ability=Trample
+timing=main
+oracle=Trample

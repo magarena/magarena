@@ -1,0 +1,9 @@
+name=Hazoret's Undying Fury
+image=http://magiccards.info/scans/en/hou/96.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{R}{R}
+effect=Shuffle your library, then exile the top four cards. You may cast any number of nonland cards with converted mana cost 5 or less from among them without paying their mana costs. Lands you control don't untap during your next untap step.
+timing=main
+oracle=Shuffle your library, then exile the top four cards. You may cast any number of nonland cards with converted mana cost 5 or less from among them without paying their mana costs. Lands you control don't untap during your next untap step.

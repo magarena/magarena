@@ -1,0 +1,9 @@
+name=Doomfall
+image=http://magiccards.info/scans/en/hou/62.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}
+effect=Choose one — (1) Target opponent exiles a creature he or she controls. (2) Target opponent reveals his or her hand. You choose a nonland card from it. Exile that card.
+timing=main
+oracle=Choose one —\n• Target opponent exiles a creature he or she controls.\n• Target opponent reveals his or her hand. You choose a nonland card from it. Exile that card.

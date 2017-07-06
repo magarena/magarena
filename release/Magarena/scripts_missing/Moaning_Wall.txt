@@ -1,0 +1,12 @@
+name=Moaning Wall
+image=http://magiccards.info/scans/en/hou/72.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Wall
+cost={2}{B}
+pt=0/5
+ability=Defender;\
+        Cycling {2}
+timing=smain
+oracle=Defender\nCycling {2}

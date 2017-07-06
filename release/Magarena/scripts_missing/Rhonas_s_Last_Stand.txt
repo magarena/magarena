@@ -1,0 +1,9 @@
+name=Rhonas's Last Stand
+image=http://magiccards.info/scans/en/hou/132.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={G}{G}
+effect=Create a 5/4 green Snake creature token. Lands you control don't untap during your next untap step.
+timing=main
+oracle=Create a 5/4 green Snake creature token. Lands you control don't untap during your next untap step.

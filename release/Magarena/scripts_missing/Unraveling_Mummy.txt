@@ -1,0 +1,12 @@
+name=Unraveling Mummy
+image=http://magiccards.info/scans/en/hou/147.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={1}{W}{B}
+pt=2/3
+ability={1}{W}: Target attacking Zombie gains lifelink until end of turn.;\
+        {1}{B}: Target attacking Zombie gains deathtouch until end of turn.
+timing=main
+oracle={1}{W}: Target attacking Zombie gains lifelink until end of turn.\n{1}{B}: Target attacking Zombie gains deathtouch until end of turn.

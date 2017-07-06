@@ -1,0 +1,12 @@
+name=Pride Sovereign
+image=http://magiccards.info/scans/en/hou/126.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat
+cost={2}{G}
+pt=2/2
+ability=SN gets +1/+1 for each other Cat you control.;\
+        {W}, {T}, Exert SN: Create two 1/1 white Cat creature tokens with lifelink.
+timing=main
+oracle=Pride Sovereign gets +1/+1 for each other Cat you control.\n{W}, {T}, Exert Pride Sovereign: Create two 1/1 white Cat creature tokens with lifelink.

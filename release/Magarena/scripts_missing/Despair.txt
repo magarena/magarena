@@ -1,0 +1,10 @@
+name=Despair
+image=http://magiccards.info/scans/en/hou/157b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{B}
+ability=Aftermath
+effect=Until end of turn, creatures you control gain menace and "Whenever this creature deals combat damage to a player, that player discards a card."
+timing=main
+oracle=Aftermath\nUntil end of turn, creatures you control gain menace and "Whenever this creature deals combat damage to a player, that player discards a card."

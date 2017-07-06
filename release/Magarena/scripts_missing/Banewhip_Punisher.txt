@@ -1,0 +1,12 @@
+name=Banewhip Punisher
+image=http://magiccards.info/scans/en/hou/59.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={2}{B}
+pt=2/2
+ability=When SN enters the battlefield, you may put a -1/-1 counter on target creature.;\
+        {B}, Sacrifice SN: Destroy target creature that has a -1/-1 counter on it.
+timing=main
+oracle=When Banewhip Punisher enters the battlefield, you may put a -1/-1 counter on target creature.\n{B}, Sacrifice Banewhip Punisher: Destroy target creature that has a -1/-1 counter on it.

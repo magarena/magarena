@@ -1,0 +1,9 @@
+name=Open Fire
+image=http://magiccards.info/scans/en/hou/105.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{R}
+effect=SN deals 3 damage to target creature or player.
+timing=removal
+oracle=Open Fire deals 3 damage to target creature or player.

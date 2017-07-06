@@ -1,0 +1,13 @@
+name=Bloodwater Entity
+image=http://magiccards.info/scans/en/hou/138.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={1}{U}{R}
+pt=2/2
+ability=Flying;\
+        Prowess;\
+        When SN enters the battlefield, you may put target instant or sorcery card from your graveyard on top of your library.
+timing=main
+oracle=Flying\nProwess\nWhen Bloodwater Entity enters the battlefield, you may put target instant or sorcery card from your graveyard on top of your library.

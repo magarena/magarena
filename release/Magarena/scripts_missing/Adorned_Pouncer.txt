@@ -1,0 +1,12 @@
+name=Adorned Pouncer
+image=http://magiccards.info/scans/en/hou/2.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat
+cost={1}{W}
+pt=1/1
+ability=Double strike;\
+        Eternalize {3}{W}{W}
+timing=main
+oracle=Double strike\nEternalize {3}{W}{W}

@@ -1,0 +1,9 @@
+name=Crash Through
+image=http://magiccards.info/scans/en/hou/88.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={R}
+effect=Creatures you control gain trample until end of turn.~Draw a card.
+timing=main
+oracle=Creatures you control gain trample until end of turn.\nDraw a card.

@@ -1,0 +1,12 @@
+name=Vizier of the Anointed
+image=http://magiccards.info/scans/en/hou/55.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{U}
+pt=2/4
+ability=When SN enters the battlefield, you may search your library for a creature card with eternalize or embalm, put that card into your graveyard, then shuffle your library.;\
+        Whenever you activate an eternalize or embalm ability, draw a card.
+timing=main
+oracle=When Vizier of the Anointed enters the battlefield, you may search your library for a creature card with eternalize or embalm, put that card into your graveyard, then shuffle your library.\nWhenever you activate an eternalize or embalm ability, draw a card.

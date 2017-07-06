@@ -1,0 +1,13 @@
+name=Dreamstealer
+image=http://magiccards.info/scans/en/hou/63.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=1/2
+ability=Menace;\
+        Whenever SN deals combat damage to a player, that player discards that many cards.;\
+        Eternalize {4}{B}{B}
+timing=main
+oracle=Menace\nWhenever Dreamstealer deals combat damage to a player, that player discards that many cards.\nEternalize {4}{B}{B}

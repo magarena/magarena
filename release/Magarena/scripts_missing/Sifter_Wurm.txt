@@ -1,0 +1,12 @@
+name=Sifter Wurm
+image=http://magiccards.info/scans/en/hou/135.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wurm
+cost={5}{G}{G}
+pt=7/7
+ability=Trample;\
+        When SN enters the battlefield, scry 3, then reveal the top card of your library. You gain life equal to that card's converted mana cost.
+timing=main
+oracle=Trample\nWhen Sifter Wurm enters the battlefield, scry 3, then reveal the top card of your library. You gain life equal to that card's converted mana cost.

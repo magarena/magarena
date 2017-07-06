@@ -1,0 +1,10 @@
+name=Market
+image=http://magiccards.info/scans/en/hou/148b.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{U}
+ability=Aftermath
+effect=Draw two cards, then discard two cards.
+timing=main
+oracle=Aftermath\nDraw two cards, then discard two cards.

@@ -1,0 +1,12 @@
+name=Razaketh, the Foulblooded
+image=http://magiccards.info/scans/en/hou/73.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Demon
+cost={5}{B}{B}{B}
+pt=8/8
+ability=Flying, trample;\
+        Pay 2 life, Sacrifice another creature: Search your library for a card and put that card into your hand. Then shuffle your library.
+timing=main
+oracle=Flying, trample\nPay 2 life, Sacrifice another creature: Search your library for a card and put that card into your hand. Then shuffle your library.

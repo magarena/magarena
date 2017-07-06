@@ -1,0 +1,13 @@
+name=Ammit Eternal
+image=http://magiccards.info/scans/en/hou/57.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Crocodile,Demon
+cost={2}{B}
+pt=5/5
+ability=Afflict 3;\
+        Whenever an opponent casts a spell, put a -1/-1 counter on SN.;\
+        Whenever SN deals combat damage to a player, remove all -1/-1 counters from it.
+timing=main
+oracle=Afflict 3\nWhenever an opponent casts a spell, put a -1/-1 counter on Ammit Eternal.\nWhenever Ammit Eternal deals combat damage to a player, remove all -1/-1 counters from it.

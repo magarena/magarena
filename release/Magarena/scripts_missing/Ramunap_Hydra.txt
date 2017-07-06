@@ -1,0 +1,13 @@
+name=Ramunap Hydra
+image=http://magiccards.info/scans/en/hou/130.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Snake,Hydra
+cost={3}{G}
+pt=3/3
+ability=Vigilance, reach, trample;\
+        SN gets +1/+1 as long as you control a Desert.;\
+        SN gets +1/+1 as long as there is a Desert card in your graveyard.
+timing=main
+oracle=Vigilance, reach, trample\nRamunap Hydra gets +1/+1 as long as you control a Desert.\nRamunap Hydra gets +1/+1 as long as there is a Desert card in your graveyard.

@@ -1,0 +1,11 @@
+name=Desert of the Glorified
+image=http://magiccards.info/scans/en/hou/171.jpg
+value=2.500
+rarity=C
+type=Land
+subtype=Desert
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {B} to your mana pool.;\
+        Cycling {1}{B}
+timing=land
+oracle=Desert of the Glorified enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nCycling {1}{B}

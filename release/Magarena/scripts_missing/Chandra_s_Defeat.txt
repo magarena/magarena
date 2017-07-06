@@ -1,0 +1,9 @@
+name=Chandra's Defeat
+image=http://magiccards.info/scans/en/hou/86.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={R}
+effect=SN deals 5 damage to target red creature or red planeswalker. If that permanent is a Chandra planeswalker, you may discard a card. If you do, draw a card.
+timing=removal
+oracle=Chandra's Defeat deals 5 damage to target red creature or red planeswalker. If that permanent is a Chandra planeswalker, you may discard a card. If you do, draw a card.

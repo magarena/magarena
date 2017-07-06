@@ -1,0 +1,9 @@
+name=Hour of Glory
+image=http://magiccards.info/scans/en/hou/65.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{B}
+effect=Exile target creature. If that creature was a God, its controller reveals his or her hand and exiles all cards from it with the same name as that creature.
+timing=removal
+oracle=Exile target creature. If that creature was a God, its controller reveals his or her hand and exiles all cards from it with the same name as that creature.

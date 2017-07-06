@@ -1,0 +1,9 @@
+name=Driven
+image=http://magiccards.info/scans/en/hou/157a.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{G}
+effect=Until end of turn, creatures you control gain trample and "Whenever this creature deals combat damage to a player, draw a card."
+timing=main
+oracle=Until end of turn, creatures you control gain trample and "Whenever this creature deals combat damage to a player, draw a card."

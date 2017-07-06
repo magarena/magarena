@@ -1,0 +1,9 @@
+name=Farm
+image=http://magiccards.info/scans/en/hou/148a.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{W}
+effect=Destroy target attacking or blocking creature.
+timing=removal
+oracle=Destroy target attacking or blocking creature.

@@ -1,0 +1,9 @@
+name=Overcome
+image=http://magiccards.info/scans/en/hou/125.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}{G}
+effect=Creatures you control get +2/+2 and gain trample until end of turn.
+timing=main
+oracle=Creatures you control get +2/+2 and gain trample until end of turn.

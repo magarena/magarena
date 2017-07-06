@@ -1,0 +1,10 @@
+name=Crypt of the Eternals
+image=http://magiccards.info/scans/en/hou/169.jpg
+value=2.500
+rarity=U
+type=Land
+ability=When SN enters the battlefield, you gain 1 life.;\
+        {T}: Add {C} to your mana pool.;\
+        {1}, {T}: Add {U}, {B}, or {R} to your mana pool.
+timing=land
+oracle=When Crypt of the Eternals enters the battlefield, you gain 1 life.\n{T}: Add {C} to your mana pool.\n{1}, {T}: Add {U}, {B}, or {R} to your mana pool.

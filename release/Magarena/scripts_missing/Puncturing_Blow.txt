@@ -1,0 +1,9 @@
+name=Puncturing Blow
+image=http://magiccards.info/scans/en/hou/106.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{R}{R}
+effect=SN deals 5 damage to target creature. If that creature would die this turn, exile it instead.
+timing=main
+oracle=Puncturing Blow deals 5 damage to target creature. If that creature would die this turn, exile it instead.

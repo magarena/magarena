@@ -1,0 +1,13 @@
+name=Apocalypse Demon
+image=http://magiccards.info/scans/en/hou/58.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Demon
+cost={4}{B}{B}
+pt=*/*
+ability=Flying;\
+        SN's power and toughness are each equal to the number of cards in your graveyard.;\
+        At the beginning of your upkeep, tap SN unless you sacrifice another creature.
+timing=main
+oracle=Flying\nApocalypse Demon's power and toughness are each equal to the number of cards in your graveyard.\nAt the beginning of your upkeep, tap Apocalypse Demon unless you sacrifice another creature.

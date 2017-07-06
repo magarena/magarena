@@ -1,0 +1,11 @@
+name=God-Pharaoh's Faithful
+image=http://magiccards.info/scans/en/hou/14.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={W}
+pt=0/4
+ability=Whenever you cast a blue, black, or red spell, you gain 1 life.
+timing=main
+oracle=Whenever you cast a blue, black, or red spell, you gain 1 life.

@@ -1,0 +1,12 @@
+name=Wall of Forgotten Pharaohs
+image=http://magiccards.info/scans/en/hou/168.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Wall
+cost={2}
+pt=0/4
+ability=Defender;\
+        {T}: SN deals 1 damage to target player. Activate this ability only if you control a Desert or there is a Desert card in your graveyard.
+timing=smain
+oracle=Defender\n{T}: Wall of Forgotten Pharaohs deals 1 damage to target player. Activate this ability only if you control a Desert or there is a Desert card in your graveyard.

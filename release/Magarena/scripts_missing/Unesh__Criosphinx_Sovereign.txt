@@ -1,0 +1,13 @@
+name=Unesh, Criosphinx Sovereign
+image=http://magiccards.info/scans/en/hou/52.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Sphinx
+cost={4}{U}{U}
+pt=4/4
+ability=Flying;\
+        Sphinx spells you cast cost {2} less to cast.;\
+        Whenever SN or another Sphinx enters the battlefield under your control, reveal the top four cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.
+timing=main
+oracle=Flying\nSphinx spells you cast cost {2} less to cast.\nWhenever Unesh, Criosphinx Sovereign or another Sphinx enters the battlefield under your control, reveal the top four cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.

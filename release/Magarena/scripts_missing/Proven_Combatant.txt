@@ -1,0 +1,11 @@
+name=Proven Combatant
+image=http://magiccards.info/scans/en/hou/42.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={U}
+pt=1/1
+ability=Eternalize {4}{U}{U}
+timing=main
+oracle=Eternalize {4}{U}{U}

@@ -1,0 +1,11 @@
+name=Sand Strangler
+image=http://magiccards.info/scans/en/hou/107.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, if you control a Desert or there is a Desert card in your graveyard, you may have SN deal 3 damage to target creature.
+timing=main
+oracle=When Sand Strangler enters the battlefield, if you control a Desert or there is a Desert card in your graveyard, you may have Sand Strangler deal 3 damage to target creature.

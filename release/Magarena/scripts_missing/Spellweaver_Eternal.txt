@@ -1,0 +1,12 @@
+name=Spellweaver Eternal
+image=http://magiccards.info/scans/en/hou/46.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Naga,Wizard
+cost={1}{U}
+pt=2/1
+ability=Prowess;\
+        Afflict 2
+timing=main
+oracle=Prowess\nAfflict 2

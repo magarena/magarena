@@ -1,0 +1,13 @@
+name=Obelisk Spider
+image=http://magiccards.info/scans/en/hou/141.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spider
+cost={1}{B}{G}
+pt=1/4
+ability=Reach;\
+        Whenever SN deals combat damage to a creature, put a -1/-1 counter on that creature.;\
+        Whenever you put one or more -1/-1 counters on a creature, each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Reach\nWhenever Obelisk Spider deals combat damage to a creature, put a -1/-1 counter on that creature.\nWhenever you put one or more -1/-1 counters on a creature, each opponent loses 1 life and you gain 1 life.

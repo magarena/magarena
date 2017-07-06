@@ -1,0 +1,11 @@
+name=Avid Reclaimer
+image=http://magiccards.info/scans/en/hou/201.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={2}{G}
+pt=2/2
+ability={T}: Add {G} or {U} to your mana pool. If you control a Nissa planeswalker, you gain 2 life.
+timing=main
+oracle={T}: Add {G} or {U} to your mana pool. If you control a Nissa planeswalker, you gain 2 life.

@@ -1,0 +1,10 @@
+name=Dutiful Servants
+image=http://magiccards.info/scans/en/hou/12.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{W}
+pt=2/5
+timing=main
+oracle=NONE

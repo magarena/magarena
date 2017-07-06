@@ -1,0 +1,10 @@
+name=Survive
+image=http://magiccards.info/scans/en/hou/151b.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{G}
+ability=Aftermath
+effect=Each player shuffles his or her graveyard into his or her library.
+timing=main
+oracle=Aftermath\nEach player shuffles his or her graveyard into his or her library.

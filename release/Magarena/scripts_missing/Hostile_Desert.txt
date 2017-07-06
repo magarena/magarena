@@ -1,0 +1,10 @@
+name=Hostile Desert
+image=http://magiccards.info/scans/en/hou/178.jpg
+value=2.500
+rarity=R
+type=Land
+subtype=Desert
+ability={T}: Add {C} to your mana pool.;\
+        {2}, Exile a land card from your graveyard: SN becomes a 3/4 Elemental creature until end of turn. It's still a land.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{2}, Exile a land card from your graveyard: Hostile Desert becomes a 3/4 Elemental creature until end of turn. It's still a land.

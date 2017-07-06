@@ -1,0 +1,11 @@
+name=Solitary Camel
+image=http://magiccards.info/scans/en/hou/23.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Camel
+cost={2}{W}
+pt=3/2
+ability=SN has lifelink as long as you control a Desert or there is a Desert card in your graveyard.
+timing=main
+oracle=Solitary Camel has lifelink as long as you control a Desert or there is a Desert card in your graveyard.

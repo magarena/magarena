@@ -1,0 +1,11 @@
+name=Graven Abomination
+image=http://magiccards.info/scans/en/hou/162.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Horror
+cost={3}
+pt=3/1
+ability=Whenever SN attacks, exile target card from defending player's graveyard.
+timing=main
+oracle=Whenever Graven Abomination attacks, exile target card from defending player's graveyard.

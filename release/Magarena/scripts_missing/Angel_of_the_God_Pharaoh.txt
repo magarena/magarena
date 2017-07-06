@@ -1,0 +1,12 @@
+name=Angel of the God-Pharaoh
+image=http://magiccards.info/scans/en/hou/4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={4}{W}{W}
+pt=4/4
+ability=Flying;\
+        Cycling {2}
+timing=main
+oracle=Flying\nCycling {2}

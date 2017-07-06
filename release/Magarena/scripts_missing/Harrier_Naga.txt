@@ -1,0 +1,10 @@
+name=Harrier Naga
+image=http://magiccards.info/scans/en/hou/118.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Warrior
+cost={2}{G}
+pt=3/3
+timing=main
+oracle=NONE

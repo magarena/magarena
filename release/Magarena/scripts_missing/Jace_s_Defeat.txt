@@ -1,0 +1,9 @@
+name=Jace's Defeat
+image=http://magiccards.info/scans/en/hou/38.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Counter target blue spell. If it was a Jace planeswalker spell, scry 2.
+timing=counter
+oracle=Counter target blue spell. If it was a Jace planeswalker spell, scry 2.

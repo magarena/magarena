@@ -1,0 +1,9 @@
+name=Kefnet's Last Word
+image=http://magiccards.info/scans/en/hou/39.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{U}{U}
+effect=Gain control of target artifact, creature, or enchantment. Lands you control don't untap during your next untap step.
+timing=main
+oracle=Gain control of target artifact, creature, or enchantment. Lands you control don't untap during your next untap step.

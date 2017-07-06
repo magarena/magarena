@@ -1,0 +1,12 @@
+name=Hope Tender
+image=http://magiccards.info/scans/en/hou/119.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=2/2
+ability={1}, {T}: Untap target land.;\
+        {1}, {T}, Exert SN: Untap two target lands.
+timing=main
+oracle={1}, {T}: Untap target land.\n{1}, {T}, Exert Hope Tender: Untap two target lands.

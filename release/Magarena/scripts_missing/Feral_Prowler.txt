@@ -1,0 +1,11 @@
+name=Feral Prowler
+image=http://magiccards.info/scans/en/hou/115.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={1}{G}
+pt=1/3
+ability=When SN dies, draw a card.
+timing=main
+oracle=When Feral Prowler dies, draw a card.

@@ -1,0 +1,12 @@
+name=Steadfast Sentinel
+image=http://magiccards.info/scans/en/hou/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=2/3
+ability=Vigilance;\
+        Eternalize {4}{W}{W}
+timing=main
+oracle=Vigilance\nEternalize {4}{W}{W}

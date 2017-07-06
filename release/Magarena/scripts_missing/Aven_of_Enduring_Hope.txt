@@ -1,0 +1,12 @@
+name=Aven of Enduring Hope
+image=http://magiccards.info/scans/en/hou/5.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Cleric
+cost={4}{W}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, you gain 3 life.
+timing=main
+oracle=Flying\nWhen Aven of Enduring Hope enters the battlefield, you gain 3 life.

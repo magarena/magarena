@@ -1,0 +1,12 @@
+name=Merciless Eternal
+image=http://magiccards.info/scans/en/hou/71.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Cleric
+cost={2}{B}
+pt=2/2
+ability=Afflict 2;\
+        {2}{B}, Discard a card: SN gets +2/+2 until end of turn.
+timing=main
+oracle=Afflict 2\n{2}{B}, Discard a card: Merciless Eternal gets +2/+2 until end of turn.

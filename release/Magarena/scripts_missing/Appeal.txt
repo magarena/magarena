@@ -1,0 +1,9 @@
+name=Appeal
+image=http://magiccards.info/scans/en/hou/152a.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={G}
+effect=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of creatures you control.
+timing=main
+oracle=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of creatures you control.

@@ -1,0 +1,12 @@
+name=Ruin Rat
+image=http://magiccards.info/scans/en/hou/75.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rat
+cost={1}{B}
+pt=1/1
+ability=Deathtouch;\
+        When SN dies, exile target card from an opponent's graveyard.
+timing=main
+oracle=Deathtouch\nWhen Ruin Rat dies, exile target card from an opponent's graveyard.

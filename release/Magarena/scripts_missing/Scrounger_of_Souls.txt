@@ -1,0 +1,11 @@
+name=Scrounger of Souls
+image=http://magiccards.info/scans/en/hou/76.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Horror
+cost={4}{B}
+pt=3/4
+ability=Lifelink
+timing=main
+oracle=Lifelink

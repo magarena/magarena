@@ -1,0 +1,11 @@
+name=Sidewinder Naga
+image=http://magiccards.info/scans/en/hou/134.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Warrior
+cost={2}{G}
+pt=3/2
+ability=As long as you control a Desert or there is a Desert card in your graveyard, SN gets +1/+0 and has trample.
+timing=main
+oracle=As long as you control a Desert or there is a Desert card in your graveyard, Sidewinder Naga gets +1/+0 and has trample.

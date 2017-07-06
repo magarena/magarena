@@ -1,0 +1,10 @@
+name=Imaginary Threats
+image=http://magiccards.info/scans/en/hou/37.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}{U}
+ability=Cycling {2}
+effect=Creatures target opponent controls attack this turn if able. During that player's next untap step, creatures he or she controls don't untap.
+timing=removal
+oracle=Creatures target opponent controls attack this turn if able. During that player's next untap step, creatures he or she controls don't untap.\nCycling {2}

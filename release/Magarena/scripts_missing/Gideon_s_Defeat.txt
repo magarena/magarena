@@ -1,0 +1,9 @@
+name=Gideon's Defeat
+image=http://magiccards.info/scans/en/hou/13.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={W}
+effect=Exile target white creature that's attacking or blocking. If it was a Gideon planeswalker, you gain 5 life.
+timing=removal
+oracle=Exile target white creature that's attacking or blocking. If it was a Gideon planeswalker, you gain 5 life.

@@ -1,0 +1,11 @@
+name=Carrion Screecher
+image=http://magiccards.info/scans/en/hou/61.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Bird
+cost={3}{B}
+pt=3/1
+ability=Flying
+timing=main
+oracle=Flying

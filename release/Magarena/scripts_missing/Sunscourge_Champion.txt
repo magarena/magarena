@@ -1,0 +1,12 @@
+name=Sunscourge Champion
+image=http://magiccards.info/scans/en/hou/26.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}
+pt=2/3
+ability=When SN enters the battlefield, you gain life equal to its power.;\
+        Eternalize—{2}{W}{W}, Discard a card.
+timing=main
+oracle=When Sunscourge Champion enters the battlefield, you gain life equal to its power.\nEternalize—{2}{W}{W}, Discard a card.

@@ -1,0 +1,14 @@
+name=Nimble Obstructionist
+image=http://magiccards.info/scans/en/hou/40.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Bird,Wizard
+cost={2}{U}
+pt=3/1
+ability=Flash;\
+        Flying;\
+        Cycling {2}{U};\
+        When you cycle SN, counter target activated or triggered ability you don't control.
+timing=flash
+oracle=Flash\nFlying\nCycling {2}{U}\nWhen you cycle Nimble Obstructionist, counter target activated or triggered ability you don't control.

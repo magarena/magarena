@@ -1,0 +1,12 @@
+name=Torment of Scarabs
+image=http://magiccards.info/scans/en/hou/78.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura,Curse
+cost={3}{B}
+ability=Enchant player;\
+        At the beginning of enchanted player's upkeep, that player loses 3 life unless he or she sacrifices a nonland permanent or discards a card.
+timing=aura
+enchant=default,creature
+oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player loses 3 life unless he or she sacrifices a nonland permanent or discards a card.

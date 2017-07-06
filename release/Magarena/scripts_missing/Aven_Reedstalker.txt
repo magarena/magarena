@@ -1,0 +1,12 @@
+name=Aven Reedstalker
+image=http://magiccards.info/scans/en/hou/30.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Warrior
+cost={3}{U}
+pt=2/3
+ability=Flash;\
+        Flying
+timing=flash
+oracle=Flash\nFlying

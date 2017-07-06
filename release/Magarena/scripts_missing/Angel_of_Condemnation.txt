@@ -1,0 +1,13 @@
+name=Angel of Condemnation
+image=http://magiccards.info/scans/en/hou/3.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={2}{W}{W}
+pt=3/3
+ability=Flying, vigilance;\
+        {2}{W}, {T}: Exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.;\
+        {2}{W}, {T}, Exert SN: Exile another target creature until SN leaves the battlefield.
+timing=main
+oracle=Flying, vigilance\n{2}{W}, {T}: Exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.\n{2}{W}, {T}, Exert Angel of Condemnation: Exile another target creature until Angel of Condemnation leaves the battlefield.

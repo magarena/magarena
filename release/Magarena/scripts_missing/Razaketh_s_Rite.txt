@@ -1,0 +1,10 @@
+name=Razaketh's Rite
+image=http://magiccards.info/scans/en/hou/74.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+ability=Cycling {B}
+effect=Search your library for a card and put that card into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for a card and put that card into your hand. Then shuffle your library.\nCycling {B}

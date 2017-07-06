@@ -1,0 +1,10 @@
+name=Crook of Condemnation
+image=http://magiccards.info/scans/en/hou/159.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability={1}, {T}: Exile target card from a graveyard.;\
+        {1}, Exile SN: Exile all cards from all graveyards.
+timing=artifact
+oracle={1}, {T}: Exile target card from a graveyard.\n{1}, Exile Crook of Condemnation: Exile all cards from all graveyards.

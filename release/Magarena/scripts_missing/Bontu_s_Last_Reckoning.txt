@@ -1,0 +1,9 @@
+name=Bontu's Last Reckoning
+image=http://magiccards.info/scans/en/hou/60.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{B}{B}
+effect=Destroy all creatures. Lands you control don't untap during your next untap step.
+timing=main
+oracle=Destroy all creatures. Lands you control don't untap during your next untap step.

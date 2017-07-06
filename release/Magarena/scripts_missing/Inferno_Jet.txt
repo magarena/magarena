@@ -1,0 +1,10 @@
+name=Inferno Jet
+image=http://magiccards.info/scans/en/hou/99.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={5}{R}
+ability=Cycling {2}
+effect=SN deals 6 damage to target opponent.
+timing=main
+oracle=Inferno Jet deals 6 damage to target opponent.\nCycling {2}

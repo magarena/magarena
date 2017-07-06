@@ -1,0 +1,12 @@
+name=Striped Riverwinder
+image=http://magiccards.info/scans/en/hou/48.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={6}{U}
+pt=5/5
+ability=Hexproof;\
+        Cycling {U}
+timing=main
+oracle=Hexproof\nCycling {U}

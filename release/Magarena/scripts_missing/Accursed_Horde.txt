@@ -1,0 +1,11 @@
+name=Accursed Horde
+image=http://magiccards.info/scans/en/hou/56.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=3/3
+ability={1}{B}: Target attacking Zombie gains indestructible until end of turn.
+timing=main
+oracle={1}{B}: Target attacking Zombie gains indestructible until end of turn.

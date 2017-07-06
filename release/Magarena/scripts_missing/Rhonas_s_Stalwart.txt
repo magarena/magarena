@@ -1,0 +1,11 @@
+name=Rhonas's Stalwart
+image=http://magiccards.info/scans/en/hou/133.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{G}
+pt=2/2
+ability=You may exert SN as it attacks. When you do, it gets +1/+1 until end of turn and can't be blocked by creatures with power 2 or less this turn.
+timing=main
+oracle=You may exert Rhonas's Stalwart as it attacks. When you do, it gets +1/+1 until end of turn and can't be blocked by creatures with power 2 or less this turn.

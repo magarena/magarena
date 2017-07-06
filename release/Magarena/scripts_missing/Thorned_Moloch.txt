@@ -1,0 +1,12 @@
+name=Thorned Moloch
+image=http://magiccards.info/scans/en/hou/108.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Lizard
+cost={2}{R}
+pt=2/2
+ability=Prowess;\
+        SN has first strike as long as it's attacking.
+timing=main
+oracle=Prowess\nThorned Moloch has first strike as long as it's attacking.

@@ -1,0 +1,10 @@
+name=Countervailing Winds
+image=http://magiccards.info/scans/en/hou/32.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+ability=Cycling {2}
+effect=Counter target spell unless its controller pays {1} for each card in your graveyard.
+timing=counter
+oracle=Counter target spell unless its controller pays {1} for each card in your graveyard.\nCycling {2}

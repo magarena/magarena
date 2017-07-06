@@ -1,0 +1,10 @@
+name=Solemnity
+image=http://magiccards.info/scans/en/hou/22.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=Players can't get counters.;\
+        Counters can't be put on artifacts, creatures, enchantments, or lands.
+timing=enchantment
+oracle=Players can't get counters.\nCounters can't be put on artifacts, creatures, enchantments, or lands.

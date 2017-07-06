@@ -1,0 +1,9 @@
+name=Life Goes On
+image=http://magiccards.info/scans/en/hou/121.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={G}
+effect=You gain 4 life. If a creature died this turn, you gain 8 life instead.
+timing=removal
+oracle=You gain 4 life. If a creature died this turn, you gain 8 life instead.

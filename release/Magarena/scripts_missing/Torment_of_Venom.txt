@@ -1,0 +1,9 @@
+name=Torment of Venom
+image=http://magiccards.info/scans/en/hou/79.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}{B}
+effect=Put three -1/-1 counters on target creature. Its controller loses 3 life unless he or she sacrifices another nonland permanent or discards a card.
+timing=removal
+oracle=Put three -1/-1 counters on target creature. Its controller loses 3 life unless he or she sacrifices another nonland permanent or discards a card.

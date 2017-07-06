@@ -1,0 +1,10 @@
+name=Abandoned Sarcophagus
+image=http://magiccards.info/scans/en/hou/158.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=You may cast nonland cards with cycling from your graveyard.;\
+        If a card with cycling would be put into your graveyard from anywhere and it wasn't cycled, exile it instead.
+timing=artifact
+oracle=You may cast nonland cards with cycling from your graveyard.\nIf a card with cycling would be put into your graveyard from anywhere and it wasn't cycled, exile it instead.

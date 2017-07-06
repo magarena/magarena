@@ -1,0 +1,13 @@
+name=Nissa, Genesis Mage
+image=http://magiccards.info/scans/en/hou/200.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Nissa
+cost={5}{G}{G}
+loyalty=5
+ability=+2: Untap up to two target creatures and up to two target lands.;\
+        −3: Target creature gets +5/+5 until end of turn.;\
+        −10: Look at the top ten cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield. Put the rest on the bottom of your library in a random order.
+timing=main
+oracle=+2: Untap up to two target creatures and up to two target lands.\n−3: Target creature gets +5/+5 until end of turn.\n−10: Look at the top ten cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield. Put the rest on the bottom of your library in a random order.

@@ -1,0 +1,12 @@
+name=Ominous Sphinx
+image=http://magiccards.info/scans/en/hou/41.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Sphinx
+cost={3}{U}{U}
+pt=4/4
+ability=Flying;\
+        Whenever you cycle or discard a card, target creature an opponent controls gets -2/-0 until end of turn.
+timing=main
+oracle=Flying\nWhenever you cycle or discard a card, target creature an opponent controls gets -2/-0 until end of turn.

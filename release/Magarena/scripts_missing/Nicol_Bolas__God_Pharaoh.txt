@@ -1,0 +1,14 @@
+name=Nicol Bolas, God-Pharaoh
+image=http://magiccards.info/scans/en/hou/140.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Bolas
+cost={4}{U}{B}{R}
+loyalty=7
+ability=+2: Target opponent exiles cards from the top of his or her library until he or she exiles a nonland card. Until end of turn, you may cast that card without paying its mana cost.;\
+        +1: Each opponent exiles two cards from his or her hand.;\
+        −4: SN deals 7 damage to target opponent or creature an opponent controls.;\
+        −12: Exile each nonland permanent your opponents control.
+timing=main
+oracle=+2: Target opponent exiles cards from the top of his or her library until he or she exiles a nonland card. Until end of turn, you may cast that card without paying its mana cost.\n+1: Each opponent exiles two cards from his or her hand.\n−4: Nicol Bolas, God-Pharaoh deals 7 damage to target opponent or creature an opponent controls.\n−12: Exile each nonland permanent your opponents control.

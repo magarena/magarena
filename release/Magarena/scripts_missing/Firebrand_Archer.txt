@@ -1,0 +1,11 @@
+name=Firebrand Archer
+image=http://magiccards.info/scans/en/hou/92.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Archer
+cost={1}{R}
+pt=2/1
+ability=Whenever you cast a noncreature spell, SN deals 1 damage to each opponent.
+timing=main
+oracle=Whenever you cast a noncreature spell, Firebrand Archer deals 1 damage to each opponent.

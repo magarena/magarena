@@ -1,0 +1,12 @@
+name=Burning-Fist Minotaur
+image=http://magiccards.info/scans/en/hou/85.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Minotaur,Wizard
+cost={1}{R}
+pt=2/1
+ability=First strike;\
+        {1}{R}, Discard a card: SN gets +2/+0 until end of turn.
+timing=main
+oracle=First strike\n{1}{R}, Discard a card: Burning-Fist Minotaur gets +2/+0 until end of turn.

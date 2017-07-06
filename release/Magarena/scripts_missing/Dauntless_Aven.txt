@@ -1,0 +1,12 @@
+name=Dauntless Aven
+image=http://magiccards.info/scans/en/hou/7.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Warrior
+cost={2}{W}
+pt=2/1
+ability=Flying;\
+        Whenever SN attacks, untap target creature you control.
+timing=main
+oracle=Flying\nWhenever Dauntless Aven attacks, untap target creature you control.

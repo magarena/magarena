@@ -1,0 +1,10 @@
+name=Dunes of the Dead
+image=http://magiccards.info/scans/en/hou/175.jpg
+value=2.500
+rarity=U
+type=Land
+subtype=Desert
+ability={T}: Add {C} to your mana pool.;\
+        When SN is put into a graveyard from the battlefield, create a 2/2 black Zombie creature token.
+timing=land
+oracle={T}: Add {C} to your mana pool.\nWhen Dunes of the Dead is put into a graveyard from the battlefield, create a 2/2 black Zombie creature token.

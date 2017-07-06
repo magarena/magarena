@@ -1,0 +1,10 @@
+name=Authority
+image=http://magiccards.info/scans/en/hou/152b.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{W}
+ability=Aftermath
+effect=Tap up to two target creatures your opponents control. Creatures you control gain vigilance until end of turn.
+timing=main
+oracle=Aftermath\nTap up to two target creatures your opponents control. Creatures you control gain vigilance until end of turn.

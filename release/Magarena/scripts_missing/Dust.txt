@@ -1,0 +1,10 @@
+name=Dust
+image=http://magiccards.info/scans/en/hou/155b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}
+ability=Aftermath
+effect=Exile any number of target creatures that have -1/-1 counters on them.
+timing=main
+oracle=Aftermath\nExile any number of target creatures that have -1/-1 counters on them.

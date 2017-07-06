@@ -1,0 +1,12 @@
+name=Eternal of Harsh Truths
+image=http://magiccards.info/scans/en/hou/34.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Cleric
+cost={2}{U}
+pt=1/3
+ability=Afflict 2;\
+        Whenever SN attacks and isn't blocked, draw a card.
+timing=main
+oracle=Afflict 2\nWhenever Eternal of Harsh Truths attacks and isn't blocked, draw a card.

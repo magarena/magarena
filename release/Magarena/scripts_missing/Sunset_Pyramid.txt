@@ -1,0 +1,11 @@
+name=Sunset Pyramid
+image=http://magiccards.info/scans/en/hou/166.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability=SN enters the battlefield with three brick counters on it.;\
+        {2}, {T}, Remove a brick counter from SN: Draw a card.;\
+        {2}, {T}: Scry 1.
+timing=artifact
+oracle=Sunset Pyramid enters the battlefield with three brick counters on it.\n{2}, {T}, Remove a brick counter from Sunset Pyramid: Draw a card.\n{2}, {T}: Scry 1.

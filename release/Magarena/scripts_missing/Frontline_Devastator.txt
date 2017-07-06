@@ -1,0 +1,12 @@
+name=Frontline Devastator
+image=http://magiccards.info/scans/en/hou/93.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Minotaur,Warrior
+cost={3}{R}
+pt=3/3
+ability=Afflict 2;\
+        {1}{R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=Afflict 2\n{1}{R}: Frontline Devastator gets +1/+0 until end of turn.

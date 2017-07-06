@@ -1,0 +1,10 @@
+name=Chance
+image=http://magiccards.info/scans/en/hou/153b.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{R}
+ability=Aftermath
+effect=Discard any number of cards, then draw that many cards.
+timing=main
+oracle=Aftermath\nDiscard any number of cards, then draw that many cards.

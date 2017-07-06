@@ -1,0 +1,11 @@
+name=Ramunap Ruins
+image=http://magiccards.info/scans/en/hou/181.jpg
+value=2.500
+rarity=U
+type=Land
+subtype=Desert
+ability={T}: Add {C} to your mana pool.;\
+        {T}, Pay 1 life: Add {R} to your mana pool.;\
+        {2}{R}{R}, {T}, Sacrifice a Desert: SN deals 2 damage to each opponent.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{T}, Pay 1 life: Add {R} to your mana pool.\n{2}{R}{R}, {T}, Sacrifice a Desert: Ramunap Ruins deals 2 damage to each opponent.
