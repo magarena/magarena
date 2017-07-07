@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.Transparency;
+import java.awt.event.HierarchyEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
@@ -99,14 +100,28 @@ public abstract class AbstractThrobber extends JComponent {
     }
 
     protected AbstractThrobber(final Init<?> init) {
-
         this.isDebugMode = init.isDebugMode;
         this.spinDirection = init.spinDirection;
         this.isAntiAliasOn = init.antiAlias;
         this.setForeground(init.color);
         isColorSet = (init.color != null);
+        addHierarchyListener((HierarchyEvent e) -> {
+            if ((e.getChangeFlags() & HierarchyEvent.SHOWING_CHANGED) == HierarchyEvent.SHOWING_CHANGED) {
+                doOnShowingChanged(init.spinPeriod);
+            }
+        });
+    }
 
-        startTimeline(init.spinPeriod);
+    private void doOnShowingChanged(int spinPeriod) {
+        if (isShowing()) {
+            if (timeline.getState() == Timeline.TimelineState.IDLE) {
+                startTimeline(spinPeriod);
+            } else {
+                timeline.resume();
+            }
+        } else {
+            timeline.suspend();
+        }
     }
 
     /**
@@ -118,9 +133,10 @@ public abstract class AbstractThrobber extends JComponent {
 
     private void paintNextFrame(final int angle) {
 
-        // draw the next frame to an off-screen image buffer on same
-        // thread as timeline thread so that the impact on the EDT is
-        // kept to a minimum.
+//        System.out.println("paintNextFrame : " + angle);
+
+        // draw the next frame to an off-screen image buffer on timeline
+        // thread to minimize work required on EDT paintComponent().
         assert SwingUtilities.isEventDispatchThread() == false;
         BufferedImage image = getNextFrameImage(angle);
 
@@ -201,17 +217,4 @@ public abstract class AbstractThrobber extends JComponent {
         g.drawLine(cX, 0, cX, H);
         g.drawRect(0, 0, W - 1, H - 1);
     }
-
-    @Override
-    public void setVisible(boolean b) {
-        super.setVisible(b);
-        if (timeline != null) {
-            if (b && timeline.getState() == Timeline.TimelineState.SUSPENDED) {
-                timeline.resume();
-            } else if (!b && timeline.getState() == Timeline.TimelineState.PLAYING_FORWARD) {
-                timeline.suspend();
-            }
-        }
-    }
-
 }
