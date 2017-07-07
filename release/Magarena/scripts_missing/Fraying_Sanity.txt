@@ -8,5 +8,6 @@ cost={2}{U}
 ability=Enchant player;\
         At the beginning of each end step, enchanted player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards put into that graveyard from anywhere this turn.
 timing=aura
-enchant=default,creature
+enchant=default,neg player
 oracle=Enchant player\nAt the beginning of each end step, enchanted player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards put into that graveyard from anywhere this turn.
+status=not supported: enchant-player

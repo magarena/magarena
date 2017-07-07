@@ -10,3 +10,4 @@ ability=Trample;\
         When SN enters the battlefield, scry 3, then reveal the top card of your library. You gain life equal to that card's converted mana cost.
 timing=main
 oracle=Trample\nWhen Sifter Wurm enters the battlefield, scry 3, then reveal the top card of your library. You gain life equal to that card's converted mana cost.
+status=not supported: ordering-lib-top

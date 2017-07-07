@@ -9,5 +9,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, if you control a Desert or there is a Desert card in your graveyard, you gain 3 life.;\
         Enchanted creature can't attack or block, and its activated abilities can't be activated.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nWhen Desert's Hold enters the battlefield, if you control a Desert or there is a Desert card in your graveyard, you gain 3 life.\nEnchanted creature can't attack or block, and its activated abilities can't be activated.

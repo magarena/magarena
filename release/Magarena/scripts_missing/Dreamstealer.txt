@@ -11,3 +11,4 @@ ability=Menace;\
         Eternalize {4}{B}{B}
 timing=main
 oracle=Menace\nWhenever Dreamstealer deals combat damage to a player, that player discards that many cards.\nEternalize {4}{B}{B}
+status=not supported: blocking-restriction

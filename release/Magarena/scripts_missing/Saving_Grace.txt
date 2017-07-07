@@ -10,5 +10,5 @@ ability=Flash;\
         When SN enters the battlefield, all damage that would be dealt this turn to you and permanents you control is dealt to enchanted creature instead.;\
         Enchanted creature gets +0/+3.
 timing=flash
-enchant=default,creature
+enchant=toughness,creature you control
 oracle=Flash\nEnchant creature you control\nWhen Saving Grace enters the battlefield, all damage that would be dealt this turn to you and permanents you control is dealt to enchanted creature instead.\nEnchanted creature gets +0/+3.

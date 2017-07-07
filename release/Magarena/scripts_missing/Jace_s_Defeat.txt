@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Counter target blue spell. If it was a Jace planeswalker spell, scry 2.
 timing=counter
 oracle=Counter target blue spell. If it was a Jace planeswalker spell, scry 2.
+status=not supported: ordering-lib-top

@@ -7,3 +7,4 @@ cost={3}{B}
 effect=Exile target creature. If that creature was a God, its controller reveals his or her hand and exiles all cards from it with the same name as that creature.
 timing=removal
 oracle=Exile target creature. If that creature was a God, its controller reveals his or her hand and exiles all cards from it with the same name as that creature.
+status=not supported: reveal-hand

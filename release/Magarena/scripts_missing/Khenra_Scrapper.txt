@@ -10,3 +10,4 @@ ability=Menace;\
         You may exert SN as it attacks. When you do, it gets +2/+0 until end of turn.
 timing=main
 oracle=Menace\nYou may exert Khenra Scrapper as it attacks. When you do, it gets +2/+0 until end of turn.
+status=not supported: blocking-restriction

@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Untap target creature. It gets +2/+2 until end of turn and can block an additional creature this turn.
 timing=removal
 oracle=Untap target creature. It gets +2/+2 until end of turn and can block an additional creature this turn.
+status=not supported: block-multiple
