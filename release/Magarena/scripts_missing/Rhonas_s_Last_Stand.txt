@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={G}{G}
-effect=Create a 5/4 green Snake creature token. Lands you control don't untap during your next untap step.
+effect=Create a 5/4 green Snake creature token.~Lands you control don't untap during your next untap step.
 timing=main
 oracle=Create a 5/4 green Snake creature token. Lands you control don't untap during your next untap step.
