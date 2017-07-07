@@ -8,3 +8,4 @@ ability=Cycling {W}
 effect=Tap up to two target creatures.
 timing=removal
 oracle=Tap up to two target creatures.\nCycling {W}
+status=not supported: multiple-targets

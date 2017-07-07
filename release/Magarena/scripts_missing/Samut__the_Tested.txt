@@ -11,3 +11,4 @@ ability=+1: Up to one target creature gains double strike until end of turn.;\
         −7: Search your library for up to two creature and/or planeswalker cards, put them onto the battlefield, then shuffle your library.
 timing=main
 oracle=+1: Up to one target creature gains double strike until end of turn.\n−2: Samut, the Tested deals 2 damage divided as you choose among one or two target creatures and/or players.\n−7: Search your library for up to two creature and/or planeswalker cards, put them onto the battlefield, then shuffle your library.
+status=not supported: multiple-targets

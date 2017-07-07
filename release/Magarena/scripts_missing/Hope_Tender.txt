@@ -10,3 +10,4 @@ ability={1}, {T}: Untap target land.;\
         {1}, {T}, Exert SN: Untap two target lands.
 timing=main
 oracle={1}, {T}: Untap target land.\n{1}, {T}, Exert Hope Tender: Untap two target lands.
+status=not supported: multiple-targets

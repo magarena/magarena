@@ -7,3 +7,4 @@ cost={X}{X}{U}{U}{U}
 effect=Exile X target creature cards from your graveyard. For each card exiled this way, create a token that's a copy of that card, except it's a 4/4 black Zombie.
 timing=main
 oracle=Exile X target creature cards from your graveyard. For each card exiled this way, create a token that's a copy of that card, except it's a 4/4 black Zombie.
+status=not supported: multiple-targets
