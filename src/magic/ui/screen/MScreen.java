@@ -110,11 +110,10 @@ public abstract class MScreen {
         if (needsCardData) {
 
             ScreenLoadingPanel loadingPanel = new ScreenLoadingPanel(r, needsCardData);
+            setMainContent(loadingPanel);
 
             loadingWorker = new ScreenLoaderWorker(loadingPanel);
             loadingWorker.execute();
-
-            setMainContent(loadingPanel);
 
         } else {
             r.run();

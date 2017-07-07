@@ -17,7 +17,7 @@ class ScreenLoadingPanel extends TexturedPanel {
 
     private final Runnable runnable;
     private final boolean needsCardData;
-    
+
     private AbstractThrobber throbber;
     private final JLabel lbl = new JLabel();
 
@@ -27,13 +27,13 @@ class ScreenLoadingPanel extends TexturedPanel {
         setDefaultProperties();
         setLayout();
     }
-    
+
     void setMessage(String text) {
         lbl.setText("... " + text + " ...");
     }
 
     private void setLayout() {
-        setLayout(new MigLayout("flowy, ay center", "[fill, grow, center]"));
+        setLayout(new MigLayout("flowy, ax center, ay center", "[center]"));
         add(throbber);
         add(lbl);
     }
@@ -46,7 +46,7 @@ class ScreenLoadingPanel extends TexturedPanel {
 
         throbber = new ImageThrobber.Builder(
                 MagicImages.loadImage("round-shield.png")).build();
-        
+
         lbl.setFont(MagicFont.BelerenBold.get().deriveFont(22f));
         lbl.setForeground(Color.WHITE);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
