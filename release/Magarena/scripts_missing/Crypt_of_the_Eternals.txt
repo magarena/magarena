@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, you gain 1 life.;\
         {1}, {T}: Add {U}, {B}, or {R} to your mana pool.
 timing=land
 oracle=When Crypt of the Eternals enters the battlefield, you gain 1 life.\n{T}: Add {C} to your mana pool.\n{1}, {T}: Add {U}, {B}, or {R} to your mana pool.
+status=not supported: mana-ability-with-choice
