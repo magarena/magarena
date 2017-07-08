@@ -6,6 +6,6 @@ type=Creature
 subtype=Hellion
 cost={5}{R}{R}
 pt=6/6
-ability=When SN enters the battlefield, it deals 3 damage to each other creature.
+ability=When SN enters the battlefield, SN deals 3 damage to each other creature.
 timing=main
 oracle=When Chaos Maw enters the battlefield, it deals 3 damage to each other creature.
