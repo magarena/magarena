@@ -303,6 +303,15 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition YouControlOrGraveyardSubType(final MagicSubType filter) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().controlsPermanent(filter) || source.getController().getGraveyard().containsSubType(filter);
+            }
+        };
+    }
+
     public static MagicCondition PlayerControlsSource(final MagicPlayer player) {
         final long id = player.getId();
         return new MagicCondition() {

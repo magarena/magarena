@@ -6,17 +6,24 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import magic.model.ARG;
-import magic.model.MagicPermanent;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
+import magic.model.MagicPermanent;
+import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.event.MagicMatchedCostEvent;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 public enum MagicConditionParser {
 
+    ControlOrGraveyardDesert("you control a desert or there is a desert card in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.YouControlOrGraveyardSubType(MagicSubType.Desert);
+        }
+    },
     YouControlOr("you control a(n)? " + ARG.WORD1 +" or a(n)? "+ ARG.WORD2) {
         @Override
         public MagicCondition toCondition(final Matcher arg) {

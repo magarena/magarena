@@ -127,6 +127,15 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         return false;
     }
 
+    public boolean containsSubType(final MagicSubType subType) {
+        for (final MagicCard card : this) {
+            if (card.hasSubType(subType)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean contains(final MagicCard card) {
         for (final MagicCard cardList : this) {
             if (cardList.equals(card)) {
