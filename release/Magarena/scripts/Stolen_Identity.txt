@@ -4,6 +4,6 @@ value=3.652
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
-effect=Create a token that's a copy of target artifact or creature.
+effect=Create a token that's a copy of target artifact or creature.~Cipher
 timing=main
 oracle=Create a token that's a copy of target artifact or creature.\nCipher
