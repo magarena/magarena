@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{R}
-effect=Put a -1/-1 counter on target creature. SN deals 2 damage to that creature's controller.
+effect=Put a -1/-1 counter on target creature.~SN deals 2 damage to that creature's controller.
 timing=removal
 oracle=Put a -1/-1 counter on target creature. Blur of Blades deals 2 damage to that creature's controller.
