@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}
 pt=2/2
-ability={T}: Add {G} or {U} to your mana pool. If you control a Nissa planeswalker, you gain 2 life.
+ability={T}: Add {G} or {U} to your mana pool.~If you control a Nissa planeswalker, you gain 2 life.
 timing=main
 oracle={T}: Add {G} or {U} to your mana pool. If you control a Nissa planeswalker, you gain 2 life.

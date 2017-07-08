@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}
-effect=All creatures lose indestructible until end of turn. SN deals 5 damage to each creature and each non-Bolas planeswalker.
+effect=All creatures lose indestructible until end of turn.~SN deals 5 damage to each creature and each non-Bolas planeswalker.
 timing=main
 oracle=All creatures lose indestructible until end of turn. Hour of Devastation deals 5 damage to each creature and each non-Bolas planeswalker.
