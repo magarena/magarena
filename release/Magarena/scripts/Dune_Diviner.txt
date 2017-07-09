@@ -9,4 +9,3 @@ pt=2/3
 ability={1}, Tap an untapped Desert you control: You gain 1 life.
 timing=main
 oracle={1}, Tap an untapped Desert you control: You gain 1 life.
-#Error if mana payment from the only Desert
