@@ -2,6 +2,7 @@ package magic.ui.screen.duel.setup;
 
 import magic.data.DuelConfig;
 import magic.exception.InvalidDeckException;
+import magic.model.MagicDuel;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.WikiPage;
@@ -40,7 +41,8 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
             updateDuelConfig();
             ScreenController.closeActiveScreen(false);
             try {
-                ScreenController.getFrame().newDuel(duelConfig);
+                MagicDuel.newDuel();
+                ScreenController.showDuelScreen();
             } catch (InvalidDeckException ex) {
                 ScreenController.showWarningMessage(MText.get(_S4, ex.getMessage()));
             }

@@ -12,13 +12,11 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
-import magic.data.DuelConfig;
 import magic.data.OSXAdapter;
 import magic.exception.DesktopNotSupportedException;
 import magic.game.state.GameLoader;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
-import magic.model.MagicDuel;
 import magic.model.MagicGameLog;
 import magic.translate.MText;
 import magic.ui.helpers.DesktopHelper;
@@ -36,7 +34,6 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
 
     // translatable strings
     private static final String _S1 = "F11 : full screen";
-    private static final String _S2 = "No saved duel found.";
     private static final String _S3 = "%s's deck is illegal.";
     private static final String _S4 = "Are you sure you want to quit Magarena?";
     private static final String _S5 = "Confirm Quit to Desktop";
@@ -48,7 +45,6 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase(Locale.ENGLISH).startsWith("mac os x");
 
     private final MagicFramePanel contentPanel;
-    private MagicDuel duel;
 
     public MagicFrame(final String frameTitle) {
 
@@ -89,43 +85,6 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         });
     }
 
-    public void showDuel() {
-        if (duel!=null) {
-            ScreenController.showDuelDecksScreen(duel);
-            if (MagicSystem.isAiVersusAi()) {
-                if (!duel.isFinished()) {
-                    nextGame();
-                } else {
-                    newDuel(DuelConfig.getInstance());
-                }
-            }
-        }
-    }
-
-    public void newDuel(final DuelConfig configuration) {
-        duel = new MagicDuel(configuration);
-        duel.initialize();
-        showDuel();
-    }
-
-    public void loadDuel() {
-        final File duelFile=MagicDuel.getLatestDuelFile();
-        if (duelFile.exists()) {
-            duel=new MagicDuel(DuelConfig.getInstance());
-            duel.load(duelFile);
-            showDuel();
-        } else {
-            ScreenController.showWarningMessage(MText.get(_S2));
-        }
-    }
-
-    public void restartDuel() {
-        if (duel!=null) {
-            duel.restart();
-            showDuel();
-        }
-    }
-
     public boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
         final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
@@ -136,10 +95,6 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
         }
 
         return true;
-    }
-
-    public void nextGame() {
-        ScreenController.showDuelGameScreen(duel);
     }
 
     /**
@@ -197,14 +152,6 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     public void quitToDesktop(final boolean confirmQuit) {
         this.confirmQuitToDesktop = confirmQuit;
         processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-    }
-
-    /**
-     *
-     */
-    public void closeDuelScreen() {
-        ScreenController.closeActiveScreen(false);
-        showDuel();
     }
 
     private void doScreenshot() {

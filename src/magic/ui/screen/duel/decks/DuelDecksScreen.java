@@ -174,7 +174,8 @@ public class DuelDecksScreen extends HeaderFooterScreen
 
     private void doRestartDuel() {
         try {
-            ScreenController.getFrame().restartDuel();
+            MagicDuel.restartDuel();
+            ScreenController.showDuelScreen();
         } catch (InvalidDeckException ex) {
             ScreenController.showWarningMessage(ex.getMessage());
         }

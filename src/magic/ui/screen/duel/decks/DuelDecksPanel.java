@@ -206,7 +206,7 @@ class DuelDecksPanel extends TexturedPanel
         players[1].setDeckProfile(deckProfile1);
         players[1].setDeck(deck1);
         ScreenController.closeActiveScreen(false);
-        ScreenController.getFrame().showDuel();
+        ScreenController.showDuelScreen();
     }
 
     private ActionBarButton getSwapDecksButton() {

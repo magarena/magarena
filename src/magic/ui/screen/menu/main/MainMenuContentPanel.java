@@ -1,6 +1,7 @@
 package magic.ui.screen.menu.main;
 
 import magic.exception.InvalidDeckException;
+import magic.model.MagicDuel;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.screen.menu.NewMenuScreenContentPanel;
@@ -16,6 +17,7 @@ class MainMenuContentPanel extends NewMenuScreenContentPanel {
     private static final String _S5 = "Deck editor";
     private static final String _S6 = "Settings";
     private static final String _S7 = "Help";
+    private static final String _S8 = "No saved duel found.";
 
     MainMenuContentPanel() {
         setMenuItems(MagicSystem.isDevMode());
@@ -38,7 +40,12 @@ class MainMenuContentPanel extends NewMenuScreenContentPanel {
 
     private void doResumeDuel() {
         try {
-            ScreenController.getFrame().loadDuel();
+            MagicDuel.resumeDuel();
+            if (MagicDuel.isDuelReady()) {
+                ScreenController.showDuelDecksScreen(MagicDuel.instance);
+            } else {
+                ScreenController.showWarningMessage(MText.get(_S8));
+            }
         } catch (InvalidDeckException ex) {
             ScreenController.showWarningMessage(ex.getMessage());
         }

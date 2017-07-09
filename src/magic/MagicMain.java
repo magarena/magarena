@@ -16,6 +16,7 @@ import magic.exception.InvalidDeckException;
 import magic.game.state.GameLoader;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
+import magic.model.MagicDuel;
 import magic.model.player.AiProfile;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
@@ -227,7 +228,8 @@ public class MagicMain {
         System.out.println("     " + config.getPlayerConfig(1).getDeck().getQualifiedName());
         System.out.println("Threads : " + MagicAI.getMaxThreads());
 
-        ScreenController.getFrame().newDuel(config);
+        MagicDuel.newDuel();
+        ScreenController.showDuelScreen();
     }
 
     private static void startUI(CommandLineArgs cmdline) {

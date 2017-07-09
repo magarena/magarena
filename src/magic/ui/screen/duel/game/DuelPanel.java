@@ -102,7 +102,7 @@ public final class DuelPanel extends JPanel {
     }
 
     public void close() {
-        ScreenController.getFrame().closeDuelScreen();
+        ScreenController.closeDuelScreen();
     }
 
     @Override

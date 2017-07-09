@@ -22,6 +22,8 @@ import magic.ui.screen.MScreen;
 import magic.ui.screen.about.AboutScreen;
 import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.ui.screen.card.script.CardScriptScreen;
+import magic.ui.screen.cardflow.CardFlowScreen;
+import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.screen.deck.DeckScreen;
 import magic.ui.screen.deck.editor.DeckEditorScreen;
 import magic.ui.screen.deck.editor.DeckEditorSplitScreen;
@@ -54,8 +56,6 @@ import magic.ui.screen.player.PlayerScreen;
 import magic.ui.screen.readme.ReadmeScreen;
 import magic.ui.screen.stats.StatsScreen;
 import magic.ui.screen.test.TestScreen;
-import magic.ui.screen.cardflow.CardFlowScreen;
-import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.widget.duel.choice.MulliganChoicePanel;
 import magic.utility.MagicSystem;
 
@@ -367,6 +367,26 @@ public final class ScreenController {
 
     public static boolean isActive(MScreen aScreen) {
         return screens.peek() == aScreen;
+    }
+
+    public static void showDuelScreen() {
+        if (MagicDuel.isDuelReady()) {
+            showDuelDecksScreen(MagicDuel.instance);
+            if (MagicSystem.isAiVersusAi()) {
+                if (MagicDuel.instance.isNotFinished()) {
+                    // run next game.
+                    showDuelGameScreen(MagicDuel.instance);
+                } else {
+                    MagicDuel.newDuel();
+                    showDuelScreen();
+                }
+            }
+        }
+    }
+
+    public static void closeDuelScreen() {
+        closeActiveScreen(false);
+        showDuelScreen();
     }
 
 }
