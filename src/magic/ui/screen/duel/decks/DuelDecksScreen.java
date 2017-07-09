@@ -44,20 +44,27 @@ public class DuelDecksScreen extends HeaderFooterScreen
     private static final String _S13 = "Shows complete deck using tiled card images.";
     private static final String _S14 = "%s's deck is illegal.\n\n%s";
 
-    private final DuelSettingsPanel settingsPanel;
-    private final DuelDecksPanel screenContent;
-    private MagicGame nextGame = null;
-    private final StartGameButton nextGameButton;
+    // UI components
+    private DuelSettingsPanel settingsPanel;
+    private DuelDecksPanel screenContent;
+    private StartGameButton nextGameButton;
     private NewGameWorker worker;
-    private final OptionsPanel optionsPanel;
+    private OptionsPanel optionsPanel;
+
+    private final MagicDuel thisDuel;
+    private MagicGame nextGame;
 
     public DuelDecksScreen(final MagicDuel duel) {
         super(MText.get(_S1));
+        thisDuel = duel;
+        useCardsLoadingScreen(this::initUI);
+    }
 
-        screenContent = new DuelDecksPanel(duel);
+    private void initUI() {
+        screenContent = new DuelDecksPanel(thisDuel);
         nextGameButton = new StartGameButton(getStartDuelCaption(), getPlayGameAction());
 
-        if (duel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
+        if (thisDuel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
             saveDuel();
         }
 
@@ -66,17 +73,17 @@ public class DuelDecksScreen extends HeaderFooterScreen
         setMainContent(screenContent);
 
         if (MagicSystem.isAiVersusAi() == false) {
-            doGameSetupInBackground(duel);
+            doGameSetupInBackground(thisDuel);
             screenContent.addPropertyChangeListener(
                 DuelDecksPanel.CP_DECK_CHANGED,
-                (e) -> { doGameSetupInBackground(duel); }
+                (e) -> { doGameSetupInBackground(thisDuel); }
             );
         }
 
-        final DuelConfig config = duel.getConfiguration();
+        final DuelConfig config = thisDuel.getConfiguration();
 
         settingsPanel = new DuelSettingsPanel(config);
-        settingsPanel.setEnabled(duel.getGamesPlayed() == 0);
+        settingsPanel.setEnabled(thisDuel.getGamesPlayed() == 0);
         settingsPanel.setBorder(null);
         settingsPanel.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
         settingsPanel.addPropertyChangeListener(
@@ -284,5 +291,10 @@ public class DuelDecksScreen extends HeaderFooterScreen
             return true;
         }
         return false;
+    }
+
+    @Override
+    protected boolean needsPlayableCards() {
+        return true;
     }
 }
