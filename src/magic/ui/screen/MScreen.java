@@ -30,7 +30,7 @@ public abstract class MScreen {
 
     private JComponent contentPanel = TEMP_PANEL;
     private WikiPage wikiPage = WikiPage.HOME;
-    private ScreenLoaderWorker loadingWorker;
+    private CardsLoadingWorker loadingWorker;
 
     public MScreen() {
         screen.setOpaque(false);
@@ -112,7 +112,7 @@ public abstract class MScreen {
             CardsLoadingPanel loadingPanel = new CardsLoadingPanel(r, needsCardData);
             setMainContent(loadingPanel);
 
-            loadingWorker = new ScreenLoaderWorker(loadingPanel);
+            loadingWorker = new CardsLoadingWorker(loadingPanel);
             loadingWorker.execute();
 
         } else {

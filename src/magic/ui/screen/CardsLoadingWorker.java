@@ -5,7 +5,7 @@ import javax.swing.SwingWorker;
 import magic.translate.MText;
 import magic.utility.MagicSystem;
 
-class ScreenLoaderWorker extends SwingWorker<Void, String> {
+class CardsLoadingWorker extends SwingWorker<Void, String> {
 
     // translatable strings
     private static final String _S1 = "loading card data";
@@ -15,7 +15,7 @@ class ScreenLoaderWorker extends SwingWorker<Void, String> {
 
     private final CardsLoadingPanel statusPanel;
 
-    ScreenLoaderWorker(CardsLoadingPanel p) {
+    CardsLoadingWorker(CardsLoadingPanel p) {
         this.statusPanel = p;
         this.runnable = p.getRunnable();
         this.needsCardData = p.isCardDataNeeded();
