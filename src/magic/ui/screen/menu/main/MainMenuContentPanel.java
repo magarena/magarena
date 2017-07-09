@@ -42,7 +42,7 @@ class MainMenuContentPanel extends NewMenuScreenContentPanel {
         try {
             MagicDuel.resumeDuel();
             if (MagicDuel.isDuelReady()) {
-                ScreenController.showDuelDecksScreen(MagicDuel.instance);
+                ScreenController.showDuelDecksScreen();
             } else {
                 ScreenController.showWarningMessage(MText.get(_S8));
             }

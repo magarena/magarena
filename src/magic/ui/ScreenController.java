@@ -203,11 +203,11 @@ public final class ScreenController {
         showScreen(StatsScreen::new);
     }
 
-    public static void showDuelDecksScreen(final MagicDuel duel) {
+    public static void showDuelDecksScreen() {
         if (isDuelDecksScreenDisplayed()) {
             screens.pop();
         }
-        showScreen(() -> new DuelDecksScreen(duel));
+        showScreen(DuelDecksScreen::new);
     }
 
     public static void showMainMenuScreen() {
@@ -371,7 +371,7 @@ public final class ScreenController {
 
     public static void showDuelScreen() {
         if (MagicDuel.isDuelReady()) {
-            showDuelDecksScreen(MagicDuel.instance);
+            showDuelDecksScreen();
             if (MagicSystem.isAiVersusAi()) {
                 if (MagicDuel.instance.isNotFinished()) {
                     // run next game.

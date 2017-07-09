@@ -51,20 +51,21 @@ public class DuelDecksScreen extends HeaderFooterScreen
     private NewGameWorker worker;
     private OptionsPanel optionsPanel;
 
-    private final MagicDuel thisDuel;
     private MagicGame nextGame;
 
-    public DuelDecksScreen(final MagicDuel duel) {
+    public DuelDecksScreen() {
         super(MText.get(_S1));
-        thisDuel = duel;
         useCardsLoadingScreen(this::initUI);
     }
 
     private void initUI() {
-        screenContent = new DuelDecksPanel(thisDuel);
+
+        final MagicDuel duel = MagicDuel.instance;
+
+        screenContent = new DuelDecksPanel(duel);
         nextGameButton = new StartGameButton(getStartDuelCaption(), getPlayGameAction());
 
-        if (thisDuel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
+        if (duel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
             saveDuel();
         }
 
@@ -73,17 +74,17 @@ public class DuelDecksScreen extends HeaderFooterScreen
         setMainContent(screenContent);
 
         if (MagicSystem.isAiVersusAi() == false) {
-            doGameSetupInBackground(thisDuel);
+            doGameSetupInBackground(duel);
             screenContent.addPropertyChangeListener(
                 DuelDecksPanel.CP_DECK_CHANGED,
-                (e) -> { doGameSetupInBackground(thisDuel); }
+                (e) -> { doGameSetupInBackground(duel); }
             );
         }
 
-        final DuelConfig config = thisDuel.getConfiguration();
+        final DuelConfig config = duel.getConfiguration();
 
         settingsPanel = new DuelSettingsPanel(config);
-        settingsPanel.setEnabled(thisDuel.getGamesPlayed() == 0);
+        settingsPanel.setEnabled(duel.getGamesPlayed() == 0);
         settingsPanel.setBorder(null);
         settingsPanel.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
         settingsPanel.addPropertyChangeListener(
