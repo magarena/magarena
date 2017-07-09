@@ -81,6 +81,7 @@ Release 1.86 (June 30, 2017)
 lodici
 melvin
 ShawnieBoy
+LoubiTek
 
 - added French translation
 
