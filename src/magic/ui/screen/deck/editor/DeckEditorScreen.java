@@ -79,7 +79,7 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
     }
 
     @Override
-    protected boolean isCardDataRequired() {
+    protected boolean needsPlayableCards() {
         return true;
     }
 

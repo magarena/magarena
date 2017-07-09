@@ -30,7 +30,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
     }
 
     @Override
-    protected boolean isCardDataRequired() {
+    protected boolean needsPlayableCards() {
         return true;
     }
 

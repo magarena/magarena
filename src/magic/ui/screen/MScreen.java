@@ -93,7 +93,7 @@ public abstract class MScreen {
         this.wikiPage = wikiPage;
     }
 
-    protected boolean isCardDataRequired() {
+    protected boolean needsPlayableCards() {
         return false;
     }
 
@@ -105,7 +105,7 @@ public abstract class MScreen {
     protected final void useLoadingScreen(Runnable r) {
 
         final boolean needsCardData =
-                isCardDataRequired() && !MagicSystem.loadPlayable.isDone();
+                needsPlayableCards() && !MagicSystem.loadPlayable.isDone();
 
         if (needsCardData) {
 
