@@ -109,7 +109,7 @@ public abstract class MScreen {
 
         if (needsCardData) {
 
-            ScreenLoadingPanel loadingPanel = new ScreenLoadingPanel(r, needsCardData);
+            CardsLoadingPanel loadingPanel = new CardsLoadingPanel(r, needsCardData);
             setMainContent(loadingPanel);
 
             loadingWorker = new ScreenLoaderWorker(loadingPanel);

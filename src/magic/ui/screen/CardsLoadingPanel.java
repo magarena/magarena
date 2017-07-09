@@ -13,7 +13,7 @@ import magic.ui.widget.throbber.ImageThrobber;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class ScreenLoadingPanel extends TexturedPanel {
+class CardsLoadingPanel extends TexturedPanel {
 
     private final Runnable runnable;
     private final boolean needsCardData;
@@ -21,7 +21,7 @@ class ScreenLoadingPanel extends TexturedPanel {
     private AbstractThrobber throbber;
     private final JLabel lbl = new JLabel();
 
-    ScreenLoadingPanel(Runnable r, boolean cdata) {
+    CardsLoadingPanel(Runnable r, boolean cdata) {
         this.needsCardData = cdata;
         this.runnable = r;
         setDefaultProperties();

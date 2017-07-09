@@ -13,9 +13,9 @@ class ScreenLoaderWorker extends SwingWorker<Void, String> {
     private final Runnable runnable;
     private final boolean needsCardData;
 
-    private final ScreenLoadingPanel statusPanel;
+    private final CardsLoadingPanel statusPanel;
 
-    ScreenLoaderWorker(ScreenLoadingPanel p) {
+    ScreenLoaderWorker(CardsLoadingPanel p) {
         this.statusPanel = p;
         this.runnable = p.getRunnable();
         this.needsCardData = p.isCardDataNeeded();
