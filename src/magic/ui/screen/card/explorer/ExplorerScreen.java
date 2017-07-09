@@ -34,6 +34,11 @@ public class ExplorerScreen extends HeaderFooterScreen {
         return true;
     }
 
+    @Override
+    protected boolean needsMissingCards() {
+        return true;
+    }
+
     private void initUI() {
         headerPanel = new ExplorerHeaderPanel();
         contentPanel = new ExplorerContentPanel(this);
