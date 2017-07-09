@@ -1,14 +1,12 @@
 package magic.data;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
-
 import groovy.lang.GroovyShell;
 import groovy.transform.CompileStatic;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.Path;
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
@@ -43,6 +41,7 @@ import magic.utility.ProgressReporter;
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class CardDefinitions {
 
@@ -60,7 +59,7 @@ public class CardDefinitions {
     // of that card that can be played.
 
     // Contains reference to all playable MagicCardDefinitions indexed by card name.
-    private static final Map<String, MagicCardDefinition> allPlayableCardDefs = new ConcurrentHashMap<>();
+    private static final Map<String, MagicCardDefinition> playableCards = new ConcurrentHashMap<>();
 
     private static final Map<String, MagicCardDefinition> missingCards = new ConcurrentHashMap<>();
 
@@ -114,7 +113,7 @@ public class CardDefinitions {
             cardDef.add(new MagicHandCastActivation(cardDef));
         }
 
-        allPlayableCardDefs.put(cardDef.getAsciiName(), cardDef);
+        playableCards.put(cardDef.getAsciiName(), cardDef);
     }
 
     private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
@@ -281,11 +280,11 @@ public class CardDefinitions {
     public static MagicCardDefinition getCard(final String original) {
         final String key = getASCII(original);
         // lazy loading of card scripts
-        if (!allPlayableCardDefs.containsKey(key)) {
+        if (!playableCards.containsKey(key)) {
             loadCardDefinition(original);
         }
-        if (allPlayableCardDefs.containsKey(key)) {
-            return allPlayableCardDefs.get(key);
+        if (playableCards.containsKey(key)) {
+            return playableCards.get(key);
         } else {
             throw new RuntimeException("unknown card: \"" + original + "\"");
         }
@@ -333,7 +332,7 @@ public class CardDefinitions {
      */
     public static Collection<MagicCardDefinition> getAllPlayableCardDefs() {
         MagicSystem.waitForAllCards();
-        return allPlayableCardDefs.values();
+        return playableCards.values();
     }
 
     public static synchronized List<MagicCardDefinition> getAllCards() {
@@ -424,7 +423,7 @@ public class CardDefinitions {
     }
 
     public static boolean isCardPlayable(MagicCardDefinition card) {
-        return allPlayableCardDefs.containsKey(card.getAsciiName());
+        return playableCards.containsKey(card.getAsciiName());
     }
 
     public static boolean isCardMissing(MagicCardDefinition card) {
