@@ -8,13 +8,27 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class DownloadImagesScreen extends MScreen {
 
-    private final DownloadDialogPanel dialogPanel;
+    private DownloadDialogPanel dialogPanel;
 
     public DownloadImagesScreen() {
         // hint label replaces tooltips.
         ToolTipManager.sharedInstance().setEnabled(false);
+        useCardsLoadingScreen(this::initUI);
+    }
+
+    private void initUI() {
         dialogPanel = new DownloadDialogPanel();
         setMainContent(getContent());
+    }
+
+    @Override
+    protected boolean needsPlayableCards() {
+        return true;
+    }
+
+    @Override
+    protected boolean needsMissingCards() {
+        return true;
     }
 
     private JPanel getContent() {
