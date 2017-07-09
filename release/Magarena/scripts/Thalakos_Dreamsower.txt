@@ -11,4 +11,3 @@ ability=Shadow;\
         Whenever SN deals damage to an opponent, tap target creature. That creature doesn't untap during its controller's untap step for as long as SN remains tapped.
 timing=main
 oracle=Shadow\nYou may choose not to untap Thalakos Dreamsower during your untap step.\nWhenever Thalakos Dreamsower deals damage to an opponent, tap target creature. That creature doesn't untap during its controller's untap step for as long as Thalakos Dreamsower remains tapped.
-status=needs groovy
