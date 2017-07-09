@@ -35,7 +35,7 @@ final public class MagicSystem {
 
     // Load card definitions in the background so that it does not delay the
     // loading of the UI. Override done() to ensure exceptions not suppressed.
-    public static final FutureTask<Void> loadCards = new FutureTask<Void>(new Runnable() {
+    public static final FutureTask<Void> loadPlayable = new FutureTask<Void>(new Runnable() {
         @Override
         public void run() {
             initializeEngine(reporter);
@@ -166,11 +166,11 @@ final public class MagicSystem {
     }
 
     public static void waitForAllCards() {
-        if (loadCards.isDone()) {
+        if (loadPlayable.isDone()) {
             return;
         } else {
             try {
-                loadCards.get();
+                loadPlayable.get();
             } catch (final InterruptedException|ExecutionException ex) {
                 throw new RuntimeException(ex);
             }
@@ -212,7 +212,7 @@ final public class MagicSystem {
 
         // Queue up tasks to run synchronously on a single background thread.
         final ExecutorService background = Executors.newSingleThreadExecutor();
-        background.execute(loadCards);
+        background.execute(loadPlayable);
         background.execute(() -> { CardDefinitions.postCardDefinitions(); });
         background.execute(loadMissing);
         background.shutdown();

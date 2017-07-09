@@ -105,7 +105,7 @@ public abstract class MScreen {
     protected final void useLoadingScreen(Runnable r) {
 
         final boolean needsCardData =
-                isCardDataRequired() && !MagicSystem.loadCards.isDone();
+                isCardDataRequired() && !MagicSystem.loadPlayable.isDone();
 
         if (needsCardData) {
 

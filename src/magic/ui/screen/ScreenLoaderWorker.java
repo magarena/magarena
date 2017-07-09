@@ -26,7 +26,7 @@ class ScreenLoaderWorker extends SwingWorker<Void, String> {
 
         if (needsCardData) {
             publish(MText.get(_S1));
-            MagicSystem.loadCards.get();
+            MagicSystem.loadPlayable.get();
         }
 
         return null;
