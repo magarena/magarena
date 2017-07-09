@@ -29,7 +29,7 @@ class ContentPanel extends JPanel {
 
     ContentPanel(DeckEditorScreen screen) {
 
-        MagicSystem.waitForAllCards();
+        MagicSystem.waitForPlayableCards();
 
         this.screen = screen;
 

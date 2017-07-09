@@ -165,7 +165,7 @@ final public class MagicSystem {
         }
     }
 
-    public static void waitForAllCards() {
+    public static void waitForPlayableCards() {
         if (loadPlayable.isDone()) {
             return;
         } else {
@@ -219,7 +219,7 @@ final public class MagicSystem {
 
         // if parse scripts missing or pre-load abilities then load cards synchronously
         if (isParseMissing() || isDebugMode()) {
-            waitForAllCards();
+            waitForPlayableCards();
         }
 
         if (isDebugMode()) {

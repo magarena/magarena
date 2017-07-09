@@ -40,7 +40,7 @@ public class ExplorerContentPanel extends JPanel
 
     private void setupExplorerPanel() {
 
-        MagicSystem.waitForAllCards();
+        MagicSystem.waitForPlayableCards();
 
         setOpaque(false);
 

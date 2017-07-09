@@ -331,7 +331,7 @@ public class CardDefinitions {
      * Returns a list all playable MagicCardDefinitions INCLUDING those classed as hidden.
      */
     public static Collection<MagicCardDefinition> getAllPlayableCardDefs() {
-        MagicSystem.waitForAllCards();
+        MagicSystem.waitForPlayableCards();
         return playableCards.values();
     }
 

@@ -55,7 +55,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
 
     private void setupExplorerPanel(final MagicDeck deck0) {
 
-        MagicSystem.waitForAllCards();
+        MagicSystem.waitForPlayableCards();
 
         this.deck = new MagicDeck();
         this.originalDeck = deck0;
