@@ -1,6 +1,7 @@
 package magic.ui.screen;
 
 import java.awt.Color;
+import java.awt.event.HierarchyEvent;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.awt.MagicFont;
@@ -16,20 +17,36 @@ import net.miginfocom.swing.MigLayout;
 class CardsLoadingPanel extends TexturedPanel {
 
     private final Runnable runnable;
-    private final boolean needsCardData;
+    private CardsLoadingWorker loadingWorker;
 
     private AbstractThrobber throbber;
     private final JLabel lbl = new JLabel();
+    private final MScreen screen;
 
-    CardsLoadingPanel(Runnable r, boolean cdata) {
-        this.needsCardData = cdata;
+    CardsLoadingPanel(Runnable r, MScreen screen) {
+        this.screen = screen;
         this.runnable = r;
         setDefaultProperties();
         setLayout();
+        addHierarchyListener((HierarchyEvent e) -> {
+            if ((e.getChangeFlags() & HierarchyEvent.SHOWING_CHANGED) == HierarchyEvent.SHOWING_CHANGED) {
+                onShowingChanged();
+            }
+        });
+    }
+
+    void onShowingChanged() {
+        if (loadingWorker != null && !loadingWorker.isDone()) {
+            loadingWorker.cancel(true);
+        }
+        if (isShowing()) {
+            loadingWorker = new CardsLoadingWorker(this);
+            loadingWorker.execute();
+        }
     }
 
     void setMessage(String text) {
-        lbl.setText("... " + text + " ...");
+        lbl.setText(text);
     }
 
     private void setLayout() {
@@ -57,7 +74,11 @@ class CardsLoadingPanel extends TexturedPanel {
         return runnable;
     }
 
-    boolean isCardDataNeeded() {
-        return needsCardData;
+    boolean needsPlayableCards() {
+        return screen.needsPlayableCards();
+    }
+
+    boolean needsMissingCards() {
+        return screen.needsMissingCards();
     }
 }

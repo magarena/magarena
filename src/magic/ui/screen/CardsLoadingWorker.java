@@ -10,39 +10,40 @@ class CardsLoadingWorker extends SwingWorker<Void, String> {
     // translatable strings
     private static final String _S1 = "loading card data";
 
-    private final Runnable runnable;
-    private final boolean needsCardData;
-
     private final CardsLoadingPanel statusPanel;
+
+    private final boolean needsPlayableCards;
+    private final boolean needsMissingCards;
 
     CardsLoadingWorker(CardsLoadingPanel p) {
         this.statusPanel = p;
-        this.runnable = p.getRunnable();
-        this.needsCardData = p.isCardDataNeeded();
+        needsPlayableCards = Boolean.valueOf(p.needsPlayableCards());
+        needsMissingCards = Boolean.valueOf(p.needsMissingCards());
     }
 
     @Override
     protected Void doInBackground() throws Exception {
-
-        if (needsCardData) {
+        if (needsPlayableCards || needsMissingCards) {
             publish(MText.get(_S1));
-            MagicSystem.loadPlayable.get();
         }
-
+        if (needsPlayableCards) {
+            MagicSystem.waitForPlayableCards();
+        }
+        if (needsMissingCards) {
+            MagicSystem.waitForMissingCards();
+        }
         return null;
     }
 
     @Override
     protected void process(List<String> chunks) {
-        statusPanel.setMessage(chunks.get(0));
+        statusPanel.setMessage("..." + chunks.get(0) + "...");
     }
 
     @Override
     protected void done() {
         if (!isCancelled()) {
-            runnable.run();
-        } else {
-            System.out.println("Screen loading cancelled.");
+            statusPanel.getRunnable().run();
         }
     }
 

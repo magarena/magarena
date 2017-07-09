@@ -30,7 +30,6 @@ public abstract class MScreen {
 
     private JComponent contentPanel = TEMP_PANEL;
     private WikiPage wikiPage = WikiPage.HOME;
-    private CardsLoadingWorker loadingWorker;
 
     public MScreen() {
         screen.setOpaque(false);
@@ -79,9 +78,6 @@ public abstract class MScreen {
     }
 
     public boolean isScreenReadyToClose(MScreen aScreen) {
-        if (loadingWorker != null && !loadingWorker.isDone()) {
-            loadingWorker.cancel(true);
-        }
         return true;
     }
 
@@ -97,24 +93,23 @@ public abstract class MScreen {
         return false;
     }
 
+    protected boolean needsMissingCards() {
+        return false;
+    }
+
+    private boolean needsCardsLoadingScreen() {
+        return needsPlayableCards() && !MagicSystem.loadPlayable.isDone()
+            || needsMissingCards() && !MagicSystem.loadMissing.isDone();
+    }
+
     /**
      * Displays a loading screen if waiting for card data to be loaded.
      *
      * @param r normally the screen's UI initialization code.
      */
     protected final void useCardsLoadingScreen(Runnable r) {
-
-        final boolean needsCardData =
-                needsPlayableCards() && !MagicSystem.loadPlayable.isDone();
-
-        if (needsCardData) {
-
-            CardsLoadingPanel loadingPanel = new CardsLoadingPanel(r, needsCardData);
-            setMainContent(loadingPanel);
-
-            loadingWorker = new CardsLoadingWorker(loadingPanel);
-            loadingWorker.execute();
-
+        if (needsCardsLoadingScreen()) {
+            setMainContent(new CardsLoadingPanel(r, this));
         } else {
             r.run();
         }
