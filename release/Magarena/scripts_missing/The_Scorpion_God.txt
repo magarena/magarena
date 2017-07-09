@@ -11,3 +11,4 @@ ability=Whenever a creature with a -1/-1 counter on it dies, draw a card.;\
         When SN dies, return it to its owner's hand at the beginning of the next end step.
 timing=main
 oracle=Whenever a creature with a -1/-1 counter on it dies, draw a card.\n{1}{B}{R}: Put a -1/-1 counter on another target creature.\nWhen The Scorpion God dies, return it to its owner's hand at the beginning of the next end step.
+status=needs groovy
