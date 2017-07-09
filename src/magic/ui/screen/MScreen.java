@@ -102,7 +102,7 @@ public abstract class MScreen {
      *
      * @param r normally the screen's UI initialization code.
      */
-    protected final void useLoadingScreen(Runnable r) {
+    protected final void useCardsLoadingScreen(Runnable r) {
 
         final boolean needsCardData =
                 needsPlayableCards() && !MagicSystem.loadPlayable.isDone();

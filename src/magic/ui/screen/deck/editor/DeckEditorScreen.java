@@ -60,7 +60,7 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
         super(MText.get(_S14));
         this.deckClient = client;
         controller.init(this, client.getDeck());
-        useLoadingScreen(this::initUI);
+        useCardsLoadingScreen(this::initUI);
     }
 
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
@@ -68,14 +68,14 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
         super(MText.get(_S14));
         this.deckClient = null;
         controller.init(this, getMostRecentEditedDeck());
-        useLoadingScreen(this::initUI);
+        useCardsLoadingScreen(this::initUI);
     }
 
     public DeckEditorScreen(MagicDeck aDeck) {
         super(MText.get(_S14));
         this.deckClient = null;
         controller.init(this, aDeck);
-        useLoadingScreen(this::initUI);
+        useCardsLoadingScreen(this::initUI);
     }
 
     @Override

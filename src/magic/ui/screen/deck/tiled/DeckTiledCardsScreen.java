@@ -26,7 +26,7 @@ public class DeckTiledCardsScreen extends HeaderFooterScreen
     public DeckTiledCardsScreen(final MagicDeck aDeck) {
         super(MText.get(_S1));
         this.deck = aDeck;
-        useLoadingScreen(this::initUI);
+        useCardsLoadingScreen(this::initUI);
     }
 
     private void initUI() {

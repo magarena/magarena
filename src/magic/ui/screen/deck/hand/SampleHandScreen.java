@@ -41,7 +41,7 @@ public class SampleHandScreen extends HandCanvasScreen
     public SampleHandScreen(final MagicDeck aDeck) {
         super(MText.get(_S1));
         this.deck = aDeck;
-        useLoadingScreen(this::initUI);
+        useCardsLoadingScreen(this::initUI);
     }
 
     private void initUI() {

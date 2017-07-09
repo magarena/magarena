@@ -26,7 +26,7 @@ public class ExplorerScreen extends HeaderFooterScreen {
 
     public ExplorerScreen() {
         super(MText.get(_S1));
-        useLoadingScreen(this::initUI);
+        useCardsLoadingScreen(this::initUI);
     }
 
     @Override
