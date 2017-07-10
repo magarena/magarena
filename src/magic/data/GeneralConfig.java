@@ -24,6 +24,7 @@ import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.message.MessageStyle;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicSystem;
 
 public class GeneralConfig {
 
@@ -518,7 +519,7 @@ public class GeneralConfig {
     public void save() {
         setProperties();
         try {
-            FileIO.toFile(getConfigFile(), settings, "Magarena settings");
+            FileIO.toFile(getConfigFile(), settings, "Magarena " + MagicSystem.VERSION);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save general config");
         }
