@@ -19,6 +19,7 @@ import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.card.explorer.ExplorerScreenLayout;
 import magic.ui.screen.images.download.CardImageDisplayMode;
+import magic.ui.widget.cards.table.CardsTableStyle;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.message.MessageStyle;
 import magic.utility.FileIO;
@@ -196,6 +197,7 @@ public class GeneralConfig {
 
     private static final String EXPLORER_LAYOUT = "explorer.layout";
     private static final String HAND_ZONE_LAYOUT = "hand.zone.layout";
+    private static final String CARDS_TABLE_STYLE = "explorer.table.style";
 
     private GeneralConfig() { }
 
@@ -604,7 +606,8 @@ public class GeneralConfig {
         logGameStats = Boolean.parseBoolean(properties.getProperty(GAME_STATS, "" + logGameStats));
         cardFlowScreenSettings = properties.getProperty(CARDFLOW_SCREEN_SETTINGS, "");
         useCustomFonts = Boolean.parseBoolean(properties.getProperty(CUSTOM_FONTS, "" + useCustomFonts));
-        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.DEFAULT.ordinal()));
+        CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
+        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
         HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
     }
 
@@ -669,6 +672,7 @@ public class GeneralConfig {
         properties.setProperty(CUSTOM_FONTS, String.valueOf(useCustomFonts));
         setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
         setProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal());
+        setProperty(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal());
     }
 
     public void save() {

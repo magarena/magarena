@@ -1,6 +1,5 @@
 package magic.ui.screen.card.explorer;
 
-import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicSetDefinitions;
 import magic.translate.MText;
@@ -72,17 +71,11 @@ public class ExplorerScreen extends HeaderFooterScreen {
         contentPanel.refreshLayout();
     }
 
-    private void doSaveSettings() {
-        CardsTableStyle.save();
-        GeneralConfig.getInstance().save();
-    }
-
     @Override
     public boolean isScreenReadyToClose(MScreen nextScreen) {
         if (super.isScreenReadyToClose(nextScreen)) {
             MagicSetDefinitions.clearLoadedSets();
             MagicLogs.clearLoadedLogs();
-            doSaveSettings();
             return true;
         }
         return false;
