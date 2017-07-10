@@ -552,67 +552,75 @@ public class GeneralConfig {
         return Integer.parseInt(settings.getProperty(key, String.valueOf(defaultValue)));
     }
 
-    private void load(final Properties properties) {
-        this.settings = properties;
-        frameLeft=Integer.parseInt(properties.getProperty(FRAME_LEFT,""+frameLeft));
-        frameTop=Integer.parseInt(properties.getProperty(FRAME_TOP,""+frameTop));
-        frameWidth=Integer.parseInt(properties.getProperty(FRAME_WIDTH,""+frameWidth));
-        frameHeight=Integer.parseInt(properties.getProperty(FRAME_HEIGHT,""+frameHeight));
-        maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+maximized));
-        theme=properties.getProperty(THEME,theme);
-        avatar=properties.getProperty(AVATAR,avatar);
-        highlight = properties.getProperty(HIGHLIGHT, highlight);
-        skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+skipSingle));
-        alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+alwaysPass));
-        smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+smartTarget));
-        popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+popupDelay));
-        messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + messageDelay));
-        touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+touchscreen));
-        mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + mouseWheelPopup));
-        fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + fullScreen));
-        previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + previewCardOnSelect));
-        showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + showLogMessages));
-        isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + isMulliganScreenActive));
-        mostRecentDeckFilename = properties.getProperty(RECENT_DECK, mostRecentDeckFilename).trim();
-        isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + isCustomBackground));
-        cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, cardImagesPath);
-        animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + animateGameplay));
-        deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+ deckFileMaxLines));
-        proxySettings = properties.getProperty(PROXY_SETTINGS, proxySettings).trim();
-        firemindAccessToken = properties.getProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
-        newTurnAlertDuration = Integer.parseInt(properties.getProperty(NEWTURN_ALERT_DURATION,"" + newTurnAlertDuration));
-        landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + landPreviewDuration));
-        nonLandPreviewDuration = Integer.parseInt(properties.getProperty(NONLAND_PREVIEW_DURATION,"" + nonLandPreviewDuration));
-        isSplitViewDeckEditor = Boolean.parseBoolean(properties.getProperty(SPLITVIEW_DECKEDITOR, "" + isSplitViewDeckEditor));
-        overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + overlayPermanentMinHeight));
-        ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
-        isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + isGamePausedOnPopup));
-        unimplementedImagesDownloadDate = properties.getProperty(MISSING_DOWNLOAD_DATE, unimplementedImagesDownloadDate);
-        playableImagesDownloadDate = properties.getProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
-        duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
-        hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + hideAiActionPrompt));
-        rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + rolloverColor.getRGB())));
-        uiVolume = Integer.parseInt(properties.getProperty(UI_VOLUME, "" + uiVolume));
-        translation = properties.getProperty(TRANSLATION, translation);
-        logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, logMessageStyle.name()));
-        AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
-        preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
-        cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
-        gameVolume = Integer.parseInt(properties.getProperty(GAME_VOLUME, "" + gameVolume));
-        imagesOnDemand = Boolean.parseBoolean(properties.getProperty(IMAGES_ON_DEMAND, "" + imagesOnDemand));
-        isCustomScrollBar = Boolean.parseBoolean(properties.getProperty(CUSTOM_SCROLLBAR, "" + isCustomScrollBar));
-        keywordsScreen = properties.getProperty(KEYWORDS_SCREEN, "");
-        cardDisplayMode = CardImageDisplayMode.valueOf(properties.getProperty(CARD_DISPLAY_MODE, cardDisplayMode.name()));
-        logGameStats = Boolean.parseBoolean(properties.getProperty(GAME_STATS, "" + logGameStats));
-        cardFlowScreenSettings = properties.getProperty(CARDFLOW_SCREEN_SETTINGS, "");
-        useCustomFonts = Boolean.parseBoolean(properties.getProperty(CUSTOM_FONTS, "" + useCustomFonts));
-        CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
-        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
-        HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
+    private long getLong(String key, long defaultValue) {
+        return Long.parseLong(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
+    private boolean getBoolean(String key, boolean defaultValue) {
+        return Boolean.parseBoolean(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
+    private String getString(String key, String defaultValue) {
+        return settings.getProperty(key, defaultValue);
     }
 
     public void load() {
-        load(FileIO.toProp(getConfigFile()));
+        settings = FileIO.toProp(getConfigFile());
+        frameLeft = getInteger(FRAME_LEFT, frameLeft);
+        frameTop = getInteger(FRAME_TOP, frameTop);
+        frameWidth = getInteger(FRAME_WIDTH, frameWidth);
+        frameHeight = getInteger(FRAME_HEIGHT, frameHeight);
+        maximized = getBoolean(MAXIMIZED, maximized);
+        theme = getString(THEME, theme);
+        avatar = getString(AVATAR, avatar);
+        highlight = getString(HIGHLIGHT, highlight);
+        skipSingle = getBoolean(SKIP_SINGLE, skipSingle);
+        alwaysPass = getBoolean(ALWAYS_PASS, alwaysPass);
+        smartTarget = getBoolean(SMART_TARGET, smartTarget);
+        popupDelay = getInteger(POPUP_DELAY, popupDelay);
+        messageDelay = getInteger(MESSAGE_DELAY, messageDelay);
+        touchscreen = getBoolean(TOUCHSCREEN, touchscreen);
+        mouseWheelPopup = getBoolean(MOUSEWHEEL_POPUP, mouseWheelPopup);
+        fullScreen = getBoolean(FULLSCREEN, fullScreen);
+        previewCardOnSelect = getBoolean(PREVIEW_CARD_ON_SELECT, previewCardOnSelect);
+        showLogMessages = getBoolean(SHOW_LOG_MESSAGES, showLogMessages);
+        isMulliganScreenActive = getBoolean(MULLIGAN_SCREEN, isMulliganScreenActive);
+        mostRecentDeckFilename = getString(RECENT_DECK, mostRecentDeckFilename).trim();
+        isCustomBackground = getBoolean(CUSTOM_BACKGROUND, isCustomBackground);
+        cardImagesPath = getString(CARD_IMAGES_PATH, cardImagesPath);
+        animateGameplay = getBoolean(ANIMATE_GAMEPLAY, animateGameplay);
+        deckFileMaxLines = getInteger(DECK_FILE_MAX_LINES, deckFileMaxLines);
+        proxySettings = getString(PROXY_SETTINGS, proxySettings).trim();
+        firemindAccessToken = getString(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
+        newTurnAlertDuration = getInteger(NEWTURN_ALERT_DURATION, newTurnAlertDuration);
+        landPreviewDuration = getInteger(LAND_PREVIEW_DURATION, landPreviewDuration);
+        nonLandPreviewDuration = getInteger(NONLAND_PREVIEW_DURATION, nonLandPreviewDuration);
+        isSplitViewDeckEditor = getBoolean(SPLITVIEW_DECKEDITOR, isSplitViewDeckEditor);
+        overlayPermanentMinHeight = getInteger(OVERLAY_PERMANENT_MIN_HEIGHT, overlayPermanentMinHeight);
+        ignoredVersionAlert = getString(IGNORED_VERSION_ALERT, ignoredVersionAlert);
+        isGamePausedOnPopup = getBoolean(PAUSE_GAME_POPUP, isGamePausedOnPopup);
+        unimplementedImagesDownloadDate = getString(MISSING_DOWNLOAD_DATE, unimplementedImagesDownloadDate);
+        playableImagesDownloadDate = getString(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
+        duelSidebarLayout = getString(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
+        hideAiActionPrompt = getBoolean(HIDE_AI_ACTION_PROMPT, hideAiActionPrompt);
+        rolloverColor = new Color(getInteger(ROLLOVER_COLOR, rolloverColor.getRGB()));
+        uiVolume = getInteger(UI_VOLUME, uiVolume);
+        translation = getString(TRANSLATION, translation);
+        logMessageStyle = MessageStyle.valueOf(getString(LOG_MESSAGE_STYLE, logMessageStyle.name()));
+        preferredImageSize = ImageSizePresets.valueOf(getString(PREF_IMAGE_SIZE, preferredImageSize.name()));
+        cardTextLanguage = CardTextLanguage.valueOf(getString(CARD_TEXT_LANG, cardTextLanguage.name()));
+        gameVolume = getInteger(GAME_VOLUME, gameVolume);
+        imagesOnDemand = getBoolean(IMAGES_ON_DEMAND, imagesOnDemand);
+        isCustomScrollBar = getBoolean(CUSTOM_SCROLLBAR, isCustomScrollBar);
+        keywordsScreen =  getString(KEYWORDS_SCREEN, "");
+        cardDisplayMode = CardImageDisplayMode.valueOf(getString(CARD_DISPLAY_MODE, cardDisplayMode.name()));
+        logGameStats = getBoolean(GAME_STATS, logGameStats);
+        cardFlowScreenSettings = getString(CARDFLOW_SCREEN_SETTINGS, "");
+        useCustomFonts = getBoolean(CUSTOM_FONTS, useCustomFonts);
+        CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
+        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
+        HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
+        AnimationFx.setFlags(getLong(ANIMATION_FLAGS, AnimationFx.getFlags()));
     }
 
     private void setProperty(String key, int value) {
