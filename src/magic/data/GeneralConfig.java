@@ -790,14 +790,6 @@ public class GeneralConfig {
         return keywordsScreen;
     }
 
-    public void set(String name, int value) {
-        settings.setProperty(name, Integer.toString(value));
-    }
-
-    public int getInt(String name, int value) {
-        return Integer.parseInt(settings.getProperty(name, Integer.toString(value)));
-    }
-
     public CardImageDisplayMode getCardImageDisplayMode() {
         return cardDisplayMode;
     }
