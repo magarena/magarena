@@ -108,6 +108,43 @@ public class GeneralConfig {
 
     private GeneralConfig() { }
 
+    public static GeneralConfig getInstance() {
+        return INSTANCE;
+    }
+
+    private static File getConfigFile() {
+        return MagicFileSystem.getDataPath().resolve(CONFIG_FILENAME).toFile();
+    }
+
+    public void load() {
+        settings = FileIO.toProp(getConfigFile());
+        CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
+        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
+        HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
+        AnimationFx.setFlags(getLong(ANIMATION_FLAGS, AnimationFx.getFlags()));
+    }
+
+    private void setProperties() {
+        setProperty(ANIMATION_FLAGS, AnimationFx.getFlags());
+        setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
+        setProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal());
+        setProperty(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal());
+    }
+
+    public void save() {
+        setProperties();
+        try {
+            FileIO.toFile(getConfigFile(), settings, CONFIG_HEADER);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to save general config");
+        }
+    }
+
+
+    //---------------------------------------------------------------------
+    // Setters & getters for each setting.
+    //---------------------------------------------------------------------
+
     public String getProxySettings() {
         return getString(PROXY_SETTINGS, "").trim();
     }
@@ -493,14 +530,6 @@ public class GeneralConfig {
         return settings.getProperty(key, defaultValue);
     }
 
-    public void load() {
-        settings = FileIO.toProp(getConfigFile());
-        CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
-        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
-        HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
-        AnimationFx.setFlags(getLong(ANIMATION_FLAGS, AnimationFx.getFlags()));
-    }
-
     private void setProperty(String key, int value) {
         settings.setProperty(key, String.valueOf(value));
     }
@@ -515,30 +544,6 @@ public class GeneralConfig {
 
     private void setProperty(String key, String value) {
         settings.setProperty(key, value);
-    }
-
-    private void setProperties() {
-        setProperty(ANIMATION_FLAGS, AnimationFx.getFlags());
-        setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
-        setProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal());
-        setProperty(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal());
-    }
-
-    public void save() {
-        setProperties();
-        try {
-            FileIO.toFile(getConfigFile(), settings, CONFIG_HEADER);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to save general config");
-        }
-    }
-
-    private static File getConfigFile() {
-        return MagicFileSystem.getDataPath().resolve(CONFIG_FILENAME).toFile();
-    }
-
-    public static GeneralConfig getInstance() {
-        return INSTANCE;
     }
 
     public ImageSizePresets getPreferredImageSize() {
