@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.Properties;
 import magic.ui.CardTextLanguage;
 import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.screen.card.explorer.ExplorerScreenLayout;
 import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.ui.widget.duel.animation.AnimationFx;
 import magic.ui.widget.message.MessageStyle;
@@ -191,6 +192,8 @@ public class GeneralConfig {
 
     private static final String CUSTOM_FONTS = "custom.fonts";
     private boolean useCustomFonts = true;
+
+    private static final String EXPLORER_LAYOUT = "explorer.layout";
 
     private GeneralConfig() { }
 
@@ -541,6 +544,10 @@ public class GeneralConfig {
         logMessageStyle = aStyle;
     }
 
+    private int getInteger(String key, int defaultValue) {
+        return Integer.parseInt(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
     private void load(final Properties properties) {
         this.settings = properties;
         frameLeft=Integer.parseInt(properties.getProperty(FRAME_LEFT,""+frameLeft));
@@ -595,10 +602,15 @@ public class GeneralConfig {
         logGameStats = Boolean.parseBoolean(properties.getProperty(GAME_STATS, "" + logGameStats));
         cardFlowScreenSettings = properties.getProperty(CARDFLOW_SCREEN_SETTINGS, "");
         useCustomFonts = Boolean.parseBoolean(properties.getProperty(CUSTOM_FONTS, "" + useCustomFonts));
+        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.DEFAULT.ordinal()));
     }
 
     public void load() {
         load(FileIO.toProp(getConfigFile()));
+    }
+
+    private void setProperty(String key, int value) {
+        settings.setProperty(key, String.valueOf(value));
     }
 
     private void save(final Properties properties) {
@@ -652,6 +664,7 @@ public class GeneralConfig {
         properties.setProperty(GAME_STATS, String.valueOf(logGameStats));
         properties.setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
         properties.setProperty(CUSTOM_FONTS, String.valueOf(useCustomFonts));
+        setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
     }
 
     public void save() {

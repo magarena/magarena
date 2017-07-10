@@ -73,7 +73,6 @@ public class ExplorerScreen extends HeaderFooterScreen {
     }
 
     private void doSaveSettings() {
-        ExplorerScreenLayout.save();
         CardsTableStyle.save();
         GeneralConfig.getInstance().save();
     }
