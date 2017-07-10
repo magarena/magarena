@@ -3018,7 +3018,7 @@ public class MagicTargetFilterFactory {
         final Matcher matcher = OTHER.matcher(arg);
         final boolean other = matcher.find();
         final String processed = matcher.replaceFirst("");
-        final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single(processed);
+        final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single(processed);
         if (filter.acceptType(MagicTargetType.Permanent) == false) {
             throw new RuntimeException("unknown permanent filter \"" + text + "\"");
         }
@@ -3028,19 +3028,19 @@ public class MagicTargetFilterFactory {
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicCard> Card(final String text) {
         final String arg = toSingular(text);
-        return (MagicTargetFilter<MagicCard>)single(arg);
+        return (MagicCardFilterImpl)single(arg);
     }
 
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicPlayer> Player(final String text) {
         final String arg = toSingular(text);
-        return (MagicTargetFilter<MagicPlayer>)single(arg);
+        return (MagicPlayerFilterImpl)single(arg);
     }
 
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicItemOnStack> ItemOnStack(final String text) {
         final String arg = toSingular(text);
-        return (MagicTargetFilter<MagicItemOnStack>)single(arg);
+        return (MagicStackFilterImpl)single(arg);
     }
 
     public static MagicTargetFilter<?> single(final String arg) {
@@ -3158,12 +3158,12 @@ public class MagicTargetFilterFactory {
         final String withSuffix = prefix + " permanent";
         if (single.containsKey(withSuffix)) {
             @SuppressWarnings("unchecked")
-            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(withSuffix);
+            final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
         }
         if (single.containsKey(prefix)) {
             @SuppressWarnings("unchecked")
-            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(prefix);
+            final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(prefix);
             return permanent(filter, control);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -3191,7 +3191,7 @@ public class MagicTargetFilterFactory {
         final String withSuffix = prefix + " creature";
         if (single.containsKey(withSuffix)) {
             @SuppressWarnings("unchecked")
-            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(withSuffix);
+            final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -3211,7 +3211,7 @@ public class MagicTargetFilterFactory {
         final String withSuffix = prefix + " planeswalker";
         if (single.containsKey(withSuffix)) {
             @SuppressWarnings("unchecked")
-            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(withSuffix);
+            final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
