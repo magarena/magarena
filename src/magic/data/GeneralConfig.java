@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.Properties;
 import magic.ui.CardTextLanguage;
 import magic.ui.dialog.prefs.ImageSizePresets;
+import magic.ui.screen.HandZoneLayout;
 import magic.ui.screen.card.explorer.ExplorerScreenLayout;
 import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.ui.widget.duel.animation.AnimationFx;
@@ -194,6 +195,7 @@ public class GeneralConfig {
     private boolean useCustomFonts = true;
 
     private static final String EXPLORER_LAYOUT = "explorer.layout";
+    private static final String HAND_ZONE_LAYOUT = "hand.zone.layout";
 
     private GeneralConfig() { }
 
@@ -603,6 +605,7 @@ public class GeneralConfig {
         cardFlowScreenSettings = properties.getProperty(CARDFLOW_SCREEN_SETTINGS, "");
         useCustomFonts = Boolean.parseBoolean(properties.getProperty(CUSTOM_FONTS, "" + useCustomFonts));
         ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.DEFAULT.ordinal()));
+        HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
     }
 
     public void load() {
@@ -665,6 +668,7 @@ public class GeneralConfig {
         properties.setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
         properties.setProperty(CUSTOM_FONTS, String.valueOf(useCustomFonts));
         setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
+        setProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal());
     }
 
     public void save() {

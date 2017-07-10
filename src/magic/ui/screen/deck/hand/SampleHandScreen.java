@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
@@ -15,8 +14,6 @@ import magic.ui.ScreenController;
 import magic.ui.screen.HandCanvasLayeredPane;
 import magic.ui.screen.HandCanvasOptionsPanel;
 import magic.ui.screen.HandCanvasScreen;
-import magic.ui.screen.HandZoneLayout;
-import magic.ui.screen.MScreen;
 import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.cards.canvas.CardsCanvas;
@@ -79,20 +76,6 @@ public class SampleHandScreen extends HandCanvasScreen
         return cards;
     }
 
-
-    private void doSaveSettings() {
-        HandZoneLayout.save();
-        GeneralConfig.getInstance().save();
-    }
-
-    @Override
-    public boolean isScreenReadyToClose(MScreen nextScreen) {
-        if (super.isScreenReadyToClose(nextScreen)) {
-            doSaveSettings();
-            return true;
-        }
-        return false;
-    }
 
     @Override
     public void cardSelected(MagicCardDefinition aCard) {

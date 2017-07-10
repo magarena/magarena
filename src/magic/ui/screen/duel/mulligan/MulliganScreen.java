@@ -3,7 +3,6 @@ package magic.ui.screen.duel.mulligan;
 import java.awt.event.KeyEvent;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -14,8 +13,6 @@ import magic.ui.helpers.KeyEventAction;
 import magic.ui.screen.HandCanvasLayeredPane;
 import magic.ui.screen.HandCanvasOptionsPanel;
 import magic.ui.screen.HandCanvasScreen;
-import magic.ui.screen.HandZoneLayout;
-import magic.ui.screen.MScreen;
 import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.cards.canvas.CardImageOverlay;
 import magic.ui.widget.cards.canvas.CardsCanvas;
@@ -112,20 +109,6 @@ public class MulliganScreen extends HandCanvasScreen
                 ScreenController.closeActiveScreen(false);
             }
         }
-    }
-
-    private void doSaveSettings() {
-        HandZoneLayout.save();
-        GeneralConfig.getInstance().save();
-    }
-
-    @Override
-    public boolean isScreenReadyToClose(MScreen nextScreen) {
-        if (super.isScreenReadyToClose(nextScreen)) {
-            doSaveSettings();
-            return true;
-        }
-        return false;
     }
 
     @Override
