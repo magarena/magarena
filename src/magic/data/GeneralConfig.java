@@ -35,178 +35,82 @@ public class GeneralConfig {
 
     private boolean isMissingFiles = false;
 
-    private static final String FRAME_LEFT = "left";
-    private int frameLeft = -1;
-
-    private static final String FRAME_TOP = "top";
-    private int frameTop = -1;
-
-    private static final String FRAME_WIDTH = "width";
     public static final int DEFAULT_FRAME_WIDTH = 1024;
-    private int frameWidth = DEFAULT_FRAME_WIDTH;
-
-    private static final String FRAME_HEIGHT = "height";
     public static final int DEFAULT_FRAME_HEIGHT = 600;
-    private int frameHeight = DEFAULT_FRAME_HEIGHT;
-
-    private static final String MAXIMIZED="maximized";
-    private boolean maximized=false;
-
-    private static final String THEME="theme";
-    private String theme="felt";
-
-    private static final String AVATAR="avatar";
-    private String avatar="legend";
-
-    private static final String HIGHLIGHT = "highlight";
-    private String highlight = "theme";
-
-    private static final String SKIP_SINGLE="single";
-    private boolean skipSingle = true;
-
-    private static final String ALWAYS_PASS="pass";
-    private boolean alwaysPass = true;
-
-    private static final String SMART_TARGET="target";
-    private boolean smartTarget = false;
-
-    private static final String POPUP_DELAY="popup";
-    private int popupDelay = 300;
-
-    private static final String MESSAGE_DELAY = "message";
-    private int messageDelay = 2000;
-
-    private static final String TOUCHSCREEN = "touchscreen";
-    private boolean touchscreen = false;
-
-    private static final String MOUSEWHEEL_POPUP = "mousewheel";
-    private boolean mouseWheelPopup = false;
-
-    private static final String FULLSCREEN = "fullScreen";
-    private boolean fullScreen = false;
-
-    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
-    private boolean previewCardOnSelect = true;
-
-    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
-    private boolean showLogMessages = true;
-
-    private static final String MULLIGAN_SCREEN = "mulliganScreen";
-    private boolean isMulliganScreenActive = true;
-
-    private static final String RECENT_DECK = "MostRecentDeckFilename";
-    private String mostRecentDeckFilename = "";
-
-    private static final String CUSTOM_BACKGROUND = "customBackground";
-    private boolean isCustomBackground = false;
-
-    private static final String CARD_IMAGES_PATH = "cardImagesPath";
-    private String cardImagesPath = "";
-
-    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
-    private boolean animateGameplay = true;
-
-    private static final String ANIMATION_FLAGS = "animationFlags";
-
-    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
-    private int deckFileMaxLines = 500;
-
-    private static final String PROXY_SETTINGS = "proxySettings";
-    private String proxySettings = "";
-
-    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
-    private String firemindAccessToken = "";
-
-    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
-    private int newTurnAlertDuration = 3000; // msecs
-
-    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
-    private int landPreviewDuration = 5000; // msecs
-
-    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
-    private int nonLandPreviewDuration = 10000; // msecs
-
-    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
-    private boolean isSplitViewDeckEditor = false;
-
-    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
-    private int overlayPermanentMinHeight = 30; // pixels
-
-    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
-    private String ignoredVersionAlert = "";
-
-    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
-    private boolean isGamePausedOnPopup = false;
-
-    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
-    private String unimplementedImagesDownloadDate = "1970-01-01";
-
-    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
-    private String playableImagesDownloadDate = "1970-01-01";
-
-    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
-    private String duelSidebarLayout = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
-
-    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
-    private boolean hideAiActionPrompt = false;
-
-    private static final String ROLLOVER_COLOR ="rolloverColor";
-    private Color rolloverColor = Color.YELLOW;
-
-    private static final String UI_VOLUME = "uiSoundVolume";
-    private int uiVolume = 80;
-
-    private static final String GAME_VOLUME = "gameVolume";
-    private int gameVolume = 80;
-
-    private static final String TRANSLATION = "translation";
     public static final String DEFAULT_TRANSLATION = "";
-    private String translation = DEFAULT_TRANSLATION;
 
+    private static final String FRAME_LEFT = "left";
+    private static final String FRAME_TOP = "top";
+    private static final String FRAME_WIDTH = "width";
+    private static final String FRAME_HEIGHT = "height";
+    private static final String MAXIMIZED = "maximized";
+    private static final String THEME = "theme";
+    private static final String AVATAR = "avatar";  // internal
+    private static final String HIGHLIGHT = "highlight";
+    private static final String SKIP_SINGLE = "single";
+    private static final String ALWAYS_PASS = "pass";
+    private static final String SMART_TARGET = "target";
+    private static final String POPUP_DELAY="popup";
+    private static final String MESSAGE_DELAY = "message";
+    private static final String TOUCHSCREEN = "touchscreen";
+    private static final String MOUSEWHEEL_POPUP = "mousewheel";
+    private static final String FULLSCREEN = "fullScreen";
+    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
+    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
+    private static final String MULLIGAN_SCREEN = "mulliganScreen";
+    private static final String RECENT_DECK = "MostRecentDeckFilename";
+    private static final String CUSTOM_BACKGROUND = "customBackground";
+    private static final String CARD_IMAGES_PATH = "cardImagesPath";
+    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
+    private static final String ANIMATION_FLAGS = "animationFlags";
+    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines"; // internal
+    private static final String PROXY_SETTINGS = "proxySettings";
+    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
+    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
+    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
+    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
+    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
+    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight"; // internal
+    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
+    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
+    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
+    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
+    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
+    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
+    private static final String ROLLOVER_COLOR ="rolloverColor";
+    private static final String UI_VOLUME = "uiSoundVolume";
+    private static final String GAME_VOLUME = "gameVolume";
+    private static final String TRANSLATION = "translation";
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
-    private MessageStyle logMessageStyle = MessageStyle.PLAIN;
-
     private static final String PREF_IMAGE_SIZE = "prefImageSize";
-    private ImageSizePresets preferredImageSize = ImageSizePresets.SIZE_ORIGINAL;
-
     private static final String CARD_TEXT_LANG = "cardTextLanguage";
-    private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
-
     private static final String IMAGES_ON_DEMAND = "imagesOnDemand";
-    private boolean imagesOnDemand = false;
-
     private static final String CUSTOM_SCROLLBAR = "customScrollBar";
-    private boolean isCustomScrollBar = true;
-
     private static final String KEYWORDS_SCREEN = "keywordsScreen";
-    private String keywordsScreen;
-
     private static final String CARD_DISPLAY_MODE = "cardImageDisplayMode";
-    private CardImageDisplayMode cardDisplayMode = CardImageDisplayMode.PRINTED;
-
-    private boolean isStatsVisible = true;
-
     private static final String GAME_STATS = "gameStats";
-    private boolean logGameStats = true;
-
     private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
-    private String cardFlowScreenSettings;
-
-    private static final String CUSTOM_FONTS = "custom.fonts";
-    private boolean useCustomFonts = true;
-
+    private static final String CUSTOM_FONTS = "custom.fonts"; // internal
     private static final String EXPLORER_LAYOUT = "explorer.layout";
     private static final String HAND_ZONE_LAYOUT = "hand.zone.layout";
     private static final String CARDS_TABLE_STYLE = "explorer.table.style";
 
+    private boolean isStatsVisible = true;
+
+
     private GeneralConfig() { }
+
+    public String getProxySettings() {
+        return getString(PROXY_SETTINGS, "").trim();
+    }
 
     public Proxy getProxy() {
         final String DELIM = "\\|";
-        if (!proxySettings.isEmpty() && proxySettings.split(DELIM).length == 3) {
-            Proxy.Type proxyType = Proxy.Type.valueOf(proxySettings.split(DELIM)[0]);
-            int port = Integer.parseInt(proxySettings.split(DELIM)[1]);
-            String urlAddress = proxySettings.split(DELIM)[2];
+        String setting = getProxySettings();
+        if (!setting.isEmpty() && setting.split(DELIM).length == 3) {
+            Proxy.Type proxyType = Proxy.Type.valueOf(setting.split(DELIM)[0]);
+            int port = Integer.parseInt(setting.split(DELIM)[1]);
+            String urlAddress = setting.split(DELIM)[2];
             return new Proxy(proxyType, new InetSocketAddress(urlAddress, port));
         }
         return Proxy.NO_PROXY;
@@ -219,51 +123,48 @@ public class GeneralConfig {
             sb.append(proxy.type().toString()).append(DELIM);
             sb.append(Integer.toString(((InetSocketAddress)proxy.address()).getPort())).append(DELIM);
             sb.append(proxy.address().toString());
-            proxySettings = sb.toString();
+            setProperty(PROXY_SETTINGS, sb.toString());
         } else {
-            proxySettings = "";
+            setProperty(PROXY_SETTINGS, "");
         }
-    }
-
-    public String getProxySettings() {
-        return proxySettings;
     }
 
     public int getDeckFileMaxLines() {
-        return deckFileMaxLines;
+        return getInteger(DECK_FILE_MAX_LINES, 500);
     }
 
     public boolean showGameplayAnimations() {
-        return animateGameplay;
+        return getBoolean(ANIMATE_GAMEPLAY, true);
     }
 
-    public boolean getAnimateGameplay() {
-        return animateGameplay;
+    public void setShowGameplayAnimations(boolean b) {
+        setProperty(ANIMATE_GAMEPLAY, b);
     }
-    public void setAnimateGameplay(boolean b) {
-        animateGameplay = b;
+
+    public boolean isCustomCardImagesPath() {
+        return getString(CARD_IMAGES_PATH, "").isEmpty() == false;
     }
 
     public Path getCardImagesPath() {
-        if (cardImagesPath.isEmpty()) {
-            return MagicFileSystem.getDataPath(MagicFileSystem.DataPath.IMAGES);
-        } else {
-            return Paths.get(cardImagesPath);
-        }
+        String setting = getString(CARD_IMAGES_PATH, "");
+        return setting.isEmpty()
+            ? MagicFileSystem.getDataPath(MagicFileSystem.DataPath.IMAGES)
+            : Paths.get(setting);
     }
+
     public void setCardImagesPath(final Path p) {
-        if (MagicFileSystem.directoryContains(MagicFileSystem.INSTALL_PATH, p)) {
-            this.cardImagesPath = "";
-        } else {
-            this.cardImagesPath = p.toAbsolutePath().toString();
-        }
+        String setting = MagicFileSystem.directoryContains(MagicFileSystem.INSTALL_PATH, p)
+            ? ""
+            : p.toAbsolutePath().toString();
+        setProperty(CARD_IMAGES_PATH, setting);
     }
 
     public boolean isCustomBackground() {
-        return isCustomBackground;
+        return getBoolean(CUSTOM_BACKGROUND, false);
     }
+
     public void setCustomBackground(boolean isCustomBackground) {
-        this.isCustomBackground = isCustomBackground;
+        setProperty(CUSTOM_BACKGROUND, isCustomBackground);
     }
 
     public boolean isMissingFiles() {
@@ -279,202 +180,213 @@ public class GeneralConfig {
      * @return path object or null if setting is missing.
      */
     public Path getMostRecentDeckFilePath() {
-        return !mostRecentDeckFilename.isEmpty() ? Paths.get(mostRecentDeckFilename) : null;
+        String setting = getString(RECENT_DECK, "").trim();
+        return !setting.isEmpty() ? Paths.get(setting) : null;
     }
-    public void setMostRecentDeckFilename(final String filename) {
-        mostRecentDeckFilename = filename.trim();
+
+    public void setMostRecentDeckFilename(String filename) {
+        setProperty(RECENT_DECK, filename.trim());
     }
 
     public boolean isMaximized() {
-        return maximized;
+        return getBoolean(MAXIMIZED, false);
     }
 
     public void setMaximized(final boolean maximized) {
-        this.maximized=maximized;
+        setProperty(MAXIMIZED, maximized);
     }
 
     public String getTheme() {
-        return theme;
+        return getString(THEME, "felt");
     }
 
-    public void setTheme(final String theme) {
-        this.theme=theme;
+    public void setTheme(String theme) {
+        setProperty(THEME, theme);
     }
 
     public String getAvatar() {
-        return avatar;
-    }
-
-    public boolean isHighlightNone() {
-        return "none".equals(highlight);
-    }
-
-    public boolean isHighlightOverlay() {
-        return "overlay".equals(highlight);
-    }
-
-    public boolean isHighlightTheme() {
-        return "theme".equals(highlight);
+        return getString(AVATAR, "legend");
     }
 
     public String getHighlight() {
-        return highlight;
+        return getString(HIGHLIGHT, "theme");
     }
 
-    public void setHighlight(final String highlight) {
-        this.highlight = highlight;
+    public void setHighlight(String highlight) {
+        setProperty(HIGHLIGHT, highlight);
+    }
+
+    public boolean isHighlightNone() {
+        return "none".equals(getHighlight());
+    }
+
+    public boolean isHighlightOverlay() {
+        return "overlay".equals(getHighlight());
+    }
+
+    public boolean isHighlightTheme() {
+        return "theme".equals(getHighlight());
     }
 
     public String getFiremindAccessToken() {
-        return firemindAccessToken;
+        return getString(FIREMIND_ACCESS_TOKEN, "");
     }
 
-    public void setFiremindAccessToken(final String firemindAccessToken) {
-        this.firemindAccessToken = firemindAccessToken;
+    public void setFiremindAccessToken(String firemindAccessToken) {
+        setProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
     }
 
     public boolean getSkipSingle() {
-        return skipSingle;
+        return getBoolean(SKIP_SINGLE, true);
     }
 
-    public void setSkipSingle(final boolean skipSingle) {
-        this.skipSingle=skipSingle;
+    public void setSkipSingle(boolean skipSingle) {
+        setProperty(SKIP_SINGLE, skipSingle);
     }
 
     public boolean getAlwaysPass() {
-        return alwaysPass;
+        return getBoolean(ALWAYS_PASS, true);
     }
 
-    public void setAlwaysPass(final boolean alwaysPass) {
-        this.alwaysPass=alwaysPass;
+    public void setAlwaysPass(boolean alwaysPass) {
+        setProperty(ALWAYS_PASS, alwaysPass);
     }
 
     public boolean getSmartTarget() {
-        return smartTarget;
+        return getBoolean(SMART_TARGET, false);
     }
 
-    public void setSmartTarget(final boolean smartTarget) {
-        this.smartTarget=smartTarget;
+    public void setSmartTarget(boolean smartTarget) {
+        setProperty(SMART_TARGET, smartTarget);
     }
 
     public int getPopupDelay() {
-        return popupDelay;
+        return getInteger(POPUP_DELAY, 300);
     }
 
-    public void setPopupDelay(final int popupDelay) {
-        this.popupDelay=popupDelay;
+    public void setPopupDelay(int popupDelay) {
+        setProperty(POPUP_DELAY, popupDelay);
     }
 
     public int getMessageDelay() {
-        return messageDelay;
+        return getInteger(MESSAGE_DELAY, 2000);
     }
 
-    public void setMessageDelay(final int messageDelay) {
-        this.messageDelay = messageDelay;
+    public void setMessageDelay(int messageDelay) {
+        setProperty(MESSAGE_DELAY, messageDelay);
     }
 
     public boolean isTouchscreen() {
-        return touchscreen;
+        return getBoolean(TOUCHSCREEN, false);
     }
 
-    public void setTouchscreen(final boolean touchscreen) {
-        this.touchscreen = touchscreen;
+    public void setTouchscreen(boolean touchscreen) {
+        setProperty(TOUCHSCREEN, touchscreen);
     }
 
     public boolean isMouseWheelPopup() {
-        return mouseWheelPopup;
+        return getBoolean(MOUSEWHEEL_POPUP, false);
     }
 
-    public void setMouseWheelPopup(final boolean mouseWheelPopup) {
-        this.mouseWheelPopup = mouseWheelPopup;
+    public void setMouseWheelPopup(boolean mouseWheelPopup) {
+        setProperty(MOUSEWHEEL_POPUP, mouseWheelPopup);
     }
 
     public boolean isFullScreen() {
-        return fullScreen;
+        return getBoolean(FULLSCREEN, false);
     }
-    public void setFullScreen(final boolean b) {
-        this.fullScreen = b;
+    public void setFullScreen(boolean b) {
+        setProperty(FULLSCREEN, b);
     }
 
     public boolean isPreviewCardOnSelect() {
-        return previewCardOnSelect;
+        return getBoolean(PREVIEW_CARD_ON_SELECT, true);
     }
-    public void setPreviewCardOnSelect(final boolean b) {
-        this.previewCardOnSelect = b;
+
+    public void setPreviewCardOnSelect(boolean b) {
+        setProperty(PREVIEW_CARD_ON_SELECT, b);
     }
 
     public boolean isLogMessagesVisible() {
-        return showLogMessages;
+        return getBoolean(SHOW_LOG_MESSAGES, true);
     }
-    public void setLogMessagesVisible(final boolean b) {
-        showLogMessages = b;
+
+    public void setLogMessagesVisible(boolean b) {
+        setProperty(SHOW_LOG_MESSAGES, b);
     }
 
     public boolean showMulliganScreen() {
-        return isMulliganScreenActive;
+        return getBoolean(MULLIGAN_SCREEN, true);
     }
 
-    public void setShowMulliganScreen(final boolean b) {
-        isMulliganScreenActive = b;
+    public void setShowMulliganScreen(boolean b) {
+        setProperty(MULLIGAN_SCREEN, b);
     }
 
     public int getNewTurnAlertDuration() {
-        return newTurnAlertDuration;
+        return getInteger(NEWTURN_ALERT_DURATION, 3000);
     }
-    public void setNewTurnAlertDuration(final int value) {
-        newTurnAlertDuration = value;
+
+    public void setNewTurnAlertDuration(int millisecs) {
+        setProperty(NEWTURN_ALERT_DURATION, millisecs);
     }
 
     public int getLandPreviewDuration() {
-        return landPreviewDuration;
+        return getInteger(LAND_PREVIEW_DURATION, 5000);
     }
-    public void setLandPreviewDuration(final int value) {
-        landPreviewDuration = value;
+
+    public void setLandPreviewDuration(final int millisecs) {
+        setProperty(LAND_PREVIEW_DURATION, millisecs);
     }
 
     public int getNonLandPreviewDuration() {
-        return nonLandPreviewDuration;
+        return getInteger(NONLAND_PREVIEW_DURATION, 10000);
     }
-    public void setNonLandPreviewDuration(final int value) {
-        nonLandPreviewDuration = value;
+
+    public void setNonLandPreviewDuration(int millisecs) {
+        setProperty(NONLAND_PREVIEW_DURATION, millisecs);
     }
 
     public boolean isSplitViewDeckEditor() {
-        return isSplitViewDeckEditor;
+        return getBoolean(SPLITVIEW_DECKEDITOR, false);
     }
+
     public void setIsSplitViewDeckEditor(boolean b) {
-        isSplitViewDeckEditor = b;
+        setProperty(SPLITVIEW_DECKEDITOR, b);
     }
 
     public String getIgnoredVersionAlert() {
-        return ignoredVersionAlert;
+        return getString(IGNORED_VERSION_ALERT, "");
     }
-    public void setIgnoredVersionAlert(final String version) {
-        ignoredVersionAlert = version;
+
+    public void setIgnoredVersionAlert(String version) {
+        setProperty(IGNORED_VERSION_ALERT, version);
     }
 
     /**
      * Minimum height of card image on which overlays such as P/T,
      * ability icons, etc should be shown.
      * <p>
-     * Non-user: requires manual update of config file to change.
+     * Non-UI: requires manual update of config file to change.
      */
     public int getOverlayMinimumHeight() {
-        return overlayPermanentMinHeight;
+        return getInteger(OVERLAY_PERMANENT_MIN_HEIGHT, 30);
     }
 
     public boolean isGamePausedOnPopup() {
-        return isGamePausedOnPopup;
+        return getBoolean(PAUSE_GAME_POPUP, false);
     }
-    public void setIsGamePausedOnPopup(final boolean b) {
-        isGamePausedOnPopup = b;
+
+    public void setIsGamePausedOnPopup(boolean b) {
+        setProperty(PAUSE_GAME_POPUP, b);
     }
 
     public String getDuelSidebarLayout() {
-        return duelSidebarLayout;
+        return getString(DUEL_SIDEBAR_LAYOUT, "LOGSTACK,PLAYER2,TURNINFO,PLAYER1");
     }
-    public void setDuelSidebarLayout(final String layout) {
-        duelSidebarLayout = layout;
+
+    public void setDuelSidebarLayout(String layout) {
+        setProperty(DUEL_SIDEBAR_LAYOUT, layout);
     }
 
     /**
@@ -484,15 +396,16 @@ public class GeneralConfig {
      */
     public Date getPlayableImagesDownloadDate() {
         try {
-            final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-            return df.parse(playableImagesDownloadDate);
+            SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+            return df.parse(getString(PLAYABLE_DOWNLOAD_DATE, "1970-01-01"));
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
         }
     }
+
     public void setPlayableImagesDownloadDate(final Date runDate) {
-        final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-        playableImagesDownloadDate = df.format(runDate);
+        SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+        setProperty(PLAYABLE_DOWNLOAD_DATE, df.format(runDate));
     }
 
     /**
@@ -502,50 +415,58 @@ public class GeneralConfig {
      */
     public Date getUnimplementedImagesDownloadDate() {
         try {
-            final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-            return df.parse(unimplementedImagesDownloadDate);
+            SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+            return df.parse(getString(MISSING_DOWNLOAD_DATE, "1970-01-01"));
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
         }
     }
+
     public void setUnimplementedImagesDownloadDate(final Date runDate) {
-        final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-        unimplementedImagesDownloadDate = df.format(runDate);
+        SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+        setProperty(MISSING_DOWNLOAD_DATE, df.format(runDate));
     }
 
     public boolean getHideAiActionPrompt() {
-        return hideAiActionPrompt;
+        return getBoolean(HIDE_AI_ACTION_PROMPT, false);
     }
-    public void setHideAiActionPrompt(final boolean b) {
-        hideAiActionPrompt = b;
+
+    public void setHideAiActionPrompt(boolean b) {
+        setProperty(HIDE_AI_ACTION_PROMPT, b);
     }
 
     public Color getRolloverColor() {
-        return rolloverColor;
+        return new Color(getInteger(ROLLOVER_COLOR, Color.YELLOW.getRGB()));
     }
-    public void setRolloverColor(final Color aColor) {
-        rolloverColor = aColor;
+
+    public void setRolloverColor(Color aColor) {
+        setProperty(ROLLOVER_COLOR, aColor.getRGB());
     }
 
     public int getUiVolume() {
-        return uiVolume;
+        return getInteger(UI_VOLUME, 80);
     }
-    public void setUiVolume(final int aInt) {
-        uiVolume = aInt;
+
+    public void setUiVolume(int vol) {
+        setProperty(UI_VOLUME, vol);
     }
 
     public String getTranslation() {
-        return translation;
+        return getString(TRANSLATION, DEFAULT_TRANSLATION);
     }
-    public void setTranslation(final String aString) {
-        translation = aString;
+
+    public void setTranslation(String value) {
+        setProperty(TRANSLATION, value);
     }
 
     public MessageStyle getLogMessageStyle() {
-        return logMessageStyle;
+        return MessageStyle.valueOf(
+            getString(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name())
+        );
     }
+
     public void setLogMessageStyle(MessageStyle aStyle) {
-        logMessageStyle = aStyle;
+        setProperty(LOG_MESSAGE_STYLE, aStyle.name());
     }
 
     private int getInteger(String key, int defaultValue) {
@@ -566,57 +487,6 @@ public class GeneralConfig {
 
     public void load() {
         settings = FileIO.toProp(getConfigFile());
-        frameLeft = getInteger(FRAME_LEFT, frameLeft);
-        frameTop = getInteger(FRAME_TOP, frameTop);
-        frameWidth = getInteger(FRAME_WIDTH, frameWidth);
-        frameHeight = getInteger(FRAME_HEIGHT, frameHeight);
-        maximized = getBoolean(MAXIMIZED, maximized);
-        theme = getString(THEME, theme);
-        avatar = getString(AVATAR, avatar);
-        highlight = getString(HIGHLIGHT, highlight);
-        skipSingle = getBoolean(SKIP_SINGLE, skipSingle);
-        alwaysPass = getBoolean(ALWAYS_PASS, alwaysPass);
-        smartTarget = getBoolean(SMART_TARGET, smartTarget);
-        popupDelay = getInteger(POPUP_DELAY, popupDelay);
-        messageDelay = getInteger(MESSAGE_DELAY, messageDelay);
-        touchscreen = getBoolean(TOUCHSCREEN, touchscreen);
-        mouseWheelPopup = getBoolean(MOUSEWHEEL_POPUP, mouseWheelPopup);
-        fullScreen = getBoolean(FULLSCREEN, fullScreen);
-        previewCardOnSelect = getBoolean(PREVIEW_CARD_ON_SELECT, previewCardOnSelect);
-        showLogMessages = getBoolean(SHOW_LOG_MESSAGES, showLogMessages);
-        isMulliganScreenActive = getBoolean(MULLIGAN_SCREEN, isMulliganScreenActive);
-        mostRecentDeckFilename = getString(RECENT_DECK, mostRecentDeckFilename).trim();
-        isCustomBackground = getBoolean(CUSTOM_BACKGROUND, isCustomBackground);
-        cardImagesPath = getString(CARD_IMAGES_PATH, cardImagesPath);
-        animateGameplay = getBoolean(ANIMATE_GAMEPLAY, animateGameplay);
-        deckFileMaxLines = getInteger(DECK_FILE_MAX_LINES, deckFileMaxLines);
-        proxySettings = getString(PROXY_SETTINGS, proxySettings).trim();
-        firemindAccessToken = getString(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
-        newTurnAlertDuration = getInteger(NEWTURN_ALERT_DURATION, newTurnAlertDuration);
-        landPreviewDuration = getInteger(LAND_PREVIEW_DURATION, landPreviewDuration);
-        nonLandPreviewDuration = getInteger(NONLAND_PREVIEW_DURATION, nonLandPreviewDuration);
-        isSplitViewDeckEditor = getBoolean(SPLITVIEW_DECKEDITOR, isSplitViewDeckEditor);
-        overlayPermanentMinHeight = getInteger(OVERLAY_PERMANENT_MIN_HEIGHT, overlayPermanentMinHeight);
-        ignoredVersionAlert = getString(IGNORED_VERSION_ALERT, ignoredVersionAlert);
-        isGamePausedOnPopup = getBoolean(PAUSE_GAME_POPUP, isGamePausedOnPopup);
-        unimplementedImagesDownloadDate = getString(MISSING_DOWNLOAD_DATE, unimplementedImagesDownloadDate);
-        playableImagesDownloadDate = getString(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
-        duelSidebarLayout = getString(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
-        hideAiActionPrompt = getBoolean(HIDE_AI_ACTION_PROMPT, hideAiActionPrompt);
-        rolloverColor = new Color(getInteger(ROLLOVER_COLOR, rolloverColor.getRGB()));
-        uiVolume = getInteger(UI_VOLUME, uiVolume);
-        translation = getString(TRANSLATION, translation);
-        logMessageStyle = MessageStyle.valueOf(getString(LOG_MESSAGE_STYLE, logMessageStyle.name()));
-        preferredImageSize = ImageSizePresets.valueOf(getString(PREF_IMAGE_SIZE, preferredImageSize.name()));
-        cardTextLanguage = CardTextLanguage.valueOf(getString(CARD_TEXT_LANG, cardTextLanguage.name()));
-        gameVolume = getInteger(GAME_VOLUME, gameVolume);
-        imagesOnDemand = getBoolean(IMAGES_ON_DEMAND, imagesOnDemand);
-        isCustomScrollBar = getBoolean(CUSTOM_SCROLLBAR, isCustomScrollBar);
-        keywordsScreen =  getString(KEYWORDS_SCREEN, "");
-        cardDisplayMode = CardImageDisplayMode.valueOf(getString(CARD_DISPLAY_MODE, cardDisplayMode.name()));
-        logGameStats = getBoolean(GAME_STATS, logGameStats);
-        cardFlowScreenSettings = getString(CARDFLOW_SCREEN_SETTINGS, "");
-        useCustomFonts = getBoolean(CUSTOM_FONTS, useCustomFonts);
         CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
         ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
         HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
@@ -640,56 +510,7 @@ public class GeneralConfig {
     }
 
     private void setProperties() {
-        setProperty(FRAME_LEFT, frameLeft);
-        setProperty(FRAME_TOP, frameTop);
-        setProperty(FRAME_WIDTH, frameWidth);
-        setProperty(FRAME_HEIGHT, frameHeight);
-        setProperty(MAXIMIZED, maximized);
-        setProperty(THEME, theme);
-        setProperty(AVATAR, avatar);
-        setProperty(HIGHLIGHT, highlight);
-        setProperty(SKIP_SINGLE, skipSingle);
-        setProperty(ALWAYS_PASS, alwaysPass);
-        setProperty(SMART_TARGET, smartTarget);
-        setProperty(POPUP_DELAY, popupDelay);
-        setProperty(MESSAGE_DELAY, messageDelay);
-        setProperty(TOUCHSCREEN, touchscreen);
-        setProperty(MOUSEWHEEL_POPUP, mouseWheelPopup);
-        setProperty(FULLSCREEN, fullScreen);
-        setProperty(PREVIEW_CARD_ON_SELECT, previewCardOnSelect);
-        setProperty(SHOW_LOG_MESSAGES, showLogMessages);
-        setProperty(MULLIGAN_SCREEN, isMulliganScreenActive);
-        setProperty(RECENT_DECK, mostRecentDeckFilename);
-        setProperty(CUSTOM_BACKGROUND, isCustomBackground);
-        setProperty(CARD_IMAGES_PATH, cardImagesPath);
-        setProperty(ANIMATE_GAMEPLAY, animateGameplay);
-        setProperty(PROXY_SETTINGS, proxySettings);
-        setProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
-        setProperty(NEWTURN_ALERT_DURATION, newTurnAlertDuration);
-        setProperty(LAND_PREVIEW_DURATION, landPreviewDuration);
-        setProperty(NONLAND_PREVIEW_DURATION, nonLandPreviewDuration);
-        setProperty(SPLITVIEW_DECKEDITOR, isSplitViewDeckEditor);
-        setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
-        setProperty(PAUSE_GAME_POPUP, isGamePausedOnPopup);
-        setProperty(MISSING_DOWNLOAD_DATE, unimplementedImagesDownloadDate);
-        setProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
-        setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
-        setProperty(HIDE_AI_ACTION_PROMPT, hideAiActionPrompt);
-        setProperty(ROLLOVER_COLOR, rolloverColor.getRGB());
-        setProperty(UI_VOLUME, uiVolume);
-        setProperty(TRANSLATION, translation);
-        setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
         setProperty(ANIMATION_FLAGS, AnimationFx.getFlags());
-        setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
-        setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
-        setProperty(GAME_VOLUME, gameVolume);
-        setProperty(IMAGES_ON_DEMAND, imagesOnDemand);
-        setProperty(CUSTOM_SCROLLBAR, isCustomScrollBar);
-        setProperty(KEYWORDS_SCREEN, keywordsScreen);
-        setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
-        setProperty(GAME_STATS, logGameStats);
-        setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
-        setProperty(CUSTOM_FONTS, useCustomFonts);
         setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
         setProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal());
         setProperty(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal());
@@ -712,32 +533,32 @@ public class GeneralConfig {
         return INSTANCE;
     }
 
-    public boolean isCustomCardImagesPath() {
-        return cardImagesPath.isEmpty() == false;
-    }
-
     public ImageSizePresets getPreferredImageSize() {
-        return preferredImageSize;
+        return ImageSizePresets.valueOf(
+            getString(PREF_IMAGE_SIZE, ImageSizePresets.SIZE_ORIGINAL.name())
+        );
     }
 
     public void setPreferredImageSize(ImageSizePresets preset) {
-        this.preferredImageSize = preset;
+        setProperty(PREF_IMAGE_SIZE, preset.name());
     }
 
     public CardTextLanguage getCardTextLanguage() {
-        return cardTextLanguage;
+        return CardTextLanguage.valueOf(
+            getString(CARD_TEXT_LANG, CardTextLanguage.ENGLISH.name())
+        );
     }
 
     public void setCardTextLanguage(CardTextLanguage aLang) {
-        this.cardTextLanguage = aLang;
+        setProperty(CARD_TEXT_LANG, aLang.name());
     }
 
     public int getGameVolume() {
-        return gameVolume;
+        return getInteger(GAME_VOLUME, 80);
     }
 
     public void setGameVolume(int value) {
-        gameVolume = value;
+        setProperty(GAME_VOLUME, value);
     }
 
     public boolean isStatsVisible() {
@@ -749,61 +570,68 @@ public class GeneralConfig {
     }
 
     public boolean getImagesOnDemand() {
-        return imagesOnDemand;
+        return getBoolean(IMAGES_ON_DEMAND, false);
     }
 
     public void setImagesOnDemand(boolean b) {
-        imagesOnDemand = b;
+        setProperty(IMAGES_ON_DEMAND, b);
     }
 
     public Rectangle getSizableFrameBounds() {
-        return new Rectangle(frameLeft, frameTop, frameWidth, frameHeight);
+        return new Rectangle(
+            getInteger(FRAME_LEFT, -1),
+            getInteger(FRAME_TOP, -1),
+            getInteger(FRAME_WIDTH, DEFAULT_FRAME_WIDTH),
+            getInteger(FRAME_HEIGHT, DEFAULT_FRAME_HEIGHT)
+        );
     }
 
     public void setSizableFrameBounds(Rectangle aRect) {
-        frameLeft = aRect.x;
-        frameTop = aRect.y;
-        frameWidth = aRect.width;
-        frameHeight = aRect.height;
+        setProperty(FRAME_LEFT, aRect.x);
+        setProperty(FRAME_TOP, aRect.y);
+        setProperty(FRAME_WIDTH, aRect.width);
+        setProperty(FRAME_HEIGHT, aRect.height);
     }
 
     public void setSizableFrameBounds(Point aPoint, Dimension aSize) {
-        frameLeft = aPoint.x;
-        frameTop = aPoint.y;
-        frameWidth = aSize.width;
-        frameHeight = aSize.height;
+        setProperty(FRAME_LEFT, aPoint.x);
+        setProperty(FRAME_TOP, aPoint.y);
+        setProperty(FRAME_WIDTH, aSize.width);
+        setProperty(FRAME_HEIGHT, aSize.height);
     }
 
     public void setCustomScrollBar(boolean b) {
-        isCustomScrollBar = b;
+        setProperty(CUSTOM_SCROLLBAR, b);
     }
 
     public boolean isCustomScrollBar() {
-        return isCustomScrollBar;
+        return getBoolean(CUSTOM_SCROLLBAR, true);
     }
 
     public void setKeywordsSettings(String text) {
-        keywordsScreen = text;
+        setProperty(KEYWORDS_SCREEN, text);
     }
 
     public String getKeywordsSettings() {
-        return keywordsScreen;
+        return getString(KEYWORDS_SCREEN, "");
     }
 
     public CardImageDisplayMode getCardImageDisplayMode() {
-        return cardDisplayMode;
+        return CardImageDisplayMode.valueOf(
+            getString(CARD_DISPLAY_MODE, CardImageDisplayMode.PRINTED.name())
+        );
     }
 
     public void setCardImageDisplayMode(CardImageDisplayMode newMode) {
-        cardDisplayMode = newMode;
+        setProperty(CARD_DISPLAY_MODE, newMode.name());
     }
 
     public void setGameStatsEnabled(boolean b) {
-        logGameStats = b;
+        setProperty(GAME_STATS, b);
     }
 
     public boolean isGameStatsEnabled() {
-        return logGameStats;
+        return getBoolean(GAME_STATS, true);
     }
 
     public static boolean isGameStatsOn() {
@@ -811,19 +639,15 @@ public class GeneralConfig {
     }
 
     public String getCardFlowScreenSettings() {
-        return cardFlowScreenSettings;
+        return getString(CARDFLOW_SCREEN_SETTINGS, "");
     }
 
     public void setCardFlowScreenSettings(String settings) {
-        cardFlowScreenSettings = settings;
+        setProperty(CARDFLOW_SCREEN_SETTINGS, settings);
     }
 
     public boolean useCustomFonts() {
-        return useCustomFonts;
-    }
-
-    public void setUseCustomFonts(boolean b) {
-        useCustomFonts = b;
+        return getBoolean(CUSTOM_FONTS, true);
     }
 
 }

@@ -48,12 +48,12 @@ class AnimationsPanel extends JPanel {
 
     private JPanel getAnimationSubPanel() {
         final JPanel panel = new SubPanel();
-        panel.setEnabled(CONFIG.getAnimateGameplay());
+        panel.setEnabled(CONFIG.showGameplayAnimations());
         return panel;
     }
 
     private MCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
-        final MCheckBox cb = new MCheckBox(MText.get(_S70), CONFIG.getAnimateGameplay());
+        final MCheckBox cb = new MCheckBox(MText.get(_S70), CONFIG.showGameplayAnimations());
         cb.setToolTipText(MText.get(_S71));
         cb.setFocusable(false);
         cb.addMouseListener(aListener);
@@ -88,7 +88,7 @@ class AnimationsPanel extends JPanel {
     }
 
     void saveSettings() {
-        CONFIG.setAnimateGameplay(animateCheckBox.isSelected());
+        CONFIG.setShowGameplayAnimations(animateCheckBox.isSelected());
         CONFIG.setNewTurnAlertDuration(newTurnAlertSlider.getValue() * 1000);
         CONFIG.setLandPreviewDuration(landPreviewSlider.getValue() * 1000);
         CONFIG.setNonLandPreviewDuration(nonlandPreviewSlider.getValue() * 1000);
