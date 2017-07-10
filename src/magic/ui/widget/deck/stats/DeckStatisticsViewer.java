@@ -11,7 +11,6 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.CardStatistics;
-import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
@@ -31,6 +30,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private static final String _S1 = "Deck Statistics";
     private static final String _S2 = "%d card deck";
 
+    private static boolean isStatsVisible = true;
+
     private final ActionButtonTitleBar titleBar;
     private final ManaCurvePanel manaCurvePanel;
     private final ActionBarButton titlebarButton;
@@ -48,7 +49,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
         statsTable = new StatsTable();
         manaCurvePanel = new ManaCurvePanel();
-        setStatsVisible(GeneralConfig.getInstance().isStatsVisible());
+        setStatsVisible(isStatsVisible);
 
         setDeck(new MagicDeck());
 
@@ -77,9 +78,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     }
 
     private void switchStatsVisibility() {
-        GeneralConfig config = GeneralConfig.getInstance();
-        config.setStatsVisible(!config.isStatsVisible());
-        setStatsVisible(config.isStatsVisible());
+        isStatsVisible = !isStatsVisible;
+        setStatsVisible(isStatsVisible);
         refreshLayout();
         firePropertyChange(CP_LAYOUT_CHANGED, true, false);
     }

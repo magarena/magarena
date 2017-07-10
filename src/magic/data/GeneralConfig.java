@@ -96,7 +96,6 @@ public class GeneralConfig {
 
     private Properties settings;
     private boolean isMissingFiles = false;
-    private boolean isStatsVisible = true;
 
     private GeneralConfig() { }
 
@@ -559,14 +558,6 @@ public class GeneralConfig {
 
     public void setGameVolume(int value) {
         setProperty(GAME_VOLUME, value);
-    }
-
-    public boolean isStatsVisible() {
-        return isStatsVisible;
-    }
-
-    public void setStatsVisible(boolean b) {
-        isStatsVisible = b;
     }
 
     public boolean getImagesOnDemand() {
