@@ -220,46 +220,38 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         setProgressNote(MText.get(_S5));
 
         final String CONFIG_FILENAME = "general.cfg";
+        final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
         // Create new config file with default settings.
         final File thisConfigFile = MagicFileSystem.getDataPath().resolve(CONFIG_FILENAME).toFile();
         if (thisConfigFile.exists()) {
             thisConfigFile.delete();
         }
-        GeneralConfig.getInstance().save();
+        CONFIG.save();
 
-        final Properties thisProperties = FileIO.toProp(thisConfigFile);
         final Properties theirProperties = FileIO.toProp(importDataPath.resolve(CONFIG_FILENAME).toFile());
 
-        // list of latest config settings.
-        final List<String> thisSettings = new ArrayList<>(thisProperties.stringPropertyNames());
-
-        // not interested in importing these settings.
-        thisSettings.removeAll(Arrays.asList(
-                "left",
-                "fullScreen",
-                "top",
-                "height",
-                "width",
-                "translation"));
+        // list of settings to import from previous version except...
+        final List<String> theirSettings = new ArrayList<>(theirProperties.stringPropertyNames());
+        // ...not interested in importing these settings.
+        theirSettings.removeAll(Arrays.asList(GeneralConfig.NOT_IMPORTED));
 
         // import settings...
-        for (String setting : thisSettings) {
-            if (theirProperties.containsKey(setting)) {
-                thisProperties.setProperty(setting, theirProperties.getProperty(setting));
-            }
+        final Properties thisProperties = FileIO.toProp(thisConfigFile);
+        for (String key : theirSettings) {
+            thisProperties.setProperty(key, theirProperties.getProperty(key));
         }
 
         // save updated preferences and reload.
-        FileIO.toFile(thisConfigFile, thisProperties, "General configuration");
-        GeneralConfig.getInstance().load();
+        FileIO.toFile(thisConfigFile, thisProperties, GeneralConfig.CONFIG_HEADER);
+        CONFIG.load();
 
         // override download dates to catch any missed "image_updated" updates.
         final Calendar dt = Calendar.getInstance();
         dt.add(Calendar.DAY_OF_MONTH, -60);
-        GeneralConfig.getInstance().setUnimplementedImagesDownloadDate(dt.getTime());
-        GeneralConfig.getInstance().setPlayableImagesDownloadDate(dt.getTime());
-        GeneralConfig.getInstance().save();
+        CONFIG.setUnimplementedImagesDownloadDate(dt.getTime());
+        CONFIG.setPlayableImagesDownloadDate(dt.getTime());
+        CONFIG.save();
 
         setProgressNote(OK_STRING);
     }

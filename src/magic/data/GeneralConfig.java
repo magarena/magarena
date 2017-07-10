@@ -31,6 +31,7 @@ public class GeneralConfig {
     private static final GeneralConfig INSTANCE = new GeneralConfig();
 
     public static final String CONFIG_FILENAME = "general.cfg";
+    public static final String CONFIG_HEADER = "Magarena " + MagicSystem.VERSION;
 
     public static final int DEFAULT_FRAME_WIDTH = 1024;
     public static final int DEFAULT_FRAME_HEIGHT = 600;
@@ -94,6 +95,13 @@ public class GeneralConfig {
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String TRANSLATION = "translation";
     private static final String UI_VOLUME = "uiSoundVolume";
+
+    // obsolete settings that should not be imported into the current version
+    // or version sensitive settings that should not be overwritten.
+    public static final String[] NOT_IMPORTED = new String[]{
+        FRAME_TOP, FRAME_LEFT, FRAME_WIDTH, FRAME_HEIGHT,
+        FULLSCREEN, TRANSLATION
+    };
 
     private Properties settings;
     private boolean isMissingFiles = false;
@@ -519,7 +527,7 @@ public class GeneralConfig {
     public void save() {
         setProperties();
         try {
-            FileIO.toFile(getConfigFile(), settings, "Magarena " + MagicSystem.VERSION);
+            FileIO.toFile(getConfigFile(), settings, CONFIG_HEADER);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save general config");
         }
