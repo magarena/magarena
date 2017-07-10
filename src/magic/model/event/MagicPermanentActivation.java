@@ -47,6 +47,29 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         );
     }
 
+    private final boolean canPayCosts(final MagicGame game, final MagicPermanent source) {
+        for (final MagicEvent event : getCostEvent(source)) {
+            if (event.hasChoice() == false) {
+                if (event.isSatisfied() == false) {
+                    return false;
+                } else {
+                    game.executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
+                }
+            }
+        }
+        for (final MagicEvent event : getCostEvent(source)) {
+            if (event.hasChoice() == true) {
+                if (event.isSatisfied() == false) {
+                    return false;
+                } else {
+                    final Object[] choice = event.getArtificialChoiceResults(game).get(0);
+                    game.executeEvent(event, choice);
+                }
+            }
+        }
+        return true;
+    }
+
     @Override
     public final boolean canPlay(final MagicGame game, final MagicPlayer player, final MagicPermanent source, final boolean useHints) {
         boolean canPlay = super.canPlay(game, player, source, useHints);
@@ -54,18 +77,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         // check that choosing the first choice for each cost results in valid payment of all costs
         if (canPlay) {
             game.snapshot();
-            for (final MagicEvent event : getCostEvent(source)) {
-                if (event.isSatisfied() == false) {
-                    canPlay = false;
-                    break;
-                }
-                if (event.hasChoice() == false) {
-                    game.executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
-                } else {
-                    final Object[] choice = event.getArtificialChoiceResults(game).get(0);
-                    game.executeEvent(event, choice);
-                }
-            }
+            canPlay = canPayCosts(game, source);
             game.restore();
         }
 
