@@ -112,6 +112,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl ACTIVATED_OR_TRIGGERED_ABILITY_OPP_CONTROL = new MagicStackFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
+            return target.isSpell() == false && source.isEnemy(target);
+        }
+    };
+
     public static final MagicStackFilterImpl SPELL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
@@ -2908,6 +2915,7 @@ public class MagicTargetFilterFactory {
         add("spell or ability an opponent controls", SPELL_OR_ABILITY_OPPONENT_CONTROL);
         add("activated ability", ACTIVATED_ABILITY);
         add("activated or triggered ability", ACTIVATED_OR_TRIGGERED_ABILITY);
+        add("activated or triggered ability you don't control", ACTIVATED_OR_TRIGGERED_ABILITY_OPP_CONTROL);
         add("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
         add("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
         add("spell with {X} in its mana cost", SPELL_WITH_X_COST);
