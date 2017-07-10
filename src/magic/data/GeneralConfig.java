@@ -29,74 +29,74 @@ public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE = new GeneralConfig();
 
-    public static final String CONFIG_FILENAME="general.cfg";
-
-    private Properties settings;
-
-    private boolean isMissingFiles = false;
+    public static final String CONFIG_FILENAME = "general.cfg";
 
     public static final int DEFAULT_FRAME_WIDTH = 1024;
     public static final int DEFAULT_FRAME_HEIGHT = 600;
     public static final String DEFAULT_TRANSLATION = "";
 
+    // settings that can only be updated by manually editing the config file.
+    private static final String AVATAR = "avatar";
+    private static final String CUSTOM_FONTS = "custom.fonts";
+    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
+    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
+
+    // settings that should normally be updated via the UI preferences dialog.
+    private static final String ALWAYS_PASS = "pass";
+    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
+    private static final String ANIMATION_FLAGS = "animationFlags";
+    private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
+    private static final String CARDS_TABLE_STYLE = "explorer.table.style";
+    private static final String CARD_DISPLAY_MODE = "cardImageDisplayMode";
+    private static final String CARD_IMAGES_PATH = "cardImagesPath";
+    private static final String CARD_TEXT_LANG = "cardTextLanguage";
+    private static final String CUSTOM_BACKGROUND = "customBackground";
+    private static final String CUSTOM_SCROLLBAR = "customScrollBar";
+    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
+    private static final String EXPLORER_LAYOUT = "explorer.layout";
+    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
+    private static final String FRAME_HEIGHT = "height";
     private static final String FRAME_LEFT = "left";
     private static final String FRAME_TOP = "top";
     private static final String FRAME_WIDTH = "width";
-    private static final String FRAME_HEIGHT = "height";
-    private static final String MAXIMIZED = "maximized";
-    private static final String THEME = "theme";
-    private static final String AVATAR = "avatar";  // internal
-    private static final String HIGHLIGHT = "highlight";
-    private static final String SKIP_SINGLE = "single";
-    private static final String ALWAYS_PASS = "pass";
-    private static final String SMART_TARGET = "target";
-    private static final String POPUP_DELAY="popup";
-    private static final String MESSAGE_DELAY = "message";
-    private static final String TOUCHSCREEN = "touchscreen";
-    private static final String MOUSEWHEEL_POPUP = "mousewheel";
     private static final String FULLSCREEN = "fullScreen";
-    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
-    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
-    private static final String MULLIGAN_SCREEN = "mulliganScreen";
-    private static final String RECENT_DECK = "MostRecentDeckFilename";
-    private static final String CUSTOM_BACKGROUND = "customBackground";
-    private static final String CARD_IMAGES_PATH = "cardImagesPath";
-    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
-    private static final String ANIMATION_FLAGS = "animationFlags";
-    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines"; // internal
-    private static final String PROXY_SETTINGS = "proxySettings";
-    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
-    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
-    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
-    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
-    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
-    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight"; // internal
-    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
-    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
-    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
-    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
-    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
-    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
-    private static final String ROLLOVER_COLOR ="rolloverColor";
-    private static final String UI_VOLUME = "uiSoundVolume";
-    private static final String GAME_VOLUME = "gameVolume";
-    private static final String TRANSLATION = "translation";
-    private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
-    private static final String PREF_IMAGE_SIZE = "prefImageSize";
-    private static final String CARD_TEXT_LANG = "cardTextLanguage";
-    private static final String IMAGES_ON_DEMAND = "imagesOnDemand";
-    private static final String CUSTOM_SCROLLBAR = "customScrollBar";
-    private static final String KEYWORDS_SCREEN = "keywordsScreen";
-    private static final String CARD_DISPLAY_MODE = "cardImageDisplayMode";
     private static final String GAME_STATS = "gameStats";
-    private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
-    private static final String CUSTOM_FONTS = "custom.fonts"; // internal
-    private static final String EXPLORER_LAYOUT = "explorer.layout";
+    private static final String GAME_VOLUME = "gameVolume";
     private static final String HAND_ZONE_LAYOUT = "hand.zone.layout";
-    private static final String CARDS_TABLE_STYLE = "explorer.table.style";
+    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
+    private static final String HIGHLIGHT = "highlight";
+    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
+    private static final String IMAGES_ON_DEMAND = "imagesOnDemand";
+    private static final String KEYWORDS_SCREEN = "keywordsScreen";
+    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
+    private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
+    private static final String MAXIMIZED = "maximized";
+    private static final String MESSAGE_DELAY = "message";
+    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
+    private static final String MOUSEWHEEL_POPUP = "mousewheel";
+    private static final String MULLIGAN_SCREEN = "mulliganScreen";
+    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
+    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
+    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
+    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
+    private static final String POPUP_DELAY="popup";
+    private static final String PREF_IMAGE_SIZE = "prefImageSize";
+    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
+    private static final String PROXY_SETTINGS = "proxySettings";
+    private static final String RECENT_DECK = "MostRecentDeckFilename";
+    private static final String ROLLOVER_COLOR ="rolloverColor";
+    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
+    private static final String SKIP_SINGLE = "single";
+    private static final String SMART_TARGET = "target";
+    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
+    private static final String THEME = "theme";
+    private static final String TOUCHSCREEN = "touchscreen";
+    private static final String TRANSLATION = "translation";
+    private static final String UI_VOLUME = "uiSoundVolume";
 
+    private Properties settings;
+    private boolean isMissingFiles = false;
     private boolean isStatsVisible = true;
-
 
     private GeneralConfig() { }
 
