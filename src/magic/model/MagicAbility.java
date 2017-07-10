@@ -610,6 +610,15 @@ public enum MagicAbility {
             card.add(new MagicCrewActivation(ARG.number(arg)));
         }
     },
+    Afflict("afflict " + ARG.NUMBER, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(BecomesBlockedTrigger.create(
+                MagicTargetFilterFactory.Permanent("SN"),
+                MagicRuleEventAction.create("Defending player loses " + ARG.number(arg) + " life.")
+            ));
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
