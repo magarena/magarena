@@ -619,64 +619,76 @@ public class GeneralConfig {
         settings.setProperty(key, String.valueOf(value));
     }
 
-    private void save(final Properties properties) {
-        properties.setProperty(FRAME_LEFT,String.valueOf(frameLeft));
-        properties.setProperty(FRAME_TOP,String.valueOf(frameTop));
-        properties.setProperty(FRAME_WIDTH,String.valueOf(frameWidth));
-        properties.setProperty(FRAME_HEIGHT,String.valueOf(frameHeight));
-        properties.setProperty(MAXIMIZED,String.valueOf(maximized));
-        properties.setProperty(THEME,theme);
-        properties.setProperty(AVATAR,avatar);
-        properties.setProperty(HIGHLIGHT,highlight);
-        properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));
-        properties.setProperty(ALWAYS_PASS,String.valueOf(alwaysPass));
-        properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
-        properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
-        properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
-        properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
-        properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
-        properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
-        properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
-        properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));
-        properties.setProperty(MULLIGAN_SCREEN, String.valueOf(isMulliganScreenActive));
-        properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
-        properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
-        properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
-        properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
-        properties.setProperty(PROXY_SETTINGS, proxySettings);
-        properties.setProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
-        properties.setProperty(NEWTURN_ALERT_DURATION, String.valueOf(newTurnAlertDuration));
-        properties.setProperty(LAND_PREVIEW_DURATION, String.valueOf(landPreviewDuration));
-        properties.setProperty(NONLAND_PREVIEW_DURATION, String.valueOf(nonLandPreviewDuration));
-        properties.setProperty(SPLITVIEW_DECKEDITOR, String.valueOf(isSplitViewDeckEditor));
-        properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
-        properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
-        properties.setProperty(MISSING_DOWNLOAD_DATE, unimplementedImagesDownloadDate);
-        properties.setProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
-        properties.setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
-        properties.setProperty(HIDE_AI_ACTION_PROMPT, String.valueOf(hideAiActionPrompt));
-        properties.setProperty(ROLLOVER_COLOR, String.valueOf(rolloverColor.getRGB()));
-        properties.setProperty(UI_VOLUME, String.valueOf(uiVolume));
-        properties.setProperty(TRANSLATION, translation);
-        properties.setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
-        properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
-        properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
-        properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
-        properties.setProperty(GAME_VOLUME, String.valueOf(gameVolume));
-        properties.setProperty(IMAGES_ON_DEMAND, String.valueOf(imagesOnDemand));
-        properties.setProperty(CUSTOM_SCROLLBAR, String.valueOf(isCustomScrollBar));
-        properties.setProperty(KEYWORDS_SCREEN, keywordsScreen);
-        properties.setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
-        properties.setProperty(GAME_STATS, String.valueOf(logGameStats));
-        properties.setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
-        properties.setProperty(CUSTOM_FONTS, String.valueOf(useCustomFonts));
+    private void setProperty(String key, long value) {
+        settings.setProperty(key, String.valueOf(value));
+    }
+
+    private void setProperty(String key, boolean value) {
+        settings.setProperty(key, String.valueOf(value));
+    }
+
+    private void setProperty(String key, String value) {
+        settings.setProperty(key, value);
+    }
+
+    private void setProperties() {
+        setProperty(FRAME_LEFT, frameLeft);
+        setProperty(FRAME_TOP, frameTop);
+        setProperty(FRAME_WIDTH, frameWidth);
+        setProperty(FRAME_HEIGHT, frameHeight);
+        setProperty(MAXIMIZED, maximized);
+        setProperty(THEME, theme);
+        setProperty(AVATAR, avatar);
+        setProperty(HIGHLIGHT, highlight);
+        setProperty(SKIP_SINGLE, skipSingle);
+        setProperty(ALWAYS_PASS, alwaysPass);
+        setProperty(SMART_TARGET, smartTarget);
+        setProperty(POPUP_DELAY, popupDelay);
+        setProperty(MESSAGE_DELAY, messageDelay);
+        setProperty(TOUCHSCREEN, touchscreen);
+        setProperty(MOUSEWHEEL_POPUP, mouseWheelPopup);
+        setProperty(FULLSCREEN, fullScreen);
+        setProperty(PREVIEW_CARD_ON_SELECT, previewCardOnSelect);
+        setProperty(SHOW_LOG_MESSAGES, showLogMessages);
+        setProperty(MULLIGAN_SCREEN, isMulliganScreenActive);
+        setProperty(RECENT_DECK, mostRecentDeckFilename);
+        setProperty(CUSTOM_BACKGROUND, isCustomBackground);
+        setProperty(CARD_IMAGES_PATH, cardImagesPath);
+        setProperty(ANIMATE_GAMEPLAY, animateGameplay);
+        setProperty(PROXY_SETTINGS, proxySettings);
+        setProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
+        setProperty(NEWTURN_ALERT_DURATION, newTurnAlertDuration);
+        setProperty(LAND_PREVIEW_DURATION, landPreviewDuration);
+        setProperty(NONLAND_PREVIEW_DURATION, nonLandPreviewDuration);
+        setProperty(SPLITVIEW_DECKEDITOR, isSplitViewDeckEditor);
+        setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
+        setProperty(PAUSE_GAME_POPUP, isGamePausedOnPopup);
+        setProperty(MISSING_DOWNLOAD_DATE, unimplementedImagesDownloadDate);
+        setProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
+        setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
+        setProperty(HIDE_AI_ACTION_PROMPT, hideAiActionPrompt);
+        setProperty(ROLLOVER_COLOR, rolloverColor.getRGB());
+        setProperty(UI_VOLUME, uiVolume);
+        setProperty(TRANSLATION, translation);
+        setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
+        setProperty(ANIMATION_FLAGS, AnimationFx.getFlags());
+        setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
+        setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
+        setProperty(GAME_VOLUME, gameVolume);
+        setProperty(IMAGES_ON_DEMAND, imagesOnDemand);
+        setProperty(CUSTOM_SCROLLBAR, isCustomScrollBar);
+        setProperty(KEYWORDS_SCREEN, keywordsScreen);
+        setProperty(CARD_DISPLAY_MODE, cardDisplayMode.name());
+        setProperty(GAME_STATS, logGameStats);
+        setProperty(CARDFLOW_SCREEN_SETTINGS, cardFlowScreenSettings);
+        setProperty(CUSTOM_FONTS, useCustomFonts);
         setProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal());
         setProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal());
         setProperty(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal());
     }
 
     public void save() {
-        save(settings);
+        setProperties();
         try {
             FileIO.toFile(getConfigFile(), settings, "Magarena settings");
         } catch (final IOException ex) {
