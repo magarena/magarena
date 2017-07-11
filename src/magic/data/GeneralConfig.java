@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.Properties;
 import magic.data.settings.BooleanSetting;
 import magic.data.settings.IntegerSetting;
+import magic.data.settings.StringSetting;
 import magic.ui.CardTextLanguage;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HandZoneLayout;
@@ -71,7 +72,6 @@ public class GeneralConfig {
     private static final String HIGHLIGHT = "highlight";
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private static final String IMAGES_ON_DEMAND = "imagesOnDemand";
-    private static final String KEYWORDS_SCREEN = "keywordsScreen";
     private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
     private static final String MESSAGE_DELAY = "message";
@@ -604,14 +604,6 @@ public class GeneralConfig {
         return getProperty(CUSTOM_SCROLLBAR, true);
     }
 
-    public void setKeywordsSettings(String text) {
-        setProperty(KEYWORDS_SCREEN, text);
-    }
-
-    public String getKeywordsSettings() {
-        return getProperty(KEYWORDS_SCREEN, "");
-    }
-
     public CardImageDisplayMode getCardImageDisplayMode() {
         return CardImageDisplayMode.valueOf(
             getProperty(CARD_DISPLAY_MODE, CardImageDisplayMode.PRINTED.name())
@@ -661,6 +653,15 @@ public class GeneralConfig {
     }
 
     public void set(IntegerSetting setting, int value) {
+        setProperty(setting.getKey(), value);
+    }
+
+    // string
+    public String get(StringSetting setting) {
+        return getProperty(setting.getKey(), setting.getDefault());
+    }
+
+    public void set(StringSetting setting, String value) {
         setProperty(setting.getKey(), value);
     }
 

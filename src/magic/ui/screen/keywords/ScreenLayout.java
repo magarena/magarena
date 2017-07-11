@@ -1,6 +1,7 @@
 package magic.ui.screen.keywords;
 
 import magic.data.GeneralConfig;
+import magic.data.settings.StringSetting;
 
 enum ScreenLayout {
 
@@ -18,7 +19,7 @@ enum ScreenLayout {
     private static ScreenLayout layout;
     static {
         try {
-            final String setting = GeneralConfig.getInstance().getKeywordsSettings();
+            final String setting = GeneralConfig.getInstance().get(StringSetting.KEYWORDS_SCREEN);
             layout = setting.isEmpty() ? Layout_A : valueOf(setting);
         } catch (Exception ex) {
             System.err.println(ex);
@@ -36,5 +37,5 @@ enum ScreenLayout {
 
     static ScreenLayout getLayout() {
         return layout;
-    }    
+    }
 }
