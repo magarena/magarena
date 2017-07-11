@@ -140,6 +140,42 @@ public class GeneralConfig {
         }
     }
 
+    //---------------------------------------------------------------------
+    // get & set values from Properties instance.
+    //---------------------------------------------------------------------
+
+    private int getInteger(String key, int defaultValue) {
+        return Integer.parseInt(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
+    private long getLong(String key, long defaultValue) {
+        return Long.parseLong(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
+    private boolean getBoolean(String key, boolean defaultValue) {
+        return Boolean.parseBoolean(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
+    private String getString(String key, String defaultValue) {
+        return settings.getProperty(key, defaultValue);
+    }
+
+    private void setProperty(String key, int value) {
+        settings.setProperty(key, String.valueOf(value));
+    }
+
+    private void setProperty(String key, long value) {
+        settings.setProperty(key, String.valueOf(value));
+    }
+
+    private void setProperty(String key, boolean value) {
+        settings.setProperty(key, String.valueOf(value));
+    }
+
+    private void setProperty(String key, String value) {
+        settings.setProperty(key, value);
+    }
+
 
     //---------------------------------------------------------------------
     // Setters & getters for each setting.
@@ -512,38 +548,6 @@ public class GeneralConfig {
 
     public void setLogMessageStyle(MessageStyle aStyle) {
         setProperty(LOG_MESSAGE_STYLE, aStyle.name());
-    }
-
-    private int getInteger(String key, int defaultValue) {
-        return Integer.parseInt(settings.getProperty(key, String.valueOf(defaultValue)));
-    }
-
-    private long getLong(String key, long defaultValue) {
-        return Long.parseLong(settings.getProperty(key, String.valueOf(defaultValue)));
-    }
-
-    private boolean getBoolean(String key, boolean defaultValue) {
-        return Boolean.parseBoolean(settings.getProperty(key, String.valueOf(defaultValue)));
-    }
-
-    private String getString(String key, String defaultValue) {
-        return settings.getProperty(key, defaultValue);
-    }
-
-    private void setProperty(String key, int value) {
-        settings.setProperty(key, String.valueOf(value));
-    }
-
-    private void setProperty(String key, long value) {
-        settings.setProperty(key, String.valueOf(value));
-    }
-
-    private void setProperty(String key, boolean value) {
-        settings.setProperty(key, String.valueOf(value));
-    }
-
-    private void setProperty(String key, String value) {
-        settings.setProperty(key, value);
     }
 
     public ImageSizePresets getPreferredImageSize() {
