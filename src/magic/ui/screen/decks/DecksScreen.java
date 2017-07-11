@@ -22,11 +22,9 @@ public class DecksScreen extends HeaderFooterScreen {
     private static final String _S6 = "Sample Hand";
     private static final String _S7 = "See what kind of Hand you might be dealt from this deck.";
     private static final String _S8 = "A deck with a minimum of 7 cards is required first.";
-    private static final String _S9 = "This deck is invalid.";
     private static final String _S10 = "Deck View";
     private static final String _S11 = "Shows complete deck using tiled card images.";
     private static final String _S12 = "Deck is empty! Nothing to show.";
-    private static final String _S13 = "This deck is invalid.";
 
     private final DecksScreenPanel screenContent;
     private final IDeckConsumer deckConsumer;
@@ -64,7 +62,7 @@ public class DecksScreen extends HeaderFooterScreen {
         if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
             showInvalidActionMessage(MText.get(_S8));
         } else if (screenContent.getDeck().isValid() == false) {
-            showInvalidActionMessage(MText.get(_S9));
+            showInvalidActionMessage(MText.get(_S5));
         } else {
             ScreenController.showSampleHandScreen(screenContent.getDeck());
         }
@@ -74,7 +72,7 @@ public class DecksScreen extends HeaderFooterScreen {
         if (screenContent.getDeck() == null || screenContent.getDeck().isEmpty()) {
             showInvalidActionMessage(MText.get(_S12));
         } else if (screenContent.getDeck().isValid() == false) {
-            showInvalidActionMessage(MText.get(_S13));
+            showInvalidActionMessage(MText.get(_S5));
         } else {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());
         }
