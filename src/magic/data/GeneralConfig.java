@@ -181,7 +181,40 @@ public class GeneralConfig {
     }
 
     //---------------------------------------------------------------------
+    // new api for setting & getting application settings.
+    // TODO: migrate all settings constants to *Setting enum.
+    //---------------------------------------------------------------------
+
+    // boolean
+    public boolean get(BooleanSetting setting) {
+        return getProperty(setting.getKey(), setting.getDefault());
+    }
+
+    public void set(BooleanSetting setting, boolean value) {
+        setProperty(setting.getKey(), value);
+    }
+
+    // integer
+    public int get(IntegerSetting setting) {
+        return getProperty(setting.getKey(), setting.getDefault());
+    }
+
+    public void set(IntegerSetting setting, int value) {
+        setProperty(setting.getKey(), value);
+    }
+
+    // string
+    public String get(StringSetting setting) {
+        return getProperty(setting.getKey(), setting.getDefault());
+    }
+
+    public void set(StringSetting setting, String value) {
+        setProperty(setting.getKey(), value);
+    }
+
+    //---------------------------------------------------------------------
     // Setters & getters for each setting.
+    // TODO: replace with new get/set api defined above.
     //---------------------------------------------------------------------
 
     public String getProxySettings() {
@@ -636,33 +669,6 @@ public class GeneralConfig {
 
     public boolean useCustomFonts() {
         return getProperty(CUSTOM_FONTS, true);
-    }
-
-    // boolean
-    public boolean get(BooleanSetting setting) {
-        return getProperty(setting.getKey(), setting.getDefault());
-    }
-
-    public void set(BooleanSetting setting, boolean value) {
-        setProperty(setting.getKey(), value);
-    }
-
-    // integer
-    public int get(IntegerSetting setting) {
-        return getProperty(setting.getKey(), setting.getDefault());
-    }
-
-    public void set(IntegerSetting setting, int value) {
-        setProperty(setting.getKey(), value);
-    }
-
-    // string
-    public String get(StringSetting setting) {
-        return getProperty(setting.getKey(), setting.getDefault());
-    }
-
-    public void set(StringSetting setting, String value) {
-        setProperty(setting.getKey(), value);
     }
 
 }
