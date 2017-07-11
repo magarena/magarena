@@ -118,10 +118,10 @@ public class GeneralConfig {
 
     public void load() {
         settings = FileIO.toProp(getConfigFile());
-        CardsTableStyle.setStyle(getInteger(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
-        ExplorerScreenLayout.setLayout(getInteger(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
-        HandZoneLayout.setLayout(getInteger(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
-        AnimationFx.setFlags(getLong(ANIMATION_FLAGS, AnimationFx.getFlags()));
+        CardsTableStyle.setStyle(getProperty(CARDS_TABLE_STYLE, CardsTableStyle.getStyle().ordinal()));
+        ExplorerScreenLayout.setLayout(getProperty(EXPLORER_LAYOUT, ExplorerScreenLayout.getLayout().ordinal()));
+        HandZoneLayout.setLayout(getProperty(HAND_ZONE_LAYOUT, HandZoneLayout.getLayout().ordinal()));
+        AnimationFx.setFlags(getProperty(ANIMATION_FLAGS, AnimationFx.getFlags()));
     }
 
     private void setProperties() {
@@ -141,48 +141,51 @@ public class GeneralConfig {
     }
 
     //---------------------------------------------------------------------
-    // get & set values from Properties instance.
+    // get & set values of different types from Properties instance.
     //---------------------------------------------------------------------
 
-    private int getInteger(String key, int defaultValue) {
+    // integer value
+    private int getProperty(String key, int defaultValue) {
         return Integer.parseInt(settings.getProperty(key, String.valueOf(defaultValue)));
-    }
-
-    private long getLong(String key, long defaultValue) {
-        return Long.parseLong(settings.getProperty(key, String.valueOf(defaultValue)));
-    }
-
-    private boolean getBoolean(String key, boolean defaultValue) {
-        return Boolean.parseBoolean(settings.getProperty(key, String.valueOf(defaultValue)));
-    }
-
-    private String getString(String key, String defaultValue) {
-        return settings.getProperty(key, defaultValue);
     }
 
     private void setProperty(String key, int value) {
         settings.setProperty(key, String.valueOf(value));
     }
 
+    // long value
+    private long getProperty(String key, long defaultValue) {
+        return Long.parseLong(settings.getProperty(key, String.valueOf(defaultValue)));
+    }
+
     private void setProperty(String key, long value) {
         settings.setProperty(key, String.valueOf(value));
+    }
+
+    // boolean value
+    private boolean getProperty(String key, boolean defaultValue) {
+        return Boolean.parseBoolean(settings.getProperty(key, String.valueOf(defaultValue)));
     }
 
     private void setProperty(String key, boolean value) {
         settings.setProperty(key, String.valueOf(value));
     }
 
+    // string value
+    private String getProperty(String key, String defaultValue) {
+        return settings.getProperty(key, defaultValue);
+    }
+
     private void setProperty(String key, String value) {
         settings.setProperty(key, value);
     }
-
 
     //---------------------------------------------------------------------
     // Setters & getters for each setting.
     //---------------------------------------------------------------------
 
     public String getProxySettings() {
-        return getString(PROXY_SETTINGS, "").trim();
+        return getProperty(PROXY_SETTINGS, "").trim();
     }
 
     public Proxy getProxy() {
@@ -211,11 +214,11 @@ public class GeneralConfig {
     }
 
     public int getDeckFileMaxLines() {
-        return getInteger(DECK_FILE_MAX_LINES, 500);
+        return getProperty(DECK_FILE_MAX_LINES, 500);
     }
 
     public boolean showGameplayAnimations() {
-        return getBoolean(ANIMATE_GAMEPLAY, true);
+        return getProperty(ANIMATE_GAMEPLAY, true);
     }
 
     public void setShowGameplayAnimations(boolean b) {
@@ -223,11 +226,11 @@ public class GeneralConfig {
     }
 
     public boolean isCustomCardImagesPath() {
-        return getString(CARD_IMAGES_PATH, "").isEmpty() == false;
+        return getProperty(CARD_IMAGES_PATH, "").isEmpty() == false;
     }
 
     public Path getCardImagesPath() {
-        String setting = getString(CARD_IMAGES_PATH, "");
+        String setting = getProperty(CARD_IMAGES_PATH, "");
         return setting.isEmpty()
             ? MagicFileSystem.getDataPath(MagicFileSystem.DataPath.IMAGES)
             : Paths.get(setting);
@@ -241,7 +244,7 @@ public class GeneralConfig {
     }
 
     public boolean isCustomBackground() {
-        return getBoolean(CUSTOM_BACKGROUND, false);
+        return getProperty(CUSTOM_BACKGROUND, false);
     }
 
     public void setCustomBackground(boolean isCustomBackground) {
@@ -261,7 +264,7 @@ public class GeneralConfig {
      * @return path object or null if setting is missing.
      */
     public Path getMostRecentDeckFilePath() {
-        String setting = getString(RECENT_DECK, "").trim();
+        String setting = getProperty(RECENT_DECK, "").trim();
         return !setting.isEmpty() ? Paths.get(setting) : null;
     }
 
@@ -270,7 +273,7 @@ public class GeneralConfig {
     }
 
     public boolean isMaximized() {
-        return getBoolean(MAXIMIZED, false);
+        return getProperty(MAXIMIZED, false);
     }
 
     public void setMaximized(final boolean maximized) {
@@ -278,7 +281,7 @@ public class GeneralConfig {
     }
 
     public String getTheme() {
-        return getString(THEME, "felt");
+        return getProperty(THEME, "felt");
     }
 
     public void setTheme(String theme) {
@@ -286,11 +289,11 @@ public class GeneralConfig {
     }
 
     public String getAvatar() {
-        return getString(AVATAR, "legend");
+        return getProperty(AVATAR, "legend");
     }
 
     public String getHighlight() {
-        return getString(HIGHLIGHT, "theme");
+        return getProperty(HIGHLIGHT, "theme");
     }
 
     public void setHighlight(String highlight) {
@@ -310,7 +313,7 @@ public class GeneralConfig {
     }
 
     public String getFiremindAccessToken() {
-        return getString(FIREMIND_ACCESS_TOKEN, "");
+        return getProperty(FIREMIND_ACCESS_TOKEN, "");
     }
 
     public void setFiremindAccessToken(String firemindAccessToken) {
@@ -318,7 +321,7 @@ public class GeneralConfig {
     }
 
     public boolean getSkipSingle() {
-        return getBoolean(SKIP_SINGLE, true);
+        return getProperty(SKIP_SINGLE, true);
     }
 
     public void setSkipSingle(boolean skipSingle) {
@@ -326,7 +329,7 @@ public class GeneralConfig {
     }
 
     public boolean getAlwaysPass() {
-        return getBoolean(ALWAYS_PASS, true);
+        return getProperty(ALWAYS_PASS, true);
     }
 
     public void setAlwaysPass(boolean alwaysPass) {
@@ -334,7 +337,7 @@ public class GeneralConfig {
     }
 
     public boolean getSmartTarget() {
-        return getBoolean(SMART_TARGET, false);
+        return getProperty(SMART_TARGET, false);
     }
 
     public void setSmartTarget(boolean smartTarget) {
@@ -342,7 +345,7 @@ public class GeneralConfig {
     }
 
     public int getPopupDelay() {
-        return getInteger(POPUP_DELAY, 300);
+        return getProperty(POPUP_DELAY, 300);
     }
 
     public void setPopupDelay(int popupDelay) {
@@ -350,7 +353,7 @@ public class GeneralConfig {
     }
 
     public int getMessageDelay() {
-        return getInteger(MESSAGE_DELAY, 2000);
+        return getProperty(MESSAGE_DELAY, 2000);
     }
 
     public void setMessageDelay(int messageDelay) {
@@ -358,7 +361,7 @@ public class GeneralConfig {
     }
 
     public boolean isTouchscreen() {
-        return getBoolean(TOUCHSCREEN, false);
+        return getProperty(TOUCHSCREEN, false);
     }
 
     public void setTouchscreen(boolean touchscreen) {
@@ -366,7 +369,7 @@ public class GeneralConfig {
     }
 
     public boolean isMouseWheelPopup() {
-        return getBoolean(MOUSEWHEEL_POPUP, false);
+        return getProperty(MOUSEWHEEL_POPUP, false);
     }
 
     public void setMouseWheelPopup(boolean mouseWheelPopup) {
@@ -374,14 +377,14 @@ public class GeneralConfig {
     }
 
     public boolean isFullScreen() {
-        return getBoolean(FULLSCREEN, false);
+        return getProperty(FULLSCREEN, false);
     }
     public void setFullScreen(boolean b) {
         setProperty(FULLSCREEN, b);
     }
 
     public boolean isPreviewCardOnSelect() {
-        return getBoolean(PREVIEW_CARD_ON_SELECT, true);
+        return getProperty(PREVIEW_CARD_ON_SELECT, true);
     }
 
     public void setPreviewCardOnSelect(boolean b) {
@@ -389,7 +392,7 @@ public class GeneralConfig {
     }
 
     public boolean isLogMessagesVisible() {
-        return getBoolean(SHOW_LOG_MESSAGES, true);
+        return getProperty(SHOW_LOG_MESSAGES, true);
     }
 
     public void setLogMessagesVisible(boolean b) {
@@ -397,7 +400,7 @@ public class GeneralConfig {
     }
 
     public boolean showMulliganScreen() {
-        return getBoolean(MULLIGAN_SCREEN, true);
+        return getProperty(MULLIGAN_SCREEN, true);
     }
 
     public void setShowMulliganScreen(boolean b) {
@@ -405,7 +408,7 @@ public class GeneralConfig {
     }
 
     public int getNewTurnAlertDuration() {
-        return getInteger(NEWTURN_ALERT_DURATION, 3000);
+        return getProperty(NEWTURN_ALERT_DURATION, 3000);
     }
 
     public void setNewTurnAlertDuration(int millisecs) {
@@ -413,7 +416,7 @@ public class GeneralConfig {
     }
 
     public int getLandPreviewDuration() {
-        return getInteger(LAND_PREVIEW_DURATION, 5000);
+        return getProperty(LAND_PREVIEW_DURATION, 5000);
     }
 
     public void setLandPreviewDuration(final int millisecs) {
@@ -421,7 +424,7 @@ public class GeneralConfig {
     }
 
     public int getNonLandPreviewDuration() {
-        return getInteger(NONLAND_PREVIEW_DURATION, 10000);
+        return getProperty(NONLAND_PREVIEW_DURATION, 10000);
     }
 
     public void setNonLandPreviewDuration(int millisecs) {
@@ -429,7 +432,7 @@ public class GeneralConfig {
     }
 
     public boolean isSplitViewDeckEditor() {
-        return getBoolean(SPLITVIEW_DECKEDITOR, false);
+        return getProperty(SPLITVIEW_DECKEDITOR, false);
     }
 
     public void setIsSplitViewDeckEditor(boolean b) {
@@ -437,7 +440,7 @@ public class GeneralConfig {
     }
 
     public String getIgnoredVersionAlert() {
-        return getString(IGNORED_VERSION_ALERT, "");
+        return getProperty(IGNORED_VERSION_ALERT, "");
     }
 
     public void setIgnoredVersionAlert(String version) {
@@ -451,11 +454,11 @@ public class GeneralConfig {
      * Non-UI: requires manual update of config file to change.
      */
     public int getOverlayMinimumHeight() {
-        return getInteger(OVERLAY_PERMANENT_MIN_HEIGHT, 30);
+        return getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, 30);
     }
 
     public boolean isGamePausedOnPopup() {
-        return getBoolean(PAUSE_GAME_POPUP, false);
+        return getProperty(PAUSE_GAME_POPUP, false);
     }
 
     public void setIsGamePausedOnPopup(boolean b) {
@@ -463,7 +466,7 @@ public class GeneralConfig {
     }
 
     public String getDuelSidebarLayout() {
-        return getString(DUEL_SIDEBAR_LAYOUT, "LOGSTACK,PLAYER2,TURNINFO,PLAYER1");
+        return getProperty(DUEL_SIDEBAR_LAYOUT, "LOGSTACK,PLAYER2,TURNINFO,PLAYER1");
     }
 
     public void setDuelSidebarLayout(String layout) {
@@ -478,7 +481,7 @@ public class GeneralConfig {
     public Date getPlayableImagesDownloadDate() {
         try {
             SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-            return df.parse(getString(PLAYABLE_DOWNLOAD_DATE, "1970-01-01"));
+            return df.parse(getProperty(PLAYABLE_DOWNLOAD_DATE, "1970-01-01"));
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
         }
@@ -497,7 +500,7 @@ public class GeneralConfig {
     public Date getUnimplementedImagesDownloadDate() {
         try {
             SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-            return df.parse(getString(MISSING_DOWNLOAD_DATE, "1970-01-01"));
+            return df.parse(getProperty(MISSING_DOWNLOAD_DATE, "1970-01-01"));
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
         }
@@ -509,7 +512,7 @@ public class GeneralConfig {
     }
 
     public boolean getHideAiActionPrompt() {
-        return getBoolean(HIDE_AI_ACTION_PROMPT, false);
+        return getProperty(HIDE_AI_ACTION_PROMPT, false);
     }
 
     public void setHideAiActionPrompt(boolean b) {
@@ -517,7 +520,7 @@ public class GeneralConfig {
     }
 
     public Color getRolloverColor() {
-        return new Color(getInteger(ROLLOVER_COLOR, Color.YELLOW.getRGB()));
+        return new Color(getProperty(ROLLOVER_COLOR, Color.YELLOW.getRGB()));
     }
 
     public void setRolloverColor(Color aColor) {
@@ -525,7 +528,7 @@ public class GeneralConfig {
     }
 
     public int getUiVolume() {
-        return getInteger(UI_VOLUME, 80);
+        return getProperty(UI_VOLUME, 80);
     }
 
     public void setUiVolume(int vol) {
@@ -533,7 +536,7 @@ public class GeneralConfig {
     }
 
     public String getTranslation() {
-        return getString(TRANSLATION, DEFAULT_TRANSLATION);
+        return getProperty(TRANSLATION, DEFAULT_TRANSLATION);
     }
 
     public void setTranslation(String value) {
@@ -542,7 +545,7 @@ public class GeneralConfig {
 
     public MessageStyle getLogMessageStyle() {
         return MessageStyle.valueOf(
-            getString(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name())
+            getProperty(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name())
         );
     }
 
@@ -552,7 +555,7 @@ public class GeneralConfig {
 
     public ImageSizePresets getPreferredImageSize() {
         return ImageSizePresets.valueOf(
-            getString(PREF_IMAGE_SIZE, ImageSizePresets.SIZE_ORIGINAL.name())
+            getProperty(PREF_IMAGE_SIZE, ImageSizePresets.SIZE_ORIGINAL.name())
         );
     }
 
@@ -562,7 +565,7 @@ public class GeneralConfig {
 
     public CardTextLanguage getCardTextLanguage() {
         return CardTextLanguage.valueOf(
-            getString(CARD_TEXT_LANG, CardTextLanguage.ENGLISH.name())
+            getProperty(CARD_TEXT_LANG, CardTextLanguage.ENGLISH.name())
         );
     }
 
@@ -571,7 +574,7 @@ public class GeneralConfig {
     }
 
     public int getGameVolume() {
-        return getInteger(GAME_VOLUME, 80);
+        return getProperty(GAME_VOLUME, 80);
     }
 
     public void setGameVolume(int value) {
@@ -579,7 +582,7 @@ public class GeneralConfig {
     }
 
     public boolean getImagesOnDemand() {
-        return getBoolean(IMAGES_ON_DEMAND, false);
+        return getProperty(IMAGES_ON_DEMAND, false);
     }
 
     public void setImagesOnDemand(boolean b) {
@@ -588,10 +591,10 @@ public class GeneralConfig {
 
     public Rectangle getSizableFrameBounds() {
         return new Rectangle(
-            getInteger(FRAME_LEFT, -1),
-            getInteger(FRAME_TOP, -1),
-            getInteger(FRAME_WIDTH, DEFAULT_FRAME_WIDTH),
-            getInteger(FRAME_HEIGHT, DEFAULT_FRAME_HEIGHT)
+            getProperty(FRAME_LEFT, -1),
+            getProperty(FRAME_TOP, -1),
+            getProperty(FRAME_WIDTH, DEFAULT_FRAME_WIDTH),
+            getProperty(FRAME_HEIGHT, DEFAULT_FRAME_HEIGHT)
         );
     }
 
@@ -614,7 +617,7 @@ public class GeneralConfig {
     }
 
     public boolean isCustomScrollBar() {
-        return getBoolean(CUSTOM_SCROLLBAR, true);
+        return getProperty(CUSTOM_SCROLLBAR, true);
     }
 
     public void setKeywordsSettings(String text) {
@@ -622,12 +625,12 @@ public class GeneralConfig {
     }
 
     public String getKeywordsSettings() {
-        return getString(KEYWORDS_SCREEN, "");
+        return getProperty(KEYWORDS_SCREEN, "");
     }
 
     public CardImageDisplayMode getCardImageDisplayMode() {
         return CardImageDisplayMode.valueOf(
-            getString(CARD_DISPLAY_MODE, CardImageDisplayMode.PRINTED.name())
+            getProperty(CARD_DISPLAY_MODE, CardImageDisplayMode.PRINTED.name())
         );
     }
 
@@ -640,7 +643,7 @@ public class GeneralConfig {
     }
 
     public boolean isGameStatsEnabled() {
-        return getBoolean(GAME_STATS, true);
+        return getProperty(GAME_STATS, true);
     }
 
     public static boolean isGameStatsOn() {
@@ -648,7 +651,7 @@ public class GeneralConfig {
     }
 
     public String getCardFlowScreenSettings() {
-        return getString(CARDFLOW_SCREEN_SETTINGS, "");
+        return getProperty(CARDFLOW_SCREEN_SETTINGS, "");
     }
 
     public void setCardFlowScreenSettings(String settings) {
@@ -656,7 +659,7 @@ public class GeneralConfig {
     }
 
     public boolean useCustomFonts() {
-        return getBoolean(CUSTOM_FONTS, true);
+        return getProperty(CUSTOM_FONTS, true);
     }
 
 }
