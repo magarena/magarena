@@ -291,7 +291,7 @@ public class DeckUtils {
      * @return
      */
     public static MagicDeck loadDeckFromFile(final Path deckFilePath) {
-        if (!deckFilePath.toFile().exists()) {
+        if (deckFilePath == null || !deckFilePath.toFile().exists()) {
             return new MagicDeck();
         }
         final List<String> lines = getDeckFileContent(deckFilePath.toString());

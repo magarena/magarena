@@ -131,17 +131,6 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
         );
     }
 
-    private static MagicDeck getMostRecentEditedDeck() {
-        Path deckFilePath = GeneralConfig.getInstance().getMostRecentDeckFilePath();
-        if (deckFilePath != null) {
-            MagicDeck newDeck = tryLoadDeck(deckFilePath);
-            if (newDeck.isValid()) {
-                return newDeck;
-            }
-        }
-        return new MagicDeck();
-    }
-
     private static MagicDeck tryLoadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
@@ -151,6 +140,10 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
             Logger.getLogger(DeckEditorScreen.class.getName()).log(Level.WARNING, null, ex);
             return new MagicDeck();
         }
+    }
+
+    private static MagicDeck getMostRecentEditedDeck() {
+        return tryLoadDeck(GeneralConfig.getInstance().getMostRecentDeckFilePath());
     }
 
     private PlainMenuButton getLeftActionButton() {

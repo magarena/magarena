@@ -49,8 +49,6 @@ public class DecksScreen extends HeaderFooterScreen {
     private void doSelectDeck() {
         if (screenContent.getDeck() == null) {
             showInvalidActionMessage(MText.get(_S4));
-        } else if (screenContent.getDeck().isValid() == false) {
-            showInvalidActionMessage(MText.get(_S5));
         } else {
             if (deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath())) {
                 ScreenController.closeActiveScreen(false);
