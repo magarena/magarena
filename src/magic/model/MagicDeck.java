@@ -3,6 +3,7 @@ package magic.model;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 import magic.data.DeckType;
 import magic.utility.DeckUtils;
 
@@ -156,11 +157,20 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     }
 
     /**
+     * Skips any invalid cards in deck.
+     */
+    private List<MagicCardDefinition> getValidCards() {
+        return this.stream()
+            .filter(card -> card.isValid())
+            .collect(Collectors.toList());
+    }
+
+    /**
      *  Shuffles a copy of the deck and returns the first {@code count}
      *  cards or all cards, whichever is smaller.
      */
     public List<MagicCardDefinition> getRandomCards(int count) {
-        List<MagicCardDefinition> cards = new ArrayList<>(this);
+        List<MagicCardDefinition> cards = getValidCards();
         Collections.shuffle(cards, new MagicRandom(MagicRandom.nextRNGInt()));
         return cards.subList(0, Math.min(count, size()));
     }
