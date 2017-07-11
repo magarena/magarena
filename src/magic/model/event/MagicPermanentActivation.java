@@ -61,9 +61,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             if (event.hasChoice() == true) {
                 if (event.isSatisfied() == false) {
                     return false;
-                } else {
-                    final Object[] choice = event.getArtificialChoiceResults(game).get(0);
-                    game.executeEvent(event, choice);
                 }
             }
         }
@@ -75,7 +72,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         boolean canPlay = super.canPlay(game, player, source, useHints);
 
         // check that choosing the first choice for each cost results in valid payment of all costs
-        if (canPlay) {
+        if (canPlay && source.producesMana()) {
             game.snapshot();
             canPlay = canPayCosts(game, source);
             game.restore();
