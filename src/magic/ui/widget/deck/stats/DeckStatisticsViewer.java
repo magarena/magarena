@@ -113,7 +113,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
     public void setDeck(MagicDeck aDeck) {
         statistics = new CardStatistics(
-            aDeck == null || !aDeck.isValid() ? new MagicDeck() : aDeck
+            aDeck == null ? new MagicDeck() : aDeck
         );
         statsTable.setStats(statistics);
         manaCurvePanel.setStats(statistics);
