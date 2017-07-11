@@ -9,6 +9,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 
 @SuppressWarnings("serial")
 class MagicStickyFrame extends JFrame {
@@ -111,7 +112,7 @@ class MagicStickyFrame extends JFrame {
         setMinimumSize(MIN_SIZE);
         setSizableFrameState();
 
-        if (config.isMaximized()) {
+        if (config.get(BooleanSetting.MAXIMIZE_FRAME) == true) {
             setExtendedState(JFrame.MAXIMIZED_BOTH);
         }
 
@@ -122,9 +123,13 @@ class MagicStickyFrame extends JFrame {
         }
     }
 
+    private boolean isMaximized() {
+        return normalFrameState == Frame.MAXIMIZED_BOTH;
+    }
+
     protected void saveSizeAndPosition() {
 
-        config.setMaximized(normalFrameState == Frame.MAXIMIZED_BOTH);
+        config.set(BooleanSetting.MAXIMIZE_FRAME, isMaximized());
         config.setFullScreen(isFullScreen());
 
         if (getExtendedState() == Frame.NORMAL) {

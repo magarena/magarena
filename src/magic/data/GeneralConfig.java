@@ -14,6 +14,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import magic.data.settings.BooleanSetting;
 import magic.ui.CardTextLanguage;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HandZoneLayout;
@@ -72,7 +73,6 @@ public class GeneralConfig {
     private static final String KEYWORDS_SCREEN = "keywordsScreen";
     private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
-    private static final String MAXIMIZED = "maximized";
     private static final String MESSAGE_DELAY = "message";
     private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
@@ -270,14 +270,6 @@ public class GeneralConfig {
 
     public void setMostRecentDeckFilename(String filename) {
         setProperty(RECENT_DECK, filename.trim());
-    }
-
-    public boolean isMaximized() {
-        return getProperty(MAXIMIZED, false);
-    }
-
-    public void setMaximized(final boolean maximized) {
-        setProperty(MAXIMIZED, maximized);
     }
 
     public String getTheme() {
@@ -660,6 +652,14 @@ public class GeneralConfig {
 
     public boolean useCustomFonts() {
         return getProperty(CUSTOM_FONTS, true);
+    }
+
+    public boolean get(BooleanSetting setting) {
+        return getProperty(setting.getKey(), setting.getDefault());
+    }
+
+    public void set(BooleanSetting setting, boolean value) {
+        setProperty(setting.getKey(), value);
     }
 
 }
