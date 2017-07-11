@@ -14,6 +14,7 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineUnavailableException;
 import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.utility.MagicResources;
 
 public enum MagicSound {
@@ -65,7 +66,7 @@ public enum MagicSound {
 
     private int getVolume() {
         if (isUISound()) {
-            return config.getUiVolume();
+            return config.get(IntegerSetting.UI_VOLUME);
         } else if (isGameSound()) {
             return config.getGameVolume();
         } else {
@@ -126,7 +127,7 @@ public enum MagicSound {
             System.err.println("WARNING. Unable to play clip " + url.toExternalForm() + ", " + ex.getMessage());
             // turn off all sound permanently.
             config.setGameVolume(0);
-            config.setUiVolume(0);
+            config.set(IntegerSetting.UI_VOLUME, 0);
             config.save();
         }
     }

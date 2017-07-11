@@ -4,9 +4,10 @@ import java.awt.event.MouseListener;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.translate.MText;
-import magic.ui.MagicSound;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicSound;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -24,7 +25,7 @@ class AudioPanel extends JPanel {
 
     AudioPanel(MouseListener aListener) {
 
-        uiVolumeSlider = new VolumeSliderPanel(config.getUiVolume(), MagicSound.ALERT);
+        uiVolumeSlider = new VolumeSliderPanel(config.get(IntegerSetting.UI_VOLUME), MagicSound.ALERT);
         uiVolumeSlider.setToolTipText(MText.get(_S9));
         uiVolumeSlider.setFocusable(false);
         uiVolumeSlider.addMouseListener(aListener);
@@ -43,7 +44,7 @@ class AudioPanel extends JPanel {
     }
 
     void saveSettings() {
-        config.setUiVolume(uiVolumeSlider.getValue());
+        config.set(IntegerSetting.UI_VOLUME, uiVolumeSlider.getValue());
         config.setGameVolume(gameVolumeSlider.getValue());
     }
 

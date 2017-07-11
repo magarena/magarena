@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 import magic.data.settings.BooleanSetting;
+import magic.data.settings.IntegerSetting;
 import magic.ui.CardTextLanguage;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HandZoneLayout;
@@ -94,7 +95,6 @@ public class GeneralConfig {
     private static final String THEME = "theme";
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String TRANSLATION = "translation";
-    private static final String UI_VOLUME = "uiSoundVolume";
 
     // obsolete settings that should not be imported into the current version
     // or version sensitive settings that should not be overwritten.
@@ -519,14 +519,6 @@ public class GeneralConfig {
         setProperty(ROLLOVER_COLOR, aColor.getRGB());
     }
 
-    public int getUiVolume() {
-        return getProperty(UI_VOLUME, 80);
-    }
-
-    public void setUiVolume(int vol) {
-        setProperty(UI_VOLUME, vol);
-    }
-
     public String getTranslation() {
         return getProperty(TRANSLATION, DEFAULT_TRANSLATION);
     }
@@ -654,11 +646,21 @@ public class GeneralConfig {
         return getProperty(CUSTOM_FONTS, true);
     }
 
+    // boolean
     public boolean get(BooleanSetting setting) {
         return getProperty(setting.getKey(), setting.getDefault());
     }
 
     public void set(BooleanSetting setting, boolean value) {
+        setProperty(setting.getKey(), value);
+    }
+
+    // integer
+    public int get(IntegerSetting setting) {
+        return getProperty(setting.getKey(), setting.getDefault());
+    }
+
+    public void set(IntegerSetting setting, int value) {
         setProperty(setting.getKey(), value);
     }
 
