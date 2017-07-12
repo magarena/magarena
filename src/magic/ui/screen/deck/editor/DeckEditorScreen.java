@@ -1,5 +1,7 @@
 package magic.ui.screen.deck.editor;
 
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
@@ -20,7 +22,9 @@ import magic.ui.screen.MScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.widget.PlainMenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
+import magic.utility.DeckParser;
 import magic.utility.DeckUtils;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
@@ -50,6 +54,8 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
     private static final String _S30 = "Invalid deck filename";
     private static final String _S31 = "Deck name (must be a valid filename)";
     private static final String _S32 = "Save player deck";
+
+    private static final Logger LOGGER = Logger.getLogger(DeckEditorScreen.class.getName());
 
     private ContentPanel contentPanel;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
@@ -306,6 +312,36 @@ public class DeckEditorScreen extends HeaderFooterScreen implements IDeckConsume
 
     void deckUpdated(MagicDeck deck) {
         deckStatusPanel.setDeck(deck, false);
+    }
+
+    private String getDroppedFileContents(File aFile) {
+        try {
+            return FileIO.toStr(aFile);
+        } catch (IOException ex) {
+            LOGGER.log(Level.WARNING, null, ex);
+        }
+        return "";
+    }
+
+    @Override
+    public boolean doFileDropAction(File aFile) {
+        if (aFile.length() > 2048) {
+            ScreenController.showWarningMessage("File too big to be a valid deck file (greater than 2 MB).");
+            return true;
+        }
+        String text = getDroppedFileContents(aFile);
+        if (text.isEmpty()) {
+            return false;
+        }
+        MagicDeck deck = DeckParser.parseText(text);
+        if (deck.isNotEmpty()) {
+            setDeck(deck);
+            return true;
+        } else if (!deck.getDescription().isEmpty()) {
+            LOGGER.log(Level.WARNING, deck.getDescription());
+            return false;
+        }
+        return false;
     }
 
 }

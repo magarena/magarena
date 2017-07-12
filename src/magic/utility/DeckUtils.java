@@ -12,7 +12,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +23,6 @@ import java.util.logging.Logger;
 import java.util.zip.CRC32;
 import magic.data.CardDefinitions;
 import magic.data.DeckType;
-import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
@@ -32,24 +30,13 @@ import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
-import magic.translate.MText;
 import magic.utility.MagicFileSystem.DataPath;
 import org.apache.commons.io.FilenameUtils;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class DeckUtils {
 
-    // translatable strings
-    private static final String _S1 = "Deck file is empty.";
-    private static final String _S2 = "Lines in file exceeds %d.";
-    private static final String _S3 = "...more...";
-    private static final String _S4 = "line %d: line length exceeds %d characters.";
-    private static final String _S5 = "line %d: invalid line format.";
-    private static final String _S6 = "Expected: <quantity><space><card name>";
-    private static final String _S7 = "line %d: invalid card (%s).";
-
     public static final String DECK_EXTENSION=".dec";
-    private static final int DECK_FILE_MAX_LINES = GeneralConfig.getInstance().getDeckFileMaxLines();
 
     private static final String[] CARD_TYPES={"creatures","spells","lands"};
 
@@ -151,90 +138,6 @@ public class DeckUtils {
         }
     }
 
-    private static MagicDeck parseDeckFileContent(final List<String> content) {
-
-        final MagicDeck deck = new MagicDeck();
-
-        if (content.isEmpty()) {
-            deck.setInvalidDeck(MText.get(_S1));
-            return deck;
-        }
-
-        if (content.size() > DECK_FILE_MAX_LINES) {
-            deck.setInvalidDeck(MText.get(_S2, DECK_FILE_MAX_LINES));
-            return deck;
-        }
-
-        final int MAX_LINE_ERRORS = 3;
-        final int MAX_LINE_LENGTH = 50; // characters.
-        int lineNumber = 0;
-        final List<String> lineErrors = new ArrayList<>();
-
-        for (final String nextLine: content) {
-
-            if (lineErrors.size() > MAX_LINE_ERRORS) {
-                lineErrors.remove(lineErrors.size()-1);
-                lineErrors.add(MText.get(_S3));
-                deck.clear();
-                break;
-            }
-
-            lineNumber++;
-            final String line = nextLine.trim();
-            if (!line.isEmpty() && !line.startsWith("#")) {
-                if (line.startsWith(">")) {
-                    deck.setDescription(line.substring(1));
-                } else {
-
-                    // check line length
-                    if (line.length() > MAX_LINE_LENGTH) {
-                        lineErrors.add(MText.get(_S4, lineNumber, MAX_LINE_LENGTH));
-                        continue;
-                    }
-
-                    // check for space delimiter
-                    final int index = line.indexOf(' ');
-                    if (index == -1) {
-                        lineErrors.add(String.format("%s\n%s", MText.get(_S5, lineNumber), MText.get(_S6)));
-                        continue;
-                    }
-
-                    // is expected card quantity a valid int?
-                    int cardQuantity;
-                    try {
-                        cardQuantity = Integer.parseInt(line.substring(0,index));
-                    } catch (NumberFormatException e) {
-                        lineErrors.add(String.format("%s\n%s", MText.get(_S5, lineNumber), MText.get(_S6)));
-                        continue;
-                    }
-
-                    // validate card name
-                    final String cardName = line.substring(index+1).trim();
-                    MagicCardDefinition cardDefinition = getCard(cardName);
-
-                    for (int count=cardQuantity; count > 0; count--) {
-                        deck.add(cardDefinition);
-                    }
-
-                    if (cardDefinition.isInvalid() || cardDefinition.isNonPlayable()) {
-                        lineErrors.add(MText.get(_S7, lineNumber, cardDefinition.getName()));
-                    }
-
-                }
-            }
-        }
-
-        if (lineErrors.size() > 0) {
-            final StringBuffer sb = new StringBuffer();
-            for (String lineError : lineErrors) {
-                sb.append(lineError).append("\n");
-            }
-            deck.setInvalidDeck(sb.toString());
-        }
-
-        return deck;
-    }
-
     private static long getDeckFileChecksum(final Path deckFilePath) {
         try (
             InputStream fis = new FileInputStream(deckFilePath.toFile());
@@ -296,7 +199,7 @@ public class DeckUtils {
             return new MagicDeck();
         }
         final List<String> lines = getDeckFileContent(deckFilePath.toString());
-        final MagicDeck deck = parseDeckFileContent(lines);
+        final MagicDeck deck = DeckParser.parseLines(lines);
         deck.setFilename(deckFilePath.getFileName().toString());
         deck.setDeckFileChecksum(getDeckFileChecksum(deckFilePath));
         deck.setDeckType(getDeckType(deckFilePath));
@@ -491,15 +394,5 @@ public class DeckUtils {
             }
         }
         return null;
-    }
-
-    public static MagicDeck parseDeckForText(String text) {
-
-        // https://stackoverflow.com/questions/454908/split-java-string-by-new-line
-        // String[] lines = text.split("\\r?\\n");
-        String[] lines = text.split("[\\r\\n]+");
-
-        return parseDeckFileContent(Arrays.asList(lines));
-
     }
 }

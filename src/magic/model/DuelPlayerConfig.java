@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Properties;
 import magic.data.DeckType;
 import magic.model.player.PlayerProfile;
+import magic.utility.DeckParser;
 import magic.utility.DeckUtils;
 
 public class DuelPlayerConfig {
@@ -76,7 +77,7 @@ public class DuelPlayerConfig {
                 .append(cardName)
                 .append("\n");
         }
-        deck = DeckUtils.parseDeckForText(sb.toString());
+        deck = DeckParser.parseText(sb.toString());
         deck.setFilename(properties.getProperty(prefix + "deck.name", ""));
         deck.setDeckType(DeckType.valueOf(properties.getProperty(prefix + "deck.file.type", "Random")));
         deck.setDescription(properties.getProperty(prefix + "deck.desc", ""));
