@@ -12,7 +12,9 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
 import magic.data.OSXAdapter;
+import magic.data.settings.BooleanSetting;
 import magic.exception.DesktopNotSupportedException;
 import magic.game.state.GameLoader;
 import magic.model.MagicDeck;
@@ -176,7 +178,7 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
     }
 
     public void refreshUI() {
-        config.setIsMissingFiles(false);
+        GeneralConfig.setIsMissingFiles(false);
         CardDefinitions.checkForMissingFiles();
         ThemeFactory.getInstance().loadThemes();
         refreshLookAndFeel();
@@ -215,8 +217,8 @@ public class MagicFrame extends MagicStickyFrame implements IDragDropListener {
 
         if (response == JOptionPane.YES_OPTION) {
             if (replaceBackgroundImage(imageFile)) {
-                config.setCustomBackground(true);
-                config.save();
+                GeneralConfig.set(BooleanSetting.CUSTOM_BACKGROUND, true);
+                GeneralConfig.saveToFile();
                 refreshLookAndFeel();
             }
         }

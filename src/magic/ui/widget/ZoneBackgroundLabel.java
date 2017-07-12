@@ -1,17 +1,18 @@
 package magic.ui.widget;
 
 import java.awt.Dimension;
-import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import javax.swing.JLabel;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
+import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.helpers.ImageHelper;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -176,7 +177,7 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
     @Override
     public void refreshStyle() {
         cachedImage = null;
-        setVisible(!GeneralConfig.getInstance().isCustomBackground());
+        setVisible(!GeneralConfig.get(BooleanSetting.CUSTOM_BACKGROUND));
     }
 
 }

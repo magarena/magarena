@@ -1,13 +1,13 @@
 package magic.ui.utility;
 
 
-import javax.swing.BorderFactory;
-import javax.swing.JComponent;
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
 import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.model.MagicCardDefinition;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -88,7 +88,7 @@ public final class MagicStyle {
     public static Color getRolloverColor(Theme aTheme) {
         return aTheme.hasValue(Theme.COLOR_MOUSEOVER)
             ? aTheme.getColor(Theme.COLOR_MOUSEOVER)
-            : GeneralConfig.getInstance().getRolloverColor();
+            : new Color(GeneralConfig.get(IntegerSetting.ROLLOVER_RGB));
     }
 
     public static Color getRolloverColor() {

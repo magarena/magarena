@@ -3,6 +3,7 @@ package magic.ui.screen.menu.settings;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
+import magic.data.settings.StringSetting;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.dialog.FiremindWorkerDialog;
@@ -64,7 +65,7 @@ class SettingsMenuContentPanel extends NewMenuScreenContentPanel {
             SwingUtilities.invokeLater(() -> {
                 MagicFileSystem.deleteGeneralConfigFile();
                 GeneralConfig.getInstance().load();
-                ThemeFactory.getInstance().setCurrentTheme(GeneralConfig.getInstance().getTheme());
+                ThemeFactory.getInstance().setCurrentTheme(GeneralConfig.get(StringSetting.THEME));
                 ScreenController.showStartScreen();
             });
         }

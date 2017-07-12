@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import magic.data.GeneralConfig;
+import magic.data.settings.StringSetting;
 import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
 
@@ -21,7 +22,7 @@ public class ThemeFactory {
     }
 
     public void loadThemes() {
-        setCurrentTheme(GeneralConfig.getInstance().getTheme());
+        setCurrentTheme(GeneralConfig.get(StringSetting.THEME));
     }
 
     public static String[] getThemeNames() {

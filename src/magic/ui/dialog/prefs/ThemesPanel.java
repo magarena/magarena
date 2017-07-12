@@ -9,14 +9,17 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
+import magic.data.settings.IntegerSetting;
+import magic.data.settings.StringSetting;
 import magic.translate.MText;
 import magic.ui.ScreenController;
 import magic.ui.helpers.LaFHelper;
+import magic.ui.mwidgets.MCheckBox;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.ColorButton;
-import magic.ui.mwidgets.MCheckBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -34,13 +37,12 @@ class ThemesPanel extends JPanel
     private static final String _S8 = "Minimalist style that fits better with the intended UI look and feel.";
 
     private static final String READONLY_COLOR_TIP = String.format("<b>%s</b><br>%s", MText.get(_S1), MText.get(_S2));
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MCheckBox cbCustomScrollbar;
     private final MCheckBox customBackgroundCheckBox;
     private final ColorButton rollOverColorButton;
     private final ThemesComboBox themeComboBox;
-    
+
     private Theme selectedTheme = ThemeFactory.getInstance().getCurrentTheme();
     private boolean refreshLAF = false;
 
@@ -55,12 +57,12 @@ class ThemesPanel extends JPanel
         themeComboBox.setSelectedItem(selectedTheme.getName());
         themeComboBox.addItemListener(this);
 
-        customBackgroundCheckBox = new MCheckBox(MText.get(_S5), CONFIG.isCustomBackground());
+        customBackgroundCheckBox = new MCheckBox(MText.get(_S5), GeneralConfig.get(BooleanSetting.CUSTOM_BACKGROUND));
         customBackgroundCheckBox.setToolTipText(MText.get(_S4));
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(aListener);
 
-        cbCustomScrollbar = new MCheckBox(MText.get(_S7), CONFIG.isCustomScrollBar());
+        cbCustomScrollbar = new MCheckBox(MText.get(_S7), GeneralConfig.get(BooleanSetting.CUSTOM_SCROLLBAR));
         cbCustomScrollbar.setToolTipText(MText.get(_S8));
         cbCustomScrollbar.setFocusable(false);
         cbCustomScrollbar.addMouseListener(aListener);
@@ -105,11 +107,11 @@ class ThemesPanel extends JPanel
     }
 
     void saveSettings() {
-        CONFIG.setCustomScrollBar(cbCustomScrollbar.isSelected());
-        CONFIG.setTheme(getSelectedThemeName());
-        CONFIG.setCustomBackground(customBackgroundCheckBox.isSelected());
+        GeneralConfig.set(BooleanSetting.CUSTOM_SCROLLBAR, cbCustomScrollbar.isSelected());
+        GeneralConfig.set(StringSetting.THEME, getSelectedThemeName());
+        GeneralConfig.set(BooleanSetting.CUSTOM_BACKGROUND, customBackgroundCheckBox.isSelected());
         if (!selectedTheme.hasValue(Theme.COLOR_MOUSEOVER)) {
-            CONFIG.setRolloverColor(rollOverColorButton.getColor());
+            GeneralConfig.set(IntegerSetting.ROLLOVER_RGB, rollOverColorButton.getColor().getRGB());
         }
         refreshLAF();
     }

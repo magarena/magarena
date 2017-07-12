@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import javax.swing.UIDefaults;
 import javax.swing.UIManager;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 
@@ -13,7 +14,7 @@ public final class LaFHelper {
     public static void setDefaultLookAndFeel() {
 
         if (trySetNimbusLookAndFeel()) {
-            
+
             final UIDefaults defaults = UIManager.getLookAndFeelDefaults();
 
             //
@@ -46,7 +47,7 @@ public final class LaFHelper {
             // ** JScrollBar
             //
             // custom scrollbar
-            if (GeneralConfig.getInstance().isCustomScrollBar()) {
+            if (GeneralConfig.get(BooleanSetting.CUSTOM_SCROLLBAR)) {
                 defaults.put("ScrollBarUI", "magic.ui.widget.scrollbar.MScrollBarUI");
                 final Dimension d = (Dimension) UIManager.get("ScrollBar.minimumThumbSize");
                 defaults.put("ScrollBar.minimumThumbSize", new Dimension(
@@ -54,7 +55,7 @@ public final class LaFHelper {
                         d.height < 50 ? 50 : d.height)
                 );
             }
-            
+
         }
     }
 

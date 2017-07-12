@@ -8,9 +8,10 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.ui.theme.Theme;
+import magic.data.settings.BooleanSetting;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.screen.MScreen;
+import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -93,13 +94,13 @@ class MagicFramePanel extends JPanel {
             sourceImage = getBackgroundImage();
             cachedImage = null;
             stretchTexture = activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1
-                || GeneralConfig.getInstance().isCustomBackground();
+                || GeneralConfig.get(BooleanSetting.CUSTOM_BACKGROUND);
             repaint();
         }
     }
 
     private BufferedImage getBackgroundImage() {
-        return GeneralConfig.getInstance().isCustomBackground()
+        return GeneralConfig.get(BooleanSetting.CUSTOM_BACKGROUND)
             ? ImageHelper.getCustomBackgroundImage()
             : activeTheme.getBackgroundImage();
     }

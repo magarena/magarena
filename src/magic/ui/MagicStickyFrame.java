@@ -10,13 +10,16 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import magic.data.GeneralConfig;
 import magic.data.settings.BooleanSetting;
+import magic.data.settings.IntegerSetting;
 
 @SuppressWarnings("serial")
-class MagicStickyFrame extends JFrame {
+public class MagicStickyFrame extends JFrame {
 
-    private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_FRAME_WIDTH, GeneralConfig.DEFAULT_FRAME_HEIGHT);
+    public static final int DEFAULT_WIDTH = 1024;
+    public static final int DEFAULT_HEIGHT = 600;
 
-    protected final GeneralConfig config = GeneralConfig.getInstance();
+    private static final Dimension MIN_SIZE =
+        new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 
     private boolean ignoreWindowDeactivate;
     private int normalFrameState;
@@ -91,9 +94,29 @@ class MagicStickyFrame extends JFrame {
         setFullScreenMode(!isFullScreen());
     }
 
+    private Rectangle getSizableFrameSetting() {
+        return new Rectangle(
+            GeneralConfig.get(IntegerSetting.FRAME_LEFT),
+            GeneralConfig.get(IntegerSetting.FRAME_TOP),
+            GeneralConfig.get(IntegerSetting.FRAME_WIDTH),
+            GeneralConfig.get(IntegerSetting.FRAME_HEIGHT)
+        );
+    }
+
+    private void setSizableFrameSetting(Point aPoint, Dimension aSize) {
+        GeneralConfig.set(IntegerSetting.FRAME_LEFT, aPoint.x);
+        GeneralConfig.set(IntegerSetting.FRAME_TOP, aPoint.y);
+        GeneralConfig.set(IntegerSetting.FRAME_WIDTH, aSize.width);
+        GeneralConfig.set(IntegerSetting.FRAME_HEIGHT, aSize.height);
+    }
+
+    private void setSizableFrameSetting(Rectangle rect) {
+        setSizableFrameSetting(rect.getLocation(), rect.getSize());
+    }
+
     private void setSizableFrameState() {
         Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
-        Rectangle rect = config.getSizableFrameBounds();
+        Rectangle rect = getSizableFrameSetting();
         Point p1 = new Point(rect.x, rect.y);
         Point p2 = new Point(p1.x + rect.width, p1.y + rect.height);
         if (p1.x >= 0 && p1.y >= 0 && p2.x <= screen.width && p2.y <= screen.height) {
@@ -118,7 +141,7 @@ class MagicStickyFrame extends JFrame {
 
         normalFrameState = getExtendedState();
 
-        if (config.isFullScreen()) {
+        if (GeneralConfig.get(BooleanSetting.FULL_SCREEN) == true) {
             setFullScreenMode(true);
         }
     }
@@ -130,20 +153,20 @@ class MagicStickyFrame extends JFrame {
     protected void saveSizeAndPosition() {
 
         GeneralConfig.set(BooleanSetting.MAXIMIZE_FRAME, isMaximized());
-        config.setFullScreen(isFullScreen());
+        GeneralConfig.set(BooleanSetting.FULL_SCREEN, isFullScreen());
 
         if (getExtendedState() == Frame.NORMAL) {
-            config.setSizableFrameBounds(getLocation(), getSize());
+            setSizableFrameSetting(getLocation(), getSize());
 
         } else if (getExtendedState() == Frame.MAXIMIZED_BOTH && !isFullScreen()) {
             setExtendedState(Frame.NORMAL);
-            config.setSizableFrameBounds(getLocation(), getSize());
+            setSizableFrameSetting(getLocation(), getSize());
 
         } else if (isFullScreen()) {
-            config.setSizableFrameBounds(normalFrameRect);
+            setSizableFrameSetting(normalFrameRect);
         }
 
-        config.save();
+        GeneralConfig.saveToFile();
     }
 
 }

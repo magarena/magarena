@@ -2,7 +2,8 @@ package magic.data.settings;
 
 public enum StringSetting {
 
-    KEYWORDS_SCREEN("keywordsScreen", "");
+    KEYWORDS_SCREEN("keywordsScreen", ""),
+    THEME("theme", "felt");
 
     private final String propertyName;
     private final String defaultValue;

@@ -1,9 +1,5 @@
 package magic.data;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Point;
-import java.awt.Rectangle;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -36,8 +32,6 @@ public class GeneralConfig {
     public static final String CONFIG_FILENAME = "general.cfg";
     public static final String CONFIG_HEADER = "Magarena " + MagicSystem.VERSION;
 
-    public static final int DEFAULT_FRAME_WIDTH = 1024;
-    public static final int DEFAULT_FRAME_HEIGHT = 600;
     public static final String DEFAULT_TRANSLATION = "";
 
     // settings that can only be updated by manually editing the config file.
@@ -54,16 +48,9 @@ public class GeneralConfig {
     private static final String CARD_DISPLAY_MODE = "cardImageDisplayMode";
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
     private static final String CARD_TEXT_LANG = "cardTextLanguage";
-    private static final String CUSTOM_BACKGROUND = "customBackground";
-    private static final String CUSTOM_SCROLLBAR = "customScrollBar";
     private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
     private static final String EXPLORER_LAYOUT = "explorer.layout";
     private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
-    private static final String FRAME_HEIGHT = "height";
-    private static final String FRAME_LEFT = "left";
-    private static final String FRAME_TOP = "top";
-    private static final String FRAME_WIDTH = "width";
-    private static final String FULLSCREEN = "fullScreen";
     private static final String GAME_STATS = "gameStats";
     private static final String HAND_ZONE_LAYOUT = "hand.zone.layout";
     private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
@@ -85,24 +72,27 @@ public class GeneralConfig {
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
     private static final String PROXY_SETTINGS = "proxySettings";
     private static final String RECENT_DECK = "MostRecentDeckFilename";
-    private static final String ROLLOVER_COLOR ="rolloverColor";
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
     private static final String SKIP_SINGLE = "single";
     private static final String SMART_TARGET = "target";
     private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
-    private static final String THEME = "theme";
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String TRANSLATION = "translation";
 
     // obsolete settings that should not be imported into the current version
     // or version sensitive settings that should not be overwritten.
     public static final String[] NOT_IMPORTED = new String[]{
-        FRAME_TOP, FRAME_LEFT, FRAME_WIDTH, FRAME_HEIGHT,
-        FULLSCREEN, TRANSLATION
+        IntegerSetting.FRAME_TOP.getKey(),
+        IntegerSetting.FRAME_LEFT.getKey(),
+        IntegerSetting.FRAME_WIDTH.getKey(),
+        IntegerSetting.FRAME_HEIGHT.getKey(),
+        BooleanSetting.FULL_SCREEN.getKey(),
+        TRANSLATION
     };
 
+    private static boolean isMissingFiles = false;
+
     private Properties settings;
-    private boolean isMissingFiles = false;
 
     private GeneralConfig() { }
 
@@ -274,18 +264,10 @@ public class GeneralConfig {
         setProperty(CARD_IMAGES_PATH, setting);
     }
 
-    public boolean isCustomBackground() {
-        return getProperty(CUSTOM_BACKGROUND, false);
-    }
-
-    public void setCustomBackground(boolean isCustomBackground) {
-        setProperty(CUSTOM_BACKGROUND, isCustomBackground);
-    }
-
-    public boolean isMissingFiles() {
+    public static boolean isMissingFiles() {
         return isMissingFiles;
     }
-    public void setIsMissingFiles(final boolean b) {
+    public static void setIsMissingFiles(final boolean b) {
         isMissingFiles = b;
     }
 
@@ -301,14 +283,6 @@ public class GeneralConfig {
 
     public void setMostRecentDeckFilename(String filename) {
         setProperty(RECENT_DECK, filename.trim());
-    }
-
-    public String getTheme() {
-        return getProperty(THEME, "felt");
-    }
-
-    public void setTheme(String theme) {
-        setProperty(THEME, theme);
     }
 
     public String getAvatar() {
@@ -397,13 +371,6 @@ public class GeneralConfig {
 
     public void setMouseWheelPopup(boolean mouseWheelPopup) {
         setProperty(MOUSEWHEEL_POPUP, mouseWheelPopup);
-    }
-
-    public boolean isFullScreen() {
-        return getProperty(FULLSCREEN, false);
-    }
-    public void setFullScreen(boolean b) {
-        setProperty(FULLSCREEN, b);
     }
 
     public boolean isPreviewCardOnSelect() {
@@ -542,14 +509,6 @@ public class GeneralConfig {
         setProperty(HIDE_AI_ACTION_PROMPT, b);
     }
 
-    public Color getRolloverColor() {
-        return new Color(getProperty(ROLLOVER_COLOR, Color.YELLOW.getRGB()));
-    }
-
-    public void setRolloverColor(Color aColor) {
-        setProperty(ROLLOVER_COLOR, aColor.getRGB());
-    }
-
     public String getTranslation() {
         return getProperty(TRANSLATION, DEFAULT_TRANSLATION);
     }
@@ -594,37 +553,6 @@ public class GeneralConfig {
 
     public void setImagesOnDemand(boolean b) {
         setProperty(IMAGES_ON_DEMAND, b);
-    }
-
-    public Rectangle getSizableFrameBounds() {
-        return new Rectangle(
-            getProperty(FRAME_LEFT, -1),
-            getProperty(FRAME_TOP, -1),
-            getProperty(FRAME_WIDTH, DEFAULT_FRAME_WIDTH),
-            getProperty(FRAME_HEIGHT, DEFAULT_FRAME_HEIGHT)
-        );
-    }
-
-    public void setSizableFrameBounds(Rectangle aRect) {
-        setProperty(FRAME_LEFT, aRect.x);
-        setProperty(FRAME_TOP, aRect.y);
-        setProperty(FRAME_WIDTH, aRect.width);
-        setProperty(FRAME_HEIGHT, aRect.height);
-    }
-
-    public void setSizableFrameBounds(Point aPoint, Dimension aSize) {
-        setProperty(FRAME_LEFT, aPoint.x);
-        setProperty(FRAME_TOP, aPoint.y);
-        setProperty(FRAME_WIDTH, aSize.width);
-        setProperty(FRAME_HEIGHT, aSize.height);
-    }
-
-    public void setCustomScrollBar(boolean b) {
-        setProperty(CUSTOM_SCROLLBAR, b);
-    }
-
-    public boolean isCustomScrollBar() {
-        return getProperty(CUSTOM_SCROLLBAR, true);
     }
 
     public CardImageDisplayMode getCardImageDisplayMode() {
