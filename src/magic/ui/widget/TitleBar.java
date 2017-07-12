@@ -1,6 +1,7 @@
 package magic.ui.widget;
 
 import java.awt.Dimension;
+import javax.swing.Icon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.ui.ScreenController;
@@ -39,4 +40,9 @@ public class TitleBar extends JPanel {
     public JLabel getLabel() {
         return label;
     }
+
+    public void setIcon(Icon icon) {
+        label.setIcon(icon);
+    }
+
 }

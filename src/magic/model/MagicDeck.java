@@ -188,4 +188,8 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     public boolean isNotValid() {
         return !isValid();
     }
+
+    public boolean isNotEmpty() {
+        return !isEmpty();
+    }
 }
