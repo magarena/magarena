@@ -65,7 +65,6 @@ public class GeneralConfig {
     private static final String FRAME_WIDTH = "width";
     private static final String FULLSCREEN = "fullScreen";
     private static final String GAME_STATS = "gameStats";
-    private static final String GAME_VOLUME = "gameVolume";
     private static final String HAND_ZONE_LAYOUT = "hand.zone.layout";
     private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
     private static final String HIGHLIGHT = "highlight";
@@ -109,6 +108,10 @@ public class GeneralConfig {
 
     public static GeneralConfig getInstance() {
         return INSTANCE;
+    }
+
+    public static void saveToFile() {
+        INSTANCE.save();
     }
 
     private static File getConfigFile() {
@@ -583,14 +586,6 @@ public class GeneralConfig {
 
     public void setCardTextLanguage(CardTextLanguage aLang) {
         setProperty(CARD_TEXT_LANG, aLang.name());
-    }
-
-    public int getGameVolume() {
-        return getProperty(GAME_VOLUME, 80);
-    }
-
-    public void setGameVolume(int value) {
-        setProperty(GAME_VOLUME, value);
     }
 
     public boolean getImagesOnDemand() {
