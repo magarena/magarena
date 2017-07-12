@@ -3,12 +3,13 @@ package magic.ui.screen.duel.setup;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.nio.file.Path;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.data.DuelConfig;
 import magic.data.MagicFormat;
 import magic.exception.InvalidDeckException;
-import magic.model.MagicDeck;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -21,6 +22,8 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class ScreenContentPanel extends JPanel implements IPlayerProfileListener {
+
+    private static final Logger LOGGER = Logger.getLogger(ScreenContentPanel.class.getName());
 
     private static final int PLAYERS_COUNT = 2;
 
@@ -153,17 +156,16 @@ class ScreenContentPanel extends JPanel implements IPlayerProfileListener {
 
     boolean isDeckValid(int i) {
         if (getDeckType(i) != DeckType.Random) {
-            final String deckFilename = getDeckValue(i) + DeckUtils.DECK_EXTENSION;
-            final Path deckFolder = DeckType.getDeckFolder(getDeckType(i));
+            String deckFilename = getDeckValue(i) + DeckUtils.DECK_EXTENSION;
+            Path deckFile = DeckType.getDeckFolder(getDeckType(i)).resolve(deckFilename);
             try {
-                final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFolder.resolve(deckFilename));
-                return deck.isValid();
+                DeckUtils.loadDeckFromFile(deckFile);
             } catch (InvalidDeckException ex) {
+                LOGGER.log(Level.WARNING, deckFile.toString(), ex);
                 return false;
             }
-        } else {
-            return true;
         }
+        return true;
     }
 
 }
