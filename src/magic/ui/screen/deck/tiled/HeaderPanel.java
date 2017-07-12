@@ -54,8 +54,12 @@ class HeaderPanel extends JPanel {
         revalidate();
     }
 
+    private int getValidCardsCount(List<MagicCardDefinition> cards) {
+        return (int) cards.stream().filter(card -> card.isValid()).count();
+    }
+
     private String getFilterCaption(CardTypeFilter filter, MagicDeck deck, List<MagicCardDefinition> cards) {
-        int cardCount = cards == null ? 0 : cards.size();
+        int cardCount = cards == null ? 0 : getValidCardsCount(cards);
         if (filter != CardTypeFilter.ALL) {
             final int percentage = (int)((cardCount / (double) deck.size()) * 100);
             return MText.get(_S11, filter, cardCount, percentage);
