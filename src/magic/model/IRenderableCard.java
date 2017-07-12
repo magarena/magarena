@@ -148,4 +148,8 @@ public interface IRenderableCard {
     default String getImageUrl() {
         return getCardDefinition().getImageURL();
     }
+
+    default boolean isInvalid() {
+        return getCardDefinition().isInvalid();
+    }
 }

@@ -201,14 +201,18 @@ final public class ImageHelper {
      * ImageIO into a new image of the appropriate pixel format for your system.
      * (http://www.jhlabs.com/ip/managed_images.html)
      */
-    public static BufferedImage getOptimizedImage(final BufferedImage source) {
+    public static BufferedImage getOptimizedImage(Image source, int transparency) {
         final BufferedImage buffImage = getCompatibleBufferedImage(
-                source.getWidth(),
-                source.getHeight(),
-                source.getTransparency()
+                source.getWidth(null),
+                source.getHeight(null),
+                transparency
         );
         buffImage.getGraphics().drawImage(source, 0, 0, null);
         return buffImage;
+    }
+
+    public static BufferedImage getOptimizedImage(final BufferedImage source) {
+        return getOptimizedImage(source, source.getTransparency());
     }
 
     public static BufferedImage getCustomBackgroundImage() {
@@ -312,7 +316,13 @@ final public class ImageHelper {
                 colorImage.getSource(),
                 GRAYSCALE_FILTER
         );
-        return Toolkit.getDefaultToolkit().createImage(fis);
+        if (colorImage instanceof BufferedImage) {
+            int t = ((BufferedImage) colorImage).getTransparency();
+            Image gsImage = Toolkit.getDefaultToolkit().createImage(fis);
+            return getOptimizedImage(gsImage, t);
+        } else {
+            return Toolkit.getDefaultToolkit().createImage(fis);
+        }
     }
 
     public static BufferedImage getTranslucentImage(BufferedImage image, float opacity) {
