@@ -2,7 +2,8 @@ package magic.data.settings;
 
 public enum IntegerSetting {
 
-    UI_VOLUME("uiSoundVolume", 80);
+    UI_VOLUME("uiSoundVolume", 80),
+    DECK_MAX_LINES("deckFileMaxLines", 500);
 
     private final String propertyName;
     private final int defaultValue;

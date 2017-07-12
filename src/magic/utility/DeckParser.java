@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.translate.MText;
@@ -19,8 +20,6 @@ public final class DeckParser {
     private static final String _S4 = "line %d: line length exceeds %d characters.";
     private static final String _S7 = "line %d: invalid card (%s).";
 
-    private static final int DECK_FILE_MAX_LINES = GeneralConfig.getInstance().getDeckFileMaxLines();
-
     public static MagicDeck parseLines(List<String> textLines) {
 
         final MagicDeck deck = new MagicDeck();
@@ -29,8 +28,9 @@ public final class DeckParser {
             return deck;
         }
 
-        if (textLines.size() > DECK_FILE_MAX_LINES) {
-            deck.setInvalidDeck(MText.get(_S2, DECK_FILE_MAX_LINES));
+        final int MAX_LINES = GeneralConfig.getInstance().get(IntegerSetting.DECK_MAX_LINES);
+        if (textLines.size() > MAX_LINES) {
+            deck.setInvalidDeck(MText.get(_S2, MAX_LINES));
             return deck;
         }
 

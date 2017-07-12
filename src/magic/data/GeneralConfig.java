@@ -43,7 +43,6 @@ public class GeneralConfig {
     // settings that can only be updated by manually editing the config file.
     private static final String AVATAR = "avatar";
     private static final String CUSTOM_FONTS = "custom.fonts";
-    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
 
     // settings that should normally be updated via the UI preferences dialog.
@@ -244,10 +243,6 @@ public class GeneralConfig {
         } else {
             setProperty(PROXY_SETTINGS, "");
         }
-    }
-
-    public int getDeckFileMaxLines() {
-        return getProperty(DECK_FILE_MAX_LINES, 500);
     }
 
     public boolean showGameplayAnimations() {
