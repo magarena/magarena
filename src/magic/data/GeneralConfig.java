@@ -185,30 +185,30 @@ public class GeneralConfig {
     //---------------------------------------------------------------------
 
     // boolean
-    public boolean get(BooleanSetting setting) {
-        return getProperty(setting.getKey(), setting.getDefault());
+    public static boolean get(BooleanSetting setting) {
+        return INSTANCE.getProperty(setting.getKey(), setting.getDefault());
     }
 
-    public void set(BooleanSetting setting, boolean value) {
-        setProperty(setting.getKey(), value);
+    public static void set(BooleanSetting setting, boolean value) {
+        INSTANCE.setProperty(setting.getKey(), value);
     }
 
     // integer
-    public int get(IntegerSetting setting) {
-        return getProperty(setting.getKey(), setting.getDefault());
+    public static int get(IntegerSetting setting) {
+        return INSTANCE.getProperty(setting.getKey(), setting.getDefault());
     }
 
-    public void set(IntegerSetting setting, int value) {
-        setProperty(setting.getKey(), value);
+    public static void set(IntegerSetting setting, int value) {
+        INSTANCE.setProperty(setting.getKey(), value);
     }
 
     // string
-    public String get(StringSetting setting) {
-        return getProperty(setting.getKey(), setting.getDefault());
+    public static String get(StringSetting setting) {
+        return INSTANCE.getProperty(setting.getKey(), setting.getDefault());
     }
 
-    public void set(StringSetting setting, String value) {
-        setProperty(setting.getKey(), value);
+    public static void set(StringSetting setting, String value) {
+        INSTANCE.setProperty(setting.getKey(), value);
     }
 
     //---------------------------------------------------------------------

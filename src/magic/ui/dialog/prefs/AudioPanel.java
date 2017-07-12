@@ -44,7 +44,7 @@ class AudioPanel extends JPanel {
     }
 
     void saveSettings() {
-        config.set(IntegerSetting.UI_VOLUME, uiVolumeSlider.getValue());
+        GeneralConfig.set(IntegerSetting.UI_VOLUME, uiVolumeSlider.getValue());
         config.setGameVolume(gameVolumeSlider.getValue());
     }
 

@@ -112,7 +112,7 @@ class MagicStickyFrame extends JFrame {
         setMinimumSize(MIN_SIZE);
         setSizableFrameState();
 
-        if (config.get(BooleanSetting.MAXIMIZE_FRAME) == true) {
+        if (GeneralConfig.get(BooleanSetting.MAXIMIZE_FRAME) == true) {
             setExtendedState(JFrame.MAXIMIZED_BOTH);
         }
 
@@ -129,7 +129,7 @@ class MagicStickyFrame extends JFrame {
 
     protected void saveSizeAndPosition() {
 
-        config.set(BooleanSetting.MAXIMIZE_FRAME, isMaximized());
+        GeneralConfig.set(BooleanSetting.MAXIMIZE_FRAME, isMaximized());
         config.setFullScreen(isFullScreen());
 
         if (getExtendedState() == Frame.NORMAL) {

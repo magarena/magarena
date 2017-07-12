@@ -19,7 +19,7 @@ enum ScreenLayout {
     private static ScreenLayout layout;
     static {
         try {
-            final String setting = GeneralConfig.getInstance().get(StringSetting.KEYWORDS_SCREEN);
+            final String setting = GeneralConfig.get(StringSetting.KEYWORDS_SCREEN);
             layout = setting.isEmpty() ? Layout_A : valueOf(setting);
         } catch (Exception ex) {
             System.err.println(ex);

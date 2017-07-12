@@ -28,7 +28,7 @@ public final class DeckParser {
             return deck;
         }
 
-        final int MAX_LINES = GeneralConfig.getInstance().get(IntegerSetting.DECK_MAX_LINES);
+        final int MAX_LINES = GeneralConfig.get(IntegerSetting.DECK_MAX_LINES);
         if (textLines.size() > MAX_LINES) {
             deck.setInvalidDeck(MText.get(_S2, MAX_LINES));
             return deck;

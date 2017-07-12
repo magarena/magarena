@@ -22,8 +22,7 @@ public class KeywordsScreen extends HeaderFooterScreen {
     }
 
     private void doSaveSettings() {
-        final GeneralConfig config = GeneralConfig.getInstance();
-        config.set(StringSetting.KEYWORDS_SCREEN, ScreenLayout.getLayout().name());
+        GeneralConfig.set(StringSetting.KEYWORDS_SCREEN, ScreenLayout.getLayout().name());
     }
 
     private void setContent() {

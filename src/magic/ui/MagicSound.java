@@ -127,7 +127,7 @@ public enum MagicSound {
             System.err.println("WARNING. Unable to play clip " + url.toExternalForm() + ", " + ex.getMessage());
             // turn off all sound permanently.
             config.setGameVolume(0);
-            config.set(IntegerSetting.UI_VOLUME, 0);
+            GeneralConfig.set(IntegerSetting.UI_VOLUME, 0);
             config.save();
         }
     }
