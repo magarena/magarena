@@ -259,4 +259,9 @@ public class MagicDuel {
             instance.load(duelFile);
         }
     }
+
+    public boolean hasInvalidDecks() {
+        return !getPlayer(0).getDeck().isValid()
+            || !getPlayer(1).getDeck().isValid();
+    }
 }

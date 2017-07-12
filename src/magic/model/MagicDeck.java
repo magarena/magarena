@@ -184,4 +184,8 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
             ? getDeckType().toString() + "  /  " + getName()
             : getName();
     }
+
+    public boolean isNotValid() {
+        return !isValid();
+    }
 }

@@ -463,8 +463,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         Thread thread = Thread.currentThread();
         for (int i = 0; i < deck.size() && thread.isInterrupted() == false; i++) {
             final MagicCardDefinition cardDefinition = deck.get(i);
-            final long id = currGame.getUniqueId();
-            library.add(new MagicCard(cardDefinition,this,id));
+            if (cardDefinition.isValid()) {
+                final long id = currGame.getUniqueId();
+                library.add(new MagicCard(cardDefinition,this,id));
+            }
         }
 
         library.initialShuffle(MagicRandom.nextRNGInt());
