@@ -4,6 +4,7 @@ import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.ui.ScreenController;
@@ -169,6 +170,11 @@ public abstract class MScreen {
 
     public Font getFont() {
         return screen.getFont();
+    }
+
+    public boolean doFileDropAction(File aFile) {
+        System.err.println("doFileDropAction() not implemented in " + this.getClass().getSimpleName());
+        return false;
     }
 
 }

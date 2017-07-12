@@ -100,10 +100,15 @@ public class FileDropTargetListener implements DropTargetListener {
                 listener.onGameSnapshotDropped(aFile);
                 return;
             }
+
+            // delegate to screen instance.
+            if (ScreenController.getActiveScreen().doFileDropAction(aFile)) {
+                return;
+            }
         }
 
         // unsupported
-        MagicSound.ALERT.play();
+        MagicSound.BEEP.play();
     }
 
     @SuppressWarnings("unchecked")
