@@ -1,9 +1,9 @@
 package magic.model;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
-import magic.data.CardDefinitions;
 import magic.data.DeckType;
-import magic.exception.InvalidDeckException;
 import magic.model.player.PlayerProfile;
 import magic.utility.DeckUtils;
 
@@ -12,7 +12,7 @@ public class DuelPlayerConfig {
     private static final String PLAYER_DECK = "deckProfile";
 
     private MagicDeckProfile deckProfile;
-    private final MagicDeck deck = new MagicDeck();
+    private MagicDeck deck = new MagicDeck();
     private PlayerProfile playerProfile;
 
     // CTR
@@ -52,19 +52,6 @@ public class DuelPlayerConfig {
         setDeckProfile(MagicDeckProfile.getDeckProfile(deckType, deckValue));
     }
 
-    private MagicCardDefinition getCard(final String cardName) {
-        final String ERR_MSG = "\"latest.duel\" contains a deck with an invalid card: %s\n\n%s";
-        try {
-            final MagicCardDefinition cdef = CardDefinitions.getCard(cardName);
-            if (cdef.isValid()) {
-                return cdef;
-            }
-        } catch (Exception ex) {
-            throw new InvalidDeckException(String.format(ERR_MSG, cardName, ex.getMessage()));
-        }
-        throw new InvalidDeckException(String.format(ERR_MSG, cardName, ""));
-    }
-
     private long getDeckFileChecksum(Properties properties, String prefix) {
         try {
             return Long.valueOf(properties.getProperty(prefix + "deck.file.crc", "0"));
@@ -74,14 +61,22 @@ public class DuelPlayerConfig {
     }
 
     public void loadDeck(final Properties properties, final String prefix) {
-        deck.clear();
+        Map<String, Integer> cards = new HashMap<>();
         for (int i = 1; i <= properties.size(); i++) {
             final String deckPrefix = getDeckPrefix(prefix, i);
             if (properties.containsKey(deckPrefix)) {
                 final String cardName = properties.getProperty(deckPrefix);
-                deck.add(getCard(cardName));
+                cards.put(cardName, cards.getOrDefault(cardName, 0) + 1);
             }
         }
+        final StringBuilder sb = new StringBuilder();
+        for (String cardName : cards.keySet()) {
+            sb.append(cards.get(cardName))
+                .append(" ")
+                .append(cardName)
+                .append("\n");
+        }
+        deck = DeckUtils.parseDeckForText(sb.toString());
         deck.setFilename(properties.getProperty(prefix + "deck.name", ""));
         deck.setDeckType(DeckType.valueOf(properties.getProperty(prefix + "deck.file.type", "Random")));
         deck.setDescription(properties.getProperty(prefix + "deck.desc", ""));

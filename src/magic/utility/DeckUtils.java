@@ -12,6 +12,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -490,5 +491,15 @@ public class DeckUtils {
             }
         }
         return null;
+    }
+
+    public static MagicDeck parseDeckForText(String text) {
+
+        // https://stackoverflow.com/questions/454908/split-java-string-by-new-line
+        // String[] lines = text.split("\\r?\\n");
+        String[] lines = text.split("[\\r\\n]+");
+
+        return parseDeckFileContent(Arrays.asList(lines));
+
     }
 }
