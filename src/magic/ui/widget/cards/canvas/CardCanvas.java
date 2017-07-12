@@ -70,8 +70,4 @@ final class CardCanvas {
         return card.getCardDefinition();
     }
 
-    boolean isInvalid() {
-        return !card.getCardDefinition().isInvalid();
-    }
-
 }
