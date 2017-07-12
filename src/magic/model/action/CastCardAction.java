@@ -40,7 +40,7 @@ public class CastCardAction extends MagicAction {
             }
         }
         for (final MagicEvent event : withoutManaCost ? card.getAdditionalCostEvent() : card.getCostEvent()) {
-            game.addEvent(event);
+            game.addCostEvent(event);
         }
         game.addEvent(new MagicPutCardOnStackEvent(card, player, from, to));
     }

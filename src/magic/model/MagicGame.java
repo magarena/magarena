@@ -831,6 +831,11 @@ public class MagicGame {
         return Collections.emptyList();
     }
 
+    public void addCostEvent(final MagicEvent event) {
+        event.setCost();
+        doAction(new AddEventAction(event));
+    }
+
     public void addEvent(final MagicEvent event) {
         doAction(new AddEventAction(event));
     }

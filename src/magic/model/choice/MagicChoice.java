@@ -5,6 +5,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.model.target.MagicTargetNone;
 import magic.exception.UndoClickedException;
 import magic.exception.GameException;
 
@@ -97,7 +98,7 @@ public abstract class MagicChoice {
         final Collection<?> options=getArtificialOptions(game,event);
         final int size=options.size();
         if (size == 0) {
-            throw new GameException("no artificial choice result for " + event, game);
+            return Collections.singletonList(new Object[]{MagicTargetNone.getInstance()});
         } else if (size == 1) {
             return Collections.singletonList(new Object[]{options.iterator().next()});
         } else {

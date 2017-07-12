@@ -488,7 +488,7 @@ public class MagicTargetChoice extends MagicChoice {
         final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
         if (validChoices.size()==1) {
             // There are no valid choices.
-            if (validChoices.contains(MagicTargetNone.getInstance())) {
+            if (validChoices.contains(MagicTargetNone.getInstance()) && event.isCost() == false) {
                 return new Object[]{MagicTargetNone.getInstance()};
             }
             // Only valid choice is player.

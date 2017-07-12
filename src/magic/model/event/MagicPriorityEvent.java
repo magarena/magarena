@@ -58,7 +58,7 @@ public class MagicPriorityEvent extends MagicEvent {
             // then pay costs with choices. eg mana cost
             for (final MagicEvent costEvent : sourceActivation.getCostEvent()) {
                 if (costEvent.hasChoice() == true) {
-                    game.addEvent(costEvent);
+                    game.addCostEvent(costEvent);
                 }
             }
 

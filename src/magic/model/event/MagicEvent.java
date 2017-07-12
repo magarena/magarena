@@ -11,6 +11,7 @@ import magic.model.action.MagicItemOnStackAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicTargetAction;
+import magic.model.action.LoseGameAction;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicDeclareAttackersResult;
@@ -79,6 +80,7 @@ public class MagicEvent implements MagicCopyable {
 
     private Object[] chosen;
     private MagicTarget chosenTarget;
+    private boolean isCost = false;
 
     public MagicEvent(
         final MagicSource source,
@@ -727,8 +729,12 @@ public class MagicEvent implements MagicCopyable {
     public final void executeEvent(final MagicGame game,final Object[] choiceResults) {
         chosen = choiceResults;
         chosenTarget = getLegalTarget(game);
-        payManaCost(game);
-        action.executeEvent(game,this);
+        if (isCost() && chosenTarget == MagicTargetNone.getInstance()) {
+            game.doAction(new LoseGameAction(player, LoseGameAction.ILLEGAL_REASON));
+        } else {
+            payManaCost(game);
+            action.executeEvent(game,this);
+        }
         chosen = null;
         chosenTarget = null;
     }
@@ -767,6 +773,7 @@ public class MagicEvent implements MagicCopyable {
             action.hashCode(),
             description.hashCode(),
             MagicObjectImpl.getStateId(ref),
+            isCost ? 1L : -1L,
         });
     }
 
@@ -776,5 +783,13 @@ public class MagicEvent implements MagicCopyable {
 
     public String getDescription() {
         return description;
+    }
+
+    public void setCost() {
+        isCost = true;
+    }
+
+    public boolean isCost() {
+        return isCost;
     }
 }

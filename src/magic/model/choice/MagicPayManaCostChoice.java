@@ -71,13 +71,14 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
         final Collection<Object> options = genOptions(game, player);
 
+        /*
         assert !options.isEmpty() :
             "No options to pay mana cost\n" +
             "fastMana = " + game.getFastMana() + "\n" +
             "source = " + source + "\n" +
             "player = " + player + "\n" +
             "event = " + event + "\n";
-
+        */
         return options;
     }
 
