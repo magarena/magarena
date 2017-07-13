@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={6}{G}{G}
-ability=Creatures with flying can't attack you or planeswalkers you control.;\
+ability=Creatures with flying you don't control can't attack.;\
         At the beginning of your end step, create a 5/5 green Wurm creature token.
 timing=enchantment
 oracle=Creatures with flying can't attack you or planeswalkers you control.\nAt the beginning of your end step, create a 5/5 green Wurm creature token.
