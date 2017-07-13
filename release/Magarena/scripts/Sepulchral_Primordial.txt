@@ -7,7 +7,6 @@ subtype=Avatar
 cost={5}{B}{B}
 pt=5/4
 ability=Intimidate;\
-        When SN enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.
+        When SN enters the battlefield, you may put target creature card from an opponent's graveyard onto the battlefield under your control.
 timing=main
 oracle=Intimidate\nWhen Sepulchral Primordial enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.
-status=needs groovy
