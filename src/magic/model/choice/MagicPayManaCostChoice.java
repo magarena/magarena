@@ -21,6 +21,7 @@ import magic.translate.MText;
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {
 
+    private static final String _S_CHOOSE = "Choose a mana ability to pay %s."
     private static final String _S_NO_OPTIONS = "There are not enough mana sources to pay %s. Please undo.";
 
     private final MagicManaCost cost;
@@ -149,7 +150,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
                 sourcePermanent = validSources.iterator().next();
             } else {
                 controller.setValidChoices(validSources,false);
-                controller.showMessage(source,"Choose a mana source to pay "+costManaType.getText()+".");
+                controller.showMessage(source, MText.get(_S_CHOOSE, costManaType.getText()));
                 controller.waitForInput();
                 controller.clearValidChoices();
                 sourcePermanent = controller.getChoiceClicked();
