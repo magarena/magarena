@@ -30,6 +30,8 @@ class TestNoChoice extends TestGameBuilder {
         addToLibrary(P, "Forest", 20);
         createPermanent(P, "Vesper Ghoul", false, 1);
         createPermanent(P, "Foul Familiar", false, 1);
+        createPermanent(P, "Dune Diviner", false, 1);
+        createPermanent(P, "Hostile Desert", false, 1);
 
         P = opponent;
 
