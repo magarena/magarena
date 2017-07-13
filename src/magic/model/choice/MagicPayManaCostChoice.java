@@ -22,7 +22,7 @@ import magic.translate.MText;
 public class MagicPayManaCostChoice extends MagicChoice {
 
     private static final String _S_CHOOSE = "Choose a mana ability to pay %s."
-    private static final String _S_NO_OPTIONS = "There are not enough mana sources to pay %s. Please undo.";
+    private static final String _S_NO_OPTIONS = "There is not enough mana to pay %s. Please undo.";
 
     private final MagicManaCost cost;
 
