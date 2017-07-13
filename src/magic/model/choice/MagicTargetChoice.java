@@ -23,8 +23,12 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
+import magic.translate.MText;
 
 public class MagicTargetChoice extends MagicChoice {
+
+    private static final String _S_NO_OPTIONS = "There are no valid options, please undo.";
+
     public static final MagicTargetChoice NONE =
         new MagicTargetChoice(MagicTargetFilterFactory.NONE,MagicTargetHint.None,"nothing") {
             @Override
@@ -488,8 +492,12 @@ public class MagicTargetChoice extends MagicChoice {
         final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
         if (validChoices.size()==1) {
             // There are no valid choices.
-            if (validChoices.contains(MagicTargetNone.getInstance()) && event.isCost() == false) {
-                return new Object[]{MagicTargetNone.getInstance()};
+            if (validChoices.contains(MagicTargetNone.getInstance())) {
+                if (event.isCost()) {
+                    controller.showMessage(source, getDescription() + "|" + MText.get(_S_NO_OPTIONS));
+                } else {
+                    return new Object[]{MagicTargetNone.getInstance()};
+                }
             }
             // Only valid choice is player.
             if (validChoices.contains(player)) {

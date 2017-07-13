@@ -16,9 +16,12 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.translate.MText;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {
+
+    private static final String _S_NO_OPTIONS = "There are not enough mana sources to pay %s. Please undo.";
 
     private final MagicManaCost cost;
 
@@ -96,6 +99,12 @@ public class MagicPayManaCostChoice extends MagicChoice {
         final MagicSource source = event.getSource();
 
         controller.disableActionButton(false);
+
+        if (event.isSatisfied() == false) {
+            controller.showMessage(source, MText.get(_S_NO_OPTIONS, cost.getText()));
+            controller.waitForInput();
+            return MagicEvent.NO_CHOICE_RESULTS;
+        }
 
         final int x;
         if (cost.hasX()) {
