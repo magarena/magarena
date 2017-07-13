@@ -17,11 +17,15 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.translate.MText;
+import magic.translate.StringContext;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {
 
+    @StringContext(eg = "%s will be replaced with a mana cost icon.")
     private static final String _S_CHOOSE = "Choose a mana ability to pay %s.";
+
+    @StringContext(eg = "%s will be replaced with a mana cost icon.")
     private static final String _S_NO_OPTIONS = "There is not enough mana to pay %s. Please undo.";
 
     private final MagicManaCost cost;
