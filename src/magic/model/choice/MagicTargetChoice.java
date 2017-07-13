@@ -27,7 +27,7 @@ import magic.translate.MText;
 
 public class MagicTargetChoice extends MagicChoice {
 
-    private static final String _S_NO_OPTIONS = "There is no %s. Please undo.";
+    private static final String NO_OPTIONS = "There is no %s. Please undo.";
 
     public static final MagicTargetChoice NONE =
         new MagicTargetChoice(MagicTargetFilterFactory.NONE,MagicTargetHint.None,"nothing") {
@@ -494,7 +494,7 @@ public class MagicTargetChoice extends MagicChoice {
             // There are no valid choices.
             if (validChoices.contains(MagicTargetNone.getInstance())) {
                 if (event.isCost()) {
-                    controller.showMessage(source, MText.get(_S_NO_OPTIONS, targetDescription.replaceFirst("a(n)? ", "")));
+                    controller.showMessage(source, String.format(NO_OPTIONS, targetDescription.replaceFirst("a(n)? ", "")));
                 } else {
                     return new Object[]{MagicTargetNone.getInstance()};
                 }
