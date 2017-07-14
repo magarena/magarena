@@ -73,6 +73,7 @@ public enum MagicIcon {
     START("start.png"),
     STOP("stop.png"),
     UNDO("undo.png"),
+    UNDO2("undo2.png"),
     BUSY("busy.gif"),
     BUSY16("busy16.gif"),
     ALL("all.gif"),

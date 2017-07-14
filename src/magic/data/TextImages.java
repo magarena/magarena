@@ -13,6 +13,7 @@ public class TextImages {
 
     static {
         add("{f}", MagicIcon.FORWARD2);
+        add("{undo}", MagicIcon.UNDO2);
         add("{O}", MagicIcon.TARGET);
         add("{SS}", MagicIcon.CANNOTTAP);
         add("{D}", MagicIcon.DAMAGE);

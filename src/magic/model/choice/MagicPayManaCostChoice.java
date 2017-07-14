@@ -26,7 +26,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
     private static final String _S_CHOOSE = "Choose a mana ability to pay %s.";
 
     @StringContext(eg = "%s will be replaced with a mana cost icon.")
-    private static final String _S_NO_OPTIONS = "Unable to pay %s.|Please undo.";
+    private static final String _S_NO_OPTIONS = "Unable to pay %s.|Click {undo} to undo.";
 
     private final MagicManaCost cost;
 

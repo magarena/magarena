@@ -27,7 +27,7 @@ import magic.translate.MText;
 
 public class MagicTargetChoice extends MagicChoice {
 
-    private static final String NO_OPTIONS = "Unable to %s|Please undo.";
+    private static final String NO_OPTIONS = "Unable to %s|Click {undo} to undo.";
 
     public static final MagicTargetChoice NONE =
         new MagicTargetChoice(MagicTargetFilterFactory.NONE,MagicTargetHint.None,"nothing") {
