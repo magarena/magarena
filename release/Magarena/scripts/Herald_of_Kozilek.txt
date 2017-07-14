@@ -7,7 +7,7 @@ type=Creature
 subtype=Eldrazi,Drone
 cost={1}{U}{R}
 pt=2/4
-ability=Devoid
-requires_groovy_code
+ability=Devoid;\
+        Colorless spells you cast cost {1} less to cast.
 timing=main
 oracle=Devoid\nColorless spells you cast cost {1} less to cast.

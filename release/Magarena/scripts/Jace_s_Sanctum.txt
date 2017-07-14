@@ -5,7 +5,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=Whenever you cast an instant or sorcery spell, scry 1.
-requires_groovy_code=Goblin Electromancer
+ability=Instant and sorcery spells you cast cost {1} less to cast.;\
+        Whenever you cast an instant or sorcery spell, scry 1.
 timing=enchantment
 oracle=Instant and sorcery spells you cast cost {1} less to cast.\nWhenever you cast an instant or sorcery spell, scry 1.
