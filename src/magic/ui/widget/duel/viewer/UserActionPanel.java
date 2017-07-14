@@ -3,6 +3,7 @@ package magic.ui.widget.duel.viewer;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Insets;
@@ -49,37 +50,23 @@ public class UserActionPanel extends JPanel implements ActionListener {
     private final AbstractThrobber busyItem;
     private final JLabel imageLabel = new JLabel();
     private String actionPanelId = "0";
+    private boolean isMouseOver = false;
 
     public UserActionPanel(final SwingGameController controller) {
 
         this.controller=controller;
 
-        setLayout(new BorderLayout());
         setMinimumSize(new Dimension(0, 114));
         setOpaque(false);
 
-        actionPanel=new JPanel();
-        actionPanel.setOpaque(false);
-        actionCardLayout=new CardLayout();
-        actionPanel.setLayout(actionCardLayout);
-
         final JLabel emptyLabel=new JLabel("");
-        actionPanel.add(emptyLabel,"0");
 
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        imageLabel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                controller.showChoiceCardPopup();
-            }
-        });
-        actionPanel.add(imageLabel, "4");
 
         busyItem = new ImageThrobber.Builder(BUSY_IMAGE)
             .antiAlias(true)
             .spinPeriod(3000)
             .build();
-        actionPanel.add(busyItem,"1");
 
         actionButton=new JButton();
         actionButton.setIcon(MagicImages.getIcon(MagicIcon.FORWARD));
@@ -93,7 +80,6 @@ public class UserActionPanel extends JPanel implements ActionListener {
                 }
             }
         });
-        actionPanel.add(actionButton,"2");
 
         undoButton=new JButton(MagicImages.getIcon(MagicIcon.UNDO));
         undoButton.setMargin(new Insets(1,1,1,1));
@@ -102,40 +88,85 @@ public class UserActionPanel extends JPanel implements ActionListener {
         undoButton.setFocusable(false);
         undoButton.addActionListener(this);
 
+        actionPanel=new JPanel();
+        actionCardLayout=new CardLayout();
+        actionPanel.setLayout(actionCardLayout);
+        actionPanel.setOpaque(false);
+
+        actionPanel.add(emptyLabel,"0");
+        actionPanel.add(imageLabel, "4");
+        actionPanel.add(busyItem,"1");
+        actionPanel.add(actionButton,"2");
+
         final JPanel rightPanel=new JPanel(new GridLayout(2,1,0,2));
-        rightPanel.setOpaque(false);
         rightPanel.setPreferredSize(new Dimension(60,0));
         rightPanel.add(actionPanel);
         rightPanel.add(undoButton);
-        add(rightPanel,BorderLayout.EAST);
+        rightPanel.setOpaque(false);
 
         contentPanel=new JPanel();
-        contentPanel.setOpaque(false);
         contentPanel.setLayout(new BorderLayout());
-        contentPanel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                controller.showChoiceCardPopup();
-                controller.getPlayerZoneViewer().showChoiceViewerIfActive();
-            }
-        });
+        contentPanel.setOpaque(false);
 
         final JScrollPane scroller = new JScrollPane();
         scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
         scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         scroller.getViewport().setOpaque(false);
         scroller.getViewport().add(contentPanel);
+
+        setLayout(new BorderLayout());
         add(scroller, BorderLayout.CENTER);
+        add(rightPanel,BorderLayout.EAST);
 
         disableButton(false);
 
-        // Suppress mouse events reaching parent container.
-        // This will apply to any child components which have not
-        // registered their own mouse listener.
-        // Effectively prevents the card popup from being closed
-        // (by DuelPanel) while mouse cursor is inside UserActionPanel.
-        addMouseListener(new MouseAdapter(){});
+        // add mouse over listeners used to display the card image
+        // associated with the current choice if applicable.
+        setCardPopupOnMouseOverListener();
+        setComponentOnMouseOverListener(scroller);
+        setComponentOnMouseOverListener(rightPanel);
+        setComponentOnMouseOverListener(actionButton);
+        setComponentOnMouseOverListener(undoButton);
+    }
 
+    private void setCardPopupOnMouseOverListener() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                if (!isMouseOver) {
+                    isMouseOver = true;
+                    controller.showChoiceCardPopup();
+                    controller.getPlayerZoneViewer().showChoiceViewerIfActive();
+                }
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                Component c = SwingUtilities.getDeepestComponentAt(
+                    e.getComponent(),
+                    e.getX(),
+                    e.getY()
+                );
+                if (c == null) {
+                    controller.hideInfoNoDelay();
+                    isMouseOver = false;
+                }
+            }
+        });
+    }
+
+    private void setComponentOnMouseOverListener(JComponent c) {
+        c.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                super.mouseEntered(e);
+                UserActionPanel.this.dispatchEvent(e);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                super.mouseExited(e);
+                UserActionPanel.this.dispatchEvent(e);
+            }
+        });
     }
 
     public void clearContentPanel() {
