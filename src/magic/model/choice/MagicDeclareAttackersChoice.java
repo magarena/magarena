@@ -20,7 +20,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Declare attackers.";
     @StringContext(eg = "{f} will be replaced by an icon. | represents a new line.")
-    private static final String _S2 = "Click on a creature to declare as attacker or remove from combat.|Press {f} to continue.";
+    private static final String _S2 = "Click on a creature to declare as attacker or remove from combat.|Click {f} to continue.";
 
     private static final MagicDeclareAttackersChoice INSTANCE = new MagicDeclareAttackersChoice();
 

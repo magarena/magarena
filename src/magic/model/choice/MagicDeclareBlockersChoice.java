@@ -20,9 +20,9 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 
     // translatable UI text (prefix with _S).
     private static final String _S1 = "Declare blockers.";
-    private static final String _S_BLOCKER_MESSAGE = "Click on a creature to declare as blocker or remove from combat.|Press {f} to continue.";
+    private static final String _S_BLOCKER_MESSAGE = "Click on a creature to declare as blocker or remove from combat.|Click {f} to continue.";
     private static final String _S_ATTACKER_MESSAGE = "Click on an attacking creature to declare as blocker.";
-    private static final String _S_CONTINUE_MESSAGE = "Press {f} to continue.";
+    private static final String _S_CONTINUE_MESSAGE = "Click {f} to continue.";
 
     private static final MagicDeclareBlockersChoice INSTANCE=new MagicDeclareBlockersChoice();
 
