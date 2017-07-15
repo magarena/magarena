@@ -34,9 +34,6 @@ public class GeneralConfig {
 
     public static final String DEFAULT_TRANSLATION = "";
 
-    // settings that can only be updated by manually editing the config file.
-    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
-
     // settings that should normally be updated via the UI preferences dialog.
     private static final String ALWAYS_PASS = "pass";
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
@@ -433,16 +430,6 @@ public class GeneralConfig {
 
     public void setIgnoredVersionAlert(String version) {
         setProperty(IGNORED_VERSION_ALERT, version);
-    }
-
-    /**
-     * Minimum height of card image on which overlays such as P/T,
-     * ability icons, etc should be shown.
-     * <p>
-     * Non-UI: requires manual update of config file to change.
-     */
-    public int getOverlayMinimumHeight() {
-        return getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, 30);
     }
 
     public boolean isGamePausedOnPopup() {

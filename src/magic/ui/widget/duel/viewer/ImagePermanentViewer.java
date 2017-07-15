@@ -24,6 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.data.settings.IntegerSetting;
 import magic.model.MagicType;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
@@ -288,7 +289,7 @@ public class ImagePermanentViewer extends JPanel {
             ImageDrawingUtils.drawCardId(g, linkedInfo.permanent.getCard().getId(), 0, 0);
 
             // Add overlays, unless card image size is so small the overlays would be unreadable.
-            if (linkedRect.height > CONFIG.getOverlayMinimumHeight()) {
+            if (linkedRect.height > GeneralConfig.get(IntegerSetting.CARD_OVERLAY_MIN_HEIGHT)) {
 
                 int ax = x1 + 1;
                 final int ay = y2 - 17;
