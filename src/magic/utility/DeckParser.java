@@ -92,7 +92,8 @@ public final class DeckParser {
 
             // forge sections.
             if (line.startsWith("[")) {
-                isSkipLine = !line.equals("[metadata]") && !line.equals("[main]");
+                isSkipLine = !line.equals("[metadata]")
+                    && !line.equalsIgnoreCase("[main]");
                 continue;
             }
 
@@ -124,14 +125,17 @@ public final class DeckParser {
             // Lines containing card and quantity patterns.
             // -------------------------------------------------------------
 
-            // P1 : <qty> <card name>
-            if (line.matches("\\d+ [A-záéû \"',-/]+")) {
+            final String EXP_QTY = "\\d+"; // card quantity
+            final String EXP_CARD = " [A-záéû \"',-/]+"; // card name
+            final String P1 = EXP_QTY + EXP_CARD; // <qty> <card name>
+            final String P2 = P1 + "|.+";         // <qty> <card name>|...
+            if (line.matches(P1) || line.matches(P2)) {
                 // extract card quantity
-                Pattern qtyRegex = Pattern.compile("\\d+");
+                Pattern qtyRegex = Pattern.compile(EXP_QTY);
                 Matcher qtyMatcher = qtyRegex.matcher(line);
                 int quantity = Integer.parseInt(qtyMatcher.find() ? qtyMatcher.group() : "0");
                 // extract card name
-                Pattern cardRegex = Pattern.compile(" [A-záéû \"',-/]+");
+                Pattern cardRegex = Pattern.compile(EXP_CARD);
                 Matcher cardMatcher = cardRegex.matcher(line);
                 String cardName = (cardMatcher.find() ? cardMatcher.group() : "").trim();
                 //
