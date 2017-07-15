@@ -35,7 +35,6 @@ public class GeneralConfig {
     public static final String DEFAULT_TRANSLATION = "";
 
     // settings that can only be updated by manually editing the config file.
-    private static final String AVATAR = "avatar";
     private static final String CUSTOM_FONTS = "custom.fonts";
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
 
@@ -79,15 +78,19 @@ public class GeneralConfig {
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String TRANSLATION = "translation";
 
-    // obsolete settings that should not be imported into the current version
-    // or version sensitive settings that should not be overwritten.
+    // Settings that should not be imported into the current version
     public static final String[] NOT_IMPORTED = new String[]{
+
+        // properties reset each version
         IntegerSetting.FRAME_TOP.getKey(),
         IntegerSetting.FRAME_LEFT.getKey(),
         IntegerSetting.FRAME_WIDTH.getKey(),
         IntegerSetting.FRAME_HEIGHT.getKey(),
         BooleanSetting.FULL_SCREEN.getKey(),
-        TRANSLATION
+        TRANSLATION,
+
+        // obsolete properties
+        "avatar"
     };
 
     private static boolean isMissingFiles = false;
@@ -283,10 +286,6 @@ public class GeneralConfig {
 
     public void setMostRecentDeckFilename(String filename) {
         setProperty(RECENT_DECK, filename.trim());
-    }
-
-    public String getAvatar() {
-        return getProperty(AVATAR, "legend");
     }
 
     public String getHighlight() {

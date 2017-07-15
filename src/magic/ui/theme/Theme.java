@@ -61,8 +61,6 @@ public interface Theme {
 
     int getValue(final String name);
 
-    ImageIcon getAvatarIcon(final int index,final int size);
-
     ImageIcon getAbilityIcon(final AbilityIcon ability);
 
     BufferedImage getBackgroundImage();

@@ -3,12 +3,12 @@ package magic.ui.theme;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Locale;
+import java.util.Map;
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.ui.FontsAndBorders;
+import magic.ui.MagicImages;
 
 public abstract class AbstractTheme implements Theme {
 
@@ -108,11 +108,6 @@ public abstract class AbstractTheme implements Theme {
     public int getValue(final String aName) {
         final Object value=themeMap.get(aName);
         return value==null?0:(Integer)value;
-    }
-
-    @Override
-    public ImageIcon getAvatarIcon(final int index,final int size) {
-        return AvatarImages.getInstance().getAvatarIcon(index,size);
     }
 
     @Override

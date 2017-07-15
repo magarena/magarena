@@ -5,6 +5,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
@@ -17,12 +18,14 @@ import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
+import magic.model.MagicRandom;
 import magic.model.player.PlayerProfile;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
-import magic.ui.theme.AvatarImages;
 import magic.ui.theme.PlayerAvatar;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicResources;
+import org.apache.commons.io.FileUtils;
 
 public final class MagicImages {
 
@@ -205,11 +208,22 @@ public final class MagicImages {
         return getPlayerAvatar(playerDef.getProfile()).getIcon(size);
     }
 
+    private static File getRandomAvatarFile() {
+        final Collection<File> files = FileUtils.listFiles(
+            MagicFileSystem.getDataPath(MagicFileSystem.DataPath.AVATARS).toFile(),
+            new String[]{"png"},
+            true
+        );
+        return files.stream()
+            .skip(MagicRandom.nextRNGInt(files.size() - 1))
+            .findFirst().orElse(new File(""));
+    }
+
     private static BufferedImage getAvatarImage(PlayerProfile profile) {
         File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
         return file.exists()
                 ? ImageFileIO.toImg(file, MISSING_BIG)
-                : ImageFileIO.toImg(AvatarImages.getRandomAvatarFile(), MISSING_BIG);
+                : ImageFileIO.toImg(getRandomAvatarFile(), MISSING_BIG);
     }
 
     public static PlayerAvatar getPlayerAvatar(PlayerProfile profile) {

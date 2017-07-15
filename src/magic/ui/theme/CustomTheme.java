@@ -1,9 +1,6 @@
 package magic.ui.theme;
 
 
-import magic.ui.MagicImages;
-import javax.swing.ImageIcon;
-
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -16,11 +13,13 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
+import javax.swing.ImageIcon;
 import magic.ui.ImageFileIO;
-import static magic.ui.theme.Theme.ICON_SMALL_BATTLEFIELD;
-import static magic.ui.theme.Theme.ICON_SMALL_COMBAT;
+import magic.ui.MagicImages;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
+import static magic.ui.theme.Theme.ICON_SMALL_BATTLEFIELD;
+import static magic.ui.theme.Theme.ICON_SMALL_COMBAT;
 
 public class CustomTheme extends AbstractTheme {
 
@@ -59,14 +58,6 @@ public class CustomTheme extends AbstractTheme {
             return name.substring(0, name.length() - "_theme".length());
         }
         return name;
-    }
-
-    @Override
-    public ImageIcon getAvatarIcon(final int index,final int size) {
-        if (nrOfAvatars==0) {
-            return super.getAvatarIcon(index, size);
-        }
-        return playerAvatars[index%nrOfAvatars].getIcon(size);
     }
 
     private void parseEntry(final String key,final String value) {
