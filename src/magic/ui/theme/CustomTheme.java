@@ -1,6 +1,5 @@
 package magic.ui.theme;
 
-
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -18,19 +17,13 @@ import magic.ui.ImageFileIO;
 import magic.ui.MagicImages;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
-import static magic.ui.theme.Theme.ICON_SMALL_BATTLEFIELD;
-import static magic.ui.theme.Theme.ICON_SMALL_COMBAT;
 
 public class CustomTheme extends AbstractTheme {
 
     private static final String THEME_PROPERTIES_FILE="theme.properties";
 
-    private static final int MAX_AVATARS=100;
-
     private final File file;
     private ZipFile zipFile;
-    private final PlayerAvatar[] playerAvatars;
-    private int nrOfAvatars;
     private final Map<String, BufferedImage> imagesMap;
 
     public CustomTheme(final File file) {
@@ -40,7 +33,6 @@ public class CustomTheme extends AbstractTheme {
         addToTheme(ICON_SMALL_COMBAT, null);
 
         this.file = file;
-        playerAvatars = new PlayerAvatar[MAX_AVATARS];
         imagesMap = new HashMap<>();
     }
 
@@ -70,15 +62,6 @@ public class CustomTheme extends AbstractTheme {
         }
         Object typeValue=null;
         final String type=key.substring(0,index);
-        if ("avatar".equals(type)) {
-            final int avatarIndex=Integer.parseInt(key.substring(index+1));
-            if (avatarIndex>0&&avatarIndex<=MAX_AVATARS) {
-                final BufferedImage image=loadImage("avatars/"+value);
-                playerAvatars[avatarIndex-1]=new PlayerAvatar(image);
-                nrOfAvatars=Math.max(avatarIndex,nrOfAvatars);
-            }
-            return;
-        }
         if ("value".equals(type)) {
             typeValue=Integer.parseInt(value);
         } else if ("color".equals(type)) {
