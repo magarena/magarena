@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.exception.GameException;
 import magic.model.action.AddEventAction;
 import magic.model.action.AddFirstEventAction;
@@ -344,7 +345,7 @@ public class MagicGame {
     }
 
     public boolean canAlwaysPass() {
-        if (GeneralConfig.getInstance().getAlwaysPass()) {
+        if (GeneralConfig.get(BooleanSetting.ALWAYS_PASS)) {
             return phase.getType() == MagicPhaseType.Draw ||
                    phase.getType() == MagicPhaseType.BeginOfCombat;
         }

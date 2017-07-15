@@ -34,8 +34,6 @@ public class GeneralConfig {
 
     public static final String DEFAULT_TRANSLATION = "";
 
-    // settings that should normally be updated via the UI preferences dialog.
-    private static final String ALWAYS_PASS = "pass";
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private static final String ANIMATION_FLAGS = "animationFlags";
     private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
@@ -318,14 +316,6 @@ public class GeneralConfig {
 
     public void setSkipSingle(boolean skipSingle) {
         setProperty(SKIP_SINGLE, skipSingle);
-    }
-
-    public boolean getAlwaysPass() {
-        return getProperty(ALWAYS_PASS, true);
-    }
-
-    public void setAlwaysPass(boolean alwaysPass) {
-        setProperty(ALWAYS_PASS, alwaysPass);
     }
 
     public boolean getSmartTarget() {

@@ -35,6 +35,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicFrame;
@@ -42,9 +43,9 @@ import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.dialog.button.SaveButton;
+import magic.ui.mwidgets.MCheckBox;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
-import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -260,7 +261,7 @@ public class PreferencesDialog
         skipSingleCheckBox.setToolTipText(MText.get(_S22));
         setButtonPropertyDefaults(skipSingleCheckBox);
 
-        alwaysPassCheckBox = new MCheckBox(getAsHtml(MText.get(_S23)), config.getAlwaysPass());
+        alwaysPassCheckBox = new MCheckBox(getAsHtml(MText.get(_S23)), GeneralConfig.get(BooleanSetting.ALWAYS_PASS));
         setButtonPropertyDefaults(alwaysPassCheckBox);
 
         smartTargetCheckBox = new MCheckBox(getAsHtml(MText.get(_S24)), config.getSmartTarget());
@@ -298,7 +299,7 @@ public class PreferencesDialog
         themesPanel.saveSettings();
         config.setTouchscreen(touchscreenCheckBox.isSelected());
         config.setSkipSingle(skipSingleCheckBox.isSelected());
-        config.setAlwaysPass(alwaysPassCheckBox.isSelected());
+        GeneralConfig.set(BooleanSetting.ALWAYS_PASS, alwaysPassCheckBox.isSelected());
         config.setSmartTarget(smartTargetCheckBox.isSelected());
         config.setMessageDelay(messageDelaySlider.getValue());
         config.setShowMulliganScreen(mulliganScreenCheckbox.isSelected());
