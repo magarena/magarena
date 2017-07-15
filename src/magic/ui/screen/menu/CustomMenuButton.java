@@ -3,7 +3,6 @@ package magic.ui.screen.menu;
 import java.awt.Font;
 import javax.swing.AbstractAction;
 import magic.awt.MagicFont;
-import magic.data.GeneralConfig;
 import magic.translate.MText;
 import magic.ui.FontsAndBorders;
 
@@ -23,9 +22,7 @@ class CustomMenuButton extends MenuButton {
     }
 
     public static Font getDisplayFont() {
-        return MText.canUseCustomFonts() && GeneralConfig.getInstance().useCustomFonts()
-            ? CUSTOM_FONT
-            : DEFAULT_FONT;
+        return MText.canUseCustomFonts() ? CUSTOM_FONT : DEFAULT_FONT;
     }
 
 }

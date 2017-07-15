@@ -25,6 +25,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.CRC32;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -287,6 +288,6 @@ public final class MText {
     }
 
     public static boolean canUseCustomFonts() {
-        return useCustomFonts;
+        return useCustomFonts && GeneralConfig.get(BooleanSetting.CUSTOM_FONTS);
     }
 }

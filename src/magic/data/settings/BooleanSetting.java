@@ -3,9 +3,11 @@ package magic.data.settings;
 public enum BooleanSetting {
 
     CUSTOM_BACKGROUND("customBackground", false),
+    CUSTOM_FONTS("custom.fonts", true),
     CUSTOM_SCROLLBAR("customScrollBar", true),
     FULL_SCREEN("fullScreen", false),
-    MAXIMIZE_FRAME("maximized", false);
+    MAXIMIZE_FRAME("maximized", false),
+    ;
 
     private final String propertyName;
     private final boolean defaultValue;

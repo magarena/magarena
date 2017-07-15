@@ -35,7 +35,6 @@ public class GeneralConfig {
     public static final String DEFAULT_TRANSLATION = "";
 
     // settings that can only be updated by manually editing the config file.
-    private static final String CUSTOM_FONTS = "custom.fonts";
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
 
     // settings that should normally be updated via the UI preferences dialog.
@@ -582,10 +581,6 @@ public class GeneralConfig {
 
     public void setCardFlowScreenSettings(String settings) {
         setProperty(CARDFLOW_SCREEN_SETTINGS, settings);
-    }
-
-    public boolean useCustomFonts() {
-        return getProperty(CUSTOM_FONTS, true);
     }
 
 }
