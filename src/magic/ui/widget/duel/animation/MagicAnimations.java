@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.model.MagicCard;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.viewerinfo.CardViewerInfo;
@@ -144,11 +145,11 @@ public class MagicAnimations {
     }
 
     public static boolean isOn(long aFlag) {
-        return GeneralConfig.getInstance().showGameplayAnimations() && AnimationFx.isOn(aFlag);
+        return GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY) && AnimationFx.isOn(aFlag);
     }
 
     public static boolean isOff(long aFlag) {
-        return !GeneralConfig.getInstance().showGameplayAnimations() || !AnimationFx.isOn(aFlag);
+        return !GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY) || !AnimationFx.isOn(aFlag);
     }
 
 //    private static void showDebugInfo(GameViewerInfo oldGameInfo, GameViewerInfo newGameInfo, MagicCard aCard) {

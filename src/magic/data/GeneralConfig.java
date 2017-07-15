@@ -34,7 +34,6 @@ public class GeneralConfig {
 
     public static final String DEFAULT_TRANSLATION = "";
 
-    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private static final String ANIMATION_FLAGS = "animationFlags";
     private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
     private static final String CARDS_TABLE_STYLE = "explorer.table.style";
@@ -233,14 +232,6 @@ public class GeneralConfig {
         } else {
             setProperty(PROXY_SETTINGS, "");
         }
-    }
-
-    public boolean showGameplayAnimations() {
-        return getProperty(ANIMATE_GAMEPLAY, true);
-    }
-
-    public void setShowGameplayAnimations(boolean b) {
-        setProperty(ANIMATE_GAMEPLAY, b);
     }
 
     public boolean isCustomCardImagesPath() {

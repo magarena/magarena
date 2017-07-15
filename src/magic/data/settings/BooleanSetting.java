@@ -3,6 +3,7 @@ package magic.data.settings;
 public enum BooleanSetting {
 
     ALWAYS_PASS("pass", true),
+    ANIMATE_GAMEPLAY("animateGameplay", true),
     CUSTOM_BACKGROUND("customBackground", false),
     CUSTOM_FONTS("custom.fonts", true),
     CUSTOM_SCROLLBAR("customScrollBar", true),

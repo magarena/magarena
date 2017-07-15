@@ -27,6 +27,7 @@ import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.exception.InvalidDeckException;
 import magic.exception.UndoClickedException;
 import magic.game.state.GameState;
@@ -555,7 +556,8 @@ public class SwingGameController implements IUIGameController {
     }
 
     private boolean isReadyToAnimate() {
-        return CONFIG.showGameplayAnimations() && (animation == null || animation.isRunning.get() == false);
+        return GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY)
+            && (animation == null || animation.isRunning.get() == false);
     }
 
     private void doPlayAnimationAndWait(final GameViewerInfo oldGameInfo, final GameViewerInfo newGameInfo) {

@@ -10,6 +10,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.data.settings.BooleanSetting;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 import magic.ui.helpers.ImageHelper;
@@ -117,7 +118,7 @@ public class PlayerImagePanel extends JPanel {
     }
 
     private void doDamageAnimation() {
-        if (GeneralConfig.getInstance().showGameplayAnimations()) {
+        if (GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY)) {
             final Timeline timeline = new Timeline();
             timeline.setDuration(100);
             timeline.addPropertyToInterpolate(
@@ -136,7 +137,7 @@ public class PlayerImagePanel extends JPanel {
     }
 
     private void doHealAnimation() {
-        if (GeneralConfig.getInstance().showGameplayAnimations()) {
+        if (GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY)) {
             final Timeline timeline = new Timeline();
             timeline.setDuration(1000);
             timeline.setEase(new Spline(0.8f));

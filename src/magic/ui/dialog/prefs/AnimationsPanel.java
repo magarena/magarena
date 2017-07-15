@@ -5,6 +5,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import magic.data.GeneralConfig;
+import magic.data.settings.BooleanSetting;
 import magic.translate.MText;
 import magic.ui.mwidgets.MCheckBox;
 import magic.ui.widget.SliderPanel;
@@ -48,12 +49,12 @@ class AnimationsPanel extends JPanel {
 
     private JPanel getAnimationSubPanel() {
         final JPanel panel = new SubPanel();
-        panel.setEnabled(CONFIG.showGameplayAnimations());
+        panel.setEnabled(GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY));
         return panel;
     }
 
     private MCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
-        final MCheckBox cb = new MCheckBox(MText.get(_S70), CONFIG.showGameplayAnimations());
+        final MCheckBox cb = new MCheckBox(MText.get(_S70), GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY));
         cb.setToolTipText(MText.get(_S71));
         cb.setFocusable(false);
         cb.addMouseListener(aListener);
@@ -88,7 +89,7 @@ class AnimationsPanel extends JPanel {
     }
 
     void saveSettings() {
-        CONFIG.setShowGameplayAnimations(animateCheckBox.isSelected());
+        GeneralConfig.set(BooleanSetting.ANIMATE_GAMEPLAY, animateCheckBox.isSelected());
         CONFIG.setNewTurnAlertDuration(newTurnAlertSlider.getValue() * 1000);
         CONFIG.setLandPreviewDuration(landPreviewSlider.getValue() * 1000);
         CONFIG.setNonLandPreviewDuration(nonlandPreviewSlider.getValue() * 1000);

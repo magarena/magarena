@@ -6,9 +6,10 @@ import java.awt.Graphics2D;
 import java.awt.Stroke;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.utility.MagicStyle;
+import magic.data.settings.BooleanSetting;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.Timeline.TimelineState;
 import org.pushingpixels.trident.ease.Spline;
@@ -42,7 +43,7 @@ public class AnimationPanel extends JPanel {
     }
 
     private void startPulsingBorderAnimation() {
-        if (GeneralConfig.getInstance().showGameplayAnimations()) {
+        if (GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY)) {
             stopPulsingBorderAnimation();
             pulseBorderTimeline.setDuration(500);
             pulseBorderTimeline.setEase(new Spline(0.8f));
