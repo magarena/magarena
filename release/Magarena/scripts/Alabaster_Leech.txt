@@ -6,6 +6,6 @@ type=Creature
 subtype=Leech
 cost={W}
 pt=1/3
-requires_groovy_code
+ability=White spells you cast cost {W} more to cast.
 timing=main
 oracle=White spells you cast cost {W} more to cast.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Leech
 cost={2}{B}
 pt=2/2
-ability={B}: SN gets +1/+1 until end of turn.
-requires_groovy_code
+ability=Black spells you cast cost {B} more to cast.;\
+        {B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Black spells you cast cost {B} more to cast.\n{B}: Andradite Leech gets +1/+1 until end of turn.

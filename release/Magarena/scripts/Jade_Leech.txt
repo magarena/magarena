@@ -6,6 +6,6 @@ type=Creature
 subtype=Leech
 cost={2}{G}{G}
 pt=5/5
-requires_groovy_code
+ability=Green spells you cast cost {G} more to cast.
 timing=main
 oracle=Green spells you cast cost {G} more to cast.

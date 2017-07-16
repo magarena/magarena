@@ -6,7 +6,7 @@ type=Creature
 subtype=Leech
 cost={1}{R}
 pt=2/2
-ability=First strike
-requires_groovy_code
+ability=First strike;\
+        Red spells you cast cost {R} more to cast.
 timing=main
 oracle=First strike\nRed spells you cast cost {R} more to cast.

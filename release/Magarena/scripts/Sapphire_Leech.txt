@@ -6,7 +6,7 @@ type=Creature
 subtype=Leech
 cost={1}{U}
 pt=2/2
-ability=Flying
-requires_groovy_code
+ability=Flying;\
+        Blue spells you cast cost {U} more to cast.
 timing=main
 oracle=Flying\nBlue spells you cast cost {U} more to cast.

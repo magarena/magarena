@@ -6,6 +6,6 @@ type=Creature
 subtype=Thrull
 cost={3}{B}
 pt=4/4
+ability=Black spells you cast cost {B} more to cast.
 timing=main
-requires_groovy_code
 oracle=Black spells you cast cost {B} more to cast.
