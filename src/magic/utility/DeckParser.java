@@ -25,7 +25,12 @@ public final class DeckParser {
     private static final Pattern QTY_PATTERN = Pattern.compile(CARD_QTY);
     private static final Pattern CARD_PATTERN = Pattern.compile(" " + CARD_NAME);
     private static final String MATCH1 = String.format("%s %s", CARD_QTY, CARD_NAME);
-    private static final String MATCH2 = String.format("%s %s|.+", CARD_QTY, CARD_NAME);
+    private static final String MATCH2 = String.format("%s %s\\|.+", CARD_QTY, CARD_NAME);
+
+    private static final int MAX_UNSUPPORTED_LINES = 50;
+    private static final int MAX_LINE_ERRORS = 3;
+    private static final int MAX_LINE_LENGTH = 50; // characters.
+    private static final int MAX_LINES = GeneralConfig.get(IntegerSetting.DECK_MAX_LINES);
 
     public static MagicDeck parseLines(List<String> textLines) {
 
@@ -35,14 +40,12 @@ public final class DeckParser {
             return deck;
         }
 
-        final int MAX_LINES = GeneralConfig.get(IntegerSetting.DECK_MAX_LINES);
         if (textLines.size() > MAX_LINES) {
             deck.setInvalidDeck(MText.get(_S2, MAX_LINES));
             return deck;
         }
 
-        final int MAX_LINE_ERRORS = 3;
-        final int MAX_LINE_LENGTH = 50; // characters.
+        int unsupportedLines = 0;
         int lineNumber = 0;
         final List<String> lineErrors = new ArrayList<>();
         boolean isSkipLine = false;
@@ -83,6 +86,23 @@ public final class DeckParser {
 
             if (line.length() > MAX_LINE_LENGTH) {
                 lineErrors.add(MText.get(_S4, lineNumber, MAX_LINE_LENGTH));
+                continue;
+            }
+
+            // -------------------------------------------------------------
+            // mtg.gamepedia.com markdown
+            // -------------------------------------------------------------
+
+            if (line.matches("<d title=\".+\">")) {
+                // extract text between quotes...
+                final Pattern regexp = Pattern.compile(".*\\\"(.*)\\\".*");
+                final Matcher matcher = regexp.matcher(line);
+                String deckName = (matcher.find() ? matcher.group(1) : "").trim();
+                deck.setFilename("gamepedia." + deckName);
+                continue;
+            }
+
+            if (line.startsWith("==") || line.startsWith("<")) {
                 continue;
             }
 
@@ -131,7 +151,6 @@ public final class DeckParser {
             // -------------------------------------------------------------
             // Lines containing card and quantity patterns.
             // -------------------------------------------------------------
-
             if (line.matches(MATCH1) || line.matches(MATCH2)) {
                 // extract card quantity
                 Matcher qtyMatcher = QTY_PATTERN.matcher(line);
@@ -151,7 +170,10 @@ public final class DeckParser {
             }
 
             // unsupported line.
-            lineErrors.add(line);
+            unsupportedLines++;
+            if (unsupportedLines > MAX_UNSUPPORTED_LINES) {
+                lineErrors.add("Maximum number of unrecognized lines exceeded.");
+            }
 
             // abort if errors threshold is exceeded.
             if (lineErrors.size() > MAX_LINE_ERRORS) {
