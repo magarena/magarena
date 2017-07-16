@@ -1,5 +1,6 @@
 Ahn-Crop Champion
 Ahn-Crop Crasher
+Air Elemental
 Ancient Crab
 Angel of Sanctions
 Angler Drake
@@ -18,6 +19,7 @@ Binding Mummy
 Bitterblade Warrior
 Blazing Volley
 Blighted Bat
+Bloodhunter Bat
 Bloodlust Inciter
 Bloodrage Brawler
 Bone Picker
@@ -36,6 +38,7 @@ Cartouche of Zeal
 Cascading Cataracts
 Cast Out
 Censor
+Certain Death
 Champion of Rhonas
 Channeler Initiate
 Cinder Barrens
@@ -47,6 +50,7 @@ Compelling Argument
 Comply
 Compulsory Rest
 Consuming Fervor
+Coral Merfolk
 Cradle of the Accursed
 Crocodile of the Crossing
 Cruel Reality
@@ -65,8 +69,10 @@ Destined
 Devoted Crop-Mate
 Dispossess
 Dissenter's Deliverance
+Divine Verdict
 Djeru's Resolve
 Doomed Dissenter
+Drag Under
 Drake Haven
 Dread Wanderer
 Dune Beetle
@@ -82,6 +88,7 @@ Evolving Wilds
 Exemplar of Strength
 Failure
 Faith of the Devoted
+Falkenrath Reaver
 Fan Bearer
 Feed
 Festering Mummy
@@ -97,6 +104,7 @@ Forsake the Worldly
 Forsaken Sanctuary
 Foul Orchard
 Galestrike
+Garruk's Horde
 Gate to the Afterlife
 Giant Spider
 Gideon of the Trials
@@ -105,6 +113,7 @@ Gideon's Resolve
 Gideon, Martial Paragon
 Gift of Paradise
 Glorious End
+Glory Seeker
 Glory-Bound Initiate
 Glorybringer
 Glyph Keeper
@@ -138,6 +147,7 @@ Impeccable Timing
 In Oketra's Name
 Initiate's Companion
 Injury
+Inspiration
 Insult
 Irrigated Farmland
 Island
@@ -174,8 +184,10 @@ Neheb, the Worthy
 Nest of Scarabs
 Never
 New Perspectives
+Nightmare
 Nimble-Blade Khenra
 Nissa, Steward of Elements
+Oakenform
 Oashra Cultivator
 Oketra the True
 Oketra's Attendant
@@ -198,7 +210,9 @@ Pull from Tomorrow
 Pursue Glory
 Pyramid of the Pantheon
 Quarry Hauler
+Rabid Bite
 Rags
+Raise Dead
 Reduce
 Regal Caracal
 Renewed Faith
@@ -209,6 +223,7 @@ Rhonas's Monument
 Ribbons
 Riches
 River Serpent
+Rootwalla
 Rubble
 Ruthless Sniper
 Sacred Cat
@@ -220,25 +235,35 @@ Scarab Feast
 Scattered Groves
 Scribe of the Mindful
 Seeker of Insight
+Sengir Vampire
 Seraph of the Suns
+Serra Angel
 Shadow of the Grave
 Shadowstorm Vizier
 Shed Weakness
 Shefet Monitor
 Sheltered Thicket
 Shimmerscale Drake
+Shivan Dragon
 Sixth Sense
+Sleep Paralysis
 Slither Blade
 Soul-Scar Mage
 Soulstinger
 Sparring Mummy
+Sphinx of Magosi
 Spidery Grasp
 Splendid Agony
 Spring
+Stalking Tiger
+Stampeding Rhino
+Standing Troops
 Start
+Stealer of Secrets
 Stinging Shot
 Stir the Sands
 Stone Quarry
+Stormfront Pegasus
 Submerged Boneyard
 Sunscorched Desert
 Supernatural Stamina
@@ -253,6 +278,7 @@ Temmet, Vizier of Naktamun
 Those Who Serve
 Thresher Lizard
 Throne of the God-Pharaoh
+Thundering Giant
 Timber Gorge
 Time to Reflect
 Tormenting Voice
@@ -263,11 +289,14 @@ Trial of Knowledge
 Trial of Solidarity
 Trial of Strength
 Trial of Zeal
+Tricks of the Trade
 Trueheart Duelist
 Trueheart Twins
 Unburden
+Untamed Hunger
 Unwavering Initiate
 Victory
+Victory's Herald
 Violent Impact
 Vizier of Deferment
 Vizier of Many Faces
@@ -282,6 +311,7 @@ Watchful Naga
 Wayward Servant
 Weaver of Currents
 Winds of Rebuke
+Wing Snare
 Winged Shepherd
 Woodland Stream
 Zenith Seeker
