@@ -20,6 +20,13 @@ public final class DeckParser {
     private static final String _S4 = "line %d: line length exceeds %d characters.";
     private static final String _S7 = "line %d: invalid card (%s).";
 
+    private static final String CARD_QTY = "\\d+";
+    private static final String CARD_NAME = "[A-záéû \"',-/]+";
+    private static final Pattern QTY_PATTERN = Pattern.compile(CARD_QTY);
+    private static final Pattern CARD_PATTERN = Pattern.compile(" " + CARD_NAME);
+    private static final String MATCH1 = String.format("%s %s", CARD_QTY, CARD_NAME);
+    private static final String MATCH2 = String.format("%s %s|.+", CARD_QTY, CARD_NAME);
+
     public static MagicDeck parseLines(List<String> textLines) {
 
         final MagicDeck deck = new MagicDeck();
@@ -125,18 +132,12 @@ public final class DeckParser {
             // Lines containing card and quantity patterns.
             // -------------------------------------------------------------
 
-            final String EXP_QTY = "\\d+"; // card quantity
-            final String EXP_CARD = " [A-záéû \"',-/]+"; // card name
-            final String P1 = EXP_QTY + EXP_CARD; // <qty> <card name>
-            final String P2 = P1 + "|.+";         // <qty> <card name>|...
-            if (line.matches(P1) || line.matches(P2)) {
+            if (line.matches(MATCH1) || line.matches(MATCH2)) {
                 // extract card quantity
-                Pattern qtyRegex = Pattern.compile(EXP_QTY);
-                Matcher qtyMatcher = qtyRegex.matcher(line);
+                Matcher qtyMatcher = QTY_PATTERN.matcher(line);
                 int quantity = Integer.parseInt(qtyMatcher.find() ? qtyMatcher.group() : "0");
                 // extract card name
-                Pattern cardRegex = Pattern.compile(EXP_CARD);
-                Matcher cardMatcher = cardRegex.matcher(line);
+                Matcher cardMatcher = CARD_PATTERN.matcher(line);
                 String cardName = (cardMatcher.find() ? cardMatcher.group() : "").trim();
                 //
                 MagicCardDefinition cardDef = DeckUtils.getCard(cardName);
