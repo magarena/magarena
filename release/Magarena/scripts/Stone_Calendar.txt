@@ -4,6 +4,6 @@ value=3.057
 rarity=R
 type=Artifact
 cost={5}
-requires_groovy_code
+ability=Spells you cast cost {1} less to cast.
 timing=artifact
 oracle=Spells you cast cost up to {1} less to cast.
