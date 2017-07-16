@@ -13,6 +13,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicManaCost;
+import magic.model.MagicCostManaType;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
@@ -535,6 +536,23 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
                 if (filter.accept(source, source.getController(), card) && source.isFriend(card)) {
                     return cost.reduce(n);
+                } else {
+                    return cost;
+                }
+            }
+        };
+    }
+
+    public static MagicStatic CostIncrease(final MagicTargetFilter<MagicCard> filter, final MagicManaCost cost) {
+        return new MagicStatic(MagicLayer.CostReduction) {
+            @Override
+            public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+                if (filter.accept(source, source.getController(), card)) {
+                    MagicManaCost res = cost;
+                    for (final MagicCostManaType cmt : cost.getCostManaTypes(0)) {
+                        res = cost.increase(cmt, 1);
+                    }
+                    return res;
                 } else {
                     return cost;
                 }
