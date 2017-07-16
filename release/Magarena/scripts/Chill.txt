@@ -4,6 +4,6 @@ value=4.180
 rarity=U
 type=Enchantment
 cost={1}{U}
-requires_groovy_code
+ability=Red spells cost {2} more to cast.
 timing=enchantment
 oracle=Red spells cost {2} more to cast.

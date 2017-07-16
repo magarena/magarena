@@ -7,7 +7,7 @@ type=Creature
 subtype=Pegasus
 cost={2}{W}
 pt=2/1
-ability=Flying
-requires_groovy_code=Thalia, Guardian of Thraben
+ability=Flying;\
+        Noncreature spells cost {1} more to cast.
 timing=main
 oracle=Flying\nNoncreature spells cost {1} more to cast.

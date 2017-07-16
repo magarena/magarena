@@ -4,6 +4,6 @@ value=2.717
 rarity=R
 type=Artifact
 cost={6}
-requires_groovy_code
+ability=Creature spells cost {2} more to cast.
 timing=artifact
 oracle=Creature spells cost {2} more to cast.

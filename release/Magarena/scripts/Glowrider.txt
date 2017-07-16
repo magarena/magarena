@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=2/1
-requires_groovy_code=Thalia, Guardian of Thraben
+ability=Noncreature spells cost {1} more to cast.
 timing=main
 oracle=Noncreature spells cost {1} more to cast.

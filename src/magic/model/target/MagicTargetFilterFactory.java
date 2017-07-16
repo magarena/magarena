@@ -2112,6 +2112,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl NONARTIFACT_CARD = new MagicCardFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+            return !target.hasType(MagicType.Artifact);
+        }
+    };
+
     public static final MagicCardFilterImpl NONARTIFACT_NONLAND_CARD = new MagicCardFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
@@ -2606,6 +2613,7 @@ public class MagicTargetFilterFactory {
         addp("red or green card", RED_OR_GREEN_CARD);
         addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
         addp("noncreature card", NONCREATURE_CARD);
+        addp("nonartifact card", NONARTIFACT_CARD);
         addp("nonartifact, nonland card", NONARTIFACT_NONLAND_CARD);
         addp("basic land card or a Desert card", BASIC_LAND_CARD_OR_DESERT_CARD);
         addp("basic land card or a Gate card", BASIC_LAND_CARD_OR_GATE_CARD);

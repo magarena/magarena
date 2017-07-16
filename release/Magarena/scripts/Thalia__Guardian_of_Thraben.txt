@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=2/1
-ability=First strike
-requires_groovy_code
+ability=First strike;\
+        Noncreature spells cost {1} more to cast.
 timing=main
 oracle=First strike\nNoncreature spells cost {1} more to cast.
