@@ -121,4 +121,18 @@ public class CardTablePanelB extends CardsTablePanel
         tableModel.showCardCount(b);
     }
 
+    public MagicCardDefinition getCard(int index) {
+        return tableModel.getCardDef(index);
+    }
+
+    public void selectCardAt(int index) {
+        table.setRowSelectionInterval(index, index);
+        scrollRowToViewportCenter(index);
+    }
+
+    public int getSelectedCardIndex() {
+        int row = table.getSelectedRow();
+        return row == -1 ? 0 : row;
+    }
+
 }

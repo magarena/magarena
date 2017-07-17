@@ -5,6 +5,7 @@ import java.awt.Container;
 import java.awt.Cursor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
@@ -12,6 +13,7 @@ import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.ICardFilterPanelListener;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.widget.card.filter.CardFilterPanel;
 import magic.ui.widget.cards.table.CardTablePanelB;
@@ -128,6 +130,22 @@ public class ExplorerContentPanel extends JPanel
 
     void setCardsTableStyle() {
         cardPoolTable.setStyle();
+    }
+
+    BufferedImage getCardImage(int index) {
+        return MagicImages.getCardImage(cardPoolTable.getCard(index));
+    }
+
+    int getCardsCount() {
+        return filterPanel.getTotalCardCount();
+    }
+
+    void setCardAt(int index) {
+        cardPoolTable.selectCardAt(index);
+    }
+
+    int getSelectedCardIndex() {
+        return cardPoolTable.getSelectedCardIndex();
     }
 
     private class CardPoolMouseListener extends MouseAdapter {

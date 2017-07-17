@@ -23,6 +23,7 @@ import magic.ui.screen.about.AboutScreen;
 import magic.ui.screen.card.explorer.ExplorerScreen;
 import magic.ui.screen.card.script.CardScriptScreen;
 import magic.ui.screen.cardflow.CardFlowScreen;
+import magic.ui.screen.cardflow.ICardFlowListener;
 import magic.ui.screen.cardflow.ICardFlowProvider;
 import magic.ui.screen.deck.DeckScreen;
 import magic.ui.screen.deck.editor.DeckEditorScreen;
@@ -359,6 +360,10 @@ public final class ScreenController {
 
     public static void showCardFlowScreen(ICardFlowProvider provider, String screenTitle) {
         showScreen(() -> new CardFlowScreen(provider, screenTitle));
+    }
+
+    public static void showCardFlowScreen(ICardFlowProvider provider, ICardFlowListener listener, String screenTitle) {
+        showScreen(() -> new CardFlowScreen(provider, listener, screenTitle));
     }
 
     public static boolean isDeckScreenShowing() {

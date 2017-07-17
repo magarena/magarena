@@ -431,7 +431,9 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
     }
 
     public void addListener(ICardFlowListener aListener) {
-        listeners.add(aListener);
+        if (aListener != null) {
+            listeners.add(aListener);
+        }
     }
 
     public int getImagesCount() {

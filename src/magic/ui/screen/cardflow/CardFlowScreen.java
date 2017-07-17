@@ -33,10 +33,22 @@ public class CardFlowScreen extends HeaderFooterScreen
     private final OptionsPanel optionsPanel;
     private final ScreenSettings settings = new ScreenSettings();
     private final FlashTextOverlay flashOverlay = new FlashTextOverlay();
+    private final ICardFlowListener listener;
+
+    public CardFlowScreen(ICardFlowProvider provider, ICardFlowListener listener, String screenTitle) {
+        super(screenTitle);
+        this.provider = provider;
+        this.listener = listener;
+        optionsPanel = new OptionsPanel(this, settings);
+        cardFlowPanel = new CardFlowPanel(provider, settings);
+        layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
+        initialize();
+    }
 
     public CardFlowScreen(ICardFlowProvider provider, String screenTitle) {
         super(screenTitle);
         this.provider = provider;
+        this.listener = null;
         optionsPanel = new OptionsPanel(this, settings);
         cardFlowPanel = new CardFlowPanel(provider, settings);
         layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
@@ -46,6 +58,7 @@ public class CardFlowScreen extends HeaderFooterScreen
     public CardFlowScreen() {
         super("Cardflow Test Screen");
         this.provider = this;
+        this.listener = null;
         optionsPanel = new OptionsPanel(this, settings);
         cardFlowPanel = new CardFlowPanel(this, settings);
         layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
@@ -55,6 +68,7 @@ public class CardFlowScreen extends HeaderFooterScreen
     private void initialize() {
 
         cardFlowPanel.addListener(this);
+        cardFlowPanel.addListener(listener);
         cardFlowPanel.setBackground(BACKGROUND_COLOR);
 
         setMainContent(layeredPane);
