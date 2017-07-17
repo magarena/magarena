@@ -137,7 +137,7 @@ public class ExplorerContentPanel extends JPanel
     }
 
     int getCardsCount() {
-        return filterPanel.getTotalCardCount();
+        return cardPoolTable.getRowCount();
     }
 
     void setCardAt(int index) {

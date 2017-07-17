@@ -135,4 +135,8 @@ public class CardTablePanelB extends CardsTablePanel
         return row == -1 ? 0 : row;
     }
 
+    public int getRowCount() {
+        return tableModel.getRowCount();
+    }
+
 }
