@@ -124,7 +124,6 @@ public class ScreenFooterPanel extends TexturedPanel
         for (PlainMenuButton btn : btns) {
             final boolean isGroupFirst = btn == btns[0];
             final boolean isGroupLast = btn == btns[btns.length - 1];
-            btn.setEnabled(btn.isRunnable());
             btn.setBorderPainted(true);
             btn.setBorder(BorderFactory.createCompoundBorder(
                     BorderFactory.createMatteBorder(
