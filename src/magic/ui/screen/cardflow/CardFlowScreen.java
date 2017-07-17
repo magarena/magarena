@@ -2,6 +2,7 @@ package magic.ui.screen.cardflow;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -79,9 +80,7 @@ public class CardFlowScreen extends HeaderFooterScreen
         btns[2] = getScrollForwardsButton();
         addFooterGroup(btns);
 
-        imageIndexButton.setText(String.format("%d of %d",
-            provider.getStartImageIndex() + 1, provider.getImagesCount())
-        );
+        setNewActiveImage(provider.getStartImageIndex());
 
         setHeaderOptions(optionsPanel);
     }
@@ -122,8 +121,11 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     @Override
     public void setNewActiveImage(int activeImageIndex) {
-        imageIndexButton.setText(String.format("%d of %d",
-            activeImageIndex + 1, provider.getImagesCount())
+        imageIndexButton.setText(
+            MessageFormat.format("{0,number,integer} of {1,number,integer}",
+                activeImageIndex + 1,
+                provider.getImagesCount()
+            )
         );
     }
 
