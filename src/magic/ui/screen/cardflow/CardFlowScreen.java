@@ -1,20 +1,9 @@
 package magic.ui.screen.cardflow;
 
 import java.awt.Color;
-import java.awt.image.BufferedImage;
 import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Collectors;
-import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
-import magic.model.IRenderableCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicRandom;
 import magic.translate.MText;
-import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.screen.HeaderFooterScreen;
@@ -23,13 +12,12 @@ import magic.ui.screen.widget.PlainMenuButton;
 
 @SuppressWarnings("serial")
 public class CardFlowScreen extends HeaderFooterScreen
-    implements ICardFlowListener, ICardFlowProvider {
+    implements ICardFlowListener {
 
     private static final Color BACKGROUND_COLOR = new Color(18, 30, 49);
 
     private final CardFlowLayeredPane layeredPane;
     private final CardFlowPanel cardFlowPanel;
-    private List<IRenderableCard> cards;
     private final PlainMenuButton imageIndexButton = new PlainMenuButton("", null);
     private final ICardFlowProvider provider;
     private final OptionsPanel optionsPanel;
@@ -48,23 +36,7 @@ public class CardFlowScreen extends HeaderFooterScreen
     }
 
     public CardFlowScreen(ICardFlowProvider provider, String screenTitle) {
-        super(screenTitle);
-        this.provider = provider;
-        this.listener = null;
-        optionsPanel = new OptionsPanel(this, settings);
-        cardFlowPanel = new CardFlowPanel(provider, settings);
-        layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
-        initialize();
-    }
-
-    public CardFlowScreen() {
-        super("Cardflow Test Screen");
-        this.provider = this;
-        this.listener = null;
-        optionsPanel = new OptionsPanel(this, settings);
-        cardFlowPanel = new CardFlowPanel(this, settings);
-        layeredPane = new CardFlowLayeredPane(cardFlowPanel, flashOverlay);
-        initialize();
+        this(provider, null, screenTitle);
     }
 
     private void initialize() {
@@ -112,14 +84,6 @@ public class CardFlowScreen extends HeaderFooterScreen
         cardFlowPanel.doClickLeft();
     }
 
-    private List<IRenderableCard> getRandomListOfRenderableCards(int count) {
-        final List<MagicCardDefinition> cards = new ArrayList<>(CardDefinitions.getDefaultPlayableCardDefs());
-        Collections.shuffle(cards, new Random(MagicRandom.nextRNGInt()));
-        return cards.stream()
-            .limit(count)
-            .collect(Collectors.toList());
-    }
-
     @Override
     public void setNewActiveImage(int activeImageIndex) {
         imageIndexButton.setText(
@@ -128,23 +92,6 @@ public class CardFlowScreen extends HeaderFooterScreen
                 provider.getImagesCount()
             )
         );
-    }
-
-    private List<IRenderableCard> getCards() {
-        if (cards == null) {
-            cards = getRandomListOfRenderableCards(200);
-        }
-        return cards;
-    }
-
-    @Override
-    public BufferedImage getImage(int index) {
-        return MagicImages.getCardImage(getCards().get(index));
-    }
-
-    @Override
-    public int getImagesCount() {
-        return getCards().size();
     }
 
     @Override

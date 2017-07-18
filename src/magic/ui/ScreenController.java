@@ -354,10 +354,6 @@ public final class ScreenController {
         showScreen(WipMenuScreen::new);
     }
 
-    public static void showCardFlowScreen() {
-        showScreen(CardFlowScreen::new);
-    }
-
     public static void showCardFlowScreen(ICardFlowProvider provider, String screenTitle) {
         showScreen(() -> new CardFlowScreen(provider, screenTitle));
     }
