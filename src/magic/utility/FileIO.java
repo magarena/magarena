@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.io.Writer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
@@ -87,14 +88,13 @@ public class FileIO {
         }
     }
 
-    public static void toFile(final File aFile, final Properties properties, final String name) throws IOException {
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(aFile);
-            properties.store(fos, name);
-        } finally {
-            close(fos);
-        }
+    /**
+     * Saves a Properties object to file.
+     */
+    public static void toFile(File aFile, Properties properties, String comments) throws IOException {
+        try (PrintWriter writer = new PrintWriter(aFile, "UTF-8")) {
+            properties.store(writer, comments);
+        }    
     }
 
     static void close(final Closeable resource) {
