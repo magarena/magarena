@@ -136,28 +136,11 @@ public enum MagicConditionParser {
             return MagicConditionFactory.GraveyardAtLeast(filter, amount);
         }
     },
-    WarriorCardInGraveyard("a Warrior card is in your graveyard") {
+    CardInGraveyard("(you have |there is )?(a |an )?" + ARG.WORDRUN + " (is )?in your graveyard") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_WARRIOR_IN_GRAVEYARD;
-        }
-    },
-    ArtifactCardInGraveyard("an artifact card is in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
-        }
-    },
-    CreatureInYourGraveyard("you have a creature card in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_CREATURE_IN_GRAVEYARD;
-        }
-    },
-    ArtifactInYourGraveyard("you have an artifact card in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(arg) + " from your graveyard");
+            return MagicConditionFactory.GraveyardAtLeast(filter, 1);
         }
     },
     YourDevotionAtLeast("you have at least " + ARG.NUMBER + " devotion to "+ ARG.COLOR) {
