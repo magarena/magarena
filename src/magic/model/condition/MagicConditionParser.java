@@ -115,13 +115,13 @@ public enum MagicConditionParser {
             );
         }
     },
-    Threshold("seven or more cards are in your graveyard") {
+    NoCardsInGraveyard("there are no cards in your graveyard") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.THRESHOLD_CONDITION;
+            return MagicCondition.EMPTY_GRAVEYARD_CONDITION;
         }
     },
-    YourGraveyardAtLeast("there are " + ARG.AMOUNT + " or more cards in your graveyard") {
+    YourGraveyardAtLeast("(there are )?" + ARG.AMOUNT + " or more cards (are )?in your graveyard") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
@@ -132,6 +132,40 @@ public enum MagicConditionParser {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.DELIRIUM_CONDITION;
+        }
+    },
+    SpellMastery("there are two or more instant and/or sorcery cards in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.SPELL_MASTERY_CONDITION; }
+    },
+    CreaturesInGraveyardAtLeast4("(you have|there are) four or more creature cards in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.GraveyardTypeAtLeast(MagicType.Creature, 4);
+        }
+    },
+    WarriorCardInGraveyard("a Warrior card is in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_WARRIOR_IN_GRAVEYARD;
+        }
+    },
+    ArtifactCardInGraveyard("an artifact card is in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
+        }
+    },
+    CreatureInYourGraveyard("you have a creature card in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_CREATURE_IN_GRAVEYARD;
+        }
+    },
+    ArtifactInYourGraveyard("you have an artifact card in your graveyard") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
         }
     },
     YourDevotionAtLeast("you have at least " + ARG.NUMBER + " devotion to "+ ARG.COLOR) {
@@ -149,10 +183,6 @@ public enum MagicConditionParser {
             final MagicColor color = MagicColor.getColor(ARG.color(arg));
             return MagicConditionFactory.DevotionAtLeast(color, amount);
         }
-    },
-    SpellMastery("there are two or more instant and/or sorcery cards in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.SPELL_MASTERY_CONDITION; }
     },
     ExactlySeven("you have exactly seven cards in hand") {
         @Override
@@ -384,12 +414,6 @@ public enum MagicConditionParser {
             return MagicConditionFactory.HasAbility(MagicAbility.Flying);
         }
     },
-    NoCardsInGraveyard("there are no cards in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.EMPTY_GRAVEYARD_CONDITION;
-        }
-    },
     LibraryWithLEQ20Cards("a library has twenty or fewer cards in it") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
@@ -412,24 +436,6 @@ public enum MagicConditionParser {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.MOST_CARDS_IN_HAND_CONDITION;
-        }
-    },
-    CreaturesInGraveyardAtLeast4("(you have|there are) four or more creature cards in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.GraveyardTypeAtLeast(MagicType.Creature, 4);
-        }
-    },
-    WarriorCardInGraveyard("a Warrior card is in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_WARRIOR_IN_GRAVEYARD;
-        }
-    },
-    ArtifactCardInGraveyard("an artifact card is in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
         }
     },
     NoOpponentCreatures("no opponent controls a creature") {
@@ -746,22 +752,10 @@ public enum MagicConditionParser {
             return MagicCondition.CREATURE_IN_A_GRAVEYARD;
         }
     },
-    CreatureInYourGraveyard("you have a creature card in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_CREATURE_IN_GRAVEYARD;
-        }
-    },
     CreatureInYourHand("you have a creature card in your hand") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HAS_CREATURE_IN_HAND;
-        }
-    },
-    ArtifactInYourGraveyard("you have an artifact card in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
         }
     },
     EquipmentInYourHand("you have an equipment card in your hand") {
