@@ -5,7 +5,7 @@ import magic.ui.dialog.prefs.ImageSizePresets;
 
 class ScreenSettings {
 
-    private static final String DELIM = "~~";
+    private static final String DELIM = "¦";
 
     private ImageSizePresets sizePreset;
     private final boolean useOpaqueCardFlowImage;
