@@ -126,6 +126,7 @@ public class ExplorerContentPanel extends JPanel
 
     public void selectRandomCard() {
         cardPoolTable.selectRandomCard();
+        cardPoolTable.requestFocus();
     }
 
     void setCardsTableStyle() {

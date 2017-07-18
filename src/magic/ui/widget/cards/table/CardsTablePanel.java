@@ -151,4 +151,9 @@ abstract class CardsTablePanel extends TexturedPanel {
             reselectLastCards();
         }
     }
+
+    @Override
+    public void requestFocus() {
+        table.requestFocus();
+    }
 }
