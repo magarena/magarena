@@ -1,6 +1,8 @@
 package magic.ui.helpers;
 
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.util.UUID;
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
@@ -100,5 +102,11 @@ public final class KeyEventAction {
         return s.getKeyEventAction(r);
     }
 
-
+    /**
+     * Should use correct copy keyboard shortcut as defined by OS.
+     * eg. {@literal CTRL-C} on Windows, {@literal Command-C} on MacOS.
+     */
+    public KeyEventAction onCopyShortcut() {
+        return on(Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(), KeyEvent.VK_C);
+    }
 }

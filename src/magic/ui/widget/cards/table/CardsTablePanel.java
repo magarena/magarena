@@ -2,8 +2,6 @@ package magic.ui.widget.cards.table;
 
 import java.awt.Point;
 import java.awt.Rectangle;
-import java.awt.Toolkit;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -77,8 +75,7 @@ abstract class CardsTablePanel extends TexturedPanel {
     }
 
     private void setKeyEventActions() {
-        KeyEventAction.doAction(table, this::copyCardName)
-            .on(Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(), KeyEvent.VK_C);
+        KeyEventAction.doAction(table, this::copyCardName).onCopyShortcut();
     }
 
     protected void setEmptyBackgroundColor() {
