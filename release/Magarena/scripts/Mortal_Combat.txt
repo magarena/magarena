@@ -4,6 +4,6 @@ value=4.000
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
+ability=At the beginning of your upkeep, if twenty or more creature cards are in your graveyard, you win the game.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of your upkeep, if twenty or more creature cards are in your graveyard, you win the game.
