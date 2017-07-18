@@ -173,11 +173,11 @@ public class MagicConditionFactory {
         };
     }
 
-    public static MagicCondition GraveyardTypeAtLeast(final MagicType type, final int n) {
+    public static MagicCondition GraveyardAtLeast(final MagicTargetFilter<MagicCard> filter, final int n) {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return MagicTargetFilterFactory.card(type).from(MagicTargetType.Graveyard).filter(source).size() >= n;
+                return filter.filter(source).size() >= n;
             }
         };
     }

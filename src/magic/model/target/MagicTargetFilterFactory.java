@@ -2993,6 +2993,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bmercenaries\\b", "mercenary")
             .replaceAll("\\b(?!(controls|less|plains|opponents|graveyards|colorless|aurochs|pegasus|this|toughness|fungus|homunculus|is|locus|counters)\\b)([a-z]+)s\\b", "$2");
         return String.join(" named ", parts)
+            .replaceAll("\\band/or\\b", "or")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")

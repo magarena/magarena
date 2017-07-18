@@ -12,6 +12,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.MagicCard;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -121,27 +122,18 @@ public enum MagicConditionParser {
             return MagicCondition.EMPTY_GRAVEYARD_CONDITION;
         }
     },
-    YourGraveyardAtLeast("(there are )?" + ARG.AMOUNT + " or more cards (are )?in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) {
-            final int amount = ARG.amount(arg);
-            return MagicConditionFactory.GraveyardAtLeast(amount);
-        }
-    },
     Delirium("there are four or more card types among cards in your graveyard") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.DELIRIUM_CONDITION;
         }
     },
-    SpellMastery("there are two or more instant and/or sorcery cards in your graveyard") {
-        @Override
-        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.SPELL_MASTERY_CONDITION; }
-    },
-    CreaturesInGraveyardAtLeast4("(you have|there are) four or more creature cards in your graveyard") {
+    YourGraveyardAtLeast("(you have |there are )?" + ARG.AMOUNT + " or more " + ARG.WORDRUN + " (are )?in your graveyard") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.GraveyardTypeAtLeast(MagicType.Creature, 4);
+            final int amount = ARG.amount(arg);
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(arg) + " from your graveyard");
+            return MagicConditionFactory.GraveyardAtLeast(filter, amount);
         }
     },
     WarriorCardInGraveyard("a Warrior card is in your graveyard") {
