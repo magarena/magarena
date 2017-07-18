@@ -2,6 +2,7 @@ package magic.data.settings;
 
 public enum StringSetting {
 
+    CARDFLOW_SETTINGS("cardflow.screen", ""),
     KEYWORDS_SCREEN("keywordsScreen", ""),
     THEME("theme", "felt");
 

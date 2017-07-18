@@ -35,7 +35,6 @@ public class GeneralConfig {
     public static final String DEFAULT_TRANSLATION = "";
 
     private static final String ANIMATION_FLAGS = "animationFlags";
-    private static final String CARDFLOW_SCREEN_SETTINGS = "cardflow.screen";
     private static final String CARDS_TABLE_STYLE = "explorer.table.style";
     private static final String CARD_DISPLAY_MODE = "cardImageDisplayMode";
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
@@ -542,13 +541,4 @@ public class GeneralConfig {
     public static boolean isGameStatsOn() {
         return getInstance().isGameStatsEnabled();
     }
-
-    public String getCardFlowScreenSettings() {
-        return getProperty(CARDFLOW_SCREEN_SETTINGS, "");
-    }
-
-    public void setCardFlowScreenSettings(String settings) {
-        setProperty(CARDFLOW_SCREEN_SETTINGS, settings);
-    }
-
 }

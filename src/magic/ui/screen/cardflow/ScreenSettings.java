@@ -1,6 +1,7 @@
 package magic.ui.screen.cardflow;
 
 import magic.data.GeneralConfig;
+import magic.data.settings.StringSetting;
 import magic.ui.dialog.prefs.ImageSizePresets;
 
 class ScreenSettings {
@@ -11,7 +12,7 @@ class ScreenSettings {
     private final boolean useOpaqueCardFlowImage;
 
     public ScreenSettings() {
-        String settings = GeneralConfig.getInstance().getCardFlowScreenSettings();
+        String settings = GeneralConfig.get(StringSetting.CARDFLOW_SETTINGS);
         sizePreset = getImageSizePreset(settings);
         useOpaqueCardFlowImage = getUseOpaqueImageFlag(settings);
     }
@@ -41,7 +42,7 @@ class ScreenSettings {
     }
 
     void save() {
-        GeneralConfig.getInstance().setCardFlowScreenSettings(
+        GeneralConfig.set(StringSetting.CARDFLOW_SETTINGS,
             sizePreset.name() + DELIM
             + useOpaqueCardFlowImage + DELIM
         );
