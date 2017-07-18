@@ -9,7 +9,7 @@ public enum MagicIcon {
     // ../ui/... icons.
     //
     ALERT("ui/alert-16.png"),
-    CARDFLOW("ui/cardflow-32.png"),
+    CARDFLOW("ui/cardflow-28.png"),
     CHECKBOX_OFF("ui/checkbox-16.png"),
     CHECKBOX_ON("ui/checkbox-selected-16.png"),
     ARROWDOWN("ui/w_arrowdown.png"),
