@@ -14,6 +14,14 @@ import magic.ui.screen.widget.PlainMenuButton;
 public class CardFlowScreen extends HeaderFooterScreen
     implements ICardFlowListener {
 
+    // translatable UI text.
+    private static final String _S1 = "On";
+    private static final String _S2 = "Off";
+    private static final String _S3 = "Scroll to next card";
+    private static final String _S4 = "You can also click on the right side of the screen, press the right arrow key<br>or rotate the mouse-wheel backwards.";
+    private static final String _S5 = "Scroll to previous card";
+    private static final String _S6 = "You can also click on the left side of the screen, press the left arrow key<br>or rotate the mouse-wheel forwards.";
+
     private static final Color BACKGROUND_COLOR = new Color(18, 30, 49);
 
     private final CardFlowLayeredPane layeredPane;
@@ -60,18 +68,14 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     private PlainMenuButton getScrollForwardsButton() {
         PlainMenuButton btn = PlainMenuButton.build(this::doScrollForwards,
-            MagicIcon.GO_NEXT,
-            "Scroll forwards",
-            "You can also use the right arrow key or by moving the mouse-wheel back."
+            MagicIcon.GO_NEXT, MText.get(_S3), MText.get(_S4)
         );
         return btn;
     }
 
     private PlainMenuButton getScrollBackButton() {
         PlainMenuButton btn = PlainMenuButton.build(this::doScrollBack,
-            MagicIcon.GO_BACK,
-            "Scroll back",
-            "You can also use the left arrow key or by moving the mouse-wheel forwards."
+            MagicIcon.GO_BACK, MText.get(_S5), MText.get(_S6)
         );
         return btn;
     }
@@ -105,7 +109,7 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     void setAnimateSetting(boolean b) {
         cardFlowPanel.setAnimation(b);
-        flashOverlay.flashText(b ? MText.get("On") : MText.get("Off"));
+        flashOverlay.flashText(b ? MText.get(_S1) : MText.get(_S2));
     }
 
     void setImageSize(ImageSizePresets preset) {
