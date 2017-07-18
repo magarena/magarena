@@ -2,6 +2,8 @@ package magic.ui.widget.cards.table;
 
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -10,9 +12,11 @@ import javax.swing.JViewport;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
+import magic.awt.MagicClipboard;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
+import magic.ui.helpers.KeyEventAction;
 import magic.ui.mwidgets.MScrollPane;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -56,10 +60,25 @@ abstract class CardsTablePanel extends TexturedPanel {
         refreshLayout();
 
         setEmptyBackgroundColor();
+        setKeyEventActions();
     }
 
     public CardsTablePanel(List<MagicCardDefinition> defs) {
         this(defs, "");
+    }
+
+    private MagicCardDefinition getSelectedCard() {
+        int row = table.getSelectedRow();
+        return row != -1 ? tableModel.getCardDef(row): MagicCardDefinition.UNKNOWN;
+    }
+
+    private void copyCardName() {
+        MagicClipboard.copy(getSelectedCard().getName());
+    }
+
+    private void setKeyEventActions() {
+        KeyEventAction.doAction(table, this::copyCardName)
+            .on(Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(), KeyEvent.VK_C);
     }
 
     protected void setEmptyBackgroundColor() {
