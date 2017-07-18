@@ -57,6 +57,7 @@ public class FlashTextOverlay extends TexturedPanel {
         this.text = text;
         timer.restart();
         setVisible(true);
+        repaint();
     }
 
     private void paintFlashText(Graphics2D g2d) {

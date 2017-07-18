@@ -13,6 +13,7 @@ import magic.data.MagicIcon;
 import magic.model.IRenderableCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
+import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.dialog.prefs.ImageSizePresets;
@@ -153,6 +154,11 @@ public class CardFlowScreen extends HeaderFooterScreen
 
     void flashImageSizePreset(ImageSizePresets preset) {
         flashOverlay.flashText(preset.name().replaceAll("SIZE_", "").replaceAll("x", " x "));
+    }
+
+    void setAnimateSetting(boolean b) {
+        cardFlowPanel.setAnimation(b);
+        flashOverlay.flashText(b ? MText.get("On") : MText.get("Off"));
     }
 
     void setImageSize(ImageSizePresets preset) {

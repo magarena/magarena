@@ -10,11 +10,25 @@ class ScreenSettings {
 
     private ImageSizePresets sizePreset;
     private final boolean useOpaqueCardFlowImage;
+    private boolean isAnimationEnabled;
 
     public ScreenSettings() {
         String settings = GeneralConfig.get(StringSetting.CARDFLOW_SETTINGS);
         sizePreset = getImageSizePreset(settings);
         useOpaqueCardFlowImage = getUseOpaqueImageFlag(settings);
+        isAnimationEnabled = isAnimationEnabled(settings);
+    }
+
+    private boolean isAnimationEnabled(String settings) {
+        try {
+            return Boolean.valueOf(settings.split(DELIM)[2]);
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            return true;
+        }
+    }
+
+    void setAnimationEnabled(boolean b) {
+        isAnimationEnabled = b;
     }
 
     private boolean getUseOpaqueImageFlag(String settings) {
@@ -45,11 +59,16 @@ class ScreenSettings {
         GeneralConfig.set(StringSetting.CARDFLOW_SETTINGS,
             sizePreset.name() + DELIM
             + useOpaqueCardFlowImage + DELIM
+            + isAnimationEnabled + DELIM
         );
     }
 
     boolean useOpaqueImage() {
         return useOpaqueCardFlowImage;
+    }
+
+    boolean isAnimationEnabled() {
+        return isAnimationEnabled;
     }
 
 }
