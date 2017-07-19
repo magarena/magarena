@@ -67,6 +67,7 @@ public enum MagicCounterType {
     Hatchling("hatchling","{hch}",1),
     Healing("healing","{hea}",1),
     Hoofprint("hoofprint","{hpr}",1),
+    Hour("hour", "{hou}", 1),
     Hourglass("hourglass","{hgl}",0),
     Hunger("hunger","{hgr}",-1),
     Ice("ice","{ice}",0),
