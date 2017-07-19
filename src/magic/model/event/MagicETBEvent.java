@@ -28,7 +28,7 @@ public abstract class MagicETBEvent implements MagicCardEvent,MagicEventAction,M
                     new MagicMayChoice(choice),
                     MagicCopyPermanentPicker.create(),
                     this,
-                    "PN may$ have SN enter the battlefield as a copy of any " + desc + "$ on the battlefield."
+                    "PN may$ have SN enter the battlefield as a copy of any " + desc + "$."
                 );
             }
 

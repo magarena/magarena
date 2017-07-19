@@ -2984,6 +2984,31 @@ public class MagicTargetFilterFactory {
         add("creature blocking SN", CREATURE_BLOCKING_SN);
     }
 
+    private static final String[] ENDING_WITH_S = new String[]{
+        "controls",
+        "less",
+        "plains",
+        "opponents",
+        "graveyards",
+        "colorless",
+        "aurochs",
+        "pegasus",
+        "this",
+        "toughness",
+        "fungus",
+        "homunculus",
+        "is",
+        "its",
+        "has",
+        "was",
+        "colors",
+        "targets",
+        "locus",
+        "counters",
+    };
+
+    private static final String PLURAL = "\\b(?!(" + String.join("|", ENDING_WITH_S) + ")\\b)([a-z]+)s\\b";
+
     public static String toSingular(final String arg) {
         final String[] parts = arg.toLowerCase(Locale.ENGLISH).split(" named ");
         parts[0] = parts[0]
@@ -2991,13 +3016,14 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\belves\\b", "elf")
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\bmercenaries\\b", "mercenary")
-            .replaceAll("\\b(?!(controls|less|plains|opponents|graveyards|colorless|aurochs|pegasus|this|toughness|fungus|homunculus|is|locus|counters)\\b)([a-z]+)s\\b", "$2");
+            .replaceAll(PLURAL, "$2");
         return String.join(" named ", parts)
             .replaceAll("\\band/or\\b", "or")
-            .replaceAll("\\band\\b", "or")
+            .replaceAll("\\band(?! control)\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
             .replaceAll("\\bin your graveyard\\b", "from your graveyard")
+            .replaceAll("\\bin a graveyard\\b", "from a graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\bfrom all graveyards\\b", "from a graveyard")
             .replaceAll("\\bplayed by your opponents\\b", "an opponent controls")

@@ -359,16 +359,16 @@ public class MagicTargetChoice extends MagicChoice {
         targetDescription = decapitalize(aTargetDescription);
 
         if (targetDescription.matches("target .*")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("target ", ""));
+            targetFilter = MagicTargetFilterFactory.Target(targetDescription.replaceFirst("target ", ""));
             targeted     = true;
         } else if (targetDescription.matches("another target .*")) {
-            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("another target ", "")));
+            targetFilter = MagicTargetFilterFactory.Target(targetDescription.replaceFirst("target ", ""));
             targeted     = true;
         } else if (targetDescription.matches("another .*")) {
-            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("another ", "")));
+            targetFilter = MagicTargetFilterFactory.Target(targetDescription);
             targeted     = false;
         } else if (targetDescription.matches("a(n)? .*")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a(n)? ", ""));
+            targetFilter = MagicTargetFilterFactory.Target(targetDescription);
             targeted     = false;
         } else {
             throw new RuntimeException("unknown target choice: \"" + aTargetDescription + "\"");
