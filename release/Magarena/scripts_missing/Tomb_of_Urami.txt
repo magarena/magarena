@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/sok/165.jpg
 value=1.600
 rarity=R
 type=Legendary,Land
-ability={T}: Add {B} to your mana pool. SN deals 1 damage to you if you don't control an Ogre.;\
+ability={T}: Add {B} to your mana pool.~SN deals 1 damage to you if you don't control an Ogre.;\
         {2}{B}{B}, {T}, Sacrifice all lands you control: Create a legendary 5/5 black Demon Spirit creature token with flying named Urami.
 timing=land
 oracle={T}: Add {B} to your mana pool. Tomb of Urami deals 1 damage to you if you don't control an Ogre.\n{2}{B}{B}, {T}, Sacrifice all lands you control: Create a legendary 5/5 black Demon Spirit creature token with flying named Urami.
