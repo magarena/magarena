@@ -9,4 +9,3 @@ pt=4/4
 ability=When SN dies, you may pay {2}. If you do, return another target creature card from your graveyard to your hand.
 timing=main
 oracle=When Carrion Thrash dies, you may pay {2}. If you do, return another target creature card from your graveyard to your hand.
-status=needs groovy
