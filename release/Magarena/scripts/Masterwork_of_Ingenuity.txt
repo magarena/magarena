@@ -5,6 +5,6 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={1}
+ability=You may have SN enter the battlefield as a copy of any Equipment on the battlefield.
 timing=equipment
-requires_groovy_code
 oracle=You may have Masterwork of Ingenuity enter the battlefield as a copy of any Equipment on the battlefield.

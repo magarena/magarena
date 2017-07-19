@@ -4,7 +4,7 @@ value=4.449
 rarity=R
 type=Artifact
 cost={3}
-ability=Cast SN with AI only if there is an artifact on the battlefield.
+ability=You may have SN enter the battlefield as a copy of any artifact on the battlefield.;\
+        Cast SN with AI only if there is an artifact on the battlefield.
 timing=artifact
 oracle=You may have Sculpting Steel enter the battlefield as a copy of any artifact on the battlefield.
-requires_groovy_code
