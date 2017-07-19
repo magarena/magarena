@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={4}{U}
 pt=0/0
-ability=Cast SN with AI only if there is a creature card in a graveyard.
+ability=You may have SN enter the battlefield as a copy of any creature card in a graveyard.;\
+        Cast SN with AI only if there is a creature card in a graveyard.
 timing=main
-requires_groovy_code
 oracle=You may have Body Double enter the battlefield as a copy of any creature card in a graveyard.
