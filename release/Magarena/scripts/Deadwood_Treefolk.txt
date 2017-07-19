@@ -6,7 +6,8 @@ type=Creature
 subtype=Treefolk
 cost={5}{G}
 pt=3/6
-ability=Vanishing 3
+ability=Vanishing 3;\
+        When SN enters the battlefield, return another target creature card from your graveyard to your hand.;\
+        When SN leaves the battlefield, return another target creature card from your graveyard to your hand.
 timing=main
 oracle=Vanishing 3\nWhen Deadwood Treefolk enters the battlefield or leaves the battlefield, return another target creature card from your graveyard to your hand.
-requires_groovy_code

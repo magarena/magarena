@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=1/2
+ability=When SN dies, return another target artifact card from your graveyard to your hand.
 timing=main
-requires_groovy_code=Junk Diver
 oracle=When Workshop Assistant dies, return another target artifact card from your graveyard to your hand.

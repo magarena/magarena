@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{B}
 pt=1/2
+ability=When SN dies, return another target creature card from your graveyard to your hand.
 timing=main
-requires_groovy_code
 oracle=When Dutiful Attendant dies, return another target creature card from your graveyard to your hand.
