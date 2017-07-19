@@ -790,6 +790,12 @@ public enum MagicAbility {
             card.add(new EntersTappedUnlessTrigger(MagicConditionFactory.Unless(condition)));
         }
     },
+    EntersAsCopy("You may have SN enter the battlefield as a copy of any " + ARG.WORDRUN + " on the battlefield\\.", 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicETBEvent.copyOf(ARG.wordrun(arg)));
+        }
+    },
     WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
