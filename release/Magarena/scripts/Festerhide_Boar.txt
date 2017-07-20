@@ -6,7 +6,7 @@ type=Creature
 subtype=Boar
 cost={3}{G}
 pt=3/3
-ability=Trample
+ability=Trample;\
+        SN enters the battlefield with two +1/+1 counters on it if a creature died this turn.
 timing=smain
-requires_groovy_code
 oracle=Trample\nMorbid — Festerhide Boar enters the battlefield with two +1/+1 counters on it if a creature died this turn.

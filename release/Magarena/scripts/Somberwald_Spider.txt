@@ -6,7 +6,7 @@ type=Creature
 subtype=Spider
 cost={4}{G}
 pt=2/4
-ability=Reach
+ability=Reach;\
+        SN enters the battlefield with two +1/+1 counters on it if a creature died this turn.
 timing=main
 oracle=Reach\nMorbid — Somberwald Spider enters the battlefield with two +1/+1 counters on it if a creature died this turn.
-requires_groovy_code=Festerhide Boar

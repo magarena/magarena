@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Spirit
 cost={5}{B}{B}{B}
 pt=5/2
-ability=SN has indestructible as long as it has a divinity counter on it.;\
+ability=SN enters the battlefield with a divinity counter on it if you cast it from your hand.;\
+        SN has indestructible as long as it has a divinity counter on it.;\
         Remove a divinity counter from SN: Each opponent discards his or her hand.
 timing=main
-requires_groovy_code=Myojin of Cleansing Fire
 oracle=Myojin of Night's Reach enters the battlefield with a divinity counter on it if you cast it from your hand.\nMyojin of Night's Reach has indestructible as long as it has a divinity counter on it.\nRemove a divinity counter from Myojin of Night's Reach: Each opponent discards his or her hand.

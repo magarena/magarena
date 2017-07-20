@@ -6,7 +6,7 @@ type=Creature
 subtype=Wurm
 cost={5}{G}
 pt=4/4
-ability=Trample
+ability=Trample;\
+        SN enters the battlefield with four +1/+1 counters on it if a creature died this turn.
 timing=smain
-requires_groovy_code
 oracle=Trample\nMorbid — Gravetiller Wurm enters the battlefield with four +1/+1 counters on it if a creature died this turn.

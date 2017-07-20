@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Spirit
 cost={5}{W}{W}{W}
 pt=4/6
-ability=SN has indestructible as long as it has a divinity counter on it.;\
+ability=SN enters the battlefield with a divinity counter on it if you cast it from your hand.;\
+        SN has indestructible as long as it has a divinity counter on it.;\
         Remove a divinity counter from SN: Destroy all other creatures.
 timing=main
-requires_groovy_code
 oracle=Myojin of Cleansing Fire enters the battlefield with a divinity counter on it if you cast it from your hand.\nMyojin of Cleansing Fire has indestructible as long as it has a divinity counter on it.\nRemove a divinity counter from Myojin of Cleansing Fire: Destroy all other creatures.

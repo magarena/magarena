@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Spirit
 cost={7}{R}{R}{R}
 pt=7/4
-ability=SN has indestructible as long as it has a divinity counter on it.;\
+ability=SN enters the battlefield with a divinity counter on it if you cast it from your hand.;\
+        SN has indestructible as long as it has a divinity counter on it.;\
         Remove a divinity counter from SN: Destroy all lands.
 timing=main
-requires_groovy_code=Myojin_of_Cleansing_Fire
 oracle=Myojin of Infinite Rage enters the battlefield with a divinity counter on it if you cast it from your hand.\nMyojin of Infinite Rage has indestructible as long as it has a divinity counter on it.\nRemove a divinity counter from Myojin of Infinite Rage: Destroy all lands.
