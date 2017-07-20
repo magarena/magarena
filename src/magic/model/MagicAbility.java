@@ -783,6 +783,15 @@ public enum MagicAbility {
             }
         }
     },
+    EntersWithCounterCond("SN enters the battlefield with " + ARG.WORD1 + " " + ARG.WORD2 + " counter(s)? on it if " + ARG.COND + "\\.", 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = EnglishToInt.convert(ARG.word1(arg));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word2(arg));
+            final MagicCondition condition = MagicConditionParser.build(ARG.cond(arg));
+            card.add(new EntersWithCounterTrigger(counterType, n, condition));
+        }
+    },
     EntersTappedUnless("SN enters the battlefield tapped unless "+ARG.COND+"\\.", -10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
