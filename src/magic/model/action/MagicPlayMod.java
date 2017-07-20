@@ -44,7 +44,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             EXILE_AT_END_OF_YOUR_TURN.doAction(game, perm);
         }
     },
-    EXILE_WHEN_LEAVES("If it would leave the battlefield, exile it instead of putting it anywhere else") {
+    EXILE_WHEN_LEAVES("If (it|that creature) would leave the battlefield, exile it instead of putting it anywhere else") {
         @Override
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, LeavesBattlefieldTrigger.Exile));
