@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit,Avatar
 cost={B/R}{B/R}{B/R}{B/R}{B/R}
 pt=5/4
-ability=Flying, haste
+ability=Flying, haste;\
+        When you cast SN, return all cards named Demigod of Revenge from your graveyard to the battlefield.
 timing=fmain
-requires_groovy_code
 oracle=Flying, haste\nWhen you cast Demigod of Revenge, return all cards named Demigod of Revenge from your graveyard to the battlefield.

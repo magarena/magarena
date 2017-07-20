@@ -5,6 +5,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}
+effect=Return all land cards from your graveyard to the battlefield tapped.
 timing=main
-requires_groovy_code
 oracle=Return all land cards from your graveyard to the battlefield tapped.

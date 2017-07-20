@@ -7,7 +7,7 @@ type=Creature
 subtype=Angel
 cost={5}{W}{W}
 pt=4/6
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, exile all Zombies,~then return all Human creature cards from your graveyard to the battlefield.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhen Angel of Glory's Rise enters the battlefield, exile all Zombies, then return all Human creature cards from your graveyard to the battlefield.

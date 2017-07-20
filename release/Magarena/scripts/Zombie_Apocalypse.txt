@@ -5,6 +5,6 @@ removal=2
 rarity=R
 type=Sorcery
 cost={3}{B}{B}{B}
+effect=Return all Zombie creature cards from your graveyard to the battlefield tapped,~then destroy all Humans.
 timing=removal
-requires_groovy_code
 oracle=Return all Zombie creature cards from your graveyard to the battlefield tapped, then destroy all Humans.
