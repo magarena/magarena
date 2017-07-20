@@ -11,3 +11,4 @@ ability=Flying, vigilance;\
         {2}{W}, {T}, Exert SN: Exile another target creature until SN leaves the battlefield.
 timing=main
 oracle=Flying, vigilance\n{2}{W}, {T}: Exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.\n{2}{W}, {T}, Exert Angel of Condemnation: Exile another target creature until Angel of Condemnation leaves the battlefield.
+status=not supported: exert

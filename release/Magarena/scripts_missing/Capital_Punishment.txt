@@ -8,3 +8,4 @@ cost={4}{B}{B}
 effect=Starting with you, each player votes for death or taxes. Each opponent sacrifices a creature for each death vote and discards a card for each taxes vote.
 timing=main
 oracle=Council's dilemma — Starting with you, each player votes for death or taxes. Each opponent sacrifices a creature for each death vote and discards a card for each taxes vote.
+status=not supported: vote

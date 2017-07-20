@@ -10,3 +10,4 @@ ability=You may exert SN as it attacks.;\
         Whenever you exert a creature, creatures you control get +1/+0 until end of turn.
 timing=main
 oracle=You may exert Trueheart Twins as it attacks.\nWhenever you exert a creature, creatures you control get +1/+0 until end of turn.
+status=not supported: exert

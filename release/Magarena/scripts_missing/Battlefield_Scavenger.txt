@@ -10,3 +10,4 @@ ability=You may exert SN as it attacks.;\
         Whenever you exert a creature, you may discard a card. If you do, draw a card.
 timing=main
 oracle=You may exert Battlefield Scavenger as it attacks.\nWhenever you exert a creature, you may discard a card. If you do, draw a card.
+status=not supported: exert

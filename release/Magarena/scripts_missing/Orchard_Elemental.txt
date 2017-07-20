@@ -10,3 +10,4 @@ pt=2/2
 ability=When SN enters the battlefield, starting with you, each player votes for sprout or harvest. Put two +1/+1 counters on SN for each sprout vote. You gain 3 life for each harvest vote.
 timing=main
 oracle=Council's dilemma — When Orchard Elemental enters the battlefield, starting with you, each player votes for sprout or harvest. Put two +1/+1 counters on Orchard Elemental for each sprout vote. You gain 3 life for each harvest vote.
+status=not supported: vote

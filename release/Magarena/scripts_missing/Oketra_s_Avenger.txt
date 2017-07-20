@@ -9,3 +9,4 @@ pt=3/1
 ability=You may exert SN as it attacks. When you do, prevent all combat damage that would be dealt to it this turn.
 timing=main
 oracle=You may exert Oketra's Avenger as it attacks. When you do, prevent all combat damage that would be dealt to it this turn.
+status=not supported: exert

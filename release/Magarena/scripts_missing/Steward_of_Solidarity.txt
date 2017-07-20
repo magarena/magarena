@@ -9,3 +9,4 @@ pt=2/2
 ability={T}, Exert SN: Create a 1/1 white Warrior creature token with vigilance.
 timing=main
 oracle={T}, Exert Steward of Solidarity: Create a 1/1 white Warrior creature token with vigilance.
+status=not supported: exert

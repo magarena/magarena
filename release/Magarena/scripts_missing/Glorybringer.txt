@@ -10,3 +10,4 @@ ability=Flying, haste;\
         You may exert SN as it attacks. When you do, it deals 4 damage to target non-Dragon creature an opponent controls.
 timing=main
 oracle=Flying, haste\nYou may exert Glorybringer as it attacks. When you do, it deals 4 damage to target non-Dragon creature an opponent controls.
+status=not supported: exert

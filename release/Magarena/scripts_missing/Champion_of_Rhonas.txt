@@ -9,3 +9,4 @@ pt=3/3
 ability=You may exert SN as it attacks. When you do, you may put a creature card from your hand onto the battlefield.
 timing=main
 oracle=You may exert Champion of Rhonas as it attacks. When you do, you may put a creature card from your hand onto the battlefield.
+status=not supported: exert

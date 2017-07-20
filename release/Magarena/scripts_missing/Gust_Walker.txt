@@ -9,3 +9,4 @@ pt=2/2
 ability=You may exert SN as it attacks. When you do, it gets +1/+1 and gains flying until end of turn.
 timing=main
 oracle=You may exert Gust Walker as it attacks. When you do, it gets +1/+1 and gains flying until end of turn.
+status=not supported: exert

@@ -9,3 +9,4 @@ pt=3/2
 ability=You may exert SN as it attacks. When you do, it gets +2/+2 until end of turn.
 timing=main
 oracle=You may exert Hooded Brawler as it attacks. When you do, it gets +2/+2 until end of turn.
+status=not supported: exert

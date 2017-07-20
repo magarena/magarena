@@ -9,3 +9,4 @@ pt=3/2
 ability=You may exert SN as it attacks. When you do, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
 timing=main
 oracle=You may exert Devoted Crop-Mate as it attacks. When you do, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
+status=not supported: exert

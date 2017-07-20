@@ -11,3 +11,4 @@ ability=Flying;\
         SN can't attack during extra turns.
 timing=main
 oracle=Flying\nWhenever Medomai the Ageless deals combat damage to a player, take an extra turn after this one.\nMedomai the Ageless can't attack during extra turns.
+status=not supported: extra-turn-properties

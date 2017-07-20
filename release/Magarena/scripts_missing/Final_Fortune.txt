@@ -7,3 +7,4 @@ cost={R}{R}
 effect=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.
 timing=removal
 oracle=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.
+status=not supported: extra-turn-properties

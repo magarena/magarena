@@ -11,3 +11,4 @@ ability=Flying;\
         When SN enters the battlefield, starting with you, each player votes for feather or quill. Put a +1/+1 counter on SN for each feather vote and draw a card for each quill vote. For each card drawn this way, discard a card.
 timing=main
 oracle=Flying\nCouncil's dilemma — When Messenger Jays enters the battlefield, starting with you, each player votes for feather or quill. Put a +1/+1 counter on Messenger Jays for each feather vote and draw a card for each quill vote. For each card drawn this way, discard a card.
+status=not supported: vote

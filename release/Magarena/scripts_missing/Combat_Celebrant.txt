@@ -9,3 +9,4 @@ pt=4/1
 ability=If SN hasn't been exerted this turn, you may exert it as it attacks. When you do, untap all other creatures you control and after this phase, there is an additional combat phase.
 timing=main
 oracle=If Combat Celebrant hasn't been exerted this turn, you may exert it as it attacks. When you do, untap all other creatures you control and after this phase, there is an additional combat phase.
+status=not supported: exert

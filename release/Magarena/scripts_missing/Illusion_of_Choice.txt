@@ -8,3 +8,4 @@ cost={U}
 effect=You choose how each player votes this turn.~Draw a card.
 timing=removal
 oracle=You choose how each player votes this turn.\nDraw a card.
+status=not supported: vote

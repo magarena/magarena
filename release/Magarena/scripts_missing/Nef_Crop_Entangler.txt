@@ -10,3 +10,4 @@ ability=Trample;\
         You may exert SN as it attacks. When you do, it gets +1/+2 until end of turn.
 timing=main
 oracle=Trample\nYou may exert Nef-Crop Entangler as it attacks. When you do, it gets +1/+2 until end of turn.
+status=not supported: exert

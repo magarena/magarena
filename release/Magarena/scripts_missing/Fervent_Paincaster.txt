@@ -10,3 +10,4 @@ ability={T}: SN deals 1 damage to target player.;\
         {T}, Exert SN: It deals 1 damage to target creature.
 timing=main
 oracle={T}: Fervent Paincaster deals 1 damage to target player.\n{T}, Exert Fervent Paincaster: It deals 1 damage to target creature.
+status=not supported: exert
