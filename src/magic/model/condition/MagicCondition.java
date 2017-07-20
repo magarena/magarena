@@ -697,10 +697,6 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
-    public static MagicCondition HAS_WARRIOR_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD, 1);
-
-    public static MagicCondition HAS_ARTIFACT_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.ARTIFACT_CARD_FROM_GRAVEYARD, 1);
-
     public static MagicCondition OPP_NOT_CONTROL_CREATURE_CONDITION = new MagicCondition() {
         @Override
         public boolean accept(MagicSource source) {
@@ -835,8 +831,6 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(player).size() > 0;
         }
     };
-
-    public static MagicCondition HAS_CREATURE_IN_GRAVEYARD = MagicConditionFactory.YouHaveAtLeast(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD, 1);
 
     public static MagicCondition HAS_CREATURE_IN_HAND = new MagicCondition() {
         @Override
