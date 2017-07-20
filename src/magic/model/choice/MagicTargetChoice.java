@@ -355,24 +355,10 @@ public class MagicTargetChoice extends MagicChoice {
 
     public MagicTargetChoice(final MagicTargetHint aTargetHint, final String aTargetDescription) {
         super("Choose " + decapitalize(aTargetDescription) + '.');
-        targetHint        = aTargetHint;
+        targetHint   = aTargetHint;
         targetDescription = decapitalize(aTargetDescription);
-
-        if (targetDescription.matches("target .*")) {
-            targetFilter = MagicTargetFilterFactory.Target(targetDescription.replaceFirst("target ", ""));
-            targeted     = true;
-        } else if (targetDescription.matches("another target .*")) {
-            targetFilter = MagicTargetFilterFactory.Target(targetDescription.replaceFirst("target ", ""));
-            targeted     = true;
-        } else if (targetDescription.matches("another .*")) {
-            targetFilter = MagicTargetFilterFactory.Target(targetDescription);
-            targeted     = false;
-        } else if (targetDescription.matches("a(n)? .*")) {
-            targetFilter = MagicTargetFilterFactory.Target(targetDescription);
-            targeted     = false;
-        } else {
-            throw new RuntimeException("unknown target choice: \"" + aTargetDescription + "\"");
-        }
+        targetFilter = MagicTargetFilterFactory.Target(targetDescription.replaceFirst("target ", ""));
+        targeted     = targetDescription.contains("target ");
     }
 
     public MagicTargetChoice(
@@ -381,7 +367,7 @@ public class MagicTargetChoice extends MagicChoice {
     ) {
         super("Choose " + aTargetDescription + '.');
         targetFilter = aTargetFilter;
-        targeted     = aTargetDescription.contains("target");
+        targeted     = aTargetDescription.contains("target ");
         targetHint   = MagicTargetHint.None;
         targetDescription = aTargetDescription;
     }
@@ -393,7 +379,7 @@ public class MagicTargetChoice extends MagicChoice {
     ) {
         super("Choose " + aTargetDescription + '.');
         targetFilter = aTargetFilter;
-        targeted     = aTargetDescription.contains("target");
+        targeted     = aTargetDescription.contains("target ");
         targetHint   = aTargetHint;
         targetDescription = aTargetDescription;
     }
