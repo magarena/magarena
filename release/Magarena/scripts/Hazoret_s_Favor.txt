@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}
-ability=At the beginning of combat on your turn, you may have target creature you control get +2/+0 and gain haste until end of turn. If you do, sacrifice it at the beginning of the next end step.
+ability=At the beginning of combat on your turn, you may have target creature you control gets +2/+0 and gains haste until end of turn.~If you do, sacrifice *it* at the beginning of the next end step.
 timing=enchantment
 oracle=At the beginning of combat on your turn, you may have target creature you control get +2/+0 and gain haste until end of turn. If you do, sacrifice it at the beginning of the next end step.
