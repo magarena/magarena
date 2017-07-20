@@ -1694,7 +1694,7 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate(
-        "return " + ARG.GRAVEYARD + " to the battlefield" + ARG.MODS,
+        "return " + ARG.GRAVEYARD_CARDS + " to the battlefield" + ARG.MODS,
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
@@ -1703,17 +1703,20 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final List<MagicPlayMod> mods = ARG.mods(matcher);
-            return (game, event) -> event.processTargetCard(game, (final MagicCard card) ->
-                game.doAction(new ReanimateAction(
-                    card,
-                    event.getPlayer(),
-                    mods
-                ))
-            );
+            final MagicTargetFilter<MagicCard> filter = ARG.cardsParse(matcher);
+            return (game, event) -> {
+                for (final MagicCard it : ARG.cards(event, matcher, filter)) {
+                    game.doAction(new ReanimateAction(
+                        it,
+                        event.getPlayer(),
+                        mods
+                    ));
+                }
+            };
         }
     },
     Reanimate2(
-        "put " + ARG.GRAVEYARD + " onto the battlefield under your control" + ARG.MODS,
+        "put " + ARG.GRAVEYARD_CARDS + " onto the battlefield under your control" + ARG.MODS,
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
