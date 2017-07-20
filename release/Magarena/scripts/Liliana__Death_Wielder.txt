@@ -6,7 +6,7 @@ type=Planeswalker
 subtype=Liliana
 cost={5}{B}{B}
 loyalty=5
-ability=+2: Put a -1/-1 counter on up to one target creature.;\
+ability=+2: You may put a -1/-1 counter on target creature.;\
         −3: Destroy target creature with a -1/-1 counter on it.;\
         −10: Return all creature cards from your graveyard to the battlefield.
 timing=main
