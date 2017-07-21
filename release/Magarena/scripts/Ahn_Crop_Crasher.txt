@@ -10,4 +10,3 @@ ability=Haste;\
         You may exert SN as it attacks. When you do, target creature can't block this turn.
 timing=fmain
 oracle=Haste\nYou may exert Ahn-Crop Crasher as it attacks. When you do, target creature can't block this turn.
-status=not supported: exert
