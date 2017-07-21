@@ -45,7 +45,7 @@ public class MissingImagesAlertButton extends AlertButton {
 
         if (!hasChecked || isVisible()) {
             isMissingImages = CardDefinitions.isMissingPlayableImages();
-            GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
+            GeneralConfig.setIsMissingFiles(isMissingImages);
             hasChecked = true;
         }
         if (isMissingImages) {

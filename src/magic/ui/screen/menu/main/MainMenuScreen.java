@@ -80,8 +80,8 @@ public class MainMenuScreen extends HeaderFooterScreen {
     }
 
     public void updateMissingImagesNotification() {
-        if (GeneralConfig.getInstance().isMissingFiles()) {
-            GeneralConfig.getInstance().setIsMissingFiles(false);
+        if (GeneralConfig.isMissingFiles()) {
+            GeneralConfig.setIsMissingFiles(false);
             alertPanel.refreshAlerts();
         }
     }
