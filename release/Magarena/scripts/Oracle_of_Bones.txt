@@ -7,8 +7,6 @@ subtype=Minotaur,Shaman
 cost={2}{R}{R}
 pt=3/1
 ability=Haste;\
-        Tribute 2;\
-        When SN enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.
+        Tribute 2 effect You may cast an instant or sorcery card from your hand without paying its mana cost.
 timing=fmain
 oracle=Haste\nTribute 2\nWhen Oracle of Bones enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.
-status=needs groovy
