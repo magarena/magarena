@@ -44,7 +44,9 @@ public abstract class ThisAttacksTrigger extends AttacksTrigger {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 if (event.isYes()) {
                     game.addEvent(new MagicExertEvent(event.getPermanent()));
-                    game.doAction(new EnqueueTriggerAction(sourceEvent.getTriggerEvent(event.getPermanent())));
+                    if (sourceEvent != null) {
+                        game.doAction(new EnqueueTriggerAction(sourceEvent.getTriggerEvent(event.getPermanent())));
+                    }
                 }
             }
         };

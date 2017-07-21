@@ -1031,11 +1031,26 @@ public enum MagicAbility {
             card.add(BlocksTrigger.create(filter, sourceEvent));
         }
     },
-    ExertTrigger("You may exert SN as it attacks. When you do, " + ARG.EFFECT, 10) {
+    ExertWhenAttack("You may exert SN as it attacks\\.", 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(ThisAttacksTrigger.exert(null));
+        }
+    },
+    ExertTrigger("You may exert SN as it attacks\\. When you do, " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             card.add(ThisAttacksTrigger.exert(sourceEvent));
+        }
+    },
+    WhenTrigger("Whenever you exert a creature, " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(BecomesStateTrigger.create(
+                MagicPermanentState.Exerted,
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
         }
     },
     CreatureBlocksEffect("When(ever)? " + ARG.WORDRUN + " blocks, " + ARG.EFFECT, 10) {
