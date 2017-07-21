@@ -6,6 +6,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicCopyPermanentPicker;
+import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.target.MagicTargetType;
+import magic.model.target.MagicTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.action.EnterAsCopyAction;
@@ -20,13 +23,16 @@ public abstract class MagicETBEvent implements MagicCardEvent,MagicEventAction,M
 
     public static MagicETBEvent copyOf(final String desc) {
         final MagicTargetChoice choice = new MagicTargetChoice("a " + desc);
+        final MagicTargetPicker<?> targetPicker = choice.getTargetFilter().acceptType(MagicTargetType.Permanent) ?
+            MagicCopyPermanentPicker.create() :
+            MagicGraveyardTargetPicker.PutOntoBattlefield;
         return new MagicETBEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
                 return new MagicEvent(
                     cardOnStack,
                     new MagicMayChoice(choice),
-                    MagicCopyPermanentPicker.create(),
+                    targetPicker,
                     this,
                     "PN may$ have SN enter the battlefield as a copy of any " + desc + "$."
                 );
