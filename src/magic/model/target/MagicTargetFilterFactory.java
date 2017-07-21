@@ -1889,6 +1889,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl NONLAND_CARD = new MagicCardFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+            return !target.hasType(MagicType.Land);
+        }
+    };
+
     public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD = new MagicCardFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
@@ -2609,12 +2616,13 @@ public class MagicTargetFilterFactory {
         addp("creature or enchantment card", CREATURE_OR_ENCHANTMENT_CARD);
         addp("multicolored card", MULTICOLORED_CARD);
         addp("colorless card", COLORLESS_CARD);
-        addp("noncreature, nonland card", NONCREATURE_NONLAND_CARD);
-        addp("red or green card", RED_OR_GREEN_CARD);
-        addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
+        addp("nonland card", NONLAND_CARD);
         addp("noncreature card", NONCREATURE_CARD);
         addp("nonartifact card", NONARTIFACT_CARD);
+        addp("noncreature, nonland card", NONCREATURE_NONLAND_CARD);
         addp("nonartifact, nonland card", NONARTIFACT_NONLAND_CARD);
+        addp("red or green card", RED_OR_GREEN_CARD);
+        addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
         addp("basic land card or a Desert card", BASIC_LAND_CARD_OR_DESERT_CARD);
         addp("basic land card or a Gate card", BASIC_LAND_CARD_OR_GATE_CARD);
         addp("Plains, Island, Swamp, Mountain or Forest card", LAND_CARD_WITH_BASIC_LAND_TYPE);
