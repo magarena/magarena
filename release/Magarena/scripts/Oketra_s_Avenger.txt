@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{W}
 pt=3/1
-ability=You may exert SN as it attacks. When you do, prevent all combat damage that would be dealt to it this turn.
+ability=You may exert SN as it attacks. When you do, prevent all combat damage that would be dealt to SN this turn.
 timing=main
 oracle=You may exert Oketra's Avenger as it attacks. When you do, prevent all combat damage that would be dealt to it this turn.
