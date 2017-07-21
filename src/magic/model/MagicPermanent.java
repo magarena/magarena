@@ -170,6 +170,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return getController().controlsPermanent(this);
     }
 
+    @Override
     public boolean isInvalid() {
         return !isValid();
     }

@@ -259,6 +259,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return valid;
     }
 
+    @Override
     public boolean isInvalid() {
         return !valid;
     }
