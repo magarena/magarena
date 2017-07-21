@@ -9,4 +9,3 @@ pt=2/2
 ability=You may exert SN as it attacks. When you do, draw a card.
 timing=main
 oracle=You may exert Watchful Naga as it attacks. When you do, draw a card.
-status=not supported: exert
