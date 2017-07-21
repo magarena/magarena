@@ -7,8 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import magic.model.player.PlayerStatistics;
-import magic.translate.StringContext;
 import magic.translate.MText;
+import magic.translate.StringContext;
 import magic.ui.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -17,11 +17,11 @@ class PlayerMiniStatsPanel extends JPanel {
 
     // translatable strings
     @StringContext(eg = "player mini-stats heading representing games and duels [P]layed")
-    private static final String _S1 = "P";
+    private static final String _S1 = MText.abbreviate("P", "Played");
     @StringContext(eg = "player mini-stats heading representing games and duels [W]on")
-    private static final String _S2 = "W";
+    private static final String _S2 = MText.abbreviate("W", "Won");
     @StringContext(eg = "player mini-stats heading representing games and duels [L]ost")
-    private static final String _S3 = "L";
+    private static final String _S3 = MText.abbreviate("L", "Lost");
     private static final String _S4 = "Duels";
     private static final String _S5 = "Games";
 

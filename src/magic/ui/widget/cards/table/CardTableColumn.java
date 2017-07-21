@@ -45,10 +45,10 @@ class ColumnHeading {
     static final String _S2 = "CC";
 
     @StringContext(eg = "Short hand for Power, a column header in card table.")
-    static final String _S3 = "P";
+    static final String _S3 = MText.abbreviate("P", "Power");
 
     @StringContext(eg = "Short hand for Toughness, a column header in card table.")
-    static final String _S4 = "T";
+    static final String _S4 = MText.abbreviate("T", "Toughness");
 
     static final String _S5 = "Type";
     static final String _S6 = "Subtype";
