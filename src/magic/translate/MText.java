@@ -248,14 +248,14 @@ public final class MText {
 
     public static void createTranslationFile(File txtFile, Map<Long, String> stringsMap) throws FileNotFoundException, UnsupportedEncodingException {
         try (final PrintWriter writer = new PrintWriter(txtFile, UTF_CHAR_SET)) {
-            writer.println(getHeaderLineData());
+            writer.print(getHeaderLineData() + "\n");
             for (Map.Entry<Long, String> entry : stringsMap.entrySet()) {
                 final Long key = entry.getKey();
                 if (annotations.containsKey(key)) {
-                    writer.println(String.format("# %010d eg. %s", key, annotations.get(key)));
+                    writer.print(String.format("# %010d eg. %s\n", key, annotations.get(key)));
                 }
                 // CRC32 function returns 32 bit long = max 10 numerals. Pad if smaller.
-                writer.println(String.format("%010d = %s", key, entry.getValue()));
+                writer.print(String.format("%010d = %s\n", key, entry.getValue()));
             }
         }
     }
