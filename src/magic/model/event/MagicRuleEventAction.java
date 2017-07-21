@@ -1630,7 +1630,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield" + ARG.MODS + "(.|,) ((T|t)hen|If you do,) shuffle your library",
+        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield" + ARG.MODS + "(\\.|,) (Then|If you do,) shuffle your library",
         MagicTiming.Token,
         "Search"
     ) {
@@ -1646,7 +1646,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefieldAlt(
-        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield\\. Then shuffle your library\\." + ARG.MODS,
+        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield(\\.|,) Then shuffle your library\\." + ARG.MODS,
         MagicTiming.Token,
         "Search"
     ) {
@@ -1656,7 +1656,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToBattlefield(
-        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield" + ARG.MODS + "(.|,) ((T|t)hen|If you do,) shuffle your library",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield" + ARG.MODS + "(.|,) (Then|If you do,) shuffle your library",
         MagicTiming.Token,
         "Search"
     ) {

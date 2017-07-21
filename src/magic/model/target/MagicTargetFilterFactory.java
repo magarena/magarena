@@ -680,6 +680,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl ENCHANTMENT_OR_TAPPED_ARTIFACT_OR_CREATURE = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isEnchantment() || (target.isTapped() && target.isArtifact()) || (target.isTapped() && target.isCreature());
+        }
+    };
+
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Opp);
 
     public static final MagicPermanentFilterImpl NONCREATURE = new MagicPermanentFilterImpl() {
@@ -2898,6 +2905,7 @@ public class MagicTargetFilterFactory {
         add("artifact, enchantment, or land", ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         add("artifact, creature, or land", ARTIFACT_OR_CREATURE_OR_LAND);
         add("artifact, creature, or enchantment", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
+        add("enchantment, tapped artifact, or tapped creature", ENCHANTMENT_OR_TAPPED_ARTIFACT_OR_CREATURE);
         add("enchantment or land", ENCHANTMENT_OR_LAND);
         add("enchanted creature or enchantment creature", ENCHANTED_OR_ENCHANTMENT_CREATURE);
         add("noncreature artifact", NONCREATURE_ARTIFACT);

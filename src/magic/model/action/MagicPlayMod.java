@@ -68,7 +68,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Destroy));
         }
     },
-    RETURN_AT_END_OF_TURN() {
+    RETURN_AT_END_OF_TURN("Return it to your hand at the beginning of the next end step") {
         @Override
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Return));
