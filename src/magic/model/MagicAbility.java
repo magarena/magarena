@@ -1034,8 +1034,8 @@ public enum MagicAbility {
     ExertTrigger("You may exert SN as it attacks. When you do, " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create("You may exert SN. If you do, " + ARG.effect(arg));
-            card.add(ThisAttacksTrigger.create(sourceEvent));
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            card.add(ThisAttacksTrigger.exert(sourceEvent));
         }
     },
     CreatureBlocksEffect("When(ever)? " + ARG.WORDRUN + " blocks, " + ARG.EFFECT, 10) {

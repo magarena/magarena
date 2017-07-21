@@ -5,6 +5,7 @@ public enum MagicPermanentState {
     Tapped("tapped", "{T}"),
     Summoned("summoned", "{n}"),
     DoesNotUntapDuringNext("doesn't untap during its controller's next untap step", "{s}"),
+    Exerted("exerted", ""),
     Regenerated("regenerated", "{r}"),
     CannotBeRegenerated("can't be regenerated", "{~r}"),
     Attacking("attacking", "{c}"),
