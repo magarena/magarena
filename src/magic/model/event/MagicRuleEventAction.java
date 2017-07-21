@@ -2931,6 +2931,30 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    CastFreeSpell(
+        "cast " + ARG.CARDS + " without paying its mana cost(?<exile>\\. If (that card|a card cast this way) would be put into (your|a) graveyard this turn, exile it instead)?",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.PutOntoBattlefield,
+        MagicTiming.Token,
+        "Cast"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicCard> filter = ARG.cardsParse(matcher);
+            final MagicLocationType from = MagicLocationType.create(ARG.cards(matcher));
+            final MagicLocationType to = matcher.group("exile") != null ? MagicLocationType.Exile : MagicLocationType.Graveyard;
+            return (game, event) -> {
+                for (final MagicCard it : ARG.cards(event, matcher, filter)) {
+                    game.doAction(CastCardAction.WithoutManaCost(
+                        event.getPlayer(),
+                        it,
+                        from,
+                        to
+                    ));
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;

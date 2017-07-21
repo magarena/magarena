@@ -34,6 +34,7 @@ public class RemoveCardAction extends MagicAction {
                 index=owner.getLibrary().removeCard(card);
                 break;
             case Graveyard:
+            case OpponentsGraveyard:
                 index=owner.getGraveyard().removeCard(card);
                 break;
             case Exile:
@@ -62,6 +63,7 @@ public class RemoveCardAction extends MagicAction {
                 owner.getLibrary().add(index,card);
                 break;
             case Graveyard:
+            case OpponentsGraveyard:
                 owner.getGraveyard().add(index,card);
                 break;
             case Exile:
