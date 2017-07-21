@@ -47,7 +47,6 @@
 3780066601 = Seleccione una carta de su mano.
 0033616675 = Seleccione %d cartas de su mano.
 1759655335 = Seleccione cara o cruz
-2805059655 = Seleccione un color.
 3462051701 = Seleccione a los atacantes.
 # 0979986174 eg. {f} will be replaced by an icon. | represents a new line.
 0979986174 = Pulse en una criatura para seleccionarla como atacante o para sacarla del combate.|Pulse {f} para continuar.
@@ -76,9 +75,6 @@
 1547688846 = Nivel: %d  Vida extra: %d
 # 2291111045 eg. Mini Max, level 6 AI (MMAB)
 2291111045 = %s, IA de nivel %d (%s)
-3290158230 = Mazo (%s) - %d cartas
-1995542578 = Intercambiar mazos
-0173717257 = Intercambia su mazo con el de su oponente.
 0997768757 = Generar otro mazo
 1181977754 = Elegir un mazo prefabricado al azar o generar un mazo<br>aleatorio, en base a las opciones de la partida, para este usuario.
 2964506365 = FALLO
@@ -94,6 +90,7 @@
 3665117018 = Ha habido un problema durante la importación.
 0462512377 = Por favor, consulte el siguiente archivo para más información -
 2402824784 = - mods…
+3925788068 = - datos de juegos…
 2660961351 = Elija un directorio Magarena existente
 0922408799 = ¡No se ha podido encontrar el programa!
 0550609901 = Este directorio no contiene una versión válida de Magarena.
@@ -220,19 +217,13 @@
 3354749815 = borde
 2541086472 = según el tema
 1643521398 = Determina el estilo de resaltado de las cartas durante un juego.
-0684031773 = Descargar las imágenes bajo demanda
-1544940099 = Descargar las imágenes solo cuando se necesiten. Desactívelo si desea descargar todas las imágenes de una vez, usar cartas sustitutas con imágenes cortadas o descargar imágenes de cartas en idiomas distintos al inglés.
 1299868798 = Requiere reiniciar el programa. Solo afecta a la interfaz general, no a los datos de las cartas.
 1241683511 = Visión partida del editor de mazos.
 4079962537 = Usar el estilo antiguo de la visión partida, en lugar de la nueva vista por pestañas, en el editor de mazos. Esta opción se proporciona por comodidad; la vista por pestañas es la única que será actualizada en el futuro.
 2481184000 = Solo previsualizar la carta al seleccionarla.
 3109056861 = Por defecto, al mover el cursor sobre una carta se muestra la imagen. Si lo considera excesivo, con esta opción puede hacer que solo se muestre la imagen cuando seleccione una carta.
-1910275960 = Mostrar datos de las cartas no implementadas
-3761621562 = Si lo activa, el explorador de cartas mostrará datos adicionales para todas las cartas no implementadas; si no, solo se mostrará el nombre.  Esta opción puede afectar al tiempo que la ventana del explorador de cartas tardará en abrir por primera vez.
 2093172055 = Interfaz de usuario
 2576967655 = Explorador de cartas & Editor de mazos
-0245154315 = Imágenes de cartas
-3590591187 = Original
 3097134521 = Guardar los datos de los juegos.
 3812957800 = Mantiene un registro de cada juego para mostrar el número de juegos Jugados/Ganados/Perdidos y el historial de juegos de cada mazo. La información se almacena en \\Magarena\\stats.
 0753088835 = Predefinido
@@ -294,12 +285,7 @@
 3432516076 = Se ha producido un error al leer el archivo de traducción
 3869587315 = Asegúrese de que la codificación es «UTF-8 without BOM».
 3799790393 = Este sistema operativo no permite abrir este fichero con la aplicación por defecto.
-0197262689 = Haga <b>clic izquierdo</b> para abrir el archivo.
-1085435003 = Haga <b>clic derecho</b> para explorar el directorio superior.
-1575687680 = Haga <b>clic izquierdo</b> para explorar el directorio.
-0620214431 = No se ha podido abrir el archivo:\n%s\n\n%s
 1425131484 = cargando datos de cartas
-3679950490 = cargando generador de imágenes sustitutas
 1033268948 = Disposición
 2230615025 = Apilada
 3448258317 = Desapilada
@@ -326,10 +312,6 @@
 2582276425 = Elige una carta al azar de la lista de cartas mostradas.
 0980688120 = Pantalla de exploración de cartas
 4051882162 = Explore las imágenes de las cartas, empezando por la carta seleccionada.
-0476410532 = mazos: %d
-1893253750 = Lista de mazos que contienen esta carta
-1173555256 = Haga doble clic en el nombre del mazo para ver sus cartas.
-1170586075 = buscando…
 4068251502 = Estilo
 4121886317 = Contenido de la carta
 2769603427 = Cargar de nuevo
@@ -360,10 +342,6 @@
 1116470770 = Añadir una
 2771525700 = El máximo es diez.
 4055741459 = Sacar una
-3615081709 = Aumentar
-4194509842 = Aumentar la cantidad en una unidad, hasta un máximo de diez.
-2069643244 = Reducir
-0391863698 = Reducir la cantidad en una unidad, hasta un mínimo de uno.
 1083993486 = Para eliminar la última copia de una carta debe usar este botón.
 # 0281107096 eg. Memnite <b>is illegal/banned/restricted</b> in Standard.
 0281107096 = %s <b>%s</b> en %s.
@@ -376,10 +354,8 @@
 1176822215 = Guardar el mazo en un fichero.
 1737849226 = Editor de mazos
 0415776539 = ¡El mazo está vacío! No hay nada que guardar.
-2591550486 = Este directorio está reservado para mazos prefabricados.\nElija un directorio diferente.
 4088405541 = ¿Desea sobreescribir el fichero del mazo?
 3814198088 = Sobreescribir el fichero
-3376379119 = Guardar el mazo
 0359392042 = Ha habido un problema al guardar el fichero del mazo.
 1220840499 = Se han hecho cambios con el editor de mazo que no se han guardado y se van a perder.\n¿Desea continuar?
 1215591181 = Se requiere confirmación…
@@ -429,9 +405,6 @@
 0289838330 = NO GUARDADO
 1995542578 = Intercambiar mazos
 0173717257 = Intercambiar su mazo con el de su oponente.
-0997768757 = Generar otro mazo
-1181977754 = Elegir un mazo listo para usar o generar uno aleatoriamente para este<br>jugador en base a las opciones de la partida.
-4008329848 = NO HAY MAZO
 3108100709 = Mazos de la partida
 3304542834 = Menú principal
 3054759246 = Reiniciar la partida
@@ -469,8 +442,7 @@
 0973874351 = segundo.
 1455924259 = Vancouver Mulligan
 3775034151 = Jugar esta mano
-# TODO
-3936605750 = Devolver esta mano a la biblioteca y después robar otra mano con una carta menos.<br>Si el número de cartas de la mano con que comenzó es menor que el tamaño de mano inicial, puede mirar la carta que esté en el tope de su mazo y ponerla de nuevo en el tope.
+3936605750 = Devolver esta mano a la biblioteca y después robar otra mano con una carta menos.<br>Si el número de cartas de la mano con que comenzó es menor que el tamaño de mano inicial,<br>puede mirar la carta que esté en el tope de su mazo y ponerla de nuevo en el tope.
 # 1529602839 eg. this is the AI level.
 1529602839 = Nivel
 # 3110715001 eg. player mini-stats heading representing games and duels [P]layed
@@ -503,8 +475,7 @@
 2138356924 = Avatares
 2992824942 = Más avatares…
 3758975434 = Obtener más avatares del foro de Magarena.
-# 0578187269 eg. 'Prebuilt deck' or 'Random deck'
-0578187269 = Mazo %s
+# 0964616095 eg. 'Prebuilt deck' or 'Random deck'
 0964616095 = Cualesquiera tres colores
 0403566421 = Cualesquiera dos colores
 1121204539 = Cualquier color único
@@ -528,30 +499,21 @@
 0140416230 = Abrir en su navegador web una página con más información sobre esta pantalla.
 3561385369 = Mostrar la imagen impresa de la carta. Las imágenes se descargan en las carpetas «cards» y «tokens.»
 0443737500 = Mostrar una imagen de reemplazo, generada bajo demanda a partir de las imágenes recortadas de la carpeta «crops».
-1441803404 = Descargar las imágenes de las cartas que faltan o están desactualizadas a las carpetas «cards» y «tokens».
-1500605395 = Descarga imágenes recortadas que falten o están desactualizadas a la carpeta «crops». En este momento <b>no hay imágenes recortadas para todas las cartas</b>.
-3507398040 = Magarena mostrará la primera imagen que encuentre en las carpetas «custom», «crops», «cards» o «tokens», en ese orden. Si no encontrase ninguna, o encontrase una imagen recortada, generaría una imagen sustituta.
 3426461400 = Elija una carpeta…
 3573554999 = ¡No hay suficiente espacio libre!
 2113246887 = Elija un directorio de imágenes
 3401300097 = Un conjunto completo de imágenes requiere al menos 1,5 GB de espacio libre
 4283686143 = Magarena buscará imágenes de cartas en una de las siguientes carpetas, en este orden: «custom», «crops», «cards» o «tokens».
-2350987364 = Magarena buscará imágenes de cartas en una de las siguientes carpetas, en este orden: «custom», «crops», «cards» o «tokens». Haga <b>clic izquierdo</b> para explorar la carpeta de imágenes.
 1550790213 = Elija o cree una nueva carpeta de imágenes.
 2780764395 = Carpeta de las imágenes de las cartas
 0046037833 = haga clic izquierdo para explorarla
 0819216266 = Configurar imágenes de cartas
 3055940896 = Imagen impresa
 2583272653 = Reemplazo autogenerado
-3937389802 = Descargar imágenes
-3092449999 = Imágenes recortadas
 1131213745 = Copiar al portapapeles
 0489719719 = Se han copiado los detalles del error al portapapeles.
 1767460686 = Texto de carta preferido:
 3351664113 = Mostrar la carta como:
-3596537789 = Carpeta de imágenes:
-2619910025 = Texto de la carta:
-3330465570 = Descargar:
 3703709718 = Idioma preferido para el texto de las cartas
 2097904294 = Si elige un idioma que no sea el inglés, Magarena intentará encontrar y descargar una imagen con texto de la carta en ese idioma. Si no encontrase ninguna, descargaría la versión en inglés.
 2617352713 = Descargar bajo demanda:
@@ -565,10 +527,8 @@
 0534677077 = Cartas no implementadas sin imágenes
 0478911262 = El archivo de palabras clave no es válido.
 0790035322 = Glosario de palabras clave
-1640912267 = Menú de ayuda
 2874748309 = Sobre Magarena
 1690697036 = Menú principal
-1034062502 = Retroceder
 0766317539 = Idioma
 3297432705 = El fichero de traducciones no es válido.
 3987539703 = Comenzar una partida
@@ -581,12 +541,9 @@
 2258392056 = Abrir la página wiki apropiada en su navegador de Internet.
 2224295428 = Importando…
 1445765220 = Activar/desactivar la pantalla completa
-1898508145 = Menú de opciones
-2823720574 = Pantalla completa
 4067345257 = Restaurar las opciones predefinidas
 2586492251 = ¿Desea dar a las opciones su valor por defecto e iniciar el asistente de configuración?
 0932815095 = %s juegos
-3015983623 = Desactive primero la opción «Descargar imágenes bajo demanda».
 3742435974 = Opciones de la partida
 1902254623 = Vida inicial del jugador: %d
 3483385143 = Tamaño inicial de la mano: %d
@@ -664,15 +621,13 @@
 2577309750 = Tipo de carta
 3175869816 = Datos del mazo
 1778637768 = mazo de %d cartas
-2362534816 = Datos del mazo: %d cartas
 3431594505 = Incolora
 2832043402 = Monocolor
 4045334056 = Multicolor
 0065982042 = Total
 3623327207 = ¡El ganador es %s!
-2805059655 = Elija un color.
-4121490138 = Elija un valor para X.
-1367094520 = Elija el modo.
+2805059655 = Seleccione un color.
+4121490138 = Seleccione un valor para X.
 1246376821 = Elija cuántas veces desea pagar el coste %s de %s.
 0312145515 = Elija qué habilidad aplicar.
 3995352755 = Contadores de escudo
@@ -688,6 +643,7 @@
 4121134411 = Glosario de palabras clave [K]
 1510821684 = Referencia rápida…
 0945484393 = Ocultar/mostrar el registro [M]
+3672449071 = Haga clic para avanzar la pila.
 3549662833 = Turno %d
 2389230816 = Fase inicial: Paso de enderezar
 2088353625 = Fase inicial: Paso de mantenimiento
@@ -701,9 +657,6 @@
 3324936721 = Segunda fase principal
 1015450405 = Fase de finalización: Paso final
 1754937449 = Fase de finalización: Paso de limpieza
-# 0412686884 eg. as in 'Other' player zone
-0412686884 = Otra
-4210774852 = Otra: %s
 3934956419 = %s Mano
 0784335874 = %s Cementerio
 2207670850 = %s Exilio
@@ -717,10 +670,7 @@
 1147269330 = Iniciar Firemind Worker
 1411348818 = El programa está desactualizado. Por favor, actualice Magarena.
 2929460102 = Clave de Acceso
-0911410003 = El fichero del mazo está vacío.
 3156016653 = El fichero tiene más de %d líneas.
 1845115261 = …más…
 1817512555 = línea %d: la línea tiene más de %d caracteres.
-1463352396 = línea %d: el formato de la línea no es válido.
-0909668220 = Se esperaba <cantidad><espacio><nombre de la carta>
 2392141928 = línea %d: la carta «%s» no es válida.
