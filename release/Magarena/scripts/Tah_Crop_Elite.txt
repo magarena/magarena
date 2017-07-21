@@ -10,4 +10,3 @@ ability=Flying;\
         You may exert SN as it attacks. When you do, creatures you control get +1/+1 until end of turn.
 timing=main
 oracle=Flying\nYou may exert Tah-Crop Elite as it attacks. When you do, creatures you control get +1/+1 until end of turn.
-status=not supported: exert
