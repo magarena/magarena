@@ -230,7 +230,7 @@ public final class MagicFileSystem {
             for (Path p : ds) {
                 filenames.add(FilenameUtils.getBaseName(p.getFileName().toString()));
             }
-            Collections.sort(filenames);
+            Collections.sort(filenames, String.CASE_INSENSITIVE_ORDER);
         } catch (IOException ex) {
             System.err.println(ex);
         }
