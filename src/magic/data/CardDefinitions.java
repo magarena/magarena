@@ -410,7 +410,7 @@ public class CardDefinitions {
 
     public static void checkForMissingFiles() {
         new Thread(() -> {
-            CONFIG.setIsMissingFiles(isMissingPlayableImages());
+            GeneralConfig.setIsMissingFiles(isMissingPlayableImages());
         }).start();
     }
 
