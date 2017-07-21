@@ -17,7 +17,6 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import magic.data.GeneralConfig;
@@ -230,7 +229,7 @@ public final class MagicFileSystem {
             for (Path p : ds) {
                 filenames.add(FilenameUtils.getBaseName(p.getFileName().toString()));
             }
-            Collections.sort(filenames, String.CASE_INSENSITIVE_ORDER);
+            filenames.sort((s1, s2) -> s1.compareToIgnoreCase(s2));
         } catch (IOException ex) {
             System.err.println(ex);
         }
