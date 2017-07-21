@@ -14,15 +14,16 @@ class PlayerCellRenderer extends DefaultTableCellRenderer {
     private static final String _S1 = "level:%d +life:%d";
 
     private String getAIPlayerDetails(PlayerInfo playerInfo) {
-        if (playerInfo.getAiType() == null) {
-            return "<html><center>???</center></html>";
+        try {
+            return String.format(
+                "<html><center>%s <small>%s</small><br><small>%s</small></center></html>",
+                playerInfo.getAiType().name(),
+                MText.get(_S1, playerInfo.getAiLevel(), playerInfo.getAiXtraLife()),
+                playerInfo.getAiType().toString()
+            );
+        } catch (NullPointerException ex) {
+            return "<html><center><small>NPE in PlayerCellRenderer.<br>getAIPlayerDetails()</small></center></html>";
         }
-        return String.format(
-            "<html><center>%s <small>%s</small><br><small>%s</small></center></html>",
-            playerInfo.getAiType().name(),
-            MText.get(_S1, playerInfo.getAiLevel(), playerInfo.getAiXtraLife()),
-            playerInfo.getAiType().toString()
-        );
     }
 
     private String getHumanPlayerDetails(PlayerInfo playerInfo) {
