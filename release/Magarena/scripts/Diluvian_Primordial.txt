@@ -6,7 +6,7 @@ type=Creature
 subtype=Avatar
 cost={5}{U}{U}
 pt=5/5
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, you may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost. If a card cast this way would be put into a graveyard this turn, exile it instead.
 timing=main
 oracle=Flying\nWhen Diluvian Primordial enters the battlefield, for each opponent, you may cast up to one target instant or sorcery card from that player's graveyard without paying its mana cost. If a card cast this way would be put into a graveyard this turn, exile it instead.
-requires_groovy_code

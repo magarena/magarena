@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={W}{U}{B}{R}{G}
 pt=5/5
-ability=Flying
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may cast a nonland card from your hand without paying its mana cost.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Maelstrom Archangel deals combat damage to a player, you may cast a nonland card from your hand without paying its mana cost.
