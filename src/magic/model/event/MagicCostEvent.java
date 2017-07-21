@@ -172,6 +172,16 @@ public enum MagicCostEvent {
             return false;
         }
     },
+    ExertSelf("Exert SN") {
+        @Override
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicExertEvent((MagicPermanent)source);
+        }
+        @Override
+        public boolean isIndependent() {
+            return false;
+        }
+    },
     UntapSelf("\\{Q\\}") {
         @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
