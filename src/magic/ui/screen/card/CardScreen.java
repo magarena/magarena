@@ -1,17 +1,17 @@
-package magic.ui.screen.card.script;
+package magic.ui.screen.card;
 
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.translate.MText;
-import magic.ui.helpers.UrlHelper;
-import magic.ui.screen.widget.PlainMenuButton;
-import magic.utility.MagicSystem;
 import magic.ui.WikiPage;
 import magic.ui.helpers.MouseHelper;
+import magic.ui.helpers.UrlHelper;
 import magic.ui.screen.HeaderFooterScreen;
+import magic.ui.screen.widget.PlainMenuButton;
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
-public class CardScriptScreen extends HeaderFooterScreen {
+public class CardScreen extends HeaderFooterScreen {
 
     // translatable strings
     private static final String _S1 = "Card Script";
@@ -20,18 +20,18 @@ public class CardScriptScreen extends HeaderFooterScreen {
     private static final String _S5 = "Firemind";
     private static final String _S6 = "Opens the Project Firemind scrips submission page in your browser.";
 
-    private final ScriptContentPanel content;
+    private final ContentPanel content;
 
-    public CardScriptScreen(final MagicCardDefinition card) {
+    public CardScreen(final MagicCardDefinition card) {
         super(MText.get(_S1));
-        content = new ScriptContentPanel(card);
+        content = new ContentPanel(card);
         setMainContent(content);
         setFooterButtons();
         setWikiPage(WikiPage.CARD_SCRIPTING);
     }
 
     private void setFooterButtons() {
-        addToFooter(PlainMenuButton.build(this::openFiremindWebpage, 
+        addToFooter(PlainMenuButton.build(this::openFiremindWebpage,
                 MagicIcon.FIREMIND, MText.get(_S5), MText.get(_S6))
         );
         if (MagicSystem.isDevMode()) {

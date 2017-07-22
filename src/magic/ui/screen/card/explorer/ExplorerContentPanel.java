@@ -163,7 +163,7 @@ public class ExplorerContentPanel extends JPanel
     public void showCardScriptScreen() {
         if (cardPoolTable.getSelectedCards().size() == 1) {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-            ScreenController.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
+            ScreenController.showCardScreen(cardPoolTable.getSelectedCards().get(0));
             setCursor (Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         }
     }

@@ -1,4 +1,4 @@
-package magic.ui.screen.card.script;
+package magic.ui.screen.card;
 
 import magic.ui.screen.widget.ScreenSideBar;
 

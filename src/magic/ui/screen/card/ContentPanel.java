@@ -1,4 +1,4 @@
-package magic.ui.screen.card.script;
+package magic.ui.screen.card;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -11,7 +11,7 @@ import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ScriptContentPanel extends JPanel {
+class ContentPanel extends JPanel {
 
     // UI components
     private final MigLayout migLayout = new MigLayout();
@@ -24,7 +24,7 @@ public class ScriptContentPanel extends JPanel {
     private final File groovyFile;
     private final boolean isGroovy;
 
-    public ScriptContentPanel(final MagicCardDefinition card) {
+    ContentPanel(final MagicCardDefinition card) {
 
         sidebar = new CardSideBar();
         sidebar.setCard(card);
@@ -43,7 +43,7 @@ public class ScriptContentPanel extends JPanel {
 
     }
 
-    public void refreshContent() {
+    void refreshContent() {
         scriptViewer.setTextFile(scriptFile);
         if (isGroovy) {
             groovyViewer.setTextFile(groovyFile);

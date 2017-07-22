@@ -20,8 +20,8 @@ import magic.ui.dialog.prefs.PreferencesDialog;
 import magic.ui.helpers.MouseHelper;
 import magic.ui.screen.MScreen;
 import magic.ui.screen.about.AboutScreen;
+import magic.ui.screen.card.CardScreen;
 import magic.ui.screen.card.explorer.ExplorerScreen;
-import magic.ui.screen.card.script.CardScriptScreen;
 import magic.ui.screen.cardflow.CardFlowScreen;
 import magic.ui.screen.cardflow.ICardFlowListener;
 import magic.ui.screen.cardflow.ICardFlowProvider;
@@ -307,8 +307,8 @@ public final class ScreenController {
         showScreen(GameLogScreen::new);
     }
 
-    public static void showCardScriptScreen(final MagicCardDefinition card) {
-        showScreen(() -> new CardScriptScreen(card));
+    public static void showCardScreen(final MagicCardDefinition card) {
+        showScreen(() -> new CardScreen(card));
     }
 
     public static void showDecksScreen(final IDeckConsumer deckConsumer) {
