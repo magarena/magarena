@@ -81,7 +81,11 @@ public class StartScreen extends MScreen {
             });
 
             for (final String translation : translations) {
-                String caption = (translation + " " + MText.getTranslationVersion(translation)).trim();
+                String caption = String.format(
+                    "<html>%s<font size=\"4\"> %s</font></html>",
+                    translation,
+                    MText.getTranslationVersion(translation)
+                );
                 menuPanel.addMenuItem(caption, new AbstractAction() {
                     @Override
                     public void actionPerformed(final ActionEvent e) {
