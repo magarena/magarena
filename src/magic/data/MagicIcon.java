@@ -9,6 +9,7 @@ public enum MagicIcon {
     // ../ui/... icons.
     //
     ALERT("ui/alert-16.png"),
+    CARD_SCREEN("ui/card-screen.png"),
     CARDFLOW("ui/cardflow-28.png"),
     CHECKBOX_OFF("ui/checkbox-16.png"),
     CHECKBOX_ON("ui/checkbox-selected-16.png"),
@@ -23,7 +24,6 @@ public enum MagicIcon {
     CUBE("ui/w_cube.png"),
     CYCLE("ui/w_cycle.png"),
     DECK("ui/w_deck.png"),
-    EDIT("ui/w_edit.png"),
     ENCHANTMENTS("ui/w_enchantments.png"),
     EXPERIENCE("ui/rank-16.png"),
     FAST_FORWARD("ui/fast-forward-16.png"),

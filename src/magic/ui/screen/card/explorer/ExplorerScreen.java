@@ -36,6 +36,10 @@ public class ExplorerScreen extends HeaderFooterScreen
         MagicIcon.CARDFLOW, Color.BLACK, Color.WHITE
     );
 
+    private static final ImageIcon CARD_ICON = ImageHelper.getRecoloredIcon(
+        MagicIcon.CARD_SCREEN, Color.BLACK, Color.WHITE
+    );
+
     private ExplorerContentPanel contentPanel;
     private ExplorerHeaderPanel headerPanel;
 
@@ -65,15 +69,13 @@ public class ExplorerScreen extends HeaderFooterScreen
     }
 
     private void setFooterButtons() {
-        addFooterGroup(
+        addToFooter(
             PlainMenuButton.build(this::doShowCardFlowScreen,
                 CARDFLOW_ICON, MText.get(_S7), MText.get(_S8)
             ),
             PlainMenuButton.build(this::doShowScriptScreen,
-                MagicIcon.EDIT, MText.get(_S3), MText.get(_S4)
-            )
-        );
-        addToFooter(
+                CARD_ICON, MText.get(_S3), MText.get(_S4)
+            ),
             PlainMenuButton.build(this::doSelectRandomCard,
                 MagicIcon.RANDOM, MText.get(_S5), MText.get(_S6)
             )
