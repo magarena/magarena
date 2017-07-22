@@ -75,6 +75,11 @@ Thank you for your support and have fun!
 
 Release 1.87 (July 31, 2017)
 ============
+kelsioboy
+lodici
+melvin
+ShawnieBoy
+shinmai-rookie
 
 Release 1.86 (June 30, 2017)
 ============
