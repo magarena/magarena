@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever you cast a Bolas planeswalker spell, you may sacrifice SN. If you do, destroy target creature.
 timing=main
 oracle=Flying\nWhenever you cast a Bolas planeswalker spell, you may sacrifice Wasp of the Bitter End. If you do, destroy target creature.
+status=needs groovy

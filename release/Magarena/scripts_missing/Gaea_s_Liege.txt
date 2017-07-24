@@ -10,3 +10,4 @@ ability=As long as SN isn't attacking, its power and toughness are each equal to
         {T}: Target land becomes a Forest until SN leaves the battlefield.
 timing=main
 oracle=As long as Gaea's Liege isn't attacking, its power and toughness are each equal to the number of Forests you control. As long as Gaea's Liege is attacking, its power and toughness are each equal to the number of Forests defending player controls.\n{T}: Target land becomes a Forest until Gaea's Liege leaves the battlefield.
+status=needs groovy
