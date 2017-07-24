@@ -13,6 +13,7 @@ import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicOrChoice;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicColorChoice;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -2378,6 +2379,35 @@ public enum MagicRuleEventAction {
                     game.doAction(ChangeStateAction.Set(it, MagicPermanentState.Blocked));
                 }
             };
+        }
+    },
+    BecomesColor(
+        ARG.PERMANENTS + " becomes the color of your choice(?<ueot> until end of turn)?\\.",
+        MagicTiming.Pump,
+        "Color"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) ->
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    event.getPlayer(),
+                    MagicColorChoice.ALL_INSTANCE,
+                    new MagicPermanentList(ARG.permanents(event, matcher, filter)),
+                    matcher.group("ueot") != null ? this:: ueot : this::forever,
+                    "Chosen color$."
+                ));
+        }
+        private void ueot(final MagicGame game, final MagicEvent event) {
+            for (final MagicPermanent it : event.getRefPermanentList()) {
+                game.doAction(new AddStaticAction(it, MagicStatic.BecomesColor(event.getChosenColor(), MagicStatic.UntilEOT)));
+            }
+        }
+        private void forever(final MagicGame game, final MagicEvent event) {
+            for (final MagicPermanent it : event.getRefPermanentList()) {
+                game.doAction(new AddStaticAction(it, MagicStatic.BecomesColor(event.getChosenColor(), MagicStatic.Forever)));
+            }
         }
     },
     BecomesAlt(

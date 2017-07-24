@@ -289,6 +289,15 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
 
+    public static MagicStatic BecomesColor(final MagicColor color, final boolean duration) {
+        return new MagicStatic(MagicLayer.Color, duration) {
+            @Override
+            public int getColorFlags(final MagicPermanent permanent,final int flags) {
+                return color.getMask();
+            }
+        };
+    }
+
     public static MagicStatic ControlEnchanted = new MagicStatic(MagicLayer.Control) {
         @Override
         public MagicPlayer getController(final MagicPermanent source, final MagicPermanent target, final MagicPlayer player) {
