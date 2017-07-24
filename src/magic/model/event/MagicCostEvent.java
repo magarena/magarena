@@ -127,7 +127,7 @@ public enum MagicCostEvent {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
-    ExileCards("Exile " + ARG.AMOUNT + " (?<any>.*card.*)") {
+    ExileCards("Exile ((?<another>another )|" + ARG.AMOUNT + " )?(?<any>.*card.*)") {
         @Override
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
