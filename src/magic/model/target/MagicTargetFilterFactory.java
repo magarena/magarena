@@ -91,6 +91,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl SPELL_OR_ABILITY_YOU_CONTROL = new MagicStackFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
+            return source.isFriend(target);
+        }
+    };
+
     public static final MagicStackFilterImpl SPELL_OR_ABILITY_OPPONENT_CONTROL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
@@ -2936,6 +2943,7 @@ public class MagicTargetFilterFactory {
         add("spell", SPELL);
         add("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
         add("spell or ability", SPELL_OR_ABILITY);
+        add("spell or ability you control", SPELL_OR_ABILITY_YOU_CONTROL);
         add("spell or ability an opponent controls", SPELL_OR_ABILITY_OPPONENT_CONTROL);
         add("activated ability", ACTIVATED_ABILITY);
         add("activated or triggered ability", ACTIVATED_OR_TRIGGERED_ABILITY);
