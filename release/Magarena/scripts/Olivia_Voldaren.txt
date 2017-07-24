@@ -7,7 +7,7 @@ subtype=Vampire
 cost={2}{B}{R}
 pt=3/3
 ability=Flying;\
-        {1}{R}: SN deals 1 damage to another target creature.~*That creature* becomes a Vampire in addition to its other types.~Put a +1/+1 counter on SN.
+        {1}{R}: SN deals 1 damage to another target creature.~*That creature* becomes a Vampire in addition to its other types.~Put a +1/+1 counter on SN.;\
+        {3}{B}{B}: Gain control of target Vampire for as long as you control SN.
 timing=main
 oracle=Flying\n{1}{R}: Olivia Voldaren deals 1 damage to another target creature. That creature becomes a Vampire in addition to its other types. Put a +1/+1 counter on Olivia Voldaren.\n{3}{B}{B}: Gain control of target Vampire for as long as you control Olivia Voldaren.
-requires_groovy_code

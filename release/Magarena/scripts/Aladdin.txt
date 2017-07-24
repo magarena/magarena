@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{R}{R}
 pt=1/1
+ability={1}{R}{R}, {T}: Gain control of target artifact for as long as you control SN.
 timing=main
-requires_groovy_code
 oracle={1}{R}{R}, {T}: Gain control of target artifact for as long as you control Aladdin.

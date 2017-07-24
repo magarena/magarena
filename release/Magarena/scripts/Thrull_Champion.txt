@@ -6,7 +6,7 @@ type=Creature
 subtype=Thrull
 cost={4}{B}
 pt=2/2
-ability=Thrull creatures get +1/+1.
+ability=Thrull creatures get +1/+1.;\
+        {T}: Gain control of target Thrull for as long as you control SN.
 timing=main
-requires_groovy_code
 oracle=Thrull creatures get +1/+1.\n{T}: Gain control of target Thrull for as long as you control Thrull Champion.

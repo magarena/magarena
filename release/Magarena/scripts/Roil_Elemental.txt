@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={3}{U}{U}{U}
 pt=3/2
-ability=Flying
+ability=Flying;\
+        Whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control SN.
 timing=main
-requires_groovy_code
 oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control Roil Elemental.
