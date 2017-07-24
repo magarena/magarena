@@ -8,7 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicPayManaCostChoice;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicEvent;
 import magic.model.action.AIRevealAction;
 import magic.model.action.CastCardAction;
@@ -16,10 +16,10 @@ import magic.model.action.EnqueueTriggerAction;
 
 public class MiracleTrigger extends ThisDrawnTrigger {
 
-    private final MagicManaCost cost;
+    private final MagicManaCost manaCost;
 
-    public MiracleTrigger(final MagicManaCost cost) {
-        this.cost = cost;
+    public MiracleTrigger(final MagicManaCost aManaCost) {
+        manaCost = aManaCost;
     }
 
     @Override
@@ -35,8 +35,7 @@ public class MiracleTrigger extends ThisDrawnTrigger {
                 player.isHuman() ? card : MagicSource.NONE,
                 player,
                 new MagicMayChoice(
-                    player.isHuman() ? "Reveal this card and cast it for its miracle cost?" : "...",
-                    new MagicPayManaCostChoice(game.modCost(card, cost))
+                    player.isHuman() ? "Reveal this card and cast it for its miracle cost?" : "..."
                 ),
                 card,
                 this::executeEvent,
@@ -54,13 +53,15 @@ public class MiracleTrigger extends ThisDrawnTrigger {
                 card.getOwner(),
                 card,
                 this::executeTriggerEvent,
-                "PN reveals SN and casts it."
+                "PN reveals SN and casts it by paying " + game.modCost(card, manaCost) + "."
             )));
         }
     }
     private void executeTriggerEvent(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getRefCard();
-        if (card.isInHand()) {
+        final MagicEvent cost = new MagicPayManaCostEvent(card, game.modCost(card, manaCost));
+        if (card.isInHand() && cost.isSatisfied()) {
+            game.addCostEvent(cost);
             game.doAction(CastCardAction.WithoutManaCost(
                 event.getPlayer(),
                 card,
