@@ -6,7 +6,7 @@ type=Creature
 subtype=Kavu
 cost={3}{G}{G}
 pt=4/4
-ability=SN can't be countered.
+ability=SN can't be countered.;\
+        {G}: SN becomes the color of your choice until end of turn.
 timing=fmain
-requires_groovy_code=Spiritmonger
 oracle=Kavu Chameleon can't be countered.\n{G}: Kavu Chameleon becomes the color of your choice until end of turn.

@@ -7,7 +7,7 @@ subtype=Beast
 cost={3}{B}{G}
 pt=6/6
 ability=Whenever SN deals damage to a creature, put a +1/+1 counter on SN.;\
-        {B}: Regenerate SN.
+        {B}: Regenerate SN.;\
+        {G}: SN becomes the color of your choice until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Spiritmonger deals damage to a creature, put a +1/+1 counter on Spiritmonger.\n{B}: Regenerate Spiritmonger.\n{G}: Spiritmonger becomes the color of your choice until end of turn.

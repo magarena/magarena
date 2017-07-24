@@ -4,6 +4,6 @@ value=2.904
 rarity=R
 type=Artifact
 cost={4}
+ability={2}, {T}: Target permanent you control becomes the color of your choice.
 timing=artifact
-requires_groovy_code
 oracle={2}, {T}: Target permanent you control becomes the color of your choice.

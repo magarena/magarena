@@ -6,7 +6,7 @@ type=Creature
 subtype=Kavu
 cost={2}{R}
 pt=2/2
-ability={1}{B}: SN gets +1/+1 until end of turn.
+ability={1}{B}: SN gets +1/+1 until end of turn.;\
+        {G}: SN becomes the color of your choice until end of turn.
 timing=main
-requires_groovy_code=Spiritmonger
 oracle={1}{B}: Caldera Kavu gets +1/+1 until end of turn.\n{G}: Caldera Kavu becomes the color of your choice until end of turn.
