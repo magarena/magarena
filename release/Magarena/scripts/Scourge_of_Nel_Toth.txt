@@ -7,8 +7,7 @@ type=Creature
 subtype=Zombie,Dragon
 cost={5}{B}{B}
 pt=6/6
-ability=Flying;\
-        You may cast SN from your graveyard by paying {B}{B} and sacrificing two creatures rather than paying its mana cost.
+ability=Flying
 timing=main
 oracle=Flying\nYou may cast Scourge of Nel Toth from your graveyard by paying {B}{B} and sacrificing two creatures rather than paying its mana cost.
-status=needs groovy
+requires_groovy_code
