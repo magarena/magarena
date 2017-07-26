@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={4}{B}
-effect=Each opponent sacrifices an artifact creature and a nonartifact creature.
+effect=Each opponent sacrifices an artifact creature~and each opponent sacrifices a nonartifact creature.
 timing=removal
 oracle=Each opponent sacrifices an artifact creature and a nonartifact creature.
