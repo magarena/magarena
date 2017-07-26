@@ -37,7 +37,7 @@ public class MagicCrewCostEvent extends MagicEvent {
             game.doAction(new TapAction(it));
             final int n = event.getRefInt() - it.getPower();
             if (n > 0) {
-                game.addFirstEvent(new MagicCrewCostEvent(event.getSource(), n));
+                game.addNextCostEvent(new MagicCrewCostEvent(event.getSource(), n));
             }
         });
     };

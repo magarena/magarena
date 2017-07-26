@@ -31,6 +31,6 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
                 MagicLocationType.Graveyard,
                 MagicLocationType.Exile
             ));
-            game.addFirstEvent(new MagicPayManaCostEvent(event.getSource(), card.getCost()));
+            game.addNextCostEvent(new MagicPayManaCostEvent(event.getSource(), card.getCost()));
         });
 }

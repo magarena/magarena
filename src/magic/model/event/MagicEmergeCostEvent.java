@@ -29,7 +29,7 @@ public class MagicEmergeCostEvent extends MagicEvent {
         return (final MagicGame game, final MagicEvent event) ->
             event.processTargetPermanent(game, (final MagicPermanent permanent) -> {
                 game.doAction(new SacrificeAction(permanent));
-                game.addFirstEvent(new MagicPayManaCostEvent(event.getSource(), manaCost.reduce(permanent.getConvertedCost())));
+                game.addNextCostEvent(new MagicPayManaCostEvent(event.getSource(), manaCost.reduce(permanent.getConvertedCost())));
             });
     }
 }
