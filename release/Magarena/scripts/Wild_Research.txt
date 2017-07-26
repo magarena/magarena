@@ -4,8 +4,7 @@ value=3.839
 rarity=R
 type=Enchantment
 cost={2}{R}
-ability={1}{W}: Search your library for an enchantment card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.;\
-        {1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.
+ability={1}{W}: Search your library for an enchantment card, reveal it, and put it into your hand, then shuffle your library~and discard a card at random.;\
+        {1}{U}: Search your library for an instant card, reveal it, and put it into your hand, then shuffle your library~and discard a card at random.
 timing=enchantment
 oracle={1}{W}: Search your library for an enchantment card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.\n{1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.
-status=needs groovy
