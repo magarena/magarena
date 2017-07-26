@@ -5,6 +5,8 @@ public enum MagicPermanentState {
     Tapped("tapped", "{T}"),
     Summoned("summoned", "{n}"),
     DoesNotUntapDuringNext("doesn't untap during its controller's next untap step", "{s}"),
+    DoesNotUntapDuringNext0("doesn't untap during your next untap step", "{s}"),
+    DoesNotUntapDuringNext1("doesn't untap during your next untap step", "{s}"),
     Exerted("exerted", ""),
     Regenerated("regenerated", "{r}"),
     CannotBeRegenerated("can't be regenerated", "{~r}"),
@@ -33,6 +35,8 @@ public enum MagicPermanentState {
         Tapped.getMask()
             | Summoned.getMask()
             | DoesNotUntapDuringNext.getMask()
+            | DoesNotUntapDuringNext0.getMask()
+            | DoesNotUntapDuringNext1.getMask()
             | ExcludeManaSource.getMask()
             | ExcludeFromCombat.getMask()
             | MustPayEchoCost.getMask()

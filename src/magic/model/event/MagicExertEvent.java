@@ -20,9 +20,9 @@ public class MagicExertEvent extends MagicEvent {
             event.getPermanent(),
             MagicPermanentState.Exerted
         ));
-        game.doAction(ChangeStateAction.Set(
+        game.doAction(ChangeStateAction.DoesNotUntapDuringNext(
             event.getPermanent(),
-            MagicPermanentState.DoesNotUntapDuringNext
+            event.getPlayer()
         ));
     };
 }

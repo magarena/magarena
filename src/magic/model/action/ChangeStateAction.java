@@ -1,6 +1,7 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.trigger.MagicTriggerType;
@@ -14,6 +15,14 @@ public class ChangeStateAction extends MagicAction {
 
     public static ChangeStateAction Set(final MagicPermanent permanent,final MagicPermanentState state) {
         return new ChangeStateAction(permanent, state, true);
+    }
+
+    public static ChangeStateAction DoesNotUntapDuringNext(final MagicPermanent permanent, final MagicPlayer player) {
+        if (player.getIndex() == 0) {
+            return new ChangeStateAction(permanent, MagicPermanentState.DoesNotUntapDuringNext0, true);
+        } else {
+            return new ChangeStateAction(permanent, MagicPermanentState.DoesNotUntapDuringNext1, true);
+        }
     }
 
     public static ChangeStateAction Clear(final MagicPermanent permanent,final MagicPermanentState state) {

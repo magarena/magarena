@@ -1796,7 +1796,7 @@ public enum MagicRuleEventAction {
         }
     },
     Paralyze(
-        ARG.PERMANENTS + " doesn't untap during (your|its controller's) next untap step",
+        ARG.PERMANENTS + " doesn't untap during its controller's next untap step",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Tapping,
@@ -1811,6 +1811,23 @@ public enum MagicRuleEventAction {
                         it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
+                }
+            };
+        }
+    },
+    Exert(
+        ARG.PERMANENTS + " doesn't untap during your next untap step",
+        MagicTargetHint.Negative,
+        new MagicNoCombatTargetPicker(true, true, false),
+        MagicTiming.Tapping,
+        "Paralyze"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(ChangeStateAction.DoesNotUntapDuringNext(it, event.getPlayer()));
                 }
             };
         }

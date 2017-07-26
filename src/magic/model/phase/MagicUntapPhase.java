@@ -29,10 +29,30 @@ public class MagicUntapPhase extends MagicPhase {
                 game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.Summoned));
                 game.doAction(ChangeStateAction.Set(permanent,MagicPermanentState.MustPayEchoCost));
             }
+            boolean shouldUntap = true;
             if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
                 game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext));
-            } else if (permanent.isTapped() && !permanent.hasAbility(MagicAbility.DoesNotUntap)) {
+                shouldUntap = false;
+            }
+            if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext0) && player.getIndex() == 0) {
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext0));
+                shouldUntap = false;
+            }
+            if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext1) && player.getIndex() == 1) {
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext1));
+                shouldUntap = false;
+            }
+            if (shouldUntap && permanent.isTapped() && !permanent.hasAbility(MagicAbility.DoesNotUntap)) {
                 game.doAction(new UntapAction(permanent));
+            }
+        }
+
+        for (final MagicPermanent permanent : player.getOpponent().getPermanents()) {
+            if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext0) && player.getIndex() == 0) {
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext0));
+            }
+            if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext1) && player.getIndex() == 1) {
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.DoesNotUntapDuringNext1));
             }
         }
     }
