@@ -77,10 +77,10 @@ public class MagicEvent implements MagicCopyable {
     private final MagicEventAction action;
     private final String description;
     private final MagicCopyable ref;
+    private boolean isCost = false;
 
     private Object[] chosen;
     private MagicTarget chosenTarget;
-    private boolean isCost = false;
 
     public MagicEvent(
         final MagicSource source,
@@ -290,6 +290,7 @@ public class MagicEvent implements MagicCopyable {
         ref = copyMap.copy(sourceEvent.ref);
         action = sourceEvent.action;
         description = sourceEvent.description;
+        isCost = sourceEvent.isCost;
     }
 
     @Override
