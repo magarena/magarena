@@ -12,7 +12,7 @@ def A_NON_DEMON_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
 def EVENT_ACTION = {
     final MagicGame game, final MagicEvent event ->
     def amt = (event.getPlayer().getNrOfPermanents(NON_DEMON_PERMANENT_YOU_CONTROL) + 1).intdiv(2);
-    game.addEvent(new MagicRepeatedPermanentsEvent(
+    game.addEvent(new MagicRepeatedCostEvent(
         event.getSource(),
         event.getPlayer(),
         A_NON_DEMON_PERMANENT_YOU_CONTROL,

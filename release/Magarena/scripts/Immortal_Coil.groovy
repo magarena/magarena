@@ -29,7 +29,7 @@ def YouLoseGame = MagicRuleEventAction.create("You lose the game.");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicRepeatedCardsEvent(
+            game.addEvent(new MagicRepeatedCostEvent(
                 event.getSource(),
                 event.getPlayer(),
                 MagicTargetChoice.A_CARD_FROM_GRAVEYARD,

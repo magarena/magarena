@@ -17,7 +17,7 @@
                 final int lands = player.getNrOfPermanents(MagicType.Land);
                 if (lands >= 6) {
                     final int amount = player.getNrOfPermanents(MagicType.Land) - 5;
-                    game.addEvent(new MagicRepeatedPermanentsEvent(
+                    game.addEvent(new MagicRepeatedCostEvent(
                         event.getSource(),
                         SACRIFICE_LAND,
                         amount,

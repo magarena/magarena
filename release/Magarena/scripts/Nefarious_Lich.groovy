@@ -41,7 +41,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicEvent exile = new MagicRepeatedCardsEvent(
+            final MagicEvent exile = new MagicRepeatedCostEvent(
                 event.getSource(),
                 new MagicTargetChoice("a card from your graveyard"),
                 event.getRefInt(),

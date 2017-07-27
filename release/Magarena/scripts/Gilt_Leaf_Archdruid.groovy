@@ -16,7 +16,7 @@ def AN_UNTAPPED_DRUID_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_DRUID_YOU_CON
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicRepeatedPermanentsEvent(
+                new MagicRepeatedCostEvent(
                     source,
                     AN_UNTAPPED_DRUID_YOU_CONTROL,
                     7,

@@ -66,7 +66,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicEvent sac = new MagicRepeatedPermanentsEvent(
+            final MagicEvent sac = new MagicRepeatedCostEvent(
                 event.getSource(),
                 new MagicTargetChoice("a nontoken permanent to sacrifice"),
                 event.getRefInt(),

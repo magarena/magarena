@@ -18,6 +18,7 @@ import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetType;
+import magic.model.target.MagicTarget;
 
 public class MagicConditionFactory {
 
@@ -322,7 +323,7 @@ public class MagicConditionFactory {
         };
     }
 
-    public static MagicCondition YouHaveAtLeast(final MagicTargetFilter<MagicCard> filter, final int amt) {
+    public static MagicCondition YouHaveAtLeast(final MagicTargetFilter<? extends MagicTarget> filter, final int amt) {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {

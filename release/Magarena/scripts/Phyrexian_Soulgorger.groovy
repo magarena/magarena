@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.addEvent(new MagicRepeatedPermanentsEvent(
+                game.addEvent(new MagicRepeatedCostEvent(
                     event.getSource(),
                     SACRIFICE_CREATURE,
                     event.getPermanent().getCounters(MagicCounterType.Age),

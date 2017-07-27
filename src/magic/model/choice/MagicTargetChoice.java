@@ -414,6 +414,10 @@ public class MagicTargetChoice extends MagicChoice {
         return (MagicTargetFilter<MagicPermanent>)targetFilter;
     }
 
+    public final MagicTargetFilter<? extends MagicTarget> getFilter() {
+        return targetFilter;
+    }
+
     public final boolean isTargeted() {
         return targeted;
     }

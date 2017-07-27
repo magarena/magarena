@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice(UNTAPPED_HUMAN_YOU_CONTROL, "an untapped Huma
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{3}"),
-                new MagicRepeatedPermanentsEvent(source, choice, 3, MagicChainEventFactory.Tap)
+                new MagicRepeatedCostEvent(source, choice, 3, MagicChainEventFactory.Tap)
             ];
         }
 

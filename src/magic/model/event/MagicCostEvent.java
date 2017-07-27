@@ -41,7 +41,7 @@ public enum MagicCostEvent {
                 filter,
                 ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
             );
-            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Sac);
+            return new MagicRepeatedCostEvent(source, choice, amt, MagicChainEventFactory.Sac);
         }
     },
     BounceSelf("Return SN to its owner's hand") {
@@ -67,7 +67,7 @@ public enum MagicCostEvent {
                 filter,
                 ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
             );
-            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Bounce);
+            return new MagicRepeatedCostEvent(source, choice, amt, MagicChainEventFactory.Bounce);
         }
     },
     DiscardAll("Discard( all the cards in)? your hand") {
@@ -138,7 +138,7 @@ public enum MagicCostEvent {
                 filter,
                 ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
             );
-            return new MagicRepeatedCardsEvent(
+            return new MagicRepeatedCostEvent(
                 source,
                 choice,
                 amt,
@@ -159,7 +159,7 @@ public enum MagicCostEvent {
                 filter,
                 ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
             );
-            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.ExilePerm);
+            return new MagicRepeatedCostEvent(source, choice, amt, MagicChainEventFactory.ExilePerm);
         }
     },
     TapSelf("\\{T\\}") {
@@ -202,7 +202,7 @@ public enum MagicCostEvent {
                 new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
                 untapped;
             final MagicTargetChoice choice = new MagicTargetChoice(filter, "an untapped " + chosen);
-            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Tap);
+            return new MagicRepeatedCostEvent(source, choice, amt, MagicChainEventFactory.Tap);
         }
     },
     UntapMultiple("Untap (?<another>another )?(" + ARG.AMOUNT + " )?tapped " + ARG.ANY) {
@@ -215,7 +215,7 @@ public enum MagicCostEvent {
                 new MagicOtherPermanentTargetFilter(tapped, (MagicPermanent)source) :
                 tapped;
             final MagicTargetChoice choice = new MagicTargetChoice(filter, "a tapped " + chosen);
-            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Untap);
+            return new MagicRepeatedCostEvent(source, choice, amt, MagicChainEventFactory.Untap);
         }
     },
     PayLife("Pay " + ARG.NUMBER + " life") {

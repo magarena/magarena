@@ -24,7 +24,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicRepeatedPermanentsEvent(
+            game.addEvent(new MagicRepeatedCostEvent(
                 event.getSource(),
                 SACRIFICE_PERMANENT,
                 event.getRefInt(),
