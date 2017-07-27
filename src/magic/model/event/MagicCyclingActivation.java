@@ -44,24 +44,26 @@ public class MagicCyclingActivation extends MagicCardAbilityActivation {
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            (final MagicGame game, final MagicEvent event) -> {
-                final MagicCard card = event.getCard();
-                final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
-                    MagicCyclingActivation.this,
-                    getCardEvent(card, game.getPayedCost())
-                );
-                game.doAction(new PutItemOnStackAction(abilityOnStack));
-                game.executeTrigger(MagicTriggerType.WhenOtherCycle, card);
-                for (final MagicTrigger<MagicCard> trigger : card.getCardDefinition().getCycleTriggers()) {
-                    game.executeTrigger(
-                        trigger,
-                        MagicPermanent.NONE,
-                        card,
-                        card
-                    );
-                }
-            },
+            this::putOnStack,
             name + " SN."
         );
+    }
+
+    private void putOnStack(final MagicGame game, final MagicEvent event) {
+        final MagicCard card = event.getCard();
+        final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
+            this,
+            getCardEvent(card, game.getPayedCost())
+        );
+        game.doAction(new PutItemOnStackAction(abilityOnStack));
+        game.executeTrigger(MagicTriggerType.WhenOtherCycle, card);
+        for (final MagicTrigger<MagicCard> trigger : card.getCardDefinition().getCycleTriggers()) {
+            game.executeTrigger(
+                trigger,
+                MagicPermanent.NONE,
+                card,
+                card
+            );
+        }
     }
 }

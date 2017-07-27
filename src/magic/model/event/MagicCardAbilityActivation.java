@@ -38,15 +38,17 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            (final MagicGame game, final MagicEvent event) -> {
-                final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
-                    MagicCardAbilityActivation.this,
-                    getCardEvent(event.getCard(), game.getPayedCost())
-                );
-                game.doAction(new PutItemOnStackAction(abilityOnStack));
-            },
+            this::putOnStack,
             "Play activated ability of SN."
         );
+    }
+
+    private void putOnStack(final MagicGame game, final MagicEvent event) {
+        final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
+            this,
+            getCardEvent(event.getCard(), game.getPayedCost())
+        );
+        game.doAction(new PutItemOnStackAction(abilityOnStack));
     }
 
     @Override
