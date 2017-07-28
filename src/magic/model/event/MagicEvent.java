@@ -343,6 +343,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicCounterType)ref;
     }
 
+    public final MagicManaCost getRefManaCost() {
+        return (MagicManaCost)ref;
+    }
+
     public final MagicTuple getRefTuple() {
         return (MagicTuple)ref;
     }

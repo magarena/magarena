@@ -14,7 +14,7 @@ import magic.model.choice.MagicBuilderManaCost;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicManaCostCondition;
 
-public class MagicManaCost {
+public class MagicManaCost implements MagicCopyable {
 
     private static final Map<String,MagicManaCost> COSTS_MAP=new HashMap<>();
     private static final Map<String,MagicCondition> CONDS_MAP=new HashMap<>();
