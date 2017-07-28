@@ -5,6 +5,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicMappable;
 import magic.model.MagicCopyable;
 
+// need MagicCopyable as it can be stored on the stack
 public interface MagicPayManaCostResult extends MagicCopyable, MagicMappable<MagicPayManaCostResult> {
 
     int getX();

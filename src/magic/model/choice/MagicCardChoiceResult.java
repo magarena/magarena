@@ -10,6 +10,7 @@ import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MurmurHash3;
 
+// need MagicCopyable as it can be stored on the stack
 @SuppressWarnings("serial")
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicCopyable, MagicMappable<MagicCardChoiceResult> {
 
