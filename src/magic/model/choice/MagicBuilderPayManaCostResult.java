@@ -50,6 +50,11 @@ public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult, Co
     }
 
     @Override
+    public MagicBuilderPayManaCostResult copy(final MagicCopyMap copyMap) {
+        return new MagicBuilderPayManaCostResult(copyMap, this);
+    }
+
+    @Override
     public MagicBuilderPayManaCostResult map(final MagicGame game) {
         final MagicBuilderPayManaCostResult result=new MagicBuilderPayManaCostResult();
         result.results=new MagicSourceManaActivationResult[results.length];

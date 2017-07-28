@@ -11,7 +11,7 @@ import magic.model.MagicMappable;
 import magic.model.MurmurHash3;
 
 @SuppressWarnings("serial")
-public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable<MagicCardChoiceResult> {
+public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicCopyable, MagicMappable<MagicCardChoiceResult> {
 
     MagicCardChoiceResult(final MagicCard[] cards) {
         for (final MagicCard card : cards) {
@@ -22,6 +22,17 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
     }
 
     MagicCardChoiceResult() {}
+
+    private MagicCardChoiceResult(final MagicCopyMap copyMap, final List<MagicCard> cardList) {
+        for (final MagicCard card : cardList) {
+            add(copyMap.copy(card));
+        }
+    }
+
+    @Override
+    public MagicCardChoiceResult copy(final MagicCopyMap copyMap) {
+        return new MagicCardChoiceResult(copyMap, this);
+    }
 
     @Override
     public MagicCardChoiceResult map(final MagicGame game) {

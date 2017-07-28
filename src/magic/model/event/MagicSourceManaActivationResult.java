@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
 
-public class MagicSourceManaActivationResult implements MagicMappable<MagicSourceManaActivationResult> {
+public class MagicSourceManaActivationResult implements MagicCopyable, MagicMappable<MagicSourceManaActivationResult> {
 
     private final MagicPermanent permanent;
     private final MagicManaActivation activation;
@@ -14,6 +14,11 @@ public class MagicSourceManaActivationResult implements MagicMappable<MagicSourc
     public MagicSourceManaActivationResult(final MagicPermanent permanent,final MagicManaActivation activation) {
         this.permanent=permanent;
         this.activation=activation;
+    }
+
+    @Override
+    public MagicSourceManaActivationResult copy(final MagicCopyMap copyMap) {
+        return new MagicSourceManaActivationResult(copyMap.copy(permanent), activation);
     }
 
     @Override

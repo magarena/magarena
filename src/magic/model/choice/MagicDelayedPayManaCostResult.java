@@ -46,6 +46,11 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
     }
 
     @Override
+    public MagicDelayedPayManaCostResult copy(final MagicCopyMap copyMap) {
+        return this;
+    }
+
+    @Override
     public MagicDelayedPayManaCostResult map(final MagicGame game) {
         return this;
     }
