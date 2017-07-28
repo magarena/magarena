@@ -31,7 +31,7 @@ public class MagicTuple implements MagicCopyable {
     public long getStateId() {
         final long[] keys = new long[tuple.length];
         for (int i = 0; i < tuple.length; i++) {
-            keys[i] = tuple[i].getStateId();
+            keys[i] = MagicObjectImpl.getStateId(tuple[i]);
         }
         return MurmurHash3.hash(keys);
     }

@@ -759,7 +759,7 @@ public class MagicEvent implements MagicCopyable {
             targetPicker.hashCode(),
             action.hashCode(),
             description.hashCode(),
-            ref.getStateId(),
+            MagicObjectImpl.getStateId(ref),
             isCost ? 1L : -1L,
         });
     }
