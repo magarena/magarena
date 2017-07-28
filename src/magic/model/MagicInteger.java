@@ -13,7 +13,7 @@ public class MagicInteger implements MagicCopyable {
     }
 
     @Override
-    public long getStateId() {
+    public int hashCode() {
         return value;
     }
 

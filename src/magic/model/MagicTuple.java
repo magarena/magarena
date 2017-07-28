@@ -34,7 +34,7 @@ public class MagicTuple implements MagicCopyable {
     }
 
     @Override
-    public long getStateId() {
+    public int hashCode() {
         final long[] keys = new long[tuple.length];
         for (int i = 0; i < tuple.length; i++) {
             keys[i] = MagicObjectImpl.getStateId(tuple[i]);

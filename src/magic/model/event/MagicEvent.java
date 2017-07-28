@@ -753,7 +753,6 @@ public class MagicEvent implements MagicCopyable {
         return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
-    @Override
     public long getStateId() {
         return MurmurHash3.hash(new long[] {
             //don't call getStateId if source is MagicItemOnStack to avoid infinite loop

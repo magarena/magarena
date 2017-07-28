@@ -25,5 +25,6 @@ public interface MagicObject extends MagicCopyable {
     boolean     isFriend(final MagicObject other);
     boolean     isEnemy(final MagicObject other);
     long        getId();
+    long        getStateId();
     MagicCardDefinition getCardDefinition();
 }
