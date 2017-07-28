@@ -1,6 +1,6 @@
 package magic.model;
 
-public enum MagicLocationType {
+public enum MagicLocationType implements MagicCopyable {
     Stack,
     Battlefield,
     OwnersHand("your hand"),
