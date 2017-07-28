@@ -41,7 +41,7 @@ public class MagicPutCounterEvent extends MagicEvent {
     public static final MagicEvent Self(final MagicSource source, final MagicCounterType type, final int amount) {
         return new MagicEvent(
             source,
-            amount,
+            new MagicTuple(amount, type),
             EventAction,
             "PN puts " + amount + " " + type.getName() + " counters on SN."
         );
