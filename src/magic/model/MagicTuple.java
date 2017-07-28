@@ -6,12 +6,17 @@ public class MagicTuple implements MagicCopyable {
 
     final MagicCopyable[] tuple;
 
+    public MagicTuple(final int x, final int y, final MagicCopyable... args) {
+        tuple = new MagicCopyable[args.length + 2];
+        tuple[0] = new MagicInteger(x);
+        tuple[1] = new MagicInteger(y);
+        System.arraycopy(args, 0, tuple, 2, args.length);
+    }
+
     public MagicTuple(final int n, final MagicCopyable... args) {
         tuple = new MagicCopyable[args.length + 1];
         tuple[0] = new MagicInteger(n);
-        for (int i = 1; i < tuple.length; i++) {
-            tuple[i] = args[i - 1];
-        }
+        System.arraycopy(args, 0, tuple, 1, args.length);
     }
 
     public MagicTuple(final MagicCopyable... args) {
@@ -46,6 +51,10 @@ public class MagicTuple implements MagicCopyable {
 
     public final MagicCounterType getCounterType(int i) {
         return (MagicCounterType)tuple[i];
+    }
+
+    public final MagicPlayer getPlayer(int i) {
+        return (MagicPlayer)tuple[i];
     }
 
     public final int getInt(int i) {
