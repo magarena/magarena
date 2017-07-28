@@ -61,8 +61,8 @@ public abstract class MagicObjectImpl implements MagicObject {
             return -1L;
         } else if (obj instanceof MagicPlayer) {
             return ((MagicPlayer)obj).getId();
-        } else if (obj instanceof MagicCopyable) {
-            return ((MagicCopyable)obj).getStateId();
+        } else if (obj instanceof MagicObject) {
+            return ((MagicObject)obj).getStateId();
         } else if (obj instanceof MagicMappable) {
             return ((MagicMappable)obj).getId();
         } else {
