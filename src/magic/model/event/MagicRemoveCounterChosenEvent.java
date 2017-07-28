@@ -12,8 +12,6 @@ import magic.model.target.MagicTargetFilterFactory.Control;
 
 public class MagicRemoveCounterChosenEvent extends MagicEvent {
 
-    final MagicCounterType ctype;
-
     public MagicRemoveCounterChosenEvent(final MagicSource source, final MagicCounterType counterType) {
         super(
             source,
@@ -21,28 +19,19 @@ public class MagicRemoveCounterChosenEvent extends MagicEvent {
                 MagicTargetFilterFactory.creature(counterType, Control.You),
                 "a creature you control with a " + counterType.getName() + " counter on it"
             ),
+            counterType,
             EventAction,
             "Remove a " + counterType.getName() + " counter from a creature$ you control."
         );
-        ctype = counterType;
     }
 
     private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
-        final MagicCounterType ctype = ((MagicRemoveCounterChosenEvent)event).ctype;
         event.processTargetPermanent(game, (final MagicPermanent perm) ->
             game.doAction(new ChangeCountersAction(
                 perm,
-                ctype,
+                event.getRefCounterType(),
                 -1
             ))
         );
     };
-
-    @Override
-    public MagicEvent copy(final MagicCopyMap copyMap) {
-        return new MagicRemoveCounterChosenEvent(
-            copyMap.copy(getSource()),
-            ctype
-        );
-    }
 }

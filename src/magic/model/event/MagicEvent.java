@@ -339,6 +339,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicTarget)ref;
     }
 
+    public final MagicCounterType getRefCounterType() {
+        return (MagicCounterType)ref;
+    }
+
     public final MagicTuple getRefTuple() {
         return (MagicTuple)ref;
     }
