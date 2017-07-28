@@ -10,7 +10,7 @@ import magic.model.target.MagicTargetPicker;
 
 import java.util.regex.Matcher;
 
-public class MagicSourceEvent {
+public class MagicSourceEvent implements MagicCopyable {
     private final MagicRuleEventAction rule;
     private final Matcher matcher;
     private final MagicCondition ifCond;

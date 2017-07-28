@@ -1,9 +1,10 @@
 package magic.model.event;
 
 import magic.model.MagicSource;
+import magic.model.MagicCopyable;
 import magic.model.choice.MagicTargetChoice;
 
-public abstract class MagicChainEventFactory {
+public abstract class MagicChainEventFactory implements MagicCopyable {
 
     abstract public MagicEvent getEvent(final MagicSource source, final MagicTargetChoice tchoice);
     public MagicEvent getEvent(final MagicEvent event) {

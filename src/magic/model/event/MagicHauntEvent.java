@@ -15,8 +15,6 @@ import magic.model.trigger.ThisDiesTrigger;
 
 public class MagicHauntEvent extends MagicEvent {
 
-    final MagicSourceEvent effect;
-
     public MagicHauntEvent(final MagicPermanent permanent, final MagicSourceEvent effect) {
         this(permanent.getCard(), permanent.getController(), effect);
     }
@@ -25,19 +23,19 @@ public class MagicHauntEvent extends MagicEvent {
         this(cardOnStack.getCard(), cardOnStack.getController(), effect);
     }
 
-    private MagicHauntEvent(final MagicCard card, final MagicPlayer player, final MagicSourceEvent aEffect) {
+    private MagicHauntEvent(final MagicCard card, final MagicPlayer player, final MagicSourceEvent effect) {
         super(
             card,
             player,
             MagicTargetChoice.TARGET_CREATURE,
+            effect,
             EVENT_ACTION,
             "Exile SN haunting target creature$."
         );
-        effect = aEffect;
     }
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        final MagicSourceEvent effect = ((MagicHauntEvent)event).effect;
+        final MagicSourceEvent effect = event.getRefSourceEvent();
         final MagicCard card = event.getCard();
         if (card.isInGraveyard()) {
             event.processTargetPermanent(game, creatureToHaunt -> {
@@ -51,13 +49,4 @@ public class MagicHauntEvent extends MagicEvent {
             });
         }
     };
-
-    @Override
-    public MagicEvent copy(final MagicCopyMap copyMap) {
-        return new MagicHauntEvent(
-            copyMap.copy(getCard()),
-            copyMap.copy(getPlayer()),
-            effect
-        );
-    }
 }

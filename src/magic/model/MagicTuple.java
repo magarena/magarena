@@ -1,6 +1,7 @@
 package magic.model;
 
 import magic.model.stack.MagicItemOnStack;
+import magic.model.event.MagicChainEventFactory;
 
 public class MagicTuple implements MagicCopyable {
 
@@ -51,6 +52,10 @@ public class MagicTuple implements MagicCopyable {
 
     public final MagicCounterType getCounterType(int i) {
         return (MagicCounterType)tuple[i];
+    }
+
+    public final MagicChainEventFactory getChainEventFactory(int i) {
+        return (MagicChainEventFactory)tuple[i];
     }
 
     public final MagicPlayer getPlayer(int i) {

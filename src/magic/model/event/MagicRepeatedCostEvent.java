@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.MagicCopyMap;
+import magic.model.MagicTuple;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -11,13 +12,14 @@ import magic.model.condition.MagicConditionFactory;
 public class MagicRepeatedCostEvent extends MagicEvent {
 
     private final MagicCondition cond;
-    private final MagicChainEventFactory factory;
 
     private static final MagicEventAction action = (final MagicGame game, final MagicEvent event) -> {
-        final MagicChainEventFactory factory = ((MagicRepeatedCostEvent)event).factory;
+        final MagicTuple tup = event.getRefTuple();
+        final MagicChainEventFactory factory = tup.getChainEventFactory(1);
         final MagicEvent ev = factory.getEvent(event);
         ev.executeEvent(game, event.getChosen());
-        for (int i = 0; i < event.getRefInt(); i++) {
+        final int amt = tup.getInt(0);
+        for (int i = 0; i < amt; i++) {
             game.addNextCostEvent(ev);
         }
     };
@@ -26,17 +28,16 @@ public class MagicRepeatedCostEvent extends MagicEvent {
         this(source, source.getController(), targetChoice, amt, factory);
     }
 
-    public MagicRepeatedCostEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice, final int amt, final MagicChainEventFactory aFactory) {
+    public MagicRepeatedCostEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice, final int amt, final MagicChainEventFactory factory) {
         super(
             source,
             player,
             targetChoice,
-            amt - 1,
+            new MagicTuple(amt - 1, factory),
             action,
-            aFactory.getEvent(source, targetChoice).getDescription()
+            factory.getEvent(source, targetChoice).getDescription()
         );
         cond = MagicConditionFactory.YouHaveAtLeast(targetChoice.getFilter(), amt);
-        factory = aFactory;
     }
 
     @Override
@@ -46,12 +47,13 @@ public class MagicRepeatedCostEvent extends MagicEvent {
 
     @Override
     public MagicEvent copy(final MagicCopyMap copyMap) {
+        final MagicTuple tup = getRefTuple();
         return new MagicRepeatedCostEvent(
             copyMap.copy(getSource()),
             copyMap.copy(getPlayer()),
             getTargetChoice(),
-            getRefInt(),
-            factory
+            tup.getInt(0),
+            tup.getChainEventFactory(1)
         );
     }
 }

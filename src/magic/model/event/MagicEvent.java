@@ -359,6 +359,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicPayedCost)ref;
     }
 
+    public final MagicSourceEvent getRefSourceEvent() {
+        return (MagicSourceEvent)ref;
+    }
+
     public final MagicCard getCard() {
         return (MagicCard)source;
     }
