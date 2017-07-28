@@ -3,7 +3,6 @@ package magic.model.event;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicCopyMap;
-import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
@@ -22,7 +21,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
+public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition {
 
     public MagicPermanentActivation(final MagicActivationHints hints, final String txt) {
         super(MagicActivation.NO_COND,hints,txt);
@@ -41,8 +40,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            this,
-            EVENT_ACTION,
+            this::putOnStack,
             "Play activated ability of SN."
         );
     }
@@ -81,21 +79,15 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         return canPlay;
     }
 
-    @Override
-    public MagicCopyable copy(final MagicCopyMap copyMap) {
-        return this;
-    }
-
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        final MagicPermanentActivation permanentActivation = event.getRefPermanentActivation();
+    private void putOnStack(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
-            permanentActivation,
+            this,
             permanent,
             game.getPayedCost()
         );
         game.doAction(new PutItemOnStackAction(abilityOnStack));
-    };
+    }
 
     @Override
     public final MagicChoice getChoice(final MagicPermanent source) {

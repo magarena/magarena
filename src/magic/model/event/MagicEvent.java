@@ -362,10 +362,6 @@ public class MagicEvent implements MagicCopyable {
         return (MagicTarget)ref;
     }
 
-    public final MagicPermanentActivation getRefPermanentActivation() {
-        return (MagicPermanentActivation)ref;
-    }
-
     public final int getRefInt() {
         return ((MagicInteger)ref).value;
     }
