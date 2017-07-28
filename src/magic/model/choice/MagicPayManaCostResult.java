@@ -5,7 +5,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicMappable;
 import magic.model.MagicCopyable;
 
-public interface MagicPayManaCostResult extends MagicCopyable, MagicMappable<MagicPayManaCostResult> {
+public interface MagicPayManaCostResult extends MagicMappable<MagicPayManaCostResult> {
 
     int getX();
 

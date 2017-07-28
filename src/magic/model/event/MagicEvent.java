@@ -45,7 +45,7 @@ public class MagicEvent implements MagicCopyable {
         }
 
         @Override
-        public int hashCode() {
+        public long getStateId() {
             return value;
         }
 
@@ -760,6 +760,7 @@ public class MagicEvent implements MagicCopyable {
         return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
+    @Override
     public long getStateId() {
         return MurmurHash3.hash(new long[] {
             //don't call getStateId if source is MagicItemOnStack to avoid infinite loop
@@ -769,7 +770,7 @@ public class MagicEvent implements MagicCopyable {
             targetPicker.hashCode(),
             action.hashCode(),
             description.hashCode(),
-            MagicObjectImpl.getStateId(ref),
+            ref.getStateId(),
             isCost ? 1L : -1L,
         });
     }

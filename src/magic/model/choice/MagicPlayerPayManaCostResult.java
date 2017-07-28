@@ -35,11 +35,6 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
     }
 
     @Override
-    public MagicPlayerPayManaCostResult copy(final MagicCopyMap copyMap) {
-        return this;
-    }
-
-    @Override
     public MagicPlayerPayManaCostResult map(final MagicGame game) {
         return this;
     }
