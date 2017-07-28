@@ -1,3 +1,13 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    final MagicTuple tup = event.getRefTuple();
+    game.doAction(new DealDamageAction(
+        event.getSource(),
+        tup.getPermanent(1),
+        tup.getInt(0)
+    ));
+}
+
 [
     new DamageIsDealtTrigger() {
         @Override
@@ -7,12 +17,9 @@
             return damage.isSource(enchantedCreature) ?
                 new MagicEvent(
                     permanent,
-                    enchantedCreature,
-                    {
-                        final MagicGame G, final MagicEvent E ->
-                        G.doAction(new DealDamageAction(E.getSource(),E.getRefPermanent(),amount));
-                    },
-                    "SN deals ${amount} damage to RN."
+                    new MagicTuple(amount, enchantedCreature),
+                    action,
+                    "SN deals ${amount} damage to ${enchantedCreature}."
                 ):
                 MagicEvent.NONE;
         }

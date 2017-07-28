@@ -1,3 +1,20 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    final MagicColor color = event.getChosenColor();
+    final MagicTuple tup = event.getRefTuple();
+    final MagicPlayer player = tup.getPlayer(1);
+    final int X = tup.getInt(0);
+    for (final MagicCard card : player.getLibrary().getCardsFromTop(X)) {
+        game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+        if (card.hasColor(color)) {
+            game.doAction(new PlayTokenAction(
+                event.getPlayer(),
+                CardDefinitions.getToken("1/1 black Faerie Rogue creature token with flying")
+            ));
+        }
+    }
+}
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
@@ -22,27 +39,13 @@
         }
 
         @Override
-        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            final int X = outerEvent.getRefInt();
-            outerEvent.processTargetPlayer(outerGame, {
-                outerGame.addEvent(new MagicEvent(
-                    outerEvent.getSource(),
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPlayer(game, {
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
                     MagicColorChoice.ALL_INSTANCE,
-                    it,
-                    {
-                        final MagicGame game, final MagicEvent event ->
-                        final MagicColor color = event.getChosenColor();
-                        final MagicPlayer player = event.getRefPlayer();
-                        for (final MagicCard card : player.getLibrary().getCardsFromTop(X)) {
-                            game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
-                            if (card.hasColor(color)) {
-                                game.doAction(new PlayTokenAction(
-                                    event.getPlayer(),
-                                    CardDefinitions.getToken("1/1 black Faerie Rogue creature token with flying")
-                                ));
-                            }
-                        }
-                    },
+                    new MagicTuple(event.getRefInt(), it),
+                    action,
                     "Chosen color\$."
                 ));
             });
