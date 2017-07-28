@@ -32,29 +32,6 @@ public class MagicEvent implements MagicCopyable {
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
     public static final MagicCopyable NO_REF = new MagicInteger(-1);
 
-    static class MagicInteger implements MagicCopyable {
-        public final int value;
-
-        public MagicInteger(final int v) {
-            value = v;
-        }
-
-        @Override
-        public MagicCopyable copy(final MagicCopyMap copyMap) {
-            return this;
-        }
-
-        @Override
-        public long getStateId() {
-            return value;
-        }
-
-        @Override
-        public String toString() {
-            return Integer.toString(value);
-        }
-    }
-
     public static final MagicEvent NONE = new MagicEvent(MagicSource.NONE, MagicPlayer.NONE, NO_REF, MagicEventAction.NONE, "") {
         @Override
         public boolean isValid() {
@@ -360,6 +337,10 @@ public class MagicEvent implements MagicCopyable {
 
     public final MagicTarget getRefTarget() {
         return (MagicTarget)ref;
+    }
+
+    public final MagicTuple getRefTuple() {
+        return (MagicTuple)ref;
     }
 
     public final int getRefInt() {
