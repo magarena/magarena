@@ -16,29 +16,26 @@ import java.util.List;
 public class MagicTutorTopEvent {
 
     private static final MagicEventAction TakeCard(final int reveal, final MagicLocationType rest) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                if (reveal > 1) {
-                    game.doAction(new RevealAction(event.getRefCardList()));
+        return (final MagicGame game, final MagicEvent event) -> {
+            if (reveal > 1) {
+                game.doAction(new RevealAction(event.getRefCardList()));
+            }
+            event.processChosenCards(game, (final MagicCard chosen) -> {
+                if (reveal == 1) {
+                    game.doAction(new RevealAction(chosen));
                 }
-                event.processChosenCards(game, (final MagicCard chosen) -> {
-                    if (reveal == 1) {
-                        game.doAction(new RevealAction(chosen));
-                    }
-                    game.doAction(new ShiftCardAction(
-                        chosen,
-                        MagicLocationType.OwnersLibrary,
-                        MagicLocationType.OwnersHand
-                    ));
-                });
-                for (final MagicCard card : event.getRefCardList()) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.OwnersLibrary,
-                        rest
-                    ));
-                }
+                game.doAction(new ShiftCardAction(
+                    chosen,
+                    MagicLocationType.OwnersLibrary,
+                    MagicLocationType.OwnersHand
+                ));
+            });
+            for (final MagicCard card : event.getRefCardList()) {
+                game.doAction(new ShiftCardAction(
+                    card,
+                    MagicLocationType.OwnersLibrary,
+                    rest
+                ));
             }
         };
     }
