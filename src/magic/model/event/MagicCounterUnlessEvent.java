@@ -5,6 +5,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicMessage;
 import magic.model.MagicSource;
+import magic.model.MagicTuple;
 import magic.model.action.CounterItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
@@ -24,15 +25,8 @@ public class MagicCounterUnlessEvent extends MagicEvent {
                 "Pay "+cost.getText()+"?",
                 new MagicPayManaCostChoice(cost)
             ),
-            itemOnStack,
-            (final MagicGame game, final MagicEvent event) -> {
-                if (event.isNo()) {
-                    game.doAction(new CounterItemOnStackAction(
-                        event.getRefItemOnStack(),
-                        toLocation
-                    ));
-                }
-            },
+            new MagicTuple(itemOnStack, toLocation),
+            EventAction,
             MagicMessage.format(
                 "You may$ pay %s$. If you don't, counter %s.",
                 cost.getText(),
@@ -40,4 +34,14 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             )
         );
     }
+
+    private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
+        if (event.isNo()) {
+            final MagicTuple tup = event.getRefTuple();
+            game.doAction(new CounterItemOnStackAction(
+                tup.getItemOnStack(0),
+                tup.getLocationType(1)
+            ));
+        }
+    };
 }
