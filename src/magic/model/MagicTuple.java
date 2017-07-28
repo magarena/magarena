@@ -66,6 +66,10 @@ public class MagicTuple implements MagicCopyable {
         return (MagicPermanent)tuple[i];
     }
 
+    public final MagicCard getCard(int i) {
+        return (MagicCard)tuple[i];
+    }
+
     public final int getInt(int i) {
         return ((MagicInteger)tuple[i]).value;
     }

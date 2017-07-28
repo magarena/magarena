@@ -1,3 +1,14 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    final MagicTuple tup = event.getRefTuple();
+    if (event.isYes()) {
+        game.doAction(new MoveCardAction(tup.getCard(0), tup.getLocationType(1), MagicLocationType.TopOfOwnersLibrary));
+    } else {
+        //needs to be delayed so it occurs after trigger is remove
+        game.addDelayedAction(new MoveCardAction(tup.getCard(0), tup.getLocationType(1), MagicLocationType.Graveyard));
+    }
+}
+
 def PulmonicTrigger = new WouldBeMovedTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
@@ -8,22 +19,14 @@ def PulmonicTrigger = new WouldBeMovedTrigger() {
             game.addEvent(new MagicEvent(
                 permanent,
                 new MagicMayChoice("Put ${permanent} on top of its owner's library?"),
-                act.card,
-                {
-                    final MagicGame G, final MagicEvent E ->
-                    if (E.isYes()) {
-                        G.doAction(new MoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.TopOfOwnersLibrary));
-                    } else {
-                        //needs to be delayed so it occurs after trigger is remove
-                        G.addDelayedAction(new MoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.Graveyard));
-                    }
-                },
+                new MagicTuple(act.card, act.fromLocation),
+                action,
                 "PN may\$ put SN on top of its owner's library."
             ));
         }
         return MagicEvent.NONE;
     }
-};
+}
 
 [
     new MagicStatic(MagicLayer.Ability, SLIVER) {
