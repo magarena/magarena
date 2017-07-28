@@ -38,4 +38,9 @@ public class MagicSourceManaActivationResult implements MagicCopyable, MagicMapp
     public long getId() {
         return permanent.getId() * 31 + activation.hashCode();
     }
+
+    @Override
+    public long getStateId() {
+        return permanent.getStateId() ^ activation.hashCode();
+    }
 }

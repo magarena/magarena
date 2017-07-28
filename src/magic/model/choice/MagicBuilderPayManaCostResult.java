@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
+import magic.model.MurmurHash3;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.event.MagicSourceManaActivationResult;
 
@@ -151,5 +152,20 @@ public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult, Co
     @Override
     public long getId() {
         return hashCode;
+    }
+
+    @Override
+    public long getStateId() {
+        final long[] keys = new long[results.length + 4];
+        keys[0] = weight;
+        keys[1] = count;
+        keys[2] = x;
+        keys[3] = hashCode;
+        int idx = 4;
+        for (final MagicSourceManaActivationResult res : results) {
+            keys[idx] = res.getStateId();
+            idx++;
+        }
+        return MurmurHash3.hash(keys);
     }
 }

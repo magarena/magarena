@@ -66,4 +66,9 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
         }
         return MurmurHash3.hash(keys);
     }
+
+    @Override
+    public long getStateId() {
+        return getId();
+    }
 }
