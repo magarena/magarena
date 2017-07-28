@@ -5,6 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicCopyMap;
 import magic.model.action.AddTriggerAction;
 import magic.model.action.MoveCardAction;
 import magic.model.action.RemoveCardAction;
@@ -14,6 +15,8 @@ import magic.model.trigger.ThisDiesTrigger;
 
 public class MagicHauntEvent extends MagicEvent {
 
+    final MagicSourceEvent effect;
+
     public MagicHauntEvent(final MagicPermanent permanent, final MagicSourceEvent effect) {
         this(permanent.getCard(), permanent.getController(), effect);
     }
@@ -22,30 +25,39 @@ public class MagicHauntEvent extends MagicEvent {
         this(cardOnStack.getCard(), cardOnStack.getController(), effect);
     }
 
-    private MagicHauntEvent(final MagicCard card, final MagicPlayer player, final MagicSourceEvent effect) {
+    private MagicHauntEvent(final MagicCard card, final MagicPlayer player, final MagicSourceEvent aEffect) {
         super(
             card,
             player,
             MagicTargetChoice.TARGET_CREATURE,
-            EVENT_ACTION(effect),
+            EVENT_ACTION,
             "Exile SN haunting target creature$."
         );
+        effect = aEffect;
     }
 
-    private static final MagicEventAction EVENT_ACTION(final MagicSourceEvent effect) {
-        return (final MagicGame game, final MagicEvent event) -> {
-            final MagicCard card = event.getCard();
-            if (card.isInGraveyard()) {
-                event.processTargetPermanent(game, creatureToHaunt -> {
-                    // only exile if valid target
-                    game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
-                    game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
-                    game.doAction(new AddTriggerAction(
-                        creatureToHaunt,
-                        ThisDiesTrigger.createDelayed(card, event.getPlayer(), effect)
-                    ));
-                });
-            }
-        };
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicSourceEvent effect = ((MagicHauntEvent)event).effect;
+        final MagicCard card = event.getCard();
+        if (card.isInGraveyard()) {
+            event.processTargetPermanent(game, creatureToHaunt -> {
+                // only exile if valid target
+                game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
+                game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                game.doAction(new AddTriggerAction(
+                    creatureToHaunt,
+                    ThisDiesTrigger.createDelayed(card, event.getPlayer(), effect)
+                ));
+            });
+        }
+    };
+
+    @Override
+    public MagicEvent copy(final MagicCopyMap copyMap) {
+        return new MagicHauntEvent(
+            copyMap.copy(getCard()),
+            copyMap.copy(getPlayer()),
+            effect
+        );
     }
 }
