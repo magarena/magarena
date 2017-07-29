@@ -71,6 +71,10 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         return isUntilEOT;
     }
 
+    public long getStateId() {
+        return hashCode();
+    }
+
     public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         if (filter == MagicTargetFilterFactory.NONE) {
             return source == target && condition(game, source, target);

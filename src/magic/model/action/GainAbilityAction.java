@@ -4,6 +4,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MurmurHash3;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
@@ -54,6 +55,14 @@ public class GainAbilityAction extends MagicAction {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 abilityList.giveAbility(permanent, flags);
+            }
+            @Override
+            public long getStateId() {
+                return MurmurHash3.hash(new long[] {
+                    MagicLayer.Ability.ordinal(),
+                    duration ? -1L : 1L,
+                    abilityList.hashCode(),
+                });
             }
         }));
     }

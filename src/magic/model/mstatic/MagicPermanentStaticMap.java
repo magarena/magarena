@@ -116,7 +116,7 @@ public class MagicPermanentStaticMap {
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             for (final MagicPermanentStatic mpstatic : layer.getValue()) {
                 keys[idx] = mpstatic.getPermanent().getStateId(); idx++;
-                keys[idx] = mpstatic.getStatic().hashCode(); idx++;
+                keys[idx] = mpstatic.getStatic().getStateId(); idx++;
             }
         }
         return MurmurHash3.hash(keys);

@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
+import magic.model.MurmurHash3;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
@@ -26,6 +27,15 @@ public class ChangeTurnPTAction extends MagicAction {
                 @Override
                 public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
                     pt.add(power, toughness);
+                }
+                @Override
+                public long getStateId() {
+                    return MurmurHash3.hash(new long[] {
+                        MagicLayer.ModPT.ordinal(),
+                        MagicStatic.UntilEOT ? -1L : 1L,
+                        power,
+                        toughness
+                    });
                 }
             }
         ));
