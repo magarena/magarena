@@ -111,6 +111,7 @@ public class MagicGame {
     private boolean fastMana = false;
     private boolean fastTarget = false;
     private boolean fastBlocker = false;
+    private boolean fastGameplay = false;
     private boolean hintTiming = true;
     private boolean hintPriority = true;
     private boolean hintTarget = true;
@@ -388,10 +389,19 @@ public class MagicGame {
         fastBlocker = v;
     }
 
+    public boolean getFastGameplay() {
+        return fastGameplay;
+    }
+
+    public void setFastGameplay(final boolean v) {
+        fastGameplay = v;
+    }
+
     public void setFastChoices(final boolean v) {
         fastMana = v;
         fastTarget = v;
         fastBlocker = v;
+        fastGameplay = v;
     }
 
     public boolean getHintTiming() {
@@ -514,7 +524,7 @@ public class MagicGame {
 
     /** Tells gameplay that it can skip certain parts during AI processing. */
     public boolean canSkip() {
-        return stack.isEmpty() && artificial;
+        return stack.isEmpty() && artificial && fastGameplay;
     }
 
     public boolean isFinished() {

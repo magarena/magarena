@@ -73,9 +73,7 @@ public class MMAB extends MagicAI {
             if (DECKSTR) {
                 workerGame.setMainPhases(artificialLevel);
             }
-            workerGame.setFastMana(true);
-            workerGame.setFastTarget(true);
-            workerGame.setFastBlocker(true);
+            workerGame.setFastChoices(true);
 
             executor.execute(new Runnable() {
                 @Override
