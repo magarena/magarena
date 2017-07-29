@@ -39,7 +39,7 @@ public class MagicTuple implements MagicCopyable {
         for (int i = 0; i < tuple.length; i++) {
             keys[i] = MagicObjectImpl.getStateId(tuple[i]);
         }
-        return MurmurHash3.hash(keys);
+        return (int)(MurmurHash3.hash(keys) >>> 32);
     }
 
     public final MagicItemOnStack getItemOnStack(int i) {
