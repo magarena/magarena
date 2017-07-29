@@ -8,6 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicTuple;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.ReturnCardAction;
 import magic.model.choice.MagicChoice;
@@ -29,23 +30,23 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
             player,
             choice,
             MagicGraveyardTargetPicker.PutOntoBattlefield,
-            EventAction(mods),
+            new MagicTuple(mods),
+            EventAction,
             ""
         );
     }
 
-    private static final MagicEventAction EventAction(final List<? extends MagicPermanentAction> mods) {
-        return (final MagicGame game, final MagicEvent event) -> {
-            // choice could be MagicMayChoice or MagicTargetChoice, the condition below takes care of both cases
-            if (event.isNo() == false) {
-                event.processTargetCard(game, (final MagicCard card) -> {
-                    game.logAppendMessage(
-                        event.getPlayer(),
-                        MagicMessage.format("Chosen (%s).", card)
-                    );
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,card,event.getPlayer(),mods));
-                });
-            }
-        };
-    }
+    private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
+        final MagicTuple tup = event.getRefTuple();
+        // choice could be MagicMayChoice or MagicTargetChoice, the condition below takes care of both cases
+        if (event.isNo() == false) {
+            event.processTargetCard(game, (final MagicCard card) -> {
+                game.logAppendMessage(
+                    event.getPlayer(),
+                    MagicMessage.format("Chosen (%s).", card)
+                );
+                game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,card,event.getPlayer(),tup.getMods()));
+            });
+        }
+    };
 }

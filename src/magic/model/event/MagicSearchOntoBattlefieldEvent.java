@@ -7,6 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicTuple;
 import magic.model.action.AIRevealAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.ReturnCardAction;
@@ -34,37 +35,37 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
             player,
             choice,
             MagicGraveyardTargetPicker.PutOntoBattlefield,
-            EventAction(mods),
+            new MagicTuple(mods),
+            EventAction,
             ""
         );
     }
 
-    private static final MagicEventAction EventAction(final List<? extends MagicPermanentAction> mods) {
-        return (final MagicGame game, final MagicEvent event) -> {
-            // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
-            if (event.isNo()) {
-                // do nothing
-            } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
-                event.processChosenCards(game, (final MagicCard card) -> {
-                    game.logAppendMessage(
-                        event.getPlayer(),
-                        MagicMessage.format("Found (%s).", card)
-                    );
-                    game.doAction(new AIRevealAction(card));
-                    game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),mods));
-                });
-                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
-            } else {
-                event.processTargetCard(game, (final MagicCard card) -> {
-                    game.logAppendMessage(
-                        event.getPlayer(),
-                        MagicMessage.format("Found (%s).", card)
-                    );
-                    game.doAction(new AIRevealAction(card));
-                    game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),mods));
-                });
-                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
-            }
-        };
-    }
+    private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
+        final MagicTuple tup = event.getRefTuple();
+        // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
+        if (event.isNo()) {
+            // do nothing
+        } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
+            event.processChosenCards(game, (final MagicCard card) -> {
+                game.logAppendMessage(
+                    event.getPlayer(),
+                    MagicMessage.format("Found (%s).", card)
+                );
+                game.doAction(new AIRevealAction(card));
+                game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),tup.getMods()));
+            });
+            game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+        } else {
+            event.processTargetCard(game, (final MagicCard card) -> {
+                game.logAppendMessage(
+                    event.getPlayer(),
+                    MagicMessage.format("Found (%s).", card)
+                );
+                game.doAction(new AIRevealAction(card));
+                game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),tup.getMods()));
+            });
+            game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+        }
+    };
 }

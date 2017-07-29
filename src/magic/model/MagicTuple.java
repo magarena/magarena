@@ -2,6 +2,11 @@ package magic.model;
 
 import magic.model.stack.MagicItemOnStack;
 import magic.model.event.MagicChainEventFactory;
+import magic.model.action.MagicPermanentAction;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MagicTuple implements MagicCopyable {
 
@@ -22,6 +27,10 @@ public class MagicTuple implements MagicCopyable {
 
     public MagicTuple(final MagicCopyable... args) {
         tuple = args;
+    }
+
+    public MagicTuple(final List<? extends MagicCopyable> args) {
+        this(args.toArray(new MagicCopyable[0]));
     }
 
     @Override
@@ -72,5 +81,13 @@ public class MagicTuple implements MagicCopyable {
 
     public final int getInt(int i) {
         return ((MagicInteger)tuple[i]).value;
+    }
+
+    public final List<MagicPermanentAction> getMods() {
+        List<MagicPermanentAction> mods = new ArrayList<>(tuple.length);
+        for (final MagicCopyable c : tuple) {
+            mods.add((MagicPermanentAction)c);
+        }
+        return mods;
     }
 }
