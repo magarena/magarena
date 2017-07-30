@@ -24,6 +24,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
         // immediate mode for triggers
         game.setImmediate(true);
         game.snapshot();
+        game.setScore(0);
         game.doAction(new DeclareBlockersAction(defendingPlayer,result));
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,true));
         game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,false));
