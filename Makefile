@@ -226,15 +226,19 @@ inf: $(MAG)
 	-while true; do make debug=true 0`date +%s`.t; done
 
 circleci:
+	make clean $(MAG)
 	$(eval MAG_ID := $(shell date +%s))
-	make clean games=100 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && tail -20 ${MAG_ID}.log && false)
-	touch cards/standard_all.out cards/modern_all.out
-	touch cards/standard_all.txt cards/modern_all.txt
+	make games=50 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && tail -20 ${MAG_ID}.log && false)
+	$(eval MAG_ID := $(shell date +%s))
+	make games=50 ai1=MMAB ai2=MCTSC ${MAG_ID}.t || (cat ${MAG_ID}.out && tail -20 ${MAG_ID}.log && false)
 	make zips
 	mv release/Magarena.jar *.zip ${CIRCLE_ARTIFACTS}
 
 test-self-play:
-	for i in `seq 1 10`; do tsp make games=100 ai1=MMABC ai2=MCTS flags=-ea `date +%N`.t; done
+	for i in `seq 1 5`; do \
+		tsp make games=100 ai1=MMABC ai2=MCTS flags=-ea `date +%N`.t; \
+		tsp make games=100 ai1=MMAB ai2=MCTSC flags=-ea `date +%N`.t; \
+	done
 
 games ?= 10000
 str1 ?= 1
