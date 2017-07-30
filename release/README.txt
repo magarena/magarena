@@ -81,6 +81,111 @@ melvin
 ShawnieBoy
 shinmai-rookie
 
+- added Spanish translation, updated Russian translation.
+
+- add Hour of Devastation to sets
+
+- costs must be paid before before the effect will occur, if a cost becomes
+  unpayable, player has to undo and AI will get a game loss during its
+  simulations.
+
+- support importing other deck formats in to deck editor
+  can drag and drop a deck file onto the deck editor screen and Magarena will
+  attempt to load and display it
+      CardCanvas will display greyscale card image if card is invalid
+      Show warning message if invalid decks on starting a new game.
+      gamepedia.com deck markdown
+      old forge format
+      new forge format
+      Forge Duel Decks
+
+- changed/added the following to the user interface:
+    show cards loading screen
+    copy card name on ctrl- or command-c from selected row in explorer, deck editor, etc.
+
+- added the following to the card script:
+    add effect 'exile all cards from <players>'s graveyard'
+    add effect "tap <permanent>. It doesn't untap during its controller's untap step for as long as SN remains tapped."
+    add effect 'gain control of <permanent> for as long as you control SN and SN remains tapped'
+    add effect 'gain control of <permanent> for as long as SN remains on the battlefield'
+    add "You control a Desert or there is a Desert card in your graveyard" to conditions
+    add ability 'Afflict <n>', closes #1150
+    add ability '<spells> cost <cost> more to cast'
+    add ability '<spell> you cast cost <cost> more to cast'
+    add ability 'You may have SN enter the battlefield as a copy of any <target>.'
+    add effect 'SN enters the battlefield with <amount> <counter type> counters on it if <condition>.'
+    support effect 'cast <card> without paying its mana cost' with optional exile
+    add cost 'Exert SN'
+    add ability 'You may exert SN as it attacks. When you do, <effect>', for #1092
+    add ability 'You may exert SN as it attacks' and 'Whenever you exert a creature, <effect>'
+    support effect: <permanents> becomes the color of your choice until end of turn.
+    add effect 'gain control of <permanents> for as long sa you control SN'
+
+- fixed the following bugs:
+    fixes #1155 :  Avatar button displays "Close" instead of "Avatar".
+    Brink of Disaster destroys itself instead of enchanted permanent #1159
+    Breathstealer Crypt should ask the player which draws a creature card, not
+    the controller of the enchantment. fixes #1170
+    fix: Stolen Identity missing Cipher
+    Throbber Crash - Unable to set the value of the field 'angle' issue #1169
+    crash when AI unable to pay mana cost #226
+    fix throbber freeze on loading missing cards when opening explorer screen.
+    Explorer table style settings not imported to new version
+    fixes #1188 : Choice card popup hangs around.
+    fixes #1211 : Incorrect translations sort order.
+    fixes #1209 : 'P' referring to [P]layed and [P]ower might not work when translated.
+    fixes #1217 : NPE on click deck stats tab.
+    `Bonfire of the Damned` deals 0 damage when cast as a *Miracle* #1218
+    "does not untap during your next untap step" refers to the player who
+    controls SN when ability resolves #1106
+    make skipping phases in AI game model optional and disabled by default, for #815
+
+- added the following cards:
+Abrade, Accursed Horde, Adorned Pouncer, Aerial Guide, Aether Snap,
+Aetherwind Basker, Agent of Erebos, Ahn-Crop Champion, Ahn-Crop Crasher,
+Angel of Condemnation, Angel of the God-Pharaoh, Apocalypse Demon,
+Aven of Enduring Hope, Aven Reedstalker, Battlefield Scavenger,
+Beneath the Sands, Bitterblade Warrior, Bitterbow Sharpshooters,
+Bloodwater Entity, Blur of Blades, Brambleweft Behemoth,
+Burning-Fist Minotaur, Carrion Screecher, Carrion Thrash,
+Champion of Rhonas, Chaos Maw, Countervailing Winds, Crash Through,
+Crook of Condemnation, Cunning Survivor, Dagger of the Worthy,
+Dauntless Aven, Defiant Khenra, Desert of the Fervent,
+Desert of the Glorified, Desert of the Indomitable, Desert of the Mindful,
+Desert of the True, Desert's Hold, Destructive Force, Devoted Crop-Mate,
+Devotee of Strength, Disposal Mummy, Dreamspoiler Witches, Dune Diviner,
+Dunes of the Dead, Dutiful Servants, Eater of the Dead, Endless Sands,
+Eternal of Harsh Truths, Feral Prowler, Fervent Paincaster,
+Firebrand Archer, Frilled Sandwalla, Frontline Devastator, Gamble,
+Gideon, Martial Paragon, Gift of Strength, Gilded Cerodon,
+Glen Elendra Pranksters, Glory-Bound Initiate, Glorybringer,
+God-Pharaoh's Faithful, Greenwheel Liberator, Grisly Survivor,
+Gruesome Encore, Gust Walker, Harrier Naga, Hashep Oasis, Hazoret's Favor,
+Hooded Brawler, Hostile Desert, Hour of Revelation, Ifnir Deadlands,
+Inferno Jet, Ipnu Rivulet, Khenra Eternal, Lady Sun, Lethal Sting,
+Lifecraft Cavalry, Lifecrafter's Gift, Liliana, Death Wielder,
+Luminate Primordial, Lurching Rotbeast, Magmaroth, Manticore Eternal,
+Marauding Boneslasher, Merciless Eternal, Misstep, Moaning Wall,
+Molten Primordial, Mummy Paramount, Nahiri, the Harbinger,
+Narnam Renegade, Nef-Crop Entangler, Night Market Aeronaut,
+Nimble Obstructionist, Oketra's Avenger, Ominous Sphinx, Open Fire,
+Oracle of Bones, Overcome, Perilous Predicament, Pride Sovereign,
+Proven Combatant, Psychic Transfer, Puncturing Blow, Quarry Beetle,
+Rampaging Hippo, Ramunap Hydra, Ramunap Ruins, Razaketh's Rite,
+Razaketh, the Foulblooded, Resilient Khenra, Resolute Survivors,
+Return of the Nightstalkers, Rhet-Crop Spearmaster, Rhonas's Stalwart,
+Riddleform, Ruin Rat, Sand Strangler, Sandwurm Convergence,
+Scavenger Grounds, Scourge of Nel Toth, Scrapheap Scrounger,
+Scrounger of Souls, Seer of the Last Tomorrow, Sepulchral Primordial,
+Sewers of Estark, Shefet Dunes, Sidewinder Naga, Solitary Camel,
+Spellweaver Eternal, Steadfast Sentinel, Steward of Solidarity,
+Striped Riverwinder, Structural Collapse, Sunset Pyramid, Supreme Will,
+Tah-Crop Elite, Thalakos Dreamsower, Thorned Moloch, Torrential Gearhulk,
+Trueheart Twins, Unquenchable Thirst, Unraveling Mummy, Veilstone Amulet,
+Vizier of the True, Wall of Forgotten Pharaohs, War-Name Aspirant,
+Watchful Naga, Wildfire Eternal, Wild Research, Willbreaker,
+Without Weakness, Wretched Camel, Zealot of the God-Pharaoh
+
 Release 1.86 (June 30, 2017)
 ============
 lodici
