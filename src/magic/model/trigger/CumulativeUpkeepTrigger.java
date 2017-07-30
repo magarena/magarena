@@ -21,8 +21,8 @@ public class CumulativeUpkeepTrigger extends AtYourUpkeepTrigger {
 
     private final String genDescription(final int amount) {
         return amount == 1 ?
-            " pay " + manaCost + "." :
-            " pay " + amount + " times " + manaCost + ".";
+            "pay " + manaCost + "." :
+            "pay " + amount + " times " + manaCost + ".";
     }
 
     @Override
