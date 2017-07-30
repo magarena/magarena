@@ -1,7 +1,8 @@
 package magic.model.trigger;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -47,6 +48,21 @@ public class MagicPermanentTriggerMap {
 
     public void add(final MagicPermanentTrigger mptrigger) {
         effects.get(mptrigger.getTrigger().getType()).add(mptrigger);
+    }
+
+    public List<MagicPermanentTrigger> removeTurn() {
+        final List<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
+        for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
+            final Collection<MagicPermanentTrigger> triggers = type.getValue();
+            for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {
+                final MagicPermanentTrigger permanentTrigger = iterator.next();
+                if (permanentTrigger.isUntilEOT()) {
+                    iterator.remove();
+                    removedTriggers.add(permanentTrigger);
+                }
+            }
+        }
+        return removedTriggers;
     }
 
     public Collection<MagicPermanentTrigger> remove(final MagicPermanent permanent) {

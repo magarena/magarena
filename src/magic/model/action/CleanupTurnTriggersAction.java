@@ -16,6 +16,6 @@ public class CleanupTurnTriggersAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        game.addTurnTriggers(removedTriggers);
+        game.addTriggers(removedTriggers);
     }
 }

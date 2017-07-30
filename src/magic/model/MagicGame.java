@@ -49,7 +49,6 @@ import magic.model.target.MagicTargetNone;
 import magic.model.trigger.AtEndOfTurnTrigger;
 import magic.model.trigger.DamageIsDealtTrigger;
 import magic.model.trigger.MagicPermanentTrigger;
-import magic.model.trigger.MagicPermanentTriggerList;
 import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
@@ -69,7 +68,6 @@ public class MagicGame {
     private final MagicPlayer[] players;
     private MagicPermanentTriggerMap triggers;
     private final MagicPermanentTriggerMap additionalTriggers;
-    private final MagicPermanentTriggerList turnTriggers;
     private final MagicPermanentStaticMap statics;
     private final MagicCardList exiledUntilEndOfTurn;
     private final MagicEventQueue events;
@@ -144,7 +142,6 @@ public class MagicGame {
 
         triggers=new MagicPermanentTriggerMap();
         additionalTriggers=new MagicPermanentTriggerMap();
-        turnTriggers=new MagicPermanentTriggerList();
         statics = new MagicPermanentStaticMap();
         exiledUntilEndOfTurn=new MagicCardList();
         events=new MagicEventQueue();
@@ -202,9 +199,6 @@ public class MagicGame {
         additionalTriggers=new MagicPermanentTriggerMap(copyMap, game.additionalTriggers);
         statics=new MagicPermanentStaticMap(copyMap, game.statics);
         exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
-
-        //construct a new object
-        turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
 
         //the following are NOT copied when game state is cloned
         //fastMana
@@ -1326,31 +1320,23 @@ public class MagicGame {
         return immediate;
     }
 
-    public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
-        return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger));
-    }
-
     public MagicPermanentTrigger addTrigger(final MagicPermanentTrigger permanentTrigger) {
         additionalTriggers.add(permanentTrigger);
         return permanentTrigger;
     }
 
-    public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
-        final MagicPermanentTrigger permanentTrigger = addTrigger(permanent,trigger);
-        turnTriggers.add(permanentTrigger);
-        return permanentTrigger;
-    }
-
-    public void addTurnTriggers(final List<MagicPermanentTrigger> triggersList) {
+    public void addTriggers(final List<MagicPermanentTrigger> triggersList) {
         for (final MagicPermanentTrigger permanentTrigger : triggersList) {
             addTrigger(permanentTrigger);
         }
-        turnTriggers.addAll(triggersList);
     }
 
-    public void removeTurnTrigger(final MagicPermanentTrigger permanentTrigger) {
-        additionalTriggers.remove(permanentTrigger);
-        turnTriggers.remove(permanentTrigger);
+    public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
+        return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger, false));
+    }
+
+    public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
+        return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger, true));
     }
 
     public void removeTrigger(final MagicPermanentTrigger permanentTrigger) {
@@ -1361,19 +1347,12 @@ public class MagicGame {
         return additionalTriggers.remove(permanent, trigger);
     }
 
-    public List<MagicPermanentTrigger> removeTurnTriggers() {
-        if (turnTriggers.isEmpty()) {
-            return Collections.emptyList();
-        }
-        final MagicPermanentTriggerList removedTriggers = new MagicPermanentTriggerList(turnTriggers);
-        for (final MagicPermanentTrigger permanentTrigger : removedTriggers) {
-            removeTurnTrigger(permanentTrigger);
-        }
-        return removedTriggers;
-    }
-
     public Collection<MagicPermanentTrigger> removeTriggers(final MagicPermanent permanent) {
         return additionalTriggers.remove(permanent);
+    }
+
+    public List<MagicPermanentTrigger> removeTurnTriggers() {
+        return additionalTriggers.removeTurn();
     }
 
     public <T> void executeTrigger(final MagicTrigger<T> trigger, final MagicPermanent permanent, final MagicSource source, final T data) {

@@ -30,7 +30,7 @@ public class AddTurnTriggerAction extends MagicAction {
     @Override
     public void undoAction(final MagicGame game) {
         if (permanentTrigger != null) {
-            game.removeTurnTrigger(permanentTrigger);
+            game.removeTrigger(permanentTrigger);
         }
     }
 }
