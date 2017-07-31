@@ -85,23 +85,22 @@ shinmai-rookie
 
 - added Hour of Devastation to sets
 
-- costs must be paid before before the effect will occur, if a cost becomes
-  unpayable, player has to undo and AI will get a game loss during its
-  simulations.
+- activated ability must have costs fully paid, if that is not possible the
+  player has to undo and try again
 
-- support importing other deck formats in to deck editor
-  can drag and drop a deck file onto the deck editor screen and Magarena will
-  attempt to load and display it
-      CardCanvas will display greyscale card image if card is invalid
-      Show warning message if invalid decks on starting a new game.
-      gamepedia.com deck markdown
-      old forge format
-      new forge format
-      Forge Duel Decks
+- support importing other deck formats into deck editor
+  * gamepedia.com deck markdown
+  * old forge format
+  * new forge format
+  * Forge Duel Decks
+
+- support dragging and dropping a deck file onto the deck editor
+
+- allow unsupported cards in decks, they will be shown in greyscale
 
 - changed/added the following to the user interface:
-    show cards loading screen
-    copy card name on ctrl- or command-c from selected row in explorer, deck editor, etc.
+  * show cards loading screen for screens that uses card information
+  * copy card name on ctrl-c or command-c from selected row in explorer, deck editor, etc.
 
 - added the following to the card script:
   * condition: You control a Desert or there is a Desert card in your graveyard
@@ -127,7 +126,7 @@ shinmai-rookie
   * crash in MCTS due to skipping of phases (issue #815)
   * crash on first launch of Card Explorer (issue #1169)
   * crash on clicking deck stats tab (issue #1217)
-  * avatar selection page displays "Close" instead of "Avatar" (issue #1155)  
+  * avatar selection page displays "Close" instead of "Avatar" (issue #1155)
   * throbber freeze on loading missing cards when opening card explorer
   * card explorer table style settings not imported to new version
   * choice card popup hangs around (issue #1188)
