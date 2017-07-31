@@ -81,9 +81,9 @@ melvin
 ShawnieBoy
 shinmai-rookie
 
-- added Spanish translation, updated Russian translation.
+- added Spanish translation, updated Russian translation
 
-- add Hour of Devastation to sets
+- added Hour of Devastation to sets
 
 - costs must be paid before before the effect will occur, if a cost becomes
   unpayable, player has to undo and AI will get a game loss during its
@@ -104,41 +104,40 @@ shinmai-rookie
     copy card name on ctrl- or command-c from selected row in explorer, deck editor, etc.
 
 - added the following to the card script:
-    add effect 'exile all cards from <players>'s graveyard'
-    add effect "tap <permanent>. It doesn't untap during its controller's untap step for as long as SN remains tapped."
-    add effect 'gain control of <permanent> for as long as you control SN and SN remains tapped'
-    add effect 'gain control of <permanent> for as long as SN remains on the battlefield'
-    add "You control a Desert or there is a Desert card in your graveyard" to conditions
-    add ability 'Afflict <n>', closes #1150
-    add ability '<spells> cost <cost> more to cast'
-    add ability '<spell> you cast cost <cost> more to cast'
-    add ability 'You may have SN enter the battlefield as a copy of any <target>.'
-    add effect 'SN enters the battlefield with <amount> <counter type> counters on it if <condition>.'
-    support effect 'cast <card> without paying its mana cost' with optional exile
-    add cost 'Exert SN'
-    add ability 'You may exert SN as it attacks. When you do, <effect>', for #1092
-    add ability 'You may exert SN as it attacks' and 'Whenever you exert a creature, <effect>'
-    support effect: <permanents> becomes the color of your choice until end of turn.
-    add effect 'gain control of <permanents> for as long sa you control SN'
+  * condition: You control a Desert or there is a Desert card in your graveyard
+  * cost: Exert SN
+  * effect: Exile all cards from <player>'s graveyard.
+  * effect: Tap <permanent>. It doesn't untap during its controller's untap step for as long as SN remains tapped.
+  * effect: Gain control of <permanents> for as long as you control SN.
+  * effect: Gain control of <permanents> for as long as you control SN and SN remains tapped.
+  * effect: Gain control of <permanents> for as long as SN remains on the battlefield.
+  * effect: Cast <card> without paying its mana cost.
+  * effect: <permanents> becomes the color of your choice until end of turn.
+  * ability: Afflict <n>
+  * ability: <spells> cost <cost> more to cast
+  * ability: <spell> you cast cost <cost> more to cast
+  * ability: You may have SN enter the battlefield as a copy of any <target>.
+  * ability: SN enters the battlefield with <amount> <counter type> counters on it if <condition>.
+  * ability: You may exert SN as it attacks. When you do, <effect>
+  * ability: You may exert SN as it attacks.
+  * ability: Whenever you exert a creature, <effect>.
 
 - fixed the following bugs:
-    fixes #1155 :  Avatar button displays "Close" instead of "Avatar".
-    Brink of Disaster destroys itself instead of enchanted permanent #1159
-    Breathstealer Crypt should ask the player which draws a creature card, not
-    the controller of the enchantment. fixes #1170
-    fix: Stolen Identity missing Cipher
-    Throbber Crash - Unable to set the value of the field 'angle' issue #1169
-    crash when AI unable to pay mana cost #226
-    fix throbber freeze on loading missing cards when opening explorer screen.
-    Explorer table style settings not imported to new version
-    fixes #1188 : Choice card popup hangs around.
-    fixes #1211 : Incorrect translations sort order.
-    fixes #1209 : 'P' referring to [P]layed and [P]ower might not work when translated.
-    fixes #1217 : NPE on click deck stats tab.
-    `Bonfire of the Damned` deals 0 damage when cast as a *Miracle* #1218
-    "does not untap during your next untap step" refers to the player who
-    controls SN when ability resolves #1106
-    make skipping phases in AI game model optional and disabled by default, for #815
+  * crash when AI unable to pay mana cost (issue #226)
+  * crash in MCTS due to skipping of phases (issue #815)
+  * crash on first launch of Card Explorer (issue #1169)
+  * crash on clicking deck stats tab (issue #1217)
+  * avatar selection page displays "Close" instead of "Avatar" (issue #1155)  
+  * throbber freeze on loading missing cards when opening card explorer
+  * card explorer table style settings not imported to new version
+  * choice card popup hangs around (issue #1188)
+  * incorrect translations sort order (issue #1211)
+  * 'P' referring to [P]layed and [P]ower cannot be translated in some languages (issue #1209)
+  * "does not untap during your next untap step" only last until permanent's next untap step (issue #1106)
+  * Stolen Identity missing Cipher
+  * Breathstealer Crypt made its controller draw a card (issue #1170)
+  * Bonfire of the Damned deals 0 damage when cast as a Miracle (issue #1218)
+  * Brink of Disaster destroys itself instead of enchanted permanent (issue #1159)
 
 - added the following cards:
 Abrade, Accursed Horde, Adorned Pouncer, Aerial Guide, Aether Snap,
