@@ -1816,7 +1816,7 @@ public enum MagicRuleEventAction {
         }
     },
     Exert(
-        ARG.PERMANENTS + " doesn't untap during your next untap step",
+        ARG.PERMANENTS + " (don't|doesn't) untap during your next untap step",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Tapping,
