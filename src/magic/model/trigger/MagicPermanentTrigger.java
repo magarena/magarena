@@ -22,7 +22,7 @@ public class MagicPermanentTrigger implements Comparable<MagicPermanentTrigger> 
     }
 
     public MagicPermanentTrigger(final MagicCopyMap copyMap,final MagicPermanentTrigger source) {
-        this(source.id, copyMap.copy(source.permanent), source.trigger);
+        this(source.id, copyMap.copy(source.permanent), source.trigger, source.isUntilEOT);
     }
 
     public long getId() {
