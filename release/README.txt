@@ -89,10 +89,10 @@ shinmai-rookie
   player has to undo and try again
 
 - support importing other deck formats into deck editor
-  * gamepedia.com deck markdown
+  * gamepedia.com deck format
   * old forge format
   * new forge format
-  * Forge Duel Decks
+  * forge duel decks format
 
 - support dragging and dropping a deck file onto the deck editor
 
