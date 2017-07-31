@@ -1,5 +1,5 @@
 name=colorless Clue artifact token
-image=http://cdn.staticneo.com/w/mtg/7/77/Clue-token.jpg
+image=http://magiccards.info/extras/token/shadows-over-innistrad/clue-1.jpg
 token=Clue
 type=Artifact
 subtype=Clue

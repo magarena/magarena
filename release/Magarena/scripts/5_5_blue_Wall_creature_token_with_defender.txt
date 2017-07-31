@@ -1,6 +1,6 @@
 name=5/5 blue Wall creature token with defender
 token=Wall
-image=http://cdn.staticneo.com/w/mtg/6/67/Wall.jpg
+image=http://magiccards.info/extras/token/eternal-masters/wall.jpg
 value=3
 type=Creature
 subtype=Wall

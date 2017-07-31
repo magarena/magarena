@@ -1,6 +1,6 @@
 name=1/1 red Devil creature token
 token=Devil
-image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_qhIEFoclOO.png
+image=http://magiccards.info/extras/token/shadows-over-innistrad/devil.jpg
 value=1
 type=Creature
 subtype=Devil

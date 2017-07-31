@@ -1,6 +1,6 @@
 name=1/1 black Vampire Knight creature token with lifelink
 token=Vampire Knight
-image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_Lz7fjwmpzN.png
+image=http://magiccards.info/extras/token/shadows-over-innistrad/vampire-knight.jpg
 value=1
 type=Creature
 subtype=Vampire,Knight

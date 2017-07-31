@@ -1,6 +1,6 @@
 name=1/1 white Warrior creature token with vigilance
 token=Warrior
-image=http://media.wizards.com/2017/dw466ytu5_akh/en_MGhKsBQ06g.png
+image=http://magiccards.info/extras/token/amonkhet/warrior.jpg
 value=1
 type=Creature
 subtype=Warrior

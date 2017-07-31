@@ -1,6 +1,6 @@
 name=1/1 white and black Human Cleric creature token
 token=Cleric
-image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_9BXzi51Vmy.png
+image=http://magiccards.info/extras/token/shadows-over-innistrad/human-cleric.jpg
 value=1
 type=Creature
 subtype=Human,Cleric

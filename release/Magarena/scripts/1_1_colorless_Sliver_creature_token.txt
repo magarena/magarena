@@ -1,6 +1,6 @@
 name=1/1 colorless Sliver creature token
 token=Sliver
-image=http://cdn.staticneo.com/w/mtg/9/92/Sliver1.jpg
+image=http://magiccards.info/extras/token/magic-2014/sliver.jpg
 image_updated=2015-11-12
 value=1
 type=Creature

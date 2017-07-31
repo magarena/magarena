@@ -1,6 +1,6 @@
 name=1/2 green Spider creature token with reach
 token=Spider
-image=http://cdn.staticneo.com/w/mtg/5/5e/Spider1.jpg
+image=http://magiccards.info/extras/token/eldritch-moon/spider.jpg
 value=2
 type=Creature
 subtype=Spider
