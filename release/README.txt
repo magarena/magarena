@@ -73,6 +73,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.88 (August 27, 2017)
+============
+
 Release 1.87 (July 31, 2017)
 ============
 kelsioboy
