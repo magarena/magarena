@@ -923,12 +923,12 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount amount = ARG.amountObj(matcher);
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 final int multiplier = count.getAmount(event);
-                final int total = amount * multiplier;
+                final int total = amount.getAmount(event) * multiplier;
                 if (count != MagicAmountFactory.One) {
                     game.logAppendValue(event.getPlayer(), total);
                 }
