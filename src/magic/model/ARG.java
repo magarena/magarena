@@ -41,6 +41,9 @@ public class ARG {
     public static int amount2(final Matcher m) {
         return EnglishToInt.convert(m.group("amount2"));
     }
+    public static MagicAmount amount2Obj(final Matcher m) {
+        return MagicAmountParser.build(m.group("amount2"));
+    }
 
     public static final String COST = "(?<cost>.+)";
     public static final String MAY_COST = "(?<cost>(?!search|draw|exile).+)";

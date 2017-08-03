@@ -755,19 +755,25 @@ public enum MagicRuleEventAction {
         }
     },
     DrawLosePlayers(
-        ARG.PLAYERS + " draw(s)? " + ARG.AMOUNT + " card(s)? and (you )?lose(s)? " + ARG.AMOUNT2 + " life",
+        ARG.PLAYERS + " draw(s)? " + ARG.AMOUNT + " card(s)? and (you )?lose(s)? " + ARG.AMOUNT2 + " life(( for each| equal to|, where X is) " + ARG.WORDRUN + ")?",
         MagicTiming.Draw,
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = ARG.amount(matcher);
-            final int amount2 = ARG.amount2(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount amount1 = ARG.amountObj(matcher);
+            final MagicAmount amount2 = ARG.amount2Obj(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
+                final int multiplier = eachCount.getAmount(event);
+                final int total1 = (eachCount != MagicAmountFactory.One && amount1 == MagicAmountFactory.XCost) ?
+                    multiplier : amount1.getAmount(event) * multiplier;
+                final int total2 = (eachCount != MagicAmountFactory.One && amount2 == MagicAmountFactory.XCost) ?
+                    multiplier : amount2.getAmount(event) * multiplier;
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new DrawAction(it, amount1));
-                    game.doAction(new ChangeLifeAction(it, -amount2));
+                    game.doAction(new DrawAction(it, total1));
+                    game.doAction(new ChangeLifeAction(it, -total2));
                 }
             };
         }
