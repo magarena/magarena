@@ -7,7 +7,7 @@ subtype=Zombie,Wall
 cost={2}{B}
 pt=0/3
 ability=Defender;\
-        Whenever you gain life, put a +1/+1 counter on SN.
+        Whenever you gain life, put a +1/+1 counter on SN.;\
+        {5}{B}{B}, Sacrifice SN: Target player loses X life, where X is SN's power.
 timing=main
-requires_groovy_code
 oracle=Defender\nWhenever you gain life, put a +1/+1 counter on Wall of Limbs.\n{5}{B}{B}, Sacrifice Wall of Limbs: Target player loses X life, where X is Wall of Limbs's power.
