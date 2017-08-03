@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Spirit
 cost={2}{B}{B}
 pt=3/3
+ability=At the beginning of your upkeep, you draw X cards and you lose X life, where X is the number of Zombies you control.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, you draw X cards and you lose X life, where X is the number of Zombies you control.

@@ -5,6 +5,6 @@ rarity=U
 type=Sorcery
 cost={2}{B}{B}
 ability=Cast SN with AI only if you control a creature.
+effect=You draw X cards and you lose X life, where X is the number of creatures you control.
 timing=main
-requires_groovy_code
 oracle=You draw X cards and you lose X life, where X is the number of creatures you control.
