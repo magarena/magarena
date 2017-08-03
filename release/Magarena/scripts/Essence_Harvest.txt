@@ -4,6 +4,6 @@ value=3.633
 rarity=C
 type=Sorcery
 cost={2}{B}
+effect=Target player loses X life and you gain X life, where X is the greatest power among creatures you control.
 timing=removal
-requires_groovy_code
 oracle=Target player loses X life and you gain X life, where X is the greatest power among creatures you control.

@@ -4,6 +4,6 @@ value=2.171
 rarity=U
 type=Sorcery
 cost={4}{B}
+effect=Target player loses X life and you gain X life, where X is the number of basic land types among lands you control.
 timing=main
-requires_groovy_code
 oracle=Domain — Target player loses X life and you gain X life, where X is the number of basic land types among lands you control.
