@@ -788,7 +788,7 @@ public enum MagicRuleEventAction {
         }
     },
     Draw(
-        ARG.PLAYERS + "( )?draw(s)?( " + ARG.AMOUNT + ")? (additional )?card(s)?( (for each|equal to) " + ARG.WORDRUN + ")?",
+        ARG.PLAYERS + "( )?draw(s)?( " + ARG.AMOUNT + ")? (additional )?card(s)?(( for each| equal to|, where X is) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Positive,
         MagicTiming.Draw,
         "Draw"
@@ -800,7 +800,8 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 final int multiplier = eachCount.getAmount(event);
-                final int total = cardCount.getAmount(event) * multiplier;
+                final int total = (eachCount != MagicAmountFactory.One && cardCount == MagicAmountFactory.XCost) ?
+                    multiplier : cardCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
                     game.logAppendValue(event.getPlayer(), total);
                 }
