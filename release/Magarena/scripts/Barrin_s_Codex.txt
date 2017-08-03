@@ -8,4 +8,3 @@ ability=At the beginning of your upkeep, you may put a page counter on SN.;\
         {4}, {T}, Sacrifice SN: Draw X cards, where X is the number of page counters on SN.
 timing=artifact
 oracle=At the beginning of your upkeep, you may put a page counter on Barrin's Codex.\n{4}, {T}, Sacrifice Barrin's Codex: Draw X cards, where X is the number of page counters on Barrin's Codex.
-status=needs groovy
