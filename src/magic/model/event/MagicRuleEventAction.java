@@ -885,26 +885,32 @@ public enum MagicRuleEventAction {
         }
     },
     DrainLife(
-        ARG.PLAYERS + " lose(s)? " + ARG.AMOUNT + " life and you gain " + ARG.AMOUNT2 + " life",
+        ARG.PLAYERS + " lose(s)? " + ARG.AMOUNT + " life and you gain " + ARG.AMOUNT2 + " life(( for each| equal to|, where X is) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = ARG.amount(matcher);
-            final int amount2 = ARG.amount2(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount amount1 = ARG.amountObj(matcher);
+            final MagicAmount amount2 = ARG.amount2Obj(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
+                final int multiplier = eachCount.getAmount(event);
+                final int total1 = (eachCount != MagicAmountFactory.One && amount1 == MagicAmountFactory.XCost) ?
+                    multiplier : amount1.getAmount(event) * multiplier;
+                final int total2 = (eachCount != MagicAmountFactory.One && amount2 == MagicAmountFactory.XCost) ?
+                    multiplier : amount2.getAmount(event) * multiplier;
                 final List<MagicPlayer> players = ARG.players(event, matcher, filter);
                 for (final MagicPlayer it : players) {
-                    game.doAction(new ChangeLifeAction(it, -amount1));
+                    game.doAction(new ChangeLifeAction(it, -total1));
                 }
                 //continue to the second part if
                 //  there is no target OR
                 //  there is a target and it is legal
                 if (matcher.group("choice") == null || players.isEmpty() == false) {
-                    game.doAction(new ChangeLifeAction(event.getPlayer(), amount2));
+                    game.doAction(new ChangeLifeAction(event.getPlayer(), total2));
                 }
             };
         }
