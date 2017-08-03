@@ -4,7 +4,7 @@ value=2.699
 rarity=R
 type=Artifact
 cost={5}
-ability={2}, {T}, Remove four charge counters from SN: You gain 2 life.~Draw a card.
+ability={2}, {T}, Remove four charge counters from SN: You gain 2 life~and draw a card.
 timing=artifact
 oracle=Whenever you're dealt damage, you may put that many charge counters on Angelheart Vial.\n{2}, {T}, Remove four charge counters from Angelheart Vial: You gain 2 life and draw a card.
 requires_groovy_code

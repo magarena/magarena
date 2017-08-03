@@ -4,6 +4,6 @@ value=3.895
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
-ability=At the beginning of your upkeep, if you have 5 or less life, you gain 3 life.~Draw a card.
+ability=At the beginning of your upkeep, if you have 5 or less life, you gain 3 life~and draw a card.
 timing=enchantment
 oracle=At the beginning of your upkeep, if you have 5 or less life, you gain 3 life and draw a card.
