@@ -962,20 +962,21 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLife(
-        ARG.PLAYERS + "( )?lose(s)?( " + ARG.AMOUNT + ")? life( (for each|equal to) " + ARG.WORDRUN + ")?",
+        ARG.PLAYERS + "( )?lose(s)?( " + ARG.AMOUNT + ")? life(( for each| equal to|, where X is) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount amount = ARG.amountObj(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
-                final int multiplier = count.getAmount(event);
-                final int total = amount * multiplier;
-                if (count != MagicAmountFactory.One) {
+                final int multiplier = eachCount.getAmount(event);
+                int total = (eachCount != MagicAmountFactory.One && amount == MagicAmountFactory.XCost) ?
+                    multiplier : amount.getAmount(event) * multiplier;
+                if (eachCount != MagicAmountFactory.One) {
                     game.logAppendValue(event.getPlayer(), total);
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
