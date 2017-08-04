@@ -45,6 +45,11 @@ public class ARG {
         return MagicAmountParser.build(m.group("amount2"));
     }
 
+    public static final String EACH = "( |, )?((for each|equal to|where X is) " + ARG.WORDRUN + ")?";
+    public static MagicAmount each(final Matcher m) {
+        return MagicAmountParser.build(ARG.wordrun(m));
+    }
+
     public static final String COST = "(?<cost>.+)";
     public static final String MAY_COST = "(?<cost>(?!search|draw|exile).+)";
     public static String cost(final Matcher m) {

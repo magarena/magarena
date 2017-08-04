@@ -13,4 +13,12 @@ public abstract class MagicAmount {
     public boolean isConstant() {
         return false;
     }
+
+    public static int countEachProduct(final MagicAmount amount, final MagicAmount eachCount, final MagicEvent event) {
+        if (eachCount != MagicAmountFactory.One && amount == MagicAmountFactory.XCost) {
+            return eachCount.getAmount(event);
+        } else {
+            return amount.getAmount(event) * eachCount.getAmount(event);
+        }
+    }
 }
