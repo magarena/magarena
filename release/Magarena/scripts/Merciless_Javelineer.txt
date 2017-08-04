@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur,Warrior
 cost={2}{B}{R}
 pt=4/2
-ability={2}, Discard a card: Put a -1/-1 counter on target creature. That creature can't block this turn.
+ability={2}, Discard a card: Put a -1/-1 counter on target creature.~*That creature* can't block this turn.
 timing=main
 oracle={2}, Discard a card: Put a -1/-1 counter on target creature. That creature can't block this turn.
