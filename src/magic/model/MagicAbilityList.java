@@ -11,19 +11,12 @@ import java.util.List;
 import java.util.Set;
 
 public class MagicAbilityList implements MagicAbilityStore {
-    private List<MagicAbility> abilities =
-        new LinkedList<MagicAbility>();
 
-    private List<MagicTrigger<?>> triggers =
-        new LinkedList<MagicTrigger<?>>();
-
+    private List<MagicAbility> abilities = new LinkedList<>();
+    private List<MagicTrigger<?>> triggers = new LinkedList<>();
     private List<MagicStatic> statics = new LinkedList<>();
-
-    private List<MagicActivation<MagicPermanent>> permActivations =
-        new LinkedList<MagicActivation<MagicPermanent>>();
-
-    private List<MagicManaActivation> manaActivations =
-        new LinkedList<MagicManaActivation>();
+    private List<MagicActivation<MagicPermanent>> permActivations = new LinkedList<>();
+    private List<MagicManaActivation> manaActivations = new LinkedList<>();
 
     @Override
     public void add(final MagicChangeCardDefinition ccd) {
