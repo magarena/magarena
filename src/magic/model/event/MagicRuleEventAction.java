@@ -997,7 +997,7 @@ public enum MagicRuleEventAction {
         }
     },
     Pump(
-        ARG.PERMANENTS + " get(s)? (an additional )?(?<pt>[X0-9+]+/[X0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?",
+        ARG.PERMANENTS + "( gain(s)? (?<ability>.+?) and)? get(s)? (an additional )?(?<pt>[X0-9+]+/[X0-9+]+) until end of turn" + ARG.EACH,
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
@@ -1006,42 +1006,18 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = ARG.ptStr(matcher);
-            final MagicAmount powerCounter = MagicAmountParser.build(pt[0]);
-            final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
-            return (game, event) -> {
-                final int amount = count.getAmount(event);
-                final int power = powerCounter.getAmount(event);
-                final int toughness = toughnessCounter.getAmount(event);
-                if (count != MagicAmountFactory.One) {
-                    game.logAppendValue(event.getPlayer(), amount);
-                }
-                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                    game.doAction(new ChangeTurnPTAction(it, power * amount, toughness * amount));
-                }
-            };
-        }
-    },
-    PumpX(
-        ARG.PERMANENTS + "( gain(s)? (?<ability>.+?) and)? get(s)? (an additional )?(?<pt>[X0-9+]+/[X0-9+]+) until end of turn, where X is " + ARG.WORDRUN,
-        MagicTargetHint.Positive,
-        MagicPumpTargetPicker.create(),
-        MagicTiming.Pump,
-        "Pump"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final String[] pt = ARG.ptStr(matcher);
-            final MagicAmount countX = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount powerCount = MagicAmountParser.build(pt[0]);
+            final MagicAmount toughnessCount = MagicAmountParser.build(pt[1]);
+            final MagicAmount eachCount = ARG.each(matcher);
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             final MagicAbilityList abilityList = matcher.group("ability") != null ?
                 MagicAbility.getAbilityList(matcher.group("ability")) : null;
             return (game, event) -> {
-                final int X = countX.getAmount(event);
-                final int power = MagicAmountParser.getX(pt[0], X);
-                final int toughness = MagicAmountParser.getX(pt[1], X);
-                game.logAppendX(event.getPlayer(), X);
+                final int power = MagicAmount.countEachProduct(powerCount, eachCount, event);
+                final int toughness = MagicAmount.countEachProduct(toughnessCount, eachCount, event);
+                if (eachCount != MagicAmountFactory.One) {
+                    game.logAppendMessage(event.getPlayer(), "(" + power + "/" + toughness + ")");
+                }
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                     game.doAction(new ChangeTurnPTAction(it, power, toughness));
                     if (abilityList != null) {
@@ -1052,7 +1028,7 @@ public enum MagicRuleEventAction {
         }
     },
     Weaken(
-        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9-]+/[X0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?",
+        ARG.PERMANENTS + "( gain(s)? (?<ability>.+?) and)? get(s)? (an additional )?(?<pt>[X0-9-]+/[X0-9-]+) until end of turn" + ARG.EACH,
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Weaken"
@@ -1065,31 +1041,13 @@ public enum MagicRuleEventAction {
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final String[] pt = ARG.ptStr(matcher);
-            final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
-            return new MagicWeakenTargetPicker(toughnessCounter);
-        }
-    },
-    WeakenX(
-        ARG.PERMANENTS + "( gain(s)? (?<ability>.+?) and)? get(s)? (an additional )?(?<pt>[X0-9-]+/[X0-9-]+) until end of turn, where X is " + ARG.WORDRUN,
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Weaken"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpX.getAction(matcher);
-        }
-
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final String[] pt = ARG.ptStr(matcher);
-            final MagicAmount countX = MagicAmountParser.build(ARG.wordrun(matcher));
-            final MagicAmount toughnessCounter = pt[1].equalsIgnoreCase("-x") ? countX : MagicAmountParser.build(pt[1]);
+            final MagicAmount eachCount = ARG.each(matcher);
+            final MagicAmount toughnessCounter = pt[1].equalsIgnoreCase("-x") ? eachCount : MagicAmountParser.build(pt[1]);
             return new MagicWeakenTargetPicker(toughnessCounter);
         }
     },
     ModPT(
-        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+-]+/[X0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?",
+        ARG.PERMANENTS + "( gain(s)? (?<ability>.+?) and)? get(s)? (an additional )?(?<pt>[X0-9+-]+/[X0-9+-]+) until end of turn" + ARG.EACH,
         MagicTiming.Removal,
         "Pump"
     ) {
