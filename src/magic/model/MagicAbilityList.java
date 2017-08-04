@@ -4,6 +4,7 @@ import magic.model.event.MagicActivation;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.trigger.MagicTrigger;
+import magic.model.mstatic.MagicStatic;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -15,6 +16,8 @@ public class MagicAbilityList implements MagicAbilityStore {
 
     private List<MagicTrigger<?>> triggers =
         new LinkedList<MagicTrigger<?>>();
+
+    private List<MagicStatic> statics = new LinkedList<>();
 
     private List<MagicActivation<MagicPermanent>> permActivations =
         new LinkedList<MagicActivation<MagicPermanent>>();
@@ -30,6 +33,8 @@ public class MagicAbilityList implements MagicAbilityStore {
             manaActivations.add((MagicManaActivation)ccd);
         } else if (ccd instanceof MagicTrigger<?>) {
             triggers.add((MagicTrigger<?>)ccd);
+        } else if (ccd instanceof MagicStatic) {
+            statics.add((MagicStatic)ccd);
         } else {
             throw new RuntimeException("unknown given ability \"" + ccd + "\"");
         }
