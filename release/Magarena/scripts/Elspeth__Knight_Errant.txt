@@ -7,7 +7,7 @@ subtype=Elspeth
 cost={2}{W}{W}
 loyalty=4
 ability=+1: Create a 1/1 white Soldier creature token.;\
-        +1: Target creature gets +3/+3 and gains flying until end of turn.
+        +1: Target creature gets +3/+3 and gains flying until end of turn.;\
+        −8: You get an emblem with "Artifacts, creatures, enchantments, and lands you control have indestructible."
 timing=main
 oracle=+1: Create a 1/1 white Soldier creature token.\n+1: Target creature gets +3/+3 and gains flying until end of turn.\n−8: You get an emblem with "Artifacts, creatures, enchantments, and lands you control have indestructible."
-requires_groovy_code

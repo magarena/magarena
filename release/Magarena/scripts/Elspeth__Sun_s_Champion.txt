@@ -8,7 +8,7 @@ subtype=Elspeth
 cost={4}{W}{W}
 loyalty=4
 ability=+1: Create three 1/1 white Soldier creature tokens.;\
-        −3: Destroy all creatures with power 4 or greater.
+        −3: Destroy all creatures with power 4 or greater.;\
+        −7: You get an emblem with "Creatures you control get +2/+2 and have flying."
 timing=main
 oracle=+1: Create three 1/1 white Soldier creature tokens.\n−3: Destroy all creatures with power 4 or greater.\n−7: You get an emblem with "Creatures you control get +2/+2 and have flying."
-requires_groovy_code
