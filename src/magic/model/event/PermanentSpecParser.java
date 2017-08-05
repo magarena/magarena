@@ -21,6 +21,8 @@ public class PermanentSpecParser {
     public final boolean duration;
     public final boolean additionTo;
 
+    public static final String BECOMES = " become(s)?( a| an)?(?<legendary> legendary)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?";
+
     public PermanentSpecParser(final Matcher matcher) {
         final String[] ptStr = matcher.group("pt") == null ? null :
             matcher.group("pt").split("/");
@@ -31,6 +33,9 @@ public class PermanentSpecParser {
         colors = MagicColor.prefixColors(tokens);
         subTypes = MagicSubType.prefixSubTypes(tokens);
         types = MagicType.prefixTypes(tokens);
+        if (matcher.group("legendary") != null) {
+            types.add(MagicType.Legendary);
+        }
 
         if (tokens.isEmpty() == false) {
             throw new RuntimeException("unmatched becomes specification " + tokens);

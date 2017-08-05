@@ -2404,7 +2404,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAlt(
-        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?",
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + PermanentSpecParser.BECOMES + "(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2419,7 +2419,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAddition(
-        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?",
+        ARG.PERMANENTS + PermanentSpecParser.BECOMES + "(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2434,7 +2434,7 @@ public enum MagicRuleEventAction {
         }
     },
     Becomes(
-        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?",
+        ARG.PERMANENTS + PermanentSpecParser.BECOMES + "(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?",
         MagicTiming.Animate,
         "Becomes"
     ) {
