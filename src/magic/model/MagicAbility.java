@@ -1576,7 +1576,7 @@ public enum MagicAbility {
     },
 
     // activated permanent abilities
-    ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
+    ActivatedAbility("[^\"‘]+:(?! Add)" + ARG.ANY, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
@@ -1889,6 +1889,7 @@ public enum MagicAbility {
 
     private static final Pattern SUB_ABILITY_LIST = Pattern.compile(
         "(?:has |have )?\"([^\"]+)\"(?:, and | and )?|" +
+        "(?:has |have )?‘([^']+)'(?:, and | and )?|" +
         "(?:has |have )?([A-Za-z][^,]+)(?:, and | and )|" +
         "(?:has |have )?([A-Za-z][^,]+)"
     );
@@ -1899,7 +1900,8 @@ public enum MagicAbility {
         while (m.find()) {
             final String part = m.group(1) != null ? m.group(1) :
                                 m.group(2) != null ? m.group(2) :
-                                m.group(3);
+                                m.group(3) != null ? m.group(3) :
+                                m.group(4);
             final String name = renameThis(part);
             getAbility(name).addAbility(abilityList, name);
         }
