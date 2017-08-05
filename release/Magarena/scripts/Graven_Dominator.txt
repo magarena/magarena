@@ -11,4 +11,3 @@ ability=Flying;\
         When SN enters the battlefield or the creature it haunts dies, each other creature has base power and toughness 1/1 until end of turn.
 timing=main
 oracle=Flying\nHaunt\nWhen Graven Dominator enters the battlefield or the creature it haunts dies, each other creature has base power and toughness 1/1 until end of turn.
-status=needs groovy
