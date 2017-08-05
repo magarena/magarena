@@ -11,4 +11,3 @@ ability=Flying;\
         Sacrifice a Goblin: SN has base power and toughness 3/3 until end of turn.
 timing=main
 oracle=Flying\nWhen Marsh Flitter enters the battlefield, create two 1/1 black Goblin Rogue creature tokens.\nSacrifice a Goblin: Marsh Flitter has base power and toughness 3/3 until end of turn.
-status=needs groovy
