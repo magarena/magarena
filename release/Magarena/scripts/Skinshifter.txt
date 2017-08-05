@@ -7,9 +7,9 @@ subtype=Human,Shaman
 cost={1}{G}
 pt=1/1
 ability={G}: Choose one — \
-        (1) Until end of turn, SN becomes a 4/4 Rhino and gains trample. \
-        (2) Until end of turn, SN becomes a 2/2 Bird and gains flying. \
-        (3) Until end of turn, SN becomes a 0/8 Plant. \
+        (1) Until end of turn, SN becomes a Rhino with base power and toughness 4/4 and gains trample. \
+        (2) Until end of turn, SN becomes a Bird with base power and toughness 2/2 and gains flying. \
+        (3) Until end of turn, SN becomes a Plant with base power and toughness 0/8. \
         Activate this ability only once each turn.
 timing=main
 oracle={G}: Choose one —\n• Until end of turn, Skinshifter becomes a Rhino with base power and toughness 4/4 and gains trample. Activate this ability only once each turn.\n• Until end of turn, Skinshifter becomes a Bird with base power and toughness 2/2 and gains flying. Activate this ability only once each turn.\n• Until end of turn, Skinshifter becomes a Plant with base power and toughness 0/8. Activate this ability only once each turn.

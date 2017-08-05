@@ -6,6 +6,6 @@ type=Creature
 subtype=Frog
 cost={1}{G}{G}{U}
 pt=3/3
-ability={T}: Target creature becomes a 3/3 Frog until end of turn.
+ability={T}: Target creature becomes a Frog with base power and toughness 3/3 until end of turn.
 timing=main
 oracle={T}: Target creature becomes a Frog with base power and toughness 3/3 until end of turn.
