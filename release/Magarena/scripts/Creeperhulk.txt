@@ -10,4 +10,3 @@ ability=Trample;\
         {1}{G}: Until end of turn, target creature you control has base power and toughness 5/5 and gains trample.
 timing=main
 oracle=Trample\n{1}{G}: Until end of turn, target creature you control has base power and toughness 5/5 and gains trample.
-status=needs groovy
