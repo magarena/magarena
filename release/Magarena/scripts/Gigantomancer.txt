@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Shaman
 cost={7}{G}
 pt=1/1
+ability={1}: Target creature you control has base power and toughness 7/7 until end of turn.
 timing=main
 oracle={1}: Target creature you control has base power and toughness 7/7 until end of turn.
-requires_groovy_code
