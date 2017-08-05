@@ -21,13 +21,14 @@ public class PermanentSpecParser {
     public final boolean duration;
     public final boolean additionTo;
 
-    public static final String BECOMES = " become(s)?( a| an)?(?<legendary> legendary)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?";
+    public static final String BECOMES = " become(s)?( a| an)?(?<legendary> legendary)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( with base power and toughness (?<pt2>[0-9]+/[0-9]+))?( (with|and gains) (?<ability>.*?))?";
 
     public PermanentSpecParser(final Matcher matcher) {
-        final String[] ptStr = matcher.group("pt") == null ? null :
-            matcher.group("pt").split("/");
-        pt = ptStr == null ? null :
-            new int[]{Integer.parseInt(ptStr[0]), Integer.parseInt(ptStr[1])};
+        final String ptStr = matcher.group("pt") != null ? matcher.group("pt") :
+                             matcher.group("pt2") != null ? matcher.group("pt2") :
+                             null;
+        final String[] ptTok = ptStr == null ? null : ptStr.split("/");
+        pt = ptTok == null ? null : new int[]{Integer.parseInt(ptTok[0]), Integer.parseInt(ptTok[1])};
 
         final List<String> tokens = new LinkedList<>(Arrays.asList(matcher.group("all").split(", | and | ")));
         colors = MagicColor.prefixColors(tokens);
