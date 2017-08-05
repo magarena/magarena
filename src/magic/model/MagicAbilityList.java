@@ -5,6 +5,8 @@ import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
+import magic.model.action.AddTriggerAction;
+import magic.model.action.AddStaticAction;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -40,6 +42,16 @@ public class MagicAbilityList implements MagicAbilityStore {
     @Override
     public void addAbility(final MagicAbility ability) {
         abilities.add(ability);
+    }
+
+    public void giveAbility(final MagicGame game, final MagicPermanent source, final MagicPlayer player) {
+        final MagicPermanent emblem = game.createPermanent(source.getCard(), player);
+        for (final MagicTrigger<?> t : triggers) {
+            game.doAction(AddTriggerAction.Force(emblem, t));
+        }
+        for (final MagicStatic s : statics) {
+            game.doAction(AddStaticAction.Force(emblem, s));
+        }
     }
 
     public void giveAbility(final MagicPermanent permanent, final Set<MagicAbility> flags) {

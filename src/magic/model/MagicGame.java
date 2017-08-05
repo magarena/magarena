@@ -1278,12 +1278,13 @@ public class MagicGame {
         return statics.remove(permanent);
     }
 
-    public void addStatic(final MagicPermanent permanent, final MagicStatic mstatic) {
-        addStatic(new MagicPermanentStatic(getUniqueId(),permanent,mstatic));
+    public MagicPermanentStatic addStatic(final MagicPermanent permanent, final MagicStatic mstatic) {
+        return addStatic(new MagicPermanentStatic(getUniqueId(),permanent,mstatic));
     }
 
-    public void addStatic(final MagicPermanentStatic permanentStatic) {
+    public MagicPermanentStatic addStatic(final MagicPermanentStatic permanentStatic) {
         statics.add(permanentStatic);
+        return permanentStatic;
     }
 
     public void addStatics(final Collection<MagicPermanentStatic> aStatics) {

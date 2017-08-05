@@ -754,6 +754,23 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Emblem(
+        ARG.PLAYERS + " get(s)? an emblem with " + ARG.ANY,
+        MagicTargetHint.None,
+        MagicTiming.Main,
+        "Emblem"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(matcher));
+            return (game, event) -> {
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    abilityList.giveAbility(game, event.getPermanent(), it);
+                }
+            };
+        }
+    },
     DrawLosePlayers(
         ARG.PLAYERS + " draw(s)? " + ARG.AMOUNT + " card(s)? and (you )?lose(s)? " + ARG.AMOUNT2 + " life" + ARG.EACH,
         MagicTiming.Draw,
