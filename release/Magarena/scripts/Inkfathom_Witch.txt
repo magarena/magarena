@@ -7,7 +7,6 @@ subtype=Merfolk,Wizard
 cost={1}{U/B}
 pt=1/1
 ability=Fear;\
-        {2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.
+        {2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn. Activate this ability only during combat after blockers are declared.
 timing=main
 oracle=Fear\n{2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.
-status=needs groovy
