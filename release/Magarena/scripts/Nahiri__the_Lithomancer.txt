@@ -6,9 +6,7 @@ type=Planeswalker
 subtype=Nahiri
 cost={3}{W}{W}
 loyalty=3
-ability=+2: Create a 1/1 white Kor Soldier creature token. You may attach an Equipment you control to it.;\
-        −2: You may put an Equipment card from your hand or graveyard onto the battlefield.;\
-        −10: Create a colorless Equipment artifact token named Stoneforged Blade. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}.;\
-        SN can be your commander.
+ability=−10: Create a colorless Equipment artifact token named Stoneforged Blade.
 timing=main
 oracle=+2: Create a 1/1 white Kor Soldier creature token. You may attach an Equipment you control to it.\n−2: You may put an Equipment card from your hand or graveyard onto the battlefield.\n−10: Create a colorless Equipment artifact token named Stoneforged Blade. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}.\nNahiri, the Lithomancer can be your commander.
+requires_groovy_code

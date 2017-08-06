@@ -1,0 +1,13 @@
+name=colorless Equipment artifact token named Stoneforged Blade
+token=Stoneforged Blade
+image=http://magiccards.info/extras/token/commander-2014/stoneforged-blade.jpg
+value=4
+type=Artifact
+subtype=Equipment
+color=
+ability=Indestructible;\
+        Equipped creature gets +5/+5.;\
+        Equipped creature has double strike.;\
+        Equip {0}
+timing=main
+oracle=Indestructible.\nEquipped creature gets +5/+5.\nEquipped creature has double strike.\nEquip {0}
