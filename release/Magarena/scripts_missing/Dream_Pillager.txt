@@ -11,3 +11,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, exile that many cards from the top of your library. Until end of turn, you may cast nonland cards exiled this way.
 timing=main
 oracle=Flying\nWhenever Dream Pillager deals combat damage to a player, exile that many cards from the top of your library. Until end of turn, you may cast nonland cards exiled this way.
+status=not supported: may-play-card

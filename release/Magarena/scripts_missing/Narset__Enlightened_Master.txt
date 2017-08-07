@@ -10,3 +10,4 @@ ability=First strike, hexproof;\
         Whenever SN attacks, exile the top four cards of your library. Until end of turn, you may cast noncreature cards exiled with Narset this turn without paying their mana costs.
 timing=main
 oracle=First strike, hexproof\nWhenever Narset, Enlightened Master attacks, exile the top four cards of your library. Until end of turn, you may cast noncreature cards exiled with Narset this turn without paying their mana costs.
+status=not supported: may-play-card

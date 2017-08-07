@@ -12,3 +12,4 @@ ability=+2: Target opponent exiles cards from the top of his or her library unti
         −12: Exile each nonland permanent your opponents control.
 timing=main
 oracle=+2: Target opponent exiles cards from the top of his or her library until he or she exiles a nonland card. Until end of turn, you may cast that card without paying its mana cost.\n+1: Each opponent exiles two cards from his or her hand.\n−4: Nicol Bolas, God-Pharaoh deals 7 damage to target opponent or creature an opponent controls.\n−12: Exile each nonland permanent your opponents control.
+status=not supported: may-play-card

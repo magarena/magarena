@@ -10,3 +10,4 @@ ability=Afflict 3;\
         At the beginning of your postcombat main phase, add {R} to your mana pool for each 1 life your opponents have lost this turn.
 timing=main
 oracle=Afflict 3\nAt the beginning of your postcombat main phase, add {R} to your mana pool for each 1 life your opponents have lost this turn.
+status=not supported: add-multiple-mana
