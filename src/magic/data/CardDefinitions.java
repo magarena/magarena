@@ -109,7 +109,7 @@ public class CardDefinitions {
 
         cardDef.setIndex(cdefIndex.getAndIncrement());
 
-        if (cardDef.isPlayable()) {
+        if (cardDef.isPlayable() && (cardDef.hasCost() || cardDef.isLand())) {
             cardDef.add(new MagicHandCastActivation(cardDef));
         }
 
