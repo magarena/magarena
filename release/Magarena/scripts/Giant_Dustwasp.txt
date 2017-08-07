@@ -10,4 +10,3 @@ ability=Flying;\
         Suspend 4—{1}{G}
 timing=main
 oracle=Flying\nSuspend 4—{1}{G}
-status=not supported: suspend
