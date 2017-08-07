@@ -4,8 +4,15 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCard;
+import magic.model.MagicCounterType;
+import magic.model.MagicLocationType;
+import magic.model.MagicAbility;
 import magic.model.action.DrawAction;
 import magic.model.action.RemoveTriggerAction;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.CastCardAction;
+import magic.model.action.EnqueueTriggerAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
@@ -60,4 +67,36 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             }
         };
     }
+
+    public static final AtUpkeepTrigger Suspend = new AtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            for (final MagicCard card : upkeepPlayer.getExile()) {
+                if (card.hasAbility(MagicAbility.Suspend) && card.hasCounters(MagicCounterType.Time)) {
+                    game.doAction(new EnqueueTriggerAction(new MagicEvent(
+                        card,
+                        this,
+                        "If SN is suspended, remove a time counter from it."
+                    )));
+                }
+            }
+            return MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicCard card = event.getCard();
+            if (card.isInExile() && card.hasAbility(MagicAbility.Suspend) && card.hasCounters(MagicCounterType.Time)) {
+                game.doAction(new ChangeCountersAction(card, MagicCounterType.Time, -1));
+                if (card.hasCounters(MagicCounterType.Time) == false) {
+                    game.doAction(CastCardAction.WithoutManaCost(
+                        event.getPlayer(),
+                        card,
+                        MagicLocationType.Exile,
+                        MagicLocationType.Graveyard
+                    ));
+                    //not implemented: If you cast a creature spell this way, it gains haste until you lose control of the spell or the permanent it becomes.
+                }
+            }
+        }
+    };
 }

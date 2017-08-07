@@ -54,6 +54,7 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.OtherEntersBattlefieldTrigger;
 import magic.model.trigger.PreventDamageTrigger;
+import magic.model.trigger.AtUpkeepTrigger;
 import magic.ui.MagicSound;
 
 public class MagicGame {
@@ -577,6 +578,9 @@ public class MagicGame {
         // add Monarch triggers
         triggers.add(new MagicPermanentTrigger(1, MagicPermanent.NONE, AtEndOfTurnTrigger.Monarch));
         triggers.add(new MagicPermanentTrigger(2, MagicPermanent.NONE, DamageIsDealtTrigger.Monarch));
+
+        // add Suspend trigger
+        triggers.add(new MagicPermanentTrigger(3, MagicPermanent.NONE, AtUpkeepTrigger.Suspend));
 
         // prevent damage replacement
         triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, PreventDamageTrigger.GlobalPreventDamageToTarget));
