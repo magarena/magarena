@@ -7,4 +7,4 @@ color=g
 effect=Suspend 3—{1}{G}{G}~Starting with you, each player may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield. Repeat this process until no one puts a card onto the battlefield.
 timing=main
 oracle=Suspend 3—{1}{G}{G}\nStarting with you, each player may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield. Repeat this process until no one puts a card onto the battlefield.
-status=not supported: suspend
+status=needs groovy

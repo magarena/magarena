@@ -7,4 +7,4 @@ cost={9}{B}
 effect=Target player sacrifices half the permanents he or she controls, rounded down.~Suspend 2—{2}{B}{B}~At the beginning of each player's upkeep, if SN is suspended, that player may sacrifice a permanent. If he or she does, put two time counters on SN.
 timing=main
 oracle=Target player sacrifices half the permanents he or she controls, rounded down.\nSuspend 2—{2}{B}{B}\nAt the beginning of each player's upkeep, if Curse of the Cabal is suspended, that player may sacrifice a permanent. If he or she does, put two time counters on Curse of the Cabal.
-status=not supported: suspend
+status=not supported: trigger-from-exile

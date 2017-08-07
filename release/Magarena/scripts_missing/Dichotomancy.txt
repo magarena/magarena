@@ -7,4 +7,4 @@ cost={7}{U}{U}
 effect=For each tapped nonland permanent target opponent controls, search that player's library for a card with the same name as that permanent and put it onto the battlefield under your control. Then that player shuffles his or her library.~Suspend 3—{1}{U}{U}
 timing=main
 oracle=For each tapped nonland permanent target opponent controls, search that player's library for a card with the same name as that permanent and put it onto the battlefield under your control. Then that player shuffles his or her library.\nSuspend 3—{1}{U}{U}
-status=not supported: suspend
+status=needs groovy

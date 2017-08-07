@@ -12,4 +12,4 @@ ability=When SN enters the battlefield, choose one — \
         Suspend 4—{R}
 timing=main
 oracle=When Shivan Sand-Mage enters the battlefield, choose one —\n• Remove two time counters from target permanent or suspended card.\n• Put two time counters on target permanent with a time counter on it or suspended card.\nSuspend 4—{R}
-status=not supported: suspend
+status=needs groovy

@@ -11,4 +11,4 @@ ability=SN's power and toughness are each equal to your life total minus the lif
         Whenever a time counter is removed from SN while it's exiled, target player loses 1 life and you gain 1 life.
 timing=main
 oracle=Roiling Horror's power and toughness are each equal to your life total minus the life total of an opponent with the most life.\nSuspend X—{X}{B}{B}{B}. X can't be 0.\nWhenever a time counter is removed from Roiling Horror while it's exiled, target player loses 1 life and you gain 1 life.
-status=not supported: suspend
+status=not supported: when-counter-removed

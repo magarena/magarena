@@ -11,4 +11,4 @@ ability=Protection from black; flanking;\
         When the last time counter is removed from SN while it's exiled, create a 2/2 black Knight creature token with flanking, protection from white, and haste.
 timing=main
 oracle=Protection from black, flanking\nSuspend 3—{1}{W}{W}\nWhen the last time counter is removed from Riftmarked Knight while it's exiled, create a 2/2 black Knight creature token with flanking, protection from white, and haste.
-status=not supported: suspend
+status=not supported: trigger-from-exile

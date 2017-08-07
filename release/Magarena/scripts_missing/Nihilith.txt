@@ -11,4 +11,4 @@ ability=Fear;\
         Whenever a card is put into an opponent's graveyard from anywhere, if SN is suspended, you may remove a time counter from SN.
 timing=main
 oracle=Fear\nSuspend 7—{1}{B}\nWhenever a card is put into an opponent's graveyard from anywhere, if Nihilith is suspended, you may remove a time counter from Nihilith.
-status=not supported: suspend
+status=not supported: trigger-from-exile
