@@ -286,6 +286,15 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    ExileSpellWithTimeCounters(
+        "exile sn with three time counters on it",
+        MagicTiming.Removal,
+        "Exile",
+        (game, event) -> {
+            game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
+            game.doAction(new ChangeCountersAction(event.getCardOnStack().getCard(), MagicCounterType.Time, 3));
+        }
+    ),
     ExilePlayerGraveyard(
         "exile all cards from " + ARG.PLAYERS + "'s graveyard",
         MagicTargetHint.Negative,
