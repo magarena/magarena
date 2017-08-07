@@ -96,7 +96,6 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
                         MagicLocationType.Graveyard,
                         MagicPlayMod.HASTE_SUSPEND
                     ));
-                    //not implemented: If you cast a creature spell this way, it gains haste until you lose control of the spell or the permanent it becomes.
                 }
             }
         }
