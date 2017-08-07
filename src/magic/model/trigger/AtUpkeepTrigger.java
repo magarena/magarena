@@ -88,15 +88,27 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             final MagicCard card = event.getCard();
             if (card.isInExile() && card.hasAbility(MagicAbility.Suspend) && card.hasCounters(MagicCounterType.Time)) {
                 game.doAction(new ChangeCountersAction(card, MagicCounterType.Time, -1));
+                game.logAppendMessage(event.getPlayer(), "Removed a time counter, there are " + card.getCounters(MagicCounterType.Time) + " time counters left.");
                 if (card.hasCounters(MagicCounterType.Time) == false) {
-                    game.doAction(CastCardAction.WithoutManaCost(
-                        event.getPlayer(),
+                    game.doAction(new EnqueueTriggerAction(new MagicEvent(
                         card,
-                        MagicLocationType.Exile,
-                        MagicLocationType.Graveyard,
-                        MagicPlayMod.HASTE_SUSPEND
-                    ));
+                        event.getPlayer(),
+                        this::playCard,
+                        "If SN is exiled, PN plays it without paying its mana cost if able, otherwise it remains exiled."
+                    )));
                 }
+            }
+        }
+        private void playCard(final MagicGame game, final MagicEvent event) {
+            final MagicCard card = event.getCard();
+            if (card.isInExile()) {
+                game.doAction(CastCardAction.WithoutManaCost(
+                    event.getPlayer(),
+                    card,
+                    MagicLocationType.Exile,
+                    MagicLocationType.Graveyard,
+                    MagicPlayMod.HASTE_SUSPEND
+                ));
             }
         }
     };
