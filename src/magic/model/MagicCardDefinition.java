@@ -708,19 +708,25 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public List<MagicEvent> getCostEvent(final MagicCard source) {
-        final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
-        if (hasCost()) {
-            costEvent.add(MagicPayManaCostEvent.Cast(
-                source,
-                cost
-            ));
-        }
-        costEvent.addAll(getAdditionalCostEvent(source));
-        return costEvent;
+        return getCostEvent(source, cost);
     }
 
-    public List<MagicEvent> getAdditionalCostEvent(final MagicCard source) {
-        return costEventSources.stream().map(eventSource -> eventSource.getEvent(source)).collect(Collectors.toList());
+    public List<MagicEvent> getWithoutManaCostEvent(final MagicCard source) {
+        return getCostEvent(source, MagicManaCost.ZERO);
+    }
+
+    private List<MagicEvent> getCostEvent(final MagicCard source, final MagicManaCost manaCost) {
+        final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
+        if (manaCost != MagicManaCost.NONE) {
+            costEvent.add(MagicPayManaCostEvent.Cast(
+                source,
+                manaCost
+            ));
+        }
+        for (final MagicEventSource eventSource : costEventSources) {
+            costEvent.add(eventSource.getEvent(source));
+        }
+        return costEvent;
     }
 
     public boolean isPlayable(final MagicDeckProfile profile) {
