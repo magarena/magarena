@@ -7,4 +7,4 @@ cost={3}{W}
 effect=You gain 2 life for each creature target player controls.~Suspend 5—{1}{W}
 timing=main
 oracle=You gain 2 life for each creature target player controls.\nSuspend 5—{1}{W}
-status=not supported: suspend
+status=needs groovy
