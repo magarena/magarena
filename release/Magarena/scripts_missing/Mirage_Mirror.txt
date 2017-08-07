@@ -7,3 +7,4 @@ cost={3}
 ability={2}: SN becomes a copy of target artifact, creature, enchantment, or land until end of turn.
 timing=artifact
 oracle={2}: Mirage Mirror becomes a copy of target artifact, creature, enchantment, or land until end of turn.
+status=not supported: becomes-copy

@@ -9,3 +9,4 @@ pt=2/3
 ability=You may play land cards from your graveyard.
 timing=main
 oracle=You may play land cards from your graveyard.
+status=not supported: may-play-card
