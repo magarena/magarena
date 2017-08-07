@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
+import magic.model.MagicTuple;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
@@ -13,7 +14,7 @@ public class MagicPutCardOnStackEvent extends MagicEvent {
         super(
             source,
             player,
-            fromLocation.ordinal() * 10 + toLocation.ordinal(),
+            new MagicTuple(fromLocation, toLocation),
             EVENT_ACTION,
             ""
         );
@@ -25,9 +26,9 @@ public class MagicPutCardOnStackEvent extends MagicEvent {
             event.getPlayer(),
             game.getPayedCost()
         );
-        final int locations = event.getRefInt();
-        final MagicLocationType from = MagicLocationType.values()[locations / 10];
-        final MagicLocationType to = MagicLocationType.values()[locations % 10];
+        final MagicTuple tup = event.getRefTuple();
+        final MagicLocationType from = tup.getLocationType(0);
+        final MagicLocationType to = tup.getLocationType(1);
         cardOnStack.setFromLocation(from);
         cardOnStack.setMoveLocation(to);
         final MagicCard card = event.getCard();
