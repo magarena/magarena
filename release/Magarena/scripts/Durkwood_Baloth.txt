@@ -9,4 +9,3 @@ pt=5/5
 ability=Suspend 5—{G}
 timing=main
 oracle=Suspend 5—{G}
-status=not supported: suspend
