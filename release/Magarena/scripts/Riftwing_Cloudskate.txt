@@ -11,4 +11,3 @@ ability=Flying;\
         Suspend 3—{1}{U}
 timing=main
 oracle=Flying\nWhen Riftwing Cloudskate enters the battlefield, return target permanent to its owner's hand.\nSuspend 3—{1}{U}
-status=not supported: suspend
