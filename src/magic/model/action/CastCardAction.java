@@ -33,9 +33,9 @@ public class CastCardAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        for (final MagicEvent event : card.getAdditionalCostEvent()) {
+        for (final MagicEvent event : withoutManaCost ? card.getAdditionalCostEvent() : card.getCostEvent()) {
             if (event.isSatisfied() == false) {
-                game.logAppendMessage(player, "Casting failed as " + player + " is unable to pay additional casting costs.");
+                game.logAppendMessage(player, "Casting failed as " + player + " is unable to pay casting costs.");
                 return;
             }
         }
