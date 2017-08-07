@@ -10,4 +10,3 @@ ability=Fear;\
         Suspend 5—{B}
 timing=main
 oracle=Fear\nSuspend 5—{B}
-status=not supported: suspend
