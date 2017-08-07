@@ -14,21 +14,27 @@ public class CastCardAction extends MagicAction {
     private final boolean withoutManaCost;
     private final MagicLocationType from;
     private final MagicLocationType to;
+    private final MagicPermanentAction mod;
 
     public CastCardAction(final MagicPlayer aPlayer, final MagicCard aCard, final MagicLocationType aFrom, final MagicLocationType aTo) {
-        this(aPlayer, aCard, false, aFrom, aTo);
+        this(aPlayer, aCard, false, aFrom, aTo, MagicPlayMod.NONE);
     }
 
     public static CastCardAction WithoutManaCost(final MagicPlayer aPlayer, final MagicCard aCard, final MagicLocationType aFrom, final MagicLocationType aTo) {
-        return new CastCardAction(aPlayer, aCard, true, aFrom, aTo);
+        return new CastCardAction(aPlayer, aCard, true, aFrom, aTo, MagicPlayMod.NONE);
     }
 
-    private CastCardAction(final MagicPlayer aPlayer, final MagicCard aCard, final boolean aWithoutManaCost, final MagicLocationType aFrom, final MagicLocationType aTo) {
+    public static CastCardAction WithoutManaCost(final MagicPlayer aPlayer, final MagicCard aCard, final MagicLocationType aFrom, final MagicLocationType aTo, final MagicPermanentAction mod) {
+        return new CastCardAction(aPlayer, aCard, true, aFrom, aTo, mod);
+    }
+
+    private CastCardAction(final MagicPlayer aPlayer, final MagicCard aCard, final boolean aWithoutManaCost, final MagicLocationType aFrom, final MagicLocationType aTo, final MagicPermanentAction aMod) {
         player = aPlayer;
         card = aCard;
         withoutManaCost = aWithoutManaCost;
         from = aFrom;
         to = aTo;
+        mod = aMod;
     }
 
     @Override
@@ -42,7 +48,7 @@ public class CastCardAction extends MagicAction {
         for (final MagicEvent event : withoutManaCost ? card.getAdditionalCostEvent() : card.getCostEvent()) {
             game.addCostEvent(event);
         }
-        game.addEvent(new MagicPutCardOnStackEvent(card, player, from, to));
+        game.addEvent(new MagicPutCardOnStackEvent(card, player, from, to, mod));
     }
 
     @Override

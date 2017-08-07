@@ -83,6 +83,10 @@ public class MagicTuple implements MagicCopyable {
         return ((MagicInteger)tuple[i]).value;
     }
 
+    public final MagicPermanentAction getMod(int i) {
+        return (MagicPermanentAction)tuple[i];
+    }
+
     public final List<MagicPermanentAction> getMods() {
         List<MagicPermanentAction> mods = new ArrayList<>(tuple.length);
         for (final MagicCopyable c : tuple) {

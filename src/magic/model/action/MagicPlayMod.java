@@ -12,6 +12,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.ARG;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.event.MagicMorphActivation;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.AtEndOfCombatTrigger;
@@ -103,6 +104,16 @@ public enum MagicPlayMod implements MagicPermanentAction {
         @Override
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste, MagicStatic.Forever));
+        }
+    },
+    HASTE_SUSPEND() {
+        @Override
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new AddStaticAction(perm, MagicStatic.AsLongAsCond(
+                perm,
+                MagicAbility.Haste,
+                MagicConditionFactory.PlayerControlsSource(perm.getController())
+            )));
         }
     },
     PERSIST() {

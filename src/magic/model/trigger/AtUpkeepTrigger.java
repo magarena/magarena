@@ -8,6 +8,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCounterType;
 import magic.model.MagicLocationType;
 import magic.model.MagicAbility;
+import magic.model.action.MagicPlayMod;
 import magic.model.action.DrawAction;
 import magic.model.action.RemoveTriggerAction;
 import magic.model.action.ChangeCountersAction;
@@ -92,7 +93,8 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
                         event.getPlayer(),
                         card,
                         MagicLocationType.Exile,
-                        MagicLocationType.Graveyard
+                        MagicLocationType.Graveyard,
+                        MagicPlayMod.HASTE_SUSPEND
                     ));
                     //not implemented: If you cast a creature spell this way, it gains haste until you lose control of the spell or the permanent it becomes.
                 }
