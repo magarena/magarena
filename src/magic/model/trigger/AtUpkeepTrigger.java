@@ -88,7 +88,7 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             final MagicCard card = event.getCard();
             if (card.isInExile() && card.hasAbility(MagicAbility.Suspend) && card.hasCounters(MagicCounterType.Time)) {
                 game.doAction(new ChangeCountersAction(card, MagicCounterType.Time, -1));
-                game.logAppendMessage(event.getPlayer(), "Removed a time counter, there are " + card.getCounters(MagicCounterType.Time) + " time counters left.");
+                game.logAppendMessage(event.getPlayer(), "Remove a time counter, there are " + card.getCounters(MagicCounterType.Time) + " time counters left.");
                 if (card.hasCounters(MagicCounterType.Time) == false) {
                     game.doAction(new EnqueueTriggerAction(new MagicEvent(
                         card,
