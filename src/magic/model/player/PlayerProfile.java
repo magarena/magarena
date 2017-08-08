@@ -20,6 +20,8 @@ public abstract class PlayerProfile {
     abstract protected void loadProperties();
     abstract public void save();
     abstract protected String getPlayerType();
+    abstract public boolean isArtificial();
+    abstract public boolean isHuman();
 
     /**
      * Loads an existing saved player profile.
@@ -35,15 +37,6 @@ public abstract class PlayerProfile {
      */
     protected PlayerProfile() {
         this(PlayerProfile.getNewPlayerProfileId());
-    }
-
-
-    public boolean isArtificial() {
-        return this instanceof AiProfile;
-    }
-
-    public boolean isHuman() {
-        return this instanceof HumanProfile;
     }
 
     public String getId() {
