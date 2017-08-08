@@ -98,11 +98,8 @@ public class MagicDuel {
 
     public MagicGame nextGame() {
         //create players
-        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(playerIndex),   playerIndex);
-        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(opponentIndex), opponentIndex);
-
-        //give the AI player extra life
-        opponent.setLife(opponent.getLife() + opponent.getAiProfile().getExtraLife());
+        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartingLife(playerIndex),   duelConfig.getPlayerConfig(playerIndex),   playerIndex);
+        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartingLife(opponentIndex), duelConfig.getPlayerConfig(opponentIndex), opponentIndex);
 
         //determine who starts first
         final MagicPlayer[] players = new MagicPlayer[]{player,opponent};

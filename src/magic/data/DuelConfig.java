@@ -45,6 +45,10 @@ public class DuelConfig {
         );
     }
 
+    public int getStartingLife(final int idx) {
+        return startLife + players[idx].getProfile().getExtraLife();
+    }
+
     public int getStartLife() {
         return startLife;
     }

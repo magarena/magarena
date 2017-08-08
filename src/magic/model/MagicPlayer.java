@@ -52,6 +52,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     private final DuelPlayerConfig playerConfig;
     private final int index;
+    private final int startingLife;
 
     private int stateFlags;
     private int life;
@@ -84,7 +85,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     MagicPlayer(final int aLife,final DuelPlayerConfig playerConfig,final int aIndex) {
         this.playerConfig = playerConfig;
         index = aIndex;
-        life = aLife;
+        startingLife = aLife;
+        life = startingLife;
 
         hand=new MagicCardList();
         library=new MagicCardList();
@@ -100,6 +102,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
         playerConfig = sourcePlayer.playerConfig;
         index = sourcePlayer.index;
+        startingLife = sourcePlayer.startingLife;
         life = sourcePlayer.life;
         lifeGainThisTurn = sourcePlayer.lifeGainThisTurn;
         lifeLossThisTurn = sourcePlayer.lifeLossThisTurn;
@@ -334,6 +337,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     public int getStartingHandSize() {
         return startingHandSize;
+    }
+
+    public int getStartingLife() {
+        return startingLife;
     }
 
     public int getNumExcessCards() {

@@ -32,6 +32,11 @@ public class HumanProfile extends PlayerProfile {
     }
 
     @Override
+    public int getExtraLife() {
+        return 0;
+    }
+
+    @Override
     public void save() {
         saveProperties(new SortedProperties());
     }

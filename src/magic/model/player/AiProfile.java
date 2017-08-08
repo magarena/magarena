@@ -60,6 +60,7 @@ public class AiProfile extends PlayerProfile {
         return false;
     }
 
+    @Override
     public int getExtraLife() {
         return extraLife;
     }

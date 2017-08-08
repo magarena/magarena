@@ -22,6 +22,7 @@ public abstract class PlayerProfile {
     abstract protected String getPlayerType();
     abstract public boolean isArtificial();
     abstract public boolean isHuman();
+    abstract public int getExtraLife();
 
     /**
      * Loads an existing saved player profile.
