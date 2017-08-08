@@ -10,3 +10,4 @@ ability=Flying;\
         If you would lose the game, instead exile SN and your life total becomes equal to your starting life total.
 timing=main
 oracle=Flying\nIf you would lose the game, instead exile Exquisite Archangel and your life total becomes equal to your starting life total.
+status=needs groovy

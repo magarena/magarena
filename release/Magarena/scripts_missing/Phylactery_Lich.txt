@@ -11,3 +11,4 @@ ability=Indestructible;\
         When you control no permanents with phylactery counters on them, sacrifice SN.
 timing=main
 oracle=Indestructible\nAs Phylactery Lich enters the battlefield, put a phylactery counter on an artifact you control.\nWhen you control no permanents with phylactery counters on them, sacrifice Phylactery Lich.
+status=needs groovy

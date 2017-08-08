@@ -9,4 +9,4 @@ transform=Chalice of Life
 timing=artifact
 hidden
 oracle={T}: Target player loses 5 life.
-status=needs groovy
+status=needs other half

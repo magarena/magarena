@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Your life total becomes equal to your starting life total.~Lands you control don't untap during your next untap step.
 timing=main
 oracle=Your life total becomes equal to your starting life total. Lands you control don't untap during your next untap step.
+status=needs groovy
