@@ -7,3 +7,4 @@ cost={B}
 effect=Destroy target black creature or black planeswalker. If that permanent was a Liliana planeswalker, her controller loses 3 life.
 timing=main
 oracle=Destroy target black creature or black planeswalker. If that permanent was a Liliana planeswalker, her controller loses 3 life.
+status=needs groovy

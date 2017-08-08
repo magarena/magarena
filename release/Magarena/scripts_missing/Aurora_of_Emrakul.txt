@@ -13,3 +13,4 @@ transform=Cryptolith Fragment
 timing=main
 hidden
 oracle=Flying, deathtouch\nWhenever Aurora of Emrakul attacks, each opponent loses 3 life.
+status=needs other half

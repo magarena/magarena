@@ -8,3 +8,4 @@ cost={1}{R}
 effect=Choose target creature. You get {E}{E}{E}, then you may pay any amount of {E}. SN deals that much damage to that creature.
 timing=removal
 oracle=Choose target creature. You get {E}{E}{E}, then you may pay any amount of {E}. Harnessed Lightning deals that much damage to that creature.
+status=not supported: any-number-of

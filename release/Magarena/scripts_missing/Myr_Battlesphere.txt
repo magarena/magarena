@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, create four 1/1 colorless Myr artifact c
         Whenever SN attacks, you may tap X untapped Myr you control. If you do, SN gets +X/+0 until end of turn and deals X damage to defending player.
 timing=main
 oracle=When Myr Battlesphere enters the battlefield, create four 1/1 colorless Myr artifact creature tokens.\nWhenever Myr Battlesphere attacks, you may tap X untapped Myr you control. If you do, Myr Battlesphere gets +X/+0 until end of turn and deals X damage to defending player.
+status=not supported: non-mana-x-cost

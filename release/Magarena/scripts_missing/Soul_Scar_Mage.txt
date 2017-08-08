@@ -10,3 +10,4 @@ ability=Prowess;\
         If a source you control would deal noncombat damage to a creature an opponent controls, put that many -1/-1 counters on that creature instead.
 timing=main
 oracle=Prowess\nIf a source you control would deal noncombat damage to a creature an opponent controls, put that many -1/-1 counters on that creature instead.
+status=needs groovy

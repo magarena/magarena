@@ -9,3 +9,4 @@ pt=2/2
 ability={2}{R}, Discard a card at random: SN deals 2 damage to target creature or player. If the discarded card was multicolored, SN deals 4 damage to that creature or player instead.
 timing=main
 oracle={2}{R}, Discard a card at random: Stormscale Anarch deals 2 damage to target creature or player. If the discarded card was multicolored, Stormscale Anarch deals 4 damage to that creature or player instead.
+status=not supported: no-info

@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Exile target creature with the greatest power among creatures on the battlefield.
 timing=main
 oracle=Exile target creature with the greatest power among creatures on the battlefield.
+status=needs groovy

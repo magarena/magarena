@@ -7,3 +7,4 @@ cost={1}{B}
 effect=Return to your hand all cards in your graveyard that you cycled or discarded this turn.
 timing=removal
 oracle=Return to your hand all cards in your graveyard that you cycled or discarded this turn.
+status=not supported: no-info

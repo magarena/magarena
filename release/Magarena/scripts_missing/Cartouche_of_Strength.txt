@@ -11,3 +11,4 @@ ability=Enchant creature you control;\
 timing=aura
 enchant=trample,creature you control
 oracle=Enchant creature you control\nWhen Cartouche of Strength enters the battlefield, you may have enchanted creature fight target creature an opponent controls.\nEnchanted creature gets +1/+1 and has trample.
+status=needs groovy

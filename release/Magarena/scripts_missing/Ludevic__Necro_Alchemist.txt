@@ -11,3 +11,4 @@ ability=At the beginning of each player's end step, that player may draw a card 
         Partner
 timing=main
 oracle=At the beginning of each player's end step, that player may draw a card if a player other than you lost life this turn.\nPartner
+status=needs groovy

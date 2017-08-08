@@ -12,3 +12,4 @@ ability=Flash;\
 timing=flash
 enchant=toughness,creature you control
 oracle=Flash\nEnchant creature you control\nWhen Saving Grace enters the battlefield, all damage that would be dealt this turn to you and permanents you control is dealt to enchanted creature instead.\nEnchanted creature gets +0/+3.
+status=needs groovy

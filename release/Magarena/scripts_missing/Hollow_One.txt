@@ -10,3 +10,4 @@ ability=SN costs {2} less to cast for each card you've cycled or discarded this 
         Cycling {2}
 timing=main
 oracle=Hollow One costs {2} less to cast for each card you've cycled or discarded this turn.\nCycling {2}
+status=not supported: no-info

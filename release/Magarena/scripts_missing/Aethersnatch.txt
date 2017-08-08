@@ -8,3 +8,4 @@ cost={4}{U}{U}
 effect=Gain control of target spell. You may choose new targets for it.
 timing=counter
 oracle=Gain control of target spell. You may choose new targets for it.
+status=not supported: spell-modification

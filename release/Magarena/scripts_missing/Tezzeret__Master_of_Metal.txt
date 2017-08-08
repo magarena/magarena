@@ -11,3 +11,4 @@ ability=+1: Reveal cards from the top of your library until you reveal an artifa
         −8: Gain control of all artifacts and creatures target opponent controls.
 timing=main
 oracle=+1: Reveal cards from the top of your library until you reveal an artifact card. Put that card into your hand and the rest on the bottom of your library in a random order.\n−3: Target opponent loses life equal to the number of artifacts you control.\n−8: Gain control of all artifacts and creatures target opponent controls.
+status=needs groovy

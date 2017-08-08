@@ -8,3 +8,4 @@ ability=You may exile two blue cards from your hand rather than pay SN's mana co
 effect=Gain control of target noncreature spell. You may choose new targets for it.
 timing=removal
 oracle=You may exile two blue cards from your hand rather than pay Commandeer's mana cost.\nGain control of target noncreature spell. You may choose new targets for it.
+status=not supported: spell-modification

@@ -7,3 +7,4 @@ cost={5}{U}
 ability=You may pay {0} rather than pay the mana cost for Zombie creature spells you cast.
 timing=enchantment
 oracle=You may pay {0} rather than pay the mana cost for Zombie creature spells you cast.
+status=needs groovy

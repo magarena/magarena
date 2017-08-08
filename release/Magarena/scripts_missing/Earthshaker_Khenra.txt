@@ -11,3 +11,4 @@ ability=Haste;\
         Eternalize {4}{R}{R}
 timing=fmain
 oracle=Haste\nWhen Earthshaker Khenra enters the battlefield, target creature with power less than or equal to Earthshaker Khenra's power can't block this turn.\nEternalize {4}{R}{R}
+status=needs groovy

@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Choose target creature. At this turn's next end of combat, destroy all creatures that blocked or were blocked by it this turn.
 timing=removal
 oracle=Choose target creature. At this turn's next end of combat, destroy all creatures that blocked or were blocked by it this turn.
+status=needs groovy
