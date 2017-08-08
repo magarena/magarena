@@ -226,6 +226,9 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public synchronized void loadAbilities() {
+        if (isPlayable() && (hasCost() || isLand()) && handActivations.isEmpty()) {
+            add(new MagicHandCastActivation(this));
+        }
         if (startingLoyalty > 0 && etbTriggers.isEmpty()) {
             add(new EntersWithCounterTrigger(
                 MagicCounterType.Loyalty,
@@ -944,12 +947,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void addGraveyardAct(final MagicHandCastActivation activation) {
         graveyardActivations.add(activation);
-    }
-
-    public void setDefaultHandAct() {
-        if (isPlayable() && (hasCost() || isLand())) {
-            add(new MagicHandCastActivation(this));
-        }
     }
 
     public void setHandAct(final MagicHandCastActivation activation) {

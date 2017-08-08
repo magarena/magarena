@@ -108,7 +108,6 @@ public class CardDefinitions {
         assert cardDef.getIndex() == -1 : "cardDefinition has been assigned index";
 
         cardDef.setIndex(cdefIndex.getAndIncrement());
-        cardDef.setDefaultHandAct();
 
         playableCards.put(cardDef.getAsciiName(), cardDef);
     }
