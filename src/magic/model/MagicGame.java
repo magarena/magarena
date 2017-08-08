@@ -583,7 +583,8 @@ public class MagicGame {
         triggers.add(new MagicPermanentTrigger(3, MagicPermanent.NONE, AtUpkeepTrigger.Suspend));
 
         // prevent damage replacement
-        triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, PreventDamageTrigger.GlobalPreventDamageToTarget));
+        triggers.add(new MagicPermanentTrigger(4, MagicPermanent.NONE, PreventDamageTrigger.ProtectionShield));
+        triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, PreventDamageTrigger.PreventDamageShield));
 
         for (final MagicPlayer player : players) {
         for (final MagicPermanent perm : player.getPermanents()) {

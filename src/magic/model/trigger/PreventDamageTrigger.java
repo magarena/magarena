@@ -20,7 +20,7 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
         return damage.getAmount() > 0 && damage.isUnpreventable() == false;
     }
 
-    public static final PreventDamageTrigger GlobalPreventDamageToTarget = new PreventDamageTrigger() {
+    public static final PreventDamageTrigger ProtectionShield = new PreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
@@ -30,10 +30,19 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
                 damage.prevent();
             }
 
+            return MagicEvent.NONE;
+        }
+    };
+
+    public static final PreventDamageTrigger PreventDamageShield = new PreventDamageTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicTarget target = damage.getTarget();
+
             // Prevent x amount of damage
             final int reduction = Math.min(damage.getAmount(), target.getPreventDamage());
             if (reduction > 0) {
-                damage.setAmount(damage.getAmount() - reduction);
+                damage.prevent(reduction);
                 game.doAction(new PreventDamageAction(target, -reduction));
             }
 
