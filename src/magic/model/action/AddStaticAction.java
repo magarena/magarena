@@ -9,6 +9,7 @@ public class AddStaticAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicStatic mstatic;
     private final boolean force;
+    private boolean done;
 
     private AddStaticAction(final MagicPermanent aPermanent, final MagicStatic aStatic, final boolean aForce) {
         permanent = aPermanent;
@@ -31,6 +32,7 @@ public class AddStaticAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         if (permanent == MagicPermanent.NONE || permanent.isValid() || force) {
+            done = true;
             game.addStatic(permanent, mstatic);
             game.setStateCheckRequired();
         }
@@ -38,7 +40,7 @@ public class AddStaticAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (permanent == MagicPermanent.NONE || permanent.isValid() || force) {
+        if (done) {
             game.removeStatic(permanent, mstatic);
         }
     }

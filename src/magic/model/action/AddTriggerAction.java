@@ -10,6 +10,7 @@ public class AddTriggerAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicTrigger<?> trigger;
     private final boolean force;
+    private boolean done;
 
     private AddTriggerAction(final MagicPermanent aPermanent,final MagicTrigger<?> aTrigger,final boolean aForce) {
         permanent = aPermanent;
@@ -32,13 +33,14 @@ public class AddTriggerAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         if (permanent == MagicPermanent.NONE || permanent.isValid() || force) {
-            game.addTrigger(permanent,trigger);
+            done = true;
+            game.addTrigger(permanent, trigger);
         }
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (permanent == MagicPermanent.NONE || permanent.isValid() || force) {
+        if (done) {
             game.removeTrigger(permanent, trigger);
         }
     }
