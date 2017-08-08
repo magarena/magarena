@@ -946,6 +946,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         graveyardActivations.add(activation);
     }
 
+    public void setDefaultHandAct() {
+        if (isPlayable() && (hasCost() || isLand())) {
+            add(new MagicHandCastActivation(this));
+        }
+    }
+
     public void setHandAct(final MagicHandCastActivation activation) {
         assert handActivations.size() == 1 : "removing multiple (" + handActivations.size() + ") card activations";
         handActivations.clear();

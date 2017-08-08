@@ -108,10 +108,7 @@ public class CardDefinitions {
         assert cardDef.getIndex() == -1 : "cardDefinition has been assigned index";
 
         cardDef.setIndex(cdefIndex.getAndIncrement());
-
-        if (cardDef.isPlayable() && (cardDef.hasCost() || cardDef.isLand())) {
-            cardDef.add(new MagicHandCastActivation(cardDef));
-        }
+        cardDef.setDefaultHandAct();
 
         playableCards.put(cardDef.getAsciiName(), cardDef);
     }
