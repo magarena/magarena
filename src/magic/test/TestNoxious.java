@@ -8,9 +8,13 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicUpkeepPhase;
 
 /*
-*Attempt to show the AI 'messing around' with Noxious Revival and Brave the Elements. Occasionally loops.
+* Issue #174, shows AI 'messing around' with Noxious Revival and Brave the Elements. Occasionally loops.
 *
-* Issue #174
+* Correct solution is to loop Noxious Revival twice, then use it on Grizzly
+* Bears. This ensures AI is able to block and also has enough cards in library
+* for player to lose from an empty library first.
+*
+* MCTS level 8 is able to find this solution.
 * */
 
 class TestNoxious extends TestGameBuilder {
