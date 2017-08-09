@@ -1,6 +1,6 @@
 name=Tarmogoyf
-image=http://magiccards.info/scans/en/mm2/165.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/mm3/141.jpg
+image_updated=2017-08-08
 value=4.420
 rarity=M
 type=Creature

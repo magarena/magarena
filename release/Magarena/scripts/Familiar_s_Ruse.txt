@@ -1,5 +1,6 @@
 name=Familiar's Ruse
-image=http://magiccards.info/scans/en/lw/64.jpg
+image=http://magiccards.info/scans/en/mm3/37.jpg
+image_updated=2017-08-08
 value=3.791
 rarity=U
 type=Instant

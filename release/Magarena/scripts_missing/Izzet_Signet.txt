@@ -1,8 +1,8 @@
 name=Izzet Signet
-image=http://magiccards.info/scans/en/cmd/252.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/223.jpg
+image_updated=2017-08-08
 value=4.071
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {U}{R} to your mana pool.

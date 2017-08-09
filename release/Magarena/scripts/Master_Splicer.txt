@@ -1,5 +1,6 @@
 name=Master Splicer
-image=http://magiccards.info/scans/en/nph/16.jpg
+image=http://magiccards.info/scans/en/mm3/15.jpg
+image_updated=2017-08-08
 value=3.356
 rarity=U
 type=Creature

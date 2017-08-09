@@ -1,5 +1,6 @@
 name=Craterhoof Behemoth
-image=http://magiccards.info/scans/en/avr/172.jpg
+image=http://magiccards.info/scans/en/mm3/122.jpg
+image_updated=2017-08-08
 value=3.971
 rarity=M
 type=Creature

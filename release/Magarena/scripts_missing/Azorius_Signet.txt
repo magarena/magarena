@@ -1,8 +1,8 @@
 name=Azorius Signet
-image=http://magiccards.info/scans/en/di/159.jpg
-image_updated=2016-12-13
+image=http://magiccards.info/scans/en/mm3/215.jpg
+image_updated=2017-08-08
 value=3.625
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {W}{U} to your mana pool.

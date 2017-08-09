@@ -1,6 +1,6 @@
 name=Thornscape Battlemage
-image=http://magiccards.info/scans/en/ps/94.jpg
-image_updated=2017-01-11
+image=http://magiccards.info/scans/en/mm3/142.jpg
+image_updated=2017-08-08
 value=3.929
 rarity=U
 type=Creature

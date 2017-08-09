@@ -1,9 +1,10 @@
 name=Stony Silence
-image=http://magiccards.info/scans/en/isd/36.jpg
+image=http://magiccards.info/scans/en/mm3/25.jpg
+image_updated=2017-08-08
 value=4.248
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=artifacts can't activate abilities.
+ability=Artifacts can't activate abilities.
 timing=enchantment
 oracle=Activated abilities of artifacts can't be activated.

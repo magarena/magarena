@@ -1,5 +1,6 @@
 name=Attended Knight
-image=http://magiccards.info/scans/en/m13/5.jpg
+image=http://magiccards.info/scans/en/mm3/1.jpg
+image_updated=2017-08-08
 value=3.704
 rarity=C
 type=Creature

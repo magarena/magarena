@@ -1,5 +1,6 @@
 name=Ogre Jailbreaker
-image=http://magiccards.info/scans/en/rtr/72.jpg
+image=http://magiccards.info/scans/en/mm3/80.jpg
+image_updated=2017-08-08
 value=2.266
 rarity=C
 type=Creature

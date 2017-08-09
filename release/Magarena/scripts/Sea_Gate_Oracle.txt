@@ -1,5 +1,6 @@
 name=Sea Gate Oracle
-image=http://magiccards.info/scans/en/c14/124.jpg
+image=http://magiccards.info/scans/en/mm3/48.jpg
+image_updated=2017-08-08
 value=2.500
 rarity=C
 type=Creature

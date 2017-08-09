@@ -1,7 +1,8 @@
 name=Call of the Conclave
-image=http://magiccards.info/scans/en/rtr/146.jpg
+image=http://magiccards.info/scans/en/mm3/154.jpg
+image_updated=2017-08-08
 value=3.949
-rarity=U
+rarity=C
 type=Sorcery
 cost={G}{W}
 effect=Create a 3/3 green Centaur creature token.

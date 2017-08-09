@@ -1,8 +1,8 @@
 name=Scourge Devil
-image=http://magiccards.info/scans/en/ala/113.jpg
-image_updated=2017-01-07
+image=http://magiccards.info/scans/en/mm3/111.jpg
+image_updated=2017-08-08
 value=2.650
-rarity=U
+rarity=C
 type=Creature
 subtype=Devil
 cost={4}{R}

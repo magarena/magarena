@@ -1,5 +1,6 @@
 name=Unburial Rites
-image=http://magiccards.info/scans/en/isd/122.jpg
+image=http://magiccards.info/scans/en/mm3/85.jpg
+image_updated=2017-08-08
 value=3.974
 rarity=U
 type=Sorcery

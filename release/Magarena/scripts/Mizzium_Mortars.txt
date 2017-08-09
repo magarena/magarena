@@ -1,6 +1,6 @@
 name=Mizzium Mortars
-image=http://magiccards.info/scans/en/rtr/101.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/101.jpg
+image_updated=2017-08-08
 value=3.980
 rarity=R
 type=Sorcery

@@ -1,5 +1,6 @@
 name=Thragtusk
-image=http://magiccards.info/scans/en/m13/193.jpg
+image=http://magiccards.info/scans/en/mm3/143.jpg
+image_updated=2017-08-08
 value=3.964
 rarity=R
 type=Creature

@@ -1,8 +1,8 @@
 name=Orzhov Signet
-image=http://magiccards.info/scans/en/cmd/255.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/224.jpg
+image_updated=2017-08-08
 value=3.522
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {W}{B} to your mana pool.

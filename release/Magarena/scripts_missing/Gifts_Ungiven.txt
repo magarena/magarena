@@ -1,5 +1,6 @@
 name=Gifts Ungiven
-image=http://magiccards.info/scans/en/mma/46.jpg
+image=http://magiccards.info/scans/en/mm3/40.jpg
+image_updated=2017-08-08
 value=4.599
 rarity=R
 type=Instant

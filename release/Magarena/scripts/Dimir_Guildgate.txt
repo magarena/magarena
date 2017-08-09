@@ -1,5 +1,6 @@
 name=Dimir Guildgate
-image=http://magiccards.info/scans/en/dgm/148.jpg
+image=http://magiccards.info/scans/en/mm3/234.jpg
+image_updated=2017-08-08
 value=3.050
 rarity=C
 type=Land

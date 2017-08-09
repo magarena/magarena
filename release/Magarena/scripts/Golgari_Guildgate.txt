@@ -1,6 +1,6 @@
 name=Golgari Guildgate
-image=http://magiccards.info/scans/en/dgm/149.jpg
-image_updated=2016-12-04
+image=http://magiccards.info/scans/en/mm3/235.jpg
+image_updated=2017-08-08
 value=3.400
 rarity=C
 type=Land

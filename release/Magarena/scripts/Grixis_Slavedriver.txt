@@ -1,7 +1,8 @@
 name=Grixis Slavedriver
-image=http://magiccards.info/scans/en/cfx/46.jpg
+image=http://magiccards.info/scans/en/mm3/74.jpg
+image_updated=2017-08-08
 value=3.032
-rarity=U
+rarity=C
 type=Creature
 subtype=Zombie,Giant
 cost={5}{B}

@@ -1,5 +1,6 @@
 name=Zur the Enchanter
-image=http://magiccards.info/scans/en/cs/135.jpg
+image=http://magiccards.info/scans/en/mm3/204.jpg
+image_updated=2017-08-08
 value=4.186
 rarity=R
 type=Legendary,Creature

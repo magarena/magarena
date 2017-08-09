@@ -1,5 +1,6 @@
 name=Jungle Shrine
-image=http://magiccards.info/scans/en/ala/226.jpg
+image=http://magiccards.info/scans/en/mm3/238.jpg
+image_updated=2017-08-08
 value=3.958
 rarity=U
 type=Land

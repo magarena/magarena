@@ -1,5 +1,6 @@
 name=Marsh Flats
-image=http://magiccards.info/scans/en/zen/219.jpg
+image=http://magiccards.info/scans/en/mm3/239.jpg
+image_updated=2017-08-08
 value=4.477
 rarity=R
 type=Land

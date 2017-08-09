@@ -1,5 +1,6 @@
 name=Kor Hookmaster
-image=http://magiccards.info/scans/en/ema/18.jpg
+image=http://magiccards.info/scans/en/mm3/10.jpg
+image_updated=2017-08-08
 value=3.000
 rarity=C
 type=Creature

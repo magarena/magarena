@@ -1,5 +1,6 @@
 name=Blood Moon
-image=http://magiccards.info/scans/en/mma/106.jpg
+image=http://magiccards.info/scans/en/mm3/90.jpg
+image_updated=2017-08-08
 value=4.483
 rarity=R
 type=Enchantment

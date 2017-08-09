@@ -1,7 +1,8 @@
 name=Gruul Signet
-image=http://magiccards.info/scans/en/cmd/250.jpg
+image=http://magiccards.info/scans/en/mm3/222.jpg
+image_updated=2017-08-08
 value=3.482
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {R}{G} to your mana pool.

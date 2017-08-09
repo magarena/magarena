@@ -1,5 +1,6 @@
 name=Domri Rade
-image=http://magiccards.info/scans/en/gtc/156.jpg
+image=http://magiccards.info/scans/en/mm3/161.jpg
+image_updated=2017-08-08
 value=3.672
 rarity=M
 type=Planeswalker

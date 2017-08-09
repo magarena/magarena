@@ -1,5 +1,6 @@
 name=Mudbutton Torchrunner
-image=http://magiccards.info/scans/en/pc2/49.jpg
+image=http://magiccards.info/scans/en/mm3/104.jpg
+image_updated=2017-08-08
 value=3.058
 rarity=C
 type=Creature

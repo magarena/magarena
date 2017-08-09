@@ -1,6 +1,6 @@
 name=Abyssal Specter
-image=http://magiccards.info/scans/en/8e/117.jpg
-image_updated=2016-11-20
+image=http://magiccards.info/scans/en/mm3/59.jpg
+image_updated=2017-08-08
 value=3.700
 rarity=U
 type=Creature

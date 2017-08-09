@@ -1,7 +1,8 @@
 name=Burning-Tree Emissary
-image=http://magiccards.info/scans/en/gtc/216.jpg
+image=http://magiccards.info/scans/en/mm3/207.jpg
+image_updated=2017-08-08
 value=4.044
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Shaman
 cost={R/G}{R/G}

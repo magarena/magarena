@@ -1,7 +1,8 @@
 name=Falkenrath Noble
-image=http://magiccards.info/scans/en/isd/100.jpg
+image=http://magiccards.info/scans/en/mm3/70.jpg
+image_updated=2017-08-08
 value=3.818
-rarity=U
+rarity=C
 type=Creature
 subtype=Vampire
 cost={3}{B}

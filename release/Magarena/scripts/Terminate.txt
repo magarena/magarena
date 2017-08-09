@@ -1,9 +1,9 @@
 name=Terminate
-image=http://magiccards.info/scans/en/cmd/231.jpg
-image_updated=2017-01-10
+image=http://magiccards.info/scans/en/mm3/194.jpg
+image_updated=2017-08-08
 value=4.272
 removal=5
-rarity=C
+rarity=U
 type=Instant
 cost={B}{R}
 effect=Destroy target creature. It can't be regenerated.

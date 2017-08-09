@@ -1,7 +1,8 @@
 name=Compulsive Research
-image=http://magiccards.info/scans/en/c14/102.jpg
+image=http://magiccards.info/scans/en/mm3/33.jpg
+image_updated=2017-08-08
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={2}{U}
 timing=main

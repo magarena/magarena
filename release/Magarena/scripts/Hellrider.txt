@@ -1,6 +1,6 @@
 name=Hellrider
-image=http://magiccards.info/scans/en/dka/93.jpg
-image_updated=2016-12-10
+image=http://magiccards.info/scans/en/mm3/98.jpg
+image_updated=2017-08-08
 value=3.712
 rarity=R
 type=Creature

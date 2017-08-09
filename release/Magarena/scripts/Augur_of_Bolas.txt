@@ -1,7 +1,8 @@
 name=Augur of Bolas
-image=http://magiccards.info/scans/en/m13/43.jpg
+image=http://magiccards.info/scans/en/mm3/30.jpg
+image_updated=2017-08-08
 value=3.971
-rarity=U
+rarity=C
 type=Creature
 subtype=Merfolk,Wizard
 cost={1}{U}

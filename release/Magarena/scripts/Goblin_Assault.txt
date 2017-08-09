@@ -1,7 +1,8 @@
 name=Goblin Assault
-image=http://magiccards.info/scans/en/ala/101.jpg
+image=http://magiccards.info/scans/en/mm3/95.jpg
+image_updated=2017-08-08
 value=2.976
-rarity=R
+rarity=U
 type=Enchantment
 cost={2}{R}
 ability=At the beginning of your upkeep, create a 1/1 red Goblin creature token with haste.;\

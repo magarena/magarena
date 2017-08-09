@@ -1,7 +1,8 @@
 name=Cower in Fear
-image=http://magiccards.info/scans/en/m13/84.jpg
+image=http://magiccards.info/scans/en/mm3/62.jpg
+image_updated=2017-08-08
 value=2.676
-rarity=U
+rarity=C
 type=Instant
 cost={1}{B}{B}
 ability=Cast SN with AI only if an opponent controls a creature.

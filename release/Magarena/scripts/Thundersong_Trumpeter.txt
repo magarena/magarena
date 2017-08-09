@@ -1,7 +1,8 @@
 name=Thundersong Trumpeter
-image=http://magiccards.info/scans/en/rav/235.jpg
+image=http://magiccards.info/scans/en/mm3/195.jpg
+image_updated=2017-08-08
 value=3.790
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={R}{W}

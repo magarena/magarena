@@ -1,7 +1,8 @@
 name=Slime Molding
-image=http://magiccards.info/scans/en/rtr/135.jpg
+image=http://magiccards.info/scans/en/mm3/137.jpg
+image_updated=2017-08-08
 value=3.330
-rarity=U
+rarity=C
 type=Sorcery
 cost={X}{G}
 timing=main

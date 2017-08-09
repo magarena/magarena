@@ -1,7 +1,8 @@
 name=Graceful Reprieve
-image=http://magiccards.info/scans/en/mt/11.jpg
+image=http://magiccards.info/scans/en/mm3/8.jpg
+image_updated=2017-08-08
 value=3.569
-rarity=U
+rarity=C
 type=Instant
 cost={1}{W}
 effect=When target creature dies this turn, return that card to the battlefield under its owner's control.

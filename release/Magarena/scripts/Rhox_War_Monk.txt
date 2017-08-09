@@ -1,5 +1,6 @@
 name=Rhox War Monk
-image=http://magiccards.info/scans/en/ala/188.jpg
+image=http://magiccards.info/scans/en/mm3/180.jpg
+image_updated=2017-08-08
 value=4.016
 rarity=U
 type=Creature

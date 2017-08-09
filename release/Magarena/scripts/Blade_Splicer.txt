@@ -1,5 +1,6 @@
 name=Blade Splicer
-image=http://magiccards.info/scans/en/nph/4.jpg
+image=http://magiccards.info/scans/en/mm3/3.jpg
+image_updated=2017-08-08
 value=3.802
 rarity=R
 type=Creature

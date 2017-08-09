@@ -1,5 +1,6 @@
 name=Dynacharge
-image=http://magiccards.info/scans/en/rtr/92.jpg
+image=http://magiccards.info/scans/en/mm3/94.jpg
+image_updated=2017-08-08
 value=2.781
 rarity=C
 type=Instant

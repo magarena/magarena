@@ -1,6 +1,6 @@
 name=Coiling Oracle
-image=http://magiccards.info/scans/en/di/107.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/157.jpg
+image_updated=2017-08-08
 value=4.300
 rarity=C
 type=Creature

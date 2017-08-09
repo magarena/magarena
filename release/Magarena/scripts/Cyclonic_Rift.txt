@@ -1,5 +1,6 @@
 name=Cyclonic Rift
-image=http://magiccards.info/scans/en/c14/104.jpg
+image=http://magiccards.info/scans/en/mm3/35.jpg
+image_updated=2017-08-08
 value=4.039
 rarity=R
 type=Instant

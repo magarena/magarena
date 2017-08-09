@@ -1,5 +1,6 @@
 name=Strength in Numbers
-image=http://magiccards.info/scans/en/ts/224.jpg
+image=http://magiccards.info/scans/en/mm3/138.jpg
+image_updated=2017-08-08
 value=3.230
 rarity=C
 type=Instant

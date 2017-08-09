@@ -1,5 +1,6 @@
 name=Past in Flames
-image=http://magiccards.info/scans/en/isd/155.jpg
+image=http://magiccards.info/scans/en/mm3/105.jpg
+image_updated=2017-08-08
 value=4.183
 rarity=M
 type=Sorcery

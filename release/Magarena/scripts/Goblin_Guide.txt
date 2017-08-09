@@ -1,5 +1,6 @@
 name=Goblin Guide
-image=http://magiccards.info/scans/en/zen/126.jpg
+image=http://magiccards.info/scans/en/mm3/96.jpg
+image_updated=2017-08-08
 value=4.307
 rarity=R
 type=Creature

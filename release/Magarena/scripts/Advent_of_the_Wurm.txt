@@ -1,5 +1,6 @@
 name=Advent of the Wurm
-image=http://magiccards.info/scans/en/dgm/51.jpg
+image=http://magiccards.info/scans/en/mm3/147.jpg
+image_updated=2017-08-08
 value=3.887
 rarity=R
 type=Instant

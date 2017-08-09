@@ -1,5 +1,6 @@
 name=Tattermunge Witch
-image=http://magiccards.info/scans/en/shm/220.jpg
+image=http://magiccards.info/scans/en/mm3/212.jpg
+image_updated=2017-08-08
 value=3.442
 rarity=U
 type=Creature

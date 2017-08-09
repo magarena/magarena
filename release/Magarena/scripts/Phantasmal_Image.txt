@@ -1,5 +1,6 @@
 name=Phantasmal Image
-image=http://magiccards.info/scans/en/m12/72.jpg
+image=http://magiccards.info/scans/en/mm3/46.jpg
+image_updated=2017-08-08
 value=4.315
 rarity=R
 type=Creature

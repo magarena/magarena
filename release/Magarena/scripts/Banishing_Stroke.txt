@@ -1,5 +1,6 @@
 name=Banishing Stroke
-image=http://magiccards.info/scans/en/avr/7.jpg
+image=http://magiccards.info/scans/en/mm3/2.jpg
+image_updated=2017-08-08
 value=3.526
 rarity=U
 type=Instant

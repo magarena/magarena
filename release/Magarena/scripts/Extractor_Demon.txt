@@ -1,6 +1,6 @@
 name=Extractor Demon
-image=http://magiccards.info/scans/en/cmd/81.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/69.jpg
+image_updated=2017-08-08
 value=3.178
 rarity=R
 type=Creature

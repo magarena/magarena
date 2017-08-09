@@ -1,5 +1,6 @@
 name=Rakdos Guildgate
-image=http://magiccards.info/scans/en/dgm/154.jpg
+image=http://magiccards.info/scans/en/mm3/242.jpg
+image_updated=2017-08-08
 value=3.208
 rarity=C
 type=Land

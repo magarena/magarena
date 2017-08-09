@@ -1,5 +1,6 @@
 name=Tower Gargoyle
-image=http://magiccards.info/scans/en/ala/205.jpg
+image=http://magiccards.info/scans/en/mm3/196.jpg
+image_updated=2017-08-08
 value=3.808
 rarity=U
 type=Artifact,Creature

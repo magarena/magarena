@@ -1,5 +1,6 @@
 name=Wall of Frost
-image=http://magiccards.info/scans/en/m15/83.jpg
+image=http://magiccards.info/scans/en/mm3/56.jpg
+image_updated=2017-08-08
 value=3.214
 rarity=U
 type=Creature

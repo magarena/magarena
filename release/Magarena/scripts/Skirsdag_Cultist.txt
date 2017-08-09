@@ -1,6 +1,6 @@
 name=Skirsdag Cultist
-image=http://magiccards.info/scans/en/isd/163.jpg
-image_updated=2017-01-08
+image=http://magiccards.info/scans/en/mm3/112.jpg
+image_updated=2017-08-08
 value=2.650
 rarity=U
 type=Creature

@@ -1,5 +1,6 @@
 name=Gideon's Lawkeeper
-image=http://magiccards.info/scans/en/m12/18.jpg
+image=http://magiccards.info/scans/en/mm3/7.jpg
+image_updated=2017-08-08
 value=4.095
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Kathari Bomber
-image=http://magiccards.info/scans/en/arb/41.jpg
-image_updated=2016-12-21
+image=http://magiccards.info/scans/en/mm3/172.jpg
+image_updated=2017-08-08
 value=2.500
 rarity=C
 type=Creature

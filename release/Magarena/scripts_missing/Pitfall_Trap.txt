@@ -1,7 +1,8 @@
 name=Pitfall Trap
-image=http://magiccards.info/scans/en/zen/32.jpg
+image=http://magiccards.info/scans/en/mm3/18.jpg
+image_updated=2017-08-08
 value=3.058
-rarity=U
+rarity=C
 type=Instant
 subtype=Trap
 cost={2}{W}

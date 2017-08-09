@@ -1,5 +1,6 @@
 name=Damnation
-image=http://magiccards.info/scans/en/pc/85.jpg
+image=http://magiccards.info/scans/en/mm3/63.jpg
+image_updated=2017-08-08
 value=4.424
 removal=2
 rarity=R

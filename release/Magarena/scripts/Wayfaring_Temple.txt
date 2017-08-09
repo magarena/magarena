@@ -1,7 +1,8 @@
 name=Wayfaring Temple
-image=http://magiccards.info/scans/en/rtr/209.jpg
+image=http://magiccards.info/scans/en/mm3/202.jpg
+image_updated=2017-08-08
 value=3.892
-rarity=R
+rarity=U
 type=Creature
 subtype=Elemental
 cost={1}{G}{W}

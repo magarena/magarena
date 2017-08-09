@@ -1,5 +1,6 @@
 name=Fists of Ironwood
-image=http://magiccards.info/scans/en/cmd/156.jpg
+image=http://magiccards.info/scans/en/mm3/126.jpg
+image_updated=2017-08-08
 value=3.568
 rarity=C
 type=Enchantment

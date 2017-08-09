@@ -1,5 +1,6 @@
 name=Cruel Ultimatum
-image=http://magiccards.info/scans/en/ala/164.jpg
+image=http://magiccards.info/scans/en/mm3/158.jpg
+image_updated=2017-08-08
 value=3.975
 rarity=R
 type=Sorcery

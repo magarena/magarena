@@ -1,6 +1,6 @@
 name=Lone Missionary
-image=http://magiccards.info/scans/en/roe/34.jpg
-image_updated=2016-12-21
+image=http://magiccards.info/scans/en/mm3/14.jpg
+image_updated=2017-08-08
 value=4.000
 rarity=C
 type=Creature

@@ -1,7 +1,8 @@
 name=Revive
-image=http://magiccards.info/scans/en/m13/187.jpg
+image=http://magiccards.info/scans/en/mm3/133.jpg
+image_updated=2017-08-08
 value=4.138
-rarity=U
+rarity=C
 type=Sorcery
 cost={1}{G}
 effect=Return target green card from your graveyard to your hand.

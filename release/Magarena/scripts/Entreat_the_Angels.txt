@@ -1,5 +1,6 @@
 name=Entreat the Angels
-image=http://magiccards.info/scans/en/avr/20.jpg
+image=http://magiccards.info/scans/en/mm3/4.jpg
+image_updated=2017-08-08
 value=3.950
 rarity=M
 type=Sorcery

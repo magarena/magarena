@@ -1,5 +1,6 @@
 name=Vampire Aristocrat
-image=http://magiccards.info/scans/en/m10/117.jpg
+image=http://magiccards.info/scans/en/mm3/86.jpg
+image_updated=2017-08-08
 value=3.452
 rarity=C
 type=Creature

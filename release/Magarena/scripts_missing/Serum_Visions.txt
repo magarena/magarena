@@ -1,7 +1,8 @@
 name=Serum Visions
-image=http://magiccards.info/scans/en/5dn/36.jpg
+image=http://magiccards.info/scans/en/mm3/49.jpg
+image_updated=2017-08-08
 value=4.194
-rarity=C
+rarity=U
 type=Sorcery
 cost={U}
 effect=Draw a card. Scry 2.

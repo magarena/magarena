@@ -1,5 +1,6 @@
 name=Venser, Shaper Savant
-image=http://magiccards.info/scans/en/fut/46.jpg
+image=http://magiccards.info/scans/en/mm3/55.jpg
+image_updated=2017-08-08
 value=3.949
 rarity=R
 type=Legendary,Creature

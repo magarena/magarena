@@ -1,5 +1,6 @@
 name=Bonfire of the Damned
-image=http://magiccards.info/scans/en/avr/129.jpg
+image=http://magiccards.info/scans/en/mm3/91.jpg
+image_updated=2017-08-08
 value=4.000
 removal=2
 rarity=M

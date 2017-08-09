@@ -1,9 +1,10 @@
 name=Auger Spree
-image=http://magiccards.info/scans/en/rtr/144.jpg
+image=http://magiccards.info/scans/en/mm3/151.jpg
+image_updated=2017-08-08
 value=3.149
 rarity=C
 type=Instant
 cost={1}{B}{R}
-effect=Target creature gets +4/+4 until end of turn.
+effect=Target creature gets +4/-4 until end of turn.
 timing=pump
 oracle=Target creature gets +4/-4 until end of turn.

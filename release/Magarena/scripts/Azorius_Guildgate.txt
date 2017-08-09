@@ -1,5 +1,6 @@
 name=Azorius Guildgate
-image=http://magiccards.info/scans/en/dgm/146.jpg
+image=http://magiccards.info/scans/en/mm3/230.jpg
+image_updated=2017-08-08
 value=3.656
 rarity=C
 type=Land

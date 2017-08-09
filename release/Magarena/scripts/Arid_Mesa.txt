@@ -1,5 +1,6 @@
 name=Arid Mesa
-image=http://magiccards.info/scans/en/zen/211.jpg
+image=http://magiccards.info/scans/en/mm3/229.jpg
+image_updated=2017-08-08
 value=4.478
 rarity=R
 type=Land

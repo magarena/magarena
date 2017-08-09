@@ -1,7 +1,8 @@
 name=Selesnya Signet
-image=http://magiccards.info/scans/en/cmd/258.jpg
+image=http://magiccards.info/scans/en/mm3/226.jpg
+image_updated=2017-08-08
 value=3.750
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {G}{W} to your mana pool.

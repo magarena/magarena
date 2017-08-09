@@ -1,5 +1,6 @@
 name=Gruul War Chant
-image=http://magiccards.info/scans/en/dgm/75.jpg
+image=http://magiccards.info/scans/en/mm3/170.jpg
+image_updated=2017-08-08
 value=3.775
 rarity=U
 type=Enchantment

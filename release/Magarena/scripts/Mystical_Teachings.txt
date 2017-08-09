@@ -1,5 +1,6 @@
 name=Mystical Teachings
-image=http://magiccards.info/scans/en/ts/69.jpg
+image=http://magiccards.info/scans/en/mm3/44.jpg
+image_updated=2017-08-08
 value=4.269
 rarity=C
 type=Instant

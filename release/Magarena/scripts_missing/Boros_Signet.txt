@@ -1,8 +1,8 @@
 name=Boros Signet
-image=http://magiccards.info/scans/en/cmd/243.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/217.jpg
+image_updated=2017-08-08
 value=3.538
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {R}{W} to your mana pool.

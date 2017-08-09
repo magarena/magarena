@@ -1,5 +1,6 @@
 name=Griselbrand
-image=http://magiccards.info/scans/en/avr/106.jpg
+image=http://magiccards.info/scans/en/mm3/72.jpg
+image_updated=2017-08-08
 value=4.311
 rarity=M
 type=Legendary,Creature

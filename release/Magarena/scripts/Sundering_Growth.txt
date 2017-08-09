@@ -1,5 +1,6 @@
 name=Sundering Growth
-image=http://magiccards.info/scans/en/rtr/223.jpg
+image=http://magiccards.info/scans/en/mm3/211.jpg
+image_updated=2017-08-08
 value=3.921
 rarity=C
 type=Instant

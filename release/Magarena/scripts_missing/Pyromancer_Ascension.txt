@@ -1,5 +1,6 @@
 name=Pyromancer Ascension
-image=http://magiccards.info/scans/en/zen/143.jpg
+image=http://magiccards.info/scans/en/mm3/108.jpg
+image_updated=2017-08-08
 value=4.066
 rarity=R
 type=Enchantment

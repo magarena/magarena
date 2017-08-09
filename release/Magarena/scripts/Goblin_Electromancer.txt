@@ -1,6 +1,6 @@
 name=Goblin Electromancer
-image=http://magiccards.info/scans/en/rtr/163.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/166.jpg
+image_updated=2017-08-08
 value=4.050
 rarity=C
 type=Creature

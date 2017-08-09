@@ -1,8 +1,9 @@
 name=Molten Rain
-image=http://magiccards.info/scans/en/mi/101.jpg
+image=http://magiccards.info/scans/en/mm3/103.jpg
+image_updated=2017-08-08
 value=4.295
 removal=3
-rarity=C
+rarity=U
 type=Sorcery
 cost={1}{R}{R}
 timing=removal

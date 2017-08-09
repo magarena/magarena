@@ -1,7 +1,8 @@
 name=Tandem Lookout
-image=http://magiccards.info/scans/en/avr/80.jpg
+image=http://magiccards.info/scans/en/mm3/53.jpg
+image_updated=2017-08-08
 value=3.810
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Scout
 cost={2}{U}

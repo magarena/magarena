@@ -1,5 +1,6 @@
 name=Might of Old Krosa
-image=http://magiccards.info/scans/en/ts/204.jpg
+image=http://magiccards.info/scans/en/mm3/130.jpg
+image_updated=2017-08-08
 value=4.134
 rarity=U
 type=Instant

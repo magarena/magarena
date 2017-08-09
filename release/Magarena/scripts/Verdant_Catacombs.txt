@@ -1,5 +1,6 @@
 name=Verdant Catacombs
-image=http://magiccards.info/scans/en/zen/229.jpg
+image=http://magiccards.info/scans/en/mm3/249.jpg
+image_updated=2017-08-08
 value=4.480
 rarity=R
 type=Land

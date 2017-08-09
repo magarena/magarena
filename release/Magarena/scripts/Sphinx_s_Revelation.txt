@@ -1,5 +1,6 @@
 name=Sphinx's Revelation
-image=http://magiccards.info/scans/en/rtr/200.jpg
+image=http://magiccards.info/scans/en/mm3/187.jpg
+image_updated=2017-08-08
 value=4.013
 rarity=M
 type=Instant

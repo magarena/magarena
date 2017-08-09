@@ -1,9 +1,9 @@
 name=Seal of Doom
-image=http://magiccards.info/scans/en/di/53.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/mm3/83.jpg
+image_updated=2017-08-08
 value=4.000
 removal=3
-rarity=C
+rarity=U
 type=Enchantment
 cost={2}{B}
 ability=Sacrifice SN: Destroy target nonblack creature. It can't be regenerated.

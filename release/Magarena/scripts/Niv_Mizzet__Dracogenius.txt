@@ -1,7 +1,8 @@
 name=Niv-Mizzet, Dracogenius
-image=http://magiccards.info/scans/en/rtr/183.jpg
+image=http://magiccards.info/scans/en/mm3/175.jpg
+image_updated=2017-08-08
 value=3.925
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Dragon,Wizard
 cost={2}{U}{U}{R}{R}

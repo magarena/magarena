@@ -1,5 +1,6 @@
 name=Crippling Chill
-image=http://magiccards.info/scans/en/ktk/35.jpg
+image=http://magiccards.info/scans/en/mm3/34.jpg
+image_updated=2017-08-08
 value=3.125
 rarity=C
 type=Instant

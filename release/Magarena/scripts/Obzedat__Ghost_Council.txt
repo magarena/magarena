@@ -1,7 +1,8 @@
 name=Obzedat, Ghost Council
-image=http://magiccards.info/scans/en/gtc/182.jpg
+image=http://magiccards.info/scans/en/mm3/176.jpg
+image_updated=2017-08-08
 value=4.035
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Spirit,Advisor
 cost={1}{W}{W}{B}{B}

@@ -1,7 +1,8 @@
 name=Soul Ransom
-image=http://magiccards.info/scans/en/gtc/198.jpg
+image=http://magiccards.info/scans/en/mm3/186.jpg
+image_updated=2017-08-08
 value=3.303
-rarity=R
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}{B}

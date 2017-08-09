@@ -1,7 +1,8 @@
 name=Cavern of Souls
-image=http://magiccards.info/scans/en/avr/226.jpg
+image=http://magiccards.info/scans/en/mm3/232.jpg
+image_updated=2017-08-08
 value=4.305
-rarity=R
+rarity=M
 type=Land
 ability=As SN enters the battlefield, choose a creature type.;\
         {T}: Add {C} to your mana pool.;\

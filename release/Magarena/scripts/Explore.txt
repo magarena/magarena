@@ -1,6 +1,6 @@
 name=Explore
-image=http://magiccards.info/scans/en/wwk/99.jpg
-image_updated=2016-12-02
+image=http://magiccards.info/scans/en/mm3/125.jpg
+image_updated=2017-08-08
 value=3.801
 rarity=C
 type=Sorcery

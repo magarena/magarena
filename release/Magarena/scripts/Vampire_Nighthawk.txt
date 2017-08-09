@@ -1,13 +1,12 @@
 name=Vampire Nighthawk
-image=http://magiccards.info/scans/en/m13/112.jpg
+image=http://magiccards.info/scans/en/mm3/87.jpg
+image_updated=2017-08-08
 value=4.000
 rarity=U
 type=Creature
 subtype=Vampire,Shaman
 cost={1}{B}{B}
 pt=2/3
-ability=Flying;\
-        Deathtouch;\
-        Lifelink
+ability=Flying, deathtouch, lifelink
 timing=main
-oracle=Flying\nDeathtouch\nLifelink
+oracle=Flying, deathtouch, lifelink

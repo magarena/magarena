@@ -1,7 +1,8 @@
 name=Arachnus Spinner
-image=http://magiccards.info/scans/en/m12/162.jpg
+image=http://magiccards.info/scans/en/mm3/117.jpg
+image_updated=2017-08-08
 value=4.135
-rarity=R
+rarity=U
 type=Creature
 subtype=Spider
 cost={5}{G}

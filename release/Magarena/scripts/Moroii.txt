@@ -1,5 +1,6 @@
 name=Moroii
-image=http://magiccards.info/scans/en/rav/216.jpg
+image=http://magiccards.info/scans/en/mm3/173.jpg
+image_updated=2017-08-08
 value=3.141
 rarity=U
 type=Creature

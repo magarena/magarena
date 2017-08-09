@@ -1,5 +1,6 @@
 name=Recover
-image=http://magiccards.info/scans/en/10e/172.jpg
+image=http://magiccards.info/scans/en/mm3/82.jpg
+image_updated=2017-08-08
 value=3.534
 rarity=C
 type=Sorcery

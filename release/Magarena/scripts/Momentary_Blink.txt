@@ -1,5 +1,6 @@
 name=Momentary Blink
-image=http://magiccards.info/scans/en/ts/29.jpg
+image=http://magiccards.info/scans/en/mm3/16.jpg
+image_updated=2017-08-08
 value=4.189
 rarity=C
 type=Instant

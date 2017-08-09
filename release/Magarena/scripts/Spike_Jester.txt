@@ -1,7 +1,8 @@
 name=Spike Jester
-image=http://magiccards.info/scans/en/dgm/106.jpg
+image=http://magiccards.info/scans/en/mm3/188.jpg
+image_updated=2017-08-08
 value=3.796
-rarity=U
+rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={B}{R}

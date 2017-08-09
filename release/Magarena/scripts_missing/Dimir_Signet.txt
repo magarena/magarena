@@ -1,7 +1,8 @@
 name=Dimir Signet
-image=http://magiccards.info/scans/en/cmd/246.jpg
+image=http://magiccards.info/scans/en/mm3/219.jpg
+image_updated=2017-08-08
 value=3.750
-rarity=C
+rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {U}{B} to your mana pool.

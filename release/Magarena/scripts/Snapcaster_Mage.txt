@@ -1,7 +1,8 @@
 name=Snapcaster Mage
-image=http://magiccards.info/scans/en/isd/78.jpg
+image=http://magiccards.info/scans/en/mm3/50.jpg
+image_updated=2017-08-08
 value=4.361
-rarity=R
+rarity=M
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}

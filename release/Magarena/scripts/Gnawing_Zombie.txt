@@ -1,5 +1,6 @@
 name=Gnawing Zombie
-image=http://magiccards.info/scans/en/m14/99.jpg
+image=http://magiccards.info/scans/en/mm3/71.jpg
+image_updated=2017-08-08
 value=3.293
 rarity=C
 type=Creature

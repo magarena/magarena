@@ -1,6 +1,6 @@
 name=Aethermage's Touch
-image=http://magiccards.info/scans/en/di/101.jpg
-image_updated=2016-09-27
+image=http://magiccards.info/scans/en/mm3/148.jpg
+image_updated=2017-08-08
 value=3.278
 rarity=R
 type=Instant

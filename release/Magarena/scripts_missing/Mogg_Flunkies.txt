@@ -1,5 +1,6 @@
 name=Mogg Flunkies
-image=http://magiccards.info/scans/en/m13/143.jpg
+image=http://magiccards.info/scans/en/mm3/102.jpg
+image_updated=2017-08-08
 value=2.500
 rarity=C
 type=Creature
