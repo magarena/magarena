@@ -10,4 +10,3 @@ ability=Other Horses you control have indestructible.;\
         At the beginning of each end step, if you gained life this turn, create a 5/5 white Horse creature token.
 timing=main
 oracle=Other Horses you control have indestructible.\nAt the beginning of each end step, if you gained life this turn, create a 5/5 white Horse creature token.
-status=needs groovy
