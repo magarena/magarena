@@ -2987,7 +2987,7 @@ public enum MagicRuleEventAction {
         }
     },
     CastFreeSpell(
-        "cast " + ARG.CARDS + " without paying its mana cost(?<exile>\\. If (that card|a card cast this way) would be put into (your|a) graveyard this turn, exile it instead)?",
+        "(cast|play) " + ARG.CARDS + " without paying its mana cost(?<exile>\\. If (that card|a card cast this way) would be put into (your|a) graveyard this turn, exile it instead)?",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
