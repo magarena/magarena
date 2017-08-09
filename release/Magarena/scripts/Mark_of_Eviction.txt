@@ -7,7 +7,6 @@ subtype=Aura
 cost={U}
 ability=Enchant creature
 timing=aura
-enchant=exile,creature
+enchant=bounce,creature
 oracle=Enchant creature\nAt the beginning of your upkeep, return enchanted creature and all Auras attached to that creature to their owners' hands.
-# Would prefer a 'bounce' target instead of exile
 requires_groovy_code
