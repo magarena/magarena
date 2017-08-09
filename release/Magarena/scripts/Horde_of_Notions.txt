@@ -10,4 +10,3 @@ ability=Vigilance, trample, haste;\
         {W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.
 timing=main
 oracle=Vigilance, trample, haste\n{W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.
-status=needs groovy
