@@ -26,7 +26,11 @@ public class ARG {
 
     public static final String NUMBER = "(?<number>[0-9]+)";
     public static int number(final Matcher m) {
-        return Integer.parseInt(m.group("number"));
+        if (m.group("number") == null) {
+            return 1;
+        } else {
+            return Integer.parseInt(m.group("number"));
+        }
     }
 
     public static final String AMOUNT = "(?<amount>(a|an|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|twenty|x|[0-9]+))";
