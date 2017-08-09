@@ -6,8 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
 ability=Enchant creature;\
-        {U}: Return enchanted creature and SN to their owners' hands.
+        {U}: Return enchanted creature to its owner's hand~and return SN to its owner's hand.
 timing=aura
-enchant=default,creature
+enchant=bounce,creature
 oracle=Enchant creature\n{U}: Return enchanted creature and Disappear to their owners' hands.
-status=needs groovy
