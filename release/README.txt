@@ -77,7 +77,7 @@ Release 1.88 (August 27, 2017)
 ============
 
 - fixed the following bugs:
-  * Augur Spree gave +4/+4
+  * Auger Spree's effect gave +4/+4, should be +4/-4
 
 Release 1.87 (July 31, 2017)
 ============
