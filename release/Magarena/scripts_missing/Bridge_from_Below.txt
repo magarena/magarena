@@ -4,8 +4,8 @@ value=4.470
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
-ability=Whenever a nontoken creature is put into your graveyard from the battlefield, if SN is in your graveyard, put a 2/2 black Zombie creature token onto the battlefield.;\
+ability=Whenever a nontoken creature is put into your graveyard from the battlefield, if SN is in your graveyard, create a 2/2 black Zombie creature token.;\
         When a creature is put into an opponent's graveyard from the battlefield, if SN is in your graveyard, exile SN.
 timing=enchantment
-oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, if Bridge from Below is in your graveyard, put a 2/2 black Zombie creature token onto the battlefield.\nWhen a creature is put into an opponent's graveyard from the battlefield, if Bridge from Below is in your graveyard, exile Bridge from Below.
+oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, if Bridge from Below is in your graveyard, create a 2/2 black Zombie creature token.\nWhen a creature is put into an opponent's graveyard from the battlefield, if Bridge from Below is in your graveyard, exile Bridge from Below.
 status=not supported: trigger-from-graveyard

@@ -8,7 +8,7 @@ cost={3}{W}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of Soldiers you control.;\
         Suspend X—{X}{W}{W}. X can't be 0.;\
-        Whenever a time counter is removed from SN while it's exiled, put a 1/1 white Soldier creature token onto the battlefield.
+        Whenever a time counter is removed from SN while it's exiled, create a 1/1 white Soldier creature token.
 timing=main
-oracle=Benalish Commander's power and toughness are each equal to the number of Soldiers you control.\nSuspend X—{X}{W}{W}. X can't be 0.\nWhenever a time counter is removed from Benalish Commander while it's exiled, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=Benalish Commander's power and toughness are each equal to the number of Soldiers you control.\nSuspend X—{X}{W}{W}. X can't be 0.\nWhenever a time counter is removed from Benalish Commander while it's exiled, create a 1/1 white Soldier creature token.
 status=not supported: trigger-from-exile
