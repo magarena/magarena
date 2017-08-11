@@ -974,3 +974,29 @@ requires_scripted_candidate: cards/existing_master.txt
 	rm groovy_scripted.txt requires_scripted.txt requires_scripted_candidate.txt
 	make requires_scripted_candidate.txt
 	diff requires_scripted_candidate.ignore requires_scripted_candidate.txt
+
+generate-diff:
+	mkdir diff
+	for i in release/Magarena/scripts_missing/*.txt; do \
+		diff -Nau \
+		-I'value=' \
+		-I'rarity=' \
+		-I'status=' \
+		-I'image=' \
+		-I'image_updated=' \
+		-I'transform=' \
+		-I'split=' \
+		-I'flip=' \
+		-I'timing=' \
+		-I'loyalty=' \
+		-I'enchant=' \
+		-I'hidden' \
+		-I'second_half' \
+		$$i scripts-builder/OUTPUT/scripts_missing/`basename $$i` > diff/`basename $$i txt`diff; \
+	done
+
+edit-diff:
+	for i in diff/*.diff; do editdiff $$i; done
+
+apply-diff:
+	for i in diff/*.diff; do patch -p0 < $$i; done
