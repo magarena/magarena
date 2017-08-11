@@ -7,8 +7,8 @@ subtype=Human,Scout
 cost={1}{G}
 pt=2/2
 ability=You can't get poison counters.;\
-        Creatures you control can't have -1/-1 counters placed on them.;\
+        Creatures you control can't have -1/-1 counters put on them.;\
         Creatures your opponents control lose infect.
 timing=main
-oracle=You can't get poison counters.\nCreatures you control can't have -1/-1 counters placed on them.\nCreatures your opponents control lose infect.
+oracle=You can't get poison counters.\nCreatures you control can't have -1/-1 counters put on them.\nCreatures your opponents control lose infect.
 status=not supported: players-cant

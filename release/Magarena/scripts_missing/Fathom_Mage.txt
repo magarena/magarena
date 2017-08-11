@@ -7,7 +7,7 @@ subtype=Human,Wizard
 cost={2}{G}{U}
 pt=1/1
 ability=Evolve;\
-        Whenever a +1/+1 counter is placed on SN, you may draw a card.
+        Whenever a +1/+1 counter is put on SN, you may draw a card.
 timing=main
-oracle=Evolve\nWhenever a +1/+1 counter is placed on Fathom Mage, you may draw a card.
+oracle=Evolve\nWhenever a +1/+1 counter is put on Fathom Mage, you may draw a card.
 status=not supported: when-counter-placed

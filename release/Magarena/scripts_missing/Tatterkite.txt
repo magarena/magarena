@@ -7,7 +7,7 @@ subtype=Scarecrow
 cost={3}
 pt=2/1
 ability=Flying;\
-        SN can't have counters placed on it.
+        SN can't have counters put on it.
 timing=main
-oracle=Flying\nTatterkite can't have counters placed on it.
+oracle=Flying\nTatterkite can't have counters put on it.
 status=not supported: when-counter-placed

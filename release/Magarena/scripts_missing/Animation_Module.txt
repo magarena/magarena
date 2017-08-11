@@ -5,8 +5,8 @@ value=2.500
 rarity=R
 type=Artifact
 cost={1}
-ability=Whenever one or more +1/+1 counters are placed on a permanent you control, you may pay {1}. If you do, create a 1/1 colorless Servo artifact creature token.;\
+ability=Whenever one or more +1/+1 counters are put on a permanent you control, you may pay {1}. If you do, create a 1/1 colorless Servo artifact creature token.;\
         {3}, {T}: Choose a counter on target permanent or player. Give that permanent or player another counter of that kind.
 timing=artifact
-oracle=Whenever one or more +1/+1 counters are placed on a permanent you control, you may pay {1}. If you do, create a 1/1 colorless Servo artifact creature token.\n{3}, {T}: Choose a counter on target permanent or player. Give that permanent or player another counter of that kind.
+oracle=Whenever one or more +1/+1 counters are put on a permanent you control, you may pay {1}. If you do, create a 1/1 colorless Servo artifact creature token.\n{3}, {T}: Choose a counter on target permanent or player. Give that permanent or player another counter of that kind.
 status=not supported: when-counter-placed
