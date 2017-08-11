@@ -4,8 +4,8 @@ value=3.820
 rarity=R
 type=Enchantment
 cost={W}{W}
-ability=As SN enters the battlefield, name a card.;\
+ability=As SN enters the battlefield, choose a card name.;\
         You have protection from the chosen name.
 timing=enchantment
-oracle=As Runed Halo enters the battlefield, name a card.\nYou have protection from the chosen name.
+oracle=As Runed Halo enters the battlefield, choose a card name.\nYou have protection from the chosen name.
 status=not supported: name-card

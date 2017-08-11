@@ -7,7 +7,7 @@ subtype=Sphinx
 cost={2}{U}{U}
 pt=4/4
 ability=Flying;\
-        Whenever SN attacks, each player names a card. Then each player reveals the top card of his or her library. If the card a player revealed is the card he or she named, that player puts it into his or her hand. If it's not, that player puts it on the bottom of his or her library.
+        Whenever SN attacks, each player chooses a card name. Then each player reveals the top card of his or her library. If the card a player revealed has the name he or she chose, that player puts it into his or her hand. If it doesn't, that player puts it on the bottom of his or her library.
 timing=main
-oracle=Flying\nWhenever Conundrum Sphinx attacks, each player names a card. Then each player reveals the top card of his or her library. If the card a player revealed is the card he or she named, that player puts it into his or her hand. If it's not, that player puts it on the bottom of his or her library.
+oracle=Flying\nWhenever Conundrum Sphinx attacks, each player chooses a card name. Then each player reveals the top card of his or her library. If the card a player revealed has the name he or she chose, that player puts it into his or her hand. If it doesn't, that player puts it on the bottom of his or her library.
 status=not supported: name-card

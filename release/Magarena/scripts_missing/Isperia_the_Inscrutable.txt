@@ -7,7 +7,7 @@ subtype=Sphinx
 cost={1}{W}{W}{U}{U}
 pt=3/6
 ability=Flying;\
-        Whenever SN deals combat damage to a player, name a card. That player reveals his or her hand. If he or she reveals the named card, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle your library.
+        Whenever SN deals combat damage to a player, choose a card name. That player reveals his or her hand. If a card with the chosen name is revealed this way, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle your library.
 timing=main
-oracle=Flying\nWhenever Isperia the Inscrutable deals combat damage to a player, name a card. That player reveals his or her hand. If he or she reveals the named card, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle your library.
+oracle=Flying\nWhenever Isperia the Inscrutable deals combat damage to a player, choose a card name. That player reveals his or her hand. If a card with the chosen name is revealed this way, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle your library.
 status=not supported: name-card

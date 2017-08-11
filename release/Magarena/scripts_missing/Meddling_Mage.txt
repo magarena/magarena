@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Wizard
 cost={W}{U}
 pt=2/2
-ability=As SN enters the battlefield, name a nonland card.;\
-        The named card can't be cast.
+ability=As SN enters the battlefield, choose a nonland card name.;\
+        Spells with the chosen name can't be cast.
 timing=main
-oracle=As Meddling Mage enters the battlefield, name a nonland card.\nThe named card can't be cast.
+oracle=As Meddling Mage enters the battlefield, choose a nonland card name.\nSpells with the chosen name can't be cast.
 status=not supported: name-card

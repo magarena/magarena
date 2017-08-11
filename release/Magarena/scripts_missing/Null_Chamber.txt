@@ -4,8 +4,8 @@ value=3.293
 rarity=R
 type=World,Enchantment
 cost={3}{W}
-ability=As SN enters the battlefield, you and an opponent each name a card other than a basic land card.;\
-        The named cards can't be played.
+ability=As SN enters the battlefield, you and an opponent each choose a card name other than a basic land card name.;\
+        Spells with the chosen names can't be cast and lands with the chosen names can't be played.
 timing=enchantment
-oracle=As Null Chamber enters the battlefield, you and an opponent each name a card other than a basic land card.\nThe named cards can't be played.
+oracle=As Null Chamber enters the battlefield, you and an opponent each choose a card name other than a basic land card name.\nSpells with the chosen names can't be cast and lands with the chosen names can't be played.
 status=not supported: name-card

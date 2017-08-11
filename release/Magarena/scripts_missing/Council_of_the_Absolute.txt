@@ -6,9 +6,9 @@ type=Creature
 subtype=Human,Advisor
 cost={2}{W}{U}
 pt=2/4
-ability=As SN enters the battlefield, name a card other than a creature or land card.;\
-        Your opponents can't cast cards with the chosen name.;\
+ability=As SN enters the battlefield, choose a noncreature, nonland card name.;\
+        Your opponents can't cast spells with the chosen name.;\
         Spells with the chosen name you cast cost {2} less to cast.
 timing=main
-oracle=As Council of the Absolute enters the battlefield, name a card other than a creature or land card.\nYour opponents can't cast cards with the chosen name.\nSpells with the chosen name you cast cost {2} less to cast.
+oracle=As Council of the Absolute enters the battlefield, choose a noncreature, nonland card name.\nYour opponents can't cast spells with the chosen name.\nSpells with the chosen name you cast cost {2} less to cast.
 status=not supported: name-card

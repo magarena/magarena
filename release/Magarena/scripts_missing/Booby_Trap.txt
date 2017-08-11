@@ -4,9 +4,9 @@ value=3.949
 rarity=R
 type=Artifact
 cost={6}
-ability=As SN enters the battlefield, name a card other than a basic land card and choose an opponent.;\
+ability=As SN enters the battlefield, choose an opponent and a card name other than a basic land card name.;\
         The chosen player reveals each card he or she draws.;\
-        When the chosen player draws the named card, sacrifice SN. If you do, SN deals 10 damage to that player.
+        When the chosen player draws a card with the chosen name, sacrifice SN. If you do, SN deals 10 damage to that player.
 timing=artifact
-oracle=As Booby Trap enters the battlefield, name a card other than a basic land card and choose an opponent.\nThe chosen player reveals each card he or she draws.\nWhen the chosen player draws the named card, sacrifice Booby Trap. If you do, Booby Trap deals 10 damage to that player.
+oracle=As Booby Trap enters the battlefield, choose an opponent and a card name other than a basic land card name.\nThe chosen player reveals each card he or she draws.\nWhen the chosen player draws a card with the chosen name, sacrifice Booby Trap. If you do, Booby Trap deals 10 damage to that player.
 status=not supported: name-card

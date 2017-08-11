@@ -6,8 +6,8 @@ type=Artifact,Creature
 subtype=Horror
 cost={2}
 pt=2/1
-ability=As SN enters the battlefield, name a nonland card.;\
+ability=As SN enters the battlefield, choose a nonland card name.;\
         Activated abilities of sources with the chosen name can't be activated.
 timing=main
-oracle=As Phyrexian Revoker enters the battlefield, name a nonland card.\nActivated abilities of sources with the chosen name can't be activated.
+oracle=As Phyrexian Revoker enters the battlefield, choose a nonland card name.\nActivated abilities of sources with the chosen name can't be activated.
 status=not supported: name-card

@@ -7,9 +7,9 @@ subtype=Gargoyle
 cost={3}{W}{W}
 pt=3/3
 ability=Flying;\
-        As SN enters the battlefield, name a nonland card.;\
-        The named card can't be cast.;\
+        As SN enters the battlefield, choose a nonland card name.;\
+        Spells with the chosen name can't be cast.;\
         Activated abilities of sources with the chosen name can't be activated.
 timing=main
-oracle=Flying\nAs Voidstone Gargoyle enters the battlefield, name a nonland card.\nThe named card can't be cast.\nActivated abilities of sources with the chosen name can't be activated.
+oracle=Flying\nAs Voidstone Gargoyle enters the battlefield, choose a nonland card name.\nSpells with the chosen name can't be cast.\nActivated abilities of sources with the chosen name can't be activated.
 status=not supported: name-card
