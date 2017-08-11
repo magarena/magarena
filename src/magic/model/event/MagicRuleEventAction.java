@@ -3135,7 +3135,7 @@ public enum MagicRuleEventAction {
         throw new RuntimeException("unknown effect \"" + rule + "\"");
     }
 
-    private static String capitalize(final String text) {
+    public static String capitalize(final String text) {
         return Character.toUpperCase(text.charAt(0)) + text.substring(1);
     }
 

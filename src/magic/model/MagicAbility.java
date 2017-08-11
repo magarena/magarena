@@ -635,10 +635,10 @@ public enum MagicAbility {
     },
 
     // abilities that involve SN
-    ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
+    ShockLand("As SN enters the battlefield, you may " + ARG.COST + "\\. If you don't, SN enters the battlefield tapped\\.", -10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(RavnicaLandTrigger.create());
+            card.add(MagicETBEvent.tappedUnless(ARG.cost(arg)));
         }
     },
     BlocksOrBlockedByEffect("Whenever SN blocks or becomes blocked by " + ARG.WORDRUN + ", " + ARG.EFFECT, 20) {
@@ -796,7 +796,7 @@ public enum MagicAbility {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.cond(arg));
-            card.add(new EntersTappedUnlessTrigger(MagicConditionFactory.Unless(condition)));
+            card.add(MagicETBEvent.tappedUnless(MagicConditionFactory.Unless(condition)));
         }
     },
     EntersAsCopy("You may have SN enter the battlefield as a copy of any " + ARG.WORDRUN + "\\.", 0) {
