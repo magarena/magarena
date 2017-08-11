@@ -93,7 +93,7 @@ public abstract class MagicETBEvent implements MagicCardEvent,MagicEventAction,M
                     cardOnStack,
                     new MagicMayChoice(MagicRuleEventAction.capitalize(cost) + "?"),
                     this,
-                    "PN may$ " + cost + ". If you don't, SN enters the battlefield tapped."
+                    "PN may$ " + cost + ". If PN doesn't, SN enters the battlefield tapped."
                 );
             }
 
