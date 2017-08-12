@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Enchant creature;\
-        Enchanted creature gets +2/+2 as long as it's a Human. Otherwise, it can't attack or block.
+        As long as enchanted creature is Human, enchanted creature gets +2/+2.;\
+        As long as enchanted creature is non-Human creature, enchanted creature can't attack or block.
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 as long as it's a Human. Otherwise, it can't attack or block.
-status=needs groovy
