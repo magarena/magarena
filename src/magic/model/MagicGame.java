@@ -1122,7 +1122,8 @@ public class MagicGame {
         // update log with messages from state-based actions
         logMessages();
 
-        // put pending triggers on stack
+        // put pending triggers on stack in APNAP order
+        pendingStack.sortAPNAP(getTurnPlayer());
         while (pendingStack.isEmpty() == false) {
             doAction(new PutItemOnStackAction(pendingStack.peek()));
             doAction(new DequeueTriggerAction());

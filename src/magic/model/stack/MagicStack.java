@@ -130,4 +130,16 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
         }
         return MurmurHash3.hash(keys);
     }
+
+    public void sortAPNAP(final MagicPlayer turnPlayer) {
+        sort((final MagicItemOnStack s1, final MagicItemOnStack s2) -> {
+            if (s1.isFriend(s2)) {
+                return 0;
+            } else if (s1.isFriend(turnPlayer)) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
+    }
 }
