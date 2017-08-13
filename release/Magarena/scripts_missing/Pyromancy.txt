@@ -8,3 +8,4 @@ ability={3}, Discard a card at random: SN deals damage to target creature or pla
 timing=enchantment
 oracle={3}, Discard a card at random: Pyromancy deals damage to target creature or player equal to the converted mana cost of the discarded card.
 status=not supported: no-info
+# Requires a target before payment is made
