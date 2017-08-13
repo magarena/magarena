@@ -11,4 +11,5 @@ ability=First strike;\
         At the beginning of each opponent's end step, that player creates a 1/1 red Goblin creature token with "Creatures you control attack each combat if able."
 timing=main
 oracle=First strike\nAt the beginning of each opponent's end step, that player creates a 1/1 red Goblin creature token with "Creatures you control attack each combat if able."
-#Token name conflict with 1/1 red Goblin creature
+status=needs groovy
+# token name should include the ability to avoid clashing with standard Goblin token with no abilities
