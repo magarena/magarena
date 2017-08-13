@@ -32,8 +32,8 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
                 TARGET_CREATURE,
                 new MagicBecomeTargetPicker(1,1,false),
                 this,
-                "Target creature\$ loses all abilities " +
-                "and becomes a 1/1 blue Frog until end of turn."
+                "Until end of turn, target creature\$ loses all abilities " +
+                "and becomes a blue Frog with base power and toughness 1/1."
             );
         }
         @Override
