@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}
-effect=Destroy all creatures with power greater than target creature's power.
 timing=main
 oracle=Destroy all creatures with power greater than target creature's power.
-status=needs groovy
+requires_groovy_code
