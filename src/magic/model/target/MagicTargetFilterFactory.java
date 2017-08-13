@@ -2813,6 +2813,7 @@ public class MagicTargetFilterFactory {
         add("creature with shadow", CREATURE_WITH_SHADOW);
         add("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         add("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
+        add("creature that has a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
         add("creature with a level counter on it", CREATURE_LEVEL_COUNTER);
         add("creature that has a fate counter on it", CREATURE_FATE_COUNTER);
         add("creature with a counter on it", CREATURE_WITH_COUNTER);
