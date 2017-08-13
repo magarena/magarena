@@ -7,3 +7,4 @@ cost={2}{W}{U}
 effect=Reveal the top three cards of your library and put one of them into your hand. You gain life equal to that card's converted mana cost. Put all other cards revealed this way into your graveyard.
 timing=removal
 oracle=Reveal the top three cards of your library and put one of them into your hand. You gain life equal to that card's converted mana cost. Put all other cards revealed this way into your graveyard.
+status=needs groovy

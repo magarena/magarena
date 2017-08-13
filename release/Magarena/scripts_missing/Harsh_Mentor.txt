@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever an opponent activates an ability of an artifact, creature, or land on the battlefield, if it isn't a mana ability, SN deals 2 damage to that player.
 timing=main
 oracle=Whenever an opponent activates an ability of an artifact, creature, or land on the battlefield, if it isn't a mana ability, Harsh Mentor deals 2 damage to that player.
+status=not supported: when-activate

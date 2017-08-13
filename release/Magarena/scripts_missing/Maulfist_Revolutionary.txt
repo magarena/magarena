@@ -10,3 +10,4 @@ ability=Trample;\
         When SN enters the battlefield or dies, for each kind of counter on target permanent or player, give that permanent or player another counter of that kind.
 timing=main
 oracle=Trample\nWhen Maulfist Revolutionary enters the battlefield or dies, for each kind of counter on target permanent or player, give that permanent or player another counter of that kind.
+status=needs groovy

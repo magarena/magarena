@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, put two -1/-1 counters on target creatur
         When SN dies, you may put a -1/-1 counter on target creature for each -1/-1 counter on SN.
 timing=main
 oracle=When Soulstinger enters the battlefield, put two -1/-1 counters on target creature you control.\nWhen Soulstinger dies, you may put a -1/-1 counter on target creature for each -1/-1 counter on Soulstinger.
+status=needs groovy

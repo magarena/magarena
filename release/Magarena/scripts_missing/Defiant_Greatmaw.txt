@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, put two -1/-1 counters on target creatur
         Whenever you put one or more -1/-1 counters on SN, remove a -1/-1 counter from another target creature you control.
 timing=main
 oracle=When Defiant Greatmaw enters the battlefield, put two -1/-1 counters on target creature you control.\nWhenever you put one or more -1/-1 counters on Defiant Greatmaw, remove a -1/-1 counter from another target creature you control.
+status=not supported: when-counter-placed

@@ -11,3 +11,4 @@ ability=Flying, indestructible;\
         {3}{U}: Draw a card, then you may return a land you control to its owner's hand.
 timing=main
 oracle=Flying, indestructible\nKefnet the Mindful can't attack or block unless you have seven or more cards in hand.\n{3}{U}: Draw a card, then you may return a land you control to its owner's hand.
+status=needs groovy
