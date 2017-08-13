@@ -1,0 +1,8 @@
+name=colorless artifact token named Etherium Cell
+image=http://magiccards.info/extras/token/aether-revolt/etherium-cell.jpg
+token=Etherium Cell
+type=Artifact
+color=
+value=1
+ability={T}, Sacrifice SN: Add one mana of any color to your mana pool.
+oracle={T}, Sacrifice this artifact: Add one mana of any color to your mana pool.
