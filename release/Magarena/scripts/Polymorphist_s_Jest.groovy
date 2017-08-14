@@ -32,16 +32,16 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
                 NEG_TARGET_PLAYER,
                 this,
                 "Until end of turn, each creature target player\$ controls "+
-				"loses all abilities and becomes a blue Frog with base power and toughness 1/1."
+                "loses all abilities and becomes a blue Frog with base power and toughness 1/1."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-				CREATURE_YOU_CONTROL.filter(it) each {
-					final MagicPermanent creature ->
-					game.doAction(new BecomesCreatureAction(creature,PT,AB,ST,C));
-				}
+                CREATURE_YOU_CONTROL.filter(it) each {
+                    final MagicPermanent creature ->
+                    game.doAction(new BecomesCreatureAction(creature,PT,AB,ST,C));
+                }
             });
         }
     }

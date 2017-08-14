@@ -13,14 +13,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = it.getPower();
-				game.logAppendValue(event.getPlayer(), amount);
-				game.doAction(new DestroyAction(
-					new MagicPTTargetFilter(
-						CREATURE,
-						Operator.GREATER_THAN,
-						amount
-					).filter(event)
-				));
+                game.logAppendValue(event.getPlayer(), amount);
+                game.doAction(new DestroyAction(
+                    new MagicPTTargetFilter(
+                        CREATURE,
+                        Operator.GREATER_THAN,
+                        amount
+                    ).filter(event)
+                ));
             });
         }
     }
