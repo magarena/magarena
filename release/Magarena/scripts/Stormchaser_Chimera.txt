@@ -6,8 +6,7 @@ type=Creature
 subtype=Chimera
 cost={2}{U}{R}
 pt=2/3
-ability=Flying;\
-        {2}{U}{R}: Scry 1, then reveal the top card of your library. SN gets +X/+0 until end of turn, where X is that card's converted mana cost.
+ability=Flying
 timing=main
 oracle=Flying\n{2}{U}{R}: Scry 1, then reveal the top card of your library. Stormchaser Chimera gets +X/+0 until end of turn, where X is that card's converted mana cost.
-status=needs groovy
+requires_groovy_code
