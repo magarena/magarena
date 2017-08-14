@@ -7,7 +7,7 @@
                 TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile target creature.\$ power. "+
+                "Exile target creature\$. "+
                 "Its controller manifests the top card of his or her library."
             );
         }
