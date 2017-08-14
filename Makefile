@@ -644,7 +644,7 @@ check_unused_choice:
 check_mana_or_combat:
 	diff \
 	<(grep mana_or_combat -lr release/Magarena/scripts) \
-	<(grep "mana pool.*becomes a" -r release/Magarena/scripts -l)
+	<(grep "mana pool[^\"]*becomes a" -r release/Magarena/scripts -l)
 
 # all cards except lands should have either color, or cost, or both
 check_color_or_cost:
