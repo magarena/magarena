@@ -27,7 +27,14 @@ public class MagicCleanupPhase extends MagicPhase {
         // discard excess cards
         if (turnPlayer.getNumExcessCards() > 0) {
             final int amount = turnPlayer.getNumExcessCards();
-            game.addEvent(new MagicDiscardEvent(MagicSource.NONE,turnPlayer,amount));
+            if (turnPlayer.isArtificial() || game.isArtificial()) {
+                for (int left = amount; left > 0; left -= 3) {
+                    final int amt = Math.min(left, 3);
+                    game.addEvent(new MagicDiscardEvent(MagicSource.NONE,turnPlayer,amt));
+                }
+            } else {
+                game.addEvent(new MagicDiscardEvent(MagicSource.NONE,turnPlayer,amount));
+            }
         }
         // remove until EOT triggers/static, clean up player and permanents
         game.doAction(new CleanupTurnTriggersAction());
