@@ -1,3 +1,14 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    final MagicPlayer player = event.getPlayer();
+    for (final MagicCard card : player.getLibrary().getCardsFromTop(1)) {
+        final int X = card.getConvertedCost();
+        game.logAppendX(player,X);
+        game.doAction(new RevealAction(card));
+        game.doAction(new ChangeTurnPTAction(event.getPermanent(),+X,+0));
+    }
+}
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -24,13 +35,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicScryEvent(event));
-            final MagicPlayer player = event.getPlayer();
-            for (final MagicCard card : player.getLibrary().getCardsFromTop(1)) {
-                final int X = card.getConvertedCost();
-                game.logAppendX(player,X);
-                game.doAction(new RevealAction(card));
-                game.doAction(new ChangeTurnPTAction(event.getPermanent(),+X,+0));
-            }
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                event.getPlayer(),
+                action,
+                ""
+            ));
         }
     }
 ]
