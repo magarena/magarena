@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{R}
 pt=3/3
-ability=Morph {4}{R}{R}
+ability=Whenever SN deals combat damage to a player, you may have SN deal 3 damage to target creature that player controls.;\
+        Morph {4}{R}{R}
 timing=main
-requires_groovy_code
 oracle=Whenever Snapping Thragg deals combat damage to a player, you may have it deal 3 damage to target creature that player controls.\nMorph {4}{R}{R}

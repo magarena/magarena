@@ -6,7 +6,7 @@ type=Creature
 subtype=Leech
 cost={3}{B}
 pt=2/2
-ability=Flying
+ability=Flying;\
+        Whenever SN deals damage to a player, tap target land that player controls. That land doesn't untap during its controller's next untap step.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Mana Skimmer deals damage to a player, tap target land that player controls. That land doesn't untap during its controller's next untap step.

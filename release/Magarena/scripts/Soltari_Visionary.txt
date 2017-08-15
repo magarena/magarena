@@ -6,7 +6,7 @@ type=Creature
 subtype=Soltari,Cleric
 cost={1}{W}{W}
 pt=2/2
-ability=Shadow
+ability=Shadow;\
+        Whenever SN deals damage to a player, destroy target enchantment that player controls.
 timing=main
 oracle=Shadow\nWhenever Soltari Visionary deals damage to a player, destroy target enchantment that player controls.
-requires_groovy_code

@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre
 cost={4}{R}{R}
 pt=5/4
+ability=Whenever SN deals combat damage to a player, you may destroy target artifact that player controls.
 timing=main
-requires_groovy_code=Caustic Wasps
 oracle=Whenever Rustmouth Ogre deals combat damage to a player, you may destroy target artifact that player controls.

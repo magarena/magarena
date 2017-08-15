@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={2}{G}
 pt=1/1
-ability=Flying
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may destroy target artifact that player controls.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Caustic Wasps deals combat damage to a player, you may destroy target artifact that player controls.

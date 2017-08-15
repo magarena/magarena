@@ -7,7 +7,7 @@ type=Creature
 subtype=Goblin
 cost={1}{R}{R}
 pt=2/1
-ability=Morph {2}{R}
+ability=Whenever SN deals combat damage to a player, you may have SN deal 2 damage to target creature that player controls.;\
+        Morph {2}{R}
 timing=main
-requires_groovy_code
 oracle=Whenever Skirk Commando deals combat damage to a player, you may have it deal 2 damage to target creature that player controls.\nMorph {2}{R}

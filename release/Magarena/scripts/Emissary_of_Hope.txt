@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={1}{W}{W}
 pt=2/1
-ability=Flying
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you gain 1 life for each artifact that player controls.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Emissary of Hope deals combat damage to a player, you gain 1 life for each artifact that player controls.

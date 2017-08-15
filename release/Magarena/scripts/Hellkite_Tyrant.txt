@@ -7,7 +7,7 @@ subtype=Dragon
 cost={4}{R}{R}
 pt=6/5
 ability=Flying, trample;\
+        Whenever SN deals combat damage to a player, gain control of all artifacts that player controls.;\
         At the beginning of your upkeep, if you control twenty or more artifacts, you win the game.
 timing=main
 oracle=Flying, trample\nWhenever Hellkite Tyrant deals combat damage to a player, gain control of all artifacts that player controls.\nAt the beginning of your upkeep, if you control twenty or more artifacts, you win the game.
-requires_groovy_code

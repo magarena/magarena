@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Ninja
 cost={2}{U}
 pt=1/1
-ability=Ninjutsu {U}
+ability=Ninjutsu {U};\
+        Whenever SN deals combat damage to a player, you may return target creature that player controls to its owner's hand.
 timing=main
 oracle=Ninjutsu {U}\nWhenever Mistblade Shinobi deals combat damage to a player, you may return target creature that player controls to its owner's hand.
-requires_groovy_code
