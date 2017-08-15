@@ -1463,7 +1463,7 @@ public enum MagicAbility {
             ));
         }
     },
-    WhenConditionEffect("When " + ARG.COND + ", " + ARG.EFFECT, 0) {
+    WhenConditionEffect("When(ever)? " + ARG.COND + ", " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.StateTrigger(
