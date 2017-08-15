@@ -7,7 +7,7 @@ subtype=Rat,Ninja
 cost={4}{B}{B}
 pt=5/4
 ability=Ninjutsu {3}{B}{B};\
+        Whenever SN deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.;\
         {1}{B}: Regenerate SN.
 timing=main
-requires_groovy_code=Scion of Darkness
 oracle=Ninjutsu {3}{B}{B}\nWhenever Ink-Eyes, Servant of Oni deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.\n{1}{B}: Regenerate Ink-Eyes.

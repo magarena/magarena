@@ -8,7 +8,7 @@ subtype=Avatar
 cost={5}{B}{B}{B}
 pt=6/6
 ability=Trample;\
+        Whenever SN deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.;\
         Cycling {3}
 timing=main
 oracle=Trample\nWhenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.\nCycling {3}
-requires_groovy_code
