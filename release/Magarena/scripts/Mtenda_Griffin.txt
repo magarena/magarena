@@ -7,7 +7,6 @@ subtype=Griffin
 cost={3}{W}
 pt=2/2
 ability=Flying;\
-        {W}, {T}: Return SN to its owner's hand and return target Griffin card from your graveyard to your hand. Activate this ability only during your upkeep.
+        {W}, {T}: Return target Griffin card from your graveyard to your hand~and return SN to its owner's hand. Activate this ability only during your upkeep.
 timing=main
 oracle=Flying\n{W}, {T}: Return Mtenda Griffin to its owner's hand and return target Griffin card from your graveyard to your hand. Activate this ability only during your upkeep.
-status=needs groovy
