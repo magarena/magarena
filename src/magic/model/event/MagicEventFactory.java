@@ -36,6 +36,10 @@ public interface MagicEventFactory {
             final MagicSourceEvent youVersion = MagicRuleEventAction.create(text.replace("that player controls", "you control"));
             final MagicSourceEvent oppVersion = MagicRuleEventAction.create(text.replace("that player controls", "an opponent controls"));
             return new MagicPlayerTriggerEvent(youVersion, oppVersion);
+        } else if (text.contains("that player's graveyard")) {
+            final MagicSourceEvent youVersion = MagicRuleEventAction.create(text.replace("that player's graveyard", "your graveyard"));
+            final MagicSourceEvent oppVersion = MagicRuleEventAction.create(text.replace("that player's graveyard", "an opponent's graveyard"));
+            return new MagicPlayerTriggerEvent(youVersion, oppVersion);
         } else {
             return MagicRuleEventAction.create(text);
         }
