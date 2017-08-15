@@ -10,4 +10,3 @@ ability=Equipped creature gets +2/+0.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +2/+0.\nWhenever equipped creature deals combat damage to a player, you may destroy target Equipment that player controls.\nEquip {2}
-status=needs groovy
