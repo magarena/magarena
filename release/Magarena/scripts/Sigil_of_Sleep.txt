@@ -9,6 +9,5 @@ cost={U}
 ability=Enchant creature;\
         Whenever enchanted creature deals damage to a player, return target creature that player controls to its owner's hand.
 timing=aura
-enchant=default,creature
+enchant=default,pos creature
 oracle=Enchant creature\nWhenever enchanted creature deals damage to a player, return target creature that player controls to its owner's hand.
-status=needs groovy
