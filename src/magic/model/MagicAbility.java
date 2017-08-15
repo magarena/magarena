@@ -1207,7 +1207,7 @@ public enum MagicAbility {
             card.add(DamageIsDealtTrigger.DamageToTarget(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicTargetFilterFactory.Target(ARG.wordrun2(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
+                MagicEventFactory.create(ARG.effect(arg)),
                 arg.group("combat") != null ? MagicDamage.Combat : MagicDamage.Any
             ));
         }

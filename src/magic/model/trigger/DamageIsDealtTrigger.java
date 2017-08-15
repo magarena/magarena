@@ -16,6 +16,7 @@ import magic.model.action.ChangeStateAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.event.MagicEventFactory;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
@@ -38,7 +39,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
         return MagicTriggerType.WhenDamageIsDealt;
     }
 
-    public static DamageIsDealtTrigger DamageToTarget(final MagicTargetFilter<MagicPermanent> filter, final MagicTargetFilter<MagicTarget> tfilter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
+    public static DamageIsDealtTrigger DamageToTarget(final MagicTargetFilter<MagicPermanent> filter, final MagicTargetFilter<MagicTarget> tfilter, final MagicEventFactory eventFactory, final boolean isCombat) {
         return new DamageIsDealtTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
@@ -53,7 +54,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getTriggerEvent(permanent, damage.getTarget());
+                return eventFactory.getTriggerEvent(permanent, damage.getTarget());
             }
         };
     }

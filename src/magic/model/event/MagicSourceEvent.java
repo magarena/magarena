@@ -10,7 +10,7 @@ import magic.model.target.MagicTargetPicker;
 
 import java.util.regex.Matcher;
 
-public class MagicSourceEvent implements MagicCopyable {
+public class MagicSourceEvent implements MagicCopyable, MagicEventFactory {
     private final MagicRuleEventAction rule;
     private final Matcher matcher;
     private final MagicCondition ifCond;
@@ -37,21 +37,7 @@ public class MagicSourceEvent implements MagicCopyable {
         text = aText;
     }
 
-    public MagicEvent getTriggerEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
-        final MagicEvent ev = getEvent(source, player, ref);
-        return ifCond.accept(ev) ? ev : MagicEvent.NONE;
-    }
-
-    public MagicEvent getTriggerEvent(final MagicSource source, final MagicCopyable ref) {
-        final MagicEvent ev = getEvent(source, ref);
-        return ifCond.accept(ev) ? ev : MagicEvent.NONE;
-    }
-
-    public MagicEvent getTriggerEvent(final MagicSource source) {
-        final MagicEvent ev = getEvent(source);
-        return ifCond.accept(ev) ? ev : MagicEvent.NONE;
-    }
-
+    @Override
     public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
         return new MagicEvent(
             source,
@@ -64,16 +50,21 @@ public class MagicSourceEvent implements MagicCopyable {
         );
     }
 
-    public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
-        return getEvent(source, source.getController(), ref);
-    }
-
+    // needed for groovy static checking as it does not find default methods
+    @Override
     public MagicEvent getEvent(final MagicSource source) {
         return getEvent(source, source.getController(), MagicEvent.NO_REF);
     }
 
+    // needed for groovy static checking as it does not find default methods
+    @Override
     public MagicEvent getEvent(final MagicEvent event) {
         return getEvent(event.getSource(), event.getPlayer(), MagicEvent.NO_REF);
+    }
+
+    @Override
+    public boolean accept(final MagicSource source, final MagicEvent ev) {
+        return ifCond.accept(ev);
     }
 
     public MagicCondition[] getConditions() {
