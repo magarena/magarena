@@ -1260,7 +1260,8 @@ public enum MagicRuleEventAction {
     ),
     RemoveCounter(
         "remove " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? from " + ARG.PERMANENTS,
-        MagicTiming.Pump
+        MagicTiming.Pump,
+        "-Counters"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1278,10 +1279,26 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-
+    },
+    RemoveAllCounter(
+        "remove all (?<type>[^ ]+) counter(s)? from " + ARG.PERMANENTS,
+        MagicTiming.Pump,
+        "-Counters"
+    ) {
         @Override
-        public String getName(final Matcher matcher) {
-            return "-Counters";
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    final int amount = it.getCounters(counterType);
+                    game.doAction(new ChangeCountersAction(
+                        it,
+                        counterType,
+                        -amount
+                    ));
+                }
+            };
         }
     },
     Bolster(
