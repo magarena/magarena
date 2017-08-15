@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={2}{U}{U}
 pt=0/0
-ability=SN enters the battlefield with two +1/+1 counters on it.
+ability=SN enters the battlefield with two +1/+1 counters on it.;\
+        {X}, {T}: Remove all +1/+1 counters from SN~and put X +1/+1 counters on it.
 timing=main
-requires_groovy_code
 oracle=Anthroplasm enters the battlefield with two +1/+1 counters on it.\n{X}, {T}: Remove all +1/+1 counters from Anthroplasm and put X +1/+1 counters on it.

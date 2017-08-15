@@ -4,7 +4,8 @@ value=3.833
 rarity=R
 type=Enchantment
 cost={1}{B}{R}
-ability=Cumulative upkeep {1}
+ability=Cumulative upkeep {1};\
+        When SN leaves the battlefield, remove all rust counters from all permanents.
 timing=enchantment
 requires_groovy_code
 oracle=Cumulative upkeep {1}\nAt the beginning of your upkeep, put a rust counter on each artifact target opponent controls. Then destroy each artifact with converted mana cost less than or equal to the number of rust counters on it. Artifacts destroyed this way can't be regenerated.\nWhen Corrosion leaves the battlefield, remove all rust counters from all permanents.

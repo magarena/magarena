@@ -4,7 +4,8 @@ value=2.917
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=When there are four or more depletion counters on SN, sacrifice SN.
+ability=When there are four or more depletion counters on SN, sacrifice SN.;\
+        At the beginning of each end step, remove all depletion counters from SN.
 timing=enchantment
 requires_groovy_code
 oracle=If damage would be dealt to you, put that many depletion counters on Force Bubble instead.\nWhen there are four or more depletion counters on Force Bubble, sacrifice it.\nAt the beginning of each end step, remove all depletion counters from Force Bubble.

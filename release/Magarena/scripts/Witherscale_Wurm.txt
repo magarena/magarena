@@ -6,7 +6,7 @@ type=Creature
 subtype=Wurm
 cost={4}{G}{G}
 pt=9/9
-ability=Whenever SN blocks or becomes blocked by a creature, that creature gains wither until end of turn.
+ability=Whenever SN blocks or becomes blocked by a creature, that creature gains wither until end of turn.;\
+        Whenever SN deals damage to an opponent, remove all -1/-1 counters from SN.
 timing=main
-requires_groovy_code
 oracle=Whenever Witherscale Wurm blocks or becomes blocked by a creature, that creature gains wither until end of turn.\nWhenever Witherscale Wurm deals damage to an opponent, remove all -1/-1 counters from it.

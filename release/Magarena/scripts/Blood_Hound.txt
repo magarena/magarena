@@ -6,6 +6,7 @@ type=Creature
 subtype=Hound
 cost={2}{R}
 pt=1/1
+ability=At the beginning of your end step, remove all +1/+1 counters from SN.
 timing=main
 requires_groovy_code
 oracle=Whenever you're dealt damage, you may put that many +1/+1 counters on Blood Hound.\nAt the beginning of your end step, remove all +1/+1 counters from Blood Hound.

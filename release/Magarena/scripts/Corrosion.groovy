@@ -25,26 +25,5 @@
                 }
             });
         }
-    },
-
-    new ThisLeavesBattlefieldTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Remove all Rust counters from all permanents."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            PERMANENT.filter(event) each {
-                game.doAction(new ChangeCountersAction(
-                    it,
-                    MagicCounterType.Rust,
-                    -it.getCounters(MagicCounterType.Rust)
-                ));
-            }
-        }
     }
 ]
