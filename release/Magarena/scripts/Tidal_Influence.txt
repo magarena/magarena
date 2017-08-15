@@ -12,4 +12,3 @@ ability=Cast SN only if no permanents named Tidal Influence are on the battlefie
         Whenever there are four or more tide counters on SN, remove all tide counters from it.
 timing=enchantment
 oracle=Cast Tidal Influence only if no permanents named Tidal Influence are on the battlefield.\nTidal Influence enters the battlefield with a tide counter on it.\nAt the beginning of your upkeep, put a tide counter on Tidal Influence.\nAs long as there is exactly one tide counter on Tidal Influence, all blue creatures get -2/-0.\nAs long as there are exactly three tide counters on Tidal Influence, all blue creatures get +2/+0.\nWhenever there are four or more tide counters on Tidal Influence, remove all tide counters from it.
-status=needs groovy
