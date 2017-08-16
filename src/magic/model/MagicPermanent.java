@@ -4,10 +4,12 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.AbstractMap.SimpleImmutableEntry;
 import java.util.Set;
 
 import magic.ai.ArtificialScoringSystem;
@@ -74,6 +76,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     private List<MagicManaActivation> cachedManaActivations;
     private List<MagicTrigger<?>> cachedTriggers;
     private List<EntersBattlefieldTrigger> etbTriggers;
+    private Set<Map.Entry<MagicPermanent, MagicStatic>> appliedStatics;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -442,6 +445,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                     game.addDelayedAction(new ChangeControlAction(curr, perm, perm.getScore()));
                 }
                 perm.updateScore();
+                perm.clearStatics();
             }
         }
     }
@@ -459,6 +463,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 for (final MagicPlayer player : game.getPlayers()) {
                     for (final MagicPermanent perm : player.getPermanents()) {
                         if (mstatic.accept(game, source, perm)) {
+                            perm.appliedStatic(source, mstatic);
                             perm.apply(source, mstatic);
                         }
                     }
@@ -481,6 +486,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 cachedManaActivations = new LinkedList<MagicManaActivation>(getCardDefinition().getManaActivations());
                 cachedTriggers = new LinkedList<MagicTrigger<?>>(getCardDefinition().getTriggers());
                 etbTriggers = new LinkedList<EntersBattlefieldTrigger>(getCardDefinition().getETBTriggers());
+                appliedStatics = new HashSet<>();
                 break;
             case CDASubtype:
                 getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
@@ -1401,5 +1407,17 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     @Override
     public String getPowerToughnessText() {
         return isCreature() || hasSubType(MagicSubType.Vehicle) ? getPower() + "/" + getToughness() : "";
+    }
+
+    public void appliedStatic(final MagicPermanent source, final MagicStatic mstatic) {
+        appliedStatics.add(new SimpleImmutableEntry<>(source, mstatic));
+    }
+
+    public boolean applied(final MagicPermanent source, final MagicStatic mstatic) {
+        return appliedStatics.contains(new SimpleImmutableEntry<>(source, mstatic));
+    }
+
+    public void clearStatics() {
+        appliedStatics = null;
     }
 }
