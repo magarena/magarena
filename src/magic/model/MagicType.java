@@ -90,7 +90,9 @@ public enum MagicType {
             final String name = iterator.next();
             matched = false;
             for (final MagicType type : values()) {
-                if (type.toString().equalsIgnoreCase(name)) {
+                final String plural = type.toString() + "s";
+                if (type.toString().equalsIgnoreCase(name) ||
+                    plural.equalsIgnoreCase(name)) {
                     matched = true;
                     types.add(type);
                     iterator.remove();
