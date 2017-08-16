@@ -2429,6 +2429,32 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    LoseAbilityBecomes(
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " loses all abilities and" + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO,
+        MagicTiming.Animate,
+        "Becomes"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final PermanentSpecParser spec = new PermanentSpecParser(matcher);
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new BecomesAction(
+                        it,
+                        spec.pt,
+                        spec.colors,
+                        spec.subTypes,
+                        spec.types,
+                        spec.abilities,
+                        spec.duration,
+                        spec.additionTo
+                    ));
+                    game.doAction(new AddStaticAction(it, MagicStatic.LoseAbilities));
+                }
+            };
+        }
+    },
     BecomesAlt(
         "(?<duration>until end of turn, )" + ARG.PERMANENTS + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO,
         MagicTiming.Animate,

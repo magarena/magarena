@@ -472,10 +472,18 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return source.getEnchantedPermanent().isValid();
         }
     };
+
     public static MagicStatic Nightmare = new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Nightmare);
+        }
+    };
+
+    public static MagicStatic LoseAbilities = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+        @Override
+        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+            permanent.loseAllAbilities();
         }
     };
 
