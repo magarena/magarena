@@ -701,8 +701,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Opp);
-
     public static final MagicPermanentFilterImpl NONCREATURE = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -1069,8 +1067,6 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl HUMAN = permanent(MagicSubType.Human, Control.Any);
-
-    public static final MagicPermanentFilterImpl HUMAN_CREATURE = creature(MagicSubType.Human, Control.Any);
 
     public static final MagicPermanentFilterImpl NONENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
         @Override
@@ -1880,14 +1876,8 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD =
-        card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.OpponentsGraveyard);
-
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD =
         card(MagicType.Creature).from(MagicTargetType.OpponentsGraveyard);
-
-    public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_GRAVEYARD =
-        card(MagicType.Artifact).from(MagicTargetType.Graveyard);
 
     public static final MagicCardFilterImpl ARTIFACT_CARD = new MagicCardFilterImpl() {
         @Override
@@ -2008,11 +1998,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD = card(MagicSubType.Zombie).and(MagicType.Creature).from(MagicTargetType.Graveyard);
-
     public static final MagicCardFilterImpl SPIRIT_CARD_FROM_GRAVEYARD = card(MagicSubType.Spirit).from(MagicTargetType.Graveyard);
-
-    public static final MagicCardFilterImpl HUMAN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicSubType.Human).and(MagicType.Creature).from(MagicTargetType.Graveyard);
 
     public static final MagicCardFilterImpl CARD_FROM_HAND = new MagicCardFilterImpl() {
         @Override
@@ -2160,18 +2146,6 @@ public class MagicTargetFilterFactory {
             return target.isLand() &&
                 target.isUntapped() &&
                 target.isController(player);
-        }
-    };
-
-    public static final MagicCardFilterImpl WARRIOR_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        @Override
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return target.hasSubType(MagicSubType.Warrior);
         }
     };
 
