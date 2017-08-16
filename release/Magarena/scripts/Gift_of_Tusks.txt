@@ -5,6 +5,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={U}
+effect=Until end of turn, target creature loses all abilities and becomes a green Elephant with base power and toughness 3/3.
 timing=removal
-requires_groovy_code
 oracle=Until end of turn, target creature loses all abilities and becomes a green Elephant with base power and toughness 3/3.

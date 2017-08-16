@@ -5,6 +5,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}
+effect=Until end of turn, target creature loses all abilities and becomes a blue Frog with base power and toughness 1/1.
 timing=removal
-requires_groovy_code
 oracle=Until end of turn, target creature loses all abilities and becomes a blue Frog with base power and toughness 1/1.

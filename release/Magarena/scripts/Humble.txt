@@ -4,6 +4,6 @@ value=4.384
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Until end of turn, target creature loses all abilities and has base power and toughness 0/1.
 timing=removal
-requires_groovy_code
 oracle=Until end of turn, target creature loses all abilities and has base power and toughness 0/1.
