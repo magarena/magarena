@@ -1,0 +1,12 @@
+name=Arahbo, Roar of the World
+image=http://magiccards.info/scans/en/c17/35.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Cat,Avatar
+cost={3}{G}{W}
+pt=5/5
+ability=At the beginning of combat on your turn, if SN is in the command zone or on the battlefield, another target Cat you control gets +3/+3 until end of turn.;\
+        Whenever another Cat you control attacks, you may pay {1}{G}{W}. If you do, it gains trample and gets +X/+X until end of turn, where X is its power.
+timing=main
+oracle=Eminence — At the beginning of combat on your turn, if Arahbo, Roar of the World is in the command zone or on the battlefield, another target Cat you control gets +3/+3 until end of turn.\nWhenever another Cat you control attacks, you may pay {1}{G}{W}. If you do, it gains trample and gets +X/+X until end of turn, where X is its power.

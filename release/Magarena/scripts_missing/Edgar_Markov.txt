@@ -1,0 +1,13 @@
+name=Edgar Markov
+image=http://magiccards.info/scans/en/c17/36.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Vampire,Knight
+cost={3}{R}{W}{B}
+pt=4/4
+ability=Whenever you cast another Vampire spell, if SN is in the command zone or on the battlefield, create a 1/1 black Vampire creature token.;\
+        First strike, haste;\
+        Whenever SN attacks, put a +1/+1 counter on each Vampire you control.
+timing=main
+oracle=Eminence — Whenever you cast another Vampire spell, if Edgar Markov is in the command zone or on the battlefield, create a 1/1 black Vampire creature token.\nFirst strike, haste\nWhenever Edgar Markov attacks, put a +1/+1 counter on each Vampire you control.

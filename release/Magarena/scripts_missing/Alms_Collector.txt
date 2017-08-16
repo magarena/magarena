@@ -1,0 +1,12 @@
+name=Alms Collector
+image=http://magiccards.info/scans/en/c17/1.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat,Cleric
+cost={3}{W}
+pt=3/4
+ability=Flash;\
+        If an opponent would draw two or more cards, instead you and that player each draw a card.
+timing=flash
+oracle=Flash\nIf an opponent would draw two or more cards, instead you and that player each draw a card.

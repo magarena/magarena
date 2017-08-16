@@ -1,0 +1,12 @@
+name=Stalking Leonin
+image=http://magiccards.info/scans/en/c17/7.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat,Archer
+cost={2}{W}
+pt=3/3
+ability=When SN enters the battlefield, secretly choose an opponent.;\
+        Reveal the player you chose: Exile target creature that's attacking you if it's controlled by the chosen player. Activate this ability only once.
+timing=main
+oracle=When Stalking Leonin enters the battlefield, secretly choose an opponent.\nReveal the player you chose: Exile target creature that's attacking you if it's controlled by the chosen player. Activate this ability only once.

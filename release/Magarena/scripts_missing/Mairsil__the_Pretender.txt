@@ -1,0 +1,12 @@
+name=Mairsil, the Pretender
+image=http://magiccards.info/scans/en/c17/41.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{U}{B}{R}
+pt=4/4
+ability=When SN enters the battlefield, you may exile an artifact or creature card from your hand or graveyard and put a cage counter on it.;\
+        SN has all activated abilities of all cards you own in exile with cage counters on them. You may activate each of those abilities only once each turn.
+timing=main
+oracle=When Mairsil, the Pretender enters the battlefield, you may exile an artifact or creature card from your hand or graveyard and put a cage counter on it.\nMairsil, the Pretender has all activated abilities of all cards you own in exile with cage counters on them. You may activate each of those abilities only once each turn.

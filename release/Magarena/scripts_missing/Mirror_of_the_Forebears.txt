@@ -1,0 +1,10 @@
+name=Mirror of the Forebears
+image=http://magiccards.info/scans/en/c17/54.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability=As SN enters the battlefield, choose a creature type.;\
+        {1}: Until end of turn, SN becomes a copy of target creature you control of the chosen type, except it's an artifact in addition to its other types.
+timing=artifact
+oracle=As Mirror of the Forebears enters the battlefield, choose a creature type.\n{1}: Until end of turn, Mirror of the Forebears becomes a copy of target creature you control of the chosen type, except it's an artifact in addition to its other types.

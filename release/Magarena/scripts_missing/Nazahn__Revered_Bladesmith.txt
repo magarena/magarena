@@ -1,0 +1,12 @@
+name=Nazahn, Revered Bladesmith
+image=http://magiccards.info/scans/en/c17/44.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Cat,Artificer
+cost={4}{G}{W}
+pt=5/4
+ability=When SN enters the battlefield, search your library for an Equipment card and reveal it. If you reveal a card named Hammer of Nazahn this way, put it onto the battlefield. Otherwise, put that card into your hand. Then shuffle your library.;\
+        Whenever an equipped creature you control attacks, you may tap target creature defending player controls.
+timing=main
+oracle=When Nazahn, Revered Bladesmith enters the battlefield, search your library for an Equipment card and reveal it. If you reveal a card named Hammer of Nazahn this way, put it onto the battlefield. Otherwise, put that card into your hand. Then shuffle your library.\nWhenever an equipped creature you control attacks, you may tap target creature defending player controls.

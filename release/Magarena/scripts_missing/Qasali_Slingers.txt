@@ -1,0 +1,12 @@
+name=Qasali Slingers
+image=http://magiccards.info/scans/en/c17/33.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat,Warrior
+cost={4}{G}
+pt=3/5
+ability=Reach;\
+        Whenever SN or another Cat enters the battlefield under your control, you may destroy target artifact or enchantment.
+timing=main
+oracle=Reach\nWhenever Qasali Slingers or another Cat enters the battlefield under your control, you may destroy target artifact or enchantment.

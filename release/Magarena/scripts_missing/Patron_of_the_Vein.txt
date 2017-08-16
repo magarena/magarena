@@ -1,0 +1,13 @@
+name=Patron of the Vein
+image=http://magiccards.info/scans/en/c17/20.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Shaman
+cost={4}{B}{B}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, destroy target creature an opponent controls.;\
+        Whenever a creature an opponent controls dies, exile it and put a +1/+1 counter on each Vampire you control.
+timing=main
+oracle=Flying\nWhen Patron of the Vein enters the battlefield, destroy target creature an opponent controls.\nWhenever a creature an opponent controls dies, exile it and put a +1/+1 counter on each Vampire you control.

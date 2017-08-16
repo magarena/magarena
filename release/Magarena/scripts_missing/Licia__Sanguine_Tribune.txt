@@ -1,0 +1,13 @@
+name=Licia, Sanguine Tribune
+image=http://magiccards.info/scans/en/c17/40.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Vampire,Soldier
+cost={5}{R}{W}{B}
+pt=4/4
+ability=SN costs {1} less to cast for each 1 life you gained this turn.;\
+        First strike, lifelink;\
+        Pay 5 life: Put three +1/+1 counters on Licia. Activate this ability only during your turn and only once each turn.
+timing=main
+oracle=Licia, Sanguine Tribune costs {1} less to cast for each 1 life you gained this turn.\nFirst strike, lifelink\nPay 5 life: Put three +1/+1 counters on Licia. Activate this ability only during your turn and only once each turn.

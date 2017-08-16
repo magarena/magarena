@@ -1,0 +1,9 @@
+name=Disrupt Decorum
+image=http://magiccards.info/scans/en/c17/25.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{R}{R}
+effect=Goad all creatures you don't control.
+timing=main
+oracle=Goad all creatures you don't control.

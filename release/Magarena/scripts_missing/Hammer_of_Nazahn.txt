@@ -1,0 +1,12 @@
+name=Hammer of Nazahn
+image=http://magiccards.info/scans/en/c17/51.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+cost={4}
+ability=Whenever SN or another Equipment enters the battlefield under your control, you may attach that Equipment to target creature you control.;\
+        Equipped creature gets +2/+0 and has indestructible.;\
+        Equip {4}
+timing=equipment
+oracle=Whenever Hammer of Nazahn or another Equipment enters the battlefield under your control, you may attach that Equipment to target creature you control.\nEquipped creature gets +2/+0 and has indestructible.\nEquip {4}

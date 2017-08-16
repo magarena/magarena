@@ -1,0 +1,13 @@
+name=Ramos, Dragon Engine
+image=http://magiccards.info/scans/en/c17/55.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact,Creature
+subtype=Dragon
+cost={6}
+pt=4/4
+ability=Flying;\
+        Whenever you cast a spell, put a +1/+1 counter on SN for each of that spell's colors.;\
+        Remove five +1/+1 counters from Ramos: Add {W}{W}{U}{U}{B}{B}{R}{R}{G}{G} to your mana pool. Activate this ability only once each turn.
+timing=main
+oracle=Flying\nWhenever you cast a spell, put a +1/+1 counter on Ramos, Dragon Engine for each of that spell's colors.\nRemove five +1/+1 counters from Ramos: Add {W}{W}{U}{U}{B}{B}{R}{R}{G}{G} to your mana pool. Activate this ability only once each turn.

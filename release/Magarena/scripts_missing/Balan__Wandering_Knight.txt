@@ -1,0 +1,13 @@
+name=Balan, Wandering Knight
+image=http://magiccards.info/scans/en/c17/2.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Cat,Knight
+cost={2}{W}{W}
+pt=3/3
+ability=First strike;\
+        SN has double strike as long as two or more Equipment are attached to it.;\
+        {1}{W}: Attach all Equipment you control to Balan.
+timing=main
+oracle=First strike\nBalan, Wandering Knight has double strike as long as two or more Equipment are attached to it.\n{1}{W}: Attach all Equipment you control to Balan.

@@ -1,0 +1,11 @@
+name=Kindred Boon
+image=http://magiccards.info/scans/en/c17/5.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{W}{W}
+ability=As SN enters the battlefield, choose a creature type.;\
+        {1}{W}: Put a divinity counter on target creature you control of the chosen type.;\
+        Each creature you control with a divinity counter on it has indestructible.
+timing=enchantment
+oracle=As Kindred Boon enters the battlefield, choose a creature type.\n{1}{W}: Put a divinity counter on target creature you control of the chosen type.\nEach creature you control with a divinity counter on it has indestructible.

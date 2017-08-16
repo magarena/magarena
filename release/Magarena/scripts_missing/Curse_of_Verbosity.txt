@@ -1,0 +1,12 @@
+name=Curse of Verbosity
+image=http://magiccards.info/scans/en/c17/9.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura,Curse
+cost={2}{U}
+ability=Enchant player;\
+        Whenever enchanted player is attacked, you draw a card. Each opponent attacking that player does the same.
+timing=aura
+enchant=default,creature
+oracle=Enchant player\nWhenever enchanted player is attacked, you draw a card. Each opponent attacking that player does the same.

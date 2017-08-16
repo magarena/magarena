@@ -1,0 +1,12 @@
+name=Bloodforged Battle-Axe
+image=http://magiccards.info/scans/en/c17/50.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +2/+0.;\
+        Whenever equipped creature deals combat damage to a player, create a token that's a copy of SN.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +2/+0.\nWhenever equipped creature deals combat damage to a player, create a token that's a copy of Bloodforged Battle-Axe.\nEquip {2}

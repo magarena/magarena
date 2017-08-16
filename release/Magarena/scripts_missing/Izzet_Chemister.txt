@@ -1,0 +1,13 @@
+name=Izzet Chemister
+image=http://magiccards.info/scans/en/c17/26.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Wizard
+cost={2}{R}
+pt=1/3
+ability=Haste;\
+        {R}, {T}: Exile target instant or sorcery card from your graveyard.;\
+        {1}{R}, {T}, Sacrifice SN: Cast any number of cards exiled with SN without paying their mana costs.
+timing=fmain
+oracle=Haste\n{R}, {T}: Exile target instant or sorcery card from your graveyard.\n{1}{R}, {T}, Sacrifice Izzet Chemister: Cast any number of cards exiled with Izzet Chemister without paying their mana costs.

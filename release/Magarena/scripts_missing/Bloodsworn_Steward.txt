@@ -1,0 +1,12 @@
+name=Bloodsworn Steward
+image=http://magiccards.info/scans/en/c17/22.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Knight
+cost={2}{R}{R}
+pt=4/4
+ability=Flying;\
+        Commander creatures you control get +2/+2 and have haste.
+timing=main
+oracle=Flying\nCommander creatures you control get +2/+2 and have haste.

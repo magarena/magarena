@@ -1,0 +1,13 @@
+name=Kheru Mind-Eater
+image=http://magiccards.info/scans/en/c17/17.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire
+cost={2}{B}
+pt=1/3
+ability=Menace;\
+        Whenever SN deals combat damage to a player, that player exiles a card from his or her hand face down.;\
+        You may look at and play cards exiled with SN.
+timing=main
+oracle=Menace\nWhenever Kheru Mind-Eater deals combat damage to a player, that player exiles a card from his or her hand face down.\nYou may look at and play cards exiled with Kheru Mind-Eater.

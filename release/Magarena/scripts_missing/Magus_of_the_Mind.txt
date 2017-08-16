@@ -1,0 +1,11 @@
+name=Magus of the Mind
+image=http://magiccards.info/scans/en/c17/12.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={4}{U}{U}
+pt=4/5
+ability={U}, {T}, Sacrifice SN: Shuffle your library, then exile the top X cards, where X is one plus the number of spells cast this turn. Until end of turn, you may play cards exiled this way without paying their mana costs.
+timing=main
+oracle={U}, {T}, Sacrifice Magus of the Mind: Shuffle your library, then exile the top X cards, where X is one plus the number of spells cast this turn. Until end of turn, you may play cards exiled this way without paying their mana costs.

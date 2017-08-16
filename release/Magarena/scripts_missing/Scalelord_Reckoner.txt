@@ -1,0 +1,12 @@
+name=Scalelord Reckoner
+image=http://magiccards.info/scans/en/c17/6.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{W}{W}
+pt=4/4
+ability=Flying;\
+        Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, destroy target nonland permanent that player controls.
+timing=main
+oracle=Flying\nWhenever a Dragon you control becomes the target of a spell or ability an opponent controls, destroy target nonland permanent that player controls.

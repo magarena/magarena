@@ -1,0 +1,9 @@
+name=Traverse the Outlands
+image=http://magiccards.info/scans/en/c17/34.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{G}
+effect=Search your library for up to X basic land cards, where X is the greatest power among creatures you control. Put those cards onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=Search your library for up to X basic land cards, where X is the greatest power among creatures you control. Put those cards onto the battlefield tapped, then shuffle your library.

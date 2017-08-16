@@ -1,0 +1,12 @@
+name=Inalla, Archmage Ritualist
+image=http://magiccards.info/scans/en/c17/38.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{U}{B}{R}
+pt=4/5
+ability=Whenever another nontoken Wizard enters the battlefield under your control, if SN is in the command zone or on the battlefield, you may pay {1}. If you do, create a token that's a copy of that Wizard. The token gains haste. Exile it at the beginning of the next end step.;\
+        Tap five untapped Wizards you control: Target player loses 7 life.
+timing=main
+oracle=Eminence — Whenever another nontoken Wizard enters the battlefield under your control, if Inalla, Archmage Ritualist is in the command zone or on the battlefield, you may pay {1}. If you do, create a token that's a copy of that Wizard. The token gains haste. Exile it at the beginning of the next end step.\nTap five untapped Wizards you control: Target player loses 7 life.

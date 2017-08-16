@@ -1,0 +1,12 @@
+name=Wasitora, Nekoru Queen
+image=http://magiccards.info/scans/en/c17/49.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Cat,Dragon
+cost={2}{B}{R}{G}
+pt=5/4
+ability=Flying, trample;\
+        Whenever SN deals combat damage to a player, that player sacrifices a creature. If the player can't, you create a 3/3 black, red, and green Cat Dragon creature token with flying.
+timing=main
+oracle=Flying, trample\nWhenever Wasitora, Nekoru Queen deals combat damage to a player, that player sacrifices a creature. If the player can't, you create a 3/3 black, red, and green Cat Dragon creature token with flying.

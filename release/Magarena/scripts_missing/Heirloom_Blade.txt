@@ -1,0 +1,12 @@
+name=Heirloom Blade
+image=http://magiccards.info/scans/en/c17/52.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +3/+1.;\
+        Whenever equipped creature dies, you may reveal cards from the top of your library until you reveal a creature card that shares a creature type with it. Put that card into your hand and the rest on the bottom of your library in a random order.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature gets +3/+1.\nWhenever equipped creature dies, you may reveal cards from the top of your library until you reveal a creature card that shares a creature type with it. Put that card into your hand and the rest on the bottom of your library in a random order.\nEquip {1}

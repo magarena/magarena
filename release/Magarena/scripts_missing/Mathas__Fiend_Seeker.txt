@@ -1,0 +1,12 @@
+name=Mathas, Fiend Seeker
+image=http://magiccards.info/scans/en/c17/42.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Vampire
+cost={R}{W}{B}
+pt=3/3
+ability=Menace;\
+        At the beginning of your end step, put a bounty counter on target creature an opponent controls. For as long as that creature has a bounty counter on it, it has "When this creature dies, each opponent draws a card and gains 2 life."
+timing=main
+oracle=Menace\nAt the beginning of your end step, put a bounty counter on target creature an opponent controls. For as long as that creature has a bounty counter on it, it has "When this creature dies, each opponent draws a card and gains 2 life."

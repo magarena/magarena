@@ -1,0 +1,10 @@
+name=New Blood
+image=http://magiccards.info/scans/en/c17/19.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+ability=As an additional cost to cast SN, tap an untapped Vampire you control.
+effect=Gain control of target creature. Change the text of that creature by replacing all instances of one creature type with Vampire.
+timing=main
+oracle=As an additional cost to cast New Blood, tap an untapped Vampire you control.\nGain control of target creature. Change the text of that creature by replacing all instances of one creature type with Vampire.

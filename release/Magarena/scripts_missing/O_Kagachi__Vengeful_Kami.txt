@@ -1,0 +1,12 @@
+name=O-Kagachi, Vengeful Kami
+image=http://magiccards.info/scans/en/c17/45.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Dragon,Spirit
+cost={1}{W}{U}{B}{R}{G}
+pt=6/6
+ability=Flying, trample;\
+        Whenever SN deals combat damage to a player, if that player attacked you during his or her last turn, exile target nonland permanent that player controls.
+timing=main
+oracle=Flying, trample\nWhenever O-Kagachi, Vengeful Kami deals combat damage to a player, if that player attacked you during his or her last turn, exile target nonland permanent that player controls.

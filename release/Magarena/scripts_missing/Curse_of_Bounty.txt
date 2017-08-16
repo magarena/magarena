@@ -1,0 +1,12 @@
+name=Curse of Bounty
+image=http://magiccards.info/scans/en/c17/30.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura,Curse
+cost={1}{G}
+ability=Enchant player;\
+        Whenever enchanted player is attacked, untap all nonland permanents you control. Each opponent attacking that player untaps all nonland permanents he or she controls.
+timing=aura
+enchant=default,creature
+oracle=Enchant player\nWhenever enchanted player is attacked, untap all nonland permanents you control. Each opponent attacking that player untaps all nonland permanents he or she controls.

@@ -1,0 +1,13 @@
+name=Taigam, Sidisi's Hand
+image=http://magiccards.info/scans/en/c17/47.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={3}{U}{B}
+pt=3/4
+ability=Skip your draw step.;\
+        At the beginning of your upkeep, look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.;\
+        {B}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.
+timing=main
+oracle=Skip your draw step.\nAt the beginning of your upkeep, look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.\n{B}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.

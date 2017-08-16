@@ -1,0 +1,12 @@
+name=Boneyard Scourge
+image=http://magiccards.info/scans/en/c17/15.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Dragon
+cost={2}{B}{B}
+pt=4/3
+ability=Flying;\
+        Whenever a Dragon you control dies while SN is in your graveyard, you may pay {1}{B}. If you do, return SN from your graveyard to the battlefield.
+timing=main
+oracle=Flying\nWhenever a Dragon you control dies while Boneyard Scourge is in your graveyard, you may pay {1}{B}. If you do, return Boneyard Scourge from your graveyard to the battlefield.

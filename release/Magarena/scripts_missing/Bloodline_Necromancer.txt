@@ -1,0 +1,12 @@
+name=Bloodline Necromancer
+image=http://magiccards.info/scans/en/c17/14.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Wizard
+cost={4}{B}
+pt=3/2
+ability=Lifelink;\
+        When SN enters the battlefield, you may return target Vampire or Wizard creature card from your graveyard to the battlefield.
+timing=main
+oracle=Lifelink\nWhen Bloodline Necromancer enters the battlefield, you may return target Vampire or Wizard creature card from your graveyard to the battlefield.

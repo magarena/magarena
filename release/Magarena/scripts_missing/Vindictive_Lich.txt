@@ -1,0 +1,14 @@
+name=Vindictive Lich
+image=http://magiccards.info/scans/en/c17/21.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Wizard
+cost={3}{B}
+pt=4/1
+ability=When SN dies, choose one or more. Each mode must target a different player. \
+        (1) Target opponent sacrifices a creature. \
+        (2) Target opponent discards two cards. \
+        (3) Target opponent loses 5 life.
+timing=main
+oracle=When Vindictive Lich dies, choose one or more. Each mode must target a different player.\n• Target opponent sacrifices a creature.\n• Target opponent discards two cards.\n• Target opponent loses 5 life.
