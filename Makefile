@@ -103,12 +103,6 @@ cards/groovy.txt: $(wildcard release/Magarena/scripts/*.txt)
 cards/non-groovy.txt: $(wildcard release/Magarena/scripts/*.txt)
 	grep -ho "name=.*" `grep requires_groovy_code -L release/Magarena/scripts/*.txt` | sed 's/name=//' | sort > $@
 
-%_full.txt: scripts/extract_candidates.awk %.txt cards/groovy.txt cards/mtg-data.txt
-	awk -f $^ | sed 's/\t/\n/g'  > $@
-
-cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dec.tsv cards/unimplementable.tsv cards/mtg-data.txt
-	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
-
 cards/unimplementable.tsv.add: cards/candidates_full.txt
 	grep "|" $^ | sed 's/NAME://;s/|/\t/' >> $(basename $@)
 	make $^
@@ -406,14 +400,6 @@ upload/Magarena-%.zip: Magarena-%.zip
 			-s "$^" \
 			$^
 
-cards/cards.orig.xml:
-	wget `curl 'http://www.slightlymagic.net/forum/viewtopic.php?f=27&t=1347' | grep -o "http[^<]*dl.dropbox[^<]*.zip\"" | sed 's/"//'`
-	unzip mtg-data-2015*.zip mtg-data/cards.xml mtg-data/meta.xml mtg-data/setinfo.xml
-	mv mtg-data/cards.xml $@
-	mv mtg-data/* cards
-	rmdir mtg-data
-	unzip mtg-data-txt*.zip -d cards
-
 # correct phyrexian mana from {P/.} -> {./P}
 cards/cards.xml: cards/cards.orig.xml
 	sed "s/{P\/\(.\)}/{\1\/P}/g;s/’/'/g" $^ > $@
@@ -443,11 +429,6 @@ cards/current-magic-excel.txt:
 
 code_clones:
 	java -jar ~/App/simian/bin/simian.jar release/Magarena/scripts/*.groovy > $@
-
-cards/mtg-data:
-	curl https://dl.dropbox.com/u/2771470/index.html | grep -o 'href="mtg.*.zip' | head -1 | sed 's/href="//' | xargs -I'{}' wget https://dl.dropbox.com/u/2771470/'{}'
-	unzip -j mtg-data*.zip -d cards
-	rm mtg-data*.zip
 
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
