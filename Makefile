@@ -133,6 +133,9 @@ cards/unknown.txt:
 cards/unknown_oracle.txt:
 	grep oracle= `grep -L status= -r release/Magarena/scripts_missing` | sed 's/oracle=/\n/;s/release/\nrelease/' > $@
 
+cards/groovy_oracle.txt:
+	grep oracle= `grep requires_groovy_code -r release/Magarena/scripts -l` | sed 's/oracle=/\n/;s/release/\nrelease/' > $@
+
 cards/staples_unknown.txt: cards/staples.txt cards/unknown.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
