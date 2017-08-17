@@ -1,0 +1,9 @@
+name=1/1 black Vampire creature token
+token=Vampire
+image=http://magiccards.info/extras/token/commander-2017/vampire.jpg
+value=1
+type=Creature
+subtype=Vampire
+color=b
+pt=1/1
+oracle=NONE

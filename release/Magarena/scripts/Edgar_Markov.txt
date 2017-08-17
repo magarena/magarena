@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Vampire,Knight
 cost={3}{R}{W}{B}
 pt=4/4
-ability=Whenever you cast another Vampire spell, if SN is in the command zone or on the battlefield, create a 1/1 black Vampire creature token.;\
+ability=Whenever you cast a Vampire spell, if SN is in the command zone or on the battlefield, create a 1/1 black Vampire creature token.;\
         First strike, haste;\
         Whenever SN attacks, put a +1/+1 counter on each Vampire you control.
 timing=main
