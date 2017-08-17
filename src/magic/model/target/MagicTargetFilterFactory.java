@@ -1863,6 +1863,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl VAMPIRE_OR_WIZARD_CREATURE_CARD = new MagicCardFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+            return target.hasType(MagicType.Creature) &&
+                (target.hasSubType(MagicSubType.Vampire) || target.hasSubType(MagicSubType.Wizard));
+        }
+    };
+
     public static final MagicCardFilterImpl BLACK_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         @Override
         public boolean acceptType(final MagicTargetType targetType) {
@@ -2598,6 +2606,7 @@ public class MagicTargetFilterFactory {
         addp("instant, sorcery, or creature card", INSTANT_SORCERY_OR_CREATURE_CARD);
         addp("artifact or creature card", ARTIFACT_OR_CREATURE_CARD);
         addp("colorless creature card", COLORLESS_CREATURE_CARD);
+        addp("Vampire or Wizard creature card", VAMPIRE_OR_WIZARD_CREATURE_CARD);
         addp("creature card in a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
 
         // ... card
