@@ -6,7 +6,6 @@ type=Creature
 subtype=Vampire,Knight
 cost={2}{R}{R}
 pt=4/4
-ability=Flying;\
-        Commander creatures you control get +2/+2 and have haste.
+ability=Flying
 timing=main
 oracle=Flying\nCommander creatures you control get +2/+2 and have haste.
