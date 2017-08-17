@@ -6,5 +6,5 @@ type=Creature
 subtype=Soldier
 color=rw
 pt=1/1
-ability=haste
-oracle=haste
+ability=Haste
+oracle=Haste
