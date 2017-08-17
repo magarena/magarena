@@ -11,4 +11,3 @@ ability=Devoid;\
         {2}, Put a card an opponent owns from exile into that player's graveyard: Draw a card, then discard a card.
 timing=main
 oracle=Devoid\n{2}, Put a card an opponent owns from exile into that player's graveyard: Draw a card, then discard a card.
-status=not supported: processor
