@@ -1,7 +1,7 @@
 name=Beastmaster Ascension
 image=http://magiccards.info/scans/en/c16/142.jpg
-vimage_updated=2017-08-17
-alue=4.049
+image_updated=2017-08-17
+value=4.049
 rarity=R
 type=Enchantment
 cost={2}{G}
