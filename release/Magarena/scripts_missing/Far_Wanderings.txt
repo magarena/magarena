@@ -1,5 +1,6 @@
 name=Far Wanderings
-image=http://magiccards.info/scans/en/tr/125.jpg
+image=http://magiccards.info/scans/en/c16/148.jpg
+image_updated=2017-08-17
 value=4.138
 rarity=C
 type=Sorcery

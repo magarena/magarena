@@ -1,5 +1,6 @@
 name=Krosan Verge
-image=http://magiccards.info/scans/en/pc2/123.jpg
+image=http://magiccards.info/scans/en/c16/306.jpg
+image_updated=2017-08-17
 value=4.477
 rarity=U
 type=Land

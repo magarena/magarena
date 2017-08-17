@@ -1,5 +1,6 @@
 name=Everlasting Torment
-image=http://magiccards.info/scans/en/shm/186.jpg
+image=http://magiccards.info/scans/en/c16/233.jpg
+image_updated=2017-08-17
 value=4.043
 rarity=R
 type=Enchantment

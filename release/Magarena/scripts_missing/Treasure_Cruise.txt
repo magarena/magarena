@@ -1,5 +1,6 @@
 name=Treasure Cruise
-image=http://magiccards.info/scans/en/ktk/59.jpg
+image=http://magiccards.info/scans/en/c16/101.jpg
+image_updated=2017-08-17
 value=3.333
 rarity=C
 type=Sorcery

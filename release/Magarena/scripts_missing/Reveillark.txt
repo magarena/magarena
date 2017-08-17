@@ -1,5 +1,6 @@
 name=Reveillark
-image=http://magiccards.info/scans/en/mma/26.jpg
+image=http://magiccards.info/scans/en/c16/74.jpg
+image_updated=2017-08-17
 value=4.258
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Reins of Power
-image=http://magiccards.info/scans/en/cmd/57.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/96.jpg
+image_updated=2017-08-17
 value=4.402
 rarity=R
 type=Instant

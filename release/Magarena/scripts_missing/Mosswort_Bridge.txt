@@ -1,6 +1,6 @@
 name=Mosswort Bridge
-image=http://magiccards.info/scans/en/lw/270.jpg
-image_updated=2016-12-23
+image=http://magiccards.info/scans/en/c16/307.jpg
+image_updated=2017-08-17
 value=3.600
 rarity=R
 type=Land

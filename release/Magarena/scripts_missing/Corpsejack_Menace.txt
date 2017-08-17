@@ -1,5 +1,6 @@
 name=Corpsejack Menace
-image=http://magiccards.info/scans/en/rtr/152.jpg
+image=http://magiccards.info/scans/en/c16/190.jpg
+image_updated=2017-08-17
 value=4.051
 rarity=R
 type=Creature

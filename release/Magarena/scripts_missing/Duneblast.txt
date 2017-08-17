@@ -1,5 +1,6 @@
 name=Duneblast
-image=http://magiccards.info/scans/en/ktk/174.jpg
+image=http://magiccards.info/scans/en/c16/194.jpg
+image_updated=2017-08-17
 value=3.833
 rarity=R
 type=Sorcery

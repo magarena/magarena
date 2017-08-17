@@ -1,5 +1,6 @@
 name=Reverse the Sands
-image=http://magiccards.info/scans/en/chk/41.jpg
+image=http://magiccards.info/scans/en/c16/75.jpg
+image_updated=2017-08-17
 value=3.245
 rarity=R
 type=Sorcery

@@ -1,5 +1,6 @@
 name=Fathom Mage
-image=http://magiccards.info/scans/en/gtc/162.jpg
+image=http://magiccards.info/scans/en/c16/198.jpg
+image_updated=2017-08-17
 value=3.973
 rarity=R
 type=Creature

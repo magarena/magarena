@@ -1,5 +1,6 @@
 name=Godo, Bandit Warlord
-image=http://magiccards.info/scans/en/chk/169.jpg
+image=http://magiccards.info/scans/en/c16/125.jpg
+image_updated=2017-08-17
 value=3.991
 rarity=R
 type=Legendary,Creature

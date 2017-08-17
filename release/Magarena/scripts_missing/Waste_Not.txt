@@ -1,5 +1,6 @@
 name=Waste Not
-image=http://magiccards.info/scans/en/m15/122.jpg
+image=http://magiccards.info/scans/en/c16/117.jpg
+image_updated=2017-08-17
 value=3.818
 rarity=R
 type=Enchantment

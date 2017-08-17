@@ -1,5 +1,6 @@
 name=Windborn Muse
-image=http://magiccards.info/scans/en/cmd/38.jpg
+image=http://magiccards.info/scans/en/c16/80.jpg
+image_updated=2017-08-17
 value=4.171
 rarity=R
 type=Creature

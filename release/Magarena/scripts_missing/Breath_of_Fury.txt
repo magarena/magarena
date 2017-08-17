@@ -1,5 +1,6 @@
 name=Breath of Fury
-image=http://magiccards.info/scans/en/rav/116.jpg
+image=http://magiccards.info/scans/en/c16/121.jpg
+image_updated=2017-08-17
 value=3.990
 rarity=R
 type=Enchantment

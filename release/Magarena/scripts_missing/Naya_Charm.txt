@@ -1,5 +1,6 @@
 name=Naya Charm
-image=http://magiccards.info/scans/en/ala/180.jpg
+image=http://magiccards.info/scans/en/c16/214.jpg
+image_updated=2017-08-17
 value=3.769
 rarity=U
 type=Instant

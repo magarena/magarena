@@ -1,5 +1,6 @@
 name=Chief Engineer
-image=http://magiccards.info/scans/en/m15/47.jpg
+image=http://magiccards.info/scans/en/c16/86.jpg
+image_updated=2017-08-17
 value=3.562
 rarity=R
 type=Creature

@@ -1,5 +1,6 @@
 name=Shadowblood Ridge
-image=http://magiccards.info/scans/en/od/326.jpg
+image=http://magiccards.info/scans/en/c16/325.jpg
+image_updated=2017-08-17
 value=4.013
 rarity=R
 type=Land

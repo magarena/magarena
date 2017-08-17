@@ -1,6 +1,6 @@
 name=Into the Void
-image=http://magiccards.info/scans/en/ori/277.jpg
-image_updated=2010-09-10
+image=http://magiccards.info/scans/en/cn2/112.jpg
+image_updated=2017-08-17
 value=3.100
 rarity=U
 type=Sorcery

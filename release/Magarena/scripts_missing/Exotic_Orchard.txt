@@ -1,5 +1,6 @@
 name=Exotic Orchard
-image=http://magiccards.info/scans/en/pc2/117.jpg
+image=http://magiccards.info/scans/en/c16/295.jpg
+image_updated=2017-08-17
 value=2.962
 rarity=R
 type=Land

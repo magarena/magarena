@@ -1,6 +1,6 @@
 name=Spinerock Knoll
-image=http://magiccards.info/scans/en/lw/274.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/327.jpg
+image_updated=2017-08-17
 value=3.755
 rarity=R
 type=Land

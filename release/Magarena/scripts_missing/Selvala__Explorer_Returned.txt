@@ -1,5 +1,6 @@
 name=Selvala, Explorer Returned
-image=http://magiccards.info/scans/en/cns/51.jpg
+image=http://magiccards.info/scans/en/c16/220.jpg
+image_updated=2017-08-17
 value=4.071
 rarity=R
 type=Legendary,Creature

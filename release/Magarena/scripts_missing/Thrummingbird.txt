@@ -1,8 +1,8 @@
 name=Thrummingbird
-image=http://magiccards.info/scans/en/mm2/65.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/c16/100.jpg
+image_updated=2017-08-17
 value=2.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Bird,Horror
 cost={1}{U}

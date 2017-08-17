@@ -1,5 +1,6 @@
 name=Ghostly Prison
-image=http://magiccards.info/scans/en/pc2/7.jpg
+image=http://magiccards.info/scans/en/c16/66.jpg
+image_updated=2017-08-17
 value=4.130
 rarity=U
 type=Enchantment

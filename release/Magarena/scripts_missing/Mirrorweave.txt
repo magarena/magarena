@@ -1,5 +1,6 @@
 name=Mirrorweave
-image=http://magiccards.info/scans/en/shm/143.jpg
+image=http://magiccards.info/scans/en/c16/234.jpg
+image_updated=2017-08-17
 value=4.057
 rarity=R
 type=Instant

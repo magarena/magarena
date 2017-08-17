@@ -1,5 +1,6 @@
 name=Sungrass Prairie
-image=http://magiccards.info/scans/en/od/328.jpg
+image=http://magiccards.info/scans/en/c16/328.jpg
+image_updated=2017-08-17
 value=3.810
 rarity=R
 type=Land

@@ -1,6 +1,6 @@
 name=Command Tower
-image=http://magiccards.info/scans/en/cmd/269.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/286.jpg
+image_updated=2017-08-17
 value=3.596
 rarity=C
 type=Land

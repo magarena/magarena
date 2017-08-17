@@ -1,5 +1,6 @@
 name=Decimate
-image=http://magiccards.info/scans/en/cns/185.jpg
+image=http://magiccards.info/scans/en/c16/193.jpg
+image_updated=2017-08-17
 value=4.357
 rarity=R
 type=Sorcery
