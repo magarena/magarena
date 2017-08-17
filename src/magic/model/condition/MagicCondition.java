@@ -927,4 +927,12 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return source.getController().isMonarch();
         }
     };
+
+    public static MagicCondition EMINENCE = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.isValid();
+        }
+    };
 }

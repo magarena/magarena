@@ -300,6 +300,12 @@ public enum MagicConditionParser {
             return MagicConditionFactory.SelfIs(filter);
         }
     },
+    Eminence("SN is in the command zone or on the battlefield") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.EMINENCE;
+        }
+    },
     EquippedIsA("equipped creature is( a| an)? " + ARG.WORDRUN) {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
