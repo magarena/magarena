@@ -2302,24 +2302,40 @@ public enum MagicRuleEventAction {
         "Cipher",
         (game, event) -> game.doAction(new CipherAction(event.getCardOnStack(), event.getPlayer()))
     ),
-    DetainChosen(
-        "detain " + ARG.CHOICE,
+    Detain(
+        "detain " + ARG.PERMANENTS,
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.FirstMain,
-        "Detain",
-        (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) ->
-            game.doAction(new DetainAction(event.getPlayer(), creature)))
-    ),
-    GoadChosen(
-        "goad " + ARG.CHOICE,
+        "Detain"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new DetainAction(event.getPlayer(), it));
+                }
+            };
+        }
+    },
+    Goad(
+        "goad " + ARG.PERMANENTS,
         MagicTargetHint.Negative,
         MagicMustAttackTargetPicker.create(),
         MagicTiming.FirstMain,
-        "Goad",
-        (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) ->
-            game.doAction(new GoadAction(event.getPlayer(), creature)))
-    ),
+        "Goad"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new GoadAction(event.getPlayer(), it));
+                }
+            };
+        }
+    },
     CopySpell(
         "copy " + ARG.CHOICE + "\\. You may choose new targets for (the|that) copy",
         MagicTiming.Spell,
