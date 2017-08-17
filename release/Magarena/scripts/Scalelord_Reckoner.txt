@@ -7,6 +7,6 @@ subtype=Dragon
 cost={3}{W}{W}
 pt=4/4
 ability=Flying;\
-        Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, destroy target nonland permanent that player controls.
+        Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, destroy target nonland permanent an opponent controls.
 timing=main
 oracle=Flying\nWhenever a Dragon you control becomes the target of a spell or ability an opponent controls, destroy target nonland permanent that player controls.
