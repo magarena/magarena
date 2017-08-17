@@ -1,5 +1,6 @@
 name=Vorel of the Hull Clade
-image=http://magiccards.info/scans/en/dgm/115.jpg
+image=http://magiccards.info/scans/en/c16/227.jpg
+image_updated=2017-08-17
 value=3.833
 rarity=R
 type=Legendary,Creature

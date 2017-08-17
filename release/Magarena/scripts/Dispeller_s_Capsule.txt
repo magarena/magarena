@@ -1,5 +1,6 @@
 name=Dispeller's Capsule
-image=http://magiccards.info/scans/en/mma/12.jpg
+image=http://magiccards.info/scans/en/c16/64.jpg
+image_updated=2017-08-17
 value=3.870
 rarity=C
 type=Artifact

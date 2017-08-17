@@ -1,5 +1,6 @@
 name=Mortify
-image=http://magiccards.info/scans/en/cns/190.jpg
+image=http://magiccards.info/scans/en/c16/212.jpg
+image_updated=2017-08-17
 value=4.417
 removal=5
 rarity=U

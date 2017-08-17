@@ -1,5 +1,6 @@
 name=Progenitor Mimic
-image=http://magiccards.info/scans/en/dgm/92.jpg
+image=http://magiccards.info/scans/en/c16/216.jpg
+image_updated=2017-08-17
 value=3.814
 rarity=M
 type=Creature

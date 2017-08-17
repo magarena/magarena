@@ -1,5 +1,6 @@
 name=Rites of Flourishing
-image=http://magiccards.info/scans/en/m12/192.jpg
+image=http://magiccards.info/scans/en/c16/163.jpg
+image_updated=2017-08-17
 value=3.680
 rarity=R
 type=Enchantment

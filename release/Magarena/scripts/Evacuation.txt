@@ -1,6 +1,6 @@
 name=Evacuation
-image=http://magiccards.info/scans/en/10e/83.jpg
-image_updated=2016-12-02
+image=http://magiccards.info/scans/en/c16/91.jpg
+image_updated=2017-08-17
 value=4.365
 removal=1
 rarity=R

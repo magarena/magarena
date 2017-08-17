@@ -1,5 +1,6 @@
 name=Hoofprints of the Stag
-image=http://magiccards.info/scans/en/lw/21.jpg
+image=http://magiccards.info/scans/en/c16/67.jpg
+image_updated=2017-08-17
 value=4.088
 rarity=R
 type=Tribal,Enchantment

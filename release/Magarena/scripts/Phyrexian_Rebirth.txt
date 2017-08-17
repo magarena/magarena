@@ -1,5 +1,6 @@
 name=Phyrexian Rebirth
-image=http://magiccards.info/scans/en/mbs/15.jpg
+image=http://magiccards.info/scans/en/c16/73.jpg
+image_updated=2017-08-17
 value=3.773
 rarity=R
 type=Sorcery

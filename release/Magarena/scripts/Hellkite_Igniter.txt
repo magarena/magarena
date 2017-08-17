@@ -1,5 +1,6 @@
 name=Hellkite Igniter
-image=http://magiccards.info/scans/en/mbs/65.jpg
+image=http://magiccards.info/scans/en/c16/127.jpg
+image_updated=2017-08-17
 value=3.439
 rarity=R
 type=Creature

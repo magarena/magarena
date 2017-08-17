@@ -1,5 +1,6 @@
 name=Sharuum the Hegemon
-image=http://magiccards.info/scans/en/ala/194.jpg
+image=http://magiccards.info/scans/en/c16/221.jpg
+image_updated=2017-08-17
 value=4.167
 rarity=M
 type=Legendary,Artifact,Creature

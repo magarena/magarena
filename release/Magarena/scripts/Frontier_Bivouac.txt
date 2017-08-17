@@ -1,5 +1,6 @@
 name=Frontier Bivouac
-image=http://magiccards.info/scans/en/ktk/234.jpg
+image=http://magiccards.info/scans/en/c16/297.jpg
+image_updated=2017-08-17
 value=3.833
 rarity=U
 type=Land

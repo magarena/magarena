@@ -1,5 +1,6 @@
 name=Kazuul, Tyrant of the Cliffs
-image=http://magiccards.info/scans/en/wwk/84.jpg
+image=http://magiccards.info/scans/en/c16/130.jpg
+image_updated=2017-08-17
 value=4.073
 rarity=R
 type=Legendary,Creature

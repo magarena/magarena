@@ -1,5 +1,6 @@
 name=Chasm Skulker
-image=http://magiccards.info/scans/en/m15/46.jpg
+image=http://magiccards.info/scans/en/c16/85.jpg
+image_updated=2017-08-17
 value=4.000
 rarity=R
 type=Creature

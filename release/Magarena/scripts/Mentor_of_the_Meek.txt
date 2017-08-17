@@ -1,5 +1,6 @@
 name=Mentor of the Meek
-image=http://magiccards.info/scans/en/c14/79.jpg
+image=http://magiccards.info/scans/en/c16/69.jpg
+image_updated=2017-08-17
 value=3.872
 rarity=R
 type=Creature

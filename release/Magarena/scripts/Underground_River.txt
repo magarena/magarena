@@ -1,5 +1,6 @@
 name=Underground River
-image=http://magiccards.info/scans/en/10e/362.jpg
+image=http://magiccards.info/scans/en/c16/335.jpg
+image_updated=2017-08-17
 value=4.182
 rarity=R
 type=Land

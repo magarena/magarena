@@ -1,6 +1,6 @@
 name=Psychosis Crawler
-image=http://magiccards.info/scans/en/mbs/126.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/267.jpg
+image_updated=2017-08-17
 value=3.792
 rarity=R
 type=Artifact,Creature

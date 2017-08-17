@@ -1,5 +1,6 @@
 name=Ichor Wellspring
-image=http://magiccards.info/scans/en/c14/241.jpg
+image=http://magiccards.info/scans/en/c16/258.jpg
+image_updated=2017-08-17
 value=3.837
 rarity=C
 type=Artifact

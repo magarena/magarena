@@ -1,7 +1,8 @@
 name=Ornithopter
-image=http://magiccards.info/scans/en/m15/223.jpg
+image=http://magiccards.info/scans/en/aer/167.jpg
+image_updated=2017-08-17
 value=3.438
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Thopter
 cost={0}

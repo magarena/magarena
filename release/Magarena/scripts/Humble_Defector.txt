@@ -1,5 +1,6 @@
 name=Humble Defector
-image=http://magiccards.info/scans/en/frf/104.jpg
+image=http://magiccards.info/scans/en/c16/129.jpg
+image_updated=2017-08-17
 value=2.500
 rarity=U
 type=Creature

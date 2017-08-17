@@ -1,5 +1,6 @@
 name=Nevinyrral's Disk
-image=http://magiccards.info/scans/en/ema/228.jpg
+image=http://magiccards.info/scans/en/c16/265.jpg
+image_updated=2017-08-17
 value=4.500
 rarity=R
 type=Artifact

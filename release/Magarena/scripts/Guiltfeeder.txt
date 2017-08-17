@@ -1,12 +1,13 @@
 name=Guiltfeeder
-image=http://magiccards.info/scans/en/ju/68.jpg
+image=http://magiccards.info/scans/en/c16/112.jpg
+image_updated=2017-08-17
 value=4.186
 rarity=R
 type=Creature
 subtype=Horror
 cost={3}{B}{B}
 pt=0/4
-ability=fear
+ability=Fear
 timing=main
 requires_groovy_code
 oracle=Fear\nWhenever Guiltfeeder attacks and isn't blocked, defending player loses 1 life for each card in his or her graveyard.

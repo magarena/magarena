@@ -1,5 +1,6 @@
 name=Festercreep
-image=http://magiccards.info/scans/en/mt/62.jpg
+image=http://magiccards.info/scans/en/c16/110.jpg
+image_updated=2017-08-17
 value=2.688
 rarity=C
 type=Creature

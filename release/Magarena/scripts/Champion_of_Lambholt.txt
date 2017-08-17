@@ -1,5 +1,6 @@
 name=Champion of Lambholt
-image=http://magiccards.info/scans/en/avr/171.jpg
+image=http://magiccards.info/scans/en/c16/144.jpg
+image_updated=2017-08-17
 value=3.922
 rarity=R
 type=Creature

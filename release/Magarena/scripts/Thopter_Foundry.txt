@@ -1,5 +1,6 @@
 name=Thopter Foundry
-image=http://magiccards.info/scans/en/arb/133.jpg
+image=http://magiccards.info/scans/en/c16/237.jpg
+image_updated=2017-08-17
 value=3.933
 rarity=U
 type=Artifact

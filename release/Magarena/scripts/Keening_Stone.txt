@@ -1,5 +1,6 @@
 name=Keening Stone
-image=http://magiccards.info/scans/en/roe/219.jpg
+image=http://magiccards.info/scans/en/c16/259.jpg
+image_updated=2017-08-17
 value=4.039
 rarity=R
 type=Artifact

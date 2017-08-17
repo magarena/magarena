@@ -1,6 +1,6 @@
 name=Dragon Mage
-image=http://magiccards.info/scans/en/sc/87.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/124.jpg
+image_updated=2017-08-17
 value=4.305
 rarity=R
 type=Creature

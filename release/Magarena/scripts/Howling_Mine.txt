@@ -1,5 +1,6 @@
 name=Howling Mine
-image=http://magiccards.info/scans/en/cmd/251.jpg
+image=http://magiccards.info/scans/en/c16/257.jpg
+image_updated=2017-08-17
 value=4.292
 rarity=R
 type=Artifact

@@ -1,6 +1,6 @@
 name=Plummet
-image=http://magiccards.info/scans/en/bfz/184.jpg
-image_updated=2015-11-08
+image=http://magiccards.info/scans/en/cn2/190.jpg
+image_updated=2017-08-17
 value=2.500
 rarity=C
 type=Instant

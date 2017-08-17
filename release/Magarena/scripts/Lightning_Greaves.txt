@@ -1,6 +1,6 @@
 name=Lightning Greaves
-image=http://magiccards.info/scans/en/cmd/253.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/260.jpg
+image_updated=2017-08-17
 value=4.438
 rarity=U
 type=Artifact

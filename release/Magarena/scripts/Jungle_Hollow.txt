@@ -1,5 +1,6 @@
 name=Jungle Hollow
-image=http://magiccards.info/scans/en/ema/239.jpg
+image=http://magiccards.info/scans/en/c16/303.jpg
+image_updated=2017-08-17
 value=3.250
 rarity=C
 type=Land

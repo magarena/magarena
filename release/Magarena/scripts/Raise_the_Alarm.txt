@@ -1,5 +1,6 @@
 name=Raise the Alarm
-image=http://magiccards.info/scans/en/ema/24.jpg
+image=http://magiccards.info/scans/en/cn2/96.jpg
+image_updated=2017-08-17
 value=3.917
 rarity=C
 type=Instant

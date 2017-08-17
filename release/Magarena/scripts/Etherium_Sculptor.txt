@@ -1,5 +1,6 @@
 name=Etherium Sculptor
-image=http://magiccards.info/scans/en/mma/44.jpg
+image=http://magiccards.info/scans/en/c16/89.jpg
+image_updated=2017-08-17
 value=4.524
 rarity=C
 type=Artifact,Creature

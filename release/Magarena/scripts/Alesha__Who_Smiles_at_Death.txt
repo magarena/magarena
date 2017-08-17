@@ -1,5 +1,6 @@
 name=Alesha, Who Smiles at Death
-image=http://magiccards.info/scans/en/frf/90.jpg
+image=http://magiccards.info/scans/en/c16/119.jpg
+image_updated=2017-08-17
 value=2.500
 rarity=R
 type=Legendary,Creature

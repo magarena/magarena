@@ -1,6 +1,6 @@
 name=Managorger Hydra
-image=http://magiccards.info/scans/en/ori/186.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/c16/157.jpg
+image_updated=2017-08-17
 value=2.500
 rarity=R
 type=Creature

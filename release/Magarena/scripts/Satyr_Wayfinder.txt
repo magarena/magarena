@@ -1,6 +1,6 @@
 name=Satyr Wayfinder
-image=http://magiccards.info/scans/en/m15/198.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/165.jpg
+image_updated=2017-08-17
 value=3.083
 rarity=C
 type=Creature

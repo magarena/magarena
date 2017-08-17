@@ -1,5 +1,6 @@
 name=Rootbound Crag
-image=http://magiccards.info/scans/en/m13/228.jpg
+image=http://magiccards.info/scans/en/c16/317.jpg
+image_updated=2017-08-17
 value=3.858
 rarity=R
 type=Land

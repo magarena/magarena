@@ -1,5 +1,6 @@
 name=Sangromancer
-image=http://magiccards.info/scans/en/mbs/53.jpg
+image=http://magiccards.info/scans/en/c16/116.jpg
+image_updated=2017-08-17
 value=3.831
 rarity=R
 type=Creature

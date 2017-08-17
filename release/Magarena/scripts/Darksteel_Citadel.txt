@@ -1,7 +1,8 @@
 name=Darksteel Citadel
-image=http://magiccards.info/scans/en/mm2/238.jpg
+image=http://magiccards.info/scans/en/c16/288.jpg
+image_updated=2017-08-17
 value=4.056
-rarity=C
+rarity=U
 type=Artifact,Land
 ability=Indestructible;\
         {T}: Add {C} to your mana pool.

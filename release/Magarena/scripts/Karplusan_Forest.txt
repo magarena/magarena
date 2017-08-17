@@ -1,5 +1,6 @@
 name=Karplusan Forest
-image=http://magiccards.info/scans/en/10e/354.jpg
+image=http://magiccards.info/scans/en/c16/305.jpg
+image_updated=2017-08-17
 value=4.346
 rarity=R
 type=Land

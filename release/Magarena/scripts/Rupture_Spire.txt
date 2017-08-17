@@ -1,5 +1,6 @@
 name=Rupture Spire
-image=http://magiccards.info/scans/en/pc2/124.jpg
+image=http://magiccards.info/scans/en/c16/319.jpg
+image_updated=2017-08-17
 value=3.538
 rarity=C
 type=Land

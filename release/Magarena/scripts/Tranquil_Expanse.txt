@@ -1,8 +1,8 @@
 name=Tranquil Expanse
-image=http://magiccards.info/scans/en/ogw/180.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/aer/189.jpg
+image_updated=2017-08-17
 value=2.500
-rarity=U
+rarity=C
 type=Land
 mana=g3w3
 ability=SN enters the battlefield tapped.;\

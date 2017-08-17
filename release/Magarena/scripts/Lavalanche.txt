@@ -1,5 +1,6 @@
 name=Lavalanche
-image=http://magiccards.info/scans/en/arb/118.jpg
+image=http://magiccards.info/scans/en/c16/209.jpg
+image_updated=2017-08-17
 value=3.594
 rarity=R
 type=Sorcery

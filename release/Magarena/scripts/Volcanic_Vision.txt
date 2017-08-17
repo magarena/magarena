@@ -1,5 +1,6 @@
 name=Volcanic Vision
-image=http://magiccards.info/scans/en/dtk/167.jpg
+image=http://magiccards.info/scans/en/c16/137.jpg
+image_updated=2017-08-17
 value=2.500
 rarity=R
 type=Sorcery

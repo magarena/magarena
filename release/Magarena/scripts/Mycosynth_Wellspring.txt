@@ -1,5 +1,6 @@
 name=Mycosynth Wellspring
-image=http://magiccards.info/scans/en/c14/253.jpg
+image=http://magiccards.info/scans/en/c16/262.jpg
+image_updated=2017-08-17
 value=3.468
 rarity=C
 type=Artifact

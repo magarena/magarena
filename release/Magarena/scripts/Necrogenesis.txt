@@ -1,5 +1,6 @@
 name=Necrogenesis
-image=http://magiccards.info/scans/en/mm2/181.jpg
+image=http://magiccards.info/scans/en/c16/215.jpg
+image_updated=2017-08-17
 value=3.000
 rarity=U
 type=Enchantment

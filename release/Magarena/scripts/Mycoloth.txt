@@ -1,6 +1,6 @@
 name=Mycoloth
-image=http://magiccards.info/scans/en/pc2/68.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/c16/158.jpg
+image_updated=2017-08-17
 value=3.619
 rarity=R
 type=Creature

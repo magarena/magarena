@@ -1,5 +1,6 @@
 name=Aura Mutation
-image=http://magiccards.info/scans/en/in/232.jpg
+image=http://magiccards.info/scans/en/c16/180.jpg
+image_updated=2017-08-17
 value=4.271
 rarity=R
 type=Instant

@@ -1,5 +1,6 @@
 name=Nath of the Gilt-Leaf
-image=http://magiccards.info/scans/en/lw/250.jpg
+image=http://magiccards.info/scans/en/c16/213.jpg
+image_updated=2017-08-17
 value=4.009
 rarity=R
 type=Legendary,Creature

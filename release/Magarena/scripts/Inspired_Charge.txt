@@ -1,6 +1,6 @@
 name=Inspired Charge
-image=http://magiccards.info/scans/en/bfz/32.jpg
-image_updated=2015-11-08
+image=http://magiccards.info/scans/en/kld/20.jpg
+image_updated=2017-08-17
 value=1.750
 rarity=C
 type=Instant

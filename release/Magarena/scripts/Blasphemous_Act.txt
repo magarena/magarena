@@ -1,5 +1,6 @@
 name=Blasphemous Act
-image=http://magiccards.info/scans/en/c14/172.jpg
+image=http://magiccards.info/scans/en/c16/120.jpg
+image_updated=2017-08-17
 value=2.500
 rarity=R
 type=Sorcery
