@@ -11,4 +11,3 @@ ability=Devoid;\
         When SN enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, return target instant or sorcery card from your graveyard to your hand.
 timing=main
 oracle=Devoid\nWhen Ulamog's Reclaimer enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, return target instant or sorcery card from your graveyard to your hand.
-status=not supported: processor
