@@ -7,6 +7,6 @@ subtype=Vampire,Knight
 cost={3}{R}{R}
 pt=4/5
 ability=Trample;\
-        At the beginning of each player's end step, SN deals 4 damage to that player unless he or she controls a commander.
+        At the beginning of each player's end step, SN deals 4 damage to that player.
 timing=main
 oracle=Trample\nAt the beginning of each player's end step, Crimson Honor Guard deals 4 damage to that player unless he or she controls a commander.
