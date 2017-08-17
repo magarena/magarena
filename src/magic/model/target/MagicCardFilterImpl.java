@@ -43,6 +43,11 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             add(source, player, player.getOpponent().getGraveyard(), targets, false);
         }
 
+        // Cards in opponent's exile
+        if (acceptType(MagicTargetType.OpponentsExile)) {
+            add(source, player, player.getOpponent().getExile(), targets, false);
+        }
+
         // Cards in hand
         if (acceptType(MagicTargetType.Hand)) {
             add(source, player, player.getHand(), targets, false);

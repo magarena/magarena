@@ -6,6 +6,7 @@ public enum MagicTargetType {
     Stack,
     Graveyard,
     OpponentsGraveyard,
+    OpponentsExile,
     Hand,
     Library
     ;

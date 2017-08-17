@@ -463,6 +463,12 @@ public class MagicCard
             return true;
         }
 
+        // Card in opponent's exile
+        if (targetFilter.acceptType(MagicTargetType.OpponentsExile) &&
+            player.getOpponent().getExile().contains(this)) {
+            return true;
+        }
+
         // Card in hand
         if (targetFilter.acceptType(MagicTargetType.Hand) &&
             player.getHand().contains(this)) {

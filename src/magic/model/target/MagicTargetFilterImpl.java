@@ -64,6 +64,11 @@ public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTa
             targets.addAll(player.getOpponent().getGraveyard().stream().filter(targetCard -> accept(source, player, targetCard)).collect(Collectors.toList()));
         }
 
+        // Cards in opponent's exile
+        if (acceptType(MagicTargetType.OpponentsExile)) {
+            targets.addAll(player.getOpponent().getExile().stream().filter(targetCard -> accept(source, player, targetCard)).collect(Collectors.toList()));
+        }
+
         // Cards in hand
         if (acceptType(MagicTargetType.Hand)) {
             targets.addAll(player.getHand().stream().filter(targetCard -> accept(source, player, targetCard)).collect(Collectors.toList()));

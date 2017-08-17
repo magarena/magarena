@@ -16,7 +16,8 @@ public class ARG {
 
     public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
     public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
-    public static final String THING = "(permanent|creature|artifact|land|player|opponent|spell or ability|spell|ability)";
+    public static final String THING = "(permanent|creature|artifact|land|spell or ability|spell|ability)";
+    public static final String PLAYER = "(player|opponent)";
     public static final String EVENQUOTES = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
 
     public static final String ENERGY = "(?<energy>(\\{E\\})+)";

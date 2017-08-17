@@ -286,6 +286,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice ANOTHER_CREATURE_YOU_CONTROL =
         new MagicTargetChoice("another creature you control");
 
+    public static final MagicTargetChoice A_CARD_FROM_OPPONENTS_EXILE =
+        new MagicTargetChoice(MagicTargetFilterFactory.CARD_FROM_OPPONENTS_EXILE, "a card an opponent owns from exile");
+
     private final String targetDescription;
     private final MagicTargetFilter<? extends MagicTarget> targetFilter;
     private final boolean targeted;
@@ -456,6 +459,8 @@ public class MagicTargetChoice extends MagicChoice {
             controller.focusViewers(1);
         } else if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
             controller.focusViewers(2);
+        } else if (targetFilter.acceptType(MagicTargetType.OpponentsExile)) {
+            controller.focusViewers(4);
         }
         final MagicTargetHint usedTargetHint=getTargetHint(GeneralConfig.getInstance().getSmartTarget());
         final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));

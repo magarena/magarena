@@ -1840,6 +1840,9 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl CARD_FROM_OPPONENTS_GRAVEYARD =
         card().from(MagicTargetType.OpponentsGraveyard);
 
+    public static final MagicCardFilterImpl CARD_FROM_OPPONENTS_EXILE =
+        card().from(MagicTargetType.OpponentsExile);
+
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD =
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Graveyard);
 
