@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Each creature you control with a divinity counter on it has indestructible.
 timing=enchantment
 oracle=As Kindred Boon enters the battlefield, choose a creature type.\n{1}{W}: Put a divinity counter on target creature you control of the chosen type.\nEach creature you control with a divinity counter on it has indestructible.
+status=not supported: choose-creature-type

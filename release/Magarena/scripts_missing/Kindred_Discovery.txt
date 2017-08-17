@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Whenever a creature you control of the chosen type enters the battlefield or attacks, draw a card.
 timing=enchantment
 oracle=As Kindred Discovery enters the battlefield, choose a creature type.\nWhenever a creature you control of the chosen type enters the battlefield or attacks, draw a card.
+status=not supported: choose-creature-type

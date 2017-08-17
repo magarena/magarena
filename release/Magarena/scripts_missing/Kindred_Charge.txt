@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=Choose a creature type. For each creature you control of the chosen type, create a token that's a copy of that creature. Those tokens gain haste. Exile them at the beginning of the next end step.
 timing=main
 oracle=Choose a creature type. For each creature you control of the chosen type, create a token that's a copy of that creature. Those tokens gain haste. Exile them at the beginning of the next end step.
+status=not supported: choose-creature-type

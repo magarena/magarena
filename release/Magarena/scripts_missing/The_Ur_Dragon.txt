@@ -11,3 +11,4 @@ ability=As long as SN is in the command zone or on the battlefield, other Dragon
         Whenever one or more Dragons you control attack, draw that many cards, then you may put a permanent card from your hand onto the battlefield.
 timing=main
 oracle=Eminence — As long as The Ur-Dragon is in the command zone or on the battlefield, other Dragon spells you cast cost {1} less to cast.\nFlying\nWhenever one or more Dragons you control attack, draw that many cards, then you may put a permanent card from your hand onto the battlefield.
+status=not supported: when-one-or-more

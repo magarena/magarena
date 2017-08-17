@@ -7,3 +7,4 @@ cost={3}{W}{U}
 effect=Exile target nonland permanent. Each player other than its controller creates a token that's a copy of it.
 timing=main
 oracle=Exile target nonland permanent. Each player other than its controller creates a token that's a copy of it.
+status=needs groovy

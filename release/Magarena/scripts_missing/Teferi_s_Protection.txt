@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Until your next turn, your life total can't change and you have protection from everything. All permanents you control phase out.~Exile SN.
 timing=removal
 oracle=Until your next turn, your life total can't change and you have protection from everything. All permanents you control phase out.\nExile Teferi's Protection.
+status=not supported: phasing

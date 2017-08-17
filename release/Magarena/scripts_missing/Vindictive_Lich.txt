@@ -12,3 +12,4 @@ ability=When SN dies, choose one or more. Each mode must target a different play
         (3) Target opponent loses 5 life.
 timing=main
 oracle=When Vindictive Lich dies, choose one or more. Each mode must target a different player.\n• Target opponent sacrifices a creature.\n• Target opponent discards two cards.\n• Target opponent loses 5 life.
+status=not supported: multiple-targets

@@ -11,3 +11,4 @@ ability=First strike;\
         {1}{W}: Attach all Equipment you control to Balan.
 timing=main
 oracle=First strike\nBalan, Wandering Knight has double strike as long as two or more Equipment are attached to it.\n{1}{W}: Attach all Equipment you control to Balan.
+status=needs groovy

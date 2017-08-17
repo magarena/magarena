@@ -10,3 +10,4 @@ ability=Flying, trample;\
         Whenever SN deals combat damage to a player, if that player attacked you during his or her last turn, exile target nonland permanent that player controls.
 timing=main
 oracle=Flying, trample\nWhenever O-Kagachi, Vengeful Kami deals combat damage to a player, if that player attacked you during his or her last turn, exile target nonland permanent that player controls.
+status=not supported: no-info

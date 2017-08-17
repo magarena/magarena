@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,creature
 oracle=Enchant player\nWhenever enchanted player is attacked, untap all nonland permanents you control. Each opponent attacking that player untaps all nonland permanents he or she controls.
+status=not supported: enchant-player

@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         At the beginning of your upkeep, look at the top card of your library. If it's a creature card of the chosen type, you may reveal it and put it into your hand.
 timing=artifact
 oracle=As Herald's Horn enters the battlefield, choose a creature type.\nCreature spells you cast of the chosen type cost {1} less to cast.\nAt the beginning of your upkeep, look at the top card of your library. If it's a creature card of the chosen type, you may reveal it and put it into your hand.
+status=not supported: choose-creature-type

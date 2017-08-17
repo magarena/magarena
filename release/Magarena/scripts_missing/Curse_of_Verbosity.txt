@@ -10,3 +10,4 @@ ability=Enchant player;\
 timing=aura
 enchant=default,creature
 oracle=Enchant player\nWhenever enchanted player is attacked, you draw a card. Each opponent attacking that player does the same.
+status=not supported: enchant-player
