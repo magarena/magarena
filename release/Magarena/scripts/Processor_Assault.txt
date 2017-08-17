@@ -10,4 +10,3 @@ ability=Devoid;\
 effect=SN deals 5 damage to target creature.
 timing=main
 oracle=Devoid\nAs an additional cost to cast Processor Assault, put a card an opponent owns from exile into that player's graveyard.\nProcessor Assault deals 5 damage to target creature.
-status=not supported: processor
