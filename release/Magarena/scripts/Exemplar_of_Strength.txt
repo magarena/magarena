@@ -7,6 +7,6 @@ subtype=Human,Warrior
 cost={1}{G}
 pt=4/4
 ability=When SN enters the battlefield, put three -1/-1 counters on target creature you control.;\
-        Whenever SN attacks, remove a -1/-1 counter from it. If you do, you gain 1 life.
+        Whenever SN attacks, remove a -1/-1 counter from SN. If you do, you gain 1 life.
 timing=main
 oracle=When Exemplar of Strength enters the battlefield, put three -1/-1 counters on target creature you control.\nWhenever Exemplar of Strength attacks, remove a -1/-1 counter from it. If you do, you gain 1 life.
