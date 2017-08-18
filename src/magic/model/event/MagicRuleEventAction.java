@@ -3335,6 +3335,7 @@ public enum MagicRuleEventAction {
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern EFFECT_UNLESS = Pattern.compile(ARG.WORDRUN + " unless you " + ARG.COST, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_DO = Pattern.compile("you may " + ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
+    static final Pattern MUST_DO = Pattern.compile(ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_DONT = Pattern.compile("you may " + ARG.COST + "\\. if you don't, .+", Pattern.CASE_INSENSITIVE);
 
     public static MagicSourceEvent create(final String text) {
@@ -3356,6 +3357,7 @@ public enum MagicRuleEventAction {
         if (unlessMatcher.matches()) {
             ruleWithoutIf = "You may " + ARG.cost(unlessMatcher) + " If you don't, " + ARG.wordrun(unlessMatcher) + ".";
         }
+        final boolean optional =  ruleWithoutIf.startsWith("You may") || ruleWithoutIf.startsWith("you may");
 
         // handle you may <cost>. if you do, <effect>
         final Matcher mayDoMatcher = MAY_DO.matcher(ruleWithoutIf);
@@ -3364,6 +3366,14 @@ public enum MagicRuleEventAction {
             new MagicRegularCostEvent(ARG.cost(mayDoMatcher)) :
             MagicRegularCostEvent.NONE;
         String prefix = mayDoMatched ? "^(Y|y)ou may [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+
+        // handle <cost>. if you do, <effect>
+        final Matcher mustDoMatcher = MUST_DO.matcher(ruleWithoutIf);
+        final boolean mustDoMatched = optional == false && mustDoMatcher.matches();
+        final MagicMatchedCostEvent mustDoCost = mustDoMatched ?
+            new MagicRegularCostEvent(ARG.cost(mustDoMatcher)) :
+            MagicRegularCostEvent.NONE;
+        prefix = mustDoMatched ? ARG.MAY_COST + "\\. If you do, " : prefix;
 
         // handle you may <cost>. if you don't, <effect>
         final Matcher mayDontMatcher = MAY_DONT.matcher(ruleWithoutIf);
@@ -3374,7 +3384,6 @@ public enum MagicRuleEventAction {
         prefix = mayDontMatched ? "^(Y|y)ou may [^\\.]+\\. If you don't, " : prefix;
 
         final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
-        final boolean optional = ruleWithoutMay.length() < ruleWithoutIf.length();
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
 
         final MagicRuleEventAction ruleAction = match(effect);
@@ -3434,12 +3443,14 @@ public enum MagicRuleEventAction {
 
                 final MagicMatchedCostEvent matchedCost =
                     mayDoMatched ? mayDoCost
+                  : mustDoMatched ? mustDoCost
                   : mayDontMatched ? mayDontCost
                   : MagicRegularCostEvent.NONE;
 
                 final MagicEvent costEvent = matchedCost.getEvent(event.getSource());
 
-                if (optional == false || (event.isYes() && costEvent.isSatisfied())) {
+                if ((matchedCost == MagicRegularCostEvent.NONE || costEvent.isSatisfied()) &&
+                    (optional == false || event.isYes())) {
                     if (matchedCost != MagicRegularCostEvent.NONE) {
                         game.addEvent(costEvent);
                     }
