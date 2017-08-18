@@ -4,6 +4,6 @@ value=3.945
 rarity=R
 type=Enchantment
 cost={2}{W}
+ability=When a creature you control dies, sacrifice SN. If you do, create four 1/1 colorless Spirit creature tokens.
 timing=enchantment
-requires_groovy_code
 oracle=When a creature you control dies, sacrifice Promise of Bunrei. If you do, create four 1/1 colorless Spirit creature tokens.

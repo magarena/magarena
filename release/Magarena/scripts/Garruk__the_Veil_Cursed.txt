@@ -7,8 +7,8 @@ subtype=Garruk
 color=bg
 transform=Garruk Relentless
 ability=+1: Create a 1/1 black Wolf creature token with deathtouch.;\
+        −1: Sacrifice a creature. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle your library.;\
         −3: Creatures you control gain trample and get +X/+X until end of turn, where X is the number of creature cards in your graveyard.
 timing=main
-requires_groovy_code
 hidden
 oracle=+1: Create a 1/1 black Wolf creature token with deathtouch.\n−1: Sacrifice a creature. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle your library.\n−3: Creatures you control gain trample and get +X/+X until end of turn, where X is the number of creature cards in your graveyard.

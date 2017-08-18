@@ -4,7 +4,7 @@ value=4.555
 rarity=R
 type=Legendary,Snow,Land
 ability=SN enters the battlefield with ten ice counters on it.;\
-        {3}: Remove an ice counter from SN.
+        {3}: Remove an ice counter from SN.;\
+        When SN has no ice counters on it, sacrifice SN. If you do, create a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage.
 timing=land
-requires_groovy_code
 oracle=Dark Depths enters the battlefield with ten ice counters on it.\n{3}: Remove an ice counter from Dark Depths.\nWhen Dark Depths has no ice counters on it, sacrifice it. If you do, create a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage.

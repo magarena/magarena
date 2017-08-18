@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental,Scout
 cost={3}{R}
 pt=2/4
+ability=When another creature enters the battlefield, sacrifice SN. If you do, SN deals 4 damage to that creature.
 timing=main
-requires_groovy_code
 oracle=When another creature enters the battlefield, sacrifice Flame-Kin War Scout. If you do, Flame-Kin War Scout deals 4 damage to that creature.

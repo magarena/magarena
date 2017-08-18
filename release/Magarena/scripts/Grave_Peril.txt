@@ -5,6 +5,6 @@ value=3.024
 rarity=C
 type=Enchantment
 cost={1}{B}
+ability=When a nonblack creature enters the battlefield, sacrifice SN. If you do, destroy that creature.
 timing=enchantment
-requires_groovy_code
 oracle=When a nonblack creature enters the battlefield, sacrifice Grave Peril. If you do, destroy that creature.
