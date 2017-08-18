@@ -33,7 +33,7 @@ public class MagicAddCounterEvent extends MagicEvent {
         } else {
             description.append(amount).append(' ').append(counterType.getName()).append(" counters");
         }
-        description.append(" on ").append(permanent.getName()).append('.');
+        description.append(" on SN.");
         return description.toString();
     }
 }

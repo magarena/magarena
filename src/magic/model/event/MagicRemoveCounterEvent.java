@@ -44,7 +44,7 @@ public class MagicRemoveCounterEvent extends MagicEvent {
         } else {
             description.append(amount).append(' ').append(counterType.getName()).append(" counters");
         }
-        description.append(" from ").append(permanent.getName()).append('.');
+        description.append(" from SN.");
         return description.toString();
     }
 
