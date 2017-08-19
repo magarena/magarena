@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, choose artifact, creature, enchantment, in
         Spells you cast of the chosen type cost {1} less to cast.
 timing=artifact
 oracle=As Cloud Key enters the battlefield, choose artifact, creature, enchantment, instant, or sorcery.\nSpells you cast of the chosen type cost {1} less to cast.
+status=not supported: choose-permanent-type

@@ -13,3 +13,4 @@ ability=SN enters the battlefield with seven dream counters on it.;\
         SN can't have more than seven dream counters on it.
 timing=main
 oracle=Rasputin Dreamweaver enters the battlefield with seven dream counters on it.\nRemove a dream counter from Rasputin: Add {C} to your mana pool.\nRemove a dream counter from Rasputin: Prevent the next 1 damage that would be dealt to Rasputin this turn.\nAt the beginning of your upkeep, if Rasputin started the turn untapped, put a dream counter on it.\nRasputin can't have more than seven dream counters on it.
+status=not supported: repeated-mana-ability
