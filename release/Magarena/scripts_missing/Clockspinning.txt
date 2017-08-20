@@ -8,4 +8,4 @@ ability=Buyback {3}
 effect=Choose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.
 timing=removal
 oracle=Buyback {3}\nChoose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.
-status=not supported: suspend
+status=needs groovy

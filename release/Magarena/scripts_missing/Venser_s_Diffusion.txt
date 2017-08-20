@@ -7,4 +7,4 @@ cost={2}{U}
 effect=Return target nonland permanent or suspended card to its owner's hand.
 timing=removal
 oracle=Return target nonland permanent or suspended card to its owner's hand.
-status=not supported: suspend
+status=needs groovy

@@ -7,4 +7,4 @@ cost={2}{B}{B}
 effect=Exile SN with two scream counters on it.~At the beginning of your upkeep, if SN is exiled with a scream counter on it, remove a scream counter from it. If there are no more scream counters on it, put it into your graveyard and each player returns all creature cards from his or her graveyard to the battlefield.
 timing=main
 oracle=Exile All Hallow's Eve with two scream counters on it.\nAt the beginning of your upkeep, if All Hallow's Eve is exiled with a scream counter on it, remove a scream counter from it. If there are no more scream counters on it, put it into your graveyard and each player returns all creature cards from his or her graveyard to the battlefield.
-status=not supported: suspend
+status=not supported: trigger-from-exile
