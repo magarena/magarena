@@ -7,4 +7,3 @@ cost={U}
 effect=Counter target spell that targets a creature.
 timing=counter
 oracle=Counter target spell that targets a creature.
-status=not supported: no-info
