@@ -137,6 +137,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl SPELL_THAT_TARGETS_YOU = new MagicStackFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
+            return target.isSpell() && target.getTarget() == player;
+        }
+    };
+
     public static final MagicStackFilterImpl SPELL_THAT_TARGETS_PERMANENT_YOU_CONTROL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
@@ -2969,6 +2976,7 @@ public class MagicTargetFilterFactory {
         add("activated or triggered ability you don't control", ACTIVATED_OR_TRIGGERED_ABILITY_OPP_CONTROL);
         add("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
         add("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
+        add("spell that targets you", SPELL_THAT_TARGETS_YOU);
         add("spell that targets a permanent you control", SPELL_THAT_TARGETS_PERMANENT_YOU_CONTROL);
         add("spell that targets a creature you control", SPELL_THAT_TARGETS_CREATURE_YOU_CONTROL);
         add("spell that targets a creature", SPELL_THAT_TARGETS_CREATURE);
