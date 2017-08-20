@@ -165,6 +165,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl SPELL_THAT_TARGETS_ENCHANTMENT = new MagicStackFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
+            return target.isSpell() && target.getTarget().isPermanent() && target.getTarget().hasType(MagicType.Enchantment);
+        }
+    };
+
     public static final MagicStackFilterImpl INSTANT_OR_AURA_THAT_TARGETS_PERMANENT_YOU_CONTROL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
@@ -2980,6 +2987,7 @@ public class MagicTargetFilterFactory {
         add("spell that targets a permanent you control", SPELL_THAT_TARGETS_PERMANENT_YOU_CONTROL);
         add("spell that targets a creature you control", SPELL_THAT_TARGETS_CREATURE_YOU_CONTROL);
         add("spell that targets a creature", SPELL_THAT_TARGETS_CREATURE);
+        add("spell that targets an enchantment", SPELL_THAT_TARGETS_ENCHANTMENT);
         add("instant or Aura spell that targets a permanent you control", INSTANT_OR_AURA_THAT_TARGETS_PERMANENT_YOU_CONTROL);
         add("spell with {X} in its mana cost", SPELL_WITH_X_COST);
         add("noncreature spell", NONCREATURE_SPELL);
