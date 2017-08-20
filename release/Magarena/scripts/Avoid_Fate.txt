@@ -4,6 +4,6 @@ value=4.236
 rarity=C
 type=Instant
 cost={G}
+effect=Counter target instant or Aura spell that targets a permanent you control.
 timing=counter
-requires_groovy_code
 oracle=Counter target instant or Aura spell that targets a permanent you control.
