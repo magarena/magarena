@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicCounterType;
+import magic.model.MagicCopyMap;
 import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -37,5 +38,14 @@ public class MagicPayEnergyEvent extends MagicEvent {
     @Override
     public boolean isSatisfied() {
         return cond.accept(getSource()) && super.isSatisfied();
+    }
+
+    @Override
+    public MagicEvent copy(final MagicCopyMap copyMap) {
+        return new MagicPayEnergyEvent(
+            copyMap.copy(getSource()),
+            copyMap.copy(getPlayer()),
+            getRefInt()
+        );
     }
 }

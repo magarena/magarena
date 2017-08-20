@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCopyMap;
 import magic.model.action.ShiftCardAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -39,5 +40,14 @@ public class MagicMillEvent extends MagicEvent{
     @Override
     public boolean isSatisfied() {
         return cond.accept(getSource()) && super.isSatisfied();
+    }
+
+    @Override
+    public MagicEvent copy(final MagicCopyMap copyMap) {
+        return new MagicMillEvent(
+            copyMap.copy(getSource()),
+            copyMap.copy(getPlayer()),
+            getRefInt()
+        );
     }
 }

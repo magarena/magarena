@@ -3,6 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCopyMap;
 import magic.model.action.ChangeLifeAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
@@ -32,5 +33,14 @@ public class MagicPayLifeEvent extends MagicEvent {
     @Override
     public boolean isSatisfied() {
         return cond.accept(getSource()) && super.isSatisfied();
+    }
+
+    @Override
+    public MagicEvent copy(final MagicCopyMap copyMap) {
+        return new MagicPayLifeEvent(
+            copyMap.copy(getSource()),
+            copyMap.copy(getPlayer()),
+            getRefInt()
+        );
     }
 }

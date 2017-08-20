@@ -2,6 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicCopyMap;
 import magic.model.action.TapAction;
 import magic.model.condition.MagicCondition;
 
@@ -23,5 +24,10 @@ public class MagicTapEvent extends MagicEvent {
     @Override
     public boolean isSatisfied() {
         return cond.accept(getSource()) && super.isSatisfied();
+    }
+
+    @Override
+    public MagicEvent copy(final MagicCopyMap copyMap) {
+        return new MagicTapEvent(copyMap.copy(getPermanent()));
     }
 }
