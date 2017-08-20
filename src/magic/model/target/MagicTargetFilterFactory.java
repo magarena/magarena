@@ -144,6 +144,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL_THAT_TARGETS_YOU = new MagicStackFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+            return item.isInstantOrSorcerySpell() && item.getTarget() == player;
+        }
+    };
+
     public static final MagicStackFilterImpl SPELL_THAT_TARGETS_YOU_OR_PERMANENT_YOU_CONTROL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
@@ -2992,6 +2999,7 @@ public class MagicTargetFilterFactory {
         add("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
         add("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
         add("spell that targets you", SPELL_THAT_TARGETS_YOU);
+        add("instant or sorcery spell that targets you", INSTANT_OR_SORCERY_SPELL_THAT_TARGETS_YOU);
         add("spell that targets you or a permanent you control", SPELL_THAT_TARGETS_YOU_OR_PERMANENT_YOU_CONTROL);
         add("spell that targets a permanent you control", SPELL_THAT_TARGETS_PERMANENT_YOU_CONTROL);
         add("spell that targets a creature you control", SPELL_THAT_TARGETS_CREATURE_YOU_CONTROL);
