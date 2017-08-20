@@ -11,7 +11,6 @@ public class RemoveFromPlayAction extends MagicAction {
 
     private final MagicPermanent permanent;
     private MagicLocationType toLocation;
-    private boolean valid;
     private boolean update;
 
     private RemoveFromPlayAction(final MagicPermanent aPermanent, final MagicLocationType aToLocation, final boolean aUpdate) {
@@ -30,8 +29,9 @@ public class RemoveFromPlayAction extends MagicAction {
         return new RemoveFromPlayAction(aPermanent, aToLocation, false);
     }
 
-    public boolean isValid() {
-        return valid;
+    @Override
+    public boolean isLegal(final MagicGame game) {
+        return permanent.isValid();
     }
 
     public boolean isPermanent(final MagicPermanent aPermanent) {
@@ -53,13 +53,6 @@ public class RemoveFromPlayAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         final MagicPlayer controller=permanent.getController();
-
-        // Check if this is still a valid action.
-        valid = permanent.isValid();
-        if (!valid) {
-            return;
-        }
-
         final int score=permanent.getScore()+permanent.getStaticScore();
 
         // Execute trigger here so that full permanent state is preserved.
@@ -116,11 +109,6 @@ public class RemoveFromPlayAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-
-        if (!valid) {
-            return;
-        }
-
         permanent.getController().addPermanent(permanent);
 
         // Equipment

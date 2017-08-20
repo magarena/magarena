@@ -556,6 +556,9 @@ public class MagicGame {
     }
 
     public void doAction(final MagicAction action) {
+        if (action.isLegal(this) == false) {
+            return;
+        }
         actions.add(action);
         try {
             action.doAction(this);

@@ -12,10 +12,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final SacrificeAction sac = new SacrificeAction(event.getPermanent());
-            game.doAction(sac);
-            if (sac.isValid()) {
-                game.doAction(new DrawAction(event.getRefPlayer(),3));
+            final MagicEvent cost = new MagicSacrificeEvent(event.getPermanent());
+            if (cost.isSatisfied()) {
+                game.addEvent(cost);
+                game.addEvent(new MagicDrawEvent(event.getSource(), event.getRefPlayer(), 3));
             }
         }
     }

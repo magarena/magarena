@@ -21,6 +21,10 @@ public abstract class MagicAction {
 
     public abstract void undoAction(final MagicGame game);
 
+    public boolean isLegal(final MagicGame game) {
+        return true;
+    }
+
     @Override
     public String toString() {
         return getClass().getSimpleName();

@@ -12,10 +12,13 @@ public class PutStateTriggerOnStackAction extends MagicAction {
     }
 
     @Override
+    public boolean isLegal(final MagicGame game) {
+        return game.hasItem(event.getSource(), event.getChoiceDescription()) == false;
+    }
+
+    @Override
     public void doAction(final MagicGame game) {
-        if (game.hasItem(event.getSource(), event.getChoiceDescription()) == false) {
-            game.doAction(new EnqueueTriggerAction(event));
-        }
+        game.doAction(new EnqueueTriggerAction(event));
     }
 
     @Override

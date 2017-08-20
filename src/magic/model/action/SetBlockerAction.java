@@ -15,6 +15,11 @@ public class SetBlockerAction extends MagicAction {
     }
 
     @Override
+    public boolean isLegal(final MagicGame game) {
+        return attacker.isValid() && blocker.isValid();
+    }
+
+    @Override
     public void doAction(final MagicGame game) {
         attacker.addBlockingCreature(blocker);
         blocker.setBlockedCreature(attacker);

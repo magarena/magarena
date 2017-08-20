@@ -19,7 +19,6 @@ public class AttachAction extends MagicAction {
     private final MagicPermanent creature;
     private MagicPermanent oldAttachedCreature = MagicPermanent.NONE;
     private Collection<MagicPermanentStatic> oldStatics = Collections.emptyList();
-    private boolean validAttachable;
     private boolean validCreature;
 
     public AttachAction(final MagicPermanent aAttachable,final MagicPermanent aCreature) {
@@ -52,25 +51,26 @@ public class AttachAction extends MagicAction {
     }
 
     @Override
-    public void doAction(final MagicGame game) {
-        validAttachable = attachable.isValid();
-        if (!validAttachable) {
-            return;
+    public boolean isLegal(final MagicGame game) {
+        if (attachable.isValid() == false) {
+            return false;
         }
 
         if (attachable.isEquipment() && creature.isValid() && !creature.isCreature()) {
-            validAttachable = false;
-            return;
+            return false;
         }
 
         if (attachable.isAura() && creature.isValid()) {
             final MagicTargetChoice tchoice = new MagicTargetChoice(attachable.getAuraTargetChoice(), false);
             if (game.isLegalTarget(attachable.getController(),attachable,tchoice,creature) == false) {
-                validAttachable = false;
-                return;
+                return false;
             }
         }
+        return true;
+    }
 
+    @Override
+    public void doAction(final MagicGame game) {
         int score = ArtificialScoringSystem.getTurnScore(game);
 
         oldAttachedCreature = getAttached();
@@ -111,10 +111,6 @@ public class AttachAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (!validAttachable) {
-            return;
-        }
-
         if (validCreature) {
             detach(creature);
             game.removeSelfStatics(attachable);
