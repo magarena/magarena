@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Draw two cards. Then discard a card unless you return a land you control to its owner's hand.
 timing=removal
 oracle=Draw two cards. Then discard a card unless you return a land you control to its owner's hand.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=Equipped creature gets +2/+2, has intimidate, and is a black Zombie.;\
         Equip {4}
 timing=equipment
 oracle=Equipped creature gets +2/+2, has intimidate, and is a black Zombie.\nWhenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach Nim Deathmantle to it.\nEquip {4}
+status=needs groovy

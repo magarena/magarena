@@ -11,3 +11,4 @@ ability=Whenever you cast your first spell each turn, SN deals damage equal to t
         Partner
 timing=main
 oracle=Whenever you cast your first spell each turn, Vial Smasher the Fierce deals damage equal to that spell's converted mana cost to an opponent chosen at random.\nPartner
+status=needs groovy

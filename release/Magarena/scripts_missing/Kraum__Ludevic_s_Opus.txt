@@ -12,3 +12,4 @@ ability=Flying, haste;\
         Partner
 timing=main
 oracle=Flying, haste\nWhenever an opponent casts his or her second spell each turn, draw a card.\nPartner
+status=needs groovy
