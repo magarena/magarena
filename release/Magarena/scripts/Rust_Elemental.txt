@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Elemental
 cost={4}
 pt=4/4
-ability=Flying
+ability=Flying;\
+        At the beginning of your upkeep, sacrifice another artifact. If you can't, tap SN~and you lose 4 life.
 timing=main
-requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, sacrifice an artifact other than Rust Elemental. If you can't, tap Rust Elemental and you lose 4 life.

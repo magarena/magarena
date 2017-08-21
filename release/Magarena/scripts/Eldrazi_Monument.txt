@@ -6,8 +6,8 @@ rarity=M
 type=Artifact
 cost={5}
 ability=Creatures you control get +1/+1;\
-        Creatures you control have flying, indestructible
+        Creatures you control have flying, indestructible;\
+        At the beginning of your upkeep, sacrifice a creature. If you can't, sacrifice SN.
 static=player
 timing=artifact
-requires_groovy_code
 oracle=Creatures you control get +1/+1 and have flying and indestructible.\nAt the beginning of your upkeep, sacrifice a creature. If you can't, sacrifice Eldrazi Monument.

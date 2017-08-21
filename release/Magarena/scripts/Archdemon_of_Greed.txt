@@ -6,8 +6,8 @@ type=Creature
 subtype=Demon
 color=b
 pt=9/9
-ability=Flying, trample
-requires_groovy_code
+ability=Flying, trample;\
+        At the beginning of your upkeep, sacrifice a Human. If you can't, tap SN~and SN deals 9 damage to you.
 transform=Ravenous Demon
 timing=main
 hidden
