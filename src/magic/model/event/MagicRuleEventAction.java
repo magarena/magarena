@@ -3337,6 +3337,7 @@ public enum MagicRuleEventAction {
     static final Pattern MAY_DO = Pattern.compile("you may " + ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     static final Pattern MUST_DO = Pattern.compile(ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_DONT = Pattern.compile("you may " + ARG.COST + "\\. if you don't, .+", Pattern.CASE_INSENSITIVE);
+    static final Pattern MUST_DONT = Pattern.compile(ARG.COST + "\\. if you can't, .+", Pattern.CASE_INSENSITIVE);
 
     public static MagicSourceEvent create(final String text) {
         return build(renameThisThat(text));
@@ -3382,6 +3383,14 @@ public enum MagicRuleEventAction {
             new MagicRegularCostEvent(ARG.cost(mayDontMatcher)) :
             MagicRegularCostEvent.NONE;
         prefix = mayDontMatched ? "^(Y|y)ou may [^\\.]+\\. If you don't, " : prefix;
+
+        // handle <cost>. if you can't, <effect>
+        final Matcher mustDontMatcher = MUST_DONT.matcher(ruleWithoutIf);
+        final boolean mustDontMatched = optional == false && mustDontMatcher.matches();
+        final MagicMatchedCostEvent mustDontCost = mustDontMatched ?
+            new MagicRegularCostEvent(ARG.cost(mustDontMatcher)) :
+            MagicRegularCostEvent.NONE;
+        prefix = mustDontMatched ? ARG.COST + "\\. If you can't, " : prefix;
 
         final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
@@ -3445,6 +3454,7 @@ public enum MagicRuleEventAction {
                     mayDoMatched ? mayDoCost
                   : mustDoMatched ? mustDoCost
                   : mayDontMatched ? mayDontCost
+                  : mustDontMatched ? mustDontCost
                   : MagicRegularCostEvent.NONE;
 
                 final MagicEvent costEvent = matchedCost.getEvent(event.getSource());
@@ -3454,11 +3464,11 @@ public enum MagicRuleEventAction {
                     if (matchedCost != MagicRegularCostEvent.NONE) {
                         game.addEvent(costEvent);
                     }
-                    if (mayDontMatched == false) {
+                    if (mayDontMatched == false && mustDontMatched == false) {
                         action.executeEvent(game, event);
                     }
                 } else {
-                    if (mayDontMatched) {
+                    if (mayDontMatched || mustDontMatched) {
                         action.executeEvent(game, event);
                     }
                 }
