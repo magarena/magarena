@@ -26,6 +26,161 @@ import magic.model.target.*;
 import magic.model.trigger.*;
 
 public enum MagicRuleEventAction {
+    UnlessYou(
+        ARG.WORDRUN + " unless you " + ARG.COST
+    ) {
+        @Override
+        public String getEffect(final Matcher matcher) {
+            return ARG.wordrun(matcher);
+        }
+        @Override
+        public String getCost(final Matcher matcher) {
+            return ARG.cost(matcher);
+        }
+        @Override
+        public boolean isOptional() {
+            return true;
+        }
+        @Override
+        public boolean isPenalty() {
+            return true;
+        }
+        @Override
+        public String getEventDesc(final Matcher matcher, final String playerRule, final String contextRule) {
+            return "PN may$ " + mayTense(personalize(getCost(matcher))) + " If PN doesn't, " + contextRule + ".";
+        }
+        @Override
+        public MagicChoiceFactory getChoiceFactory(final Matcher matcher, final MagicChoice choice) {
+            // penalty effect cannot have a choice as MagicMayChoice only prompts for choice in "Yes" case
+            if (choice.isValid()) {
+                throw new RuntimeException("penalty effect should not have choice: \"" + getEffect(matcher) + "\"");
+            }
+            return (source, player, ref) -> {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(capitalize(getCost(matcher)) + "? If you don't, " + getEffect(matcher), source, player, ref)
+                );
+            };
+        }
+    },
+    MayPayEffect(
+        "you may " + ARG.MAY_COST + "\\. if you do, " + ARG.EFFECT
+    ) {
+        @Override
+        public String getEffect(final Matcher matcher) {
+            return ARG.effect(matcher);
+        }
+        @Override
+        public String getCost(final Matcher matcher) {
+            return ARG.cost(matcher);
+        }
+        @Override
+        public boolean isOptional() {
+            return true;
+        }
+        @Override
+        public String getEventDesc(final Matcher matcher, final String playerRule, final String contextRule) {
+            return "PN may$ " + mayTense(personalize(getCost(matcher))) + ". If PN does, " + contextRule;
+        }
+        @Override
+        public MagicChoiceFactory getChoiceFactory(final Matcher matcher, final MagicChoice choice) {
+            return (source, player, ref) -> {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(capitalize(getCost(matcher)) + "? If you do, " + getEffect(matcher), source, player, ref),
+                    choice
+                );
+            };
+        }
+    },
+    MayPayPenalty(
+        "you may " + ARG.COST + "\\. if you don't, " + ARG.EFFECT
+    ) {
+        @Override
+        public String getEffect(final Matcher matcher) {
+            return ARG.effect(matcher);
+        }
+        @Override
+        public String getCost(final Matcher matcher) {
+            return ARG.cost(matcher);
+        }
+        @Override
+        public boolean isOptional() {
+            return true;
+        }
+        @Override
+        public boolean isPenalty() {
+            return true;
+        }
+        @Override
+        public String getEventDesc(final Matcher matcher, final String playerRule, final String contextRule) {
+            return "PN may$ " + mayTense(personalize(getCost(matcher))) + ". If PN doesn't, " + contextRule;
+        }
+        @Override
+        public MagicChoiceFactory getChoiceFactory(final Matcher matcher, final MagicChoice choice) {
+            // penalty effect cannot have a choice as MagicMayChoice only prompts for choice in "Yes" case
+            if (choice.isValid()) {
+                throw new RuntimeException("penalty effect should not have choice: \"" + getEffect(matcher) + "\"");
+            }
+            return (source, player, ref) -> {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(capitalize(getCost(matcher)) + "? If you don't, " + getEffect(matcher), source, player, ref)
+                );
+            };
+        }
+    },
+    OptionalEffect(
+        "you may " + ARG.EFFECT
+    ) {
+        @Override
+        public String getEffect(final Matcher matcher) {
+            return ARG.effect(matcher);
+        }
+        @Override
+        public boolean isOptional() {
+            return true;
+        }
+        @Override
+        public String getEventDesc(final Matcher matcher, final String playerRule, final String contextRule) {
+            return "PN may$ " + mayTense(contextRule);
+        }
+        @Override
+        public MagicChoiceFactory getChoiceFactory(final Matcher matcher, final MagicChoice choice) {
+            final String pnMayChoice = capitalize(getEffect(matcher)).replaceFirst("\\.", "?");
+            return (source, player, ref) -> {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(pnMayChoice, source, player, ref),
+                    choice
+                );
+            };
+        }
+    },
+    MustPayEffect(
+        ARG.MAY_COST + "\\. if you do, " + ARG.EFFECT
+    ) {
+        @Override
+        public String getEffect(final Matcher matcher) {
+            return ARG.effect(matcher);
+        }
+        @Override
+        public String getCost(final Matcher matcher) {
+            return ARG.cost(matcher);
+        }
+    },
+    MustPayPenalty(
+        ARG.COST + "\\. if you can't, " + ARG.EFFECT
+    ) {
+        @Override
+        public String getEffect(final Matcher matcher) {
+            return ARG.effect(matcher);
+        }
+        @Override
+        public String getCost(final Matcher matcher) {
+            return ARG.cost(matcher);
+        }
+        @Override
+        public boolean isPenalty() {
+            return true;
+        }
+    },
     ChooseOneOfFour(
         "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*) \\(3\\) (?<effect3>.*) \\(4\\) (?<effect4>.*)",
         MagicTiming.Pump,
@@ -3185,6 +3340,32 @@ public enum MagicRuleEventAction {
         return MagicActivation.NO_COND;
     }
 
+    public String getEffect(final Matcher matcher) {
+        return "";
+    }
+
+    public String getCost(final Matcher matcher) {
+        return "";
+    }
+
+    public boolean isOptional() {
+        return false;
+    }
+
+    public boolean isPenalty() {
+        return false;
+    }
+
+    public MagicChoiceFactory getChoiceFactory(final Matcher matcher, final MagicChoice choice) {
+        return (source, player, ref) -> {
+            return choice;
+        };
+    }
+
+    public String getEventDesc(final Matcher matcher, final String playerRule, final String contextRule) {
+        return capitalize(playerRule);
+    }
+
     public static MagicRuleEventAction match(final String rule) {
         for (final MagicRuleEventAction ruleAction : MagicRuleEventAction.values()) {
             if (ruleAction.matches(rule)) {
@@ -3333,11 +3514,6 @@ public enum MagicRuleEventAction {
     }
 
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
-    static final Pattern EFFECT_UNLESS = Pattern.compile(ARG.WORDRUN + " unless you " + ARG.COST, Pattern.CASE_INSENSITIVE);
-    static final Pattern MAY_DO = Pattern.compile("you may " + ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
-    static final Pattern MUST_DO = Pattern.compile(ARG.MAY_COST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
-    static final Pattern MAY_DONT = Pattern.compile("you may " + ARG.COST + "\\. if you don't, .+", Pattern.CASE_INSENSITIVE);
-    static final Pattern MUST_DONT = Pattern.compile(ARG.COST + "\\. if you can't, .+", Pattern.CASE_INSENSITIVE);
 
     public static MagicSourceEvent create(final String text) {
         return build(renameThisThat(text));
@@ -3351,52 +3527,19 @@ public enum MagicRuleEventAction {
         final Matcher ifMatcher = INTERVENING_IF.matcher(rule);
         final boolean ifMatched = ifMatcher.matches();
         final MagicCondition ifCond = ifMatched ? MagicConditionParser.buildCompose(ARG.cond(ifMatcher)) : MagicCondition.NONE;
-        String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule;
+        final String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule;
 
-        // rewrite effect unless clause into "you may <cost>, if you don't, <effect>"
-        final Matcher unlessMatcher = EFFECT_UNLESS.matcher(ruleWithoutIf);
-        if (unlessMatcher.matches()) {
-            ruleWithoutIf = "You may " + ARG.cost(unlessMatcher) + " If you don't, " + ARG.wordrun(unlessMatcher) + ".";
-        }
-        final boolean optional =  ruleWithoutIf.startsWith("You may") || ruleWithoutIf.startsWith("you may");
+        // handle effect with cost
+        final MagicRuleEventAction costRuleAction = match(ruleWithoutIf);
+        final Matcher costMatcher = costRuleAction.matched(ruleWithoutIf);
 
-        // handle you may <cost>. if you do, <effect>
-        final Matcher mayDoMatcher = MAY_DO.matcher(ruleWithoutIf);
-        final boolean mayDoMatched = mayDoMatcher.matches();
-        final MagicMatchedCostEvent mayDoCost = mayDoMatched ?
-            new MagicRegularCostEvent(ARG.cost(mayDoMatcher)) :
-            MagicRegularCostEvent.NONE;
-        String prefix = mayDoMatched ? "^(Y|y)ou may [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
-
-        // handle <cost>. if you do, <effect>
-        final Matcher mustDoMatcher = MUST_DO.matcher(ruleWithoutIf);
-        final boolean mustDoMatched = optional == false && mustDoMatcher.matches();
-        final MagicMatchedCostEvent mustDoCost = mustDoMatched ?
-            new MagicRegularCostEvent(ARG.cost(mustDoMatcher)) :
-            MagicRegularCostEvent.NONE;
-        prefix = mustDoMatched ? ARG.MAY_COST + "\\. If you do, " : prefix;
-
-        // handle you may <cost>. if you don't, <effect>
-        final Matcher mayDontMatcher = MAY_DONT.matcher(ruleWithoutIf);
-        final boolean mayDontMatched = mayDontMatcher.matches();
-        final MagicMatchedCostEvent mayDontCost = mayDontMatched ?
-            new MagicRegularCostEvent(ARG.cost(mayDontMatcher)) :
-            MagicRegularCostEvent.NONE;
-        prefix = mayDontMatched ? "^(Y|y)ou may [^\\.]+\\. If you don't, " : prefix;
-
-        // handle <cost>. if you can't, <effect>
-        final Matcher mustDontMatcher = MUST_DONT.matcher(ruleWithoutIf);
-        final boolean mustDontMatched = optional == false && mustDontMatcher.matches();
-        final MagicMatchedCostEvent mustDontCost = mustDontMatched ?
-            new MagicRegularCostEvent(ARG.cost(mustDontMatcher)) :
-            MagicRegularCostEvent.NONE;
-        prefix = mustDontMatched ? ARG.COST + "\\. If you can't, " : prefix;
-
-        final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
+        // handle actual effect
+        final String innerEffect = costRuleAction.getEffect(costMatcher);
+        final String ruleWithoutMay = innerEffect.isEmpty() ? ruleWithoutIf : innerEffect;
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
 
-        final MagicRuleEventAction ruleAction = match(effect);
-        final Matcher matcher = ruleAction.matched(effect);
+        final MagicRuleEventAction ruleAction = innerEffect.isEmpty() ? costRuleAction : match(effect);
+        final Matcher matcher = innerEffect.isEmpty() ? costMatcher : ruleAction.matched(effect);
 
         // action may be composed from rule and riders
         final MagicEventAction action = computeEventAction(ruleAction.getAction(matcher), part);
@@ -3407,47 +3550,16 @@ public enum MagicRuleEventAction {
 
         final String contextRule = personalize(addChoiceIndicator(choice, concat(ruleWithoutMay, part)));
         final String playerRule = personalize(addChoiceIndicator(choice, concat(rule, part)));
+        final String eventDesc = costRuleAction.getEventDesc(costMatcher, playerRule, contextRule);
 
-        //'If you don't' effect cannot have a choice as MagicMayChoice only prompts for choice in "Yes" case
-        if (mayDontMatched && choice.isValid()) {
-            throw new RuntimeException("'If you don't' effect should not have choice: \"" + effect + "\"");
-        }
+        final MagicChoiceFactory choiceFact = costRuleAction.getChoiceFactory(costMatcher, choice);
 
-        final MagicChoiceFactory choiceFact = (source, player, ref) -> {
-            if (mayDoMatched) {
-                return new MagicMayChoice(
-                    MagicMessage.replaceName(capitalize(ARG.cost(mayDoMatcher)) + "? If you do, " + effect, source, player, ref),
-                    choice
-                );
-            } else if (mayDontMatched) {
-                return new MagicMayChoice(
-                    MagicMessage.replaceName(capitalize(ARG.cost(mayDontMatcher)) + "? If you don't, " + effect, source, player, ref)
-                );
-            } else if (optional) {
-                return new MagicMayChoice(
-                    MagicMessage.replaceName(pnMayChoice, source, player, ref),
-                    choice
-                );
-            } else {
-                return choice;
-            }
-        };
-
-        final String eventDesc =
-              mayDoMatched ? "PN may$ " + mayTense(personalize(ARG.cost(mayDoMatcher))) + ". If PN does, " + contextRule
-            : mayDontMatched ? "PN may$ " + mayTense(personalize(ARG.cost(mayDontMatcher))) + ". If PN doesn't, " + contextRule
-            : optional ? "PN may$ " + mayTense(contextRule)
-            : capitalize(playerRule);
-
-        final MagicMatchedCostEvent matchedCost =
-              mayDoMatched ? mayDoCost
-            : mustDoMatched ? mustDoCost
-            : mayDontMatched ? mayDontCost
-            : mustDontMatched ? mustDontCost
-            : MagicRegularCostEvent.NONE;
+        final String costText = costRuleAction.getCost(costMatcher);
+        final MagicMatchedCostEvent matchedCost = costText.isEmpty() ? MagicRegularCostEvent.NONE : new MagicRegularCostEvent(costText);
 
         final boolean hasCost = matchedCost != MagicRegularCostEvent.NONE;
-        final boolean elseAction = mayDontMatched || mustDontMatched;
+        final boolean elseAction = costRuleAction.isPenalty();
+        final boolean optional = costRuleAction.isOptional();
 
         return new MagicSourceEvent(
             ruleAction,
