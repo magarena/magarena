@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={2}{U}
 pt=1/3
+ability=Whenever SN attacks and isn't blocked, you may draw a card.~If you do, SN assigns no combat damage this turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Ophidian attacks and isn't blocked, you may draw a card. If you do, Ophidian assigns no combat damage this turn.
