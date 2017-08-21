@@ -75,9 +75,40 @@ Thank you for your support and have fun!
 
 Release 1.88 (August 27, 2017)
 ============
+kelsioboy
+melvin
+ShawnieBoy
+
+- added Commander 2017 to sets
+
+- added the following to the card script:
+  * condition: SN is in the command zone or on the battlefield
+  * ability: Suspend <n>-<cost>
+  * cost: Put a card an opponent owns from exile into that player's graveyard
+  * effect: you get an emblem with <abilities>
+  * effect: <permanent> has base power and toughness p/t until end of turn
+  * effect: Exile sn with three time counters on it
+  * effect: remove all <type> counters from <permanents>
+  * effect: until end of turn, <permanent> loses all abilities and has base power and toughness x/y
+  * effect: <cost>. If you do, <effect>
+  * effect: <cost>. If you can't, <effect>
 
 - fixed the following bugs:
   * Auger Spree's effect gave +4/+4, should be +4/-4
+  * fix changed target not triggering when targeted
+  * prevent cyclic references by ensuring stack item is valid target for another stack item that is later, fixes #1223
+  * casting without paying mana cost should be affected by cost modifications
+  * split GlobalPreventDamageToTarget into high priority ProtectionShield and low priority PreventDamageShield, fixes #153
+  * fix TestNoxious, closes #174
+  * include equipments/auras in permanent state, for #815
+  * use MagicETBEvent instead of trigger for 'SN enters tapped', fixes #750
+  * Heightened Awareness should discard as it enters without trigger, fixes #1003
+  * ensure pending triggers go on the stack in APNAP order, fixes #423
+  * split large discard into groups of 3 to avoid running out of memory, for #721
+  * make steps after scry into event, fixes #1250
+  * fix March of the Machines to use the applied check, closes #202
+  * add isLegal check to SetBlockerAction and other actions, fixes #1156
+  * entering as copy should not create a stack item, fixes #991
 
 Release 1.87 (July 31, 2017)
 ============
