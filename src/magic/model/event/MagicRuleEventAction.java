@@ -3439,6 +3439,16 @@ public enum MagicRuleEventAction {
             : optional ? "PN may$ " + mayTense(contextRule)
             : capitalize(playerRule);
 
+        final MagicMatchedCostEvent matchedCost =
+              mayDoMatched ? mayDoCost
+            : mustDoMatched ? mustDoCost
+            : mayDontMatched ? mayDontCost
+            : mustDontMatched ? mustDontCost
+            : MagicRegularCostEvent.NONE;
+
+        final boolean hasCost = matchedCost != MagicRegularCostEvent.NONE;
+        final boolean elseAction = mayDontMatched || mustDontMatched;
+
         return new MagicSourceEvent(
             ruleAction,
             matcher,
@@ -3450,25 +3460,18 @@ public enum MagicRuleEventAction {
                     return;
                 }
 
-                final MagicMatchedCostEvent matchedCost =
-                    mayDoMatched ? mayDoCost
-                  : mustDoMatched ? mustDoCost
-                  : mayDontMatched ? mayDontCost
-                  : mustDontMatched ? mustDontCost
-                  : MagicRegularCostEvent.NONE;
-
                 final MagicEvent costEvent = matchedCost.getEvent(event.getSource());
 
-                if ((matchedCost == MagicRegularCostEvent.NONE || costEvent.isSatisfied()) &&
+                if ((hasCost == false  || costEvent.isSatisfied()) &&
                     (optional == false || event.isYes())) {
-                    if (matchedCost != MagicRegularCostEvent.NONE) {
+                    if (hasCost) {
                         game.addEvent(costEvent);
                     }
-                    if (mayDontMatched == false && mustDontMatched == false) {
+                    if (elseAction == false) {
                         action.executeEvent(game, event);
                     }
                 } else {
-                    if (mayDontMatched || mustDontMatched) {
+                    if (elseAction) {
                         action.executeEvent(game, event);
                     }
                 }
