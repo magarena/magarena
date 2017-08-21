@@ -10,3 +10,4 @@ ability=SN has all activated abilities of each other creature with a +1/+1 count
         {T}: Put a +1/+1 counter on target creature.
 timing=main
 oracle=Experiment Kraj has all activated abilities of each other creature with a +1/+1 counter on it.\n{T}: Put a +1/+1 counter on target creature.
+status=not supported: has-all-activated

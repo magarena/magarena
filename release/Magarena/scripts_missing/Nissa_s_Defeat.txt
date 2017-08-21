@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Destroy target Forest, green enchantment, or green planeswalker. If that permanent was a Nissa planeswalker, draw a card.
 timing=main
 oracle=Destroy target Forest, green enchantment, or green planeswalker. If that permanent was a Nissa planeswalker, draw a card.
+status=needs groovy

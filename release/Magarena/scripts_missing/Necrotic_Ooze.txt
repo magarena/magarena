@@ -9,3 +9,4 @@ pt=4/3
 ability=As long as SN is on the battlefield, it has all activated abilities of all creature cards in all graveyards.
 timing=main
 oracle=As long as Necrotic Ooze is on the battlefield, it has all activated abilities of all creature cards in all graveyards.
+status=not supported: has-all-activated
