@@ -21,7 +21,7 @@ public class PermanentSpecParser {
     public final boolean duration;
     public final boolean additionTo;
 
-    public static final String BECOMES = " (become(s)?( a| an)?(?<legendary> legendary)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)|has)(( with)? base power and toughness (?<pt2>[0-9]+/[0-9]+))?( (with|and gains) (?<ability>.*?))?";
+    public static final String BECOMES = " (become(s)?( a| an)?(?<legendary> legendary)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)|has|have)(( with)? base power and toughness (?<pt2>[0-9]+/[0-9]+))?( (with|and gains) (?<ability>.*?))?";
 
     public static final String ADDITIONTO = "(?<additionTo>((\\.)? It's| that's|\\. They're| that are) still [^\\.]*)?";
 

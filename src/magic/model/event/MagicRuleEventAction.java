@@ -2601,7 +2601,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseAbilityBecomes(
-        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " loses all abilities and" + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO,
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " lose(s)? all abilities and" + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO,
         MagicTiming.Removal,
         "Polymorph"
     ) {
