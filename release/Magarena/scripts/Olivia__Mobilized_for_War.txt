@@ -7,7 +7,6 @@ subtype=Vampire,Knight
 cost={1}{B}{R}
 pt=3/3
 ability=Flying;\
-        Whenever another creature enters the battlefield under your control, you may discard a card. If you do, put a +1/+1 counter on that creature, it gains haste until end of turn, and it becomes a Vampire in addition to its other types.
+        Whenever another creature enters the battlefield under your control, you may discard a card. If you do, put a +1/+1 counter on that creature,~RN gains haste until end of turn,~and RN becomes a Vampire in addition to its other types.
 timing=main
 oracle=Flying\nWhenever another creature enters the battlefield under your control, you may discard a card. If you do, put a +1/+1 counter on that creature, it gains haste until end of turn, and it becomes a Vampire in addition to its other types.
-status=needs groovy
