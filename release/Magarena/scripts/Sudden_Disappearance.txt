@@ -4,6 +4,6 @@ value=3.575
 rarity=R
 type=Sorcery
 cost={5}{W}
+effect=Exile all nonland permanents target player controls. Return the exiled cards to the battlefield under their owner's control at the beginning of the next end step.
 timing=removal
-requires_groovy_code
 oracle=Exile all nonland permanents target player controls. Return the exiled cards to the battlefield under their owner's control at the beginning of the next end step.

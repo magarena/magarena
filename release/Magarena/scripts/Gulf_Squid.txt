@@ -6,6 +6,6 @@ type=Creature
 subtype=Squid,Beast
 cost={3}{U}
 pt=2/2
+ability=When SN enters the battlefield, tap all lands target player controls.
 timing=main
-requires_groovy_code
 oracle=When Gulf Squid enters the battlefield, tap all lands target player controls.

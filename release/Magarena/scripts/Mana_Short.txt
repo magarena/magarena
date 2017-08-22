@@ -4,6 +4,6 @@ value=4.377
 rarity=R
 type=Instant
 cost={2}{U}
+effect=Tap all lands target player controls.
 timing=tapping
-requires_groovy_code
 oracle=Tap all lands target player controls and empty his or her mana pool.

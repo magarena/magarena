@@ -6,8 +6,8 @@ type=Planeswalker
 subtype=Ajani
 cost={2}{R}{W}
 ability=+1: Target permanent doesn't untap during its controller's next untap step.;\
-        −2: SN deals 3 damage to target creature or player~and you gain 3 life.
+        −2: SN deals 3 damage to target creature or player~and you gain 3 life.;\
+        −7: Destroy all lands target player controls.
 loyalty=3
 timing=main
-requires_groovy_code
 oracle=+1: Target permanent doesn't untap during its controller's next untap step.\n−2: Ajani Vengeant deals 3 damage to target creature or player and you gain 3 life.\n−7: Destroy all lands target player controls.

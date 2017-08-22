@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Spellshaper
 cost={3}{G}{G}
 pt=3/3
+ability={2}{G}, {T}, Discard two cards: All lands target player controls become 3/3 creatures until end of turn. They're still lands.
 timing=main
-requires_groovy_code
 oracle={2}{G}, {T}, Discard two cards: All lands target player controls become 3/3 creatures until end of turn. They're still lands.

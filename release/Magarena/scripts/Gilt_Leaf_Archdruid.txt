@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Druid
 cost={3}{G}{G}
 pt=3/3
-ability=Whenever you cast a Druid spell, you may draw a card.
+ability=Whenever you cast a Druid spell, you may draw a card.;\
+        Tap seven untapped Druids you control: Gain control of all lands target player controls.
 timing=main
-requires_groovy_code
 oracle=Whenever you cast a Druid spell, you may draw a card.\nTap seven untapped Druids you control: Gain control of all lands target player controls.
