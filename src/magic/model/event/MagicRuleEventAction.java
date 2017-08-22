@@ -3328,9 +3328,9 @@ public enum MagicRuleEventAction {
 
     public MagicChoice getChoice(final Matcher matcher) {
         try {
-            return matcher.group("choice") != null ?
-                new MagicTargetChoice(getHint(matcher), matcher.group("choice")) :
-                MagicChoice.NONE;
+            return matcher.group("choice") != null  ? new MagicTargetChoice(getHint(matcher), matcher.group("choice")) :
+                   matcher.group("choice2") != null ? new MagicTargetChoice(getHint(matcher), matcher.group("choice2")) :
+                   MagicChoice.NONE;
         } catch (IllegalArgumentException e) {
             return MagicChoice.NONE;
         }

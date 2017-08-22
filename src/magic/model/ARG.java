@@ -8,6 +8,7 @@ import magic.model.action.MagicPlayMod;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -15,6 +16,7 @@ public class ARG {
     public static final String COLON = "\\s*:\\s*";
 
     public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
+    public static final String TARGET_CONTROLS = "(?<group2>[^\\.]* (?<choice2>target (player|opponent)) controls)";
     public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
     public static final String THING = "(permanent|creature|artifact|land|spell or ability|spell|ability)";
     public static final String PLAYER = "(player|opponent)";
@@ -186,7 +188,7 @@ public class ARG {
         }
     }
 
-    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|" + CHOICE + "|(?<group>[^\\.]+?))";
+    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|" + CHOICE + "|" + TARGET_CONTROLS + "|(?<group>[^\\.]+?))";
     public static List<MagicPermanent> permanents(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPermanent> filter) {
         if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPermanent());
@@ -194,6 +196,8 @@ public class ARG {
             return Collections.singletonList(event.getPermanent());
         } else if (m.group("choice") != null) {
             return event.listTargetPermanent();
+        } else if (m.group("choice2") != null) {
+            return filter.filter(event.getSource(), event.listTargetPlayer().get(0), MagicTargetHint.None);
         } else {
             return filter.filter(event);
         }
@@ -202,6 +206,8 @@ public class ARG {
     public static MagicTargetFilter<MagicPermanent> permanentsParse(final Matcher m) {
         if (m.group("group") != null) {
             return MagicTargetFilterFactory.Permanent(m.group("group"));
+        } else if (m.group("group2") != null) {
+            return MagicTargetFilterFactory.Permanent(m.group("group2").replaceFirst("target (player|opponent) controls", "you control"));
         } else {
             return MagicTargetFilterFactory.ANY;
         }
