@@ -9,4 +9,3 @@ pt=1/1
 ability={1}{B}{B}, {T}, Discard a card: Creatures target player controls attack this turn if able.
 timing=main
 oracle={1}{B}{B}, {T}, Discard a card: Creatures target player controls attack this turn if able.
-status=needs groovy
