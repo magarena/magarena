@@ -5,6 +5,8 @@ rarity=C
 type=Instant
 cost={2}{R}
 ability=Entwine {2}
+effect=Choose one — \
+       (1) Creatures target player controls attack this turn if able. \
+       (2) Creatures you control gain first strike until end of turn.
 timing=pump
-requires_groovy_code
 oracle=Choose one —\n• Creatures target player controls attack this turn if able.\n• Creatures you control gain first strike until end of turn.\nEntwine {2}
