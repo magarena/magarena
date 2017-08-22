@@ -7,4 +7,3 @@ cost={3}{G}
 effect=Destroy all enchantments target player controls.
 timing=main
 oracle=Destroy all enchantments target player controls.
-status=needs groovy
