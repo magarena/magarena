@@ -5,6 +5,5 @@ rarity=C
 type=Instant
 cost={1}{U}
 effect=Target land becomes the basic land type of your choice until end of turn.~Draw a card.
-timing=removal
+timing=pump
 oracle=Target land becomes the basic land type of your choice until end of turn.\nDraw a card.
-status=needs groovy
