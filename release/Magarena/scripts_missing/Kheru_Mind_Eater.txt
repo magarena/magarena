@@ -11,3 +11,4 @@ ability=Menace;\
         You may look at and play cards exiled with SN.
 timing=main
 oracle=Menace\nWhenever Kheru Mind-Eater deals combat damage to a player, that player exiles a card from his or her hand face down.\nYou may look at and play cards exiled with Kheru Mind-Eater.
+status=not supported: blocking-restriction
