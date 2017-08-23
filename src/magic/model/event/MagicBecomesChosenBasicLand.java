@@ -39,8 +39,10 @@ public class MagicBecomesChosenBasicLand extends MagicEvent {
     }
 
     private static final MagicEventAction action = (final MagicGame game, final MagicEvent event) -> {
-        game.doAction(new AddStaticAction(event.getRefPermanent(), SUBTYPE(event.getChosenColor())));
-        game.doAction(new AddStaticAction(event.getRefPermanent(), MANA(event.getChosenColor())));
+        for (final MagicPermanent it : event.getRefPermanentList()) {
+            game.doAction(new AddStaticAction(it, SUBTYPE(event.getChosenColor())));
+            game.doAction(new AddStaticAction(it, MANA(event.getChosenColor())));
+        }
     };
 
     public MagicBecomesChosenBasicLand(final MagicSource source, final MagicPlayer player, final MagicPermanentList permanentList) {
