@@ -5,6 +5,6 @@ value=3.393
 rarity=U
 type=Artifact
 cost={2}
+ability={1}, {T}: Target land becomes the basic land type of your choice until end of turn.
 timing=artifact
-requires_groovy_code
 oracle={1}, {T}: Target land becomes the basic land type of your choice until end of turn.

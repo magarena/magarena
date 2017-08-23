@@ -6,7 +6,7 @@ type=Creature
 subtype=Moonfolk,Wizard
 cost={2}{U}
 pt=2/1
-ability=Flying
+ability=Flying;\
+        {2}, Return a land you control to its owner's hand: Target land becomes the basic land type of your choice until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying\n{2}, Return a land you control to its owner's hand: Target land becomes the basic land type of your choice until end of turn.
