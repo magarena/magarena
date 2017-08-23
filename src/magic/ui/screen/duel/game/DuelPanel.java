@@ -229,9 +229,7 @@ public final class DuelPanel extends JPanel {
             info.setLibraryButtonLayout(playerIndex, sidebarPanel.getLibraryButtonLayout(playerInfo, this));
             info.setHandButtonLayout(playerIndex, sidebarPanel.getHandButtonLayout(playerInfo, this));
 
-            final ImageBattlefieldViewer battlefieldViewer = playerIndex == 0
-                ? battlefieldPanel.imagePlayerPermanentViewer
-                : battlefieldPanel.imageOpponentPermanentViewer;
+            final ImageBattlefieldViewer battlefieldViewer = battlefieldPanel.getBattlefieldViewer(playerIndex);
 
             info.setPermanentsZoneLayout(
                 playerIndex,
@@ -252,5 +250,4 @@ public final class DuelPanel extends JPanel {
     void setBackgroundLabel(ZoneBackgroundLabel backgroundLabel) {
         this.backgroundLabel = backgroundLabel;
     }
-
 }

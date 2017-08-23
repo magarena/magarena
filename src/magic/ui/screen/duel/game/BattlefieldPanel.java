@@ -22,8 +22,8 @@ public class BattlefieldPanel extends JPanel {
     private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
     private final PlayerZoneViewer playerZoneViewer;
-    public final ImageBattlefieldViewer imagePlayerPermanentViewer;
-    public final ImageBattlefieldViewer imageOpponentPermanentViewer;
+    private final ImageBattlefieldViewer imagePlayerPermanentViewer;
+    private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
 
     public BattlefieldPanel(final SwingGameController controller) {
@@ -99,5 +99,8 @@ public class BattlefieldPanel extends JPanel {
                 imageCombatViewer.highlightCard(cardInfo, b);
     }
 
+    public ImageBattlefieldViewer getBattlefieldViewer(final int playerIndex) {
+        return playerIndex == 0 ? imagePlayerPermanentViewer : imageOpponentPermanentViewer;
+    }
 }
 
