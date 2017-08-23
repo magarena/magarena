@@ -9,3 +9,4 @@ pt=4/4
 ability={1}: You may cast target creature card in a graveyard this turn. When you cast that card this turn, SN gains all activated abilities of that card until end of turn.
 timing=main
 oracle={1}: You may cast target creature card in a graveyard this turn. When you cast that card this turn, Havengul Lich gains all activated abilities of that card until end of turn.
+status=not supported: has-all-activated
