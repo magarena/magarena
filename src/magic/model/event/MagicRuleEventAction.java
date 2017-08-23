@@ -2572,7 +2572,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesColor(
-        ARG.PERMANENTS + " becomes the color of your choice(?<ueot> until end of turn)?\\.",
+        ARG.PERMANENTS + " becomes the color of your choice(?<ueot> until end of turn)?",
         MagicTiming.Pump,
         "Color"
     ) {
@@ -2585,7 +2585,7 @@ public enum MagicRuleEventAction {
                     event.getPlayer(),
                     MagicColorChoice.ALL_INSTANCE,
                     new MagicPermanentList(ARG.permanents(event, matcher, filter)),
-                    matcher.group("ueot") != null ? this:: ueot : this::forever,
+                    matcher.group("ueot") != null ? this::ueot : this::forever,
                     "Chosen color$."
                 ));
         }
@@ -2598,6 +2598,22 @@ public enum MagicRuleEventAction {
             for (final MagicPermanent it : event.getRefPermanentList()) {
                 game.doAction(new AddStaticAction(it, MagicStatic.BecomesColor(event.getChosenColor(), MagicStatic.Forever)));
             }
+        }
+    },
+    BecomesBasicLand(
+        ARG.PERMANENTS + " becomes the basic land type of your choice until end of turn",
+        MagicTiming.Pump,
+        "Land"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) ->
+                game.addEvent(new MagicBecomesChosenBasicLand(
+                    event.getSource(),
+                    event.getPlayer(),
+                    new MagicPermanentList(ARG.permanents(event, matcher, filter))
+                ));
         }
     },
     LoseAbilityBecomes(
@@ -2642,7 +2658,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAddition(
-        ARG.PERMANENTS + PermanentSpecParser.BECOMES + "(?<additionTo> in addition to its other [a-z]*)" + PermanentSpecParser.DURATION,
+        ARG.PERMANENTS + PermanentSpecParser.BECOMES + "(?<additionTo> in addition to its other [^\\.]*)" + PermanentSpecParser.DURATION,
         MagicTiming.Animate,
         "Becomes"
     ) {
