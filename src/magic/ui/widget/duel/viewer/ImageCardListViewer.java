@@ -268,6 +268,11 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
                 }
             }
 
+            //draw counters
+            if (imageMode == CardImageViewerMode.PLAIN && card.hasCounters()) {
+                ImageDrawingUtils.drawCountersInfo(g, this, card, x1+1, y2-17);
+            }
+
             //show that card is a valid choice
             if (validChoices.contains(card)) {
                 if (CONFIG.isHighlightOverlay() ||

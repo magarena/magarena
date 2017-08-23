@@ -21,6 +21,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
+import magic.model.MagicObject;
 import magic.model.event.MagicManaActivation;
 import magic.ui.FontsAndBorders;
 import magic.ui.MagicImages;
@@ -103,12 +104,12 @@ public class ImageDrawingUtils {
     public static int drawCountersInfo(
         final Graphics g,
         final ImageObserver observer,
-        final MagicPermanent permanent,
+        final MagicObject obj,
         int ax,
         final int ay
     ) {
         for (final MagicCounterType counterType : MagicCounterType.values()) {
-            int amount = permanent.getCounters(counterType);
+            int amount = obj.getCounters(counterType);
             if (amount > 0 && TextImages.contains(counterType.getText())) {
                 final String str = Integer.toString(amount);
                 final int inc = 16 + 8 * (str.length() - 1);
