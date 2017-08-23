@@ -20,7 +20,7 @@
                 MagicLocationType.Graveyard,
                 MagicLocationType.Exile
             ));
-            CREATURE_YOU_CONTROL.filter(event.getPermanent()) each {
+            PERMANENT_YOU_CONTROL.filter(event.getPermanent()) each {
                 if (it.hasSubType(MagicSubType.Vampire)) {
                     game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
                 }
