@@ -11,3 +11,4 @@ ability=SN can't be countered.;\
         Protection from instants
 timing=main
 oracle=Petrified Wood-Kin can't be countered.\nBloodthirst X\nProtection from instants
+status=not supported: no-info
