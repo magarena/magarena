@@ -7,8 +7,7 @@ subtype=Vampire,Shaman
 cost={4}{B}{B}
 pt=4/4
 ability=Flying;\
-        When SN enters the battlefield, destroy target creature an opponent controls.;\
-        Whenever a creature an opponent controls dies, exile it and put a +1/+1 counter on each Vampire you control.
+        When SN enters the battlefield, destroy target creature an opponent controls.
 timing=main
 oracle=Flying\nWhen Patron of the Vein enters the battlefield, destroy target creature an opponent controls.\nWhenever a creature an opponent controls dies, exile it and put a +1/+1 counter on each Vampire you control.
-status=needs groovy
+requires_groovy_code
