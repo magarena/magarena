@@ -11,3 +11,4 @@ ability=Equipped creature gets +1/+0 for each blood counter on SN and has "{T}, 
 timing=equipment
 oracle=Equipped creature gets +1/+0 for each blood counter on Rakdos Riteknife and has "{T}, Sacrifice a creature: Put a blood counter on Rakdos Riteknife."\n{B}{R}, Sacrifice Rakdos Riteknife: Target player sacrifices a permanent for each blood counter on Rakdos Riteknife.\nEquip {2}
 status=needs groovy
+# Ability is dependant on another permanent - Also issues with multiple attached to same permanent
