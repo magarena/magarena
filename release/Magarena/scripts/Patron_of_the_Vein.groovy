@@ -1,3 +1,5 @@
+def filter = MagicTargetFilterFactory.Permanent("Vampire you control")
+
 [
     new OtherDiesTrigger() {
         @Override
@@ -20,10 +22,8 @@
                 MagicLocationType.Graveyard,
                 MagicLocationType.Exile
             ));
-            PERMANENT_YOU_CONTROL.filter(event.getPermanent()) each {
-                if (it.hasSubType(MagicSubType.Vampire)) {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
-                }
+            filter.filter(event) each {
+                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
             }
         }
     }
