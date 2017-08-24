@@ -223,7 +223,7 @@ public class GeneralConfig {
     public void setProxy(final Proxy proxy) {
         final String DELIM = "|";
         if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
-            final StringBuffer sb = new StringBuffer();
+            final StringBuilder sb = new StringBuilder();
             sb.append(proxy.type().toString()).append(DELIM);
             sb.append(Integer.toString(((InetSocketAddress)proxy.address()).getPort())).append(DELIM);
             sb.append(proxy.address().toString());

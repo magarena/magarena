@@ -185,7 +185,7 @@ public final class DeckParser {
         }
 
         if (lineErrors.size() > 0) {
-            final StringBuffer sb = new StringBuffer();
+            final StringBuilder sb = new StringBuilder();
             for (String lineError : lineErrors) {
                 sb.append(lineError).append("\n");
             }

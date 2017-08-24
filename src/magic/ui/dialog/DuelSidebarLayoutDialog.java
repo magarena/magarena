@@ -58,7 +58,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
     }
 
     private String getLayoutString() {
-        final StringBuffer sb = new StringBuffer();
+        final StringBuilder sb = new StringBuilder();
         final Enumeration<String> en = listModel.elements();
         while(en.hasMoreElements()) {
             sb.append(en.nextElement()).append(",");

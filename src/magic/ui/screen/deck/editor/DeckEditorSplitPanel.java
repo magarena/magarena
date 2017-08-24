@@ -148,7 +148,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     }
 
     private String generatePoolTitle() {
-        final StringBuffer sb = new StringBuffer();
+        final StringBuilder sb = new StringBuilder();
         final int total = filterPanel.getTotalCardCount();
         sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
         return sb.toString();

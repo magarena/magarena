@@ -59,7 +59,7 @@ public final class JsonOrgParser {
     }
 
     private static String getDeckDescription(final JSONObject jsonDeck) {
-        final StringBuffer sb = new StringBuffer();
+        final StringBuilder sb = new StringBuilder();
         sb.append("Author: ").append(getJsonString(jsonDeck, "author"));
         sb.append("\nRating: ").append(jsonDeck.getString("rating"));
         sb.append("\nReleased: ").append(getFormattedReleaseDate(getJsonString(jsonDeck, "releaseDate")));

@@ -51,7 +51,7 @@ public class NewDuelSettingsScreen extends HeaderFooterScreen {
 
     private boolean isEachPlayerDeckValid(final boolean showErrorDialog) {
         boolean isEachDeckValid = true;
-        final StringBuffer sb = new StringBuffer();
+        final StringBuilder sb = new StringBuilder();
         if (!contentPanel.isDeckValid(0)) {
             sb.append(MText.get(_S5, contentPanel.getPlayerProfile(0).getPlayerName())).append("\n");
             isEachDeckValid = false;
