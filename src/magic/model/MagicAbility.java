@@ -641,6 +641,15 @@ public enum MagicAbility {
             card.add(MagicETBEvent.tappedUnless(ARG.cost(arg)));
         }
     },
+    BlocksOrBecomesBlockedByOneOrMoreEffect("Whenever SN blocks or becomes blocked by one or more " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            card.add(ThisBlocksTrigger.create(filter, sourceEvent));
+            card.add(ThisBecomesBlockedTrigger.create(filter, sourceEvent));
+        }
+    },
     BlocksOrBlockedByEffect("Whenever SN blocks or becomes blocked by " + ARG.WORDRUN + ", " + ARG.EFFECT, 20) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {

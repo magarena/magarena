@@ -31,7 +31,7 @@ public abstract class BecomesBlockedTrigger extends BecomesStateTrigger {
 
     abstract public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocked);
 
-    public static final BecomesBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static BecomesBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new BecomesBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent blocked) {
