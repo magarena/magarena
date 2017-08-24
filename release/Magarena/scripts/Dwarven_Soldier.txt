@@ -6,6 +6,6 @@ type=Creature
 subtype=Dwarf,Soldier
 cost={1}{R}
 pt=2/1
+ability=Whenever SN blocks or becomes blocked by one or more Orcs, SN gets +0/+2 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Dwarven Soldier blocks or becomes blocked by one or more Orcs, Dwarven Soldier gets +0/+2 until end of turn.

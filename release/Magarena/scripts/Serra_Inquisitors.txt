@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={4}{W}
 pt=3/3
-ability=Whenever SN blocks a black creature, SN gets +2/+0 until end of turn.
+ability=Whenever SN blocks or becomes blocked by one or more black creatures, SN gets +2/+0 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Serra Inquisitors blocks or becomes blocked by one or more black creatures, Serra Inquisitors gets +2/+0 until end of turn.
