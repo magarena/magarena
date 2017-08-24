@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric,Druid
 cost={2}{G}
 pt=1/1
+ability={1}{G}, {T}, Sacrifice a creature: Forests you control become 2/3 creatures until end of turn. They're still lands.
 timing=main
-requires_groovy_code
 oracle={1}{G}, {T}, Sacrifice a creature: Forests you control become 2/3 creatures until end of turn. They're still lands.
