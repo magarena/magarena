@@ -22,7 +22,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE_TOKEN_YOU_CONTROL.filter(event.getPlayer()) each {
+            CREATURE_TOKEN_YOU_CONTROL.filter(event) each {
                 game.doAction(new PlayTokenAction(event.getPlayer(), it));
             }
         }

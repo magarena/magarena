@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new UntapAction(it));
             }
         }

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getHandSize();
             final MagicPermanentList all = new MagicPermanentList();
-            CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+            CREATURE_YOU_CONTROL.filter(event) each {
                 if (it.getPower() > amount){
                     all.add(it);
                 }

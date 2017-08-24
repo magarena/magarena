@@ -30,7 +30,7 @@ def DelayedTrigger = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            WHITE_CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+            WHITE_CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new UntapAction(it));
             }
             game.doAction(new AddTurnTriggerAction(DelayedTrigger(event.getSource(), event.getPlayer())));

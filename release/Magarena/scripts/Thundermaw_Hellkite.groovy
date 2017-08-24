@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS.filter(event.getPlayer()) each {
+            CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS.filter(event) each {
                 game.doAction(new DealDamageAction(event.getSource(),it,1));
                 game.doAction(new TapAction(it));
             }

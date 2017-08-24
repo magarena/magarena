@@ -29,7 +29,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final MagicAbility protection = event.getChosenColor().getProtectionAbility();
-            CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+            CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new GainAbilityAction(it, protection));
             }
         }

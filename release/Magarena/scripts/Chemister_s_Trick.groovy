@@ -16,7 +16,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE_YOUR_OPPONENT_CONTROLS.filter(event.getPlayer()) each {
+            CREATURE_YOUR_OPPONENT_CONTROLS.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(it, -2, 0));
                 game.doAction(new GainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
             }

@@ -30,7 +30,7 @@ def FUNGUS_OR_SAPROLING_YOU_CONTROL = new MagicPermanentFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            FUNGUS_OR_SAPROLING_YOU_CONTROL.filter(event.getPlayer()) each {
+            FUNGUS_OR_SAPROLING_YOU_CONTROL.filter(event) each {
                 game.doAction(new ChangeTurnPTAction(it, 1,1));
             }
         }

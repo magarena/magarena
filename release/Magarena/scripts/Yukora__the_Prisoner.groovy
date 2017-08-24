@@ -16,7 +16,7 @@ def NON_OGRE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            NON_OGRE_CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+            NON_OGRE_CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new SacrificeAction(it));
             }
         }
