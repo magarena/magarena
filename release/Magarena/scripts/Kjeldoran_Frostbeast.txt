@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental,Beast
 cost={3}{G}{W}
 pt=2/4
+ability=At end of combat, destroy all creatures blocking or blocked by SN.
 timing=main
-requires_groovy_code
 oracle=At end of combat, destroy all creatures blocking or blocked by Kjeldoran Frostbeast.

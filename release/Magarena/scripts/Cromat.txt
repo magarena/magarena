@@ -6,10 +6,10 @@ type=Legendary,Creature
 subtype=Illusion
 cost={W}{U}{B}{R}{G}
 pt=5/5
-ability={U}{R}: SN gains flying until end of turn.;\
+ability={W}{B}: Destroy target creature blocking or blocked by SN.;\
+        {U}{R}: SN gains flying until end of turn.;\
         {B}{G}: Regenerate SN.;\
         {R}{W}: SN gets +1/+1 until end of turn.;\
         {G}{U}: Put SN on top of its owner's library.
 timing=main
-requires_groovy_code
 oracle={W}{B}: Destroy target creature blocking or blocked by Cromat.\n{U}{R}: Cromat gains flying until end of turn.\n{B}{G}: Regenerate Cromat.\n{R}{W}: Cromat gets +1/+1 until end of turn.\n{G}{U}: Put Cromat on top of its owner's library.
