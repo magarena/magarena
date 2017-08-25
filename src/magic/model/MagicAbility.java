@@ -1315,6 +1315,14 @@ public enum MagicAbility {
             ));
         }
     },
+    EndCombatEffect("At end of combat, " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(AtEndOfCombatTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     EndStepEffect("At the beginning of (the|each|each player's) end step, " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {

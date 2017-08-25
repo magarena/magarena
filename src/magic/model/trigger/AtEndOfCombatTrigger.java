@@ -10,6 +10,7 @@ import magic.model.action.DestroyAction;
 import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class AtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
     public AtEndOfCombatTrigger(final int priority) {
@@ -21,6 +22,15 @@ public abstract class AtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
     @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfCombat;
+    }
+
+    public static final AtEndOfCombatTrigger create(final MagicSourceEvent sourceEvent) {
+        return new AtEndOfCombatTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer turnPlayer) {
+                return sourceEvent.getTriggerEvent(permanent);
+            }
+        };
     }
 
     public static final AtEndOfCombatTrigger Return = new AtEndOfCombatTrigger() {
