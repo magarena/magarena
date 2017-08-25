@@ -45,6 +45,12 @@ public enum MagicAmountParser {
             return MagicAmountFactory.SN_Power;
         }
     },
+    RNsPower("RN's power") {
+        @Override
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.RN_Power;
+        }
+    },
     AllCounterOnSN("counter(s)? on (it|SN)") {
         @Override
         public MagicAmount toAmount(final Matcher arg) {

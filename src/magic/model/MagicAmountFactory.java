@@ -164,6 +164,18 @@ public class MagicAmountFactory {
             }
         };
 
+    public static MagicAmount RN_Power =
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicEvent event) {
+                return event.getRefPermanent().getPower();
+            }
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                throw new RuntimeException("getAmount(source, player) called on RNPower");
+            }
+        };
+
     public static MagicAmount GreatestPower =
         new MagicAmount() {
             @Override
