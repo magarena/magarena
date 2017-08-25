@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{R}{R}
 pt=3/3
+ability=Whenever SN deals combat damage to defending player, SN deals damage equal to its power to each blocking creature.
 timing=main
-requires_groovy_code
 oracle=Whenever Electryte deals combat damage to defending player, it deals damage equal to its power to each blocking creature.

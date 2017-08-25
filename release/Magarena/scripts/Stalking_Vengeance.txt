@@ -7,7 +7,7 @@ type=Creature
 subtype=Avatar
 cost={5}{R}{R}
 pt=5/5
-ability=Haste
+ability=Haste;\
+        Whenever another creature you control dies, RN deals damage equal to RN's power to target player.
 timing=fmain
 oracle=Haste\nWhenever another creature you control dies, it deals damage equal to its power to target player.
-requires_groovy_code

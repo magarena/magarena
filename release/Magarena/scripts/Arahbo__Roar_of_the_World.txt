@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Cat,Avatar
 cost={3}{G}{W}
 pt=5/5
-ability=At the beginning of combat on your turn, if SN is in the command zone or on the battlefield, another target Cat you control gets +3/+3 until end of turn.
+ability=At the beginning of combat on your turn, if SN is in the command zone or on the battlefield, another target Cat you control gets +3/+3 until end of turn.;\
+        Whenever another Cat you control attacks, you may pay {1}{G}{W}. If you do, RN gains trample and gets +X/+X until end of turn, where X is RN's power.
 timing=main
 oracle=Eminence — At the beginning of combat on your turn, if Arahbo, Roar of the World is in the command zone or on the battlefield, another target Cat you control gets +3/+3 until end of turn.\nWhenever another Cat you control attacks, you may pay {1}{G}{W}. If you do, it gains trample and gets +X/+X until end of turn, where X is its power.
-requires_groovy_code

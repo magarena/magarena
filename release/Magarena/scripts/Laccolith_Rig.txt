@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchant creature
+ability=Enchant creature;\
+        Whenever enchanted creature becomes blocked, you may have RN deal damage equal to RN's power to target creature.~If you do, RN assigns no combat damage this turn.
 timing=aura
 enchant=pump,creature
 oracle=Enchant creature\nWhenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.
-requires_groovy_code
