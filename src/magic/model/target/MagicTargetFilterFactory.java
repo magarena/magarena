@@ -1626,6 +1626,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl CREATURE_BLOCKED_BY_SN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.getBlockingCreatures().contains(source);
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_BLOCKING_BLOCKED_BY_SN = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && (target.getBlockedCreature() == source || target.getBlockingCreatures().contains(source));
@@ -3068,6 +3074,7 @@ public class MagicTargetFilterFactory {
         add("this creature", SN);
         add("creature blocking it", CREATURE_BLOCKING_SN);
         add("creature blocking SN", CREATURE_BLOCKING_SN);
+        add("creature blocked by SN", CREATURE_BLOCKED_BY_SN);
         add("creature blocking or blocked by SN", CREATURE_BLOCKING_BLOCKED_BY_SN);
     }
 
