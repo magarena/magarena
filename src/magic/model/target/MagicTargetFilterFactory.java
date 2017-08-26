@@ -1627,12 +1627,14 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl CREATURE_BLOCKED_BY_SN = new MagicPermanentFilterImpl() {
+        @Override
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && target.getBlockingCreatures().contains(source);
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_BLOCKING_BLOCKED_BY_SN = new MagicPermanentFilterImpl() {
+        @Override
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && (target.getBlockedCreature() == source || target.getBlockingCreatures().contains(source));
         }
