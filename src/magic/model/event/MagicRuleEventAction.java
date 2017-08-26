@@ -3132,14 +3132,6 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final MagicSourceEvent e = matcher.group("win") != null ?
-                MagicRuleEventAction.create(matcher.group("win")) :
-                MagicRuleEventAction.create(matcher.group("lose"));
-            return e.getPicker();
-        }
-
-        @Override
         public String getName(final Matcher matcher) {
             final MagicSourceEvent e = matcher.group("win") != null ?
                 MagicRuleEventAction.create(matcher.group("win")) :
