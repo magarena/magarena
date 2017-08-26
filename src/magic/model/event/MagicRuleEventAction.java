@@ -681,6 +681,7 @@ public enum MagicRuleEventAction {
         ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + "\\. " +
             "(?<noregen>That creature can't be regenerated this turn. )?" +
             "If (a|that|the) creature (?<dealt>dealt damage this way )?would die this turn, exile it instead.",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -719,6 +720,7 @@ public enum MagicRuleEventAction {
     },
     DamageGroup(
         ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS,
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -3345,7 +3347,7 @@ public enum MagicRuleEventAction {
     public MagicChoice getChoice(final Matcher matcher) {
         try {
             return matcher.group("choice") != null  ? new MagicTargetChoice(getHint(matcher), matcher.group("choice")) :
-                   matcher.group("choice2") != null ? new MagicTargetChoice(getHint(matcher), matcher.group("choice2")) :
+                   matcher.group("tpchoice") != null ? new MagicTargetChoice(getHint(matcher), matcher.group("tpchoice")) :
                    MagicChoice.NONE;
         } catch (IllegalArgumentException e) {
             return MagicChoice.NONE;

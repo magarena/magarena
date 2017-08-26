@@ -16,7 +16,7 @@ public class ARG {
     public static final String COLON = "\\s*:\\s*";
 
     public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
-    public static final String TARGET_CONTROLS = "(?<group2>[^\\.]* (?<choice2>target (player|opponent)) controls)";
+    public static final String TARGET_CONTROLS = "(?<group2>[^\\.]* (?<tpchoice>target (player|opponent)) controls)";
     public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
     public static final String THING = "(permanent|creature|artifact|land|spell or ability|spell|ability)";
     public static final String PLAYER = "(player|opponent)";
@@ -196,7 +196,7 @@ public class ARG {
             return Collections.singletonList(event.getPermanent());
         } else if (m.group("choice") != null) {
             return event.listTargetPermanent();
-        } else if (m.group("choice2") != null) {
+        } else if (m.group("tpchoice") != null) {
             return filter.filter(event.getSource(), event.listTargetPlayer().get(0), MagicTargetHint.None);
         } else {
             return filter.filter(event);
