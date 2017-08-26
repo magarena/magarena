@@ -10,3 +10,4 @@ ability=Flying;\
         {1}{B}{B}, {T}: Target player discards a card unless he or she puts a card from his or her hand on top of his or her library. If that player discards a card this way, SN deals 1 damage to each creature and each player. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle=Flying\n{1}{B}{B}, {T}: Target player discards a card unless he or she puts a card from his or her hand on top of his or her library. If that player discards a card this way, Tainted Specter deals 1 damage to each creature and each player. Activate this ability only any time you could cast a sorcery.
+status=needs groovy

@@ -7,3 +7,4 @@ cost={3}
 ability=At the beginning of your upkeep, destroy target nonland permanent with the lowest converted mana cost.
 timing=artifact
 oracle=At the beginning of your upkeep, destroy target nonland permanent with the lowest converted mana cost.
+status=needs groovy

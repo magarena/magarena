@@ -8,3 +8,4 @@ ability=At the beginning of your upkeep, sacrifice SN unless you pay 2 life.;\
         At the beginning of the end step, destroy all untapped creatures that didn't attack this turn, except for creatures that couldn't attack.
 timing=enchantment
 oracle=At the beginning of your upkeep, sacrifice Season of the Witch unless you pay 2 life.\nAt the beginning of the end step, destroy all untapped creatures that didn't attack this turn, except for creatures that couldn't attack.
+status=not supported: no-info
