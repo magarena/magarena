@@ -303,7 +303,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return matcher.group("noregen") == null ? MagicDestroyTargetPicker.Destroy : MagicDestroyTargetPicker.DestroyNoRegen;
         }
     },
@@ -490,7 +490,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             if (matcher.group("choice") != null) {
                 if (matcher.group("choice").contains("your")) {
                     return MagicGraveyardTargetPicker.ExileOwn;
@@ -583,7 +583,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             return new MagicDamageTargetPicker(count);
         }
@@ -600,7 +600,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return DamageEqual.getPicker(matcher);
         }
     },
@@ -616,7 +616,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return DamageEqual.getPicker(matcher);
         }
     },
@@ -645,7 +645,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return DamageGroup.getPicker(matcher);
         }
     },
@@ -673,7 +673,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return DamageGroup.getPicker(matcher);
         }
     },
@@ -714,7 +714,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return DamageGroup.getPicker(matcher);
         }
     },
@@ -737,7 +737,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAmount count = ARG.amountObj(matcher);
             return new MagicDamageTargetPicker(count);
         }
@@ -757,7 +757,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             if (matcher.group("sn") != null) {
                 return new MagicDamageTargetPicker(MagicAmountFactory.SN_Power);
             } else {
@@ -1222,7 +1222,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final String[] pt = ARG.ptStr(matcher);
             final MagicAmount eachCount = ARG.each(matcher);
             final MagicAmount toughnessCounter = pt[1].equalsIgnoreCase("-x") ? eachCount : MagicAmountParser.build(pt[1]);
@@ -1266,7 +1266,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return GainAbility.getPicker(matcher);
         }
 
@@ -1290,7 +1290,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return GainAbility.getPicker(matcher);
         }
 
@@ -1314,7 +1314,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return GainAbility.getPicker(matcher);
         }
 
@@ -1382,7 +1382,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             if (counterType.getName().contains("-")) {
                 final String[] pt = counterType.getName().split("/");
@@ -2741,7 +2741,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             return GainAbility.getPicker(matcher);
         }
 
@@ -2787,7 +2787,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case Deathtouch:
@@ -2892,7 +2892,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case CannotAttack:
@@ -2952,7 +2952,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             return new MagicLoseAbilityTargetPicker(ability);
         }
@@ -3132,7 +3132,7 @@ public enum MagicRuleEventAction {
         }
 
         @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+        protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicSourceEvent e = matcher.group("win") != null ?
                 MagicRuleEventAction.create(matcher.group("win")) :
                 MagicRuleEventAction.create(matcher.group("lose"));
@@ -3320,7 +3320,15 @@ public enum MagicRuleEventAction {
         return pattern.matcher(rule).matches();
     }
 
-    public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+    public final MagicTargetPicker<?> getTargetPicker(final Matcher matcher) {
+        try {
+            return matcher.group("choice") != null ? getPicker(matcher) : MagicDefaultTargetPicker.create();
+        } catch (IllegalArgumentException e) {
+            return MagicDefaultTargetPicker.create();
+        }
+    }
+
+    protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
         return picker;
     }
 
@@ -3562,7 +3570,7 @@ public enum MagicRuleEventAction {
         // action may be composed from rule and riders
         final MagicEventAction action = computeEventAction(ruleAction.getAction(matcher), part);
 
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
+        final MagicTargetPicker<?> picker = ruleAction.getTargetPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
 
