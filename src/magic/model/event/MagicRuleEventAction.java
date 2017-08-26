@@ -760,6 +760,8 @@ public enum MagicRuleEventAction {
         protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
             if (matcher.group("sn") != null) {
                 return new MagicDamageTargetPicker(MagicAmountFactory.SN_Power);
+            } else if (matcher.group("rn") != null) {
+                return new MagicDamageTargetPicker(MagicAmountFactory.RN_Power);
             } else {
                 return MagicDefaultTargetPicker.create();
             }
