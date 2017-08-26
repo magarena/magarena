@@ -16,7 +16,7 @@ public class ARG {
     public static final String COLON = "\\s*:\\s*";
 
     public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
-    public static final String TARGET_CONTROLS = "(?<group2>[^\\.]* (?<tpchoice>target (player|opponent)) controls)";
+    public static final String TARGET_CONTROLS = "(?<tpgroup>[^\\.]* (?<tpchoice>target (player|opponent)) controls)";
     public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
     public static final String THING = "(permanent|creature|artifact|land|spell or ability|spell|ability)";
     public static final String PLAYER = "(player|opponent)";
@@ -206,8 +206,8 @@ public class ARG {
     public static MagicTargetFilter<MagicPermanent> permanentsParse(final Matcher m) {
         if (m.group("group") != null) {
             return MagicTargetFilterFactory.Permanent(m.group("group"));
-        } else if (m.group("group2") != null) {
-            return MagicTargetFilterFactory.Permanent(m.group("group2").replaceFirst("target (player|opponent) controls", "you control"));
+        } else if (m.group("tpgroup") != null) {
+            return MagicTargetFilterFactory.Permanent(m.group("tpgroup").replaceFirst("target (player|opponent) controls", "you control"));
         } else {
             return MagicTargetFilterFactory.ANY;
         }
