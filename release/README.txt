@@ -83,7 +83,6 @@ ShawnieBoy
 
 - added the following to the card script:
   * condition: SN is in the command zone or on the battlefield
-  * ability: Suspend <n>-<cost>
   * cost: Put a card an opponent owns from exile into that player's graveyard
   * effect: you get an emblem with <abilities>
   * effect: <permanent> has base power and toughness p/t until end of turn
@@ -92,6 +91,10 @@ ShawnieBoy
   * effect: until end of turn, <permanent> loses all abilities and has base power and toughness x/y
   * effect: <cost>. If you do, <effect>
   * effect: <cost>. If you can't, <effect>
+  * effect: <permanent> becomes the basic land type of your choice until end of turn
+  * ability: Suspend <n>-<cost>
+  * ability: Whenever SN blocks or becomes becomes blocked by one or more <permanents>, <effect>
+  * ability: At end of combat, <effect>
 
 - fixed the following bugs:
   * Auger Spree's effect gave +4/+4, should be +4/-4
