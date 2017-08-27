@@ -10,3 +10,4 @@ ability=Evolve;\
         Whenever SN evolves, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.
 timing=main
 oracle=Evolve\nWhenever Renegade Krasis evolves, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.
+status=not supported: when-evolve

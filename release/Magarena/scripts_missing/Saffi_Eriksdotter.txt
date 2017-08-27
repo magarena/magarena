@@ -9,3 +9,4 @@ pt=2/2
 ability=Sacrifice SN: When target creature is put into your graveyard from the battlefield this turn, return that card to the battlefield.
 timing=main
 oracle=Sacrifice Saffi Eriksdotter: When target creature is put into your graveyard from the battlefield this turn, return that card to the battlefield.
+status=needs groovy

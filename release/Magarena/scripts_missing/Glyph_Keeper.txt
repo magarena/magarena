@@ -11,3 +11,4 @@ ability=Flying;\
         Embalm {5}{U}{U}
 timing=main
 oracle=Flying\nWhenever Glyph Keeper becomes the target of a spell or ability for the first time each turn, counter that spell or ability.\nEmbalm {5}{U}{U}
+status=not supported: no-info

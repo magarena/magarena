@@ -7,3 +7,4 @@ cost={6}{U}
 ability=Whenever you cast an instant or sorcery spell, you may copy that spell. You may choose new targets for the copy.
 timing=enchantment
 oracle=Whenever you cast an instant or sorcery spell, you may copy that spell. You may choose new targets for the copy.
+status=needs groovy

@@ -10,3 +10,4 @@ ability=At the beginning of each upkeep, if no spells were cast last turn, trans
 transform=Werewolf Ransacker
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Afflicted Deserter.
+status=needs other half

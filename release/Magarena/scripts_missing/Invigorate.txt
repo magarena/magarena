@@ -7,3 +7,4 @@ cost={2}{G}
 effect=If you control a Forest, rather than pay SN's mana cost, you may have an opponent gain 3 life.~Target creature gets +4/+4 until end of turn.
 timing=removal
 oracle=If you control a Forest, rather than pay Invigorate's mana cost, you may have an opponent gain 3 life.\nTarget creature gets +4/+4 until end of turn.
+status=needs groovy

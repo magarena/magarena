@@ -11,3 +11,4 @@ ability=Flying;\
         When SN enters the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference.
 timing=main
 oracle=Flying\nWhen Sandstone Oracle enters the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference.
+status=needs groovy

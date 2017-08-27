@@ -7,3 +7,4 @@ cost={5}{U}
 effect=Put target creature into its owner's library second from the top.
 timing=removal
 oracle=Put target creature into its owner's library second from the top.
+status=needs groovy
