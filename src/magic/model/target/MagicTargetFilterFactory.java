@@ -593,14 +593,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return !target.isLand() && target.isController(player);
-        }
-    };
-
-
     public static final MagicPermanentFilterImpl NONLAND_NONTOKEN_PERMANENT = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
