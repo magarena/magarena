@@ -544,7 +544,7 @@ public enum MagicAbility {
     Outlast("outlast "+ARG.COST,10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg) + ", {T}");
             card.add(new MagicOutlastActivation(matchedCostEvents));
         }
     },

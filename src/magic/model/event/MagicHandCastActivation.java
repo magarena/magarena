@@ -128,11 +128,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
         return new MagicHandCastActivation(conds, cardDef.getActivationHints(), name) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-                final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
-                for (final MagicMatchedCostEvent matched : matchedCostEvents) {
-                    costEvents.add(matched.getEvent(source));
-                }
-                return costEvents;
+                return MagicMatchedCostEvent.getCostEvent(matchedCostEvents, source);
             }
         };
     }
@@ -203,11 +199,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Awaken") {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-                final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
-                for (final MagicMatchedCostEvent matched : matchedCostEvents) {
-                    costEvents.add(matched.getEvent(source));
-                }
-                return costEvents;
+                return MagicMatchedCostEvent.getCostEvent(matchedCostEvents, source);
             }
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
