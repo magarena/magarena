@@ -446,11 +446,11 @@ public enum MagicAbility {
             card.add(new MagicEmbalmActivation(manaCost));
         }
     },
-    Eternalize("eternalize " + ARG.MANACOST, 10) {
+    Eternalize("eternalize( |—)" + ARG.COST, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicEternalizeActivation(manaCost));
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg) + ", Exile SN from your graveyard");
+            card.add(new MagicEternalizeActivation(matchedCostEvents));
         }
     },
     Scavenge("scavenge " + ARG.MANACOST,10) {

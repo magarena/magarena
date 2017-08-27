@@ -1,6 +1,6 @@
 package magic.model.event;
 
-import java.util.Arrays;
+import java.util.List;
 
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -24,15 +24,15 @@ public class MagicEternalizeActivation extends MagicCardAbilityActivation {
         it.addSubType(MagicSubType.Zombie);
     };
 
-    final MagicManaCost cost;
+    private final List<MagicMatchedCostEvent> costs;
 
-    public MagicEternalizeActivation(final MagicManaCost aCost) {
+    public MagicEternalizeActivation(final List<MagicMatchedCostEvent> aCosts) {
         super(
             COND,
             HINT,
             "Eternalize"
         );
-        cost = aCost;
+        costs = aCosts;
     }
 
     @Override
@@ -42,10 +42,7 @@ public class MagicEternalizeActivation extends MagicCardAbilityActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(
-            new MagicPayManaCostEvent(source, cost),
-            new MagicExileSelfEvent(source, MagicLocationType.Graveyard)
-        );
+        return MagicMatchedCostEvent.getCostEvent(costs, source);
     }
 
     @Override
