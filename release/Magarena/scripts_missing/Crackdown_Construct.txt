@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever you activate an ability of an artifact or creature that isn't a mana ability, SN gets +1/+1 until end of turn.
 timing=main
 oracle=Whenever you activate an ability of an artifact or creature that isn't a mana ability, Crackdown Construct gets +1/+1 until end of turn.
+status=not supported: when-activate

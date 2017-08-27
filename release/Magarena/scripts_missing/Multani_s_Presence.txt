@@ -7,3 +7,4 @@ cost={G}
 ability=Whenever a spell you've cast is countered, draw a card.
 timing=enchantment
 oracle=Whenever a spell you've cast is countered, draw a card.
+status=not supported: when-countered

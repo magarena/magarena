@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=For each Spirit, return it to its owner's hand unless that player pays {3}.
 timing=main
 oracle=For each Spirit, return it to its owner's hand unless that player pays {3}.
+status=needs groovy

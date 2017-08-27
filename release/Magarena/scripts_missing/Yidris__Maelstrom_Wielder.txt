@@ -11,3 +11,4 @@ ability=Trample;\
         Whenever SN deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.
 timing=main
 oracle=Trample\nWhenever Yidris, Maelstrom Wielder deals combat damage to a player, as you cast spells from your hand this turn, they gain cascade.
+status=not supported: spell-modification
