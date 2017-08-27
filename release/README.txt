@@ -112,6 +112,42 @@ ShawnieBoy
   * March of the Machines overrides power and toughness of already animated artifact (issue #202)
   * Heightened Awareness should discard as it enters without trigger (issue #1003)
 
+- added the following cards:
+Akoum Flameseeker, Alms Beast, Ammit Eternal, Ancestral Vision,
+Arahbo, Roar of the World, Arc Blade, Arm with Aether, Banewhip Punisher,
+Barrin's Codex, Blind Zealot, Bloodforged Battle-Axe, Blood Frenzy,
+Bloodline Necromancer, Bloodsworn Steward, Bonds of Faith,
+Bontu's Last Reckoning, Champion of Wits, Clockwork Hydra, Coastal Wizard,
+Commando Raid, Confound, Contempt, Corpulent Corpse, Creeperhulk,
+Crested Sunmare, Crimson Honor Guard, Cryptic Cruiser, Cyclical Evolution,
+Damnable Pact, Dawn Charm, Dawnglare Invoker, Dawning Purist,
+Despoiler of Souls, Disappear, Disrupt Decorum, Durkwood Baloth,
+Duskrider Peregrine, Earthshaker Khenra, Edgar Markov, Encircling Fissure,
+Errant Ephemeron, Exemplar of Strength, Exsanguinate, Fell the Mighty,
+Festering March, Flowstone Sculpture, Galecaster Colossus, Giant Dustwasp,
+Goblin Vandal, Graven Abomination, Graven Dominator, Greater Werewolf,
+Greenbelt Rampager, Hammer of Ruin, Hapatra's Mark, Heroes Remembered,
+Hindering Light, Horde of Notions, Hungry Lynx, Hydromorph Guardian,
+Hydromorph Gull, Infiltrator il-Kor, Inkfathom Witch, Instigator,
+Intervene, Ith, High Arcanist, Ivory Giant, Jinx, Jushi Apprentice,
+Kefnet's Last Word, Keldon Halberdier, Knight of Sursi, Lash Out,
+Lightwielder Paladin, Marsh Flitter, Merciless Javelineer,
+Mind Raker, Mindstab, Mirror Sheen, Mtenda Griffin, Murk Strider,
+Nahiri, the Lithomancer, Nantuko Shaman, Naya Charm, Noosegraf Mob,
+Oath of Gideon, Ob Nixilis Reignited, Olivia, Mobilized for War,
+Oracle of Dust, Patron of the Vein, Petrified Plating, Plunder,
+Polis Crusher, Polymorphist's Jest, Primeval Light, Processor Assault,
+Qasali Slingers, Reality Shift, Reality Strobe, Rebuff the Wicked,
+Restore Balance, Rhonas's Last Stand, Rift Bolt, Riftwing Cloudskate,
+River Hoopoe, Ruin Processor, Sarkhan, the Dragonspeaker,
+Scalelord Reckoner, Scroll of Origins, Search for Tomorrow,
+Sensei Golden-Tail, Shade of Trokair, Shimmering Mirage, Shivan Meteor,
+Sigil of Sleep, Sinuous Striker, Snow Hound, Stormchaser Chimera,
+Sunscourge Champion, Tezzeret the Schemer, The Wretched, Tidal Influence,
+Tomoya the Revealer, Turn Aside, Ulamog's Reclaimer, Vigilant Martyr,
+Viscerid Deepwalker, Void Attendant, Wall of Nets, Wasitora, Nekoru Queen,
+Wasteland Strangler, Wheel of Fate, Zombie Cannibal
+
 Release 1.87 (July 31, 2017)
 ============
 kelsioboy
