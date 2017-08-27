@@ -84,34 +84,33 @@ ShawnieBoy
 - added the following to the card script:
   * condition: SN is in the command zone or on the battlefield
   * cost: Put a card an opponent owns from exile into that player's graveyard
-  * effect: you get an emblem with <abilities>
-  * effect: <permanent> has base power and toughness p/t until end of turn
-  * effect: Exile sn with three time counters on it
-  * effect: remove all <type> counters from <permanents>
-  * effect: until end of turn, <permanent> loses all abilities and has base power and toughness x/y
   * effect: <cost>. If you do, <effect>
   * effect: <cost>. If you can't, <effect>
+  * effect: you get an emblem with <abilities>
+  * effect: exile SN with three time counters on it
+  * effect: remove all <type> counters from <permanents>
+  * effect: <permanent> has base power and toughness p/t until end of turn
   * effect: <permanent> becomes the basic land type of your choice until end of turn
+  * effect: until end of turn, <permanent> loses all abilities and has base power and toughness p/t
   * ability: Suspend <n>-<cost>
-  * ability: Whenever SN blocks or becomes becomes blocked by one or more <permanents>, <effect>
   * ability: At end of combat, <effect>
+  * ability: Whenever SN blocks or becomes becomes blocked by one or more <permanents>, <effect>
 
 - fixed the following bugs:
+  * crash due to collision of game state (issue #815)
+  * crash due to a spell able to target a later spell (issue #1223)
+  * crash due to running out of memory trying to discard a large hand down to 7 (issue #721)
+  * pending triggers did not on the stack in APNAP order (issue #423)
+  * casting without paying mana cost not affected by cost modifications
+  * changing target of spell did not trigger on target triggers
+  * Clone type cards causes cast triggers to trigger twice (issue #991)
   * Auger Spree's effect gave +4/+4, should be +4/-4
-  * fix changed target not triggering when targeted
-  * prevent cyclic references by ensuring stack item is valid target for another stack item that is later, fixes #1223
-  * casting without paying mana cost should be affected by cost modifications
-  * split GlobalPreventDamageToTarget into high priority ProtectionShield and low priority PreventDamageShield, fixes #153
-  * fix TestNoxious, closes #174
-  * include equipments/auras in permanent state, for #815
-  * use MagicETBEvent instead of trigger for 'SN enters tapped', fixes #750
-  * Heightened Awareness should discard as it enters without trigger, fixes #1003
-  * ensure pending triggers go on the stack in APNAP order, fixes #423
-  * split large discard into groups of 3 to avoid running out of memory, for #721
-  * make steps after scry into event, fixes #1250
-  * fix March of the Machines to use the applied check, closes #202
-  * add isLegal check to SetBlockerAction and other actions, fixes #1156
-  * entering as copy should not create a stack item, fixes #991
+  * Stormchaser Chimera and Putrid Cyclops reveal before scry (issue #1250)
+  * Phantom Centaur loses counter when blocking a black creature (issue #153)
+  * Amulet of Vigor doesn't work for certain enters tapped abilities (issue #750)
+  * Brimaz, King of Oreskos crash due to token blocking a non-existent creature (issue #1156)
+  * March of the Machines overrides power and toughness of already animated artifact (issue #202)
+  * Heightened Awareness should discard as it enters without trigger (issue #1003)
 
 Release 1.87 (July 31, 2017)
 ============
