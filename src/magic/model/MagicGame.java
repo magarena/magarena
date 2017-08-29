@@ -40,7 +40,6 @@ import magic.model.phase.MagicStep;
 import magic.model.stack.MagicStack;
 import magic.model.target.MagicLegendaryCopiesFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.model.target.MagicPlaneswalkerCopiesFilter;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -1137,15 +1136,6 @@ public class MagicGame {
         // 704.5k "legend rule"
         if (permanent.hasType(MagicType.Legendary)) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicLegendaryCopiesFilter(permanent.getName());
-            final Collection<MagicPermanent> targets=targetFilter.filter(permanent.getController());
-            if (targets.size() > 1) {
-                addEvent(new MagicUniquenessEvent(permanent, targetFilter));
-            }
-        }
-
-        // 704.5j "planeswalker uniqueness rule."
-        if (permanent.hasType(MagicType.Planeswalker)) {
-            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicPlaneswalkerCopiesFilter(permanent);
             final Collection<MagicPermanent> targets=targetFilter.filter(permanent.getController());
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
