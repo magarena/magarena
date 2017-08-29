@@ -1,5 +1,6 @@
 name=Zealous Strike
-image=http://magiccards.info/scans/en/avr/41.jpg
+image=http://magiccards.info/scans/en/cn2/101.jpg
+image_updated=2017-08-29
 value=2.690
 rarity=C
 type=Instant

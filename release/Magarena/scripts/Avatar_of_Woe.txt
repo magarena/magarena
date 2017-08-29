@@ -1,7 +1,8 @@
 name=Avatar of Woe
-image=http://magiccards.info/scans/en/cmd/73.jpg
+image=http://magiccards.info/scans/en/cn2/128.jpg
+image_updated=2017-08-29
 value=4.158
-rarity=R
+rarity=M
 type=Creature
 subtype=Avatar
 cost={6}{B}{B}

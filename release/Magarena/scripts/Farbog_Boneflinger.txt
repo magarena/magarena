@@ -1,5 +1,6 @@
 name=Farbog Boneflinger
-image=http://magiccards.info/scans/en/dka/61.jpg
+image=http://magiccards.info/scans/en/cn2/134.jpg
+image_updated=2017-08-29
 value=1.340
 rarity=U
 removal=2

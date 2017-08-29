@@ -1,5 +1,6 @@
 name=Ogre Sentry
-image=http://magiccards.info/scans/en/roe/159.jpg
+image=http://magiccards.info/scans/en/cn2/168.jpg
+image_updated=2017-08-29
 value=2.640
 rarity=C
 type=Creature

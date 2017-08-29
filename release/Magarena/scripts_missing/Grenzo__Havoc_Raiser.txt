@@ -8,8 +8,8 @@ subtype=Goblin,Rogue
 cost={R}{R}
 pt=2/2
 ability=Whenever a creature you control deals combat damage to a player, choose one — \
-        (1) Goad target creature that player controls.  \
-        (2) Exile the top card of that player's library. Until end of turn, you may cast that card and you may spend mana as though it were mana of any color to cast it.
+        (1) Goad target creature that player controls. \
+        (2) Exile the top card of that player's library. Until end of turn, you may cast that card and you may spend mana as though it were mana of any color to cast that spell.
 timing=main
-oracle=Whenever a creature you control deals combat damage to a player, choose one —\n• Goad target creature that player controls. \n• Exile the top card of that player's library. Until end of turn, you may cast that card and you may spend mana as though it were mana of any color to cast it.
+oracle=Whenever a creature you control deals combat damage to a player, choose one —\n• Goad target creature that player controls.\n• Exile the top card of that player's library. Until end of turn, you may cast that card and you may spend mana as though it were mana of any color to cast that spell.
 status=not supported: spend-mana-as-though

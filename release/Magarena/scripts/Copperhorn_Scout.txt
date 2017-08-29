@@ -1,5 +1,6 @@
 name=Copperhorn Scout
-image=http://magiccards.info/scans/en/cns/160.jpg
+image=http://magiccards.info/scans/en/cn2/179.jpg
+image_updated=2017-08-29
 value=3.400
 rarity=C
 type=Creature

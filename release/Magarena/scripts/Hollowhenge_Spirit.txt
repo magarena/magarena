@@ -1,5 +1,6 @@
 name=Hollowhenge Spirit
-image=http://magiccards.info/scans/en/dka/10.jpg
+image=http://magiccards.info/scans/en/cn2/92.jpg
+image_updated=2017-08-29
 value=2.695
 rarity=U
 type=Creature

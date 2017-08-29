@@ -1,5 +1,6 @@
 name=Driver of the Dead
-image=http://magiccards.info/scans/en/avr/99.jpg
+image=http://magiccards.info/scans/en/cn2/133.jpg
+image_updated=2017-08-29
 value=3.000
 rarity=C
 type=Creature

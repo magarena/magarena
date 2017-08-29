@@ -1,5 +1,6 @@
 name=Ravenous Leucrocota
-image=http://magiccards.info/scans/en/jou/136.jpg
+image=http://magiccards.info/scans/en/cn2/192.jpg
+image_updated=2017-08-29
 value=2.870
 rarity=C
 type=Creature

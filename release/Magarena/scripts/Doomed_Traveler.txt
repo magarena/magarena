@@ -1,5 +1,6 @@
 name=Doomed Traveler
-image=http://magiccards.info/scans/en/cns/69.jpg
+image=http://magiccards.info/scans/en/cn2/83.jpg
+image_updated=2017-08-29
 value=4.167
 rarity=C
 type=Creature

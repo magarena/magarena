@@ -1,5 +1,6 @@
 name=Kitesail
-image=http://magiccards.info/scans/en/mm2/218.jpg
+image=http://magiccards.info/scans/en/cn2/212.jpg
+image_updated=2017-08-29
 value=2.329
 rarity=C
 type=Artifact

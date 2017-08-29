@@ -9,5 +9,5 @@ cost={4}{W}{W}
 pt=4/5
 ability=Flying;\
         When SN enters the battlefield, destroy all tapped creatures.
-timing=fmain
+timing=main
 oracle=Flying\nWhen Sunblast Angel enters the battlefield, destroy all tapped creatures.

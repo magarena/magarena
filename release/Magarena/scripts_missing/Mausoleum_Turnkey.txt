@@ -1,5 +1,6 @@
 name=Mausoleum Turnkey
-image=http://magiccards.info/scans/en/rav/94.jpg
+image=http://magiccards.info/scans/en/cn2/142.jpg
+image_updated=2017-08-29
 value=2.583
 rarity=U
 type=Creature

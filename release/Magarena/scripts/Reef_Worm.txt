@@ -8,4 +8,4 @@ cost={3}{U}
 pt=0/1
 ability=When SN dies, create a 3/3 blue Fish creature token.
 timing=main
-oracle=When Reef Worm dies, create a 3/3 blue Fish creature token with "When this creature dies, create a 6/6 blue Whale creature token with ‘When this creature dies, create a 9/9 blue Kraken creature token.'"
+oracle=When Reef Worm dies, create a 3/3 blue Fish creature token with "When this creature dies, create a 6/6 blue Whale creature token with 'When this creature dies, create a 9/9 blue Kraken creature token.'"

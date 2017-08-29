@@ -1,5 +1,6 @@
 name=Stormchaser Chimera
-image=http://magiccards.info/scans/en/jou/156.jpg
+image=http://magiccards.info/scans/en/cn2/207.jpg
+image_updated=2017-08-29
 value=3.500
 rarity=U
 type=Creature

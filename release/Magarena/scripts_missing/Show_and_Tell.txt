@@ -1,7 +1,8 @@
 name=Show and Tell
-image=http://magiccards.info/scans/en/us/96.jpg
+image=http://magiccards.info/scans/en/cn2/121.jpg
+image_updated=2017-08-29
 value=4.593
-rarity=R
+rarity=M
 type=Sorcery
 cost={2}{U}
 effect=Each player may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield.

@@ -1,5 +1,6 @@
 name=Vertigo Spawn
-image=http://magiccards.info/scans/en/gp/42.jpg
+image=http://magiccards.info/scans/en/cn2/125.jpg
+image_updated=2017-08-29
 value=2.500
 rarity=U
 type=Creature

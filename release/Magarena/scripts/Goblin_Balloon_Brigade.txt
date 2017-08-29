@@ -1,5 +1,6 @@
 name=Goblin Balloon Brigade
-image=http://magiccards.info/scans/en/m11/140.jpg
+image=http://magiccards.info/scans/en/cn2/159.jpg
+image_updated=2017-08-29
 value=3.419
 rarity=C
 type=Creature

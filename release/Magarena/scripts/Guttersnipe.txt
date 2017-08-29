@@ -1,5 +1,6 @@
 name=Guttersnipe
-image=http://magiccards.info/scans/en/rtr/98.jpg
+image=http://magiccards.info/scans/en/cn2/162.jpg
+image_updated=2017-08-29
 value=4.212
 rarity=U
 type=Creature

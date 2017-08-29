@@ -1,5 +1,6 @@
 name=Repulse
-image=http://magiccards.info/scans/en/cmd/58.jpg
+image=http://magiccards.info/scans/en/cn2/119.jpg
+image_updated=2017-08-29
 value=3.737
 removal=2
 rarity=C

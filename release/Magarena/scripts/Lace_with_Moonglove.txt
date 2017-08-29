@@ -1,5 +1,6 @@
 name=Lace with Moonglove
-image=http://magiccards.info/scans/en/lw/225.jpg
+image=http://magiccards.info/scans/en/cn2/184.jpg
+image_updated=2017-08-29
 value=3.316
 rarity=C
 type=Instant

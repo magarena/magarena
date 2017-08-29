@@ -1,5 +1,6 @@
 name=Cloaked Siren
-image=http://magiccards.info/scans/en/jou/32.jpg
+image=http://magiccards.info/scans/en/cn2/104.jpg
+image_updated=2017-08-29
 value=3.365
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Raise Dead
-image=http://magiccards.info/scans/en/9e/156.jpg
+image=http://magiccards.info/scans/en/cn2/146.jpg
+image_updated=2017-08-29
 value=3.804
 rarity=C
 type=Sorcery

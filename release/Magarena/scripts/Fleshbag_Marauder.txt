@@ -1,6 +1,6 @@
 name=Fleshbag Marauder
-image=http://magiccards.info/scans/en/ori/98.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/cn2/136.jpg
+image_updated=2017-08-29
 value=2.500
 rarity=U
 type=Creature

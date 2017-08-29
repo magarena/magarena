@@ -1,5 +1,6 @@
 name=Burn Away
-image=http://magiccards.info/scans/en/ktk/104.jpg
+image=http://magiccards.info/scans/en/cn2/151.jpg
+image_updated=2017-08-29
 value=3.250
 rarity=U
 type=Instant

@@ -1,5 +1,6 @@
 name=Hexplate Golem
-image=http://magiccards.info/scans/en/mbs/109.jpg
+image=http://magiccards.info/scans/en/cn2/210.jpg
+image_updated=2017-08-29
 value=2.039
 rarity=C
 type=Artifact,Creature

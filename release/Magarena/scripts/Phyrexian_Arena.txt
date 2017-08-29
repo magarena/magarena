@@ -1,6 +1,6 @@
 name=Phyrexian Arena
-image=http://magiccards.info/scans/en/9e/152.jpg
-image_updated=2017-01-03
+image=http://magiccards.info/scans/en/cn2/144.jpg
+image_updated=2017-08-29
 value=4.562
 rarity=R
 type=Enchantment

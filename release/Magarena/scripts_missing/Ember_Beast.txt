@@ -1,5 +1,6 @@
 name=Ember Beast
-image=http://magiccards.info/scans/en/gtc/89.jpg
+image=http://magiccards.info/scans/en/cn2/155.jpg
+image_updated=2017-08-29
 value=3.100
 rarity=C
 type=Creature

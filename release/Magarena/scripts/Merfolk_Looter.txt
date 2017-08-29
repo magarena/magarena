@@ -1,5 +1,6 @@
 name=Merfolk Looter
-image=http://magiccards.info/scans/en/ema/61.jpg
+image=http://magiccards.info/scans/en/cn2/114.jpg
+image_updated=2017-08-29
 value=4.000
 rarity=U
 type=Creature

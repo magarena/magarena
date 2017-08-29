@@ -1,5 +1,6 @@
 name=Havengul Vampire
-image=http://magiccards.info/scans/en/avr/139.jpg
+image=http://magiccards.info/scans/en/cn2/164.jpg
+image_updated=2017-08-29
 value=3.754
 rarity=U
 type=Creature

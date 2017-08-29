@@ -1,6 +1,6 @@
 name=Charmbreaker Devils
-image=http://magiccards.info/scans/en/isd/134.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/cn2/153.jpg
+image_updated=2017-08-29
 value=3.812
 rarity=R
 type=Creature

@@ -1,5 +1,6 @@
 name=Deceiver Exarch
-image=http://magiccards.info/scans/en/nph/33.jpg
+image=http://magiccards.info/scans/en/cn2/106.jpg
+image_updated=2017-08-29
 value=3.643
 rarity=U
 type=Creature

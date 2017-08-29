@@ -9,4 +9,4 @@ cost={2}{B}{B}
 pt=5/4
 ability=Flying
 timing=main
-oracle=Draft Archdemon of Paliano face up. \nAs long as Archdemon of Paliano is face up during the draft, you can't look at booster packs and must draft cards at random. After you draft three cards this way, turn Archdemon of Paliano face down.\nFlying
+oracle=Draft Archdemon of Paliano face up.\nAs long as Archdemon of Paliano is face up during the draft, you can't look at booster packs and must draft cards at random. After you draft three cards this way, turn Archdemon of Paliano face down.\nFlying

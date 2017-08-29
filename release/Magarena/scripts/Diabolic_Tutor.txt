@@ -1,5 +1,6 @@
 name=Diabolic Tutor
-image=http://magiccards.info/scans/en/m12/92.jpg
+image=http://magiccards.info/scans/en/kld/75.jpg
+image_updated=2017-08-29
 value=3.719
 rarity=U
 type=Sorcery

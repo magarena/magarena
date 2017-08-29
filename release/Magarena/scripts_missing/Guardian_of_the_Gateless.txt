@@ -1,5 +1,6 @@
 name=Guardian of the Gateless
-image=http://magiccards.info/scans/en/gtc/14.jpg
+image=http://magiccards.info/scans/en/cn2/89.jpg
+image_updated=2017-08-29
 value=3.551
 rarity=U
 type=Creature

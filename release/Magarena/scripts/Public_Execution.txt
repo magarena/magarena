@@ -1,5 +1,6 @@
 name=Public Execution
-image=http://magiccards.info/scans/en/m13/105.jpg
+image=http://magiccards.info/scans/en/cn2/145.jpg
+image_updated=2017-08-29
 value=2.529
 rarity=U
 type=Instant

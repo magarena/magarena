@@ -1,5 +1,6 @@
 name=Followed Footsteps
-image=http://magiccards.info/scans/en/rav/51.jpg
+image=http://magiccards.info/scans/en/cn2/111.jpg
+image_updated=2017-08-29
 value=4.077
 rarity=R
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Infest
-image=http://magiccards.info/scans/en/ala/80.jpg
-image_updated=2016-12-13
+image=http://magiccards.info/scans/en/cn2/139.jpg
+image_updated=2017-08-29
 value=3.881
 removal=2
 rarity=U

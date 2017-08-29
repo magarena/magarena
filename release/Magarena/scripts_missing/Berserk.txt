@@ -1,7 +1,8 @@
 name=Berserk
-image=http://magiccards.info/scans/en/un/94.jpg
+image=http://magiccards.info/scans/en/cn2/175.jpg
+image_updated=2017-08-29
 value=3.750
-rarity=R
+rarity=M
 type=Instant
 cost={G}
 ability=Cast SN only before the combat damage step.

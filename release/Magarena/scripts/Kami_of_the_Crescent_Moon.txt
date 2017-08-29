@@ -1,5 +1,6 @@
 name=Kami of the Crescent Moon
-image=http://magiccards.info/scans/en/sok/42.jpg
+image=http://magiccards.info/scans/en/cn2/113.jpg
+image_updated=2017-08-29
 value=3.917
 rarity=R
 type=Legendary,Creature

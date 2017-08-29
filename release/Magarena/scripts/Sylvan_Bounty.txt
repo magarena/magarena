@@ -1,5 +1,6 @@
 name=Sylvan Bounty
-image=http://magiccards.info/scans/en/mm2/164.jpg
+image=http://magiccards.info/scans/en/cn2/194.jpg
+image_updated=2017-08-29
 value=1.444
 rarity=C
 type=Instant

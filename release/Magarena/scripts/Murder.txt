@@ -1,8 +1,9 @@
 name=Murder
-image=http://magiccards.info/scans/en/emn/97.jpg
+image=http://magiccards.info/scans/en/cn2/143.jpg
+image_updated=2017-08-29
 value=3.684
 removal=5
-rarity=U
+rarity=C
 type=Instant
 cost={1}{B}{B}
 effect=Destroy target creature.

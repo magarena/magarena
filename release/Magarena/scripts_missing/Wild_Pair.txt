@@ -1,5 +1,6 @@
 name=Wild Pair
-image=http://magiccards.info/scans/en/pc/144.jpg
+image=http://magiccards.info/scans/en/cn2/196.jpg
+image_updated=2017-08-29
 value=4.349
 rarity=R
 type=Enchantment
