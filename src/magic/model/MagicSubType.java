@@ -109,22 +109,6 @@ public enum MagicSubType {
     private MagicSubType() {
     }
 
-    public boolean hasType(MagicObject obj) {
-               if (ALL_LANDS.contains(this)) {
-            return obj.hasType(MagicType.Land);
-        } else if (ALL_ARTIFACTS.contains(this)) {
-            return obj.hasType(MagicType.Artifact);
-        } else if (ALL_ENCHANTMENTS.contains(this)) {
-            return obj.hasType(MagicType.Enchantment);
-        } else if (ALL_CREATURES.contains(this)) {
-            return obj.hasType(MagicType.Creature) || obj.hasType(MagicType.Tribal);
-        } else if (ALL_PLANESWALKERS.contains(this)) {
-            return obj.hasType(MagicType.Planeswalker);
-        } else {
-            throw new RuntimeException("Unknown type of subtype " + this);
-        }
-    }
-
     public static MagicSubType getSubType(final String name) {
         //final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         for (final MagicSubType type : values()) {
