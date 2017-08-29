@@ -1,5 +1,6 @@
 name=Creeping Mold
-image=http://magiccards.info/scans/en/10e/258.jpg
+image=http://magiccards.info/scans/en/kld/150.jpg
+image_updated=2017-08-29
 value=3.805
 removal=2
 rarity=U

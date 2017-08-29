@@ -1,5 +1,6 @@
 name=Horn of Greed
-image=http://magiccards.info/scans/en/sh/129.jpg
+image=http://magiccards.info/scans/en/cn2/211.jpg
+image_updated=2017-08-29
 value=3.823
 rarity=R
 type=Artifact
