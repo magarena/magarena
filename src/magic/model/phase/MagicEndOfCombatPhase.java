@@ -20,14 +20,14 @@ public class MagicEndOfCombatPhase extends MagicPhase {
 
     @Override
     public void executeBeginStep(final MagicGame game) {
+        // End of combat triggers
+        game.executeTrigger(MagicTriggerType.AtEndOfCombat,game.getTurnPlayer());
+        // Active player gets priority
         game.setStep(game.canSkip()?MagicStep.NextPhase:MagicStep.ActivePlayer);
     }
 
     @Override
     public void executeEndOfPhase(final MagicGame game) {
-        // End of combat triggers
-        game.executeTrigger(MagicTriggerType.AtEndOfCombat,game.getTurnPlayer());
-
         // Remove permanents from combat
         for (final MagicPlayer player : game.getPlayers()) {
             for (final MagicPermanent permanent : player.getPermanents()) {
