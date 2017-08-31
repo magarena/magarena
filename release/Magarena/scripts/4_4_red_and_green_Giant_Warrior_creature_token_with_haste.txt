@@ -6,3 +6,5 @@ type=Creature
 subtype=Giant,Warrior
 color=rg
 pt=4/4
+ability=Haste
+oracle=Haste
