@@ -2621,7 +2621,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseAbilityBecomes(
-        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " lose(s)? all abilities and" + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO,
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " lose(s)? all abilities and" + PermanentSpecParser.BECOMES + PermanentSpecParser.STILL,
         MagicTiming.Removal,
         "Polymorph"
     ) {
@@ -2647,7 +2647,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAlt(
-        "(?<duration>until end of turn, )" + ARG.PERMANENTS + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO,
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + PermanentSpecParser.BECOMES + PermanentSpecParser.STILL,
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2662,7 +2662,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAddition(
-        ARG.PERMANENTS + PermanentSpecParser.BECOMES + "(?<additionTo> in addition to its other [^\\.]*)" + PermanentSpecParser.DURATION,
+        ARG.PERMANENTS + PermanentSpecParser.BECOMES + PermanentSpecParser.ADDITIONTO + PermanentSpecParser.DURATION,
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2677,7 +2677,7 @@ public enum MagicRuleEventAction {
         }
     },
     Becomes(
-        ARG.PERMANENTS + PermanentSpecParser.BECOMES + PermanentSpecParser.DURATION + PermanentSpecParser.ADDITIONTO,
+        ARG.PERMANENTS + PermanentSpecParser.BECOMES + PermanentSpecParser.DURATION + PermanentSpecParser.STILL,
         MagicTiming.Animate,
         "Becomes"
     ) {

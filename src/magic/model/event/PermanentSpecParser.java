@@ -23,7 +23,9 @@ public class PermanentSpecParser {
 
     public static final String BECOMES = " (become(s)?( a| an)?(?<legendary> legendary)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)|has|have)(( with)? base power and toughness (?<pt2>[0-9]+/[0-9]+))?( (with|and gains) (?<ability>.*?))?";
 
-    public static final String ADDITIONTO = "(?<additionTo>((\\.)? It's| that's|\\. They're| that are) still [^\\.]*)?";
+    public static final String STILL = "(?<additionTo>((\\.)? It's| that's|\\. They're| that are) still [^\\.]*)?";
+
+    public static final String ADDITIONTO = "(?<additionTo> in addition to its other (types|colors|creature types))";
 
     public static final String DURATION = "(?<duration> until end of turn)?";
 
