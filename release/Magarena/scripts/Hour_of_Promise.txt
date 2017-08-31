@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{G}
-effect=Search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library. Then if you control three or more Deserts, create two 2/2 black Zombie creature tokens.
+effect=Search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.~Then if you control three or more Deserts, create two 2/2 black Zombie creature tokens.
 timing=main
 oracle=Search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library. Then if you control three or more Deserts, create two 2/2 black Zombie creature tokens.
