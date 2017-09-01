@@ -1,9 +1,9 @@
 name=Wastes
-image=http://magiccards.info/scans/en/ogw/183.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/ogw/183b.jpg
+image_updated=2017-09-01
 value=2.500
 rarity=B
 type=Basic,Land
-timing=land
 ability={T}: Add {C} to your mana pool.
+timing=land
 oracle={T}: Add {C} to your mana pool.

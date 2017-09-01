@@ -7,4 +7,4 @@ cost={3}{R}
 ability=Madness {3}{R}
 effect=Gain control of target creature until end of turn.~Untap *that creature*.~*It* gets +2/+0 and gains haste until end of turn.
 timing=fmain
-oracle=Gain control of target creature until end of turn. Untap that creature. It gets +2/+0 and gains haste until end of turn. \nMadness {3}{R}
+oracle=Gain control of target creature until end of turn. Untap that creature. It gets +2/+0 and gains haste until end of turn.\nMadness {3}{R}

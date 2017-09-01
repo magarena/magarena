@@ -1,8 +1,8 @@
 name=Submerged Boneyard
-image=http://magiccards.info/scans/en/ogw/178.jpg
-image_updated=2016-02-29
+image=http://magiccards.info/scans/en/aer/194.jpg
+image_updated=2017-09-01
 value=2.500
-rarity=U
+rarity=C
 type=Land
 mana=u3b3
 ability=SN enters the battlefield tapped.;\

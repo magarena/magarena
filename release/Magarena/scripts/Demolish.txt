@@ -1,10 +1,10 @@
 name=Demolish
-image=http://magiccards.info/scans/en/ori/139.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/kld/113.jpg
+image_updated=2017-09-01
 value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}
-timing=removal
 effect=Destroy target artifact or land.
+timing=removal
 oracle=Destroy target artifact or land.

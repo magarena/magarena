@@ -1,5 +1,6 @@
 name=Prophetic Prism
-image=http://magiccards.info/scans/en/gtc/234.jpg
+image=http://magiccards.info/scans/en/kld/229.jpg
+image_updated=2017-09-01
 value=3.865
 rarity=C
 type=Artifact

@@ -7,8 +7,8 @@ subtype=Dragon
 cost={3}{U}{U}
 pt=4/3
 ability=Flying;\
-        When SN enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control SN. ;\
+        When SN enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control SN.;\
         Spells your opponents cast that target SN cost {2} more to cast.
 timing=main
-oracle=Flying\nWhen Icefall Regent enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control Icefall Regent. \nSpells your opponents cast that target Icefall Regent cost {2} more to cast.
+oracle=Flying\nWhen Icefall Regent enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control Icefall Regent.\nSpells your opponents cast that target Icefall Regent cost {2} more to cast.
 status=not supported: complex-cost-modification

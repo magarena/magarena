@@ -1,7 +1,8 @@
 name=Woodland Stream
-image=http://magiccards.info/scans/en/soi/282.jpg
+image=http://magiccards.info/scans/en/kld/274.jpg
+image_updated=2017-09-01
 value=2.500
-rarity=U
+rarity=C
 type=Land
 mana=g3u3
 ability=SN enters the battlefield tapped.;\

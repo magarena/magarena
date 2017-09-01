@@ -7,8 +7,8 @@ subtype=Elemental
 cost={U}{U}{U}
 pt=3/3
 ability={U}: Exile SN, then return it to the battlefield face down under its owner's control.;\
-        {1}: SN gets +1/-1 or -1/+1 until end of turn. ;\
+        {1}: SN gets +1/-1 or -1/+1 until end of turn.;\
         Megamorph {4}{U}
 timing=main
-oracle={U}: Exile Shorecrasher Elemental, then return it to the battlefield face down under its owner's control.\n{1}: Shorecrasher Elemental gets +1/-1 or -1/+1 until end of turn. \nMegamorph {4}{U}
+oracle={U}: Exile Shorecrasher Elemental, then return it to the battlefield face down under its owner's control.\n{1}: Shorecrasher Elemental gets +1/-1 or -1/+1 until end of turn.\nMegamorph {4}{U}
 status=needs groovy
