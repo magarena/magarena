@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Rebel
 cost={2}{W}
 pt=2/2
-ability=When SN blocks, at end of combat, destroy it and all creatures it blocked this turn.;\
+ability=When SN blocks, destroy SN at end of combat~and destroy all creatures blocked by SN at end of combat.;\
         {5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=When Defiant Vanguard blocks, at end of combat, destroy it and all creatures it blocked this turn.\n{5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
-status=needs groovy
