@@ -4,7 +4,6 @@ value=3.611
 rarity=U
 type=Instant
 cost={3}{G}
-effect=Create a 2/2 green Wolf creature token.~Create three 2/2 green Wolf creature tokens instead if a creature died this turn.
-timing=removal
+timing=token
 oracle=Create a 2/2 green Wolf creature token.\nMorbid — Create three 2/2 green Wolf creature tokens instead if a creature died this turn.
-status=needs groovy
+requires_groovy_code
