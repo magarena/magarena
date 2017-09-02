@@ -5,8 +5,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=If a source would deal damage to equipped creature, prevent X of that damage, where X is the number of creatures you control.;\
-        Equip {2}
+ability=Equip {2}
 timing=equipment
 oracle=If a source would deal damage to equipped creature, prevent X of that damage, where X is the number of creatures you control.\nEquip {2}
-status=needs groovy
+requires_groovy_code
