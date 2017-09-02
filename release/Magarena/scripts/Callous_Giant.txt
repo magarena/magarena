@@ -6,7 +6,6 @@ type=Creature
 subtype=Giant
 cost={4}{R}{R}
 pt=4/4
-ability=If a source would deal 3 or less damage to SN, prevent that damage.
 timing=main
 oracle=If a source would deal 3 or less damage to Callous Giant, prevent that damage.
-status=needs groovy
+requires_groovy_code
