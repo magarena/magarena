@@ -33,14 +33,15 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchanted = permanent.getEnchantedPermanent();
-            return upkeepPlayer == enchanted.getController() ? new MagicEvent(
-                permanent,
-                permanent.getController(),
-                enchanted,
-                this,
-                "PN removes a sleep counter from RN."
-            ) :
-            MagicEvent.NONE;
+            return upkeepPlayer == enchanted.getController() ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    enchanted,
+                    this,
+                    "PN removes a sleep counter from RN."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
