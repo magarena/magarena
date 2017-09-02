@@ -7,7 +7,7 @@ def AN_EQUIPMENT_YOU_CONTROL = new MagicTargetChoice("an Equipment you control")
             return new MagicEvent(
                 source,
                 this,
-                "PN creates a 1/1 white Kor Soldier creature token. PN may attach an Equipment he/she controls to it."
+                "PN creates a 1/1 white Kor Soldier creature token. PN may attach an Equipment he or she controls to it."
             );
         }
         @Override
@@ -35,7 +35,7 @@ def AN_EQUIPMENT_YOU_CONTROL = new MagicTargetChoice("an Equipment you control")
                                 })
                             }
                         },
-                        "PN may\$ attach an Equipment he/she controls\$ to RN."
+                        "PN may\$ attach an Equipment he or she controls\$ to RN."
                     ));
 
                 }

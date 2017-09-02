@@ -11,7 +11,7 @@
                     new MagicPayManaCostChoice(cost)
                 ),
                 this,
-                "PN may\$ pay {1} for each other creature he/she controls. If PN doesn't, sacrifice SN."
+                "PN may\$ pay {1} for each other creature he or she controls. If PN doesn't, sacrifice SN."
             );
         }
 
