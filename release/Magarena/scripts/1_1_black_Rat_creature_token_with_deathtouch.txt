@@ -1,6 +1,7 @@
 name=1/1 black Rat creature token with deathtouch
 token=Rat
-image=http://media.wizards.com/2017/c17/en_MZI1BY48ic.png
+image=http://magiccards.info/extras/token/commander-2017/rat.jpg
+image_updated=2017-09-03
 value=1
 type=Creature
 subtype=Rat
