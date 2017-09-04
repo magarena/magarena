@@ -1,5 +1,6 @@
 name=The Monarch
-image=http://media.wizards.com/2016/azetllnwjpxztp2b_CN2/en_OFPgMTjwcu.png
+image=http://magiccards.info/extras/token/conspiracy-take-the-crown/the-monarch.jpg
+image_updated=2017-09-04
 type=Enchantment
 rarity=C
 color=

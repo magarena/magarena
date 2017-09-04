@@ -1,6 +1,7 @@
 name=6/6 colorless Beast artifact creature token
 token=Beast
-image=http://media.wizards.com/2016/bVvMNuiu2i_KLD/en_t4SGoWqjbW.png
+image=http://magiccards.info/extras/token/kaladesh/beast.jpg
+image_updated=2017-09-04
 value=5
 type=Artifact,Creature
 subtype=Beast
