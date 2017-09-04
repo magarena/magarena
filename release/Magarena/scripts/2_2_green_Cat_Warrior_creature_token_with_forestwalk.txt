@@ -1,6 +1,7 @@
 name=2/2 green Cat Warrior creature token with forestwalk
 token=Cat Warrior
-image=http://cdn.staticneo.com/w/mtg/2/2d/Cat_Warrior.jpg
+image=http://magiccards.info/extras/token/commander-2017/cat-warrior.jpg
+image_updated=2017-09-04
 value=2
 type=Creature
 subtype=Cat,Warrior
