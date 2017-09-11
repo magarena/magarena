@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
+import magic.model.MagicMessage;
 import magic.model.action.ShiftCardAction;
 import magic.model.action.CastCardAction;
 import magic.model.choice.MagicMayChoice;
@@ -61,7 +62,7 @@ public class CascadeTrigger extends ThisSpellIsCastTrigger {
                 new MagicMayChoice("Cast " + nonland + " without paying its mana cost?"),
                 exiled,
                 CAST_ACTION,
-                "PN may$ cast " + nonland + " without paying its mana cost. " +
+                "PN may$ cast " + MagicMessage.getCardToken(nonland) + " without paying its mana cost. " +
                 "Then put all cards exiled this way that weren't cast on the bottom of PN's library in random order."
             ));
         } else {
