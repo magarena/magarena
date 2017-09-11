@@ -1,0 +1,249 @@
+Abyssal Persecutor
+Abzan Battle Priest
+Abzan Falconer
+Aerial Predation
+Aether Vial
+Aetherize
+Ainok Bond-Kin
+Ajani's Pridemate
+Amass the Components
+Ancestral Vision
+Angel of Mercy
+Angelic Accord
+Anger of the Gods
+Archangel of Thune
+Assault Formation
+Auriok Champion
+Austere Command
+Avacyn, Angel of Hope
+Azorius Chancery
+Azorius Charm
+Bala Ged Scorpion
+Balustrade Spy
+Battle-Rattle Shaman
+Benevolent Ancestor
+Bewilder
+Bladewing the Risen
+Bladewing's Thrall
+Blinding Mage
+Blizzard Specter
+Blood Baron of Vizkopa
+Bloodghast
+Bogardan Hellkite
+Bogbrew Witch
+Borderland Marauder
+Boros Garrison
+Bubbling Cauldron
+Burrenton Forge-Tender
+Butcher's Glee
+Carven Caryatid
+Cephalid Broker
+Channel
+Charmbreaker Devils
+Child of Night
+Chronicler of Heroes
+Claustrophobia
+Condescend
+Consecrated Sphinx
+Coordinated Assault
+Corpsejack Menace
+Crowned Ceratok
+Crucible of Fire
+Cryptic Command
+Curse of Predation
+Darksteel Axe
+Day of the Dragons
+Dead Reveler
+Diminish
+Dimir Aqueduct
+Disenchant
+Dissolve
+Distortion Strike
+Doom Blade
+Doomed Traveler
+Doorkeeper
+Draconic Roar
+Dragon Bell Monk
+Dragon Egg
+Dragon Tempest
+Dragonloft Idol
+Dragonlord's Servant
+Duress
+Durkwood Baloth
+Duskdale Wurm
+Earth Elemental
+Electrolyze
+Elesh Norn, Grand Cenobite
+Elusive Spellfist
+Emerge Unscathed
+Emeria Angel
+Enlarge
+Eternal Thirst
+Evolving Wilds
+Festering Newt
+Fireball
+Firemane Angel
+Flusterstorm
+Fog Bank
+Foul-Tongue Invocation
+Frost Lynx
+Furnace Whelp
+Fury Charm
+Genesis Hydra
+Genesis Wave
+Glimpse the Unthinkable
+Golgari Rot Farm
+Graven Cairns
+Great Teacher's Decree
+Greater Basilisk
+Grisly Spectacle
+Grove of the Burnwillows
+Gruul Turf
+Guard Duty
+Guardian Idol
+Guided Strike
+Guttersnipe
+Hammerhand
+Haunting Hymn
+Heat Ray
+Heroes' Bane
+Hoarding Dragon
+Horizon Canopy
+Hunt the Weak
+Hunting Pack
+Hypersonic Dragon
+Illusory Ambusher
+Illusory Angel
+Indulgent Tormentor
+Infantry Veteran
+Inspiring Call
+Iona's Judgment
+Ivy Elemental
+Izzet Boilerworks
+Jace's Phantasm
+Jaddi Offshoot
+Jhessian Thief
+Jin-Gitaxias, Core Augur
+Jugan, the Rising Star
+Jungle Barrier
+Keiga, the Tide Star
+Keldon Halberdier
+Kiki-Jiki, Mirror Breaker
+Kiln Fiend
+Knight of the Reliquary
+Kokusho, the Evening Star
+Kolaghan Monument
+Lead the Stampede
+Lightning Helix
+Lord of the Pit
+Lotus Cobra
+Lure
+Magus of the Moon
+Mahamoti Djinn
+Malfegor
+Mana Drain
+Mana Leak
+Manakin
+Mark of Mutiny
+Mer-Ek Nightblade
+Mind Stone
+Mindcrank
+Mishra's Bauble
+Mnemonic Wall
+Monastery Swiftspear
+Moonglove Extract
+Nantuko Shaman
+Nature's Claim
+Necropotence
+Netcaster Spider
+Night of Souls' Betrayal
+Nimbus Maze
+Noxious Dragon
+Ob Nixilis, the Fallen
+Oblivion Stone
+Obstinate Baloth
+Ojutai's Breath
+Orzhov Basilica
+Overgrown Battlement
+Palladium Myr
+Path of Bravery
+Pentarch Ward
+Phantom Monster
+Phantom Tiger
+Phyrexian Rager
+Pillar of Flame
+Prey's Vengeance
+Primeval Titan
+Pristine Talisman
+Prodigal Pyromancer
+Radiant Fountain
+Rakdos Carnarium
+Rakdos Drake
+Rampaging Baloths
+Reave Soul
+Repeal
+Restoration Angel
+Rift Bolt
+River of Tears
+Riverwheel Aerialists
+Rosheen Meanderer
+Rotfeaster Maggot
+Rune-Scarred Demon
+Runed Servitor
+Ryusei, the Falling Star
+Sandstone Oracle
+Sanguine Bond
+Savageborn Hydra
+Scion of Ugin
+Scourge of Valkas
+Search for Tomorrow
+Seeker of the Way
+Selesnya Sanctuary
+Serra Angel
+Serra Ascendant
+Serum Powder
+Sheoldred, Whispering One
+Shimmering Grotto
+Shriekgeist
+Simic Growth Chamber
+Simic Sky Swallower
+Skywise Teachings
+Sphinx of Uthuun
+Spiritmonger
+Splatter Thug
+Staggershock
+Stalwart Aven
+Star Compass
+Student of Ojutai
+Sultai Flayer
+Supreme Verdict
+Surreal Memoir
+Survival Cache
+Sustainer of the Realm
+Swords to Plowshares
+Tavern Swindler
+Teferi, Mage of Zhalfir
+Thought Scour
+Thoughtseize
+Thran Dynamo
+Thrill-Kill Assassin
+Thundermaw Hellkite
+Timberland Guide
+Topan Freeblade
+Tormenting Voice
+Trepanation Blade
+Trumpet Blast
+Ulcerate
+Undercity Troll
+Urabrask the Hidden
+Vent Sentinel
+Virulent Swipe
+Vizkopa Guildmage
+Vorinclex, Voice of Hunger
+Wall of Roots
+Wight of Precinct Six
+Wildsize
+Windfall
+Wing Shards
+Wrench Mind
+Yosei, the Morning Star
