@@ -29,7 +29,7 @@ public class CascadeTrigger extends ThisSpellIsCastTrigger {
         return new MagicEvent(
             spell,
             this,
-            "Cascade"
+            "Cascade."
         );
     }
 
