@@ -61,7 +61,7 @@ public class CascadeTrigger extends ThisSpellIsCastTrigger {
                 new MagicMayChoice("Cast " + nonland + " without paying its mana cost?"),
                 exiled,
                 CAST_ACTION,
-                "PN may$ cast RN without paying its mana cost. " +
+                "PN may$ cast " + nonland + " without paying its mana cost. " +
                 "Then put all cards exiled this way that weren't cast on the bottom of PN's library in random order."
             ));
         } else {
