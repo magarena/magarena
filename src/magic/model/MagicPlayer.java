@@ -82,8 +82,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     private long[] keys;
 
-    MagicPlayer(final int aLife,final DuelPlayerConfig playerConfig,final int aIndex) {
-        this.playerConfig = playerConfig;
+    MagicPlayer(final int aLife,final DuelPlayerConfig aPlayerConfig,final int aIndex) {
+        playerConfig = aPlayerConfig;
         index = aIndex;
         startingLife = aLife;
         life = startingLife;
