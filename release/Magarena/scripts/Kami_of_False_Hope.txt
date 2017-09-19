@@ -1,5 +1,5 @@
 name=Kami of False Hope
-image=http://magiccards.info/scans/en/bok/10.jpg
+image=https://magiccards.info/scans/en/bok/10.jpg
 value=3.934
 rarity=C
 type=Creature

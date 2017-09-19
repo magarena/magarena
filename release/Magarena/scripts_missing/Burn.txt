@@ -1,5 +1,5 @@
 name=Burn
-image=http://magiccards.info/scans/en/dgm/134b.jpg
+image=https://magiccards.info/scans/en/dgm/134b.jpg
 value=4.101
 rarity=U
 type=Instant

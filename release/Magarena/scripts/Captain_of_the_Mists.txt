@@ -1,5 +1,5 @@
 name=Captain of the Mists
-image=http://magiccards.info/scans/en/avr/45.jpg
+image=https://magiccards.info/scans/en/avr/45.jpg
 value=3.104
 rarity=R
 type=Creature

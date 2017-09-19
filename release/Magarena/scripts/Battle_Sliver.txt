@@ -1,5 +1,5 @@
 name=Battle Sliver
-image=http://magiccards.info/scans/en/m14/128.jpg
+image=https://magiccards.info/scans/en/m14/128.jpg
 value=2.490
 rarity=U
 type=Creature

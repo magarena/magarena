@@ -1,5 +1,5 @@
 name=Serum Raker
-image=http://magiccards.info/scans/en/mbs/31.jpg
+image=https://magiccards.info/scans/en/mbs/31.jpg
 value=2.109
 rarity=C
 type=Creature

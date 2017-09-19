@@ -1,5 +1,5 @@
 name=Ersatz Gnomes
-image=http://magiccards.info/scans/en/mr/266.jpg
+image=https://magiccards.info/scans/en/mr/266.jpg
 value=3.837
 rarity=U
 type=Artifact,Creature

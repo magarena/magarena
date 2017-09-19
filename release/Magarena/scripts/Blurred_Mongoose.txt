@@ -1,5 +1,5 @@
 name=Blurred Mongoose
-image=http://magiccards.info/scans/en/in/183.jpg
+image=https://magiccards.info/scans/en/in/183.jpg
 value=4.094
 rarity=R
 type=Creature

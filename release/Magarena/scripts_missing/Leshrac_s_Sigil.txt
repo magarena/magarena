@@ -1,5 +1,5 @@
 name=Leshrac's Sigil
-image=http://magiccards.info/scans/en/ia/32.jpg
+image=https://magiccards.info/scans/en/ia/32.jpg
 value=3.632
 rarity=U
 type=Enchantment

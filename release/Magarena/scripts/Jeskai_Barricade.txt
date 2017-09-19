@@ -1,5 +1,5 @@
 name=Jeskai Barricade
-image=http://magiccards.info/scans/en/frf/15.jpg
+image=https://magiccards.info/scans/en/frf/15.jpg
 value=2.500
 rarity=U
 type=Creature

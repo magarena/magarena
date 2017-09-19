@@ -1,5 +1,5 @@
 name=Extinguish
-image=http://magiccards.info/scans/en/st/37.jpg
+image=https://magiccards.info/scans/en/st/37.jpg
 value=1.307
 rarity=C
 type=Instant

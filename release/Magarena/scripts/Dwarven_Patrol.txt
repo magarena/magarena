@@ -1,5 +1,5 @@
 name=Dwarven Patrol
-image=http://magiccards.info/scans/en/ap/61.jpg
+image=https://magiccards.info/scans/en/ap/61.jpg
 value=2.735
 rarity=U
 type=Creature

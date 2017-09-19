@@ -1,5 +1,5 @@
 name=Torpor Orb
-image=http://magiccards.info/scans/en/nph/162.jpg
+image=https://magiccards.info/scans/en/nph/162.jpg
 value=4.323
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Predator's Rapport
-image=http://magiccards.info/scans/en/gtc/129.jpg
+image=https://magiccards.info/scans/en/gtc/129.jpg
 value=2.895
 rarity=C
 type=Instant

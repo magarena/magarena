@@ -1,6 +1,6 @@
 name=2/2 blue Djinn Monk creature token with flying
 token=Djinn Monk
-image=http://magiccards.info/extras/token/dragons-of-tarkir/djinn-monk.jpg
+image=https://magiccards.info/extras/token/dragons-of-tarkir/djinn-monk.jpg
 value=2
 pt=2/2
 color=u

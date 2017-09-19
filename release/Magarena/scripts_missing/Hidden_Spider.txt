@@ -1,5 +1,5 @@
 name=Hidden Spider
-image=http://magiccards.info/scans/en/us/264.jpg
+image=https://magiccards.info/scans/en/us/264.jpg
 value=4.030
 rarity=C
 type=Enchantment

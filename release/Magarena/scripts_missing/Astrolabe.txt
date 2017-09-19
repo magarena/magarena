@@ -1,5 +1,5 @@
 name=Astrolabe
-image=http://magiccards.info/scans/en/ai/159.jpg
+image=https://magiccards.info/scans/en/ai/159.jpg
 value=2.778
 rarity=C
 type=Artifact

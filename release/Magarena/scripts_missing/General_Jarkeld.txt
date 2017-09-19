@@ -1,5 +1,5 @@
 name=General Jarkeld
-image=http://magiccards.info/scans/en/ia/251.jpg
+image=https://magiccards.info/scans/en/ia/251.jpg
 value=3.020
 rarity=R
 type=Legendary,Creature

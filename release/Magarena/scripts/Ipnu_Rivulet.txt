@@ -1,5 +1,5 @@
 name=Ipnu Rivulet
-image=http://magiccards.info/scans/en/hou/180.jpg
+image=https://magiccards.info/scans/en/hou/180.jpg
 value=2.500
 rarity=U
 type=Land

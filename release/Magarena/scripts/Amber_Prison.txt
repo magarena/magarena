@@ -1,5 +1,5 @@
 name=Amber Prison
-image=http://magiccards.info/scans/en/6e/272.jpg
+image=https://magiccards.info/scans/en/6e/272.jpg
 value=3.464
 rarity=R
 type=Artifact

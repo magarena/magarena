@@ -1,5 +1,5 @@
 name=Hagra Diabolist
-image=http://magiccards.info/scans/en/zen/95.jpg
+image=https://magiccards.info/scans/en/zen/95.jpg
 value=3.808
 rarity=U
 type=Creature

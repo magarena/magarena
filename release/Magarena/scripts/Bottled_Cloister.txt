@@ -1,5 +1,5 @@
 name=Bottled Cloister
-image=http://magiccards.info/scans/en/rav/256.jpg
+image=https://magiccards.info/scans/en/rav/256.jpg
 value=3.740
 rarity=R
 type=Artifact

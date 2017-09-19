@@ -1,5 +1,5 @@
 name=Chancellor of the Spires
-image=http://magiccards.info/scans/en/nph/31.jpg
+image=https://magiccards.info/scans/en/nph/31.jpg
 value=3.644
 rarity=R
 type=Creature

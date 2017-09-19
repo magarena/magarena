@@ -1,5 +1,5 @@
 name=Lantern-Lit Graveyard
-image=http://magiccards.info/scans/en/chk/278.jpg
+image=https://magiccards.info/scans/en/chk/278.jpg
 value=2.235
 rarity=U
 type=Land

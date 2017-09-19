@@ -1,5 +1,5 @@
 name=Wingsteed Rider
-image=http://magiccards.info/scans/en/ths/36.jpg
+image=https://magiccards.info/scans/en/ths/36.jpg
 value=3.597
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kodama of the Center Tree
-image=http://magiccards.info/scans/en/bok/131.jpg
+image=https://magiccards.info/scans/en/bok/131.jpg
 value=3.073
 rarity=R
 type=Legendary,Creature

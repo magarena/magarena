@@ -1,5 +1,5 @@
 name=Wormfang Crab
-image=http://magiccards.info/scans/en/ju/56.jpg
+image=https://magiccards.info/scans/en/ju/56.jpg
 value=3.125
 rarity=U
 type=Creature

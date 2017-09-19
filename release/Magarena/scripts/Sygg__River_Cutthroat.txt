@@ -1,5 +1,5 @@
 name=Sygg, River Cutthroat
-image=http://magiccards.info/scans/en/shm/176.jpg
+image=https://magiccards.info/scans/en/shm/176.jpg
 value=4.020
 rarity=R
 type=Legendary,Creature

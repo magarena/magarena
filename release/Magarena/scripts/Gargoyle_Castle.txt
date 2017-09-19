@@ -1,5 +1,5 @@
 name=Gargoyle Castle
-image=http://magiccards.info/scans/en/c14/297.jpg
+image=https://magiccards.info/scans/en/c14/297.jpg
 value=3.732
 rarity=R
 type=Land

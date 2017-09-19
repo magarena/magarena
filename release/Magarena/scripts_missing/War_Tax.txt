@@ -1,5 +1,5 @@
 name=War Tax
-image=http://magiccards.info/scans/en/mm/113.jpg
+image=https://magiccards.info/scans/en/mm/113.jpg
 value=4.097
 rarity=U
 type=Enchantment

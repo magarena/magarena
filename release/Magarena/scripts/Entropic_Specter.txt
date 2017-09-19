@@ -1,5 +1,5 @@
 name=Entropic Specter
-image=http://magiccards.info/scans/en/ex/61.jpg
+image=https://magiccards.info/scans/en/ex/61.jpg
 value=1.706
 rarity=R
 type=Creature

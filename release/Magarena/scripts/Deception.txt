@@ -1,5 +1,5 @@
 name=Deception
-image=http://magiccards.info/scans/en/p3k/73.jpg
+image=https://magiccards.info/scans/en/p3k/73.jpg
 value=2.783
 rarity=C
 type=Sorcery

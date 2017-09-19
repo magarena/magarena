@@ -1,5 +1,5 @@
 name=Dragonloft Idol
-image=http://magiccards.info/scans/en/dtk/237.jpg
+image=https://magiccards.info/scans/en/dtk/237.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

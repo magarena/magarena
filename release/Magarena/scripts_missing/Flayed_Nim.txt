@@ -1,5 +1,5 @@
 name=Flayed Nim
-image=http://magiccards.info/scans/en/mi/65.jpg
+image=https://magiccards.info/scans/en/mi/65.jpg
 value=3.955
 rarity=U
 type=Creature

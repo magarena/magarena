@@ -1,5 +1,5 @@
 name=Niblis of the Mist
-image=http://magiccards.info/scans/en/dka/15.jpg
+image=https://magiccards.info/scans/en/dka/15.jpg
 value=2.130
 rarity=C
 type=Creature

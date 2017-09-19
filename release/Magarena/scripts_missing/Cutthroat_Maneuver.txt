@@ -1,5 +1,5 @@
 name=Cutthroat Maneuver
-image=http://magiccards.info/scans/en/ths/82.jpg
+image=https://magiccards.info/scans/en/ths/82.jpg
 value=2.274
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Callow Jushi
-image=http://magiccards.info/scans/en/bok/31a.jpg
+image=https://magiccards.info/scans/en/bok/31a.jpg
 value=3.577
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Triumph of the Hordes
-image=http://magiccards.info/scans/en/nph/123.jpg
+image=https://magiccards.info/scans/en/nph/123.jpg
 value=3.660
 rarity=U
 type=Sorcery

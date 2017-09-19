@@ -1,5 +1,5 @@
 name=Hunger of the Howlpack
-image=http://magiccards.info/scans/en/cns/168.jpg
+image=https://magiccards.info/scans/en/cns/168.jpg
 value=4.125
 rarity=C
 type=Instant

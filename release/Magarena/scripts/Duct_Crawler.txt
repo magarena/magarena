@@ -1,5 +1,5 @@
 name=Duct Crawler
-image=http://magiccards.info/scans/en/10e/198.jpg
+image=https://magiccards.info/scans/en/10e/198.jpg
 value=2.847
 rarity=C
 type=Creature

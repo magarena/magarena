@@ -1,5 +1,5 @@
 name=Pledge of Loyalty
-image=http://magiccards.info/scans/en/in/24.jpg
+image=https://magiccards.info/scans/en/in/24.jpg
 value=2.971
 rarity=U
 type=Enchantment

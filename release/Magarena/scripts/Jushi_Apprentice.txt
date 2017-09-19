@@ -1,5 +1,5 @@
 name=Jushi Apprentice
-image=http://magiccards.info/scans/en/chk/70a.jpg
+image=https://magiccards.info/scans/en/chk/70a.jpg
 value=3.809
 rarity=R
 type=Creature

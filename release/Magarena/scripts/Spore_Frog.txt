@@ -1,5 +1,5 @@
 name=Spore Frog
-image=http://magiccards.info/scans/en/pr/126.jpg
+image=https://magiccards.info/scans/en/pr/126.jpg
 value=4.066
 rarity=C
 type=Creature

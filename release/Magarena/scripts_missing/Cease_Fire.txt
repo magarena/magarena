@@ -1,5 +1,5 @@
 name=Cease-Fire
-image=http://magiccards.info/scans/en/od/14.jpg
+image=https://magiccards.info/scans/en/od/14.jpg
 value=2.776
 rarity=C
 type=Instant

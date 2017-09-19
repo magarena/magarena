@@ -1,5 +1,5 @@
 name=Hisoka, Minamo Sensei
-image=http://magiccards.info/scans/en/chk/66.jpg
+image=https://magiccards.info/scans/en/chk/66.jpg
 value=2.289
 rarity=R
 type=Legendary,Creature

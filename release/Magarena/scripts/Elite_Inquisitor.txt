@@ -1,5 +1,5 @@
 name=Elite Inquisitor
-image=http://magiccards.info/scans/en/isd/13.jpg
+image=https://magiccards.info/scans/en/isd/13.jpg
 value=3.905
 rarity=R
 type=Creature

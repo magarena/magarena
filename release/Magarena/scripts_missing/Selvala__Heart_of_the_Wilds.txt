@@ -1,5 +1,5 @@
 name=Selvala, Heart of the Wilds
-image=http://magiccards.info/scans/en/cn2/70.jpg
+image=https://magiccards.info/scans/en/cn2/70.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=M

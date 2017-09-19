@@ -1,5 +1,5 @@
 name=Vault Skirge
-image=http://magiccards.info/scans/en/nph/76.jpg
+image=https://magiccards.info/scans/en/nph/76.jpg
 value=3.825
 rarity=C
 type=Artifact,Creature

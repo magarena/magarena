@@ -1,5 +1,5 @@
 name=Spell Snip
-image=http://magiccards.info/scans/en/ala/57.jpg
+image=https://magiccards.info/scans/en/ala/57.jpg
 value=1.200
 rarity=C
 type=Instant

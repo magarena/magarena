@@ -1,5 +1,5 @@
 name=Frontline Rebel
-image=http://magiccards.info/scans/en/aer/82.jpg
+image=https://magiccards.info/scans/en/aer/82.jpg
 value=2.500
 rarity=C
 type=Creature

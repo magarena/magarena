@@ -1,5 +1,5 @@
 name=Ingenious Thief
-image=http://magiccards.info/scans/en/st/40.jpg
+image=https://magiccards.info/scans/en/st/40.jpg
 value=2.685
 rarity=C
 type=Creature

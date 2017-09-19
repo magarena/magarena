@@ -1,5 +1,5 @@
 name=Battle-Mad Ronin
-image=http://magiccards.info/scans/en/chk/156.jpg
+image=https://magiccards.info/scans/en/chk/156.jpg
 value=2.743
 rarity=C
 type=Creature

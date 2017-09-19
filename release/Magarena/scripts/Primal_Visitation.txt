@@ -1,5 +1,5 @@
 name=Primal Visitation
-image=http://magiccards.info/scans/en/gtc/187.jpg
+image=https://magiccards.info/scans/en/gtc/187.jpg
 value=0.907
 rarity=C
 type=Enchantment

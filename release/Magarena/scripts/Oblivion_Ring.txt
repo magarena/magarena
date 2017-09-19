@@ -1,5 +1,5 @@
 name=Oblivion Ring
-image=http://magiccards.info/scans/en/mm2/29.jpg
+image=https://magiccards.info/scans/en/mm2/29.jpg
 image_updated=2015-11-05
 value=4.400
 removal=2

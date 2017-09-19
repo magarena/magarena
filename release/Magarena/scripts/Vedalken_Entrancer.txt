@@ -1,5 +1,5 @@
 name=Vedalken Entrancer
-image=http://magiccards.info/scans/en/m13/76.jpg
+image=https://magiccards.info/scans/en/m13/76.jpg
 value=1.895
 rarity=C
 type=Creature

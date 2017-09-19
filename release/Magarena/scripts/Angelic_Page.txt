@@ -1,5 +1,5 @@
 name=Angelic Page
-image=http://magiccards.info/scans/en/8e/2.jpg
+image=https://magiccards.info/scans/en/8e/2.jpg
 image_updated=2016-11-20
 value=2.856
 rarity=C

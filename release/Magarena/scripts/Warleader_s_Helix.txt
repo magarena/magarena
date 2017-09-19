@@ -1,5 +1,5 @@
 name=Warleader's Helix
-image=http://magiccards.info/scans/en/dgm/116.jpg
+image=https://magiccards.info/scans/en/dgm/116.jpg
 value=3.785
 removal=4
 rarity=U

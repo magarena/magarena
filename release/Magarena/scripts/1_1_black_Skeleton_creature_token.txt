@@ -1,6 +1,6 @@
 name=1/1 black Skeleton creature token
 token=Skeleton
-image=http://magiccards.info/extras/token/shards-of-alara/skeleton.jpg
+image=https://magiccards.info/extras/token/shards-of-alara/skeleton.jpg
 value=1
 type=Creature
 subtype=Skeleton

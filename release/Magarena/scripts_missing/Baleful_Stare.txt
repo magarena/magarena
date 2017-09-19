@@ -1,5 +1,5 @@
 name=Baleful Stare
-image=http://magiccards.info/scans/en/9e/64.jpg
+image=https://magiccards.info/scans/en/9e/64.jpg
 value=3.297
 rarity=U
 type=Sorcery

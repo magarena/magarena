@@ -1,5 +1,5 @@
 name=Krark's Thumb
-image=http://magiccards.info/scans/en/mi/190.jpg
+image=https://magiccards.info/scans/en/mi/190.jpg
 value=4.219
 rarity=R
 type=Legendary,Artifact

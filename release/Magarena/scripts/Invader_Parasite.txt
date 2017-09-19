@@ -1,5 +1,5 @@
 name=Invader Parasite
-image=http://magiccards.info/scans/en/nph/87.jpg
+image=https://magiccards.info/scans/en/nph/87.jpg
 value=3.331
 rarity=R
 type=Creature

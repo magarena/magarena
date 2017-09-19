@@ -1,5 +1,5 @@
 name=Suffocation
-image=http://magiccards.info/scans/en/ai/57.jpg
+image=https://magiccards.info/scans/en/ai/57.jpg
 value=2.821
 rarity=U
 type=Instant

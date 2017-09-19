@@ -1,5 +1,5 @@
 name=Night Dealings
-image=http://magiccards.info/scans/en/chk/132.jpg
+image=https://magiccards.info/scans/en/chk/132.jpg
 value=3.083
 rarity=R
 type=Enchantment

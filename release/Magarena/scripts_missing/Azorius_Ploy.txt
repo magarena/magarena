@@ -1,5 +1,5 @@
 name=Azorius Ploy
-image=http://magiccards.info/scans/en/di/106.jpg
+image=https://magiccards.info/scans/en/di/106.jpg
 value=1.833
 rarity=U
 type=Instant

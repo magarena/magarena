@@ -1,5 +1,5 @@
 name=Harvestguard Alseids
-image=http://magiccards.info/scans/en/jou/13.jpg
+image=https://magiccards.info/scans/en/jou/13.jpg
 value=3.087
 rarity=C
 type=Enchantment,Creature

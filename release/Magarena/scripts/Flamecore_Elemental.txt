@@ -1,5 +1,5 @@
 name=Flamecore Elemental
-image=http://magiccards.info/scans/en/ts/154.jpg
+image=https://magiccards.info/scans/en/ts/154.jpg
 value=1.333
 rarity=C
 type=Creature

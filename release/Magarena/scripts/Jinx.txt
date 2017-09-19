@@ -1,5 +1,5 @@
 name=Jinx
-image=http://magiccards.info/scans/en/hl/36.jpg
+image=https://magiccards.info/scans/en/hl/36.jpg
 value=2.588
 rarity=C
 type=Instant

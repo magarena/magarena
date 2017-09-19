@@ -1,5 +1,5 @@
 name=Sigiled Skink
-image=http://magiccards.info/scans/en/jou/111.jpg
+image=https://magiccards.info/scans/en/jou/111.jpg
 value=3.222
 rarity=C
 type=Creature

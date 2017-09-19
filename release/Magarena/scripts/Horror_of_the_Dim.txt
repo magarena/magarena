@@ -1,5 +1,5 @@
 name=Horror of the Dim
-image=http://magiccards.info/scans/en/gtc/68.jpg
+image=https://magiccards.info/scans/en/gtc/68.jpg
 value=2.260
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Serpentine Kavu
-image=http://magiccards.info/scans/en/in/211.jpg
+image=https://magiccards.info/scans/en/in/211.jpg
 value=2.435
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Solar Tide
-image=http://magiccards.info/scans/en/mi/24.jpg
+image=https://magiccards.info/scans/en/mi/24.jpg
 value=3.440
 rarity=R
 type=Sorcery

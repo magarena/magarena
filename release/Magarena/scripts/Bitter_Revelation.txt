@@ -1,5 +1,5 @@
 name=Bitter Revelation
-image=http://magiccards.info/scans/en/ktk/65.jpg
+image=https://magiccards.info/scans/en/ktk/65.jpg
 value=2.700
 rarity=C
 type=Sorcery

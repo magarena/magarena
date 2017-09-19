@@ -1,5 +1,5 @@
 name=Sanctimony
-image=http://magiccards.info/scans/en/8e/42.jpg
+image=https://magiccards.info/scans/en/8e/42.jpg
 value=3.533
 rarity=U
 type=Enchantment

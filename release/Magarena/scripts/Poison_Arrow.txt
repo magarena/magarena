@@ -1,5 +1,5 @@
 name=Poison Arrow
-image=http://magiccards.info/scans/en/p3k/80.jpg
+image=https://magiccards.info/scans/en/p3k/80.jpg
 value=1.794
 rarity=U
 type=Sorcery

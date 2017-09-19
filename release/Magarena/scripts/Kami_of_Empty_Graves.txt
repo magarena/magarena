@@ -1,5 +1,5 @@
 name=Kami of Empty Graves
-image=http://magiccards.info/scans/en/sok/75.jpg
+image=https://magiccards.info/scans/en/sok/75.jpg
 value=1.557
 rarity=C
 type=Creature

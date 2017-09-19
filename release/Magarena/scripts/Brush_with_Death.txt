@@ -1,5 +1,5 @@
 name=Brush with Death
-image=http://magiccards.info/scans/en/sh/2.jpg
+image=https://magiccards.info/scans/en/sh/2.jpg
 value=2.788
 rarity=C
 type=Sorcery

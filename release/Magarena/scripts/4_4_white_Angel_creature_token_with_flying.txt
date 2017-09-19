@@ -1,6 +1,6 @@
 name=4/4 white Angel creature token with flying
 token=Angel
-image=http://magiccards.info/extras/token/magic-origins/angel.jpg
+image=https://magiccards.info/extras/token/magic-origins/angel.jpg
 image_updated=2015-11-12
 value=4
 type=Creature

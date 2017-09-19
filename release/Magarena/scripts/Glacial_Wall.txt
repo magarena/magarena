@@ -1,5 +1,5 @@
 name=Glacial Wall
-image=http://magiccards.info/scans/en/ema/53.jpg
+image=https://magiccards.info/scans/en/ema/53.jpg
 value=3.011
 rarity=C
 type=Creature

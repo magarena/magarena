@@ -1,5 +1,5 @@
 name=Conch Horn
-image=http://magiccards.info/scans/en/fe/168.jpg
+image=https://magiccards.info/scans/en/fe/168.jpg
 value=2.922
 rarity=R
 type=Artifact

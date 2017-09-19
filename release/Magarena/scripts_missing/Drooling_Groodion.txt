@@ -1,5 +1,5 @@
 name=Drooling Groodion
-image=http://magiccards.info/scans/en/mm2/173.jpg
+image=https://magiccards.info/scans/en/mm2/173.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Blood Baron of Vizkopa
-image=http://magiccards.info/scans/en/dgm/57.jpg
+image=https://magiccards.info/scans/en/dgm/57.jpg
 value=3.854
 rarity=M
 type=Creature

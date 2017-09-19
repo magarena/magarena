@@ -1,5 +1,5 @@
 name=Sparkcaster
-image=http://magiccards.info/scans/en/ps/126.jpg
+image=https://magiccards.info/scans/en/ps/126.jpg
 value=3.817
 rarity=U
 type=Creature

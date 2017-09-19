@@ -1,5 +1,5 @@
 name=Night of Souls' Betrayal
-image=http://magiccards.info/scans/en/chk/133.jpg
+image=https://magiccards.info/scans/en/chk/133.jpg
 value=3.911
 rarity=R
 type=Legendary,Enchantment

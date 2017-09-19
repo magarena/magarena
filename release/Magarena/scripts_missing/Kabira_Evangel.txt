@@ -1,5 +1,5 @@
 name=Kabira Evangel
-image=http://magiccards.info/scans/en/zen/15.jpg
+image=https://magiccards.info/scans/en/zen/15.jpg
 value=3.861
 rarity=R
 type=Creature

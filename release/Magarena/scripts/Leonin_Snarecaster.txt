@@ -1,5 +1,5 @@
 name=Leonin Snarecaster
-image=http://magiccards.info/scans/en/ths/23.jpg
+image=https://magiccards.info/scans/en/ths/23.jpg
 image_updated=2016-12-21
 value=2.000
 rarity=C

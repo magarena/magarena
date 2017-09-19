@@ -1,5 +1,5 @@
 name=Tezzeret, Master of Metal
-image=http://magiccards.info/scans/en/aer/190.jpg
+image=https://magiccards.info/scans/en/aer/190.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

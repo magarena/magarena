@@ -1,5 +1,5 @@
 name=Wurm's Tooth
-image=http://magiccards.info/scans/en/m12/223.jpg
+image=https://magiccards.info/scans/en/m12/223.jpg
 value=1.882
 rarity=U
 type=Artifact

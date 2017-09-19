@@ -1,5 +1,5 @@
 name=Volrath's Gardens
-image=http://magiccards.info/scans/en/sh/74.jpg
+image=https://magiccards.info/scans/en/sh/74.jpg
 value=2.282
 rarity=R
 type=Enchantment

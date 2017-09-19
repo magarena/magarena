@@ -1,5 +1,5 @@
 name=Boreal Druid
-image=http://magiccards.info/scans/en/cs/105.jpg
+image=https://magiccards.info/scans/en/cs/105.jpg
 value=3.274
 rarity=C
 type=Snow,Creature

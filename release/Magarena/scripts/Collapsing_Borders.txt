@@ -1,5 +1,5 @@
 name=Collapsing Borders
-image=http://magiccards.info/scans/en/in/141.jpg
+image=https://magiccards.info/scans/en/in/141.jpg
 value=3.250
 rarity=R
 type=Enchantment

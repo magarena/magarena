@@ -1,5 +1,5 @@
 name=Frogmite
-image=http://magiccards.info/scans/en/mm2/215.jpg
+image=https://magiccards.info/scans/en/mm2/215.jpg
 value=4.200
 rarity=C
 type=Artifact,Creature

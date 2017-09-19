@@ -1,5 +1,5 @@
 name=Voice of Grace
-image=http://magiccards.info/scans/en/us/54.jpg
+image=https://magiccards.info/scans/en/us/54.jpg
 value=3.257
 rarity=U
 type=Creature

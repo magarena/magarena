@@ -1,5 +1,5 @@
 name=Dewdrop Spy
-image=http://magiccards.info/scans/en/mt/30.jpg
+image=https://magiccards.info/scans/en/mt/30.jpg
 value=3.102
 rarity=C
 type=Creature

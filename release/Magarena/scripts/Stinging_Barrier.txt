@@ -1,5 +1,5 @@
 name=Stinging Barrier
-image=http://magiccards.info/scans/en/mm/107.jpg
+image=https://magiccards.info/scans/en/mm/107.jpg
 value=3.333
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vindicate
-image=http://magiccards.info/scans/en/ema/210.jpg
+image=https://magiccards.info/scans/en/ema/210.jpg
 value=4.582
 removal=5
 rarity=R

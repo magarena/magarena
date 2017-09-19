@@ -1,5 +1,5 @@
 name=Dream Thrush
-image=http://magiccards.info/scans/en/in/53.jpg
+image=https://magiccards.info/scans/en/in/53.jpg
 value=3.895
 rarity=C
 type=Creature

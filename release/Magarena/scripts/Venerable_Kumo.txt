@@ -1,5 +1,5 @@
 name=Venerable Kumo
-image=http://magiccards.info/scans/en/chk/248.jpg
+image=https://magiccards.info/scans/en/chk/248.jpg
 value=2.076
 rarity=C
 type=Creature

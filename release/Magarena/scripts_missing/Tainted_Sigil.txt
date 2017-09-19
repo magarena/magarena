@@ -1,5 +1,5 @@
 name=Tainted Sigil
-image=http://magiccards.info/scans/en/arb/83.jpg
+image=https://magiccards.info/scans/en/arb/83.jpg
 value=3.236
 rarity=U
 type=Artifact

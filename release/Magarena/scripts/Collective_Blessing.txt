@@ -1,5 +1,5 @@
 name=Collective Blessing
-image=http://magiccards.info/scans/en/rtr/150.jpg
+image=https://magiccards.info/scans/en/rtr/150.jpg
 value=3.643
 rarity=R
 type=Enchantment

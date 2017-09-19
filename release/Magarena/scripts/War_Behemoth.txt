@@ -1,5 +1,5 @@
 name=War Behemoth
-image=http://magiccards.info/scans/en/ktk/29.jpg
+image=https://magiccards.info/scans/en/ktk/29.jpg
 value=2.500
 rarity=C
 type=Creature

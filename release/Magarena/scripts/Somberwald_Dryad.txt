@@ -1,5 +1,5 @@
 name=Somberwald Dryad
-image=http://magiccards.info/scans/en/dka/126.jpg
+image=https://magiccards.info/scans/en/dka/126.jpg
 value=3.684
 rarity=C
 type=Creature

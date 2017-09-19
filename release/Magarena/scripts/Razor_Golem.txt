@@ -1,5 +1,5 @@
 name=Razor Golem
-image=http://magiccards.info/scans/en/ds/137.jpg
+image=https://magiccards.info/scans/en/ds/137.jpg
 value=4.152
 rarity=C
 type=Artifact,Creature

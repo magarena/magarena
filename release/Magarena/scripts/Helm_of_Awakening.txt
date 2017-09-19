@@ -1,5 +1,5 @@
 name=Helm of Awakening
-image=http://magiccards.info/scans/en/vi/145.jpg
+image=https://magiccards.info/scans/en/vi/145.jpg
 value=4.411
 rarity=U
 type=Artifact

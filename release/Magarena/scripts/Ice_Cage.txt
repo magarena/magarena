@@ -1,5 +1,5 @@
 name=Ice Cage
-image=http://magiccards.info/scans/en/m12/57.jpg
+image=https://magiccards.info/scans/en/m12/57.jpg
 value=2.570
 rarity=C
 type=Enchantment

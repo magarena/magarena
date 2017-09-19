@@ -1,5 +1,5 @@
 name=Foxfire
-image=http://magiccards.info/scans/en/5e/157.jpg
+image=https://magiccards.info/scans/en/5e/157.jpg
 value=2.833
 rarity=C
 type=Instant

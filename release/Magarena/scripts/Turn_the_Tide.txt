@@ -1,5 +1,5 @@
 name=Turn the Tide
-image=http://magiccards.info/scans/en/cns/110.jpg
+image=https://magiccards.info/scans/en/cns/110.jpg
 value=2.667
 rarity=C
 type=Instant

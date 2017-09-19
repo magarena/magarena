@@ -1,5 +1,5 @@
 name=Torsten Von Ursus
-image=http://magiccards.info/scans/en/lg/306.jpg
+image=https://magiccards.info/scans/en/lg/306.jpg
 value=2.091
 rarity=U
 type=Legendary,Creature

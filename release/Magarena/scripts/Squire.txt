@@ -1,5 +1,5 @@
 name=Squire
-image=http://magiccards.info/scans/en/tsts/15.jpg
+image=https://magiccards.info/scans/en/tsts/15.jpg
 value=1.608
 rarity=C
 type=Creature

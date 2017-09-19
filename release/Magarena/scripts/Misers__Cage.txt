@@ -1,5 +1,5 @@
 name=Misers' Cage
-image=http://magiccards.info/scans/en/mr/276.jpg
+image=https://magiccards.info/scans/en/mr/276.jpg
 value=2.667
 rarity=R
 type=Artifact

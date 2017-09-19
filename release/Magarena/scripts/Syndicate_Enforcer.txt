@@ -1,5 +1,5 @@
 name=Syndicate Enforcer
-image=http://magiccards.info/scans/en/gtc/80.jpg
+image=https://magiccards.info/scans/en/gtc/80.jpg
 value=2.443
 rarity=C
 type=Creature

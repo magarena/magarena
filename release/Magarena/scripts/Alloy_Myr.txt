@@ -1,5 +1,5 @@
 name=Alloy Myr
-image=http://magiccards.info/scans/en/mm2/201.jpg
+image=https://magiccards.info/scans/en/mm2/201.jpg
 image_updated=2015-11-05
 value=3.651
 rarity=C

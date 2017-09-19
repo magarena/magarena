@@ -1,5 +1,5 @@
 name=Stag Beetle
-image=http://magiccards.info/scans/en/on/285.jpg
+image=https://magiccards.info/scans/en/on/285.jpg
 value=3.212
 rarity=R
 type=Creature

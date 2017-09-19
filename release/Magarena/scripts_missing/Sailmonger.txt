@@ -1,5 +1,5 @@
 name=Sailmonger
-image=http://magiccards.info/scans/en/mm/95.jpg
+image=https://magiccards.info/scans/en/mm/95.jpg
 value=3.308
 rarity=U
 type=Creature

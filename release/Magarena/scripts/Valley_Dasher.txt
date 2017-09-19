@@ -1,5 +1,5 @@
 name=Valley Dasher
-image=http://magiccards.info/scans/en/ktk/125.jpg
+image=https://magiccards.info/scans/en/ktk/125.jpg
 value=2.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Trial of Knowledge
-image=http://magiccards.info/scans/en/akh/73.jpg
+image=https://magiccards.info/scans/en/akh/73.jpg
 value=2.500
 rarity=U
 type=Enchantment

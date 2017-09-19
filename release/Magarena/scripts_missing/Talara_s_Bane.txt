@@ -1,5 +1,5 @@
 name=Talara's Bane
-image=http://magiccards.info/scans/en/eve/47.jpg
+image=https://magiccards.info/scans/en/eve/47.jpg
 value=2.542
 rarity=C
 type=Sorcery

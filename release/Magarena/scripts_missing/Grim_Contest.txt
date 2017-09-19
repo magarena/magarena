@@ -1,5 +1,5 @@
 name=Grim Contest
-image=http://magiccards.info/scans/en/frf/153.jpg
+image=https://magiccards.info/scans/en/frf/153.jpg
 value=2.500
 rarity=C
 type=Instant

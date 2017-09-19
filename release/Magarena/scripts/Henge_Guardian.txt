@@ -1,5 +1,5 @@
 name=Henge Guardian
-image=http://magiccards.info/scans/en/mm/297.jpg
+image=https://magiccards.info/scans/en/mm/297.jpg
 value=2.828
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Magus of the Jar
-image=http://magiccards.info/scans/en/ts/67.jpg
+image=https://magiccards.info/scans/en/ts/67.jpg
 value=3.900
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Shuriken
-image=http://magiccards.info/scans/en/bok/160.jpg
+image=https://magiccards.info/scans/en/bok/160.jpg
 value=3.324
 rarity=U
 type=Artifact

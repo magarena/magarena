@@ -1,5 +1,5 @@
 name=Ivory Giant
-image=http://magiccards.info/scans/en/mma/19.jpg
+image=https://magiccards.info/scans/en/mma/19.jpg
 value=3.417
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Terashi's Verdict
-image=http://magiccards.info/scans/en/bok/27.jpg
+image=https://magiccards.info/scans/en/bok/27.jpg
 value=2.456
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Voyage's End
-image=http://magiccards.info/scans/en/ths/73.jpg
+image=https://magiccards.info/scans/en/ths/73.jpg
 value=3.489
 rarity=C
 type=Instant

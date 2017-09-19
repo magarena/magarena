@@ -1,5 +1,5 @@
 name=Spearpoint Oread
-image=http://magiccards.info/scans/en/ths/141.jpg
+image=https://magiccards.info/scans/en/ths/141.jpg
 value=3.161
 rarity=C
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Cabal Torturer
-image=http://magiccards.info/scans/en/tr/53.jpg
+image=https://magiccards.info/scans/en/tr/53.jpg
 value=2.015
 rarity=C
 type=Creature

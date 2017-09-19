@@ -1,5 +1,5 @@
 name=Basilisk Collar
-image=http://magiccards.info/scans/en/mm3/216.jpg
+image=https://magiccards.info/scans/en/mm3/216.jpg
 image_updated=2017-08-08
 value=4.396
 rarity=R

@@ -1,5 +1,5 @@
 name=Trip Wire
-image=http://magiccards.info/scans/en/p3k/156.jpg
+image=https://magiccards.info/scans/en/p3k/156.jpg
 value=1.500
 rarity=U
 type=Sorcery

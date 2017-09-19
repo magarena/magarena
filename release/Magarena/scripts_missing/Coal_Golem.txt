@@ -1,5 +1,5 @@
 name=Coal Golem
-image=http://magiccards.info/scans/en/dk/96.jpg
+image=https://magiccards.info/scans/en/dk/96.jpg
 value=2.172
 rarity=U
 type=Artifact,Creature

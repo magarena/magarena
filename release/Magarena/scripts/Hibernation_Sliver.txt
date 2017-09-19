@@ -1,5 +1,5 @@
 name=Hibernation Sliver
-image=http://magiccards.info/scans/en/sh/140.jpg
+image=https://magiccards.info/scans/en/sh/140.jpg
 value=4.145
 rarity=U
 type=Creature

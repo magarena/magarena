@@ -1,5 +1,5 @@
 name=Tithe
-image=http://magiccards.info/scans/en/vi/123.jpg
+image=https://magiccards.info/scans/en/vi/123.jpg
 value=4.476
 rarity=R
 type=Instant

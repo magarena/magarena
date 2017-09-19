@@ -1,5 +1,5 @@
 name=Putrid Raptor
-image=http://magiccards.info/scans/en/sc/71.jpg
+image=https://magiccards.info/scans/en/sc/71.jpg
 value=3.577
 rarity=U
 type=Creature

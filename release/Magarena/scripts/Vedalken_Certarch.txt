@@ -1,5 +1,5 @@
 name=Vedalken Certarch
-image=http://magiccards.info/scans/en/som/52.jpg
+image=https://magiccards.info/scans/en/som/52.jpg
 value=3.873
 rarity=C
 type=Creature

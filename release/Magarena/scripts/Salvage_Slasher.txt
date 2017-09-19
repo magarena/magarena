@@ -1,5 +1,5 @@
 name=Salvage Slasher
-image=http://magiccards.info/scans/en/cfx/52.jpg
+image=https://magiccards.info/scans/en/cfx/52.jpg
 value=2.950
 rarity=C
 type=Artifact,Creature

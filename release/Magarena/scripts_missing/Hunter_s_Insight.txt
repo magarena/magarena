@@ -1,5 +1,5 @@
 name=Hunter's Insight
-image=http://magiccards.info/scans/en/m12/180.jpg
+image=https://magiccards.info/scans/en/m12/180.jpg
 value=3.862
 rarity=U
 type=Instant

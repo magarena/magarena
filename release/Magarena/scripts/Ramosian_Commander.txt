@@ -1,5 +1,5 @@
 name=Ramosian Commander
-image=http://magiccards.info/scans/en/mm/36.jpg
+image=https://magiccards.info/scans/en/mm/36.jpg
 value=3.159
 rarity=U
 type=Creature

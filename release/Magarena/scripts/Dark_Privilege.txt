@@ -1,5 +1,5 @@
 name=Dark Privilege
-image=http://magiccards.info/scans/en/vi/6.jpg
+image=https://magiccards.info/scans/en/vi/6.jpg
 value=2.581
 rarity=C
 type=Enchantment

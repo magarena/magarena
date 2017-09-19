@@ -1,5 +1,5 @@
 name=Hum of the Radix
-image=http://magiccards.info/scans/en/mi/122.jpg
+image=https://magiccards.info/scans/en/mi/122.jpg
 value=2.967
 rarity=R
 type=Enchantment

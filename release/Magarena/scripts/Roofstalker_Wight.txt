@@ -1,5 +1,5 @@
 name=Roofstalker Wight
-image=http://magiccards.info/scans/en/rav/102.jpg
+image=https://magiccards.info/scans/en/rav/102.jpg
 value=2.273
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spire Monitor
-image=http://magiccards.info/scans/en/mm3/52.jpg
+image=https://magiccards.info/scans/en/mm3/52.jpg
 image_updated=2017-08-08
 value=2.885
 rarity=C

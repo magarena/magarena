@@ -1,5 +1,5 @@
 name=Bloodrock Cyclops
-image=http://magiccards.info/scans/en/10e/192.jpg
+image=https://magiccards.info/scans/en/10e/192.jpg
 value=3.329
 rarity=C
 type=Creature

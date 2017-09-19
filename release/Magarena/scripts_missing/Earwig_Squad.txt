@@ -1,5 +1,5 @@
 name=Earwig Squad
-image=http://magiccards.info/scans/en/mma/82.jpg
+image=https://magiccards.info/scans/en/mma/82.jpg
 value=4.238
 rarity=R
 type=Creature

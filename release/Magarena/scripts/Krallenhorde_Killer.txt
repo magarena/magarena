@@ -1,5 +1,5 @@
 name=Krallenhorde Killer
-image=http://magiccards.info/scans/en/dka/133b.jpg
+image=https://magiccards.info/scans/en/dka/133b.jpg
 value=3.410
 rarity=R
 type=Creature

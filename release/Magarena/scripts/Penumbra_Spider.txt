@@ -1,5 +1,5 @@
 name=Penumbra Spider
-image=http://magiccards.info/scans/en/mm3/131.jpg
+image=https://magiccards.info/scans/en/mm3/131.jpg
 image_updated=2017-08-08
 value=3.977
 rarity=C

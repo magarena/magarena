@@ -1,5 +1,5 @@
 name=Kalonian Behemoth
-image=http://magiccards.info/scans/en/m10/188.jpg
+image=https://magiccards.info/scans/en/m10/188.jpg
 value=4.142
 rarity=R
 type=Creature

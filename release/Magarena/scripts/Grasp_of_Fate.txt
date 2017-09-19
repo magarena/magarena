@@ -1,5 +1,5 @@
 name=Grasp of Fate
-image=http://magiccards.info/scans/en/c15/3.jpg
+image=https://magiccards.info/scans/en/c15/3.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=R

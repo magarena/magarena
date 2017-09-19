@@ -1,5 +1,5 @@
 name=Jovial Evil
-image=http://magiccards.info/scans/en/lg/23.jpg
+image=https://magiccards.info/scans/en/lg/23.jpg
 value=3.295
 rarity=R
 type=Sorcery

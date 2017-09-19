@@ -1,5 +1,5 @@
 name=Crypt of Agadeem
-image=http://magiccards.info/scans/en/c14/288.jpg
+image=https://magiccards.info/scans/en/c14/288.jpg
 value=2.500
 rarity=R
 type=Land

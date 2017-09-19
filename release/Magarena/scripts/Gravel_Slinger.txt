@@ -1,5 +1,5 @@
 name=Gravel Slinger
-image=http://magiccards.info/scans/en/on/33.jpg
+image=https://magiccards.info/scans/en/on/33.jpg
 value=1.720
 rarity=C
 type=Creature

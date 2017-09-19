@@ -1,5 +1,5 @@
 name=Savage Gorilla
-image=http://magiccards.info/scans/en/ap/85.jpg
+image=https://magiccards.info/scans/en/ap/85.jpg
 value=2.436
 rarity=C
 type=Creature

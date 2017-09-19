@@ -1,5 +1,5 @@
 name=Imi Statue
-image=http://magiccards.info/scans/en/chk/255.jpg
+image=https://magiccards.info/scans/en/chk/255.jpg
 value=3.286
 rarity=R
 type=Artifact

@@ -1,6 +1,6 @@
 name=colorless Equipment artifact token named Stoneforged Blade
 token=Stoneforged Blade
-image=http://magiccards.info/extras/token/commander-2014/stoneforged-blade.jpg
+image=https://magiccards.info/extras/token/commander-2014/stoneforged-blade.jpg
 value=4
 type=Artifact
 subtype=Equipment

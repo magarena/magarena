@@ -1,5 +1,5 @@
 name=Shield of the Avatar
-image=http://magiccards.info/scans/en/m15/230.jpg
+image=https://magiccards.info/scans/en/m15/230.jpg
 value=3.214
 rarity=R
 type=Artifact

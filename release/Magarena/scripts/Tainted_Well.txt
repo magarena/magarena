@@ -1,5 +1,5 @@
 name=Tainted Well
-image=http://magiccards.info/scans/en/in/126.jpg
+image=https://magiccards.info/scans/en/in/126.jpg
 value=3.111
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Deepwater Hypnotist
-image=http://magiccards.info/scans/en/bng/35.jpg
+image=https://magiccards.info/scans/en/bng/35.jpg
 value=3.500
 rarity=C
 type=Creature

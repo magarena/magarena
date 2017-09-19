@@ -1,5 +1,5 @@
 name=Cathedral of Serra
-image=http://magiccards.info/scans/en/lg/246.jpg
+image=https://magiccards.info/scans/en/lg/246.jpg
 value=1.506
 rarity=U
 type=Land

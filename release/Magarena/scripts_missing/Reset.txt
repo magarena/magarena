@@ -1,5 +1,5 @@
 name=Reset
-image=http://magiccards.info/scans/en/lg/73.jpg
+image=https://magiccards.info/scans/en/lg/73.jpg
 value=4.489
 rarity=U
 type=Instant

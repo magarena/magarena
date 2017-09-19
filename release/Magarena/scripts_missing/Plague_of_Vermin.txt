@@ -1,5 +1,5 @@
 name=Plague of Vermin
-image=http://magiccards.info/scans/en/shm/73.jpg
+image=https://magiccards.info/scans/en/shm/73.jpg
 value=2.671
 rarity=R
 type=Sorcery

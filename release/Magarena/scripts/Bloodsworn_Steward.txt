@@ -1,5 +1,5 @@
 name=Bloodsworn Steward
-image=http://magiccards.info/scans/en/c17/22.jpg
+image=https://magiccards.info/scans/en/c17/22.jpg
 value=2.500
 rarity=R
 type=Creature

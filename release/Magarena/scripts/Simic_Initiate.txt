@@ -1,5 +1,5 @@
 name=Simic Initiate
-image=http://magiccards.info/scans/en/mm2/162.jpg
+image=https://magiccards.info/scans/en/mm2/162.jpg
 value=3.239
 rarity=C
 type=Creature

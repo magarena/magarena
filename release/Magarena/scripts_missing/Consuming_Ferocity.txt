@@ -1,5 +1,5 @@
 name=Consuming Ferocity
-image=http://magiccards.info/scans/en/mr/166.jpg
+image=https://magiccards.info/scans/en/mr/166.jpg
 value=1.706
 rarity=U
 type=Enchantment

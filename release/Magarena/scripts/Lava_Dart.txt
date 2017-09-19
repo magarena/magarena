@@ -1,5 +1,5 @@
 name=Lava Dart
-image=http://magiccards.info/scans/en/ju/94.jpg
+image=https://magiccards.info/scans/en/ju/94.jpg
 value=3.295
 rarity=C
 type=Instant

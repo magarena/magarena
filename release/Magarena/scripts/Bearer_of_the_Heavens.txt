@@ -1,5 +1,5 @@
 name=Bearer of the Heavens
-image=http://magiccards.info/scans/en/jou/89.jpg
+image=https://magiccards.info/scans/en/jou/89.jpg
 value=3.636
 rarity=R
 type=Creature

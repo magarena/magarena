@@ -1,5 +1,5 @@
 name=Shattering Pulse
-image=http://magiccards.info/scans/en/ex/102.jpg
+image=https://magiccards.info/scans/en/ex/102.jpg
 value=4.066
 removal=1
 rarity=C

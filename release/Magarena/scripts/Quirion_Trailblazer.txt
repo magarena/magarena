@@ -1,5 +1,5 @@
 name=Quirion Trailblazer
-image=http://magiccards.info/scans/en/in/205.jpg
+image=https://magiccards.info/scans/en/in/205.jpg
 value=2.411
 rarity=C
 type=Creature

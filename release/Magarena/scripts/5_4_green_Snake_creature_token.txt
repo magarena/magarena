@@ -1,6 +1,6 @@
 name=5/4 green Snake creature token
 token=Snake
-image=http://magiccards.info/extras/token/hour-of-devastation/snake.jpg
+image=https://magiccards.info/extras/token/hour-of-devastation/snake.jpg
 value=5
 type=Creature
 subtype=Snake

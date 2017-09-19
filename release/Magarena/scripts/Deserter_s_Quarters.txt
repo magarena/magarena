@@ -1,5 +1,5 @@
 name=Deserter's Quarters
-image=http://magiccards.info/scans/en/jou/160.jpg
+image=https://magiccards.info/scans/en/jou/160.jpg
 value=1.417
 rarity=U
 type=Artifact

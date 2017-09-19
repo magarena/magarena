@@ -1,5 +1,5 @@
 name=Cruel Fate
-image=http://magiccards.info/scans/en/po/51.jpg
+image=https://magiccards.info/scans/en/po/51.jpg
 value=1.819
 rarity=R
 type=Sorcery

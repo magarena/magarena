@@ -1,5 +1,5 @@
 name=Errant Doomsayers
-image=http://magiccards.info/scans/en/ts/15.jpg
+image=https://magiccards.info/scans/en/ts/15.jpg
 value=2.023
 rarity=C
 type=Creature

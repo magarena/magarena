@@ -1,5 +1,5 @@
 name=Rushing-Tide Zubera
-image=http://magiccards.info/scans/en/sok/52.jpg
+image=https://magiccards.info/scans/en/sok/52.jpg
 value=3.034
 rarity=U
 type=Creature

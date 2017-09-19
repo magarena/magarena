@@ -1,5 +1,5 @@
 name=Dokai, Weaver of Life
-image=http://magiccards.info/scans/en/chk/202b.jpg
+image=https://magiccards.info/scans/en/chk/202b.jpg
 value=3.154
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Crosstown Courier
-image=http://magiccards.info/scans/en/rtr/34.jpg
+image=https://magiccards.info/scans/en/rtr/34.jpg
 value=2.850
 rarity=C
 type=Creature

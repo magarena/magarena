@@ -1,5 +1,5 @@
 name=Crusader of Odric
-image=http://magiccards.info/scans/en/m13/10.jpg
+image=https://magiccards.info/scans/en/m13/10.jpg
 value=3.924
 rarity=U
 type=Creature

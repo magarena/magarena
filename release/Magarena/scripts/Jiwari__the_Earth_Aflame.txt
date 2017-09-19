@@ -1,5 +1,5 @@
 name=Jiwari, the Earth Aflame
-image=http://magiccards.info/scans/en/sok/107.jpg
+image=https://magiccards.info/scans/en/sok/107.jpg
 value=3.355
 rarity=R
 type=Legendary,Creature

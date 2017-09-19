@@ -1,5 +1,5 @@
 name=Crypt Angel
-image=http://magiccards.info/scans/en/in/97.jpg
+image=https://magiccards.info/scans/en/in/97.jpg
 value=4.069
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=New Frontiers
-image=http://magiccards.info/scans/en/od/257.jpg
+image=https://magiccards.info/scans/en/od/257.jpg
 value=3.650
 rarity=R
 type=Sorcery

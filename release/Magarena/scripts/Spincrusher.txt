@@ -1,5 +1,5 @@
 name=Spincrusher
-image=http://magiccards.info/scans/en/ds/144.jpg
+image=https://magiccards.info/scans/en/ds/144.jpg
 value=3.457
 rarity=U
 type=Artifact,Creature

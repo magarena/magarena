@@ -1,5 +1,5 @@
 name=Tuktuk Scrapper
-image=http://magiccards.info/scans/en/wwk/94.jpg
+image=https://magiccards.info/scans/en/wwk/94.jpg
 value=3.549
 rarity=U
 type=Creature

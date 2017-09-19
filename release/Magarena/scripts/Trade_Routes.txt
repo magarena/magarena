@@ -1,5 +1,5 @@
 name=Trade Routes
-image=http://magiccards.info/scans/en/9e/108.jpg
+image=https://magiccards.info/scans/en/9e/108.jpg
 value=4.375
 rarity=R
 type=Enchantment

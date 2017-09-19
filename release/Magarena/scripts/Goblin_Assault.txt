@@ -1,5 +1,5 @@
 name=Goblin Assault
-image=http://magiccards.info/scans/en/mm3/95.jpg
+image=https://magiccards.info/scans/en/mm3/95.jpg
 image_updated=2017-08-08
 value=2.976
 rarity=U

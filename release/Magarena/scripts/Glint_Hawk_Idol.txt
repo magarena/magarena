@@ -1,5 +1,5 @@
 name=Glint Hawk Idol
-image=http://magiccards.info/scans/en/mm2/216.jpg
+image=https://magiccards.info/scans/en/mm2/216.jpg
 value=3.713
 rarity=C
 type=Artifact

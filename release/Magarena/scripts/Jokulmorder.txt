@@ -1,5 +1,5 @@
 name=Jokulmorder
-image=http://magiccards.info/scans/en/cs/37.jpg
+image=https://magiccards.info/scans/en/cs/37.jpg
 value=2.783
 rarity=R
 type=Creature

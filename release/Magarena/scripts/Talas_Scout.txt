@@ -1,5 +1,5 @@
 name=Talas Scout
-image=http://magiccards.info/scans/en/po2/52.jpg
+image=https://magiccards.info/scans/en/po2/52.jpg
 value=3.037
 rarity=C
 type=Creature

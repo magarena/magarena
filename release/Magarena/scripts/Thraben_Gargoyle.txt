@@ -1,5 +1,5 @@
 name=Thraben Gargoyle
-image=http://magiccards.info/scans/en/soi/266a.jpg
+image=https://magiccards.info/scans/en/soi/266a.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

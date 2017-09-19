@@ -1,5 +1,5 @@
 name=Kukemssa Serpent
-image=http://magiccards.info/scans/en/mr/72.jpg
+image=https://magiccards.info/scans/en/mr/72.jpg
 value=2.065
 rarity=C
 type=Creature

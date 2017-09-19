@@ -1,5 +1,5 @@
 name=Lava Tubes
-image=http://magiccards.info/scans/en/ia/339.jpg
+image=https://magiccards.info/scans/en/ia/339.jpg
 value=2.300
 rarity=R
 type=Land

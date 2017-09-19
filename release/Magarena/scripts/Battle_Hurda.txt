@@ -1,5 +1,5 @@
 name=Battle Hurda
-image=http://magiccards.info/scans/en/wwk/4.jpg
+image=https://magiccards.info/scans/en/wwk/4.jpg
 value=1.647
 rarity=C
 type=Creature

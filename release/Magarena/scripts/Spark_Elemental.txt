@@ -1,5 +1,5 @@
 name=Spark Elemental
-image=http://magiccards.info/scans/en/10e/237.jpg
+image=https://magiccards.info/scans/en/10e/237.jpg
 value=3.141
 rarity=U
 type=Creature

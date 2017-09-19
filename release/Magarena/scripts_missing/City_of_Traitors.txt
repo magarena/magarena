@@ -1,5 +1,5 @@
 name=City of Traitors
-image=http://magiccards.info/scans/en/ex/143.jpg
+image=https://magiccards.info/scans/en/ex/143.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Patriarch's Bidding
-image=http://magiccards.info/scans/en/on/161.jpg
+image=https://magiccards.info/scans/en/on/161.jpg
 value=4.298
 rarity=R
 type=Sorcery

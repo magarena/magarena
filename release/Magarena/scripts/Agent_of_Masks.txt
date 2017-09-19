@@ -1,5 +1,5 @@
 name=Agent of Masks
-image=http://magiccards.info/scans/en/mm3/149.jpg
+image=https://magiccards.info/scans/en/mm3/149.jpg
 image_updated=2017-08-08
 value=3.036
 rarity=U

@@ -1,5 +1,5 @@
 name=Probe
-image=http://magiccards.info/scans/en/in/66.jpg
+image=https://magiccards.info/scans/en/in/66.jpg
 value=3.872
 rarity=C
 type=Sorcery

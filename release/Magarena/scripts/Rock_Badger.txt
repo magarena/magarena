@@ -1,5 +1,5 @@
 name=Rock Badger
-image=http://magiccards.info/scans/en/10e/226.jpg
+image=https://magiccards.info/scans/en/10e/226.jpg
 value=1.818
 rarity=C
 type=Creature

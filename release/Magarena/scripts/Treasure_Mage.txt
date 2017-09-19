@@ -1,5 +1,5 @@
 name=Treasure Mage
-image=http://magiccards.info/scans/en/mbs/34.jpg
+image=https://magiccards.info/scans/en/mbs/34.jpg
 value=3.594
 rarity=U
 type=Creature

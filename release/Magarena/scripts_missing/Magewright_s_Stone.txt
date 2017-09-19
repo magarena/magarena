@@ -1,5 +1,5 @@
 name=Magewright's Stone
-image=http://magiccards.info/scans/en/di/162.jpg
+image=https://magiccards.info/scans/en/di/162.jpg
 value=3.333
 rarity=U
 type=Artifact

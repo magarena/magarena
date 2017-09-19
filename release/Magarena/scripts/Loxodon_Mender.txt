@@ -1,5 +1,5 @@
 name=Loxodon Mender
-image=http://magiccards.info/scans/en/mi/12.jpg
+image=https://magiccards.info/scans/en/mi/12.jpg
 value=1.191
 rarity=C
 type=Creature

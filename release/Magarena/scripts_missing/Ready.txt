@@ -1,5 +1,5 @@
 name=Ready
-image=http://magiccards.info/scans/en/dgm/132a.jpg
+image=https://magiccards.info/scans/en/dgm/132a.jpg
 value=3.758
 rarity=R
 type=Instant

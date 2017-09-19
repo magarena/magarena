@@ -1,5 +1,5 @@
 name=Keiga, the Tide Star
-image=http://magiccards.info/scans/en/mma/48.jpg
+image=https://magiccards.info/scans/en/mma/48.jpg
 value=4.408
 rarity=M
 type=Legendary,Creature

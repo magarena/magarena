@@ -1,5 +1,5 @@
 name=Oust
-image=http://magiccards.info/scans/en/roe/40.jpg
+image=https://magiccards.info/scans/en/roe/40.jpg
 value=3.944
 rarity=U
 type=Sorcery

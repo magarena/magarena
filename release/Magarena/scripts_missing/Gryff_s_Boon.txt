@@ -1,5 +1,5 @@
 name=Gryff's Boon
-image=http://magiccards.info/scans/en/soi/20.jpg
+image=https://magiccards.info/scans/en/soi/20.jpg
 value=2.500
 rarity=U
 type=Enchantment

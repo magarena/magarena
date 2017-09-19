@@ -1,6 +1,6 @@
 name=6/6 red Dragon creature token with flying
 token=Dragon
-image=http://magiccards.info/extras/token/return-to-ravnica/dragon.jpg
+image=https://magiccards.info/extras/token/return-to-ravnica/dragon.jpg
 value=5
 type=Creature
 subtype=Dragon

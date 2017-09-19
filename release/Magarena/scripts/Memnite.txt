@@ -1,5 +1,5 @@
 name=Memnite
-image=http://magiccards.info/scans/en/som/174.jpg
+image=https://magiccards.info/scans/en/som/174.jpg
 value=4.506
 rarity=U
 type=Artifact,Creature

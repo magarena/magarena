@@ -1,5 +1,5 @@
 name=Quilled Wolf
-image=http://magiccards.info/scans/en/soi/222.jpg
+image=https://magiccards.info/scans/en/soi/222.jpg
 value=2.500
 rarity=C
 type=Creature

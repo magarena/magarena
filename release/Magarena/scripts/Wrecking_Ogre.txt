@@ -1,5 +1,5 @@
 name=Wrecking Ogre
-image=http://magiccards.info/scans/en/gtc/112.jpg
+image=https://magiccards.info/scans/en/gtc/112.jpg
 value=3.479
 rarity=R
 type=Creature

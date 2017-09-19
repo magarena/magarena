@@ -1,5 +1,5 @@
 name=Riddle of Lightning
-image=http://magiccards.info/scans/en/jou/107.jpg
+image=https://magiccards.info/scans/en/jou/107.jpg
 value=3.528
 rarity=U
 type=Instant

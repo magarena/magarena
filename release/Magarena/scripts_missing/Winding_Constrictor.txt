@@ -1,5 +1,5 @@
 name=Winding Constrictor
-image=http://magiccards.info/scans/en/aer/140.jpg
+image=https://magiccards.info/scans/en/aer/140.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=2/4 black Spider creature token with reach
 token=Spider
-image=http://magiccards.info/extras/token/planechase-anthology/spider.jpg
+image=https://magiccards.info/extras/token/planechase-anthology/spider.jpg
 image_updated=2017-09-04
 value=3
 type=Creature

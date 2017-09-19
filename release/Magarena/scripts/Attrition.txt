@@ -1,5 +1,5 @@
 name=Attrition
-image=http://magiccards.info/scans/en/cmd/72.jpg
+image=https://magiccards.info/scans/en/cmd/72.jpg
 value=4.265
 rarity=R
 type=Enchantment

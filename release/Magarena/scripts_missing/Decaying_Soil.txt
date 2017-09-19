@@ -1,5 +1,5 @@
 name=Decaying Soil
-image=http://magiccards.info/scans/en/od/127.jpg
+image=https://magiccards.info/scans/en/od/127.jpg
 value=2.904
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Train of Thought
-image=http://magiccards.info/scans/en/gp/39.jpg
+image=https://magiccards.info/scans/en/gp/39.jpg
 value=2.893
 rarity=C
 type=Sorcery

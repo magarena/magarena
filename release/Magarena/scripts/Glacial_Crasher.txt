@@ -1,5 +1,5 @@
 name=Glacial Crasher
-image=http://magiccards.info/scans/en/m15/57.jpg
+image=https://magiccards.info/scans/en/m15/57.jpg
 value=2.429
 rarity=C
 type=Creature

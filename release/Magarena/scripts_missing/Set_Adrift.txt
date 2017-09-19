@@ -1,5 +1,5 @@
 name=Set Adrift
-image=http://magiccards.info/scans/en/ktk/54.jpg
+image=https://magiccards.info/scans/en/ktk/54.jpg
 value=2.167
 rarity=U
 type=Sorcery

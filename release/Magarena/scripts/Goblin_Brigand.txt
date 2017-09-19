@@ -1,5 +1,5 @@
 name=Goblin Brigand
-image=http://magiccards.info/scans/en/9e/190.jpg
+image=https://magiccards.info/scans/en/9e/190.jpg
 value=2.283
 rarity=C
 type=Creature

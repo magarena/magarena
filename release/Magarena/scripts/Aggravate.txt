@@ -1,5 +1,5 @@
 name=Aggravate
-image=http://magiccards.info/scans/en/avr/125.jpg
+image=https://magiccards.info/scans/en/avr/125.jpg
 value=2.250
 removal=2
 rarity=U

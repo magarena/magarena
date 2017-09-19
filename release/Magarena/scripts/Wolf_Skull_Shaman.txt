@@ -1,5 +1,5 @@
 name=Wolf-Skull Shaman
-image=http://magiccards.info/scans/en/mt/140.jpg
+image=https://magiccards.info/scans/en/mt/140.jpg
 value=3.667
 rarity=U
 type=Creature

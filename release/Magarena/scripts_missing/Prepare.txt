@@ -1,5 +1,5 @@
 name=Prepare
-image=http://magiccards.info/scans/en/akh/220a.jpg
+image=https://magiccards.info/scans/en/akh/220a.jpg
 value=2.500
 rarity=R
 type=Instant

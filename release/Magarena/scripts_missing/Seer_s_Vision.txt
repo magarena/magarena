@@ -1,5 +1,5 @@
 name=Seer's Vision
-image=http://magiccards.info/scans/en/in/270.jpg
+image=https://magiccards.info/scans/en/in/270.jpg
 value=3.161
 rarity=U
 type=Enchantment

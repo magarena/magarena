@@ -1,5 +1,5 @@
 name=Infiltrator il-Kor
-image=http://magiccards.info/scans/en/fut/37.jpg
+image=https://magiccards.info/scans/en/fut/37.jpg
 value=3.364
 rarity=C
 type=Creature

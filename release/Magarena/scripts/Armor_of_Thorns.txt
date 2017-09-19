@@ -1,5 +1,5 @@
 name=Armor of Thorns
-image=http://magiccards.info/scans/en/mr/104.jpg
+image=https://magiccards.info/scans/en/mr/104.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Zealot il-Vec
-image=http://magiccards.info/scans/en/ts/47.jpg
+image=https://magiccards.info/scans/en/ts/47.jpg
 value=2.684
 rarity=C
 type=Creature

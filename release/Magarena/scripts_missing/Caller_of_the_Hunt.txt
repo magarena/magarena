@@ -1,5 +1,5 @@
 name=Caller of the Hunt
-image=http://magiccards.info/scans/en/mm/233.jpg
+image=https://magiccards.info/scans/en/mm/233.jpg
 value=3.733
 rarity=R
 type=Creature

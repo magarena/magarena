@@ -1,5 +1,5 @@
 name=Skeletal Scrying
-image=http://magiccards.info/scans/en/c14/162.jpg
+image=https://magiccards.info/scans/en/c14/162.jpg
 value=2.500
 rarity=U
 type=Instant

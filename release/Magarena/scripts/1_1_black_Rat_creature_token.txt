@@ -1,6 +1,6 @@
 name=1/1 black Rat creature token
 token=Rat
-image=http://magiccards.info/extras/token/shadowmoor/rat.jpg
+image=https://magiccards.info/extras/token/shadowmoor/rat.jpg
 value=1
 type=Creature
 subtype=Rat

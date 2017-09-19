@@ -1,5 +1,5 @@
 name=Mundungu
-image=http://magiccards.info/scans/en/vi/132.jpg
+image=https://magiccards.info/scans/en/vi/132.jpg
 value=4.221
 rarity=U
 type=Creature

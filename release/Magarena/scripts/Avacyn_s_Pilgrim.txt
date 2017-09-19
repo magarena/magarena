@@ -1,5 +1,5 @@
 name=Avacyn's Pilgrim
-image=http://magiccards.info/scans/en/mm3/119.jpg
+image=https://magiccards.info/scans/en/mm3/119.jpg
 image_updated=2017-08-08
 value=3.857
 rarity=C

@@ -1,5 +1,5 @@
 name=Flux
-image=http://magiccards.info/scans/en/wl/39.jpg
+image=https://magiccards.info/scans/en/wl/39.jpg
 value=3.671
 rarity=C
 type=Sorcery

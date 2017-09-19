@@ -1,5 +1,5 @@
 name=Nimbus Wings
-image=http://magiccards.info/scans/en/zen/28.jpg
+image=https://magiccards.info/scans/en/zen/28.jpg
 value=2.951
 rarity=C
 type=Enchantment

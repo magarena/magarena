@@ -1,5 +1,5 @@
 name=Away
-image=http://magiccards.info/scans/en/dgm/127b.jpg
+image=https://magiccards.info/scans/en/dgm/127b.jpg
 value=4.197
 rarity=U
 type=Instant

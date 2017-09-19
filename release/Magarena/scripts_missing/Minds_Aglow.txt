@@ -1,5 +1,5 @@
 name=Minds Aglow
-image=http://magiccards.info/scans/en/c16/93.jpg
+image=https://magiccards.info/scans/en/c16/93.jpg
 image_updated=2017-08-17
 value=3.308
 rarity=R

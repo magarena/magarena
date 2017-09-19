@@ -1,5 +1,5 @@
 name=Phyrexian Etchings
-image=http://magiccards.info/scans/en/cs/67.jpg
+image=https://magiccards.info/scans/en/cs/67.jpg
 value=3.095
 rarity=R
 type=Enchantment

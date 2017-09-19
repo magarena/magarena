@@ -1,5 +1,5 @@
 name=Ashling, the Extinguisher
-image=http://magiccards.info/scans/en/eve/33.jpg
+image=https://magiccards.info/scans/en/eve/33.jpg
 value=4.033
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Homicidal Seclusion
-image=http://magiccards.info/scans/en/avr/108.jpg
+image=https://magiccards.info/scans/en/avr/108.jpg
 value=3.097
 rarity=U
 type=Enchantment

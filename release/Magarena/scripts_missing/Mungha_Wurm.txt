@@ -1,5 +1,5 @@
 name=Mungha Wurm
-image=http://magiccards.info/scans/en/pr/119.jpg
+image=https://magiccards.info/scans/en/pr/119.jpg
 value=2.639
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Mogg Bombers
-image=http://magiccards.info/scans/en/sh/91.jpg
+image=https://magiccards.info/scans/en/sh/91.jpg
 value=2.667
 rarity=C
 type=Creature

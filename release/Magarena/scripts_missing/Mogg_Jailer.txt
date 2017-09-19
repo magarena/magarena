@@ -1,5 +1,5 @@
 name=Mogg Jailer
-image=http://magiccards.info/scans/en/ps/68.jpg
+image=https://magiccards.info/scans/en/ps/68.jpg
 value=2.640
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cloud Pirates
-image=http://magiccards.info/scans/en/po/47.jpg
+image=https://magiccards.info/scans/en/po/47.jpg
 value=2.961
 rarity=C
 type=Creature

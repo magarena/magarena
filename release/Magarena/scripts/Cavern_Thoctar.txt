@@ -1,5 +1,5 @@
 name=Cavern Thoctar
-image=http://magiccards.info/scans/en/ala/125.jpg
+image=https://magiccards.info/scans/en/ala/125.jpg
 value=2.033
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Spelltithe Enforcer
-image=http://magiccards.info/scans/en/gp/18.jpg
+image=https://magiccards.info/scans/en/gp/18.jpg
 value=3.300
 rarity=R
 type=Creature

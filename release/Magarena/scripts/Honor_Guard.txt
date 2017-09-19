@@ -1,5 +1,5 @@
 name=Honor Guard
-image=http://magiccards.info/scans/en/10e/23.jpg
+image=https://magiccards.info/scans/en/10e/23.jpg
 value=2.768
 rarity=C
 type=Creature

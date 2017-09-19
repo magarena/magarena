@@ -1,5 +1,5 @@
 name=Withered Wretch
-image=http://magiccards.info/scans/en/le/86.jpg
+image=https://magiccards.info/scans/en/le/86.jpg
 image_updated=2017-01-11
 value=4.342
 rarity=U

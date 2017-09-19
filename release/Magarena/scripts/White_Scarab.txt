@@ -1,5 +1,5 @@
 name=White Scarab
-image=http://magiccards.info/scans/en/ia/280.jpg
+image=https://magiccards.info/scans/en/ia/280.jpg
 value=1.985
 rarity=U
 type=Enchantment

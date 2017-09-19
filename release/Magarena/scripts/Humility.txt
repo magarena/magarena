@@ -1,5 +1,5 @@
 name=Humility
-image=http://magiccards.info/scans/en/tp/236.jpg
+image=https://magiccards.info/scans/en/tp/236.jpg
 value=4.478
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Bolt of Keranos
-image=http://magiccards.info/scans/en/bng/89.jpg
+image=https://magiccards.info/scans/en/bng/89.jpg
 value=2.516
 rarity=C
 type=Sorcery

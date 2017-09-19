@@ -1,5 +1,5 @@
 name=Nature's Panoply
-image=http://magiccards.info/scans/en/jou/131.jpg
+image=https://magiccards.info/scans/en/jou/131.jpg
 value=2.040
 rarity=C
 type=Instant

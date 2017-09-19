@@ -1,5 +1,5 @@
 name=Hero's Demise
-image=http://magiccards.info/scans/en/bok/68.jpg
+image=https://magiccards.info/scans/en/bok/68.jpg
 value=2.587
 rarity=R
 type=Instant

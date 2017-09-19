@@ -1,5 +1,5 @@
 name=Spike Feeder
-image=http://magiccards.info/scans/en/cmd/172.jpg
+image=https://magiccards.info/scans/en/cmd/172.jpg
 value=3.323
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sulfur Elemental
-image=http://magiccards.info/scans/en/pc/108.jpg
+image=https://magiccards.info/scans/en/pc/108.jpg
 value=4.060
 rarity=U
 type=Creature

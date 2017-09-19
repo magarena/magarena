@@ -1,5 +1,5 @@
 name=Argivian Blacksmith
-image=http://magiccards.info/scans/en/aq/95.jpg
+image=https://magiccards.info/scans/en/aq/95.jpg
 value=2.738
 rarity=C
 type=Creature

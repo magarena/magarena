@@ -1,5 +1,5 @@
 name=Copper-Leaf Angel
-image=http://magiccards.info/scans/en/pr/137.jpg
+image=https://magiccards.info/scans/en/pr/137.jpg
 value=2.310
 rarity=R
 type=Artifact,Creature

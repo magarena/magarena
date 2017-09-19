@@ -1,5 +1,5 @@
 name=Disintegrate
-image=http://magiccards.info/scans/en/tsts/58.jpg
+image=https://magiccards.info/scans/en/tsts/58.jpg
 value=4.357
 rarity=C
 type=Sorcery

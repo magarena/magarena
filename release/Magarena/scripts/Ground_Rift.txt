@@ -1,5 +1,5 @@
 name=Ground Rift
-image=http://magiccards.info/scans/en/ts/162.jpg
+image=https://magiccards.info/scans/en/ts/162.jpg
 value=2.391
 rarity=C
 type=Sorcery

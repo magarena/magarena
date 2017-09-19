@@ -1,5 +1,5 @@
 name=Skullmulcher
-image=http://magiccards.info/scans/en/ala/148.jpg
+image=https://magiccards.info/scans/en/ala/148.jpg
 value=3.153
 rarity=R
 type=Creature

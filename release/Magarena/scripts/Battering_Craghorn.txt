@@ -1,5 +1,5 @@
 name=Battering Craghorn
-image=http://magiccards.info/scans/en/on/188.jpg
+image=https://magiccards.info/scans/en/on/188.jpg
 image_updated=2016-12-13
 value=2.661
 rarity=C

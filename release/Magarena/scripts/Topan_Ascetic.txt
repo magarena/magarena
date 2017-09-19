@@ -1,5 +1,5 @@
 name=Topan Ascetic
-image=http://magiccards.info/scans/en/ala/151.jpg
+image=https://magiccards.info/scans/en/ala/151.jpg
 value=2.684
 rarity=U
 type=Creature

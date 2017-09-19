@@ -1,5 +1,5 @@
 name=Anurid Swarmsnapper
-image=http://magiccards.info/scans/en/ju/105.jpg
+image=https://magiccards.info/scans/en/ju/105.jpg
 value=3.273
 rarity=U
 type=Creature

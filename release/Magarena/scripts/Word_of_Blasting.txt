@@ -1,5 +1,5 @@
 name=Word of Blasting
-image=http://magiccards.info/scans/en/mm/228.jpg
+image=https://magiccards.info/scans/en/mm/228.jpg
 value=2.231
 rarity=U
 type=Instant

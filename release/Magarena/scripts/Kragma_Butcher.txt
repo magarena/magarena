@@ -1,5 +1,5 @@
 name=Kragma Butcher
-image=http://magiccards.info/scans/en/bng/100.jpg
+image=https://magiccards.info/scans/en/bng/100.jpg
 value=3.700
 rarity=C
 type=Creature

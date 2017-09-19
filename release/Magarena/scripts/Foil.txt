@@ -1,5 +1,5 @@
 name=Foil
-image=http://magiccards.info/scans/en/pr/34.jpg
+image=https://magiccards.info/scans/en/pr/34.jpg
 image_updated=2016-12-02
 value=3.969
 rarity=U

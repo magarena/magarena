@@ -1,5 +1,5 @@
 name=Crowned Ceratok
-image=http://magiccards.info/scans/en/gtc/117.jpg
+image=https://magiccards.info/scans/en/gtc/117.jpg
 image_updated=2016-09-12
 value=3.577
 rarity=U

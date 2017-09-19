@@ -1,5 +1,5 @@
 name=Aquus Steed
-image=http://magiccards.info/scans/en/rtr/29.jpg
+image=https://magiccards.info/scans/en/rtr/29.jpg
 value=1.392
 rarity=U
 type=Creature

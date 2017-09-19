@@ -1,5 +1,5 @@
 name=Spring of Eternal Peace
-image=http://magiccards.info/scans/en/p3k/148.jpg
+image=https://magiccards.info/scans/en/p3k/148.jpg
 value=1.559
 rarity=C
 type=Sorcery

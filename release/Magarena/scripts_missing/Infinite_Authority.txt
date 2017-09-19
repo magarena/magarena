@@ -1,5 +1,5 @@
 name=Infinite Authority
-image=http://magiccards.info/scans/en/lg/191.jpg
+image=https://magiccards.info/scans/en/lg/191.jpg
 value=2.108
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=;Manifest
-image=http://magiccards.info/extras/token/fate-reforged/manifest.jpg
+image=https://magiccards.info/extras/token/fate-reforged/manifest.jpg
 value=1
 type=Creature
 rarity=C

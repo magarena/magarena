@@ -1,5 +1,5 @@
 name=Worldslayer
-image=http://magiccards.info/scans/en/m12/222.jpg
+image=https://magiccards.info/scans/en/m12/222.jpg
 value=3.841
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Eternal Thirst
-image=http://magiccards.info/scans/en/m15/95.jpg
+image=https://magiccards.info/scans/en/m15/95.jpg
 value=2.750
 rarity=C
 type=Enchantment

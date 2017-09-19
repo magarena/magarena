@@ -1,5 +1,5 @@
 name=Colossus of Akros
-image=http://magiccards.info/scans/en/ths/214.jpg
+image=https://magiccards.info/scans/en/ths/214.jpg
 value=3.639
 rarity=R
 type=Artifact,Creature

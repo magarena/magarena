@@ -1,5 +1,5 @@
 name=Stronghold Rats
-image=http://magiccards.info/scans/en/fut/79.jpg
+image=https://magiccards.info/scans/en/fut/79.jpg
 value=3.217
 rarity=U
 type=Creature

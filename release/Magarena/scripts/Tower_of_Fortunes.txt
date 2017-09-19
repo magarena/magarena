@@ -1,5 +1,5 @@
 name=Tower of Fortunes
-image=http://magiccards.info/scans/en/mi/267.jpg
+image=https://magiccards.info/scans/en/mi/267.jpg
 value=3.133
 rarity=R
 type=Artifact

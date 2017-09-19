@@ -1,5 +1,5 @@
 name=Holy Strength
-image=http://magiccards.info/scans/en/m11/16.jpg
+image=https://magiccards.info/scans/en/m11/16.jpg
 value=3.138
 rarity=C
 type=Enchantment

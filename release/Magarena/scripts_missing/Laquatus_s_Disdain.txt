@@ -1,5 +1,5 @@
 name=Laquatus's Disdain
-image=http://magiccards.info/scans/en/ju/44.jpg
+image=https://magiccards.info/scans/en/ju/44.jpg
 value=1.912
 rarity=U
 type=Instant

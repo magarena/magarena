@@ -1,5 +1,5 @@
 name=Black Lotus
-image=http://magiccards.info/scans/en/un/233.jpg
+image=https://magiccards.info/scans/en/un/233.jpg
 value=4.357
 rarity=R
 type=Artifact

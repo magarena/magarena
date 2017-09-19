@@ -1,5 +1,5 @@
 name=Benalish Hero
-image=http://magiccards.info/scans/en/5e/286.jpg
+image=https://magiccards.info/scans/en/5e/286.jpg
 value=2.926
 rarity=C
 type=Creature

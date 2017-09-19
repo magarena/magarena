@@ -1,5 +1,5 @@
 name=Quash
-image=http://magiccards.info/scans/en/bok/47.jpg
+image=https://magiccards.info/scans/en/bok/47.jpg
 value=4.229
 rarity=U
 type=Instant

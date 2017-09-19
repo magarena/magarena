@@ -1,5 +1,5 @@
 name=Priest of Yawgmoth
-image=http://magiccards.info/scans/en/aq/49.jpg
+image=https://magiccards.info/scans/en/aq/49.jpg
 value=3.946
 rarity=C
 type=Creature

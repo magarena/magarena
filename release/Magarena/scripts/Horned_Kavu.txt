@@ -1,5 +1,5 @@
 name=Horned Kavu
-image=http://magiccards.info/scans/en/ps/110.jpg
+image=https://magiccards.info/scans/en/ps/110.jpg
 value=4.262
 rarity=C
 type=Creature

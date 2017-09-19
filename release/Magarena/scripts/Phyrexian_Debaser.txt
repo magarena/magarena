@@ -1,5 +1,5 @@
 name=Phyrexian Debaser
-image=http://magiccards.info/scans/en/ul/59.jpg
+image=https://magiccards.info/scans/en/ul/59.jpg
 image_updated=2017-01-03
 value=3.423
 rarity=C

@@ -1,5 +1,5 @@
 name=Liliana of the Veil
-image=http://magiccards.info/scans/en/mm3/76.jpg
+image=https://magiccards.info/scans/en/mm3/76.jpg
 image_updated=2017-08-08
 value=4.287
 rarity=M

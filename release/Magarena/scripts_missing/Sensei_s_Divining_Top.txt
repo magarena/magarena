@@ -1,5 +1,5 @@
 name=Sensei's Divining Top
-image=http://magiccards.info/scans/en/ema/232.jpg
+image=https://magiccards.info/scans/en/ema/232.jpg
 value=4.588
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Quiet Speculation
-image=http://magiccards.info/scans/en/ema/68.jpg
+image=https://magiccards.info/scans/en/ema/68.jpg
 value=3.759
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Master Healer
-image=http://magiccards.info/scans/en/9e/28.jpg
+image=https://magiccards.info/scans/en/9e/28.jpg
 value=3.284
 rarity=R
 type=Creature

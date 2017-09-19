@@ -1,5 +1,5 @@
 name=Sacred Ground
-image=http://magiccards.info/scans/en/9e/37.jpg
+image=https://magiccards.info/scans/en/9e/37.jpg
 value=4.092
 rarity=R
 type=Enchantment

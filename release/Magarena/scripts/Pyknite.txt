@@ -1,5 +1,5 @@
 name=Pyknite
-image=http://magiccards.info/scans/en/ia/146.jpg
+image=https://magiccards.info/scans/en/ia/146.jpg
 value=2.694
 rarity=C
 type=Creature

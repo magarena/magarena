@@ -1,5 +1,5 @@
 name=Keldon Megaliths
-image=http://magiccards.info/scans/en/fut/170.jpg
+image=https://magiccards.info/scans/en/fut/170.jpg
 image_updated=2016-12-21
 value=3.645
 rarity=U

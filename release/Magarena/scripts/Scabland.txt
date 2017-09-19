@@ -1,5 +1,5 @@
 name=Scabland
-image=http://magiccards.info/scans/en/tp/331.jpg
+image=https://magiccards.info/scans/en/tp/331.jpg
 value=2.600
 rarity=R
 type=Land

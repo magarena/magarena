@@ -1,5 +1,5 @@
 name=Angus Mackenzie
-image=http://magiccards.info/scans/en/lg/257.jpg
+image=https://magiccards.info/scans/en/lg/257.jpg
 value=4.060
 rarity=R
 type=Legendary,Creature

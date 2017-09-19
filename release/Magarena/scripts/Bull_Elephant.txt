@@ -1,5 +1,5 @@
 name=Bull Elephant
-image=http://magiccards.info/scans/en/vi/51.jpg
+image=https://magiccards.info/scans/en/vi/51.jpg
 value=1.868
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Insidious Dreams
-image=http://magiccards.info/scans/en/tr/66.jpg
+image=https://magiccards.info/scans/en/tr/66.jpg
 value=4.041
 rarity=R
 type=Instant

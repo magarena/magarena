@@ -1,5 +1,5 @@
 name=Silverback Ape
-image=http://magiccards.info/scans/en/8eb/7.jpg
+image=https://magiccards.info/scans/en/8eb/7.jpg
 image_updated=2015-05-22
 value=3.238
 rarity=U

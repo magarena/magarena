@@ -1,5 +1,5 @@
 name=Benalish Veteran
-image=http://magiccards.info/scans/en/m12/10.jpg
+image=https://magiccards.info/scans/en/m12/10.jpg
 value=2.650
 rarity=C
 type=Creature

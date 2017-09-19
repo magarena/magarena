@@ -1,5 +1,5 @@
 name=Bravado
-image=http://magiccards.info/scans/en/us/177.jpg
+image=https://magiccards.info/scans/en/us/177.jpg
 value=3.464
 rarity=C
 type=Enchantment

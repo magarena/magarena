@@ -1,5 +1,5 @@
 name=Rimewind Cryomancer
-image=http://magiccards.info/scans/en/cs/43.jpg
+image=https://magiccards.info/scans/en/cs/43.jpg
 value=3.545
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Avacynian Missionaries
-image=http://magiccards.info/scans/en/soi/6a.jpg
+image=https://magiccards.info/scans/en/soi/6a.jpg
 value=2.500
 rarity=U
 type=Creature

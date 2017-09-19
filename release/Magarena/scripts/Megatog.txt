@@ -1,5 +1,5 @@
 name=Megatog
-image=http://magiccards.info/scans/en/mi/100.jpg
+image=https://magiccards.info/scans/en/mi/100.jpg
 value=4.086
 rarity=R
 type=Creature

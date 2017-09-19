@@ -1,5 +1,5 @@
 name=Light of Day
-image=http://magiccards.info/scans/en/6e/29.jpg
+image=https://magiccards.info/scans/en/6e/29.jpg
 value=4.106
 rarity=U
 type=Enchantment

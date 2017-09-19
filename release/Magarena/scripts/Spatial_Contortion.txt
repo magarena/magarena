@@ -1,5 +1,5 @@
 name=Spatial Contortion
-image=http://magiccards.info/scans/en/ogw/8.jpg
+image=https://magiccards.info/scans/en/ogw/8.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Aboshan's Desire
-image=http://magiccards.info/scans/en/od/59.jpg
+image=https://magiccards.info/scans/en/od/59.jpg
 value=3.105
 rarity=C
 type=Enchantment

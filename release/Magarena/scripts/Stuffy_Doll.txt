@@ -1,5 +1,5 @@
 name=Stuffy Doll
-image=http://magiccards.info/scans/en/m13/218.jpg
+image=https://magiccards.info/scans/en/m13/218.jpg
 value=3.983
 rarity=R
 type=Artifact,Creature

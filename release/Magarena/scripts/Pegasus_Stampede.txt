@@ -1,5 +1,5 @@
 name=Pegasus Stampede
-image=http://magiccards.info/scans/en/ex/14.jpg
+image=https://magiccards.info/scans/en/ex/14.jpg
 value=2.851
 rarity=U
 type=Sorcery

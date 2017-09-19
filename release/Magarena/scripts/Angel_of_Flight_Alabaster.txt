@@ -1,5 +1,5 @@
 name=Angel of Flight Alabaster
-image=http://magiccards.info/scans/en/isd/2.jpg
+image=https://magiccards.info/scans/en/isd/2.jpg
 value=3.799
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=2/2 black Zombie enchantment creature token
 token=Zombie
-image=http://magiccards.info/extras/token/born-of-the-gods/zombie.jpg
+image=https://magiccards.info/extras/token/born-of-the-gods/zombie.jpg
 value=2
 type=Enchantment,Creature
 subtype=Zombie

@@ -1,5 +1,5 @@
 name=Naya Sojourners
-image=http://magiccards.info/scans/en/arb/122.jpg
+image=https://magiccards.info/scans/en/arb/122.jpg
 value=2.889
 rarity=C
 type=Creature

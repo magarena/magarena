@@ -1,5 +1,5 @@
 name=Inalla, Archmage Ritualist
-image=http://magiccards.info/scans/en/c17/38.jpg
+image=https://magiccards.info/scans/en/c17/38.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

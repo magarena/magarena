@@ -1,5 +1,5 @@
 name=Erosion
-image=http://magiccards.info/scans/en/4e/70.jpg
+image=https://magiccards.info/scans/en/4e/70.jpg
 value=1.644
 rarity=C
 type=Enchantment

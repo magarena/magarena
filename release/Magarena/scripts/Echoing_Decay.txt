@@ -1,5 +1,5 @@
 name=Echoing Decay
-image=http://magiccards.info/scans/en/ds/41.jpg
+image=https://magiccards.info/scans/en/ds/41.jpg
 value=3.800
 removal=3
 rarity=C

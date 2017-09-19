@@ -1,5 +1,5 @@
 name=Tooth and Nail
-image=http://magiccards.info/scans/en/mma/170.jpg
+image=https://magiccards.info/scans/en/mma/170.jpg
 value=4.198
 rarity=R
 type=Sorcery

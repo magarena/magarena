@@ -1,5 +1,5 @@
 name=Bloodfire Dwarf
-image=http://magiccards.info/scans/en/ap/56.jpg
+image=https://magiccards.info/scans/en/ap/56.jpg
 value=3.782
 rarity=C
 type=Creature

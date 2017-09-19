@@ -1,5 +1,5 @@
 name=Serpent's Gift
-image=http://magiccards.info/scans/en/m13/190.jpg
+image=https://magiccards.info/scans/en/m13/190.jpg
 value=1.522
 rarity=C
 type=Instant

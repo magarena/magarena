@@ -1,5 +1,5 @@
 name=Spidersilk Net
-image=http://magiccards.info/scans/en/dtk/244.jpg
+image=https://magiccards.info/scans/en/dtk/244.jpg
 value=3.610
 rarity=C
 type=Artifact

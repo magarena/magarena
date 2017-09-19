@@ -1,5 +1,5 @@
 name=Putrid Warrior
-image=http://magiccards.info/scans/en/ap/117.jpg
+image=https://magiccards.info/scans/en/ap/117.jpg
 value=3.308
 rarity=C
 type=Creature

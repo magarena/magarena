@@ -1,5 +1,5 @@
 name=Tablet of the Guilds
-image=http://magiccards.info/scans/en/rtr/235.jpg
+image=https://magiccards.info/scans/en/rtr/235.jpg
 value=2.773
 rarity=U
 type=Artifact

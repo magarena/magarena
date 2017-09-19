@@ -1,5 +1,5 @@
 name=Moonglove Winnower
-image=http://magiccards.info/scans/en/lw/126.jpg
+image=https://magiccards.info/scans/en/lw/126.jpg
 image_updated=2016-12-23
 value=2.727
 rarity=C

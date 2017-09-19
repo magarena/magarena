@@ -1,5 +1,5 @@
 name=Ornery Kudu
-image=http://magiccards.info/scans/en/akh/178.jpg
+image=https://magiccards.info/scans/en/akh/178.jpg
 value=2.500
 rarity=C
 type=Creature

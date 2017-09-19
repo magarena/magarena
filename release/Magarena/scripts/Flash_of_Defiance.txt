@@ -1,5 +1,5 @@
 name=Flash of Defiance
-image=http://magiccards.info/scans/en/tr/99.jpg
+image=https://magiccards.info/scans/en/tr/99.jpg
 value=1.796
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Viridian Longbow
-image=http://magiccards.info/scans/en/mi/270.jpg
+image=https://magiccards.info/scans/en/mi/270.jpg
 value=3.978
 rarity=C
 type=Artifact

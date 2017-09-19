@@ -1,5 +1,5 @@
 name=Arctic Flats
-image=http://magiccards.info/scans/en/cs/143.jpg
+image=https://magiccards.info/scans/en/cs/143.jpg
 value=3.562
 rarity=U
 type=Snow,Land

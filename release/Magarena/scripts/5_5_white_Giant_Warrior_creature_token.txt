@@ -1,6 +1,6 @@
 name=5/5 white Giant Warrior creature token
 token=Giant Warrior
-image=http://magiccards.info/extras/token/morningtide/giant-warrior.jpg
+image=https://magiccards.info/extras/token/morningtide/giant-warrior.jpg
 value=5
 type=Creature
 subtype=Giant,Warrior

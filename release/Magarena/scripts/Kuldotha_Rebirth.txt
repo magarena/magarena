@@ -1,5 +1,5 @@
 name=Kuldotha Rebirth
-image=http://magiccards.info/scans/en/som/96.jpg
+image=https://magiccards.info/scans/en/som/96.jpg
 value=3.947
 rarity=C
 type=Sorcery

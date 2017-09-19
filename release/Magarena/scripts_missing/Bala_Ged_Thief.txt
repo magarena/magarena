@@ -1,5 +1,5 @@
 name=Bala Ged Thief
-image=http://magiccards.info/scans/en/zen/79.jpg
+image=https://magiccards.info/scans/en/zen/79.jpg
 value=3.287
 rarity=R
 type=Creature

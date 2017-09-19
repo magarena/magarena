@@ -1,5 +1,5 @@
 name=Head Games
-image=http://magiccards.info/scans/en/10e/148.jpg
+image=https://magiccards.info/scans/en/10e/148.jpg
 value=3.950
 rarity=R
 type=Sorcery

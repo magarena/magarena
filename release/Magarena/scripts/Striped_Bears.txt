@@ -1,5 +1,5 @@
 name=Striped Bears
-image=http://magiccards.info/scans/en/wl/82.jpg
+image=https://magiccards.info/scans/en/wl/82.jpg
 value=3.059
 rarity=C
 type=Creature

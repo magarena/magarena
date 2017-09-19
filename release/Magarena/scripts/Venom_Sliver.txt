@@ -1,5 +1,5 @@
 name=Venom Sliver
-image=http://magiccards.info/scans/en/m15/205.jpg
+image=https://magiccards.info/scans/en/m15/205.jpg
 value=3.778
 rarity=U
 type=Creature

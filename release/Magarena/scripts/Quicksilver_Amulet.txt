@@ -1,5 +1,5 @@
 name=Quicksilver Amulet
-image=http://magiccards.info/scans/en/m12/214.jpg
+image=https://magiccards.info/scans/en/m12/214.jpg
 value=4.295
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Yavimaya Enchantress
-image=http://magiccards.info/scans/en/ema/194.jpg
+image=https://magiccards.info/scans/en/ema/194.jpg
 value=4.039
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wrangle
-image=http://magiccards.info/scans/en/aer/101.jpg
+image=https://magiccards.info/scans/en/aer/101.jpg
 value=2.500
 rarity=C
 type=Sorcery

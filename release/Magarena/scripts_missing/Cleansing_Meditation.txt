@@ -1,5 +1,5 @@
 name=Cleansing Meditation
-image=http://magiccards.info/scans/en/tr/3.jpg
+image=https://magiccards.info/scans/en/tr/3.jpg
 value=3.883
 rarity=U
 type=Sorcery

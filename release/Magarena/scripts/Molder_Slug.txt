@@ -1,5 +1,5 @@
 name=Molder Slug
-image=http://magiccards.info/scans/en/mi/125.jpg
+image=https://magiccards.info/scans/en/mi/125.jpg
 value=4.263
 rarity=R
 type=Creature

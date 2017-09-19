@@ -1,5 +1,5 @@
 name=Ichor Rats
-image=http://magiccards.info/scans/en/som/67.jpg
+image=https://magiccards.info/scans/en/som/67.jpg
 value=3.616
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Warren-Scourge Elf
-image=http://magiccards.info/scans/en/lw/241.jpg
+image=https://magiccards.info/scans/en/lw/241.jpg
 value=1.947
 rarity=C
 type=Creature

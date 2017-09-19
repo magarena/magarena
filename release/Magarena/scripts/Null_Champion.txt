@@ -1,5 +1,5 @@
 name=Null Champion
-image=http://magiccards.info/scans/en/roe/121.jpg
+image=https://magiccards.info/scans/en/roe/121.jpg
 value=3.344
 rarity=C
 type=Creature

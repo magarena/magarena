@@ -1,5 +1,5 @@
 name=Qasali Pridemage
-image=http://magiccards.info/scans/en/arb/75.jpg
+image=https://magiccards.info/scans/en/arb/75.jpg
 value=4.580
 rarity=C
 type=Creature

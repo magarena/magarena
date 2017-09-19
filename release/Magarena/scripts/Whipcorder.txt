@@ -1,5 +1,5 @@
 name=Whipcorder
-image=http://magiccards.info/scans/en/on/60.jpg
+image=https://magiccards.info/scans/en/on/60.jpg
 value=4.122
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mournful Zombie
-image=http://magiccards.info/scans/en/ap/43.jpg
+image=https://magiccards.info/scans/en/ap/43.jpg
 value=2.081
 rarity=C
 type=Creature

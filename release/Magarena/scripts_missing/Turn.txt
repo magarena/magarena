@@ -1,5 +1,5 @@
 name=Turn
-image=http://magiccards.info/scans/en/dgm/134a.jpg
+image=https://magiccards.info/scans/en/dgm/134a.jpg
 value=4.101
 rarity=U
 type=Instant

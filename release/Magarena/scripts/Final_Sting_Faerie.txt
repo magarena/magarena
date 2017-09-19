@@ -1,5 +1,5 @@
 name=Final-Sting Faerie
-image=http://magiccards.info/scans/en/mt/63.jpg
+image=https://magiccards.info/scans/en/mt/63.jpg
 value=3.000
 rarity=C
 type=Creature

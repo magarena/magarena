@@ -1,5 +1,5 @@
 name=Gaze of Justice
-image=http://magiccards.info/scans/en/ts/20.jpg
+image=https://magiccards.info/scans/en/ts/20.jpg
 value=3.559
 rarity=C
 type=Sorcery

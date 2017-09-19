@@ -1,5 +1,5 @@
 name=Uncanny Speed
-image=http://magiccards.info/scans/en/avr/163.jpg
+image=https://magiccards.info/scans/en/avr/163.jpg
 value=2.173
 rarity=C
 type=Instant

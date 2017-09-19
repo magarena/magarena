@@ -1,5 +1,5 @@
 name=Bash to Bits
-image=http://magiccards.info/scans/en/od/176.jpg
+image=https://magiccards.info/scans/en/od/176.jpg
 value=1.524
 rarity=U
 type=Instant

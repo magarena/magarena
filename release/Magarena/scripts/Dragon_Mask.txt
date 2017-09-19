@@ -1,5 +1,5 @@
 name=Dragon Mask
-image=http://magiccards.info/scans/en/6e/283.jpg
+image=https://magiccards.info/scans/en/6e/283.jpg
 value=2.539
 rarity=U
 type=Artifact

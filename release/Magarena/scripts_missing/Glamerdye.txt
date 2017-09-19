@@ -1,5 +1,5 @@
 name=Glamerdye
-image=http://magiccards.info/scans/en/eve/21.jpg
+image=https://magiccards.info/scans/en/eve/21.jpg
 value=2.980
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Muck Drubb
-image=http://magiccards.info/scans/en/pc/76.jpg
+image=https://magiccards.info/scans/en/pc/76.jpg
 value=3.300
 rarity=U
 type=Creature

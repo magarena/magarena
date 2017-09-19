@@ -1,5 +1,5 @@
 name=Jhoira's Timebug
-image=http://magiccards.info/scans/en/ts/257.jpg
+image=https://magiccards.info/scans/en/ts/257.jpg
 value=3.150
 rarity=C
 type=Artifact,Creature

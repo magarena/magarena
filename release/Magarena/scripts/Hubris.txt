@@ -1,5 +1,5 @@
 name=Hubris
-image=http://magiccards.info/scans/en/jou/41.jpg
+image=https://magiccards.info/scans/en/jou/41.jpg
 value=3.173
 rarity=C
 type=Instant

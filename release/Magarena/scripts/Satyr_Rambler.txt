@@ -1,5 +1,5 @@
 name=Satyr Rambler
-image=http://magiccards.info/scans/en/ths/139.jpg
+image=https://magiccards.info/scans/en/ths/139.jpg
 value=3.094
 rarity=C
 type=Creature

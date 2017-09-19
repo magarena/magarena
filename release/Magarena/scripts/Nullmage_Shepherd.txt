@@ -1,5 +1,5 @@
 name=Nullmage Shepherd
-image=http://magiccards.info/scans/en/rav/174.jpg
+image=https://magiccards.info/scans/en/rav/174.jpg
 value=3.728
 rarity=U
 type=Creature

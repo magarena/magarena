@@ -1,5 +1,5 @@
 name=Jackal Pup
-image=http://magiccards.info/scans/en/tp/183.jpg
+image=https://magiccards.info/scans/en/tp/183.jpg
 value=4.018
 rarity=U
 type=Creature

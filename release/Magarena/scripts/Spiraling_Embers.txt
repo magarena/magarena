@@ -1,5 +1,5 @@
 name=Spiraling Embers
-image=http://magiccards.info/scans/en/sok/116.jpg
+image=https://magiccards.info/scans/en/sok/116.jpg
 value=3.085
 rarity=C
 type=Sorcery

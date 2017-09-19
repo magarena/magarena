@@ -1,5 +1,5 @@
 name=Glyph of Doom
-image=http://magiccards.info/scans/en/lg/14.jpg
+image=https://magiccards.info/scans/en/lg/14.jpg
 value=2.368
 rarity=C
 type=Instant

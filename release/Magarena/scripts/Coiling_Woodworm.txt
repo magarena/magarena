@@ -1,5 +1,5 @@
 name=Coiling Woodworm
-image=http://magiccards.info/scans/en/ne/103.jpg
+image=https://magiccards.info/scans/en/ne/103.jpg
 value=3.041
 rarity=U
 type=Creature

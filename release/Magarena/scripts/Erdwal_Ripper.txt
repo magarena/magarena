@@ -1,5 +1,5 @@
 name=Erdwal Ripper
-image=http://magiccards.info/scans/en/dka/86.jpg
+image=https://magiccards.info/scans/en/dka/86.jpg
 value=2.689
 rarity=C
 type=Creature

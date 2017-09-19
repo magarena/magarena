@@ -1,5 +1,5 @@
 name=Energizer
-image=http://magiccards.info/scans/en/tp/275.jpg
+image=https://magiccards.info/scans/en/tp/275.jpg
 value=2.625
 rarity=R
 type=Artifact,Creature

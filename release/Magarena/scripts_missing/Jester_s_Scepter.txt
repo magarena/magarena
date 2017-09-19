@@ -1,5 +1,5 @@
 name=Jester's Scepter
-image=http://magiccards.info/scans/en/cs/137.jpg
+image=https://magiccards.info/scans/en/cs/137.jpg
 value=3.922
 rarity=R
 type=Artifact

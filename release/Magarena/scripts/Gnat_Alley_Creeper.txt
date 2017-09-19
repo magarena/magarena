@@ -1,5 +1,5 @@
 name=Gnat Alley Creeper
-image=http://magiccards.info/scans/en/di/63.jpg
+image=https://magiccards.info/scans/en/di/63.jpg
 value=1.941
 rarity=U
 type=Creature

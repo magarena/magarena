@@ -1,5 +1,5 @@
 name=Druid's Call
-image=http://magiccards.info/scans/en/od/239.jpg
+image=https://magiccards.info/scans/en/od/239.jpg
 value=3.990
 rarity=U
 type=Enchantment

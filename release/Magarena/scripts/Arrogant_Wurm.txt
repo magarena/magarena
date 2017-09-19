@@ -1,5 +1,5 @@
 name=Arrogant Wurm
-image=http://magiccards.info/scans/en/tr/120.jpg
+image=https://magiccards.info/scans/en/tr/120.jpg
 value=4.000
 rarity=U
 type=Creature

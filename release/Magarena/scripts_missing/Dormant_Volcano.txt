@@ -1,5 +1,5 @@
 name=Dormant Volcano
-image=http://magiccards.info/scans/en/c14/291.jpg
+image=https://magiccards.info/scans/en/c14/291.jpg
 value=2.500
 rarity=U
 type=Land

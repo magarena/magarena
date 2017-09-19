@@ -1,5 +1,5 @@
 name=Castle Raptors
-image=http://magiccards.info/scans/en/ts/5.jpg
+image=https://magiccards.info/scans/en/ts/5.jpg
 value=2.161
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aegis Automaton
-image=http://magiccards.info/scans/en/aer/141.jpg
+image=https://magiccards.info/scans/en/aer/141.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

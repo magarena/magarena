@@ -1,5 +1,5 @@
 name=Rhystic Lightning
-image=http://magiccards.info/scans/en/pr/99.jpg
+image=https://magiccards.info/scans/en/pr/99.jpg
 value=3.189
 rarity=C
 type=Instant

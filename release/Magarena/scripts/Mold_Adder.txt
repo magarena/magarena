@@ -1,5 +1,5 @@
 name=Mold Adder
-image=http://magiccards.info/scans/en/m10/194.jpg
+image=https://magiccards.info/scans/en/m10/194.jpg
 value=3.769
 rarity=U
 type=Creature

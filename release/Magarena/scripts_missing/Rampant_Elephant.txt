@@ -1,5 +1,5 @@
 name=Rampant Elephant
-image=http://magiccards.info/scans/en/in/28.jpg
+image=https://magiccards.info/scans/en/in/28.jpg
 value=2.560
 rarity=C
 type=Creature

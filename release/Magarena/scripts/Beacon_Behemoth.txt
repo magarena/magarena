@@ -1,5 +1,5 @@
 name=Beacon Behemoth
-image=http://magiccards.info/scans/en/cfx/78.jpg
+image=https://magiccards.info/scans/en/cfx/78.jpg
 value=2.787
 rarity=C
 type=Creature

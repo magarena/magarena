@@ -1,5 +1,5 @@
 name=Bull Cerodon
-image=http://magiccards.info/scans/en/ala/161.jpg
+image=https://magiccards.info/scans/en/ala/161.jpg
 image_updated=2016-12-13
 value=3.365
 rarity=U

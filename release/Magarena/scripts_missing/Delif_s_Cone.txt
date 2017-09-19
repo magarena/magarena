@@ -1,5 +1,5 @@
 name=Delif's Cone
-image=http://magiccards.info/scans/en/fe/169.jpg
+image=https://magiccards.info/scans/en/fe/169.jpg
 value=1.877
 rarity=C
 type=Artifact

@@ -1,6 +1,6 @@
 name=1/1 green Insect creature token with infect
 token=Insect
-image=http://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
+image=https://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
 value=1
 type=Creature
 subtype=Insect

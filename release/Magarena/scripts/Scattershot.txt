@@ -1,5 +1,5 @@
 name=Scattershot
-image=http://magiccards.info/scans/en/sc/102.jpg
+image=https://magiccards.info/scans/en/sc/102.jpg
 value=2.097
 rarity=C
 type=Instant

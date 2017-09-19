@@ -1,5 +1,5 @@
 name=Decision Paralysis
-image=http://magiccards.info/scans/en/akh/50.jpg
+image=https://magiccards.info/scans/en/akh/50.jpg
 value=2.500
 rarity=C
 type=Instant

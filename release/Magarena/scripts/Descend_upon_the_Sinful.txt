@@ -1,5 +1,5 @@
 name=Descend upon the Sinful
-image=http://magiccards.info/scans/en/soi/13.jpg
+image=https://magiccards.info/scans/en/soi/13.jpg
 value=2.500
 rarity=M
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mana Short
-image=http://magiccards.info/scans/en/7e/86.jpg
+image=https://magiccards.info/scans/en/7e/86.jpg
 value=4.377
 rarity=R
 type=Instant

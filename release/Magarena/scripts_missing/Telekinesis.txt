@@ -1,5 +1,5 @@
 name=Telekinesis
-image=http://magiccards.info/scans/en/lg/79.jpg
+image=https://magiccards.info/scans/en/lg/79.jpg
 value=3.816
 rarity=R
 type=Instant

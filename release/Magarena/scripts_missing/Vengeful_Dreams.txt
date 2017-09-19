@@ -1,5 +1,5 @@
 name=Vengeful Dreams
-image=http://magiccards.info/scans/en/tr/21.jpg
+image=https://magiccards.info/scans/en/tr/21.jpg
 value=3.909
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Jötun Owl Keeper
-image=http://magiccards.info/scans/en/cs/9.jpg
+image=https://magiccards.info/scans/en/cs/9.jpg
 value=3.783
 rarity=U
 type=Creature

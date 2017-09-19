@@ -1,5 +1,5 @@
 name=Greater Stone Spirit
-image=http://magiccards.info/scans/en/cs/84.jpg
+image=https://magiccards.info/scans/en/cs/84.jpg
 image_updated=2016-12-04
 value=2.433
 rarity=U

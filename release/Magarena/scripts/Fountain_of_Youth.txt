@@ -1,5 +1,5 @@
 name=Fountain of Youth
-image=http://magiccards.info/scans/en/10e/323.jpg
+image=https://magiccards.info/scans/en/10e/323.jpg
 value=2.303
 rarity=U
 type=Artifact

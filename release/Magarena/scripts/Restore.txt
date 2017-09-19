@@ -1,5 +1,5 @@
 name=Restore
-image=http://magiccards.info/scans/en/c13/167.jpg
+image=https://magiccards.info/scans/en/c13/167.jpg
 value=4.250
 rarity=U
 type=Sorcery

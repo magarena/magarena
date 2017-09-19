@@ -1,5 +1,5 @@
 name=Oakgnarl Warrior
-image=http://magiccards.info/scans/en/lw/232.jpg
+image=https://magiccards.info/scans/en/lw/232.jpg
 value=3.069
 rarity=C
 type=Creature

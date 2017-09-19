@@ -1,5 +1,5 @@
 name=Soulgorger Orgg
-image=http://magiccards.info/scans/en/ju/99.jpg
+image=https://magiccards.info/scans/en/ju/99.jpg
 value=2.250
 rarity=U
 type=Creature

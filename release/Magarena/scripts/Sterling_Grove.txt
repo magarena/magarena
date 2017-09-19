@@ -1,5 +1,5 @@
 name=Sterling Grove
-image=http://magiccards.info/scans/en/in/278.jpg
+image=https://magiccards.info/scans/en/in/278.jpg
 value=4.360
 rarity=U
 type=Enchantment

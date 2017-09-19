@@ -1,5 +1,5 @@
 name=Traveler's Cloak
-image=http://magiccards.info/scans/en/cns/109.jpg
+image=https://magiccards.info/scans/en/cns/109.jpg
 value=3.800
 rarity=C
 type=Enchantment

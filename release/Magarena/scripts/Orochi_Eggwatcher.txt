@@ -1,5 +1,5 @@
 name=Orochi Eggwatcher
-image=http://magiccards.info/scans/en/chk/233a.jpg
+image=https://magiccards.info/scans/en/chk/233a.jpg
 value=3.235
 rarity=U
 type=Creature

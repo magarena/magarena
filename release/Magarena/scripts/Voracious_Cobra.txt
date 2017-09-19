@@ -1,5 +1,5 @@
 name=Voracious Cobra
-image=http://magiccards.info/scans/en/in/288.jpg
+image=https://magiccards.info/scans/en/in/288.jpg
 value=4.256
 rarity=U
 type=Creature

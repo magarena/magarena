@@ -1,5 +1,5 @@
 name=Giant Slug
-image=http://magiccards.info/scans/en/lg/13.jpg
+image=https://magiccards.info/scans/en/lg/13.jpg
 image_updated=2016-12-04
 value=1.294
 rarity=C

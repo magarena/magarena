@@ -1,5 +1,5 @@
 name=Thermal Flux
-image=http://magiccards.info/scans/en/cs/49.jpg
+image=https://magiccards.info/scans/en/cs/49.jpg
 value=1.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Torment of Hailfire
-image=http://magiccards.info/scans/en/hou/77.jpg
+image=https://magiccards.info/scans/en/hou/77.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Wine of Blood and Iron
-image=http://magiccards.info/scans/en/sok/161.jpg
+image=https://magiccards.info/scans/en/sok/161.jpg
 value=2.872
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Genju of the Falls
-image=http://magiccards.info/scans/en/bok/35.jpg
+image=https://magiccards.info/scans/en/bok/35.jpg
 value=4.227
 rarity=U
 type=Enchantment

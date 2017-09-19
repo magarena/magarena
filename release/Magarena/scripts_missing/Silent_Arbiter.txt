@@ -1,5 +1,5 @@
 name=Silent Arbiter
-image=http://magiccards.info/scans/en/cns/204.jpg
+image=https://magiccards.info/scans/en/cns/204.jpg
 value=4.083
 rarity=R
 type=Artifact,Creature

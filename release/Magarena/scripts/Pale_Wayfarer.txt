@@ -1,5 +1,5 @@
 name=Pale Wayfarer
-image=http://magiccards.info/scans/en/shm/17.jpg
+image=https://magiccards.info/scans/en/shm/17.jpg
 value=1.768
 rarity=U
 type=Creature

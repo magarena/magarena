@@ -1,5 +1,5 @@
 name=Godo's Irregulars
-image=http://magiccards.info/scans/en/sok/101.jpg
+image=https://magiccards.info/scans/en/sok/101.jpg
 value=3.430
 rarity=U
 type=Creature

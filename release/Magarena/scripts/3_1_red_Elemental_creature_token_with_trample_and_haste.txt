@@ -1,6 +1,6 @@
 name=3/1 red Elemental creature token with trample and haste
 token=Elemental
-image=http://magiccards.info/extras/token/battle-for-zendikar/elemental-1.jpg
+image=https://magiccards.info/extras/token/battle-for-zendikar/elemental-1.jpg
 value=3
 type=Creature
 subtype=Elemental

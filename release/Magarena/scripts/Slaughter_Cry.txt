@@ -1,5 +1,5 @@
 name=Slaughter Cry
-image=http://magiccards.info/scans/en/m12/155.jpg
+image=https://magiccards.info/scans/en/m12/155.jpg
 value=2.182
 rarity=C
 type=Instant

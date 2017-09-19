@@ -1,5 +1,5 @@
 name=Seasoned Marshal
-image=http://magiccards.info/scans/en/9e/42.jpg
+image=https://magiccards.info/scans/en/9e/42.jpg
 image_updated=2017-01-07
 value=3.296
 rarity=U

@@ -1,5 +1,5 @@
 name=Steal Artifact
-image=http://magiccards.info/scans/en/8e/103.jpg
+image=https://magiccards.info/scans/en/8e/103.jpg
 value=3.489
 rarity=U
 type=Enchantment

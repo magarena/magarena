@@ -1,5 +1,5 @@
 name=Chained to the Rocks
-image=http://magiccards.info/scans/en/ths/4.jpg
+image=https://magiccards.info/scans/en/ths/4.jpg
 value=3.559
 rarity=R
 type=Enchantment

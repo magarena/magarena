@@ -1,5 +1,5 @@
 name=Wretched Banquet
-image=http://magiccards.info/scans/en/cfx/56.jpg
+image=https://magiccards.info/scans/en/cfx/56.jpg
 value=2.926
 removal=4
 rarity=C

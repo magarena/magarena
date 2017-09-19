@@ -1,5 +1,5 @@
 name=Horn of Deafening
-image=http://magiccards.info/scans/en/lg/224.jpg
+image=https://magiccards.info/scans/en/lg/224.jpg
 image_updated=2016-12-10
 value=3.265
 rarity=R

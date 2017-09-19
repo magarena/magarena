@@ -1,5 +1,5 @@
 name=Goblin Bombardment
-image=http://magiccards.info/scans/en/tp/179.jpg
+image=https://magiccards.info/scans/en/tp/179.jpg
 value=4.000
 rarity=U
 type=Enchantment

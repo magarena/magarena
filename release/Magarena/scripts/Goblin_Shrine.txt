@@ -1,5 +1,5 @@
 name=Goblin Shrine
-image=http://magiccards.info/scans/en/dk/67.jpg
+image=https://magiccards.info/scans/en/dk/67.jpg
 image_updated=2016-12-04
 value=2.783
 rarity=C

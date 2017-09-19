@@ -1,6 +1,6 @@
 name=1/1 blue Human Wizard creature token
 token=Human Wizard
-image=http://magiccards.info/extras/token/eldritch-moon/human-wizard.jpg
+image=https://magiccards.info/extras/token/eldritch-moon/human-wizard.jpg
 value=1
 type=Creature
 subtype=Human,Wizard

@@ -1,5 +1,5 @@
 name=Warrior's Honor
-image=http://magiccards.info/scans/en/10e/58.jpg
+image=https://magiccards.info/scans/en/10e/58.jpg
 value=1.186
 rarity=C
 type=Instant

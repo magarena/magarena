@@ -1,5 +1,5 @@
 name=Detonate
-image=http://magiccards.info/scans/en/mi/88.jpg
+image=https://magiccards.info/scans/en/mi/88.jpg
 image_updated=2015-11-13
 value=3.688
 rarity=U

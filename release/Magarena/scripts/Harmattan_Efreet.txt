@@ -1,5 +1,5 @@
 name=Harmattan Efreet
-image=http://magiccards.info/scans/en/6e/73.jpg
+image=https://magiccards.info/scans/en/6e/73.jpg
 value=2.210
 rarity=U
 type=Creature

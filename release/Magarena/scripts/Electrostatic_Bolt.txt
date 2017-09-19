@@ -1,5 +1,5 @@
 name=Electrostatic Bolt
-image=http://magiccards.info/scans/en/mi/89.jpg
+image=https://magiccards.info/scans/en/mi/89.jpg
 value=3.655
 rarity=C
 type=Instant

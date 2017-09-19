@@ -1,5 +1,5 @@
 name=Zodiac Rabbit
-image=http://magiccards.info/scans/en/p3k/162.jpg
+image=https://magiccards.info/scans/en/p3k/162.jpg
 value=3.016
 rarity=C
 type=Creature

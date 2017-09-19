@@ -1,5 +1,5 @@
 name=Sever Soul
-image=http://magiccards.info/scans/en/8e/162.jpg
+image=https://magiccards.info/scans/en/8e/162.jpg
 value=2.864
 rarity=U
 type=Sorcery

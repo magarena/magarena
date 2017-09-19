@@ -1,5 +1,5 @@
 name=Lairwatch Giant
-image=http://magiccards.info/scans/en/lw/29.jpg
+image=https://magiccards.info/scans/en/lw/29.jpg
 value=3.088
 rarity=C
 type=Creature

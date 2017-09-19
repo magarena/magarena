@@ -1,5 +1,5 @@
 name=Mistblade Shinobi
-image=http://magiccards.info/scans/en/pc2/20.jpg
+image=https://magiccards.info/scans/en/pc2/20.jpg
 value=4.267
 rarity=C
 type=Creature

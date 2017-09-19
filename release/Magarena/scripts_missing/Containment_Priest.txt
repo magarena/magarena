@@ -1,5 +1,5 @@
 name=Containment Priest
-image=http://magiccards.info/scans/en/c14/5.jpg
+image=https://magiccards.info/scans/en/c14/5.jpg
 value=2.500
 rarity=R
 type=Creature

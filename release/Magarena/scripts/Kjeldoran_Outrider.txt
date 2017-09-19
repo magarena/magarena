@@ -1,5 +1,5 @@
 name=Kjeldoran Outrider
-image=http://magiccards.info/scans/en/cs/12.jpg
+image=https://magiccards.info/scans/en/cs/12.jpg
 value=3.054
 rarity=C
 type=Creature

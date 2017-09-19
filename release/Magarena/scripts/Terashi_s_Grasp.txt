@@ -1,5 +1,5 @@
 name=Terashi's Grasp
-image=http://magiccards.info/scans/en/mm2/37.jpg
+image=https://magiccards.info/scans/en/mm2/37.jpg
 image_updated=2015-11-05
 value=3.867
 rarity=C

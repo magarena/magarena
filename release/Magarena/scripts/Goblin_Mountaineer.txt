@@ -1,5 +1,5 @@
 name=Goblin Mountaineer
-image=http://magiccards.info/scans/en/ala/102.jpg
+image=https://magiccards.info/scans/en/ala/102.jpg
 value=2.524
 rarity=C
 type=Creature

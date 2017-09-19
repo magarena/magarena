@@ -1,5 +1,5 @@
 name=Eldrazi Aggressor
-image=http://magiccards.info/scans/en/ogw/95.jpg
+image=https://magiccards.info/scans/en/ogw/95.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=C

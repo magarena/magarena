@@ -1,5 +1,5 @@
 name=Sworn Defender
-image=http://magiccards.info/scans/en/ai/152.jpg
+image=https://magiccards.info/scans/en/ai/152.jpg
 value=3.716
 rarity=R
 type=Creature

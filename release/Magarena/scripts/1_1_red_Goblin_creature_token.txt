@@ -1,6 +1,6 @@
 name=1/1 red Goblin creature token
 token=Goblin
-image=http://magiccards.info/extras/token/magic-origins/goblin.jpg
+image=https://magiccards.info/extras/token/magic-origins/goblin.jpg
 image_updated=2015-11-12
 value=1
 type=Creature

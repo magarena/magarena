@@ -1,5 +1,5 @@
 name=Paragon of Fierce Defiance
-image=http://magiccards.info/scans/en/m15/158.jpg
+image=https://magiccards.info/scans/en/m15/158.jpg
 value=3.375
 rarity=U
 type=Creature

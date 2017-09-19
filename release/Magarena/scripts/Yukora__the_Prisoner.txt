@@ -1,5 +1,5 @@
 name=Yukora, the Prisoner
-image=http://magiccards.info/scans/en/bok/90.jpg
+image=https://magiccards.info/scans/en/bok/90.jpg
 value=3.285
 rarity=R
 type=Legendary,Creature

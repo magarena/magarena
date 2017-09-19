@@ -1,5 +1,5 @@
 name=Down
-image=http://magiccards.info/scans/en/dgm/126a.jpg
+image=https://magiccards.info/scans/en/dgm/126a.jpg
 value=3.793
 rarity=U
 type=Sorcery

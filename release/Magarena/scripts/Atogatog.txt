@@ -1,5 +1,5 @@
 name=Atogatog
-image=http://magiccards.info/scans/en/od/286.jpg
+image=https://magiccards.info/scans/en/od/286.jpg
 value=3.532
 rarity=R
 type=Legendary,Creature

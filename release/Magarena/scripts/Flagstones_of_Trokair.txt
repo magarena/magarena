@@ -1,5 +1,5 @@
 name=Flagstones of Trokair
-image=http://magiccards.info/scans/en/ts/272.jpg
+image=https://magiccards.info/scans/en/ts/272.jpg
 value=4.338
 rarity=R
 type=Legendary,Land

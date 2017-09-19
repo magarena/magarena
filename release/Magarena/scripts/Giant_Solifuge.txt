@@ -1,5 +1,5 @@
 name=Giant Solifuge
-image=http://magiccards.info/scans/en/ema/216.jpg
+image=https://magiccards.info/scans/en/ema/216.jpg
 value=4.051
 rarity=R
 type=Creature

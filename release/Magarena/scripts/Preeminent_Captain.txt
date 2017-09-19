@@ -1,5 +1,5 @@
 name=Preeminent Captain
-image=http://magiccards.info/scans/en/m15/25.jpg
+image=https://magiccards.info/scans/en/m15/25.jpg
 value=3.600
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Harsh Deceiver
-image=http://magiccards.info/scans/en/chk/11.jpg
+image=https://magiccards.info/scans/en/chk/11.jpg
 value=1.103
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wreath of Geists
-image=http://magiccards.info/scans/en/isd/211.jpg
+image=https://magiccards.info/scans/en/isd/211.jpg
 value=3.491
 rarity=U
 type=Enchantment

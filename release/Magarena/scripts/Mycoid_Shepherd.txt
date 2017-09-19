@@ -1,5 +1,5 @@
 name=Mycoid Shepherd
-image=http://magiccards.info/scans/en/arb/73.jpg
+image=https://magiccards.info/scans/en/arb/73.jpg
 value=3.670
 rarity=R
 type=Creature

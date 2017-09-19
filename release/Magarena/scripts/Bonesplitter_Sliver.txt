@@ -1,5 +1,5 @@
 name=Bonesplitter Sliver
-image=http://magiccards.info/scans/en/ts/149.jpg
+image=https://magiccards.info/scans/en/ts/149.jpg
 value=3.670
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rogue Skycaptain
-image=http://magiccards.info/scans/en/ai/116.jpg
+image=https://magiccards.info/scans/en/ai/116.jpg
 value=2.882
 rarity=R
 type=Creature

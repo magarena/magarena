@@ -1,5 +1,5 @@
 name=Wash Out
-image=http://magiccards.info/scans/en/in/87.jpg
+image=https://magiccards.info/scans/en/in/87.jpg
 value=4.294
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Clone
-image=http://magiccards.info/scans/en/m13/45.jpg
+image=https://magiccards.info/scans/en/m13/45.jpg
 value=4.122
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Killing Glare
-image=http://magiccards.info/scans/en/gtc/70.jpg
+image=https://magiccards.info/scans/en/gtc/70.jpg
 value=2.689
 rarity=U
 type=Instant

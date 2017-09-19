@@ -1,5 +1,5 @@
 name=Faerie Artisans
-image=http://magiccards.info/scans/en/c16/8.jpg
+image=https://magiccards.info/scans/en/c16/8.jpg
 image_updated=2016-12-02
 value=2.500
 rarity=R

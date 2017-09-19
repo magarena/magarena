@@ -1,5 +1,5 @@
 name=Merfolk of the Pearl Trident
-image=http://magiccards.info/scans/en/m13/60.jpg
+image=https://magiccards.info/scans/en/m13/60.jpg
 value=2.156
 rarity=C
 type=Creature

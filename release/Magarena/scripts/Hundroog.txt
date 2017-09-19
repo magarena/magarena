@@ -1,5 +1,5 @@
 name=Hundroog
-image=http://magiccards.info/scans/en/le/129.jpg
+image=https://magiccards.info/scans/en/le/129.jpg
 value=1.333
 rarity=C
 type=Creature

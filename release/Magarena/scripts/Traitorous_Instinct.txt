@@ -1,5 +1,5 @@
 name=Traitorous Instinct
-image=http://magiccards.info/scans/en/mm3/114.jpg
+image=https://magiccards.info/scans/en/mm3/114.jpg
 image_updated=2017-08-08
 value=3.051
 rarity=C

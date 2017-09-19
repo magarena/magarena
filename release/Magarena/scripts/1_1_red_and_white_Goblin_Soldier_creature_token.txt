@@ -1,6 +1,6 @@
 name=1/1 red and white Goblin Soldier creature token
 token=Goblin Soldier
-image=http://magiccards.info/extras/token/eventide/goblin-soldier.jpg
+image=https://magiccards.info/extras/token/eventide/goblin-soldier.jpg
 value=1
 type=Creature
 subtype=Goblin,Soldier

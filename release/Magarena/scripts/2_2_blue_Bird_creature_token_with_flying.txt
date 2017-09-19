@@ -1,6 +1,6 @@
 name=2/2 blue Bird creature token with flying
 token=Bird
-image=http://magiccards.info/extras/token/theros/bird.jpg
+image=https://magiccards.info/extras/token/theros/bird.jpg
 value=2
 type=Creature
 subtype=Bird

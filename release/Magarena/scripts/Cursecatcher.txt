@@ -1,5 +1,5 @@
 name=Cursecatcher
-image=http://magiccards.info/scans/en/shm/34.jpg
+image=https://magiccards.info/scans/en/shm/34.jpg
 value=4.364
 rarity=U
 type=Creature

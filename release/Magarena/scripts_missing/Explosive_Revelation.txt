@@ -1,5 +1,5 @@
 name=Explosive Revelation
-image=http://magiccards.info/scans/en/roe/143.jpg
+image=https://magiccards.info/scans/en/roe/143.jpg
 value=3.116
 rarity=U
 type=Sorcery

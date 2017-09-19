@@ -1,5 +1,5 @@
 name=Wheel of Sun and Moon
-image=http://magiccards.info/scans/en/shm/243.jpg
+image=https://magiccards.info/scans/en/shm/243.jpg
 value=4.510
 rarity=R
 type=Enchantment

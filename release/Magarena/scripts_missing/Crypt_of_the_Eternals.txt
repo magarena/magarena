@@ -1,5 +1,5 @@
 name=Crypt of the Eternals
-image=http://magiccards.info/scans/en/hou/169.jpg
+image=https://magiccards.info/scans/en/hou/169.jpg
 value=2.500
 rarity=U
 type=Land

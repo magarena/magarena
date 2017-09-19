@@ -1,5 +1,5 @@
 name=Auriok Survivors
-image=http://magiccards.info/scans/en/nph/3.jpg
+image=https://magiccards.info/scans/en/nph/3.jpg
 value=2.890
 rarity=U
 type=Creature

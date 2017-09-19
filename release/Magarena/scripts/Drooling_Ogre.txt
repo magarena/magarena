@@ -1,5 +1,5 @@
 name=Drooling Ogre
-image=http://magiccards.info/scans/en/ds/58.jpg
+image=https://magiccards.info/scans/en/ds/58.jpg
 value=2.987
 rarity=C
 type=Creature

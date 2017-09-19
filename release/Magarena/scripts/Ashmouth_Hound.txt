@@ -1,5 +1,5 @@
 name=Ashmouth Hound
-image=http://magiccards.info/scans/en/isd/128.jpg
+image=https://magiccards.info/scans/en/isd/128.jpg
 image_updated=2016-11-20
 value=3.375
 rarity=C

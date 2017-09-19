@@ -1,5 +1,5 @@
 name=Livewire Lash
-image=http://magiccards.info/scans/en/som/172.jpg
+image=https://magiccards.info/scans/en/som/172.jpg
 value=3.932
 rarity=R
 type=Artifact

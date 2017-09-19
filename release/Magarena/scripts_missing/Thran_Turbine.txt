@@ -1,5 +1,5 @@
 name=Thran Turbine
-image=http://magiccards.info/scans/en/us/311.jpg
+image=https://magiccards.info/scans/en/us/311.jpg
 value=4.312
 rarity=U
 type=Artifact

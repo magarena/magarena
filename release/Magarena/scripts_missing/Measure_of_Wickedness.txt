@@ -1,5 +1,5 @@
 name=Measure of Wickedness
-image=http://magiccards.info/scans/en/sok/82.jpg
+image=https://magiccards.info/scans/en/sok/82.jpg
 value=3.852
 rarity=U
 type=Enchantment

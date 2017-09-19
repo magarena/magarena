@@ -1,5 +1,5 @@
 name=Skyscribing
-image=http://magiccards.info/scans/en/cmd/61.jpg
+image=https://magiccards.info/scans/en/cmd/61.jpg
 value=3.679
 rarity=U
 type=Sorcery

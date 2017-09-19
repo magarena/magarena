@@ -1,5 +1,5 @@
 name=Wild Growth
-image=http://magiccards.info/scans/en/7e/282.jpg
+image=https://magiccards.info/scans/en/7e/282.jpg
 value=3.917
 rarity=C
 type=Enchantment

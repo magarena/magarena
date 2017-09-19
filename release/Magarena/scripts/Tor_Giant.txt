@@ -1,5 +1,5 @@
 name=Tor Giant
-image=http://magiccards.info/scans/en/ia/220.jpg
+image=https://magiccards.info/scans/en/ia/220.jpg
 value=2.125
 rarity=C
 type=Creature

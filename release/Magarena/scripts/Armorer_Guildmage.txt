@@ -1,5 +1,5 @@
 name=Armorer Guildmage
-image=http://magiccards.info/scans/en/mr/156.jpg
+image=https://magiccards.info/scans/en/mr/156.jpg
 value=2.353
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hero of Iroas
-image=http://magiccards.info/scans/en/bng/17.jpg
+image=https://magiccards.info/scans/en/bng/17.jpg
 value=3.821
 rarity=R
 type=Creature

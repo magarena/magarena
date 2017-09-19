@@ -1,5 +1,5 @@
 name=Ironfang
-image=http://magiccards.info/scans/en/isd/168b.jpg
+image=https://magiccards.info/scans/en/isd/168b.jpg
 value=3.000
 rarity=C
 type=Creature

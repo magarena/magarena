@@ -1,5 +1,5 @@
 name=Gather the Townsfolk
-image=http://magiccards.info/scans/en/dka/8.jpg
+image=https://magiccards.info/scans/en/dka/8.jpg
 value=3.856
 rarity=C
 type=Sorcery

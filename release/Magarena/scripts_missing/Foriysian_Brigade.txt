@@ -1,5 +1,5 @@
 name=Foriysian Brigade
-image=http://magiccards.info/scans/en/wl/130.jpg
+image=https://magiccards.info/scans/en/wl/130.jpg
 value=2.885
 rarity=U
 type=Creature

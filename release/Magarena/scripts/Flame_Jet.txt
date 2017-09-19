@@ -1,5 +1,5 @@
 name=Flame Jet
-image=http://magiccards.info/scans/en/ud/81.jpg
+image=https://magiccards.info/scans/en/ud/81.jpg
 value=3.015
 rarity=C
 type=Sorcery

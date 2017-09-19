@@ -1,5 +1,5 @@
 name=Galvanic Arc
-image=http://magiccards.info/scans/en/rav/126.jpg
+image=https://magiccards.info/scans/en/rav/126.jpg
 value=3.417
 rarity=C
 type=Enchantment

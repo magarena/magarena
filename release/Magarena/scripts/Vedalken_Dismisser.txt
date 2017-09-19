@@ -1,5 +1,5 @@
 name=Vedalken Dismisser
-image=http://magiccards.info/scans/en/mma/69.jpg
+image=https://magiccards.info/scans/en/mma/69.jpg
 value=2.342
 rarity=C
 type=Creature

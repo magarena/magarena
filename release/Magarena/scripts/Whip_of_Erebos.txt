@@ -1,5 +1,5 @@
 name=Whip of Erebos
-image=http://magiccards.info/scans/en/ths/110.jpg
+image=https://magiccards.info/scans/en/ths/110.jpg
 value=3.601
 rarity=R
 type=Legendary,Enchantment,Artifact

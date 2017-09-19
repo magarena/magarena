@@ -1,5 +1,5 @@
 name=Orcish Settlers
-image=http://magiccards.info/scans/en/wl/112.jpg
+image=https://magiccards.info/scans/en/wl/112.jpg
 value=4.300
 rarity=U
 type=Creature

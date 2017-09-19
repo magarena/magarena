@@ -1,5 +1,5 @@
 name=Ravenous Demon
-image=http://magiccards.info/scans/en/dka/71a.jpg
+image=https://magiccards.info/scans/en/dka/71a.jpg
 value=3.273
 rarity=R
 type=Creature

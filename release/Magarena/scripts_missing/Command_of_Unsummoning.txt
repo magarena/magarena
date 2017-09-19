@@ -1,5 +1,5 @@
 name=Command of Unsummoning
-image=http://magiccards.info/scans/en/po/49.jpg
+image=https://magiccards.info/scans/en/po/49.jpg
 value=2.554
 rarity=U
 type=Instant

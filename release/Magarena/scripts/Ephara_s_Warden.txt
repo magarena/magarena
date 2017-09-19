@@ -1,5 +1,5 @@
 name=Ephara's Warden
-image=http://magiccards.info/scans/en/ths/10.jpg
+image=https://magiccards.info/scans/en/ths/10.jpg
 value=2.016
 rarity=C
 type=Creature

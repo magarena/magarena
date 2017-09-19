@@ -1,5 +1,5 @@
 name=Scar
-image=http://magiccards.info/scans/en/shm/194.jpg
+image=https://magiccards.info/scans/en/shm/194.jpg
 value=3.045
 removal=1
 rarity=C

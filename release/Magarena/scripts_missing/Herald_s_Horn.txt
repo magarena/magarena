@@ -1,5 +1,5 @@
 name=Herald's Horn
-image=http://magiccards.info/scans/en/c17/53.jpg
+image=https://magiccards.info/scans/en/c17/53.jpg
 value=2.500
 rarity=U
 type=Artifact

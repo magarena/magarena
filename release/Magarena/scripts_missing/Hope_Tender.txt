@@ -1,5 +1,5 @@
 name=Hope Tender
-image=http://magiccards.info/scans/en/hou/119.jpg
+image=https://magiccards.info/scans/en/hou/119.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sower of Temptation
-image=http://magiccards.info/scans/en/lw/88.jpg
+image=https://magiccards.info/scans/en/lw/88.jpg
 value=4.449
 rarity=R
 type=Creature

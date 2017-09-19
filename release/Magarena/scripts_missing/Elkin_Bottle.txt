@@ -1,5 +1,5 @@
 name=Elkin Bottle
-image=http://magiccards.info/scans/en/5e/367.jpg
+image=https://magiccards.info/scans/en/5e/367.jpg
 value=3.340
 rarity=R
 type=Artifact

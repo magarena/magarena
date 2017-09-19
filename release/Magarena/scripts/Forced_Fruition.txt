@@ -1,5 +1,5 @@
 name=Forced Fruition
-image=http://magiccards.info/scans/en/lw/66.jpg
+image=https://magiccards.info/scans/en/lw/66.jpg
 value=4.127
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Tribal Golem
-image=http://magiccards.info/scans/en/on/311.jpg
+image=https://magiccards.info/scans/en/on/311.jpg
 value=3.635
 rarity=R
 type=Artifact,Creature

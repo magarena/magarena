@@ -1,5 +1,5 @@
 name=Scythe of the Wretched
-image=http://magiccards.info/scans/en/mi/239.jpg
+image=https://magiccards.info/scans/en/mi/239.jpg
 value=4.380
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Burning Palm Efreet
-image=http://magiccards.info/scans/en/mr/161.jpg
+image=https://magiccards.info/scans/en/mr/161.jpg
 value=3.677
 rarity=U
 type=Creature

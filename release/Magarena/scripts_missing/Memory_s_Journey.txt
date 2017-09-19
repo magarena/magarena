@@ -1,5 +1,5 @@
 name=Memory's Journey
-image=http://magiccards.info/scans/en/isd/66.jpg
+image=https://magiccards.info/scans/en/isd/66.jpg
 value=4.185
 rarity=U
 type=Instant

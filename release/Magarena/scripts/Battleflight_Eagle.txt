@@ -1,5 +1,5 @@
 name=Battleflight Eagle
-image=http://magiccards.info/scans/en/m13/7.jpg
+image=https://magiccards.info/scans/en/m13/7.jpg
 value=1.784
 rarity=C
 type=Creature

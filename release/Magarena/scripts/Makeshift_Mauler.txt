@@ -1,5 +1,5 @@
 name=Makeshift Mauler
-image=http://magiccards.info/scans/en/isd/65.jpg
+image=https://magiccards.info/scans/en/isd/65.jpg
 value=3.160
 rarity=C
 type=Creature

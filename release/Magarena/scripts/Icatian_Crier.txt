@@ -1,5 +1,5 @@
 name=Icatian Crier
-image=http://magiccards.info/scans/en/ts/23.jpg
+image=https://magiccards.info/scans/en/ts/23.jpg
 value=3.062
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Akki Avalanchers
-image=http://magiccards.info/scans/en/chk/151.jpg
+image=https://magiccards.info/scans/en/chk/151.jpg
 value=2.317
 rarity=C
 type=Creature

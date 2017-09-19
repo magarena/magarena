@@ -1,5 +1,5 @@
 name=Gnaw to the Bone
-image=http://magiccards.info/scans/en/isd/183.jpg
+image=https://magiccards.info/scans/en/isd/183.jpg
 value=3.581
 rarity=C
 type=Instant

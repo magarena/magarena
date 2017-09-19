@@ -1,5 +1,5 @@
 name=Mtenda Lion
-image=http://magiccards.info/scans/en/mr/128.jpg
+image=https://magiccards.info/scans/en/mr/128.jpg
 value=4.076
 rarity=C
 type=Creature

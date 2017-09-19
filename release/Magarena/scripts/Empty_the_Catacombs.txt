@@ -1,5 +1,5 @@
 name=Empty the Catacombs
-image=http://magiccards.info/scans/en/rav/86.jpg
+image=https://magiccards.info/scans/en/rav/86.jpg
 value=2.879
 rarity=R
 type=Sorcery

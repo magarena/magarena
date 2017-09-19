@@ -1,5 +1,5 @@
 name=Seal of Fire
-image=http://magiccards.info/scans/en/di/71.jpg
+image=https://magiccards.info/scans/en/di/71.jpg
 image_updated=2017-01-07
 value=4.160
 removal=2

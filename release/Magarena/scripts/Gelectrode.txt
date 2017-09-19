@@ -1,5 +1,5 @@
 name=Gelectrode
-image=http://magiccards.info/scans/en/gp/113.jpg
+image=https://magiccards.info/scans/en/gp/113.jpg
 value=4.032
 rarity=U
 type=Creature

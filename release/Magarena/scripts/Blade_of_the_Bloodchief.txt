@@ -1,5 +1,5 @@
 name=Blade of the Bloodchief
-image=http://magiccards.info/scans/en/zen/196.jpg
+image=https://magiccards.info/scans/en/zen/196.jpg
 value=4.035
 rarity=R
 type=Artifact

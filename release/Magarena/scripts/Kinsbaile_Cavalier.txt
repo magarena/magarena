@@ -1,5 +1,5 @@
 name=Kinsbaile Cavalier
-image=http://magiccards.info/scans/en/mt/15.jpg
+image=https://magiccards.info/scans/en/mt/15.jpg
 value=3.787
 rarity=R
 type=Creature

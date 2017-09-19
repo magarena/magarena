@@ -1,5 +1,5 @@
 name=Blightspeaker
-image=http://magiccards.info/scans/en/mma/73.jpg
+image=https://magiccards.info/scans/en/mma/73.jpg
 value=3.824
 rarity=C
 type=Creature

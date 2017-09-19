@@ -1,5 +1,5 @@
 name=Jasmine Boreal
-image=http://magiccards.info/scans/en/tsts/93.jpg
+image=https://magiccards.info/scans/en/tsts/93.jpg
 value=1.795
 rarity=U
 type=Legendary,Creature

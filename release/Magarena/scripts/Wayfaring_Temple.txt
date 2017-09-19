@@ -1,5 +1,5 @@
 name=Wayfaring Temple
-image=http://magiccards.info/scans/en/mm3/202.jpg
+image=https://magiccards.info/scans/en/mm3/202.jpg
 image_updated=2017-08-08
 value=3.892
 rarity=U

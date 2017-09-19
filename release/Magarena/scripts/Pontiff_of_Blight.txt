@@ -1,5 +1,5 @@
 name=Pontiff of Blight
-image=http://magiccards.info/scans/en/c14/155.jpg
+image=https://magiccards.info/scans/en/c14/155.jpg
 value=3.791
 rarity=R
 type=Creature

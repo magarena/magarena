@@ -1,5 +1,5 @@
 name=Pinpoint Avalanche
-image=http://magiccards.info/scans/en/on/221.jpg
+image=https://magiccards.info/scans/en/on/221.jpg
 value=2.121
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Benalish Heralds
-image=http://magiccards.info/scans/en/in/6.jpg
+image=https://magiccards.info/scans/en/in/6.jpg
 value=2.547
 rarity=U
 type=Creature

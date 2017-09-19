@@ -1,5 +1,5 @@
 name=Glissa's Courier
-image=http://magiccards.info/scans/en/mbs/80.jpg
+image=https://magiccards.info/scans/en/mbs/80.jpg
 value=2.554
 rarity=C
 type=Creature

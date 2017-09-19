@@ -1,5 +1,5 @@
 name=Krovikan Mist
-image=http://magiccards.info/scans/en/cs/38.jpg
+image=https://magiccards.info/scans/en/cs/38.jpg
 value=4.038
 rarity=C
 type=Creature

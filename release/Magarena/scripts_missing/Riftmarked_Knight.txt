@@ -1,5 +1,5 @@
 name=Riftmarked Knight
-image=http://magiccards.info/scans/en/pc/14.jpg
+image=https://magiccards.info/scans/en/pc/14.jpg
 value=3.722
 rarity=U
 type=Creature

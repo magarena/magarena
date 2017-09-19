@@ -1,5 +1,5 @@
 name=Pinecrest Ridge
-image=http://magiccards.info/scans/en/chk/281.jpg
+image=https://magiccards.info/scans/en/chk/281.jpg
 value=2.134
 rarity=U
 type=Land

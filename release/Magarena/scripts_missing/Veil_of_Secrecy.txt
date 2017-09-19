@@ -1,5 +1,5 @@
 name=Veil of Secrecy
-image=http://magiccards.info/scans/en/bok/59.jpg
+image=https://magiccards.info/scans/en/bok/59.jpg
 value=3.355
 rarity=C
 type=Instant

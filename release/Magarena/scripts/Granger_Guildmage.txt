@@ -1,5 +1,5 @@
 name=Granger Guildmage
-image=http://magiccards.info/scans/en/mr/118.jpg
+image=https://magiccards.info/scans/en/mr/118.jpg
 value=3.422
 rarity=C
 type=Creature

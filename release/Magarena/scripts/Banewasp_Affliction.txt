@@ -1,5 +1,5 @@
 name=Banewasp Affliction
-image=http://magiccards.info/scans/en/ala/65.jpg
+image=https://magiccards.info/scans/en/ala/65.jpg
 value=2.264
 rarity=C
 type=Enchantment

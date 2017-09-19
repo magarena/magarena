@@ -1,5 +1,5 @@
 name=Yawgmoth's Agenda
-image=http://magiccards.info/scans/en/in/135.jpg
+image=https://magiccards.info/scans/en/in/135.jpg
 value=4.000
 rarity=R
 type=Enchantment

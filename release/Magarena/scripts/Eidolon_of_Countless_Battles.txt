@@ -1,5 +1,5 @@
 name=Eidolon of Countless Battles
-image=http://magiccards.info/scans/en/bng/7.jpg
+image=https://magiccards.info/scans/en/bng/7.jpg
 value=3.846
 rarity=R
 type=Enchantment,Creature

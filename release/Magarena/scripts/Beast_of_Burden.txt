@@ -1,5 +1,5 @@
 name=Beast of Burden
-image=http://magiccards.info/scans/en/9e/288.jpg
+image=https://magiccards.info/scans/en/9e/288.jpg
 value=3.517
 rarity=R
 type=Artifact,Creature

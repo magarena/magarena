@@ -1,5 +1,5 @@
 name=Fusion Elemental
-image=http://magiccards.info/scans/en/pc2/93.jpg
+image=https://magiccards.info/scans/en/pc2/93.jpg
 value=3.041
 rarity=U
 type=Creature

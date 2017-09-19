@@ -1,5 +1,5 @@
 name=Idle Thoughts
-image=http://magiccards.info/scans/en/eve/23.jpg
+image=https://magiccards.info/scans/en/eve/23.jpg
 value=2.600
 rarity=U
 type=Enchantment

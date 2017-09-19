@@ -1,5 +1,5 @@
 name=Ritual of Steel
-image=http://magiccards.info/scans/en/mr/240.jpg
+image=https://magiccards.info/scans/en/mr/240.jpg
 value=1.758
 rarity=C
 type=Enchantment

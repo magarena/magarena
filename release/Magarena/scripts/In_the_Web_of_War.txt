@@ -1,5 +1,5 @@
 name=In the Web of War
-image=http://magiccards.info/scans/en/bok/108.jpg
+image=https://magiccards.info/scans/en/bok/108.jpg
 value=3.806
 rarity=R
 type=Enchantment

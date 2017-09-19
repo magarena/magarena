@@ -1,5 +1,5 @@
 name=Ethersworn Canonist
-image=http://magiccards.info/scans/en/mma/14.jpg
+image=https://magiccards.info/scans/en/mma/14.jpg
 value=4.547
 rarity=R
 type=Artifact,Creature

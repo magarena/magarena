@@ -1,5 +1,5 @@
 name=Eye for an Eye
-image=http://magiccards.info/scans/en/5e/306.jpg
+image=https://magiccards.info/scans/en/5e/306.jpg
 value=3.750
 rarity=R
 type=Instant

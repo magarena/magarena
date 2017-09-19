@@ -1,5 +1,5 @@
 name=Prototype Portal
-image=http://magiccards.info/scans/en/som/195.jpg
+image=https://magiccards.info/scans/en/som/195.jpg
 value=4.151
 rarity=R
 type=Artifact

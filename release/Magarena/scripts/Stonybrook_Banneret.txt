@@ -1,5 +1,5 @@
 name=Stonybrook Banneret
-image=http://magiccards.info/scans/en/mt/51.jpg
+image=https://magiccards.info/scans/en/mt/51.jpg
 value=4.282
 rarity=C
 type=Creature

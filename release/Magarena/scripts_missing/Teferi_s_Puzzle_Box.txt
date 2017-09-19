@@ -1,5 +1,5 @@
 name=Teferi's Puzzle Box
-image=http://magiccards.info/scans/en/9e/312.jpg
+image=https://magiccards.info/scans/en/9e/312.jpg
 value=4.448
 rarity=R
 type=Artifact

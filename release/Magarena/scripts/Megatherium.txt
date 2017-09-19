@@ -1,5 +1,5 @@
 name=Megatherium
-image=http://magiccards.info/scans/en/mm/259.jpg
+image=https://magiccards.info/scans/en/mm/259.jpg
 value=3.161
 rarity=R
 type=Creature

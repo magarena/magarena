@@ -1,5 +1,5 @@
 name=Raging Cougar
-image=http://magiccards.info/scans/en/po/149.jpg
+image=https://magiccards.info/scans/en/po/149.jpg
 value=2.786
 rarity=C
 type=Creature

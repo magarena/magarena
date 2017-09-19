@@ -1,5 +1,5 @@
 name=Magmatic Core
-image=http://magiccards.info/scans/en/cs/91.jpg
+image=https://magiccards.info/scans/en/cs/91.jpg
 value=3.826
 rarity=U
 type=Enchantment

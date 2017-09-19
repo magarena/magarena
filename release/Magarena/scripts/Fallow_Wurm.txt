@@ -1,5 +1,5 @@
 name=Fallow Wurm
-image=http://magiccards.info/scans/en/wl/68.jpg
+image=https://magiccards.info/scans/en/wl/68.jpg
 value=3.155
 rarity=U
 type=Creature

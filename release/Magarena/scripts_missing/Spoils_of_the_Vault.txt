@@ -1,5 +1,5 @@
 name=Spoils of the Vault
-image=http://magiccards.info/scans/en/mi/78.jpg
+image=https://magiccards.info/scans/en/mi/78.jpg
 value=4.167
 rarity=R
 type=Instant

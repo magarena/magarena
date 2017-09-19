@@ -1,5 +1,5 @@
 name=Jungle Basin
-image=http://magiccards.info/scans/en/c14/302.jpg
+image=https://magiccards.info/scans/en/c14/302.jpg
 value=2.500
 rarity=U
 type=Land

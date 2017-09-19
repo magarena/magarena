@@ -1,5 +1,5 @@
 name=Aboshan, Cephalid Emperor
-image=http://magiccards.info/scans/en/od/58.jpg
+image=https://magiccards.info/scans/en/od/58.jpg
 value=3.918
 rarity=R
 type=Legendary,Creature

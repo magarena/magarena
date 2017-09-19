@@ -1,5 +1,5 @@
 name=Minotaur Illusionist
-image=http://magiccards.info/scans/en/ap/111.jpg
+image=https://magiccards.info/scans/en/ap/111.jpg
 value=3.184
 rarity=U
 type=Creature

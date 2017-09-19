@@ -1,5 +1,5 @@
 name=Kozilek's Predator
-image=http://magiccards.info/scans/en/mm2/147.jpg
+image=https://magiccards.info/scans/en/mm2/147.jpg
 value=3.957
 rarity=C
 type=Creature

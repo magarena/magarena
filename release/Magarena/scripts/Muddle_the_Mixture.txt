@@ -1,5 +1,5 @@
 name=Muddle the Mixture
-image=http://magiccards.info/scans/en/rav/60.jpg
+image=https://magiccards.info/scans/en/rav/60.jpg
 value=4.552
 rarity=C
 type=Instant

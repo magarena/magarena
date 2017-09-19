@@ -1,5 +1,5 @@
 name=Reinforced Bulwark
-image=http://magiccards.info/scans/en/roe/223.jpg
+image=https://magiccards.info/scans/en/roe/223.jpg
 value=2.372
 rarity=C
 type=Artifact,Creature

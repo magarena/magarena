@@ -1,5 +1,5 @@
 name=Underworld Cerberus
-image=http://magiccards.info/scans/en/ths/208.jpg
+image=https://magiccards.info/scans/en/ths/208.jpg
 value=3.655
 rarity=M
 type=Creature

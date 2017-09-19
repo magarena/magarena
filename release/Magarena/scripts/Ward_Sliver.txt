@@ -1,5 +1,5 @@
 name=Ward Sliver
-image=http://magiccards.info/scans/en/le/25.jpg
+image=https://magiccards.info/scans/en/le/25.jpg
 value=3.984
 rarity=U
 type=Creature

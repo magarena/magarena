@@ -1,5 +1,5 @@
 name=Welding Jar
-image=http://magiccards.info/scans/en/mi/274.jpg
+image=https://magiccards.info/scans/en/mi/274.jpg
 value=4.132
 rarity=C
 type=Artifact

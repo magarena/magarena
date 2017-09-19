@@ -1,5 +1,5 @@
 name=Devour Flesh
-image=http://magiccards.info/scans/en/gtc/63.jpg
+image=https://magiccards.info/scans/en/gtc/63.jpg
 value=3.529
 removal=3
 rarity=C

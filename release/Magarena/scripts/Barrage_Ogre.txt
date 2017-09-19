@@ -1,5 +1,5 @@
 name=Barrage Ogre
-image=http://magiccards.info/scans/en/som/83.jpg
+image=https://magiccards.info/scans/en/som/83.jpg
 value=2.685
 rarity=U
 type=Creature

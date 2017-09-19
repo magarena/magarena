@@ -1,5 +1,5 @@
 name=Reshape
-image=http://magiccards.info/scans/en/ds/31.jpg
+image=https://magiccards.info/scans/en/ds/31.jpg
 value=3.803
 rarity=R
 type=Sorcery

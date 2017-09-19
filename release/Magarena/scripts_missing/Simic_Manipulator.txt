@@ -1,5 +1,5 @@
 name=Simic Manipulator
-image=http://magiccards.info/scans/en/gtc/50.jpg
+image=https://magiccards.info/scans/en/gtc/50.jpg
 value=3.582
 rarity=R
 type=Creature

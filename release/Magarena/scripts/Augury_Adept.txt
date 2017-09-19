@@ -1,5 +1,5 @@
 name=Augury Adept
-image=http://magiccards.info/scans/en/shm/137.jpg
+image=https://magiccards.info/scans/en/shm/137.jpg
 value=4.481
 rarity=R
 type=Creature

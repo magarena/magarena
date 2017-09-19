@@ -1,5 +1,5 @@
 name=Stream of Acid
-image=http://magiccards.info/scans/en/st/91.jpg
+image=https://magiccards.info/scans/en/st/91.jpg
 value=3.562
 rarity=U
 type=Sorcery

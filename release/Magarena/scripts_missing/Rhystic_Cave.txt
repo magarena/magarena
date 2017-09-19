@@ -1,5 +1,5 @@
 name=Rhystic Cave
-image=http://magiccards.info/scans/en/pr/142.jpg
+image=https://magiccards.info/scans/en/pr/142.jpg
 value=2.288
 rarity=U
 type=Land

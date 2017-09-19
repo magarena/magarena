@@ -1,5 +1,5 @@
 name=Gossamer Phantasm
-image=http://magiccards.info/scans/en/pc/55.jpg
+image=https://magiccards.info/scans/en/pc/55.jpg
 value=2.398
 rarity=C
 type=Creature

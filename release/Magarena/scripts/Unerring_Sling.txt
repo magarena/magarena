@@ -1,5 +1,5 @@
 name=Unerring Sling
-image=http://magiccards.info/scans/en/mr/287.jpg
+image=https://magiccards.info/scans/en/mr/287.jpg
 value=2.152
 rarity=U
 type=Artifact

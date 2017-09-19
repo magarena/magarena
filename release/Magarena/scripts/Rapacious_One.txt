@@ -1,5 +1,5 @@
 name=Rapacious One
-image=http://magiccards.info/scans/en/cmd/133.jpg
+image=https://magiccards.info/scans/en/cmd/133.jpg
 value=3.707
 rarity=U
 type=Creature

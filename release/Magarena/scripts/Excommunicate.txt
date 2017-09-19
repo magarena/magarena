@@ -1,5 +1,5 @@
 name=Excommunicate
-image=http://magiccards.info/scans/en/m11/14.jpg
+image=https://magiccards.info/scans/en/m11/14.jpg
 value=2.719
 rarity=C
 type=Sorcery

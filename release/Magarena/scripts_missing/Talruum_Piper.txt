@@ -1,5 +1,5 @@
 name=Talruum Piper
-image=http://magiccards.info/scans/en/vi/98.jpg
+image=https://magiccards.info/scans/en/vi/98.jpg
 value=3.403
 rarity=U
 type=Creature

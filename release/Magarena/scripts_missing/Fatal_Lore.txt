@@ -1,5 +1,5 @@
 name=Fatal Lore
-image=http://magiccards.info/scans/en/ai/7.jpg
+image=https://magiccards.info/scans/en/ai/7.jpg
 value=2.932
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Library of Lat-Nam
-image=http://magiccards.info/scans/en/6e/78.jpg
+image=https://magiccards.info/scans/en/6e/78.jpg
 value=3.118
 rarity=R
 type=Sorcery

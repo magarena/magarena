@@ -1,5 +1,5 @@
 name=Awe for the Guilds
-image=http://magiccards.info/scans/en/dgm/31.jpg
+image=https://magiccards.info/scans/en/dgm/31.jpg
 value=1.908
 rarity=C
 type=Sorcery

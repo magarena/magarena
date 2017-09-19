@@ -1,5 +1,5 @@
 name=Planeswalker's Scorn
-image=http://magiccards.info/scans/en/ps/52.jpg
+image=https://magiccards.info/scans/en/ps/52.jpg
 value=3.446
 rarity=R
 type=Enchantment

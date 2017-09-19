@@ -1,6 +1,6 @@
 name=green Elemental creature token
 token=Elemental
-image=http://magiccards.info/extras/token/oath-of-the-gatewatch/elemental-2.jpg
+image=https://magiccards.info/extras/token/oath-of-the-gatewatch/elemental-2.jpg
 value=1
 type=Creature
 subtype=Elemental

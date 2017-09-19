@@ -1,5 +1,5 @@
 name=Mournwhelk
-image=http://magiccards.info/scans/en/lw/127.jpg
+image=https://magiccards.info/scans/en/lw/127.jpg
 value=2.176
 rarity=C
 type=Creature

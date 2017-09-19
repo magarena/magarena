@@ -1,5 +1,5 @@
 name=Bronze Bombshell
-image=http://magiccards.info/scans/en/di/160.jpg
+image=https://magiccards.info/scans/en/di/160.jpg
 value=3.684
 rarity=R
 type=Artifact,Creature

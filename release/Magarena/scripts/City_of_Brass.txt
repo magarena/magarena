@@ -1,5 +1,5 @@
 name=City of Brass
-image=http://magiccards.info/scans/en/mma/221.jpg
+image=https://magiccards.info/scans/en/mma/221.jpg
 value=4.562
 rarity=R
 type=Land

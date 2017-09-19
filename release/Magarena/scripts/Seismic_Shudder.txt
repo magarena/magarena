@@ -1,5 +1,5 @@
 name=Seismic Shudder
-image=http://magiccards.info/scans/en/zen/147.jpg
+image=https://magiccards.info/scans/en/zen/147.jpg
 value=2.745
 rarity=C
 type=Instant

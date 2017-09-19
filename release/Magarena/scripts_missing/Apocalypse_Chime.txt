@@ -1,5 +1,5 @@
 name=Apocalypse Chime
-image=http://magiccards.info/scans/en/hl/126.jpg
+image=https://magiccards.info/scans/en/hl/126.jpg
 value=2.872
 rarity=R
 type=Artifact

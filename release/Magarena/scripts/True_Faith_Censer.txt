@@ -1,5 +1,5 @@
 name=True-Faith Censer
-image=http://magiccards.info/scans/en/soi/267.jpg
+image=https://magiccards.info/scans/en/soi/267.jpg
 value=2.500
 rarity=C
 type=Artifact

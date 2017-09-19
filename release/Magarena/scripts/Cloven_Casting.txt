@@ -1,5 +1,5 @@
 name=Cloven Casting
-image=http://magiccards.info/scans/en/arb/86.jpg
+image=https://magiccards.info/scans/en/arb/86.jpg
 value=2.847
 rarity=R
 type=Enchantment

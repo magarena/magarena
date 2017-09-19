@@ -1,5 +1,5 @@
 name=Teferi's Care
-image=http://magiccards.info/scans/en/in/43.jpg
+image=https://magiccards.info/scans/en/in/43.jpg
 value=2.344
 rarity=U
 type=Enchantment

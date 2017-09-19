@@ -1,5 +1,5 @@
 name=Battery
-image=http://magiccards.info/scans/en/in/295b.jpg
+image=https://magiccards.info/scans/en/in/295b.jpg
 image_updated=2016-12-13
 value=3.628
 rarity=U

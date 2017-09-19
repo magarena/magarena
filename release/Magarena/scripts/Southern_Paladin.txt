@@ -1,5 +1,5 @@
 name=Southern Paladin
-image=http://magiccards.info/scans/en/7e/46.jpg
+image=https://magiccards.info/scans/en/7e/46.jpg
 value=3.683
 rarity=R
 type=Creature

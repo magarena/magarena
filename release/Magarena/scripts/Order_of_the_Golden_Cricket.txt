@@ -1,5 +1,5 @@
 name=Order of the Golden Cricket
-image=http://magiccards.info/scans/en/mt/19.jpg
+image=https://magiccards.info/scans/en/mt/19.jpg
 value=3.120
 rarity=C
 type=Creature

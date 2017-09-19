@@ -1,5 +1,5 @@
 name=Shadow Slice
-image=http://magiccards.info/scans/en/gtc/77.jpg
+image=https://magiccards.info/scans/en/gtc/77.jpg
 value=2.472
 rarity=C
 type=Sorcery

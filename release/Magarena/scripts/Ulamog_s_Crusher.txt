@@ -1,5 +1,5 @@
 name=Ulamog's Crusher
-image=http://magiccards.info/scans/en/mm2/7.jpg
+image=https://magiccards.info/scans/en/mm2/7.jpg
 value=4.109
 rarity=C
 type=Creature

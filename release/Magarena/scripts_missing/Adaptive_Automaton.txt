@@ -1,5 +1,5 @@
 name=Adaptive Automaton
-image=http://magiccards.info/scans/en/m12/201.jpg
+image=https://magiccards.info/scans/en/m12/201.jpg
 value=4.199
 rarity=R
 type=Artifact,Creature

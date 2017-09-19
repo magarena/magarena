@@ -1,5 +1,5 @@
 name=Realmwright
-image=http://magiccards.info/scans/en/gtc/45.jpg
+image=https://magiccards.info/scans/en/gtc/45.jpg
 value=3.906
 rarity=R
 type=Creature

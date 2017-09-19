@@ -1,5 +1,5 @@
 name=Broken Ambitions
-image=http://magiccards.info/scans/en/lw/54.jpg
+image=https://magiccards.info/scans/en/lw/54.jpg
 value=3.538
 rarity=C
 type=Instant

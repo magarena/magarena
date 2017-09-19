@@ -1,5 +1,5 @@
 name=Tribal Forcemage
-image=http://magiccards.info/scans/en/le/142.jpg
+image=https://magiccards.info/scans/en/le/142.jpg
 value=3.894
 rarity=R
 type=Creature

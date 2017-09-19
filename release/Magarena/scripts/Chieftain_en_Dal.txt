@@ -1,5 +1,5 @@
 name=Chieftain en-Dal
-image=http://magiccards.info/scans/en/ne/4.jpg
+image=https://magiccards.info/scans/en/ne/4.jpg
 value=3.621
 rarity=U
 type=Creature

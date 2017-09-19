@@ -1,5 +1,5 @@
 name=Copper Carapace
-image=http://magiccards.info/scans/en/mm2/205.jpg
+image=https://magiccards.info/scans/en/mm2/205.jpg
 value=2.234
 rarity=C
 type=Artifact

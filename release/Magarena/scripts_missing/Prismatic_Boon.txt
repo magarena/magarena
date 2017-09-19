@@ -1,5 +1,5 @@
 name=Prismatic Boon
-image=http://magiccards.info/scans/en/mr/334.jpg
+image=https://magiccards.info/scans/en/mr/334.jpg
 value=3.065
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Panglacial Wurm
-image=http://magiccards.info/scans/en/cs/116.jpg
+image=https://magiccards.info/scans/en/cs/116.jpg
 value=4.198
 rarity=R
 type=Creature

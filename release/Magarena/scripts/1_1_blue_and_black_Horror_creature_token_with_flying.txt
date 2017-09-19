@@ -1,6 +1,6 @@
 name=1/1 blue and black Horror creature token with flying
 token=Horror
-image=http://magiccards.info/extras/token/gatecrash/horror.jpg
+image=https://magiccards.info/extras/token/gatecrash/horror.jpg
 value=1
 type=Creature
 subtype=Horror

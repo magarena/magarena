@@ -1,5 +1,5 @@
 name=Mirran Crusader
-image=http://magiccards.info/scans/en/mm2/25.jpg
+image=https://magiccards.info/scans/en/mm2/25.jpg
 value=4.054
 rarity=R
 type=Creature

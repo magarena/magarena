@@ -1,5 +1,5 @@
 name=Kitsune Palliator
-image=http://magiccards.info/scans/en/bok/14.jpg
+image=https://magiccards.info/scans/en/bok/14.jpg
 value=2.125
 rarity=U
 type=Creature

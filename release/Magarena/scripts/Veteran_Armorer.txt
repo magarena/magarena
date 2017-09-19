@@ -1,5 +1,5 @@
 name=Veteran Armorer
-image=http://magiccards.info/scans/en/mma/34.jpg
+image=https://magiccards.info/scans/en/mma/34.jpg
 value=3.839
 rarity=C
 type=Creature

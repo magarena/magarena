@@ -1,5 +1,5 @@
 name=Torch Song
-image=http://magiccards.info/scans/en/us/222.jpg
+image=https://magiccards.info/scans/en/us/222.jpg
 value=2.646
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Skittering Monstrosity
-image=http://magiccards.info/scans/en/ts/129.jpg
+image=https://magiccards.info/scans/en/ts/129.jpg
 value=1.622
 rarity=U
 type=Creature

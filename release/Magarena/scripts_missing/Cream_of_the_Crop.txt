@@ -1,5 +1,5 @@
 name=Cream of the Crop
-image=http://magiccards.info/scans/en/mt/117.jpg
+image=https://magiccards.info/scans/en/mt/117.jpg
 value=3.607
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Balshan Beguiler
-image=http://magiccards.info/scans/en/od/66.jpg
+image=https://magiccards.info/scans/en/od/66.jpg
 value=2.400
 rarity=U
 type=Creature

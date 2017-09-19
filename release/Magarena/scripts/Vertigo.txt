@@ -1,5 +1,5 @@
 name=Vertigo
-image=http://magiccards.info/scans/en/6e/212.jpg
+image=https://magiccards.info/scans/en/6e/212.jpg
 value=2.362
 rarity=U
 type=Instant

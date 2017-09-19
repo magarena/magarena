@@ -1,5 +1,5 @@
 name=Assault Strobe
-image=http://magiccards.info/scans/en/som/82.jpg
+image=https://magiccards.info/scans/en/som/82.jpg
 value=3.850
 rarity=C
 type=Sorcery

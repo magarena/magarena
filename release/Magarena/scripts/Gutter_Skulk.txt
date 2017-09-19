@@ -1,5 +1,5 @@
 name=Gutter Skulk
-image=http://magiccards.info/scans/en/gtc/67.jpg
+image=https://magiccards.info/scans/en/gtc/67.jpg
 value=2.708
 rarity=C
 type=Creature

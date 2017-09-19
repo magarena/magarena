@@ -1,5 +1,5 @@
 name=Knucklebone Witch
-image=http://magiccards.info/scans/en/lw/120.jpg
+image=https://magiccards.info/scans/en/lw/120.jpg
 value=3.708
 rarity=R
 type=Creature

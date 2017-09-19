@@ -1,5 +1,5 @@
 name=Final Punishment
-image=http://magiccards.info/scans/en/9e/131.jpg
+image=https://magiccards.info/scans/en/9e/131.jpg
 value=2.984
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mental Note
-image=http://magiccards.info/scans/en/ju/46.jpg
+image=https://magiccards.info/scans/en/ju/46.jpg
 value=3.295
 rarity=C
 type=Instant

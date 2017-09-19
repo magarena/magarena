@@ -1,5 +1,5 @@
 name=Baton of Morale
-image=http://magiccards.info/scans/en/ia/288.jpg
+image=https://magiccards.info/scans/en/ia/288.jpg
 value=3.689
 rarity=U
 type=Artifact

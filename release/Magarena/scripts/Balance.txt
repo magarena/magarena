@@ -1,5 +1,5 @@
 name=Balance
-image=http://magiccards.info/scans/en/ema/2.jpg
+image=https://magiccards.info/scans/en/ema/2.jpg
 image_updated=2016-11-20
 value=4.750
 rarity=M

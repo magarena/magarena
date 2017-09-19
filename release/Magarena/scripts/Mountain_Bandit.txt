@@ -1,5 +1,5 @@
 name=Mountain Bandit
-image=http://magiccards.info/scans/en/p3k/117.jpg
+image=https://magiccards.info/scans/en/p3k/117.jpg
 value=3.809
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Manifold Insights
-image=http://magiccards.info/scans/en/c16/10.jpg
+image=https://magiccards.info/scans/en/c16/10.jpg
 image_updated=2016-12-23
 value=2.500
 rarity=R

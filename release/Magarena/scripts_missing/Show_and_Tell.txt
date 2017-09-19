@@ -1,5 +1,5 @@
 name=Show and Tell
-image=http://magiccards.info/scans/en/cn2/121.jpg
+image=https://magiccards.info/scans/en/cn2/121.jpg
 image_updated=2017-08-29
 value=4.593
 rarity=M

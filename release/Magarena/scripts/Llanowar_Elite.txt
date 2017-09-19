@@ -1,5 +1,5 @@
 name=Llanowar Elite
-image=http://magiccards.info/scans/en/in/196.jpg
+image=https://magiccards.info/scans/en/in/196.jpg
 value=3.341
 rarity=C
 type=Creature

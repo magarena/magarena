@@ -1,5 +1,5 @@
 name=Harbor Serpent
-image=http://magiccards.info/scans/en/m13/53.jpg
+image=https://magiccards.info/scans/en/m13/53.jpg
 value=2.395
 rarity=C
 type=Creature

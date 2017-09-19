@@ -1,5 +1,5 @@
 name=Basal Sliver
-image=http://magiccards.info/scans/en/ts/96.jpg
+image=https://magiccards.info/scans/en/ts/96.jpg
 value=3.642
 rarity=C
 type=Creature

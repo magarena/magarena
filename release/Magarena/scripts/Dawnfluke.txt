@@ -1,5 +1,5 @@
 name=Dawnfluke
-image=http://magiccards.info/scans/en/lw/12.jpg
+image=https://magiccards.info/scans/en/lw/12.jpg
 value=2.625
 rarity=C
 type=Creature

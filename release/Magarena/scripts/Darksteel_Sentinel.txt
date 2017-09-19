@@ -1,5 +1,5 @@
 name=Darksteel Sentinel
-image=http://magiccards.info/scans/en/som/152.jpg
+image=https://magiccards.info/scans/en/som/152.jpg
 value=3.192
 rarity=U
 type=Artifact,Creature

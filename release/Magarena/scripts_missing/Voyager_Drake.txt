@@ -1,5 +1,5 @@
 name=Voyager Drake
-image=http://magiccards.info/scans/en/wwk/45.jpg
+image=https://magiccards.info/scans/en/wwk/45.jpg
 value=3.009
 rarity=U
 type=Creature

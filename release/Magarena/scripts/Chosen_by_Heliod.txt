@@ -1,5 +1,5 @@
 name=Chosen by Heliod
-image=http://magiccards.info/scans/en/ths/5.jpg
+image=https://magiccards.info/scans/en/ths/5.jpg
 value=3.028
 rarity=C
 type=Enchantment

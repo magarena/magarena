@@ -1,5 +1,5 @@
 name=Alloy Golem
-image=http://magiccards.info/scans/en/in/297.jpg
+image=https://magiccards.info/scans/en/in/297.jpg
 value=2.073
 rarity=U
 type=Artifact,Creature

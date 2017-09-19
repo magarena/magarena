@@ -1,6 +1,6 @@
 name=2/2 white Knight Ally creature token
 token=Knight Ally
-image=http://magiccards.info/extras/token/battle-for-zendikar/knight-ally.jpg
+image=https://magiccards.info/extras/token/battle-for-zendikar/knight-ally.jpg
 value=2
 type=Creature
 subtype=Knight,Ally

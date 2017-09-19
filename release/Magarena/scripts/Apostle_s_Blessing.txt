@@ -1,5 +1,5 @@
 name=Apostle's Blessing
-image=http://magiccards.info/scans/en/mm2/8.jpg
+image=https://magiccards.info/scans/en/mm2/8.jpg
 value=3.546
 rarity=C
 type=Instant

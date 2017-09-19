@@ -1,5 +1,5 @@
 name=Soul Snuffers
-image=http://magiccards.info/scans/en/eve/45.jpg
+image=https://magiccards.info/scans/en/eve/45.jpg
 value=3.296
 rarity=U
 type=Creature

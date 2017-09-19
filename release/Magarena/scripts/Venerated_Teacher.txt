@@ -1,5 +1,5 @@
 name=Venerated Teacher
-image=http://magiccards.info/scans/en/roe/93.jpg
+image=https://magiccards.info/scans/en/roe/93.jpg
 value=4.145
 rarity=C
 type=Creature

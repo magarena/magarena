@@ -1,5 +1,5 @@
 name=Thran Quarry
-image=http://magiccards.info/scans/en/us/329.jpg
+image=https://magiccards.info/scans/en/us/329.jpg
 value=4.326
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Tromp the Domains
-image=http://magiccards.info/scans/en/mma/171.jpg
+image=https://magiccards.info/scans/en/mma/171.jpg
 value=3.588
 rarity=U
 type=Sorcery

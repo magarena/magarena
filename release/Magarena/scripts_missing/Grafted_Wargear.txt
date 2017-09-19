@@ -1,5 +1,5 @@
 name=Grafted Wargear
-image=http://magiccards.info/scans/en/5dn/126.jpg
+image=https://magiccards.info/scans/en/5dn/126.jpg
 value=4.340
 rarity=U
 type=Artifact

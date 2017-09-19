@@ -1,5 +1,5 @@
 name=Stronghold Zeppelin
-image=http://magiccards.info/scans/en/ne/47.jpg
+image=https://magiccards.info/scans/en/ne/47.jpg
 value=2.844
 rarity=U
 type=Creature

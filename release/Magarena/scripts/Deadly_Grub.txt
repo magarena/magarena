@@ -1,5 +1,5 @@
 name=Deadly Grub
-image=http://magiccards.info/scans/en/pc/69.jpg
+image=https://magiccards.info/scans/en/pc/69.jpg
 value=3.103
 rarity=C
 type=Creature

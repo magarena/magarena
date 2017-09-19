@@ -1,5 +1,5 @@
 name=Ensoul Artifact
-image=http://magiccards.info/scans/en/m15/54.jpg
+image=https://magiccards.info/scans/en/m15/54.jpg
 value=3.700
 rarity=U
 type=Enchantment

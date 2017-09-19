@@ -1,5 +1,5 @@
 name=Catastrophe
-image=http://magiccards.info/scans/en/us/6.jpg
+image=https://magiccards.info/scans/en/us/6.jpg
 image_updated=2016-11-28
 value=4.222
 rarity=R

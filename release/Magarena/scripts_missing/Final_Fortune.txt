@@ -1,5 +1,5 @@
 name=Final Fortune
-image=http://magiccards.info/scans/en/7e/182.jpg
+image=https://magiccards.info/scans/en/7e/182.jpg
 value=4.447
 rarity=R
 type=Instant

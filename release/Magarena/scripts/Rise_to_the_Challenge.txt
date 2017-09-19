@@ -1,5 +1,5 @@
 name=Rise to the Challenge
-image=http://magiccards.info/scans/en/bng/107.jpg
+image=https://magiccards.info/scans/en/bng/107.jpg
 value=2.804
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Sunken City
-image=http://magiccards.info/scans/en/4e/106.jpg
+image=https://magiccards.info/scans/en/4e/106.jpg
 value=3.591
 rarity=C
 type=Enchantment

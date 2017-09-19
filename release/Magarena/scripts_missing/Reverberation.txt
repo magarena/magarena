@@ -1,5 +1,5 @@
 name=Reverberation
-image=http://magiccards.info/scans/en/lg/74.jpg
+image=https://magiccards.info/scans/en/lg/74.jpg
 value=3.017
 rarity=R
 type=Instant

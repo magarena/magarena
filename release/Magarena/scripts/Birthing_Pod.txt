@@ -1,5 +1,5 @@
 name=Birthing Pod
-image=http://magiccards.info/scans/en/nph/104.jpg
+image=https://magiccards.info/scans/en/nph/104.jpg
 value=3.801
 rarity=R
 type=Artifact

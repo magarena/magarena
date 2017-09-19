@@ -1,5 +1,5 @@
 name=Plague Rats
-image=http://magiccards.info/scans/en/5e/50.jpg
+image=https://magiccards.info/scans/en/5e/50.jpg
 value=1.740
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Multani's Decree
-image=http://magiccards.info/scans/en/ud/114.jpg
+image=https://magiccards.info/scans/en/ud/114.jpg
 value=3.983
 rarity=C
 type=Sorcery

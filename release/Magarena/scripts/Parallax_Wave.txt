@@ -1,5 +1,5 @@
 name=Parallax Wave
-image=http://magiccards.info/scans/en/ne/17.jpg
+image=https://magiccards.info/scans/en/ne/17.jpg
 value=4.000
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Crater's Claws
-image=http://magiccards.info/scans/en/ktk/106.jpg
+image=https://magiccards.info/scans/en/ktk/106.jpg
 value=4.000
 rarity=R
 type=Sorcery

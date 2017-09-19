@@ -1,5 +1,5 @@
 name=Bushi Tenderfoot
-image=http://magiccards.info/scans/en/chk/2a.jpg
+image=https://magiccards.info/scans/en/chk/2a.jpg
 value=3.827
 rarity=U
 type=Creature

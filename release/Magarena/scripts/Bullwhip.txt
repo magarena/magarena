@@ -1,5 +1,5 @@
 name=Bullwhip
-image=http://magiccards.info/scans/en/sh/126.jpg
+image=https://magiccards.info/scans/en/sh/126.jpg
 value=3.323
 rarity=U
 type=Artifact

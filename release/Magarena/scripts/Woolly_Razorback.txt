@@ -1,5 +1,5 @@
 name=Woolly Razorback
-image=http://magiccards.info/scans/en/cs/25.jpg
+image=https://magiccards.info/scans/en/cs/25.jpg
 value=3.694
 rarity=R
 type=Creature

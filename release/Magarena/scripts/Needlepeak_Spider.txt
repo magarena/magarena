@@ -1,5 +1,5 @@
 name=Needlepeak Spider
-image=http://magiccards.info/scans/en/pc/105.jpg
+image=https://magiccards.info/scans/en/pc/105.jpg
 value=2.703
 rarity=C
 type=Creature

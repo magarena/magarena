@@ -1,5 +1,5 @@
 name=Desolation Giant
-image=http://magiccards.info/scans/en/ap/59.jpg
+image=https://magiccards.info/scans/en/ap/59.jpg
 image_updated=2016-02-29
 value=3.703
 rarity=R

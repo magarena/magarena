@@ -1,6 +1,6 @@
 name=3/3 green Centaur creature token
 token=Centaur
-image=http://magiccards.info/extras/token/judge/centaur.jpg
+image=https://magiccards.info/extras/token/judge/centaur.jpg
 value=3
 type=Creature
 subtype=Centaur

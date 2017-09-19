@@ -1,5 +1,5 @@
 name=Gilded Cerodon
-image=http://magiccards.info/scans/en/hou/94.jpg
+image=https://magiccards.info/scans/en/hou/94.jpg
 value=2.500
 rarity=C
 type=Creature

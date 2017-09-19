@@ -1,5 +1,5 @@
 name=Experiment Kraj
-image=http://magiccards.info/scans/en/di/110.jpg
+image=https://magiccards.info/scans/en/di/110.jpg
 value=4.193
 rarity=R
 type=Legendary,Creature

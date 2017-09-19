@@ -1,5 +1,5 @@
 name=Necravolver
-image=http://magiccards.info/scans/en/ap/46.jpg
+image=https://magiccards.info/scans/en/ap/46.jpg
 value=4.196
 rarity=R
 type=Creature

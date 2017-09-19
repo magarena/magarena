@@ -1,5 +1,5 @@
 name=Manor Gargoyle
-image=http://magiccards.info/scans/en/isd/228.jpg
+image=https://magiccards.info/scans/en/isd/228.jpg
 value=3.761
 rarity=R
 type=Artifact,Creature

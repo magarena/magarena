@@ -1,5 +1,5 @@
 name=Spite of Mogis
-image=http://magiccards.info/scans/en/jou/113.jpg
+image=https://magiccards.info/scans/en/jou/113.jpg
 value=3.577
 rarity=U
 type=Sorcery

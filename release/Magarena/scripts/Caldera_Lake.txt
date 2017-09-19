@@ -1,5 +1,5 @@
 name=Caldera Lake
-image=http://magiccards.info/scans/en/tp/306.jpg
+image=https://magiccards.info/scans/en/tp/306.jpg
 value=0.500
 rarity=R
 type=Land

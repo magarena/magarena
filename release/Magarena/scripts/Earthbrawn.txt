@@ -1,5 +1,5 @@
 name=Earthbrawn
-image=http://magiccards.info/scans/en/mt/119.jpg
+image=https://magiccards.info/scans/en/mt/119.jpg
 value=2.662
 rarity=C
 type=Instant

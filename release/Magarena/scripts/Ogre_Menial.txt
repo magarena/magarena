@@ -1,5 +1,5 @@
 name=Ogre Menial
-image=http://magiccards.info/scans/en/nph/89.jpg
+image=https://magiccards.info/scans/en/nph/89.jpg
 value=3.048
 rarity=C
 type=Creature

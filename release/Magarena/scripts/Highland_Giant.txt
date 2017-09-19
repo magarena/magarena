@@ -1,5 +1,5 @@
 name=Highland Giant
-image=http://magiccards.info/scans/en/po/137.jpg
+image=https://magiccards.info/scans/en/po/137.jpg
 value=2.812
 rarity=C
 type=Creature

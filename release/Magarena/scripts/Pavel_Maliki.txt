@@ -1,5 +1,5 @@
 name=Pavel Maliki
-image=http://magiccards.info/scans/en/lg/288.jpg
+image=https://magiccards.info/scans/en/lg/288.jpg
 value=1.691
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Plague Spores
-image=http://magiccards.info/scans/en/in/260.jpg
+image=https://magiccards.info/scans/en/in/260.jpg
 value=2.909
 rarity=C
 type=Sorcery

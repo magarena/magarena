@@ -1,5 +1,5 @@
 name=Lightning Hounds
-image=http://magiccards.info/scans/en/mm/201.jpg
+image=https://magiccards.info/scans/en/mm/201.jpg
 value=3.160
 rarity=C
 type=Creature

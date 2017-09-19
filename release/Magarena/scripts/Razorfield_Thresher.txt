@@ -1,5 +1,5 @@
 name=Razorfield Thresher
-image=http://magiccards.info/scans/en/som/197.jpg
+image=https://magiccards.info/scans/en/som/197.jpg
 value=1.739
 rarity=C
 type=Artifact,Creature

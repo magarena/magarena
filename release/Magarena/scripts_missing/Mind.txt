@@ -1,5 +1,5 @@
 name=Mind
-image=http://magiccards.info/scans/en/akh/219b.jpg
+image=https://magiccards.info/scans/en/akh/219b.jpg
 value=2.500
 rarity=U
 type=Instant

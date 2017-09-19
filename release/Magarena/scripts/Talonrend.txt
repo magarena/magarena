@@ -1,5 +1,5 @@
 name=Talonrend
-image=http://magiccards.info/scans/en/eve/30.jpg
+image=https://magiccards.info/scans/en/eve/30.jpg
 value=1.387
 rarity=U
 type=Creature

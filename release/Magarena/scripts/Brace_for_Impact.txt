@@ -1,5 +1,5 @@
 name=Brace for Impact
-image=http://magiccards.info/scans/en/di/5.jpg
+image=https://magiccards.info/scans/en/di/5.jpg
 value=2.351
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Daraja Griffin
-image=http://magiccards.info/scans/en/6e/15.jpg
+image=https://magiccards.info/scans/en/6e/15.jpg
 value=3.347
 rarity=U
 type=Creature

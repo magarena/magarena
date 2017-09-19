@@ -1,5 +1,5 @@
 name=Skyline Predator
-image=http://magiccards.info/scans/en/rtr/50.jpg
+image=https://magiccards.info/scans/en/rtr/50.jpg
 value=2.049
 rarity=U
 type=Creature

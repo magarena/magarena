@@ -1,5 +1,5 @@
 name=Pull from Eternity
-image=http://magiccards.info/scans/en/ts/35.jpg
+image=https://magiccards.info/scans/en/ts/35.jpg
 value=3.777
 rarity=U
 type=Instant

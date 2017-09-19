@@ -1,5 +1,5 @@
 name=Opal Acrolith
-image=http://magiccards.info/scans/en/us/22.jpg
+image=https://magiccards.info/scans/en/us/22.jpg
 value=3.733
 rarity=U
 type=Enchantment

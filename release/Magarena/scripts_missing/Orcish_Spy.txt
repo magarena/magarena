@@ -1,5 +1,5 @@
 name=Orcish Spy
-image=http://magiccards.info/scans/en/8e/208.jpg
+image=https://magiccards.info/scans/en/8e/208.jpg
 value=3.609
 rarity=C
 type=Creature

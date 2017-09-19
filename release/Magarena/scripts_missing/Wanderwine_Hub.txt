@@ -1,5 +1,5 @@
 name=Wanderwine Hub
-image=http://magiccards.info/scans/en/lw/280.jpg
+image=https://magiccards.info/scans/en/lw/280.jpg
 value=3.988
 rarity=R
 type=Land

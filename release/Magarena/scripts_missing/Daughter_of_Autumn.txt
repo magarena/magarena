@@ -1,5 +1,5 @@
 name=Daughter of Autumn
-image=http://magiccards.info/scans/en/hl/56.jpg
+image=https://magiccards.info/scans/en/hl/56.jpg
 value=1.438
 rarity=R
 type=Legendary,Creature

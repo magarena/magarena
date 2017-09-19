@@ -1,5 +1,5 @@
 name=Infested Roothold
-image=http://magiccards.info/scans/en/ds/76.jpg
+image=https://magiccards.info/scans/en/ds/76.jpg
 value=2.855
 rarity=U
 type=Creature

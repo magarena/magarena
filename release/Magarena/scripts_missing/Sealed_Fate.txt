@@ -1,5 +1,5 @@
 name=Sealed Fate
-image=http://magiccards.info/scans/en/mr/342.jpg
+image=https://magiccards.info/scans/en/mr/342.jpg
 value=3.312
 rarity=U
 type=Sorcery

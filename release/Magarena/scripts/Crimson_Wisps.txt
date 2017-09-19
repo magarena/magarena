@@ -1,5 +1,5 @@
 name=Crimson Wisps
-image=http://magiccards.info/scans/en/shm/88.jpg
+image=https://magiccards.info/scans/en/shm/88.jpg
 value=3.240
 rarity=C
 type=Instant

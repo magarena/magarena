@@ -1,5 +1,5 @@
 name=Commander's Authority
-image=http://magiccards.info/scans/en/avr/13.jpg
+image=https://magiccards.info/scans/en/avr/13.jpg
 value=2.048
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Spectral Cloak
-image=http://magiccards.info/scans/en/lg/78.jpg
+image=https://magiccards.info/scans/en/lg/78.jpg
 value=2.092
 rarity=U
 type=Enchantment

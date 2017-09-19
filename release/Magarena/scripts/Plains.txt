@@ -1,5 +1,5 @@
 name=Plains
-image=http://magiccards.info/scans/en/bfz/254b.jpg
+image=https://magiccards.info/scans/en/bfz/254b.jpg
 image_updated=2016-02-29
 value=3.500
 rarity=B

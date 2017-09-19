@@ -1,5 +1,5 @@
 name=Brackwater Elemental
-image=http://magiccards.info/scans/en/cfx/21.jpg
+image=https://magiccards.info/scans/en/cfx/21.jpg
 value=2.879
 rarity=C
 type=Creature

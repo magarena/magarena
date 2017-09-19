@@ -1,5 +1,5 @@
 name=About Face
-image=http://magiccards.info/scans/en/ul/73.jpg
+image=https://magiccards.info/scans/en/ul/73.jpg
 value=3.398
 rarity=C
 type=Instant

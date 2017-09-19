@@ -1,5 +1,5 @@
 name=Wing Splicer
-image=http://magiccards.info/scans/en/mm3/57.jpg
+image=https://magiccards.info/scans/en/mm3/57.jpg
 image_updated=2017-08-08
 value=3.653
 rarity=U

@@ -1,5 +1,5 @@
 name=Timber Shredder
-image=http://magiccards.info/scans/en/soi/210b.jpg
+image=https://magiccards.info/scans/en/soi/210b.jpg
 value=2.500
 rarity=C
 type=Creature

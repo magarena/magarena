@@ -1,5 +1,5 @@
 name=Gang of Elk
-image=http://magiccards.info/scans/en/7e/247.jpg
+image=https://magiccards.info/scans/en/7e/247.jpg
 value=3.581
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Corpulent Corpse
-image=http://magiccards.info/scans/en/ts/98.jpg
+image=https://magiccards.info/scans/en/ts/98.jpg
 value=2.473
 rarity=C
 type=Creature

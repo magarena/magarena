@@ -1,5 +1,5 @@
 name=Fire
-image=http://magiccards.info/scans/en/cmd/198a.jpg
+image=https://magiccards.info/scans/en/cmd/198a.jpg
 value=4.597
 rarity=U
 type=Instant

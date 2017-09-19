@@ -1,5 +1,5 @@
 name=Chain of Silence
-image=http://magiccards.info/scans/en/on/12.jpg
+image=https://magiccards.info/scans/en/on/12.jpg
 value=1.607
 rarity=U
 type=Instant

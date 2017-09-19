@@ -1,5 +1,5 @@
 name=Longbow Archer
-image=http://magiccards.info/scans/en/7e/26.jpg
+image=https://magiccards.info/scans/en/7e/26.jpg
 value=4.380
 rarity=U
 type=Creature

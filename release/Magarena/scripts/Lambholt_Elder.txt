@@ -1,5 +1,5 @@
 name=Lambholt Elder
-image=http://magiccards.info/scans/en/dka/122a.jpg
+image=https://magiccards.info/scans/en/dka/122a.jpg
 value=3.179
 rarity=U
 type=Creature

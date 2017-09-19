@@ -1,5 +1,5 @@
 name=Abzan Advantage
-image=http://magiccards.info/scans/en/frf/2.jpg
+image=https://magiccards.info/scans/en/frf/2.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Geralf's Mindcrusher
-image=http://magiccards.info/scans/en/dka/37.jpg
+image=https://magiccards.info/scans/en/dka/37.jpg
 value=3.695
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Lord of the Pit
-image=http://magiccards.info/scans/en/10e/154.jpg
+image=https://magiccards.info/scans/en/10e/154.jpg
 image_updated=2016-12-21
 value=3.725
 rarity=R

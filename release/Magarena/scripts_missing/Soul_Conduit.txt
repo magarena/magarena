@@ -1,5 +1,5 @@
 name=Soul Conduit
-image=http://magiccards.info/scans/en/nph/158.jpg
+image=https://magiccards.info/scans/en/nph/158.jpg
 value=3.408
 rarity=R
 type=Artifact

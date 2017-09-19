@@ -1,5 +1,5 @@
 name=Snake Pit
-image=http://magiccards.info/scans/en/mm/271.jpg
+image=https://magiccards.info/scans/en/mm/271.jpg
 value=3.942
 rarity=U
 type=Enchantment

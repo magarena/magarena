@@ -1,5 +1,5 @@
 name=Hero of Leina Tower
-image=http://magiccards.info/scans/en/bng/123.jpg
+image=https://magiccards.info/scans/en/bng/123.jpg
 value=3.816
 rarity=R
 type=Creature

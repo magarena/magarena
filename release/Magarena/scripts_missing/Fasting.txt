@@ -1,5 +1,5 @@
 name=Fasting
-image=http://magiccards.info/scans/en/dk/80.jpg
+image=https://magiccards.info/scans/en/dk/80.jpg
 value=0.949
 rarity=U
 type=Enchantment

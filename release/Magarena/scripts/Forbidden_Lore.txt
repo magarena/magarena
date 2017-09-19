@@ -1,5 +1,5 @@
 name=Forbidden Lore
-image=http://magiccards.info/scans/en/ia/124.jpg
+image=https://magiccards.info/scans/en/ia/124.jpg
 value=2.775
 rarity=R
 type=Enchantment

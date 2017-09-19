@@ -1,5 +1,5 @@
 name=Dwarven Warriors
-image=http://magiccards.info/scans/en/5e/222.jpg
+image=https://magiccards.info/scans/en/5e/222.jpg
 value=2.520
 rarity=C
 type=Creature

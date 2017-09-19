@@ -1,5 +1,5 @@
 name=Burning-Tree Bloodscale
-image=http://magiccards.info/scans/en/gp/104.jpg
+image=https://magiccards.info/scans/en/gp/104.jpg
 value=2.267
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Morgue Burst
-image=http://magiccards.info/scans/en/dgm/86.jpg
+image=https://magiccards.info/scans/en/dgm/86.jpg
 value=3.486
 rarity=C
 type=Sorcery

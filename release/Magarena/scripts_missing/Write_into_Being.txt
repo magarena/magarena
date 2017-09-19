@@ -1,5 +1,5 @@
 name=Write into Being
-image=http://magiccards.info/scans/en/frf/59.jpg
+image=https://magiccards.info/scans/en/frf/59.jpg
 value=2.500
 rarity=C
 type=Sorcery

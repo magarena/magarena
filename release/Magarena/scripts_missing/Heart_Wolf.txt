@@ -1,5 +1,5 @@
 name=Heart Wolf
-image=http://magiccards.info/scans/en/hl/95.jpg
+image=https://magiccards.info/scans/en/hl/95.jpg
 value=2.064
 rarity=R
 type=Creature

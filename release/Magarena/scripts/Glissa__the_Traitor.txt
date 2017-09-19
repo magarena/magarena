@@ -1,5 +1,5 @@
 name=Glissa, the Traitor
-image=http://magiccards.info/scans/en/mbs/96.jpg
+image=https://magiccards.info/scans/en/mbs/96.jpg
 value=4.328
 rarity=M
 type=Legendary,Creature

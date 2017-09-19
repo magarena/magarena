@@ -1,5 +1,5 @@
 name=Stitched Drake
-image=http://magiccards.info/scans/en/isd/80.jpg
+image=https://magiccards.info/scans/en/isd/80.jpg
 value=3.809
 rarity=C
 type=Creature

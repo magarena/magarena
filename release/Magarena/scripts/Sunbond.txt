@@ -1,5 +1,5 @@
 name=Sunbond
-image=http://magiccards.info/scans/en/bng/28.jpg
+image=https://magiccards.info/scans/en/bng/28.jpg
 value=3.847
 rarity=U
 type=Enchantment

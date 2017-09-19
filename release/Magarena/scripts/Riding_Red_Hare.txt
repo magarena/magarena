@@ -1,5 +1,5 @@
 name=Riding Red Hare
-image=http://magiccards.info/scans/en/p3k/18.jpg
+image=https://magiccards.info/scans/en/p3k/18.jpg
 value=3.645
 rarity=C
 type=Sorcery

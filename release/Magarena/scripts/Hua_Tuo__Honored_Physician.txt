@@ -1,5 +1,5 @@
 name=Hua Tuo, Honored Physician
-image=http://magiccards.info/scans/en/p3k/137.jpg
+image=https://magiccards.info/scans/en/p3k/137.jpg
 value=3.783
 rarity=R
 type=Legendary,Creature

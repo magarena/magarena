@@ -1,5 +1,5 @@
 name=Death
-image=http://magiccards.info/scans/en/ap/130b.jpg
+image=https://magiccards.info/scans/en/ap/130b.jpg
 value=4.368
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Thoughtflare
-image=http://magiccards.info/scans/en/rtr/203.jpg
+image=https://magiccards.info/scans/en/rtr/203.jpg
 value=3.008
 rarity=U
 type=Instant

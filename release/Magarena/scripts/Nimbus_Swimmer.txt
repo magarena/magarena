@@ -1,5 +1,5 @@
 name=Nimbus Swimmer
-image=http://magiccards.info/scans/en/gtc/181.jpg
+image=https://magiccards.info/scans/en/gtc/181.jpg
 image_updated=2017-01-01
 value=3.070
 rarity=U

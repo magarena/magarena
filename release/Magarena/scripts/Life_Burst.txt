@@ -1,5 +1,5 @@
 name=Life Burst
-image=http://magiccards.info/scans/en/od/30.jpg
+image=https://magiccards.info/scans/en/od/30.jpg
 value=3.269
 rarity=C
 type=Instant

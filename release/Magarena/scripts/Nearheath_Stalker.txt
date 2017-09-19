@@ -1,5 +1,5 @@
 name=Nearheath Stalker
-image=http://magiccards.info/scans/en/dka/100.jpg
+image=https://magiccards.info/scans/en/dka/100.jpg
 value=1.954
 rarity=C
 type=Creature

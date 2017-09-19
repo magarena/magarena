@@ -1,5 +1,5 @@
 name=Leonin Den-Guard
-image=http://magiccards.info/scans/en/mi/9.jpg
+image=https://magiccards.info/scans/en/mi/9.jpg
 value=3.757
 rarity=C
 type=Creature

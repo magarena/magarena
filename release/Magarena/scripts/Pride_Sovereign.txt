@@ -1,5 +1,5 @@
 name=Pride Sovereign
-image=http://magiccards.info/scans/en/hou/126.jpg
+image=https://magiccards.info/scans/en/hou/126.jpg
 value=2.500
 rarity=R
 type=Creature

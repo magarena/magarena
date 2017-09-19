@@ -1,5 +1,5 @@
 name=Skyshroud Troopers
-image=http://magiccards.info/scans/en/sh/65.jpg
+image=https://magiccards.info/scans/en/sh/65.jpg
 value=2.338
 rarity=C
 type=Creature

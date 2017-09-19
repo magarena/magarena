@@ -1,5 +1,5 @@
 name=Burning Inquiry
-image=http://magiccards.info/scans/en/m10/128.jpg
+image=https://magiccards.info/scans/en/m10/128.jpg
 value=3.943
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Hedron Crab
-image=http://magiccards.info/scans/en/zen/47.jpg
+image=https://magiccards.info/scans/en/zen/47.jpg
 value=4.220
 rarity=U
 type=Creature

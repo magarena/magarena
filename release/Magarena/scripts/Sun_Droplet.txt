@@ -1,5 +1,5 @@
 name=Sun Droplet
-image=http://magiccards.info/scans/en/mi/249.jpg
+image=https://magiccards.info/scans/en/mi/249.jpg
 image_updated=2016-01-09
 value=3.633
 rarity=U

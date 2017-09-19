@@ -1,5 +1,5 @@
 name=Drudge Skeletons
-image=http://magiccards.info/scans/en/m10/95.jpg
+image=https://magiccards.info/scans/en/m10/95.jpg
 image_updated=2016-12-01
 value=4.014
 rarity=C

@@ -1,5 +1,5 @@
 name=Tahngarth's Glare
-image=http://magiccards.info/scans/en/ap/70.jpg
+image=https://magiccards.info/scans/en/ap/70.jpg
 value=2.038
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Prismatic Lens
-image=http://magiccards.info/scans/en/ema/230.jpg
+image=https://magiccards.info/scans/en/ema/230.jpg
 value=3.618
 rarity=U
 type=Artifact

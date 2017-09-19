@@ -1,5 +1,5 @@
 name=Erayo's Essence
-image=http://magiccards.info/scans/en/sok/35b.jpg
+image=https://magiccards.info/scans/en/sok/35b.jpg
 value=4.211
 rarity=R
 type=Legendary,Enchantment

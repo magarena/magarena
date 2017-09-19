@@ -1,5 +1,5 @@
 name=Steelclad Serpent
-image=http://magiccards.info/scans/en/ala/59.jpg
+image=https://magiccards.info/scans/en/ala/59.jpg
 value=1.461
 rarity=C
 type=Artifact,Creature

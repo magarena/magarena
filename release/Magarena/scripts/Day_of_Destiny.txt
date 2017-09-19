@@ -1,5 +1,5 @@
 name=Day of Destiny
-image=http://magiccards.info/scans/en/bok/1.jpg
+image=https://magiccards.info/scans/en/bok/1.jpg
 value=3.478
 rarity=R
 type=Legendary,Enchantment

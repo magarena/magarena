@@ -1,5 +1,5 @@
 name=Hatching Plans
-image=http://magiccards.info/scans/en/gp/27.jpg
+image=https://magiccards.info/scans/en/gp/27.jpg
 value=3.896
 rarity=R
 type=Enchantment

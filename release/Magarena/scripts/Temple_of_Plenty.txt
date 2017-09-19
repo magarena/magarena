@@ -1,5 +1,5 @@
 name=Temple of Plenty
-image=http://magiccards.info/scans/en/bng/165.jpg
+image=https://magiccards.info/scans/en/bng/165.jpg
 value=3.862
 rarity=R
 type=Land

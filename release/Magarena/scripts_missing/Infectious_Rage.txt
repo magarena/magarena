@@ -1,5 +1,5 @@
 name=Infectious Rage
-image=http://magiccards.info/scans/en/ju/92.jpg
+image=https://magiccards.info/scans/en/ju/92.jpg
 value=2.857
 rarity=U
 type=Enchantment

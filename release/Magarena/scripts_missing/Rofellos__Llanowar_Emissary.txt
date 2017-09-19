@@ -1,5 +1,5 @@
 name=Rofellos, Llanowar Emissary
-image=http://magiccards.info/scans/en/ud/118.jpg
+image=https://magiccards.info/scans/en/ud/118.jpg
 value=4.500
 rarity=R
 type=Legendary,Creature

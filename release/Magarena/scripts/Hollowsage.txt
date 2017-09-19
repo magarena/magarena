@@ -1,5 +1,5 @@
 name=Hollowsage
-image=http://magiccards.info/scans/en/shm/69.jpg
+image=https://magiccards.info/scans/en/shm/69.jpg
 value=2.882
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Brand
-image=http://magiccards.info/scans/en/us/176.jpg
+image=https://magiccards.info/scans/en/us/176.jpg
 value=3.802
 rarity=R
 type=Instant

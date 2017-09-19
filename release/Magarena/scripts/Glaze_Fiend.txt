@@ -1,5 +1,5 @@
 name=Glaze Fiend
-image=http://magiccards.info/scans/en/ala/77.jpg
+image=https://magiccards.info/scans/en/ala/77.jpg
 value=3.088
 rarity=C
 type=Artifact,Creature

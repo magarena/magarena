@@ -1,5 +1,5 @@
 name=Jet Medallion
-image=http://magiccards.info/scans/en/c14/243.jpg
+image=https://magiccards.info/scans/en/c14/243.jpg
 value=2.500
 rarity=R
 type=Artifact

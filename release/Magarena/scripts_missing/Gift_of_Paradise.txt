@@ -1,5 +1,5 @@
 name=Gift of Paradise
-image=http://magiccards.info/scans/en/akh/167.jpg
+image=https://magiccards.info/scans/en/akh/167.jpg
 value=2.500
 rarity=C
 type=Enchantment

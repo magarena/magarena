@@ -1,5 +1,5 @@
 name=Leveler
-image=http://magiccards.info/scans/en/mi/195.jpg
+image=https://magiccards.info/scans/en/mi/195.jpg
 value=3.097
 rarity=R
 type=Artifact,Creature

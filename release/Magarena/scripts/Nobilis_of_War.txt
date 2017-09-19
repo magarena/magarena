@@ -1,5 +1,5 @@
 name=Nobilis of War
-image=http://magiccards.info/scans/en/mm2/195.jpg
+image=https://magiccards.info/scans/en/mm2/195.jpg
 value=4.182
 rarity=R
 type=Creature

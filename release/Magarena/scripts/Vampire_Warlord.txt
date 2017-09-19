@@ -1,5 +1,5 @@
 name=Vampire Warlord
-image=http://magiccards.info/scans/en/m14/120.jpg
+image=https://magiccards.info/scans/en/m14/120.jpg
 value=1.694
 rarity=U
 type=Creature

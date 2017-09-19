@@ -1,5 +1,5 @@
 name=Dream Cache
-image=http://magiccards.info/scans/en/6e/66.jpg
+image=https://magiccards.info/scans/en/6e/66.jpg
 value=3.514
 rarity=C
 type=Sorcery

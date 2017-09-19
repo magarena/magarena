@@ -1,5 +1,5 @@
 name=Crystal Seer
-image=http://magiccards.info/scans/en/gp/23.jpg
+image=https://magiccards.info/scans/en/gp/23.jpg
 value=1.195
 rarity=C
 type=Creature

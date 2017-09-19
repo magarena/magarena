@@ -1,5 +1,5 @@
 name=Skyshroud Forest
-image=http://magiccards.info/scans/en/tp/332.jpg
+image=https://magiccards.info/scans/en/tp/332.jpg
 value=2.500
 rarity=R
 type=Land

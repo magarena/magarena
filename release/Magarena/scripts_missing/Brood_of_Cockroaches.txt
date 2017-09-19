@@ -1,5 +1,5 @@
 name=Brood of Cockroaches
-image=http://magiccards.info/scans/en/vi/3.jpg
+image=https://magiccards.info/scans/en/vi/3.jpg
 value=3.119
 rarity=U
 type=Creature

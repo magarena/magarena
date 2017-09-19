@@ -1,5 +1,5 @@
 name=Looter il-Kor
-image=http://magiccards.info/scans/en/ts/66.jpg
+image=https://magiccards.info/scans/en/ts/66.jpg
 value=4.082
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Otarian Juggernaut
-image=http://magiccards.info/scans/en/od/305.jpg
+image=https://magiccards.info/scans/en/od/305.jpg
 value=1.720
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Relic Bind
-image=http://magiccards.info/scans/en/4e/97.jpg
+image=https://magiccards.info/scans/en/4e/97.jpg
 value=2.042
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Plated Spider
-image=http://magiccards.info/scans/en/ud/116.jpg
+image=https://magiccards.info/scans/en/ud/116.jpg
 value=3.611
 rarity=C
 type=Creature

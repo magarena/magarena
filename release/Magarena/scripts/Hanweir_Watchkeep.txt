@@ -1,5 +1,5 @@
 name=Hanweir Watchkeep
-image=http://magiccards.info/scans/en/isd/145a.jpg
+image=https://magiccards.info/scans/en/isd/145a.jpg
 value=3.431
 rarity=U
 type=Creature

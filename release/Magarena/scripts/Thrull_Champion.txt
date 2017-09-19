@@ -1,5 +1,5 @@
 name=Thrull Champion
-image=http://magiccards.info/scans/en/fe/29.jpg
+image=https://magiccards.info/scans/en/fe/29.jpg
 value=3.885
 rarity=R
 type=Creature

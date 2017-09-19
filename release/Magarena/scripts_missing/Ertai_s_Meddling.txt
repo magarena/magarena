@@ -1,5 +1,5 @@
 name=Ertai's Meddling
-image=http://magiccards.info/scans/en/tp/61.jpg
+image=https://magiccards.info/scans/en/tp/61.jpg
 value=4.410
 rarity=R
 type=Instant

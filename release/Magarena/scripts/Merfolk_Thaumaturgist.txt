@@ -1,5 +1,5 @@
 name=Merfolk Thaumaturgist
-image=http://magiccards.info/scans/en/pc/56.jpg
+image=https://magiccards.info/scans/en/pc/56.jpg
 value=3.670
 rarity=C
 type=Creature

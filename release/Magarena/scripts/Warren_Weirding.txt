@@ -1,5 +1,5 @@
 name=Warren Weirding
-image=http://magiccards.info/scans/en/mma/104.jpg
+image=https://magiccards.info/scans/en/mma/104.jpg
 value=4.324
 removal=2
 rarity=C

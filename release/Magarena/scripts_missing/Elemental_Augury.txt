@@ -1,5 +1,5 @@
 name=Elemental Augury
-image=http://magiccards.info/scans/en/ia/364.jpg
+image=https://magiccards.info/scans/en/ia/364.jpg
 value=3.302
 rarity=R
 type=Enchantment

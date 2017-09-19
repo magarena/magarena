@@ -1,5 +1,5 @@
 name=Incite
-image=http://magiccards.info/scans/en/m11/145.jpg
+image=https://magiccards.info/scans/en/m11/145.jpg
 value=1.731
 rarity=C
 type=Instant

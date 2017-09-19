@@ -1,5 +1,5 @@
 name=Air Bladder
-image=http://magiccards.info/scans/en/ne/28.jpg
+image=https://magiccards.info/scans/en/ne/28.jpg
 value=1.432
 rarity=C
 type=Enchantment

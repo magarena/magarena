@@ -1,5 +1,5 @@
 name=Silverskin Armor
-image=http://magiccards.info/scans/en/mbs/132.jpg
+image=https://magiccards.info/scans/en/mbs/132.jpg
 value=2.808
 rarity=U
 type=Artifact

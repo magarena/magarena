@@ -1,5 +1,5 @@
 name=Stonybrook Angler
-image=http://magiccards.info/scans/en/lw/90.jpg
+image=https://magiccards.info/scans/en/lw/90.jpg
 value=2.885
 rarity=C
 type=Creature

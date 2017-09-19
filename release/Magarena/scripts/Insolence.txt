@@ -1,5 +1,5 @@
 name=Insolence
-image=http://magiccards.info/scans/en/ps/63.jpg
+image=https://magiccards.info/scans/en/ps/63.jpg
 value=2.357
 rarity=C
 type=Enchantment

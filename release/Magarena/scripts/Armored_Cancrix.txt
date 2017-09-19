@@ -1,5 +1,5 @@
 name=Armored Cancrix
-image=http://magiccards.info/scans/en/m11/44.jpg
+image=https://magiccards.info/scans/en/m11/44.jpg
 value=1.287
 rarity=C
 type=Creature

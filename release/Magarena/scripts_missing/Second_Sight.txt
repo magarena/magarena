@@ -1,5 +1,5 @@
 name=Second Sight
-image=http://magiccards.info/scans/en/ds/33.jpg
+image=https://magiccards.info/scans/en/ds/33.jpg
 value=3.515
 rarity=U
 type=Instant

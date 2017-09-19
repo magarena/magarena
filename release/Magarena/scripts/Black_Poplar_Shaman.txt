@@ -1,5 +1,5 @@
 name=Black Poplar Shaman
-image=http://magiccards.info/scans/en/lw/99.jpg
+image=https://magiccards.info/scans/en/lw/99.jpg
 value=2.153
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lost in the Woods
-image=http://magiccards.info/scans/en/dka/123.jpg
+image=https://magiccards.info/scans/en/dka/123.jpg
 value=2.415
 rarity=R
 type=Enchantment

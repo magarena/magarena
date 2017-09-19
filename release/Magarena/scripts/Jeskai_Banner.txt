@@ -1,5 +1,5 @@
 name=Jeskai Banner
-image=http://magiccards.info/scans/en/ktk/222.jpg
+image=https://magiccards.info/scans/en/ktk/222.jpg
 value=2.667
 rarity=C
 type=Artifact

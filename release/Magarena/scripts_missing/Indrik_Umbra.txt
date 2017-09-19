@@ -1,5 +1,5 @@
 name=Indrik Umbra
-image=http://magiccards.info/scans/en/pc2/96.jpg
+image=https://magiccards.info/scans/en/pc2/96.jpg
 value=3.810
 rarity=R
 type=Enchantment

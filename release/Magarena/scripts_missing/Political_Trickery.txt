@@ -1,5 +1,5 @@
 name=Political Trickery
-image=http://magiccards.info/scans/en/mr/81.jpg
+image=https://magiccards.info/scans/en/mr/81.jpg
 value=3.266
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mirrodin's Core
-image=http://magiccards.info/scans/en/cns/208.jpg
+image=https://magiccards.info/scans/en/cns/208.jpg
 value=3.500
 rarity=U
 type=Land

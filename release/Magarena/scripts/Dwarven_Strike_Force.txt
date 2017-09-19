@@ -1,5 +1,5 @@
 name=Dwarven Strike Force
-image=http://magiccards.info/scans/en/od/188.jpg
+image=https://magiccards.info/scans/en/od/188.jpg
 value=2.093
 rarity=U
 type=Creature

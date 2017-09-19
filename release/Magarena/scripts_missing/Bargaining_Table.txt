@@ -1,5 +1,5 @@
 name=Bargaining Table
-image=http://magiccards.info/scans/en/mm/288.jpg
+image=https://magiccards.info/scans/en/mm/288.jpg
 value=3.815
 rarity=R
 type=Artifact

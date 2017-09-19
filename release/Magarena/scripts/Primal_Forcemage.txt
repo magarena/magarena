@@ -1,5 +1,5 @@
 name=Primal Forcemage
-image=http://magiccards.info/scans/en/ts/212.jpg
+image=https://magiccards.info/scans/en/ts/212.jpg
 value=3.877
 rarity=U
 type=Creature

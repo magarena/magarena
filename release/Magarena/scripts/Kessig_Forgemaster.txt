@@ -1,5 +1,5 @@
 name=Kessig Forgemaster
-image=http://magiccards.info/scans/en/soi/169a.jpg
+image=https://magiccards.info/scans/en/soi/169a.jpg
 value=2.500
 rarity=U
 type=Creature

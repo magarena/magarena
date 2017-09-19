@@ -1,5 +1,5 @@
 name=Trigon of Corruption
-image=http://magiccards.info/scans/en/som/213.jpg
+image=https://magiccards.info/scans/en/som/213.jpg
 value=2.714
 rarity=U
 type=Artifact

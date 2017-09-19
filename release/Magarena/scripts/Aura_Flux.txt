@@ -1,5 +1,5 @@
 name=Aura Flux
-image=http://magiccards.info/scans/en/ul/27.jpg
+image=https://magiccards.info/scans/en/ul/27.jpg
 value=3.946
 rarity=C
 type=Enchantment

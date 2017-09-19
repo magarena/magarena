@@ -1,5 +1,5 @@
 name=Faith's Shield
-image=http://magiccards.info/scans/en/dka/7.jpg
+image=https://magiccards.info/scans/en/dka/7.jpg
 value=3.667
 rarity=U
 type=Instant

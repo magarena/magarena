@@ -1,5 +1,5 @@
 name=Thatcher Revolt
-image=http://magiccards.info/scans/en/avr/158.jpg
+image=https://magiccards.info/scans/en/avr/158.jpg
 value=3.750
 rarity=C
 type=Sorcery

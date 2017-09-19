@@ -1,5 +1,5 @@
 name=Telekinetic Bonds
-image=http://magiccards.info/scans/en/ju/52.jpg
+image=https://magiccards.info/scans/en/ju/52.jpg
 value=1.885
 rarity=R
 type=Enchantment

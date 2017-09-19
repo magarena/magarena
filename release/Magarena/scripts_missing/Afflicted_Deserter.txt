@@ -1,5 +1,5 @@
 name=Afflicted Deserter
-image=http://magiccards.info/scans/en/dka/81a.jpg
+image=https://magiccards.info/scans/en/dka/81a.jpg
 value=2.593
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Nyx-Fleece Ram
-image=http://magiccards.info/scans/en/jou/18.jpg
+image=https://magiccards.info/scans/en/jou/18.jpg
 value=3.785
 rarity=U
 type=Enchantment,Creature

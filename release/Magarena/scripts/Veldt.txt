@@ -1,5 +1,5 @@
 name=Veldt
-image=http://magiccards.info/scans/en/ia/358.jpg
+image=https://magiccards.info/scans/en/ia/358.jpg
 value=2.400
 rarity=R
 type=Land

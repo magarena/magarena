@@ -1,5 +1,5 @@
 name=Daring Skyjek
-image=http://magiccards.info/scans/en/gtc/9.jpg
+image=https://magiccards.info/scans/en/gtc/9.jpg
 value=3.354
 rarity=C
 type=Creature

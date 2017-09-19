@@ -1,5 +1,5 @@
 name=Ulvenwald Bear
-image=http://magiccards.info/scans/en/dka/129.jpg
+image=https://magiccards.info/scans/en/dka/129.jpg
 value=3.178
 rarity=C
 type=Creature

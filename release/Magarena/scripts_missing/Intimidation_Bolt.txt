@@ -1,5 +1,5 @@
 name=Intimidation Bolt
-image=http://magiccards.info/scans/en/arb/99.jpg
+image=https://magiccards.info/scans/en/arb/99.jpg
 value=3.430
 rarity=U
 type=Instant

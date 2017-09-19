@@ -1,5 +1,5 @@
 name=Treasured Find
-image=http://magiccards.info/scans/en/rtr/204.jpg
+image=https://magiccards.info/scans/en/rtr/204.jpg
 value=3.812
 rarity=U
 type=Sorcery

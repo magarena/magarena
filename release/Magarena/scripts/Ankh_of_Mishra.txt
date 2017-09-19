@@ -1,5 +1,5 @@
 name=Ankh of Mishra
-image=http://magiccards.info/scans/en/6e/273.jpg
+image=https://magiccards.info/scans/en/6e/273.jpg
 value=4.000
 rarity=R
 type=Artifact

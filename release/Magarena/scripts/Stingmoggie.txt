@@ -1,5 +1,5 @@
 name=Stingmoggie
-image=http://magiccards.info/scans/en/mt/106.jpg
+image=https://magiccards.info/scans/en/mt/106.jpg
 value=2.202
 rarity=C
 type=Creature

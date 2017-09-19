@@ -1,5 +1,5 @@
 name=Angel's Mercy
-image=http://magiccards.info/scans/en/m13/3.jpg
+image=https://magiccards.info/scans/en/m13/3.jpg
 value=1.355
 rarity=C
 type=Instant

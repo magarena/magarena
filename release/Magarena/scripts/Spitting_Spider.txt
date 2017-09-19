@@ -1,5 +1,5 @@
 name=Spitting Spider
-image=http://magiccards.info/scans/en/8e/280.jpg
+image=https://magiccards.info/scans/en/8e/280.jpg
 value=3.375
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Skulking Fugitive
-image=http://magiccards.info/scans/en/mm/161.jpg
+image=https://magiccards.info/scans/en/mm/161.jpg
 value=2.692
 rarity=C
 type=Creature

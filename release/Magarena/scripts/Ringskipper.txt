@@ -1,5 +1,5 @@
 name=Ringskipper
-image=http://magiccards.info/scans/en/lw/81.jpg
+image=https://magiccards.info/scans/en/lw/81.jpg
 value=2.726
 rarity=C
 type=Creature

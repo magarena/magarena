@@ -1,5 +1,5 @@
 name=Valleymaker
-image=http://magiccards.info/scans/en/shm/221.jpg
+image=https://magiccards.info/scans/en/shm/221.jpg
 value=3.015
 rarity=R
 type=Creature

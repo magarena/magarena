@@ -1,5 +1,5 @@
 name=Rootwater Diver
-image=http://magiccards.info/scans/en/tp/81.jpg
+image=https://magiccards.info/scans/en/tp/81.jpg
 value=3.833
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wooded Bastion
-image=http://magiccards.info/scans/en/shm/281.jpg
+image=https://magiccards.info/scans/en/shm/281.jpg
 value=4.357
 rarity=R
 type=Land

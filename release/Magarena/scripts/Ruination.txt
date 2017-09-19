@@ -1,5 +1,5 @@
 name=Ruination
-image=http://magiccards.info/scans/en/cmd/134.jpg
+image=https://magiccards.info/scans/en/cmd/134.jpg
 value=4.128
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Standardize
-image=http://magiccards.info/scans/en/on/116.jpg
+image=https://magiccards.info/scans/en/on/116.jpg
 value=3.350
 rarity=R
 type=Instant

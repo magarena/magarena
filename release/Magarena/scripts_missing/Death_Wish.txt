@@ -1,5 +1,5 @@
 name=Death Wish
-image=http://magiccards.info/scans/en/ju/64.jpg
+image=https://magiccards.info/scans/en/ju/64.jpg
 value=4.392
 rarity=R
 type=Sorcery

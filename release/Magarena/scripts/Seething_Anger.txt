@@ -1,5 +1,5 @@
 name=Seething Anger
-image=http://magiccards.info/scans/en/sh/96.jpg
+image=https://magiccards.info/scans/en/sh/96.jpg
 value=2.768
 rarity=C
 type=Sorcery

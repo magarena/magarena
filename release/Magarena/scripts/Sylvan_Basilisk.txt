@@ -1,5 +1,5 @@
 name=Sylvan Basilisk
-image=http://magiccards.info/scans/en/10e/301.jpg
+image=https://magiccards.info/scans/en/10e/301.jpg
 value=4.173
 rarity=U
 type=Creature

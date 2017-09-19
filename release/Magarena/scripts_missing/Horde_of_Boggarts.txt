@@ -1,5 +1,5 @@
 name=Horde of Boggarts
-image=http://magiccards.info/scans/en/shm/94.jpg
+image=https://magiccards.info/scans/en/shm/94.jpg
 value=3.408
 rarity=U
 type=Creature

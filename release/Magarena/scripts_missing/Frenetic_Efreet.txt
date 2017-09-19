@@ -1,5 +1,5 @@
 name=Frenetic Efreet
-image=http://magiccards.info/scans/en/mr/324.jpg
+image=https://magiccards.info/scans/en/mr/324.jpg
 value=3.900
 rarity=R
 type=Creature

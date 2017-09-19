@@ -1,5 +1,5 @@
 name=Fanning the Flames
-image=http://magiccards.info/scans/en/sh/80.jpg
+image=https://magiccards.info/scans/en/sh/80.jpg
 value=3.764
 removal=3
 rarity=U

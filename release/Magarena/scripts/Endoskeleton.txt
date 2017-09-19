@@ -1,5 +1,5 @@
 name=Endoskeleton
-image=http://magiccards.info/scans/en/us/294.jpg
+image=https://magiccards.info/scans/en/us/294.jpg
 value=2.595
 rarity=U
 type=Artifact

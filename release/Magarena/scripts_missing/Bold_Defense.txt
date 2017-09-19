@@ -1,5 +1,5 @@
 name=Bold Defense
-image=http://magiccards.info/scans/en/zen/3.jpg
+image=https://magiccards.info/scans/en/zen/3.jpg
 value=1.569
 rarity=C
 type=Instant

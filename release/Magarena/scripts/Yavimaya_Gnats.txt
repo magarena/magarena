@@ -1,5 +1,5 @@
 name=Yavimaya Gnats
-image=http://magiccards.info/scans/en/ia/168.jpg
+image=https://magiccards.info/scans/en/ia/168.jpg
 value=2.786
 rarity=U
 type=Creature

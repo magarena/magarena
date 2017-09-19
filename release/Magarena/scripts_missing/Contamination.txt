@@ -1,5 +1,5 @@
 name=Contamination
-image=http://magiccards.info/scans/en/us/123.jpg
+image=https://magiccards.info/scans/en/us/123.jpg
 value=4.595
 rarity=R
 type=Enchantment

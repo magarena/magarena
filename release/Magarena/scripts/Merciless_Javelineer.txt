@@ -1,5 +1,5 @@
 name=Merciless Javelineer
-image=http://magiccards.info/scans/en/akh/202.jpg
+image=https://magiccards.info/scans/en/akh/202.jpg
 value=2.500
 rarity=U
 type=Creature

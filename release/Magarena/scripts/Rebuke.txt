@@ -1,5 +1,5 @@
 name=Rebuke
-image=http://magiccards.info/scans/en/isd/29.jpg
+image=https://magiccards.info/scans/en/isd/29.jpg
 value=3.610
 removal=4
 rarity=C

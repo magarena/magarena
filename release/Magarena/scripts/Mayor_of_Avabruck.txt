@@ -1,5 +1,5 @@
 name=Mayor of Avabruck
-image=http://magiccards.info/scans/en/isd/193a.jpg
+image=https://magiccards.info/scans/en/isd/193a.jpg
 value=4.209
 rarity=R
 type=Creature

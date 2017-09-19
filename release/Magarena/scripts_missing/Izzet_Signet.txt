@@ -1,5 +1,5 @@
 name=Izzet Signet
-image=http://magiccards.info/scans/en/mm3/223.jpg
+image=https://magiccards.info/scans/en/mm3/223.jpg
 image_updated=2017-08-08
 value=4.071
 rarity=U

@@ -1,5 +1,5 @@
 name=Radjan Spirit
-image=http://magiccards.info/scans/en/6e/245.jpg
+image=https://magiccards.info/scans/en/6e/245.jpg
 value=2.712
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mischief and Mayhem
-image=http://magiccards.info/scans/en/bng/126.jpg
+image=https://magiccards.info/scans/en/bng/126.jpg
 value=2.960
 rarity=U
 type=Sorcery

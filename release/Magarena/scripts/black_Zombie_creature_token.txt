@@ -1,6 +1,6 @@
 name=black Zombie creature token
 token=Zombie
-image=http://magiccards.info/extras/token/journey-into-nyx/zombie.jpg
+image=https://magiccards.info/extras/token/journey-into-nyx/zombie.jpg
 value=0
 type=Creature
 subtype=Zombie

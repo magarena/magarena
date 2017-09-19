@@ -1,5 +1,5 @@
 name=Butcher of the Horde
-image=http://magiccards.info/scans/en/ktk/168.jpg
+image=https://magiccards.info/scans/en/ktk/168.jpg
 value=4.300
 rarity=R
 type=Creature

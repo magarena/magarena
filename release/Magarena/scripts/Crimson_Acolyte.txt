@@ -1,5 +1,5 @@
 name=Crimson Acolyte
-image=http://magiccards.info/scans/en/in/11.jpg
+image=https://magiccards.info/scans/en/in/11.jpg
 value=3.696
 rarity=C
 type=Creature

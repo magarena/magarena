@@ -1,5 +1,5 @@
 name=Loam Dryad
-image=http://magiccards.info/scans/en/soi/216.jpg
+image=https://magiccards.info/scans/en/soi/216.jpg
 value=2.500
 rarity=C
 type=Creature

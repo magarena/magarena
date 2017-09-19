@@ -1,5 +1,5 @@
 name=Knotvine Paladin
-image=http://magiccards.info/scans/en/arb/71.jpg
+image=https://magiccards.info/scans/en/arb/71.jpg
 value=3.430
 rarity=R
 type=Creature

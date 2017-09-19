@@ -1,5 +1,5 @@
 name=Nessian Asp
-image=http://magiccards.info/scans/en/cn2/187.jpg
+image=https://magiccards.info/scans/en/cn2/187.jpg
 image_updated=2017-01-01
 value=3.588
 rarity=U

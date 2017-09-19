@@ -1,5 +1,5 @@
 name=Sultai Flayer
-image=http://magiccards.info/scans/en/ktk/152.jpg
+image=https://magiccards.info/scans/en/ktk/152.jpg
 value=3.750
 rarity=U
 type=Creature

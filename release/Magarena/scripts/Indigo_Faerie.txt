@@ -1,5 +1,5 @@
 name=Indigo Faerie
-image=http://magiccards.info/scans/en/eve/24.jpg
+image=https://magiccards.info/scans/en/eve/24.jpg
 value=2.256
 rarity=U
 type=Creature

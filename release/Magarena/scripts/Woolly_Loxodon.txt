@@ -1,5 +1,5 @@
 name=Woolly Loxodon
-image=http://magiccards.info/scans/en/ktk/158.jpg
+image=https://magiccards.info/scans/en/ktk/158.jpg
 value=3.000
 rarity=C
 type=Creature

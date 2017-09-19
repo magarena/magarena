@@ -1,5 +1,5 @@
 name=Gatstaf Howler
-image=http://magiccards.info/scans/en/isd/182b.jpg
+image=https://magiccards.info/scans/en/isd/182b.jpg
 value=3.545
 rarity=U
 type=Creature

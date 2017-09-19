@@ -1,5 +1,5 @@
 name=Unspeakable Symbol
-image=http://magiccards.info/scans/en/sc/79.jpg
+image=https://magiccards.info/scans/en/sc/79.jpg
 value=3.203
 rarity=U
 type=Enchantment

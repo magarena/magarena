@@ -1,5 +1,5 @@
 name=Sculpting Steel
-image=http://magiccards.info/scans/en/10e/342.jpg
+image=https://magiccards.info/scans/en/10e/342.jpg
 value=4.449
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Flamerush Rider
-image=http://magiccards.info/scans/en/frf/99.jpg
+image=https://magiccards.info/scans/en/frf/99.jpg
 value=2.500
 rarity=R
 type=Creature

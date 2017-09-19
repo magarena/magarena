@@ -1,6 +1,6 @@
 name=green Treefolk Warrior creature token
 token=Treefolk Warrior
-image=http://magiccards.info/extras/token/magic-2015/treefolk-warrior.jpg
+image=https://magiccards.info/extras/token/magic-2015/treefolk-warrior.jpg
 value=1
 type=Creature
 subtype=Treefolk,Warrior

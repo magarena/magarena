@@ -1,5 +1,5 @@
 name=Burst of Speed
-image=http://magiccards.info/scans/en/m10/129.jpg
+image=https://magiccards.info/scans/en/m10/129.jpg
 value=2.196
 rarity=C
 type=Sorcery

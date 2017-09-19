@@ -1,5 +1,5 @@
 name=Mudbutton Clanger
-image=http://magiccards.info/scans/en/mt/95.jpg
+image=https://magiccards.info/scans/en/mt/95.jpg
 value=2.779
 rarity=C
 type=Creature

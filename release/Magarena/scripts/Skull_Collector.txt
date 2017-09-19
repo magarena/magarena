@@ -1,5 +1,5 @@
 name=Skull Collector
-image=http://magiccards.info/scans/en/sok/90.jpg
+image=https://magiccards.info/scans/en/sok/90.jpg
 value=3.234
 rarity=U
 type=Creature

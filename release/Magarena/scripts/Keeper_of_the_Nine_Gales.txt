@@ -1,5 +1,5 @@
 name=Keeper of the Nine Gales
-image=http://magiccards.info/scans/en/le/42.jpg
+image=https://magiccards.info/scans/en/le/42.jpg
 value=3.632
 rarity=R
 type=Creature

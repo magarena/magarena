@@ -1,5 +1,5 @@
 name=Basalt Gargoyle
-image=http://magiccards.info/scans/en/ts/145.jpg
+image=https://magiccards.info/scans/en/ts/145.jpg
 value=2.393
 rarity=U
 type=Creature

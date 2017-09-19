@@ -1,5 +1,5 @@
 name=Hypnotic Siren
-image=http://magiccards.info/scans/en/jou/42.jpg
+image=https://magiccards.info/scans/en/jou/42.jpg
 value=3.704
 rarity=R
 type=Enchantment,Creature

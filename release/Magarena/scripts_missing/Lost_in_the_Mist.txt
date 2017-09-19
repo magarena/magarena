@@ -1,5 +1,5 @@
 name=Lost in the Mist
-image=http://magiccards.info/scans/en/isd/63.jpg
+image=https://magiccards.info/scans/en/isd/63.jpg
 value=3.234
 rarity=C
 type=Instant

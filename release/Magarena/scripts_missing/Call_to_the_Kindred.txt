@@ -1,5 +1,5 @@
 name=Call to the Kindred
-image=http://magiccards.info/scans/en/dka/30.jpg
+image=https://magiccards.info/scans/en/dka/30.jpg
 value=3.658
 rarity=R
 type=Enchantment

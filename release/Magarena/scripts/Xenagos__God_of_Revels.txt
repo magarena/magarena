@@ -1,5 +1,5 @@
 name=Xenagos, God of Revels
-image=http://magiccards.info/scans/en/bng/156.jpg
+image=https://magiccards.info/scans/en/bng/156.jpg
 value=3.812
 rarity=M
 type=Legendary,Enchantment,Creature

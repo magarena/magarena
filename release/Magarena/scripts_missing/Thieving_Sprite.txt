@@ -1,5 +1,5 @@
 name=Thieving Sprite
-image=http://magiccards.info/scans/en/mma/101.jpg
+image=https://magiccards.info/scans/en/mma/101.jpg
 value=3.077
 rarity=C
 type=Creature

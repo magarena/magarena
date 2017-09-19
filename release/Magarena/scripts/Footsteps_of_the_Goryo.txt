@@ -1,5 +1,5 @@
 name=Footsteps of the Goryo
-image=http://magiccards.info/scans/en/sok/68.jpg
+image=https://magiccards.info/scans/en/sok/68.jpg
 value=2.633
 rarity=U
 type=Sorcery

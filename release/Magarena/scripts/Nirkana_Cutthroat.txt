@@ -1,5 +1,5 @@
 name=Nirkana Cutthroat
-image=http://magiccards.info/scans/en/roe/119.jpg
+image=https://magiccards.info/scans/en/roe/119.jpg
 value=4.017
 rarity=U
 type=Creature

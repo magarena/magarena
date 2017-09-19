@@ -1,5 +1,5 @@
 name=Tempt with Vengeance
-image=http://magiccards.info/scans/en/c13/125.jpg
+image=https://magiccards.info/scans/en/c13/125.jpg
 value=3.781
 rarity=R
 type=Sorcery

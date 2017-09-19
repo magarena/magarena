@@ -1,5 +1,5 @@
 name=Benediction of Moons
-image=http://magiccards.info/scans/en/gp/3.jpg
+image=https://magiccards.info/scans/en/gp/3.jpg
 value=2.026
 rarity=C
 type=Sorcery

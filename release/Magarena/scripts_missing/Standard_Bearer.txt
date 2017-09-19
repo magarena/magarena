@@ -1,5 +1,5 @@
 name=Standard Bearer
-image=http://magiccards.info/scans/en/ap/18.jpg
+image=https://magiccards.info/scans/en/ap/18.jpg
 value=4.010
 rarity=C
 type=Creature

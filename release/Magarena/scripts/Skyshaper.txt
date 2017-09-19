@@ -1,5 +1,5 @@
 name=Skyshaper
-image=http://magiccards.info/scans/en/ex/137.jpg
+image=https://magiccards.info/scans/en/ex/137.jpg
 value=3.053
 rarity=U
 type=Artifact

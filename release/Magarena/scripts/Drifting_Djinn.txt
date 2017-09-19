@@ -1,5 +1,5 @@
 name=Drifting Djinn
-image=http://magiccards.info/scans/en/us/71.jpg
+image=https://magiccards.info/scans/en/us/71.jpg
 value=2.880
 rarity=R
 type=Creature

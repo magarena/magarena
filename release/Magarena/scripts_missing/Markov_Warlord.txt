@@ -1,5 +1,5 @@
 name=Markov Warlord
-image=http://magiccards.info/scans/en/dka/97.jpg
+image=https://magiccards.info/scans/en/dka/97.jpg
 value=2.769
 rarity=U
 type=Creature

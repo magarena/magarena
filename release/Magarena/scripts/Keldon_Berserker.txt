@@ -1,5 +1,5 @@
 name=Keldon Berserker
-image=http://magiccards.info/scans/en/pr/93.jpg
+image=https://magiccards.info/scans/en/pr/93.jpg
 value=2.712
 rarity=C
 type=Creature

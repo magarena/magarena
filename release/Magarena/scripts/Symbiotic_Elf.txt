@@ -1,5 +1,5 @@
 name=Symbiotic Elf
-image=http://magiccards.info/scans/en/on/288.jpg
+image=https://magiccards.info/scans/en/on/288.jpg
 value=2.796
 rarity=C
 type=Creature

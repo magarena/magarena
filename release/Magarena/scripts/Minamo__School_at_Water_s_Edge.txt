@@ -1,5 +1,5 @@
 name=Minamo, School at Water's Edge
-image=http://magiccards.info/scans/en/chk/279.jpg
+image=https://magiccards.info/scans/en/chk/279.jpg
 value=4.317
 rarity=R
 type=Legendary,Land

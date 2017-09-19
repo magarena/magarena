@@ -1,5 +1,5 @@
 name=Squall Line
-image=http://magiccards.info/scans/en/ts/222.jpg
+image=https://magiccards.info/scans/en/ts/222.jpg
 value=3.924
 rarity=R
 type=Instant

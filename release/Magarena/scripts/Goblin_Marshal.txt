@@ -1,5 +1,5 @@
 name=Goblin Marshal
-image=http://magiccards.info/scans/en/ud/85.jpg
+image=https://magiccards.info/scans/en/ud/85.jpg
 value=3.109
 rarity=R
 type=Creature

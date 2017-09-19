@@ -1,5 +1,5 @@
 name=Gilded Drake
-image=http://magiccards.info/scans/en/us/76.jpg
+image=https://magiccards.info/scans/en/us/76.jpg
 value=4.574
 rarity=R
 type=Creature

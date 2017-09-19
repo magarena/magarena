@@ -1,5 +1,5 @@
 name=Kamahl's Desire
-image=http://magiccards.info/scans/en/od/199.jpg
+image=https://magiccards.info/scans/en/od/199.jpg
 value=3.200
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Polluted Delta
-image=http://magiccards.info/scans/en/ktk/239.jpg
+image=https://magiccards.info/scans/en/ktk/239.jpg
 value=4.600
 rarity=R
 type=Land

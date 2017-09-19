@@ -1,6 +1,6 @@
 name=2/1 white Cleric enchantment creature token
 token=Cleric
-image=http://magiccards.info/extras/token/theros/cleric.jpg
+image=https://magiccards.info/extras/token/theros/cleric.jpg
 value=2
 type=Enchantment,Creature
 subtype=Cleric

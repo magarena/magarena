@@ -1,5 +1,5 @@
 name=Troubled Healer
-image=http://magiccards.info/scans/en/pr/27.jpg
+image=https://magiccards.info/scans/en/pr/27.jpg
 value=2.823
 rarity=C
 type=Creature

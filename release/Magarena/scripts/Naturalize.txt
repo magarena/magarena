@@ -1,5 +1,5 @@
 name=Naturalize
-image=http://magiccards.info/scans/en/dtk/193.jpg
+image=https://magiccards.info/scans/en/dtk/193.jpg
 value=4.000
 removal=1
 rarity=C

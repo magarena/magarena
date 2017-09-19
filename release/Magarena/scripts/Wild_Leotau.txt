@@ -1,5 +1,5 @@
 name=Wild Leotau
-image=http://magiccards.info/scans/en/cfx/97.jpg
+image=https://magiccards.info/scans/en/cfx/97.jpg
 value=2.484
 rarity=C
 type=Creature

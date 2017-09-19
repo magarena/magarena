@@ -1,5 +1,5 @@
 name=Perplexing Chimera
-image=http://magiccards.info/scans/en/bng/48.jpg
+image=https://magiccards.info/scans/en/bng/48.jpg
 value=3.833
 rarity=R
 type=Enchantment,Creature

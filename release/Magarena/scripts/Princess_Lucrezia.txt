@@ -1,5 +1,5 @@
 name=Princess Lucrezia
-image=http://magiccards.info/scans/en/lg/289.jpg
+image=https://magiccards.info/scans/en/lg/289.jpg
 value=1.364
 rarity=U
 type=Legendary,Creature

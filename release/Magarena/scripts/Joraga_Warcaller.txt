@@ -1,5 +1,5 @@
 name=Joraga Warcaller
-image=http://magiccards.info/scans/en/c14/203.jpg
+image=https://magiccards.info/scans/en/c14/203.jpg
 value=4.166
 rarity=R
 type=Creature

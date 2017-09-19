@@ -1,5 +1,5 @@
 name=Aven Warhawk
-image=http://magiccards.info/scans/en/le/4.jpg
+image=https://magiccards.info/scans/en/le/4.jpg
 value=2.593
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Devil's Play
-image=http://magiccards.info/scans/en/isd/140.jpg
+image=https://magiccards.info/scans/en/isd/140.jpg
 image_updated=2016-12-01
 value=3.712
 rarity=R

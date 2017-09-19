@@ -1,5 +1,5 @@
 name=Goblin Furrier
-image=http://magiccards.info/scans/en/cs/82.jpg
+image=https://magiccards.info/scans/en/cs/82.jpg
 value=2.770
 rarity=C
 type=Creature

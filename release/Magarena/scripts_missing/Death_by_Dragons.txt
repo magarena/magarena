@@ -1,5 +1,5 @@
 name=Death by Dragons
-image=http://magiccards.info/scans/en/cmd/118.jpg
+image=https://magiccards.info/scans/en/cmd/118.jpg
 value=3.875
 rarity=U
 type=Sorcery

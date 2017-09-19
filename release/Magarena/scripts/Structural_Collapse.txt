@@ -1,5 +1,5 @@
 name=Structural Collapse
-image=http://magiccards.info/scans/en/gtc/107.jpg
+image=https://magiccards.info/scans/en/gtc/107.jpg
 value=1.375
 rarity=C
 type=Sorcery

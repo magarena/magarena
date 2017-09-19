@@ -1,5 +1,5 @@
 name=Haunting Apparition
-image=http://magiccards.info/scans/en/mr/327.jpg
+image=https://magiccards.info/scans/en/mr/327.jpg
 value=2.803
 rarity=U
 type=Creature

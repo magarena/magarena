@@ -1,5 +1,5 @@
 name=Riding the Dilu Horse
-image=http://magiccards.info/scans/en/p3k/144.jpg
+image=https://magiccards.info/scans/en/p3k/144.jpg
 value=4.070
 rarity=R
 type=Sorcery

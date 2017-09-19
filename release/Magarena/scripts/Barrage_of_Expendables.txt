@@ -1,5 +1,5 @@
 name=Barrage of Expendables
-image=http://magiccards.info/scans/en/m14/127.jpg
+image=https://magiccards.info/scans/en/m14/127.jpg
 value=3.450
 rarity=U
 type=Enchantment

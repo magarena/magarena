@@ -1,5 +1,5 @@
 name=Whitewater Naiads
-image=http://magiccards.info/scans/en/jou/58.jpg
+image=https://magiccards.info/scans/en/jou/58.jpg
 value=3.643
 rarity=U
 type=Enchantment,Creature

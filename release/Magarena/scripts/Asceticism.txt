@@ -1,5 +1,5 @@
 name=Asceticism
-image=http://magiccards.info/scans/en/som/110.jpg
+image=https://magiccards.info/scans/en/som/110.jpg
 value=4.171
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=White Ward
-image=http://magiccards.info/scans/en/4e/307.jpg
+image=https://magiccards.info/scans/en/4e/307.jpg
 value=1.642
 rarity=U
 type=Enchantment

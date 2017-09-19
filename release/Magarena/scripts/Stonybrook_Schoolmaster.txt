@@ -1,5 +1,5 @@
 name=Stonybrook Schoolmaster
-image=http://magiccards.info/scans/en/mt/25.jpg
+image=https://magiccards.info/scans/en/mt/25.jpg
 value=3.518
 rarity=C
 type=Creature

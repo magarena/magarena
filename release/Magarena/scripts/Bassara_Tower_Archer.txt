@@ -1,5 +1,5 @@
 name=Bassara Tower Archer
-image=http://magiccards.info/scans/en/jou/117.jpg
+image=https://magiccards.info/scans/en/jou/117.jpg
 value=3.443
 rarity=U
 type=Creature

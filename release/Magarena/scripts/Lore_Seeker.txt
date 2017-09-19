@@ -1,5 +1,5 @@
 name=Lore Seeker
-image=http://magiccards.info/scans/en/cns/62.jpg
+image=https://magiccards.info/scans/en/cns/62.jpg
 value=3.923
 rarity=R
 type=Artifact,Creature

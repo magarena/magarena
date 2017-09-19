@@ -1,5 +1,5 @@
 name=Valeron Outlander
-image=http://magiccards.info/scans/en/cfx/130.jpg
+image=https://magiccards.info/scans/en/cfx/130.jpg
 value=2.906
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Glint Hawk
-image=http://magiccards.info/scans/en/som/10.jpg
+image=https://magiccards.info/scans/en/som/10.jpg
 value=3.851
 rarity=C
 type=Creature

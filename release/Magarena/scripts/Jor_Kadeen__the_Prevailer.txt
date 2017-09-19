@@ -1,5 +1,5 @@
 name=Jor Kadeen, the Prevailer
-image=http://magiccards.info/scans/en/c16/206.jpg
+image=https://magiccards.info/scans/en/c16/206.jpg
 image_updated=2017-08-17
 value=3.781
 rarity=R

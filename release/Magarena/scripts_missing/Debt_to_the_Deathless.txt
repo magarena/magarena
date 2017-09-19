@@ -1,5 +1,5 @@
 name=Debt to the Deathless
-image=http://magiccards.info/scans/en/dgm/64.jpg
+image=https://magiccards.info/scans/en/dgm/64.jpg
 value=3.784
 rarity=U
 type=Sorcery

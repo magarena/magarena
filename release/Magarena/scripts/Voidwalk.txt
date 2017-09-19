@@ -1,5 +1,5 @@
 name=Voidwalk
-image=http://magiccards.info/scans/en/gtc/55.jpg
+image=https://magiccards.info/scans/en/gtc/55.jpg
 value=2.409
 rarity=U
 type=Sorcery

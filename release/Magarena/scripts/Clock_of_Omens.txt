@@ -1,5 +1,5 @@
 name=Clock of Omens
-image=http://magiccards.info/scans/en/m13/202.jpg
+image=https://magiccards.info/scans/en/m13/202.jpg
 value=4.234
 rarity=U
 type=Artifact

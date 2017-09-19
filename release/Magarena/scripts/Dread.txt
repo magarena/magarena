@@ -1,5 +1,5 @@
 name=Dread
-image=http://magiccards.info/scans/en/lw/107.jpg
+image=https://magiccards.info/scans/en/lw/107.jpg
 value=4.246
 rarity=R
 type=Creature

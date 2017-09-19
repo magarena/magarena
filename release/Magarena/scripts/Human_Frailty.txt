@@ -1,5 +1,5 @@
 name=Human Frailty
-image=http://magiccards.info/scans/en/avr/109.jpg
+image=https://magiccards.info/scans/en/avr/109.jpg
 value=2.939
 removal=2
 rarity=U

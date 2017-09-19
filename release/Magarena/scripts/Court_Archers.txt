@@ -1,5 +1,5 @@
 name=Court Archers
-image=http://magiccards.info/scans/en/ala/126.jpg
+image=https://magiccards.info/scans/en/ala/126.jpg
 value=2.512
 rarity=C
 type=Creature

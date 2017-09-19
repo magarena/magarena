@@ -1,5 +1,5 @@
 name=Zerapa Minotaur
-image=http://magiccards.info/scans/en/pr/108.jpg
+image=https://magiccards.info/scans/en/pr/108.jpg
 value=2.909
 rarity=C
 type=Creature

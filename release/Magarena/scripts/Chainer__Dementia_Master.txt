@@ -1,5 +1,5 @@
 name=Chainer, Dementia Master
-image=http://magiccards.info/scans/en/tr/56.jpg
+image=https://magiccards.info/scans/en/tr/56.jpg
 value=4.023
 rarity=R
 type=Legendary,Creature

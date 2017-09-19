@@ -1,5 +1,5 @@
 name=Cruel Finality
-image=http://magiccards.info/scans/en/aer/54.jpg
+image=https://magiccards.info/scans/en/aer/54.jpg
 value=2.500
 rarity=C
 type=Instant

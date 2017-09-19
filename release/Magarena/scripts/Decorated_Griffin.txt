@@ -1,5 +1,5 @@
 name=Decorated Griffin
-image=http://magiccards.info/scans/en/ths/7.jpg
+image=https://magiccards.info/scans/en/ths/7.jpg
 value=2.557
 rarity=U
 type=Creature

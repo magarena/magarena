@@ -1,5 +1,5 @@
 name=Gavony Township
-image=http://magiccards.info/scans/en/isd/239.jpg
+image=https://magiccards.info/scans/en/isd/239.jpg
 value=3.896
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Murderous Redcap
-image=http://magiccards.info/scans/en/mma/192.jpg
+image=https://magiccards.info/scans/en/mma/192.jpg
 value=3.865
 removal=2
 rarity=U

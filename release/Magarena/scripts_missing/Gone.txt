@@ -1,5 +1,5 @@
 name=Gone
-image=http://magiccards.info/scans/en/pc/113b.jpg
+image=https://magiccards.info/scans/en/pc/113b.jpg
 value=4.039
 rarity=C
 type=Instant

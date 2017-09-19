@@ -1,5 +1,5 @@
 name=Shinen of Life's Roar
-image=http://magiccards.info/scans/en/sok/149.jpg
+image=https://magiccards.info/scans/en/sok/149.jpg
 image_updated=2016-01-09
 value=3.486
 rarity=C

@@ -1,5 +1,5 @@
 name=Dance of Many
-image=http://magiccards.info/scans/en/5e/78.jpg
+image=https://magiccards.info/scans/en/5e/78.jpg
 value=4.039
 rarity=R
 type=Enchantment

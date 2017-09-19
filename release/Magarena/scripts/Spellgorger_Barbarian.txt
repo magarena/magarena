@@ -1,5 +1,5 @@
 name=Spellgorger Barbarian
-image=http://magiccards.info/scans/en/ju/100.jpg
+image=https://magiccards.info/scans/en/ju/100.jpg
 value=1.388
 rarity=C
 type=Creature

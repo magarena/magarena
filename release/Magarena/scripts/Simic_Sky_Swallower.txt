@@ -1,5 +1,5 @@
 name=Simic Sky Swallower
-image=http://magiccards.info/scans/en/mm3/182.jpg
+image=https://magiccards.info/scans/en/mm3/182.jpg
 image_updated=2017-08-08
 value=4.426
 rarity=R

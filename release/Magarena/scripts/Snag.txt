@@ -1,5 +1,5 @@
 name=Snag
-image=http://magiccards.info/scans/en/pr/124.jpg
+image=https://magiccards.info/scans/en/pr/124.jpg
 value=3.222
 rarity=U
 type=Instant

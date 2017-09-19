@@ -1,5 +1,5 @@
 name=Noggin Whack
-image=http://magiccards.info/scans/en/mt/70.jpg
+image=https://magiccards.info/scans/en/mt/70.jpg
 value=3.529
 rarity=U
 type=Tribal,Sorcery

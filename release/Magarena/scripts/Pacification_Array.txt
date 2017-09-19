@@ -1,5 +1,5 @@
 name=Pacification Array
-image=http://magiccards.info/scans/en/aer/168.jpg
+image=https://magiccards.info/scans/en/aer/168.jpg
 value=2.500
 rarity=U
 type=Artifact

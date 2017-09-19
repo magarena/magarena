@@ -1,5 +1,5 @@
 name=Archivist
-image=http://magiccards.info/scans/en/9e/60.jpg
+image=https://magiccards.info/scans/en/9e/60.jpg
 value=3.875
 rarity=R
 type=Creature

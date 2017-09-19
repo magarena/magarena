@@ -1,5 +1,5 @@
 name=Dhund Operative
-image=http://magiccards.info/scans/en/kld/74.jpg
+image=https://magiccards.info/scans/en/kld/74.jpg
 image_updated=2016-10-05
 value=2.500
 rarity=C

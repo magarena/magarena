@@ -1,5 +1,5 @@
 name=Kill-Suit Cultist
-image=http://magiccards.info/scans/en/di/65.jpg
+image=https://magiccards.info/scans/en/di/65.jpg
 value=2.408
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Krovikan Scoundrel
-image=http://magiccards.info/scans/en/cs/64.jpg
+image=https://magiccards.info/scans/en/cs/64.jpg
 value=1.531
 rarity=C
 type=Creature

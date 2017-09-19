@@ -1,5 +1,5 @@
 name=Scorch the Fields
-image=http://magiccards.info/scans/en/dka/103.jpg
+image=https://magiccards.info/scans/en/dka/103.jpg
 value=1.090
 removal=3
 rarity=C

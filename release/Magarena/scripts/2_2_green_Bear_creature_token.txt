@@ -1,6 +1,6 @@
 name=2/2 green Bear creature token
 token=Bear
-image=http://magiccards.info/extras/token/player-rewards-2001/bear.jpg
+image=https://magiccards.info/extras/token/player-rewards-2001/bear.jpg
 value=2
 type=Creature
 subtype=Bear

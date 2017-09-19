@@ -1,5 +1,5 @@
 name=Asmira, Holy Avenger
-image=http://magiccards.info/scans/en/mr/316.jpg
+image=https://magiccards.info/scans/en/mr/316.jpg
 value=3.933
 rarity=R
 type=Legendary,Creature

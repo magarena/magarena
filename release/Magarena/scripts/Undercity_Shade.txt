@@ -1,5 +1,5 @@
 name=Undercity Shade
-image=http://magiccards.info/scans/en/rav/110.jpg
+image=https://magiccards.info/scans/en/rav/110.jpg
 value=2.111
 rarity=U
 type=Creature

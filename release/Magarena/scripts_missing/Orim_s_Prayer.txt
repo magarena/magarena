@@ -1,5 +1,5 @@
 name=Orim's Prayer
-image=http://magiccards.info/scans/en/tp/245.jpg
+image=https://magiccards.info/scans/en/tp/245.jpg
 value=3.955
 rarity=U
 type=Enchantment

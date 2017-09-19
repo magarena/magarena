@@ -1,5 +1,5 @@
 name=Heartstone
-image=http://magiccards.info/scans/en/sh/128.jpg
+image=https://magiccards.info/scans/en/sh/128.jpg
 value=3.909
 rarity=U
 type=Artifact

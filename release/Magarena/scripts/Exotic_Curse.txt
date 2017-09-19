@@ -1,5 +1,5 @@
 name=Exotic Curse
-image=http://magiccards.info/scans/en/in/105.jpg
+image=https://magiccards.info/scans/en/in/105.jpg
 image_updated=2016-12-02
 value=3.022
 rarity=C

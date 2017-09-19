@@ -1,5 +1,5 @@
 name=Tower of Champions
-image=http://magiccards.info/scans/en/mi/265.jpg
+image=https://magiccards.info/scans/en/mi/265.jpg
 value=1.500
 rarity=R
 type=Artifact

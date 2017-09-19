@@ -1,5 +1,5 @@
 name=Obelisk of Grixis
-image=http://magiccards.info/scans/en/ala/214.jpg
+image=https://magiccards.info/scans/en/ala/214.jpg
 value=2.700
 rarity=C
 type=Artifact

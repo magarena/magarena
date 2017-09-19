@@ -1,5 +1,5 @@
 name=Pit Imp
-image=http://magiccards.info/scans/en/tp/42.jpg
+image=https://magiccards.info/scans/en/tp/42.jpg
 value=3.138
 rarity=C
 type=Creature

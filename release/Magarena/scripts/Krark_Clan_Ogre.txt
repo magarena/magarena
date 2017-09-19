@@ -1,5 +1,5 @@
 name=Krark-Clan Ogre
-image=http://magiccards.info/scans/en/5dn/71.jpg
+image=https://magiccards.info/scans/en/5dn/71.jpg
 value=1.948
 rarity=C
 type=Creature

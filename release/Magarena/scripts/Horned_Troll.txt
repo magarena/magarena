@@ -1,5 +1,5 @@
 name=Horned Troll
-image=http://magiccards.info/scans/en/8e/257.jpg
+image=https://magiccards.info/scans/en/8e/257.jpg
 value=3.512
 rarity=C
 type=Creature

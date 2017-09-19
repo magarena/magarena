@@ -1,5 +1,5 @@
 name=Rubblebelt Raiders
-image=http://magiccards.info/scans/en/gtc/224.jpg
+image=https://magiccards.info/scans/en/gtc/224.jpg
 value=3.920
 rarity=R
 type=Creature

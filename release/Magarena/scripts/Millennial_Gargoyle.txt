@@ -1,5 +1,5 @@
 name=Millennial Gargoyle
-image=http://magiccards.info/scans/en/gtc/232.jpg
+image=https://magiccards.info/scans/en/gtc/232.jpg
 value=1.803
 rarity=C
 type=Artifact,Creature

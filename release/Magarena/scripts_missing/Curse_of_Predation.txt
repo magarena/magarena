@@ -1,5 +1,5 @@
 name=Curse of Predation
-image=http://magiccards.info/scans/en/c13/140.jpg
+image=https://magiccards.info/scans/en/c13/140.jpg
 value=3.727
 rarity=U
 type=Enchantment

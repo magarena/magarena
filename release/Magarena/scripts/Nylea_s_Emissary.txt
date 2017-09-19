@@ -1,5 +1,5 @@
 name=Nylea's Emissary
-image=http://magiccards.info/scans/en/ths/168.jpg
+image=https://magiccards.info/scans/en/ths/168.jpg
 value=3.429
 rarity=U
 type=Enchantment,Creature

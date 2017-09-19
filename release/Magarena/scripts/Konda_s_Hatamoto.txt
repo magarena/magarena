@@ -1,5 +1,5 @@
 name=Konda's Hatamoto
-image=http://magiccards.info/scans/en/chk/31.jpg
+image=https://magiccards.info/scans/en/chk/31.jpg
 value=3.450
 rarity=U
 type=Creature

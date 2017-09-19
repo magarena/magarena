@@ -1,5 +1,5 @@
 name=Fulgent Distraction
-image=http://magiccards.info/scans/en/som/7.jpg
+image=https://magiccards.info/scans/en/som/7.jpg
 value=1.650
 rarity=C
 type=Instant

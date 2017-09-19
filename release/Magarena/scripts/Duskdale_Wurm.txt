@@ -1,5 +1,5 @@
 name=Duskdale Wurm
-image=http://magiccards.info/scans/en/m13/166.jpg
+image=https://magiccards.info/scans/en/m13/166.jpg
 value=3.068
 rarity=U
 type=Creature

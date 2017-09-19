@@ -1,5 +1,5 @@
 name=Undying Flames
-image=http://magiccards.info/scans/en/sok/119.jpg
+image=https://magiccards.info/scans/en/sok/119.jpg
 value=3.420
 rarity=R
 type=Sorcery

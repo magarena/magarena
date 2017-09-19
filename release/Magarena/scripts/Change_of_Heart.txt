@@ -1,5 +1,5 @@
 name=Change of Heart
-image=http://magiccards.info/scans/en/sh/103.jpg
+image=https://magiccards.info/scans/en/sh/103.jpg
 value=3.438
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Rootwater Thief
-image=http://magiccards.info/scans/en/ne/40.jpg
+image=https://magiccards.info/scans/en/ne/40.jpg
 value=4.396
 rarity=R
 type=Creature

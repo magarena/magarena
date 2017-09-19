@@ -1,5 +1,5 @@
 name=Tireless Tracker
-image=http://magiccards.info/scans/en/soi/233.jpg
+image=https://magiccards.info/scans/en/soi/233.jpg
 value=2.500
 rarity=R
 type=Creature

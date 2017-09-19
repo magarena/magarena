@@ -1,5 +1,5 @@
 name=Acolyte of Xathrid
-image=http://magiccards.info/scans/en/m10/83.jpg
+image=https://magiccards.info/scans/en/m10/83.jpg
 value=1.256
 rarity=C
 type=Creature

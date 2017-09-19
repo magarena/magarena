@@ -1,5 +1,5 @@
 name=Soul Scourge
-image=http://magiccards.info/scans/en/tr/85.jpg
+image=https://magiccards.info/scans/en/tr/85.jpg
 value=2.257
 rarity=C
 type=Creature

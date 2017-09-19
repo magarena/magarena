@@ -1,5 +1,5 @@
 name=Timely Reinforcements
-image=http://magiccards.info/scans/en/m12/40.jpg
+image=https://magiccards.info/scans/en/m12/40.jpg
 value=4.154
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Steel of the Godhead
-image=http://magiccards.info/scans/en/shm/150.jpg
+image=https://magiccards.info/scans/en/shm/150.jpg
 image_updated=2016-01-09
 value=3.526
 rarity=C

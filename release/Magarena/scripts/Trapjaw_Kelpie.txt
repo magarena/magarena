@@ -1,5 +1,5 @@
 name=Trapjaw Kelpie
-image=http://magiccards.info/scans/en/eve/164.jpg
+image=https://magiccards.info/scans/en/eve/164.jpg
 value=2.056
 rarity=C
 type=Creature

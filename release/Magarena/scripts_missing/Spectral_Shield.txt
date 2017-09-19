@@ -1,5 +1,5 @@
 name=Spectral Shield
-image=http://magiccards.info/scans/en/ia/380.jpg
+image=https://magiccards.info/scans/en/ia/380.jpg
 value=2.771
 rarity=U
 type=Enchantment

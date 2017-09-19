@@ -1,5 +1,5 @@
 name=Snapping Drake
-image=http://magiccards.info/scans/en/m10/72.jpg
+image=https://magiccards.info/scans/en/m10/72.jpg
 image_updated=2017-01-08
 value=2.811
 rarity=C

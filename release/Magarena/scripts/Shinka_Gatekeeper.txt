@@ -1,5 +1,5 @@
 name=Shinka Gatekeeper
-image=http://magiccards.info/scans/en/bok/117.jpg
+image=https://magiccards.info/scans/en/bok/117.jpg
 value=0.891
 rarity=C
 type=Creature

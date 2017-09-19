@@ -1,5 +1,5 @@
 name=Magnetic Web
-image=http://magiccards.info/scans/en/tp/285.jpg
+image=https://magiccards.info/scans/en/tp/285.jpg
 value=3.047
 rarity=R
 type=Artifact

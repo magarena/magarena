@@ -1,5 +1,5 @@
 name=Life's Legacy
-image=http://magiccards.info/scans/en/m15/183.jpg
+image=https://magiccards.info/scans/en/m15/183.jpg
 value=2.750
 rarity=R
 type=Sorcery

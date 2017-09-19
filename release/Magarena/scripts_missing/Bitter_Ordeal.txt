@@ -1,5 +1,5 @@
 name=Bitter Ordeal
-image=http://magiccards.info/scans/en/fut/80.jpg
+image=https://magiccards.info/scans/en/fut/80.jpg
 value=4.350
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Cackling Imp
-image=http://magiccards.info/scans/en/5dn/44.jpg
+image=https://magiccards.info/scans/en/5dn/44.jpg
 image_updated=2016-11-28
 value=1.895
 rarity=C

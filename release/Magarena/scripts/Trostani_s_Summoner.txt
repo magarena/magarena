@@ -1,5 +1,5 @@
 name=Trostani's Summoner
-image=http://magiccards.info/scans/en/dgm/110.jpg
+image=https://magiccards.info/scans/en/dgm/110.jpg
 value=3.797
 rarity=U
 type=Creature

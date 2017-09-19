@@ -1,5 +1,5 @@
 name=Sightless Ghoul
-image=http://magiccards.info/scans/en/dka/73.jpg
+image=https://magiccards.info/scans/en/dka/73.jpg
 value=2.037
 rarity=C
 type=Creature

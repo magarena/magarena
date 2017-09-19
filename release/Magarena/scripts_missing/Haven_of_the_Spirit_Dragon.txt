@@ -1,5 +1,5 @@
 name=Haven of the Spirit Dragon
-image=http://magiccards.info/scans/en/dtk/249.jpg
+image=https://magiccards.info/scans/en/dtk/249.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Mindwrack Demon
-image=http://magiccards.info/scans/en/soi/124.jpg
+image=https://magiccards.info/scans/en/soi/124.jpg
 image_updated=2016-06-04
 value=2.500
 rarity=M

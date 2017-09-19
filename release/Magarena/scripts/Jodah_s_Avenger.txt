@@ -1,5 +1,5 @@
 name=Jodah's Avenger
-image=http://magiccards.info/scans/en/pc/42.jpg
+image=https://magiccards.info/scans/en/pc/42.jpg
 value=3.720
 rarity=U
 type=Creature

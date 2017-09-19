@@ -1,5 +1,5 @@
 name=Ashenmoor Liege
-image=http://magiccards.info/scans/en/shm/181.jpg
+image=https://magiccards.info/scans/en/shm/181.jpg
 value=3.822
 rarity=R
 type=Creature

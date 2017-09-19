@@ -1,5 +1,5 @@
 name=Favored Hoplite
-image=http://magiccards.info/scans/en/ths/13.jpg
+image=https://magiccards.info/scans/en/ths/13.jpg
 value=3.628
 rarity=U
 type=Creature

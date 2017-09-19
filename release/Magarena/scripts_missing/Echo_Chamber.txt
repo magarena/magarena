@@ -1,5 +1,5 @@
 name=Echo Chamber
-image=http://magiccards.info/scans/en/tp/272.jpg
+image=https://magiccards.info/scans/en/tp/272.jpg
 value=3.086
 rarity=R
 type=Artifact

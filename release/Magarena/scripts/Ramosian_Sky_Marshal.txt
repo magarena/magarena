@@ -1,5 +1,5 @@
 name=Ramosian Sky Marshal
-image=http://magiccards.info/scans/en/mm/40.jpg
+image=https://magiccards.info/scans/en/mm/40.jpg
 value=3.463
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Faith of the Devoted
-image=http://magiccards.info/scans/en/akh/90.jpg
+image=https://magiccards.info/scans/en/akh/90.jpg
 value=2.500
 rarity=U
 type=Enchantment

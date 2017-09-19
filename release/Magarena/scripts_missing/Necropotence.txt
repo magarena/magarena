@@ -1,5 +1,5 @@
 name=Necropotence
-image=http://magiccards.info/scans/en/ema/98.jpg
+image=https://magiccards.info/scans/en/ema/98.jpg
 value=4.833
 rarity=M
 type=Enchantment

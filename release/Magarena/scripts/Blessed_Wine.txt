@@ -1,5 +1,5 @@
 name=Blessed Wine
-image=http://magiccards.info/scans/en/5e/287.jpg
+image=https://magiccards.info/scans/en/5e/287.jpg
 value=1.287
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Heroes' Podium
-image=http://magiccards.info/scans/en/bng/159.jpg
+image=https://magiccards.info/scans/en/bng/159.jpg
 value=2.829
 rarity=R
 type=Legendary,Artifact

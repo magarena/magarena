@@ -1,5 +1,5 @@
 name=Ambush Commander
-image=http://magiccards.info/scans/en/sc/111.jpg
+image=https://magiccards.info/scans/en/sc/111.jpg
 image_updated=2016-11-20
 value=4.316
 rarity=R

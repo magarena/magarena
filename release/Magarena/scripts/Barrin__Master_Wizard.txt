@@ -1,5 +1,5 @@
 name=Barrin, Master Wizard
-image=http://magiccards.info/scans/en/us/63.jpg
+image=https://magiccards.info/scans/en/us/63.jpg
 value=3.144
 rarity=R
 type=Legendary,Creature

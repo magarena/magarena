@@ -1,5 +1,5 @@
 name=Trained Condor
-image=http://magiccards.info/scans/en/m14/76.jpg
+image=https://magiccards.info/scans/en/m14/76.jpg
 value=3.426
 rarity=C
 type=Creature

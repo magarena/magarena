@@ -1,5 +1,5 @@
 name=Diminish
-image=http://magiccards.info/scans/en/m11/52.jpg
+image=https://magiccards.info/scans/en/m11/52.jpg
 value=4.159
 removal=1
 rarity=C

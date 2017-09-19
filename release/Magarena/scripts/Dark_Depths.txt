@@ -1,5 +1,5 @@
 name=Dark Depths
-image=http://magiccards.info/scans/en/cs/145.jpg
+image=https://magiccards.info/scans/en/cs/145.jpg
 value=4.555
 rarity=R
 type=Legendary,Snow,Land

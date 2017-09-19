@@ -1,5 +1,5 @@
 name=Contempt
-image=http://magiccards.info/scans/en/sh/27.jpg
+image=https://magiccards.info/scans/en/sh/27.jpg
 value=3.370
 rarity=C
 type=Enchantment

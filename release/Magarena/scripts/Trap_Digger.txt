@@ -1,5 +1,5 @@
 name=Trap Digger
-image=http://magiccards.info/scans/en/sc/24.jpg
+image=https://magiccards.info/scans/en/sc/24.jpg
 value=1.219
 rarity=R
 type=Creature

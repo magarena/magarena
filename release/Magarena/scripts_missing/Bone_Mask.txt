@@ -1,5 +1,5 @@
 name=Bone Mask
-image=http://magiccards.info/scans/en/mr/260.jpg
+image=https://magiccards.info/scans/en/mr/260.jpg
 value=2.594
 rarity=R
 type=Artifact

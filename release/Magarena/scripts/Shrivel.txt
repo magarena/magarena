@@ -1,5 +1,5 @@
 name=Shrivel
-image=http://magiccards.info/scans/en/mm2/95.jpg
+image=https://magiccards.info/scans/en/mm2/95.jpg
 value=3.200
 rarity=C
 type=Sorcery

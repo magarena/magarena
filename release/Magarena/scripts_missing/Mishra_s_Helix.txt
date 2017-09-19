@@ -1,5 +1,5 @@
 name=Mishra's Helix
-image=http://magiccards.info/scans/en/us/302.jpg
+image=https://magiccards.info/scans/en/us/302.jpg
 value=4.107
 rarity=R
 type=Artifact

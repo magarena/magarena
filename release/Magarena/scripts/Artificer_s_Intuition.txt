@@ -1,5 +1,5 @@
 name=Artificer's Intuition
-image=http://magiccards.info/scans/en/5dn/23.jpg
+image=https://magiccards.info/scans/en/5dn/23.jpg
 value=3.475
 rarity=R
 type=Enchantment

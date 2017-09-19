@@ -1,5 +1,5 @@
 name=Shaman of Forgotten Ways
-image=http://magiccards.info/scans/en/dtk/204.jpg
+image=https://magiccards.info/scans/en/dtk/204.jpg
 value=2.500
 rarity=M
 type=Creature

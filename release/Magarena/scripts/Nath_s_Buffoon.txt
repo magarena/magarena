@@ -1,5 +1,5 @@
 name=Nath's Buffoon
-image=http://magiccards.info/scans/en/lw/129.jpg
+image=https://magiccards.info/scans/en/lw/129.jpg
 value=2.000
 rarity=C
 type=Creature

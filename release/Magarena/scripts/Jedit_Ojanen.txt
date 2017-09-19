@@ -1,5 +1,5 @@
 name=Jedit Ojanen
-image=http://magiccards.info/scans/en/lg/274.jpg
+image=https://magiccards.info/scans/en/lg/274.jpg
 value=1.194
 rarity=U
 type=Legendary,Creature

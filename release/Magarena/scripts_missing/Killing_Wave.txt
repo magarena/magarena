@@ -1,5 +1,5 @@
 name=Killing Wave
-image=http://magiccards.info/scans/en/avr/111.jpg
+image=https://magiccards.info/scans/en/avr/111.jpg
 value=3.492
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Skittish Kavu
-image=http://magiccards.info/scans/en/in/168.jpg
+image=https://magiccards.info/scans/en/in/168.jpg
 value=2.047
 rarity=U
 type=Creature

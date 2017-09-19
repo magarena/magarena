@@ -1,5 +1,5 @@
 name=Spitemare
-image=http://magiccards.info/scans/en/eve/147.jpg
+image=https://magiccards.info/scans/en/eve/147.jpg
 value=3.689
 rarity=U
 type=Creature

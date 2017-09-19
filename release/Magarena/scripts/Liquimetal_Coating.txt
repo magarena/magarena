@@ -1,5 +1,5 @@
 name=Liquimetal Coating
-image=http://magiccards.info/scans/en/c14/246.jpg
+image=https://magiccards.info/scans/en/c14/246.jpg
 value=4.154
 rarity=U
 type=Artifact

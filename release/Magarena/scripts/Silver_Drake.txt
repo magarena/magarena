@@ -1,5 +1,5 @@
 name=Silver Drake
-image=http://magiccards.info/scans/en/ps/125.jpg
+image=https://magiccards.info/scans/en/ps/125.jpg
 value=4.035
 rarity=C
 type=Creature

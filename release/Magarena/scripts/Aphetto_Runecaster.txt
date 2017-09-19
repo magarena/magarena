@@ -1,5 +1,5 @@
 name=Aphetto Runecaster
-image=http://magiccards.info/scans/en/sc/28.jpg
+image=https://magiccards.info/scans/en/sc/28.jpg
 value=3.113
 rarity=U
 type=Creature

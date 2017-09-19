@@ -1,5 +1,5 @@
 name=Sky Ruin Drake
-image=http://magiccards.info/scans/en/zen/66.jpg
+image=https://magiccards.info/scans/en/zen/66.jpg
 value=2.131
 rarity=C
 type=Creature

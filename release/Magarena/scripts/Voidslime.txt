@@ -1,5 +1,5 @@
 name=Voidslime
-image=http://magiccards.info/scans/en/di/137.jpg
+image=https://magiccards.info/scans/en/di/137.jpg
 value=4.262
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Galvanic Key
-image=http://magiccards.info/scans/en/mi/173.jpg
+image=https://magiccards.info/scans/en/mi/173.jpg
 value=2.568
 rarity=C
 type=Artifact

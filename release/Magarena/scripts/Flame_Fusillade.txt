@@ -1,5 +1,5 @@
 name=Flame Fusillade
-image=http://magiccards.info/scans/en/rav/123.jpg
+image=https://magiccards.info/scans/en/rav/123.jpg
 value=4.319
 rarity=R
 type=Sorcery

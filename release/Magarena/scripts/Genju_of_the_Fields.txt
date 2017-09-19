@@ -1,5 +1,5 @@
 name=Genju of the Fields
-image=http://magiccards.info/scans/en/bok/5.jpg
+image=https://magiccards.info/scans/en/bok/5.jpg
 value=3.922
 rarity=U
 type=Enchantment

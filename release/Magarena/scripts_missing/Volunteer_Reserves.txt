@@ -1,5 +1,5 @@
 name=Volunteer Reserves
-image=http://magiccards.info/scans/en/wl/145.jpg
+image=https://magiccards.info/scans/en/wl/145.jpg
 value=2.526
 rarity=U
 type=Creature

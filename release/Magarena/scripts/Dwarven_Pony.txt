@@ -1,5 +1,5 @@
 name=Dwarven Pony
-image=http://magiccards.info/scans/en/hl/89.jpg
+image=https://magiccards.info/scans/en/hl/89.jpg
 value=2.271
 rarity=R
 type=Creature

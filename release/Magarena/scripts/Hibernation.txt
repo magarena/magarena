@@ -1,5 +1,5 @@
 name=Hibernation
-image=http://magiccards.info/scans/en/8e/82.jpg
+image=https://magiccards.info/scans/en/8e/82.jpg
 value=3.786
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Tangle Mantis
-image=http://magiccards.info/scans/en/mbs/91.jpg
+image=https://magiccards.info/scans/en/mbs/91.jpg
 value=3.008
 rarity=C
 type=Creature

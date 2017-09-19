@@ -1,5 +1,5 @@
 name=Hinterland Hermit
-image=http://magiccards.info/scans/en/dka/94a.jpg
+image=https://magiccards.info/scans/en/dka/94a.jpg
 value=2.349
 rarity=C
 type=Creature

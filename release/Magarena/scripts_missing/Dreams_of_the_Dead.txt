@@ -1,5 +1,5 @@
 name=Dreams of the Dead
-image=http://magiccards.info/scans/en/ia/66.jpg
+image=https://magiccards.info/scans/en/ia/66.jpg
 value=2.861
 rarity=U
 type=Enchantment

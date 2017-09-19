@@ -1,5 +1,5 @@
 name=Kederekt Leviathan
-image=http://magiccards.info/scans/en/ala/48.jpg
+image=https://magiccards.info/scans/en/ala/48.jpg
 value=3.289
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Embodiment of Spring
-image=http://magiccards.info/scans/en/ktk/39.jpg
+image=https://magiccards.info/scans/en/ktk/39.jpg
 value=2.750
 rarity=C
 type=Creature

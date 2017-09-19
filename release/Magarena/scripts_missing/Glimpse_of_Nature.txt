@@ -1,5 +1,5 @@
 name=Glimpse of Nature
-image=http://magiccards.info/scans/en/chk/210.jpg
+image=https://magiccards.info/scans/en/chk/210.jpg
 value=4.237
 rarity=R
 type=Sorcery

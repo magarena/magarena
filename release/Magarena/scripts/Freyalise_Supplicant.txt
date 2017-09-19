@@ -1,5 +1,5 @@
 name=Freyalise Supplicant
-image=http://magiccards.info/scans/en/ia/127.jpg
+image=https://magiccards.info/scans/en/ia/127.jpg
 value=3.103
 rarity=U
 type=Creature

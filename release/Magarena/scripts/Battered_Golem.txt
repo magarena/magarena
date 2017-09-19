@@ -1,5 +1,5 @@
 name=Battered Golem
-image=http://magiccards.info/scans/en/5dn/106.jpg
+image=https://magiccards.info/scans/en/5dn/106.jpg
 value=2.652
 rarity=C
 type=Artifact,Creature

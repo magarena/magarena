@@ -1,5 +1,5 @@
 name=Chronicler of Heroes
-image=http://magiccards.info/scans/en/ths/190.jpg
+image=https://magiccards.info/scans/en/ths/190.jpg
 value=3.438
 rarity=U
 type=Creature

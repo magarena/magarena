@@ -1,5 +1,5 @@
 name=Muscle Burst
-image=http://magiccards.info/scans/en/od/252.jpg
+image=https://magiccards.info/scans/en/od/252.jpg
 value=3.350
 rarity=C
 type=Instant

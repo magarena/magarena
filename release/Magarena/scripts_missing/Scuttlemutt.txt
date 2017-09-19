@@ -1,5 +1,5 @@
 name=Scuttlemutt
-image=http://magiccards.info/scans/en/shm/263.jpg
+image=https://magiccards.info/scans/en/shm/263.jpg
 value=3.897
 rarity=C
 type=Artifact,Creature

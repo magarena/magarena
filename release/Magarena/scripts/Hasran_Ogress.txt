@@ -1,5 +1,5 @@
 name=Hasran Ogress
-image=http://magiccards.info/scans/en/ch/6.jpg
+image=https://magiccards.info/scans/en/ch/6.jpg
 value=2.014
 rarity=C
 type=Creature

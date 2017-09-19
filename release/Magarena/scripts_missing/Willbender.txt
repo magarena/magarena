@@ -1,5 +1,5 @@
 name=Willbender
-image=http://magiccards.info/scans/en/c14/131.jpg
+image=https://magiccards.info/scans/en/c14/131.jpg
 value=2.500
 rarity=U
 type=Creature

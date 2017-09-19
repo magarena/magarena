@@ -1,5 +1,5 @@
 name=Icefeather Aven
-image=http://magiccards.info/scans/en/ktk/178.jpg
+image=https://magiccards.info/scans/en/ktk/178.jpg
 value=4.375
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Azorius Aethermage
-image=http://magiccards.info/scans/en/di/104.jpg
+image=https://magiccards.info/scans/en/di/104.jpg
 image_updated=2016-09-27
 value=3.188
 rarity=U

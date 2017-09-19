@@ -1,6 +1,6 @@
 name=1/1 white Monk creature token with prowess
 token=Monk
-image=http://magiccards.info/extras/token/fate-reforged/monk.jpg
+image=https://magiccards.info/extras/token/fate-reforged/monk.jpg
 value=1
 pt=1/1
 color=w

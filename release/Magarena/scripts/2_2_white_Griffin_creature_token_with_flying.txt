@@ -1,6 +1,6 @@
 name=2/2 white Griffin creature token with flying
 token=Griffin
-image=http://magiccards.info/extras/token/duel-decks-heroes-vs-monsters/griffin.jpg
+image=https://magiccards.info/extras/token/duel-decks-heroes-vs-monsters/griffin.jpg
 value=3
 type=Creature
 subtype=Griffin

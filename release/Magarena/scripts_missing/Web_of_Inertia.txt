@@ -1,5 +1,5 @@
 name=Web of Inertia
-image=http://magiccards.info/scans/en/ju/53.jpg
+image=https://magiccards.info/scans/en/ju/53.jpg
 value=3.456
 rarity=U
 type=Enchantment

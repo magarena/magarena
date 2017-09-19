@@ -1,5 +1,5 @@
 name=Monk Realist
-image=http://magiccards.info/scans/en/cmd/20.jpg
+image=https://magiccards.info/scans/en/cmd/20.jpg
 value=3.161
 removal=1
 rarity=C

@@ -1,5 +1,5 @@
 name=Bloodrite Invoker
-image=http://magiccards.info/scans/en/roe/97.jpg
+image=https://magiccards.info/scans/en/roe/97.jpg
 value=2.185
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kitsune Riftwalker
-image=http://magiccards.info/scans/en/chk/29.jpg
+image=https://magiccards.info/scans/en/chk/29.jpg
 value=1.833
 rarity=C
 type=Creature

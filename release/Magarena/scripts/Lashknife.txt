@@ -1,5 +1,5 @@
 name=Lashknife
-image=http://magiccards.info/scans/en/ne/9.jpg
+image=https://magiccards.info/scans/en/ne/9.jpg
 value=2.185
 rarity=C
 type=Enchantment

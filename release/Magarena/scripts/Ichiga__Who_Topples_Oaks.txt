@@ -1,5 +1,5 @@
 name=Ichiga, Who Topples Oaks
-image=http://magiccards.info/scans/en/bok/122b.jpg
+image=https://magiccards.info/scans/en/bok/122b.jpg
 value=3.019
 rarity=U
 type=Legendary,Creature

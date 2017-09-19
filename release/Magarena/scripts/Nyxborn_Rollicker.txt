@@ -1,5 +1,5 @@
 name=Nyxborn Rollicker
-image=http://magiccards.info/scans/en/bng/102.jpg
+image=https://magiccards.info/scans/en/bng/102.jpg
 value=3.391
 rarity=C
 type=Enchantment,Creature

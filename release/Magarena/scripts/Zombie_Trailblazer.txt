@@ -1,5 +1,5 @@
 name=Zombie Trailblazer
-image=http://magiccards.info/scans/en/tr/89.jpg
+image=https://magiccards.info/scans/en/tr/89.jpg
 value=3.868
 rarity=U
 type=Creature

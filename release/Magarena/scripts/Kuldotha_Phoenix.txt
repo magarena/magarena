@@ -1,5 +1,5 @@
 name=Kuldotha Phoenix
-image=http://magiccards.info/scans/en/som/95.jpg
+image=https://magiccards.info/scans/en/som/95.jpg
 value=3.897
 rarity=R
 type=Creature

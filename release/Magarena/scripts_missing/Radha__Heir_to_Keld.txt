@@ -1,5 +1,5 @@
 name=Radha, Heir to Keld
-image=http://magiccards.info/scans/en/pc/162.jpg
+image=https://magiccards.info/scans/en/pc/162.jpg
 value=4.199
 rarity=R
 type=Legendary,Creature

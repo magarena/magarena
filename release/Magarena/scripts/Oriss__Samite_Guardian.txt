@@ -1,5 +1,5 @@
 name=Oriss, Samite Guardian
-image=http://magiccards.info/scans/en/fut/28.jpg
+image=https://magiccards.info/scans/en/fut/28.jpg
 value=3.754
 rarity=R
 type=Legendary,Creature

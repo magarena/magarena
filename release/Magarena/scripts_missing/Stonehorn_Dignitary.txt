@@ -1,5 +1,5 @@
 name=Stonehorn Dignitary
-image=http://magiccards.info/scans/en/m12/37.jpg
+image=https://magiccards.info/scans/en/m12/37.jpg
 value=3.955
 rarity=C
 type=Creature

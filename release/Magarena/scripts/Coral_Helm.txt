@@ -1,5 +1,5 @@
 name=Coral Helm
-image=http://magiccards.info/scans/en/5e/359.jpg
+image=https://magiccards.info/scans/en/5e/359.jpg
 value=1.625
 rarity=R
 type=Artifact

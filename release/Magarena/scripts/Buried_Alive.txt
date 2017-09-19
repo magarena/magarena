@@ -1,5 +1,5 @@
 name=Buried Alive
-image=http://magiccards.info/scans/en/cmd/74.jpg
+image=https://magiccards.info/scans/en/cmd/74.jpg
 value=4.413
 rarity=U
 type=Sorcery

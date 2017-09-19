@@ -1,5 +1,5 @@
 name=Devouring Greed
-image=http://magiccards.info/scans/en/mm2/78.jpg
+image=https://magiccards.info/scans/en/mm2/78.jpg
 image_updated=2015-11-05
 value=2.500
 rarity=U

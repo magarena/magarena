@@ -1,5 +1,5 @@
 name=Scrapyard Mongrel
-image=http://magiccards.info/scans/en/m15/160.jpg
+image=https://magiccards.info/scans/en/m15/160.jpg
 value=3.167
 rarity=C
 type=Creature

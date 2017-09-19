@@ -1,5 +1,5 @@
 name=Piety
-image=http://magiccards.info/scans/en/4e/291.jpg
+image=https://magiccards.info/scans/en/4e/291.jpg
 value=1.452
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Regathan Firecat
-image=http://magiccards.info/scans/en/m14/150.jpg
+image=https://magiccards.info/scans/en/m14/150.jpg
 value=3.192
 rarity=C
 type=Creature

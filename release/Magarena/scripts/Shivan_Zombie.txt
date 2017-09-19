@@ -1,5 +1,5 @@
 name=Shivan Zombie
-image=http://magiccards.info/scans/en/in/271.jpg
+image=https://magiccards.info/scans/en/in/271.jpg
 value=3.900
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Chain of Smog
-image=http://magiccards.info/scans/en/on/132.jpg
+image=https://magiccards.info/scans/en/on/132.jpg
 value=3.621
 rarity=U
 type=Sorcery

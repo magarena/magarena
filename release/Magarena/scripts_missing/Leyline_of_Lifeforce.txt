@@ -1,5 +1,5 @@
 name=Leyline of Lifeforce
-image=http://magiccards.info/scans/en/gp/90.jpg
+image=https://magiccards.info/scans/en/gp/90.jpg
 value=3.420
 rarity=R
 type=Enchantment

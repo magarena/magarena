@@ -1,5 +1,5 @@
 name=Riku of Two Reflections
-image=http://magiccards.info/scans/en/cmd/220.jpg
+image=https://magiccards.info/scans/en/cmd/220.jpg
 value=4.090
 rarity=M
 type=Legendary,Creature

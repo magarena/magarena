@@ -1,5 +1,5 @@
 name=Tormentor's Trident
-image=http://magiccards.info/scans/en/avr/222.jpg
+image=https://magiccards.info/scans/en/avr/222.jpg
 value=1.671
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Pouncing Wurm
-image=http://magiccards.info/scans/en/pc/136.jpg
+image=https://magiccards.info/scans/en/pc/136.jpg
 value=2.891
 rarity=U
 type=Creature

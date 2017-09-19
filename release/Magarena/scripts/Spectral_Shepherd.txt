@@ -1,5 +1,5 @@
 name=Spectral Shepherd
-image=http://magiccards.info/scans/en/soi/38.jpg
+image=https://magiccards.info/scans/en/soi/38.jpg
 value=2.500
 rarity=U
 type=Creature

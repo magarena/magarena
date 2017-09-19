@@ -1,5 +1,5 @@
 name=Viashivan Dragon
-image=http://magiccards.info/scans/en/vi/140.jpg
+image=https://magiccards.info/scans/en/vi/140.jpg
 value=3.842
 rarity=R
 type=Creature

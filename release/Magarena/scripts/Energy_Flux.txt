@@ -1,5 +1,5 @@
 name=Energy Flux
-image=http://magiccards.info/scans/en/mm/78.jpg
+image=https://magiccards.info/scans/en/mm/78.jpg
 value=4.468
 rarity=U
 type=Enchantment

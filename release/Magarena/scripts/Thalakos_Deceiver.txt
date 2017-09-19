@@ -1,5 +1,5 @@
 name=Thalakos Deceiver
-image=http://magiccards.info/scans/en/sh/45.jpg
+image=https://magiccards.info/scans/en/sh/45.jpg
 value=3.978
 rarity=R
 type=Creature

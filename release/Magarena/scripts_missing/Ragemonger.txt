@@ -1,5 +1,5 @@
 name=Ragemonger
-image=http://magiccards.info/scans/en/bng/153.jpg
+image=https://magiccards.info/scans/en/bng/153.jpg
 value=3.811
 rarity=U
 type=Creature

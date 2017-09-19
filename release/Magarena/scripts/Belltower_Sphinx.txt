@@ -1,5 +1,5 @@
 name=Belltower Sphinx
-image=http://magiccards.info/scans/en/m12/46.jpg
+image=https://magiccards.info/scans/en/m12/46.jpg
 value=3.662
 rarity=U
 type=Creature

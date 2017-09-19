@@ -1,5 +1,5 @@
 name=Betrayal of Flesh
-image=http://magiccards.info/scans/en/mi/58.jpg
+image=https://magiccards.info/scans/en/mi/58.jpg
 value=2.298
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Undo
-image=http://magiccards.info/scans/en/st/58.jpg
+image=https://magiccards.info/scans/en/st/58.jpg
 value=3.767
 rarity=U
 type=Sorcery

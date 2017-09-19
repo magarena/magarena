@@ -1,5 +1,5 @@
 name=Thalakos Seer
-image=http://magiccards.info/scans/en/tp/94.jpg
+image=https://magiccards.info/scans/en/tp/94.jpg
 value=3.830
 rarity=C
 type=Creature

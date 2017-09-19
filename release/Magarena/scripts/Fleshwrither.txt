@@ -1,5 +1,5 @@
 name=Fleshwrither
-image=http://magiccards.info/scans/en/fut/84.jpg
+image=https://magiccards.info/scans/en/fut/84.jpg
 value=3.520
 rarity=U
 type=Creature

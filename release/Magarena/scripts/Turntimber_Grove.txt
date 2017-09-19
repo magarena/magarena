@@ -1,5 +1,5 @@
 name=Turntimber Grove
-image=http://magiccards.info/scans/en/zen/227.jpg
+image=https://magiccards.info/scans/en/zen/227.jpg
 value=3.089
 rarity=C
 type=Land

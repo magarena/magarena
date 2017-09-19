@@ -1,5 +1,5 @@
 name=Grizzled Leotau
-image=http://magiccards.info/scans/en/arb/69.jpg
+image=https://magiccards.info/scans/en/arb/69.jpg
 value=3.195
 rarity=C
 type=Creature

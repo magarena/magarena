@@ -1,5 +1,5 @@
 name=Coastal Hornclaw
-image=http://magiccards.info/scans/en/8e/66.jpg
+image=https://magiccards.info/scans/en/8e/66.jpg
 value=1.274
 rarity=C
 type=Creature

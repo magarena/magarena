@@ -1,5 +1,5 @@
 name=Acceptable Losses
-image=http://magiccards.info/scans/en/od/172.jpg
+image=https://magiccards.info/scans/en/od/172.jpg
 value=1.018
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Scalding Salamander
-image=http://magiccards.info/scans/en/ex/100.jpg
+image=https://magiccards.info/scans/en/ex/100.jpg
 value=3.922
 rarity=U
 type=Creature

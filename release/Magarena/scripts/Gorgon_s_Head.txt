@@ -1,5 +1,5 @@
 name=Gorgon's Head
-image=http://magiccards.info/scans/en/bng/158.jpg
+image=https://magiccards.info/scans/en/bng/158.jpg
 value=3.298
 rarity=U
 type=Artifact

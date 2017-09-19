@@ -1,5 +1,5 @@
 name=Lead the Stampede
-image=http://magiccards.info/scans/en/cns/170.jpg
+image=https://magiccards.info/scans/en/cns/170.jpg
 value=3.833
 rarity=U
 type=Sorcery

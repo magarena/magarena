@@ -1,5 +1,5 @@
 name=Winter's Chill
-image=http://magiccards.info/scans/en/ia/107.jpg
+image=https://magiccards.info/scans/en/ia/107.jpg
 value=3.342
 rarity=R
 type=Instant

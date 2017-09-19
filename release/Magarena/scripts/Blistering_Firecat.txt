@@ -1,5 +1,5 @@
 name=Blistering Firecat
-image=http://magiccards.info/scans/en/on/189.jpg
+image=https://magiccards.info/scans/en/on/189.jpg
 value=4.311
 rarity=R
 type=Creature

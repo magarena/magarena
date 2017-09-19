@@ -1,5 +1,5 @@
 name=Bringer of the White Dawn
-image=http://magiccards.info/scans/en/5dn/7.jpg
+image=https://magiccards.info/scans/en/5dn/7.jpg
 value=4.141
 rarity=R
 type=Creature

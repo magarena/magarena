@@ -1,5 +1,5 @@
 name=Myth Realized
-image=http://magiccards.info/scans/en/dtk/26.jpg
+image=https://magiccards.info/scans/en/dtk/26.jpg
 value=2.500
 rarity=R
 type=Enchantment

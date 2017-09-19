@@ -1,5 +1,5 @@
 name=Ghitu Fire
-image=http://magiccards.info/scans/en/in/144.jpg
+image=https://magiccards.info/scans/en/in/144.jpg
 value=3.682
 rarity=R
 type=Sorcery

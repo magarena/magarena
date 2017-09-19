@@ -1,5 +1,5 @@
 name=Yavimaya Kavu
-image=http://magiccards.info/scans/en/in/291.jpg
+image=https://magiccards.info/scans/en/in/291.jpg
 value=3.378
 rarity=U
 type=Creature

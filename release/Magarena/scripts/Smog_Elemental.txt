@@ -1,5 +1,5 @@
 name=Smog Elemental
-image=http://magiccards.info/scans/en/gtc/79.jpg
+image=https://magiccards.info/scans/en/gtc/79.jpg
 value=2.880
 rarity=U
 type=Creature

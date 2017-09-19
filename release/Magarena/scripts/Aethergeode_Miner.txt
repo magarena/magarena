@@ -1,5 +1,5 @@
 name=Aethergeode Miner
-image=http://magiccards.info/scans/en/aer/4.jpg
+image=https://magiccards.info/scans/en/aer/4.jpg
 value=2.500
 rarity=R
 type=Creature

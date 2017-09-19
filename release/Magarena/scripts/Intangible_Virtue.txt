@@ -1,5 +1,5 @@
 name=Intangible Virtue
-image=http://magiccards.info/scans/en/mm3/9.jpg
+image=https://magiccards.info/scans/en/mm3/9.jpg
 image_updated=2017-08-08
 value=4.214
 rarity=U

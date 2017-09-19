@@ -1,5 +1,5 @@
 name=Advice from the Fae
-image=http://magiccards.info/scans/en/shm/28.jpg
+image=https://magiccards.info/scans/en/shm/28.jpg
 value=2.694
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Staff of the Mind Magus
-image=http://magiccards.info/scans/en/m15/234.jpg
+image=https://magiccards.info/scans/en/m15/234.jpg
 value=1.400
 rarity=U
 type=Artifact

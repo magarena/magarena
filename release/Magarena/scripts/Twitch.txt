@@ -1,5 +1,5 @@
 name=Twitch
-image=http://magiccards.info/scans/en/wwk/43.jpg
+image=https://magiccards.info/scans/en/wwk/43.jpg
 value=2.643
 rarity=C
 type=Instant

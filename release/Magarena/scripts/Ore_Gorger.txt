@@ -1,5 +1,5 @@
 name=Ore Gorger
-image=http://magiccards.info/scans/en/chk/182.jpg
+image=https://magiccards.info/scans/en/chk/182.jpg
 value=2.338
 rarity=U
 type=Creature

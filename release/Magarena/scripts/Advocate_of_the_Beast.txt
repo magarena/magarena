@@ -1,5 +1,5 @@
 name=Advocate of the Beast
-image=http://magiccards.info/scans/en/m14/164.jpg
+image=https://magiccards.info/scans/en/m14/164.jpg
 value=3.397
 rarity=C
 type=Creature

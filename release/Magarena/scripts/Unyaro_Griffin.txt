@@ -1,5 +1,5 @@
 name=Unyaro Griffin
-image=http://magiccards.info/scans/en/6e/49.jpg
+image=https://magiccards.info/scans/en/6e/49.jpg
 value=2.797
 rarity=U
 type=Creature

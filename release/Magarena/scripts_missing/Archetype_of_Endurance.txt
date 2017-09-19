@@ -1,5 +1,5 @@
 name=Archetype of Endurance
-image=http://magiccards.info/scans/en/bng/116.jpg
+image=https://magiccards.info/scans/en/bng/116.jpg
 value=3.118
 rarity=U
 type=Enchantment,Creature

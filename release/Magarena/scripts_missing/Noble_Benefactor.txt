@@ -1,5 +1,5 @@
 name=Noble Benefactor
-image=http://magiccards.info/scans/en/wl/44.jpg
+image=https://magiccards.info/scans/en/wl/44.jpg
 value=3.736
 rarity=U
 type=Creature

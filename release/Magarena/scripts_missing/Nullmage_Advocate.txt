@@ -1,5 +1,5 @@
 name=Nullmage Advocate
-image=http://magiccards.info/scans/en/pc2/70.jpg
+image=https://magiccards.info/scans/en/pc2/70.jpg
 value=2.679
 rarity=C
 type=Creature

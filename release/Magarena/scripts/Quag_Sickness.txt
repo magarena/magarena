@@ -1,5 +1,5 @@
 name=Quag Sickness
-image=http://magiccards.info/scans/en/m11/111.jpg
+image=https://magiccards.info/scans/en/m11/111.jpg
 value=3.520
 rarity=C
 type=Enchantment

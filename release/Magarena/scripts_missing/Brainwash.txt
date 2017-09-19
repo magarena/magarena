@@ -1,5 +1,5 @@
 name=Brainwash
-image=http://magiccards.info/scans/en/5e/289.jpg
+image=https://magiccards.info/scans/en/5e/289.jpg
 value=2.796
 rarity=C
 type=Enchantment

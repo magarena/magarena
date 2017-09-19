@@ -1,5 +1,5 @@
 name=The Great Aurora
-image=http://magiccards.info/scans/en/ori/179.jpg
+image=https://magiccards.info/scans/en/ori/179.jpg
 image_updated=2015-11-05
 value=2.500
 rarity=M

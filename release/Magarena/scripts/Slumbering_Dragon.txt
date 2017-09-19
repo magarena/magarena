@@ -1,5 +1,5 @@
 name=Slumbering Dragon
-image=http://magiccards.info/scans/en/m13/148.jpg
+image=https://magiccards.info/scans/en/m13/148.jpg
 value=3.980
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Relic Ward
-image=http://magiccards.info/scans/en/vi/116.jpg
+image=https://magiccards.info/scans/en/vi/116.jpg
 value=3.115
 rarity=U
 type=Enchantment

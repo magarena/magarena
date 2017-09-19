@@ -1,5 +1,5 @@
 name=Wildfield Borderpost
-image=http://magiccards.info/scans/en/arb/80.jpg
+image=https://magiccards.info/scans/en/arb/80.jpg
 value=3.045
 rarity=C
 type=Artifact

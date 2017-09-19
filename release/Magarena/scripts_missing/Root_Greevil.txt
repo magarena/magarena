@@ -1,5 +1,5 @@
 name=Root Greevil
-image=http://magiccards.info/scans/en/ps/91.jpg
+image=https://magiccards.info/scans/en/ps/91.jpg
 value=3.741
 rarity=C
 type=Creature

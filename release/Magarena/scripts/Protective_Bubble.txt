@@ -1,5 +1,5 @@
 name=Protective Bubble
-image=http://magiccards.info/scans/en/lw/80.jpg
+image=https://magiccards.info/scans/en/lw/80.jpg
 value=3.360
 rarity=C
 type=Enchantment

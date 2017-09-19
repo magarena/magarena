@@ -1,5 +1,5 @@
 name=Champion of Rhonas
-image=http://magiccards.info/scans/en/akh/159.jpg
+image=https://magiccards.info/scans/en/akh/159.jpg
 value=2.500
 rarity=R
 type=Creature

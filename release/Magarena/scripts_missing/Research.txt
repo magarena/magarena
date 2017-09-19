@@ -1,5 +1,5 @@
 name=Research
-image=http://magiccards.info/scans/en/di/155a.jpg
+image=https://magiccards.info/scans/en/di/155a.jpg
 value=4.337
 rarity=R
 type=Instant

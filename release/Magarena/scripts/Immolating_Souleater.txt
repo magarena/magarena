@@ -1,5 +1,5 @@
 name=Immolating Souleater
-image=http://magiccards.info/scans/en/nph/139.jpg
+image=https://magiccards.info/scans/en/nph/139.jpg
 value=4.051
 rarity=C
 type=Artifact,Creature

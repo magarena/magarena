@@ -1,5 +1,5 @@
 name=Brain Gorgers
-image=http://magiccards.info/scans/en/pc/65.jpg
+image=https://magiccards.info/scans/en/pc/65.jpg
 value=2.905
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Withstand
-image=http://magiccards.info/scans/en/gp/21.jpg
+image=https://magiccards.info/scans/en/gp/21.jpg
 value=1.952
 rarity=C
 type=Instant

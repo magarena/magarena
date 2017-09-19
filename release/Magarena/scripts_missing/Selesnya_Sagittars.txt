@@ -1,5 +1,5 @@
 name=Selesnya Sagittars
-image=http://magiccards.info/scans/en/rav/229.jpg
+image=https://magiccards.info/scans/en/rav/229.jpg
 value=2.919
 rarity=U
 type=Creature

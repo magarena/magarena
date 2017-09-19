@@ -1,5 +1,5 @@
 name=Shrine of Boundless Growth
-image=http://magiccards.info/scans/en/nph/152.jpg
+image=https://magiccards.info/scans/en/nph/152.jpg
 value=2.992
 rarity=U
 type=Artifact

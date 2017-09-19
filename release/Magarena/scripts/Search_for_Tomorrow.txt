@@ -1,5 +1,5 @@
 name=Search for Tomorrow
-image=http://magiccards.info/scans/en/mma/161.jpg
+image=https://magiccards.info/scans/en/mma/161.jpg
 value=4.088
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sheltering Ancient
-image=http://magiccards.info/scans/en/cs/121.jpg
+image=https://magiccards.info/scans/en/cs/121.jpg
 value=3.781
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Alexi's Cloak
-image=http://magiccards.info/scans/en/pr/29.jpg
+image=https://magiccards.info/scans/en/pr/29.jpg
 value=3.969
 rarity=C
 type=Enchantment

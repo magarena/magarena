@@ -1,5 +1,5 @@
 name=Lingering Death
-image=http://magiccards.info/scans/en/sc/69.jpg
+image=https://magiccards.info/scans/en/sc/69.jpg
 value=3.134
 rarity=C
 type=Enchantment

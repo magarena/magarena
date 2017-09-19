@@ -1,5 +1,5 @@
 name=Corpse Blockade
-image=http://magiccards.info/scans/en/gtc/60.jpg
+image=https://magiccards.info/scans/en/gtc/60.jpg
 value=2.144
 rarity=C
 type=Creature

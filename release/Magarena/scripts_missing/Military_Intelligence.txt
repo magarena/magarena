@@ -1,5 +1,5 @@
 name=Military Intelligence
-image=http://magiccards.info/scans/en/m15/69.jpg
+image=https://magiccards.info/scans/en/m15/69.jpg
 value=3.400
 rarity=U
 type=Enchantment

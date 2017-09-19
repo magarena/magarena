@@ -1,5 +1,5 @@
 name=Boros Swiftblade
-image=http://magiccards.info/scans/en/mm2/172.jpg
+image=https://magiccards.info/scans/en/mm2/172.jpg
 value=4.084
 rarity=U
 type=Creature

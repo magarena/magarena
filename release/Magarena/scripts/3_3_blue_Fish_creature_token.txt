@@ -1,6 +1,6 @@
 name=3/3 blue Fish creature token
 token=Fish
-image=http://magiccards.info/extras/token/commander-2014/fish.jpg
+image=https://magiccards.info/extras/token/commander-2014/fish.jpg
 value=3
 type=Creature
 subtype=Fish

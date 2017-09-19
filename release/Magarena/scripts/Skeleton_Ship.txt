@@ -1,5 +1,5 @@
 name=Skeleton Ship
-image=http://magiccards.info/scans/en/ia/379.jpg
+image=https://magiccards.info/scans/en/ia/379.jpg
 value=3.442
 rarity=R
 type=Legendary,Creature

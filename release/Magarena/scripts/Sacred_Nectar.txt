@@ -1,5 +1,5 @@
 name=Sacred Nectar
-image=http://magiccards.info/scans/en/9e/38.jpg
+image=https://magiccards.info/scans/en/9e/38.jpg
 value=1.320
 rarity=C
 type=Sorcery

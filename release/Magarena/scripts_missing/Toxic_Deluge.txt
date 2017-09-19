@@ -1,5 +1,5 @@
 name=Toxic Deluge
-image=http://magiccards.info/scans/en/ema/108.jpg
+image=https://magiccards.info/scans/en/ema/108.jpg
 value=4.576
 rarity=R
 type=Sorcery

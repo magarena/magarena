@@ -1,5 +1,5 @@
 name=Drowned
-image=http://magiccards.info/scans/en/dk/23.jpg
+image=https://magiccards.info/scans/en/dk/23.jpg
 value=3.324
 rarity=C
 type=Creature

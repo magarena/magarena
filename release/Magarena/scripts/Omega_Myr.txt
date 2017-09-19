@@ -1,5 +1,5 @@
 name=Omega Myr
-image=http://magiccards.info/scans/en/mi/223.jpg
+image=https://magiccards.info/scans/en/mi/223.jpg
 value=2.489
 rarity=C
 type=Artifact,Creature

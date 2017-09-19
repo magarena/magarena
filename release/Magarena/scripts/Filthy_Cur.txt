@@ -1,5 +1,5 @@
 name=Filthy Cur
-image=http://magiccards.info/scans/en/od/136.jpg
+image=https://magiccards.info/scans/en/od/136.jpg
 value=1.029
 rarity=C
 type=Creature

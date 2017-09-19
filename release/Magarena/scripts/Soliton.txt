@@ -1,5 +1,5 @@
 name=Soliton
-image=http://magiccards.info/scans/en/som/204.jpg
+image=https://magiccards.info/scans/en/som/204.jpg
 value=3.007
 rarity=C
 type=Artifact,Creature

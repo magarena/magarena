@@ -1,5 +1,5 @@
 name=Duskwalker
-image=http://magiccards.info/scans/en/in/104.jpg
+image=https://magiccards.info/scans/en/in/104.jpg
 value=2.714
 rarity=C
 type=Creature

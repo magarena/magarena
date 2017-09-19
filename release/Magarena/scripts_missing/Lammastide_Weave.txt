@@ -1,5 +1,5 @@
 name=Lammastide Weave
-image=http://magiccards.info/scans/en/lw/226.jpg
+image=https://magiccards.info/scans/en/lw/226.jpg
 value=2.294
 rarity=U
 type=Instant

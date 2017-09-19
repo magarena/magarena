@@ -1,5 +1,5 @@
 name=Urza's Bauble
-image=http://magiccards.info/scans/en/5e/406.jpg
+image=https://magiccards.info/scans/en/5e/406.jpg
 value=3.778
 rarity=U
 type=Artifact

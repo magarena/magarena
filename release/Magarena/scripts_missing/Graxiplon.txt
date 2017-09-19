@@ -1,5 +1,5 @@
 name=Graxiplon
-image=http://magiccards.info/scans/en/on/86.jpg
+image=https://magiccards.info/scans/en/on/86.jpg
 value=1.654
 rarity=U
 type=Creature

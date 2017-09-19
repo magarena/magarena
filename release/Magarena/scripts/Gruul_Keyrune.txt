@@ -1,5 +1,5 @@
 name=Gruul Keyrune
-image=http://magiccards.info/scans/en/gtc/230.jpg
+image=https://magiccards.info/scans/en/gtc/230.jpg
 value=3.193
 rarity=U
 type=Artifact

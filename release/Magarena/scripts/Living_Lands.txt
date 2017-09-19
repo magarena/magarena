@@ -1,5 +1,5 @@
 name=Living Lands
-image=http://magiccards.info/scans/en/6e/238.jpg
+image=https://magiccards.info/scans/en/6e/238.jpg
 value=3.611
 rarity=R
 type=Enchantment

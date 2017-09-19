@@ -1,5 +1,5 @@
 name=Arcbound Slith
-image=http://magiccards.info/scans/en/ds/102.jpg
+image=https://magiccards.info/scans/en/ds/102.jpg
 image_updated=2016-12-13
 value=4.311
 rarity=U

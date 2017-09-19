@@ -1,5 +1,5 @@
 name=Mire Boa
-image=http://magiccards.info/scans/en/pc/135.jpg
+image=https://magiccards.info/scans/en/pc/135.jpg
 value=4.214
 rarity=C
 type=Creature

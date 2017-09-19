@@ -1,5 +1,5 @@
 name=Ruins of Trokair
-image=http://magiccards.info/scans/en/6e/327.jpg
+image=https://magiccards.info/scans/en/6e/327.jpg
 value=2.977
 rarity=U
 type=Land

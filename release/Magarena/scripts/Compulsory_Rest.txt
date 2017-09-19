@@ -1,5 +1,5 @@
 name=Compulsory Rest
-image=http://magiccards.info/scans/en/akh/9.jpg
+image=https://magiccards.info/scans/en/akh/9.jpg
 value=2.500
 rarity=C
 type=Enchantment

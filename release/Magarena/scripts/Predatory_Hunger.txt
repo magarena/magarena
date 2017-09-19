@@ -1,5 +1,5 @@
 name=Predatory Hunger
-image=http://magiccards.info/scans/en/ex/117.jpg
+image=https://magiccards.info/scans/en/ex/117.jpg
 value=3.800
 rarity=C
 type=Enchantment

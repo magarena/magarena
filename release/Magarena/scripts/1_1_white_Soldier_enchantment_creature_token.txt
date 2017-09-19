@@ -1,6 +1,6 @@
 name=1/1 white Soldier enchantment creature token
 token=Soldier
-image=http://magiccards.info/extras/token/born-of-the-gods/soldier.jpg
+image=https://magiccards.info/extras/token/born-of-the-gods/soldier.jpg
 value=1
 type=Enchantment,Creature
 subtype=Soldier

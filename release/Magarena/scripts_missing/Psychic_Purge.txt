@@ -1,5 +1,5 @@
 name=Psychic Purge
-image=http://magiccards.info/scans/en/lg/68.jpg
+image=https://magiccards.info/scans/en/lg/68.jpg
 value=3.662
 rarity=C
 type=Sorcery

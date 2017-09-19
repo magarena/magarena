@@ -1,5 +1,5 @@
 name=Tiger Claws
-image=http://magiccards.info/scans/en/mm/279.jpg
+image=https://magiccards.info/scans/en/mm/279.jpg
 value=3.460
 rarity=C
 type=Enchantment

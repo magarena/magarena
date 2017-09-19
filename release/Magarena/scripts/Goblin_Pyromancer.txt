@@ -1,5 +1,5 @@
 name=Goblin Pyromancer
-image=http://magiccards.info/scans/en/on/206.jpg
+image=https://magiccards.info/scans/en/on/206.jpg
 value=3.551
 rarity=R
 type=Creature

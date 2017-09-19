@@ -1,5 +1,5 @@
 name=Horizon Drake
-image=http://magiccards.info/scans/en/wwk/30.jpg
+image=https://magiccards.info/scans/en/wwk/30.jpg
 value=3.065
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mammoth Umbra
-image=http://magiccards.info/scans/en/pc2/10.jpg
+image=https://magiccards.info/scans/en/pc2/10.jpg
 value=2.841
 rarity=U
 type=Enchantment

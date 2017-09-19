@@ -1,5 +1,5 @@
 name=Hoard-Smelter Dragon
-image=http://magiccards.info/scans/en/c14/178.jpg
+image=https://magiccards.info/scans/en/c14/178.jpg
 value=3.890
 rarity=R
 type=Creature

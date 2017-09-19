@@ -1,5 +1,5 @@
 name=Bird Maiden
-image=http://magiccards.info/scans/en/5e/211.jpg
+image=https://magiccards.info/scans/en/5e/211.jpg
 value=2.679
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Maze Rusher
-image=http://magiccards.info/scans/en/dgm/33.jpg
+image=https://magiccards.info/scans/en/dgm/33.jpg
 value=2.833
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Plague Dogs
-image=http://magiccards.info/scans/en/ud/66.jpg
+image=https://magiccards.info/scans/en/ud/66.jpg
 value=3.443
 rarity=U
 type=Creature

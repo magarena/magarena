@@ -1,5 +1,5 @@
 name=Putrid Leech
-image=http://magiccards.info/scans/en/arb/95.jpg
+image=https://magiccards.info/scans/en/arb/95.jpg
 value=4.235
 rarity=C
 type=Creature

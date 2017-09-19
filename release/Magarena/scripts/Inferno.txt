@@ -1,5 +1,5 @@
 name=Inferno
-image=http://magiccards.info/scans/en/8e/196.jpg
+image=https://magiccards.info/scans/en/8e/196.jpg
 value=4.190
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Slitherhead
-image=http://magiccards.info/scans/en/rtr/222.jpg
+image=https://magiccards.info/scans/en/rtr/222.jpg
 value=3.953
 rarity=U
 type=Creature

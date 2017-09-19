@@ -1,5 +1,5 @@
 name=Kitsune Diviner
-image=http://magiccards.info/scans/en/chk/26.jpg
+image=https://magiccards.info/scans/en/chk/26.jpg
 value=1.489
 rarity=C
 type=Creature

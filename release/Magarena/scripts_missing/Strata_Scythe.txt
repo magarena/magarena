@@ -1,5 +1,5 @@
 name=Strata Scythe
-image=http://magiccards.info/scans/en/c14/274.jpg
+image=https://magiccards.info/scans/en/c14/274.jpg
 value=2.500
 rarity=R
 type=Artifact

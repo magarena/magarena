@@ -1,5 +1,5 @@
 name=Sealock Monster
-image=http://magiccards.info/scans/en/ths/62.jpg
+image=https://magiccards.info/scans/en/ths/62.jpg
 image_updated=2017-01-07
 value=2.500
 rarity=U

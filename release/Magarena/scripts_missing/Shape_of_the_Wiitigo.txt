@@ -1,5 +1,5 @@
 name=Shape of the Wiitigo
-image=http://magiccards.info/scans/en/cs/120.jpg
+image=https://magiccards.info/scans/en/cs/120.jpg
 value=3.163
 rarity=R
 type=Enchantment

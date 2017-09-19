@@ -1,5 +1,5 @@
 name=Kami of Fire's Roar
-image=http://magiccards.info/scans/en/chk/174.jpg
+image=https://magiccards.info/scans/en/chk/174.jpg
 value=1.794
 rarity=C
 type=Creature

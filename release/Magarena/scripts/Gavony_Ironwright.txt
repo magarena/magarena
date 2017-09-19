@@ -1,5 +1,5 @@
 name=Gavony Ironwright
-image=http://magiccards.info/scans/en/dka/9.jpg
+image=https://magiccards.info/scans/en/dka/9.jpg
 value=3.031
 rarity=U
 type=Creature

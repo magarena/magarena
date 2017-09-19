@@ -1,5 +1,5 @@
 name=Seismic Spike
-image=http://magiccards.info/scans/en/rav/141.jpg
+image=https://magiccards.info/scans/en/rav/141.jpg
 value=3.904
 rarity=C
 type=Sorcery

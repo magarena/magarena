@@ -1,5 +1,5 @@
 name=Land Grant
-image=http://magiccards.info/scans/en/mm/255.jpg
+image=https://magiccards.info/scans/en/mm/255.jpg
 value=4.460
 rarity=C
 type=Sorcery

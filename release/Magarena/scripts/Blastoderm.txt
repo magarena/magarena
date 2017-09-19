@@ -1,5 +1,5 @@
 name=Blastoderm
-image=http://magiccards.info/scans/en/ne/102.jpg
+image=https://magiccards.info/scans/en/ne/102.jpg
 value=4.000
 rarity=C
 type=Creature

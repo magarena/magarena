@@ -1,5 +1,5 @@
 name=Hymn of Rebirth
-image=http://magiccards.info/scans/en/ia/373.jpg
+image=https://magiccards.info/scans/en/ia/373.jpg
 value=4.263
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Lightning Dart
-image=http://magiccards.info/scans/en/in/152.jpg
+image=https://magiccards.info/scans/en/in/152.jpg
 value=3.083
 rarity=U
 type=Instant

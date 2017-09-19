@@ -1,6 +1,6 @@
 name=1/1 green Elf Warrior creature token
 token=Elf Warrior
-image=http://magiccards.info/extras/token/magic-origins/elf-warrior.jpg
+image=https://magiccards.info/extras/token/magic-origins/elf-warrior.jpg
 image_updated=2015-11-12
 value=1
 type=Creature

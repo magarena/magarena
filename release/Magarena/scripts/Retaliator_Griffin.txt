@@ -1,5 +1,5 @@
 name=Retaliator Griffin
-image=http://magiccards.info/scans/en/arb/123.jpg
+image=https://magiccards.info/scans/en/arb/123.jpg
 value=3.382
 rarity=R
 type=Creature

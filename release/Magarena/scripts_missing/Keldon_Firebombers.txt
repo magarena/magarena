@@ -1,5 +1,5 @@
 name=Keldon Firebombers
-image=http://magiccards.info/scans/en/pr/94.jpg
+image=https://magiccards.info/scans/en/pr/94.jpg
 value=3.883
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Bastion Enforcer
-image=http://magiccards.info/scans/en/aer/8.jpg
+image=https://magiccards.info/scans/en/aer/8.jpg
 value=2.500
 rarity=C
 type=Creature

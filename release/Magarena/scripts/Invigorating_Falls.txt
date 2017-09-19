@@ -1,5 +1,5 @@
 name=Invigorating Falls
-image=http://magiccards.info/scans/en/tr/128.jpg
+image=https://magiccards.info/scans/en/tr/128.jpg
 value=2.577
 rarity=C
 type=Sorcery

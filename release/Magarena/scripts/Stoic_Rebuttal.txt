@@ -1,5 +1,5 @@
 name=Stoic Rebuttal
-image=http://magiccards.info/scans/en/mm2/59.jpg
+image=https://magiccards.info/scans/en/mm2/59.jpg
 value=3.803
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Aven Windreader
-image=http://magiccards.info/scans/en/10e/69.jpg
+image=https://magiccards.info/scans/en/10e/69.jpg
 value=2.221
 rarity=C
 type=Creature

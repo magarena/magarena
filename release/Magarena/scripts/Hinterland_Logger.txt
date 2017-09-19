@@ -1,5 +1,5 @@
 name=Hinterland Logger
-image=http://magiccards.info/scans/en/soi/210a.jpg
+image=https://magiccards.info/scans/en/soi/210a.jpg
 value=2.500
 rarity=C
 type=Creature

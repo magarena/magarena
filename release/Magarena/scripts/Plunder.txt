@@ -1,5 +1,5 @@
 name=Plunder
-image=http://magiccards.info/scans/en/ts/174.jpg
+image=https://magiccards.info/scans/en/ts/174.jpg
 value=2.052
 rarity=C
 type=Sorcery

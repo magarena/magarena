@@ -1,5 +1,5 @@
 name=Chariot of the Sun
-image=http://magiccards.info/scans/en/mr/262.jpg
+image=https://magiccards.info/scans/en/mr/262.jpg
 value=2.217
 rarity=U
 type=Artifact

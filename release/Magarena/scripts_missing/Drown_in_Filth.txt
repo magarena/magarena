@@ -1,5 +1,5 @@
 name=Drown in Filth
-image=http://magiccards.info/scans/en/dgm/67.jpg
+image=https://magiccards.info/scans/en/dgm/67.jpg
 value=3.564
 rarity=C
 type=Sorcery

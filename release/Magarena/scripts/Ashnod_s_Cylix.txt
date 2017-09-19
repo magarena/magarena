@@ -1,5 +1,5 @@
 name=Ashnod's Cylix
-image=http://magiccards.info/scans/en/ai/158.jpg
+image=https://magiccards.info/scans/en/ai/158.jpg
 value=3.345
 rarity=R
 type=Artifact

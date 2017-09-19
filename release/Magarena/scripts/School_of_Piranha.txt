@@ -1,5 +1,5 @@
 name=School of Piranha
-image=http://magiccards.info/scans/en/ex/45.jpg
+image=https://magiccards.info/scans/en/ex/45.jpg
 value=1.872
 rarity=C
 type=Creature

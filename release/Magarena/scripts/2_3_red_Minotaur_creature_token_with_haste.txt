@@ -1,6 +1,6 @@
 name=2/3 red Minotaur creature token with haste
 token=Minotaur
-image=http://magiccards.info/extras/token/journey-into-nyx/minotaur.jpg
+image=https://magiccards.info/extras/token/journey-into-nyx/minotaur.jpg
 value=3
 type=Creature
 subtype=Minotaur

@@ -1,5 +1,5 @@
 name=Tamanoa
-image=http://magiccards.info/scans/en/cs/132.jpg
+image=https://magiccards.info/scans/en/cs/132.jpg
 value=4.306
 rarity=R
 type=Creature

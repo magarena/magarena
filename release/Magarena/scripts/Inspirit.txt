@@ -1,5 +1,5 @@
 name=Inspirit
-image=http://magiccards.info/scans/en/9e/22.jpg
+image=https://magiccards.info/scans/en/9e/22.jpg
 value=2.817
 rarity=U
 type=Instant

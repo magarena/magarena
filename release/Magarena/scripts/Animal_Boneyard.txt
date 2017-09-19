@@ -1,5 +1,5 @@
 name=Animal Boneyard
-image=http://magiccards.info/scans/en/od/4.jpg
+image=https://magiccards.info/scans/en/od/4.jpg
 value=2.732
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Perish
-image=http://magiccards.info/scans/en/6e/148.jpg
+image=https://magiccards.info/scans/en/6e/148.jpg
 value=4.464
 rarity=U
 type=Sorcery

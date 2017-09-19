@@ -1,5 +1,5 @@
 name=Griffin Dreamfinder
-image=http://magiccards.info/scans/en/bng/16.jpg
+image=https://magiccards.info/scans/en/bng/16.jpg
 value=2.652
 rarity=C
 type=Creature

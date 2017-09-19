@@ -1,5 +1,5 @@
 name=Conflux
-image=http://magiccards.info/scans/en/cfx/102.jpg
+image=https://magiccards.info/scans/en/cfx/102.jpg
 value=3.049
 rarity=M
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Krosan Cloudscraper
-image=http://magiccards.info/scans/en/tsts/82.jpg
+image=https://magiccards.info/scans/en/tsts/82.jpg
 value=3.965
 rarity=R
 type=Creature

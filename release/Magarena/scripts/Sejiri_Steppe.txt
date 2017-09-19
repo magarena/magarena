@@ -1,5 +1,5 @@
 name=Sejiri Steppe
-image=http://magiccards.info/scans/en/wwk/142.jpg
+image=https://magiccards.info/scans/en/wwk/142.jpg
 value=3.676
 rarity=C
 type=Land

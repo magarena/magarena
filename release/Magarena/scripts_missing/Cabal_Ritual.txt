@@ -1,5 +1,5 @@
 name=Cabal Ritual
-image=http://magiccards.info/scans/en/tr/51.jpg
+image=https://magiccards.info/scans/en/tr/51.jpg
 value=4.500
 rarity=C
 type=Instant

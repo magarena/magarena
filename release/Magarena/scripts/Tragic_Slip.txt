@@ -1,5 +1,5 @@
 name=Tragic Slip
-image=http://magiccards.info/scans/en/ema/109.jpg
+image=https://magiccards.info/scans/en/ema/109.jpg
 value=3.750
 removal=2
 rarity=C

@@ -1,5 +1,5 @@
 name=Paragon of Open Graves
-image=http://magiccards.info/scans/en/m15/111.jpg
+image=https://magiccards.info/scans/en/m15/111.jpg
 value=3.400
 rarity=U
 type=Creature

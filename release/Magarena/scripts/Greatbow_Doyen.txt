@@ -1,5 +1,5 @@
 name=Greatbow Doyen
-image=http://magiccards.info/scans/en/mt/125.jpg
+image=https://magiccards.info/scans/en/mt/125.jpg
 value=3.695
 rarity=R
 type=Creature

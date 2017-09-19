@@ -1,5 +1,5 @@
 name=Heritage Druid
-image=http://magiccards.info/scans/en/ema/171.jpg
+image=https://magiccards.info/scans/en/ema/171.jpg
 value=4.339
 rarity=R
 type=Creature

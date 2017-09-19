@@ -1,5 +1,5 @@
 name=Rix Maadi Guildmage
-image=http://magiccards.info/scans/en/rtr/192.jpg
+image=https://magiccards.info/scans/en/rtr/192.jpg
 value=3.403
 rarity=U
 type=Creature

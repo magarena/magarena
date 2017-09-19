@@ -1,5 +1,5 @@
 name=Genju of the Realm
-image=http://magiccards.info/scans/en/bok/151.jpg
+image=https://magiccards.info/scans/en/bok/151.jpg
 value=4.047
 rarity=R
 type=Legendary,Enchantment

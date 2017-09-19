@@ -1,5 +1,5 @@
 name=Fluctuator
-image=http://magiccards.info/scans/en/us/295.jpg
+image=https://magiccards.info/scans/en/us/295.jpg
 value=4.418
 rarity=R
 type=Artifact

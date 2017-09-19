@@ -1,5 +1,5 @@
 name=Indentured Djinn
-image=http://magiccards.info/scans/en/mm/85.jpg
+image=https://magiccards.info/scans/en/mm/85.jpg
 value=2.903
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Merciless Predator
-image=http://magiccards.info/scans/en/isd/159b.jpg
+image=https://magiccards.info/scans/en/isd/159b.jpg
 value=3.845
 rarity=U
 type=Creature

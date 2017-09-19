@@ -1,5 +1,5 @@
 name=Meekstone
-image=http://magiccards.info/scans/en/7e/307.jpg
+image=https://magiccards.info/scans/en/7e/307.jpg
 value=4.299
 rarity=R
 type=Artifact

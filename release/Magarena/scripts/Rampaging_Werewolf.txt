@@ -1,5 +1,5 @@
 name=Rampaging Werewolf
-image=http://magiccards.info/scans/en/isd/165b.jpg
+image=https://magiccards.info/scans/en/isd/165b.jpg
 value=2.581
 rarity=C
 type=Creature

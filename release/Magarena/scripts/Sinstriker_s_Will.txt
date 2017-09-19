@@ -1,5 +1,5 @@
 name=Sinstriker's Will
-image=http://magiccards.info/scans/en/gp/16.jpg
+image=https://magiccards.info/scans/en/gp/16.jpg
 value=2.902
 rarity=U
 type=Enchantment

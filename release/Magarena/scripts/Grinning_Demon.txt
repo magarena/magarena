@@ -1,5 +1,5 @@
 name=Grinning Demon
-image=http://magiccards.info/scans/en/on/153.jpg
+image=https://magiccards.info/scans/en/on/153.jpg
 value=4.205
 rarity=R
 type=Creature

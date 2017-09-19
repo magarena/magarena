@@ -1,5 +1,5 @@
 name=Ifnir Deadlands
-image=http://magiccards.info/scans/en/hou/179.jpg
+image=https://magiccards.info/scans/en/hou/179.jpg
 value=2.500
 rarity=U
 type=Land

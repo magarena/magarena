@@ -1,5 +1,5 @@
 name=Dakmor Bat
-image=http://magiccards.info/scans/en/po2/8.jpg
+image=https://magiccards.info/scans/en/po2/8.jpg
 value=1.870
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Deadshot Minotaur
-image=http://magiccards.info/scans/en/arb/52.jpg
+image=https://magiccards.info/scans/en/arb/52.jpg
 value=2.923
 rarity=C
 type=Creature

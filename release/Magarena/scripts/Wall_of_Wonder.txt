@@ -1,5 +1,5 @@
 name=Wall of Wonder
-image=http://magiccards.info/scans/en/7e/112.jpg
+image=https://magiccards.info/scans/en/7e/112.jpg
 value=2.712
 rarity=R
 type=Creature

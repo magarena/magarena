@@ -1,6 +1,6 @@
 name=1/1 colorless Shapeshifter creature token with changeling
 token=Changeling
-image=http://magiccards.info/extras/token/lorwyn/shapeshifter.jpg
+image=https://magiccards.info/extras/token/lorwyn/shapeshifter.jpg
 value=1
 type=Creature
 subtype=Shapeshifter

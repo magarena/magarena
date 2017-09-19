@@ -1,5 +1,5 @@
 name=Harvester Druid
-image=http://magiccards.info/scans/en/ju/120.jpg
+image=https://magiccards.info/scans/en/ju/120.jpg
 value=2.984
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mind Over Matter
-image=http://magiccards.info/scans/en/ex/40.jpg
+image=https://magiccards.info/scans/en/ex/40.jpg
 value=4.505
 rarity=R
 type=Enchantment

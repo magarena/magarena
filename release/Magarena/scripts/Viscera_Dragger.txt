@@ -1,5 +1,5 @@
 name=Viscera Dragger
-image=http://magiccards.info/scans/en/ala/92.jpg
+image=https://magiccards.info/scans/en/ala/92.jpg
 value=3.519
 rarity=C
 type=Creature

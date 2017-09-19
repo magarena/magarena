@@ -1,5 +1,5 @@
 name=Breaking
-image=http://magiccards.info/scans/en/dgm/124a.jpg
+image=https://magiccards.info/scans/en/dgm/124a.jpg
 value=3.800
 rarity=R
 type=Sorcery

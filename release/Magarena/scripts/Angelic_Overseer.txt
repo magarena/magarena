@@ -1,5 +1,5 @@
 name=Angelic Overseer
-image=http://magiccards.info/scans/en/isd/3.jpg
+image=https://magiccards.info/scans/en/isd/3.jpg
 value=3.846
 rarity=M
 type=Creature

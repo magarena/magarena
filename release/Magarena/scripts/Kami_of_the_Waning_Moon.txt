@@ -1,5 +1,5 @@
 name=Kami of the Waning Moon
-image=http://magiccards.info/scans/en/chk/120.jpg
+image=https://magiccards.info/scans/en/chk/120.jpg
 value=2.086
 rarity=C
 type=Creature

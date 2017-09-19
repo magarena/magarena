@@ -1,5 +1,5 @@
 name=Taunting Challenge
-image=http://magiccards.info/scans/en/p3k/152.jpg
+image=https://magiccards.info/scans/en/p3k/152.jpg
 value=3.059
 rarity=R
 type=Sorcery

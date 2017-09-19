@@ -1,5 +1,5 @@
 name=Defy Gravity
-image=http://magiccards.info/scans/en/ju/38.jpg
+image=https://magiccards.info/scans/en/ju/38.jpg
 value=2.340
 rarity=C
 type=Instant

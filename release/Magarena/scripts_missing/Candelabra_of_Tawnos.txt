@@ -1,5 +1,5 @@
 name=Candelabra of Tawnos
-image=http://magiccards.info/scans/en/aq/8.jpg
+image=https://magiccards.info/scans/en/aq/8.jpg
 value=4.599
 rarity=R
 type=Artifact

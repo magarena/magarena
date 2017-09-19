@@ -1,5 +1,5 @@
 name=Rootwalla
-image=http://magiccards.info/scans/en/10e/293.jpg
+image=https://magiccards.info/scans/en/10e/293.jpg
 value=3.183
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dream Tides
-image=http://magiccards.info/scans/en/vi/31.jpg
+image=https://magiccards.info/scans/en/vi/31.jpg
 value=3.952
 rarity=U
 type=Enchantment

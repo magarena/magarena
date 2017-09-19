@@ -1,5 +1,5 @@
 name=Drag Down
-image=http://magiccards.info/scans/en/mma/80.jpg
+image=https://magiccards.info/scans/en/mma/80.jpg
 value=2.200
 rarity=C
 type=Instant

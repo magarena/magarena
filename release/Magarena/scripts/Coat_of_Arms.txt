@@ -1,5 +1,5 @@
 name=Coat of Arms
-image=http://magiccards.info/scans/en/m10/207.jpg
+image=https://magiccards.info/scans/en/m10/207.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Horror of the Broken Lands
-image=http://magiccards.info/scans/en/akh/95.jpg
+image=https://magiccards.info/scans/en/akh/95.jpg
 value=2.500
 rarity=C
 type=Creature

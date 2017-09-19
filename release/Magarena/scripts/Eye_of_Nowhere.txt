@@ -1,5 +1,5 @@
 name=Eye of Nowhere
-image=http://magiccards.info/scans/en/chk/59.jpg
+image=https://magiccards.info/scans/en/chk/59.jpg
 value=3.966
 rarity=C
 type=Sorcery

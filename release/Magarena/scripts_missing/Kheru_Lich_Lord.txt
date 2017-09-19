@@ -1,5 +1,5 @@
 name=Kheru Lich Lord
-image=http://magiccards.info/scans/en/ktk/182.jpg
+image=https://magiccards.info/scans/en/ktk/182.jpg
 value=3.500
 rarity=R
 type=Creature

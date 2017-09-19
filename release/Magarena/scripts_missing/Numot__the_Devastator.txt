@@ -1,5 +1,5 @@
 name=Numot, the Devastator
-image=http://magiccards.info/scans/en/cmd/215.jpg
+image=https://magiccards.info/scans/en/cmd/215.jpg
 value=4.020
 rarity=R
 type=Legendary,Creature

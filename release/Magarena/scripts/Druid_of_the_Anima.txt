@@ -1,5 +1,5 @@
 name=Druid of the Anima
-image=http://magiccards.info/scans/en/ala/128.jpg
+image=https://magiccards.info/scans/en/ala/128.jpg
 value=3.020
 rarity=C
 type=Creature

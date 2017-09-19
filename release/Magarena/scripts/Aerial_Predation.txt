@@ -1,5 +1,5 @@
 name=Aerial Predation
-image=http://magiccards.info/scans/en/rtr/113.jpg
+image=https://magiccards.info/scans/en/rtr/113.jpg
 value=2.086
 rarity=C
 type=Instant

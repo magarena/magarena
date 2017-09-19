@@ -1,5 +1,5 @@
 name=Righteous Indignation
-image=http://magiccards.info/scans/en/mm/46.jpg
+image=https://magiccards.info/scans/en/mm/46.jpg
 value=1.804
 rarity=U
 type=Enchantment

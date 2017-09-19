@@ -1,5 +1,5 @@
 name=Cairn Wanderer
-image=http://magiccards.info/scans/en/lw/105.jpg
+image=https://magiccards.info/scans/en/lw/105.jpg
 value=4.078
 rarity=R
 type=Creature

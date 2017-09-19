@@ -1,5 +1,5 @@
 name=Lavaclaw Reaches
-image=http://magiccards.info/scans/en/wwk/139.jpg
+image=https://magiccards.info/scans/en/wwk/139.jpg
 value=3.462
 rarity=R
 type=Land

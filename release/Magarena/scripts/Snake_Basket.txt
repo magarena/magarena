@@ -1,5 +1,5 @@
 name=Snake Basket
-image=http://magiccards.info/scans/en/6e/312.jpg
+image=https://magiccards.info/scans/en/6e/312.jpg
 image_updated=2015-06-04
 value=3.910
 rarity=R

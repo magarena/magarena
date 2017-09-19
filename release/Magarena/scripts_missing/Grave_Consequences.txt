@@ -1,5 +1,5 @@
 name=Grave Consequences
-image=http://magiccards.info/scans/en/ju/67.jpg
+image=https://magiccards.info/scans/en/ju/67.jpg
 value=2.946
 rarity=U
 type=Instant

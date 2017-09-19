@@ -1,5 +1,5 @@
 name=Countryside Crusher
-image=http://magiccards.info/scans/en/mma/108.jpg
+image=https://magiccards.info/scans/en/mma/108.jpg
 value=4.013
 rarity=R
 type=Creature

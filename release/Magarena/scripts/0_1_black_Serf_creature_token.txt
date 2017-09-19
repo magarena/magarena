@@ -1,6 +1,6 @@
 name=0/1 black Serf creature token
 token=Serf
-image=http://magiccards.info/extras/token/eternal-masters/serf.jpg
+image=https://magiccards.info/extras/token/eternal-masters/serf.jpg
 value=1
 type=Creature
 subtype=Serf

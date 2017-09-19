@@ -1,5 +1,5 @@
 name=Bioshift
-image=http://magiccards.info/scans/en/gtc/214.jpg
+image=https://magiccards.info/scans/en/gtc/214.jpg
 value=3.174
 rarity=C
 type=Instant

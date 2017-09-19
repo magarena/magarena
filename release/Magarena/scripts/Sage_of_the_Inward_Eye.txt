@@ -1,5 +1,5 @@
 name=Sage of the Inward Eye
-image=http://magiccards.info/scans/en/ktk/195.jpg
+image=https://magiccards.info/scans/en/ktk/195.jpg
 value=3.750
 rarity=R
 type=Creature

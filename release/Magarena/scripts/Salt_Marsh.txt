@@ -1,5 +1,5 @@
 name=Salt Marsh
-image=http://magiccards.info/scans/en/8e/325.jpg
+image=https://magiccards.info/scans/en/8e/325.jpg
 value=3.854
 rarity=U
 type=Land

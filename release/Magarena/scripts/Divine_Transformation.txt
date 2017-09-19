@@ -1,5 +1,5 @@
 name=Divine Transformation
-image=http://magiccards.info/scans/en/6e/17.jpg
+image=https://magiccards.info/scans/en/6e/17.jpg
 value=2.574
 rarity=U
 type=Enchantment

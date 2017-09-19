@@ -1,5 +1,5 @@
 name=Miracle Worker
-image=http://magiccards.info/scans/en/dk/86.jpg
+image=https://magiccards.info/scans/en/dk/86.jpg
 value=2.847
 rarity=C
 type=Creature

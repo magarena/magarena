@@ -1,5 +1,5 @@
 name=Temple of Malice
-image=http://magiccards.info/scans/en/bng/164.jpg
+image=https://magiccards.info/scans/en/bng/164.jpg
 value=3.774
 rarity=R
 type=Land

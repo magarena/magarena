@@ -1,5 +1,5 @@
 name=Nightfire Giant
-image=http://magiccards.info/scans/en/m15/109.jpg
+image=https://magiccards.info/scans/en/m15/109.jpg
 value=3.500
 rarity=U
 type=Creature

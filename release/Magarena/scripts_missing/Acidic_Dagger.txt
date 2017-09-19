@@ -1,5 +1,5 @@
 name=Acidic Dagger
-image=http://magiccards.info/scans/en/mr/256.jpg
+image=https://magiccards.info/scans/en/mr/256.jpg
 value=1.434
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Hatred
-image=http://magiccards.info/scans/en/ex/64.jpg
+image=https://magiccards.info/scans/en/ex/64.jpg
 value=4.500
 rarity=R
 type=Instant

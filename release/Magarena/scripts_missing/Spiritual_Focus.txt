@@ -1,5 +1,5 @@
 name=Spiritual Focus
-image=http://magiccards.info/scans/en/mm/49.jpg
+image=https://magiccards.info/scans/en/mm/49.jpg
 value=3.817
 rarity=R
 type=Enchantment

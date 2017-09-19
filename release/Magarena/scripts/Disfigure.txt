@@ -1,5 +1,5 @@
 name=Disfigure
-image=http://magiccards.info/scans/en/zen/87.jpg
+image=https://magiccards.info/scans/en/zen/87.jpg
 value=4.127
 removal=2
 rarity=C

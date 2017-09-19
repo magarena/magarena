@@ -1,5 +1,5 @@
 name=Stonewright
-image=http://magiccards.info/scans/en/avr/157.jpg
+image=https://magiccards.info/scans/en/avr/157.jpg
 value=3.473
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cursebreak
-image=http://magiccards.info/scans/en/avr/14.jpg
+image=https://magiccards.info/scans/en/avr/14.jpg
 value=2.716
 removal=1
 rarity=C

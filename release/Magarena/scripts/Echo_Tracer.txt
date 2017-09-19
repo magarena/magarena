@@ -1,5 +1,5 @@
 name=Echo Tracer
-image=http://magiccards.info/scans/en/le/37.jpg
+image=https://magiccards.info/scans/en/le/37.jpg
 image_updated=2016-12-02
 value=2.500
 rarity=C

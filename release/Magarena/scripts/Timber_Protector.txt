@@ -1,5 +1,5 @@
 name=Timber Protector
-image=http://magiccards.info/scans/en/lw/238.jpg
+image=https://magiccards.info/scans/en/lw/238.jpg
 value=4.112
 rarity=R
 type=Creature

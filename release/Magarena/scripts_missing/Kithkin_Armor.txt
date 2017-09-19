@@ -1,5 +1,5 @@
 name=Kithkin Armor
-image=http://magiccards.info/scans/en/wl/135.jpg
+image=https://magiccards.info/scans/en/wl/135.jpg
 value=3.345
 rarity=C
 type=Enchantment

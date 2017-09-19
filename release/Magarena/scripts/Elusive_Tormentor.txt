@@ -1,5 +1,5 @@
 name=Elusive Tormentor
-image=http://magiccards.info/scans/en/soi/108a.jpg
+image=https://magiccards.info/scans/en/soi/108a.jpg
 value=2.500
 rarity=R
 type=Creature

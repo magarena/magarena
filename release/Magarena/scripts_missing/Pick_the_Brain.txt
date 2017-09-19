@@ -1,5 +1,5 @@
 name=Pick the Brain
-image=http://magiccards.info/scans/en/soi/129.jpg
+image=https://magiccards.info/scans/en/soi/129.jpg
 value=2.500
 rarity=U
 type=Sorcery

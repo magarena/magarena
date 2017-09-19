@@ -1,5 +1,5 @@
 name=Ojutai, Soul of Winter
-image=http://magiccards.info/scans/en/frf/156.jpg
+image=https://magiccards.info/scans/en/frf/156.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Wandering Stream
-image=http://magiccards.info/scans/en/in/224.jpg
+image=https://magiccards.info/scans/en/in/224.jpg
 value=2.448
 rarity=C
 type=Sorcery

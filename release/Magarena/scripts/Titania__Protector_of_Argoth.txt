@@ -1,5 +1,5 @@
 name=Titania, Protector of Argoth
-image=http://magiccards.info/scans/en/c14/50.jpg
+image=https://magiccards.info/scans/en/c14/50.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Final Strike
-image=http://magiccards.info/scans/en/po/16.jpg
+image=https://magiccards.info/scans/en/po/16.jpg
 value=1.707
 rarity=R
 type=Sorcery

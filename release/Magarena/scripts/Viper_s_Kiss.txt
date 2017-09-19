@@ -1,5 +1,5 @@
 name=Viper's Kiss
-image=http://magiccards.info/scans/en/ths/109.jpg
+image=https://magiccards.info/scans/en/ths/109.jpg
 value=3.076
 rarity=C
 type=Enchantment

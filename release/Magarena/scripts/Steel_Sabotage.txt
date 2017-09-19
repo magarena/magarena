@@ -1,5 +1,5 @@
 name=Steel Sabotage
-image=http://magiccards.info/scans/en/mbs/33.jpg
+image=https://magiccards.info/scans/en/mbs/33.jpg
 value=4.241
 rarity=C
 type=Instant

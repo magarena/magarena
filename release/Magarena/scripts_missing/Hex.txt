@@ -1,5 +1,5 @@
 name=Hex
-image=http://magiccards.info/scans/en/cmd/87.jpg
+image=https://magiccards.info/scans/en/cmd/87.jpg
 value=3.795
 rarity=R
 type=Sorcery

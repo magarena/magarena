@@ -1,5 +1,5 @@
 name=Martyrs' Tomb
-image=http://magiccards.info/scans/en/ap/110.jpg
+image=https://magiccards.info/scans/en/ap/110.jpg
 value=1.378
 rarity=U
 type=Enchantment

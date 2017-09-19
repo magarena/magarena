@@ -1,5 +1,5 @@
 name=Eater of the Dead
-image=http://magiccards.info/scans/en/dk/6.jpg
+image=https://magiccards.info/scans/en/dk/6.jpg
 value=3.400
 rarity=U
 type=Creature

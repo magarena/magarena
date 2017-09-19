@@ -1,5 +1,5 @@
 name=Skeletal Wurm
-image=http://magiccards.info/scans/en/roe/127.jpg
+image=https://magiccards.info/scans/en/roe/127.jpg
 value=3.494
 rarity=U
 type=Creature

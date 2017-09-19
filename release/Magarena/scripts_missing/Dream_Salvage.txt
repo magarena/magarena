@@ -1,5 +1,5 @@
 name=Dream Salvage
-image=http://magiccards.info/scans/en/shm/160.jpg
+image=https://magiccards.info/scans/en/shm/160.jpg
 value=3.683
 rarity=U
 type=Instant

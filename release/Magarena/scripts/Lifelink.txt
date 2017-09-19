@@ -1,5 +1,5 @@
 name=Lifelink
-image=http://magiccards.info/scans/en/m12/24.jpg
+image=https://magiccards.info/scans/en/m12/24.jpg
 value=2.762
 rarity=C
 type=Enchantment

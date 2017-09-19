@@ -1,5 +1,5 @@
 name=Grazing Gladehart
-image=http://magiccards.info/scans/en/zen/163.jpg
+image=https://magiccards.info/scans/en/zen/163.jpg
 image_updated=2016-12-04
 value=3.553
 rarity=C

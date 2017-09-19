@@ -1,5 +1,5 @@
 name=Wiitigo
-image=http://magiccards.info/scans/en/ia/164.jpg
+image=https://magiccards.info/scans/en/ia/164.jpg
 value=3.483
 rarity=R
 type=Creature

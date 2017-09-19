@@ -1,5 +1,5 @@
 name=Hydra Omnivore
-image=http://magiccards.info/scans/en/cns/169.jpg
+image=https://magiccards.info/scans/en/cns/169.jpg
 value=4.083
 rarity=M
 type=Creature

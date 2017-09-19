@@ -1,5 +1,5 @@
 name=Westvale Cult Leader
-image=http://magiccards.info/scans/en/soi/21b.jpg
+image=https://magiccards.info/scans/en/soi/21b.jpg
 value=2.500
 rarity=R
 type=Creature

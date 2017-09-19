@@ -1,5 +1,5 @@
 name=Serra Inquisitors
-image=http://magiccards.info/scans/en/hl/120.jpg
+image=https://magiccards.info/scans/en/hl/120.jpg
 value=1.632
 rarity=U
 type=Creature

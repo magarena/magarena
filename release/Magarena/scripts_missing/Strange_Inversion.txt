@@ -1,5 +1,5 @@
 name=Strange Inversion
-image=http://magiccards.info/scans/en/chk/192.jpg
+image=https://magiccards.info/scans/en/chk/192.jpg
 value=2.217
 rarity=U
 type=Instant

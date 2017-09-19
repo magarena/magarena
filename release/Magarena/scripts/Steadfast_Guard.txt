@@ -1,5 +1,5 @@
 name=Steadfast Guard
-image=http://magiccards.info/scans/en/10e/48.jpg
+image=https://magiccards.info/scans/en/10e/48.jpg
 value=3.858
 rarity=C
 type=Creature

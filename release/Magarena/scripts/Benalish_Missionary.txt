@@ -1,5 +1,5 @@
 name=Benalish Missionary
-image=http://magiccards.info/scans/en/wl/126.jpg
+image=https://magiccards.info/scans/en/wl/126.jpg
 value=3.014
 rarity=C
 type=Creature

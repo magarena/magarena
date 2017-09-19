@@ -1,5 +1,5 @@
 name=Spine of Ish Sah
-image=http://magiccards.info/scans/en/c14/272.jpg
+image=https://magiccards.info/scans/en/c14/272.jpg
 value=3.667
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Frankenstein's Monster
-image=http://magiccards.info/scans/en/dk/7.jpg
+image=https://magiccards.info/scans/en/dk/7.jpg
 value=3.870
 rarity=R
 type=Creature

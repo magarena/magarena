@@ -1,5 +1,5 @@
 name=Cat Burglar
-image=http://magiccards.info/scans/en/ex/54.jpg
+image=https://magiccards.info/scans/en/ex/54.jpg
 value=3.057
 rarity=C
 type=Creature

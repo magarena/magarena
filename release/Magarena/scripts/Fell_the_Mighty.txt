@@ -1,5 +1,5 @@
 name=Fell the Mighty
-image=http://magiccards.info/scans/en/c14/7.jpg
+image=https://magiccards.info/scans/en/c14/7.jpg
 value=2.500
 rarity=R
 type=Sorcery

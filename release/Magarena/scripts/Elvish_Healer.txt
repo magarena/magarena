@@ -1,5 +1,5 @@
 name=Elvish Healer
-image=http://magiccards.info/scans/en/ia/246.jpg
+image=https://magiccards.info/scans/en/ia/246.jpg
 value=2.347
 rarity=C
 type=Creature

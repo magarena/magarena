@@ -1,5 +1,5 @@
 name=Carnifex Demon
-image=http://magiccards.info/scans/en/som/57.jpg
+image=https://magiccards.info/scans/en/som/57.jpg
 value=3.871
 rarity=R
 type=Creature

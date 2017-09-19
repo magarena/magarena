@@ -1,5 +1,5 @@
 name=Phyrexian Revoker
-image=http://magiccards.info/scans/en/m15/225.jpg
+image=https://magiccards.info/scans/en/m15/225.jpg
 value=4.333
 rarity=R
 type=Artifact,Creature

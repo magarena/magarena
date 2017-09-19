@@ -1,5 +1,5 @@
 name=Brood Keeper
-image=http://magiccards.info/scans/en/m15/132.jpg
+image=https://magiccards.info/scans/en/m15/132.jpg
 value=3.300
 rarity=U
 type=Creature

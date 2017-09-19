@@ -1,5 +1,5 @@
 name=Narset, Enlightened Master
-image=http://magiccards.info/scans/en/ktk/190.jpg
+image=https://magiccards.info/scans/en/ktk/190.jpg
 value=3.500
 rarity=M
 type=Legendary,Creature

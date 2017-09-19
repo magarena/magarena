@@ -1,5 +1,5 @@
 name=Despondency
-image=http://magiccards.info/scans/en/us/129.jpg
+image=https://magiccards.info/scans/en/us/129.jpg
 value=3.679
 rarity=C
 type=Enchantment

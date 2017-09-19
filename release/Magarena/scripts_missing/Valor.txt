@@ -1,5 +1,5 @@
 name=Valor
-image=http://magiccards.info/scans/en/tsts/16.jpg
+image=https://magiccards.info/scans/en/tsts/16.jpg
 value=3.889
 rarity=U
 type=Creature

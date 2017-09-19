@@ -1,5 +1,5 @@
 name=Heliod's Pilgrim
-image=http://magiccards.info/scans/en/m15/14.jpg
+image=https://magiccards.info/scans/en/m15/14.jpg
 value=3.583
 rarity=C
 type=Creature

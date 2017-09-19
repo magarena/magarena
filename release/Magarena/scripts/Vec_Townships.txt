@@ -1,5 +1,5 @@
 name=Vec Townships
-image=http://magiccards.info/scans/en/tp/339.jpg
+image=https://magiccards.info/scans/en/tp/339.jpg
 value=2.732
 rarity=U
 type=Land

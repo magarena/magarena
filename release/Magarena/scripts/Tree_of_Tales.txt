@@ -1,5 +1,5 @@
 name=Tree of Tales
-image=http://magiccards.info/scans/en/mi/285.jpg
+image=https://magiccards.info/scans/en/mi/285.jpg
 image_updated=2017-01-11
 value=4.128
 rarity=C

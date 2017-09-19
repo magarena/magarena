@@ -1,5 +1,5 @@
 name=Leyline Phantom
-image=http://magiccards.info/scans/en/gtc/41.jpg
+image=https://magiccards.info/scans/en/gtc/41.jpg
 value=2.158
 rarity=C
 type=Creature

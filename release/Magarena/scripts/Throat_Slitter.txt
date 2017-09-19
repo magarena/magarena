@@ -1,5 +1,5 @@
 name=Throat Slitter
-image=http://magiccards.info/scans/en/pc2/37.jpg
+image=https://magiccards.info/scans/en/pc2/37.jpg
 value=3.115
 rarity=U
 type=Creature

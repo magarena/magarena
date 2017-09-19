@@ -1,6 +1,6 @@
 name=green Ooze creature token
 token=Ooze
-image=http://magiccards.info/extras/token/rise-of-the-eldrazi/ooze.jpg
+image=https://magiccards.info/extras/token/rise-of-the-eldrazi/ooze.jpg
 value=2
 type=Creature
 subtype=Ooze

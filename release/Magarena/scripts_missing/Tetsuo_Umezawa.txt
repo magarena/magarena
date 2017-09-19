@@ -1,5 +1,5 @@
 name=Tetsuo Umezawa
-image=http://magiccards.info/scans/en/lg/302.jpg
+image=https://magiccards.info/scans/en/lg/302.jpg
 value=3.952
 rarity=R
 type=Legendary,Creature

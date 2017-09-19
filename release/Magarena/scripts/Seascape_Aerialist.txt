@@ -1,5 +1,5 @@
 name=Seascape Aerialist
-image=http://magiccards.info/scans/en/zen/64.jpg
+image=https://magiccards.info/scans/en/zen/64.jpg
 value=2.570
 rarity=U
 type=Creature

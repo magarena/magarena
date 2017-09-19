@@ -1,5 +1,5 @@
 name=Scroll of Origins
-image=http://magiccards.info/scans/en/sok/159.jpg
+image=https://magiccards.info/scans/en/sok/159.jpg
 value=2.326
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Armored Galleon
-image=http://magiccards.info/scans/en/po2/33.jpg
+image=https://magiccards.info/scans/en/po2/33.jpg
 value=1.625
 rarity=U
 type=Creature

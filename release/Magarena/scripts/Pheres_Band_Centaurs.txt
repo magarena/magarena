@@ -1,5 +1,5 @@
 name=Pheres-Band Centaurs
-image=http://magiccards.info/scans/en/ths/171.jpg
+image=https://magiccards.info/scans/en/ths/171.jpg
 value=2.885
 rarity=C
 type=Creature

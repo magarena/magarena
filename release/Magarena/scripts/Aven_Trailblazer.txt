@@ -1,5 +1,5 @@
 name=Aven Trailblazer
-image=http://magiccards.info/scans/en/cfx/4.jpg
+image=https://magiccards.info/scans/en/cfx/4.jpg
 value=2.212
 rarity=C
 type=Creature

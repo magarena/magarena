@@ -1,5 +1,5 @@
 name=Enemy of the Guildpact
-image=http://magiccards.info/scans/en/di/44.jpg
+image=https://magiccards.info/scans/en/di/44.jpg
 value=2.708
 rarity=C
 type=Creature

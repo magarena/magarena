@@ -1,5 +1,5 @@
 name=Militia's Pride
-image=http://magiccards.info/scans/en/lw/30.jpg
+image=https://magiccards.info/scans/en/lw/30.jpg
 value=3.948
 rarity=R
 type=Tribal,Enchantment

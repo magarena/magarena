@@ -1,5 +1,5 @@
 name=Sway of the Stars
-image=http://magiccards.info/scans/en/bok/54.jpg
+image=https://magiccards.info/scans/en/bok/54.jpg
 value=3.325
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Stonewing Antagonizer
-image=http://magiccards.info/scans/en/soi/266b.jpg
+image=https://magiccards.info/scans/en/soi/266b.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

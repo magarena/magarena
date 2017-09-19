@@ -1,5 +1,5 @@
 name=Huntmaster of the Fells
-image=http://magiccards.info/scans/en/dka/140a.jpg
+image=https://magiccards.info/scans/en/dka/140a.jpg
 value=3.953
 rarity=M
 type=Creature

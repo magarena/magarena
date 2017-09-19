@@ -1,5 +1,5 @@
 name=Reckless Brute
-image=http://magiccards.info/scans/en/m13/144.jpg
+image=https://magiccards.info/scans/en/m13/144.jpg
 value=2.306
 rarity=C
 type=Creature

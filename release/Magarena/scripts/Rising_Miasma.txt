@@ -1,5 +1,5 @@
 name=Rising Miasma
-image=http://magiccards.info/scans/en/bfz/122.jpg
+image=https://magiccards.info/scans/en/bfz/122.jpg
 image_updated=2015-11-08
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Cackling Witch
-image=http://magiccards.info/scans/en/mm/119.jpg
+image=https://magiccards.info/scans/en/mm/119.jpg
 value=3.018
 rarity=U
 type=Creature

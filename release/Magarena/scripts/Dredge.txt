@@ -1,5 +1,5 @@
 name=Dredge
-image=http://magiccards.info/scans/en/in/103.jpg
+image=https://magiccards.info/scans/en/in/103.jpg
 value=1.920
 rarity=U
 type=Instant

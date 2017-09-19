@@ -1,5 +1,5 @@
 name=Righteous Aura
-image=http://magiccards.info/scans/en/mm/45.jpg
+image=https://magiccards.info/scans/en/mm/45.jpg
 value=3.483
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Faithful Squire
-image=http://magiccards.info/scans/en/bok/3a.jpg
+image=https://magiccards.info/scans/en/bok/3a.jpg
 value=3.053
 rarity=U
 type=Creature

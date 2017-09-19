@@ -1,5 +1,5 @@
 name=Knowledge and Power
-image=http://magiccards.info/scans/en/jou/101.jpg
+image=https://magiccards.info/scans/en/jou/101.jpg
 value=2.615
 rarity=U
 type=Enchantment

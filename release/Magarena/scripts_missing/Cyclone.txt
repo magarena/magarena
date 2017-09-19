@@ -1,5 +1,5 @@
 name=Cyclone
-image=http://magiccards.info/scans/en/ch/34.jpg
+image=https://magiccards.info/scans/en/ch/34.jpg
 value=2.775
 rarity=U
 type=Enchantment

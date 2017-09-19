@@ -1,5 +1,5 @@
 name=Hellhole Flailer
-image=http://magiccards.info/scans/en/rtr/167.jpg
+image=https://magiccards.info/scans/en/rtr/167.jpg
 value=3.800
 rarity=U
 type=Creature

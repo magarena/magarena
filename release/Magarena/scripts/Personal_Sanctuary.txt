@@ -1,5 +1,5 @@
 name=Personal Sanctuary
-image=http://magiccards.info/scans/en/m12/30.jpg
+image=https://magiccards.info/scans/en/m12/30.jpg
 value=3.280
 rarity=R
 type=Enchantment

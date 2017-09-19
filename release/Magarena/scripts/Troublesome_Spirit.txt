@@ -1,5 +1,5 @@
 name=Troublesome Spirit
-image=http://magiccards.info/scans/en/pr/52.jpg
+image=https://magiccards.info/scans/en/pr/52.jpg
 value=2.016
 rarity=R
 type=Creature

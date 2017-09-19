@@ -1,5 +1,5 @@
 name=Kitsune Dawnblade
-image=http://magiccards.info/scans/en/sok/16.jpg
+image=https://magiccards.info/scans/en/sok/16.jpg
 value=1.743
 rarity=C
 type=Creature

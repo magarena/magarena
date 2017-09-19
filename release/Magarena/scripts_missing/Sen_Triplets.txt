@@ -1,5 +1,5 @@
 name=Sen Triplets
-image=http://magiccards.info/scans/en/arb/109.jpg
+image=https://magiccards.info/scans/en/arb/109.jpg
 value=3.998
 rarity=M
 type=Legendary,Artifact,Creature

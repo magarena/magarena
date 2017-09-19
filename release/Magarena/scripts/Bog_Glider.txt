@@ -1,5 +1,5 @@
 name=Bog Glider
-image=http://magiccards.info/scans/en/pr/58.jpg
+image=https://magiccards.info/scans/en/pr/58.jpg
 value=2.050
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ravenous Vampire
-image=http://magiccards.info/scans/en/mr/34.jpg
+image=https://magiccards.info/scans/en/mr/34.jpg
 value=3.288
 rarity=U
 type=Creature

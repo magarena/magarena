@@ -1,5 +1,5 @@
 name=Triton Cavalry
-image=http://magiccards.info/scans/en/jou/55.jpg
+image=https://magiccards.info/scans/en/jou/55.jpg
 value=3.619
 rarity=U
 type=Creature

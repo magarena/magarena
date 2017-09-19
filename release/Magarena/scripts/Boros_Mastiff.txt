@@ -1,5 +1,5 @@
 name=Boros Mastiff
-image=http://magiccards.info/scans/en/dgm/1.jpg
+image=https://magiccards.info/scans/en/dgm/1.jpg
 value=2.724
 rarity=C
 type=Creature

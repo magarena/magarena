@@ -1,5 +1,5 @@
 name=Temporary Insanity
-image=http://magiccards.info/scans/en/tr/116.jpg
+image=https://magiccards.info/scans/en/tr/116.jpg
 value=2.288
 rarity=U
 type=Instant

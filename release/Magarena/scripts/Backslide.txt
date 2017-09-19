@@ -1,5 +1,5 @@
 name=Backslide
-image=http://magiccards.info/scans/en/on/70.jpg
+image=https://magiccards.info/scans/en/on/70.jpg
 value=2.742
 rarity=C
 type=Instant

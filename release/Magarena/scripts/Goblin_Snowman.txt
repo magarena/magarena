@@ -1,5 +1,5 @@
 name=Goblin Snowman
-image=http://magiccards.info/scans/en/tsts/64.jpg
+image=https://magiccards.info/scans/en/tsts/64.jpg
 value=4.103
 rarity=U
 type=Creature

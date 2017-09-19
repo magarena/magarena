@@ -1,5 +1,5 @@
 name=Annihilating Fire
-image=http://magiccards.info/scans/en/rtr/85.jpg
+image=https://magiccards.info/scans/en/rtr/85.jpg
 value=2.506
 removal=3
 rarity=C

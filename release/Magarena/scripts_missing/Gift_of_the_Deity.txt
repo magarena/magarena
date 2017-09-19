@@ -1,5 +1,5 @@
 name=Gift of the Deity
-image=http://magiccards.info/scans/en/eve/122.jpg
+image=https://magiccards.info/scans/en/eve/122.jpg
 value=3.321
 rarity=C
 type=Enchantment

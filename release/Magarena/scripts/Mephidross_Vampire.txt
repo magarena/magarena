@@ -1,5 +1,5 @@
 name=Mephidross Vampire
-image=http://magiccards.info/scans/en/5dn/53.jpg
+image=https://magiccards.info/scans/en/5dn/53.jpg
 value=4.269
 rarity=R
 type=Creature

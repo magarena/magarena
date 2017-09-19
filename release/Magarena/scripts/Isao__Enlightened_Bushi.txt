@@ -1,5 +1,5 @@
 name=Isao, Enlightened Bushi
-image=http://magiccards.info/scans/en/bok/129.jpg
+image=https://magiccards.info/scans/en/bok/129.jpg
 value=3.893
 rarity=R
 type=Legendary,Creature

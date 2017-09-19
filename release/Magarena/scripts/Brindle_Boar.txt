@@ -1,5 +1,5 @@
 name=Brindle Boar
-image=http://magiccards.info/scans/en/m12/167.jpg
+image=https://magiccards.info/scans/en/m12/167.jpg
 value=3.188
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Quest for the Nihil Stone
-image=http://magiccards.info/scans/en/wwk/64.jpg
+image=https://magiccards.info/scans/en/wwk/64.jpg
 value=3.748
 rarity=R
 type=Enchantment

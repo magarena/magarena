@@ -1,5 +1,5 @@
 name=Consume Spirit
-image=http://magiccards.info/scans/en/m12/88.jpg
+image=https://magiccards.info/scans/en/m12/88.jpg
 value=2.500
 rarity=U
 type=Sorcery

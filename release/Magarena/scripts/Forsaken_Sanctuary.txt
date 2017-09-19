@@ -1,5 +1,5 @@
 name=Forsaken Sanctuary
-image=http://magiccards.info/scans/en/soi/273.jpg
+image=https://magiccards.info/scans/en/soi/273.jpg
 value=2.500
 rarity=U
 type=Land

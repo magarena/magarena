@@ -1,5 +1,5 @@
 name=Homing Lightning
-image=http://magiccards.info/scans/en/gtc/96.jpg
+image=https://magiccards.info/scans/en/gtc/96.jpg
 value=3.180
 rarity=U
 type=Instant

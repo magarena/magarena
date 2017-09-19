@@ -1,5 +1,5 @@
 name=Tempest of Light
-image=http://magiccards.info/scans/en/m10/36.jpg
+image=https://magiccards.info/scans/en/m10/36.jpg
 value=3.689
 removal=2
 rarity=U

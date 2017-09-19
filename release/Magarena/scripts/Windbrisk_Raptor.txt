@@ -1,5 +1,5 @@
 name=Windbrisk Raptor
-image=http://magiccards.info/scans/en/shm/26.jpg
+image=https://magiccards.info/scans/en/shm/26.jpg
 value=3.795
 rarity=R
 type=Creature

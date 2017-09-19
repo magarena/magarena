@@ -1,5 +1,5 @@
 name=Dread Warlock
-image=http://magiccards.info/scans/en/m10/94.jpg
+image=https://magiccards.info/scans/en/m10/94.jpg
 value=3.609
 rarity=C
 type=Creature

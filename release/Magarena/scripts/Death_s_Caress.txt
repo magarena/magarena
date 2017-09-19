@@ -1,5 +1,5 @@
 name=Death's Caress
-image=http://magiccards.info/scans/en/dka/59.jpg
+image=https://magiccards.info/scans/en/dka/59.jpg
 value=1.370
 removal=3
 rarity=C

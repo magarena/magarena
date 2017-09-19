@@ -1,5 +1,5 @@
 name=Oreskos Swiftclaw
-image=http://magiccards.info/scans/en/m15/22.jpg
+image=https://magiccards.info/scans/en/m15/22.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Talisman of Impulse
-image=http://magiccards.info/scans/en/mi/254.jpg
+image=https://magiccards.info/scans/en/mi/254.jpg
 value=3.143
 rarity=U
 type=Artifact

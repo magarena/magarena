@@ -1,5 +1,5 @@
 name=Aquamorph Entity
-image=http://magiccards.info/scans/en/ddn/54.jpg
+image=https://magiccards.info/scans/en/ddn/54.jpg
 value=2.500
 rarity=C
 type=Creature

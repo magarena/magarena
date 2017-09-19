@@ -1,5 +1,5 @@
 name=Songs of the Damned
-image=http://magiccards.info/scans/en/ia/48.jpg
+image=https://magiccards.info/scans/en/ia/48.jpg
 value=4.448
 rarity=C
 type=Instant

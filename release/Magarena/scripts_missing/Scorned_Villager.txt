@@ -1,5 +1,5 @@
 name=Scorned Villager
-image=http://magiccards.info/scans/en/dka/125a.jpg
+image=https://magiccards.info/scans/en/dka/125a.jpg
 value=3.315
 rarity=C
 type=Creature

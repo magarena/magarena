@@ -1,5 +1,5 @@
 name=Fodder Launch
-image=http://magiccards.info/scans/en/lw/114.jpg
+image=https://magiccards.info/scans/en/lw/114.jpg
 value=3.875
 rarity=U
 type=Tribal,Sorcery

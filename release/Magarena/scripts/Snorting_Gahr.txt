@@ -1,5 +1,5 @@
 name=Snorting Gahr
-image=http://magiccards.info/scans/en/mm/272.jpg
+image=https://magiccards.info/scans/en/mm/272.jpg
 value=3.180
 rarity=C
 type=Creature

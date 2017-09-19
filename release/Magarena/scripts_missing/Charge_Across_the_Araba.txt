@@ -1,5 +1,5 @@
 name=Charge Across the Araba
-image=http://magiccards.info/scans/en/sok/4.jpg
+image=https://magiccards.info/scans/en/sok/4.jpg
 value=3.552
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Dragonstalker
-image=http://magiccards.info/scans/en/sc/11.jpg
+image=https://magiccards.info/scans/en/sc/11.jpg
 value=2.154
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Viashino Sandswimmer
-image=http://magiccards.info/scans/en/us/225.jpg
+image=https://magiccards.info/scans/en/us/225.jpg
 value=2.348
 rarity=R
 type=Creature

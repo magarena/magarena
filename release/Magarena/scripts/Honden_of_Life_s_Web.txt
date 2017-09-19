@@ -1,5 +1,5 @@
 name=Honden of Life's Web
-image=http://magiccards.info/scans/en/ema/172.jpg
+image=https://magiccards.info/scans/en/ema/172.jpg
 value=3.647
 rarity=U
 type=Legendary,Enchantment

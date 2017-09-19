@@ -1,5 +1,5 @@
 name=Rushing River
-image=http://magiccards.info/scans/en/ps/30.jpg
+image=https://magiccards.info/scans/en/ps/30.jpg
 value=3.500
 rarity=C
 type=Instant

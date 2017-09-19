@@ -1,5 +1,5 @@
 name=Blizzard
-image=http://magiccards.info/scans/en/ia/115.jpg
+image=https://magiccards.info/scans/en/ia/115.jpg
 value=1.889
 rarity=R
 type=Enchantment

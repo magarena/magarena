@@ -1,5 +1,5 @@
 name=Captain's Call
-image=http://magiccards.info/scans/en/m13/9.jpg
+image=https://magiccards.info/scans/en/m13/9.jpg
 value=3.041
 rarity=C
 type=Sorcery

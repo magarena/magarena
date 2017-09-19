@@ -1,5 +1,5 @@
 name=Goblin Rabblemaster
-image=http://magiccards.info/scans/en/m15/145.jpg
+image=https://magiccards.info/scans/en/m15/145.jpg
 value=4.000
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Woodvine Elemental
-image=http://magiccards.info/scans/en/cns/52.jpg
+image=https://magiccards.info/scans/en/cns/52.jpg
 value=3.778
 rarity=U
 type=Creature

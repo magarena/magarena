@@ -1,5 +1,5 @@
 name=Blizzard Elemental
-image=http://magiccards.info/scans/en/ud/27.jpg
+image=https://magiccards.info/scans/en/ud/27.jpg
 value=2.857
 rarity=R
 type=Creature

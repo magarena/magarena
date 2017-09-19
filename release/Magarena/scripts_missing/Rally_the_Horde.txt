@@ -1,5 +1,5 @@
 name=Rally the Horde
-image=http://magiccards.info/scans/en/sok/110.jpg
+image=https://magiccards.info/scans/en/sok/110.jpg
 value=2.985
 rarity=R
 type=Sorcery

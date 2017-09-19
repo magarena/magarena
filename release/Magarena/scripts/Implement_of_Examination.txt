@@ -1,5 +1,5 @@
 name=Implement of Examination
-image=http://magiccards.info/scans/en/aer/156.jpg
+image=https://magiccards.info/scans/en/aer/156.jpg
 value=2.500
 rarity=C
 type=Artifact

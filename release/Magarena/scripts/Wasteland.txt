@@ -1,5 +1,5 @@
 name=Wasteland
-image=http://magiccards.info/scans/en/ema/248.jpg
+image=https://magiccards.info/scans/en/ema/248.jpg
 value=4.585
 rarity=R
 type=Land

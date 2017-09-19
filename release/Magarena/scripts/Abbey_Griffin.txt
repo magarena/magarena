@@ -1,5 +1,5 @@
 name=Abbey Griffin
-image=http://magiccards.info/scans/en/isd/1.jpg
+image=https://magiccards.info/scans/en/isd/1.jpg
 value=2.165
 rarity=C
 type=Creature

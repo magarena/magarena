@@ -1,5 +1,5 @@
 name=Zuo Ci, the Mocking Sage
-image=http://magiccards.info/scans/en/p3k/165.jpg
+image=https://magiccards.info/scans/en/p3k/165.jpg
 value=2.362
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Sisters of the Flame
-image=http://magiccards.info/scans/en/4e/239.jpg
+image=https://magiccards.info/scans/en/4e/239.jpg
 value=2.578
 rarity=C
 type=Creature

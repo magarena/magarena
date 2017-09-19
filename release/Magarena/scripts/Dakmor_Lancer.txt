@@ -1,5 +1,5 @@
 name=Dakmor Lancer
-image=http://magiccards.info/scans/en/7e/126.jpg
+image=https://magiccards.info/scans/en/7e/126.jpg
 value=2.288
 rarity=U
 type=Creature

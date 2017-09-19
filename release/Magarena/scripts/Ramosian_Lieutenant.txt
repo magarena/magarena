@@ -1,5 +1,5 @@
 name=Ramosian Lieutenant
-image=http://magiccards.info/scans/en/mm/37.jpg
+image=https://magiccards.info/scans/en/mm/37.jpg
 value=3.783
 rarity=C
 type=Creature

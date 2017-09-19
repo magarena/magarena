@@ -1,5 +1,5 @@
 name=War-Spike Changeling
-image=http://magiccards.info/scans/en/mma/139.jpg
+image=https://magiccards.info/scans/en/mma/139.jpg
 value=2.767
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Daru Sanctifier
-image=http://magiccards.info/scans/en/le/9.jpg
+image=https://magiccards.info/scans/en/le/9.jpg
 value=1.940
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cryptborn Horror
-image=http://magiccards.info/scans/en/rtr/212.jpg
+image=https://magiccards.info/scans/en/rtr/212.jpg
 value=3.407
 rarity=R
 type=Creature

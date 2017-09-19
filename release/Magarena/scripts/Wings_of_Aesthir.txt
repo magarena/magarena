@@ -1,5 +1,5 @@
 name=Wings of Aesthir
-image=http://magiccards.info/scans/en/cstd/43.jpg
+image=https://magiccards.info/scans/en/cstd/43.jpg
 value=3.432
 rarity=U
 type=Enchantment

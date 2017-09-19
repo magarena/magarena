@@ -1,5 +1,5 @@
 name=Nyx Infusion
-image=http://magiccards.info/scans/en/jou/77.jpg
+image=https://magiccards.info/scans/en/jou/77.jpg
 value=2.971
 rarity=C
 type=Enchantment

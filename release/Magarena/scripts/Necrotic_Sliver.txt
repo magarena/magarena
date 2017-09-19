@@ -1,5 +1,5 @@
 name=Necrotic Sliver
-image=http://magiccards.info/scans/en/pc/159.jpg
+image=https://magiccards.info/scans/en/pc/159.jpg
 value=4.439
 rarity=U
 type=Creature

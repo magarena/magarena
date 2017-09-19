@@ -1,5 +1,5 @@
 name=Reaper King
-image=http://magiccards.info/scans/en/shm/260.jpg
+image=https://magiccards.info/scans/en/shm/260.jpg
 value=4.124
 rarity=R
 type=Legendary,Artifact,Creature

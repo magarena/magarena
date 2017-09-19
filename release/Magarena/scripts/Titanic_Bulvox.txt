@@ -1,5 +1,5 @@
 name=Titanic Bulvox
-image=http://magiccards.info/scans/en/sc/129.jpg
+image=https://magiccards.info/scans/en/sc/129.jpg
 value=2.577
 rarity=C
 type=Creature

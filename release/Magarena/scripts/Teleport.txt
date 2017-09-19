@@ -1,5 +1,5 @@
 name=Teleport
-image=http://magiccards.info/scans/en/lg/80.jpg
+image=https://magiccards.info/scans/en/lg/80.jpg
 image_updated=2017-01-10
 value=1.755
 rarity=R

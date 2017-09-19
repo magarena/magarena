@@ -1,6 +1,6 @@
 name=1/1 green Elf Druid creature token
 token=Elf Warrior
-image=http://magiccards.info/extras/token/commander-2014/elf-druid.jpg
+image=https://magiccards.info/extras/token/commander-2014/elf-druid.jpg
 value=1
 type=Creature
 subtype=Elf,Druid

@@ -1,5 +1,5 @@
 name=Recross the Paths
-image=http://magiccards.info/scans/en/mt/133.jpg
+image=https://magiccards.info/scans/en/mt/133.jpg
 value=3.229
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Illusion of Choice
-image=http://magiccards.info/scans/en/cn2/31.jpg
+image=https://magiccards.info/scans/en/cn2/31.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=U

@@ -1,5 +1,5 @@
 name=Akroma's Devoted
-image=http://magiccards.info/scans/en/le/2.jpg
+image=https://magiccards.info/scans/en/le/2.jpg
 value=3.844
 rarity=U
 type=Creature

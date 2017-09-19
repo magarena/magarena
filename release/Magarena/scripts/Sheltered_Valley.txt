@@ -1,5 +1,5 @@
 name=Sheltered Valley
-image=http://magiccards.info/scans/en/ai/187.jpg
+image=https://magiccards.info/scans/en/ai/187.jpg
 value=2.511
 rarity=R
 type=Land

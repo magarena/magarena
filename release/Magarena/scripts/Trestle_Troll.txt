@@ -1,5 +1,5 @@
 name=Trestle Troll
-image=http://magiccards.info/scans/en/rtr/205.jpg
+image=https://magiccards.info/scans/en/rtr/205.jpg
 value=3.067
 rarity=C
 type=Creature

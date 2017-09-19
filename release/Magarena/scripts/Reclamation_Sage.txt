@@ -1,5 +1,5 @@
 name=Reclamation Sage
-image=http://magiccards.info/scans/en/c14/213.jpg
+image=https://magiccards.info/scans/en/c14/213.jpg
 value=3.929
 rarity=U
 type=Creature

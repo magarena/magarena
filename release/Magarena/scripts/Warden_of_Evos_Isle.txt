@@ -1,5 +1,5 @@
 name=Warden of Evos Isle
-image=http://magiccards.info/scans/en/ema/76.jpg
+image=https://magiccards.info/scans/en/ema/76.jpg
 value=3.658
 rarity=C
 type=Creature

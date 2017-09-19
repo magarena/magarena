@@ -1,5 +1,5 @@
 name=Blast of Genius
-image=http://magiccards.info/scans/en/dgm/55.jpg
+image=https://magiccards.info/scans/en/dgm/55.jpg
 value=3.325
 rarity=U
 type=Sorcery

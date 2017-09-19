@@ -1,5 +1,5 @@
 name=Hermit of the Natterknolls
-image=http://magiccards.info/scans/en/soi/209a.jpg
+image=https://magiccards.info/scans/en/soi/209a.jpg
 value=2.500
 rarity=U
 type=Creature

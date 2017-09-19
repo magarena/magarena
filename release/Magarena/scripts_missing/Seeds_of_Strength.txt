@@ -1,5 +1,5 @@
 name=Seeds of Strength
-image=http://magiccards.info/scans/en/rav/227.jpg
+image=https://magiccards.info/scans/en/rav/227.jpg
 value=3.035
 rarity=C
 type=Instant

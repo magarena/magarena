@@ -1,5 +1,5 @@
 name=Bellowing Tanglewurm
-image=http://magiccards.info/scans/en/som/111.jpg
+image=https://magiccards.info/scans/en/som/111.jpg
 value=4.062
 rarity=U
 type=Creature

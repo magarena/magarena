@@ -1,5 +1,5 @@
 name=Nix
-image=http://magiccards.info/scans/en/fut/55.jpg
+image=https://magiccards.info/scans/en/fut/55.jpg
 value=3.177
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Rootgrapple
-image=http://magiccards.info/scans/en/lw/234.jpg
+image=https://magiccards.info/scans/en/lw/234.jpg
 value=3.304
 rarity=C
 type=Tribal,Instant

@@ -1,5 +1,5 @@
 name=False Defeat
-image=http://magiccards.info/scans/en/p3k/4.jpg
+image=https://magiccards.info/scans/en/p3k/4.jpg
 value=3.929
 rarity=C
 type=Sorcery

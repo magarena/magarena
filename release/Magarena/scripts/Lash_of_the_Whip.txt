@@ -1,5 +1,5 @@
 name=Lash of the Whip
-image=http://magiccards.info/scans/en/ths/94.jpg
+image=https://magiccards.info/scans/en/ths/94.jpg
 value=2.073
 rarity=C
 type=Instant

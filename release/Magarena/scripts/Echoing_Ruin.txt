@@ -1,5 +1,5 @@
 name=Echoing Ruin
-image=http://magiccards.info/scans/en/ds/59.jpg
+image=https://magiccards.info/scans/en/ds/59.jpg
 value=3.776
 removal=3
 rarity=C

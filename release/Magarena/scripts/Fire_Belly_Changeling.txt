@@ -1,5 +1,5 @@
 name=Fire-Belly Changeling
-image=http://magiccards.info/scans/en/lw/164.jpg
+image=https://magiccards.info/scans/en/lw/164.jpg
 value=2.700
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bog Wreckage
-image=http://magiccards.info/scans/en/od/314.jpg
+image=https://magiccards.info/scans/en/od/314.jpg
 value=2.229
 rarity=C
 type=Land

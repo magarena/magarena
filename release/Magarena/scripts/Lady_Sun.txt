@@ -1,5 +1,5 @@
 name=Lady Sun
-image=http://magiccards.info/scans/en/p3k/45.jpg
+image=https://magiccards.info/scans/en/p3k/45.jpg
 value=3.310
 rarity=R
 type=Legendary,Creature

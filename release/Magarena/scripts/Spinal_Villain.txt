@@ -1,5 +1,5 @@
 name=Spinal Villain
-image=http://magiccards.info/scans/en/lg/161.jpg
+image=https://magiccards.info/scans/en/lg/161.jpg
 value=3.737
 rarity=R
 type=Creature

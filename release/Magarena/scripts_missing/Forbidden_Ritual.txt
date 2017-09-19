@@ -1,5 +1,5 @@
 name=Forbidden Ritual
-image=http://magiccards.info/scans/en/vi/10.jpg
+image=https://magiccards.info/scans/en/vi/10.jpg
 value=3.397
 rarity=R
 type=Sorcery

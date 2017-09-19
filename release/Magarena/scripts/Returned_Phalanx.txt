@@ -1,5 +1,5 @@
 name=Returned Phalanx
-image=http://magiccards.info/scans/en/ths/104.jpg
+image=https://magiccards.info/scans/en/ths/104.jpg
 value=3.258
 rarity=C
 type=Creature

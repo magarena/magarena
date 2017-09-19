@@ -1,5 +1,5 @@
 name=Stratozeppelid
-image=http://magiccards.info/scans/en/gp/36.jpg
+image=https://magiccards.info/scans/en/gp/36.jpg
 value=2.015
 rarity=U
 type=Creature

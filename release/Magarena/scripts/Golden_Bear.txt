@@ -1,5 +1,5 @@
 name=Golden Bear
-image=http://magiccards.info/scans/en/po2/67.jpg
+image=https://magiccards.info/scans/en/po2/67.jpg
 value=3.333
 rarity=C
 type=Creature

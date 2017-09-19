@@ -1,5 +1,5 @@
 name=Dwarven Soldier
-image=http://magiccards.info/scans/en/5e/221.jpg
+image=https://magiccards.info/scans/en/5e/221.jpg
 value=2.113
 rarity=C
 type=Creature

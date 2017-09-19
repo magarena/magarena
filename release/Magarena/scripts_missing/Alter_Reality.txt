@@ -1,5 +1,5 @@
 name=Alter Reality
-image=http://magiccards.info/scans/en/tr/22.jpg
+image=https://magiccards.info/scans/en/tr/22.jpg
 value=3.851
 rarity=R
 type=Instant

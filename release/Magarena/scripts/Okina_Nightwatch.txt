@@ -1,5 +1,5 @@
 name=Okina Nightwatch
-image=http://magiccards.info/scans/en/sok/140.jpg
+image=https://magiccards.info/scans/en/sok/140.jpg
 value=2.036
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aura Fracture
-image=http://magiccards.info/scans/en/pr/2.jpg
+image=https://magiccards.info/scans/en/pr/2.jpg
 value=2.911
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Simic Guildgate
-image=http://magiccards.info/scans/en/mm3/248.jpg
+image=https://magiccards.info/scans/en/mm3/248.jpg
 image_updated=2017-08-08
 value=3.150
 rarity=C

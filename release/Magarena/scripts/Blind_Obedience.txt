@@ -1,5 +1,5 @@
 name=Blind Obedience
-image=http://magiccards.info/scans/en/c16/59.jpg
+image=https://magiccards.info/scans/en/c16/59.jpg
 image_updated=2017-08-17
 value=4.123
 rarity=R

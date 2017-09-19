@@ -1,5 +1,5 @@
 name=Guard Gomazoa
-image=http://magiccards.info/scans/en/pc2/17.jpg
+image=https://magiccards.info/scans/en/pc2/17.jpg
 value=3.833
 rarity=U
 type=Creature

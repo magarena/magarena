@@ -1,5 +1,5 @@
 name=Sadistic Sacrament
-image=http://magiccards.info/scans/en/zen/110.jpg
+image=https://magiccards.info/scans/en/zen/110.jpg
 value=4.471
 rarity=R
 type=Sorcery

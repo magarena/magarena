@@ -1,5 +1,5 @@
 name=Lich's Tomb
-image=http://magiccards.info/scans/en/ds/128.jpg
+image=https://magiccards.info/scans/en/ds/128.jpg
 value=2.783
 rarity=R
 type=Artifact

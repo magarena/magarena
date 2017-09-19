@@ -1,5 +1,5 @@
 name=Trailblazer's Boots
-image=http://magiccards.info/scans/en/zen/208.jpg
+image=https://magiccards.info/scans/en/zen/208.jpg
 value=3.109
 rarity=U
 type=Artifact

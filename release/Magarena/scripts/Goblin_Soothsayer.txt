@@ -1,5 +1,5 @@
 name=Goblin Soothsayer
-image=http://magiccards.info/scans/en/mr/179.jpg
+image=https://magiccards.info/scans/en/mr/179.jpg
 value=4.053
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Remove Enchantments
-image=http://magiccards.info/scans/en/lg/202.jpg
+image=https://magiccards.info/scans/en/lg/202.jpg
 value=2.338
 rarity=C
 type=Instant

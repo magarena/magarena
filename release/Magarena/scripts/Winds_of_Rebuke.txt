@@ -1,5 +1,5 @@
 name=Winds of Rebuke
-image=http://magiccards.info/scans/en/akh/76.jpg
+image=https://magiccards.info/scans/en/akh/76.jpg
 value=2.500
 rarity=C
 type=Instant

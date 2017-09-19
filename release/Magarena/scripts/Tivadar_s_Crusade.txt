@@ -1,5 +1,5 @@
 name=Tivadar's Crusade
-image=http://magiccards.info/scans/en/dk/91.jpg
+image=https://magiccards.info/scans/en/dk/91.jpg
 value=3.643
 rarity=U
 type=Sorcery

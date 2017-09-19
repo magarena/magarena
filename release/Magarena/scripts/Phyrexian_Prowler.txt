@@ -1,5 +1,5 @@
 name=Phyrexian Prowler
-image=http://magiccards.info/scans/en/ne/65.jpg
+image=https://magiccards.info/scans/en/ne/65.jpg
 value=2.387
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Purraj of Urborg
-image=http://magiccards.info/scans/en/mr/33.jpg
+image=https://magiccards.info/scans/en/mr/33.jpg
 value=3.179
 rarity=R
 type=Legendary,Creature

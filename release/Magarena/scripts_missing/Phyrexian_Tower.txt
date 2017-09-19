@@ -1,5 +1,5 @@
 name=Phyrexian Tower
-image=http://magiccards.info/scans/en/us/322.jpg
+image=https://magiccards.info/scans/en/us/322.jpg
 value=4.198
 rarity=R
 type=Legendary,Land

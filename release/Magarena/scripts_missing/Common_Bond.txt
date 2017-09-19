@@ -1,5 +1,5 @@
 name=Common Bond
-image=http://magiccards.info/scans/en/rtr/151.jpg
+image=https://magiccards.info/scans/en/rtr/151.jpg
 value=2.895
 rarity=C
 type=Instant

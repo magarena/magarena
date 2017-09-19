@@ -1,6 +1,6 @@
 name=3/3 white Bird creature token with flying
 token=Bird
-image=http://magiccards.info/extras/token/magic-2011/bird.jpg
+image=https://magiccards.info/extras/token/magic-2011/bird.jpg
 value=3
 type=Creature
 subtype=Bird

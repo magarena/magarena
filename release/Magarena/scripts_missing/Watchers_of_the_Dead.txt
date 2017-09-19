@@ -1,5 +1,5 @@
 name=Watchers of the Dead
-image=http://magiccards.info/scans/en/akh/238.jpg
+image=https://magiccards.info/scans/en/akh/238.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

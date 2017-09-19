@@ -1,5 +1,5 @@
 name=Beetleform Mage
-image=http://magiccards.info/scans/en/dgm/54.jpg
+image=https://magiccards.info/scans/en/dgm/54.jpg
 value=3.404
 rarity=C
 type=Creature

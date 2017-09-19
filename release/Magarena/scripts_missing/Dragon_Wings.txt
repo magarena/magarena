@@ -1,5 +1,5 @@
 name=Dragon Wings
-image=http://magiccards.info/scans/en/sc/34.jpg
+image=https://magiccards.info/scans/en/sc/34.jpg
 value=3.171
 rarity=C
 type=Enchantment

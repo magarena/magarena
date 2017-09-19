@@ -1,5 +1,5 @@
 name=Leyline of Singularity
-image=http://magiccards.info/scans/en/gp/29.jpg
+image=https://magiccards.info/scans/en/gp/29.jpg
 value=4.073
 rarity=R
 type=Enchantment

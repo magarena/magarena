@@ -1,5 +1,5 @@
 name=Fyndhorn Brownie
-image=http://magiccards.info/scans/en/6e/231.jpg
+image=https://magiccards.info/scans/en/6e/231.jpg
 value=1.764
 rarity=C
 type=Creature

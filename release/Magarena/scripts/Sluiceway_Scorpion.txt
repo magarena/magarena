@@ -1,5 +1,5 @@
 name=Sluiceway Scorpion
-image=http://magiccards.info/scans/en/rtr/198.jpg
+image=https://magiccards.info/scans/en/rtr/198.jpg
 value=3.246
 rarity=C
 type=Creature

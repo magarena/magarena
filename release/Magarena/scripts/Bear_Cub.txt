@@ -1,5 +1,5 @@
 name=Bear Cub
-image=http://magiccards.info/scans/en/po2/63.jpg
+image=https://magiccards.info/scans/en/po2/63.jpg
 value=4.072
 rarity=C
 type=Creature

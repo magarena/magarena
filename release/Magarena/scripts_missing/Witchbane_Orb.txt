@@ -1,5 +1,5 @@
 name=Witchbane Orb
-image=http://magiccards.info/scans/en/isd/236.jpg
+image=https://magiccards.info/scans/en/isd/236.jpg
 value=4.218
 rarity=R
 type=Artifact

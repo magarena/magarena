@@ -1,5 +1,5 @@
 name=Massive Raid
-image=http://magiccards.info/scans/en/gtc/100.jpg
+image=https://magiccards.info/scans/en/gtc/100.jpg
 value=3.170
 removal=3
 rarity=C

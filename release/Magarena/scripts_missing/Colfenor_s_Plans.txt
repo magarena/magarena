@@ -1,5 +1,5 @@
 name=Colfenor's Plans
-image=http://magiccards.info/scans/en/lw/106.jpg
+image=https://magiccards.info/scans/en/lw/106.jpg
 value=1.838
 rarity=R
 type=Enchantment

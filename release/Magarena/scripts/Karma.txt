@@ -1,5 +1,5 @@
 name=Karma
-image=http://magiccards.info/scans/en/8e/28.jpg
+image=https://magiccards.info/scans/en/8e/28.jpg
 value=3.744
 rarity=U
 type=Enchantment

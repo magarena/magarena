@@ -1,5 +1,5 @@
 name=Knight of the Reliquary
-image=http://magiccards.info/scans/en/mma/178.jpg
+image=https://magiccards.info/scans/en/mma/178.jpg
 value=4.549
 rarity=R
 type=Creature

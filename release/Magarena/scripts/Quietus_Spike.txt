@@ -1,5 +1,5 @@
 name=Quietus Spike
-image=http://magiccards.info/scans/en/pc2/112.jpg
+image=https://magiccards.info/scans/en/pc2/112.jpg
 value=3.059
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Profane Prayers
-image=http://magiccards.info/scans/en/on/162.jpg
+image=https://magiccards.info/scans/en/on/162.jpg
 value=2.820
 rarity=C
 type=Sorcery

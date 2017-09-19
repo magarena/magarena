@@ -1,5 +1,5 @@
 name=Descendant of Soramaro
-image=http://magiccards.info/scans/en/sok/33.jpg
+image=https://magiccards.info/scans/en/sok/33.jpg
 value=3.288
 rarity=C
 type=Creature

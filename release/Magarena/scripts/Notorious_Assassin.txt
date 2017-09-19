@@ -1,5 +1,5 @@
 name=Notorious Assassin
-image=http://magiccards.info/scans/en/mm/150.jpg
+image=https://magiccards.info/scans/en/mm/150.jpg
 value=3.081
 rarity=R
 type=Creature

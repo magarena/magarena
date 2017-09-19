@@ -1,5 +1,5 @@
 name=Firemaw Kavu
-image=http://magiccards.info/scans/en/ts/153.jpg
+image=https://magiccards.info/scans/en/ts/153.jpg
 value=2.338
 removal=1
 rarity=U

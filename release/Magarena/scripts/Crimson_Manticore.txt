@@ -1,5 +1,5 @@
 name=Crimson Manticore
-image=http://magiccards.info/scans/en/5e/217.jpg
+image=https://magiccards.info/scans/en/5e/217.jpg
 value=2.375
 rarity=R
 type=Creature

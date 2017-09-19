@@ -1,5 +1,5 @@
 name=Hero of Oxid Ridge
-image=http://magiccards.info/scans/en/mbs/66.jpg
+image=https://magiccards.info/scans/en/mbs/66.jpg
 value=3.868
 rarity=M
 type=Creature

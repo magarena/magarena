@@ -1,5 +1,5 @@
 name=Bloodlust Inciter
-image=http://magiccards.info/scans/en/akh/120.jpg
+image=https://magiccards.info/scans/en/akh/120.jpg
 value=2.500
 rarity=C
 type=Creature

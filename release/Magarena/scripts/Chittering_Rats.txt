@@ -1,5 +1,5 @@
 name=Chittering Rats
-image=http://magiccards.info/scans/en/ds/39.jpg
+image=https://magiccards.info/scans/en/ds/39.jpg
 value=4.061
 rarity=C
 type=Creature

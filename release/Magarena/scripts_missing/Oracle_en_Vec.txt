@@ -1,5 +1,5 @@
 name=Oracle en-Vec
-image=http://magiccards.info/scans/en/tp/243.jpg
+image=https://magiccards.info/scans/en/tp/243.jpg
 value=3.987
 rarity=R
 type=Creature

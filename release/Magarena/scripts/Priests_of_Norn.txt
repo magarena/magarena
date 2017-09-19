@@ -1,5 +1,5 @@
 name=Priests of Norn
-image=http://magiccards.info/scans/en/mbs/16.jpg
+image=https://magiccards.info/scans/en/mbs/16.jpg
 value=3.572
 rarity=C
 type=Creature

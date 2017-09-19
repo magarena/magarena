@@ -1,5 +1,5 @@
 name=Pious Evangel
-image=http://magiccards.info/scans/en/soi/34a.jpg
+image=https://magiccards.info/scans/en/soi/34a.jpg
 value=2.500
 rarity=U
 type=Creature

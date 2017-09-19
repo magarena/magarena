@@ -1,6 +1,6 @@
 name=2/2 blue Homunculus creature token
 token=Homunculus
-image=http://magiccards.info/extras/token/innistrad/homunculus.jpg
+image=https://magiccards.info/extras/token/innistrad/homunculus.jpg
 value=2
 type=Creature
 subtype=Homunculus

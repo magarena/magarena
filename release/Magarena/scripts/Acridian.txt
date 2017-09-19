@@ -1,5 +1,5 @@
 name=Acridian
-image=http://magiccards.info/scans/en/us/230.jpg
+image=https://magiccards.info/scans/en/us/230.jpg
 value=3.286
 rarity=C
 type=Creature

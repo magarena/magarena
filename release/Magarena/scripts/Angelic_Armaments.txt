@@ -1,5 +1,5 @@
 name=Angelic Armaments
-image=http://magiccards.info/scans/en/avr/212.jpg
+image=https://magiccards.info/scans/en/avr/212.jpg
 value=2.352
 rarity=U
 type=Artifact

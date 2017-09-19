@@ -1,5 +1,5 @@
 name=Gold Myr
-image=http://magiccards.info/scans/en/som/157.jpg
+image=https://magiccards.info/scans/en/som/157.jpg
 value=3.075
 rarity=C
 type=Artifact,Creature

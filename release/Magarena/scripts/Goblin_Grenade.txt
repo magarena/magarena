@@ -1,5 +1,5 @@
 name=Goblin Grenade
-image=http://magiccards.info/scans/en/m12/140.jpg
+image=https://magiccards.info/scans/en/m12/140.jpg
 value=4.326
 rarity=U
 type=Sorcery

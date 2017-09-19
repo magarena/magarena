@@ -1,5 +1,5 @@
 name=Liberated Dwarf
-image=http://magiccards.info/scans/en/ju/95.jpg
+image=https://magiccards.info/scans/en/ju/95.jpg
 value=2.155
 rarity=C
 type=Creature

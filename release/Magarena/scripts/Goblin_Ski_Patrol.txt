@@ -1,5 +1,5 @@
 name=Goblin Ski Patrol
-image=http://magiccards.info/scans/en/ia/190.jpg
+image=https://magiccards.info/scans/en/ia/190.jpg
 value=2.981
 rarity=C
 type=Creature

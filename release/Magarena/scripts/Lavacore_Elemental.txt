@@ -1,5 +1,5 @@
 name=Lavacore Elemental
-image=http://magiccards.info/scans/en/pc/103.jpg
+image=https://magiccards.info/scans/en/pc/103.jpg
 value=2.871
 rarity=U
 type=Creature

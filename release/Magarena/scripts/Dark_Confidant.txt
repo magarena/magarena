@@ -1,5 +1,5 @@
 name=Dark Confidant
-image=http://magiccards.info/scans/en/mm2/75.jpg
+image=https://magiccards.info/scans/en/mm2/75.jpg
 image_updated=2015-11-05
 value=4.609
 rarity=M

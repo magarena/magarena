@@ -1,5 +1,5 @@
 name=Deviant Glee
-image=http://magiccards.info/scans/en/rtr/65.jpg
+image=https://magiccards.info/scans/en/rtr/65.jpg
 value=3.380
 rarity=C
 type=Enchantment

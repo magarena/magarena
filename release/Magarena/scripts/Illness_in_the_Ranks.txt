@@ -1,5 +1,5 @@
 name=Illness in the Ranks
-image=http://magiccards.info/scans/en/gtc/69.jpg
+image=https://magiccards.info/scans/en/gtc/69.jpg
 value=3.381
 rarity=U
 type=Enchantment

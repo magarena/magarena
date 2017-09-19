@@ -1,5 +1,5 @@
 name=Wild Nacatl
-image=http://magiccards.info/scans/en/ala/152.jpg
+image=https://magiccards.info/scans/en/ala/152.jpg
 value=4.185
 rarity=C
 type=Creature

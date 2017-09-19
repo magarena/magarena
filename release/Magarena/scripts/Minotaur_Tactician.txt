@@ -1,5 +1,5 @@
 name=Minotaur Tactician
-image=http://magiccards.info/scans/en/ap/65.jpg
+image=https://magiccards.info/scans/en/ap/65.jpg
 value=1.387
 rarity=C
 type=Creature

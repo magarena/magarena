@@ -1,5 +1,5 @@
 name=Aurora Griffin
-image=http://magiccards.info/scans/en/ps/2.jpg
+image=https://magiccards.info/scans/en/ps/2.jpg
 value=2.242
 rarity=C
 type=Creature

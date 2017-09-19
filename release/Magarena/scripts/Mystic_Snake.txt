@@ -1,5 +1,5 @@
 name=Mystic Snake
-image=http://magiccards.info/scans/en/mm2/180.jpg
+image=https://magiccards.info/scans/en/mm2/180.jpg
 image_updated=2016-02-29
 value=4.375
 rarity=R

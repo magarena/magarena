@@ -1,5 +1,5 @@
 name=Ghirapur Osprey
-image=http://magiccards.info/scans/en/aer/20.jpg
+image=https://magiccards.info/scans/en/aer/20.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sandsteppe Mastodon
-image=http://magiccards.info/scans/en/frf/137.jpg
+image=https://magiccards.info/scans/en/frf/137.jpg
 value=2.500
 rarity=R
 type=Creature

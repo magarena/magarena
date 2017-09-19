@@ -1,5 +1,5 @@
 name=Metropolis Sprite
-image=http://magiccards.info/scans/en/gtc/42.jpg
+image=https://magiccards.info/scans/en/gtc/42.jpg
 value=2.809
 rarity=C
 type=Creature

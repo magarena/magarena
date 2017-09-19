@@ -1,5 +1,5 @@
 name=Elvish Bard
-image=http://magiccards.info/scans/en/9e/236.jpg
+image=https://magiccards.info/scans/en/9e/236.jpg
 value=3.276
 rarity=U
 type=Creature

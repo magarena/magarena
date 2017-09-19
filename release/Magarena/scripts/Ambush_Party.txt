@@ -1,5 +1,5 @@
 name=Ambush Party
-image=http://magiccards.info/scans/en/5e/208.jpg
+image=https://magiccards.info/scans/en/5e/208.jpg
 value=2.194
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=green Hydra creature token
 token=Hydra
-image=http://magiccards.info/extras/token/journey-into-nyx/hydra.jpg
+image=https://magiccards.info/extras/token/journey-into-nyx/hydra.jpg
 value=2
 type=Creature
 subtype=Hydra

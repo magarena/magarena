@@ -1,5 +1,5 @@
 name=Opal Champion
-image=http://magiccards.info/scans/en/ul/16.jpg
+image=https://magiccards.info/scans/en/ul/16.jpg
 value=3.420
 rarity=C
 type=Enchantment

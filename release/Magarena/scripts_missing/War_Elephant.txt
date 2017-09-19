@@ -1,5 +1,5 @@
 name=War Elephant
-image=http://magiccards.info/scans/en/ch/69.jpg
+image=https://magiccards.info/scans/en/ch/69.jpg
 value=2.228
 rarity=C
 type=Creature

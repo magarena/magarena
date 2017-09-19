@@ -1,5 +1,5 @@
 name=Rakshasa Vizier
-image=http://magiccards.info/scans/en/ktk/193.jpg
+image=https://magiccards.info/scans/en/ktk/193.jpg
 value=3.250
 rarity=R
 type=Creature

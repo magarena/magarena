@@ -1,5 +1,5 @@
 name=Crystal Spray
-image=http://magiccards.info/scans/en/in/50.jpg
+image=https://magiccards.info/scans/en/in/50.jpg
 value=2.328
 rarity=R
 type=Instant

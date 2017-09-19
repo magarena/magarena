@@ -1,5 +1,5 @@
 name=Blazing Shoal
-image=http://magiccards.info/scans/en/bok/96.jpg
+image=https://magiccards.info/scans/en/bok/96.jpg
 value=4.123
 rarity=R
 type=Instant

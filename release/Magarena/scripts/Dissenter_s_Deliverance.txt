@@ -1,5 +1,5 @@
 name=Dissenter's Deliverance
-image=http://magiccards.info/scans/en/akh/164.jpg
+image=https://magiccards.info/scans/en/akh/164.jpg
 value=2.500
 rarity=C
 type=Instant

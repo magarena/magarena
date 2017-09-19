@@ -1,5 +1,5 @@
 name=Defiant Strike
-image=http://magiccards.info/scans/en/ktk/7.jpg
+image=https://magiccards.info/scans/en/ktk/7.jpg
 value=1.750
 rarity=C
 type=Instant

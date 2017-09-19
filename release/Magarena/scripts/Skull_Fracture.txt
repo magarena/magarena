@@ -1,5 +1,5 @@
 name=Skull Fracture
-image=http://magiccards.info/scans/en/od/162.jpg
+image=https://magiccards.info/scans/en/od/162.jpg
 value=2.635
 rarity=U
 type=Sorcery

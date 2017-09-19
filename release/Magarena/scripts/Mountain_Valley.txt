@@ -1,5 +1,5 @@
 name=Mountain Valley
-image=http://magiccards.info/scans/en/mr/305.jpg
+image=https://magiccards.info/scans/en/mr/305.jpg
 value=3.548
 rarity=U
 type=Land

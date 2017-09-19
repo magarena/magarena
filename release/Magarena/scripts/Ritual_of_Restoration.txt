@@ -1,5 +1,5 @@
 name=Ritual of Restoration
-image=http://magiccards.info/scans/en/ds/13.jpg
+image=https://magiccards.info/scans/en/ds/13.jpg
 value=2.625
 rarity=C
 type=Sorcery

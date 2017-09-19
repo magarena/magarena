@@ -1,5 +1,5 @@
 name=Calming Licid
-image=http://magiccards.info/scans/en/sh/102.jpg
+image=https://magiccards.info/scans/en/sh/102.jpg
 value=3.267
 rarity=U
 type=Creature

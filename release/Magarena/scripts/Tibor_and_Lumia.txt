@@ -1,5 +1,5 @@
 name=Tibor and Lumia
-image=http://magiccards.info/scans/en/gp/135.jpg
+image=https://magiccards.info/scans/en/gp/135.jpg
 value=3.718
 rarity=R
 type=Legendary,Creature

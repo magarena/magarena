@@ -1,5 +1,5 @@
 name=War's Toll
-image=http://magiccards.info/scans/en/di/77.jpg
+image=https://magiccards.info/scans/en/di/77.jpg
 value=3.778
 rarity=R
 type=Enchantment

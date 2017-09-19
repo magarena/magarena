@@ -1,5 +1,5 @@
 name=Woodcloaker
-image=http://magiccards.info/scans/en/sc/134.jpg
+image=https://magiccards.info/scans/en/sc/134.jpg
 value=1.738
 rarity=C
 type=Creature

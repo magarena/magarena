@@ -1,5 +1,5 @@
 name=Nim Devourer
-image=http://magiccards.info/scans/en/mi/70.jpg
+image=https://magiccards.info/scans/en/mi/70.jpg
 value=3.408
 rarity=R
 type=Creature

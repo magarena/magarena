@@ -1,5 +1,5 @@
 name=Lumengrid Gargoyle
-image=http://magiccards.info/scans/en/mbs/112.jpg
+image=https://magiccards.info/scans/en/mbs/112.jpg
 value=2.016
 rarity=U
 type=Artifact,Creature

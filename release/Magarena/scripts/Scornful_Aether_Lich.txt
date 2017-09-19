@@ -1,5 +1,5 @@
 name=Scornful Aether-Lich
-image=http://magiccards.info/scans/en/cfx/34.jpg
+image=https://magiccards.info/scans/en/cfx/34.jpg
 image_updated=2016-09-27
 value=2.921
 rarity=U

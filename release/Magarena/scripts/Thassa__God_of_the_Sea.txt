@@ -1,5 +1,5 @@
 name=Thassa, God of the Sea
-image=http://magiccards.info/scans/en/ths/66.jpg
+image=https://magiccards.info/scans/en/ths/66.jpg
 value=3.816
 rarity=M
 type=Legendary,Enchantment,Creature

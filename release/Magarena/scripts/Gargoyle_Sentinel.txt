@@ -1,5 +1,5 @@
 name=Gargoyle Sentinel
-image=http://magiccards.info/scans/en/m15/216.jpg
+image=https://magiccards.info/scans/en/m15/216.jpg
 value=2.800
 rarity=U
 type=Artifact,Creature

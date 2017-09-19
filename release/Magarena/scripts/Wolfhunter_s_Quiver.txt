@@ -1,5 +1,5 @@
 name=Wolfhunter's Quiver
-image=http://magiccards.info/scans/en/dka/154.jpg
+image=https://magiccards.info/scans/en/dka/154.jpg
 value=1.620
 rarity=U
 type=Artifact

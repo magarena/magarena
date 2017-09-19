@@ -1,5 +1,5 @@
 name=Guul Draz Assassin
-image=http://magiccards.info/scans/en/roe/112.jpg
+image=https://magiccards.info/scans/en/roe/112.jpg
 value=3.917
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Crag Puca
-image=http://magiccards.info/scans/en/eve/101.jpg
+image=https://magiccards.info/scans/en/eve/101.jpg
 value=3.011
 rarity=U
 type=Creature

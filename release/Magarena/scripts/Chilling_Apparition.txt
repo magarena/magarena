@@ -1,5 +1,5 @@
 name=Chilling Apparition
-image=http://magiccards.info/scans/en/pr/59.jpg
+image=https://magiccards.info/scans/en/pr/59.jpg
 value=3.653
 rarity=U
 type=Creature

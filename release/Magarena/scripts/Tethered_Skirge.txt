@@ -1,5 +1,5 @@
 name=Tethered Skirge
-image=http://magiccards.info/scans/en/ul/70.jpg
+image=https://magiccards.info/scans/en/ul/70.jpg
 value=2.078
 rarity=U
 type=Creature

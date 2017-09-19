@@ -1,5 +1,5 @@
 name=Skyblinder Staff
-image=http://magiccards.info/scans/en/gtc/238.jpg
+image=https://magiccards.info/scans/en/gtc/238.jpg
 value=2.177
 rarity=C
 type=Artifact

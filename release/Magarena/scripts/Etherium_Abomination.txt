@@ -1,5 +1,5 @@
 name=Etherium Abomination
-image=http://magiccards.info/scans/en/arb/20.jpg
+image=https://magiccards.info/scans/en/arb/20.jpg
 value=2.137
 rarity=C
 type=Artifact,Creature

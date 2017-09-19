@@ -1,5 +1,5 @@
 name=Nimble-Blade Khenra
-image=http://magiccards.info/scans/en/akh/145.jpg
+image=https://magiccards.info/scans/en/akh/145.jpg
 value=2.500
 rarity=C
 type=Creature

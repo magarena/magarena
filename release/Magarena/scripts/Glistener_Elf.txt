@@ -1,5 +1,5 @@
 name=Glistener Elf
-image=http://magiccards.info/scans/en/nph/111.jpg
+image=https://magiccards.info/scans/en/nph/111.jpg
 value=3.784
 rarity=C
 type=Creature

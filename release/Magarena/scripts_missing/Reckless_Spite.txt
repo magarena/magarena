@@ -1,5 +1,5 @@
 name=Reckless Spite
-image=http://magiccards.info/scans/en/cns/123.jpg
+image=https://magiccards.info/scans/en/cns/123.jpg
 value=4.417
 rarity=U
 type=Instant

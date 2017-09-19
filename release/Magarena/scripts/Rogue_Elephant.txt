@@ -1,5 +1,5 @@
 name=Rogue Elephant
-image=http://magiccards.info/scans/en/wl/81.jpg
+image=https://magiccards.info/scans/en/wl/81.jpg
 value=4.282
 rarity=C
 type=Creature

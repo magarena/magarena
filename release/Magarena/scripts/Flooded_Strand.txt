@@ -1,5 +1,5 @@
 name=Flooded Strand
-image=http://magiccards.info/scans/en/ktk/233.jpg
+image=https://magiccards.info/scans/en/ktk/233.jpg
 value=4.600
 rarity=R
 type=Land

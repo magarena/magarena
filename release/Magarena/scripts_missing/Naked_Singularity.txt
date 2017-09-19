@@ -1,5 +1,5 @@
 name=Naked Singularity
-image=http://magiccards.info/scans/en/ia/305.jpg
+image=https://magiccards.info/scans/en/ia/305.jpg
 value=4.081
 rarity=R
 type=Artifact

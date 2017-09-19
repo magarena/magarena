@@ -1,5 +1,5 @@
 name=Initiates of the Ebon Hand
-image=http://magiccards.info/scans/en/5e/31.jpg
+image=https://magiccards.info/scans/en/5e/31.jpg
 value=3.293
 rarity=C
 type=Creature

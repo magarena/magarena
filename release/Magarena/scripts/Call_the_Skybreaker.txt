@@ -1,5 +1,5 @@
 name=Call the Skybreaker
-image=http://magiccards.info/scans/en/ema/214.jpg
+image=https://magiccards.info/scans/en/ema/214.jpg
 value=3.056
 rarity=R
 type=Sorcery

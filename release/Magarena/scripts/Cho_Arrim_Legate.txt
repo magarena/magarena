@@ -1,5 +1,5 @@
 name=Cho-Arrim Legate
-image=http://magiccards.info/scans/en/mm/10.jpg
+image=https://magiccards.info/scans/en/mm/10.jpg
 value=3.847
 rarity=U
 type=Creature

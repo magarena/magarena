@@ -1,5 +1,5 @@
 name=Watchdog
-image=http://magiccards.info/scans/en/tp/304.jpg
+image=https://magiccards.info/scans/en/tp/304.jpg
 value=2.882
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Rockslide Ambush
-image=http://magiccards.info/scans/en/p3k/121.jpg
+image=https://magiccards.info/scans/en/p3k/121.jpg
 value=3.676
 rarity=U
 type=Sorcery

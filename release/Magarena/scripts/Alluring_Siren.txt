@@ -1,5 +1,5 @@
 name=Alluring Siren
-image=http://magiccards.info/scans/en/m12/42.jpg
+image=https://magiccards.info/scans/en/m12/42.jpg
 value=3.183
 rarity=U
 type=Creature

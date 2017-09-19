@@ -1,5 +1,5 @@
 name=Villainous Wealth
-image=http://magiccards.info/scans/en/ktk/211.jpg
+image=https://magiccards.info/scans/en/ktk/211.jpg
 value=4.000
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=War Elemental
-image=http://magiccards.info/scans/en/mi/112.jpg
+image=https://magiccards.info/scans/en/mi/112.jpg
 value=4.194
 rarity=R
 type=Creature

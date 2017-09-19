@@ -1,5 +1,5 @@
 name=Rapid Fire
-image=http://magiccards.info/scans/en/lg/201.jpg
+image=https://magiccards.info/scans/en/lg/201.jpg
 value=2.297
 rarity=R
 type=Instant

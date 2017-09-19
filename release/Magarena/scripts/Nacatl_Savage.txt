@@ -1,5 +1,5 @@
 name=Nacatl Savage
-image=http://magiccards.info/scans/en/cfx/86.jpg
+image=https://magiccards.info/scans/en/cfx/86.jpg
 value=2.412
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Heartless Hidetsugu
-image=http://magiccards.info/scans/en/cns/144.jpg
+image=https://magiccards.info/scans/en/cns/144.jpg
 value=3.750
 rarity=R
 type=Legendary,Creature

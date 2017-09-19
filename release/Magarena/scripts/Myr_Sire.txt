@@ -1,5 +1,5 @@
 name=Myr Sire
-image=http://magiccards.info/scans/en/c14/256.jpg
+image=https://magiccards.info/scans/en/c14/256.jpg
 value=3.441
 rarity=C
 type=Artifact,Creature

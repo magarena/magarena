@@ -1,5 +1,5 @@
 name=Firefright Mage
-image=http://magiccards.info/scans/en/pc/99.jpg
+image=https://magiccards.info/scans/en/pc/99.jpg
 value=2.689
 rarity=C
 type=Creature

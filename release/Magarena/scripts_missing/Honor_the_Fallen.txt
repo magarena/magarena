@@ -1,5 +1,5 @@
 name=Honor the Fallen
-image=http://magiccards.info/scans/en/mm/21.jpg
+image=https://magiccards.info/scans/en/mm/21.jpg
 value=3.645
 rarity=R
 type=Instant

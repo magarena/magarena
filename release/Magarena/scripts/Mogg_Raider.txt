@@ -1,5 +1,5 @@
 name=Mogg Raider
-image=http://magiccards.info/scans/en/tp/191.jpg
+image=https://magiccards.info/scans/en/tp/191.jpg
 value=3.875
 rarity=C
 type=Creature

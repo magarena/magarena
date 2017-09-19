@@ -1,5 +1,5 @@
 name=Aurelia, the Warleader
-image=http://magiccards.info/scans/en/gtc/143.jpg
+image=https://magiccards.info/scans/en/gtc/143.jpg
 value=4.039
 rarity=M
 type=Legendary,Creature

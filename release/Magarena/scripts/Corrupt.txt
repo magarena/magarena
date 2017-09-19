@@ -1,5 +1,5 @@
 name=Corrupt
-image=http://magiccards.info/scans/en/m11/89.jpg
+image=https://magiccards.info/scans/en/m11/89.jpg
 value=3.915
 removal=3
 rarity=U

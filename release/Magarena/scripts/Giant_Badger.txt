@@ -1,5 +1,5 @@
 name=Giant Badger
-image=http://magiccards.info/scans/en/8e/253.jpg
+image=https://magiccards.info/scans/en/8e/253.jpg
 value=3.306
 rarity=C
 type=Creature

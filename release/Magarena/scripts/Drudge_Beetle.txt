@@ -1,5 +1,5 @@
 name=Drudge Beetle
-image=http://magiccards.info/scans/en/rtr/122.jpg
+image=https://magiccards.info/scans/en/rtr/122.jpg
 value=2.691
 rarity=C
 type=Creature

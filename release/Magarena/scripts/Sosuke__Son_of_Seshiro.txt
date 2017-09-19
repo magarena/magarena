@@ -1,5 +1,5 @@
 name=Sosuke, Son of Seshiro
-image=http://magiccards.info/scans/en/chk/244.jpg
+image=https://magiccards.info/scans/en/chk/244.jpg
 value=4.010
 rarity=U
 type=Legendary,Creature

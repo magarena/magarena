@@ -1,5 +1,5 @@
 name=Spontaneous Combustion
-image=http://magiccards.info/scans/en/cns/194.jpg
+image=https://magiccards.info/scans/en/cns/194.jpg
 value=3.857
 rarity=U
 type=Instant

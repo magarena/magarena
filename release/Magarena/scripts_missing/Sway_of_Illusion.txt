@@ -1,5 +1,5 @@
 name=Sway of Illusion
-image=http://magiccards.info/scans/en/in/77.jpg
+image=https://magiccards.info/scans/en/in/77.jpg
 value=3.823
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Aven Mimeomancer
-image=http://magiccards.info/scans/en/arb/2.jpg
+image=https://magiccards.info/scans/en/arb/2.jpg
 value=3.479
 rarity=R
 type=Creature

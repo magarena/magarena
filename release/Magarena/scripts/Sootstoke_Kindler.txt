@@ -1,5 +1,5 @@
 name=Sootstoke Kindler
-image=http://magiccards.info/scans/en/shm/195.jpg
+image=https://magiccards.info/scans/en/shm/195.jpg
 value=3.110
 rarity=C
 type=Creature

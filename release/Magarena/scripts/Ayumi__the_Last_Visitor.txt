@@ -1,5 +1,5 @@
 name=Ayumi, the Last Visitor
-image=http://magiccards.info/scans/en/sok/122.jpg
+image=https://magiccards.info/scans/en/sok/122.jpg
 value=3.678
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=True Believer
-image=http://magiccards.info/scans/en/10e/53.jpg
+image=https://magiccards.info/scans/en/10e/53.jpg
 value=4.321
 rarity=R
 type=Creature

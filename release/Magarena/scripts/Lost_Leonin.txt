@@ -1,5 +1,5 @@
 name=Lost Leonin
-image=http://magiccards.info/scans/en/nph/13.jpg
+image=https://magiccards.info/scans/en/nph/13.jpg
 value=3.140
 rarity=C
 type=Creature

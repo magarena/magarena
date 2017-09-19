@@ -1,5 +1,5 @@
 name=Kukemssa Pirates
-image=http://magiccards.info/scans/en/mr/71.jpg
+image=https://magiccards.info/scans/en/mr/71.jpg
 value=3.312
 rarity=R
 type=Creature

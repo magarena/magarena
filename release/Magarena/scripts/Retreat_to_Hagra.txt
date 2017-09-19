@@ -1,5 +1,5 @@
 name=Retreat to Hagra
-image=http://magiccards.info/scans/en/bfz/121.jpg
+image=https://magiccards.info/scans/en/bfz/121.jpg
 image_updated=2015-11-08
 value=2.500
 rarity=U

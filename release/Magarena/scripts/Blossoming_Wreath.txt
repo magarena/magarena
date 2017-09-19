@@ -1,5 +1,5 @@
 name=Blossoming Wreath
-image=http://magiccards.info/scans/en/wl/62.jpg
+image=https://magiccards.info/scans/en/wl/62.jpg
 value=3.041
 rarity=C
 type=Instant

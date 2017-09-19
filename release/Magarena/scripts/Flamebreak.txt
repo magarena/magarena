@@ -1,5 +1,5 @@
 name=Flamebreak
-image=http://magiccards.info/scans/en/ds/61.jpg
+image=https://magiccards.info/scans/en/ds/61.jpg
 value=4.260
 rarity=R
 type=Sorcery

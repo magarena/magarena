@@ -1,5 +1,5 @@
 name=Sacred Wolf
-image=http://magiccards.info/scans/en/m12/194.jpg
+image=https://magiccards.info/scans/en/m12/194.jpg
 value=3.718
 rarity=C
 type=Creature

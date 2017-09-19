@@ -1,5 +1,5 @@
 name=Shrieking Mogg
-image=http://magiccards.info/scans/en/ne/99.jpg
+image=https://magiccards.info/scans/en/ne/99.jpg
 value=3.557
 rarity=R
 type=Creature

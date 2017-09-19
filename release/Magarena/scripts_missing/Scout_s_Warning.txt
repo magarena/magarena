@@ -1,5 +1,5 @@
 name=Scout's Warning
-image=http://magiccards.info/scans/en/fut/16.jpg
+image=https://magiccards.info/scans/en/fut/16.jpg
 value=3.912
 rarity=R
 type=Instant

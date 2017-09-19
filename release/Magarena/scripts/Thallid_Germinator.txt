@@ -1,5 +1,5 @@
 name=Thallid Germinator
-image=http://magiccards.info/scans/en/mma/168.jpg
+image=https://magiccards.info/scans/en/mma/168.jpg
 value=3.462
 rarity=C
 type=Creature

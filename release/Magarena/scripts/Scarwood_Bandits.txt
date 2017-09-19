@@ -1,5 +1,5 @@
 name=Scarwood Bandits
-image=http://magiccards.info/scans/en/dk/48.jpg
+image=https://magiccards.info/scans/en/dk/48.jpg
 value=3.361
 rarity=R
 type=Creature

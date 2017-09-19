@@ -1,5 +1,5 @@
 name=Selesnya Evangel
-image=http://magiccards.info/scans/en/cmd/223.jpg
+image=https://magiccards.info/scans/en/cmd/223.jpg
 value=3.080
 rarity=C
 type=Creature

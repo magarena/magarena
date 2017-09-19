@@ -1,5 +1,5 @@
 name=Cavern Lampad
-image=http://magiccards.info/scans/en/ths/81.jpg
+image=https://magiccards.info/scans/en/ths/81.jpg
 value=3.042
 rarity=C
 type=Enchantment,Creature

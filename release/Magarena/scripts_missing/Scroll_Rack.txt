@@ -1,5 +1,5 @@
 name=Scroll Rack
-image=http://magiccards.info/scans/en/tp/298.jpg
+image=https://magiccards.info/scans/en/tp/298.jpg
 image_updated=2016-01-09
 value=4.585
 rarity=R

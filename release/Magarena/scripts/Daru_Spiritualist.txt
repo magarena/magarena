@@ -1,5 +1,5 @@
 name=Daru Spiritualist
-image=http://magiccards.info/scans/en/sc/5.jpg
+image=https://magiccards.info/scans/en/sc/5.jpg
 value=3.722
 rarity=C
 type=Creature

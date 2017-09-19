@@ -1,5 +1,5 @@
 name=Grip of Desolation
-image=http://magiccards.info/scans/en/bfz/94.jpg
+image=https://magiccards.info/scans/en/bfz/94.jpg
 image_updated=2015-11-08
 value=2.500
 rarity=U

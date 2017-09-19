@@ -1,5 +1,5 @@
 name=Bountiful Harvest
-image=http://magiccards.info/scans/en/m13/163.jpg
+image=https://magiccards.info/scans/en/m13/163.jpg
 value=1.193
 rarity=C
 type=Sorcery

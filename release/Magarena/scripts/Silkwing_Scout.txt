@@ -1,5 +1,5 @@
 name=Silkwing Scout
-image=http://magiccards.info/scans/en/di/31.jpg
+image=https://magiccards.info/scans/en/di/31.jpg
 value=2.574
 rarity=C
 type=Creature

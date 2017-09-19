@@ -1,5 +1,5 @@
 name=Beasts of Bogardan
-image=http://magiccards.info/scans/en/lg/133.jpg
+image=https://magiccards.info/scans/en/lg/133.jpg
 image_updated=2016-11-20
 value=2.440
 rarity=U

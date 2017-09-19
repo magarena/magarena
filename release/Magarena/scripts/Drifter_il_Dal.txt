@@ -1,5 +1,5 @@
 name=Drifter il-Dal
-image=http://magiccards.info/scans/en/ts/59.jpg
+image=https://magiccards.info/scans/en/ts/59.jpg
 value=3.117
 rarity=C
 type=Creature

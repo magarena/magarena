@@ -1,5 +1,5 @@
 name=Leyline of Punishment
-image=http://magiccards.info/scans/en/m11/148.jpg
+image=https://magiccards.info/scans/en/m11/148.jpg
 value=3.839
 rarity=R
 type=Enchantment

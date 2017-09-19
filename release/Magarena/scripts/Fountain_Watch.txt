@@ -1,5 +1,5 @@
 name=Fountain Watch
-image=http://magiccards.info/scans/en/mm/19.jpg
+image=https://magiccards.info/scans/en/mm/19.jpg
 value=3.910
 rarity=R
 type=Creature

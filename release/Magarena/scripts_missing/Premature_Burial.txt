@@ -1,5 +1,5 @@
 name=Premature Burial
-image=http://magiccards.info/scans/en/ts/125.jpg
+image=https://magiccards.info/scans/en/ts/125.jpg
 value=1.465
 rarity=U
 type=Sorcery

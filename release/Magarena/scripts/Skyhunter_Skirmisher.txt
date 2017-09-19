@@ -1,5 +1,5 @@
 name=Skyhunter Skirmisher
-image=http://magiccards.info/scans/en/mm2/32.jpg
+image=https://magiccards.info/scans/en/mm2/32.jpg
 image_updated=2015-11-05
 value=3.931
 rarity=C

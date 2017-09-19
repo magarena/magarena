@@ -1,6 +1,6 @@
 name=5/5 red and green Elemental creature token
 token=Elemental
-image=http://magiccards.info/extras/token/battle-for-zendikar/elemental-2.jpg
+image=https://magiccards.info/extras/token/battle-for-zendikar/elemental-2.jpg
 value=5
 type=Creature
 subtype=Elemental

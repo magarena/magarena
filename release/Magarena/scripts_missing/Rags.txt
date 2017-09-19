@@ -1,5 +1,5 @@
 name=Rags
-image=http://magiccards.info/scans/en/akh/222a.jpg
+image=https://magiccards.info/scans/en/akh/222a.jpg
 value=2.500
 rarity=R
 type=Sorcery

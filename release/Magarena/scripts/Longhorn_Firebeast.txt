@@ -1,5 +1,5 @@
 name=Longhorn Firebeast
-image=http://magiccards.info/scans/en/tr/103.jpg
+image=https://magiccards.info/scans/en/tr/103.jpg
 value=2.683
 rarity=C
 type=Creature

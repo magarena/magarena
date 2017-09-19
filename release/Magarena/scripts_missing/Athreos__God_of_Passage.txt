@@ -1,5 +1,5 @@
 name=Athreos, God of Passage
-image=http://magiccards.info/scans/en/jou/146.jpg
+image=https://magiccards.info/scans/en/jou/146.jpg
 value=3.743
 rarity=M
 type=Legendary,Enchantment,Creature

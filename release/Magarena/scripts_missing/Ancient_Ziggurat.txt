@@ -1,5 +1,5 @@
 name=Ancient Ziggurat
-image=http://magiccards.info/scans/en/cfx/141.jpg
+image=https://magiccards.info/scans/en/cfx/141.jpg
 value=4.165
 rarity=U
 type=Land

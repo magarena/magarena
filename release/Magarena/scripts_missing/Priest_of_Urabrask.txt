@@ -1,5 +1,5 @@
 name=Priest of Urabrask
-image=http://magiccards.info/scans/en/nph/90.jpg
+image=https://magiccards.info/scans/en/nph/90.jpg
 value=3.712
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Undead Slayer
-image=http://magiccards.info/scans/en/m10/37.jpg
+image=https://magiccards.info/scans/en/m10/37.jpg
 value=3.586
 rarity=U
 type=Creature

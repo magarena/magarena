@@ -1,5 +1,5 @@
 name=Ghosts of the Innocent
-image=http://magiccards.info/scans/en/rav/20.jpg
+image=https://magiccards.info/scans/en/rav/20.jpg
 value=2.730
 rarity=R
 type=Creature

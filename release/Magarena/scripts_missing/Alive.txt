@@ -1,5 +1,5 @@
 name=Alive
-image=http://magiccards.info/scans/en/dgm/121a.jpg
+image=https://magiccards.info/scans/en/dgm/121a.jpg
 value=3.333
 rarity=U
 type=Sorcery

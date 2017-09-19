@@ -1,5 +1,5 @@
 name=Aspect of Gorgon
-image=http://magiccards.info/scans/en/jou/60.jpg
+image=https://magiccards.info/scans/en/jou/60.jpg
 value=2.879
 rarity=C
 type=Enchantment

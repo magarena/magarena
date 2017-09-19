@@ -1,5 +1,5 @@
 name=Shipbreaker Kraken
-image=http://magiccards.info/scans/en/ths/63.jpg
+image=https://magiccards.info/scans/en/ths/63.jpg
 value=3.583
 rarity=R
 type=Creature

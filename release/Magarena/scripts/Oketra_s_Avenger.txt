@@ -1,5 +1,5 @@
 name=Oketra's Avenger
-image=http://magiccards.info/scans/en/hou/17.jpg
+image=https://magiccards.info/scans/en/hou/17.jpg
 value=2.500
 rarity=C
 type=Creature

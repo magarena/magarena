@@ -1,5 +1,5 @@
 name=Irini Sengir
-image=http://magiccards.info/scans/en/hl/17.jpg
+image=https://magiccards.info/scans/en/hl/17.jpg
 value=2.350
 rarity=U
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Autumn-Tail, Kitsune Sage
-image=http://magiccards.info/scans/en/chk/28b.jpg
+image=https://magiccards.info/scans/en/chk/28b.jpg
 value=3.700
 rarity=R
 type=Legendary,Creature

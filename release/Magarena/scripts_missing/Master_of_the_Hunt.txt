@@ -1,5 +1,5 @@
 name=Master of the Hunt
-image=http://magiccards.info/scans/en/lg/108.jpg
+image=https://magiccards.info/scans/en/lg/108.jpg
 value=2.413
 rarity=R
 type=Creature

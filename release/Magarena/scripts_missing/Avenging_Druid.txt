@@ -1,5 +1,5 @@
 name=Avenging Druid
-image=http://magiccards.info/scans/en/ex/105.jpg
+image=https://magiccards.info/scans/en/ex/105.jpg
 value=3.231
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Scrabbling Claws
-image=http://magiccards.info/scans/en/mi/237.jpg
+image=https://magiccards.info/scans/en/mi/237.jpg
 value=3.417
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Brilliant Plan
-image=http://magiccards.info/scans/en/p3k/36.jpg
+image=https://magiccards.info/scans/en/p3k/36.jpg
 value=2.278
 rarity=U
 type=Sorcery

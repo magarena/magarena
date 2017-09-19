@@ -1,5 +1,5 @@
 name=Virtuous Charge
-image=http://magiccards.info/scans/en/p3k/29.jpg
+image=https://magiccards.info/scans/en/p3k/29.jpg
 value=1.893
 rarity=C
 type=Sorcery

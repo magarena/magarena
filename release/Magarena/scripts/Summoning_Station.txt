@@ -1,5 +1,5 @@
 name=Summoning Station
-image=http://magiccards.info/scans/en/5dn/158.jpg
+image=https://magiccards.info/scans/en/5dn/158.jpg
 value=4.160
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Takeno, Samurai General
-image=http://magiccards.info/scans/en/chk/46.jpg
+image=https://magiccards.info/scans/en/chk/46.jpg
 value=3.860
 rarity=R
 type=Legendary,Creature

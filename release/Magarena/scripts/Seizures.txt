@@ -1,5 +1,5 @@
 name=Seizures
-image=http://magiccards.info/scans/en/ia/47.jpg
+image=https://magiccards.info/scans/en/ia/47.jpg
 value=3.328
 rarity=C
 type=Enchantment

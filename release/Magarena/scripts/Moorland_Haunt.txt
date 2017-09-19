@@ -1,5 +1,5 @@
 name=Moorland Haunt
-image=http://magiccards.info/scans/en/isd/244.jpg
+image=https://magiccards.info/scans/en/isd/244.jpg
 value=3.808
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Entering
-image=http://magiccards.info/scans/en/dgm/124b.jpg
+image=https://magiccards.info/scans/en/dgm/124b.jpg
 value=3.800
 rarity=R
 type=Sorcery

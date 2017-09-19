@@ -1,5 +1,5 @@
 name=Outbreak
-image=http://magiccards.info/scans/en/pr/71.jpg
+image=https://magiccards.info/scans/en/pr/71.jpg
 value=3.306
 rarity=U
 type=Sorcery

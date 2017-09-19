@@ -1,5 +1,5 @@
 name=Scrapdiver Serpent
-image=http://magiccards.info/scans/en/som/41.jpg
+image=https://magiccards.info/scans/en/som/41.jpg
 value=2.882
 rarity=C
 type=Creature

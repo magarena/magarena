@@ -1,5 +1,5 @@
 name=Pyromania
-image=http://magiccards.info/scans/en/tr/112.jpg
+image=https://magiccards.info/scans/en/tr/112.jpg
 value=1.457
 rarity=U
 type=Enchantment

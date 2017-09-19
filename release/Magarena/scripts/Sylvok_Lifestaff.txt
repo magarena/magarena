@@ -1,5 +1,5 @@
 name=Sylvok Lifestaff
-image=http://magiccards.info/scans/en/som/209.jpg
+image=https://magiccards.info/scans/en/som/209.jpg
 value=3.589
 rarity=C
 type=Artifact

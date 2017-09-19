@@ -1,5 +1,5 @@
 name=Crookclaw Transmuter
-image=http://magiccards.info/scans/en/cns/94.jpg
+image=https://magiccards.info/scans/en/cns/94.jpg
 value=3.833
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Plated Seastrider
-image=http://magiccards.info/scans/en/cns/103.jpg
+image=https://magiccards.info/scans/en/cns/103.jpg
 value=3.083
 rarity=C
 type=Creature

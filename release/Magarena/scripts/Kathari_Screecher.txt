@@ -1,5 +1,5 @@
 name=Kathari Screecher
-image=http://magiccards.info/scans/en/ala/47.jpg
+image=https://magiccards.info/scans/en/ala/47.jpg
 value=2.845
 rarity=C
 type=Creature

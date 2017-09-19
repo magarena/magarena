@@ -1,5 +1,5 @@
 name=Thelonite Monk
-image=http://magiccards.info/scans/en/fe/93.jpg
+image=https://magiccards.info/scans/en/fe/93.jpg
 value=2.893
 rarity=R
 type=Creature

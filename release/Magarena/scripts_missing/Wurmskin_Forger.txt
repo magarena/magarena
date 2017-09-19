@@ -1,5 +1,5 @@
 name=Wurmskin Forger
-image=http://magiccards.info/scans/en/mi/140.jpg
+image=https://magiccards.info/scans/en/mi/140.jpg
 value=1.264
 rarity=C
 type=Creature

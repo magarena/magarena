@@ -1,5 +1,5 @@
 name=Lake of the Dead
-image=http://magiccards.info/scans/en/ai/185.jpg
+image=https://magiccards.info/scans/en/ai/185.jpg
 value=4.000
 rarity=R
 type=Land

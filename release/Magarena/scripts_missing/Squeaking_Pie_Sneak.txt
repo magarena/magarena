@@ -1,5 +1,5 @@
 name=Squeaking Pie Sneak
-image=http://magiccards.info/scans/en/lw/142.jpg
+image=https://magiccards.info/scans/en/lw/142.jpg
 value=3.241
 rarity=U
 type=Creature

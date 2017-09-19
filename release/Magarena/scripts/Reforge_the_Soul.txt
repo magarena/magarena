@@ -1,5 +1,5 @@
 name=Reforge the Soul
-image=http://magiccards.info/scans/en/c16/132.jpg
+image=https://magiccards.info/scans/en/c16/132.jpg
 image_updated=2017-08-17
 value=4.100
 rarity=R

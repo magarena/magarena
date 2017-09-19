@@ -1,5 +1,5 @@
 name=Venomous Fangs
-image=http://magiccards.info/scans/en/us/280.jpg
+image=https://magiccards.info/scans/en/us/280.jpg
 value=3.066
 rarity=C
 type=Enchantment

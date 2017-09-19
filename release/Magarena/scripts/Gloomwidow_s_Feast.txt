@@ -1,5 +1,5 @@
 name=Gloomwidow's Feast
-image=http://magiccards.info/scans/en/shm/118.jpg
+image=https://magiccards.info/scans/en/shm/118.jpg
 value=2.846
 rarity=C
 type=Instant

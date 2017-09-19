@@ -1,5 +1,5 @@
 name=Diluvian Primordial
-image=http://magiccards.info/scans/en/gtc/33.jpg
+image=https://magiccards.info/scans/en/gtc/33.jpg
 value=3.069
 rarity=R
 type=Creature

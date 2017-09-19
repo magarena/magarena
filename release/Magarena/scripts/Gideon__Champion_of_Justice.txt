@@ -1,5 +1,5 @@
 name=Gideon, Champion of Justice
-image=http://magiccards.info/scans/en/gtc/13.jpg
+image=https://magiccards.info/scans/en/gtc/13.jpg
 value=3.525
 rarity=M
 type=Legendary,Planeswalker

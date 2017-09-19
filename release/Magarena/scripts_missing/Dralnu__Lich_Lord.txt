@@ -1,5 +1,5 @@
 name=Dralnu, Lich Lord
-image=http://magiccards.info/scans/en/ts/237.jpg
+image=https://magiccards.info/scans/en/ts/237.jpg
 value=3.942
 rarity=R
 type=Legendary,Creature

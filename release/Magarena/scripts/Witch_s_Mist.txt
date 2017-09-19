@@ -1,5 +1,5 @@
 name=Witch's Mist
-image=http://magiccards.info/scans/en/fut/92.jpg
+image=https://magiccards.info/scans/en/fut/92.jpg
 value=3.076
 rarity=U
 type=Enchantment

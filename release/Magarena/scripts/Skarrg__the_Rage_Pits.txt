@@ -1,5 +1,5 @@
 name=Skarrg, the Rage Pits
-image=http://magiccards.info/scans/en/pc2/127.jpg
+image=https://magiccards.info/scans/en/pc2/127.jpg
 image_updated=2016-09-12
 value=3.923
 rarity=U

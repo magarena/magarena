@@ -1,5 +1,5 @@
 name=Lab Rats
-image=http://magiccards.info/scans/en/sh/11.jpg
+image=https://magiccards.info/scans/en/sh/11.jpg
 value=3.130
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Fight or Flight
-image=http://magiccards.info/scans/en/in/16.jpg
+image=https://magiccards.info/scans/en/in/16.jpg
 value=3.365
 rarity=R
 type=Enchantment

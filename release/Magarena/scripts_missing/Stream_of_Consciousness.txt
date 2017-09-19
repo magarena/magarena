@@ -1,5 +1,5 @@
 name=Stream of Consciousness
-image=http://magiccards.info/scans/en/bok/53.jpg
+image=https://magiccards.info/scans/en/bok/53.jpg
 value=3.518
 rarity=U
 type=Instant

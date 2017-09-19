@@ -1,5 +1,5 @@
 name=Dauthi Trapper
-image=http://magiccards.info/scans/en/sh/6.jpg
+image=https://magiccards.info/scans/en/sh/6.jpg
 value=3.690
 rarity=U
 type=Creature

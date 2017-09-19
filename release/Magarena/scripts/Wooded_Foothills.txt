@@ -1,5 +1,5 @@
 name=Wooded Foothills
-image=http://magiccards.info/scans/en/ktk/249.jpg
+image=https://magiccards.info/scans/en/ktk/249.jpg
 value=4.200
 rarity=R
 type=Land

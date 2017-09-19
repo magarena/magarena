@@ -1,5 +1,5 @@
 name=Goblin Spymaster
-image=http://magiccards.info/scans/en/c16/19.jpg
+image=https://magiccards.info/scans/en/c16/19.jpg
 image_updated=2016-12-04
 value=2.500
 rarity=R

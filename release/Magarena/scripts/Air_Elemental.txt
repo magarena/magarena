@@ -1,5 +1,5 @@
 name=Air Elemental
-image=http://magiccards.info/scans/en/m10/42.jpg
+image=https://magiccards.info/scans/en/m10/42.jpg
 image_updated=2016-10-16
 value=3.342
 rarity=U

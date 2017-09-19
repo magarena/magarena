@@ -1,5 +1,5 @@
 name=Pelakka Wurm
-image=http://magiccards.info/scans/en/mm2/154.jpg
+image=https://magiccards.info/scans/en/mm2/154.jpg
 value=3.750
 rarity=U
 type=Creature

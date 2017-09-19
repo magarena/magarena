@@ -1,5 +1,5 @@
 name=Telepathic Spies
-image=http://magiccards.info/scans/en/7e/101.jpg
+image=https://magiccards.info/scans/en/7e/101.jpg
 value=2.773
 rarity=C
 type=Creature

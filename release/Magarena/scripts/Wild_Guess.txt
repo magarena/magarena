@@ -1,5 +1,5 @@
 name=Wild Guess
-image=http://magiccards.info/scans/en/m13/157.jpg
+image=https://magiccards.info/scans/en/m13/157.jpg
 value=3.094
 rarity=C
 type=Sorcery

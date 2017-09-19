@@ -1,5 +1,5 @@
 name=Archetype of Finality
-image=http://magiccards.info/scans/en/bng/58.jpg
+image=https://magiccards.info/scans/en/bng/58.jpg
 value=3.466
 rarity=U
 type=Enchantment,Creature

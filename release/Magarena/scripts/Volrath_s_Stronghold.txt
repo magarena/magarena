@@ -1,5 +1,5 @@
 name=Volrath's Stronghold
-image=http://magiccards.info/scans/en/sh/137.jpg
+image=https://magiccards.info/scans/en/sh/137.jpg
 value=4.453
 rarity=R
 type=Legendary,Land

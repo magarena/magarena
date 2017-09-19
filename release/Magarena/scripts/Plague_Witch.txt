@@ -1,5 +1,5 @@
 name=Plague Witch
-image=http://magiccards.info/scans/en/ema/103.jpg
+image=https://magiccards.info/scans/en/ema/103.jpg
 value=2.636
 rarity=C
 type=Creature

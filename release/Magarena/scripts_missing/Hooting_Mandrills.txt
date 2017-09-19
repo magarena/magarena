@@ -1,5 +1,5 @@
 name=Hooting Mandrills
-image=http://magiccards.info/scans/en/ktk/137.jpg
+image=https://magiccards.info/scans/en/ktk/137.jpg
 value=4.000
 rarity=C
 type=Creature

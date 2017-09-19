@@ -1,5 +1,5 @@
 name=Covenant of Blood
-image=http://magiccards.info/scans/en/m15/91.jpg
+image=https://magiccards.info/scans/en/m15/91.jpg
 value=2.786
 rarity=C
 type=Sorcery

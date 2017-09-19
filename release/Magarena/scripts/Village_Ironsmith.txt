@@ -1,5 +1,5 @@
 name=Village Ironsmith
-image=http://magiccards.info/scans/en/isd/168a.jpg
+image=https://magiccards.info/scans/en/isd/168a.jpg
 value=3.000
 rarity=C
 type=Creature

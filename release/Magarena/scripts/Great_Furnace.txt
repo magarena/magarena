@@ -1,5 +1,5 @@
 name=Great Furnace
-image=http://magiccards.info/scans/en/c14/299.jpg
+image=https://magiccards.info/scans/en/c14/299.jpg
 value=4.470
 rarity=C
 type=Artifact,Land

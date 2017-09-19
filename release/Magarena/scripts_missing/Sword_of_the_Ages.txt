@@ -1,5 +1,5 @@
 name=Sword of the Ages
-image=http://magiccards.info/scans/en/lg/241.jpg
+image=https://magiccards.info/scans/en/lg/241.jpg
 value=3.958
 rarity=R
 type=Artifact

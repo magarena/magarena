@@ -1,5 +1,5 @@
 name=Waste Away
-image=http://magiccards.info/scans/en/tr/88.jpg
+image=https://magiccards.info/scans/en/tr/88.jpg
 value=0.973
 rarity=C
 type=Instant

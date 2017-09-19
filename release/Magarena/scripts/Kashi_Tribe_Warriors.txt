@@ -1,5 +1,5 @@
 name=Kashi-Tribe Warriors
-image=http://magiccards.info/scans/en/chk/221.jpg
+image=https://magiccards.info/scans/en/chk/221.jpg
 value=2.224
 rarity=C
 type=Creature

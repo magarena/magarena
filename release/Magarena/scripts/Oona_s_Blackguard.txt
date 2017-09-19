@@ -1,5 +1,5 @@
 name=Oona's Blackguard
-image=http://magiccards.info/scans/en/mt/72.jpg
+image=https://magiccards.info/scans/en/mt/72.jpg
 value=3.769
 rarity=U
 type=Creature

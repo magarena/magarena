@@ -1,6 +1,6 @@
 name=10/10 colorless Eldrazi creature token
 token=Eldrazi
-image=http://magiccards.info/extras/token/battle-for-zendikar/eldrazi.jpg
+image=https://magiccards.info/extras/token/battle-for-zendikar/eldrazi.jpg
 value=5
 type=Creature
 subtype=Eldrazi

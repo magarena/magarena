@@ -1,5 +1,5 @@
 name=Hearthcage Giant
-image=http://magiccards.info/scans/en/lw/174.jpg
+image=https://magiccards.info/scans/en/lw/174.jpg
 value=3.081
 rarity=U
 type=Creature

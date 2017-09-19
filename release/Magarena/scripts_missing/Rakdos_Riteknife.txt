@@ -1,5 +1,5 @@
 name=Rakdos Riteknife
-image=http://magiccards.info/scans/en/di/164.jpg
+image=https://magiccards.info/scans/en/di/164.jpg
 value=3.467
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Krond the Dawn-Clad
-image=http://magiccards.info/scans/en/pc2/99.jpg
+image=https://magiccards.info/scans/en/pc2/99.jpg
 value=3.949
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Daggerdrome Imp
-image=http://magiccards.info/scans/en/rtr/60.jpg
+image=https://magiccards.info/scans/en/rtr/60.jpg
 value=3.105
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Braidwood Sextant
-image=http://magiccards.info/scans/en/ud/127.jpg
+image=https://magiccards.info/scans/en/ud/127.jpg
 value=2.667
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Steadfastness
-image=http://magiccards.info/scans/en/st/27.jpg
+image=https://magiccards.info/scans/en/st/27.jpg
 value=1.250
 rarity=C
 type=Sorcery

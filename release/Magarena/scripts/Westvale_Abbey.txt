@@ -1,5 +1,5 @@
 name=Westvale Abbey
-image=http://magiccards.info/scans/en/soi/281a.jpg
+image=https://magiccards.info/scans/en/soi/281a.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,6 +1,6 @@
 name=5/5 white Horse creature token
 token=Horse
-image=http://magiccards.info/extras/token/hour-of-devastation/horse.jpg
+image=https://magiccards.info/extras/token/hour-of-devastation/horse.jpg
 value=5
 pt=5/5
 color=w

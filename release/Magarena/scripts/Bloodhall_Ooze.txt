@@ -1,5 +1,5 @@
 name=Bloodhall Ooze
-image=http://magiccards.info/scans/en/cfx/59.jpg
+image=https://magiccards.info/scans/en/cfx/59.jpg
 value=3.739
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Galvanic Bombardment
-image=http://magiccards.info/scans/en/emn/129.jpg
+image=https://magiccards.info/scans/en/emn/129.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=C

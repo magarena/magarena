@@ -1,5 +1,5 @@
 name=Abbey Gargoyles
-image=http://magiccards.info/scans/en/5e/277.jpg
+image=https://magiccards.info/scans/en/5e/277.jpg
 value=2.760
 rarity=U
 type=Creature

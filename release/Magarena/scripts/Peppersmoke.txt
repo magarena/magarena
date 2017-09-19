@@ -1,5 +1,5 @@
 name=Peppersmoke
-image=http://magiccards.info/scans/en/mma/92.jpg
+image=https://magiccards.info/scans/en/mma/92.jpg
 value=3.200
 rarity=C
 type=Tribal,Instant

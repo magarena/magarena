@@ -1,5 +1,5 @@
 name=Elkin Lair
-image=http://magiccards.info/scans/en/vi/78.jpg
+image=https://magiccards.info/scans/en/vi/78.jpg
 value=3.179
 rarity=R
 type=World,Enchantment

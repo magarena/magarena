@@ -1,5 +1,5 @@
 name=Cabal Trainee
-image=http://magiccards.info/scans/en/ju/63.jpg
+image=https://magiccards.info/scans/en/ju/63.jpg
 value=3.417
 rarity=C
 type=Creature

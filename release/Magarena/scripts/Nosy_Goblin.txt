@@ -1,5 +1,5 @@
 name=Nosy Goblin
-image=http://magiccards.info/scans/en/on/220.jpg
+image=https://magiccards.info/scans/en/on/220.jpg
 value=2.103
 rarity=C
 type=Creature

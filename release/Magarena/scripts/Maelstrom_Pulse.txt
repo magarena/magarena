@@ -1,5 +1,5 @@
 name=Maelstrom Pulse
-image=http://magiccards.info/scans/en/mma/180.jpg
+image=https://magiccards.info/scans/en/mma/180.jpg
 value=4.556
 removal=5
 rarity=R

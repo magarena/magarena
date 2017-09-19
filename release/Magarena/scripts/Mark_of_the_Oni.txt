@@ -1,5 +1,5 @@
 name=Mark of the Oni
-image=http://magiccards.info/scans/en/bok/73.jpg
+image=https://magiccards.info/scans/en/bok/73.jpg
 value=3.683
 rarity=U
 type=Enchantment

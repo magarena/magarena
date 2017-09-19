@@ -1,5 +1,5 @@
 name=Phyrexian Hydra
-image=http://magiccards.info/scans/en/mbs/85.jpg
+image=https://magiccards.info/scans/en/mbs/85.jpg
 value=3.615
 rarity=R
 type=Creature

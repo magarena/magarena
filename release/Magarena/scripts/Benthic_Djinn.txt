@@ -1,5 +1,5 @@
 name=Benthic Djinn
-image=http://magiccards.info/scans/en/mr/317.jpg
+image=https://magiccards.info/scans/en/mr/317.jpg
 value=2.851
 rarity=R
 type=Creature

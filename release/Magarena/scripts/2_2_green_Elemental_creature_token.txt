@@ -1,6 +1,6 @@
 name=2/2 green Elemental creature token
 token=Elemental
-image=http://magiccards.info/extras/token/magic-origins/elemental.jpg
+image=https://magiccards.info/extras/token/magic-origins/elemental.jpg
 image_updated=2015-11-12
 value=2
 type=Creature

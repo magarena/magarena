@@ -1,5 +1,5 @@
 name=Urborg Phantom
-image=http://magiccards.info/scans/en/in/132.jpg
+image=https://magiccards.info/scans/en/in/132.jpg
 value=2.773
 rarity=C
 type=Creature

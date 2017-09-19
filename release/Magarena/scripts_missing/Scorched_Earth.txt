@@ -1,5 +1,5 @@
 name=Scorched Earth
-image=http://magiccards.info/scans/en/tp/200.jpg
+image=https://magiccards.info/scans/en/tp/200.jpg
 value=3.222
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Scrounge
-image=http://magiccards.info/scans/en/ds/53.jpg
+image=https://magiccards.info/scans/en/ds/53.jpg
 value=2.636
 rarity=U
 type=Sorcery

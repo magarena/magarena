@@ -1,5 +1,5 @@
 name=Magus of the Candelabra
-image=http://magiccards.info/scans/en/ts/203.jpg
+image=https://magiccards.info/scans/en/ts/203.jpg
 value=4.133
 rarity=R
 type=Creature

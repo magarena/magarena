@@ -1,5 +1,5 @@
 name=Cleansing
-image=http://magiccards.info/scans/en/dk/77.jpg
+image=https://magiccards.info/scans/en/dk/77.jpg
 value=3.837
 rarity=R
 type=Sorcery

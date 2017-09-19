@@ -1,5 +1,5 @@
 name=Cromat
-image=http://magiccards.info/scans/en/ap/94.jpg
+image=https://magiccards.info/scans/en/ap/94.jpg
 value=4.118
 rarity=R
 type=Legendary,Creature

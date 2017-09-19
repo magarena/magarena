@@ -1,5 +1,5 @@
 name=Oath of Mages
-image=http://magiccards.info/scans/en/ex/90.jpg
+image=https://magiccards.info/scans/en/ex/90.jpg
 value=2.625
 rarity=R
 type=Enchantment

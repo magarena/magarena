@@ -1,6 +1,6 @@
 name=1/1 colorless Thopter artifact creature token with flying
 token=Thopter
-image=http://magiccards.info/extras/token/magic-origins/thopter-1.jpg
+image=https://magiccards.info/extras/token/magic-origins/thopter-1.jpg
 image_updated=2015-11-12
 value=1
 pt=1/1

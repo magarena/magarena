@@ -1,5 +1,5 @@
 name=Saltfield Recluse
-image=http://magiccards.info/scans/en/mma/27.jpg
+image=https://magiccards.info/scans/en/mma/27.jpg
 value=2.286
 rarity=C
 type=Creature

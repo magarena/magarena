@@ -1,5 +1,5 @@
 name=Arlinn, Embraced by the Moon
-image=http://magiccards.info/scans/en/soi/243b.jpg
+image=https://magiccards.info/scans/en/soi/243b.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Flowstone Salamander
-image=http://magiccards.info/scans/en/tp/175.jpg
+image=https://magiccards.info/scans/en/tp/175.jpg
 value=3.268
 rarity=U
 type=Creature

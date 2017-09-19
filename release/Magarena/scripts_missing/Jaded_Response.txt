@@ -1,5 +1,5 @@
 name=Jaded Response
-image=http://magiccards.info/scans/en/ap/26.jpg
+image=https://magiccards.info/scans/en/ap/26.jpg
 value=2.766
 rarity=C
 type=Instant

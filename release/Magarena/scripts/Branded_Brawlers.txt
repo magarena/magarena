@@ -1,5 +1,5 @@
 name=Branded Brawlers
-image=http://magiccards.info/scans/en/pr/84.jpg
+image=https://magiccards.info/scans/en/pr/84.jpg
 value=1.605
 rarity=C
 type=Creature

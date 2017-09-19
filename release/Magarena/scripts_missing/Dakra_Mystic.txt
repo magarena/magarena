@@ -1,5 +1,5 @@
 name=Dakra Mystic
-image=http://magiccards.info/scans/en/jou/35.jpg
+image=https://magiccards.info/scans/en/jou/35.jpg
 value=3.802
 rarity=U
 type=Creature

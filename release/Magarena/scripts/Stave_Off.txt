@@ -1,5 +1,5 @@
 name=Stave Off
-image=http://magiccards.info/scans/en/cns/83.jpg
+image=https://magiccards.info/scans/en/cns/83.jpg
 image_updated=2016-01-09
 value=2.000
 rarity=C

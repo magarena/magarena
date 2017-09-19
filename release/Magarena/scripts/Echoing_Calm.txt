@@ -1,5 +1,5 @@
 name=Echoing Calm
-image=http://magiccards.info/scans/en/ds/2.jpg
+image=https://magiccards.info/scans/en/ds/2.jpg
 value=3.180
 removal=3
 rarity=C

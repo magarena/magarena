@@ -1,5 +1,5 @@
 name=Feast of Blood
-image=http://magiccards.info/scans/en/zen/88.jpg
+image=https://magiccards.info/scans/en/zen/88.jpg
 value=3.862
 rarity=U
 type=Sorcery

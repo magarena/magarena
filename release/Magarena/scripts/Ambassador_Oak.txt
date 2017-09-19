@@ -1,5 +1,5 @@
 name=Ambassador Oak
-image=http://magiccards.info/scans/en/mt/113.jpg
+image=https://magiccards.info/scans/en/mt/113.jpg
 value=3.178
 rarity=C
 type=Creature

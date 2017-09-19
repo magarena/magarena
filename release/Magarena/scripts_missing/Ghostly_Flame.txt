@@ -1,5 +1,5 @@
 name=Ghostly Flame
-image=http://magiccards.info/scans/en/ia/370.jpg
+image=https://magiccards.info/scans/en/ia/370.jpg
 value=3.188
 rarity=R
 type=Enchantment

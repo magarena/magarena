@@ -1,5 +1,5 @@
 name=Gleam of Authority
-image=http://magiccards.info/scans/en/dtk/19.jpg
+image=https://magiccards.info/scans/en/dtk/19.jpg
 value=2.500
 rarity=R
 type=Enchantment

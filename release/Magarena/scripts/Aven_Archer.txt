@@ -1,5 +1,5 @@
 name=Aven Archer
-image=http://magiccards.info/scans/en/od/6.jpg
+image=https://magiccards.info/scans/en/od/6.jpg
 value=1.742
 rarity=U
 type=Creature

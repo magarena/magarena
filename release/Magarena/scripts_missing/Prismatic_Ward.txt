@@ -1,5 +1,5 @@
 name=Prismatic Ward
-image=http://magiccards.info/scans/en/5e/329.jpg
+image=https://magiccards.info/scans/en/5e/329.jpg
 value=3.022
 rarity=C
 type=Enchantment

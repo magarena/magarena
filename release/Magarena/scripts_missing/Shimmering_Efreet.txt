@@ -1,5 +1,5 @@
 name=Shimmering Efreet
-image=http://magiccards.info/scans/en/vi/42.jpg
+image=https://magiccards.info/scans/en/vi/42.jpg
 value=4.065
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Uproot
-image=http://magiccards.info/scans/en/bok/149.jpg
+image=https://magiccards.info/scans/en/bok/149.jpg
 value=2.222
 rarity=C
 type=Sorcery

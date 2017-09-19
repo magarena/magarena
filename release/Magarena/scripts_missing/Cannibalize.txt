@@ -1,5 +1,5 @@
 name=Cannibalize
-image=http://magiccards.info/scans/en/sh/3.jpg
+image=https://magiccards.info/scans/en/sh/3.jpg
 value=2.500
 rarity=C
 type=Sorcery

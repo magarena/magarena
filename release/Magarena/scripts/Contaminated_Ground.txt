@@ -1,5 +1,5 @@
 name=Contaminated Ground
-image=http://magiccards.info/scans/en/gtc/59.jpg
+image=https://magiccards.info/scans/en/gtc/59.jpg
 value=3.156
 rarity=C
 type=Enchantment

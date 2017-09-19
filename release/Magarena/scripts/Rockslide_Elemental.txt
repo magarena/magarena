@@ -1,5 +1,5 @@
 name=Rockslide Elemental
-image=http://magiccards.info/scans/en/ala/112.jpg
+image=https://magiccards.info/scans/en/ala/112.jpg
 image_updated=2017-01-06
 value=2.973
 rarity=U

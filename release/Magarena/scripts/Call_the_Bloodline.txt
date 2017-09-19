@@ -1,5 +1,5 @@
 name=Call the Bloodline
-image=http://magiccards.info/scans/en/soi/103.jpg
+image=https://magiccards.info/scans/en/soi/103.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Frostwind Invoker
-image=http://magiccards.info/scans/en/roe/68.jpg
+image=https://magiccards.info/scans/en/roe/68.jpg
 value=2.289
 rarity=C
 type=Creature

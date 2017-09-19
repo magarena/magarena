@@ -1,6 +1,6 @@
 name=1/1 red Elemental creature token
 token=Elemental
-image=http://magiccards.info/extras/token/rise-of-the-eldrazi/elemental.jpg
+image=https://magiccards.info/extras/token/rise-of-the-eldrazi/elemental.jpg
 value=1
 type=Creature
 subtype=Elemental

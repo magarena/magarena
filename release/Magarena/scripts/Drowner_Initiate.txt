@@ -1,5 +1,5 @@
 name=Drowner Initiate
-image=http://magiccards.info/scans/en/shm/36.jpg
+image=https://magiccards.info/scans/en/shm/36.jpg
 value=3.422
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dread Specter
-image=http://magiccards.info/scans/en/mr/17.jpg
+image=https://magiccards.info/scans/en/mr/17.jpg
 value=2.595
 rarity=U
 type=Creature

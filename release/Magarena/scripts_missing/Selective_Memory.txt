@@ -1,5 +1,5 @@
 name=Selective Memory
-image=http://magiccards.info/scans/en/wwk/37.jpg
+image=https://magiccards.info/scans/en/wwk/37.jpg
 value=2.679
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Cryptic Gateway
-image=http://magiccards.info/scans/en/on/306.jpg
+image=https://magiccards.info/scans/en/on/306.jpg
 value=4.337
 rarity=R
 type=Artifact

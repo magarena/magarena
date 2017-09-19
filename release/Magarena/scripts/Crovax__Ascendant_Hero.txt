@@ -1,5 +1,5 @@
 name=Crovax, Ascendant Hero
-image=http://magiccards.info/scans/en/pc/3.jpg
+image=https://magiccards.info/scans/en/pc/3.jpg
 value=4.026
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Reverent Silence
-image=http://magiccards.info/scans/en/ne/111.jpg
+image=https://magiccards.info/scans/en/ne/111.jpg
 value=4.046
 rarity=C
 type=Sorcery

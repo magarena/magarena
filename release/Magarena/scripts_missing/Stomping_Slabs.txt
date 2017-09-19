@@ -1,5 +1,5 @@
 name=Stomping Slabs
-image=http://magiccards.info/scans/en/mt/107.jpg
+image=https://magiccards.info/scans/en/mt/107.jpg
 value=2.739
 rarity=U
 type=Sorcery

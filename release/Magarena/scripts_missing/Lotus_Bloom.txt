@@ -1,5 +1,5 @@
 name=Lotus Bloom
-image=http://magiccards.info/scans/en/mma/208.jpg
+image=https://magiccards.info/scans/en/mma/208.jpg
 value=4.096
 rarity=R
 type=Artifact

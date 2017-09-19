@@ -1,5 +1,5 @@
 name=Body of Jukai
-image=http://magiccards.info/scans/en/bok/121.jpg
+image=https://magiccards.info/scans/en/bok/121.jpg
 value=2.615
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Psychic Miasma
-image=http://magiccards.info/scans/en/som/76.jpg
+image=https://magiccards.info/scans/en/som/76.jpg
 value=2.273
 rarity=C
 type=Sorcery

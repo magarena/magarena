@@ -1,5 +1,5 @@
 name=Arashi, the Sky Asunder
-image=http://magiccards.info/scans/en/sok/121.jpg
+image=https://magiccards.info/scans/en/sok/121.jpg
 value=3.931
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Suffocating Blast
-image=http://magiccards.info/scans/en/ap/124.jpg
+image=https://magiccards.info/scans/en/ap/124.jpg
 value=4.231
 rarity=R
 type=Instant

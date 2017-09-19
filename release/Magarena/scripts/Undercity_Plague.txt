@@ -1,5 +1,5 @@
 name=Undercity Plague
-image=http://magiccards.info/scans/en/gtc/83.jpg
+image=https://magiccards.info/scans/en/gtc/83.jpg
 value=3.127
 rarity=R
 type=Sorcery

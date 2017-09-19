@@ -1,5 +1,5 @@
 name=Go for the Throat
-image=http://magiccards.info/scans/en/mbs/43.jpg
+image=https://magiccards.info/scans/en/mbs/43.jpg
 value=4.577
 removal=4
 rarity=U

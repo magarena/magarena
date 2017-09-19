@@ -1,5 +1,5 @@
 name=Cliffrunner Behemoth
-image=http://magiccards.info/scans/en/cfx/79.jpg
+image=https://magiccards.info/scans/en/cfx/79.jpg
 value=3.414
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Dead Reveler
-image=http://magiccards.info/scans/en/rtr/62.jpg
+image=https://magiccards.info/scans/en/rtr/62.jpg
 value=2.755
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kami of the Painted Road
-image=http://magiccards.info/scans/en/chk/23.jpg
+image=https://magiccards.info/scans/en/chk/23.jpg
 value=1.630
 rarity=C
 type=Creature

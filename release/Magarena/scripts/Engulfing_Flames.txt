@@ -1,5 +1,5 @@
 name=Engulfing Flames
-image=http://magiccards.info/scans/en/od/191.jpg
+image=https://magiccards.info/scans/en/od/191.jpg
 value=3.281
 removal=2
 rarity=U

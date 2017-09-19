@@ -1,5 +1,5 @@
 name=Niv-Mizzet, the Firemind
-image=http://magiccards.info/scans/en/mm2/182.jpg
+image=https://magiccards.info/scans/en/mm2/182.jpg
 image_updated=2015-11-05
 value=3.960
 rarity=R

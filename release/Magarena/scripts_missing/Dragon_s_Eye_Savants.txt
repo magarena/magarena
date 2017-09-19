@@ -1,5 +1,5 @@
 name=Dragon's Eye Savants
-image=http://magiccards.info/scans/en/ktk/38.jpg
+image=https://magiccards.info/scans/en/ktk/38.jpg
 value=3.000
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ursine Fylgja
-image=http://magiccards.info/scans/en/cs/22.jpg
+image=https://magiccards.info/scans/en/cs/22.jpg
 value=3.110
 rarity=U
 type=Creature

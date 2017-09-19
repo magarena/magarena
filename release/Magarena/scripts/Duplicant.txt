@@ -1,5 +1,5 @@
 name=Duplicant
-image=http://magiccards.info/scans/en/ema/220.jpg
+image=https://magiccards.info/scans/en/ema/220.jpg
 value=4.545
 rarity=R
 type=Artifact,Creature

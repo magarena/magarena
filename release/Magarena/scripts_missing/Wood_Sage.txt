@@ -1,5 +1,5 @@
 name=Wood Sage
-image=http://magiccards.info/scans/en/cns/195.jpg
+image=https://magiccards.info/scans/en/cns/195.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Determined
-image=http://magiccards.info/scans/en/di/149b.jpg
+image=https://magiccards.info/scans/en/di/149b.jpg
 value=3.971
 rarity=R
 type=Instant

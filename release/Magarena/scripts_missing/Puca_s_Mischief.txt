@@ -1,5 +1,5 @@
 name=Puca's Mischief
-image=http://magiccards.info/scans/en/shm/47.jpg
+image=https://magiccards.info/scans/en/shm/47.jpg
 value=3.856
 rarity=R
 type=Enchantment

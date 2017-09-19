@@ -1,5 +1,5 @@
 name=Bitterblade Warrior
-image=http://magiccards.info/scans/en/akh/157.jpg
+image=https://magiccards.info/scans/en/akh/157.jpg
 value=2.500
 rarity=C
 type=Creature

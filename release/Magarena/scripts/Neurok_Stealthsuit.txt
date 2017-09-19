@@ -1,5 +1,5 @@
 name=Neurok Stealthsuit
-image=http://magiccards.info/scans/en/5dn/140.jpg
+image=https://magiccards.info/scans/en/5dn/140.jpg
 value=3.873
 rarity=C
 type=Artifact

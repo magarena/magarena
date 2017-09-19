@@ -1,5 +1,5 @@
 name=Scarland Thrinax
-image=http://magiccards.info/scans/en/cfx/123.jpg
+image=https://magiccards.info/scans/en/cfx/123.jpg
 value=3.318
 rarity=U
 type=Creature

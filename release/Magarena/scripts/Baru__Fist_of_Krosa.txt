@@ -1,5 +1,5 @@
 name=Baru, Fist of Krosa
-image=http://magiccards.info/scans/en/fut/142.jpg
+image=https://magiccards.info/scans/en/fut/142.jpg
 value=4.035
 rarity=R
 type=Legendary,Creature

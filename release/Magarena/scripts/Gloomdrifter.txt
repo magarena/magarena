@@ -1,5 +1,5 @@
 name=Gloomdrifter
-image=http://magiccards.info/scans/en/tr/61.jpg
+image=https://magiccards.info/scans/en/tr/61.jpg
 value=3.413
 rarity=U
 type=Creature

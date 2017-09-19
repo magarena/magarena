@@ -1,5 +1,5 @@
 name=Fight to the Death
-image=http://magiccards.info/scans/en/arb/97.jpg
+image=https://magiccards.info/scans/en/arb/97.jpg
 value=3.435
 rarity=R
 type=Instant

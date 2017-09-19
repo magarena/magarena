@@ -1,5 +1,5 @@
 name=War Chariot
-image=http://magiccards.info/scans/en/ia/323.jpg
+image=https://magiccards.info/scans/en/ia/323.jpg
 value=2.036
 rarity=U
 type=Artifact

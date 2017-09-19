@@ -1,5 +1,5 @@
 name=Aid from the Cowl
-image=http://magiccards.info/scans/en/aer/105.jpg
+image=https://magiccards.info/scans/en/aer/105.jpg
 value=2.500
 rarity=R
 type=Enchantment

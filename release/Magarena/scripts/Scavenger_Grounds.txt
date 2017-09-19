@@ -1,5 +1,5 @@
 name=Scavenger Grounds
-image=http://magiccards.info/scans/en/hou/182.jpg
+image=https://magiccards.info/scans/en/hou/182.jpg
 value=2.500
 rarity=R
 type=Land

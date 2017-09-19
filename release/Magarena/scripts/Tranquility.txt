@@ -1,5 +1,5 @@
 name=Tranquility
-image=http://magiccards.info/scans/en/7e/276.jpg
+image=https://magiccards.info/scans/en/7e/276.jpg
 value=3.417
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Everglove Courier
-image=http://magiccards.info/scans/en/on/262.jpg
+image=https://magiccards.info/scans/en/on/262.jpg
 value=2.788
 rarity=U
 type=Creature

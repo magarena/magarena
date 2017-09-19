@@ -1,5 +1,5 @@
 name=Ember Swallower
-image=http://magiccards.info/scans/en/ths/120.jpg
+image=https://magiccards.info/scans/en/ths/120.jpg
 value=3.448
 rarity=R
 type=Creature

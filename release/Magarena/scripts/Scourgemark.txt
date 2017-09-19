@@ -1,5 +1,5 @@
 name=Scourgemark
-image=http://magiccards.info/scans/en/ths/105.jpg
+image=https://magiccards.info/scans/en/ths/105.jpg
 value=2.565
 rarity=C
 type=Enchantment

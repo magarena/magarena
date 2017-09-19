@@ -1,5 +1,5 @@
 name=Akki Coalflinger
-image=http://magiccards.info/scans/en/chk/152.jpg
+image=https://magiccards.info/scans/en/chk/152.jpg
 image_updated=2016-11-20
 value=3.122
 rarity=U

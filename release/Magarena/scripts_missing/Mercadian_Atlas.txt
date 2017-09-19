@@ -1,5 +1,5 @@
 name=Mercadian Atlas
-image=http://magiccards.info/scans/en/mm/305.jpg
+image=https://magiccards.info/scans/en/mm/305.jpg
 value=4.065
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Vampiric Spirit
-image=http://magiccards.info/scans/en/8e/170.jpg
+image=https://magiccards.info/scans/en/8e/170.jpg
 value=2.729
 rarity=R
 type=Creature

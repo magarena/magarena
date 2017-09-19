@@ -1,6 +1,6 @@
 name=0/1 black Thrull creature token
 token=Thrull
-image=http://magiccards.info/extras/token/duel-decks-divine-vs-demonic/thrull.jpg
+image=https://magiccards.info/extras/token/duel-decks-divine-vs-demonic/thrull.jpg
 value=1
 type=Creature
 subtype=Thrull

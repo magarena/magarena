@@ -1,5 +1,5 @@
 name=Seed the Land
-image=http://magiccards.info/scans/en/sok/146.jpg
+image=https://magiccards.info/scans/en/sok/146.jpg
 value=2.541
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Cadaverous Knight
-image=http://magiccards.info/scans/en/mr/8.jpg
+image=https://magiccards.info/scans/en/mr/8.jpg
 image_updated=2016-12-13
 value=3.803
 rarity=C

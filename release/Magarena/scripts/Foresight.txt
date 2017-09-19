@@ -1,5 +1,5 @@
 name=Foresight
-image=http://magiccards.info/scans/en/ai/43.jpg
+image=https://magiccards.info/scans/en/ai/43.jpg
 value=3.507
 rarity=C
 type=Sorcery

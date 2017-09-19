@@ -1,5 +1,5 @@
 name=Folk of An-Havva
-image=http://magiccards.info/scans/en/hl/58.jpg
+image=https://magiccards.info/scans/en/hl/58.jpg
 value=3.198
 rarity=C
 type=Creature

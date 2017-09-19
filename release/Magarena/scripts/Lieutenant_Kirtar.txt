@@ -1,5 +1,5 @@
 name=Lieutenant Kirtar
-image=http://magiccards.info/scans/en/od/29.jpg
+image=https://magiccards.info/scans/en/od/29.jpg
 value=3.952
 rarity=R
 type=Legendary,Creature

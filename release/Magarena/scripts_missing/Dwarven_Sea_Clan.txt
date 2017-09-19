@@ -1,5 +1,5 @@
 name=Dwarven Sea Clan
-image=http://magiccards.info/scans/en/hl/90.jpg
+image=https://magiccards.info/scans/en/hl/90.jpg
 value=1.343
 rarity=R
 type=Creature

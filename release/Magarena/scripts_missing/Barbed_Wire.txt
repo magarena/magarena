@@ -1,5 +1,5 @@
 name=Barbed Wire
-image=http://magiccards.info/scans/en/mm/287.jpg
+image=https://magiccards.info/scans/en/mm/287.jpg
 value=2.472
 rarity=U
 type=Artifact

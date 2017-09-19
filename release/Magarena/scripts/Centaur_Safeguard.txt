@@ -1,5 +1,5 @@
 name=Centaur Safeguard
-image=http://magiccards.info/scans/en/rav/244.jpg
+image=https://magiccards.info/scans/en/rav/244.jpg
 value=2.700
 rarity=C
 type=Creature

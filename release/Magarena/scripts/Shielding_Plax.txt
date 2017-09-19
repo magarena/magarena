@@ -1,5 +1,5 @@
 name=Shielding Plax
-image=http://magiccards.info/scans/en/di/147.jpg
+image=https://magiccards.info/scans/en/di/147.jpg
 value=4.168
 rarity=C
 type=Enchantment

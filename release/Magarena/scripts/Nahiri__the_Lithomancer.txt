@@ -1,5 +1,5 @@
 name=Nahiri, the Lithomancer
-image=http://magiccards.info/scans/en/c14/10.jpg
+image=https://magiccards.info/scans/en/c14/10.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

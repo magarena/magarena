@@ -1,5 +1,5 @@
 name=Mosquito Guard
-image=http://magiccards.info/scans/en/mt/18.jpg
+image=https://magiccards.info/scans/en/mt/18.jpg
 image_updated=2016-12-23
 value=3.103
 rarity=C

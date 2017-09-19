@@ -1,5 +1,5 @@
 name=Immerwolf
-image=http://magiccards.info/scans/en/dka/141.jpg
+image=https://magiccards.info/scans/en/dka/141.jpg
 value=3.896
 rarity=U
 type=Creature

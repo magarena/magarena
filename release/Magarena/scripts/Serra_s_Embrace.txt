@@ -1,5 +1,5 @@
 name=Serra's Embrace
-image=http://magiccards.info/scans/en/10e/40.jpg
+image=https://magiccards.info/scans/en/10e/40.jpg
 image_updated=2017-01-07
 value=3.620
 rarity=U

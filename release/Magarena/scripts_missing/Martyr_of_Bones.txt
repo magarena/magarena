@@ -1,5 +1,5 @@
 name=Martyr of Bones
-image=http://magiccards.info/scans/en/cs/65.jpg
+image=https://magiccards.info/scans/en/cs/65.jpg
 value=2.033
 rarity=C
 type=Creature

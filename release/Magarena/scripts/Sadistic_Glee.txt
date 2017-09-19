@@ -1,5 +1,5 @@
 name=Sadistic Glee
-image=http://magiccards.info/scans/en/tp/47.jpg
+image=https://magiccards.info/scans/en/tp/47.jpg
 image_updated=2017-01-07
 value=4.041
 rarity=C

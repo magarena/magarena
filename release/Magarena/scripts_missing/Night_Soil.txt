@@ -1,5 +1,5 @@
 name=Night Soil
-image=http://magiccards.info/scans/en/fe/82.jpg
+image=https://magiccards.info/scans/en/fe/82.jpg
 value=4.050
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Word of Undoing
-image=http://magiccards.info/scans/en/ia/108.jpg
+image=https://magiccards.info/scans/en/ia/108.jpg
 value=4.138
 rarity=C
 type=Instant

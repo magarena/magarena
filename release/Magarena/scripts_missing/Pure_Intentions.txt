@@ -1,5 +1,5 @@
 name=Pure Intentions
-image=http://magiccards.info/scans/en/sok/25.jpg
+image=https://magiccards.info/scans/en/sok/25.jpg
 value=2.697
 rarity=R
 type=Instant

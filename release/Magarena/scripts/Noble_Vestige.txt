@@ -1,5 +1,5 @@
 name=Noble Vestige
-image=http://magiccards.info/scans/en/zen/29.jpg
+image=https://magiccards.info/scans/en/zen/29.jpg
 value=1.627
 rarity=C
 type=Creature

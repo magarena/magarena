@@ -1,5 +1,5 @@
 name=Aberrant Researcher
-image=http://magiccards.info/scans/en/soi/49a.jpg
+image=https://magiccards.info/scans/en/soi/49a.jpg
 value=2.500
 rarity=U
 type=Creature

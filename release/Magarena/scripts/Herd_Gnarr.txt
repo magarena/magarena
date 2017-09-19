@@ -1,5 +1,5 @@
 name=Herd Gnarr
-image=http://magiccards.info/scans/en/ts/200.jpg
+image=https://magiccards.info/scans/en/ts/200.jpg
 value=2.714
 rarity=C
 type=Creature

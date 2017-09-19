@@ -1,5 +1,5 @@
 name=Leonin Relic-Warder
-image=http://magiccards.info/scans/en/mbs/10.jpg
+image=https://magiccards.info/scans/en/mbs/10.jpg
 value=4.309
 rarity=U
 type=Creature

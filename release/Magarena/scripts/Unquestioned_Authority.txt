@@ -1,5 +1,5 @@
 name=Unquestioned Authority
-image=http://magiccards.info/scans/en/cns/85.jpg
+image=https://magiccards.info/scans/en/cns/85.jpg
 value=4.125
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Warpath
-image=http://magiccards.info/scans/en/mm/226.jpg
+image=https://magiccards.info/scans/en/mm/226.jpg
 value=2.591
 rarity=U
 type=Instant

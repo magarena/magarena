@@ -1,5 +1,5 @@
 name=Honden of Seeing Winds
-image=http://magiccards.info/scans/en/ema/54.jpg
+image=https://magiccards.info/scans/en/ema/54.jpg
 value=4.018
 rarity=U
 type=Legendary,Enchantment

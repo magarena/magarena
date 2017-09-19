@@ -1,5 +1,5 @@
 name=Fall of the Gavel
-image=http://magiccards.info/scans/en/rtr/161.jpg
+image=https://magiccards.info/scans/en/rtr/161.jpg
 value=1.618
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Uyo, Silent Prophet
-image=http://magiccards.info/scans/en/chk/99.jpg
+image=https://magiccards.info/scans/en/chk/99.jpg
 value=3.733
 rarity=R
 type=Legendary,Creature

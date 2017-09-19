@@ -1,5 +1,5 @@
 name=Gaea's Skyfolk
-image=http://magiccards.info/scans/en/ap/101.jpg
+image=https://magiccards.info/scans/en/ap/101.jpg
 value=4.227
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Obelisk of Bant
-image=http://magiccards.info/scans/en/ala/212.jpg
+image=https://magiccards.info/scans/en/ala/212.jpg
 value=2.622
 rarity=C
 type=Artifact

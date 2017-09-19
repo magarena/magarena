@@ -1,5 +1,5 @@
 name=Avid Reclaimer
-image=http://magiccards.info/scans/en/hou/201.jpg
+image=https://magiccards.info/scans/en/hou/201.jpg
 value=2.500
 rarity=U
 type=Creature

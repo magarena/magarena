@@ -1,5 +1,5 @@
 name=Aven Warcraft
-image=http://magiccards.info/scans/en/ju/2.jpg
+image=https://magiccards.info/scans/en/ju/2.jpg
 value=2.620
 rarity=U
 type=Instant

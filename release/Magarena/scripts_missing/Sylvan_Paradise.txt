@@ -1,5 +1,5 @@
 name=Sylvan Paradise
-image=http://magiccards.info/scans/en/lg/122.jpg
+image=https://magiccards.info/scans/en/lg/122.jpg
 value=2.500
 rarity=U
 type=Instant

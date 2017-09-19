@@ -1,5 +1,5 @@
 name=Mirror of Fate
-image=http://magiccards.info/scans/en/m10/215.jpg
+image=https://magiccards.info/scans/en/m10/215.jpg
 value=2.822
 rarity=R
 type=Artifact

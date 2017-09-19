@@ -1,5 +1,5 @@
 name=Reckless Scholar
-image=http://magiccards.info/scans/en/soi/82.jpg
+image=https://magiccards.info/scans/en/soi/82.jpg
 image_updated=2010-09-10
 value=3.375
 rarity=U

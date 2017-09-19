@@ -1,5 +1,5 @@
 name=Sicken
-image=http://magiccards.info/scans/en/us/156.jpg
+image=https://magiccards.info/scans/en/us/156.jpg
 value=2.852
 rarity=C
 type=Enchantment

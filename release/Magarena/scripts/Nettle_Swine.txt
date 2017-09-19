@@ -1,5 +1,5 @@
 name=Nettle Swine
-image=http://magiccards.info/scans/en/avr/186.jpg
+image=https://magiccards.info/scans/en/avr/186.jpg
 value=2.065
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Roar of the Kha
-image=http://magiccards.info/scans/en/mi/18.jpg
+image=https://magiccards.info/scans/en/mi/18.jpg
 value=3.613
 rarity=U
 type=Instant

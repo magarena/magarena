@@ -1,5 +1,5 @@
 name=Steal Strength
-image=http://magiccards.info/scans/en/pr/79.jpg
+image=https://magiccards.info/scans/en/pr/79.jpg
 value=3.016
 rarity=C
 type=Instant

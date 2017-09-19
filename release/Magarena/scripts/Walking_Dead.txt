@@ -1,5 +1,5 @@
 name=Walking Dead
-image=http://magiccards.info/scans/en/lg/40.jpg
+image=https://magiccards.info/scans/en/lg/40.jpg
 value=3.895
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Frontline Strategist
-image=http://magiccards.info/scans/en/sc/15.jpg
+image=https://magiccards.info/scans/en/sc/15.jpg
 value=3.878
 rarity=C
 type=Creature

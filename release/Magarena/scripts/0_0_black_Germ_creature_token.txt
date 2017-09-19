@@ -1,6 +1,6 @@
 name=0/0 black Germ creature token
 token=Germ
-image=http://magiccards.info/extras/token/modern-masters-2015/germ.jpg
+image=https://magiccards.info/extras/token/modern-masters-2015/germ.jpg
 image_updated=2015-11-12
 value=1
 type=Creature

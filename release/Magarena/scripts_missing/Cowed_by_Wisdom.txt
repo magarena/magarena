@@ -1,5 +1,5 @@
 name=Cowed by Wisdom
-image=http://magiccards.info/scans/en/sok/5.jpg
+image=https://magiccards.info/scans/en/sok/5.jpg
 value=2.946
 rarity=C
 type=Enchantment

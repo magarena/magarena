@@ -1,5 +1,5 @@
 name=Skyrider Trainee
-image=http://magiccards.info/scans/en/gp/17.jpg
+image=https://magiccards.info/scans/en/gp/17.jpg
 value=1.085
 rarity=C
 type=Creature

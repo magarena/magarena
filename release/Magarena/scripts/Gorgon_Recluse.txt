@@ -1,5 +1,5 @@
 name=Gorgon Recluse
-image=http://magiccards.info/scans/en/ts/111.jpg
+image=https://magiccards.info/scans/en/ts/111.jpg
 value=3.500
 rarity=C
 type=Creature

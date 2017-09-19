@@ -1,5 +1,5 @@
 name=Jeska, Warrior Adept
-image=http://magiccards.info/scans/en/ju/93.jpg
+image=https://magiccards.info/scans/en/ju/93.jpg
 value=4.026
 rarity=R
 type=Legendary,Creature

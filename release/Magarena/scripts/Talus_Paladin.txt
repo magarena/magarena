@@ -1,5 +1,5 @@
 name=Talus Paladin
-image=http://magiccards.info/scans/en/wwk/21.jpg
+image=https://magiccards.info/scans/en/wwk/21.jpg
 value=3.577
 rarity=R
 type=Creature

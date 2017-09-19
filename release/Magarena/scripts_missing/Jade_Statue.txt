@@ -1,5 +1,5 @@
 name=Jade Statue
-image=http://magiccards.info/scans/en/9e/300.jpg
+image=https://magiccards.info/scans/en/9e/300.jpg
 value=3.255
 rarity=R
 type=Artifact

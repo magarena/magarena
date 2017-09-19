@@ -1,5 +1,5 @@
 name=Repentant Blacksmith
-image=http://magiccards.info/scans/en/5e/330.jpg
+image=https://magiccards.info/scans/en/5e/330.jpg
 value=2.982
 rarity=C
 type=Creature

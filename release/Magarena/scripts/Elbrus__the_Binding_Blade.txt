@@ -1,5 +1,5 @@
 name=Elbrus, the Binding Blade
-image=http://magiccards.info/scans/en/dka/147a.jpg
+image=https://magiccards.info/scans/en/dka/147a.jpg
 value=3.839
 rarity=M
 type=Legendary,Artifact

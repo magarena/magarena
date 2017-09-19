@@ -1,5 +1,5 @@
 name=Shivan Meteor
-image=http://magiccards.info/scans/en/pc/106.jpg
+image=https://magiccards.info/scans/en/pc/106.jpg
 value=4.256
 rarity=U
 type=Sorcery

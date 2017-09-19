@@ -1,5 +1,5 @@
 name=Whirlwind
-image=http://magiccards.info/scans/en/c14/224.jpg
+image=https://magiccards.info/scans/en/c14/224.jpg
 value=4.090
 rarity=R
 type=Sorcery

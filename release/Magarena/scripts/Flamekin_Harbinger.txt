@@ -1,5 +1,5 @@
 name=Flamekin Harbinger
-image=http://magiccards.info/scans/en/lw/167.jpg
+image=https://magiccards.info/scans/en/lw/167.jpg
 image_updated=2016-12-13
 value=4.190
 rarity=U

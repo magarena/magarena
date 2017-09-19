@@ -1,5 +1,5 @@
 name=Bloodfire Expert
-image=http://magiccards.info/scans/en/ktk/101.jpg
+image=https://magiccards.info/scans/en/ktk/101.jpg
 value=2.750
 rarity=C
 type=Creature

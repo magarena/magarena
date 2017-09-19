@@ -1,5 +1,5 @@
 name=Sedge Sliver
-image=http://magiccards.info/scans/en/ts/177.jpg
+image=https://magiccards.info/scans/en/ts/177.jpg
 value=4.129
 rarity=R
 type=Creature

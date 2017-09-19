@@ -1,5 +1,5 @@
 name=Tuktuk the Explorer
-image=http://magiccards.info/scans/en/c14/183.jpg
+image=https://magiccards.info/scans/en/c14/183.jpg
 value=4.011
 rarity=R
 type=Legendary,Creature

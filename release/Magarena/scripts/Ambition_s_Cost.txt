@@ -1,5 +1,5 @@
 name=Ambition's Cost
-image=http://magiccards.info/scans/en/8e/118.jpg
+image=https://magiccards.info/scans/en/8e/118.jpg
 image_updated=2016-02-29
 value=3.579
 rarity=U

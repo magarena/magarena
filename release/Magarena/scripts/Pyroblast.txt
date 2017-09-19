@@ -1,5 +1,5 @@
 name=Pyroblast
-image=http://magiccards.info/scans/en/ema/142.jpg
+image=https://magiccards.info/scans/en/ema/142.jpg
 value=4.530
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Shattered Angel
-image=http://magiccards.info/scans/en/cmd/31.jpg
+image=https://magiccards.info/scans/en/cmd/31.jpg
 value=2.911
 rarity=U
 type=Creature

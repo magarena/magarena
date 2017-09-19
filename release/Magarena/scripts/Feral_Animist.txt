@@ -1,5 +1,5 @@
 name=Feral Animist
-image=http://magiccards.info/scans/en/dgm/70.jpg
+image=https://magiccards.info/scans/en/dgm/70.jpg
 value=3.298
 rarity=U
 type=Creature

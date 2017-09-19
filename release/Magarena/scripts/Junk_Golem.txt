@@ -1,5 +1,5 @@
 name=Junk Golem
-image=http://magiccards.info/scans/en/od/300.jpg
+image=https://magiccards.info/scans/en/od/300.jpg
 value=1.806
 rarity=R
 type=Artifact,Creature

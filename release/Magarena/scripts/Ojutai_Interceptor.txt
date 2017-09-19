@@ -1,5 +1,5 @@
 name=Ojutai Interceptor
-image=http://magiccards.info/scans/en/dtk/66.jpg
+image=https://magiccards.info/scans/en/dtk/66.jpg
 value=2.500
 rarity=C
 type=Creature

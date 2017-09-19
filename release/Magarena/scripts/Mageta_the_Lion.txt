@@ -1,5 +1,5 @@
 name=Mageta the Lion
-image=http://magiccards.info/scans/en/pr/13.jpg
+image=https://magiccards.info/scans/en/pr/13.jpg
 value=4.028
 rarity=R
 type=Legendary,Creature

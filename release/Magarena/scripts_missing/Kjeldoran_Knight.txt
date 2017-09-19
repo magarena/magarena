@@ -1,5 +1,5 @@
 name=Kjeldoran Knight
-image=http://magiccards.info/scans/en/ia/260.jpg
+image=https://magiccards.info/scans/en/ia/260.jpg
 value=3.324
 rarity=R
 type=Creature

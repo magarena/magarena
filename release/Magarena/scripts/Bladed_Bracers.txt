@@ -1,5 +1,5 @@
 name=Bladed Bracers
-image=http://magiccards.info/scans/en/avr/213.jpg
+image=https://magiccards.info/scans/en/avr/213.jpg
 value=2.667
 rarity=C
 type=Artifact

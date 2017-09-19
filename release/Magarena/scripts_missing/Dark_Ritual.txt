@@ -1,5 +1,5 @@
 name=Dark Ritual
-image=http://magiccards.info/scans/en/mm/129.jpg
+image=https://magiccards.info/scans/en/mm/129.jpg
 image_updated=2016-12-13
 value=2.500
 rarity=C

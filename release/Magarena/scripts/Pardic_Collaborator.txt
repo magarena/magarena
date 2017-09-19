@@ -1,5 +1,5 @@
 name=Pardic Collaborator
-image=http://magiccards.info/scans/en/tr/106.jpg
+image=https://magiccards.info/scans/en/tr/106.jpg
 value=3.074
 rarity=U
 type=Creature

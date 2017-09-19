@@ -1,5 +1,5 @@
 name=Act on Impulse
-image=http://magiccards.info/scans/en/m15/126.jpg
+image=https://magiccards.info/scans/en/m15/126.jpg
 value=2.857
 rarity=U
 type=Sorcery

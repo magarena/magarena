@@ -1,5 +1,5 @@
 name=Nulltread Gargantuan
-image=http://magiccards.info/scans/en/arb/102.jpg
+image=https://magiccards.info/scans/en/arb/102.jpg
 value=3.759
 rarity=U
 type=Creature

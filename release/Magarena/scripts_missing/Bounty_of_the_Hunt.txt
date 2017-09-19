@@ -1,5 +1,5 @@
 name=Bounty of the Hunt
-image=http://magiccards.info/scans/en/cstd/38.jpg
+image=https://magiccards.info/scans/en/cstd/38.jpg
 value=3.031
 rarity=U
 type=Instant

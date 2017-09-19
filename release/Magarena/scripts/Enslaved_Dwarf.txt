@@ -1,5 +1,5 @@
 name=Enslaved Dwarf
-image=http://magiccards.info/scans/en/tr/96.jpg
+image=https://magiccards.info/scans/en/tr/96.jpg
 value=1.672
 rarity=C
 type=Creature

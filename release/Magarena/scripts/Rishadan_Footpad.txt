@@ -1,5 +1,5 @@
 name=Rishadan Footpad
-image=http://magiccards.info/scans/en/mm/94.jpg
+image=https://magiccards.info/scans/en/mm/94.jpg
 value=3.033
 rarity=U
 type=Creature

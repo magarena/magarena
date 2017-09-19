@@ -1,5 +1,5 @@
 name=Dive Bomber
-image=http://magiccards.info/scans/en/on/26.jpg
+image=https://magiccards.info/scans/en/on/26.jpg
 value=2.633
 rarity=C
 type=Creature

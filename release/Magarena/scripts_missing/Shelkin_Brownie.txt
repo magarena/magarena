@@ -1,5 +1,5 @@
 name=Shelkin Brownie
-image=http://magiccards.info/scans/en/lg/118.jpg
+image=https://magiccards.info/scans/en/lg/118.jpg
 value=1.102
 rarity=C
 type=Creature

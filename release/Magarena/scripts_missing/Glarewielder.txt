@@ -1,5 +1,5 @@
 name=Glarewielder
-image=http://magiccards.info/scans/en/lw/171.jpg
+image=https://magiccards.info/scans/en/lw/171.jpg
 value=2.456
 rarity=U
 type=Creature

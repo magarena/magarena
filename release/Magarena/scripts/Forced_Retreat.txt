@@ -1,5 +1,5 @@
 name=Forced Retreat
-image=http://magiccards.info/scans/en/p3k/44.jpg
+image=https://magiccards.info/scans/en/p3k/44.jpg
 value=3.096
 rarity=C
 type=Sorcery

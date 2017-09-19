@@ -1,5 +1,5 @@
 name=Bedlam
-image=http://magiccards.info/scans/en/7e/174.jpg
+image=https://magiccards.info/scans/en/7e/174.jpg
 value=4.137
 rarity=R
 type=Enchantment

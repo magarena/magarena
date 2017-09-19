@@ -1,5 +1,5 @@
 name=Flowstone Wall
-image=http://magiccards.info/scans/en/ne/86.jpg
+image=https://magiccards.info/scans/en/ne/86.jpg
 value=2.589
 rarity=C
 type=Creature

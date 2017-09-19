@@ -1,5 +1,5 @@
 name=Skyshroud Blessing
-image=http://magiccards.info/scans/en/ps/92.jpg
+image=https://magiccards.info/scans/en/ps/92.jpg
 value=3.204
 rarity=U
 type=Instant

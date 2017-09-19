@@ -1,5 +1,5 @@
 name=Praetor's Counsel
-image=http://magiccards.info/scans/en/c14/209.jpg
+image=https://magiccards.info/scans/en/c14/209.jpg
 value=2.500
 rarity=M
 type=Sorcery

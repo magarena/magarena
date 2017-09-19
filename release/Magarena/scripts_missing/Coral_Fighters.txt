@@ -1,5 +1,5 @@
 name=Coral Fighters
-image=http://magiccards.info/scans/en/mr/59.jpg
+image=https://magiccards.info/scans/en/mr/59.jpg
 image_updated=2016-11-28
 value=3.656
 rarity=U

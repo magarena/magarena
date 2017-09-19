@@ -1,5 +1,5 @@
 name=Drafna's Restoration
-image=http://magiccards.info/scans/en/aq/52.jpg
+image=https://magiccards.info/scans/en/aq/52.jpg
 value=3.870
 rarity=C
 type=Sorcery

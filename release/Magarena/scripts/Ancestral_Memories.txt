@@ -1,5 +1,5 @@
 name=Ancestral Memories
-image=http://magiccards.info/scans/en/7e/59.jpg
+image=https://magiccards.info/scans/en/7e/59.jpg
 value=3.360
 rarity=R
 type=Sorcery

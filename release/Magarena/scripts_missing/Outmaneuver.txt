@@ -1,5 +1,5 @@
 name=Outmaneuver
-image=http://magiccards.info/scans/en/us/205.jpg
+image=https://magiccards.info/scans/en/us/205.jpg
 value=4.061
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Final Reward
-image=http://magiccards.info/scans/en/akh/92.jpg
+image=https://magiccards.info/scans/en/akh/92.jpg
 value=2.500
 rarity=C
 type=Instant

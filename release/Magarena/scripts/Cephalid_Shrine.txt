@@ -1,5 +1,5 @@
 name=Cephalid Shrine
-image=http://magiccards.info/scans/en/od/75.jpg
+image=https://magiccards.info/scans/en/od/75.jpg
 value=1.174
 rarity=R
 type=Enchantment

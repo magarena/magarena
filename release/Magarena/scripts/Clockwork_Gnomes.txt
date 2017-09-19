@@ -1,5 +1,5 @@
 name=Clockwork Gnomes
-image=http://magiccards.info/scans/en/hl/127.jpg
+image=https://magiccards.info/scans/en/hl/127.jpg
 value=2.474
 rarity=C
 type=Artifact,Creature

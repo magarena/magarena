@@ -1,5 +1,5 @@
 name=Larger Than Life
-image=http://magiccards.info/scans/en/kld/160.jpg
+image=https://magiccards.info/scans/en/kld/160.jpg
 image_updated=2016-10-05
 value=2.500
 rarity=C

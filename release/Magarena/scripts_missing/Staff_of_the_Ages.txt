@@ -1,5 +1,5 @@
 name=Staff of the Ages
-image=http://magiccards.info/scans/en/ia/315.jpg
+image=https://magiccards.info/scans/en/ia/315.jpg
 value=3.102
 rarity=R
 type=Artifact

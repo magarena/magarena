@@ -1,5 +1,5 @@
 name=Reflect Damage
-image=http://magiccards.info/scans/en/mr/337.jpg
+image=https://magiccards.info/scans/en/mr/337.jpg
 value=3.585
 rarity=R
 type=Instant

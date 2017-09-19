@@ -1,5 +1,5 @@
 name=Serpent Warrior
-image=http://magiccards.info/scans/en/9e/162.jpg
+image=https://magiccards.info/scans/en/9e/162.jpg
 value=1.615
 rarity=C
 type=Creature

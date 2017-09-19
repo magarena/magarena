@@ -1,5 +1,5 @@
 name=Cryptwailing
-image=http://magiccards.info/scans/en/gp/47.jpg
+image=https://magiccards.info/scans/en/gp/47.jpg
 value=1.985
 rarity=U
 type=Enchantment

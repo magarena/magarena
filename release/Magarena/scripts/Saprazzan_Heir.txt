@@ -1,5 +1,5 @@
 name=Saprazzan Heir
-image=http://magiccards.info/scans/en/mm/99.jpg
+image=https://magiccards.info/scans/en/mm/99.jpg
 value=3.628
 rarity=R
 type=Creature

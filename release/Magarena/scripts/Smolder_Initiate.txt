@@ -1,5 +1,5 @@
 name=Smolder Initiate
-image=http://magiccards.info/scans/en/shm/78.jpg
+image=https://magiccards.info/scans/en/shm/78.jpg
 value=3.024
 rarity=C
 type=Creature

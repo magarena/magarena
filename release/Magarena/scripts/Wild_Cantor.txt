@@ -1,5 +1,5 @@
 name=Wild Cantor
-image=http://magiccards.info/scans/en/gp/149.jpg
+image=https://magiccards.info/scans/en/gp/149.jpg
 value=4.180
 rarity=C
 type=Creature

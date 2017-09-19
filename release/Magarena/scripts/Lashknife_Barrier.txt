@@ -1,5 +1,5 @@
 name=Lashknife Barrier
-image=http://magiccards.info/scans/en/ps/9.jpg
+image=https://magiccards.info/scans/en/ps/9.jpg
 value=3.708
 rarity=U
 type=Enchantment

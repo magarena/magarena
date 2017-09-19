@@ -1,5 +1,5 @@
 name=Ludevic's Abomination
-image=http://magiccards.info/scans/en/isd/64b.jpg
+image=https://magiccards.info/scans/en/isd/64b.jpg
 value=3.806
 rarity=R
 type=Creature

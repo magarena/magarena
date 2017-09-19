@@ -1,5 +1,5 @@
 name=Valakut Fireboar
-image=http://magiccards.info/scans/en/roe/170.jpg
+image=https://magiccards.info/scans/en/roe/170.jpg
 value=3.152
 rarity=U
 type=Creature

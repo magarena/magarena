@@ -1,5 +1,5 @@
 name=Pistus Strike
-image=http://magiccards.info/scans/en/mbs/86.jpg
+image=https://magiccards.info/scans/en/mbs/86.jpg
 value=2.660
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Moonlace
-image=http://magiccards.info/scans/en/ts/68.jpg
+image=https://magiccards.info/scans/en/ts/68.jpg
 value=2.218
 rarity=R
 type=Instant

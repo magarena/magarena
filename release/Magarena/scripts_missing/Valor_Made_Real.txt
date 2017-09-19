@@ -1,5 +1,5 @@
 name=Valor Made Real
-image=http://magiccards.info/scans/en/cns/86.jpg
+image=https://magiccards.info/scans/en/cns/86.jpg
 value=3.625
 rarity=C
 type=Instant

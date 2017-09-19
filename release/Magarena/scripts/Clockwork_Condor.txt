@@ -1,5 +1,5 @@
 name=Clockwork Condor
-image=http://magiccards.info/scans/en/mi/154.jpg
+image=https://magiccards.info/scans/en/mi/154.jpg
 image_updated=2016-11-28
 value=1.636
 rarity=C

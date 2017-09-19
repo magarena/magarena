@@ -1,5 +1,5 @@
 name=Proclamation of Rebirth
-image=http://magiccards.info/scans/en/di/15.jpg
+image=https://magiccards.info/scans/en/di/15.jpg
 value=3.990
 rarity=R
 type=Sorcery

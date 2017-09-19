@@ -1,5 +1,5 @@
 name=Satyr Firedancer
-image=http://magiccards.info/scans/en/bng/108.jpg
+image=https://magiccards.info/scans/en/bng/108.jpg
 value=3.825
 rarity=R
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Soltari Monk
-image=http://magiccards.info/scans/en/tp/257.jpg
+image=https://magiccards.info/scans/en/tp/257.jpg
 value=4.267
 rarity=U
 type=Creature

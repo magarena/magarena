@@ -1,5 +1,5 @@
 name=Wandering Eye
-image=http://magiccards.info/scans/en/ne/50.jpg
+image=https://magiccards.info/scans/en/ne/50.jpg
 value=3.204
 rarity=C
 type=Creature

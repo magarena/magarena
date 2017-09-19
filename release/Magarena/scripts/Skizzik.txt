@@ -1,5 +1,5 @@
 name=Skizzik
-image=http://magiccards.info/scans/en/in/169.jpg
+image=https://magiccards.info/scans/en/in/169.jpg
 value=4.215
 rarity=R
 type=Creature

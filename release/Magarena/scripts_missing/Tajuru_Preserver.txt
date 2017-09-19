@@ -1,5 +1,5 @@
 name=Tajuru Preserver
-image=http://magiccards.info/scans/en/roe/211.jpg
+image=https://magiccards.info/scans/en/roe/211.jpg
 value=4.383
 rarity=R
 type=Creature

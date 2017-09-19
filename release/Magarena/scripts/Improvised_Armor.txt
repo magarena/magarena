@@ -1,5 +1,5 @@
 name=Improvised Armor
-image=http://magiccards.info/scans/en/on/40.jpg
+image=https://magiccards.info/scans/en/on/40.jpg
 value=3.014
 rarity=U
 type=Enchantment

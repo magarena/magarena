@@ -1,5 +1,5 @@
 name=Nantuko Cultivator
-image=http://magiccards.info/scans/en/tr/133.jpg
+image=https://magiccards.info/scans/en/tr/133.jpg
 value=4.000
 rarity=R
 type=Creature

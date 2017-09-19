@@ -1,5 +1,5 @@
 name=Vampiric Tutor
-image=http://magiccards.info/scans/en/ema/112.jpg
+image=https://magiccards.info/scans/en/ema/112.jpg
 value=5.000
 rarity=M
 type=Instant

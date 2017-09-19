@@ -1,5 +1,5 @@
 name=Peace and Quiet
-image=http://magiccards.info/scans/en/ul/17.jpg
+image=https://magiccards.info/scans/en/ul/17.jpg
 value=2.968
 rarity=U
 type=Instant

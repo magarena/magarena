@@ -1,5 +1,5 @@
 name=Scorching Lava
-image=http://magiccards.info/scans/en/in/164.jpg
+image=https://magiccards.info/scans/en/in/164.jpg
 value=3.143
 rarity=C
 type=Instant

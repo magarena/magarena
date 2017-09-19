@@ -1,6 +1,6 @@
 name=2/2 green Ooze creature token
 token=Ooze
-image=http://magiccards.info/extras/token/magic-2011/ooze-1.jpg
+image=https://magiccards.info/extras/token/magic-2011/ooze-1.jpg
 value=2
 type=Creature
 subtype=Ooze

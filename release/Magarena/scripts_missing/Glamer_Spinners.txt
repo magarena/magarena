@@ -1,5 +1,5 @@
 name=Glamer Spinners
-image=http://magiccards.info/scans/en/shm/141.jpg
+image=https://magiccards.info/scans/en/shm/141.jpg
 value=2.338
 rarity=U
 type=Creature

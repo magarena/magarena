@@ -1,5 +1,5 @@
 name=Cocoon
-image=http://magiccards.info/scans/en/lg/92.jpg
+image=https://magiccards.info/scans/en/lg/92.jpg
 image_updated=2016-11-28
 value=2.015
 rarity=U

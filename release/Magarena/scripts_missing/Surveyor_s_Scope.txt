@@ -1,5 +1,5 @@
 name=Surveyor's Scope
-image=http://magiccards.info/scans/en/c13/262.jpg
+image=https://magiccards.info/scans/en/c13/262.jpg
 value=3.235
 rarity=R
 type=Artifact

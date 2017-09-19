@@ -1,5 +1,5 @@
 name=Skinthinner
-image=http://magiccards.info/scans/en/le/80.jpg
+image=https://magiccards.info/scans/en/le/80.jpg
 value=2.259
 rarity=C
 type=Creature

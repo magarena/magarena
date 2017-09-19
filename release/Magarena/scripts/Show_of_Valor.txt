@@ -1,5 +1,5 @@
 name=Show of Valor
-image=http://magiccards.info/scans/en/m13/34.jpg
+image=https://magiccards.info/scans/en/m13/34.jpg
 value=2.607
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Skeletal Changeling
-image=http://magiccards.info/scans/en/lw/140.jpg
+image=https://magiccards.info/scans/en/lw/140.jpg
 value=2.797
 rarity=C
 type=Creature

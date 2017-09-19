@@ -1,5 +1,5 @@
 name=Angel of Finality
-image=http://magiccards.info/scans/en/c13/4.jpg
+image=https://magiccards.info/scans/en/c13/4.jpg
 value=3.780
 rarity=R
 type=Creature

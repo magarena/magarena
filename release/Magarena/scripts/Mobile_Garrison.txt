@@ -1,5 +1,5 @@
 name=Mobile Garrison
-image=http://magiccards.info/scans/en/aer/165.jpg
+image=https://magiccards.info/scans/en/aer/165.jpg
 value=2.500
 rarity=C
 type=Artifact

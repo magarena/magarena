@@ -1,5 +1,5 @@
 name=Tolaria
-image=http://magiccards.info/scans/en/lg/253.jpg
+image=https://magiccards.info/scans/en/lg/253.jpg
 value=3.155
 rarity=U
 type=Legendary,Land

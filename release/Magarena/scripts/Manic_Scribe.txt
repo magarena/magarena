@@ -1,5 +1,5 @@
 name=Manic Scribe
-image=http://magiccards.info/scans/en/soi/73.jpg
+image=https://magiccards.info/scans/en/soi/73.jpg
 value=2.500
 rarity=U
 type=Creature

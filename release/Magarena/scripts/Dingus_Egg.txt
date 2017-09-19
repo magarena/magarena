@@ -1,5 +1,5 @@
 name=Dingus Egg
-image=http://magiccards.info/scans/en/8e/297.jpg
+image=https://magiccards.info/scans/en/8e/297.jpg
 value=3.562
 rarity=R
 type=Artifact

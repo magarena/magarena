@@ -1,5 +1,5 @@
 name=Khalni Gem
-image=http://magiccards.info/scans/en/zen/205.jpg
+image=https://magiccards.info/scans/en/zen/205.jpg
 value=3.614
 rarity=U
 type=Artifact

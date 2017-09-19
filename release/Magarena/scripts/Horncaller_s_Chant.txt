@@ -1,5 +1,5 @@
 name=Horncaller's Chant
-image=http://magiccards.info/scans/en/rtr/128.jpg
+image=https://magiccards.info/scans/en/rtr/128.jpg
 value=2.271
 rarity=C
 type=Sorcery

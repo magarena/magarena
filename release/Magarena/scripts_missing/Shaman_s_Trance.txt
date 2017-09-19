@@ -1,5 +1,5 @@
 name=Shaman's Trance
-image=http://magiccards.info/scans/en/ju/98.jpg
+image=https://magiccards.info/scans/en/ju/98.jpg
 value=2.500
 rarity=R
 type=Instant

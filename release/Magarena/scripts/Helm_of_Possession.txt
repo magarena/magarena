@@ -1,5 +1,5 @@
 name=Helm of Possession
-image=http://magiccards.info/scans/en/tp/281.jpg
+image=https://magiccards.info/scans/en/tp/281.jpg
 value=4.145
 rarity=R
 type=Artifact

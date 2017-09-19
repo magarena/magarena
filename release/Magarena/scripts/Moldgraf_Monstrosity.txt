@@ -1,5 +1,5 @@
 name=Moldgraf Monstrosity
-image=http://magiccards.info/scans/en/isd/194.jpg
+image=https://magiccards.info/scans/en/isd/194.jpg
 value=3.888
 rarity=R
 type=Creature

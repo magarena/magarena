@@ -1,5 +1,5 @@
 name=Orcish Healer
-image=http://magiccards.info/scans/en/cstd/35.jpg
+image=https://magiccards.info/scans/en/cstd/35.jpg
 value=2.132
 rarity=U
 type=Creature

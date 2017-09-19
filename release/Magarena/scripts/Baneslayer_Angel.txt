@@ -1,5 +1,5 @@
 name=Baneslayer Angel
-image=http://magiccards.info/scans/en/m11/7.jpg
+image=https://magiccards.info/scans/en/m11/7.jpg
 value=4.152
 rarity=M
 type=Creature

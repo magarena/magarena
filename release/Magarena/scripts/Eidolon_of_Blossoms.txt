@@ -1,5 +1,5 @@
 name=Eidolon of Blossoms
-image=http://magiccards.info/scans/en/jou/122.jpg
+image=https://magiccards.info/scans/en/jou/122.jpg
 value=3.905
 rarity=R
 type=Enchantment,Creature

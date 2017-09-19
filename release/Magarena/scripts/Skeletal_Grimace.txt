@@ -1,5 +1,5 @@
 name=Skeletal Grimace
-image=http://magiccards.info/scans/en/isd/116.jpg
+image=https://magiccards.info/scans/en/isd/116.jpg
 value=3.300
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Deep Reconnaissance
-image=http://magiccards.info/scans/en/od/236.jpg
+image=https://magiccards.info/scans/en/od/236.jpg
 value=2.906
 rarity=U
 type=Sorcery

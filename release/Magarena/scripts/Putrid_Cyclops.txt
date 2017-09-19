@@ -1,5 +1,5 @@
 name=Putrid Cyclops
-image=http://magiccards.info/scans/en/fut/75.jpg
+image=https://magiccards.info/scans/en/fut/75.jpg
 value=1.963
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lightning Axe
-image=http://magiccards.info/scans/en/soi/170.jpg
+image=https://magiccards.info/scans/en/soi/170.jpg
 image_updated=2010-09-10
 value=4.119
 rarity=U

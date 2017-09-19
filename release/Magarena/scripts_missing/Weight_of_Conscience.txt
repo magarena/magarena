@@ -1,5 +1,5 @@
 name=Weight of Conscience
-image=http://magiccards.info/scans/en/mt/28.jpg
+image=https://magiccards.info/scans/en/mt/28.jpg
 value=3.075
 rarity=C
 type=Enchantment

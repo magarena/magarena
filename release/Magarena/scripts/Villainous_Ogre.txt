@@ -1,5 +1,5 @@
 name=Villainous Ogre
-image=http://magiccards.info/scans/en/chk/148.jpg
+image=https://magiccards.info/scans/en/chk/148.jpg
 value=2.425
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Grotag Thrasher
-image=http://magiccards.info/scans/en/wwk/83.jpg
+image=https://magiccards.info/scans/en/wwk/83.jpg
 value=2.391
 rarity=C
 type=Creature

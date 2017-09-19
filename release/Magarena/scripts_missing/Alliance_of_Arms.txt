@@ -1,5 +1,5 @@
 name=Alliance of Arms
-image=http://magiccards.info/scans/en/cmd/4.jpg
+image=https://magiccards.info/scans/en/cmd/4.jpg
 value=3.048
 rarity=R
 type=Sorcery

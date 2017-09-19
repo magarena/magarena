@@ -1,5 +1,5 @@
 name=Spreading Plague
-image=http://magiccards.info/scans/en/in/125.jpg
+image=https://magiccards.info/scans/en/in/125.jpg
 value=4.105
 rarity=R
 type=Enchantment

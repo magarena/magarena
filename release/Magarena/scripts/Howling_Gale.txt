@@ -1,5 +1,5 @@
 name=Howling Gale
-image=http://magiccards.info/scans/en/od/244.jpg
+image=https://magiccards.info/scans/en/od/244.jpg
 value=2.471
 rarity=U
 type=Instant

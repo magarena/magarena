@@ -1,5 +1,5 @@
 name=Scare Tactics
-image=http://magiccards.info/scans/en/ex/73.jpg
+image=https://magiccards.info/scans/en/ex/73.jpg
 value=3.118
 rarity=C
 type=Instant

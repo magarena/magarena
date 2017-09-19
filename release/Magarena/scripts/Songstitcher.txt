@@ -1,5 +1,5 @@
 name=Songstitcher
-image=http://magiccards.info/scans/en/us/52.jpg
+image=https://magiccards.info/scans/en/us/52.jpg
 image_updated=2017-01-08
 value=3.278
 rarity=U

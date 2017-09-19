@@ -1,5 +1,5 @@
 name=Mind Shatter
-image=http://magiccards.info/scans/en/mm3/77.jpg
+image=https://magiccards.info/scans/en/mm3/77.jpg
 image_updated=2017-08-08
 value=3.731
 rarity=R

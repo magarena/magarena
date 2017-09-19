@@ -1,5 +1,5 @@
 name=Mardu Heart-Piercer
-image=http://magiccards.info/scans/en/ktk/116.jpg
+image=https://magiccards.info/scans/en/ktk/116.jpg
 value=3.750
 rarity=U
 type=Creature

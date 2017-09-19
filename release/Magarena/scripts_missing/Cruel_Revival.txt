@@ -1,5 +1,5 @@
 name=Cruel Revival
-image=http://magiccards.info/scans/en/ori/88.jpg
+image=https://magiccards.info/scans/en/ori/88.jpg
 image_updated=2015-11-05
 value=3.868
 rarity=U

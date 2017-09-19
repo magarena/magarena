@@ -1,5 +1,5 @@
 name=Polluted Dead
-image=http://magiccards.info/scans/en/avr/116.jpg
+image=https://magiccards.info/scans/en/avr/116.jpg
 value=2.859
 removal=1
 rarity=C

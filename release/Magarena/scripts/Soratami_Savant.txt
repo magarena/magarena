@@ -1,5 +1,5 @@
 name=Soratami Savant
-image=http://magiccards.info/scans/en/chk/90.jpg
+image=https://magiccards.info/scans/en/chk/90.jpg
 value=3.050
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Arena Athlete
-image=http://magiccards.info/scans/en/ths/113.jpg
+image=https://magiccards.info/scans/en/ths/113.jpg
 value=2.908
 rarity=U
 type=Creature

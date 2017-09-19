@@ -1,5 +1,5 @@
 name=Symbiotic Beast
-image=http://magiccards.info/scans/en/on/287.jpg
+image=https://magiccards.info/scans/en/on/287.jpg
 value=3.786
 rarity=U
 type=Creature

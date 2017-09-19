@@ -1,5 +1,5 @@
 name=Innocent Blood
-image=http://magiccards.info/scans/en/ema/94.jpg
+image=https://magiccards.info/scans/en/ema/94.jpg
 value=4.537
 removal=2
 rarity=C

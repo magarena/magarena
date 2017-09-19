@@ -1,5 +1,5 @@
 name=Genju of the Fens
-image=http://magiccards.info/scans/en/bok/66.jpg
+image=https://magiccards.info/scans/en/bok/66.jpg
 image_updated=2016-12-03
 value=3.488
 rarity=U

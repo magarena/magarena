@@ -1,5 +1,5 @@
 name=Temporary Truce
-image=http://magiccards.info/scans/en/po/195.jpg
+image=https://magiccards.info/scans/en/po/195.jpg
 value=3.042
 rarity=R
 type=Sorcery

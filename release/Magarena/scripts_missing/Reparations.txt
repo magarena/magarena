@@ -1,5 +1,5 @@
 name=Reparations
-image=http://magiccards.info/scans/en/mr/338.jpg
+image=https://magiccards.info/scans/en/mr/338.jpg
 value=4.341
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Teferi's Moat
-image=http://magiccards.info/scans/en/tsts/103.jpg
+image=https://magiccards.info/scans/en/tsts/103.jpg
 value=4.041
 rarity=R
 type=Enchantment

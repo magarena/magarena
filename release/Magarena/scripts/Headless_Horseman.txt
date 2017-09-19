@@ -1,5 +1,5 @@
 name=Headless Horseman
-image=http://magiccards.info/scans/en/lg/16.jpg
+image=https://magiccards.info/scans/en/lg/16.jpg
 value=2.275
 rarity=C
 type=Creature

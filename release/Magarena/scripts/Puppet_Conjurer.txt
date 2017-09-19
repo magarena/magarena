@@ -1,5 +1,5 @@
 name=Puppet Conjurer
-image=http://magiccards.info/scans/en/ala/82.jpg
+image=https://magiccards.info/scans/en/ala/82.jpg
 value=2.934
 rarity=U
 type=Artifact,Creature

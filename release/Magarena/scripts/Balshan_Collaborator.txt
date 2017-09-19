@@ -1,5 +1,5 @@
 name=Balshan Collaborator
-image=http://magiccards.info/scans/en/tr/25.jpg
+image=https://magiccards.info/scans/en/tr/25.jpg
 value=3.045
 rarity=U
 type=Creature

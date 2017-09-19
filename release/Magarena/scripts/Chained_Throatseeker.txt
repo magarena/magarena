@@ -1,5 +1,5 @@
 name=Chained Throatseeker
-image=http://magiccards.info/scans/en/nph/30.jpg
+image=https://magiccards.info/scans/en/nph/30.jpg
 value=3.180
 rarity=C
 type=Creature

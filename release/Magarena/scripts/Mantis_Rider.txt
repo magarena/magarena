@@ -1,5 +1,5 @@
 name=Mantis Rider
-image=http://magiccards.info/scans/en/ktk/184.jpg
+image=https://magiccards.info/scans/en/ktk/184.jpg
 value=4.500
 rarity=R
 type=Creature

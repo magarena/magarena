@@ -1,5 +1,5 @@
 name=Goblin Kites
-image=http://magiccards.info/scans/en/fe/117.jpg
+image=https://magiccards.info/scans/en/fe/117.jpg
 value=2.481
 rarity=U
 type=Enchantment

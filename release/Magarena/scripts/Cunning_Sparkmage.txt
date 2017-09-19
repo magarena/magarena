@@ -1,5 +1,5 @@
 name=Cunning Sparkmage
-image=http://magiccards.info/scans/en/wwk/79.jpg
+image=https://magiccards.info/scans/en/wwk/79.jpg
 value=3.834
 rarity=U
 type=Creature

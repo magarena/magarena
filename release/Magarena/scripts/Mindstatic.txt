@@ -1,5 +1,5 @@
 name=Mindstatic
-image=http://magiccards.info/scans/en/dgm/14.jpg
+image=https://magiccards.info/scans/en/dgm/14.jpg
 value=1.564
 rarity=C
 type=Instant

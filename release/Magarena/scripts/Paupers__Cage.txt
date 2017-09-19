@@ -1,5 +1,5 @@
 name=Paupers' Cage
-image=http://magiccards.info/scans/en/mr/279.jpg
+image=https://magiccards.info/scans/en/mr/279.jpg
 value=2.969
 rarity=R
 type=Artifact

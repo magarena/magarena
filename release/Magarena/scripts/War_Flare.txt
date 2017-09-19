@@ -1,5 +1,5 @@
 name=War Flare
-image=http://magiccards.info/scans/en/frf/158.jpg
+image=https://magiccards.info/scans/en/frf/158.jpg
 value=2.500
 rarity=C
 type=Instant

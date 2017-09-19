@@ -1,5 +1,5 @@
 name=Runeclaw Bear
-image=http://magiccards.info/scans/en/m15/197.jpg
+image=https://magiccards.info/scans/en/m15/197.jpg
 value=1.917
 rarity=C
 type=Creature

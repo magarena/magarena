@@ -1,5 +1,5 @@
 name=Sanity Grinding
-image=http://magiccards.info/scans/en/eve/29.jpg
+image=https://magiccards.info/scans/en/eve/29.jpg
 value=3.517
 rarity=R
 type=Sorcery

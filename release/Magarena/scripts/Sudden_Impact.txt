@@ -1,5 +1,5 @@
 name=Sudden Impact
-image=http://magiccards.info/scans/en/10e/241.jpg
+image=https://magiccards.info/scans/en/10e/241.jpg
 value=3.470
 rarity=U
 type=Instant

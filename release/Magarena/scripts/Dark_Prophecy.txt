@@ -1,5 +1,5 @@
 name=Dark Prophecy
-image=http://magiccards.info/scans/en/m14/93.jpg
+image=https://magiccards.info/scans/en/m14/93.jpg
 value=3.590
 rarity=R
 type=Enchantment

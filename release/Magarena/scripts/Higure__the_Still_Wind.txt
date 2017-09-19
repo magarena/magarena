@@ -1,5 +1,5 @@
 name=Higure, the Still Wind
-image=http://magiccards.info/scans/en/pc2/18.jpg
+image=https://magiccards.info/scans/en/pc2/18.jpg
 value=3.900
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Riot Devils
-image=http://magiccards.info/scans/en/isd/160.jpg
+image=https://magiccards.info/scans/en/isd/160.jpg
 value=2.158
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Psychic Vortex
-image=http://magiccards.info/scans/en/wl/50.jpg
+image=https://magiccards.info/scans/en/wl/50.jpg
 value=3.767
 rarity=R
 type=Enchantment

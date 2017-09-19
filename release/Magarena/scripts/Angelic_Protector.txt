@@ -1,5 +1,5 @@
 name=Angelic Protector
-image=http://magiccards.info/scans/en/tp/214.jpg
+image=https://magiccards.info/scans/en/tp/214.jpg
 value=2.979
 rarity=U
 type=Creature

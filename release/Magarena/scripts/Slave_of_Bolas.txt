@@ -1,5 +1,5 @@
 name=Slave of Bolas
-image=http://magiccards.info/scans/en/arb/136.jpg
+image=https://magiccards.info/scans/en/arb/136.jpg
 value=3.622
 removal=5
 rarity=U

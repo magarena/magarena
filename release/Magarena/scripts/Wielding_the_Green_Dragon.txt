@@ -1,5 +1,5 @@
 name=Wielding the Green Dragon
-image=http://magiccards.info/scans/en/p3k/157.jpg
+image=https://magiccards.info/scans/en/p3k/157.jpg
 value=1.889
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Psychogenic Probe
-image=http://magiccards.info/scans/en/mi/231.jpg
+image=https://magiccards.info/scans/en/mi/231.jpg
 value=3.744
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Seizan, Perverter of Truth
-image=http://magiccards.info/scans/en/chk/143.jpg
+image=https://magiccards.info/scans/en/chk/143.jpg
 value=3.958
 rarity=R
 type=Legendary,Creature

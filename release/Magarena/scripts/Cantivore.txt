@@ -1,5 +1,5 @@
 name=Cantivore
-image=http://magiccards.info/scans/en/od/13.jpg
+image=https://magiccards.info/scans/en/od/13.jpg
 value=3.061
 rarity=R
 type=Creature

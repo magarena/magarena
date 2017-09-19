@@ -1,5 +1,5 @@
 name=Quagmire Lamprey
-image=http://magiccards.info/scans/en/mm/154.jpg
+image=https://magiccards.info/scans/en/mm/154.jpg
 value=1.750
 rarity=U
 type=Creature

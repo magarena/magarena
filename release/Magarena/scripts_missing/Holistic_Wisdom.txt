@@ -1,5 +1,5 @@
 name=Holistic Wisdom
-image=http://magiccards.info/scans/en/od/243.jpg
+image=https://magiccards.info/scans/en/od/243.jpg
 value=3.447
 rarity=R
 type=Enchantment

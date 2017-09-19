@@ -1,5 +1,5 @@
 name=Aura Gnarlid
-image=http://magiccards.info/scans/en/pc2/55.jpg
+image=https://magiccards.info/scans/en/pc2/55.jpg
 value=3.817
 rarity=C
 type=Creature

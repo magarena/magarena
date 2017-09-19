@@ -1,5 +1,5 @@
 name=Warrior Angel
-image=http://magiccards.info/scans/en/sh/123.jpg
+image=https://magiccards.info/scans/en/sh/123.jpg
 value=3.144
 rarity=R
 type=Creature

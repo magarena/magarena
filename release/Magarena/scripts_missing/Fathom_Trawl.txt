@@ -1,5 +1,5 @@
 name=Fathom Trawl
-image=http://magiccards.info/scans/en/lw/65.jpg
+image=https://magiccards.info/scans/en/lw/65.jpg
 value=3.188
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Disempower
-image=http://magiccards.info/scans/en/mr/213.jpg
+image=https://magiccards.info/scans/en/mr/213.jpg
 value=3.356
 rarity=C
 type=Instant

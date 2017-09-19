@@ -1,5 +1,5 @@
 name=Kaysa
-image=http://magiccards.info/scans/en/ai/80.jpg
+image=https://magiccards.info/scans/en/ai/80.jpg
 value=3.851
 rarity=R
 type=Legendary,Creature

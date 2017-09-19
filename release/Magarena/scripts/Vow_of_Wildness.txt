@@ -1,5 +1,5 @@
 name=Vow of Wildness
-image=http://magiccards.info/scans/en/cmd/178.jpg
+image=https://magiccards.info/scans/en/cmd/178.jpg
 value=3.606
 rarity=U
 type=Enchantment

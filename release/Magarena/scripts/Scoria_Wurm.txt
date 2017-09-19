@@ -1,5 +1,5 @@
 name=Scoria Wurm
-image=http://magiccards.info/scans/en/10e/227.jpg
+image=https://magiccards.info/scans/en/10e/227.jpg
 value=2.280
 rarity=R
 type=Creature

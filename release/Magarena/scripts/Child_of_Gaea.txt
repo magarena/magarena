@@ -1,5 +1,5 @@
 name=Child of Gaea
-image=http://magiccards.info/scans/en/us/242.jpg
+image=https://magiccards.info/scans/en/us/242.jpg
 value=4.255
 rarity=R
 type=Creature

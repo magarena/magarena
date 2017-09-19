@@ -1,5 +1,5 @@
 name=Absolute Grace
-image=http://magiccards.info/scans/en/us/1.jpg
+image=https://magiccards.info/scans/en/us/1.jpg
 value=3.615
 rarity=U
 type=Enchantment

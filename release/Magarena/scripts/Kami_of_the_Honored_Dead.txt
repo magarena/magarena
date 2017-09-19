@@ -1,5 +1,5 @@
 name=Kami of the Honored Dead
-image=http://magiccards.info/scans/en/bok/12.jpg
+image=https://magiccards.info/scans/en/bok/12.jpg
 value=2.571
 rarity=U
 type=Creature

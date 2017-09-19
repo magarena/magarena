@@ -1,5 +1,5 @@
 name=Touch of the Eternal
-image=http://magiccards.info/scans/en/m13/37.jpg
+image=https://magiccards.info/scans/en/m13/37.jpg
 value=1.983
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Island of Wak-Wak
-image=http://magiccards.info/scans/en/an/89.jpg
+image=https://magiccards.info/scans/en/an/89.jpg
 value=3.877
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Terror
-image=http://magiccards.info/scans/en/10e/182.jpg
+image=https://magiccards.info/scans/en/10e/182.jpg
 image_updated=2016-10-16
 value=4.139
 removal=3

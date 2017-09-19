@@ -1,5 +1,5 @@
 name=Ring of Immortals
-image=http://magiccards.info/scans/en/lg/238.jpg
+image=https://magiccards.info/scans/en/lg/238.jpg
 value=2.897
 rarity=R
 type=Artifact

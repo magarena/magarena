@@ -1,5 +1,5 @@
 name=Krovikan Rot
-image=http://magiccards.info/scans/en/cs/63.jpg
+image=https://magiccards.info/scans/en/cs/63.jpg
 value=2.941
 rarity=U
 type=Instant

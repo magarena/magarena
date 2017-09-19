@@ -1,5 +1,5 @@
 name=Gwafa Hazid, Profiteer
-image=http://magiccards.info/scans/en/c16/202.jpg
+image=https://magiccards.info/scans/en/c16/202.jpg
 image_updated=2017-08-17
 value=3.308
 rarity=R

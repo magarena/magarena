@@ -1,5 +1,5 @@
 name=Sachi, Daughter of Seshiro
-image=http://magiccards.info/scans/en/chk/238.jpg
+image=https://magiccards.info/scans/en/chk/238.jpg
 value=4.035
 rarity=U
 type=Legendary,Creature

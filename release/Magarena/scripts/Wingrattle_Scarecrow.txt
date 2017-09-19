@@ -1,5 +1,5 @@
 name=Wingrattle Scarecrow
-image=http://magiccards.info/scans/en/shm/270.jpg
+image=https://magiccards.info/scans/en/shm/270.jpg
 value=2.455
 rarity=C
 type=Artifact,Creature

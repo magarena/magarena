@@ -1,5 +1,5 @@
 name=Clip Wings
-image=http://magiccards.info/scans/en/soi/197.jpg
+image=https://magiccards.info/scans/en/soi/197.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Screeching Griffin
-image=http://magiccards.info/scans/en/rav/29.jpg
+image=https://magiccards.info/scans/en/rav/29.jpg
 value=2.045
 rarity=C
 type=Creature

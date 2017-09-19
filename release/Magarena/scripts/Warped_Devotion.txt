@@ -1,5 +1,5 @@
 name=Warped Devotion
-image=http://magiccards.info/scans/en/8e/172.jpg
+image=https://magiccards.info/scans/en/8e/172.jpg
 value=3.731
 rarity=R
 type=Enchantment

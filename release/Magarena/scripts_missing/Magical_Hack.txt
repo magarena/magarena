@@ -1,5 +1,5 @@
 name=Magical Hack
-image=http://magiccards.info/scans/en/5e/101.jpg
+image=https://magiccards.info/scans/en/5e/101.jpg
 value=3.106
 rarity=R
 type=Instant

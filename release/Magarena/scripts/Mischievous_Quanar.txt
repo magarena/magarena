@@ -1,5 +1,5 @@
 name=Mischievous Quanar
-image=http://magiccards.info/scans/en/sc/42.jpg
+image=https://magiccards.info/scans/en/sc/42.jpg
 value=4.068
 rarity=R
 type=Creature

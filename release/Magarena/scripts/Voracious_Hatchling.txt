@@ -1,5 +1,5 @@
 name=Voracious Hatchling
-image=http://magiccards.info/scans/en/eve/97.jpg
+image=https://magiccards.info/scans/en/eve/97.jpg
 value=3.805
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Venomous Dragonfly
-image=http://magiccards.info/scans/en/mm/282.jpg
+image=https://magiccards.info/scans/en/mm/282.jpg
 value=2.691
 rarity=C
 type=Creature

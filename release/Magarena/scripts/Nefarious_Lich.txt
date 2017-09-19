@@ -1,5 +1,5 @@
 name=Nefarious Lich
-image=http://magiccards.info/scans/en/od/153.jpg
+image=https://magiccards.info/scans/en/od/153.jpg
 value=2.534
 rarity=R
 type=Enchantment

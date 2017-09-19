@@ -1,6 +1,6 @@
 name=3/3 green Beast creature token
 token=Beast
-image=http://magiccards.info/extras/token/commander-2014/beast-1.jpg
+image=https://magiccards.info/extras/token/commander-2014/beast-1.jpg
 image_updated=2015-11-12
 value=3
 type=Creature

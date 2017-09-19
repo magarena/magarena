@@ -1,5 +1,5 @@
 name=Minotaur Sureshot
-image=http://magiccards.info/scans/en/akh/143.jpg
+image=https://magiccards.info/scans/en/akh/143.jpg
 value=2.500
 rarity=C
 type=Creature

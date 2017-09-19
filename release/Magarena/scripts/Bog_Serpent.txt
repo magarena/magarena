@@ -1,5 +1,5 @@
 name=Bog Serpent
-image=http://magiccards.info/scans/en/pc/84.jpg
+image=https://magiccards.info/scans/en/pc/84.jpg
 value=1.123
 rarity=C
 type=Creature

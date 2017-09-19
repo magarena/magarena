@@ -1,5 +1,5 @@
 name=Elfhame Palace
-image=http://magiccards.info/scans/en/8e/324.jpg
+image=https://magiccards.info/scans/en/8e/324.jpg
 image_updated=2016-12-02
 value=3.315
 rarity=U

@@ -1,5 +1,5 @@
 name=Aven Sunstriker
-image=http://magiccards.info/scans/en/dtk/5.jpg
+image=https://magiccards.info/scans/en/dtk/5.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Legacy Weapon
-image=http://magiccards.info/scans/en/10e/330.jpg
+image=https://magiccards.info/scans/en/10e/330.jpg
 value=4.153
 rarity=R
 type=Legendary,Artifact

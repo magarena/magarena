@@ -1,5 +1,5 @@
 name=Yavimaya Granger
-image=http://magiccards.info/scans/en/ul/118.jpg
+image=https://magiccards.info/scans/en/ul/118.jpg
 value=3.774
 rarity=C
 type=Creature

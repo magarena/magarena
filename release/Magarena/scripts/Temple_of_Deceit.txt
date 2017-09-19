@@ -1,5 +1,5 @@
 name=Temple of Deceit
-image=http://magiccards.info/scans/en/ths/225.jpg
+image=https://magiccards.info/scans/en/ths/225.jpg
 value=3.576
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Nagao, Bound by Honor
-image=http://magiccards.info/scans/en/chk/36.jpg
+image=https://magiccards.info/scans/en/chk/36.jpg
 value=3.704
 rarity=U
 type=Legendary,Creature

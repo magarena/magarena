@@ -1,5 +1,5 @@
 name=Corrupted Conscience
-image=http://magiccards.info/scans/en/mbs/22.jpg
+image=https://magiccards.info/scans/en/mbs/22.jpg
 value=3.730
 rarity=U
 type=Enchantment

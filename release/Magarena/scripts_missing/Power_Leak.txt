@@ -1,5 +1,5 @@
 name=Power Leak
-image=http://magiccards.info/scans/en/4e/92.jpg
+image=https://magiccards.info/scans/en/4e/92.jpg
 value=2.636
 rarity=C
 type=Enchantment

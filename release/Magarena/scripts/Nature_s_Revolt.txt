@@ -1,5 +1,5 @@
 name=Nature's Revolt
-image=http://magiccards.info/scans/en/7e/260.jpg
+image=https://magiccards.info/scans/en/7e/260.jpg
 value=3.983
 rarity=R
 type=Enchantment

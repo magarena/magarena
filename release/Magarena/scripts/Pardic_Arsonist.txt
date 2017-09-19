@@ -1,5 +1,5 @@
 name=Pardic Arsonist
-image=http://magiccards.info/scans/en/tr/105.jpg
+image=https://magiccards.info/scans/en/tr/105.jpg
 value=3.320
 rarity=U
 type=Creature

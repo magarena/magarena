@@ -1,5 +1,5 @@
 name=Festering Goblin
-image=http://magiccards.info/scans/en/mma/87.jpg
+image=https://magiccards.info/scans/en/mma/87.jpg
 value=3.812
 rarity=C
 type=Creature

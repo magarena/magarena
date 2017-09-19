@@ -1,5 +1,5 @@
 name=Intervention Pact
-image=http://magiccards.info/scans/en/fut/8.jpg
+image=https://magiccards.info/scans/en/fut/8.jpg
 value=3.640
 rarity=R
 type=Instant

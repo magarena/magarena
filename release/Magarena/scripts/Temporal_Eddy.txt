@@ -1,5 +1,5 @@
 name=Temporal Eddy
-image=http://magiccards.info/scans/en/ts/85.jpg
+image=https://magiccards.info/scans/en/ts/85.jpg
 value=2.580
 rarity=C
 type=Sorcery

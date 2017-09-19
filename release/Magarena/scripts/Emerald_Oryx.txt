@@ -1,5 +1,5 @@
 name=Emerald Oryx
-image=http://magiccards.info/scans/en/m10/179.jpg
+image=https://magiccards.info/scans/en/m10/179.jpg
 value=1.550
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Barter in Blood
-image=http://magiccards.info/scans/en/avr/85.jpg
+image=https://magiccards.info/scans/en/avr/85.jpg
 image_updated=2016-02-29
 value=3.764
 removal=4

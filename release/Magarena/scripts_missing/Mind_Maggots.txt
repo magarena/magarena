@@ -1,5 +1,5 @@
 name=Mind Maggots
-image=http://magiccards.info/scans/en/ex/66.jpg
+image=https://magiccards.info/scans/en/ex/66.jpg
 value=3.425
 rarity=U
 type=Creature

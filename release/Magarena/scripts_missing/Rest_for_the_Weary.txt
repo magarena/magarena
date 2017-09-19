@@ -1,5 +1,5 @@
 name=Rest for the Weary
-image=http://magiccards.info/scans/en/wwk/18.jpg
+image=https://magiccards.info/scans/en/wwk/18.jpg
 value=3.636
 rarity=C
 type=Instant

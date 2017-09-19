@@ -1,5 +1,5 @@
 name=Impetuous Sunchaser
-image=http://magiccards.info/scans/en/bng/99.jpg
+image=https://magiccards.info/scans/en/bng/99.jpg
 value=3.628
 rarity=C
 type=Creature

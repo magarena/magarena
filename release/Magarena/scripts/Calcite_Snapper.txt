@@ -1,5 +1,5 @@
 name=Calcite Snapper
-image=http://magiccards.info/scans/en/wwk/25.jpg
+image=https://magiccards.info/scans/en/wwk/25.jpg
 value=3.791
 rarity=C
 type=Creature

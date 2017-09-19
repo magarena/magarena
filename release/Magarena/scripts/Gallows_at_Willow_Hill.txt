@@ -1,5 +1,5 @@
 name=Gallows at Willow Hill
-image=http://magiccards.info/scans/en/avr/215.jpg
+image=https://magiccards.info/scans/en/avr/215.jpg
 value=2.670
 rarity=R
 type=Artifact

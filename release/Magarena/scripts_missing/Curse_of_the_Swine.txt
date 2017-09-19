@@ -1,5 +1,5 @@
 name=Curse of the Swine
-image=http://magiccards.info/scans/en/ths/46.jpg
+image=https://magiccards.info/scans/en/ths/46.jpg
 value=3.805
 rarity=R
 type=Sorcery

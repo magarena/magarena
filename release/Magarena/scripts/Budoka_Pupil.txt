@@ -1,5 +1,5 @@
 name=Budoka Pupil
-image=http://magiccards.info/scans/en/bok/122a.jpg
+image=https://magiccards.info/scans/en/bok/122a.jpg
 value=3.019
 rarity=U
 type=Creature

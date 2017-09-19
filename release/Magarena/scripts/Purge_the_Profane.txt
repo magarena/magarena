@@ -1,5 +1,5 @@
 name=Purge the Profane
-image=http://magiccards.info/scans/en/gtc/190.jpg
+image=https://magiccards.info/scans/en/gtc/190.jpg
 value=2.176
 rarity=C
 type=Sorcery

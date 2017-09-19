@@ -1,5 +1,5 @@
 name=Rimewind Taskmage
-image=http://magiccards.info/scans/en/cs/44.jpg
+image=https://magiccards.info/scans/en/cs/44.jpg
 value=3.197
 rarity=C
 type=Creature

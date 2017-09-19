@@ -1,5 +1,5 @@
 name=Reveille Squad
-image=http://magiccards.info/scans/en/pr/18.jpg
+image=https://magiccards.info/scans/en/pr/18.jpg
 value=3.824
 rarity=U
 type=Creature

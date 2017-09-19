@@ -1,5 +1,5 @@
 name=Hoverguard Observer
-image=http://magiccards.info/scans/en/ds/22.jpg
+image=https://magiccards.info/scans/en/ds/22.jpg
 value=1.924
 rarity=U
 type=Creature

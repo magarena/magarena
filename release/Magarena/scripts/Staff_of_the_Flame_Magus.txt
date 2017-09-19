@@ -1,5 +1,5 @@
 name=Staff of the Flame Magus
-image=http://magiccards.info/scans/en/m15/233.jpg
+image=https://magiccards.info/scans/en/m15/233.jpg
 value=1.417
 rarity=U
 type=Artifact

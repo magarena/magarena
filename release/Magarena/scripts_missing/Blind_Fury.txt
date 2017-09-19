@@ -1,5 +1,5 @@
 name=Blind Fury
-image=http://magiccards.info/scans/en/mr/158.jpg
+image=https://magiccards.info/scans/en/mr/158.jpg
 value=3.530
 rarity=U
 type=Instant

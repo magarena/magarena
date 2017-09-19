@@ -1,5 +1,5 @@
 name=Lotus Petal
-image=http://magiccards.info/scans/en/tp/284.jpg
+image=https://magiccards.info/scans/en/tp/284.jpg
 value=4.595
 rarity=C
 type=Artifact

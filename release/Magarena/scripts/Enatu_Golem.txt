@@ -1,5 +1,5 @@
 name=Enatu Golem
-image=http://magiccards.info/scans/en/roe/217.jpg
+image=https://magiccards.info/scans/en/roe/217.jpg
 value=1.963
 rarity=U
 type=Artifact,Creature

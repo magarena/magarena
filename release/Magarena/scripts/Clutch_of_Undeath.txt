@@ -1,5 +1,5 @@
 name=Clutch of Undeath
-image=http://magiccards.info/scans/en/sc/61.jpg
+image=https://magiccards.info/scans/en/sc/61.jpg
 value=2.013
 rarity=C
 type=Enchantment

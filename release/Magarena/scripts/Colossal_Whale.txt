@@ -1,5 +1,5 @@
 name=Colossal Whale
-image=http://magiccards.info/scans/en/m14/48.jpg
+image=https://magiccards.info/scans/en/m14/48.jpg
 value=3.641
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Bequeathal
-image=http://magiccards.info/scans/en/ex/106.jpg
+image=https://magiccards.info/scans/en/ex/106.jpg
 value=4.034
 rarity=C
 type=Enchantment

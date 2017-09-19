@@ -1,5 +1,5 @@
 name=Kagemaro's Clutch
-image=http://magiccards.info/scans/en/sok/74.jpg
+image=https://magiccards.info/scans/en/sok/74.jpg
 value=1.839
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Merchant Ship
-image=http://magiccards.info/scans/en/an/23.jpg
+image=https://magiccards.info/scans/en/an/23.jpg
 value=2.130
 rarity=U
 type=Creature

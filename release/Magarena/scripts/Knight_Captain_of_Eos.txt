@@ -1,5 +1,5 @@
 name=Knight-Captain of Eos
-image=http://magiccards.info/scans/en/ala/17.jpg
+image=https://magiccards.info/scans/en/ala/17.jpg
 value=3.095
 rarity=R
 type=Creature

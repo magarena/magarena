@@ -1,5 +1,5 @@
 name=Aquitect's Will
-image=http://magiccards.info/scans/en/lw/52.jpg
+image=https://magiccards.info/scans/en/lw/52.jpg
 value=3.611
 rarity=C
 type=Tribal,Sorcery

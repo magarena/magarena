@@ -1,5 +1,5 @@
 name=Gloomlance
-image=http://magiccards.info/scans/en/shm/67.jpg
+image=https://magiccards.info/scans/en/shm/67.jpg
 value=2.216
 rarity=C
 type=Sorcery

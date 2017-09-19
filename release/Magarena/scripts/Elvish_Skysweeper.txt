@@ -1,5 +1,5 @@
 name=Elvish Skysweeper
-image=http://magiccards.info/scans/en/c14/192.jpg
+image=https://magiccards.info/scans/en/c14/192.jpg
 value=3.150
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Compelling Deterrence
-image=http://magiccards.info/scans/en/soi/52.jpg
+image=https://magiccards.info/scans/en/soi/52.jpg
 image_updated=2016-06-04
 value=2.500
 rarity=U

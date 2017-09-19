@@ -1,5 +1,5 @@
 name=Magnetic Mountain
-image=http://magiccards.info/scans/en/4e/227.jpg
+image=https://magiccards.info/scans/en/4e/227.jpg
 value=3.227
 rarity=R
 type=Enchantment

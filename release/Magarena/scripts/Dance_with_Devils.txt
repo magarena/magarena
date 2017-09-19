@@ -1,5 +1,5 @@
 name=Dance with Devils
-image=http://magiccards.info/scans/en/soi/150.jpg
+image=https://magiccards.info/scans/en/soi/150.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Treva's Ruins
-image=http://magiccards.info/scans/en/ps/143.jpg
+image=https://magiccards.info/scans/en/ps/143.jpg
 value=4.176
 rarity=U
 type=Land

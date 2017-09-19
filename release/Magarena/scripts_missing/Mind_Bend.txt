@@ -1,5 +1,5 @@
 name=Mind Bend
-image=http://magiccards.info/scans/en/10e/93.jpg
+image=https://magiccards.info/scans/en/10e/93.jpg
 value=3.885
 rarity=R
 type=Instant

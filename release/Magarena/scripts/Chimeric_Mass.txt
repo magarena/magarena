@@ -1,5 +1,5 @@
 name=Chimeric Mass
-image=http://magiccards.info/scans/en/mm2/204.jpg
+image=https://magiccards.info/scans/en/mm2/204.jpg
 value=3.624
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Coral Eel
-image=http://magiccards.info/scans/en/9eb/3.jpg
+image=https://magiccards.info/scans/en/9eb/3.jpg
 image_updated=2015-05-17
 value=2.241
 rarity=C

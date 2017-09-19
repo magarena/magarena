@@ -1,5 +1,5 @@
 name=Weathered Wayfarer
-image=http://magiccards.info/scans/en/9e/54.jpg
+image=https://magiccards.info/scans/en/9e/54.jpg
 value=4.295
 rarity=R
 type=Creature

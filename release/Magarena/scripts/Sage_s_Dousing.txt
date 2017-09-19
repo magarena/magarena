@@ -1,5 +1,5 @@
 name=Sage's Dousing
-image=http://magiccards.info/scans/en/mt/48.jpg
+image=https://magiccards.info/scans/en/mt/48.jpg
 value=3.533
 rarity=U
 type=Tribal,Instant

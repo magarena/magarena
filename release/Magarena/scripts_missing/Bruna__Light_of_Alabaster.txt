@@ -1,5 +1,5 @@
 name=Bruna, Light of Alabaster
-image=http://magiccards.info/scans/en/avr/208.jpg
+image=https://magiccards.info/scans/en/avr/208.jpg
 value=3.967
 rarity=M
 type=Legendary,Creature

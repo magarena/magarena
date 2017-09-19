@@ -1,5 +1,5 @@
 name=Contagious Nim
-image=http://magiccards.info/scans/en/som/58.jpg
+image=https://magiccards.info/scans/en/som/58.jpg
 value=3.051
 rarity=C
 type=Creature

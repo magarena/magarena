@@ -1,5 +1,5 @@
 name=Marath, Will of the Wild
-image=http://magiccards.info/scans/en/c13/198.jpg
+image=https://magiccards.info/scans/en/c13/198.jpg
 value=3.920
 rarity=M
 type=Legendary,Creature

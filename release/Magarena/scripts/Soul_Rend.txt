@@ -1,5 +1,5 @@
 name=Soul Rend
-image=http://magiccards.info/scans/en/mr/42.jpg
+image=https://magiccards.info/scans/en/mr/42.jpg
 value=3.297
 rarity=U
 type=Instant

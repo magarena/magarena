@@ -1,5 +1,5 @@
 name=Crumbling Sanctuary
-image=http://magiccards.info/scans/en/mm/292.jpg
+image=https://magiccards.info/scans/en/mm/292.jpg
 value=3.430
 rarity=R
 type=Artifact

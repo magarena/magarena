@@ -1,5 +1,5 @@
 name=Ancestor's Chosen
-image=http://magiccards.info/scans/en/10e/1.jpg
+image=https://magiccards.info/scans/en/10e/1.jpg
 value=3.105
 rarity=U
 type=Creature

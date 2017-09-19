@@ -1,5 +1,5 @@
 name=Sorceress Queen
-image=http://magiccards.info/scans/en/5e/56.jpg
+image=https://magiccards.info/scans/en/5e/56.jpg
 value=4.195
 rarity=R
 type=Creature

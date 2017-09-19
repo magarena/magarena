@@ -1,5 +1,5 @@
 name=Stoneshock Giant
-image=http://magiccards.info/scans/en/cn2/169.jpg
+image=https://magiccards.info/scans/en/cn2/169.jpg
 image_updated=2016-01-09
 value=3.106
 rarity=U

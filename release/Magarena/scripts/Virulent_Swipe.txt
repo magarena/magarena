@@ -1,5 +1,5 @@
 name=Virulent Swipe
-image=http://magiccards.info/scans/en/roe/131.jpg
+image=https://magiccards.info/scans/en/roe/131.jpg
 value=4.160
 rarity=U
 type=Instant

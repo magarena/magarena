@@ -1,5 +1,5 @@
 name=Cave Sense
-image=http://magiccards.info/scans/en/mm/179.jpg
+image=https://magiccards.info/scans/en/mm/179.jpg
 value=1.897
 rarity=C
 type=Enchantment

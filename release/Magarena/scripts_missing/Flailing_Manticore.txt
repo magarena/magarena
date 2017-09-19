@@ -1,5 +1,5 @@
 name=Flailing Manticore
-image=http://magiccards.info/scans/en/mm/187.jpg
+image=https://magiccards.info/scans/en/mm/187.jpg
 value=3.186
 rarity=R
 type=Creature

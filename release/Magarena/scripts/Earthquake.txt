@@ -1,5 +1,5 @@
 name=Earthquake
-image=http://magiccards.info/scans/en/cmd/121.jpg
+image=https://magiccards.info/scans/en/cmd/121.jpg
 image_updated=2016-02-29
 value=4.260
 removal=2

@@ -1,5 +1,5 @@
 name=Crosis's Attendant
-image=http://magiccards.info/scans/en/in/300.jpg
+image=https://magiccards.info/scans/en/in/300.jpg
 value=3.944
 rarity=U
 type=Artifact,Creature

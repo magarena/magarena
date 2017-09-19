@@ -1,5 +1,5 @@
 name=Liliana, Death Wielder
-image=http://magiccards.info/scans/en/akh/275.jpg
+image=https://magiccards.info/scans/en/akh/275.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

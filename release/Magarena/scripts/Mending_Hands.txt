@@ -1,5 +1,5 @@
 name=Mending Hands
-image=http://magiccards.info/scans/en/9e/29.jpg
+image=https://magiccards.info/scans/en/9e/29.jpg
 value=2.757
 rarity=C
 type=Instant

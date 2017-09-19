@@ -1,5 +1,5 @@
 name=Aysen Bureaucrats
-image=http://magiccards.info/scans/en/5e/285.jpg
+image=https://magiccards.info/scans/en/5e/285.jpg
 value=2.167
 rarity=C
 type=Creature

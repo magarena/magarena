@@ -1,5 +1,5 @@
 name=Bringer of the Red Dawn
-image=http://magiccards.info/scans/en/5dn/62.jpg
+image=https://magiccards.info/scans/en/5dn/62.jpg
 value=4.196
 rarity=R
 type=Creature

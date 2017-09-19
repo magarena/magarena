@@ -1,5 +1,5 @@
 name=Goblin Grappler
-image=http://magiccards.info/scans/en/le/100.jpg
+image=https://magiccards.info/scans/en/le/100.jpg
 value=3.625
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Necrogen Scudder
-image=http://magiccards.info/scans/en/m15/106.jpg
+image=https://magiccards.info/scans/en/m15/106.jpg
 value=3.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Djinn of Infinite Deceits
-image=http://magiccards.info/scans/en/c13/41.jpg
+image=https://magiccards.info/scans/en/c13/41.jpg
 value=3.810
 rarity=R
 type=Creature

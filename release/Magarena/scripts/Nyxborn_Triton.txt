@@ -1,5 +1,5 @@
 name=Nyxborn Triton
-image=http://magiccards.info/scans/en/bng/46.jpg
+image=https://magiccards.info/scans/en/bng/46.jpg
 value=3.114
 rarity=C
 type=Enchantment,Creature

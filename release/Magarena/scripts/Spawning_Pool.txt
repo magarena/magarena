@@ -1,5 +1,5 @@
 name=Spawning Pool
-image=http://magiccards.info/scans/en/10e/358.jpg
+image=https://magiccards.info/scans/en/10e/358.jpg
 value=4.044
 rarity=U
 type=Land

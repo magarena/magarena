@@ -1,5 +1,5 @@
 name=Rain of Blades
-image=http://magiccards.info/scans/en/m13/28.jpg
+image=https://magiccards.info/scans/en/m13/28.jpg
 value=2.824
 rarity=U
 type=Instant

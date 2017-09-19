@@ -1,5 +1,5 @@
 name=Moment of Heroism
-image=http://magiccards.info/scans/en/cns/74.jpg
+image=https://magiccards.info/scans/en/cns/74.jpg
 value=3.875
 rarity=C
 type=Instant

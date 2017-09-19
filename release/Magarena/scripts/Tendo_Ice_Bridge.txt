@@ -1,5 +1,5 @@
 name=Tendo Ice Bridge
-image=http://magiccards.info/scans/en/bok/165.jpg
+image=https://magiccards.info/scans/en/bok/165.jpg
 value=4.282
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Barrenton Medic
-image=http://magiccards.info/scans/en/shm/4.jpg
+image=https://magiccards.info/scans/en/shm/4.jpg
 value=1.689
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mental Misstep
-image=http://magiccards.info/scans/en/nph/38.jpg
+image=https://magiccards.info/scans/en/nph/38.jpg
 value=4.441
 rarity=U
 type=Instant

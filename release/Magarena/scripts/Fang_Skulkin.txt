@@ -1,5 +1,5 @@
 name=Fang Skulkin
-image=http://magiccards.info/scans/en/eve/168.jpg
+image=https://magiccards.info/scans/en/eve/168.jpg
 value=2.759
 rarity=C
 type=Artifact,Creature

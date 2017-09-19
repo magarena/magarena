@@ -1,5 +1,5 @@
 name=Dungeon Geists
-image=http://magiccards.info/scans/en/dka/36.jpg
+image=https://magiccards.info/scans/en/dka/36.jpg
 value=3.769
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Godsire
-image=http://magiccards.info/scans/en/ala/170.jpg
+image=https://magiccards.info/scans/en/ala/170.jpg
 value=4.015
 rarity=M
 type=Creature

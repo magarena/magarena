@@ -1,5 +1,5 @@
 name=Trade Caravan
-image=http://magiccards.info/scans/en/hl/124.jpg
+image=https://magiccards.info/scans/en/hl/124.jpg
 value=2.590
 rarity=C
 type=Creature

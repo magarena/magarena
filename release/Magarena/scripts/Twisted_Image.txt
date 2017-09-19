@@ -1,5 +1,5 @@
 name=Twisted Image
-image=http://magiccards.info/scans/en/som/50.jpg
+image=https://magiccards.info/scans/en/som/50.jpg
 value=3.797
 rarity=U
 type=Instant

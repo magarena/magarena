@@ -1,5 +1,5 @@
 name=Quiet Purity
-image=http://magiccards.info/scans/en/chk/39.jpg
+image=https://magiccards.info/scans/en/chk/39.jpg
 value=3.514
 removal=1
 rarity=C

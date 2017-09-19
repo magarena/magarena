@@ -1,5 +1,5 @@
 name=Pure Reflection
-image=http://magiccards.info/scans/en/in/27.jpg
+image=https://magiccards.info/scans/en/in/27.jpg
 value=3.554
 rarity=R
 type=Enchantment

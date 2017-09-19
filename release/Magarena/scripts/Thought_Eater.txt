@@ -1,5 +1,5 @@
 name=Thought Eater
-image=http://magiccards.info/scans/en/od/106.jpg
+image=https://magiccards.info/scans/en/od/106.jpg
 value=2.515
 rarity=U
 type=Creature

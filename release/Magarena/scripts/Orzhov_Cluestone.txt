@@ -1,5 +1,5 @@
 name=Orzhov Cluestone
-image=http://magiccards.info/scans/en/dgm/142.jpg
+image=https://magiccards.info/scans/en/dgm/142.jpg
 image_updated=2016-02-29
 value=2.641
 rarity=C

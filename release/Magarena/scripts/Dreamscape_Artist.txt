@@ -1,5 +1,5 @@
 name=Dreamscape Artist
-image=http://magiccards.info/scans/en/pc/40.jpg
+image=https://magiccards.info/scans/en/pc/40.jpg
 value=3.912
 rarity=C
 type=Creature

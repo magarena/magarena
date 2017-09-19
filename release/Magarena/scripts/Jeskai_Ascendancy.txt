@@ -1,5 +1,5 @@
 name=Jeskai Ascendancy
-image=http://magiccards.info/scans/en/ktk/180.jpg
+image=https://magiccards.info/scans/en/ktk/180.jpg
 value=3.667
 rarity=R
 type=Enchantment

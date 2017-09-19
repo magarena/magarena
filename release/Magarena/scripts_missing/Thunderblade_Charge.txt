@@ -1,5 +1,5 @@
 name=Thunderblade Charge
-image=http://magiccards.info/scans/en/fut/124.jpg
+image=https://magiccards.info/scans/en/fut/124.jpg
 value=3.343
 rarity=R
 type=Sorcery

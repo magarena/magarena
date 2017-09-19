@@ -1,5 +1,5 @@
 name=Mind Ravel
-image=http://magiccards.info/scans/en/5e/38.jpg
+image=https://magiccards.info/scans/en/5e/38.jpg
 value=2.846
 rarity=C
 type=Sorcery

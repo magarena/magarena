@@ -1,5 +1,5 @@
 name=Horrifying Revelation
-image=http://magiccards.info/scans/en/mbs/45.jpg
+image=https://magiccards.info/scans/en/mbs/45.jpg
 value=2.961
 rarity=C
 type=Sorcery

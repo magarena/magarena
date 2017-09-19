@@ -1,5 +1,5 @@
 name=Icatian Javelineers
-image=http://magiccards.info/scans/en/tsts/10.jpg
+image=https://magiccards.info/scans/en/tsts/10.jpg
 image_updated=2016-12-13
 value=4.326
 rarity=C

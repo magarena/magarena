@@ -1,5 +1,5 @@
 name=Jungle Troll
-image=http://magiccards.info/scans/en/mr/329.jpg
+image=https://magiccards.info/scans/en/mr/329.jpg
 value=3.176
 rarity=U
 type=Creature

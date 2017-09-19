@@ -1,5 +1,5 @@
 name=Yellow Scarves Troops
-image=http://magiccards.info/scans/en/p3k/127.jpg
+image=https://magiccards.info/scans/en/p3k/127.jpg
 value=2.420
 rarity=C
 type=Creature

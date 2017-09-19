@@ -1,5 +1,5 @@
 name=Atalya, Samite Master
-image=http://magiccards.info/scans/en/in/4.jpg
+image=https://magiccards.info/scans/en/in/4.jpg
 value=3.144
 rarity=R
 type=Legendary,Creature

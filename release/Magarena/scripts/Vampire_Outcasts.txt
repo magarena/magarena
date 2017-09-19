@@ -1,5 +1,5 @@
 name=Vampire Outcasts
-image=http://magiccards.info/scans/en/mm2/102.jpg
+image=https://magiccards.info/scans/en/mm2/102.jpg
 value=2.962
 rarity=U
 type=Creature

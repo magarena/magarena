@@ -1,5 +1,5 @@
 name=Flesh Allergy
-image=http://magiccards.info/scans/en/som/62.jpg
+image=https://magiccards.info/scans/en/som/62.jpg
 value=2.853
 rarity=U
 type=Sorcery

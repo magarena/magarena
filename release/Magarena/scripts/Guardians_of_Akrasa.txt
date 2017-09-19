@@ -1,5 +1,5 @@
 name=Guardians of Akrasa
-image=http://magiccards.info/scans/en/m13/18.jpg
+image=https://magiccards.info/scans/en/m13/18.jpg
 value=2.875
 rarity=C
 type=Creature

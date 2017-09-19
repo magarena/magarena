@@ -1,5 +1,5 @@
 name=Trigon of Thought
-image=http://magiccards.info/scans/en/som/217.jpg
+image=https://magiccards.info/scans/en/som/217.jpg
 value=2.038
 rarity=U
 type=Artifact

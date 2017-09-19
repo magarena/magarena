@@ -1,5 +1,5 @@
 name=Lifespinner
-image=http://magiccards.info/scans/en/bok/133.jpg
+image=https://magiccards.info/scans/en/bok/133.jpg
 value=3.194
 rarity=U
 type=Creature

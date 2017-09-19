@@ -1,6 +1,6 @@
 name=1/1 white Warrior creature token
 token=Warrior
-image=http://magiccards.info/extras/token/dragons-of-tarkir/warrior.jpg
+image=https://magiccards.info/extras/token/dragons-of-tarkir/warrior.jpg
 value=1
 type=Creature
 subtype=Warrior

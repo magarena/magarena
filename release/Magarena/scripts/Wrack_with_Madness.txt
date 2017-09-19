@@ -1,5 +1,5 @@
 name=Wrack with Madness
-image=http://magiccards.info/scans/en/dka/107.jpg
+image=https://magiccards.info/scans/en/dka/107.jpg
 value=2.713
 removal=3
 rarity=C

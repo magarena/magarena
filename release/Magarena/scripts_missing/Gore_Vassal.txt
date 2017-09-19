@@ -1,5 +1,5 @@
 name=Gore Vassal
-image=http://magiccards.info/scans/en/mbs/7.jpg
+image=https://magiccards.info/scans/en/mbs/7.jpg
 value=2.854
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ashen Rider
-image=http://magiccards.info/scans/en/ths/187.jpg
+image=https://magiccards.info/scans/en/ths/187.jpg
 value=3.992
 rarity=M
 type=Creature

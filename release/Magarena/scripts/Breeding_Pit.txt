@@ -1,5 +1,5 @@
 name=Breeding Pit
-image=http://magiccards.info/scans/en/5e/10.jpg
+image=https://magiccards.info/scans/en/5e/10.jpg
 image_updated=2016-11-20
 value=3.344
 rarity=U

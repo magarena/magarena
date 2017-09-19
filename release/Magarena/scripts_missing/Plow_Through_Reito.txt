@@ -1,5 +1,5 @@
 name=Plow Through Reito
-image=http://magiccards.info/scans/en/sok/22.jpg
+image=https://magiccards.info/scans/en/sok/22.jpg
 value=2.277
 rarity=C
 type=Instant

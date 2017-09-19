@@ -1,5 +1,5 @@
 name=Phantasmal Fiend
-image=http://magiccards.info/scans/en/cstd/30.jpg
+image=https://magiccards.info/scans/en/cstd/30.jpg
 value=2.887
 rarity=C
 type=Creature

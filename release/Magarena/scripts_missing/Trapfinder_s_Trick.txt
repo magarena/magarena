@@ -1,5 +1,5 @@
 name=Trapfinder's Trick
-image=http://magiccards.info/scans/en/zen/73.jpg
+image=https://magiccards.info/scans/en/zen/73.jpg
 value=1.467
 rarity=C
 type=Sorcery

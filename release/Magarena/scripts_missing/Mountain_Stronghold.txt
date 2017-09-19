@@ -1,5 +1,5 @@
 name=Mountain Stronghold
-image=http://magiccards.info/scans/en/lg/249.jpg
+image=https://magiccards.info/scans/en/lg/249.jpg
 value=1.290
 rarity=U
 type=Land

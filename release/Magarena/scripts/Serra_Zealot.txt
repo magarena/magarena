@@ -1,5 +1,5 @@
 name=Serra Zealot
-image=http://magiccards.info/scans/en/us/46.jpg
+image=https://magiccards.info/scans/en/us/46.jpg
 value=3.325
 rarity=C
 type=Creature

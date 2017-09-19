@@ -1,5 +1,5 @@
 name=Gerrard's Irregulars
-image=http://magiccards.info/scans/en/mm/192.jpg
+image=https://magiccards.info/scans/en/mm/192.jpg
 value=2.984
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rummaging Wizard
-image=http://magiccards.info/scans/en/on/110.jpg
+image=https://magiccards.info/scans/en/on/110.jpg
 value=2.523
 rarity=U
 type=Creature

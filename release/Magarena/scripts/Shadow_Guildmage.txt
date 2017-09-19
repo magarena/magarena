@@ -1,5 +1,5 @@
 name=Shadow Guildmage
-image=http://magiccards.info/scans/en/tsts/46.jpg
+image=https://magiccards.info/scans/en/tsts/46.jpg
 value=4.195
 rarity=C
 type=Creature

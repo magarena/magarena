@@ -1,5 +1,5 @@
 name=Goliath Spider
-image=http://magiccards.info/scans/en/rav/168.jpg
+image=https://magiccards.info/scans/en/rav/168.jpg
 value=3.164
 rarity=U
 type=Creature

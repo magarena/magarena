@@ -1,5 +1,5 @@
 name=Puresteel Paladin
-image=http://magiccards.info/scans/en/nph/20.jpg
+image=https://magiccards.info/scans/en/nph/20.jpg
 value=4.138
 rarity=R
 type=Creature

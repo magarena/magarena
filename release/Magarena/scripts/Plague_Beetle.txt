@@ -1,5 +1,5 @@
 name=Plague Beetle
-image=http://magiccards.info/scans/en/10e/168.jpg
+image=https://magiccards.info/scans/en/10e/168.jpg
 value=2.681
 rarity=C
 type=Creature

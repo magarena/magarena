@@ -1,5 +1,5 @@
 name=Maddening Wind
-image=http://magiccards.info/scans/en/ia/142.jpg
+image=https://magiccards.info/scans/en/ia/142.jpg
 value=2.583
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Eternal Warrior
-image=http://magiccards.info/scans/en/5e/225.jpg
+image=https://magiccards.info/scans/en/5e/225.jpg
 value=2.649
 rarity=C
 type=Enchantment

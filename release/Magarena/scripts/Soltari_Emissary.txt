@@ -1,5 +1,5 @@
 name=Soltari Emissary
-image=http://magiccards.info/scans/en/tp/254.jpg
+image=https://magiccards.info/scans/en/tp/254.jpg
 value=3.758
 rarity=R
 type=Creature

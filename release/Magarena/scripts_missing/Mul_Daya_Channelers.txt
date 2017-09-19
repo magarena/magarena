@@ -1,5 +1,5 @@
 name=Mul Daya Channelers
-image=http://magiccards.info/scans/en/roe/198.jpg
+image=https://magiccards.info/scans/en/roe/198.jpg
 value=4.239
 rarity=R
 type=Creature

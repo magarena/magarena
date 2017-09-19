@@ -1,5 +1,5 @@
 name=Shimmer
-image=http://magiccards.info/scans/en/mr/92.jpg
+image=https://magiccards.info/scans/en/mr/92.jpg
 value=4.363
 rarity=R
 type=Enchantment

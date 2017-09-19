@@ -1,5 +1,5 @@
 name=Wall of Caltrops
-image=http://magiccards.info/scans/en/lg/211.jpg
+image=https://magiccards.info/scans/en/lg/211.jpg
 value=1.333
 rarity=C
 type=Creature

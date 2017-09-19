@@ -1,5 +1,5 @@
 name=Torrent of Lava
-image=http://magiccards.info/scans/en/mr/199.jpg
+image=https://magiccards.info/scans/en/mr/199.jpg
 value=3.306
 rarity=R
 type=Sorcery

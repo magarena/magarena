@@ -1,5 +1,5 @@
 name=Willbreaker
-image=http://magiccards.info/scans/en/ori/84.jpg
+image=https://magiccards.info/scans/en/ori/84.jpg
 image_updated=2015-11-05
 value=2.500
 rarity=R

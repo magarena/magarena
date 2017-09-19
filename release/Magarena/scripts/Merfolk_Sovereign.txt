@@ -1,5 +1,5 @@
 name=Merfolk Sovereign
-image=http://magiccards.info/scans/en/m11/65.jpg
+image=https://magiccards.info/scans/en/m11/65.jpg
 value=4.151
 rarity=R
 type=Creature

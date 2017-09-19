@@ -1,5 +1,5 @@
 name=Geothermal Crevice
-image=http://magiccards.info/scans/en/in/323.jpg
+image=https://magiccards.info/scans/en/in/323.jpg
 value=3.423
 rarity=C
 type=Land

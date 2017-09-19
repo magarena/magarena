@@ -1,5 +1,5 @@
 name=Mana Vortex
-image=http://magiccards.info/scans/en/dk/30.jpg
+image=https://magiccards.info/scans/en/dk/30.jpg
 value=3.542
 rarity=R
 type=Enchantment

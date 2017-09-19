@@ -1,5 +1,5 @@
 name=Irrigation Ditch
-image=http://magiccards.info/scans/en/in/324.jpg
+image=https://magiccards.info/scans/en/in/324.jpg
 value=3.182
 rarity=C
 type=Land

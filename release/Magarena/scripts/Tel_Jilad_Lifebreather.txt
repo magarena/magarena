@@ -1,5 +1,5 @@
 name=Tel-Jilad Lifebreather
-image=http://magiccards.info/scans/en/5dn/96.jpg
+image=https://magiccards.info/scans/en/5dn/96.jpg
 value=1.250
 rarity=C
 type=Creature

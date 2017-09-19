@@ -1,5 +1,5 @@
 name=Triumph of Ferocity
-image=http://magiccards.info/scans/en/avr/198.jpg
+image=https://magiccards.info/scans/en/avr/198.jpg
 value=3.676
 rarity=U
 type=Enchantment

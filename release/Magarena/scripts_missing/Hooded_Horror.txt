@@ -1,5 +1,5 @@
 name=Hooded Horror
-image=http://magiccards.info/scans/en/c13/80.jpg
+image=https://magiccards.info/scans/en/c13/80.jpg
 value=3.324
 rarity=U
 type=Creature

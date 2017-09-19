@@ -1,5 +1,5 @@
 name=Soltari Visionary
-image=http://magiccards.info/scans/en/ex/20.jpg
+image=https://magiccards.info/scans/en/ex/20.jpg
 value=4.368
 rarity=C
 type=Creature

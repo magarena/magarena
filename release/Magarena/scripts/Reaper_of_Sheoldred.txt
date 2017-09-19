@@ -1,5 +1,5 @@
 name=Reaper of Sheoldred
-image=http://magiccards.info/scans/en/nph/72.jpg
+image=https://magiccards.info/scans/en/nph/72.jpg
 value=3.395
 rarity=U
 type=Creature

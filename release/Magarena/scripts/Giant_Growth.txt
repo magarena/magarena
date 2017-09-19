@@ -1,5 +1,5 @@
 name=Giant Growth
-image=http://magiccards.info/scans/en/rtr/125.jpg
+image=https://magiccards.info/scans/en/rtr/125.jpg
 value=4.311
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Coast Watcher
-image=http://magiccards.info/scans/en/sc/30.jpg
+image=https://magiccards.info/scans/en/sc/30.jpg
 value=2.808
 rarity=C
 type=Creature

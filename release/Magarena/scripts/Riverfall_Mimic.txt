@@ -1,5 +1,5 @@
 name=Riverfall Mimic
-image=http://magiccards.info/scans/en/eve/111.jpg
+image=https://magiccards.info/scans/en/eve/111.jpg
 value=3.434
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Boggart Mob
-image=http://magiccards.info/scans/en/lw/104.jpg
+image=https://magiccards.info/scans/en/lw/104.jpg
 value=3.798
 removal=2
 rarity=R

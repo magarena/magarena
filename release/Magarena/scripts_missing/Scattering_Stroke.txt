@@ -1,5 +1,5 @@
 name=Scattering Stroke
-image=http://magiccards.info/scans/en/cmd/60.jpg
+image=https://magiccards.info/scans/en/cmd/60.jpg
 value=2.757
 rarity=U
 type=Instant

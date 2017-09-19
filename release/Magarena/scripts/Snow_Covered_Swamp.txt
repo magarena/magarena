@@ -1,5 +1,5 @@
 name=Snow-Covered Swamp
-image=http://magiccards.info/scans/en/cs/153.jpg
+image=https://magiccards.info/scans/en/cs/153.jpg
 value=4.571
 rarity=B
 type=Basic,Snow,Land

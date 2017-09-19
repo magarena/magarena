@@ -1,5 +1,5 @@
 name=Chain Stasis
-image=http://magiccards.info/scans/en/hl/28.jpg
+image=https://magiccards.info/scans/en/hl/28.jpg
 value=3.120
 rarity=R
 type=Instant

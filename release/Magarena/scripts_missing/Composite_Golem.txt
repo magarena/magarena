@@ -1,5 +1,5 @@
 name=Composite Golem
-image=http://magiccards.info/scans/en/10e/318.jpg
+image=https://magiccards.info/scans/en/10e/318.jpg
 value=4.014
 rarity=U
 type=Artifact,Creature

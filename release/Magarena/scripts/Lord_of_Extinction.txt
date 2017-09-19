@@ -1,5 +1,5 @@
 name=Lord of Extinction
-image=http://magiccards.info/scans/en/arb/91.jpg
+image=https://magiccards.info/scans/en/arb/91.jpg
 value=4.104
 rarity=M
 type=Creature

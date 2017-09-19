@@ -1,5 +1,5 @@
 name=Reaping the Rewards
-image=http://magiccards.info/scans/en/ex/16.jpg
+image=https://magiccards.info/scans/en/ex/16.jpg
 value=2.143
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Tattermunge Duo
-image=http://magiccards.info/scans/en/shm/218.jpg
+image=https://magiccards.info/scans/en/shm/218.jpg
 value=2.838
 rarity=C
 type=Creature

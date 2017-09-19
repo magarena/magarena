@@ -1,5 +1,5 @@
 name=Land's Edge
-image=http://magiccards.info/scans/en/lg/155.jpg
+image=https://magiccards.info/scans/en/lg/155.jpg
 image_updated=2016-12-21
 value=3.462
 rarity=R

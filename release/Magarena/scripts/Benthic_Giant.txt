@@ -1,5 +1,5 @@
 name=Benthic Giant
-image=http://magiccards.info/scans/en/ths/41.jpg
+image=https://magiccards.info/scans/en/ths/41.jpg
 value=3.090
 rarity=C
 type=Creature

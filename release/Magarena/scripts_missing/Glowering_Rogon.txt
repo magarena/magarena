@@ -1,5 +1,5 @@
 name=Glowering Rogon
-image=http://magiccards.info/scans/en/le/128.jpg
+image=https://magiccards.info/scans/en/le/128.jpg
 value=2.056
 rarity=C
 type=Creature

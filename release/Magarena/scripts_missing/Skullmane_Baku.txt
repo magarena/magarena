@@ -1,5 +1,5 @@
 name=Skullmane Baku
-image=http://magiccards.info/scans/en/bok/83.jpg
+image=https://magiccards.info/scans/en/bok/83.jpg
 value=1.162
 rarity=C
 type=Creature

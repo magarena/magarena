@@ -1,5 +1,5 @@
 name=Rain of Embers
-image=http://magiccards.info/scans/en/rav/138.jpg
+image=https://magiccards.info/scans/en/rav/138.jpg
 value=2.797
 rarity=C
 type=Sorcery

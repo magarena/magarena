@@ -1,5 +1,5 @@
 name=Golden Wish
-image=http://magiccards.info/scans/en/ju/12.jpg
+image=https://magiccards.info/scans/en/ju/12.jpg
 value=3.679
 rarity=R
 type=Sorcery

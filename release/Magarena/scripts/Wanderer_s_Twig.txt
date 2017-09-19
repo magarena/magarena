@@ -1,5 +1,5 @@
 name=Wanderer's Twig
-image=http://magiccards.info/scans/en/lw/265.jpg
+image=https://magiccards.info/scans/en/lw/265.jpg
 value=2.795
 rarity=C
 type=Artifact

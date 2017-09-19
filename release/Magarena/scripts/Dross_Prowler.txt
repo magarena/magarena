@@ -1,5 +1,5 @@
 name=Dross Prowler
-image=http://magiccards.info/scans/en/mi/64.jpg
+image=https://magiccards.info/scans/en/mi/64.jpg
 value=2.217
 rarity=C
 type=Creature

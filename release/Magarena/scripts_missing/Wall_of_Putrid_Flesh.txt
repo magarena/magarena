@@ -1,5 +1,5 @@
 name=Wall of Putrid Flesh
-image=http://magiccards.info/scans/en/lg/41.jpg
+image=https://magiccards.info/scans/en/lg/41.jpg
 value=2.632
 rarity=U
 type=Creature

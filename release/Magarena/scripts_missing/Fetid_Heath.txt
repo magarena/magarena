@@ -1,5 +1,5 @@
 name=Fetid Heath
-image=http://magiccards.info/scans/en/eve/176.jpg
+image=https://magiccards.info/scans/en/eve/176.jpg
 value=4.384
 rarity=R
 type=Land

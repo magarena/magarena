@@ -1,5 +1,5 @@
 name=Soltari Foot Soldier
-image=http://magiccards.info/scans/en/tp/255.jpg
+image=https://magiccards.info/scans/en/tp/255.jpg
 image_updated=2017-01-08
 value=4.043
 rarity=C

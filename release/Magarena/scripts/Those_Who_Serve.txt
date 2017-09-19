@@ -1,5 +1,5 @@
 name=Those Who Serve
-image=http://magiccards.info/scans/en/akh/32.jpg
+image=https://magiccards.info/scans/en/akh/32.jpg
 value=2.500
 rarity=C
 type=Creature

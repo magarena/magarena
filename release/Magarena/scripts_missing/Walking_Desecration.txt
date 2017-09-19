@@ -1,5 +1,5 @@
 name=Walking Desecration
-image=http://magiccards.info/scans/en/on/180.jpg
+image=https://magiccards.info/scans/en/on/180.jpg
 value=3.079
 rarity=U
 type=Creature

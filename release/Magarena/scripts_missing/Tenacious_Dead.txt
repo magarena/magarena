@@ -1,5 +1,5 @@
 name=Tenacious Dead
-image=http://magiccards.info/scans/en/m14/118.jpg
+image=https://magiccards.info/scans/en/m14/118.jpg
 value=3.578
 rarity=U
 type=Creature

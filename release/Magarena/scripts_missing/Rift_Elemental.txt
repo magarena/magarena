@@ -1,5 +1,5 @@
 name=Rift Elemental
-image=http://magiccards.info/scans/en/mma/127.jpg
+image=https://magiccards.info/scans/en/mma/127.jpg
 value=3.867
 rarity=C
 type=Creature

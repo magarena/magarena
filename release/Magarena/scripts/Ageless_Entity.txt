@@ -1,5 +1,5 @@
 name=Ageless Entity
-image=http://magiccards.info/scans/en/ds/73.jpg
+image=https://magiccards.info/scans/en/ds/73.jpg
 value=4.273
 rarity=R
 type=Creature

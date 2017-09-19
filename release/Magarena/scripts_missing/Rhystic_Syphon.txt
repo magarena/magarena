@@ -1,5 +1,5 @@
 name=Rhystic Syphon
-image=http://magiccards.info/scans/en/pr/76.jpg
+image=https://magiccards.info/scans/en/pr/76.jpg
 value=3.094
 rarity=U
 type=Sorcery

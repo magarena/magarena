@@ -1,5 +1,5 @@
 name=Wu Spy
-image=http://magiccards.info/scans/en/p3k/63.jpg
+image=https://magiccards.info/scans/en/p3k/63.jpg
 value=3.750
 rarity=U
 type=Creature

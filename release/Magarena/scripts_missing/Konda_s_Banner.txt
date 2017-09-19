@@ -1,5 +1,5 @@
 name=Konda's Banner
-image=http://magiccards.info/scans/en/chk/259.jpg
+image=https://magiccards.info/scans/en/chk/259.jpg
 value=3.698
 rarity=R
 type=Legendary,Artifact

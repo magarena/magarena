@@ -1,5 +1,5 @@
 name=Waking Nightmare
-image=http://magiccards.info/scans/en/mm2/103.jpg
+image=https://magiccards.info/scans/en/mm2/103.jpg
 value=3.306
 rarity=C
 type=Sorcery

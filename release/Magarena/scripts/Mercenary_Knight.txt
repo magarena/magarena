@@ -1,5 +1,5 @@
 name=Mercenary Knight
-image=http://magiccards.info/scans/en/po/22.jpg
+image=https://magiccards.info/scans/en/po/22.jpg
 value=4.076
 rarity=R
 type=Creature

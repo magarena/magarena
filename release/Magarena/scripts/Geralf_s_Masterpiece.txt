@@ -1,5 +1,5 @@
 name=Geralf's Masterpiece
-image=http://magiccards.info/scans/en/soi/65.jpg
+image=https://magiccards.info/scans/en/soi/65.jpg
 value=2.500
 rarity=M
 type=Creature

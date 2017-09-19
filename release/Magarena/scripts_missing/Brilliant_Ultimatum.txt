@@ -1,5 +1,5 @@
 name=Brilliant Ultimatum
-image=http://magiccards.info/scans/en/ala/159.jpg
+image=https://magiccards.info/scans/en/ala/159.jpg
 value=2.920
 rarity=R
 type=Sorcery

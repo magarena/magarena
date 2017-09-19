@@ -1,5 +1,5 @@
 name=Karplusan Minotaur
-image=http://magiccards.info/scans/en/cs/86.jpg
+image=https://magiccards.info/scans/en/cs/86.jpg
 value=3.490
 rarity=R
 type=Creature

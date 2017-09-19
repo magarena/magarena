@@ -1,5 +1,5 @@
 name=Cowardice
-image=http://magiccards.info/scans/en/9e/70.jpg
+image=https://magiccards.info/scans/en/9e/70.jpg
 value=3.645
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Giant Trap Door Spider
-image=http://magiccards.info/scans/en/cstd/42.jpg
+image=https://magiccards.info/scans/en/cstd/42.jpg
 value=3.822
 rarity=U
 type=Creature

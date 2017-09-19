@@ -1,5 +1,5 @@
 name=Stone Calendar
-image=http://magiccards.info/scans/en/dk/108.jpg
+image=https://magiccards.info/scans/en/dk/108.jpg
 value=3.057
 rarity=R
 type=Artifact

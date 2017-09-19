@@ -1,5 +1,5 @@
 name=Clergy en-Vec
-image=http://magiccards.info/scans/en/tp/226.jpg
+image=https://magiccards.info/scans/en/tp/226.jpg
 value=3.367
 rarity=C
 type=Creature

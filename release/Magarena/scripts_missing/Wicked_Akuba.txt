@@ -1,5 +1,5 @@
 name=Wicked Akuba
-image=http://magiccards.info/scans/en/chk/150.jpg
+image=https://magiccards.info/scans/en/chk/150.jpg
 value=3.891
 rarity=C
 type=Creature

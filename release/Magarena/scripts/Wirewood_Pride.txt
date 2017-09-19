@@ -1,5 +1,5 @@
 name=Wirewood Pride
-image=http://magiccards.info/scans/en/on/303.jpg
+image=https://magiccards.info/scans/en/on/303.jpg
 value=3.411
 rarity=C
 type=Instant

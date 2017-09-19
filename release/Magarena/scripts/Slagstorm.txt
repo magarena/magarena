@@ -1,5 +1,5 @@
 name=Slagstorm
-image=http://magiccards.info/scans/en/mbs/75.jpg
+image=https://magiccards.info/scans/en/mbs/75.jpg
 value=3.957
 rarity=R
 type=Sorcery

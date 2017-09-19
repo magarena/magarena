@@ -1,5 +1,5 @@
 name=Guardian Idol
-image=http://magiccards.info/scans/en/5dn/128.jpg
+image=https://magiccards.info/scans/en/5dn/128.jpg
 value=3.308
 rarity=U
 type=Artifact

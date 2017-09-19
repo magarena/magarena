@@ -1,5 +1,5 @@
 name=Vassal's Duty
-image=http://magiccards.info/scans/en/chk/48.jpg
+image=https://magiccards.info/scans/en/chk/48.jpg
 value=1.054
 rarity=R
 type=Enchantment

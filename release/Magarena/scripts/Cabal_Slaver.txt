@@ -1,5 +1,5 @@
 name=Cabal Slaver
-image=http://magiccards.info/scans/en/on/131.jpg
+image=https://magiccards.info/scans/en/on/131.jpg
 value=3.054
 rarity=U
 type=Creature

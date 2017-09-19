@@ -1,5 +1,5 @@
 name=Seachrome Coast
-image=http://magiccards.info/scans/en/som/229.jpg
+image=https://magiccards.info/scans/en/som/229.jpg
 value=4.271
 rarity=R
 type=Land

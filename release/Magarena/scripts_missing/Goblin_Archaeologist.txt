@@ -1,5 +1,5 @@
 name=Goblin Archaeologist
-image=http://magiccards.info/scans/en/ds/63.jpg
+image=https://magiccards.info/scans/en/ds/63.jpg
 value=2.983
 rarity=U
 type=Creature

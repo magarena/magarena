@@ -1,5 +1,5 @@
 name=Gwyllion Hedge-Mage
-image=http://magiccards.info/scans/en/cmd/202.jpg
+image=https://magiccards.info/scans/en/cmd/202.jpg
 value=3.359
 rarity=U
 type=Creature

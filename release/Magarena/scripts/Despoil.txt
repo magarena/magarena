@@ -1,5 +1,5 @@
 name=Despoil
-image=http://magiccards.info/scans/en/pr/62.jpg
+image=https://magiccards.info/scans/en/pr/62.jpg
 value=3.794
 rarity=C
 type=Sorcery

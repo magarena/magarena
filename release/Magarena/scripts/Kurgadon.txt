@@ -1,5 +1,5 @@
 name=Kurgadon
-image=http://magiccards.info/scans/en/sc/124.jpg
+image=https://magiccards.info/scans/en/sc/124.jpg
 value=3.788
 rarity=U
 type=Creature

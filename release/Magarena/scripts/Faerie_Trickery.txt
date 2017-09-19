@@ -1,5 +1,5 @@
 name=Faerie Trickery
-image=http://magiccards.info/scans/en/lw/62.jpg
+image=https://magiccards.info/scans/en/lw/62.jpg
 value=3.842
 rarity=C
 type=Tribal,Instant

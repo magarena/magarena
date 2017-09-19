@@ -1,5 +1,5 @@
 name=Verdant Eidolon
-image=http://magiccards.info/scans/en/di/100.jpg
+image=https://magiccards.info/scans/en/di/100.jpg
 value=3.341
 rarity=C
 type=Creature

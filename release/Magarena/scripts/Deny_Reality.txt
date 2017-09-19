@@ -1,5 +1,5 @@
 name=Deny Reality
-image=http://magiccards.info/scans/en/pc2/85.jpg
+image=https://magiccards.info/scans/en/pc2/85.jpg
 value=3.111
 rarity=C
 type=Sorcery

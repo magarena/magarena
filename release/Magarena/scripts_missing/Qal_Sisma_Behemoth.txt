@@ -1,5 +1,5 @@
 name=Qal Sisma Behemoth
-image=http://magiccards.info/scans/en/dtk/149.jpg
+image=https://magiccards.info/scans/en/dtk/149.jpg
 value=3.500
 rarity=U
 type=Creature

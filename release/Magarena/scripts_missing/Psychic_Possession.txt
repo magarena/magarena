@@ -1,5 +1,5 @@
 name=Psychic Possession
-image=http://magiccards.info/scans/en/di/30.jpg
+image=https://magiccards.info/scans/en/di/30.jpg
 value=3.949
 rarity=R
 type=Enchantment

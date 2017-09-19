@@ -1,5 +1,5 @@
 name=Gatekeeper of Malakir
-image=http://magiccards.info/scans/en/zen/89.jpg
+image=https://magiccards.info/scans/en/zen/89.jpg
 image_updated=2016-12-03
 value=3.841
 rarity=U

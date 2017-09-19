@@ -1,5 +1,5 @@
 name=Willow Elf
-image=http://magiccards.info/scans/en/st2k/20.jpg
+image=https://magiccards.info/scans/en/st2k/20.jpg
 value=1.604
 rarity=C
 type=Creature

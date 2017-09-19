@@ -1,5 +1,5 @@
 name=Stormblood Berserker
-image=http://magiccards.info/scans/en/mm2/130.jpg
+image=https://magiccards.info/scans/en/mm2/130.jpg
 value=2.500
 rarity=U
 type=Creature

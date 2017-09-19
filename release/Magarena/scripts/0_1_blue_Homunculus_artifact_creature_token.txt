@@ -1,6 +1,6 @@
 name=0/1 blue Homunculus artifact creature token
 token=Homunculus
-image=http://magiccards.info/extras/token/shards-of-alara/homunculus.jpg
+image=https://magiccards.info/extras/token/shards-of-alara/homunculus.jpg
 value=1
 type=Artifact,Creature
 subtype=Homunculus

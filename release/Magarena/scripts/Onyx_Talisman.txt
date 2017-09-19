@@ -1,5 +1,5 @@
 name=Onyx Talisman
-image=http://magiccards.info/scans/en/ia/306.jpg
+image=https://magiccards.info/scans/en/ia/306.jpg
 value=2.367
 rarity=U
 type=Artifact

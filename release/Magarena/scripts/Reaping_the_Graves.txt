@@ -1,5 +1,5 @@
 name=Reaping the Graves
-image=http://magiccards.info/scans/en/sc/72.jpg
+image=https://magiccards.info/scans/en/sc/72.jpg
 value=3.655
 rarity=C
 type=Instant

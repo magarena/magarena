@@ -1,5 +1,5 @@
 name=Flameborn Hellion
-image=http://magiccards.info/scans/en/som/89.jpg
+image=https://magiccards.info/scans/en/som/89.jpg
 value=2.925
 rarity=C
 type=Creature

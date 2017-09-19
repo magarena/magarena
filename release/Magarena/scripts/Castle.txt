@@ -1,5 +1,5 @@
 name=Castle
-image=http://magiccards.info/scans/en/7e/5.jpg
+image=https://magiccards.info/scans/en/7e/5.jpg
 value=3.267
 rarity=U
 type=Enchantment

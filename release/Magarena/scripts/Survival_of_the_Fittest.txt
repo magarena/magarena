@@ -1,5 +1,5 @@
 name=Survival of the Fittest
-image=http://magiccards.info/scans/en/ex/129.jpg
+image=https://magiccards.info/scans/en/ex/129.jpg
 value=4.500
 rarity=R
 type=Enchantment

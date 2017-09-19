@@ -1,5 +1,5 @@
 name=Manakin
-image=http://magiccards.info/scans/en/tp/286.jpg
+image=https://magiccards.info/scans/en/tp/286.jpg
 value=3.233
 rarity=C
 type=Artifact,Creature

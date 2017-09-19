@@ -1,5 +1,5 @@
 name=Ancient Kavu
-image=http://magiccards.info/scans/en/in/136.jpg
+image=https://magiccards.info/scans/en/in/136.jpg
 value=2.969
 rarity=C
 type=Creature

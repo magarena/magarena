@@ -1,5 +1,5 @@
 name=Imps' Taunt
-image=http://magiccards.info/scans/en/tp/32.jpg
+image=https://magiccards.info/scans/en/tp/32.jpg
 value=2.432
 removal=1
 rarity=U

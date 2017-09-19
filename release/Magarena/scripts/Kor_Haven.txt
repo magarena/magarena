@@ -1,5 +1,5 @@
 name=Kor Haven
-image=http://magiccards.info/scans/en/ne/141.jpg
+image=https://magiccards.info/scans/en/ne/141.jpg
 value=4.089
 rarity=R
 type=Legendary,Land

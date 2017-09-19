@@ -1,5 +1,5 @@
 name=Dromar's Cavern
-image=http://magiccards.info/scans/en/ps/138.jpg
+image=https://magiccards.info/scans/en/ps/138.jpg
 value=3.571
 rarity=U
 type=Land

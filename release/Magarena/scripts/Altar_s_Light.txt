@@ -1,5 +1,5 @@
 name=Altar's Light
-image=http://magiccards.info/scans/en/mi/1.jpg
+image=https://magiccards.info/scans/en/mi/1.jpg
 value=2.351
 rarity=U
 type=Instant

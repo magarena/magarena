@@ -1,5 +1,5 @@
 name=Robe of Mirrors
-image=http://magiccards.info/scans/en/10e/101.jpg
+image=https://magiccards.info/scans/en/10e/101.jpg
 value=3.771
 rarity=C
 type=Enchantment

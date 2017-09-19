@@ -1,5 +1,5 @@
 name=Goham Djinn
-image=http://magiccards.info/scans/en/in/107.jpg
+image=https://magiccards.info/scans/en/in/107.jpg
 value=2.194
 rarity=U
 type=Creature

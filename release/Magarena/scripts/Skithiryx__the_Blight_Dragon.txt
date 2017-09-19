@@ -1,5 +1,5 @@
 name=Skithiryx, the Blight Dragon
-image=http://magiccards.info/scans/en/som/79.jpg
+image=https://magiccards.info/scans/en/som/79.jpg
 value=4.177
 rarity=M
 type=Legendary,Creature

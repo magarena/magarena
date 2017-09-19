@@ -1,5 +1,5 @@
 name=Metallic Rebuke
-image=http://magiccards.info/scans/en/aer/39.jpg
+image=https://magiccards.info/scans/en/aer/39.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Loxodon Punisher
-image=http://magiccards.info/scans/en/mi/14.jpg
+image=https://magiccards.info/scans/en/mi/14.jpg
 value=3.092
 rarity=R
 type=Creature

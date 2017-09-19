@@ -1,5 +1,5 @@
 name=Dream Twist
-image=http://magiccards.info/scans/en/ema/47.jpg
+image=https://magiccards.info/scans/en/ema/47.jpg
 value=3.562
 rarity=C
 type=Instant

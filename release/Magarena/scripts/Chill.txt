@@ -1,5 +1,5 @@
 name=Chill
-image=http://magiccards.info/scans/en/6e/60.jpg
+image=https://magiccards.info/scans/en/6e/60.jpg
 value=4.180
 rarity=U
 type=Enchantment

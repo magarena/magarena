@@ -1,5 +1,5 @@
 name=Darkslick Shores
-image=http://magiccards.info/scans/en/som/226.jpg
+image=https://magiccards.info/scans/en/som/226.jpg
 value=4.256
 rarity=R
 type=Land

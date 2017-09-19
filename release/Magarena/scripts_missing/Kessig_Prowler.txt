@@ -1,5 +1,5 @@
 name=Kessig Prowler
-image=http://magiccards.info/scans/en/emn/163a.jpg
+image=https://magiccards.info/scans/en/emn/163a.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=U

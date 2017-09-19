@@ -1,5 +1,5 @@
 name=Binding Grasp
-image=http://magiccards.info/scans/en/cstd/8.jpg
+image=https://magiccards.info/scans/en/cstd/8.jpg
 value=3.779
 rarity=U
 type=Enchantment

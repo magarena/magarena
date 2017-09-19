@@ -1,5 +1,5 @@
 name=Mark of Mutiny
-image=http://magiccards.info/scans/en/m13/141.jpg
+image=https://magiccards.info/scans/en/m13/141.jpg
 value=3.150
 removal=5
 rarity=U

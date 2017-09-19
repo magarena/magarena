@@ -1,5 +1,5 @@
 name=Whiptail Moloch
-image=http://magiccards.info/scans/en/di/79.jpg
+image=https://magiccards.info/scans/en/di/79.jpg
 value=1.289
 rarity=C
 type=Creature

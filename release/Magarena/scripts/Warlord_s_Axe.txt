@@ -1,5 +1,5 @@
 name=Warlord's Axe
-image=http://magiccards.info/scans/en/m11/220.jpg
+image=https://magiccards.info/scans/en/m11/220.jpg
 value=1.291
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Pain Seer
-image=http://magiccards.info/scans/en/bng/80.jpg
+image=https://magiccards.info/scans/en/bng/80.jpg
 value=3.837
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rancid Earth
-image=http://magiccards.info/scans/en/tr/78.jpg
+image=https://magiccards.info/scans/en/tr/78.jpg
 value=4.117
 rarity=C
 type=Sorcery

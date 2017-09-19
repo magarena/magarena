@@ -1,5 +1,5 @@
 name=Lapse of Certainty
-image=http://magiccards.info/scans/en/cfx/9.jpg
+image=https://magiccards.info/scans/en/cfx/9.jpg
 value=3.155
 rarity=C
 type=Instant

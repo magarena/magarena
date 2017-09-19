@@ -1,5 +1,5 @@
 name=Errant Minion
-image=http://magiccards.info/scans/en/ia/68.jpg
+image=https://magiccards.info/scans/en/ia/68.jpg
 value=3.050
 rarity=C
 type=Enchantment

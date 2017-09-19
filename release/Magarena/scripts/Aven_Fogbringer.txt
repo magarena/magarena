@@ -1,5 +1,5 @@
 name=Aven Fogbringer
-image=http://magiccards.info/scans/en/ju/34.jpg
+image=https://magiccards.info/scans/en/ju/34.jpg
 value=2.764
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Triton Tactics
-image=http://magiccards.info/scans/en/ths/71.jpg
+image=https://magiccards.info/scans/en/ths/71.jpg
 value=3.627
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Dark Offering
-image=http://magiccards.info/scans/en/st/75.jpg
+image=https://magiccards.info/scans/en/st/75.jpg
 value=1.680
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Soul Shepherd
-image=http://magiccards.info/scans/en/wl/142.jpg
+image=https://magiccards.info/scans/en/wl/142.jpg
 value=2.171
 rarity=C
 type=Creature

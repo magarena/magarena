@@ -1,5 +1,5 @@
 name=Arrow Volley Trap
-image=http://magiccards.info/scans/en/zen/2.jpg
+image=https://magiccards.info/scans/en/zen/2.jpg
 image_updated=2017-01-11
 value=2.000
 rarity=U

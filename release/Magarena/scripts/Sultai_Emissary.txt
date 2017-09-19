@@ -1,5 +1,5 @@
 name=Sultai Emissary
-image=http://magiccards.info/scans/en/frf/85.jpg
+image=https://magiccards.info/scans/en/frf/85.jpg
 value=2.500
 rarity=C
 type=Creature

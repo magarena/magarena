@@ -1,5 +1,5 @@
 name=Silumgar, the Drifting Death
-image=http://magiccards.info/scans/en/frf/157.jpg
+image=https://magiccards.info/scans/en/frf/157.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

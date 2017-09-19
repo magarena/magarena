@@ -1,5 +1,5 @@
 name=Dreamspoiler Witches
-image=http://magiccards.info/scans/en/mma/81.jpg
+image=https://magiccards.info/scans/en/mma/81.jpg
 value=2.625
 rarity=C
 type=Creature

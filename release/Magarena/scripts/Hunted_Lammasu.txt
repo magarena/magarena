@@ -1,5 +1,5 @@
 name=Hunted Lammasu
-image=http://magiccards.info/scans/en/rav/22.jpg
+image=https://magiccards.info/scans/en/rav/22.jpg
 value=3.424
 rarity=R
 type=Creature

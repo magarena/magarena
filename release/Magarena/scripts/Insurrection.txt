@@ -1,5 +1,5 @@
 name=Insurrection
-image=http://magiccards.info/scans/en/cmd/126.jpg
+image=https://magiccards.info/scans/en/cmd/126.jpg
 value=4.183
 rarity=R
 type=Sorcery

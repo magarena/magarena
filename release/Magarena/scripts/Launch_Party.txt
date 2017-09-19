@@ -1,5 +1,5 @@
 name=Launch Party
-image=http://magiccards.info/scans/en/rtr/69.jpg
+image=https://magiccards.info/scans/en/rtr/69.jpg
 value=2.016
 rarity=C
 type=Instant

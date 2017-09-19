@@ -1,5 +1,5 @@
 name=Worry Beads
-image=http://magiccards.info/scans/en/mm/315.jpg
+image=https://magiccards.info/scans/en/mm/315.jpg
 value=2.583
 rarity=R
 type=Artifact

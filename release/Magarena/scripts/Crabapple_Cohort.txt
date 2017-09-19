@@ -1,5 +1,5 @@
 name=Crabapple Cohort
-image=http://magiccards.info/scans/en/shm/109.jpg
+image=https://magiccards.info/scans/en/shm/109.jpg
 value=2.045
 rarity=C
 type=Creature

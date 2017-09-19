@@ -1,5 +1,5 @@
 name=Pus Kami
-image=http://magiccards.info/scans/en/bok/79.jpg
+image=https://magiccards.info/scans/en/bok/79.jpg
 value=1.610
 rarity=U
 type=Creature

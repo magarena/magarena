@@ -1,5 +1,5 @@
 name=Aspect of Mongoose
-image=http://magiccards.info/scans/en/ts/191.jpg
+image=https://magiccards.info/scans/en/ts/191.jpg
 value=3.862
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Pious Warrior
-image=http://magiccards.info/scans/en/mm/34.jpg
+image=https://magiccards.info/scans/en/mm/34.jpg
 value=2.788
 rarity=C
 type=Creature

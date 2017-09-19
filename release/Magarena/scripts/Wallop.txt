@@ -1,5 +1,5 @@
 name=Wallop
-image=http://magiccards.info/scans/en/in/223.jpg
+image=https://magiccards.info/scans/en/in/223.jpg
 value=1.855
 rarity=U
 type=Sorcery

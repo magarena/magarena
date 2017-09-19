@@ -1,5 +1,5 @@
 name=Giant Oyster
-image=http://magiccards.info/scans/en/tsts/22.jpg
+image=https://magiccards.info/scans/en/tsts/22.jpg
 value=3.657
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Seed Spark
-image=http://magiccards.info/scans/en/rav/30.jpg
+image=https://magiccards.info/scans/en/rav/30.jpg
 value=3.206
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Encroaching Wastes
-image=http://magiccards.info/scans/en/m14/227.jpg
+image=https://magiccards.info/scans/en/m14/227.jpg
 value=2.922
 rarity=U
 type=Land

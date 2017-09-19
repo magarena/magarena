@@ -1,5 +1,5 @@
 name=Jackalope Herd
-image=http://magiccards.info/scans/en/ex/111.jpg
+image=https://magiccards.info/scans/en/ex/111.jpg
 value=2.415
 rarity=C
 type=Creature

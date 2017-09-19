@@ -1,5 +1,5 @@
 name=Avatar of Slaughter
-image=http://magiccards.info/scans/en/cmd/111.jpg
+image=https://magiccards.info/scans/en/cmd/111.jpg
 value=4.052
 rarity=R
 type=Creature

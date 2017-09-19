@@ -1,5 +1,5 @@
 name=Glacial Stalker
-image=http://magiccards.info/scans/en/ktk/41.jpg
+image=https://magiccards.info/scans/en/ktk/41.jpg
 value=2.500
 rarity=C
 type=Creature

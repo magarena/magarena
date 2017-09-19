@@ -1,5 +1,5 @@
 name=Sacred Armory
-image=http://magiccards.info/scans/en/m15/228.jpg
+image=https://magiccards.info/scans/en/m15/228.jpg
 value=2.833
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Cephalid Illusionist
-image=http://magiccards.info/scans/en/tr/28.jpg
+image=https://magiccards.info/scans/en/tr/28.jpg
 value=4.014
 rarity=U
 type=Creature

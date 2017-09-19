@@ -1,5 +1,5 @@
 name=Petradon
-image=http://magiccards.info/scans/en/tr/108.jpg
+image=https://magiccards.info/scans/en/tr/108.jpg
 value=3.879
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Singe-Mind Ogre
-image=http://magiccards.info/scans/en/arb/45.jpg
+image=https://magiccards.info/scans/en/arb/45.jpg
 value=3.020
 rarity=C
 type=Creature

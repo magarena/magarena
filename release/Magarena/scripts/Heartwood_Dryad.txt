@@ -1,5 +1,5 @@
 name=Heartwood Dryad
-image=http://magiccards.info/scans/en/tp/125.jpg
+image=https://magiccards.info/scans/en/tp/125.jpg
 value=2.357
 rarity=C
 type=Creature

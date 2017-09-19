@@ -1,5 +1,5 @@
 name=Spitting Earth
-image=http://magiccards.info/scans/en/10e/238.jpg
+image=https://magiccards.info/scans/en/10e/238.jpg
 value=3.648
 rarity=C
 type=Sorcery

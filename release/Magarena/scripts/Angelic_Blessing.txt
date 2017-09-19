@@ -1,5 +1,5 @@
 name=Angelic Blessing
-image=http://magiccards.info/scans/en/10e/3.jpg
+image=https://magiccards.info/scans/en/10e/3.jpg
 value=2.727
 rarity=C
 type=Sorcery

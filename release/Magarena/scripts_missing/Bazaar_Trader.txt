@@ -1,5 +1,5 @@
 name=Bazaar Trader
-image=http://magiccards.info/scans/en/wwk/72.jpg
+image=https://magiccards.info/scans/en/wwk/72.jpg
 value=3.864
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=2/2 blue Bird enchantment creature token with flying
 token=Bird
-image=http://magiccards.info/extras/token/born-of-the-gods/bird-2.jpg
+image=https://magiccards.info/extras/token/born-of-the-gods/bird-2.jpg
 value=2
 type=Enchantment,Creature
 subtype=Bird

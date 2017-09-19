@@ -1,5 +1,5 @@
 name=Death Cultist
-image=http://magiccards.info/scans/en/roe/105.jpg
+image=https://magiccards.info/scans/en/roe/105.jpg
 value=3.240
 rarity=C
 type=Creature

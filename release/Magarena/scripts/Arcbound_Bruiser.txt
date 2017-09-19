@@ -1,5 +1,5 @@
 name=Arcbound Bruiser
-image=http://magiccards.info/scans/en/ds/94.jpg
+image=https://magiccards.info/scans/en/ds/94.jpg
 value=2.750
 rarity=C
 type=Artifact,Creature

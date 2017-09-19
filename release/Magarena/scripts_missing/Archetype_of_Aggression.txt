@@ -1,5 +1,5 @@
 name=Archetype of Aggression
-image=http://magiccards.info/scans/en/bng/88.jpg
+image=https://magiccards.info/scans/en/bng/88.jpg
 value=3.827
 rarity=U
 type=Enchantment,Creature

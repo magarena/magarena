@@ -1,5 +1,5 @@
 name=Graceful Antelope
-image=http://magiccards.info/scans/en/od/24.jpg
+image=https://magiccards.info/scans/en/od/24.jpg
 value=2.756
 rarity=R
 type=Creature

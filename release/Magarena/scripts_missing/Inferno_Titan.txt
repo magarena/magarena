@@ -1,5 +1,5 @@
 name=Inferno Titan
-image=http://magiccards.info/scans/en/m12/147.jpg
+image=https://magiccards.info/scans/en/m12/147.jpg
 image_updated=2016-02-29
 value=3.880
 rarity=M

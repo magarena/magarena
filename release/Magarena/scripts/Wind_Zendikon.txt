@@ -1,5 +1,5 @@
 name=Wind Zendikon
-image=http://magiccards.info/scans/en/wwk/46.jpg
+image=https://magiccards.info/scans/en/wwk/46.jpg
 value=3.803
 rarity=C
 type=Enchantment

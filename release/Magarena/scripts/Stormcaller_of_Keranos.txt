@@ -1,5 +1,5 @@
 name=Stormcaller of Keranos
-image=http://magiccards.info/scans/en/bng/112.jpg
+image=https://magiccards.info/scans/en/bng/112.jpg
 value=3.766
 rarity=U
 type=Creature

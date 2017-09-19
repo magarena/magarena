@@ -1,5 +1,5 @@
 name=Silverglade Pathfinder
-image=http://magiccards.info/scans/en/mm/270.jpg
+image=https://magiccards.info/scans/en/mm/270.jpg
 value=3.773
 rarity=U
 type=Creature

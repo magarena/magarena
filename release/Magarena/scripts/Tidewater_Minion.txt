@@ -1,5 +1,5 @@
 name=Tidewater Minion
-image=http://magiccards.info/scans/en/rav/71.jpg
+image=https://magiccards.info/scans/en/rav/71.jpg
 value=3.262
 rarity=C
 type=Creature

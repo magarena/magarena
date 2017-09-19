@@ -1,5 +1,5 @@
 name=Hythonia the Cruel
-image=http://magiccards.info/scans/en/ths/91.jpg
+image=https://magiccards.info/scans/en/ths/91.jpg
 value=3.456
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Statecraft
-image=http://magiccards.info/scans/en/mm/106.jpg
+image=https://magiccards.info/scans/en/mm/106.jpg
 value=3.710
 rarity=R
 type=Enchantment

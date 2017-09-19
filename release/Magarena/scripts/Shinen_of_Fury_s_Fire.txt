@@ -1,5 +1,5 @@
 name=Shinen of Fury's Fire
-image=http://magiccards.info/scans/en/sok/112.jpg
+image=https://magiccards.info/scans/en/sok/112.jpg
 value=1.625
 rarity=C
 type=Creature

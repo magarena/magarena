@@ -1,5 +1,5 @@
 name=Primal Vigor
-image=http://magiccards.info/scans/en/c13/162.jpg
+image=https://magiccards.info/scans/en/c13/162.jpg
 value=3.714
 rarity=R
 type=Enchantment

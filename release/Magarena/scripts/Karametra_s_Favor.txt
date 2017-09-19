@@ -1,5 +1,5 @@
 name=Karametra's Favor
-image=http://magiccards.info/scans/en/bng/125.jpg
+image=https://magiccards.info/scans/en/bng/125.jpg
 value=3.821
 rarity=C
 type=Enchantment

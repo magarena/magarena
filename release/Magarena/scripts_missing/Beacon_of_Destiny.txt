@@ -1,5 +1,5 @@
 name=Beacon of Destiny
-image=http://magiccards.info/scans/en/le/5.jpg
+image=https://magiccards.info/scans/en/le/5.jpg
 value=3.788
 rarity=R
 type=Creature

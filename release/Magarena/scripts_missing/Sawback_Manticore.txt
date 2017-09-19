@@ -1,5 +1,5 @@
 name=Sawback Manticore
-image=http://magiccards.info/scans/en/mr/341.jpg
+image=https://magiccards.info/scans/en/mr/341.jpg
 value=2.140
 rarity=R
 type=Creature

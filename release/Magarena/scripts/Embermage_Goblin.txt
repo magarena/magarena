@@ -1,5 +1,5 @@
 name=Embermage Goblin
-image=http://magiccards.info/scans/en/on/200.jpg
+image=https://magiccards.info/scans/en/on/200.jpg
 value=3.122
 rarity=U
 type=Creature

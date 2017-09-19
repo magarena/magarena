@@ -1,5 +1,5 @@
 name=Hag Hedge-Mage
-image=http://magiccards.info/scans/en/eve/123.jpg
+image=https://magiccards.info/scans/en/eve/123.jpg
 value=3.479
 rarity=U
 type=Creature

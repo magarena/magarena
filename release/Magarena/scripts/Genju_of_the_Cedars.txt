@@ -1,5 +1,5 @@
 name=Genju of the Cedars
-image=http://magiccards.info/scans/en/bok/126.jpg
+image=https://magiccards.info/scans/en/bok/126.jpg
 image_updated=2016-12-03
 value=4.112
 rarity=U

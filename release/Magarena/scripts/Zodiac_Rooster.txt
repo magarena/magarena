@@ -1,5 +1,5 @@
 name=Zodiac Rooster
-image=http://magiccards.info/scans/en/p3k/163.jpg
+image=https://magiccards.info/scans/en/p3k/163.jpg
 value=3.970
 rarity=C
 type=Creature

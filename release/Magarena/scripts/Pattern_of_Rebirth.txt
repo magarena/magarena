@@ -1,5 +1,5 @@
 name=Pattern of Rebirth
-image=http://magiccards.info/scans/en/ud/115.jpg
+image=https://magiccards.info/scans/en/ud/115.jpg
 value=4.305
 rarity=R
 type=Enchantment

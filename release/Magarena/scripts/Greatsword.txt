@@ -1,5 +1,5 @@
 name=Greatsword
-image=http://magiccards.info/scans/en/m12/209.jpg
+image=https://magiccards.info/scans/en/m12/209.jpg
 value=1.484
 rarity=U
 type=Artifact

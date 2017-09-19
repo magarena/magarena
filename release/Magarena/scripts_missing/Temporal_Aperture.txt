@@ -1,5 +1,5 @@
 name=Temporal Aperture
-image=http://magiccards.info/scans/en/us/310.jpg
+image=https://magiccards.info/scans/en/us/310.jpg
 value=4.264
 rarity=R
 type=Artifact

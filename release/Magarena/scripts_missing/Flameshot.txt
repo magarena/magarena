@@ -1,5 +1,5 @@
 name=Flameshot
-image=http://magiccards.info/scans/en/pr/90.jpg
+image=https://magiccards.info/scans/en/pr/90.jpg
 value=3.115
 rarity=U
 type=Sorcery

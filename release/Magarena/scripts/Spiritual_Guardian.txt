@@ -1,5 +1,5 @@
 name=Spiritual Guardian
-image=http://magiccards.info/scans/en/po/189.jpg
+image=https://magiccards.info/scans/en/po/189.jpg
 value=2.824
 rarity=R
 type=Creature

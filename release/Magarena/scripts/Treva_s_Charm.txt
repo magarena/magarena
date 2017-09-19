@@ -1,5 +1,5 @@
 name=Treva's Charm
-image=http://magiccards.info/scans/en/ps/129.jpg
+image=https://magiccards.info/scans/en/ps/129.jpg
 image_updated=2017-01-11
 value=3.543
 rarity=U

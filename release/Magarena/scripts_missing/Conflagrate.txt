@@ -1,5 +1,5 @@
 name=Conflagrate
-image=http://magiccards.info/scans/en/ts/151.jpg
+image=https://magiccards.info/scans/en/ts/151.jpg
 value=3.641
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Carapace Forger
-image=http://magiccards.info/scans/en/som/114.jpg
+image=https://magiccards.info/scans/en/som/114.jpg
 value=3.651
 rarity=C
 type=Creature

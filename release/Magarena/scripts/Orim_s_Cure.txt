@@ -1,5 +1,5 @@
 name=Orim's Cure
-image=http://magiccards.info/scans/en/mm/33.jpg
+image=https://magiccards.info/scans/en/mm/33.jpg
 value=2.450
 rarity=C
 type=Instant

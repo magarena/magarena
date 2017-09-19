@@ -1,5 +1,5 @@
 name=Talas Merchant
-image=http://magiccards.info/scans/en/po2/50.jpg
+image=https://magiccards.info/scans/en/po2/50.jpg
 value=2.550
 rarity=C
 type=Creature

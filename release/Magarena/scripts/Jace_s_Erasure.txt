@@ -1,5 +1,5 @@
 name=Jace's Erasure
-image=http://magiccards.info/scans/en/m12/60.jpg
+image=https://magiccards.info/scans/en/m12/60.jpg
 value=3.685
 rarity=C
 type=Enchantment

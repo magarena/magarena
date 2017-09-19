@@ -1,5 +1,5 @@
 name=Dusk Urchins
-image=http://magiccards.info/scans/en/shm/65.jpg
+image=https://magiccards.info/scans/en/shm/65.jpg
 value=4.000
 rarity=R
 type=Creature

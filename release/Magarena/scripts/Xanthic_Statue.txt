@@ -1,5 +1,5 @@
 name=Xanthic Statue
-image=http://magiccards.info/scans/en/wl/163.jpg
+image=https://magiccards.info/scans/en/wl/163.jpg
 value=3.520
 rarity=R
 type=Artifact

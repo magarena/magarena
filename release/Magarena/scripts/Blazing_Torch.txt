@@ -1,5 +1,5 @@
 name=Blazing Torch
-image=http://magiccards.info/scans/en/isd/216.jpg
+image=https://magiccards.info/scans/en/isd/216.jpg
 value=3.289
 rarity=C
 type=Artifact

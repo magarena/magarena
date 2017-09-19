@@ -1,6 +1,6 @@
 name=1/1 white and black Cleric creature token
 token=Cleric
-image=http://magiccards.info/extras/token/gatecrash/cleric.jpg
+image=https://magiccards.info/extras/token/gatecrash/cleric.jpg
 value=3
 type=Creature
 subtype=Cleric

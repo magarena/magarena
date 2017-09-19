@@ -1,5 +1,5 @@
 name=Skred
-image=http://magiccards.info/scans/en/cs/97.jpg
+image=https://magiccards.info/scans/en/cs/97.jpg
 value=4.072
 rarity=C
 type=Instant

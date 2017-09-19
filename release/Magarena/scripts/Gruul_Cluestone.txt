@@ -1,5 +1,5 @@
 name=Gruul Cluestone
-image=http://magiccards.info/scans/en/dgm/140.jpg
+image=https://magiccards.info/scans/en/dgm/140.jpg
 value=2.719
 rarity=C
 type=Artifact

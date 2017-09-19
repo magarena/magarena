@@ -1,5 +1,5 @@
 name=Akron Legionnaire
-image=http://magiccards.info/scans/en/5e/278.jpg
+image=https://magiccards.info/scans/en/5e/278.jpg
 value=1.098
 rarity=R
 type=Creature

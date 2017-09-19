@@ -1,5 +1,5 @@
 name=Failure
-image=http://magiccards.info/scans/en/akh/221a.jpg
+image=https://magiccards.info/scans/en/akh/221a.jpg
 value=2.500
 rarity=R
 type=Instant

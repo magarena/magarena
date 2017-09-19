@@ -1,5 +1,5 @@
 name=Firewing Phoenix
-image=http://magiccards.info/scans/en/m13/131.jpg
+image=https://magiccards.info/scans/en/m13/131.jpg
 value=3.560
 rarity=R
 type=Creature

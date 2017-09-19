@@ -1,5 +1,5 @@
 name=Akroma's Memorial
-image=http://magiccards.info/scans/en/m13/200.jpg
+image=https://magiccards.info/scans/en/m13/200.jpg
 value=3.915
 rarity=M
 type=Legendary,Artifact

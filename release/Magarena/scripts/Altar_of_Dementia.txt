@@ -1,5 +1,5 @@
 name=Altar of Dementia
-image=http://magiccards.info/scans/en/cns/196.jpg
+image=https://magiccards.info/scans/en/cns/196.jpg
 value=4.393
 rarity=R
 type=Artifact

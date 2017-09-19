@@ -1,5 +1,5 @@
 name=Flayer of the Hatebound
-image=http://magiccards.info/scans/en/dka/89.jpg
+image=https://magiccards.info/scans/en/dka/89.jpg
 value=3.889
 rarity=R
 type=Creature

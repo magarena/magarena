@@ -1,5 +1,5 @@
 name=An-Havva Township
-image=http://magiccards.info/scans/en/hl/136.jpg
+image=https://magiccards.info/scans/en/hl/136.jpg
 value=1.437
 rarity=U
 type=Land

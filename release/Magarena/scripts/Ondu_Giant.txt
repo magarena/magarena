@@ -1,5 +1,5 @@
 name=Ondu Giant
-image=http://magiccards.info/scans/en/pc2/71.jpg
+image=https://magiccards.info/scans/en/pc2/71.jpg
 value=3.182
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hideous End
-image=http://magiccards.info/scans/en/zen/98.jpg
+image=https://magiccards.info/scans/en/zen/98.jpg
 image_updated=2016-12-10
 value=3.862
 removal=4

@@ -1,5 +1,5 @@
 name=Heirloom Blade
-image=http://magiccards.info/scans/en/c17/52.jpg
+image=https://magiccards.info/scans/en/c17/52.jpg
 value=2.500
 rarity=U
 type=Artifact

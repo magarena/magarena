@@ -1,5 +1,5 @@
 name=Portal Mage
-image=http://magiccards.info/scans/en/c17/13.jpg
+image=https://magiccards.info/scans/en/c17/13.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Annihilate
-image=http://magiccards.info/scans/en/ema/79.jpg
+image=https://magiccards.info/scans/en/ema/79.jpg
 value=3.312
 rarity=U
 type=Instant

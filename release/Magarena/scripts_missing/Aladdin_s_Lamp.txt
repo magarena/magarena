@@ -1,5 +1,5 @@
 name=Aladdin's Lamp
-image=http://magiccards.info/scans/en/4e/309.jpg
+image=https://magiccards.info/scans/en/4e/309.jpg
 value=2.138
 rarity=R
 type=Artifact

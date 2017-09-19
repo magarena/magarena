@@ -1,5 +1,5 @@
 name=Vengeful Firebrand
-image=http://magiccards.info/scans/en/mt/111.jpg
+image=https://magiccards.info/scans/en/mt/111.jpg
 value=2.969
 rarity=R
 type=Creature

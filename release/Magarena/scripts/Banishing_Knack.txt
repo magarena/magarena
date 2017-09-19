@@ -1,5 +1,5 @@
 name=Banishing Knack
-image=http://magiccards.info/scans/en/eve/17.jpg
+image=https://magiccards.info/scans/en/eve/17.jpg
 value=3.426
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Airborne Aid
-image=http://magiccards.info/scans/en/on/62.jpg
+image=https://magiccards.info/scans/en/on/62.jpg
 value=2.905
 rarity=C
 type=Sorcery

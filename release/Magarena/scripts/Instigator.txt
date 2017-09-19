@@ -1,5 +1,5 @@
 name=Instigator
-image=http://magiccards.info/scans/en/mm/140.jpg
+image=https://magiccards.info/scans/en/mm/140.jpg
 value=2.455
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rally
-image=http://magiccards.info/scans/en/ia/272.jpg
+image=https://magiccards.info/scans/en/ia/272.jpg
 value=2.047
 rarity=C
 type=Instant

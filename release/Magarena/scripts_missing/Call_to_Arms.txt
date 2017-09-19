@@ -1,5 +1,5 @@
 name=Call to Arms
-image=http://magiccards.info/scans/en/ia/234.jpg
+image=https://magiccards.info/scans/en/ia/234.jpg
 value=2.288
 rarity=R
 type=Enchantment

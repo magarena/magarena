@@ -1,5 +1,5 @@
 name=Stampeding Rhino
-image=http://magiccards.info/scans/en/m12/196.jpg
+image=https://magiccards.info/scans/en/m12/196.jpg
 value=2.865
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Banishment Decree
-image=http://magiccards.info/scans/en/mbs/3.jpg
+image=https://magiccards.info/scans/en/mbs/3.jpg
 value=1.953
 rarity=C
 type=Instant

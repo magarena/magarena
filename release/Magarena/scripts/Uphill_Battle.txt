@@ -1,5 +1,5 @@
 name=Uphill Battle
-image=http://magiccards.info/scans/en/mm/222.jpg
+image=https://magiccards.info/scans/en/mm/222.jpg
 value=3.580
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Orzhov Guildmage
-image=http://magiccards.info/scans/en/cmd/217.jpg
+image=https://magiccards.info/scans/en/cmd/217.jpg
 value=3.686
 rarity=U
 type=Creature

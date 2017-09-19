@@ -1,5 +1,5 @@
 name=Skyshroud Behemoth
-image=http://magiccards.info/scans/en/ne/116.jpg
+image=https://magiccards.info/scans/en/ne/116.jpg
 value=2.007
 rarity=R
 type=Creature

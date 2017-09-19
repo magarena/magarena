@@ -1,5 +1,5 @@
 name=Encrust
-image=http://magiccards.info/scans/en/m15/53.jpg
+image=https://magiccards.info/scans/en/m15/53.jpg
 value=2.700
 rarity=C
 type=Enchantment

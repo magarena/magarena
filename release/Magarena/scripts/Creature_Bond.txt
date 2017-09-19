@@ -1,5 +1,5 @@
 name=Creature Bond
-image=http://magiccards.info/scans/en/4e/66.jpg
+image=https://magiccards.info/scans/en/4e/66.jpg
 value=2.485
 rarity=C
 type=Enchantment

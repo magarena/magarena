@@ -1,5 +1,5 @@
 name=Chandler
-image=http://magiccards.info/scans/en/hl/88.jpg
+image=https://magiccards.info/scans/en/hl/88.jpg
 value=2.836
 rarity=C
 type=Legendary,Creature

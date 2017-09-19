@@ -1,5 +1,5 @@
 name=Vampire Nighthawk
-image=http://magiccards.info/scans/en/mm3/87.jpg
+image=https://magiccards.info/scans/en/mm3/87.jpg
 image_updated=2017-08-08
 value=4.000
 rarity=U

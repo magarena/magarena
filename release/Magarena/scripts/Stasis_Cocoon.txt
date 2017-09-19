@@ -1,5 +1,5 @@
 name=Stasis Cocoon
-image=http://magiccards.info/scans/en/5dn/18.jpg
+image=https://magiccards.info/scans/en/5dn/18.jpg
 value=3.044
 rarity=C
 type=Enchantment

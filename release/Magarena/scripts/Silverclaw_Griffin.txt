@@ -1,5 +1,5 @@
 name=Silverclaw Griffin
-image=http://magiccards.info/scans/en/dka/21.jpg
+image=https://magiccards.info/scans/en/dka/21.jpg
 value=2.344
 rarity=C
 type=Creature

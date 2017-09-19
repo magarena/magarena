@@ -1,5 +1,5 @@
 name=Primal Boost
-image=http://magiccards.info/scans/en/on/277.jpg
+image=https://magiccards.info/scans/en/on/277.jpg
 value=2.333
 rarity=U
 type=Instant

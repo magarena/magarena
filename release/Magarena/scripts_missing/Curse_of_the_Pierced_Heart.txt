@@ -1,5 +1,5 @@
 name=Curse of the Pierced Heart
-image=http://magiccards.info/scans/en/isd/138.jpg
+image=https://magiccards.info/scans/en/isd/138.jpg
 value=3.444
 rarity=C
 type=Enchantment

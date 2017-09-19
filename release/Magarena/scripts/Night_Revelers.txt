@@ -1,5 +1,5 @@
 name=Night Revelers
-image=http://magiccards.info/scans/en/isd/153.jpg
+image=https://magiccards.info/scans/en/isd/153.jpg
 value=2.106
 rarity=C
 type=Creature

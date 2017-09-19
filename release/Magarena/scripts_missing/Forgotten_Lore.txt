@@ -1,5 +1,5 @@
 name=Forgotten Lore
-image=http://magiccards.info/scans/en/ia/125.jpg
+image=https://magiccards.info/scans/en/ia/125.jpg
 value=3.433
 rarity=U
 type=Sorcery

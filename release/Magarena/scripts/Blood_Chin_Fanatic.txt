@@ -1,5 +1,5 @@
 name=Blood-Chin Fanatic
-image=http://magiccards.info/scans/en/dtk/88.jpg
+image=https://magiccards.info/scans/en/dtk/88.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Copper Gnomes
-image=http://magiccards.info/scans/en/us/291.jpg
+image=https://magiccards.info/scans/en/us/291.jpg
 value=4.442
 rarity=R
 type=Artifact,Creature

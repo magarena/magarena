@@ -1,5 +1,5 @@
 name=Avalanche Riders
-image=http://magiccards.info/scans/en/tsts/55.jpg
+image=https://magiccards.info/scans/en/tsts/55.jpg
 value=4.211
 removal=1
 rarity=U

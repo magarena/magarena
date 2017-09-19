@@ -1,5 +1,5 @@
 name=Tar Fiend
-image=http://magiccards.info/scans/en/ala/89.jpg
+image=https://magiccards.info/scans/en/ala/89.jpg
 value=3.053
 rarity=R
 type=Creature

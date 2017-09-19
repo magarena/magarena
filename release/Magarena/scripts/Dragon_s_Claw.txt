@@ -1,5 +1,5 @@
 name=Dragon's Claw
-image=http://magiccards.info/scans/en/m12/206.jpg
+image=https://magiccards.info/scans/en/m12/206.jpg
 value=2.385
 rarity=U
 type=Artifact

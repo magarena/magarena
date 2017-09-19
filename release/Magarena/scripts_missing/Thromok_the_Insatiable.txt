@@ -1,5 +1,5 @@
 name=Thromok the Insatiable
-image=http://magiccards.info/scans/en/pc2/106.jpg
+image=https://magiccards.info/scans/en/pc2/106.jpg
 value=4.076
 rarity=M
 type=Legendary,Creature

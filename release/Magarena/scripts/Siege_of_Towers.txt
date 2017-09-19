@@ -1,5 +1,5 @@
 name=Siege of Towers
-image=http://magiccards.info/scans/en/gp/76.jpg
+image=https://magiccards.info/scans/en/gp/76.jpg
 value=2.821
 rarity=R
 type=Sorcery

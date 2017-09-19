@@ -1,5 +1,5 @@
 name=Sphinx of Lost Truths
-image=http://magiccards.info/scans/en/zen/69.jpg
+image=https://magiccards.info/scans/en/zen/69.jpg
 value=3.907
 rarity=R
 type=Creature

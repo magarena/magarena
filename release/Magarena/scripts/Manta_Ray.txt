@@ -1,5 +1,5 @@
 name=Manta Ray
-image=http://magiccards.info/scans/en/wl/42.jpg
+image=https://magiccards.info/scans/en/wl/42.jpg
 value=3.023
 rarity=C
 type=Creature

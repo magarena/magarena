@@ -1,5 +1,5 @@
 name=Wingmate Roc
-image=http://magiccards.info/scans/en/ktk/31.jpg
+image=https://magiccards.info/scans/en/ktk/31.jpg
 value=4.167
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Luminesce
-image=http://magiccards.info/scans/en/10e/28.jpg
+image=https://magiccards.info/scans/en/10e/28.jpg
 value=2.359
 rarity=U
 type=Instant

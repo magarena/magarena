@@ -1,5 +1,5 @@
 name=Djinn of Wishes
-image=http://magiccards.info/scans/en/m12/51.jpg
+image=https://magiccards.info/scans/en/m12/51.jpg
 value=4.044
 rarity=R
 type=Creature

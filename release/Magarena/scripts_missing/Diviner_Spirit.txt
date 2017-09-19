@@ -1,5 +1,5 @@
 name=Diviner Spirit
-image=http://magiccards.info/scans/en/c13/40.jpg
+image=https://magiccards.info/scans/en/c13/40.jpg
 value=2.929
 rarity=U
 type=Creature

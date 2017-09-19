@@ -1,5 +1,5 @@
 name=Ghost Ship
-image=http://magiccards.info/scans/en/tsts/21.jpg
+image=https://magiccards.info/scans/en/tsts/21.jpg
 value=3.831
 rarity=U
 type=Creature

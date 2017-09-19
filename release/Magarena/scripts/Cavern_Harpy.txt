@@ -1,5 +1,5 @@
 name=Cavern Harpy
-image=http://magiccards.info/scans/en/ps/97.jpg
+image=https://magiccards.info/scans/en/ps/97.jpg
 value=4.106
 rarity=C
 type=Creature

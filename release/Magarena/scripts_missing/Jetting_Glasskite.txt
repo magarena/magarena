@@ -1,5 +1,5 @@
 name=Jetting Glasskite
-image=http://magiccards.info/scans/en/ema/58.jpg
+image=https://magiccards.info/scans/en/ema/58.jpg
 value=3.429
 rarity=U
 type=Creature

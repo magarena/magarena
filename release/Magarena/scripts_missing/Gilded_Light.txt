@@ -1,5 +1,5 @@
 name=Gilded Light
-image=http://magiccards.info/scans/en/sc/16.jpg
+image=https://magiccards.info/scans/en/sc/16.jpg
 value=3.500
 rarity=U
 type=Instant

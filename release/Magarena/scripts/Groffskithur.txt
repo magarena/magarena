@@ -1,5 +1,5 @@
 name=Groffskithur
-image=http://magiccards.info/scans/en/mi/121.jpg
+image=https://magiccards.info/scans/en/mi/121.jpg
 value=1.081
 rarity=C
 type=Creature

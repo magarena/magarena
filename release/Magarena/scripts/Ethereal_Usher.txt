@@ -1,5 +1,5 @@
 name=Ethereal Usher
-image=http://magiccards.info/scans/en/rav/47.jpg
+image=https://magiccards.info/scans/en/rav/47.jpg
 value=2.850
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Zarichi Tiger
-image=http://magiccards.info/scans/en/gtc/28.jpg
+image=https://magiccards.info/scans/en/gtc/28.jpg
 value=2.275
 rarity=C
 type=Creature

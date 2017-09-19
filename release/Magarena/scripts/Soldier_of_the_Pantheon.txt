@@ -1,5 +1,5 @@
 name=Soldier of the Pantheon
-image=http://magiccards.info/scans/en/ths/32.jpg
+image=https://magiccards.info/scans/en/ths/32.jpg
 value=3.743
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Kami of the Palace Fields
-image=http://magiccards.info/scans/en/chk/24.jpg
+image=https://magiccards.info/scans/en/chk/24.jpg
 value=1.721
 rarity=U
 type=Creature

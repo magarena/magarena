@@ -1,5 +1,5 @@
 name=Wingbeat Warrior
-image=http://magiccards.info/scans/en/le/29.jpg
+image=https://magiccards.info/scans/en/le/29.jpg
 value=2.706
 rarity=C
 type=Creature

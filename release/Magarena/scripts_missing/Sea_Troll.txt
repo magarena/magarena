@@ -1,5 +1,5 @@
 name=Sea Troll
-image=http://magiccards.info/scans/en/hl/49.jpg
+image=https://magiccards.info/scans/en/hl/49.jpg
 value=1.200
 rarity=U
 type=Creature

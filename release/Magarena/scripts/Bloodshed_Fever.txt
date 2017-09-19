@@ -1,5 +1,5 @@
 name=Bloodshed Fever
-image=http://magiccards.info/scans/en/shm/84.jpg
+image=https://magiccards.info/scans/en/shm/84.jpg
 value=1.930
 rarity=C
 type=Enchantment

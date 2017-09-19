@@ -1,5 +1,5 @@
 name=Vengeful Vampire
-image=http://magiccards.info/scans/en/dka/78.jpg
+image=https://magiccards.info/scans/en/dka/78.jpg
 value=1.825
 rarity=U
 type=Creature

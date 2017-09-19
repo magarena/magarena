@@ -1,5 +1,5 @@
 name=Mawcor
-image=http://magiccards.info/scans/en/7e/87.jpg
+image=https://magiccards.info/scans/en/7e/87.jpg
 value=2.896
 rarity=R
 type=Creature

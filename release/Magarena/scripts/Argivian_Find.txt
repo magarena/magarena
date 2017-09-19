@@ -1,5 +1,5 @@
 name=Argivian Find
-image=http://magiccards.info/scans/en/wl/122.jpg
+image=https://magiccards.info/scans/en/wl/122.jpg
 value=3.967
 rarity=U
 type=Instant

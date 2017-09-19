@@ -1,5 +1,5 @@
 name=Blistering Dieflyn
-image=http://magiccards.info/scans/en/shm/82.jpg
+image=https://magiccards.info/scans/en/shm/82.jpg
 value=1.578
 rarity=C
 type=Creature

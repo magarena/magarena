@@ -1,5 +1,5 @@
 name=Angelic Shield
-image=http://magiccards.info/scans/en/in/228.jpg
+image=https://magiccards.info/scans/en/in/228.jpg
 image_updated=2016-11-20
 value=3.891
 removal=1

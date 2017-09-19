@@ -1,5 +1,5 @@
 name=Falling Timber
-image=http://magiccards.info/scans/en/ps/79.jpg
+image=https://magiccards.info/scans/en/ps/79.jpg
 value=1.750
 rarity=C
 type=Instant

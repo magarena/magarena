@@ -1,5 +1,5 @@
 name=Ashcoat Bear
-image=http://magiccards.info/scans/en/ts/190.jpg
+image=https://magiccards.info/scans/en/ts/190.jpg
 value=4.105
 rarity=C
 type=Creature

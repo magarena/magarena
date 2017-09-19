@@ -1,5 +1,5 @@
 name=Salt Road Quartermasters
-image=http://magiccards.info/scans/en/dtk/199.jpg
+image=https://magiccards.info/scans/en/dtk/199.jpg
 value=2.500
 rarity=U
 type=Creature

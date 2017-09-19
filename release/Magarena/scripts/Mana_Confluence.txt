@@ -1,5 +1,5 @@
 name=Mana Confluence
-image=http://magiccards.info/scans/en/jou/163.jpg
+image=https://magiccards.info/scans/en/jou/163.jpg
 value=4.553
 rarity=R
 type=Land

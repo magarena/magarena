@@ -1,5 +1,5 @@
 name=Flailing Soldier
-image=http://magiccards.info/scans/en/mm/189.jpg
+image=https://magiccards.info/scans/en/mm/189.jpg
 value=4.020
 rarity=C
 type=Creature

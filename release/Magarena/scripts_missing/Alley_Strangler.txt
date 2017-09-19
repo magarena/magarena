@@ -1,5 +1,5 @@
 name=Alley Strangler
-image=http://magiccards.info/scans/en/aer/52.jpg
+image=https://magiccards.info/scans/en/aer/52.jpg
 value=2.500
 rarity=C
 type=Creature

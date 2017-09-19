@@ -1,5 +1,5 @@
 name=Warmonger
-image=http://magiccards.info/scans/en/mm/225.jpg
+image=https://magiccards.info/scans/en/mm/225.jpg
 value=3.423
 rarity=U
 type=Creature

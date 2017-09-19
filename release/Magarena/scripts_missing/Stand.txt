@@ -1,5 +1,5 @@
 name=Stand
-image=http://magiccards.info/scans/en/in/292a.jpg
+image=https://magiccards.info/scans/en/in/292a.jpg
 value=3.219
 rarity=U
 type=Instant

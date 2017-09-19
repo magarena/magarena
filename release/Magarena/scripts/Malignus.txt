@@ -1,5 +1,5 @@
 name=Malignus
-image=http://magiccards.info/scans/en/avr/148.jpg
+image=https://magiccards.info/scans/en/avr/148.jpg
 value=3.806
 rarity=M
 type=Creature

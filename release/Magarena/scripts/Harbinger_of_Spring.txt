@@ -1,5 +1,5 @@
 name=Harbinger of Spring
-image=http://magiccards.info/scans/en/bok/128.jpg
+image=https://magiccards.info/scans/en/bok/128.jpg
 value=2.689
 rarity=C
 type=Creature

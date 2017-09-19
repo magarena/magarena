@@ -1,5 +1,5 @@
 name=Magnify
-image=http://magiccards.info/scans/en/ud/111.jpg
+image=https://magiccards.info/scans/en/ud/111.jpg
 value=2.758
 rarity=C
 type=Instant

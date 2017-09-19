@@ -1,5 +1,5 @@
 name=Firedrinker Satyr
-image=http://magiccards.info/scans/en/ths/122.jpg
+image=https://magiccards.info/scans/en/ths/122.jpg
 value=3.426
 rarity=R
 type=Creature

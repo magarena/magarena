@@ -1,5 +1,5 @@
 name=Intrepid Provisioner
-image=http://magiccards.info/scans/en/soi/213.jpg
+image=https://magiccards.info/scans/en/soi/213.jpg
 value=2.500
 rarity=C
 type=Creature

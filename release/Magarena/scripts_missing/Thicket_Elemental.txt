@@ -1,5 +1,5 @@
 name=Thicket Elemental
-image=http://magiccards.info/scans/en/in/214.jpg
+image=https://magiccards.info/scans/en/in/214.jpg
 value=4.119
 rarity=R
 type=Creature

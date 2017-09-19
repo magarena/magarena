@@ -1,5 +1,5 @@
 name=Fledgling Mawcor
-image=http://magiccards.info/scans/en/ts/63.jpg
+image=https://magiccards.info/scans/en/ts/63.jpg
 image_updated=2016-12-02
 value=3.152
 rarity=U

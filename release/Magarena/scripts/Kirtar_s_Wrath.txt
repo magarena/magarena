@@ -1,5 +1,5 @@
 name=Kirtar's Wrath
-image=http://magiccards.info/scans/en/od/28.jpg
+image=https://magiccards.info/scans/en/od/28.jpg
 value=3.767
 rarity=R
 type=Sorcery

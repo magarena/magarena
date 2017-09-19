@@ -1,5 +1,5 @@
 name=Grizzly Bears
-image=http://magiccards.info/scans/en/10e/268.jpg
+image=https://magiccards.info/scans/en/10e/268.jpg
 value=3.745
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Havenwood Wurm
-image=http://magiccards.info/scans/en/ts/199.jpg
+image=https://magiccards.info/scans/en/ts/199.jpg
 value=3.138
 rarity=C
 type=Creature

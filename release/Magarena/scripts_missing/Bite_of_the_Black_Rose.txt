@@ -1,5 +1,5 @@
 name=Bite of the Black Rose
-image=http://magiccards.info/scans/en/cns/26.jpg
+image=https://magiccards.info/scans/en/cns/26.jpg
 value=3.083
 rarity=U
 type=Sorcery

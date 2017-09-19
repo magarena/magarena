@@ -1,6 +1,6 @@
 name=3/3 red Ogre creature token
 token=Ogre
-image=http://magiccards.info/extras/token/worldwake/ogre.jpg
+image=https://magiccards.info/extras/token/worldwake/ogre.jpg
 value=3
 type=Creature
 subtype=Ogre

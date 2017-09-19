@@ -1,5 +1,5 @@
 name=Aegis of the Meek
-image=http://magiccards.info/scans/en/ia/282.jpg
+image=https://magiccards.info/scans/en/ia/282.jpg
 value=1.641
 rarity=R
 type=Artifact

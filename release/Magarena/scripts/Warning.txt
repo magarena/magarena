@@ -1,5 +1,5 @@
 name=Warning
-image=http://magiccards.info/scans/en/ia/279.jpg
+image=https://magiccards.info/scans/en/ia/279.jpg
 value=2.696
 rarity=C
 type=Instant

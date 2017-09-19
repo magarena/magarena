@@ -1,6 +1,6 @@
 name=1/1 white Human creature token
 token=Human
-image=http://magiccards.info/extras/token/dark-ascension/human.jpg
+image=https://magiccards.info/extras/token/dark-ascension/human.jpg
 value=1
 type=Creature
 subtype=Human

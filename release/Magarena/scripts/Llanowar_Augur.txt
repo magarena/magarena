@@ -1,5 +1,5 @@
 name=Llanowar Augur
-image=http://magiccards.info/scans/en/fut/129.jpg
+image=https://magiccards.info/scans/en/fut/129.jpg
 value=3.720
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mortal's Resolve
-image=http://magiccards.info/scans/en/bng/127.jpg
+image=https://magiccards.info/scans/en/bng/127.jpg
 value=3.759
 rarity=C
 type=Instant

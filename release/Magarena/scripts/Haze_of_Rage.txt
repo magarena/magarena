@@ -1,5 +1,5 @@
 name=Haze of Rage
-image=http://magiccards.info/scans/en/fut/100.jpg
+image=https://magiccards.info/scans/en/fut/100.jpg
 value=3.231
 rarity=U
 type=Sorcery

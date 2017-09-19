@@ -1,5 +1,5 @@
 name=Western Paladin
-image=http://magiccards.info/scans/en/8e/173.jpg
+image=https://magiccards.info/scans/en/8e/173.jpg
 value=4.122
 rarity=R
 type=Creature

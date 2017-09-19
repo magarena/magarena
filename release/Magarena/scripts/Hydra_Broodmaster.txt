@@ -1,5 +1,5 @@
 name=Hydra Broodmaster
-image=http://magiccards.info/scans/en/jou/128.jpg
+image=https://magiccards.info/scans/en/jou/128.jpg
 value=3.818
 rarity=R
 type=Creature

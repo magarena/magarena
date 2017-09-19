@@ -1,5 +1,5 @@
 name=Trained Armodon
-image=http://magiccards.info/scans/en/9e/274.jpg
+image=https://magiccards.info/scans/en/9e/274.jpg
 value=2.949
 rarity=C
 type=Creature

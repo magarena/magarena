@@ -1,5 +1,5 @@
 name=The Rack
-image=http://magiccards.info/scans/en/tsts/113.jpg
+image=https://magiccards.info/scans/en/tsts/113.jpg
 image_updated=2017-01-10
 value=4.368
 rarity=U

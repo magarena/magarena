@@ -1,5 +1,5 @@
 name=Mana Bloom
-image=http://magiccards.info/scans/en/rtr/130.jpg
+image=https://magiccards.info/scans/en/rtr/130.jpg
 value=2.642
 rarity=R
 type=Enchantment

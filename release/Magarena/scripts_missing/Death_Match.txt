@@ -1,5 +1,5 @@
 name=Death Match
-image=http://magiccards.info/scans/en/on/136.jpg
+image=https://magiccards.info/scans/en/on/136.jpg
 value=3.463
 rarity=R
 type=Enchantment

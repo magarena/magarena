@@ -1,5 +1,5 @@
 name=Rockshard Elemental
-image=http://magiccards.info/scans/en/le/109.jpg
+image=https://magiccards.info/scans/en/le/109.jpg
 value=3.911
 rarity=R
 type=Creature

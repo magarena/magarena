@@ -1,5 +1,5 @@
 name=Iwamori of the Open Fist
-image=http://magiccards.info/scans/en/bok/130.jpg
+image=https://magiccards.info/scans/en/bok/130.jpg
 value=3.917
 rarity=R
 type=Legendary,Creature

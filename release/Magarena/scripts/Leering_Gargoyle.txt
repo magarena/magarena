@@ -1,5 +1,5 @@
 name=Leering Gargoyle
-image=http://magiccards.info/scans/en/mr/331.jpg
+image=https://magiccards.info/scans/en/mr/331.jpg
 value=2.818
 rarity=R
 type=Creature

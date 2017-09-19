@@ -1,5 +1,5 @@
 name=Ancient Spider
-image=http://magiccards.info/scans/en/ps/96.jpg
+image=https://magiccards.info/scans/en/ps/96.jpg
 value=3.841
 rarity=R
 type=Creature

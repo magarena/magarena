@@ -1,5 +1,5 @@
 name=Okk
-image=http://magiccards.info/scans/en/8e/206.jpg
+image=https://magiccards.info/scans/en/8e/206.jpg
 value=2.756
 rarity=R
 type=Creature

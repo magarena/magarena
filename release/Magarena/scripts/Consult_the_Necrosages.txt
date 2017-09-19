@@ -1,5 +1,5 @@
 name=Consult the Necrosages
-image=http://magiccards.info/scans/en/rav/199.jpg
+image=https://magiccards.info/scans/en/rav/199.jpg
 value=4.007
 rarity=C
 type=Sorcery

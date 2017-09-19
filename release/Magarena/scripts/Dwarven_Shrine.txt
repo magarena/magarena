@@ -1,5 +1,5 @@
 name=Dwarven Shrine
-image=http://magiccards.info/scans/en/od/187.jpg
+image=https://magiccards.info/scans/en/od/187.jpg
 value=1.841
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mountain Goat
-image=http://magiccards.info/scans/en/6e/195.jpg
+image=https://magiccards.info/scans/en/6e/195.jpg
 value=3.776
 rarity=C
 type=Creature

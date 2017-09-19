@@ -1,5 +1,5 @@
 name=Amok
-image=http://magiccards.info/scans/en/sh/76.jpg
+image=https://magiccards.info/scans/en/sh/76.jpg
 value=2.467
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Greenseeker
-image=http://magiccards.info/scans/en/ts/198.jpg
+image=https://magiccards.info/scans/en/ts/198.jpg
 value=3.628
 rarity=C
 type=Creature

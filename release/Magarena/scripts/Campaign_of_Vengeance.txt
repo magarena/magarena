@@ -1,5 +1,5 @@
 name=Campaign of Vengeance
-image=http://magiccards.info/scans/en/emn/182.jpg
+image=https://magiccards.info/scans/en/emn/182.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=U

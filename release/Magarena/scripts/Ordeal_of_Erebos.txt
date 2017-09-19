@@ -1,5 +1,5 @@
 name=Ordeal of Erebos
-image=http://magiccards.info/scans/en/ths/99.jpg
+image=https://magiccards.info/scans/en/ths/99.jpg
 value=3.061
 rarity=U
 type=Enchantment

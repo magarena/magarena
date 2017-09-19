@@ -1,5 +1,5 @@
 name=Triad of Fates
-image=http://magiccards.info/scans/en/ths/206.jpg
+image=https://magiccards.info/scans/en/ths/206.jpg
 value=3.325
 rarity=R
 type=Legendary,Creature

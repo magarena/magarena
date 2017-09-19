@@ -1,5 +1,5 @@
 name=Pentavus
-image=http://magiccards.info/scans/en/c14/261.jpg
+image=https://magiccards.info/scans/en/c14/261.jpg
 value=4.253
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Scrapper Champion
-image=http://magiccards.info/scans/en/aer/97.jpg
+image=https://magiccards.info/scans/en/aer/97.jpg
 value=2.500
 rarity=U
 type=Creature

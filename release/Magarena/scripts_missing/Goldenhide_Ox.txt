@@ -1,5 +1,5 @@
 name=Goldenhide Ox
-image=http://magiccards.info/scans/en/jou/125.jpg
+image=https://magiccards.info/scans/en/jou/125.jpg
 value=2.722
 rarity=U
 type=Enchantment,Creature

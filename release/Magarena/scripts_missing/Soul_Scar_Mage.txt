@@ -1,5 +1,5 @@
 name=Soul-Scar Mage
-image=http://magiccards.info/scans/en/akh/148.jpg
+image=https://magiccards.info/scans/en/akh/148.jpg
 value=2.500
 rarity=R
 type=Creature

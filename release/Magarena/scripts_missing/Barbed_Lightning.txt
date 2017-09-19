@@ -1,5 +1,5 @@
 name=Barbed Lightning
-image=http://magiccards.info/scans/en/ds/55.jpg
+image=https://magiccards.info/scans/en/ds/55.jpg
 value=3.455
 rarity=C
 type=Instant

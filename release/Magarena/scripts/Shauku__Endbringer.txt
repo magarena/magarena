@@ -1,5 +1,5 @@
 name=Shauku, Endbringer
-image=http://magiccards.info/scans/en/mr/40.jpg
+image=https://magiccards.info/scans/en/mr/40.jpg
 value=3.965
 rarity=R
 type=Legendary,Creature

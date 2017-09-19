@@ -1,5 +1,5 @@
 name=Tahngarth's Rage
-image=http://magiccards.info/scans/en/tp/209.jpg
+image=https://magiccards.info/scans/en/tp/209.jpg
 value=2.527
 rarity=U
 type=Enchantment

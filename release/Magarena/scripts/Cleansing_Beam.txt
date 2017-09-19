@@ -1,5 +1,5 @@
 name=Cleansing Beam
-image=http://magiccards.info/scans/en/cmd/116.jpg
+image=https://magiccards.info/scans/en/cmd/116.jpg
 value=2.113
 rarity=U
 type=Instant

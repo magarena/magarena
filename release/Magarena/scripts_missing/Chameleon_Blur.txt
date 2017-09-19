@@ -1,5 +1,5 @@
 name=Chameleon Blur
-image=http://magiccards.info/scans/en/ts/192.jpg
+image=https://magiccards.info/scans/en/ts/192.jpg
 value=1.583
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Rakdos Ickspitter
-image=http://magiccards.info/scans/en/di/128.jpg
+image=https://magiccards.info/scans/en/di/128.jpg
 value=3.552
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Last Caress
-image=http://magiccards.info/scans/en/ap/41.jpg
+image=https://magiccards.info/scans/en/ap/41.jpg
 value=2.439
 rarity=C
 type=Sorcery

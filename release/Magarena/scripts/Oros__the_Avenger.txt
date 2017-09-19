@@ -1,5 +1,5 @@
 name=Oros, the Avenger
-image=http://magiccards.info/scans/en/cmd/216.jpg
+image=https://magiccards.info/scans/en/cmd/216.jpg
 value=4.026
 rarity=R
 type=Legendary,Creature

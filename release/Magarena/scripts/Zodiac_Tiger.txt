@@ -1,5 +1,5 @@
 name=Zodiac Tiger
-image=http://magiccards.info/scans/en/p3k/164.jpg
+image=https://magiccards.info/scans/en/p3k/164.jpg
 value=3.125
 rarity=U
 type=Creature

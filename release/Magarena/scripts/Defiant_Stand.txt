@@ -1,5 +1,5 @@
 name=Defiant Stand
-image=http://magiccards.info/scans/en/po/174.jpg
+image=https://magiccards.info/scans/en/po/174.jpg
 value=2.217
 rarity=U
 type=Instant

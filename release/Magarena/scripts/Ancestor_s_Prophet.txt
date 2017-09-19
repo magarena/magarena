@@ -1,5 +1,5 @@
 name=Ancestor's Prophet
-image=http://magiccards.info/scans/en/on/3.jpg
+image=https://magiccards.info/scans/en/on/3.jpg
 value=3.679
 rarity=R
 type=Creature

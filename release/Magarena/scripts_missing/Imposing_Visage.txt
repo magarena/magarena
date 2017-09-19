@@ -1,5 +1,5 @@
 name=Imposing Visage
-image=http://magiccards.info/scans/en/5e/241.jpg
+image=https://magiccards.info/scans/en/5e/241.jpg
 value=2.672
 rarity=C
 type=Enchantment

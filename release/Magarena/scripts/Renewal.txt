@@ -1,5 +1,5 @@
 name=Renewal
-image=http://magiccards.info/scans/en/hl/66.jpg
+image=https://magiccards.info/scans/en/hl/66.jpg
 value=2.882
 rarity=C
 type=Sorcery

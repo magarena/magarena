@@ -1,5 +1,5 @@
 name=Assassinate
-image=http://magiccards.info/scans/en/cns/113.jpg
+image=https://magiccards.info/scans/en/cns/113.jpg
 value=2.625
 removal=3
 rarity=C

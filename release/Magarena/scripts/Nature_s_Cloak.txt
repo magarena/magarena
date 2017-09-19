@@ -1,5 +1,5 @@
 name=Nature's Cloak
-image=http://magiccards.info/scans/en/st/135.jpg
+image=https://magiccards.info/scans/en/st/135.jpg
 value=1.969
 rarity=R
 type=Sorcery

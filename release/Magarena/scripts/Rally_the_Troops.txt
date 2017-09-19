@@ -1,5 +1,5 @@
 name=Rally the Troops
-image=http://magiccards.info/scans/en/p3k/16.jpg
+image=https://magiccards.info/scans/en/p3k/16.jpg
 value=2.712
 rarity=U
 type=Instant

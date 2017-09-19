@@ -1,5 +1,5 @@
 name=Urza's Avenger
-image=http://magiccards.info/scans/en/5e/405.jpg
+image=https://magiccards.info/scans/en/5e/405.jpg
 value=2.684
 rarity=R
 type=Artifact,Creature

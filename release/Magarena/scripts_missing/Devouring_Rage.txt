@@ -1,5 +1,5 @@
 name=Devouring Rage
-image=http://magiccards.info/scans/en/chk/164.jpg
+image=https://magiccards.info/scans/en/chk/164.jpg
 value=1.871
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Starved Rusalka
-image=http://magiccards.info/scans/en/gp/97.jpg
+image=https://magiccards.info/scans/en/gp/97.jpg
 value=1.478
 rarity=U
 type=Creature

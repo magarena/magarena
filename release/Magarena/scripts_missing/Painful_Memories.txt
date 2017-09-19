@@ -1,5 +1,5 @@
 name=Painful Memories
-image=http://magiccards.info/scans/en/6e/147.jpg
+image=https://magiccards.info/scans/en/6e/147.jpg
 value=3.000
 rarity=C
 type=Sorcery

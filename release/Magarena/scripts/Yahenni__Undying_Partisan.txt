@@ -1,5 +1,5 @@
 name=Yahenni, Undying Partisan
-image=http://magiccards.info/scans/en/aer/74.jpg
+image=https://magiccards.info/scans/en/aer/74.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

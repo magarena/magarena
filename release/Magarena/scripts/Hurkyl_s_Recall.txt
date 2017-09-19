@@ -1,5 +1,5 @@
 name=Hurkyl's Recall
-image=http://magiccards.info/scans/en/mm2/48.jpg
+image=https://magiccards.info/scans/en/mm2/48.jpg
 value=4.547
 rarity=R
 type=Instant

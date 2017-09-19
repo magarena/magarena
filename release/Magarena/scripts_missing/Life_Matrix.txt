@@ -1,5 +1,5 @@
 name=Life Matrix
-image=http://magiccards.info/scans/en/lg/229.jpg
+image=https://magiccards.info/scans/en/lg/229.jpg
 value=1.707
 rarity=R
 type=Artifact

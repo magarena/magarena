@@ -1,5 +1,5 @@
 name=Safehold Sentry
-image=http://magiccards.info/scans/en/shm/22.jpg
+image=https://magiccards.info/scans/en/shm/22.jpg
 value=2.550
 rarity=C
 type=Creature

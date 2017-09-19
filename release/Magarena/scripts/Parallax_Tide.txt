@@ -1,5 +1,5 @@
 name=Parallax Tide
-image=http://magiccards.info/scans/en/ne/37.jpg
+image=https://magiccards.info/scans/en/ne/37.jpg
 value=4.043
 rarity=R
 type=Enchantment

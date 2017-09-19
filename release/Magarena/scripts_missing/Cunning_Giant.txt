@@ -1,5 +1,5 @@
 name=Cunning Giant
-image=http://magiccards.info/scans/en/po2/93.jpg
+image=https://magiccards.info/scans/en/po2/93.jpg
 value=3.104
 rarity=R
 type=Creature

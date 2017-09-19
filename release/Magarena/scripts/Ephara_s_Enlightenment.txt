@@ -1,5 +1,5 @@
 name=Ephara's Enlightenment
-image=http://magiccards.info/scans/en/bng/146.jpg
+image=https://magiccards.info/scans/en/bng/146.jpg
 value=3.581
 rarity=U
 type=Enchantment

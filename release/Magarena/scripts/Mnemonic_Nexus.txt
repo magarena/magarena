@@ -1,5 +1,5 @@
 name=Mnemonic Nexus
-image=http://magiccards.info/scans/en/rav/59.jpg
+image=https://magiccards.info/scans/en/rav/59.jpg
 value=2.405
 rarity=U
 type=Instant

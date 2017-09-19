@@ -1,5 +1,5 @@
 name=Loss
-image=http://magiccards.info/scans/en/dgm/130b.jpg
+image=https://magiccards.info/scans/en/dgm/130b.jpg
 value=2.413
 rarity=U
 type=Instant

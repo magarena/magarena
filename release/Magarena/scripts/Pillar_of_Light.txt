@@ -1,5 +1,5 @@
 name=Pillar of Light
-image=http://magiccards.info/scans/en/m15/24.jpg
+image=https://magiccards.info/scans/en/m15/24.jpg
 value=2.900
 rarity=C
 type=Instant

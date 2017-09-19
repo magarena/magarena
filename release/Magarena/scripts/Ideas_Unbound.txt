@@ -1,5 +1,5 @@
 name=Ideas Unbound
-image=http://magiccards.info/scans/en/sok/40.jpg
+image=https://magiccards.info/scans/en/sok/40.jpg
 value=4.000
 rarity=C
 type=Sorcery

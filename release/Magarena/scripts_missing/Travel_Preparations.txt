@@ -1,5 +1,5 @@
 name=Travel Preparations
-image=http://magiccards.info/scans/en/isd/206.jpg
+image=https://magiccards.info/scans/en/isd/206.jpg
 value=3.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Odds
-image=http://magiccards.info/scans/en/di/153a.jpg
+image=https://magiccards.info/scans/en/di/153a.jpg
 value=4.000
 rarity=R
 type=Instant

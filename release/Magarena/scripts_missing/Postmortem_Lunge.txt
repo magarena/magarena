@@ -1,5 +1,5 @@
 name=Postmortem Lunge
-image=http://magiccards.info/scans/en/nph/70.jpg
+image=https://magiccards.info/scans/en/nph/70.jpg
 value=3.243
 rarity=U
 type=Sorcery

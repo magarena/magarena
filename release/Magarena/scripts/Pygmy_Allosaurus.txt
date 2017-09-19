@@ -1,5 +1,5 @@
 name=Pygmy Allosaurus
-image=http://magiccards.info/scans/en/ia/145.jpg
+image=https://magiccards.info/scans/en/ia/145.jpg
 value=2.587
 rarity=R
 type=Creature

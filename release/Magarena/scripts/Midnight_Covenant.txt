@@ -1,5 +1,5 @@
 name=Midnight Covenant
-image=http://magiccards.info/scans/en/chk/125.jpg
+image=https://magiccards.info/scans/en/chk/125.jpg
 value=2.721
 rarity=C
 type=Enchantment

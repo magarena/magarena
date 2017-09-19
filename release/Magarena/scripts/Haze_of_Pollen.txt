@@ -1,5 +1,5 @@
 name=Haze of Pollen
-image=http://magiccards.info/scans/en/akh/171.jpg
+image=https://magiccards.info/scans/en/akh/171.jpg
 value=2.500
 rarity=C
 type=Instant

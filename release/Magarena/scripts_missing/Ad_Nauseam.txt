@@ -1,5 +1,5 @@
 name=Ad Nauseam
-image=http://magiccards.info/scans/en/ala/63.jpg
+image=https://magiccards.info/scans/en/ala/63.jpg
 value=4.146
 rarity=R
 type=Instant

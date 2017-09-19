@@ -1,5 +1,5 @@
 name=Wall of Torches
-image=http://magiccards.info/scans/en/m12/159.jpg
+image=https://magiccards.info/scans/en/m12/159.jpg
 value=2.182
 rarity=C
 type=Creature

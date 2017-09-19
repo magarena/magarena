@@ -1,5 +1,5 @@
 name=Psychic Surgery
-image=http://magiccards.info/scans/en/nph/44.jpg
+image=https://magiccards.info/scans/en/nph/44.jpg
 value=3.036
 rarity=R
 type=Enchantment

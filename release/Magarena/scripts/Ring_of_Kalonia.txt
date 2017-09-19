@@ -1,5 +1,5 @@
 name=Ring of Kalonia
-image=http://magiccards.info/scans/en/m13/212.jpg
+image=https://magiccards.info/scans/en/m13/212.jpg
 value=3.777
 rarity=U
 type=Artifact

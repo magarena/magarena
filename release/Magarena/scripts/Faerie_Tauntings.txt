@@ -1,5 +1,5 @@
 name=Faerie Tauntings
-image=http://magiccards.info/scans/en/lw/112.jpg
+image=https://magiccards.info/scans/en/lw/112.jpg
 value=2.892
 rarity=U
 type=Tribal,Enchantment

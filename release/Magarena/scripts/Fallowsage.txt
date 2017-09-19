@@ -1,5 +1,5 @@
 name=Fallowsage
-image=http://magiccards.info/scans/en/lw/63.jpg
+image=https://magiccards.info/scans/en/lw/63.jpg
 value=3.636
 rarity=U
 type=Creature

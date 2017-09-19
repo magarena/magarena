@@ -1,5 +1,5 @@
 name=Resounding Thunder
-image=http://magiccards.info/scans/en/ala/110.jpg
+image=https://magiccards.info/scans/en/ala/110.jpg
 value=2.373
 rarity=C
 type=Instant

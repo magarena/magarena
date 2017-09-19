@@ -1,5 +1,5 @@
 name=Plant Elemental
-image=http://magiccards.info/scans/en/po/107.jpg
+image=https://magiccards.info/scans/en/po/107.jpg
 value=3.484
 rarity=U
 type=Creature

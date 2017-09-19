@@ -1,6 +1,6 @@
 name=1/1 blue and black Zombie Wizard creature token
 token=Zombie Wizard
-image=http://magiccards.info/extras/token/alara-reborn/zombie-wizard.jpg
+image=https://magiccards.info/extras/token/alara-reborn/zombie-wizard.jpg
 value=1
 type=Creature
 subtype=Zombie,Wizard

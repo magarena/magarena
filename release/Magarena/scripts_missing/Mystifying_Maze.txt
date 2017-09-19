@@ -1,5 +1,5 @@
 name=Mystifying Maze
-image=http://magiccards.info/scans/en/m11/226.jpg
+image=https://magiccards.info/scans/en/m11/226.jpg
 value=3.938
 rarity=R
 type=Land

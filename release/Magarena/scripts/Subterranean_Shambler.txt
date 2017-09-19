@@ -1,5 +1,5 @@
 name=Subterranean Shambler
-image=http://magiccards.info/scans/en/ts/178.jpg
+image=https://magiccards.info/scans/en/ts/178.jpg
 value=2.106
 removal=1
 rarity=C

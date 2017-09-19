@@ -1,5 +1,5 @@
 name=Viral Drake
-image=http://magiccards.info/scans/en/nph/49.jpg
+image=https://magiccards.info/scans/en/nph/49.jpg
 value=3.729
 rarity=U
 type=Creature

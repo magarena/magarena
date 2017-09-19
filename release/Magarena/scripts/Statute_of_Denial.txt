@@ -1,5 +1,5 @@
 name=Statute of Denial
-image=http://magiccards.info/scans/en/m15/79.jpg
+image=https://magiccards.info/scans/en/m15/79.jpg
 value=1.714
 rarity=C
 type=Instant

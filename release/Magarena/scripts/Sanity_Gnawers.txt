@@ -1,5 +1,5 @@
 name=Sanity Gnawers
-image=http://magiccards.info/scans/en/arb/44.jpg
+image=https://magiccards.info/scans/en/arb/44.jpg
 value=2.638
 rarity=U
 type=Creature

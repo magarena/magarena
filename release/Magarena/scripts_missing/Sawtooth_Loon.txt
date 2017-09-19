@@ -1,5 +1,5 @@
 name=Sawtooth Loon
-image=http://magiccards.info/scans/en/ps/123.jpg
+image=https://magiccards.info/scans/en/ps/123.jpg
 image_updated=2016-01-09
 value=3.714
 rarity=U

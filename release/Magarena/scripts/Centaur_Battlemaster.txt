@@ -1,5 +1,5 @@
 name=Centaur Battlemaster
-image=http://magiccards.info/scans/en/ths/154.jpg
+image=https://magiccards.info/scans/en/ths/154.jpg
 value=3.542
 rarity=U
 type=Creature

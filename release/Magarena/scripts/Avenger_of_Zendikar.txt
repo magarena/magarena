@@ -1,5 +1,5 @@
 name=Avenger of Zendikar
-image=http://magiccards.info/scans/en/wwk/96.jpg
+image=https://magiccards.info/scans/en/wwk/96.jpg
 value=3.608
 rarity=M
 type=Creature

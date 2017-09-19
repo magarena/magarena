@@ -1,5 +1,5 @@
 name=Skirsdag Flayer
-image=http://magiccards.info/scans/en/dka/74.jpg
+image=https://magiccards.info/scans/en/dka/74.jpg
 value=2.917
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Shattering Spree
-image=http://magiccards.info/scans/en/gp/75.jpg
+image=https://magiccards.info/scans/en/gp/75.jpg
 value=4.586
 removal=1
 rarity=U

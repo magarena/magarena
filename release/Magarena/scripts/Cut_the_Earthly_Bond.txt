@@ -1,5 +1,5 @@
 name=Cut the Earthly Bond
-image=http://magiccards.info/scans/en/sok/32.jpg
+image=https://magiccards.info/scans/en/sok/32.jpg
 value=1.557
 rarity=C
 type=Instant

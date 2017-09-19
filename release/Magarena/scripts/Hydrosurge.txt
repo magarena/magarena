@@ -1,5 +1,5 @@
 name=Hydrosurge
-image=http://magiccards.info/scans/en/m15/58.jpg
+image=https://magiccards.info/scans/en/m15/58.jpg
 value=1.500
 rarity=C
 type=Instant

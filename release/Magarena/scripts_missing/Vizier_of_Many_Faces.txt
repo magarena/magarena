@@ -1,5 +1,5 @@
 name=Vizier of Many Faces
-image=http://magiccards.info/scans/en/akh/74.jpg
+image=https://magiccards.info/scans/en/akh/74.jpg
 value=2.500
 rarity=R
 type=Creature

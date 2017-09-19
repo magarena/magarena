@@ -1,5 +1,5 @@
 name=Brain Maggot
-image=http://magiccards.info/scans/en/jou/62.jpg
+image=https://magiccards.info/scans/en/jou/62.jpg
 value=3.841
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Exploding Borders
-image=http://magiccards.info/scans/en/cfx/106.jpg
+image=https://magiccards.info/scans/en/cfx/106.jpg
 value=2.968
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Meddling Mage
-image=http://magiccards.info/scans/en/arb/8.jpg
+image=https://magiccards.info/scans/en/arb/8.jpg
 value=4.604
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Riptide Shapeshifter
-image=http://magiccards.info/scans/en/on/109.jpg
+image=https://magiccards.info/scans/en/on/109.jpg
 value=3.739
 rarity=U
 type=Creature

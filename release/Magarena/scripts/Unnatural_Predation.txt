@@ -1,5 +1,5 @@
 name=Unnatural Predation
-image=http://magiccards.info/scans/en/mbs/93.jpg
+image=https://magiccards.info/scans/en/mbs/93.jpg
 value=2.965
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Baneful Omen
-image=http://magiccards.info/scans/en/roe/96.jpg
+image=https://magiccards.info/scans/en/roe/96.jpg
 value=3.641
 rarity=R
 type=Enchantment

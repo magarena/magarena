@@ -1,5 +1,5 @@
 name=Replenish
-image=http://magiccards.info/scans/en/ud/15.jpg
+image=https://magiccards.info/scans/en/ud/15.jpg
 value=4.576
 rarity=R
 type=Sorcery

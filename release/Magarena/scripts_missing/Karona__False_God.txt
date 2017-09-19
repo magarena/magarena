@@ -1,5 +1,5 @@
 name=Karona, False God
-image=http://magiccards.info/scans/en/sc/138.jpg
+image=https://magiccards.info/scans/en/sc/138.jpg
 value=2.624
 rarity=R
 type=Legendary,Creature

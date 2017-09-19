@@ -1,5 +1,5 @@
 name=Spinal Embrace
-image=http://magiccards.info/scans/en/in/276.jpg
+image=https://magiccards.info/scans/en/in/276.jpg
 value=4.147
 rarity=R
 type=Instant

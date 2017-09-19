@@ -1,5 +1,5 @@
 name=Qasali Ambusher
-image=http://magiccards.info/scans/en/ala/184.jpg
+image=https://magiccards.info/scans/en/ala/184.jpg
 value=3.746
 rarity=U
 type=Creature

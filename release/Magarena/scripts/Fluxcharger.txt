@@ -1,5 +1,5 @@
 name=Fluxcharger
-image=http://magiccards.info/scans/en/dgm/71.jpg
+image=https://magiccards.info/scans/en/dgm/71.jpg
 value=3.791
 rarity=U
 type=Creature

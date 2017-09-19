@@ -1,5 +1,5 @@
 name=Bramblesnap
-image=http://magiccards.info/scans/en/roe/180.jpg
+image=https://magiccards.info/scans/en/roe/180.jpg
 value=3.828
 rarity=U
 type=Creature

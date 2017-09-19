@@ -1,5 +1,5 @@
 name=Weed-Pruner Poplar
-image=http://magiccards.info/scans/en/mt/83.jpg
+image=https://magiccards.info/scans/en/mt/83.jpg
 value=3.089
 rarity=C
 type=Creature

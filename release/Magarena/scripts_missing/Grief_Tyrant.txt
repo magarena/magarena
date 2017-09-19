@@ -1,5 +1,5 @@
 name=Grief Tyrant
-image=http://magiccards.info/scans/en/shm/189.jpg
+image=https://magiccards.info/scans/en/shm/189.jpg
 value=3.319
 rarity=U
 type=Creature

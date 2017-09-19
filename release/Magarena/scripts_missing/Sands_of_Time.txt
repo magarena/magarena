@@ -1,5 +1,5 @@
 name=Sands of Time
-image=http://magiccards.info/scans/en/vi/153.jpg
+image=https://magiccards.info/scans/en/vi/153.jpg
 value=4.182
 rarity=R
 type=Artifact

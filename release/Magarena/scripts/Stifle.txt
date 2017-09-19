@@ -1,5 +1,5 @@
 name=Stifle
-image=http://magiccards.info/scans/en/cns/108.jpg
+image=https://magiccards.info/scans/en/cns/108.jpg
 value=4.696
 rarity=R
 type=Instant

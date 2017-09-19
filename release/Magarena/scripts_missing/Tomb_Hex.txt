@@ -1,5 +1,5 @@
 name=Tomb Hex
-image=http://magiccards.info/scans/en/wwk/69.jpg
+image=https://magiccards.info/scans/en/wwk/69.jpg
 value=2.600
 rarity=C
 type=Instant

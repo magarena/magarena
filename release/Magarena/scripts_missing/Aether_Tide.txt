@@ -1,5 +1,5 @@
 name=Aether Tide
-image=http://magiccards.info/scans/en/ex/27.jpg
+image=https://magiccards.info/scans/en/ex/27.jpg
 image_updated=2016-09-27
 value=1.549
 rarity=C

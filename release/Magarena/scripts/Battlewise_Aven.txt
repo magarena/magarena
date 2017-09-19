@@ -1,5 +1,5 @@
 name=Battlewise Aven
-image=http://magiccards.info/scans/en/ju/4.jpg
+image=https://magiccards.info/scans/en/ju/4.jpg
 value=2.710
 rarity=C
 type=Creature

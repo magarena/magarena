@@ -1,5 +1,5 @@
 name=Hazardous Conditions
-image=http://magiccards.info/scans/en/kld/182.jpg
+image=https://magiccards.info/scans/en/kld/182.jpg
 image_updated=2016-10-05
 value=2.500
 rarity=U

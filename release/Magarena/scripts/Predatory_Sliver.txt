@@ -1,5 +1,5 @@
 name=Predatory Sliver
-image=http://magiccards.info/scans/en/m14/189.jpg
+image=https://magiccards.info/scans/en/m14/189.jpg
 value=3.606
 rarity=C
 type=Creature

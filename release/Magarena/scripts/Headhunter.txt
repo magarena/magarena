@@ -1,5 +1,5 @@
 name=Headhunter
-image=http://magiccards.info/scans/en/on/156.jpg
+image=https://magiccards.info/scans/en/on/156.jpg
 value=3.286
 rarity=U
 type=Creature

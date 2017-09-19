@@ -1,5 +1,5 @@
 name=Steam Spitter
-image=http://magiccards.info/scans/en/cs/124.jpg
+image=https://magiccards.info/scans/en/cs/124.jpg
 value=1.903
 rarity=U
 type=Creature

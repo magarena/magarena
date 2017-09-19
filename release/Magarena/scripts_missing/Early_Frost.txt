@@ -1,5 +1,5 @@
 name=Early Frost
-image=http://magiccards.info/scans/en/5dn/29.jpg
+image=https://magiccards.info/scans/en/5dn/29.jpg
 value=3.262
 rarity=C
 type=Instant

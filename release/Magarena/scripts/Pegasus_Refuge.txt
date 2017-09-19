@@ -1,5 +1,5 @@
 name=Pegasus Refuge
-image=http://magiccards.info/scans/en/tp/247.jpg
+image=https://magiccards.info/scans/en/tp/247.jpg
 value=2.203
 rarity=R
 type=Enchantment

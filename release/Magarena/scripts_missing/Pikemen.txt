@@ -1,5 +1,5 @@
 name=Pikemen
-image=http://magiccards.info/scans/en/5e/328.jpg
+image=https://magiccards.info/scans/en/5e/328.jpg
 value=2.972
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bladed Pinions
-image=http://magiccards.info/scans/en/som/140.jpg
+image=https://magiccards.info/scans/en/som/140.jpg
 value=3.153
 rarity=C
 type=Artifact

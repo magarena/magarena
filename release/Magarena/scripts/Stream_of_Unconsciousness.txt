@@ -1,5 +1,5 @@
 name=Stream of Unconsciousness
-image=http://magiccards.info/scans/en/mt/52.jpg
+image=https://magiccards.info/scans/en/mt/52.jpg
 value=2.948
 rarity=C
 type=Tribal,Instant

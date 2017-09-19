@@ -1,5 +1,5 @@
 name=Last Laugh
-image=http://magiccards.info/scans/en/tr/68.jpg
+image=https://magiccards.info/scans/en/tr/68.jpg
 value=3.788
 rarity=R
 type=Enchantment

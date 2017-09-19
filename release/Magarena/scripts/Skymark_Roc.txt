@@ -1,5 +1,5 @@
 name=Skymark Roc
-image=http://magiccards.info/scans/en/rtr/196.jpg
+image=https://magiccards.info/scans/en/rtr/196.jpg
 value=3.739
 rarity=U
 type=Creature

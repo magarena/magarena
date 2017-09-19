@@ -1,5 +1,5 @@
 name=Plated Crusher
-image=http://magiccards.info/scans/en/bfz/183.jpg
+image=https://magiccards.info/scans/en/bfz/183.jpg
 image_updated=2015-11-08
 value=2.500
 rarity=U

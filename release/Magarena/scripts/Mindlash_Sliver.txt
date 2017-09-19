@@ -1,5 +1,5 @@
 name=Mindlash Sliver
-image=http://magiccards.info/scans/en/ts/118.jpg
+image=https://magiccards.info/scans/en/ts/118.jpg
 value=3.229
 rarity=C
 type=Creature

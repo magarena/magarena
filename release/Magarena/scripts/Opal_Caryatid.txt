@@ -1,5 +1,5 @@
 name=Opal Caryatid
-image=http://magiccards.info/scans/en/us/24.jpg
+image=https://magiccards.info/scans/en/us/24.jpg
 value=3.762
 rarity=C
 type=Enchantment

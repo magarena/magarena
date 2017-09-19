@@ -1,5 +1,5 @@
 name=Daring Sleuth
-image=http://magiccards.info/scans/en/soi/54a.jpg
+image=https://magiccards.info/scans/en/soi/54a.jpg
 value=2.500
 rarity=U
 type=Creature

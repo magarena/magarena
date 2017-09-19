@@ -1,5 +1,5 @@
 name=Fire Dragon
-image=http://magiccards.info/scans/en/po/130.jpg
+image=https://magiccards.info/scans/en/po/130.jpg
 value=3.538
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Abyssal Persecutor
-image=http://magiccards.info/scans/en/c14/132.jpg
+image=https://magiccards.info/scans/en/c14/132.jpg
 value=4.288
 rarity=M
 type=Creature

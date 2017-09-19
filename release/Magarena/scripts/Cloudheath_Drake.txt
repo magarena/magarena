@@ -1,5 +1,5 @@
 name=Cloudheath Drake
-image=http://magiccards.info/scans/en/ala/35.jpg
+image=https://magiccards.info/scans/en/ala/35.jpg
 value=1.962
 rarity=C
 type=Artifact,Creature

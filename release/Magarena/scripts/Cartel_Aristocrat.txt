@@ -1,5 +1,5 @@
 name=Cartel Aristocrat
-image=http://magiccards.info/scans/en/gtc/150.jpg
+image=https://magiccards.info/scans/en/gtc/150.jpg
 value=3.435
 rarity=U
 type=Creature

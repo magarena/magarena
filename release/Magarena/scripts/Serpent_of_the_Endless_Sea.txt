@@ -1,5 +1,5 @@
 name=Serpent of the Endless Sea
-image=http://magiccards.info/scans/en/m10/70.jpg
+image=https://magiccards.info/scans/en/m10/70.jpg
 value=2.781
 rarity=C
 type=Creature

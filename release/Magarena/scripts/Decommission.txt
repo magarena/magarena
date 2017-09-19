@@ -1,5 +1,5 @@
 name=Decommission
-image=http://magiccards.info/scans/en/aer/16.jpg
+image=https://magiccards.info/scans/en/aer/16.jpg
 value=2.500
 rarity=C
 type=Instant

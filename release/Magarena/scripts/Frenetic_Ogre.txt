@@ -1,5 +1,5 @@
 name=Frenetic Ogre
-image=http://magiccards.info/scans/en/od/195.jpg
+image=https://magiccards.info/scans/en/od/195.jpg
 value=1.897
 rarity=U
 type=Creature

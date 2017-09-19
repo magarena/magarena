@@ -1,5 +1,5 @@
 name=Kjeldoran Warrior
-image=http://magiccards.info/scans/en/ia/265.jpg
+image=https://magiccards.info/scans/en/ia/265.jpg
 value=3.268
 rarity=C
 type=Creature

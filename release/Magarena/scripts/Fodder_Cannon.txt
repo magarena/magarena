@@ -1,5 +1,5 @@
 name=Fodder Cannon
-image=http://magiccards.info/scans/en/8e/302.jpg
+image=https://magiccards.info/scans/en/8e/302.jpg
 value=4.170
 rarity=U
 type=Artifact

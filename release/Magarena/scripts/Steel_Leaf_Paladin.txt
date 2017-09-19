@@ -1,5 +1,5 @@
 name=Steel Leaf Paladin
-image=http://magiccards.info/scans/en/ps/127.jpg
+image=https://magiccards.info/scans/en/ps/127.jpg
 value=1.798
 rarity=C
 type=Creature

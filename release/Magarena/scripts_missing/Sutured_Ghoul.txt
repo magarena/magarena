@@ -1,5 +1,5 @@
 name=Sutured Ghoul
-image=http://magiccards.info/scans/en/m12/112.jpg
+image=https://magiccards.info/scans/en/m12/112.jpg
 value=4.091
 rarity=R
 type=Creature

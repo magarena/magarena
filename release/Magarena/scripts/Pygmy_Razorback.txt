@@ -1,5 +1,5 @@
 name=Pygmy Razorback
-image=http://magiccards.info/scans/en/pr/120.jpg
+image=https://magiccards.info/scans/en/pr/120.jpg
 value=2.645
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Noggle Ransacker
-image=http://magiccards.info/scans/en/pc2/102.jpg
+image=https://magiccards.info/scans/en/pc2/102.jpg
 value=2.833
 rarity=U
 type=Creature

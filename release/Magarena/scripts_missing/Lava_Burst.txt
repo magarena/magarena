@@ -1,5 +1,5 @@
 name=Lava Burst
-image=http://magiccards.info/scans/en/ia/198.jpg
+image=https://magiccards.info/scans/en/ia/198.jpg
 value=3.985
 rarity=C
 type=Sorcery

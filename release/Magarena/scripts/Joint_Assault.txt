@@ -1,5 +1,5 @@
 name=Joint Assault
-image=http://magiccards.info/scans/en/avr/183.jpg
+image=https://magiccards.info/scans/en/avr/183.jpg
 value=2.951
 rarity=C
 type=Instant

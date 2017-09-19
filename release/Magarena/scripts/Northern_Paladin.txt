@@ -1,5 +1,5 @@
 name=Northern Paladin
-image=http://magiccards.info/scans/en/7e/28.jpg
+image=https://magiccards.info/scans/en/7e/28.jpg
 value=3.962
 rarity=R
 type=Creature

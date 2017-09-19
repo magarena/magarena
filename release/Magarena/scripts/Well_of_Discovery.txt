@@ -1,5 +1,5 @@
 name=Well of Discovery
-image=http://magiccards.info/scans/en/pr/140.jpg
+image=https://magiccards.info/scans/en/pr/140.jpg
 value=3.645
 rarity=R
 type=Artifact

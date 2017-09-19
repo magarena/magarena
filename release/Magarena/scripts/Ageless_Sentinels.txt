@@ -1,5 +1,5 @@
 name=Ageless Sentinels
-image=http://magiccards.info/scans/en/sc/1.jpg
+image=https://magiccards.info/scans/en/sc/1.jpg
 value=3.847
 rarity=R
 type=Creature

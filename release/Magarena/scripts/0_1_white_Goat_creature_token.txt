@@ -1,5 +1,5 @@
 name=0/1 white Goat creature token
-image=http://magiccards.info/extras/token/commander-2014/goat.jpg
+image=https://magiccards.info/extras/token/commander-2014/goat.jpg
 image_updated=2015-11-12
 token=Goat
 type=Creature

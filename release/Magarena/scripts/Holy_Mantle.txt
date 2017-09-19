@@ -1,5 +1,5 @@
 name=Holy Mantle
-image=http://magiccards.info/scans/en/gtc/17.jpg
+image=https://magiccards.info/scans/en/gtc/17.jpg
 value=2.841
 rarity=U
 type=Enchantment

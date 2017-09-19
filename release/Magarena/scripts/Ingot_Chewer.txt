@@ -1,5 +1,5 @@
 name=Ingot Chewer
-image=http://magiccards.info/scans/en/c14/179.jpg
+image=https://magiccards.info/scans/en/c14/179.jpg
 value=4.457
 rarity=C
 type=Creature

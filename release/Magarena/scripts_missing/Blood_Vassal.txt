@@ -1,5 +1,5 @@
 name=Blood Vassal
-image=http://magiccards.info/scans/en/us/118.jpg
+image=https://magiccards.info/scans/en/us/118.jpg
 value=3.817
 rarity=C
 type=Creature

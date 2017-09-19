@@ -1,5 +1,5 @@
 name=Molten Hydra
-image=http://magiccards.info/scans/en/ul/85.jpg
+image=https://magiccards.info/scans/en/ul/85.jpg
 value=3.807
 rarity=R
 type=Creature

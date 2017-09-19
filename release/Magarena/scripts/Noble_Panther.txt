@@ -1,5 +1,5 @@
 name=Noble Panther
-image=http://magiccards.info/scans/en/in/257.jpg
+image=https://magiccards.info/scans/en/in/257.jpg
 value=3.484
 rarity=R
 type=Creature

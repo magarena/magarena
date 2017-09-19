@@ -1,5 +1,5 @@
 name=Banishing Light
-image=http://magiccards.info/scans/en/jou/5.jpg
+image=https://magiccards.info/scans/en/jou/5.jpg
 image_updated=2016-02-29
 value=3.829
 rarity=U

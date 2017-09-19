@@ -1,5 +1,5 @@
 name=Careful Study
-image=http://magiccards.info/scans/en/od/70.jpg
+image=https://magiccards.info/scans/en/od/70.jpg
 value=4.351
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ferocity
-image=http://magiccards.info/scans/en/mm/245.jpg
+image=https://magiccards.info/scans/en/mm/245.jpg
 value=3.848
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Rhox Meditant
-image=http://magiccards.info/scans/en/cfx/16.jpg
+image=https://magiccards.info/scans/en/cfx/16.jpg
 value=2.934
 rarity=C
 type=Creature

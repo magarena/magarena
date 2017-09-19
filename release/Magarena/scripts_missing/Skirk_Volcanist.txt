@@ -1,5 +1,5 @@
 name=Skirk Volcanist
-image=http://magiccards.info/scans/en/sc/104.jpg
+image=https://magiccards.info/scans/en/sc/104.jpg
 value=2.241
 rarity=U
 type=Creature

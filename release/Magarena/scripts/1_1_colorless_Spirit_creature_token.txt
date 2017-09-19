@@ -1,6 +1,6 @@
 name=1/1 colorless Spirit creature token
 token=Spirit
-image=http://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
+image=https://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
 value=1
 type=Creature
 subtype=Spirit

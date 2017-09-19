@@ -1,5 +1,5 @@
 name=Spiteful Visions
-image=http://magiccards.info/scans/en/shm/198.jpg
+image=https://magiccards.info/scans/en/shm/198.jpg
 value=3.071
 rarity=R
 type=Enchantment

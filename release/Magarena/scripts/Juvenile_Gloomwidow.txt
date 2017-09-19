@@ -1,5 +1,5 @@
 name=Juvenile Gloomwidow
-image=http://magiccards.info/scans/en/shm/121.jpg
+image=https://magiccards.info/scans/en/shm/121.jpg
 value=3.265
 rarity=C
 type=Creature

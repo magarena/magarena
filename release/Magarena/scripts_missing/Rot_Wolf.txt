@@ -1,5 +1,5 @@
 name=Rot Wolf
-image=http://magiccards.info/scans/en/mbs/90.jpg
+image=https://magiccards.info/scans/en/mbs/90.jpg
 value=3.605
 rarity=C
 type=Creature

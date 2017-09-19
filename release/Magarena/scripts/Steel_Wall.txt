@@ -1,5 +1,5 @@
 name=Steel Wall
-image=http://magiccards.info/scans/en/mi/248.jpg
+image=https://magiccards.info/scans/en/mi/248.jpg
 image_updated=2016-01-09
 value=4.104
 rarity=C

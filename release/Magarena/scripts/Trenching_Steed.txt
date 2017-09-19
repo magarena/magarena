@@ -1,5 +1,5 @@
 name=Trenching Steed
-image=http://magiccards.info/scans/en/pr/26.jpg
+image=https://magiccards.info/scans/en/pr/26.jpg
 value=1.900
 rarity=C
 type=Creature

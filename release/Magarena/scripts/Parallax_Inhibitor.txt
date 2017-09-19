@@ -1,5 +1,5 @@
 name=Parallax Inhibitor
-image=http://magiccards.info/scans/en/ne/134.jpg
+image=https://magiccards.info/scans/en/ne/134.jpg
 value=2.548
 rarity=R
 type=Artifact

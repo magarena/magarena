@@ -1,5 +1,5 @@
 name=Sulam Djinn
-image=http://magiccards.info/scans/en/in/212.jpg
+image=https://magiccards.info/scans/en/in/212.jpg
 value=1.909
 rarity=U
 type=Creature

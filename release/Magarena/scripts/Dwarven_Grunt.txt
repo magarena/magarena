@@ -1,5 +1,5 @@
 name=Dwarven Grunt
-image=http://magiccards.info/scans/en/od/185.jpg
+image=https://magiccards.info/scans/en/od/185.jpg
 value=2.518
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Latchkey Faerie
-image=http://magiccards.info/scans/en/mma/50.jpg
+image=https://magiccards.info/scans/en/mma/50.jpg
 value=3.107
 rarity=C
 type=Creature

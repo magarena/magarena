@@ -1,5 +1,5 @@
 name=Ghost Warden
-image=http://magiccards.info/scans/en/10e/16.jpg
+image=https://magiccards.info/scans/en/10e/16.jpg
 value=2.829
 rarity=C
 type=Creature

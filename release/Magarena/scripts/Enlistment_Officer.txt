@@ -1,5 +1,5 @@
 name=Enlistment Officer
-image=http://magiccards.info/scans/en/ap/9.jpg
+image=https://magiccards.info/scans/en/ap/9.jpg
 value=4.261
 rarity=U
 type=Creature

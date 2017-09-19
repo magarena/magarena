@@ -1,5 +1,5 @@
 name=Yawgmoth Demon
-image=http://magiccards.info/scans/en/9e/170.jpg
+image=https://magiccards.info/scans/en/9e/170.jpg
 value=3.353
 rarity=R
 type=Creature

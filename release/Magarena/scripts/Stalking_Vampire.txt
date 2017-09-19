@@ -1,5 +1,5 @@
 name=Stalking Vampire
-image=http://magiccards.info/scans/en/isd/114b.jpg
+image=https://magiccards.info/scans/en/isd/114b.jpg
 value=3.333
 rarity=U
 type=Creature

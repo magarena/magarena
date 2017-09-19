@@ -1,5 +1,5 @@
 name=Regenerate
-image=http://magiccards.info/scans/en/m10/202.jpg
+image=https://magiccards.info/scans/en/m10/202.jpg
 value=1.204
 rarity=C
 type=Instant

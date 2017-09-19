@@ -1,5 +1,5 @@
 name=Demon's Jester
-image=http://magiccards.info/scans/en/di/42.jpg
+image=https://magiccards.info/scans/en/di/42.jpg
 image_updated=2016-11-30
 value=2.152
 rarity=C

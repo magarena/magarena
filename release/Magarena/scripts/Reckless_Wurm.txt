@@ -1,5 +1,5 @@
 name=Reckless Wurm
-image=http://magiccards.info/scans/en/pc/120.jpg
+image=https://magiccards.info/scans/en/pc/120.jpg
 value=4.106
 rarity=U
 type=Creature

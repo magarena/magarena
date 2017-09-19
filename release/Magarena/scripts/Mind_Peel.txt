@@ -1,5 +1,5 @@
 name=Mind Peel
-image=http://magiccards.info/scans/en/sh/13.jpg
+image=https://magiccards.info/scans/en/sh/13.jpg
 value=3.242
 rarity=U
 type=Sorcery

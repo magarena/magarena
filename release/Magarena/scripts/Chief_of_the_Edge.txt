@@ -1,5 +1,5 @@
 name=Chief of the Edge
-image=http://magiccards.info/scans/en/ktk/169.jpg
+image=https://magiccards.info/scans/en/ktk/169.jpg
 value=3.625
 rarity=U
 type=Creature

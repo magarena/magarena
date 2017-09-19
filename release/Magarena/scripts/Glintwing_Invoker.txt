@@ -1,5 +1,5 @@
 name=Glintwing Invoker
-image=http://magiccards.info/scans/en/le/40.jpg
+image=https://magiccards.info/scans/en/le/40.jpg
 value=1.196
 rarity=C
 type=Creature

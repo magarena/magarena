@@ -1,5 +1,5 @@
 name=Halfdane
-image=http://magiccards.info/scans/en/lg/269.jpg
+image=https://magiccards.info/scans/en/lg/269.jpg
 value=3.240
 rarity=R
 type=Legendary,Creature

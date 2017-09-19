@@ -1,5 +1,5 @@
 name=Demon's Horn
-image=http://magiccards.info/scans/en/m12/205.jpg
+image=https://magiccards.info/scans/en/m12/205.jpg
 value=1.645
 rarity=U
 type=Artifact

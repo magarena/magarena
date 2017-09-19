@@ -1,5 +1,5 @@
 name=Seafarer's Quay
-image=http://magiccards.info/scans/en/lg/251.jpg
+image=https://magiccards.info/scans/en/lg/251.jpg
 value=1.297
 rarity=U
 type=Land

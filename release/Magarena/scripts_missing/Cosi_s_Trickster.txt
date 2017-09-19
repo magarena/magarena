@@ -1,5 +1,5 @@
 name=Cosi's Trickster
-image=http://magiccards.info/scans/en/zen/45.jpg
+image=https://magiccards.info/scans/en/zen/45.jpg
 value=4.146
 rarity=R
 type=Creature

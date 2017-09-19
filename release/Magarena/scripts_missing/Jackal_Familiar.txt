@@ -1,5 +1,5 @@
 name=Jackal Familiar
-image=http://magiccards.info/scans/en/m10/143.jpg
+image=https://magiccards.info/scans/en/m10/143.jpg
 value=3.512
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rite of Consumption
-image=http://magiccards.info/scans/en/shm/76.jpg
+image=https://magiccards.info/scans/en/shm/76.jpg
 value=3.976
 rarity=C
 type=Sorcery

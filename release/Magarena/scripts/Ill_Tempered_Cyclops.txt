@@ -1,5 +1,5 @@
 name=Ill-Tempered Cyclops
-image=http://magiccards.info/scans/en/cn2/166.jpg
+image=https://magiccards.info/scans/en/cn2/166.jpg
 image_updated=2016-12-13
 value=3.471
 rarity=C

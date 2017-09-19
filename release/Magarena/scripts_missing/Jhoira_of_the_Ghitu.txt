@@ -1,5 +1,5 @@
 name=Jhoira of the Ghitu
-image=http://magiccards.info/scans/en/mma/177.jpg
+image=https://magiccards.info/scans/en/mma/177.jpg
 value=3.922
 rarity=R
 type=Legendary,Creature

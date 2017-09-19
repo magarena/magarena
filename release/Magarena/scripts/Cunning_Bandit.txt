@@ -1,5 +1,5 @@
 name=Cunning Bandit
-image=http://magiccards.info/scans/en/bok/99a.jpg
+image=https://magiccards.info/scans/en/bok/99a.jpg
 value=3.241
 rarity=U
 type=Creature

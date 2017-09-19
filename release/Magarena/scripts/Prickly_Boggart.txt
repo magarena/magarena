@@ -1,5 +1,5 @@
 name=Prickly Boggart
-image=http://magiccards.info/scans/en/mt/74.jpg
+image=https://magiccards.info/scans/en/mt/74.jpg
 value=3.659
 rarity=C
 type=Creature

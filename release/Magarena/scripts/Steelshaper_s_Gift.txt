@@ -1,5 +1,5 @@
 name=Steelshaper's Gift
-image=http://magiccards.info/scans/en/5dn/19.jpg
+image=https://magiccards.info/scans/en/5dn/19.jpg
 value=4.176
 rarity=U
 type=Sorcery

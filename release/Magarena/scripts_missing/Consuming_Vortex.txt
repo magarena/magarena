@@ -1,5 +1,5 @@
 name=Consuming Vortex
-image=http://magiccards.info/scans/en/chk/54.jpg
+image=https://magiccards.info/scans/en/chk/54.jpg
 value=2.225
 rarity=C
 type=Instant

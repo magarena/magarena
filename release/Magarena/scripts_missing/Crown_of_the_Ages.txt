@@ -1,5 +1,5 @@
 name=Crown of the Ages
-image=http://magiccards.info/scans/en/5e/360.jpg
+image=https://magiccards.info/scans/en/5e/360.jpg
 value=3.435
 rarity=R
 type=Artifact

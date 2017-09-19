@@ -1,5 +1,5 @@
 name=Shivan Sand-Mage
-image=http://magiccards.info/scans/en/fut/108.jpg
+image=https://magiccards.info/scans/en/fut/108.jpg
 value=2.530
 rarity=U
 type=Creature

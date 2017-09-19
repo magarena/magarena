@@ -1,5 +1,5 @@
 name=Cephalid Aristocrat
-image=http://magiccards.info/scans/en/tr/27.jpg
+image=https://magiccards.info/scans/en/tr/27.jpg
 value=1.152
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Horned Sliver
-image=http://magiccards.info/scans/en/tp/128.jpg
+image=https://magiccards.info/scans/en/tp/128.jpg
 value=3.979
 rarity=U
 type=Creature

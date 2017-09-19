@@ -1,5 +1,5 @@
 name=Jungle Barrier
-image=http://magiccards.info/scans/en/ap/106.jpg
+image=https://magiccards.info/scans/en/ap/106.jpg
 value=3.694
 rarity=U
 type=Creature

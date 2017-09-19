@@ -1,5 +1,5 @@
 name=Vicious Betrayal
-image=http://magiccards.info/scans/en/5dn/60.jpg
+image=https://magiccards.info/scans/en/5dn/60.jpg
 value=1.278
 rarity=C
 type=Sorcery

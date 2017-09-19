@@ -1,5 +1,5 @@
 name=Torch Drake
-image=http://magiccards.info/scans/en/gp/38.jpg
+image=https://magiccards.info/scans/en/gp/38.jpg
 value=1.838
 rarity=C
 type=Creature

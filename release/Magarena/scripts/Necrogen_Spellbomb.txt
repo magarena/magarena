@@ -1,5 +1,5 @@
 name=Necrogen Spellbomb
-image=http://magiccards.info/scans/en/mi/216.jpg
+image=https://magiccards.info/scans/en/mi/216.jpg
 value=4.177
 rarity=C
 type=Artifact

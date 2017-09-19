@@ -1,5 +1,5 @@
 name=Torture Chamber
-image=http://magiccards.info/scans/en/tp/303.jpg
+image=https://magiccards.info/scans/en/tp/303.jpg
 value=1.841
 rarity=R
 type=Artifact

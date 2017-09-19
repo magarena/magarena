@@ -1,5 +1,5 @@
 name=Erdwal Illuminator
-image=http://magiccards.info/scans/en/soi/60.jpg
+image=https://magiccards.info/scans/en/soi/60.jpg
 value=2.500
 rarity=U
 type=Creature

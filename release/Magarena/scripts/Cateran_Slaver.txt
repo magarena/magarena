@@ -1,5 +1,5 @@
 name=Cateran Slaver
-image=http://magiccards.info/scans/en/mm/125.jpg
+image=https://magiccards.info/scans/en/mm/125.jpg
 value=3.530
 rarity=R
 type=Creature

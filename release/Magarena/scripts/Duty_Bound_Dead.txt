@@ -1,5 +1,5 @@
 name=Duty-Bound Dead
-image=http://magiccards.info/scans/en/m13/92.jpg
+image=https://magiccards.info/scans/en/m13/92.jpg
 value=3.905
 rarity=C
 type=Creature

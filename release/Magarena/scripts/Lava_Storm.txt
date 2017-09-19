@@ -1,5 +1,5 @@
 name=Lava Storm
-image=http://magiccards.info/scans/en/wl/110.jpg
+image=https://magiccards.info/scans/en/wl/110.jpg
 value=3.266
 rarity=C
 type=Instant

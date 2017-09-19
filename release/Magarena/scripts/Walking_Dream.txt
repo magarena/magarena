@@ -1,5 +1,5 @@
 name=Walking Dream
-image=http://magiccards.info/scans/en/sh/49.jpg
+image=https://magiccards.info/scans/en/sh/49.jpg
 value=2.686
 rarity=U
 type=Creature

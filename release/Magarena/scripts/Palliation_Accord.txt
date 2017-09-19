@@ -1,5 +1,5 @@
 name=Palliation Accord
-image=http://magiccards.info/scans/en/di/122.jpg
+image=https://magiccards.info/scans/en/di/122.jpg
 value=3.580
 rarity=U
 type=Enchantment

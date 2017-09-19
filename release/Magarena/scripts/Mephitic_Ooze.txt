@@ -1,5 +1,5 @@
 name=Mephitic Ooze
-image=http://magiccards.info/scans/en/ds/47.jpg
+image=https://magiccards.info/scans/en/ds/47.jpg
 value=3.733
 rarity=R
 type=Creature

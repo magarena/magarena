@@ -1,5 +1,5 @@
 name=Tobita, Master of Winds
-image=http://magiccards.info/scans/en/chk/93b.jpg
+image=https://magiccards.info/scans/en/chk/93b.jpg
 value=3.390
 rarity=U
 type=Legendary,Creature

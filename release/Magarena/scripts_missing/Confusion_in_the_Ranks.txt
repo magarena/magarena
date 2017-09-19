@@ -1,5 +1,5 @@
 name=Confusion in the Ranks
-image=http://magiccards.info/scans/en/mi/87.jpg
+image=https://magiccards.info/scans/en/mi/87.jpg
 value=4.026
 rarity=R
 type=Enchantment

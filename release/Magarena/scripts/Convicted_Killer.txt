@@ -1,5 +1,5 @@
 name=Convicted Killer
-image=http://magiccards.info/scans/en/soi/149a.jpg
+image=https://magiccards.info/scans/en/soi/149a.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Soulbright Flamekin
-image=http://magiccards.info/scans/en/mm2/126.jpg
+image=https://magiccards.info/scans/en/mm2/126.jpg
 value=2.500
 rarity=C
 type=Creature

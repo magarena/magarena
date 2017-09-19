@@ -1,5 +1,5 @@
 name=Stormscape Apprentice
-image=http://magiccards.info/scans/en/in/75.jpg
+image=https://magiccards.info/scans/en/in/75.jpg
 value=4.220
 rarity=C
 type=Creature

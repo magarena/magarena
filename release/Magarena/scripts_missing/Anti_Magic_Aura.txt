@@ -1,5 +1,5 @@
 name=Anti-Magic Aura
-image=http://magiccards.info/scans/en/5e/72.jpg
+image=https://magiccards.info/scans/en/5e/72.jpg
 value=2.081
 rarity=U
 type=Enchantment

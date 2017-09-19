@@ -1,5 +1,5 @@
 name=Titanium Golem
-image=http://magiccards.info/scans/en/mi/263.jpg
+image=https://magiccards.info/scans/en/mi/263.jpg
 value=1.343
 rarity=C
 type=Artifact,Creature

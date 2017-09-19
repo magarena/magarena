@@ -1,5 +1,5 @@
 name=Griffin Rider
-image=http://magiccards.info/scans/en/m12/20.jpg
+image=https://magiccards.info/scans/en/m12/20.jpg
 value=3.685
 rarity=C
 type=Creature

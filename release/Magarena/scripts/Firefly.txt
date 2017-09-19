@@ -1,5 +1,5 @@
 name=Firefly
-image=http://magiccards.info/scans/en/tp/172.jpg
+image=https://magiccards.info/scans/en/tp/172.jpg
 value=2.086
 rarity=U
 type=Creature

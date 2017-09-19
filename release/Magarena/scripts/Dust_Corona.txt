@@ -1,5 +1,5 @@
 name=Dust Corona
-image=http://magiccards.info/scans/en/pc/97.jpg
+image=https://magiccards.info/scans/en/pc/97.jpg
 value=2.893
 rarity=C
 type=Enchantment

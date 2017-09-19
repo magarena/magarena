@@ -1,5 +1,5 @@
 name=Monstrify
-image=http://magiccards.info/scans/en/eve/70.jpg
+image=https://magiccards.info/scans/en/eve/70.jpg
 value=2.107
 rarity=C
 type=Sorcery

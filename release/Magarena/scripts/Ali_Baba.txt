@@ -1,5 +1,5 @@
 name=Ali Baba
-image=http://magiccards.info/scans/en/4e/193.jpg
+image=https://magiccards.info/scans/en/4e/193.jpg
 value=2.383
 rarity=U
 type=Creature

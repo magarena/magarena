@@ -1,5 +1,5 @@
 name=Painter's Servant
-image=http://magiccards.info/scans/en/shm/257.jpg
+image=https://magiccards.info/scans/en/shm/257.jpg
 value=4.583
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Iname, Life Aspect
-image=http://magiccards.info/scans/en/chk/215.jpg
+image=https://magiccards.info/scans/en/chk/215.jpg
 value=3.107
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Blistercoil Weird
-image=http://magiccards.info/scans/en/rtr/211.jpg
+image=https://magiccards.info/scans/en/rtr/211.jpg
 value=3.447
 rarity=U
 type=Creature

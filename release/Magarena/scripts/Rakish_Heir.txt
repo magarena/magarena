@@ -1,5 +1,5 @@
 name=Rakish Heir
-image=http://magiccards.info/scans/en/isd/158.jpg
+image=https://magiccards.info/scans/en/isd/158.jpg
 value=3.806
 rarity=U
 type=Creature

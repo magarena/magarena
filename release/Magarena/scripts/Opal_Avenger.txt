@@ -1,5 +1,5 @@
 name=Opal Avenger
-image=http://magiccards.info/scans/en/ul/15.jpg
+image=https://magiccards.info/scans/en/ul/15.jpg
 value=3.423
 rarity=R
 type=Enchantment

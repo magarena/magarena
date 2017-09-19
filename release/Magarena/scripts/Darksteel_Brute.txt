@@ -1,5 +1,5 @@
 name=Darksteel Brute
-image=http://magiccards.info/scans/en/ds/108.jpg
+image=https://magiccards.info/scans/en/ds/108.jpg
 value=3.088
 rarity=U
 type=Artifact

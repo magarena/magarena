@@ -1,5 +1,5 @@
 name=Artifact Mutation
-image=http://magiccards.info/scans/en/c16/179.jpg
+image=https://magiccards.info/scans/en/c16/179.jpg
 image_updated=2017-08-17
 value=4.532
 removal=1

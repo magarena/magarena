@@ -1,5 +1,5 @@
 name=Pradesh Gypsies
-image=http://magiccards.info/scans/en/6e/244.jpg
+image=https://magiccards.info/scans/en/6e/244.jpg
 value=1.500
 rarity=C
 type=Creature

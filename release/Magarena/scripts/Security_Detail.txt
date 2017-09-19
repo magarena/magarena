@@ -1,5 +1,5 @@
 name=Security Detail
-image=http://magiccards.info/scans/en/mm/47.jpg
+image=https://magiccards.info/scans/en/mm/47.jpg
 value=0.917
 rarity=R
 type=Enchantment

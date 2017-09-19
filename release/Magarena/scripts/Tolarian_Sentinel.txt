@@ -1,5 +1,5 @@
 name=Tolarian Sentinel
-image=http://magiccards.info/scans/en/ts/87.jpg
+image=https://magiccards.info/scans/en/ts/87.jpg
 value=1.986
 rarity=C
 type=Creature

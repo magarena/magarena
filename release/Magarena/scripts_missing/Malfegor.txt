@@ -1,5 +1,5 @@
 name=Malfegor
-image=http://magiccards.info/scans/en/cmd/208.jpg
+image=https://magiccards.info/scans/en/cmd/208.jpg
 value=3.263
 rarity=M
 type=Legendary,Creature

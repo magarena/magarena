@@ -1,5 +1,5 @@
 name=Custodi Peacekeeper
-image=http://magiccards.info/scans/en/cn2/14.jpg
+image=https://magiccards.info/scans/en/cn2/14.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=C

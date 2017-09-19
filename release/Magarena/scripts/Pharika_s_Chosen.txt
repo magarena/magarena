@@ -1,5 +1,5 @@
 name=Pharika's Chosen
-image=http://magiccards.info/scans/en/jou/78.jpg
+image=https://magiccards.info/scans/en/jou/78.jpg
 value=3.765
 rarity=C
 type=Creature

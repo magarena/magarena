@@ -1,5 +1,5 @@
 name=Mind Bomb
-image=http://magiccards.info/scans/en/5e/105.jpg
+image=https://magiccards.info/scans/en/5e/105.jpg
 value=4.017
 rarity=U
 type=Sorcery

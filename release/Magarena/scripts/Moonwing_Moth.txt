@@ -1,5 +1,5 @@
 name=Moonwing Moth
-image=http://magiccards.info/scans/en/sok/20.jpg
+image=https://magiccards.info/scans/en/sok/20.jpg
 value=2.154
 rarity=C
 type=Creature

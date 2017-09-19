@@ -1,5 +1,5 @@
 name=Spreading Algae
-image=http://magiccards.info/scans/en/8e/281.jpg
+image=https://magiccards.info/scans/en/8e/281.jpg
 value=3.500
 rarity=U
 type=Enchantment

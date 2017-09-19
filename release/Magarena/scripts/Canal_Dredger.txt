@@ -1,5 +1,5 @@
 name=Canal Dredger
-image=http://magiccards.info/scans/en/cns/55.jpg
+image=https://magiccards.info/scans/en/cns/55.jpg
 value=3.458
 rarity=R
 type=Artifact,Creature

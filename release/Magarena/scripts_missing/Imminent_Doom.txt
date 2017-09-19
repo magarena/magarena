@@ -1,5 +1,5 @@
 name=Imminent Doom
-image=http://magiccards.info/scans/en/hou/98.jpg
+image=https://magiccards.info/scans/en/hou/98.jpg
 value=2.500
 rarity=R
 type=Enchantment

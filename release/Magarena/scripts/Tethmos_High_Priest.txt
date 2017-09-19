@@ -1,5 +1,5 @@
 name=Tethmos High Priest
-image=http://magiccards.info/scans/en/jou/29.jpg
+image=https://magiccards.info/scans/en/jou/29.jpg
 value=3.743
 rarity=U
 type=Creature

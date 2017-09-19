@@ -1,5 +1,5 @@
 name=Wandering Mage
-image=http://magiccards.info/scans/en/ai/198.jpg
+image=https://magiccards.info/scans/en/ai/198.jpg
 value=3.097
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Stoneforge Mystic
-image=http://magiccards.info/scans/en/wwk/20.jpg
+image=https://magiccards.info/scans/en/wwk/20.jpg
 value=4.433
 rarity=R
 type=Creature

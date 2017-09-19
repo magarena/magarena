@@ -1,5 +1,5 @@
 name=Defensive Stance
-image=http://magiccards.info/scans/en/nph/34.jpg
+image=https://magiccards.info/scans/en/nph/34.jpg
 value=0.904
 rarity=C
 type=Enchantment

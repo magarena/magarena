@@ -1,5 +1,5 @@
 name=Cackling Flames
-image=http://magiccards.info/scans/en/di/59.jpg
+image=https://magiccards.info/scans/en/di/59.jpg
 value=1.772
 rarity=C
 type=Instant

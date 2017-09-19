@@ -1,5 +1,5 @@
 name=Serra Avatar
-image=http://magiccards.info/scans/en/c14/87.jpg
+image=https://magiccards.info/scans/en/c14/87.jpg
 value=4.361
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Ward of Lights
-image=http://magiccards.info/scans/en/mr/251.jpg
+image=https://magiccards.info/scans/en/mr/251.jpg
 value=3.771
 rarity=C
 type=Enchantment

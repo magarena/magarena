@@ -1,5 +1,5 @@
 name=Breaking Point
-image=http://magiccards.info/scans/en/ju/81.jpg
+image=https://magiccards.info/scans/en/ju/81.jpg
 image_updated=2016-11-20
 value=3.593
 rarity=R

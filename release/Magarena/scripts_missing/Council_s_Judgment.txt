@@ -1,5 +1,5 @@
 name=Council's Judgment
-image=http://magiccards.info/scans/en/cns/16.jpg
+image=https://magiccards.info/scans/en/cns/16.jpg
 value=4.520
 rarity=R
 type=Sorcery

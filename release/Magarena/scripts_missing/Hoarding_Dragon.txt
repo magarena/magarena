@@ -1,5 +1,5 @@
 name=Hoarding Dragon
-image=http://magiccards.info/scans/en/m15/149.jpg
+image=https://magiccards.info/scans/en/m15/149.jpg
 value=3.800
 rarity=R
 type=Creature

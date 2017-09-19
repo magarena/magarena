@@ -1,5 +1,5 @@
 name=Goblin Berserker
-image=http://magiccards.info/scans/en/ud/82.jpg
+image=https://magiccards.info/scans/en/ud/82.jpg
 value=2.882
 rarity=U
 type=Creature

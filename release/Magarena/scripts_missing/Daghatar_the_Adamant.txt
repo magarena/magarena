@@ -1,5 +1,5 @@
 name=Daghatar the Adamant
-image=http://magiccards.info/scans/en/frf/9.jpg
+image=https://magiccards.info/scans/en/frf/9.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Geist of Saint Traft
-image=http://magiccards.info/scans/en/isd/213.jpg
+image=https://magiccards.info/scans/en/isd/213.jpg
 value=4.342
 rarity=M
 type=Legendary,Creature

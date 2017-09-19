@@ -1,5 +1,5 @@
 name=Tremor
-image=http://magiccards.info/scans/en/8e/228.jpg
+image=https://magiccards.info/scans/en/8e/228.jpg
 value=2.769
 rarity=C
 type=Sorcery

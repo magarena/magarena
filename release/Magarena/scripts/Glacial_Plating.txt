@@ -1,5 +1,5 @@
 name=Glacial Plating
-image=http://magiccards.info/scans/en/cs/7.jpg
+image=https://magiccards.info/scans/en/cs/7.jpg
 value=2.976
 rarity=U
 type=Snow,Enchantment

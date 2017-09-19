@@ -1,5 +1,5 @@
 name=Planeswalker's Fury
-image=http://magiccards.info/scans/en/ps/70.jpg
+image=https://magiccards.info/scans/en/ps/70.jpg
 value=3.924
 rarity=R
 type=Enchantment

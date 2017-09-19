@@ -1,5 +1,5 @@
 name=Essence Harvest
-image=http://magiccards.info/scans/en/avr/100.jpg
+image=https://magiccards.info/scans/en/avr/100.jpg
 value=3.633
 rarity=C
 type=Sorcery

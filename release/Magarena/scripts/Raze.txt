@@ -1,5 +1,5 @@
 name=Raze
-image=http://magiccards.info/scans/en/us/207.jpg
+image=https://magiccards.info/scans/en/us/207.jpg
 value=3.929
 removal=3
 rarity=C

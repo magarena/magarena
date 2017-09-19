@@ -1,5 +1,5 @@
 name=Take
-image=http://magiccards.info/scans/en/dgm/129b.jpg
+image=https://magiccards.info/scans/en/dgm/129b.jpg
 value=3.628
 rarity=U
 type=Sorcery

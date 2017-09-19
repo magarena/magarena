@@ -1,5 +1,5 @@
 name=Magus of the Mirror
-image=http://magiccards.info/scans/en/cns/117.jpg
+image=https://magiccards.info/scans/en/cns/117.jpg
 value=3.375
 rarity=R
 type=Creature

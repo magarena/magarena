@@ -1,5 +1,5 @@
 name=Blossoming Sands
-image=http://magiccards.info/scans/en/ema/237.jpg
+image=https://magiccards.info/scans/en/ema/237.jpg
 value=3.250
 rarity=C
 type=Land

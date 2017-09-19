@@ -1,5 +1,5 @@
 name=Veteran's Reflexes
-image=http://magiccards.info/scans/en/wwk/23.jpg
+image=https://magiccards.info/scans/en/wwk/23.jpg
 value=2.824
 rarity=C
 type=Instant

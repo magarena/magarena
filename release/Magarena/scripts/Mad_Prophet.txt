@@ -1,5 +1,5 @@
 name=Mad Prophet
-image=http://magiccards.info/scans/en/soi/171.jpg
+image=https://magiccards.info/scans/en/soi/171.jpg
 image_updated=2010-09-10
 value=3.094
 rarity=U

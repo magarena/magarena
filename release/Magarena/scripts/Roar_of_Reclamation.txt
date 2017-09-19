@@ -1,5 +1,5 @@
 name=Roar of Reclamation
-image=http://magiccards.info/scans/en/5dn/14.jpg
+image=https://magiccards.info/scans/en/5dn/14.jpg
 value=3.574
 rarity=R
 type=Sorcery

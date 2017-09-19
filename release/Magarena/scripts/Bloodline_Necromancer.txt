@@ -1,5 +1,5 @@
 name=Bloodline Necromancer
-image=http://magiccards.info/scans/en/c17/14.jpg
+image=https://magiccards.info/scans/en/c17/14.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pierce Strider
-image=http://magiccards.info/scans/en/mbs/123.jpg
+image=https://magiccards.info/scans/en/mbs/123.jpg
 value=3.462
 rarity=U
 type=Artifact,Creature

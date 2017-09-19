@@ -1,5 +1,5 @@
 name=Victorious Destruction
-image=http://magiccards.info/scans/en/nph/99.jpg
+image=https://magiccards.info/scans/en/nph/99.jpg
 value=1.882
 rarity=C
 type=Sorcery

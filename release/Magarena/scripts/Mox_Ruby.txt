@@ -1,5 +1,5 @@
 name=Mox Ruby
-image=http://magiccards.info/scans/en/un/265.jpg
+image=https://magiccards.info/scans/en/un/265.jpg
 value=4.875
 rarity=R
 type=Artifact

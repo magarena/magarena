@@ -1,5 +1,5 @@
 name=Helium Squirter
-image=http://magiccards.info/scans/en/mm2/47.jpg
+image=https://magiccards.info/scans/en/mm2/47.jpg
 value=2.872
 rarity=C
 type=Creature

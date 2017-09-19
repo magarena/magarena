@@ -1,5 +1,5 @@
 name=Blood Clock
-image=http://magiccards.info/scans/en/sok/153.jpg
+image=https://magiccards.info/scans/en/sok/153.jpg
 value=3.041
 rarity=R
 type=Artifact

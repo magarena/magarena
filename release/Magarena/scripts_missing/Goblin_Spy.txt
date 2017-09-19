@@ -1,5 +1,5 @@
 name=Goblin Spy
-image=http://magiccards.info/scans/en/in/145.jpg
+image=https://magiccards.info/scans/en/in/145.jpg
 value=3.841
 rarity=U
 type=Creature

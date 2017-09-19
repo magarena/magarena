@@ -1,5 +1,5 @@
 name=Vulshok Replica
-image=http://magiccards.info/scans/en/som/221.jpg
+image=https://magiccards.info/scans/en/som/221.jpg
 value=2.962
 rarity=C
 type=Artifact,Creature

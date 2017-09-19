@@ -1,5 +1,5 @@
 name=Grixis Grimblade
-image=http://magiccards.info/scans/en/arb/134.jpg
+image=https://magiccards.info/scans/en/arb/134.jpg
 value=3.333
 rarity=C
 type=Creature

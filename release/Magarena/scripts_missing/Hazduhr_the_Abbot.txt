@@ -1,5 +1,5 @@
 name=Hazduhr the Abbot
-image=http://magiccards.info/scans/en/hl/110.jpg
+image=https://magiccards.info/scans/en/hl/110.jpg
 value=2.076
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Witchstalker
-image=http://magiccards.info/scans/en/m14/202.jpg
+image=https://magiccards.info/scans/en/m14/202.jpg
 value=3.690
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Warriors' Lesson
-image=http://magiccards.info/scans/en/ths/184.jpg
+image=https://magiccards.info/scans/en/ths/184.jpg
 value=3.500
 rarity=U
 type=Instant

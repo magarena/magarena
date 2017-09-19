@@ -1,5 +1,5 @@
 name=Hypervolt Grasp
-image=http://magiccards.info/scans/en/gp/67.jpg
+image=https://magiccards.info/scans/en/gp/67.jpg
 value=2.909
 rarity=U
 type=Enchantment

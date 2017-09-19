@@ -1,5 +1,5 @@
 name=Fistful of Force
-image=http://magiccards.info/scans/en/lw/212.jpg
+image=https://magiccards.info/scans/en/lw/212.jpg
 value=2.457
 rarity=C
 type=Instant

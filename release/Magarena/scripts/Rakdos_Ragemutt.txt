@@ -1,5 +1,5 @@
 name=Rakdos Ragemutt
-image=http://magiccards.info/scans/en/rtr/185.jpg
+image=https://magiccards.info/scans/en/rtr/185.jpg
 value=2.815
 rarity=U
 type=Creature

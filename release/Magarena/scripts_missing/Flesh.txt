@@ -1,5 +1,5 @@
 name=Flesh
-image=http://magiccards.info/scans/en/dgm/128a.jpg
+image=https://magiccards.info/scans/en/dgm/128a.jpg
 value=3.977
 rarity=R
 type=Sorcery

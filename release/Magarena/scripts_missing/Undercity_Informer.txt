@@ -1,5 +1,5 @@
 name=Undercity Informer
-image=http://magiccards.info/scans/en/gtc/82.jpg
+image=https://magiccards.info/scans/en/gtc/82.jpg
 value=4.243
 rarity=U
 type=Creature

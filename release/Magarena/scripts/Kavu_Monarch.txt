@@ -1,5 +1,5 @@
 name=Kavu Monarch
-image=http://magiccards.info/scans/en/in/149.jpg
+image=https://magiccards.info/scans/en/in/149.jpg
 value=4.240
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Kozilek, Butcher of Truth
-image=http://magiccards.info/scans/en/mm2/5.jpg
+image=https://magiccards.info/scans/en/mm2/5.jpg
 value=4.398
 rarity=M
 type=Legendary,Creature

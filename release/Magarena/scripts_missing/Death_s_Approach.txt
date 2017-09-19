@@ -1,5 +1,5 @@
 name=Death's Approach
-image=http://magiccards.info/scans/en/gtc/62.jpg
+image=https://magiccards.info/scans/en/gtc/62.jpg
 value=2.664
 rarity=C
 type=Enchantment

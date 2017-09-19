@@ -1,5 +1,5 @@
 name=Koth's Courier
-image=http://magiccards.info/scans/en/mbs/68.jpg
+image=https://magiccards.info/scans/en/mbs/68.jpg
 value=2.971
 rarity=C
 type=Creature

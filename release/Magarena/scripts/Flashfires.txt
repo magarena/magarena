@@ -1,5 +1,5 @@
 name=Flashfires
-image=http://magiccards.info/scans/en/9e/183.jpg
+image=https://magiccards.info/scans/en/9e/183.jpg
 value=3.825
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Squee's Embrace
-image=http://magiccards.info/scans/en/ap/122.jpg
+image=https://magiccards.info/scans/en/ap/122.jpg
 value=4.226
 rarity=C
 type=Enchantment

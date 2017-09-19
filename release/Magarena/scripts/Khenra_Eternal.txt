@@ -1,5 +1,5 @@
 name=Khenra Eternal
-image=http://magiccards.info/scans/en/hou/66.jpg
+image=https://magiccards.info/scans/en/hou/66.jpg
 value=2.500
 rarity=C
 type=Creature

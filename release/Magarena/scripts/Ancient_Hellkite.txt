@@ -1,5 +1,5 @@
 name=Ancient Hellkite
-image=http://magiccards.info/scans/en/m11/122.jpg
+image=https://magiccards.info/scans/en/m11/122.jpg
 value=3.672
 rarity=R
 type=Creature

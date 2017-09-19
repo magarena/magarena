@@ -1,5 +1,5 @@
 name=Sparksmith
-image=http://magiccards.info/scans/en/on/235.jpg
+image=https://magiccards.info/scans/en/on/235.jpg
 value=3.716
 rarity=C
 type=Creature

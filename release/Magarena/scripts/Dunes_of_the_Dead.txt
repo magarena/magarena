@@ -1,5 +1,5 @@
 name=Dunes of the Dead
-image=http://magiccards.info/scans/en/hou/175.jpg
+image=https://magiccards.info/scans/en/hou/175.jpg
 value=2.500
 rarity=U
 type=Land

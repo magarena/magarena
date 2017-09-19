@@ -1,5 +1,5 @@
 name=Pincher Beetles
-image=http://magiccards.info/scans/en/10e/285.jpg
+image=https://magiccards.info/scans/en/10e/285.jpg
 value=3.132
 rarity=C
 type=Creature

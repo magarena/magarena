@@ -1,5 +1,5 @@
 name=Seashell Cameo
-image=http://magiccards.info/scans/en/in/311.jpg
+image=https://magiccards.info/scans/en/in/311.jpg
 value=2.676
 rarity=U
 type=Artifact

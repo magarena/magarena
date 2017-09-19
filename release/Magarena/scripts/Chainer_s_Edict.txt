@@ -1,5 +1,5 @@
 name=Chainer's Edict
-image=http://magiccards.info/scans/en/tr/57.jpg
+image=https://magiccards.info/scans/en/tr/57.jpg
 value=4.000
 removal=3
 rarity=U

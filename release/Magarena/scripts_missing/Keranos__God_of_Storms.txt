@@ -1,5 +1,5 @@
 name=Keranos, God of Storms
-image=http://magiccards.info/scans/en/jou/151.jpg
+image=https://magiccards.info/scans/en/jou/151.jpg
 value=3.733
 rarity=M
 type=Legendary,Enchantment,Creature

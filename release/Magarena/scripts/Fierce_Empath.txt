@@ -1,5 +1,5 @@
 name=Fierce Empath
-image=http://magiccards.info/scans/en/cmd/155.jpg
+image=https://magiccards.info/scans/en/cmd/155.jpg
 value=3.739
 rarity=C
 type=Creature

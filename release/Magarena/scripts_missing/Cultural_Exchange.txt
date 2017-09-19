@@ -1,5 +1,5 @@
 name=Cultural Exchange
-image=http://magiccards.info/scans/en/od/79.jpg
+image=https://magiccards.info/scans/en/od/79.jpg
 value=3.915
 rarity=R
 type=Sorcery

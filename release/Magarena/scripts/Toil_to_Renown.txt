@@ -1,5 +1,5 @@
 name=Toil to Renown
-image=http://magiccards.info/scans/en/shm/130.jpg
+image=https://magiccards.info/scans/en/shm/130.jpg
 value=2.802
 rarity=C
 type=Sorcery

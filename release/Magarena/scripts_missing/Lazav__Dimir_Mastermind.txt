@@ -1,5 +1,5 @@
 name=Lazav, Dimir Mastermind
-image=http://magiccards.info/scans/en/gtc/174.jpg
+image=https://magiccards.info/scans/en/gtc/174.jpg
 value=4.039
 rarity=M
 type=Legendary,Creature

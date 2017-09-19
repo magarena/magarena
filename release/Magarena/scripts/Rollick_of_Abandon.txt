@@ -1,5 +1,5 @@
 name=Rollick of Abandon
-image=http://magiccards.info/scans/en/jou/108.jpg
+image=https://magiccards.info/scans/en/jou/108.jpg
 value=3.045
 rarity=U
 type=Sorcery

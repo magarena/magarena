@@ -1,5 +1,5 @@
 name=Necratog
-image=http://magiccards.info/scans/en/wl/18.jpg
+image=https://magiccards.info/scans/en/wl/18.jpg
 value=3.697
 rarity=U
 type=Creature

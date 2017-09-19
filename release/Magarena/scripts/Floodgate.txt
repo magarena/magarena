@@ -1,5 +1,5 @@
 name=Floodgate
-image=http://magiccards.info/scans/en/mr/67.jpg
+image=https://magiccards.info/scans/en/mr/67.jpg
 value=4.377
 rarity=U
 type=Creature

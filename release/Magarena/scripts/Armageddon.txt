@@ -1,5 +1,5 @@
 name=Armageddon
-image=http://magiccards.info/scans/en/st/6.jpg
+image=https://magiccards.info/scans/en/st/6.jpg
 value=4.367
 rarity=R
 type=Sorcery

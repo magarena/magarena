@@ -1,5 +1,5 @@
 name=Battlewise Valor
-image=http://magiccards.info/scans/en/ths/1.jpg
+image=https://magiccards.info/scans/en/ths/1.jpg
 value=3.071
 rarity=C
 type=Instant

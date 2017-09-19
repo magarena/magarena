@@ -1,5 +1,5 @@
 name=Storm Entity
-image=http://magiccards.info/scans/en/fut/122.jpg
+image=https://magiccards.info/scans/en/fut/122.jpg
 value=4.102
 rarity=U
 type=Creature

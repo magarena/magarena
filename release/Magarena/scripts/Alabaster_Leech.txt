@@ -1,5 +1,5 @@
 name=Alabaster Leech
-image=http://magiccards.info/scans/en/in/1.jpg
+image=https://magiccards.info/scans/en/in/1.jpg
 value=0.943
 rarity=R
 type=Creature

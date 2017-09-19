@@ -1,5 +1,5 @@
 name=Ventifact Bottle
-image=http://magiccards.info/scans/en/mr/288.jpg
+image=https://magiccards.info/scans/en/mr/288.jpg
 value=2.862
 rarity=R
 type=Artifact

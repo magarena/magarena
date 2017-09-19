@@ -1,5 +1,5 @@
 name=Ishi-Ishi, Akki Crackshot
-image=http://magiccards.info/scans/en/bok/110.jpg
+image=https://magiccards.info/scans/en/bok/110.jpg
 value=2.654
 rarity=R
 type=Legendary,Creature

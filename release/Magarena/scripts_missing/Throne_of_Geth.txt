@@ -1,5 +1,5 @@
 name=Throne of Geth
-image=http://magiccards.info/scans/en/som/211.jpg
+image=https://magiccards.info/scans/en/som/211.jpg
 value=3.733
 rarity=U
 type=Artifact

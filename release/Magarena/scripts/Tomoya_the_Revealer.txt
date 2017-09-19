@@ -1,5 +1,5 @@
 name=Tomoya the Revealer
-image=http://magiccards.info/scans/en/chk/70b.jpg
+image=https://magiccards.info/scans/en/chk/70b.jpg
 value=3.809
 rarity=R
 type=Legendary,Creature

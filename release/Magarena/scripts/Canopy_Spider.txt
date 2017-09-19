@@ -1,5 +1,5 @@
 name=Canopy Spider
-image=http://magiccards.info/scans/en/10e/254.jpg
+image=https://magiccards.info/scans/en/10e/254.jpg
 value=3.300
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Gaveleer
-image=http://magiccards.info/scans/en/som/92.jpg
+image=https://magiccards.info/scans/en/som/92.jpg
 value=3.852
 rarity=C
 type=Creature

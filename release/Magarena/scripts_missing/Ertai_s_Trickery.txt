@@ -1,5 +1,5 @@
 name=Ertai's Trickery
-image=http://magiccards.info/scans/en/ps/24.jpg
+image=https://magiccards.info/scans/en/ps/24.jpg
 value=1.725
 rarity=U
 type=Instant

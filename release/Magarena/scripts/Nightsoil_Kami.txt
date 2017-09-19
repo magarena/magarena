@@ -1,5 +1,5 @@
 name=Nightsoil Kami
-image=http://magiccards.info/scans/en/sok/139.jpg
+image=https://magiccards.info/scans/en/sok/139.jpg
 value=2.481
 rarity=C
 type=Creature

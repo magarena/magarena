@@ -1,5 +1,5 @@
 name=Hand of the Praetors
-image=http://magiccards.info/scans/en/som/66.jpg
+image=https://magiccards.info/scans/en/som/66.jpg
 value=4.173
 rarity=R
 type=Creature

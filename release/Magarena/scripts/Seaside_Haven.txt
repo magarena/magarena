@@ -1,5 +1,5 @@
 name=Seaside Haven
-image=http://magiccards.info/scans/en/on/323.jpg
+image=https://magiccards.info/scans/en/on/323.jpg
 value=3.405
 rarity=U
 type=Land

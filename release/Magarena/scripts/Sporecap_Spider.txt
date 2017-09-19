@@ -1,5 +1,5 @@
 name=Sporecap Spider
-image=http://magiccards.info/scans/en/cns/179.jpg
+image=https://magiccards.info/scans/en/cns/179.jpg
 value=3.667
 rarity=C
 type=Creature

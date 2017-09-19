@@ -1,6 +1,6 @@
 name=1/1 green Saproling creature token
 token=Saproling
-image=http://magiccards.info/extras/token/modern-masters-2015/saproling.jpg
+image=https://magiccards.info/extras/token/modern-masters-2015/saproling.jpg
 image_updated=2015-11-12
 value=1
 type=Creature

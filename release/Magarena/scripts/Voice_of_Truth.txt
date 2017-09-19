@@ -1,5 +1,5 @@
 name=Voice of Truth
-image=http://magiccards.info/scans/en/ne/25.jpg
+image=https://magiccards.info/scans/en/ne/25.jpg
 value=3.233
 rarity=U
 type=Creature

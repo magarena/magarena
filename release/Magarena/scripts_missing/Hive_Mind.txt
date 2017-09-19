@@ -1,5 +1,5 @@
 name=Hive Mind
-image=http://magiccards.info/scans/en/m10/54.jpg
+image=https://magiccards.info/scans/en/m10/54.jpg
 value=3.653
 rarity=R
 type=Enchantment

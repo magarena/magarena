@@ -1,5 +1,5 @@
 name=Ichor Explosion
-image=http://magiccards.info/scans/en/nph/64.jpg
+image=https://magiccards.info/scans/en/nph/64.jpg
 value=1.970
 rarity=U
 type=Sorcery

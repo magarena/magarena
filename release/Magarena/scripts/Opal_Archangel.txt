@@ -1,5 +1,5 @@
 name=Opal Archangel
-image=http://magiccards.info/scans/en/us/23.jpg
+image=https://magiccards.info/scans/en/us/23.jpg
 value=3.558
 rarity=R
 type=Enchantment

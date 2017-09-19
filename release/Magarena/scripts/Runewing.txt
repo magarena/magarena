@@ -1,5 +1,5 @@
 name=Runewing
-image=http://magiccards.info/scans/en/rtr/48.jpg
+image=https://magiccards.info/scans/en/rtr/48.jpg
 value=2.337
 rarity=C
 type=Creature

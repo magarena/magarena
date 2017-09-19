@@ -1,5 +1,5 @@
 name=Training Grounds
-image=http://magiccards.info/scans/en/roe/91.jpg
+image=https://magiccards.info/scans/en/roe/91.jpg
 value=4.375
 rarity=R
 type=Enchantment

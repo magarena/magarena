@@ -1,5 +1,5 @@
 name=Renegade Doppelganger
-image=http://magiccards.info/scans/en/roe/84.jpg
+image=https://magiccards.info/scans/en/roe/84.jpg
 value=3.536
 rarity=R
 type=Creature

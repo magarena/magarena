@@ -1,5 +1,5 @@
 name=Choice of Damnations
-image=http://magiccards.info/scans/en/sok/62.jpg
+image=https://magiccards.info/scans/en/sok/62.jpg
 value=4.027
 rarity=R
 type=Sorcery

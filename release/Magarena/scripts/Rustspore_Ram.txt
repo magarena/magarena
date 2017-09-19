@@ -1,5 +1,5 @@
 name=Rustspore Ram
-image=http://magiccards.info/scans/en/mi/235.jpg
+image=https://magiccards.info/scans/en/mi/235.jpg
 value=2.081
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Tine Shrike
-image=http://magiccards.info/scans/en/mbs/17.jpg
+image=https://magiccards.info/scans/en/mbs/17.jpg
 value=2.699
 rarity=C
 type=Creature

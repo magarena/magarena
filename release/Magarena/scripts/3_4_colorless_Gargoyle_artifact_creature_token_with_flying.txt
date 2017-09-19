@@ -1,6 +1,6 @@
 name=3/4 colorless Gargoyle artifact creature token with flying
 token=Gargoyle
-image=http://magiccards.info/extras/token/commander-2014/gargoyle.jpg
+image=https://magiccards.info/extras/token/commander-2014/gargoyle.jpg
 image_updated=2015-11-12
 value=3
 type=Artifact,Creature

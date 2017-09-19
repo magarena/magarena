@@ -1,5 +1,5 @@
 name=Mer-Ek Nightblade
-image=http://magiccards.info/scans/en/ktk/79.jpg
+image=https://magiccards.info/scans/en/ktk/79.jpg
 value=3.750
 rarity=U
 type=Creature

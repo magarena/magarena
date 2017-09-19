@@ -1,5 +1,5 @@
 name=Azorius Arrester
-image=http://magiccards.info/scans/en/rtr/5.jpg
+image=https://magiccards.info/scans/en/rtr/5.jpg
 value=3.135
 rarity=C
 type=Creature

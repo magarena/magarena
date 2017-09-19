@@ -1,5 +1,5 @@
 name=Protean Hydra
-image=http://magiccards.info/scans/en/m11/194.jpg
+image=https://magiccards.info/scans/en/m11/194.jpg
 value=4.209
 rarity=R
 type=Creature

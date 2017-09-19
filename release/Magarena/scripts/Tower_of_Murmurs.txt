@@ -1,5 +1,5 @@
 name=Tower of Murmurs
-image=http://magiccards.info/scans/en/mi/268.jpg
+image=https://magiccards.info/scans/en/mi/268.jpg
 value=2.663
 rarity=R
 type=Artifact

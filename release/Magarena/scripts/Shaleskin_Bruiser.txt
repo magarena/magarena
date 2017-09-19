@@ -1,5 +1,5 @@
 name=Shaleskin Bruiser
-image=http://magiccards.info/scans/en/on/226.jpg
+image=https://magiccards.info/scans/en/on/226.jpg
 value=3.088
 rarity=U
 type=Creature

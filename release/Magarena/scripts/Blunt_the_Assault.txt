@@ -1,5 +1,5 @@
 name=Blunt the Assault
-image=http://magiccards.info/scans/en/som/113.jpg
+image=https://magiccards.info/scans/en/som/113.jpg
 value=2.833
 rarity=C
 type=Instant

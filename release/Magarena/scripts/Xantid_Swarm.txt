@@ -1,5 +1,5 @@
 name=Xantid Swarm
-image=http://magiccards.info/scans/en/ema/193.jpg
+image=https://magiccards.info/scans/en/ema/193.jpg
 value=4.569
 rarity=R
 type=Creature

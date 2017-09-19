@@ -1,5 +1,5 @@
 name=Skullcage
-image=http://magiccards.info/scans/en/5dn/151.jpg
+image=https://magiccards.info/scans/en/5dn/151.jpg
 image_updated=2017-01-08
 value=3.600
 rarity=U

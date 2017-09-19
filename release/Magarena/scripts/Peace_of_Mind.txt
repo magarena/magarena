@@ -1,5 +1,5 @@
 name=Peace of Mind
-image=http://magiccards.info/scans/en/emn/36.jpg
+image=https://magiccards.info/scans/en/emn/36.jpg
 image_updated=2016-09-09
 value=3.394
 rarity=U

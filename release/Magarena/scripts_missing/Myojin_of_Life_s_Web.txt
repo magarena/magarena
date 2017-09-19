@@ -1,5 +1,5 @@
 name=Myojin of Life's Web
-image=http://magiccards.info/scans/en/chk/229.jpg
+image=https://magiccards.info/scans/en/chk/229.jpg
 value=3.969
 rarity=R
 type=Legendary,Creature

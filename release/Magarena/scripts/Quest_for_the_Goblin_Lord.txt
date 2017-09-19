@@ -1,5 +1,5 @@
 name=Quest for the Goblin Lord
-image=http://magiccards.info/scans/en/wwk/86.jpg
+image=https://magiccards.info/scans/en/wwk/86.jpg
 value=3.395
 rarity=U
 type=Enchantment

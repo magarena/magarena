@@ -1,5 +1,5 @@
 name=Skyshroud Ranger
-image=http://magiccards.info/scans/en/10e/297.jpg
+image=https://magiccards.info/scans/en/10e/297.jpg
 value=3.851
 rarity=C
 type=Creature

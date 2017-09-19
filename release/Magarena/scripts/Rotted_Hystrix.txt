@@ -1,5 +1,5 @@
 name=Rotted Hystrix
-image=http://magiccards.info/scans/en/nph/120.jpg
+image=https://magiccards.info/scans/en/nph/120.jpg
 value=2.018
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Merfolk Mesmerist
-image=http://magiccards.info/scans/en/m12/66.jpg
+image=https://magiccards.info/scans/en/m12/66.jpg
 value=3.150
 rarity=C
 type=Creature

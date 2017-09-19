@@ -1,5 +1,5 @@
 name=Silvercoat Lion
-image=http://magiccards.info/scans/en/m13/35.jpg
+image=https://magiccards.info/scans/en/m13/35.jpg
 value=2.153
 rarity=C
 type=Creature

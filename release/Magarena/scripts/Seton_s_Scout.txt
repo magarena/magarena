@@ -1,5 +1,5 @@
 name=Seton's Scout
-image=http://magiccards.info/scans/en/tr/138.jpg
+image=https://magiccards.info/scans/en/tr/138.jpg
 value=3.717
 rarity=U
 type=Creature

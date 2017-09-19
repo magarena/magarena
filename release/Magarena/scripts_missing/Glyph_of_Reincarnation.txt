@@ -1,5 +1,5 @@
 name=Glyph of Reincarnation
-image=http://magiccards.info/scans/en/lg/103.jpg
+image=https://magiccards.info/scans/en/lg/103.jpg
 value=1.620
 rarity=C
 type=Instant

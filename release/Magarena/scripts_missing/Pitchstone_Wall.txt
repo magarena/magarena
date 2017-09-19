@@ -1,5 +1,5 @@
 name=Pitchstone Wall
-image=http://magiccards.info/scans/en/tr/110.jpg
+image=https://magiccards.info/scans/en/tr/110.jpg
 value=3.017
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Demonic Collusion
-image=http://magiccards.info/scans/en/ts/103.jpg
+image=https://magiccards.info/scans/en/ts/103.jpg
 value=3.404
 rarity=R
 type=Sorcery

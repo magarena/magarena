@@ -1,5 +1,5 @@
 name=Fortress Crab
-image=http://magiccards.info/scans/en/isd/56.jpg
+image=https://magiccards.info/scans/en/isd/56.jpg
 value=2.842
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Krark-Clan Shaman
-image=http://magiccards.info/scans/en/mi/98.jpg
+image=https://magiccards.info/scans/en/mi/98.jpg
 value=2.839
 rarity=C
 type=Creature

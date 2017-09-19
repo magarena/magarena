@@ -1,5 +1,5 @@
 name=Scaled Wurm
-image=http://magiccards.info/scans/en/cns/178.jpg
+image=https://magiccards.info/scans/en/cns/178.jpg
 value=2.625
 rarity=C
 type=Creature

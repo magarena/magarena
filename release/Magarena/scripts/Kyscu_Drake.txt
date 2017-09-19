@@ -1,5 +1,5 @@
 name=Kyscu Drake
-image=http://magiccards.info/scans/en/vi/61.jpg
+image=https://magiccards.info/scans/en/vi/61.jpg
 value=2.576
 rarity=U
 type=Creature

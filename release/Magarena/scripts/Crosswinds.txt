@@ -1,5 +1,5 @@
 name=Crosswinds
-image=http://magiccards.info/scans/en/us/246.jpg
+image=https://magiccards.info/scans/en/us/246.jpg
 value=3.340
 rarity=U
 type=Enchantment

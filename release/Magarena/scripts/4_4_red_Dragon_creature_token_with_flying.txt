@@ -1,6 +1,6 @@
 name=4/4 red Dragon creature token with flying
 token=Dragon
-image=http://magiccards.info/extras/token/shards-of-alara/dragon.jpg
+image=https://magiccards.info/extras/token/shards-of-alara/dragon.jpg
 value=4
 type=Creature
 subtype=Dragon

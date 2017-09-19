@@ -1,5 +1,5 @@
 name=Winding Wurm
-image=http://magiccards.info/scans/en/us/285.jpg
+image=https://magiccards.info/scans/en/us/285.jpg
 value=2.784
 rarity=C
 type=Creature

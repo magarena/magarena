@@ -1,6 +1,6 @@
 name=4/4 white Elemental creature token with flying
 token=Elemental
-image=http://magiccards.info/extras/token/lorwyn/elemental-2.jpg
+image=https://magiccards.info/extras/token/lorwyn/elemental-2.jpg
 value=4
 type=Creature
 subtype=Elemental

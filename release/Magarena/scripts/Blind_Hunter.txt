@@ -1,5 +1,5 @@
 name=Blind Hunter
-image=http://magiccards.info/scans/en/gp/102.jpg
+image=https://magiccards.info/scans/en/gp/102.jpg
 value=3.936
 rarity=C
 type=Creature

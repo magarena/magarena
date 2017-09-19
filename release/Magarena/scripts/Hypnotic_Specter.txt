@@ -1,5 +1,5 @@
 name=Hypnotic Specter
-image=http://magiccards.info/scans/en/m10/100.jpg
+image=https://magiccards.info/scans/en/m10/100.jpg
 value=4.571
 rarity=R
 type=Creature

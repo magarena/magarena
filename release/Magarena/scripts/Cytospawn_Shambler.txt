@@ -1,5 +1,5 @@
 name=Cytospawn Shambler
-image=http://magiccards.info/scans/en/di/82.jpg
+image=https://magiccards.info/scans/en/di/82.jpg
 value=2.543
 rarity=C
 type=Creature

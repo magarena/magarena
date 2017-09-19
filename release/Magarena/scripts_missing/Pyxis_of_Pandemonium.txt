@@ -1,5 +1,5 @@
 name=Pyxis of Pandemonium
-image=http://magiccards.info/scans/en/ths/220.jpg
+image=https://magiccards.info/scans/en/ths/220.jpg
 value=3.511
 rarity=R
 type=Artifact

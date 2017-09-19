@@ -1,5 +1,5 @@
 name=Double Negative
-image=http://magiccards.info/scans/en/arb/87.jpg
+image=https://magiccards.info/scans/en/arb/87.jpg
 value=3.346
 rarity=U
 type=Instant

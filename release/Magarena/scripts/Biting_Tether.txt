@@ -1,5 +1,5 @@
 name=Biting Tether
-image=http://magiccards.info/scans/en/shm/29.jpg
+image=https://magiccards.info/scans/en/shm/29.jpg
 value=2.520
 rarity=U
 type=Enchantment

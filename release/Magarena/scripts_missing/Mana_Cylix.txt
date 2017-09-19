@@ -1,5 +1,5 @@
 name=Mana Cylix
-image=http://magiccards.info/scans/en/cfx/138.jpg
+image=https://magiccards.info/scans/en/cfx/138.jpg
 value=3.271
 rarity=C
 type=Artifact

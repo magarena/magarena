@@ -1,5 +1,5 @@
 name=Doubtless One
-image=http://magiccards.info/scans/en/on/27.jpg
+image=https://magiccards.info/scans/en/on/27.jpg
 value=4.104
 rarity=U
 type=Creature

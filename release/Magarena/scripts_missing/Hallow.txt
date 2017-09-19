@@ -1,5 +1,5 @@
 name=Hallow
-image=http://magiccards.info/scans/en/ds/4.jpg
+image=https://magiccards.info/scans/en/ds/4.jpg
 value=4.035
 rarity=C
 type=Instant

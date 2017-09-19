@@ -1,5 +1,5 @@
 name=Redwood Treefolk
-image=http://magiccards.info/scans/en/7e/264.jpg
+image=https://magiccards.info/scans/en/7e/264.jpg
 value=2.873
 rarity=C
 type=Creature

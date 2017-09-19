@@ -1,5 +1,5 @@
 name=Silklash Spider
-image=http://magiccards.info/scans/en/c14/214.jpg
+image=https://magiccards.info/scans/en/c14/214.jpg
 value=2.500
 rarity=R
 type=Creature

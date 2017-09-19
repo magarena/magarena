@@ -1,5 +1,5 @@
 name=Virulent Plague
-image=http://magiccards.info/scans/en/dtk/125.jpg
+image=https://magiccards.info/scans/en/dtk/125.jpg
 value=2.500
 rarity=U
 type=Enchantment

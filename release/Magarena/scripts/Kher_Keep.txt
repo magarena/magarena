@@ -1,5 +1,5 @@
 name=Kher Keep
-image=http://magiccards.info/scans/en/ts/275.jpg
+image=https://magiccards.info/scans/en/ts/275.jpg
 value=3.833
 rarity=R
 type=Legendary,Land

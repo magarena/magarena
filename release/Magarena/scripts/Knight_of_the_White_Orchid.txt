@@ -1,5 +1,5 @@
 name=Knight of the White Orchid
-image=http://magiccards.info/scans/en/ori/21.jpg
+image=https://magiccards.info/scans/en/ori/21.jpg
 image_updated=2015-11-05
 value=2.500
 rarity=R

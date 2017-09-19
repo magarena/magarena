@@ -1,5 +1,5 @@
 name=Eternal Flame
-image=http://magiccards.info/scans/en/dk/60.jpg
+image=https://magiccards.info/scans/en/dk/60.jpg
 value=2.736
 rarity=R
 type=Sorcery

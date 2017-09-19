@@ -1,5 +1,5 @@
 name=Mayael the Anima
-image=http://magiccards.info/scans/en/ala/179.jpg
+image=https://magiccards.info/scans/en/ala/179.jpg
 value=3.789
 rarity=M
 type=Legendary,Creature

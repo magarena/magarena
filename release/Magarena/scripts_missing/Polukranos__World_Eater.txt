@@ -1,5 +1,5 @@
 name=Polukranos, World Eater
-image=http://magiccards.info/scans/en/ths/172.jpg
+image=https://magiccards.info/scans/en/ths/172.jpg
 value=3.547
 rarity=M
 type=Legendary,Creature

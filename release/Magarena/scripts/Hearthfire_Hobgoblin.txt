@@ -1,5 +1,5 @@
 name=Hearthfire Hobgoblin
-image=http://magiccards.info/scans/en/mm2/194.jpg
+image=https://magiccards.info/scans/en/mm2/194.jpg
 value=3.804
 rarity=U
 type=Creature

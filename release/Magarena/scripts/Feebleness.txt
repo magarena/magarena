@@ -1,5 +1,5 @@
 name=Feebleness
-image=http://magiccards.info/scans/en/ts/110.jpg
+image=https://magiccards.info/scans/en/ts/110.jpg
 value=1.700
 removal=1
 rarity=C

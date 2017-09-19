@@ -1,5 +1,5 @@
 name=Slipstream Serpent
-image=http://magiccards.info/scans/en/ts/77.jpg
+image=https://magiccards.info/scans/en/ts/77.jpg
 value=1.000
 rarity=C
 type=Creature

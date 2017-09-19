@@ -1,5 +1,5 @@
 name=Ertai, Wizard Adept
-image=http://magiccards.info/scans/en/ex/33.jpg
+image=https://magiccards.info/scans/en/ex/33.jpg
 value=4.195
 rarity=R
 type=Legendary,Creature

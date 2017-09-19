@@ -1,5 +1,5 @@
 name=Words of Waste
-image=http://magiccards.info/scans/en/on/182.jpg
+image=https://magiccards.info/scans/en/on/182.jpg
 value=3.571
 rarity=R
 type=Enchantment

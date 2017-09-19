@@ -1,5 +1,5 @@
 name=Hazy Homunculus
-image=http://magiccards.info/scans/en/pr/36.jpg
+image=https://magiccards.info/scans/en/pr/36.jpg
 value=2.411
 rarity=C
 type=Creature

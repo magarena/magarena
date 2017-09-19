@@ -1,5 +1,5 @@
 name=Twisted Justice
-image=http://magiccards.info/scans/en/rav/237.jpg
+image=https://magiccards.info/scans/en/rav/237.jpg
 value=3.343
 rarity=U
 type=Sorcery

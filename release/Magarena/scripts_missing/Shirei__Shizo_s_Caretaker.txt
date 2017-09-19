@@ -1,5 +1,5 @@
 name=Shirei, Shizo's Caretaker
-image=http://magiccards.info/scans/en/bok/81.jpg
+image=https://magiccards.info/scans/en/bok/81.jpg
 value=4.025
 rarity=R
 type=Legendary,Creature

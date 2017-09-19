@@ -1,5 +1,5 @@
 name=Ghost Town
-image=http://magiccards.info/scans/en/tp/312.jpg
+image=https://magiccards.info/scans/en/tp/312.jpg
 value=3.819
 rarity=U
 type=Land

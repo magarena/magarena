@@ -1,5 +1,5 @@
 name=Outrider en-Kor
-image=http://magiccards.info/scans/en/ts/31.jpg
+image=https://magiccards.info/scans/en/ts/31.jpg
 value=3.784
 rarity=U
 type=Creature

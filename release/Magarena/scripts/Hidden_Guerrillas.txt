@@ -1,5 +1,5 @@
 name=Hidden Guerrillas
-image=http://magiccards.info/scans/en/us/261.jpg
+image=https://magiccards.info/scans/en/us/261.jpg
 value=4.041
 rarity=U
 type=Enchantment

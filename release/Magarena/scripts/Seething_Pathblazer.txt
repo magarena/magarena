@@ -1,5 +1,5 @@
 name=Seething Pathblazer
-image=http://magiccards.info/scans/en/mt/101.jpg
+image=https://magiccards.info/scans/en/mt/101.jpg
 value=2.414
 rarity=C
 type=Creature

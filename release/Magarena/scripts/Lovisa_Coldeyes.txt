@@ -1,5 +1,5 @@
 name=Lovisa Coldeyes
-image=http://magiccards.info/scans/en/cs/90.jpg
+image=https://magiccards.info/scans/en/cs/90.jpg
 value=3.917
 rarity=R
 type=Legendary,Creature

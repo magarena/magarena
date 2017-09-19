@@ -1,5 +1,5 @@
 name=Macetail Hystrodon
-image=http://magiccards.info/scans/en/le/106.jpg
+image=https://magiccards.info/scans/en/le/106.jpg
 value=2.696
 rarity=C
 type=Creature

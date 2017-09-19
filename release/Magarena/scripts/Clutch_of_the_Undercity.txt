@@ -1,5 +1,5 @@
 name=Clutch of the Undercity
-image=http://magiccards.info/scans/en/rav/197.jpg
+image=https://magiccards.info/scans/en/rav/197.jpg
 value=3.680
 rarity=U
 type=Instant

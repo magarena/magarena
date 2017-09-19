@@ -1,5 +1,5 @@
 name=Argothian Wurm
-image=http://magiccards.info/scans/en/us/236.jpg
+image=https://magiccards.info/scans/en/us/236.jpg
 value=3.890
 rarity=R
 type=Creature

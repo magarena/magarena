@@ -1,5 +1,5 @@
 name=Inner Calm, Outer Strength
-image=http://magiccards.info/scans/en/sok/133.jpg
+image=https://magiccards.info/scans/en/sok/133.jpg
 value=2.587
 rarity=C
 type=Instant

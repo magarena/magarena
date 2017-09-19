@@ -1,5 +1,5 @@
 name=Breakthrough
-image=http://magiccards.info/scans/en/cns/92.jpg
+image=https://magiccards.info/scans/en/cns/92.jpg
 value=4.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Selfless Cathar
-image=http://magiccards.info/scans/en/m15/31.jpg
+image=https://magiccards.info/scans/en/m15/31.jpg
 value=2.833
 rarity=C
 type=Creature

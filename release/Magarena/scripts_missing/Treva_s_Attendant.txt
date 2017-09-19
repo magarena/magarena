@@ -1,5 +1,5 @@
 name=Treva's Attendant
-image=http://magiccards.info/scans/en/in/315.jpg
+image=https://magiccards.info/scans/en/in/315.jpg
 value=2.197
 rarity=U
 type=Artifact,Creature

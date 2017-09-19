@@ -1,5 +1,5 @@
 name=Imp's Mischief
-image=http://magiccards.info/scans/en/pc/72.jpg
+image=https://magiccards.info/scans/en/pc/72.jpg
 value=3.092
 rarity=R
 type=Instant

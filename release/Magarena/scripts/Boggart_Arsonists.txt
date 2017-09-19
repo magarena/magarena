@@ -1,5 +1,5 @@
 name=Boggart Arsonists
-image=http://magiccards.info/scans/en/shm/85.jpg
+image=https://magiccards.info/scans/en/shm/85.jpg
 value=2.363
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Helldozer
-image=http://magiccards.info/scans/en/rav/88.jpg
+image=https://magiccards.info/scans/en/rav/88.jpg
 image_updated=2016-12-13
 value=4.219
 rarity=R

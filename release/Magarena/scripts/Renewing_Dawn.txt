@@ -1,5 +1,5 @@
 name=Renewing Dawn
-image=http://magiccards.info/scans/en/po/185.jpg
+image=https://magiccards.info/scans/en/po/185.jpg
 value=3.208
 rarity=U
 type=Sorcery

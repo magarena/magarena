@@ -1,5 +1,5 @@
 name=Static Orb
-image=http://magiccards.info/scans/en/7e/319.jpg
+image=https://magiccards.info/scans/en/7e/319.jpg
 value=4.138
 rarity=R
 type=Artifact

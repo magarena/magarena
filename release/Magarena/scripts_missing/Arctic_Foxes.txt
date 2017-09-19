@@ -1,5 +1,5 @@
 name=Arctic Foxes
-image=http://magiccards.info/scans/en/ia/226.jpg
+image=https://magiccards.info/scans/en/ia/226.jpg
 value=1.854
 rarity=C
 type=Creature

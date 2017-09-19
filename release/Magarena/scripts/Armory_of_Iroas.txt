@@ -1,5 +1,5 @@
 name=Armory of Iroas
-image=http://magiccards.info/scans/en/jou/158.jpg
+image=https://magiccards.info/scans/en/jou/158.jpg
 value=2.870
 rarity=U
 type=Artifact

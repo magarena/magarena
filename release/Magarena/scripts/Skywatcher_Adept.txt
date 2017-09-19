@@ -1,5 +1,5 @@
 name=Skywatcher Adept
-image=http://magiccards.info/scans/en/roe/88.jpg
+image=https://magiccards.info/scans/en/roe/88.jpg
 value=3.140
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Glaciers
-image=http://magiccards.info/scans/en/ia/372.jpg
+image=https://magiccards.info/scans/en/ia/372.jpg
 value=2.943
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Gift of Immortality
-image=http://magiccards.info/scans/en/ths/14.jpg
+image=https://magiccards.info/scans/en/ths/14.jpg
 value=3.621
 rarity=R
 type=Enchantment

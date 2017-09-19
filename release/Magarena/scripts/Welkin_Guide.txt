@@ -1,5 +1,5 @@
 name=Welkin Guide
-image=http://magiccards.info/scans/en/ema/36.jpg
+image=https://magiccards.info/scans/en/ema/36.jpg
 value=1.773
 rarity=C
 type=Creature

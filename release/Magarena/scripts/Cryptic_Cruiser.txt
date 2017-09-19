@@ -1,5 +1,5 @@
 name=Cryptic Cruiser
-image=http://magiccards.info/scans/en/bfz/56.jpg
+image=https://magiccards.info/scans/en/bfz/56.jpg
 image_updated=2015-11-08
 value=2.500
 rarity=U

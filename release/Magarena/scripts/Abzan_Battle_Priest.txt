@@ -1,5 +1,5 @@
 name=Abzan Battle Priest
-image=http://magiccards.info/scans/en/ktk/1.jpg
+image=https://magiccards.info/scans/en/ktk/1.jpg
 value=3.500
 rarity=U
 type=Creature

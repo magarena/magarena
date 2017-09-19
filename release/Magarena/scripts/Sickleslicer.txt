@@ -1,5 +1,5 @@
 name=Sickleslicer
-image=http://magiccards.info/scans/en/mm2/228.jpg
+image=https://magiccards.info/scans/en/mm2/228.jpg
 image_updated=2015-11-05
 value=2.729
 rarity=C

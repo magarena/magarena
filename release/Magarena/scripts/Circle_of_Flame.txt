@@ -1,5 +1,5 @@
 name=Circle of Flame
-image=http://magiccards.info/scans/en/m15/135.jpg
+image=https://magiccards.info/scans/en/m15/135.jpg
 value=2.300
 rarity=U
 type=Enchantment

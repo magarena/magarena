@@ -1,5 +1,5 @@
 name=Haunted Plate Mail
-image=http://magiccards.info/scans/en/m15/218.jpg
+image=https://magiccards.info/scans/en/m15/218.jpg
 value=3.400
 rarity=R
 type=Artifact

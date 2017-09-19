@@ -1,5 +1,5 @@
 name=Elderscale Wurm
-image=http://magiccards.info/scans/en/m13/167.jpg
+image=https://magiccards.info/scans/en/m13/167.jpg
 value=4.041
 rarity=M
 type=Creature

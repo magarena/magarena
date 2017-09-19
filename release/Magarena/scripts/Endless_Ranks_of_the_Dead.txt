@@ -1,5 +1,5 @@
 name=Endless Ranks of the Dead
-image=http://magiccards.info/scans/en/isd/99.jpg
+image=https://magiccards.info/scans/en/isd/99.jpg
 value=3.897
 rarity=R
 type=Enchantment

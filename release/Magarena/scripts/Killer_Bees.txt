@@ -1,5 +1,5 @@
 name=Killer Bees
-image=http://magiccards.info/scans/en/5e/169.jpg
+image=https://magiccards.info/scans/en/5e/169.jpg
 value=4.153
 rarity=U
 type=Creature

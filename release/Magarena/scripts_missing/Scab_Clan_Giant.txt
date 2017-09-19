@@ -1,5 +1,5 @@
 name=Scab-Clan Giant
-image=http://magiccards.info/scans/en/dgm/101.jpg
+image=https://magiccards.info/scans/en/dgm/101.jpg
 value=3.079
 rarity=U
 type=Creature

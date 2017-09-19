@@ -1,5 +1,5 @@
 name=Rhox Bodyguard
-image=http://magiccards.info/scans/en/cfx/122.jpg
+image=https://magiccards.info/scans/en/cfx/122.jpg
 value=2.107
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vampire Hounds
-image=http://magiccards.info/scans/en/ex/77.jpg
+image=https://magiccards.info/scans/en/ex/77.jpg
 value=4.134
 rarity=C
 type=Creature

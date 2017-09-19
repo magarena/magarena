@@ -1,5 +1,5 @@
 name=Ostiary Thrull
-image=http://magiccards.info/scans/en/gp/55.jpg
+image=https://magiccards.info/scans/en/gp/55.jpg
 value=1.486
 rarity=C
 type=Creature

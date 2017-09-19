@@ -1,5 +1,5 @@
 name=Guma
-image=http://magiccards.info/scans/en/us/197.jpg
+image=https://magiccards.info/scans/en/us/197.jpg
 value=3.103
 rarity=U
 type=Creature

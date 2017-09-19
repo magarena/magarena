@@ -1,5 +1,5 @@
 name=Wall of Razors
-image=http://magiccards.info/scans/en/sh/100.jpg
+image=https://magiccards.info/scans/en/sh/100.jpg
 value=4.000
 rarity=U
 type=Creature

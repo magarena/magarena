@@ -1,5 +1,5 @@
 name=Viscerid Armor
-image=http://magiccards.info/scans/en/ai/60.jpg
+image=https://magiccards.info/scans/en/ai/60.jpg
 value=2.804
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Temporal Spring
-image=http://magiccards.info/scans/en/ap/125.jpg
+image=https://magiccards.info/scans/en/ap/125.jpg
 value=4.037
 rarity=C
 type=Sorcery

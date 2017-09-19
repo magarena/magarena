@@ -1,5 +1,5 @@
 name=Sparkmage Apprentice
-image=http://magiccards.info/scans/en/m10/158.jpg
+image=https://magiccards.info/scans/en/m10/158.jpg
 image_updated=2017-01-09
 value=3.386
 rarity=C

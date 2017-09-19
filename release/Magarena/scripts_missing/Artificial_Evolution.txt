@@ -1,5 +1,5 @@
 name=Artificial Evolution
-image=http://magiccards.info/scans/en/on/67.jpg
+image=https://magiccards.info/scans/en/on/67.jpg
 value=4.292
 rarity=R
 type=Instant

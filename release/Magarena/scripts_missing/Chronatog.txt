@@ -1,5 +1,5 @@
 name=Chronatog
-image=http://magiccards.info/scans/en/vi/28.jpg
+image=https://magiccards.info/scans/en/vi/28.jpg
 value=3.890
 rarity=R
 type=Creature

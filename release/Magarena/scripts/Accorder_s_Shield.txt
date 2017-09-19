@@ -1,5 +1,5 @@
 name=Accorder's Shield
-image=http://magiccards.info/scans/en/som/136.jpg
+image=https://magiccards.info/scans/en/som/136.jpg
 value=3.375
 rarity=C
 type=Artifact

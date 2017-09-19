@@ -1,5 +1,5 @@
 name=World at War
-image=http://magiccards.info/scans/en/roe/172.jpg
+image=https://magiccards.info/scans/en/roe/172.jpg
 value=4.067
 rarity=R
 type=Sorcery

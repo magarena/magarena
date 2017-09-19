@@ -1,5 +1,5 @@
 name=Samite Blessing
-image=http://magiccards.info/scans/en/sh/113.jpg
+image=https://magiccards.info/scans/en/sh/113.jpg
 value=2.933
 rarity=C
 type=Enchantment

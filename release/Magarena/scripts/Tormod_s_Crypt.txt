@@ -1,5 +1,5 @@
 name=Tormod's Crypt
-image=http://magiccards.info/scans/en/c14/278.jpg
+image=https://magiccards.info/scans/en/c14/278.jpg
 value=3.850
 rarity=U
 type=Artifact

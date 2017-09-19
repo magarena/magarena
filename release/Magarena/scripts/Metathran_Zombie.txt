@@ -1,5 +1,5 @@
 name=Metathran Zombie
-image=http://magiccards.info/scans/en/in/63.jpg
+image=https://magiccards.info/scans/en/in/63.jpg
 value=3.079
 rarity=C
 type=Creature

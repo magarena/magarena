@@ -1,5 +1,5 @@
 name=Courtly Provocateur
-image=http://magiccards.info/scans/en/m13/46.jpg
+image=https://magiccards.info/scans/en/m13/46.jpg
 value=3.272
 rarity=U
 type=Creature

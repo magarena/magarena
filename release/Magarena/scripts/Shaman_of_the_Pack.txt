@@ -1,5 +1,5 @@
 name=Shaman of the Pack
-image=http://magiccards.info/scans/en/ema/205.jpg
+image=https://magiccards.info/scans/en/ema/205.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Noxious Revival
-image=http://magiccards.info/scans/en/nph/118.jpg
+image=https://magiccards.info/scans/en/nph/118.jpg
 value=4.368
 rarity=U
 type=Instant

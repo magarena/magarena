@@ -1,5 +1,5 @@
 name=Magma Phoenix
-image=http://magiccards.info/scans/en/m11/150.jpg
+image=https://magiccards.info/scans/en/m11/150.jpg
 value=4.034
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Tolarian Winds
-image=http://magiccards.info/scans/en/7e/105.jpg
+image=https://magiccards.info/scans/en/7e/105.jpg
 value=4.282
 rarity=C
 type=Instant

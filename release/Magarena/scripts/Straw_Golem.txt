@@ -1,5 +1,5 @@
 name=Straw Golem
-image=http://magiccards.info/scans/en/wl/158.jpg
+image=https://magiccards.info/scans/en/wl/158.jpg
 value=2.207
 rarity=U
 type=Artifact,Creature

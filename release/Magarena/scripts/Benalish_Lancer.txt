@@ -1,5 +1,5 @@
 name=Benalish Lancer
-image=http://magiccards.info/scans/en/in/7.jpg
+image=https://magiccards.info/scans/en/in/7.jpg
 value=3.132
 rarity=C
 type=Creature

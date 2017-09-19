@@ -1,5 +1,5 @@
 name=Ifh-Bíff Efreet
-image=http://magiccards.info/scans/en/an/34.jpg
+image=https://magiccards.info/scans/en/an/34.jpg
 value=3.868
 rarity=R
 type=Creature

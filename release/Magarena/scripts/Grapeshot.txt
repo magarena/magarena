@@ -1,5 +1,5 @@
 name=Grapeshot
-image=http://magiccards.info/scans/en/mma/116.jpg
+image=https://magiccards.info/scans/en/mma/116.jpg
 value=4.431
 rarity=C
 type=Sorcery

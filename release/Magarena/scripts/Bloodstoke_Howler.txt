@@ -1,5 +1,5 @@
 name=Bloodstoke Howler
-image=http://magiccards.info/scans/en/le/89.jpg
+image=https://magiccards.info/scans/en/le/89.jpg
 value=1.685
 rarity=C
 type=Creature

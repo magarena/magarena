@@ -1,5 +1,5 @@
 name=River Delta
-image=http://magiccards.info/scans/en/ia/346.jpg
+image=https://magiccards.info/scans/en/ia/346.jpg
 value=2.111
 rarity=R
 type=Land

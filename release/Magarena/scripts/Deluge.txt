@@ -1,5 +1,5 @@
 name=Deluge
-image=http://magiccards.info/scans/en/10e/79.jpg
+image=https://magiccards.info/scans/en/10e/79.jpg
 image_updated=2016-11-30
 value=3.868
 removal=1

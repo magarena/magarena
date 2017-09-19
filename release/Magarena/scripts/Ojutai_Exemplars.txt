@@ -1,5 +1,5 @@
 name=Ojutai Exemplars
-image=http://magiccards.info/scans/en/dtk/27.jpg
+image=https://magiccards.info/scans/en/dtk/27.jpg
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Blessed Wind
-image=http://magiccards.info/scans/en/pr/4.jpg
+image=https://magiccards.info/scans/en/pr/4.jpg
 value=2.763
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ratchet Bomb
-image=http://magiccards.info/scans/en/som/196.jpg
+image=https://magiccards.info/scans/en/som/196.jpg
 value=4.425
 rarity=R
 type=Artifact

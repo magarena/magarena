@@ -1,5 +1,5 @@
 name=Tooth of Ramos
-image=http://magiccards.info/scans/en/mm/313.jpg
+image=https://magiccards.info/scans/en/mm/313.jpg
 value=3.196
 rarity=R
 type=Artifact

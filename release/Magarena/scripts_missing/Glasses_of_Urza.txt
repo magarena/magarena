@@ -1,5 +1,5 @@
 name=Glasses of Urza
-image=http://magiccards.info/scans/en/6e/287.jpg
+image=https://magiccards.info/scans/en/6e/287.jpg
 value=4.064
 rarity=U
 type=Artifact

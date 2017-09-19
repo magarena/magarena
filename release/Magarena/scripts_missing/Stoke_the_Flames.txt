@@ -1,5 +1,5 @@
 name=Stoke the Flames
-image=http://magiccards.info/scans/en/m15/164.jpg
+image=https://magiccards.info/scans/en/m15/164.jpg
 value=3.625
 rarity=U
 type=Instant

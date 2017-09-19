@@ -1,5 +1,5 @@
 name=Tidal Warrior
-image=http://magiccards.info/scans/en/sh/47.jpg
+image=https://magiccards.info/scans/en/sh/47.jpg
 value=3.433
 rarity=C
 type=Creature

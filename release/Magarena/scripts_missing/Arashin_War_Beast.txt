@@ -1,5 +1,5 @@
 name=Arashin War Beast
-image=http://magiccards.info/scans/en/frf/123.jpg
+image=https://magiccards.info/scans/en/frf/123.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wreak Havoc
-image=http://magiccards.info/scans/en/gp/139.jpg
+image=https://magiccards.info/scans/en/gp/139.jpg
 value=3.340
 removal=4
 rarity=U

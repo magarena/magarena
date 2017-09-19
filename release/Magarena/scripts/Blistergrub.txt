@@ -1,5 +1,5 @@
 name=Blistergrub
-image=http://magiccards.info/scans/en/som/56.jpg
+image=https://magiccards.info/scans/en/som/56.jpg
 value=3.310
 rarity=C
 type=Creature

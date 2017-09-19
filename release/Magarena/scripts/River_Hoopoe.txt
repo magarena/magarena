@@ -1,5 +1,5 @@
 name=River Hoopoe
-image=http://magiccards.info/scans/en/hou/143.jpg
+image=https://magiccards.info/scans/en/hou/143.jpg
 value=2.500
 rarity=U
 type=Creature

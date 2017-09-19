@@ -1,5 +1,5 @@
 name=Woodwraith Strangler
-image=http://magiccards.info/scans/en/rav/241.jpg
+image=https://magiccards.info/scans/en/rav/241.jpg
 value=1.886
 rarity=C
 type=Creature

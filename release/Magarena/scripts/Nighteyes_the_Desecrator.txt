@@ -1,5 +1,5 @@
 name=Nighteyes the Desecrator
-image=http://magiccards.info/scans/en/cmd/92b.jpg
+image=https://magiccards.info/scans/en/cmd/92b.jpg
 value=4.027
 rarity=U
 type=Legendary,Creature

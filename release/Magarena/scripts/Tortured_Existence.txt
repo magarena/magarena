@@ -1,5 +1,5 @@
 name=Tortured Existence
-image=http://magiccards.info/scans/en/sh/24.jpg
+image=https://magiccards.info/scans/en/sh/24.jpg
 value=4.163
 rarity=C
 type=Enchantment

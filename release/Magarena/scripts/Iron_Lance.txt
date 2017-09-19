@@ -1,5 +1,5 @@
 name=Iron Lance
-image=http://magiccards.info/scans/en/mm/300.jpg
+image=https://magiccards.info/scans/en/mm/300.jpg
 value=1.690
 rarity=U
 type=Artifact

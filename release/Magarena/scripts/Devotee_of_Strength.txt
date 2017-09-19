@@ -1,5 +1,5 @@
 name=Devotee of Strength
-image=http://magiccards.info/scans/en/hou/113.jpg
+image=https://magiccards.info/scans/en/hou/113.jpg
 value=2.500
 rarity=U
 type=Creature

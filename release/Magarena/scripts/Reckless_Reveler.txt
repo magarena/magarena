@@ -1,5 +1,5 @@
 name=Reckless Reveler
-image=http://magiccards.info/scans/en/bng/106.jpg
+image=https://magiccards.info/scans/en/bng/106.jpg
 value=3.884
 rarity=C
 type=Creature

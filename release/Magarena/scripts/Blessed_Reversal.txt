@@ -1,5 +1,5 @@
 name=Blessed Reversal
-image=http://magiccards.info/scans/en/8e/7.jpg
+image=https://magiccards.info/scans/en/8e/7.jpg
 value=3.523
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Sight of the Scalelords
-image=http://magiccards.info/scans/en/dtk/207.jpg
+image=https://magiccards.info/scans/en/dtk/207.jpg
 value=2.500
 rarity=U
 type=Enchantment

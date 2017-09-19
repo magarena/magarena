@@ -1,5 +1,5 @@
 name=Knight of Glory
-image=http://magiccards.info/scans/en/m13/21.jpg
+image=https://magiccards.info/scans/en/m13/21.jpg
 value=3.899
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Geist Trappers
-image=http://magiccards.info/scans/en/avr/179.jpg
+image=https://magiccards.info/scans/en/avr/179.jpg
 value=1.938
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Jedit Ojanen of Efrava
-image=http://magiccards.info/scans/en/pc/131.jpg
+image=https://magiccards.info/scans/en/pc/131.jpg
 value=4.065
 rarity=R
 type=Legendary,Creature

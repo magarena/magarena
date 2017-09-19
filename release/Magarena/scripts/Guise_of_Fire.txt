@@ -1,5 +1,5 @@
 name=Guise of Fire
-image=http://magiccards.info/scans/en/avr/137.jpg
+image=https://magiccards.info/scans/en/avr/137.jpg
 value=1.500
 rarity=C
 type=Enchantment

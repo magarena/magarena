@@ -1,5 +1,5 @@
 name=Diminishing Returns
-image=http://magiccards.info/scans/en/ema/46.jpg
+image=https://magiccards.info/scans/en/ema/46.jpg
 value=4.555
 rarity=R
 type=Sorcery

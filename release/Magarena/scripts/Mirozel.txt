@@ -1,5 +1,5 @@
 name=Mirozel
-image=http://magiccards.info/scans/en/ex/41.jpg
+image=https://magiccards.info/scans/en/ex/41.jpg
 value=2.339
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Orcish Bloodpainter
-image=http://magiccards.info/scans/en/cs/94.jpg
+image=https://magiccards.info/scans/en/cs/94.jpg
 value=1.146
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Absolute Law
-image=http://magiccards.info/scans/en/us/2.jpg
+image=https://magiccards.info/scans/en/us/2.jpg
 value=3.716
 rarity=U
 type=Enchantment

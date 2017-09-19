@@ -1,5 +1,5 @@
 name=Ring of Three Wishes
-image=http://magiccards.info/scans/en/m14/216.jpg
+image=https://magiccards.info/scans/en/m14/216.jpg
 value=3.648
 rarity=M
 type=Artifact

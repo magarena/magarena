@@ -1,5 +1,5 @@
 name=Initiate of Blood
-image=http://magiccards.info/scans/en/chk/173a.jpg
+image=https://magiccards.info/scans/en/chk/173a.jpg
 value=3.105
 rarity=U
 type=Creature

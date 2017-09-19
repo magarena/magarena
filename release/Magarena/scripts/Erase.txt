@@ -1,5 +1,5 @@
 name=Erase
-image=http://magiccards.info/scans/en/ktk/9.jpg
+image=https://magiccards.info/scans/en/ktk/9.jpg
 value=3.500
 rarity=C
 type=Instant

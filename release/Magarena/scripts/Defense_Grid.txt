@@ -1,5 +1,5 @@
 name=Defense Grid
-image=http://magiccards.info/scans/en/9e/293.jpg
+image=https://magiccards.info/scans/en/9e/293.jpg
 value=4.255
 rarity=R
 type=Artifact

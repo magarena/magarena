@@ -1,5 +1,5 @@
 name=The Hive
-image=http://magiccards.info/scans/en/10e/324.jpg
+image=https://magiccards.info/scans/en/10e/324.jpg
 value=1.735
 rarity=R
 type=Artifact

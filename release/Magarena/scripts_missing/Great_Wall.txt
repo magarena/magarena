@@ -1,5 +1,5 @@
 name=Great Wall
-image=http://magiccards.info/scans/en/lg/186.jpg
+image=https://magiccards.info/scans/en/lg/186.jpg
 value=1.068
 rarity=U
 type=Enchantment

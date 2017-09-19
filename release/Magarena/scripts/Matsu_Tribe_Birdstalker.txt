@@ -1,5 +1,5 @@
 name=Matsu-Tribe Birdstalker
-image=http://magiccards.info/scans/en/sok/137.jpg
+image=https://magiccards.info/scans/en/sok/137.jpg
 value=1.865
 rarity=C
 type=Creature

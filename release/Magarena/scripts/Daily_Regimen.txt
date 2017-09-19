@@ -1,5 +1,5 @@
 name=Daily Regimen
-image=http://magiccards.info/scans/en/mt/8.jpg
+image=https://magiccards.info/scans/en/mt/8.jpg
 image_updated=2016-09-12
 value=2.773
 rarity=U

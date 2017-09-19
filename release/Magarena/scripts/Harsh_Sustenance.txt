@@ -1,5 +1,5 @@
 name=Harsh Sustenance
-image=http://magiccards.info/scans/en/frf/154.jpg
+image=https://magiccards.info/scans/en/frf/154.jpg
 value=2.500
 rarity=C
 type=Instant

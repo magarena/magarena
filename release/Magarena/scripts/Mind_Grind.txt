@@ -1,5 +1,5 @@
 name=Mind Grind
-image=http://magiccards.info/scans/en/gtc/178.jpg
+image=https://magiccards.info/scans/en/gtc/178.jpg
 value=3.788
 removal=3
 rarity=R

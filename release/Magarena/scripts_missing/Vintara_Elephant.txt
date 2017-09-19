@@ -1,5 +1,5 @@
 name=Vintara Elephant
-image=http://magiccards.info/scans/en/pr/131.jpg
+image=https://magiccards.info/scans/en/pr/131.jpg
 value=1.643
 rarity=C
 type=Creature

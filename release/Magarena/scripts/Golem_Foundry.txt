@@ -1,5 +1,5 @@
 name=Golem Foundry
-image=http://magiccards.info/scans/en/som/160.jpg
+image=https://magiccards.info/scans/en/som/160.jpg
 value=3.244
 rarity=C
 type=Artifact

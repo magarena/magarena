@@ -1,5 +1,5 @@
 name=Whirlpool Warrior
-image=http://magiccards.info/scans/en/pc2/29.jpg
+image=https://magiccards.info/scans/en/pc2/29.jpg
 value=4.318
 rarity=R
 type=Creature

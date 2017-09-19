@@ -1,6 +1,6 @@
 name=white Avatar creature token
 token=Avatar
-image=http://magiccards.info/extras/token/magic-2011/avatar.jpg
+image=https://magiccards.info/extras/token/magic-2011/avatar.jpg
 value=4
 type=Creature
 subtype=Avatar

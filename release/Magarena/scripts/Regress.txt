@@ -1,5 +1,5 @@
 name=Regress
-image=http://magiccards.info/scans/en/roe/83.jpg
+image=https://magiccards.info/scans/en/roe/83.jpg
 value=2.639
 rarity=C
 type=Instant

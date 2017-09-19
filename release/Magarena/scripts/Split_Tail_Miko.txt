@@ -1,5 +1,5 @@
 name=Split-Tail Miko
-image=http://magiccards.info/scans/en/bok/23.jpg
+image=https://magiccards.info/scans/en/bok/23.jpg
 value=2.141
 rarity=C
 type=Creature

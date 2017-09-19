@@ -1,5 +1,5 @@
 name=Blood-Chin Rager
-image=http://magiccards.info/scans/en/dtk/89.jpg
+image=https://magiccards.info/scans/en/dtk/89.jpg
 value=2.500
 rarity=U
 type=Creature

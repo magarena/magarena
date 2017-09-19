@@ -1,5 +1,5 @@
 name=Arrows of Justice
-image=http://magiccards.info/scans/en/gtc/211.jpg
+image=https://magiccards.info/scans/en/gtc/211.jpg
 value=2.853
 rarity=U
 type=Instant

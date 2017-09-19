@@ -1,5 +1,5 @@
 name=Teetering Peaks
-image=http://magiccards.info/scans/en/zen/226.jpg
+image=https://magiccards.info/scans/en/zen/226.jpg
 value=2.926
 rarity=C
 type=Land

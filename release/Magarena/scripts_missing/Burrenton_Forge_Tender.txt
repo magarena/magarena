@@ -1,5 +1,5 @@
 name=Burrenton Forge-Tender
-image=http://magiccards.info/scans/en/lw/7.jpg
+image=https://magiccards.info/scans/en/lw/7.jpg
 value=2.812
 rarity=U
 type=Creature

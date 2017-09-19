@@ -1,5 +1,5 @@
 name=Fork in the Road
-image=http://magiccards.info/scans/en/soi/205.jpg
+image=https://magiccards.info/scans/en/soi/205.jpg
 value=2.500
 rarity=C
 type=Sorcery

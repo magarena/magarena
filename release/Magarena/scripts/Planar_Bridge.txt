@@ -1,5 +1,5 @@
 name=Planar Bridge
-image=http://magiccards.info/scans/en/aer/171.jpg
+image=https://magiccards.info/scans/en/aer/171.jpg
 value=2.500
 rarity=M
 type=Legendary,Artifact

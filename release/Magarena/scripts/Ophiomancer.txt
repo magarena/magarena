@@ -1,5 +1,5 @@
 name=Ophiomancer
-image=http://magiccards.info/scans/en/c13/84.jpg
+image=https://magiccards.info/scans/en/c13/84.jpg
 value=3.854
 rarity=R
 type=Creature

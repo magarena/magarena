@@ -1,5 +1,5 @@
 name=Time of Heroes
-image=http://magiccards.info/scans/en/roe/49.jpg
+image=https://magiccards.info/scans/en/roe/49.jpg
 value=4.104
 rarity=U
 type=Enchantment

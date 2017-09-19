@@ -1,5 +1,5 @@
 name=Steely Resolve
-image=http://magiccards.info/scans/en/on/286.jpg
+image=https://magiccards.info/scans/en/on/286.jpg
 value=3.862
 rarity=R
 type=Enchantment

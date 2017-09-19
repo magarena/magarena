@@ -1,5 +1,5 @@
 name=Cavalry Master
-image=http://magiccards.info/scans/en/ts/6.jpg
+image=https://magiccards.info/scans/en/ts/6.jpg
 value=3.895
 rarity=U
 type=Creature

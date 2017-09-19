@@ -1,5 +1,5 @@
 name=Mage il-Vec
-image=http://magiccards.info/scans/en/ex/86.jpg
+image=https://magiccards.info/scans/en/ex/86.jpg
 value=1.478
 rarity=C
 type=Creature

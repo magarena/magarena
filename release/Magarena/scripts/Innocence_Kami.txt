@@ -1,5 +1,5 @@
 name=Innocence Kami
-image=http://magiccards.info/scans/en/chk/18.jpg
+image=https://magiccards.info/scans/en/chk/18.jpg
 value=1.919
 rarity=U
 type=Creature

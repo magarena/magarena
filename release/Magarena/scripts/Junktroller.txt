@@ -1,5 +1,5 @@
 name=Junktroller
-image=http://magiccards.info/scans/en/rav/264.jpg
+image=https://magiccards.info/scans/en/rav/264.jpg
 value=2.962
 rarity=U
 type=Artifact,Creature

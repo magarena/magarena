@@ -1,5 +1,5 @@
 name=Mind Funeral
-image=http://magiccards.info/scans/en/mma/181.jpg
+image=https://magiccards.info/scans/en/mma/181.jpg
 value=3.833
 rarity=U
 type=Sorcery

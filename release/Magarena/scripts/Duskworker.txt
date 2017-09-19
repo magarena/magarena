@@ -1,5 +1,5 @@
 name=Duskworker
-image=http://magiccards.info/scans/en/mi/166.jpg
+image=https://magiccards.info/scans/en/mi/166.jpg
 value=2.306
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Song of Blood
-image=http://magiccards.info/scans/en/vi/94.jpg
+image=https://magiccards.info/scans/en/vi/94.jpg
 value=2.756
 rarity=C
 type=Sorcery

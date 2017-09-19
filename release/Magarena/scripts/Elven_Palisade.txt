@@ -1,5 +1,5 @@
 name=Elven Palisade
-image=http://magiccards.info/scans/en/ex/109.jpg
+image=https://magiccards.info/scans/en/ex/109.jpg
 value=2.088
 rarity=U
 type=Enchantment

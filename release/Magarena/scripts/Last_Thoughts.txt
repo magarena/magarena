@@ -1,5 +1,5 @@
 name=Last Thoughts
-image=http://magiccards.info/scans/en/gtc/40.jpg
+image=https://magiccards.info/scans/en/gtc/40.jpg
 value=2.585
 rarity=C
 type=Sorcery

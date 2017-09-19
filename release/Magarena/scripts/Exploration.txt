@@ -1,5 +1,5 @@
 name=Exploration
-image=http://magiccards.info/scans/en/cns/164.jpg
+image=https://magiccards.info/scans/en/cns/164.jpg
 value=4.568
 rarity=R
 type=Enchantment

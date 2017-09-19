@@ -1,5 +1,5 @@
 name=Infernal Contract
-image=http://magiccards.info/scans/en/7e/143.jpg
+image=https://magiccards.info/scans/en/7e/143.jpg
 value=3.551
 rarity=R
 type=Sorcery

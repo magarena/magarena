@@ -1,5 +1,5 @@
 name=Abomination of Gudul
-image=http://magiccards.info/scans/en/ktk/159.jpg
+image=https://magiccards.info/scans/en/ktk/159.jpg
 value=2.286
 rarity=C
 type=Creature

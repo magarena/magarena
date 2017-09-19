@@ -1,5 +1,5 @@
 name=Keeper of the Lens
-image=http://magiccards.info/scans/en/dtk/240.jpg
+image=https://magiccards.info/scans/en/dtk/240.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Sivvi's Valor
-image=http://magiccards.info/scans/en/ne/22.jpg
+image=https://magiccards.info/scans/en/ne/22.jpg
 value=2.889
 rarity=R
 type=Instant

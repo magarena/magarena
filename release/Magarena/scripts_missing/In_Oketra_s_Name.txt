@@ -1,5 +1,5 @@
 name=In Oketra's Name
-image=http://magiccards.info/scans/en/akh/19.jpg
+image=https://magiccards.info/scans/en/akh/19.jpg
 value=2.500
 rarity=C
 type=Instant

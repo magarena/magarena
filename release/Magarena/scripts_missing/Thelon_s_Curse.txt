@@ -1,5 +1,5 @@
 name=Thelon's Curse
-image=http://magiccards.info/scans/en/fe/95.jpg
+image=https://magiccards.info/scans/en/fe/95.jpg
 value=2.883
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Grafdigger's Cage
-image=http://magiccards.info/scans/en/mm3/221.jpg
+image=https://magiccards.info/scans/en/mm3/221.jpg
 image_updated=2017-08-08
 value=4.050
 rarity=R

@@ -1,5 +1,5 @@
 name=Braid of Fire
-image=http://magiccards.info/scans/en/cs/78.jpg
+image=https://magiccards.info/scans/en/cs/78.jpg
 value=4.514
 rarity=R
 type=Enchantment

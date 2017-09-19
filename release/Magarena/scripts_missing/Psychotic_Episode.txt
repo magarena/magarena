@@ -1,5 +1,5 @@
 name=Psychotic Episode
-image=http://magiccards.info/scans/en/ts/126.jpg
+image=https://magiccards.info/scans/en/ts/126.jpg
 value=3.207
 rarity=C
 type=Sorcery

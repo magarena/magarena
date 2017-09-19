@@ -1,5 +1,5 @@
 name=Precinct Captain
-image=http://magiccards.info/scans/en/rtr/17.jpg
+image=https://magiccards.info/scans/en/rtr/17.jpg
 image_updated=2017-01-03
 value=3.800
 rarity=R

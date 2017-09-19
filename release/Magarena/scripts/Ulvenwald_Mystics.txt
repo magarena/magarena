@@ -1,5 +1,5 @@
 name=Ulvenwald Mystics
-image=http://magiccards.info/scans/en/isd/208a.jpg
+image=https://magiccards.info/scans/en/isd/208a.jpg
 value=3.111
 rarity=U
 type=Creature

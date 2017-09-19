@@ -1,5 +1,5 @@
 name=Scapeshift
-image=http://magiccards.info/scans/en/mt/136.jpg
+image=https://magiccards.info/scans/en/mt/136.jpg
 value=3.703
 rarity=R
 type=Sorcery

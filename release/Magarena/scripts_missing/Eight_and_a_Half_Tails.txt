@@ -1,5 +1,5 @@
 name=Eight-and-a-Half-Tails
-image=http://magiccards.info/scans/en/ema/7.jpg
+image=https://magiccards.info/scans/en/ema/7.jpg
 value=4.076
 rarity=R
 type=Legendary,Creature

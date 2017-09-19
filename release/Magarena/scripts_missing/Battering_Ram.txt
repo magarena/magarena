@@ -1,5 +1,5 @@
 name=Battering Ram
-image=http://magiccards.info/scans/en/5e/353.jpg
+image=https://magiccards.info/scans/en/5e/353.jpg
 value=2.833
 rarity=C
 type=Artifact,Creature

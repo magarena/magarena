@@ -1,5 +1,5 @@
 name=Deadbridge Chant
-image=http://magiccards.info/scans/en/dgm/63.jpg
+image=https://magiccards.info/scans/en/dgm/63.jpg
 value=3.801
 rarity=M
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Captivating Glance
-image=http://magiccards.info/scans/en/lw/55.jpg
+image=https://magiccards.info/scans/en/lw/55.jpg
 value=2.579
 rarity=U
 type=Enchantment

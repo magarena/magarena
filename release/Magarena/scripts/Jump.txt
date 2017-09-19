@@ -1,5 +1,5 @@
 name=Jump
-image=http://magiccards.info/scans/en/m10/59.jpg
+image=https://magiccards.info/scans/en/m10/59.jpg
 value=1.320
 rarity=C
 type=Instant

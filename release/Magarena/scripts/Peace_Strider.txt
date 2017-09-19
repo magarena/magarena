@@ -1,5 +1,5 @@
 name=Peace Strider
-image=http://magiccards.info/scans/en/cns/201.jpg
+image=https://magiccards.info/scans/en/cns/201.jpg
 value=3.125
 rarity=U
 type=Artifact,Creature

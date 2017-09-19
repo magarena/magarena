@@ -1,5 +1,5 @@
 name=Spike Worker
-image=http://magiccards.info/scans/en/sh/70.jpg
+image=https://magiccards.info/scans/en/sh/70.jpg
 image_updated=2016-01-09
 value=3.283
 rarity=C

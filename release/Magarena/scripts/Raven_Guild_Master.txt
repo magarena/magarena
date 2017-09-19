@@ -1,5 +1,5 @@
 name=Raven Guild Master
-image=http://magiccards.info/scans/en/sc/47.jpg
+image=https://magiccards.info/scans/en/sc/47.jpg
 value=4.377
 rarity=R
 type=Creature

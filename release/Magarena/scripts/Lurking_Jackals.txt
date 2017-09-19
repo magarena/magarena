@@ -1,5 +1,5 @@
 name=Lurking Jackals
-image=http://magiccards.info/scans/en/ud/62.jpg
+image=https://magiccards.info/scans/en/ud/62.jpg
 value=3.620
 rarity=U
 type=Enchantment

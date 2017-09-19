@@ -1,5 +1,5 @@
 name=Hush
-image=http://magiccards.info/scans/en/us/266.jpg
+image=https://magiccards.info/scans/en/us/266.jpg
 value=3.450
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Favorable Destiny
-image=http://magiccards.info/scans/en/mr/220.jpg
+image=https://magiccards.info/scans/en/mr/220.jpg
 value=3.032
 rarity=U
 type=Enchantment

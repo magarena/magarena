@@ -1,5 +1,5 @@
 name=Viridian Joiner
-image=http://magiccards.info/scans/en/mi/138.jpg
+image=https://magiccards.info/scans/en/mi/138.jpg
 value=3.655
 rarity=C
 type=Creature

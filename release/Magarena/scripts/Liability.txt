@@ -1,5 +1,5 @@
 name=Liability
-image=http://magiccards.info/scans/en/mm/144.jpg
+image=https://magiccards.info/scans/en/mm/144.jpg
 value=3.917
 rarity=R
 type=Enchantment

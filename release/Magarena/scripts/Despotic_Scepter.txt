@@ -1,5 +1,5 @@
 name=Despotic Scepter
-image=http://magiccards.info/scans/en/ia/291.jpg
+image=https://magiccards.info/scans/en/ia/291.jpg
 value=3.738
 rarity=R
 type=Artifact

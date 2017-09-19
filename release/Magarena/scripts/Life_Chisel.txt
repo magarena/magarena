@@ -1,5 +1,5 @@
 name=Life Chisel
-image=http://magiccards.info/scans/en/lg/228.jpg
+image=https://magiccards.info/scans/en/lg/228.jpg
 value=3.560
 rarity=U
 type=Artifact

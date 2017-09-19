@@ -1,5 +1,5 @@
 name=Gaea's Touch
-image=http://magiccards.info/scans/en/dk/40.jpg
+image=https://magiccards.info/scans/en/dk/40.jpg
 value=4.570
 rarity=C
 type=Enchantment

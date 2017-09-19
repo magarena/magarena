@@ -1,5 +1,5 @@
 name=Part Water
-image=http://magiccards.info/scans/en/lg/66.jpg
+image=https://magiccards.info/scans/en/lg/66.jpg
 value=1.606
 rarity=U
 type=Sorcery

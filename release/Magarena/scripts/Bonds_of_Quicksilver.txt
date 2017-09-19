@@ -1,5 +1,5 @@
 name=Bonds of Quicksilver
-image=http://magiccards.info/scans/en/cn2/102.jpg
+image=https://magiccards.info/scans/en/cn2/102.jpg
 image_updated=2017-08-29
 value=2.240
 removal=3

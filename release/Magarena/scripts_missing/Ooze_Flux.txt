@@ -1,5 +1,5 @@
 name=Ooze Flux
-image=http://magiccards.info/scans/en/gtc/128.jpg
+image=https://magiccards.info/scans/en/gtc/128.jpg
 value=3.316
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Twinstrike
-image=http://magiccards.info/scans/en/di/134.jpg
+image=https://magiccards.info/scans/en/di/134.jpg
 value=2.529
 rarity=U
 type=Instant

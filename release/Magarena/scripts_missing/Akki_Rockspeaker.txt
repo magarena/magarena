@@ -1,5 +1,5 @@
 name=Akki Rockspeaker
-image=http://magiccards.info/scans/en/chk/154.jpg
+image=https://magiccards.info/scans/en/chk/154.jpg
 value=1.550
 rarity=C
 type=Creature

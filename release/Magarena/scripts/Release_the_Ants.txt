@@ -1,5 +1,5 @@
 name=Release the Ants
-image=http://magiccards.info/scans/en/mt/98.jpg
+image=https://magiccards.info/scans/en/mt/98.jpg
 value=2.658
 rarity=U
 type=Instant

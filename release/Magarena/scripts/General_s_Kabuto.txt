@@ -1,5 +1,5 @@
 name=General's Kabuto
-image=http://magiccards.info/scans/en/chk/251.jpg
+image=https://magiccards.info/scans/en/chk/251.jpg
 value=3.902
 rarity=R
 type=Artifact

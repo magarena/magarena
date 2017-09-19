@@ -1,5 +1,5 @@
 name=Coffin Purge
-image=http://magiccards.info/scans/en/od/124.jpg
+image=https://magiccards.info/scans/en/od/124.jpg
 value=2.774
 rarity=C
 type=Instant

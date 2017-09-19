@@ -1,5 +1,5 @@
 name=Destructive Flow
-image=http://magiccards.info/scans/en/ps/102.jpg
+image=https://magiccards.info/scans/en/ps/102.jpg
 value=3.282
 rarity=R
 type=Enchantment

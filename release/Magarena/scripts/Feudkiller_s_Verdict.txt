@@ -1,5 +1,5 @@
 name=Feudkiller's Verdict
-image=http://magiccards.info/scans/en/mma/15.jpg
+image=https://magiccards.info/scans/en/mma/15.jpg
 value=3.652
 rarity=U
 type=Tribal,Sorcery

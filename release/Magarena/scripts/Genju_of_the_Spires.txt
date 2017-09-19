@@ -1,5 +1,5 @@
 name=Genju of the Spires
-image=http://magiccards.info/scans/en/bok/105.jpg
+image=https://magiccards.info/scans/en/bok/105.jpg
 value=4.225
 rarity=U
 type=Enchantment

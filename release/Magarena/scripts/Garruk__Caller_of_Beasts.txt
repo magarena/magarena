@@ -1,5 +1,5 @@
 name=Garruk, Caller of Beasts
-image=http://magiccards.info/scans/en/m14/172.jpg
+image=https://magiccards.info/scans/en/m14/172.jpg
 value=3.512
 rarity=M
 type=Legendary,Planeswalker

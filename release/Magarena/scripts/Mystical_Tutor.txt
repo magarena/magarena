@@ -1,5 +1,5 @@
 name=Mystical Tutor
-image=http://magiccards.info/scans/en/ema/62.jpg
+image=https://magiccards.info/scans/en/ema/62.jpg
 value=4.604
 rarity=R
 type=Instant

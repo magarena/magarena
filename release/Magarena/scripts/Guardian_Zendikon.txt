@@ -1,5 +1,5 @@
 name=Guardian Zendikon
-image=http://magiccards.info/scans/en/cns/71.jpg
+image=https://magiccards.info/scans/en/cns/71.jpg
 value=2.875
 rarity=C
 type=Enchantment

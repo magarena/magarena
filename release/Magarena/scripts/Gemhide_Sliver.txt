@@ -1,5 +1,5 @@
 name=Gemhide Sliver
-image=http://magiccards.info/scans/en/ts/196.jpg
+image=https://magiccards.info/scans/en/ts/196.jpg
 value=4.398
 rarity=C
 type=Creature

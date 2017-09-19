@@ -1,5 +1,5 @@
 name=Wilt-Leaf Liege
-image=http://magiccards.info/scans/en/mm2/200.jpg
+image=https://magiccards.info/scans/en/mm2/200.jpg
 value=4.097
 rarity=R
 type=Creature

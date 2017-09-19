@@ -1,5 +1,5 @@
 name=Crib Swap
-image=http://magiccards.info/scans/en/lw/11.jpg
+image=https://magiccards.info/scans/en/lw/11.jpg
 image_updated=2016-02-29
 value=4.065
 removal=4

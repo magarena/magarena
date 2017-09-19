@@ -1,5 +1,5 @@
 name=Infused Arrows
-image=http://magiccards.info/scans/en/5dn/133.jpg
+image=https://magiccards.info/scans/en/5dn/133.jpg
 value=2.778
 rarity=U
 type=Artifact

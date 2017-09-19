@@ -1,5 +1,5 @@
 name=Ichneumon Druid
-image=http://magiccards.info/scans/en/lg/105.jpg
+image=https://magiccards.info/scans/en/lg/105.jpg
 value=2.064
 rarity=U
 type=Creature

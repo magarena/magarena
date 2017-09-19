@@ -1,5 +1,5 @@
 name=Shield Dancer
-image=http://magiccards.info/scans/en/pr/23.jpg
+image=https://magiccards.info/scans/en/pr/23.jpg
 value=3.862
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Stream of Life
-image=http://magiccards.info/scans/en/9e/272.jpg
+image=https://magiccards.info/scans/en/9e/272.jpg
 value=2.457
 rarity=U
 type=Sorcery

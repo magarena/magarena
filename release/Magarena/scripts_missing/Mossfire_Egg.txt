@@ -1,5 +1,5 @@
 name=Mossfire Egg
-image=http://magiccards.info/scans/en/od/304.jpg
+image=https://magiccards.info/scans/en/od/304.jpg
 value=2.742
 rarity=U
 type=Artifact

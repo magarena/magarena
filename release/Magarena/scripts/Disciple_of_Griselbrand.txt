@@ -1,5 +1,5 @@
 name=Disciple of Griselbrand
-image=http://magiccards.info/scans/en/isd/98.jpg
+image=https://magiccards.info/scans/en/isd/98.jpg
 value=3.750
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Skyreaping
-image=http://magiccards.info/scans/en/bng/140.jpg
+image=https://magiccards.info/scans/en/bng/140.jpg
 value=3.522
 rarity=U
 type=Sorcery

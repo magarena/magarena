@@ -1,5 +1,5 @@
 name=Standing Stones
-image=http://magiccards.info/scans/en/dk/107.jpg
+image=https://magiccards.info/scans/en/dk/107.jpg
 value=1.483
 rarity=U
 type=Artifact

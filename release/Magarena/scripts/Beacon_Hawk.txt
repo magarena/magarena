@@ -1,5 +1,5 @@
 name=Beacon Hawk
-image=http://magiccards.info/scans/en/di/3.jpg
+image=https://magiccards.info/scans/en/di/3.jpg
 value=3.362
 rarity=C
 type=Creature

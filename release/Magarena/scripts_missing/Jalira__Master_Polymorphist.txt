@@ -1,5 +1,5 @@
 name=Jalira, Master Polymorphist
-image=http://magiccards.info/scans/en/m15/64.jpg
+image=https://magiccards.info/scans/en/m15/64.jpg
 value=3.562
 rarity=R
 type=Legendary,Creature

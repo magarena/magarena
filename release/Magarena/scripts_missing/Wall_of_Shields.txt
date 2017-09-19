@@ -1,5 +1,5 @@
 name=Wall of Shields
-image=http://magiccards.info/scans/en/ia/322.jpg
+image=https://magiccards.info/scans/en/ia/322.jpg
 value=2.462
 rarity=U
 type=Artifact,Creature

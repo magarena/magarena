@@ -1,5 +1,5 @@
 name=Derelor
-image=http://magiccards.info/scans/en/6e/120.jpg
+image=https://magiccards.info/scans/en/6e/120.jpg
 value=2.162
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gideon of the Trials
-image=http://magiccards.info/scans/en/akh/14.jpg
+image=https://magiccards.info/scans/en/akh/14.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

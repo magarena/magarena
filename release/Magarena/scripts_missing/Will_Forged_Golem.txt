@@ -1,5 +1,5 @@
 name=Will-Forged Golem
-image=http://magiccards.info/scans/en/m15/239.jpg
+image=https://magiccards.info/scans/en/m15/239.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

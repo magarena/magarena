@@ -1,5 +1,5 @@
 name=Border Patrol
-image=http://magiccards.info/scans/en/ju/6.jpg
+image=https://magiccards.info/scans/en/ju/6.jpg
 value=2.156
 rarity=C
 type=Creature

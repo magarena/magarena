@@ -1,5 +1,5 @@
 name=Into the North
-image=http://magiccards.info/scans/en/cs/111.jpg
+image=https://magiccards.info/scans/en/cs/111.jpg
 value=3.463
 rarity=C
 type=Sorcery

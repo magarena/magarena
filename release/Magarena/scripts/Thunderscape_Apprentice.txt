@@ -1,5 +1,5 @@
 name=Thunderscape Apprentice
-image=http://magiccards.info/scans/en/in/174.jpg
+image=https://magiccards.info/scans/en/in/174.jpg
 value=3.107
 rarity=C
 type=Creature

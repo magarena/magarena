@@ -1,5 +1,5 @@
 name=Marsh Boa
-image=http://magiccards.info/scans/en/pr/118.jpg
+image=https://magiccards.info/scans/en/pr/118.jpg
 value=3.083
 rarity=C
 type=Creature

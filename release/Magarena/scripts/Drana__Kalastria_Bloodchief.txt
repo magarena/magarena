@@ -1,5 +1,5 @@
 name=Drana, Kalastria Bloodchief
-image=http://magiccards.info/scans/en/c14/141.jpg
+image=https://magiccards.info/scans/en/c14/141.jpg
 value=4.068
 rarity=R
 type=Legendary,Creature

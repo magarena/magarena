@@ -1,5 +1,5 @@
 name=Desert of the Glorified
-image=http://magiccards.info/scans/en/hou/171.jpg
+image=https://magiccards.info/scans/en/hou/171.jpg
 value=2.500
 rarity=C
 type=Land

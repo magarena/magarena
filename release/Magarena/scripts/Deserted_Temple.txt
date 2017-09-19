@@ -1,5 +1,5 @@
 name=Deserted Temple
-image=http://magiccards.info/scans/en/od/320.jpg
+image=https://magiccards.info/scans/en/od/320.jpg
 value=4.062
 rarity=R
 type=Land

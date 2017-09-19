@@ -1,5 +1,5 @@
 name=Lucent Liminid
-image=http://magiccards.info/scans/en/fut/24.jpg
+image=https://magiccards.info/scans/en/fut/24.jpg
 value=3.123
 rarity=C
 type=Enchantment,Creature

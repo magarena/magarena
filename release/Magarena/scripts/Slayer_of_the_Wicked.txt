@@ -1,5 +1,5 @@
 name=Slayer of the Wicked
-image=http://magiccards.info/scans/en/isd/32.jpg
+image=https://magiccards.info/scans/en/isd/32.jpg
 value=3.052
 rarity=U
 type=Creature

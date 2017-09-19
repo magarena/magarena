@@ -1,5 +1,5 @@
 name=Selesnya Cluestone
-image=http://magiccards.info/scans/en/dgm/144.jpg
+image=https://magiccards.info/scans/en/dgm/144.jpg
 value=2.727
 rarity=C
 type=Artifact

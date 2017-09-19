@@ -1,5 +1,5 @@
 name=Energy Bolt
-image=http://magiccards.info/scans/en/mr/323.jpg
+image=https://magiccards.info/scans/en/mr/323.jpg
 value=3.205
 rarity=R
 type=Sorcery

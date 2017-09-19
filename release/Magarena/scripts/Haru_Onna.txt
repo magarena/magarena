@@ -1,5 +1,5 @@
 name=Haru-Onna
-image=http://magiccards.info/scans/en/sok/132.jpg
+image=https://magiccards.info/scans/en/sok/132.jpg
 value=2.891
 rarity=U
 type=Creature

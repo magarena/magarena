@@ -1,5 +1,5 @@
 name=Waterwhirl
-image=http://magiccards.info/scans/en/ktk/60.jpg
+image=https://magiccards.info/scans/en/ktk/60.jpg
 value=2.750
 rarity=U
 type=Instant

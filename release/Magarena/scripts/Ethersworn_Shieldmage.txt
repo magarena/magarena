@@ -1,5 +1,5 @@
 name=Ethersworn Shieldmage
-image=http://magiccards.info/scans/en/arb/4.jpg
+image=https://magiccards.info/scans/en/arb/4.jpg
 image_updated=2016-12-13
 value=2.870
 rarity=C

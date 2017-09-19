@@ -1,5 +1,5 @@
 name=Journeyer's Kite
-image=http://magiccards.info/scans/en/chk/257.jpg
+image=https://magiccards.info/scans/en/chk/257.jpg
 image_updated=2016-12-20
 value=3.059
 rarity=R

@@ -1,5 +1,5 @@
 name=Spitting Image
-image=http://magiccards.info/scans/en/c16/236.jpg
+image=https://magiccards.info/scans/en/c16/236.jpg
 image_updated=2017-08-17
 value=3.675
 rarity=R

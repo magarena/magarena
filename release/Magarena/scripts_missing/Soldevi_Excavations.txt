@@ -1,5 +1,5 @@
 name=Soldevi Excavations
-image=http://magiccards.info/scans/en/ai/188.jpg
+image=https://magiccards.info/scans/en/ai/188.jpg
 value=4.329
 rarity=R
 type=Land

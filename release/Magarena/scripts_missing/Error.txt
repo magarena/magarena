@@ -1,5 +1,5 @@
 name=Error
-image=http://magiccards.info/scans/en/c16/239b.jpg
+image=https://magiccards.info/scans/en/c16/239b.jpg
 image_updated=2017-08-17
 value=3.196
 rarity=U

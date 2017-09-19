@@ -1,5 +1,5 @@
 name=Revive the Fallen
-image=http://magiccards.info/scans/en/mt/76.jpg
+image=https://magiccards.info/scans/en/mt/76.jpg
 value=3.044
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Pale Moon
-image=http://magiccards.info/scans/en/ne/36.jpg
+image=https://magiccards.info/scans/en/ne/36.jpg
 value=1.382
 rarity=R
 type=Instant

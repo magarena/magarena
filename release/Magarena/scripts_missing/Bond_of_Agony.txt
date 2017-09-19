@@ -1,5 +1,5 @@
 name=Bond of Agony
-image=http://magiccards.info/scans/en/di/38.jpg
+image=https://magiccards.info/scans/en/di/38.jpg
 value=2.658
 rarity=U
 type=Sorcery

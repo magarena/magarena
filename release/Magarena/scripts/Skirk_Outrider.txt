@@ -1,5 +1,5 @@
 name=Skirk Outrider
-image=http://magiccards.info/scans/en/le/114.jpg
+image=https://magiccards.info/scans/en/le/114.jpg
 value=2.304
 rarity=C
 type=Creature

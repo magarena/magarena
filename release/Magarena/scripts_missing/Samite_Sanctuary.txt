@@ -1,5 +1,5 @@
 name=Samite Sanctuary
-image=http://magiccards.info/scans/en/pr/21.jpg
+image=https://magiccards.info/scans/en/pr/21.jpg
 value=2.672
 rarity=R
 type=Enchantment

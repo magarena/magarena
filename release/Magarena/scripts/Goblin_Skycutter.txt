@@ -1,5 +1,5 @@
 name=Goblin Skycutter
-image=http://magiccards.info/scans/en/ts/159.jpg
+image=https://magiccards.info/scans/en/ts/159.jpg
 value=2.971
 rarity=C
 type=Creature

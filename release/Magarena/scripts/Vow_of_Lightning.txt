@@ -1,5 +1,5 @@
 name=Vow of Lightning
-image=http://magiccards.info/scans/en/cmd/138.jpg
+image=https://magiccards.info/scans/en/cmd/138.jpg
 value=3.485
 rarity=U
 type=Enchantment

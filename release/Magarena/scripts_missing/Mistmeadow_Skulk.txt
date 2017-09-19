@@ -1,5 +1,5 @@
 name=Mistmeadow Skulk
-image=http://magiccards.info/scans/en/shm/14.jpg
+image=https://magiccards.info/scans/en/shm/14.jpg
 value=3.797
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Patrol Hound
-image=http://magiccards.info/scans/en/od/38.jpg
+image=https://magiccards.info/scans/en/od/38.jpg
 value=2.817
 rarity=C
 type=Creature

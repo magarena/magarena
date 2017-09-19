@@ -1,5 +1,5 @@
 name=Capsize
-image=http://magiccards.info/scans/en/tp/55.jpg
+image=https://magiccards.info/scans/en/tp/55.jpg
 value=4.549
 rarity=C
 type=Instant

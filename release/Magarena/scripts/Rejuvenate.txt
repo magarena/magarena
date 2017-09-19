@@ -1,5 +1,5 @@
 name=Rejuvenate
-image=http://magiccards.info/scans/en/us/271.jpg
+image=https://magiccards.info/scans/en/us/271.jpg
 value=2.379
 rarity=C
 type=Sorcery

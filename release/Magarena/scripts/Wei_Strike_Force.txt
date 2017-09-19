@@ -1,5 +1,5 @@
 name=Wei Strike Force
-image=http://magiccards.info/scans/en/p3k/91.jpg
+image=https://magiccards.info/scans/en/p3k/91.jpg
 value=2.935
 rarity=C
 type=Creature

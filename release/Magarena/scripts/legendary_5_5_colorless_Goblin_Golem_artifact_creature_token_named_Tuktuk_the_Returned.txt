@@ -1,6 +1,6 @@
 name=legendary 5/5 colorless Goblin Golem artifact creature token named Tuktuk the Returned
 token=Tuktuk the Returned
-image=http://magiccards.info/extras/token/commander-2014/tuktuk-the-returned.jpg
+image=https://magiccards.info/extras/token/commander-2014/tuktuk-the-returned.jpg
 image_updated=2015-11-12
 value=4
 type=Legendary,Artifact,Creature

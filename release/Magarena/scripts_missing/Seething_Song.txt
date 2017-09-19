@@ -1,5 +1,5 @@
 name=Seething Song
-image=http://magiccards.info/scans/en/9e/216.jpg
+image=https://magiccards.info/scans/en/9e/216.jpg
 image_updated=2016-01-09
 value=4.473
 rarity=C

@@ -1,5 +1,5 @@
 name=Excoriate
-image=http://magiccards.info/scans/en/bng/10.jpg
+image=https://magiccards.info/scans/en/bng/10.jpg
 value=2.767
 rarity=C
 type=Sorcery

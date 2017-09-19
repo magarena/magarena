@@ -1,5 +1,5 @@
 name=Mardu Hordechief
-image=http://magiccards.info/scans/en/ktk/17.jpg
+image=https://magiccards.info/scans/en/ktk/17.jpg
 value=3.250
 rarity=C
 type=Creature

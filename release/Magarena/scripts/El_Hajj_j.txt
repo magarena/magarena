@@ -1,5 +1,5 @@
 name=El-Hajjâj
-image=http://magiccards.info/scans/en/4e/18.jpg
+image=https://magiccards.info/scans/en/4e/18.jpg
 value=2.357
 rarity=R
 type=Creature

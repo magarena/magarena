@@ -1,5 +1,5 @@
 name=Tempting Licid
-image=http://magiccards.info/scans/en/sh/72.jpg
+image=https://magiccards.info/scans/en/sh/72.jpg
 value=3.889
 rarity=U
 type=Creature

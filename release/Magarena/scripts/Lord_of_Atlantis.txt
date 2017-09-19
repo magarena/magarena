@@ -1,5 +1,5 @@
 name=Lord of Atlantis
-image=http://magiccards.info/scans/en/tsts/24.jpg
+image=https://magiccards.info/scans/en/tsts/24.jpg
 value=4.462
 rarity=R
 type=Creature

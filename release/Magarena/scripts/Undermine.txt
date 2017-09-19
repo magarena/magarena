@@ -1,5 +1,5 @@
 name=Undermine
-image=http://magiccards.info/scans/en/in/282.jpg
+image=https://magiccards.info/scans/en/in/282.jpg
 value=4.296
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Absorb Vis
-image=http://magiccards.info/scans/en/cn2/126.jpg
+image=https://magiccards.info/scans/en/cn2/126.jpg
 image_updated=2017-08-29
 value=2.635
 rarity=C

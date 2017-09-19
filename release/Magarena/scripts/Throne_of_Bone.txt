@@ -1,5 +1,5 @@
 name=Throne of Bone
-image=http://magiccards.info/scans/en/8e/317.jpg
+image=https://magiccards.info/scans/en/8e/317.jpg
 value=1.398
 rarity=U
 type=Artifact

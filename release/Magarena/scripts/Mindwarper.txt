@@ -1,5 +1,5 @@
 name=Mindwarper
-image=http://magiccards.info/scans/en/sh/14.jpg
+image=https://magiccards.info/scans/en/sh/14.jpg
 value=2.956
 rarity=R
 type=Creature

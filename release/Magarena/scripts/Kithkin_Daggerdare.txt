@@ -1,5 +1,5 @@
 name=Kithkin Daggerdare
-image=http://magiccards.info/scans/en/lw/223.jpg
+image=https://magiccards.info/scans/en/lw/223.jpg
 value=2.441
 rarity=C
 type=Creature

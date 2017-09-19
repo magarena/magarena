@@ -1,5 +1,5 @@
 name=Spirit of Resistance
-image=http://magiccards.info/scans/en/in/38.jpg
+image=https://magiccards.info/scans/en/in/38.jpg
 value=4.179
 rarity=R
 type=Enchantment

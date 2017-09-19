@@ -1,5 +1,5 @@
 name=Soul's Fire
-image=http://magiccards.info/scans/en/ala/115.jpg
+image=https://magiccards.info/scans/en/ala/115.jpg
 value=4.055
 rarity=C
 type=Instant

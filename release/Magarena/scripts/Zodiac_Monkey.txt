@@ -1,5 +1,5 @@
 name=Zodiac Monkey
-image=http://magiccards.info/scans/en/9e/285.jpg
+image=https://magiccards.info/scans/en/9e/285.jpg
 value=2.516
 rarity=C
 type=Creature

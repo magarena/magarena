@@ -1,5 +1,5 @@
 name=Barbed Foliage
-image=http://magiccards.info/scans/en/mr/105.jpg
+image=https://magiccards.info/scans/en/mr/105.jpg
 value=2.942
 rarity=U
 type=Enchantment

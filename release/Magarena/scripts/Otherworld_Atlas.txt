@@ -1,5 +1,5 @@
 name=Otherworld Atlas
-image=http://magiccards.info/scans/en/avr/219.jpg
+image=https://magiccards.info/scans/en/avr/219.jpg
 value=2.975
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Amugaba
-image=http://magiccards.info/scans/en/od/61.jpg
+image=https://magiccards.info/scans/en/od/61.jpg
 value=2.744
 rarity=R
 type=Creature

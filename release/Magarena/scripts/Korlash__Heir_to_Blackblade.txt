@@ -1,5 +1,5 @@
 name=Korlash, Heir to Blackblade
-image=http://magiccards.info/scans/en/fut/87.jpg
+image=https://magiccards.info/scans/en/fut/87.jpg
 value=4.209
 rarity=R
 type=Legendary,Creature

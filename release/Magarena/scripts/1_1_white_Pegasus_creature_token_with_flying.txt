@@ -1,6 +1,6 @@
 name=1/1 white Pegasus creature token with flying
 token=Pegasus
-image=http://magiccards.info/extras/token/commander-2014/pegasus.jpg
+image=https://magiccards.info/extras/token/commander-2014/pegasus.jpg
 value=2
 type=Creature
 subtype=Pegasus

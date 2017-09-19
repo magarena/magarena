@@ -1,5 +1,5 @@
 name=Abu Ja'far
-image=http://magiccards.info/scans/en/ch/57.jpg
+image=https://magiccards.info/scans/en/ch/57.jpg
 value=3.797
 rarity=U
 type=Creature

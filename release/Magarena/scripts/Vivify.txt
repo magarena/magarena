@@ -1,5 +1,5 @@
 name=Vivify
-image=http://magiccards.info/scans/en/od/281.jpg
+image=https://magiccards.info/scans/en/od/281.jpg
 value=2.275
 rarity=U
 type=Instant

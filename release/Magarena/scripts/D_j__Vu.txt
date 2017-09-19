@@ -1,5 +1,5 @@
 name=Déjà Vu
-image=http://magiccards.info/scans/en/po2/35.jpg
+image=https://magiccards.info/scans/en/po2/35.jpg
 value=3.034
 rarity=C
 type=Sorcery

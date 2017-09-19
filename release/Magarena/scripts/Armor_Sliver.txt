@@ -1,5 +1,5 @@
 name=Armor Sliver
-image=http://magiccards.info/scans/en/tp/216.jpg
+image=https://magiccards.info/scans/en/tp/216.jpg
 value=2.462
 rarity=U
 type=Creature

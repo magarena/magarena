@@ -1,5 +1,5 @@
 name=Kavu Climber
-image=http://magiccards.info/scans/en/10e/273.jpg
+image=https://magiccards.info/scans/en/10e/273.jpg
 value=3.118
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Controlled Instincts
-image=http://magiccards.info/scans/en/cfx/23.jpg
+image=https://magiccards.info/scans/en/cfx/23.jpg
 value=2.038
 rarity=U
 type=Enchantment

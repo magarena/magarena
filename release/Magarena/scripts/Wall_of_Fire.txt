@@ -1,5 +1,5 @@
 name=Wall of Fire
-image=http://magiccards.info/scans/en/m15/167.jpg
+image=https://magiccards.info/scans/en/m15/167.jpg
 value=1.900
 rarity=C
 type=Creature

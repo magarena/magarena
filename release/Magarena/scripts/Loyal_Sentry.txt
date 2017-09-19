@@ -1,5 +1,5 @@
 name=Loyal Sentry
-image=http://magiccards.info/scans/en/10e/27.jpg
+image=https://magiccards.info/scans/en/10e/27.jpg
 image_updated=2016-12-21
 value=4.214
 rarity=R

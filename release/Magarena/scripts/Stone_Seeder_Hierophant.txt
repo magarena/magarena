@@ -1,5 +1,5 @@
 name=Stone-Seeder Hierophant
-image=http://magiccards.info/scans/en/rav/184.jpg
+image=https://magiccards.info/scans/en/rav/184.jpg
 value=2.917
 rarity=C
 type=Creature

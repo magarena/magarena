@@ -1,5 +1,5 @@
 name=Nemesis Trap
-image=http://magiccards.info/scans/en/cmd/91.jpg
+image=https://magiccards.info/scans/en/cmd/91.jpg
 value=2.640
 rarity=U
 type=Instant

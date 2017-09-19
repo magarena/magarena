@@ -1,5 +1,5 @@
 name=Elite Archers
-image=http://magiccards.info/scans/en/8e/18.jpg
+image=https://magiccards.info/scans/en/8e/18.jpg
 value=2.068
 rarity=R
 type=Creature

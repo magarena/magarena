@@ -1,5 +1,5 @@
 name=Edgar Markov
-image=http://magiccards.info/scans/en/c17/36.jpg
+image=https://magiccards.info/scans/en/c17/36.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

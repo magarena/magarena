@@ -1,5 +1,5 @@
 name=Kithkin Zealot
-image=http://magiccards.info/scans/en/eve/9.jpg
+image=https://magiccards.info/scans/en/eve/9.jpg
 value=2.220
 rarity=C
 type=Creature

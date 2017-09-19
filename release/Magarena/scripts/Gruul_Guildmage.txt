@@ -1,5 +1,5 @@
 name=Gruul Guildmage
-image=http://magiccards.info/scans/en/gp/144.jpg
+image=https://magiccards.info/scans/en/gp/144.jpg
 value=2.966
 rarity=U
 type=Creature

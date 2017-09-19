@@ -1,5 +1,5 @@
 name=Briarpack Alpha
-image=http://magiccards.info/scans/en/dka/108.jpg
+image=https://magiccards.info/scans/en/dka/108.jpg
 value=3.588
 rarity=U
 type=Creature

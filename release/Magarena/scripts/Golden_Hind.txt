@@ -1,5 +1,5 @@
 name=Golden Hind
-image=http://magiccards.info/scans/en/jou/124.jpg
+image=https://magiccards.info/scans/en/jou/124.jpg
 value=3.389
 rarity=C
 type=Creature

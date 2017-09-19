@@ -1,5 +1,5 @@
 name=Briarberry Cohort
-image=http://magiccards.info/scans/en/shm/30.jpg
+image=https://magiccards.info/scans/en/shm/30.jpg
 value=2.608
 rarity=C
 type=Creature

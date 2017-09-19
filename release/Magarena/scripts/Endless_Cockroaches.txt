@@ -1,5 +1,5 @@
 name=Endless Cockroaches
-image=http://magiccards.info/scans/en/po/14.jpg
+image=https://magiccards.info/scans/en/po/14.jpg
 value=3.476
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Arc Trail
-image=http://magiccards.info/scans/en/ddn/23.jpg
+image=https://magiccards.info/scans/en/ddn/23.jpg
 value=2.500
 rarity=U
 type=Sorcery

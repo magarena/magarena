@@ -1,5 +1,5 @@
 name=Ether Well
-image=http://magiccards.info/scans/en/mr/65.jpg
+image=https://magiccards.info/scans/en/mr/65.jpg
 value=2.607
 rarity=U
 type=Instant

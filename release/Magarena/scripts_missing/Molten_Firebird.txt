@@ -1,5 +1,5 @@
 name=Molten Firebird
-image=http://magiccards.info/scans/en/pc/117.jpg
+image=https://magiccards.info/scans/en/pc/117.jpg
 value=2.288
 rarity=R
 type=Creature

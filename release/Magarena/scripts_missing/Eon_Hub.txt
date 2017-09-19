@@ -1,5 +1,5 @@
 name=Eon Hub
-image=http://magiccards.info/scans/en/5dn/120.jpg
+image=https://magiccards.info/scans/en/5dn/120.jpg
 value=4.387
 rarity=R
 type=Artifact

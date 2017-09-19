@@ -1,5 +1,5 @@
 name=Cinder Elemental
-image=http://magiccards.info/scans/en/gtc/87.jpg
+image=https://magiccards.info/scans/en/gtc/87.jpg
 value=3.430
 rarity=U
 type=Creature

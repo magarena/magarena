@@ -1,5 +1,5 @@
 name=Frontline Devastator
-image=http://magiccards.info/scans/en/hou/93.jpg
+image=https://magiccards.info/scans/en/hou/93.jpg
 value=2.500
 rarity=C
 type=Creature

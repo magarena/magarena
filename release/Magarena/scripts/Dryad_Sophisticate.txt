@@ -1,5 +1,5 @@
 name=Dryad Sophisticate
-image=http://magiccards.info/scans/en/gp/83.jpg
+image=https://magiccards.info/scans/en/gp/83.jpg
 value=4.082
 rarity=U
 type=Creature

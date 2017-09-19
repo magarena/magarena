@@ -1,5 +1,5 @@
 name=Knowledge Vault
-image=http://magiccards.info/scans/en/lg/225.jpg
+image=https://magiccards.info/scans/en/lg/225.jpg
 value=2.780
 rarity=R
 type=Artifact

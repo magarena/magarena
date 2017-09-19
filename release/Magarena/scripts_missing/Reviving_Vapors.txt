@@ -1,5 +1,5 @@
 name=Reviving Vapors
-image=http://magiccards.info/scans/en/in/265.jpg
+image=https://magiccards.info/scans/en/in/265.jpg
 value=3.500
 rarity=U
 type=Instant

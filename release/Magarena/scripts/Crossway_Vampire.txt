@@ -1,5 +1,5 @@
 name=Crossway Vampire
-image=http://magiccards.info/scans/en/isd/135.jpg
+image=https://magiccards.info/scans/en/isd/135.jpg
 value=3.322
 rarity=C
 type=Creature

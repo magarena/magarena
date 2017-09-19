@@ -1,5 +1,5 @@
 name=Caustic Hound
-image=http://magiccards.info/scans/en/mbs/40.jpg
+image=https://magiccards.info/scans/en/mbs/40.jpg
 value=1.951
 rarity=C
 type=Creature

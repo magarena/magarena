@@ -1,5 +1,5 @@
 name=Daru Healer
-image=http://magiccards.info/scans/en/on/19.jpg
+image=https://magiccards.info/scans/en/on/19.jpg
 value=1.562
 rarity=C
 type=Creature

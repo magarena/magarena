@@ -1,5 +1,5 @@
 name=Call to the Grave
-image=http://magiccards.info/scans/en/m12/85.jpg
+image=https://magiccards.info/scans/en/m12/85.jpg
 value=4.086
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Patron of the Moon
-image=http://magiccards.info/scans/en/bok/45.jpg
+image=https://magiccards.info/scans/en/bok/45.jpg
 value=3.628
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Courier's Capsule
-image=http://magiccards.info/scans/en/ala/37.jpg
+image=https://magiccards.info/scans/en/ala/37.jpg
 value=3.940
 rarity=C
 type=Artifact

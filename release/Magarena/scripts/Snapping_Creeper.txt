@@ -1,5 +1,5 @@
 name=Snapping Creeper
-image=http://magiccards.info/scans/en/wwk/112.jpg
+image=https://magiccards.info/scans/en/wwk/112.jpg
 value=2.794
 rarity=C
 type=Creature

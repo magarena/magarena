@@ -1,5 +1,5 @@
 name=Adarkar Wastes
-image=http://magiccards.info/scans/en/10e/347.jpg
+image=https://magiccards.info/scans/en/10e/347.jpg
 value=4.265
 rarity=R
 type=Land

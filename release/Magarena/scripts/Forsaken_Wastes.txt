@@ -1,5 +1,5 @@
 name=Forsaken Wastes
-image=http://magiccards.info/scans/en/mr/23.jpg
+image=https://magiccards.info/scans/en/mr/23.jpg
 value=4.098
 rarity=R
 type=World,Enchantment

@@ -1,5 +1,5 @@
 name=Yuan Shao, the Indecisive
-image=http://magiccards.info/scans/en/p3k/128.jpg
+image=https://magiccards.info/scans/en/p3k/128.jpg
 value=3.517
 rarity=R
 type=Legendary,Creature

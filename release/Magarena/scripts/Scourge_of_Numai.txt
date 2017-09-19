@@ -1,5 +1,5 @@
 name=Scourge of Numai
-image=http://magiccards.info/scans/en/bok/80.jpg
+image=https://magiccards.info/scans/en/bok/80.jpg
 value=2.038
 rarity=U
 type=Creature

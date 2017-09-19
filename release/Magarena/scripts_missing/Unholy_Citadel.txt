@@ -1,5 +1,5 @@
 name=Unholy Citadel
-image=http://magiccards.info/scans/en/lg/254.jpg
+image=https://magiccards.info/scans/en/lg/254.jpg
 value=1.633
 rarity=U
 type=Land

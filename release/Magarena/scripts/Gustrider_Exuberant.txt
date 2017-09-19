@@ -1,5 +1,5 @@
 name=Gustrider Exuberant
-image=http://magiccards.info/scans/en/ala/13.jpg
+image=https://magiccards.info/scans/en/ala/13.jpg
 value=2.021
 rarity=C
 type=Creature

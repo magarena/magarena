@@ -1,5 +1,5 @@
 name=Arlinn Kord
-image=http://magiccards.info/scans/en/soi/243a.jpg
+image=https://magiccards.info/scans/en/soi/243a.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

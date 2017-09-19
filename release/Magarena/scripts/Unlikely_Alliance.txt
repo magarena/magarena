@@ -1,5 +1,5 @@
 name=Unlikely Alliance
-image=http://magiccards.info/scans/en/ai/153.jpg
+image=https://magiccards.info/scans/en/ai/153.jpg
 value=2.028
 rarity=U
 type=Enchantment

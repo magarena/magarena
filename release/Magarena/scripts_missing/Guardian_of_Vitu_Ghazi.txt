@@ -1,5 +1,5 @@
 name=Guardian of Vitu-Ghazi
-image=http://magiccards.info/scans/en/rav/212.jpg
+image=https://magiccards.info/scans/en/rav/212.jpg
 value=2.978
 rarity=C
 type=Creature

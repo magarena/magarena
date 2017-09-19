@@ -1,5 +1,5 @@
 name=Spark Trooper
-image=http://magiccards.info/scans/en/gtc/199.jpg
+image=https://magiccards.info/scans/en/gtc/199.jpg
 value=3.780
 rarity=R
 type=Creature

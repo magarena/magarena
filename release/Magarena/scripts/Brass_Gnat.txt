@@ -1,5 +1,5 @@
 name=Brass Gnat
-image=http://magiccards.info/scans/en/ts/249.jpg
+image=https://magiccards.info/scans/en/ts/249.jpg
 value=1.683
 rarity=C
 type=Artifact,Creature

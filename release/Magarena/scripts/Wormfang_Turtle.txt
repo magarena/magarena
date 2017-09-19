@@ -1,5 +1,5 @@
 name=Wormfang Turtle
-image=http://magiccards.info/scans/en/ju/60.jpg
+image=https://magiccards.info/scans/en/ju/60.jpg
 value=3.339
 rarity=U
 type=Creature

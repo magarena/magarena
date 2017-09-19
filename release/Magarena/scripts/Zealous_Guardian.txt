@@ -1,5 +1,5 @@
 name=Zealous Guardian
-image=http://magiccards.info/scans/en/shm/157.jpg
+image=https://magiccards.info/scans/en/shm/157.jpg
 value=3.270
 rarity=C
 type=Creature

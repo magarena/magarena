@@ -1,5 +1,5 @@
 name=Strangleroot Geist
-image=http://magiccards.info/scans/en/dka/127.jpg
+image=https://magiccards.info/scans/en/dka/127.jpg
 value=4.012
 rarity=U
 type=Creature

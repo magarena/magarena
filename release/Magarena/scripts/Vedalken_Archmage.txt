@@ -1,5 +1,5 @@
 name=Vedalken Archmage
-image=http://magiccards.info/scans/en/mi/55.jpg
+image=https://magiccards.info/scans/en/mi/55.jpg
 value=4.255
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Necroskitter
-image=http://magiccards.info/scans/en/mm2/88.jpg
+image=https://magiccards.info/scans/en/mm2/88.jpg
 value=4.162
 rarity=R
 type=Creature

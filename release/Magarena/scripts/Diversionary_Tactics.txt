@@ -1,5 +1,5 @@
 name=Diversionary Tactics
-image=http://magiccards.info/scans/en/ap/7.jpg
+image=https://magiccards.info/scans/en/ap/7.jpg
 value=2.964
 rarity=U
 type=Enchantment

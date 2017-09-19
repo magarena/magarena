@@ -1,5 +1,5 @@
 name=View from Above
-image=http://magiccards.info/scans/en/cfx/38.jpg
+image=https://magiccards.info/scans/en/cfx/38.jpg
 value=2.511
 rarity=U
 type=Instant

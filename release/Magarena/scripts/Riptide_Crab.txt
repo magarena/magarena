@@ -1,5 +1,5 @@
 name=Riptide Crab
-image=http://magiccards.info/scans/en/in/266.jpg
+image=https://magiccards.info/scans/en/in/266.jpg
 value=3.878
 rarity=U
 type=Creature

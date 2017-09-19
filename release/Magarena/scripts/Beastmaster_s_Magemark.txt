@@ -1,5 +1,5 @@
 name=Beastmaster's Magemark
-image=http://magiccards.info/scans/en/gp/80.jpg
+image=https://magiccards.info/scans/en/gp/80.jpg
 value=2.833
 rarity=C
 type=Enchantment

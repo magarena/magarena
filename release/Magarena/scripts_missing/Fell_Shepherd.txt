@@ -1,5 +1,5 @@
 name=Fell Shepherd
-image=http://magiccards.info/scans/en/c13/78.jpg
+image=https://magiccards.info/scans/en/c13/78.jpg
 value=3.700
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Jötun Grunt
-image=http://magiccards.info/scans/en/cmd/16.jpg
+image=https://magiccards.info/scans/en/cmd/16.jpg
 value=3.956
 rarity=U
 type=Creature

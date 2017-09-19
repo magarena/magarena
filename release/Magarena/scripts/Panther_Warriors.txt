@@ -1,5 +1,5 @@
 name=Panther Warriors
-image=http://magiccards.info/scans/en/6e/243.jpg
+image=https://magiccards.info/scans/en/6e/243.jpg
 value=3.150
 rarity=C
 type=Creature

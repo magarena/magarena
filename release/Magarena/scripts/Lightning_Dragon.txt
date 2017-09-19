@@ -1,5 +1,5 @@
 name=Lightning Dragon
-image=http://magiccards.info/scans/en/us/202.jpg
+image=https://magiccards.info/scans/en/us/202.jpg
 value=4.088
 rarity=R
 type=Creature

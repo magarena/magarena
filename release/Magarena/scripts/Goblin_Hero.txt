@@ -1,5 +1,5 @@
 name=Goblin Hero
-image=http://magiccards.info/scans/en/6e/184.jpg
+image=https://magiccards.info/scans/en/6e/184.jpg
 value=1.625
 rarity=C
 type=Creature

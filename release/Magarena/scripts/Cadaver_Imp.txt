@@ -1,5 +1,5 @@
 name=Cadaver Imp
-image=http://magiccards.info/scans/en/pc2/31.jpg
+image=https://magiccards.info/scans/en/pc2/31.jpg
 value=3.056
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mistform Wakecaster
-image=http://magiccards.info/scans/en/le/48.jpg
+image=https://magiccards.info/scans/en/le/48.jpg
 value=1.820
 rarity=U
 type=Creature

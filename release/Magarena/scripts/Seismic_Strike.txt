@@ -1,5 +1,5 @@
 name=Seismic Strike
-image=http://magiccards.info/scans/en/m15/280.jpg
+image=https://magiccards.info/scans/en/m15/280.jpg
 value=2.400
 rarity=C
 type=Instant

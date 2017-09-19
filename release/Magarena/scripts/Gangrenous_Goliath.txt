@@ -1,5 +1,5 @@
 name=Gangrenous Goliath
-image=http://magiccards.info/scans/en/on/150.jpg
+image=https://magiccards.info/scans/en/on/150.jpg
 value=3.180
 rarity=R
 type=Creature

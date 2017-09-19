@@ -1,5 +1,5 @@
 name=Living Airship
-image=http://magiccards.info/scans/en/ap/28.jpg
+image=https://magiccards.info/scans/en/ap/28.jpg
 value=2.588
 rarity=C
 type=Creature

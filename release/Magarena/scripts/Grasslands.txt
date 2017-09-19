@@ -1,5 +1,5 @@
 name=Grasslands
-image=http://magiccards.info/scans/en/mr/296.jpg
+image=https://magiccards.info/scans/en/mr/296.jpg
 value=2.500
 rarity=U
 type=Land

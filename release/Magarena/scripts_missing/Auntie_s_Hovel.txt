@@ -1,5 +1,5 @@
 name=Auntie's Hovel
-image=http://magiccards.info/scans/en/lw/267.jpg
+image=https://magiccards.info/scans/en/lw/267.jpg
 value=3.913
 rarity=R
 type=Land

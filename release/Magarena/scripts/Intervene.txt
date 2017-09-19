@@ -1,5 +1,5 @@
 name=Intervene
-image=http://magiccards.info/scans/en/ul/33.jpg
+image=https://magiccards.info/scans/en/ul/33.jpg
 value=3.842
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Vizzerdrix
-image=http://magiccards.info/scans/en/9eb/7.jpg
+image=https://magiccards.info/scans/en/9eb/7.jpg
 image_updated=2015-05-22
 value=2.175
 rarity=R

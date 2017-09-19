@@ -1,5 +1,5 @@
 name=Halcyon Glaze
-image=http://magiccards.info/scans/en/rav/54.jpg
+image=https://magiccards.info/scans/en/rav/54.jpg
 value=3.488
 rarity=U
 type=Enchantment

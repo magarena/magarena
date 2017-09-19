@@ -1,5 +1,5 @@
 name=Pith Driller
-image=http://magiccards.info/scans/en/nph/69.jpg
+image=https://magiccards.info/scans/en/nph/69.jpg
 value=3.021
 rarity=C
 type=Artifact,Creature

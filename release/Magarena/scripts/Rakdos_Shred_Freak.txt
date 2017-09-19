@@ -1,5 +1,5 @@
 name=Rakdos Shred-Freak
-image=http://magiccards.info/scans/en/rtr/221.jpg
+image=https://magiccards.info/scans/en/rtr/221.jpg
 value=3.415
 rarity=C
 type=Creature

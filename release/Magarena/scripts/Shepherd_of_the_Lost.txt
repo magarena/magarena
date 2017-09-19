@@ -1,5 +1,5 @@
 name=Shepherd of the Lost
-image=http://magiccards.info/scans/en/zen/34.jpg
+image=https://magiccards.info/scans/en/zen/34.jpg
 value=3.861
 rarity=U
 type=Creature

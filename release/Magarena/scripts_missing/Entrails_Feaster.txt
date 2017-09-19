@@ -1,5 +1,5 @@
 name=Entrails Feaster
-image=http://magiccards.info/scans/en/on/143.jpg
+image=https://magiccards.info/scans/en/on/143.jpg
 value=3.789
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Mental Agony
-image=http://magiccards.info/scans/en/avr/114.jpg
+image=https://magiccards.info/scans/en/avr/114.jpg
 value=2.288
 rarity=C
 type=Sorcery

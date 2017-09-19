@@ -1,5 +1,5 @@
 name=Sentry Oak
-image=http://magiccards.info/scans/en/lw/38.jpg
+image=https://magiccards.info/scans/en/lw/38.jpg
 value=1.967
 rarity=U
 type=Creature

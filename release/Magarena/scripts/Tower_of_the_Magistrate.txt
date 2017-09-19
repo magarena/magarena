@@ -1,5 +1,5 @@
 name=Tower of the Magistrate
-image=http://magiccards.info/scans/en/mm/330.jpg
+image=https://magiccards.info/scans/en/mm/330.jpg
 value=3.976
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Blood Knight
-image=http://magiccards.info/scans/en/pc/115.jpg
+image=https://magiccards.info/scans/en/pc/115.jpg
 value=4.274
 rarity=U
 type=Creature

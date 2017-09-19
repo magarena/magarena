@@ -1,5 +1,5 @@
 name=Mox Emerald
-image=http://magiccards.info/scans/en/un/262.jpg
+image=https://magiccards.info/scans/en/un/262.jpg
 value=4.875
 rarity=R
 type=Artifact

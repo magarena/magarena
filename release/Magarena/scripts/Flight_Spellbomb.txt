@@ -1,5 +1,5 @@
 name=Flight Spellbomb
-image=http://magiccards.info/scans/en/som/155.jpg
+image=https://magiccards.info/scans/en/som/155.jpg
 value=2.296
 rarity=C
 type=Artifact

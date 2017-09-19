@@ -1,5 +1,5 @@
 name=Undead Leotau
-image=http://magiccards.info/scans/en/ala/90.jpg
+image=https://magiccards.info/scans/en/ala/90.jpg
 value=1.550
 rarity=C
 type=Creature

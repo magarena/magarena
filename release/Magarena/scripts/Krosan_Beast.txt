@@ -1,5 +1,5 @@
 name=Krosan Beast
-image=http://magiccards.info/scans/en/od/248.jpg
+image=https://magiccards.info/scans/en/od/248.jpg
 value=4.042
 rarity=R
 type=Creature

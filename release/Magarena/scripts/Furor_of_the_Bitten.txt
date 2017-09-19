@@ -1,5 +1,5 @@
 name=Furor of the Bitten
-image=http://magiccards.info/scans/en/isd/143.jpg
+image=https://magiccards.info/scans/en/isd/143.jpg
 value=3.205
 rarity=C
 type=Enchantment

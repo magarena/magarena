@@ -1,5 +1,5 @@
 name=Ghoulcaller's Chant
-image=http://magiccards.info/scans/en/isd/101.jpg
+image=https://magiccards.info/scans/en/isd/101.jpg
 value=3.814
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Archetype of Courage
-image=http://magiccards.info/scans/en/bng/4.jpg
+image=https://magiccards.info/scans/en/bng/4.jpg
 value=3.870
 rarity=U
 type=Enchantment,Creature

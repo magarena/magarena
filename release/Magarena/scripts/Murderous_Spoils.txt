@@ -1,5 +1,5 @@
 name=Murderous Spoils
-image=http://magiccards.info/scans/en/ds/48.jpg
+image=https://magiccards.info/scans/en/ds/48.jpg
 value=2.089
 rarity=U
 type=Instant

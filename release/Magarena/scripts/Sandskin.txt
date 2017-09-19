@@ -1,5 +1,5 @@
 name=Sandskin
-image=http://magiccards.info/scans/en/on/52.jpg
+image=https://magiccards.info/scans/en/on/52.jpg
 value=3.381
 rarity=C
 type=Enchantment

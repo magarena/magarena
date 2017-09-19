@@ -1,5 +1,5 @@
 name=Fate Transfer
-image=http://magiccards.info/scans/en/shm/161.jpg
+image=https://magiccards.info/scans/en/shm/161.jpg
 value=3.845
 rarity=C
 type=Instant

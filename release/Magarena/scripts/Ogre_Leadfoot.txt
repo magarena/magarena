@@ -1,5 +1,5 @@
 name=Ogre Leadfoot
-image=http://magiccards.info/scans/en/mi/102.jpg
+image=https://magiccards.info/scans/en/mi/102.jpg
 value=2.729
 rarity=C
 type=Creature

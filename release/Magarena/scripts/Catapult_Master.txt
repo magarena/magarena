@@ -1,5 +1,5 @@
 name=Catapult Master
-image=http://magiccards.info/scans/en/on/10.jpg
+image=https://magiccards.info/scans/en/on/10.jpg
 image_updated=2016-11-28
 value=4.202
 rarity=R

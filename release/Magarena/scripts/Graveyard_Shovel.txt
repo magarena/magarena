@@ -1,5 +1,5 @@
 name=Graveyard Shovel
-image=http://magiccards.info/scans/en/isd/225.jpg
+image=https://magiccards.info/scans/en/isd/225.jpg
 value=1.898
 rarity=U
 type=Artifact

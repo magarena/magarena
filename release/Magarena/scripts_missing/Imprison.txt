@@ -1,5 +1,5 @@
 name=Imprison
-image=http://magiccards.info/scans/en/lg/21.jpg
+image=https://magiccards.info/scans/en/lg/21.jpg
 value=2.513
 rarity=R
 type=Enchantment

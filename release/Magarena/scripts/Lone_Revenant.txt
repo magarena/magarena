@@ -1,5 +1,5 @@
 name=Lone Revenant
-image=http://magiccards.info/scans/en/avr/64.jpg
+image=https://magiccards.info/scans/en/avr/64.jpg
 image_updated=2016-02-29
 value=3.712
 rarity=R

@@ -1,5 +1,5 @@
 name=Pyrostatic Pillar
-image=http://magiccards.info/scans/en/sc/100.jpg
+image=https://magiccards.info/scans/en/sc/100.jpg
 value=3.744
 rarity=U
 type=Enchantment

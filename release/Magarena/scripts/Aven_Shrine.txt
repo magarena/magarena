@@ -1,5 +1,5 @@
 name=Aven Shrine
-image=http://magiccards.info/scans/en/od/9.jpg
+image=https://magiccards.info/scans/en/od/9.jpg
 value=1.696
 rarity=R
 type=Enchantment

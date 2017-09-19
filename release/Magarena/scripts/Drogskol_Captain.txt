@@ -1,5 +1,5 @@
 name=Drogskol Captain
-image=http://magiccards.info/scans/en/dka/136.jpg
+image=https://magiccards.info/scans/en/dka/136.jpg
 value=3.891
 rarity=U
 type=Creature

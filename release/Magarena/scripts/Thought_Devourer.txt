@@ -1,5 +1,5 @@
 name=Thought Devourer
-image=http://magiccards.info/scans/en/od/105.jpg
+image=https://magiccards.info/scans/en/od/105.jpg
 value=3.272
 rarity=R
 type=Creature

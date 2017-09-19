@@ -1,5 +1,5 @@
 name=Gray Merchant of Asphodel
-image=http://magiccards.info/scans/en/c14/146.jpg
+image=https://magiccards.info/scans/en/c14/146.jpg
 value=3.809
 rarity=C
 type=Creature

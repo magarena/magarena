@@ -1,5 +1,5 @@
 name=Chorus of Woe
-image=http://magiccards.info/scans/en/st/68.jpg
+image=https://magiccards.info/scans/en/st/68.jpg
 value=2.587
 rarity=C
 type=Sorcery

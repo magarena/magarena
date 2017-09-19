@@ -1,5 +1,5 @@
 name=Cloudgoat Ranger
-image=http://magiccards.info/scans/en/mma/10.jpg
+image=https://magiccards.info/scans/en/mma/10.jpg
 value=3.763
 rarity=U
 type=Creature

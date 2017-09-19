@@ -1,5 +1,5 @@
 name=Rite of Flame
-image=http://magiccards.info/scans/en/cs/96.jpg
+image=https://magiccards.info/scans/en/cs/96.jpg
 value=4.471
 rarity=C
 type=Sorcery

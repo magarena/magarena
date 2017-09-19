@@ -1,5 +1,5 @@
 name=Mindstorm Crown
-image=http://magiccards.info/scans/en/mi/207.jpg
+image=https://magiccards.info/scans/en/mi/207.jpg
 value=3.539
 rarity=U
 type=Artifact

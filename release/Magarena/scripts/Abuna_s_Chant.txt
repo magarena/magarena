@@ -1,5 +1,5 @@
 name=Abuna's Chant
-image=http://magiccards.info/scans/en/5dn/1.jpg
+image=https://magiccards.info/scans/en/5dn/1.jpg
 value=2.167
 rarity=C
 type=Instant

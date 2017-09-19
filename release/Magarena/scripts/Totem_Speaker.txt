@@ -1,5 +1,5 @@
 name=Totem Speaker
-image=http://magiccards.info/scans/en/le/141.jpg
+image=https://magiccards.info/scans/en/le/141.jpg
 value=2.068
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wing Shards
-image=http://magiccards.info/scans/en/c14/97.jpg
+image=https://magiccards.info/scans/en/c14/97.jpg
 value=4.341
 rarity=U
 type=Instant

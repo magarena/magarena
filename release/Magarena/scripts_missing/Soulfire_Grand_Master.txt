@@ -1,5 +1,5 @@
 name=Soulfire Grand Master
-image=http://magiccards.info/scans/en/frf/27.jpg
+image=https://magiccards.info/scans/en/frf/27.jpg
 value=2.500
 rarity=M
 type=Creature

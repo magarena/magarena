@@ -1,5 +1,5 @@
 name=Magnigoth Treefolk
-image=http://magiccards.info/scans/en/ps/82.jpg
+image=https://magiccards.info/scans/en/ps/82.jpg
 value=3.657
 rarity=R
 type=Creature

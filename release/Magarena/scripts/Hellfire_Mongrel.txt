@@ -1,5 +1,5 @@
 name=Hellfire Mongrel
-image=http://magiccards.info/scans/en/zen/130.jpg
+image=https://magiccards.info/scans/en/zen/130.jpg
 value=3.045
 rarity=U
 type=Creature

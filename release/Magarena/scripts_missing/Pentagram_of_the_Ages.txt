@@ -1,5 +1,5 @@
 name=Pentagram of the Ages
-image=http://magiccards.info/scans/en/6e/305.jpg
+image=https://magiccards.info/scans/en/6e/305.jpg
 value=3.205
 rarity=R
 type=Artifact

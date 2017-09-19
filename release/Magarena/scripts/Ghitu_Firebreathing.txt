@@ -1,5 +1,5 @@
 name=Ghitu Firebreathing
-image=http://magiccards.info/scans/en/ts/158.jpg
+image=https://magiccards.info/scans/en/ts/158.jpg
 value=2.988
 rarity=C
 type=Enchantment

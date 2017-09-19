@@ -1,5 +1,5 @@
 name=Krallenhorde Wantons
-image=http://magiccards.info/scans/en/isd/185b.jpg
+image=https://magiccards.info/scans/en/isd/185b.jpg
 value=2.585
 rarity=C
 type=Creature

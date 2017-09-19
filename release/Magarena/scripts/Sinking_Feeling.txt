@@ -1,5 +1,5 @@
 name=Sinking Feeling
-image=http://magiccards.info/scans/en/shm/51.jpg
+image=https://magiccards.info/scans/en/shm/51.jpg
 value=2.578
 rarity=C
 type=Enchantment

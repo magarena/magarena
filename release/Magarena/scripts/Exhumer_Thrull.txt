@@ -1,5 +1,5 @@
 name=Exhumer Thrull
-image=http://magiccards.info/scans/en/gp/50.jpg
+image=https://magiccards.info/scans/en/gp/50.jpg
 value=2.032
 rarity=U
 type=Creature

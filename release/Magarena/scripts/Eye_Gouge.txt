@@ -1,5 +1,5 @@
 name=Eye Gouge
-image=http://magiccards.info/scans/en/bng/67.jpg
+image=https://magiccards.info/scans/en/bng/67.jpg
 value=3.059
 rarity=C
 type=Instant

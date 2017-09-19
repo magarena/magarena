@@ -1,5 +1,5 @@
 name=Jedit's Dragoons
-image=http://magiccards.info/scans/en/ts/25.jpg
+image=https://magiccards.info/scans/en/ts/25.jpg
 image_updated=2016-12-20
 value=1.543
 rarity=C

@@ -1,5 +1,5 @@
 name=Havoc Demon
-image=http://magiccards.info/scans/en/ema/90.jpg
+image=https://magiccards.info/scans/en/ema/90.jpg
 value=3.895
 rarity=U
 type=Creature

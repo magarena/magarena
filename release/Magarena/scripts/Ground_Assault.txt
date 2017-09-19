@@ -1,5 +1,5 @@
 name=Ground Assault
-image=http://magiccards.info/scans/en/mm3/169.jpg
+image=https://magiccards.info/scans/en/mm3/169.jpg
 image_updated=2017-08-08
 value=3.200
 removal=3

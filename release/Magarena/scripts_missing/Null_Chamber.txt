@@ -1,5 +1,5 @@
 name=Null Chamber
-image=http://magiccards.info/scans/en/mr/235.jpg
+image=https://magiccards.info/scans/en/mr/235.jpg
 value=3.293
 rarity=R
 type=World,Enchantment

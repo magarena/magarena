@@ -1,5 +1,5 @@
 name=Mortiphobia
-image=http://magiccards.info/scans/en/tr/72.jpg
+image=https://magiccards.info/scans/en/tr/72.jpg
 value=1.790
 rarity=U
 type=Enchantment

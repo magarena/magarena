@@ -1,5 +1,5 @@
 name=Felhide Petrifier
-image=http://magiccards.info/scans/en/jou/70.jpg
+image=https://magiccards.info/scans/en/jou/70.jpg
 value=3.861
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rousing of Souls
-image=http://magiccards.info/scans/en/cns/19.jpg
+image=https://magiccards.info/scans/en/cns/19.jpg
 value=3.150
 rarity=C
 type=Sorcery

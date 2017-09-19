@@ -1,5 +1,5 @@
 name=Disentomb
-image=http://magiccards.info/scans/en/m13/89.jpg
+image=https://magiccards.info/scans/en/m13/89.jpg
 value=2.819
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mass Appeal
-image=http://magiccards.info/scans/en/avr/66.jpg
+image=https://magiccards.info/scans/en/avr/66.jpg
 value=3.489
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Trained Caracal
-image=http://magiccards.info/scans/en/rtr/27.jpg
+image=https://magiccards.info/scans/en/rtr/27.jpg
 value=2.711
 rarity=C
 type=Creature

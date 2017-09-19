@@ -1,5 +1,5 @@
 name=Roughshod Mentor
-image=http://magiccards.info/scans/en/shm/128.jpg
+image=https://magiccards.info/scans/en/shm/128.jpg
 image_updated=2017-01-06
 value=3.173
 rarity=U

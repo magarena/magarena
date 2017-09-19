@@ -1,5 +1,5 @@
 name=Drake Hatchling
-image=http://magiccards.info/scans/en/mm/76.jpg
+image=https://magiccards.info/scans/en/mm/76.jpg
 value=2.731
 rarity=C
 type=Creature

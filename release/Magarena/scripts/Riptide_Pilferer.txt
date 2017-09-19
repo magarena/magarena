@@ -1,5 +1,5 @@
 name=Riptide Pilferer
-image=http://magiccards.info/scans/en/pc/60.jpg
+image=https://magiccards.info/scans/en/pc/60.jpg
 value=3.434
 rarity=U
 type=Creature

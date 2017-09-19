@@ -1,5 +1,5 @@
 name=Noxious Vapors
-image=http://magiccards.info/scans/en/ps/49.jpg
+image=https://magiccards.info/scans/en/ps/49.jpg
 value=4.094
 rarity=U
 type=Sorcery

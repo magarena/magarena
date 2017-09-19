@@ -1,5 +1,5 @@
 name=Waiting in the Weeds
-image=http://magiccards.info/scans/en/6e/266.jpg
+image=https://magiccards.info/scans/en/6e/266.jpg
 value=4.100
 rarity=R
 type=Sorcery

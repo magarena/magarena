@@ -1,5 +1,5 @@
 name=Skillful Lunge
-image=http://magiccards.info/scans/en/dka/22.jpg
+image=https://magiccards.info/scans/en/dka/22.jpg
 value=2.467
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Halam Djinn
-image=http://magiccards.info/scans/en/in/146.jpg
+image=https://magiccards.info/scans/en/in/146.jpg
 value=2.889
 rarity=U
 type=Creature

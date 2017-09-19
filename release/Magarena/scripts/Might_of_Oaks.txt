@@ -1,5 +1,5 @@
 name=Might of Oaks
-image=http://magiccards.info/scans/en/m10/192.jpg
+image=https://magiccards.info/scans/en/m10/192.jpg
 value=3.958
 rarity=R
 type=Instant

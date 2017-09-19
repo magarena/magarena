@@ -1,5 +1,5 @@
 name=Venerable Lammasu
-image=http://magiccards.info/scans/en/ktk/28.jpg
+image=https://magiccards.info/scans/en/ktk/28.jpg
 value=3.000
 rarity=U
 type=Creature

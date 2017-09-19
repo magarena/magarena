@@ -1,5 +1,5 @@
 name=Brink of Disaster
-image=http://magiccards.info/scans/en/m12/84.jpg
+image=https://magiccards.info/scans/en/m12/84.jpg
 value=1.880
 removal=4
 rarity=C

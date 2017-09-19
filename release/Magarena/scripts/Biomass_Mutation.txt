@@ -1,5 +1,5 @@
 name=Biomass Mutation
-image=http://magiccards.info/scans/en/gtc/213.jpg
+image=https://magiccards.info/scans/en/gtc/213.jpg
 value=3.487
 rarity=R
 type=Instant

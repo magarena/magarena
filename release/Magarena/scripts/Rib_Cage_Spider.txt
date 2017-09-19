@@ -1,5 +1,5 @@
 name=Rib Cage Spider
-image=http://magiccards.info/scans/en/pr/121.jpg
+image=https://magiccards.info/scans/en/pr/121.jpg
 value=3.037
 rarity=C
 type=Creature

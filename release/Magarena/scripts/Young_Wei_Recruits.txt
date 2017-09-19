@@ -1,5 +1,5 @@
 name=Young Wei Recruits
-image=http://magiccards.info/scans/en/p3k/94.jpg
+image=https://magiccards.info/scans/en/p3k/94.jpg
 value=2.326
 rarity=C
 type=Creature

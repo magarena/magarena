@@ -1,5 +1,5 @@
 name=Magus of the Arena
-image=http://magiccards.info/scans/en/pc/104.jpg
+image=https://magiccards.info/scans/en/pc/104.jpg
 value=3.600
 rarity=R
 type=Creature

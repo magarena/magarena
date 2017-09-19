@@ -1,5 +1,5 @@
 name=Jaws of Stone
-image=http://magiccards.info/scans/en/shm/97.jpg
+image=https://magiccards.info/scans/en/shm/97.jpg
 image_updated=2016-12-20
 value=2.804
 rarity=U

@@ -1,5 +1,5 @@
 name=Flametongue Kavu
-image=http://magiccards.info/scans/en/c14/176.jpg
+image=https://magiccards.info/scans/en/c14/176.jpg
 value=4.500
 removal=2
 rarity=U

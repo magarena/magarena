@@ -1,5 +1,5 @@
 name=Rogue Kavu
-image=http://magiccards.info/scans/en/9e/213.jpg
+image=https://magiccards.info/scans/en/9e/213.jpg
 value=2.536
 rarity=C
 type=Creature

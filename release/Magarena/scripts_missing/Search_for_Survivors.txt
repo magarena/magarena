@@ -1,5 +1,5 @@
 name=Search for Survivors
-image=http://magiccards.info/scans/en/pr/102.jpg
+image=https://magiccards.info/scans/en/pr/102.jpg
 value=3.167
 rarity=R
 type=Sorcery

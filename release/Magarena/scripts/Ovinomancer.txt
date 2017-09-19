@@ -1,5 +1,5 @@
 name=Ovinomancer
-image=http://magiccards.info/scans/en/tsts/27.jpg
+image=https://magiccards.info/scans/en/tsts/27.jpg
 value=3.067
 rarity=U
 type=Creature

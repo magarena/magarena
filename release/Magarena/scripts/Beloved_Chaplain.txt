@@ -1,5 +1,5 @@
 name=Beloved Chaplain
-image=http://magiccards.info/scans/en/od/11.jpg
+image=https://magiccards.info/scans/en/od/11.jpg
 value=4.073
 rarity=U
 type=Creature

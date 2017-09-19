@@ -1,5 +1,5 @@
 name=Slithering Shade
-image=http://magiccards.info/scans/en/di/55.jpg
+image=https://magiccards.info/scans/en/di/55.jpg
 value=2.989
 rarity=U
 type=Creature

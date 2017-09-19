@@ -1,5 +1,5 @@
 name=Abundance
-image=http://magiccards.info/scans/en/10e/249.jpg
+image=https://magiccards.info/scans/en/10e/249.jpg
 value=4.263
 rarity=R
 type=Enchantment

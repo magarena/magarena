@@ -1,5 +1,5 @@
 name=Echoing Truth
-image=http://magiccards.info/scans/en/mma/40.jpg
+image=https://magiccards.info/scans/en/mma/40.jpg
 image_updated=2016-02-29
 value=4.524
 removal=3

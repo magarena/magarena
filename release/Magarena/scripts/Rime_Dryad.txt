@@ -1,5 +1,5 @@
 name=Rime Dryad
-image=http://magiccards.info/scans/en/ia/148.jpg
+image=https://magiccards.info/scans/en/ia/148.jpg
 value=3.691
 rarity=C
 type=Creature

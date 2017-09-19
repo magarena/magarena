@@ -1,5 +1,5 @@
 name=Devour in Shadow
-image=http://magiccards.info/scans/en/5dn/46.jpg
+image=https://magiccards.info/scans/en/5dn/46.jpg
 value=3.674
 rarity=U
 type=Instant

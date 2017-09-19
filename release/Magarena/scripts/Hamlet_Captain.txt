@@ -1,5 +1,5 @@
 name=Hamlet Captain
-image=http://magiccards.info/scans/en/emn/161.jpg
+image=https://magiccards.info/scans/en/emn/161.jpg
 image_updated=2016-09-09
 value=3.816
 rarity=U

@@ -1,5 +1,5 @@
 name=Zanam Djinn
-image=http://magiccards.info/scans/en/in/90.jpg
+image=https://magiccards.info/scans/en/in/90.jpg
 value=2.359
 rarity=U
 type=Creature

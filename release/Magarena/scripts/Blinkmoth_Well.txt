@@ -1,5 +1,5 @@
 name=Blinkmoth Well
-image=http://magiccards.info/scans/en/mi/279.jpg
+image=https://magiccards.info/scans/en/mi/279.jpg
 value=3.625
 rarity=U
 type=Land

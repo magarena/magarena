@@ -1,5 +1,5 @@
 name=Spectral Flight
-image=http://magiccards.info/scans/en/isd/79.jpg
+image=https://magiccards.info/scans/en/isd/79.jpg
 value=3.700
 rarity=C
 type=Enchantment

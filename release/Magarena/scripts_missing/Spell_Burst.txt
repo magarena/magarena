@@ -1,5 +1,5 @@
 name=Spell Burst
-image=http://magiccards.info/scans/en/ts/79.jpg
+image=https://magiccards.info/scans/en/ts/79.jpg
 value=3.522
 rarity=U
 type=Instant

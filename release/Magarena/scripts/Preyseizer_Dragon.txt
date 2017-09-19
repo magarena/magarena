@@ -1,5 +1,5 @@
 name=Preyseizer Dragon
-image=http://magiccards.info/scans/en/pc2/50.jpg
+image=https://magiccards.info/scans/en/pc2/50.jpg
 value=4.016
 rarity=R
 type=Creature

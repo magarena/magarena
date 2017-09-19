@@ -1,5 +1,5 @@
 name=Death Pulse
-image=http://magiccards.info/scans/en/on/137.jpg
+image=https://magiccards.info/scans/en/on/137.jpg
 value=3.704
 rarity=U
 type=Instant

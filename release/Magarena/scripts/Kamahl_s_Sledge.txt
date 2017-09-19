@@ -1,5 +1,5 @@
 name=Kamahl's Sledge
-image=http://magiccards.info/scans/en/tr/102.jpg
+image=https://magiccards.info/scans/en/tr/102.jpg
 value=0.867
 rarity=C
 type=Sorcery

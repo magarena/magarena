@@ -1,5 +1,5 @@
 name=Shocker
-image=http://magiccards.info/scans/en/tp/204.jpg
+image=https://magiccards.info/scans/en/tp/204.jpg
 value=3.895
 rarity=R
 type=Creature

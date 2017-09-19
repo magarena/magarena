@@ -1,5 +1,5 @@
 name=Vitalizing Cascade
-image=http://magiccards.info/scans/en/mr/346.jpg
+image=https://magiccards.info/scans/en/mr/346.jpg
 value=3.395
 rarity=U
 type=Instant

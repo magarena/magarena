@@ -1,5 +1,5 @@
 name=Library of Alexandria
-image=http://magiccards.info/scans/en/an/90.jpg
+image=https://magiccards.info/scans/en/an/90.jpg
 value=4.500
 rarity=U
 type=Land

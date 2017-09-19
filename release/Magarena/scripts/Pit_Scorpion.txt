@@ -1,5 +1,5 @@
 name=Pit Scorpion
-image=http://magiccards.info/scans/en/5e/49.jpg
+image=https://magiccards.info/scans/en/5e/49.jpg
 value=2.780
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Salvage Scout
-image=http://magiccards.info/scans/en/som/19.jpg
+image=https://magiccards.info/scans/en/som/19.jpg
 value=3.010
 rarity=C
 type=Creature

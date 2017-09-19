@@ -1,5 +1,5 @@
 name=Hallowed Fountain
-image=http://magiccards.info/scans/en/rtr/241.jpg
+image=https://magiccards.info/scans/en/rtr/241.jpg
 value=4.278
 rarity=R
 type=Land

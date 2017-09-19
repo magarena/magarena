@@ -1,5 +1,5 @@
 name=Arcbound Hybrid
-image=http://magiccards.info/scans/en/ds/97.jpg
+image=https://magiccards.info/scans/en/ds/97.jpg
 value=2.597
 rarity=C
 type=Artifact,Creature

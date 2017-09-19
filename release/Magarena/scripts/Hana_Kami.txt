@@ -1,5 +1,5 @@
 name=Hana Kami
-image=http://magiccards.info/scans/en/mma/147.jpg
+image=https://magiccards.info/scans/en/mma/147.jpg
 value=3.176
 rarity=C
 type=Creature

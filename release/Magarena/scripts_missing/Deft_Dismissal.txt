@@ -1,5 +1,5 @@
 name=Deft Dismissal
-image=http://magiccards.info/scans/en/aer/17.jpg
+image=https://magiccards.info/scans/en/aer/17.jpg
 value=2.500
 rarity=U
 type=Instant

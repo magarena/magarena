@@ -1,5 +1,5 @@
 name=Beacon of Creation
-image=http://magiccards.info/scans/en/5dn/82.jpg
+image=https://magiccards.info/scans/en/5dn/82.jpg
 value=4.446
 rarity=R
 type=Sorcery

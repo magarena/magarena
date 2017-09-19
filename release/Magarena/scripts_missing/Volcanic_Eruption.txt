@@ -1,5 +1,5 @@
 name=Volcanic Eruption
-image=http://magiccards.info/scans/en/4e/112.jpg
+image=https://magiccards.info/scans/en/4e/112.jpg
 value=3.290
 rarity=R
 type=Sorcery

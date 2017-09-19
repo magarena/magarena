@@ -1,5 +1,5 @@
 name=Marble Chalice
-image=http://magiccards.info/scans/en/ala/18.jpg
+image=https://magiccards.info/scans/en/ala/18.jpg
 value=2.050
 rarity=C
 type=Artifact

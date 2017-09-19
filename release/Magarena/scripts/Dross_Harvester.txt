@@ -1,5 +1,5 @@
 name=Dross Harvester
-image=http://magiccards.info/scans/en/mi/63.jpg
+image=https://magiccards.info/scans/en/mi/63.jpg
 value=3.769
 rarity=R
 type=Creature

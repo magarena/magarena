@@ -1,5 +1,5 @@
 name=Exoskeletal Armor
-image=http://magiccards.info/scans/en/ju/114.jpg
+image=https://magiccards.info/scans/en/ju/114.jpg
 value=3.806
 rarity=U
 type=Enchantment

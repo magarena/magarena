@@ -1,5 +1,5 @@
 name=Sunglasses of Urza
-image=http://magiccards.info/scans/en/4e/365.jpg
+image=https://magiccards.info/scans/en/4e/365.jpg
 value=3.913
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Fighting Chance
-image=http://magiccards.info/scans/en/ex/82.jpg
+image=https://magiccards.info/scans/en/ex/82.jpg
 value=2.809
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Traitorous Blood
-image=http://magiccards.info/scans/en/isd/166.jpg
+image=https://magiccards.info/scans/en/isd/166.jpg
 value=3.829
 removal=5
 rarity=C

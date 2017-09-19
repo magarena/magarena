@@ -1,5 +1,5 @@
 name=Detainment Spell
-image=http://magiccards.info/scans/en/ts/12.jpg
+image=https://magiccards.info/scans/en/ts/12.jpg
 value=2.708
 rarity=C
 type=Enchantment

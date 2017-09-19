@@ -1,5 +1,5 @@
 name=Vampiric Touch
-image=http://magiccards.info/scans/en/po/38.jpg
+image=https://magiccards.info/scans/en/po/38.jpg
 value=2.400
 rarity=C
 type=Sorcery

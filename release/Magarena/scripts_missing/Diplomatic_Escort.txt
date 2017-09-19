@@ -1,5 +1,5 @@
 name=Diplomatic Escort
-image=http://magiccards.info/scans/en/mm/74.jpg
+image=https://magiccards.info/scans/en/mm/74.jpg
 value=4.156
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rhystic Scrying
-image=http://magiccards.info/scans/en/pr/44.jpg
+image=https://magiccards.info/scans/en/pr/44.jpg
 value=2.134
 rarity=U
 type=Sorcery

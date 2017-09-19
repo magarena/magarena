@@ -1,5 +1,5 @@
 name=Spellstutter Sprite
-image=http://magiccards.info/scans/en/mma/65.jpg
+image=https://magiccards.info/scans/en/mma/65.jpg
 value=4.527
 rarity=C
 type=Creature

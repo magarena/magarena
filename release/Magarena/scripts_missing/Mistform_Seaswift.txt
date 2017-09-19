@@ -1,5 +1,5 @@
 name=Mistform Seaswift
-image=http://magiccards.info/scans/en/le/45.jpg
+image=https://magiccards.info/scans/en/le/45.jpg
 value=2.540
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Selfless Exorcist
-image=http://magiccards.info/scans/en/ju/21.jpg
+image=https://magiccards.info/scans/en/ju/21.jpg
 value=1.378
 rarity=R
 type=Creature

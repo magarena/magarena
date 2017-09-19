@@ -1,5 +1,5 @@
 name=Rune of Protection: Lands
-image=http://magiccards.info/scans/en/us/39.jpg
+image=https://magiccards.info/scans/en/us/39.jpg
 value=2.412
 rarity=R
 type=Enchantment

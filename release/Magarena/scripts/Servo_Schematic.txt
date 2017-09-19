@@ -1,5 +1,5 @@
 name=Servo Schematic
-image=http://magiccards.info/scans/en/aer/176.jpg
+image=https://magiccards.info/scans/en/aer/176.jpg
 value=2.500
 rarity=U
 type=Artifact

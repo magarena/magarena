@@ -1,5 +1,5 @@
 name=Spined Wurm
-image=http://magiccards.info/scans/en/m11/197.jpg
+image=https://magiccards.info/scans/en/m11/197.jpg
 value=2.720
 rarity=C
 type=Creature

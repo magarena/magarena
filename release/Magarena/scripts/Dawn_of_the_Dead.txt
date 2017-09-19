@@ -1,5 +1,5 @@
 name=Dawn of the Dead
-image=http://magiccards.info/scans/en/tr/59.jpg
+image=https://magiccards.info/scans/en/tr/59.jpg
 value=4.000
 rarity=R
 type=Enchantment

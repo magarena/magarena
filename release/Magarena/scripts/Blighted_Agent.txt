@@ -1,5 +1,5 @@
 name=Blighted Agent
-image=http://magiccards.info/scans/en/nph/29.jpg
+image=https://magiccards.info/scans/en/nph/29.jpg
 value=3.785
 rarity=C
 type=Creature

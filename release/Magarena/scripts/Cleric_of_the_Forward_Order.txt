@@ -1,5 +1,5 @@
 name=Cleric of the Forward Order
-image=http://magiccards.info/scans/en/ori/10.jpg
+image=https://magiccards.info/scans/en/ori/10.jpg
 image_updated=2015-11-05
 value=2.500
 rarity=C

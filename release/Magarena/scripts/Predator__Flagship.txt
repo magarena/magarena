@@ -1,5 +1,5 @@
 name=Predator, Flagship
-image=http://magiccards.info/scans/en/c14/263.jpg
+image=https://magiccards.info/scans/en/c14/263.jpg
 value=4.000
 rarity=R
 type=Legendary,Artifact

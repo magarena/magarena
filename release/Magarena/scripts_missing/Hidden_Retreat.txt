@@ -1,5 +1,5 @@
 name=Hidden Retreat
-image=http://magiccards.info/scans/en/sh/106.jpg
+image=https://magiccards.info/scans/en/sh/106.jpg
 value=3.130
 rarity=R
 type=Enchantment

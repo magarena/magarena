@@ -1,5 +1,5 @@
 name=Ransack
-image=http://magiccards.info/scans/en/st/47.jpg
+image=https://magiccards.info/scans/en/st/47.jpg
 value=3.452
 rarity=R
 type=Sorcery

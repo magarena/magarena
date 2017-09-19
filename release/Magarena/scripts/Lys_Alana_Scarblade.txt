@@ -1,5 +1,5 @@
 name=Lys Alana Scarblade
-image=http://magiccards.info/scans/en/ema/95.jpg
+image=https://magiccards.info/scans/en/ema/95.jpg
 value=3.131
 rarity=U
 type=Creature

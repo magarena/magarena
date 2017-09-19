@@ -1,5 +1,5 @@
 name=Hired Muscle
-image=http://magiccards.info/scans/en/bok/69a.jpg
+image=https://magiccards.info/scans/en/bok/69a.jpg
 value=2.600
 rarity=U
 type=Creature

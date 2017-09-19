@@ -1,5 +1,5 @@
 name=Bogardan Rager
-image=http://magiccards.info/scans/en/ts/148.jpg
+image=https://magiccards.info/scans/en/ts/148.jpg
 image_updated=2016-12-13
 value=2.327
 rarity=C

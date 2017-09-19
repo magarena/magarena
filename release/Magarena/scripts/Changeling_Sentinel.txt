@@ -1,5 +1,5 @@
 name=Changeling Sentinel
-image=http://magiccards.info/scans/en/mt/6.jpg
+image=https://magiccards.info/scans/en/mt/6.jpg
 value=2.324
 rarity=C
 type=Creature

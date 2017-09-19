@@ -1,5 +1,5 @@
 name=Vengeance
-image=http://magiccards.info/scans/en/9eb/2.jpg
+image=https://magiccards.info/scans/en/9eb/2.jpg
 image_updated=2015-05-22
 value=2.662
 removal=3

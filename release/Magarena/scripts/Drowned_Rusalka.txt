@@ -1,5 +1,5 @@
 name=Drowned Rusalka
-image=http://magiccards.info/scans/en/gp/24.jpg
+image=https://magiccards.info/scans/en/gp/24.jpg
 value=3.205
 rarity=U
 type=Creature

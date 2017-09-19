@@ -1,5 +1,5 @@
 name=Lionheart Maverick
-image=http://magiccards.info/scans/en/gp/11.jpg
+image=https://magiccards.info/scans/en/gp/11.jpg
 value=3.204
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dark Withering
-image=http://magiccards.info/scans/en/ts/101.jpg
+image=https://magiccards.info/scans/en/ts/101.jpg
 value=3.185
 rarity=C
 type=Instant

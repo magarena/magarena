@@ -1,5 +1,5 @@
 name=Giant Shark
-image=http://magiccards.info/scans/en/dk/28.jpg
+image=https://magiccards.info/scans/en/dk/28.jpg
 value=2.208
 rarity=C
 type=Creature

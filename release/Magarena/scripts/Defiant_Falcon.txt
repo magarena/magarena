@@ -1,5 +1,5 @@
 name=Defiant Falcon
-image=http://magiccards.info/scans/en/ne/6.jpg
+image=https://magiccards.info/scans/en/ne/6.jpg
 value=4.152
 rarity=C
 type=Creature

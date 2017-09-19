@@ -1,5 +1,5 @@
 name=Trokin High Guard
-image=http://magiccards.info/scans/en/po2/146.jpg
+image=https://magiccards.info/scans/en/po2/146.jpg
 value=3.086
 rarity=C
 type=Creature

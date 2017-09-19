@@ -1,6 +1,6 @@
 name=1/1 colorless Insect artifact creature token with flying and haste named Hornet
 token=Hornet
-image=http://magiccards.info/extras/token/duel-decks-phyrexia-vs-the-coalition/hornet.jpg
+image=https://magiccards.info/extras/token/duel-decks-phyrexia-vs-the-coalition/hornet.jpg
 value=1
 pt=1/1
 color=

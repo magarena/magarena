@@ -1,5 +1,5 @@
 name=Will-o'-the-Wisp
-image=http://magiccards.info/scans/en/9e/169.jpg
+image=https://magiccards.info/scans/en/9e/169.jpg
 value=4.549
 rarity=R
 type=Creature

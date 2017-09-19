@@ -1,5 +1,5 @@
 name=Woodland Sleuth
-image=http://magiccards.info/scans/en/isd/210.jpg
+image=https://magiccards.info/scans/en/isd/210.jpg
 value=2.531
 rarity=C
 type=Creature

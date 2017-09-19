@@ -1,5 +1,5 @@
 name=Silver Myr
-image=http://magiccards.info/scans/en/som/202.jpg
+image=https://magiccards.info/scans/en/som/202.jpg
 value=3.473
 rarity=C
 type=Artifact,Creature

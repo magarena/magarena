@@ -1,5 +1,5 @@
 name=Wooden Sphere
-image=http://magiccards.info/scans/en/8e/321.jpg
+image=https://magiccards.info/scans/en/8e/321.jpg
 value=1.255
 rarity=U
 type=Artifact

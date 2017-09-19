@@ -1,5 +1,5 @@
 name=Tapestry of the Ages
-image=http://magiccards.info/scans/en/dtk/246.jpg
+image=https://magiccards.info/scans/en/dtk/246.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Nin, the Pain Artist
-image=http://magiccards.info/scans/en/cmd/213.jpg
+image=https://magiccards.info/scans/en/cmd/213.jpg
 value=3.944
 rarity=R
 type=Legendary,Creature

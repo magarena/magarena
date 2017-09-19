@@ -1,5 +1,5 @@
 name=Ink Dissolver
-image=http://magiccards.info/scans/en/mt/36.jpg
+image=https://magiccards.info/scans/en/mt/36.jpg
 value=2.934
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crusher Zendikon
-image=http://magiccards.info/scans/en/wwk/78.jpg
+image=https://magiccards.info/scans/en/wwk/78.jpg
 value=3.008
 rarity=C
 type=Enchantment

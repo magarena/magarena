@@ -1,5 +1,5 @@
 name=Sekki, Seasons' Guide
-image=http://magiccards.info/scans/en/sok/148.jpg
+image=https://magiccards.info/scans/en/sok/148.jpg
 value=3.896
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Harvester of Souls
-image=http://magiccards.info/scans/en/cn2/138.jpg
+image=https://magiccards.info/scans/en/cn2/138.jpg
 image_updated=2017-08-29
 value=3.884
 rarity=R

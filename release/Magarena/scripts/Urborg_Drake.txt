@@ -1,5 +1,5 @@
 name=Urborg Drake
-image=http://magiccards.info/scans/en/in/283.jpg
+image=https://magiccards.info/scans/en/in/283.jpg
 value=3.484
 rarity=U
 type=Creature

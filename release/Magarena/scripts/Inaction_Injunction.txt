@@ -1,5 +1,5 @@
 name=Inaction Injunction
-image=http://magiccards.info/scans/en/rtr/41.jpg
+image=https://magiccards.info/scans/en/rtr/41.jpg
 value=3.329
 removal=1
 rarity=C

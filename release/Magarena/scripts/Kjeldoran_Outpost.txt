@@ -1,5 +1,5 @@
 name=Kjeldoran Outpost
-image=http://magiccards.info/scans/en/ai/184.jpg
+image=https://magiccards.info/scans/en/ai/184.jpg
 value=4.000
 rarity=R
 type=Land

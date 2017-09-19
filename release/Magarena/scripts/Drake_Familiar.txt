@@ -1,5 +1,5 @@
 name=Drake Familiar
-image=http://magiccards.info/scans/en/rav/44.jpg
+image=https://magiccards.info/scans/en/rav/44.jpg
 value=2.810
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Warmind Infantry
-image=http://magiccards.info/scans/en/gtc/111.jpg
+image=https://magiccards.info/scans/en/gtc/111.jpg
 value=2.730
 rarity=C
 type=Creature

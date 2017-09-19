@@ -1,5 +1,5 @@
 name=Briarbridge Patrol
-image=http://magiccards.info/scans/en/soi/195.jpg
+image=https://magiccards.info/scans/en/soi/195.jpg
 value=2.500
 rarity=U
 type=Creature

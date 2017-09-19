@@ -1,5 +1,5 @@
 name=Fabricate
-image=http://magiccards.info/scans/en/m10/52.jpg
+image=https://magiccards.info/scans/en/m10/52.jpg
 image_updated=2016-12-13
 value=4.423
 rarity=U

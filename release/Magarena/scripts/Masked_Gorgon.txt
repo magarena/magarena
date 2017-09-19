@@ -1,5 +1,5 @@
 name=Masked Gorgon
-image=http://magiccards.info/scans/en/ju/69.jpg
+image=https://magiccards.info/scans/en/ju/69.jpg
 value=2.186
 rarity=R
 type=Creature

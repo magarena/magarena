@@ -1,5 +1,5 @@
 name=Berserkers of Blood Ridge
-image=http://magiccards.info/scans/en/m11/124.jpg
+image=https://magiccards.info/scans/en/m11/124.jpg
 value=1.051
 rarity=C
 type=Creature

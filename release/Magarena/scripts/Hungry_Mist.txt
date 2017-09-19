@@ -1,5 +1,5 @@
 name=Hungry Mist
-image=http://magiccards.info/scans/en/5e/164.jpg
+image=https://magiccards.info/scans/en/5e/164.jpg
 value=2.872
 rarity=C
 type=Creature

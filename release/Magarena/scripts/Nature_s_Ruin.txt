@@ -1,5 +1,5 @@
 name=Nature's Ruin
-image=http://magiccards.info/scans/en/po/26.jpg
+image=https://magiccards.info/scans/en/po/26.jpg
 value=4.000
 rarity=U
 type=Sorcery

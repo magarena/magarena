@@ -1,5 +1,5 @@
 name=Devoted Caretaker
-image=http://magiccards.info/scans/en/od/18.jpg
+image=https://magiccards.info/scans/en/od/18.jpg
 value=4.076
 rarity=R
 type=Creature

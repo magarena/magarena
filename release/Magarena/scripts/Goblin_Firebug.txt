@@ -1,5 +1,5 @@
 name=Goblin Firebug
-image=http://magiccards.info/scans/en/le/98.jpg
+image=https://magiccards.info/scans/en/le/98.jpg
 value=0.926
 rarity=C
 type=Creature

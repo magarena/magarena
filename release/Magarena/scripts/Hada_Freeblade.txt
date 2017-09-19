@@ -1,5 +1,5 @@
 name=Hada Freeblade
-image=http://magiccards.info/scans/en/wwk/7.jpg
+image=https://magiccards.info/scans/en/wwk/7.jpg
 value=3.970
 rarity=U
 type=Creature

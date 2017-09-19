@@ -1,5 +1,5 @@
 name=Knight of the Mists
-image=http://magiccards.info/scans/en/vi/36.jpg
+image=https://magiccards.info/scans/en/vi/36.jpg
 value=3.482
 rarity=C
 type=Creature

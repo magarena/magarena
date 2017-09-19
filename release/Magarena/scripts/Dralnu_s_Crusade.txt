@@ -1,5 +1,5 @@
 name=Dralnu's Crusade
-image=http://magiccards.info/scans/en/ps/104.jpg
+image=https://magiccards.info/scans/en/ps/104.jpg
 value=4.043
 rarity=R
 type=Enchantment

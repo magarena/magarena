@@ -1,5 +1,5 @@
 name=Scarred Puma
-image=http://magiccards.info/scans/en/in/163.jpg
+image=https://magiccards.info/scans/en/in/163.jpg
 value=2.303
 rarity=C
 type=Creature

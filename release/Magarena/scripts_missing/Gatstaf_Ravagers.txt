@@ -1,5 +1,5 @@
 name=Gatstaf Ravagers
-image=http://magiccards.info/scans/en/soi/158b.jpg
+image=https://magiccards.info/scans/en/soi/158b.jpg
 value=2.500
 rarity=C
 type=Creature

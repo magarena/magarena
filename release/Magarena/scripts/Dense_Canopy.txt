@@ -1,5 +1,5 @@
 name=Dense Canopy
-image=http://magiccards.info/scans/en/sok/125.jpg
+image=https://magiccards.info/scans/en/sok/125.jpg
 value=3.317
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mind Twist
-image=http://magiccards.info/scans/en/4e/31.jpg
+image=https://magiccards.info/scans/en/4e/31.jpg
 value=4.615
 rarity=R
 type=Sorcery

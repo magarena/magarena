@@ -1,5 +1,5 @@
 name=Ashen Ghoul
-image=http://magiccards.info/scans/en/cstd/20.jpg
+image=https://magiccards.info/scans/en/cstd/20.jpg
 value=3.681
 rarity=U
 type=Creature

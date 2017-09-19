@@ -1,5 +1,5 @@
 name=Rescind
-image=http://magiccards.info/scans/en/us/92.jpg
+image=https://magiccards.info/scans/en/us/92.jpg
 value=4.000
 rarity=C
 type=Instant

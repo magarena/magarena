@@ -1,5 +1,5 @@
 name=Silverstorm Samurai
-image=http://magiccards.info/scans/en/bok/22.jpg
+image=https://magiccards.info/scans/en/bok/22.jpg
 value=1.755
 rarity=C
 type=Creature

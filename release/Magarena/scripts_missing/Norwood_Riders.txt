@@ -1,5 +1,5 @@
 name=Norwood Riders
-image=http://magiccards.info/scans/en/po2/79.jpg
+image=https://magiccards.info/scans/en/po2/79.jpg
 value=3.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Swirling Sandstorm
-image=http://magiccards.info/scans/en/ju/102.jpg
+image=https://magiccards.info/scans/en/ju/102.jpg
 value=2.880
 rarity=C
 type=Sorcery

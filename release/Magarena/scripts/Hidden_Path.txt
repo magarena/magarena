@@ -1,5 +1,5 @@
 name=Hidden Path
-image=http://magiccards.info/scans/en/dk/41.jpg
+image=https://magiccards.info/scans/en/dk/41.jpg
 value=1.297
 rarity=R
 type=Enchantment

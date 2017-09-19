@@ -1,5 +1,5 @@
 name=Hinterland Scourge
-image=http://magiccards.info/scans/en/dka/94b.jpg
+image=https://magiccards.info/scans/en/dka/94b.jpg
 value=2.349
 rarity=C
 type=Creature

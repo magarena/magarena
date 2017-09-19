@@ -1,5 +1,5 @@
 name=Wrexial, the Risen Deep
-image=http://magiccards.info/scans/en/cmd/239.jpg
+image=https://magiccards.info/scans/en/cmd/239.jpg
 value=3.855
 rarity=M
 type=Legendary,Creature

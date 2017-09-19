@@ -1,5 +1,5 @@
 name=Militant Monk
-image=http://magiccards.info/scans/en/tr/9.jpg
+image=https://magiccards.info/scans/en/tr/9.jpg
 value=2.812
 rarity=C
 type=Creature

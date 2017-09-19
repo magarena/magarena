@@ -1,5 +1,5 @@
 name=Uncle Istvan
-image=http://magiccards.info/scans/en/tsts/51.jpg
+image=https://magiccards.info/scans/en/tsts/51.jpg
 value=4.306
 rarity=U
 type=Creature

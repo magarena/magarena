@@ -1,5 +1,5 @@
 name=Lotus Cobra
-image=http://magiccards.info/scans/en/zen/168.jpg
+image=https://magiccards.info/scans/en/zen/168.jpg
 value=4.427
 rarity=M
 type=Creature

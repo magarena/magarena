@@ -1,5 +1,5 @@
 name=Empty City Ruse
-image=http://magiccards.info/scans/en/p3k/3.jpg
+image=https://magiccards.info/scans/en/p3k/3.jpg
 value=3.696
 rarity=U
 type=Sorcery

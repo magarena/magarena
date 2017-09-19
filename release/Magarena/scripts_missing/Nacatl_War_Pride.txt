@@ -1,5 +1,5 @@
 name=Nacatl War-Pride
-image=http://magiccards.info/scans/en/fut/147.jpg
+image=https://magiccards.info/scans/en/fut/147.jpg
 value=4.153
 rarity=U
 type=Creature

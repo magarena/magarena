@@ -1,5 +1,5 @@
 name=Corpse Hauler
-image=http://magiccards.info/scans/en/m14/90.jpg
+image=https://magiccards.info/scans/en/m14/90.jpg
 value=2.946
 rarity=C
 type=Creature

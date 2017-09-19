@@ -1,5 +1,5 @@
 name=Fiery Bombardment
-image=http://magiccards.info/scans/en/eve/52.jpg
+image=https://magiccards.info/scans/en/eve/52.jpg
 value=2.024
 rarity=R
 type=Enchantment

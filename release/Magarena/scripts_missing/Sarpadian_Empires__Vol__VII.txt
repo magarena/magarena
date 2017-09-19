@@ -1,5 +1,5 @@
 name=Sarpadian Empires, Vol. VII
-image=http://magiccards.info/scans/en/ts/263.jpg
+image=https://magiccards.info/scans/en/ts/263.jpg
 value=3.608
 rarity=R
 type=Artifact

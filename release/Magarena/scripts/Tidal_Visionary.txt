@@ -1,5 +1,5 @@
 name=Tidal Visionary
-image=http://magiccards.info/scans/en/in/80.jpg
+image=https://magiccards.info/scans/en/in/80.jpg
 value=3.414
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Feral Ridgewolf
-image=http://magiccards.info/scans/en/isd/142.jpg
+image=https://magiccards.info/scans/en/isd/142.jpg
 value=2.947
 rarity=C
 type=Creature

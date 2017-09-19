@@ -1,5 +1,5 @@
 name=Hope and Glory
-image=http://magiccards.info/scans/en/ul/9.jpg
+image=https://magiccards.info/scans/en/ul/9.jpg
 value=3.250
 rarity=U
 type=Instant

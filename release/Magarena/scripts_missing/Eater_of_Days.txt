@@ -1,5 +1,5 @@
 name=Eater of Days
-image=http://magiccards.info/scans/en/ds/120.jpg
+image=https://magiccards.info/scans/en/ds/120.jpg
 value=3.646
 rarity=R
 type=Artifact,Creature

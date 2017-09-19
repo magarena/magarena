@@ -1,5 +1,5 @@
 name=Fanatic of Mogis
-image=http://magiccards.info/scans/en/ths/121.jpg
+image=https://magiccards.info/scans/en/ths/121.jpg
 value=3.610
 rarity=U
 type=Creature

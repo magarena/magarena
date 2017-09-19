@@ -1,5 +1,5 @@
 name=Rukh Egg
-image=http://magiccards.info/scans/en/9e/214.jpg
+image=https://magiccards.info/scans/en/9e/214.jpg
 value=3.583
 rarity=R
 type=Creature

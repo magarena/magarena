@@ -1,5 +1,5 @@
 name=Wasp of the Bitter End
-image=http://magiccards.info/scans/en/hou/206.jpg
+image=https://magiccards.info/scans/en/hou/206.jpg
 value=2.500
 rarity=U
 type=Creature

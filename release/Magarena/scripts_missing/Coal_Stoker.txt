@@ -1,5 +1,5 @@
 name=Coal Stoker
-image=http://magiccards.info/scans/en/ts/150.jpg
+image=https://magiccards.info/scans/en/ts/150.jpg
 image_updated=2016-11-28
 value=3.500
 rarity=C

@@ -1,5 +1,5 @@
 name=Stronghold Taskmaster
-image=http://magiccards.info/scans/en/sh/22.jpg
+image=https://magiccards.info/scans/en/sh/22.jpg
 value=2.597
 rarity=U
 type=Creature

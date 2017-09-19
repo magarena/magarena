@@ -1,5 +1,5 @@
 name=Spreading Flames
-image=http://magiccards.info/scans/en/emn/143.jpg
+image=https://magiccards.info/scans/en/emn/143.jpg
 image_updated=2016-09-05
 value=2.500
 rarity=U

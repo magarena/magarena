@@ -1,5 +1,5 @@
 name=Charging Slateback
-image=http://magiccards.info/scans/en/on/194.jpg
+image=https://magiccards.info/scans/en/on/194.jpg
 value=1.648
 rarity=C
 type=Creature

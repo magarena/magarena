@@ -1,5 +1,5 @@
 name=Consuming Aberration
-image=http://magiccards.info/scans/en/c16/189.jpg
+image=https://magiccards.info/scans/en/c16/189.jpg
 image_updated=2017-08-17
 value=4.050
 rarity=R

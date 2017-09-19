@@ -1,5 +1,5 @@
 name=Fallen Cleric
-image=http://magiccards.info/scans/en/on/145.jpg
+image=https://magiccards.info/scans/en/on/145.jpg
 value=1.979
 rarity=C
 type=Creature

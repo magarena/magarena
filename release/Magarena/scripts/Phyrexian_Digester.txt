@@ -1,5 +1,5 @@
 name=Phyrexian Digester
-image=http://magiccards.info/scans/en/mbs/120.jpg
+image=https://magiccards.info/scans/en/mbs/120.jpg
 value=2.115
 rarity=C
 type=Artifact,Creature

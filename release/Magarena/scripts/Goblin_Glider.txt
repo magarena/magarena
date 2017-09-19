@@ -1,5 +1,5 @@
 name=Goblin Glider
-image=http://magiccards.info/scans/en/8e/189.jpg
+image=https://magiccards.info/scans/en/8e/189.jpg
 value=1.912
 rarity=U
 type=Creature

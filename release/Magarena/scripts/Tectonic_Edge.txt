@@ -1,5 +1,5 @@
 name=Tectonic Edge
-image=http://magiccards.info/scans/en/c14/313.jpg
+image=https://magiccards.info/scans/en/c14/313.jpg
 value=3.608
 rarity=U
 type=Land

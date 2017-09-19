@@ -1,5 +1,5 @@
 name=Battle at the Bridge
-image=http://magiccards.info/scans/en/aer/53.jpg
+image=https://magiccards.info/scans/en/aer/53.jpg
 value=2.500
 rarity=R
 type=Sorcery

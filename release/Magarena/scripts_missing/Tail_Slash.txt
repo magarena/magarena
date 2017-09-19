@@ -1,5 +1,5 @@
 name=Tail Slash
-image=http://magiccards.info/scans/en/dtk/161.jpg
+image=https://magiccards.info/scans/en/dtk/161.jpg
 value=2.500
 rarity=C
 type=Instant

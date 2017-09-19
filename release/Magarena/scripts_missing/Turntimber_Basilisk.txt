@@ -1,5 +1,5 @@
 name=Turntimber Basilisk
-image=http://magiccards.info/scans/en/zen/190.jpg
+image=https://magiccards.info/scans/en/zen/190.jpg
 value=3.610
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Angelfire Crusader
-image=http://magiccards.info/scans/en/ap/1.jpg
+image=https://magiccards.info/scans/en/ap/1.jpg
 value=1.975
 rarity=C
 type=Creature

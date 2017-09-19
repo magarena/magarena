@@ -1,5 +1,5 @@
 name=Painful Quandary
-image=http://magiccards.info/scans/en/som/73.jpg
+image=https://magiccards.info/scans/en/som/73.jpg
 value=4.042
 rarity=R
 type=Enchantment

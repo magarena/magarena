@@ -1,5 +1,5 @@
 name=Will of the Naga
-image=http://magiccards.info/scans/en/frf/58.jpg
+image=https://magiccards.info/scans/en/frf/58.jpg
 value=2.500
 rarity=C
 type=Instant

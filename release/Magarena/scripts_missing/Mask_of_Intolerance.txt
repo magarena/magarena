@@ -1,5 +1,5 @@
 name=Mask of Intolerance
-image=http://magiccards.info/scans/en/ap/138.jpg
+image=https://magiccards.info/scans/en/ap/138.jpg
 value=3.741
 rarity=R
 type=Artifact

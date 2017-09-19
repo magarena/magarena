@@ -1,5 +1,5 @@
 name=Death's Duet
-image=http://magiccards.info/scans/en/ex/60.jpg
+image=https://magiccards.info/scans/en/ex/60.jpg
 value=2.500
 rarity=C
 type=Sorcery

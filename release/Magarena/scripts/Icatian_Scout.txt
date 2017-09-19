@@ -1,5 +1,5 @@
 name=Icatian Scout
-image=http://magiccards.info/scans/en/5e/313.jpg
+image=https://magiccards.info/scans/en/5e/313.jpg
 value=3.056
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Atog
-image=http://magiccards.info/scans/en/mi/86.jpg
+image=https://magiccards.info/scans/en/mi/86.jpg
 image_updated=2015-11-13
 value=3.778
 rarity=U

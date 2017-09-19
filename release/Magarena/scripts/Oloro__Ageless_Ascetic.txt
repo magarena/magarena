@@ -1,5 +1,5 @@
 name=Oloro, Ageless Ascetic
-image=http://magiccards.info/scans/en/c13/203.jpg
+image=https://magiccards.info/scans/en/c13/203.jpg
 value=3.851
 rarity=M
 type=Legendary,Creature

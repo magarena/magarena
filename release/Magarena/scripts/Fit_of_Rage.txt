@@ -1,5 +1,5 @@
 name=Fit of Rage
-image=http://magiccards.info/scans/en/6e/178.jpg
+image=https://magiccards.info/scans/en/6e/178.jpg
 value=2.950
 rarity=C
 type=Sorcery

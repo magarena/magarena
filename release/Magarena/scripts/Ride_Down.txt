@@ -1,5 +1,5 @@
 name=Ride Down
-image=http://magiccards.info/scans/en/emn/188.jpg
+image=https://magiccards.info/scans/en/emn/188.jpg
 image_updated=2016-09-09
 value=3.250
 rarity=U

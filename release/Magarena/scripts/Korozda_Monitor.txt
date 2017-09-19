@@ -1,5 +1,5 @@
 name=Korozda Monitor
-image=http://magiccards.info/scans/en/rtr/129.jpg
+image=https://magiccards.info/scans/en/rtr/129.jpg
 value=2.560
 rarity=C
 type=Creature

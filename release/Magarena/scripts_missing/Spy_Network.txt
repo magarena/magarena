@@ -1,5 +1,5 @@
 name=Spy Network
-image=http://magiccards.info/scans/en/on/115.jpg
+image=https://magiccards.info/scans/en/on/115.jpg
 value=4.063
 rarity=C
 type=Instant

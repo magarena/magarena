@@ -1,5 +1,5 @@
 name=Benalish Commander
-image=http://magiccards.info/scans/en/pc/2.jpg
+image=https://magiccards.info/scans/en/pc/2.jpg
 value=3.991
 rarity=R
 type=Creature

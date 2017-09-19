@@ -1,5 +1,5 @@
 name=Evasive Action
-image=http://magiccards.info/scans/en/ap/23.jpg
+image=https://magiccards.info/scans/en/ap/23.jpg
 image_updated=2016-12-02
 value=3.364
 rarity=U

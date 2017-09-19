@@ -1,5 +1,5 @@
 name=Afflict
-image=http://magiccards.info/scans/en/10e/125.jpg
+image=https://magiccards.info/scans/en/10e/125.jpg
 value=2.318
 removal=1
 rarity=C

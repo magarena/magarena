@@ -1,5 +1,5 @@
 name=Manic Vandal
-image=http://magiccards.info/scans/en/m12/151.jpg
+image=https://magiccards.info/scans/en/m12/151.jpg
 value=3.873
 removal=1
 rarity=C

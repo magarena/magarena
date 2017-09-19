@@ -1,5 +1,5 @@
 name=Skyshroud Ridgeback
-image=http://magiccards.info/scans/en/ne/120.jpg
+image=https://magiccards.info/scans/en/ne/120.jpg
 value=3.944
 rarity=C
 type=Creature

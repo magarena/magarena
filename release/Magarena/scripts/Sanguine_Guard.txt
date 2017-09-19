@@ -1,5 +1,5 @@
 name=Sanguine Guard
-image=http://magiccards.info/scans/en/us/155.jpg
+image=https://magiccards.info/scans/en/us/155.jpg
 image_updated=2017-01-07
 value=3.897
 rarity=U

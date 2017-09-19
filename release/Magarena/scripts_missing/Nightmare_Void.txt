@@ -1,5 +1,5 @@
 name=Nightmare Void
-image=http://magiccards.info/scans/en/rav/100.jpg
+image=https://magiccards.info/scans/en/rav/100.jpg
 value=3.056
 rarity=U
 type=Sorcery

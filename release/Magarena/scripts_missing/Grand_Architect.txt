@@ -1,5 +1,5 @@
 name=Grand Architect
-image=http://magiccards.info/scans/en/som/33.jpg
+image=https://magiccards.info/scans/en/som/33.jpg
 value=4.241
 rarity=R
 type=Creature

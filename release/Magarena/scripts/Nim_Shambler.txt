@@ -1,5 +1,5 @@
 name=Nim Shambler
-image=http://magiccards.info/scans/en/mi/72.jpg
+image=https://magiccards.info/scans/en/mi/72.jpg
 value=2.578
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dust Bowl
-image=http://magiccards.info/scans/en/mm/316.jpg
+image=https://magiccards.info/scans/en/mm/316.jpg
 value=4.318
 rarity=R
 type=Land

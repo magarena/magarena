@@ -1,5 +1,5 @@
 name=Body Snatcher
-image=http://magiccards.info/scans/en/ud/53.jpg
+image=https://magiccards.info/scans/en/ud/53.jpg
 value=4.534
 rarity=R
 type=Creature

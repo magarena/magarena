@@ -1,5 +1,5 @@
 name=General's Regalia
-image=http://magiccards.info/scans/en/mm/295.jpg
+image=https://magiccards.info/scans/en/mm/295.jpg
 value=3.191
 rarity=R
 type=Artifact

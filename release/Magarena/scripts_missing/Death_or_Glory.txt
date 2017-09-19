@@ -1,5 +1,5 @@
 name=Death or Glory
-image=http://magiccards.info/scans/en/in/13.jpg
+image=https://magiccards.info/scans/en/in/13.jpg
 value=4.028
 rarity=R
 type=Sorcery

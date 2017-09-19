@@ -1,5 +1,5 @@
 name=Dauthi Ghoul
-image=http://magiccards.info/scans/en/tp/15.jpg
+image=https://magiccards.info/scans/en/tp/15.jpg
 value=3.897
 rarity=U
 type=Creature

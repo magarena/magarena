@@ -1,5 +1,5 @@
 name=Swell of Courage
-image=http://magiccards.info/scans/en/mt/26.jpg
+image=https://magiccards.info/scans/en/mt/26.jpg
 image_updated=2016-01-09
 value=2.914
 rarity=U

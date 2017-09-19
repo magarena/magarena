@@ -1,5 +1,5 @@
 name=Essence Flare
-image=http://magiccards.info/scans/en/cstd/11.jpg
+image=https://magiccards.info/scans/en/cstd/11.jpg
 value=2.613
 rarity=C
 type=Enchantment

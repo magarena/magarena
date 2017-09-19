@@ -1,5 +1,5 @@
 name=Vigor
-image=http://magiccards.info/scans/en/lw/240.jpg
+image=https://magiccards.info/scans/en/lw/240.jpg
 image_updated=2017-01-11
 value=4.263
 rarity=R

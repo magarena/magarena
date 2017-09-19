@@ -1,5 +1,5 @@
 name=Freyalise's Charm
-image=http://magiccards.info/scans/en/ia/128.jpg
+image=https://magiccards.info/scans/en/ia/128.jpg
 value=2.236
 rarity=U
 type=Enchantment

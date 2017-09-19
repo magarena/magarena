@@ -1,5 +1,5 @@
 name=Delay
-image=http://magiccards.info/scans/en/fut/35.jpg
+image=https://magiccards.info/scans/en/fut/35.jpg
 value=3.954
 rarity=U
 type=Instant

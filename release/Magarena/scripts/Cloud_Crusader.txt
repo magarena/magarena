@@ -1,5 +1,5 @@
 name=Cloud Crusader
-image=http://magiccards.info/scans/en/m11/10.jpg
+image=https://magiccards.info/scans/en/m11/10.jpg
 value=2.895
 rarity=C
 type=Creature

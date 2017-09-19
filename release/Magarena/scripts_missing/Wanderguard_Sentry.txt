@@ -1,5 +1,5 @@
 name=Wanderguard Sentry
-image=http://magiccards.info/scans/en/9e/111.jpg
+image=https://magiccards.info/scans/en/9e/111.jpg
 value=1.554
 rarity=C
 type=Creature

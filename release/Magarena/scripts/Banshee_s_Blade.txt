@@ -1,5 +1,5 @@
 name=Banshee's Blade
-image=http://magiccards.info/scans/en/mi/144.jpg
+image=https://magiccards.info/scans/en/mi/144.jpg
 value=3.282
 rarity=U
 type=Artifact

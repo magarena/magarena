@@ -1,5 +1,5 @@
 name=Akroma's Blessing
-image=http://magiccards.info/scans/en/on/1.jpg
+image=https://magiccards.info/scans/en/on/1.jpg
 value=3.500
 rarity=U
 type=Instant

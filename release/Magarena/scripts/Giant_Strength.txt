@@ -1,5 +1,5 @@
 name=Giant Strength
-image=http://magiccards.info/scans/en/6e/181.jpg
+image=https://magiccards.info/scans/en/6e/181.jpg
 value=2.906
 rarity=C
 type=Enchantment

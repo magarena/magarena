@@ -1,5 +1,5 @@
 name=Primal Cocoon
-image=http://magiccards.info/scans/en/m11/191.jpg
+image=https://magiccards.info/scans/en/m11/191.jpg
 value=3.261
 rarity=C
 type=Enchantment

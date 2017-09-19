@@ -1,5 +1,5 @@
 name=Takeno's Cavalry
-image=http://magiccards.info/scans/en/bok/24.jpg
+image=https://magiccards.info/scans/en/bok/24.jpg
 value=0.855
 rarity=C
 type=Creature

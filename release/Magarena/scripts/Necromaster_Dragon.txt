@@ -1,5 +1,5 @@
 name=Necromaster Dragon
-image=http://magiccards.info/scans/en/dtk/226.jpg
+image=https://magiccards.info/scans/en/dtk/226.jpg
 value=2.500
 rarity=R
 type=Creature

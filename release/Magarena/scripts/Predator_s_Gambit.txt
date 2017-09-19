@@ -1,5 +1,5 @@
 name=Predator's Gambit
-image=http://magiccards.info/scans/en/avr/117.jpg
+image=https://magiccards.info/scans/en/avr/117.jpg
 value=3.052
 rarity=C
 type=Enchantment

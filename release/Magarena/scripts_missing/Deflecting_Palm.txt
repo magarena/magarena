@@ -1,5 +1,5 @@
 name=Deflecting Palm
-image=http://magiccards.info/scans/en/ktk/173.jpg
+image=https://magiccards.info/scans/en/ktk/173.jpg
 value=4.125
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Voidmage Apprentice
-image=http://magiccards.info/scans/en/le/54.jpg
+image=https://magiccards.info/scans/en/le/54.jpg
 image_updated=2017-01-11
 value=3.464
 rarity=C

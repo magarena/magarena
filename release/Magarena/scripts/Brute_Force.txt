@@ -1,5 +1,5 @@
 name=Brute Force
-image=http://magiccards.info/scans/en/mm2/108.jpg
+image=https://magiccards.info/scans/en/mm2/108.jpg
 value=4.016
 rarity=C
 type=Instant

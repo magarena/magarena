@@ -1,5 +1,5 @@
 name=Read the Runes
-image=http://magiccards.info/scans/en/c16/95.jpg
+image=https://magiccards.info/scans/en/c16/95.jpg
 image_updated=2017-08-17
 value=3.770
 rarity=R

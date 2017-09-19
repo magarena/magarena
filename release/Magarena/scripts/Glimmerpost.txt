@@ -1,5 +1,5 @@
 name=Glimmerpost
-image=http://magiccards.info/scans/en/som/227.jpg
+image=https://magiccards.info/scans/en/som/227.jpg
 value=3.654
 rarity=C
 type=Land

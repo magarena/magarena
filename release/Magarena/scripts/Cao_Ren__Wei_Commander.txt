@@ -1,5 +1,5 @@
 name=Cao Ren, Wei Commander
-image=http://magiccards.info/scans/en/p3k/69.jpg
+image=https://magiccards.info/scans/en/p3k/69.jpg
 value=2.080
 rarity=R
 type=Legendary,Creature

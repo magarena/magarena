@@ -1,5 +1,5 @@
 name=Mindwhip Sliver
-image=http://magiccards.info/scans/en/tp/39.jpg
+image=https://magiccards.info/scans/en/tp/39.jpg
 value=3.183
 rarity=U
 type=Creature

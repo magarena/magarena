@@ -1,5 +1,5 @@
 name=Isleback Spawn
-image=http://magiccards.info/scans/en/shm/40.jpg
+image=https://magiccards.info/scans/en/shm/40.jpg
 value=3.726
 rarity=R
 type=Creature

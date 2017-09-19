@@ -1,5 +1,5 @@
 name=Primitive Justice
-image=http://magiccards.info/scans/en/ai/114.jpg
+image=https://magiccards.info/scans/en/ai/114.jpg
 value=3.368
 rarity=U
 type=Sorcery

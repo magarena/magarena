@@ -1,5 +1,5 @@
 name=Sakura-Tribe Scout
-image=http://magiccards.info/scans/en/sok/144.jpg
+image=https://magiccards.info/scans/en/sok/144.jpg
 value=3.919
 rarity=C
 type=Creature

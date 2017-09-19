@@ -1,5 +1,5 @@
 name=Last Kiss
-image=http://magiccards.info/scans/en/roe/116.jpg
+image=https://magiccards.info/scans/en/roe/116.jpg
 value=3.444
 rarity=C
 type=Instant

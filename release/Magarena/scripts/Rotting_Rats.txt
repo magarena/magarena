@@ -1,5 +1,5 @@
 name=Rotting Rats
-image=http://magiccards.info/scans/en/cfx/51.jpg
+image=https://magiccards.info/scans/en/cfx/51.jpg
 image_updated=2017-01-06
 value=3.065
 rarity=C

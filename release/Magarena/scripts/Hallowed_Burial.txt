@@ -1,5 +1,5 @@
 name=Hallowed Burial
-image=http://magiccards.info/scans/en/cn2/91.jpg
+image=https://magiccards.info/scans/en/cn2/91.jpg
 image_updated=2017-08-29
 value=4.069
 rarity=R

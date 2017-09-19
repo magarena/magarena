@@ -1,5 +1,5 @@
 name=King Macar, the Gold-Cursed
-image=http://magiccards.info/scans/en/jou/74.jpg
+image=https://magiccards.info/scans/en/jou/74.jpg
 value=3.783
 rarity=R
 type=Legendary,Creature

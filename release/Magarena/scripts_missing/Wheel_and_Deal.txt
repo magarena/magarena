@@ -1,5 +1,5 @@
 name=Wheel and Deal
-image=http://magiccards.info/scans/en/on/121.jpg
+image=https://magiccards.info/scans/en/on/121.jpg
 value=3.106
 rarity=R
 type=Instant

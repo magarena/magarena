@@ -1,5 +1,5 @@
 name=Anger of the Gods
-image=http://magiccards.info/scans/en/ths/112.jpg
+image=https://magiccards.info/scans/en/ths/112.jpg
 value=3.670
 removal=3
 rarity=R

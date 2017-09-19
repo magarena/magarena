@@ -1,5 +1,5 @@
 name=Sima Yi, Wei Field Marshal
-image=http://magiccards.info/scans/en/p3k/82.jpg
+image=https://magiccards.info/scans/en/p3k/82.jpg
 value=3.167
 rarity=R
 type=Legendary,Creature

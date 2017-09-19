@@ -1,5 +1,5 @@
 name=Ray of Revelation
-image=http://magiccards.info/scans/en/dka/17.jpg
+image=https://magiccards.info/scans/en/dka/17.jpg
 value=4.114
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Tidal Surge
-image=http://magiccards.info/scans/en/6e/102.jpg
+image=https://magiccards.info/scans/en/6e/102.jpg
 value=2.717
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Changeling Berserker
-image=http://magiccards.info/scans/en/lw/160.jpg
+image=https://magiccards.info/scans/en/lw/160.jpg
 value=3.591
 removal=2
 rarity=U

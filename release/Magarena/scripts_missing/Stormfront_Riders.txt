@@ -1,5 +1,5 @@
 name=Stormfront Riders
-image=http://magiccards.info/scans/en/pc/20.jpg
+image=https://magiccards.info/scans/en/pc/20.jpg
 image_updated=2016-01-09
 value=3.551
 rarity=U

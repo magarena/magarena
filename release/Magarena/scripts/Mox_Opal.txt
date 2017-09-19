@@ -1,5 +1,5 @@
 name=Mox Opal
-image=http://magiccards.info/scans/en/mm2/223.jpg
+image=https://magiccards.info/scans/en/mm2/223.jpg
 value=4.206
 rarity=M
 type=Legendary,Artifact

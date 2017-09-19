@@ -1,5 +1,5 @@
 name=Temple Garden
-image=http://magiccards.info/scans/en/rtr/248.jpg
+image=https://magiccards.info/scans/en/rtr/248.jpg
 value=4.274
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Sparring Mummy
-image=http://magiccards.info/scans/en/akh/29.jpg
+image=https://magiccards.info/scans/en/akh/29.jpg
 value=2.500
 rarity=C
 type=Creature

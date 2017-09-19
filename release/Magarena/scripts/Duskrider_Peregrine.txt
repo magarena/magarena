@@ -1,5 +1,5 @@
 name=Duskrider Peregrine
-image=http://magiccards.info/scans/en/ts/14.jpg
+image=https://magiccards.info/scans/en/ts/14.jpg
 value=2.700
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wormfang Manta
-image=http://magiccards.info/scans/en/ju/58.jpg
+image=https://magiccards.info/scans/en/ju/58.jpg
 value=2.773
 rarity=R
 type=Creature

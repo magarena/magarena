@@ -1,5 +1,5 @@
 name=Sage of Fables
-image=http://magiccards.info/scans/en/mt/47.jpg
+image=https://magiccards.info/scans/en/mt/47.jpg
 value=3.700
 rarity=U
 type=Creature

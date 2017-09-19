@@ -1,5 +1,5 @@
 name=Sea Snidd
-image=http://magiccards.info/scans/en/ps/31.jpg
+image=https://magiccards.info/scans/en/ps/31.jpg
 value=2.444
 rarity=C
 type=Creature

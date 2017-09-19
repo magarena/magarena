@@ -1,5 +1,5 @@
 name=Heroism
-image=http://magiccards.info/scans/en/fe/143.jpg
+image=https://magiccards.info/scans/en/fe/143.jpg
 value=2.162
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Zombie Brute
-image=http://magiccards.info/scans/en/le/87.jpg
+image=https://magiccards.info/scans/en/le/87.jpg
 value=3.442
 rarity=U
 type=Creature

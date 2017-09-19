@@ -1,5 +1,5 @@
 name=Flash Foliage
-image=http://magiccards.info/scans/en/di/85.jpg
+image=https://magiccards.info/scans/en/di/85.jpg
 value=2.500
 rarity=U
 type=Instant

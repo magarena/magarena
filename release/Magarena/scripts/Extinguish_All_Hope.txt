@@ -1,5 +1,5 @@
 name=Extinguish All Hope
-image=http://magiccards.info/scans/en/jou/68.jpg
+image=https://magiccards.info/scans/en/jou/68.jpg
 value=3.603
 rarity=R
 type=Sorcery

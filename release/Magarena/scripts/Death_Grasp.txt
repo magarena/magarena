@@ -1,5 +1,5 @@
 name=Death Grasp
-image=http://magiccards.info/scans/en/ap/95.jpg
+image=https://magiccards.info/scans/en/ap/95.jpg
 image_updated=2016-02-29
 value=4.000
 removal=4

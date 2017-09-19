@@ -1,5 +1,5 @@
 name=Goblin Burrows
-image=http://magiccards.info/scans/en/on/318.jpg
+image=https://magiccards.info/scans/en/on/318.jpg
 image_updated=2016-12-04
 value=4.000
 rarity=U

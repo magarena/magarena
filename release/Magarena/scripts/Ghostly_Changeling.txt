@@ -1,5 +1,5 @@
 name=Ghostly Changeling
-image=http://magiccards.info/scans/en/mm2/83.jpg
+image=https://magiccards.info/scans/en/mm2/83.jpg
 image_updated=2015-11-05
 value=2.684
 rarity=C

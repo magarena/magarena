@@ -1,5 +1,5 @@
 name=Rhonas's Stalwart
-image=http://magiccards.info/scans/en/hou/133.jpg
+image=https://magiccards.info/scans/en/hou/133.jpg
 value=2.500
 rarity=C
 type=Creature

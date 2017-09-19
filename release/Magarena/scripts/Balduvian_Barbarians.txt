@@ -1,5 +1,5 @@
 name=Balduvian Barbarians
-image=http://magiccards.info/scans/en/9e/174.jpg
+image=https://magiccards.info/scans/en/9e/174.jpg
 value=2.432
 rarity=C
 type=Creature

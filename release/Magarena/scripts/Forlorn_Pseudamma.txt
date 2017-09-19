@@ -1,5 +1,5 @@
 name=Forlorn Pseudamma
-image=http://magiccards.info/scans/en/bng/71.jpg
+image=https://magiccards.info/scans/en/bng/71.jpg
 value=3.212
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Thornscape Familiar
-image=http://magiccards.info/scans/en/ps/95.jpg
+image=https://magiccards.info/scans/en/ps/95.jpg
 value=4.098
 rarity=C
 type=Creature

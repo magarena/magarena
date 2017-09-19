@@ -1,5 +1,5 @@
 name=Furnace Spirit
-image=http://magiccards.info/scans/en/sh/87.jpg
+image=https://magiccards.info/scans/en/sh/87.jpg
 value=2.086
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lapis Lazuli Talisman
-image=http://magiccards.info/scans/en/ia/302.jpg
+image=https://magiccards.info/scans/en/ia/302.jpg
 value=1.333
 rarity=U
 type=Artifact

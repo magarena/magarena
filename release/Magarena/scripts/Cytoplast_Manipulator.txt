@@ -1,5 +1,5 @@
 name=Cytoplast Manipulator
-image=http://magiccards.info/scans/en/di/23.jpg
+image=https://magiccards.info/scans/en/di/23.jpg
 value=4.071
 rarity=R
 type=Creature

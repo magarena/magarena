@@ -1,5 +1,5 @@
 name=Gliding Licid
-image=http://magiccards.info/scans/en/sh/31.jpg
+image=https://magiccards.info/scans/en/sh/31.jpg
 value=3.175
 rarity=U
 type=Creature

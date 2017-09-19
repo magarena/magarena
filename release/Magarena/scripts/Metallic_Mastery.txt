@@ -1,5 +1,5 @@
 name=Metallic Mastery
-image=http://magiccards.info/scans/en/mbs/71.jpg
+image=https://magiccards.info/scans/en/mbs/71.jpg
 value=2.762
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Eternal Dominion
-image=http://magiccards.info/scans/en/sok/36.jpg
+image=https://magiccards.info/scans/en/sok/36.jpg
 value=3.918
 rarity=R
 type=Sorcery

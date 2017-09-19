@@ -1,5 +1,5 @@
 name=Angelic Skirmisher
-image=http://magiccards.info/scans/en/gtc/3.jpg
+image=https://magiccards.info/scans/en/gtc/3.jpg
 value=3.789
 rarity=R
 type=Creature

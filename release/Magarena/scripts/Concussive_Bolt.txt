@@ -1,5 +1,5 @@
 name=Concussive Bolt
-image=http://magiccards.info/scans/en/mbs/60.jpg
+image=https://magiccards.info/scans/en/mbs/60.jpg
 value=2.944
 rarity=C
 type=Sorcery

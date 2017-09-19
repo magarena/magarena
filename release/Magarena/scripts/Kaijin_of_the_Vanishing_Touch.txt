@@ -1,5 +1,5 @@
 name=Kaijin of the Vanishing Touch
-image=http://magiccards.info/scans/en/bok/39.jpg
+image=https://magiccards.info/scans/en/bok/39.jpg
 value=3.182
 rarity=U
 type=Creature

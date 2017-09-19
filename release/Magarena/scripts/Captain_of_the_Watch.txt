@@ -1,5 +1,5 @@
 name=Captain of the Watch
-image=http://magiccards.info/scans/en/m13/8.jpg
+image=https://magiccards.info/scans/en/m13/8.jpg
 image_updated=2016-11-28
 value=3.990
 rarity=R

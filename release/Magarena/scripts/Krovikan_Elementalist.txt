@@ -1,5 +1,5 @@
 name=Krovikan Elementalist
-image=http://magiccards.info/scans/en/ia/27.jpg
+image=https://magiccards.info/scans/en/ia/27.jpg
 value=1.676
 rarity=U
 type=Creature

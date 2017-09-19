@@ -1,5 +1,5 @@
 name=Deathbellow Raider
-image=http://magiccards.info/scans/en/ths/117.jpg
+image=https://magiccards.info/scans/en/ths/117.jpg
 value=3.567
 rarity=C
 type=Creature

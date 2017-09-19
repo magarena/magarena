@@ -1,5 +1,5 @@
 name=True Conviction
-image=http://magiccards.info/scans/en/c14/93.jpg
+image=https://magiccards.info/scans/en/c14/93.jpg
 value=4.038
 rarity=R
 type=Enchantment

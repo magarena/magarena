@@ -1,5 +1,5 @@
 name=Razor Pendulum
-image=http://magiccards.info/scans/en/mr/282.jpg
+image=https://magiccards.info/scans/en/mr/282.jpg
 value=3.041
 rarity=R
 type=Artifact

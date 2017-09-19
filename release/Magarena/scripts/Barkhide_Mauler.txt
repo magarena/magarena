@@ -1,5 +1,5 @@
 name=Barkhide Mauler
-image=http://magiccards.info/scans/en/on/246.jpg
+image=https://magiccards.info/scans/en/on/246.jpg
 value=2.700
 rarity=C
 type=Creature

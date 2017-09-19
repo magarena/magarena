@@ -1,5 +1,5 @@
 name=Oboro Breezecaller
-image=http://magiccards.info/scans/en/sok/48.jpg
+image=https://magiccards.info/scans/en/sok/48.jpg
 value=2.207
 rarity=C
 type=Creature

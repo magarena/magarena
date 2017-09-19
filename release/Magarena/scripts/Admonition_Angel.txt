@@ -1,5 +1,5 @@
 name=Admonition Angel
-image=http://magiccards.info/scans/en/wwk/1.jpg
+image=https://magiccards.info/scans/en/wwk/1.jpg
 value=3.992
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Crazed Skirge
-image=http://magiccards.info/scans/en/us/125.jpg
+image=https://magiccards.info/scans/en/us/125.jpg
 image_updated=2016-11-28
 value=2.688
 rarity=U

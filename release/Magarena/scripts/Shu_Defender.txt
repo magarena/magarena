@@ -1,5 +1,5 @@
 name=Shu Defender
-image=http://magiccards.info/scans/en/p3k/20.jpg
+image=https://magiccards.info/scans/en/p3k/20.jpg
 value=2.333
 rarity=C
 type=Creature

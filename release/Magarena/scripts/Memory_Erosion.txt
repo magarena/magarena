@@ -1,5 +1,5 @@
 name=Memory Erosion
-image=http://magiccards.info/scans/en/cmd/50.jpg
+image=https://magiccards.info/scans/en/cmd/50.jpg
 value=2.806
 rarity=R
 type=Enchantment

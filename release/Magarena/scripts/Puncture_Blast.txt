@@ -1,5 +1,5 @@
 name=Puncture Blast
-image=http://magiccards.info/scans/en/eve/60.jpg
+image=https://magiccards.info/scans/en/eve/60.jpg
 value=3.456
 removal=3
 rarity=C

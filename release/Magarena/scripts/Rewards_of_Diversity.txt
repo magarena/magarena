@@ -1,5 +1,5 @@
 name=Rewards of Diversity
-image=http://magiccards.info/scans/en/in/32.jpg
+image=https://magiccards.info/scans/en/in/32.jpg
 value=2.729
 rarity=U
 type=Enchantment

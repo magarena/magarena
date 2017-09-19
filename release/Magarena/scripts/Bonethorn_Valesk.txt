@@ -1,5 +1,5 @@
 name=Bonethorn Valesk
-image=http://magiccards.info/scans/en/sc/82.jpg
+image=https://magiccards.info/scans/en/sc/82.jpg
 value=2.129
 rarity=C
 type=Creature

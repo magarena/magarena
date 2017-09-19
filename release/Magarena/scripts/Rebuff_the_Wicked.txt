@@ -1,5 +1,5 @@
 name=Rebuff the Wicked
-image=http://magiccards.info/scans/en/pc/12.jpg
+image=https://magiccards.info/scans/en/pc/12.jpg
 value=4.110
 rarity=U
 type=Instant

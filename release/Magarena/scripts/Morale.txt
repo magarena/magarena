@@ -1,5 +1,5 @@
 name=Morale
-image=http://magiccards.info/scans/en/4e/286.jpg
+image=https://magiccards.info/scans/en/4e/286.jpg
 value=1.821
 rarity=C
 type=Instant

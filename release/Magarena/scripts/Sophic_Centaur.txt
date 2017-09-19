@@ -1,5 +1,5 @@
 name=Sophic Centaur
-image=http://magiccards.info/scans/en/pc/139.jpg
+image=https://magiccards.info/scans/en/pc/139.jpg
 value=1.423
 rarity=U
 type=Creature

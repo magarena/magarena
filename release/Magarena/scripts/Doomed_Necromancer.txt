@@ -1,5 +1,5 @@
 name=Doomed Necromancer
-image=http://magiccards.info/scans/en/10e/137.jpg
+image=https://magiccards.info/scans/en/10e/137.jpg
 value=4.229
 rarity=R
 type=Creature

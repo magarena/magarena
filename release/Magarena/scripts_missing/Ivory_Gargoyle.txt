@@ -1,5 +1,5 @@
 name=Ivory Gargoyle
-image=http://magiccards.info/scans/en/ai/131.jpg
+image=https://magiccards.info/scans/en/ai/131.jpg
 value=3.333
 rarity=R
 type=Creature

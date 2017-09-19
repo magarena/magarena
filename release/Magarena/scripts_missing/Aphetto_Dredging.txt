@@ -1,5 +1,5 @@
 name=Aphetto Dredging
-image=http://magiccards.info/scans/en/on/125.jpg
+image=https://magiccards.info/scans/en/on/125.jpg
 value=3.719
 rarity=C
 type=Sorcery

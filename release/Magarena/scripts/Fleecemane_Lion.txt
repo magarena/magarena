@@ -1,5 +1,5 @@
 name=Fleecemane Lion
-image=http://magiccards.info/scans/en/ths/193.jpg
+image=https://magiccards.info/scans/en/ths/193.jpg
 value=3.873
 rarity=R
 type=Creature

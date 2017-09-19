@@ -1,5 +1,5 @@
 name=Goblin Bomb
-image=http://magiccards.info/scans/en/wl/103.jpg
+image=https://magiccards.info/scans/en/wl/103.jpg
 value=4.176
 rarity=R
 type=Enchantment

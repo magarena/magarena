@@ -1,5 +1,5 @@
 name=Search the City
-image=http://magiccards.info/scans/en/rtr/49.jpg
+image=https://magiccards.info/scans/en/rtr/49.jpg
 value=2.123
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Moss Monster
-image=http://magiccards.info/scans/en/8e/267.jpg
+image=https://magiccards.info/scans/en/8e/267.jpg
 value=1.870
 rarity=C
 type=Creature

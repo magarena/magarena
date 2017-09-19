@@ -1,5 +1,5 @@
 name=Coastal Wizard
-image=http://magiccards.info/scans/en/po2/34.jpg
+image=https://magiccards.info/scans/en/po2/34.jpg
 value=1.841
 rarity=R
 type=Creature

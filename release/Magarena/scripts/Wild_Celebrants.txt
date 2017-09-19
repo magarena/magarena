@@ -1,5 +1,5 @@
 name=Wild Celebrants
-image=http://magiccards.info/scans/en/ths/147.jpg
+image=https://magiccards.info/scans/en/ths/147.jpg
 value=2.923
 rarity=C
 type=Creature

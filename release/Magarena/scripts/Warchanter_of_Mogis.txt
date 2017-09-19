@@ -1,5 +1,5 @@
 name=Warchanter of Mogis
-image=http://magiccards.info/scans/en/bng/85.jpg
+image=https://magiccards.info/scans/en/bng/85.jpg
 value=2.595
 rarity=C
 type=Creature

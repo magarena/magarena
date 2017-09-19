@@ -1,5 +1,5 @@
 name=Sudden Death
-image=http://magiccards.info/scans/en/ts/134.jpg
+image=https://magiccards.info/scans/en/ts/134.jpg
 value=4.248
 rarity=U
 type=Instant

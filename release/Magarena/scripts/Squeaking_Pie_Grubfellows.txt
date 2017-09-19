@@ -1,5 +1,5 @@
 name=Squeaking Pie Grubfellows
-image=http://magiccards.info/scans/en/mt/78.jpg
+image=https://magiccards.info/scans/en/mt/78.jpg
 value=2.403
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bargain
-image=http://magiccards.info/scans/en/st/7.jpg
+image=https://magiccards.info/scans/en/st/7.jpg
 value=1.578
 rarity=U
 type=Sorcery

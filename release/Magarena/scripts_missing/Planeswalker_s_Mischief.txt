@@ -1,5 +1,5 @@
 name=Planeswalker's Mischief
-image=http://magiccards.info/scans/en/ps/29.jpg
+image=https://magiccards.info/scans/en/ps/29.jpg
 value=3.794
 rarity=R
 type=Enchantment

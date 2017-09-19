@@ -1,5 +1,5 @@
 name=Mogis's Warhound
-image=http://magiccards.info/scans/en/jou/104.jpg
+image=https://magiccards.info/scans/en/jou/104.jpg
 value=3.261
 rarity=U
 type=Enchantment,Creature

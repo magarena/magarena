@@ -1,5 +1,5 @@
 name=Nezumi Bone-Reader
-image=http://magiccards.info/scans/en/chk/127.jpg
+image=https://magiccards.info/scans/en/chk/127.jpg
 value=2.319
 rarity=U
 type=Creature

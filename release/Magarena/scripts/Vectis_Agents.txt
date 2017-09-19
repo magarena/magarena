@@ -1,5 +1,5 @@
 name=Vectis Agents
-image=http://magiccards.info/scans/en/cfx/131.jpg
+image=https://magiccards.info/scans/en/cfx/131.jpg
 value=2.172
 rarity=C
 type=Artifact,Creature

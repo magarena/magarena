@@ -1,5 +1,5 @@
 name=Festival
-image=http://magiccards.info/scans/en/dk/81.jpg
+image=https://magiccards.info/scans/en/dk/81.jpg
 value=3.678
 rarity=C
 type=Instant

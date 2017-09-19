@@ -1,5 +1,5 @@
 name=Parallax Dementia
-image=http://magiccards.info/scans/en/ne/62.jpg
+image=https://magiccards.info/scans/en/ne/62.jpg
 value=3.409
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Drinker of Sorrow
-image=http://magiccards.info/scans/en/le/66.jpg
+image=https://magiccards.info/scans/en/le/66.jpg
 value=2.905
 rarity=R
 type=Creature

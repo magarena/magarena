@@ -1,5 +1,5 @@
 name=Death of a Thousand Stings
-image=http://magiccards.info/scans/en/sok/64.jpg
+image=https://magiccards.info/scans/en/sok/64.jpg
 value=1.432
 rarity=C
 type=Instant

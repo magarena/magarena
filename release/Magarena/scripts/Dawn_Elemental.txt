@@ -1,5 +1,5 @@
 name=Dawn Elemental
-image=http://magiccards.info/scans/en/sc/7.jpg
+image=https://magiccards.info/scans/en/sc/7.jpg
 value=4.380
 rarity=R
 type=Creature

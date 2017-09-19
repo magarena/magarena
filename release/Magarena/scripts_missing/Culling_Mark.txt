@@ -1,5 +1,5 @@
 name=Culling Mark
-image=http://magiccards.info/scans/en/bng/120.jpg
+image=https://magiccards.info/scans/en/bng/120.jpg
 value=1.078
 rarity=C
 type=Sorcery

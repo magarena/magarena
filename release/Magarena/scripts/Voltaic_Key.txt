@@ -1,5 +1,5 @@
 name=Voltaic Key
-image=http://magiccards.info/scans/en/m11/219.jpg
+image=https://magiccards.info/scans/en/m11/219.jpg
 value=4.592
 rarity=U
 type=Artifact

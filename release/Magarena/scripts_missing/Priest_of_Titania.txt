@@ -1,5 +1,5 @@
 name=Priest of Titania
-image=http://magiccards.info/scans/en/c14/210.jpg
+image=https://magiccards.info/scans/en/c14/210.jpg
 value=2.500
 rarity=C
 type=Creature

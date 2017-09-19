@@ -1,5 +1,5 @@
 name=Striking Sliver
-image=http://magiccards.info/scans/en/m14/157.jpg
+image=https://magiccards.info/scans/en/m14/157.jpg
 value=3.341
 rarity=C
 type=Creature

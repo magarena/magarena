@@ -1,5 +1,5 @@
 name=Ragamuffyn
-image=http://magiccards.info/scans/en/di/51.jpg
+image=https://magiccards.info/scans/en/di/51.jpg
 value=2.690
 rarity=U
 type=Creature

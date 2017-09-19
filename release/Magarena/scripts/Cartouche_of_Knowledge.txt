@@ -1,5 +1,5 @@
 name=Cartouche of Knowledge
-image=http://magiccards.info/scans/en/akh/45.jpg
+image=https://magiccards.info/scans/en/akh/45.jpg
 value=2.500
 rarity=C
 type=Enchantment

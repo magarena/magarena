@@ -1,5 +1,5 @@
 name=Watcher in the Web
-image=http://magiccards.info/scans/en/soi/239.jpg
+image=https://magiccards.info/scans/en/soi/239.jpg
 value=2.500
 rarity=C
 type=Creature

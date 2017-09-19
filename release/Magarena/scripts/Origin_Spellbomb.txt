@@ -1,5 +1,5 @@
 name=Origin Spellbomb
-image=http://magiccards.info/scans/en/som/189.jpg
+image=https://magiccards.info/scans/en/som/189.jpg
 value=3.586
 rarity=C
 type=Artifact

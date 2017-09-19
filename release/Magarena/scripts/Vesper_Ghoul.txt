@@ -1,5 +1,5 @@
 name=Vesper Ghoul
-image=http://magiccards.info/scans/en/di/57.jpg
+image=https://magiccards.info/scans/en/di/57.jpg
 value=2.062
 rarity=C
 type=Creature

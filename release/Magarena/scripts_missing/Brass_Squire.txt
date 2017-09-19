@@ -1,5 +1,5 @@
 name=Brass Squire
-image=http://magiccards.info/scans/en/mbs/101.jpg
+image=https://magiccards.info/scans/en/mbs/101.jpg
 value=3.658
 rarity=U
 type=Artifact,Creature

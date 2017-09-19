@@ -1,5 +1,5 @@
 name=Narset Transcendent
-image=http://magiccards.info/scans/en/dtk/225.jpg
+image=https://magiccards.info/scans/en/dtk/225.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

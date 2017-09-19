@@ -1,5 +1,5 @@
 name=Still Life
-image=http://magiccards.info/scans/en/od/275.jpg
+image=https://magiccards.info/scans/en/od/275.jpg
 value=2.804
 rarity=U
 type=Enchantment

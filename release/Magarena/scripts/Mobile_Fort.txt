@@ -1,5 +1,5 @@
 name=Mobile Fort
-image=http://magiccards.info/scans/en/us/303.jpg
+image=https://magiccards.info/scans/en/us/303.jpg
 value=3.422
 rarity=U
 type=Artifact,Creature

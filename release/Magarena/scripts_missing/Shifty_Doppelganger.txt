@@ -1,5 +1,5 @@
 name=Shifty Doppelganger
-image=http://magiccards.info/scans/en/od/101.jpg
+image=https://magiccards.info/scans/en/od/101.jpg
 value=3.935
 rarity=R
 type=Creature

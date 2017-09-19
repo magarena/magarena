@@ -1,5 +1,5 @@
 name=Goldmeadow Stalwart
-image=http://magiccards.info/scans/en/lw/18.jpg
+image=https://magiccards.info/scans/en/lw/18.jpg
 value=3.984
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Spirit Away
-image=http://magiccards.info/scans/en/avr/76.jpg
+image=https://magiccards.info/scans/en/avr/76.jpg
 value=2.929
 rarity=R
 type=Enchantment

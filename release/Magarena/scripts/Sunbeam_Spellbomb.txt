@@ -1,5 +1,5 @@
 name=Sunbeam Spellbomb
-image=http://magiccards.info/scans/en/mi/250.jpg
+image=https://magiccards.info/scans/en/mi/250.jpg
 value=3.403
 rarity=C
 type=Artifact

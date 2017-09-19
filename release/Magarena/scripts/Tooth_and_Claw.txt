@@ -1,5 +1,5 @@
 name=Tooth and Claw
-image=http://magiccards.info/scans/en/ema/151.jpg
+image=https://magiccards.info/scans/en/ema/151.jpg
 value=3.400
 rarity=U
 type=Enchantment

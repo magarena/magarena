@@ -1,6 +1,6 @@
 name=7/7 green Elemental creature token with trample
 token=Elemental
-image=http://magiccards.info/extras/token/duel-decks-elves-vs-goblins/elemental.jpg
+image=https://magiccards.info/extras/token/duel-decks-elves-vs-goblins/elemental.jpg
 value=5
 type=Creature
 subtype=Elemental

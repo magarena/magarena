@@ -1,5 +1,5 @@
 name=Putrefy
-image=http://magiccards.info/scans/en/mm3/179.jpg
+image=https://magiccards.info/scans/en/mm3/179.jpg
 image_updated=2017-08-08
 value=4.305
 removal=5

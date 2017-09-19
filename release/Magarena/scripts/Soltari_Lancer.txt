@@ -1,5 +1,5 @@
 name=Soltari Lancer
-image=http://magiccards.info/scans/en/tp/256.jpg
+image=https://magiccards.info/scans/en/tp/256.jpg
 value=3.453
 rarity=C
 type=Creature

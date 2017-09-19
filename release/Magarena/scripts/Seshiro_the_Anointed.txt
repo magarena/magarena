@@ -1,5 +1,5 @@
 name=Seshiro the Anointed
-image=http://magiccards.info/scans/en/chk/241.jpg
+image=https://magiccards.info/scans/en/chk/241.jpg
 value=4.045
 rarity=R
 type=Legendary,Creature

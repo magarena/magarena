@@ -1,5 +1,5 @@
 name=Ashling the Pilgrim
-image=http://magiccards.info/scans/en/lw/149.jpg
+image=https://magiccards.info/scans/en/lw/149.jpg
 value=4.019
 rarity=R
 type=Legendary,Creature

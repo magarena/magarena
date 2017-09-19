@@ -1,5 +1,5 @@
 name=Flow of Maggots
-image=http://magiccards.info/scans/en/ia/13.jpg
+image=https://magiccards.info/scans/en/ia/13.jpg
 value=1.750
 rarity=R
 type=Creature

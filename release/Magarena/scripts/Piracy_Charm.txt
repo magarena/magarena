@@ -1,5 +1,5 @@
 name=Piracy Charm
-image=http://magiccards.info/scans/en/pc/58.jpg
+image=https://magiccards.info/scans/en/pc/58.jpg
 value=4.087
 rarity=C
 type=Instant

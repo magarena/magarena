@@ -1,5 +1,5 @@
 name=Mad Dog
-image=http://magiccards.info/scans/en/od/202.jpg
+image=https://magiccards.info/scans/en/od/202.jpg
 value=1.513
 rarity=C
 type=Creature

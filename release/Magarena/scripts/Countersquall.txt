@@ -1,5 +1,5 @@
 name=Countersquall
-image=http://magiccards.info/scans/en/cfx/103.jpg
+image=https://magiccards.info/scans/en/cfx/103.jpg
 value=3.975
 rarity=U
 type=Instant

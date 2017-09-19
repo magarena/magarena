@@ -1,5 +1,5 @@
 name=Moriok Scavenger
-image=http://magiccards.info/scans/en/mi/68.jpg
+image=https://magiccards.info/scans/en/mi/68.jpg
 value=3.297
 rarity=C
 type=Creature

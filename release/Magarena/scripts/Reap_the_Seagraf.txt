@@ -1,5 +1,5 @@
 name=Reap the Seagraf
-image=http://magiccards.info/scans/en/dka/72.jpg
+image=https://magiccards.info/scans/en/dka/72.jpg
 value=2.260
 rarity=C
 type=Sorcery

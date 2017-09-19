@@ -1,5 +1,5 @@
 name=Ghost-Lit Nourisher
-image=http://magiccards.info/scans/en/sok/131.jpg
+image=https://magiccards.info/scans/en/sok/131.jpg
 value=2.241
 rarity=U
 type=Creature

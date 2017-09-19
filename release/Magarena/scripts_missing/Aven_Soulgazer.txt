@@ -1,5 +1,5 @@
 name=Aven Soulgazer
-image=http://magiccards.info/scans/en/on/8.jpg
+image=https://magiccards.info/scans/en/on/8.jpg
 value=1.815
 rarity=U
 type=Creature

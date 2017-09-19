@@ -1,5 +1,5 @@
 name=Blighted Bat
-image=http://magiccards.info/scans/en/akh/80.jpg
+image=https://magiccards.info/scans/en/akh/80.jpg
 value=2.500
 rarity=C
 type=Creature

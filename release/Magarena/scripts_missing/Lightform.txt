@@ -1,5 +1,5 @@
 name=Lightform
-image=http://magiccards.info/scans/en/frf/16.jpg
+image=https://magiccards.info/scans/en/frf/16.jpg
 value=2.500
 rarity=U
 type=Enchantment

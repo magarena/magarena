@@ -1,5 +1,5 @@
 name=Punishment
-image=http://magiccards.info/scans/en/di/150b.jpg
+image=https://magiccards.info/scans/en/di/150b.jpg
 value=4.217
 rarity=R
 type=Sorcery

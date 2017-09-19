@@ -1,6 +1,6 @@
 name=1/1 white Bird creature token with flying
 token=Bird
-image=http://magiccards.info/extras/token/zendikar/bird.jpg
+image=https://magiccards.info/extras/token/zendikar/bird.jpg
 value=1
 type=Creature
 subtype=Bird

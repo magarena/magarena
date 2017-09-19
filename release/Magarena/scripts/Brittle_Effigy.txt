@@ -1,5 +1,5 @@
 name=Brittle Effigy
-image=http://magiccards.info/scans/en/m11/202.jpg
+image=https://magiccards.info/scans/en/m11/202.jpg
 value=4.034
 removal=4
 rarity=R

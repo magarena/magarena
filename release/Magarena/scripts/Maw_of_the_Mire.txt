@@ -1,5 +1,5 @@
 name=Maw of the Mire
-image=http://magiccards.info/scans/en/isd/108.jpg
+image=https://magiccards.info/scans/en/isd/108.jpg
 value=2.123
 removal=3
 rarity=C

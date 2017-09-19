@@ -1,5 +1,5 @@
 name=Drunau Corpse Trawler
-image=http://magiccards.info/scans/en/soi/57.jpg
+image=https://magiccards.info/scans/en/soi/57.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dragon's Eye Sentry
-image=http://magiccards.info/scans/en/dtk/11.jpg
+image=https://magiccards.info/scans/en/dtk/11.jpg
 value=2.500
 rarity=C
 type=Creature

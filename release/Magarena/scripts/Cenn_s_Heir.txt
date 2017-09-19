@@ -1,5 +1,5 @@
 name=Cenn's Heir
-image=http://magiccards.info/scans/en/lw/8.jpg
+image=https://magiccards.info/scans/en/lw/8.jpg
 value=3.373
 rarity=C
 type=Creature

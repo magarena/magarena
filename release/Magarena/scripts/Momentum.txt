@@ -1,5 +1,5 @@
 name=Momentum
-image=http://magiccards.info/scans/en/ud/113.jpg
+image=https://magiccards.info/scans/en/ud/113.jpg
 value=2.819
 rarity=U
 type=Enchantment

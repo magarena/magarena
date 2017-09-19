@@ -1,5 +1,5 @@
 name=Devout Harpist
-image=http://magiccards.info/scans/en/ul/6.jpg
+image=https://magiccards.info/scans/en/ul/6.jpg
 value=3.305
 rarity=C
 type=Creature

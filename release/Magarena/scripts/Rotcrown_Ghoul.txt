@@ -1,5 +1,5 @@
 name=Rotcrown Ghoul
-image=http://magiccards.info/scans/en/avr/72.jpg
+image=https://magiccards.info/scans/en/avr/72.jpg
 value=1.962
 rarity=C
 type=Creature

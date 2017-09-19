@@ -1,5 +1,5 @@
 name=Testament of Faith
-image=http://magiccards.info/scans/en/od/55.jpg
+image=https://magiccards.info/scans/en/od/55.jpg
 value=2.679
 rarity=U
 type=Enchantment

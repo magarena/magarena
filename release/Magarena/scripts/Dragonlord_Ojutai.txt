@@ -1,5 +1,5 @@
 name=Dragonlord Ojutai
-image=http://magiccards.info/scans/en/dtk/219.jpg
+image=https://magiccards.info/scans/en/dtk/219.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

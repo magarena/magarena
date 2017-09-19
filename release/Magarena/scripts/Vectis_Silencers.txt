@@ -1,5 +1,5 @@
 name=Vectis Silencers
-image=http://magiccards.info/scans/en/ala/62.jpg
+image=https://magiccards.info/scans/en/ala/62.jpg
 value=1.437
 rarity=C
 type=Artifact,Creature

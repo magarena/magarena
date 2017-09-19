@@ -1,5 +1,5 @@
 name=Springjack Shepherd
-image=http://magiccards.info/scans/en/eve/15.jpg
+image=https://magiccards.info/scans/en/eve/15.jpg
 value=3.708
 rarity=U
 type=Creature

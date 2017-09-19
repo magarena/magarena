@@ -1,5 +1,5 @@
 name=War-Torch Goblin
-image=http://magiccards.info/scans/en/rav/151.jpg
+image=https://magiccards.info/scans/en/rav/151.jpg
 value=2.717
 rarity=C
 type=Creature

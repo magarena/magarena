@@ -1,5 +1,5 @@
 name=Flickering Spirit
-image=http://magiccards.info/scans/en/ts/17.jpg
+image=https://magiccards.info/scans/en/ts/17.jpg
 value=2.224
 rarity=C
 type=Creature

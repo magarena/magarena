@@ -1,5 +1,5 @@
 name=Diplomatic Immunity
-image=http://magiccards.info/scans/en/mm/75.jpg
+image=https://magiccards.info/scans/en/mm/75.jpg
 value=4.277
 rarity=C
 type=Enchantment

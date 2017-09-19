@@ -1,5 +1,5 @@
 name=Rishkar, Peema Renegade
-image=http://magiccards.info/scans/en/aer/122.jpg
+image=https://magiccards.info/scans/en/aer/122.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

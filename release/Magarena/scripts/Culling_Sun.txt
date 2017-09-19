@@ -1,5 +1,5 @@
 name=Culling Sun
-image=http://magiccards.info/scans/en/gp/109.jpg
+image=https://magiccards.info/scans/en/gp/109.jpg
 value=3.358
 rarity=R
 type=Sorcery

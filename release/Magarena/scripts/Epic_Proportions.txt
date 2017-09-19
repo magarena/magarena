@@ -1,5 +1,5 @@
 name=Epic Proportions
-image=http://magiccards.info/scans/en/lw/209.jpg
+image=https://magiccards.info/scans/en/lw/209.jpg
 value=3.686
 rarity=R
 type=Enchantment

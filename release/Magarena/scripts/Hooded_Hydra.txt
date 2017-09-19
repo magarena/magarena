@@ -1,5 +1,5 @@
 name=Hooded Hydra
-image=http://magiccards.info/scans/en/ktk/136.jpg
+image=https://magiccards.info/scans/en/ktk/136.jpg
 value=4.375
 rarity=M
 type=Creature

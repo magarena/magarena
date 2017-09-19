@@ -1,5 +1,5 @@
 name=Recurring Insight
-image=http://magiccards.info/scans/en/roe/82.jpg
+image=https://magiccards.info/scans/en/roe/82.jpg
 value=3.107
 rarity=R
 type=Sorcery

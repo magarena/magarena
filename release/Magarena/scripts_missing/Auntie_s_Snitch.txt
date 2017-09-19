@@ -1,5 +1,5 @@
 name=Auntie's Snitch
-image=http://magiccards.info/scans/en/mma/72.jpg
+image=https://magiccards.info/scans/en/mma/72.jpg
 value=3.029
 rarity=U
 type=Creature

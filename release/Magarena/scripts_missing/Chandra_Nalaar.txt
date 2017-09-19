@@ -1,5 +1,5 @@
 name=Chandra Nalaar
-image=http://magiccards.info/scans/en/m11/127.jpg
+image=https://magiccards.info/scans/en/m11/127.jpg
 value=2.500
 rarity=M
 type=Legendary,Planeswalker

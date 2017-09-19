@@ -1,5 +1,5 @@
 name=Gift of Granite
-image=http://magiccards.info/scans/en/fut/7.jpg
+image=https://magiccards.info/scans/en/fut/7.jpg
 value=2.087
 rarity=C
 type=Enchantment

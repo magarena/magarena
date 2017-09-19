@@ -1,5 +1,5 @@
 name=Mangara's Equity
-image=http://magiccards.info/scans/en/mr/230.jpg
+image=https://magiccards.info/scans/en/mr/230.jpg
 value=2.736
 rarity=U
 type=Enchantment

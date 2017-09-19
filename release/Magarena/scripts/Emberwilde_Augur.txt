@@ -1,5 +1,5 @@
 name=Emberwilde Augur
-image=http://magiccards.info/scans/en/fut/97.jpg
+image=https://magiccards.info/scans/en/fut/97.jpg
 image_updated=2016-12-02
 value=2.907
 rarity=C

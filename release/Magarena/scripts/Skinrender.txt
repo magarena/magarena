@@ -1,5 +1,5 @@
 name=Skinrender
-image=http://magiccards.info/scans/en/som/78.jpg
+image=https://magiccards.info/scans/en/som/78.jpg
 value=4.185
 rarity=U
 removal=3

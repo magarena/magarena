@@ -1,5 +1,5 @@
 name=Shivan Wumpus
-image=http://magiccards.info/scans/en/pc/121.jpg
+image=https://magiccards.info/scans/en/pc/121.jpg
 value=4.000
 rarity=R
 type=Creature

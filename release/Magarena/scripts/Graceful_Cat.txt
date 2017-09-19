@@ -1,5 +1,5 @@
 name=Graceful Cat
-image=http://magiccards.info/scans/en/akh/273.jpg
+image=https://magiccards.info/scans/en/akh/273.jpg
 value=2.500
 rarity=C
 type=Creature

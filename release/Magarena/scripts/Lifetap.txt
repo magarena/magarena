@@ -1,5 +1,5 @@
 name=Lifetap
-image=http://magiccards.info/scans/en/5e/99.jpg
+image=https://magiccards.info/scans/en/5e/99.jpg
 value=3.029
 rarity=U
 type=Enchantment

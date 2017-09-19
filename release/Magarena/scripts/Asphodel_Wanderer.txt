@@ -1,5 +1,5 @@
 name=Asphodel Wanderer
-image=http://magiccards.info/scans/en/ths/77.jpg
+image=https://magiccards.info/scans/en/ths/77.jpg
 value=2.239
 rarity=C
 type=Creature

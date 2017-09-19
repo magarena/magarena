@@ -1,5 +1,5 @@
 name=Castle Sengir
-image=http://magiccards.info/scans/en/hl/138.jpg
+image=https://magiccards.info/scans/en/hl/138.jpg
 value=1.735
 rarity=U
 type=Land

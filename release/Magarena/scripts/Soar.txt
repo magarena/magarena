@@ -1,5 +1,5 @@
 name=Soar
-image=http://magiccards.info/scans/en/mr/93.jpg
+image=https://magiccards.info/scans/en/mr/93.jpg
 value=2.500
 rarity=C
 type=Enchantment

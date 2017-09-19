@@ -1,5 +1,5 @@
 name=Deglamer
-image=http://magiccards.info/scans/en/mt/118.jpg
+image=https://magiccards.info/scans/en/mt/118.jpg
 value=4.357
 rarity=C
 type=Instant

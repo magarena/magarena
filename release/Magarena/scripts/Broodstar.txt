@@ -1,5 +1,5 @@
 name=Broodstar
-image=http://magiccards.info/scans/en/mi/31.jpg
+image=https://magiccards.info/scans/en/mi/31.jpg
 image_updated=2016-12-13
 value=4.347
 rarity=R

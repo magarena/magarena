@@ -1,5 +1,5 @@
 name=Nature's Kiss
-image=http://magiccards.info/scans/en/wl/78.jpg
+image=https://magiccards.info/scans/en/wl/78.jpg
 value=2.467
 rarity=C
 type=Enchantment

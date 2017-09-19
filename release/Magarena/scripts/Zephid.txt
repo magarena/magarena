@@ -1,5 +1,5 @@
 name=Zephid
-image=http://magiccards.info/scans/en/us/113.jpg
+image=https://magiccards.info/scans/en/us/113.jpg
 value=3.244
 rarity=R
 type=Creature

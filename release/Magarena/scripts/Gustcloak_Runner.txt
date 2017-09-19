@@ -1,5 +1,5 @@
 name=Gustcloak Runner
-image=http://magiccards.info/scans/en/on/35.jpg
+image=https://magiccards.info/scans/en/on/35.jpg
 value=3.047
 rarity=C
 type=Creature

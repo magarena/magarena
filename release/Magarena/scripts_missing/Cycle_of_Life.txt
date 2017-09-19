@@ -1,5 +1,5 @@
 name=Cycle of Life
-image=http://magiccards.info/scans/en/mr/109.jpg
+image=https://magiccards.info/scans/en/mr/109.jpg
 value=2.359
 rarity=R
 type=Enchantment

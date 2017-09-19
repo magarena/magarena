@@ -1,5 +1,5 @@
 name=Rabid Wombat
-image=http://magiccards.info/scans/en/5e/181.jpg
+image=https://magiccards.info/scans/en/5e/181.jpg
 value=3.325
 rarity=U
 type=Creature

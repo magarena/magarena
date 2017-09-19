@@ -1,5 +1,5 @@
 name=Rolling Earthquake
-image=http://magiccards.info/scans/en/p3k/122.jpg
+image=https://magiccards.info/scans/en/p3k/122.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Martyrs of Korlis
-image=http://magiccards.info/scans/en/aq/99.jpg
+image=https://magiccards.info/scans/en/aq/99.jpg
 value=2.963
 rarity=U
 type=Creature

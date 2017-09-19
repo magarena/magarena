@@ -1,5 +1,5 @@
 name=Agent of Erebos
-image=http://magiccards.info/scans/en/jou/59.jpg
+image=https://magiccards.info/scans/en/jou/59.jpg
 value=3.204
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Hunting Drake
-image=http://magiccards.info/scans/en/ps/27.jpg
+image=https://magiccards.info/scans/en/ps/27.jpg
 value=2.948
 rarity=C
 type=Creature

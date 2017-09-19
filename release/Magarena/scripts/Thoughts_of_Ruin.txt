@@ -1,5 +1,5 @@
 name=Thoughts of Ruin
-image=http://magiccards.info/scans/en/sok/118.jpg
+image=https://magiccards.info/scans/en/sok/118.jpg
 value=2.629
 rarity=R
 type=Sorcery

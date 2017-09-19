@@ -1,5 +1,5 @@
 name=Soul Sculptor
-image=http://magiccards.info/scans/en/us/53.jpg
+image=https://magiccards.info/scans/en/us/53.jpg
 value=3.814
 rarity=R
 type=Creature

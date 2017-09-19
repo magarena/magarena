@@ -1,5 +1,5 @@
 name=Master of Waves
-image=http://magiccards.info/scans/en/ths/53.jpg
+image=https://magiccards.info/scans/en/ths/53.jpg
 value=3.659
 rarity=M
 type=Creature

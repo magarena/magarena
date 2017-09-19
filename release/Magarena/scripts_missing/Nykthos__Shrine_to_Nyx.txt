@@ -1,5 +1,5 @@
 name=Nykthos, Shrine to Nyx
-image=http://magiccards.info/scans/en/ths/223.jpg
+image=https://magiccards.info/scans/en/ths/223.jpg
 value=3.717
 rarity=R
 type=Legendary,Land

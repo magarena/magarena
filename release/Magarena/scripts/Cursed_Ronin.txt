@@ -1,5 +1,5 @@
 name=Cursed Ronin
-image=http://magiccards.info/scans/en/chk/107.jpg
+image=https://magiccards.info/scans/en/chk/107.jpg
 value=2.750
 rarity=C
 type=Creature

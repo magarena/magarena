@@ -1,5 +1,5 @@
 name=Brightflame
-image=http://magiccards.info/scans/en/rav/194.jpg
+image=https://magiccards.info/scans/en/rav/194.jpg
 value=3.966
 rarity=R
 type=Sorcery

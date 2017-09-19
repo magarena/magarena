@@ -1,5 +1,5 @@
 name=Sage of Epityr
-image=http://magiccards.info/scans/en/ts/74.jpg
+image=https://magiccards.info/scans/en/ts/74.jpg
 value=4.300
 rarity=C
 type=Creature

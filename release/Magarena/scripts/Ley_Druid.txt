@@ -1,5 +1,5 @@
 name=Ley Druid
-image=http://magiccards.info/scans/en/9e/251.jpg
+image=https://magiccards.info/scans/en/9e/251.jpg
 value=2.650
 rarity=U
 type=Creature

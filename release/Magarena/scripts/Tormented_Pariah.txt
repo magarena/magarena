@@ -1,5 +1,5 @@
 name=Tormented Pariah
-image=http://magiccards.info/scans/en/isd/165a.jpg
+image=https://magiccards.info/scans/en/isd/165a.jpg
 value=2.581
 rarity=C
 type=Creature

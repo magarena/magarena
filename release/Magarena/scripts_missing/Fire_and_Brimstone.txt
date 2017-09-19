@@ -1,5 +1,5 @@
 name=Fire and Brimstone
-image=http://magiccards.info/scans/en/dk/82.jpg
+image=https://magiccards.info/scans/en/dk/82.jpg
 value=1.765
 rarity=U
 type=Instant

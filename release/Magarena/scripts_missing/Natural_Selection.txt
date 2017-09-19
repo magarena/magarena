@@ -1,5 +1,5 @@
 name=Natural Selection
-image=http://magiccards.info/scans/en/un/121.jpg
+image=https://magiccards.info/scans/en/un/121.jpg
 value=3.738
 rarity=R
 type=Instant

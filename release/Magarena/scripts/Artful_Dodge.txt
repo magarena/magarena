@@ -1,5 +1,5 @@
 name=Artful Dodge
-image=http://magiccards.info/scans/en/dka/27.jpg
+image=https://magiccards.info/scans/en/dka/27.jpg
 value=3.675
 rarity=C
 type=Sorcery

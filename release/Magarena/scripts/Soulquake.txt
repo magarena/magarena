@@ -1,5 +1,5 @@
 name=Soulquake
-image=http://magiccards.info/scans/en/arb/30.jpg
+image=https://magiccards.info/scans/en/arb/30.jpg
 value=2.293
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Eureka
-image=http://magiccards.info/scans/en/lg/99.jpg
+image=https://magiccards.info/scans/en/lg/99.jpg
 value=4.500
 rarity=R
 type=Sorcery

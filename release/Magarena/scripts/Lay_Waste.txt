@@ -1,5 +1,5 @@
 name=Lay Waste
-image=http://magiccards.info/scans/en/on/216.jpg
+image=https://magiccards.info/scans/en/on/216.jpg
 value=2.783
 removal=2
 rarity=C

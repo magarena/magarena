@@ -1,5 +1,5 @@
 name=Nicol Bolas, Planeswalker
-image=http://magiccards.info/scans/en/m13/199.jpg
+image=https://magiccards.info/scans/en/m13/199.jpg
 value=4.132
 rarity=M
 type=Legendary,Planeswalker

@@ -1,5 +1,5 @@
 name=Nim Abomination
-image=http://magiccards.info/scans/en/ds/49.jpg
+image=https://magiccards.info/scans/en/ds/49.jpg
 value=2.548
 rarity=U
 type=Creature

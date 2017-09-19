@@ -1,5 +1,5 @@
 name=Stupefying Touch
-image=http://magiccards.info/scans/en/ema/74.jpg
+image=https://magiccards.info/scans/en/ema/74.jpg
 value=3.017
 rarity=C
 type=Enchantment

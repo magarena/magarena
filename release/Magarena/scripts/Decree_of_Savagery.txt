@@ -1,5 +1,5 @@
 name=Decree of Savagery
-image=http://magiccards.info/scans/en/sc/115.jpg
+image=https://magiccards.info/scans/en/sc/115.jpg
 value=4.128
 rarity=R
 type=Instant

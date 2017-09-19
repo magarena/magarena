@@ -1,5 +1,5 @@
 name=Hematite Talisman
-image=http://magiccards.info/scans/en/ia/295.jpg
+image=https://magiccards.info/scans/en/ia/295.jpg
 value=1.724
 rarity=U
 type=Artifact

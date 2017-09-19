@@ -1,5 +1,5 @@
 name=Vanquish the Foul
-image=http://magiccards.info/scans/en/ths/35.jpg
+image=https://magiccards.info/scans/en/ths/35.jpg
 value=1.936
 rarity=U
 type=Sorcery

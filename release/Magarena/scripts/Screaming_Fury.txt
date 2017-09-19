@@ -1,5 +1,5 @@
 name=Screaming Fury
-image=http://magiccards.info/scans/en/5dn/78.jpg
+image=https://magiccards.info/scans/en/5dn/78.jpg
 value=2.731
 rarity=C
 type=Sorcery

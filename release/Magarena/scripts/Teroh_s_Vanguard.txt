@@ -1,5 +1,5 @@
 name=Teroh's Vanguard
-image=http://magiccards.info/scans/en/tr/19.jpg
+image=https://magiccards.info/scans/en/tr/19.jpg
 value=2.452
 rarity=U
 type=Creature

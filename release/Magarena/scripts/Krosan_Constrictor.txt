@@ -1,5 +1,5 @@
 name=Krosan Constrictor
-image=http://magiccards.info/scans/en/tr/129.jpg
+image=https://magiccards.info/scans/en/tr/129.jpg
 value=1.591
 rarity=C
 type=Creature

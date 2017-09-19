@@ -1,5 +1,5 @@
 name=Witch Hunt
-image=http://magiccards.info/scans/en/c13/133.jpg
+image=https://magiccards.info/scans/en/c13/133.jpg
 value=3.705
 rarity=R
 type=Enchantment

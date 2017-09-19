@@ -1,5 +1,5 @@
 name=Blind-Spot Giant
-image=http://magiccards.info/scans/en/mma/105.jpg
+image=https://magiccards.info/scans/en/mma/105.jpg
 value=3.031
 rarity=C
 type=Creature

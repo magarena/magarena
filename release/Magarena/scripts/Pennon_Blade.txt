@@ -1,5 +1,5 @@
 name=Pennon Blade
-image=http://magiccards.info/scans/en/roe/221.jpg
+image=https://magiccards.info/scans/en/roe/221.jpg
 value=3.264
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Inner Sanctum
-image=http://magiccards.info/scans/en/wl/134.jpg
+image=https://magiccards.info/scans/en/wl/134.jpg
 value=2.983
 rarity=R
 type=Enchantment

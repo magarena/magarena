@@ -1,5 +1,5 @@
 name=Patrician's Scorn
-image=http://magiccards.info/scans/en/fut/29.jpg
+image=https://magiccards.info/scans/en/fut/29.jpg
 value=3.423
 rarity=C
 type=Instant

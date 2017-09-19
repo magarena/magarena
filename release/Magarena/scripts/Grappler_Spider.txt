@@ -1,5 +1,5 @@
 name=Grappler Spider
-image=http://magiccards.info/scans/en/wwk/102.jpg
+image=https://magiccards.info/scans/en/wwk/102.jpg
 value=1.652
 rarity=C
 type=Creature

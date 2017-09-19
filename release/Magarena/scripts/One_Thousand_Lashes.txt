@@ -1,5 +1,5 @@
 name=One Thousand Lashes
-image=http://magiccards.info/scans/en/gtc/183.jpg
+image=https://magiccards.info/scans/en/gtc/183.jpg
 value=3.068
 rarity=U
 type=Enchantment

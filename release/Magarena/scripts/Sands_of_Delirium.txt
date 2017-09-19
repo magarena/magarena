@@ -1,5 +1,5 @@
 name=Sands of Delirium
-image=http://magiccards.info/scans/en/m13/216.jpg
+image=https://magiccards.info/scans/en/m13/216.jpg
 value=3.831
 rarity=R
 type=Artifact

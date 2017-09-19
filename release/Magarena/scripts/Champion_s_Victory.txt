@@ -1,5 +1,5 @@
 name=Champion's Victory
-image=http://magiccards.info/scans/en/p3k/39.jpg
+image=https://magiccards.info/scans/en/p3k/39.jpg
 value=1.662
 rarity=U
 type=Instant

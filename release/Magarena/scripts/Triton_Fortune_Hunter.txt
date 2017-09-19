@@ -1,5 +1,5 @@
 name=Triton Fortune Hunter
-image=http://magiccards.info/scans/en/ths/69.jpg
+image=https://magiccards.info/scans/en/ths/69.jpg
 value=3.421
 rarity=U
 type=Creature

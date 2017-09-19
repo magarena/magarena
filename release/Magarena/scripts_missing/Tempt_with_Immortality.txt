@@ -1,5 +1,5 @@
 name=Tempt with Immortality
-image=http://magiccards.info/scans/en/c13/95.jpg
+image=https://magiccards.info/scans/en/c13/95.jpg
 value=3.725
 rarity=R
 type=Sorcery

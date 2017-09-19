@@ -1,5 +1,5 @@
 name=Epic Struggle
-image=http://magiccards.info/scans/en/ju/112.jpg
+image=https://magiccards.info/scans/en/ju/112.jpg
 value=3.525
 rarity=R
 type=Enchantment

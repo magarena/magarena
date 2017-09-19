@@ -1,5 +1,5 @@
 name=Sword of the Meek
-image=http://magiccards.info/scans/en/fut/165.jpg
+image=https://magiccards.info/scans/en/fut/165.jpg
 value=4.060
 rarity=U
 type=Artifact

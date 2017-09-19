@@ -1,5 +1,5 @@
 name=Wing Puncture
-image=http://magiccards.info/scans/en/som/133.jpg
+image=https://magiccards.info/scans/en/som/133.jpg
 value=2.325
 rarity=C
 type=Instant

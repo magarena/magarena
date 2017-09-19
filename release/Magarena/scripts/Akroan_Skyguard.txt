@@ -1,5 +1,5 @@
 name=Akroan Skyguard
-image=http://magiccards.info/scans/en/bng/3.jpg
+image=https://magiccards.info/scans/en/bng/3.jpg
 value=3.764
 rarity=C
 type=Creature

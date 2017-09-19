@@ -1,5 +1,5 @@
 name=Traproot Kami
-image=http://magiccards.info/scans/en/bok/147.jpg
+image=https://magiccards.info/scans/en/bok/147.jpg
 value=4.108
 rarity=C
 type=Creature

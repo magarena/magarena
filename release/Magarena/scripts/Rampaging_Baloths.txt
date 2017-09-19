@@ -1,5 +1,5 @@
 name=Rampaging Baloths
-image=http://magiccards.info/scans/en/c14/212.jpg
+image=https://magiccards.info/scans/en/c14/212.jpg
 value=3.750
 rarity=M
 type=Creature

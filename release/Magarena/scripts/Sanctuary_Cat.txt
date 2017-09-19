@@ -1,5 +1,5 @@
 name=Sanctuary Cat
-image=http://magiccards.info/scans/en/dka/19.jpg
+image=https://magiccards.info/scans/en/dka/19.jpg
 value=3.835
 rarity=C
 type=Creature

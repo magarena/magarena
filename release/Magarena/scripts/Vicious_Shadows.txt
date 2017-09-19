@@ -1,5 +1,5 @@
 name=Vicious Shadows
-image=http://magiccards.info/scans/en/ala/119.jpg
+image=https://magiccards.info/scans/en/ala/119.jpg
 value=2.680
 rarity=R
 type=Enchantment

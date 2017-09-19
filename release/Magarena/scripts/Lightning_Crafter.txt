@@ -1,5 +1,5 @@
 name=Lightning Crafter
-image=http://magiccards.info/scans/en/mt/93.jpg
+image=https://magiccards.info/scans/en/mt/93.jpg
 value=3.767
 removal=2
 rarity=R

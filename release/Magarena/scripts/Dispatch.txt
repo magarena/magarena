@@ -1,5 +1,5 @@
 name=Dispatch
-image=http://magiccards.info/scans/en/mm2/15.jpg
+image=https://magiccards.info/scans/en/mm2/15.jpg
 value=3.812
 rarity=U
 type=Instant

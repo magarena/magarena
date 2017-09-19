@@ -1,5 +1,5 @@
 name=Red Ward
-image=http://magiccards.info/scans/en/4e/294.jpg
+image=https://magiccards.info/scans/en/4e/294.jpg
 value=2.458
 rarity=U
 type=Enchantment

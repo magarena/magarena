@@ -1,5 +1,5 @@
 name=Viashino Cutthroat
-image=http://magiccards.info/scans/en/ul/94.jpg
+image=https://magiccards.info/scans/en/ul/94.jpg
 value=3.803
 rarity=U
 type=Creature

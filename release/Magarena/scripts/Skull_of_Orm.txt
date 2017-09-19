@@ -1,5 +1,5 @@
 name=Skull of Orm
-image=http://magiccards.info/scans/en/8e/313.jpg
+image=https://magiccards.info/scans/en/8e/313.jpg
 value=2.513
 rarity=R
 type=Artifact

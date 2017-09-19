@@ -1,5 +1,5 @@
 name=Sungrace Pegasus
-image=http://magiccards.info/scans/en/m15/38.jpg
+image=https://magiccards.info/scans/en/m15/38.jpg
 value=3.083
 rarity=C
 type=Creature

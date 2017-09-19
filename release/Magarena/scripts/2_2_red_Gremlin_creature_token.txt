@@ -1,6 +1,6 @@
 name=2/2 red Gremlin creature token
 token=Gremlin
-image=http://magiccards.info/extras/token/aether-revolt/gremlin.jpg
+image=https://magiccards.info/extras/token/aether-revolt/gremlin.jpg
 value=2
 pt=2/2
 color=R

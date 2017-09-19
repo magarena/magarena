@@ -1,5 +1,5 @@
 name=Temporal Manipulation
-image=http://magiccards.info/scans/en/po2/54.jpg
+image=https://magiccards.info/scans/en/po2/54.jpg
 value=3.976
 rarity=R
 type=Sorcery

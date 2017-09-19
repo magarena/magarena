@@ -1,5 +1,5 @@
 name=Snow-Covered Plains
-image=http://magiccards.info/scans/en/cs/151.jpg
+image=https://magiccards.info/scans/en/cs/151.jpg
 value=4.432
 rarity=B
 type=Basic,Snow,Land

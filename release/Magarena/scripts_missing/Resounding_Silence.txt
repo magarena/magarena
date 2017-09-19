@@ -1,5 +1,5 @@
 name=Resounding Silence
-image=http://magiccards.info/scans/en/ala/22.jpg
+image=https://magiccards.info/scans/en/ala/22.jpg
 value=2.452
 rarity=C
 type=Instant

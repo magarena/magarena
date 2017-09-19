@@ -1,5 +1,5 @@
 name=Energy Chamber
-image=http://magiccards.info/scans/en/5dn/117.jpg
+image=https://magiccards.info/scans/en/5dn/117.jpg
 image_updated=2016-12-02
 value=4.102
 rarity=U

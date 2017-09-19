@@ -1,5 +1,5 @@
 name=Dazzling Ramparts
-image=http://magiccards.info/scans/en/ktk/6.jpg
+image=https://magiccards.info/scans/en/ktk/6.jpg
 value=2.000
 rarity=U
 type=Creature

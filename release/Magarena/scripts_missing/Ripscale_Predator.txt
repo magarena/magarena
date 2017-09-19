@@ -1,5 +1,5 @@
 name=Ripscale Predator
-image=http://magiccards.info/scans/en/gtc/103.jpg
+image=https://magiccards.info/scans/en/gtc/103.jpg
 value=3.080
 rarity=U
 type=Creature

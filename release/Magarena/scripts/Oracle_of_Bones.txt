@@ -1,5 +1,5 @@
 name=Oracle of Bones
-image=http://magiccards.info/scans/en/bng/103.jpg
+image=https://magiccards.info/scans/en/bng/103.jpg
 value=3.762
 rarity=R
 type=Creature

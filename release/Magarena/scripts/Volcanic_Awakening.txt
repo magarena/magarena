@@ -1,5 +1,5 @@
 name=Volcanic Awakening
-image=http://magiccards.info/scans/en/ts/186.jpg
+image=https://magiccards.info/scans/en/ts/186.jpg
 value=2.878
 rarity=U
 type=Sorcery

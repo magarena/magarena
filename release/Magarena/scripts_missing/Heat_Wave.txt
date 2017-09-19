@@ -1,5 +1,5 @@
 name=Heat Wave
-image=http://magiccards.info/scans/en/vi/83.jpg
+image=https://magiccards.info/scans/en/vi/83.jpg
 value=3.278
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Pensive Minotaur
-image=http://magiccards.info/scans/en/jou/105.jpg
+image=https://magiccards.info/scans/en/jou/105.jpg
 value=2.827
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Festering Wound
-image=http://magiccards.info/scans/en/ud/61.jpg
+image=https://magiccards.info/scans/en/ud/61.jpg
 value=3.481
 rarity=U
 type=Enchantment

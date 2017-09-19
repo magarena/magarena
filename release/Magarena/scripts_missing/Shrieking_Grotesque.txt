@@ -1,5 +1,5 @@
 name=Shrieking Grotesque
-image=http://magiccards.info/scans/en/gp/15.jpg
+image=https://magiccards.info/scans/en/gp/15.jpg
 value=3.321
 rarity=C
 type=Creature

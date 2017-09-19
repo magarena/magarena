@@ -1,5 +1,5 @@
 name=Sacred Rites
-image=http://magiccards.info/scans/en/od/44.jpg
+image=https://magiccards.info/scans/en/od/44.jpg
 value=1.207
 rarity=C
 type=Instant

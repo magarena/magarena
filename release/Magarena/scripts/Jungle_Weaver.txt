@@ -1,5 +1,5 @@
 name=Jungle Weaver
-image=http://magiccards.info/scans/en/ala/134.jpg
+image=https://magiccards.info/scans/en/ala/134.jpg
 value=2.728
 rarity=C
 type=Creature

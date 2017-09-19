@@ -1,5 +1,5 @@
 name=Shrink
-image=http://magiccards.info/scans/en/5e/188.jpg
+image=https://magiccards.info/scans/en/5e/188.jpg
 value=3.050
 rarity=C
 type=Instant

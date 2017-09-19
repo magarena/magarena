@@ -1,5 +1,5 @@
 name=Crown of Doom
-image=http://magiccards.info/scans/en/c14/55.jpg
+image=https://magiccards.info/scans/en/c14/55.jpg
 value=2.500
 rarity=R
 type=Artifact

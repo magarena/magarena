@@ -1,5 +1,5 @@
 name=Leap of Flame
-image=http://magiccards.info/scans/en/gp/121.jpg
+image=https://magiccards.info/scans/en/gp/121.jpg
 value=2.942
 rarity=C
 type=Instant

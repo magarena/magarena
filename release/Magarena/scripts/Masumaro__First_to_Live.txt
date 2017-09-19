@@ -1,5 +1,5 @@
 name=Masumaro, First to Live
-image=http://magiccards.info/scans/en/sok/136.jpg
+image=https://magiccards.info/scans/en/sok/136.jpg
 value=3.227
 rarity=R
 type=Legendary,Creature

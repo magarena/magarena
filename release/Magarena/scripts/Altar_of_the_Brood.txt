@@ -1,5 +1,5 @@
 name=Altar of the Brood
-image=http://magiccards.info/scans/en/ktk/216.jpg
+image=https://magiccards.info/scans/en/ktk/216.jpg
 value=2.100
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Myojin of Night's Reach
-image=http://magiccards.info/scans/en/chk/126.jpg
+image=https://magiccards.info/scans/en/chk/126.jpg
 value=3.476
 rarity=R
 type=Legendary,Creature

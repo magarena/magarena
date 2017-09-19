@@ -1,5 +1,5 @@
 name=Rakeclaw Gargantuan
-image=http://magiccards.info/scans/en/ala/186.jpg
+image=https://magiccards.info/scans/en/ala/186.jpg
 value=3.542
 rarity=C
 type=Creature

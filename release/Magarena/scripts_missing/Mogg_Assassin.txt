@@ -1,5 +1,5 @@
 name=Mogg Assassin
-image=http://magiccards.info/scans/en/ex/88.jpg
+image=https://magiccards.info/scans/en/ex/88.jpg
 value=3.036
 rarity=U
 type=Creature

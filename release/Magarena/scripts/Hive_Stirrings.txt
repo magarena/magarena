@@ -1,5 +1,5 @@
 name=Hive Stirrings
-image=http://magiccards.info/scans/en/m14/21.jpg
+image=https://magiccards.info/scans/en/m14/21.jpg
 value=3.281
 rarity=C
 type=Sorcery

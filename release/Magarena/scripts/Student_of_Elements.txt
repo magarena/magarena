@@ -1,5 +1,5 @@
 name=Student of Elements
-image=http://magiccards.info/scans/en/chk/93a.jpg
+image=https://magiccards.info/scans/en/chk/93a.jpg
 value=3.390
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Silvergill Douser
-image=http://magiccards.info/scans/en/lw/87.jpg
+image=https://magiccards.info/scans/en/lw/87.jpg
 value=3.520
 rarity=C
 type=Creature

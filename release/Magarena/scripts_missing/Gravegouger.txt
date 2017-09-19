@@ -1,5 +1,5 @@
 name=Gravegouger
-image=http://magiccards.info/scans/en/tr/62.jpg
+image=https://magiccards.info/scans/en/tr/62.jpg
 value=2.167
 rarity=C
 type=Creature

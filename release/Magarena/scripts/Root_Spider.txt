@@ -1,5 +1,5 @@
 name=Root Spider
-image=http://magiccards.info/scans/en/hl/67.jpg
+image=https://magiccards.info/scans/en/hl/67.jpg
 value=2.284
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Aven Smokeweaver
-image=http://magiccards.info/scans/en/od/64.jpg
+image=https://magiccards.info/scans/en/od/64.jpg
 value=3.091
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sage's Row Denizen
-image=http://magiccards.info/scans/en/gtc/46.jpg
+image=https://magiccards.info/scans/en/gtc/46.jpg
 value=2.580
 rarity=C
 type=Creature

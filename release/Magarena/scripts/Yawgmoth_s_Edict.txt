@@ -1,5 +1,5 @@
 name=Yawgmoth's Edict
-image=http://magiccards.info/scans/en/7e/171.jpg
+image=https://magiccards.info/scans/en/7e/171.jpg
 value=3.550
 rarity=U
 type=Enchantment

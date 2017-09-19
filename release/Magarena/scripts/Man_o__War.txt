@@ -1,5 +1,5 @@
 name=Man-o'-War
-image=http://magiccards.info/scans/en/ema/59.jpg
+image=https://magiccards.info/scans/en/ema/59.jpg
 value=4.500
 removal=2
 rarity=C

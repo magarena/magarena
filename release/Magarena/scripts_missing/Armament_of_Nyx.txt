@@ -1,5 +1,5 @@
 name=Armament of Nyx
-image=http://magiccards.info/scans/en/jou/4.jpg
+image=https://magiccards.info/scans/en/jou/4.jpg
 value=2.929
 rarity=C
 type=Enchantment

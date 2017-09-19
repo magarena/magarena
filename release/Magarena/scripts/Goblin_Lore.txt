@@ -1,5 +1,5 @@
 name=Goblin Lore
-image=http://magiccards.info/scans/en/10e/208.jpg
+image=https://magiccards.info/scans/en/10e/208.jpg
 value=3.461
 rarity=U
 type=Sorcery

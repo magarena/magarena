@@ -1,5 +1,5 @@
 name=Ooze Garden
-image=http://magiccards.info/scans/en/ala/143.jpg
+image=https://magiccards.info/scans/en/ala/143.jpg
 value=2.971
 rarity=R
 type=Enchantment

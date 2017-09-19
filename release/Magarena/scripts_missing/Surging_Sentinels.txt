@@ -1,5 +1,5 @@
 name=Surging Sentinels
-image=http://magiccards.info/scans/en/cs/20.jpg
+image=https://magiccards.info/scans/en/cs/20.jpg
 value=2.081
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Killer Whale
-image=http://magiccards.info/scans/en/ex/37.jpg
+image=https://magiccards.info/scans/en/ex/37.jpg
 value=3.364
 rarity=U
 type=Creature

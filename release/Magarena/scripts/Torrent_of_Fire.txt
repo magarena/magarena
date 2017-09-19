@@ -1,5 +1,5 @@
 name=Torrent of Fire
-image=http://magiccards.info/scans/en/sc/107.jpg
+image=https://magiccards.info/scans/en/sc/107.jpg
 value=2.957
 rarity=C
 type=Sorcery

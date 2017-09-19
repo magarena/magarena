@@ -1,5 +1,5 @@
 name=Quest for Renewal
-image=http://magiccards.info/scans/en/wwk/110.jpg
+image=https://magiccards.info/scans/en/wwk/110.jpg
 value=3.792
 rarity=U
 type=Enchantment

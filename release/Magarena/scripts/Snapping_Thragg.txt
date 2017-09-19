@@ -1,5 +1,5 @@
 name=Snapping Thragg
-image=http://magiccards.info/scans/en/on/233.jpg
+image=https://magiccards.info/scans/en/on/233.jpg
 value=3.000
 rarity=U
 type=Creature

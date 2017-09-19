@@ -1,5 +1,5 @@
 name=Entangler
-image=http://magiccards.info/scans/en/pr/7.jpg
+image=https://magiccards.info/scans/en/pr/7.jpg
 value=3.894
 rarity=U
 type=Enchantment

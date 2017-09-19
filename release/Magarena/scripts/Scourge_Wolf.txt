@@ -1,5 +1,5 @@
 name=Scourge Wolf
-image=http://magiccards.info/scans/en/soi/179.jpg
+image=https://magiccards.info/scans/en/soi/179.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Mesa Enchantress
-image=http://magiccards.info/scans/en/ema/19.jpg
+image=https://magiccards.info/scans/en/ema/19.jpg
 value=3.871
 rarity=U
 type=Creature

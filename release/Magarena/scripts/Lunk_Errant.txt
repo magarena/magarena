@@ -1,5 +1,5 @@
 name=Lunk Errant
-image=http://magiccards.info/scans/en/mt/94.jpg
+image=https://magiccards.info/scans/en/mt/94.jpg
 value=1.074
 rarity=C
 type=Creature

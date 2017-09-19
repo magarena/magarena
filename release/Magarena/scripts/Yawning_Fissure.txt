@@ -1,5 +1,5 @@
 name=Yawning Fissure
-image=http://magiccards.info/scans/en/m10/164.jpg
+image=https://magiccards.info/scans/en/m10/164.jpg
 value=1.037
 rarity=C
 type=Sorcery

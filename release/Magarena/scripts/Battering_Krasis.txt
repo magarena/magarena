@@ -1,5 +1,5 @@
 name=Battering Krasis
-image=http://magiccards.info/scans/en/dgm/41.jpg
+image=https://magiccards.info/scans/en/dgm/41.jpg
 value=3.373
 rarity=C
 type=Creature

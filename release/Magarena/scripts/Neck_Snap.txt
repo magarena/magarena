@@ -1,5 +1,5 @@
 name=Neck Snap
-image=http://magiccards.info/scans/en/lw/32.jpg
+image=https://magiccards.info/scans/en/lw/32.jpg
 value=2.267
 rarity=C
 type=Instant

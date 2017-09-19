@@ -1,5 +1,5 @@
 name=Welkin Tern
-image=http://magiccards.info/scans/en/m15/84.jpg
+image=https://magiccards.info/scans/en/m15/84.jpg
 value=3.083
 rarity=C
 type=Creature

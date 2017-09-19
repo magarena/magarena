@@ -1,5 +1,5 @@
 name=Electric Eel
-image=http://magiccards.info/scans/en/dk/24.jpg
+image=https://magiccards.info/scans/en/dk/24.jpg
 value=2.652
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Henge of Ramos
-image=http://magiccards.info/scans/en/mm/318.jpg
+image=https://magiccards.info/scans/en/mm/318.jpg
 value=1.670
 rarity=U
 type=Land

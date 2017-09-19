@@ -1,5 +1,5 @@
 name=Slum Reaper
-image=http://magiccards.info/scans/en/rtr/77.jpg
+image=https://magiccards.info/scans/en/rtr/77.jpg
 value=2.837
 rarity=U
 type=Creature

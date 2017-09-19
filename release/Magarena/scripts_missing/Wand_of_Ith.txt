@@ -1,5 +1,5 @@
 name=Wand of Ith
-image=http://magiccards.info/scans/en/dk/111.jpg
+image=https://magiccards.info/scans/en/dk/111.jpg
 value=3.722
 rarity=U
 type=Artifact

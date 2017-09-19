@@ -1,5 +1,5 @@
 name=Magebane Armor
-image=http://magiccards.info/scans/en/m10/214.jpg
+image=https://magiccards.info/scans/en/m10/214.jpg
 value=3.994
 rarity=R
 type=Artifact

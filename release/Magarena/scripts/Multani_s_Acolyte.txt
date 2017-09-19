@@ -1,5 +1,5 @@
 name=Multani's Acolyte
-image=http://magiccards.info/scans/en/ul/108.jpg
+image=https://magiccards.info/scans/en/ul/108.jpg
 value=3.697
 rarity=C
 type=Creature

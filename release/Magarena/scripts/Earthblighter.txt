@@ -1,5 +1,5 @@
 name=Earthblighter
-image=http://magiccards.info/scans/en/le/68.jpg
+image=https://magiccards.info/scans/en/le/68.jpg
 value=3.071
 rarity=U
 type=Creature

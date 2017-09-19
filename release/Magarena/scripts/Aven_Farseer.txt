@@ -1,5 +1,5 @@
 name=Aven Farseer
-image=http://magiccards.info/scans/en/sc/3.jpg
+image=https://magiccards.info/scans/en/sc/3.jpg
 value=2.318
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Knight of Infamy
-image=http://magiccards.info/scans/en/m13/96.jpg
+image=https://magiccards.info/scans/en/m13/96.jpg
 value=3.884
 rarity=U
 type=Creature

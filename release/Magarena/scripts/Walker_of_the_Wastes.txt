@@ -1,5 +1,5 @@
 name=Walker of the Wastes
-image=http://magiccards.info/scans/en/ogw/10.jpg
+image=https://magiccards.info/scans/en/ogw/10.jpg
 image_updated=2016-02-29
 value=2.500
 rarity=U

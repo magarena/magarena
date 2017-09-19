@@ -1,5 +1,5 @@
 name=Hobgoblin Dragoon
-image=http://magiccards.info/scans/en/eve/142.jpg
+image=https://magiccards.info/scans/en/eve/142.jpg
 value=2.259
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Callous Giant
-image=http://magiccards.info/scans/en/in/139.jpg
+image=https://magiccards.info/scans/en/in/139.jpg
 value=3.394
 rarity=R
 type=Creature

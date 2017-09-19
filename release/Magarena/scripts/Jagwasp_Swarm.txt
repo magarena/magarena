@@ -1,5 +1,5 @@
 name=Jagwasp Swarm
-image=http://magiccards.info/scans/en/wwk/58.jpg
+image=https://magiccards.info/scans/en/wwk/58.jpg
 value=2.333
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Heart of Ramos
-image=http://magiccards.info/scans/en/mm/296.jpg
+image=https://magiccards.info/scans/en/mm/296.jpg
 value=3.280
 rarity=R
 type=Artifact

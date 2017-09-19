@@ -1,5 +1,5 @@
 name=Lim-Dûl's High Guard
-image=http://magiccards.info/scans/en/ai/18.jpg
+image=https://magiccards.info/scans/en/ai/18.jpg
 value=3.595
 rarity=C
 type=Creature

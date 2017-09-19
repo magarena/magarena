@@ -1,5 +1,5 @@
 name=Stormcloud Djinn
-image=http://magiccards.info/scans/en/ts/82.jpg
+image=https://magiccards.info/scans/en/ts/82.jpg
 value=1.600
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sacred Prey
-image=http://magiccards.info/scans/en/mm/268.jpg
+image=https://magiccards.info/scans/en/mm/268.jpg
 value=2.477
 rarity=C
 type=Creature

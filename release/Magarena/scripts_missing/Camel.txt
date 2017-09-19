@@ -1,5 +1,5 @@
 name=Camel
-image=http://magiccards.info/scans/en/an/58.jpg
+image=https://magiccards.info/scans/en/an/58.jpg
 value=3.049
 rarity=C
 type=Creature

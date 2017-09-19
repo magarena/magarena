@@ -1,5 +1,5 @@
 name=Vengeful Dead
-image=http://magiccards.info/scans/en/sc/80.jpg
+image=https://magiccards.info/scans/en/sc/80.jpg
 value=3.833
 rarity=C
 type=Creature

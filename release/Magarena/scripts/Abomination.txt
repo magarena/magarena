@@ -1,5 +1,5 @@
 name=Abomination
-image=http://magiccards.info/scans/en/4e/1.jpg
+image=https://magiccards.info/scans/en/4e/1.jpg
 value=2.867
 rarity=U
 type=Creature

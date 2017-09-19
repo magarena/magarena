@@ -1,5 +1,5 @@
 name=Pulsemage Advocate
-image=http://magiccards.info/scans/en/ju/19.jpg
+image=https://magiccards.info/scans/en/ju/19.jpg
 value=3.073
 rarity=R
 type=Creature

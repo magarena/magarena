@@ -1,5 +1,5 @@
 name=Remote Isle
-image=http://magiccards.info/scans/en/c14/309.jpg
+image=https://magiccards.info/scans/en/c14/309.jpg
 value=3.692
 rarity=C
 type=Land

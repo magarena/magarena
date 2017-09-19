@@ -1,5 +1,5 @@
 name=Glimpse the Unthinkable
-image=http://magiccards.info/scans/en/rav/208.jpg
+image=https://magiccards.info/scans/en/rav/208.jpg
 value=4.327
 rarity=R
 type=Sorcery

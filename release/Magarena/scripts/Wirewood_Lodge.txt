@@ -1,5 +1,5 @@
 name=Wirewood Lodge
-image=http://magiccards.info/scans/en/on/329.jpg
+image=https://magiccards.info/scans/en/on/329.jpg
 image_updated=2017-01-11
 value=4.361
 rarity=U

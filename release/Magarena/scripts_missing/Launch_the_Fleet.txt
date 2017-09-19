@@ -1,5 +1,5 @@
 name=Launch the Fleet
-image=http://magiccards.info/scans/en/jou/15.jpg
+image=https://magiccards.info/scans/en/jou/15.jpg
 value=3.756
 rarity=R
 type=Sorcery

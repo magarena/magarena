@@ -1,5 +1,5 @@
 name=Sudden Reclamation
-image=http://magiccards.info/scans/en/frf/139.jpg
+image=https://magiccards.info/scans/en/frf/139.jpg
 value=2.500
 rarity=U
 type=Instant

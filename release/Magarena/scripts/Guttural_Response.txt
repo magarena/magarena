@@ -1,5 +1,5 @@
 name=Guttural Response
-image=http://magiccards.info/scans/en/shm/208.jpg
+image=https://magiccards.info/scans/en/shm/208.jpg
 value=4.199
 rarity=U
 type=Instant

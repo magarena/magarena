@@ -1,5 +1,5 @@
 name=Garruk's Packleader
-image=http://magiccards.info/scans/en/m15/283.jpg
+image=https://magiccards.info/scans/en/m15/283.jpg
 value=3.400
 rarity=U
 type=Creature

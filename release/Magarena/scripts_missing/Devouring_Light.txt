@@ -1,5 +1,5 @@
 name=Devouring Light
-image=http://magiccards.info/scans/en/m15/9.jpg
+image=https://magiccards.info/scans/en/m15/9.jpg
 value=3.875
 rarity=U
 type=Instant

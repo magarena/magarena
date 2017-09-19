@@ -1,5 +1,5 @@
 name=Soul Warden
-image=http://magiccards.info/scans/en/mm3/24.jpg
+image=https://magiccards.info/scans/en/mm3/24.jpg
 image_updated=2017-08-08
 value=3.583
 rarity=C

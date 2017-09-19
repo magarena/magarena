@@ -1,5 +1,5 @@
 name=Civilized Scholar
-image=http://magiccards.info/scans/en/isd/47a.jpg
+image=https://magiccards.info/scans/en/isd/47a.jpg
 value=3.034
 rarity=U
 type=Creature

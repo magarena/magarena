@@ -1,5 +1,5 @@
 name=Faith's Reward
-image=http://magiccards.info/scans/en/cn2/84.jpg
+image=https://magiccards.info/scans/en/cn2/84.jpg
 image_updated=2017-08-29
 value=3.977
 rarity=R

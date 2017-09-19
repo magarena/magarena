@@ -1,5 +1,5 @@
 name=Profound Journey
-image=http://magiccards.info/scans/en/dtk/30.jpg
+image=https://magiccards.info/scans/en/dtk/30.jpg
 value=2.500
 rarity=R
 type=Sorcery

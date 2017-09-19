@@ -1,5 +1,5 @@
 name=Zuberi, Golden Feather
-image=http://magiccards.info/scans/en/mr/255.jpg
+image=https://magiccards.info/scans/en/mr/255.jpg
 value=3.945
 rarity=R
 type=Legendary,Creature

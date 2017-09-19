@@ -1,5 +1,5 @@
 name=Scorching Spear
-image=http://magiccards.info/scans/en/st/116.jpg
+image=https://magiccards.info/scans/en/st/116.jpg
 value=0.921
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Beguiler of Wills
-image=http://magiccards.info/scans/en/dka/28.jpg
+image=https://magiccards.info/scans/en/dka/28.jpg
 value=3.580
 rarity=M
 type=Creature

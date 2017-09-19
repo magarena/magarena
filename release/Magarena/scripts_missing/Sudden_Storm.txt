@@ -1,5 +1,5 @@
 name=Sudden Storm
-image=http://magiccards.info/scans/en/bng/53.jpg
+image=https://magiccards.info/scans/en/bng/53.jpg
 value=3.021
 rarity=C
 type=Instant

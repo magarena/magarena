@@ -1,5 +1,5 @@
 name=Burning Fields
-image=http://magiccards.info/scans/en/p3k/103.jpg
+image=https://magiccards.info/scans/en/p3k/103.jpg
 value=2.620
 rarity=C
 type=Sorcery

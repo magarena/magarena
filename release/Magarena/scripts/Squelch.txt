@@ -1,5 +1,5 @@
 name=Squelch
-image=http://magiccards.info/scans/en/chk/92.jpg
+image=https://magiccards.info/scans/en/chk/92.jpg
 value=3.982
 rarity=U
 type=Instant

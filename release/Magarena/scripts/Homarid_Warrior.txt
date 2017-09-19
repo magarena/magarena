@@ -1,5 +1,5 @@
 name=Homarid Warrior
-image=http://magiccards.info/scans/en/5e/92.jpg
+image=https://magiccards.info/scans/en/5e/92.jpg
 value=1.864
 rarity=C
 type=Creature

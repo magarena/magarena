@@ -1,5 +1,5 @@
 name=Xathrid Gorgon
-image=http://magiccards.info/scans/en/m13/118.jpg
+image=https://magiccards.info/scans/en/m13/118.jpg
 value=3.803
 rarity=R
 type=Creature

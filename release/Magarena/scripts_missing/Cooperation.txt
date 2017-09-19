@@ -1,5 +1,5 @@
 name=Cooperation
-image=http://magiccards.info/scans/en/ia/242.jpg
+image=https://magiccards.info/scans/en/ia/242.jpg
 value=2.625
 rarity=C
 type=Enchantment

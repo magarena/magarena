@@ -1,5 +1,5 @@
 name=Yoked Plowbeast
-image=http://magiccards.info/scans/en/ala/31.jpg
+image=https://magiccards.info/scans/en/ala/31.jpg
 value=2.032
 rarity=C
 type=Creature

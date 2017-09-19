@@ -1,5 +1,5 @@
 name=Atarka Beastbreaker
-image=http://magiccards.info/scans/en/dtk/174.jpg
+image=https://magiccards.info/scans/en/dtk/174.jpg
 value=2.500
 rarity=C
 type=Creature

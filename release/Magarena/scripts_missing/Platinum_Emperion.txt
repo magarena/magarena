@@ -1,5 +1,5 @@
 name=Platinum Emperion
-image=http://magiccards.info/scans/en/som/193.jpg
+image=https://magiccards.info/scans/en/som/193.jpg
 value=4.309
 rarity=M
 type=Artifact,Creature

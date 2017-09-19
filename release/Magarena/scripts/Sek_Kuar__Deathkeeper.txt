@@ -1,5 +1,5 @@
 name=Sek'Kuar, Deathkeeper
-image=http://magiccards.info/scans/en/cs/131.jpg
+image=https://magiccards.info/scans/en/cs/131.jpg
 value=3.783
 rarity=R
 type=Legendary,Creature

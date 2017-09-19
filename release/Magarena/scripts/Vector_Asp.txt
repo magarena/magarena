@@ -1,5 +1,5 @@
 name=Vector Asp
-image=http://magiccards.info/scans/en/som/219.jpg
+image=https://magiccards.info/scans/en/som/219.jpg
 value=2.980
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Fertilid
-image=http://magiccards.info/scans/en/cmd/154.jpg
+image=https://magiccards.info/scans/en/cmd/154.jpg
 value=3.317
 rarity=C
 type=Creature

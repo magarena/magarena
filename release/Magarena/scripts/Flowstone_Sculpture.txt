@@ -1,5 +1,5 @@
 name=Flowstone Sculpture
-image=http://magiccards.info/scans/en/tp/278.jpg
+image=https://magiccards.info/scans/en/tp/278.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

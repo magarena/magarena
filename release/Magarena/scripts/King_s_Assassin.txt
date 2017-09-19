@@ -1,5 +1,5 @@
 name=King's Assassin
-image=http://magiccards.info/scans/en/po/21.jpg
+image=https://magiccards.info/scans/en/po/21.jpg
 value=2.861
 rarity=R
 type=Creature

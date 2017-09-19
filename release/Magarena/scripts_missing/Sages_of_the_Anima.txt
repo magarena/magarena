@@ -1,5 +1,5 @@
 name=Sages of the Anima
-image=http://magiccards.info/scans/en/arb/103.jpg
+image=https://magiccards.info/scans/en/arb/103.jpg
 value=2.968
 rarity=R
 type=Creature

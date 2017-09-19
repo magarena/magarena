@@ -1,5 +1,5 @@
 name=Changeling Hero
-image=http://magiccards.info/scans/en/lw/9.jpg
+image=https://magiccards.info/scans/en/lw/9.jpg
 value=3.011
 removal=2
 rarity=U

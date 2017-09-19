@@ -1,5 +1,5 @@
 name=Delaying Shield
-image=http://magiccards.info/scans/en/od/17.jpg
+image=https://magiccards.info/scans/en/od/17.jpg
 value=3.850
 rarity=R
 type=Enchantment

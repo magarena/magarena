@@ -1,5 +1,5 @@
 name=Wake of Vultures
-image=http://magiccards.info/scans/en/ema/115.jpg
+image=https://magiccards.info/scans/en/ema/115.jpg
 value=3.540
 rarity=C
 type=Creature

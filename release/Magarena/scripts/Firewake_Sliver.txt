@@ -1,5 +1,5 @@
 name=Firewake Sliver
-image=http://magiccards.info/scans/en/ts/238.jpg
+image=https://magiccards.info/scans/en/ts/238.jpg
 value=3.188
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Into the Maw of Hell
-image=http://magiccards.info/scans/en/isd/150.jpg
+image=https://magiccards.info/scans/en/isd/150.jpg
 value=3.858
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Knight of Meadowgrain
-image=http://magiccards.info/scans/en/lw/28.jpg
+image=https://magiccards.info/scans/en/lw/28.jpg
 value=3.944
 rarity=U
 type=Creature

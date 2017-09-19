@@ -1,5 +1,5 @@
 name=Declaration of Naught
-image=http://magiccards.info/scans/en/mt/29.jpg
+image=https://magiccards.info/scans/en/mt/29.jpg
 value=3.543
 rarity=R
 type=Enchantment

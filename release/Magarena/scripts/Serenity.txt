@@ -1,5 +1,5 @@
 name=Serenity
-image=http://magiccards.info/scans/en/6e/41.jpg
+image=https://magiccards.info/scans/en/6e/41.jpg
 value=4.519
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mist Leopard
-image=http://magiccards.info/scans/en/m10/193.jpg
+image=https://magiccards.info/scans/en/m10/193.jpg
 value=2.534
 rarity=C
 type=Creature

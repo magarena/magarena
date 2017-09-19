@@ -1,5 +1,5 @@
 name=Murmurs from Beyond
-image=http://magiccards.info/scans/en/cmd/53.jpg
+image=https://magiccards.info/scans/en/cmd/53.jpg
 value=2.532
 rarity=C
 type=Instant

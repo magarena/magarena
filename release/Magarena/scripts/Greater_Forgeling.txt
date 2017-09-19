@@ -1,5 +1,5 @@
 name=Greater Forgeling
-image=http://magiccards.info/scans/en/rav/129.jpg
+image=https://magiccards.info/scans/en/rav/129.jpg
 value=1.771
 rarity=U
 type=Creature

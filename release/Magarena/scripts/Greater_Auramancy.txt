@@ -1,5 +1,5 @@
 name=Greater Auramancy
-image=http://magiccards.info/scans/en/shm/7.jpg
+image=https://magiccards.info/scans/en/shm/7.jpg
 value=4.027
 rarity=R
 type=Enchantment

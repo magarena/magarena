@@ -1,5 +1,5 @@
 name=Ember Shot
-image=http://magiccards.info/scans/en/ju/87.jpg
+image=https://magiccards.info/scans/en/ju/87.jpg
 value=0.889
 rarity=C
 type=Instant

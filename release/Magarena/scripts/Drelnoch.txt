@@ -1,5 +1,5 @@
 name=Drelnoch
-image=http://magiccards.info/scans/en/cs/32.jpg
+image=https://magiccards.info/scans/en/cs/32.jpg
 value=3.689
 rarity=C
 type=Creature

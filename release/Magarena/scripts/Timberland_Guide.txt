@@ -1,5 +1,5 @@
 name=Timberland Guide
-image=http://magiccards.info/scans/en/avr/197.jpg
+image=https://magiccards.info/scans/en/avr/197.jpg
 value=2.764
 rarity=C
 type=Creature

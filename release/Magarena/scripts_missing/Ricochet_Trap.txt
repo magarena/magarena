@@ -1,5 +1,5 @@
 name=Ricochet Trap
-image=http://magiccards.info/scans/en/wwk/87.jpg
+image=https://magiccards.info/scans/en/wwk/87.jpg
 value=3.824
 rarity=U
 type=Instant

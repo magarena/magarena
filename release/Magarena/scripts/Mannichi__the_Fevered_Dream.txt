@@ -1,5 +1,5 @@
 name=Mannichi, the Fevered Dream
-image=http://magiccards.info/scans/en/bok/112.jpg
+image=https://magiccards.info/scans/en/bok/112.jpg
 value=3.744
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Possessed Centaur
-image=http://magiccards.info/scans/en/tr/137.jpg
+image=https://magiccards.info/scans/en/tr/137.jpg
 value=3.774
 rarity=R
 type=Creature

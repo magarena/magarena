@@ -1,5 +1,5 @@
 name=Essence Bottle
-image=http://magiccards.info/scans/en/tp/276.jpg
+image=https://magiccards.info/scans/en/tp/276.jpg
 value=1.320
 rarity=U
 type=Artifact

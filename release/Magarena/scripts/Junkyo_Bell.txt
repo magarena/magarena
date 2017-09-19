@@ -1,5 +1,5 @@
 name=Junkyo Bell
-image=http://magiccards.info/scans/en/chk/258.jpg
+image=https://magiccards.info/scans/en/chk/258.jpg
 value=3.487
 rarity=R
 type=Artifact

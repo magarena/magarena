@@ -1,5 +1,5 @@
 name=Remove
-image=http://magiccards.info/scans/en/po2/43.jpg
+image=https://magiccards.info/scans/en/po2/43.jpg
 value=2.375
 rarity=U
 type=Instant

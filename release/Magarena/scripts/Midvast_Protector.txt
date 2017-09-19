@@ -1,5 +1,5 @@
 name=Midvast Protector
-image=http://magiccards.info/scans/en/avr/28.jpg
+image=https://magiccards.info/scans/en/avr/28.jpg
 value=2.060
 rarity=C
 type=Creature

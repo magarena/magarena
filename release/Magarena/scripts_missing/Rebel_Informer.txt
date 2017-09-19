@@ -1,5 +1,5 @@
 name=Rebel Informer
-image=http://magiccards.info/scans/en/pr/75.jpg
+image=https://magiccards.info/scans/en/pr/75.jpg
 value=3.697
 rarity=R
 type=Creature

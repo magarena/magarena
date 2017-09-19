@@ -1,5 +1,5 @@
 name=Rapid Decay
-image=http://magiccards.info/scans/en/ud/67.jpg
+image=https://magiccards.info/scans/en/ud/67.jpg
 value=3.217
 rarity=R
 type=Instant

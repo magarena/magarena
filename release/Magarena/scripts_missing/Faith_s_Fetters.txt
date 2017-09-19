@@ -1,5 +1,5 @@
 name=Faith's Fetters
-image=http://magiccards.info/scans/en/ema/10.jpg
+image=https://magiccards.info/scans/en/ema/10.jpg
 value=2.500
 rarity=U
 type=Enchantment

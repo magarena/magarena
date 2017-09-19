@@ -1,5 +1,5 @@
 name=Skulltap
-image=http://magiccards.info/scans/en/sc/73.jpg
+image=https://magiccards.info/scans/en/sc/73.jpg
 value=3.284
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sylvan Scrying
-image=http://magiccards.info/scans/en/bfz/192.jpg
+image=https://magiccards.info/scans/en/bfz/192.jpg
 image_updated=2015-11-08
 value=4.327
 rarity=U

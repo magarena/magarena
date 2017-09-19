@@ -1,5 +1,5 @@
 name=Skyshroud Vampire
-image=http://magiccards.info/scans/en/tp/51.jpg
+image=https://magiccards.info/scans/en/tp/51.jpg
 value=3.368
 rarity=U
 type=Creature

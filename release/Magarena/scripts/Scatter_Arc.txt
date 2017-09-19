@@ -1,5 +1,5 @@
 name=Scatter Arc
-image=http://magiccards.info/scans/en/gtc/48.jpg
+image=https://magiccards.info/scans/en/gtc/48.jpg
 value=2.420
 rarity=C
 type=Instant

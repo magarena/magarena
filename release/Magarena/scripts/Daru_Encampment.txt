@@ -1,5 +1,5 @@
 name=Daru Encampment
-image=http://magiccards.info/scans/en/on/315.jpg
+image=https://magiccards.info/scans/en/on/315.jpg
 image_updated=2016-11-30
 value=3.347
 rarity=U
