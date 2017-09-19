@@ -66,8 +66,14 @@ public abstract class PrintedCardImage {
 
     static BufferedImage get(IRenderableCard face) throws DownloadException {
         tryDownloadingPrintedImage(face);
-        return imageExists(face)
-            ? ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face))
-            : CardBuilder.getCardBuilderImage(face);
+        BufferedImage res = null;
+        if (imageExists(face)) {
+            res = ImageFileIO.getOptimizedImage(MagicFileSystem.getPrintedCardImage(face));
+        }
+        // image file does not exist or could not be read, fallback to cardbuilder
+        if (res == null) {
+            res = CardBuilder.getCardBuilderImage(face);
+        }
+        return res;
     }
 }
