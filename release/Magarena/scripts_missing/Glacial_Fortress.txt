@@ -1,9 +1,0 @@
-name=Glacial Fortress
-image=https://magiccards.info/scans/en/xln/255.jpg
-value=2.500
-rarity=R
-type=Land
-ability=SN enters the battlefield tapped unless you control a Plains or an Island.;\
-        {T}: Add {W} or {U} to your mana pool.
-timing=land
-oracle=Glacial Fortress enters the battlefield tapped unless you control a Plains or an Island.\n{T}: Add {W} or {U} to your mana pool.

@@ -1,8 +1,0 @@
-name=Forest
-image=https://magiccards.info/scans/en/xln/276.jpg
-value=2.500
-rarity=B
-type=Basic,Land
-subtype=Forest
-timing=land
-oracle=NONE

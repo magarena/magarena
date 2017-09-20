@@ -1,9 +1,0 @@
-name=Woodland Stream
-image=https://magiccards.info/scans/en/xln/284.jpg
-value=2.500
-rarity=C
-type=Land
-ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {U} to your mana pool.
-timing=land
-oracle=Woodland Stream enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.

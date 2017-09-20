@@ -1,9 +1,0 @@
-name=Cancel
-image=https://magiccards.info/scans/en/xln/47.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{U}{U}
-effect=Counter target spell.
-timing=counter
-oracle=Counter target spell.

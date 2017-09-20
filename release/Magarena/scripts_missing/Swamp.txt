@@ -1,8 +1,0 @@
-name=Swamp
-image=https://magiccards.info/scans/en/xln/268.jpg
-value=2.500
-rarity=B
-type=Basic,Land
-subtype=Swamp
-timing=land
-oracle=NONE

@@ -1,9 +1,0 @@
-name=Spell Pierce
-image=https://magiccards.info/scans/en/xln/81.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={U}
-effect=Counter target noncreature spell unless its controller pays {2}.
-timing=counter
-oracle=Counter target noncreature spell unless its controller pays {2}.
