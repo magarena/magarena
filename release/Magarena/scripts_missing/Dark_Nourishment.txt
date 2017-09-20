@@ -1,0 +1,9 @@
+name=Dark Nourishment
+image=https://magiccards.info/scans/en/xln/97.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{B}
+effect=SN deals 3 damage to target creature or player. You gain 3 life.
+timing=removal
+oracle=Dark Nourishment deals 3 damage to target creature or player. You gain 3 life.

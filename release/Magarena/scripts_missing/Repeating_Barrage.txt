@@ -1,0 +1,9 @@
+name=Repeating Barrage
+image=https://magiccards.info/scans/en/xln/156.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{R}{R}
+effect=SN deals 3 damage to target creature or player.~{3}{R}{R}: Return SN from your graveyard to your hand. Activate this ability only if you attacked with a creature this turn.
+timing=main
+oracle=Repeating Barrage deals 3 damage to target creature or player.\nRaid — {3}{R}{R}: Return Repeating Barrage from your graveyard to your hand. Activate this ability only if you attacked with a creature this turn.

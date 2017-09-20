@@ -1,0 +1,11 @@
+name=Bishop of the Bloodstained
+image=https://magiccards.info/scans/en/xln/91.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Cleric
+cost={3}{B}{B}
+pt=3/3
+ability=When SN enters the battlefield, target opponent loses 1 life for each Vampire you control.
+timing=main
+oracle=When Bishop of the Bloodstained enters the battlefield, target opponent loses 1 life for each Vampire you control.

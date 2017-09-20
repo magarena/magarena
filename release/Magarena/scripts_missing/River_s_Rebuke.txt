@@ -1,0 +1,9 @@
+name=River's Rebuke
+image=https://magiccards.info/scans/en/xln/71.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{U}{U}
+effect=Return all nonland permanents target player controls to their owner's hand.
+timing=main
+oracle=Return all nonland permanents target player controls to their owner's hand.

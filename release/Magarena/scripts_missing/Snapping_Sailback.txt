@@ -1,0 +1,12 @@
+name=Snapping Sailback
+image=https://magiccards.info/scans/en/xln/208.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={4}{G}
+pt=4/4
+ability=Flash;\
+        Whenever SN is dealt damage, put a +1/+1 counter on it.
+timing=flash
+oracle=Flash\nEnrage — Whenever Snapping Sailback is dealt damage, put a +1/+1 counter on it.

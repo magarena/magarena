@@ -1,0 +1,13 @@
+name=Huatli, Warrior Poet
+image=https://magiccards.info/scans/en/xln/224.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Huatli
+cost={3}{R}{W}
+loyalty=3
+ability=+2: You gain life equal to the greatest power among creatures you control.;\
+        0: Create a 3/3 green Dinosaur creature token with trample.;\
+        −X: SN deals X damage divided as you choose among any number of target creatures. Creatures dealt damage this way can't block this turn.
+timing=main
+oracle=+2: You gain life equal to the greatest power among creatures you control.\n0: Create a 3/3 green Dinosaur creature token with trample.\n−X: Huatli, Warrior Poet deals X damage divided as you choose among any number of target creatures. Creatures dealt damage this way can't block this turn.

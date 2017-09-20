@@ -1,0 +1,11 @@
+name=Inspiring Cleric
+image=https://magiccards.info/scans/en/xln/16.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Cleric
+cost={2}{W}
+pt=3/2
+ability=When SN enters the battlefield, you gain 4 life.
+timing=main
+oracle=When Inspiring Cleric enters the battlefield, you gain 4 life.

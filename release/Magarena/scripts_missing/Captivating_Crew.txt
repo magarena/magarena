@@ -1,0 +1,11 @@
+name=Captivating Crew
+image=https://magiccards.info/scans/en/xln/137.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={3}{R}
+pt=4/3
+ability={3}{R}: Gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={3}{R}: Gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn. Activate this ability only any time you could cast a sorcery.

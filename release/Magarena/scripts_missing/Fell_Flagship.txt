@@ -1,0 +1,13 @@
+name=Fell Flagship
+image=https://magiccards.info/scans/en/xln/238.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=3/3
+ability=Pirates you control get +1/+0.;\
+        Whenever SN deals combat damage to a player, that player discards a card.;\
+        Crew 3
+timing=artifact
+oracle=Pirates you control get +1/+0.\nWhenever Fell Flagship deals combat damage to a player, that player discards a card.\nCrew 3

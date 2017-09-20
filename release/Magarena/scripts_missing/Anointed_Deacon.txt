@@ -1,0 +1,11 @@
+name=Anointed Deacon
+image=https://magiccards.info/scans/en/xln/89.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Cleric
+cost={4}{B}
+pt=3/3
+ability=At the beginning of combat on your turn, you may have target Vampire get +2/+0 until end of turn.
+timing=main
+oracle=At the beginning of combat on your turn, you may have target Vampire get +2/+0 until end of turn.

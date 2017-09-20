@@ -1,0 +1,10 @@
+name=Trove of Temptation
+image=https://magiccards.info/scans/en/xln/171.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{R}
+ability=Each opponent must attack you or a planeswalker you control with at least one creature each combat if able.;\
+        At the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=enchantment
+oracle=Each opponent must attack you or a planeswalker you control with at least one creature each combat if able.\nAt the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

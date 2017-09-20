@@ -1,0 +1,9 @@
+name=Legion's Judgment
+image=https://magiccards.info/scans/en/xln/21.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{W}
+effect=Destroy target creature with power 4 or greater.
+timing=main
+oracle=Destroy target creature with power 4 or greater.

@@ -1,0 +1,11 @@
+name=Treasure Cove
+image=https://magiccards.info/scans/en/xln/250b.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C} to your mana pool.;\
+        {T}, Sacrifice a Treasure: Draw a card.
+transform=Treasure Map
+hidden
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{T}, Sacrifice a Treasure: Draw a card.

@@ -1,0 +1,9 @@
+name=Fiery Cannonade
+image=https://magiccards.info/scans/en/xln/143.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=SN deals 2 damage to each non-Pirate creature.
+timing=removal
+oracle=Fiery Cannonade deals 2 damage to each non-Pirate creature.

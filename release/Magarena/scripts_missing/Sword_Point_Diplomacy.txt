@@ -1,0 +1,9 @@
+name=Sword-Point Diplomacy
+image=https://magiccards.info/scans/en/xln/126.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{B}
+effect=Reveal the top three cards of your library. For each of those cards, put that card into your hand unless any opponent pays 3 life. Then exile the rest.
+timing=main
+oracle=Reveal the top three cards of your library. For each of those cards, put that card into your hand unless any opponent pays 3 life. Then exile the rest.

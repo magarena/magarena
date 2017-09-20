@@ -1,0 +1,12 @@
+name=Thundering Spineback
+image=https://magiccards.info/scans/en/xln/210.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={5}{G}{G}
+pt=5/5
+ability=Other Dinosaurs you control get +1/+1.;\
+        {5}{G}: Create a 3/3 green Dinosaur creature token with trample.
+timing=main
+oracle=Other Dinosaurs you control get +1/+1.\n{5}{G}: Create a 3/3 green Dinosaur creature token with trample.

@@ -1,0 +1,11 @@
+name=Ripjaw Raptor
+image=https://magiccards.info/scans/en/xln/203.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={2}{G}{G}
+pt=4/5
+ability=Whenever SN is dealt damage, draw a card.
+timing=main
+oracle=Enrage — Whenever Ripjaw Raptor is dealt damage, draw a card.

@@ -1,0 +1,14 @@
+name=Dowsing Dagger
+image=https://magiccards.info/scans/en/xln/235a.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=When SN enters the battlefield, target opponent creates two 0/2 green Plant creature tokens with defender.;\
+        Equipped creature gets +2/+1.;\
+        Whenever equipped creature deals combat damage to a player, you may transform SN.;\
+        Equip {2}
+transform=Lost Vale
+timing=equipment
+oracle=When Dowsing Dagger enters the battlefield, target opponent creates two 0/2 green Plant creature tokens with defender.\nEquipped creature gets +2/+1.\nWhenever equipped creature deals combat damage to a player, you may transform Dowsing Dagger.\nEquip {2}

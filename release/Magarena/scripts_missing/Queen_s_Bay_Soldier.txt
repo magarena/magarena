@@ -1,0 +1,10 @@
+name=Queen's Bay Soldier
+image=https://magiccards.info/scans/en/xln/115.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={1}{B}
+pt=2/2
+timing=main
+oracle=NONE

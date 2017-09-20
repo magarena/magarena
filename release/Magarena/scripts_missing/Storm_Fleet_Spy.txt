@@ -1,0 +1,11 @@
+name=Storm Fleet Spy
+image=https://magiccards.info/scans/en/xln/84.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={2}{U}
+pt=2/2
+ability=When SN enters the battlefield, if you attacked with a creature this turn, draw a card.
+timing=main
+oracle=Raid — When Storm Fleet Spy enters the battlefield, if you attacked with a creature this turn, draw a card.

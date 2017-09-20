@@ -1,0 +1,9 @@
+name=Contract Killing
+image=https://magiccards.info/scans/en/xln/95.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}{B}
+effect=Destroy target creature. Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=main
+oracle=Destroy target creature. Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

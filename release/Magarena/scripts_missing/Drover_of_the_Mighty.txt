@@ -1,0 +1,12 @@
+name=Drover of the Mighty
+image=https://magiccards.info/scans/en/xln/187.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=1/1
+ability=SN gets +2/+2 as long as you control a Dinosaur.;\
+        {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle=Drover of the Mighty gets +2/+2 as long as you control a Dinosaur.\n{T}: Add one mana of any color to your mana pool.

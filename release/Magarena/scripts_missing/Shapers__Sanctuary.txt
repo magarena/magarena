@@ -1,0 +1,9 @@
+name=Shapers' Sanctuary
+image=https://magiccards.info/scans/en/xln/206.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={G}
+ability=Whenever a creature you control becomes the target of a spell or ability an opponent controls, you may draw a card.
+timing=enchantment
+oracle=Whenever a creature you control becomes the target of a spell or ability an opponent controls, you may draw a card.

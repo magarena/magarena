@@ -1,0 +1,12 @@
+name=Shapers of Nature
+image=https://magiccards.info/scans/en/xln/228.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Shaman
+cost={1}{G}{U}
+pt=3/3
+ability={3}{G}: Put a +1/+1 counter on target creature.;\
+        {2}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.
+timing=main
+oracle={3}{G}: Put a +1/+1 counter on target creature.\n{2}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.

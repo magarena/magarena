@@ -1,0 +1,9 @@
+name=Sure Strike
+image=https://magiccards.info/scans/en/xln/166.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Target creature gets +3/+0 and gains first strike until end of turn.
+timing=removal
+oracle=Target creature gets +3/+0 and gains first strike until end of turn.

@@ -1,0 +1,11 @@
+name=Paladin of the Bloodstained
+image=https://magiccards.info/scans/en/xln/25.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Knight
+cost={3}{W}
+pt=3/2
+ability=When SN enters the battlefield, create a 1/1 white Vampire creature token with lifelink.
+timing=main
+oracle=When Paladin of the Bloodstained enters the battlefield, create a 1/1 white Vampire creature token with lifelink.

@@ -1,0 +1,11 @@
+name=Spike-Tailed Ceratops
+image=https://magiccards.info/scans/en/xln/209.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={4}{G}
+pt=4/4
+ability=SN can block an additional creature each combat.
+timing=main
+oracle=Spike-Tailed Ceratops can block an additional creature each combat.

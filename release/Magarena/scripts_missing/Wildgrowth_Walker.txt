@@ -1,0 +1,11 @@
+name=Wildgrowth Walker
+image=https://magiccards.info/scans/en/xln/216.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={1}{G}
+pt=1/3
+ability=Whenever a creature you control explores, put a +1/+1 counter on SN and you gain 3 life.
+timing=main
+oracle=Whenever a creature you control explores, put a +1/+1 counter on Wildgrowth Walker and you gain 3 life.

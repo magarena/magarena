@@ -1,0 +1,10 @@
+name=Gilded Sentinel
+image=https://magiccards.info/scans/en/xln/239.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=3/3
+timing=main
+oracle=NONE

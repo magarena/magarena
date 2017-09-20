@@ -1,0 +1,12 @@
+name=Blight Keeper
+image=https://magiccards.info/scans/en/xln/92.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bat,Imp
+cost={B}
+pt=1/1
+ability=Flying;\
+        {7}{B}, {T}, Sacrifice SN: Target opponent loses 4 life and you gain 4 life.
+timing=main
+oracle=Flying\n{7}{B}, {T}, Sacrifice Blight Keeper: Target opponent loses 4 life and you gain 4 life.

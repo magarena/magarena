@@ -1,0 +1,9 @@
+name=Boneyard Parley
+image=https://magiccards.info/scans/en/xln/94.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={5}{B}{B}
+effect=Exile up to five target creature cards from graveyards. An opponent separates those cards into two piles. Put all cards from the pile of your choice onto the battlefield under your control and the rest into their owners' graveyards.
+timing=main
+oracle=Exile up to five target creature cards from graveyards. An opponent separates those cards into two piles. Put all cards from the pile of your choice onto the battlefield under your control and the rest into their owners' graveyards.

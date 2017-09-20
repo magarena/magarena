@@ -1,0 +1,9 @@
+name=colorless Treasure artifact token
+image=http://media.wizards.com/2017/xln/en_yQpDYPpsn4.png
+token=Treasure
+type=Artifact
+subtype=Treasure
+color=
+value=1
+ability={T}, Sacrifice SN: Add one mana of any color to your mana pool.
+oracle={T}, Sacrifice this artifact: Add one mana of any color to your mana pool.

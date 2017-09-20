@@ -1,0 +1,9 @@
+name=Vanquish the Weak
+image=https://magiccards.info/scans/en/xln/127.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Destroy target creature with power 3 or less.
+timing=removal
+oracle=Destroy target creature with power 3 or less.

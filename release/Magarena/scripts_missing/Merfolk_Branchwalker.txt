@@ -1,0 +1,11 @@
+name=Merfolk Branchwalker
+image=https://magiccards.info/scans/en/xln/197.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Scout
+cost={1}{G}
+pt=2/1
+ability=When SN enters the battlefield, it explores.
+timing=main
+oracle=When Merfolk Branchwalker enters the battlefield, it explores.

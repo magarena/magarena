@@ -1,0 +1,9 @@
+name=Emergent Growth
+image=https://magiccards.info/scans/en/xln/188.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Target creature gets +5/+5 until end of turn and must be blocked this turn if able.
+timing=main
+oracle=Target creature gets +5/+5 until end of turn and must be blocked this turn if able.

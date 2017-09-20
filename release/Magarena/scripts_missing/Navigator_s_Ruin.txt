@@ -1,0 +1,9 @@
+name=Navigator's Ruin
+image=https://magiccards.info/scans/en/xln/63.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=At the beginning of your end step, if you attacked with a creature this turn, target opponent puts the top four cards of his or her library into his or her graveyard.
+timing=enchantment
+oracle=Raid — At the beginning of your end step, if you attacked with a creature this turn, target opponent puts the top four cards of his or her library into his or her graveyard.

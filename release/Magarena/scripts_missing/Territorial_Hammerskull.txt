@@ -1,0 +1,11 @@
+name=Territorial Hammerskull
+image=https://magiccards.info/scans/en/xln/41.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={2}{W}
+pt=2/3
+ability=Whenever SN attacks, tap target creature an opponent controls.
+timing=main
+oracle=Whenever Territorial Hammerskull attacks, tap target creature an opponent controls.

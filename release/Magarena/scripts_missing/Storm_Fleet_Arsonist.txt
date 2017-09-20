@@ -1,0 +1,11 @@
+name=Storm Fleet Arsonist
+image=https://magiccards.info/scans/en/xln/162.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Pirate
+cost={4}{R}
+pt=4/4
+ability=When SN enters the battlefield, if you attacked with a creature this turn, target opponent sacrifices a permanent.
+timing=main
+oracle=Raid — When Storm Fleet Arsonist enters the battlefield, if you attacked with a creature this turn, target opponent sacrifices a permanent.

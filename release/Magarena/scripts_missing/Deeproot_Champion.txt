@@ -1,0 +1,11 @@
+name=Deeproot Champion
+image=https://magiccards.info/scans/en/xln/185.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Shaman
+cost={1}{G}
+pt=1/1
+ability=Whenever you cast a noncreature spell, put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever you cast a noncreature spell, put a +1/+1 counter on Deeproot Champion.

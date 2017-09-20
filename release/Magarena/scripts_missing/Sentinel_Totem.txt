@@ -1,0 +1,10 @@
+name=Sentinel Totem
+image=https://magiccards.info/scans/en/xln/245.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability=When SN enters the battlefield, scry 1.;\
+        {T}, Exile SN: Exile all cards from all graveyards.
+timing=artifact
+oracle=When Sentinel Totem enters the battlefield, scry 1.\n{T}, Exile Sentinel Totem: Exile all cards from all graveyards.

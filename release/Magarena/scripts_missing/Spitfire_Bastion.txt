@@ -1,0 +1,11 @@
+name=Spitfire Bastion
+image=https://magiccards.info/scans/en/xln/173b.jpg
+value=2.500
+rarity=R
+type=Legendary,Land
+ability={T}: Add {R} to your mana pool.;\
+        {2}{R}, {T}: SN deals 3 damage to target creature or player.
+transform=Vance's Blasting Cannons
+hidden
+timing=land
+oracle={T}: Add {R} to your mana pool.\n{2}{R}, {T}: Spitfire Bastion deals 3 damage to target creature or player.

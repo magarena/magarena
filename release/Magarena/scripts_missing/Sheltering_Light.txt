@@ -1,0 +1,9 @@
+name=Sheltering Light
+image=https://magiccards.info/scans/en/xln/35.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={W}
+effect=Target creature gains indestructible until end of turn. Scry 1.
+timing=removal
+oracle=Target creature gains indestructible until end of turn. Scry 1.

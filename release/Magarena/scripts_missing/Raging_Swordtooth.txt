@@ -1,0 +1,12 @@
+name=Raging Swordtooth
+image=https://magiccards.info/scans/en/xln/226.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{R}{G}
+pt=5/5
+ability=Trample;\
+        When SN enters the battlefield, it deals 1 damage to each other creature.
+timing=main
+oracle=Trample\nWhen Raging Swordtooth enters the battlefield, it deals 1 damage to each other creature.

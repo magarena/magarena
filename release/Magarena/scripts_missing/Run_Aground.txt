@@ -1,0 +1,9 @@
+name=Run Aground
+image=https://magiccards.info/scans/en/xln/72.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Put target artifact or creature on top of its owner's library.
+timing=removal
+oracle=Put target artifact or creature on top of its owner's library.

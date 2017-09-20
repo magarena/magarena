@@ -1,0 +1,12 @@
+name=Wind Strider
+image=https://magiccards.info/scans/en/xln/88.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={4}{U}
+pt=3/3
+ability=Flash;\
+        Flying
+timing=flash
+oracle=Flash\nFlying

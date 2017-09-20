@@ -1,0 +1,9 @@
+name=Favorable Winds
+image=https://magiccards.info/scans/en/xln/56.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=Creatures you control with flying get +1/+1.
+timing=enchantment
+oracle=Creatures you control with flying get +1/+1.

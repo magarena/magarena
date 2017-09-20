@@ -1,0 +1,10 @@
+name=Raiders' Wake
+image=https://magiccards.info/scans/en/xln/116.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{B}
+ability=Whenever an opponent discards a card, that player loses 2 life.;\
+        At the beginning of your end step, if you attacked with a creature this turn, target opponent discards a card.
+timing=enchantment
+oracle=Whenever an opponent discards a card, that player loses 2 life.\nRaid — At the beginning of your end step, if you attacked with a creature this turn, target opponent discards a card.

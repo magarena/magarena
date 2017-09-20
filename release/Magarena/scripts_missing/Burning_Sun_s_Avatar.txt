@@ -1,0 +1,11 @@
+name=Burning Sun's Avatar
+image=https://magiccards.info/scans/en/xln/135.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur,Avatar
+cost={3}{R}{R}{R}
+pt=6/6
+ability=When SN enters the battlefield, it deals 3 damage to target opponent and 3 damage to up to one target creature.
+timing=main
+oracle=When Burning Sun's Avatar enters the battlefield, it deals 3 damage to target opponent and 3 damage to up to one target creature.

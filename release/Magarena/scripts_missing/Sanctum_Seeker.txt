@@ -1,0 +1,11 @@
+name=Sanctum Seeker
+image=https://magiccards.info/scans/en/xln/120.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Knight
+cost={2}{B}{B}
+pt=3/4
+ability=Whenever a Vampire you control attacks, each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Whenever a Vampire you control attacks, each opponent loses 1 life and you gain 1 life.

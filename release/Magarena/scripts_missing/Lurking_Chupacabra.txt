@@ -1,0 +1,11 @@
+name=Lurking Chupacabra
+image=https://magiccards.info/scans/en/xln/111.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast,Horror
+cost={3}{B}
+pt=2/3
+ability=Whenever a creature you control explores, target creature an opponent controls gets -2/-2 until end of turn.
+timing=main
+oracle=Whenever a creature you control explores, target creature an opponent controls gets -2/-2 until end of turn.

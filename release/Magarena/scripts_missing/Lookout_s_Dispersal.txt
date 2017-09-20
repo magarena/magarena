@@ -1,0 +1,10 @@
+name=Lookout's Dispersal
+image=https://magiccards.info/scans/en/xln/62.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}
+ability=SN costs {1} less to cast if you control a Pirate.
+effect=Counter target spell unless its controller pays {4}.
+timing=counter
+oracle=Lookout's Dispersal costs {1} less to cast if you control a Pirate.\nCounter target spell unless its controller pays {4}.

@@ -1,0 +1,12 @@
+name=Queen's Agent
+image=https://magiccards.info/scans/en/xln/114.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Scout
+cost={5}{B}
+pt=3/3
+ability=Lifelink;\
+        When SN enters the battlefield, it explores.
+timing=main
+oracle=Lifelink\nWhen Queen's Agent enters the battlefield, it explores.

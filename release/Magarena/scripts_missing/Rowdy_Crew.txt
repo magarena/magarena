@@ -1,0 +1,12 @@
+name=Rowdy Crew
+image=https://magiccards.info/scans/en/xln/159.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human,Pirate
+cost={2}{R}{R}
+pt=3/3
+ability=Trample;\
+        When SN enters the battlefield, draw three cards, then discard two cards at random. If two cards that share a card type are discarded this way, put two +1/+1 counters on SN.
+timing=main
+oracle=Trample\nWhen Rowdy Crew enters the battlefield, draw three cards, then discard two cards at random. If two cards that share a card type are discarded this way, put two +1/+1 counters on Rowdy Crew.

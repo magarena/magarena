@@ -1,0 +1,9 @@
+name=Commune with Dinosaurs
+image=https://magiccards.info/scans/en/xln/181.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={G}
+effect=Look at the top five cards of your library. You may reveal a Dinosaur or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=Look at the top five cards of your library. You may reveal a Dinosaur or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

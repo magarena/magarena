@@ -1,0 +1,12 @@
+name=Duskborne Skymarcher
+image=https://magiccards.info/scans/en/xln/9.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Cleric
+cost={W}
+pt=1/1
+ability=Flying;\
+        {W}, {T}: Target attacking Vampire gets +1/+1 until end of turn.
+timing=main
+oracle=Flying\n{W}, {T}: Target attacking Vampire gets +1/+1 until end of turn.

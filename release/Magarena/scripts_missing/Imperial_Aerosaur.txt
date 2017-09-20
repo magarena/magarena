@@ -1,0 +1,12 @@
+name=Imperial Aerosaur
+image=https://magiccards.info/scans/en/xln/14.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{W}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, another target creature you control gets +1/+1 and gains flying until end of turn.
+timing=main
+oracle=Flying\nWhen Imperial Aerosaur enters the battlefield, another target creature you control gets +1/+1 and gains flying until end of turn.

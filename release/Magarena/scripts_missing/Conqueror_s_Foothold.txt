@@ -1,0 +1,13 @@
+name=Conqueror's Foothold
+image=https://magiccards.info/scans/en/xln/234b.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C} to your mana pool.;\
+        {2}, {T}: Draw a card, then discard a card.;\
+        {4}, {T}: Draw a card.;\
+        {6}, {T}: Return target card from your graveyard to your hand.
+transform=Conqueror's Galleon
+hidden
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Draw a card, then discard a card.\n{4}, {T}: Draw a card.\n{6}, {T}: Return target card from your graveyard to your hand.

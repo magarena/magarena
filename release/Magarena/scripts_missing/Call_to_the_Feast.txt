@@ -1,0 +1,9 @@
+name=Call to the Feast
+image=https://magiccards.info/scans/en/xln/219.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{W}{B}
+effect=Create three 1/1 white Vampire creature tokens with lifelink.
+timing=main
+oracle=Create three 1/1 white Vampire creature tokens with lifelink.

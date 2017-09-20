@@ -1,0 +1,11 @@
+name=Cobbled Wings
+image=https://magiccards.info/scans/en/xln/233.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature has flying.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature has flying.\nEquip {1}

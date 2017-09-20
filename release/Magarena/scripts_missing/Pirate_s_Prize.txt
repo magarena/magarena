@@ -1,0 +1,9 @@
+name=Pirate's Prize
+image=https://magiccards.info/scans/en/xln/68.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{U}
+effect=Draw two cards. Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=main
+oracle=Draw two cards. Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

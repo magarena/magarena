@@ -1,0 +1,11 @@
+name=Belligerent Brontodon
+image=https://magiccards.info/scans/en/xln/218.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={5}{G}{W}
+pt=4/6
+ability=Each creature you control assigns combat damage equal to its toughness rather than its power.
+timing=main
+oracle=Each creature you control assigns combat damage equal to its toughness rather than its power.

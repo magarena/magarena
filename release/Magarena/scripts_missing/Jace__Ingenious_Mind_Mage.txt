@@ -1,0 +1,13 @@
+name=Jace, Ingenious Mind-Mage
+image=https://magiccards.info/scans/en/xln/280.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Jace
+cost={4}{U}{U}
+loyalty=5
+ability=+1: Draw a card.;\
+        +1: Untap all creatures you control.;\
+        −9: Gain control of up to three target creatures.
+timing=main
+oracle=+1: Draw a card.\n+1: Untap all creatures you control.\n−9: Gain control of up to three target creatures.

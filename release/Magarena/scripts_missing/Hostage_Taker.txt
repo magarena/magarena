@@ -1,0 +1,11 @@
+name=Hostage Taker
+image=https://magiccards.info/scans/en/xln/223.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={2}{U}{B}
+pt=2/3
+ability=When SN enters the battlefield, exile another target creature or artifact until SN leaves the battlefield. You may cast that card for as long as it remains exiled, and you may spend mana as though it were mana of any type to cast that spell.
+timing=main
+oracle=When Hostage Taker enters the battlefield, exile another target creature or artifact until Hostage Taker leaves the battlefield. You may cast that card for as long as it remains exiled, and you may spend mana as though it were mana of any type to cast that spell.

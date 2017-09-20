@@ -1,0 +1,11 @@
+name=Shore Keeper
+image=https://magiccards.info/scans/en/xln/77.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Trilobite
+cost={U}
+pt=0/3
+ability={7}{U}, {T}, Sacrifice SN: Draw three cards.
+timing=main
+oracle={7}{U}, {T}, Sacrifice Shore Keeper: Draw three cards.

@@ -1,0 +1,11 @@
+name=Marauding Looter
+image=https://magiccards.info/scans/en/xln/225.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={2}{U}{R}
+pt=4/3
+ability=At the beginning of your end step, if you attacked with a creature this turn, you may draw a card. If you do, discard a card.
+timing=main
+oracle=Raid — At the beginning of your end step, if you attacked with a creature this turn, you may draw a card. If you do, discard a card.

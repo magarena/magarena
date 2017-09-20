@@ -1,0 +1,13 @@
+name=Rampaging Ferocidon
+image=https://magiccards.info/scans/en/xln/154.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={2}{R}
+pt=3/3
+ability=Menace;\
+        Players can't gain life.;\
+        Whenever another creature enters the battlefield, SN deals 1 damage to that creature's controller.
+timing=main
+oracle=Menace\nPlayers can't gain life.\nWhenever another creature enters the battlefield, Rampaging Ferocidon deals 1 damage to that creature's controller.

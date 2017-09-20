@@ -1,0 +1,9 @@
+name=Pounce
+image=https://magiccards.info/scans/en/xln/200.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature you control fights target creature you don't control.
+timing=removal
+oracle=Target creature you control fights target creature you don't control.

@@ -1,0 +1,12 @@
+name=Storm Sculptor
+image=https://magiccards.info/scans/en/xln/85.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={3}{U}
+pt=3/2
+ability=SN can't be blocked.;\
+        When SN enters the battlefield, return a creature you control to its owner's hand.
+timing=main
+oracle=Storm Sculptor can't be blocked.\nWhen Storm Sculptor enters the battlefield, return a creature you control to its owner's hand.

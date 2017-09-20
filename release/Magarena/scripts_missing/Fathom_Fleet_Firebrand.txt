@@ -1,0 +1,11 @@
+name=Fathom Fleet Firebrand
+image=https://magiccards.info/scans/en/xln/142.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={1}{R}
+pt=2/2
+ability={1}{R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle={1}{R}: Fathom Fleet Firebrand gets +1/+0 until end of turn.

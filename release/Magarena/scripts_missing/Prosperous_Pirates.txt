@@ -1,0 +1,11 @@
+name=Prosperous Pirates
+image=https://magiccards.info/scans/en/xln/69.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={4}{U}
+pt=3/4
+ability=When SN enters the battlefield, create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=main
+oracle=When Prosperous Pirates enters the battlefield, create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

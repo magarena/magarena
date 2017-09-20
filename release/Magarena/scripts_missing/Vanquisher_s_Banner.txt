@@ -1,0 +1,11 @@
+name=Vanquisher's Banner
+image=https://magiccards.info/scans/en/xln/251.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={5}
+ability=As SN enters the battlefield, choose a creature type.;\
+        Creatures you control of the chosen type get +1/+1.;\
+        Whenever you cast a creature spell of the chosen type, draw a card.
+timing=artifact
+oracle=As Vanquisher's Banner enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +1/+1.\nWhenever you cast a creature spell of the chosen type, draw a card.

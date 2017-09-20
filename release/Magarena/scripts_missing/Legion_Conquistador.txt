@@ -1,0 +1,11 @@
+name=Legion Conquistador
+image=https://magiccards.info/scans/en/xln/20.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={2}{W}
+pt=2/2
+ability=When SN enters the battlefield, you may search your library for any number of cards named Legion Conquistador, reveal them, put them into your hand, then shuffle your library.
+timing=main
+oracle=When Legion Conquistador enters the battlefield, you may search your library for any number of cards named Legion Conquistador, reveal them, put them into your hand, then shuffle your library.

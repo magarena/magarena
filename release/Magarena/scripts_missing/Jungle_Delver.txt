@@ -1,0 +1,11 @@
+name=Jungle Delver
+image=https://magiccards.info/scans/en/xln/195.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={G}
+pt=1/1
+ability={3}{G}: Put a +1/+1 counter on SN.
+timing=main
+oracle={3}{G}: Put a +1/+1 counter on Jungle Delver.

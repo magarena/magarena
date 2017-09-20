@@ -1,0 +1,10 @@
+name=Looming Altisaur
+image=https://magiccards.info/scans/en/xln/23.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={3}{W}
+pt=1/7
+timing=main
+oracle=NONE

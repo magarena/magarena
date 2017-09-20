@@ -1,0 +1,11 @@
+name=Ixalli's Diviner
+image=https://magiccards.info/scans/en/xln/192.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=0/3
+ability=When SN enters the battlefield, it explores.
+timing=main
+oracle=When Ixalli's Diviner enters the battlefield, it explores.

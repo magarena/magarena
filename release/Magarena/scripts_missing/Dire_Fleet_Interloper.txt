@@ -1,0 +1,12 @@
+name=Dire Fleet Interloper
+image=https://magiccards.info/scans/en/xln/103.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={3}{B}
+pt=2/2
+ability=Menace;\
+        When SN enters the battlefield, it explores.
+timing=main
+oracle=Menace\nWhen Dire Fleet Interloper enters the battlefield, it explores.

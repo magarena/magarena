@@ -1,0 +1,12 @@
+name=Steadfast Armasaur
+image=https://magiccards.info/scans/en/xln/39.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{W}
+pt=2/3
+ability=Vigilance;\
+        {1}{W}, {T}: SN deals damage equal to its toughness to target creature blocking or blocked by it.
+timing=main
+oracle=Vigilance\n{1}{W}, {T}: Steadfast Armasaur deals damage equal to its toughness to target creature blocking or blocked by it.

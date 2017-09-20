@@ -1,0 +1,12 @@
+name=Fire Shrine Keeper
+image=https://magiccards.info/scans/en/xln/144.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={R}
+pt=1/1
+ability=Menace;\
+        {7}{R}, {T}, Sacrifice SN: It deals 3 damage to each of up to two target creatures.
+timing=main
+oracle=Menace\n{7}{R}, {T}, Sacrifice Fire Shrine Keeper: It deals 3 damage to each of up to two target creatures.

@@ -1,0 +1,11 @@
+name=Grazing Whiptail
+image=https://magiccards.info/scans/en/xln/190.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={2}{G}{G}
+pt=3/4
+ability=Reach
+timing=main
+oracle=Reach

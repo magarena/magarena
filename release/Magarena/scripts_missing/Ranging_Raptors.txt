@@ -1,0 +1,11 @@
+name=Ranging Raptors
+image=https://magiccards.info/scans/en/xln/201.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={2}{G}
+pt=2/3
+ability=Whenever SN is dealt damage, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=Enrage — Whenever Ranging Raptors is dealt damage, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

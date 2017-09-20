@@ -1,0 +1,11 @@
+name=Primal Amulet
+image=https://magiccards.info/scans/en/xln/243a.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability=Instant and sorcery spells you cast cost {1} less to cast.;\
+        Whenever you cast an instant or sorcery spell, put a charge counter on SN. Then if there are four or more charge counters on it, you may remove those counters and transform it.
+transform=Primal Wellspring
+timing=artifact
+oracle=Instant and sorcery spells you cast cost {1} less to cast.\nWhenever you cast an instant or sorcery spell, put a charge counter on Primal Amulet. Then if there are four or more charge counters on it, you may remove those counters and transform it.

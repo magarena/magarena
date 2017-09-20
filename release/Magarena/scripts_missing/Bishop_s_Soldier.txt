@@ -1,0 +1,11 @@
+name=Bishop's Soldier
+image=https://magiccards.info/scans/en/xln/6.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={1}{W}
+pt=2/2
+ability=Lifelink
+timing=main
+oracle=Lifelink

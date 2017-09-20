@@ -1,0 +1,11 @@
+name=Pterodon Knight
+image=https://magiccards.info/scans/en/xln/28.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{W}
+pt=3/3
+ability=SN has flying as long as you control a Dinosaur.
+timing=main
+oracle=Pterodon Knight has flying as long as you control a Dinosaur.

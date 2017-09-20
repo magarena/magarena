@@ -1,0 +1,9 @@
+name=Blinding Fog
+image=https://magiccards.info/scans/en/xln/177.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Prevent all damage that would be dealt to creatures this turn. Creatures you control gain hexproof until end of turn.
+timing=removal
+oracle=Prevent all damage that would be dealt to creatures this turn. Creatures you control gain hexproof until end of turn.

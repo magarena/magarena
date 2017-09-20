@@ -1,0 +1,12 @@
+name=Lightning-Rig Crew
+image=https://magiccards.info/scans/en/xln/150.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Pirate
+cost={2}{R}
+pt=0/5
+ability={T}: SN deals 1 damage to each opponent.;\
+        Whenever you cast a Pirate spell, untap SN.
+timing=main
+oracle={T}: Lightning-Rig Crew deals 1 damage to each opponent.\nWhenever you cast a Pirate spell, untap Lightning-Rig Crew.

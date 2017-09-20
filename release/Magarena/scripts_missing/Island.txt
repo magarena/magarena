@@ -1,0 +1,8 @@
+name=Island
+image=https://magiccards.info/scans/en/xln/264.jpg
+value=2.500
+rarity=B
+type=Basic,Land
+subtype=Island
+timing=land
+oracle=NONE

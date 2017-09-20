@@ -1,0 +1,12 @@
+name=Bishop of Rebirth
+image=https://magiccards.info/scans/en/xln/5.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Cleric
+cost={3}{W}{W}
+pt=3/4
+ability=Vigilance;\
+        Whenever SN attacks, you may return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
+timing=main
+oracle=Vigilance\nWhenever Bishop of Rebirth attacks, you may return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.

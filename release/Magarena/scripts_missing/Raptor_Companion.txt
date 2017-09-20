@@ -1,0 +1,10 @@
+name=Raptor Companion
+image=https://magiccards.info/scans/en/xln/31.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={1}{W}
+pt=3/1
+timing=main
+oracle=NONE

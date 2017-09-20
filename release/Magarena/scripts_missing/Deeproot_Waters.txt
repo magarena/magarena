@@ -1,0 +1,9 @@
+name=Deeproot Waters
+image=https://magiccards.info/scans/en/xln/51.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=Whenever you cast a Merfolk spell, create a 1/1 blue Merfolk creature token with hexproof.
+timing=enchantment
+oracle=Whenever you cast a Merfolk spell, create a 1/1 blue Merfolk creature token with hexproof.

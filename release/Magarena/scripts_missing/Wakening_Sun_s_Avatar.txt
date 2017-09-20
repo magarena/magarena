@@ -1,0 +1,11 @@
+name=Wakening Sun's Avatar
+image=https://magiccards.info/scans/en/xln/44.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Dinosaur,Avatar
+cost={5}{W}{W}{W}
+pt=7/7
+ability=When SN enters the battlefield, if you cast it from your hand, destroy all non-Dinosaur creatures.
+timing=main
+oracle=When Wakening Sun's Avatar enters the battlefield, if you cast it from your hand, destroy all non-Dinosaur creatures.

@@ -1,0 +1,12 @@
+name=Goring Ceratops
+image=https://magiccards.info/scans/en/xln/13.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={5}{W}{W}
+pt=3/3
+ability=Double strike;\
+        Whenever SN attacks, other creatures you control gain double strike until end of turn.
+timing=main
+oracle=Double strike\nWhenever Goring Ceratops attacks, other creatures you control gain double strike until end of turn.

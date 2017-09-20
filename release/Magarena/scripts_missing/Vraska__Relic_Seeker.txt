@@ -1,0 +1,13 @@
+name=Vraska, Relic Seeker
+image=https://magiccards.info/scans/en/xln/232.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Vraska
+cost={4}{B}{G}
+loyalty=6
+ability=+2: Create a 2/2 black Pirate creature token with menace.;\
+        −3: Destroy target artifact, creature, or enchantment. Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
+        −10: Target player's life total becomes 1.
+timing=main
+oracle=+2: Create a 2/2 black Pirate creature token with menace.\n−3: Destroy target artifact, creature, or enchantment. Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\n−10: Target player's life total becomes 1.

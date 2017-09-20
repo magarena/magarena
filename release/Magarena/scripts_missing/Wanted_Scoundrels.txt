@@ -1,0 +1,11 @@
+name=Wanted Scoundrels
+image=https://magiccards.info/scans/en/xln/131.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={1}{B}
+pt=4/3
+ability=When SN dies, target opponent creates two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=main
+oracle=When Wanted Scoundrels dies, target opponent creates two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

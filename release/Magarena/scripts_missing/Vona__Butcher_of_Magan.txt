@@ -1,0 +1,12 @@
+name=Vona, Butcher of Magan
+image=https://magiccards.info/scans/en/xln/231.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Vampire,Knight
+cost={3}{W}{B}
+pt=4/4
+ability=Vigilance, lifelink;\
+        {T}, Pay 7 life: Destroy target nonland permanent. Activate this ability only during your turn.
+timing=main
+oracle=Vigilance, lifelink\n{T}, Pay 7 life: Destroy target nonland permanent. Activate this ability only during your turn.

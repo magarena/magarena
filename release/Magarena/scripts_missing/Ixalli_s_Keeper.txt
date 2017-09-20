@@ -1,0 +1,11 @@
+name=Ixalli's Keeper
+image=https://magiccards.info/scans/en/xln/193.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{G}
+pt=2/2
+ability={7}{G}, {T}, Sacrifice SN: Target creature gets +5/+5 and gains trample until end of turn.
+timing=main
+oracle={7}{G}, {T}, Sacrifice Ixalli's Keeper: Target creature gets +5/+5 and gains trample until end of turn.

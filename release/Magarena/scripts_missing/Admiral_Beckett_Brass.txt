@@ -1,0 +1,12 @@
+name=Admiral Beckett Brass
+image=https://magiccards.info/scans/en/xln/217.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Pirate
+cost={1}{U}{B}{R}
+pt=3/3
+ability=Other Pirates you control get +1/+1.;\
+        At the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn.
+timing=main
+oracle=Other Pirates you control get +1/+1.\nAt the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn.

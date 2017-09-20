@@ -1,0 +1,10 @@
+name=Ixalan's Binding
+image=https://magiccards.info/scans/en/xln/17.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=When SN enters the battlefield, exile target nonland permanent an opponent controls until SN leaves the battlefield.;\
+        Your opponents can't cast spells with the same name as the exiled card.
+timing=enchantment
+oracle=When Ixalan's Binding enters the battlefield, exile target nonland permanent an opponent controls until Ixalan's Binding leaves the battlefield.\nYour opponents can't cast spells with the same name as the exiled card.

@@ -1,0 +1,11 @@
+name=Growing Rites of Itlimoc
+image=https://magiccards.info/scans/en/xln/191a.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={2}{G}
+ability=When SN enters the battlefield, look at the top four cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.;\
+        At the beginning of your end step, if you control four or more creatures, transform SN.
+transform=Itlimoc, Cradle of the Sun
+timing=enchantment
+oracle=When Growing Rites of Itlimoc enters the battlefield, look at the top four cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\nAt the beginning of your end step, if you control four or more creatures, transform Growing Rites of Itlimoc.

@@ -1,0 +1,9 @@
+name=Siren's Ruse
+image=https://magiccards.info/scans/en/xln/80.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Exile target creature you control, then return that card to the battlefield under its owner's control. If a Pirate was exiled this way, draw a card.
+timing=removal
+oracle=Exile target creature you control, then return that card to the battlefield under its owner's control. If a Pirate was exiled this way, draw a card.

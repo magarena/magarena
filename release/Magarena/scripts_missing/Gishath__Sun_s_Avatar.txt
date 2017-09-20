@@ -1,0 +1,12 @@
+name=Gishath, Sun's Avatar
+image=https://magiccards.info/scans/en/xln/222.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Dinosaur,Avatar
+cost={5}{R}{G}{W}
+pt=7/6
+ability=Trample, vigilance, haste;\
+        Whenever SN deals combat damage to a player, reveal that many cards from the top of your library. Put any number of Dinosaur creature cards from among them onto the battlefield and the rest on the bottom of your library in a random order.
+timing=main
+oracle=Trample, vigilance, haste\nWhenever Gishath, Sun's Avatar deals combat damage to a player, reveal that many cards from the top of your library. Put any number of Dinosaur creature cards from among them onto the battlefield and the rest on the bottom of your library in a random order.

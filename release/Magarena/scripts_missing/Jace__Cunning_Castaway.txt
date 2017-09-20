@@ -1,0 +1,13 @@
+name=Jace, Cunning Castaway
+image=https://magiccards.info/scans/en/xln/60.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Jace
+cost={1}{U}{U}
+loyalty=3
+ability=+1: Whenever one or more creatures you control deal combat damage to a player this turn, draw a card, then discard a card.;\
+        −2: Create a 2/2 blue Illusion creature token with "When this creature becomes the target of a spell, sacrifice it.";\
+        −5: Create two tokens that are copies of SN, except they're not legendary.
+timing=main
+oracle=+1: Whenever one or more creatures you control deal combat damage to a player this turn, draw a card, then discard a card.\n−2: Create a 2/2 blue Illusion creature token with "When this creature becomes the target of a spell, sacrifice it."\n−5: Create two tokens that are copies of Jace, Cunning Castaway, except they're not legendary.

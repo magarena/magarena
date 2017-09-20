@@ -1,0 +1,12 @@
+name=Dire Fleet Ravager
+image=https://magiccards.info/scans/en/xln/104.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Orc,Pirate,Wizard
+cost={3}{B}{B}
+pt=4/4
+ability=Menace, deathtouch;\
+        When SN enters the battlefield, each player loses a third of his or her life, rounded up.
+timing=main
+oracle=Menace, deathtouch\nWhen Dire Fleet Ravager enters the battlefield, each player loses a third of his or her life, rounded up.

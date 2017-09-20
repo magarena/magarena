@@ -1,0 +1,11 @@
+name=Angrath's Marauders
+image=https://magiccards.info/scans/en/xln/132.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={5}{R}{R}
+pt=4/4
+ability=If a source you control would deal damage to a permanent or player, it deals double that damage to that permanent or player instead.
+timing=main
+oracle=If a source you control would deal damage to a permanent or player, it deals double that damage to that permanent or player instead.

@@ -1,0 +1,10 @@
+name=Ancient Brontodon
+image=https://magiccards.info/scans/en/xln/175.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={6}{G}{G}
+pt=9/9
+timing=main
+oracle=NONE

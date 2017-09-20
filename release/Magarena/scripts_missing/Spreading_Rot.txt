@@ -1,0 +1,9 @@
+name=Spreading Rot
+image=https://magiccards.info/scans/en/xln/125.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{B}
+effect=Destroy target land. Its controller loses 2 life.
+timing=main
+oracle=Destroy target land. Its controller loses 2 life.

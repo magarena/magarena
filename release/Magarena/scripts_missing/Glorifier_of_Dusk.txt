@@ -1,0 +1,12 @@
+name=Glorifier of Dusk
+image=https://magiccards.info/scans/en/xln/12.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Soldier
+cost={3}{W}{W}
+pt=4/4
+ability=Pay 2 life: SN gains flying until end of turn.;\
+        Pay 2 life: SN gains vigilance until end of turn.
+timing=main
+oracle=Pay 2 life: Glorifier of Dusk gains flying until end of turn.\nPay 2 life: Glorifier of Dusk gains vigilance until end of turn.

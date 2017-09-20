@@ -1,0 +1,10 @@
+name=Arcane Adaptation
+image=https://magiccards.info/scans/en/xln/46.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability=As SN enters the battlefield, choose a creature type.;\
+        Creatures you control are the chosen type in addition to their other types. The same is true for creature spells you control and creature cards you own that aren't on the battlefield.
+timing=enchantment
+oracle=As Arcane Adaptation enters the battlefield, choose a creature type.\nCreatures you control are the chosen type in addition to their other types. The same is true for creature spells you control and creature cards you own that aren't on the battlefield.

@@ -1,0 +1,12 @@
+name=Otepec Huntmaster
+image=https://magiccards.info/scans/en/xln/153.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}
+pt=1/2
+ability=Dinosaur spells you cast cost {1} less to cast.;\
+        {T}: Target Dinosaur gains haste until end of turn.
+timing=main
+oracle=Dinosaur spells you cast cost {1} less to cast.\n{T}: Target Dinosaur gains haste until end of turn.

@@ -1,0 +1,9 @@
+name=Skulduggery
+image=https://magiccards.info/scans/en/xln/123.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Until end of turn, target creature you control gets +1/+1 and target creature an opponent controls gets -1/-1.
+timing=removal
+oracle=Until end of turn, target creature you control gets +1/+1 and target creature an opponent controls gets -1/-1.

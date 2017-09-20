@@ -1,0 +1,11 @@
+name=Blossom Dryad
+image=https://magiccards.info/scans/en/xln/178.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dryad
+cost={2}{G}
+pt=2/2
+ability={T}: Untap target land.
+timing=main
+oracle={T}: Untap target land.

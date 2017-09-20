@@ -1,0 +1,9 @@
+name=Entrancing Melody
+image=https://magiccards.info/scans/en/xln/55.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{U}{U}
+effect=Gain control of target creature with converted mana cost X.
+timing=main
+oracle=Gain control of target creature with converted mana cost X.

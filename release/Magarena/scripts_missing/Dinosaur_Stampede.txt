@@ -1,0 +1,9 @@
+name=Dinosaur Stampede
+image=https://magiccards.info/scans/en/xln/140.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=Attacking creatures get +2/+0 until end of turn. Dinosaurs you control gain trample until end of turn.
+timing=removal
+oracle=Attacking creatures get +2/+0 until end of turn. Dinosaurs you control gain trample until end of turn.

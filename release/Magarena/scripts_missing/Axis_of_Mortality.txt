@@ -1,0 +1,9 @@
+name=Axis of Mortality
+image=https://magiccards.info/scans/en/xln/3.jpg
+value=2.500
+rarity=M
+type=Enchantment
+cost={4}{W}{W}
+ability=At the beginning of your upkeep, you may have two target players exchange life totals.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may have two target players exchange life totals.

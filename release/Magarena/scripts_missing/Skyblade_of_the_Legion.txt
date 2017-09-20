@@ -1,0 +1,11 @@
+name=Skyblade of the Legion
+image=https://magiccards.info/scans/en/xln/37.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={1}{W}
+pt=1/3
+ability=Flying
+timing=main
+oracle=Flying

@@ -1,0 +1,10 @@
+name=Sorcerous Spyglass
+image=https://magiccards.info/scans/en/xln/248.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability=As SN enters the battlefield, look at an opponent's hand, then choose any card name.;\
+        Activated abilities of sources with the chosen name can't be activated unless they're mana abilities.
+timing=artifact
+oracle=As Sorcerous Spyglass enters the battlefield, look at an opponent's hand, then choose any card name.\nActivated abilities of sources with the chosen name can't be activated unless they're mana abilities.

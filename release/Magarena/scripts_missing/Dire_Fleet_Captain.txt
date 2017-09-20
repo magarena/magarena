@@ -1,0 +1,11 @@
+name=Dire Fleet Captain
+image=https://magiccards.info/scans/en/xln/221.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Pirate
+cost={B}{R}
+pt=2/2
+ability=Whenever SN attacks, it gets +1/+1 until end of turn for each other attacking Pirate.
+timing=main
+oracle=Whenever Dire Fleet Captain attacks, it gets +1/+1 until end of turn for each other attacking Pirate.

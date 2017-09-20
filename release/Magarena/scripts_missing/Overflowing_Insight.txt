@@ -1,0 +1,9 @@
+name=Overflowing Insight
+image=https://magiccards.info/scans/en/xln/66.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={4}{U}{U}{U}
+effect=Target player draws seven cards.
+timing=main
+oracle=Target player draws seven cards.

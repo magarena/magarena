@@ -1,0 +1,12 @@
+name=Headstrong Brute
+image=https://magiccards.info/scans/en/xln/147.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Orc,Pirate
+cost={2}{R}
+pt=3/3
+ability=SN can't block.;\
+        SN has menace as long as you control another Pirate.
+timing=main
+oracle=Headstrong Brute can't block.\nHeadstrong Brute has menace as long as you control another Pirate.

@@ -1,0 +1,9 @@
+name=Walk the Plank
+image=https://magiccards.info/scans/en/xln/130.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={B}{B}
+effect=Destroy target non-Merfolk creature.
+timing=main
+oracle=Destroy target non-Merfolk creature.

@@ -1,0 +1,11 @@
+name=Colossal Dreadmaw
+image=https://magiccards.info/scans/en/xln/180.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={4}{G}{G}
+pt=6/6
+ability=Trample
+timing=main
+oracle=Trample

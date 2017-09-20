@@ -1,0 +1,12 @@
+name=Brazen Buccaneers
+image=https://magiccards.info/scans/en/xln/134.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={3}{R}
+pt=2/2
+ability=Haste;\
+        When SN enters the battlefield, it explores.
+timing=fmain
+oracle=Haste\nWhen Brazen Buccaneers enters the battlefield, it explores.

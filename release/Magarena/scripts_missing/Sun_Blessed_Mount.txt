@@ -1,0 +1,11 @@
+name=Sun-Blessed Mount
+image=https://magiccards.info/scans/en/xln/288.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={3}{R}{W}
+pt=4/4
+ability=When SN enters the battlefield, you may search your library and/or graveyard for a card named Huatli, Dinosaur Knight, reveal it, then put it into your hand. If you searched your library this way, shuffle it.
+timing=main
+oracle=When Sun-Blessed Mount enters the battlefield, you may search your library and/or graveyard for a card named Huatli, Dinosaur Knight, reveal it, then put it into your hand. If you searched your library this way, shuffle it.

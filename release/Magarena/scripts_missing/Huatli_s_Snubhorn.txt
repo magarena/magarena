@@ -1,0 +1,11 @@
+name=Huatli's Snubhorn
+image=https://magiccards.info/scans/en/xln/286.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={1}{W}
+pt=2/2
+ability=Vigilance
+timing=main
+oracle=Vigilance

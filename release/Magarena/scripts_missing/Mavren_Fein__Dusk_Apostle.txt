@@ -1,0 +1,11 @@
+name=Mavren Fein, Dusk Apostle
+image=https://magiccards.info/scans/en/xln/24.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Vampire,Cleric
+cost={2}{W}
+pt=2/2
+ability=Whenever one or more nontoken Vampires you control attack, create a 1/1 white Vampire creature token with lifelink.
+timing=main
+oracle=Whenever one or more nontoken Vampires you control attack, create a 1/1 white Vampire creature token with lifelink.

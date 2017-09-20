@@ -1,0 +1,9 @@
+name=Slash of Talons
+image=https://magiccards.info/scans/en/xln/38.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=SN deals 2 damage to target attacking or blocking creature.
+timing=removal
+oracle=Slash of Talons deals 2 damage to target attacking or blocking creature.

@@ -1,0 +1,13 @@
+name=Captain Lannery Storm
+image=https://magiccards.info/scans/en/xln/136.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Pirate
+cost={2}{R}
+pt=2/2
+ability=Haste;\
+        Whenever SN attacks, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
+        Whenever you sacrifice a Treasure, SN gets +1/+0 until end of turn.
+timing=fmain
+oracle=Haste\nWhenever Captain Lannery Storm attacks, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nWhenever you sacrifice a Treasure, Captain Lannery Storm gets +1/+0 until end of turn.

@@ -1,0 +1,11 @@
+name=Kumena's Speaker
+image=https://magiccards.info/scans/en/xln/196.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Shaman
+cost={G}
+pt=1/1
+ability=SN gets +1/+1 as long as you control another Merfolk or an Island.
+timing=main
+oracle=Kumena's Speaker gets +1/+1 as long as you control another Merfolk or an Island.

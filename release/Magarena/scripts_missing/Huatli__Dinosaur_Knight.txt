@@ -1,0 +1,13 @@
+name=Huatli, Dinosaur Knight
+image=https://magiccards.info/scans/en/xln/285.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Huatli
+cost={4}{R}{W}
+loyalty=4
+ability=+2: Put two +1/+1 counters on up to one target Dinosaur you control.;\
+        −3: Target Dinosaur you control deals damage equal to its power to target creature you don't control.;\
+        −7: Dinosaurs you control get +4/+4 until end of turn.
+timing=main
+oracle=+2: Put two +1/+1 counters on up to one target Dinosaur you control.\n−3: Target Dinosaur you control deals damage equal to its power to target creature you don't control.\n−7: Dinosaurs you control get +4/+4 until end of turn.

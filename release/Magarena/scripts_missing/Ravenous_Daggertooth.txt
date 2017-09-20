@@ -1,0 +1,11 @@
+name=Ravenous Daggertooth
+image=https://magiccards.info/scans/en/xln/202.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={2}{G}
+pt=3/2
+ability=Whenever SN is dealt damage, you gain 2 life.
+timing=main
+oracle=Enrage — Whenever Ravenous Daggertooth is dealt damage, you gain 2 life.

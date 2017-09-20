@@ -1,0 +1,11 @@
+name=Charging Monstrosaur
+image=https://magiccards.info/scans/en/xln/138.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={4}{R}
+pt=5/5
+ability=Trample, haste
+timing=main
+oracle=Trample, haste

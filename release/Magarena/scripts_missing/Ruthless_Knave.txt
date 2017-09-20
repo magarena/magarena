@@ -1,0 +1,12 @@
+name=Ruthless Knave
+image=https://magiccards.info/scans/en/xln/119.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Pirate
+cost={2}{B}
+pt=3/2
+ability={2}{B}, Sacrifice a creature: Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
+        Sacrifice three Treasures: Draw a card.
+timing=main
+oracle={2}{B}, Sacrifice a creature: Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nSacrifice three Treasures: Draw a card.

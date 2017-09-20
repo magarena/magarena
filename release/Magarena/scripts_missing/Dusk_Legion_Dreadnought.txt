@@ -1,0 +1,12 @@
+name=Dusk Legion Dreadnought
+image=https://magiccards.info/scans/en/xln/236.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={5}
+pt=4/6
+ability=Vigilance;\
+        Crew 2
+timing=artifact
+oracle=Vigilance\nCrew 2

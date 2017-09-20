@@ -1,0 +1,9 @@
+name=Makeshift Munitions
+image=https://magiccards.info/scans/en/xln/151.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{R}
+ability={1}, Sacrifice an artifact or creature: SN deals 1 damage to target creature or player.
+timing=enchantment
+oracle={1}, Sacrifice an artifact or creature: Makeshift Munitions deals 1 damage to target creature or player.

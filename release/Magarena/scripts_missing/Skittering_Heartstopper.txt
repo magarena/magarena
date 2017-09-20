@@ -1,0 +1,11 @@
+name=Skittering Heartstopper
+image=https://magiccards.info/scans/en/xln/122.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={B}
+pt=1/2
+ability={B}: SN gains deathtouch until end of turn.
+timing=main
+oracle={B}: Skittering Heartstopper gains deathtouch until end of turn.

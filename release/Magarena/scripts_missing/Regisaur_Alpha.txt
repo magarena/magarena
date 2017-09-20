@@ -1,0 +1,12 @@
+name=Regisaur Alpha
+image=https://magiccards.info/scans/en/xln/227.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={3}{R}{G}
+pt=4/4
+ability=Other Dinosaurs you control have haste.;\
+        When SN enters the battlefield, create a 3/3 green Dinosaur creature token with trample.
+timing=main
+oracle=Other Dinosaurs you control have haste.\nWhen Regisaur Alpha enters the battlefield, create a 3/3 green Dinosaur creature token with trample.

@@ -1,0 +1,9 @@
+name=River Heralds' Boon
+image=https://magiccards.info/scans/en/xln/204.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Put a +1/+1 counter on target creature and a +1/+1 counter on up to one target Merfolk.
+timing=removal
+oracle=Put a +1/+1 counter on target creature and a +1/+1 counter on up to one target Merfolk.

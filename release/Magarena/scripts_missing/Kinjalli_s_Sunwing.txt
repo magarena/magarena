@@ -1,0 +1,12 @@
+name=Kinjalli's Sunwing
+image=https://magiccards.info/scans/en/xln/19.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={2}{W}
+pt=2/3
+ability=Flying;\
+        Creatures your opponents control enter the battlefield tapped.
+timing=main
+oracle=Flying\nCreatures your opponents control enter the battlefield tapped.

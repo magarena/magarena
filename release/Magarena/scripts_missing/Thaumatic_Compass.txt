@@ -1,0 +1,11 @@
+name=Thaumatic Compass
+image=https://magiccards.info/scans/en/xln/249a.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability={3}, {T}: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.;\
+        At the beginning of your end step, if you control seven or more lands, transform SN.
+transform=Spires of Orazca
+timing=artifact
+oracle={3}, {T}: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.\nAt the beginning of your end step, if you control seven or more lands, transform Thaumatic Compass.

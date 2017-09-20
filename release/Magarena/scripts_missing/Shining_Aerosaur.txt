@@ -1,0 +1,11 @@
+name=Shining Aerosaur
+image=https://magiccards.info/scans/en/xln/36.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={4}{W}
+pt=3/4
+ability=Flying
+timing=main
+oracle=Flying

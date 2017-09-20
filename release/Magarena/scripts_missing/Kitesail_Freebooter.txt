@@ -1,0 +1,12 @@
+name=Kitesail Freebooter
+image=https://magiccards.info/scans/en/xln/110.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={1}{B}
+pt=1/2
+ability=Flying;\
+        When SN enters the battlefield, target opponent reveals his or her hand. You choose a noncreature, nonland card from it. Exile that card until SN leaves the battlefield.
+timing=main
+oracle=Flying\nWhen Kitesail Freebooter enters the battlefield, target opponent reveals his or her hand. You choose a noncreature, nonland card from it. Exile that card until Kitesail Freebooter leaves the battlefield.

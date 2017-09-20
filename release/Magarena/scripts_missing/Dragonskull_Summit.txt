@@ -1,0 +1,9 @@
+name=Dragonskull Summit
+image=https://magiccards.info/scans/en/xln/252.jpg
+value=2.500
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped unless you control a Swamp or a Mountain.;\
+        {T}: Add {B} or {R} to your mana pool.
+timing=land
+oracle=Dragonskull Summit enters the battlefield tapped unless you control a Swamp or a Mountain.\n{T}: Add {B} or {R} to your mana pool.

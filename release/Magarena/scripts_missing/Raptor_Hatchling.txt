@@ -1,0 +1,11 @@
+name=Raptor Hatchling
+image=https://magiccards.info/scans/en/xln/155.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={1}{R}
+pt=1/1
+ability=Whenever SN is dealt damage, create a 3/3 green Dinosaur creature token with trample.
+timing=main
+oracle=Enrage — Whenever Raptor Hatchling is dealt damage, create a 3/3 green Dinosaur creature token with trample.

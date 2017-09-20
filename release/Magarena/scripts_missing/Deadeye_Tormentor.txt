@@ -1,0 +1,11 @@
+name=Deadeye Tormentor
+image=https://magiccards.info/scans/en/xln/98.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={2}{B}
+pt=2/2
+ability=When SN enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.
+timing=main
+oracle=Raid — When Deadeye Tormentor enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.

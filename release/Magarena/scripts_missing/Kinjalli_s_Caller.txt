@@ -1,0 +1,11 @@
+name=Kinjalli's Caller
+image=https://magiccards.info/scans/en/xln/18.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=0/3
+ability=Dinosaur spells you cast cost {1} less to cast.
+timing=main
+oracle=Dinosaur spells you cast cost {1} less to cast.

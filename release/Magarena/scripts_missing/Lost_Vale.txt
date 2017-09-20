@@ -1,0 +1,10 @@
+name=Lost Vale
+image=https://magiccards.info/scans/en/xln/235b.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add three mana of any one color to your mana pool.
+transform=Dowsing Dagger
+hidden
+timing=land
+oracle={T}: Add three mana of any one color to your mana pool.

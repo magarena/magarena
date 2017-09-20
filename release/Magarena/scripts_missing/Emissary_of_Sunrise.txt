@@ -1,0 +1,12 @@
+name=Emissary of Sunrise
+image=https://magiccards.info/scans/en/xln/10.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/1
+ability=First strike;\
+        When SN enters the battlefield, it explores.
+timing=main
+oracle=First strike\nWhen Emissary of Sunrise enters the battlefield, it explores.

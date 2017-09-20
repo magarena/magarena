@@ -1,0 +1,11 @@
+name=Sun-Crowned Hunters
+image=https://magiccards.info/scans/en/xln/164.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={4}{R}{R}
+pt=5/4
+ability=Whenever SN is dealt damage, it deals 3 damage to target opponent.
+timing=main
+oracle=Enrage — Whenever Sun-Crowned Hunters is dealt damage, it deals 3 damage to target opponent.

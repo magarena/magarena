@@ -1,0 +1,11 @@
+name=Tempest Caller
+image=https://magiccards.info/scans/en/xln/86.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}{U}
+pt=2/3
+ability=When SN enters the battlefield, tap all creatures target opponent controls.
+timing=main
+oracle=When Tempest Caller enters the battlefield, tap all creatures target opponent controls.

@@ -1,0 +1,9 @@
+name=Lightning Strike
+image=https://magiccards.info/scans/en/xln/149.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{R}
+effect=SN deals 3 damage to target creature or player.
+timing=removal
+oracle=Lightning Strike deals 3 damage to target creature or player.

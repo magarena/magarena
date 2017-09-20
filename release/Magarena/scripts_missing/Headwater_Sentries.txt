@@ -1,0 +1,10 @@
+name=Headwater Sentries
+image=https://magiccards.info/scans/en/xln/58.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={3}{U}
+pt=2/5
+timing=main
+oracle=NONE

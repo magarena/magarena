@@ -1,0 +1,11 @@
+name=Desperate Castaways
+image=https://magiccards.info/scans/en/xln/101.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={1}{B}
+pt=2/3
+ability=SN can't attack unless you control an artifact.
+timing=main
+oracle=Desperate Castaways can't attack unless you control an artifact.

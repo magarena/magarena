@@ -1,0 +1,12 @@
+name=Jade Guardian
+image=https://magiccards.info/scans/en/xln/194.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Shaman
+cost={3}{G}
+pt=2/2
+ability=Hexproof;\
+        When SN enters the battlefield, put a +1/+1 counter on target Merfolk you control.
+timing=main
+oracle=Hexproof\nWhen Jade Guardian enters the battlefield, put a +1/+1 counter on target Merfolk you control.

@@ -1,0 +1,13 @@
+name=Pious Interdiction
+image=https://magiccards.info/scans/en/xln/26.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant creature;\
+        When SN enters the battlefield, you gain 2 life.;\
+        Enchanted creature can't attack or block.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nWhen Pious Interdiction enters the battlefield, you gain 2 life.\nEnchanted creature can't attack or block.

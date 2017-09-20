@@ -1,0 +1,12 @@
+name=Sunrise Seeker
+image=https://magiccards.info/scans/en/xln/40.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={4}{W}
+pt=3/3
+ability=Vigilance;\
+        When SN enters the battlefield, it explores.
+timing=main
+oracle=Vigilance\nWhen Sunrise Seeker enters the battlefield, it explores.

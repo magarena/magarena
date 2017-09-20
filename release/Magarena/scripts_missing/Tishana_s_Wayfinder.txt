@@ -1,0 +1,11 @@
+name=Tishana's Wayfinder
+image=https://magiccards.info/scans/en/xln/211.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Scout
+cost={2}{G}
+pt=2/2
+ability=When SN enters the battlefield, it explores.
+timing=main
+oracle=When Tishana's Wayfinder enters the battlefield, it explores.

@@ -1,0 +1,12 @@
+name=Prying Blade
+image=https://magiccards.info/scans/en/xln/244.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +1/+0.;\
+        Whenever equipped creature deals combat damage to a player, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +1/+0.\nWhenever equipped creature deals combat damage to a player, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nEquip {2}

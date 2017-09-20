@@ -1,0 +1,12 @@
+name=Deadeye Plunderers
+image=https://magiccards.info/scans/en/xln/220.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={3}{U}{B}
+pt=3/3
+ability=SN gets +1/+1 for each artifact you control.;\
+        {2}{U}{B}: Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=main
+oracle=Deadeye Plunderers gets +1/+1 for each artifact you control.\n{2}{U}{B}: Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

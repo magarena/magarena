@@ -1,0 +1,11 @@
+name=Thrash of Raptors
+image=https://magiccards.info/scans/en/xln/168.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={3}{R}
+pt=3/3
+ability=As long as you control another Dinosaur, SN gets +2/+0 and has trample.
+timing=main
+oracle=As long as you control another Dinosaur, Thrash of Raptors gets +2/+0 and has trample.

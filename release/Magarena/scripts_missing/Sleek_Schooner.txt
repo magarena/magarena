@@ -1,0 +1,11 @@
+name=Sleek Schooner
+image=https://magiccards.info/scans/en/xln/247.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Vehicle
+cost={3}
+pt=4/3
+ability=Crew 1
+timing=artifact
+oracle=Crew 1

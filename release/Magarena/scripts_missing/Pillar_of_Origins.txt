@@ -1,0 +1,10 @@
+name=Pillar of Origins
+image=https://magiccards.info/scans/en/xln/241.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability=As SN enters the battlefield, choose a creature type.;\
+        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type.
+timing=artifact
+oracle=As Pillar of Origins enters the battlefield, choose a creature type.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type.

@@ -1,0 +1,12 @@
+name=Daring Saboteur
+image=https://magiccards.info/scans/en/xln/49.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={1}{U}
+pt=2/1
+ability={2}{U}: SN can't be blocked this turn.;\
+        Whenever SN deals combat damage to a player, you may draw a card. If you do, discard a card.
+timing=main
+oracle={2}{U}: Daring Saboteur can't be blocked this turn.\nWhenever Daring Saboteur deals combat damage to a player, you may draw a card. If you do, discard a card.

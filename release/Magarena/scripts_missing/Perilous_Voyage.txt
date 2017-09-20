@@ -1,0 +1,9 @@
+name=Perilous Voyage
+image=https://magiccards.info/scans/en/xln/67.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Return target nonland permanent you don't control to its owner's hand. If its converted mana cost was 2 or less, scry 2.
+timing=removal
+oracle=Return target nonland permanent you don't control to its owner's hand. If its converted mana cost was 2 or less, scry 2.

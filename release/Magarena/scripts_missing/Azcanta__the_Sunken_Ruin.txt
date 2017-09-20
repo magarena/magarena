@@ -1,0 +1,11 @@
+name=Azcanta, the Sunken Ruin
+image=https://magiccards.info/scans/en/xln/74b.jpg
+value=2.500
+rarity=R
+type=Legendary,Land
+ability={T}: Add {U} to your mana pool.;\
+        {2}{U}, {T}: Look at the top four cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+transform=Search for Azcanta
+hidden
+timing=land
+oracle={T}: Add {U} to your mana pool.\n{2}{U}, {T}: Look at the top four cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

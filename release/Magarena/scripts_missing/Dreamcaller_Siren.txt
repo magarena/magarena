@@ -1,0 +1,14 @@
+name=Dreamcaller Siren
+image=https://magiccards.info/scans/en/xln/54.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Siren,Pirate
+cost={2}{U}{U}
+pt=3/3
+ability=Flash;\
+        Flying;\
+        SN can block only creatures with flying.;\
+        When SN enters the battlefield, if you control another Pirate, tap up to two target nonland permanents.
+timing=flash
+oracle=Flash\nFlying\nDreamcaller Siren can block only creatures with flying.\nWhen Dreamcaller Siren enters the battlefield, if you control another Pirate, tap up to two target nonland permanents.

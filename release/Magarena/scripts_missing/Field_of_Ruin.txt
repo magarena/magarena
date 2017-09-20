@@ -1,0 +1,9 @@
+name=Field of Ruin
+image=https://magiccards.info/scans/en/xln/254.jpg
+value=2.500
+rarity=U
+type=Land
+ability={T}: Add {C} to your mana pool.;\
+        {2}, {T}, Sacrifice SN: Destroy target nonbasic land an opponent controls. Each player searches his or her library for a basic land card, puts it onto the battlefield, then shuffles his or her library.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice Field of Ruin: Destroy target nonbasic land an opponent controls. Each player searches his or her library for a basic land card, puts it onto the battlefield, then shuffles his or her library.

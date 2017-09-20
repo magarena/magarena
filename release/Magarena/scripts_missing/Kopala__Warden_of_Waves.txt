@@ -1,0 +1,12 @@
+name=Kopala, Warden of Waves
+image=https://magiccards.info/scans/en/xln/61.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Merfolk,Wizard
+cost={1}{U}{U}
+pt=2/2
+ability=Spells your opponents cast that target a Merfolk you control cost {2} more to cast.;\
+        Abilities your opponents activate that target a Merfolk you control cost {2} more to activate.
+timing=main
+oracle=Spells your opponents cast that target a Merfolk you control cost {2} more to cast.\nAbilities your opponents activate that target a Merfolk you control cost {2} more to activate.

@@ -1,0 +1,11 @@
+name=Vance's Blasting Cannons
+image=https://magiccards.info/scans/en/xln/173a.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={3}{R}
+ability=At the beginning of your upkeep, exile the top card of your library. If it's a nonland card, you may cast that card this turn.;\
+        Whenever you cast your third spell in a turn, you may transform SN.
+transform=Spitfire Bastion
+timing=enchantment
+oracle=At the beginning of your upkeep, exile the top card of your library. If it's a nonland card, you may cast that card this turn.\nWhenever you cast your third spell in a turn, you may transform Vance's Blasting Cannons.

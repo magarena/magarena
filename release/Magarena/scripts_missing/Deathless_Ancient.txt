@@ -1,0 +1,12 @@
+name=Deathless Ancient
+image=https://magiccards.info/scans/en/xln/100.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Knight
+cost={4}{B}{B}
+pt=4/4
+ability=Flying;\
+        Tap three untapped Vampires you control: Return SN from your graveyard to your hand.
+timing=main
+oracle=Flying\nTap three untapped Vampires you control: Return Deathless Ancient from your graveyard to your hand.

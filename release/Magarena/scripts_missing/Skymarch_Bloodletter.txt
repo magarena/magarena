@@ -1,0 +1,12 @@
+name=Skymarch Bloodletter
+image=https://magiccards.info/scans/en/xln/124.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={2}{B}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, target opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Flying\nWhen Skymarch Bloodletter enters the battlefield, target opponent loses 1 life and you gain 1 life.

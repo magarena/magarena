@@ -1,0 +1,11 @@
+name=Vicious Conquistador
+image=https://magiccards.info/scans/en/xln/128.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Soldier
+cost={B}
+pt=1/2
+ability=Whenever SN attacks, each opponent loses 1 life.
+timing=main
+oracle=Whenever Vicious Conquistador attacks, each opponent loses 1 life.

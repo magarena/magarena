@@ -1,0 +1,10 @@
+name=Unclaimed Territory
+image=https://magiccards.info/scans/en/xln/258.jpg
+value=2.500
+rarity=U
+type=Land
+ability=As SN enters the battlefield, choose a creature type.;\
+        {T}: Add {C} to your mana pool.;\
+        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type.
+timing=land
+oracle=As Unclaimed Territory enters the battlefield, choose a creature type.\n{T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type.

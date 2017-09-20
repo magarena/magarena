@@ -1,0 +1,9 @@
+name=Verdant Rebirth
+image=https://magiccards.info/scans/en/xln/212.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{G}
+effect=Until end of turn, target creature gains "When this creature dies, return it to its owner's hand."~Draw a card.
+timing=removal
+oracle=Until end of turn, target creature gains "When this creature dies, return it to its owner's hand."\nDraw a card.

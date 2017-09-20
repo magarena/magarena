@@ -1,0 +1,10 @@
+name=Revel in Riches
+image=https://magiccards.info/scans/en/xln/117.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={4}{B}
+ability=Whenever a creature an opponent controls dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
+        At the beginning of your upkeep, if you control ten or more Treasures, you win the game.
+timing=enchantment
+oracle=Whenever a creature an opponent controls dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nAt the beginning of your upkeep, if you control ten or more Treasures, you win the game.

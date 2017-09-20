@@ -1,0 +1,9 @@
+name=Rootbound Crag
+image=https://magiccards.info/scans/en/xln/256.jpg
+value=2.500
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped unless you control a Mountain or a Forest.;\
+        {T}: Add {R} or {G} to your mana pool.
+timing=land
+oracle=Rootbound Crag enters the battlefield tapped unless you control a Mountain or a Forest.\n{T}: Add {R} or {G} to your mana pool.

@@ -1,0 +1,12 @@
+name=Pirate's Cutlass
+image=https://magiccards.info/scans/en/xln/242.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=When SN enters the battlefield, attach it to target Pirate you control.;\
+        Equipped creature gets +2/+1.;\
+        Equip {2}
+timing=equipment
+oracle=When Pirate's Cutlass enters the battlefield, attach it to target Pirate you control.\nEquipped creature gets +2/+1.\nEquip {2}

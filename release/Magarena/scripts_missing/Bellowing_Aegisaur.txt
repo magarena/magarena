@@ -1,0 +1,11 @@
+name=Bellowing Aegisaur
+image=https://magiccards.info/scans/en/xln/4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={5}{W}
+pt=3/5
+ability=Whenever SN is dealt damage, put a +1/+1 counter on each other creature you control.
+timing=main
+oracle=Enrage — Whenever Bellowing Aegisaur is dealt damage, put a +1/+1 counter on each other creature you control.

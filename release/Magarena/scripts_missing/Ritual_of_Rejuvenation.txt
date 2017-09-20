@@ -1,0 +1,9 @@
+name=Ritual of Rejuvenation
+image=https://magiccards.info/scans/en/xln/32.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{W}
+effect=You gain 4 life.~Draw a card.
+timing=removal
+oracle=You gain 4 life.\nDraw a card.

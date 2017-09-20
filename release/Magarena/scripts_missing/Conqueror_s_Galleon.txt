@@ -1,0 +1,13 @@
+name=Conqueror's Galleon
+image=https://magiccards.info/scans/en/xln/234a.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Vehicle
+cost={4}
+pt=2/10
+ability=When SN attacks, exile it at end of combat, then return it to the battlefield transformed under your control.;\
+        Crew 4
+transform=Conqueror's Foothold
+timing=artifact
+oracle=When Conqueror's Galleon attacks, exile it at end of combat, then return it to the battlefield transformed under your control.\nCrew 4

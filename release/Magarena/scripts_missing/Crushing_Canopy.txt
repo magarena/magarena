@@ -1,0 +1,9 @@
+name=Crushing Canopy
+image=https://magiccards.info/scans/en/xln/183.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Choose one — (1) Destroy target creature with flying. (2) Destroy target enchantment.
+timing=removal
+oracle=Choose one —\n• Destroy target creature with flying.\n• Destroy target enchantment.

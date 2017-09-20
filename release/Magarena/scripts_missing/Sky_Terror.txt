@@ -1,0 +1,11 @@
+name=Sky Terror
+image=https://magiccards.info/scans/en/xln/229.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={R}{W}
+pt=2/2
+ability=Flying, menace
+timing=main
+oracle=Flying, menace

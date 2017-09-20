@@ -1,0 +1,9 @@
+name=Dive Down
+image=https://magiccards.info/scans/en/xln/53.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+effect=Target creature you control gets +0/+3 and gains hexproof until end of turn.
+timing=removal
+oracle=Target creature you control gets +0/+3 and gains hexproof until end of turn.

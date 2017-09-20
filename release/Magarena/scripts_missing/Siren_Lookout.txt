@@ -1,0 +1,12 @@
+name=Siren Lookout
+image=https://magiccards.info/scans/en/xln/78.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Siren,Pirate
+cost={2}{U}
+pt=1/2
+ability=Flying;\
+        When SN enters the battlefield, it explores.
+timing=main
+oracle=Flying\nWhen Siren Lookout enters the battlefield, it explores.

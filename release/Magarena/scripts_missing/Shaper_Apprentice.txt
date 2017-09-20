@@ -1,0 +1,11 @@
+name=Shaper Apprentice
+image=https://magiccards.info/scans/en/xln/75.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=2/1
+ability=SN has flying as long as you control another Merfolk.
+timing=main
+oracle=Shaper Apprentice has flying as long as you control another Merfolk.
