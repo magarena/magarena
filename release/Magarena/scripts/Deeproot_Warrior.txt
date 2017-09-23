@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Warrior
 cost={1}{G}
 pt=2/2
-ability=Whenever SN becomes blocked, it gets +1/+1 until end of turn.
+ability=Whenever SN becomes blocked, SN gets +1/+1 until end of turn.
 timing=main
 oracle=Whenever Deeproot Warrior becomes blocked, it gets +1/+1 until end of turn.
