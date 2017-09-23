@@ -6,6 +6,6 @@ type=Creature
 subtype=Dinosaur
 cost={4}{R}{R}
 pt=5/4
-ability=Whenever SN is dealt damage, it deals 3 damage to target opponent.
+ability=Whenever SN is dealt damage, SN deals 3 damage to target opponent.
 timing=main
 oracle=Enrage — Whenever Sun-Crowned Hunters is dealt damage, it deals 3 damage to target opponent.
