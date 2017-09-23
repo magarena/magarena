@@ -45,6 +45,12 @@ public enum MagicAmountParser {
             return MagicAmountFactory.SN_Power;
         }
     },
+    ItsToughness("(its|SN's) toughness") {
+        @Override
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.SN_Toughness;
+        }
+    },
     RNsPower("RN's power") {
         @Override
         public MagicAmount toAmount(final Matcher arg) {

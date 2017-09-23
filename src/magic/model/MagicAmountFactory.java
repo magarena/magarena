@@ -118,6 +118,15 @@ public class MagicAmountFactory {
             }
         };
 
+    public static MagicAmount SN_Toughness =
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                final MagicPermanent perm = (MagicPermanent)source;
+                return perm.getToughness();
+            }
+        };
+
     public static MagicAmount LifeTotal =
         new MagicAmount() {
             @Override
