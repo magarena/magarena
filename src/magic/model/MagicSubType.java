@@ -81,7 +81,7 @@ public enum MagicSubType {
     Siren, Skeleton, Slith, Sliver, Slug, Snake, Soldier, Soltari, Spawn, Specter,
     Spellshaper, Sphinx, Spider, Spike, Spirit, Splinter, Sponge, Squid, Squirrel,
     Starfish, Surrakar, Survivor, Tetravite, Thalakos, Thopter, Thrull, Treefolk,
-    Triskelavite, Troll, Turtle, Unicorn, Vampire, Vedalken, Viashino, Volver,
+    Trilobite, Triskelavite, Troll, Turtle, Unicorn, Vampire, Vedalken, Viashino, Volver,
     Wall, Warrior, Weird, Werewolf, Whale, Wizard, Wolf, Wolverine, Wombat, Worm,
     Wraith, Wurm, Yeti, Zombie, Zubera,
 
