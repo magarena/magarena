@@ -190,7 +190,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             auraPermanents.getStateId(),
             blockingCreatures.getStateId(),
             //pairedCreature.getStateId(),
-            exiledCards.getUnorderedStateId(),
+            exiledCards.getStateId(),
             chosenPlayer.getId(),
             getCountersHash(),
             abilityPlayedThisTurn,

@@ -279,7 +279,7 @@ public class MagicGame {
             activeSource.getStateId(),
             triggers.getStateId(),
             statics.getStateId(),
-            exiledUntilEndOfTurn.getUnorderedStateId(),
+            exiledUntilEndOfTurn.getStateId(),
         };
         stateId = MurmurHash3.hash(keys);
         return stateId;
