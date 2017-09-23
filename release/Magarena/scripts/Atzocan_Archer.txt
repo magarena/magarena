@@ -7,6 +7,6 @@ subtype=Human,Archer
 cost={2}{G}
 pt=1/4
 ability=Reach;\
-        When SN enters the battlefield, you may have it fight another target creature.
+        When SN enters the battlefield, you may have SN fight another target creature.
 timing=main
 oracle=Reach\nWhen Atzocan Archer enters the battlefield, you may have it fight another target creature.
