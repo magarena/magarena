@@ -4,6 +4,6 @@ value=2.500
 rarity=M
 type=Sorcery
 cost={5}{R}{R}
-effect=Destroy target land. SN deals 20 damage to each creature and each planeswalker.
+effect=Destroy target land.~SN deals 20 damage to each creature and each planeswalker.
 timing=main
 oracle=Destroy target land. Star of Extinction deals 20 damage to each creature and each planeswalker.
