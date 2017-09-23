@@ -9,3 +9,4 @@ pt=6/6
 ability=When SN enters the battlefield, it deals 3 damage to target opponent and 3 damage to up to one target creature.
 timing=main
 oracle=When Burning Sun's Avatar enters the battlefield, it deals 3 damage to target opponent and 3 damage to up to one target creature.
+status=not supported: multiple-targets

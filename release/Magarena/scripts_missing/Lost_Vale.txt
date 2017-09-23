@@ -8,3 +8,4 @@ transform=Dowsing Dagger
 hidden
 timing=land
 oracle={T}: Add three mana of any one color to your mana pool.
+status=not supported: add-multiple-mana

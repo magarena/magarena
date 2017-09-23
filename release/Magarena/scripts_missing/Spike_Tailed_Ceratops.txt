@@ -9,3 +9,4 @@ pt=4/4
 ability=SN can block an additional creature each combat.
 timing=main
 oracle=Spike-Tailed Ceratops can block an additional creature each combat.
+status=not supported: block-multiple

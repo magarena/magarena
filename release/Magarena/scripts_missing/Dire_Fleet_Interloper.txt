@@ -10,3 +10,4 @@ ability=Menace;\
         When SN enters the battlefield, it explores.
 timing=main
 oracle=Menace\nWhen Dire Fleet Interloper enters the battlefield, it explores.
+status=not supported: blocking-restriction

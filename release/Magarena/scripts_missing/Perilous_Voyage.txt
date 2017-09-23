@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Return target nonland permanent you don't control to its owner's hand. If its converted mana cost was 2 or less, scry 2.
 timing=removal
 oracle=Return target nonland permanent you don't control to its owner's hand. If its converted mana cost was 2 or less, scry 2.
+status=not supported: ordering-lib-top

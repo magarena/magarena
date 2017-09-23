@@ -10,3 +10,4 @@ ability=Menace;\
         Whenever SN attacks, if you control another nontoken Pirate, you may pay {2}. If you do, create a 2/2 black Pirate creature token with menace.
 timing=main
 oracle=Menace\nWhenever Fathom Fleet Captain attacks, if you control another nontoken Pirate, you may pay {2}. If you do, create a 2/2 black Pirate creature token with menace.
+status=not supported: blocking-restriction

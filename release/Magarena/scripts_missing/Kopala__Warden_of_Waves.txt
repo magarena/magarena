@@ -10,3 +10,4 @@ ability=Spells your opponents cast that target a Merfolk you control cost {2} mo
         Abilities your opponents activate that target a Merfolk you control cost {2} more to activate.
 timing=main
 oracle=Spells your opponents cast that target a Merfolk you control cost {2} more to cast.\nAbilities your opponents activate that target a Merfolk you control cost {2} more to activate.
+status=not supported: complex-cost-modification

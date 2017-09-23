@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, target opponent reveals his or her hand. You choose a noncreature, nonland card from it. Exile that card until SN leaves the battlefield.
 timing=main
 oracle=Flying\nWhen Kitesail Freebooter enters the battlefield, target opponent reveals his or her hand. You choose a noncreature, nonland card from it. Exile that card until Kitesail Freebooter leaves the battlefield.
+status=not supported: reveal-hand

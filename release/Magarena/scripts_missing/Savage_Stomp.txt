@@ -8,3 +8,4 @@ ability=SN costs {2} less to cast if it targets a Dinosaur you control.
 effect=Put a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control.
 timing=main
 oracle=Savage Stomp costs {2} less to cast if it targets a Dinosaur you control.\nPut a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control.
+status=not supported: complex-cost-modification

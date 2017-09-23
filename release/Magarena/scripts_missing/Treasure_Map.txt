@@ -8,3 +8,4 @@ ability={1}, {T}: Scry 1. Put a landmark counter on SN. Then if there are three 
 transform=Treasure Cove
 timing=artifact
 oracle={1}, {T}: Scry 1. Put a landmark counter on Treasure Map. Then if there are three or more landmark counters on it, remove those counters, transform Treasure Map, and create three colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+status=needs groovy

@@ -12,3 +12,4 @@ ability=Flash;\
         When SN enters the battlefield, if you control another Pirate, tap up to two target nonland permanents.
 timing=flash
 oracle=Flash\nFlying\nDreamcaller Siren can block only creatures with flying.\nWhen Dreamcaller Siren enters the battlefield, if you control another Pirate, tap up to two target nonland permanents.
+status=not supported: multiple-targets

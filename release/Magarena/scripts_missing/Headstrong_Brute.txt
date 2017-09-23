@@ -10,3 +10,4 @@ ability=SN can't block.;\
         SN has menace as long as you control another Pirate.
 timing=main
 oracle=Headstrong Brute can't block.\nHeadstrong Brute has menace as long as you control another Pirate.
+status=not supported: blocking-restriction

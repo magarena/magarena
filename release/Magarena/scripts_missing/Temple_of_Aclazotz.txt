@@ -9,3 +9,4 @@ transform=Arguel's Blood Fast
 hidden
 timing=land
 oracle={T}: Add {B} to your mana pool.\n{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.
+status=needs groovy

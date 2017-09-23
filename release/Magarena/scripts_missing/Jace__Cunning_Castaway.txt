@@ -11,3 +11,4 @@ ability=+1: Whenever one or more creatures you control deal combat damage to a p
         −5: Create two tokens that are copies of SN, except they're not legendary.
 timing=main
 oracle=+1: Whenever one or more creatures you control deal combat damage to a player this turn, draw a card, then discard a card.\n−2: Create a 2/2 blue Illusion creature token with "When this creature becomes the target of a spell, sacrifice it."\n−5: Create two tokens that are copies of Jace, Cunning Castaway, except they're not legendary.
+status=not supported: one-or-more-damage

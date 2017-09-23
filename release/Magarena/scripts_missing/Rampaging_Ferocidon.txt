@@ -11,3 +11,4 @@ ability=Menace;\
         Whenever another creature enters the battlefield, SN deals 1 damage to that creature's controller.
 timing=main
 oracle=Menace\nPlayers can't gain life.\nWhenever another creature enters the battlefield, Rampaging Ferocidon deals 1 damage to that creature's controller.
+status=not supported: blocking-restriction

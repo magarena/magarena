@@ -9,3 +9,4 @@ pt=2/2
 ability=Flying, menace
 timing=main
 oracle=Flying, menace
+status=not supported: blocking-restriction

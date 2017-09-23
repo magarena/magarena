@@ -8,3 +8,4 @@ ability=Each opponent must attack you or a planeswalker you control with at leas
         At the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
 timing=enchantment
 oracle=Each opponent must attack you or a planeswalker you control with at least one creature each combat if able.\nAt the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+status=not supported: attacking-restriction

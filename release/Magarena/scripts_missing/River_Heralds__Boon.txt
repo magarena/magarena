@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Put a +1/+1 counter on target creature and a +1/+1 counter on up to one target Merfolk.
 timing=removal
 oracle=Put a +1/+1 counter on target creature and a +1/+1 counter on up to one target Merfolk.
+status=not supported: multiple-targets

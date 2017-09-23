@@ -9,3 +9,4 @@ ability=As SN enters the battlefield, choose a creature type.;\
         Whenever you cast a creature spell of the chosen type, draw a card.
 timing=artifact
 oracle=As Vanquisher's Banner enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +1/+1.\nWhenever you cast a creature spell of the chosen type, draw a card.
+status=not supported: choose-creature-type

@@ -10,3 +10,4 @@ ability=Other Pirates you control get +1/+1.;\
         At the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn.
 timing=main
 oracle=Other Pirates you control get +1/+1.\nAt the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn.
+status=not supported: no-info

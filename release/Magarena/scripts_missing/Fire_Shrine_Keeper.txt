@@ -10,3 +10,4 @@ ability=Menace;\
         {7}{R}, {T}, Sacrifice SN: It deals 3 damage to each of up to two target creatures.
 timing=main
 oracle=Menace\n{7}{R}, {T}, Sacrifice Fire Shrine Keeper: It deals 3 damage to each of up to two target creatures.
+status=not supported: blocking-restriction

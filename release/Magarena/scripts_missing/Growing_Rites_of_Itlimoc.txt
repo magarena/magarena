@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, look at the top four cards of your libra
 transform=Itlimoc, Cradle of the Sun
 timing=enchantment
 oracle=When Growing Rites of Itlimoc enters the battlefield, look at the top four cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\nAt the beginning of your end step, if you control four or more creatures, transform Growing Rites of Itlimoc.
+status=not supported: other-half

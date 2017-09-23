@@ -9,3 +9,4 @@ pt=1/1
 ability={1}{B}, {T}: Exile two target cards from an opponent's graveyard. SN explores.
 timing=main
 oracle={1}{B}, {T}: Exile two target cards from an opponent's graveyard. Deadeye Tracker explores.
+status=not supported: multiple-targets

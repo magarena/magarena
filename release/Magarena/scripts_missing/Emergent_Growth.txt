@@ -7,3 +7,4 @@ cost={3}{G}
 effect=Target creature gets +5/+5 until end of turn and must be blocked this turn if able.
 timing=main
 oracle=Target creature gets +5/+5 until end of turn and must be blocked this turn if able.
+status=not supported: blocking-restriction

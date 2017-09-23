@@ -11,3 +11,4 @@ ability=+1: Draw a card.;\
         −9: Gain control of up to three target creatures.
 timing=main
 oracle=+1: Draw a card.\n+1: Untap all creatures you control.\n−9: Gain control of up to three target creatures.
+status=not supported: multiple-targets

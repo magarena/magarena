@@ -7,3 +7,4 @@ cost={X}{U}{U}
 effect=Gain control of target creature with converted mana cost X.
 timing=main
 oracle=Gain control of target creature with converted mana cost X.
+status=needs groovy

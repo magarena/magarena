@@ -12,3 +12,4 @@ ability=When SN enters the battlefield, target opponent creates two 0/2 green Pl
 transform=Lost Vale
 timing=equipment
 oracle=When Dowsing Dagger enters the battlefield, target opponent creates two 0/2 green Plant creature tokens with defender.\nEquipped creature gets +2/+1.\nWhenever equipped creature deals combat damage to a player, you may transform Dowsing Dagger.\nEquip {2}
+status=not supported: other-half
