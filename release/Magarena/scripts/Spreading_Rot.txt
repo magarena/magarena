@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={4}{B}
-effect=Destroy target land. Its controller loses 2 life.
+effect=Destroy target land.~Its controller loses 2 life.
 timing=main
 oracle=Destroy target land. Its controller loses 2 life.
