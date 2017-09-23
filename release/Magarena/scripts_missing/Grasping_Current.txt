@@ -7,3 +7,4 @@ cost={4}{U}
 effect=Return up to two target creatures to their owner's hand.~Search your library and/or graveyard for a card named Jace, Ingenious Mind-Mage, reveal it, and put it into your hand. If you searched your library this way, shuffle it.
 timing=main
 oracle=Return up to two target creatures to their owner's hand.\nSearch your library and/or graveyard for a card named Jace, Ingenious Mind-Mage, reveal it, and put it into your hand. If you searched your library this way, shuffle it.
+status=not supported: multiple-targets

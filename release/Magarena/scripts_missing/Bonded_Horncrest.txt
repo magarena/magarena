@@ -9,3 +9,4 @@ pt=5/5
 ability=SN can't attack or block alone.
 timing=main
 oracle=Bonded Horncrest can't attack or block alone.
+status=not supported: attacking-restriction

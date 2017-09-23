@@ -7,3 +7,4 @@ cost={1}{R}{R}
 effect=SN deals 3 damage to target creature.~SN deals 6 damage to that creature instead if you attacked with a creature this turn.
 timing=main
 oracle=Firecannon Blast deals 3 damage to target creature.\nRaid — Firecannon Blast deals 6 damage to that creature instead if you attacked with a creature this turn.
+status=needs groovy

@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever one or more nontoken Vampires you control attack, create a 1/1 white Vampire creature token with lifelink.
 timing=main
 oracle=Whenever one or more nontoken Vampires you control attack, create a 1/1 white Vampire creature token with lifelink.
+status=not supported: when-creatures-attack

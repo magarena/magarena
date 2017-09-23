@@ -7,3 +7,4 @@ cost={B}
 effect=Choose one — (1) Return target creature card from your graveyard to your hand. (2) Return two target Pirate cards from your graveyard to your hand.
 timing=main
 oracle=Choose one —\n• Return target creature card from your graveyard to your hand.\n• Return two target Pirate cards from your graveyard to your hand.
+status=not supported: multiple-targets

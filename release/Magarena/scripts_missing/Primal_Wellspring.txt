@@ -8,3 +8,4 @@ transform=Primal Amulet
 hidden
 timing=land
 oracle={T}: Add one mana of any color to your mana pool. When that mana is spent to cast an instant or sorcery spell, copy that spell and you may choose new targets for the copy.
+status=not supported: mana-spent
