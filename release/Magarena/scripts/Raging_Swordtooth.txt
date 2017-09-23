@@ -7,6 +7,6 @@ subtype=Dinosaur
 cost={3}{R}{G}
 pt=5/5
 ability=Trample;\
-        When SN enters the battlefield, it deals 1 damage to each other creature.
+        When SN enters the battlefield, SN deals 1 damage to each other creature.
 timing=main
 oracle=Trample\nWhen Raging Swordtooth enters the battlefield, it deals 1 damage to each other creature.
