@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{B}{B}
-effect=Exile target creature or planeswalker. You gain 2 life.
+effect=Exile target creature or planeswalker.~You gain 2 life.
 timing=removal
 oracle=Exile target creature or planeswalker. You gain 2 life.
