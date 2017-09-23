@@ -7,6 +7,6 @@ subtype=Dinosaur
 cost={4}{G}
 pt=4/4
 ability=Flash;\
-        Whenever SN is dealt damage, put a +1/+1 counter on it.
+        Whenever SN is dealt damage, put a +1/+1 counter on SN.
 timing=flash
 oracle=Flash\nEnrage — Whenever Snapping Sailback is dealt damage, put a +1/+1 counter on it.
