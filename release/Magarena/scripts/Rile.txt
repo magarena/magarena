@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={R}
-effect=SN deals 1 damage to target creature you control. That creature gains trample until end of turn.~Draw a card.
+effect=SN deals 1 damage to target creature you control.~*That creature* gains trample until end of turn.~Draw a card.
 timing=main
 oracle=Rile deals 1 damage to target creature you control. That creature gains trample until end of turn.\nDraw a card.
