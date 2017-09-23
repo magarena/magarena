@@ -7,6 +7,6 @@ subtype=Dinosaur
 cost={3}{W}
 pt=2/3
 ability=Vigilance;\
-        {1}{W}, {T}: SN deals damage equal to its toughness to target creature blocking or blocked by it.
+        {1}{W}, {T}: SN deals damage equal to its toughness to target creature blocking or blocked by SN.
 timing=main
 oracle=Vigilance\n{1}{W}, {T}: Steadfast Armasaur deals damage equal to its toughness to target creature blocking or blocked by it.
