@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={2}{G}
 effect=Target creature gets +3/+3 and gains trample until end of turn.
-timing=removal
+timing=pump
 oracle=Target creature gets +3/+3 and gains trample until end of turn.
