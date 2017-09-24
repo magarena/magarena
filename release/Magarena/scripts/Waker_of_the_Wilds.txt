@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Shaman
 cost={2}{G}{G}
 pt=3/3
-ability={X}{G}{G}: Put X +1/+1 counters on target land you control. That land becomes a 0/0 Elemental creature with haste. It's still a land.
+ability={X}{G}{G}: Put X +1/+1 counters on target land you control.~*That land* becomes a 0/0 Elemental creature with haste. It's still a land.
 timing=main
 oracle={X}{G}{G}: Put X +1/+1 counters on target land you control. That land becomes a 0/0 Elemental creature with haste. It's still a land.
