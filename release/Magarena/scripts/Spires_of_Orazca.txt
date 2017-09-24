@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {T}: Untap target attacking creature an opponent controls and remove it from combat.
+        {T}: Untap target attacking creature an opponent controls~and remove *it* from combat.
 transform=Thaumatic Compass
 hidden
 timing=land
