@@ -1,0 +1,10 @@
+name=1/1 blue Merfolk creature token with hexproof
+token=Merfolk
+image=https://img.scryfall.com/cards/border_crop/en/txln/3.jpg?1505310617
+value=1
+pt=1/1
+color=u
+subtype=Merfolk
+type=Creature
+ability=Hexproof
+oracle=Hexproof
