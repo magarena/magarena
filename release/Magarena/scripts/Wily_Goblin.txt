@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Pirate
 cost={R}{R}
 pt=1/1
-ability=When SN enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+ability=When SN enters the battlefield, create a colorless Treasure artifact token.
 timing=main
 oracle=When Wily Goblin enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
