@@ -550,7 +550,7 @@ check_meta: cards/scriptable.txt
 
 # every image is to a jpg file or attachment
 check_image:
-	grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v "png$$" | grep -v attachment.php | ${NO_OUTPUT}
+	grep '^image=' -r release/Magarena/scripts | grep -v "jpg\(?[0-9]*\)\?$$" | grep -v "png$$" | grep -v attachment.php | ${NO_OUTPUT}
 
 # every card that requires groovy code has a corresponding groovy script file
 # every groovy script file has a corresponding card script that requires groovy code
