@@ -1057,6 +1057,7 @@ public enum MagicAbility {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(BecomesStateTrigger.create(
+                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                 MagicPermanentState.Exerted,
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
