@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Scout
 cost={1}{G}
 pt=2/1
-ability=When SN enters the battlefield, it explores.
+ability=When SN enters the battlefield, SN explores.
 timing=main
 oracle=When Merfolk Branchwalker enters the battlefield, it explores.
