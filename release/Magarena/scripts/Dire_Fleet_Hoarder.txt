@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={1}{B}
 pt=2/1
-ability=When SN dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+ability=When SN dies, create a colorless Treasure artifact token.
 timing=main
 oracle=When Dire Fleet Hoarder dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
