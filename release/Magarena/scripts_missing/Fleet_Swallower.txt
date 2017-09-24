@@ -9,3 +9,4 @@ pt=6/6
 ability=Whenever SN attacks, target player puts the top half of his or her library, rounded up, into his or her graveyard.
 timing=main
 oracle=Whenever Fleet Swallower attacks, target player puts the top half of his or her library, rounded up, into his or her graveyard.
+status=needs groovy

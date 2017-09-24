@@ -10,3 +10,4 @@ ability=Trample;\
         When SN enters the battlefield, draw three cards, then discard two cards at random. If two cards that share a card type are discarded this way, put two +1/+1 counters on SN.
 timing=main
 oracle=Trample\nWhen Rowdy Crew enters the battlefield, draw three cards, then discard two cards at random. If two cards that share a card type are discarded this way, put two +1/+1 counters on Rowdy Crew.
+status=needs groovy

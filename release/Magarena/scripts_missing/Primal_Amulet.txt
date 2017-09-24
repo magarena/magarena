@@ -9,3 +9,4 @@ ability=Instant and sorcery spells you cast cost {1} less to cast.;\
 transform=Primal Wellspring
 timing=artifact
 oracle=Instant and sorcery spells you cast cost {1} less to cast.\nWhenever you cast an instant or sorcery spell, put a charge counter on Primal Amulet. Then if there are four or more charge counters on it, you may remove those counters and transform it.
+status=not supported: other-half

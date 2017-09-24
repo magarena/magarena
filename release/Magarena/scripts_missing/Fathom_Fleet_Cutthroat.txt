@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, destroy target creature an opponent controls that was dealt damage this turn.
 timing=main
 oracle=When Fathom Fleet Cutthroat enters the battlefield, destroy target creature an opponent controls that was dealt damage this turn.
+status=needs groovy

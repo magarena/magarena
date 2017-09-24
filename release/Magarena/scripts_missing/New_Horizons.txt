@@ -11,3 +11,4 @@ ability=Enchant land;\
 timing=aura
 enchant=default,creature
 oracle=Enchant land\nWhen New Horizons enters the battlefield, put a +1/+1 counter on target creature you control.\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."
+status=not supported: add-multiple-mana

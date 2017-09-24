@@ -8,3 +8,4 @@ ability=When SN enters the battlefield, exile target nonland permanent an oppone
         Your opponents can't cast spells with the same name as the exiled card.
 timing=enchantment
 oracle=When Ixalan's Binding enters the battlefield, exile target nonland permanent an opponent controls until Ixalan's Binding leaves the battlefield.\nYour opponents can't cast spells with the same name as the exiled card.
+status=not supported: players-cant

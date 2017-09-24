@@ -9,3 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, each opponent may search his or her library for a basic land card, put it onto the battlefield tapped, then shuffle his or her library.
 timing=main
 oracle=When Old-Growth Dryads enters the battlefield, each opponent may search his or her library for a basic land card, put it onto the battlefield tapped, then shuffle his or her library.
+status=needs groovy
