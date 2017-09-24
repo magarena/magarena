@@ -7,6 +7,6 @@ subtype=Human,Scout
 cost={4}{W}
 pt=3/3
 ability=Vigilance;\
-        When SN enters the battlefield, it explores.
+        When SN enters the battlefield, SN explores.
 timing=main
 oracle=Vigilance\nWhen Sunrise Seeker enters the battlefield, it explores.
