@@ -742,6 +742,14 @@ public enum MagicRuleEventAction {
             return new MagicDamageTargetPicker(count);
         }
     },
+    Explore(
+        "sn explores",
+        MagicTiming.Pump,
+        "Explore",
+        (game, event) -> {
+            game.addEvent(new MagicExploreEvent(event.getPermanent()));
+        }
+    ),
     Fight(
         ARG.IT + " fight(s)? " + ARG.TARGETS,
         MagicTiming.Removal,
