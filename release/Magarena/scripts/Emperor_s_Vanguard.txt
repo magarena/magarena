@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Scout
 cost={3}{G}
 pt=4/3
-ability=Whenever SN deals combat damage to a player, it explores.
+ability=Whenever SN deals combat damage to a player, SN explores.
 timing=main
 oracle=Whenever Emperor's Vanguard deals combat damage to a player, it explores.
