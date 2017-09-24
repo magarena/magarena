@@ -7,6 +7,6 @@ subtype=Vampire,Scout
 cost={5}{B}
 pt=3/3
 ability=Lifelink;\
-        When SN enters the battlefield, it explores.
+        When SN enters the battlefield, SN explores.
 timing=main
 oracle=Lifelink\nWhen Queen's Agent enters the battlefield, it explores.
