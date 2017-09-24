@@ -7,6 +7,6 @@ subtype=Siren,Pirate
 cost={2}{U}
 pt=1/2
 ability=Flying;\
-        When SN enters the battlefield, it explores.
+        When SN enters the battlefield, SN explores.
 timing=main
 oracle=Flying\nWhen Siren Lookout enters the battlefield, it explores.
