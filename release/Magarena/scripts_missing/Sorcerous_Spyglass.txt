@@ -8,3 +8,4 @@ ability=As SN enters the battlefield, look at an opponent's hand, then choose an
         Activated abilities of sources with the chosen name can't be activated unless they're mana abilities.
 timing=artifact
 oracle=As Sorcerous Spyglass enters the battlefield, look at an opponent's hand, then choose any card name.\nActivated abilities of sources with the chosen name can't be activated unless they're mana abilities.
+status=not supported: name-card

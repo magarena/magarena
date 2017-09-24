@@ -9,3 +9,4 @@ ability=At the beginning of your upkeep, exile the top card of your library. If 
 transform=Spitfire Bastion
 timing=enchantment
 oracle=At the beginning of your upkeep, exile the top card of your library. If it's a nonland card, you may cast that card this turn.\nWhenever you cast your third spell in a turn, you may transform Vance's Blasting Cannons.
+status=not supported: cast-from-exile

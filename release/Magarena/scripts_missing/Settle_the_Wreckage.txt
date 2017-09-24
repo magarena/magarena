@@ -7,3 +7,4 @@ cost={2}{W}{W}
 effect=Exile all attacking creatures target player controls. That player may search his or her library for that many basic land cards, put those cards onto the battlefield tapped, then shuffle his or her library.
 timing=removal
 oracle=Exile all attacking creatures target player controls. That player may search his or her library for that many basic land cards, put those cards onto the battlefield tapped, then shuffle his or her library.
+status=needs groovy

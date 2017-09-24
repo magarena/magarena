@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, you may search your library for any number of cards named Legion Conquistador, reveal them, put them into your hand, then shuffle your library.
 timing=main
 oracle=When Legion Conquistador enters the battlefield, you may search your library for any number of cards named Legion Conquistador, reveal them, put them into your hand, then shuffle your library.
+status=not supported: any-number-of

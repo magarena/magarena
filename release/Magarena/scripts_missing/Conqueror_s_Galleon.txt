@@ -11,3 +11,4 @@ ability=When SN attacks, exile it at end of combat, then return it to the battle
 transform=Conqueror's Foothold
 timing=artifact
 oracle=When Conqueror's Galleon attacks, exile it at end of combat, then return it to the battlefield transformed under your control.\nCrew 4
+status=needs groovy
