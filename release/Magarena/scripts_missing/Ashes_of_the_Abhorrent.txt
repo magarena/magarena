@@ -8,3 +8,4 @@ ability=Players can't cast spells from graveyards or activate abilities of cards
         Whenever a creature dies, you gain 1 life.
 timing=enchantment
 oracle=Players can't cast spells from graveyards or activate abilities of cards in graveyards.\nWhenever a creature dies, you gain 1 life.
+status=not supported: players-cant

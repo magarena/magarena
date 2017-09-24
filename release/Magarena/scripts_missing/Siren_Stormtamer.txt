@@ -10,3 +10,4 @@ ability=Flying;\
         {U}, Sacrifice SN: Counter target spell or ability that targets you or a creature you control.
 timing=main
 oracle=Flying\n{U}, Sacrifice Siren Stormtamer: Counter target spell or ability that targets you or a creature you control.
+status=needs groovy

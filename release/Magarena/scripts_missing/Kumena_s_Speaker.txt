@@ -9,3 +9,4 @@ pt=1/1
 ability=SN gets +1/+1 as long as you control another Merfolk or an Island.
 timing=main
 oracle=Kumena's Speaker gets +1/+1 as long as you control another Merfolk or an Island.
+status=needs groovy

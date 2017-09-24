@@ -7,3 +7,4 @@ cost={1}{U}
 effect=Draw two cards. Then discard a card unless you attacked with a creature this turn.
 timing=main
 oracle=Draw two cards. Then discard a card unless you attacked with a creature this turn.
+status=needs groovy

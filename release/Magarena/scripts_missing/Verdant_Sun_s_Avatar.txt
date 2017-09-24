@@ -9,3 +9,4 @@ pt=5/5
 ability=Whenever SN or another creature enters the battlefield under your control, you gain life equal to that creature's toughness.
 timing=main
 oracle=Whenever Verdant Sun's Avatar or another creature enters the battlefield under your control, you gain life equal to that creature's toughness.
+status=needs groovy

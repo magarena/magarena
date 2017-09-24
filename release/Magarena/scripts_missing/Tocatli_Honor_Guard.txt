@@ -9,3 +9,4 @@ pt=1/3
 ability=Creatures entering the battlefield don't cause abilities to trigger.
 timing=main
 oracle=Creatures entering the battlefield don't cause abilities to trigger.
+status=not supported: permanents-cant

@@ -10,3 +10,4 @@ ability=Haste;\
         Whenever SN attacks, it becomes a copy of another target nonlegendary attacking creature until end of turn.
 timing=fmain
 oracle=Haste\nWhenever Tilonalli's Skinshifter attacks, it becomes a copy of another target nonlegendary attacking creature until end of turn.
+status=not supported: becomes-copy
