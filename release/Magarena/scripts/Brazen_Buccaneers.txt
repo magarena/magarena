@@ -7,6 +7,6 @@ subtype=Human,Pirate
 cost={3}{R}
 pt=2/2
 ability=Haste;\
-        When SN enters the battlefield, it explores.
+        When SN enters the battlefield, SN explores.
 timing=fmain
 oracle=Haste\nWhen Brazen Buccaneers enters the battlefield, it explores.
