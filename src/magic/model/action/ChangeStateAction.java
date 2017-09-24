@@ -35,6 +35,13 @@ public class ChangeStateAction extends MagicAction {
         set = aSet;
     }
 
+    public static void trigger(final MagicGame game, final MagicPermanent perm, final MagicPermanentState state) {
+        game.executeTrigger(
+            MagicTriggerType.WhenBecomesState,
+            ChangeStateAction.Set(perm, state)
+        );
+    }
+
     @Override
     public void doAction(final MagicGame game) {
         changed=permanent.hasState(state)!=set;

@@ -1062,6 +1062,16 @@ public enum MagicAbility {
             ));
         }
     },
+    ExploreTrigger("Whenever " + ARG.WORDRUN + " explores, " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(BecomesStateTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicPermanentState.Explores,
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     CreatureBlocksEffect("When(ever)? " + ARG.WORDRUN + " blocks, " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {

@@ -16,13 +16,10 @@ public class MagicExertEvent extends MagicEvent {
     }
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        game.doAction(ChangeStateAction.Set(
-            event.getPermanent(),
-            MagicPermanentState.Exerted
-        ));
         game.doAction(ChangeStateAction.DoesNotUntapDuringNext(
             event.getPermanent(),
             event.getPlayer()
         ));
+        ChangeStateAction.trigger(game, event.getPermanent(), MagicPermanentState.Exerted);
     };
 }

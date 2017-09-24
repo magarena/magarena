@@ -6,10 +6,12 @@ import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicCounterType;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanentState;
 import magic.model.choice.MagicMayChoice;
 import magic.model.action.RevealAction;
 import magic.model.action.ShiftCardAction;
 import magic.model.action.ChangeCountersAction;
+import magic.model.action.ChangeStateAction;
 
 public class MagicExploreEvent extends MagicEvent {
 
@@ -46,5 +48,6 @@ public class MagicExploreEvent extends MagicEvent {
                 ));
             }
         }
+        ChangeStateAction.trigger(game, perm, MagicPermanentState.Explores);
     };
 }

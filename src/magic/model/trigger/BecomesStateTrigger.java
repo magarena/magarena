@@ -6,6 +6,8 @@ import magic.model.MagicPermanentState;
 import magic.model.action.ChangeStateAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 public abstract class BecomesStateTrigger extends MagicTrigger<ChangeStateAction> {
     public BecomesStateTrigger(final int priority) {
@@ -19,17 +21,21 @@ public abstract class BecomesStateTrigger extends MagicTrigger<ChangeStateAction
         return MagicTriggerType.WhenBecomesState;
     }
 
-    public static BecomesStateTrigger create(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
+    public static BecomesStateTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
         return new BecomesStateTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final ChangeStateAction data) {
-                return data.state == state;
+                return filter.accept(permanent, permanent.getController(), data.permanent) && data.state == state;
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ChangeStateAction data) {
                 return sourceEvent.getTriggerEvent(permanent);
             }
         };
+    }
+
+    public static BecomesStateTrigger create(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
+        return create(MagicTargetFilterFactory.ANY, state, sourceEvent);
     }
 
     public static BecomesStateTrigger createSelf(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {

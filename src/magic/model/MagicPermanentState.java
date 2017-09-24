@@ -8,6 +8,7 @@ public enum MagicPermanentState {
     DoesNotUntapDuringNext0("doesn't untap during your next untap step", "{s}"),
     DoesNotUntapDuringNext1("doesn't untap during your next untap step", "{s}"),
     Exerted("exerted", ""),
+    Explores("explores", ""),
     Regenerated("regenerated", "{r}"),
     CannotBeRegenerated("can't be regenerated", "{~r}"),
     Attacking("attacking", "{c}"),
