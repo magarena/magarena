@@ -11,4 +11,4 @@ transform=Conqueror's Galleon
 hidden
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Draw a card, then discard a card.\n{4}, {T}: Draw a card.\n{6}, {T}: Return target card from your graveyard to your hand.
-status=not supported: other-half
+status=needs other half
