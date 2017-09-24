@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={2}{U}
 pt=1/4
-ability=When SN enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+ability=When SN enters the battlefield, create a colorless Treasure artifact token.
 timing=main
 oracle=When Sailor of Means enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
