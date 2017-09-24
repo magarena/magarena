@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Druid
 cost={1}{G}
 pt=0/3
-ability=When SN enters the battlefield, it explores.
+ability=When SN enters the battlefield, SN explores.
 timing=main
 oracle=When Ixalli's Diviner enters the battlefield, it explores.
