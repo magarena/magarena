@@ -7,6 +7,6 @@ subtype=Human,Cleric
 cost={2}{W}
 pt=2/1
 ability=First strike;\
-        When SN enters the battlefield, it explores.
+        When SN enters the battlefield, SN explores.
 timing=main
 oracle=First strike\nWhen Emissary of Sunrise enters the battlefield, it explores.
