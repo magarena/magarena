@@ -76,14 +76,18 @@ public final class NewVersionJsonParser {
         while (i < vals1.length && i < vals2.length && vals1[i].equals(vals2[i])) {
             i++;
         }
-        // compare first non-equal ordinal number
-        if (i < vals1.length && i < vals2.length) {
-            int diff = Integer.valueOf(vals1[i]).compareTo(Integer.valueOf(vals2[i]));
-            return Integer.signum(diff);
-        } else {
-        // the strings are equal or one string is a substring of the other
-        // e.g. "1.2.3" = "1.2.3" or "1.2.3" < "1.2.3.4"
-            return Integer.signum(vals1.length - vals2.length);
+        try {
+            // compare first non-equal ordinal number
+            if (i < vals1.length && i < vals2.length) {
+                int diff = Integer.valueOf(vals1[i]).compareTo(Integer.valueOf(vals2[i]));
+                return Integer.signum(diff);
+            } else {
+            // the strings are equal or one string is a substring of the other
+            // e.g. "1.2.3" = "1.2.3" or "1.2.3" < "1.2.3.4"
+                return Integer.signum(vals1.length - vals2.length);
+            }
+        } catch (final NumberFormatException e) {
+            return 0;
         }
     }
 }
