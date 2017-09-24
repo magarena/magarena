@@ -34,20 +34,7 @@ public abstract class BecomesStateTrigger extends MagicTrigger<ChangeStateAction
         };
     }
 
-    public static BecomesStateTrigger create(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
-        return create(MagicTargetFilterFactory.ANY, state, sourceEvent);
-    }
-
     public static BecomesStateTrigger createSelf(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
-        return new BecomesStateTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final ChangeStateAction data) {
-                return data.state == state && data.permanent == permanent;
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ChangeStateAction data) {
-                return sourceEvent.getTriggerEvent(permanent);
-            }
-        };
+        return create(MagicTargetFilterFactory.SN, state, sourceEvent);
     }
 }
