@@ -12,3 +12,4 @@ ability=Flying;\
         When SN dies, return it to its owner's hand at the beginning of the next end step.
 timing=main
 oracle=Flying\nWhenever you draw a card, create a 1/1 blue and red Insect creature token with flying and haste.\n{2}{U}{R}: Draw a card, then discard a card.\nWhen The Locust God dies, return it to its owner's hand at the beginning of the next end step.
+status=needs groovy

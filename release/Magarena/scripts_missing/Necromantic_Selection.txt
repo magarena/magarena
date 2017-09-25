@@ -7,3 +7,4 @@ cost={4}{B}{B}{B}
 effect=Destroy all creatures, then return a creature card put into a graveyard this way to the battlefield under your control. It's a black Zombie in addition to its other colors and types. Exile SN.
 timing=main
 oracle=Destroy all creatures, then return a creature card put into a graveyard this way to the battlefield under your control. It's a black Zombie in addition to its other colors and types. Exile Necromantic Selection.
+status=needs groovy

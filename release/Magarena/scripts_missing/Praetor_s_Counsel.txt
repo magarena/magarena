@@ -7,3 +7,4 @@ cost={5}{G}{G}{G}
 effect=Return all cards from your graveyard to your hand. Exile SN. You have no maximum hand size for the rest of the game.
 timing=main
 oracle=Return all cards from your graveyard to your hand. Exile Praetor's Counsel. You have no maximum hand size for the rest of the game.
+status=needs groovy

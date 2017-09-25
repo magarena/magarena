@@ -11,3 +11,4 @@ ability=Flying;\
         You may look at the top card of your library.
 timing=main
 oracle=Flying\nShroud\nYou may look at the top card of your library.
+status=not supported: play-revealed

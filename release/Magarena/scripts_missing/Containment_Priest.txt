@@ -10,3 +10,4 @@ ability=Flash;\
         If a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.
 timing=flash
 oracle=Flash\nIf a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.
+status=not supported: etb-replacement

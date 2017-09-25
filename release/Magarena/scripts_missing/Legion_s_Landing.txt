@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, create a 1/1 white Vampire creature toke
 transform=Adanto, the First Fort
 timing=enchantment
 oracle=When Legion's Landing enters the battlefield, create a 1/1 white Vampire creature token with lifelink.\nWhen you attack with three or more creatures, transform Legion's Landing.
+status=not supported: when-creatures-attack
