@@ -75,6 +75,25 @@ Thank you for your support and have fun!
 
 Release 1.89 (September 30, 2017)
 ============
+kelsioboy
+melvin
+ShawnieBoy
+
+    add Ixalan to sets and scripts missing
+    add Iconic Masters to sets
+    remove planeswalker uniqueness rule, add legendary to planeswalkers, closes #1275
+    support effect: SN explores
+    support trigger: Whenever <permanent> explores, <effect>, closes #1276
+
+    check that creature exerted is creature you control, fixes #1339
+    catch exception if version string is not in proper format, fixes #1338
+    consider hand/exiles as ordered as it affects future choice of cards in these locations, fixes #1311
+    fallback to cardbuilder if ImageFileIO.getOptimizedImage is null, for #1318
+    fix cascade log to show only card to be cast in log, RN refers to all the cards
+    fix name of 9/9 blue Kraken creature token, closes #1303, should be Kraken and not Whale
+    4/4 red and green Giant Warrior creature token missing haste ability, fixes #1287
+    fix incorrect object for 'creature with power less than or equal to SN's power'
+    End of Combat triggers should fire before the active player gets priority, fixes #1284
 
 Release 1.88 (August 27, 2017)
 ============
