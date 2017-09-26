@@ -197,6 +197,7 @@ public enum CardResource {
     eldraziSymbol("transform/eldrazi.png"),
     planeswalkerTypeSymbol("transform/planeswalker.png"),
     sparkSymbol("transform/ccorner.png"),
+    landTransformSymbol("transform/land.png"),
     common("rarity/Common.png"),
     uncommon("rarity/Uncommon.png"),
     rare("rarity/Rare.png"),

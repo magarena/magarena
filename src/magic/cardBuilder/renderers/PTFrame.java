@@ -320,8 +320,10 @@ public class PTFrame {
             if (cardDef.hasSubType(MagicSubType.Eldrazi)){
                 typeSymbol = ResourceManager.getImage(CardResource.eldraziSymbol);
             }
-            else if (cardDef.isPlaneswalker() && !cardDef.getTransformedDefinition().isPlaneswalker()){
+            else if (cardDef.isPlaneswalker() && !cardDef.getTransformedDefinition().isPlaneswalker()) {
                 typeSymbol = ResourceManager.getImage(CardResource.planeswalkerTypeSymbol);
+            } else if (cardDef.isLand()) {
+                typeSymbol = ResourceManager.getImage(CardResource.landTransformSymbol);
             } else {
                 typeSymbol = ResourceManager.getImage(CardResource.nightSymbol);
             }
