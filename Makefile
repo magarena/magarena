@@ -133,6 +133,9 @@ cards/unknown.txt:
 cards/unknown_oracle.txt:
 	grep oracle= `grep -L status= -r release/Magarena/scripts_missing` | sed 's/oracle=/\n/;s/release/\nrelease/' > $@
 
+cards/unknown_%.txt:
+	grep oracle $$(grep -L status $$(grep /$*/ -r release/Magarena/scripts_missing/ -l)) > $@
+
 cards/groovy_oracle.txt:
 	grep oracle= `grep requires_groovy_code -r release/Magarena/scripts -l` | sed 's/oracle=/\n/;s/release/\nrelease/' > $@
 
