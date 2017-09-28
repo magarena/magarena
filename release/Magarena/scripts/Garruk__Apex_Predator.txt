@@ -8,8 +8,7 @@ cost={5}{B}{G}
 loyalty=5
 ability=+1: Destroy another target planeswalker.;\
         +1: Create a 3/3 black Beast creature token with deathtouch.;\
-        −3: Destroy target creature. You gain life equal to its toughness.;\
         −8: Target opponent gets an emblem with "Whenever a creature attacks you, it gets +5/+5 and gains trample until end of turn."
 timing=main
 oracle=+1: Destroy another target planeswalker.\n+1: Create a 3/3 black Beast creature token with deathtouch.\n−3: Destroy target creature. You gain life equal to its toughness.\n−8: Target opponent gets an emblem with "Whenever a creature attacks you, it gets +5/+5 and gains trample until end of turn."
-status=needs groovy
+requires_groovy_code

@@ -1,0 +1,10 @@
+name=3/3 black Beast creature token with deathtouch
+token=Beast
+image=https://magiccards.info/extras/token/magic-2015/beast-1.jpg
+value=3
+pt=3/3
+color=b
+subtype=Beast
+type=Creature
+ability=Deathtouch
+oracle=Deathtouch
