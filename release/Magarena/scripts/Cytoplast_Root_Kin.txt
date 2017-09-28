@@ -8,8 +8,7 @@ subtype=Elemental,Mutant
 cost={2}{G}{G}
 pt=0/0
 ability=Graft 4;\
-        When SN enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.;\
-        {2}: Move a +1/+1 counter from target creature you control onto SN.
+        When SN enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.
 timing=main
 oracle=Graft 4\nWhen Cytoplast Root-Kin enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.\n{2}: Move a +1/+1 counter from target creature you control onto Cytoplast Root-Kin.
-status=needs groovy
+requires_groovy_code
