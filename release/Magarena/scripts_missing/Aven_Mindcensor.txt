@@ -1,7 +1,8 @@
 name=Aven Mindcensor
-image=https://magiccards.info/scans/en/fut/18.jpg
+image=https://magiccards.info/scans/en/akh/5.jpg
+image_updated=2017-09-29
 value=4.441
-rarity=U
+rarity=R
 type=Creature
 subtype=Bird,Wizard
 cost={2}{W}

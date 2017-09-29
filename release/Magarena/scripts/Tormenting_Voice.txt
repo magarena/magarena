@@ -1,6 +1,6 @@
 name=Tormenting Voice
-image=https://magiccards.info/scans/en/cn2/171.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/akh/151.jpg
+image_updated=2017-09-29
 value=3.500
 rarity=C
 type=Sorcery

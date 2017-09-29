@@ -1,6 +1,6 @@
 name=Submerged Boneyard
-image=https://magiccards.info/scans/en/aer/194.jpg
-image_updated=2017-09-01
+image=https://magiccards.info/scans/en/akh/284.jpg
+image_updated=2017-09-29
 value=2.500
 rarity=C
 type=Land

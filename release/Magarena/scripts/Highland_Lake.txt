@@ -1,7 +1,8 @@
 name=Highland Lake
-image=https://magiccards.info/scans/en/soi/277.jpg
+image=https://magiccards.info/scans/en/akh/282.jpg
+image_updated=2017-09-29
 value=2.500
-rarity=U
+rarity=C
 type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped.;\

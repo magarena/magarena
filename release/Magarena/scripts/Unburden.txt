@@ -1,5 +1,6 @@
 name=Unburden
-image=https://magiccards.info/scans/en/sc/77.jpg
+image=https://magiccards.info/scans/en/akh/114.jpg
+image_updated=2017-09-29
 value=3.233
 rarity=C
 type=Sorcery

@@ -1,5 +1,6 @@
 name=Manalith
-image=https://magiccards.info/scans/en/m12/212.jpg
+image=https://magiccards.info/scans/en/hou/164.jpg
+image_updated=2017-09-29
 value=3.489
 rarity=C
 type=Artifact

@@ -1,6 +1,6 @@
 name=Ancient Crab
-image=https://magiccards.info/scans/en/ogw/50.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/akh/40.jpg
+image_updated=2017-09-29
 value=2.500
 rarity=C
 type=Creature

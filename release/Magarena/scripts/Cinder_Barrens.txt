@@ -1,8 +1,8 @@
 name=Cinder Barrens
-image=https://magiccards.info/scans/en/ogw/168.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/hou/209.jpg
+image_updated=2017-09-29
 value=2.500
-rarity=U
+rarity=C
 type=Land
 mana=b3r3
 ability=SN enters the battlefield tapped.;\

@@ -1,8 +1,8 @@
 name=Timber Gorge
-image=https://magiccards.info/scans/en/ogw/179.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/akh/285.jpg
+image_updated=2017-09-29
 value=2.500
-rarity=U
+rarity=C
 type=Land
 mana=r3g3
 ability=SN enters the battlefield tapped.;\

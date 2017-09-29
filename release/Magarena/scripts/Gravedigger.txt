@@ -1,7 +1,8 @@
 name=Gravedigger
-image=https://magiccards.info/scans/en/ema/89.jpg
+image=https://magiccards.info/scans/en/akh/93.jpg
+image_updated=2017-09-29
 value=3.417
-rarity=C
+rarity=U
 type=Creature
 subtype=Zombie
 cost={3}{B}

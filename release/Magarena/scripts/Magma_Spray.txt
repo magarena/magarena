@@ -1,5 +1,6 @@
 name=Magma Spray
-image=https://magiccards.info/scans/en/jou/103.jpg
+image=https://magiccards.info/scans/en/akh/141.jpg
+image_updated=2017-09-29
 value=3.400
 rarity=C
 type=Instant

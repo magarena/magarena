@@ -1,6 +1,6 @@
 name=Mighty Leap
-image=https://magiccards.info/scans/en/ogw/28.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/akh/20.jpg
+image_updated=2017-09-29
 value=2.500
 rarity=C
 type=Instant

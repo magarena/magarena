@@ -1,5 +1,6 @@
 name=Spidery Grasp
-image=https://magiccards.info/scans/en/isd/204.jpg
+image=https://magiccards.info/scans/en/akh/188.jpg
+image_updated=2017-09-29
 value=2.730
 rarity=C
 type=Instant

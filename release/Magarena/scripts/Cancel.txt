@@ -1,5 +1,6 @@
 name=Cancel
-image=https://magiccards.info/scans/en/ktk/33.jpg
+image=https://magiccards.info/scans/en/akh/44.jpg
+image_updated=2017-09-29
 value=2.700
 rarity=C
 type=Instant

@@ -10,4 +10,4 @@ ability=+2: Untap all creatures you control.~Creatures you control get +1/+1 unt
         0: Until end of turn, SN becomes a 5/5 Human Soldier creature with indestructible that's still a planeswalker.~Prevent all damage that would be dealt to SN this turn.;\
         −10: Creatures you control get +2/+2 until end of turn.~Tap all creatures your opponents control.
 timing=main
-oracle=+2: Untap all creatures you control. Those creatures get +1/+1 until end of turn.  \n0: Until end of turn, Gideon, Martial Paragon becomes a 5/5 Human Soldier creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.\n−10: Creatures you control get +2/+2 until end of turn. Tap all creatures your opponents control.
+oracle=+2: Untap all creatures you control. Those creatures get +1/+1 until end of turn.\n0: Until end of turn, Gideon, Martial Paragon becomes a 5/5 Human Soldier creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.\n−10: Creatures you control get +2/+2 until end of turn. Tap all creatures your opponents control.

@@ -1,7 +1,8 @@
 name=Renewed Faith
-image=https://magiccards.info/scans/en/on/50.jpg
+image=https://magiccards.info/scans/en/akh/25.jpg
+image_updated=2017-09-29
 value=2.000
-rarity=C
+rarity=U
 type=Instant
 cost={2}{W}
 ability=Cycling {1}{W};\

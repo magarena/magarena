@@ -1,6 +1,6 @@
 name=Tranquil Expanse
-image=https://magiccards.info/scans/en/aer/189.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/akh/286.jpg
+image_updated=2017-09-29
 value=2.500
 rarity=C
 type=Land

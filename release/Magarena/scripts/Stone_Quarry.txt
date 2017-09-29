@@ -1,6 +1,6 @@
 name=Stone Quarry
-image=https://magiccards.info/scans/en/kld/269.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/akh/274.jpg
+image_updated=2017-09-29
 value=2.500
 rarity=C
 type=Land

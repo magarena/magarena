@@ -1,6 +1,6 @@
 name=Impeccable Timing
-image=https://magiccards.info/scans/en/kld/19.jpg
-image_updated=2016-10-05
+image=https://magiccards.info/scans/en/akh/18.jpg
+image_updated=2017-09-29
 value=2.500
 rarity=C
 type=Instant
