@@ -88,16 +88,16 @@ ShawnieBoy
   * ability: Whenever <permanent> explores, <effect>, closes #1276
 
 - fixed the following bugs:
-  * check that creature exerted is creature you control, fixes #1339
-  * catch exception if version string is not in proper format, fixes #1338
-  * consider hand/exiles as ordered as it affects future choice of cards in these locations, fixes #1311
-  * fallback to cardbuilder if ImageFileIO.getOptimizedImage is null, for #1318
-  * fix cascade log to show only card to be cast in log, RN refers to all the cards
-  * fix name of 9/9 blue Kraken creature token, closes #1303, should be Kraken and not Whale
-  * 4/4 red and green Giant Warrior creature token missing haste ability, fixes #1287
-  * fix incorrect object for 'creature with power less than or equal to SN's power'
-  * End of Combat triggers should fire before the active player gets priority, fixes #1284
-  * fix crash when using ESC close DownloadImagesScreen while card loading screen is active, fixes #1340
+  * crash in MCTS AI when using Brainstorm (issue #1311)
+  * crash when card image is unreadable (issue #1318)
+  * crash when Java's version string is not in expected format (issue #1338)
+  * crash when using ESC to close "Setup Card Images" dialog while cards are loading (issue #1340)
+  * log message for cascade shows too many cards
+  * exert trigger on your permanents fires when opponent exerts (issue #1339)
+  * creature with power less than or equal to SN's power did not those that are equal
+  * 9/9 blue Kraken creature token is named Whale (issue #1303)
+  * 4/4 red and green Giant Warrior creature token missing haste ability (issue #1287)
+  * The Wretched did not gain control of the creatures blocking it (issue #1284)
 
 - added the following cards:
 Adanto Vanguard, Ancient Brontodon, Anointed Deacon, Atzocan Archer,
