@@ -79,21 +79,76 @@ kelsioboy
 melvin
 ShawnieBoy
 
-    add Ixalan to sets and scripts missing
-    add Iconic Masters to sets
-    remove planeswalker uniqueness rule, add legendary to planeswalkers, closes #1275
-    support effect: SN explores
-    support trigger: Whenever <permanent> explores, <effect>, closes #1276
+- add Iconic Masters and Ixalan to sets
 
-    check that creature exerted is creature you control, fixes #1339
-    catch exception if version string is not in proper format, fixes #1338
-    consider hand/exiles as ordered as it affects future choice of cards in these locations, fixes #1311
-    fallback to cardbuilder if ImageFileIO.getOptimizedImage is null, for #1318
-    fix cascade log to show only card to be cast in log, RN refers to all the cards
-    fix name of 9/9 blue Kraken creature token, closes #1303, should be Kraken and not Whale
-    4/4 red and green Giant Warrior creature token missing haste ability, fixes #1287
-    fix incorrect object for 'creature with power less than or equal to SN's power'
-    End of Combat triggers should fire before the active player gets priority, fixes #1284
+- remove Planeswalker Uniqueness rule, add Legendary to planeswalkers
+
+- added the following to the card script:
+  * effect: SN explores.
+  * ability: Whenever <permanent> explores, <effect>, closes #1276
+
+- fixed the following bugs:
+  * check that creature exerted is creature you control, fixes #1339
+  * catch exception if version string is not in proper format, fixes #1338
+  * consider hand/exiles as ordered as it affects future choice of cards in these locations, fixes #1311
+  * fallback to cardbuilder if ImageFileIO.getOptimizedImage is null, for #1318
+  * fix cascade log to show only card to be cast in log, RN refers to all the cards
+  * fix name of 9/9 blue Kraken creature token, closes #1303, should be Kraken and not Whale
+  * 4/4 red and green Giant Warrior creature token missing haste ability, fixes #1287
+  * fix incorrect object for 'creature with power less than or equal to SN's power'
+  * End of Combat triggers should fire before the active player gets priority, fixes #1284
+  * fix crash when using ESC close DownloadImagesScreen while card loading screen is active, fixes #1340
+
+- added the following cards:
+Adanto Vanguard, Ancient Brontodon, Anointed Deacon, Atzocan Archer,
+Bellowing Aegisaur, Bishop of Rebirth, Bishop of the Bloodstained,
+Bishop's Soldier, Blight Keeper, Blinding Fog, Blossom Dryad,
+Brazen Buccaneers, Bright Reprisal, Callous Giant, Call to the Feast,
+Captain Lannery Storm, Captivating Crew, Carnage Tyrant,
+Castaway's Despair, Charging Monstrosaur, Colossal Dreadmaw,
+Contract Killing, Costly Plunder, Crash the Ramparts, Crushing Canopy,
+Cytoplast Root-Kin, Daring Saboteur, Dark Nourishment, Deadeye Plunderers,
+Deadeye Tormentor, Deathless Ancient, Deeproot Champion, Deeproot Warrior,
+Deeproot Waters, Defiant Vanguard, Depths of Desire, Desperate Castaways,
+Dinosaur Stampede, Dire Fleet Captain, Dire Fleet Hoarder, Dive Down,
+Djeru, With Eyes Open, Drover of the Mighty, Duskborne Skymarcher,
+Dusk Legion Dreadnought, Elaborate Firecannon, Emissary of Sunrise,
+Emperor's Vanguard, Encampment Keeper, Fathom Fleet Firebrand,
+Feed the Clan, Fell Flagship, Fiery Cannonade, Forgestoker Dragon,
+Frenzied Raptor, Garruk, Apex Predator, Gilded Sentinel,
+Glorifier of Dusk, Goring Ceratops, Grazing Whiptail, Grisly Anglerfish,
+Grizzled Angler, Headwater Sentries, Heartless Pillage,
+Hierophant's Chalice, Hour of Promise, Huatli's Snubhorn,
+Imperial Aerosaur, Imperial Lancer, Inspiring Cleric, Ixalli's Diviner,
+Ixalli's Keeper, Jace's Sentinel, Jade Guardian, Jungle Delver,
+Kinjalli's Caller, Kinjalli's Sunwing, Legion's Judgment,
+Life Goes On, Lightning-Rig Crew, Lookout's Dispersal,
+Looming Altisaur, Lurking Chupacabra, Makeshift Munitions,
+Marauding Looter, Merfolk Branchwalker, Navigator's Ruin, Nest Robber,
+One With the Wind, Otepec Huntmaster, Overflowing Insight,
+Paladin of the Bloodstained, Pious Interdiction, Pirate's Cutlass,
+Pirate's Prize, Predator's Howl, Prosperous Pirates, Prying Blade,
+Pterodon Knight, Queen's Agent, Queen's Bay Soldier, Queen's Commission,
+Raging Swordtooth, Raiders' Wake, Rallying Roar, Ranging Raptors,
+Raptor Companion, Raptor Hatchling, Ravenous Daggertooth, Regisaur Alpha,
+Repeating Barrage, Revel in Riches, Rigging Runner, Rile, Ripjaw Raptor,
+Ritual of Rejuvenation, River Sneak, River's Rebuke, Run Aground,
+Ruthless Knave, Sailor of Means, Sanctum Seeker, Seekers' Squire,
+Sentinel Totem, Shadowed Caravel, Shaper Apprentice, Shapers of Nature,
+Shapers' Sanctuary, Sheltering Light, Shield of the Avatar,
+Shining Aerosaur, Shipwreck Looter, Shore Keeper, Siren Lookout,
+Skittering Heartstopper, Skyblade of the Legion, Skymarch Bloodletter,
+Slash of Talons, Sleek Schooner, Snapping Sailback, Spires of Orazca,
+Spreading Rot, Star of Extinction, Start Your Engines, Steadfast Armasaur,
+Storm Fleet Aerialist, Storm Fleet Arsonist, Storm Fleet Pyromancer,
+Storm Fleet Spy, Storm Sculptor, Sun-Crowned Hunters, Sunrise Seeker,
+Swashbuckling, Tempest Caller, Territorial Hammerskull, Thaumatic Compass,
+Thrash of Raptors, Thundering Spineback, Tilonalli's Knight,
+Tishana's Wayfinder, Unfriendly Fire, Vanquish the Weak, Verdant Rebirth,
+Vicious Conquistador, Vona, Butcher of Magan, Vraska's Contempt,
+Wakening Sun's Avatar, Waker of the Wilds, Walk the Plank,
+Wanted Scoundrels, Watertrap Weaver, Wildgrowth Walker, Wily Goblin,
+Wind Strider, Wine of Blood and Iron
 
 Release 1.88 (August 27, 2017)
 ============
