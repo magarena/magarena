@@ -27,7 +27,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new GainAbilityAction(it, MagicAbility.Unblockable));
                 if (it.hasSubType(MagicSubType.Snake)) {
-					game.doAction(new ChangeTurnPTAction(it,2,2));
+                    game.doAction(new ChangeTurnPTAction(it,2,2));
                 }
             });
         }
