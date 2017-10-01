@@ -7,8 +7,7 @@ subtype=Specter
 cost={1}{B}{B}
 pt=1/1
 ability=Flying;\
-        Wither;\
-        Whenever SN deals combat damage to a player, that player discards that many cards.
+        Wither
 timing=main
 oracle=Flying\nWither\nWhenever Needle Specter deals combat damage to a player, that player discards that many cards.
-status=needs groovy
+requires_groovy_code
