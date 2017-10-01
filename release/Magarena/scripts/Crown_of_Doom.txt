@@ -4,8 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={3}
-ability=Whenever a creature attacks you or a planeswalker you control, it gets +2/+0 until end of turn.;\
-        {2}: Target player other than SN's owner gains control of it. Activate this ability only during your turn.
+ability=Whenever a creature attacks you or a planeswalker you control, RN gets +2/+0 until end of turn.
 timing=artifact
 oracle=Whenever a creature attacks you or a planeswalker you control, it gets +2/+0 until end of turn.\n{2}: Target player other than Crown of Doom's owner gains control of it. Activate this ability only during your turn.
-status=needs groovy
+requires_groovy_code
