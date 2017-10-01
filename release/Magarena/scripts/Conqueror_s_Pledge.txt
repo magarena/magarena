@@ -5,7 +5,6 @@ rarity=R
 type=Sorcery
 cost={2}{W}{W}{W}
 ability=Kicker {6}
-effect=Create six 1/1 white Kor Soldier creature tokens. If SN was kicked, create twelve of those tokens instead.
 timing=main
 oracle=Kicker {6}\nCreate six 1/1 white Kor Soldier creature tokens. If Conqueror's Pledge was kicked, create twelve of those tokens instead.
-status=needs groovy
+requires_groovy_code
