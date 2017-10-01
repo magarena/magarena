@@ -7,7 +7,6 @@ type=Legendary,Creature
 subtype=Snake,Wizard
 cost={1}{G}{U}
 pt=2/2
-ability={G}{U}: Target creature can't be blocked this turn. If that creature is a Snake, it gets +2/+2 until end of turn.
 timing=main
 oracle={G}{U}: Target creature can't be blocked this turn. If that creature is a Snake, it gets +2/+2 until end of turn.
-status=needs groovy
+requires_groovy_code
