@@ -6,8 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={4}
 ability=Equipped creature gets +2/+0 and has vigilance and "At the beginning of your upkeep, draw a card.";\
-        Whenever equipped creature dies, target opponent gains control of SN.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature gets +2/+0 and has vigilance and "At the beginning of your upkeep, draw a card."\nWhenever equipped creature dies, target opponent gains control of Avarice Amulet.\nEquip {2}
-status=needs groovy
+requires_groovy_code
