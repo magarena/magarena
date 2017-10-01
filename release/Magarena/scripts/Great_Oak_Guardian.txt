@@ -9,7 +9,6 @@ cost={5}{G}
 pt=4/5
 ability=Flash;\
         Reach;\
-        When SN enters the battlefield, creatures target player controls get +2/+2 until end of turn.~Untap them.
+        When SN enters the battlefield, creatures target player controls get +2/+2 until end of turn.~Untap all creatures *that player* controls.
 timing=flash
 oracle=Flash\nReach\nWhen Great Oak Guardian enters the battlefield, creatures target player controls get +2/+2 until end of turn. Untap them.
-status=needs groovy
