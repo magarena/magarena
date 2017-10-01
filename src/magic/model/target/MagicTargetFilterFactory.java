@@ -3109,6 +3109,7 @@ public class MagicTargetFilterFactory {
     public static String toSingular(final String arg) {
         final String[] parts = arg.toLowerCase(Locale.ENGLISH).split(" named ");
         parts[0] = parts[0]
+            .replaceAll("\\bdwarves\\b", "dwarf")
             .replaceAll("\\bwerewolves\\b", "werewolf")
             .replaceAll("\\belves\\b", "elf")
             .replaceAll("\\ballies\\b", "ally")
