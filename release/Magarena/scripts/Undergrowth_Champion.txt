@@ -7,8 +7,7 @@ type=Creature
 subtype=Elemental
 cost={1}{G}{G}
 pt=2/2
-ability=If damage would be dealt to SN while it has a +1/+1 counter on it, prevent that damage and remove a +1/+1 counter from SN.;\
-        Whenever a land enters the battlefield under your control, put a +1/+1 counter on SN.
+ability=Whenever a land enters the battlefield under your control, put a +1/+1 counter on SN.
 timing=main
 oracle=If damage would be dealt to Undergrowth Champion while it has a +1/+1 counter on it, prevent that damage and remove a +1/+1 counter from Undergrowth Champion.\nLandfall — Whenever a land enters the battlefield under your control, put a +1/+1 counter on Undergrowth Champion.
-status=needs groovy
+requires_groovy_code
