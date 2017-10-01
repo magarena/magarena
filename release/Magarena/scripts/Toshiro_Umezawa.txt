@@ -6,8 +6,7 @@ type=Legendary,Creature
 subtype=Human,Samurai
 cost={1}{B}{B}
 pt=2/2
-ability=Bushido 1;\
-        Whenever a creature an opponent controls dies, you may cast target instant card from your graveyard. If that card would be put into a graveyard this turn, exile it instead.
+ability=Bushido 1
 timing=main
 oracle=Bushido 1\nWhenever a creature an opponent controls dies, you may cast target instant card from your graveyard. If that card would be put into a graveyard this turn, exile it instead.
-status=needs groovy
+requires_groovy_code
