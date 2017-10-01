@@ -5,7 +5,6 @@ rarity=U
 type=Instant
 subtype=Arcane
 cost={2}{G}
-effect=Target creature gets +4/+4 until end of turn. If it's a Spirit, it gains trample until end of turn.
 timing=removal
 oracle=Target creature gets +4/+4 until end of turn. If it's a Spirit, it gains trample until end of turn.
-status=needs groovy
+requires_groovy_code
