@@ -1,5 +1,6 @@
 name=Scourge of Valkas
-image=https://magiccards.info/scans/en/m14/151.jpg
+image=https://magiccards.info/scans/en/c17/142.jpg
+image_updated=2017-10-03
 value=3.652
 rarity=M
 type=Creature
