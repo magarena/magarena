@@ -1,5 +1,6 @@
 name=Boneyard Scourge
 image=https://magiccards.info/scans/en/c17/15.jpg
+image_updated=2017-10-03
 value=2.500
 rarity=R
 type=Creature

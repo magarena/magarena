@@ -1,5 +1,6 @@
 name=O-Kagachi, Vengeful Kami
 image=https://magiccards.info/scans/en/c17/45.jpg
+image_updated=2017-10-03
 value=2.500
 rarity=M
 type=Legendary,Creature

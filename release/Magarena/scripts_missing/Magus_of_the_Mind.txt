@@ -1,5 +1,6 @@
 name=Magus of the Mind
 image=https://magiccards.info/scans/en/c17/12.jpg
+image_updated=2017-10-03
 value=2.500
 rarity=R
 type=Creature
