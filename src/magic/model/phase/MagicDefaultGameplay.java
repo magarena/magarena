@@ -35,9 +35,11 @@ public class MagicDefaultGameplay implements MagicGameplay {
                     MagicDeclareBlockersPhase.getInstance() :
                     MagicEndOfCombatPhase.getInstance();
             case DeclareBlockers:
-                return MagicCombatDamagePhase.getInstance();
+                return MagicCombatDamagePhase.First;
             case CombatDamage:
-                return MagicEndOfCombatPhase.getInstance();
+                return game.getPhase() == MagicCombatDamagePhase.First ?
+                    MagicCombatDamagePhase.Second :
+                    MagicEndOfCombatPhase.getInstance();
             case EndOfCombat:
                 return MagicMainPhase.getSecondInstance();
             case SecondMain:

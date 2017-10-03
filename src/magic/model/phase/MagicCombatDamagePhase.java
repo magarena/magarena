@@ -2,19 +2,20 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicPermanent;
+import magic.model.MagicAbility;
 import magic.model.action.CombatDamageAction;
 import magic.ui.MagicSound;
 
 public class MagicCombatDamagePhase extends MagicPhase {
 
-    private static final MagicPhase INSTANCE = new MagicCombatDamagePhase();
+    public static final MagicPhase First = new MagicCombatDamagePhase(true);
+    public static final MagicPhase Second = new MagicCombatDamagePhase(false);
+    private final boolean isFirst;
 
-    private MagicCombatDamagePhase() {
+    private MagicCombatDamagePhase(final boolean first) {
         super(MagicPhaseType.CombatDamage);
-    }
-
-    public static MagicPhase getInstance() {
-        return INSTANCE;
+        isFirst = first;
     }
 
     @Override
@@ -28,13 +29,8 @@ public class MagicCombatDamagePhase extends MagicPhase {
         final int attackerPoisonBefore = attackingPlayer.getPoison();
         final String attackerName = attackingPlayer.getName();
 
-        //deal first strike damage
-        if (game.getStep() == MagicStep.Begin) {
-            game.doAction(new CombatDamageAction(attackingPlayer, defendingPlayer, true));
-        } else {
-            //deal regular damage
-            game.doAction(new CombatDamageAction(attackingPlayer, defendingPlayer, false));
-        }
+        final CombatDamageAction act = new CombatDamageAction(attackingPlayer, defendingPlayer, isFirst);
+        game.doAction(act);
 
         //combat message for defender
         final int defenderLifeAfter = defendingPlayer.getLife();
@@ -69,15 +65,13 @@ public class MagicCombatDamagePhase extends MagicPhase {
         }
 
         //End combat damage steps
-        if (game.getStep() == MagicStep.Begin) {
+        if (isFirst == false || act.dealtDamage()) {
             game.setStep(MagicStep.ActivePlayer);
         } else {
+            game.setStep(MagicStep.NextPhase);
+        }
+        if (isFirst == false) {
             game.playSound(MagicSound.COMBAT);
         }
-    }
-
-    @Override
-    protected void executeEndOfPhase(final MagicGame game) {
-        executeBeginStep(game);
     }
 }

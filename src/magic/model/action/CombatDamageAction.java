@@ -21,6 +21,7 @@ public class CombatDamageAction extends MagicAction {
     private final MagicPlayer attackingPlayer;
     private final MagicPlayer defendingPlayer;
     private final boolean first;
+    private boolean dealtDamage = false;
 
     public CombatDamageAction(final MagicPlayer attackingPlayer, final MagicPlayer defendingPlayer, final boolean first) {
         this.attackingPlayer=attackingPlayer;
@@ -113,8 +114,13 @@ public class CombatDamageAction extends MagicAction {
             for (final MagicDamage damage: combatDamage) {
                 game.doAction(new DealDamageAction(damage));
             }
+            dealtDamage = true;
             game.setStateCheckRequired();
         }
+    }
+
+    public boolean dealtDamage() {
+        return dealtDamage;
     }
 
     @Override
