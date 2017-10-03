@@ -1,5 +1,6 @@
 name=Dark Impostor
-image=https://magiccards.info/scans/en/avr/92.jpg
+image=https://magiccards.info/scans/en/c17/109.jpg
+image_updated=2017-10-03
 value=3.848
 rarity=R
 type=Creature

@@ -1,5 +1,6 @@
 name=Grappling Hook
-image=https://magiccards.info/scans/en/zen/203.jpg
+image=https://magiccards.info/scans/en/c17/212.jpg
+image_updated=2017-10-03
 value=3.507
 rarity=R
 type=Artifact

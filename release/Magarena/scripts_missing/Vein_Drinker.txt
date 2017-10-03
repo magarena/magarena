@@ -1,5 +1,6 @@
 name=Vein Drinker
-image=https://magiccards.info/scans/en/ala/91.jpg
+image=https://magiccards.info/scans/en/c17/130.jpg
+image_updated=2017-10-03
 value=3.313
 rarity=R
 type=Creature

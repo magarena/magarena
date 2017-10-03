@@ -1,5 +1,6 @@
 name=Sanguine Bond
-image=https://magiccards.info/scans/en/m10/111.jpg
+image=https://magiccards.info/scans/en/c17/124.jpg
+image_updated=2017-10-03
 value=3.000
 rarity=R
 type=Enchantment

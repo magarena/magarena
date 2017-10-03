@@ -1,5 +1,6 @@
 name=Apprentice Necromancer
-image=https://magiccards.info/scans/en/ud/51.jpg
+image=https://magiccards.info/scans/en/c17/97.jpg
+image_updated=2017-10-03
 value=4.085
 rarity=R
 type=Creature

@@ -1,5 +1,6 @@
 name=Blood Tribute
-image=https://magiccards.info/scans/en/zen/81.jpg
+image=https://magiccards.info/scans/en/c17/100.jpg
+image_updated=2017-10-03
 value=3.881
 rarity=R
 type=Sorcery

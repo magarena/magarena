@@ -1,5 +1,6 @@
 name=Go for the Throat
-image=https://magiccards.info/scans/en/mbs/43.jpg
+image=https://magiccards.info/scans/en/c17/114.jpg
+image_updated=2017-10-03
 value=4.577
 removal=4
 rarity=U

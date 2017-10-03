@@ -1,5 +1,6 @@
 name=Urborg Volcano
-image=https://magiccards.info/scans/en/8e/327.jpg
+image=https://magiccards.info/scans/en/c17/288.jpg
+image_updated=2017-10-03
 value=3.671
 rarity=U
 type=Land

@@ -1,5 +1,6 @@
 name=Havengul Lich
-image=https://magiccards.info/scans/en/dka/139.jpg
+image=https://magiccards.info/scans/en/c17/173.jpg
+image_updated=2017-10-03
 value=4.092
 rarity=M
 type=Creature

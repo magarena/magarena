@@ -1,5 +1,6 @@
 name=Divine Reckoning
-image=https://magiccards.info/scans/en/isd/10.jpg
+image=https://magiccards.info/scans/en/c17/59.jpg
+image_updated=2017-10-03
 value=3.867
 rarity=R
 type=Sorcery

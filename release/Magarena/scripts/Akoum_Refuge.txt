@@ -1,5 +1,6 @@
 name=Akoum Refuge
-image=https://magiccards.info/scans/en/cmd/264.jpg
+image=https://magiccards.info/scans/en/c17/233.jpg
+image_updated=2017-10-03
 value=3.059
 rarity=U
 type=Land

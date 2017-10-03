@@ -1,5 +1,6 @@
 name=Bloodhusk Ritualist
-image=https://magiccards.info/scans/en/wwk/50.jpg
+image=https://magiccards.info/scans/en/c17/101.jpg
+image_updated=2017-10-03
 value=3.541
 rarity=U
 type=Creature

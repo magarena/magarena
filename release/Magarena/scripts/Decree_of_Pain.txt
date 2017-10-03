@@ -1,5 +1,6 @@
 name=Decree of Pain
-image=https://magiccards.info/scans/en/sc/64.jpg
+image=https://magiccards.info/scans/en/c17/111.jpg
+image_updated=2017-10-03
 value=3.932
 rarity=R
 type=Sorcery

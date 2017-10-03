@@ -1,5 +1,6 @@
 name=Pawn of Ulamog
-image=https://magiccards.info/scans/en/roe/122.jpg
+image=https://magiccards.info/scans/en/c17/120.jpg
+image_updated=2017-10-03
 value=4.007
 rarity=U
 type=Creature

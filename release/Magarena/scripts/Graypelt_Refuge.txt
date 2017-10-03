@@ -1,5 +1,6 @@
 name=Graypelt Refuge
-image=https://magiccards.info/scans/en/pc2/118.jpg
+image=https://magiccards.info/scans/en/c17/253.jpg
+image_updated=2017-10-03
 value=3.000
 rarity=U
 type=Land

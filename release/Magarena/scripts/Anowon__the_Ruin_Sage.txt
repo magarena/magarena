@@ -1,5 +1,6 @@
 name=Anowon, the Ruin Sage
-image=https://magiccards.info/scans/en/wwk/49.jpg
+image=https://magiccards.info/scans/en/c17/96.jpg
+image_updated=2017-10-03
 value=3.743
 rarity=R
 type=Legendary,Creature

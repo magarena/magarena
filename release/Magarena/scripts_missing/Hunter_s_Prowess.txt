@@ -1,5 +1,6 @@
 name=Hunter's Prowess
-image=https://magiccards.info/scans/en/bng/124.jpg
+image=https://magiccards.info/scans/en/c17/152.jpg
+image_updated=2017-10-03
 value=3.609
 rarity=R
 type=Sorcery

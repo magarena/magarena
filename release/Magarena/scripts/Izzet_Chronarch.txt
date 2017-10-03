@@ -1,5 +1,6 @@
 name=Izzet Chronarch
-image=https://magiccards.info/scans/en/cmd/205.jpg
+image=https://magiccards.info/scans/en/c17/175.jpg
+image_updated=2017-10-03
 value=3.433
 rarity=C
 type=Creature

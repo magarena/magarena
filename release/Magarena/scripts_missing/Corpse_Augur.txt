@@ -1,6 +1,6 @@
 name=Corpse Augur
-image=https://magiccards.info/scans/en/c15/17.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/c17/106.jpg
+image_updated=2017-10-03
 value=2.500
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Earthquake
-image=https://magiccards.info/scans/en/cmd/121.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/c17/137.jpg
+image_updated=2017-10-03
 value=4.260
 removal=2
 rarity=R

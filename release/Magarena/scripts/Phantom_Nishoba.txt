@@ -1,5 +1,6 @@
 name=Phantom Nishoba
-image=https://magiccards.info/scans/en/ju/140.jpg
+image=https://magiccards.info/scans/en/c17/188.jpg
+image_updated=2017-10-03
 value=4.211
 rarity=R
 type=Creature

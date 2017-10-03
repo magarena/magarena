@@ -1,5 +1,6 @@
 name=Leonin Shikari
-image=https://magiccards.info/scans/en/ds/6.jpg
+image=https://magiccards.info/scans/en/c17/66.jpg
+image_updated=2017-10-03
 value=4.435
 rarity=R
 type=Creature

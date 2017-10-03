@@ -1,5 +1,6 @@
 name=Consuming Vapors
-image=https://magiccards.info/scans/en/roe/101.jpg
+image=https://magiccards.info/scans/en/c17/105.jpg
+image_updated=2017-10-03
 value=4.276
 rarity=R
 type=Sorcery

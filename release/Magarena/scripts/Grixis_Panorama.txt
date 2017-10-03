@@ -1,5 +1,6 @@
 name=Grixis Panorama
-image=https://magiccards.info/scans/en/ala/224.jpg
+image=https://magiccards.info/scans/en/c17/254.jpg
+image_updated=2017-10-03
 value=3.300
 rarity=C
 type=Land

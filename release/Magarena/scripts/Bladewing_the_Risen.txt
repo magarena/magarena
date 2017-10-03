@@ -1,5 +1,6 @@
 name=Bladewing the Risen
-image=https://magiccards.info/scans/en/cmd/185.jpg
+image=https://magiccards.info/scans/en/c17/163.jpg
+image_updated=2017-10-03
 value=4.090
 rarity=R
 type=Legendary,Creature

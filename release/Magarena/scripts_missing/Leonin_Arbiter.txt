@@ -1,5 +1,6 @@
 name=Leonin Arbiter
-image=https://magiccards.info/scans/en/som/14.jpg
+image=https://magiccards.info/scans/en/c17/64.jpg
+image_updated=2017-10-03
 value=4.388
 rarity=R
 type=Creature

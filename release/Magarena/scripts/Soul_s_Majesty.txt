@@ -1,5 +1,6 @@
 name=Soul's Majesty
-image=https://magiccards.info/scans/en/cfx/92.jpg
+image=https://magiccards.info/scans/en/c17/158.jpg
+image_updated=2017-10-03
 value=3.080
 rarity=R
 type=Sorcery

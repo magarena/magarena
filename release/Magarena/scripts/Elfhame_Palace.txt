@@ -1,6 +1,6 @@
 name=Elfhame Palace
-image=https://magiccards.info/scans/en/8e/324.jpg
-image_updated=2016-12-02
+image=https://magiccards.info/scans/en/c17/247.jpg
+image_updated=2017-10-03
 value=3.315
 rarity=U
 type=Land

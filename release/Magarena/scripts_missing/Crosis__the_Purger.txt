@@ -1,5 +1,6 @@
 name=Crosis, the Purger
-image=https://magiccards.info/scans/en/in/242.jpg
+image=https://magiccards.info/scans/en/c17/168.jpg
+image_updated=2017-10-03
 value=4.235
 rarity=R
 type=Legendary,Creature

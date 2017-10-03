@@ -1,5 +1,6 @@
 name=Fist of Suns
-image=https://magiccards.info/scans/en/5dn/123.jpg
+image=https://magiccards.info/scans/en/c17/211.jpg
+image_updated=2017-10-03
 value=4.303
 rarity=R
 type=Artifact

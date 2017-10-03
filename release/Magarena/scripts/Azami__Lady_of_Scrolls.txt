@@ -1,5 +1,6 @@
 name=Azami, Lady of Scrolls
-image=https://magiccards.info/scans/en/chk/52.jpg
+image=https://magiccards.info/scans/en/c17/82.jpg
+image_updated=2017-10-03
 value=3.773
 rarity=R
 type=Legendary,Creature

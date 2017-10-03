@@ -1,5 +1,6 @@
 name=Magus of the Abyss
-image=https://magiccards.info/scans/en/fut/70.jpg
+image=https://magiccards.info/scans/en/c17/115.jpg
+image_updated=2017-10-03
 value=3.758
 rarity=R
 type=Creature

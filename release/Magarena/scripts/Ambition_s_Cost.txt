@@ -1,6 +1,6 @@
 name=Ambition's Cost
-image=https://magiccards.info/scans/en/8e/118.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/c17/95.jpg
+image_updated=2017-10-03
 value=3.579
 rarity=U
 type=Sorcery

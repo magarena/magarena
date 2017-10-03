@@ -1,5 +1,6 @@
 name=Cauldron Dance
-image=https://magiccards.info/scans/en/in/238.jpg
+image=https://magiccards.info/scans/en/c17/166.jpg
+image_updated=2017-10-03
 value=4.192
 rarity=U
 type=Instant

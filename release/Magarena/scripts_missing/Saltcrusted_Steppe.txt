@@ -1,5 +1,6 @@
 name=Saltcrusted Steppe
-image=https://magiccards.info/scans/en/ts/277.jpg
+image=https://magiccards.info/scans/en/c17/273.jpg
+image_updated=2017-10-03
 value=3.850
 rarity=U
 type=Land

@@ -1,6 +1,6 @@
 name=Kabira Crossroads
-image=https://magiccards.info/scans/en/zen/216.jpg
-image_updated=2016-12-21
+image=https://magiccards.info/scans/en/c17/259.jpg
+image_updated=2017-10-03
 value=3.432
 rarity=C
 type=Land

@@ -1,5 +1,6 @@
 name=Jwar Isle Refuge
-image=https://magiccards.info/scans/en/pc2/120.jpg
+image=https://magiccards.info/scans/en/c17/258.jpg
+image_updated=2017-10-03
 value=3.312
 rarity=U
 type=Land
