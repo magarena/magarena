@@ -6,7 +6,7 @@ type=Snow,Artifact,Creature
 subtype=Juggernaut
 cost={6}
 pt=6/5
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         {1}{S}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Phyrexian Snowcrusher attacks each turn if able.\n{1}{S}: Phyrexian Snowcrusher gets +1/+0 until end of turn.
+oracle=Phyrexian Snowcrusher attacks each combat if able.\n{1}{S}: Phyrexian Snowcrusher gets +1/+0 until end of turn.

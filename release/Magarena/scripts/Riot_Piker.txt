@@ -7,6 +7,6 @@ subtype=Goblin,Berserker
 cost={1}{R}
 pt=2/1
 ability=First strike;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=First strike\nRiot Piker attacks each turn if able.
+oracle=First strike\nRiot Piker attacks each combat if able.

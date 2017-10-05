@@ -8,6 +8,6 @@ subtype=Human,Warrior
 cost={1}{R}
 pt=2/2
 ability=Prowess;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Prowess\nMage-Ring Bully attacks each turn if able.
+oracle=Prowess\nMage-Ring Bully attacks each combat if able.

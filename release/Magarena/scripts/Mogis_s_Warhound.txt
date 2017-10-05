@@ -7,7 +7,7 @@ subtype=Hound
 cost={1}{R}
 pt=2/2
 ability=Bestow {2}{R};\
-        SN attacks each turn if able.;\
-        Enchanted creature gets +2/+2 and attacks each turn if able.
+        SN attacks each combat if able.;\
+        Enchanted creature gets +2/+2 and attacks each combat if able.
 timing=main
-oracle=Bestow {2}{R}\nMogis's Warhound attacks each turn if able.\nEnchanted creature gets +2/+2 and attacks each turn if able.
+oracle=Bestow {2}{R}\nMogis's Warhound attacks each combat if able.\nEnchanted creature gets +2/+2 and attacks each combat if able.

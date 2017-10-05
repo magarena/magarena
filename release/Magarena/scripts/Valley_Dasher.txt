@@ -7,6 +7,6 @@ subtype=Human,Berserker
 cost={1}{R}
 pt=2/2
 ability=Haste;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=fmain
-oracle=Haste\nValley Dasher attacks each turn if able.
+oracle=Haste\nValley Dasher attacks each combat if able.

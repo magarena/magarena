@@ -7,6 +7,6 @@ subtype=Construct
 cost={4}
 pt=4/5
 ability=Echo {4};\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Echo {4}\nThran War Machine attacks each turn if able.
+oracle=Echo {4}\nThran War Machine attacks each combat if able.

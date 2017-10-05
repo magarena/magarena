@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat
 cost={1}{R}{R}
 pt=2/1
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         {1}{R}: Creatures without defender can't block SN this turn.
 timing=main
-oracle=Sabertooth Alley Cat attacks each turn if able.\n{1}{R}: Creatures without defender can't block Sabertooth Alley Cat this turn.
+oracle=Sabertooth Alley Cat attacks each combat if able.\n{1}{R}: Creatures without defender can't block Sabertooth Alley Cat this turn.

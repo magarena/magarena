@@ -7,6 +7,6 @@ subtype=Juggernaut
 cost={6}
 pt=5/5
 ability=Infect;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Infect\nPhyrexian Juggernaut attacks each turn if able.
+oracle=Infect\nPhyrexian Juggernaut attacks each combat if able.

@@ -6,9 +6,9 @@ type=Creature
 subtype=Werewolf
 color=r
 pt=5/5
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Hanweir Watchkeep
 timing=main
 hidden
-oracle=Bane of Hanweir attacks each turn if able.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Bane of Hanweir.
+oracle=Bane of Hanweir attacks each combat if able.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Bane of Hanweir.

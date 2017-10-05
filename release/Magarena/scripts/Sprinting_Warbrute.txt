@@ -6,7 +6,7 @@ type=Creature
 subtype=Ogre,Berserker
 cost={4}{R}
 pt=5/4
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         Dash {3}{R}
 timing=main
-oracle=Sprinting Warbrute attacks each turn if able.\nDash {3}{R}
+oracle=Sprinting Warbrute attacks each combat if able.\nDash {3}{R}

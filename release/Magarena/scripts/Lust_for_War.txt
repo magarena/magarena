@@ -7,7 +7,7 @@ subtype=Aura
 cost={2}{R}
 ability=Enchant creature;\
         Whenever enchanted creature becomes tapped, SN deals 3 damage to that creature's controller.;\
-        Enchanted creature attacks each turn if able.
+        Enchanted creature attacks each combat if able.
 timing=aura
 enchant=must attack,neg creature
-oracle=Enchant creature\nWhenever enchanted creature becomes tapped, Lust for War deals 3 damage to that creature's controller.\nEnchanted creature attacks each turn if able.
+oracle=Enchant creature\nWhenever enchanted creature becomes tapped, Lust for War deals 3 damage to that creature's controller.\nEnchanted creature attacks each combat if able.

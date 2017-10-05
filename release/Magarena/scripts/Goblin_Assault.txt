@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 cost={2}{R}
 ability=At the beginning of your upkeep, create a 1/1 red Goblin creature token with haste.;\
-        Goblin creatures attack each turn if able.
+        Goblin creatures attack each combat if able.
 timing=enchantment
-oracle=At the beginning of your upkeep, create a 1/1 red Goblin creature token with haste.\nGoblin creatures attack each turn if able.
+oracle=At the beginning of your upkeep, create a 1/1 red Goblin creature token with haste.\nGoblin creatures attack each combat if able.

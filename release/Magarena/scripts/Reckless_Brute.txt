@@ -7,6 +7,6 @@ subtype=Ogre,Warrior
 cost={2}{R}
 pt=3/1
 ability=Haste;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=fmain
-oracle=Haste\nReckless Brute attacks each turn if able.
+oracle=Haste\nReckless Brute attacks each combat if able.

@@ -7,6 +7,6 @@ subtype=Giant,Berserker
 cost={4}{R}
 pt=4/4
 ability=Battle cry;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Battle cry\nKuldotha Ringleader attacks each turn if able.
+oracle=Battle cry\nKuldotha Ringleader attacks each combat if able.

@@ -8,6 +8,6 @@ cost={5}
 pt=*/*
 ability=Indestructible;\
         SN's power and toughness are each equal to the number of artifacts you control.;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Indestructible\nDarksteel Juggernaut's power and toughness are each equal to the number of artifacts you control.\nDarksteel Juggernaut attacks each turn if able.
+oracle=Indestructible\nDarksteel Juggernaut's power and toughness are each equal to the number of artifacts you control.\nDarksteel Juggernaut attacks each combat if able.

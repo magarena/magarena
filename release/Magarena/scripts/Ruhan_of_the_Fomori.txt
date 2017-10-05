@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Giant,Warrior
 cost={1}{R}{W}{U}
 pt=7/7
-ability=SN attacks each turn if able.
+ability=SN attacks each combat if able.
 timing=main
 oracle=At the beginning of combat on your turn, choose an opponent at random. Ruhan of the Fomori attacks that player this combat if able.

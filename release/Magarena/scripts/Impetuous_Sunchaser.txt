@@ -7,6 +7,6 @@ subtype=Human,Soldier
 cost={1}{R}
 pt=1/1
 ability=Flying, haste;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=fmain
-oracle=Flying, haste\nImpetuous Sunchaser attacks each turn if able.
+oracle=Flying, haste\nImpetuous Sunchaser attacks each combat if able.

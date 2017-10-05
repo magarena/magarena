@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={3}{B}{R}
 pt=4/4
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         Cycling {B/R}
 timing=main
-oracle=Monstrous Carabid attacks each turn if able.\nCycling {B/R}
+oracle=Monstrous Carabid attacks each combat if able.\nCycling {B/R}

@@ -7,7 +7,7 @@ subtype=Djinn
 cost={2}{U}{R}
 pt=4/4
 ability=Flying, trample;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
 requires_groovy_code
-oracle=Flying, trample\nEmberwilde Caliph attacks each turn if able.\nWhenever Emberwilde Caliph deals damage, you lose that much life.
+oracle=Flying, trample\nEmberwilde Caliph attacks each combat if able.\nWhenever Emberwilde Caliph deals damage, you lose that much life.

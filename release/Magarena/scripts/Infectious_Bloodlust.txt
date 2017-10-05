@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
-        Enchanted creature gets +2/+1, has haste, and attacks each turn if able.;\
+        Enchanted creature gets +2/+1, has haste, and attacks each combat if able.;\
         When enchanted creature dies, you may search your library for a card named Infectious Bloodlust, reveal it, put it into your hand, then shuffle your library.
 timing=aura
 enchant=default,creature
-oracle=Enchant creature\nEnchanted creature gets +2/+1, has haste, and attacks each turn if able.\nWhen enchanted creature dies, you may search your library for a card named Infectious Bloodlust, reveal it, put it into your hand, then shuffle your library.
+oracle=Enchant creature\nEnchanted creature gets +2/+1, has haste, and attacks each combat if able.\nWhen enchanted creature dies, you may search your library for a card named Infectious Bloodlust, reveal it, put it into your hand, then shuffle your library.

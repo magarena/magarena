@@ -7,6 +7,6 @@ subtype=Drake
 cost={1}{U}{B}
 pt=2/3
 ability=Flying;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Flying\nUrborg Drake attacks each turn if able.
+oracle=Flying\nUrborg Drake attacks each combat if able.

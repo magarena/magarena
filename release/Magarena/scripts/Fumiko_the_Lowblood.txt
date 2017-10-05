@@ -8,6 +8,6 @@ subtype=Human,Samurai
 cost={2}{R}{R}
 pt=3/2
 ability=Whenever SN blocks or becomes blocked, SN gets +X/+X until end of turn, where X is the number of attacking creatures.;\
-        Creatures your opponents control attack each turn if able.
+        Creatures your opponents control attack each combat if able.
 timing=main
-oracle=Fumiko the Lowblood has bushido X, where X is the number of attacking creatures.\nCreatures your opponents control attack each turn if able.
+oracle=Fumiko the Lowblood has bushido X, where X is the number of attacking creatures.\nCreatures your opponents control attack each combat if able.

@@ -7,6 +7,6 @@ subtype=Spirit
 cost={5}{R}{R}
 pt=7/4
 ability=Haste;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=fmain
-oracle=Haste\nAshen Monstrosity attacks each turn if able.
+oracle=Haste\nAshen Monstrosity attacks each combat if able.

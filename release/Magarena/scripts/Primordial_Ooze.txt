@@ -6,7 +6,7 @@ type=Creature
 subtype=Ooze
 cost={R}
 pt=1/1
-ability=SN attacks each turn if able.
+ability=SN attacks each combat if able.
 timing=main
 requires_groovy_code
-oracle=Primordial Ooze attacks each turn if able.\nAt the beginning of your upkeep, put a +1/+1 counter on Primordial Ooze. Then you may pay {X}, where X is the number of +1/+1 counters on it. If you don't, tap Primordial Ooze and it deals X damage to you.
+oracle=Primordial Ooze attacks each combat if able.\nAt the beginning of your upkeep, put a +1/+1 counter on Primordial Ooze. Then you may pay {X}, where X is the number of +1/+1 counters on it. If you don't, tap Primordial Ooze and it deals X damage to you.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={1}{R}
 pt=2/1
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-oracle=Bloodcrazed Neonate attacks each turn if able.\nWhenever Bloodcrazed Neonate deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Bloodcrazed Neonate attacks each combat if able.\nWhenever Bloodcrazed Neonate deals combat damage to a player, put a +1/+1 counter on it.

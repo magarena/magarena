@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={R}
 ability=Enchant creature;\
-        Enchanted creature attacks each turn if able.
+        Enchanted creature attacks each combat if able.
 timing=aura
 enchant=must attack,neg creature
-oracle=Enchant creature\nEnchanted creature attacks each turn if able.
+oracle=Enchant creature\nEnchanted creature attacks each combat if able.

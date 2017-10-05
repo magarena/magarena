@@ -7,6 +7,6 @@ subtype=Hellion
 cost={5}{R}
 pt=5/4
 ability=Haste;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=fmain
-oracle=Haste\nFlameborn Hellion attacks each turn if able.
+oracle=Haste\nFlameborn Hellion attacks each combat if able.

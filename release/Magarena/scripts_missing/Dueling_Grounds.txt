@@ -4,8 +4,8 @@ value=4.208
 rarity=R
 type=Enchantment
 cost={1}{G}{W}
-ability=No more than one creature can attack each turn.;\
-        No more than one creature can block each turn.
+ability=No more than one creature can attack each combat.;\
+        No more than one creature can block each combat.
 timing=enchantment
-oracle=No more than one creature can attack each turn.\nNo more than one creature can block each turn.
+oracle=No more than one creature can attack each combat.\nNo more than one creature can block each combat.
 status=not supported: blocking-restriction

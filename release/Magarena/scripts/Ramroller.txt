@@ -7,7 +7,7 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={3}
 pt=2/3
-ability=SN attacks each turn if able.;\
+ability=SN attacks each combat if able.;\
         SN gets +2/+0 as long as you control another artifact.
 timing=main
-oracle=Ramroller attacks each turn if able.\nRamroller gets +2/+0 as long as you control another artifact.
+oracle=Ramroller attacks each combat if able.\nRamroller gets +2/+0 as long as you control another artifact.

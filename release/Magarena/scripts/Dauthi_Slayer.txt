@@ -7,6 +7,6 @@ subtype=Dauthi,Soldier
 cost={B}{B}
 pt=2/2
 ability=Shadow;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Shadow\nDauthi Slayer attacks each turn if able.
+oracle=Shadow\nDauthi Slayer attacks each combat if able.

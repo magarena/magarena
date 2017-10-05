@@ -7,7 +7,7 @@ subtype=Ogre,Warrior
 cost={4}{R}{G}
 pt=6/6
 ability=Vigilance, reach;\
-        SN attacks each turn if able.;\
+        SN attacks each combat if able.;\
         Whenever a player casts a noncreature spell, SN deals 6 damage to that player.
 timing=main
-oracle=Vigilance, reach\nRuric Thar, the Unbowed attacks each turn if able.\nWhenever a player casts a noncreature spell, Ruric Thar deals 6 damage to that player.
+oracle=Vigilance, reach\nRuric Thar, the Unbowed attacks each combat if able.\nWhenever a player casts a noncreature spell, Ruric Thar deals 6 damage to that player.

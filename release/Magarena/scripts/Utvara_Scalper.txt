@@ -7,6 +7,6 @@ subtype=Goblin,Scout
 cost={1}{R}
 pt=1/2
 ability=Flying;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Flying\nUtvara Scalper attacks each turn if able.
+oracle=Flying\nUtvara Scalper attacks each combat if able.

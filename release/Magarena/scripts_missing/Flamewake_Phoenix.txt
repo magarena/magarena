@@ -7,8 +7,8 @@ subtype=Phoenix
 cost={1}{R}{R}
 pt=2/2
 ability=Flying, haste;\
-        SN attacks each turn if able.;\
+        SN attacks each combat if able.;\
         At the beginning of combat on your turn, if you control a creature with power 4 or greater, you may pay {R}. If you do, return SN from your graveyard to the battlefield.
 timing=main
-oracle=Flying, haste\nFlamewake Phoenix attacks each turn if able.\nFerocious — At the beginning of combat on your turn, if you control a creature with power 4 or greater, you may pay {R}. If you do, return Flamewake Phoenix from your graveyard to the battlefield.
+oracle=Flying, haste\nFlamewake Phoenix attacks each combat if able.\nFerocious — At the beginning of combat on your turn, if you control a creature with power 4 or greater, you may pay {R}. If you do, return Flamewake Phoenix from your graveyard to the battlefield.
 status=not supported: trigger-from-graveyard

@@ -7,6 +7,6 @@ subtype=Elemental
 cost={4}{R}{R}
 pt=7/7
 ability=Echo {4}{R}{R};\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
-oracle=Echo {4}{R}{R}\nTectonic Fiend attacks each turn if able.
+oracle=Echo {4}{R}{R}\nTectonic Fiend attacks each combat if able.

@@ -7,7 +7,7 @@ subtype=Zombie
 cost={4}{B}
 pt=2/6
 ability=Deathtouch;\
-        SN attacks each turn if able.
+        SN attacks each combat if able.
 timing=main
 oracle=Deathtouch\nAt the beginning of combat on your turn, choose an opponent at random. Raving Dead attacks that player this combat if able.\nWhenever Raving Dead deals combat damage to a player, that player loses half his or her life, rounded down.
 requires_groovy_code

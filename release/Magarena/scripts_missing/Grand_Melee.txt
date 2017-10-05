@@ -4,8 +4,8 @@ value=3.597
 rarity=R
 type=Enchantment
 cost={3}{R}
-ability=All creatures attack each turn if able.;\
-        All creatures block each turn if able.
+ability=All creatures attack each combat if able.;\
+        All creatures block each combat if able.
 timing=enchantment
-oracle=All creatures attack each turn if able.\nAll creatures block each turn if able.
+oracle=All creatures attack each combat if able.\nAll creatures block each combat if able.
 status=not supported: blocking-restriction
