@@ -1,5 +1,6 @@
 name=Demystify
-image=https://magiccards.info/scans/en/m12/13.jpg
+image=https://magiccards.info/scans/en/xln/8.jpg
+image_updated=2017-10-30
 value=2.969
 removal=1
 rarity=C

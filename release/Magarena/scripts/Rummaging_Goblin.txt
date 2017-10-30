@@ -1,5 +1,6 @@
 name=Rummaging Goblin
-image=https://magiccards.info/scans/en/m15/159.jpg
+image=https://magiccards.info/scans/en/xln/160.jpg
+image_updated=2017-10-30
 value=2.071
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Mark of the Vampire
-image=https://magiccards.info/scans/en/m13/99.jpg
+image=https://magiccards.info/scans/en/xln/113.jpg
+image_updated=2017-10-30
 value=3.300
 rarity=C
 type=Enchantment

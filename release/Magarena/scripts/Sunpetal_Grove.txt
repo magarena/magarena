@@ -1,6 +1,6 @@
 name=Sunpetal Grove
-image=https://magiccards.info/scans/en/c16/329.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/xln/257.jpg
+image_updated=2017-10-30
 value=3.777
 rarity=R
 type=Land

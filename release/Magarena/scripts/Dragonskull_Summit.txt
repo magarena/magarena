@@ -1,6 +1,6 @@
 name=Dragonskull Summit
-image=https://magiccards.info/scans/en/c16/292.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/xln/252.jpg
+image_updated=2017-10-30
 value=3.903
 rarity=R
 type=Land

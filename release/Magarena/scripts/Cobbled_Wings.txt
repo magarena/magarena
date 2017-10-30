@@ -1,5 +1,6 @@
 name=Cobbled Wings
-image=https://magiccards.info/scans/en/isd/219.jpg
+image=https://magiccards.info/scans/en/xln/233.jpg
+image_updated=2017-10-30
 value=3.023
 rarity=C
 type=Artifact
