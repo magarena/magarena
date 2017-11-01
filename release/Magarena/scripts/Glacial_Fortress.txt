@@ -1,5 +1,6 @@
 name=Glacial Fortress
-image=https://magiccards.info/scans/en/m13/225.jpg
+image=https://magiccards.info/scans/en/xln/255.jpg
+image_updated=2017-10-30
 value=4.000
 rarity=R
 type=Land

@@ -1,6 +1,6 @@
 name=Sure Strike
-image=https://magiccards.info/scans/en/bfz/157.jpg
-image_updated=2015-11-08
+image=https://magiccards.info/scans/en/xln/166.jpg
+image_updated=2017-10-30
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,6 @@
 name=Dual Shot
-image=https://magiccards.info/scans/en/soi/153.jpg
+image=https://magiccards.info/scans/en/xln/141.jpg
+image_updated=2017-10-30
 value=2.500
 rarity=C
 type=Instant

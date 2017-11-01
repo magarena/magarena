@@ -1,5 +1,6 @@
 name=Favorable Winds
-image=https://magiccards.info/scans/en/cns/98.jpg
+image=https://magiccards.info/scans/en/xln/56.jpg
+image_updated=2017-10-30
 value=4.000
 rarity=U
 type=Enchantment

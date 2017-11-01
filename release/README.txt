@@ -75,6 +75,24 @@ Thank you for your support and have fun!
 
 Release 1.90 (October 29, 2017)
 ============
+kelsioboy
+melvin
+ShawnieBoy
+xin
+
+- improve the French translation
+
+- fixed the following bugs:
+  * incorrect images for C17
+  * missing priority after combat damage step (issue #1311)
+  * Garruk, Apex Predator's emblem did not pump the attacking creature (issue #1390)
+
+- added the following cards:
+Arctic Foxes, Avarice Amulet, Built to Last, Built to Smash,
+Conqueror's Pledge, Crown of Doom, Depala, Pilot Exemplar,
+Great Oak Guardian, Incite, Kaseto, Orochi Archmage, Needle Specter,
+Toshiro Umezawa, Unchecked Growth, Undergrowth Champion,
+Vigil for the Lost
 
 Release 1.89 (September 30, 2017)
 ============

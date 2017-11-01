@@ -1,5 +1,6 @@
 name=Slice in Twain
-image=https://magiccards.info/scans/en/som/127.jpg
+image=https://magiccards.info/scans/en/xln/207.jpg
+image_updated=2017-10-30
 value=3.462
 rarity=U
 type=Instant

@@ -1,5 +1,6 @@
 name=Drowned Catacomb
-image=https://magiccards.info/scans/en/m13/223.jpg
+image=https://magiccards.info/scans/en/xln/253.jpg
+image_updated=2017-10-30
 value=3.811
 rarity=R
 type=Land

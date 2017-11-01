@@ -1,6 +1,6 @@
 name=Spell Pierce
-image=https://magiccards.info/scans/en/mm3/51.jpg
-image_updated=2017-08-08
+image=https://magiccards.info/scans/en/xln/81.jpg
+image_updated=2017-10-30
 value=4.537
 rarity=C
 type=Instant
