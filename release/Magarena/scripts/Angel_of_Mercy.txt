@@ -1,8 +1,8 @@
 name=Angel of Mercy
-image=https://magiccards.info/scans/en/10e/2.jpg
-image_updated=2016-11-20
+image=https://magiccards.info/scans/en/ima/6.jpg
+image_updated=2017-04-12
 value=2.833
-rarity=U
+rarity=C
 type=Creature
 subtype=Angel
 cost={4}{W}

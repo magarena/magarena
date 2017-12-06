@@ -1,7 +1,8 @@
 name=Heat Ray
-image=https://magiccards.info/scans/en/m15/148.jpg
+image=https://magiccards.info/scans/en/ima/133.jpg
+image_updated=2017-04-12
 value=3.200
-rarity=U
+rarity=C
 type=Instant
 cost={X}{R}
 effect=SN deals X damage to target creature.

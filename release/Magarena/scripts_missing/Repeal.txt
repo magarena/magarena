@@ -1,6 +1,6 @@
 name=Repeal
-image=https://magiccards.info/scans/en/mm2/56.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/ima/70.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=C
 type=Instant

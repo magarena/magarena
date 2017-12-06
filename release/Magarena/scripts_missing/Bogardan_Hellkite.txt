@@ -1,7 +1,8 @@
 name=Bogardan Hellkite
-image=https://magiccards.info/scans/en/c14/173.jpg
+image=https://magiccards.info/scans/en/ima/118.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=M
+rarity=R
 type=Creature
 subtype=Dragon
 cost={6}{R}{R}

@@ -1,7 +1,8 @@
 name=Pristine Talisman
-image=https://magiccards.info/scans/en/c14/264.jpg
+image=https://magiccards.info/scans/en/ima/225.jpg
+image_updated=2017-04-12
 value=3.053
-rarity=C
+rarity=U
 type=Artifact
 cost={3}
 timing=artifact

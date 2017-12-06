@@ -1,5 +1,6 @@
 name=Pentarch Ward
-image=https://magiccards.info/scans/en/ts/33.jpg
+image=https://magiccards.info/scans/en/ima/27.jpg
+image_updated=2017-04-12
 value=3.737
 rarity=C
 type=Enchantment

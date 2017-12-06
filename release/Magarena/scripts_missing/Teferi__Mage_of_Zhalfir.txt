@@ -1,5 +1,6 @@
 name=Teferi, Mage of Zhalfir
-image=https://magiccards.info/scans/en/ts/83.jpg
+image=https://magiccards.info/scans/en/ima/75.jpg
+image_updated=2017-04-12
 value=4.123
 rarity=R
 type=Legendary,Creature

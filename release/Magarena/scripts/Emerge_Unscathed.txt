@@ -1,7 +1,8 @@
 name=Emerge Unscathed
-image=https://magiccards.info/scans/en/roe/20.jpg
+image=https://magiccards.info/scans/en/ima/19.jpg
+image_updated=2017-04-12
 value=4.038
-rarity=U
+rarity=C
 type=Instant
 cost={W}
 effect=Target creature you control gains protection from the color of your choice until end of turn.~Rebound

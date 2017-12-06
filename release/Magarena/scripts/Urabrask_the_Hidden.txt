@@ -1,5 +1,6 @@
 name=Urabrask the Hidden
-image=https://magiccards.info/scans/en/nph/98.jpg
+image=https://magiccards.info/scans/en/ima/152.jpg
+image_updated=2017-04-12
 value=4.042
 rarity=M
 type=Legendary,Creature

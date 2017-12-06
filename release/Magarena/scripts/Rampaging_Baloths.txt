@@ -1,7 +1,8 @@
 name=Rampaging Baloths
-image=https://magiccards.info/scans/en/c14/212.jpg
+image=https://magiccards.info/scans/en/ima/184.jpg
+image_updated=2017-04-12
 value=3.750
-rarity=M
+rarity=R
 type=Creature
 subtype=Beast
 cost={4}{G}{G}

@@ -1,6 +1,6 @@
 name=Aetherize
-image=https://magiccards.info/scans/en/gtc/29.jpg
-image_updated=2016-09-27
+image=https://magiccards.info/scans/en/ima/40.jpg
+image_updated=2017-04-12
 value=3.752
 rarity=U
 type=Instant

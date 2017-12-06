@@ -1,6 +1,6 @@
 name=Grisly Spectacle
-image=https://magiccards.info/scans/en/mm3/73.jpg
-image_updated=2017-08-08
+image=https://magiccards.info/scans/en/ima/92.jpg
+image_updated=2017-04-12
 value=3.812
 rarity=C
 type=Instant

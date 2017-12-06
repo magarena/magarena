@@ -1,5 +1,6 @@
 name=Vizkopa Guildmage
-image=https://magiccards.info/scans/en/gtc/206.jpg
+image=https://magiccards.info/scans/en/ima/211.jpg
+image_updated=2017-04-12
 value=3.825
 rarity=U
 type=Creature

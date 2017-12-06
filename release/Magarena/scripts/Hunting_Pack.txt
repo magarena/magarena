@@ -1,5 +1,6 @@
 name=Hunting Pack
-image=https://magiccards.info/scans/en/cmd/160.jpg
+image=https://magiccards.info/scans/en/ima/168.jpg
+image_updated=2017-04-12
 value=3.640
 rarity=U
 type=Instant

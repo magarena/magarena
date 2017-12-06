@@ -1,6 +1,6 @@
 name=Abzan Falconer
-image=https://magiccards.info/scans/en/c16/57.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/ima/3.jpg
+image_updated=2017-04-12
 value=3.643
 rarity=U
 type=Creature

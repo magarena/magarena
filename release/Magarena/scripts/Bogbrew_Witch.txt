@@ -1,7 +1,8 @@
 name=Bogbrew Witch
-image=https://magiccards.info/scans/en/m14/88.jpg
+image=https://magiccards.info/scans/en/ima/83.jpg
+image_updated=2017-04-12
 value=3.148
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={3}{B}

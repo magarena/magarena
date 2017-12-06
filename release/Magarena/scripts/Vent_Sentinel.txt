@@ -1,5 +1,6 @@
 name=Vent Sentinel
-image=https://magiccards.info/scans/en/cns/156.jpg
+image=https://magiccards.info/scans/en/ima/153.jpg
+image_updated=2017-04-12
 value=3.500
 rarity=C
 type=Creature

@@ -1,7 +1,8 @@
 name=Assault Formation
-image=https://magiccards.info/scans/en/dtk/173.jpg
+image=https://magiccards.info/scans/en/ima/155.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=R
+rarity=U
 type=Enchantment
 cost={1}{G}
 ability=Each creature you control assigns combat damage equal to its toughness rather than its power.;\

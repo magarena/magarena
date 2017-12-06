@@ -1,7 +1,8 @@
 name=Heroes' Bane
-image=https://magiccards.info/scans/en/jou/126.jpg
+image=https://magiccards.info/scans/en/ima/166.jpg
+image_updated=2017-04-12
 value=3.750
-rarity=R
+rarity=U
 type=Creature
 subtype=Hydra
 cost={3}{G}{G}

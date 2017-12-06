@@ -1,5 +1,6 @@
 name=Butcher's Glee
-image=https://magiccards.info/scans/en/dtk/90.jpg
+image=https://magiccards.info/scans/en/ima/84.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=C
 type=Instant

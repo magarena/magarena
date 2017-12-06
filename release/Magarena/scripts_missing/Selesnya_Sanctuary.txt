@@ -1,6 +1,6 @@
 name=Selesnya Sanctuary
-image=https://magiccards.info/scans/en/c16/324.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/ima/247.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=U
 type=Land

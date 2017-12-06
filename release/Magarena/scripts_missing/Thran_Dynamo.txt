@@ -1,5 +1,6 @@
 name=Thran Dynamo
-image=https://magiccards.info/scans/en/c14/277.jpg
+image=https://magiccards.info/scans/en/ima/230.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=U
 type=Artifact

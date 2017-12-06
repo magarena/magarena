@@ -1,5 +1,6 @@
 name=Borderland Marauder
-image=https://magiccards.info/scans/en/ema/120.jpg
+image=https://magiccards.info/scans/en/ima/119.jpg
+image_updated=2017-04-12
 value=3.833
 rarity=C
 type=Creature

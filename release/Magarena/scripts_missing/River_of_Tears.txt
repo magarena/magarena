@@ -1,5 +1,6 @@
 name=River of Tears
-image=https://magiccards.info/scans/en/fut/179.jpg
+image=https://magiccards.info/scans/en/ima/246.jpg
+image_updated=2017-04-12
 value=4.118
 rarity=R
 type=Land

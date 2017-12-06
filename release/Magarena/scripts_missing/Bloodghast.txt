@@ -1,5 +1,6 @@
 name=Bloodghast
-image=https://magiccards.info/scans/en/zen/83.jpg
+image=https://magiccards.info/scans/en/ima/82.jpg
+image_updated=2017-04-12
 value=4.458
 rarity=R
 type=Creature

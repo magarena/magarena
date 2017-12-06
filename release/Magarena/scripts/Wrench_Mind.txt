@@ -1,5 +1,6 @@
 name=Wrench Mind
-image=https://magiccards.info/scans/en/mi/84.jpg
+image=https://magiccards.info/scans/en/ima/115.jpg
+image_updated=2017-04-12
 value=4.038
 rarity=C
 type=Sorcery

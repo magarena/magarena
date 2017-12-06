@@ -1,5 +1,6 @@
 name=Genesis Wave
-image=https://magiccards.info/scans/en/som/122.jpg
+image=https://magiccards.info/scans/en/ima/164.jpg
+image_updated=2017-04-12
 value=4.088
 rarity=R
 type=Sorcery

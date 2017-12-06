@@ -1,7 +1,8 @@
 name=Dragonlord's Servant
-image=https://magiccards.info/scans/en/dtk/138.jpg
+image=https://magiccards.info/scans/en/ima/126.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Goblin,Shaman
 cost={1}{R}

@@ -1,5 +1,6 @@
 name=Surreal Memoir
-image=https://magiccards.info/scans/en/roe/167.jpg
+image=https://magiccards.info/scans/en/ima/148.jpg
+image_updated=2017-04-12
 value=3.856
 rarity=U
 type=Sorcery

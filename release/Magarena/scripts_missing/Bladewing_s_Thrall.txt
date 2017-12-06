@@ -1,5 +1,6 @@
 name=Bladewing's Thrall
-image=https://magiccards.info/scans/en/sc/55.jpg
+image=https://magiccards.info/scans/en/ima/81.jpg
+image_updated=2017-04-12
 value=3.382
 rarity=U
 type=Creature

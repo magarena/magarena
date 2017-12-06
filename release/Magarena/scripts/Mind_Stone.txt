@@ -1,8 +1,8 @@
 name=Mind Stone
-image=https://magiccards.info/scans/en/c14/250.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/ima/219.jpg
+image_updated=2017-04-12
 value=4.000
-rarity=U
+rarity=C
 type=Artifact
 cost={2}
 ability={T}: Add {C} to your mana pool.;\

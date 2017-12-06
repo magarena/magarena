@@ -1,5 +1,6 @@
 name=Festering Newt
-image=https://magiccards.info/scans/en/m14/98.jpg
+image=https://magiccards.info/scans/en/ima/90.jpg
+image_updated=2017-04-12
 value=3.573
 rarity=C
 type=Creature

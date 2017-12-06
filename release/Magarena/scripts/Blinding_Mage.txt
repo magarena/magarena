@@ -1,5 +1,6 @@
 name=Blinding Mage
-image=https://magiccards.info/scans/en/m11/8.jpg
+image=https://magiccards.info/scans/en/ima/13.jpg
+image_updated=2017-04-12
 value=3.260
 rarity=C
 type=Creature

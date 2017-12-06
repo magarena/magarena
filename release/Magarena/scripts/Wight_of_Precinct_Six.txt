@@ -1,8 +1,8 @@
 name=Wight of Precinct Six
-image=https://magiccards.info/scans/en/c16/118.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/ima/114.jpg
+image_updated=2017-04-12
 value=3.955
-rarity=U
+rarity=C
 type=Creature
 subtype=Zombie
 cost={1}{B}

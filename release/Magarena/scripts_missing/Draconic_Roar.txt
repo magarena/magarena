@@ -1,7 +1,8 @@
 name=Draconic Roar
-image=https://magiccards.info/scans/en/dtk/134.jpg
+image=https://magiccards.info/scans/en/ima/123.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=U
+rarity=C
 type=Instant
 cost={1}{R}
 ability=As an additional cost to cast SN, you may reveal a Dragon card from your hand.

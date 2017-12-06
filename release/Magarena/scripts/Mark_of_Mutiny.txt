@@ -1,8 +1,9 @@
 name=Mark of Mutiny
-image=https://magiccards.info/scans/en/m13/141.jpg
+image=https://magiccards.info/scans/en/ima/139.jpg
+image_updated=2017-04-12
 value=3.150
 removal=5
-rarity=U
+rarity=C
 type=Sorcery
 cost={2}{R}
 effect=Gain control of target creature until end of turn.~Put a +1/+1 counter on *it*.~Untap *it*.~*That creature* gains haste until end of turn.

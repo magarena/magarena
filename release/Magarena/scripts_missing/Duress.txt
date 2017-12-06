@@ -1,6 +1,6 @@
 name=Duress
-image=https://magiccards.info/scans/en/xln/105.jpg
-image_updated=2017-10-30
+image=https://magiccards.info/scans/en/ima/88.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=C
 type=Sorcery

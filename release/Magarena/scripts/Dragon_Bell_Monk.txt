@@ -1,5 +1,6 @@
 name=Dragon Bell Monk
-image=https://magiccards.info/scans/en/frf/10.jpg
+image=https://magiccards.info/scans/en/ima/17.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=C
 type=Creature

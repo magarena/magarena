@@ -1,7 +1,8 @@
 name=Lead the Stampede
-image=https://magiccards.info/scans/en/cns/170.jpg
+image=https://magiccards.info/scans/en/ima/173.jpg
+image_updated=2017-04-12
 value=3.833
-rarity=U
+rarity=C
 type=Sorcery
 cost={2}{G}
 effect=Look at the top five cards of your library. You may reveal any number of creature cards from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in any order.

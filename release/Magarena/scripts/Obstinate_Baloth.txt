@@ -1,5 +1,6 @@
 name=Obstinate Baloth
-image=https://magiccards.info/scans/en/m11/188.jpg
+image=https://magiccards.info/scans/en/ima/179.jpg
+image_updated=2017-04-12
 value=4.250
 rarity=R
 type=Creature

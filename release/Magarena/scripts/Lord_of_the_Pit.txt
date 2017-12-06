@@ -1,6 +1,6 @@
 name=Lord of the Pit
-image=https://magiccards.info/scans/en/10e/154.jpg
-image_updated=2016-12-21
+image=https://magiccards.info/scans/en/ima/96.jpg
+image_updated=2017-04-12
 value=3.725
 rarity=R
 type=Creature

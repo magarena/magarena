@@ -1,5 +1,6 @@
 name=Oblivion Stone
-image=https://magiccards.info/scans/en/cmd/254.jpg
+image=https://magiccards.info/scans/en/ima/223.jpg
+image_updated=2017-04-12
 value=4.183
 rarity=R
 type=Artifact

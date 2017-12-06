@@ -1,7 +1,8 @@
 name=Dissolve
-image=https://magiccards.info/scans/en/ths/47.jpg
+image=https://magiccards.info/scans/en/ima/51.jpg
+image_updated=2017-04-12
 value=3.705
-rarity=U
+rarity=C
 type=Instant
 cost={1}{U}{U}
 effect=Counter target spell.~Scry 1.

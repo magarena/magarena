@@ -1,8 +1,8 @@
 name=Condescend
-image=https://magiccards.info/scans/en/5dn/27.jpg
-image_updated=2016-11-28
+image=https://magiccards.info/scans/en/ima/46.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=C
+rarity=U
 type=Instant
 cost={X}{U}
 effect=Counter target spell unless its controller pays {X}. Scry 2.

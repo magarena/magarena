@@ -1,5 +1,6 @@
 name=Mana Leak
-image=https://magiccards.info/scans/en/mm2/50.jpg
+image=https://magiccards.info/scans/en/ima/66.jpg
+image_updated=2017-04-12
 value=4.459
 rarity=C
 type=Instant

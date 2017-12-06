@@ -1,6 +1,6 @@
 name=Shimmering Grotto
-image=https://magiccards.info/scans/en/mm3/247.jpg
-image_updated=2017-08-08
+image=https://magiccards.info/scans/en/ima/248.jpg
+image_updated=2017-04-12
 value=3.069
 rarity=C
 type=Land

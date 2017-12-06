@@ -1,6 +1,6 @@
 name=Mnemonic Wall
-image=https://magiccards.info/scans/en/cn2/116.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/ima/67.jpg
+image_updated=2017-04-12
 value=2.750
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Simic Sky Swallower
-image=https://magiccards.info/scans/en/mm3/182.jpg
-image_updated=2017-08-08
+image=https://magiccards.info/scans/en/ima/208.jpg
+image_updated=2017-04-12
 value=4.426
 rarity=R
 type=Creature

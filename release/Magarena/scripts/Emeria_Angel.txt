@@ -1,5 +1,6 @@
 name=Emeria Angel
-image=https://magiccards.info/scans/en/zen/11.jpg
+image=https://magiccards.info/scans/en/ima/20.jpg
+image_updated=2017-04-12
 value=4.037
 rarity=R
 type=Creature

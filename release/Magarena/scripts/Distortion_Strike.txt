@@ -1,7 +1,8 @@
 name=Distortion Strike
-image=https://magiccards.info/scans/en/roe/60.jpg
+image=https://magiccards.info/scans/en/ima/52.jpg
+image_updated=2017-04-12
 value=4.225
-rarity=C
+rarity=U
 type=Sorcery
 cost={U}
 effect=Target creature gets +1/+0 until end of turn and can't be blocked this turn.~Rebound

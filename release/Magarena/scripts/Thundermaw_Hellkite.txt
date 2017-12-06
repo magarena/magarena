@@ -1,5 +1,6 @@
 name=Thundermaw Hellkite
-image=https://magiccards.info/scans/en/m13/150.jpg
+image=https://magiccards.info/scans/en/ima/149.jpg
+image_updated=2017-04-12
 value=4.103
 rarity=M
 type=Creature

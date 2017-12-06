@@ -1,7 +1,8 @@
 name=Staggershock
-image=https://magiccards.info/scans/en/roe/166.jpg
+image=https://magiccards.info/scans/en/ima/147.jpg
+image_updated=2017-04-12
 value=4.227
-rarity=C
+rarity=U
 type=Instant
 cost={2}{R}
 effect=SN deals 2 damage to target creature or player.~Rebound

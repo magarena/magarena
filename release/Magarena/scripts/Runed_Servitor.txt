@@ -1,8 +1,8 @@
 name=Runed Servitor
-image=https://magiccards.info/scans/en/cn2/216.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/ima/226.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=U
+rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={2}

@@ -1,5 +1,6 @@
 name=Archangel of Thune
-image=https://magiccards.info/scans/en/m14/5.jpg
+image=https://magiccards.info/scans/en/ima/8.jpg
+image_updated=2017-04-12
 value=3.970
 rarity=M
 type=Creature

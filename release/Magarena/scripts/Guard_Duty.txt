@@ -1,5 +1,6 @@
 name=Guard Duty
-image=https://magiccards.info/scans/en/roe/23.jpg
+image=https://magiccards.info/scans/en/ima/22.jpg
+image_updated=2017-04-12
 value=3.595
 rarity=C
 type=Enchantment

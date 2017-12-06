@@ -1,5 +1,6 @@
 name=Rakdos Drake
-image=https://magiccards.info/scans/en/dgm/28.jpg
+image=https://magiccards.info/scans/en/ima/103.jpg
+image_updated=2017-04-12
 value=3.051
 rarity=C
 type=Creature
