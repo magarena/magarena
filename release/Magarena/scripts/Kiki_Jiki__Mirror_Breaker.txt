@@ -1,6 +1,6 @@
 name=Kiki-Jiki, Mirror Breaker
-image=https://magiccards.info/scans/en/mm2/121.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/ima/136.jpg
+image_updated=2017-04-12
 value=4.373
 rarity=M
 type=Legendary,Creature

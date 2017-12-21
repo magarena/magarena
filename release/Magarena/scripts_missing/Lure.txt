@@ -1,5 +1,6 @@
 name=Lure
-image=https://magiccards.info/scans/en/m12/183.jpg
+image=https://magiccards.info/scans/en/ima/175.jpg
+image_updated=2017-04-12
 value=4.042
 rarity=U
 type=Enchantment

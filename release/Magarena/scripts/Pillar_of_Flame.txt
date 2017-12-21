@@ -1,5 +1,6 @@
 name=Pillar of Flame
-image=https://magiccards.info/scans/en/avr/149.jpg
+image=https://magiccards.info/scans/en/ima/141.jpg
+image_updated=2017-04-12
 value=3.825
 removal=2
 rarity=C

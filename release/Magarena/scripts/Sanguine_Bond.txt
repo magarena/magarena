@@ -1,8 +1,8 @@
 name=Sanguine Bond
-image=https://magiccards.info/scans/en/c17/124.jpg
-image_updated=2017-10-03
+image=https://magiccards.info/scans/en/ima/107.jpg
+image_updated=2017-04-12
 value=3.000
-rarity=R
+rarity=U
 type=Enchantment
 cost={3}{B}{B}
 timing=enchantment

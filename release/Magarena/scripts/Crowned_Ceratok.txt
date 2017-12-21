@@ -1,8 +1,8 @@
 name=Crowned Ceratok
-image=https://magiccards.info/scans/en/gtc/117.jpg
-image_updated=2016-09-12
+image=https://magiccards.info/scans/en/ima/158.jpg
+image_updated=2017-04-12
 value=3.577
-rarity=U
+rarity=C
 type=Creature
 subtype=Rhino
 cost={3}{G}

@@ -1,6 +1,6 @@
 name=Disenchant
-image=https://magiccards.info/scans/en/cn2/82.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/ima/15.jpg
+image_updated=2017-04-12
 value=4.515
 removal=1
 rarity=C

@@ -1,7 +1,8 @@
 name=Blood Baron of Vizkopa
-image=https://magiccards.info/scans/en/dgm/57.jpg
+image=https://magiccards.info/scans/en/ima/195.jpg
+image_updated=2017-04-12
 value=3.854
-rarity=M
+rarity=R
 type=Creature
 subtype=Vampire
 cost={3}{W}{B}

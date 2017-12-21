@@ -1,5 +1,6 @@
 name=Amass the Components
-image=https://magiccards.info/scans/en/avr/43.jpg
+image=https://magiccards.info/scans/en/ima/41.jpg
+image_updated=2017-04-12
 value=2.653
 rarity=C
 type=Sorcery

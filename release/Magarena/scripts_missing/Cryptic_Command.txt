@@ -1,5 +1,6 @@
 name=Cryptic Command
-image=https://magiccards.info/scans/en/mm2/43.jpg
+image=https://magiccards.info/scans/en/ima/48.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=R
 type=Instant

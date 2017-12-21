@@ -1,5 +1,6 @@
 name=Serra Angel
-image=https://magiccards.info/scans/en/ema/28.jpg
+image=https://magiccards.info/scans/en/ima/30.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=U
 type=Creature

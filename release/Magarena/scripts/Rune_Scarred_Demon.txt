@@ -1,5 +1,6 @@
 name=Rune-Scarred Demon
-image=https://magiccards.info/scans/en/m12/106.jpg
+image=https://magiccards.info/scans/en/ima/106.jpg
+image_updated=2017-04-12
 value=4.376
 rarity=R
 type=Creature

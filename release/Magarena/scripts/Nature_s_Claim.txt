@@ -1,5 +1,6 @@
 name=Nature's Claim
-image=https://magiccards.info/scans/en/ema/178.jpg
+image=https://magiccards.info/scans/en/ima/177.jpg
+image_updated=2017-04-12
 value=4.706
 removal=1
 rarity=C

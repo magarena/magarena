@@ -1,6 +1,6 @@
 name=Hunt the Weak
-image=https://magiccards.info/scans/en/kld/158.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/ima/167.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=C
 type=Sorcery

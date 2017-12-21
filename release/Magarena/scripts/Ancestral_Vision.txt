@@ -1,5 +1,6 @@
 name=Ancestral Vision
-image=https://magiccards.info/scans/en/jvc/21.jpg
+image=https://magiccards.info/scans/en/ima/42.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,6 @@
 name=Kolaghan Monument
-image=https://magiccards.info/scans/en/dtk/241.jpg
+image=https://magiccards.info/scans/en/ima/217.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=U
 type=Artifact

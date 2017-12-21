@@ -1,7 +1,8 @@
 name=Thrill-Kill Assassin
-image=https://magiccards.info/scans/en/rtr/81.jpg
+image=https://magiccards.info/scans/en/ima/111.jpg
+image_updated=2017-04-12
 value=3.403
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Assassin
 cost={1}{B}

@@ -1,8 +1,8 @@
 name=Corpsejack Menace
-image=https://magiccards.info/scans/en/c16/190.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/ima/197.jpg
+image_updated=2017-04-12
 value=4.051
-rarity=R
+rarity=U
 type=Creature
 subtype=Fungus
 cost={2}{B}{G}

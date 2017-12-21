@@ -1,6 +1,6 @@
 name=Coordinated Assault
-image=https://magiccards.info/scans/en/cn2/154.jpg
-image_updated=2016-11-28
+image=https://magiccards.info/scans/en/ima/121.jpg
+image_updated=2017-04-12
 value=3.482
 rarity=U
 type=Instant

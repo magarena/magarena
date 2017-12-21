@@ -1,6 +1,6 @@
 name=Wall of Roots
-image=https://magiccards.info/scans/en/tsts/89.jpg
-image_updated=2011-01-11
+image=https://magiccards.info/scans/en/ima/190.jpg
+image_updated=2017-04-12
 value=4.430
 rarity=C
 type=Creature

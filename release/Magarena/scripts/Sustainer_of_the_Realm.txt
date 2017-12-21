@@ -1,8 +1,8 @@
 name=Sustainer of the Realm
-image=https://magiccards.info/scans/en/7e/52.jpg
-image_updated=2016-01-09
+image=https://magiccards.info/scans/en/ima/35.jpg
+image_updated=2017-04-12
 value=3.367
-rarity=U
+rarity=C
 type=Creature
 subtype=Angel
 cost={2}{W}{W}

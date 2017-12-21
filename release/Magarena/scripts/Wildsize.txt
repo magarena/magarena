@@ -1,6 +1,6 @@
 name=Wildsize
-image=https://magiccards.info/scans/en/gp/98.jpg
-image_updated=2017-01-11
+image=https://magiccards.info/scans/en/ima/191.jpg
+image_updated=2017-04-12
 value=2.845
 rarity=C
 type=Instant

@@ -1,5 +1,6 @@
 name=Prodigal Pyromancer
-image=https://magiccards.info/scans/en/m11/152.jpg
+image=https://magiccards.info/scans/en/ima/142.jpg
+image_updated=2017-04-12
 value=3.428
 rarity=U
 type=Creature

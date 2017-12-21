@@ -1,7 +1,8 @@
 name=Duskdale Wurm
-image=https://magiccards.info/scans/en/m13/166.jpg
+image=https://magiccards.info/scans/en/ima/161.jpg
+image_updated=2017-04-12
 value=3.068
-rarity=U
+rarity=C
 type=Creature
 subtype=Wurm
 cost={5}{G}{G}

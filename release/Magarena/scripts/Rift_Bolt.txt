@@ -1,7 +1,8 @@
 name=Rift Bolt
-image=https://magiccards.info/scans/en/mma/126.jpg
+image=https://magiccards.info/scans/en/ima/143.jpg
+image_updated=2017-04-12
 value=3.982
-rarity=C
+rarity=U
 type=Sorcery
 cost={2}{R}
 ability=Suspend 1—{R}

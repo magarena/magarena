@@ -1,5 +1,6 @@
 name=Balustrade Spy
-image=https://magiccards.info/scans/en/gtc/57.jpg
+image=https://magiccards.info/scans/en/ima/80.jpg
+image_updated=2017-04-12
 value=3.958
 rarity=C
 type=Creature

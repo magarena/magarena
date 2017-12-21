@@ -1,8 +1,8 @@
 name=Jhessian Thief
-image=https://magiccards.info/scans/en/ori/62.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/ima/61.jpg
+image_updated=2017-04-12
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Rogue
 cost={2}{U}

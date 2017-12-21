@@ -1,7 +1,8 @@
 name=Indulgent Tormentor
-image=https://magiccards.info/scans/en/m15/101.jpg
+image=https://magiccards.info/scans/en/ima/94.jpg
+image_updated=2017-04-12
 value=4.000
-rarity=R
+rarity=U
 type=Creature
 subtype=Demon
 cost={3}{B}{B}

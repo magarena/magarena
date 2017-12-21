@@ -1,5 +1,6 @@
 name=Serra Ascendant
-image=https://magiccards.info/scans/en/m11/28.jpg
+image=https://magiccards.info/scans/en/ima/31.jpg
+image_updated=2017-04-12
 value=4.167
 rarity=R
 type=Creature

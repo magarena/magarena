@@ -1,8 +1,8 @@
 name=Earth Elemental
-image=https://magiccards.info/scans/en/10e/199.jpg
-image_updated=2016-12-02
+image=https://magiccards.info/scans/en/ima/127.jpg
+image_updated=2017-04-12
 value=2.763
-rarity=U
+rarity=C
 type=Creature
 subtype=Elemental
 cost={3}{R}{R}

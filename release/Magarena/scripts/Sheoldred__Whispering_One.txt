@@ -1,5 +1,6 @@
 name=Sheoldred, Whispering One
-image=https://magiccards.info/scans/en/nph/73.jpg
+image=https://magiccards.info/scans/en/ima/108.jpg
+image_updated=2017-04-12
 value=3.917
 rarity=M
 type=Legendary,Creature

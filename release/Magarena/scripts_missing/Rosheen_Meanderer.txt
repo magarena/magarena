@@ -1,7 +1,8 @@
 name=Rosheen Meanderer
-image=https://magiccards.info/scans/en/shm/214.jpg
+image=https://magiccards.info/scans/en/ima/206.jpg
+image_updated=2017-04-12
 value=3.983
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Giant,Shaman
 cost={3}{R/G}

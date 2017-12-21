@@ -1,5 +1,6 @@
 name=Crucible of Fire
-image=https://magiccards.info/scans/en/m15/139.jpg
+image=https://magiccards.info/scans/en/ima/122.jpg
+image_updated=2017-04-12
 value=2.700
 rarity=R
 type=Enchantment

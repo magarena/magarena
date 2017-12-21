@@ -1,5 +1,6 @@
 name=Elesh Norn, Grand Cenobite
-image=https://magiccards.info/scans/en/mm2/16.jpg
+image=https://magiccards.info/scans/en/ima/18.jpg
+image_updated=2017-04-12
 value=4.451
 rarity=M
 type=Legendary,Creature

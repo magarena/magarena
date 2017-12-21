@@ -1,7 +1,8 @@
 name=Mana Drain
-image=https://magiccards.info/scans/en/lg/65.jpg
+image=https://magiccards.info/scans/en/ima/65.jpg
+image_updated=2017-04-12
 value=3.750
-rarity=U
+rarity=M
 type=Instant
 cost={U}{U}
 effect=Counter target spell. At the beginning of your next main phase, add an amount of {C} to your mana pool equal to that spell's converted mana cost.

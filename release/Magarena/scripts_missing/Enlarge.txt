@@ -1,5 +1,6 @@
 name=Enlarge
-image=https://magiccards.info/scans/en/m14/170.jpg
+image=https://magiccards.info/scans/en/ima/162.jpg
+image_updated=2017-04-12
 value=3.608
 rarity=U
 type=Sorcery

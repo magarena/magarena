@@ -1,5 +1,6 @@
 name=Auriok Champion
-image=https://magiccards.info/scans/en/5dn/3.jpg
+image=https://magiccards.info/scans/en/ima/9.jpg
+image_updated=2017-04-12
 value=4.059
 rarity=R
 type=Creature

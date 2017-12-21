@@ -1,5 +1,6 @@
 name=Skywise Teachings
-image=https://magiccards.info/scans/en/dtk/79.jpg
+image=https://magiccards.info/scans/en/ima/73.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=U
 type=Enchantment

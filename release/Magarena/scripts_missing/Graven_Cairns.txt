@@ -1,5 +1,6 @@
 name=Graven Cairns
-image=https://magiccards.info/scans/en/shm/272.jpg
+image=https://magiccards.info/scans/en/ima/237.jpg
+image_updated=2017-04-12
 value=4.167
 rarity=R
 type=Land

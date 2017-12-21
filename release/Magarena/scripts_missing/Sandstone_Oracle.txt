@@ -1,6 +1,6 @@
 name=Sandstone Oracle
-image=https://magiccards.info/scans/en/c15/52.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/ima/227.jpg
+image_updated=2017-04-12
 value=2.500
 rarity=U
 type=Artifact,Creature

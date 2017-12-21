@@ -1,7 +1,8 @@
 name=Curse of Predation
-image=https://magiccards.info/scans/en/c13/140.jpg
+image=https://magiccards.info/scans/en/ima/159.jpg
+image_updated=2017-04-12
 value=3.727
-rarity=U
+rarity=R
 type=Enchantment
 subtype=Aura,Curse
 cost={2}{G}

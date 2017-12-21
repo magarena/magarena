@@ -1,5 +1,6 @@
 name=Ulcerate
-image=https://magiccards.info/scans/en/m15/119.jpg
+image=https://magiccards.info/scans/en/ima/112.jpg
+image_updated=2017-04-12
 value=4.167
 rarity=U
 type=Instant

@@ -1,5 +1,6 @@
 name=Haunting Hymn
-image=https://magiccards.info/scans/en/ts/112.jpg
+image=https://magiccards.info/scans/en/ima/93.jpg
+image_updated=2017-04-12
 value=2.414
 rarity=U
 type=Instant

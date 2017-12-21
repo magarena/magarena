@@ -1,5 +1,6 @@
 name=Genesis Hydra
-image=https://magiccards.info/scans/en/m15/176.jpg
+image=https://magiccards.info/scans/en/ima/163.jpg
+image_updated=2017-04-12
 value=3.688
 rarity=R
 type=Creature

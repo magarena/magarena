@@ -1,5 +1,6 @@
 name=Monastery Swiftspear
-image=https://magiccards.info/scans/en/ktk/118.jpg
+image=https://magiccards.info/scans/en/ima/140.jpg
+image_updated=2017-04-12
 value=4.250
 rarity=U
 type=Creature

@@ -1,5 +1,6 @@
 name=Vorinclex, Voice of Hunger
-image=https://magiccards.info/scans/en/nph/127.jpg
+image=https://magiccards.info/scans/en/ima/189.jpg
+image_updated=2017-04-12
 value=3.821
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,6 @@
 name=Ob Nixilis, the Fallen
-image=https://magiccards.info/scans/en/zen/107.jpg
+image=https://magiccards.info/scans/en/ima/101.jpg
+image_updated=2017-04-12
 value=4.052
 rarity=M
 type=Legendary,Creature

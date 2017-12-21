@@ -1,5 +1,6 @@
 name=Bubbling Cauldron
-image=https://magiccards.info/scans/en/m14/205.jpg
+image=https://magiccards.info/scans/en/ima/213.jpg
+image_updated=2017-04-12
 value=3.553
 rarity=U
 type=Artifact

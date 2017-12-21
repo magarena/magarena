@@ -1,5 +1,6 @@
 name=Bala Ged Scorpion
-image=https://magiccards.info/scans/en/roe/95.jpg
+image=https://magiccards.info/scans/en/ima/79.jpg
+image_updated=2017-04-12
 value=2.765
 rarity=C
 type=Creature

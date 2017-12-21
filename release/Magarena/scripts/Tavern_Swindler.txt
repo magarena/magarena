@@ -1,5 +1,6 @@
 name=Tavern Swindler
-image=https://magiccards.info/scans/en/rtr/79.jpg
+image=https://magiccards.info/scans/en/ima/109.jpg
+image_updated=2017-04-12
 value=3.375
 rarity=U
 type=Creature

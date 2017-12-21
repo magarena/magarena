@@ -1,5 +1,6 @@
 name=Fury Charm
-image=https://magiccards.info/scans/en/mma/114.jpg
+image=https://magiccards.info/scans/en/ima/130.jpg
+image_updated=2017-04-12
 value=3.706
 rarity=C
 type=Instant

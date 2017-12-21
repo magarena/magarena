@@ -1,5 +1,6 @@
 name=Avacyn, Angel of Hope
-image=https://magiccards.info/scans/en/avr/6.jpg
+image=https://magiccards.info/scans/en/ima/11.jpg
+image_updated=2017-04-12
 value=4.067
 rarity=M
 type=Legendary,Creature

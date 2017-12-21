@@ -1,7 +1,8 @@
 name=Guardian Idol
-image=https://magiccards.info/scans/en/5dn/128.jpg
+image=https://magiccards.info/scans/en/ima/216.jpg
+image_updated=2017-04-12
 value=3.308
-rarity=U
+rarity=C
 type=Artifact
 cost={2}
 ability=SN enters the battlefield tapped.;\
