@@ -17,7 +17,7 @@
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     targetPlayer,
-                    new MagicMayChoice("Have SN's controller draw three cards?"),
+                    new MagicMayChoice("Have Combustible Gearhulk's controller draw three cards?"),
                     {
                         final MagicGame g, final MagicEvent e ->
                         if (e.isYes()) {
@@ -25,10 +25,11 @@
                         } else {
                             final MagicAction millAction = new MillLibraryAction(controller, 3);
                             g.doAction(millAction);
+                            final int amount = millAction.getMilledCards().collect({ it.getConvertedCost() }).inject(0, { result, i -> result + i })
                             g.doAction(new DealDamageAction(
                                 e.getSource(),
                                 targetPlayer,
-                                (int)millAction.getMilledCards().collect({ it.getConvertedCost() }).inject(0, { result, i -> result + i })
+                                amount
                             ));
                         }
                     },
