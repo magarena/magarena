@@ -1,6 +1,3 @@
-def controller = MagicPlayer.NONE;
-def opponent = MagicPlayer.NONE;
-
 def action = {
     final MagicGame game, final MagicEvent event ->
         if (event.isYes()) {
@@ -12,12 +9,11 @@ def action = {
             final int amount = millAction.getMilledCards().collect({ it.getConvertedCost() }).inject(0, { result, i -> result + i });
             g.doAction(new DealDamageAction(
                         e.getSource(),
-                        opponent,
+                        targetPlayer,
                         amount
                         ));
         }
 }
-
 [
     new EntersBattlefieldTrigger() {
         @Override
@@ -31,12 +27,12 @@ def action = {
             }
         @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                controller = event.getSource().getController();
+                final MagicPlayer controller = event.getSource().getController();
                 event.processTargetPlayer(game, {
-                        opponent = it;
+                        final MagicPlayer targetPlayer ->
                         game.addEvent(new MagicEvent(
                                     event.getSource(),
-                                    opponent,
+                                    targetPlayer,
                                     new MagicMayChoice("Have Combustible Gearhulk's controller draw three cards?"),
                                     action,
                                     "That player may\$ have PN draw three cards. " +
