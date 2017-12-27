@@ -21,21 +21,21 @@
                     {
                         final MagicGame g, final MagicEvent e ->
                         if (e.isYes()) {
-                            g.doAction(new DrawAction(controller, 3));
+                            game.doAction(new DrawAction(controller, 3));
                         } else {
                             final MagicAction millAction = new MillLibraryAction(controller, 3);
-                            g.doAction(millAction);
+                            game.doAction(millAction);
                             final int amount = millAction.getMilledCards().collect({ it.getConvertedCost() }).inject(0, { result, i -> result + i })
-                            g.doAction(new DealDamageAction(
+                            game.doAction(new DealDamageAction(
                                 e.getSource(),
                                 targetPlayer,
                                 amount
                             ));
                         }
                     },
-                    "That player may\$ have PN draw three cards. " +
-                    "If the player doesn't, put the top three cards of PN's library to the graveyard, " +
-                    "then SN deals damage to that player equal to the total converted mana cost of those cards."
+                    "PN may\$ have SN's controller draw three cards. " +
+                    "If PN doesn't, put the top three cards of SN's controller's library to the graveyard, " +
+                    "then SN deals damage to PN equal to the total converted mana cost of those cards."
                 ));
             });
         }
