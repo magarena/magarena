@@ -5,8 +5,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-ability=Whenever you cast a spell, you gain 1 life for each spell you've cast this turn.;\
-        Pay 50 life: SN deals 50 damage to target creature or player.
+ability=Pay 50 life: SN deals 50 damage to target creature or player.
 timing=artifact
+requires_groovy_code
 oracle=Whenever you cast a spell, you gain 1 life for each spell you've cast this turn.\nPay 50 life: Aetherflux Reservoir deals 50 damage to target creature or player.
-status=needs groovy
