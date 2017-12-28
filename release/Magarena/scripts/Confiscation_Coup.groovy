@@ -25,8 +25,7 @@ def action = {
             game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, 4));
 
             event.processTargetPermanent(game, {
-                final int amount = it.getConvertedCost();
-                if (event.getPlayer().getEnergy() >= amount) {
+                if (event.getPlayer().getEnergy() >= it.getConvertedCost()) {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         event.getPlayer(),
