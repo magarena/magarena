@@ -1,11 +1,11 @@
 def choiceAction = {
     final MagicGame game, final MagicEvent event ->
-    final MagicPlayer controller = event.getRefPlayer();
+    final MagicPlayer player = event.getRefPlayer();
     final MagicPlayer opponent = event.getPlayer();
     if (event.isYes()) {
-        game.doAction(new DrawAction(controller, 3));
+        game.doAction(new DrawAction(player, 3));
     } else {
-        final MagicAction millAction = new MillLibraryAction(controller, 3);
+        final MagicAction millAction = new MillLibraryAction(player, 3);
         game.doAction(millAction);
         final int amount = (int)millAction.getMilledCards()*.getConvertedCost().sum();
         game.doAction(new DealDamageAction(
