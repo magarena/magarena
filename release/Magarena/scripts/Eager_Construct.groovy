@@ -1,6 +1,8 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.addEvent(new MagicScryEvent(event.getSource(), event.getPlayer()));
+    if (event.isYes()) {
+        game.addEvent(new MagicScryEvent(event.getSource(), event.getPlayer()));
+    }
 }
 
 [
