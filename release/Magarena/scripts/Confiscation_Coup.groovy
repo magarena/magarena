@@ -1,10 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final MagicPlayer player = event.getPlayer();
-    final MagicPermanent target = event.getRefPermanent();
     if (event.isYes()) {
-        game.doAction(new ChangeCountersAction(player, MagicCounterType.Energy, -target.getConvertedCost()));
-        game.doAction(new GainControlAction(player, target);
+        final MagicPermanent target = event.getRefPermanent();
+        game.addEvent(new MagicPayEnergyEvent(event.getSource(), target.getConvertedCost()));
+        game.doAction(new GainControlAction(event.getPlayer(), target);
     }
 }
 
