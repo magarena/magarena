@@ -5,7 +5,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}{G}
-effect=Creatures with no counters on them get -2/-2 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Creatures with no counters on them get -2/-2 until end of turn.
-status=needs groovy
