@@ -7,8 +7,7 @@ type=Creature
 subtype=Vedalken,Scout
 cost={1}{G}{U}
 pt=2/3
-ability=Flying, trample;\
-        Whenever SN deals combat damage to a player, you get that many {E}.
+ability=Flying, trample
 timing=main
+requires_groovy_code
 oracle=Flying, trample\nWhenever Empyreal Voyager deals combat damage to a player, you get that many {E}.
-status=needs groovy
