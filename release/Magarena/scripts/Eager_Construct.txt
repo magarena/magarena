@@ -7,7 +7,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={2}
 pt=2/2
-ability=When SN enters the battlefield, each player may scry 1.
 timing=main
+requires_groovy_code
 oracle=When Eager Construct enters the battlefield, each player may scry 1.
-status=needs groovy
