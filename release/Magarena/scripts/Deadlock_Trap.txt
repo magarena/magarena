@@ -6,8 +6,7 @@ rarity=R
 type=Artifact
 cost={3}
 ability=SN enters the battlefield tapped.;\
-        When SN enters the battlefield, you get {E}{E}.;\
-        {T}, Pay {E}: Tap target creature or planeswalker. Its activated abilities can't be activated this turn.
+        When SN enters the battlefield, you get {E}{E}.
 timing=artifact
+requires_groovy_code
 oracle=Deadlock Trap enters the battlefield tapped.\nWhen Deadlock Trap enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Tap target creature or planeswalker. Its activated abilities can't be activated this turn.
-status=needs groovy
