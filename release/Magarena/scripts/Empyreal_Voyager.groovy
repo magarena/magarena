@@ -1,8 +1,3 @@
-def action = {
-    final MagicGame game, final MagicEvent event ->
-    game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, event.getRefInt()));
-}
-
 [
     new ThisCombatDamagePlayerTrigger() {
         @Override
@@ -10,9 +5,13 @@ def action = {
             return new MagicEvent(
                 permanent,
                 damage.getDealtAmount(),
-                action,
-                "When SN deals combat damage to a player, PN gets that many {E}."
+                this,
+                "When SN deals combat damage to a player, PN gets that many (RN) {E}."
             );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, event.getRefInt()));
         }
     }
 ]
