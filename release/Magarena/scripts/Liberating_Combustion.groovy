@@ -17,7 +17,7 @@ def searchAction = {
                 CARD_NAMED_CHANDRA_PYROGENIUS_FROM_YOUR_LIBRARY_OR_GRAVEYARD,
                 1,
                 false,
-                "Search for a Chandra, Pyrogenius"
+                "a card named Chandra, Pyrogenius from your library or graveyard"
             ),
             MagicLocationType.OwnersHand
         ));
