@@ -3,6 +3,7 @@ def CARD_NAMED_NISSA_NATURE_S_ARTISAN_FROM_YOUR_LIBRARY_OR_GRAVEYARD = new Magic
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.getName().equalsIgnoreCase("Nissa, Nature's Artisan");
     }
+    @Override
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Library || targetType == MagicTargetType.Graveyard;
     }
