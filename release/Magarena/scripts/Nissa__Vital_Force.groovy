@@ -31,7 +31,7 @@
                 }
             }
 
-            final MagicStatic Haste = new MagicStatic(MagicLayer.Ability) {
+            final MagicStatic haste = new MagicStatic(MagicLayer.Ability) {
                 @Override
                 public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                     flags.add(MagicAbility.Haste);
@@ -41,7 +41,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new BecomesCreatureAction(
                     it,
-                    PT, ST, Haste
+                    PT, ST, haste
                 ));
 
                 // remove the statics during player's next upkeep
@@ -51,7 +51,7 @@
                         if (upkeepPlayer.getId() == event.getPlayer().getId()) {
                             game.addDelayedAction(new RemoveStaticAction(permanent, PT));
                             game.addDelayedAction(new RemoveStaticAction(permanent, ST));
-                            game.addDelayedAction(new RemoveStaticAction(permanent, Haste));
+                            game.addDelayedAction(new RemoveStaticAction(permanent, haste));
                         }
                         return MagicEvent.NONE;
                     }
