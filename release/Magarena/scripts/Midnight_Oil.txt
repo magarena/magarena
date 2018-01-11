@@ -6,7 +6,6 @@ rarity=R
 type=Enchantment
 cost={2}{B}{B}
 ability=SN enters the battlefield with seven hour counters on it.;\
-        At the beginning of your draw step, draw an additional card and remove two hour counters from SN.;\
         Whenever you discard a card, you lose 1 life.
 timing=enchantment
 requires_groovy_code
