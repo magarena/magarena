@@ -4,16 +4,16 @@
     "Tap"
     ) {
         @Override
-        public abstract Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicPayEnergyEvent(source, 1)
             ];
         }
         @Override
-        public MagicEvent getEvent(final MagicSource source) {
+        public MagicEvent getPermanentEvent(final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                source,
+                permanent,
                 MagicTargetChoice.Negative("target creature or planeswalker"),
                 MagicTapTargetPicker.Tap,
                 this,

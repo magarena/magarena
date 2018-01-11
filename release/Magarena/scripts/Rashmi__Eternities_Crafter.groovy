@@ -4,7 +4,7 @@ def action = {
         game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), event.getRefCard(), MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
     }
     else {
-        game.doAction(new ShiftCardAction(topCard, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
+        game.doAction(new ShiftCardAction(event.getRefCard(), MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
     }
 }
 
@@ -29,7 +29,7 @@ def action = {
             if (!topCard.hasType(MagicType.Land) && topCard.getConvertedCost() < event.getRefCardOnStack().getConvertedCost()) {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    new MagicMayChoice("Cast the card without paying its mana cost?",
+                    new MagicMayChoice("Cast the card without paying its mana cost?"),
                     topCard,
                     action,
                     "If it's a nonland card with converted mana cost less than that spell's, PN may\$ cast it without paying its mana cost. If PN doesn't cast the revealed card, put it into PN's hand."

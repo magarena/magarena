@@ -11,9 +11,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.getPlayers().each({
-                it.getPermanents().each({
-                    if (it.isCreature() && !it.hasCounters()) {
-                        game.doAction(new ChangeTurnPTAction(it, -2, -2));
+                final MagicPlayer player ->
+                player.getPermanents().each({
+                    final MagicPermanent permanent ->
+                    if (permanent.isCreature() && !permanent.hasCounters()) {
+                        game.doAction(new ChangeTurnPTAction(permanent, -2, -2));
                     }
                 });
             });

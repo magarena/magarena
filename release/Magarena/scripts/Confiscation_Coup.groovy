@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         final MagicPermanent target = event.getRefPermanent();
         game.addEvent(new MagicPayEnergyEvent(event.getSource(), target.getConvertedCost()));
-        game.doAction(new GainControlAction(event.getPlayer(), target);
+        game.doAction(new GainControlAction(event.getPlayer(), target));
     }
 }
 

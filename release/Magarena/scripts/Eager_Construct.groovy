@@ -20,7 +20,7 @@ def action = {
             game.getPlayers().each({
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    it,
+                    (MagicPlayer)it,
                     new MagicMayChoice("Scry 1?"),
                     action,
                     "PN may\$ scry 1."

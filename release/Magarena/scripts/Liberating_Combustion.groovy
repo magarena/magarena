@@ -44,7 +44,7 @@ def searchAction = {
                 event.getSource(),
                 new MagicMayChoice("Search your library?"),
                 searchAction,
-                "PN may\$ search PN's library and/or graveyard for a card named Chandra, Pyrogenius, reveal it, and put it into PN's hand. If PN search his or her library this way, shuffle it.
+                "PN may\$ search PN's library and/or graveyard for a card named Chandra, Pyrogenius, reveal it, and put it into PN's hand. If PN search his or her library this way, shuffle it."
             ));
         }
     }

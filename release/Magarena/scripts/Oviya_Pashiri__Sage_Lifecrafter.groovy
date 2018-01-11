@@ -11,17 +11,17 @@
             ];
         }
         @Override
-        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                cardOnStack,
+                permanent,
                 this,
-                "PN creates an X/X colorless Construct artifact creature token, " +()
+                "PN creates an X/X colorless Construct artifact creature token, " +
                 "where X is the number of creatures PN controls."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int x = event.getPlayer().getPermanents().count({ it.hasType(MagicType.Creature) });
+            final int x = (int)event.getPlayer().getPermanents().count({ it.hasType(MagicType.Creature) });
             game.doAction(new PlayTokenAction(
                 event.getPlayer(),
                 CardDefinitions.getToken(x, x, "colorless Construct artifact creature token")

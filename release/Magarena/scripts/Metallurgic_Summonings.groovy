@@ -9,8 +9,8 @@
                 ?
                 new MagicEvent(
                     cardOnStack,
-                    this,
                     cardOnStack,
+                    this,
                     "PN creates an X/X colorless Construct artifact creature token, where X is RN's converted mana cost."
                 )
                 :
