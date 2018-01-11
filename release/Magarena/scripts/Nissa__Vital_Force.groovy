@@ -39,6 +39,7 @@
             }
 
             event.processTargetPermanent(game, {
+                game.doAction(new UntapAction(it));
                 game.doAction(new BecomesCreatureAction(
                     it,
                     PT, ST, haste
