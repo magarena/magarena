@@ -26,5 +26,24 @@
             source.getController().setMaxHandSize(source.getCounters(MagicCounterType.Hour));
         }
     }
+    ,
+    // When discard
+    new CardIsDiscardedTrigger() {
+        @Override
+        public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
+            return (source.isController(card.getOwner())) ?
+                new MagicEvent(
+                    source,
+                    this,
+                    "PN loses 1 life."
+                )
+                :
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new ChangeLifeAction(event.getPlayer(), -1));
+        }
+    }
 ]
 

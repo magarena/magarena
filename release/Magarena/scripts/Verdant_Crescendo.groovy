@@ -9,20 +9,6 @@ def CARD_NAMED_NISSA_NATURE_S_ARTISAN_FROM_YOUR_LIBRARY_OR_GRAVEYARD = new Magic
     }
 }
 
-def searchAction = {
-    final MagicGame game, final MagicEvent event ->
-    game.addEvent(new MagicSearchToLocationEvent(
-        event,
-        new MagicFromCardFilterChoice(
-            CARD_NAMED_NISSA_NATURE_S_ARTISAN_FROM_YOUR_LIBRARY_OR_GRAVEYARD,
-            1,
-            false,
-            "a card named Nissa, Nature's Artisan from your library or graveyard"
-        ),
-        MagicLocationType.OwnersHand
-    ));
-}
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -37,10 +23,19 @@ def searchAction = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
-                MagicFromCardFilterChoice(BASIC_LAND_CARD_FROM_LIBRARY, 1, false, "a basic land card from your library"),
-                { game.doAction(new TapAction.Enters(it)) }
+                new MagicFromCardFilterChoice(BASIC_LAND_CARD_FROM_LIBRARY, 1, false, "a basic land card from your library"),
+                { final MagicPermanent it -> game.doAction(TapAction.Enters(it)) }
             ));
-            game.doAction(searchAction);
+            game.addEvent(new MagicSearchToLocationEvent(
+                event,
+                new MagicFromCardFilterChoice(
+                    CARD_NAMED_NISSA_NATURE_S_ARTISAN_FROM_YOUR_LIBRARY_OR_GRAVEYARD,
+                    1,
+                    false,
+                    "a card named Nissa, Nature's Artisan from your library or graveyard"
+                ),
+                MagicLocationType.OwnersHand
+            ));
         }
     }
 ]

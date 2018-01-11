@@ -5,6 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 NEG_TARGET_CREATURE,
+                this,
                 "SN deals X damage to target creature\$, " +
                 "where X is 3 plus the number of artifacts you control."
             );

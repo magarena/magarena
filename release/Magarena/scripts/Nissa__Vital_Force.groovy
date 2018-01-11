@@ -1,17 +1,16 @@
 [
-// +1: Untap target land you control. Until your next turn, it becomes a 5/5 Elemental creature with haste. It's still a land.;\
     new MagicPlaneswalkerActivation(1) {
         @Override
-        public MagicEvent getEvent(final MagicSource source) {
+        public MagicEvent getPermanentEvent(final MagicPermanent permanent, MagicPayedCost payedCost) {
             return new MagicEvent(
-                source,
+                permanent,
                 A_LAND_YOU_CONTROL,
                 this,
                 "Untap target land PN control.\$ Until PN's next turn, it becomes a 5/5 Elemental creature with haste. It's still a land."
             );
         }
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
+        public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
 
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT) {
                 @Override
@@ -38,9 +37,9 @@
                 }
             }
 
-            event.processTargetPermanent(game, {
-                game.doAction(new UntapAction(it));
-                game.doAction(new BecomesCreatureAction(
+            event.processTargetPermanent(outerGame, {
+                outerGame.doAction(new UntapAction(it));
+                outerGame.doAction(new BecomesCreatureAction(
                     it,
                     PT, ST, haste
                 ));
@@ -57,7 +56,7 @@
                         return MagicEvent.NONE;
                     }
                 }
-                game.doAction(new AddTriggerAction(it, cleanup));
+                outerGame.doAction(new AddTriggerAction(it, cleanup));
             });
         }
     }
