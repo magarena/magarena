@@ -10,8 +10,7 @@
                     permanent,
                     permanent.getController(),
                     this,
-                    "If PN would lose the game, " +
-                    "instead exile SN and PN's life total becomes equal to PN's starting life total."
+                    "Exile SN and PN's life total becomes equal to PN's starting life total."
                 );
             }
             else {
@@ -21,7 +20,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
+            game.addEvent(new MagicExileSelfEvent(event.getSource(), MagicLocationType.Battlefield));
             game.doAction(new ChangeLifeAction(player, player.getStartingLife() - player.getLife()));
         }
     }
