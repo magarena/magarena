@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{W}{W}
-effect=Create three 1/1 colorless Servo artifact creature tokens.~You may cast a card with converted mana cost 3 or less from your hand without paying its mana cost.
 timing=main
+requires_groovy_code
 oracle=Create three 1/1 colorless Servo artifact creature tokens.\nYou may cast a card with converted mana cost 3 or less from your hand without paying its mana cost.
-status=needs groovy
