@@ -53,7 +53,7 @@ def mayAction = {
                 event.getSource(),
                 new MagicMayChoice("Cast a card?"),
                 mayAction,
-                "PN may\$ cast a card with converted mana cost 3 or less from PN's hand without paying its mana cost."
+                "PN may\$ cast a card with converted mana cost 2 or less from PN's hand without paying its mana cost."
             ));
         }
     }
