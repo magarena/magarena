@@ -10,15 +10,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.getPlayers().each({
-                final MagicPlayer player ->
-                player.getPermanents().each({
-                    final MagicPermanent permanent ->
-                    if (permanent.isCreature() && !permanent.hasCounters()) {
-                        game.doAction(new ChangeTurnPTAction(permanent, -2, -2));
-                    }
-                });
-            });
+            for (final MagicPlayer player : game.getPlayers) {
+            for (final MagicPermanent perm : player.getPermanents()) {
+                if (perm.isCreature() && !perm.hasCounters()) {
+                    game.doAction(new ChangeTurnPTAction(perm, -2, -2));
+                }
+            }
+            }
         }
     }
 ]
