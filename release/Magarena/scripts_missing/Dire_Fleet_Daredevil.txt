@@ -1,0 +1,12 @@
+name=Dire Fleet Daredevil
+image=https://magiccards.info/scans/en/rix/99.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={1}{R}
+pt=2/1
+ability=First strike;\
+        When SN enters the battlefield, exile target instant or sorcery card from an opponent's graveyard. You may cast that card this turn, and you may spend mana as though it were mana of any type to cast that spell. If that card would be put into a graveyard this turn, exile it instead.
+timing=main
+oracle=First strike\nWhen Dire Fleet Daredevil enters the battlefield, exile target instant or sorcery card from an opponent's graveyard. You may cast that card this turn, and you may spend mana as though it were mana of any type to cast that spell. If that card would be put into a graveyard this turn, exile it instead.

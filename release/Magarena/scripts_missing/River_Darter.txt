@@ -1,0 +1,11 @@
+name=River Darter
+image=https://magiccards.info/scans/en/rix/47.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={2}{U}
+pt=2/3
+ability=SN can't be blocked by Dinosaurs.
+timing=main
+oracle=River Darter can't be blocked by Dinosaurs.

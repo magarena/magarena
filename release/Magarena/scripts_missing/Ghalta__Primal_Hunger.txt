@@ -1,0 +1,12 @@
+name=Ghalta, Primal Hunger
+image=https://magiccards.info/scans/en/rix/130.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elder,Dinosaur
+cost={10}{G}{G}
+pt=12/12
+ability=SN costs {X} less to cast, where X is the total power of creatures you control.;\
+        Trample
+timing=main
+oracle=Ghalta, Primal Hunger costs {X} less to cast, where X is the total power of creatures you control.\nTrample

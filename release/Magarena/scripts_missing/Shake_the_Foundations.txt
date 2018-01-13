@@ -1,0 +1,9 @@
+name=Shake the Foundations
+image=https://magiccards.info/scans/en/rix/113.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=SN deals 1 damage to each creature without flying.~Draw a card.
+timing=removal
+oracle=Shake the Foundations deals 1 damage to each creature without flying.\nDraw a card.

@@ -1,0 +1,12 @@
+name=Majestic Heliopterus
+image=https://magiccards.info/scans/en/rix/13.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{W}
+pt=2/2
+ability=Flying;\
+        Whenever SN attacks, another target Dinosaur you control gains flying until end of turn.
+timing=main
+oracle=Flying\nWhenever Majestic Heliopterus attacks, another target Dinosaur you control gains flying until end of turn.

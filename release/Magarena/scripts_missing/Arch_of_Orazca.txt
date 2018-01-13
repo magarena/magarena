@@ -1,0 +1,10 @@
+name=Arch of Orazca
+image=https://magiccards.info/scans/en/rix/185.jpg
+value=2.500
+rarity=R
+type=Land
+ability=Ascend;\
+        {T}: Add {C} to your mana pool.;\
+        {5}, {T}: Draw a card. Activate this ability only if you have the city's blessing.
+timing=land
+oracle=Ascend\n{T}: Add {C} to your mana pool.\n{5}, {T}: Draw a card. Activate this ability only if you have the city's blessing.

@@ -1,0 +1,13 @@
+name=Wayward Swordtooth
+image=https://magiccards.info/scans/en/rix/150.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={2}{G}
+pt=5/5
+ability=Ascend;\
+        You may play an additional land on each of your turns.;\
+        SN can't attack or block unless you have the city's blessing.
+timing=main
+oracle=Ascend\nYou may play an additional land on each of your turns.\nWayward Swordtooth can't attack or block unless you have the city's blessing.

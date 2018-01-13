@@ -1,0 +1,12 @@
+name=Fanatical Firebrand
+image=https://magiccards.info/scans/en/rix/101.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Pirate
+cost={R}
+pt=1/1
+ability=Haste;\
+        {T}, Sacrifice SN: It deals 1 damage to target creature or player.
+timing=fmain
+oracle=Haste\n{T}, Sacrifice Fanatical Firebrand: It deals 1 damage to target creature or player.

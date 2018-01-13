@@ -1,0 +1,10 @@
+name=Canal Monitor
+image=https://magiccards.info/scans/en/rix/63.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Lizard
+cost={4}{B}
+pt=5/3
+timing=main
+oracle=NONE

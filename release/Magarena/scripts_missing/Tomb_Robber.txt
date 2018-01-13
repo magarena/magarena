@@ -1,0 +1,12 @@
+name=Tomb Robber
+image=https://magiccards.info/scans/en/rix/87.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={2}{B}
+pt=1/1
+ability=Menace;\
+        {1}, Discard a card: SN explores.
+timing=main
+oracle=Menace\n{1}, Discard a card: Tomb Robber explores.

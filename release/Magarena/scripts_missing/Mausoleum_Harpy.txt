@@ -1,0 +1,13 @@
+name=Mausoleum Harpy
+image=https://magiccards.info/scans/en/rix/78.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Harpy
+cost={4}{B}
+pt=3/3
+ability=Flying;\
+        Ascend;\
+        Whenever another creature you control dies, if you have the city's blessing, put a +1/+1 counter on SN.
+timing=main
+oracle=Flying\nAscend\nWhenever another creature you control dies, if you have the city's blessing, put a +1/+1 counter on Mausoleum Harpy.

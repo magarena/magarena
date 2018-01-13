@@ -1,0 +1,13 @@
+name=Angrath, Minotaur Pirate
+image=https://magiccards.info/scans/en/rix/201.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Angrath
+cost={4}{B}{R}
+loyalty=5
+ability=+2: SN deals 1 damage to target opponent and each creature that player controls.;\
+        −3: Return target Pirate card from your graveyard to the battlefield.;\
+        −11: Destroy all creatures target opponent controls. SN deals damage to that player equal to their total power.
+timing=main
+oracle=+2: Angrath, Minotaur Pirate deals 1 damage to target opponent and each creature that player controls.\n−3: Return target Pirate card from your graveyard to the battlefield.\n−11: Destroy all creatures target opponent controls. Angrath, Minotaur Pirate deals damage to that player equal to their total power.

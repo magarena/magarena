@@ -1,0 +1,9 @@
+name=Enter the Unknown
+image=https://magiccards.info/scans/en/rix/128.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={G}
+effect=Target creature you control explores.~You may play an additional land this turn.
+timing=main
+oracle=Target creature you control explores.\nYou may play an additional land this turn.

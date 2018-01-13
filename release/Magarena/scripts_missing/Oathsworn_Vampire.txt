@@ -1,0 +1,12 @@
+name=Oathsworn Vampire
+image=https://magiccards.info/scans/en/rix/80.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Knight
+cost={1}{B}
+pt=2/2
+ability=SN enters the battlefield tapped.;\
+        You may cast SN from your graveyard if you gained life this turn.
+timing=main
+oracle=Oathsworn Vampire enters the battlefield tapped.\nYou may cast Oathsworn Vampire from your graveyard if you gained life this turn.

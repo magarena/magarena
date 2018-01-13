@@ -1,0 +1,11 @@
+name=Ravenous Chupacabra
+image=https://magiccards.info/scans/en/rix/82.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast,Horror
+cost={2}{B}{B}
+pt=2/2
+ability=When SN enters the battlefield, destroy target creature an opponent controls.
+timing=main
+oracle=When Ravenous Chupacabra enters the battlefield, destroy target creature an opponent controls.

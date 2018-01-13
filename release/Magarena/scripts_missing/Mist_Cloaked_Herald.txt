@@ -1,0 +1,11 @@
+name=Mist-Cloaked Herald
+image=https://magiccards.info/scans/en/rix/43.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={U}
+pt=1/1
+ability=SN can't be blocked.
+timing=main
+oracle=Mist-Cloaked Herald can't be blocked.

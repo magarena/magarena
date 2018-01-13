@@ -1,0 +1,13 @@
+name=Huatli, Radiant Champion
+image=https://magiccards.info/scans/en/rix/159.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Huatli
+cost={2}{G}{W}
+loyalty=3
+ability=+1: Put a loyalty counter on SN for each creature you control.;\
+        −1: Target creature gets +X/+X until end of turn, where X is the number of creatures you control.;\
+        −8: You get an emblem with "Whenever a creature enters the battlefield under your control, you may draw a card."
+timing=main
+oracle=+1: Put a loyalty counter on Huatli, Radiant Champion for each creature you control.\n−1: Target creature gets +X/+X until end of turn, where X is the number of creatures you control.\n−8: You get an emblem with "Whenever a creature enters the battlefield under your control, you may draw a card."

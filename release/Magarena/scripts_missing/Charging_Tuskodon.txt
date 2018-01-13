@@ -1,0 +1,12 @@
+name=Charging Tuskodon
+image=https://magiccards.info/scans/en/rix/97.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{R}{R}
+pt=4/4
+ability=Trample;\
+        If SN would deal combat damage to a player, it deals double that damage to that player instead.
+timing=main
+oracle=Trample\nIf Charging Tuskodon would deal combat damage to a player, it deals double that damage to that player instead.

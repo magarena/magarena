@@ -1,0 +1,11 @@
+name=Grasping Scoundrel
+image=https://magiccards.info/scans/en/rix/74.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={B}
+pt=1/1
+ability=SN gets +1/+0 as long as it's attacking.
+timing=main
+oracle=Grasping Scoundrel gets +1/+0 as long as it's attacking.

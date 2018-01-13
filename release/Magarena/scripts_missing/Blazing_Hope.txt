@@ -1,0 +1,9 @@
+name=Blazing Hope
+image=https://magiccards.info/scans/en/rix/3.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={W}
+effect=Exile target creature with power greater than or equal to your life total.
+timing=removal
+oracle=Exile target creature with power greater than or equal to your life total.

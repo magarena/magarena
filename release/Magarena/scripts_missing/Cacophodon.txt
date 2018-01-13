@@ -1,0 +1,11 @@
+name=Cacophodon
+image=https://magiccards.info/scans/en/rix/123.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{G}
+pt=2/5
+ability=Whenever SN is dealt damage, untap target permanent.
+timing=main
+oracle=Enrage — Whenever Cacophodon is dealt damage, untap target permanent.

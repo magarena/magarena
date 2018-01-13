@@ -1,0 +1,12 @@
+name=Sun-Crested Pterodon
+image=https://magiccards.info/scans/en/rix/27.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={4}{W}
+pt=2/5
+ability=Flying;\
+        SN has vigilance as long as you control another Dinosaur.
+timing=main
+oracle=Flying\nSun-Crested Pterodon has vigilance as long as you control another Dinosaur.

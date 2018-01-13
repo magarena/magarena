@@ -1,0 +1,12 @@
+name=Slippery Scoundrel
+image=https://magiccards.info/scans/en/rix/55.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={2}{U}
+pt=2/2
+ability=Ascend;\
+        As long as you have the city's blessing, SN has hexproof and can't be blocked.
+timing=main
+oracle=Ascend\nAs long as you have the city's blessing, Slippery Scoundrel has hexproof and can't be blocked.

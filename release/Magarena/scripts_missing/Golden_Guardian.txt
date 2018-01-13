@@ -1,0 +1,12 @@
+name=Golden Guardian
+image=https://magiccards.info/scans/en/rix/179a.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=4/4
+ability=Defender;\
+        {2}: SN fights another target creature you control. When SN dies this turn, return it to the battlefield transformed under your control.
+timing=smain
+oracle=Defender\n{2}: Golden Guardian fights another target creature you control. When Golden Guardian dies this turn, return it to the battlefield transformed under your control.

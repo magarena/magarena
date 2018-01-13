@@ -1,0 +1,11 @@
+name=Champion of Dusk
+image=https://magiccards.info/scans/en/rix/64.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Knight
+cost={3}{B}{B}
+pt=4/4
+ability=When SN enters the battlefield, you draw X cards and you lose X life, where X is the number of Vampires you control.
+timing=main
+oracle=When Champion of Dusk enters the battlefield, you draw X cards and you lose X life, where X is the number of Vampires you control.

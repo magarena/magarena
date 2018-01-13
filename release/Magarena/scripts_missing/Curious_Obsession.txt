@@ -1,0 +1,13 @@
+name=Curious Obsession
+image=https://magiccards.info/scans/en/rix/35.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 and has "Whenever this creature deals combat damage to a player, you may draw a card.";\
+        At the beginning of your end step, if you didn't attack with a creature this turn, sacrifice SN.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has "Whenever this creature deals combat damage to a player, you may draw a card."\nAt the beginning of your end step, if you didn't attack with a creature this turn, sacrifice Curious Obsession.

@@ -1,0 +1,10 @@
+name=Form of the Dinosaur
+image=https://magiccards.info/scans/en/rix/103.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={4}{R}{R}
+ability=When SN enters the battlefield, your life total becomes 15.;\
+        At the beginning of your upkeep, SN deals 15 damage to target creature an opponent controls and that creature deals damage equal to its power to you.
+timing=enchantment
+oracle=When Form of the Dinosaur enters the battlefield, your life total becomes 15.\nAt the beginning of your upkeep, Form of the Dinosaur deals 15 damage to target creature an opponent controls and that creature deals damage equal to its power to you.

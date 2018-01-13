@@ -1,0 +1,9 @@
+name=Atzal, Cave of Eternity
+image=https://magiccards.info/scans/en/rix/160b.jpg
+value=2.500
+rarity=R
+type=Legendary,Land
+ability={T}: Add one mana of any color to your mana pool.;\
+        {3}{B}{G}, {T}: Return target creature card from your graveyard to the battlefield.
+timing=land
+oracle={T}: Add one mana of any color to your mana pool.\n{3}{B}{G}, {T}: Return target creature card from your graveyard to the battlefield.

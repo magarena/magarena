@@ -1,0 +1,10 @@
+name=Thunderherd Migration
+image=https://magiccards.info/scans/en/rix/149.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{G}
+ability=As an additional cost to cast SN, reveal a Dinosaur card from your hand or pay {1}.
+effect=Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=As an additional cost to cast Thunderherd Migration, reveal a Dinosaur card from your hand or pay {1}.\nSearch your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

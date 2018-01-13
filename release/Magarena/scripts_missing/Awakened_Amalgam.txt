@@ -1,0 +1,11 @@
+name=Awakened Amalgam
+image=https://magiccards.info/scans/en/rix/175.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of differently named lands you control.
+timing=main
+oracle=Awakened Amalgam's power and toughness are each equal to the number of differently named lands you control.

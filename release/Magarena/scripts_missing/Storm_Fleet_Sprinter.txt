@@ -1,0 +1,12 @@
+name=Storm Fleet Sprinter
+image=https://magiccards.info/scans/en/rix/172.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={1}{U}{R}
+pt=2/2
+ability=Haste;\
+        SN can't be blocked.
+timing=fmain
+oracle=Haste\nStorm Fleet Sprinter can't be blocked.

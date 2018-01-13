@@ -1,0 +1,10 @@
+name=Metzali, Tower of Triumph
+image=https://magiccards.info/scans/en/rix/165b.jpg
+value=2.500
+rarity=R
+type=Legendary,Land
+ability={T}: Add one mana of any color to your mana pool.;\
+        {1}{R}, {T}: SN deals 2 damage to each opponent.;\
+        {2}{W}, {T}: Choose a creature at random that attacked this turn. Destroy that creature.
+timing=land
+oracle={T}: Add one mana of any color to your mana pool.\n{1}{R}, {T}: Metzali, Tower of Triumph deals 2 damage to each opponent.\n{2}{W}, {T}: Choose a creature at random that attacked this turn. Destroy that creature.

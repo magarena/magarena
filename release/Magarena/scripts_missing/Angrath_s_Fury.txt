@@ -1,0 +1,9 @@
+name=Angrath's Fury
+image=https://magiccards.info/scans/en/rix/204.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}{R}
+effect=Destroy target creature. SN deals 3 damage to target player. You may search your library and/or graveyard for a card named Angrath, Minotaur Pirate, reveal it, and put it into your hand. If you search your library this way, shuffle it.
+timing=main
+oracle=Destroy target creature. Angrath's Fury deals 3 damage to target player. You may search your library and/or graveyard for a card named Angrath, Minotaur Pirate, reveal it, and put it into your hand. If you search your library this way, shuffle it.

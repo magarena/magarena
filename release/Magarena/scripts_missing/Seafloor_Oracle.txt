@@ -1,0 +1,11 @@
+name=Seafloor Oracle
+image=https://magiccards.info/scans/en/rix/51.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}{U}
+pt=2/3
+ability=Whenever a Merfolk you control deals combat damage to a player, draw a card.
+timing=main
+oracle=Whenever a Merfolk you control deals combat damage to a player, draw a card.

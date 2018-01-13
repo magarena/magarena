@@ -1,0 +1,9 @@
+name=Release to the Wind
+image=https://magiccards.info/scans/en/rix/46.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{U}
+effect=Exile target nonland permanent. For as long as that card remains exiled, its owner may cast it without paying its mana cost.
+timing=removal
+oracle=Exile target nonland permanent. For as long as that card remains exiled, its owner may cast it without paying its mana cost.

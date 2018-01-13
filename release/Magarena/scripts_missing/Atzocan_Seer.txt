@@ -1,0 +1,12 @@
+name=Atzocan Seer
+image=https://magiccards.info/scans/en/rix/153.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={1}{G}{W}
+pt=2/3
+ability={T}: Add one mana of any color to your mana pool.;\
+        Sacrifice SN: Return target Dinosaur card from your graveyard to your hand.
+timing=main
+oracle={T}: Add one mana of any color to your mana pool.\nSacrifice Atzocan Seer: Return target Dinosaur card from your graveyard to your hand.

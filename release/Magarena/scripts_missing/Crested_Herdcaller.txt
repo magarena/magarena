@@ -1,0 +1,12 @@
+name=Crested Herdcaller
+image=https://magiccards.info/scans/en/rix/126.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={3}{G}{G}
+pt=3/3
+ability=Trample;\
+        When SN enters the battlefield, create a 3/3 green Dinosaur creature token with trample.
+timing=main
+oracle=Trample\nWhen Crested Herdcaller enters the battlefield, create a 3/3 green Dinosaur creature token with trample.

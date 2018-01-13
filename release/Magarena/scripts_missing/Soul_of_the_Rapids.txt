@@ -1,0 +1,12 @@
+name=Soul of the Rapids
+image=https://magiccards.info/scans/en/rix/56.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={3}{U}{U}
+pt=3/2
+ability=Flying;\
+        Hexproof
+timing=main
+oracle=Flying\nHexproof

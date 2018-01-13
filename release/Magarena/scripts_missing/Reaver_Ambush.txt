@@ -1,0 +1,9 @@
+name=Reaver Ambush
+image=https://magiccards.info/scans/en/rix/83.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{B}
+effect=Exile target creature with power 3 or less.
+timing=removal
+oracle=Exile target creature with power 3 or less.

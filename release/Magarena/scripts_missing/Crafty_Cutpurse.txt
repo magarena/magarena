@@ -1,0 +1,12 @@
+name=Crafty Cutpurse
+image=https://magiccards.info/scans/en/rix/33.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={3}{U}
+pt=2/2
+ability=Flash;\
+        When SN enters the battlefield, each token that would be created under an opponent's control this turn is created under your control instead.
+timing=flash
+oracle=Flash\nWhen Crafty Cutpurse enters the battlefield, each token that would be created under an opponent's control this turn is created under your control instead.

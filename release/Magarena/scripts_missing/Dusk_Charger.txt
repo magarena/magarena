@@ -1,0 +1,12 @@
+name=Dusk Charger
+image=https://magiccards.info/scans/en/rix/69.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Horse
+cost={3}{B}
+pt=3/3
+ability=Ascend;\
+        SN gets +2/+2 as long as you have the city's blessing.
+timing=main
+oracle=Ascend\nDusk Charger gets +2/+2 as long as you have the city's blessing.

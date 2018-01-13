@@ -1,0 +1,10 @@
+name=Orazca Raptor
+image=https://magiccards.info/scans/en/rix/108.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dinosaur
+cost={2}{R}{R}
+pt=3/4
+timing=main
+oracle=NONE

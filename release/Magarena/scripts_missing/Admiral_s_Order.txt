@@ -1,0 +1,9 @@
+name=Admiral's Order
+image=https://magiccards.info/scans/en/rix/31.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{U}{U}
+effect=If you attacked with a creature this turn, you may pay {U} rather than pay this spell's mana cost.~Counter target spell.
+timing=counter
+oracle=Raid — If you attacked with a creature this turn, you may pay {U} rather than pay this spell's mana cost.\nCounter target spell.

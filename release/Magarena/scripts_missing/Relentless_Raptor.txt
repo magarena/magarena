@@ -1,0 +1,12 @@
+name=Relentless Raptor
+image=https://magiccards.info/scans/en/rix/169.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={R}{W}
+pt=3/3
+ability=Vigilance;\
+        SN attacks or blocks each combat if able.
+timing=main
+oracle=Vigilance\nRelentless Raptor attacks or blocks each combat if able.

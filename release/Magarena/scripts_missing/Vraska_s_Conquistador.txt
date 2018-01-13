@@ -1,0 +1,11 @@
+name=Vraska's Conquistador
+image=https://magiccards.info/scans/en/rix/199.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Soldier
+cost={1}{B}
+pt=2/1
+ability=Whenever SN attacks or blocks, if you control a Vraska planeswalker, target opponent loses 2 life and you gain 2 life.
+timing=main
+oracle=Whenever Vraska's Conquistador attacks or blocks, if you control a Vraska planeswalker, target opponent loses 2 life and you gain 2 life.

@@ -1,0 +1,12 @@
+name=Voracious Vampire
+image=https://magiccards.info/scans/en/rix/91.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Knight
+cost={2}{B}
+pt=2/2
+ability=Menace;\
+        When SN enters the battlefield, target Vampire you control gets +1/+1 and gains menace until end of turn.
+timing=main
+oracle=Menace\nWhen Voracious Vampire enters the battlefield, target Vampire you control gets +1/+1 and gains menace until end of turn.

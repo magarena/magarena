@@ -1,0 +1,10 @@
+name=Baffling End
+image=https://magiccards.info/scans/en/rix/1.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability=When SN enters the battlefield, exile target creature an opponent controls with converted mana cost 3 or less.;\
+        When SN leaves the battlefield, target opponent creates a 3/3 green Dinosaur creature token with trample.
+timing=enchantment
+oracle=When Baffling End enters the battlefield, exile target creature an opponent controls with converted mana cost 3 or less.\nWhen Baffling End leaves the battlefield, target opponent creates a 3/3 green Dinosaur creature token with trample.

@@ -1,0 +1,11 @@
+name=Thrashing Brontodon
+image=https://magiccards.info/scans/en/rix/148.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={1}{G}{G}
+pt=3/4
+ability={1}, Sacrifice SN: Destroy target artifact or enchantment.
+timing=main
+oracle={1}, Sacrifice Thrashing Brontodon: Destroy target artifact or enchantment.

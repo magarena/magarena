@@ -1,0 +1,11 @@
+name=Giltgrove Stalker
+image=https://magiccards.info/scans/en/rix/131.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={1}{G}
+pt=2/1
+ability=SN can't be blocked by creatures with power 2 or less.
+timing=main
+oracle=Giltgrove Stalker can't be blocked by creatures with power 2 or less.

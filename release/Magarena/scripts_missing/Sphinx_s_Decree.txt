@@ -1,0 +1,9 @@
+name=Sphinx's Decree
+image=https://magiccards.info/scans/en/rix/24.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{W}
+effect=Each opponent can't cast instant or sorcery spells during that player's next turn.
+timing=main
+oracle=Each opponent can't cast instant or sorcery spells during that player's next turn.
