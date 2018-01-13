@@ -5,5 +5,7 @@ rarity=R
 type=Legendary,Land
 ability={T}: Add one mana of any color to your mana pool.;\
         {2}{W}{B}, {T}: Put a creature card exiled with this permanent onto the battlefield under your control.
+transform=Profane Procession
+hidden
 timing=land
 oracle={T}: Add one mana of any color to your mana pool.\n{2}{W}{B}, {T}: Put a creature card exiled with this permanent onto the battlefield under your control.

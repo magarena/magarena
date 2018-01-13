@@ -6,5 +6,7 @@ type=Legendary,Land
 ability={T}: Add one mana of any color to your mana pool.;\
         {1}{R}, {T}: SN deals 2 damage to each opponent.;\
         {2}{W}, {T}: Choose a creature at random that attacked this turn. Destroy that creature.
+transform=Path of Mettle
+hidden
 timing=land
 oracle={T}: Add one mana of any color to your mana pool.\n{1}{R}, {T}: Metzali, Tower of Triumph deals 2 damage to each opponent.\n{2}{W}, {T}: Choose a creature at random that attacked this turn. Destroy that creature.

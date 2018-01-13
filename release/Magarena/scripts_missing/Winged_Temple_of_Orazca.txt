@@ -5,5 +5,7 @@ rarity=R
 type=Legendary,Land
 ability={T}: Add one mana of any color to your mana pool.;\
         {1}{G}{U}, {T}: Target creature you control gains flying and gets +X/+X until end of turn, where X is its power.
+transform=Hadana's Climb
+hidden
 timing=land
 oracle={T}: Add one mana of any color to your mana pool.\n{1}{G}{U}, {T}: Target creature you control gains flying and gets +X/+X until end of turn, where X is its power.

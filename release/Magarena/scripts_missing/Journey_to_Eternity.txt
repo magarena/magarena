@@ -7,6 +7,7 @@ subtype=Aura
 cost={1}{B}{G}
 ability=Enchant creature you control;\
         When enchanted creature dies, return it to the battlefield under your control, then return SN to the battlefield transformed under your control.
+transform=Atzal, Cave of Eternity
 timing=aura
 enchant=default,creature
 oracle=Enchant creature you control\nWhen enchanted creature dies, return it to the battlefield under your control, then return Journey to Eternity to the battlefield transformed under your control.

@@ -5,5 +5,6 @@ rarity=M
 type=Legendary,Artifact
 cost={2}
 ability={1}, {T}: Draw a card, then exile a card from your hand. If cards with five or more different converted mana costs are exiled with SN, you gain 5 life, untap SN, and transform it.
+transform=Sanctum of the Sun
 timing=artifact
 oracle={1}, {T}: Draw a card, then exile a card from your hand. If cards with five or more different converted mana costs are exiled with Azor's Gateway, you gain 5 life, untap Azor's Gateway, and transform it.

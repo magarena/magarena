@@ -6,5 +6,6 @@ type=Legendary,Enchantment
 cost={2}{U}{R}
 ability=Whenever one or more creatures you control deal combat damage to a player, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool.";\
         At the beginning of your end step, if you control five or more artifacts, transform SN.
+transform=Vault of Catlacan
 timing=enchantment
 oracle=Whenever one or more creatures you control deal combat damage to a player, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nAt the beginning of your end step, if you control five or more artifacts, transform Storm the Vault.
