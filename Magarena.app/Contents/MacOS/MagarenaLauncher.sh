@@ -6,10 +6,10 @@
 APPNAME="Magarena"
 
 # java version check
-REQUIRED_VERSION=[7-9].[0-9]
+REQUIRED_VERSION=[8-9].[0-9]
  
 VERSION_TITLE="Cannot launch $APPNAME"
-VERSION_MSG="$APPNAME requires the Java SE 7 JDK or later."
+VERSION_MSG="$APPNAME requires the Java SE 8 JDK or later."
 DOWNLOAD_URL="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 JAVA_VERSION="$(java -version 2>&1 | grep $REQUIRED_VERSION)"
