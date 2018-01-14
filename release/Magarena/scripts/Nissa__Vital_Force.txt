@@ -7,9 +7,8 @@ type=Legendary,Planeswalker
 subtype=Nissa
 cost={3}{G}{G}
 loyalty=5
-ability=+1: Untap target land you control. Until your next turn, it becomes a 5/5 Elemental creature with haste. It's still a land.;\
-        −3: Return target permanent card from your graveyard to your hand.;\
+ability=−3: Return target permanent card from your graveyard to your hand.;\
         −6: You get an emblem with "Whenever a land enters the battlefield under your control, you may draw a card."
 timing=main
+requires_groovy_code
 oracle=+1: Untap target land you control. Until your next turn, it becomes a 5/5 Elemental creature with haste. It's still a land.\n−3: Return target permanent card from your graveyard to your hand.\n−6: You get an emblem with "Whenever a land enters the battlefield under your control, you may draw a card."
-status=needs groovy

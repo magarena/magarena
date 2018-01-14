@@ -5,8 +5,7 @@ value=2.500
 rarity=M
 type=Enchantment
 cost={3}{U}{U}
-ability=Whenever you cast an instant or sorcery spell, create an X/X colorless Construct artifact creature token, where X is that spell's converted mana cost.;\
-        {3}{U}{U}, Exile SN: Return all instant and sorcery cards from your graveyard to your hand. Activate this ability only if you control six or more artifacts.
+ability={3}{U}{U}, Exile SN: Return all instant and sorcery cards from your graveyard to your hand. Activate this ability only if you control six or more artifacts.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever you cast an instant or sorcery spell, create an X/X colorless Construct artifact creature token, where X is that spell's converted mana cost.\n{3}{U}{U}, Exile Metallurgic Summonings: Return all instant and sorcery cards from your graveyard to your hand. Activate this ability only if you control six or more artifacts.
-status=needs groovy
