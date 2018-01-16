@@ -1,0 +1,12 @@
+name=Captain's Hook
+image=https://magiccards.info/scans/en/rix/177.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +2/+0, has menace, and is a Pirate in addition to its other creature types.;\
+        Whenever SN becomes unattached from a permanent, destroy that permanent.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature gets +2/+0, has menace, and is a Pirate in addition to its other creature types.\nWhenever Captain's Hook becomes unattached from a permanent, destroy that permanent.\nEquip {1}

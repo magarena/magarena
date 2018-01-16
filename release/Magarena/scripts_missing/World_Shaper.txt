@@ -1,0 +1,12 @@
+name=World Shaper
+image=https://magiccards.info/scans/en/rix/151.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Shaman
+cost={3}{G}
+pt=3/3
+ability=Whenever SN attacks, you may put the top three cards of your library into your graveyard.;\
+        When SN dies, put all land cards from your graveyard onto the battlefield tapped.
+timing=main
+oracle=Whenever World Shaper attacks, you may put the top three cards of your library into your graveyard.\nWhen World Shaper dies, put all land cards from your graveyard onto the battlefield tapped.

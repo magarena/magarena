@@ -1,0 +1,11 @@
+name=Dusk Legion Zealot
+image=https://magiccards.info/scans/en/rix/70.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={1}{B}
+pt=1/1
+ability=When SN enters the battlefield, you draw a card and you lose 1 life.
+timing=main
+oracle=When Dusk Legion Zealot enters the battlefield, you draw a card and you lose 1 life.

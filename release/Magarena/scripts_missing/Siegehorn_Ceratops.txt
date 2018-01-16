@@ -1,0 +1,11 @@
+name=Siegehorn Ceratops
+image=https://magiccards.info/scans/en/rix/171.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={G}{W}
+pt=2/2
+ability=Whenever SN is dealt damage, put two +1/+1 counters on it.
+timing=main
+oracle=Enrage — Whenever Siegehorn Ceratops is dealt damage, put two +1/+1 counters on it.

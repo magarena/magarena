@@ -1,0 +1,12 @@
+name=Bishop of Binding
+image=https://magiccards.info/scans/en/rix/2.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Cleric
+cost={3}{W}
+pt=1/1
+ability=When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.;\
+        Whenever SN attacks, target Vampire gets +X/+X until end of turn, where X is the power of the exiled card.
+timing=main
+oracle=When Bishop of Binding enters the battlefield, exile target creature an opponent controls until Bishop of Binding leaves the battlefield.\nWhenever Bishop of Binding attacks, target Vampire gets +X/+X until end of turn, where X is the power of the exiled card.

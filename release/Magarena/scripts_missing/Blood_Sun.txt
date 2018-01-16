@@ -1,0 +1,10 @@
+name=Blood Sun
+image=https://magiccards.info/scans/en/rix/92.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=When SN enters the battlefield, draw a card.;\
+        All lands lose all abilities except mana abilities.
+timing=enchantment
+oracle=When Blood Sun enters the battlefield, draw a card.\nAll lands lose all abilities except mana abilities.

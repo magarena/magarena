@@ -1,8 +1,8 @@
 name=Forsaken Sanctuary
-image=https://magiccards.info/scans/en/akh/281.jpg
-image_updated=2017-09-29
+image=https://magiccards.info/scans/en/c17/250.jpg
+image_updated=2018-01-18
 value=2.500
-rarity=C
+rarity=U
 type=Land
 mana=w3b3
 ability=SN enters the battlefield tapped.;\

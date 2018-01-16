@@ -1,0 +1,10 @@
+name=Aquatic Incursion
+image=https://magiccards.info/scans/en/rix/32.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{U}
+ability=When SN enters the battlefield, create two 1/1 blue Merfolk creature tokens with hexproof.;\
+        {3}{U}: Target Merfolk can't be blocked this turn.
+timing=enchantment
+oracle=When Aquatic Incursion enters the battlefield, create two 1/1 blue Merfolk creature tokens with hexproof.\n{3}{U}: Target Merfolk can't be blocked this turn.

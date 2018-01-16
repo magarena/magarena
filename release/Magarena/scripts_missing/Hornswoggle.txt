@@ -1,0 +1,9 @@
+name=Hornswoggle
+image=https://magiccards.info/scans/en/rix/39.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Counter target creature spell. You create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+timing=counter
+oracle=Counter target creature spell. You create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

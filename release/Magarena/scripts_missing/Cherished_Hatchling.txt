@@ -1,0 +1,11 @@
+name=Cherished Hatchling
+image=https://magiccards.info/scans/en/rix/124.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={1}{G}
+pt=2/1
+ability=When SN dies, you may cast Dinosaur spells this turn as though they had flash, and whenever you cast a Dinosaur spell this turn, it gains "When this creature enters the battlefield, you may have it fight another target creature."
+timing=main
+oracle=When Cherished Hatchling dies, you may cast Dinosaur spells this turn as though they had flash, and whenever you cast a Dinosaur spell this turn, it gains "When this creature enters the battlefield, you may have it fight another target creature."

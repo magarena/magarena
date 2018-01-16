@@ -1,0 +1,9 @@
+name=Slaughter the Strong
+image=https://magiccards.info/scans/en/rix/22.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{W}{W}
+effect=Each player chooses any number of creatures he or she controls with total power 4 or less, then sacrifices all other creatures he or she controls.
+timing=main
+oracle=Each player chooses any number of creatures he or she controls with total power 4 or less, then sacrifices all other creatures he or she controls.

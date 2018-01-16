@@ -1,0 +1,10 @@
+name=Induced Amnesia
+image=https://magiccards.info/scans/en/rix/40.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability=When SN enters the battlefield, target player exiles all cards from his or her hand face down, then draws that many cards.;\
+        When SN is put into a graveyard from the battlefield, return the exiled cards to their owner's hand.
+timing=enchantment
+oracle=When Induced Amnesia enters the battlefield, target player exiles all cards from his or her hand face down, then draws that many cards.\nWhen Induced Amnesia is put into a graveyard from the battlefield, return the exiled cards to their owner's hand.

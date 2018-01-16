@@ -1,0 +1,11 @@
+name=Polyraptor
+image=https://magiccards.info/scans/en/rix/144.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Dinosaur
+cost={6}{G}{G}
+pt=5/5
+ability=Whenever SN is dealt damage, create a token that's a copy of SN.
+timing=main
+oracle=Enrage — Whenever Polyraptor is dealt damage, create a token that's a copy of Polyraptor.

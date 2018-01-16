@@ -1,0 +1,11 @@
+name=Everdawn Champion
+image=https://magiccards.info/scans/en/rix/6.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}{W}
+pt=2/2
+ability=Prevent all combat damage that would be dealt to SN.
+timing=main
+oracle=Prevent all combat damage that would be dealt to Everdawn Champion.

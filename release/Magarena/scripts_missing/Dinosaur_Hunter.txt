@@ -1,0 +1,11 @@
+name=Dinosaur Hunter
+image=https://magiccards.info/scans/en/rix/67.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={1}{B}
+pt=2/2
+ability=Whenever SN deals damage to a Dinosaur, destroy that creature.
+timing=main
+oracle=Whenever Dinosaur Hunter deals damage to a Dinosaur, destroy that creature.

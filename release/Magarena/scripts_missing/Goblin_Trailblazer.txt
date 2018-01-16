@@ -1,0 +1,11 @@
+name=Goblin Trailblazer
+image=https://magiccards.info/scans/en/rix/105.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Pirate
+cost={1}{R}
+pt=2/1
+ability=Menace
+timing=main
+oracle=Menace

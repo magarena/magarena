@@ -1,0 +1,9 @@
+name=Strength of the Pack
+image=https://magiccards.info/scans/en/rix/145.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{G}{G}
+effect=Put two +1/+1 counters on each creature you control.
+timing=main
+oracle=Put two +1/+1 counters on each creature you control.

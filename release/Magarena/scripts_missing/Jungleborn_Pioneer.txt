@@ -1,0 +1,11 @@
+name=Jungleborn Pioneer
+image=https://magiccards.info/scans/en/rix/137.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Scout
+cost={2}{G}
+pt=2/2
+ability=When SN enters the battlefield, create a 1/1 blue Merfolk creature token with hexproof.
+timing=main
+oracle=When Jungleborn Pioneer enters the battlefield, create a 1/1 blue Merfolk creature token with hexproof.

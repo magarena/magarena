@@ -1,0 +1,11 @@
+name=Vampire Revenant
+image=https://magiccards.info/scans/en/rix/89.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Spirit
+cost={3}{B}
+pt=3/1
+ability=Flying
+timing=main
+oracle=Flying

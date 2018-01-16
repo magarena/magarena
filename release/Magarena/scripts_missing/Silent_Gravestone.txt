@@ -1,0 +1,10 @@
+name=Silent Gravestone
+image=https://magiccards.info/scans/en/rix/182.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={1}
+ability=Cards in graveyards can't be the targets of spells or abilities.;\
+        {4}, {T}: Exile SN and all cards from all graveyards. Draw a card.
+timing=artifact
+oracle=Cards in graveyards can't be the targets of spells or abilities.\n{4}, {T}: Exile Silent Gravestone and all cards from all graveyards. Draw a card.

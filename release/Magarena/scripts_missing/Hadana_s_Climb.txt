@@ -1,0 +1,10 @@
+name=Hadana's Climb
+image=https://magiccards.info/scans/en/rix/158a.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={1}{G}{U}
+ability=At the beginning of combat on your turn, put a +1/+1 counter on target creature you control. Then if that creature has three or more +1/+1 counters on it, transform SN.
+transform=Winged Temple of Orazca
+timing=enchantment
+oracle=At the beginning of combat on your turn, put a +1/+1 counter on target creature you control. Then if that creature has three or more +1/+1 counters on it, transform Hadana's Climb.

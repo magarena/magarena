@@ -1,0 +1,10 @@
+name=Confiscation Coup
+image=https://magiccards.info/scans/en/kld/41.jpg
+image_updated=2016-10-05
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+requires_groovy_code
+timing=main
+oracle=Choose target artifact or creature. You get {E}{E}{E}{E}, then you may pay an amount of {E} equal to that permanent's converted mana cost. If you do, gain control of it.

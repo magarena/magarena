@@ -1,0 +1,12 @@
+name=Paladin of Atonement
+image=https://magiccards.info/scans/en/rix/16.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Knight
+cost={1}{W}
+pt=1/1
+ability=At the beginning of each upkeep, if you lost life last turn, put a +1/+1 counter on SN.;\
+        When SN dies, you gain life equal to its toughness.
+timing=main
+oracle=At the beginning of each upkeep, if you lost life last turn, put a +1/+1 counter on Paladin of Atonement.\nWhen Paladin of Atonement dies, you gain life equal to its toughness.

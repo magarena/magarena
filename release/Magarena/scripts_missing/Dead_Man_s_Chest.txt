@@ -1,0 +1,12 @@
+name=Dead Man's Chest
+image=https://magiccards.info/scans/en/rix/66.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+ability=Enchant creature an opponent controls;\
+        When enchanted creature dies, exile cards equal to its power from the top of its owner's library. You may cast nonland cards from among them for as long as they remain exiled, and you may spend mana as though it were mana of any type to cast those spells.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature an opponent controls\nWhen enchanted creature dies, exile cards equal to its power from the top of its owner's library. You may cast nonland cards from among them for as long as they remain exiled, and you may spend mana as though it were mana of any type to cast those spells.

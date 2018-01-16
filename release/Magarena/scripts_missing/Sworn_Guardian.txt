@@ -1,0 +1,10 @@
+name=Sworn Guardian
+image=https://magiccards.info/scans/en/rix/58.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={1}{U}
+pt=1/3
+timing=main
+oracle=NONE

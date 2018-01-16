@@ -1,0 +1,11 @@
+name=Angrath's Ambusher
+image=https://magiccards.info/scans/en/rix/202.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Pirate
+cost={2}{B}
+pt=2/3
+ability=SN gets +2/+0 as long as you control an Angrath planeswalker.
+timing=main
+oracle=Angrath's Ambusher gets +2/+0 as long as you control an Angrath planeswalker.

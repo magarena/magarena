@@ -1,0 +1,13 @@
+name=Deadeye Brawler
+image=https://magiccards.info/scans/en/rix/155.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Pirate
+cost={2}{U}{B}
+pt=2/4
+ability=Deathtouch;\
+        Ascend;\
+        Whenever SN deals combat damage to a player, if you have the city's blessing, draw a card.
+timing=main
+oracle=Deathtouch\nAscend\nWhenever Deadeye Brawler deals combat damage to a player, if you have the city's blessing, draw a card.

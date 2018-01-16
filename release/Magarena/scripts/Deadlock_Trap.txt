@@ -1,0 +1,12 @@
+name=Deadlock Trap
+image=https://magiccards.info/scans/en/kld/204.jpg
+image_updated=2016-10-05
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, you get {E}{E}.
+timing=artifact
+requires_groovy_code
+oracle=Deadlock Trap enters the battlefield tapped.\nWhen Deadlock Trap enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Tap target creature or planeswalker. Its activated abilities can't be activated this turn.

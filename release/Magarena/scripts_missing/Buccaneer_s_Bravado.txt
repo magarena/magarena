@@ -1,0 +1,9 @@
+name=Buccaneer's Bravado
+image=https://magiccards.info/scans/en/rix/96.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Choose one — (1) Target creature gets +1/+1 and gains first strike until end of turn. (2) Target Pirate gets +1/+1 and gains double strike until end of turn.
+timing=removal
+oracle=Choose one —\n• Target creature gets +1/+1 and gains first strike until end of turn.\n• Target Pirate gets +1/+1 and gains double strike until end of turn.

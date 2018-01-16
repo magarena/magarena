@@ -1,0 +1,11 @@
+name=Swaggering Corsair
+image=https://magiccards.info/scans/en/rix/119.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={2}{R}
+pt=2/2
+ability=SN enters the battlefield with a +1/+1 counter on it if you attacked with a creature this turn.
+timing=main
+oracle=Raid — Swaggering Corsair enters the battlefield with a +1/+1 counter on it if you attacked with a creature this turn.

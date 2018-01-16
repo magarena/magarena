@@ -1,0 +1,12 @@
+name=Siren Reaver
+image=https://magiccards.info/scans/en/rix/54.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Siren,Pirate
+cost={3}{U}
+pt=3/2
+ability=SN costs {1} less to cast if you attacked with a creature this turn.;\
+        Flying
+timing=main
+oracle=Raid — Siren Reaver costs {1} less to cast if you attacked with a creature this turn.\nFlying

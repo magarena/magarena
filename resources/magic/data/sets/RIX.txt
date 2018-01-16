@@ -11,7 +11,7 @@ Atzocan Seer
 Awakened Amalgam
 Azor's Gateway
 Azor, the Lawbringer
-Aztal, Cave of Eternity
+Atzal, Cave of Eternity
 Baffling End
 Bishop of Binding
 Blazing Hope
@@ -123,6 +123,7 @@ Path of Discovery
 Path of Mettle
 Pirate's Pillage
 Pitiless Plunderer
+Plains
 Plummet
 Polyraptor
 Pride of Conquerors

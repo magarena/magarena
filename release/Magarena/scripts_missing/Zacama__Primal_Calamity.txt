@@ -1,0 +1,15 @@
+name=Zacama, Primal Calamity
+image=https://magiccards.info/scans/en/rix/174.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dinosaur
+cost={6}{R}{G}{W}
+pt=9/9
+ability=Vigilance, reach, trample;\
+        When SN enters the battlefield, if you cast it, untap all lands you control.;\
+        {2}{R}: Zacama deals 3 damage to target creature.;\
+        {2}{G}: Destroy target artifact or enchantment.;\
+        {2}{W}: You gain 3 life.
+timing=main
+oracle=Vigilance, reach, trample\nWhen Zacama, Primal Calamity enters the battlefield, if you cast it, untap all lands you control.\n{2}{R}: Zacama deals 3 damage to target creature.\n{2}{G}: Destroy target artifact or enchantment.\n{2}{W}: You gain 3 life.

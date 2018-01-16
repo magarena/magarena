@@ -1,0 +1,13 @@
+name=Combustible Gearhulk
+image=https://magiccards.info/scans/en/kld/112.jpg
+image_updated=2016-10-05
+value=2.500
+rarity=M
+type=Artifact,Creature
+subtype=Construct
+cost={4}{R}{R}
+pt=6/6
+ability=First strike
+timing=main
+requires_groovy_code
+oracle=First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, put the top three cards of your library into your graveyard, then Combustible Gearhulk deals damage to that player equal to the total converted mana cost of those cards.

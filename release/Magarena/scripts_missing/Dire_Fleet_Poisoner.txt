@@ -1,0 +1,13 @@
+name=Dire Fleet Poisoner
+image=https://magiccards.info/scans/en/rix/68.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Pirate
+cost={1}{B}
+pt=2/2
+ability=Flash;\
+        Deathtouch;\
+        When SN enters the battlefield, target attacking Pirate you control gets +1/+1 and gains deathtouch until end of turn.
+timing=flash
+oracle=Flash\nDeathtouch\nWhen Dire Fleet Poisoner enters the battlefield, target attacking Pirate you control gets +1/+1 and gains deathtouch until end of turn.

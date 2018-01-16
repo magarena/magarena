@@ -1,0 +1,11 @@
+name=Zetalpa, Primal Dawn
+image=https://magiccards.info/scans/en/rix/30.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elder,Dinosaur
+cost={6}{W}{W}
+pt=4/8
+ability=Flying, double strike, vigilance, trample, indestructible
+timing=main
+oracle=Flying, double strike, vigilance, trample, indestructible

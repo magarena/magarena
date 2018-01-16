@@ -1,0 +1,12 @@
+name=Swift Warden
+image=https://magiccards.info/scans/en/rix/146.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Warrior
+cost={1}{G}{G}
+pt=3/3
+ability=Flash;\
+        When SN enters the battlefield, target Merfolk you control gains hexproof until end of turn.
+timing=flash
+oracle=Flash\nWhen Swift Warden enters the battlefield, target Merfolk you control gains hexproof until end of turn.

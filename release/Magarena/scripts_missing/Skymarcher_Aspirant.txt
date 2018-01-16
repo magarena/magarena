@@ -1,0 +1,12 @@
+name=Skymarcher Aspirant
+image=https://magiccards.info/scans/en/rix/21.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Soldier
+cost={W}
+pt=2/1
+ability=Ascend;\
+        SN has flying as long as you have the city's blessing.
+timing=main
+oracle=Ascend\nSkymarcher Aspirant has flying as long as you have the city's blessing.

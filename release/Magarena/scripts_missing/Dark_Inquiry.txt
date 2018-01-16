@@ -1,0 +1,9 @@
+name=Dark Inquiry
+image=https://magiccards.info/scans/en/rix/65.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Target opponent reveals his or her hand. You choose a nonland card from it. That player discards that card.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a nonland card from it. That player discards that card.

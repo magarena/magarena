@@ -1,0 +1,11 @@
+name=Etali, Primal Storm
+image=https://magiccards.info/scans/en/rix/100.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elder,Dinosaur
+cost={4}{R}{R}
+pt=6/6
+ability=Whenever SN attacks, exile the top card of each player's library, then you may cast any number of nonland cards exiled this way without paying their mana costs.
+timing=main
+oracle=Whenever Etali, Primal Storm attacks, exile the top card of each player's library, then you may cast any number of nonland cards exiled this way without paying their mana costs.

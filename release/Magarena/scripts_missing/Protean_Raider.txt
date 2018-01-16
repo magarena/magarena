@@ -1,0 +1,11 @@
+name=Protean Raider
+image=https://magiccards.info/scans/en/rix/167.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Shapeshifter,Pirate
+cost={1}{U}{R}
+pt=2/2
+ability=If you attacked with a creature this turn, you may have SN enter the battlefield as a copy of any creature on the battlefield.
+timing=main
+oracle=Raid — If you attacked with a creature this turn, you may have Protean Raider enter the battlefield as a copy of any creature on the battlefield.

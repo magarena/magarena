@@ -1,0 +1,11 @@
+name=Martyr of Dusk
+image=https://magiccards.info/scans/en/rix/14.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={1}{W}
+pt=2/1
+ability=When SN dies, create a 1/1 white Vampire creature token with lifelink.
+timing=main
+oracle=When Martyr of Dusk dies, create a 1/1 white Vampire creature token with lifelink.

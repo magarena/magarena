@@ -1,0 +1,11 @@
+name=Imperial Ceratops
+image=https://magiccards.info/scans/en/rix/10.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dinosaur
+cost={4}{W}
+pt=3/5
+ability=Whenever SN is dealt damage, you gain 2 life.
+timing=main
+oracle=Enrage — Whenever Imperial Ceratops is dealt damage, you gain 2 life.

@@ -1,0 +1,13 @@
+name=Vraska, Scheming Gorgon
+image=https://magiccards.info/scans/en/rix/197.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Vraska
+cost={4}{B}{B}
+loyalty=5
+ability=+2: Creatures you control get +1/+0 until end of turn.;\
+        −3: Destroy target creature.;\
+        −10: Until end of turn, creatures you control gain deathtouch and "Whenever this creature deals damage to an opponent, that player loses the game."
+timing=main
+oracle=+2: Creatures you control get +1/+0 until end of turn.\n−3: Destroy target creature.\n−10: Until end of turn, creatures you control gain deathtouch and "Whenever this creature deals damage to an opponent, that player loses the game."

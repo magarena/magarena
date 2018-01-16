@@ -1,0 +1,13 @@
+name=Tilonalli's Crown
+image=https://magiccards.info/scans/en/rix/120.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Enchant creature;\
+        When SN enters the battlefield, it deals 1 damage to enchanted creature.;\
+        Enchanted creature gets +3/+0 and has trample.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nWhen Tilonalli's Crown enters the battlefield, it deals 1 damage to enchanted creature.\nEnchanted creature gets +3/+0 and has trample.

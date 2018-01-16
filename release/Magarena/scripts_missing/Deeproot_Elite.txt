@@ -1,0 +1,11 @@
+name=Deeproot Elite
+image=https://magiccards.info/scans/en/rix/127.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Warrior
+cost={1}{G}
+pt=1/1
+ability=Whenever another Merfolk enters the battlefield under your control, put a +1/+1 counter on target Merfolk you control.
+timing=main
+oracle=Whenever another Merfolk enters the battlefield under your control, put a +1/+1 counter on target Merfolk you control.

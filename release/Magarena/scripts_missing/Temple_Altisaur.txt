@@ -1,0 +1,11 @@
+name=Temple Altisaur
+image=https://magiccards.info/scans/en/rix/28.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={4}{W}
+pt=3/4
+ability=If a source would deal damage to another Dinosaur you control, prevent all but 1 of that damage.
+timing=main
+oracle=If a source would deal damage to another Dinosaur you control, prevent all but 1 of that damage.

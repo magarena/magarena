@@ -1,0 +1,13 @@
+name=Waterknot
+image=https://magiccards.info/scans/en/rix/61.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}{U}
+ability=Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
+        Enchanted creature doesn't untap during its controller's untap step.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nWhen Waterknot enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

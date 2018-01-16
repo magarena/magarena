@@ -1,0 +1,12 @@
+name=Forerunner of the Heralds
+image=https://magiccards.info/scans/en/rix/129.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Scout
+cost={3}{G}
+pt=3/2
+ability=When SN enters the battlefield, you may search your library for a Merfolk card, reveal it, then shuffle your library and put that card on top of it.;\
+        Whenever another Merfolk enters the battlefield under your control, put a +1/+1 counter on SN.
+timing=main
+oracle=When Forerunner of the Heralds enters the battlefield, you may search your library for a Merfolk card, reveal it, then shuffle your library and put that card on top of it.\nWhenever another Merfolk enters the battlefield under your control, put a +1/+1 counter on Forerunner of the Heralds.

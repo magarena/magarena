@@ -1,0 +1,10 @@
+name=Liberating Combustion
+image=https://magiccards.info/scans/en/kld/267.jpg
+image_updated=2016-10-05
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{R}
+timing=main
+requires_groovy_code
+oracle=Liberating Combustion deals 6 damage to target creature. You may search your library and/or graveyard for a card named Chandra, Pyrogenius, reveal it, and put it into your hand. If you search your library this way, shuffle it.

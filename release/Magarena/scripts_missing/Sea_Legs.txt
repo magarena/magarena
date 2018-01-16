@@ -1,0 +1,13 @@
+name=Sea Legs
+image=https://magiccards.info/scans/en/rix/50.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+ability=Flash;\
+        Enchant creature;\
+        Enchanted creature gets +0/+2 as long as it's a Pirate. Otherwise, it gets -2/-0.
+timing=flash
+enchant=default,creature
+oracle=Flash\nEnchant creature\nEnchanted creature gets +0/+2 as long as it's a Pirate. Otherwise, it gets -2/-0.

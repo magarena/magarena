@@ -1,0 +1,12 @@
+name=The Immortal Sun
+image=https://magiccards.info/scans/en/rix/180.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+cost={6}
+ability=Players can't activate planeswalkers' loyalty abilities.;\
+        At the beginning of your draw step, draw an additional card.;\
+        Spells you cast cost {1} less to cast.;\
+        Creatures you control get +1/+1.
+timing=artifact
+oracle=Players can't activate planeswalkers' loyalty abilities.\nAt the beginning of your draw step, draw an additional card.\nSpells you cast cost {1} less to cast.\nCreatures you control get +1/+1.

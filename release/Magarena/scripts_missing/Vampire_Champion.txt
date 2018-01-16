@@ -1,0 +1,11 @@
+name=Vampire Champion
+image=https://magiccards.info/scans/en/rix/198.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={3}{B}
+pt=3/3
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

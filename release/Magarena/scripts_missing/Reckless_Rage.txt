@@ -1,0 +1,9 @@
+name=Reckless Rage
+image=https://magiccards.info/scans/en/rix/110.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={R}
+effect=SN deals 4 damage to target creature you don't control and 2 damage to target creature you control.
+timing=removal
+oracle=Reckless Rage deals 4 damage to target creature you don't control and 2 damage to target creature you control.

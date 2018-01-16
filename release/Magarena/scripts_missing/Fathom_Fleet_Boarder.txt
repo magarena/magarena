@@ -1,0 +1,11 @@
+name=Fathom Fleet Boarder
+image=https://magiccards.info/scans/en/rix/71.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Orc,Pirate
+cost={2}{B}
+pt=3/3
+ability=When SN enters the battlefield, you lose 2 life unless you control another Pirate.
+timing=main
+oracle=When Fathom Fleet Boarder enters the battlefield, you lose 2 life unless you control another Pirate.
