@@ -1,17 +1,17 @@
+RIX
+XLN
 HOU
 AKH
 AER
 KLD
-EMN
-SOI
-OGW
-BFZ
 
 # banned: prefix with !
 !Aetherworks Marvel
-!Emrakul, the Promised End
+!Attune with Aether
 !Felidar Guardian
-!Reflector Mage
+!Rogue Refiner
+!Rampaging Ferocidon
+!Ramunap Tuins
 !Smuggler's Copter
 
 # restricted: prefix with *
