@@ -25,7 +25,7 @@
                     (event.getPlayer().getPermanents().any({
                         it.hasType(MagicType.Planeswalker) &&
                         it.hasSubType(MagicSubType.Tezzeret)
-                    }) ? 3 : 1;
+                    })) ? 3 : 1;
                 game.doAction(new ChangeLifeAction(target, -amount));
             });
         }
