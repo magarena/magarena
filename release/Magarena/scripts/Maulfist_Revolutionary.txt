@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{G}{G}
 pt=3/3
-ability=Trample;\
-        When SN enters the battlefield or dies, for each kind of counter on target permanent or player, give that permanent or player another counter of that kind.
+ability=Trample
 timing=main
+requires_groovy_code
 oracle=Trample\nWhen Maulfist Revolutionary enters the battlefield or dies, for each kind of counter on target permanent or player, give that permanent or player another counter of that kind.
-status=needs groovy
