@@ -53,6 +53,7 @@ final MagicTargetChoice TARGET_LAND_YOU_CONTROL = new MagicTargetChoice("target 
                             game.addDelayedAction(new RemoveStaticAction(permanent, PT));
                             game.addDelayedAction(new RemoveStaticAction(permanent, ST));
                             game.addDelayedAction(new RemoveStaticAction(permanent, haste));
+                            game.addDelayedAction(new RemoveTriggerAction(permanent, this));
                         }
                         return MagicEvent.NONE;
                     }
