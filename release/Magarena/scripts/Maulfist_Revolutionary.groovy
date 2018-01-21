@@ -5,7 +5,7 @@ def TARGET_PERMANENT_OR_PLAYER = new MagicTargetChoice(
             return targetType == MagicTargetType.Player || targetType == MagicTargetType.Permanent;
         }
         @Override
-        public boolean accept(final MagicSource source,final MagicPlayer player,final T target) {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
             return true;
         }
     },
