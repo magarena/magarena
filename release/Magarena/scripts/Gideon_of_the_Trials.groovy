@@ -14,7 +14,9 @@ def cantLoseTrigger = {
     return new IfPlayerWouldLoseTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final LoseGameAction loseAction) {
-            if (loseAction.getPlayer().getId() == player.getId()) {
+            if (loseAction.getPlayer().getId() == player.getId() &&
+                loseAction.getPlayer().getPermanents().any({ it.hasType(MagicType.Planeswalker) && it.hasSubType(MagicSubType.Gideon) })) {
+
                 loseAction.setPlayer(MagicPlayer.NONE);
             }
             return MagicEvent.NONE;
