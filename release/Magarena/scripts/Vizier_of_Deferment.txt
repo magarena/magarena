@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=2/2
-ability=Flash;\
-        When SN enters the battlefield, you may exile target creature if it attacked or blocked this turn. Return that card to the battlefield under its owner's control at the beginning of the next end step.
+ability=Flash
 timing=flash
+requires_groovy_code
 oracle=Flash\nWhen Vizier of Deferment enters the battlefield, you may exile target creature if it attacked or blocked this turn. Return that card to the battlefield under its owner's control at the beginning of the next end step.
-status=needs groovy
