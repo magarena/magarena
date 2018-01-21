@@ -8,5 +8,5 @@ cost={3}{B}
 pt=4/5
 ability=When SN enters the battlefield, put two -1/-1 counters on target creature you control.
 timing=main
+requires_groovy_code
 oracle=When Soulstinger enters the battlefield, put two -1/-1 counters on target creature you control.\nWhen Soulstinger dies, you may put a -1/-1 counter on target creature for each -1/-1 counter on Soulstinger.
-status=needs groovy
