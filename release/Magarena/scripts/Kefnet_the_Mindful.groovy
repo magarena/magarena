@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         event.processTargetPermanent(game, {
-            game.doAction(new ShiftCardAction(it, MagicLocationType.Battlefield, MagicLocationType.OwnersHand));
+            game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
         });
     }
 }
