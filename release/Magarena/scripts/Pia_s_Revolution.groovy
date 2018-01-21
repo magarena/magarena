@@ -1,9 +1,8 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        game.doAction(new DealDamageAction(event.getSource(), targetPlayer, 3));
-    }
-    else {
+        game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), 3));
+    } else {
         game.doAction(new ShiftCardAction(event.getRefCard(), MagicLocationType.Graveyard, MagicLocationType.OwnersHand));
     }
 }
@@ -37,7 +36,7 @@ def action = {
                     new MagicMayChoice("Has ${event.getSource()} deal 3 damage to you?"),
                     action,
                     "\$"
-                );
+                ));
             });
         }
     }
