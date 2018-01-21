@@ -6,9 +6,7 @@ type=Legendary,Planeswalker
 subtype=Gideon
 cost={1}{W}{W}
 loyalty=3
-ability=+1: Until your next turn, prevent all damage target permanent would deal.;\
-        0: Until end of turn, SN becomes a 4/4 Human Soldier creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.;\
-        0: You get an emblem with "As long as you control a Gideon planeswalker, you can't lose the game and your opponents can't win the game."
+ability=0: Until end of turn, SN becomes a 4/4 Human Soldier creature with indestructible that's still a planeswalker.~Prevent all damage that would be dealt to SN this turn.;\
 timing=main
+requires_groovy_code
 oracle=+1: Until your next turn, prevent all damage target permanent would deal.\n0: Until end of turn, Gideon of the Trials becomes a 4/4 Human Soldier creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.\n0: You get an emblem with "As long as you control a Gideon planeswalker, you can't lose the game and your opponents can't win the game."
-status=needs groovy
