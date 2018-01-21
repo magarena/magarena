@@ -21,11 +21,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final MagicPlayer target ->
-                final int amount =
-                    (event.getPlayer().getPermanents().any({
-                        it.hasType(MagicType.Planeswalker) &&
-                        it.hasSubType(MagicSubType.Tezzeret)
-                    })) ? 3 : 1;
+                final int amount = (event.getPlayer().controlsPermanent(MagicType.Artifact)) ? 3 : 1;
                 game.doAction(new ChangeLifeAction(target, -amount));
             });
         }
