@@ -1,11 +1,9 @@
-def preventDamageTrigger = {
-    return new IfDamageWouldBeDealtTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            if (damage.getSource() == permanent)
-                damage.prevent();
-            return MagicEvent.NONE;
-        }
+def preventDamageTrigger = new IfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        if (damage.getSource() == permanent)
+            damage.prevent();
+        return MagicEvent.NONE;
     }
 }
 
@@ -39,19 +37,19 @@ def cantLoseTrigger = {
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             outerEvent.processTargetPermanent(outerGame, {
                 outerGame.doAction(new AddTriggerAction(it, preventDamageTrigger));
-            }
 
-            final AtUpkeepTrigger cleanup = new AtUpkeepTrigger() {
-                @Override
-                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-                    if (upkeepPlayer.getId() == outerEvent.getPlayer().getId()) {
-                        game.addDelayedAction(new RemoveTriggerAction(permanent, preventDamageTrigger));
-                        game.addDelayedAction(new RemoveTriggerAction(permanent, this));
+                final AtUpkeepTrigger cleanup = new AtUpkeepTrigger() {
+                    @Override
+                    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+                        if (upkeepPlayer.getId() == outerEvent.getPlayer().getId()) {
+                            game.addDelayedAction(new RemoveTriggerAction(permanent, preventDamageTrigger));
+                            game.addDelayedAction(new RemoveTriggerAction(permanent, this));
+                        }
+                        return MagicEvent.NONE;
                     }
-                    return MagicEvent.NONE;
                 }
-            }
-            game.doAction(new AddTriggerAction(it, cleanup));
+                outerGame.doAction(new AddTriggerAction(it, cleanup));
+            });
         }
     }
     ,
@@ -67,7 +65,7 @@ def cantLoseTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            outerGame.doAction(new AddTriggerAction(cantLoseTrigger(event.getPlayer())));
+            game.doAction(new AddTriggerAction(cantLoseTrigger(event.getPlayer())));
         }
     }
 ]
