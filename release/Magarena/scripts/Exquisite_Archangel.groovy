@@ -8,7 +8,6 @@
                 loseAct.setPlayer(MagicPlayer.NONE);
                 return new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
                     "Exile SN and PN's life total becomes equal to PN's starting life total."
                 );
@@ -20,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.addEvent(new MagicExileSelfEvent(event.getSource(), MagicLocationType.Battlefield));
+            game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
             game.doAction(new ChangeLifeAction(player, player.getStartingLife() - player.getLife()));
         }
     }
