@@ -6,7 +6,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=3/2
-ability=Whenever SN or another artifact you control is put into a graveyard from the battlefield, return to your hand target artifact card in your graveyard with lesser converted mana cost.
 timing=main
+requires_groovy_code
 oracle=Whenever Scrap Trawler or another artifact you control is put into a graveyard from the battlefield, return to your hand target artifact card in your graveyard with lesser converted mana cost.
-status=needs groovy

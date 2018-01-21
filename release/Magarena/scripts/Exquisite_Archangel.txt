@@ -6,8 +6,7 @@ type=Creature
 subtype=Angel
 cost={5}{W}{W}
 pt=5/5
-ability=Flying;\
-        If you would lose the game, instead exile SN and your life total becomes equal to your starting life total.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nIf you would lose the game, instead exile Exquisite Archangel and your life total becomes equal to your starting life total.
-status=needs groovy

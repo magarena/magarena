@@ -6,9 +6,7 @@ type=Legendary,Planeswalker
 subtype=Ajani
 cost={4}{G}{W}
 loyalty=4
-ability=+2: Reveal the top three cards of your library. Put all nonland permanent cards revealed this way into your hand and the rest on the bottom of your library in any order.;\
-        −2: Exile target creature. Its controller gains life equal to its power.;\
-        −9: Put five +1/+1 counters on each creature you control and five loyalty counters on each other planeswalker you control.
+ability=−9: Put five +1/+1 counters on each creature you control and five loyalty counters on each other planeswalker you control.
 timing=main
+requires_groovy_code
 oracle=+2: Reveal the top three cards of your library. Put all nonland permanent cards revealed this way into your hand and the rest on the bottom of your library in any order.\n−2: Exile target creature. Its controller gains life equal to its power.\n−9: Put five +1/+1 counters on each creature you control and five loyalty counters on each other planeswalker you control.
-status=needs groovy
