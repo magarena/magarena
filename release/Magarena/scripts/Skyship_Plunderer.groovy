@@ -1,4 +1,4 @@
-def TARGET_PERMANENT_OR_PLAYER = new MagicTargetChoice() {
+def TARGET_PERMANENT_OR_PLAYER = new MagicTargetChoice(
     new MagicTargetFilterImpl() {
         @Override
         public boolean acceptType(final MagicTargetType targetType) {
@@ -10,7 +10,7 @@ def TARGET_PERMANENT_OR_PLAYER = new MagicTargetChoice() {
         }
     },
     "target permanent or player"
-}
+);
 
 [
     new ThisCombatDamagePlayerTrigger() {
