@@ -219,6 +219,16 @@ public enum CardResource {
     multiLandBox("land/mLandBox.jpg"),
     tokenImageMaskSmall("token/imagemask2.png"),
     tokenImageMaskLarge("token/imagemask.png"),
+    whiteTokenNyx("token/nyx/wcard.png"),
+    whiteTokenNyxText("token/nyx/wcard2.png"),
+    blueTokenNyx("token/nyx/ucard.png"),
+    blueTokenNyxText("token/nyx/ucard2.png"),
+    blackTokenNyx("token/nyx.bcard.png"),
+    blackTokenNyxText("token/nyx/bcard2.png"),
+    redTokenNyx("token/nyx/rcard.png"),
+    redTokenNyxText("token/nyx/rcard2.png"),
+    greenTokenNyx("token/nyx/gcard.png"),
+    greenTokenNyxText("token/nyx/gcard2.png")
     ;
     
 
