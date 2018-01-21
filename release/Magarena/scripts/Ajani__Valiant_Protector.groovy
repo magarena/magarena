@@ -12,13 +12,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList library = event.getPlayer().getLibrary();
-            final MagicCardList nonTarget = library.takeWhile({ !it.hasType(MagicType.Creature) });
-            if (library.any({ it.hasType(MagicType.Creature) }) {
+            def nonTarget = library.takeWhile({ !it.hasType(MagicType.Creature) });
+            if (library.any({ it.hasType(MagicType.Creature) })) {
                 final MagicCard target = library.find({ it.hasType(MagicType.Creature) });
                 game.doAction(new RevealAction(nonTarget.plus(target)));
                 game.doAction(new ShiftCardAction(target, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-            }
-            else {
+            } else {
                 game.doAction(new RevealAction(nonTarget));
             }
             Collections.shuffle(nonTarget);
