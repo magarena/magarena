@@ -8,19 +8,14 @@ def action = {
 }
 
 [
-    new OtherPutIntoGraveyardTrigger() {
+    new OtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MoveCardAction moveAct) {
-            final MagicCard sentCard = moveAct.card;
-            return (!sentCard.isToken() &&
-                sentCard.hasType(MagicType.Artifact) &&
-                moveAct.from(MagicLocationType.Battlefield) &&
-                moveAct.to(MagicLocationType.Graveyard))
-                ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
+            return !died.isToken() && died.hasType(MagicType.Artifact) && died.isOwner(permanent.getController()) ?
                 new MagicEvent(
                     permanent,
                     TARGET_OPPONENT,
-                    sentCard,
+                    died.getCard(),
                     this,
                     "Return RN to PN's hand unless target opponent\$ has SN deal 3 damage to him or her."
                 )
@@ -33,9 +28,10 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,
-                    new MagicMayChoice("Has ${event.getSource()} deal 3 damage to you?"),
+                    new MagicMayChoice("Have ${event.getSource()} deal 3 damage to you?"),
+                    event.getRefCard(),
                     action,
-                    "\$"
+                    ""
                 ));
             });
         }
