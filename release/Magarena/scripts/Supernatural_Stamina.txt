@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={B}
-effect=Until end of turn, target creature gets +2/+0 and gains "When this creature dies, return it to the battlefield tapped under its owner's control."
 timing=removal
+requires_groovy_code
 oracle=Until end of turn, target creature gets +2/+0 and gains "When this creature dies, return it to the battlefield tapped under its owner's control."
-status=needs groovy
