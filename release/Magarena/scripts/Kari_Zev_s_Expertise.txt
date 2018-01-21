@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{R}{R}
-effect=Gain control of target creature or Vehicle until end of turn. Untap it. It gains haste until end of turn.~You may cast a card with converted mana cost 2 or less from your hand without paying its mana cost.
 timing=main
+requires_groovy_code
 oracle=Gain control of target creature or Vehicle until end of turn. Untap it. It gains haste until end of turn.\nYou may cast a card with converted mana cost 2 or less from your hand without paying its mana cost.
-status=needs groovy

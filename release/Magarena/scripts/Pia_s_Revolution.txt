@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}
-ability=Whenever a nontoken artifact is put into your graveyard from the battlefield, return that card to your hand unless target opponent has SN deal 3 damage to him or her.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a nontoken artifact is put into your graveyard from the battlefield, return that card to your hand unless target opponent has Pia's Revolution deal 3 damage to him or her.
-status=needs groovy
