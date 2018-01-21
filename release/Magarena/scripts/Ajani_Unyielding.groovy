@@ -18,8 +18,7 @@
             for (final MagicCard card : cards) {
                 if (!card.hasType(MagicType.Land) && !card.hasType(MagicType.Sorcery) && !card.hasType(MagicType.Instant))  {
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-                }
-                else {
+                } else {
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary));
                 }
             }

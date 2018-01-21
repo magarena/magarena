@@ -11,8 +11,7 @@
                     this,
                     "Exile SN and PN's life total becomes equal to PN's starting life total."
                 );
-            }
-            else {
+            } else {
                 return MagicEvent.NONE;
             }
         }

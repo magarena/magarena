@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().isUntapped()){
                 game.doAction(new ChangeLifeAction(event.getPlayer(), 3));
-            }else{
+            } else {
                 game.doAction(new ChangeLifeAction(event.getPlayer().getOpponent(), -3));
             }
         }

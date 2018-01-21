@@ -37,7 +37,7 @@
                         it
                     ));
                 });
-            }else{
+            } else {
                 event.processTargetPermanent(game, {
                     game.addEvent(new MagicTapEvent(it));
                 });
