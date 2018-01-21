@@ -8,7 +8,7 @@
                 new MagicMayChoice(NEG_TARGET_CREATURE),
                 amount,
                 this,
-                "PN may put ${amount} -1/-1 counter(s) on target creature\$."
+                "PN may\$ put ${amount} -1/-1 counter(s) on target creature\$."
             );
         }
         @Override
