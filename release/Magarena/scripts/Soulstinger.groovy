@@ -1,34 +1,23 @@
-def action = {
-    final int amount ->
-    return {
-        final MagicGame game, final MagicEvent event ->
-        if (event.isYes()) {
-            game.doAction(new ChangeCountersAction(event.getRefPermanent(), MagicCounterType.MinusOne, amount));
-        }
-    }
-}
-
 [
     new ThisDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent diedPermanent) {
+            final int amount = permanent.getCounters(MagicCounterType.MinusOne);
             return new MagicEvent(
                 permanent,
-                NEG_TARGET_CREATURE,
-                permanent.getCounters(MagicCounterType.MinusOne),
+                new MagicMayChoice(NEG_TARGET_CREATURE),
+                amount,
                 this,
-                "PN may put a -1/-1 counters on target creature\$ for each -1/-1 counter on SN."
+                "PN may put ${amount} -1/-1 counter(s) on target creature\$."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                new MagicMayChoice("Put -1/-1 counter?"),
-                event.getTarget(),
-                action(event.getRefInt()),
-                "\$"
-            ));
+            if (event.isYes()) {
+                event.processTargetPermanent(game, {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.MinusOne, event.getRefInt()));
+                });
+            }
         }
     }
 ]
