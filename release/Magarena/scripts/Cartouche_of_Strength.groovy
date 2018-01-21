@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent enchanted = event.getSource().getEnchantedPermanent();
+                final MagicPermanent enchanted = ((MagicPermanent)event.getSource()).getEnchantedPermanent();
                 game.doAction(new DealDamageAction(enchanted, it, enchanted.getPower()));
                 game.doAction(new DealDamageAction(it, enchanted, it.getPower()));
             });
