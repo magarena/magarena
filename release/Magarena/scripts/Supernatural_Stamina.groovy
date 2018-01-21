@@ -3,16 +3,19 @@ def trigger = new ThisDiesTrigger() {
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
         return new MagicEvent(
             permanent,
+            permanent.getOwner(),
             this,
             "Return SN to the battlefield under ${permanent.getOwner()}'s control."
         );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new PlayCardAction(
-            event.getSource(),
-            event.getSource().getOwner(),
-            { TapAction.Enters(it) }
+        final MagicPermanent source = (MagicPermanent)event.getSource();
+        game.doAction(new ReturnCardAction(
+            MagicLocationType.Graveyard,
+            event.getCard(),
+            event.getPlayer(),
+            MagicPlayMod.TAPPED
         ));
     }
 }
