@@ -1,25 +1,3 @@
-def trigger = new ThisDiesTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
-        return new MagicEvent(
-            permanent,
-            permanent.getOwner(),
-            this,
-            "Return SN to the battlefield under ${permanent.getOwner()}'s control."
-        );
-    }
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicPermanent source = (MagicPermanent)event.getSource();
-        game.doAction(new ReturnCardAction(
-            MagicLocationType.Graveyard,
-            event.getCard(),
-            event.getPlayer(),
-            MagicPlayMod.TAPPED
-        ));
-    }
-}
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -36,7 +14,7 @@ def trigger = new ThisDiesTrigger() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeTurnPTAction(it, 2, 0));
-                game.doAction(new AddTurnTriggerAction(it, trigger));
+                game.doAction(new GainAbilityAction(it, MagicAbility.getAbility("When SN dies, return it to the battlefield tapped under its owner's control.")));
             });
         }
     }
