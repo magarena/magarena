@@ -14,7 +14,6 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    // FIXME How to check for "attacked or blocked this turn"?
                     game.doAction(new ExileUntilEndOfTurnAction(it));
                 });
             }
