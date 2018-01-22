@@ -1,4 +1,4 @@
-def Return = MagicAbility.getAbilityList("When SN dies, return it to the battlefield tapped under its owner's control.");
+def Return = MagicAbility.getAbility("When SN dies, return it to the battlefield tapped under its owner's control.");
 
 [
     new MagicSpellCardEvent() {
