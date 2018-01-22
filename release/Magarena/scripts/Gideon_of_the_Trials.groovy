@@ -13,7 +13,7 @@ def cantLoseTrigger = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final LoseGameAction loseAction) {
             if (loseAction.getPlayer().getId() == player.getId() &&
-                loseAction.getPlayer().getPermanents().any({ it.hasType(MagicType.Planeswalker) && it.hasSubType(MagicSubType.Gideon) })) {
+                loseAction.getPlayer().controlsPermanent(planeswalker(MagicSubType.Gideon, Control.You))) {
 
                 loseAction.setPlayer(MagicPlayer.NONE);
             }
