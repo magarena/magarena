@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final int enchantedPower = event.getRefPermanent().getPower();
-                final int targetPower = it.getPower();
-                game.doAction(new DealDamageAction(enchanted, it, enchantedPower));
-                game.doAction(new DealDamageAction(it, enchanted, targetPower));
+                final MagicPermanent enchanted = event.getRefPermanent();
+                game.doAction(new DealDamageAction(enchanted, it, enchanted.getPower()));
+                game.doAction(new DealDamageAction(it, enchanted, it.getPower()));
             });
         }
     }
