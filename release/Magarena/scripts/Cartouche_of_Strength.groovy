@@ -5,17 +5,20 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
+                permanent.getEnchantedPermanent(),
                 this,
-                "PN may\$ have ${permanent.getEnchantedPermanent()} fight target creature an opponent controls.\$"
+                "PN may\$ have ${permanent.getEnchantedPermanent()} fight target creature an opponent controls\$."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent enchanted = ((MagicPermanent)event.getSource()).getEnchantedPermanent();
-                game.doAction(new DealDamageAction(enchanted, it, enchanted.getPower()));
-                game.doAction(new DealDamageAction(it, enchanted, it.getPower()));
+                final int enchantedPower = event.getRefPermanent().getPower();
+                final int targetPower = it.getPower();
+                game.doAction(new DealDamageAction(enchanted, it, enchantedPower));
+                game.doAction(new DealDamageAction(it, enchanted, targetPower));
             });
         }
     }
 ]
+
