@@ -20,7 +20,7 @@ def TARGET_PERMANENT_OR_PLAYER = new MagicTargetChoice(
                 permanent,
                 TARGET_PERMANENT_OR_PLAYER,
                 this,
-                "For each kind of counter on target permanent or player,\$ " +
+                "For each kind of counter on target permanent or player\$, " +
                 "give that permanent or player another counter of that kind."
             );
         }
