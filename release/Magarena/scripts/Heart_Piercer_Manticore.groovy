@@ -13,23 +13,24 @@ def sacrificeAction = {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicEvent sacrificeEvent = new MagicEvent(
                 permanent,
-                new MagicMayChoice("Sacrifice", ANOTHER_CREATURE_YOU_CONTROL),
+                new MagicMayChoice(ANOTHER_CREATURE_YOU_CONTROL),
                 sacrificeAction,
-                "PN may\$ sacrifice another creature PN controls.\$"
+                "PN may\$ sacrifice another creature PN controls\$."
             );
             game.addEvent(sacrificeEvent);
             
-            final int amount = ((MagicPermanent)(sacrificeEvent.getTarget())).getPower();
-
-            return (sacrificeEvent.isYes()) ?
-                new MagicEvent(
+            if (sacrificeEvent.isYes()) {
+                final int amount = ((MagicPermanent)(sacrificeEvent.getTarget())).getPower();
+                return new MagicEvent(
                     permanent,
                     NEG_TARGET_CREATURE_OR_PLAYER,
                     amount,
                     this,
-                    "SN deals ${amount} damage to target creature or player.\$"
-                )
-                : MagicEvent.NONE;
+                    "SN deals ${amount} damage to target creature or player\$."
+                );
+            } else {
+                return MagicEvent.NONE;
+            }
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
