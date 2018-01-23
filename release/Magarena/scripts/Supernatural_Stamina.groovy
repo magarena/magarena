@@ -29,7 +29,7 @@ def trigger = new ThisDiesTrigger() {
                 POS_TARGET_CREATURE,
                 this,
                 "Until end of turn, target creature\$ gets +2/+0 " +
-                "and gains \"When creature dies, return it to the battlefield tapped under its owner's control.\""
+                "and gains \"When this creature dies, return it to the battlefield tapped under its owner's control.\""
             );
         }
         @Override
