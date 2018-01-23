@@ -55,8 +55,8 @@ Thanks to
   frank for extensive play testing and bug reporting
   PalladiaMors, PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a.
   benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
-  Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
-  Mike, and Guest for implementing new cards
+  Fulmene, Tyrael, hong yie, ember hauler, Hector Marin, drooone,
+  jericho.pumpkin, Mike, and Guest for implementing new cards
   ShawnieBoy for implementing new cards, the M logo, and general image enhancements
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
@@ -75,6 +75,10 @@ Thank you for your support and have fun!
 
 Release 1.91 (January 27, 2017)
 ============
+Fulmene
+Melody
+melvin
+ShawnieBoy
 
 Release 1.90 (October 29, 2017)
 ============
