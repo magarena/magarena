@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{B}{B}
-effect=Put a -1/-1 counter on each creature you don't control. You may search your library and/or graveyard for a card named Liliana, Death Wielder, reveal it, and put it into your hand. If you search your library this way, shuffle it.
 timing=main
+requires_groovy_code
 oracle=Put a -1/-1 counter on each creature you don't control. You may search your library and/or graveyard for a card named Liliana, Death Wielder, reveal it, and put it into your hand. If you search your library this way, shuffle it.
-status=needs groovy

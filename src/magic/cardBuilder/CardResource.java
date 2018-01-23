@@ -228,7 +228,11 @@ public enum CardResource {
     redTokenNyx("token/nyx/rcard.png"),
     redTokenNyxText("token/nyx/rcard2.png"),
     greenTokenNyx("token/nyx/gcard.png"),
-    greenTokenNyxText("token/nyx/gcard2.png")
+    greenTokenNyxText("token/nyx/gcard2.png"),
+    artifactTokenNyx("token/nyx/acard.png"),
+    artifactTokenNyxText("token/nyx/acard2.png"),
+    multiTokenNyx("token/nyx/mcard.png"),
+    multiTokenNyxText("token/nyx/mcard2.png")
     ;
     
 

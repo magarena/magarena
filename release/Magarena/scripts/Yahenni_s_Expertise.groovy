@@ -1,30 +1,9 @@
-def CARD_WITH_CMC_LEQ_3_FROM_HAND = new MagicCardFilterImpl() {
-    @Override
-    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-        return target.getConvertedCost() <= 3;
-    }
-    @Override
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType == MagicTargetType.Hand;
-    }
-}
-
-def castAction = {
-    final MagicGame game, final MagicEvent event ->
-    event.processTargetCard(game, {
-        game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), it, MagicLocationType.OwnersHand, MagicLocationType.Graveyard));
-    });
-}
-
-def mayAction = {
+def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        game.addEvent(new MagicEvent(
-            event.getSource(),
-            new MagicFromCardFilterChoice(CARD_WITH_CMC_LEQ_3_FROM_HAND, 1, false, "a card with converted mana cost 3 or less from your hand"),
-            castAction,
-            "\$"
-        ));
+        event.processTargetCard(game, {
+            game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), it, MagicLocationType.OwnersHand, MagicLocationType.Graveyard));
+        });
     }
 }
 
@@ -47,11 +26,15 @@ def mayAction = {
                 }
             }
             }
+
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicMayChoice("Cast a card?"),
-                mayAction,
-                "PN may\$ cast a card with converted mana cost 3 or less from PN's hand without paying its mana cost."
+                new MagicMayChoice(new MagicTargetChoice(
+                    card().cmcLEQ(3).from(MagicTargetType.Hand),
+                    "a card with converted mana cost 3 or less from your hand"
+                )),
+                action,
+                "PN may\$ cast a card with converted mana cost 3 or less from PN's hand\$ without paying its mana cost."
             ));
         }
     }

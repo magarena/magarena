@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Zombies you control get +2/+1 until end of turn.~Other creatures you control get +1/+1 until end of turn.
 timing=removal
+requires_groovy_code
 oracle=Zombies you control get +2/+1 until end of turn. Other creatures you control get +1/+1 until end of turn.
-status=needs groovy

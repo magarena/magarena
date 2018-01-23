@@ -6,8 +6,7 @@ type=Creature
 subtype=Manticore
 cost={2}{R}{R}
 pt=4/3
-ability=When SN enters the battlefield, you may sacrifice another creature. When you do, SN deals damage equal to that creature's power to target creature or player.;\
-        Embalm {5}{R}
+ability=Embalm {5}{R}
 timing=main
+requires_groovy_code
 oracle=When Heart-Piercer Manticore enters the battlefield, you may sacrifice another creature. When you do, Heart-Piercer Manticore deals damage equal to that creature's power to target creature or player.\nEmbalm {5}{R}
-status=needs groovy

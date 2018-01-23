@@ -1,12 +1,26 @@
+def TARGET_PERMANENT_OR_PLAYER = new MagicTargetChoice(
+    new MagicTargetFilterImpl() {
+        @Override
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Player || targetType == MagicTargetType.Permanent;
+        }
+        @Override
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
+            return true;
+        }
+    },
+    "target permanent or player"
+);
+
 [
     new ThisCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicDamage dealtDamage) {
             return new MagicEvent(
                 permanent,
-                new MagicTargetChoice("target permanent or player"),
+                TARGET_PERMANENT_OR_PLAYER,
                 this,
-                "For each kind of counter on target permanent or player,\$ " +
+                "For each kind of counter on target permanent or player\$, " +
                 "give that permanent or player another counter of that kind."
             );
         }

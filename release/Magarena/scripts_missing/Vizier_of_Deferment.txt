@@ -10,4 +10,4 @@ ability=Flash;\
         When SN enters the battlefield, you may exile target creature if it attacked or blocked this turn. Return that card to the battlefield under its owner's control at the beginning of the next end step.
 timing=flash
 oracle=Flash\nWhen Vizier of Deferment enters the battlefield, you may exile target creature if it attacked or blocked this turn. Return that card to the battlefield under its owner's control at the beginning of the next end step.
-status=needs groovy
+status=not supported: no-info
