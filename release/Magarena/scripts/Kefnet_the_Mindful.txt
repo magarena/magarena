@@ -7,8 +7,7 @@ subtype=God
 cost={2}{U}
 pt=5/5
 ability=Flying, indestructible;\
-        SN can't attack or block unless you have seven or more cards in hand.;\
-        {3}{U}: Draw a card, then you may return a land you control to its owner's hand.
+        SN can't attack or block unless you have seven or more cards in hand.
 timing=main
+requires_groovy_code
 oracle=Flying, indestructible\nKefnet the Mindful can't attack or block unless you have seven or more cards in hand.\n{3}{U}: Draw a card, then you may return a land you control to its owner's hand.
-status=needs groovy
