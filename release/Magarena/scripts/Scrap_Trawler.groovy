@@ -1,17 +1,3 @@
-def ARTIFACT_CARD_IN_YOUR_GRAVEYARD_WITH_CMC_LESS_THAN = {
-    final int cmc ->
-    return new MagicCardFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-            return target.hasType(MagicType.Artifact) && target.getConvertedCost() < cmc;
-        }
-        @Override
-        boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-    };
-}
-
 [
     new OtherDiesTrigger() {
         @Override
@@ -24,7 +10,7 @@ def ARTIFACT_CARD_IN_YOUR_GRAVEYARD_WITH_CMC_LESS_THAN = {
             return new MagicEvent(
                 permanent,
                 new MagicTargetChoice(
-                    ARTIFACT_CARD_IN_YOUR_GRAVEYARD_WITH_CMC_LESS_THAN(cmc),
+                    card(MagicType.Artifact).cmcLEQ(cmc).from(MagicTargetType.Graveyard),
                     "target artifact card in your graveyard with converted mana cost less than ${cmc}"
                 ),
                 this,

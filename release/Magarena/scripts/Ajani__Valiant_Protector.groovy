@@ -32,7 +32,7 @@
                 source,
                 POS_TARGET_CREATURE,
                 this,
-                "Put X +1/+1 counters on target creature,\$ where X is your life total. " +
+                "Put X +1/+1 counters on target creature\$, where X is your life total. " +
                 "That creature gains trample until end of turn."
             );
         }

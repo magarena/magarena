@@ -1,4 +1,3 @@
-//Whenever you cast an instant or sorcery spell, create an X/X colorless Construct artifact creature token, where X is that spell's converted mana cost.;\
 [
     new OtherSpellIsCastTrigger() {
         @Override
@@ -14,8 +13,7 @@
                     "PN creates an X/X colorless Construct artifact creature token, where X is RN's converted mana cost."
                 )
                 :
-                MagicEvent.NONE
-                ;
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

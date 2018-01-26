@@ -17,7 +17,7 @@
                 MagicTargetChoice.Negative("target creature or planeswalker"),
                 MagicTapTargetPicker.Tap,
                 this,
-                "Tap target creature or planeswalker.\$ " +
+                "Tap target creature or planeswalker\$. " +
                 "Its activated abilities can't be activated this turn."
             );
         }

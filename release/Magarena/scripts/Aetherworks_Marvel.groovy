@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetCard(game, {
+    event.processChosenCards(game, {
         game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), it, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
         final MagicCardList copyTopCards = new MagicCardList(event.getRefCardList());
         copyTopCards.removeCard(it);
@@ -28,7 +28,7 @@ def action = {
             return new MagicEvent(
                 source,
                 player,
-                new MagicFromCardListChoice(topCards, 1, true), // TODO filter only spell
+                new MagicFromCardListChoice(topCards, 1, true),
                 topCards,
                 action,
                 "Look at the top six cards of your library. " +

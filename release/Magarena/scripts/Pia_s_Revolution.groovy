@@ -31,7 +31,7 @@ def action = {
                     new MagicMayChoice("Have ${event.getSource()} deal 3 damage to you?"),
                     event.getRefCard(),
                     action,
-                    ""
+                    "\$"
                 ));
             });
         }

@@ -6,7 +6,7 @@
                 permanent,
                 damage.getDealtAmount(),
                 this,
-                "When SN deals combat damage to a player, PN gets that many (RN) {E}."
+                "PN gets RN {E}."
             );
         }
         @Override
