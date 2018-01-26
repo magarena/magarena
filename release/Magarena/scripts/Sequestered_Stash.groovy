@@ -33,10 +33,10 @@ def action = {
             game.doAction(new MillLibraryAction(event.getPlayer(), 5));
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicMayChoice(
+                new MagicMayChoice(new MagicTargetChoice(
                     card(MagicType.Artifact).from(MagicTargetType.Graveyard),
                     "an artifact card from your graveyard"
-                ),
+                )),
                 action,
                 "PN may\$ put an artifact card from PN's graveyard\$ on top of PN's library."
             ));
