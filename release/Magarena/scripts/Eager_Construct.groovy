@@ -12,7 +12,7 @@ def action = {
             return new MagicEvent(
                 permanent,
                 this,
-                "When SN enters the battlefield."
+                ""
             );
         }
         @Override

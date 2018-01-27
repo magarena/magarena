@@ -1,24 +1,9 @@
-def putOnTopAction = {
-    final MagicGame game, final MagicEvent event ->
-    event.processTargetCard(game, {
-        game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.TopOfOwnersLibrary));
-    });
-}
-
-def choiceAction = {
+def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        game.addEvent(new MagicEvent(
-            event.getSource(),
-            new MagicFromCardFilterChoice(
-                MagicTargetFilterFactory.card(MagicType.Artifact).from(MagicTargetType.Graveyard),
-                1,
-                false,
-                ""
-            ),
-            putOnTopAction,
-            "\$"
-        ));
+        event.processTargetCard(game, {
+            game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.TopOfOwnersLibrary));
+        });
     }
 }
 
@@ -48,9 +33,12 @@ def choiceAction = {
             game.doAction(new MillLibraryAction(event.getPlayer(), 5));
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicMayChoice("Put an artifact card from your graveyard on top of your library?"),
-                choiceAction,
-                "PN may\$ put an artifact card from PN's graveyard on top of PN's library."
+                new MagicMayChoice(new MagicTargetChoice(
+                    card(MagicType.Artifact).from(MagicTargetType.Graveyard),
+                    "an artifact card from your graveyard"
+                )),
+                action,
+                "PN may\$ put an artifact card from PN's graveyard\$ on top of PN's library."
             ));
         }
     }

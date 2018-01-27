@@ -12,8 +12,8 @@ def cantLoseTrigger = {
     return new IfPlayerWouldLoseTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final LoseGameAction loseAction) {
-            if (loseAction.getPlayer().getId() == player.getId() &&
-                loseAction.getPlayer().controlsPermanent(planeswalker(MagicSubType.Gideon, Control.You))) {
+            if (loseAction.getPlayer().controlsPermanent(planeswalker(MagicSubType.Gideon, Control.You))
+                && loseAction.getPlayer().getId() == player.getId()) {
 
                 loseAction.setPlayer(MagicPlayer.NONE);
             }
@@ -60,7 +60,7 @@ def cantLoseTrigger = {
                 source,
                 this,
                 "PN gets an emblem with " +
-                "\"As long as PN controls a Gideon planeswalker, PN can't lose the game and PN's opponents can't win the game\""
+                "\"As long as PN controls a Gideon planeswalker, PN can't lose the game and PN's opponents can't win the game.\""
             );
         }
         @Override

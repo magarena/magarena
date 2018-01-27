@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Flash),
-        "damage"
+        "lose life"
     ) {
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {

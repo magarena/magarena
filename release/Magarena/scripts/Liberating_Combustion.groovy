@@ -1,4 +1,4 @@
-def CARD_NAMED_CHANDRA_PYROGENIUS_FROM_YOUR_LIBRARY_OR_GRAVEYARD = new MagicCardFilterImpl() {
+def A_CARD_NAMED_CHANDRA_PYROGENIUS_FROM_YOUR_LIBRARY_OR_GRAVEYARD = new MagicCardFilterImpl() {
     @Override
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.getName().equalsIgnoreCase("Chandra, Pyrogenius");
@@ -14,7 +14,7 @@ def searchAction = {
         game.addEvent(new MagicSearchToLocationEvent(
             event,
             new MagicFromCardFilterChoice(
-                CARD_NAMED_CHANDRA_PYROGENIUS_FROM_YOUR_LIBRARY_OR_GRAVEYARD,
+                A_CARD_NAMED_CHANDRA_PYROGENIUS_FROM_YOUR_LIBRARY_OR_GRAVEYARD,
                 1,
                 false,
                 "a card named Chandra, Pyrogenius from your library or graveyard"
@@ -32,7 +32,7 @@ def searchAction = {
                 cardOnStack,
                 NEG_TARGET_CREATURE,
                 this,
-                "SN deals 6 damage to target creature.\$"
+                "SN deals 6 damage to target creature\$."
             );
         }
         @Override
