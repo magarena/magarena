@@ -6,7 +6,7 @@ def NEG_TARGET_RED_CREATURE_OR_RED_PLANESWALKER = new MagicTargetChoice(
         }
     },
     MagicTargetHint.Negative,
-    "target red creature or planeswalker"
+    "target red creature or red planeswalker"
 );
 
 def action = {
