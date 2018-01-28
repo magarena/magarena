@@ -4,8 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}
-ability=SN enters the battlefield with a doom counter on it.;\
-        Whenever you cast a spell with converted mana cost equal to the number of doom counters on SN, SN deals that much damage to target creature or player. Then put a doom counter on SN.
+ability=SN enters the battlefield with a doom counter on it.
 timing=enchantment
+requires_groovy_code
 oracle=Imminent Doom enters the battlefield with a doom counter on it.\nWhenever you cast a spell with converted mana cost equal to the number of doom counters on Imminent Doom, Imminent Doom deals that much damage to target creature or player. Then put a doom counter on Imminent Doom.
-status=needs groovy
