@@ -7,6 +7,7 @@
                 this,
                 "PN's life total becomes equal to PN's starting life total. " +
                 "Lands PN controls don't untap during PN's next untap step."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
