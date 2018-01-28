@@ -20,7 +20,7 @@ def NEG_TARGET_FOREST_GREEN_ENCHANTMENT_OR_GREEN_PLANESWALKER = new MagicTargetC
                 NEG_TARGET_FOREST_GREEN_ENCHANTMENT_OR_GREEN_PLANESWALKER,
                 this,
                 "Destroy target forest, green enchantment, or green planeswalker\$. " +
-                "If that permanent was a Nissa planeswalker, draw a card.
+                "If that permanent was a Nissa planeswalker, draw a card."
             );
         }
         @Override

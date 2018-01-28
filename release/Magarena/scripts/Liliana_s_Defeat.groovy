@@ -18,7 +18,7 @@ def NEG_TARGET_BLACK_CREATURE_OR_BLACK_PLANESWALKER = new MagicTargetChoice(
                 NEG_TARGET_BLACK_CREATURE_OR_BLACK_PLANESWALKER,
                 this,
                 "Destroy target black creature or black planeswalker\$. " +
-                "If that permanent was a Liliana planeswalker, her controller loses 3 life.
+                "If that permanent was a Liliana planeswalker, her controller loses 3 life."
             );
         }
         @Override
