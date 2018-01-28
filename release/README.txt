@@ -80,6 +80,24 @@ Melody
 melvin
 ShawnieBoy
 
+- update Mac launcher to work on SE 9 and require at least SE 8
+
+- added the following cards:
+Aetherflux Reservoir, Aetherworks Marvel, Ajani Unyielding,
+Ajani, Valiant Protector, Cartouche of Strength, Combustible Gearhulk,
+Confiscation Coup, Deadlock Trap, Eager Construct, Empyreal Voyager,
+Exquisite Archangel, Fatal Push, Gideon of the Trials,
+Gonti's Machinations, Hazardous Conditions, Heart-Piercer Manticore,
+In Oketra's Name, Kari Zev's Expertise, Kefnet the Mindful,
+Liberating Combustion, Liliana's Influence, Maulfist Revolutionary,
+Metallurgic Summonings, Midnight Oil, Morbid Curiosity,
+Nissa, Vital Force, Oviya Pashiri, Sage Lifecrafter, Pia's Revolution,
+Rashmi, Eternities Crafter, Rishkar's Expertise, Scrap Trawler,
+Sequestered Stash, Skyship Plunderer, Soul-Scar Mage, Soulstinger,
+Sram's Expertise, Supernatural Stamina, Tezzeret, Master of Metal,
+Tezzeret's Simulacrum, Verdant Crescendo, Welding Sparks,
+Yahenni's Expertise
+
 Release 1.90 (October 29, 2017)
 ============
 kelsioboy
