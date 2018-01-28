@@ -7,6 +7,7 @@
                 this,
                 "All creatures lose indestructible until end of turn. " +
                 "SN deals 5 damage to each creature and each non-Bolas planeswalker."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
