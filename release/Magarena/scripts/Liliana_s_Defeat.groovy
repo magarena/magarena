@@ -2,7 +2,7 @@ def NEG_TARGET_BLACK_CREATURE_OR_BLACK_PLANESWALKER = new MagicTargetChoice(
     new MagicPermanentFilterImpl() {
         @Override
         boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-            return target.hasColor(MagicColor.Black) && (target.hasType(MagicType.Creature) || target.hasType(MagicType.Planeswalker))
+            return target.hasColor(MagicColor.Black) && (target.hasType(MagicType.Creature) || target.hasType(MagicType.Planeswalker));
         }
     },
     MagicTargetHint.Negative,
