@@ -1,6 +1,5 @@
 [
-//Whenever you cast a spell with converted mana cost equal to the number of doom counters on SN, SN deals that much damage to target creature or player. Then put a doom counter on SN.
-    new OtherIsCastTrigger() {
+    new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
             return (spell.getConvertedCost() == permanent.getCounters(MagicCounterType.Doom)) ?
