@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={B}
-effect=Destroy target black creature or black planeswalker. If that permanent was a Liliana planeswalker, her controller loses 3 life.
 timing=main
+requires_groovy_code
 oracle=Destroy target black creature or black planeswalker. If that permanent was a Liliana planeswalker, her controller loses 3 life.
-status=needs groovy
