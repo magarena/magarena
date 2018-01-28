@@ -2,9 +2,9 @@ def NEG_TARGET_FOREST_GREEN_ENCHANTMENT_OR_GREEN_PLANESWALKER = new MagicTargetC
     new MagicPermanentFilterImpl() {
         @Override
         boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-            return target.hasSubType(MagicSubType.Forest)
-                || (target.hasColor(MagicColor.Green)
-                    && (target.hasType(MagicType.Enchantment) || target.hasType(MagicType.Planeswalker)));
+            return target.hasSubType(MagicSubType.Forest) ||
+                (target.hasColor(MagicColor.Green) &&
+                    (target.hasType(MagicType.Enchantment) || target.hasType(MagicType.Planeswalker)));
         }
     },
     MagicTargetHint.Negative,
