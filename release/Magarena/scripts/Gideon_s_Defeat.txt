@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={W}
-effect=Exile target white creature that's attacking or blocking. If it was a Gideon planeswalker, you gain 5 life.
 timing=removal
+requires_groovy_code
 oracle=Exile target white creature that's attacking or blocking. If it was a Gideon planeswalker, you gain 5 life.
-status=needs groovy
