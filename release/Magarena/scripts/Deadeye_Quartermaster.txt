@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={3}{U}
 pt=2/2
-ability=When SN enters the battlefield, you may search your library for an Equipment or Vehicle card, reveal it, put it into your hand, then shuffle your library.
 timing=main
+requires_groovy_code
 oracle=When Deadeye Quartermaster enters the battlefield, you may search your library for an Equipment or Vehicle card, reveal it, put it into your hand, then shuffle your library.
-status=needs groovy
