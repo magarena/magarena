@@ -6,8 +6,7 @@ type=Creature
 subtype=Horror
 cost={1}{B}
 pt=0/4
-ability=SN gets +1/+0 for each card with cycling in your graveyard.;\
-        Cycling {2}
+ability=Cycling {2}
 timing=main
 oracle=Vile Manifestation gets +1/+0 for each card with cycling in your graveyard.\nCycling {2}
 status=needs groovy
