@@ -8,6 +8,10 @@ def action = {
 [
     new OtherSpellIsCastTrigger() {
         @Override
+        public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
+            return spell.isSpell(MagicType.Planeswalker) && spell.isSpell(MagicSubType.Bolas);
+        }
+        @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
             return new MagicEvent(
                 permanent,
