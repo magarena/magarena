@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        game.processTargetPermanent(game, {
+        event.processTargetPermanent(game, {
             game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
         });
     } else {
