@@ -29,7 +29,7 @@ def A_CARD_NAMED_NICOL_BOLAS_THE_DECEIVER_FROM_YOUR_LIBRARY_OR_GRAVEYARD = new M
                         1,
                         false,
                         "a card named Nicol Bolas, the Deceiver from your library or graveyard"
-                    )
+                    ),
                     MagicLocationType.OwnersHand
                 ));
             }
