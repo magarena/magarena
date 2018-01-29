@@ -6,7 +6,6 @@ type=Creature
 subtype=Dinosaur
 cost={2}{G}
 pt=3/2
-ability=Whenever SN enters the battlefield or attacks, you may exile target card from a graveyard. If a creature card is exiled this way, you gain 2 life. If a noncreature card is exiled this way, SN gets +1/+1 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Whenever Deathgorge Scavenger enters the battlefield or attacks, you may exile target card from a graveyard. If a creature card is exiled this way, you gain 2 life. If a noncreature card is exiled this way, Deathgorge Scavenger gets +1/+1 until end of turn.
-status=needs groovy
