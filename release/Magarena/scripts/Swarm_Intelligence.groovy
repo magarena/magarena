@@ -11,7 +11,7 @@
                 new MagicMayChoice(),
                 cardOnStack,
                 this,
-                "PN may copy RN. PN may choose new targets for the copy."
+                "PN may\$ copy RN. PN may choose new targets for the copy."
             );
         }
         @Override
