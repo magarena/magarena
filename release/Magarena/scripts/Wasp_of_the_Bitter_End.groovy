@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
         game.doAction(new DestroyAction(it));
-    }
+    });
 }
 
 [
