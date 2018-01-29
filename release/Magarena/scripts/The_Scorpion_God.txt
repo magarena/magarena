@@ -6,9 +6,7 @@ type=Legendary,Creature
 subtype=God
 cost={3}{B}{R}
 pt=6/5
-ability=Whenever a creature with a -1/-1 counter on it dies, draw a card.;\
-        {1}{B}{R}: Put a -1/-1 counter on another target creature.;\
-        When SN dies, return it to its owner's hand at the beginning of the next end step.
+ability={1}{B}{R}: Put a -1/-1 counter on another target creature.
 timing=main
+requires_groovy_code
 oracle=Whenever a creature with a -1/-1 counter on it dies, draw a card.\n{1}{B}{R}: Put a -1/-1 counter on another target creature.\nWhen The Scorpion God dies, return it to its owner's hand at the beginning of the next end step.
-status=needs groovy
