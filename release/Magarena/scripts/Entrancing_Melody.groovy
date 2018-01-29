@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 new MagicTargetChoice(
-                    new MagicCMCPermanentFilter(permanent(MagicType.Creature), Operator.EQUAL, x),
+                    new MagicCMCPermanentFilter(permanent(MagicType.Creature, Control.Any), Operator.EQUAL, x),
                     MagicTargetHint.Negative,
                     "target creature with converted mana cost ${x}"
                 ),
