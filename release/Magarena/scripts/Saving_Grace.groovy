@@ -19,7 +19,7 @@ def redirectTrigger = {
                 permanent,
                 permanent.getEnchantedPermanent(),
                 this,
-                "All damage that would be dealt this turn to PN and permanents PN controls is dealt to enchanted creature instead."
+                "All damage that would be dealt this turn to PN and permanents PN controls is dealt to RN instead."
             );
         }
         @Override
