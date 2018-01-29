@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         event.processTargetCard(game, {
-            if (it.hasType(MagicType.Creature) {
+            if (it.hasType(MagicType.Creature)) {
                 game.doAction(new ChangeLifeAction(event.getPlayer(), 2));
             } else {
                 game.doAction(new ChangeTurnPTAction(event.getRefPermanent(), 1, 1));
