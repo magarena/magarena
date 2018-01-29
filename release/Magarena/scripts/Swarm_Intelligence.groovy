@@ -1,15 +1,15 @@
 [
     new OtherSpellIsCastTrigger() {
         @Override
-        public boolean accept(final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
-            return cardOnStack.isInstantOrSorcerySpell();
+        public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
+            return spell.isInstantOrSorcerySpell();
         }
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
             return new MagicEvent(
-                cardOnStack,
+                spell,
                 new MagicMayChoice(),
-                cardOnStack,
+                spell,
                 this,
                 "PN may\$ copy RN. PN may choose new targets for the copy."
             );
