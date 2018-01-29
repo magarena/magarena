@@ -1,5 +1,5 @@
 [
-    new IfDamageWouldBeDealtTrigger() {
+    new IfDamageWouldBeDealtTrigger(MagicTrigger.INCREASE_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (permanent.isController(damage.getSource().getController())) {
