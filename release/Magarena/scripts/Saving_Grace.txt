@@ -7,9 +7,8 @@ subtype=Aura
 cost={1}{W}
 ability=Flash;\
         Enchant creature you control;\
-        When SN enters the battlefield, all damage that would be dealt this turn to you and permanents you control is dealt to enchanted creature instead.;\
         Enchanted creature gets +0/+3.
 timing=flash
 enchant=toughness,creature you control
+requires_groovy_code
 oracle=Flash\nEnchant creature you control\nWhen Saving Grace enters the battlefield, all damage that would be dealt this turn to you and permanents you control is dealt to enchanted creature instead.\nEnchanted creature gets +0/+3.
-status=needs groovy
