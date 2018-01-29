@@ -27,7 +27,7 @@ def action = {
             final MagicCardList topCards = player.getLibrary().getCardsFromTop(5);
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                MagicFromCardListChoice(
+                new MagicFromCardListChoice(
                     topCards.findAll({
                         it.hasSubType(MagicSubType.Dinosaur) || it.hasType(MagicType.Land)
                     }),
