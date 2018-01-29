@@ -1,6 +1,6 @@
 def redirectTrigger = {
     final MagicPlayer player ->
-    return new IfDamageWouldBeDealtTrigger(MagicTriggger.REDIRECT_DAMAGE) {
+    return new IfDamageWouldBeDealtTrigger(MagicTrigger.REDIRECT_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (player.isFriend(damage.getTarget())) {
