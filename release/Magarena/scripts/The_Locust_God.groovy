@@ -6,8 +6,8 @@ def DelayedTrigger = {
             game.addDelayedAction(new RemoveTriggerAction(this));
             return new MagicEvent(
                 game.createDelayedSource(staleSource, stalePlayer),
-                this,
                 refCard,
+                this,
                 "Return RN to PN's hand."
             );
         }
@@ -23,9 +23,9 @@ def DelayedTrigger = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent source, final MagicPermanent died) {
             return new MagicEvent(
-                permanent,
-                permanent.getOwner(),
-                permanent.getCard(),
+                source,
+                source.getOwner(),
+                source.getCard(),
                 this,
                 "Return SN to PN's hand at the beginning of the next end step."
             );
