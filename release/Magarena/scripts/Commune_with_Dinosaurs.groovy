@@ -28,7 +28,7 @@ def action = {
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 MagicFromCardListChoice(
-                    topCards.find({
+                    topCards.findAll({
                         it.hasSubType(MagicSubType.Dinosaur) || it.hasType(MagicType.Land)
                     }),
                     1,
