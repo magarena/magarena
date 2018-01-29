@@ -8,7 +8,7 @@
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return game.getPlayers().any({
                 final MagicPlayer player ->
-                player.getPermanents.any({
+                player.getPermanents().any({
                     final MagicPermanent permanent ->
                     permanent.hasType(MagicType.Creature) && permanent.getCounters(MagicCounterType.MinusOne) > 0;
                 });
