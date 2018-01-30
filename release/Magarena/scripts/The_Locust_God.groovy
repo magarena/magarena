@@ -1,15 +1,20 @@
 def DelayedTrigger = {
-    final MagicSource staleSource, final MagicPlayer stalePlayer, final MagicCard refCard ->
+    final MagicSource staleSource, final MagicPlayer stalePlayer, final MagicCard staleCard ->
     return new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             game.addDelayedAction(new RemoveTriggerAction(this));
-            return new MagicEvent(
-                game.createDelayedSource(staleSource, stalePlayer),
-                refCard,
-                this,
-                "Return RN to PN's hand."
-            );
+
+            final MagicCard mappedCard = staleCard.getOwner().map(game).getGraveyard().getCard(staleCard.getId());
+
+            return mappedCard.isInGraveyard() ?
+                new MagicEvent(
+                    game.createDelayedSource(staleSource, stalePlayer),
+                    refCard,
+                    this,
+                    "Return RN to PN's hand."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
