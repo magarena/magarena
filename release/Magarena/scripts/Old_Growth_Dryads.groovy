@@ -21,7 +21,8 @@
                         false,
                         "a basic land card from your library"
                     ),
-                    MagicPlayMod.TAPPED) {
+                    MagicPlayMod.TAPPED)
+                );
             }
         }
     }
