@@ -26,7 +26,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
             });
-            game.getPlayers().each({
+            game.getAPNAP().each({
                 final MagicPlayer player ->
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event.getSource(),
