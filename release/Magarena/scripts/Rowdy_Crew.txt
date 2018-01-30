@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Pirate
 cost={2}{R}{R}
 pt=3/3
-ability=Trample;\
-        When SN enters the battlefield, draw three cards, then discard two cards at random. If two cards that share a card type are discarded this way, put two +1/+1 counters on SN.
+ability=Trample
 timing=main
+requires_groovy_code
 oracle=Trample\nWhen Rowdy Crew enters the battlefield, draw three cards, then discard two cards at random. If two cards that share a card type are discarded this way, put two +1/+1 counters on Rowdy Crew.
-status=needs groovy
