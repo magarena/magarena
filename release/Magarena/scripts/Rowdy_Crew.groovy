@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DrawAction(event.getPlayer(), 3));
             game.addEvent(MagicDiscardEvent.Random(
-                event.getsource(),
+                event.getSource(),
                 2
             ));
             MagicCardList sentCards = event.getPlayer().getGraveyard().getCardsFromTop(2);
