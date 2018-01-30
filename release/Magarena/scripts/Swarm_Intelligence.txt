@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={6}{U}
-ability=Whenever you cast an instant or sorcery spell, you may copy that spell. You may choose new targets for the copy.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever you cast an instant or sorcery spell, you may copy that spell. You may choose new targets for the copy.
-status=needs groovy

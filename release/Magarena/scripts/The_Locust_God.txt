@@ -8,8 +8,7 @@ cost={4}{U}{R}
 pt=4/4
 ability=Flying;\
         Whenever you draw a card, create a 1/1 blue and red Insect creature token with flying and haste.;\
-        {2}{U}{R}: Draw a card, then discard a card.;\
-        When SN dies, return it to its owner's hand at the beginning of the next end step.
+        {2}{U}{R}: Draw a card, then discard a card.
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever you draw a card, create a 1/1 blue and red Insect creature token with flying and haste.\n{2}{U}{R}: Draw a card, then discard a card.\nWhen The Locust God dies, return it to its owner's hand at the beginning of the next end step.
-status=needs groovy

@@ -6,8 +6,7 @@ type=Creature
 subtype=Insect,Horror
 cost={1}{B}
 pt=2/1
-ability=Flying;\
-        Whenever you cast a Bolas planeswalker spell, you may sacrifice SN. If you do, destroy target creature.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever you cast a Bolas planeswalker spell, you may sacrifice Wasp of the Bitter End. If you do, destroy target creature.
-status=needs groovy

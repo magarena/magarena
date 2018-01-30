@@ -1,0 +1,10 @@
+name=1/1 blue and red Insect creature token with flying and haste
+token=Insect
+image=https://magiccards.info/extras/token/hour-of-devastation/insect.jpg
+value=1
+type=Creature
+subtype=Insect
+color=ur
+pt=1/1
+ability=Flying, haste
+oracle=Flying, haste

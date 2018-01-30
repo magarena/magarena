@@ -6,7 +6,6 @@ type=Creature
 subtype=Crocodile
 cost={2}{G}{G}
 pt=4/4
-ability=As long as a creature has a -1/-1 counter on it, SN has vigilance and deathtouch.
 timing=main
+requires_groovy_code
 oracle=As long as a creature has a -1/-1 counter on it, Tenacious Hunter has vigilance and deathtouch.
-status=needs groovy
