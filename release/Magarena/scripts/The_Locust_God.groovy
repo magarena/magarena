@@ -10,7 +10,7 @@ def DelayedTrigger = {
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
                     game.createDelayedSource(staleSource, stalePlayer),
-                    refCard,
+                    mappedCard,
                     this,
                     "Return RN to PN's hand."
                 ):
