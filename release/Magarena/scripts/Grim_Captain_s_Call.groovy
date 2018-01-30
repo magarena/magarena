@@ -1,3 +1,10 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    event.processTargetCard(game, {
+        game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.OwnersHand));
+    });
+}
+
 [
     new MagicSpellCardEvent() {
         @Override
