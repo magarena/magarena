@@ -1,6 +1,6 @@
 [
     new MagicStatic(
-        MagicLayer.Ability
+        MagicLayer.Ability,
         permanent(MagicType.Creature, Control.You)
     ) {
         @Override
