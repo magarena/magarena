@@ -17,7 +17,8 @@
                 source,
                 new MagicTargetChoice("target nonbasic land an opponent controls"),
                 this,
-                "Destroy target nonbasic land an opponent controls\$."
+                "Destroy target nonbasic land an opponent controls\$. " +
+                "Each player searches his or her library for a basic land card, puts it onto the battle field, then shuffles his or her library."
             );
         }
         @Override
