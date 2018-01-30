@@ -26,9 +26,10 @@
                 game.doAction(new DestroyAction(it));
             });
             game.getPlayers().each({
+                final MagicPlayer player ->
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event.getSource(),
-                    it,
+                    player,
                     new MagicFromCardFilterChoice(
                         BASIC_LAND_CARD_FROM_LIBRARY,
                         1,
