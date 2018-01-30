@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={R}
-effect=Target creature gets +2/+0 until end of turn. If you control a Huatli planeswalker, that creature gets +4/+0 until end of turn instead.
 timing=removal
+requires_groovy_code
 oracle=Target creature gets +2/+0 until end of turn. If you control a Huatli planeswalker, that creature gets +4/+0 until end of turn instead.
-status=needs groovy
