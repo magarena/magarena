@@ -12,7 +12,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getCreaturesAttackedThisTurn() > 0;
+            final int amount = (event.getPlayer().getCreaturesAttackedThisTurn() > 0) ? 6 : 3;
             event.processTargetPermanent(game, {
                 game.doAction(new DealDamageAction(event.getSource(), it, amount));
             });
