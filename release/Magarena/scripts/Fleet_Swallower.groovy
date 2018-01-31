@@ -12,7 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MillLibraryAction(it, (it.getLibrary().size()+1) / 2));
+                final int amount = (it.getLibrary().size() + 1).intdiv(2);
+                game.doAction(new MillLibraryAction(it, amount));
             });
         }
     }
