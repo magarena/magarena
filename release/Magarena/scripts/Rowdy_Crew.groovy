@@ -16,7 +16,7 @@
             final MagicCardList toDiscard = hand.getRandomCards(2);
 
             toDiscard.each {
-                game.doAction(new DiscardAction(event.getPlayer(), it));
+                game.doAction(new DiscardCardAction(event.getPlayer(), it));
             }
 
             if (MagicType.ALL_CARD_TYPES.any({
