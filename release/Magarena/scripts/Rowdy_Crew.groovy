@@ -12,13 +12,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DrawAction(event.getPlayer(), 3));
-            game.addEvent(MagicDiscardEvent.Random(
-                event.getSource(),
-                2
-            ));
-            MagicCardList sentCards = event.getPlayer().getGraveyard().getCardsFromTop(2);
+            final MagicCardList hand = new MagicCardList(event.getPlayer().getHand());
+            final MagicCardList toDiscard = hand.getRandomCards(2);
+
+            toDiscard.each {
+                game.doAction(new DiscardAction(event.getPlayer(), it));
+            }
+
             if (MagicType.ALL_CARD_TYPES.any({
-                final MagicType type -> sentCards.every({ it.hasType(type) })
+                final MagicType type -> toDiscard.every({ it.hasType(type) })
             })) {
 
                 game.doAction(new ChangeCountersAction(event.getSource(), MagicCounterType.PlusOne, 2));
