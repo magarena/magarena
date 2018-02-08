@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={3}{B}
 pt=3/3
-ability=When SN enters the battlefield, destroy target creature an opponent controls that was dealt damage this turn.
 timing=main
+requires_groovy_code
 oracle=When Fathom Fleet Cutthroat enters the battlefield, destroy target creature an opponent controls that was dealt damage this turn.
-status=needs groovy

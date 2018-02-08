@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}
-effect=Return a Pirate card from your graveyard to your hand, then do the same for Vampire, Dinosaur, and Merfolk.
 timing=main
+requires_groovy_code
 oracle=Return a Pirate card from your graveyard to your hand, then do the same for Vampire, Dinosaur, and Merfolk.
-status=needs groovy

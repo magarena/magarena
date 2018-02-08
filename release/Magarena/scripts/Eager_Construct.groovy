@@ -17,7 +17,7 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.getPlayers().each({
+            game.getAPNAP().each({
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     (MagicPlayer)it,

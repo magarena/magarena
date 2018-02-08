@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{U}
-effect=Draw two cards. Then discard a card unless you attacked with a creature this turn.
 timing=main
+requires_groovy_code
 oracle=Draw two cards. Then discard a card unless you attacked with a creature this turn.
-status=needs groovy

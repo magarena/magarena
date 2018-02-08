@@ -6,9 +6,8 @@ type=Artifact
 subtype=Vehicle
 cost={4}
 pt=2/10
-ability=When SN attacks, exile it at end of combat, then return it to the battlefield transformed under your control.;\
-        Crew 4
+ability=Crew 4
 transform=Conqueror's Foothold
 timing=artifact
+requires_groovy_code
 oracle=When Conqueror's Galleon attacks, exile it at end of combat, then return it to the battlefield transformed under your control.\nCrew 4
-status=needs groovy
