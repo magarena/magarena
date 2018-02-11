@@ -9,4 +9,3 @@ ability={1}{B}, Pay 2 life: Draw a card.;\
 transform=Temple of Aclazotz
 timing=enchantment
 oracle={1}{B}, Pay 2 life: Draw a card.\nAt the beginning of your upkeep, if you have 5 or less life, you may transform Arguel's Blood Fast.
-status=needs other half
