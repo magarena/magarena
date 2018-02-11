@@ -1,9 +1,7 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(
-            MagicTiming.Removal,
-            "Transform"
-        )
+        new MagicActivationHints(MagicTiming.Removal),
+        "Transform"
     ) {
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
