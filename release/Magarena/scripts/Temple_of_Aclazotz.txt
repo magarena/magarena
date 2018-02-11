@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Legendary,Land
 ability={T}: Add {B} to your mana pool.
-        {T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.
 transform=Arguel's Blood Fast
 hidden
 timing=land
