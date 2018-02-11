@@ -9,4 +9,3 @@ transform=Treasure Map
 hidden
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{T}, Sacrifice a Treasure: Draw a card.
-status=needs other half
