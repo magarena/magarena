@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new ChangeLifeAction(event.getPlayer(), event.getRefInt()));
-            game.doAction(new ShiftCardAction(event.getCard(), MagicLocationType.Stack, MagicLocationType.BottomOfOwnersLibrary));
+            game.doAction(new ShiftCardAction(event.getCardOnStack().getCard(), MagicLocationType.Stack, MagicLocationType.BottomOfOwnersLibrary));
         }
     }
 ]
