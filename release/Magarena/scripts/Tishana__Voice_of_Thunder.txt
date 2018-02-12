@@ -7,8 +7,7 @@ subtype=Merfolk,Shaman
 cost={5}{G}{U}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of cards in your hand.;\
-        You have no maximum hand size.;\
-        When Tishana enters the battlefield, draw a card for each creature you control.
+        When SN enters the battlefield, draw a card for each creature you control.
 timing=main
+requires_groovy_code=Spellbook
 oracle=Tishana, Voice of Thunder's power and toughness are each equal to the number of cards in your hand.\nYou have no maximum hand size.\nWhen Tishana enters the battlefield, draw a card for each creature you control.
-status=needs groovy
