@@ -33,7 +33,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCardList topCards = player.getCardsFromTop(4);
+            final MagicCardList topCards = player.getLibrary().getCardsFromTop(4);
             game.doAction(new LookAction(topCards, player, "top four cards of your library"));
             game.addEvent(new MagicEvent(
                 event.getSource(),
