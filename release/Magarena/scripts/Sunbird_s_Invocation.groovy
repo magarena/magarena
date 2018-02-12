@@ -28,9 +28,9 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int cmc = event.getRefInt();
-            final MagicCardList revealedCards = player.getLibrary().getCardsFromTop(cmc);
+            final MagicCardList revealedCards = event.getPlayer().getLibrary().getCardsFromTop(cmc);
             game.addEvent(new MagicEvent(
-                source,
+                event.getSource(),
                 new MagicMayChoice(new MagicFromCardListChoice(revealedCards, 1, false)),
                 revealedCards,
                 action,
