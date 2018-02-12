@@ -1,12 +1,14 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
+    final MagicCardList topCards = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
         game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), it, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
-        final MagicCardList copyTopCards = new MagicCardList(event.getRefCardList());
-        copyTopCards.removeCard(it);
-        copyTopCards.shuffle();
-        copyTopCards.each({ game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary)) });
+        topCards.removeCard(it);
     });
+    topCards.shuffle();
+    topCards.each {
+        game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
+    }
 }
 
 [
@@ -23,18 +25,25 @@ def action = {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicPlayer player = source.getController();
-            final MagicCardList topCards = player.getLibrary().getCardsFromTop(6);
             return new MagicEvent(
                 source,
-                player,
+                this,
+                "PN looks at the top six cards of PN's library."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPlayer player = event.getPlayer();
+            final MagicCardList topCards = player.getLibrary().getCardsFromTop(6);
+            game.doAction(new LookAction(topCards, player, "top six cards of your library");
+            game.addEvent(new MagicEvent(
+                event.getSource(),
                 new MagicFromCardListChoice(topCards, 1, true),
                 topCards,
                 action,
-                "Look at the top six cards of your library. " +
-                "PN may cast a card\$ from among them without paying its mana cost. " +
+                "PN may cast a card from among them\$ without paying its mana cost. " +
                 "Put the rest on the bottom of PN's library in a random order."
-            );
+            ));
         }
     }
 ]
