@@ -1,5 +1,5 @@
 def action = {
-    final MagicGame game, final MagicPlayer player ->
+    final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         game.addEvent(new MagicPayLifeEvent(event.getSource(), event.getPlayer(), 3));
         game.doAction(new ShiftCardAction(event.getRefCard(), MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
