@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={W}
-effect=Target creature gets +2/+2 until end of turn. If it's a Vampire, it gains first strike until end of turn.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Target creature gets +2/+2 until end of turn. If it's a Vampire, it gains first strike until end of turn.
-status=needs groovy
