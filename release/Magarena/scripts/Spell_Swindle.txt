@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{U}
-effect=Counter target spell. Create X colorless Treasure artifact tokens, where X is that spell's converted mana cost. They have "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
 timing=counter
+requires_groovy_code
 oracle=Counter target spell. Create X colorless Treasure artifact tokens, where X is that spell's converted mana cost. They have "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
-status=needs groovy
