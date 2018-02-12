@@ -1,3 +1,12 @@
+def SPELL_OR_ABILITY_THAT_TARGETS_YOU_OR_A_CREATURE_YOU_CONTROL = new MagicStackFilterImpl() {
+    @Override
+    public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+        final MagicTarget target = item.getTarget();
+        return player.getId() == target.getId() ||
+            (target.hasType(MagicType.Creature) && player.isFriend(target));
+    }
+}
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Counter),
@@ -16,12 +25,7 @@
             return new MagicEvent(
                 source,
                 new MagicTargetChoice(
-                    new MagicStackFilterImpl() {
-                        @Override
-                        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-                            return player.isFriend(item.getTarget());
-                        }
-                    },
+                    SPELL_OR_ABILITY_THAT_TARGETS_YOU_OR_A_CREATURE_YOU_CONTROL,
                     "target spell or ability that targets you or a creature you control"
                 ),
                 this,
