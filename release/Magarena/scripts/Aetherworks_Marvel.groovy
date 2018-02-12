@@ -35,7 +35,7 @@ def action = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList topCards = player.getLibrary().getCardsFromTop(6);
-            game.doAction(new LookAction(topCards, player, "top six cards of your library");
+            game.doAction(new LookAction(topCards, player, "top six cards of your library"));
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicFromCardListChoice(topCards, 1, true),
