@@ -15,18 +15,17 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount = ((MagicPermanent)payedCost.getTarget()).getToughness();
             return new MagicEvent(
                 source,
-                amount,
+                payedCost.getTarget(),
                 this,
-                "PN gains ${amount} life."
+                "PN gains life equal to RN's toughness."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeLifeAction(event.getPlayer(), event.getRefInt()));
+            game.doAction(new ChangeLifeAction(event.getPlayer(), event.getRefPermanent().getToughness()));
         }
     }
 ]
