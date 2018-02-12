@@ -6,7 +6,6 @@ type=Creature
 subtype=Dinosaur
 cost={3}{R}{W}
 pt=4/4
-ability=When SN enters the battlefield, you may search your library and/or graveyard for a card named Huatli, Dinosaur Knight, reveal it, then put it into your hand. If you searched your library this way, shuffle it.
 timing=main
+requires_groovy_code
 oracle=When Sun-Blessed Mount enters the battlefield, you may search your library and/or graveyard for a card named Huatli, Dinosaur Knight, reveal it, then put it into your hand. If you searched your library this way, shuffle it.
-status=needs groovy
