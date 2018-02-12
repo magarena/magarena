@@ -22,7 +22,7 @@ def action = {
                 permanent,
                 cmc,
                 this,
-                "PN reveals the top ${cmc} cards of PN's library."
+                "PN reveals the top RN cards of PN's library."
             );
         }
         @Override
