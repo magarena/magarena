@@ -1,4 +1,4 @@
-¦1.81¦1
+¦1.90¦1
 1441438772 = è legale
 3128437712 = è illegale
 3508543659 = è bannata
@@ -11,11 +11,14 @@
 3240984113 = Istantaneo
 2797511102 = Stregoneria
 3555281281 = Planeswalker
+0570309209 = Tutte le carte
 0295165923 = Casuale
 2313175938 = Mazzi pronti
 4274772376 = Mazzi del giocatore
 0506072877 = Migliori mazzi di Firemind
-0570309209 = Tutte le carte
+0233421099 = Mazzi popolari
+0439905227 = Mazzi vincenti
+2241583297 = Mazzi giocati ultimamente
 1120914852 = bianco
 2654390964 = blu
 2307242536 = nero
@@ -40,11 +43,34 @@
 3092217981 = Schema
 2421196991 = Tribale
 2154096770 = Avanguardia
+0662641892 = Seleziona si o no.
+3780066601 = Scegli una carta dalla tua mano.
+0033616675 = Scegli %d carte dalla tua mano.
+1759655335 = Scegli Testa o Croce
+2805059655 = Scegli un colore.
+3462051701 = Dichiara le creature attaccanti.
+# 0979986174 eg. {f} will be replaced by an icon. | represents a new line.
+0979986174 = Clicca su una creatura per dichiararla come attaccante o rimuoverla dal combattimento.|Clicca {f} per continuare.
+1341943828 = Dichiara i difensori.
+1713477735 = Clicca su una creatura per dichiararla come difensore o timuoverla dal combattimento.|Clicca {f} per continuare.
+4240891505 = Clicca su una creatura attaccante per dichiararla come difensore.
+2062373443 = Clicca {f} per continuare.
+0892949478 = Puoi scegliere 1 carta
+2461835117 = Puoi scegliere fino a %d carte
+1762410613 = Scegli una carta
+0424192153 = Scegli %d carte
+3582684418 = Procedi con l'azione \"può\"?
+1367094520 = Scegli la modalitò.
+# 4161141110 eg. %s will be replaced with a mana cost icon.
+4161141110 = Scegli un'abilità di mana per pagare %s.
+# 2166000412 eg. %s will be replaced with a mana cost icon.
+2166000412 = Impossibile pagare %s.|Clicca {undo} per annullare.
 3689109508 = Gioca una carta o un'abilità.
 # 3864448769 eg. {f} will be replaced by an icon.
 3864448769 = Clicca {f} o Spazio per passare.
 # 2670693515 eg. | represents a new line. Position to fit text in user prompt.
-2670693515 = Click destro su {f} or Shift+Spazio per|saltare alla fine del turno.
+2670693515 = Clicca con il bottone destro su {f} o premi Shift+Spazio per|saltare alla fine del turno.
+2959828607 = Spostare questa carta dalla cima del mazzo a sotto?
 # 0279083863 eg. AI: minimax
 0279083863 = IA : %s
 1547688846 = Livello: %d  Punti Vita Extra: %d
@@ -63,17 +89,17 @@
 3665117018 = Errore nell'importazione.
 0462512377 = Vedi il seguente file per ulteriori informazioni -
 2402824784 = - mods...
+3925788068 = - statistiche di gioco...
 2660961351 = Scegli la cartella Magarena
 0922408799 = Magarena non trovato!
 0550609901 = Questa cartella non contiene una versione valida di Magarena.
 3320023503 = F11 : schermo intero
-2758030115 = Nessun duello salvato.
 0607592645 = il mazzo di %s non è valido.
 2119658154 = Sei sicuro di voler chiudere Magarena?
 0615792264 = Conferma il ritorno al desktop
 0394178960 = Azione non valida!
-2951059284 = Informazione
-2415109466 = Avvertimento
+2951059284 = Informazioni
+2415109466 = Attenzione
 2468205517 = Opzioni generali
 0354264935 = Leggimi
 4283999427 = Aiuto online
@@ -84,8 +110,27 @@
 2643469720 = Chiudi menu
 3419764797 = Errore Fatale
 0951726381 = E' avvenuto un errore imprevisto e Magarena sarà terminato.
-1539499086 = Sarebbe carino da parte tua aprire una segnalazione in modo che gli sviluppatori possano verificare il problema.
+1539499086 = Sarebbe gentile da parte tua aprire una segnalazione in modo che gli sviluppatori possano verificare il problema.
 2659210019 = Vorresti aprire il file che riporta l'errore nel file manager?
+1060428211 = Punti vita: %d \u2022 mano: %d
+1540598200 = %d anni fa
+1810074802 = un anno fa
+0841709928 = %d mesi fa
+3985237059 = un mese fa
+1132922218 = %d settimane fa
+2282236261 = una settimana fa
+0857216086 = %d giorni fa
+0040000040 = un giorno fa
+3795409823 = %d ore fa
+0261712171 = un'ora fa
+1751009867 = %d minuti fa
+1050780815 = un minuto fa
+1237081127 = pochi secondi fa
+2276770895 = Mazzo dell'avversario
+2199494322 = Gioco
+2679471955 = Giocatore
+1346652329 = Avversario
+3508035498 = livello:%d +punti vita:%d
 3392380687 = Profilo IA
 0425534992 = Punti vita extra
 3408084108 = Livello IA
@@ -142,7 +187,7 @@
 3013682402 = Messaggio di nuovo turno
 3142048449 = Mostra un messaggio all'inizio di ciascun turno e mette il gioco in pausa per qualche secondo (vedi pagina <b>Pausa ogni turno</b>).
 4231149807 = Comparsa della finestra della carta
-4146243287 = Usa un effetto a comparsa per la visuaizzazione dell'immagine della carta durante il gioco.
+4146243287 = Usa un effetto a comparsa per la visualizzazione dell'immagine della carta durante il gioco.
 0293938793 = Freccia elasitca gioca-da
 0290237782 = Indica da quale zona del giocatore proviene una carta mediante una freccia che cresce e segue l'animazione della carta verso l'anteprima.
 1864526004 = Pausa ogni turno:
@@ -169,8 +214,6 @@
 3354749815 = bordo
 2541086472 = tema
 1643521398 = Determina lo stile dell'evienziazione delle carte durante il gioco.
-0684031773 = Scarica le immagini a richiesta.
-1544940099 = Scarica le immagini delle carte solo quando serve. Disattivalo se vuoi scaricare le immagini tutte insieme, usare 'proxy frames with cropped images' o scaricare immagini delle carte non in inglese.
 1299868798 = Riavvio richiesto. Si applica solamente all'interfaccia generale, non riguarda i dati delle carte.
 1241683511 = Vista suddivisa dell'Gestore di Mazzi.
 4079962537 = Usa il vecchio stile di vista suddivisa nel Gestore di Mazzi invece che la nuova vista a schede. Nota che nuove funzionalità saranno aggiunte solo alla nuova vista a schede.
@@ -178,8 +221,9 @@
 3109056861 = Come comportamento predefinito, come muovi il mouse sopra la voce di una carta, verrà visualizzata l'anteprima. Attivando questa opzione l'anteprima verrà visualizzata solo quando la voce è selezionata.
 2093172055 = Interfaccia utente
 2576967655 = Visualizzatore delle Carte & Gestore di Mazzi
-0245154315 = Immagini delle carte
-3590591187 = Originale
+3097134521 = Salva le statistiche di gioco.
+3812957800 = Tiene il conto di ogni partita giocata per generare i totali delle partite Giocate/Vinte/Perse e lo storico per ciascun mazzo. I dati sono salvato i The data is stored in \\Magarena\\stats.
+0753088835 = Predefinito
 0026480598 = Generale
 4056856275 = Stile di gioco
 1454688268 = Tema
@@ -235,9 +279,17 @@
 1303016265 = Si
 4063104189 = No
 2830496658 = Aiuto
+3432516076 = Errore di lettura del file di traduzioni
+3869587315 = Verificare che la codifica sia \"UTF-8 senza BOM\".
 3799790393 = L'apertura di questo file con l'applicazione di default non è supportata da questo sistema operativo.
-1425131484 = sto caricato le informazioni sulle carte
-3679950490 = carico il proxy generatore delle immagini
+0197262689 = <b>Click con il tasto sinistro del mouse</b> per aprire il file.
+1085435003 = <b>Click con il tasto destro del mouse</b> per esplorare la cartella di base.
+1575687680 = <b>Click con il mouse</b> per esplorare la cartella.
+0620214431 = Impossibile aprire il file :\n%s\n\n%s
+1425131484 = Caricamento dei dati della carta
+1033268948 = Disposizione
+2230615025 = Sovrapposte
+3448258317 = Non sovrapposte
 3998244978 = Memoria (MB)
 0838394037 = Usata: %.1f
 1282262441 = Libera: %.1f
@@ -247,10 +299,11 @@
 2603922263 = Licenza di Magarena
 1234048218 = Questo programma è software libero : puoi ridistribuirlo e/o <br>modificarlo secondi i termini della GNU General Public License<br> pubblicata dalla Free Software Foundation.
 3231149880 = Mostra i dettagli della licenza.
-0476410532 = mazzi: %d
-1893253750 = Elenco dei mazzi che contengono questa carta
-1173555256 = Doppio click sul nome del mazzo per vederne il contenuto.
-1170586075 = cercando...
+4121886317 = Script della carta
+2769603427 = Ricarica
+4212717061 = Ricarica i file di script/groovy.
+3157095899 = Firemind
+2706566981 = Apri nel tuo browser la pagina dei tuoi script inviati a Firemind.
 # 3430470459 eg. Total number of cards displayed in explorer.
 3430470459 = %s carte
 0959113337 = Giocabili: %s   \u2022   Non implementate: %s
@@ -259,11 +312,21 @@
 3040047565 = Visualizza i file di script per la carta selezionata.<br>(o doppio click sulla riga)
 0623606758 = Scelta casuale
 2582276425 = Seleziona una carta casuale dalla lista.
-4121886317 = Script della carta
-2769603427 = Ricarica
-4212717061 = Ricarica i file script delle carte.
-3157095899 = Firemind
-2706566981 = Apre lo script nel browser per l'invio di un mazzo al progetto Firemind.
+0980688120 = Schermata del flusso della carta
+4051882162 = Scorri attraverso le immagini delle carte a partire da quella selezionata.
+0476410532 = mazzi: %d
+1893253750 = Elenco dei mazzi che contengono questa carta
+1173555256 = Doppio click sul nome del mazzo per vederne il contenuto.
+1170586075 = cerco...
+4068251502 = Stile
+2620525930 = Attivo
+0334568355 = Disattivo
+0567612981 = Vai alla prossima carta
+0268544060 = Puoi anche cliccare sul lato destro dello schermo, premere il tasto freccia destra<br>o usare la rotellina del mouse verso l'alto.
+4273646732 = Vai alla carta precedente
+0729098391 = Puoi anche cliccare sul lato sinistro dello schermo, premere il tasto freccia sinistra<br>o usare la rotellina del mouse verso il basso.
+0763824768 = Ridimensiona
+0790527305 = Anima
 3329767221 = Mano di esempio
 1862177068 = Vedi che tipo di mano puoi pescare da questo mazzo.
 3588598438 = E' richiesto un mazzo con un minimo di 7 carte.
@@ -277,30 +340,25 @@
 2374856845 = Aggiungi la carta selezionata al mazzo (o click sulla riga).
 4184661482 = Rimuovi carta
 0736696355 = Rimuovi la carta selezionata dal mazzo (o click destro sulla riga).
-3615081709 = Più
-4194509842 = Incrementa di uno. Il massimo è 10.
-2069643244 = Meno
-0391863698 = Decrementa di uno. Il minimo è 1.
-1083993486 = Devi usare questo bottone per rimuovere l'ultima carta di un tipo.
-# 0281107096 eg. Memnite <b>is illegal/banned/restricted</b> in Standard.
-0281107096 = %s <b>%s</b> in %s.
-# 3799012839 eg. Illegal deck size for Vintage.
-3799012839 = Dimensione del mazzo non valido per le regole %s.
-3663052221 = Servono almeno %d carte.
-1544943228 = Questo mazzo non va bene.\n\n%s
+1116470770 = Aumenta di uno
+2771525700 = Il massimo è 10.
+4055741459 = Diminuisci di uno
+1083993486 = Devi usare questo bottone per rimuovere l'ultima istanza di una carta.
+1544943228 = Questo mazzo è illegale.\n\n%s
 3022729711 = Usa questo mazzo
 3389550120 = Seleziona un mazzo predefinito o generato dall'utente.
 1762515921 = Salva mazzo
 1176822215 = Salva il mazzo su file.
 1737849226 = Gestore mazzi
 0415776539 = Il mazzo è vuoto! Niente da salvare.
-2591550486 = Questa cartella è riservata per i mazzi predefiniti.\nPerfavore scegli un'altra cartella.
-4088405541 = Sovrascrivi il file del mazzo preesistente?
+4088405541 = Sovrascrivi il mazzo preesistente?
 3814198088 = Sovrascrivi file
-3376379119 = Salva mazzo
-0359392042 = Problemi nel salvare il mazzo!
+0359392042 = Ci sono stati problemi nel salvare il mazzo!
 1220840499 = Il gestore dei mazzi ha modifiche non salvate che andranno perse.\nVuoi proseguire?
 1215591181 = Richiesta di conferma...
+2517211619 = Nome del mazzo non valido
+1565884469 = Nome del mazzo (deve essere un nome fi file valido)
+0303842168 = Salva mazzo del giocatore
 1884890382 = Azzera mazzo
 1972294272 = Rimuove tutte le carte dal mazzo. E' richiesta la conferma.
 2582893968 = Rimuovere tutte le carte dal mazzo?
@@ -308,16 +366,6 @@
 1114478998 = Azzerare mazzo?
 # 3448976220 eg. Cards: 290
 3448976220 = Carte: %s
-3254879136 = Formati
-0581168980 = Legale
-0378083256 = Illegale
-2632255616 = Vietata
-2291237783 = Limitata
-1703216590 = Solo una carta di questo tipo ammessa nel mazzo.
-0487998117 = Troppe carte di questo tipo.
-3854633552 = Troppe carte dello stesso tipo nel mazzo.
-3675803412 = Non vale per le terre base,
-0498562439 = oppure
 0451146151 = Carte selezionabili
 2719972385 = Richiama carta
 0658622440 = Validità
@@ -340,7 +388,7 @@
 1281290230 = Seleziona
 3922610495 = Nessun mazzo selezionato.
 1232656856 = Questo mazzo non è valido.
-4008329848 = NESSUN MAZZO
+0289838330 = MODIFICATO
 1995542578 = Scambia mazzi
 0173717257 = Scambia il mazzo col tuo avversario.
 0997768757 = Genera un altro mazzo
@@ -354,6 +402,9 @@
 0371278448 = Ricomincia duello
 2145666990 = Stessi giocatori, stessi mazzi, stesse impostazioni di duello. Stesso risultato...?
 3075167998 = Il mazzo di %s non è valido.\n\n%s
+1095916856 = Carte non valide non verranno incluse.
+0620440032 = Inizia un nuovo duello comunque?
+3494861577 = Conferma nuovo duello
 0558573339 = Preparo la partita...
 3876316400 = Opzioni della partita
 0698470759 = Arrenditi
@@ -382,12 +433,12 @@
 3936605750 = Rimetti queste carte nel mazzo poi pesca una nuova mano con una carta in meno.<br>"You may scry 1 if your opening hand has fewer cards than your starting hand size".
 # 1529602839 eg. this is the AI level.
 1529602839 = Livello
-# 3110715001 eg. player mini-stats heading representing games and duels [P]layed
-3110715001 = G
-# 0655174618 eg. player mini-stats heading representing games and duels [W]on
-0655174618 = V
-# 2909332022 eg. player mini-stats heading representing games and duels [L]ost
-2909332022 = P
+# 2025707456 eg. player mini-stats heading representing games and duels [P]layed
+2025707456 = G
+# 3401891615 eg. player mini-stats heading representing games and duels [W]on
+3401891615 = V
+# 0352708436 eg. player mini-stats heading representing games and duels [L]ost
+0352708436 = P
 2045269212 = Duelli
 1054999605 = Partite
 2314997333 = Scegli l'IA del giocatore
@@ -434,48 +485,55 @@
 0036782393 = Chiude la finestra ma continua a scaricare le immagini in background.
 3943975756 = Pagina di aiuto wiki
 0140416230 = Apre una pagina contenente ulteriori informazioni riguardo questa schermata nel tuo browser.
-1441803404 = Scarica le immagini delle carte che mancano o sono da aggiornare nelle cartelle 'cards' e 'tokens'.
-1500605395 = Scarica le immagini ridotte che mancano o sono da aggiornare nella cartella 'crops'. <b>Copertura non al 100%</b>, attualmente non c'è un'immagine ridotta per ogni carta.
-3507398040 = Magarena mostrerà la prima immagine che trova nelle cartelle con il seguente ordine:- 'custom', 'crops', 'cards' e 'tokens'. Se viene trovata un'immagine ridotta o non trovato niente, allora sarà generata un'immagine generica.
+3561385369 = Mostra l'immagine stampata della carta. Le immagini sono scaricate nelle cartelle 'cards' e 'tokens'.
+0443737500 = Mostra un'immagine stilizzata generata mediante ritaglio di immagini scaricate nella cartella 'crops'.
 3426461400 = Scegli una cartella...
 3573554999 = Non c'è abbastanza spazio disponibile!
 2113246887 = Scegli la cartella delle immagini
 3401300097 = Un'insieme completo di immagini richiede 1,5 GB di spazio.
-2350987364 = Magarena cercherà la prima immagine che trova nelle cartelle con il seguente ordine :- 'custom', 'crops', 'cards' e 'tokens'. <b>Click del mouse</b> per esplorare la cartella delle immagini.
+4283686143 = Magarena cercherà l'immagine della carta nelle cartelle con il seguente ordine :- 'custom', 'crops', 'cards' e 'tokens'.
 1550790213 = Scegli o crea una nuova cartella immagini.
-0819216266 = Scarica carte
-3537884941 = originale
-3336685911 = generica
+2780764395 = Cartella delle immagini delle carte
+0046037833 = Click con il mouse per esplorare
+0819216266 = Configura immagini delle carte
+3055940896 = Stampata
+2583272653 = Stilizzata
 1131213745 = Copia in memoria
 0489719719 = Informazioni sull'errore sono state copiate in memoria.
-3596537789 = Cartella delle immagini:
-2619910025 = Testo della carta:
-2729146185 = Visualizzazione:
+1767460686 = Testo della carta scelto:
+3351664113 = Visualizza immagine della carta come:
 3703709718 = Linguaggio preferito per il testo delle carte
-0245544305 = Se viene selezionato un linguaggio diverso da Inglese allora Magarena cercherà di scaricare l'immagine della carta per quel linguaggio. Se non viene trovata nessuna immagine, allora verrà scaricata l'immagine dell'edizione inglese.
-1998678571 = Giocabile
+2097904294 = Se viene selezionato un linguaggio diverso da Inglese allora Magarena cercherà di scaricare l'immagine della carta per quel linguaggio. Se non viene trovata nessuna immagine, allora verrà scaricata l'immagine dell'edizione inglese.
+2617352713 = Scarica su richiesta:
+4087569637 = Scarica le immagini delle carte quando necessario. Raccomandato in caso di connessione ad internet veloce.
+3565234473 = Dimensione preferita:
+0434974018 = Seleziona la dimensione dell'immagine della carta visualizzata nel gestore delle carte e dei mazzi, così come nelle schermate delle carte durante una partita. Seleziona 'Predefinito' per visualizzare l'immagine della carta nella sua dimensione originale. Altrimenti verrà ridimensionata in base alla selezione.
+4065034349 = *** Questo non riguarda la dimensione delle immagini scaricate ***
+3822851803 = *** Non applicabile alle immagini stilizzate ***
+1388214714 = Immagini mancanti per carte giocabili
 2171396134 = Scarica
-1152897358 = Non implementato
+0534677077 = Immagini mancanti per carte non giocabili
+0478911262 = Glossario non valido.
 0790035322 = Glossario
-1640912267 = Menu d'aiuto
 2874748309 = Informazioni
-1034062502 = Torna indietro
+1690697036 = Menu principale
 0766317539 = Lingua
 3297432705 = File di lingua non valido.
 3987539703 = Nuovo duello
 2557255279 = Riprendi duello
 3265930652 = Visualizza tutte le carte
 1614380220 = Modifica mazzi
+2758030115 = Duello salvato non trovato.
+3818420395 = Esci
 1086464600 = Importa le impostazioni?
 4023198582 = Importa le impostazioni da una versione precedente di Magarena.
 0639716368 = Aiuto [F1]
 2258392056 = Apre la pagina wiki relativa nel tuo browser.
 2224295428 = Sto importando...
-1898508145 = Menu delle impostazioni
-2823720574 = Schermo intero
-4067345257 = Resetta impostazioni
+1445765220 = Attiva/disattiva schermo intero
+4067345257 = Ripristina e ricomincia
 2586492251 = Ripristina le impostazioni ai valori predefiniti e rilancia il wizard di configurazione?
-3015983623 = Prima disattiva l'opzione 'Scarica le immagini a richiesta' nelle impostazioni.
+0932815095 = %s partite
 3742435974 = Impostazioni di duello
 1902254623 = Punti vita iniziali del giocatore: %d
 3483385143 = Numero di carte iniziali in mano: %d
@@ -488,10 +546,6 @@
 0657116729 = F11: Schermo intero
 0101965706 = F12: Vedi sfondo
 0219843941 = ESC: Opzioni / Esci
-0197262689 = <b>Click del mouse</b> per aprire il file.
-1085435003 = <b>Click destro del mouse</b> per esplorare la cartella che lo contiene.
-1575687680 = <b>Click del mouse</b> per esplorare la cartella.
-0620214431 = Impossibile aprire il file :\n%s\n\n%s
 3315650188 = Scarica immagini delle carte mancanti
 3669534127 = E' disponibile la version %s di Magarena.
 0459283561 = Apri la pagina dei file scaricati
@@ -521,6 +575,8 @@
 3730400060 = Imposta
 2091671594 = Stato
 2228299415 = Nuove carte
+1998678571 = Giocabile
+1152897358 = Non giocabile
 1614148803 = Potenziale
 2597723198 = Sottotipo
 # 0753727511 eg. Type filter in cards explorer
@@ -533,8 +589,10 @@
 4262580536 = Nome
 # 1968709139 eg. Short hand for Combined Cost, a column header in card table.
 1968709139 = CC
-# 3187964512 eg. Short hand for Toughness, a column header in card table.
-3187964512 = C
+# 3670981308 eg. Short hand for Power, a column header in card table.
+3670981308 = P
+# 2067808968 eg. Short hand for Toughness, a column header in card table.
+2067808968 = C
 2612594937 = Testo
 3859112106 = Descrizione del Mazzo
 1693710260 = qualunque
@@ -545,23 +603,40 @@
 0816061363 = Tutti i Mazzi (%d)
 1043774029 = Mazzi Filtrati (%d)
 1845588347 = %d carte
+# 0281107096 eg. Memnite <b>is illegal/banned/restricted</b> in Standard.
+0281107096 = %s <b>%s</b> in %s.
+# 3799012839 eg. Illegal deck size for Vintage.
+3799012839 = Dimensione del mazzo illegale per la modalià %s.
+3663052221 = Sono necessarie almento %d carte.
+3254879136 = Formati
+0581168980 = Legale
+0378083256 = Illegale
+2632255616 = Proibito
+2291237783 = Ha un uso limitato
+1703216590 = Solo una copia di una carta è permessa nel mazzo.
+0487998117 = Troppe copie
+3854633552 = Troppe copie di una carta nel mazzo.
+3675803412 = Non vale per le terre base,
+0498562439 = o
 1033422053 = Mono: %d  \u2022  Multi: %d  \u2022  Incolore: %d
 0352254452 = %d  \u2022  Mono: %d  \u2022  Terre: %d
 1832915798 = Distribuzione dei colori
 2577309750 = Tipo di carta
 3175869816 = Statistiche del Mazzo
-2362534816 = Statistiche del Mazzo : %d carte
+1778637768 = %d carte
 3431594505 = Incolore
 2832043402 = Monocolore
 4045334056 = Multicolore
 0065982042 = Totali
 3623327207 = %s ha vinto!
-2805059655 = Scegli un colore.
 4121490138 = Scegli un valore per X.
-1367094520 = Scegli il modo.
 1246376821 = Scegli quante volte pagare il %s costo di %s.
 0312145515 = Scegli quale abilità attivare.
-2108594841 = Vedi il rapporto [L]
+3995352755 = Segnalini scudo
+4151394526 = Segnalini veleno
+1664421420 = Segnalini energia
+1389082370 = Segnalini esperienza
+2108594841 = Vedi il file di log [L]
 3734573452 = Mostra il rapporto completo della partita contenuto nel file.
 3077713445 = Rapporto
 2154386542 = Sequenza
@@ -584,9 +659,6 @@
 3324936721 = Fase principale 2
 1015450405 = Fase finale : Fine del turno
 1754937449 = Fase finale: Pulizia
-# 0412686884 eg. as in 'Other' player zone
-0412686884 = Altro
-4210774852 = Altro : %s
 3934956419 = Mano di %s
 0784335874 = Cimitero di %s
 2207670850 = Carte in esilio di %s
@@ -599,11 +671,8 @@
 0690059878 = Non in corso
 1147269330 = Lancia operazione Firemind
 1411348818 = La tua versione di Magarena è obsoleta, si prega di aggiornarla.
-2929460102 = Password
-0911410003 = Il file del mazzo è vuoto.
+2929460102 = Chiave di Accesso
 3156016653 = Le linee nel file eccedono %d.
 1845115261 = ...altro...
 1817512555 = linea %d: la lunghezza eccede i %d caratteri.
-1463352396 = linea %d: formato di linea non valido.
-0909668220 = Formato atteso: <quantita><spazio><Nome carta>
 2392141928 = linea %d: carta non valida (%s).
