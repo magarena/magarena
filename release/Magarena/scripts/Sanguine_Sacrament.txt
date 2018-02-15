@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={X}{W}{W}
-effect=You gain twice X life. Put SN on the bottom of its owner's library.
 timing=removal
+requires_groovy_code
 oracle=You gain twice X life. Put Sanguine Sacrament on the bottom of its owner's library.
-status=needs groovy

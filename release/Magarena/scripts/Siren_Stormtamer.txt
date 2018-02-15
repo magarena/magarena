@@ -6,8 +6,7 @@ type=Creature
 subtype=Siren,Pirate,Wizard
 cost={U}
 pt=1/1
-ability=Flying;\
-        {U}, Sacrifice SN: Counter target spell or ability that targets you or a creature you control.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\n{U}, Sacrifice Siren Stormtamer: Counter target spell or ability that targets you or a creature you control.
-status=needs groovy

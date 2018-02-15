@@ -2,10 +2,9 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final MagicCardList topCards = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
-        game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), it, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
+        game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
         topCards.removeCard(it);
     });
-    topCards.shuffle();
     topCards.each {
         game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
     }
@@ -13,14 +12,14 @@ def action = {
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.CounterFlash),
-        "Cast"
+        new MagicActivationHints(MagicTiming.Flash),
+        "AddToHand"
     ) {
         @Override
         public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source),
-                new MagicPayEnergyEvent(source, 6)
+                new MagicPayManaCostEvent(source, "{2}{U}"),
+                new MagicTapEvent(source)
             ];
         }
         @Override
@@ -28,21 +27,25 @@ def action = {
             return new MagicEvent(
                 source,
                 this,
-                "PN looks at the top six cards of PN's library."
+                "PN looks at the top four cards of PN's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicCardList topCards = player.getLibrary().getCardsFromTop(6);
-            game.doAction(new LookAction(topCards, player, "top six cards of your library"));
+            final MagicCardList topCards = player.getLibrary().getCardsFromTop(4);
+            game.doAction(new LookAction(topCards, player, "top four cards of your library"));
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicFromCardListChoice(topCards, 1, true),
+                new MagicFromCardListChoice(
+                    topCards.findAll({ !it.hasType(MagicType.Creature) && !it.hasType(MagicType.Land) }),
+                    1,
+                    true
+                ),
                 topCards,
                 action,
-                "PN may cast a card from among them\$ without paying its mana cost. " +
-                "Put the rest on the bottom of PN's library in a random order."
+                "PN may reveal a noncreature, nonland card from among them\$ and put it into PN's hand. " +
+                "PN puts the rest on the bottom of PN's library in any order."
             ));
         }
     }

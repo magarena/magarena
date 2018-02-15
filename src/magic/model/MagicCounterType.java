@@ -76,6 +76,7 @@ public enum MagicCounterType implements MagicCopyable {
     Isolation("isolation","{iso}",1),
     Javelin("javelin","{jav}",1),
     Ki("ki","{ki}",1),
+    Landmark("landmark","{landmark}",1),
     Level("level","{lvl}",0),
     Lore("lore","{lre}",1),
     Loyalty("loyalty","{lyl}",1),
