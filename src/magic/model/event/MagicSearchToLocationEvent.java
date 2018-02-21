@@ -50,7 +50,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             if (event.isNo()) {
                 // do nothing
             } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
-                if (event.getCardChoice().anyMatch(MagicCard::isInLibrary)) {
+                if (event.getCardChoice().stream().anyMatch(MagicCard::isInLibrary)) {
                     game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 }
                 event.processChosenCards(game, (final MagicCard card) -> {
