@@ -43,7 +43,7 @@ public class EntersWithCounterTrigger extends EntersBattlefieldTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        final int total = amount * count.getAmount(permanent, permanent.getController());
+        final int total = amount * count.getPositiveAmount(permanent, permanent.getController());
         if (cond.accept(permanent)) {
             game.doAction(ChangeCountersAction.Enters(
                 permanent,
