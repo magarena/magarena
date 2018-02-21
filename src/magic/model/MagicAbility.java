@@ -1731,8 +1731,8 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] ptStr = ARG.ptStr(arg);
             final MagicPowerToughness pt = new MagicPowerToughness(
-                MagicAmountParser.getX(ptStr[0], 1),
-                MagicAmountParser.getX(ptStr[1], 1)
+                MagicAmountParser.getXSign(ptStr[0], 1),
+                MagicAmountParser.getXSign(ptStr[1], 1)
             );
             final MagicTargetFilter<MagicPermanent> affected = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun2(arg));

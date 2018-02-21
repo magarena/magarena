@@ -102,7 +102,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         return new MagicStatic(MagicLayer.ModPT, affected) {
             @Override
             public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-                final int amt = count.getAmount(source, source.getController());
+                final int amt = count.getPositiveAmount(source, source.getController());
                 pt.add(given.power() * amt, given.toughness() * amt);
             }
         };

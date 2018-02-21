@@ -141,7 +141,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
                     new MagicPayManaCostEvent(
                         source,
                         source.getGameCost().reduce(
-                            amount.getAmount(source, source.getController())
+                            amount.getPositiveAmount(source, source.getController())
                         )
                     )
                 );
