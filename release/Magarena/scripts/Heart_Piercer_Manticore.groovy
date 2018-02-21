@@ -11,7 +11,7 @@ def damageAction = {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(ANOTHER_CREATURE_YOU_CONTROL),
+                new MagicMayChoice(new MagicTargetChoice("another creature to sacrifice")),
                 this,
                 "PN may\$ sacrifice another creature PN controls\$."
             );
