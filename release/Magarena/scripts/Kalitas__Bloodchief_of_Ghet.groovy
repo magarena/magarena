@@ -26,9 +26,15 @@
                 final MagicPermanent target ->
                 final int power = target.getPower();
                 final int toughness = target.getToughness();
-                game.doAction(new DestroyAction(target));
+                final DestroyAction act = new DestroyAction(target);
+                game.doAction(act);
                 final MagicCard targetCard = target.getCard();
-                if (game.getPlayers().any({ it.getGraveyard().contains(target) })) {
+                if (act.isDestroyed() &&
+                        game.getPlayers().any({
+                            final MagicPlayer player ->
+                            player.getGraveyard().contains(target)
+                        })
+                ) {
                     game.doAction(new PlayTokenAction(event.getPlayer(), CardDefinitions.getToken(power, toughness, "black Vampire creature token")));
                 }
             });
