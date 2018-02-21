@@ -20,7 +20,12 @@ public abstract class MagicAmount {
     }
 
     public int getPositiveAmount(final MagicEvent event) {
-        return getPositiveAmount(event.getSource(), event.getPlayer());
+        if (this == MagicAmountFactory.NegXCost) {
+            // Return a negative number for NegXCost
+            return Math.min(getAmount(event), 0);
+        } else {
+            return Math.max(getAmount(event), 0);
+        }
     }
 
     public boolean isConstant() {
