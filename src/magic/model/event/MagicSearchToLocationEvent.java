@@ -50,7 +50,9 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             if (event.isNo()) {
                 // do nothing
             } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
-                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                if (event.getCardChoice().anyMatch(MagicCard::isInLibrary)) {
+                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                }
                 event.processChosenCards(game, (final MagicCard card) -> {
                     if (revealed) {
                         game.logAppendMessage(
@@ -59,11 +61,13 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                         );
                         game.doAction(new AIRevealAction(card));
                     }
-                    game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
+                    game.doAction(new ShiftCardAction(card, card.getLocation(), toLocation));
                 });
             } else {
-                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
                 event.processTargetCard(game, (final MagicCard card) -> {
+                    if (card.isInLibrary()) {
+                        game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                    }
                     if (revealed) {
                         game.logAppendMessage(
                             event.getPlayer(),
@@ -71,7 +75,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                         );
                         game.doAction(new AIRevealAction(card));
                     }
-                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
+                    game.doAction(new ShiftCardAction(card, card.getLocation(), toLocation));
                 });
             }
         };
