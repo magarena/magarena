@@ -5,7 +5,7 @@
             return super.accept(permanent, damage) &&
                 damage.getSource().isSpell() &&
                 permanent.isFriend(damage.getSource()) &&
-                permanent.isOpponent(damage.getTarget()));
+                permanent.isOpponent(damage.getTarget());
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
