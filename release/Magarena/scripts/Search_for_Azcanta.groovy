@@ -1,14 +1,22 @@
+def transformAction = {
+    final MagicGame game, final MagicEvent event ->
+    if (event.isYes()) {
+        game.doAction(new TransformAction(event.getPermanent()));
+    }
+}
+
 def putIntoGraveyardAction = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         game.doAction(new ShiftCardAction(event.getRefCard(), MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
     }
-}
-
-def transformAction = {
-    final MagicGame game, final MagicEvent event ->
-    if (event.isYes()) {
-        game.doAction(new TransformAction(event.getPermanent()));
+    if (player.getGraveyard().size() >= 7) {
+        game.addEvent(new MagicEvent(
+            event.getSource(),
+            new MagicMayChoice("Transfrom ${event.getPermanent()}"),
+            transformAction,
+            "PN may\$ transform SN."
+        ));
     }
 }
 
@@ -34,17 +42,11 @@ def transformAction = {
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicMayChoice("Put the card into your graveyard?"),
+                topCard,
                 putIntoGraveyardAction,
                 "PN may\$ put it into PN's graveyard."
             ));
-            if (player.getGraveyard().size() >= 7) {
-                game.addEvent(new MagicEvent(
-                    event.getSource(),
-                    new MagicMayChoice("Transfrom ${event.getPermanent()}"),
-                    transformAction,
-                    "PN may\$ transform SN."
-                ));
-            }
+
         }
     }
 ]
