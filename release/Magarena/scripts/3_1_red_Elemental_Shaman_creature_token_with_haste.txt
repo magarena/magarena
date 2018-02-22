@@ -1,0 +1,10 @@
+name=3/1 red Elemental Shaman creature token
+image=https://magiccards.info/extras/token/duel-decks-jace-vs-chandra/elemental-shaman.jpg
+value=3
+token=Elemental Shaman
+type=Creature
+subtype=Elemental,Shaman
+color=R
+pt=3/1
+ability=Haste
+oracle=Haste
