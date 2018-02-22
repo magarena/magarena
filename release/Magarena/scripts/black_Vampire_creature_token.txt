@@ -1,6 +1,6 @@
 name=black Vampire creature token
 token=Vampire
-image=https://magiccards.info/extras/token/zendikar/vampire.jpghttps://magiccards.info/extras/token/commander-2017/vampire.jpg
+image=https://magiccards.info/extras/token/zendikar/vampire.jpg
 value=1
 type=Creature
 subtype=Vampire
