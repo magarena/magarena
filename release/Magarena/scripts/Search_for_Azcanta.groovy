@@ -10,7 +10,7 @@ def putIntoGraveyardAction = {
     if (event.isYes()) {
         game.doAction(new ShiftCardAction(event.getRefCard(), MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
     }
-    if (player.getGraveyard().size() >= 7) {
+    if (event.getPlayer().getGraveyard().size() >= 7) {
         game.addEvent(new MagicEvent(
             event.getSource(),
             new MagicMayChoice("Transfrom ${event.getPermanent()}"),
@@ -36,9 +36,8 @@ def putIntoGraveyardAction = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicCard topCard = player.getLibrary().getCardAtTop();
-            game.doAction(new LookAction(topCard, player, "top card of your library"));
+            final MagicCard topCard = event.getPlayer().getLibrary().getCardAtTop();
+            game.doAction(new LookAction(topCard, event.getPlayer(), "top card of your library"));
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicMayChoice("Put the card into your graveyard?"),
