@@ -23,18 +23,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                final int power = target.getPower();
-                final int toughness = target.getToughness();
-                final DestroyAction act = new DestroyAction(target);
+                final int power = it.getPower();
+                final int toughness = it.getToughness();
+                final DestroyAction act = new DestroyAction(it);
                 game.doAction(act);
-                final MagicCard targetCard = target.getCard();
-                if (act.isDestroyed() &&
-                        game.getPlayers().any({
-                            final MagicPlayer player ->
-                            player.getGraveyard().contains(target)
-                        })
-                ) {
+                if (act.isDestroyed() && it.getCard().isInGraveyard()) {
                     game.doAction(new PlayTokenAction(event.getPlayer(), CardDefinitions.getToken(power, toughness, "black Vampire creature token")));
                 }
             });
