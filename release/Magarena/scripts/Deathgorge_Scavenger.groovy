@@ -5,7 +5,7 @@ def action = {
             if (it.hasType(MagicType.Creature)) {
                 game.doAction(new ChangeLifeAction(event.getPlayer(), 2));
             } else {
-                game.doAction(new ChangeTurnPTAction(event.getRefPermanent(), 1, 1));
+                game.doAction(new ChangeTurnPTAction(event.getPermanent(), 1, 1));
             }
         });
     }

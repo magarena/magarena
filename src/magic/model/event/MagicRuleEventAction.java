@@ -570,7 +570,7 @@ public enum MagicRuleEventAction {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return (game, event) -> {
-                final int amount = count.getAmount(event);
+                final int amount = count.getPositiveAmount(event);
                 game.logAppendValue(event.getPlayer(), amount);
                 for (final MagicTarget target : ARG.targets(event, matcher, filter)) {
                     game.doAction(new DealDamageAction(
@@ -1111,7 +1111,7 @@ public enum MagicRuleEventAction {
             final MagicAmount count = ARG.each(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
-                final int multiplier = count.getAmount(event);
+                final int multiplier = count.getPositiveAmount(event);
                 final int total = amount.getAmount(event) * multiplier;
                 if (count != MagicAmountFactory.One) {
                     game.logAppendValue(event.getPlayer(), total);
@@ -1140,7 +1140,7 @@ public enum MagicRuleEventAction {
             final MagicAmount eachCount = ARG.each(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
-                final int multiplier = eachCount.getAmount(event);
+                final int multiplier = eachCount.getPositiveAmount(event);
                 final int total = lifeCount.getAmount(event) * multiplier;
                 if (eachCount != MagicAmountFactory.One) {
                     game.logAppendValue(event.getPlayer(), total);
@@ -3178,7 +3178,7 @@ public enum MagicRuleEventAction {
             final MagicAmount eachCount = ARG.each(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
-                final int multiplier = eachCount.getAmount(event);
+                final int multiplier = eachCount.getPositiveAmount(event);
                 final int total = amount * multiplier;
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                     game.doAction(new ChangeCountersAction(it, MagicCounterType.Energy, total));

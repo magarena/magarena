@@ -1,14 +1,22 @@
+def transformAction = {
+    final MagicGame game, final MagicEvent event ->
+    if (event.isYes()) {
+        game.doAction(new TransformAction(event.getPermanent()));
+    }
+}
+
 def putIntoGraveyardAction = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         game.doAction(new ShiftCardAction(event.getRefCard(), MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
     }
-}
-
-def transformAction = {
-    final MagicGame game, final MagicEvent event ->
-    if (event.isYes()) {
-        game.doAction(new TransformAction(event.getPermanent()));
+    if (event.getPlayer().getGraveyard().size() >= 7) {
+        game.addEvent(new MagicEvent(
+            event.getSource(),
+            new MagicMayChoice("Transfrom ${event.getPermanent()}"),
+            transformAction,
+            "PN may\$ transform SN."
+        ));
     }
 }
 
@@ -28,23 +36,16 @@ def transformAction = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicCard topCard = player.getLibrary().getCardAtTop();
-            game.doAction(new LookAction(topCard, player, "top card of your library"));
+            final MagicCard topCard = event.getPlayer().getLibrary().getCardAtTop();
+            game.doAction(new LookAction(topCard, event.getPlayer(), "top card of your library"));
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicMayChoice("Put the card into your graveyard?"),
+                topCard,
                 putIntoGraveyardAction,
                 "PN may\$ put it into PN's graveyard."
             ));
-            if (player.getGraveyard().size() >= 7) {
-                game.addEvent(new MagicEvent(
-                    event.getSource(),
-                    new MagicMayChoice("Transfrom ${event.getPermanent()}"),
-                    transformAction,
-                    "PN may\$ transform SN."
-                ));
-            }
+
         }
     }
 ]

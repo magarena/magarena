@@ -10,6 +10,14 @@ public abstract class MagicAmount {
         return getAmount(event.getSource(), event.getPlayer());
     }
 
+    public int getPositiveAmount(final MagicSource source, final MagicPlayer player) {
+        return Math.max(getAmount(source, player), 0);
+    }
+
+    public int getPositiveAmount(final MagicEvent event) {
+        return Math.max(getAmount(event), 0);
+    }
+
     public boolean isConstant() {
         return false;
     }

@@ -140,7 +140,7 @@ public enum MagicAmountParser {
 
     public abstract MagicAmount toAmount(final Matcher arg);
 
-    public static final int getX(final String text, final int X) {
+    public static final int getXSign(final String text, final int X) {
         if (text.equalsIgnoreCase("x")) {
             return X;
         } else if (text.equalsIgnoreCase("-x")) {
