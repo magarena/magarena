@@ -4,7 +4,6 @@ value=3.074
 rarity=R
 type=Sorcery
 cost={3}{B/R}{B/R}
-effect=Target player discards his or her hand unless he or she pays 7 life.
 timing=main
+requires_groovy_code
 oracle=Target player discards his or her hand unless he or she pays 7 life.
-status=needs groovy

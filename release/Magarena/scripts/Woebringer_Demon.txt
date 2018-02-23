@@ -6,8 +6,7 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}
 pt=4/4
-ability=Flying;\
-        At the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice SN.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nAt the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice Woebringer Demon.
-status=needs groovy
