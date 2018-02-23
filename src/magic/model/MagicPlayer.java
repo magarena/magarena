@@ -267,6 +267,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return life;
     }
 
+    public int getPositiveLife() {
+        return life > 0 ? life : 0;
+    }
+
     public int getHalfLifeRoundUp() {
         return life < 0 ? 0 : (life + 1)/2;
     }
