@@ -1,7 +1,7 @@
 def filter = new MagicPlayerFilterImpl() {
     @Override
     public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
-        return player != ((MagicPermanent)source).getOwner();
+        return target != ((MagicPermanent)source).getOwner();
     }
 };
 
