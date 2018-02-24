@@ -73,6 +73,7 @@ public enum MagicAbility {
     Soulbond("soulbond",30),
     SplitSecond("split second",10),
     CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated)",-20),
+    Ascend("ascend",0),
 
     ProtectionFromBlack("(protection )?from black",20),
     ProtectionFromBlue("(protection )?from blue",20),
