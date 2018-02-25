@@ -168,9 +168,8 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             }
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicPlayer player = event.getPlayer();
-                if (player.getNrOfPermanents() >= 10) {
-                    player.setState(MagicPlayerState.CitysBlessing);
+                if (event.getPlayer().getNrOfPermanents() >= 10) {
+                    event.getPlayer().setState(MagicPlayerState.CitysBlessing);
                 }
                 effect.getAction().executeEvent(game, event);
             }
