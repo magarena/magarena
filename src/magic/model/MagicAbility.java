@@ -73,7 +73,6 @@ public enum MagicAbility {
     Soulbond("soulbond",30),
     SplitSecond("split second",10),
     CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated)",-20),
-    Ascend("ascend",0),
 
     ProtectionFromBlack("(protection )?from black",20),
     ProtectionFromBlue("(protection )?from blue",20),
@@ -632,6 +631,12 @@ public enum MagicAbility {
                 MagicTargetFilterFactory.Permanent("SN"),
                 MagicRuleEventAction.create("Defending player loses " + ARG.number(arg) + " life.")
             ));
+        }
+    },
+    Ascend("ascend",0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new AscendTrigger());
         }
     },
 
