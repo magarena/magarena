@@ -636,7 +636,7 @@ public enum MagicAbility {
     Ascend("ascend",0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new AscendTrigger());
+            card.add(OtherEntersBattlefieldTrigger.Ascend);
         }
     },
 
