@@ -10,6 +10,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPlayerState;
 import magic.model.action.ChangeCardDestinationAction;
 import magic.model.action.EnqueueTriggerAction;
 import magic.model.choice.MagicChoice;
