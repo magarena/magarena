@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayerState;
 import magic.model.action.ChangePlayerStateAction;
+import magic.model.event.MagicEvent;
 
 public class AscendTrigger extends OtherEntersBattlefieldTrigger {
     
