@@ -809,6 +809,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition HAS_THE_CITYS_BLESSING = new MagicCondition() {
+        @Override
+        public boolean accept(MagicSource source) {
+            return source.getController().hasState(MagicPlayerState.CitysBlessing);
+        }
+    };
+
     public static MagicCondition PERMANENT_YOU_CONTROLLED_LEFT_BATTLEFIELD = new MagicCondition() {
         @Override
         public boolean accept(MagicSource source) {
