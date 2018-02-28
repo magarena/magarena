@@ -6,4 +6,5 @@ rarity=R
 type=Instant
 cost={2}{R}{R}
 timing=removal
+requires_groovy_code
 oracle=Fateful Showdown deals damage to target creature or player equal to the number of cards in your hand. Discard all the cards in your hand, then draw that many cards.
