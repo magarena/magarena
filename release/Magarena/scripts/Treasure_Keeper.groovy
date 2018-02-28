@@ -39,7 +39,7 @@ def castAction = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     new MagicMayChoice("Cast the card?"),
-                    nonTarget.plus(target),
+                    new MagicCardList(nonTarget.plus(target)),
                     castAction,
                     "PN may\$ cast that card without paying its mana cost. " +
                     "Put all revealed cards not cast this way on the bottom of PN's library in any order."
