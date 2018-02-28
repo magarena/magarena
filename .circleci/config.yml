@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  test:
+  build:
     parallelism: 1
     docker:
     - image: circleci/openjdk:8-jdk-node-browsers
