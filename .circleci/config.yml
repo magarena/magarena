@@ -3,8 +3,9 @@ jobs:
   build:
     parallelism: 1
     docker:
-    - image: circleci/openjdk:8-jdk-node-browsers
+    - image: openjdk:8
     steps:
+    - run: apt-get update && apt-get install -y make
     - run:
         command: make circleci
         no_output_timeout: 7200s
