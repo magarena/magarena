@@ -10,9 +10,9 @@ def endOfCombatTrigger = new AtEndOfCombatTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicPermanent sourcePermanent = event.getRefPermanent();
+        final MagicPermanent sourcePermanent = event.getPermanent();
         game.doAction(new RemoveFromPlayAction(sourcePermanent, MagicLocationType.Exile));
-        game.doAction(new PlayCardAction(sourcePermanent.getCard(), event.getPlayer(), MagicPlayMod.TRANSFORMED));
+        game.doAction(new ReturnCardAction(MagicLocationType.Exile, sourcePermanent.getCard(), event.getPlayer(), MagicPlayMod.TRANSFORMED));
     }
 }
 
@@ -21,7 +21,6 @@ def endOfCombatTrigger = new AtEndOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
             return new MagicEvent(
-                permanent,
                 permanent,
                 this,
                 "Exile SN at end of combat, then return it to the battlefield transformed under PN's control."
