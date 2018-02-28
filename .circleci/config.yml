@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/magarena
     parallelism: 1
     docker:
     - image: openjdk:8
