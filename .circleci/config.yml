@@ -7,6 +7,8 @@ jobs:
     - image: openjdk:8
     steps:
     - run: apt-get update && apt-get install -y make
+    - run: pwd
+    - run: ls
     - run:
         command: make circleci
         no_output_timeout: 7200s
