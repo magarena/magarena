@@ -4,6 +4,5 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}{B}
-effect=Destroy target creature. You may search your library and/or graveyard for a card named Tezzeret, Master of Metal, reveal it, and put it into your hand. If you search your library this way, shuffle it.
 timing=main
 oracle=Destroy target creature. You may search your library and/or graveyard for a card named Tezzeret, Master of Metal, reveal it, and put it into your hand. If you search your library this way, shuffle it.
