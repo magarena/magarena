@@ -8,7 +8,7 @@ subtype=Bird
 cost={2}{W}{W}
 pt=3/3
 ability=Flying;\
-        Whenever SN or another creature enters the battlefield under your control, you get {E}.;\
-        Whenever SN attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it and tap up to one target creature defending player controls.
+        Whenever SN or another creature enters the battlefield under your control, you get {E}.
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever Aetherstorm Roc or another creature enters the battlefield under your control, you get {E}.\nWhenever Aetherstorm Roc attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it and tap up to one target creature defending player controls.
