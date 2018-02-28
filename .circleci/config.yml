@@ -6,7 +6,7 @@ jobs:
     docker:
     - image: openjdk:8
     steps:
-    - run: dpkg --add-architecture i386 && apt-get update && apt-get install -y make ant libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
+    - run: dpkg --add-architecture i386 && apt-get update && apt-get install -y make ant zip libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
     - checkout
     - run:
         command: make circleci
