@@ -5,4 +5,5 @@ rarity=R
 type=Sorcery
 cost={2}{G}
 timing=main
+requires_groovy_code
 oracle=Search your library for up to X basic land cards, where X is the number of tapped creatures you control, and put those cards onto the battlefield tapped. Then shuffle your library.
