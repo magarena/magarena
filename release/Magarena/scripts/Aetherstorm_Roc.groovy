@@ -24,6 +24,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
+                game.addEvent(new MagicPayEnergyEvent(event.getSource(), 2));
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     new MagicMayChoice("Tap a creature?", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
