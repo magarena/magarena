@@ -233,7 +233,6 @@ circleci:
 	$(eval MAG_ID := $(shell date +%s))
 	make games=50 ai1=MMAB ai2=MCTSC ${MAG_ID}.t || (cat ${MAG_ID}.out && tail -20 ${MAG_ID}.log && false)
 	make zips
-	mv release/Magarena.jar *.zip ${CIRCLE_ARTIFACTS}
 
 test-self-play:
 	for i in `seq 1 5`; do \
