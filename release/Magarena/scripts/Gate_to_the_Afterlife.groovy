@@ -39,7 +39,7 @@ def filter = new MagicCardFilterImpl() {
             );
         }
         @Override
-        public MagicEvent executeEvent(final MagicGame game, final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new ChangeLifeAction(event.getPlayer(), 1));
             game.addEvent(new MagicEvent(
                 event.getSource(),
@@ -73,7 +73,7 @@ def filter = new MagicCardFilterImpl() {
             );
         }
         @Override
-        public MagicEvent executeEvent(final MagicGame game, final MagicEvent event) {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
