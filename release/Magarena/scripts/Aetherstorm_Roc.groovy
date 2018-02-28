@@ -12,7 +12,7 @@ def action = {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice("Pay {E}{E}?", new MagicRegularCostEvent("{E}{E}")),
+                new MagicMayChoice("Pay {E}{E}?", new MagicRegularCostEvent("Pay {E}{E}")),
                 this,
                 "PN may\$ pay {E}{E}."
             );
