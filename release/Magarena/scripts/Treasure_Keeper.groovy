@@ -31,8 +31,8 @@ def castAction = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList library = player.getLibrary();
-            def targetPredicate = { final MagicCard card ->  !card.hasType(MagicType.Land) && card.getConvertedCost() <= 3 }
-            def nonTarget = library.takeWhile(targetPredicate.negate());
+            final Predicate<MagicCard> targetPredicate = { !it.hasType(MagicType.Land) && it.getConvertedCost() <= 3 }
+            final MagicCardList nonTarget = library.takeWhile(targetPredicate.negate());
             if (library.any(targetPredicate)) {
                 final MagicCard target = library.find(targetPredicate);
                 game.doAction(new RevealAction(nonTarget.plus(target)));
