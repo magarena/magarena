@@ -1,3 +1,11 @@
+def drawAction = {
+    final MagicGame game, final MagicEvent event ->
+    if (event.isYes()) {
+        game.doAction(new DrawAction(event.getPlayer()));
+        game.addEvent(new MagicDiscardEvent(event.getSource()));
+    }
+}
+
 def condition = {
     final MagicSource source ->
     return source.getController().getGraveyard().count({ it.hasType(MagicType.Creature) }) >= 6;
@@ -17,6 +25,31 @@ def filter = new MagicCardFilterImpl() {
 }
 
 [
+    new OtherDiesTrigger() {
+        @Override
+        public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
+            return permanent.isFriend(died) && died.isNonToken();
+        }
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN gains 1 life."
+            );
+        }
+        @Override
+        public MagicEvent executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new ChangeLifeAction(event.getPlayer(), 1));
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                new MagicMayChoice("Draw a card?"),
+                drawAction,
+                "Then PN may\$ draw a card. If PN does, PN discards a card."
+            ));
+        }
+    },
+
     new MagicPermanentActivation(
         [condition]
         new MagicActivationHints(MagicTiming.Token),
