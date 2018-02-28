@@ -51,7 +51,7 @@ def filter = new MagicCardFilterImpl() {
     },
 
     new MagicPermanentActivation(
-        [condition]
+        [condition],
         new MagicActivationHints(MagicTiming.Token),
         "God-Pharaoh's Gift"
     ) {
