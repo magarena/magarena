@@ -32,7 +32,7 @@ def castAction = {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList library = player.getLibrary();
             def isTarget = { final MagicCard card -> !card.hasType(MagicType.Land) && card.getConvertedCost() <= 3 }
-            final MagicCardList nonTarget = library.takeWhile({ !isTarget(it) });
+            def nonTarget = library.takeWhile({ !isTarget(it) });
             if (library.any(isTarget)) {
                 final MagicCard target = library.find(isTarget);
                 game.doAction(new RevealAction(nonTarget.plus(target)));
