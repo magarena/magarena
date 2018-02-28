@@ -11,3 +11,5 @@ jobs:
     - run:
         command: make circleci
         no_output_timeout: 7200s
+    - store_artifacts:
+        path: /tmp/artifacts
