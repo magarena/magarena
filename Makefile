@@ -347,7 +347,7 @@ decks/update:
 	find decks -size 0 -delete
 
 ref/MagicCompRules_latest.txt:
-	wget `curl http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules | grep -o "http://media.*\.txt"` -O $@
+	wget `curl https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules | grep -o "http://media.*\.txt"` -O $@
 
 ref/rules.txt: ref/MagicCompRules_latest.txt
 	iconv -f ISO-8859-1 -t UTF-8 $^ | fmt -s > $@
