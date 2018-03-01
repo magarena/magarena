@@ -8,7 +8,7 @@ def ZombieStatic = new MagicStatic(MagicLayer.Type) {
 
 def PT = {
     final MagicGame game, final MagicPermanent perm ->
-    game.doAction(new AddStaticAction(perm, MagicStatic.getPTSetStatic(4, 4)));
+    game.doAction(new AddStaticAction(perm, MagicStatic.genPTSetStatic(4, 4)));
 }
 
 def Black = {
@@ -31,7 +31,7 @@ def Zombie = {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer turnPlayer) {
             return new MagicEvent(
                 permanent,
-                MagicMayChoice(new MagicTargetChoice("a creature card from your graveyard")),
+                new MagicMayChoice(new MagicTargetChoice("a creature card from your graveyard")),
                 this,
                 "PN may\$ exile a creature card from PN's graveyard\$. " +
                 "If PN does, PN creates a token that's a copy of that card, except it's a 4/4 black Zombie. It gains haste until end of turn."
