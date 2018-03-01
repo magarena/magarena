@@ -12,7 +12,6 @@ def choice = new MagicTargetChoice("a nonland permanent to sacrifice");
                     MagicChoice.NONE,
                     MagicChoice.NONE
                 ),
-                source.getController(),
                 this,
                 "Choose one\$ — (1) PN lose 3 life; " +
                 "or (2) PN sacrifices a nonland permanent; " +
