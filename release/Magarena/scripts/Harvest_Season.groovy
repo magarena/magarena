@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getPermanents().count({
                 it.hasType(MagicType.Creature) && it.hasState(MagicPermanentState.Tapped)
-            });
+            }).toInteger();
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
