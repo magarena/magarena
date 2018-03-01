@@ -5,10 +5,8 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerState;
 import magic.model.MagicType;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.ChangePlayerStateAction;
 import magic.model.action.TapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
@@ -134,20 +132,6 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
             } else {
                 return MagicEvent.NONE;
             }
-        }
-    };
-
-    public static final OtherEntersBattlefieldTrigger Ascend = new OtherEntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
-        @Override
-        public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-            return permanent.isFriend(played) &&
-                !permanent.getController().hasState(MagicPlayerState.CitysBlessing) &&
-                permanent.getController().getNrOfPermanents() >= 10;
-        }
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-            game.doAction(new ChangePlayerStateAction(permanent.getController(), MagicPlayerState.CitysBlessing));
-            return MagicEvent.NONE;
         }
     };
 
