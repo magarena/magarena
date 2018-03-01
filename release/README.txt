@@ -86,6 +86,7 @@ Sergio Lo Cascio
   * unable to transfer control of Crown of Doom to opponent (issue #1477)
   * Death's Shadow gets +X/+X if player's life total is negative (issue #1462)
   * Dash cost not affected by cost modification effect (issue #1479)
+  * Liberating Combustion does not return Chandra, Pyrogenius from the graveyard (issue #1466)
 
 - added the following cards:
 Angrath's Marauders, Arguel's Blood Fast, Azcanta, the Sunken Ruin,
