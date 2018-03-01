@@ -30,7 +30,7 @@ public class MagicDashActivation extends MagicHandCastActivation {
         return Arrays.asList(
             new MagicPayManaCostEvent(
                 source,
-                cost
+                source.getGameCost(cost)
             )
         );
     }
