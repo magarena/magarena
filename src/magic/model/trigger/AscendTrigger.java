@@ -7,9 +7,15 @@ import magic.model.action.ChangePlayerStateAction;
 import magic.model.event.MagicEvent;
 
 public class AscendTrigger extends OtherEntersBattlefieldTrigger {
+
+    private static final AscendTrigger INSTANCE = new AscendTrigger();
     
-    public AscendTrigger() {
+    private AscendTrigger() {
         super(MagicTrigger.REPLACEMENT);
+    }
+
+    public static final AscendTrigger create() {
+        return INSTANCE;
     }
 
     @Override
