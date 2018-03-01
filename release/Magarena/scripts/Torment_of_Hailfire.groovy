@@ -53,7 +53,7 @@ def action = {
                     "Choose one\$ — (1) PN lose 3 life; " +
                     "or (2) PN sacrifices a nonland permanent; " +
                     "or (3) PN discards a card."
-                );
+                ));
             }
         }
     }
