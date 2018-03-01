@@ -7,7 +7,8 @@ subtype=Bolas
 cost={5}{U}{B}{R}
 loyalty=5
 ability=+3: Each opponent loses 3 life unless that player sacrifices a nonland permanent or discards a card.;\
-        −3: Destroy target creature. Draw a card.;\
-        −11: SN deals 7 damage to each opponent. You draw seven cards.
+        −3: Destroy target creature.~Draw a card.;\
+        −11: SN deals 7 damage to each opponent.~You draw seven cards.
 timing=main
+requires_groovy_code
 oracle=+3: Each opponent loses 3 life unless that player sacrifices a nonland permanent or discards a card.\n−3: Destroy target creature. Draw a card.\n−11: Nicol Bolas, the Deceiver deals 7 damage to each opponent. You draw seven cards.
