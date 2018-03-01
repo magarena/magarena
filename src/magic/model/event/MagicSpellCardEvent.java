@@ -10,9 +10,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPlayerState;
 import magic.model.action.ChangeCardDestinationAction;
-import magic.model.action.ChangePlayerStateAction;
 import magic.model.action.EnqueueTriggerAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicOrChoice;
@@ -39,9 +37,6 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         }
         if (cdef.hasAbility(MagicAbility.HauntSpell)) {
             return Haunt(rule);
-        }
-        if (cdef.hasAbility(MagicAbility.Ascend)) {
-            return Ascend(rule);
         }
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         return new MagicSpellCardEvent() {
@@ -149,31 +144,6 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 } else {
                     event.executeModalEvent(game, effect1, effect2);
                 }
-            }
-        };
-    }
-
-    private static MagicSpellCardEvent Ascend(final String rule) {
-        final MagicSourceEvent effect = MagicRuleEventAction.create(rule);
-        return new MagicSpellCardEvent() {
-            @Override
-            public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                final MagicEvent event = effect.getEvent(cardOnStack);
-                return new MagicEvent(
-                    event.getSource(),
-                    event.getChoice(),
-                    payedCost,
-                    this,
-                    event.getDescription()
-                );
-            }
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                if (!event.getPlayer().hasState(MagicPlayerState.CitysBlessing) &&
-                        event.getPlayer().getNrOfPermanents() >= 10) {
-                    game.doAction(new ChangePlayerStateAction(event.getPlayer(), MagicPlayerState.CitysBlessing));
-                }
-                effect.getAction().executeEvent(game, event);
             }
         };
     }

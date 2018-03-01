@@ -3244,6 +3244,20 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Ascend(
+        "ascend"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> {
+                if (!event.getPlayer().hasState(MagicPlayerState.CitysBlessing) &&
+                        event.getPlayer().getNrOfPermanents() >= 10) {
+                    game.doAction(new ChangePlayerStateAction(event.getPlayer(), MagicPlayerState.CitysBlessing));
+                }
+            };
+        }
+
+    },
     ;
 
     private final Pattern pattern;
