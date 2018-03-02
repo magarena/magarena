@@ -608,7 +608,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new ChangePlayerStateAction(event.getPlayer(), MagicPlayerState.CitysBlessing));
+            game.doAction(new ChangePlayerStateAction(source.getController(), MagicPlayerState.CitysBlessing));
         }
     };
 }
