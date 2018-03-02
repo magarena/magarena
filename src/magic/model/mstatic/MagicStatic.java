@@ -15,6 +15,7 @@ import magic.model.MagicCard;
 import magic.model.MagicManaCost;
 import magic.model.MagicCostManaType;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerState;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -597,4 +598,22 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
         };
     }
+
+    public static MagicStatic Ascend = new MagicStatic(MagicLayer.Game) {
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            final MagicPlayer controller = source.getController();
+            return !controller.hasState(MagicPlayerState.CitysBlessing) && controller.getNrOfPermanents() >= 10;
+        }
+        @Override
+        public void modGame(final MagicPermanent source, final MagicGame outerGame) {
+            outerGame.doAction(new PutStateTriggerOnStackAction(
+                new MagicEvent(
+                    source,
+                    (game, event) -> game.doAction(new ChangePlayerStateAction(event.getPlayer(), MagicPlayerState.CitysBlessing)),
+                    "PN gets the city's blessing for the rest of this game."
+                )
+            ));
+        }
+    };
 }
