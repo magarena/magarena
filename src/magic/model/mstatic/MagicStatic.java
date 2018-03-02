@@ -19,6 +19,7 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.action.ChangePlayerStateAction;
 import magic.model.action.PutStateTriggerOnStackAction;
 import magic.model.action.RemoveStaticAction;
 import magic.model.condition.MagicCondition;
