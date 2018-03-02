@@ -606,14 +606,8 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return !controller.hasState(MagicPlayerState.CitysBlessing) && controller.getNrOfPermanents() >= 10;
         }
         @Override
-        public void modGame(final MagicPermanent source, final MagicGame outerGame) {
-            outerGame.doAction(new PutStateTriggerOnStackAction(
-                new MagicEvent(
-                    source,
-                    (game, event) -> game.doAction(new ChangePlayerStateAction(event.getPlayer(), MagicPlayerState.CitysBlessing)),
-                    "PN gets the city's blessing for the rest of this game."
-                )
-            ));
+        public void modGame(final MagicPermanent source, final MagicGame game) {
+            game.doAction(new ChangePlayerStateAction(event.getPlayer(), MagicPlayerState.CitysBlessing));
         }
     };
 }
