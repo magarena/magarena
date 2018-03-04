@@ -794,6 +794,12 @@ public enum MagicConditionParser {
             return MagicCondition.YOU_ARE_MONARCH;
         }
     },
+    CitysBlessing("you have the city's blessing") {
+        @Override
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_THE_CITYS_BLESSING;
+        }
+    },
     ;
 
     private final Pattern pattern;
