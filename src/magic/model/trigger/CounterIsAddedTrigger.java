@@ -27,7 +27,7 @@ public abstract class CounterIsAddedTrigger extends MagicTrigger<MagicCounterCha
         return new CounterIsAddedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return super.accept(permanent, data) && permanent.getId() == data.object.getId();
+                return super.accept(permanent, data) && permanent.getId() == data.obj.getId();
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
@@ -40,7 +40,7 @@ public abstract class CounterIsAddedTrigger extends MagicTrigger<MagicCounterCha
         return new CounterIsAddedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return super.accept(permanent, data) && permanent.getController().getId() == data.object.getId();
+                return super.accept(permanent, data) && permanent.getController().getId() == data.obj.getId();
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
