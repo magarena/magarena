@@ -1519,6 +1519,15 @@ public enum MagicAbility {
             //Does nothing but it allows text to be part of ability property
         }
     },
+    WhenOneOrMoreCountersArePlacedOnSN("Whenever (you put)? one or more (?<type>[^ ]+) counter(s)? (are placed)? on SN," + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(CounterIsPlacedTrigger.createOneOrMoreSelf(
+                MagicCounterType.getCounterRaw(arg.group("type")),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
 
     // activated card abilities
     CardAbility(".*Discard SN:.*", 10) {
