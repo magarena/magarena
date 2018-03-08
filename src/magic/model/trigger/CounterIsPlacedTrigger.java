@@ -5,13 +5,13 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class CounterIsAddedTrigger extends MagicTrigger<MagicCounterChangeTriggerData> {
+public abstract class CounterIsPlacedTrigger extends MagicTrigger<MagicCounterChangeTriggerData> {
 
-    public CounterIsAddedTrigger(final int priority) {
+    public CounterIsPlacedTrigger(final int priority) {
         super(priority);
     }
 
-    public CounterIsAddedTrigger() {}
+    public CounterIsPlacedTrigger() {}
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
@@ -20,11 +20,11 @@ public abstract class CounterIsAddedTrigger extends MagicTrigger<MagicCounterCha
 
     @Override
     public MagicTriggerType getType() {
-        return MagicTriggerType.WhenCounterIsAdded;
+        return MagicTriggerType.WhenCounterIsPlaced;
     }
 
-    public static CounterIsAddedTrigger createSelf(final MagicSourceEvent sourceEvent) {
-        return new CounterIsAddedTrigger() {
+    public static CounterIsPlacedTrigger createSelf(final MagicSourceEvent sourceEvent) {
+        return new CounterIsPlacedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
                 return super.accept(permanent, data) && permanent.getId() == data.obj.getId();
@@ -36,8 +36,8 @@ public abstract class CounterIsAddedTrigger extends MagicTrigger<MagicCounterCha
         };
     }
 
-    public static CounterIsAddedTrigger createYou(final MagicSourceEvent sourceEvent) {
-        return new CounterIsAddedTrigger() {
+    public static CounterIsPlacedTrigger createYou(final MagicSourceEvent sourceEvent) {
+        return new CounterIsPlacedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
                 return super.accept(permanent, data) && permanent.getController().getId() == data.obj.getId();
