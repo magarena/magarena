@@ -1,9 +1,10 @@
 package magic.model.action;
 
-import magic.model.MagicObject;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.model.trigger.MagicTriggerType;
 
 public class ChangeCountersAction extends MagicAction {
 
@@ -31,6 +32,22 @@ public class ChangeCountersAction extends MagicAction {
         this(obj, counterType, amount, true);
     }
 
+    public MagicObject getObj() {
+        return obj;
+    }
+
+    public MagicCounterType getCounterType() {
+        return counterType;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(final int aAmount) {
+        amount = aAmount;
+    }
+
     @Override
     public void doAction(final MagicGame game) {
         if (amount == 0) {
@@ -40,6 +57,12 @@ public class ChangeCountersAction extends MagicAction {
         obj.changeCounters(counterType, amount);
         if (hasScore && obj.isPermanent()) {
             setScore(obj.getController(), ((MagicPermanent)obj).getScore() - oldScore);
+        }
+
+        if (amount > 0) {
+            game.executeTrigger(MagicTriggerType.WhenCounterIsPlaced, new MagicCounterChangeTriggerData(obj, counterType, amount));
+        } else if (amount < 0) {
+            game.executeTrigger(MagicTriggerType.WhenCounterIsRemoved, new MagicCounterChangeTriggerData(obj, counterType, amount));
         }
         game.setStateCheckRequired();
     }
