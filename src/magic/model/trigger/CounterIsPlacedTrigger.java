@@ -1,5 +1,6 @@
 package magic.model.trigger;
 
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
@@ -23,11 +24,11 @@ public abstract class CounterIsPlacedTrigger extends MagicTrigger<MagicCounterCh
         return MagicTriggerType.WhenCounterIsPlaced;
     }
 
-    public static CounterIsPlacedTrigger createSelf(final MagicSourceEvent sourceEvent) {
+    public static CounterIsPlacedTrigger createOneOrMoreSelf(MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
         return new CounterIsPlacedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return super.accept(permanent, data) && permanent.getId() == data.obj.getId();
+                return super.accept(permanent, data) && permanent.getId() == data.obj.getId() && data.counterType == counterType;
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
