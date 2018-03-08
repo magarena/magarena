@@ -45,5 +45,6 @@ public enum MagicTriggerType {
     CannotBeBlocked,        // MagicPermanent
     CantBlock,              // MagicPermanent
     WhenCounterIsPlaced,    // object, counter placed
+    WhenCounterIsRemoved,   // object, counter removed
     ;
 }
