@@ -1,5 +1,6 @@
 name=Silvergill Adept
-image=https://magiccards.info/scans/en/lw/86.jpg
+image=https://magiccards.info/scans/en/rix/53.jpg
+image_updated=2018-03-12
 value=4.264
 rarity=U
 type=Creature

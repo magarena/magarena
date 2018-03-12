@@ -1,5 +1,6 @@
 name=Shatter
-image=https://magiccards.info/scans/en/ktk/120.jpg
+image=https://magiccards.info/scans/en/rix/114.jpg
+image_updated=2018-03-12
 value=2.500
 rarity=C
 type=Instant
