@@ -4,6 +4,7 @@ public enum MagicSets {
 
     // Release date string should be in YYYY-MM-DD format.
 
+    M25("Masters 25", "2018-03-16"),
     RIX("Rivals of Ixalan", "2018-01-19"),
     IMA("Iconic Masters", "2017-11-17"),
     XLN("Ixalan", "2017-09-29"),
