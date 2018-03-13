@@ -8,5 +8,5 @@ cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature can't attack or block.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.

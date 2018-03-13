@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +1/+1 and has lifelink.;\
         When SN enters the battlefield, create a 1/1 white Vampire creature token with lifelink.
 timing=aura
-enchant=default,creature
+enchant=lifelink,creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1 and has lifelink.\nWhen Squire's Devotion enters the battlefield, create a 1/1 white Vampire creature token with lifelink.

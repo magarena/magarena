@@ -9,5 +9,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
-enchant=default,creature
+enchant=tap,neg creature
 oracle=Enchant creature\nWhen Waterknot enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.
