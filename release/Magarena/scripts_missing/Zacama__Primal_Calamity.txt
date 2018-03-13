@@ -8,7 +8,7 @@ cost={6}{R}{G}{W}
 pt=9/9
 ability=Vigilance, reach, trample;\
         When SN enters the battlefield, if you cast it, untap all lands you control.;\
-        {2}{R}: Zacama deals 3 damage to target creature.;\
+        {2}{R}: SN deals 3 damage to target creature.;\
         {2}{G}: Destroy target artifact or enchantment.;\
         {2}{W}: You gain 3 life.
 timing=main

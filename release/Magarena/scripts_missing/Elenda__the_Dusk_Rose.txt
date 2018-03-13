@@ -8,6 +8,6 @@ cost={2}{W}{B}
 pt=1/1
 ability=Lifelink;\
         Whenever another creature dies, put a +1/+1 counter on SN.;\
-        When Elenda dies, create X 1/1 white Vampire creature tokens with lifelink, where X is Elenda's power.
+        When SN dies, create X 1/1 white Vampire creature tokens with lifelink, where X is SN's power.
 timing=main
 oracle=Lifelink\nWhenever another creature dies, put a +1/+1 counter on Elenda, the Dusk Rose.\nWhen Elenda dies, create X 1/1 white Vampire creature tokens with lifelink, where X is Elenda's power.
