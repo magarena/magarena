@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{B}
-effect=Target creature gets -2/-2 until end of turn. You gain 2 life.
+effect=Target creature gets -2/-2 until end of turn.~You gain 2 life.
 timing=removal
 oracle=Target creature gets -2/-2 until end of turn. You gain 2 life.
