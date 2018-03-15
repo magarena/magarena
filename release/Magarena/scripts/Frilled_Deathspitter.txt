@@ -6,6 +6,6 @@ type=Creature
 subtype=Dinosaur
 cost={2}{R}
 pt=3/2
-ability=Whenever SN is dealt damage, it deals 2 damage to target opponent.
+ability=Whenever SN is dealt damage, SN deals 2 damage to target opponent.
 timing=main
 oracle=Enrage — Whenever Frilled Deathspitter is dealt damage, it deals 2 damage to target opponent.

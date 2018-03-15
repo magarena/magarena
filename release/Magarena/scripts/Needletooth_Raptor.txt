@@ -6,6 +6,6 @@ type=Creature
 subtype=Dinosaur
 cost={3}{R}
 pt=2/2
-ability=Whenever SN is dealt damage, it deals 5 damage to target creature an opponent controls.
+ability=Whenever SN is dealt damage, SN deals 5 damage to target creature an opponent controls.
 timing=main
 oracle=Enrage — Whenever Needletooth Raptor is dealt damage, it deals 5 damage to target creature an opponent controls.

@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
-        When SN enters the battlefield, it deals 1 damage to enchanted creature.;\
+        When SN enters the battlefield, SN deals 1 damage to enchanted creature.;\
         Enchanted creature gets +3/+0 and has trample.
 timing=aura
 enchant=default,creature
