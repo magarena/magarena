@@ -14,17 +14,18 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer()
             final MagicCardList library = player.getLibrary();
-            def nonTarget = library.takeWhile({ !it.hasType(MagicType.Artifact) });
+            def predicate = { final MagicCard card -> card.hasType(MagicType.Artifact) };
+            final MagicCardList nonTarget = (MagicCardList)library.takeWhile({ !predicate(it) });
             int amount = nonTarget.size();
-            if (library.any({ it.hasType(MagicType.Artifact) })) {
-                final MagicCard target = library.find({ it.hasType(MagicType.Artifact) });
+            if (library.any(predicate)) {
+                final MagicCard target = library.find(predicate);
                 game.doAction(new RevealAction(nonTarget.plus(target)));
                 game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, target, player));
                 amount += 1;
             } else {
                 game.doAction(new RevealAction(nonTarget));
             }
-            Collections.shuffle(nonTarget);
+            nonTarget.shuffle();
             nonTarget.each {
                 game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
             }
