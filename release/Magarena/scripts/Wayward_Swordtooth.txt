@@ -7,7 +7,7 @@ subtype=Dinosaur
 cost={2}{G}
 pt=5/5
 ability=Ascend;\
-        You may play an additional land on each of your turns.;\
         SN can't attack or block unless you have the city's blessing.
 timing=main
+requires_groovy_code=Exploration
 oracle=Ascend\nYou may play an additional land on each of your turns.\nWayward Swordtooth can't attack or block unless you have the city's blessing.
