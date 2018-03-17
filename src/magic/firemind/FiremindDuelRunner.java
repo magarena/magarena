@@ -13,6 +13,8 @@ import java.util.regex.Pattern;
 import magic.ai.MagicAIImpl;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
+import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.headless.HeadlessGameController;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeckProfile;
@@ -169,7 +171,7 @@ public class FiremindDuelRunner {
 
             // maximum duration of a game is 60 minutes
             final HeadlessGameController controller = new HeadlessGameController(
-                    game, 3600000);
+                    game, GeneralConfig.get(IntegerSetting.FIREMIND_MATCH_LIMIT) * 1000);
 
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {
