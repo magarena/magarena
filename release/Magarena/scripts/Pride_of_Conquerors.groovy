@@ -20,12 +20,12 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(MagicRuleEventAction.create("ascend").getEvent(event));
-            game.addEvent(
+            game.addEvent(new MagicEvent(
                 event.getSource(),
                 action,
                 "Creatures PN controls get +1/+1 until end of turn. " +
                 "If PN has the city's blessing, those creatures get +2/+2 until end of turn instead."
-            );
+            ));
         }
     }
 ]
