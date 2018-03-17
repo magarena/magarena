@@ -3,15 +3,14 @@ def castAction = {
     final MagicCardList revealed = new MagicCardList(event.getRefCardList());
     if (event.isYes()) {
         final MagicCard toCast = revealed.last();
+        revealed.remove(toCast);
         game.doAction(CastCardAction.WithoutManaCost(
             event.getPlayer(),
             toCast,
             MagicLocationType.OwnersLibrary,
             MagicLocationType.Graveyard
         ));
-        revealed.remove(toCast);
     }
-    Collections.shuffle(revealed);
     revealed.each {
         game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
     }
@@ -31,10 +30,10 @@ def castAction = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList library = player.getLibrary();
-            def isTarget = { final MagicCard card -> !card.hasType(MagicType.Land) && card.getConvertedCost() <= 3 }
-            def nonTarget = library.takeWhile({ !isTarget(it) });
-            if (library.any(isTarget)) {
-                final MagicCard target = library.find(isTarget);
+            def predicate = { final MagicCard card -> !card.hasType(MagicType.Land) && card.getConvertedCost() <= 3 }
+            final MagicCardList nonTarget = (MagicCardList)library.takeWhile({ !predicate(it) });
+            if (library.any(predicate)) {
+                final MagicCard target = library.find(predicate);
                 game.doAction(new RevealAction(nonTarget.plus(target)));
                 game.addEvent(new MagicEvent(
                     event.getSource(),
@@ -46,7 +45,6 @@ def castAction = {
                 ));
             } else {
                 game.doAction(new RevealAction(nonTarget));
-                Collections.shuffle(nonTarget);
                 nonTarget.each {
                     game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
                 }
