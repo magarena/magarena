@@ -37,11 +37,11 @@ def putIntoGraveyardAction = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.getPlayer().getLibrary().getCardsFromTop(1).each {
-                game.doAction(new LookAction(topCard, event.getPlayer(), "top card of your library"));
+                game.doAction(new LookAction(it, event.getPlayer(), "top card of your library"));
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     new MagicMayChoice("Put the card into your graveyard?"),
-                    topCard,
+                    it,
                     putIntoGraveyardAction,
                     "PN may\$ put it into PN's graveyard."
                 ));

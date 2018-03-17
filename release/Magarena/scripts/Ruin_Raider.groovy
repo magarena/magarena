@@ -16,9 +16,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.getPlayer().getLibrary().getCardsFromTop(1).each {
-                game.doAction(new RevealAction(topCard));
-                game.doAction(new ShiftCardAction(topCard, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-                game.doAction(new ChangeLifeAction(event.getPlayer(), -topCard.getConvertedCost()));
+                game.doAction(new RevealAction(it));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
+                game.doAction(new ChangeLifeAction(event.getPlayer(), -it.getConvertedCost()));
             }
         }
     }
