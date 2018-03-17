@@ -41,6 +41,7 @@ def Zombie = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
+                    game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
                     game.doAction(new PlayTokenAction(
                         event.getPlayer(),
                         it,
