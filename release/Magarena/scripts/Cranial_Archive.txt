@@ -1,10 +1,9 @@
 name=Cranial Archive
-image=https://magiccards.info/scans/en/ktk/218.jpg
+image=http://magiccards.info/scans/en/ktk/218.jpg
 value=2.400
 rarity=U
 type=Artifact
 cost={2}
-ability={2}, Exile SN: Target player shuffles his or her graveyard into his or her library. Draw a card.
 timing=artifact
+requires_groovy_code
 oracle={2}, Exile Cranial Archive: Target player shuffles his or her graveyard into his or her library. Draw a card.
-status=needs groovy

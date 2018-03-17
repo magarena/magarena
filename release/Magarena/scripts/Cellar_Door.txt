@@ -4,7 +4,6 @@ value=3.067
 rarity=U
 type=Artifact
 cost={2}
-ability={3}, {T}: Target player puts the bottom card of his or her library into his or her graveyard. If it's a creature card, you create a 2/2 black Zombie creature token.
 timing=artifact
+requires_groovy_code
 oracle={3}, {T}: Target player puts the bottom card of his or her library into his or her graveyard. If it's a creature card, you create a 2/2 black Zombie creature token.
-status=needs groovy
