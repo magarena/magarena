@@ -4,8 +4,8 @@ def putOntoBattlefieldAction = {
     final MagicPlayer opponent = event.getPlayer();
     final MagicCardList rest = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
-        game.doAction(new ReturnCardAction(MagicLocationType.Exile, it, opponent));
         rest.remove(it);
+        game.doAction(new ReturnCardAction(MagicLocationType.Exile, it, opponent));
     });
     rest.each {
         game.doAction(new ReturnCardAction(MagicLocationType.Exile, it, controller));
@@ -29,7 +29,7 @@ def exileAction = {
         new MagicFromCardListChoice(exiled, 1, true),
         exiled,
         putOntoBattlefieldAction,
-        "PN may choose one of the exiled cards\$ and put it onto the battlefield under his or her control. " +
+        "Target player (PN) may choose one of the exiled cards\$ and put it onto the battlefield under his or her control. " +
         "${controller} puts the rest onto the battlefield under ${controller}'s control."
     ));
 }
