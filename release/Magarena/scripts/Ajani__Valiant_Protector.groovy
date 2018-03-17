@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList library = event.getPlayer().getLibrary();
             def predicate = { final MagicCard card -> card.hasType(MagicType.Creature) };
-            final MagicCardList nonTarget = library.takeWhile({ !predicate(it) });
+            final MagicCardList nonTarget = (MagicCardList)library.takeWhile({ !predicate(it) });
             if (library.any(predicate)) {
                 final MagicCard target = library.find(predicate);
                 game.doAction(new RevealAction(nonTarget.plus(target)));
