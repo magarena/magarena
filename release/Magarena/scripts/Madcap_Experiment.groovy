@@ -16,12 +16,11 @@
             final MagicCardList library = player.getLibrary();
             def predicate = { final MagicCard card -> card.hasType(MagicType.Artifact) };
             final MagicCardList nonTarget = (MagicCardList)library.takeWhile({ !predicate(it) });
-            int amount = nonTarget.size();
+            int amount = nonTarget.size() + (library.any(predicate) ? 1 : 0);
             if (library.any(predicate)) {
                 final MagicCard target = library.find(predicate);
                 game.doAction(new RevealAction(nonTarget.plus(target)));
                 game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, target, player));
-                amount += 1;
             } else {
                 game.doAction(new RevealAction(nonTarget));
             }
