@@ -502,7 +502,7 @@ find_single_line_card_code: $(MAG)
 	cat src/magic/card/*.java | sed 's/\s\+//g' | sed 's/(.*)/(...)/g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
 
 find_casts: $(MAG)
-	grep -n "([A-Za-z<>]\+)[A-Za-z]\+" -r src/ > $@
+	grep -n "([A-Za-z<>]\+)[A-Za-z]\+" -r src/ release/Magarena/scripts > $@
 	flip -u $@
 
 find_nulls: $(MAG)
