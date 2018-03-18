@@ -1,5 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
+    final MagicPlayer player = event.getPlayer();
     final Control control = player.hasState(MagicPlayerState.CitysBlessing) ? Control.Opp : Control.Any;
     permanent(MagicType.Creature, control).filter(player).each {
         game.doAction(new ChangeTurnPTAction(it, -2, -2));
