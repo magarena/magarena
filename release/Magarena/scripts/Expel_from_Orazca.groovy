@@ -22,7 +22,7 @@ def action = {
                 if (event.getPlayer().hasState(MagicPlayerState.CitysBlessing)) {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
-                        new MagicMayChoice("Put that permanent on top of its owner's library instead.");
+                        new MagicMayChoice("Put that permanent on top of its owner's library instead?"),
                         it,
                         action,
                         "If PN has the city's blessing, " +
