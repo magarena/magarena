@@ -30,6 +30,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
+                NEG_TARGET_CREATURE,
                 this,
                 "Put three -1/-1 counters on target creature\$. " +
                 "Its controller loses 3 life unless he or she sacrifices a nonland permanent or discards a card."
