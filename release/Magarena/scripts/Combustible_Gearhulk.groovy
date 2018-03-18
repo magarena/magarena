@@ -7,7 +7,7 @@ def choiceAction = {
     } else {
         final MagicAction millAction = new MillLibraryAction(player, 3);
         game.doAction(millAction);
-        final int amount = (int)millAction.getMilledCards()*.getConvertedCost().sum();
+        final int amount = (int)millAction.getMilledCards()*.getConvertedCost().sum(0);
         game.doAction(new DealDamageAction(
             event.getSource(),
             opponent,
