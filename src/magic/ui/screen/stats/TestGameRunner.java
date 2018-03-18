@@ -8,6 +8,8 @@ import javax.swing.SwingWorker;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
+import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.data.stats.MagicStats;
 import magic.exception.InvalidDeckException;
 import magic.headless.HeadlessGameController;
@@ -40,7 +42,7 @@ class TestGameRunner extends SwingWorker<Void, Integer> {
         final MagicGame game = duel.nextGame();
         game.setArtificial(true);
         //maximum duration of a game is 1 minute
-        final HeadlessGameController controller = new HeadlessGameController(game, 60000);
+        final HeadlessGameController controller = new HeadlessGameController(game, GeneralConfig.get(IntegerSetting.TEST_MATCH_LIMIT) * 1000);
         controller.runGame();
         MagicStats.saveGameData(game);
     }
