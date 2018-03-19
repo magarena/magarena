@@ -1,13 +1,13 @@
 name=Hamletback Goliath
-image=https://magiccards.info/scans/en/cn2/163.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/m13/136.jpg
+image_updated=2016-02-29
 value=3.623
 rarity=R
 type=Creature
 subtype=Giant,Warrior
 cost={6}{R}
 pt=6/6
-ability=Whenever another creature enters the battlefield, you may put X +1/+1 counters on SN, where X is that creature's power.
 timing=main
+requires_groovy_code
 oracle=Whenever another creature enters the battlefield, you may put X +1/+1 counters on Hamletback Goliath, where X is that creature's power.
-status=needs groovy
+

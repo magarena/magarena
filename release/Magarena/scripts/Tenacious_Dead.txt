@@ -6,7 +6,6 @@ type=Creature
 subtype=Skeleton,Warrior
 cost={B}
 pt=1/1
-ability=When SN dies, you may pay {1}{B}. If you do, return it to the battlefield tapped under its owner's control.
 timing=main
+requires_groovy_code
 oracle=When Tenacious Dead dies, you may pay {1}{B}. If you do, return it to the battlefield tapped under its owner's control.
-status=needs groovy

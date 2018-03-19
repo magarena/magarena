@@ -4,7 +4,6 @@ value=3.430
 rarity=U
 type=Instant
 cost={1}{R}{W}
-effect=SN deals 3 damage to target creature. Other creatures can't attack this turn.
 timing=removal
+requires_groovy_code
 oracle=Intimidation Bolt deals 3 damage to target creature. Other creatures can't attack this turn.
-status=needs groovy

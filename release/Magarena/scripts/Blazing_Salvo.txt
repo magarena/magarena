@@ -4,7 +4,7 @@ value=3.640
 rarity=C
 type=Instant
 cost={R}
-effect=SN deals 3 damage to target creature unless that creature's controller has SN deal 5 damage to him or her.
 timing=removal
+requires_groovy_code
 oracle=Blazing Salvo deals 3 damage to target creature unless that creature's controller has Blazing Salvo deal 5 damage to him or her.
-status=needs groovy
+
