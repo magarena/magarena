@@ -2,8 +2,9 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final MagicCardList topCards = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
-        topCards.removeCard(it);
+        game.doAction(new RevealAction(it));
         game.doAction(CastCardAction.WithoutManaCost(event.getPlayer(), it, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
+        topCards.removeCard(it);
     });
     topCards.shuffle();
     topCards.each {
