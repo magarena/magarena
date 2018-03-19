@@ -1,6 +1,8 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final MagicLocationType toLocation = event.isYes() ? MagicLocationType.TopOfOwnersLibrary : MagicLocationType.OwnersHand;
+    final MagicLocationType toLocation = event.getChosen().length > 0 && event.isYes() ?
+        MagicLocationType.TopOfOwnersLibrary :
+        MagicLocationType.OwnersHand;
     game.doAction(new RemoveFromPlayAction(event.getRefPermanent(), toLocation));
 }
 
