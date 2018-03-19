@@ -6,8 +6,6 @@ type=Creature
 subtype=Human,Archer,Minion
 cost={2}{B}{B}
 pt=2/2
-ability={T}: Put a bounty counter on target nonblack creature.;\
-        {T}: Destroy target creature with a bounty counter on it.
 timing=main
 oracle={T}: Put a bounty counter on target nonblack creature.\n{T}: Destroy target creature with a bounty counter on it.
-status=needs groovy
+requires_groovy_code

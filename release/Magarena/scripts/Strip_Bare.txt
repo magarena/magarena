@@ -4,7 +4,6 @@ value=2.630
 rarity=C
 type=Instant
 cost={W}
-effect=Destroy all Auras and Equipment attached to target creature.
 timing=removal
 oracle=Destroy all Auras and Equipment attached to target creature.
-status=needs groovy
+requires_groovy_code

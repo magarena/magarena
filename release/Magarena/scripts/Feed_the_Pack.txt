@@ -1,10 +1,9 @@
 name=Feed the Pack
-image=https://magiccards.info/scans/en/dka/114.jpg
+image=http://magiccards.info/scans/en/dka/114.jpg
 value=3.615
 rarity=R
 type=Enchantment
 cost={5}{G}
-ability=At the beginning of your end step, you may sacrifice a nontoken creature. If you do, create X 2/2 green Wolf creature tokens, where X is the sacrificed creature's toughness.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of your end step, you may sacrifice a nontoken creature. If you do, create X 2/2 green Wolf creature tokens, where X is the sacrificed creature's toughness.
-status=needs groovy
