@@ -1,19 +1,18 @@
 def trigger = new AtEndOfTurnTrigger() {
     @Override
-    public boolean accept(final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-        return !permanent.getController().hasState(MagicPlayerState.CitysBlessing);
-    }
-    @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
         return new MagicEvent(
             permanent,
             this,
-            "Exile SN."
+            "Exile SN unless PN has the city's blessing."
         );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
+        if (!event.getPlayer().hasState(MagicPlayerState.CitysBlessing)) {
+            game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
+        }
+        game.doAction(new RemoveTriggerAction(event.getPermanent(), this));
     }
 }
 
