@@ -1,12 +1,13 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final MagicCardList copyTopCards = new MagicCardList(event.getRefCardList());
+    final MagicCardList topCards = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
         final MagicCard chosen ->
+        game.doAction(new RevealAction(chosen));
         game.doAction(new ShiftCardAction(chosen, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-        copyTopCards.remove(chosen);
+        topCards.remove(chosen);
     });
-    copyTopCards.each({
+    topCards.each({
         game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary));
     });
 }
