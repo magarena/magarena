@@ -17,6 +17,11 @@ def trigger = new AtEndOfTurnTrigger() {
     }
 }
 
+def playMod = {
+    final MagicGame game, final MagicPermanent perm ->
+    game.doAction(new AddTriggerAction(perm, trigger));
+}
+
 [
     new ThisAttacksTrigger() {
         @Override
@@ -37,7 +42,7 @@ def trigger = new AtEndOfTurnTrigger() {
                         event.getPlayer(),
                         CardDefinitions.getToken("1/1 red Elemental creature token"),
                         MagicPlayMod.TAPPED_AND_ATTACKING,
-                        { game.doAction(new AddTriggerAction(it, trigger)) }
+                        playMod
                     ));
                 }
             }
