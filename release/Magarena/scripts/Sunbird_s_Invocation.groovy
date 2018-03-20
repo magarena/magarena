@@ -30,15 +30,16 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int cmc = event.getRefInt();
-            final MagicCardList revealedCards = event.getPlayer().getLibrary().getCardsFromTop(cmc);
+            final MagicCardList topCards = event.getPlayer().getLibrary().getCardsFromTop(cmc);
+            game.doAction(new RevealAction(topCards));
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicFromCardListChoice(
-                    revealedCards.findAll({ it.getConvertedCost() <= cmc }),
+                    topCards.findAll({ it.getConvertedCost() <= cmc }),
                     1,
                     true
                 ),
-                revealedCards,
+                topCards,
                 action,
                 "PN may cast a card revealed this way with converted mana cost ${cmc} or less\$ without paying its mana cost. " +
                 "Put the rest on the bottom of PN's library in a random order."
