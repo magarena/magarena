@@ -2,10 +2,9 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final MagicCardList topCards = new MagicCardList(event.getRefCardList());
     event.processChosenCards(game, {
-        final MagicCard chosen ->
-        game.doAction(new RevealAction(chosen));
-        game.doAction(new ShiftCardAction(chosen, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-        topCards.remove(chosen);
+        game.doAction(new RevealAction(it));
+        game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
+        topCards.remove(it);
     });
     topCards.each({
         game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary));
@@ -26,6 +25,7 @@ def action = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList topCards = player.getLibrary().getCardsFromTop(5);
+            game.doAction(new LookAction(topCards, player, "top five cards of your library"));
             game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicFromCardListChoice(
