@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}
-ability=At the beginning of your upkeep, create X 2/2 green Wolf creature tokens, where X is the number of your opponents with four or more cards in hand.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of your upkeep, create X 2/2 green Wolf creature tokens, where X is the number of your opponents with four or more cards in hand.
-status=needs groovy
+# Correct with 2 player game. Need changes if 3+ players will be supported in the future

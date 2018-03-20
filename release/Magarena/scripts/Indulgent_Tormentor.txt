@@ -1,0 +1,12 @@
+name=Indulgent Tormentor
+image=https://magiccards.info/scans/en/m15/101.jpg
+value=4.000
+rarity=R
+type=Creature
+subtype=Demon
+cost={3}{B}{B}
+pt=5/3
+ability=Flying
+timing=main
+oracle=Flying\nAt the beginning of your upkeep, draw a card unless target opponent sacrifices a creature or pays 3 life.
+requires_groovy_code

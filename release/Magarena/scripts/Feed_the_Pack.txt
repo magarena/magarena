@@ -1,5 +1,5 @@
 name=Feed the Pack
-image=http://magiccards.info/scans/en/dka/114.jpg
+image=https://magiccards.info/scans/en/dka/114.jpg
 value=3.615
 rarity=R
 type=Enchantment

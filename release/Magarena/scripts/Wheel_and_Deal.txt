@@ -4,7 +4,7 @@ value=3.106
 rarity=R
 type=Instant
 cost={3}{U}
-effect=Any number of target opponents each discard their hands, then draw seven cards.~Draw a card.
 timing=removal
+requires_groovy_code
 oracle=Any number of target opponents each discard their hands, then draw seven cards.\nDraw a card.
-status=needs groovy
+# Correct with 2 player game. Need changes if 3+ players will be supported in the future
