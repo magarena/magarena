@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(TAPPED_CREATURE_YOU_CONTROL);
-            game.logAppendX(event.getPlayer(),lands);
+            game.logAppendX(event.getPlayer(), amount);
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
