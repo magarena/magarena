@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
-ability=Ascend;\
-        At the beginning of your upkeep, each player draws a card. If you have the city's blessing, instead only you draw a card.
+ability=Ascend
 timing=enchantment
+requires_groovy_code
 oracle=Ascend\nAt the beginning of your upkeep, each player draws a card. If you have the city's blessing, instead only you draw a card.

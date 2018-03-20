@@ -311,6 +311,16 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicProcessorEvent(source);
         }
+    },
+    PutSelfOnBottomLibrary("Put SN on the bottom of its owner's library") {
+        @Override
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicPutOnBottomLibraryEvent((MagicPermanent)source);
+        }
+        @Override
+        public boolean isIndependent() {
+            return false;
+        }
     }
     ;
 

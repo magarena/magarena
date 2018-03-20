@@ -9,3 +9,4 @@ ability=Ascend;\
         Creatures you control of the chosen type get +1/+1. As long as you have the city's blessing, they also have vigilance.
 timing=enchantment
 oracle=Ascend\nAs Radiant Destiny enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +1/+1. As long as you have the city's blessing, they also have vigilance.
+status=not supported: choose-creature-type
