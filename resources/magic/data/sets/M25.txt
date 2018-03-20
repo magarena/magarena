@@ -1,0 +1,249 @@
+Accumulated Knowledge
+Act of Heroism
+Act of Treason
+Ainok Survivalist
+Akroma, Angel of Fury
+Akroma, Angel of Wrath
+Akroma's Vengeance
+Ambassador Oak
+Ancient Craving
+Ancient Stirrings
+Angelic Page
+Animar, Soul of Elements
+Arbor Elf
+Arcane Denial
+Armageddon
+Ash Barrens
+Assembly-Worker
+Auramancer
+Azusa, Lost but Seeking
+Balduvian Horde
+Ball Lightning
+Baloth Null
+Bident of Thassa
+Blightning
+Blood Moon
+Bloodhunter Bat
+Blue Elemental Blast
+Blue Sun's Zenith
+Boros Charm
+Borrowing 100,000 Arrows
+Brainstorm
+Brine Elemental
+Brion Stoutarm
+Broodhatch Nantuko
+Browbeat
+Cascade Bluffs
+Caustic Tar
+Chalice of the Void
+Chandra's Outrage
+Chartooth Cougar
+Choking Tethers
+Cinder Storm
+Cloudblazer
+Cloudshift
+Coalition Relic
+Colossal Dreadmaw
+Conflux
+Congregate
+Coralhelm Guide
+Counterspell
+Courser of Kruphix
+Court Hussar
+Crimson Mage
+Cultivate
+Curiosity
+Cursecatcher
+Darien, King of Kjeldor
+Dark Ritual
+Dauntless Cathar
+Deadly Designs
+Death's-Head Buzzard
+Decree of Justice
+Diabolic Edict
+Dirge of Dread
+Disenchant
+Disfigure
+Doomsday
+Dragon's Eye Savants
+Dusk Legion Zealot
+Echoing Courage
+Eidolon of the Great Revel
+Eladamri's Call
+Elvish Aberration
+Elvish Piper
+Ember Weaver
+Ensnaring Bridge
+Enthralling Victor
+Epic Confrontation
+Erg Raiders
+Exclude
+Fallen Angel
+Fathom Seer
+Fencing Ace
+Fetid Heath
+Fiend Hunter
+Fierce Empath
+Flash
+Flooded Grove
+Fortune Thief
+Freed from the Real
+Frenzied Goblin
+Geist of the Moors
+Genju of the Falls
+Genju of the Spires
+Ghost Ship
+Giant Growth
+Gisela, Blade of Goldnight
+Goblin War Drums
+Gods Willing
+Grenzo, Dungeon Warden
+Griffin Protector
+Hanna, Ship's Navigator
+Haunted Fengraf
+Heavy Arbalest
+Hell's Caretaker
+Hordeling Outburst
+Horror of the Broken Lands
+Horseshoe Crab
+Humble Defector
+Ihsan's Shade
+Imperial Recruiter
+Invigorate
+Ire Shaman
+Iwamori of the Open Fist
+Izzet Chemister
+Jace, the Mind Sculptor
+Jackal Pup
+Jalira, Master Polymorphist
+Karona's Zealot
+Kavu Climber
+Kavu Predator
+Kindle
+Knight of the Skyward Eye
+Kongming, "Sleeping Dragon"
+Kor Firewalker
+Krosan Colossus
+Krosan Tusker
+Laquatus's Champion
+Lightning Bolt
+Living Death
+Living Wish
+Lorescale Coatl
+Loyal Sentry
+Lull
+Luminarch Ascension
+Lunarch Mantle
+Magus of the Wheel
+Man-o'-War
+Master of the Wild Hunt
+Merfolk Looter
+Mesmeric Fiend
+Mikokoro, Center of the Sea
+Mishra's Factory
+Mogg Flunkies
+Murder
+Murder of Crows
+Myriad Landscape
+Mystic Snake
+Mystic of the Hidden Way
+Nettle Sentinel
+Nezumi Cutthroat
+Nicol Bolas
+Nihil Spellbomb
+Niv-Mizzet, the Firemind
+Noble Templar
+Notion Thief
+Nyx-Fleece Ram
+Ordeal of Heliod
+Pacifism
+Pact of Negation
+Path of Peace
+Pendelhaven
+Perilous Myr
+Pernicious Deed
+Phantasmal Bear
+Phyrexian Ghoul
+Phyrexian Obliterator
+Pillage
+Pillory of the Sleepless
+Plague Wind
+Plummet
+Presence of Gond
+Primal Clay
+Promise of Bunrei
+Prophetic Prism
+Prossh, Skyraider of Kher
+Protean Hulk
+Pyre Hound
+Pyroclasm
+Quicksand
+Quicksilver Dagger
+Rancor
+Ratcatcher
+Ravenous Chupacabra
+Red Elemental Blast
+Reef Worm
+Regrowth
+Relentless Rats
+Renewed Faith
+Rest in Peace
+Retraction Helix
+Returned Phalanx
+Rishadan Port
+Rugged Prairie
+Ruric Thar, the Unbowed
+Ruthless Ripper
+Sai of the Shinobi
+Savannah Lions
+Self-Assembler
+Shadowmage Infiltrator
+Shoreline Ranger
+Sift
+Simian Spirit Guide
+Skeletonize
+Skirk Commando
+Soulbright Flamekin
+Spikeshot Goblin
+Squadron Hawk
+Stampede Driver
+Stangg
+Street Wraith
+Strionic Resonator
+Summoner's Pact
+Sundering Titan
+Supernatural Stamina
+Swiftfoot Boots
+Swords to Plowshares
+Thalia, Guardian of Thraben
+Thresher Lizard
+Timberpack Wolf
+Totally Lost
+Treasure Keeper
+Tree of Redemption
+Triskaidekaphobia
+Trumpet Blast
+Twilight Mire
+Twisted Abomination
+Twisted Image
+Uncaged Fury
+Undead Gladiator
+Unearth
+Urbis Protector
+Utopia Sprawl
+Valor in Akros
+Vampire Lacerator
+Vendilion Clique
+Vessel of Nascency
+Vesuvan Shapeshifter
+Vindicate
+Watchwolf
+Whitemane Lion
+Wildheart Invoker
+Will-o'-the-Wisp
+Willbender
+Woolly Loxodon
+Zada, Hedron Grinder
+Zoetic Cavern
+Zombify
+Zulaport Cutthroat

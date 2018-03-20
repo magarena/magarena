@@ -8,6 +8,6 @@ cost={2}{W}{W}{U}{U}
 pt=6/6
 ability=Flying;\
         When SN enters the battlefield, each opponent can't cast instant or sorcery spells during that player's next turn.;\
-        Whenever Azor attacks, you may pay {X}{W}{U}{U}. If you do, you gain X life and draw X cards.
+        Whenever SN attacks, you may pay {X}{W}{U}{U}. If you do, you gain X life and draw X cards.
 timing=main
 oracle=Flying\nWhen Azor, the Lawbringer enters the battlefield, each opponent can't cast instant or sorcery spells during that player's next turn.\nWhenever Azor attacks, you may pay {X}{W}{U}{U}. If you do, you gain X life and draw X cards.

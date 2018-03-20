@@ -4,6 +4,8 @@ import java.io.File;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckGenerators;
 import magic.data.DuelConfig;
+import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.exception.handler.ConsoleExceptionHandler;
 import magic.headless.HeadlessGameController;
 import magic.model.DuelPlayerConfig;
@@ -192,8 +194,7 @@ public class DeckStrCal {
             final MagicGame game=testDuel.nextGame();
             game.setArtificial(true);
 
-            //maximum duration of a game is 60 minutes
-            final HeadlessGameController controller = new HeadlessGameController(game, 3600000);
+            final HeadlessGameController controller = new HeadlessGameController(game, GeneralConfig.get(IntegerSetting.AI_DUEL_MATCH_LIMIT) * 1000);
 
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {

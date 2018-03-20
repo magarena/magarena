@@ -1,0 +1,10 @@
+name=Wheel and Deal
+image=https://magiccards.info/scans/en/on/121.jpg
+value=3.106
+rarity=R
+type=Instant
+cost={3}{U}
+timing=removal
+requires_groovy_code
+oracle=Any number of target opponents each discard their hands, then draw seven cards.\nDraw a card.
+# Correct with 2 player game. Need changes if 3+ players will be supported in the future

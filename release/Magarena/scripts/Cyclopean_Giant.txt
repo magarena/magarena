@@ -1,0 +1,12 @@
+name=Cyclopean Giant
+image=https://magiccards.info/scans/en/ts/100.jpg
+value=2.988
+rarity=C
+type=Creature
+subtype=Zombie,Giant
+cost={2}{B}{B}
+pt=4/2
+timing=main
+requires_groovy_code
+oracle=When Cyclopean Giant dies, target land becomes a Swamp. Exile Cyclopean Giant.
+

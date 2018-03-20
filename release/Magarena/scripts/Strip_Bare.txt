@@ -1,0 +1,9 @@
+name=Strip Bare
+image=https://magiccards.info/scans/en/shm/24.jpg
+value=2.630
+rarity=C
+type=Instant
+cost={W}
+timing=removal
+oracle=Destroy all Auras and Equipment attached to target creature.
+requires_groovy_code

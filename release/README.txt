@@ -73,6 +73,48 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.92 (February 28, 2018)
+============
+Fulmene
+kelsioboy
+melvin
+Sergio Lo Cascio
+
+- update Italian translation
+
+- fixed the following bugs:
+  * unable to transfer control of Crown of Doom to opponent (issue #1477)
+  * Death's Shadow gets +X/+X if player's life total is negative (issue #1462)
+  * Dash cost not affected by cost modification effect (issue #1479)
+  * Liberating Combustion does not return Chandra, Pyrogenius from the graveyard (issue #1466)
+
+- added the following cards:
+Angrath's Marauders, Arguel's Blood Fast, Azcanta, the Sunken Ruin,
+black Vampire creature token, Chandra's Defeat, Chart a Course,
+Commune with Dinosaurs, Conqueror's Foothold, Conqueror's Galleon,
+Deadeye Quartermaster, Deathgorge Scavenger, Entrancing Melody,
+Fathom Fleet Cutthroat, Field of Ruin, Firecannon Blast, Fleet Swallower,
+Gideon's Defeat, Grim Captain's Call, Herald of Secret Streams, Hostility,
+Hour of Devastation, Huatli, Radiant Champion, Huatli's Spurring,
+Imminent Doom, Kalitas, Bloodchief of Ghet, Kiora, the Crashing Wave,
+Kumena's Speaker, Liliana's Defeat, Nissa's Defeat, Oketra's Last Mercy,
+Old-Growth Dryads, Pharika, God of Affliction, Purity, River Darter,
+Rowdy Crew, Ruin Raider, Sanguine Sacrament, Saving Grace,
+Seafloor Oracle, Search for Azcanta, Sekki, Seasons' Guide,
+Servant of the Scale, Settle the Wreckage, Silverclad Ferocidons,
+Siren Reaver, Siren's Ruse, Siren Stormtamer, Sorin, Solemn Visitor,
+Spell Swindle, Storm Fleet Sprinter, Strength of the Pack,
+Sunbird's Invocation, Sun-Blessed Mount, Sun-Collared Raptor,
+Sun-Crested Pterodon, Sun Sentinel, Swab Goblin, Swaggering Corsair,
+Swarm Intelligence, Swift Warden, Sword-Point Diplomacy,
+Sworn Guardian, Temple of Aclazotz, Tenacious Hunter, The Locust God,
+The Scorpion God, Thrashing Brontodon, Tishana, Voice of Thunder,
+Tragic Lesson, Trapjaw Tyrant, Treasure Cove, Treasure Map,
+Tyrannize, Vampire Champion, Vampire Revenant, Vampire's Zeal,
+Verdant Sun's Avatar, Vile Manifestation, Vindictive Lich,
+Visage of Bolas, Vraska's Conquistador, Wasp of the Bitter End,
+Woebringer Demon, Zetalpa, Primal Dawn
+
 Release 1.91 (January 27, 2017)
 ============
 Fulmene

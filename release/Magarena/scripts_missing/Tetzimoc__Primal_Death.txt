@@ -8,6 +8,6 @@ cost={4}{B}{B}
 pt=6/6
 ability=Deathtouch;\
         {B}, Reveal SN from your hand: Put a prey counter on target creature. Activate this ability only during your turn.;\
-        When Tetzimoc enters the battlefield, destroy each creature your opponents control with a prey counter on it.
+        When SN enters the battlefield, destroy each creature your opponents control with a prey counter on it.
 timing=main
 oracle=Deathtouch\n{B}, Reveal Tetzimoc, Primal Death from your hand: Put a prey counter on target creature. Activate this ability only during your turn.\nWhen Tetzimoc enters the battlefield, destroy each creature your opponents control with a prey counter on it.

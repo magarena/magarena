@@ -3,6 +3,8 @@ package magic;
 import java.util.Collections;
 import magic.ai.MagicAI;
 import magic.data.DuelConfig;
+import magic.data.GeneralConfig;
+import magic.data.settings.IntegerSetting;
 import magic.exception.handler.ConsoleExceptionHandler;
 import magic.headless.HeadlessGameController;
 import magic.model.MagicDeck;
@@ -114,7 +116,7 @@ public class HeadlessAIGame {
 
             //maximum duration of a game is 10 minutes
             final HeadlessGameController controller = new HeadlessGameController(
-                game, 600000
+                game, GeneralConfig.get(IntegerSetting.AI_DUEL_MATCH_LIMIT) * 1000
             );
 
             final long start_time = System.currentTimeMillis();

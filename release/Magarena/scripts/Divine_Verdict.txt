@@ -1,6 +1,6 @@
 name=Divine Verdict
-image=https://magiccards.info/scans/en/ori/274.jpg
-image_updated=2010-09-10
+image=https://magiccards.info/scans/en/rix/5.jpg
+image_updated=2018-03-12
 value=2.400
 rarity=C
 type=Instant

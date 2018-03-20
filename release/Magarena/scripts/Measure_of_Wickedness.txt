@@ -1,0 +1,10 @@
+name=Measure of Wickedness
+image=https://magiccards.info/scans/en/sok/82.jpg
+value=3.852
+rarity=U
+type=Enchantment
+cost={3}{B}
+ability=At the beginning of your end step, sacrifice SN~and you lose 8 life.
+timing=enchantment
+oracle=At the beginning of your end step, sacrifice Measure of Wickedness and you lose 8 life.\nWhenever another card is put into your graveyard from anywhere, target opponent gains control of Measure of Wickedness.
+requires_groovy_code

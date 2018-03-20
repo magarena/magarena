@@ -1,0 +1,11 @@
+name=Brazen Freebooter
+image=https://magiccards.info/scans/en/rix/95.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, create a colorless Treasure artifact token.
+timing=main
+oracle=When Brazen Freebooter enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

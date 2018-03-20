@@ -1,0 +1,10 @@
+name=Long Road Home
+image=https://magiccards.info/scans/en/emn/34.jpg
+image_updated=2016-09-05
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+timing=removal
+oracle=Exile target creature. At the beginning of the next end step, return that card to the battlefield under its owner's control with a +1/+1 counter on it.
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Vona's Hunger
+image=https://magiccards.info/scans/en/rix/90.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{B}
+timing=removal
+requires_groovy_code
+oracle=Ascend\nEach opponent sacrifices a creature. If you have the city's blessing, instead each opponent sacrifices half the creatures he or she controls, rounded up.

@@ -9,6 +9,6 @@ pt=7/7
 ability=SN can't be countered.;\
         You have no maximum hand size.;\
         Whenever an opponent casts a noncreature spell, draw a card.;\
-        Discard three cards: Exile Nezahal. Return it to the battlefield tapped under its owner's control at the beginning of the next end step.
+        Discard three cards: Exile SN. Return it to the battlefield tapped under its owner's control at the beginning of the next end step.
 timing=main
 oracle=Nezahal, Primal Tide can't be countered.\nYou have no maximum hand size.\nWhenever an opponent casts a noncreature spell, draw a card.\nDiscard three cards: Exile Nezahal. Return it to the battlefield tapped under its owner's control at the beginning of the next end step.

@@ -1,0 +1,12 @@
+name=Gleaming Barrier
+image=https://magiccards.info/scans/en/rix/178.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Wall
+cost={2}
+pt=0/4
+ability=Defender;\
+        When SN dies, create a colorless Treasure artifact token.
+timing=smain
+oracle=Defender\nWhen Gleaming Barrier dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."

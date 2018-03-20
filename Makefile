@@ -233,7 +233,8 @@ circleci:
 	$(eval MAG_ID := $(shell date +%s))
 	make games=50 ai1=MMAB ai2=MCTSC ${MAG_ID}.t || (cat ${MAG_ID}.out && tail -20 ${MAG_ID}.log && false)
 	make zips
-	mv release/Magarena.jar *.zip ${CIRCLE_ARTIFACTS}
+	mkdir /tmp/artifacts
+	mv release/Magarena.jar *.zip /tmp/artifacts
 
 test-self-play:
 	for i in `seq 1 5`; do \
@@ -346,7 +347,7 @@ decks/update:
 	find decks -size 0 -delete
 
 ref/MagicCompRules_latest.txt:
-	wget `curl http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules | grep -o "http://media.*\.txt"` -O $@
+	wget `curl https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules | grep -o "http://media.*\.txt"` -O $@
 
 ref/rules.txt: ref/MagicCompRules_latest.txt
 	iconv -f ISO-8859-1 -t UTF-8 $^ | fmt -s > $@
@@ -501,7 +502,7 @@ find_single_line_card_code: $(MAG)
 	cat src/magic/card/*.java | sed 's/\s\+//g' | sed 's/(.*)/(...)/g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
 
 find_casts: $(MAG)
-	grep -n "([A-Za-z<>]\+)[A-Za-z]\+" -r src/ > $@
+	grep -n "([A-Za-z<>]\+)[A-Za-z]\+" -r src/ release/Magarena/scripts > $@
 	flip -u $@
 
 find_nulls: $(MAG)

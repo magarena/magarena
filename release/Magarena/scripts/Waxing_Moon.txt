@@ -1,0 +1,11 @@
+name=Waxing Moon
+image=https://magiccards.info/scans/en/emn/177.jpg
+image_updated=2016-09-05
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+timing=removal
+requires_groovy_code
+oracle=Transform up to one target Werewolf you control. Creatures you control gain trample until end of turn.
+

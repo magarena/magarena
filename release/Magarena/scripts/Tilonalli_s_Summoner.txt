@@ -1,0 +1,12 @@
+name=Tilonalli's Summoner
+image=https://magiccards.info/scans/en/rix/121.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}
+pt=1/1
+ability=Ascend
+timing=main
+requires_groovy_code
+oracle=Ascend\nWhenever Tilonalli's Summoner attacks, you may pay {X}{R}. If you do, create X 1/1 red Elemental creature tokens that are tapped and attacking. At the beginning of the next end step, exile those tokens unless you have the city's blessing.

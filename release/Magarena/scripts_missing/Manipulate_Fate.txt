@@ -1,9 +1,0 @@
-name=Manipulate Fate
-image=https://magiccards.info/scans/en/in/60.jpg
-value=2.750
-rarity=U
-type=Sorcery
-cost={1}{U}
-effect=Search your library for three cards, exile them, then shuffle your library.~Draw a card.
-timing=main
-oracle=Search your library for three cards, exile them, then shuffle your library.\nDraw a card.

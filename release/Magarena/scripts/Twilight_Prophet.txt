@@ -1,0 +1,13 @@
+name=Twilight Prophet
+image=https://magiccards.info/scans/en/rix/88.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Vampire,Cleric
+cost={2}{B}{B}
+pt=2/4
+ability=Flying;\
+        Ascend
+timing=main
+requires_groovy_code
+oracle=Flying\nAscend\nAt the beginning of your upkeep, if you have the city's blessing, reveal the top card of your library and put it into your hand. Each opponent loses X life and you gain X life, where X is that card's converted mana cost.

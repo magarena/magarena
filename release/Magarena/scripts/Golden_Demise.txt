@@ -1,0 +1,9 @@
+name=Golden Demise
+image=https://magiccards.info/scans/en/rix/73.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{B}{B}
+timing=main
+requires_groovy_code
+oracle=Ascend\nAll creatures get -2/-2 until end of turn. If you have the city's blessing, instead only creatures your opponents control get -2/-2 until end of turn.

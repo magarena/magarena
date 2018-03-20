@@ -1,0 +1,10 @@
+name=1/1 black and green Snake enchantment creature token with deathtouch
+token=Snake
+image=https://magiccards.info/extras/token/journey-into-nyx/snake.jpg
+value=1
+type=Enchantment,Creature
+subtype=Snake
+color=bg
+pt=1/1
+ability=Deathtouch
+oracle=Deathtouch

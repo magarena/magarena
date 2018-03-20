@@ -1,8 +1,8 @@
 name=Stone Quarry
-image=https://magiccards.info/scans/en/xln/289.jpg
-image_updated=2017-10-30
+image=https://magiccards.info/scans/en/rix/190.jpg
+image_updated=2018-03-12
 value=2.500
-rarity=C
+rarity=U
 type=Land
 mana=r3w3
 ability=SN enters the battlefield tapped.;\

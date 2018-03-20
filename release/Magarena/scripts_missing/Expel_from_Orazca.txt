@@ -1,9 +1,0 @@
-name=Expel from Orazca
-image=https://magiccards.info/scans/en/rix/37.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={1}{U}
-effect=Ascend~Return target nonland permanent to its owner's hand. If you have the city's blessing, you may put that permanent on top of its owner's library instead.
-timing=removal
-oracle=Ascend\nReturn target nonland permanent to its owner's hand. If you have the city's blessing, you may put that permanent on top of its owner's library instead.

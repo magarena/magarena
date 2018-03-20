@@ -1,9 +1,0 @@
-name=Moment of Triumph
-image=https://magiccards.info/scans/en/rix/15.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={W}
-effect=Target creature gets +2/+2 until end of turn. You gain 2 life.
-timing=removal
-oracle=Target creature gets +2/+2 until end of turn. You gain 2 life.

@@ -1,10 +1,10 @@
 name=Traveler's Amulet
-image=https://magiccards.info/scans/en/hou/167.jpg
-image_updated=2017-09-29
+image=https://magiccards.info/scans/en/rix/184.jpg
+image_updated=2018-03-12
 value=3.109
 rarity=C
 type=Artifact
 cost={1}
-ability={1}, Sacrifice SN: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+ability={1}, Sacrifice SN: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.
 timing=artifact
-oracle={1}, Sacrifice Traveler's Amulet: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+oracle={1}, Sacrifice Traveler's Amulet: Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.

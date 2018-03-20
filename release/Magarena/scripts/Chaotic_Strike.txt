@@ -1,0 +1,10 @@
+name=Chaotic Strike
+image=https://magiccards.info/scans/en/in/140.jpg
+value=1.324
+rarity=U
+type=Instant
+cost={1}{R}
+ability=Cast SN only during combat after blockers are declared.
+timing=removal
+requires_groovy_code
+oracle=Cast Chaotic Strike only during combat after blockers are declared.\nFlip a coin. If you win the flip, target creature gets +1/+1 until end of turn.\nDraw a card.

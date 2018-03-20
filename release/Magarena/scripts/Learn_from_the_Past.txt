@@ -1,0 +1,10 @@
+name=Learn from the Past
+image=https://magiccards.info/scans/en/dtk/60.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+timing=removal
+requires_groovy_code
+oracle=Target player shuffles his or her graveyard into his or her library.\nDraw a card.
+

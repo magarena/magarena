@@ -1,9 +1,0 @@
-name=Flood of Recollection
-image=https://magiccards.info/scans/en/rix/38.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={U}{U}
-effect=Return target instant or sorcery card from your graveyard to your hand. Exile SN.
-timing=main
-oracle=Return target instant or sorcery card from your graveyard to your hand. Exile Flood of Recollection.

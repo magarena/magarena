@@ -220,6 +220,10 @@ public class MagicCard
         return getGame().modCost(this, getCost());
     }
 
+    public MagicManaCost getGameCost(final MagicManaCost cost) {
+        return getGame().modCost(this, cost);
+    }
+
     public Iterable<MagicEvent> getCostEvent() {
         return getCardDefinition().getCostEvent(this);
     }

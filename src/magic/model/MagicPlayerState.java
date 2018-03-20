@@ -8,7 +8,8 @@ public enum MagicPlayerState {
     HasLostLife(""),
     HasGainedLife(""),
     Monarch(""),
-    Revolt("") //has had a controlled permanent leave the battlefield
+    Revolt(""), //has had a controlled permanent leave the battlefield
+    CitysBlessing("")
     ;
 
     private final String description;
@@ -16,7 +17,8 @@ public enum MagicPlayerState {
 
     // states that persist after cleanup
     public static final int CLEANUP_MASK =
-        Monarch.getMask();
+        Monarch.getMask() |
+        CitysBlessing.getMask();
 
     // states that persist during a turn
     public static final int TURN_MASK =
@@ -24,7 +26,8 @@ public enum MagicPlayerState {
         WasDealtDamage.getMask() |
         HasLostLife.getMask() |
         HasGainedLife.getMask() |
-        Revolt.getMask();
+        Revolt.getMask() |
+        CitysBlessing.getMask();
 
     private MagicPlayerState(final String description) {
         this.description=description;

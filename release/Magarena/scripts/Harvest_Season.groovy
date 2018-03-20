@@ -6,14 +6,13 @@
                 cardOnStack,
                 this,
                 "PN searches PN's library for up to X basic land cards, where X is the number of tapped creatures PN controls, " +
-                "and put those cards onto the battlefield tapped. Then shuffle PN's library."
+                "and puts those cards onto the battlefield tapped. Then shuffle PN's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getPermanents().count({
-                it.hasType(MagicType.Creature) && it.hasState(MagicPermanentState.Tapped)
-            }).toInteger();
+            final int amount = event.getPlayer().getNrOfPermanents(TAPPED_CREATURE_YOU_CONTROL);
+            game.logAppendX(event.getPlayer(),lands);
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
@@ -27,4 +26,3 @@
         }
     }
 ]
-

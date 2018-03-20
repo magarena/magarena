@@ -1,0 +1,9 @@
+name=Intimidation Bolt
+image=https://magiccards.info/scans/en/arb/99.jpg
+value=3.430
+rarity=U
+type=Instant
+cost={1}{R}{W}
+timing=removal
+requires_groovy_code
+oracle=Intimidation Bolt deals 3 damage to target creature. Other creatures can't attack this turn.
