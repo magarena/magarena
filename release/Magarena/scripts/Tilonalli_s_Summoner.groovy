@@ -12,13 +12,13 @@ def trigger = new AtEndOfTurnTrigger() {
         if (!event.getPlayer().hasState(MagicPlayerState.CitysBlessing)) {
             game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
         }
-        game.doAction(new RemoveTriggerAction(event.getPermanent(), this));
     }
 }
 
 def playMod = {
-    final MagicGame game, final MagicPermanent perm ->
-    game.doAction(new AddTriggerAction(perm, trigger));
+    final MagicPermanent perm ->
+    final MagicGame game = perm.getGame();
+    game.doAction(new AddTurnTriggerAction(perm, trigger));
 }
 
 [
