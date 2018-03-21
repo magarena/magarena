@@ -39,13 +39,13 @@ def searchAction = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DestroyAction(it));
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicMayChoice("Search for Tezzeret, Master of Metal?"),
+                    searchAction,
+                    "PN may\$ search PN's library and/or graveyard for a card named Tezzeret, Master of Metal, reveal it, and put it into PN's hand. If PN search his or her library this way, shuffle it."
+                ));
             });
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                new MagicMayChoice("Search for Tezzeret, Master of Metal?"),
-                searchAction,
-                "PN may\$ search PN's library and/or graveyard for a card named Tezzeret, Master of Metal, reveal it, and put it into PN's hand. If PN search his or her library this way, shuffle it."
-            ));
         }
     }
 ]
