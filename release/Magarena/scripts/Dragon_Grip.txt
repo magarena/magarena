@@ -5,10 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-ability=If you control a creature with power 4 or greater, you may cast SN as though it had flash.;\
-        Enchant creature;\
+ability=Enchant creature;\
         Enchanted creature gets +2/+0 and has first strike.
 timing=aura
-enchant=default,creature
+enchant=default,pos creature
 oracle=Ferocious — If you control a creature with power 4 or greater, you may cast Dragon Grip as though it had flash.\nEnchant creature\nEnchanted creature gets +2/+0 and has first strike.
-status=needs groovy
+requires_groovy_code

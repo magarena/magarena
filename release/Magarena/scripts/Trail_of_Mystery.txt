@@ -1,11 +1,10 @@
 name=Trail of Mystery
-image=https://magiccards.info/scans/en/ktk/154.jpg
+image=http://magiccards.info/scans/en/ktk/154.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}
-ability=Whenever a face-down creature enters the battlefield under your control, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.;\
-        Whenever a permanent you control is turned face up, if it's a creature, it gets +2/+2 until end of turn.
+ability=Whenever a face-down creature enters the battlefield under your control, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a face-down creature enters the battlefield under your control, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.\nWhenever a permanent you control is turned face up, if it's a creature, it gets +2/+2 until end of turn.
-status=needs groovy
