@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         final MagicPermanent target = event.getRefPermanent();
-        game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCountersType.Energy, -target.getConvertedCost()));
+        game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, -target.getConvertedCost()));
         game.doAction(new GainControlAction(event.getPlayer(), target));
     }
 }
