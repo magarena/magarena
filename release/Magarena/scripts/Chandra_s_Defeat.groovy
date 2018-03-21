@@ -13,7 +13,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         game.addEvent(new MagicDiscardChosenEvent(event.getSource(), A_CARD_FROM_HAND));
-        game.doAction(new DrawAction(event.getPlayer()));
+        game.addEvent(new MagicDrawEvent(event.getSource(), event.getPlayer(), 1));
     }
 }
 
@@ -35,9 +35,9 @@ def action = {
                 if (it.hasType(MagicType.Planeswalker) && it.hasSubType(MagicSubType.Chandra)) {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
-                        new MagicMayChoice(),
+                        new MagicMayChoice("Discard a card?"),
                         action,
-                        "PN may\$ discard a card. If PN does, draw a card."
+                        "PN may\$ discard a card\$."
                     ));
                 }
             });
