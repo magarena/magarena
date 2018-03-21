@@ -15,9 +15,9 @@
             final int amount = event.getPlayer().getHandSize();
             event.processTarget(game, {
                 game.doAction(new DealDamageAction(event.getSource(), it, amount));
+                game.addEvent(new MagicDiscardHandEvent(event.getSource()));
+                game.addEvent(new MagicDrawEvent(event.getSource(), event.getPlayer(), amount));
             });
-            game.addEvent(new MagicDiscardHandEvent(event.getSource()));
-            game.addEvent(new MagicDrawEvent(event.getSource(), event.getPlayer(), amount));
         }
     }
 ]
