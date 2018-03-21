@@ -37,7 +37,7 @@ def action = {
                         event.getSource(),
                         new MagicMayChoice("Discard a card?"),
                         action,
-                        "PN may\$ discard a card\$."
+                        "PN may\$ discard a card."
                     ));
                 }
             });
