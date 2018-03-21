@@ -3,7 +3,10 @@ def action = {
     if (event.isYes()) {
         game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, -2));
         game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1));
-        game.doAction(new TapAction(event.getRefPermanent()));
+        final MagicPermanent target = event.getRefPermanent();
+        if (target.isValid()) {
+            game.doAction(new TapAction(target));
+        }
     }
 }
 
@@ -13,14 +16,14 @@ def action = {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice("Target a creature to tap?", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
+                new MagicMayChoice("Choose target creature defending player controls?", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                 this,
-                "Targeted \$\$."
+                "PN may\$ choose target creature defending player controls\$."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().getCounters(MagicCounterType.PlusOne) >= 2) {
+            if (event.getPlayer().getCounters(MagicCounterType.Energy) >= 2) {
                 if (event.isYes()) {
                     event.processTargetPermanent(game, {
                         game.addEvent(new MagicEvent(
@@ -29,7 +32,7 @@ def action = {
                             it,
                             action,
                             "PN may\$ pay {E}{E}. If PN does, put a +1/+1 counter on SN " +
-                            "and untap up to one target creature defending player controls."
+                            "and tap RN."
                         ));
                     });
                 } else {
@@ -38,8 +41,7 @@ def action = {
                         new MagicMayChoice("Pay {E}{E}?"),
                         MagicPermanent.NONE,
                         action,
-                        "PN may\$ pay {E}{E}. If PN does, put a +1/+1 counter on SN " +
-                        "and untap up to one target creature defending player controls."
+                        "PN may\$ pay {E}{E}. If PN does, put a +1/+1 counter on SN."
                     ));
                 }
             }
