@@ -19,8 +19,8 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(MagicRuleEventAction.create("ascend").getEvent(event));
             event.processTargetPermanent(game, {
+                game.addEvent(MagicRuleEventAction.create("ascend").getEvent(event));
                 if (event.getPlayer().hasState(MagicPlayerState.CitysBlessing)) {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
