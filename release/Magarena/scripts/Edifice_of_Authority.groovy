@@ -30,13 +30,13 @@ def condition = {
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             outerEvent.processTargetPermanent(outerGame, {
-                outerGame.addDelayedAction(new GainAbilityAction(it, abilityList, MagicStatic.Forever));
+                outerGame.doAction(new GainAbilityAction(it, abilityList, MagicStatic.Forever));
 
                 AtUpkeepTrigger cleanup = new AtUpkeepTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                         if (upkeepPlayer.getId() == outerEvent.getPlayer().getId()) {
-                            outerGame.addDelayedAction(new LoseAbilityAction(permanent, abilityList, MagicStatic.Forever));
+                            game.addDelayedAction(new LoseAbilityAction(permanent, abilityList, MagicStatic.Forever));
                             game.addDelayedAction(new RemoveTriggerAction(permanent, this));
                         }
                         return MagicEvent.NONE;
