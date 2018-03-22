@@ -1,8 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetPermanent(game, {
-        game.doAction(new DestroyAction(it));
-    });
+    game.doAction(new SacrificeAction(event.getPermanent()));
+    game.doAction(new DestroyAction(event.getRefPermanent()));
 }
 
 [
@@ -15,21 +14,22 @@ def action = {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(),
+                NEG_TARGET_CREATURE,
                 this,
-                "PN may\$ sacrifice SN."
+                "PN chooses a target creature\$."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new EnqueueTriggerAction(new MagicEvent(
+            event.processTargetPermanent(game, {
+                game.addEvent(new MagicEvent(
                     event.getSource(),
-                    NEG_TARGET_CREATURE,
+                    new MagicMayChoice("Sacrifice ${event.getSource()}?"),
+                    it,
                     action,
-                    "Destroy target creature\$."
-                )));
-            }
+                    "PN may\$ sacrifice SN. If PN does, destroy RN."
+                ));
+            });
         }
     }
 ]

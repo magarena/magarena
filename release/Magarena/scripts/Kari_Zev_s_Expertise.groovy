@@ -26,17 +26,18 @@ def action = {
                 game.doAction(new GainControlAction(event.getPlayer(), it, MagicStatic.UntilEOT));
                 game.doAction(new UntapAction(it));
                 game.doAction(new GainAbilityAction(it, MagicAbility.Haste, MagicStatic.UntilEOT));
+
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicMayChoice(new MagicTargetChoice(
+                        card().cmcLEQ(2).from(MagicTargetType.Hand),
+                        "a card with converted mana cost 2 or less from your hand"
+                    )),
+                    action,
+                    "PN may\$ cast a card with converted mana cost 2 or less from PN's hand\$ without paying its mana cost."
+                ));
             });
 
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                new MagicMayChoice(new MagicTargetChoice(
-                    card().cmcLEQ(2).from(MagicTargetType.Hand),
-                    "a card with converted mana cost 2 or less from your hand"
-                )),
-                action,
-                "PN may\$ cast a card with converted mana cost 2 or less from PN's hand\$ without paying its mana cost."
-            ));
         }
     }
 ]
