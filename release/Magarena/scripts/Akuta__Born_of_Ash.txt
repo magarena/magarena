@@ -7,7 +7,6 @@ subtype=Spirit
 cost={2}{B}{B}
 pt=3/2
 ability=Haste;\
-        At the beginning of your upkeep, if you have more cards in hand than each opponent, you may sacrifice a Swamp. If you do, return SN from your graveyard to the battlefield.
+        Sacrifice a Swamp: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep and only if you have more cards in hand than each opponent.
 timing=fmain
 oracle=Haste\nAt the beginning of your upkeep, if you have more cards in hand than each opponent, you may sacrifice a Swamp. If you do, return Akuta, Born of Ash from your graveyard to the battlefield.
-status=not supported: trigger-from-graveyard

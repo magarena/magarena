@@ -1,7 +1,7 @@
 [
-    new MagicPlaneswalkerActivation(-4) {        
+    new MagicPlaneswalkerActivation(-4) {
         @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {             
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
                 this,

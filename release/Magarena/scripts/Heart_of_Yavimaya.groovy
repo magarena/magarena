@@ -9,8 +9,8 @@ def costEffect = new MagicRegularCostEvent("Sacrifice a Forest");
                 new MagicMayChoice("Sacrifice a Forest?"),
                 payedCost,
                 this,
-                "PN may\$ sacrifice a Forest. " + 
-                "If you do, put SN onto the battlefield. " + 
+                "PN may\$ sacrifice a Forest. " +
+                "If you do, put SN onto the battlefield. " +
                 "If you don't, put it into its owner's graveyard."
             );
         }

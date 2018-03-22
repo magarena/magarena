@@ -6,8 +6,7 @@ type=Creature
 subtype=Hound,Warrior
 cost={3}{G}
 pt=3/3
-ability=Whenever another permanent you control is turned face up, if it's a creature, put two +1/+1 counters on it.;\
-        Megamorph {3}{G}{G}
+ability=Megamorph {3}{G}{G}
 timing=main
+requires_groovy_code
 oracle=Whenever another permanent you control is turned face up, if it's a creature, put two +1/+1 counters on it.\nMegamorph {3}{G}{G}
-status=needs groovy

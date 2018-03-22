@@ -6,7 +6,7 @@
             pt.set(amount,amount);
         }
     },
-    
+
     new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {

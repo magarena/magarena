@@ -1,0 +1,12 @@
+name=Gigapede
+image=https://magiccards.info/scans/en/on/264.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Insect
+cost={3}{G}{G}
+pt=6/1
+ability=Shroud;\
+        Discard a card: Return SN from your graveyard to your hand. Activate this ability only during your upkeep.
+timing=main
+oracle=Shroud\nAt the beginning of your upkeep, if Gigapede is in your graveyard, you may discard a card. If you do, return Gigapede to your hand.

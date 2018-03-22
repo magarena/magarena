@@ -5,7 +5,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}
-ability=If an opponent would gain life, that player loses that much life instead.
 timing=enchantment
 oracle=If an opponent would gain life, that player loses that much life instead.
-status=needs groovy
+requires_groovy_code

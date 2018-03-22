@@ -5,7 +5,6 @@ value=3.955
 rarity=C
 type=Instant
 cost={1}{G}
-effect=Prevent all combat damage that would be dealt by creatures other than target creature this turn.
 timing=removal
+requires_groovy_code
 oracle=Prevent all combat damage that would be dealt by creatures other than target creature this turn.
-status=needs groovy

@@ -2,8 +2,8 @@ def TRASNFORM = MagicRuleEventAction.create("Transform all Humans.");
 
 def NONWEREWOLF_CREATURES = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return !target.hasSubType(MagicSubType.Werewolf) && 
-               !target.hasSubType(MagicSubType.Wolf) && 
+        return !target.hasSubType(MagicSubType.Werewolf) &&
+               !target.hasSubType(MagicSubType.Wolf) &&
                target.isCreature();
     }
 };
@@ -14,7 +14,7 @@ def NONWEREWOLF_CREATURES = new MagicPermanentFilterImpl() {
             return new MagicEvent(
                 cardOnStack,
                 this,
-               "Transform all Humans. " + 
+               "Transform all Humans. " +
                "Prevent all combat damage that would be dealt this turn by creatures other than Werewolves and Wolves."
             );
         }

@@ -6,7 +6,7 @@
                 permanent,
                 damage.getDealtAmount(),
                 this,
-                "PN creates RN 1/1 green Insect creature tokens." 
+                "PN creates RN 1/1 green Insect creature tokens."
             );
         }
         @Override
