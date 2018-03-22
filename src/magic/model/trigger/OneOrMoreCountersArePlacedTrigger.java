@@ -7,13 +7,13 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class OneOrMoreCounterIsPlacedTrigger extends MagicTrigger<MagicCounterChangeTriggerData> {
+public abstract class OneOrMoreCountersArePlacedTrigger extends MagicTrigger<MagicCounterChangeTriggerData> {
 
-    public OneOrMoreCounterIsPlacedTrigger(final int priority) {
+    public OneOrMoreCountersArePlacedTrigger(final int priority) {
         super(priority);
     }
 
-    public OneOrMoreCounterIsPlacedTrigger() {}
+    public OneOrMoreCountersArePlacedTrigger() {}
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
@@ -22,11 +22,11 @@ public abstract class OneOrMoreCounterIsPlacedTrigger extends MagicTrigger<Magic
 
     @Override
     public MagicTriggerType getType() {
-        return MagicTriggerType.WhenOneOrMoreCounterIsPlaced;
+        return MagicTriggerType.WhenOneOrMoreCountersArePlaced;
     }
 
-    public static OneOrMoreCounterIsPlacedTrigger create(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
-        return new OneOrMoreCounterIsPlacedTrigger() {
+    public static OneOrMoreCountersArePlacedTrigger create(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
+        return new OneOrMoreCountersArePlacedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
                 return data.obj.isPermanent() &&

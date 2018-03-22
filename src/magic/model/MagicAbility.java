@@ -1522,7 +1522,7 @@ public enum MagicAbility {
     WhenOneOrMoreCountersArePlacedOnPermanent("Whenever (you put)? one or more (?<type>[^ ]+) counter(s)? (are placed)? on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(OneOrMoreCounterIsPlacedTrigger.create(
+            card.add(OneOrMoreCountersArePlacedTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicCounterType.getCounterRaw(arg.group("type")),
                 MagicRuleEventAction.create(ARG.effect(arg))
