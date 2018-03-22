@@ -1497,6 +1497,26 @@ public enum MagicAbility {
             ));
         }
     },
+    /*WhenOneOrMoreCountersArePlacedOnSN("Whenever (you put )?one or more (?<type>[^ ]+) counter(s)? (are (put|placed) )?on SN, " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(OneOrMoreCountersArePlacedTrigger.create(
+                MagicTargetFilterFactory.SN,
+                MagicCounterType.getCounterRaw(arg.group("type")),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },*/
+    WhenOneOrMoreCountersArePutOnPermanent("Whenever (you put )?one or more (?<type>[^ ]+) counter(s)? (are (put|placed) )?on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(OneOrMoreCountersArePutTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicCounterType.getCounterRaw(arg.group("type")),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     WhenConditionEffect("When(ever)? " + ARG.COND + ", " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
@@ -1517,16 +1537,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             //Cannot implement target pickers
             //Does nothing but it allows text to be part of ability property
-        }
-    },
-    WhenOneOrMoreCountersArePlacedOnPermanent("Whenever (you put)? one or more (?<type>[^ ]+) counter(s)? (are (put|placed))? on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
-        @Override
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(OneOrMoreCountersArePlacedTrigger.create(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicCounterType.getCounterRaw(arg.group("type")),
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
         }
     },
 

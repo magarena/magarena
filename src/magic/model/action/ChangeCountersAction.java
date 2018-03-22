@@ -64,7 +64,7 @@ public class ChangeCountersAction extends MagicAction {
         }
 
         if (amount > 0) {
-            game.executeTrigger(MagicTriggerType.WhenOneOrMoreCountersArePlaced, new MagicCounterChangeTriggerData(obj, counterType, amount));
+            game.executeTrigger(MagicTriggerType.WhenOneOrMoreCountersArePut, new MagicCounterChangeTriggerData(obj, counterType, amount));
         }
         game.setStateCheckRequired();
     }
