@@ -1,5 +1,5 @@
 name=Reaper King
-url=http://magiccards.info/shm/en/260.html
+url=https://magiccards.info/shm/en/260.html
 image=http://mtgimage.com/card/reaper%20king.jpg
 value=4.162
 rarity=R

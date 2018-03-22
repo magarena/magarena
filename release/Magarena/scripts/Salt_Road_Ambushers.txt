@@ -1,5 +1,5 @@
 name=Salt Road Ambushers
-image=http://magiccards.info/scans/en/dtk/198.jpg
+image=https://magiccards.info/scans/en/dtk/198.jpg
 value=2.500
 rarity=U
 type=Creature

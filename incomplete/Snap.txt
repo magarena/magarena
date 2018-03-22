@@ -1,5 +1,5 @@
 name=Snap
-image=http://magiccards.info/scans/en/ul/43.jpg
+image=https://magiccards.info/scans/en/ul/43.jpg
 value=2.500
 rarity=C
 type=Instant
