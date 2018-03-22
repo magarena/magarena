@@ -11,4 +11,3 @@ ability=Flying;\
         Whenever one or more +1/+1 counters are put on another creature you control, you may put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nWhenever one or more +1/+1 counters are put on another creature you control, you may put a +1/+1 counter on Enduring Scalelord.
-status=not supported: when-counter-placed

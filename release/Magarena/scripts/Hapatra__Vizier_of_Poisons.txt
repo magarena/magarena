@@ -10,4 +10,3 @@ ability=Whenever SN deals combat damage to a player, you may put a -1/-1 counter
         Whenever you put one or more -1/-1 counters on a creature, create a 1/1 green Snake creature token with deathtouch.
 timing=main
 oracle=Whenever Hapatra, Vizier of Poisons deals combat damage to a player, you may put a -1/-1 counter on target creature.\nWhenever you put one or more -1/-1 counters on a creature, create a 1/1 green Snake creature token with deathtouch.
-status=not supported: when-counter-placed
