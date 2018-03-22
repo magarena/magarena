@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={1}, {T}: Target creature can't attack this turn. Put a brick counter on SN.;\
-        {1}, {T}: Until your next turn, target creature can't attack or block and its activated abilities can't be activated. Activate this ability only if there are three or more brick counters on SN.
+ability={1}, {T}: Target creature can't attack this turn.~Put a brick counter on SN.
 timing=artifact
+requires_groovy_code
 oracle={1}, {T}: Target creature can't attack this turn. Put a brick counter on Edifice of Authority.\n{1}, {T}: Until your next turn, target creature can't attack or block and its activated abilities can't be activated. Activate this ability only if there are three or more brick counters on Edifice of Authority.

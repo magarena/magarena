@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}
-effect=Repeat the following process X times. Each opponent loses 3 life unless that player sacrifices a nonland permanent or discards a card.
 timing=main
+requires_groovy_code
 oracle=Repeat the following process X times. Each opponent loses 3 life unless that player sacrifices a nonland permanent or discards a card.

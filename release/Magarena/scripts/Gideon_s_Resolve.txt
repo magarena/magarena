@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={4}{W}
-ability=When SN enters the battlefield, you may search your library and/or graveyard for a card named Gideon, Martial Paragon, reveal it, and put it into your hand. If you search your library this way, shuffle it.;\
-        Creatures you control get +1/+1.
+ability=Creatures you control get +1/+1.
 timing=enchantment
+requires_groovy_code
 oracle=When Gideon's Resolve enters the battlefield, you may search your library and/or graveyard for a card named Gideon, Martial Paragon, reveal it, and put it into your hand. If you search your library this way, shuffle it.\nCreatures you control get +1/+1.
