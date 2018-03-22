@@ -1519,10 +1519,11 @@ public enum MagicAbility {
             //Does nothing but it allows text to be part of ability property
         }
     },
-    WhenOneOrMoreCountersArePlacedOnSN("Whenever (you put)? one or more (?<type>[^ ]+) counter(s)? (are placed)? on SN," + ARG.EFFECT, 0) {
+    WhenOneOrMoreCountersArePlacedOnPermanent("Whenever (you put)? one or more (?<type>[^ ]+) counter(s)? (are placed)? on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(OneOrMoreCounterIsPlacedTrigger.createSelf(
+            card.add(OneOrMoreCounterIsPlacedTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicCounterType.getCounterRaw(arg.group("type")),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));

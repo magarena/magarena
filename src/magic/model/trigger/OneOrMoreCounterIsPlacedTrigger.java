@@ -5,6 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class OneOrMoreCounterIsPlacedTrigger extends MagicTrigger<MagicCounterChangeTriggerData> {
 
@@ -24,11 +25,13 @@ public abstract class OneOrMoreCounterIsPlacedTrigger extends MagicTrigger<Magic
         return MagicTriggerType.WhenOneOrMoreCounterIsPlaced;
     }
 
-    public static OneOrMoreCounterIsPlacedTrigger createSelf(MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
+    public static OneOrMoreCounterIsPlacedTrigger create(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
         return new OneOrMoreCounterIsPlacedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return super.accept(permanent, data) && permanent.getId() == data.obj.getId() && data.counterType == counterType;
+                return data.obj.isPermanent() &&
+                    filter.accept(permanent, permanent.getController(), (MagicPermanent)data.obj) &&
+                    data.counterType == counterType;
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
