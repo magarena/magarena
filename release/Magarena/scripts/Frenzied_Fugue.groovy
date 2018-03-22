@@ -18,7 +18,7 @@
             game.doAction(new GainAbilityAction(permanent, MagicAbility.Haste));
         }
     },
-    
+
     new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {

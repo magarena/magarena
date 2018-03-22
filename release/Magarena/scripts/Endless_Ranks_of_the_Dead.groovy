@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN creates X 2/2 black Zombie creature tokens, " + 
+                "PN creates X 2/2 black Zombie creature tokens, " +
                 "where X is half the number of Zombies he or she controls, rounded down"
             );
         }

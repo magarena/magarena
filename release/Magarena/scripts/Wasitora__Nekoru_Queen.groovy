@@ -7,7 +7,7 @@
                 permanent.getController(),
                 damage.getTargetPlayer(),
                 this,
-                "RN sacrifices a creature. " + 
+                "RN sacrifices a creature. " +
                 "If RN can't, PN create a 3/3 black, red, and green Cat Dragon creature token with flying."
             );
         }

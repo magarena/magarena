@@ -7,8 +7,8 @@
                 new MagicMayChoice(),
                 payedCost,
                 this,
-                "PN may\$ discard a land card. " + 
-                "If you do, put SN onto the battlefield. " + 
+                "PN may\$ discard a land card. " +
+                "If you do, put SN onto the battlefield. " +
                 "If you don't, put it into its owner's graveyard."
             );
         }

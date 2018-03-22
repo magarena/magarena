@@ -19,14 +19,14 @@ def sac = new MagicRegularCostEvent("Sacrifice three Clerics");
             return new MagicEvent(
                 source,
                 this,
-                "PN searches his or her graveyard, hand, and/or library a card named Scion of Darkness and put it onto the battlefield. " + 
+                "PN searches his or her graveyard, hand, and/or library a card named Scion of Darkness and put it onto the battlefield. " +
                 "Shuffle PN's library."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter filter = 
+            final MagicTargetFilter filter =
                 MagicTargetFilterFactory.cardName("Scion of Darkness")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.Hand)

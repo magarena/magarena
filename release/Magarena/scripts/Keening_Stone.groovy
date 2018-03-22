@@ -8,7 +8,6 @@
             return [
                new MagicTapEvent(source),
                new MagicPayManaCostEvent(source, "{5}")
-               
             ];
         }
         @Override

@@ -18,7 +18,7 @@
                 outerGame.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
                     @Override
                     public void modGame(final MagicPermanent source, final MagicGame game) {
-                CREATURE.except(it).filter(it) each {                   
+                CREATURE.except(it).filter(it) each {
                             it.addAbility(MagicAbility.CannotAttack);
                         }
                     }

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN exiles all creatures he or she controls. " + 
+                "PN exiles all creatures he or she controls. " +
                 "Then creates that many 5/5 red Dragon creature tokens with flying."
             );
         }

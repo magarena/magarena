@@ -6,7 +6,7 @@
                 cardOnStack,
                 TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 this,
-                "PN exiles target creature card from his or her graveyard.\$ " + 
+                "PN exiles target creature card from his or her graveyard.\$ " +
                 "PN creates a black Zombie creature token. Its power is equal to "+
                 "that card's power and its toughness is equal to that card's toughness."
             );

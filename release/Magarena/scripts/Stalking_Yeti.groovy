@@ -11,7 +11,7 @@
                     "If SN is on the battlefield, it deals damage equal to its power to target creature an opponent controls\$ " +
                     "and that creature deals damage equal to its power to SN."
                 ):
-                MagicEvent.NONE    
+                MagicEvent.NONE
         }
 
         @Override
