@@ -7,17 +7,20 @@ def ZombieStatic = new MagicStatic(MagicLayer.Type) {
 }
 
 def PT = {
-    final MagicGame game, final MagicPermanent perm ->
+    final MagicPermanent perm ->
+    final MagicGame game = perm.getGame();
     game.doAction(new AddStaticAction(perm, MagicStatic.genPTSetStatic(4, 4)));
 }
 
 def Black = {
-    final MagicGame game, final MagicPermanent perm ->
+    final MagicPermanent perm ->
+    final MagicGame game = perm.getGame();
     game.doAction(new AddStaticAction(perm, MagicStatic.IsBlack));
 }
 
 def Zombie = {
-    final MagicGame game, final MagicPermanent perm ->
+    final MagicPermanent perm ->
+    final MagicGame game = perm.getGame();
     game.doAction(new AddStaticAction(perm, ZombieStatic));
 }
 
