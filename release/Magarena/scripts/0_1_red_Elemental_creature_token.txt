@@ -1,6 +1,6 @@
 name=0/1 red Elemental creature token
 token=Elemental
-image=https://magiccards.info/extras/token/gatecrash/elemental.jpg
+image=https://magiccards.info/extras/token/rivals-of-ixalan/elemental-1.jpg
 value=3
 type=Creature
 subtype=Elemental
