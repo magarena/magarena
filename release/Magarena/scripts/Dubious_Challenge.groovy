@@ -17,6 +17,7 @@ def exileAction = {
     final MagicPlayer controller = event.getPlayer();
     final MagicCardList exiled = new MagicCardList();
     event.processChosenCards(game, {
+        game.doAction(new RevealAction(it));
         game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
         if (it.isInExile()) {
             exiled.add(it);
