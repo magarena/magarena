@@ -3071,14 +3071,17 @@ public class MagicTargetFilterFactory {
 
         // using source
         add("you", YOU);
-        add("SN", SN);
-        add("it", SN);
         add("this permanent", SN);
         add("this creature", SN);
-        add("creature blocking it", CREATURE_BLOCKING_SN);
-        add("creature blocking SN", CREATURE_BLOCKING_SN);
-        add("creature blocked by SN", CREATURE_BLOCKED_BY_SN);
-        add("creature blocking or blocked by SN", CREATURE_BLOCKING_BLOCKED_BY_SN);
+
+        // "It" and "SN" are synonyms for certain sentences
+        final String itSynonym[] = {"it", "SN"};
+        for (String it : itSynonym) {
+            add(it, SN);
+            add("creature blocking " + it, CREATURE_BLOCKING_SN);
+            add("creature blocked by " + it, CREATURE_BLOCKED_BY_SN);
+            add("creature blocking or blocked by " + it, CREATURE_BLOCKING_BLOCKED_BY_SN);
+        }
     }
 
     private static final String[] ENDING_WITH_S = new String[]{
