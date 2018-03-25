@@ -138,6 +138,11 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+
+    /**
+     * @param color required color
+     * @return return filter with additional condition for target having given color
+     */
     public MagicCardFilterImpl and(final MagicColor color) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
@@ -147,6 +152,11 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+
+    /**
+     * @param ability required ability
+     * @return return filter with additional condition for target having given ability
+     */
     public MagicCardFilterImpl and(final MagicAbility ability) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
@@ -156,6 +166,10 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+
+    /**
+     * @return return filter with additional condition for target being a card that defines a permanent
+     */
     public MagicCardFilterImpl permanent() {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
@@ -165,6 +179,11 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+
+    /**
+     * @param n CMC limit
+     * @return return filter with additional condition for target's converted mana cost being less or equal to given limit
+     */
     public MagicCardFilterImpl cmcLEQ(final int n) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
@@ -174,6 +193,11 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+
+    /**
+     * @param n power limit
+     * @return return filter with additional condition for target's power being less or equal to given limit
+     */
     public MagicCardFilterImpl powerLEQ(final int n) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
