@@ -1,8 +1,4 @@
-def CREATURE_WITH_DEFENDER_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.isCreature() && target.hasAbility(MagicAbility.Defender) == true
-    }
-};
+def CREATURE_WITH_DEFENDER_YOU_CONTROL = creature(MagicAbility.Defender, Control.You);
 
 [
     new MagicPermanentActivation(
