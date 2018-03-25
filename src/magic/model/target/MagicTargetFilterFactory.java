@@ -1,5 +1,7 @@
 package magic.model.target;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
@@ -2472,17 +2474,36 @@ public class MagicTargetFilterFactory {
         5
     );
 
+    /**
+     * Single texts completely specifying the targeting condition.
+     */
     private static final Map<String, MagicTargetFilter<?>> single =
-        new TreeMap<String, MagicTargetFilter<?>>(String.CASE_INSENSITIVE_ORDER);
+        new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 
+    /**
+     * Partial texts ending with "card" that might continue with more conditions.
+     */
     private static final Map<String, MagicCardFilterImpl> partial =
-        new TreeMap<String, MagicCardFilterImpl>(String.CASE_INSENSITIVE_ORDER);
+        new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+
+    /**
+     * Single text generators for text with numeric parameters, completely specifying the targeting condition.
+     */
+    private static final Map<String, MagicTargetFilterGenerator<?>> generatedSingle =
+        new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 
     private static void add(final String key, final MagicTargetFilter<?> filter) {
         if (single.containsKey(key)) {
             throw new RuntimeException("duplicate key \"" + key + "\"");
         }
         single.put(key, filter);
+    }
+
+    private static void add(final String key, final MagicTargetFilterGenerator<?> generator) {
+        if (generatedSingle.containsKey(key)) {
+            throw new RuntimeException("duplicate key \"" + key + "\"");
+        }
+        generatedSingle.put(key, generator);
     }
 
     private static void addp(final String key, final MagicCardFilterImpl filter) {
@@ -2565,8 +2586,8 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> permanent card from your graveyard
         add("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD);
-        add("permanent card with converted mana cost 3 or less from your graveyard", permanentCardMaxCMC(MagicTargetType.Graveyard, 3));
-        add("permanent card with converted mana cost 2 or less from your graveyard", permanentCardMaxCMC(MagicTargetType.Graveyard, 2));
+        add("permanent card with converted mana cost 3 or less from your graveyard",
+                (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardMaxCMC(MagicTargetType.Graveyard, params[0]));
 
         // <color|type|subtype> creature card from your graveyard
         add("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
@@ -2587,27 +2608,32 @@ public class MagicTargetFilterFactory {
         add("card from your library", CARD_FROM_LIBRARY);
         add("land card with a basic land type from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         add("instant card or a card with flash from your library", INSTANT_OR_FLASH_CARD_FROM_LIBRARY);
-        add("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
-        add("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
-        add("artifact card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, 6));
-        add("artifact card with converted mana cost 3 from your library", permanentCardEqualCMC(MagicType.Artifact, MagicTargetType.Library, 3));
+        add("enchantment card with converted mana cost # or less from your library",
+                (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, params[0]));
+
+        add("artifact card with converted mana cost # or less from your library",
+                (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, params[0]));
+        add("artifact card with converted mana cost # or greater from your library",
+                (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, params[0]));
+        add("artifact card with converted mana cost # from your library",
+                (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardEqualCMC(MagicType.Artifact, MagicTargetType.Library, params[0]));
 
         // <color|type|subtype> permanent card from your library
         MagicSubType[] someSubtypes = new MagicSubType[]{MagicSubType.Rebel, MagicSubType.Mercenary};
         for (MagicSubType subType: someSubtypes) {
-            add(subType.name() + " permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(subType, MagicTargetType.Library, 1));
-            add(subType.name() + " permanent card with converted mana cost 2 or less from your library", permanentCardMaxCMC(subType, MagicTargetType.Library, 2));
-            add(subType.name() + " permanent card with converted mana cost 3 or less from your library", permanentCardMaxCMC(subType, MagicTargetType.Library, 3));
-            add(subType.name() + " permanent card with converted mana cost 4 or less from your library", permanentCardMaxCMC(subType, MagicTargetType.Library, 4));
-            add(subType.name() + " permanent card with converted mana cost 5 or less from your library", permanentCardMaxCMC(subType, MagicTargetType.Library, 5));
-            add(subType.name() + " permanent card with converted mana cost 6 or less from your library", permanentCardMaxCMC(subType, MagicTargetType.Library, 6));
+            add(subType.name() + " permanent card with converted mana cost # or less from your library",
+                    (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardMaxCMC(subType, MagicTargetType.Library, params[0])
+            );
         }
+
         add("legendary Spirit permanent card from your library", LEGENDARY_SPIRIT_PERMANENT_CARD_FROM_LIBRARY);
         add("permanent card from your library", PERMANENT_CARD_FROM_LIBRARY);
 
         // <color|type|subtype> creature card from your library
-        add("creature card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, 1));
-        add("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
+        add("creature card with converted mana cost # or less from your library",
+                (MagicTargetFilterGenerator<MagicCard>) params ->  permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, params[0]));
+        add("creature card with converted mana cost # or greater from your library",
+                (MagicTargetFilterGenerator<MagicCard>) params ->  permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, params[0]));
         add("creature card with power 2 or less from your library", CREATURE_CARD_POWER_LEQ_2_FROM_LIBRARY);
         add("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
         add("nonlegendary green creature card with converted mana cost 3 or less from your library", NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY);
@@ -2619,12 +2645,18 @@ public class MagicTargetFilterFactory {
         for (MagicColor c1 : MagicColor.values()) {
             // Single colored, i.e. "nonblue creature"
             add("non" + c1.name() + " creature", creatureNon(c1, Control.Any));
-            // Single colored, i.e. "nonblue attacking creature"
+            // Single colored attacking, i.e. "nonblue attacking creature"
             add("non" + c1.name() + " attacking creature", creatureNon(c1, Control.Any).andAttacking());
+            // Single colored with power, i.e. "white creature with power 3 or greater"
+            add(c1.name() + " creature with power # or greater", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                    new MagicPTTargetFilter(creature(c1, Control.Any), Operator.GREATER_THAN_OR_EQUAL, params[0]));
+            // Single colored with power, i.e. "nonwhite creature with power 3 or greater"
+            add("non" + c1.name() + " creature with power # or greater", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                    new MagicPTTargetFilter(creatureNon(c1, Control.Any), Operator.GREATER_THAN_OR_EQUAL, params[0]));
 
             for (MagicColor c2 : MagicColor.values()) {
-                // Creature having one of two colors, i.e. "blue or black creature"
                 if (c1 != c2) {
+                    // Creature having one of two colors, i.e. "blue or black creature"
                     add(c1.name() + " or " + c2.name() + " creature", creatureOr(c1, c2, Control.Any));
                     add(c1.name() + " creature or " + c2.name() + " creature", creatureOr(c1, c2, Control.Any));
                 }
@@ -2639,7 +2671,8 @@ public class MagicTargetFilterFactory {
         add("black or red creature that's attacking or blocking", BLACK_OR_RED_CREATURE_ATTACKING_OR_BLOCKING);
         add("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
 
-        add("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
+        add("#/# creature", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                new MagicPTTargetFilter(CREATURE, Operator.EQUAL, params[0], Operator.EQUAL, params[1]));
         add("creature with modular", MODULAR_CREATURE);
         add("creature with trample", CREATURE_WITH_TRAMPLE);
         add("creature with level up", LEVELUP_CREATURE);
@@ -2649,7 +2682,6 @@ public class MagicTargetFilterFactory {
         add("Eldrazi Spawn", ELDRAZI_SPAWN);
         add("face-up nontoken creature", FACEUP_NONTOKEN_CREATURE);
 
-        add("nonwhite creature with power 3 or greater", new MagicPTTargetFilter(NONWHITE_CREATURE, Operator.GREATER_THAN_OR_EQUAL, 3));
         add("nonartifact creature", NONARTIFACT_CREATURE);
         add("nonland creature", NONLAND_CREATURE);
         add("non-Vampire, non-Werewolf, non-Zombie creature", NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE);
@@ -2663,7 +2695,6 @@ public class MagicTargetFilterFactory {
         add("nonattacking creature", NONATTACKING_CREATURE);
         add("blocked creature", BLOCKED_CREATURE);
         add("blocking creature", BLOCKING_CREATURE);
-        add("white creature with power 2 or greater", WHITE_CREATURE_POWER_2_OR_MORE);
         add("creature with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         add("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
         add("creature with flying", CREATURE_WITH_FLYING);
@@ -2675,23 +2706,21 @@ public class MagicTargetFilterFactory {
         add("creature with a morph ability", CREATURE_WITH_MORPH_ABILITY);
         add("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
         add("creature with islandwalk", CREATURE_WITH_ISLANDWALK);
-        add("creature with power 1 or less", CREATURE_POWER_1_OR_LESS);
+
+        add("creature with power # or less", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                new MagicPTTargetFilter(CREATURE, Operator.LESS_THAN_OR_EQUAL, params[0]));
+        add("creature with power # or greater", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                new MagicPTTargetFilter(CREATURE, Operator.GREATER_THAN_OR_EQUAL, params[0]));
+        add("creature with toughness # or less", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                MagicPTTargetFilter.Toughness(CREATURE, Operator.LESS_THAN_OR_EQUAL, params[0]));
+        add("creature with toughness # or greater", (MagicTargetFilterGenerator<MagicPermanent>) params ->
+                MagicPTTargetFilter.Toughness(CREATURE, Operator.GREATER_THAN_OR_EQUAL, params[0]));
+
         add("creature with power or toughness 1 or less", CREATURE_POWER_OR_TOUGHNESS_1_OR_LESS);
-        add("creature with power 2 or less", CREATURE_POWER_2_OR_LESS);
-        add("creature with power 3 or less", CREATURE_POWER_3_OR_LESS);
-        add("creature with power 2 or greater", CREATURE_POWER_2_OR_MORE);
-        add("creature with power 3 or greater", CREATURE_POWER_3_OR_MORE);
-        add("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
-        add("creature with power 4 or less", CREATURE_POWER_4_OR_LESS);
-        add("creature with power 5 or greater", CREATURE_POWER_5_OR_MORE);
         add("creature with power greater than SN's power", CREATURE_POWER_GREATER_THAN_SN);
         add("creature with power less than SN's power", CREATURE_POWER_LESS_THAN_SN);
         add("creature with power less than or equal to SN's power", CREATURE_POWER_LESS_THAN_EQUAL_SN);
         add("creature an opponent controls with power less than SN's power", CREATURE_OPP_POWER_LESS_THAN_SN);
-        add("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);
-        add("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
-        add("creature with toughness 3 or greater", CREATURE_TOUGHNESS_3_OR_GREATER);
-        add("creature with toughness 4 or greater", CREATURE_TOUGHNESS_4_OR_GREATER);
         add("creature with shadow", CREATURE_WITH_SHADOW);
         add("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         add("creature with a -1/-1 counter on it", CREATURE_MINUSONE_COUNTER);
@@ -3017,7 +3046,7 @@ public class MagicTargetFilterFactory {
         final String filter = arg
             .replaceFirst("^(a|an) ", "")
             .replaceFirst(" to sacrifice$", " you control");
-        if (single.containsKey(filter)) {
+        if (singleContainsKey(filter)) {
             assert single.get(filter) != null : "return null for " + filter;
             return single.get(filter);
         } else {
@@ -3126,17 +3155,46 @@ public class MagicTargetFilterFactory {
             }
         }
         final String withSuffix = prefix + " permanent";
-        if (single.containsKey(withSuffix)) {
+        if (singleContainsKey(withSuffix)) {
             @SuppressWarnings("unchecked")
             final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
         }
-        if (single.containsKey(prefix)) {
+        if (singleContainsKey(prefix)) {
             @SuppressWarnings("unchecked")
             final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(prefix);
             return permanent(filter, control);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
+    }
+
+    private static final Pattern NUM_PATTERN = Pattern.compile("\\d+");
+
+    private static final Integer[] EMPTY_INTEGER_ARRAY = new Integer[0];
+
+    private static Integer[] extractMatches(Pattern regex, String key) {
+        Matcher m = regex.matcher(key);
+        List<Integer> params = new ArrayList<>();
+
+        while(m.find()) {
+            params.add(Integer.valueOf(m.group()));
+        }
+        return params.toArray(EMPTY_INTEGER_ARRAY);
+    }
+
+    private static boolean singleContainsKey(String key) {
+        if (single.containsKey(key)) {
+            return true;
+        }
+        String numericKey = NUM_PATTERN.matcher(key).replaceAll("#");
+        if (generatedSingle.containsKey(numericKey)) {
+            // We can use parametric filter generator
+            Integer[] params = extractMatches(NUM_PATTERN, key);
+            MagicTargetFilterGenerator<?> generator = generatedSingle.get(numericKey);
+            MagicTargetFilter<?> generated = generator.generate(params);
+            single.put(key, generated);
+        }
+        return single.containsKey(key);
     }
 
     public static MagicTargetFilter<MagicPermanent> matchCreaturePrefix(final String arg, final String prefix, final Control control) {
@@ -3159,7 +3217,7 @@ public class MagicTargetFilterFactory {
             }
         }
         final String withSuffix = prefix + " creature";
-        if (single.containsKey(withSuffix)) {
+        if (singleContainsKey(withSuffix)) {
             @SuppressWarnings("unchecked")
             final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
@@ -3179,7 +3237,7 @@ public class MagicTargetFilterFactory {
             }
         }
         final String withSuffix = prefix + " planeswalker";
-        if (single.containsKey(withSuffix)) {
+        if (singleContainsKey(withSuffix)) {
             @SuppressWarnings("unchecked")
             final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
