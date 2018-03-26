@@ -1229,12 +1229,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl NONWHITE_PERMANENT = new MagicPermanentFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return !target.hasColor(MagicColor.White);
-        }
-    };
+    public static final MagicPermanentFilterImpl NONWHITE_PERMANENT = permanentNot(MagicColor.White, Control.Any);
 
     public static final MagicPermanentFilterImpl NONBLACK_CREATURE = creatureNon(MagicColor.Black, Control.Any);
 
@@ -1789,12 +1784,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl NONLAND_CARD = new MagicCardFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return !target.hasType(MagicType.Land);
-        }
-    };
+    public static final MagicCardFilterImpl NONLAND_CARD = cardNot(MagicType.Land);
 
     public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD = new MagicCardFilterImpl() {
         @Override
@@ -2486,9 +2476,6 @@ public class MagicTargetFilterFactory {
         addp("creature or enchantment card", CREATURE_OR_ENCHANTMENT_CARD);
         addp("multicolored card", MULTICOLORED_CARD);
         addp("colorless card", COLORLESS_CARD);
-        addp("nonland card", NONLAND_CARD);
-        addp("noncreature card", NONCREATURE_CARD);
-        addp("nonartifact card", NONARTIFACT_CARD);
         addp("noncreature, nonland card", NONCREATURE_NONLAND_CARD);
         addp("nonartifact, nonland card", NONARTIFACT_NONLAND_CARD);
         addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
@@ -2590,8 +2577,6 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> creature
         for (MagicColor c1 : MagicColor.values()) {
-            // Single colored, i.e. "nonblue creature"
-            add("non" + c1.name() + " creature", creatureNon(c1, Control.Any));
             // Single colored attacking, i.e. "nonblue attacking creature"
             add("non" + c1.name() + " attacking creature", creatureNon(c1, Control.Any).andAttacking());
             // Single colored with power, i.e. "white creature with power 3 or greater"
@@ -2733,9 +2718,6 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> permanent
         for (MagicColor c1 : MagicColor.values()) {
-            // Single colored, i.e. "nonblue permanent"
-            add("non" + c1.name() + " permanent", permanentNot(c1));
-
             for (MagicColor c2 : MagicColor.values()) {
                 if (c1 != c2) {
                     // Permanent having one of two colors, i.e. "blue or black permanent"
@@ -3014,20 +2996,19 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicCardFilterImpl matchCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return card(c).from(location);
-            }
-        }
-        for (final MagicType t : MagicType.values()) {
-            if (prefix.equalsIgnoreCase(t.toString())) {
-                return card(t).from(location);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return card(st).from(location);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return card(dp.color).from(location);
+            case NonColor:
+                return cardNot(dp.color).from(location);
+            case Type:
+                return card(dp.type).from(location);
+            case NonType:
+                return cardNot(dp.type).from(location);
+            case SubType:
+                return card(dp.subType).from(location);
+            default:
         }
         final String withSuffix = prefix + " card";
         if (partial.containsKey(withSuffix)) {
@@ -3037,39 +3018,37 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return card(c).permanent().from(location);
-            }
-        }
-        for (final MagicType t : MagicType.values()) {
-            if (prefix.equalsIgnoreCase(t.toString())) {
-                return card(t).permanent().from(location);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return card(st).permanent().from(location);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return card(dp.color).permanent().from(location);
+            case NonColor:
+                return cardNot(dp.color).permanent().from(location);
+            case Type:
+                return card(dp.type).permanent().from(location);
+            case NonType:
+                return cardNot(dp.type).permanent().from(location);
+            case SubType:
+                return card(dp.subType).permanent().from(location);
+            default:
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicCard> matchCreatureCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return card(c).and(MagicType.Creature).from(location);
-            }
-        }
-        for (final MagicType t : MagicType.values()) {
-            if (prefix.equalsIgnoreCase(t.toString())) {
-                return card(t).and(MagicType.Creature).from(location);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return card(st).and(MagicType.Creature).from(location);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return card(dp.color).and(MagicType.Creature).from(location);
+            case NonColor:
+                return cardNot(dp.color).and(MagicType.Creature).from(location);
+            case Type:
+                return card(dp.type).and(MagicType.Creature).from(location);
+            case NonType:
+                return cardNot(dp.type).and(MagicType.Creature).from(location);
+            case SubType:
+                return card(dp.subType).and(MagicType.Creature).from(location);
+            default:
         }
         final String withSuffix = prefix + " creature card";
         if (partial.containsKey(withSuffix)) {
@@ -3079,39 +3058,35 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String prefix) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return spell(c);
-            }
-        }
-        for (final MagicType t : MagicType.values()) {
-            if (prefix.equalsIgnoreCase(t.toString())) {
-                return spell(t);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return spell(st);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return spell(dp.color);
+            case NonColor:
+                return spellNon(dp.color);
+            case Type:
+                return spell(dp.type);
+            case NonType:
+                return spellNon(dp.type);
+            case SubType:
+                return spell(dp.subType);
+            default:
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicPermanent> matchPermanentPrefix(final String arg, final String prefix, final Control control) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return permanent(c, control);
-            }
-        }
-        for (final MagicType t : MagicType.values()) {
-            if (prefix.equalsIgnoreCase(t.toString())) {
-                return permanent(t, control);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return permanent(st, control);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return permanent(dp.color, control);
+            case NonColor:
+                return permanentNot(dp.color, control);
+            case Type:
+                return permanent(dp.type, control);
+            case SubType:
+                return permanent(dp.subType, control);
+            default:
         }
         final String withSuffix = prefix + " permanent";
         if (singleContainsKey(withSuffix)) {
@@ -3157,23 +3132,21 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicPermanent> matchCreaturePrefix(final String arg, final String prefix, final Control control) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return creature(c, control);
-            }
-        }
-        for (final MagicType t : MagicType.values()) {
-            if (prefix.equalsIgnoreCase(t.toString())) {
-                return creature(t, control);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return creature(st, control);
-            }
-            if (prefix.equalsIgnoreCase("non-" + st.toString())) {
-                return creatureNon(st, control);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return creature(dp.color, control);
+            case NonColor:
+                return creatureNon(dp.color, control);
+            case Type:
+                return creature(dp.type, control);
+            case NonType:
+                return creatureNon(dp.type, control);
+            case SubType:
+                return creature(dp.subType, control);
+            case NonSubType:
+                return creatureNon(dp.subType, control);
+            default:
         }
         final String withSuffix = prefix + " creature";
         if (singleContainsKey(withSuffix)) {
@@ -3185,15 +3158,13 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicPermanent> matchPlaneswalkerPrefix(final String arg, final String prefix, final Control control) {
-        for (final MagicColor c : MagicColor.values()) {
-            if (prefix.equalsIgnoreCase(c.getName())) {
-                return planeswalker(c, control);
-            }
-        }
-        for (final MagicSubType st : MagicSubType.values()) {
-            if (prefix.equalsIgnoreCase(st.toString())) {
-                return planeswalker(st, control);
-            }
+        DetectedPrefixes dp = DetectedPrefixes.parseFrom(prefix);
+        switch (dp.prefixType) {
+            case Color:
+                return planeswalker(dp.color, control);
+            case SubType:
+                return planeswalker(dp.subType, control);
+            default:
         }
         final String withSuffix = prefix + " planeswalker";
         if (singleContainsKey(withSuffix)) {
@@ -3330,11 +3301,12 @@ public class MagicTargetFilterFactory {
         };
     }
 
-    public static final MagicPermanentFilterImpl permanentNot(final MagicColor color) {
+    public static final MagicPermanentFilterImpl permanentNot(final MagicColor color, final Control control) {
         return new MagicPermanentFilterImpl() {
             @Override
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return !target.hasColor(color);
+                return !target.hasColor(color) &&
+                    control.matches(player,target);
             }
         };
     }
@@ -3466,28 +3438,50 @@ public class MagicTargetFilterFactory {
         };
     }
 
+    /**
+     * @param subtype  Disallowed subtype
+     * @param control Allowed controller of the creature
+     * @return filter matching creature permanent that is not of specified subtype
+     */
     public static final MagicPermanentFilterImpl creatureNon(final MagicSubType subtype, final Control control) {
         return new MagicPermanentFilterImpl() {
             @Override
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                    (target.hasSubType(subtype) == false) &&
-                    control.matches(player,target);
+                    !target.hasSubType(subtype) &&
+                    control.matches(player, target);
+            }
+        };
+    }
+
+
+    /**
+     * @param type  Disallowed type
+     * @param control Allowed controller of the creature
+     * @return filter matching creature permanent that is not of specified type
+     */
+    public static final MagicPermanentFilterImpl creatureNon(final MagicType type, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return target.isCreature() &&
+                    !target.hasType(type) &&
+                    control.matches(player, target);
             }
         };
     }
 
     /**
-     * @param color1  Disallowed color
+     * @param color  Disallowed color
      * @param control Allowed controller of the creature
      * @return filter matching creature permanent that is not of specified color
      */
-    public static final MagicPermanentFilterImpl creatureNon(final MagicColor color1, final Control control) {
+    public static final MagicPermanentFilterImpl creatureNon(final MagicColor color, final Control control) {
         return new MagicPermanentFilterImpl() {
             @Override
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                    (target.hasColor(color1) == false) &&
+                    (target.hasColor(color) == false) &&
                     control.matches(player,target);
             }
         };
@@ -3688,6 +3682,18 @@ public class MagicTargetFilterFactory {
     }
 
     /**
+     * @return filter accepting cards not of specified color
+     */
+    public static final MagicCardFilterImpl cardNot(final MagicColor color) {
+        return new MagicCardFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+                return !target.hasColor(color);
+            }
+        };
+    }
+
+    /**
      * @return filter accepting cards of specified name
      */
     public static final MagicCardFilterImpl cardName(final String name) {
@@ -3836,5 +3842,4 @@ public class MagicTargetFilterFactory {
             }
         };
     }
-
 }
