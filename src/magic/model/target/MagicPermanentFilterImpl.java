@@ -91,4 +91,57 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         };
     }
 
+
+    /**
+     * @return filter with added condition matching permanent with specified exact converted mana cost
+     */
+    public MagicPermanentFilterImpl cmcEQ(int cmc) {
+        final MagicPermanentFilterImpl curr = this;
+        return new MagicPermanentFilterImpl() {
+            @Override
+            public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
+                return curr.accept(source, player, target) && target.getConvertedCost() == cmc;
+            }
+        };
+    }
+
+    /**
+     * @return filter with added condition matching permanent with specified minimal converted mana cost
+     */
+    public MagicPermanentFilterImpl cmcGEQ(int cmc) {
+        final MagicPermanentFilterImpl curr = this;
+        return new MagicPermanentFilterImpl() {
+            @Override
+            public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
+                return curr.accept(source, player, target) && target.getConvertedCost() >= cmc;
+            }
+        };
+    }
+
+    /**
+     * @return filter with added condition matching permanent with specified maximal converted mana cost
+     */
+    public MagicPermanentFilterImpl cmcLEQ(int cmc) {
+        final MagicPermanentFilterImpl curr = this;
+        return new MagicPermanentFilterImpl() {
+            @Override
+            public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
+                return curr.accept(source, player, target) && target.getConvertedCost() <= cmc;
+            }
+        };
+    }
+
+    /**
+     * @return filter with added condition for a non-token permanent
+     */
+    public MagicPermanentFilterImpl nonToken() {
+        final MagicPermanentFilterImpl curr = this;
+        return new MagicPermanentFilterImpl() {
+            @Override
+            public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
+                return curr.accept(source, player, target) && !target.isToken();
+            }
+        };
+    }
+
 }
