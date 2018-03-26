@@ -196,58 +196,19 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicStackFilterImpl SPELL_YOU_DONT_CONTROL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() && item.isEnemy(player);
-        }
-    };
+    public static final MagicStackFilterImpl SPELL_YOU_DONT_CONTROL = SPELL.youNotControl();
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_1 = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() && item.getConvertedCost() == 1;
-        }
-    };
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_1 = SPELL.withCmcEq(1);
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_2 = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() && item.getConvertedCost() == 2;
-        }
-    };
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_2 = SPELL.withCmcEq(2);
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() && item.getConvertedCost() <= 3;
-        }
-    };
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = SPELL.withCmcMax(3);
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() && item.getConvertedCost() >= 4;
-        }
-    };
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = SPELL.withCmcMin(4);
 
-    public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell(MagicType.Instant) &&
-                item.getConvertedCost() <= 2 &&
-                item.isFriend(player);
-        }
-    };
+    public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = spell(MagicType.Instant).youControl().withCmcMax(2);
 
-    public static final MagicStackFilterImpl SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell(MagicType.Sorcery) &&
-                item.getConvertedCost() <= 2 &&
-                item.isFriend(player);
-        }
-    };
+    public static final MagicStackFilterImpl SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 =spell(MagicType.Sorcery).youControl().withCmcMax(2);
 
     public static final MagicStackFilterImpl SPELL_WITH_X_COST = new MagicStackFilterImpl() {
         @Override
@@ -262,19 +223,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl GREEN_OR_WHITE_SPELL = spellOr(MagicColor.Green, MagicColor.White);
 
-    public static final MagicStackFilterImpl NONBLUE_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
-        }
-    };
+    public static final MagicStackFilterImpl NONBLUE_SPELL = spellNon(MagicColor.Blue);
 
-    public static final MagicStackFilterImpl NONBLACK_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Black);
-        }
-    };
+    public static final MagicStackFilterImpl NONBLACK_SPELL = spellNon(MagicColor.Black);
 
     public static final MagicStackFilterImpl NONFAERIE_SPELL = new MagicStackFilterImpl() {
         @Override
@@ -283,12 +234,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicStackFilterImpl BLUE_INSTANT_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell(MagicType.Instant) && itemOnStack.hasColor(MagicColor.Blue);
-        }
-    };
+    public static final MagicStackFilterImpl BLUE_INSTANT_SPELL = spell(MagicColor.Blue, MagicType.Instant);
 
     public static final MagicStackFilterImpl BLUE_SPELL_YOUR_TURN = new MagicStackFilterImpl() {
         @Override
@@ -308,12 +254,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicStackFilterImpl NONRED_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Red);
-        }
-    };
+    public static final MagicStackFilterImpl NONRED_SPELL = spellNon(MagicColor.Red);
 
     public static final MagicStackFilterImpl BLUE_OR_BLACK_OR_RED_SPELL = new MagicStackFilterImpl() {
         @Override
@@ -340,35 +281,13 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl CREATURE_OR_SORCERY_SPELL = spellOr(MagicType.Creature, MagicType.Sorcery);
 
-    public static final MagicStackFilterImpl NONCREATURE_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell() &&
-                !itemOnStack.isSpell(MagicType.Creature);
-        }
-    };
+    public static final MagicStackFilterImpl NONCREATURE_SPELL = spellNon(MagicType.Creature);
 
-    public static final MagicStackFilterImpl NONARTIFACT_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell() &&
-                !itemOnStack.isSpell(MagicType.Artifact);
-        }
-    };
+    public static final MagicStackFilterImpl NONARTIFACT_SPELL = spellNon(MagicType.Artifact);
 
-    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() >= 6;
-        }
-    };
+    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE = spell(MagicType.Creature).withCmcMin(6);
 
-    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_3_OR_LESS = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() <= 3;
-        }
-    };
+    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_3_OR_LESS = spell(MagicType.Creature).withCmcMax(3);
 
     public static final MagicStackFilterImpl CREATURE_SPELL_WITH_INFECT = new MagicStackFilterImpl() {
         @Override
@@ -377,19 +296,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicStackFilterImpl GREEN_CREATURE_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasColor(MagicColor.Green);
-        }
-    };
+    public static final MagicStackFilterImpl GREEN_CREATURE_SPELL = spell(MagicColor.Green, MagicType.Creature);
 
-    public static final MagicStackFilterImpl BLUE_CREATURE_SPELL = new MagicStackFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
-            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasColor(MagicColor.Blue);
-        }
-    };
+    public static final MagicStackFilterImpl BLUE_CREATURE_SPELL = spell(MagicColor.Blue, MagicType.Creature);
 
     public static final MagicStackFilterImpl WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
         @Override
@@ -3778,6 +3687,18 @@ public class MagicTargetFilterFactory {
     }
 
     /**
+     * @return filter accepting spells that are not of specified color
+     */
+    public static final MagicStackFilterImpl spellNon(final MagicColor color) {
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+                return itemOnStack.isSpell() && !itemOnStack.hasColor(color);
+            }
+        };
+    }
+
+    /**
      * @return filter accepting spells of specified type
      */
     public static final MagicStackFilterImpl spell(final MagicType type) {
@@ -3785,6 +3706,30 @@ public class MagicTargetFilterFactory {
             @Override
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(type);
+            }
+        };
+    }
+
+    /**
+     * @return filter accepting spells that are not of specified type
+     */
+    public static final MagicStackFilterImpl spellNon(final MagicType type) {
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+                return itemOnStack.isSpell() && !itemOnStack.hasType(type);
+            }
+        };
+    }
+
+    /**
+     * @return filter accepting spells of specified color and specified type
+     */
+    public static final MagicStackFilterImpl spell(final MagicColor color, final MagicType type) {
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+                return itemOnStack.isSpell(type) && itemOnStack.hasColor(color);
             }
         };
     }
