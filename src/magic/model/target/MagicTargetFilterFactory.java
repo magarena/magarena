@@ -200,17 +200,17 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl SPELL_YOU_DONT_CONTROL = SPELL.youNotControl();
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_1 = SPELL.withCmcEq(1);
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_1 = SPELL.cmcEQ(1);
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_2 = SPELL.withCmcEq(2);
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_2 = SPELL.cmcEQ(2);
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = SPELL.withCmcMax(3);
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = SPELL.cmcLEQ(3);
 
-    public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = SPELL.withCmcMin(4);
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = SPELL.cmcGEQ(4);
 
-    public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = spell(MagicType.Instant).youControl().withCmcMax(2);
+    public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = spell(MagicType.Instant).youControl().cmcLEQ(2);
 
-    public static final MagicStackFilterImpl SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 =spell(MagicType.Sorcery).youControl().withCmcMax(2);
+    public static final MagicStackFilterImpl SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 =spell(MagicType.Sorcery).youControl().cmcLEQ(2);
 
     public static final MagicStackFilterImpl SPELL_WITH_X_COST = new MagicStackFilterImpl() {
         @Override
@@ -287,9 +287,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl NONARTIFACT_SPELL = spellNon(MagicType.Artifact);
 
-    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE = spell(MagicType.Creature).withCmcMin(6);
+    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE = spell(MagicType.Creature).cmcGEQ(6);
 
-    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_3_OR_LESS = spell(MagicType.Creature).withCmcMax(3);
+    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_3_OR_LESS = spell(MagicType.Creature).cmcLEQ(3);
 
     public static final MagicStackFilterImpl CREATURE_SPELL_WITH_INFECT = new MagicStackFilterImpl() {
         @Override
@@ -1925,17 +1925,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return target.getConvertedCost() <= 2 && target.hasType(MagicType.Instant);
-        }
-
-        @Override
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
-    };
+    public static final MagicCardFilterImpl INSTANT_LEQ_CMC_2_FROM_HAND = card(MagicType.Instant).from(MagicTargetType.Hand).cmcLEQ(2);
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
 
@@ -2586,12 +2576,12 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> permanent card from your graveyard
         add("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD);
-        add("permanent card with converted mana cost 3 or less from your graveyard",
+        add("permanent card with converted mana cost # or less from your graveyard",
                 (MagicTargetFilterGenerator<MagicCard>) params -> permanentCardMaxCMC(MagicTargetType.Graveyard, params[0]));
 
         // <color|type|subtype> creature card from your graveyard
-        add("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
-        add("creature card with converted mana cost 2 or less from your graveyard", CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD);
+        add("creature card with converted mana cost # or less from your graveyard",
+                (MagicTargetFilterGenerator<MagicCard>) params -> card(MagicType.Creature).cmcLEQ(params[0]).from(MagicTargetType.Graveyard));
         add("creature card with power 2 or less from your graveyard", CREATURE_CARD_POWER_LEQ_2_FROM_GRAVEYARD);
         add("creature card with infect from your graveyard", CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         add("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
@@ -2602,7 +2592,8 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> card from your hand
         add("card from your hand", CARD_FROM_HAND);
-        add("instant card with converted mana cost 2 or less from your hand", INSTANT_LEQ_CMC_2_FROM_HAND);
+        add("instant card with converted mana cost # or less from your hand",
+                (MagicTargetFilterGenerator<MagicCard>) params -> card(MagicType.Instant).from(MagicTargetType.Hand).cmcLEQ(params[0]));
 
         // <color|type|subtype> card from your library
         add("card from your library", CARD_FROM_LIBRARY);
@@ -2867,6 +2858,19 @@ public class MagicTargetFilterFactory {
 
         // <color|type> spell
         add("spell", SPELL);
+        for (MagicColor c1 : MagicColor.values()) {
+            // Single colored, i.e. "nonblue spell"
+            add("non" + c1.name() + " spell", spellNon(c1));
+            // Single colored with type, i.e. "blue creature spell"
+            add(c1.name() + " creature spell", spell(c1, MagicType.Creature));
+            add(c1.name() + " instant spell", spell(c1, MagicType.Instant));
+            for (MagicColor c2 : MagicColor.values()) {
+                if (c1 != c2) {
+                    // Spell having one of two colors, i.e. "blue or black spell"
+                    add(c1.name() + " or " + c2.name() + " spell", spellOr(c1, c2));
+                }
+            }
+        }
         add("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
         add("spell or ability", SPELL_OR_ABILITY);
         add("spell or ability you control", SPELL_OR_ABILITY_YOU_CONTROL);
@@ -2888,39 +2892,37 @@ public class MagicTargetFilterFactory {
         add("noncreature spell", NONCREATURE_SPELL);
         add("nonartifact spell", NONARTIFACT_SPELL);
         add("artifact or enchantment spell", ARTIFACT_OR_ENCHANTMENT_SPELL);
-        add("red or green spell", RED_OR_GREEN_SPELL);
-        add("blue or black spell", BLUE_OR_BLACK_SPELL);
-        add("green or white spell", GREEN_OR_WHITE_SPELL);
         add("blue, black, or red spell", BLUE_OR_BLACK_OR_RED_SPELL);
         add("white, blue, black, or red spell", WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL);
-        add("nonblue spell", NONBLUE_SPELL);
-        add("nonblack spell", NONBLACK_SPELL);
         add("non-Faerie spell", NONFAERIE_SPELL);
         add("blue spell during your turn", BLUE_SPELL_YOUR_TURN);
         add("blue or black spell during your turn", BLUE_OR_BLACK_SPELL_YOUR_TURN);
-        add("blue instant spell", BLUE_INSTANT_SPELL);
-        add("nonred spell", NONRED_SPELL);
         add("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
         add("enchantment, instant, or sorcery spell", ENCHANTMENT_OR_INSTANT_OR_SORCERY_SPELL);
         add("white or blue instant or sorcery spell", WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL);
         add("instant or sorcery spell you control", INSTANT_OR_SORCERY_SPELL_YOU_CONTROL);
-        add("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
-        add("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
-        add("spell with converted mana cost 3 or less", SPELL_WITH_CMC_LEQ_3);
-        add("spell with converted mana cost 4 or greater", SPELL_WITH_CMC_4_OR_GREATER);
-        add("instant spell you control with converted mana cost 2 or less", INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
-        add("sorcery spell you control with converted mana cost 2 or less", SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
-        add("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
+        add("spell with converted mana cost #",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> SPELL.cmcEQ(params[0]));
+        add("spell with converted mana cost # or less",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> SPELL.cmcLEQ(params[0]));
+        add("spell with converted mana cost # or greater",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> SPELL.cmcGEQ(params[0]));
+        add("instant spell you control with converted mana cost # or less",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> spell(MagicType.Instant).youControl().cmcLEQ(params[0]));
+        add("sorcery spell you control with converted mana cost # or less",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> spell(MagicType.Sorcery).youControl().cmcLEQ(params[0]));
+        add("creature spell with converted mana cost # or less",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> spell(MagicType.Creature).cmcLEQ(params[0]));
+        add("creature spell with converted mana cost # or greater",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> spell(MagicType.Creature).cmcGEQ(params[0]));
         add("creature spell with infect", CREATURE_SPELL_WITH_INFECT);
-        add("green creature spell", GREEN_CREATURE_SPELL);
-        add("blue creature spell", BLUE_CREATURE_SPELL);
         add("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         add("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
         add("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
         add("multicolored spell", MULTICOLORED_SPELL);
         add("colorless spell", COLORLESS_SPELL);
-        add("colorless spell with converted mana cost 7 or greater", COLORLESS_SPELL_CMC_7_OR_MORE);
-        add("creature spell with converted mana cost 3 or less", CREATURE_SPELL_CMC_3_OR_LESS);
+        add("colorless spell with converted mana cost # or greater",
+                (MagicTargetFilterGenerator<MagicItemOnStack>) params -> COLORLESS_SPELL.cmcGEQ(params[0]));
         add("aura, equipment, or vehicle spell", AURA_EQUIPMENT_OR_VEHICLE_SPELL);
 
         // player

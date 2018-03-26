@@ -50,7 +50,7 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
     /**
      * @return filter with added condition matching spell with specified exact converted mana cost
      */
-    public MagicStackFilterImpl withCmcEq(int cmc) {
+    public MagicStackFilterImpl cmcEQ(int cmc) {
         final MagicStackFilterImpl curr = this;
         return new MagicStackFilterImpl() {
             @Override
@@ -63,7 +63,7 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
     /**
      * @return filter with added condition matching spell with specified minimal converted mana cost
      */
-    public MagicStackFilterImpl withCmcMin(int cmc) {
+    public MagicStackFilterImpl cmcGEQ(int cmc) {
         final MagicStackFilterImpl curr = this;
         return new MagicStackFilterImpl() {
             @Override
@@ -76,7 +76,7 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
     /**
      * @return filter with added condition matching spell with specified maximal converted mana cost
      */
-    public MagicStackFilterImpl withCmcMax(int cmc) {
+    public MagicStackFilterImpl cmcLEQ(int cmc) {
         final MagicStackFilterImpl curr = this;
         return new MagicStackFilterImpl() {
             @Override
