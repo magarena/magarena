@@ -23,7 +23,7 @@ def castAction = {
             MagicLocationType.Graveyard
         ));
     } else {
-        game.doAction(new RemoveCardAction(topCard));
+        game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));
     }
     game.addEvent(new MagicEvent(
         event.getSource(),
@@ -58,7 +58,7 @@ def castAction = {
                 if (predicate(topCard)) {
                     target = topCard;
                 } else {
-                    game.doAction(new RemoveCardAction(topCard));
+                    game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));
                 }
             }
 
