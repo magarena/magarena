@@ -1,7 +1,7 @@
 def restoreCardAction = {
     final MagicGame game, final MagicEvent event ->
     final MagicCardList revealed = event.getRefCardList();
-    cards.shuffle();
+    revealed.shuffle();
     revealed.each {
         game.doAction(new MoveCardAction(
             it,
