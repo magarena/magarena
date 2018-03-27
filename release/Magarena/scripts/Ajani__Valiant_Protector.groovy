@@ -28,7 +28,7 @@
             }
 
             revealed.shuffle();
-            revealed.each({ game.doAction(new MoveCardAction(it, MagicLocationType.BottomOfOwnersLibrary)) });
+            revealed.each({ game.doAction(new MoveCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary)) });
         }
     }
     ,
