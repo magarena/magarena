@@ -15,19 +15,25 @@
             final MagicPlayer player = event.getPlayer()
             final MagicCardList library = player.getLibrary();
             def predicate = { final MagicCard card -> card.hasType(MagicType.Artifact) };
-            final MagicCardList nonTarget = new MagicCardList(library.takeWhile({ !predicate(it) }));
-            int amount = nonTarget.size() + (library.any(predicate) ? 1 : 0);
-            if (library.any(predicate)) {
-                final MagicCard target = library.find(predicate);
-                game.doAction(new RevealAction(nonTarget.plus(target)));
-                game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, target, player));
-            } else {
-                game.doAction(new RevealAction(nonTarget));
+            final MagicCardList revealed = new MagicCardList();
+            MagicCard target = MagicCard.NONE;
+            int amount = 0;
+            while (target == MagicCard.NONE && library.size() > 0) {
+                final MagicCard topCard = library.getCardAtTop();
+                game.doAction(new RevealAction(topCard));
+                amount++;
+                if (predicate(topCard)) {
+                    target = topCard;
+                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, topCard, player));
+                } else {
+                    revealed.add(topCard);
+                    game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));
+                }
             }
-            nonTarget.shuffle();
-            nonTarget.each {
-                game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
-            }
+
+            revealed.shuffle();
+            revealed.each({ game.doAction(new MoveCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary)) });
+
             game.doAction(new DealDamageAction(event.getSource(), player, amount));
         }
     }
