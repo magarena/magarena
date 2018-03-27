@@ -23,7 +23,7 @@ def castAction = {
             MagicLocationType.Graveyard
         ));
     } else {
-        game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));
+        game.doAction(new RemoveCardAction(revealed.getCardAtTop(), MagicLocationType.OwnersLibrary));
     }
     game.addEvent(new MagicEvent(
         event.getSource(),
