@@ -298,10 +298,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicStackFilterImpl GREEN_CREATURE_SPELL = spell(MagicColor.Green, MagicType.Creature);
-
-    public static final MagicStackFilterImpl BLUE_CREATURE_SPELL = spell(MagicColor.Blue, MagicType.Creature);
-
     public static final MagicStackFilterImpl WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
@@ -587,18 +583,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT = permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Any);
 
-    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_CMC_3_OR_LESS = new MagicCMCPermanentFilter(
-        ARTIFACT_OR_ENCHANTMENT,
-        Operator.LESS_THAN_OR_EQUAL,
-        3
-    );
-
-    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_CMC_4_OR_LESS = new MagicCMCPermanentFilter(
-        ARTIFACT_OR_ENCHANTMENT,
-        Operator.LESS_THAN_OR_EQUAL,
-        4
-    );
-
     public static final MagicPermanentFilterImpl ARTIFACT_OR_LAND = permanentOr(MagicType.Artifact, MagicType.Land, Control.Any);
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_OR_LAND = new MagicPermanentFilterImpl() {
@@ -704,13 +688,6 @@ public class MagicTargetFilterFactory {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOwner(player) && target.isController(player) && target.hasType(MagicType.Enchantment);
-        }
-    };
-
-    public static final MagicPermanentFilterImpl RED_OR_GREEN_ENCHANTMENT = new MagicPermanentFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isEnchantment() && (target.hasColor(MagicColor.Red) || target.hasColor(MagicColor.Green));
         }
     };
 
@@ -2284,36 +2261,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_2_OR_LESS = MagicPTTargetFilter.Toughness(
-        CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_LESS = MagicPTTargetFilter.Toughness(
-        CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        3
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_GREATER = MagicPTTargetFilter.Toughness(
-        CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        3
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER = MagicPTTargetFilter.Toughness(
-        CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        4
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        1
-    );
-
     public static final MagicPermanentFilterImpl CREATURE_POWER_OR_TOUGHNESS_1_OR_LESS = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -2354,55 +2301,10 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        3
-    );
-
     public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
         CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
         4
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_LESS = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        4
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_MORE = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        2
-    );
-
-    public static final MagicPermanentFilterImpl WHITE_CREATURE_POWER_2_OR_MORE = new MagicPermanentFilterImpl() {
-        @Override
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.hasColor(MagicColor.White) &&
-                target.isCreature() &&
-                target.getPower() >= 2;
-        }
-    };
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        3
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE = new MagicPTTargetFilter(
-        CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        5
     );
 
     /**
