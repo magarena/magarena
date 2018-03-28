@@ -7,4 +7,3 @@ cost={R}
 timing=removal
 requires_groovy_code
 oracle=Blazing Salvo deals 3 damage to target creature unless that creature's controller has Blazing Salvo deal 5 damage to him or her.
-

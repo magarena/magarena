@@ -7,4 +7,3 @@ cost={2}{B}
 effect=Until end of turn, target creature becomes black and gains "{B}: Regenerate this creature."~*It* gets +1/-1 until end of turn.
 timing=removal
 oracle=Until end of turn, target creature becomes black, gets +1/-1, and gains "{B}: Regenerate this creature."
-

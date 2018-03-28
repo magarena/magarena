@@ -8,4 +8,3 @@ cost={1}{G}
 timing=removal
 requires_groovy_code
 oracle=Transform up to one target Werewolf you control. Creatures you control gain trample until end of turn.
-

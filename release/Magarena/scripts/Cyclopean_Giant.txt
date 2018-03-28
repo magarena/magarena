@@ -9,4 +9,3 @@ pt=4/2
 timing=main
 requires_groovy_code
 oracle=When Cyclopean Giant dies, target land becomes a Swamp. Exile Cyclopean Giant.
-

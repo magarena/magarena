@@ -9,4 +9,3 @@ pt=4/4
 timing=main
 requires_groovy_code
 oracle=At the beginning of your upkeep, the player with the lowest life total gains control of Loxodon Peacekeeper. If two or more players are tied for lowest life total, you choose one of them, and that player gains control of Loxodon Peacekeeper.
-

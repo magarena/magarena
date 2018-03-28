@@ -7,4 +7,3 @@ cost={1}
 timing=artifact
 requires_groovy_code
 oracle={1}, {T}, Exile Thran Foundry: Target player shuffles his or her graveyard into his or her library.
-

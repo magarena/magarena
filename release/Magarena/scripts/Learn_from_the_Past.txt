@@ -7,4 +7,3 @@ cost={3}{U}
 timing=removal
 requires_groovy_code
 oracle=Target player shuffles his or her graveyard into his or her library.\nDraw a card.
-
