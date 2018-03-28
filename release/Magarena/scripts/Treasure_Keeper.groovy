@@ -1,19 +1,37 @@
+def restoreCardAction = {
+    final MagicGame game, final MagicEvent event ->
+    final MagicCardList revealed = event.getRefCardList();
+    revealed.shuffle();
+    revealed.each {
+        game.doAction(new MoveCardAction(
+            it,
+            MagicLocationType.OwnersLibrary,
+            MagicLocationType.BottomOfOwnersLibrary
+        ));
+    }
+}
+
 def castAction = {
     final MagicGame game, final MagicEvent event ->
     final MagicCardList revealed = new MagicCardList(event.getRefCardList());
     if (event.isYes()) {
-        final MagicCard toCast = revealed.last();
-        revealed.remove(toCast);
+        final MagicCard card = revealed.removeCardAtTop();
         game.doAction(CastCardAction.WithoutManaCost(
             event.getPlayer(),
-            toCast,
+            card,
             MagicLocationType.OwnersLibrary,
             MagicLocationType.Graveyard
         ));
+    } else {
+        game.doAction(new RemoveCardAction(revealed.getCardAtTop(), MagicLocationType.OwnersLibrary));
     }
-    revealed.each {
-        game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
-    }
+    game.addEvent(new MagicEvent(
+        event.getSource(),
+        event.getPlayer(),
+        revealed,
+        restoreCardAction,
+        "PN puts all revealed cards not cast this way on the bottom of PN's library in a random order."
+    ));
 }
 
 [
@@ -31,23 +49,35 @@ def castAction = {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList library = player.getLibrary();
             def predicate = { final MagicCard card -> !card.hasType(MagicType.Land) && card.getConvertedCost() <= 3 }
-            final MagicCardList nonTarget = new MagicCardList(library.takeWhile({ !predicate(it) }));
-            if (library.any(predicate)) {
-                final MagicCard target = library.find(predicate);
-                game.doAction(new RevealAction(nonTarget.plus(target)));
+            final MagicCardList revealed = new MagicCardList();
+            MagicCard target = MagicCard.NONE;
+            while (target == MagicCard.NONE && library.size() > 0) {
+                final MagicCard topCard = library.getCardAtTop()
+                game.doAction(new RevealAction(topCard));
+                revealed.add(topCard);
+                if (predicate(topCard)) {
+                    target = topCard;
+                } else {
+                    game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));
+                }
+            }
+
+            if (target != MagicCard.NONE) {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     new MagicMayChoice("Cast the card?"),
-                    new MagicCardList(nonTarget.plus(target)),
+                    revealed,
                     castAction,
-                    "PN may\$ cast that card without paying its mana cost. " +
-                    "Put all revealed cards not cast this way on the bottom of PN's library in any order."
+                    "PN may\$ cast that card without paying its mana cost."
                 ));
-            } else {
-                game.doAction(new RevealAction(nonTarget));
-                nonTarget.each {
-                    game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary))
-                }
+            }
+            else {
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    revealed,
+                    restoreCardAction,
+                    "PN puts all revealed cards not cast this way on the bottom of PN's library in a random order."
+                ));
             }
         }
     }
