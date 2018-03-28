@@ -18,13 +18,13 @@
             final MagicCardList revealed = new MagicCardList();
             MagicCard target = MagicCard.NONE;
             int amount = 0;
-            while (target == MagicCard.NONE && library.size() > 0) {
+            while (library.size() > 0) {
                 final MagicCard topCard = library.getCardAtTop();
                 game.doAction(new RevealAction(topCard));
                 amount++;
                 if (predicate(topCard)) {
-                    target = topCard;
                     game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, topCard, player));
+                    break;
                 } else {
                     revealed.add(topCard);
                     game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));

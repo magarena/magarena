@@ -14,13 +14,12 @@
             final MagicCardList library = event.getPlayer().getLibrary();
             def predicate = { final MagicCard card -> card.hasType(MagicType.Artifact) };
             final MagicCardList revealed = new MagicCardList();
-            MagicCard target = MagicCard.NONE;
-            while (target == MagicCard.NONE && library.size() > 0) {
+            while (library.size() > 0) {
                 final MagicCard topCard = library.getCardAtTop();
                 game.doAction(new RevealAction(topCard));
                 if (predicate(topCard)) {
-                    target = topCard;
                     game.doAction(new ShiftCardAction(topCard, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
+                    break;
                 } else {
                     revealed.add(topCard);
                     game.doAction(new RemoveCardAction(topCard, MagicLocationType.OwnersLibrary));
