@@ -73,14 +73,21 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.92 (February 28, 2018)
+Release 1.92 (March 31, 2018)
 ============
 Fulmene
 kelsioboy
+Martin Petricek
 melvin
 Sergio Lo Cascio
 
 - update Italian translation
+
+- added the following to the ability property in card script:
+  * ability: Ascend
+  * effect: Ascend
+
+- configurable time limits for running AI vs AI games
 
 - fixed the following bugs:
   * unable to transfer control of Crown of Doom to opponent (issue #1477)
@@ -89,31 +96,73 @@ Sergio Lo Cascio
   * Liberating Combustion does not return Chandra, Pyrogenius from the graveyard (issue #1466)
 
 - added the following cards:
-Angrath's Marauders, Arguel's Blood Fast, Azcanta, the Sunken Ruin,
-black Vampire creature token, Chandra's Defeat, Chart a Course,
-Commune with Dinosaurs, Conqueror's Foothold, Conqueror's Galleon,
-Deadeye Quartermaster, Deathgorge Scavenger, Entrancing Melody,
-Fathom Fleet Cutthroat, Field of Ruin, Firecannon Blast, Fleet Swallower,
-Gideon's Defeat, Grim Captain's Call, Herald of Secret Streams, Hostility,
-Hour of Devastation, Huatli, Radiant Champion, Huatli's Spurring,
-Imminent Doom, Kalitas, Bloodchief of Ghet, Kiora, the Crashing Wave,
-Kumena's Speaker, Liliana's Defeat, Nissa's Defeat, Oketra's Last Mercy,
-Old-Growth Dryads, Pharika, God of Affliction, Purity, River Darter,
-Rowdy Crew, Ruin Raider, Sanguine Sacrament, Saving Grace,
-Seafloor Oracle, Search for Azcanta, Sekki, Seasons' Guide,
-Servant of the Scale, Settle the Wreckage, Silverclad Ferocidons,
-Siren Reaver, Siren's Ruse, Siren Stormtamer, Sorin, Solemn Visitor,
-Spell Swindle, Storm Fleet Sprinter, Strength of the Pack,
-Sunbird's Invocation, Sun-Blessed Mount, Sun-Collared Raptor,
-Sun-Crested Pterodon, Sun Sentinel, Swab Goblin, Swaggering Corsair,
-Swarm Intelligence, Swift Warden, Sword-Point Diplomacy,
-Sworn Guardian, Temple of Aclazotz, Tenacious Hunter, The Locust God,
-The Scorpion God, Thrashing Brontodon, Tishana, Voice of Thunder,
-Tragic Lesson, Trapjaw Tyrant, Treasure Cove, Treasure Map,
-Tyrannize, Vampire Champion, Vampire Revenant, Vampire's Zeal,
-Verdant Sun's Avatar, Vile Manifestation, Vindictive Lich,
-Visage of Bolas, Vraska's Conquistador, Wasp of the Bitter End,
-Woebringer Demon, Zetalpa, Primal Dawn
+Aetherstorm Roc, Akuta, Born of Ash, Aleatory, Angrath's Ambusher,
+Angrath's Marauders, Aquatic Incursion, Arch of Orazca,
+Arguel's Blood Fast, Atzocan Seer, Azcanta, the Sunken Ruin,
+Baffling End, Blazing Salvo, Bombard, Bounty Hunter, Brazen Freebooter,
+Buccaneer's Bravado, Cacophodon, Canal Monitor, Cellar Door,
+Champion of Dusk, Chandra's Defeat, Chaotic Strike, Chart a Course,
+Cleansing Ray, Commune with Dinosaurs, Confront the Unknown,
+Conqueror's Foothold, Conqueror's Galleon, Consuming Vapors,
+Cranial Archive, Crested Herdcaller, Cyclopean Giant, Dark Dabbling,
+Deadeye Brawler, Deadeye Quartermaster, Deadeye Rig-Hauler,
+Deathgorge Scavenger, Deeproot Elite, Defiling Tears, Dinosaur Hunter,
+Dire Fleet Neckbreaker, Dire Fleet Poisoner, Doorkeeper, Dragon Grip,
+Dubious Challenge, Dusk Charger, Dusk Legion Zealot, Edifice of Authority,
+Elenda, the Dusk Rose, Entrancing Melody, Everdawn Champion,
+Expel from Orazca, Explorer's Scope, Exultant Skymarcher,
+Famished Paladin, Fateful Showdown, Fathom Fleet Cutthroat, Feed the Pack,
+Field of Ruin, Firecannon Blast, Fleet Swallower, Flood of Recollection,
+Forerunner of the Coalition, Forerunner of the Empire,
+Forerunner of the Heralds, Forerunner of the Legion, Frilled Deathspitter,
+Gate to the Afterlife, Gideon's Defeat, Gideon's Resolve, Gigapede,
+Giltgrove Stalker, Gleaming Barrier, God-Pharaoh's Gift,
+Golden Demise, Grasping Scoundrel, Grim Captain's Call,
+Gruesome Fate, Guul Draz Overseer, Hamletback Goliath,
+Hardy Veteran, Harvest Season, Herald of Secret Streams,
+Hostility, Hour of Devastation, Huatli, Radiant Champion,
+Huatli's Spurring, Imaginary Threats, Imminent Doom, Impale,
+Imperial Ceratops, Indulgent Tormentor, Intimidation Bolt,
+Into the Wilds, Jade Bearer, Jadecraft Artisan, Joven's Ferrets,
+Jungleborn Pioneer, Jungle Creeper, Kalitas, Bloodchief of Ghet,
+Kiora, the Crashing Wave, Kitesail Corsair, Knight of the Stampede,
+Kumena's Awakening, Kumena's Speaker, Kumena, Tyrant of Orazca,
+Learn from the Past, Legion Lieutenant, Liliana's Defeat,
+Long Road Home, Loxodon Peacekeeper, Luminous Bonds, Madcap Experiment,
+Majestic Heliopterus, Manipulate Fate, Martyr of Dusk, Mausoleum Harpy,
+Measure of Wickedness, Merfolk Mistbinder, Mist-Cloaked Herald,
+Moment of Craving, Moment of Triumph, Needletooth Raptor, Neko-Te,
+Nicol Bolas, the Deceiver, Nissa's Defeat, Oketra's Last Mercy,
+Old-Growth Dryads, Orazca Frillback, Orazca Raptor, Orazca Relic,
+Otherworldly Journey, Overgrown Armasaur, Pharika, God of Affliction,
+Polyraptor, Pride of Conquerors, Purity, Pyre Zombie, Raging Regisaur,
+Ravenous Chupacabra, Reaver Ambush, Rekindling Phoenix,
+Resplendent Griffin, River Darter, Rowdy Crew, Ruin Raider,
+Salt Road Ambushers, Sanguine Glorifier, Sanguine Sacrament, Saving Grace,
+Seafloor Oracle, Search for Azcanta, Secrets of the Golden City,
+Sekki, Seasons' Guide, Servant of the Scale, Settle the Wreckage,
+Shake the Foundations, Siegehorn Ceratops, Silverclad Ferocidons,
+Siren Reaver, Siren's Ruse, Siren Stormtamer, Skymarcher Aspirant,
+Slippery Scoundrel, Snubhorn Sentry, Sorin, Solemn Visitor,
+Soul of the Rapids, Spell Swindle, Spire Winder, Squire's Devotion,
+Stampeding Horncrest, Storm Fleet Sprinter, Storm Fleet Swashbuckler,
+Strength of the Pack, Strip Bare, Sunbird's Invocation,
+Sun-Blessed Mount, Sun-Collared Raptor, Sun-Crested Pterodon,
+Sun Sentinel, Swab Goblin, Swaggering Corsair, Swarm Intelligence,
+Swift Warden, Sword-Point Diplomacy, Sworn Guardian, Sylvan Primordial,
+Tainted Remedy, Temple of Aclazotz, Tenacious Dead, Tenacious Hunter,
+Tendershoot Dryad, Terrifying Presence, Tezzeret's Betrayal,
+The Locust God, The Scorpion God, Thran Foundry, Thrashing Brontodon,
+Thrasios, Triton Hero, Tilonalli's Crown, Tilonalli's Summoner,
+Timestream Navigator, Tishana, Voice of Thunder, Torment of Hailfire,
+Torment of Venom, Tragic Lesson, Trail of Mystery, Trapjaw Tyrant,
+Treasure Cove, Treasure Keeper, Treasure Map, Twilight Prophet, Tyrannize,
+Vampire Champion, Vampire Revenant, Vampire's Zeal, Verdant Sun's Avatar,
+Vile Manifestation, Vindictive Lich, Visage of Bolas, Vona's Hunger,
+Vraska, Scheming Gorgon, Vraska's Conquistador, Wasp of the Bitter End,
+Waterknot, Waxing Moon, Wayward Swordtooth, Wheel and Deal,
+Woebringer Demon, Wolfcaller's Howl, Yomiji, Who Bars the Way,
+Zetalpa, Primal Dawn
 
 Release 1.91 (January 27, 2017)
 ============
