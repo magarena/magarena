@@ -22,6 +22,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.stack.MagicItemOnStack;
+import magic.exception.FilterParseException;
 
 public class MagicTargetFilterFactory {
 
@@ -2712,7 +2713,7 @@ public class MagicTargetFilterFactory {
         final String processed = matcher.replaceFirst("");
         final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single(processed);
         if (filter.acceptType(MagicTargetType.Permanent) == false) {
-            throw new RuntimeException("unknown permanent filter \"" + text + "\"");
+            throw new FilterParseException("unknown permanent filter \"" + text + "\"");
         }
         return other ? new MagicOtherPermanentTargetFilter(filter) : filter;
     }
@@ -2750,7 +2751,7 @@ public class MagicTargetFilterFactory {
     public static MagicTargetFilter<?> singleOrNone(final String arg) {
         try {
             return single(arg);
-        } catch (final RuntimeException e) {
+        } catch (final FilterParseException e) {
             return NONE;
         }
     }
@@ -2774,7 +2775,7 @@ public class MagicTargetFilterFactory {
         if (partial.containsKey(withSuffix)) {
             return partial.get(withSuffix).from(location);
         }
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
@@ -2792,7 +2793,7 @@ public class MagicTargetFilterFactory {
                 return card(dp.subType).permanent().from(location);
             default:
         }
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicCard> matchCreatureCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
@@ -2814,7 +2815,7 @@ public class MagicTargetFilterFactory {
         if (partial.containsKey(withSuffix)) {
             return partial.get(withSuffix).from(location);
         }
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String prefix) {
@@ -2832,7 +2833,7 @@ public class MagicTargetFilterFactory {
                 return spell(dp.subType);
             default:
         }
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicPermanent> matchPermanentPrefix(final String arg, final String prefix, final Control control) {
@@ -2864,7 +2865,7 @@ public class MagicTargetFilterFactory {
             }
         }
 
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     private static final Pattern NUM_PATTERN = Pattern.compile("\\d+");
@@ -2908,7 +2909,7 @@ public class MagicTargetFilterFactory {
             }
         }
 
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     public static MagicTargetFilter<MagicPermanent> matchPlaneswalkerPrefix(final String arg, final String prefix, final Control control) {
@@ -2926,7 +2927,7 @@ public class MagicTargetFilterFactory {
             final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single.get(withSuffix);
             return permanent(filter, control);
         }
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+        throw new FilterParseException("unknown target filter \"" + arg + "\"");
     }
 
     public enum Control {
