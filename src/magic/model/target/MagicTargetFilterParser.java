@@ -8,7 +8,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicType;
 import magic.model.MagicSubType;
 import magic.model.target.MagicTargetFilterFactory.Control;
-import magic.exception.FilterParseException;
+import magic.exception.ScriptParseException;
 
 import static magic.model.target.MagicTargetFilterFactory.*;
 
@@ -460,6 +460,6 @@ public enum MagicTargetFilterParser {
                 return rule.toTargetFilter(matcher);
             }
         }
-        throw new FilterParseException("unknown target filter \"" + text + "\"");
+        throw new ScriptParseException("unknown target filter \"" + text + "\"");
     }
 }
