@@ -1,9 +1,3 @@
-def CREATURE_BLOCKED_BY_SN = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.isCreature() && target.getBlockingCreatures().contains(source);
-    }
-}
-
 def TARGET_CREATURE_BLOCKED_BY_SOURCE = {
     final MagicSource source ->
     return new MagicTargetChoice(

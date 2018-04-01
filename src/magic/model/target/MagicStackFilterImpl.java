@@ -46,4 +46,69 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType==MagicTargetType.Stack;
     }
+
+    /**
+     * @return filter with added condition matching spell with specified exact converted mana cost
+     */
+    public MagicStackFilterImpl cmcEQ(int cmc) {
+        final MagicStackFilterImpl curr = this;
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+                return curr.accept(source, player, item) && item.getConvertedCost() == cmc;
+            }
+        };
+    }
+
+    /**
+     * @return filter with added condition matching spell with specified minimal converted mana cost
+     */
+    public MagicStackFilterImpl cmcGEQ(int cmc) {
+        final MagicStackFilterImpl curr = this;
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+                return curr.accept(source, player, item) && item.getConvertedCost() >= cmc;
+            }
+        };
+    }
+
+    /**
+     * @return filter with added condition matching spell with specified maximal converted mana cost
+     */
+    public MagicStackFilterImpl cmcLEQ(int cmc) {
+        final MagicStackFilterImpl curr = this;
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+                return curr.accept(source, player, item) && item.getConvertedCost() <= cmc;
+            }
+        };
+    }
+
+    /**
+     * @return with added condition filter matching spell controlled by you
+     */
+    public MagicStackFilterImpl youControl() {
+        final MagicStackFilterImpl curr = this;
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+                return curr.accept(source, player, item) && item.isFriend(player);
+            }
+        };
+    }
+
+    /**
+     * @return with added condition filter matching spell not controlled by you
+     */
+    public MagicStackFilterImpl youNotControl() {
+        final MagicStackFilterImpl curr = this;
+        return new MagicStackFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
+                return curr.accept(source, player, item) && item.isEnemy(player);
+            }
+        };
+    }
 }
