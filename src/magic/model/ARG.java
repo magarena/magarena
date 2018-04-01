@@ -36,6 +36,15 @@ public class ARG {
         }
     }
 
+    public static final String NUMBER2 = "(?<number2>[0-9]+)";
+    public static int number2(final Matcher m) {
+        if (m.group("number2") == null) {
+            return 1;
+        } else {
+            return Integer.parseInt(m.group("number2"));
+        }
+    }
+
     public static final String AMOUNT = "(?<amount>(a|an|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|twenty|x|[0-9]+))";
     public static int amount(final Matcher m) {
         return EnglishToInt.convert(m.group("amount"));
@@ -64,7 +73,9 @@ public class ARG {
     }
 
     public static final String COLOR = "(?<color>[^ ]+)";
-    public static String color(final Matcher m) {return m.group("color");}
+    public static MagicColor color(final Matcher m) {
+        return MagicColor.getColor(m.group("color"));
+    }
 
     public static final String EFFECT = "(?<effect>.+)";
     public static String effect(final Matcher m) {

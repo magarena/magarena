@@ -147,7 +147,7 @@ public enum MagicConditionParser {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
-            final MagicColor color = MagicColor.valueOf(ARG.color(arg));
+            final MagicColor color = ARG.color(arg);
             return MagicConditionFactory.DevotionAtLeast(color, amount);
         }
     },
@@ -155,7 +155,7 @@ public enum MagicConditionParser {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = 1;
-            final MagicColor color = MagicColor.getColor(ARG.color(arg));
+            final MagicColor color = ARG.color(arg);
             return MagicConditionFactory.DevotionAtLeast(color, amount);
         }
     },

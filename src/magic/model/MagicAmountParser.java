@@ -23,8 +23,7 @@ public enum MagicAmountParser {
     Devotion("your devotion to " + ARG.COLOR) {
         @Override
         public MagicAmount toAmount(final Matcher arg) {
-            final MagicColor color = MagicColor.getColor(ARG.color(arg));
-            return MagicAmountFactory.Devotion(color);
+            return MagicAmountFactory.Devotion(ARG.color(arg));
         }
     },
     Equipment("Equipment attached to (it|SN)") {

@@ -5,10 +5,194 @@ import java.util.regex.Pattern;
 
 import magic.model.ARG;
 import magic.model.MagicPermanentState;
+import magic.model.MagicType;
+import magic.model.MagicSubType;
 import magic.model.target.MagicTargetFilterFactory.Control;
 
-public enum MagicTargetFilterParser {
+import static magic.model.target.MagicTargetFilterFactory.*;
 
+public enum MagicTargetFilterParser {
+    CARD1("artifact card with converted mana cost " + ARG.NUMBER + " or less from your graveyard") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return card(MagicType.Artifact).cmcLEQ(ARG.number(arg)).from(MagicTargetType.Graveyard);
+        }
+    },
+    CARD2("Rebel permanent card with converted mana cost " + ARG.NUMBER + " or less from your graveyard") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Graveyard, ARG.number(arg));
+        }
+    },
+    CARD3("permanent card with converted mana cost " + ARG.NUMBER + " or less from your graveyard") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicTargetType.Graveyard, ARG.number(arg));
+        }
+    },
+    CARD4("creature card with converted mana cost " + ARG.NUMBER + " or less from your graveyard") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return card(MagicType.Creature).cmcLEQ(ARG.number(arg)).from(MagicTargetType.Graveyard);
+        }
+    },
+    CARD5("instant card with converted mana cost " + ARG.NUMBER + " or less from your hand") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return card(MagicType.Instant).from(MagicTargetType.Hand).cmcLEQ(ARG.number(arg));
+        }
+    },
+    CARD6("enchantment card with converted mana cost " + ARG.NUMBER + " or less from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD7("artifact card with converted mana cost " + ARG.NUMBER + " or less from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD8("artifact card with converted mana cost " + ARG.NUMBER + " or greater from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD9("artifact card with converted mana cost " + ARG.NUMBER + " from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardEqualCMC(MagicType.Artifact, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD10("Rebel permanent card with converted mana cost " + ARG.NUMBER + " or less from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD11("Mercenary permanent card with converted mana cost " + ARG.NUMBER + " or less from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD12("creature card with converted mana cost " + ARG.NUMBER + " or less from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+    CARD13("creature card with converted mana cost " + ARG.NUMBER + " or greater from your library") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, ARG.number(arg));
+        }
+    },
+
+    PERM2("non" + ARG.COLOR + " creature with power " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicPTTargetFilter(creatureNon(ARG.color(arg), Control.Any), Operator.GREATER_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    PERM1(ARG.COLOR + " creature with power " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicPTTargetFilter(creature(ARG.color(arg), Control.Any), Operator.GREATER_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    PERM3(ARG.NUMBER + "/" + ARG.NUMBER2 + " creature") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicPTTargetFilter(CREATURE, Operator.EQUAL, ARG.number(arg), Operator.EQUAL, ARG.number2(arg));
+        }
+    },
+    PERM4("creature with converted mana cost " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return permanent(MagicType.Creature, Control.Any).cmcLEQ(ARG.number(arg));
+        }
+    },
+    PERM5("creature with power " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicPTTargetFilter(CREATURE, Operator.LESS_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    PERM6("creature with power " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicPTTargetFilter(CREATURE, Operator.GREATER_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    PERM7("creature with toughness " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicPTTargetFilter.Toughness(CREATURE, Operator.LESS_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    PERM8("creature with toughness " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicPTTargetFilter.Toughness(CREATURE, Operator.GREATER_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    PERM9("artifact or enchantment with converted mana cost " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicCMCPermanentFilter(ARTIFACT_OR_ENCHANTMENT, Operator.LESS_THAN_OR_EQUAL, ARG.number(arg));
+        }
+    },
+    SPELL1("spell with converted mana cost " + ARG.NUMBER) {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return SPELL.cmcEQ(ARG.number(arg));
+        }
+    },
+    SPELL2("spell with converted mana cost " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return SPELL.cmcLEQ(ARG.number(arg));
+        }
+    },
+    SPELL3("spell with converted mana cost " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return SPELL.cmcGEQ(ARG.number(arg));
+        }
+    },
+    SPELL4("instant spell you control with converted mana cost " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return spell(MagicType.Instant).youControl().cmcLEQ(ARG.number(arg));
+        }
+    },
+    SPELL5("sorcery spell you control with converted mana cost " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return spell(MagicType.Sorcery).youControl().cmcLEQ(ARG.number(arg));
+        }
+    },
+    SPELL6("creature spell with converted mana cost " + ARG.NUMBER + " or less") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return spell(MagicType.Creature).cmcLEQ(ARG.number(arg));
+        }
+    },
+    SPELL7("creature spell with converted mana cost " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return spell(MagicType.Creature).cmcGEQ(ARG.number(arg));
+        }
+    },
+    SPELL8("colorless spell with converted mana cost " + ARG.NUMBER + " or greater") {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return COLORLESS_SPELL.cmcGEQ(ARG.number(arg));
+        }
+    },
     CardNamedFromYourLibrary("card named " + ARG.ANY + " from your library") {
         @Override
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
