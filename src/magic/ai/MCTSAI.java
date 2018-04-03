@@ -29,7 +29,7 @@ Classical MCTS (UCT)
  - uniform random simulated playout
  - score = XX% (25000 matches against MMAB-1)
 
-Enchancements to basic UCT
+Enhancements to basic UCT
  - use ratio selection (v + 10)/(n + 10)
  - UCB1 with C = 1.0
  - UCB1 with C = 2.0
@@ -44,16 +44,16 @@ UCT algorithm from Kocsis and Sezepesvari 2006
 Consistency Modifications for Automatically Tuned Monte-Carlo Tree Search
   consistent -> child of root with greatest number of simulations is optimal
   frugal -> do not need to visit the whole tree
-  eps-greedy is not consisteny for fixed eps (with prob eps select randomly, else use score)
+  eps-greedy is not consistent for fixed eps (with prob eps select randomly, else use score)
   eps-greedy is consistent but not frugal if eps dynamically decreases to 0
   UCB1 is consistent but not frugal
   score = average is not consistent
   score = (total reward + K)/(total simulation + 2K) is consistent and frugal!
   using v_t threshold ensures consistency for case of reward in {0,1} using any score function
-    v(s) < v_t (0.3), randomy pick a child, else pick child that maximize score
+    v(s) < v_t (0.3), randomly pick a child, else pick child that maximize score
 
 Monte-Carlo Tree Search in Lines of Action
-  1-ply lookahread to detect direct win for player to move
+  1-ply lookahead to detect direct win for player to move
   secure child formula for decision v + A/sqrt(n)
   evaluation cut-off: use score function to stop simulation early
   use evaluation score to remove "bad" moves during simulation

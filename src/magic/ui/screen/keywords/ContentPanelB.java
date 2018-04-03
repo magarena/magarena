@@ -12,7 +12,7 @@ class ContentPanelB extends ScreenContentPanel {
     ContentPanelB() {
 
         // TODO
-        // This is requird to show images of missing cards but is not desirable
+        // This is required to show images of missing cards but is not desirable
         // due the lengthy load time of missing scripts. It would be much more
         // efficient in this particular case to check for the image directly
         // since we already have the card name.

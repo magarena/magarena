@@ -74,7 +74,7 @@ class CommandLineArgs {
             case "--headless":
                 headless = true;
                 break;
-            case "--duels": // the number of duels to playe [--duels 1].
+            case "--duels": // the number of duels to play [--duels 1].
                 duels = Integer.parseInt(args[i + 1].trim());
                 break;
 

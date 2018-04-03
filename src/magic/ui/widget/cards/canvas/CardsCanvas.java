@@ -39,7 +39,7 @@ public class CardsCanvas extends JPanel {
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 20);
 
     private int dealCardDelay = 80; // milliseconds
-    private int removeCardDelay = 50; // millseconds
+    private int removeCardDelay = 50; // milliseconds
 
     private final List<CardCanvas> cards = new CopyOnWriteArrayList<>();
     private final HashMap<Integer, Integer> cardTypeCount = new HashMap<>();

@@ -11,7 +11,6 @@ import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
-import magic.model.MagicType;
 import magic.model.MagicCard;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.target.MagicTargetFilter;
@@ -454,7 +453,7 @@ public enum MagicConditionParser {
     You30LifeOrMoreOpponent10LifeOrLess("you have 30 or more life and an opponent has 10 or less life") {
         @Override
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE;
+            return MagicCondition.YOU_30_OR_MORE_OPPONENT_10_OR_LESS_LIFE;
         }
     },
     OpponentTenLifeOrLess("an opponent has 10 or less life") {

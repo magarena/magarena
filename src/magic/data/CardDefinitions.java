@@ -30,7 +30,6 @@ import java.util.stream.Stream;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
-import magic.model.event.MagicHandCastActivation;
 import magic.ui.MagicCardImages;
 import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.utility.FileIO;
@@ -69,7 +68,7 @@ public class CardDefinitions {
         CompilerConfiguration.DEFAULT.getOptimizationOptions().put(CompilerConfiguration.INVOKEDYNAMIC, Boolean.TRUE);
     }
 
-    // groovy shell for evaluating groovy card scripts with autmatic imports
+    // groovy shell for evaluating groovy card scripts with automatic imports
     private static final GroovyShell shell = new GroovyShell(
         new CompilerConfiguration().addCompilationCustomizers(
             new ImportCustomizer()
@@ -352,7 +351,7 @@ public class CardDefinitions {
     private static void printStatistics() {
         if (MagicSystem.showStartupStats()) {
             final CardStatistics statistics=new CardStatistics(getDefaultPlayableCardDefs());
-            statistics.printStatictics(System.err);
+            statistics.printStatistics(System.err);
         }
     }
 

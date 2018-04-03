@@ -17,16 +17,16 @@ public class BattlefieldTextOverlay {
     private String zoneName = "";
     private boolean refreshOverlay = true;
 
-    public BufferedImage getOverlayImage(final int battlefieldWidth, final int batttlefieldHeight) {
+    public BufferedImage getOverlayImage(final int battlefieldWidth, final int battlefieldHeight) {
 
         final boolean createNewImage =
                 textOverlayImage == null ||
-                textOverlayImage.getHeight() != batttlefieldHeight ||
+                textOverlayImage.getHeight() != battlefieldHeight ||
                 textOverlayImage.getWidth() != battlefieldWidth;
 
         if (createNewImage) {
             textOverlayImage = ImageHelper.getCompatibleBufferedImage(
-                    battlefieldWidth, batttlefieldHeight, Transparency.BITMASK
+                    battlefieldWidth, battlefieldHeight, Transparency.BITMASK
             );
         }
 

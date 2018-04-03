@@ -189,7 +189,7 @@ final public class MagicSystem {
 
     public static void initialize(final ProgressReporter reporter) {
 
-        // must load config here otherwise annotated card image theme-specifc
+        // must load config here otherwise annotated card image theme-specific
         // icons are not loaded before the AbilityIcon class is initialized
         // and you end up with the default icons instead.
         GeneralConfig.getInstance().load();

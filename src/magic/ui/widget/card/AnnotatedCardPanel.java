@@ -311,7 +311,7 @@ public class AnnotatedCardPanel extends JPanel {
             cardImage.getHeight()
         );
 
-        // draw tranparent P/T overlay on top of original card.
+        // draw transparent P/T overlay on top of original card.
         final Graphics2D g2d = cardImage.createGraphics();
         g2d.drawImage(overlay, 0, 0, null);
         g2d.dispose();

@@ -66,7 +66,7 @@ public class MagicMain {
         MagicSystem.initialize(reporter);
         if (MagicSystem.showStartupStats()) {
             final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
-            System.err.println("Initalization of engine took " + duration + "s");
+            System.err.println("Initialization of engine took " + duration + "s");
         }
 
         LaFHelper.setDefaultLookAndFeel();

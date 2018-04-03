@@ -689,7 +689,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
-    public static MagicCondition YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE = new MagicCondition() {
+    public static MagicCondition YOU_30_OR_MORE_OPPONENT_10_OR_LESS_LIFE = new MagicCondition() {
         @Override
         public boolean accept(MagicSource source) {
             return YOU_30_OR_MORE_LIFE.accept(source) &&
