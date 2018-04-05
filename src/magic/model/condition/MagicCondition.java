@@ -942,4 +942,12 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return permanent.isValid();
         }
     };
+
+    public static MagicCondition LEGENDARY_SORCERY = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return player.controlsPermanent(MagicTargetFilterFactory.LEGENDARY_CREATURE_OR_PLANESWALKER);
+        }
+    };
 }

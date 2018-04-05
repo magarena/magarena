@@ -8,6 +8,7 @@ import magic.data.CardProperty;
 import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
+import magic.model.condition.MagicCondition;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicTrigger;
@@ -228,6 +229,9 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public synchronized void loadAbilities() {
         if (isPlayable() && (hasCost() || isLand()) && handActivations.isEmpty()) {
             add(new MagicHandCastActivation(this));
+            if (isLegendary() && isSorcery()) {
+                add(MagicAdditionalCost.create(MagicCondition.LEGENDARY_SORCERY));
+            }
         }
         if (startingLoyalty > 0 && etbTriggers.isEmpty()) {
             add(new EntersWithCounterTrigger(
@@ -488,15 +492,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public boolean isEquipment() {
         return hasSubType(MagicSubType.Equipment);
-    }
-
-    @Override
-    public boolean isPlaneswalker() {
-        return hasType(MagicType.Planeswalker);
-    }
-
-    public boolean isLegendary() {
-        return hasType(MagicType.Legendary);
     }
 
     public boolean isTribal() {

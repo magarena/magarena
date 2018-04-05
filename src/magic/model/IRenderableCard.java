@@ -50,6 +50,10 @@ public interface IRenderableCard {
         return hasType(MagicType.Planeswalker);
     }
 
+    default boolean isLegendary() {
+        return hasType(MagicType.Legendary);
+    }
+
     default boolean isLand() {
         return hasType(MagicType.Land);
     }
