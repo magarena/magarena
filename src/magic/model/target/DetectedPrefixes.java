@@ -34,9 +34,9 @@ public class DetectedPrefixes {
     /**
      * Make a regex that matches if text matches one of enum's values, optionally prefixed with "non" or "non-"
      */
-    private static Pattern makeGroupRegex(Enum[] values) {
+    private static <T> Pattern makeGroupRegex(T[] values) {
         StringJoiner joiner = new StringJoiner("|");
-        for (Enum i : values) {
+        for (T i : values) {
             joiner.add(i.toString());
         }
         String re = "(non-?)?(" + joiner.toString() + ")";
