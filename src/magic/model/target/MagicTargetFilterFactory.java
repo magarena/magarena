@@ -2247,6 +2247,26 @@ public class MagicTargetFilterFactory {
         4
     );
 
+    public static final MagicPermanentFilterImpl HISTORIC_PERMANENT = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasType(MagicType.Legendary) ||
+                target.hasType(MagicType.Artifact) ||
+                target.hasSubType(MagicSubType.Saga);
+        }
+    };
+
+    public static final MagicStackFilterImpl HISTORIC_SPELL = new MagicStackFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() &&
+                (itemOnStack.hasType(MagicType.Legendary) ||
+                 itemOnStack.hasType(MagicType.Artifact) ||
+                 itemOnStack.hasSubType(MagicSubType.Saga));
+
+        }
+    };
+
     /**
      * Single texts completely specifying the targeting condition.
      */
@@ -2524,6 +2544,7 @@ public class MagicTargetFilterFactory {
         add("permanent that is enchanted", PERMANENT_ENCHANTED);
         add("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
         add("nonartifact permanent", NONARTIFACT_PERMANENT);
+        add("historic permanent", HISTORIC_PERMANENT);
 
         // <color|type|subtype>
         add("token", TOKEN);
@@ -2623,6 +2644,7 @@ public class MagicTargetFilterFactory {
         add("multicolored spell", MULTICOLORED_SPELL);
         add("colorless spell", COLORLESS_SPELL);
         add("aura, equipment, or vehicle spell", AURA_EQUIPMENT_OR_VEHICLE_SPELL);
+        add("historic spell", HISTORIC_SPELL);
 
         // player
         add("opponent", OPPONENT);
