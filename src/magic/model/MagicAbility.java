@@ -1497,17 +1497,17 @@ public enum MagicAbility {
             ));
         }
     },
-    /*WhenOneOrMoreCountersArePlacedOnSN("Whenever (you put )?one or more (?<type>[^ ]+) counter(s)? (are (put|placed) )?on SN, " + ARG.EFFECT, 10) {
+    WhenACounterIsPutOnPermanent("Whenever a (?<type>[^ ]+) counter is put on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(OneOrMoreCountersArePlacedTrigger.create(
-                MagicTargetFilterFactory.SN,
+            card.add(ACounterIsPutTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicCounterType.getCounterRaw(arg.group("type")),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
-    },*/
-    WhenOneOrMoreCountersArePutOnPermanent("Whenever (you put )?one or more (?<type>[^ ]+) counter(s)? (are (put|placed) )?on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+    },
+    WhenOneOrMoreCountersArePutOnPermanent("Whenever one or more (?<type>[^ ]+) counters are put on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(OneOrMoreCountersArePutTrigger.create(
