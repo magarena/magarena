@@ -40,6 +40,7 @@ public enum MagicSubType {
     Aura,
     Cartouche,
     Curse,
+    Saga,
     Shrine,
 
     //instant/sorcery (spell) subtypes
