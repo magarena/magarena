@@ -9,9 +9,9 @@ public class MagicCounterChangeTriggerData {
     public final MagicCounterType counterType;
     public final int amount;
 
-    public MagicCounterChangeTriggerData(final MagicObject aObj, final MagicCounterType counterType, final int aAmount) {
+    public MagicCounterChangeTriggerData(final MagicObject aObj, final MagicCounterType aCounterType, final int aAmount) {
         this.obj = aObj;
-        this.counterType = counterType;
+        this.counterType = aCounterType;
         this.amount = aAmount;
     }
 }
