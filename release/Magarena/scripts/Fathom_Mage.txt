@@ -11,4 +11,3 @@ ability=Evolve;\
         Whenever a +1/+1 counter is put on SN, you may draw a card.
 timing=main
 oracle=Evolve\nWhenever a +1/+1 counter is put on Fathom Mage, you may draw a card.
-status=not supported: when-counter-placed
