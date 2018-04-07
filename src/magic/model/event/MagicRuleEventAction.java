@@ -1362,12 +1362,12 @@ public enum MagicRuleEventAction {
         }
     },
     PutCounter(
-        "put " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? on " + ARG.PERMANENTS
+        "put " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on " + ARG.PERMANENTS
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAmount count = ARG.amountObj(matcher);
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(matcher));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return (game, event) -> {
                 final int amount = count.getAmount(event);
@@ -1426,14 +1426,14 @@ public enum MagicRuleEventAction {
         (game, event) -> game.doAction(new AddTurnTriggerAction(event.getPermanent(), AtEndOfCombatTrigger.Clockwork))
     ),
     RemoveCounter(
-        "remove " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? from " + ARG.PERMANENTS,
+        "remove " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? from " + ARG.PERMANENTS,
         MagicTiming.Pump,
         "-Counters"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAmount count = ARG.amountObj(matcher);
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(matcher));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return (game, event) -> {
                 final int amount = count.getAmount(event);
@@ -1448,13 +1448,13 @@ public enum MagicRuleEventAction {
         }
     },
     RemoveAllCounter(
-        "remove all (?<type>[^ ]+) counter(s)? from " + ARG.PERMANENTS,
+        "remove all " + ARG.WORD1 + " counter(s)? from " + ARG.PERMANENTS,
         MagicTiming.Pump,
         "-Counters"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(matcher));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return (game, event) -> {
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
