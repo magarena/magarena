@@ -7,7 +7,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardDefinitionInit;
 import magic.model.MagicSubType;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.action.PlayTokenAction;

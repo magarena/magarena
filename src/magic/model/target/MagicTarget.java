@@ -1,6 +1,5 @@
 package magic.model.target;
 
-import magic.model.MagicCopyable;
 import magic.model.MagicObject;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;

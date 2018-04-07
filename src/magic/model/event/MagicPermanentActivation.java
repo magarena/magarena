@@ -2,7 +2,6 @@ package magic.model.event;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
-import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
@@ -18,7 +17,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition {

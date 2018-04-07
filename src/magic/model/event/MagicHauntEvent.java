@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicCopyMap;
 import magic.model.action.AddTriggerAction;
 import magic.model.action.MoveCardAction;
 import magic.model.action.RemoveCardAction;

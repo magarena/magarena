@@ -6,7 +6,6 @@ import magic.model.action.MagicPermanentAction;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MagicTuple implements MagicCopyable {
 

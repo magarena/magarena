@@ -2,8 +2,6 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPermanent;
-import magic.model.MagicAbility;
 import magic.model.action.CombatDamageAction;
 import magic.ui.MagicSound;
 

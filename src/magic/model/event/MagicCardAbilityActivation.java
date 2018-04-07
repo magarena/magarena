@@ -13,7 +13,6 @@ import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.List;
-import java.util.LinkedList;
 
 public abstract class MagicCardAbilityActivation extends MagicHandCastActivation {
 
