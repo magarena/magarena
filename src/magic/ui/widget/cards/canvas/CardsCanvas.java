@@ -90,11 +90,7 @@ public class CardsCanvas extends JPanel {
                     MouseHelper.showBusyCursor();
                     int cardIndex = getCardIndexAt(e.getPoint());
                     if (cardIndex >= 0 && !(listener instanceof NullCardsCanvasListener)) {
-                        listener.cardClicked(
-                            cardIndex,
-                            cardIndex >= 0
-                                ? cards.get(cardIndex).getCardDefinition()
-                                : MagicCardDefinition.UNKNOWN);
+                        listener.cardClicked(cardIndex, cards.get(cardIndex).getCardDefinition());
                     }
                     MouseHelper.showDefaultCursor();
                 }
@@ -232,7 +228,7 @@ public class CardsCanvas extends JPanel {
         this.preferredCardSize = aSize;
         refreshLayout = true;
         currentCardIndex = -1;
-        if (useAnimation && newCards != null) {
+        if (useAnimation) {
             executor.execute(getDealCardsRunnable(canvasCards));
         } else {
             createListOfCardCanvasObjects(canvasCards);

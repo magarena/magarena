@@ -195,7 +195,7 @@ public class MagicMain {
             DeckGenerators.setRandomDeck(player);
             return;
 
-        } else if (!deckArg.isEmpty()) { // search for deck file.
+        } else { // search for deck file.
             File deckFile = DeckUtils.findDeckFile(deckArg);
             if (deckFile != null) {
                 MagicDeck deck = DeckUtils.loadDeckFromFile(deckFile.toPath());

@@ -74,8 +74,7 @@ public class TextLabel extends JPanel {
         addMouseListener(new MouseAdapter() {
 
             private boolean dispatchMouseEvent() {
-                return (activeComponent == null
-                    || (activeComponent != null && !activeComponent.isInteractive()));
+                return activeComponent == null || !activeComponent.isInteractive();
             }
 
             private boolean isLeftClick(MouseEvent e) {
