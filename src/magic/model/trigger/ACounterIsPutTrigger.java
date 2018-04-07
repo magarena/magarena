@@ -22,7 +22,7 @@ public abstract class ACounterIsPutTrigger extends MagicTrigger<MagicCounterChan
 
     @Override
     public MagicTriggerType getType() {
-        return MagicTriggerType.WhenACounterIsPut;
+        return MagicTriggerType.WhenACounterIsChanged;
     }
 
     public static ACounterIsPutTrigger create(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {

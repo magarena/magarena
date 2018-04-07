@@ -22,7 +22,7 @@ public abstract class OneOrMoreCountersArePutTrigger extends MagicTrigger<MagicC
 
     @Override
     public MagicTriggerType getType() {
-        return MagicTriggerType.WhenOneOrMoreCountersArePut;
+        return MagicTriggerType.WhenOneOrMoreCountersAreChanged;
     }
 
     public static OneOrMoreCountersArePutTrigger create(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {

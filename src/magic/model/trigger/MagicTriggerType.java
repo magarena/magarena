@@ -44,8 +44,8 @@ public enum MagicTriggerType {
     Protection,             // MagicPermanent
     CannotBeBlocked,        // MagicPermanent
     CantBlock,              // MagicPermanent
-    WhenACounterIsPut,      // object, counter placed, trigger once for each counter
-    WhenOneOrMoreCountersArePut,    // object, counter placed, trigger once regardless of number of counters
+    WhenACounterIsChanged,  // object, counter changed, trigger once for each counter
+    WhenOneOrMoreCountersAreChanged,    // object, counter changed, trigger once regardless of number of counters
     IfCounterWouldChange,   // MagicChangeCountersAction
     ;
 }
