@@ -435,7 +435,7 @@ public class CardDefinitions {
     }
 
     public static List<String> getMissingCardNames() {
-        List<String> names = new ArrayList<String>(getMissingCards().size());
+        List<String> names = new ArrayList<>(getMissingCards().size());
         for (final MagicCardDefinition cdef : getMissingCards()) {
             names.add(cdef.getName());
         }

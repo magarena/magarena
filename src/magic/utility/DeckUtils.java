@@ -69,7 +69,7 @@ public class DeckUtils {
         boolean isSuccessful = true;
 
         for (int count=3;count>0;count--) {
-            cardMaps.add(new TreeMap<String, Integer>());
+            cardMaps.add(new TreeMap<>());
         }
 
         for (final MagicCardDefinition cardDefinition : deck) {

@@ -43,7 +43,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-        final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+        final List<MagicEvent> costEvents = new LinkedList<>();
         for (final MagicMatchedCostEvent matched : matchedCostEvents) {
             costEvents.add(matched.getEvent(source));
         }

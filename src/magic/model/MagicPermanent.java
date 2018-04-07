@@ -92,7 +92,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         cardDefinition = aCardDef;
         firstController = aController;
 
-        counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
+        counters = new EnumMap<>(MagicCounterType.class);
         equipmentPermanents = new MagicPermanentSet();
         auraPermanents = new MagicPermanentSet();
         blockingCreatures = new MagicPermanentList();
@@ -104,10 +104,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         cachedColorFlags = getCardDefinition().getColorFlags();
         cachedAbilityFlags = getCardDefinition().genAbilityFlags();
         cachedPowerToughness = getCardDefinition().genPowerToughness();
-        cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>();
-        cachedManaActivations = new LinkedList<MagicManaActivation>();
-        cachedTriggers = new LinkedList<MagicTrigger<?>>();
-        etbTriggers = new LinkedList<EntersBattlefieldTrigger>();
+        cachedActivations = new LinkedList<>();
+        cachedManaActivations = new LinkedList<>();
+        cachedTriggers = new LinkedList<>();
+        etbTriggers = new LinkedList<>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -119,7 +119,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         card = copyMap.copy(sourcePermanent.card);
         firstController = copyMap.copy(sourcePermanent.firstController);
         stateFlags = sourcePermanent.stateFlags;
-        counters = new EnumMap<MagicCounterType, Integer>(sourcePermanent.counters);
+        counters = new EnumMap<>(sourcePermanent.counters);
         abilityPlayedThisTurn = sourcePermanent.abilityPlayedThisTurn;
         equippedCreature = copyMap.copy(sourcePermanent.equippedCreature);
         equipmentPermanents = new MagicPermanentSet(copyMap, sourcePermanent.equipmentPermanents);
@@ -142,10 +142,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         cachedColorFlags = sourcePermanent.cachedColorFlags;
         cachedAbilityFlags = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
-        cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
-        cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
-        cachedTriggers = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
-        etbTriggers = new LinkedList<EntersBattlefieldTrigger>(sourcePermanent.etbTriggers);
+        cachedActivations = new LinkedList<>(sourcePermanent.cachedActivations);
+        cachedManaActivations = new LinkedList<>(sourcePermanent.cachedManaActivations);
+        cachedTriggers = new LinkedList<>(sourcePermanent.cachedTriggers);
+        etbTriggers = new LinkedList<>(sourcePermanent.etbTriggers);
     }
 
     @Override
@@ -481,11 +481,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 cachedColorFlags = getCardDefinition().getColorFlags();
                 cachedAbilityFlags = getCardDefinition().genAbilityFlags();
                 cachedPowerToughness = getCardDefinition().genPowerToughness();
-                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(getCardDefinition().getActivations());
+                cachedActivations = new LinkedList<>(getCardDefinition().getActivations());
                 cachedActivations.addAll(cardDefinition.getMorphActivations());
-                cachedManaActivations = new LinkedList<MagicManaActivation>(getCardDefinition().getManaActivations());
-                cachedTriggers = new LinkedList<MagicTrigger<?>>(getCardDefinition().getTriggers());
-                etbTriggers = new LinkedList<EntersBattlefieldTrigger>(getCardDefinition().getETBTriggers());
+                cachedManaActivations = new LinkedList<>(getCardDefinition().getManaActivations());
+                cachedTriggers = new LinkedList<>(getCardDefinition().getTriggers());
+                etbTriggers = new LinkedList<>(getCardDefinition().getETBTriggers());
                 appliedStatics = new HashSet<>();
                 break;
             case CDASubtype:

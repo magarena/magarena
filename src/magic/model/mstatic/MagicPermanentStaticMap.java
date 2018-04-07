@@ -15,11 +15,11 @@ import magic.model.MurmurHash3;
 public class MagicPermanentStaticMap {
 
     private final Map<MagicLayer,SortedSet<MagicPermanentStatic>> effects =
-        new EnumMap<MagicLayer,SortedSet<MagicPermanentStatic>>(MagicLayer.class);
+            new EnumMap<>(MagicLayer.class);
 
     public MagicPermanentStaticMap() {
         for (final MagicLayer layer : MagicLayer.values()) {
-            effects.put(layer, new TreeSet<MagicPermanentStatic>());
+            effects.put(layer, new TreeSet<>());
         }
         //changes to power and toughness due to +1/+1 and -1/-1 counters
         add(MagicPermanentStatic.CountersEffect);
@@ -30,7 +30,7 @@ public class MagicPermanentStaticMap {
 
     public MagicPermanentStaticMap(final MagicCopyMap copyMap, final MagicPermanentStaticMap sourceMap) {
         for (final MagicLayer layer : MagicLayer.values()) {
-            effects.put(layer, new TreeSet<MagicPermanentStatic>());
+            effects.put(layer, new TreeSet<>());
         }
 
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : sourceMap.effects.entrySet()) {
@@ -49,7 +49,7 @@ public class MagicPermanentStaticMap {
     }
 
     public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent) {
-        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
+        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<>();
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             final Collection<MagicPermanentStatic> statics = layer.getValue();
             for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
@@ -64,7 +64,7 @@ public class MagicPermanentStaticMap {
     }
 
     public Collection<MagicPermanentStatic> removeTurn() {
-        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
+        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<>();
         for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             final Collection<MagicPermanentStatic> statics = layer.getValue();
             for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
@@ -91,7 +91,7 @@ public class MagicPermanentStaticMap {
     }
 
     public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent, final Collection<MagicStatic> statics) {
-        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
+        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<>();
         for (final MagicStatic mstatic : statics) {
             final Collection<MagicPermanentStatic> mpstatics = effects.get(mstatic.getLayer());
             for (final Iterator<MagicPermanentStatic> iterator = mpstatics.iterator();iterator.hasNext();) {

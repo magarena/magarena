@@ -61,7 +61,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             } else if (maxX == 1) {
                 return Collections.<Object>singletonList(new MagicDelayedPayManaCostResult(cost,1));
             } else {
-                final List<Object> choices=new ArrayList<Object>();
+                final List<Object> choices= new ArrayList<>();
                 for (int x=1;x<=maxX;x++) {
                     choices.add(new MagicDelayedPayManaCostResult(cost,x));
                 }

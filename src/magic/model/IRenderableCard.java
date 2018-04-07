@@ -105,7 +105,7 @@ public interface IRenderableCard {
     }
 
     default Set<MagicType> getTypes() {
-        Set<MagicType> types = new HashSet<MagicType>();
+        Set<MagicType> types = new HashSet<>();
         for (MagicType type : MagicType.values()) {
             if (hasType(type)) {
                 types.add(type);

@@ -29,7 +29,7 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
     @Override
     public List<MagicPermanent> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
-        final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
+        final List<MagicPermanent> targets= new ArrayList<>();
         if (acceptType(MagicTargetType.Permanent)) {
             for (final MagicPlayer controller : game.getPlayers()) {
                 for (final MagicPermanent targetPermanent : controller.getPermanents()) {

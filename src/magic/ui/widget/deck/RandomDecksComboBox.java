@@ -33,7 +33,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
 
         setRenderer(this);
 
-        final Vector<String> items = new Vector<String>();
+        final Vector<String> items = new Vector<>();
         items.add("bug");
         items.add("bur");
         items.add("buw");
@@ -71,7 +71,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
             }
         }
 
-        setModel(new DefaultComboBoxModel<String>(items));
+        setModel(new DefaultComboBoxModel<>(items));
         setSelectedItem(colors);
         lastSelected = colors;
         this.setFocusable(false);

@@ -209,7 +209,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     @Override
     public Set<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
-        Set<MagicSourceActivation<? extends MagicSource>> set = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
+        Set<MagicSourceActivation<? extends MagicSource>> set = new TreeSet<>();
         for (final MagicCard card : hand) {
             set.addAll(card.getSourceActivations());
         }
@@ -504,7 +504,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> filter) {
-        final List<MagicCard> targets = new ArrayList<MagicCard>();
+        final List<MagicCard> targets = new ArrayList<>();
 
         // Cards in graveyard
         if (filter.acceptType(MagicTargetType.Graveyard)) {
@@ -549,7 +549,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {
-        final List<MagicSourceManaActivation> activations=new ArrayList<MagicSourceManaActivation>();
+        final List<MagicSourceManaActivation> activations= new ArrayList<>();
         for (final MagicPermanent permanent : permanents) {
             if (!permanent.producesMana()) {
                 continue;

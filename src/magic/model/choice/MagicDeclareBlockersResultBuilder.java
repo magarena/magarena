@@ -62,14 +62,14 @@ public class MagicDeclareBlockersResultBuilder {
         final MagicRandom rng = new MagicRandom(attackers.length + blockers.size());
         for (int i = 0; i < NUM_SAMPLES; i++) {
             final Map<Integer, List<MagicCombatCreature>> block =
-                new HashMap<Integer, List<MagicCombatCreature>>();
+                    new HashMap<>();
             for (int j = 0; j < attackers.length; j++) {
-                block.put(j, new ArrayList<MagicCombatCreature>(5));
+                block.put(j, new ArrayList<>(5));
                 block.get(j).add(attackers[j]);
             }
             for (final MagicCombatCreature blocker : blockers) {
                 //determine attackers it can block
-                final List<Integer> choices = new ArrayList<Integer>();
+                final List<Integer> choices = new ArrayList<>();
                 for (int j = 0; j < attackers.length; j++) {
                     if (Arrays.asList(attackers[j].candidateBlockers).contains(blocker)) {
                         choices.add(j);

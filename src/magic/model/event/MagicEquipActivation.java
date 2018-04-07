@@ -45,7 +45,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-        final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+        final List<MagicEvent> costEvents = new LinkedList<>();
         for (final MagicMatchedCostEvent matched : costs) {
             costEvents.add(matched.getEvent(source));
         }

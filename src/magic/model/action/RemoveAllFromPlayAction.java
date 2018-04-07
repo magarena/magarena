@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class RemoveAllFromPlayAction extends MagicAction {
 
-    private final Collection<MagicPermanent> perms = new ArrayList<MagicPermanent>();
+    private final Collection<MagicPermanent> perms = new ArrayList<>();
     private final MagicLocationType toLocation;
 
     public RemoveAllFromPlayAction(final Collection<MagicPermanent> aPerms, final MagicLocationType aToLocation) {

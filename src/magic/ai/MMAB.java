@@ -57,7 +57,7 @@ public class MMAB extends MagicAI {
         final ArtificialPruneScoreRef scoreRef = new ArtificialPruneScoreRef(new ArtificialMultiPruneScore());
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(getMaxThreads());
-        final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
+        final List<ArtificialChoiceResults> achoices= new ArrayList<>();
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final int rounds = (size + getMaxThreads() - 1) / getMaxThreads();
         final long slice = artificialLevel * SEC_TO_NANO / rounds;

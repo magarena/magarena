@@ -746,7 +746,7 @@ public class MagicGame {
         if (disableLog || result.isEmpty()) {
             return;
         }
-        final SortedSet<String> names=new TreeSet<String>();
+        final SortedSet<String> names= new TreeSet<>();
         for (final MagicPermanent attacker : result) {
             names.add(MagicMessage.getCardToken(attacker));
         }
@@ -760,7 +760,7 @@ public class MagicGame {
         if (disableLog) {
             return;
         }
-        final SortedSet<String> names = new TreeSet<String>();
+        final SortedSet<String> names = new TreeSet<>();
         for (final MagicCombatCreature[] creatures : result) {
             for (int index = 1; index < creatures.length; index++) {
                 names.add(MagicMessage.getCardToken(creatures[index].permanent));
@@ -1215,14 +1215,14 @@ public class MagicGame {
 
         final List<MagicTarget> options;
         if (targetChoice.isTargeted()) {
-            options=new ArrayList<MagicTarget>();
+            options= new ArrayList<>();
             for (final MagicTarget target : targets) {
                 if (target.isValidTarget(source)) {
                     options.add(target);
                 }
             }
         } else {
-            options=new ArrayList<MagicTarget>(targets);
+            options= new ArrayList<>(targets);
         }
 
         if (options.isEmpty()) {
@@ -1388,7 +1388,7 @@ public class MagicGame {
             return;
         }
 
-        final Collection<MagicPermanentTrigger> copiedTriggers=new ArrayList<MagicPermanentTrigger>(typeTriggers);
+        final Collection<MagicPermanentTrigger> copiedTriggers= new ArrayList<>(typeTriggers);
         for (final MagicPermanentTrigger permanentTrigger : copiedTriggers) {
             final MagicPermanent permanent = permanentTrigger.getPermanent();
             @SuppressWarnings("unchecked")

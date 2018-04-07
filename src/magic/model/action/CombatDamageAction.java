@@ -40,7 +40,7 @@ public class CombatDamageAction extends MagicAction {
 
     private void combatDamage(final MagicGame game, final MagicPlayer aAttackingPlayer, final MagicPlayer aDefendingPlayer) {
 
-        final Collection<MagicDamage> combatDamage=new ArrayList<MagicDamage>();
+        final Collection<MagicDamage> combatDamage= new ArrayList<>();
 
         // Determine all combat damage that must be dealt.
         for (final MagicPermanent attacker : aAttackingPlayer.getPermanents()) {

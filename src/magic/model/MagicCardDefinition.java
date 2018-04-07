@@ -81,20 +81,20 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
-    private final Collection<MagicActivation<MagicPermanent>> permActivations=new ArrayList<MagicActivation<MagicPermanent>>();
-    private final Collection<MagicActivation<MagicPermanent>> morphActivations=new ArrayList<MagicActivation<MagicPermanent>>();
-    private final LinkedList<MagicActivation<MagicCard>> handActivations = new LinkedList<MagicActivation<MagicCard>>();
-    private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<MagicActivation<MagicCard>>();
-    private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
-    private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
-    private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-    private final LinkedList<EntersBattlefieldTrigger> etbTriggers = new LinkedList<EntersBattlefieldTrigger>();
-    private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<ThisSpellIsCastTrigger>();
-    private final Collection<ThisCycleTrigger> cycleTriggers = new ArrayList<ThisCycleTrigger>();
-    private final Collection<ThisDrawnTrigger> drawnTriggers = new ArrayList<ThisDrawnTrigger>();
-    private final Collection<ThisPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<ThisPutIntoGraveyardTrigger>();
-    private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
-    private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
+    private final Collection<MagicActivation<MagicPermanent>> permActivations= new ArrayList<>();
+    private final Collection<MagicActivation<MagicPermanent>> morphActivations= new ArrayList<>();
+    private final LinkedList<MagicActivation<MagicCard>> handActivations = new LinkedList<>();
+    private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<>();
+    private final Collection<MagicCDA> CDAs = new ArrayList<>();
+    private final Collection<MagicTrigger<?>> triggers = new ArrayList<>();
+    private final Collection<MagicStatic> statics= new ArrayList<>();
+    private final LinkedList<EntersBattlefieldTrigger> etbTriggers = new LinkedList<>();
+    private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<>();
+    private final Collection<ThisCycleTrigger> cycleTriggers = new ArrayList<>();
+    private final Collection<ThisDrawnTrigger> drawnTriggers = new ArrayList<>();
+    private final Collection<ThisPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<>();
+    private final Collection<MagicManaActivation> manaActivations= new ArrayList<>();
+    private final Collection<MagicEventSource> costEventSources= new ArrayList<>();
 
     private MagicCardDefinition flipCardDefinition;
     private MagicCardDefinition transformCardDefinition;
@@ -714,7 +714,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     private List<MagicEvent> getCostEvent(final MagicCard source, final MagicManaCost manaCost) {
-        final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
+        final List<MagicEvent> costEvent = new ArrayList<>();
         if (manaCost != MagicManaCost.NONE) {
             costEvent.add(MagicPayManaCostEvent.Cast(
                 source,

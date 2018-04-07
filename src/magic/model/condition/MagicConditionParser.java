@@ -855,7 +855,7 @@ public enum MagicConditionParser {
 
     public static List<MagicMatchedCostEvent> buildCost(final String costs) {
         final String[] splitCosts = costs.split(" and ");
-        final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();
+        final List<MagicMatchedCostEvent> matched = new LinkedList<>();
         for (String cost : splitCosts) {
             matched.add(build(cost));
         }

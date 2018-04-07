@@ -12,7 +12,7 @@ import magic.model.MagicMessage;
 
 public class DestroyAction extends MagicAction {
 
-    private final Collection<MagicPermanent> targets = new ArrayList<MagicPermanent>();
+    private final Collection<MagicPermanent> targets = new ArrayList<>();
     private int numDestroyed = 0;
 
     public DestroyAction(final MagicPermanent permanent) {
@@ -25,7 +25,7 @@ public class DestroyAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        final Collection<MagicPermanent> toBeDestroyed = new ArrayList<MagicPermanent>();
+        final Collection<MagicPermanent> toBeDestroyed = new ArrayList<>();
         for (final MagicPermanent permanent : targets) {
             boolean destroy = true;
 

@@ -184,7 +184,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
 
         this.imageMode = mode;
 
-        final List<Point> tCardPoints=new ArrayList<Point>();
+        final List<Point> tCardPoints= new ArrayList<>();
         final int cardCount = aCardList.size();
         final int preferredWidth = CARD_WIDTH * cardCount + (cardCount - 1) * SPACING;
         int availableWidth = getWidth();

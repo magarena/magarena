@@ -102,7 +102,7 @@ public abstract class MagicChoice {
         } else if (size == 1) {
             return Collections.singletonList(new Object[]{options.iterator().next()});
         } else {
-            final List<Object[]> choiceResultsList=new ArrayList<Object[]>(size);
+            final List<Object[]> choiceResultsList= new ArrayList<>(size);
             for (final Object option : options) {
                 choiceResultsList.add(new Object[]{option});
             }

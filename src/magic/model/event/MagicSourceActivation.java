@@ -15,11 +15,11 @@ public class MagicSourceActivation<T extends MagicSource & MagicMappable<T> & Co
     }
 
     public static <S extends MagicSource & MagicMappable<S> & Comparable<S>> MagicSourceActivation<S> create(final S aSource, final MagicActivation<S> aActivation) {
-        return new MagicSourceActivation<S>(aSource, aActivation);
+        return new MagicSourceActivation<>(aSource, aActivation);
     }
 
     public static <S extends MagicSource & MagicMappable<S> & Comparable<S>> MagicSourceActivation<S> create(final MagicGame game, final MagicSourceActivation<S> aSourceActivation) {
-        return new MagicSourceActivation<S>(aSourceActivation.source.map(game), aSourceActivation.activation);
+        return new MagicSourceActivation<>(aSourceActivation.source.map(game), aSourceActivation.activation);
     }
 
     public final boolean canPlay(final MagicGame game, final MagicPlayer player, final boolean useHints) {

@@ -210,7 +210,7 @@ public class ImagePermanentViewer extends JPanel {
     @Override
     public void setSize(final int width,final int height) {
         super.setSize(width,height);
-        linkedScreenRectangles=new ArrayList<Rectangle>();
+        linkedScreenRectangles= new ArrayList<>();
         for (final Rectangle logicalRect : linkedLogicalRectangles) {
             final Rectangle screenRect=new Rectangle();
             screenRect.x=(logicalRect.x*width)/logicalSize.width;

@@ -94,7 +94,7 @@ public class MCTSAI extends MagicAI {
     private final boolean CHEAT;
 
     //cache nodes to reuse them in later decision
-    private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<Long, MCTSGameTree>(1000);
+    private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<>(1000);
 
     public MCTSAI(final boolean cheat) {
         CHEAT = cheat;
@@ -342,7 +342,7 @@ public class MCTSAI extends MagicAI {
     }
 
     private LinkedList<MCTSGameTree> growTree(final MCTSGameTree root, final MagicGame game, final List<Object[]> RCHOICES) {
-        final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
+        final LinkedList<MCTSGameTree> path = new LinkedList<>();
         boolean found = false;
         MCTSGameTree curr = root;
         path.add(curr);
@@ -509,7 +509,7 @@ public class MCTSAI extends MagicAI {
             List<Object[]> choices = null;
             if (game.getNumActions() == 0) {
                 //map the RCHOICES to the current game instead of recomputing the choices
-                choices = new ArrayList<Object[]>(RCHOICES.size());
+                choices = new ArrayList<>(RCHOICES.size());
                 for (final Object[] choice : RCHOICES) {
                     choices.add(game.map(choice));
                 }
@@ -566,7 +566,7 @@ public class MCTSAI extends MagicAI {
 class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     private final MCTSGameTree parent;
-    private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
+    private final LinkedList<MCTSGameTree> children = new LinkedList<>();
     private final int choice;
     private boolean isAI;
     private boolean isCached;

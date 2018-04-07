@@ -41,7 +41,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
         for (final MagicCombatCreature attacker : builder.getAttackers()) {
             final MagicPermanentList blockers=attacker.permanent.getBlockingCreatures();
             if (!blockers.isEmpty()) {
-                final List<MagicCombatCreature> creatures=new ArrayList<MagicCombatCreature>();
+                final List<MagicCombatCreature> creatures= new ArrayList<>();
                 creatures.add(attacker);
                 for (final MagicPermanent blocker : blockers) {
                     for (final MagicCombatCreature candidateBlocker : attacker.candidateBlockers) {

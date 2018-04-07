@@ -7,7 +7,7 @@ public class ArtificialScoreBoard {
     private final LRUCache<Long,ArtificialScore> gameScoresMap;
 
     ArtificialScoreBoard() {
-        gameScoresMap=new LRUCache<Long,ArtificialScore>(100000);
+        gameScoresMap= new LRUCache<>(100000);
     }
 
     synchronized void setGameScore(final long gameId,final ArtificialScore aiScore) {

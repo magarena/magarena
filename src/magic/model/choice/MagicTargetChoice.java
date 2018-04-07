@@ -463,7 +463,7 @@ public class MagicTargetChoice extends MagicChoice {
             controller.focusViewers(4);
         }
         final MagicTargetHint usedTargetHint=getTargetHint(GeneralConfig.getInstance().getSmartTarget());
-        final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
+        final Set<Object> validChoices= new HashSet<>(game.getLegalTargets(player, source, this, usedTargetHint));
         if (validChoices.size()==1) {
             // There are no valid choices.
             if (validChoices.contains(MagicTargetNone.getInstance())) {

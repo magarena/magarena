@@ -14,7 +14,7 @@ import java.util.List;
 
 public class LookAction extends MagicAction {
 
-    private final List<MagicCard> cards = new ArrayList<MagicCard>();
+    private final List<MagicCard> cards = new ArrayList<>();
     private final MagicPlayer player;
     private final String desc;
 

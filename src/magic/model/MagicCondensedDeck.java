@@ -9,7 +9,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
 
     private String name = "Unsaved Deck";
 
-    private final HashMap<String, MagicCondensedCardDefinition> map = new HashMap<String, MagicCondensedCardDefinition>();
+    private final HashMap<String, MagicCondensedCardDefinition> map = new HashMap<>();
 
     public MagicCondensedDeck() {}
 

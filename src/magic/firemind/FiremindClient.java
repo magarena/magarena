@@ -56,7 +56,7 @@ public class FiremindClient {
             d.ai2 = obj.getString("ai2");
 
             JSONArray scripts = obj.getJSONArray("card_scripts");
-            addedScripts = new ArrayList<String>();
+            addedScripts = new ArrayList<>();
             if(scripts != null){
                 for (int i = 0; i < scripts.length(); i++) {
                     JSONObject script = scripts.getJSONObject(i);

@@ -31,7 +31,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         game.doAction(new PlayAbilityAction(event.getPermanent()));
 
     public static List<MagicMatchedCostEvent> build(final String costs) {
-        final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();
+        final List<MagicMatchedCostEvent> matched = new LinkedList<>();
         final String[] splitCosts = costs.split("(,)? and ");
         for (String cost : splitCosts) {
             matched.add(MagicConditionParser.build(cost));

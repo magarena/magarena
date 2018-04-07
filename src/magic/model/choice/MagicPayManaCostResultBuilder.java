@@ -161,9 +161,9 @@ public class MagicPayManaCostResultBuilder {
         for (final MagicSourceManaActivation activation : activations) {
             activation.available = true;
         }
-        results = new HashMap<MagicBuilderPayManaCostResult,MagicBuilderPayManaCostResult>();
+        results = new HashMap<>();
         build(0, false);
-        return new TreeSet<Object>(results.values());
+        return new TreeSet<>(results.values());
     }
 
     /** Find all possible mana sources to pay one mana of given type for the player. */
@@ -173,8 +173,8 @@ public class MagicPayManaCostResultBuilder {
         types = cost.getTypes();
         amounts = cost.getAmounts();
 
-        final Set<MagicPermanent> manaSources = new HashSet<MagicPermanent>();
-        final Set<Integer> manaIds = new HashSet<Integer>();
+        final Set<MagicPermanent> manaSources = new HashSet<>();
+        final Set<Integer> manaIds = new HashSet<>();
         for (final MagicSourceManaActivation currentActivation : activations) {
             currentActivation.available = true;
             if (currentActivation.canProduce(type).isValid()) {

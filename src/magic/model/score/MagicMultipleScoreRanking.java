@@ -37,7 +37,7 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
 
     public MagicMultipleScoreRanking(final int maxSize,final boolean best) {
         this.best=best;
-        results=new TreeSet<MagicScoreResult>(best ? BEST_COMPARATOR : WORST_COMPARATOR);
+        results= new TreeSet<>(best ? BEST_COMPARATOR : WORST_COMPARATOR);
         left=maxSize;
     }
 
@@ -59,6 +59,6 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
 
     @Override
     public Collection<Object> getResults() {
-        return new ArrayList<Object>(results);
+        return new ArrayList<>(results);
     }
 }

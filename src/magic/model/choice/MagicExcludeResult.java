@@ -29,7 +29,7 @@ public class MagicExcludeResult implements MagicMappable<MagicExcludeResult> {
 
     @Override
     public MagicExcludeResult map(final MagicGame game) {
-        final List<MagicPermanent> mappedExcludePermanents=new ArrayList<MagicPermanent>();
+        final List<MagicPermanent> mappedExcludePermanents= new ArrayList<>();
         for (final MagicPermanent excludePermanent : excludePermanents) {
             mappedExcludePermanents.add(excludePermanent.map(game));
         }

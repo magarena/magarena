@@ -15,8 +15,8 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
     private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
 
     // all possible tribes - calculated once
-    private static final ArrayList<MagicSubType> possibleTribes = new ArrayList<MagicSubType>();
-    private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<ArrayList<String>>();
+    private static final ArrayList<MagicSubType> possibleTribes = new ArrayList<>();
+    private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<>();
 
     // random tribe from all possible for each instance
     private final MagicSubType tribe;
@@ -45,7 +45,7 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
 
     private void getPossibleTribes() {
         for (final MagicSubType s : MagicSubType.ALL_CREATURES) {
-            final HashMap<MagicColor, Integer> countColors = new HashMap<MagicColor, Integer>();
+            final HashMap<MagicColor, Integer> countColors = new HashMap<>();
             countColors.put(MagicColor.Black, 0);
             countColors.put(MagicColor.White, 0);
             countColors.put(MagicColor.Green, 0);
@@ -76,7 +76,7 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
 
     private ArrayList<String> getPossibleColors(final HashMap<MagicColor, Integer> countColors) {
         // monocolor
-        final ArrayList<String> a = new ArrayList<String>();
+        final ArrayList<String> a = new ArrayList<>();
 
         for (final MagicColor c : countColors.keySet()) {
             if (countColors.get(c) > MIN_NUM_CARDS_WITH_SUBTYPE) {

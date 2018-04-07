@@ -200,8 +200,8 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
     private void smartShuffle(final long seed) {
         final MagicRandom rng = new MagicRandom(seed);
         final int size=size();
-        final List<MagicCard> lands=new ArrayList<MagicCard>();
-        final List<MagicCard> spells=new ArrayList<MagicCard>();
+        final List<MagicCard> lands= new ArrayList<>();
+        final List<MagicCard> spells= new ArrayList<>();
         int lowLeft=0;
         for (final MagicCard card : this) {
             final MagicCardDefinition cardDefinition=card.getCardDefinition();

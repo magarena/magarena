@@ -118,7 +118,7 @@ public class PermanentViewerInfo {
     }
 
     private static List<PermanentViewerInfo> getBlockers(final MagicGame game,final MagicPermanent permanent) {
-        final List<PermanentViewerInfo> blockers=new ArrayList<PermanentViewerInfo>();
+        final List<PermanentViewerInfo> blockers= new ArrayList<>();
         for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
             blockers.add(new PermanentViewerInfo(game,blocker));
         }
@@ -126,7 +126,7 @@ public class PermanentViewerInfo {
     }
 
     private static SortedSet<PermanentViewerInfo> getLinked(final MagicGame game,final MagicPermanent permanent) {
-        final SortedSet<PermanentViewerInfo> linked=new TreeSet<PermanentViewerInfo>(NAME_COMPARATOR);
+        final SortedSet<PermanentViewerInfo> linked= new TreeSet<>(NAME_COMPARATOR);
         for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
             linked.add(new PermanentViewerInfo(game,equipment));
             linked.addAll(getLinked(game, equipment));

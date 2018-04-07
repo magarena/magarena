@@ -29,7 +29,7 @@ public class DrawAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        drawnCards=new ArrayList<MagicCard>();
+        drawnCards= new ArrayList<>();
         final MagicCardList library=player.getLibrary();
         int score=0;
         for (int count=amount;count>0;count--) {
