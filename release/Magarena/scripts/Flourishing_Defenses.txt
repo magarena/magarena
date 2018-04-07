@@ -7,4 +7,3 @@ cost={4}{G}
 ability=Whenever a -1/-1 counter is put on a creature, you may create a 1/1 green Elf Warrior creature token.
 timing=enchantment
 oracle=Whenever a -1/-1 counter is put on a creature, you may create a 1/1 green Elf Warrior creature token.
-status=not supported: when-counter-placed

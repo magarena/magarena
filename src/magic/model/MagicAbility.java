@@ -1497,6 +1497,26 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenACounterIsPutOnPermanent("Whenever a " + ARG.WORD1 + " counter is put on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(ACounterIsPutTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicCounterType.getCounterRaw(ARG.word1(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    WhenOneOrMoreCountersArePutOnPermanent("Whenever one or more " + ARG.WORD1 + " counters are put on " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(OneOrMoreCountersArePutTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicCounterType.getCounterRaw(ARG.word1(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     WhenConditionEffect("When(ever)? " + ARG.COND + ", " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
