@@ -188,16 +188,12 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void enableForwardButton() {
-        SwingUtilities.invokeLater(() -> {
-            userActionPanel.enableButton();
-        });
+        SwingUtilities.invokeLater(() -> userActionPanel.enableButton());
     }
 
     @Override
     public void disableActionButton(final boolean thinking) {
-        SwingUtilities.invokeLater(() -> {
-            userActionPanel.disableButton(thinking);
-        });
+        SwingUtilities.invokeLater(() -> userActionPanel.disableButton(thinking));
     }
 
     private void disableActionUndoButtons() {
@@ -471,9 +467,7 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void focusViewers(final int handGraveyard) {
-        SwingUtilities.invokeLater(() -> {
-            gamePanel.focusViewers(handGraveyard);
-        });
+        SwingUtilities.invokeLater(() -> gamePanel.focusViewers(handGraveyard));
     }
 
     @Override
@@ -483,9 +477,7 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public void showCardsToChoose(final MagicCardList cards) {
-        SwingUtilities.invokeLater(() -> {
-            gamePanel.showCardsToChoose(cards);
-        });
+        SwingUtilities.invokeLater(() -> gamePanel.showCardsToChoose(cards));
     }
 
     public void registerChoiceViewer(final IChoiceViewer choiceViewer) {
@@ -506,9 +498,7 @@ public class SwingGameController implements IUIGameController {
     @Override
     public void clearValidChoices() {
         // called from both edt and application threads.
-        SwingUtilities.invokeLater(() -> {
-            clearDisplayedValidChoices();
-        });
+        SwingUtilities.invokeLater(() -> clearDisplayedValidChoices());
         showMessage(MagicSource.NONE, "");
     }
 
@@ -596,9 +586,7 @@ public class SwingGameController implements IUIGameController {
 
         doPlayAnimationAndWait(oldGameInfo, gameViewerInfo);
 
-        SwingUtilities.invokeLater(() -> {
-            gamePanel.update(gameViewerInfo);
-        });
+        SwingUtilities.invokeLater(() -> gamePanel.update(gameViewerInfo));
 
         waitForUIUpdates();
     }

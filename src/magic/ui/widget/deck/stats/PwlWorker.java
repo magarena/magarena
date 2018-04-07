@@ -37,9 +37,7 @@ public class PwlWorker extends SwingWorker<String, Void> {
         try {
             final String pwl = get();
             for (IPwlWorkerListener listener : listeners) {
-                SwingUtilities.invokeLater(() -> {
-                    listener.setPlayedWonLost(pwl);
-                });
+                SwingUtilities.invokeLater(() -> listener.setPlayedWonLost(pwl));
             }
         } catch (CancellationException ex) {
             LOGGER.log(Level.INFO, "pwlWorker cancelled.");

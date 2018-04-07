@@ -212,7 +212,7 @@ final public class MagicSystem {
         // Queue up tasks to run synchronously on a single background thread.
         final ExecutorService background = Executors.newSingleThreadExecutor();
         background.execute(loadPlayable);
-        background.execute(() -> { CardDefinitions.postCardDefinitions(); });
+        background.execute(() -> CardDefinitions.postCardDefinitions());
         background.execute(loadMissing);
         background.shutdown();
 

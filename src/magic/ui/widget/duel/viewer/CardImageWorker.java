@@ -32,7 +32,7 @@ public class CardImageWorker extends SwingWorker<Image, Boolean> {
         // if image not returned within specified millisecs,
         // set CardImagePanel to pending state.
         final ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
-        executor.schedule(() -> { publish(!isCancelled() && !isDone()); }, 200, TimeUnit.MILLISECONDS);
+        executor.schedule(() -> publish(!isCancelled() && !isDone()), 200, TimeUnit.MILLISECONDS);
 
 //        Thread.currentThread().sleep(ThreadLocalRandom.current().nextInt(100, 1000));
 

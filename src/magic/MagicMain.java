@@ -72,7 +72,7 @@ public class MagicMain {
         LaFHelper.setDefaultLookAndFeel();
 
         reporter.setMessage("Starting UI...");
-        SwingUtilities.invokeLater(() -> { startUI(cmdline); });
+        SwingUtilities.invokeLater(() -> startUI(cmdline));
     }
 
 

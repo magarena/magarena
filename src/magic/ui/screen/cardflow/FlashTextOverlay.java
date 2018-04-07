@@ -24,7 +24,7 @@ public class FlashTextOverlay extends TexturedPanel {
     private Font textFont;
 
     private final Timer timer =
-        new Timer(1200, (e) -> {setVisible(false); });
+        new Timer(1200, (e) -> setVisible(false));
 
     public FlashTextOverlay(int width, int height) {
 

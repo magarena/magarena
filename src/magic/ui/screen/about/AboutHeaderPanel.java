@@ -41,7 +41,7 @@ class AboutHeaderPanel extends JPanel {
         add(lbl);
         add(memoryLabel);
 
-        new Timer(1000, (e) -> { refreshMemoryLabel(); }).start();
+        new Timer(1000, (e) -> refreshMemoryLabel()).start();
         refreshMemoryLabel();
     }
 

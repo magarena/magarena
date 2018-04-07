@@ -66,9 +66,7 @@ class MagicFramePanel extends JPanel {
 
         super.paintComponent(g);
 
-        SwingUtilities.invokeLater(() -> {
-            setBackgroundImage();
-        });
+        SwingUtilities.invokeLater(() -> setBackgroundImage());
 
         if (sourceImage != null) {
             final Dimension newSize = getSize();

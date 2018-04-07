@@ -46,7 +46,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
         backgroundButton = new JButton(MText.get(_S3));
         backgroundButton.setFocusable(false);
-        backgroundButton.addActionListener((a) -> { doRunInBackground(); });
+        backgroundButton.addActionListener((a) -> doRunInBackground());
         hintPanel.addHintSource(backgroundButton, String.format("<b>%s</b><br>%s",
             MText.get(_S3),
             MText.get(_S1))

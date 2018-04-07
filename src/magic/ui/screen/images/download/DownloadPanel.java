@@ -75,12 +75,8 @@ public abstract class DownloadPanel extends JPanel implements IScanListener, IDo
     }
 
     private void setActions() {
-        downloadButton.addActionListener(action -> {
-            doRunImageDownloadWorker();
-        });
-        cancelButton.addActionListener(action -> {
-            doCancelImageDownloadWorker();
-        });
+        downloadButton.addActionListener(action -> doRunImageDownloadWorker());
+        cancelButton.addActionListener(action -> doCancelImageDownloadWorker());
     }
 
     void doCancel() {

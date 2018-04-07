@@ -16,7 +16,7 @@ public class DeckSideBar extends ScreenSideBar
         refreshLayout();
         deckInfo.addPropertyChangeListener(
             DeckInfoPanel.CP_LAYOUT_CHANGED,
-            (e) -> { refreshLayout(); }
+            (e) -> refreshLayout()
         );
     }
 

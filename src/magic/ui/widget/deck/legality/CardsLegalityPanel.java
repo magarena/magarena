@@ -134,17 +134,13 @@ public class CardsLegalityPanel extends JPanel {
 
     private void notifyOnLeftClick(MagicCardDefinition card) {
         for (ICardsTableListener listener : listeners) {
-            SwingUtilities.invokeLater(() -> {
-                listener.onLeftClick(card);
-            });
+            SwingUtilities.invokeLater(() -> listener.onLeftClick(card));
         }
     }
 
     private void notifyOnRightClick(MagicCardDefinition card) {
         for (ICardsTableListener listener : listeners) {
-            SwingUtilities.invokeLater(() -> {
-                listener.onRightClick(card);
-            });
+            SwingUtilities.invokeLater(() -> listener.onRightClick(card));
         }
     }
 

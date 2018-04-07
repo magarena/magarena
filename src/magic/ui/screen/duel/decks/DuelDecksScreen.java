@@ -81,7 +81,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
             doGameSetupInBackground(duel);
             screenContent.addPropertyChangeListener(
                 DuelDecksPanel.CP_DECK_CHANGED,
-                (e) -> { doGameSetupInBackground(duel); }
+                (e) -> doGameSetupInBackground(duel)
             );
         }
 
