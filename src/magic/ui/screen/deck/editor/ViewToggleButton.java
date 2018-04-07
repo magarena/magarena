@@ -41,7 +41,7 @@ public class ViewToggleButton extends JToggleButton {
             @Override
             public void mouseEntered(MouseEvent e) {
                 MagicStyle.setHightlight(ViewToggleButton.this, true);
-                if (isSelected() == false) {
+                if (!isSelected()) {
                     setForeground(MagicStyle.getRolloverColor());
                 }
             }

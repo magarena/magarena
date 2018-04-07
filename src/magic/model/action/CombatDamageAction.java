@@ -34,7 +34,7 @@ public class CombatDamageAction extends MagicAction {
             creature.hasAbility(MagicAbility.FirstStrike) ||
             creature.hasAbility(MagicAbility.DoubleStrike)
             :
-            creature.hasState(MagicPermanentState.DealtFirstStrike) == false ||
+            !creature.hasState(MagicPermanentState.DealtFirstStrike) ||
             creature.hasAbility(MagicAbility.DoubleStrike);
     }
 

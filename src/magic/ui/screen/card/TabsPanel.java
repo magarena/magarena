@@ -35,7 +35,7 @@ public class TabsPanel extends TexturedPanel {
     }
 
     public JToggleButton addToggleButton(String text, AbstractAction action) {
-        if (toggleButtons.containsKey(text) == false) {
+        if (!toggleButtons.containsKey(text)) {
             toggleButtons.put(text, getToggleButton(text, action));
         }
         return toggleButtons.get(text);

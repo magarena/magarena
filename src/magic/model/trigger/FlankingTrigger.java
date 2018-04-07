@@ -18,7 +18,7 @@ public class FlankingTrigger extends ThisBecomesBlockedByTrigger {
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
-        return super.accept(permanent, blocker) && blocker.hasAbility(MagicAbility.Flanking) == false;
+        return super.accept(permanent, blocker) && !blocker.hasAbility(MagicAbility.Flanking);
     }
 
     @Override

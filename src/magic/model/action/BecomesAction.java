@@ -70,7 +70,7 @@ public class BecomesAction extends MagicAction {
             };
             game.doAction(new AddStaticAction(permanent, PT));
         }
-        if (color.isEmpty() == false) {
+        if (!color.isEmpty()) {
             int _mask = 0;
             for (final MagicColor element : color) {
                 _mask |= element.getMask();
@@ -90,7 +90,7 @@ public class BecomesAction extends MagicAction {
             };
             game.doAction(new AddStaticAction(permanent, C));
         }
-        if (type.isEmpty() == false) {
+        if (!type.isEmpty()) {
             int _mask = 0;
             for (final MagicType element : type) {
                 _mask |= element.getMask();
@@ -109,7 +109,7 @@ public class BecomesAction extends MagicAction {
             };
             game.doAction(new AddStaticAction(permanent, T));
         }
-        if (subType.isEmpty() == false) {
+        if (!subType.isEmpty()) {
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, duration) {
                 @Override
                 public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {

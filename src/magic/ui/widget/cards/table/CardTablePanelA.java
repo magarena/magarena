@@ -146,7 +146,7 @@ public class CardTablePanelA extends CardsTablePanel {
 
     public void setSelectedCard(MagicCardDefinition aCard) {
         final int index = tableModel.findCardIndex(aCard);
-        if (index != -1 && getSelectedCards().contains(aCard) == false) {
+        if (index != -1 && !getSelectedCards().contains(aCard)) {
             table.getSelectionModel().addSelectionInterval(index, index);
         } else if (tableModel.getRowCount() > 0) {
             table.getSelectionModel().addSelectionInterval(0, 0);

@@ -231,12 +231,12 @@ public final class MText {
                             final String fieldValue = (String) f.get(null);
                             final Long stringId = getStringId(fieldValue);
                             final String stringValue = UTF_PREFIX + StringEscapeUtils.escapeJava(getDisplayText(fieldValue));
-                            if (stringsMap.containsKey(stringId) == false) {
+                            if (!stringsMap.containsKey(stringId)) {
                                 stringsMap.put(stringId, stringValue);
                                 if (f.getAnnotation(StringContext.class) != null) {
                                     annotations.put(stringId, f.getAnnotation(StringContext.class).eg());
                                 }
-                            } else if (stringValue.equals(stringsMap.get(stringId)) == false) {
+                            } else if (!stringValue.equals(stringsMap.get(stringId))) {
                                 throw new RuntimeException(
                                         "Failed to generate translation file because the following strings have the same CRC32 value:-\n" +
                                         stringValue + "\n" + stringsMap.get(stringId));

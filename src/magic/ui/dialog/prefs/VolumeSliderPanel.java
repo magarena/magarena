@@ -17,7 +17,7 @@ public class VolumeSliderPanel extends JPanel {
         slider = new JSlider(0, 100, initialValue);
         slider.setFocusable(false);
         slider.addChangeListener((event) -> {
-            if (slider.getValueIsAdjusting() == false) {
+            if (!slider.getValueIsAdjusting()) {
                 aSound.play(slider.getValue());
             }
         });

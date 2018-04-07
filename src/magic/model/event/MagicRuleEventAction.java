@@ -1093,7 +1093,7 @@ public enum MagicRuleEventAction {
                 //continue to the second part if
                 //  there is no target OR
                 //  there is a target and it is legal
-                if (matcher.group("choice") == null || players.isEmpty() == false) {
+                if (matcher.group("choice") == null || !players.isEmpty()) {
                     game.doAction(new ChangeLifeAction(event.getPlayer(), total2));
                 }
             };
@@ -3365,7 +3365,7 @@ public enum MagicRuleEventAction {
     }
 
     public boolean isIndependent() {
-        return pattern.toString().contains("sn") == false;
+        return !pattern.toString().contains("sn");
     }
 
     public MagicChoice getChoice(final Matcher matcher) {
@@ -3446,7 +3446,7 @@ public enum MagicRuleEventAction {
                 final MagicSourceEvent riderSourceEvent = build(riderWithoutPrefix);
 
                 //rider cannot have choices
-                if (hasReference == false && riderSourceEvent.getChoice().isValid()) {
+                if (!hasReference && riderSourceEvent.getChoice().isValid()) {
                     throw new RuntimeException("rider should not have choice: \"" + part[i] + "\"");
                 }
                 if (riderSourceEvent.getEventChoice() instanceof MagicMayChoice) {
@@ -3610,18 +3610,18 @@ public enum MagicRuleEventAction {
             choiceFact,
             picker,
             (game, event) -> {
-                if (ifCond.accept(event) == false) {
+                if (!ifCond.accept(event)) {
                     return;
                 }
 
                 final MagicEvent costEvent = matchedCost.getEvent(event.getSource());
 
-                if ((hasCost == false  || costEvent.isSatisfied()) &&
-                    (optional == false || event.isYes())) {
+                if ((!hasCost || costEvent.isSatisfied()) &&
+                    (!optional || event.isYes())) {
                     if (hasCost) {
                         game.addEvent(costEvent);
                     }
-                    if (elseAction == false) {
+                    if (!elseAction) {
                         action.executeEvent(game, event);
                     }
                 } else {

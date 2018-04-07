@@ -472,7 +472,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         startingHandSize = handSize;
         final MagicDeck deck = playerConfig.getDeck();
         Thread thread = Thread.currentThread();
-        for (int i = 0; i < deck.size() && thread.isInterrupted() == false; i++) {
+        for (int i = 0; i < deck.size() && !thread.isInterrupted(); i++) {
             final MagicCardDefinition cardDefinition = deck.get(i);
             if (cardDefinition.isValid()) {
                 final long id = currGame.getUniqueId();
@@ -540,12 +540,12 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     public void addPermanent(final MagicPermanent permanent) {
         final boolean added = permanents.add(permanent);
-        assert added == true : permanent + " cannot be added to " + this;
+        assert added : permanent + " cannot be added to " + this;
     }
 
     public void removePermanent(final MagicPermanent permanent) {
         final boolean removed = permanents.remove(permanent);
-        assert removed == true : permanent + " cannot be removed from " + this;
+        assert removed : permanent + " cannot be removed from " + this;
     }
 
     public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {

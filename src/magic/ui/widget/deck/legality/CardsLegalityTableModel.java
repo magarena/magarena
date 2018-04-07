@@ -29,7 +29,7 @@ public class CardsLegalityTableModel implements TableModel {
 
     @Override
     public void addTableModelListener(final TableModelListener l) {
-        if (listeners.contains(l) == false) {
+        if (!listeners.contains(l)) {
             listeners.add(l);
         }
     }

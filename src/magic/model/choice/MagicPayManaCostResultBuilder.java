@@ -81,7 +81,7 @@ public class MagicPayManaCostResultBuilder {
         final boolean hasX = costManaType == MagicCostManaType.Generic && cost.hasX();
 
         // Fast implementation when minimum amount is 1 without X.
-        if (minAmount == 1 && hasX == false) {
+        if (minAmount == 1 && !hasX) {
             for (int i = 0; i < typeActivationSize; i++) {
                 final MagicSourceManaActivation typeActivation = typeActivations[i];
                 typeActivation.available = false;
@@ -123,7 +123,7 @@ public class MagicPayManaCostResultBuilder {
                     typeActivations[i].available = false;
                     typeActivations[i].manaType = producedTypes[i];
                     count++;
-                    if (count >= minAmount && (hasX == false || cost.validX(count)) && build(index + 1, single) && single) {
+                    if (count >= minAmount && (!hasX || cost.validX(count)) && build(index + 1, single) && single) {
                         return true;
                     }
                     if (count < minAmount || (hasX && i + 1 != typeActivationSize)) {
@@ -187,7 +187,7 @@ public class MagicPayManaCostResultBuilder {
                         manaSources.add(permanent);
                     } else {
                         final int manaId = permanent.getManaId();
-                        if (manaIds.contains(manaId) == false) {
+                        if (!manaIds.contains(manaId)) {
                             manaSources.add(permanent);
                             manaIds.add(manaId);
                         }

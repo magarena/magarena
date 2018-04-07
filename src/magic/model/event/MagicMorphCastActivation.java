@@ -90,7 +90,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             }
             @Override
             public boolean canBeCountered() {
-                return hasAbility(MagicAbility.CannotBeCountered) == false;
+                return !hasAbility(MagicAbility.CannotBeCountered);
             }
             @Override
             public int getConvertedCost() {

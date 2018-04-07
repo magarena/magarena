@@ -45,8 +45,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
 
     private final boolean canPayCosts(final MagicGame game, final MagicPermanent source) {
         for (final MagicEvent event : getCostEvent(source)) {
-            if (event.hasChoice() == false) {
-                if (event.isSatisfied() == false) {
+            if (!event.hasChoice()) {
+                if (!event.isSatisfied()) {
                     return false;
                 } else {
                     game.executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
@@ -54,8 +54,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             }
         }
         for (final MagicEvent event : getCostEvent(source)) {
-            if (event.hasChoice() == true) {
-                if (event.isSatisfied() == false) {
+            if (event.hasChoice()) {
+                if (!event.isSatisfied()) {
                     return false;
                 }
             }

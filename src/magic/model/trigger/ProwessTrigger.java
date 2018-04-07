@@ -19,7 +19,7 @@ public class ProwessTrigger extends OtherSpellIsCastTrigger {
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
-        return spell.isFriend(permanent) && (spell.hasType(MagicType.Creature) == false);
+        return spell.isFriend(permanent) && (!spell.hasType(MagicType.Creature));
     }
 
     @Override

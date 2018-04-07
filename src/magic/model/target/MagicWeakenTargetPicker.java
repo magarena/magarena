@@ -40,7 +40,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     @Override
     protected void setEvent(final MagicEvent event) {
-        if (amountToughness < 0 || count.isConstant() == false) {
+        if (amountToughness < 0 || !count.isConstant()) {
             amountToughness = -count.getAmount(event);
         }
     }

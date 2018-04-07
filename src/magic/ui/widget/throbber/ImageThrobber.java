@@ -97,7 +97,7 @@ public class ImageThrobber extends AbstractThrobber {
         if (displayImage == null)
             return;
         if (centerPoint != null) {
-            if (sizeToFit && isExactFit == false) {
+            if (sizeToFit && !isExactFit) {
                 drawSizeToFit(g2, angle);
             } else {
                 drawOriginalSize(g2, angle);

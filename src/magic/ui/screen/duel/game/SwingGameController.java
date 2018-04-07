@@ -208,7 +208,7 @@ public class SwingGameController implements IUIGameController {
         assert !SwingUtilities.isEventDispatchThread();
         disableActionUndoButtons();
         int tick = 0;
-        while (tick < t && isPauseCancelled.get() == false) {
+        while (tick < t && !isPauseCancelled.get()) {
             try {
                 Thread.sleep(10);
             } catch (final InterruptedException ex) {
@@ -547,11 +547,11 @@ public class SwingGameController implements IUIGameController {
 
     private boolean isReadyToAnimate() {
         return GeneralConfig.get(BooleanSetting.ANIMATE_GAMEPLAY)
-            && (animation == null || animation.isRunning.get() == false);
+            && (animation == null || !animation.isRunning.get());
     }
 
     private void doPlayAnimationAndWait(final GameViewerInfo oldGameInfo, final GameViewerInfo newGameInfo) {
-        if (isReadyToAnimate() == false) {
+        if (!isReadyToAnimate()) {
             return;
         }
 
@@ -567,7 +567,7 @@ public class SwingGameController implements IUIGameController {
                 doFlashPlayerZoneButton(newGameInfo);
                 duelPane.getAnimationPanel().playAnimation(animation);
             });
-            while (animation.isRunning.get() == true) {
+            while (animation.isRunning.get()) {
                 pause(100);
             }
         }
@@ -723,7 +723,7 @@ public class SwingGameController implements IUIGameController {
         showEndGameMessage();
         playEndGameSoundEffect();
         enableForwardButton();
-        if (MagicSystem.isAiVersusAi() == false && waitForInputOrUndo()) {
+        if (!MagicSystem.isAiVersusAi() && waitForInputOrUndo()) {
             performUndo();
             updateGameView();
         } else {
@@ -1081,7 +1081,7 @@ public class SwingGameController implements IUIGameController {
     }
 
     private int getStackItemPause() {
-        return isStackFastForward.get() == true ? 0 : CONFIG.getMessageDelay();
+        return isStackFastForward.get() ? 0 : CONFIG.getMessageDelay();
     }
 
     @Override

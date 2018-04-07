@@ -99,7 +99,7 @@ public class MagicMessage {
     private static final String CARD_TOKEN = "<%s" + CARD_ID_DELIMITER + "%d>";
 
     private static String getXCost(final String sourceText, final Object obj) {
-        if (obj != null && obj instanceof MagicPayedCost && sourceText.contains("where X") == false) {
+        if (obj != null && obj instanceof MagicPayedCost && !sourceText.contains("where X")) {
             return "X (" + ((MagicPayedCost)obj).getX() + ")";
         } else {
             return "X";

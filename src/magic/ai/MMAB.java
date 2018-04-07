@@ -103,7 +103,7 @@ public class MMAB extends MagicAI {
         ArtificialChoiceResults bestAchoice = achoices.get(0);
         for (final ArtificialChoiceResults achoice : achoices) {
             if (bestScore.isBetter(achoice.aiScore, true) &&
-                MovesBlackList.isBlackListed(choiceGame, event, achoice.choiceResults) == false) {
+                !MovesBlackList.isBlackListed(choiceGame, event, achoice.choiceResults)) {
                 bestScore = achoice.aiScore;
                 bestAchoice = achoice;
             }

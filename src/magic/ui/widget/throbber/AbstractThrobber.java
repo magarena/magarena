@@ -137,7 +137,7 @@ public abstract class AbstractThrobber extends JComponent {
 
         // draw the next frame to an off-screen image buffer on timeline
         // thread to minimize work required on EDT paintComponent().
-        assert SwingUtilities.isEventDispatchThread() == false;
+        assert !SwingUtilities.isEventDispatchThread();
         BufferedImage image = getNextFrameImage(angle);
 
         if (image != null) {

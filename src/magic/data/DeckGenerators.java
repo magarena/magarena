@@ -57,7 +57,7 @@ public class DeckGenerators {
     }
 
     public RandomDeckGenerator getDeckGenerator(final String name) {
-        if (generatorsClass.containsKey(name) && generatorsMap.containsKey(name) == false) {
+        if (generatorsClass.containsKey(name) && !generatorsMap.containsKey(name)) {
             try {
                 generatorsMap.put(name, generatorsClass.get(name).newInstance());
             } catch (final InstantiationException | IllegalAccessException ex) {

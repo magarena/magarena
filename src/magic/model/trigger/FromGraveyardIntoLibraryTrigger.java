@@ -21,7 +21,7 @@ public class FromGraveyardIntoLibraryTrigger extends ThisPutIntoGraveyardTrigger
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
         final MagicCard card = act.card;
-        return card.isToken() == false ?
+        return !card.isToken() ?
             new MagicEvent(
                 card,
                 this,

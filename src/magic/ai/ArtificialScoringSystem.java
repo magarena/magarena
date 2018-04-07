@@ -72,7 +72,7 @@ public class ArtificialScoringSystem {
         final int score=(int)(cardDefinition.getValue()*100) - costFactor * cardDefinition.getConvertedCost() * 20;
         if (cardDefinition.isCreature()) {
             return score+(cardDefinition.getCardPower()+cardDefinition.getCardToughness())*10;
-        } else if (cardDefinition.isToken() == false) {
+        } else if (!cardDefinition.isToken()) {
             return score+cardDefinition.getRemoval()*50+cardDefinition.getRarity()*30;
         } else {
             return score;

@@ -577,7 +577,7 @@ public class MagicEvent implements MagicCopyable {
             chosenTarget == MagicTargetNone.getInstance();
         chosen = null;
         chosenTarget = null;
-        return countered == false;
+        return !countered;
     }
 
     public final boolean processTarget(final MagicGame game, final MagicTargetAction effect) {

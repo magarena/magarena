@@ -73,7 +73,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     private void doRecallPanelSelectionAction() {
         if (getRecallSelectedCard() != null) {
             selectedCard = getRecallSelectedCard();
-            if (controller.getDeck().contains(selectedCard) == false) {
+            if (!controller.getDeck().contains(selectedCard)) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -165,7 +165,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
             return;
         }
 
-        if (controller.getDeck().contains(card) == false) {
+        if (!controller.getDeck().contains(card)) {
             MagicSound.BEEP.play();
             return;
         }

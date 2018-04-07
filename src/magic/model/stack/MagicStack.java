@@ -81,7 +81,7 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
     }
 
     public boolean hasItem() {
-        return isEmpty() == false;
+        return !isEmpty();
     }
 
     public boolean hasItem(final MagicSource source, final String description) {

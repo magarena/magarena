@@ -234,7 +234,7 @@ public class GeneralConfig {
     }
 
     public boolean isCustomCardImagesPath() {
-        return getProperty(CARD_IMAGES_PATH, "").isEmpty() == false;
+        return !getProperty(CARD_IMAGES_PATH, "").isEmpty();
     }
 
     public Path getCardImagesPath() {

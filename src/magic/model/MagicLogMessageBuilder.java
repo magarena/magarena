@@ -22,7 +22,7 @@ public class MagicLogMessageBuilder {
         }
         messageBuilder.append(message);
 
-        if (order.contains(player) == false) {
+        if (!order.contains(player)) {
             order.add(player);
         }
     }

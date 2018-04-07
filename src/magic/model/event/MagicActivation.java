@@ -91,7 +91,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
 
         // Check conditions for activation
         for (final MagicCondition condition : conditions) {
-            if (condition.accept(source) == false) {
+            if (!condition.accept(source)) {
                 return false;
             }
         }
@@ -105,7 +105,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         // * execute pay mana cost event
         //
         for (final MagicEvent event : getCostEvent(source)) {
-            if (event.isSatisfied() == false) {
+            if (!event.isSatisfied()) {
                 return false;
             }
         }

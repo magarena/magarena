@@ -174,7 +174,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     }
 
     public boolean isRepresentedByACard() {
-        return getCard().isToken() == false;
+        return !getCard().isToken();
     }
 
     @Override

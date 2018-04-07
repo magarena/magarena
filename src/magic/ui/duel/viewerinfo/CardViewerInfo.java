@@ -46,7 +46,7 @@ public class CardViewerInfo {
     }
 
     public boolean isNotEmpty() {
-        return isEmpty() == false;
+        return !isEmpty();
     }
 
     public boolean isLand() {

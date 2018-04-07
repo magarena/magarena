@@ -69,7 +69,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
         screenContent = new DuelDecksPanel(duel);
         nextGameButton = new StartGameButton(getStartDuelCaption(), getPlayGameAction());
 
-        if (duel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
+        if (duel.getGamesPlayed() > 0 && !MagicSystem.isAiVersusAi()) {
             saveDuel();
         }
 
@@ -77,7 +77,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
 
         setMainContent(screenContent);
 
-        if (MagicSystem.isAiVersusAi() == false) {
+        if (!MagicSystem.isAiVersusAi()) {
             doGameSetupInBackground(duel);
             screenContent.addPropertyChangeListener(
                 DuelDecksPanel.CP_DECK_CHANGED,
@@ -274,7 +274,7 @@ public class DuelDecksScreen extends HeaderFooterScreen
 
     private void doGameSetupInBackground(final MagicDuel duel) {
         nextGameButton.setBusy(true);
-        if (worker != null && worker.isDone() == false) {
+        if (worker != null && !worker.isDone()) {
             worker.cancel(true);
         }
         worker = new NewGameWorker(duel, this);

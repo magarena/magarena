@@ -102,7 +102,7 @@ public class MagicInfoWindow extends JWindow {
     public void setVisible(boolean aFlag) {
         super.setVisible(aFlag);
         if (ImageHelper.isWindowTranslucencySupported()) {
-            if (aFlag == false) {
+            if (!aFlag) {
                 setOpacity(0f);
             } else {
                 fadeInTimeline = new Timeline();

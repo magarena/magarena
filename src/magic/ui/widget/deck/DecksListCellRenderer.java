@@ -19,7 +19,7 @@ class DecksListCellRenderer extends DefaultListCellRenderer {
     public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
         final MagicDeck deck = (MagicDeck) value;
         final Component c = super.getListCellRendererComponent(list, deck.getName(), index, isSelected, cellHasFocus);
-        if (deck.isValid() == false) {
+        if (!deck.isValid()) {
             if (invalidDeckFont == null) {
                 final Map<TextAttribute, Object> attributes = new HashMap<>();
                 attributes.put(TextAttribute.STRIKETHROUGH, TextAttribute.STRIKETHROUGH_ON);

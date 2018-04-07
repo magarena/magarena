@@ -383,7 +383,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
 
     public boolean isName(final String other) {
         final String name = getName();
-        return name.isEmpty() == false && name.equalsIgnoreCase(other);
+        return !name.isEmpty() && name.equalsIgnoreCase(other);
     }
 
     @Override
@@ -814,7 +814,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             }
 
             // Soulbond
-            if (pairedCreature.isValid() && pairedCreature.isCreature() == false) {
+            if (pairedCreature.isValid() && !pairedCreature.isCreature()) {
                 game.logAppendMessage(
                     getController(),
                     MagicMessage.format("%s becomes unpaired as %s is no longer a creature.", this, pairedCreature)
@@ -829,14 +829,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             String reason = "";
             if (isCreature()) {
                 reason = "it is a creature.";
-            } else if (enchantedPermanent.isValid() == false
-                || game.isLegalTarget(getController(), this, tchoice, enchantedPermanent) == false) {
+            } else if (!enchantedPermanent.isValid()
+                || !game.isLegalTarget(getController(), this, tchoice, enchantedPermanent)) {
                 reason = "it no longer enchants a valid permanent.";
             } else if (enchantedPermanent.hasProtectionFrom(this)) {
                 reason = MagicMessage.format("%s has protection.", enchantedPermanent);
             }
 
-            if (reason.isEmpty() == false) {
+            if (!reason.isEmpty()) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached.
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
@@ -860,12 +860,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             String reason = "";
             if (isCreature()) {
                 reason = "it is a creature.";
-            } else if (equippedCreature.isCreature() == false) {
+            } else if (!equippedCreature.isCreature()) {
                 reason = MagicMessage.format("%s is no longer a creature.", equippedCreature);
             } else if (equippedCreature.hasProtectionFrom(this)) {
                 reason = MagicMessage.format("%s has protection.", equippedCreature);
             }
-            if (reason.isEmpty() == false) {
+            if (!reason.isEmpty()) {
                 game.logAppendMessage(
                     getController(),
                     MagicMessage.format("%s becomes unattached as %s", this, reason)
@@ -1234,7 +1234,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         }
 
         // Can't be the target of nongreen spells or abilities from nongreen sources
-        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green) == false) {
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && !source.hasColor(MagicColor.Green)) {
             return false;
         }
 

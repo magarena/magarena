@@ -27,7 +27,7 @@ public class StartScreen extends MScreen {
     public StartScreen() {
         // use of runnable fixes #731 (https://github.com/magarena/magarena/issues/731)
         SwingUtilities.invokeLater(() -> {
-            if (MagicSystem.isNewInstall() == false) {
+            if (!MagicSystem.isNewInstall()) {
                 showMainMenuScreen();
             } else {
                 setMainContent(new ScreenContent());

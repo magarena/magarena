@@ -211,7 +211,7 @@ public class MCTSAI extends MagicAI {
     ) {
 
         //prioritize backpropagation tasks
-        while (queue.isEmpty() == false) {
+        while (!queue.isEmpty()) {
             try {
                 queue.take().run();
             } catch (InterruptedException e) {
@@ -272,7 +272,7 @@ public class MCTSAI extends MagicAI {
         }
 
         // end simulations once root is AI win or time is up
-        if (running && root.isAIWin() == false) {
+        if (running && !root.isAIWin()) {
             try {
                 executor.execute(updateTask);
             } catch (RejectedExecutionException e) {

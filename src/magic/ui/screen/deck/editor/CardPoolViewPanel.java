@@ -100,7 +100,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private void doCardPoolPanelSelectionAction() {
         if (cardPoolPanel.getSelectedCard() != null) {
             selectedCard = cardPoolPanel.getSelectedCard();
-            if (controller.getDeck().contains(selectedCard) == false) {
+            if (!controller.getDeck().contains(selectedCard)) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -153,7 +153,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
             return;
         }
 
-        if (controller.getDeck().contains(card) == false) {
+        if (!controller.getDeck().contains(card)) {
             MagicSound.BEEP.play();
             return;
         }
@@ -196,7 +196,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     private int getDefaultDeckSize() {
         return controller.getDeck().size() < MagicDeck.DEFAULT_SIZE
-                ? ScreenController.isDuelActive() == false
+                ? !ScreenController.isDuelActive()
                         ? 60
                         : MagicDeck.DEFAULT_SIZE
                 : controller.getDeck().size();

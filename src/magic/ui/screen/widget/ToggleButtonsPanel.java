@@ -14,7 +14,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class ToggleButtonsPanel extends TexturedPanel {
 
-    private static final Color BACKGROUND_COLOR = 
+    private static final Color BACKGROUND_COLOR =
         MagicStyle.getTranslucentColor(Color.DARK_GRAY, 230);
 
     private final ButtonGroup toggleGroup = new ButtonGroup();
@@ -34,7 +34,7 @@ public class ToggleButtonsPanel extends TexturedPanel {
     }
 
     public JToggleButton addToggleButton(String text, AbstractAction action) {
-        if (toggleButtons.containsKey(text) == false) {
+        if (!toggleButtons.containsKey(text)) {
             toggleButtons.put(text, getToggleButton(text, action));
         }
         return toggleButtons.get(text);

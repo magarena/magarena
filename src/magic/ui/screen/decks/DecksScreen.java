@@ -59,7 +59,7 @@ public class DecksScreen extends HeaderFooterScreen {
     private void showSampleHand() {
         if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
             showInvalidActionMessage(MText.get(_S8));
-        } else if (screenContent.getDeck().isValid() == false) {
+        } else if (!screenContent.getDeck().isValid()) {
             showInvalidActionMessage(MText.get(_S5));
         } else {
             ScreenController.showSampleHandScreen(screenContent.getDeck());
@@ -69,7 +69,7 @@ public class DecksScreen extends HeaderFooterScreen {
     private void showDeckImageView() {
         if (screenContent.getDeck() == null || screenContent.getDeck().isEmpty()) {
             showInvalidActionMessage(MText.get(_S12));
-        } else if (screenContent.getDeck().isValid() == false) {
+        } else if (!screenContent.getDeck().isValid()) {
             showInvalidActionMessage(MText.get(_S5));
         } else {
             ScreenController.showDeckTiledCardsScreen(screenContent.getDeck());

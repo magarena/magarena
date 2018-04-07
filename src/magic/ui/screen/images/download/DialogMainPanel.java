@@ -206,7 +206,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         }
 
         void setIsDownloading(boolean b) {
-            closeButton.setEnabled(b == false);
+            closeButton.setEnabled(!b);
             backgroundButton.setEnabled(b);
         }
     }

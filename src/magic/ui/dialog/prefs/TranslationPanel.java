@@ -167,7 +167,7 @@ class TranslationPanel extends JPanel {
         final File langFile = MagicFileSystem.getDataPath(
                 MagicFileSystem.DataPath.TRANSLATIONS).resolve(lang + ".txt").toFile();
 
-        if (langFile.exists() == false) {
+        if (!langFile.exists()) {
             throw new FileNotFoundException(langFile.getAbsolutePath());
         }
 
@@ -261,7 +261,7 @@ class TranslationPanel extends JPanel {
             final String text = JOptionPane.showInputDialog(null, MText.get(_S5), MText.get(_S6), JOptionPane.QUESTION_MESSAGE);
             if (text != null) {
                 final String language = text.trim();
-                if (language.isEmpty() == false && language.equalsIgnoreCase("English") == false) {
+                if (!language.isEmpty() && !language.equalsIgnoreCase("English")) {
                     File langFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS).resolve(language + ".txt").toFile();
                     if (langFile.exists()) {
                         ScreenController.showWarningMessage(MText.get(_S7));

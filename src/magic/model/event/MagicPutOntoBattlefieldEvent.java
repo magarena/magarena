@@ -39,7 +39,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
     private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
         final MagicTuple tup = event.getRefTuple();
         // choice could be MagicMayChoice or MagicTargetChoice, the condition below takes care of both cases
-        if (event.isNo() == false) {
+        if (!event.isNo()) {
             event.processTargetCard(game, (final MagicCard card) -> {
                 game.logAppendMessage(
                     event.getPlayer(),

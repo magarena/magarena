@@ -105,7 +105,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
         controller.disableActionButton(false);
 
-        if (event.isSatisfied() == false) {
+        if (!event.isSatisfied()) {
             controller.showMessage(source, MText.get(_S_NO_OPTIONS, cost.getText()));
             controller.waitForInput();
             return MagicEvent.NO_CHOICE_RESULTS;

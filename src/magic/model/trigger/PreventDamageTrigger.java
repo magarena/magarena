@@ -17,7 +17,7 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-        return damage.getAmount() > 0 && damage.isUnpreventable() == false;
+        return damage.getAmount() > 0 && !damage.isUnpreventable();
     }
 
     public static final PreventDamageTrigger ProtectionShield = new PreventDamageTrigger() {
@@ -218,7 +218,7 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
                      filter.acceptType(MagicTargetType.Player) &&
                      filter.accept(permanent, permanent.getController(), damage.getTargetPlayer()))) {
 
-                    if (damage.isCombat() == false) {
+                    if (!damage.isCombat()) {
                         damage.prevent();
                     }
                 }

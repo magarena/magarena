@@ -305,7 +305,7 @@ public class PreferencesDialog
         config.setShowMulliganScreen(mulliganScreenCheckbox.isSelected());
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
 
-        if (isGamePlayMode == false) {
+        if (!isGamePlayMode) {
             generalPanel.saveSettings();
             // Network
             config.setProxy(getNewProxy());
@@ -374,7 +374,7 @@ public class PreferencesDialog
     }
 
     private boolean validateSettings() {
-        if (isGamePlayMode == false) {
+        if (!isGamePlayMode) {
             if (isProxyUpdated && !isProxyValid()) {
                 ScreenController.showWarningMessage(MText.get(_S37));
                 return false;

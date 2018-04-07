@@ -102,7 +102,7 @@ public class GameViewerInfo {
      */
     public PlayerViewerInfo getNonTurnPlayer() {
         return players.stream()
-            .filter(p -> p.isPlayerTurn() == false)
+            .filter(p -> !p.isPlayerTurn())
             .findFirst().get();
     }
 

@@ -296,7 +296,7 @@ final public class MagicSystem {
     }
 
     public static boolean isNewInstall() {
-        return Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME)) == false;
+        return !Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME));
     }
 
     public static boolean isNotNormalGame() {

@@ -115,7 +115,7 @@ public class CardDecksPanel extends JPanel {
 
     public void setCard(MagicCardDefinition aCard) {
 
-        if (worker != null && worker.isDone() == false && worker.isCancelled() == false) {
+        if (worker != null && !worker.isDone() && !worker.isCancelled()) {
             worker.cancel(true);
         }
 
@@ -183,7 +183,7 @@ public class CardDecksPanel extends JPanel {
              * In Windows, DirectoryStream returns a list of files already sorted by filename. In Linux it does not, so need to specifically sort list.
              */
             private void sortDecksByFilename(final List<File> files) {
-                if (isCancelled() == false) {
+                if (!isCancelled()) {
                     Collections.sort(files, new Comparator<File>() {
                         @Override
                         public int compare(File o1, File o2) {

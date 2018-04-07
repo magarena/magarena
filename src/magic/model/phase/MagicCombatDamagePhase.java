@@ -63,12 +63,12 @@ public class MagicCombatDamagePhase extends MagicPhase {
         }
 
         //End combat damage steps
-        if (isFirst == false || act.dealtDamage()) {
+        if (!isFirst || act.dealtDamage()) {
             game.setStep(MagicStep.ActivePlayer);
         } else {
             game.setStep(MagicStep.NextPhase);
         }
-        if (isFirst == false) {
+        if (!isFirst) {
             game.playSound(MagicSound.COMBAT);
         }
     }

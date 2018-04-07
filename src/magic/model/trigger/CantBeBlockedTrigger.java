@@ -47,7 +47,7 @@ public abstract class CantBeBlockedTrigger extends MagicTrigger<MagicPermanent> 
         return new CantBeBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
-                return filter.accept(permanent, permanent.getController(), other) == false;
+                return !filter.accept(permanent, permanent.getController(), other);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {

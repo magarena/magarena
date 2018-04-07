@@ -43,7 +43,7 @@ public class TextComponent extends TComponent {
     }
 
     private Color getTextColor(boolean isChoice, Color choiceColor, Color interactiveColor) {
-        if (isCardId() && isChoice == false) {
+        if (isCardId() && !isChoice) {
             return Color.DARK_GRAY;
         }
         if (isInteractive() && messageStyle != MessageStyle.PLAINBOLDMONO) {
@@ -104,7 +104,7 @@ public class TextComponent extends TComponent {
 
     @Override
     final boolean isInteractive() {
-        return cardInfo.isEmpty() == false && getCardId() > 0;
+        return !cardInfo.isEmpty() && getCardId() > 0;
     }
 
     long getCardId() {

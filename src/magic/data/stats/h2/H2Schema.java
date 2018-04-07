@@ -27,7 +27,7 @@ enum H2Schema {
         String SQL = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'GAMESTATS_SETTINGS'";
         try (PreparedStatement ps = conn.prepareStatement(SQL)) {
             ResultSet rs = ps.executeQuery();
-            if (rs.next() == false) {
+            if (!rs.next()) {
                 return null;
             }
         }

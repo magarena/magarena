@@ -121,9 +121,9 @@ public class AnnotatedCardPanel extends JPanel {
         visibilityTimer = new Timer(0, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                if (!AnnotatedCardPanel.this.isVisible() && preferredVisibility == true) {
+                if (!AnnotatedCardPanel.this.isVisible() && preferredVisibility) {
                     showPopup();
-                } else if (preferredVisibility == false) {
+                } else if (!preferredVisibility) {
                     setVisible(false);
                     magicObject = null;
                     opacity = 0f;

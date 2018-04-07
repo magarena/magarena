@@ -24,7 +24,7 @@ public class SetBlockerAction extends MagicAction {
         attacker.addBlockingCreature(blocker);
         blocker.setBlockedCreature(attacker);
         blocker.setState(MagicPermanentState.Blocking);
-        if (attacker.hasState(MagicPermanentState.Blocked) == false) {
+        if (!attacker.hasState(MagicPermanentState.Blocked)) {
             game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.Blocked));
         }
     }

@@ -166,12 +166,12 @@ public class TextImages {
     }
 
     private static void add(final String text, final MagicIcon icon) {
-        assert TEXT_ICONS.containsKey(text) == false : "Duplicate key in TextImages: " + text;
+        assert !TEXT_ICONS.containsKey(text) : "Duplicate key in TextImages: " + text;
         TEXT_ICONS.put(text, icon);
     }
 
     public static MagicIcon getIcon(final String text) {
-        if (TEXT_ICONS.containsKey(text) == false) {
+        if (!TEXT_ICONS.containsKey(text)) {
             throw new RuntimeException("No corresponding icon for " + text);
         }
         return TEXT_ICONS.get(text);
