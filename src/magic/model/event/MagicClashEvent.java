@@ -27,7 +27,7 @@ public class MagicClashEvent extends MagicEvent {
             final MagicPlayer winner = executeClash(game, event);
             if (winner == event.getPlayer()) {
                 clashAction.executeEvent(game, event);
-            };
+            }
             game.executeTrigger(MagicTriggerType.WhenClash, winner);
         };
     }

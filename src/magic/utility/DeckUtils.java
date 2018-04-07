@@ -350,7 +350,7 @@ public class DeckUtils {
             }
         }
         return matchingDeckFiles;
-    };
+    }
 
     public static Set<MagicCardDefinition> getDistinctCards(final MagicDeck aDeck) {
         final Set<MagicCardDefinition> distinctCards = new HashSet<>();

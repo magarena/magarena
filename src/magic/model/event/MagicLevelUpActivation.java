@@ -64,5 +64,5 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
         public boolean accept(final MagicSource source) {
             return ((MagicPermanent)source).getCounters(MagicCounterType.Level)<maximum;
         }
-    };
+    }
 }

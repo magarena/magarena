@@ -116,5 +116,5 @@ public class MagicCombatCreature {
             }
             return blocker1.permanent.compareTo(blocker2.permanent);
         }
-    };
+    }
 }

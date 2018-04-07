@@ -22,7 +22,7 @@ public abstract class AbstractThrobber extends JComponent {
 
     public enum SpinDirection {
         CLOCKWISE,
-        ANTICLOCKWISE;
+        ANTICLOCKWISE
     }
 
     private final Timeline timeline = new Timeline();

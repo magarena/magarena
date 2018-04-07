@@ -108,7 +108,7 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
                 game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
             }
         };
-    };
+    }
 
     public static final AtEndOfTurnTrigger Return = new AtEndOfTurnTrigger() {
         @Override

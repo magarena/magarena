@@ -9,5 +9,4 @@ public enum MagicTargetType {
     OpponentsExile,
     Hand,
     Library
-    ;
 }

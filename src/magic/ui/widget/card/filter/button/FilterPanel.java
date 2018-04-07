@@ -36,7 +36,7 @@ public abstract class FilterPanel extends JPanel {
     protected abstract FilterDialog getFilterDialog();
     protected abstract boolean isFiltering();
     protected abstract String getFilterTooltip();
-        
+
     // CTR
     FilterPanel(String title, String tooltip, IFilterListener aListener) {
         this.filterListener = aListener;
@@ -155,5 +155,5 @@ public abstract class FilterPanel extends JPanel {
 
     public LayoutManager getFilterPanelLayout() {
         return null;
-    };
+    }
 }

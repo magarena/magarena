@@ -32,7 +32,7 @@ public class ChangeControlAction extends MagicAction {
         game.doAction(new RemoveFromCombatAction(perm));
         game.doAction(ChangeStateAction.Clear(perm,MagicPermanentState.ExcludeFromCombat));
 
-        if (perm.getPairedCreature().isValid()) {;
+        if (perm.getPairedCreature().isValid()) {
             game.doAction(new SoulbondAction(perm,perm.getPairedCreature(),false));
         }
 

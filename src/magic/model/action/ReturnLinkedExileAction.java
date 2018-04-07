@@ -15,7 +15,7 @@ public class ReturnLinkedExileAction extends MagicAction {
     private final MagicPermanent source;
     private final MagicLocationType location;
     private final MagicPlayer controller;
-    private final List<MagicPermanentAction> modifications = new LinkedList<>();;
+    private final List<MagicPermanentAction> modifications = new LinkedList<>();
     private MagicCardList exiledList;
 
     public ReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {

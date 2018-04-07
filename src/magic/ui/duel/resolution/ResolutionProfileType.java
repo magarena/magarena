@@ -5,5 +5,5 @@ public enum ResolutionProfileType {
     GameImageHandGraveyardViewer,
     GameImagePlayerPermanentViewer,
     GameImageOpponentPermanentViewer,
-    GameImageCombatViewer;
+    GameImageCombatViewer
 }

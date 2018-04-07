@@ -30,11 +30,11 @@ public class MScrollPane extends MWidget {
     @Override
     public JComponent component() {
         return scrollPane;
-    };
+    }
 
     //
     // swing component delegates
-    //    
+    //
     public void setViewportView(Component c) {
         scrollPane.setViewportView(c);
     }

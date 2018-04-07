@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class ImagePanel extends JPanel {
 
-    public enum ScaleMode {AUTOMATIC, PERFORMANCE, QUALITY};
+    public enum ScaleMode {AUTOMATIC, PERFORMANCE, QUALITY}
 
     private BufferedImage sourceImage = null;
 
@@ -29,7 +29,7 @@ public class ImagePanel extends JPanel {
 
     public ImagePanel() {
         setOpaque(false);
-    };
+    }
 
     public ImagePanel(BufferedImage image) {
         this(image, 0);

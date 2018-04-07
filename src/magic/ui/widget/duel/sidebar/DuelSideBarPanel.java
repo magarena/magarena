@@ -27,7 +27,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         PLAYER1,
         PLAYER2,
         LOGSTACK,
-        TURNINFO;
+        TURNINFO
     }
 
     private static final int TOTAL_PLAYERS = 2;
