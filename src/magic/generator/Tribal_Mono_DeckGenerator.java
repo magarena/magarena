@@ -79,7 +79,7 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
         final ArrayList<String> a = new ArrayList<String>();
 
         for (final MagicColor c : countColors.keySet()) {
-            if (countColors.get(c).intValue() > MIN_NUM_CARDS_WITH_SUBTYPE) {
+            if (countColors.get(c) > MIN_NUM_CARDS_WITH_SUBTYPE) {
                 a.add("" + c.getSymbol());
             }
         }

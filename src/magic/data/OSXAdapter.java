@@ -88,7 +88,7 @@ public class OSXAdapter implements InvocationHandler {
         // com.apple.eawt.Application reflectively
         try {
             final Method enableAboutMethod = macOSXApplication.getClass().getDeclaredMethod("setEnabledAboutMenu", new Class<?>[] { boolean.class });
-            enableAboutMethod.invoke(macOSXApplication, Boolean.valueOf(enableAboutMenu));
+            enableAboutMethod.invoke(macOSXApplication, enableAboutMenu);
         } catch (Exception ex) {
             System.err.println("OSXAdapter could not access the About Menu");
             ex.printStackTrace();
@@ -106,7 +106,7 @@ public class OSXAdapter implements InvocationHandler {
         // com.apple.eawt.Application reflectively
         try {
             final Method enablePrefsMethod = macOSXApplication.getClass().getDeclaredMethod("setEnabledPreferencesMenu", new Class<?>[] { boolean.class });
-            enablePrefsMethod.invoke(macOSXApplication, Boolean.valueOf(enablePrefsMenu));
+            enablePrefsMethod.invoke(macOSXApplication, enablePrefsMenu);
         } catch (Exception ex) {
             System.err.println("OSXAdapter could not access the About Menu");
             ex.printStackTrace();
@@ -172,7 +172,7 @@ public class OSXAdapter implements InvocationHandler {
         if (result == null) {
             return true;
         }
-        return Boolean.valueOf(result.toString()).booleanValue();
+        return Boolean.valueOf(result.toString());
     }
 
     // InvocationHandler implementation
@@ -200,7 +200,7 @@ public class OSXAdapter implements InvocationHandler {
             try {
                 final Method setHandledMethod = event.getClass().getDeclaredMethod("setHandled", new Class<?>[] { boolean.class });
                 // If the target method returns a boolean, use that as a hint
-                setHandledMethod.invoke(event, Boolean.valueOf(handled));
+                setHandledMethod.invoke(event, handled);
             } catch (Exception ex) {
                 System.err.println("OSXAdapter was unable to handle an ApplicationEvent: " + event);
                 ex.printStackTrace();

@@ -144,7 +144,7 @@ public final class MText {
         String[] values = text.substring(1).split(HEADER_CHAR);
         try {
             // version = values[0];
-            useCustomFonts = Boolean.valueOf(Integer.valueOf(values[1]) == 1);
+            useCustomFonts = Integer.valueOf(values[1]) == 1;
         } catch (ArrayIndexOutOfBoundsException ex) {
             LOGGER.log(Level.INFO, String.format(
                 "Parsing header line in '%s' at item : %s",
@@ -170,12 +170,12 @@ public final class MText {
         useCustomFonts = false;
         translationsMap.clear();
         final String language = GeneralConfig.getInstance().getTranslation();
-        if (language.isEmpty() == false) {
+        if (language.isEmpty()) {
+            useCustomFonts = true;
+        } else {
             final Path dirPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS);
             final File txtFile = dirPath.resolve(language + ".txt").toFile();
             translationsMap.putAll(getUnescapedStringsMap(txtFile));
-        } else {
-            useCustomFonts = true;
         }
     }
 
