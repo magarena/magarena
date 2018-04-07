@@ -85,8 +85,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
     }
 
     private AvatarImageSet loadImageSet(final Path imageSetDirectory) {
-        final AvatarImageSet imageSet = new AvatarImageSet(imageSetDirectory);
-        return imageSet;
+        return new AvatarImageSet(imageSetDirectory);
     }
 
     private List<AvatarImageSet> getAvatarImageSetsList() {

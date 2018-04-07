@@ -3543,8 +3543,7 @@ public enum MagicRuleEventAction {
         final String[] parts = replaceThis.replaceAll("\\b(T|t)arget\\b", "|$1arget|").split("\\|");
         parts[0] = parts[0].replaceAll("\\b(T|t)hat " + ARG.THING + "( |\\.|'s|\\b)" + ARG.EVENQUOTES, "RN$3");
         parts[0] = parts[0].replaceAll("\\b(T|t)hat " + ARG.PLAYER + "( |\\.)" + ARG.EVENQUOTES, "RN$3");
-        final String result = String.join("", parts);
-        return result;
+        return String.join("", parts);
     }
 
     private static String concat(final String part0, final String[] parts) {

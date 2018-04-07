@@ -254,8 +254,7 @@ public class FiremindClient {
         BufferedReader rd = new BufferedReader(new InputStreamReader(
                 con.getInputStream(), Charset.forName("UTF-8")));
         String jsonText = readAll(rd);
-        JSONObject json = new JSONObject(jsonText);
-        return json;
+        return new JSONObject(jsonText);
     }
 
     private static String readAll(Reader rd) throws IOException {

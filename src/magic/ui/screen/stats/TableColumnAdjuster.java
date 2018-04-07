@@ -137,9 +137,7 @@ public class TableColumnAdjuster implements PropertyChangeListener, TableModelLi
 
         TableCellRenderer cellRenderer = table.getCellRenderer(row, column);
         Component c = table.prepareRenderer(cellRenderer, row, column);
-        int width = c.getPreferredSize().width + table.getIntercellSpacing().width;
-
-        return width;
+        return c.getPreferredSize().width + table.getIntercellSpacing().width;
     }
 
     /*
