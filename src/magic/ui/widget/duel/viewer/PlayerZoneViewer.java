@@ -191,20 +191,28 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     }
 
     private void notifyPlayerZoneListeners(final int newPlayerZoneIndex) {
-        if (newPlayerZoneIndex == 0) {
-            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.HAND);
-        } else if (newPlayerZoneIndex == 1) {
-            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.GRAVEYARD);
-        } else if (newPlayerZoneIndex == 2) {
-            controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.GRAVEYARD);
-        } else if (newPlayerZoneIndex == 3) {
-            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.EXILE);
-        } else if (newPlayerZoneIndex == 4) {
-            controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.EXILE);
-        } else if (newPlayerZoneIndex == 5) {
-            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.CHOICE);
-        } else if (newPlayerZoneIndex == 6) {
-            controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.HAND);
+        switch (newPlayerZoneIndex) {
+            case 0:
+                controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.HAND);
+                break;
+            case 1:
+                controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.GRAVEYARD);
+                break;
+            case 2:
+                controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.GRAVEYARD);
+                break;
+            case 3:
+                controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.EXILE);
+                break;
+            case 4:
+                controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.EXILE);
+                break;
+            case 5:
+                controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.CHOICE);
+                break;
+            case 6:
+                controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.HAND);
+                break;
         }
     }
 

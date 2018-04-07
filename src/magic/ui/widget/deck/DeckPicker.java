@@ -244,16 +244,22 @@ public class DeckPicker extends JPanel {
                         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                         final MagicDeck deck = decksJList.getSelectedValue();
                         for (IDeckConsumer listener : listeners) {
-                            if (selectedDeckType == DeckType.Random) {
-                                listener.setDeck(deck.getName(), selectedDeckType);
-                            } else if (selectedDeckType == DeckType.PopularDecks) {
-                                listener.setDeck(deck);
-                            } else if (selectedDeckType == DeckType.WinningDecks) {
-                                listener.setDeck(deck);
-                            } else if (selectedDeckType == DeckType.RecentDecks) {
-                                listener.setDeck(deck);
-                            } else {
-                                listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
+                            switch (selectedDeckType) {
+                                case Random:
+                                    listener.setDeck(deck.getName(), selectedDeckType);
+                                    break;
+                                case PopularDecks:
+                                    listener.setDeck(deck);
+                                    break;
+                                case WinningDecks:
+                                    listener.setDeck(deck);
+                                    break;
+                                case RecentDecks:
+                                    listener.setDeck(deck);
+                                    break;
+                                default:
+                                    listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
+                                    break;
                             }
                         }
                         setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));

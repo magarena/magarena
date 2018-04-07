@@ -928,14 +928,18 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     @Override
     public void changeCounters(final MagicCounterType counterType,final int amount) {
-        if (counterType == MagicCounterType.Poison) {
-            poison += amount;
-        } else if (counterType == MagicCounterType.Experience) {
-            experience += amount;
-        } else if (counterType == MagicCounterType.Energy) {
-            energy += amount;
-        } else {
-            throw new RuntimeException(counterType + " cannot be modified on player");
+        switch (counterType) {
+            case Poison:
+                poison += amount;
+                break;
+            case Experience:
+                experience += amount;
+                break;
+            case Energy:
+                energy += amount;
+                break;
+            default:
+                throw new RuntimeException(counterType + " cannot be modified on player");
         }
     }
 

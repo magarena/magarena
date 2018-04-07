@@ -97,16 +97,17 @@ public abstract class MagicChoice {
     public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
         final Collection<?> options=getArtificialOptions(game,event);
         final int size=options.size();
-        if (size == 0) {
-            return Collections.singletonList(new Object[]{MagicTargetNone.getInstance()});
-        } else if (size == 1) {
-            return Collections.singletonList(new Object[]{options.iterator().next()});
-        } else {
-            final List<Object[]> choiceResultsList= new ArrayList<>(size);
-            for (final Object option : options) {
-                choiceResultsList.add(new Object[]{option});
-            }
-            return choiceResultsList;
+        switch (size) {
+            case 0:
+                return Collections.singletonList(new Object[]{MagicTargetNone.getInstance()});
+            case 1:
+                return Collections.singletonList(new Object[]{options.iterator().next()});
+            default:
+                final List<Object[]> choiceResultsList = new ArrayList<>(size);
+                for (final Object option : options) {
+                    choiceResultsList.add(new Object[]{option});
+                }
+                return choiceResultsList;
         }
     }
 

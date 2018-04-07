@@ -98,12 +98,15 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
 
             @Override
             public void change(final MagicCardDefinition cdef) {
-                if (loc == MagicLocationType.OwnersHand) {
-                    cdef.addHandAct(this);
-                } else if (loc == MagicLocationType.Graveyard) {
-                    cdef.addGraveyardAct(this);
-                } else {
-                    throw new RuntimeException("unknown location: \"" + loc + "\"");
+                switch (loc) {
+                    case OwnersHand:
+                        cdef.addHandAct(this);
+                        break;
+                    case Graveyard:
+                        cdef.addGraveyardAct(this);
+                        break;
+                    default:
+                        throw new RuntimeException("unknown location: \"" + loc + "\"");
                 }
             }
         };

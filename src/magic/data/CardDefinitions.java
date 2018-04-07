@@ -286,16 +286,17 @@ public class CardDefinitions {
     }
 
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
-        if (color == MagicColor.Black) {
-            return getCard("Swamp");
-        } else if (color == MagicColor.Blue) {
-            return getCard("Island");
-        } else if (color == MagicColor.Green) {
-            return getCard("Forest");
-        } else if (color == MagicColor.Red) {
-            return getCard("Mountain");
-        } else if (color == MagicColor.White) {
-            return getCard("Plains");
+        switch (color) {
+            case Black:
+                return getCard("Swamp");
+            case Blue:
+                return getCard("Island");
+            case Green:
+                return getCard("Forest");
+            case Red:
+                return getCard("Mountain");
+            case White:
+                return getCard("Plains");
         }
         throw new RuntimeException("No matching basic land for MagicColor " + color);
     }

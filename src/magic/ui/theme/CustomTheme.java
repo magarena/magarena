@@ -62,24 +62,30 @@ public class CustomTheme extends AbstractTheme {
         }
         Object typeValue=null;
         final String type=key.substring(0,index);
-        if ("value".equals(type)) {
-            typeValue=Integer.parseInt(value);
-        } else if ("color".equals(type)) {
-            final String[] parts=value.split(",");
-            final int r=Integer.parseInt(parts[0],16);
-            final int g=Integer.parseInt(parts[1],16);
-            final int b=Integer.parseInt(parts[2],16);
-            if (parts.length==4) {
-                typeValue=new Color(r,g,b,Integer.parseInt(parts[3],16));
-            } else if (parts.length==3) {
-                typeValue=new Color(r,g,b);
-            }
-        } else if ("texture".equals(type)) {
-            typeValue=value;
-        } else if ("icon".equals(type)) {
-            typeValue = value.isEmpty() ? null : new ImageIcon(loadImage(value));
-        } else if ("option".equals(type)) {
-            typeValue = Boolean.parseBoolean(value);
+        switch (type) {
+            case "value":
+                typeValue = Integer.parseInt(value);
+                break;
+            case "color":
+                final String[] parts = value.split(",");
+                final int r = Integer.parseInt(parts[0], 16);
+                final int g = Integer.parseInt(parts[1], 16);
+                final int b = Integer.parseInt(parts[2], 16);
+                if (parts.length == 4) {
+                    typeValue = new Color(r, g, b, Integer.parseInt(parts[3], 16));
+                } else if (parts.length == 3) {
+                    typeValue = new Color(r, g, b);
+                }
+                break;
+            case "texture":
+                typeValue = value;
+                break;
+            case "icon":
+                typeValue = new ImageIcon(loadImage(value));
+                break;
+            case "option":
+                typeValue = Boolean.parseBoolean(value);
+                break;
         }
         // add or replace existing/default value.
         if (typeValue != null) {
