@@ -98,13 +98,7 @@ public abstract class TestGameBuilder {
         try { //load class by name
             final TestGameBuilder gb = Class.forName("magic.test." + id).asSubclass(TestGameBuilder.class).newInstance();
             game = gb.getGame();
-        } catch (final ClassNotFoundException ex) {
-            System.err.println("ERROR! Unable to build game " + id);
-            throw new RuntimeException(ex);
-        } catch (final InstantiationException ex) {
-            System.err.println("ERROR! Unable to build game " + id);
-            throw new RuntimeException(ex);
-        } catch (final IllegalAccessException ex) {
+        } catch (final ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
             System.err.println("ERROR! Unable to build game " + id);
             throw new RuntimeException(ex);
         }

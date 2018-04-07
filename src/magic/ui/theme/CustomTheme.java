@@ -111,8 +111,6 @@ public class CustomTheme extends AbstractTheme {
         if (file.isFile()) {
             try { //create zip file
                 zipFile=new ZipFile(file);
-            } catch (final java.util.zip.ZipException ex) {
-                System.err.println("ERROR! Unable to create ZipFile from " + file);
             } catch (final IOException ex) {
                 System.err.println("ERROR! Unable to create ZipFile from " + file);
             }

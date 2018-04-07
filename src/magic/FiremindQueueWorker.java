@@ -30,10 +30,7 @@ public class FiremindQueueWorker {
                 p.waitFor();
                 reader.close();
                 lastExitStatus = p.exitValue();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (InterruptedException e) {
+            } catch (IOException | InterruptedException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }

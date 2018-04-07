@@ -60,9 +60,7 @@ public class DeckGenerators {
         if (generatorsClass.containsKey(name) && generatorsMap.containsKey(name) == false) {
             try {
                 generatorsMap.put(name, generatorsClass.get(name).newInstance());
-            } catch (final InstantiationException ex) {
-                throw new RuntimeException(ex);
-            } catch (final IllegalAccessException ex) {
+            } catch (final InstantiationException | IllegalAccessException ex) {
                 throw new RuntimeException(ex);
             }
         }

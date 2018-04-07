@@ -108,9 +108,7 @@ public class FiremindClient {
             writer.println(content);
             writer.close();
             System.out.println(f.getAbsolutePath());
-        }catch (FileNotFoundException e){
-            System.err.println("Couldn't save script file");
-        }catch (UnsupportedEncodingException e){
+        }catch (FileNotFoundException | UnsupportedEncodingException e){
             System.err.println("Couldn't save script file");
         }
     }
@@ -172,9 +170,6 @@ public class FiremindClient {
             } else {
                 System.err.println(con.getResponseMessage());
             }
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -210,9 +205,6 @@ public class FiremindClient {
             } else {
                 System.err.println(con.getResponseMessage());
             }
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -241,9 +233,6 @@ public class FiremindClient {
             } else {
                 System.err.println(con.getResponseMessage());
             }
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
