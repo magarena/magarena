@@ -167,7 +167,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     /**
      * Merges "themes" folder and sub-folders.
      * If file already exists then imported version takes precedence.
-     * (see also {@link migrateModThemes})
+     * (see also {@link #migrateModThemes})
      */
     private void importThemes() throws IOException {
         setProgressNote(MText.get(_S4));

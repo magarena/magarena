@@ -349,7 +349,6 @@ public class SwingGameController implements IUIGameController {
      * Displays a popup image for a card on the battlefield.
      *
      * @param cardObject
-     * @param index
      * @param cardRect : screen position & size of selected card on battlefield.
      * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */

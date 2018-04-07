@@ -128,7 +128,6 @@ public class DeckUtils {
      *
      * @param filename
      * @return
-     * @throws IOException
      */
     private static List<String> getDeckFileContent(final String filename) {
         try {

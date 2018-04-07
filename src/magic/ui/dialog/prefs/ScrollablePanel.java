@@ -125,7 +125,7 @@ public class ScrollablePanel extends JPanel
      * Specify the information needed to do block scrolling.
      *
      * @param orientation specify the scrolling orientation. Must be either: SwingConstants.HORIZONTAL or SwingConstants.VERTICAL.
-     * @paran type specify how the amount parameter in the calculation of the scrollable amount. Valid values are: IncrementType.PERCENT - treat the amount as a % of the viewport size IncrementType.PIXEL - treat the amount as the scrollable amount
+     * @param type specify how the amount parameter in the calculation of the scrollable amount. Valid values are: IncrementType.PERCENT - treat the amount as a % of the viewport size IncrementType.PIXEL - treat the amount as the scrollable amount
      * @param amount a value used with the IncrementType to determine the scrollable amount
      */
     public void setScrollableBlockIncrement(int orientation, IncrementType type, int amount) {
@@ -165,7 +165,7 @@ public class ScrollablePanel extends JPanel
      * Specify the information needed to do unit scrolling.
      *
      * @param orientation specify the scrolling orientation. Must be either: SwingConstants.HORIZONTAL or SwingConstants.VERTICAL.
-     * @paran type specify how the amount parameter in the calculation of the scrollable amount. Valid values are: IncrementType.PERCENT - treat the amount as a % of the viewport size IncrementType.PIXEL - treat the amount as the scrollable amount
+     * @param type specify how the amount parameter in the calculation of the scrollable amount. Valid values are: IncrementType.PERCENT - treat the amount as a % of the viewport size IncrementType.PIXEL - treat the amount as the scrollable amount
      * @param amount a value used with the IncrementType to determine the scrollable amount
      */
     public void setScrollableUnitIncrement(int orientation, IncrementType type, int amount) {

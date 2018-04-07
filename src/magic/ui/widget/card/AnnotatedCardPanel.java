@@ -144,7 +144,7 @@ public class AnnotatedCardPanel extends JPanel {
      * Hides the card image panel after {@code delay} milliseconds.
      * <p>
      * The hide request is cancelled if a request to show a card image is received
-     * before the delay expires (see {@link hideDelayed()}).
+     * before the delay expires (see {@link #hideDelayed()}).
      *
      * @param delay the time in milliseconds to wait before hiding the card panel.
      */
