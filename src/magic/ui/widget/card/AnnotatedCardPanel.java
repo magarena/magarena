@@ -15,13 +15,9 @@ import java.awt.RenderingHints;
 import java.awt.Shape;
 import java.awt.Stroke;
 import java.awt.Transparency;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -88,12 +84,9 @@ public class AnnotatedCardPanel extends JPanel {
 
         setDelayedVisibilityTimer();
 
-        addMouseWheelListener(new MouseWheelListener() {
-            @Override
-            public void mouseWheelMoved(MouseWheelEvent event) {
-                if (event.getWheelRotation() > 0) { // rotate mousewheel back or towards you.
-                    setVisible(false);
-                }
+        addMouseWheelListener(event -> {
+            if (event.getWheelRotation() > 0) { // rotate mousewheel back or towards you.
+                setVisible(false);
             }
         });
 
@@ -118,16 +111,13 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     private void setDelayedVisibilityTimer() {
-        visibilityTimer = new Timer(0, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent evt) {
-                if (!AnnotatedCardPanel.this.isVisible() && preferredVisibility) {
-                    showPopup();
-                } else if (!preferredVisibility) {
-                    setVisible(false);
-                    magicObject = null;
-                    opacity = 0f;
-                }
+        visibilityTimer = new Timer(0, evt -> {
+            if (!AnnotatedCardPanel.this.isVisible() && preferredVisibility) {
+                showPopup();
+            } else if (!preferredVisibility) {
+                setVisible(false);
+                magicObject = null;
+                opacity = 0f;
             }
         });
         visibilityTimer.setRepeats(false);

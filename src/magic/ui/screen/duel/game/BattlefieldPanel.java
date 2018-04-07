@@ -4,8 +4,6 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardList;
@@ -34,12 +32,9 @@ public class BattlefieldPanel extends JPanel {
         imageCombatViewer = new ImageCombatViewer(controller);
 
         playerZoneViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        textOverlay.setPlayerZoneName((String) evt.getNewValue());
-                        repaint();
-                    }
+                evt -> {
+                    textOverlay.setPlayerZoneName((String) evt.getNewValue());
+                    repaint();
                 });
 
         setLayout(null);

@@ -8,26 +8,20 @@ import java.util.TreeSet;
 
 public class MagicMultipleScoreRanking implements MagicScoreRanking {
 
-    private static final Comparator<MagicScoreResult> BEST_COMPARATOR=new Comparator<MagicScoreResult>() {
-        @Override
-        public int compare(final MagicScoreResult result1,final MagicScoreResult result2) {
-            final int sdif=result2.getScore()-result1.getScore();
-            if (sdif != 0) {
-                return sdif;
-            }
-            return result1.getPosition()-result2.getPosition();
+    private static final Comparator<MagicScoreResult> BEST_COMPARATOR= (result1, result2) -> {
+        final int sdif = result2.getScore() - result1.getScore();
+        if (sdif != 0) {
+            return sdif;
         }
+        return result1.getPosition()-result2.getPosition();
     };
 
-    private static final Comparator<MagicScoreResult> WORST_COMPARATOR=new Comparator<MagicScoreResult>() {
-        @Override
-        public int compare(final MagicScoreResult result1,final MagicScoreResult result2) {
-            final int sdif=result1.getScore()-result2.getScore();
-            if (sdif != 0) {
-                return sdif;
-            }
-            return result1.getPosition()-result2.getPosition();
+    private static final Comparator<MagicScoreResult> WORST_COMPARATOR= (result1, result2) -> {
+        final int sdif = result1.getScore() - result2.getScore();
+        if (sdif != 0) {
+            return sdif;
         }
+        return result1.getPosition()-result2.getPosition();
     };
 
     private final SortedSet<MagicScoreResult> results;

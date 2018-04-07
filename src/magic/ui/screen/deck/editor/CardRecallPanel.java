@@ -2,8 +2,6 @@ package magic.ui.screen.deck.editor;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JPanel;
@@ -85,33 +83,13 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     private void setPropertyChangeListeners() {
         deckPanel.addPropertyChangeListener(
                 BasicDeckTablePanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        doDeckPanelSelectionAction();
-                    }
-                });
+                evt -> doDeckPanelSelectionAction());
         recallTablePanel.addPropertyChangeListener(CardTablePanelA.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        doRecallPanelSelectionAction();
-                    }
-                });
+                evt -> doRecallPanelSelectionAction());
         recallTablePanel.addPropertyChangeListener(CardTablePanelA.CP_CARD_LCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        addSelectedCardToDeck();
-                    }
-                });
+                evt -> addSelectedCardToDeck());
         recallTablePanel.addPropertyChangeListener(CardTablePanelA.CP_CARD_RCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        removeSelectedCardFromDeck();
-                    }
-                });
+                evt -> removeSelectedCardFromDeck());
     }
 
     private void setLookAndFeel() {

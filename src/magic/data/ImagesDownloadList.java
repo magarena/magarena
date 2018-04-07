@@ -1,7 +1,6 @@
 package magic.data;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -26,7 +25,7 @@ public class ImagesDownloadList extends ArrayList<DownloadableFile> {
     }
 
     private void sortListByFilename() {
-        Collections.sort(this, Comparator.comparing(DownloadableFile::getFilename));
+        this.sort(Comparator.comparing(DownloadableFile::getFilename));
     }
 
 }

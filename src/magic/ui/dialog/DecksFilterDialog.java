@@ -4,7 +4,6 @@ import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
@@ -222,17 +221,14 @@ public class DecksFilterDialog extends MagicDialog {
 
         private void setListeners() {
             // combo
-            numericFilterCombo.addItemListener(new ItemListener() {
-                @Override
-                public void itemStateChanged(final ItemEvent e) {
-                    if (e.getStateChange() == ItemEvent.SELECTED) {
-                        SwingUtilities.invokeLater(() -> {
-                            final NumericFilter filter = (NumericFilter) e.getItem();
-                            sizeSpinner1.setVisible(filter.getSpinnersRequired() >= 1);
-                            sizeSpinner2.setVisible(filter.getSpinnersRequired() >= 2);
-                            refreshLayout();
-                        });
-                    }
+            numericFilterCombo.addItemListener(e -> {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    SwingUtilities.invokeLater(() -> {
+                        final NumericFilter filter = (NumericFilter) e.getItem();
+                        sizeSpinner1.setVisible(filter.getSpinnersRequired() >= 1);
+                        sizeSpinner2.setVisible(filter.getSpinnersRequired() >= 2);
+                        refreshLayout();
+                    });
                 }
             });
         }

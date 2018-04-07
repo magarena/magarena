@@ -7,8 +7,6 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JToggleButton;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import magic.ui.utility.MagicStyle;
 import magic.ui.FontsAndBorders;
 
@@ -30,12 +28,9 @@ public class ViewToggleButton extends JToggleButton {
         setPreferredSize(PREF_BUTTON_SIZE);
         setMaximumSize(MAX_BUTTON_SIZE);
 
-        addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                setFont(getFont().deriveFont(isSelected() ? Font.BOLD : Font.PLAIN));
-                setForeground(isSelected() ? MagicStyle.getRolloverColor() : Color.LIGHT_GRAY);
-            }
+        addChangeListener(e -> {
+            setFont(getFont().deriveFont(isSelected() ? Font.BOLD : Font.PLAIN));
+            setForeground(isSelected() ? MagicStyle.getRolloverColor() : Color.LIGHT_GRAY);
         });
         addMouseListener(new MouseAdapter() {
             @Override

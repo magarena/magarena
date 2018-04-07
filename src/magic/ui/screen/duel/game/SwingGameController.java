@@ -123,12 +123,9 @@ public class SwingGameController implements IUIGameController {
     private MagicAnimation animation = null;
 
     private static boolean isControlKeyDown = false;
-    private static final KeyEventDispatcher keyEventDispatcher = new KeyEventDispatcher() {
-        @Override
-        public boolean dispatchKeyEvent(KeyEvent e) {
-            isControlKeyDown = e.isControlDown();
-            return false;
-        }
+    private static final KeyEventDispatcher keyEventDispatcher = e -> {
+        isControlKeyDown = e.isControlDown();
+        return false;
     };
 
     public SwingGameController(final DuelLayeredPane aDuelPane, final MagicGame aGame) {
@@ -881,91 +878,60 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException {
-        final ColorChoicePanel choicePanel = waitForInput(new Callable<ColorChoicePanel>() {
-            @Override
-            public ColorChoicePanel call() {
-                return new ColorChoicePanel(SwingGameController.this, source);
-            }
-        });
+        final ColorChoicePanel choicePanel = waitForInput(() -> new ColorChoicePanel(SwingGameController.this, source));
         return choicePanel.getColor().getLandSubType();
     }
 
     @Override
     public boolean getPayBuyBackCostChoice(final MagicSource source, final String costText) throws UndoClickedException {
-        final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
-            @Override
-            public MayChoicePanel call() {
-                return new MayChoicePanel(
-                    SwingGameController.this,
-                    source,
-                    MText.get(_S4, costText)
-                );
-            }
-        });
+        final MayChoicePanel kickerPanel = waitForInput(() -> new MayChoicePanel(
+            SwingGameController.this,
+            source,
+            MText.get(_S4, costText)
+        ));
         return kickerPanel.isYesClicked();
     }
 
     @Override
     public MagicColor getColorChoice(final MagicSource source) throws UndoClickedException {
-        final ColorChoicePanel choicePanel = waitForInput(new Callable<ColorChoicePanel>() {
-            @Override
-            public ColorChoicePanel call() {
-                return new ColorChoicePanel(SwingGameController.this, source);
-            }
-        });
+        final ColorChoicePanel choicePanel = waitForInput(() -> new ColorChoicePanel(SwingGameController.this, source));
         return choicePanel.getColor();
     }
 
     @Override
     public int getMultiKickerCountChoice(final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) throws UndoClickedException {
-        final MultiKickerChoicePanel kickerPanel = waitForInput(new Callable<MultiKickerChoicePanel>() {
-            @Override
-            public MultiKickerChoicePanel call() {
-                return new MultiKickerChoicePanel(SwingGameController.this, source, cost, maximumCount, name);
-            }
-        });
+        final MultiKickerChoicePanel kickerPanel = waitForInput(
+                () -> new MultiKickerChoicePanel(SwingGameController.this, source, cost, maximumCount, name));
         return kickerPanel.getKicker();
     }
 
     @Override
     public int getSingleKickerCountChoice(final MagicSource source, final MagicManaCost cost, final String name) throws UndoClickedException {
-        final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
-            @Override
-            public MayChoicePanel call() {
-                return new MayChoicePanel(
-                        SwingGameController.this,
-                        source,
-                        MText.get(_S5, name, cost.getText()));
-            }
-        });
+        final MayChoicePanel kickerPanel = waitForInput(() -> new MayChoicePanel(
+                SwingGameController.this,
+                source,
+                MText.get(_S5, name, cost.getText())));
         return kickerPanel.isYesClicked() ? 1 : 0;
     }
 
     @Override
     public boolean getMayChoice(final MagicSource source, final String description) throws UndoClickedException {
-        final MayChoicePanel choicePanel = waitForInput(new Callable<MayChoicePanel>() {
-            @Override
-            public MayChoicePanel call() {
-                return new MayChoicePanel(SwingGameController.this, source, description);
-            }
-        });
+        final MayChoicePanel choicePanel = waitForInput(
+                () -> new MayChoicePanel(SwingGameController.this, source, description));
         return choicePanel.isYesClicked();
     }
 
     @Override
     public boolean getTakeMulliganChoice(final MagicSource source, final MagicPlayer player) throws UndoClickedException {
-        final MayChoicePanel choicePanel = waitForInput(new Callable<MayChoicePanel>() {
-            @Override
-            public MayChoicePanel call() {
-                final boolean showMulliganScreen =
-                        MulliganScreen.isActive() ||
-                        (player.getHandSize() == DuelConfig.getInstance().getHandSize() &&
-                         GeneralConfig.getInstance().showMulliganScreen());
-                if (showMulliganScreen) {
-                    return new MulliganChoicePanel(SwingGameController.this, source, MText.get(_S6), player.getPrivateHand());
-                } else {
-                    return new MayChoicePanel(SwingGameController.this, source, MText.get(_S6));
-                }
+        final MayChoicePanel choicePanel = waitForInput(() -> {
+            final boolean showMulliganScreen =
+                    MulliganScreen.isActive() ||
+                    (player.getHandSize() == DuelConfig.getInstance().getHandSize() &&
+                     GeneralConfig.getInstance().showMulliganScreen());
+            if (showMulliganScreen) {
+                return new MulliganChoicePanel(SwingGameController.this, source, MText.get(_S6), player.getPrivateHand());
+            } else {
+                return new MayChoicePanel(SwingGameController.this, source, MText.get(_S6));
             }
         });
         return choicePanel.isYesClicked();
@@ -973,34 +939,22 @@ public class SwingGameController implements IUIGameController {
 
     @Override
     public int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException {
-        final ModeChoicePanel choicePanel = waitForInput(new Callable<ModeChoicePanel>() {
-            @Override
-            public ModeChoicePanel call() {
-                return new ModeChoicePanel(SwingGameController.this, source, availableModes);
-            }
-        });
+        final ModeChoicePanel choicePanel = waitForInput(
+                () -> new ModeChoicePanel(SwingGameController.this, source, availableModes));
         return choicePanel.getMode();
     }
 
     @Override
     public int getPayManaCostXChoice(final MagicSource source, final int maximumX) throws UndoClickedException {
-        final ManaCostXChoicePanel choicePanel = waitForInput(new Callable<ManaCostXChoicePanel>() {
-            @Override
-            public ManaCostXChoicePanel call() {
-                return new ManaCostXChoicePanel(SwingGameController.this, source, maximumX);
-            }
-        });
+        final ManaCostXChoicePanel choicePanel = waitForInput(
+                () -> new ManaCostXChoicePanel(SwingGameController.this, source, maximumX));
         return choicePanel.getValueForX();
     }
 
     @Override
     public MagicPlayChoiceResult getPlayChoice(final MagicSource source, final List<MagicPlayChoiceResult> results) throws UndoClickedException {
-        final PlayChoicePanel choicePanel = waitForInput(new Callable<PlayChoicePanel>() {
-            @Override
-            public PlayChoicePanel call() {
-                return new PlayChoicePanel(SwingGameController.this, source, results);
-            }
-        });
+        final PlayChoicePanel choicePanel = waitForInput(
+                () -> new PlayChoicePanel(SwingGameController.this, source, results));
         return choicePanel.getResult();
     }
 

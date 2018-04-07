@@ -13,8 +13,6 @@ import javax.swing.BorderFactory;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -31,16 +29,13 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         // List of avatar image sets.
         final JList<AvatarImageSet> imageSetsList = new JList<>(getAvatarImageSetsArray());
         imageSetsList.setOpaque(false);
-        imageSetsList.addListSelectionListener(new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                if (!e.getValueIsAdjusting()) {
-                    SwingUtilities.invokeLater(() -> {
-                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                        screen.displayImageSetIcons(imageSetsList.getSelectedValue());
-                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                    });
-                }
+        imageSetsList.addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                SwingUtilities.invokeLater(() -> {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    screen.displayImageSetIcons(imageSetsList.getSelectedValue());
+                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                });
             }
         });
         imageSetsList.setSelectedIndex(0);

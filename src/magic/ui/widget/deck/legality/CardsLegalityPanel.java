@@ -19,7 +19,6 @@ import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
@@ -119,15 +118,12 @@ public class CardsLegalityPanel extends JPanel {
     }
 
     private ListSelectionListener getTableListSelectionListener() {
-        return new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                isAdjusting = e.getValueIsAdjusting();
-                if (!isAdjusting) {
-                    lastSelectedRow = table.getSelectedRow();
-                    notifyCardSelected(tableModel.getCardDef(lastSelectedRow));
-                    firePropertyChange(CP_CARD_SELECTED, false, true);
-                }
+        return e -> {
+            isAdjusting = e.getValueIsAdjusting();
+            if (!isAdjusting) {
+                lastSelectedRow = table.getSelectedRow();
+                notifyCardSelected(tableModel.getCardDef(lastSelectedRow));
+                firePropertyChange(CP_CARD_SELECTED, false, true);
             }
         };
     }

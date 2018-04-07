@@ -5,7 +5,6 @@ import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -143,12 +142,9 @@ class TranslationPanel extends JPanel {
     private void setupComboBox() {
         languageCombo.setRenderer(getLanguageComboRenderer());
         refreshLanguageCombo();
-        languageCombo.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                if (e.getStateChange() == ItemEvent.SELECTED) {
-                    setStateOfActionButtons();
-                }
+        languageCombo.addItemListener(e -> {
+            if (e.getStateChange() == ItemEvent.SELECTED) {
+                setStateOfActionButtons();
             }
         });
         languageCombo.setFocusable(false);

@@ -22,7 +22,6 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import javax.swing.JPanel;
 import magic.model.IRenderableCard;
-import magic.model.MagicCardDefinition;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.helpers.MouseHelper;

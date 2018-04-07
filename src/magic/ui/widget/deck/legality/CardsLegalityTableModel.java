@@ -1,7 +1,6 @@
 package magic.ui.widget.deck.legality;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import javax.swing.event.TableModelListener;
@@ -14,12 +13,8 @@ import magic.utility.DeckUtils;
 
 public class CardsLegalityTableModel implements TableModel {
 
-    private static final Comparator<CardLegalityInfo> NAME_COMPARATOR_DESC = new Comparator<CardLegalityInfo>() {
-        @Override
-        public int compare(final CardLegalityInfo cfl1, final CardLegalityInfo cfl2) {
-            return cfl1.getCardName().compareTo(cfl2.getCardName());
-        }
-    };
+    private static final Comparator<CardLegalityInfo> NAME_COMPARATOR_DESC =
+            Comparator.comparing(CardLegalityInfo::getCardName);
 
     /**
      * List of event listeners. These listeners wait for something to happen
@@ -69,7 +64,7 @@ public class CardsLegalityTableModel implements TableModel {
         if (aFormat != null) {
             cardLegalityList = getCardsLegalityList(aDeck, aFormat);
             if (comp != null) {
-                Collections.sort(cardLegalityList, comp);
+                cardLegalityList.sort(comp);
             }
         }
     }

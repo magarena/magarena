@@ -277,17 +277,14 @@ final public class MagicSystem {
 
         // execute the command in a shutdown hook, to be sure that all the
         // resources have been disposed before restarting the application
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            @Override
-            public void run() {
-                try {
-                    final ProcessBuilder builder = new ProcessBuilder(command);
-                    builder.start();
-                } catch (final IOException ex) {
-                    System.err.println(ex);
-                }
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            try {
+                final ProcessBuilder builder = new ProcessBuilder(command);
+                builder.start();
+            } catch (final IOException ex) {
+                System.err.println(ex);
             }
-        });
+        }));
 
         System.exit(0);
 

@@ -2,7 +2,6 @@ package magic.ui.widget.cards.table;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -61,7 +60,7 @@ public class CardTableModel extends AbstractTableModel {
 
         // re-sort if necessary
         if (comp != null) {
-            Collections.sort(cardDefinitions, comp);
+            cardDefinitions.sort(comp);
         }
     }
 
@@ -126,7 +125,7 @@ public class CardTableModel extends AbstractTableModel {
         comp = getSortComparator(col);
         if (comp != null) {
             // new sort
-            Collections.sort(cardDefinitions, comp);
+            cardDefinitions.sort(comp);
             sortDesc.put(col, !sortDesc.get(col));
         } else {
             // didn't select valid new sort -> reset to old

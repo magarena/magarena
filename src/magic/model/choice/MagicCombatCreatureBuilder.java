@@ -11,19 +11,16 @@ import magic.model.MagicPlayer;
 
 public class MagicCombatCreatureBuilder {
 
-    private static final Comparator<MagicCombatCreature> ATTACKER_COMPARATOR=new Comparator<MagicCombatCreature>() {
-        @Override
-        public int compare(final MagicCombatCreature attacker1,final MagicCombatCreature attacker2) {
-            final int adif=attacker1.attackerScore-attacker2.attackerScore;
-            if (adif!=0) {
-                return adif;
-            }
-            final int sdif=attacker1.score-attacker2.score;
-            if (sdif!=0) {
-                return sdif;
-            }
-            return attacker1.permanent.compareTo(attacker2.permanent);
+    private static final Comparator<MagicCombatCreature> ATTACKER_COMPARATOR= (attacker1, attacker2) -> {
+        final int adif = attacker1.attackerScore - attacker2.attackerScore;
+        if (adif != 0) {
+            return adif;
         }
+        final int sdif = attacker1.score - attacker2.score;
+        if (sdif != 0) {
+            return sdif;
+        }
+        return attacker1.permanent.compareTo(attacker2.permanent);
     };
 
     private final MagicGame game;

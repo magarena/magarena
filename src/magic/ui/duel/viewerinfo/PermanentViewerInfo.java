@@ -13,26 +13,20 @@ import magic.model.MagicPermanent;
 
 public class PermanentViewerInfo {
 
-    public static final Comparator<PermanentViewerInfo> NAME_COMPARATOR=new Comparator<PermanentViewerInfo>() {
-        @Override
-        public int compare(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
-            final int dif=permanentInfo1.name.compareTo(permanentInfo2.name);
-            if (dif!=0) {
-                return dif;
-            }
-            return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
+    public static final Comparator<PermanentViewerInfo> NAME_COMPARATOR = (permanentInfo1, permanentInfo2) -> {
+        final int dif = permanentInfo1.name.compareTo(permanentInfo2.name);
+        if (dif != 0) {
+            return dif;
         }
+        return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
     };
 
-    public static final Comparator<PermanentViewerInfo> BLOCKED_NAME_COMPARATOR=new Comparator<PermanentViewerInfo>() {
-        @Override
-        public int compare(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
-            final int dif=permanentInfo1.blockedName.compareTo(permanentInfo2.blockedName);
-            if (dif!=0) {
-                return dif;
-            }
-            return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
+    public static final Comparator<PermanentViewerInfo> BLOCKED_NAME_COMPARATOR = (permanentInfo1, permanentInfo2) -> {
+        final int dif = permanentInfo1.blockedName.compareTo(permanentInfo2.blockedName);
+        if (dif != 0) {
+            return dif;
         }
+        return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
     };
 
     public final long magicCardId;

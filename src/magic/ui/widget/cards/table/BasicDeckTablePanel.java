@@ -3,7 +3,6 @@ package magic.ui.widget.cards.table;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JTable;
-import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.model.MagicCardDefinition;
 import magic.ui.FontsAndBorders;
@@ -39,13 +38,10 @@ public class BasicDeckTablePanel extends TexturedPanel {
     }
 
     private ListSelectionListener getTableListSelectionListener() {
-        return new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                isAdjusting = e.getValueIsAdjusting();
-                if (!isAdjusting) {
-                    firePropertyChange(CP_CARD_SELECTED, false, true);
-                }
+        return e -> {
+            isAdjusting = e.getValueIsAdjusting();
+            if (!isAdjusting) {
+                firePropertyChange(CP_CARD_SELECTED, false, true);
             }
         };
     }

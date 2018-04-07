@@ -13,7 +13,6 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
@@ -64,14 +63,11 @@ public class FormatsLegalityPanel extends JPanel {
     }
 
     private ListSelectionListener getListSelectionListener() {
-        return new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                isAdjusting = e.getValueIsAdjusting();
-                if (!isAdjusting) {
-                    lastSelectedRow = formatsJList.getSelectedIndex();
-                    firePropertyChange(CP_FORMAT_SELECTED, false, true);
-                }
+        return e -> {
+            isAdjusting = e.getValueIsAdjusting();
+            if (!isAdjusting) {
+                lastSelectedRow = formatsJList.getSelectedIndex();
+                firePropertyChange(CP_FORMAT_SELECTED, false, true);
             }
         };
     }

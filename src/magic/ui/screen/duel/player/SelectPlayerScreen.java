@@ -10,8 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import javax.swing.BorderFactory;
@@ -128,12 +126,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
     protected List<PlayerProfile> getSortedPlayersList() {
         profilesMap = getPlayerProfilesMap();
         final List<PlayerProfile> profilesByName = new ArrayList<>(profilesMap.values());
-        Collections.sort(profilesByName, new Comparator<PlayerProfile>() {
-            @Override
-            public int compare(PlayerProfile o1, PlayerProfile o2) {
-                return o1.getPlayerName().compareToIgnoreCase(o2.getPlayerName());
-            }
-        });
+        profilesByName.sort((o1, o2) -> o1.getPlayerName().compareToIgnoreCase(o2.getPlayerName()));
         return profilesByName;
     }
 

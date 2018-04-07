@@ -83,12 +83,7 @@ public class PreferencesDialog
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
-    private final ActionListener actionListener = new ActionListener() {
-        @Override
-        public void actionPerformed(final ActionEvent actionEvent) {
-            dispose();
-        }
-    };
+    private final ActionListener actionListener = actionEvent -> dispose();
 
     private final MagicFrame frame;
     private final JComboBox<Proxy.Type> proxyComboBox = new JComboBox<>();
