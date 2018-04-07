@@ -23,7 +23,6 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
-import magic.translate.MText;
 
 public class MagicTargetChoice extends MagicChoice {
 

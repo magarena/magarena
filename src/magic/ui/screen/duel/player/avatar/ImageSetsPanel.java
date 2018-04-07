@@ -7,6 +7,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JList;
@@ -62,7 +63,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
 
         refreshStyle();
     }
-    
+
     private static class DirectoriesOnlyFilter implements DirectoryStream.Filter<Path> {
         @Override
         public boolean accept(Path entry) throws IOException {
@@ -82,7 +83,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         } catch (IOException ex) {
             System.err.println(ex);
         }
-        paths.sort((p1, p2) -> p1.getFileName().compareTo(p2.getFileName()));
+        paths.sort(Comparator.comparing(Path::getFileName));
         return paths;
     }
 
@@ -90,7 +91,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         final AvatarImageSet imageSet = new AvatarImageSet(imageSetDirectory);
         return imageSet;
     }
-    
+
     private List<AvatarImageSet> getAvatarImageSetsList() {
         final List<AvatarImageSet> imageSets = new ArrayList<>();
         List<Path> directoryPaths = getSortedDirectoryPaths(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.AVATARS));
@@ -98,7 +99,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
             imageSets.add(loadImageSet(path));
         }
         return imageSets;
-    }    
+    }
 
     private AvatarImageSet[] getAvatarImageSetsArray() {
         final List<AvatarImageSet> imageSetsList = getAvatarImageSetsList();

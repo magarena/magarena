@@ -1,7 +1,7 @@
 package magic.model;
 
 import java.util.*;
-import java.util.stream.Collectors;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
@@ -24,7 +24,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
      * Comparator for sorting instances of {@code MagicCardDefinition} by distinct name.
      */
     public static final Comparator<MagicCardDefinition> SORT_BY_NAME =
-        (o1, o2) -> o1.getDistinctName().compareTo(o2.getDistinctName());
+            Comparator.comparing(MagicCardDefinition::getDistinctName);
 
     private static final List<String> unsupportedStatuses = new ArrayList<>();
     private static boolean isSorted = false;
@@ -1010,7 +1010,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC =
-        (cd1, cd2) -> cd1.getName().compareTo(cd2.getName());
+            Comparator.comparing(MagicCardDefinition::getName);
 
     public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC =
         (cd1, cd2) -> cd2.getName().compareTo(cd1.getName());
@@ -1029,11 +1029,11 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_ASC = (cd1, cd2) -> TYPE_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC = (cd1, cd2) -> cd1.getSubTypeString().compareTo(cd2.getSubTypeString());
+    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC = Comparator.comparing(MagicCardDefinition::getSubTypeString);
 
     public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_ASC = (cd1, cd2) -> SUBTYPE_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC = (cd1, cd2) -> cd1.getRarity() - cd2.getRarity();
+    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC = Comparator.comparingInt(MagicCardDefinition::getRarity);
 
     public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_ASC = (cd1, cd2) -> RARITY_COMPARATOR_DESC.compare(cd2, cd1);
 
