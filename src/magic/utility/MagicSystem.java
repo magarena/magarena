@@ -149,24 +149,22 @@ final public class MagicSystem {
     public static void waitForMissingCards() {
         if (loadMissing.isDone()) {
             return;
-        } else {
-            try {
-                loadMissing.get();
-            } catch (final InterruptedException|ExecutionException ex) {
-                throw new RuntimeException(ex);
-            }
+        }
+        try {
+            loadMissing.get();
+        } catch (final InterruptedException|ExecutionException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
     public static void waitForPlayableCards() {
         if (loadPlayable.isDone()) {
             return;
-        } else {
-            try {
-                loadPlayable.get();
-            } catch (final InterruptedException|ExecutionException ex) {
-                throw new RuntimeException(ex);
-            }
+        }
+        try {
+            loadPlayable.get();
+        } catch (final InterruptedException|ExecutionException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
