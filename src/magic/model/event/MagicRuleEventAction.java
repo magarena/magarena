@@ -1383,7 +1383,7 @@ public enum MagicRuleEventAction {
 
         @Override
         public MagicTargetHint getHint(final Matcher matcher) {
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(matcher));
             if (counterType.getName().contains("-") || counterType.getScore() < 0) {
                 return MagicTargetHint.Negative;
             } else {
@@ -1393,7 +1393,7 @@ public enum MagicRuleEventAction {
 
         @Override
         protected MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(matcher));
             if (counterType.getName().contains("-")) {
                 final String[] pt = counterType.getName().split("/");
                 return new MagicWeakenTargetPicker(-Integer.parseInt(pt[0]), -Integer.parseInt(pt[1]));
@@ -1406,7 +1406,7 @@ public enum MagicRuleEventAction {
 
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(matcher));
             if (counterType.getName().contains("-")) {
                 return MagicTiming.Removal;
             } else {
