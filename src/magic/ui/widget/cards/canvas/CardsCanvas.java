@@ -422,10 +422,9 @@ public class CardsCanvas extends JPanel {
         final int yStart = (containerHeight - rect.height) / 2;
         int row = 0;
         int col = 0;
-        for (int cardIndex = 0; cardIndex < totalCards; cardIndex++) {
-            final CardCanvas card = cards.get(cardIndex);
+        for (final CardCanvas card : cards) {
             int xPoint = xStart + (col * cardWidth);
-            int yPoint = yStart + (row * (cardHeight-1));
+            int yPoint = yStart + (row * (cardHeight - 1));
             card.setPosition(new Point(xPoint, yPoint));
             card.setSize(cardWidth, cardHeight);
             col++;

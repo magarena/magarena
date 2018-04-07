@@ -141,12 +141,11 @@ final public class MagicSystem {
      */
     public static String getRuntimeParameters() {
         RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
-        List<String> aList = bean.getInputArguments();
-        String params = "";
-        for (int i = 0; i < aList.size(); i++) {
-            params += aList.get(i) + "\n";
+        StringBuilder params = new StringBuilder();
+        for (String param : bean.getInputArguments()) {
+            params.append(param).append("\n");
         }
-        return params;
+        return params.toString();
     }
 
     public static String getLoadingProgress() {

@@ -123,11 +123,11 @@ public class MagicMayChoice extends MagicChoice {
         noChoiceResults[0]=NO_CHOICE;
 
         final List<Collection<?>> optionsList=new ArrayList<>(nrOfChoices);
-        for (int index=0;index<nrOfChoices;index++) {
-            if (!choices[index].hasOptions(game,player,source,true)) {
+        for (MagicChoice choice : choices) {
+            if (!choice.hasOptions(game, player, source, true)) {
                 return Collections.singletonList(noChoiceResults);
             }
-            optionsList.add(choices[index].getArtificialOptions(game,event));
+            optionsList.add(choice.getArtificialOptions(game, event));
         }
 
         final List<Object[]> choiceResultsList=new ArrayList<>();
