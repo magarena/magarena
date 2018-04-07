@@ -14,12 +14,7 @@ public class MulliganChoicePanel extends MayChoicePanel {
 
     public MulliganChoicePanel(final SwingGameController controller, final MagicSource source, final String message, final MagicCardList hand) {
         super(controller, source, message);
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                showMulliganScreen(hand);
-            }
-        });
+        SwingUtilities.invokeLater(() -> showMulliganScreen(hand));
     }
 
     private void showMulliganScreen(final MagicCardList hand) {

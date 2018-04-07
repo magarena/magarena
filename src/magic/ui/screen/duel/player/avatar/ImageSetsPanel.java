@@ -35,13 +35,10 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            screen.displayImageSetIcons(imageSetsList.getSelectedValue());
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                        }
+                    SwingUtilities.invokeLater(() -> {
+                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                        screen.displayImageSetIcons(imageSetsList.getSelectedValue());
+                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     });
                 }
             }

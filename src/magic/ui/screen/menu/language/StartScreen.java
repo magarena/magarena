@@ -46,12 +46,7 @@ public class StartScreen extends MScreen {
 
             translations = MagicFileSystem.getTranslationFilenames();
             if (translations.isEmpty()) {
-                SwingUtilities.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        ScreenController.showImportScreen();
-                    }
-                });
+                SwingUtilities.invokeLater(() -> ScreenController.showImportScreen());
             } else {
                 showLanguageMenu();
             }
@@ -111,12 +106,7 @@ public class StartScreen extends MScreen {
     }
 
     private void showMainMenuScreen() {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                ScreenController.showMainMenuScreen();
-            }
-        });
+        SwingUtilities.invokeLater(() -> ScreenController.showMainMenuScreen());
     }
 
 }

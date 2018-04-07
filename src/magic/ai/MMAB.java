@@ -75,18 +75,15 @@ public class MMAB extends MagicAI {
             }
             workerGame.setFastChoices(true);
 
-            executor.execute(new Runnable() {
-                @Override
-                public void run() {
-                    final MMABWorker worker=new MMABWorker(
-                        Thread.currentThread().getId(),
-                        workerGame,
-                        scoreBoard,
-                        CHEAT
-                    );
-                    worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
-                    scoreRef.update(achoice.aiScore.getScore());
-                }
+            executor.execute(() -> {
+                final MMABWorker worker=new MMABWorker(
+                    Thread.currentThread().getId(),
+                    workerGame,
+                    scoreBoard,
+                    CHEAT
+                );
+                worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
+                scoreRef.update(achoice.aiScore.getScore());
             });
         }
 

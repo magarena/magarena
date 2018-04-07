@@ -113,12 +113,7 @@ public abstract class SelectPlayerScreen extends HeaderFooterScreen
     }
 
     protected void setFocusInProfilesJList(final JList<? extends PlayerProfile> profilesJList) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                profilesJList.requestFocusInWindow();
-            }
-        });
+        SwingUtilities.invokeLater(() -> profilesJList.requestFocusInWindow());
     }
 
     protected void setSelectedListItem(final PlayerProfile playerProfile) {

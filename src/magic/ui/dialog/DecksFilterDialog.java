@@ -226,14 +226,11 @@ public class DecksFilterDialog extends MagicDialog {
                 @Override
                 public void itemStateChanged(final ItemEvent e) {
                     if (e.getStateChange() == ItemEvent.SELECTED) {
-                        SwingUtilities.invokeLater(new Runnable() {
-                            @Override
-                            public void run() {
-                                final NumericFilter filter = (NumericFilter) e.getItem();
-                                sizeSpinner1.setVisible(filter.getSpinnersRequired() >= 1);
-                                sizeSpinner2.setVisible(filter.getSpinnersRequired() >= 2);
-                                refreshLayout();
-                            }
+                        SwingUtilities.invokeLater(() -> {
+                            final NumericFilter filter = (NumericFilter) e.getItem();
+                            sizeSpinner1.setVisible(filter.getSpinnersRequired() >= 1);
+                            sizeSpinner2.setVisible(filter.getSpinnersRequired() >= 2);
+                            refreshLayout();
                         });
                     }
                 }

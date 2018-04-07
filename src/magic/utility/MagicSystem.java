@@ -35,12 +35,9 @@ final public class MagicSystem {
 
     // Load card definitions in the background so that it does not delay the
     // loading of the UI. Override done() to ensure exceptions not suppressed.
-    public static final FutureTask<Void> loadPlayable = new FutureTask<Void>(new Runnable() {
-        @Override
-        public void run() {
-            initializeEngine(reporter);
-        }
-    }, null) {
+    public static final FutureTask<Void> loadPlayable = new FutureTask<Void>(
+            () -> initializeEngine(reporter), null
+    ) {
         @Override
         protected void done() {
             try {
@@ -56,12 +53,9 @@ final public class MagicSystem {
         }
     };
 
-    public static final FutureTask<Void> loadMissing = new FutureTask<Void>(new Runnable() {
-        @Override
-        public void run() {
-            CardDefinitions.loadMissingCards();
-        }
-    }, null) {
+    public static final FutureTask<Void> loadMissing = new FutureTask<Void>(
+            () -> CardDefinitions.loadMissingCards(), null
+    ) {
         @Override
         protected void done() {
             try {

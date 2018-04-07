@@ -269,12 +269,9 @@ class TranslationPanel extends JPanel {
                     }
                     MText.createTranslationFIle(langFile);
                     DesktopHelper.openFileInDefaultOsEditor(langFile);
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            refreshLanguageCombo();
-                            languageCombo.setSelectedItem(language);
-                        }
+                    SwingUtilities.invokeLater(() -> {
+                        refreshLanguageCombo();
+                        languageCombo.setSelectedItem(language);
                     });
                 } else {
                     ScreenController.showWarningMessage(MText.get(_S8));

@@ -271,45 +271,40 @@ public class TableColumnAdjuster implements PropertyChangeListener, TableModelLi
 
         //  Needed when table is sorted.
 
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            @Override
-            public void run()
+        SwingUtilities.invokeLater(() -> {
+            //  A cell has been updated
+
+            int column = table.convertColumnIndexToView(e.getColumn());
+
+            if (e.getType() == TableModelEvent.UPDATE && column != -1)
             {
-                //  A cell has been updated
+                //  Only need to worry about an increase in width for this cell
 
-                int column = table.convertColumnIndexToView(e.getColumn());
-
-                if (e.getType() == TableModelEvent.UPDATE && column != -1)
+                if (isOnlyAdjustLarger)
                 {
-                    //  Only need to worry about an increase in width for this cell
+                    int    row = e.getFirstRow();
+                    TableColumn tableColumn = table.getColumnModel().getColumn(column);
 
-                    if (isOnlyAdjustLarger)
+                    if (tableColumn.getResizable())
                     {
-                        int    row = e.getFirstRow();
-                        TableColumn tableColumn = table.getColumnModel().getColumn(column);
-
-                        if (tableColumn.getResizable())
-                        {
-                            int width =    getCellDataWidth(row, column);
-                            updateTableColumn(column, width);
-                        }
-                    }
-
-                    //    Could be an increase of decrease so check all rows
-
-                    else
-                    {
-                        adjustColumn( column );
+                        int width =    getCellDataWidth(row, column);
+                        updateTableColumn(column, width);
                     }
                 }
 
-                //  The update affected more than one column so adjust all columns
+                //    Could be an increase of decrease so check all rows
 
                 else
                 {
-                    adjustColumns();
+                    adjustColumn( column );
                 }
+            }
+
+            //  The update affected more than one column so adjust all columns
+
+            else
+            {
+                adjustColumns();
             }
         });
     }

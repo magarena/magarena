@@ -119,12 +119,7 @@ public final class DuelPanel extends JPanel {
         setGamePanelLayout();
         // defer until all pending events on the EDT have been processed.
         // this ensures that cards layout is adjusted correctly if the screen is resized.
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                update(controller.getGameViewerInfo());
-            }
-        });
+        SwingUtilities.invokeLater(() -> update(controller.getGameViewerInfo()));
     }
 
     /**
@@ -152,22 +147,12 @@ public final class DuelPanel extends JPanel {
     public void doNewTurnNotification(GameViewerInfo gameInfo) {
         assert !SwingUtilities.isEventDispatchThread();
 
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                sidebarPanel.getGameStatusPanel().showNewTurnNotification(gameInfo);
-            }
-        });
+        SwingUtilities.invokeLater(() -> sidebarPanel.getGameStatusPanel().showNewTurnNotification(gameInfo));
 
         // TODO: do while gameStatusPanel.isBusy() { sleep(100); }
         doThreadSleep(CONFIG.getNewTurnAlertDuration());
 
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                sidebarPanel.getGameStatusPanel().hideNewTurnNotification();
-            }
-        });
+        SwingUtilities.invokeLater(() -> sidebarPanel.getGameStatusPanel().hideNewTurnNotification());
 
     }
 

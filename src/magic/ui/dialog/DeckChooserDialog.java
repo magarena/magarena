@@ -81,13 +81,10 @@ public class DeckChooserDialog extends MagicDialog {
             @Override
             public void itemStateChanged(final ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            decksPanel.setDeckType((DeckType) e.getItem());
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                        }
+                    SwingUtilities.invokeLater(() -> {
+                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                        decksPanel.setDeckType((DeckType) e.getItem());
+                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     });
                 }
             }

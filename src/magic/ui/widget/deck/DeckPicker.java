@@ -118,14 +118,11 @@ public class DeckPicker extends JPanel {
             public void itemStateChanged(final ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
                     // ensures dropdown list closes on click *before* refreshing decks list.
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            selectedDeckType = (DeckType) e.getItem();
-                            refreshDecksList();
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                        }
+                    SwingUtilities.invokeLater(() -> {
+                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                        selectedDeckType = (DeckType) e.getItem();
+                        refreshDecksList();
+                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     });
                 }
             }
@@ -254,26 +251,23 @@ public class DeckPicker extends JPanel {
             @Override
             public void valueChanged(final ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            final MagicDeck deck = decksJList.getSelectedValue();
-                            for (IDeckConsumer listener : listeners) {
-                                if (selectedDeckType == DeckType.Random) {
-                                    listener.setDeck(deck.getName(), selectedDeckType);
-                                } else if (selectedDeckType == DeckType.PopularDecks) {
-                                    listener.setDeck(deck);
-                                } else if (selectedDeckType == DeckType.WinningDecks) {
-                                    listener.setDeck(deck);
-                                } else if (selectedDeckType == DeckType.RecentDecks) {
-                                    listener.setDeck(deck);
-                                } else {
-                                    listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
-                                }
+                    SwingUtilities.invokeLater(() -> {
+                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                        final MagicDeck deck = decksJList.getSelectedValue();
+                        for (IDeckConsumer listener : listeners) {
+                            if (selectedDeckType == DeckType.Random) {
+                                listener.setDeck(deck.getName(), selectedDeckType);
+                            } else if (selectedDeckType == DeckType.PopularDecks) {
+                                listener.setDeck(deck);
+                            } else if (selectedDeckType == DeckType.WinningDecks) {
+                                listener.setDeck(deck);
+                            } else if (selectedDeckType == DeckType.RecentDecks) {
+                                listener.setDeck(deck);
+                            } else {
+                                listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                             }
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                         }
+                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     });
                 }
             }

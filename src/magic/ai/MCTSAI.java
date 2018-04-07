@@ -178,30 +178,24 @@ public class MCTSAI extends MagicAI {
     }
 
     private Runnable genSimulationTask(final MagicGame rootGame, final LinkedList<MCTSGameTree> path, final BlockingQueue<Runnable> queue) {
-        return new Runnable() {
-            @Override
-            public void run() {
-                // propagate result of random play up the path
-                final double score = randomPlay(path.getLast(), rootGame);
-                queue.offer(genBackpropagationTask(score, path));
-            }
+        return () -> {
+            // propagate result of random play up the path
+            final double score = randomPlay(path.getLast(), rootGame);
+            queue.offer(genBackpropagationTask(score, path));
         };
     }
 
     private Runnable genBackpropagationTask(final double score, final LinkedList<MCTSGameTree> path) {
-        return new Runnable() {
-            @Override
-            public void run() {
-                final Iterator<MCTSGameTree> iter = path.descendingIterator();
-                MCTSGameTree child = null;
-                MCTSGameTree parent = null;
-                while (iter.hasNext()) {
-                    child = parent;
-                    parent = iter.next();
+        return () -> {
+            final Iterator<MCTSGameTree> iter = path.descendingIterator();
+            MCTSGameTree child = null;
+            MCTSGameTree parent = null;
+            while (iter.hasNext()) {
+                child = parent;
+                parent = iter.next();
 
-                    parent.removeVirtualLoss();
-                    parent.updateScore(child, score);
-                }
+                parent.removeVirtualLoss();
+                parent.updateScore(child, score);
             }
         };
     }

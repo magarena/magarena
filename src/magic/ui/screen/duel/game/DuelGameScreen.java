@@ -44,13 +44,10 @@ public class DuelGameScreen extends MScreen {
      */
     private void startGameThread() {
         assert SwingUtilities.isEventDispatchThread();
-        final Thread t = new Thread() {
-            @Override
-            public void run() {
-                Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
-                controller.runGame();
-            }
-        };
+        final Thread t = new Thread(() -> {
+            Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
+            controller.runGame();
+        });
         t.setDaemon(true);
         t.start();
     }

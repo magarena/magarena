@@ -345,13 +345,10 @@ public class PreferencesDialog
             ScreenController.showWarningMessage(String.format("%s\n%s\n\n%s",
                     MText.get(_S80), MText.get(_S81), ex)
             );
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    config.setTranslation(GeneralConfig.DEFAULT_TRANSLATION);
-                    config.save();
-                    generalPanel.refreshLanguageCombo();
-                }
+            SwingUtilities.invokeLater(() -> {
+                config.setTranslation(GeneralConfig.DEFAULT_TRANSLATION);
+                config.save();
+                generalPanel.refreshLanguageCombo();
             });
             return false;
 
