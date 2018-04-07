@@ -37,7 +37,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     }
 
     @Override
-    protected Void doInBackground() throws MalformedURLException {
+    protected Void doInBackground() {
         this.downloadList = ScanWorker.getImagesDownloadList((IScanListener)listener, displayMode);
         doDownloadImages();
         return null;
@@ -125,7 +125,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     private boolean tryDownloadingCroppedImage(CardImageFile imageFile) {
         try {
             return ProxyCardImage.tryDownloadingCroppedImage(imageFile);
-        } catch (DownloadException | MalformedURLException ex) {
+        } catch (MalformedURLException ex) {
             System.err.println(String.format("%s [%s]", ex.toString(), imageFile.getFilename()));
         }
         return false;
@@ -139,7 +139,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         }
     }
 
-    private void doDownloadImages() throws MalformedURLException {
+    private void doDownloadImages() {
 
         assert !SwingUtilities.isEventDispatchThread();
 

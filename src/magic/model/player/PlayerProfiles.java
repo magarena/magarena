@@ -49,16 +49,12 @@ public final class PlayerProfiles {
         final Path playersPath = profilesPath.resolve(playerType);
         List<Path> profilePaths = getDirectoryPaths(playersPath);
         if (profilePaths.isEmpty()) {
-            try {
-                if ("human".equals(playerType)) {
-                    createDefaultHumanPlayerProfiles();
-                } else {
-                    createDefaultAiPlayerProfiles();
-                }
-                profilePaths = getDirectoryPaths(playersPath);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            if ("human".equals(playerType)) {
+                createDefaultHumanPlayerProfiles();
+            } else {
+                createDefaultAiPlayerProfiles();
             }
+            profilePaths = getDirectoryPaths(playersPath);
         }
         return profilePaths;
     }
@@ -78,12 +74,12 @@ public final class PlayerProfiles {
     }
     private static class DirectoriesFilter implements Filter<Path> {
         @Override
-        public boolean accept(Path entry) throws IOException {
+        public boolean accept(Path entry) {
             return Files.isDirectory(entry);
         }
     }
 
-    public static void createDefaultHumanPlayerProfiles() throws IOException {
+    public static void createDefaultHumanPlayerProfiles() {
         final HumanProfile profile = HumanProfile.create(getDefaultPlayerProfileName());
         profile.save();
     }
@@ -94,7 +90,7 @@ public final class PlayerProfiles {
 
     }
 
-    public static void createDefaultAiPlayerProfiles() throws IOException {
+    public static void createDefaultAiPlayerProfiles() {
         createAiPlayerProfile("Les Vegas", MagicAIImpl.VEGAS, 6, PlayerProfiles.AVATAR_LesVegas);
         createAiPlayerProfile("Mini Max", MagicAIImpl.MMAB, 6, PlayerProfiles.AVATAR_MiniMax);
         createAiPlayerProfile("Monty Carlo", MagicAIImpl.MCTS, 6, PlayerProfiles.AVATAR_MontyCarlo);

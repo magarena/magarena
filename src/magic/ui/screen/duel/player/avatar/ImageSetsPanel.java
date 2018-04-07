@@ -58,7 +58,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
 
     private static class DirectoriesOnlyFilter implements DirectoryStream.Filter<Path> {
         @Override
-        public boolean accept(Path entry) throws IOException {
+        public boolean accept(Path entry) {
             return Files.isDirectory(entry);
         }
     }

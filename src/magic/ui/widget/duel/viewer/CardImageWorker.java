@@ -27,7 +27,7 @@ public class CardImageWorker extends SwingWorker<Image, Boolean> {
     }
 
     @Override
-    protected Image doInBackground() throws Exception {
+    protected Image doInBackground() {
 
         // if image not returned within specified millisecs,
         // set CardImagePanel to pending state.

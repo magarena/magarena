@@ -245,7 +245,7 @@ final public class MagicSystem {
      * <p>
      * Should also work when JAR is not available (eg. when running from IDE).
      */
-    public static void restart() throws URISyntaxException, IOException {
+    public static void restart() throws URISyntaxException {
 
         final List<String> command = new ArrayList<>();
 

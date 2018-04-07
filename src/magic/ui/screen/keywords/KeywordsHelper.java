@@ -63,7 +63,7 @@ final class KeywordsHelper {
     /**
      * Returns the default English keywords file.
      */
-    private static File getKeywordsFile() throws FileNotFoundException {
+    private static File getKeywordsFile() {
         return getKeywordsFile("");
     }
 

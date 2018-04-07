@@ -3,7 +3,6 @@ package magic.ui.screen.stats;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.File;
-import java.sql.SQLException;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -27,7 +26,7 @@ class StatsContentPanel extends TexturedPanel implements IPagination {
     private PaginationPanel paginator;
     private final StatsScreen screen;
 
-    StatsContentPanel(StatsScreen screen) throws SQLException {
+    StatsContentPanel(StatsScreen screen) {
         this.screen = screen;
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         setLayout(new MigLayout("flowy", "[fill, grow]"));

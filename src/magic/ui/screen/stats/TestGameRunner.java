@@ -48,7 +48,7 @@ class TestGameRunner extends SwingWorker<Void, Integer> {
     }
 
     @Override
-    protected Void doInBackground() throws Exception {
+    protected Void doInBackground() {
         System.out.println("=== running test games : " + totalGames + " ===");
         for (int i = 0; i < totalGames; i++) {
             try {

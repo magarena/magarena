@@ -22,7 +22,7 @@ class CardsLoadingWorker extends SwingWorker<Void, String> {
     }
 
     @Override
-    protected Void doInBackground() throws Exception {
+    protected Void doInBackground() {
         if (needsPlayableCards || needsMissingCards) {
             publish(MText.get(_S1));
         }

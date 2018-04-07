@@ -28,7 +28,7 @@ public class PwlWorker extends SwingWorker<String, Void> {
     }
 
     @Override
-    protected String doInBackground() throws Exception {
+    protected String doInBackground() {
         return MagicStats.getPlayedWonLost(deckCopy);
     }
 

@@ -193,7 +193,7 @@ public class FiremindWorkerPanel extends JPanel {
 
     private static class FiremindWorkerRunner extends SwingWorker<String, Void> {
         @Override
-        protected String doInBackground() throws Exception {
+        protected String doInBackground() {
             // restarts after 25 games
             while(true){
                 String[] arguments = new String[]{""};

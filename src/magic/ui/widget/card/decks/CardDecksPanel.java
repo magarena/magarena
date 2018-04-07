@@ -125,7 +125,7 @@ public class CardDecksPanel extends JPanel {
         worker = new SwingWorker<File[], Void>() {
 
             @Override
-            protected File[] doInBackground() throws Exception {
+            protected File[] doInBackground() {
                 final List<File> deckFiles = getDecksContainingCard(card);
                 sortDecksByFilename(deckFiles);
                 return deckFiles.toArray(new File[0]);
