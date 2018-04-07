@@ -50,9 +50,7 @@ public class ArtificialScore {
         if (this==INVALID_SCORE) {
             return "none";
         }
-        final StringBuilder buffer=new StringBuilder();
-        buffer.append(score).append(" at ").append(depth);
-        return buffer.toString();
+        return String.valueOf(score) + " at " + depth;
     }
 
     @Override

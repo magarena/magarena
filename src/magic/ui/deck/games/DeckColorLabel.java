@@ -25,14 +25,14 @@ class DeckColorLabel extends JLabel {
      */
     public static String getDeckColorSymbols(final MagicDeck deck) {
         final CardStatistics statistics = new CardStatistics(deck);
-        String deckColor = "";
+        StringBuilder deckColor = new StringBuilder();
         for (int i = 0; i < statistics.colorCount.length; i++) {
             if (statistics.colorCount[i] > 0) {
                 final MagicColor color = MagicColor.values()[i];
-                deckColor += color.getSymbol();
+                deckColor.append(color.getSymbol());
             }
         }
-        return deckColor;
+        return deckColor.toString();
     }
 
     // CTR

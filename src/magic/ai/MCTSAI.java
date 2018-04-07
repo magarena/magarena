@@ -296,14 +296,13 @@ public class MCTSAI extends MagicAI {
         final StringBuilder out = new StringBuilder();
         final long duration = System.currentTimeMillis() - START_TIME;
 
-        out.append("MCTS" +
-                   " cheat=" + CHEAT +
-                   " index=" + scorePlayer.getIndex() +
-                   " life=" + scorePlayer.getLife() +
-                   " turn=" + scorePlayer.getGame().getTurn() +
-                   " phase=" + scorePlayer.getGame().getPhase().getType() +
-                   " sims=" + sims +
-                   " time=" + duration);
+        out.append("MCTS cheat=").append(CHEAT)
+                .append(" index=").append(scorePlayer.getIndex())
+                .append(" life=").append(scorePlayer.getLife())
+                .append(" turn=").append(scorePlayer.getGame().getTurn())
+                .append(" phase=").append(scorePlayer.getGame().getPhase().getType())
+                .append(" sims=").append(sims)
+                .append(" time=").append(duration);
         out.append('\n');
 
         for (final MCTSGameTree node : root) {

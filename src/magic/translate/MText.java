@@ -255,10 +255,7 @@ public final class MText {
     }
 
     private static String getHeaderLineData() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(HEADER_CHAR).append(MagicSystem.VERSION);
-        sb.append(HEADER_CHAR).append(useCustomFonts ? 1 : 0);
-        return sb.toString();
+        return HEADER_CHAR + MagicSystem.VERSION + HEADER_CHAR + (useCustomFonts ? 1 : 0);
     }
 
     public static void createTranslationFile(File txtFile, Map<Long, String> stringsMap) throws FileNotFoundException, UnsupportedEncodingException {

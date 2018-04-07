@@ -127,17 +127,15 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
 
     public void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
         final StringBuilder sb = new StringBuilder();
-        sb.append("CRASH REPORT FOR MAGARENA THREAD " + th);
+        sb.append("CRASH REPORT FOR MAGARENA THREAD ").append(th);
         sb.append('\n');
-        sb.append("CREATED ON "
-                + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss"))
-                        .format(new Date()));
+        sb.append("CREATED ON ").append((new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
         sb.append('\n');
         sb.append("MAGARENA VERSION " + MagicSystem.VERSION);
-        sb.append(", JRE " + System.getProperty("java.version"));
-        sb.append(", OS " + System.getProperty("os.name"));
-        sb.append("_" + System.getProperty("os.version"));
-        sb.append(" " + System.getProperty("os.arch"));
+        sb.append(", JRE ").append(System.getProperty("java.version"));
+        sb.append(", OS ").append(System.getProperty("os.name"));
+        sb.append("_").append(System.getProperty("os.version"));
+        sb.append(" ").append(System.getProperty("os.arch"));
         sb.append("\n\n");
         try {
             // buildReport might throw an exception
@@ -146,8 +144,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
                 sb.append('\n');
             }
         } catch (final Throwable ex2) {
-            sb.append("Exception from MagicGameReport.buildReport: "
-                    + ex2.getMessage());
+            sb.append("Exception from MagicGameReport.buildReport: ").append(ex2.getMessage());
             sb.append('\n');
             final StringWriter result = new StringWriter();
             final PrintWriter printWriter = new PrintWriter(result);
@@ -155,7 +152,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
             sb.append(result.toString());
             sb.append('\n');
         }
-        sb.append("Exception from controller.runGame: " + ex.getMessage());
+        sb.append("Exception from controller.runGame: ").append(ex.getMessage());
         sb.append('\n');
         final StringWriter result = new StringWriter();
         final PrintWriter printWriter = new PrintWriter(result);
