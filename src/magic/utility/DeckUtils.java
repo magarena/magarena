@@ -354,9 +354,7 @@ public class DeckUtils {
 
     public static Set<MagicCardDefinition> getDistinctCards(final MagicDeck aDeck) {
         final Set<MagicCardDefinition> distinctCards = new HashSet<>();
-        for (final MagicCardDefinition card : aDeck) {
-            distinctCards.add(card);
-        }
+        distinctCards.addAll(aDeck);
         return distinctCards;
     }
 

@@ -66,9 +66,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
 
         if (DeckGenerators.getInstance().getNrGenerators() > 0) {
             items.add(SEPARATOR);
-            for (final String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
-                items.add(generatorName);
-            }
+            items.addAll(DeckGenerators.getInstance().getGeneratorNames());
         }
 
         setModel(new DefaultComboBoxModel<>(items));

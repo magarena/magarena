@@ -195,9 +195,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         final List<MagicCardDefinition> cardPoolCards = cardPoolTable.getSelectedCards();
 
         if (cardPoolCards.size() > 0) {
-            for (final MagicCardDefinition card : cardPoolCards) {
-                this.deck.add(card);
-            }
+            this.deck.addAll(cardPoolCards);
             updateDeck();
 
         } else {
@@ -250,9 +248,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
                 } else if (e.getButton() == MouseEvent.BUTTON3) {
                     final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
                     if (deckCards.size() > 0) {
-                        for (final MagicCardDefinition card : deckCards) {
-                            deck.add(card);
-                        }
+                        deck.addAll(deckCards);
                         updateDeck();
                     }
                 }
