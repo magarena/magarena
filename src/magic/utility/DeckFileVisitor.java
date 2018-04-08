@@ -26,7 +26,7 @@ class DeckFileVisitor extends SimpleFileVisitor<Path> {
     }
 
     @Override
-    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
         if (matcher.matches(file) && attrs.isRegularFile()) {
             files.add(file.toFile());
         }

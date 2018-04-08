@@ -223,18 +223,17 @@ public class GeneralConfig {
     public void setProxy(final Proxy proxy) {
         final String DELIM = "|";
         if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
-            final StringBuilder sb = new StringBuilder();
-            sb.append(proxy.type().toString()).append(DELIM);
-            sb.append(Integer.toString(((InetSocketAddress)proxy.address()).getPort())).append(DELIM);
-            sb.append(proxy.address().toString());
-            setProperty(PROXY_SETTINGS, sb.toString());
+            String sb = proxy.type().toString() + DELIM
+                    + Integer.toString(((InetSocketAddress) proxy.address()).getPort()) + DELIM
+                    + proxy.address().toString();
+            setProperty(PROXY_SETTINGS, sb);
         } else {
             setProperty(PROXY_SETTINGS, "");
         }
     }
 
     public boolean isCustomCardImagesPath() {
-        return getProperty(CARD_IMAGES_PATH, "").isEmpty() == false;
+        return !getProperty(CARD_IMAGES_PATH, "").isEmpty();
     }
 
     public Path getCardImagesPath() {

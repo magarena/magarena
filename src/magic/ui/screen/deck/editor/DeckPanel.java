@@ -1,8 +1,6 @@
 package magic.ui.screen.deck.editor;
 
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
@@ -82,28 +80,13 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     private void setDeckTablePropChangeListeners() {
         deckTablePanel.addPropertyChangeListener(
                 DeckTablePanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_CARD_SELECTED, false, true);
-                    }
-                });
+                evt -> firePropertyChange(CP_CARD_SELECTED, false, true));
         deckTablePanel.addPropertyChangeListener(
                 DeckTablePanel.CP_CARD_LCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        addSelectedCardToDeck();
-                    }
-                });
+                evt -> addSelectedCardToDeck());
         deckTablePanel.addPropertyChangeListener(
                 DeckTablePanel.CP_CARD_RCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        removeSelectedCardFromDeck(true);
-                    }
-                });
+                evt -> removeSelectedCardFromDeck(true));
     }
 
     private void setLookAndFeel() {

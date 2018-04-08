@@ -20,7 +20,6 @@ import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
 import magic.model.MagicObject;
 import magic.model.event.MagicManaActivation;
 import magic.ui.FontsAndBorders;

@@ -1,7 +1,5 @@
 package magic.ui.screen.deck.editor;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.JPanel;
@@ -49,28 +47,13 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     private void setPropertyChangeListeners() {
 
         cardPoolTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_SELECTED,
-            new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    firePropertyChange(CP_CARD_SELECTED, false, true);
-                }
-            });
+                evt -> firePropertyChange(CP_CARD_SELECTED, false, true));
 
         cardPoolTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_LCLICKED,
-            new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    firePropertyChange(CP_CARD_LCLICKED, false, true);
-                }
-            });
+                evt -> firePropertyChange(CP_CARD_LCLICKED, false, true));
 
         cardPoolTable.addPropertyChangeListener(CardTablePanelA.CP_CARD_RCLICKED,
-            new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    firePropertyChange(CP_CARD_RCLICKED, false, true);
-                }
-            });
+                evt -> firePropertyChange(CP_CARD_RCLICKED, false, true));
 
     }
 

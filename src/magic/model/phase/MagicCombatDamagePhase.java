@@ -2,8 +2,6 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPermanent;
-import magic.model.MagicAbility;
 import magic.model.action.CombatDamageAction;
 import magic.ui.MagicSound;
 
@@ -65,12 +63,12 @@ public class MagicCombatDamagePhase extends MagicPhase {
         }
 
         //End combat damage steps
-        if (isFirst == false || act.dealtDamage()) {
+        if (!isFirst || act.dealtDamage()) {
             game.setStep(MagicStep.ActivePlayer);
         } else {
             game.setStep(MagicStep.NextPhase);
         }
-        if (isFirst == false) {
+        if (!isFirst) {
             game.playSound(MagicSound.COMBAT);
         }
     }

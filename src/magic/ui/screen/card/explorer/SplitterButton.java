@@ -95,7 +95,7 @@ public class SplitterButton extends JButton {
         p.addPoint(x + (TRIANGLE_WIDTH / 2), y);
         p.addPoint(x + TRIANGLE_WIDTH, getHeight() - y - 1);
         return p;
-    };
+    }
 
     private Polygon getDownTriangle(final int x) {
         final int y = (getHeight() - TRIANGLE_HEIGHT) / 2;
@@ -104,6 +104,6 @@ public class SplitterButton extends JButton {
         p.addPoint(x + (TRIANGLE_WIDTH / 2), getHeight() - y);
         p.addPoint(x + TRIANGLE_WIDTH, y + 1);
         return p;
-    };
+    }
 
 }

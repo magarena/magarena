@@ -165,9 +165,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     @Override
     public void newCardSelected(final MagicCardDefinition card) {
-        SwingUtilities.invokeLater(() -> {
-            setCard(card);
-        });
+        SwingUtilities.invokeLater(() -> setCard(card));
     }
 
     void setImage(final Image aImage) {
@@ -229,9 +227,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     private Timer getCooldownTimer() {
-        Timer t = new Timer(150, (e) -> {
-            setCard(cardPending);
-        });
+        Timer t = new Timer(150, (e) -> setCard(cardPending));
         t.setRepeats(false);
         return t;
     }

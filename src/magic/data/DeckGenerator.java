@@ -57,14 +57,15 @@ public class DeckGenerator {
     }
 
     private String getColorText() {
-        if (maxColors == 1) {
-            return MagicDeckProfile.ANY_ONE;
-        } else if (maxColors == 2) {
-            return MagicDeckProfile.ANY_TWO;
-        } else if (maxColors == 3) {
-            return MagicDeckProfile.ANY_THREE;
-        } else {
-            throw new IndexOutOfBoundsException("maxColors = " + maxColors);
+        switch (maxColors) {
+            case 1:
+                return MagicDeckProfile.ANY_ONE;
+            case 2:
+                return MagicDeckProfile.ANY_TWO;
+            case 3:
+                return MagicDeckProfile.ANY_THREE;
+            default:
+                throw new IndexOutOfBoundsException("maxColors = " + maxColors);
         }
     }
 

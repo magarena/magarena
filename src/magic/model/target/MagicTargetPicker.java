@@ -38,7 +38,7 @@ public abstract class MagicTargetPicker<T> {
     }
 
     private static final Map<String, MagicTargetPicker<MagicPermanent>> factory =
-        new HashMap<String, MagicTargetPicker<MagicPermanent>>();
+            new HashMap<>();
 
     static {
         register("pump", MagicPumpTargetPicker.create());

@@ -10,7 +10,6 @@ import magic.model.MagicPlayerState;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
-import java.util.LinkedList;
 
 public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 
@@ -58,7 +57,7 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 
         // Check able to pay costs
         for (final MagicEvent event : getCostEvent(source)) {
-            if (event.isSatisfied() == false) {
+            if (!event.isSatisfied()) {
                 return false;
             }
         }

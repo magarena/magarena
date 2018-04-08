@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -212,12 +211,9 @@ public final class MagicFileSystem {
     }
 
     public static File[] getSortedScriptFiles(final File scriptsDirectory) {
-        final File[] files = scriptsDirectory.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.toLowerCase(Locale.ENGLISH).endsWith(".txt");
-            }
-        });
+        final File[] files = scriptsDirectory.listFiles(
+                (dir, name) -> name.toLowerCase(Locale.ENGLISH).endsWith(".txt")
+        );
         Arrays.sort(files);
         return files;
     }

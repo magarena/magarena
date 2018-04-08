@@ -1,8 +1,6 @@
 package magic.ui.widget.duel.sidebar;
 
 import java.awt.Component;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
@@ -90,19 +88,13 @@ class LogViewer extends TexturedPanel {
             final JScrollBar vscroll = getVerticalScrollBar();
             vscroll.setUnitIncrement(INCREMENT);
             vscroll.setBlockIncrement(INCREMENT);
-            vscroll.addAdjustmentListener(new AdjustmentListener() {
-                @Override
-                public void adjustmentValueChanged(AdjustmentEvent e) {
-                    e.getAdjustable().setValue(e.getAdjustable().getMaximum());
-                }
-            });
+            vscroll.addAdjustmentListener(e -> e.getAdjustable().setValue(e.getAdjustable().getMaximum()));
 
             setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
             setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
 
             setBorder(BorderFactory.createEmptyBorder());
             getViewport().setOpaque(false);
-
         }
 
     }

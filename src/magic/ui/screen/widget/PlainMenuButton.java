@@ -92,7 +92,7 @@ public class PlainMenuButton extends MenuButton {
      * Creates an icon-only button with tooltip.<br>
      *
      * @param action click action
-     * @param icon
+     * @param image
      * @param title tooltip title text (<b>in English</b>).
      * @param description tooltip body text (<b>in English</b>).
      * @return
@@ -150,7 +150,7 @@ public class PlainMenuButton extends MenuButton {
      * Creates a text-only button.
      *
      * @param action click action.
-     * @param text button caption (<b>in English</b>).
+     * @param title button caption (<b>in English</b>).
      * @return
      */
     public static PlainMenuButton build(Runnable action, String title) {

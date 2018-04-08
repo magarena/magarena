@@ -17,4 +17,4 @@ public class MagicPermanentTargetFilter extends MagicPermanentFilterImpl {
         return target.isPermanent() &&
                target.getId() == id;
     }
-};
+}

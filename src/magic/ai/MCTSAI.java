@@ -29,7 +29,7 @@ Classical MCTS (UCT)
  - uniform random simulated playout
  - score = XX% (25000 matches against MMAB-1)
 
-Enchancements to basic UCT
+Enhancements to basic UCT
  - use ratio selection (v + 10)/(n + 10)
  - UCB1 with C = 1.0
  - UCB1 with C = 2.0
@@ -44,16 +44,16 @@ UCT algorithm from Kocsis and Sezepesvari 2006
 Consistency Modifications for Automatically Tuned Monte-Carlo Tree Search
   consistent -> child of root with greatest number of simulations is optimal
   frugal -> do not need to visit the whole tree
-  eps-greedy is not consisteny for fixed eps (with prob eps select randomly, else use score)
+  eps-greedy is not consistent for fixed eps (with prob eps select randomly, else use score)
   eps-greedy is consistent but not frugal if eps dynamically decreases to 0
   UCB1 is consistent but not frugal
   score = average is not consistent
   score = (total reward + K)/(total simulation + 2K) is consistent and frugal!
   using v_t threshold ensures consistency for case of reward in {0,1} using any score function
-    v(s) < v_t (0.3), randomy pick a child, else pick child that maximize score
+    v(s) < v_t (0.3), randomly pick a child, else pick child that maximize score
 
 Monte-Carlo Tree Search in Lines of Action
-  1-ply lookahread to detect direct win for player to move
+  1-ply lookahead to detect direct win for player to move
   secure child formula for decision v + A/sqrt(n)
   evaluation cut-off: use score function to stop simulation early
   use evaluation score to remove "bad" moves during simulation
@@ -94,7 +94,7 @@ public class MCTSAI extends MagicAI {
     private final boolean CHEAT;
 
     //cache nodes to reuse them in later decision
-    private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<Long, MCTSGameTree>(1000);
+    private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<>(1000);
 
     public MCTSAI(final boolean cheat) {
         CHEAT = cheat;
@@ -178,30 +178,24 @@ public class MCTSAI extends MagicAI {
     }
 
     private Runnable genSimulationTask(final MagicGame rootGame, final LinkedList<MCTSGameTree> path, final BlockingQueue<Runnable> queue) {
-        return new Runnable() {
-            @Override
-            public void run() {
-                // propagate result of random play up the path
-                final double score = randomPlay(path.getLast(), rootGame);
-                queue.offer(genBackpropagationTask(score, path));
-            }
+        return () -> {
+            // propagate result of random play up the path
+            final double score = randomPlay(path.getLast(), rootGame);
+            queue.offer(genBackpropagationTask(score, path));
         };
     }
 
     private Runnable genBackpropagationTask(final double score, final LinkedList<MCTSGameTree> path) {
-        return new Runnable() {
-            @Override
-            public void run() {
-                final Iterator<MCTSGameTree> iter = path.descendingIterator();
-                MCTSGameTree child = null;
-                MCTSGameTree parent = null;
-                while (iter.hasNext()) {
-                    child = parent;
-                    parent = iter.next();
+        return () -> {
+            final Iterator<MCTSGameTree> iter = path.descendingIterator();
+            MCTSGameTree child = null;
+            MCTSGameTree parent = null;
+            while (iter.hasNext()) {
+                child = parent;
+                parent = iter.next();
 
-                    parent.removeVirtualLoss();
-                    parent.updateScore(child, score);
-                }
+                parent.removeVirtualLoss();
+                parent.updateScore(child, score);
             }
         };
     }
@@ -217,7 +211,7 @@ public class MCTSAI extends MagicAI {
     ) {
 
         //prioritize backpropagation tasks
-        while (queue.isEmpty() == false) {
+        while (!queue.isEmpty()) {
             try {
                 queue.take().run();
             } catch (InterruptedException e) {
@@ -278,7 +272,7 @@ public class MCTSAI extends MagicAI {
         }
 
         // end simulations once root is AI win or time is up
-        if (running && root.isAIWin() == false) {
+        if (running && !root.isAIWin()) {
             try {
                 executor.execute(updateTask);
             } catch (RejectedExecutionException e) {
@@ -302,14 +296,13 @@ public class MCTSAI extends MagicAI {
         final StringBuilder out = new StringBuilder();
         final long duration = System.currentTimeMillis() - START_TIME;
 
-        out.append("MCTS" +
-                   " cheat=" + CHEAT +
-                   " index=" + scorePlayer.getIndex() +
-                   " life=" + scorePlayer.getLife() +
-                   " turn=" + scorePlayer.getGame().getTurn() +
-                   " phase=" + scorePlayer.getGame().getPhase().getType() +
-                   " sims=" + sims +
-                   " time=" + duration);
+        out.append("MCTS cheat=").append(CHEAT)
+                .append(" index=").append(scorePlayer.getIndex())
+                .append(" life=").append(scorePlayer.getLife())
+                .append(" turn=").append(scorePlayer.getGame().getTurn())
+                .append(" phase=").append(scorePlayer.getGame().getPhase().getType())
+                .append(" sims=").append(sims)
+                .append(" time=").append(duration);
         out.append('\n');
 
         for (final MCTSGameTree node : root) {
@@ -342,7 +335,7 @@ public class MCTSAI extends MagicAI {
     }
 
     private LinkedList<MCTSGameTree> growTree(final MCTSGameTree root, final MagicGame game, final List<Object[]> RCHOICES) {
-        final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
+        final LinkedList<MCTSGameTree> path = new LinkedList<>();
         boolean found = false;
         MCTSGameTree curr = root;
         path.add(curr);
@@ -509,7 +502,7 @@ public class MCTSAI extends MagicAI {
             List<Object[]> choices = null;
             if (game.getNumActions() == 0) {
                 //map the RCHOICES to the current game instead of recomputing the choices
-                choices = new ArrayList<Object[]>(RCHOICES.size());
+                choices = new ArrayList<>(RCHOICES.size());
                 for (final Object[] choice : RCHOICES) {
                     choices.add(game.map(choice));
                 }
@@ -566,7 +559,7 @@ public class MCTSAI extends MagicAI {
 class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     private final MCTSGameTree parent;
-    private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
+    private final LinkedList<MCTSGameTree> children = new LinkedList<>();
     private final int choice;
     private boolean isAI;
     private boolean isCached;

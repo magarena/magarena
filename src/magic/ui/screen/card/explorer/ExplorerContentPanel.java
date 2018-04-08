@@ -94,12 +94,7 @@ public class ExplorerContentPanel extends JPanel
 
     @Override
     public void newCardSelected(final MagicCardDefinition card) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                sideBarPanel.setCard(card);
-            }
-        });
+        SwingUtilities.invokeLater(() -> sideBarPanel.setCard(card));
     }
 
     public MagicCardDefinition getSelectedCard() {

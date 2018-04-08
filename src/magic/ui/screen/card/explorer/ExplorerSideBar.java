@@ -3,8 +3,6 @@ package magic.ui.screen.card.explorer;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import magic.model.MagicCardDefinition;
@@ -46,13 +44,10 @@ public class ExplorerSideBar extends TexturedPanel {
 
         decksPanel.setOpaque(false);
         decksPanel.addPropertyChangeListener(CardDecksPanel.CP_DECKS_UPDATED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        final int deckCount = (int) evt.getNewValue();
-                        decksButton.setText(MText.get(_S1, deckCount));
-                        decksButton.setForeground(deckCount > 0 ? Color.WHITE : Color.GRAY);
-                    }
+                evt -> {
+                    final int deckCount = (int) evt.getNewValue();
+                    decksButton.setText(MText.get(_S1, deckCount));
+                    decksButton.setForeground(deckCount > 0 ? Color.WHITE : Color.GRAY);
                 }
         );
 

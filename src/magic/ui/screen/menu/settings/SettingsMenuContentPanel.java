@@ -31,7 +31,7 @@ class SettingsMenuContentPanel extends NewMenuScreenContentPanel {
 
     SettingsMenuContentPanel() {
         addMenuItem(MText.get(_S2), this::showPreferencesDialog);
-        addMenuItem(MText.get(_S3), this::showDowloadImagesDialog);
+        addMenuItem(MText.get(_S3), this::showDownloadImagesDialog);
         addMenuItem(MText.get(_S4), this::showFiremindWorkerDialog);
         addMenuItem(MText.get(_S5), this::doToggleFullScreen);
         addMenuItem(MText.get(_S7), this::doResetRestart);
@@ -40,7 +40,7 @@ class SettingsMenuContentPanel extends NewMenuScreenContentPanel {
         refreshMenuLayout();
     }
 
-    private void showDowloadImagesDialog() {
+    private void showDownloadImagesDialog() {
         ScreenController.showDownloadImagesScreen();
     }
 

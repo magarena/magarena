@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.MagicCopyMap;
 import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicSacrificeTargetPicker;

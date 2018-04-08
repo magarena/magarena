@@ -8,7 +8,6 @@ import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
-import magic.model.MagicCardDefinition;
 import magic.model.action.ChangeCountersAction;
 import magic.model.action.ShiftCardAction;
 

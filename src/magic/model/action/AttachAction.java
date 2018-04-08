@@ -52,7 +52,7 @@ public class AttachAction extends MagicAction {
 
     @Override
     public boolean isLegal(final MagicGame game) {
-        if (attachable.isValid() == false) {
+        if (!attachable.isValid()) {
             return false;
         }
 
@@ -62,7 +62,7 @@ public class AttachAction extends MagicAction {
 
         if (attachable.isAura() && creature.isValid()) {
             final MagicTargetChoice tchoice = new MagicTargetChoice(attachable.getAuraTargetChoice(), false);
-            if (game.isLegalTarget(attachable.getController(),attachable,tchoice,creature) == false) {
+            if (!game.isLegalTarget(attachable.getController(), attachable, tchoice, creature)) {
                 return false;
             }
         }

@@ -107,14 +107,14 @@ public class MagicTargetFilterFactory {
     public static final MagicStackFilterImpl ACTIVATED_OR_TRIGGERED_ABILITY = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() == false;
+            return !item.isSpell();
         }
     };
 
     public static final MagicStackFilterImpl ACTIVATED_OR_TRIGGERED_ABILITY_OPP_CONTROL = new MagicStackFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack item) {
-            return item.isSpell() == false && source.isEnemy(item);
+            return !item.isSpell() && source.isEnemy(item);
         }
     };
 
@@ -528,7 +528,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return !target.isToken() && target.isCreature() && target.isFaceDown() == false;
+            return !target.isToken() && target.isCreature() && !target.isFaceDown();
         }
     };
 
@@ -827,7 +827,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_THAT_ISNT_ENCHANTED = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isCreature() && target.isEnchanted() == false;
+            return target.isCreature() && !target.isEnchanted();
         }
     };
 
@@ -1263,15 +1263,15 @@ public class MagicTargetFilterFactory {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                target.hasAbility(MagicAbility.Flying) == false &&
-                target.hasAbility(MagicAbility.Islandwalk) == false;
+                !target.hasAbility(MagicAbility.Flying) &&
+                !target.hasAbility(MagicAbility.Islandwalk);
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_PLANESWALKER = new MagicPermanentFilterImpl() {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return (target.isCreature() && target.hasAbility(MagicAbility.Flying) == false) || target.isPlaneswalker();
+            return (target.isCreature() && !target.hasAbility(MagicAbility.Flying)) || target.isPlaneswalker();
         }
     };
 
@@ -2171,7 +2171,7 @@ public class MagicTargetFilterFactory {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) &&
-                target.hasType(MagicType.Legendary) == false &&
+                !target.hasType(MagicType.Legendary) &&
                 target.hasColor(MagicColor.Green) &&
                 target.getConvertedCost() <= 3;
         }
@@ -2741,7 +2741,7 @@ public class MagicTargetFilterFactory {
         final boolean other = matcher.find();
         final String processed = matcher.replaceFirst("");
         final MagicTargetFilter<MagicPermanent> filter = (MagicPermanentFilterImpl)single(processed);
-        if (filter.acceptType(MagicTargetType.Permanent) == false) {
+        if (!filter.acceptType(MagicTargetType.Permanent)) {
             throw new ScriptParseException("unknown permanent filter \"" + text + "\"");
         }
         return other ? new MagicOtherPermanentTargetFilter(filter) : filter;
@@ -3027,7 +3027,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             @Override
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return target.isName(name) == false &&
+                return !target.isName(name) &&
                     control.matches(player, target);
             }
         };
@@ -3265,7 +3265,7 @@ public class MagicTargetFilterFactory {
             @Override
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                    (target.hasColor(color) == false) &&
+                    (!target.hasColor(color)) &&
                     control.matches(player,target);
             }
         };

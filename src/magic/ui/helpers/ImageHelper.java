@@ -41,7 +41,7 @@ final public class ImageHelper {
 
     private static final GrayScaleImageFilter GRAYSCALE_FILTER = new GrayScaleImageFilter();
 
-    private final static GraphicsConfiguration GC = (GraphicsEnvironment.isHeadless() == false) ?
+    private final static GraphicsConfiguration GC = (!GraphicsEnvironment.isHeadless()) ?
         GraphicsEnvironment
             .getLocalGraphicsEnvironment()
             .getDefaultScreenDevice()

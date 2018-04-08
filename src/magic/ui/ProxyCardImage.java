@@ -32,7 +32,7 @@ public abstract class ProxyCardImage {
         }
     }
 
-    public static boolean tryDownloadingCroppedImage(CardImageFile imageFile) throws MalformedURLException, DownloadException {
+    public static boolean tryDownloadingCroppedImage(CardImageFile imageFile) throws MalformedURLException {
         MagicCardDefinition card = imageFile.getCard();
         if (card.getImageURL().contains("magiccards.info/scans/")) {
             URL remote = new URL(card.getImageURL().replace("/scans/", "/crop/"));

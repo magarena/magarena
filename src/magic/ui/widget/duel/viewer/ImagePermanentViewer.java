@@ -14,8 +14,6 @@ import java.awt.Stroke;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -83,16 +81,13 @@ public class ImagePermanentViewer extends JPanel {
     }
 
     private void setMouseWheelListener() {
-        addMouseWheelListener(new MouseWheelListener() {
-            @Override
-            public void mouseWheelMoved(MouseWheelEvent event) {
-                final int cardIndex = getPermanentInfoIndexAt(event.getX(), event.getY());
-                if (cardIndex >= 0) {
-                    if (event.getWheelRotation() < 0) { // rotate mousewheel forward
-                        showCardPopup(cardIndex);
-                    } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
-                        viewer.getController().hideInfo();
-                    }
+        addMouseWheelListener(event -> {
+            final int cardIndex = getPermanentInfoIndexAt(event.getX(), event.getY());
+            if (cardIndex >= 0) {
+                if (event.getWheelRotation() < 0) { // rotate mousewheel forward
+                    showCardPopup(cardIndex);
+                } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
+                    viewer.getController().hideInfo();
                 }
             }
         });
@@ -210,7 +205,7 @@ public class ImagePermanentViewer extends JPanel {
     @Override
     public void setSize(final int width,final int height) {
         super.setSize(width,height);
-        linkedScreenRectangles=new ArrayList<Rectangle>();
+        linkedScreenRectangles= new ArrayList<>();
         for (final Rectangle logicalRect : linkedLogicalRectangles) {
             final Rectangle screenRect=new Rectangle();
             screenRect.x=(logicalRect.x*width)/logicalSize.width;

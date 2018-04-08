@@ -51,7 +51,7 @@ public class MagicDeclareAttackersResultBuilder {
         }
 
         // Build results.
-        final Collection<Object> results=new ArrayList<Object>();
+        final Collection<Object> results= new ArrayList<>();
 
         // Get the best remaining optional attackers.
         while (size>maxAttackers) {

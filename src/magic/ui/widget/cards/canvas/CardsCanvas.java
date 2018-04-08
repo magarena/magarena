@@ -22,7 +22,6 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import javax.swing.JPanel;
 import magic.model.IRenderableCard;
-import magic.model.MagicCardDefinition;
 import magic.ui.dialog.prefs.ImageSizePresets;
 import magic.ui.helpers.ImageHelper;
 import magic.ui.helpers.MouseHelper;
@@ -39,7 +38,7 @@ public class CardsCanvas extends JPanel {
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 20);
 
     private int dealCardDelay = 80; // milliseconds
-    private int removeCardDelay = 50; // millseconds
+    private int removeCardDelay = 50; // milliseconds
 
     private final List<CardCanvas> cards = new CopyOnWriteArrayList<>();
     private final HashMap<Integer, Integer> cardTypeCount = new HashMap<>();
@@ -90,11 +89,7 @@ public class CardsCanvas extends JPanel {
                     MouseHelper.showBusyCursor();
                     int cardIndex = getCardIndexAt(e.getPoint());
                     if (cardIndex >= 0 && !(listener instanceof NullCardsCanvasListener)) {
-                        listener.cardClicked(
-                            cardIndex,
-                            cardIndex >= 0
-                                ? cards.get(cardIndex).getCardDefinition()
-                                : MagicCardDefinition.UNKNOWN);
+                        listener.cardClicked(cardIndex, cards.get(cardIndex).getCardDefinition());
                     }
                     MouseHelper.showDefaultCursor();
                 }
@@ -232,7 +227,7 @@ public class CardsCanvas extends JPanel {
         this.preferredCardSize = aSize;
         refreshLayout = true;
         currentCardIndex = -1;
-        if (useAnimation && newCards != null) {
+        if (useAnimation) {
             executor.execute(getDealCardsRunnable(canvasCards));
         } else {
             createListOfCardCanvasObjects(canvasCards);
@@ -422,10 +417,9 @@ public class CardsCanvas extends JPanel {
         final int yStart = (containerHeight - rect.height) / 2;
         int row = 0;
         int col = 0;
-        for (int cardIndex = 0; cardIndex < totalCards; cardIndex++) {
-            final CardCanvas card = cards.get(cardIndex);
+        for (final CardCanvas card : cards) {
             int xPoint = xStart + (col * cardWidth);
-            int yPoint = yStart + (row * (cardHeight-1));
+            int yPoint = yStart + (row * (cardHeight - 1));
             card.setPosition(new Point(xPoint, yPoint));
             card.setSize(cardWidth, cardHeight);
             col++;

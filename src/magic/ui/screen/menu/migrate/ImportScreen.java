@@ -185,12 +185,9 @@ public class ImportScreen extends MScreen {
                 } else if (evt.getPropertyName().equalsIgnoreCase("state")) {
                     if (evt.getNewValue().toString().equalsIgnoreCase("done")) {
                         setVisible(false);
-                        SwingUtilities.invokeLater(new Runnable() {
-                            @Override
-                            public void run() {
-                                ThemeFactory.getInstance().loadThemes();
-                                ScreenController.showMainMenuScreen();
-                            }
+                        SwingUtilities.invokeLater(() -> {
+                            ThemeFactory.getInstance().loadThemes();
+                            ScreenController.showMainMenuScreen();
                         });
                     }
 

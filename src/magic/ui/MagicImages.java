@@ -227,7 +227,7 @@ public final class MagicImages {
     }
 
     public static PlayerAvatar getPlayerAvatar(PlayerProfile profile) {
-        if (GraphicsEnvironment.isHeadless() == false) {
+        if (!GraphicsEnvironment.isHeadless()) {
             String key = profile.getId();
             if (!avatarsMap.containsKey(key)) {
                 avatarsMap.put(key, new PlayerAvatar(getAvatarImage(profile)));

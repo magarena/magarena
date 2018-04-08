@@ -199,7 +199,7 @@ public class CardStatistics {
         }
     }
 
-    void printStatictics(final PrintStream stream) {
+    void printStatistics(final PrintStream stream) {
 
         stream.print("Cards : "+totalCards);
         for (int index=0;index<NR_OF_TYPES;index++) {

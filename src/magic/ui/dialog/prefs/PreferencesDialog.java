@@ -83,12 +83,7 @@ public class PreferencesDialog
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
-    private final ActionListener actionListener = new ActionListener() {
-        @Override
-        public void actionPerformed(final ActionEvent actionEvent) {
-            dispose();
-        }
-    };
+    private final ActionListener actionListener = actionEvent -> dispose();
 
     private final MagicFrame frame;
     private final JComboBox<Proxy.Type> proxyComboBox = new JComboBox<>();
@@ -305,7 +300,7 @@ public class PreferencesDialog
         config.setShowMulliganScreen(mulliganScreenCheckbox.isSelected());
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
 
-        if (isGamePlayMode == false) {
+        if (!isGamePlayMode) {
             generalPanel.saveSettings();
             // Network
             config.setProxy(getNewProxy());
@@ -345,13 +340,10 @@ public class PreferencesDialog
             ScreenController.showWarningMessage(String.format("%s\n%s\n\n%s",
                     MText.get(_S80), MText.get(_S81), ex)
             );
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    config.setTranslation(GeneralConfig.DEFAULT_TRANSLATION);
-                    config.save();
-                    generalPanel.refreshLanguageCombo();
-                }
+            SwingUtilities.invokeLater(() -> {
+                config.setTranslation(GeneralConfig.DEFAULT_TRANSLATION);
+                config.save();
+                generalPanel.refreshLanguageCombo();
             });
             return false;
 
@@ -377,7 +369,7 @@ public class PreferencesDialog
     }
 
     private boolean validateSettings() {
-        if (isGamePlayMode == false) {
+        if (!isGamePlayMode) {
             if (isProxyUpdated && !isProxyValid()) {
                 ScreenController.showWarningMessage(MText.get(_S37));
                 return false;

@@ -35,12 +35,9 @@ final public class MagicSystem {
 
     // Load card definitions in the background so that it does not delay the
     // loading of the UI. Override done() to ensure exceptions not suppressed.
-    public static final FutureTask<Void> loadPlayable = new FutureTask<Void>(new Runnable() {
-        @Override
-        public void run() {
-            initializeEngine(reporter);
-        }
-    }, null) {
+    public static final FutureTask<Void> loadPlayable = new FutureTask<Void>(
+            () -> initializeEngine(reporter), null
+    ) {
         @Override
         protected void done() {
             try {
@@ -56,12 +53,9 @@ final public class MagicSystem {
         }
     };
 
-    public static final FutureTask<Void> loadMissing = new FutureTask<Void>(new Runnable() {
-        @Override
-        public void run() {
-            CardDefinitions.loadMissingCards();
-        }
-    }, null) {
+    public static final FutureTask<Void> loadMissing = new FutureTask<Void>(
+            () -> CardDefinitions.loadMissingCards(), null
+    ) {
         @Override
         protected void done() {
             try {
@@ -141,12 +135,11 @@ final public class MagicSystem {
      */
     public static String getRuntimeParameters() {
         RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
-        List<String> aList = bean.getInputArguments();
-        String params = "";
-        for (int i = 0; i < aList.size(); i++) {
-            params += aList.get(i) + "\n";
+        StringBuilder params = new StringBuilder();
+        for (String param : bean.getInputArguments()) {
+            params.append(param).append("\n");
         }
-        return params;
+        return params.toString();
     }
 
     public static String getLoadingProgress() {
@@ -156,24 +149,22 @@ final public class MagicSystem {
     public static void waitForMissingCards() {
         if (loadMissing.isDone()) {
             return;
-        } else {
-            try {
-                loadMissing.get();
-            } catch (final InterruptedException|ExecutionException ex) {
-                throw new RuntimeException(ex);
-            }
+        }
+        try {
+            loadMissing.get();
+        } catch (final InterruptedException|ExecutionException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
     public static void waitForPlayableCards() {
         if (loadPlayable.isDone()) {
             return;
-        } else {
-            try {
-                loadPlayable.get();
-            } catch (final InterruptedException|ExecutionException ex) {
-                throw new RuntimeException(ex);
-            }
+        }
+        try {
+            loadPlayable.get();
+        } catch (final InterruptedException|ExecutionException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
@@ -189,7 +180,7 @@ final public class MagicSystem {
 
     public static void initialize(final ProgressReporter reporter) {
 
-        // must load config here otherwise annotated card image theme-specifc
+        // must load config here otherwise annotated card image theme-specific
         // icons are not loaded before the AbilityIcon class is initialized
         // and you end up with the default icons instead.
         GeneralConfig.getInstance().load();
@@ -213,7 +204,7 @@ final public class MagicSystem {
         // Queue up tasks to run synchronously on a single background thread.
         final ExecutorService background = Executors.newSingleThreadExecutor();
         background.execute(loadPlayable);
-        background.execute(() -> { CardDefinitions.postCardDefinitions(); });
+        background.execute(() -> CardDefinitions.postCardDefinitions());
         background.execute(loadMissing);
         background.shutdown();
 
@@ -254,7 +245,7 @@ final public class MagicSystem {
      * <p>
      * Should also work when JAR is not available (eg. when running from IDE).
      */
-    public static void restart() throws URISyntaxException, IOException {
+    public static void restart() throws URISyntaxException {
 
         final List<String> command = new ArrayList<>();
 
@@ -286,24 +277,21 @@ final public class MagicSystem {
 
         // execute the command in a shutdown hook, to be sure that all the
         // resources have been disposed before restarting the application
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            @Override
-            public void run() {
-                try {
-                    final ProcessBuilder builder = new ProcessBuilder(command);
-                    builder.start();
-                } catch (final IOException ex) {
-                    System.err.println(ex);
-                }
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            try {
+                final ProcessBuilder builder = new ProcessBuilder(command);
+                builder.start();
+            } catch (final IOException ex) {
+                System.err.println(ex);
             }
-        });
+        }));
 
         System.exit(0);
 
     }
 
     public static boolean isNewInstall() {
-        return Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME)) == false;
+        return !Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME));
     }
 
     public static boolean isNotNormalGame() {

@@ -27,7 +27,7 @@ public class StartScreen extends MScreen {
     public StartScreen() {
         // use of runnable fixes #731 (https://github.com/magarena/magarena/issues/731)
         SwingUtilities.invokeLater(() -> {
-            if (MagicSystem.isNewInstall() == false) {
+            if (!MagicSystem.isNewInstall()) {
                 showMainMenuScreen();
             } else {
                 setMainContent(new ScreenContent());
@@ -46,12 +46,7 @@ public class StartScreen extends MScreen {
 
             translations = MagicFileSystem.getTranslationFilenames();
             if (translations.isEmpty()) {
-                SwingUtilities.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        ScreenController.showImportScreen();
-                    }
-                });
+                SwingUtilities.invokeLater(() -> ScreenController.showImportScreen());
             } else {
                 showLanguageMenu();
             }
@@ -111,12 +106,7 @@ public class StartScreen extends MScreen {
     }
 
     private void showMainMenuScreen() {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                ScreenController.showMainMenuScreen();
-            }
-        });
+        SwingUtilities.invokeLater(() -> ScreenController.showMainMenuScreen());
     }
 
 }

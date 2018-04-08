@@ -27,7 +27,7 @@ public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPl
     @Override
     public List<MagicPlayer> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
-        final List<MagicPlayer> targets=new ArrayList<MagicPlayer>();
+        final List<MagicPlayer> targets= new ArrayList<>();
 
         // Players
         if (acceptType(MagicTargetType.Player)) {

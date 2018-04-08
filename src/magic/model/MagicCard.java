@@ -101,7 +101,7 @@ public class MagicCard
     private MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
         aCardDefinition.loadAbilities();
         cardDefinition = aCardDefinition;
-        counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
+        counters = new EnumMap<>(MagicCounterType.class);
         owner = aOwner;
         id = aId;
         token = aToken;
@@ -111,7 +111,7 @@ public class MagicCard
         copyMap.put(sourceCard, this);
 
         cardDefinition = sourceCard.cardDefinition;
-        counters = new EnumMap<MagicCounterType,Integer>(sourceCard.counters);
+        counters = new EnumMap<>(sourceCard.counters);
         owner = copyMap.copy(sourceCard.owner);
         id = sourceCard.id;
         token = sourceCard.token;

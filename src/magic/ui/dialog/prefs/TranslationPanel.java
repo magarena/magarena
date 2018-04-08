@@ -5,7 +5,6 @@ import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -143,12 +142,9 @@ class TranslationPanel extends JPanel {
     private void setupComboBox() {
         languageCombo.setRenderer(getLanguageComboRenderer());
         refreshLanguageCombo();
-        languageCombo.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                if (e.getStateChange() == ItemEvent.SELECTED) {
-                    setStateOfActionButtons();
-                }
+        languageCombo.addItemListener(e -> {
+            if (e.getStateChange() == ItemEvent.SELECTED) {
+                setStateOfActionButtons();
             }
         });
         languageCombo.setFocusable(false);
@@ -167,7 +163,7 @@ class TranslationPanel extends JPanel {
         final File langFile = MagicFileSystem.getDataPath(
                 MagicFileSystem.DataPath.TRANSLATIONS).resolve(lang + ".txt").toFile();
 
-        if (langFile.exists() == false) {
+        if (!langFile.exists()) {
             throw new FileNotFoundException(langFile.getAbsolutePath());
         }
 
@@ -261,7 +257,7 @@ class TranslationPanel extends JPanel {
             final String text = JOptionPane.showInputDialog(null, MText.get(_S5), MText.get(_S6), JOptionPane.QUESTION_MESSAGE);
             if (text != null) {
                 final String language = text.trim();
-                if (language.isEmpty() == false && language.equalsIgnoreCase("English") == false) {
+                if (!language.isEmpty() && !language.equalsIgnoreCase("English")) {
                     File langFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS).resolve(language + ".txt").toFile();
                     if (langFile.exists()) {
                         ScreenController.showWarningMessage(MText.get(_S7));
@@ -269,12 +265,9 @@ class TranslationPanel extends JPanel {
                     }
                     MText.createTranslationFIle(langFile);
                     DesktopHelper.openFileInDefaultOsEditor(langFile);
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            refreshLanguageCombo();
-                            languageCombo.setSelectedItem(language);
-                        }
+                    SwingUtilities.invokeLater(() -> {
+                        refreshLanguageCombo();
+                        languageCombo.setSelectedItem(language);
                     });
                 } else {
                     ScreenController.showWarningMessage(MText.get(_S8));

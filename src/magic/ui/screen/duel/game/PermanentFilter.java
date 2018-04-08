@@ -9,23 +9,18 @@ import magic.ui.duel.viewerinfo.PlayerViewerInfo;
 
 public class PermanentFilter {
 
-    private static final Comparator<PermanentViewerInfo> PERMANENT_COMPARATOR=new Comparator<PermanentViewerInfo>() {
-
-        @Override
-        public int compare(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
-
-            final int positionDif=permanentInfo1.position-permanentInfo2.position;
-            if (positionDif!=0) {
-                return positionDif;
-            }
-
-            final int nameDif=permanentInfo1.name.compareTo(permanentInfo2.name);
-            if (nameDif!=0) {
-                return nameDif;
-            }
-
-            return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
+    private static final Comparator<PermanentViewerInfo> PERMANENT_COMPARATOR= (permanentInfo1, permanentInfo2) -> {
+        final int positionDif = permanentInfo1.position - permanentInfo2.position;
+        if (positionDif != 0) {
+            return positionDif;
         }
+
+        final int nameDif = permanentInfo1.name.compareTo(permanentInfo2.name);
+        if (nameDif != 0) {
+            return nameDif;
+        }
+
+        return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
     };
 
     private boolean accept(final PermanentViewerInfo permanentInfo) {

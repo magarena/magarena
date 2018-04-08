@@ -50,7 +50,7 @@ public class DealDamageAction extends MagicAction {
         */
 
         // in immediate mode, always deal damage to player
-        if (game.isImmediate() == false &&
+        if (!game.isImmediate() &&
             target == null &&
             damage.getTarget().isPlayer() &&
             damage.getSource().getController() != damage.getTarget() &&

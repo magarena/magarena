@@ -2,7 +2,6 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicTrigger;
 
 public class AddTurnTriggerAction extends MagicAction {

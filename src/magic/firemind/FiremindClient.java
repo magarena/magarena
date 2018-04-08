@@ -12,7 +12,6 @@ import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.nio.charset.Charset;
@@ -56,7 +55,7 @@ public class FiremindClient {
             d.ai2 = obj.getString("ai2");
 
             JSONArray scripts = obj.getJSONArray("card_scripts");
-            addedScripts = new ArrayList<String>();
+            addedScripts = new ArrayList<>();
             if(scripts != null){
                 for (int i = 0; i < scripts.length(); i++) {
                     JSONObject script = scripts.getJSONObject(i);
@@ -108,9 +107,7 @@ public class FiremindClient {
             writer.println(content);
             writer.close();
             System.out.println(f.getAbsolutePath());
-        }catch (FileNotFoundException e){
-            System.err.println("Couldn't save script file");
-        }catch (UnsupportedEncodingException e){
+        }catch (FileNotFoundException | UnsupportedEncodingException e){
             System.err.println("Couldn't save script file");
         }
     }
@@ -172,9 +169,6 @@ public class FiremindClient {
             } else {
                 System.err.println(con.getResponseMessage());
             }
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -210,9 +204,6 @@ public class FiremindClient {
             } else {
                 System.err.println(con.getResponseMessage());
             }
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -241,9 +232,6 @@ public class FiremindClient {
             } else {
                 System.err.println(con.getResponseMessage());
             }
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -266,8 +254,7 @@ public class FiremindClient {
         BufferedReader rd = new BufferedReader(new InputStreamReader(
                 con.getInputStream(), Charset.forName("UTF-8")));
         String jsonText = readAll(rd);
-        JSONObject json = new JSONObject(jsonText);
-        return json;
+        return new JSONObject(jsonText);
     }
 
     private static String readAll(Reader rd) throws IOException {

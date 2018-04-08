@@ -28,7 +28,7 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
     @Override
     public List<MagicItemOnStack> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
-        final List<MagicItemOnStack> targets=new ArrayList<MagicItemOnStack>();
+        final List<MagicItemOnStack> targets= new ArrayList<>();
 
         // Items on stack
         if (acceptType(MagicTargetType.Stack)) {

@@ -23,7 +23,6 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
-import magic.translate.MText;
 
 public class MagicTargetChoice extends MagicChoice {
 
@@ -463,7 +462,7 @@ public class MagicTargetChoice extends MagicChoice {
             controller.focusViewers(4);
         }
         final MagicTargetHint usedTargetHint=getTargetHint(GeneralConfig.getInstance().getSmartTarget());
-        final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
+        final Set<Object> validChoices= new HashSet<>(game.getLegalTargets(player, source, this, usedTargetHint));
         if (validChoices.size()==1) {
             // There are no valid choices.
             if (validChoices.contains(MagicTargetNone.getInstance())) {

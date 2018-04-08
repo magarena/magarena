@@ -555,7 +555,7 @@ public class MagicGame {
     }
 
     public void doAction(final MagicAction action) {
-        if (action.isLegal(this) == false) {
+        if (!action.isLegal(this)) {
             return;
         }
         actions.add(action);
@@ -652,14 +652,14 @@ public class MagicGame {
     public void snapshot() {
         final MagicAction markerAction=new MarkerAction();
         doAction(markerAction);
-        if (artificial == false) {
+        if (!artificial) {
             doAction(new LogMarkerAction());
             undoPoints.addLast(markerAction);
         }
     }
 
     public void restore() {
-        if (artificial == false) {
+        if (!artificial) {
             undoPoints.removeLast();
         }
         //undo each action up to and including the first MagicMarkerAction
@@ -746,7 +746,7 @@ public class MagicGame {
         if (disableLog || result.isEmpty()) {
             return;
         }
-        final SortedSet<String> names=new TreeSet<String>();
+        final SortedSet<String> names= new TreeSet<>();
         for (final MagicPermanent attacker : result) {
             names.add(MagicMessage.getCardToken(attacker));
         }
@@ -760,7 +760,7 @@ public class MagicGame {
         if (disableLog) {
             return;
         }
-        final SortedSet<String> names = new TreeSet<String>();
+        final SortedSet<String> names = new TreeSet<>();
         for (final MagicCombatCreature[] creatures : result) {
             for (int index = 1; index < creatures.length; index++) {
                 names.add(MagicMessage.getCardToken(creatures[index].permanent));
@@ -812,10 +812,10 @@ public class MagicGame {
     }
 
     public boolean advanceToNextEventWithChoice() {
-        while (isFinished() == false) {
-            if (hasNextEvent() == false) {
+        while (!isFinished()) {
+            if (!hasNextEvent()) {
                 executePhase();
-            } else if (getNextEvent().hasChoice() == false) {
+            } else if (!getNextEvent().hasChoice()) {
                 executeNextEvent();
             } else {
                 return true;
@@ -825,10 +825,10 @@ public class MagicGame {
     }
 
     public List<Object[]> advanceToNextEventWithChoices() {
-        while (isFinished() == false) {
-            if (hasNextEvent() == false) {
+        while (!isFinished()) {
+            if (!hasNextEvent()) {
                 executePhase();
-            } else if (getNextEvent().hasChoice() == false) {
+            } else if (!getNextEvent().hasChoice()) {
                 executeNextEvent();
             } else {
                 final MagicEvent event = getNextEvent();
@@ -1126,7 +1126,7 @@ public class MagicGame {
 
         // put pending triggers on stack in APNAP order
         pendingStack.sortAPNAP(getTurnPlayer());
-        while (pendingStack.isEmpty() == false) {
+        while (!pendingStack.isEmpty()) {
             doAction(new PutItemOnStackAction(pendingStack.peek()));
             doAction(new DequeueTriggerAction());
         }
@@ -1215,14 +1215,14 @@ public class MagicGame {
 
         final List<MagicTarget> options;
         if (targetChoice.isTargeted()) {
-            options=new ArrayList<MagicTarget>();
+            options= new ArrayList<>();
             for (final MagicTarget target : targets) {
                 if (target.isValidTarget(source)) {
                     options.add(target);
                 }
             }
         } else {
-            options=new ArrayList<MagicTarget>(targets);
+            options= new ArrayList<>(targets);
         }
 
         if (options.isEmpty()) {
@@ -1357,13 +1357,13 @@ public class MagicGame {
 
     public <T> void executeTrigger(final MagicTrigger<T> trigger, final MagicPermanent permanent, final MagicSource source, final T data) {
 
-        if (trigger.accept(permanent, data) == false) {
+        if (!trigger.accept(permanent, data)) {
             return;
         }
 
         final MagicEvent event=trigger.executeTrigger(this,permanent,data);
 
-        if (event.isValid() == false) {
+        if (!event.isValid()) {
             return;
         }
 
@@ -1388,7 +1388,7 @@ public class MagicGame {
             return;
         }
 
-        final Collection<MagicPermanentTrigger> copiedTriggers=new ArrayList<MagicPermanentTrigger>(typeTriggers);
+        final Collection<MagicPermanentTrigger> copiedTriggers= new ArrayList<>(typeTriggers);
         for (final MagicPermanentTrigger permanentTrigger : copiedTriggers) {
             final MagicPermanent permanent = permanentTrigger.getPermanent();
             @SuppressWarnings("unchecked")

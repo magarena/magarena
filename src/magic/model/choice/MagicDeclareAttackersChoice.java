@@ -64,7 +64,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player,player.getOpponent());
         builder.buildBlockers();
 
-        final Set<Object> validChoices=new HashSet<Object>();
+        final Set<Object> validChoices= new HashSet<>();
         if (builder.buildAttackers()) {
             for (final MagicCombatCreature attacker : builder.getAttackers()) {
                 if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {

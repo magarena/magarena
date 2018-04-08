@@ -36,7 +36,7 @@ public final class MagicStyle {
             BG1 = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
             BG2 = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
         }
-        if (value == true) {
+        if (value) {
             component.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             component.setBorder(BorderFactory.createLineBorder(getRolloverColor(), 2));
             component.setBackground(BG1);

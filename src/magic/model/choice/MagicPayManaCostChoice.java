@@ -61,7 +61,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             } else if (maxX == 1) {
                 return Collections.<Object>singletonList(new MagicDelayedPayManaCostResult(cost,1));
             } else {
-                final List<Object> choices=new ArrayList<Object>();
+                final List<Object> choices= new ArrayList<>();
                 for (int x=1;x<=maxX;x++) {
                     choices.add(new MagicDelayedPayManaCostResult(cost,x));
                 }
@@ -105,7 +105,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
         controller.disableActionButton(false);
 
-        if (event.isSatisfied() == false) {
+        if (!event.isSatisfied()) {
             controller.showMessage(source, MText.get(_S_NO_OPTIONS, cost.getText()));
             controller.waitForInput();
             return MagicEvent.NO_CHOICE_RESULTS;

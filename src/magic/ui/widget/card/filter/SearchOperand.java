@@ -15,7 +15,7 @@ public enum SearchOperand {
         static final String _S1 = "Match any";
         static final String _S2 = "Match all";
         static final String _S3 = "Exclude";
-    };
+    }
 
     private static final Set<SearchOperand> noAND = EnumSet.of(MATCH_ANY, EXCLUDE);
 

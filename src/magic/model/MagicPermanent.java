@@ -92,7 +92,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         cardDefinition = aCardDef;
         firstController = aController;
 
-        counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
+        counters = new EnumMap<>(MagicCounterType.class);
         equipmentPermanents = new MagicPermanentSet();
         auraPermanents = new MagicPermanentSet();
         blockingCreatures = new MagicPermanentList();
@@ -104,10 +104,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         cachedColorFlags = getCardDefinition().getColorFlags();
         cachedAbilityFlags = getCardDefinition().genAbilityFlags();
         cachedPowerToughness = getCardDefinition().genPowerToughness();
-        cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>();
-        cachedManaActivations = new LinkedList<MagicManaActivation>();
-        cachedTriggers = new LinkedList<MagicTrigger<?>>();
-        etbTriggers = new LinkedList<EntersBattlefieldTrigger>();
+        cachedActivations = new LinkedList<>();
+        cachedManaActivations = new LinkedList<>();
+        cachedTriggers = new LinkedList<>();
+        etbTriggers = new LinkedList<>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -119,7 +119,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         card = copyMap.copy(sourcePermanent.card);
         firstController = copyMap.copy(sourcePermanent.firstController);
         stateFlags = sourcePermanent.stateFlags;
-        counters = new EnumMap<MagicCounterType, Integer>(sourcePermanent.counters);
+        counters = new EnumMap<>(sourcePermanent.counters);
         abilityPlayedThisTurn = sourcePermanent.abilityPlayedThisTurn;
         equippedCreature = copyMap.copy(sourcePermanent.equippedCreature);
         equipmentPermanents = new MagicPermanentSet(copyMap, sourcePermanent.equipmentPermanents);
@@ -142,10 +142,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         cachedColorFlags = sourcePermanent.cachedColorFlags;
         cachedAbilityFlags = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
-        cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
-        cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
-        cachedTriggers = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
-        etbTriggers = new LinkedList<EntersBattlefieldTrigger>(sourcePermanent.etbTriggers);
+        cachedActivations = new LinkedList<>(sourcePermanent.cachedActivations);
+        cachedManaActivations = new LinkedList<>(sourcePermanent.cachedManaActivations);
+        cachedTriggers = new LinkedList<>(sourcePermanent.cachedTriggers);
+        etbTriggers = new LinkedList<>(sourcePermanent.etbTriggers);
     }
 
     @Override
@@ -383,7 +383,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
 
     public boolean isName(final String other) {
         final String name = getName();
-        return name.isEmpty() == false && name.equalsIgnoreCase(other);
+        return !name.isEmpty() && name.equalsIgnoreCase(other);
     }
 
     @Override
@@ -481,11 +481,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 cachedColorFlags = getCardDefinition().getColorFlags();
                 cachedAbilityFlags = getCardDefinition().genAbilityFlags();
                 cachedPowerToughness = getCardDefinition().genPowerToughness();
-                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(getCardDefinition().getActivations());
+                cachedActivations = new LinkedList<>(getCardDefinition().getActivations());
                 cachedActivations.addAll(cardDefinition.getMorphActivations());
-                cachedManaActivations = new LinkedList<MagicManaActivation>(getCardDefinition().getManaActivations());
-                cachedTriggers = new LinkedList<MagicTrigger<?>>(getCardDefinition().getTriggers());
-                etbTriggers = new LinkedList<EntersBattlefieldTrigger>(getCardDefinition().getETBTriggers());
+                cachedManaActivations = new LinkedList<>(getCardDefinition().getManaActivations());
+                cachedTriggers = new LinkedList<>(getCardDefinition().getTriggers());
+                etbTriggers = new LinkedList<>(getCardDefinition().getETBTriggers());
                 appliedStatics = new HashSet<>();
                 break;
             case CDASubtype:
@@ -814,7 +814,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             }
 
             // Soulbond
-            if (pairedCreature.isValid() && pairedCreature.isCreature() == false) {
+            if (pairedCreature.isValid() && !pairedCreature.isCreature()) {
                 game.logAppendMessage(
                     getController(),
                     MagicMessage.format("%s becomes unpaired as %s is no longer a creature.", this, pairedCreature)
@@ -829,14 +829,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             String reason = "";
             if (isCreature()) {
                 reason = "it is a creature.";
-            } else if (enchantedPermanent.isValid() == false
-                || game.isLegalTarget(getController(), this, tchoice, enchantedPermanent) == false) {
+            } else if (!enchantedPermanent.isValid()
+                || !game.isLegalTarget(getController(), this, tchoice, enchantedPermanent)) {
                 reason = "it no longer enchants a valid permanent.";
             } else if (enchantedPermanent.hasProtectionFrom(this)) {
                 reason = MagicMessage.format("%s has protection.", enchantedPermanent);
             }
 
-            if (reason.isEmpty() == false) {
+            if (!reason.isEmpty()) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached.
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
@@ -860,12 +860,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             String reason = "";
             if (isCreature()) {
                 reason = "it is a creature.";
-            } else if (equippedCreature.isCreature() == false) {
+            } else if (!equippedCreature.isCreature()) {
                 reason = MagicMessage.format("%s is no longer a creature.", equippedCreature);
             } else if (equippedCreature.hasProtectionFrom(this)) {
                 reason = MagicMessage.format("%s has protection.", equippedCreature);
             }
-            if (reason.isEmpty() == false) {
+            if (!reason.isEmpty()) {
                 game.logAppendMessage(
                     getController(),
                     MagicMessage.format("%s becomes unattached as %s", this, reason)
@@ -1234,7 +1234,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         }
 
         // Can't be the target of nongreen spells or abilities from nongreen sources
-        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green) == false) {
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && !source.hasColor(MagicColor.Green)) {
             return false;
         }
 

@@ -1,7 +1,7 @@
 package magic.model;
 
 import java.util.*;
-import java.util.stream.Collectors;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
@@ -24,7 +24,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
      * Comparator for sorting instances of {@code MagicCardDefinition} by distinct name.
      */
     public static final Comparator<MagicCardDefinition> SORT_BY_NAME =
-        (o1, o2) -> o1.getDistinctName().compareTo(o2.getDistinctName());
+            Comparator.comparing(MagicCardDefinition::getDistinctName);
 
     private static final List<String> unsupportedStatuses = new ArrayList<>();
     private static boolean isSorted = false;
@@ -81,20 +81,20 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private MagicStaticType staticType=MagicStaticType.None;
     private MagicTiming timing=MagicTiming.None;
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
-    private final Collection<MagicActivation<MagicPermanent>> permActivations=new ArrayList<MagicActivation<MagicPermanent>>();
-    private final Collection<MagicActivation<MagicPermanent>> morphActivations=new ArrayList<MagicActivation<MagicPermanent>>();
-    private final LinkedList<MagicActivation<MagicCard>> handActivations = new LinkedList<MagicActivation<MagicCard>>();
-    private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<MagicActivation<MagicCard>>();
-    private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
-    private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
-    private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-    private final LinkedList<EntersBattlefieldTrigger> etbTriggers = new LinkedList<EntersBattlefieldTrigger>();
-    private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<ThisSpellIsCastTrigger>();
-    private final Collection<ThisCycleTrigger> cycleTriggers = new ArrayList<ThisCycleTrigger>();
-    private final Collection<ThisDrawnTrigger> drawnTriggers = new ArrayList<ThisDrawnTrigger>();
-    private final Collection<ThisPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<ThisPutIntoGraveyardTrigger>();
-    private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
-    private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
+    private final Collection<MagicActivation<MagicPermanent>> permActivations= new ArrayList<>();
+    private final Collection<MagicActivation<MagicPermanent>> morphActivations= new ArrayList<>();
+    private final LinkedList<MagicActivation<MagicCard>> handActivations = new LinkedList<>();
+    private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<>();
+    private final Collection<MagicCDA> CDAs = new ArrayList<>();
+    private final Collection<MagicTrigger<?>> triggers = new ArrayList<>();
+    private final Collection<MagicStatic> statics= new ArrayList<>();
+    private final LinkedList<EntersBattlefieldTrigger> etbTriggers = new LinkedList<>();
+    private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<>();
+    private final Collection<ThisCycleTrigger> cycleTriggers = new ArrayList<>();
+    private final Collection<ThisDrawnTrigger> drawnTriggers = new ArrayList<>();
+    private final Collection<ThisPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<>();
+    private final Collection<MagicManaActivation> manaActivations= new ArrayList<>();
+    private final Collection<MagicEventSource> costEventSources= new ArrayList<>();
 
     private MagicCardDefinition flipCardDefinition;
     private MagicCardDefinition transformCardDefinition;
@@ -714,7 +714,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     private List<MagicEvent> getCostEvent(final MagicCard source, final MagicManaCost manaCost) {
-        final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
+        final List<MagicEvent> costEvent = new ArrayList<>();
         if (manaCost != MagicManaCost.NONE) {
             costEvent.add(MagicPayManaCostEvent.Cast(
                 source,
@@ -1010,7 +1010,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC =
-        (cd1, cd2) -> cd1.getName().compareTo(cd2.getName());
+            Comparator.comparing(MagicCardDefinition::getName);
 
     public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC =
         (cd1, cd2) -> cd2.getName().compareTo(cd1.getName());
@@ -1029,11 +1029,11 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_ASC = (cd1, cd2) -> TYPE_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC = (cd1, cd2) -> cd1.getSubTypeString().compareTo(cd2.getSubTypeString());
+    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC = Comparator.comparing(MagicCardDefinition::getSubTypeString);
 
     public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_ASC = (cd1, cd2) -> SUBTYPE_COMPARATOR_DESC.compare(cd2, cd1);
 
-    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC = (cd1, cd2) -> cd1.getRarity() - cd2.getRarity();
+    public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC = Comparator.comparingInt(MagicCardDefinition::getRarity);
 
     public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_ASC = (cd1, cd2) -> RARITY_COMPARATOR_DESC.compare(cd2, cd1);
 

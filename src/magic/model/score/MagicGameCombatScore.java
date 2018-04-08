@@ -31,7 +31,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
         // resolve triggers
         game.checkStatePutTriggers();
         int resolved = 0;
-        while (game.getStack().size() > 0 && resolved < 100 && game.isFinished() == false) {
+        while (game.getStack().size() > 0 && resolved < 100 && !game.isFinished()) {
             resolved++;
             game.doAction(new StackResolveAction());
             game.checkStatePutTriggers();

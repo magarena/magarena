@@ -46,7 +46,7 @@ public class PermanentSpecParser {
             types.add(MagicType.Legendary);
         }
 
-        if (tokens.isEmpty() == false) {
+        if (!tokens.isEmpty()) {
             throw new RuntimeException("unmatched becomes specification " + tokens);
         }
 

@@ -69,7 +69,7 @@ public class DeckUtils {
         boolean isSuccessful = true;
 
         for (int count=3;count>0;count--) {
-            cardMaps.add(new TreeMap<String, Integer>());
+            cardMaps.add(new TreeMap<>());
         }
 
         for (final MagicCardDefinition cardDefinition : deck) {
@@ -128,7 +128,6 @@ public class DeckUtils {
      *
      * @param filename
      * @return
-     * @throws IOException
      */
     private static List<String> getDeckFileContent(final String filename) {
         try {
@@ -350,13 +349,11 @@ public class DeckUtils {
             }
         }
         return matchingDeckFiles;
-    };
+    }
 
     public static Set<MagicCardDefinition> getDistinctCards(final MagicDeck aDeck) {
         final Set<MagicCardDefinition> distinctCards = new HashSet<>();
-        for (final MagicCardDefinition card : aDeck) {
-            distinctCards.add(card);
-        }
+        distinctCards.addAll(aDeck);
         return distinctCards;
     }
 

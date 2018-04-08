@@ -80,12 +80,7 @@ public class MagicCustomFormat extends MagicFormat {
     //
 
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
-    private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
-        @Override
-        public boolean accept(final File file) {
-            return file.isFile() && file.getName().endsWith(CUBE_FILE_EXTENSION);
-        }
-    };
+    private static final FileFilter CUBE_FILE_FILTER = file -> file.isFile() && file.getName().endsWith(CUBE_FILE_EXTENSION);
 
     private static List<MagicFormat> customFormats;
 

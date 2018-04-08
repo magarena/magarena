@@ -67,17 +67,15 @@ public class CardFlowScreen extends HeaderFooterScreen
     }
 
     private PlainMenuButton getScrollForwardsButton() {
-        PlainMenuButton btn = PlainMenuButton.build(this::doScrollForwards,
+        return PlainMenuButton.build(this::doScrollForwards,
             MagicIcon.GO_NEXT, MText.get(_S3), MText.get(_S4)
         );
-        return btn;
     }
 
     private PlainMenuButton getScrollBackButton() {
-        PlainMenuButton btn = PlainMenuButton.build(this::doScrollBack,
+        return PlainMenuButton.build(this::doScrollBack,
             MagicIcon.GO_BACK, MText.get(_S5), MText.get(_S6)
         );
-        return btn;
     }
 
     private void doScrollForwards() {

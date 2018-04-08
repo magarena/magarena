@@ -2,8 +2,6 @@ package magic.ui.widget.deck.legality;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.BorderFactory;
@@ -61,20 +59,10 @@ public class LegalityPanel extends JPanel
     private void setPropertyChangeListeners() {
         cardsLegalityPanel.addPropertyChangeListener(
             CardsLegalityPanel.CP_CARD_SELECTED,
-            new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    firePropertyChange(CP_CARD_SELECTED, false, true);
-                }
-            });
+                evt -> firePropertyChange(CP_CARD_SELECTED, false, true));
         formatsLegalityPanel.addPropertyChangeListener(
             FormatsLegalityPanel.CP_FORMAT_SELECTED,
-            new PropertyChangeListener() {
-                @Override
-                public void propertyChange(PropertyChangeEvent evt) {
-                    cardsLegalityPanel.setDeck(deck, formatsLegalityPanel.getSelectedFormat());
-                }
-            });
+                evt -> cardsLegalityPanel.setDeck(deck, formatsLegalityPanel.getSelectedFormat()));
     }
 
     private void setLookAndFeel() {

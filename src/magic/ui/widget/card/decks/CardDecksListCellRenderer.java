@@ -13,8 +13,7 @@ class CardDecksListCellRenderer  extends DefaultListCellRenderer {
     public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
         final File deckFile = (File) value;
         final String filename = FilenameUtils.removeExtension(deckFile.getName());
-        final Component c = super.getListCellRendererComponent(list, filename, index, isSelected, cellHasFocus);
-        return c;
+        return super.getListCellRendererComponent(list, filename, index, isSelected, cellHasFocus);
     }
 
 }

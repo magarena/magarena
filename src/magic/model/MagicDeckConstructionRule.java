@@ -23,7 +23,7 @@ public enum MagicDeckConstructionRule {
     }
 
     public static List<MagicDeckConstructionRule> checkDeck(final MagicDeck deck) {
-        final ArrayList<MagicDeckConstructionRule> brokenRules = new ArrayList<MagicDeckConstructionRule>();
+        final ArrayList<MagicDeckConstructionRule> brokenRules = new ArrayList<>();
 
         if (deck.size() < MIN_DECK_SIZE) {
             brokenRules.add(MinDeckSize);

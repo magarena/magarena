@@ -62,7 +62,7 @@ public class MagicOrChoice extends MagicChoice {
                         obj
                     });
                 }
-                if (choices[i].isValid() == false) {
+                if (!choices[i].isValid()) {
                     choiceResultsList.add(new Object[] {
                         i + 1
                     });

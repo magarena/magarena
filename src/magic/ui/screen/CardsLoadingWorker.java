@@ -17,12 +17,12 @@ class CardsLoadingWorker extends SwingWorker<Void, String> {
 
     CardsLoadingWorker(CardsLoadingPanel p) {
         this.statusPanel = p;
-        needsPlayableCards = Boolean.valueOf(p.needsPlayableCards());
-        needsMissingCards = Boolean.valueOf(p.needsMissingCards());
+        needsPlayableCards = p.needsPlayableCards();
+        needsMissingCards = p.needsMissingCards();
     }
 
     @Override
-    protected Void doInBackground() throws Exception {
+    protected Void doInBackground() {
         if (needsPlayableCards || needsMissingCards) {
             publish(MText.get(_S1));
         }

@@ -145,7 +145,7 @@ class MainViewsPanel extends JPanel
                 MouseHelper.showHandCursor((Component) e.getSource());
             }
         });
-        if (ScreenController.isDuelActive() == false) {
+        if (!ScreenController.isDuelActive()) {
             toggleButtonsPanel.addToggleButton(MText.get(_S4), new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -237,8 +237,8 @@ class MainViewsPanel extends JPanel
             activeView.setVisible(false);
         }
         aView.setVisible(true);
-        deckActionPanel.setVisible(aView instanceof LegalityPanel == false
-            && aView instanceof DeckGamesPanel == false
+        deckActionPanel.setVisible(!(aView instanceof LegalityPanel)
+            && !(aView instanceof DeckGamesPanel)
         );
         activeView = aView;
         refreshLayout();

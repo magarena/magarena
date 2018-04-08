@@ -82,7 +82,7 @@ public class ImagePermanentsViewer extends JPanel {
         int maxWidth=0;
         int rowHeight=0;
 
-        final List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
+        final List<ImagePermanentViewer> aViewers = new ArrayList<>();
         if (isTop) {
             aViewers.addAll(nonCreatures);
             aViewers.addAll(creatures);
@@ -178,9 +178,9 @@ public class ImagePermanentsViewer extends JPanel {
     }
 
     public void viewPermanents(final Collection<PermanentViewerInfo> permanentInfos) {
-        final List<ImagePermanentViewer> creatures = new ArrayList<ImagePermanentViewer>();
-        final List<ImagePermanentViewer> nonCreatures = new ArrayList<ImagePermanentViewer>();
-        final List<ImagePermanentViewer> newViewers = new ArrayList<ImagePermanentViewer>();
+        final List<ImagePermanentViewer> creatures = new ArrayList<>();
+        final List<ImagePermanentViewer> nonCreatures = new ArrayList<>();
+        final List<ImagePermanentViewer> newViewers = new ArrayList<>();
 
         for (final PermanentViewerInfo permanentInfo : permanentInfos) {
             final ImagePermanentViewer perm = new ImagePermanentViewer(this,permanentInfo);

@@ -1,6 +1,5 @@
 package magic.model.event;
 
-import java.util.LinkedList;
 import java.util.List;
 
 import magic.model.MagicCounterType;

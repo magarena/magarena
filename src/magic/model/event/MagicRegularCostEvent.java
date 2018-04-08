@@ -39,7 +39,7 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
     }
 
     public static List<MagicMatchedCostEvent> build(final String costs) {
-        final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();
+        final List<MagicMatchedCostEvent> matched = new LinkedList<>();
         final String[] splitCosts = costs.split(COMMA);
         for (String cost : splitCosts) {
             matched.add(new MagicRegularCostEvent(cost));

@@ -36,7 +36,7 @@ public class MagicPutCardOnStackEvent extends MagicEvent {
         cardOnStack.setFromLocation(from);
         cardOnStack.setMoveLocation(to);
         final MagicCard card = event.getCard();
-        if (card.isToken() == false) {
+        if (!card.isToken()) {
             game.doAction(new RemoveCardAction(card, from));
         }
         game.doAction(new PutItemOnStackAction(cardOnStack));

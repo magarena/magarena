@@ -1,6 +1,5 @@
 package magic.ui.screen.stats;
 
-import java.sql.SQLException;
 import magic.data.stats.MagicStats;
 import magic.ui.screen.HeaderFooterScreen;
 import magic.ui.screen.MScreen;
@@ -18,11 +17,7 @@ public class StatsScreen extends HeaderFooterScreen {
         headerPanel = new StatsHeaderPanel(MagicStats.getSchemaVersion());
         setHeaderContent(headerPanel);
 
-        try {
-            contentPanel = new StatsContentPanel(this);
-        } catch (SQLException ex) {
-            throw new RuntimeException(ex);
-        }
+        contentPanel = new StatsContentPanel(this);
         setMainContent(contentPanel);
 
         setLeftFooter(PlainMenuButton.getCloseScreenButton());

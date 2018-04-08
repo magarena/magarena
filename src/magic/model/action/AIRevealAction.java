@@ -9,8 +9,8 @@ import java.util.Arrays;
 
 public class AIRevealAction extends MagicAction {
 
-    private final List<MagicCard> cards = new ArrayList<MagicCard>();
-    private final List<Boolean> known = new ArrayList<Boolean>();
+    private final List<MagicCard> cards = new ArrayList<>();
+    private final List<Boolean> known = new ArrayList<>();
     private final boolean newValue;
 
     public AIRevealAction(final MagicCard... aCards) {

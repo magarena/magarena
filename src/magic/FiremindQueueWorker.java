@@ -30,10 +30,7 @@ public class FiremindQueueWorker {
                 p.waitFor();
                 reader.close();
                 lastExitStatus = p.exitValue();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (InterruptedException e) {
+            } catch (IOException | InterruptedException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
@@ -50,8 +47,7 @@ public class FiremindQueueWorker {
 
     private static boolean parseArguments(final String[] args) {
         boolean validArgs = true;
-        for (int i = 0; i < args.length; i += 1) {
-            final String curr = args[i];
+        for (final String curr : args) {
             if ("--self-terminate".equals(curr)) {
                 shutDownOnEmptyQueue = true;
             }

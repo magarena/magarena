@@ -42,4 +42,4 @@ public class MagicPTTargetFilter extends MagicPermanentFilterImpl {
     public boolean acceptType(final MagicTargetType targetType) {
         return targetFilter.acceptType(targetType);
     }
-};
+}

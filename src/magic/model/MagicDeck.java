@@ -149,8 +149,8 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
             if (this.size() != other.size()) {
                 return false;
             }
-            Collections.sort(this, MagicCardDefinition.NAME_COMPARATOR_ASC);
-            Collections.sort(other, MagicCardDefinition.NAME_COMPARATOR_ASC);
+            this.sort(MagicCardDefinition.NAME_COMPARATOR_ASC);
+            other.sort(MagicCardDefinition.NAME_COMPARATOR_ASC);
             return super.equals(other);
         }
         return false;

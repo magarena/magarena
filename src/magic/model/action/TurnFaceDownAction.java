@@ -20,7 +20,7 @@ public class TurnFaceDownAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (permanent.isFaceDown() == false && permanent.isDoubleFaced() == false) {
+        if (!permanent.isFaceDown() && !permanent.isDoubleFaced()) {
             oldStatics = permanent.getStatics();
 
             game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.FaceDown));

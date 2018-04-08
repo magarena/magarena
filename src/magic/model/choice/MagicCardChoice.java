@@ -82,7 +82,7 @@ public class MagicCardChoice extends MagicChoice {
         final MagicSource source = event.getSource();
 
         final MagicCardChoiceResult result = new MagicCardChoiceResult();
-        final Set<Object> validCards = new HashSet<Object>(player.getHand());
+        final Set<Object> validCards = new HashSet<>(player.getHand());
         validCards.remove(source);
         int actualAmount = Math.min(amount, validCards.size());
         for (; actualAmount > 0; actualAmount--) {

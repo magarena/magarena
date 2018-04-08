@@ -7,13 +7,12 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import magic.ui.FontsAndBorders;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
@@ -30,19 +29,13 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         // List of avatar image sets.
         final JList<AvatarImageSet> imageSetsList = new JList<>(getAvatarImageSetsArray());
         imageSetsList.setOpaque(false);
-        imageSetsList.addListSelectionListener(new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                if (!e.getValueIsAdjusting()) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            screen.displayImageSetIcons(imageSetsList.getSelectedValue());
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                        }
-                    });
-                }
+        imageSetsList.addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                SwingUtilities.invokeLater(() -> {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    screen.displayImageSetIcons(imageSetsList.getSelectedValue());
+                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                });
             }
         });
         imageSetsList.setSelectedIndex(0);
@@ -62,10 +55,10 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
 
         refreshStyle();
     }
-    
+
     private static class DirectoriesOnlyFilter implements DirectoryStream.Filter<Path> {
         @Override
-        public boolean accept(Path entry) throws IOException {
+        public boolean accept(Path entry) {
             return Files.isDirectory(entry);
         }
     }
@@ -82,15 +75,14 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
         } catch (IOException ex) {
             System.err.println(ex);
         }
-        paths.sort((p1, p2) -> p1.getFileName().compareTo(p2.getFileName()));
+        paths.sort(Comparator.comparing(Path::getFileName));
         return paths;
     }
 
     private AvatarImageSet loadImageSet(final Path imageSetDirectory) {
-        final AvatarImageSet imageSet = new AvatarImageSet(imageSetDirectory);
-        return imageSet;
+        return new AvatarImageSet(imageSetDirectory);
     }
-    
+
     private List<AvatarImageSet> getAvatarImageSetsList() {
         final List<AvatarImageSet> imageSets = new ArrayList<>();
         List<Path> directoryPaths = getSortedDirectoryPaths(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.AVATARS));
@@ -98,7 +90,7 @@ class ImageSetsPanel extends TexturedPanel implements IThemeStyle {
             imageSets.add(loadImageSet(path));
         }
         return imageSets;
-    }    
+    }
 
     private AvatarImageSet[] getAvatarImageSetsArray() {
         final List<AvatarImageSet> imageSetsList = getAvatarImageSetsList();

@@ -37,9 +37,7 @@ public class MPlainTextViewer extends MWidget {
     }
 
     private void resetVerticalScrollbar() {
-        SwingUtilities.invokeLater(() -> {
-            scrollPane.setVScrollBarValue(0);
-        });
+        SwingUtilities.invokeLater(() -> scrollPane.setVScrollBarValue(0));
     }
 
     public void setText(String text) {

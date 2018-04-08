@@ -27,7 +27,7 @@ public class MagicExcludeChoice extends MagicChoice {
     Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
 
-        final List<MagicPermanent> excludePermanents=new ArrayList<MagicPermanent>();
+        final List<MagicPermanent> excludePermanents= new ArrayList<>();
         for (final MagicPermanent permanent : player.getPermanents()) {
             if (permanent.hasExcludeManaOrCombat()) {
                 excludePermanents.add(permanent);
@@ -48,7 +48,7 @@ public class MagicExcludeChoice extends MagicChoice {
             return Collections.<Object>singleton(new MagicExcludeResult(excludePermanents,0));
         }
 
-        final List<Object> excludeOptions = new ArrayList<Object>(numOptions);
+        final List<Object> excludeOptions = new ArrayList<>(numOptions);
         for (int flags = excludeAllFlags; flags >= 0; flags--) {
             excludeOptions.add(new MagicExcludeResult(excludePermanents,flags));
         }

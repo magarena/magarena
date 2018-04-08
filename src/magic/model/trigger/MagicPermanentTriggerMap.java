@@ -15,12 +15,12 @@ import magic.model.MurmurHash3;
 public class MagicPermanentTriggerMap {
 
     private final Map<MagicTriggerType,PriorityQueue<MagicPermanentTrigger>> effects =
-        new EnumMap<MagicTriggerType,PriorityQueue<MagicPermanentTrigger>>(MagicTriggerType.class);
+            new EnumMap<>(MagicTriggerType.class);
 
     // initializer block
     {
         for (final MagicTriggerType type : MagicTriggerType.values()) {
-            effects.put(type, new PriorityQueue<MagicPermanentTrigger>());
+            effects.put(type, new PriorityQueue<>());
         }
     }
 
@@ -51,7 +51,7 @@ public class MagicPermanentTriggerMap {
     }
 
     public List<MagicPermanentTrigger> removeTurn() {
-        final List<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
+        final List<MagicPermanentTrigger> removedTriggers = new ArrayList<>();
         for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
             final Collection<MagicPermanentTrigger> triggers = type.getValue();
             for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {
@@ -66,7 +66,7 @@ public class MagicPermanentTriggerMap {
     }
 
     public Collection<MagicPermanentTrigger> remove(final MagicPermanent permanent) {
-        final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
+        final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<>();
         for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : effects.entrySet()) {
             final Collection<MagicPermanentTrigger> triggers = type.getValue();
             for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {

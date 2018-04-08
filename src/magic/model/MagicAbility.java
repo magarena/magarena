@@ -750,7 +750,7 @@ public enum MagicAbility {
             card.add(FromGraveyardIntoLibraryTrigger.create());
         }
     },
-    LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead\\.",10) {
+    LibraryInsteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead\\.",10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(ThisPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
@@ -1119,7 +1119,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             //Does nothing but allows text to be part of ability property
             //HauntAbility contains actual effects
-            //Not currently compatable with Instants or Sorceries
+            //Not currently compatible with Instants or Sorceries
         }
     },
     HauntAbility("When SN enters the battlefield or the creature it haunts dies, " + ARG.EFFECT, 0) {

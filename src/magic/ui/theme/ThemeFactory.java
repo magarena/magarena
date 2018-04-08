@@ -3,7 +3,6 @@ package magic.ui.theme;
 import java.awt.Color;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import magic.data.GeneralConfig;
@@ -44,7 +43,7 @@ public class ThemeFactory {
         }
 
         // sort alphabetically (ignoring case)...
-        Collections.sort(themes, (s1, s2) -> s1.compareToIgnoreCase(s2));
+        themes.sort((s1, s2) -> s1.compareToIgnoreCase(s2));
 
         return themes.toArray(new String[themes.size()]);
     }

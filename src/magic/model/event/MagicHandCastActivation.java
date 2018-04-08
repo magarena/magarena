@@ -1,7 +1,6 @@
 package magic.model.event;
 
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import magic.model.MagicAmount;
 import magic.model.MagicCard;

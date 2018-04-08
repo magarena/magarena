@@ -75,7 +75,7 @@ class CardFlowPanel extends JPanel implements TimelineCallback {
         addComponentListener(new ComponentAdapter() {
             @Override
             public void componentResized(ComponentEvent e) {
-                if (getSize().equals(currentSize) == false) {
+                if (!getSize().equals(currentSize)) {
                     repaintCardFlowImage();
                 }
             }

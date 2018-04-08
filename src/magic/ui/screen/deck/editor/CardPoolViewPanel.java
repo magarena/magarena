@@ -3,8 +3,6 @@ package magic.ui.screen.deck.editor;
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -63,44 +61,23 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
         deckPanel.addPropertyChangeListener(
                 BasicDeckTablePanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        doDeckPanelSelectionAction();
-                    }
-                });
-
+                evt -> doDeckPanelSelectionAction());
         cardPoolPanel.addPropertyChangeListener(
                 FilteredCardPoolPanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        doCardPoolPanelSelectionAction();
-                    }
-                });
+                evt -> doCardPoolPanelSelectionAction());
         cardPoolPanel.addPropertyChangeListener(
                 FilteredCardPoolPanel.CP_CARD_LCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        addSelectedCardToDeck();
-                    }
-                });
+                evt -> addSelectedCardToDeck());
         cardPoolPanel.addPropertyChangeListener(
                 FilteredCardPoolPanel.CP_CARD_RCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        removeSelectedCardFromDeck();
-                    }
-                });
+                evt -> removeSelectedCardFromDeck());
 
     }
 
     private void doCardPoolPanelSelectionAction() {
         if (cardPoolPanel.getSelectedCard() != null) {
             selectedCard = cardPoolPanel.getSelectedCard();
-            if (controller.getDeck().contains(selectedCard) == false) {
+            if (!controller.getDeck().contains(selectedCard)) {
                 deckPanel.clearSelection();
             } else {
                 deckPanel.setSelectedCard(selectedCard);
@@ -153,7 +130,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
             return;
         }
 
-        if (controller.getDeck().contains(card) == false) {
+        if (!controller.getDeck().contains(card)) {
             MagicSound.BEEP.play();
             return;
         }
@@ -196,7 +173,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     private int getDefaultDeckSize() {
         return controller.getDeck().size() < MagicDeck.DEFAULT_SIZE
-                ? ScreenController.isDuelActive() == false
+                ? !ScreenController.isDuelActive()
                         ? 60
                         : MagicDeck.DEFAULT_SIZE
                 : controller.getDeck().size();

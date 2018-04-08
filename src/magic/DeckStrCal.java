@@ -35,71 +35,84 @@ public class DeckStrCal {
         for (int i = 0; i < args.length; i += 2) {
             final String curr = args[i];
             final String next = args[i+1];
-            if ("--games".equals(curr)) {
-                try { //parse CLI option
-                    games = Integer.parseInt(next);
-                } catch (final NumberFormatException ex) {
-                    System.err.println("ERROR! number of games not an integer");
+            switch (curr) {
+                case "--games":
+                    try { //parse CLI option
+                        games = Integer.parseInt(next);
+                    } catch (final NumberFormatException ex) {
+                        System.err.println("ERROR! number of games not an integer");
+                        validArgs = false;
+                    }
+                    break;
+                case "--str1":
+                    try { //parse CLI option
+                        str[0] = Integer.parseInt(next);
+                    } catch (final NumberFormatException ex) {
+                        System.err.println("ERROR! AI strength not an integer");
+                        validArgs = false;
+                    }
+                    break;
+                case "--str2":
+                    try { //parse CLI option
+                        str[1] = Integer.parseInt(next);
+                    } catch (final NumberFormatException ex) {
+                        System.err.println("ERROR! AI strength not an integer");
+                        validArgs = false;
+                    }
+                    break;
+                case "--deck1":
+                    deck[0] = next;
+                    break;
+                case "--deck2":
+                    deck[1] = next;
+                    break;
+                case "--profile":
+                    profile = next;
+                    break;
+                case "--ai1":
+                    try { //parse CLI option
+                        ai[0] = MagicAIImpl.valueOf(next);
+                    } catch (final IllegalArgumentException ex) {
+                        System.err.println("Error: " + next + " is not valid AI");
+                        validArgs = false;
+                    }
+                    break;
+                case "--ai2":
+                    try { //parse CLI option
+                        ai[1] = MagicAIImpl.valueOf(next);
+                    } catch (final IllegalArgumentException ex) {
+                        System.err.println("Error: " + next + " is not valid AI");
+                        validArgs = false;
+                    }
+                    break;
+                case "--life":
+                    try { //parse CLI option
+                        life = Integer.parseInt(next);
+                    } catch (final NumberFormatException ex) {
+                        System.err.println("ERROR! starting life is not an integer");
+                        validArgs = false;
+                    }
+                    break;
+                case "--repeat":
+                    try { //parse CLI option
+                        repeat = Integer.parseInt(next);
+                    } catch (final NumberFormatException ex) {
+                        System.err.println("ERROR! repeat is not an integer");
+                        validArgs = false;
+                    }
+                    break;
+                case "--seed":
+                    try { //parse CLI option
+                        seed = Integer.parseInt(next);
+                    } catch (final NumberFormatException ex) {
+                        System.err.println("ERROR! seed is not an integer");
+                        validArgs = false;
+                    }
+                    break;
+                default:
+                    System.err.println("Error: unknown option " + curr);
                     validArgs = false;
-                }
-            } else if ("--str1".equals(curr)) {
-                try { //parse CLI option
-                    str[0] = Integer.parseInt(next);
-                } catch (final NumberFormatException ex) {
-                    System.err.println("ERROR! AI strength not an integer");
-                    validArgs = false;
-                }
-            } else if ("--str2".equals(curr)) {
-                try { //parse CLI option
-                    str[1] = Integer.parseInt(next);
-                } catch (final NumberFormatException ex) {
-                    System.err.println("ERROR! AI strength not an integer");
-                    validArgs = false;
-                }
-            } else if ("--deck1".equals(curr)) {
-                deck[0] = next;
-            } else if ("--deck2".equals(curr)) {
-                deck[1] = next;
-            } else if ("--profile".equals(curr)) {
-                profile = next;
-            } else if ("--ai1".equals(curr)) {
-                try { //parse CLI option
-                    ai[0] = MagicAIImpl.valueOf(next);
-                } catch (final IllegalArgumentException ex) {
-                    System.err.println("Error: " + next + " is not valid AI");
-                    validArgs = false;
-                }
-            } else if ("--ai2".equals(curr)) {
-                try { //parse CLI option
-                    ai[1] = MagicAIImpl.valueOf(next);
-                } catch (final IllegalArgumentException ex) {
-                    System.err.println("Error: " + next + " is not valid AI");
-                    validArgs = false;
-                }
-            } else if ("--life".equals(curr)) {
-                try { //parse CLI option
-                    life = Integer.parseInt(next);
-                } catch (final NumberFormatException ex) {
-                    System.err.println("ERROR! starting life is not an integer");
-                    validArgs = false;
-                }
-            } else if ("--repeat".equals(curr)) {
-                try { //parse CLI option
-                    repeat = Integer.parseInt(next);
-                } catch (final NumberFormatException ex) {
-                    System.err.println("ERROR! repeat is not an integer");
-                    validArgs = false;
-                }
-            } else if ("--seed".equals(curr)) {
-                try { //parse CLI option
-                    seed = Integer.parseInt(next);
-                } catch (final NumberFormatException ex) {
-                    System.err.println("ERROR! seed is not an integer");
-                    validArgs = false;
-                }
-            } else {
-                System.err.println("Error: unknown option " + curr);
-                validArgs = false;
+                    break;
             }
         }
 

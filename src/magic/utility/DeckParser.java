@@ -107,14 +107,14 @@ public final class DeckParser {
             }
 
             // -------------------------------------------------------------
-            // Lines specfic to the deckbox.org deck format.
+            // Lines specific to the deckbox.org deck format.
             // -------------------------------------------------------------
             if (line.startsWith("Sideboard:")) {
                 isSkipLine = true;
             }
 
             // -------------------------------------------------------------
-            // Lines specfic to the Forge deck format.
+            // Lines specific to the Forge deck format.
             // -------------------------------------------------------------
 
             // forge sections.
@@ -140,7 +140,7 @@ public final class DeckParser {
             }
 
             // -------------------------------------------------------------
-            // Lines specfic to the ??? deck format.
+            // Lines specific to the ??? deck format.
             // -------------------------------------------------------------
 
             // ignore sideboard cards.

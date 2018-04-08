@@ -139,7 +139,7 @@ public enum MagicColor {
     }
 
     public static String getRandomColors(final int count) {
-        final List<MagicColor> colors = new ArrayList<MagicColor>(Arrays.asList(values()));
+        final List<MagicColor> colors = new ArrayList<>(Arrays.asList(values()));
         final StringBuilder colorText=new StringBuilder();
         for (int c=count;c>0;c--) {
             final int index=MagicRandom.nextRNGInt(colors.size());

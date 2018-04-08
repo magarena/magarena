@@ -77,9 +77,7 @@ public class MulliganScreen extends HandCanvasScreen
 
     private void refreshCardsDisplay(final MagicCardList hand) {
         // Important: uses Runnable so painting works properly.
-        SwingUtilities.invokeLater(() -> {
-            cardsCanvas.refresh(hand);
-        });
+        SwingUtilities.invokeLater(() -> cardsCanvas.refresh(hand));
     }
 
     /**

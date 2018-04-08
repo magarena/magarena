@@ -71,7 +71,7 @@ public abstract class AlertButton extends JButton {
     public void doAlertCheck() {
         new SwingWorker<String, Void>() {
             @Override
-            protected String doInBackground() throws Exception {
+            protected String doInBackground() {
                 return getAlertCaption();
             }
             @Override

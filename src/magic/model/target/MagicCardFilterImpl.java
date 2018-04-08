@@ -31,7 +31,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
 
     @Override
     public List<MagicCard> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
-        final List<MagicCard> targets = new ArrayList<MagicCard>();
+        final List<MagicCard> targets = new ArrayList<>();
 
         // Cards in graveyard
         if (acceptType(MagicTargetType.Graveyard)) {
@@ -63,7 +63,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     }
 
     private void add(final MagicSource source, final MagicPlayer player, final List<MagicCard> cards, final List<MagicCard> targets, final boolean library) {
-        final Set<Long> added = new HashSet<Long>();
+        final Set<Long> added = new HashSet<>();
         for (final MagicCard card : cards) {
             final boolean old = card.isGameKnown();
             if (library) {

@@ -20,8 +20,7 @@ public final class GameLoader {
     public static MagicGame loadSavedGame(final File gameFile) {
         final GameState gameState = GameStateFileReader.loadGameStateFromFile(gameFile);
         final MagicDuel duel = getDuelState(gameState);
-        final MagicGame game = getGameState(gameState, duel);
-        return game;
+        return getGameState(gameState, duel);
     }
 
     private static MagicGame getGameState(final GameState gameState, final MagicDuel duel) {

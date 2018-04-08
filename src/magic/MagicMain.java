@@ -66,13 +66,13 @@ public class MagicMain {
         MagicSystem.initialize(reporter);
         if (MagicSystem.showStartupStats()) {
             final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
-            System.err.println("Initalization of engine took " + duration + "s");
+            System.err.println("Initialization of engine took " + duration + "s");
         }
 
         LaFHelper.setDefaultLookAndFeel();
 
         reporter.setMessage("Starting UI...");
-        SwingUtilities.invokeLater(() -> { startUI(cmdline); });
+        SwingUtilities.invokeLater(() -> startUI(cmdline));
     }
 
 
@@ -195,7 +195,7 @@ public class MagicMain {
             DeckGenerators.setRandomDeck(player);
             return;
 
-        } else if (!deckArg.isEmpty()) { // search for deck file.
+        } else { // search for deck file.
             File deckFile = DeckUtils.findDeckFile(deckArg);
             if (deckFile != null) {
                 MagicDeck deck = DeckUtils.loadDeckFromFile(deckFile.toPath());

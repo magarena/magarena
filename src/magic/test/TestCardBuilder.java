@@ -33,7 +33,6 @@ class TestCardBuilder extends TestGameBuilder {
             }
         }
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
-        final MagicGame game=duel.nextGame();
-        return game;
+        return duel.nextGame();
     }
 }

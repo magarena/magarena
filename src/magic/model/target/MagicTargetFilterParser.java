@@ -7,7 +7,6 @@ import magic.model.ARG;
 import magic.model.MagicPermanentState;
 import magic.model.MagicType;
 import magic.model.MagicSubType;
-import magic.model.target.MagicTargetFilterFactory.Control;
 import magic.exception.ScriptParseException;
 
 import static magic.model.target.MagicTargetFilterFactory.*;

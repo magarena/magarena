@@ -144,7 +144,7 @@ public final class MText {
         String[] values = text.substring(1).split(HEADER_CHAR);
         try {
             // version = values[0];
-            useCustomFonts = Boolean.valueOf(Integer.valueOf(values[1]) == 1);
+            useCustomFonts = Integer.valueOf(values[1]) == 1;
         } catch (ArrayIndexOutOfBoundsException ex) {
             LOGGER.log(Level.INFO, String.format(
                 "Parsing header line in '%s' at item : %s",
@@ -170,12 +170,12 @@ public final class MText {
         useCustomFonts = false;
         translationsMap.clear();
         final String language = GeneralConfig.getInstance().getTranslation();
-        if (language.isEmpty() == false) {
+        if (language.isEmpty()) {
+            useCustomFonts = true;
+        } else {
             final Path dirPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.TRANSLATIONS);
             final File txtFile = dirPath.resolve(language + ".txt").toFile();
             translationsMap.putAll(getUnescapedStringsMap(txtFile));
-        } else {
-            useCustomFonts = true;
         }
     }
 
@@ -231,12 +231,12 @@ public final class MText {
                             final String fieldValue = (String) f.get(null);
                             final Long stringId = getStringId(fieldValue);
                             final String stringValue = UTF_PREFIX + StringEscapeUtils.escapeJava(getDisplayText(fieldValue));
-                            if (stringsMap.containsKey(stringId) == false) {
+                            if (!stringsMap.containsKey(stringId)) {
                                 stringsMap.put(stringId, stringValue);
                                 if (f.getAnnotation(StringContext.class) != null) {
                                     annotations.put(stringId, f.getAnnotation(StringContext.class).eg());
                                 }
-                            } else if (stringValue.equals(stringsMap.get(stringId)) == false) {
+                            } else if (!stringValue.equals(stringsMap.get(stringId))) {
                                 throw new RuntimeException(
                                         "Failed to generate translation file because the following strings have the same CRC32 value:-\n" +
                                         stringValue + "\n" + stringsMap.get(stringId));
@@ -255,10 +255,7 @@ public final class MText {
     }
 
     private static String getHeaderLineData() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(HEADER_CHAR).append(MagicSystem.VERSION);
-        sb.append(HEADER_CHAR).append(useCustomFonts ? 1 : 0);
-        return sb.toString();
+        return HEADER_CHAR + MagicSystem.VERSION + HEADER_CHAR + (useCustomFonts ? 1 : 0);
     }
 
     public static void createTranslationFile(File txtFile, Map<Long, String> stringsMap) throws FileNotFoundException, UnsupportedEncodingException {

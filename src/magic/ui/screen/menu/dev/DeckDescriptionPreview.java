@@ -67,7 +67,7 @@ class DeckDescriptionPreview extends JComponent implements PropertyChangeListene
             description = "";
             showDescription();
             file = (File) e.getNewValue();
-            if (isShowing() && file != null && file.isDirectory() == false) {
+            if (isShowing() && file != null && !file.isDirectory()) {
                 loadDescription();
             }
         }

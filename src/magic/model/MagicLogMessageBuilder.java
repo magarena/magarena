@@ -12,7 +12,7 @@ public class MagicLogMessageBuilder {
     MagicLogMessageBuilder(final MagicGame aGame) {
         game = aGame;
         messageBuilders=new StringBuilder[]{new StringBuilder(),new StringBuilder()};
-        order = new ArrayList<MagicPlayer>(2);
+        order = new ArrayList<>(2);
     }
 
     void appendMessage(final MagicPlayer player,final String message) {
@@ -22,7 +22,7 @@ public class MagicLogMessageBuilder {
         }
         messageBuilder.append(message);
 
-        if (order.contains(player) == false) {
+        if (!order.contains(player)) {
             order.add(player);
         }
     }

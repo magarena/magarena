@@ -58,9 +58,7 @@ class AnimationsPanel extends JPanel {
         cb.setToolTipText(MText.get(_S71));
         cb.setFocusable(false);
         cb.addMouseListener(aListener);
-        cb.addChangeListener((ChangeEvent e) -> {
-            panel.setEnabled(animateCheckBox.isSelected());
-        });
+        cb.addChangeListener((ChangeEvent e) -> panel.setEnabled(animateCheckBox.isSelected()));
         return cb;
     }
 

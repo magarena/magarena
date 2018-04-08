@@ -27,7 +27,7 @@ public class TextPrompt extends JLabel
     {
         ALWAYS,
         FOCUS_GAINED,
-        FOCUS_LOST;
+        FOCUS_LOST
     }
 
     private JTextComponent component;
@@ -64,7 +64,7 @@ public class TextPrompt extends JLabel
 
     /**
      *  Convenience method to change the alpha value of the current foreground
-     *  Color to the specifice value.
+     *  Color to the specific value.
      *
      *  @param alpha value in the range of 0 - 1.0.
      */
@@ -75,7 +75,7 @@ public class TextPrompt extends JLabel
 
     /**
      *  Convenience method to change the alpha value of the current foreground
-     *  Color to the specifice value.
+     *  Color to the specific value.
      *
      *  @param alpha value in the range of 0 - 255.
      */
@@ -115,10 +115,10 @@ public class TextPrompt extends JLabel
     }
 
     /**
-     *  Set the prompt Show property to control when the promt is shown.
+     *  Set the prompt Show property to control when the prompt is shown.
      *  Valid values are:
      *
-     *  Show.AWLAYS (default) - always show the prompt
+     *  Show.ALWAYS (default) - always show the prompt
      *  Show.Focus_GAINED - show the prompt when the component gains focus
      *      (and hide the prompt when focus is lost)
      *  Show.Focus_LOST - show the prompt when the component loses focus

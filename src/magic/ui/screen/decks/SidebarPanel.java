@@ -27,7 +27,7 @@ class SidebarPanel extends TexturedPanel implements IPwlWorkerListener {
         deckInfo = new DeckInfoPanel();
         deckInfo.addPropertyChangeListener(
             DeckInfoPanel.CP_LAYOUT_CHANGED,
-            (e) -> { refreshLayout(); }
+            (e) -> refreshLayout()
         );
 
         final int BORDER_WIDTH = 1;

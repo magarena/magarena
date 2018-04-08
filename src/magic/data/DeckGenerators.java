@@ -28,8 +28,8 @@ public class DeckGenerators {
     private final Map<String, RandomDeckGenerator> generatorsMap;
 
     private DeckGenerators() {
-        generatorsClass = new TreeMap<String, Class<? extends RandomDeckGenerator>>();
-        generatorsMap = new TreeMap<String, RandomDeckGenerator>();
+        generatorsClass = new TreeMap<>();
+        generatorsMap = new TreeMap<>();
     }
 
     public Set<String> getGeneratorNames() {
@@ -57,12 +57,10 @@ public class DeckGenerators {
     }
 
     public RandomDeckGenerator getDeckGenerator(final String name) {
-        if (generatorsClass.containsKey(name) && generatorsMap.containsKey(name) == false) {
+        if (generatorsClass.containsKey(name) && !generatorsMap.containsKey(name)) {
             try {
                 generatorsMap.put(name, generatorsClass.get(name).newInstance());
-            } catch (final InstantiationException ex) {
-                throw new RuntimeException(ex);
-            } catch (final IllegalAccessException ex) {
+            } catch (final InstantiationException | IllegalAccessException ex) {
                 throw new RuntimeException(ex);
             }
         }

@@ -10,7 +10,7 @@ public class ResolutionProfileResult {
     private final Map<ResolutionProfileType,Object> results;
 
     public ResolutionProfileResult() {
-        results=new HashMap<ResolutionProfileType,Object>();
+        results= new HashMap<>();
     }
 
     public void setBoundary(final ResolutionProfileType type,final Rectangle boundary) {

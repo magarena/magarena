@@ -57,7 +57,7 @@ public class MMAB extends MagicAI {
         final ArtificialPruneScoreRef scoreRef = new ArtificialPruneScoreRef(new ArtificialMultiPruneScore());
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(getMaxThreads());
-        final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
+        final List<ArtificialChoiceResults> achoices= new ArrayList<>();
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final int rounds = (size + getMaxThreads() - 1) / getMaxThreads();
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
@@ -75,18 +75,15 @@ public class MMAB extends MagicAI {
             }
             workerGame.setFastChoices(true);
 
-            executor.execute(new Runnable() {
-                @Override
-                public void run() {
-                    final MMABWorker worker=new MMABWorker(
-                        Thread.currentThread().getId(),
-                        workerGame,
-                        scoreBoard,
-                        CHEAT
-                    );
-                    worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
-                    scoreRef.update(achoice.aiScore.getScore());
-                }
+            executor.execute(() -> {
+                final MMABWorker worker=new MMABWorker(
+                    Thread.currentThread().getId(),
+                    workerGame,
+                    scoreBoard,
+                    CHEAT
+                );
+                worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
+                scoreRef.update(achoice.aiScore.getScore());
             });
         }
 
@@ -106,7 +103,7 @@ public class MMAB extends MagicAI {
         ArtificialChoiceResults bestAchoice = achoices.get(0);
         for (final ArtificialChoiceResults achoice : achoices) {
             if (bestScore.isBetter(achoice.aiScore, true) &&
-                MovesBlackList.isBlackListed(choiceGame, event, achoice.choiceResults) == false) {
+                !MovesBlackList.isBlackListed(choiceGame, event, achoice.choiceResults)) {
                 bestScore = achoice.aiScore;
                 bestAchoice = achoice;
             }

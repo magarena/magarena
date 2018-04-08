@@ -29,8 +29,6 @@ class KeywordsScrollPane extends JScrollPane {
     }
 
     private void setScrollbarToTop() {
-        SwingUtilities.invokeLater(() -> {
-            getVerticalScrollBar().setValue(0);
-        });
+        SwingUtilities.invokeLater(() -> getVerticalScrollBar().setValue(0));
     }
 }

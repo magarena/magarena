@@ -25,7 +25,7 @@ class ScanWorker extends SwingWorker<ImagesDownloadList, Void> {
     }
 
     @Override
-    protected ImagesDownloadList doInBackground() throws Exception {
+    protected ImagesDownloadList doInBackground() {
         return getImagesDownloadList(listener, displayMode);
     }
 

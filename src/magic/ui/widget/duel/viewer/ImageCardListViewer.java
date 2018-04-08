@@ -13,8 +13,6 @@ import java.awt.Stroke;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -73,18 +71,15 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
     }
 
     private void setMouseWheelListener() {
-        addMouseWheelListener(new MouseWheelListener() {
-            @Override
-            public void mouseWheelMoved(MouseWheelEvent event) {
-                final int cardIndex = getCardIndexAt(event.getX(), event.getY());
-                if (event.getWheelRotation() < 0) { // rotate mousewheel forward
-                    if (cardIndex >= 0) {
-                        showCardPopup(cardIndex);
-                    }
-                } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
-                    if (cardIndex >= 0) {
-                        controller.hideInfo();
-                    }
+        addMouseWheelListener(event -> {
+            final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+            if (event.getWheelRotation() < 0) { // rotate mousewheel forward
+                if (cardIndex >= 0) {
+                    showCardPopup(cardIndex);
+                }
+            } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
+                if (cardIndex >= 0) {
+                    controller.hideInfo();
                 }
             }
         });
@@ -184,7 +179,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
 
         this.imageMode = mode;
 
-        final List<Point> tCardPoints=new ArrayList<Point>();
+        final List<Point> tCardPoints= new ArrayList<>();
         final int cardCount = aCardList.size();
         final int preferredWidth = CARD_WIDTH * cardCount + (cardCount - 1) * SPACING;
         int availableWidth = getWidth();

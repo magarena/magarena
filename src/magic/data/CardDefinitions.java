@@ -30,7 +30,6 @@ import java.util.stream.Stream;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
-import magic.model.event.MagicHandCastActivation;
 import magic.ui.MagicCardImages;
 import magic.ui.screen.images.download.CardImageDisplayMode;
 import magic.utility.FileIO;
@@ -69,7 +68,7 @@ public class CardDefinitions {
         CompilerConfiguration.DEFAULT.getOptimizationOptions().put(CompilerConfiguration.INVOKEDYNAMIC, Boolean.TRUE);
     }
 
-    // groovy shell for evaluating groovy card scripts with autmatic imports
+    // groovy shell for evaluating groovy card scripts with automatic imports
     private static final GroovyShell shell = new GroovyShell(
         new CompilerConfiguration().addCompilationCustomizers(
             new ImportCustomizer()
@@ -287,16 +286,17 @@ public class CardDefinitions {
     }
 
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
-        if (color == MagicColor.Black) {
-            return getCard("Swamp");
-        } else if (color == MagicColor.Blue) {
-            return getCard("Island");
-        } else if (color == MagicColor.Green) {
-            return getCard("Forest");
-        } else if (color == MagicColor.Red) {
-            return getCard("Mountain");
-        } else if (color == MagicColor.White) {
-            return getCard("Plains");
+        switch (color) {
+            case Black:
+                return getCard("Swamp");
+            case Blue:
+                return getCard("Island");
+            case Green:
+                return getCard("Forest");
+            case Red:
+                return getCard("Mountain");
+            case White:
+                return getCard("Plains");
         }
         throw new RuntimeException("No matching basic land for MagicColor " + color);
     }
@@ -352,7 +352,7 @@ public class CardDefinitions {
     private static void printStatistics() {
         if (MagicSystem.showStartupStats()) {
             final CardStatistics statistics=new CardStatistics(getDefaultPlayableCardDefs());
-            statistics.printStatictics(System.err);
+            statistics.printStatistics(System.err);
         }
     }
 
@@ -436,7 +436,7 @@ public class CardDefinitions {
     }
 
     public static List<String> getMissingCardNames() {
-        List<String> names = new ArrayList<String>(getMissingCards().size());
+        List<String> names = new ArrayList<>(getMissingCards().size());
         for (final MagicCardDefinition cdef : getMissingCards()) {
             names.add(cdef.getName());
         }

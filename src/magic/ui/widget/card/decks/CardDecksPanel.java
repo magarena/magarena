@@ -1,8 +1,6 @@
 package magic.ui.widget.card.decks;
 
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
@@ -11,7 +9,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.CancellationException;
@@ -84,12 +81,9 @@ public class CardDecksPanel extends JPanel {
         // test if these constraints are updated especially if you add an 'h' constraint.
         add(scroller, "w 100%, growy, pushy");
 
-        cooldownTimer = new Timer(TIMER_DELAY_MSECS, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                cooldownTimer.stop();
-                showDecksContainingCard(CardDecksPanel.this.card);
-            }
+        cooldownTimer = new Timer(TIMER_DELAY_MSECS, e -> {
+            cooldownTimer.stop();
+            showDecksContainingCard(CardDecksPanel.this.card);
         });
 
     }
@@ -115,7 +109,7 @@ public class CardDecksPanel extends JPanel {
 
     public void setCard(MagicCardDefinition aCard) {
 
-        if (worker != null && worker.isDone() == false && worker.isCancelled() == false) {
+        if (worker != null && !worker.isDone() && !worker.isCancelled()) {
             worker.cancel(true);
         }
 
@@ -131,7 +125,7 @@ public class CardDecksPanel extends JPanel {
         worker = new SwingWorker<File[], Void>() {
 
             @Override
-            protected File[] doInBackground() throws Exception {
+            protected File[] doInBackground() {
                 final List<File> deckFiles = getDecksContainingCard(card);
                 sortDecksByFilename(deckFiles);
                 return deckFiles.toArray(new File[0]);
@@ -183,13 +177,8 @@ public class CardDecksPanel extends JPanel {
              * In Windows, DirectoryStream returns a list of files already sorted by filename. In Linux it does not, so need to specifically sort list.
              */
             private void sortDecksByFilename(final List<File> files) {
-                if (isCancelled() == false) {
-                    Collections.sort(files, new Comparator<File>() {
-                        @Override
-                        public int compare(File o1, File o2) {
-                            return o1.getAbsolutePath().compareTo(o2.getAbsolutePath());
-                        }
-                    });
+                if (!isCancelled()) {
+                    files.sort(Comparator.comparing(File::getAbsolutePath));
                 }
             }
 

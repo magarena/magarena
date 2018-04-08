@@ -2,7 +2,6 @@ package magic.model.event;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
-import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
@@ -18,7 +17,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition {
@@ -47,8 +45,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
 
     private final boolean canPayCosts(final MagicGame game, final MagicPermanent source) {
         for (final MagicEvent event : getCostEvent(source)) {
-            if (event.hasChoice() == false) {
-                if (event.isSatisfied() == false) {
+            if (!event.hasChoice()) {
+                if (!event.isSatisfied()) {
                     return false;
                 } else {
                     game.executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
@@ -56,8 +54,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             }
         }
         for (final MagicEvent event : getCostEvent(source)) {
-            if (event.hasChoice() == true) {
-                if (event.isSatisfied() == false) {
+            if (event.hasChoice()) {
+                if (!event.isSatisfied()) {
                     return false;
                 }
             }

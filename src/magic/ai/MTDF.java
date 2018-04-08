@@ -119,7 +119,7 @@ public class MTDF extends MagicAI {
             table.put(id, entry);
         }
 
-        if (d == 0 || game.isFinished() || hasTime() == false) {
+        if (d == 0 || game.isFinished() || !hasTime()) {
             /* leaf node */
             int g = game.getScore();
             entry.update(g, alpha, beta);

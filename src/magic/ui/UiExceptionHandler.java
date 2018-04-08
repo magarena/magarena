@@ -61,15 +61,12 @@ public class UiExceptionHandler extends FileExceptionHandler {
 
     private static void doScreenShot(final Component container) {
         if (container != null) {
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        final Path filePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("crash.png");
-                        ImageHelper.doScreenshotToFile(container, filePath);
-                    } catch (Exception e) {
-                        System.err.println("ScreenShot failed : " + e.toString());
-                    }
+            SwingUtilities.invokeLater(() -> {
+                try {
+                    final Path filePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("crash.png");
+                    ImageHelper.doScreenshotToFile(container, filePath);
+                } catch (Exception e) {
+                    System.err.println("ScreenShot failed : " + e.toString());
                 }
             });
         }

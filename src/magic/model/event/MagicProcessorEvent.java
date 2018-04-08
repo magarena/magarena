@@ -2,7 +2,6 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.choice.MagicTargetChoice;

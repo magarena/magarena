@@ -23,6 +23,6 @@ public class TextFilterDialog extends FilterDialog {
 
     @Override
     public boolean isFiltering() {
-        return nameTextField.getText().trim().isEmpty() == false;
+        return !nameTextField.getText().trim().isEmpty();
     }
 }

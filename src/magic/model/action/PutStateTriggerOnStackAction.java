@@ -13,7 +13,7 @@ public class PutStateTriggerOnStackAction extends MagicAction {
 
     @Override
     public boolean isLegal(final MagicGame game) {
-        return game.hasItem(event.getSource(), event.getChoiceDescription()) == false;
+        return !game.hasItem(event.getSource(), event.getChoiceDescription());
     }
 
     @Override

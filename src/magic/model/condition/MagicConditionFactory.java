@@ -10,7 +10,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
-import magic.model.MagicType;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.target.MagicOtherCardTargetFilter;

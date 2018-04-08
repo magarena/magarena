@@ -68,7 +68,7 @@ public class MagicMulliganChoice extends MagicChoice {
 
         int playable = 0;
         for (final MagicCard card : assumedPlayer.getHand()) {
-            if (card.hasType(MagicType.Land) == false &&
+            if (!card.hasType(MagicType.Land) &&
                 card.getCost().getCondition().accept(card)) {
                 playable++;
             }

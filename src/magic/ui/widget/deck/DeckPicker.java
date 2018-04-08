@@ -4,14 +4,11 @@ import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
@@ -113,21 +110,15 @@ public class DeckPicker extends JPanel {
 
     private void setListeners() {
         // deck types combo
-        deckTypeJCombo.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(final ItemEvent e) {
-                if (e.getStateChange() == ItemEvent.SELECTED) {
-                    // ensures dropdown list closes on click *before* refreshing decks list.
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            selectedDeckType = (DeckType) e.getItem();
-                            refreshDecksList();
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                        }
-                    });
-                }
+        deckTypeJCombo.addItemListener(e -> {
+            if (e.getStateChange() == ItemEvent.SELECTED) {
+                // ensures dropdown list closes on click *before* refreshing decks list.
+                SwingUtilities.invokeLater(() -> {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                    selectedDeckType = (DeckType) e.getItem();
+                    refreshDecksList();
+                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                });
             }
         });
         // deck names list : need to be able to add/remove to prevent multiple events.
@@ -207,12 +198,7 @@ public class DeckPicker extends JPanel {
      * filename. In Linux it does not, so need to specifically sort list.
      */
     private void sortDecksByFilename(final List<MagicDeck> decks) {
-        Collections.sort(decks, new Comparator<MagicDeck>() {
-            @Override
-            public int compare(MagicDeck o1, MagicDeck o2) {
-                return o1.getFilename().compareToIgnoreCase(o2.getFilename());
-            }
-        });
+        decks.sort((o1, o2) -> o1.getFilename().compareToIgnoreCase(o2.getFilename()));
     }
 
     private List<MagicDeck> loadDecks(final DirectoryStream<Path> ds) {
@@ -254,26 +240,29 @@ public class DeckPicker extends JPanel {
             @Override
             public void valueChanged(final ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            final MagicDeck deck = decksJList.getSelectedValue();
-                            for (IDeckConsumer listener : listeners) {
-                                if (selectedDeckType == DeckType.Random) {
+                    SwingUtilities.invokeLater(() -> {
+                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                        final MagicDeck deck = decksJList.getSelectedValue();
+                        for (IDeckConsumer listener : listeners) {
+                            switch (selectedDeckType) {
+                                case Random:
                                     listener.setDeck(deck.getName(), selectedDeckType);
-                                } else if (selectedDeckType == DeckType.PopularDecks) {
+                                    break;
+                                case PopularDecks:
                                     listener.setDeck(deck);
-                                } else if (selectedDeckType == DeckType.WinningDecks) {
+                                    break;
+                                case WinningDecks:
                                     listener.setDeck(deck);
-                                } else if (selectedDeckType == DeckType.RecentDecks) {
+                                    break;
+                                case RecentDecks:
                                     listener.setDeck(deck);
-                                } else {
+                                    break;
+                                default:
                                     listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
-                                }
+                                    break;
                             }
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                         }
+                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     });
                 }
             }

@@ -18,7 +18,7 @@ class NewGameWorker extends SwingWorker<MagicGame, Void> {
     }
 
     @Override
-    protected MagicGame doInBackground() throws Exception {
+    protected MagicGame doInBackground() {
         return duel.nextGame();
     }
 
