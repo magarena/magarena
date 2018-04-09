@@ -37,7 +37,7 @@ public class MagicExploreEvent extends MagicEvent {
             if (top.isLand()) {
                 game.doAction(new ShiftCardAction(top, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
             } else {
-                game.doAction(new ChangeCountersAction(perm, MagicCounterType.PlusOne, 1));
+                game.doAction(new ChangeCountersAction(perm, perm, MagicCounterType.PlusOne, 1));
                 game.addEvent(new MagicEvent(
                     perm,
                     player,

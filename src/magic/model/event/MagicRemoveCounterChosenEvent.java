@@ -27,6 +27,7 @@ public class MagicRemoveCounterChosenEvent extends MagicEvent {
     private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
         event.processTargetPermanent(game, (final MagicPermanent perm) ->
             game.doAction(new ChangeCountersAction(
+                event.getSource(),
                 perm,
                 event.getRefCounterType(),
                 -1

@@ -51,6 +51,7 @@ public class MagicAwakenEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
         event.processTargetPermanent(game, (final MagicPermanent it) -> {
             game.doAction(new ChangeCountersAction(
+                event.getSource(),
                 it,
                 MagicCounterType.PlusOne,
                 event.getRefInt()

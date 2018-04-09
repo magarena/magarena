@@ -16,7 +16,7 @@ public class MagicMegamorphActivation extends MagicMorphActivation {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new TurnFaceUpAction(event.getPermanent()));
-        game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1));
+        game.doAction(new ChangeCountersAction(event.getSource(), event.getPermanent(), MagicCounterType.PlusOne, 1));
         game.logAppendMessage(
             event.getPlayer(),
             MagicMessage.format("%s turns %s face up and puts a +1/+1 counter on it.", event.getPlayer(), event.getPermanent())

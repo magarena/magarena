@@ -14,7 +14,7 @@ public class MagicPayEnergyEvent extends MagicEvent {
     private final MagicCondition cond;
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
-        game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, -event.getRefInt()));
+        game.doAction(new ChangeCountersAction(event.getSource(), event.getPlayer(), MagicCounterType.Energy, -event.getRefInt()));
 
     public MagicPayEnergyEvent(final MagicSource source,final int amount) {
         this(source, source.getController(), amount);
