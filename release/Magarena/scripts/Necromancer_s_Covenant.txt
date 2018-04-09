@@ -5,8 +5,7 @@ value=3.667
 rarity=R
 type=Enchantment
 cost={3}{W}{B}{B}
-ability=When SN enters the battlefield, exile all creature cards from target player's graveyard, then create a 2/2 black Zombie creature token for each card exiled this way.;\
-        Zombies you control have lifelink.
+ability=Zombies you control have lifelink.
 timing=enchantment
 oracle=When Necromancer's Covenant enters the battlefield, exile all creature cards from target player's graveyard, then create a 2/2 black Zombie creature token for each card exiled this way.\nZombies you control have lifelink.
-status=needs groovy
+requires_groovy_code

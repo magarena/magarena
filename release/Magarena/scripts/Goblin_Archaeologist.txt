@@ -6,7 +6,6 @@ type=Creature
 subtype=Goblin,Artificer
 cost={1}{R}
 pt=1/2
-ability={R}, {T}: Flip a coin. If you win the flip, destroy target artifact and untap SN. If you lose the flip, sacrifice SN.
 timing=main
 oracle={R}, {T}: Flip a coin. If you win the flip, destroy target artifact and untap Goblin Archaeologist. If you lose the flip, sacrifice Goblin Archaeologist.
-status=needs groovy
+requires_groovy_code

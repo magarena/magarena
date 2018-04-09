@@ -4,7 +4,6 @@ value=3.800
 rarity=C
 type=Instant
 cost={2}{B}
-effect=Exile all creature cards from target player's graveyard. You gain 3 life for each card exiled this way.
 timing=removal
 oracle=Exile all creature cards from target player's graveyard. You gain 3 life for each card exiled this way.
-status=needs groovy
+requires_groovy_code
