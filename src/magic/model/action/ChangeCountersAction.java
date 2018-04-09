@@ -10,14 +10,14 @@ import magic.model.trigger.MagicTriggerType;
 
 public class ChangeCountersAction extends MagicAction {
 
-    private final MagicSource source;
+    private final MagicPlayer player;
     private final MagicObject obj;
     private final MagicCounterType counterType;
     private int amount;
     private final boolean hasScore;
 
-    private ChangeCountersAction(final MagicSource source, final MagicObject obj, final MagicCounterType counterType, final int amount, final boolean hasScore) {
-        this.source = source;
+    private ChangeCountersAction(final MagicPlayer player, final MagicObject obj, final MagicCounterType counterType, final int amount, final boolean hasScore) {
+        this.player = player;
         this.obj=obj;
         this.counterType=counterType;
 
@@ -29,15 +29,15 @@ public class ChangeCountersAction extends MagicAction {
     }
 
     public static ChangeCountersAction Enters(final MagicPermanent permanent, final MagicCounterType counterType, final int amount) {
-        return new ChangeCountersAction(permanent, permanent, counterType, amount, false);
+        return new ChangeCountersAction(permanent.getController(), permanent, counterType, amount, false);
     }
 
-    public ChangeCountersAction(final MagicSource source, final MagicObject obj, final MagicCounterType counterType, final int amount) {
-        this(source, obj, counterType, amount, true);
+    public ChangeCountersAction(final MagicPlayer player, final MagicObject obj, final MagicCounterType counterType, final int amount) {
+        this(player, obj, counterType, amount, true);
     }
 
-    public MagicSource getSource() {
-        return source;
+    public MagicPlayer getPlayer() {
+        return player;
     }
 
     public MagicObject getObj() {
@@ -72,10 +72,10 @@ public class ChangeCountersAction extends MagicAction {
         }
 
         if (amount != 0) {
-            game.executeTrigger(MagicTriggerType.WhenOneOrMoreCountersAreChanged, new MagicCounterChangeTriggerData(obj, counterType, amount));
+            game.executeTrigger(MagicTriggerType.WhenOneOrMoreCountersAreChanged, new MagicCounterChangeTriggerData(player, obj, counterType, amount));
         }
         for (int i = 0; i < Math.abs(amount); i++) {
-            game.executeTrigger(MagicTriggerType.WhenACounterIsChanged, new MagicCounterChangeTriggerData(obj, counterType, amount));
+            game.executeTrigger(MagicTriggerType.WhenACounterIsChanged, new MagicCounterChangeTriggerData(player, obj, counterType, amount));
         }
         game.setStateCheckRequired();
     }
