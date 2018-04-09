@@ -2,9 +2,10 @@
     new IfCounterWouldChangeTrigger() {
         @Override
         public boolean accept(final MagicPermanent permanent, final ChangeCountersAction action) {
-            return action.getObj().isCreaturePermanent() &&
-                permanent.isFriend(action.getObj()) &&
-                action.getCounterType() == MagicCounterType.PlusOne;
+            return action.getAmount() > 0 &&
+                action.getCounterType() == MagicCounterType.PlusOne &&
+                action.getObj().isCreaturePermanent() &&
+                permanent.isFriend(action.getObj());
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ChangeCountersAction action) {
