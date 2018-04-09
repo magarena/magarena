@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new GainControlAction(it,event.getPermanent()));
-                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1));
+                game.doAction(new ChangeCountersAction(it,event.getPermanent(),MagicCounterType.Charge,1));
             });
         }
     },
@@ -61,7 +61,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.Charge, event.isMode(1) ? 1 : -1));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.Charge, event.isMode(1) ? 1 : -1));
         }
     }
 ]

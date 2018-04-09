@@ -17,6 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
                     event.getRefInt()

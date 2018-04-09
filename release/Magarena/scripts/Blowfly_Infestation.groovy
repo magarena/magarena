@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new ChangeCountersAction(it,MagicCounterType.MinusOne,1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(),it,MagicCounterType.MinusOne,1));
             });
         }
     }

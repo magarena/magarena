@@ -24,7 +24,7 @@
                 final MagicPermanent permanent=event.getPermanent();
                 event.processTargetPermanent(game, {
                     game.doAction(new SacrificeAction(it));
-                    game.doAction(new ChangeCountersAction(permanent,MagicCounterType.PlusOne, 1));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(),permanent,MagicCounterType.PlusOne, 1));
                     game.doAction(new GainAbilityAction(permanent, MagicAbility.Flying, MagicStatic.Forever));
                     game.doAction(new GainAbilityAction(permanent, MagicAbility.Trample, MagicStatic.Forever));
                     final MagicEvent newEvent=executeTrigger(game, permanent, MagicPayedCost.NO_COST);

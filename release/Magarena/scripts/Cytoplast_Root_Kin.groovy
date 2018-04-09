@@ -25,8 +25,8 @@ def choice = MagicTargetChoice.Positive("another target creature you control wit
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 if (it.hasCounters(MagicCounterType.PlusOne)) {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, -1));
-                    game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.PlusOne, -1));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.PlusOne, 1));
                 }
             });
         }

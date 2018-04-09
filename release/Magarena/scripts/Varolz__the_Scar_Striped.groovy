@@ -29,7 +29,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amt = event.getRefCard().genPowerToughness().getPositivePower();
-                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,amt));
+                game.doAction(new ChangeCountersAction(event.getPlayer(),it,MagicCounterType.PlusOne,amt));
             });
         }
     }

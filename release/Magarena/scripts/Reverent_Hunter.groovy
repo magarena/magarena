@@ -12,6 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new ChangeCountersAction(
+                event.getPlayer(),
                 permanent,
                 MagicCounterType.PlusOne,
                 permanent.getController().getDevotion(MagicColor.Green)

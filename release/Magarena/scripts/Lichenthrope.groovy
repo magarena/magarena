@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (damage.getTarget() == permanent) {
                 final int amount = damage.replace();
-                game.doAction(new ChangeCountersAction(permanent, MagicCounterType.MinusOne, amount));
+                game.doAction(new ChangeCountersAction(permanent.getController(), permanent, MagicCounterType.MinusOne, amount));
             }
             return MagicEvent.NONE;
         }

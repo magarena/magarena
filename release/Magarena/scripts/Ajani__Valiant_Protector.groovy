@@ -46,7 +46,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getLife();
-                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, amount));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.PlusOne, amount));
                 game.doAction(new GainAbilityAction(it, MagicAbility.Trample, MagicStatic.UntilEOT));
             });
         }

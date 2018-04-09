@@ -14,11 +14,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
                     event.getPlayer().getHandSize()
                 ));
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
                     -it.getHandSize()

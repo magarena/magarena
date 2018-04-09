@@ -23,7 +23,7 @@
                 final MagicType type -> toDiscard.every({ it.hasType(type) })
             })) {
 
-                game.doAction(new ChangeCountersAction(event.getSource(), MagicCounterType.PlusOne, 2));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getSource(), MagicCounterType.PlusOne, 2));
             }
         }
     }

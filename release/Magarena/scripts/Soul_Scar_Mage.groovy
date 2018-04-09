@@ -7,7 +7,7 @@
                 damage.getTargetPermanent().isController(permanent.getOpponent())) {
 
                 final int amount = damage.replace();
-                game.doAction(new ChangeCountersAction(damage.getTargetPermanent(), MagicCounterType.MinusOne, amount));
+                game.doAction(new ChangeCountersAction(permanent.getController(), damage.getTargetPermanent(), MagicCounterType.MinusOne, amount));
             }
             return MagicEvent.NONE;
         }

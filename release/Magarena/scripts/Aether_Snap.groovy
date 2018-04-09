@@ -14,7 +14,7 @@
             PERMANENT.filter(event) each {
                 if (it.hasCounters()) {
                     for (MagicCounterType type : MagicCounterType.values()) {
-                        game.doAction(new ChangeCountersAction(it, type, -it.getCounters(type)));
+                        game.doAction(new ChangeCountersAction(event.getPlayer(), it, type, -it.getCounters(type)));
                     }
                 }
                 if (it.isToken()) {

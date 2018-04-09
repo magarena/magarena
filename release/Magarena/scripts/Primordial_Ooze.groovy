@@ -2,7 +2,7 @@
     new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            game.doAction(new ChangeCountersAction(permanent, MagicCounterType.PlusOne, 1));
+            game.doAction(new ChangeCountersAction(permanent.getController(), permanent, MagicCounterType.PlusOne, 1));
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);
             return new MagicEvent(
                 permanent,

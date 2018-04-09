@@ -34,7 +34,7 @@ def TARGET_CREATURE_WITH_BOUNTY_COUNTER = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                 game.doAction(new ChangeCountersAction(it,MagicCounterType.Tower,1));
+                 game.doAction(new ChangeCountersAction(event.getPlayer(),it,MagicCounterType.Tower,1));
             });
         }
     },

@@ -23,7 +23,7 @@ def filter = MagicTargetFilterFactory.Permanent("Vampire you control")
                 MagicLocationType.Exile
             ));
             filter.filter(event) each {
-                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.PlusOne, 1));
             }
         }
     }

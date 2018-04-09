@@ -16,7 +16,7 @@
             final int attackers = player.getNrOfPermanents(
                 ATTACKING_CREATURE_YOU_CONTROL
             );
-            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,attackers));
+            game.doAction(new ChangeCountersAction(event.getPlayer(),event.getPermanent(),MagicCounterType.PlusOne,attackers));
             game.logAppendValue(player,attackers);
         }
     }

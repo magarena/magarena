@@ -37,6 +37,7 @@ def TARGET_ARTIFACT_CREATURE_OR_LAND_WITH_COUNTERS = new MagicTargetChoice(
                 for (final MagicCounterType counterType : MagicCounterType.values()) {
                     if (it.hasCounters(counterType)) {
                         game.doAction(new ChangeCountersAction(
+                            event.getPlayer(),
                             it,
                             counterType,
                             it.getCounters(counterType)

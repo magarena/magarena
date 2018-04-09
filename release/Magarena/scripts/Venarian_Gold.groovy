@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent enchanted = event.getPermanent().getEnchantedPermanent();
             game.doAction(new TapAction(enchanted));
-            game.doAction(new ChangeCountersAction(enchanted, MagicCounterType.Sleep, event.getRefInt()));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), enchanted, MagicCounterType.Sleep, event.getRefInt()));
         }
     },
 
@@ -45,7 +45,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(event.getRefPermanent(),MagicCounterType.Sleep,-1));
+            game.doAction(new ChangeCountersAction(event.getPlayer(),event.getRefPermanent(),MagicCounterType.Sleep,-1));
         }
     }
 ]

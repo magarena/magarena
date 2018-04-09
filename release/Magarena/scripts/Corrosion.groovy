@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 ARTIFACT_YOU_CONTROL.filter(it) each {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Rust, 1));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.Rust, 1));
                 }
                 ARTIFACT_YOU_CONTROL.filter(it) each {
                     if (it.getConvertedCost() <= it.getCounters(MagicCounterType.Rust)) {

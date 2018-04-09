@@ -22,7 +22,7 @@ def A_CREATURE_CARD_FROM_GRAVEYARD = new MagicTargetChoice("a creature card from
             final MagicCard exiled = event.getRefCard();
             final int amount = exiled.getConvertedCost();
             game.logAppendX(event.getPlayer(), amount);
-            game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusZeroPlusOne, amount));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.PlusZeroPlusOne, amount));
         }
     }
 ]

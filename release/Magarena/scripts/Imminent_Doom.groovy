@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 game.doAction(new DealDamageAction(event.getSource(), it, event.getRefInt()));
-                game.doAction(new ChangeCountersAction(event.getSource(), MagicCounterType.Doom, 1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getSource(), MagicCounterType.Doom, 1));
             });
         }
     }

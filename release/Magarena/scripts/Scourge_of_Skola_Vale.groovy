@@ -26,7 +26,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount=event.getRefPermanent().getToughness();
             game.logAppendValue(player,amount);
-            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,amount));
+            game.doAction(new ChangeCountersAction(event.getPlayer(),event.getPermanent(),MagicCounterType.PlusOne,amount));
         }
     }
 ]

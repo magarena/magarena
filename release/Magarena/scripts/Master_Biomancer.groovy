@@ -13,7 +13,7 @@ def MUTANT = new MagicStatic(MagicLayer.Type) {
                 otherPermanent.isFriend(permanent)) {
 
                 final int amount = permanent.getPower();
-                game.doAction(new ChangeCountersAction(otherPermanent,MagicCounterType.PlusOne,amount));
+                game.doAction(new ChangeCountersAction(permanent.getController(),otherPermanent,MagicCounterType.PlusOne,amount));
                 game.doAction(new AddStaticAction(otherPermanent,MUTANT));
                 game.logAppendMessage(
                     permanent.getController(),

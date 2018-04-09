@@ -38,7 +38,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
             event.processTargetPermanent(game, {
                 final int amount=event.getRefInt();
                 game.logAppendValue(event.getPlayer(),amount);
-                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, amount));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.PlusOne, amount));
                 if (!it.hasType(MagicType.Creature) && !it.hasSubType(MagicSubType.Vehicle)) {
                     game.doAction(new BecomesCreatureAction(it, PT, ST));
                 }
