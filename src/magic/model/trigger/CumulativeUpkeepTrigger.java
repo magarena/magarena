@@ -28,7 +28,7 @@ public class CumulativeUpkeepTrigger extends AtYourUpkeepTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
         game.doAction(new ChangeCountersAction(
-            permanent,
+            permanent.getController(),
             permanent,
             MagicCounterType.Age,
             1

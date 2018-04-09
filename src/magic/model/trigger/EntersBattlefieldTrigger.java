@@ -138,7 +138,7 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
             private final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
                 if (event.isYes()) {
                     game.doAction(new ChangeCountersAction(
-                        event.getSource(),
+                        event.getPlayer(),
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
                         event.getRefInt()

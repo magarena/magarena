@@ -163,7 +163,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new ChangeCountersAction(event.getSource(), event.getRefPlayer(), MagicCounterType.Poison, n));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getRefPlayer(), MagicCounterType.Poison, n));
             }
         };
     }
@@ -192,7 +192,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new ChangeCountersAction(event.getSource(), event.getPermanent(), MagicCounterType.PlusOne, n));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.PlusOne, n));
                 game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Renowned));
             }
         };

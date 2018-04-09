@@ -32,7 +32,6 @@ public class BloodthirstTrigger extends EntersBattlefieldTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(ChangeCountersAction.Enters(
-            event.getSource(),
             event.getPermanent(),
             MagicCounterType.PlusOne,
             amount
