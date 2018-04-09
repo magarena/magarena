@@ -22,7 +22,7 @@ public class MagicAddCounterChosenEvent extends MagicEvent {
     private static final MagicEventAction EventAction = (final MagicGame game, final MagicEvent event) -> {
         event.processTargetPermanent(game, (final MagicPermanent perm) ->
             game.doAction(new ChangeCountersAction(
-                event.getSource(),
+                event.getPlayer(),
                 perm,
                 event.getRefCounterType(),
                 1

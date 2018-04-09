@@ -56,6 +56,6 @@ public class MagicSuspendActivation extends MagicCardAbilityActivation {
     private void suspend(final MagicGame game, final MagicEvent event) {
         final MagicCard card = event.getCard();
         game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
-        game.doAction(new ChangeCountersAction(card, card, MagicCounterType.Time, event.getRefInt()));
+        game.doAction(new ChangeCountersAction(card.getController(), card, MagicCounterType.Time, event.getRefInt()));
     }
 }

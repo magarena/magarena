@@ -61,7 +61,7 @@ public class MagicScavengeActivation extends MagicCardAbilityActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game, (final MagicPermanent perm) ->
             game.doAction(new ChangeCountersAction(
-                event.getSource(),
+                event.getPlayer(),
                 perm,
                 MagicCounterType.PlusOne,
                 event.getRefInt()
