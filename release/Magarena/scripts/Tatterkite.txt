@@ -6,8 +6,7 @@ type=Artifact,Creature
 subtype=Scarecrow
 cost={3}
 pt=2/1
-ability=Flying;\
-        SN can't have counters put on it.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nTatterkite can't have counters put on it.
-status=not supported: when-counter-placed
