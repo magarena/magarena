@@ -7,7 +7,6 @@ type=Creature
 subtype=Fungus
 cost={2}{B}{G}
 pt=4/4
-ability=If one or more +1/+1 counters would be put on a creature you control, twice that many +1/+1 counters are put on it instead.
 timing=main
+requires_groovy_code
 oracle=If one or more +1/+1 counters would be put on a creature you control, twice that many +1/+1 counters are put on it instead.
-status=not supported: when-counter-placed

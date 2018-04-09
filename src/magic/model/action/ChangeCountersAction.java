@@ -58,12 +58,13 @@ public class ChangeCountersAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
+        game.executeTrigger(MagicTriggerType.IfCounterWouldChange, this);
+
         if (amount == 0) {
             return;
         }
-        final int oldScore = hasScore && obj.isPermanent() ? ((MagicPermanent)obj).getScore() : 0;
 
-        game.executeTrigger(MagicTriggerType.IfCounterWouldChange, this);
+        final int oldScore = hasScore && obj.isPermanent() ? ((MagicPermanent)obj).getScore() : 0;
 
         obj.changeCounters(counterType, amount);
         if (hasScore && obj.isPermanent()) {
