@@ -4,17 +4,20 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.trigger.MagicCounterChangeTriggerData;
 import magic.model.trigger.MagicTriggerType;
 
 public class ChangeCountersAction extends MagicAction {
 
+    private final MagicSource source;
     private final MagicObject obj;
     private final MagicCounterType counterType;
     private int amount;
     private final boolean hasScore;
 
-    private ChangeCountersAction(final MagicObject obj, final MagicCounterType counterType, final int amount, final boolean hasScore) {
+    private ChangeCountersAction(final MagicSource source, final MagicObject obj, final MagicCounterType counterType, final int amount, final boolean hasScore) {
+        this.source = source;
         this.obj=obj;
         this.counterType=counterType;
 
@@ -26,11 +29,15 @@ public class ChangeCountersAction extends MagicAction {
     }
 
     public static ChangeCountersAction Enters(final MagicPermanent permanent, final MagicCounterType counterType, final int amount) {
-        return new ChangeCountersAction(permanent, counterType, amount, false);
+        return new ChangeCountersAction(permanent, permanent, counterType, amount, false);
     }
 
-    public ChangeCountersAction(final MagicObject obj, final MagicCounterType counterType, final int amount) {
-        this(obj, counterType, amount, true);
+    public ChangeCountersAction(final MagicSource source, final MagicObject obj, final MagicCounterType counterType, final int amount) {
+        this(source, obj, counterType, amount, true);
+    }
+
+    public MagicSource getSource() {
+        return source;
     }
 
     public MagicObject getObj() {
