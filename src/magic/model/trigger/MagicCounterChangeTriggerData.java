@@ -2,6 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicObject;
+import magic.model.MagicPlayer;
 
 public class MagicCounterChangeTriggerData {
 

@@ -3,8 +3,8 @@ package magic.model.action;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicObject;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.trigger.MagicCounterChangeTriggerData;
 import magic.model.trigger.MagicTriggerType;
 
