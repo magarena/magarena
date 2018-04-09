@@ -64,6 +64,7 @@ public class FadeVanishCounterTrigger extends AtUpkeepTrigger {
 
     private static final MagicEventAction REMOVE_TIME_COUNTER = (final MagicGame game, final MagicEvent event) ->
         game.doAction(new ChangeCountersAction(
+            event.getSource(),
             event.getPermanent(),
             MagicCounterType.Time,
             -1
@@ -71,6 +72,7 @@ public class FadeVanishCounterTrigger extends AtUpkeepTrigger {
 
     private static final MagicEventAction REMOVE_AND_SAC = (final MagicGame game, final MagicEvent event) -> {
         game.doAction(new ChangeCountersAction(
+            event.getSource(),
             event.getPermanent(),
             MagicCounterType.Time,
             -1
@@ -80,6 +82,7 @@ public class FadeVanishCounterTrigger extends AtUpkeepTrigger {
 
     private static final MagicEventAction REMOVE_FADE_COUNTER = (final MagicGame game, final MagicEvent event) ->
         game.doAction(new ChangeCountersAction(
+            event.getSource(),
             event.getPermanent(),
             MagicCounterType.Fade,
             -1

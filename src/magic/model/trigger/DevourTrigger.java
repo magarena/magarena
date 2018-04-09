@@ -41,6 +41,7 @@ public class DevourTrigger extends EntersBattlefieldTrigger {
                 final MagicPermanent permanent = event.getPermanent();
                 game.doAction(new SacrificeAction(creature));
                 game.doAction(new ChangeCountersAction(
+                    event.getSource(),
                     permanent,
                     MagicCounterType.PlusOne,
                     amount

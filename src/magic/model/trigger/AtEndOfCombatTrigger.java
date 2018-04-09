@@ -108,7 +108,7 @@ public abstract class AtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
-                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1));
+                game.doAction(new ChangeCountersAction(event.getSource(),event.getPermanent(),MagicCounterType.PlusOne,-1));
             }
         }
     };

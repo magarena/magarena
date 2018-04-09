@@ -20,6 +20,7 @@ public abstract class TributeTrigger extends EntersBattlefieldTrigger {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
             game.doAction(new ChangeCountersAction(
+                event.getSource(),
                 permanent,
                 MagicCounterType.PlusOne,
                 event.getRefInt()

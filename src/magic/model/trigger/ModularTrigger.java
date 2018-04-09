@@ -39,6 +39,7 @@ public class ModularTrigger extends ThisDiesTrigger {
         if (event.isYes()) {
             event.processTargetPermanent(game, (final MagicPermanent creature) ->
                 game.doAction(new ChangeCountersAction(
+                    event.getSource(),
                     creature,
                     MagicCounterType.PlusOne,
                     event.getRefInt()
