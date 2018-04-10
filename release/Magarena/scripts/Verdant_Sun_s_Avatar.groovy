@@ -2,7 +2,7 @@
     new OtherEntersBattlefieldTrigger() {
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-            return permanent.isController(played.getController());
+            return played.hasType(MagicType.Creature) && permanent.isFriend(played);
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
