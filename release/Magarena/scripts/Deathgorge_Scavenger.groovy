@@ -2,6 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         event.processTargetCard(game, {
+            game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.Exile));
             if (it.hasType(MagicType.Creature)) {
                 game.doAction(new ChangeLifeAction(event.getPlayer(), 2));
             } else {
