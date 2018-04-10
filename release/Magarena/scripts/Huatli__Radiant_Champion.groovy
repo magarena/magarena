@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature);
-            game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.Loyalty, amount));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.Loyalty, amount));
         }
     }
 ]

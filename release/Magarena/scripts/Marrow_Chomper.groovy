@@ -24,7 +24,7 @@
                 final MagicPermanent permanent=event.getPermanent();
                 event.processTargetPermanent(game, {
                     game.doAction(new SacrificeAction(it));
-                    game.doAction(new ChangeCountersAction(permanent,MagicCounterType.PlusOne,2));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(),permanent,MagicCounterType.PlusOne,2));
                     game.doAction(new ChangeLifeAction(event.getPlayer(),2));
                     final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
                     if (newEvent.isValid()) {

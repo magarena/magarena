@@ -17,7 +17,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent equipped=permanent.getEquippedCreature();
             if (equipped.isValid() && equipped.hasColor(MagicColor.Green)) {
-                game.doAction(new ChangeCountersAction(equipped,MagicCounterType.PlusOne,1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(),equipped,MagicCounterType.PlusOne,1));
             }
         }
     }

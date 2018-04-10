@@ -2,6 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final MagicTuple tup = event.getRefTuple();
     game.doAction(new ChangeCountersAction(
+        event.getPlayer(),
         event.getPermanent(),
         MagicCounterType.PlusOne,
         tup.getInt(0)

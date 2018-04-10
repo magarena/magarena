@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getRefPermanent();
             if (creature.getPower() == 1 && creature.getToughness() == 1) {
-                game.doAction(new ChangeCountersAction(creature,MagicCounterType.PlusOne,2));
+                game.doAction(new ChangeCountersAction(event.getPlayer(),creature,MagicCounterType.PlusOne,2));
             }
         }
     }

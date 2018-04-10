@@ -15,13 +15,14 @@
                 permanent,
                 amount,
                 this,
+                "PN removes RN +1/+1 counters from SN. " +
                 "PN creates RN 1/1 colorless Spirit creature tokens."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefInt();
-            game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, -amount));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.PlusOne, -amount));
             game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("1/1 colorless Spirit creature token"), amount));
         }
     }

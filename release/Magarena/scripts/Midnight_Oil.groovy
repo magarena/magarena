@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new DrawAction(event.getPlayer(), 1));
-            game.doAction(new ChangeCountersAction(event.getSource(), MagicCounterType.Hour, -2));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), event.getSource(), MagicCounterType.Hour, -2));
         }
     }
     ,

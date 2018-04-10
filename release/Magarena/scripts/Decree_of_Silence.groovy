@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
-            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Depletion,1));
+            game.doAction(new ChangeCountersAction(event.getPlayer(),event.getPermanent(),MagicCounterType.Depletion,1));
             if (event.getPermanent().getCounters(MagicCounterType.Depletion) >= 3) {
                 game.doAction(new SacrificeAction(event.getPermanent()));
             }

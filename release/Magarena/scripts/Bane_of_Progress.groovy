@@ -14,6 +14,7 @@
             final DestroyAction destroy = new DestroyAction(ARTIFACT_OR_ENCHANTMENT.filter(event));
             game.doAction(destroy);
             game.doAction(new ChangeCountersAction(
+                event.getPlayer(),
                 event.getPermanent(),
                 MagicCounterType.PlusOne,
                 destroy.getNumDestroyed()

@@ -40,7 +40,7 @@ def searchAction = {
             for (final MagicPlayer player : game.getPlayers().minus(event.getPlayer())) {
             for (final MagicPermanent permanent : player.getPermanents()) {
                 if (permanent.hasType(MagicType.Creature)) {
-                    game.doAction(new ChangeCountersAction(permanent, MagicCounterType.MinusOne, 1));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), permanent, MagicCounterType.MinusOne, 1));
                 }
             }}
 

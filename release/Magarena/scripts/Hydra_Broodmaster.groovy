@@ -50,7 +50,7 @@ def PutHydra = new MagicTrigger<Integer>() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent SN = event.getPermanent();
             if (MagicCondition.NOT_MONSTROUS_CONDITION.accept(SN)) {
-                game.doAction(new ChangeCountersAction(SN, MagicCounterType.PlusOne, event.getRefInt()));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), SN, MagicCounterType.PlusOne, event.getRefInt()));
                 game.doAction(ChangeStateAction.Set(SN, MagicPermanentState.Monstrous));
                 game.executeTrigger(PutHydra, SN, SN, event.getRefInt());
             }

@@ -27,7 +27,7 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
                 source,
                 TARGET_PERMANENT_WITH_COUNTERS,
                 this,
-                "Double the number of each kind of counter on target permanent\$."
+                "Doubles the number of each kind of counter on target permanent\$."
             );
         }
         @Override
@@ -36,6 +36,7 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
                 for (final MagicCounterType counterType : MagicCounterType.values()) {
                     if (it.hasCounters(counterType)) {
                         game.doAction(new ChangeCountersAction(
+                            event.getPlayer(),
                             it,
                             counterType,
                             it.getCounters(counterType)

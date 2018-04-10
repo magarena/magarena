@@ -26,10 +26,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent source = event.getPermanent();
             game.addEvent(new MagicScryEvent(event));
-            game.doAction(new ChangeCountersAction(source, MagicCounterType.Landmark, 1));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), source, MagicCounterType.Landmark, 1));
             final int amount = source.getCounters(MagicCounterType.Landmark);
             if (amount >= 3) {
-                game.doAction(new ChangeCountersAction(source, MagicCounterType.Landmark, -amount));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), source, MagicCounterType.Landmark, -amount));
                 game.doAction(new TransformAction(source));
                 3.times {
                     game.doAction(new PlayTokenAction(

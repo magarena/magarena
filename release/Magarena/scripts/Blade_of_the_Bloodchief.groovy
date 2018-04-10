@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent equippedCreature = event.getPermanent().getEquippedCreature();
             final int amount = equippedCreature.hasSubType(MagicSubType.Vampire) ? 2 : 1;
-            game.doAction(new ChangeCountersAction(equippedCreature,MagicCounterType.PlusOne,amount));
+            game.doAction(new ChangeCountersAction(event.getPlayer(),equippedCreature,MagicCounterType.PlusOne,amount));
         }
     }
 ]

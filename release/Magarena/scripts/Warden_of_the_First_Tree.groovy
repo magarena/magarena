@@ -116,7 +116,7 @@ def AB2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().hasSubType(MagicSubType.Spirit)) {
-                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,5));
+                game.doAction(new ChangeCountersAction(event.getPlayer(),event.getPermanent(),MagicCounterType.PlusOne,5));
             }
         }
     }

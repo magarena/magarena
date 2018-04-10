@@ -29,7 +29,7 @@
                     MagicLocationType.Exile
                 ));
                 if (it.hasType(MagicType.Creature)) {
-                    game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(),event.getPermanent(),MagicCounterType.PlusOne,1));
                     game.doAction(new ChangeLifeAction(event.getPlayer(),1));
                 }
             });

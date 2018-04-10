@@ -14,6 +14,7 @@ public class MagicBolsterEvent extends MagicEvent {
     public static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         event.processTargetPermanent(game, (final MagicPermanent creature) ->
             game.doAction(new ChangeCountersAction(
+                event.getPlayer(),
                 creature,
                 MagicCounterType.PlusOne,
                 event.getRefInt()

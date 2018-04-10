@@ -3,6 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             game.doAction(new ChangeCountersAction(
+                permanent.getController(),
                 permanent,
                 MagicCounterType.Age,
                 1
@@ -19,6 +20,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getPermanent(),
                     MagicCounterType.MinusOne,
                     event.getPermanent().getCounters(MagicCounterType.Age)

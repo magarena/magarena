@@ -48,7 +48,7 @@ class TestSoulbond extends TestGameBuilder {
         createPermanent(P,"Assault Griffin",false,1);
         createPermanent(P,"Hagra Diabolist",false,1);
         final MagicPermanent la = createPermanent(P, "Legacy's Allure", false, 1);
-        game.doAction(new ChangeCountersAction(la, MagicCounterType.Charge, 3));
+        game.doAction(new ChangeCountersAction(P, la, MagicCounterType.Charge, 3));
         addToHand(P,"Wingcrafter",1);
         addToHand(P,"Eager Cadet",1);
 

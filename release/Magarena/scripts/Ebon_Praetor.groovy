@@ -26,12 +26,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new ChangeCountersAction(
+                event.getPlayer(),
                 event.getPermanent(),
                 MagicCounterType.MinusTwo,
                 -1
             ));
             if (event.getRefPermanent().hasSubType(MagicSubType.Thrull)) {
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getPermanent(),
                     MagicCounterType.PlusOnePlusZero,
                     1

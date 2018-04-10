@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
         final MagicPermanent target = event.getRefPermanent();
-        game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, -target.getConvertedCost()));
+        game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPlayer(), MagicCounterType.Energy, -target.getConvertedCost()));
         game.doAction(new GainControlAction(event.getPlayer(), target));
     }
 }
@@ -22,7 +22,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new ChangeCountersAction(event.getPlayer(), MagicCounterType.Energy, 4));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPlayer(), MagicCounterType.Energy, 4));
                 if (event.getPlayer().getEnergy() >= it.getConvertedCost()) {
                     game.addEvent(new MagicEvent(
                         event.getSource(),

@@ -12,6 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_YOU_CONTROL.filter(event) each {
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     it,
                     MagicCounterType.PlusOne,
                     it.getCounters(MagicCounterType.PlusOne)

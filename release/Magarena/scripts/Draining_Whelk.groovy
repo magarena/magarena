@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.doAction(new CounterItemOnStackAction(it));
-                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,it.getConvertedCost()));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(),MagicCounterType.PlusOne,it.getConvertedCost()));
             });
         }
     }

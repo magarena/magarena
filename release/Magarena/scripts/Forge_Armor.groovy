@@ -17,7 +17,7 @@
             event.processTargetPermanent(game, {
                 final int amount=event.getRefPermanent().getConvertedCost();
                 game.logAppendValue(event.getPlayer(),amount);
-                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, amount));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.PlusOne, amount));
             });
         }
     }

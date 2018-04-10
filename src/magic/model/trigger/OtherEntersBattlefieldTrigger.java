@@ -73,6 +73,7 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
             if (event.getRefPermanent().getPowerValue() > event.getPermanent().getPowerValue() ||
                 event.getRefPermanent().getToughnessValue() > event.getPermanent().getToughnessValue()) {
                     game.doAction(new ChangeCountersAction(
+                        event.getPlayer(),
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1
@@ -100,11 +101,13 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes() && event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
                     -1
                 ));
                 game.doAction(new ChangeCountersAction(
+                    event.getPlayer(),
                     event.getRefPermanent(),
                     MagicCounterType.PlusOne,
                     1

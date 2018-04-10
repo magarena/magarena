@@ -447,7 +447,7 @@ public enum MagicRuleEventAction {
         "Exile",
         (game, event) -> {
             game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
-            game.doAction(new ChangeCountersAction(event.getCardOnStack().getCard(), MagicCounterType.Time, 3));
+            game.doAction(new ChangeCountersAction(event.getPlayer(), event.getCardOnStack().getCard(), MagicCounterType.Time, 3));
         }
     ),
     ExilePlayerGraveyard(
@@ -1373,6 +1373,7 @@ public enum MagicRuleEventAction {
                 final int amount = count.getAmount(event);
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                     game.doAction(new ChangeCountersAction(
+                        event.getPlayer(),
                         it,
                         counterType,
                         amount
@@ -1439,6 +1440,7 @@ public enum MagicRuleEventAction {
                 final int amount = count.getAmount(event);
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                     game.doAction(new ChangeCountersAction(
+                        event.getPlayer(),
                         it,
                         counterType,
                         -amount
@@ -1460,6 +1462,7 @@ public enum MagicRuleEventAction {
                 for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                     final int amount = it.getCounters(counterType);
                     game.doAction(new ChangeCountersAction(
+                        event.getPlayer(),
                         it,
                         counterType,
                         -amount
@@ -2521,7 +2524,7 @@ public enum MagicRuleEventAction {
             return (game, event) -> {
                 final MagicPermanent SN = event.getPermanent();
                 if (MagicCondition.NOT_MONSTROUS_CONDITION.accept(SN)) {
-                    game.doAction(new ChangeCountersAction(SN, MagicCounterType.PlusOne, amount));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), SN, MagicCounterType.PlusOne, amount));
                     game.doAction(ChangeStateAction.Set(SN, MagicPermanentState.Monstrous));
                 }
             };
@@ -3161,7 +3164,7 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Poison, amount));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.Poison, amount));
                 }
             };
         }
@@ -3181,7 +3184,7 @@ public enum MagicRuleEventAction {
                 final int multiplier = eachCount.getPositiveAmount(event);
                 final int total = amount * multiplier;
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Energy, total));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.Energy, total));
                 }
             };
         }
@@ -3198,7 +3201,7 @@ public enum MagicRuleEventAction {
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return (game, event) -> {
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.Experience, amount));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.Experience, amount));
                 }
             };
         }

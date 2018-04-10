@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.doAction(new ChangeLifeAction(it, -2));
-                game.doAction(new ChangeCountersAction(it, MagicCounterType.Poison, 1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.Poison, 1));
                 game.doAction(new MillLibraryAction(it, 6));
             });
         }

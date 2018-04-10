@@ -15,9 +15,9 @@
             final MagicEvent sacrifice = new MagicSacrificePermanentEvent(event.getSource(), SACRIFICE_CREATURE);
             if (event.isYes() && sacrifice.isSatisfied()) {
                 game.addEvent(sacrifice);
-                game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.PlusOne, 1));
             } else {
-                game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, -1));
+                game.doAction(new ChangeCountersAction(event.getPlayer(), event.getPermanent(), MagicCounterType.PlusOne, -1));
             }
         }
     }

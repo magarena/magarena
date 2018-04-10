@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new ChangeCountersAction(it, MagicCounterType.MinusOne, event.getRefInt()));
+                    game.doAction(new ChangeCountersAction(event.getPlayer(), it, MagicCounterType.MinusOne, event.getRefInt()));
                 });
             }
         }
