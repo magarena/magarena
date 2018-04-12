@@ -40,4 +40,20 @@ public abstract class ACounterIsPutTrigger extends MagicTrigger<MagicCounterChan
         };
     }
 
+    public static ACounterIsPutTrigger createYou(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
+        return new ACounterIsPutTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
+                return permanent.isController(data.player) &&
+                    data.obj.isPermanent() &&
+                    filter.accept(permanent, permanent.getController(), (MagicPermanent)data.obj) &&
+                    data.counterType == counterType;
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
+                return sourceEvent.getTriggerEvent(permanent);
+            }
+        };
+    }
+
 }
