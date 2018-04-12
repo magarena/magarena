@@ -29,7 +29,8 @@ public abstract class ACounterIsPutTrigger extends MagicTrigger<MagicCounterChan
         return new ACounterIsPutTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return data.obj.isPermanent() &&
+                return super.accept(permanent, data) &&
+                    data.obj.isPermanent() &&
                     filter.accept(permanent, permanent.getController(), (MagicPermanent)data.obj) &&
                     data.counterType == counterType;
             }
@@ -44,7 +45,8 @@ public abstract class ACounterIsPutTrigger extends MagicTrigger<MagicCounterChan
         return new ACounterIsPutTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return permanent.isController(data.player) &&
+                return super.accept(permanent, data) &&
+                    permanent.isController(data.player) &&
                     data.obj.isPermanent() &&
                     filter.accept(permanent, permanent.getController(), (MagicPermanent)data.obj) &&
                     data.counterType == counterType;
