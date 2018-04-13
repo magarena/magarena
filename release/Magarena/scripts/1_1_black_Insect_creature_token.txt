@@ -1,0 +1,8 @@
+name=1/1 black Insect creature token
+token=Rat
+image=https://magiccards.info/extras/token/amonkhet/insect.jpg
+value=1
+type=Creature
+subtype=Insect
+color=b
+pt=1/1
