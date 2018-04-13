@@ -72,9 +72,7 @@ public class ChangeCountersAction extends MagicAction {
         }
 
         final MagicCounterChangeTriggerData data = new MagicCounterChangeTriggerData(player, obj, counterType, amount);
-        if (amount != 0) {
-            game.executeTrigger(MagicTriggerType.WhenOneOrMoreCountersAreChanged, data);
-        }
+        game.executeTrigger(MagicTriggerType.WhenOneOrMoreCountersAreChanged, data);
         for (int i = 0; i < Math.abs(amount); i++) {
             game.executeTrigger(MagicTriggerType.WhenACounterIsChanged, data);
         }

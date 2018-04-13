@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{B}
-ability=Whenever you put one or more -1/-1 counters on a creature, create that many 1/1 black Insect creature tokens.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever you put one or more -1/-1 counters on a creature, create that many 1/1 black Insect creature tokens.
-status=not supported: when-counter-placed

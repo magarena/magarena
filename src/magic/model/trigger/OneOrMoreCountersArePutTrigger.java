@@ -29,7 +29,25 @@ public abstract class OneOrMoreCountersArePutTrigger extends MagicTrigger<MagicC
         return new OneOrMoreCountersArePutTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
-                return data.obj.isPermanent() &&
+                return super.accept(permanent, data) &&
+                    data.obj.isPermanent() &&
+                    filter.accept(permanent, permanent.getController(), (MagicPermanent)data.obj) &&
+                    data.counterType == counterType;
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
+                return sourceEvent.getTriggerEvent(permanent);
+            }
+        };
+    }
+
+    public static OneOrMoreCountersArePutTrigger createYou(final MagicTargetFilter<MagicPermanent> filter, MagicCounterType counterType, final MagicSourceEvent sourceEvent) {
+        return new OneOrMoreCountersArePutTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
+                return super.accept(permanent, data) &&
+                    permanent.isController(data.player) &&
+                    data.obj.isPermanent() &&
                     filter.accept(permanent, permanent.getController(), (MagicPermanent)data.obj) &&
                     data.counterType == counterType;
             }
