@@ -193,6 +193,15 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+    public MagicCardFilterImpl cmcLT(final int n) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            @Override
+            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(source, player, target) && target.getConvertedCost() < n;
+            }
+        };
+    }
 
     /**
      * @param n power limit

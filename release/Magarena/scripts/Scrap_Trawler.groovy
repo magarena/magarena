@@ -10,7 +10,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicTargetChoice(
-                    card(MagicType.Artifact).cmcLEQ(cmc).from(MagicTargetType.Graveyard),
+                    card(MagicType.Artifact).cmcLT(cmc).from(MagicTargetType.Graveyard),
                     "target artifact card in your graveyard with converted mana cost less than ${cmc}"
                 ),
                 this,
