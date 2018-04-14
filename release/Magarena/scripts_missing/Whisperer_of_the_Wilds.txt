@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Shaman
 cost={1}{G}
 pt=0/2
-ability={T}: Add {G} to your mana pool.;\
-        {T}: Add {G}{G} to your mana pool. Activate this ability only if you control a creature with power 4 or greater.
+ability={T}: Add {G}.;\
+        {T}: Add {G}{G}. Activate this ability only if you control a creature with power 4 or greater.
 timing=main
-oracle={T}: Add {G} to your mana pool.\nFerocious — {T}: Add {G}{G} to your mana pool. Activate this ability only if you control a creature with power 4 or greater.
+oracle={T}: Add {G}.\nFerocious — {T}: Add {G}{G}. Activate this ability only if you control a creature with power 4 or greater.
 status=not supported: add-multiple-mana

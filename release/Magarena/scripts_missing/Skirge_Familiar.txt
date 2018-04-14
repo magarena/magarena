@@ -7,7 +7,7 @@ subtype=Imp
 cost={4}{B}
 pt=3/2
 ability=Flying;\
-        Discard a card: Add {B} to your mana pool.
+        Discard a card: Add {B}.
 timing=main
-oracle=Flying\nDiscard a card: Add {B} to your mana pool.
+oracle=Flying\nDiscard a card: Add {B}.
 status=not supported: mana-ability-with-choice

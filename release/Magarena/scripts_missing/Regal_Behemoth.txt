@@ -9,7 +9,7 @@ cost={4}{G}{G}
 pt=5/5
 ability=Trample;\
         When SN enters the battlefield, you become the monarch.;\
-        Whenever you tap a land for mana while you're the monarch, add one mana of any color to your mana pool.
+        Whenever you tap a land for mana while you're the monarch, add one mana of any color.
 timing=main
-oracle=Trample\nWhen Regal Behemoth enters the battlefield, you become the monarch.\nWhenever you tap a land for mana while you're the monarch, add one mana of any color to your mana pool.
+oracle=Trample\nWhen Regal Behemoth enters the battlefield, you become the monarch.\nWhenever you tap a land for mana while you're the monarch, add one mana of any color.
 status=not supported: non-activated-mana-ability

@@ -5,7 +5,7 @@ value=3.628
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Giant card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {R} or {W} to your mana pool.
+        {T}: Add {R} or {W}.
 timing=land
-oracle=As Ancient Amphitheater enters the battlefield, you may reveal a Giant card from your hand. If you don't, Ancient Amphitheater enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.
+oracle=As Ancient Amphitheater enters the battlefield, you may reveal a Giant card from your hand. If you don't, Ancient Amphitheater enters the battlefield tapped.\n{T}: Add {R} or {W}.
 status=not supported: reveal-cost

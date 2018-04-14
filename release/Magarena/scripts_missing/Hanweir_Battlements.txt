@@ -4,10 +4,10 @@ image_updated=2016-09-05
 value=2.500
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {R}, {T}: Target creature gains haste until end of turn.;\
         {3}{R}{R}, {T}: If you both own and control SN and a creature named Hanweir Garrison, exile them, then meld them into Hanweir, the Writhing Township.
 transform=Hanweir, the Writhing Township
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{R}, {T}: Target creature gains haste until end of turn.\n{3}{R}{R}, {T}: If you both own and control Hanweir Battlements and a creature named Hanweir Garrison, exile them, then meld them into Hanweir, the Writhing Township.
+oracle={T}: Add {C}.\n{R}, {T}: Target creature gains haste until end of turn.\n{3}{R}{R}, {T}: If you both own and control Hanweir Battlements and a creature named Hanweir Garrison, exile them, then meld them into Hanweir, the Writhing Township.
 status=not supported: meld

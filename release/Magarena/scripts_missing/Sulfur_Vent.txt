@@ -4,8 +4,8 @@ value=3.192
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} to your mana pool.;\
-        {T}, Sacrifice SN: Add {U}{R} to your mana pool.
+        {T}: Add {B}.;\
+        {T}, Sacrifice SN: Add {U}{R}.
 timing=land
-oracle=Sulfur Vent enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice Sulfur Vent: Add {U}{R} to your mana pool.
+oracle=Sulfur Vent enters the battlefield tapped.\n{T}: Add {B}.\n{T}, Sacrifice Sulfur Vent: Add {U}{R}.
 status=not supported: add-multiple-mana

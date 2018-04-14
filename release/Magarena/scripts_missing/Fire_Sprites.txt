@@ -7,7 +7,7 @@ subtype=Faerie
 cost={1}{G}
 pt=1/1
 ability=Flying;\
-        {G}, {T}: Add {R} to your mana pool.
+        {G}, {T}: Add {R}.
 timing=main
-oracle=Flying\n{G}, {T}: Add {R} to your mana pool.
+oracle=Flying\n{G}, {T}: Add {R}.
 status=not supported: mana-ability-with-choice

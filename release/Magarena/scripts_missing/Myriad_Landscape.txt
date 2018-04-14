@@ -5,8 +5,8 @@ value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
+        {T}: Add {C}.;\
         {2}, {T}, Sacrifice SN: Search your library for up to two basic land cards that share a land type, put them onto the battlefield tapped, then shuffle your library.
 timing=land
-oracle=Myriad Landscape enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice Myriad Landscape: Search your library for up to two basic land cards that share a land type, put them onto the battlefield tapped, then shuffle your library.
+oracle=Myriad Landscape enters the battlefield tapped.\n{T}: Add {C}.\n{2}, {T}, Sacrifice Myriad Landscape: Search your library for up to two basic land cards that share a land type, put them onto the battlefield tapped, then shuffle your library.
 status=not supported: search-restriction

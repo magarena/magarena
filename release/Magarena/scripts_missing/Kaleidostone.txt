@@ -5,7 +5,7 @@ rarity=C
 type=Artifact
 cost={2}
 ability=When SN enters the battlefield, draw a card.;\
-        {5}, {T}, Sacrifice SN: Add {W}{U}{B}{R}{G} to your mana pool.
+        {5}, {T}, Sacrifice SN: Add {W}{U}{B}{R}{G}.
 timing=artifact
-oracle=When Kaleidostone enters the battlefield, draw a card.\n{5}, {T}, Sacrifice Kaleidostone: Add {W}{U}{B}{R}{G} to your mana pool.
+oracle=When Kaleidostone enters the battlefield, draw a card.\n{5}, {T}, Sacrifice Kaleidostone: Add {W}{U}{B}{R}{G}.
 status=not supported: add-multiple-mana

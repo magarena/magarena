@@ -6,7 +6,7 @@ rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you may look at the top five cards of your library. If you do, reveal up to one basic land card from among them, then put that card on top of your library and the rest on the bottom in any order.;\
-        {T}: Add {G} to your mana pool.
+        {T}: Add {G}.
 timing=land
-oracle=Fertile Thicket enters the battlefield tapped.\nWhen Fertile Thicket enters the battlefield, you may look at the top five cards of your library. If you do, reveal up to one basic land card from among them, then put that card on top of your library and the rest on the bottom in any order.\n{T}: Add {G} to your mana pool.
+oracle=Fertile Thicket enters the battlefield tapped.\nWhen Fertile Thicket enters the battlefield, you may look at the top five cards of your library. If you do, reveal up to one basic land card from among them, then put that card on top of your library and the rest on the bottom in any order.\n{T}: Add {G}.
 status=needs groovy

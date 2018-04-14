@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/c14/59.jpg
 value=2.500
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.
+oracle={T}: Add {C}.\n{1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.
 status=needs groovy

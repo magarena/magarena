@@ -6,7 +6,7 @@ rarity=R
 type=Land
 subtype=Forest
 ability=As SN enters the battlefield, you may reveal a Treefolk card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {W} or {B} to your mana pool. SN deals 1 damage to you.
+        {T}: Add {W} or {B}. SN deals 1 damage to you.
 timing=land
-oracle=As Murmuring Bosk enters the battlefield, you may reveal a Treefolk card from your hand. If you don't, Murmuring Bosk enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool. Murmuring Bosk deals 1 damage to you.
+oracle=As Murmuring Bosk enters the battlefield, you may reveal a Treefolk card from your hand. If you don't, Murmuring Bosk enters the battlefield tapped.\n{T}: Add {W} or {B}. Murmuring Bosk deals 1 damage to you.
 status=not supported: reveal-cost

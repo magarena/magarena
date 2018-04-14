@@ -6,7 +6,7 @@ rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
-        {T}: Add {G}{W} to your mana pool.
+        {T}: Add {G}{W}.
 timing=land
-oracle=Selesnya Sanctuary enters the battlefield tapped.\nWhen Selesnya Sanctuary enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {G}{W} to your mana pool.
+oracle=Selesnya Sanctuary enters the battlefield tapped.\nWhen Selesnya Sanctuary enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {G}{W}.
 status=not supported: add-multiple-mana

@@ -3,10 +3,10 @@ image=https://magiccards.info/scans/en/xln/22b.jpg
 value=2.500
 rarity=R
 type=Legendary,Land
-ability={T}: Add {W} to your mana pool.;\
+ability={T}: Add {W}.;\
         {2}{W}, {T}: Create a 1/1 white Vampire creature token with lifelink.
 transform=Legion's Landing
 timing=land
 hidden
-oracle={T}: Add {W} to your mana pool.\n{2}{W}, {T}: Create a 1/1 white Vampire creature token with lifelink.
+oracle={T}: Add {W}.\n{2}{W}, {T}: Create a 1/1 white Vampire creature token with lifelink.
 status=not supported: other-half

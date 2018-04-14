@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Mountain or Forest card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {R} or {G} to your mana pool.
+        {T}: Add {R} or {G}.
 timing=land
-oracle=As Game Trail enters the battlefield, you may reveal a Mountain or Forest card from your hand. If you don't, Game Trail enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.
+oracle=As Game Trail enters the battlefield, you may reveal a Mountain or Forest card from your hand. If you don't, Game Trail enters the battlefield tapped.\n{T}: Add {R} or {G}.
 status=not supported: reveal-cost

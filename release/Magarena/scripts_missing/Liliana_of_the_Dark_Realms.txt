@@ -8,7 +8,7 @@ cost={2}{B}{B}
 loyalty=3
 ability=+1: Search your library for a Swamp card, reveal it, and put it into your hand. Then shuffle your library.;\
         −3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control.;\
-        −6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B} to your mana pool.'"
+        −6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B}.'"
 timing=main
-oracle=+1: Search your library for a Swamp card, reveal it, and put it into your hand. Then shuffle your library.\n−3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control.\n−6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B} to your mana pool.'"
+oracle=+1: Search your library for a Swamp card, reveal it, and put it into your hand. Then shuffle your library.\n−3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control.\n−6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B}.'"
 status=not supported: add-multiple-mana

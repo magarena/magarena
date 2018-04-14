@@ -8,9 +8,9 @@ subtype=Chandra
 cost={2}{R}{R}
 loyalty=4
 ability=+1: Exile the top card of your library. You may cast that card. If you don't, SN deals 2 damage to each opponent.;\
-        +1: Add {R}{R} to your mana pool.;\
+        +1: Add {R}{R}.;\
         −3: SN deals 4 damage to target creature.;\
         −7: You get an emblem with "Whenever you cast a spell, this emblem deals 5 damage to target creature or player."
 timing=main
-oracle=+1: Exile the top card of your library. You may cast that card. If you don't, Chandra, Torch of Defiance deals 2 damage to each opponent.\n+1: Add {R}{R} to your mana pool.\n−3: Chandra, Torch of Defiance deals 4 damage to target creature.\n−7: You get an emblem with "Whenever you cast a spell, this emblem deals 5 damage to target creature or player."
+oracle=+1: Exile the top card of your library. You may cast that card. If you don't, Chandra, Torch of Defiance deals 2 damage to each opponent.\n+1: Add {R}{R}.\n−3: Chandra, Torch of Defiance deals 4 damage to target creature.\n−7: You get an emblem with "Whenever you cast a spell, this emblem deals 5 damage to target creature or player."
 status=not supported: add-multiple-mana

@@ -6,8 +6,8 @@ rarity=U
 type=Artifact
 cost={3}
 ability=SN doesn't untap during your untap step.;\
-        {T}: Add {C}{C}{C} to your mana pool.;\
+        {T}: Add {C}{C}{C}.;\
         {3}: Untap SN.
 timing=artifact
-oracle=Basalt Monolith doesn't untap during your untap step.\n{T}: Add {C}{C}{C} to your mana pool.\n{3}: Untap Basalt Monolith.
+oracle=Basalt Monolith doesn't untap during your untap step.\n{T}: Add {C}{C}{C}.\n{3}: Untap Basalt Monolith.
 status=not supported: add-multiple-mana

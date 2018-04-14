@@ -4,7 +4,7 @@ value=0.893
 rarity=R
 type=Legendary,Land
 ability=SN enters the battlefield tapped.;\
-        {T}, Pay 2 life: Add {C}{C} to your mana pool. Spend this mana only to cast legendary spells.
+        {T}, Pay 2 life: Add {C}{C}. Spend this mana only to cast legendary spells.
 timing=land
-oracle=Untaidake, the Cloud Keeper enters the battlefield tapped.\n{T}, Pay 2 life: Add {C}{C} to your mana pool. Spend this mana only to cast legendary spells.
+oracle=Untaidake, the Cloud Keeper enters the battlefield tapped.\n{T}, Pay 2 life: Add {C}{C}. Spend this mana only to cast legendary spells.
 status=not supported: add-multiple-mana

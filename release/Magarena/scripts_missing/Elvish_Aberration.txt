@@ -6,8 +6,8 @@ type=Creature
 subtype=Elf,Mutant
 cost={5}{G}
 pt=4/5
-ability={T}: Add {G}{G}{G} to your mana pool.;\
+ability={T}: Add {G}{G}{G}.;\
         Forestcycling {2}
 timing=main
-oracle={T}: Add {G}{G}{G} to your mana pool.\nForestcycling {2}
+oracle={T}: Add {G}{G}{G}.\nForestcycling {2}
 status=not supported: add-multiple-mana

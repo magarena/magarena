@@ -5,8 +5,8 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={5}{G}{G}
-ability=Whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.;\
+ability=Whenever you tap a land for mana, add one mana of any type that land produced.;\
         Whenever you cast a creature spell, draw a card.
 timing=enchantment
-oracle=Whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.\nWhenever you cast a creature spell, draw a card.
+oracle=Whenever you tap a land for mana, add one mana of any type that land produced.\nWhenever you cast a creature spell, draw a card.
 status=not supported: non-activated-mana-ability

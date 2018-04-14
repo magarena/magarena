@@ -7,7 +7,7 @@ subtype=Horse
 cost={6}
 pt=0/0
 ability=SN enters the battlefield with four +1/+1 counters on it.;\
-        Remove a +1/+1 counter from SN: Add {C} to your mana pool.
+        Remove a +1/+1 counter from SN: Add {C}.
 timing=main
-oracle=Workhorse enters the battlefield with four +1/+1 counters on it.\nRemove a +1/+1 counter from Workhorse: Add {C} to your mana pool.
+oracle=Workhorse enters the battlefield with four +1/+1 counters on it.\nRemove a +1/+1 counter from Workhorse: Add {C}.
 status=not supported: repeated-mana-ability

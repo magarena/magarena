@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={4}
 ability={3}, {T}: Create a 0/1 colorless Prism artifact creature token.;\
-        Sacrifice a Prism token: Add one mana of any color to your mana pool.
+        Sacrifice a Prism token: Add one mana of any color.
 timing=artifact
-oracle={3}, {T}: Create a 0/1 colorless Prism artifact creature token.\nSacrifice a Prism token: Add one mana of any color to your mana pool.
+oracle={3}, {T}: Create a 0/1 colorless Prism artifact creature token.\nSacrifice a Prism token: Add one mana of any color.
 status=not supported: repeated-mana-ability

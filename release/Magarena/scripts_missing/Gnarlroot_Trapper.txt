@@ -7,8 +7,8 @@ type=Creature
 subtype=Elf,Druid
 cost={B}
 pt=1/1
-ability={T}, Pay 1 life: Add {G} to your mana pool. Spend this mana only to cast an Elf creature spell.;\
+ability={T}, Pay 1 life: Add {G}. Spend this mana only to cast an Elf creature spell.;\
         {T}: Target attacking Elf you control gains deathtouch until end of turn.
 timing=main
-oracle={T}, Pay 1 life: Add {G} to your mana pool. Spend this mana only to cast an Elf creature spell.\n{T}: Target attacking Elf you control gains deathtouch until end of turn.
+oracle={T}, Pay 1 life: Add {G}. Spend this mana only to cast an Elf creature spell.\n{T}: Target attacking Elf you control gains deathtouch until end of turn.
 status=not supported: mana-restriction

@@ -8,7 +8,7 @@ subtype=Eldrazi,Drone
 cost={2}{U}
 pt=2/3
 ability=Devoid;\
-        {T}: Add {C} to your mana pool. Spend this mana only to cast a colorless spell, activate an ability of a colorless permanent, or pay a cost that contains {C}.
+        {T}: Add {C}. Spend this mana only to cast a colorless spell, activate an ability of a colorless permanent, or pay a cost that contains {C}.
 timing=main
-oracle=Devoid\n{T}: Add {C} to your mana pool. Spend this mana only to cast a colorless spell, activate an ability of a colorless permanent, or pay a cost that contains {C}.
+oracle=Devoid\n{T}: Add {C}. Spend this mana only to cast a colorless spell, activate an ability of a colorless permanent, or pay a cost that contains {C}.
 status=not supported: mana-restriction

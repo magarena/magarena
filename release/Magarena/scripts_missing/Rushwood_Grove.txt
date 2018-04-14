@@ -5,7 +5,7 @@ rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Put a storage counter on SN.;\
-        {T}, Remove any number of storage counters from SN: Add {G} to your mana pool for each storage counter removed this way.
+        {T}, Remove any number of storage counters from SN: Add {G} for each storage counter removed this way.
 timing=land
-oracle=Rushwood Grove enters the battlefield tapped.\n{T}: Put a storage counter on Rushwood Grove.\n{T}, Remove any number of storage counters from Rushwood Grove: Add {G} to your mana pool for each storage counter removed this way.
+oracle=Rushwood Grove enters the battlefield tapped.\n{T}: Put a storage counter on Rushwood Grove.\n{T}, Remove any number of storage counters from Rushwood Grove: Add {G} for each storage counter removed this way.
 status=not supported: add-multiple-mana

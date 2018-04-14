@@ -5,7 +5,7 @@ rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Island you control to its owner's hand.;\
-        {T}: Add {C}{U} to your mana pool.
+        {T}: Add {C}{U}.
 timing=land
-oracle=Coral Atoll enters the battlefield tapped.\nWhen Coral Atoll enters the battlefield, sacrifice it unless you return an untapped Island you control to its owner's hand.\n{T}: Add {C}{U} to your mana pool.
+oracle=Coral Atoll enters the battlefield tapped.\nWhen Coral Atoll enters the battlefield, sacrifice it unless you return an untapped Island you control to its owner's hand.\n{T}: Add {C}{U}.
 status=not supported: add-multiple-mana

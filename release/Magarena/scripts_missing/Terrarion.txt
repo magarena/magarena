@@ -6,8 +6,8 @@ rarity=C
 type=Artifact
 cost={1}
 ability=SN enters the battlefield tapped.;\
-        {2}, {T}, Sacrifice SN: Add two mana in any combination of colors to your mana pool.;\
+        {2}, {T}, Sacrifice SN: Add two mana in any combination of colors.;\
         When SN is put into a graveyard from the battlefield, draw a card.
 timing=artifact
-oracle=Terrarion enters the battlefield tapped.\n{2}, {T}, Sacrifice Terrarion: Add two mana in any combination of colors to your mana pool.\nWhen Terrarion is put into a graveyard from the battlefield, draw a card.
+oracle=Terrarion enters the battlefield tapped.\n{2}, {T}, Sacrifice Terrarion: Add two mana in any combination of colors.\nWhen Terrarion is put into a graveyard from the battlefield, draw a card.
 status=not supported: add-multiple-mana

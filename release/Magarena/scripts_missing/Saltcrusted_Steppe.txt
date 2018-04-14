@@ -4,9 +4,9 @@ image_updated=2017-10-03
 value=3.850
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}, {T}: Put a storage counter on SN.;\
-        {1}, Remove X storage counters from SN: Add X mana in any combination of {G} and/or {W} to your mana pool.
+        {1}, Remove X storage counters from SN: Add X mana in any combination of {G} and/or {W}.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Put a storage counter on Saltcrusted Steppe.\n{1}, Remove X storage counters from Saltcrusted Steppe: Add X mana in any combination of {G} and/or {W} to your mana pool.
+oracle={T}: Add {C}.\n{1}, {T}: Put a storage counter on Saltcrusted Steppe.\n{1}, Remove X storage counters from Saltcrusted Steppe: Add X mana in any combination of {G} and/or {W}.
 status=not supported: add-multiple-mana

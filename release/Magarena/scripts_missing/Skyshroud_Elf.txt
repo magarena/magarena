@@ -6,8 +6,8 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=1/1
-ability={T}: Add {G} to your mana pool.;\
-        {1}: Add {R} or {W} to your mana pool.
+ability={T}: Add {G}.;\
+        {1}: Add {R} or {W}.
 timing=main
-oracle={T}: Add {G} to your mana pool.\n{1}: Add {R} or {W} to your mana pool.
+oracle={T}: Add {G}.\n{1}: Add {R} or {W}.
 status=not supported: mana-ability-with-choice

@@ -6,9 +6,9 @@ type=Creature
 subtype=Human,Werewolf
 cost={1}{G}
 pt=1/1
-ability={T}: Add {G} to your mana pool.;\
+ability={T}: Add {G}.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Moonscarred Werewolf
 timing=main
-oracle={T}: Add {G} to your mana pool.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Scorned Villager.
+oracle={T}: Add {G}.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Scorned Villager.
 status=not supported: other-half

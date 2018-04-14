@@ -7,7 +7,7 @@ subtype=Ogre,Shaman
 cost={3}{R}
 pt=2/3
 ability=Dethrone;\
-        Pay 3 life: Add {R} to your mana pool.
+        Pay 3 life: Add {R}.
 timing=main
-oracle=Dethrone\nPay 3 life: Add {R} to your mana pool.
+oracle=Dethrone\nPay 3 life: Add {R}.
 status=not supported: repeated-mana-ability

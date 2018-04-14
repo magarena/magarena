@@ -6,8 +6,8 @@ type=Creature
 subtype=Elf,Druid
 cost={G}
 pt=1/1
-ability=Tap two untapped Elves you control: Add one mana of any color to your mana pool.;\
+ability=Tap two untapped Elves you control: Add one mana of any color.;\
         Morph {G}
 timing=main
-oracle=Tap two untapped Elves you control: Add one mana of any color to your mana pool.\nMorph {G}
+oracle=Tap two untapped Elves you control: Add one mana of any color.\nMorph {G}
 status=not supported: repeated-mana-ability

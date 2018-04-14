@@ -7,7 +7,7 @@ subtype=Slug
 cost={4}{R}
 pt=4/3
 ability={S}: SN gains haste until end of turn.;\
-        Sacrifice a creature: Add {R} to your mana pool.
+        Sacrifice a creature: Add {R}.
 timing=main
-oracle={S}: Thermopod gains haste until end of turn.\nSacrifice a creature: Add {R} to your mana pool.
+oracle={S}: Thermopod gains haste until end of turn.\nSacrifice a creature: Add {R}.
 status=not supported: mana-ability-with-choice

@@ -6,8 +6,8 @@ type=Creature
 subtype=Naga,Druid
 cost={3}{G}
 pt=2/4
-ability={T}: Add one mana of any color to your mana pool.;\
-        {T}, Exert SN: Add two mana of any one color to your mana pool.
+ability={T}: Add one mana of any color.;\
+        {T}, Exert SN: Add two mana of any one color.
 timing=main
-oracle={T}: Add one mana of any color to your mana pool.\n{T}, Exert Oasis Ritualist: Add two mana of any one color to your mana pool.
+oracle={T}: Add one mana of any color.\n{T}, Exert Oasis Ritualist: Add two mana of any one color.
 status=not supported: add-multiple-mana

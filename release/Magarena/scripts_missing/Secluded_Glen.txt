@@ -4,7 +4,7 @@ value=4.096
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Faerie card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {U} or {B} to your mana pool.
+        {T}: Add {U} or {B}.
 timing=land
-oracle=As Secluded Glen enters the battlefield, you may reveal a Faerie card from your hand. If you don't, Secluded Glen enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.
+oracle=As Secluded Glen enters the battlefield, you may reveal a Faerie card from your hand. If you don't, Secluded Glen enters the battlefield tapped.\n{T}: Add {U} or {B}.
 status=not supported: reveal-cost

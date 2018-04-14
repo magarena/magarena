@@ -5,8 +5,8 @@ value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
+        {T}: Add {C}.;\
         {T}: Put a +1/+1 counter on target colorless creature that entered the battlefield this turn.
 timing=land
-oracle=Ruins of Oran-Rief enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{T}: Put a +1/+1 counter on target colorless creature that entered the battlefield this turn.
+oracle=Ruins of Oran-Rief enters the battlefield tapped.\n{T}: Add {C}.\n{T}: Put a +1/+1 counter on target colorless creature that entered the battlefield this turn.
 status=not supported: no-info

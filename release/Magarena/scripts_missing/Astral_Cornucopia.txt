@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 cost={X}{X}{X}
 ability=SN enters the battlefield with X charge counters on it.;\
-        {T}: Choose a color. Add one mana of that color to your mana pool for each charge counter on SN.
+        {T}: Choose a color. Add one mana of that color for each charge counter on SN.
 timing=artifact
-oracle=Astral Cornucopia enters the battlefield with X charge counters on it.\n{T}: Choose a color. Add one mana of that color to your mana pool for each charge counter on Astral Cornucopia.
+oracle=Astral Cornucopia enters the battlefield with X charge counters on it.\n{T}: Choose a color. Add one mana of that color for each charge counter on Astral Cornucopia.
 status=not supported: add-multiple-mana

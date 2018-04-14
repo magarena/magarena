@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 cost={3}{R}
 ability=Each opponent must attack you or a planeswalker you control with at least one creature each combat if able.;\
-        At the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+        At the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."
 timing=enchantment
-oracle=Each opponent must attack you or a planeswalker you control with at least one creature each combat if able.\nAt the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+oracle=Each opponent must attack you or a planeswalker you control with at least one creature each combat if able.\nAt the beginning of your end step, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."
 status=not supported: attacking-restriction

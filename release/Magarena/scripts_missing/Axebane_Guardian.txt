@@ -7,7 +7,7 @@ subtype=Human,Druid
 cost={2}{G}
 pt=0/3
 ability=Defender;\
-        {T}: Add X mana in any combination of colors to your mana pool, where X is the number of creatures with defender you control.
+        {T}: Add X mana in any combination of colors, where X is the number of creatures with defender you control.
 timing=smain
-oracle=Defender\n{T}: Add X mana in any combination of colors to your mana pool, where X is the number of creatures with defender you control.
+oracle=Defender\n{T}: Add X mana in any combination of colors, where X is the number of creatures with defender you control.
 status=not supported: add-multiple-mana

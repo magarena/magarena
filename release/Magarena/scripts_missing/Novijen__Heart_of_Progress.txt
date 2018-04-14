@@ -4,8 +4,8 @@ image_updated=2016-02-29
 value=3.500
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.
+oracle={T}: Add {C}.\n{G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.
 status=not supported: no-info

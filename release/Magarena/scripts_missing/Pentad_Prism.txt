@@ -6,7 +6,7 @@ rarity=C
 type=Artifact
 cost={2}
 ability=Sunburst;\
-        Remove a charge counter from SN: Add one mana of any color to your mana pool.
+        Remove a charge counter from SN: Add one mana of any color.
 timing=artifact
-oracle=Sunburst\nRemove a charge counter from Pentad Prism: Add one mana of any color to your mana pool.
+oracle=Sunburst\nRemove a charge counter from Pentad Prism: Add one mana of any color.
 status=not supported: repeated-mana-ability

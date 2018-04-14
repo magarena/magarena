@@ -4,8 +4,8 @@ image_updated=2017-04-12
 value=4.167
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {B/R}, {T}: Add {B}{B}, {B}{R}, or {R}{R} to your mana pool.
+ability={T}: Add {C}.;\
+        {B/R}, {T}: Add {B}{B}, {B}{R}, or {R}{R}.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{B/R}, {T}: Add {B}{B}, {B}{R}, or {R}{R} to your mana pool.
+oracle={T}: Add {C}.\n{B/R}, {T}: Add {B}{B}, {B}{R}, or {R}{R}.
 status=not supported: add-multiple-mana

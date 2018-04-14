@@ -7,7 +7,7 @@ subtype=Horror
 cost={5}{B}
 pt=4/4
 ability=Swampwalk;\
-        {T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of SN.
+        {T}: Add {B}{B}{B}{B}. Target opponent gains control of SN.
 timing=main
-oracle=Swampwalk\n{T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of Witch Engine.
+oracle=Swampwalk\n{T}: Add {B}{B}{B}{B}. Target opponent gains control of Witch Engine.
 status=not supported: add-multiple-mana

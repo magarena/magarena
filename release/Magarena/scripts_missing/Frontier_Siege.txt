@@ -5,8 +5,8 @@ rarity=R
 type=Enchantment
 cost={3}{G}
 ability=As SN enters the battlefield, choose Khans or Dragons. \
-        (1) Khans — At the beginning of each of your main phases, add {G}{G} to your mana pool. \
+        (1) Khans — At the beginning of each of your main phases, add {G}{G}. \
         (2) Dragons — Whenever a creature with flying enters the battlefield under your control, you may have it fight target creature you don't control.
 timing=enchantment
-oracle=As Frontier Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of each of your main phases, add {G}{G} to your mana pool.\n• Dragons — Whenever a creature with flying enters the battlefield under your control, you may have it fight target creature you don't control.
+oracle=As Frontier Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of each of your main phases, add {G}{G}.\n• Dragons — Whenever a creature with flying enters the battlefield under your control, you may have it fight target creature you don't control.
 status=not supported: modal-permanent

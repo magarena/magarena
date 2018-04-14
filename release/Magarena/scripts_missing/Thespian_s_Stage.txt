@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/gtc/248.jpg
 value=4.000
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}, {T}: SN becomes a copy of target land and gains this ability.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Thespian's Stage becomes a copy of target land and gains this ability.
+oracle={T}: Add {C}.\n{2}, {T}: Thespian's Stage becomes a copy of target land and gains this ability.
 status=not supported: becomes-copy

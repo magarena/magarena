@@ -5,7 +5,7 @@ value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add to your mana pool one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1.
+        {T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1.
 timing=land
-oracle=Path of Ancestry enters the battlefield tapped.\n{T}: Add to your mana pool one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1.
+oracle=Path of Ancestry enters the battlefield tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1.
 status=not supported: commander

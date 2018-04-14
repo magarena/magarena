@@ -5,8 +5,8 @@ value=3.755
 rarity=R
 type=Land
 ability=Hideaway;\
-        {T}: Add {R} to your mana pool.;\
+        {T}: Add {R}.;\
         {R}, {T}: You may play the exiled card without paying its mana cost if an opponent was dealt 7 or more damage this turn.
 timing=land
-oracle=Hideaway\n{T}: Add {R} to your mana pool.\n{R}, {T}: You may play the exiled card without paying its mana cost if an opponent was dealt 7 or more damage this turn.
+oracle=Hideaway\n{T}: Add {R}.\n{R}, {T}: You may play the exiled card without paying its mana cost if an opponent was dealt 7 or more damage this turn.
 status=not supported: hideaway

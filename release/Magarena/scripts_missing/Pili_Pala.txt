@@ -7,7 +7,7 @@ subtype=Scarecrow
 cost={2}
 pt=1/1
 ability=Flying;\
-        {2}, {Q}: Add one mana of any color to your mana pool.
+        {2}, {Q}: Add one mana of any color.
 timing=main
-oracle=Flying\n{2}, {Q}: Add one mana of any color to your mana pool.
+oracle=Flying\n{2}, {Q}: Add one mana of any color.
 status=not supported: mana-ability-with-choice

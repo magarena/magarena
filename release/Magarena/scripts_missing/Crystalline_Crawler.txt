@@ -8,8 +8,8 @@ subtype=Construct
 cost={4}
 pt=1/1
 ability=SN enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.;\
-        Remove a +1/+1 counter from SN: Add one mana of any color to your mana pool.;\
+        Remove a +1/+1 counter from SN: Add one mana of any color.;\
         {T}: Put a +1/+1 counter on SN.
 timing=main
-oracle=Converge — Crystalline Crawler enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.\nRemove a +1/+1 counter from Crystalline Crawler: Add one mana of any color to your mana pool.\n{T}: Put a +1/+1 counter on Crystalline Crawler.
+oracle=Converge — Crystalline Crawler enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.\nRemove a +1/+1 counter from Crystalline Crawler: Add one mana of any color.\n{T}: Put a +1/+1 counter on Crystalline Crawler.
 status=not supported: mana-spent

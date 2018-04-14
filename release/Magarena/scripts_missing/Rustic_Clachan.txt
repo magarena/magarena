@@ -5,8 +5,8 @@ value=2.183
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.;\
+        {T}: Add {W}.;\
         Reinforce 1—{1}{W}
 timing=land
-oracle=As Rustic Clachan enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, Rustic Clachan enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nReinforce 1—{1}{W}
+oracle=As Rustic Clachan enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, Rustic Clachan enters the battlefield tapped.\n{T}: Add {W}.\nReinforce 1—{1}{W}
 status=not supported: reveal-cost

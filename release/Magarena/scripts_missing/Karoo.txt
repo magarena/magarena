@@ -5,7 +5,7 @@ rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand.;\
-        {T}: Add {C}{W} to your mana pool.
+        {T}: Add {C}{W}.
 timing=land
-oracle=Karoo enters the battlefield tapped.\nWhen Karoo enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand.\n{T}: Add {C}{W} to your mana pool.
+oracle=Karoo enters the battlefield tapped.\nWhen Karoo enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand.\n{T}: Add {C}{W}.
 status=not supported: add-multiple-mana

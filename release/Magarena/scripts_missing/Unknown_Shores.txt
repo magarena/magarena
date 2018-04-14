@@ -4,8 +4,8 @@ image_updated=2017-10-30
 value=2.865
 rarity=C
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {1}, {T}: Add one mana of any color to your mana pool.
+ability={T}: Add {C}.;\
+        {1}, {T}: Add one mana of any color.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Add one mana of any color to your mana pool.
+oracle={T}: Add {C}.\n{1}, {T}: Add one mana of any color.
 status=not supported: mana-ability-with-choice

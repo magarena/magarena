@@ -4,8 +4,8 @@ value=3.221
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.;\
-        {T}, Sacrifice SN: Add {W}{B} to your mana pool.
+        {T}: Add {U}.;\
+        {T}, Sacrifice SN: Add {W}{B}.
 timing=land
-oracle=Ancient Spring enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Ancient Spring: Add {W}{B} to your mana pool.
+oracle=Ancient Spring enters the battlefield tapped.\n{T}: Add {U}.\n{T}, Sacrifice Ancient Spring: Add {W}{B}.
 status=not supported: add-multiple-mana
