@@ -1571,28 +1571,28 @@ public enum MagicAbility {
     },
 
     // mana abilities
-    SacAddMana("Sacrifice SN: Add " + ARG.MANA + "( to your mana pool)?\\.",10) {
+    SacAddMana("Sacrifice SN: Add " + ARG.MANA + "\\.",10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicSacrificeManaActivation(manatype));
         }
     },
-    TapSacAddMana("\\{T\\}, Sacrifice SN: Add " + ARG.MANA + "( to your mana pool)?\\.",10) {
+    TapSacAddMana("\\{T\\}, Sacrifice SN: Add " + ARG.MANA + "\\.",10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
-    ManaActivation("(?<cost>[^\"]+): Add " + ARG.MANA + "( to your mana pool)?\\.", 10) {
+    ManaActivation("(?<cost>[^\"]+): Add " + ARG.MANA + "\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(MagicManaActivation.create(ARG.cost(arg), manatype));
         }
     },
-    ManaActivationEffect("(?<cost>[^\"]+): Add " + ARG.MANA + "( to your mana pool)?\\. " + ARG.EFFECT, 10) {
+    ManaActivationEffect("(?<cost>[^\"]+): Add " + ARG.MANA + "\\. " + ARG.EFFECT, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
