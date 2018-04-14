@@ -3,6 +3,7 @@
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicCounterChangeTriggerData data) {
             return super.accept(permanent, data) &&
+                permanent.isController(data.player) &&
                 data.counterType == MagicCounterType.MinusOne;
         }
         @Override
