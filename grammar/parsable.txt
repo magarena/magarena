@@ -12,8 +12,8 @@
 {0}: tap all lands you control. @ becomes a 3/3 turtle artifact creature until end of turn.
 0: target player puts the top ten cards of his or her library into his or her graveyard.
 -15: exile all other permanents.
-{1}: add {b} to your mana pool.
-{1}: add {r} or {w} to your mana pool.
+{1}: add {b}.
+{1}: add {r} or {w}.
 {1}{b}{b}: @ gets -3/-0 and gains forestwalk until end of turn.
 {1}{b}{b}: regenerate @.
 {1}{b}{b}, sacrifice a creature: return target creature card from your graveyard to your hand.
@@ -71,7 +71,7 @@
 +1: draw a card, then discard a card at random.
 +1: each player discards a card.
 {1}: exile target card from a graveyard.
-{1}{g}: add one mana of any color to your mana pool.
+{1}{g}: add one mana of any color.
 {1}: @ gains first strike until end of turn.
 {1}{g}: all creatures get -1/-0 until end of turn.
 {1}{g}: @ becomes a 3/3 green ape creature with trample until end of turn. it's still a land.
@@ -215,12 +215,12 @@
 {1}, sacrifice @: exile target card from a graveyard.
 {1}, sacrifice @: exile target card from a graveyard. draw a card.
 {1}, sacrifice @: target creature gains deathtouch until end of turn.
-{1}, {t}: add {b} to your mana pool.
-{1}, {t}: add {g} to your mana pool.
-{1}, {t}: add one mana of any color to your mana pool.
-{1}, {t}: add {r} to your mana pool.
-{1}, {t}: add {u} to your mana pool.
-{1}, {t}: add {w} to your mana pool.
+{1}, {t}: add {b}.
+{1}, {t}: add {g}.
+{1}, {t}: add one mana of any color.
+{1}, {t}: add {r}.
+{1}, {t}: add {u}.
+{1}, {t}: add {w}.
 {1}, tap an untapped creature you control: untap enchanted creature.
 {1}: tap enchanted creature.
 +1: tap target permanent. it doesn't untap during its controller's next untap step.
@@ -245,7 +245,7 @@
 {1}, {t}, discard a card: regenerate target creature.
 {1}, {t}, discard a card: you gain 4 life.
 {1}, {t}: exile target creature you control.
-{1}, {t}, pay 1 life: add one mana of any color to your mana pool.
+{1}, {t}, pay 1 life: add one mana of any color.
 {1}, {t}, pay 1 life: put a 0/1 white goat creature token onto the battlefield.
 {1}, {t}: put a +1/+1 counter on @.
 {1}, {t}: put a charge counter on @.
@@ -259,9 +259,9 @@
 {1}, {t}, sacrifice a creature: @ deals 2 damage to target creature or player.
 {1}, {t}, sacrifice a creature: return target artifact card from your graveyard to your hand.
 {1}, {t}, sacrifice a creature: you gain 4 life.
-{1}, {t}, sacrifice @: add one mana of any color to your mana pool.
-{1}, {t}, sacrifice @: add one mana of any color to your mana pool. draw a card.
-{1}, {t}, sacrifice @: add one mana of any color to your mana pool. draw a card at the beginning of the next turn's upkeep.
+{1}, {t}, sacrifice @: add one mana of any color.
+{1}, {t}, sacrifice @: add one mana of any color. draw a card.
+{1}, {t}, sacrifice @: add one mana of any color. draw a card at the beginning of the next turn's upkeep.
 {1}, {t}, sacrifice an artifact: draw a card.
 {1}, {t}, sacrifice an artifact: you gain 1 life.
 {1}, {t}, sacrifice @: @ deals 2 damage to target creature or player.
@@ -457,7 +457,7 @@
 {2}: put a 1/1 colorless sliver creature token onto the battlefield.
 {2}: put a charge counter on @.
 -2: put three 1/1 white soldier creature tokens onto the battlefield.
-{2}, {q}: add one mana of any color to your mana pool.
+{2}, {q}: add one mana of any color.
 {2}{r}: creatures you control get +1/+0 until end of turn.
 {2}{r}: @ deals 1 damage to target player.
 {2}: regenerate @.
@@ -500,12 +500,12 @@
 {2}, sacrifice @: draw a card.
 {2}, sacrifice @: exile target creature. return the exiled card to the battlefield under its owner's control at the beginning of the next end step.
 {2}, sacrifice @: target player draws a card.
-{2}, {t}: add {b} or {g} to your mana pool.
-{2}, {t}: add {g} or {u} to your mana pool.
-{2}, {t}: add one mana of any color to your mana pool.
-{2}, {t}: add {r} or {w} to your mana pool.
-{2}, {t}: add {u} or {r} to your mana pool.
-{2}, {t}: add {w} or {b} to your mana pool.
+{2}, {t}: add {b} or {g}.
+{2}, {t}: add {g} or {u}.
+{2}, {t}: add one mana of any color.
+{2}, {t}: add {r} or {w}.
+{2}, {t}: add {u} or {r}.
+{2}, {t}: add {w} or {b}.
 {2}, {t}: all creatures get -1/-0 until end of turn.
 {2}, tap an untapped creature you control: you gain 2 life. activate this ability only any time you could cast a sorcery.
 {2}: target artifact creature gets +1/+1 until end of turn.
@@ -1133,7 +1133,7 @@ bloodthirst 6
 bloodthirst x
 blue creatures get +1/+1.
 blue creatures you control can't be blocked.
-{b}, pay 1 life: add one mana of any color to your mana pool.
+{b}, pay 1 life: add one mana of any color.
 {b}, pay 1 life: @ gets +1/+1 until end of turn.
 {b}, pay 1 life: return @ to its owner's hand.
 {b}, pay 2 life: draw a card.
@@ -1590,7 +1590,7 @@ destroy target enchanted permanent.
 destroy target enchantment.
 destroy target enchantment. you gain 2 life.
 destroy target enchantment. you gain 3 life.
-destroy target equipment. add {g} to your mana pool.
+destroy target equipment. add {g}.
 destroy target green creature. it can't be regenerated.
 destroy target green or white creature.
 destroy target human creature.
@@ -1637,7 +1637,7 @@ destroy target white creature. it can't be regenerated.
 devour 1
 devour 2
 devour 3
-discard a card: add {b} to your mana pool.
+discard a card: add {b}.
 discard a card at random: @ gains first strike and haste until end of turn.
 discard a card at random: @ gains protection from white until end of turn.
 discard a card at random: @ gets +1/+0 and gains first strike until end of turn.
@@ -2065,7 +2065,7 @@ flanking
 flash
 flying
 forestwalk
-{g}: add one mana of any color to your mana pool.
+{g}: add one mana of any color.
 gain control of target artifact until end of turn. untap that artifact. it gains haste until end of turn.
 gain control of target creature an opponent controls until end of turn. untap that creature. it gains haste until end of turn.
 gain control of target creature. untap that creature. it gains haste until end of turn. sacrifice it at the beginning of the next end step.
@@ -2137,8 +2137,8 @@ green creatures you control have trample.
 {g}, sacrifice @: destroy target artifact or enchantment.
 {g}, sacrifice @: target creature gets +2/+2 until end of turn.
 {g}, sacrifice @: until end of turn, target land becomes a 3/3 creature that's still a land.
-{g}, {t}: add one mana of any color to your mana pool.
-{g}, {t}: add {r} to your mana pool.
+{g}, {t}: add one mana of any color.
+{g}, {t}: add {r}.
 {g}: target beast creature gains trample until end of turn.
 {g}: target creature gains trample until end of turn.
 {g}: target creature gets +1/+1 until end of turn.
@@ -2239,7 +2239,7 @@ landfall — whenever a land enters the battlefield under your control, @ gets +
 landfall — whenever a land enters the battlefield under your control, @ gets +4/+4 and gains trample until end of turn.
 landfall — whenever a land enters the battlefield under your control, @ loses defender until end of turn.
 landfall — whenever a land enters the battlefield under your control, target player puts the top three cards of his or her library into his or her graveyard.
-landfall — whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
+landfall — whenever a land enters the battlefield under your control, you may add one mana of any color.
 landfall — whenever a land enters the battlefield under your control, you may exile target nonland permanent other than @.
 landfall — whenever a land enters the battlefield under your control, you may gain 2 life.
 landfall — whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control @.
@@ -2577,7 +2577,7 @@ put x 1/1 green saproling creature tokens onto the battlefield.
 put x 1/1 red goblin creature tokens onto the battlefield.
 put x 4/4 white angel creature tokens with flying onto the battlefield.
 put x x/x green ooze creature tokens onto the battlefield.
-{r}: add {b} to your mana pool.
+{r}: add {b}.
 rampage 1
 rampage 2
 rampage 3
@@ -2597,15 +2597,15 @@ regenerate each creature you control.
 regenerate target creature.
 regenerate target permanent.
 remove a +1/+0 counter from @: prevent the next 1 damage that would be dealt to @ this turn.
-remove a +1/+1 counter from @: add {1} to your mana pool.
-remove a -1/-1 counter from @: add one mana of any color to your mana pool.
+remove a +1/+1 counter from @: add {1}.
+remove a -1/-1 counter from @: add one mana of any color.
 remove a +1/+1 counter from @: @ can't be blocked this turn.
 remove a +1/+1 counter from @: @ deals 1 damage to target creature or player.
 remove a +1/+1 counter from @: @ gets +2/+2 until end of turn.
 remove a -1/-1 counter from @: put a -1/-1 counter on another target creature.
 remove a +1/+1 counter from @: put target artifact card from your graveyard on top of your library.
 remove a +1/+1 counter from @: you gain 2 life.
-remove a charge counter from @: add one mana of any color to your mana pool.
+remove a charge counter from @: add one mana of any color.
 remove a charge counter from @: target creature gets +1/+1 until end of turn.
 remove a corpse counter from @: regenerate @.
 remove a divinity counter from @: destroy all lands.
@@ -2617,7 +2617,7 @@ remove a fade counter from @: prevent the next 2 damage that would be dealt to t
 remove a fade counter from @: tap target creature.
 remove a healing counter from @: prevent the next 1 damage that would be dealt to enchanted creature this turn.
 remove a healing counter from @: prevent the next 1 damage that would be dealt to @ this turn.
-remove an ice counter from @: add {1} to your mana pool.
+remove an ice counter from @: add {1}.
 remove a quest counter from @ and sacrifice it: put four +1/+1 counters on target creature.
 remove a shield counter from @: prevent the next 1 damage that would be dealt to you this turn.
 remove five blaze counters from @: @ deals 5 damage to target creature or player.
@@ -2792,8 +2792,8 @@ return @ to its owner's hand: regenerate target creature.
 sacrifice a bat: regenerate @.
 sacrifice a beast: you gain 4 life.
 sacrifice a caribou token: you gain 1 life.
-sacrifice a creature: add one mana of any color to your mana pool.
-sacrifice a creature: add {r} to your mana pool.
+sacrifice a creature: add one mana of any color.
+sacrifice a creature: add {r}.
 sacrifice a creature: creatures you control get +1/+1 until end of turn.
 sacrifice a creature: @ deals 1 damage to target creature or player.
 sacrifice a creature: @ gains flying until end of turn.
@@ -2809,17 +2809,17 @@ sacrifice a creature: regenerate target creature.
 sacrifice a creature, return @ to its owner's hand: return target creature card from your graveyard to the battlefield. activate this ability only any time you could cast a sorcery.
 sacrifice a creature: scry 1.
 sacrifice a creature: target creature gets -1/-1 until end of turn.
-sacrifice @: add {b} to your mana pool.
-sacrifice @: add {g} to your mana pool.
-sacrifice @: add one mana of any color to your mana pool.
-sacrifice @: add {r} to your mana pool.
-sacrifice @: add {u} to your mana pool.
-sacrifice @: add {w} to your mana pool.
+sacrifice @: add {b}.
+sacrifice @: add {g}.
+sacrifice @: add one mana of any color.
+sacrifice @: add {r}.
+sacrifice @: add {u}.
+sacrifice @: add {w}.
 sacrifice a forest: regenerate @.
 sacrifice a forest: regenerate enchanted creature.
 sacrifice a forest: target attacking creature gets -3/-0 until end of turn.
 sacrifice a forest: you gain 3 life.
-sacrifice a goblin: add {r} to your mana pool.
+sacrifice a goblin: add {r}.
 sacrifice a goblin: @ gets +2/+2 and gains trample until end of turn.
 sacrifice a goblin: regenerate @.
 sacrifice a goblin: regenerate target creature.
@@ -2862,8 +2862,8 @@ sacrifice an untapped creature: enchanted creature gets +2/+0 until end of turn.
 sacrifice a permanent: regenerate target creature.
 sacrifice a permanent: regenerate target creature you control.
 sacrifice a permanent: return target creature to its owner's hand.
-sacrifice a prism token: add one mana of any color to your mana pool.
-sacrifice a saproling: add one mana of any color to your mana pool.
+sacrifice a prism token: add one mana of any color.
+sacrifice a saproling: add one mana of any color.
 sacrifice a saproling: @ gets +1/+2 until end of turn.
 sacrifice a saproling: regenerate target fungus.
 sacrifice a saproling: saproling creatures get +1/+1 until end of turn.
@@ -2998,53 +2998,53 @@ spirit creatures you control get +1/+1.
 squirrel creatures get +1/+1.
 storm
 swampwalk
-{t}: add {1} to your mana pool.
-{t}: add {1} to your mana pool. you gain 1 life.
-{t}: add {b} or {g} to your mana pool.
-{t}: add {b} or {g} to your mana pool. @ deals 1 damage to you.
-{t}: add {b} or {r} to your mana pool.
-{t}: add {b} or {r} to your mana pool. @ deals 1 damage to you.
-{t}: add {b} or {r} to your mana pool. put a depletion counter on @.
-{t}: add {b}, {r}, or {g} to your mana pool.
-{t}: add {b} to your mana pool.
-{t}: add {b} to your mana pool. @ deals 1 damage to you.
-{t}: add {g} or {u} to your mana pool.
-{t}: add {g} or {u} to your mana pool. @ deals 1 damage to you.
-{t}: add {g} or {w} to your mana pool.
-{t}: add {g} or {w} to your mana pool. @ deals 1 damage to you.
-{t}: add {g} or {w} to your mana pool. put a depletion counter on @.
-{t}: add {g} to your mana pool.
-{t}: add {g} to your mana pool. @ deals 1 damage to you.
-{t}: add {g}, {u}, or {b} to your mana pool.
-{t}: add {g}, {w}, or {u} to your mana pool.
-{t}: add one mana of any color to your mana pool.
-{t}: add one mana of any color to your mana pool. @ deals 1 damage to you.
-{t}: add one mana of any color to your mana pool. @ deals 3 damage to you.
-{t}: add {r}, {g}, or {w} to your mana pool.
-{t}: add {r} or {g} to your mana pool.
-{t}: add {r} or {g} to your mana pool. @ deals 1 damage to you.
-{t}: add {r} or {g} to your mana pool. each opponent gains 1 life.
-{t}: add {r} or {g} to your mana pool. put a depletion counter on @.
-{t}: add {r} or {w} to your mana pool.
-{t}: add {r} or {w} to your mana pool. @ deals 1 damage to you.
-{t}: add {r} to your mana pool.
-{t}: add {r} to your mana pool. @ deals 1 damage to you.
-{t}: add {u}, {b}, or {r} to your mana pool.
-{t}: add {u} or {b} to your mana pool.
-{t}: add {u} or {b} to your mana pool. @ deals 1 damage to you.
-{t}: add {u} or {b} to your mana pool. put a depletion counter on @.
-{t}: add {u} or {r} to your mana pool.
-{t}: add {u} or {r} to your mana pool. @ deals 1 damage to you.
-{t}: add {u} to your mana pool.
-{t}: add {u} to your mana pool. @ deals 1 damage to you.
-{t}: add {w} or {b} to your mana pool.
-{t}: add {w} or {b} to your mana pool. @ deals 1 damage to you.
-{t}: add {w} or {u} to your mana pool.
-{t}: add {w} or {u} to your mana pool. @ deals 1 damage to you.
-{t}: add {w} or {u} to your mana pool. put a depletion counter on @.
-{t}: add {w} to your mana pool.
-{t}: add {w} to your mana pool. @ deals 1 damage to you.
-{t}: add {w}, {u}, or {b} to your mana pool.
+{t}: add {1}.
+{t}: add {1}. you gain 1 life.
+{t}: add {b} or {g}.
+{t}: add {b} or {g}. @ deals 1 damage to you.
+{t}: add {b} or {r}.
+{t}: add {b} or {r}. @ deals 1 damage to you.
+{t}: add {b} or {r}. put a depletion counter on @.
+{t}: add {b}, {r}, or {g}.
+{t}: add {b}.
+{t}: add {b}. @ deals 1 damage to you.
+{t}: add {g} or {u}.
+{t}: add {g} or {u}. @ deals 1 damage to you.
+{t}: add {g} or {w}.
+{t}: add {g} or {w}. @ deals 1 damage to you.
+{t}: add {g} or {w}. put a depletion counter on @.
+{t}: add {g}.
+{t}: add {g}. @ deals 1 damage to you.
+{t}: add {g}, {u}, or {b}.
+{t}: add {g}, {w}, or {u}.
+{t}: add one mana of any color.
+{t}: add one mana of any color. @ deals 1 damage to you.
+{t}: add one mana of any color. @ deals 3 damage to you.
+{t}: add {r}, {g}, or {w}.
+{t}: add {r} or {g}.
+{t}: add {r} or {g}. @ deals 1 damage to you.
+{t}: add {r} or {g}. each opponent gains 1 life.
+{t}: add {r} or {g}. put a depletion counter on @.
+{t}: add {r} or {w}.
+{t}: add {r} or {w}. @ deals 1 damage to you.
+{t}: add {r}.
+{t}: add {r}. @ deals 1 damage to you.
+{t}: add {u}, {b}, or {r}.
+{t}: add {u} or {b}.
+{t}: add {u} or {b}. @ deals 1 damage to you.
+{t}: add {u} or {b}. put a depletion counter on @.
+{t}: add {u} or {r}.
+{t}: add {u} or {r}. @ deals 1 damage to you.
+{t}: add {u}.
+{t}: add {u}. @ deals 1 damage to you.
+{t}: add {w} or {b}.
+{t}: add {w} or {b}. @ deals 1 damage to you.
+{t}: add {w} or {u}.
+{t}: add {w} or {u}. @ deals 1 damage to you.
+{t}: add {w} or {u}. put a depletion counter on @.
+{t}: add {w}.
+{t}: add {w}. @ deals 1 damage to you.
+{t}: add {w}, {u}, or {b}.
 {t}: another target minotaur creature gets +1/+1 until end of turn.
 tap all artifacts.
 tap all blue creatures.
@@ -3063,7 +3063,7 @@ tap an untapped creature you control: tap target artifact, creature, or land.
 tap an untapped creature you control: tap target artifact or creature.
 tap an untapped creature you control: target player puts the top card of his or her library into his or her graveyard.
 tap an untapped creature you control: untap target basic land.
-tap an untapped druid you control: add {g} to your mana pool.
+tap an untapped druid you control: add {g}.
 tap an untapped dwarf you control: target creature gets +2/+0 until end of turn.
 tap an untapped legendary permanent you control: untap @.
 tap an untapped merfolk you control: @ gets +2/+1 until end of turn.
@@ -3347,9 +3347,9 @@ thrull creatures get +1/+1.
 totem armor
 {t}: other creatures you control with flying get +1/+0 until end of turn.
 {t}: other faerie creatures you control get +1/+0 until end of turn.
-{t}, pay 1 life: add {g} or {w} to your mana pool.
-{t}, pay 1 life: add {g} to your mana pool.
-{t}, pay 1 life: add one mana of any color to your mana pool.
+{t}, pay 1 life: add {g} or {w}.
+{t}, pay 1 life: add {g}.
+{t}, pay 1 life: add one mana of any color.
 {t}, pay 1 life: counter target black spell.
 {t}, pay 1 life: counter target white spell.
 {t}: prevent all damage that would be dealt to target creature this turn.
@@ -3387,7 +3387,7 @@ trample
 {t}: regenerate target elephant.
 {t}: regenerate target insect, rat, spider, or squirrel.
 {t}, remove a +1/+1 counter from @: put a +1/+1 counter on each other creature you control.
-{t}, remove a charge counter from @: add one mana of any color to your mana pool.
+{t}, remove a charge counter from @: add one mana of any color.
 {t}, remove a charge counter from @: tap target artifact or creature.
 {t}, remove a charge counter from @: target player loses 2 life.
 {t}, remove a charge counter from @: target player puts the top two cards of his or her library into his or her graveyard.
@@ -3404,7 +3404,7 @@ trample
 {t}, sacrifice a creature: put a charge counter on @.
 {t}, sacrifice a creature: target creature gets +2/+2 until end of turn.
 {t}, sacrifice a creature: you gain 1 life.
-{t}, sacrifice @: add one mana of any color to your mana pool.
+{t}, sacrifice @: add one mana of any color.
 {t}, sacrifice a forest: @ deals 2 damage to target player.
 {t}, sacrifice a goblin: @ deals 2 damage to target creature or player.
 {t}, sacrifice a goblin: goblin creatures get +2/+0 until end of turn.
@@ -3444,7 +3444,7 @@ trample
 {t}, sacrifice @: target land becomes a 3/3 artifact creature that's still a land.
 {t}, sacrifice @: untap all forests.
 {t}, sacrifice @: you gain 4 life.
-{t}, tap an untapped creature you control: add one mana of any color to your mana pool.
+{t}, tap an untapped creature you control: add one mana of any color.
 {t}: tap enchanted creature.
 {t}: tap target artifact.
 {t}: tap target artifact you don't control.
@@ -3658,7 +3658,7 @@ when another creature enters the battlefield, sacrifice @. if you do, @ deals 4 
 when a player casts a spell, sacrifice @ and counter that spell.
 when @ becomes the target of a spell or ability, return @ to its owner's hand.
 when @ becomes the target of a spell or ability, sacrifice it.
-when @ dies, add {1} to your mana pool.
+when @ dies, add {1}.
 when @ dies, all creatures get -1/-1 until end of turn.
 when @ dies, all creatures get -5/-5 until end of turn.
 when @ dies, @ deals 1 damage to each creature and each player.
@@ -3747,8 +3747,8 @@ when enchanted creature dies, return that card to its owner's hand.
 when enchanted creature dies, return that card to the battlefield under its owner's control.
 when enchanted creature dies, return @ to its owner's hand.
 when enchanted creature dies, you draw two cards.
-when @ enters the battlefield, add one mana of any color to your mana pool.
-when @ enters the battlefield, add {r} to your mana pool.
+when @ enters the battlefield, add one mana of any color.
+when @ enters the battlefield, add {r}.
 when @ enters the battlefield, another target permanent gains indestructible for as long as you control @.
 when @ enters the battlefield, counter target spell.
 when @ enters the battlefield, creatures you control gain shroud until end of turn.
@@ -4099,7 +4099,7 @@ whenever a creature enters the battlefield under your control, you may gain 1 li
 whenever a creature enters the battlefield under your control, you may pay {2}{r}. if you do, that creature deals damage equal to its power to target creature or player.
 whenever a creature enters the battlefield under your control, you may return @ to its owner's hand.
 whenever a creature enters the battlefield, untap all creatures.
-whenever a creature enters the battlefield, you lose 1 life and add {b} to your mana pool.
+whenever a creature enters the battlefield, you lose 1 life and add {b}.
 whenever a creature enters the battlefield, you may untap @.
 whenever a creature with flying dealt damage by @ this turn dies, put a +1/+1 counter on @.
 whenever a creature with flying dies, put a +1/+1 counter on @.

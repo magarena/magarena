@@ -58,19 +58,19 @@ living weapon
 @'s power and toughness are each equal to the number of cards in all graveyards.
 
 ### mana activations ###
-Add {1} to your mana pool.
-Add {G} to your mana pool.
-Add {B} to your mana pool.
-Add {R} to your mana pool.
-Add {U} to your mana pool.
-Add {W} to your mana pool.
-Add {1} to your mana pool.
-Add {B} or {R} to your mana pool.
-Add {G} or {W} to your mana pool.
-Add {R} or {G} to your mana pool.
-Add {U} or {B} to your mana pool.
-Add {W} or {U} to your mana pool.
-Add one mana of any color to your mana pool.
+Add {1}.
+Add {G}.
+Add {B}.
+Add {R}.
+Add {U}.
+Add {W}.
+Add {1}.
+Add {B} or {R}.
+Add {G} or {W}.
+Add {R} or {G}.
+Add {U} or {B}.
+Add {W} or {U}.
+Add one mana of any color.
 
 ### counters ###
 Put a charge counter on @.
