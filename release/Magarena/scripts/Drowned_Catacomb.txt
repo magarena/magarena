@@ -6,6 +6,6 @@ rarity=R
 type=Land
 mana=u3b3
 ability=SN enters the battlefield tapped unless you control an Island or a Swamp.;\
-        {T}: Add {U} or {B} to your mana pool.
+        {T}: Add {U} or {B}.
 timing=land
-oracle=Drowned Catacomb enters the battlefield tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B} to your mana pool.
+oracle=Drowned Catacomb enters the battlefield tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B}.

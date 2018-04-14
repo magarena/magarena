@@ -7,5 +7,5 @@ type=Creature
 subtype=Eldrazi,Scion
 color=
 pt=1/1
-ability=Sacrifice SN: Add {C} to your mana pool.
-oracle=Sacrifice this creature: Add {C} to your mana pool.
+ability=Sacrifice SN: Add {C}.
+oracle=Sacrifice this creature: Add {C}.

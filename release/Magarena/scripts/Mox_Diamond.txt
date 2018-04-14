@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={0}
-ability={T}: Add one mana of any color to your mana pool.
+ability={T}: Add one mana of any color.
 timing=artifact
-oracle=If Mox Diamond would enter the battlefield, you may discard a land card instead. If you do, put Mox Diamond onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add one mana of any color to your mana pool.
+oracle=If Mox Diamond would enter the battlefield, you may discard a land card instead. If you do, put Mox Diamond onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add one mana of any color.
 requires_groovy_code

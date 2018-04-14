@@ -4,7 +4,7 @@ image_updated=2016-11-20
 value=2.500
 rarity=C
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         Basic landcycling {1}
 timing=land
-oracle={T}: Add {C} to your mana pool.\nBasic landcycling {1}
+oracle={T}: Add {C}.\nBasic landcycling {1}

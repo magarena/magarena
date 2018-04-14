@@ -6,8 +6,8 @@ rarity=R
 type=Land
 mana=r3w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} or {W} to your mana pool.;\
+        {T}: Add {R} or {W}.;\
         {2}{R}{W}: SN becomes a 2/1 red and white Elemental creature with double strike until end of turn. It's still a land.
 timing=land
 mana_or_combat
-oracle=Needle Spires enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.\n{2}{R}{W}: Needle Spires becomes a 2/1 red and white Elemental creature with double strike until end of turn. It's still a land.
+oracle=Needle Spires enters the battlefield tapped.\n{T}: Add {R} or {W}.\n{2}{R}{W}: Needle Spires becomes a 2/1 red and white Elemental creature with double strike until end of turn. It's still a land.

@@ -8,6 +8,6 @@ subtype=Plant,Wall
 cost={1}{G}
 pt=0/4
 ability=Defender;\
-        {T}: Add {G} to your mana pool.
+        {T}: Add {G}.
 timing=smain
-oracle=Defender\n{T}: Add {G} to your mana pool.
+oracle=Defender\n{T}: Add {G}.

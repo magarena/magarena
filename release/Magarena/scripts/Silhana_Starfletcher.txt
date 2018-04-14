@@ -9,4 +9,4 @@ pt=1/3
 ability=Reach
 timing=main
 requires_groovy_code=Sol Grail
-oracle=Reach\nAs Silhana Starfletcher enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color to your mana pool.
+oracle=Reach\nAs Silhana Starfletcher enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color.

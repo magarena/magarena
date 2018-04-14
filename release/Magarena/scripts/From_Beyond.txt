@@ -9,4 +9,4 @@ ability=Devoid;\
         At the beginning of your upkeep, create a 1/1 colorless Eldrazi Scion creature token.;\
         {1}{G}, Sacrifice SN: Search your library for an Eldrazi card, reveal it, put it into your hand, then shuffle your library.
 timing=enchantment
-oracle=Devoid\nAt the beginning of your upkeep, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."\n{1}{G}, Sacrifice From Beyond: Search your library for an Eldrazi card, reveal it, put it into your hand, then shuffle your library.
+oracle=Devoid\nAt the beginning of your upkeep, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C}."\n{1}{G}, Sacrifice From Beyond: Search your library for an Eldrazi card, reveal it, put it into your hand, then shuffle your library.

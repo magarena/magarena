@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=b3r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} or {R} to your mana pool.
+        {T}: Add {B} or {R}.
 timing=tapland
-oracle=Rakdos Guildgate enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.
+oracle=Rakdos Guildgate enters the battlefield tapped.\n{T}: Add {B} or {R}.

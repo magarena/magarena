@@ -4,7 +4,7 @@ value=3.393
 rarity=R
 type=Artifact
 cost={3}
-ability={T}: Add {G} to your mana pool.;\
-        Sacrifice SN: Add {G} to your mana pool.
+ability={T}: Add {G}.;\
+        Sacrifice SN: Add {G}.
 timing=artifact
-oracle={T}: Add {G} to your mana pool.\nSacrifice Horn of Ramos: Add {G} to your mana pool.
+oracle={T}: Add {G}.\nSacrifice Horn of Ramos: Add {G}.

@@ -4,9 +4,9 @@ value=4.250
 rarity=U
 type=Legendary,Land
 mana=b4
-ability={T}: Add {B} to your mana pool.;\
+ability={T}: Add {B}.;\
         {T}: Target creature loses first strike until end of turn.;\
         {T}: Target creature loses swampwalk until end of turn.
 timing=land
-oracle={T}: Add {B} to your mana pool.\n{T}: Target creature loses first strike or swampwalk until end of turn.
+oracle={T}: Add {B}.\n{T}: Target creature loses first strike or swampwalk until end of turn.
 #Choice should be made on resolution

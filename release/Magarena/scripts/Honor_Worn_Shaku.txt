@@ -4,7 +4,7 @@ value=2.108
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         Tap an untapped legendary permanent you control: Untap SN.
 timing=artifact
-oracle={T}: Add {C} to your mana pool.\nTap an untapped legendary permanent you control: Untap Honor-Worn Shaku.
+oracle={T}: Add {C}.\nTap an untapped legendary permanent you control: Untap Honor-Worn Shaku.

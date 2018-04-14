@@ -6,6 +6,6 @@ type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target player loses 1 life.;\
-        {T}: Add {B} to your mana pool.
+        {T}: Add {B}.
 timing=land
-oracle=Piranha Marsh enters the battlefield tapped.\nWhen Piranha Marsh enters the battlefield, target player loses 1 life.\n{T}: Add {B} to your mana pool.
+oracle=Piranha Marsh enters the battlefield tapped.\nWhen Piranha Marsh enters the battlefield, target player loses 1 life.\n{T}: Add {B}.

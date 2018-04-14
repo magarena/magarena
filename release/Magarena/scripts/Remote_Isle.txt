@@ -5,7 +5,7 @@ rarity=C
 type=Land
 mana=u3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.;\
+        {T}: Add {U}.;\
         Cycling {2}
 timing=tapland
-oracle=Remote Isle enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nCycling {2}
+oracle=Remote Isle enters the battlefield tapped.\n{T}: Add {U}.\nCycling {2}

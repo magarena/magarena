@@ -5,7 +5,7 @@ value=2.843
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {R} or {W} to your mana pool.;\
+ability={T}: Add {R} or {W}.;\
         {R}{W}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {R} or {W} to your mana pool.\n{R}{W}, {T}, Sacrifice Boros Cluestone: Draw a card.
+oracle={T}: Add {R} or {W}.\n{R}{W}, {T}, Sacrifice Boros Cluestone: Draw a card.

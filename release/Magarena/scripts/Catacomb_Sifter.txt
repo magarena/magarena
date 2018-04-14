@@ -11,4 +11,4 @@ ability=Devoid;\
         When SN enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token.;\
         Whenever another creature you control dies, scry 1.
 timing=main
-oracle=Devoid\nWhen Catacomb Sifter enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."\nWhenever another creature you control dies, scry 1.
+oracle=Devoid\nWhen Catacomb Sifter enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C}."\nWhenever another creature you control dies, scry 1.

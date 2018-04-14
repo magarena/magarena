@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/sok/163.jpg
 value=3.718
 rarity=R
 type=Legendary,Land
-ability={T}: Add {C} to your mana pool.
+ability={T}: Add {C}.
 timing=land
 requires_groovy_code
-oracle={T}: Add {C} to your mana pool.\n{3}, {T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.
+oracle={T}: Add {C}.\n{3}, {T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.

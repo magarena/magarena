@@ -4,8 +4,8 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {W} or {U} to your mana pool.;\
+ability={T}: Add {W} or {U}.;\
         {4}{W}{U}: SN becomes a 4/4 white and blue Dragon artifact creature with flying until end of turn.
 mana_or_combat
 timing=artifact
-oracle={T}: Add {W} or {U} to your mana pool.\n{4}{W}{U}: Ojutai Monument becomes a 4/4 white and blue Dragon artifact creature with flying until end of turn.
+oracle={T}: Add {W} or {U}.\n{4}{W}{U}: Ojutai Monument becomes a 4/4 white and blue Dragon artifact creature with flying until end of turn.

@@ -5,6 +5,6 @@ rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature you control gains protection from the color of your choice until end of turn.;\
-        {T}: Add {W} to your mana pool.
+        {T}: Add {W}.
 timing=fmain
-oracle=Sejiri Steppe enters the battlefield tapped.\nWhen Sejiri Steppe enters the battlefield, target creature you control gains protection from the color of your choice until end of turn.\n{T}: Add {W} to your mana pool.
+oracle=Sejiri Steppe enters the battlefield tapped.\nWhen Sejiri Steppe enters the battlefield, target creature you control gains protection from the color of your choice until end of turn.\n{T}: Add {W}.

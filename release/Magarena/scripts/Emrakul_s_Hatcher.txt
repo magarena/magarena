@@ -8,4 +8,4 @@ cost={4}{R}
 pt=3/3
 ability=When SN enters the battlefield, create three 0/1 colorless Eldrazi Spawn creature tokens.
 timing=main
-oracle=When Emrakul's Hatcher enters the battlefield, create three 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=When Emrakul's Hatcher enters the battlefield, create three 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C}."

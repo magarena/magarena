@@ -6,7 +6,7 @@ rarity=U
 type=Land
 mana=g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} to your mana pool.;\
+        {T}: Add {G}.;\
         Graft 1
 timing=tapland
-oracle=Llanowar Reborn enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nGraft 1
+oracle=Llanowar Reborn enters the battlefield tapped.\n{T}: Add {G}.\nGraft 1

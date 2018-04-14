@@ -4,7 +4,7 @@ value=4.219
 rarity=U
 type=Legendary,Land
 mana=r4
-ability={T}: Add {R} to your mana pool.
+ability={T}: Add {R}.
 timing=land
 requires_groovy_code
-oracle={T}: Add {R} to your mana pool.\n{T}: Target creature loses all landwalk abilities until end of turn.
+oracle={T}: Add {R}.\n{T}: Target creature loses all landwalk abilities until end of turn.

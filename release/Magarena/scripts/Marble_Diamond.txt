@@ -5,6 +5,6 @@ rarity=U
 type=Artifact
 cost={2}
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.
+        {T}: Add {W}.
 timing=artifact
-oracle=Marble Diamond enters the battlefield tapped.\n{T}: Add {W} to your mana pool.
+oracle=Marble Diamond enters the battlefield tapped.\n{T}: Add {W}.

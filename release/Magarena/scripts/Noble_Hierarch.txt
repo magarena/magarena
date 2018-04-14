@@ -7,6 +7,6 @@ subtype=Human,Druid
 cost={G}
 pt=0/1
 ability=Exalted;\
-        {T}: Add {G}, {W}, or {U} to your mana pool.
+        {T}: Add {G}, {W}, or {U}.
 timing=fmain
-oracle=Exalted\n{T}: Add {G}, {W}, or {U} to your mana pool.
+oracle=Exalted\n{T}: Add {G}, {W}, or {U}.

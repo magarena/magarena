@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/c14/297.jpg
 value=3.732
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {5}, {T}, Sacrifice SN: Create a 3/4 colorless Gargoyle artifact creature token with flying.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{5}, {T}, Sacrifice Gargoyle Castle: Create a 3/4 colorless Gargoyle artifact creature token with flying.
+oracle={T}: Add {C}.\n{5}, {T}, Sacrifice Gargoyle Castle: Create a 3/4 colorless Gargoyle artifact creature token with flying.

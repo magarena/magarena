@@ -8,6 +8,6 @@ subtype=Plant,Wall
 cost={1}{G}
 pt=0/5
 ability=Defender;\
-        Put a -0/-1 counter on SN: Add {G} to your mana pool. Activate this ability only once each turn.
+        Put a -0/-1 counter on SN: Add {G}. Activate this ability only once each turn.
 timing=main
-oracle=Defender\nPut a -0/-1 counter on Wall of Roots: Add {G} to your mana pool. Activate this ability only once each turn.
+oracle=Defender\nPut a -0/-1 counter on Wall of Roots: Add {G}. Activate this ability only once each turn.

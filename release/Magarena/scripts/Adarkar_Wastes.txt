@@ -4,7 +4,7 @@ value=4.265
 rarity=R
 type=Land
 mana=w2u2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {W} or {U} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {W} or {U}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {W} or {U} to your mana pool. Adarkar Wastes deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {W} or {U}. Adarkar Wastes deals 1 damage to you.

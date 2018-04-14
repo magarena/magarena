@@ -5,7 +5,7 @@ rarity=R
 type=Land
 mana=w2u2
 ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
-        {T}: Add {W} or {U} to your mana pool. Put a depletion counter on SN.
+        {T}: Add {W} or {U}. Put a depletion counter on SN.
 timing=land
-oracle=Land Cap doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Land Cap.\n{T}: Add {W} or {U} to your mana pool. Put a depletion counter on Land Cap.
+oracle=Land Cap doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Land Cap.\n{T}: Add {W} or {U}. Put a depletion counter on Land Cap.
 requires_groovy_code

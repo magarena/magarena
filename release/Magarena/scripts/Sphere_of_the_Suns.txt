@@ -7,6 +7,6 @@ type=Artifact
 cost={2}
 ability=SN enters the battlefield tapped.;\
         SN enters the battlefield with three charge counters on it.;\
-        {T}, Remove a charge counter from SN: Add one mana of any color to your mana pool.
+        {T}, Remove a charge counter from SN: Add one mana of any color.
 timing=artifact
-oracle=Sphere of the Suns enters the battlefield tapped and with three charge counters on it.\n{T}, Remove a charge counter from Sphere of the Suns: Add one mana of any color to your mana pool.
+oracle=Sphere of the Suns enters the battlefield tapped and with three charge counters on it.\n{T}, Remove a charge counter from Sphere of the Suns: Add one mana of any color.

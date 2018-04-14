@@ -3,9 +3,9 @@ image=https://magiccards.info/scans/en/mm2/236.jpg
 value=4.212
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}: SN becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land.;\
         {1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.
 timing=land
 mana_or_combat
-oracle={T}: Add {C} to your mana pool.\n{1}: Blinkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land.\n{1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.
+oracle={T}: Add {C}.\n{1}: Blinkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land.\n{1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.

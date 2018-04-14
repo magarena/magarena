@@ -5,7 +5,7 @@ value=2.500
 rarity=R
 type=Land
 mana=b2g2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {B} or {G} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {B} or {G}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {B} or {G} to your mana pool. Llanowar Wastes deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {B} or {G}. Llanowar Wastes deals 1 damage to you.

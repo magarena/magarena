@@ -7,6 +7,6 @@ type=Land
 mana=g3w3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
-        {T}: Add {G} or {W} to your mana pool.
+        {T}: Add {G} or {W}.
 timing=tapland
-oracle=Graypelt Refuge enters the battlefield tapped.\nWhen Graypelt Refuge enters the battlefield, you gain 1 life.\n{T}: Add {G} or {W} to your mana pool.
+oracle=Graypelt Refuge enters the battlefield tapped.\nWhen Graypelt Refuge enters the battlefield, you gain 1 life.\n{T}: Add {G} or {W}.

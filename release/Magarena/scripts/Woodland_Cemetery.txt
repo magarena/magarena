@@ -5,6 +5,6 @@ rarity=R
 type=Land
 mana=b3g3
 ability=SN enters the battlefield tapped unless you control a Swamp or a Forest.;\
-        {T}: Add {B} or {G} to your mana pool.
+        {T}: Add {B} or {G}.
 timing=land
-oracle=Woodland Cemetery enters the battlefield tapped unless you control a Swamp or a Forest.\n{T}: Add {B} or {G} to your mana pool.
+oracle=Woodland Cemetery enters the battlefield tapped unless you control a Swamp or a Forest.\n{T}: Add {B} or {G}.

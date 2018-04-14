@@ -4,7 +4,7 @@ value=2.595
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {W} or {U} to your mana pool.;\
+ability={T}: Add {W} or {U}.;\
         {W}{U}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {W} or {U} to your mana pool.\n{W}{U}, {T}, Sacrifice Azorius Cluestone: Draw a card.
+oracle={T}: Add {W} or {U}.\n{W}{U}, {T}, Sacrifice Azorius Cluestone: Draw a card.

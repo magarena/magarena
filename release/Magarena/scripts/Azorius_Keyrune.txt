@@ -4,8 +4,8 @@ value=3.500
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {W} or {U} to your mana pool.;\
+ability={T}: Add {W} or {U}.;\
         {W}{U}: SN becomes a 2/2 white and blue Bird artifact creature with flying until end of turn.
 timing=artifact
 mana_or_combat
-oracle={T}: Add {W} or {U} to your mana pool.\n{W}{U}: Azorius Keyrune becomes a 2/2 white and blue Bird artifact creature with flying until end of turn.
+oracle={T}: Add {W} or {U}.\n{W}{U}: Azorius Keyrune becomes a 2/2 white and blue Bird artifact creature with flying until end of turn.

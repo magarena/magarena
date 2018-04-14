@@ -8,6 +8,6 @@ subtype=Human,Druid
 cost={G}
 pt=1/1
 ability=Renown 1;\
-        As long as SN is renowned, it has vigilance and "{T}: Add one mana of any color to your mana pool."
+        As long as SN is renowned, it has vigilance and "{T}: Add one mana of any color."
 timing=main
-oracle=Renown 1\nAs long as Honored Hierarch is renowned, it has vigilance and "{T}: Add one mana of any color to your mana pool."
+oracle=Renown 1\nAs long as Honored Hierarch is renowned, it has vigilance and "{T}: Add one mana of any color."

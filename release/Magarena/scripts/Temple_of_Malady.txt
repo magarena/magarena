@@ -6,6 +6,6 @@ type=Land
 mana=b3g3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
-        {T}: Add {B} or {G} to your mana pool.
+        {T}: Add {B} or {G}.
 timing=land
-oracle=Temple of Malady enters the battlefield tapped.\nWhen Temple of Malady enters the battlefield, scry 1.\n{T}: Add {B} or {G} to your mana pool.
+oracle=Temple of Malady enters the battlefield tapped.\nWhen Temple of Malady enters the battlefield, scry 1.\n{T}: Add {B} or {G}.

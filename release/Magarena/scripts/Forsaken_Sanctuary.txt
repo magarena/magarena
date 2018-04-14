@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=w3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} or {B} to your mana pool.
+        {T}: Add {W} or {B}.
 timing=land
-oracle=Forsaken Sanctuary enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.
+oracle=Forsaken Sanctuary enters the battlefield tapped.\n{T}: Add {W} or {B}.

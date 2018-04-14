@@ -6,7 +6,7 @@ rarity=U
 type=Land
 mana=r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} to your mana pool.;\
+        {T}: Add {R}.;\
         {1}{R}, {T}: SN deals 1 damage to target creature or player. Activate this ability only if you have no cards in hand.
 timing=tapland
-oracle=Keldon Megaliths enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\nHellbent — {1}{R}, {T}: Keldon Megaliths deals 1 damage to target creature or player. Activate this ability only if you have no cards in hand.
+oracle=Keldon Megaliths enters the battlefield tapped.\n{T}: Add {R}.\nHellbent — {1}{R}, {T}: Keldon Megaliths deals 1 damage to target creature or player. Activate this ability only if you have no cards in hand.

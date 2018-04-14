@@ -6,7 +6,7 @@ rarity=C
 type=Land
 mana=r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} to your mana pool.;\
+        {T}: Add {R}.;\
         Cycling {2}
 timing=tapland
-oracle=Smoldering Crater enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\nCycling {2}
+oracle=Smoldering Crater enters the battlefield tapped.\n{T}: Add {R}.\nCycling {2}

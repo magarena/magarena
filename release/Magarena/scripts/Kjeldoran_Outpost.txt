@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/ai/184.jpg
 value=4.000
 rarity=R
 type=Land
-ability={T}: Add {W} to your mana pool.;\
+ability={T}: Add {W}.;\
         {1}{W}, {T}: Create a 1/1 white Soldier creature token.
 timing=land
-oracle=If Kjeldoran Outpost would enter the battlefield, sacrifice a Plains instead. If you do, put Kjeldoran Outpost onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {W} to your mana pool.\n{1}{W}, {T}: Create a 1/1 white Soldier creature token.
+oracle=If Kjeldoran Outpost would enter the battlefield, sacrifice a Plains instead. If you do, put Kjeldoran Outpost onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {W}.\n{1}{W}, {T}: Create a 1/1 white Soldier creature token.
 requires_groovy_code

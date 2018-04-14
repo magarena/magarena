@@ -4,7 +4,7 @@ image_updated=2016-02-29
 value=4.438
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.
+ability={T}: Add {C}.
 timing=land
 requires_groovy_code
-oracle={T}: Add {C} to your mana pool.\n{T}, Sacrifice Ghost Quarter: Destroy target land. Its controller may search his or her library for a basic land card, put it onto the battlefield, then shuffle his or her library.
+oracle={T}: Add {C}.\n{T}, Sacrifice Ghost Quarter: Destroy target land. Its controller may search his or her library for a basic land card, put it onto the battlefield, then shuffle his or her library.

@@ -8,4 +8,4 @@ cost={3}{G}
 pt=3/3
 ability=When SN enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens.
 timing=main
-oracle=When Kozilek's Predator enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=When Kozilek's Predator enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C}."

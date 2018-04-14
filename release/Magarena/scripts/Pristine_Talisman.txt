@@ -7,4 +7,4 @@ type=Artifact
 cost={3}
 timing=artifact
 requires_groovy_code
-oracle={T}: Add {C} to your mana pool. You gain 1 life.
+oracle={T}: Add {C}. You gain 1 life.

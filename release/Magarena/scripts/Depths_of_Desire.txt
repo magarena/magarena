@@ -6,4 +6,4 @@ type=Instant
 cost={2}{U}
 effect=Return target creature to its owner's hand.~Create a colorless Treasure artifact token.
 timing=removal
-oracle=Return target creature to its owner's hand. Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+oracle=Return target creature to its owner's hand. Create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."

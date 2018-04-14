@@ -6,4 +6,4 @@ type=Instant
 cost={1}{R}
 effect=SN deals 1 damage to target creature or player.~Create a 0/1 colorless Eldrazi Spawn creature token.
 timing=removal
-oracle=Spawning Breath deals 1 damage to target creature or player. Create a 0/1 colorless Eldrazi Spawn creature token. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Spawning Breath deals 1 damage to target creature or player. Create a 0/1 colorless Eldrazi Spawn creature token. It has "Sacrifice this creature: Add {C}."

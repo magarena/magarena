@@ -5,7 +5,7 @@ value=2.500
 rarity=R
 type=Land
 mana=b2g2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {G} or {U} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {G} or {U}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {G} or {U} to your mana pool. Yavimaya Coast deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {G} or {U}. Yavimaya Coast deals 1 damage to you.

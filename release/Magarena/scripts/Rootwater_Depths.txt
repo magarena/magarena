@@ -4,7 +4,7 @@ value=2.946
 rarity=U
 type=Land
 mana=u2b2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {U} or {B} to your mana pool. SN doesn't untap during your next untap step.
+ability={T}: Add {C}.;\
+        {T}: Add {U} or {B}. SN doesn't untap during your next untap step.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {U} or {B} to your mana pool. Rootwater Depths doesn't untap during your next untap step.
+oracle={T}: Add {C}.\n{T}: Add {U} or {B}. Rootwater Depths doesn't untap during your next untap step.

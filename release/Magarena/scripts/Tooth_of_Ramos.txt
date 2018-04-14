@@ -4,7 +4,7 @@ value=3.196
 rarity=R
 type=Artifact
 cost={3}
-ability={T}: Add {W} to your mana pool.;\
-        Sacrifice SN: Add {W} to your mana pool.
+ability={T}: Add {W}.;\
+        Sacrifice SN: Add {W}.
 timing=artifact
-oracle={T}: Add {W} to your mana pool.\nSacrifice Tooth of Ramos: Add {W} to your mana pool.
+oracle={T}: Add {W}.\nSacrifice Tooth of Ramos: Add {W}.

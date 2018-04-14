@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Land
 subtype=Desert
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}, {T}, Sacrifice a Desert: Exile all cards from all graveyards.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice a Desert: Exile all cards from all graveyards.
+oracle={T}: Add {C}.\n{2}, {T}, Sacrifice a Desert: Exile all cards from all graveyards.

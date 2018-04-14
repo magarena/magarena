@@ -6,7 +6,7 @@ type=Land
 mana=u3b3
 timing=tapland
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {B} to your mana pool.;\
+        {T}: Add {U} or {B}.;\
         {1}{U}{B}: SN becomes a 3/2 blue and black Elemental creature until end of turn. It's still a land.~SN can't be blocked this turn.
 mana_or_combat
-oracle=Creeping Tar Pit enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.\n{1}{U}{B}: Creeping Tar Pit becomes a 3/2 blue and black Elemental creature until end of turn and can't be blocked this turn. It's still a land.
+oracle=Creeping Tar Pit enters the battlefield tapped.\n{T}: Add {U} or {B}.\n{1}{U}{B}: Creeping Tar Pit becomes a 3/2 blue and black Elemental creature until end of turn and can't be blocked this turn. It's still a land.

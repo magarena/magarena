@@ -6,8 +6,8 @@ rarity=R
 type=Land
 mana=w3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} or {B} to your mana pool.;\
+        {T}: Add {W} or {B}.;\
         {1}{W}{B}: SN becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It's still a land.
 timing=land
 mana_or_combat
-oracle=Shambling Vent enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.\n{1}{W}{B}: Shambling Vent becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It's still a land.
+oracle=Shambling Vent enters the battlefield tapped.\n{T}: Add {W} or {B}.\n{1}{W}{B}: Shambling Vent becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It's still a land.

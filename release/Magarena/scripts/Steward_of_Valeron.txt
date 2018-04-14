@@ -7,6 +7,6 @@ subtype=Human,Druid,Knight
 cost={G}{W}
 pt=2/2
 ability=Vigilance;\
-        {T}: Add {G} to your mana pool.
+        {T}: Add {G}.
 timing=main
-oracle=Vigilance\n{T}: Add {G} to your mana pool.
+oracle=Vigilance\n{T}: Add {G}.

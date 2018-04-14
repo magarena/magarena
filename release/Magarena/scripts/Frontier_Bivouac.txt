@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=g2u2r2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G}, {U}, or {R} to your mana pool.
+        {T}: Add {G}, {U}, or {R}.
 timing=tapland
-oracle=Frontier Bivouac enters the battlefield tapped.\n{T}: Add {G}, {U}, or {R} to your mana pool.
+oracle=Frontier Bivouac enters the battlefield tapped.\n{T}: Add {G}, {U}, or {R}.

@@ -9,4 +9,4 @@ pt=3/2
 ability={2}{B}, Sacrifice a creature: Create two colorless Treasure artifact tokens.;\
         Sacrifice three Treasures: Draw a card.
 timing=main
-oracle={2}{B}, Sacrifice a creature: Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nSacrifice three Treasures: Draw a card.
+oracle={2}{B}, Sacrifice a creature: Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color."\nSacrifice three Treasures: Draw a card.

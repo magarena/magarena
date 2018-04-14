@@ -4,7 +4,7 @@ value=4.255
 rarity=R
 type=Land
 mana=w2g2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {G} or {W} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {G} or {W}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {G} or {W} to your mana pool. Brushland deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {G} or {W}. Brushland deals 1 damage to you.

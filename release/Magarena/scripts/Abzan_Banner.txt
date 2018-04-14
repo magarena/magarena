@@ -4,7 +4,7 @@ value=2.250
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {W}, {B}, or {G} to your mana pool.;\
+ability={T}: Add {W}, {B}, or {G}.;\
         {W}{B}{G}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {W}, {B}, or {G} to your mana pool.\n{W}{B}{G}, {T}, Sacrifice Abzan Banner: Draw a card.
+oracle={T}: Add {W}, {B}, or {G}.\n{W}{B}{G}, {T}, Sacrifice Abzan Banner: Draw a card.

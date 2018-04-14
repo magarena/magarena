@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=r3w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} or {W} to your mana pool.
+        {T}: Add {R} or {W}.
 timing=tapland
-oracle=Boros Guildgate enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.
+oracle=Boros Guildgate enters the battlefield tapped.\n{T}: Add {R} or {W}.

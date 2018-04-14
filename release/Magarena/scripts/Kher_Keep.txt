@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/ts/275.jpg
 value=3.833
 rarity=R
 type=Legendary,Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}{R}, {T}: Create a 0/1 red Kobold creature token named Kobolds of Kher Keep.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}{R}, {T}: Create a 0/1 red Kobold creature token named Kobolds of Kher Keep.
+oracle={T}: Add {C}.\n{1}{R}, {T}: Create a 0/1 red Kobold creature token named Kobolds of Kher Keep.

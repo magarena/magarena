@@ -6,7 +6,7 @@ rarity=C
 type=Land
 mana=w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.;\
+        {T}: Add {W}.;\
         Cycling {W}
 timing=tapland
-oracle=Secluded Steppe enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nCycling {W}
+oracle=Secluded Steppe enters the battlefield tapped.\n{T}: Add {W}.\nCycling {W}

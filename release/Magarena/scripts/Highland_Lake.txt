@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {R} to your mana pool.
+        {T}: Add {U} or {R}.
 timing=land
-oracle=Highland Lake enters the battlefield tapped.\n{T}: Add {U} or {R} to your mana pool.
+oracle=Highland Lake enters the battlefield tapped.\n{T}: Add {U} or {R}.

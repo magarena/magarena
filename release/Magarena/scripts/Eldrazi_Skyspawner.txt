@@ -11,4 +11,4 @@ ability=Devoid;\
         Flying;\
         When SN enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token.
 timing=main
-oracle=Devoid\nFlying\nWhen Eldrazi Skyspawner enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nFlying\nWhen Eldrazi Skyspawner enters the battlefield, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C}."

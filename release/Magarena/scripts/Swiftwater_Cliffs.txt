@@ -7,6 +7,6 @@ type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
-        {T}: Add {U} or {R} to your mana pool.
+        {T}: Add {U} or {R}.
 timing=tapland
-oracle=Swiftwater Cliffs enters the battlefield tapped.\nWhen Swiftwater Cliffs enters the battlefield, you gain 1 life.\n{T}: Add {U} or {R} to your mana pool.
+oracle=Swiftwater Cliffs enters the battlefield tapped.\nWhen Swiftwater Cliffs enters the battlefield, you gain 1 life.\n{T}: Add {U} or {R}.

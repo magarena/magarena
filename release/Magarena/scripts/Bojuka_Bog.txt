@@ -6,6 +6,6 @@ type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, exile all cards from target player's graveyard.;\
-        {T}: Add {B} to your mana pool.
+        {T}: Add {B}.
 timing=land
-oracle=Bojuka Bog enters the battlefield tapped.\nWhen Bojuka Bog enters the battlefield, exile all cards from target player's graveyard.\n{T}: Add {B} to your mana pool.
+oracle=Bojuka Bog enters the battlefield tapped.\nWhen Bojuka Bog enters the battlefield, exile all cards from target player's graveyard.\n{T}: Add {B}.

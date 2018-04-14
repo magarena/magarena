@@ -7,6 +7,6 @@ type=Land
 mana=r3g3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
-        {T}: Add {R} or {G} to your mana pool.
+        {T}: Add {R} or {G}.
 timing=tapland
-oracle=Rugged Highlands enters the battlefield tapped.\nWhen Rugged Highlands enters the battlefield, you gain 1 life.\n{T}: Add {R} or {G} to your mana pool.
+oracle=Rugged Highlands enters the battlefield tapped.\nWhen Rugged Highlands enters the battlefield, you gain 1 life.\n{T}: Add {R} or {G}.

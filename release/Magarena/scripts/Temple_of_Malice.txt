@@ -6,6 +6,6 @@ type=Land
 mana=b3r3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
-        {T}: Add {B} or {R} to your mana pool.
+        {T}: Add {B} or {R}.
 timing=tapland
-oracle=Temple of Malice enters the battlefield tapped.\nWhen Temple of Malice enters the battlefield, scry 1.\n{T}: Add {B} or {R} to your mana pool.
+oracle=Temple of Malice enters the battlefield tapped.\nWhen Temple of Malice enters the battlefield, scry 1.\n{T}: Add {B} or {R}.

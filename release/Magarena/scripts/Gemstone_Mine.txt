@@ -7,4 +7,4 @@ mana=b1g1r1u1w1
 ability=SN enters the battlefield with three mining counters on it.
 timing=land
 requires_groovy_code
-oracle=Gemstone Mine enters the battlefield with three mining counters on it.\n{T}, Remove a mining counter from Gemstone Mine: Add one mana of any color to your mana pool. If there are no mining counters on Gemstone Mine, sacrifice it.
+oracle=Gemstone Mine enters the battlefield with three mining counters on it.\n{T}, Remove a mining counter from Gemstone Mine: Add one mana of any color. If there are no mining counters on Gemstone Mine, sacrifice it.

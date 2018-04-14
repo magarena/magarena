@@ -11,4 +11,4 @@ ability=Devoid;\
         When SN enters the battlefield, create two 1/1 colorless Eldrazi Scion creature tokens.;\
         Sacrifice an Eldrazi Scion: Tap target creature.
 timing=main
-oracle=Devoid\nWhen Drowner of Hope enters the battlefield, create two 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."\nSacrifice an Eldrazi Scion: Tap target creature.
+oracle=Devoid\nWhen Drowner of Hope enters the battlefield, create two 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C}."\nSacrifice an Eldrazi Scion: Tap target creature.

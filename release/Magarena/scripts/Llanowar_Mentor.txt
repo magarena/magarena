@@ -8,4 +8,4 @@ cost={G}
 pt=1/1
 ability={G}, {T}, Discard a card: Create a 1/1 green Elf Druid creature token named Llanowar Elves.
 timing=main
-oracle={G}, {T}, Discard a card: Create a 1/1 green Elf Druid creature token named Llanowar Elves. It has "{T}: Add {G} to your mana pool."
+oracle={G}, {T}, Discard a card: Create a 1/1 green Elf Druid creature token named Llanowar Elves. It has "{T}: Add {G}."

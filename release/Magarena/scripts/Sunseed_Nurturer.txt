@@ -7,6 +7,6 @@ subtype=Human,Druid,Wizard
 cost={2}{W}
 pt=1/1
 ability=At the beginning of your end step, if you control a creature with power 5 or greater, you may gain 2 life.;\
-        {T}: Add {C} to your mana pool.
+        {T}: Add {C}.
 timing=main
-oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may gain 2 life.\n{T}: Add {C} to your mana pool.
+oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may gain 2 life.\n{T}: Add {C}.

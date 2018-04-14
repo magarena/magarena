@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/vi/163.jpg
 value=3.622
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.
+ability={T}: Add {C}.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.
+oracle={T}: Add {C}.\n{T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.
 requires_groovy_code

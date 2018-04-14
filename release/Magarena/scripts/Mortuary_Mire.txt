@@ -7,6 +7,6 @@ type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you may put target creature card from your graveyard on top of your library.;\
-        {T}: Add {B} to your mana pool.
+        {T}: Add {B}.
 timing=land
-oracle=Mortuary Mire enters the battlefield tapped.\nWhen Mortuary Mire enters the battlefield, you may put target creature card from your graveyard on top of your library.\n{T}: Add {B} to your mana pool.
+oracle=Mortuary Mire enters the battlefield tapped.\nWhen Mortuary Mire enters the battlefield, you may put target creature card from your graveyard on top of your library.\n{T}: Add {B}.

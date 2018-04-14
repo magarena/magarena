@@ -4,7 +4,7 @@ value=2.134
 rarity=U
 type=Land
 mana=r2g2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {R} or {G} to your mana pool. SN doesn't untap during your next untap step.
+ability={T}: Add {C}.;\
+        {T}: Add {R} or {G}. SN doesn't untap during your next untap step.
 timing=main
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Pinecrest Ridge doesn't untap during your next untap step.
+oracle={T}: Add {C}.\n{T}: Add {R} or {G}. Pinecrest Ridge doesn't untap during your next untap step.

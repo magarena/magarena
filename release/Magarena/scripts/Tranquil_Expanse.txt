@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=g3w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {W} to your mana pool.
+        {T}: Add {G} or {W}.
 timing=land
-oracle=Tranquil Expanse enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.
+oracle=Tranquil Expanse enters the battlefield tapped.\n{T}: Add {G} or {W}.

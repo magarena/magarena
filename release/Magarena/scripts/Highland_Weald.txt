@@ -5,6 +5,6 @@ rarity=U
 type=Snow,Land
 mana=r3g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} or {G} to your mana pool.
+        {T}: Add {R} or {G}.
 timing=tapland
-oracle=Highland Weald enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.
+oracle=Highland Weald enters the battlefield tapped.\n{T}: Add {R} or {G}.

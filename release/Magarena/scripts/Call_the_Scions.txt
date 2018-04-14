@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Devoid
 effect=Create two 1/1 colorless Eldrazi Scion creature tokens.
 timing=main
-oracle=Devoid\nCreate two 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nCreate two 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C}."

@@ -4,7 +4,7 @@ image_updated=2016-01-09
 value=3.488
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}{R}{W}, {T}: Target creature gains double strike until end of turn.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}{R}{W}, {T}: Target creature gains double strike until end of turn.
+oracle={T}: Add {C}.\n{2}{R}{W}, {T}: Target creature gains double strike until end of turn.

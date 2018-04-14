@@ -6,6 +6,6 @@ type=Land
 subtype=Lair
 mana=r2g2w2
 ability=When SN enters the battlefield, sacrifice SN unless you return a non-Lair land you control to its owner's hand.;\
-        {T}: Add {R}, {G}, or {W} to your mana pool.
+        {T}: Add {R}, {G}, or {W}.
 timing=land
-oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {R}, {G}, or {W} to your mana pool.
+oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {R}, {G}, or {W}.

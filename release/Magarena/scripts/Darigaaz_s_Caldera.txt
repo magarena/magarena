@@ -6,6 +6,6 @@ type=Land
 subtype=Lair
 mana=b2r2g2
 ability=When SN enters the battlefield, sacrifice SN unless you return a non-Lair land you control to its owner's hand.;\
-        {T}: Add {B}, {R}, or {G} to your mana pool.
+        {T}: Add {B}, {R}, or {G}.
 timing=land
-oracle=When Darigaaz's Caldera enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {B}, {R}, or {G} to your mana pool.
+oracle=When Darigaaz's Caldera enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {B}, {R}, or {G}.

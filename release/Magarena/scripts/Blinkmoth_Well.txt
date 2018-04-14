@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/mi/279.jpg
 value=3.625
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}, {T}: Tap target noncreature artifact.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Tap target noncreature artifact.
+oracle={T}: Add {C}.\n{2}, {T}: Tap target noncreature artifact.

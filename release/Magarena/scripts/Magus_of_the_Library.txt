@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={G}{G}
 pt=1/1
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.
 timing=main
-oracle={T}: Add {C} to your mana pool.\n{T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.
+oracle={T}: Add {C}.\n{T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.

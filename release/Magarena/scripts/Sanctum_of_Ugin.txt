@@ -4,7 +4,7 @@ image_updated=2015-11-08
 value=2.500
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         Whenever you cast a colorless spell with converted mana cost 7 or greater, you may sacrifice SN. If you do, search your library for a colorless creature card, reveal it, put it into your hand, then shuffle your library.
 timing=land
-oracle={T}: Add {C} to your mana pool.\nWhenever you cast a colorless spell with converted mana cost 7 or greater, you may sacrifice Sanctum of Ugin. If you do, search your library for a colorless creature card, reveal it, put it into your hand, then shuffle your library.
+oracle={T}: Add {C}.\nWhenever you cast a colorless spell with converted mana cost 7 or greater, you may sacrifice Sanctum of Ugin. If you do, search your library for a colorless creature card, reveal it, put it into your hand, then shuffle your library.

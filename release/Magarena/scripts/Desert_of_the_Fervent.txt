@@ -5,7 +5,7 @@ rarity=C
 type=Land
 subtype=Desert
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} to your mana pool.;\
+        {T}: Add {R}.;\
         Cycling {1}{R}
 timing=land
-oracle=Desert of the Fervent enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\nCycling {1}{R}
+oracle=Desert of the Fervent enters the battlefield tapped.\n{T}: Add {R}.\nCycling {1}{R}

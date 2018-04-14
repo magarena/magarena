@@ -6,7 +6,7 @@ rarity=C
 type=Land
 mana=r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} to your mana pool.;\
+        {T}: Add {R}.;\
         Cycling {R}
 timing=tapland
-oracle=Forgotten Cave enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\nCycling {R}
+oracle=Forgotten Cave enters the battlefield tapped.\n{T}: Add {R}.\nCycling {R}

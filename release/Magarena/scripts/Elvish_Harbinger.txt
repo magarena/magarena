@@ -8,6 +8,6 @@ subtype=Elf,Druid
 cost={2}{G}
 pt=1/2
 ability=When SN enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it.;\
-        {T}: Add one mana of any color to your mana pool.
+        {T}: Add one mana of any color.
 timing=main
-oracle=When Elvish Harbinger enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it.\n{T}: Add one mana of any color to your mana pool.
+oracle=When Elvish Harbinger enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it.\n{T}: Add one mana of any color.

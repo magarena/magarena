@@ -4,5 +4,5 @@ image=https://magiccards.info/extras/token/born-of-the-gods/gold.jpg
 value=1
 color=
 type=Artifact
-ability=Sacrifice SN: Add one mana of any color to your mana pool.
-oracle=Sacrifice this artifact: Add one mana of any color to your mana pool.
+ability=Sacrifice SN: Add one mana of any color.
+oracle=Sacrifice this artifact: Add one mana of any color.

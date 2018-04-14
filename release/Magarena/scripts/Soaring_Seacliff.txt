@@ -7,6 +7,6 @@ type=Land
 mana=u3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature gains flying until end of turn.;\
-        {T}: Add {U} to your mana pool.
+        {T}: Add {U}.
 timing=fmain
-oracle=Soaring Seacliff enters the battlefield tapped.\nWhen Soaring Seacliff enters the battlefield, target creature gains flying until end of turn.\n{T}: Add {U} to your mana pool.
+oracle=Soaring Seacliff enters the battlefield tapped.\nWhen Soaring Seacliff enters the battlefield, target creature gains flying until end of turn.\n{T}: Add {U}.

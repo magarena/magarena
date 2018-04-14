@@ -6,8 +6,8 @@ rarity=U
 type=Land
 mana=r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} to your mana pool.;\
+        {T}: Add {R}.;\
         {1}{R}: SN becomes a 2/1 red Warrior creature with first strike until end of turn. It's still a land.
 mana_or_combat
 timing=tapland
-oracle=Ghitu Encampment enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\n{1}{R}: Ghitu Encampment becomes a 2/1 red Warrior creature with first strike until end of turn. It's still a land.
+oracle=Ghitu Encampment enters the battlefield tapped.\n{T}: Add {R}.\n{1}{R}: Ghitu Encampment becomes a 2/1 red Warrior creature with first strike until end of turn. It's still a land.

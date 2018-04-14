@@ -4,7 +4,7 @@ value=3.143
 rarity=U
 type=Artifact
 cost={2}
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {R} or {G} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {R} or {G}. SN deals 1 damage to you.
 timing=artifact
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Talisman of Impulse deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {R} or {G}. Talisman of Impulse deals 1 damage to you.

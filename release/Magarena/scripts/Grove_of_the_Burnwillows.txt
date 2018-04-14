@@ -5,7 +5,7 @@ value=3.949
 rarity=R
 type=Land
 mana=r3g3
-ability={T}: Add {C} to your mana pool.
+ability={T}: Add {C}.
 timing=land
 requires_groovy_code
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Each opponent gains 1 life.
+oracle={T}: Add {C}.\n{T}: Add {R} or {G}. Each opponent gains 1 life.

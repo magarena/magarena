@@ -4,7 +4,7 @@ value=2.646
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {B} or {R} to your mana pool.;\
+ability={T}: Add {B} or {R}.;\
         {B}{R}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {B} or {R} to your mana pool.\n{B}{R}, {T}, Sacrifice Rakdos Cluestone: Draw a card.
+oracle={T}: Add {B} or {R}.\n{B}{R}, {T}, Sacrifice Rakdos Cluestone: Draw a card.

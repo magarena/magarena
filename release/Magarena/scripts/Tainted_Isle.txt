@@ -4,7 +4,7 @@ value=4.150
 rarity=U
 type=Land
 mana=u3b3
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {U} or {B} to your mana pool. Activate this ability only if you control a Swamp.
+ability={T}: Add {C}.;\
+        {T}: Add {U} or {B}. Activate this ability only if you control a Swamp.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {U} or {B} to your mana pool. Activate this ability only if you control a Swamp.
+oracle={T}: Add {C}.\n{T}: Add {U} or {B}. Activate this ability only if you control a Swamp.

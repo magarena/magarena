@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=r3w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} or {W} to your mana pool.
+        {T}: Add {R} or {W}.
 timing=land
-oracle=Stone Quarry enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.
+oracle=Stone Quarry enters the battlefield tapped.\n{T}: Add {R} or {W}.

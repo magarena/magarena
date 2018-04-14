@@ -6,7 +6,7 @@ rarity=C
 type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} to your mana pool.;\
+        {T}: Add {B}.;\
         Cycling {B}
 timing=tapland
-oracle=Barren Moor enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nCycling {B}
+oracle=Barren Moor enters the battlefield tapped.\n{T}: Add {B}.\nCycling {B}

@@ -5,6 +5,6 @@ rarity=R
 type=Land
 mana=r3g3
 ability=SN enters the battlefield tapped unless you control two or fewer other lands.;\
-        {T}: Add {R} or {G} to your mana pool.
+        {T}: Add {R} or {G}.
 timing=land
-oracle=Copperline Gorge enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {R} or {G} to your mana pool.
+oracle=Copperline Gorge enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {R} or {G}.

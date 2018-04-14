@@ -7,6 +7,6 @@ subtype=Plant
 cost={1}{G}
 pt=0/3
 ability=Defender, hexproof;\
-        {T}: Add one mana of any color to your mana pool.
+        {T}: Add one mana of any color.
 timing=smain
-oracle=Defender, hexproof\n{T}: Add one mana of any color to your mana pool.
+oracle=Defender, hexproof\n{T}: Add one mana of any color.

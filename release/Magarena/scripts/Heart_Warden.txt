@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=1/1
-ability={T}: Add {G} to your mana pool.;\
+ability={T}: Add {G}.;\
         {2}, Sacrifice SN: Draw a card.
 timing=main
-oracle={T}: Add {G} to your mana pool.\n{2}, Sacrifice Heart Warden: Draw a card.
+oracle={T}: Add {G}.\n{2}, Sacrifice Heart Warden: Draw a card.
