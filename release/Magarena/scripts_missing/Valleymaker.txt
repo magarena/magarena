@@ -7,7 +7,7 @@ subtype=Giant,Shaman
 cost={5}{R/G}
 pt=5/5
 ability={T}, Sacrifice a Mountain: SN deals 3 damage to target creature.;\
-        {T}, Sacrifice a Forest: Choose a player. That player adds {G}{G}{G} to his or her mana pool.
+        {T}, Sacrifice a Forest: Choose a player. That player adds {G}{G}{G}.
 timing=main
-oracle={T}, Sacrifice a Mountain: Valleymaker deals 3 damage to target creature.\n{T}, Sacrifice a Forest: Choose a player. That player adds {G}{G}{G} to his or her mana pool.
+oracle={T}, Sacrifice a Mountain: Valleymaker deals 3 damage.
 status=not supported: add-multiple-mana

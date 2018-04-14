@@ -7,7 +7,7 @@ subtype=Elf
 cost={2}{G}{G}
 pt=3/2
 ability=First strike;\
-        {T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.
+        {T}: Destroy target artifact if its converted mana cost is equal.
 timing=main
-oracle=First strike\n{T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.
+oracle=First strike\n{T}: Destroy target artifact if its converted mana cost is equal.
 status=not supported: mana-pool

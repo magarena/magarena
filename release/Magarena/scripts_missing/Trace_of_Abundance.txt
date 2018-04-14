@@ -7,8 +7,8 @@ subtype=Aura
 cost={R/W}{G}
 ability=Enchant land;\
         Enchanted land has shroud.;\
-        Whenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.
+        Whenever enchanted land is tapped for mana, its controller adds one mana of any color.
 timing=aura
 enchant=default,land
-oracle=Enchant land\nEnchanted land has shroud.\nWhenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.
+oracle=Enchant land\nEnchanted land has shroud.\nWhenever enchanted land is tapped for mana, its controller adds one mana of any color.
 status=not supported: non-activated-mana-ability

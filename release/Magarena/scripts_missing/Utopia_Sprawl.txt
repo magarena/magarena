@@ -7,8 +7,8 @@ subtype=Aura
 cost={G}
 ability=Enchant Forest;\
         As SN enters the battlefield, choose a color.;\
-        Whenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color to his or her mana pool.
+        Whenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color.
 timing=aura
 enchant=default,forest
-oracle=Enchant Forest\nAs Utopia Sprawl enters the battlefield, choose a color.\nWhenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color to his or her mana pool.
+oracle=Enchant Forest\nAs Utopia Sprawl enters the battlefield, choose a color.\nWhenever enchanted Forest is tapped for mana, its controller adds one mana of the chosen color.
 status=not supported: non-activated-mana-ability

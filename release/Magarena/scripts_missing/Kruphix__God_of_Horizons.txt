@@ -11,5 +11,5 @@ ability=Indestructible;\
         You have no maximum hand size.;\
         If unused mana would empty from your mana pool, that mana becomes colorless instead.
 timing=main
-oracle=Indestructible\nAs long as your devotion to green and blue is less than seven, Kruphix isn't a creature.\nYou have no maximum hand size.\nIf unused mana would empty from your mana pool, that mana becomes colorless instead.
+oracle=Indestructible\nAs long as your devotion, that mana becomes colorless instead.
 status=not supported: mana-pool
