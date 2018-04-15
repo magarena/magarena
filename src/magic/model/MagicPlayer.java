@@ -440,29 +440,36 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     void showRandomizedHandAndLibrary() {
-        // empty hand, move unknown into library, known into knownCards
-        final int handSize = hand.size();
-        final MagicCardList knownCards = new MagicCardList();
-        while (hand.size() > 0) {
-            final MagicCard card = hand.getCardAtTop();
-            removeCardFromHand(card);
-            if (card.isKnown()) {
-                knownCards.add(card);
-            } else {
-                library.addToTop(card);
+        final MagicCardList unknownCards = new MagicCardList();
+        // gather all unknown cards
+        for (final MagicCard card : hand) {
+            if (card.isUnknown()) {
+                unknownCards.add(card);
+            }
+        }
+        for (final MagicCard card : library) {
+            if (card.isUnknown()) {
+                unknownCards.add(card);
             }
         }
 
-        // shuffle library
-        library.shuffle(MagicRandom.nextRNGInt());
-        library.setAIKnown(true);
+        unknownCards.shuffle(MagicRandom.nextRNGInt());
+        unknownCards.setAIKnown(true);
 
-        // put cards into hand
-        for (int i = 0; i < handSize - knownCards.size(); i++) {
-            addCardToHand(library.removeCardAtTop());
+        // fill in unknown cards
+        for (int i = 0; i < hand.size(); i++) {
+            final MagicCard card = hand.get(i);
+            if (card.isUnknown()) {
+                hand.set(i, unknownCards.removeCardAtTop());
+            }
         }
-        for (final MagicCard card : knownCards) {
-            addCardToHand(card);
+
+        // fill in unknown cards
+        for (int i = 0; i < library.size(); i++) {
+            final MagicCard card = library.get(i);
+            if (card.isUnknown()) {
+                library.set(i, unknownCards.removeCardAtTop());
+            }
         }
     }
 
