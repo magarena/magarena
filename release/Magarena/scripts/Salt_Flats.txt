@@ -5,7 +5,7 @@ rarity=R
 type=Land
 mana=w2b2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
-        {T}: Add {W} or {B} to your mana pool. SN deals 1 damage to you.
+        {T}: Add {C}.;\
+        {T}: Add {W} or {B}. SN deals 1 damage to you.
 timing=tapland
-oracle=Salt Flats enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{T}: Add {W} or {B} to your mana pool. Salt Flats deals 1 damage to you.
+oracle=Salt Flats enters the battlefield tapped.\n{T}: Add {C}.\n{T}: Add {W} or {B}. Salt Flats deals 1 damage to you.

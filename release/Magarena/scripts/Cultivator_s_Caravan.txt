@@ -7,7 +7,7 @@ type=Artifact
 subtype=Vehicle
 cost={3}
 pt=5/5
-ability={T}: Add one mana of any color to your mana pool.;\
+ability={T}: Add one mana of any color.;\
         Crew 3
 timing=artifact
-oracle={T}: Add one mana of any color to your mana pool.\nCrew 3
+oracle={T}: Add one mana of any color.\nCrew 3

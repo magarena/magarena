@@ -6,4 +6,4 @@ type=Sorcery
 cost={2}{B}
 effect=Target opponent discards two cards.~If you attacked with a creature this turn, create a colorless Treasure artifact token.
 timing=main
-oracle=Target opponent discards two cards.\nRaid — If you attacked with a creature this turn, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+oracle=Target opponent discards two cards.\nRaid — If you attacked with a creature this turn, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."

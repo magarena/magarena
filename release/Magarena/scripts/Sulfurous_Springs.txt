@@ -4,7 +4,7 @@ value=4.352
 rarity=R
 type=Land
 mana=b2r2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {B} or {R} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {B} or {R}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {B} or {R} to your mana pool. Sulfurous Springs deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {B} or {R}. Sulfurous Springs deals 1 damage to you.

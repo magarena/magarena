@@ -4,9 +4,9 @@ value=3.274
 rarity=R
 type=Legendary,Enchantment
 cost={1}{G}{G}
-ability=Whenever a land you control is tapped for mana, for each other land you control with the same name, add one mana to your mana pool of any type that land produced.
+ability=Whenever a land you control is tapped for mana, for each other land you control with the same name, add one mana of any type that land produced.
 flip=Sasaya, Orochi Ascendant
 timing=enchantment
 hidden
-oracle=Whenever a land you control is tapped for mana, for each other land you control with the same name, add one mana to your mana pool of any type that land produced.
+oracle=Whenever a land you control is tapped for mana, for each other land you control with the same name, add one mana of any type that land produced.
 status=not supported: non-activated-mana-ability

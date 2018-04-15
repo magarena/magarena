@@ -7,4 +7,4 @@ type=Sorcery
 cost={3}{B}{B}
 effect=Destroy target nonblack creature.~Create two 0/1 colorless Eldrazi Spawn creature tokens.
 timing=removal
-oracle=Destroy target nonblack creature. Create two 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Destroy target nonblack creature. Create two 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C}."

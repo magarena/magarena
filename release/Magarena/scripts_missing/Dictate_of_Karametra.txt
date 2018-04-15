@@ -5,7 +5,7 @@ rarity=R
 type=Enchantment
 cost={3}{G}{G}
 ability=Flash;\
-        Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+        Whenever a player taps a land for mana, that player adds one mana of any type that land produced.
 timing=flash
-oracle=Flash\nWhenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+oracle=Flash\nWhenever a player taps a land for mana, that player adds one mana of any type that land produced.
 status=not supported: non-activated-mana-ability

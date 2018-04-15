@@ -6,8 +6,8 @@ rarity=R
 type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {R} to your mana pool.
+        {T}: Add {U} or {R}.
 timing=land
 mana_or_combat
 requires_groovy_code
-oracle=Wandering Fumarole enters the battlefield tapped.\n{T}: Add {U} or {R} to your mana pool.\n{2}{U}{R}: Until end of turn, Wandering Fumarole becomes a 1/4 blue and red Elemental creature with "{0}: Switch this creature's power and toughness until end of turn." It's still a land.
+oracle=Wandering Fumarole enters the battlefield tapped.\n{T}: Add {U} or {R}.\n{2}{U}{R}: Until end of turn, Wandering Fumarole becomes a 1/4 blue and red Elemental creature with "{0}: Switch this creature's power and toughness until end of turn." It's still a land.

@@ -4,7 +4,7 @@ image_updated=2017-08-17
 value=2.500
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {4}, {T}: Target creature can't be blocked this turn.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{4}, {T}: Target creature can't be blocked this turn.
+oracle={T}: Add {C}.\n{4}, {T}: Target creature can't be blocked this turn.

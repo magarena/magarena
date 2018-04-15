@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Druid
 cost={1}{G}
 pt=2/1
-ability={T}: Add {B} or {G} to your mana pool.;\
+ability={T}: Add {B} or {G}.;\
         SN has deathtouch as long as there are four or more card types among cards in your graveyard.
 timing=main
-oracle={T}: Add {B} or {G} to your mana pool.\nDelirium — Deathcap Cultivator has deathtouch as long as there are four or more card types among cards in your graveyard.
+oracle={T}: Add {B} or {G}.\nDelirium — Deathcap Cultivator has deathtouch as long as there are four or more card types among cards in your graveyard.

@@ -7,10 +7,10 @@ subtype=Werewolf
 color=g
 pt=2/2
 ability=Vigilance;\
-        {T}: Add {G}{G} to your mana pool.;\
+        {T}: Add {G}{G}.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Scorned Villager
 timing=main
 hidden
-oracle=Vigilance\n{T}: Add {G}{G} to your mana pool.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonscarred Werewolf.
+oracle=Vigilance\n{T}: Add {G}{G}.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonscarred Werewolf.
 status=not supported: add-multiple-mana

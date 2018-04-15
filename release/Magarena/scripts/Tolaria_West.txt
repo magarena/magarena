@@ -5,7 +5,7 @@ rarity=U
 type=Land
 mana=u3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.;\
+        {T}: Add {U}.;\
         Transmute {1}{U}{U}
 timing=tapland
-oracle=Tolaria West enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nTransmute {1}{U}{U}
+oracle=Tolaria West enters the battlefield tapped.\n{T}: Add {U}.\nTransmute {1}{U}{U}

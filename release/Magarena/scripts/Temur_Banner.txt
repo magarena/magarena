@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {G}, {U}, or {R} to your mana pool.;\
+ability={T}: Add {G}, {U}, or {R}.;\
         {G}{U}{R}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {G}, {U}, or {R} to your mana pool.\n{G}{U}{R}, {T}, Sacrifice Temur Banner: Draw a card.
+oracle={T}: Add {G}, {U}, or {R}.\n{G}{U}{R}, {T}, Sacrifice Temur Banner: Draw a card.

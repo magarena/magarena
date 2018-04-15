@@ -7,8 +7,8 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={2}{G}{U}
 pt=2/3
-ability={T}: Add {C} to your mana pool for each card you've drawn this turn.;\
+ability={T}: Add {C} for each card you've drawn this turn.;\
         Partner
 timing=main
-oracle={T}: Add {C} to your mana pool for each card you've drawn this turn.\nPartner
+oracle={T}: Add {C} for each card you've drawn this turn.\nPartner
 status=not supported: add-multiple-mana

@@ -692,7 +692,7 @@ PumpAction
     ;
 
 AddManaAction
-    = "add " ManaSource " to your mana pool"
+    = "add " ManaSource
     ;
 
 ManaSource

@@ -4,9 +4,9 @@ image_updated=2015-11-08
 value=2.500
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast an Ally spell.;\
+ability={T}: Add {C}.;\
+        {T}: Add one mana of any color. Spend this mana only to cast an Ally spell.;\
         {1}, {T}, Sacrifice SN: Return target Ally you control to its owner's hand.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast an Ally spell.\n{1}, {T}, Sacrifice Ally Encampment: Return target Ally you control to its owner's hand.
+oracle={T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast an Ally spell.\n{1}, {T}, Sacrifice Ally Encampment: Return target Ally you control to its owner's hand.
 status=not supported: mana-restriction

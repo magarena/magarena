@@ -4,8 +4,8 @@ value=3.143
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} to your mana pool.;\
-        {T}, Sacrifice SN: Add {R}{W} to your mana pool.
+        {T}: Add {G}.;\
+        {T}, Sacrifice SN: Add {R}{W}.
 timing=land
-oracle=Tinder Farm enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\n{T}, Sacrifice Tinder Farm: Add {R}{W} to your mana pool.
+oracle=Tinder Farm enters the battlefield tapped.\n{T}: Add {G}.\n{T}, Sacrifice Tinder Farm: Add {R}{W}.
 status=not supported: add-multiple-mana

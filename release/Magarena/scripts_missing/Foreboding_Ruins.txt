@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Swamp or Mountain card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {B} or {R} to your mana pool.
+        {T}: Add {B} or {R}.
 timing=land
-oracle=As Foreboding Ruins enters the battlefield, you may reveal a Swamp or Mountain card from your hand. If you don't, Foreboding Ruins enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.
+oracle=As Foreboding Ruins enters the battlefield, you may reveal a Swamp or Mountain card from your hand. If you don't, Foreboding Ruins enters the battlefield tapped.\n{T}: Add {B} or {R}.
 status=not supported: reveal-cost

@@ -5,7 +5,7 @@ rarity=C
 type=Land
 subtype=Desert
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.;\
+        {T}: Add {W}.;\
         Cycling {1}{W}
 timing=land
-oracle=Desert of the True enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nCycling {1}{W}
+oracle=Desert of the True enters the battlefield tapped.\n{T}: Add {W}.\nCycling {1}{W}

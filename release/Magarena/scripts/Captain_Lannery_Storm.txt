@@ -10,4 +10,4 @@ ability=Haste;\
         Whenever SN attacks, create a colorless Treasure artifact token.;\
         Whenever you sacrifice a Treasure, SN gets +1/+0 until end of turn.
 timing=fmain
-oracle=Haste\nWhenever Captain Lannery Storm attacks, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nWhenever you sacrifice a Treasure, Captain Lannery Storm gets +1/+0 until end of turn.
+oracle=Haste\nWhenever Captain Lannery Storm attacks, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."\nWhenever you sacrifice a Treasure, Captain Lannery Storm gets +1/+0 until end of turn.

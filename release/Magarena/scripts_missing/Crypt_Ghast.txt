@@ -7,7 +7,7 @@ subtype=Spirit
 cost={3}{B}
 pt=2/2
 ability=Extort;\
-        Whenever you tap a Swamp for mana, add {B} to your mana pool.
+        Whenever you tap a Swamp for mana, add {B}.
 timing=main
-oracle=Extort\nWhenever you tap a Swamp for mana, add {B} to your mana pool.
+oracle=Extort\nWhenever you tap a Swamp for mana, add {B}.
 status=not supported: non-activated-mana-ability

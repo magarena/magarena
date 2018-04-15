@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/rav/277.jpg
 value=3.045
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {U}{B}, {T}: Target player puts the top card of his or her library into his or her graveyard.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{U}{B}, {T}: Target player puts the top card of his or her library into his or her graveyard.
+oracle={T}: Add {C}.\n{U}{B}, {T}: Target player puts the top card of his or her library into his or her graveyard.

@@ -5,7 +5,7 @@ value=4.226
 rarity=R
 mana=w2g2
 type=Land
-ability={T}, Pay 1 life: Add {G} or {W} to your mana pool.;\
+ability={T}, Pay 1 life: Add {G} or {W}.;\
         {1}, {T}, Sacrifice SN: Draw a card.
 timing=land
-oracle={T}, Pay 1 life: Add {G} or {W} to your mana pool.\n{1}, {T}, Sacrifice Horizon Canopy: Draw a card.
+oracle={T}, Pay 1 life: Add {G} or {W}.\n{1}, {T}, Sacrifice Horizon Canopy: Draw a card.

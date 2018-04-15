@@ -7,6 +7,6 @@ type=Land
 mana=w2
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
-        {T}: Add {W} to your mana pool.
+        {T}: Add {W}.
 timing=land
-oracle=New Benalia enters the battlefield tapped.\nWhen New Benalia enters the battlefield, scry 1.\n{T}: Add {W} to your mana pool.
+oracle=New Benalia enters the battlefield tapped.\nWhen New Benalia enters the battlefield, scry 1.\n{T}: Add {W}.

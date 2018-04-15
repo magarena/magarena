@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Druid
 cost={1}{G}{W}
 pt=2/3
-ability={T}: Add one mana of any color to your mana pool.;\
+ability={T}: Add one mana of any color.;\
         Sacrifice SN: Return target Dinosaur card from your graveyard to your hand.
 timing=main
-oracle={T}: Add one mana of any color to your mana pool.\nSacrifice Atzocan Seer: Return target Dinosaur card from your graveyard to your hand.
+oracle={T}: Add one mana of any color.\nSacrifice Atzocan Seer: Return target Dinosaur card from your graveyard to your hand.

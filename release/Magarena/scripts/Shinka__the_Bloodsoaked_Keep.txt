@@ -4,7 +4,7 @@ value=4.009
 rarity=R
 type=Legendary,Land
 mana=r3
-ability={T}: Add {R} to your mana pool.;\
+ability={T}: Add {R}.;\
         {R}, {T}: Target legendary creature gains first strike until end of turn.
 timing=land
-oracle={T}: Add {R} to your mana pool.\n{R}, {T}: Target legendary creature gains first strike until end of turn.
+oracle={T}: Add {R}.\n{R}, {T}: Target legendary creature gains first strike until end of turn.

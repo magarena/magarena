@@ -6,6 +6,6 @@ rarity=R
 type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped unless you control two or fewer other lands.;\
-        {T}: Add {U} or {R} to your mana pool.
+        {T}: Add {U} or {R}.
 timing=land
-oracle=Spirebluff Canal enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {U} or {R} to your mana pool.
+oracle=Spirebluff Canal enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {U} or {R}.

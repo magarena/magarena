@@ -7,7 +7,7 @@ subtype=Aura
 cost={G}
 ability=Enchant land;\
         When SN enters the battlefield, draw a card.;\
-        Enchanted land has "{T}: Add one mana of any color to your mana pool."
+        Enchanted land has "{T}: Add one mana of any color."
 timing=aura
 enchant=pump,pos land
-oracle=Enchant land\nWhen Abundant Growth enters the battlefield, draw a card.\nEnchanted land has "{T}: Add one mana of any color to your mana pool."
+oracle=Enchant land\nWhen Abundant Growth enters the battlefield, draw a card.\nEnchanted land has "{T}: Add one mana of any color."

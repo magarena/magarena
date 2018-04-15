@@ -4,7 +4,7 @@ value=2.162
 rarity=U
 type=Land
 mana=g2w2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {G} or {W} to your mana pool. SN doesn't untap during your next untap step.
+ability={T}: Add {C}.;\
+        {T}: Add {G} or {W}. SN doesn't untap during your next untap step.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {G} or {W} to your mana pool. Tranquil Garden doesn't untap during your next untap step.
+oracle={T}: Add {C}.\n{T}: Add {G} or {W}. Tranquil Garden doesn't untap during your next untap step.

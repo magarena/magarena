@@ -6,8 +6,8 @@ type=Creature
 subtype=Vampire,Shade
 cost={4}{B}{B}
 pt=4/4
-ability=Whenever you tap a Swamp for mana, add {B} to your mana pool.;\
+ability=Whenever you tap a Swamp for mana, add {B}.;\
         {B}: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Whenever you tap a Swamp for mana, add {B} to your mana pool.\n{B}: Nirkana Revenant gets +1/+1 until end of turn.
+oracle=Whenever you tap a Swamp for mana, add {B}.\n{B}: Nirkana Revenant gets +1/+1 until end of turn.
 status=not supported: non-activated-mana-ability

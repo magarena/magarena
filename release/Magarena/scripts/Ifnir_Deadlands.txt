@@ -4,8 +4,8 @@ value=2.500
 rarity=U
 type=Land
 subtype=Desert
-ability={T}: Add {C} to your mana pool.;\
-        {T}, Pay 1 life: Add {B} to your mana pool.;\
+ability={T}: Add {C}.;\
+        {T}, Pay 1 life: Add {B}.;\
         {2}{B}{B}, {T}, Sacrifice a Desert: Put two -1/-1 counters on target creature an opponent controls. Activate this ability only any time you could cast a sorcery.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}, Pay 1 life: Add {B} to your mana pool.\n{2}{B}{B}, {T}, Sacrifice a Desert: Put two -1/-1 counters on target creature an opponent controls. Activate this ability only any time you could cast a sorcery.
+oracle={T}: Add {C}.\n{T}, Pay 1 life: Add {B}.\n{2}{B}{B}, {T}, Sacrifice a Desert: Put two -1/-1 counters on target creature an opponent controls. Activate this ability only any time you could cast a sorcery.

@@ -9,10 +9,10 @@ pt=1/1
 ability=Level up {1}{G};\
         LEVEL 1-4;\
         1/2;\
-        {T}: Add {G}{G} to your mana pool.;\
+        {T}: Add {G}{G}.;\
         LEVEL 5+;\
         1/4;\
-        Elves you control have "{T}: Add {G}{G} to your mana pool."
+        Elves you control have "{T}: Add {G}{G}."
 timing=main
-oracle=Level up {1}{G}\nLEVEL 1-4\n1/2\n{T}: Add {G}{G} to your mana pool.\nLEVEL 5+\n1/4\nElves you control have "{T}: Add {G}{G} to your mana pool."
+oracle=Level up {1}{G}\nLEVEL 1-4\n1/2\n{T}: Add {G}{G}.\nLEVEL 5+\n1/4\nElves you control have "{T}: Add {G}{G}."
 status=not supported: add-multiple-mana

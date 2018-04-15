@@ -5,7 +5,7 @@ rarity=C
 type=Land
 mana=w1u3b1r1g1
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.;\
-        {T}, Sacrifice SN: Add one mana of any color to your mana pool.
+        {T}: Add {U}.;\
+        {T}, Sacrifice SN: Add one mana of any color.
 timing=tapland
-oracle=Seafloor Debris enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Seafloor Debris: Add one mana of any color to your mana pool.
+oracle=Seafloor Debris enters the battlefield tapped.\n{T}: Add {U}.\n{T}, Sacrifice Seafloor Debris: Add one mana of any color.

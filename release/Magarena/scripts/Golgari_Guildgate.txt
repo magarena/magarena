@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=b3g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} or {G} to your mana pool.
+        {T}: Add {B} or {G}.
 timing=tapland
-oracle=Golgari Guildgate enters the battlefield tapped.\n{T}: Add {B} or {G} to your mana pool.
+oracle=Golgari Guildgate enters the battlefield tapped.\n{T}: Add {B} or {G}.

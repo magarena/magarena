@@ -5,7 +5,7 @@ value=4.182
 rarity=R
 type=Land
 mana=b2u2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {U} or {B} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {U} or {B}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {U} or {B} to your mana pool. Underground River deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {U} or {B}. Underground River deals 1 damage to you.

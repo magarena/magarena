@@ -6,6 +6,6 @@ type=Artifact
 cost={1}{R}{G}
 ability=You may pay {1} and return a basic land you control to its owner's hand rather than pay SN's mana cost.;\
         SN enters the battlefield tapped.;\
-        {T}: Add {R} or {G} to your mana pool.
+        {T}: Add {R} or {G}.
 timing=artifact
-oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Firewild Borderpost's mana cost.\nFirewild Borderpost enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.
+oracle=You may pay {1} and return a basic land you control to its owner's hand rather than pay Firewild Borderpost's mana cost.\nFirewild Borderpost enters the battlefield tapped.\n{T}: Add {R} or {G}.

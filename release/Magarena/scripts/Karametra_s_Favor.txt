@@ -7,7 +7,7 @@ subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         When SN enters the battlefield, draw a card.;\
-        Enchanted creature has "{T}: Add one mana of any color to your mana pool."
+        Enchanted creature has "{T}: Add one mana of any color."
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature\nWhen Karametra's Favor enters the battlefield, draw a card.\nEnchanted creature has "{T}: Add one mana of any color to your mana pool."
+oracle=Enchant creature\nWhen Karametra's Favor enters the battlefield, draw a card.\nEnchanted creature has "{T}: Add one mana of any color."

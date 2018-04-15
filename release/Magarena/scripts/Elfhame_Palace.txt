@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=w3g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {W} to your mana pool.
+        {T}: Add {G} or {W}.
 timing=tapland
-oracle=Elfhame Palace enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.
+oracle=Elfhame Palace enters the battlefield tapped.\n{T}: Add {G} or {W}.

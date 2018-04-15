@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={3}
 ability={1}, {T}: Put a charge counter on SN.;\
-        {T}, Remove X charge counters from SN: Add an amount of {C} to your mana pool equal to X plus one.
+        {T}, Remove X charge counters from SN: Add an amount of {C} equal to X plus one.
 timing=artifact
-oracle={1}, {T}: Put a charge counter on Kyren Toy.\n{T}, Remove X charge counters from Kyren Toy: Add an amount of {C} to your mana pool equal to X plus one.
+oracle={1}, {T}: Put a charge counter on Kyren Toy.\n{T}, Remove X charge counters from Kyren Toy: Add an amount of {C} equal to X plus one.
 status=not supported: add-multiple-mana

@@ -7,7 +7,7 @@ subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature can't attack or block.;\
-        Enchanted creature has "{T}: Add one mana of any color to your mana pool."
+        Enchanted creature has "{T}: Add one mana of any color."
 timing=aura
 enchant=default,creature
-oracle=Enchant creature\nEnchanted creature can't attack or block.\nEnchanted creature has "{T}: Add one mana of any color to your mana pool."
+oracle=Enchant creature\nEnchanted creature can't attack or block.\nEnchanted creature has "{T}: Add one mana of any color."

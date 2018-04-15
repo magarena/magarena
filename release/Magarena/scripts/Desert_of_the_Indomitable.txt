@@ -5,7 +5,7 @@ rarity=C
 type=Land
 subtype=Desert
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} to your mana pool.;\
+        {T}: Add {G}.;\
         Cycling {1}{G}
 timing=land
-oracle=Desert of the Indomitable enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nCycling {1}{G}
+oracle=Desert of the Indomitable enters the battlefield tapped.\n{T}: Add {G}.\nCycling {1}{G}

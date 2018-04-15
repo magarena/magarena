@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/mt/148.jpg
 value=4.378
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.
+ability={T}: Add {C}.
 timing=land
 mana_or_combat
 requires_groovy_code
-oracle={T}: Add {C} to your mana pool.\n{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.
+oracle={T}: Add {C}.\n{1}: Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.

@@ -5,7 +5,7 @@ value=2.500
 rarity=R
 type=Land
 mana=w2r2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {R} or {W} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {R} or {W}. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {R} or {W} to your mana pool. Battlefield Forge deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {R} or {W}. Battlefield Forge deals 1 damage to you.

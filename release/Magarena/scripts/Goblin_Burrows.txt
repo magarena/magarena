@@ -4,7 +4,7 @@ image_updated=2016-12-04
 value=4.000
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
+oracle={T}: Add {C}.\n{1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.

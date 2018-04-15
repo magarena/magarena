@@ -5,7 +5,7 @@ rarity=R
 type=Land
 mana=u2r2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
-        {T}: Add {U} or {R} to your mana pool. SN deals 1 damage to you.
+        {T}: Add {C}.;\
+        {T}: Add {U} or {R}. SN deals 1 damage to you.
 timing=tapland
-oracle=Caldera Lake enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{T}: Add {U} or {R} to your mana pool. Caldera Lake deals 1 damage to you.
+oracle=Caldera Lake enters the battlefield tapped.\n{T}: Add {C}.\n{T}: Add {U} or {R}. Caldera Lake deals 1 damage to you.

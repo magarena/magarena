@@ -10,4 +10,4 @@ ability=+2: Create a 1/1 green Elf Druid creature token.;\
         −2: Destroy target artifact or enchantment.;\
         −6: Draw a card for each green creature you control.
 timing=main
-oracle=+2: Create a 1/1 green Elf Druid creature token with "{T}: Add {G} to your mana pool."\n−2: Destroy target artifact or enchantment.\n−6: Draw a card for each green creature you control.\nFreyalise, Llanowar's Fury can be your commander.
+oracle=+2: Create a 1/1 green Elf Druid creature token with "{T}: Add {G}."\n−2: Destroy target artifact or enchantment.\n−6: Draw a card for each green creature you control.\nFreyalise, Llanowar's Fury can be your commander.

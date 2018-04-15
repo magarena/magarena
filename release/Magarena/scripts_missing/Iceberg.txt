@@ -6,7 +6,7 @@ type=Enchantment
 cost={X}{U}{U}
 ability=SN enters the battlefield with X ice counters on it.;\
         {3}: Put an ice counter on SN.;\
-        Remove an ice counter from SN: Add {C} to your mana pool.
+        Remove an ice counter from SN: Add {C}.
 timing=enchantment
-oracle=Iceberg enters the battlefield with X ice counters on it.\n{3}: Put an ice counter on Iceberg.\nRemove an ice counter from Iceberg: Add {C} to your mana pool.
+oracle=Iceberg enters the battlefield with X ice counters on it.\n{3}: Put an ice counter on Iceberg.\nRemove an ice counter from Iceberg: Add {C}.
 status=not supported: repeated-mana-ability

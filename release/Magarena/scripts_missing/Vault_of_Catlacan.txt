@@ -3,9 +3,9 @@ image=https://magiccards.info/scans/en/rix/173b.jpg
 value=2.500
 rarity=R
 type=Legendary,Land
-ability={T}: Add one mana of any color to your mana pool.;\
-        {T}: Add {U} to your mana pool for each artifact you control.
+ability={T}: Add one mana of any color.;\
+        {T}: Add {U} for each artifact you control.
 transform=Storm the Vault
 hidden
 timing=land
-oracle={T}: Add one mana of any color to your mana pool.\n{T}: Add {U} to your mana pool for each artifact you control.
+oracle={T}: Add one mana of any color.\n{T}: Add {U} for each artifact you control.

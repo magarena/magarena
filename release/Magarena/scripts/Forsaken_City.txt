@@ -5,7 +5,7 @@ rarity=R
 type=Land
 mana=w1u1b1r1g1
 ability=SN doesn't untap during your untap step.;\
-        {T}: Add one mana of any color to your mana pool.
+        {T}: Add one mana of any color.
 timing=land
-oracle=Forsaken City doesn't untap during your untap step.\nAt the beginning of your upkeep, you may exile a card from your hand. If you do, untap Forsaken City.\n{T}: Add one mana of any color to your mana pool.
+oracle=Forsaken City doesn't untap during your untap step.\nAt the beginning of your upkeep, you may exile a card from your hand. If you do, untap Forsaken City.\n{T}: Add one mana of any color.
 requires_groovy_code

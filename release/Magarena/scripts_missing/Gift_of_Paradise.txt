@@ -7,8 +7,8 @@ subtype=Aura
 cost={2}{G}
 ability=Enchant land;\
         When SN enters the battlefield, you gain 3 life.;\
-        Enchanted land has "{T}: Add two mana of any one color to your mana pool."
+        Enchanted land has "{T}: Add two mana of any one color."
 timing=aura
 enchant=default,land
-oracle=Enchant land\nWhen Gift of Paradise enters the battlefield, you gain 3 life.\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."
+oracle=Enchant land\nWhen Gift of Paradise enters the battlefield, you gain 3 life.\nEnchanted land has "{T}: Add two mana of any one color."
 status=not supported: add-multiple-mana

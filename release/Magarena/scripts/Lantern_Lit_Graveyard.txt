@@ -4,7 +4,7 @@ value=2.235
 rarity=U
 type=Land
 mana=b2r2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {B} or {R} to your mana pool. SN doesn't untap during your next untap step.
+ability={T}: Add {C}.;\
+        {T}: Add {B} or {R}. SN doesn't untap during your next untap step.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {B} or {R} to your mana pool. Lantern-Lit Graveyard doesn't untap during your next untap step.
+oracle={T}: Add {C}.\n{T}: Add {B} or {R}. Lantern-Lit Graveyard doesn't untap during your next untap step.

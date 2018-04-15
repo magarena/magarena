@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=u3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {B} to your mana pool.
+        {T}: Add {U} or {B}.
 timing=tapland
-oracle=Dimir Guildgate enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.
+oracle=Dimir Guildgate enters the battlefield tapped.\n{T}: Add {U} or {B}.

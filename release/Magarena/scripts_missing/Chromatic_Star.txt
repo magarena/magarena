@@ -4,8 +4,8 @@ value=3.742
 rarity=U
 type=Artifact
 cost={1}
-ability={1}, {T}, Sacrifice SN: Add one mana of any color to your mana pool.;\
+ability={1}, {T}, Sacrifice SN: Add one mana of any color.;\
         When SN is put into a graveyard from the battlefield, draw a card.
 timing=artifact
-oracle={1}, {T}, Sacrifice Chromatic Star: Add one mana of any color to your mana pool.\nWhen Chromatic Star is put into a graveyard from the battlefield, draw a card.
+oracle={1}, {T}, Sacrifice Chromatic Star: Add one mana of any color.\nWhen Chromatic Star is put into a graveyard from the battlefield, draw a card.
 status=not supported: mana-ability-with-choice

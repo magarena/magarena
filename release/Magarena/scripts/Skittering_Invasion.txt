@@ -7,4 +7,4 @@ subtype=Eldrazi
 cost={7}
 timing=token
 effect=Create five 0/1 colorless Eldrazi Spawn creature tokens.
-oracle=Create five 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Create five 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C}."

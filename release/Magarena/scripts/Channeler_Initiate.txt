@@ -7,6 +7,6 @@ subtype=Human,Druid
 cost={1}{G}
 pt=3/4
 ability=When SN enters the battlefield, put three -1/-1 counters on target creature you control.;\
-        {T}, Remove a -1/-1 counter from SN: Add one mana of any color to your mana pool.
+        {T}, Remove a -1/-1 counter from SN: Add one mana of any color.
 timing=main
-oracle=When Channeler Initiate enters the battlefield, put three -1/-1 counters on target creature you control.\n{T}, Remove a -1/-1 counter from Channeler Initiate: Add one mana of any color to your mana pool.
+oracle=When Channeler Initiate enters the battlefield, put three -1/-1 counters on target creature you control.\n{T}, Remove a -1/-1 counter from Channeler Initiate: Add one mana of any color.

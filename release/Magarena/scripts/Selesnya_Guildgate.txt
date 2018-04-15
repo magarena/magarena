@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=g3w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {W} to your mana pool.
+        {T}: Add {G} or {W}.
 timing=tapland
-oracle=Selesnya Guildgate enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.
+oracle=Selesnya Guildgate enters the battlefield tapped.\n{T}: Add {G} or {W}.

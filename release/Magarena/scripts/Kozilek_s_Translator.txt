@@ -8,6 +8,6 @@ subtype=Eldrazi,Drone
 cost={4}{B}
 pt=3/5
 ability=Devoid;\
-        Pay 1 life: Add {C} to your mana pool. Activate this ability only once each turn.
+        Pay 1 life: Add {C}. Activate this ability only once each turn.
 timing=main
-oracle=Devoid\nPay 1 life: Add {C} to your mana pool. Activate this ability only once each turn.
+oracle=Devoid\nPay 1 life: Add {C}. Activate this ability only once each turn.

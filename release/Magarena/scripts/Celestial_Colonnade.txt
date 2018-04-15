@@ -6,7 +6,7 @@ type=Land
 mana=w3u3
 timing=tapland
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} or {U} to your mana pool.;\
+        {T}: Add {W} or {U}.;\
         {3}{W}{U}: Until end of turn, SN becomes a 4/4 white and blue Elemental creature with flying and vigilance. It's still a land.
 mana_or_combat
-oracle=Celestial Colonnade enters the battlefield tapped.\n{T}: Add {W} or {U} to your mana pool.\n{3}{W}{U}: Until end of turn, Celestial Colonnade becomes a 4/4 white and blue Elemental creature with flying and vigilance. It's still a land.
+oracle=Celestial Colonnade enters the battlefield tapped.\n{T}: Add {W} or {U}.\n{3}{W}{U}: Until end of turn, Celestial Colonnade becomes a 4/4 white and blue Elemental creature with flying and vigilance. It's still a land.

@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Land
 subtype=Desert
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         When SN is put into a graveyard from the battlefield, create a 2/2 black Zombie creature token.
 timing=land
-oracle={T}: Add {C} to your mana pool.\nWhen Dunes of the Dead is put into a graveyard from the battlefield, create a 2/2 black Zombie creature token.
+oracle={T}: Add {C}.\nWhen Dunes of the Dead is put into a graveyard from the battlefield, create a 2/2 black Zombie creature token.

@@ -5,8 +5,8 @@ value=3.600
 rarity=R
 type=Land
 ability=Hideaway;\
-        {T}: Add {G} to your mana pool.;\
+        {T}: Add {G}.;\
         {G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.
 timing=land
-oracle=Hideaway\n{T}: Add {G} to your mana pool.\n{G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.
+oracle=Hideaway\n{T}: Add {G}.\n{G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.
 status=not supported: hideaway

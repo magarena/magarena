@@ -3,9 +3,9 @@ image=https://magiccards.info/scans/en/m15/247.jpg
 value=3.875
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a Sliver spell.;\
+ability={T}: Add {C}.;\
+        {T}: Add one mana of any color. Spend this mana only to cast a Sliver spell.;\
         {5}, {T}: Create a 1/1 colorless Sliver creature token. Activate this ability only if you control a Sliver.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a Sliver spell.\n{5}, {T}: Create a 1/1 colorless Sliver creature token. Activate this ability only if you control a Sliver.
+oracle={T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Sliver spell.\n{5}, {T}: Create a 1/1 colorless Sliver creature token. Activate this ability only if you control a Sliver.
 status=not supported: mana-restriction

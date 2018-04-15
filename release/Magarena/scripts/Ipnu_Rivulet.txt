@@ -4,8 +4,8 @@ value=2.500
 rarity=U
 type=Land
 subtype=Desert
-ability={T}: Add {C} to your mana pool.;\
-        {T}, Pay 1 life: Add {U} to your mana pool.;\
+ability={T}: Add {C}.;\
+        {T}, Pay 1 life: Add {U}.;\
         {1}{U}, {T}, Sacrifice a Desert: Target player puts the top four cards of his or her library into his or her graveyard.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}, Pay 1 life: Add {U} to your mana pool.\n{1}{U}, {T}, Sacrifice a Desert: Target player puts the top four cards of his or her library into his or her graveyard.
+oracle={T}: Add {C}.\n{T}, Pay 1 life: Add {U}.\n{1}{U}, {T}, Sacrifice a Desert: Target player puts the top four cards of his or her library into his or her graveyard.

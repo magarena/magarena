@@ -5,6 +5,6 @@ rarity=U
 type=Land
 mana=u3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {B} to your mana pool.
+        {T}: Add {U} or {B}.
 timing=tapland
-oracle=Salt Marsh enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.
+oracle=Salt Marsh enters the battlefield tapped.\n{T}: Add {U} or {B}.

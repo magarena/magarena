@@ -5,7 +5,7 @@ rarity=C
 type=Land
 mana=w3u1b1r1g1
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.;\
-        {T}, Sacrifice SN: Add one mana of any color to your mana pool.
+        {T}: Add {W}.;\
+        {T}, Sacrifice SN: Add one mana of any color.
 timing=tapland
-oracle=Abandoned Outpost enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\n{T}, Sacrifice Abandoned Outpost: Add one mana of any color to your mana pool.
+oracle=Abandoned Outpost enters the battlefield tapped.\n{T}: Add {W}.\n{T}, Sacrifice Abandoned Outpost: Add one mana of any color.

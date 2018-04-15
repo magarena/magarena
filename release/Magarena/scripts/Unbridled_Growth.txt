@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant land;\
-        Enchanted land has "{T}: Add one mana of any color to your mana pool.";\
+        Enchanted land has "{T}: Add one mana of any color.";\
         Sacrifice SN: Draw a card.
 timing=aura
 enchant=pump,pos land
-oracle=Enchant land\nEnchanted land has "{T}: Add one mana of any color to your mana pool."\nSacrifice Unbridled Growth: Draw a card.
+oracle=Enchant land\nEnchanted land has "{T}: Add one mana of any color."\nSacrifice Unbridled Growth: Draw a card.

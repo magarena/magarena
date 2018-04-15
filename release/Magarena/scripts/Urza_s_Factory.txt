@@ -4,7 +4,7 @@ value=3.000
 rarity=U
 type=Land
 subtype=Urza's
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {7}, {T}: Create a 2/2 colorless Assembly-Worker artifact creature token.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{7}, {T}: Create a 2/2 colorless Assembly-Worker artifact creature token.
+oracle={T}: Add {C}.\n{7}, {T}: Create a 2/2 colorless Assembly-Worker artifact creature token.

@@ -6,7 +6,7 @@ type=Artifact
 cost={6}
 ability=As SN enters the battlefield, choose a color.;\
         Creatures you control of the chosen color get +1/+1.;\
-        Whenever a land's ability adds one or more mana of the chosen color to your mana pool, add one additional mana of that color to your mana pool.
+        Whenever a land's ability adds one or more mana of the chosen color, add one additional mana of that color.
 timing=artifact
-oracle=As Caged Sun enters the battlefield, choose a color.\nCreatures you control of the chosen color get +1/+1.\nWhenever a land's ability adds one or more mana of the chosen color to your mana pool, add one additional mana of that color to your mana pool.
+oracle=As Caged Sun enters the battlefield, choose a color.\nCreatures you control of the chosen color get +1/+1.\nWhenever a land's ability adds one or more mana of the chosen color, add one additional mana of that color.
 status=not supported: non-activated-mana-ability

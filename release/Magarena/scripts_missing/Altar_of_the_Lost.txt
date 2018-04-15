@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 cost={3}
 ability=SN enters the battlefield tapped.;\
-        {T}: Add two mana in any combination of colors to your mana pool. Spend this mana only to cast spells with flashback from a graveyard.
+        {T}: Add two mana in any combination of colors. Spend this mana only to cast spells with flashback from a graveyard.
 timing=artifact
-oracle=Altar of the Lost enters the battlefield tapped.\n{T}: Add two mana in any combination of colors to your mana pool. Spend this mana only to cast spells with flashback from a graveyard.
+oracle=Altar of the Lost enters the battlefield tapped.\n{T}: Add two mana in any combination of colors. Spend this mana only to cast spells with flashback from a graveyard.
 status=not supported: add-multiple-mana

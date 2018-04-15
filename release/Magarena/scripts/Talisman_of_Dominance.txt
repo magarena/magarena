@@ -4,7 +4,7 @@ value=3.743
 rarity=U
 type=Artifact
 cost={2}
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {U} or {B} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add {U} or {B}. SN deals 1 damage to you.
 timing=artifact
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {U} or {B} to your mana pool. Talisman of Dominance deals 1 damage to you.
+oracle={T}: Add {C}.\n{T}: Add {U} or {B}. Talisman of Dominance deals 1 damage to you.

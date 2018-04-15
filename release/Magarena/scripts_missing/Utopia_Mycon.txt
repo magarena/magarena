@@ -8,7 +8,7 @@ cost={G}
 pt=0/2
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Create a 1/1 green Saproling creature token.;\
-        Sacrifice a Saproling: Add one mana of any color to your mana pool.
+        Sacrifice a Saproling: Add one mana of any color.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Utopia Mycon.\nRemove three spore counters from Utopia Mycon: Create a 1/1 green Saproling creature token.\nSacrifice a Saproling: Add one mana of any color to your mana pool.
+oracle=At the beginning of your upkeep, put a spore counter on Utopia Mycon.\nRemove three spore counters from Utopia Mycon: Create a 1/1 green Saproling creature token.\nSacrifice a Saproling: Add one mana of any color.
 status=not supported: repeated-mana-ability

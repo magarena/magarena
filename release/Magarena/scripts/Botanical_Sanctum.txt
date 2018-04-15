@@ -6,6 +6,6 @@ rarity=R
 type=Land
 mana=g3u3
 ability=SN enters the battlefield tapped unless you control two or fewer other lands.;\
-        {T}: Add {G} or {U} to your mana pool.
+        {T}: Add {G} or {U}.
 timing=land
-oracle=Botanical Sanctum enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {G} or {U} to your mana pool.
+oracle=Botanical Sanctum enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {G} or {U}.

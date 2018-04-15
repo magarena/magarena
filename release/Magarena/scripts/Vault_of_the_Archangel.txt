@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/dka/158.jpg
 value=3.167
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}{W}{B}, {T}: Creatures you control gain deathtouch and lifelink until end of turn.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}{W}{B}, {T}: Creatures you control gain deathtouch and lifelink until end of turn.
+oracle={T}: Add {C}.\n{2}{W}{B}, {T}: Creatures you control gain deathtouch and lifelink until end of turn.

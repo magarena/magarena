@@ -5,7 +5,7 @@ value=4.477
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
+        {T}: Add {C}.;\
         {2}, {T}, Sacrifice SN: Search your library for a Forest card and a Plains card and put them onto the battlefield tapped. Then shuffle your library.
 timing=land
-oracle=Krosan Verge enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice Krosan Verge: Search your library for a Forest card and a Plains card and put them onto the battlefield tapped. Then shuffle your library.
+oracle=Krosan Verge enters the battlefield tapped.\n{T}: Add {C}.\n{2}, {T}, Sacrifice Krosan Verge: Search your library for a Forest card and a Plains card and put them onto the battlefield tapped. Then shuffle your library.

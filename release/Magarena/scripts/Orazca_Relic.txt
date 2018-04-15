@@ -5,7 +5,7 @@ rarity=C
 type=Artifact
 cost={3}
 ability=Ascend;\
-        {T}: Add {C} to your mana pool.;\
+        {T}: Add {C}.;\
         {T}, Sacrifice SN: You gain 3 life~and draw a card. Activate this ability only if you have the city's blessing.
 timing=artifact
-oracle=Ascend\n{T}: Add {C} to your mana pool.\n{T}, Sacrifice Orazca Relic: You gain 3 life and draw a card. Activate this ability only if you have the city's blessing.
+oracle=Ascend\n{T}: Add {C}.\n{T}, Sacrifice Orazca Relic: You gain 3 life and draw a card. Activate this ability only if you have the city's blessing.

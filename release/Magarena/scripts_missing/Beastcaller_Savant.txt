@@ -8,7 +8,7 @@ subtype=Elf,Shaman,Ally
 cost={1}{G}
 pt=1/1
 ability=Haste;\
-        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.
+        {T}: Add one mana of any color. Spend this mana only to cast a creature spell.
 timing=fmain
-oracle=Haste\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.
+oracle=Haste\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell.
 status=not supported: mana-restriction

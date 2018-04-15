@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/lg/253.jpg
 value=3.155
 rarity=U
 type=Legendary,Land
-ability={T}: Add {U} to your mana pool.;\
+ability={T}: Add {U}.;\
         {T}: Target creature loses banding and all "bands with other" abilities until end of turn. Activate this ability only during any upkeep step.
 timing=land
-oracle={T}: Add {U} to your mana pool.\n{T}: Target creature loses banding and all "bands with other" abilities until end of turn. Activate this ability only during any upkeep step.
+oracle={T}: Add {U}.\n{T}: Target creature loses banding and all "bands with other" abilities until end of turn. Activate this ability only during any upkeep step.
 status=not supported: banding

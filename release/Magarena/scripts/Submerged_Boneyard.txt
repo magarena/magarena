@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=u3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {B} to your mana pool.
+        {T}: Add {U} or {B}.
 timing=land
-oracle=Submerged Boneyard enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.
+oracle=Submerged Boneyard enters the battlefield tapped.\n{T}: Add {U} or {B}.

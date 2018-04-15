@@ -6,6 +6,6 @@ type=Land
 mana=w3b3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
-        {T}: Add {W} or {B} to your mana pool.
+        {T}: Add {W} or {B}.
 timing=tapland
-oracle=Scoured Barrens enters the battlefield tapped.\nWhen Scoured Barrens enters the battlefield, you gain 1 life.\n{T}: Add {W} or {B} to your mana pool.
+oracle=Scoured Barrens enters the battlefield tapped.\nWhen Scoured Barrens enters the battlefield, you gain 1 life.\n{T}: Add {W} or {B}.

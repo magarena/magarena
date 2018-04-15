@@ -6,9 +6,9 @@ type=Creature
 subtype=Human,Shaman
 cost={1}{G}
 pt=2/1
-ability={T}: Add {G}, {U}, or {R} to your mana pool.;\
+ability={T}: Add {G}, {U}, or {R}.;\
         Morph {2};\
-        When SN is turned face up, add {G}{U}{R} to your mana pool.
+        When SN is turned face up, add {G}{U}{R}.
 timing=main
-oracle={T}: Add {G}, {U}, or {R} to your mana pool.\nMorph {2}\nWhen Rattleclaw Mystic is turned face up, add {G}{U}{R} to your mana pool.
+oracle={T}: Add {G}, {U}, or {R}.\nMorph {2}\nWhen Rattleclaw Mystic is turned face up, add {G}{U}{R}.
 status=not supported: non-activated-mana-ability

@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=w3b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} or {B} to your mana pool.
+        {T}: Add {W} or {B}.
 timing=tapland
-oracle=Orzhov Guildgate enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.
+oracle=Orzhov Guildgate enters the battlefield tapped.\n{T}: Add {W} or {B}.

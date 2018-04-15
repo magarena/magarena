@@ -5,7 +5,7 @@ rarity=C
 type=Land
 mana=u3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.;\
+        {T}: Add {U}.;\
         Cycling {U}
 timing=tapland
-oracle=Lonely Sandbar enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nCycling {U}
+oracle=Lonely Sandbar enters the battlefield tapped.\n{T}: Add {U}.\nCycling {U}

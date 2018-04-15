@@ -4,7 +4,7 @@ value=3.933
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\
-        {T}, Remove a depletion counter from SN: Add {U}{U} to your mana pool. If there are no depletion counters on SN, sacrifice it.
+        {T}, Remove a depletion counter from SN: Add {U}{U}. If there are no depletion counters on SN, sacrifice it.
 timing=land
-oracle=Saprazzan Skerry enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Saprazzan Skerry: Add {U}{U} to your mana pool. If there are no depletion counters on Saprazzan Skerry, sacrifice it.
+oracle=Saprazzan Skerry enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Saprazzan Skerry: Add {U}{U}. If there are no depletion counters on Saprazzan Skerry, sacrifice it.
 status=not supported: add-multiple-mana

@@ -4,7 +4,7 @@ image_updated=2017-01-11
 value=4.361
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {G}, {T}: Untap target Elf.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{G}, {T}: Untap target Elf.
+oracle={T}: Add {C}.\n{G}, {T}: Untap target Elf.

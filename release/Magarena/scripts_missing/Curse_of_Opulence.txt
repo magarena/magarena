@@ -7,8 +7,8 @@ type=Enchantment
 subtype=Aura,Curse
 cost={R}
 ability=Enchant player;\
-        Whenever enchanted player is attacked, create a colorless artifact token named Gold. It has "Sacrifice this artifact: Add one mana of any color to your mana pool." Each opponent attacking that player does the same.
+        Whenever enchanted player is attacked, create a colorless artifact token named Gold. It has "Sacrifice this artifact: Add one mana of any color." Each opponent attacking that player does the same.
 timing=aura
 enchant=default,creature
-oracle=Enchant player\nWhenever enchanted player is attacked, create a colorless artifact token named Gold. It has "Sacrifice this artifact: Add one mana of any color to your mana pool." Each opponent attacking that player does the same.
+oracle=Enchant player\nWhenever enchanted player is attacked, create a colorless artifact token named Gold. It has "Sacrifice this artifact: Add one mana of any color." Each opponent attacking that player does the same.
 status=not supported: enchant-player

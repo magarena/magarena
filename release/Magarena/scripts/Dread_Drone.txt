@@ -8,4 +8,4 @@ cost={4}{B}
 pt=4/1
 ability=When SN enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens.
 timing=main
-oracle=When Dread Drone enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=When Dread Drone enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens. They have "Sacrifice this creature: Add {C}."

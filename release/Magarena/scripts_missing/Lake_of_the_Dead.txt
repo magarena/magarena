@@ -4,8 +4,8 @@ value=4.000
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice a Swamp instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
-        {T}: Add {B} to your mana pool.;\
-        {T}, Sacrifice a Swamp: Add {B}{B}{B}{B} to your mana pool.
+        {T}: Add {B}.;\
+        {T}, Sacrifice a Swamp: Add {B}{B}{B}{B}.
 timing=land
-oracle=If Lake of the Dead would enter the battlefield, sacrifice a Swamp instead. If you do, put Lake of the Dead onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice a Swamp: Add {B}{B}{B}{B} to your mana pool.
+oracle=If Lake of the Dead would enter the battlefield, sacrifice a Swamp instead. If you do, put Lake of the Dead onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {B}.\n{T}, Sacrifice a Swamp: Add {B}{B}{B}{B}.
 status=not supported: add-multiple-mana

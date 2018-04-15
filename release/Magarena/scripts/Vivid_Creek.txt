@@ -7,7 +7,7 @@ type=Land
 mana=b1g1r1u3w1
 ability=SN enters the battlefield tapped.;\
         SN enters the battlefield with two charge counters on it.;\
-        {T}: Add {U} to your mana pool.;\
-        {T}, Remove a charge counter from SN: Add one mana of any color to your mana pool.
+        {T}: Add {U}.;\
+        {T}, Remove a charge counter from SN: Add one mana of any color.
 timing=tapland
-oracle=Vivid Creek enters the battlefield tapped with two charge counters on it.\n{T}: Add {U} to your mana pool.\n{T}, Remove a charge counter from Vivid Creek: Add one mana of any color to your mana pool.
+oracle=Vivid Creek enters the battlefield tapped with two charge counters on it.\n{T}: Add {U}.\n{T}, Remove a charge counter from Vivid Creek: Add one mana of any color.

@@ -3,9 +3,9 @@ image=https://magiccards.info/scans/en/rix/179b.jpg
 value=2.500
 rarity=R
 type=Land
-ability={T}: Add two mana of any one color to your mana pool.;\
+ability={T}: Add two mana of any one color.;\
         {4}, {T}: Create a 4/4 colorless Golem artifact creature token.
 transform=Golden Guardian
 hidden
 timing=land
-oracle={T}: Add two mana of any one color to your mana pool.\n{4}, {T}: Create a 4/4 colorless Golem artifact creature token.
+oracle={T}: Add two mana of any one color.\n{4}, {T}: Create a 4/4 colorless Golem artifact creature token.

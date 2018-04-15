@@ -4,7 +4,7 @@ image_updated=2015-11-08
 value=2.500
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {3}{G}, {T}, Sacrifice SN: Search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{3}{G}, {T}, Sacrifice Blighted Woodland: Search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library.
+oracle={T}: Add {C}.\n{3}{G}, {T}, Sacrifice Blighted Woodland: Search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library.

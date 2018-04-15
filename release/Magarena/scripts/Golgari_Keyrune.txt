@@ -4,8 +4,8 @@ value=3.271
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {B} or {G} to your mana pool.;\
+ability={T}: Add {B} or {G}.;\
         {B}{G}: SN becomes a 2/2 black and green Insect artifact creature with deathtouch until end of turn.
 timing=artifact
 mana_or_combat
-oracle={T}: Add {B} or {G} to your mana pool.\n{B}{G}: Golgari Keyrune becomes a 2/2 black and green Insect artifact creature with deathtouch until end of turn.
+oracle={T}: Add {B} or {G}.\n{B}{G}: Golgari Keyrune becomes a 2/2 black and green Insect artifact creature with deathtouch until end of turn.

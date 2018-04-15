@@ -6,8 +6,8 @@ rarity=R
 type=Land
 mana=g3u3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {U} to your mana pool.;\
+        {T}: Add {G} or {U}.;\
         {2}{G}{U}: SN becomes a 3/3 green and blue Elemental creature with hexproof until end of turn. It's still a land.
 timing=land
 mana_or_combat
-oracle=Lumbering Falls enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.\n{2}{G}{U}: Lumbering Falls becomes a 3/3 green and blue Elemental creature with hexproof until end of turn. It's still a land.
+oracle=Lumbering Falls enters the battlefield tapped.\n{T}: Add {G} or {U}.\n{2}{G}{U}: Lumbering Falls becomes a 3/3 green and blue Elemental creature with hexproof until end of turn. It's still a land.

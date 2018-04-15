@@ -4,5 +4,5 @@ token=Etherium Cell
 type=Artifact
 color=
 value=1
-ability={T}, Sacrifice SN: Add one mana of any color to your mana pool.
-oracle={T}, Sacrifice this artifact: Add one mana of any color to your mana pool.
+ability={T}, Sacrifice SN: Add one mana of any color.
+oracle={T}, Sacrifice this artifact: Add one mana of any color.

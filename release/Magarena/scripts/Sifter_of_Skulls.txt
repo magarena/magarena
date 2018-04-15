@@ -10,4 +10,4 @@ pt=4/3
 ability=Devoid;\
         Whenever another nontoken creature you control dies, create a 1/1 colorless Eldrazi Scion creature token.
 timing=main
-oracle=Devoid\nWhenever another nontoken creature you control dies, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nWhenever another nontoken creature you control dies, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C}."

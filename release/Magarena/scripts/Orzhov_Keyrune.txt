@@ -4,8 +4,8 @@ value=3.011
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {W} or {B} to your mana pool.;\
+ability={T}: Add {W} or {B}.;\
         {W}{B}: SN becomes a 1/4 white and black Thrull artifact creature with lifelink until end of turn.
 timing=artifact
 mana_or_combat
-oracle={T}: Add {W} or {B} to your mana pool.\n{W}{B}: Orzhov Keyrune becomes a 1/4 white and black Thrull artifact creature with lifelink until end of turn.
+oracle={T}: Add {W} or {B}.\n{W}{B}: Orzhov Keyrune becomes a 1/4 white and black Thrull artifact creature with lifelink until end of turn.

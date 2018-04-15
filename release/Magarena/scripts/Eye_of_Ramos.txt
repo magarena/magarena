@@ -4,7 +4,7 @@ value=3.481
 rarity=R
 type=Artifact
 cost={3}
-ability={T}: Add {U} to your mana pool.;\
-        Sacrifice SN: Add {U} to your mana pool.
+ability={T}: Add {U}.;\
+        Sacrifice SN: Add {U}.
 timing=artifact
-oracle={T}: Add {U} to your mana pool.\nSacrifice Eye of Ramos: Add {U} to your mana pool.
+oracle={T}: Add {U}.\nSacrifice Eye of Ramos: Add {U}.

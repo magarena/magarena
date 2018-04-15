@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-ability={T}: Add {U}, {B}, or {R} to your mana pool.
+ability={T}: Add {U}, {B}, or {R}.
 timing=artifact
 requires_groovy_code
-oracle=When Visage of Bolas enters the battlefield, you may search your library and/or graveyard for a card named Nicol Bolas, the Deceiver, reveal it, and put it into your hand. If you search your library this way, shuffle it.\n{T}: Add {U}, {B}, or {R} to your mana pool.
+oracle=When Visage of Bolas enters the battlefield, you may search your library and/or graveyard for a card named Nicol Bolas, the Deceiver, reveal it, and put it into your hand. If you search your library this way, shuffle it.\n{T}: Add {U}, {B}, or {R}.

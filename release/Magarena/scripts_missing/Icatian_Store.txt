@@ -6,7 +6,7 @@ type=Land
 ability=SN enters the battlefield tapped.;\
         You may choose not to untap SN during your untap step.;\
         At the beginning of your upkeep, if SN is tapped, put a storage counter on it.;\
-        {T}, Remove any number of storage counters from SN: Add {W} to your mana pool for each storage counter removed this way.
+        {T}, Remove any number of storage counters from SN: Add {W} for each storage counter removed this way.
 timing=land
-oracle=Icatian Store enters the battlefield tapped.\nYou may choose not to untap Icatian Store during your untap step.\nAt the beginning of your upkeep, if Icatian Store is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from Icatian Store: Add {W} to your mana pool for each storage counter removed this way.
+oracle=Icatian Store enters the battlefield tapped.\nYou may choose not to untap Icatian Store during your untap step.\nAt the beginning of your upkeep, if Icatian Store is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from Icatian Store: Add {W} for each storage counter removed this way.
 status=not supported: add-multiple-mana

@@ -5,7 +5,7 @@ rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Forest you control to its owner's hand.;\
-        {T}: Add {C}{G} to your mana pool.
+        {T}: Add {C}{G}.
 timing=land
-oracle=Jungle Basin enters the battlefield tapped.\nWhen Jungle Basin enters the battlefield, sacrifice it unless you return an untapped Forest you control to its owner's hand.\n{T}: Add {C}{G} to your mana pool.
+oracle=Jungle Basin enters the battlefield tapped.\nWhen Jungle Basin enters the battlefield, sacrifice it unless you return an untapped Forest you control to its owner's hand.\n{T}: Add {C}{G}.
 status=not supported: add-multiple-mana

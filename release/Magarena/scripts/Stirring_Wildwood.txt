@@ -6,8 +6,8 @@ rarity=R
 type=Land
 mana=g3w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {W} to your mana pool.;\
+        {T}: Add {G} or {W}.;\
         {1}{G}{W}: Until end of turn, SN becomes a 3/4 green and white Elemental creature with reach. It's still a land.
 mana_or_combat
 timing=tapland
-oracle=Stirring Wildwood enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.\n{1}{G}{W}: Until end of turn, Stirring Wildwood becomes a 3/4 green and white Elemental creature with reach. It's still a land.
+oracle=Stirring Wildwood enters the battlefield tapped.\n{T}: Add {G} or {W}.\n{1}{G}{W}: Until end of turn, Stirring Wildwood becomes a 3/4 green and white Elemental creature with reach. It's still a land.

@@ -5,7 +5,7 @@ rarity=R
 type=Land
 mana=w1u1b1r1g1
 ability=SN enters the battlefield with a charge counter on it.;\
-        {T}: Add {C} to your mana pool.;\
-        {T}, Remove a charge counter from SN: Add one mana of any color to your mana pool.
+        {T}: Add {C}.;\
+        {T}, Remove a charge counter from SN: Add one mana of any color.
 timing=land
-oracle=Tendo Ice Bridge enters the battlefield with a charge counter on it.\n{T}: Add {C} to your mana pool.\n{T}, Remove a charge counter from Tendo Ice Bridge: Add one mana of any color to your mana pool.
+oracle=Tendo Ice Bridge enters the battlefield with a charge counter on it.\n{T}: Add {C}.\n{T}, Remove a charge counter from Tendo Ice Bridge: Add one mana of any color.

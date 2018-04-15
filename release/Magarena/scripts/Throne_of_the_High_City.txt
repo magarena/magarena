@@ -4,7 +4,7 @@ image_updated=2016-09-05
 value=2.500
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {4}, {T}, Sacrifice SN: You become the monarch.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{4}, {T}, Sacrifice Throne of the High City: You become the monarch.
+oracle={T}: Add {C}.\n{4}, {T}, Sacrifice Throne of the High City: You become the monarch.

@@ -6,6 +6,6 @@ type=Land
 subtype=Lair
 mana=g2w2u2
 ability=When SN enters the battlefield, sacrifice SN unless you return a non-Lair land you control to its owner's hand.;\
-        {T}: Add {G}, {W}, or {U} to your mana pool.
+        {T}: Add {G}, {W}, or {U}.
 timing=land
-oracle=When Treva's Ruins enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {G}, {W}, or {U} to your mana pool.
+oracle=When Treva's Ruins enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {G}, {W}, or {U}.

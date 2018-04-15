@@ -7,7 +7,7 @@ subtype=Human,Soldier
 cost={3}{G}
 pt=3/2
 ability={1}{G}, {T}: Create a 0/1 green Wall creature token with defender named Wood.;\
-        Sacrifice a token named Wood: Add {R} to your mana pool.
+        Sacrifice a token named Wood: Add {R}.
 timing=main
-oracle={1}{G}, {T}: Create a 0/1 green Wall creature token with defender named Wood.\nSacrifice a token named Wood: Add {R} to your mana pool.
+oracle={1}{G}, {T}: Create a 0/1 green Wall creature token with defender named Wood.\nSacrifice a token named Wood: Add {R}.
 status=not supported: mana-ability-with-choice

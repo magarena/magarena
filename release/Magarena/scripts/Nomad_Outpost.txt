@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=r2w2b2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R}, {W}, or {B} to your mana pool.
+        {T}: Add {R}, {W}, or {B}.
 timing=tapland
-oracle=Nomad Outpost enters the battlefield tapped.\n{T}: Add {R}, {W}, or {B} to your mana pool.
+oracle=Nomad Outpost enters the battlefield tapped.\n{T}: Add {R}, {W}, or {B}.

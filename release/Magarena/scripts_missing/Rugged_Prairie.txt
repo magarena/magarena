@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/eve/178.jpg
 value=4.389
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W} to your mana pool.
+ability={T}: Add {C}.;\
+        {R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W}.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W} to your mana pool.
+oracle={T}: Add {C}.\n{R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W}.
 status=not supported: add-multiple-mana

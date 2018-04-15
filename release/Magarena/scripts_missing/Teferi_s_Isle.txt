@@ -5,7 +5,7 @@ rarity=R
 type=Legendary,Land
 ability=Phasing;\
         SN enters the battlefield tapped.;\
-        {T}: Add {U}{U} to your mana pool.
+        {T}: Add {U}{U}.
 timing=land
-oracle=Phasing\nTeferi's Isle enters the battlefield tapped.\n{T}: Add {U}{U} to your mana pool.
+oracle=Phasing\nTeferi's Isle enters the battlefield tapped.\n{T}: Add {U}{U}.
 status=not supported: phasing

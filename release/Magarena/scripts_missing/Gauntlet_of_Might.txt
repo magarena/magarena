@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={4}
 ability=Red creatures get +1/+1.;\
-        Whenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.
+        Whenever a Mountain is tapped for mana, its controller adds {R}.
 timing=artifact
-oracle=Red creatures get +1/+1.\nWhenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.
+oracle=Red creatures get +1/+1.\nWhenever a Mountain is tapped for mana, its controller adds {R}.
 status=not supported: non-activated-mana-ability

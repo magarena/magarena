@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Land
 subtype=Desert
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {3}, {T}, Sacrifice SN: Create a 2/2 black Zombie creature token. Activate this ability only any time you could cast a sorcery.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{3}, {T}, Sacrifice Cradle of the Accursed: Create a 2/2 black Zombie creature token. Activate this ability only any time you could cast a sorcery.
+oracle={T}: Add {C}.\n{3}, {T}, Sacrifice Cradle of the Accursed: Create a 2/2 black Zombie creature token. Activate this ability only any time you could cast a sorcery.

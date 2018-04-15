@@ -4,8 +4,8 @@ image_updated=2017-04-12
 value=4.216
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {W} to your mana pool. Activate this ability only if you control an Island.;\
-        {T}: Add {U} to your mana pool. Activate this ability only if you control a Plains.
+ability={T}: Add {C}.;\
+        {T}: Add {W}. Activate this ability only if you control an Island.;\
+        {T}: Add {U}. Activate this ability only if you control a Plains.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {W} to your mana pool. Activate this ability only if you control an Island.\n{T}: Add {U} to your mana pool. Activate this ability only if you control a Plains.
+oracle={T}: Add {C}.\n{T}: Add {W}. Activate this ability only if you control an Island.\n{T}: Add {U}. Activate this ability only if you control a Plains.

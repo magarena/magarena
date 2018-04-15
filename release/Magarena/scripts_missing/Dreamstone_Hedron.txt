@@ -5,8 +5,8 @@ value=2.500
 rarity=U
 type=Artifact
 cost={6}
-ability={T}: Add {C}{C}{C} to your mana pool.;\
+ability={T}: Add {C}{C}{C}.;\
         {3}, {T}, Sacrifice SN: Draw three cards.
 timing=artifact
-oracle={T}: Add {C}{C}{C} to your mana pool.\n{3}, {T}, Sacrifice Dreamstone Hedron: Draw three cards.
+oracle={T}: Add {C}{C}{C}.\n{3}, {T}, Sacrifice Dreamstone Hedron: Draw three cards.
 status=not supported: add-multiple-mana

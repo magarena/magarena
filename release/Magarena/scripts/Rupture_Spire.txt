@@ -7,6 +7,6 @@ type=Land
 mana=b3g3r3u3w3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice SN unless you pay {1}.;\
-        {T}: Add one mana of any color to your mana pool.
+        {T}: Add one mana of any color.
 timing=tapland
-oracle=Rupture Spire enters the battlefield tapped.\nWhen Rupture Spire enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color to your mana pool.
+oracle=Rupture Spire enters the battlefield tapped.\nWhen Rupture Spire enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color.

@@ -4,8 +4,8 @@ value=3.750
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal an Elemental card from your hand. If you don't, SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
-        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.
+        {T}: Add {C}.;\
+        {T}: Add one mana of any color. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.
 timing=land
-oracle=As Primal Beyond enters the battlefield, you may reveal an Elemental card from your hand. If you don't, Primal Beyond enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.
+oracle=As Primal Beyond enters the battlefield, you may reveal an Elemental card from your hand. If you don't, Primal Beyond enters the battlefield tapped.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.
 status=not supported: mana-restriction

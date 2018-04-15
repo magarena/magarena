@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/4e/189.jpg
 value=4.500
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {T}, Sacrifice SN: Destroy target land.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}, Sacrifice Strip Mine: Destroy target land.
+oracle={T}: Add {C}.\n{T}, Sacrifice Strip Mine: Destroy target land.

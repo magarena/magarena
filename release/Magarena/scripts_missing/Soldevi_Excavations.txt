@@ -4,8 +4,8 @@ value=4.329
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice an untapped Island instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
-        {T}: Add {C}{U} to your mana pool.;\
+        {T}: Add {C}{U}.;\
         {1}, {T}: Scry 1.
 timing=land
-oracle=If Soldevi Excavations would enter the battlefield, sacrifice an untapped Island instead. If you do, put Soldevi Excavations onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{U} to your mana pool.\n{1}, {T}: Scry 1.
+oracle=If Soldevi Excavations would enter the battlefield, sacrifice an untapped Island instead. If you do, put Soldevi Excavations onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{U}.\n{1}, {T}: Scry 1.
 status=not supported: add-multiple-mana

@@ -8,4 +8,4 @@ cost={1}{G}
 pt=2/2
 ability=When SN enters the battlefield, create a 0/1 colorless Eldrazi Spawn creature token.
 timing=main
-oracle=When Nest Invader enters the battlefield, create a 0/1 colorless Eldrazi Spawn creature token. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=When Nest Invader enters the battlefield, create a 0/1 colorless Eldrazi Spawn creature token. It has "Sacrifice this creature: Add {C}."

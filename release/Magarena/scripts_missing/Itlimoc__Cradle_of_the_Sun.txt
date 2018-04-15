@@ -3,10 +3,10 @@ image=https://magiccards.info/scans/en/xln/191b.jpg
 value=2.500
 rarity=R
 type=Legendary,Land
-ability={T}: Add {G} to your mana pool.;\
-        {T}: Add {G} to your mana pool for each creature you control.
+ability={T}: Add {G}.;\
+        {T}: Add {G} for each creature you control.
 transform=Growing Rites of Itlimoc
 hidden
 timing=land
-oracle={T}: Add {G} to your mana pool.\n{T}: Add {G} to your mana pool for each creature you control.
+oracle={T}: Add {G}.\n{T}: Add {G} for each creature you control.
 status=not supported: add-multiple-mana

@@ -5,9 +5,9 @@ value=3.938
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {B} to your mana pool.;\
+ability={T}: Add {B}.;\
         {2}{B}: SN becomes a 5/5 black Horror artifact creature with trample until end of turn.;\
         Whenever SN is dealt damage, if it's a creature, sacrifice that many permanents.
 timing=artifact
-oracle={T}: Add {B} to your mana pool.\n{2}{B}: Phyrexian Totem becomes a 5/5 black Horror artifact creature with trample until end of turn.\nWhenever Phyrexian Totem is dealt damage, if it's a creature, sacrifice that many permanents.
+oracle={T}: Add {B}.\n{2}{B}: Phyrexian Totem becomes a 5/5 black Horror artifact creature with trample until end of turn.\nWhenever Phyrexian Totem is dealt damage, if it's a creature, sacrifice that many permanents.
 status=needs groovy

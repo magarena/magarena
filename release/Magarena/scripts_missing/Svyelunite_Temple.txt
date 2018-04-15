@@ -4,8 +4,8 @@ value=3.569
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.;\
-        {T}, Sacrifice SN: Add {U}{U} to your mana pool.
+        {T}: Add {U}.;\
+        {T}, Sacrifice SN: Add {U}{U}.
 timing=land
-oracle=Svyelunite Temple enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Svyelunite Temple: Add {U}{U} to your mana pool.
+oracle=Svyelunite Temple enters the battlefield tapped.\n{T}: Add {U}.\n{T}, Sacrifice Svyelunite Temple: Add {U}{U}.
 status=not supported: add-multiple-mana

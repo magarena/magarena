@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Land
 ability=Indestructible;\
-        {T}: Add {C} to your mana pool.;\
-        {5}, {T}: Add five mana in any combination of colors to your mana pool.
+        {T}: Add {C}.;\
+        {5}, {T}: Add five mana in any combination of colors.
 timing=land
-oracle=Indestructible\n{T}: Add {C} to your mana pool.\n{5}, {T}: Add five mana in any combination of colors to your mana pool.
+oracle=Indestructible\n{T}: Add {C}.\n{5}, {T}: Add five mana in any combination of colors.
 status=not supported: add-multiple-mana

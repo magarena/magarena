@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {4}, {T}: Investigate.
 timing=artifact
-oracle={T}: Add {C} to your mana pool.\n{4}, {T}: Investigate.
+oracle={T}: Add {C}.\n{4}, {T}: Investigate.

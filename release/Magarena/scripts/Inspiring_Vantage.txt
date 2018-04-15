@@ -6,6 +6,6 @@ rarity=R
 type=Land
 mana=r3w3
 ability=SN enters the battlefield tapped unless you control two or fewer other lands.;\
-        {T}: Add {R} or {W} to your mana pool.
+        {T}: Add {R} or {W}.
 timing=land
-oracle=Inspiring Vantage enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {R} or {W} to your mana pool.
+oracle=Inspiring Vantage enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {R} or {W}.

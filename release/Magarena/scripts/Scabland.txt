@@ -5,7 +5,7 @@ rarity=R
 type=Land
 mana=w2r2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
-        {T}: Add {R} or {W} to your mana pool. SN deals 1 damage to you.
+        {T}: Add {C}.;\
+        {T}: Add {R} or {W}. SN deals 1 damage to you.
 timing=tapland
-oracle=Scabland enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{T}: Add {R} or {W} to your mana pool. Scabland deals 1 damage to you.
+oracle=Scabland enters the battlefield tapped.\n{T}: Add {C}.\n{T}: Add {R} or {W}. Scabland deals 1 damage to you.

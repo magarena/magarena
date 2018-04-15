@@ -7,7 +7,7 @@ subtype=Spirit
 cost={1}{G}
 pt=1/2
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
-        {1}, Remove X ki counters from SN: Add X mana of any one color to your mana pool.
+        {1}, Remove X ki counters from SN: Add X mana of any one color.
 timing=main
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Petalmane Baku.\n{1}, Remove X ki counters from Petalmane Baku: Add X mana of any one color to your mana pool.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Petalmane Baku.\n{1}, Remove X ki counters from Petalmane Baku: Add X mana of any one color.
 status=not supported: add-multiple-mana

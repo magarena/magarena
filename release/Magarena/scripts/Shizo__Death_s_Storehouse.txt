@@ -4,7 +4,7 @@ value=4.064
 rarity=R
 type=Legendary,Land
 mana=b3
-ability={T}: Add {B} to your mana pool.;\
+ability={T}: Add {B}.;\
         {B}, {T}: Target legendary creature gains fear until end of turn.
 timing=land
-oracle={T}: Add {B} to your mana pool.\n{B}, {T}: Target legendary creature gains fear until end of turn.
+oracle={T}: Add {B}.\n{B}, {T}: Target legendary creature gains fear until end of turn.

@@ -3,9 +3,9 @@ image=https://magiccards.info/scans/en/xln/90b.jpg
 value=2.500
 rarity=R
 type=Legendary,Land
-ability={T}: Add {B} to your mana pool.
+ability={T}: Add {B}.
 transform=Arguel's Blood Fast
 hidden
 timing=land
 requires_groovy_code
-oracle={T}: Add {B} to your mana pool.\n{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.
+oracle={T}: Add {B}.\n{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.

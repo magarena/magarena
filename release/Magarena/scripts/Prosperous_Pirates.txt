@@ -8,4 +8,4 @@ cost={4}{U}
 pt=3/4
 ability=When SN enters the battlefield, create two colorless Treasure artifact tokens.
 timing=main
-oracle=When Prosperous Pirates enters the battlefield, create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+oracle=When Prosperous Pirates enters the battlefield, create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color."

@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/us/326.jpg
 value=3.606
 rarity=R
 type=Legendary,Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}{R}, {T}: SN deals 1 damage to each opponent.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}{R}, {T}: Shivan Gorge deals 1 damage to each opponent.
+oracle={T}: Add {C}.\n{2}{R}, {T}: Shivan Gorge deals 1 damage to each opponent.

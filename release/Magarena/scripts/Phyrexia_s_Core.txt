@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/c14/306.jpg
 value=2.982
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}, {T}, Sacrifice an artifact: You gain 1 life.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}, {T}, Sacrifice an artifact: You gain 1 life.
+oracle={T}: Add {C}.\n{1}, {T}, Sacrifice an artifact: You gain 1 life.

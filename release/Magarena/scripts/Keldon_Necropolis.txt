@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/in/325.jpg
 value=3.114
 rarity=R
 type=Legendary,Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {4}{R}, {T}, Sacrifice a creature: SN deals 2 damage to target creature or player.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{4}{R}, {T}, Sacrifice a creature: Keldon Necropolis deals 2 damage to target creature or player.
+oracle={T}: Add {C}.\n{4}{R}, {T}, Sacrifice a creature: Keldon Necropolis deals 2 damage to target creature or player.

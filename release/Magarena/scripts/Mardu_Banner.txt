@@ -4,7 +4,7 @@ value=2.000
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {R}, {W}, or {B} to your mana pool.;\
+ability={T}: Add {R}, {W}, or {B}.;\
         {R}{W}{B}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {R}, {W}, or {B} to your mana pool.\n{R}{W}{B}, {T}, Sacrifice Mardu Banner: Draw a card.
+oracle={T}: Add {R}, {W}, or {B}.\n{R}{W}{B}, {T}, Sacrifice Mardu Banner: Draw a card.

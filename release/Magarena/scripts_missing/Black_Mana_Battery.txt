@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}: Put a charge counter on SN.;\
-        {T}, Remove any number of charge counters from SN: Add {B} to your mana pool, then add an additional {B} to your mana pool for each charge counter removed this way.
+        {T}, Remove any number of charge counters from SN: Add {B}, then add an additional {B} for each charge counter removed this way.
 timing=artifact
-oracle={2}, {T}: Put a charge counter on Black Mana Battery.\n{T}, Remove any number of charge counters from Black Mana Battery: Add {B} to your mana pool, then add an additional {B} to your mana pool for each charge counter removed this way.
+oracle={2}, {T}: Put a charge counter on Black Mana Battery.\n{T}, Remove any number of charge counters from Black Mana Battery: Add {B}, then add an additional {B} for each charge counter removed this way.
 status=not supported: add-multiple-mana

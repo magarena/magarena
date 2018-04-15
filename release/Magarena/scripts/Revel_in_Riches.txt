@@ -7,4 +7,4 @@ cost={4}{B}
 ability=Whenever a creature an opponent controls dies, create a colorless Treasure artifact token.;\
         At the beginning of your upkeep, if you control ten or more Treasures, you win the game.
 timing=enchantment
-oracle=Whenever a creature an opponent controls dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nAt the beginning of your upkeep, if you control ten or more Treasures, you win the game.
+oracle=Whenever a creature an opponent controls dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."\nAt the beginning of your upkeep, if you control ten or more Treasures, you win the game.

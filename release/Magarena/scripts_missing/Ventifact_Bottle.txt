@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={3}
 ability={X}{1}, {T}: Put X charge counters on SN. Activate this ability only any time you could cast a sorcery.;\
-        At the beginning of your precombat main phase, if SN has a charge counter on it, tap it and remove all charge counters from it. Add {C} to your mana pool for each charge counter removed this way.
+        At the beginning of your precombat main phase, if SN has a charge counter on it, tap it and remove all charge counters from it. Add {C} for each charge counter removed this way.
 timing=artifact
-oracle={X}{1}, {T}: Put X charge counters on Ventifact Bottle. Activate this ability only any time you could cast a sorcery.\nAt the beginning of your precombat main phase, if Ventifact Bottle has a charge counter on it, tap it and remove all charge counters from it. Add {C} to your mana pool for each charge counter removed this way.
+oracle={X}{1}, {T}: Put X charge counters on Ventifact Bottle. Activate this ability only any time you could cast a sorcery.\nAt the beginning of your precombat main phase, if Ventifact Bottle has a charge counter on it, tap it and remove all charge counters from it. Add {C} for each charge counter removed this way.
 status=not supported: add-multiple-mana

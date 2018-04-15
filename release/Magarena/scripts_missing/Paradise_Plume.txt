@@ -6,6 +6,6 @@ type=Artifact
 cost={4}
 ability=As SN enters the battlefield, choose a color.;\
         Whenever a player casts a spell of the chosen color, you may gain 1 life.;\
-        {T}: Add one mana of the chosen color to your mana pool.
+        {T}: Add one mana of the chosen color.
 timing=artifact
-oracle=As Paradise Plume enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, you may gain 1 life.\n{T}: Add one mana of the chosen color to your mana pool.
+oracle=As Paradise Plume enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, you may gain 1 life.\n{T}: Add one mana of the chosen color.

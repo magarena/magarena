@@ -4,7 +4,7 @@ value=3.562
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\
-        {T}, Remove a depletion counter from SN: Add {G}{G} to your mana pool. If there are no depletion counters on SN, sacrifice it.
+        {T}, Remove a depletion counter from SN: Add {G}{G}. If there are no depletion counters on SN, sacrifice it.
 timing=land
-oracle=Hickory Woodlot enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Hickory Woodlot: Add {G}{G} to your mana pool. If there are no depletion counters on Hickory Woodlot, sacrifice it.
+oracle=Hickory Woodlot enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Hickory Woodlot: Add {G}{G}. If there are no depletion counters on Hickory Woodlot, sacrifice it.
 status=not supported: add-multiple-mana

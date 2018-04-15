@@ -5,6 +5,6 @@ rarity=C
 type=Land
 subtype=Desert
 ability=When SN enters the battlefield, SN deals 1 damage to target player.;\
-        {T}: Add {C} to your mana pool.
+        {T}: Add {C}.
 timing=land
-oracle=When Sunscorched Desert enters the battlefield, it deals 1 damage to target player.\n{T}: Add {C} to your mana pool.
+oracle=When Sunscorched Desert enters the battlefield, it deals 1 damage to target player.\n{T}: Add {C}.

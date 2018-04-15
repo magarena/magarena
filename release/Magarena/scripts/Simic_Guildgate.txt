@@ -7,6 +7,6 @@ type=Land
 subtype=Gate
 mana=g3u3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {U} to your mana pool.
+        {T}: Add {G} or {U}.
 timing=tapland
-oracle=Simic Guildgate enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.
+oracle=Simic Guildgate enters the battlefield tapped.\n{T}: Add {G} or {U}.

@@ -4,8 +4,8 @@ value=3.259
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {U} or {B} to your mana pool.;\
+ability={T}: Add {U} or {B}.;\
         {U}{B}: SN becomes a 2/2 blue and black Horror artifact creature until end of turn.~SN can't be blocked this turn.
 timing=artifact
 mana_or_combat
-oracle={T}: Add {U} or {B} to your mana pool.\n{U}{B}: Dimir Keyrune becomes a 2/2 blue and black Horror artifact creature until end of turn and can't be blocked this turn.
+oracle={T}: Add {U} or {B}.\n{U}{B}: Dimir Keyrune becomes a 2/2 blue and black Horror artifact creature until end of turn and can't be blocked this turn.

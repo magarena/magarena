@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/an/88.jpg
 value=4.194
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {T}: Regenerate target Elephant.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Regenerate target Elephant.
+oracle={T}: Add {C}.\n{T}: Regenerate target Elephant.

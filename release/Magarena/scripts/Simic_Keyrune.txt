@@ -5,8 +5,8 @@ value=3.128
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {G} or {U} to your mana pool.;\
+ability={T}: Add {G} or {U}.;\
         {G}{U}: SN becomes a 2/3 green and blue Crab artifact creature with hexproof until end of turn.
 timing=artifact
 mana_or_combat
-oracle={T}: Add {G} or {U} to your mana pool.\n{G}{U}: Simic Keyrune becomes a 2/3 green and blue Crab artifact creature with hexproof until end of turn.
+oracle={T}: Add {G} or {U}.\n{G}{U}: Simic Keyrune becomes a 2/3 green and blue Crab artifact creature with hexproof until end of turn.

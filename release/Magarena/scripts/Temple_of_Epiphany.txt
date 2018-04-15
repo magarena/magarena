@@ -6,6 +6,6 @@ type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
-        {T}: Add {U} or {R} to your mana pool.
+        {T}: Add {U} or {R}.
 timing=land
-oracle=Temple of Epiphany enters the battlefield tapped.\nWhen Temple of Epiphany enters the battlefield, scry 1.\n{T}: Add {U} or {R} to your mana pool.
+oracle=Temple of Epiphany enters the battlefield tapped.\nWhen Temple of Epiphany enters the battlefield, scry 1.\n{T}: Add {U} or {R}.

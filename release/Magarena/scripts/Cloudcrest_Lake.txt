@@ -4,7 +4,7 @@ value=2.614
 rarity=U
 type=Land
 mana=w2u2
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add {W} or {U} to your mana pool. SN doesn't untap during your next untap step.
+ability={T}: Add {C}.;\
+        {T}: Add {W} or {U}. SN doesn't untap during your next untap step.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add {W} or {U} to your mana pool. Cloudcrest Lake doesn't untap during your next untap step.
+oracle={T}: Add {C}.\n{T}: Add {W} or {U}. Cloudcrest Lake doesn't untap during your next untap step.

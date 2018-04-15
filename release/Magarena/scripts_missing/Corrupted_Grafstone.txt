@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 cost={2}
 ability=SN enters the battlefield tapped.;\
-        {T}: Choose a color of a card in your graveyard. Add one mana of that color to your mana pool.
+        {T}: Choose a color of a card in your graveyard. Add one mana of that color.
 timing=artifact
-oracle=Corrupted Grafstone enters the battlefield tapped.\n{T}: Choose a color of a card in your graveyard. Add one mana of that color to your mana pool.
+oracle=Corrupted Grafstone enters the battlefield tapped.\n{T}: Choose a color of a card in your graveyard. Add one mana of that color.
 status=needs groovy

@@ -8,4 +8,4 @@ cost={2}
 ability=SN enters the battlefield tapped.
 timing=artifact
 requires_groovy_code=Sol Grail
-oracle=Coldsteel Heart enters the battlefield tapped.\nAs Coldsteel Heart enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color to your mana pool.
+oracle=Coldsteel Heart enters the battlefield tapped.\nAs Coldsteel Heart enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color.

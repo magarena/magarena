@@ -8,6 +8,6 @@ subtype=Elf,Druid
 cost={1}{G}
 pt=2/2
 ability=When SN enters the battlefield, you get {E}{E}.;\
-        {T}, Pay {E}: Add one mana of any color to your mana pool.
+        {T}, Pay {E}: Add one mana of any color.
 timing=main
-oracle=When Servant of the Conduit enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Add one mana of any color to your mana pool.
+oracle=When Servant of the Conduit enters the battlefield, you get {E}{E}.\n{T}, Pay {E}: Add one mana of any color.

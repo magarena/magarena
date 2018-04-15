@@ -4,7 +4,7 @@ value=4.326
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice two untapped lands instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
-        {T}: Add three mana of any one color to your mana pool.
+        {T}: Add three mana of any one color.
 timing=land
-oracle=If Lotus Vale would enter the battlefield, sacrifice two untapped lands instead. If you do, put Lotus Vale onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add three mana of any one color to your mana pool.
+oracle=If Lotus Vale would enter the battlefield, sacrifice two untapped lands instead. If you do, put Lotus Vale onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add three mana of any one color.
 status=not supported: add-multiple-mana

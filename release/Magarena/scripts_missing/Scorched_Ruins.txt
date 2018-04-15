@@ -4,7 +4,7 @@ value=4.333
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice two untapped lands instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
-        {T}: Add {C}{C}{C}{C} to your mana pool.
+        {T}: Add {C}{C}{C}{C}.
 timing=land
-oracle=If Scorched Ruins would enter the battlefield, sacrifice two untapped lands instead. If you do, put Scorched Ruins onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{C}{C}{C} to your mana pool.
+oracle=If Scorched Ruins would enter the battlefield, sacrifice two untapped lands instead. If you do, put Scorched Ruins onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{C}{C}{C}.
 status=not supported: add-multiple-mana

@@ -3,7 +3,7 @@ image=https://magiccards.info/scans/en/cs/148.jpg
 value=3.894
 rarity=U
 type=Snow,Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {4}{S}, {T}, Sacrifice SN: SN deals 4 damage to target creature.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{4}{S}, {T}, Sacrifice Mouth of Ronom: Mouth of Ronom deals 4 damage to target creature.
+oracle={T}: Add {C}.\n{4}{S}, {T}, Sacrifice Mouth of Ronom: Mouth of Ronom deals 4 damage to target creature.

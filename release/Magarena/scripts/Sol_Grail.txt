@@ -6,4 +6,4 @@ type=Artifact
 cost={3}
 timing=artifact
 requires_groovy_code
-oracle=As Sol Grail enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color to your mana pool.
+oracle=As Sol Grail enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color.

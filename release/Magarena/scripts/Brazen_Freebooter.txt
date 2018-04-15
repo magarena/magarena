@@ -8,4 +8,4 @@ cost={3}{R}
 pt=3/3
 ability=When SN enters the battlefield, create a colorless Treasure artifact token.
 timing=main
-oracle=When Brazen Freebooter enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+oracle=When Brazen Freebooter enters the battlefield, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."

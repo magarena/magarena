@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/wl/167.jpg
 value=4.260
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}, {T}: Until end of turn, you may cast creature spells as though they had flash.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Until end of turn, you may cast creature spells as though they had flash.
+oracle={T}: Add {C}.\n{2}, {T}: Until end of turn, you may cast creature spells as though they had flash.
 status=not supported: card-modification

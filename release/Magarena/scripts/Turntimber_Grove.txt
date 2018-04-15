@@ -6,6 +6,6 @@ type=Land
 mana=g3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature gets +1/+1 until end of turn.;\
-        {T}: Add {G} to your mana pool.
+        {T}: Add {G}.
 timing=fmain
-oracle=Turntimber Grove enters the battlefield tapped.\nWhen Turntimber Grove enters the battlefield, target creature gets +1/+1 until end of turn.\n{T}: Add {G} to your mana pool.
+oracle=Turntimber Grove enters the battlefield tapped.\nWhen Turntimber Grove enters the battlefield, target creature gets +1/+1 until end of turn.\n{T}: Add {G}.

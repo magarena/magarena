@@ -8,6 +8,6 @@ subtype=Eldrazi,Drone
 cost={4}
 pt=2/3
 ability=Vigilance;\
-        {T}: Add {C} to your mana pool.
+        {T}: Add {C}.
 timing=main
-oracle=Vigilance\n{T}: Add {C} to your mana pool.
+oracle=Vigilance\n{T}: Add {C}.

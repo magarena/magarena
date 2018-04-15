@@ -8,7 +8,7 @@ subtype=Wall
 cost={1}{G}
 pt=0/4
 ability=Defender;\
-        {T}: Add {G} to your mana pool for each creature with defender you control.
+        {T}: Add {G} for each creature with defender you control.
 timing=smain
-oracle=Defender\n{T}: Add {G} to your mana pool for each creature with defender you control.
+oracle=Defender\n{T}: Add {G} for each creature with defender you control.
 status=not supported: add-multiple-mana

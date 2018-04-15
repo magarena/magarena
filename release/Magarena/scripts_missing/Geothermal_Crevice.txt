@@ -4,8 +4,8 @@ value=3.423
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} to your mana pool.;\
-        {T}, Sacrifice SN: Add {B}{G} to your mana pool.
+        {T}: Add {R}.;\
+        {T}, Sacrifice SN: Add {B}{G}.
 timing=land
-oracle=Geothermal Crevice enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\n{T}, Sacrifice Geothermal Crevice: Add {B}{G} to your mana pool.
+oracle=Geothermal Crevice enters the battlefield tapped.\n{T}: Add {R}.\n{T}, Sacrifice Geothermal Crevice: Add {B}{G}.
 status=not supported: add-multiple-mana

@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=w2u2b2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W}, {U}, or {B} to your mana pool.
+        {T}: Add {W}, {U}, or {B}.
 timing=tapland
-oracle=Arcane Sanctum enters the battlefield tapped.\n{T}: Add {W}, {U}, or {B} to your mana pool.
+oracle=Arcane Sanctum enters the battlefield tapped.\n{T}: Add {W}, {U}, or {B}.

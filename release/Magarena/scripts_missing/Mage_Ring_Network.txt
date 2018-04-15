@@ -4,9 +4,9 @@ image_updated=2015-11-05
 value=2.500
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {1}, {T}: Put a storage counter on SN.;\
-        {T}, Remove any number of storage counters from SN: Add {C} to your mana pool for each storage counter removed this way.
+        {T}, Remove any number of storage counters from SN: Add {C} for each storage counter removed this way.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Put a storage counter on Mage-Ring Network.\n{T}, Remove any number of storage counters from Mage-Ring Network: Add {C} to your mana pool for each storage counter removed this way.
+oracle={T}: Add {C}.\n{1}, {T}: Put a storage counter on Mage-Ring Network.\n{T}, Remove any number of storage counters from Mage-Ring Network: Add {C} for each storage counter removed this way.
 status=not supported: add-multiple-mana

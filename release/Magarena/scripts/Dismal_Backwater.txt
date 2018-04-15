@@ -7,6 +7,6 @@ type=Land
 mana=u3b3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
-        {T}: Add {U} or {B} to your mana pool.
+        {T}: Add {U} or {B}.
 timing=tapland
-oracle=Dismal Backwater enters the battlefield tapped.\nWhen Dismal Backwater enters the battlefield, you gain 1 life.\n{T}: Add {U} or {B} to your mana pool.
+oracle=Dismal Backwater enters the battlefield tapped.\nWhen Dismal Backwater enters the battlefield, you gain 1 life.\n{T}: Add {U} or {B}.

@@ -9,4 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=When SN dies, create a 1/1 colorless Eldrazi Scion creature token.
 timing=main
-oracle=When Carrier Thrall dies, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C} to your mana pool."
+oracle=When Carrier Thrall dies, create a 1/1 colorless Eldrazi Scion creature token. It has "Sacrifice this creature: Add {C}."

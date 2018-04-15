@@ -9,4 +9,4 @@ ability=Equipped creature gets +1/+0.;\
         Whenever equipped creature deals combat damage to a player, create a colorless Treasure artifact token.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature gets +1/+0.\nWhenever equipped creature deals combat damage to a player, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."\nEquip {2}
+oracle=Equipped creature gets +1/+0.\nWhenever equipped creature deals combat damage to a player, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."\nEquip {2}

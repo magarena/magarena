@@ -5,7 +5,7 @@ rarity=C
 type=Land
 mana=g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} to your mana pool.;\
+        {T}: Add {G}.;\
         Cycling {G}
 timing=tapland
-oracle=Tranquil Thicket enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\nCycling {G}
+oracle=Tranquil Thicket enters the battlefield tapped.\n{T}: Add {G}.\nCycling {G}

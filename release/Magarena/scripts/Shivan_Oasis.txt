@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=r3g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} or {G} to your mana pool.
+        {T}: Add {R} or {G}.
 timing=tapland
-oracle=Shivan Oasis enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.
+oracle=Shivan Oasis enters the battlefield tapped.\n{T}: Add {R} or {G}.

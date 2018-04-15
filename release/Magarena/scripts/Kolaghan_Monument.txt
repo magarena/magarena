@@ -5,8 +5,8 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {B} or {R} to your mana pool.;\
+ability={T}: Add {B} or {R}.;\
         {4}{B}{R}: SN becomes a 4/4 black and red Dragon artifact creature with flying until end of turn.
 mana_or_combat
 timing=artifact
-oracle={T}: Add {B} or {R} to your mana pool.\n{4}{B}{R}: Kolaghan Monument becomes a 4/4 black and red Dragon artifact creature with flying until end of turn.
+oracle={T}: Add {B} or {R}.\n{4}{B}{R}: Kolaghan Monument becomes a 4/4 black and red Dragon artifact creature with flying until end of turn.

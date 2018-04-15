@@ -4,7 +4,7 @@ value=2.317
 rarity=R
 type=Land
 mana=w1u1b1r1g1
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Add one mana of any color to your mana pool. SN deals 3 damage to you.
+ability={T}: Add {C}.;\
+        {T}: Add one mana of any color. SN deals 3 damage to you.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Tarnished Citadel deals 3 damage to you.
+oracle={T}: Add {C}.\n{T}: Add one mana of any color. Tarnished Citadel deals 3 damage to you.

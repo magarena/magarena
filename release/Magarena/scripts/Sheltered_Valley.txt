@@ -4,7 +4,7 @@ value=2.511
 rarity=R
 type=Land
 ability=At the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.;\
-        {T}: Add {C} to your mana pool.
+        {T}: Add {C}.
 timing=land
 requires_groovy_code
-oracle=If Sheltered Valley would enter the battlefield, instead sacrifice each other permanent named Sheltered Valley you control, then put Sheltered Valley onto the battlefield.\nAt the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.\n{T}: Add {C} to your mana pool.
+oracle=If Sheltered Valley would enter the battlefield, instead sacrifice each other permanent named Sheltered Valley you control, then put Sheltered Valley onto the battlefield.\nAt the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.\n{T}: Add {C}.

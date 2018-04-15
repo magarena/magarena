@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 cost={3}
 ability=At the beginning of your upkeep or whenever you cast a green spell, put a charge counter on SN.;\
-        {T}, Sacrifice SN: Add {C} to your mana pool for each charge counter on SN.
+        {T}, Sacrifice SN: Add {C} for each charge counter on SN.
 timing=artifact
-oracle=At the beginning of your upkeep or whenever you cast a green spell, put a charge counter on Shrine of Boundless Growth.\n{T}, Sacrifice Shrine of Boundless Growth: Add {C} to your mana pool for each charge counter on Shrine of Boundless Growth.
+oracle=At the beginning of your upkeep or whenever you cast a green spell, put a charge counter on Shrine of Boundless Growth.\n{T}, Sacrifice Shrine of Boundless Growth: Add {C} for each charge counter on Shrine of Boundless Growth.
 status=not supported: add-multiple-mana

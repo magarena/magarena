@@ -6,4 +6,4 @@ type=Sorcery
 cost={3}{B}{B}
 effect=Destroy target creature.~Create two colorless Treasure artifact tokens.
 timing=main
-oracle=Destroy target creature. Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color to your mana pool."
+oracle=Destroy target creature. Create two colorless Treasure artifact tokens with "{T}, Sacrifice this artifact: Add one mana of any color."

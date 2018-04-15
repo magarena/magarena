@@ -5,7 +5,7 @@ value=2.641
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {W} or {B} to your mana pool.;\
+ability={T}: Add {W} or {B}.;\
         {W}{B}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {W} or {B} to your mana pool.\n{W}{B}, {T}, Sacrifice Orzhov Cluestone: Draw a card.
+oracle={T}: Add {W} or {B}.\n{W}{B}, {T}, Sacrifice Orzhov Cluestone: Draw a card.

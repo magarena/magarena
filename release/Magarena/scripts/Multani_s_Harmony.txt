@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant creature;\
-        Enchanted creature has "{T}: Add one mana of any color to your mana pool."
+        Enchanted creature has "{T}: Add one mana of any color."
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature\nEnchanted creature has "{T}: Add one mana of any color to your mana pool."
+oracle=Enchant creature\nEnchanted creature has "{T}: Add one mana of any color."

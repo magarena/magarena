@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/shm/281.jpg
 value=4.357
 rarity=R
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W} to your mana pool.
+ability={T}: Add {C}.;\
+        {G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W}.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W} to your mana pool.
+oracle={T}: Add {C}.\n{G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W}.
 status=not supported: add-multiple-mana

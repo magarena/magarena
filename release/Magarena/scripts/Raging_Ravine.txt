@@ -6,7 +6,7 @@ type=Land
 mana=r3g3
 timing=tapland
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {R} or {G} to your mana pool.;\
+        {T}: Add {R} or {G}.;\
         {2}{R}{G}: Until end of turn, SN becomes a 3/3 red and green Elemental creature with "Whenever this creature attacks, put a +1/+1 counter on this creature." It's still a land.
 mana_or_combat
-oracle=Raging Ravine enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.\n{2}{R}{G}: Until end of turn, Raging Ravine becomes a 3/3 red and green Elemental creature with "Whenever this creature attacks, put a +1/+1 counter on it." It's still a land.
+oracle=Raging Ravine enters the battlefield tapped.\n{T}: Add {R} or {G}.\n{2}{R}{G}: Until end of turn, Raging Ravine becomes a 3/3 red and green Elemental creature with "Whenever this creature attacks, put a +1/+1 counter on it." It's still a land.

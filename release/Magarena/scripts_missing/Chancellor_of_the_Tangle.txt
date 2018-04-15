@@ -6,8 +6,8 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}{G}
 pt=6/7
-ability=You may reveal this card from your opening hand. If you do, at the beginning of your first main phase, add {G} to your mana pool.;\
+ability=You may reveal this card from your opening hand. If you do, at the beginning of your first main phase, add {G}.;\
         Vigilance, reach
 timing=main
-oracle=You may reveal this card from your opening hand. If you do, at the beginning of your first main phase, add {G} to your mana pool.\nVigilance, reach
+oracle=You may reveal this card from your opening hand. If you do, at the beginning of your first main phase, add {G}.\nVigilance, reach
 status=not supported: opening-hand

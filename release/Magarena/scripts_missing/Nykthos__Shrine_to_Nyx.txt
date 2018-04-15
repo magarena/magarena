@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/ths/223.jpg
 value=3.717
 rarity=R
 type=Legendary,Land
-ability={T}: Add {C} to your mana pool.;\
-        {2}, {T}: Choose a color. Add to your mana pool an amount of mana of that color equal to your devotion to that color.
+ability={T}: Add {C}.;\
+        {2}, {T}: Choose a color. Add an amount of mana of that color equal to your devotion to that color.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Choose a color. Add to your mana pool an amount of mana of that color equal to your devotion to that color.
+oracle={T}: Add {C}.\n{2}, {T}: Choose a color. Add an amount of mana of that color equal to your devotion to that color.
 status=not supported: add-multiple-mana

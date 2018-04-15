@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Elf,Warrior
 cost={R}{G}
 pt=2/2
-ability=Whenever SN attacks, you may add {R}{R} to your mana pool.;\
-        {T}: Add {G} to your mana pool.
+ability=Whenever SN attacks, you may add {R}{R}.;\
+        {T}: Add {G}.
 timing=main
-oracle=Whenever Radha, Heir to Keld attacks, you may add {R}{R} to your mana pool.\n{T}: Add {G} to your mana pool.
+oracle=Whenever Radha, Heir to Keld attacks, you may add {R}{R}.\n{T}: Add {G}.
 status=not supported: add-multiple-mana

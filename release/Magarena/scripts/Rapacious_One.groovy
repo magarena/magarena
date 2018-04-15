@@ -7,7 +7,7 @@
                 damage.getDealtAmount(),
                 this,
                 "PN creates RN 0/1 colorless Eldrazi Spawn creature tokens. " +
-                "They have \"Sacrifice this creature: Add {C} to your mana pool.\""
+                "They have \"Sacrifice this creature: Add {C}.\""
             );
         }
         @Override

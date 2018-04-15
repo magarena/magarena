@@ -7,6 +7,6 @@ subtype=Dragon
 cost={7}
 pt=4/4
 ability=Flying;\
-        {T}: Add one mana of any color to your mana pool.
+        {T}: Add one mana of any color.
 timing=main
-oracle=Flying\n{T}: Add one mana of any color to your mana pool.
+oracle=Flying\n{T}: Add one mana of any color.

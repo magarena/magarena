@@ -4,7 +4,7 @@ value=3.648
 rarity=U
 type=Land
 mana=r2
-ability={T}: Add {R} to your mana pool. SN deals 1 damage to you.;\
+ability={T}: Add {R}. SN deals 1 damage to you.;\
         {R}, {T}, Sacrifice SN: SN deals 2 damage to target creature or player. Activate this ability only if seven or more cards are in your graveyard.
 timing=land
-oracle={T}: Add {R} to your mana pool. Barbarian Ring deals 1 damage to you.\nThreshold — {R}, {T}, Sacrifice Barbarian Ring: Barbarian Ring deals 2 damage to target creature or player. Activate this ability only if seven or more cards are in your graveyard.
+oracle={T}: Add {R}. Barbarian Ring deals 1 damage to you.\nThreshold — {R}, {T}, Sacrifice Barbarian Ring: Barbarian Ring deals 2 damage to target creature or player. Activate this ability only if seven or more cards are in your graveyard.

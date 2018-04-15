@@ -7,7 +7,7 @@ subtype=Elf,Druid
 cost={1}{G}
 pt=1/2
 ability=Evolve;\
-        {T}: Add {G} to your mana pool for each +1/+1 counter on SN.
+        {T}: Add {G} for each +1/+1 counter on SN.
 timing=main
-oracle=Evolve\n{T}: Add {G} to your mana pool for each +1/+1 counter on Gyre Sage.
+oracle=Evolve\n{T}: Add {G} for each +1/+1 counter on Gyre Sage.
 status=not supported: add-multiple-mana

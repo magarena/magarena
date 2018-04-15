@@ -3,9 +3,9 @@ image=https://magiccards.info/scans/en/hl/137.jpg
 value=1.377
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {1}, {T}: Add {W} to your mana pool.;\
-        {2}, {T}: Add {G} or {U} to your mana pool.
+ability={T}: Add {C}.;\
+        {1}, {T}: Add {W}.;\
+        {2}, {T}: Add {G} or {U}.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Add {W} to your mana pool.\n{2}, {T}: Add {G} or {U} to your mana pool.
+oracle={T}: Add {C}.\n{1}, {T}: Add {W}.\n{2}, {T}: Add {G} or {U}.
 status=not supported: mana-ability-with-choice

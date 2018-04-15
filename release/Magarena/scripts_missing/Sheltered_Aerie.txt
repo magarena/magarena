@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Enchant land;\
-        Enchanted land has "{T}: Add two mana of any one color to your mana pool."
+        Enchanted land has "{T}: Add two mana of any one color."
 timing=aura
 enchant=default,land
-oracle=Enchant land\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."
+oracle=Enchant land\nEnchanted land has "{T}: Add two mana of any one color."
 status=not supported: add-multiple-mana

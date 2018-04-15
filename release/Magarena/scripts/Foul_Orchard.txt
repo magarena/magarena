@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=b3g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} or {G} to your mana pool.
+        {T}: Add {B} or {G}.
 timing=land
-oracle=Foul Orchard enters the battlefield tapped.\n{T}: Add {B} or {G} to your mana pool.
+oracle=Foul Orchard enters the battlefield tapped.\n{T}: Add {B} or {G}.

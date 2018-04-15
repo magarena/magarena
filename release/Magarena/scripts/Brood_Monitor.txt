@@ -10,4 +10,4 @@ pt=3/3
 ability=Devoid;\
         When SN enters the battlefield, create three 1/1 colorless Eldrazi Scion creature tokens.
 timing=main
-oracle=Devoid\nWhen Brood Monitor enters the battlefield, create three 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C} to your mana pool."
+oracle=Devoid\nWhen Brood Monitor enters the battlefield, create three 1/1 colorless Eldrazi Scion creature tokens. They have "Sacrifice this creature: Add {C}."

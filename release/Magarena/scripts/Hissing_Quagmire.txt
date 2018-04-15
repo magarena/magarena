@@ -6,8 +6,8 @@ rarity=R
 type=Land
 mana=b3g3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} or {G} to your mana pool.;\
+        {T}: Add {B} or {G}.;\
         {1}{B}{G}: SN becomes a 2/2 black and green Elemental creature with deathtouch until end of turn. It's still a land.
 timing=land
 mana_or_combat
-oracle=Hissing Quagmire enters the battlefield tapped.\n{T}: Add {B} or {G} to your mana pool.\n{1}{B}{G}: Hissing Quagmire becomes a 2/2 black and green Elemental creature with deathtouch until end of turn. It's still a land.
+oracle=Hissing Quagmire enters the battlefield tapped.\n{T}: Add {B} or {G}.\n{1}{B}{G}: Hissing Quagmire becomes a 2/2 black and green Elemental creature with deathtouch until end of turn. It's still a land.

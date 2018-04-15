@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/rix/176b.jpg
 value=2.500
 rarity=M
 type=Legendary,Land
-ability={T}: Add X mana of any one color to your mana pool, where X is your life total.
+ability={T}: Add X mana of any one color, where X is your life total.
 transform=Azor's Gateway
 hidden
 timing=land
-oracle={T}: Add X mana of any one color to your mana pool, where X is your life total.
+oracle={T}: Add X mana of any one color, where X is your life total.

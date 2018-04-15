@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=0/2
-ability={T}: Add {G} to your mana pool.;\
+ability={T}: Add {G}.;\
         Put a -1/-1 counter on SN: Untap SN.
 timing=main
-oracle={T}: Add {G} to your mana pool.\nPut a -1/-1 counter on Devoted Druid: Untap Devoted Druid.
+oracle={T}: Add {G}.\nPut a -1/-1 counter on Devoted Druid: Untap Devoted Druid.

@@ -6,7 +6,7 @@ rarity=C
 type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} to your mana pool.;\
+        {T}: Add {B}.;\
         Cycling {2}
 timing=tapland
-oracle=Polluted Mire enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nCycling {2}
+oracle=Polluted Mire enters the battlefield tapped.\n{T}: Add {B}.\nCycling {2}

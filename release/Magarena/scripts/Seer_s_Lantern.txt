@@ -5,7 +5,7 @@ value=2.500
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {2}, {T}: Scry 1.
 timing=artifact
-oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Scry 1.
+oracle={T}: Add {C}.\n{2}, {T}: Scry 1.

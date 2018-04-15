@@ -5,6 +5,6 @@ rarity=R
 type=Land
 mana=b2g2r2u2w2
 ability=Whenever SN becomes tapped, SN deals 1 damage to you.;\
-        {T}: Add one mana of any color to your mana pool.
+        {T}: Add one mana of any color.
 timing=land
-oracle=Whenever City of Brass becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color to your mana pool.
+oracle=Whenever City of Brass becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.

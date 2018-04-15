@@ -3,8 +3,8 @@ image=https://magiccards.info/scans/en/di/177.jpg
 value=2.978
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
+ability={T}: Add {C}.;\
         {4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
 timing=land
-oracle={T}: Add {C} to your mana pool.\n{4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
+oracle={T}: Add {C}.\n{4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
 status=not supported: source-deal-damage

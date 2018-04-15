@@ -5,6 +5,6 @@ rarity=R
 type=Land
 mana=u3r3
 ability=SN enters the battlefield tapped unless you control an Island or a Mountain.;\
-        {T}: Add {U} or {R} to your mana pool.
+        {T}: Add {U} or {R}.
 timing=land
-oracle=Sulfur Falls enters the battlefield tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R} to your mana pool.
+oracle=Sulfur Falls enters the battlefield tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R}.

@@ -6,6 +6,6 @@ type=Land
 mana=r3w3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
-        {T}: Add {R} or {W} to your mana pool.
+        {T}: Add {R} or {W}.
 timing=tapland
-oracle=Temple of Triumph enters the battlefield tapped.\nWhen Temple of Triumph enters the battlefield, scry 1.\n{T}: Add {R} or {W} to your mana pool.
+oracle=Temple of Triumph enters the battlefield tapped.\nWhen Temple of Triumph enters the battlefield, scry 1.\n{T}: Add {R} or {W}.

@@ -7,8 +7,8 @@ type=Creature
 subtype=Human,Druid
 cost={R}{G}
 pt=1/1
-ability={T}: Add {G} to your mana pool.;\
+ability={T}: Add {G}.;\
         Whenever you tap SN for mana, it deals 1 damage to each opponent.
 timing=main
-oracle={T}: Add {G} to your mana pool.\nWhenever you tap Zhur-Taa Druid for mana, it deals 1 damage to each opponent.
+oracle={T}: Add {G}.\nWhenever you tap Zhur-Taa Druid for mana, it deals 1 damage to each opponent.
 status=not supported: when-tap-for-mana

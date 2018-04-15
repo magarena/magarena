@@ -4,8 +4,8 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {U} or {B} to your mana pool.;\
+ability={T}: Add {U} or {B}.;\
         {4}{U}{B}: SN becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.
 mana_or_combat
 timing=artifact
-oracle={T}: Add {U} or {B} to your mana pool.\n{4}{U}{B}: Silumgar Monument becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.
+oracle={T}: Add {U} or {B}.\n{4}{U}{B}: Silumgar Monument becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.

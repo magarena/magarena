@@ -6,7 +6,7 @@ rarity=C
 type=Land
 mana=w3
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {W} to your mana pool.;\
+        {T}: Add {W}.;\
         Cycling {2}
 timing=tapland
-oracle=Drifting Meadow enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nCycling {2}
+oracle=Drifting Meadow enters the battlefield tapped.\n{T}: Add {W}.\nCycling {2}

@@ -6,7 +6,7 @@ rarity=R
 type=Land
 mana=b2g2r2u2w2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {C} to your mana pool.;\
-        {T}: Add one mana of any color to your mana pool. SN deals 1 damage to you.
+        {T}: Add {C}.;\
+        {T}: Add one mana of any color. SN deals 1 damage to you.
 timing=tapland
-oracle=Grand Coliseum enters the battlefield tapped.\n{T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Grand Coliseum deals 1 damage to you.
+oracle=Grand Coliseum enters the battlefield tapped.\n{T}: Add {C}.\n{T}: Add one mana of any color. Grand Coliseum deals 1 damage to you.
