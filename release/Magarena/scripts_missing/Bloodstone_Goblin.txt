@@ -1,0 +1,11 @@
+name=Bloodstone Goblin
+image=https://magiccards.info/scans/en/dom/115.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=2/2
+ability=Whenever you cast a spell, if that spell was kicked, SN gets +1/+1 and gains menace until end of turn.
+timing=main
+oracle=Whenever you cast a spell, if that spell was kicked, Bloodstone Goblin gets +1/+1 and gains menace until end of turn.

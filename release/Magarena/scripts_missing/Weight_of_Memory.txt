@@ -1,0 +1,9 @@
+name=Weight of Memory
+image=https://magiccards.info/scans/en/dom/74.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{U}{U}
+effect=Draw three cards. Target player puts the top three cards of their library into their graveyard.
+timing=main
+oracle=Draw three cards. Target player puts the top three cards of their library into their graveyard.

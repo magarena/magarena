@@ -1,0 +1,13 @@
+name=Demonic Vigor
+image=https://magiccards.info/scans/en/dom/85.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1.;\
+        When enchanted creature dies, return that card to its owner's hand.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\nWhen enchanted creature dies, return that card to its owner's hand.

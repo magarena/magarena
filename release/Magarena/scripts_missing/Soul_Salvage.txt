@@ -1,0 +1,9 @@
+name=Soul Salvage
+image=https://magiccards.info/scans/en/dom/104.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Return up to two target creature cards from your graveyard to your hand.
+timing=main
+oracle=Return up to two target creature cards from your graveyard to your hand.

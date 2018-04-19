@@ -1,0 +1,9 @@
+name=Cabal Stronghold
+image=https://magiccards.info/scans/en/dom/238.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C}.;\
+        {3}, {T}: Add {B} for each basic Swamp you control.
+timing=land
+oracle={T}: Add {C}.\n{3}, {T}: Add {B} for each basic Swamp you control.

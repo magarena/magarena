@@ -1,0 +1,11 @@
+name=Sorcerer's Wand
+image=https://magiccards.info/scans/en/dom/231.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature has "{T}: This creature deals 1 damage to target player or planeswalker. If this creature is a Wizard, it deals 2 damage to that player or planeswalker instead.";\
+        Equip {3}
+timing=equipment
+oracle=Equipped creature has "{T}: This creature deals 1 damage to target player or planeswalker. If this creature is a Wizard, it deals 2 damage to that player or planeswalker instead."\nEquip {3}

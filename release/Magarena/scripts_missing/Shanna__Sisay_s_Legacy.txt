@@ -1,0 +1,12 @@
+name=Shanna, Sisay's Legacy
+image=https://magiccards.info/scans/en/dom/204.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={G}{W}
+pt=0/0
+ability=SN can't be the target of abilities your opponents control.;\
+        Shanna gets +1/+1 for each creature you control.
+timing=main
+oracle=Shanna, Sisay's Legacy can't be the target of abilities your opponents control.\nShanna gets +1/+1 for each creature you control.

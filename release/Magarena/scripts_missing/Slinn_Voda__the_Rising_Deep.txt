@@ -1,0 +1,12 @@
+name=Slinn Voda, the Rising Deep
+image=https://magiccards.info/scans/en/dom/66.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Leviathan
+cost={6}{U}{U}
+pt=8/8
+ability=Kicker {1}{U};\
+        When SN enters the battlefield, if it was kicked, return all creatures to their owners' hands except for Merfolk, Krakens, Leviathans, Octopuses, and Serpents.
+timing=main
+oracle=Kicker {1}{U}\nWhen Slinn Voda, the Rising Deep enters the battlefield, if it was kicked, return all creatures to their owners' hands except for Merfolk, Krakens, Leviathans, Octopuses, and Serpents.

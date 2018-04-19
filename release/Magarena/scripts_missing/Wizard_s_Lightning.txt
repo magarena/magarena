@@ -1,0 +1,9 @@
+name=Wizard's Lightning
+image=https://magiccards.info/scans/en/dom/152.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=This spell costs {2} less to cast if you control a Wizard.~SN deals 3 damage to any target.
+timing=removal
+oracle=This spell costs {2} less to cast if you control a Wizard.\nWizard's Lightning deals 3 damage to any target.

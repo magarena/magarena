@@ -1,0 +1,11 @@
+name=Sporecrown Thallid
+image=https://magiccards.info/scans/en/dom/181.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Fungus
+cost={1}{G}
+pt=2/2
+ability=Each other creature you control that's a Fungus or Saproling gets +1/+1.
+timing=main
+oracle=Each other creature you control that's a Fungus or Saproling gets +1/+1.

@@ -1,0 +1,11 @@
+name=Muldrotha, the Gravetide
+image=https://magiccards.info/scans/en/dom/199.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elemental,Avatar
+cost={3}{B}{G}{U}
+pt=6/6
+ability=During each of your turns, you may play up to one permanent card of each permanent type from your graveyard.
+timing=main
+oracle=During each of your turns, you may play up to one permanent card of each permanent type from your graveyard.

@@ -1,0 +1,13 @@
+name=In Bolas's Clutches
+image=https://magiccards.info/scans/en/dom/54.jpg
+value=2.500
+rarity=U
+type=Legendary,Enchantment
+subtype=Aura
+cost={4}{U}{U}
+ability=Enchant permanent;\
+        You control enchanted permanent.;\
+        Enchanted permanent is legendary.
+timing=aura
+enchant=default,creature
+oracle=Enchant permanent\nYou control enchanted permanent.\nEnchanted permanent is legendary.

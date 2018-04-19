@@ -1,0 +1,12 @@
+name=Hallar, the Firefletcher
+image=https://magiccards.info/scans/en/dom/196.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Elf,Archer
+cost={1}{R}{G}
+pt=3/3
+ability=Trample;\
+        Whenever you cast a spell, if that spell was kicked, put a +1/+1 counter on SN, then Hallar deals damage equal to the number of +1/+1 counters on it to each opponent.
+timing=main
+oracle=Trample\nWhenever you cast a spell, if that spell was kicked, put a +1/+1 counter on Hallar, the Firefletcher, then Hallar deals damage equal to the number of +1/+1 counters on it to each opponent.

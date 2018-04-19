@@ -1,0 +1,12 @@
+name=Grand Warlord Radha
+image=https://magiccards.info/scans/en/dom/195.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Warrior
+cost={2}{R}{G}
+pt=3/4
+ability=Haste;\
+        Whenever one or more creatures you control attack, add that much mana in any combination of {R} and/or {G}. Until end of turn, you don't lose this mana as steps and phases end.
+timing=fmain
+oracle=Haste\nWhenever one or more creatures you control attack, add that much mana in any combination of {R} and/or {G}. Until end of turn, you don't lose this mana as steps and phases end.

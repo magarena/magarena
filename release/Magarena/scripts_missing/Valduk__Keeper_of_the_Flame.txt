@@ -1,0 +1,11 @@
+name=Valduk, Keeper of the Flame
+image=https://magiccards.info/scans/en/dom/148.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=3/2
+ability=At the beginning of combat on your turn, for each Aura and Equipment attached to SN, create a 3/1 red Elemental creature token with trample and haste. Exile those tokens at the beginning of the next end step.
+timing=main
+oracle=At the beginning of combat on your turn, for each Aura and Equipment attached to Valduk, Keeper of the Flame, create a 3/1 red Elemental creature token with trample and haste. Exile those tokens at the beginning of the next end step.

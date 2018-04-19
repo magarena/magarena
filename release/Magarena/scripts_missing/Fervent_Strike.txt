@@ -1,0 +1,9 @@
+name=Fervent Strike
+image=https://magiccards.info/scans/en/dom/117.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={R}
+effect=Target creature gets +1/+0 and gains first strike and haste until end of turn.
+timing=removal
+oracle=Target creature gets +1/+0 and gains first strike and haste until end of turn.

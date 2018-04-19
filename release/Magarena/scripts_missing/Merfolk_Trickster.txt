@@ -1,0 +1,12 @@
+name=Merfolk Trickster
+image=https://magiccards.info/scans/en/dom/56.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}{U}
+pt=2/2
+ability=Flash;\
+        When SN enters the battlefield, tap target creature an opponent controls. It loses all abilities until end of turn.
+timing=flash
+oracle=Flash\nWhen Merfolk Trickster enters the battlefield, tap target creature an opponent controls. It loses all abilities until end of turn.

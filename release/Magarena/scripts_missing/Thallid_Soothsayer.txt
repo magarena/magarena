@@ -1,0 +1,11 @@
+name=Thallid Soothsayer
+image=https://magiccards.info/scans/en/dom/107.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Fungus
+cost={3}{B}
+pt=2/3
+ability={2}, Sacrifice a creature: Draw a card.
+timing=main
+oracle={2}, Sacrifice a creature: Draw a card.

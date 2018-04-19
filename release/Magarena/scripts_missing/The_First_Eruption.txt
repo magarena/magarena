@@ -1,0 +1,12 @@
+name=The First Eruption
+image=https://magiccards.info/scans/en/dom/122.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Saga
+cost={2}{R}
+ability=SN deals 1 damage to each creature without flying.;\
+        Add {R}{R}.;\
+        Sacrifice a Mountain. If you do, SN deals 3 damage to each creature.
+timing=enchantment
+oracle=I — The First Eruption deals 1 damage to each creature without flying.\nII — Add {R}{R}.\nIII — Sacrifice a Mountain. If you do, The First Eruption deals 3 damage to each creature.

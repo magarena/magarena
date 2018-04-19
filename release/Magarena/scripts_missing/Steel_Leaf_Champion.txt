@@ -1,0 +1,11 @@
+name=Steel Leaf Champion
+image=https://magiccards.info/scans/en/dom/182.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Knight
+cost={G}{G}{G}
+pt=5/4
+ability=SN can't be blocked by creatures with power 2 or less.
+timing=main
+oracle=Steel Leaf Champion can't be blocked by creatures with power 2 or less.

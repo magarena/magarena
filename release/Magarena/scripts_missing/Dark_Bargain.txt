@@ -1,0 +1,9 @@
+name=Dark Bargain
+image=https://magiccards.info/scans/en/dom/83.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{B}
+effect=Look at the top three cards of your library. Put two of them into your hand and the other into your graveyard. SN deals 2 damage to you.
+timing=removal
+oracle=Look at the top three cards of your library. Put two of them into your hand and the other into your graveyard. Dark Bargain deals 2 damage to you.

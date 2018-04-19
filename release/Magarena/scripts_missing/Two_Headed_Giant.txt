@@ -1,0 +1,11 @@
+name=Two-Headed Giant
+image=https://magiccards.info/scans/en/dom/147.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={2}{R}{R}
+pt=4/4
+ability=Whenever SN attacks, flip two coins. If both coins come up heads, SN gains double strike until end of turn. If both coins come up tails, SN gains menace until end of turn.
+timing=main
+oracle=Whenever Two-Headed Giant attacks, flip two coins. If both coins come up heads, Two-Headed Giant gains double strike until end of turn. If both coins come up tails, Two-Headed Giant gains menace until end of turn.

@@ -1,0 +1,9 @@
+name=Radiating Lightning
+image=https://magiccards.info/scans/en/dom/138.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+effect=SN deals 3 damage to target player and 1 damage to each creature that player controls.
+timing=removal
+oracle=Radiating Lightning deals 3 damage to target player and 1 damage to each creature that player controls.

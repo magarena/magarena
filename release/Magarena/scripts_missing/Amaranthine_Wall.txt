@@ -1,0 +1,12 @@
+name=Amaranthine Wall
+image=https://magiccards.info/scans/en/dom/210.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={4}
+pt=0/6
+ability=Defender;\
+        {2}: SN gains indestructible until end of turn.
+timing=smain
+oracle=Defender\n{2}: Amaranthine Wall gains indestructible until end of turn.

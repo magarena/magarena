@@ -1,0 +1,11 @@
+name=Keldon Warcaller
+image=https://magiccards.info/scans/en/dom/136.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}
+pt=2/2
+ability=Whenever SN attacks, put a lore counter on target Saga you control.
+timing=main
+oracle=Whenever Keldon Warcaller attacks, put a lore counter on target Saga you control.

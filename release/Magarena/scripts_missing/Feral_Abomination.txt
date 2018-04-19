@@ -1,0 +1,11 @@
+name=Feral Abomination
+image=https://magiccards.info/scans/en/dom/92.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Thrull
+cost={5}{B}
+pt=5/5
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

@@ -1,0 +1,10 @@
+name=Saproling Migration
+image=https://magiccards.info/scans/en/dom/178.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{G}
+ability=Kicker {4}
+effect=Create two 1/1 green Saproling creature tokens. If this spell was kicked, create four of those tokens instead.
+timing=main
+oracle=Kicker {4}\nCreate two 1/1 green Saproling creature tokens. If this spell was kicked, create four of those tokens instead.

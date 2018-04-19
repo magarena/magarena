@@ -1,0 +1,12 @@
+name=Champion of the Flame
+image=https://magiccards.info/scans/en/dom/116.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}
+pt=1/1
+ability=Trample;\
+        SN gets +2/+2 for each Aura and Equipment attached to it.
+timing=main
+oracle=Trample\nChampion of the Flame gets +2/+2 for each Aura and Equipment attached to it.

@@ -1,0 +1,12 @@
+name=Arvad the Cursed
+image=https://magiccards.info/scans/en/dom/191.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Vampire,Knight
+cost={3}{W}{B}
+pt=3/3
+ability=Deathtouch, lifelink;\
+        Other legendary creatures you control get +2/+2.
+timing=main
+oracle=Deathtouch, lifelink\nOther legendary creatures you control get +2/+2.

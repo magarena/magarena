@@ -1,0 +1,11 @@
+name=Voltaic Servant
+image=https://magiccards.info/scans/en/dom/236.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=1/3
+ability=At the beginning of your end step, untap target artifact.
+timing=main
+oracle=At the beginning of your end step, untap target artifact.

@@ -1,0 +1,11 @@
+name=Aven Sentry
+image=https://magiccards.info/scans/en/dom/3.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+cost={3}{W}
+pt=3/2
+ability=Flying
+timing=main
+oracle=Flying

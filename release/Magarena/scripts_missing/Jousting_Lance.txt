@@ -1,0 +1,12 @@
+name=Jousting Lance
+image=https://magiccards.info/scans/en/dom/221.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+0.;\
+        As long as it's your turn, equipped creature has first strike.;\
+        Equip {3}
+timing=equipment
+oracle=Equipped creature gets +2/+0.\nAs long as it's your turn, equipped creature has first strike.\nEquip {3}

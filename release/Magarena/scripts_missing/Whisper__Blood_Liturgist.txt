@@ -1,0 +1,11 @@
+name=Whisper, Blood Liturgist
+image=https://magiccards.info/scans/en/dom/111.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={3}{B}
+pt=2/2
+ability={T}, Sacrifice two creatures: Return target creature card from your graveyard to the battlefield.
+timing=main
+oracle={T}, Sacrifice two creatures: Return target creature card from your graveyard to the battlefield.

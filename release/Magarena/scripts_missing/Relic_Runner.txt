@@ -1,0 +1,11 @@
+name=Relic Runner
+image=https://magiccards.info/scans/en/dom/62.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={1}{U}
+pt=2/1
+ability=SN can't be blocked if you've cast a historic spell this turn.
+timing=main
+oracle=Relic Runner can't be blocked if you've cast a historic spell this turn.

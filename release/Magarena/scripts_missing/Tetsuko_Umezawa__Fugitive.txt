@@ -1,0 +1,11 @@
+name=Tetsuko Umezawa, Fugitive
+image=https://magiccards.info/scans/en/dom/69.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Rogue
+cost={1}{U}
+pt=1/3
+ability=Creatures you control with power or toughness 1 or less can't be blocked.
+timing=main
+oracle=Creatures you control with power or toughness 1 or less can't be blocked.

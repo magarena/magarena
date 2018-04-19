@@ -1,0 +1,12 @@
+name=Academy Journeymage
+image=https://magiccards.info/scans/en/dom/41.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={4}{U}
+pt=3/2
+ability=This spell costs {1} less to cast if you control a Wizard.;\
+        When SN enters the battlefield, return target creature an opponent controls to its owner's hand.
+timing=main
+oracle=This spell costs {1} less to cast if you control a Wizard.\nWhen Academy Journeymage enters the battlefield, return target creature an opponent controls to its owner's hand.

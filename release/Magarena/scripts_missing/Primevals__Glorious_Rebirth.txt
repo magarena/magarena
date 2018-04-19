@@ -1,0 +1,9 @@
+name=Primevals' Glorious Rebirth
+image=https://magiccards.info/scans/en/dom/201.jpg
+value=2.500
+rarity=R
+type=Legendary,Sorcery
+cost={5}{W}{B}
+effect=Return all legendary permanent cards from your graveyard to the battlefield.
+timing=main
+oracle=Return all legendary permanent cards from your graveyard to the battlefield.

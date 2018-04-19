@@ -1,0 +1,12 @@
+name=Tempest Djinn
+image=https://magiccards.info/scans/en/dom/68.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Djinn
+cost={U}{U}{U}
+pt=0/4
+ability=Flying;\
+        SN gets +1/+0 for each basic Island you control.
+timing=main
+oracle=Flying\nTempest Djinn gets +1/+0 for each basic Island you control.

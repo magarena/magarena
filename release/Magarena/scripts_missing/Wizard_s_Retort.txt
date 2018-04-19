@@ -1,0 +1,9 @@
+name=Wizard's Retort
+image=https://magiccards.info/scans/en/dom/75.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}{U}
+effect=This spell costs {1} less to cast if you control a Wizard.~Counter target spell.
+timing=counter
+oracle=This spell costs {1} less to cast if you control a Wizard.\nCounter target spell.

@@ -1,0 +1,12 @@
+name=On Serra's Wings
+image=https://magiccards.info/scans/en/dom/28.jpg
+value=2.500
+rarity=U
+type=Legendary,Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant creature;\
+        Enchanted creature is legendary, gets +1/+1, and has flying, vigilance, and lifelink.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature is legendary, gets +1/+1, and has flying, vigilance, and lifelink.

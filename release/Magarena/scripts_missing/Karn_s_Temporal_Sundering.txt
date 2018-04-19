@@ -1,0 +1,9 @@
+name=Karn's Temporal Sundering
+image=https://magiccards.info/scans/en/dom/55.jpg
+value=2.500
+rarity=R
+type=Legendary,Sorcery
+cost={4}{U}{U}
+effect=Target player takes an extra turn after this one. Return up to one target nonland permanent to its owner's hand. Exile SN.
+timing=main
+oracle=Target player takes an extra turn after this one. Return up to one target nonland permanent to its owner's hand. Exile Karn's Temporal Sundering.

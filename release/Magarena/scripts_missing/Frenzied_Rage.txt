@@ -1,0 +1,12 @@
+name=Frenzied Rage
+image=https://magiccards.info/scans/en/dom/124.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+1 and has menace.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +2/+1 and has menace.

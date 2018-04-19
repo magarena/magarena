@@ -1,0 +1,11 @@
+name=D'Avenant Trapper
+image=https://magiccards.info/scans/en/dom/11.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Archer
+cost={2}{W}
+pt=3/2
+ability=Whenever you cast a historic spell, tap target creature an opponent controls.
+timing=main
+oracle=Whenever you cast a historic spell, tap target creature an opponent controls.

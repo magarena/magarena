@@ -1,0 +1,13 @@
+name=Knight of Grace
+image=https://magiccards.info/scans/en/dom/23.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=2/2
+ability=First strike;\
+        Hexproof from black;\
+        SN gets +1/+0 as long as any player controls a black permanent.
+timing=main
+oracle=First strike\nHexproof from black\nKnight of Grace gets +1/+0 as long as any player controls a black permanent.

@@ -1,0 +1,10 @@
+name=Haphazard Bombardment
+image=https://magiccards.info/scans/en/dom/131.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={5}{R}
+ability=When SN enters the battlefield, choose four nonenchantment permanents you don't control and put an aim counter on each of them.;\
+        At the beginning of your end step, if two or more permanents you don't control have an aim counter on them, destroy one of those permanents at random.
+timing=enchantment
+oracle=When Haphazard Bombardment enters the battlefield, choose four nonenchantment permanents you don't control and put an aim counter on each of them.\nAt the beginning of your end step, if two or more permanents you don't control have an aim counter on them, destroy one of those permanents at random.

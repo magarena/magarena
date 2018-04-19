@@ -1,0 +1,9 @@
+name=Thran Temporal Gateway
+image=https://magiccards.info/scans/en/dom/233.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact
+cost={4}
+ability={4}, {T}: You may put a historic permanent card from your hand onto the battlefield.
+timing=artifact
+oracle={4}, {T}: You may put a historic permanent card from your hand onto the battlefield.

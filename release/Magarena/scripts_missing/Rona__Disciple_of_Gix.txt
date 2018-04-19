@@ -1,0 +1,13 @@
+name=Rona, Disciple of Gix
+image=https://magiccards.info/scans/en/dom/203.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={1}{U}{B}
+pt=2/2
+ability=When SN enters the battlefield, you may exile target historic card from your graveyard.;\
+        You may cast nonland cards exiled with Rona.;\
+        {4}, {T}: Exile the top card of your library.
+timing=main
+oracle=When Rona, Disciple of Gix enters the battlefield, you may exile target historic card from your graveyard.\nYou may cast nonland cards exiled with Rona.\n{4}, {T}: Exile the top card of your library.

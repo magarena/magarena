@@ -1,0 +1,9 @@
+name=Run Amok
+image=https://magiccards.info/scans/en/dom/140.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Target attacking creature gets +3/+3 and gains trample until end of turn.
+timing=removal
+oracle=Target attacking creature gets +3/+3 and gains trample until end of turn.

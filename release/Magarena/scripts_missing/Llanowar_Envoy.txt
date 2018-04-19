@@ -1,0 +1,11 @@
+name=Llanowar Envoy
+image=https://magiccards.info/scans/en/dom/169.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={2}{G}
+pt=3/2
+ability={1}{G}: Add one mana of any color.
+timing=main
+oracle={1}{G}: Add one mana of any color.

@@ -1,0 +1,9 @@
+name=Blessed Light
+image=https://magiccards.info/scans/en/dom/7.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{W}
+effect=Exile target creature or enchantment.
+timing=removal
+oracle=Exile target creature or enchantment.

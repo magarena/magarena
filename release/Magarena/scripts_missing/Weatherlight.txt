@@ -1,0 +1,13 @@
+name=Weatherlight
+image=https://magiccards.info/scans/en/dom/237.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+subtype=Vehicle
+cost={4}
+pt=4/5
+ability=Flying;\
+        Whenever SN deals combat damage to a player, look at the top five cards of your library. You may reveal a historic card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.;\
+        Crew 3
+timing=artifact
+oracle=Flying\nWhenever Weatherlight deals combat damage to a player, look at the top five cards of your library. You may reveal a historic card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.\nCrew 3

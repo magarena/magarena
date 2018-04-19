@@ -1,0 +1,13 @@
+name=Raff Capashen, Ship's Mage
+image=https://magiccards.info/scans/en/dom/202.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{W}{U}
+pt=3/3
+ability=Flash;\
+        Flying;\
+        You may cast historic spells as though they had flash.
+timing=flash
+oracle=Flash\nFlying\nYou may cast historic spells as though they had flash.

@@ -1,0 +1,11 @@
+name=Shield of the Realm
+image=https://magiccards.info/scans/en/dom/228.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=If a source would deal damage to equipped creature, prevent 2 of that damage.;\
+        Equip {1}
+timing=equipment
+oracle=If a source would deal damage to equipped creature, prevent 2 of that damage.\nEquip {1}

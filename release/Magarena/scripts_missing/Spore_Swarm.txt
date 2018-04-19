@@ -1,0 +1,9 @@
+name=Spore Swarm
+image=https://magiccards.info/scans/en/dom/180.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{G}
+effect=Create three 1/1 green Saproling creature tokens.
+timing=removal
+oracle=Create three 1/1 green Saproling creature tokens.

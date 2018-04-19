@@ -1,0 +1,12 @@
+name=Pegasus Courser
+image=https://magiccards.info/scans/en/dom/29.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Pegasus
+cost={2}{W}
+pt=1/3
+ability=Flying;\
+        Whenever SN attacks, another target attacking creature gains flying until end of turn.
+timing=main
+oracle=Flying\nWhenever Pegasus Courser attacks, another target attacking creature gains flying until end of turn.

@@ -1,0 +1,11 @@
+name=Benalish Honor Guard
+image=https://magiccards.info/scans/en/dom/5.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=2/2
+ability=SN gets +1/+0 for each legendary creature you control.
+timing=main
+oracle=Benalish Honor Guard gets +1/+0 for each legendary creature you control.

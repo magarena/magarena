@@ -1,0 +1,9 @@
+name=Urza's Ruinous Blast
+image=https://magiccards.info/scans/en/dom/39.jpg
+value=2.500
+rarity=R
+type=Legendary,Sorcery
+cost={4}{W}
+effect=Exile all nonland permanents that aren't legendary.
+timing=main
+oracle=Exile all nonland permanents that aren't legendary.

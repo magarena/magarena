@@ -1,0 +1,11 @@
+name=Diligent Excavator
+image=https://magiccards.info/scans/en/dom/51.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={1}{U}
+pt=1/3
+ability=Whenever you cast a historic spell, target player puts the top two cards of their library into their graveyard.
+timing=main
+oracle=Whenever you cast a historic spell, target player puts the top two cards of their library into their graveyard.

@@ -1,0 +1,11 @@
+name=Rampaging Cyclops
+image=https://magiccards.info/scans/en/dom/139.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cyclops
+cost={3}{R}
+pt=4/4
+ability=SN gets -2/-0 as long as two or more creatures are blocking it.
+timing=main
+oracle=Rampaging Cyclops gets -2/-0 as long as two or more creatures are blocking it.

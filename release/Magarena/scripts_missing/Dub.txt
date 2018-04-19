@@ -1,0 +1,12 @@
+name=Dub
+image=https://magiccards.info/scans/en/dom/15.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2, has first strike, and is a Knight in addition to its other types.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +2/+2, has first strike, and is a Knight in addition to its other types.

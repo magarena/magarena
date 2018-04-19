@@ -1,0 +1,9 @@
+name=Befuddle
+image=https://magiccards.info/scans/en/dom/45.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Target creature gets -4/-0 until end of turn.~Draw a card.
+timing=removal
+oracle=Target creature gets -4/-0 until end of turn.\nDraw a card.

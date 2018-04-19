@@ -1,0 +1,9 @@
+name=Mox Amber
+image=https://magiccards.info/scans/en/dom/224.jpg
+value=2.500
+rarity=M
+type=Legendary,Artifact
+cost={0}
+ability={T}: Add one mana of any color among legendary creatures and planeswalkers you control.
+timing=artifact
+oracle={T}: Add one mana of any color among legendary creatures and planeswalkers you control.

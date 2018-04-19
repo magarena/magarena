@@ -1,0 +1,13 @@
+name=Garna, the Bloodflame
+image=https://magiccards.info/scans/en/dom/194.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={3}{B}{R}
+pt=3/3
+ability=Flash;\
+        When SN enters the battlefield, return to your hand all creature cards in your graveyard that were put there from anywhere this turn.;\
+        Other creatures you control have haste.
+timing=flash
+oracle=Flash\nWhen Garna, the Bloodflame enters the battlefield, return to your hand all creature cards in your graveyard that were put there from anywhere this turn.\nOther creatures you control have haste.

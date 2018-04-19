@@ -1,0 +1,12 @@
+name=Kwende, Pride of Femeref
+image=https://magiccards.info/scans/en/dom/25.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Knight
+cost={3}{W}
+pt=2/2
+ability=Double strike;\
+        Creatures you control with first strike have double strike.
+timing=main
+oracle=Double strike\nCreatures you control with first strike have double strike.

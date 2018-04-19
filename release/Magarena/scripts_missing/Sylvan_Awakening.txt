@@ -1,0 +1,9 @@
+name=Sylvan Awakening
+image=https://magiccards.info/scans/en/dom/183.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{G}
+effect=Until your next turn, all lands you control become 2/2 Elemental creatures with reach, indestructible, and haste. They're still lands.
+timing=main
+oracle=Until your next turn, all lands you control become 2/2 Elemental creatures with reach, indestructible, and haste. They're still lands.

@@ -1,0 +1,9 @@
+name=Board the Weatherlight
+image=https://magiccards.info/scans/en/dom/8.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{W}
+effect=Look at the top five cards of your library. You may reveal a historic card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+timing=main
+oracle=Look at the top five cards of your library. You may reveal a historic card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.

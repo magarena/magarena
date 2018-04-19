@@ -1,0 +1,9 @@
+name=Kamahl's Druidic Vow
+image=https://magiccards.info/scans/en/dom/166.jpg
+value=2.500
+rarity=R
+type=Legendary,Sorcery
+cost={X}{G}{G}
+effect=Look at the top X cards of your library. You may put any number of land and/or legendary permanent cards with converted mana cost X or less from among them onto the battlefield. Put the rest into your graveyard.
+timing=main
+oracle=Look at the top X cards of your library. You may put any number of land and/or legendary permanent cards with converted mana cost X or less from among them onto the battlefield. Put the rest into your graveyard.

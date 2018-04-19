@@ -1,0 +1,11 @@
+name=Dread Shade
+image=https://magiccards.info/scans/en/dom/88.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Shade
+cost={B}{B}{B}
+pt=3/3
+ability={B}: SN gets +1/+1 until end of turn.
+timing=main
+oracle={B}: Dread Shade gets +1/+1 until end of turn.

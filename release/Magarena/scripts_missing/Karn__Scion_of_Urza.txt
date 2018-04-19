@@ -1,0 +1,13 @@
+name=Karn, Scion of Urza
+image=https://magiccards.info/scans/en/dom/1.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Karn
+cost={4}
+loyalty=5
+ability=+1: Reveal the top two cards of your library. An opponent chooses one of them. Put that card into your hand and exile the other with a silver counter on it.;\
+        −1: Put a card you own with a silver counter on it from exile into your hand.;\
+        −2: Create a 0/0 colorless Construct artifact creature token with "This creature gets +1/+1 for each artifact you control."
+timing=main
+oracle=+1: Reveal the top two cards of your library. An opponent chooses one of them. Put that card into your hand and exile the other with a silver counter on it.\n−1: Put a card you own with a silver counter on it from exile into your hand.\n−2: Create a 0/0 colorless Construct artifact creature token with "This creature gets +1/+1 for each artifact you control."

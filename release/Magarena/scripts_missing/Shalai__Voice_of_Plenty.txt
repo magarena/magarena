@@ -1,0 +1,13 @@
+name=Shalai, Voice of Plenty
+image=https://magiccards.info/scans/en/dom/35.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Angel
+cost={3}{W}
+pt=3/4
+ability=Flying;\
+        You, planeswalkers you control, and other creatures you control have hexproof.;\
+        {4}{G}{G}: Put a +1/+1 counter on each creature you control.
+timing=main
+oracle=Flying\nYou, planeswalkers you control, and other creatures you control have hexproof.\n{4}{G}{G}: Put a +1/+1 counter on each creature you control.

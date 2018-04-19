@@ -1,0 +1,11 @@
+name=Corrosive Ooze
+image=https://magiccards.info/scans/en/dom/158.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ooze
+cost={1}{G}
+pt=2/2
+ability=Whenever SN blocks or becomes blocked by an equipped creature, destroy all Equipment attached to that creature at end of combat.
+timing=main
+oracle=Whenever Corrosive Ooze blocks or becomes blocked by an equipped creature, destroy all Equipment attached to that creature at end of combat.

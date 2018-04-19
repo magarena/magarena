@@ -1,0 +1,12 @@
+name=The Eldest Reborn
+image=https://magiccards.info/scans/en/dom/90.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Saga
+cost={4}{B}
+ability=Each opponent sacrifices a creature or planeswalker.;\
+        Each opponent discards a card.;\
+        Put target creature or planeswalker card from a graveyard onto the battlefield under your control.
+timing=enchantment
+oracle=I — Each opponent sacrifices a creature or planeswalker.\nII — Each opponent discards a card.\nIII — Put target creature or planeswalker card from a graveyard onto the battlefield under your control.

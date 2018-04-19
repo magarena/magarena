@@ -1,0 +1,10 @@
+name=Navigator's Compass
+image=https://magiccards.info/scans/en/dom/225.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability=When SN enters the battlefield, you gain 3 life.;\
+        {T}: Until end of turn, target land you control becomes the basic land type of your choice in addition to its other types.
+timing=artifact
+oracle=When Navigator's Compass enters the battlefield, you gain 3 life.\n{T}: Until end of turn, target land you control becomes the basic land type of your choice in addition to its other types.

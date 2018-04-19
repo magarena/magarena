@@ -1,0 +1,12 @@
+name=Adeliz, the Cinder Wind
+image=https://magiccards.info/scans/en/dom/190.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{U}{R}
+pt=2/2
+ability=Flying, haste;\
+        Whenever you cast an instant or sorcery spell, Wizards you control get +1/+1 until end of turn.
+timing=main
+oracle=Flying, haste\nWhenever you cast an instant or sorcery spell, Wizards you control get +1/+1 until end of turn.

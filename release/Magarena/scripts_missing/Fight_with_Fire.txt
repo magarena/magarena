@@ -1,0 +1,10 @@
+name=Fight with Fire
+image=https://magiccards.info/scans/en/dom/119.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{R}
+ability=Kicker {5}{R}
+effect=SN deals 5 damage to target creature. If this spell was kicked, it deals 10 damage divided as you choose among any number of targets instead.
+timing=main
+oracle=Kicker {5}{R}\nFight with Fire deals 5 damage to target creature. If this spell was kicked, it deals 10 damage divided as you choose among any number of targets instead.

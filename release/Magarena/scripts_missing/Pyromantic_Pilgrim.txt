@@ -1,0 +1,11 @@
+name=Pyromantic Pilgrim
+image=https://magiccards.info/scans/en/dom/278.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{R}
+pt=3/1
+ability=Haste
+timing=fmain
+oracle=Haste

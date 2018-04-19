@@ -1,0 +1,9 @@
+name=Call the Cavalry
+image=https://magiccards.info/scans/en/dom/9.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{W}
+effect=Create two 2/2 white Knight creature tokens with vigilance.
+timing=main
+oracle=Create two 2/2 white Knight creature tokens with vigilance.

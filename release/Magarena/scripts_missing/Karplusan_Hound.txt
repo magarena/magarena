@@ -1,0 +1,11 @@
+name=Karplusan Hound
+image=https://magiccards.info/scans/en/dom/277.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Hound
+cost={3}{R}
+pt=3/3
+ability=Whenever SN attacks, if you control a Chandra planeswalker, this creature deals 2 damage to any target.
+timing=main
+oracle=Whenever Karplusan Hound attacks, if you control a Chandra planeswalker, this creature deals 2 damage to any target.

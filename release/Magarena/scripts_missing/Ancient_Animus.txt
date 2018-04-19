@@ -1,0 +1,9 @@
+name=Ancient Animus
+image=https://magiccards.info/scans/en/dom/154.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Put a +1/+1 counter on target creature you control if it's legendary. Then it fights target creature an opponent controls.
+timing=removal
+oracle=Put a +1/+1 counter on target creature you control if it's legendary. Then it fights target creature an opponent controls.

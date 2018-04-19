@@ -1,0 +1,12 @@
+name=Marwyn, the Nurturer
+image=https://magiccards.info/scans/en/dom/172.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Druid
+cost={2}{G}
+pt=1/1
+ability=Whenever another Elf enters the battlefield under your control, put a +1/+1 counter on SN.;\
+        {T}: Add an amount of {G} equal to Marwyn's power.
+timing=main
+oracle=Whenever another Elf enters the battlefield under your control, put a +1/+1 counter on Marwyn, the Nurturer.\n{T}: Add an amount of {G} equal to Marwyn's power.

@@ -1,0 +1,12 @@
+name=Rat Colony
+image=https://magiccards.info/scans/en/dom/101.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rat
+cost={1}{B}
+pt=2/1
+ability=SN gets +1/+0 for each other Rat you control.;\
+        A deck can have any number of cards named Rat Colony.
+timing=main
+oracle=Rat Colony gets +1/+0 for each other Rat you control.\nA deck can have any number of cards named Rat Colony.

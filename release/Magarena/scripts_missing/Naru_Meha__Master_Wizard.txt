@@ -1,0 +1,13 @@
+name=Naru Meha, Master Wizard
+image=https://magiccards.info/scans/en/dom/59.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{U}{U}
+pt=3/3
+ability=Flash;\
+        When SN enters the battlefield, copy target instant or sorcery spell you control. You may choose new targets for the copy.;\
+        Other Wizards you control get +1/+1.
+timing=flash
+oracle=Flash\nWhen Naru Meha, Master Wizard enters the battlefield, copy target instant or sorcery spell you control. You may choose new targets for the copy.\nOther Wizards you control get +1/+1.

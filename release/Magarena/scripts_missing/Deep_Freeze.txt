@@ -1,0 +1,12 @@
+name=Deep Freeze
+image=https://magiccards.info/scans/en/dom/50.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant creature;\
+        Enchanted creature has base power and toughness 0/4, has defender, loses all other abilities, and is a blue Wall in addition to its other colors and types.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature has base power and toughness 0/4, has defender, loses all other abilities, and is a blue Wall in addition to its other colors and types.

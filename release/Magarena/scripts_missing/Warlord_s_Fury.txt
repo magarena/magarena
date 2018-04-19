@@ -1,0 +1,9 @@
+name=Warlord's Fury
+image=https://magiccards.info/scans/en/dom/151.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={R}
+effect=Creatures you control gain first strike until end of turn.~Draw a card.
+timing=main
+oracle=Creatures you control gain first strike until end of turn.\nDraw a card.

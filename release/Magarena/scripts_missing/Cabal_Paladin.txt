@@ -1,0 +1,11 @@
+name=Cabal Paladin
+image=https://magiccards.info/scans/en/dom/79.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{B}
+pt=4/2
+ability=Whenever you cast a historic spell, SN deals 2 damage to each opponent.
+timing=main
+oracle=Whenever you cast a historic spell, Cabal Paladin deals 2 damage to each opponent.

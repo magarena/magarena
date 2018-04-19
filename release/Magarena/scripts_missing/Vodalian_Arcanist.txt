@@ -1,0 +1,11 @@
+name=Vodalian Arcanist
+image=https://magiccards.info/scans/en/dom/73.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=1/3
+ability={T}: Add {C}. Spend this mana only to cast an instant or sorcery spell.
+timing=main
+oracle={T}: Add {C}. Spend this mana only to cast an instant or sorcery spell.

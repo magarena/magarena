@@ -1,0 +1,12 @@
+name=Zahid, Djinn of the Lamp
+image=https://magiccards.info/scans/en/dom/76.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Djinn
+cost={4}{U}{U}
+pt=5/6
+ability=You may pay {3}{U} and tap an untapped artifact you control rather than pay this spell's mana cost.;\
+        Flying
+timing=main
+oracle=You may pay {3}{U} and tap an untapped artifact you control rather than pay this spell's mana cost.\nFlying

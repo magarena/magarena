@@ -1,0 +1,11 @@
+name=Helm of the Host
+image=https://magiccards.info/scans/en/dom/217.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+cost={4}
+ability=At the beginning of combat on your turn, create a token that's a copy of equipped creature, except the token isn't legendary if equipped creature is legendary. That token gains haste.;\
+        Equip {5}
+timing=equipment
+oracle=At the beginning of combat on your turn, create a token that's a copy of equipped creature, except the token isn't legendary if equipped creature is legendary. That token gains haste.\nEquip {5}

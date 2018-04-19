@@ -1,0 +1,13 @@
+name=Lich's Mastery
+image=https://magiccards.info/scans/en/dom/98.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={3}{B}{B}{B}
+ability=Hexproof;\
+        You can't lose the game.;\
+        Whenever you gain life, draw that many cards.;\
+        Whenever you lose life, for each 1 life you lost, exile a permanent you control or a card from your hand or graveyard.;\
+        When SN leaves the battlefield, you lose the game.
+timing=enchantment
+oracle=Hexproof\nYou can't lose the game.\nWhenever you gain life, draw that many cards.\nWhenever you lose life, for each 1 life you lost, exile a permanent you control or a card from your hand or graveyard.\nWhen Lich's Mastery leaves the battlefield, you lose the game.

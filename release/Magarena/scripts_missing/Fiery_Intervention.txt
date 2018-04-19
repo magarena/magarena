@@ -1,0 +1,9 @@
+name=Fiery Intervention
+image=https://magiccards.info/scans/en/dom/118.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Choose one — (1) SN deals 5 damage to target creature. (2) Destroy target artifact.
+timing=main
+oracle=Choose one —\n• Fiery Intervention deals 5 damage to target creature.\n• Destroy target artifact.

@@ -1,0 +1,11 @@
+name=Niambi, Faithful Healer
+image=https://magiccards.info/scans/en/dom/272.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={1}{W}{U}
+pt=2/2
+ability=When SN enters the battlefield, you may search your library and/or graveyard for a card named Teferi, Timebender, reveal it, and put it into your hand. If you search your library this way, shuffle it.
+timing=main
+oracle=When Niambi, Faithful Healer enters the battlefield, you may search your library and/or graveyard for a card named Teferi, Timebender, reveal it, and put it into your hand. If you search your library this way, shuffle it.

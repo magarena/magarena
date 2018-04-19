@@ -1,0 +1,9 @@
+name=Eviscerate
+image=https://magiccards.info/scans/en/dom/91.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Destroy target creature.
+timing=main
+oracle=Destroy target creature.

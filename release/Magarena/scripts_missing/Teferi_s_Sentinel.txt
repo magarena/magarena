@@ -1,0 +1,11 @@
+name=Teferi's Sentinel
+image=https://magiccards.info/scans/en/dom/273.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=2/6
+ability=As long as you control a Teferi planeswalker, SN gets +4/+0.
+timing=main
+oracle=As long as you control a Teferi planeswalker, Teferi's Sentinel gets +4/+0.

@@ -1,0 +1,13 @@
+name=Untamed Kavu
+image=https://magiccards.info/scans/en/dom/186.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Kavu
+cost={1}{G}
+pt=2/2
+ability=Kicker {3};\
+        Vigilance, trample;\
+        If SN was kicked, it enters the battlefield with three +1/+1 counters on it.
+timing=main
+oracle=Kicker {3}\nVigilance, trample\nIf Untamed Kavu was kicked, it enters the battlefield with three +1/+1 counters on it.

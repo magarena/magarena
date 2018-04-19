@@ -1,0 +1,9 @@
+name=Pierce the Sky
+image=https://magiccards.info/scans/en/dom/176.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=SN deals 7 damage to target creature with flying.
+timing=removal
+oracle=Pierce the Sky deals 7 damage to target creature with flying.

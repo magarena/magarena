@@ -1,0 +1,11 @@
+name=Sparring Construct
+image=https://magiccards.info/scans/en/dom/232.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={1}
+pt=1/1
+ability=When SN dies, put a +1/+1 counter on target creature you control.
+timing=main
+oracle=When Sparring Construct dies, put a +1/+1 counter on target creature you control.

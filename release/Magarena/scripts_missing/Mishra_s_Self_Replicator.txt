@@ -1,0 +1,11 @@
+name=Mishra's Self-Replicator
+image=https://magiccards.info/scans/en/dom/223.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Assembly_Worker
+cost={5}
+pt=2/2
+ability=Whenever you cast a historic spell, you may pay {1}. If you do, create a token that's a copy of SN.
+timing=main
+oracle=Whenever you cast a historic spell, you may pay {1}. If you do, create a token that's a copy of Mishra's Self-Replicator.

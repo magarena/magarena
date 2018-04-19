@@ -1,0 +1,11 @@
+name=Firefist Adept
+image=https://magiccards.info/scans/en/dom/121.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={4}{R}
+pt=3/3
+ability=When SN enters the battlefield, it deals X damage to target creature an opponent controls, where X is the number of Wizards you control.
+timing=main
+oracle=When Firefist Adept enters the battlefield, it deals X damage to target creature an opponent controls, where X is the number of Wizards you control.

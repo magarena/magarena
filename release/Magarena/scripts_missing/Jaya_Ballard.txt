@@ -1,0 +1,13 @@
+name=Jaya Ballard
+image=https://magiccards.info/scans/en/dom/132.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Jaya
+cost={2}{R}{R}{R}
+loyalty=5
+ability=+1: Add {R}{R}{R}. Spend this mana only to cast instant or sorcery spells.;\
+        +1: Discard up to three cards, then draw that many cards.;\
+        −8: You get an emblem with "You may cast instant and sorcery cards from your graveyard. If a card cast this way would be put into your graveyard, exile it instead."
+timing=main
+oracle=+1: Add {R}{R}{R}. Spend this mana only to cast instant or sorcery spells.\n+1: Discard up to three cards, then draw that many cards.\n−8: You get an emblem with "You may cast instant and sorcery cards from your graveyard. If a card cast this way would be put into your graveyard, exile it instead."

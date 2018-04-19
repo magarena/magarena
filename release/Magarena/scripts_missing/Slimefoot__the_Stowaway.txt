@@ -1,0 +1,12 @@
+name=Slimefoot, the Stowaway
+image=https://magiccards.info/scans/en/dom/205.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Fungus
+cost={1}{B}{G}
+pt=2/3
+ability=Whenever a Saproling you control dies, SN deals 1 damage to each opponent and you gain 1 life.;\
+        {4}: Create a 1/1 green Saproling creature token.
+timing=main
+oracle=Whenever a Saproling you control dies, Slimefoot, the Stowaway deals 1 damage to each opponent and you gain 1 life.\n{4}: Create a 1/1 green Saproling creature token.

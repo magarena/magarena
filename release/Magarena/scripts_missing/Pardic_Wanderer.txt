@@ -1,0 +1,11 @@
+name=Pardic Wanderer
+image=https://magiccards.info/scans/en/dom/226.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=5/5
+ability=Trample
+timing=main
+oracle=Trample

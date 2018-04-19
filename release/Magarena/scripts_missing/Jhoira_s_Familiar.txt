@@ -1,0 +1,12 @@
+name=Jhoira's Familiar
+image=https://magiccards.info/scans/en/dom/220.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Bird
+cost={4}
+pt=2/2
+ability=Flying;\
+        Historic spells you cast cost {1} less to cast.
+timing=main
+oracle=Flying\nHistoric spells you cast cost {1} less to cast.

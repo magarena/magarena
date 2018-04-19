@@ -1,0 +1,11 @@
+name=Lingering Phantom
+image=https://magiccards.info/scans/en/dom/99.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={5}{B}
+pt=5/4
+ability=Whenever you cast a historic spell, you may pay {B}. If you do, return SN from your graveyard to your hand.
+timing=main
+oracle=Whenever you cast a historic spell, you may pay {B}. If you do, return Lingering Phantom from your graveyard to your hand.

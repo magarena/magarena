@@ -1,0 +1,12 @@
+name=Baird, Steward of Argive
+image=https://magiccards.info/scans/en/dom/4.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=2/4
+ability=Vigilance;\
+        Creatures can't attack you or a planeswalker you control unless their controller pays {1} for each of those creatures.
+timing=main
+oracle=Vigilance\nCreatures can't attack you or a planeswalker you control unless their controller pays {1} for each of those creatures.

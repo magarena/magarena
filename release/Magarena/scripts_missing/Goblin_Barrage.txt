@@ -1,0 +1,10 @@
+name=Goblin Barrage
+image=https://magiccards.info/scans/en/dom/128.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{R}
+ability=Kicker—Sacrifice an artifact or Goblin.
+effect=SN deals 4 damage to target creature. If this spell was kicked, it also deals 4 damage to target player or planeswalker.
+timing=main
+oracle=Kicker—Sacrifice an artifact or Goblin.\nGoblin Barrage deals 4 damage to target creature. If this spell was kicked, it also deals 4 damage to target player or planeswalker.

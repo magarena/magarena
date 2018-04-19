@@ -1,0 +1,12 @@
+name=Dauntless Bodyguard
+image=https://magiccards.info/scans/en/dom/14.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={W}
+pt=2/1
+ability=As SN enters the battlefield, choose another creature you control.;\
+        Sacrifice SN: The chosen creature gains indestructible until end of turn.
+timing=main
+oracle=As Dauntless Bodyguard enters the battlefield, choose another creature you control.\nSacrifice Dauntless Bodyguard: The chosen creature gains indestructible until end of turn.

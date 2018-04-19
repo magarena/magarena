@@ -1,0 +1,12 @@
+name=Ghitu Chronicler
+image=https://magiccards.info/scans/en/dom/125.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{R}
+pt=1/3
+ability=Kicker {3}{R};\
+        When SN enters the battlefield, if it was kicked, return target instant or sorcery card from your graveyard to your hand.
+timing=main
+oracle=Kicker {3}{R}\nWhen Ghitu Chronicler enters the battlefield, if it was kicked, return target instant or sorcery card from your graveyard to your hand.

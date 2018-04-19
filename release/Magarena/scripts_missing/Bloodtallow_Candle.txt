@@ -1,0 +1,9 @@
+name=Bloodtallow Candle
+image=https://magiccards.info/scans/en/dom/212.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={1}
+ability={6}, {T}, Sacrifice SN: Target creature gets -5/-5 until end of turn.
+timing=artifact
+oracle={6}, {T}, Sacrifice Bloodtallow Candle: Target creature gets -5/-5 until end of turn.

@@ -1,0 +1,10 @@
+name=Memorial to Glory
+image=https://magiccards.info/scans/en/dom/244.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W}.;\
+        {3}{W}, {T}, Sacrifice SN: Create two 1/1 white Soldier creature tokens.
+timing=land
+oracle=Memorial to Glory enters the battlefield tapped.\n{T}: Add {W}.\n{3}{W}, {T}, Sacrifice Memorial to Glory: Create two 1/1 white Soldier creature tokens.

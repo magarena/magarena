@@ -1,0 +1,11 @@
+name=Rite of Belzenlok
+image=https://magiccards.info/scans/en/dom/102.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Saga
+cost={2}{B}{B}
+ability=Create two 0/1 black Cleric creature tokens.;\
+        Create a 6/6 black Demon creature token with flying, trample, and "At the beginning of your upkeep, sacrifice another creature. If you can't, this creature deals 6 damage to you."
+timing=enchantment
+oracle=I, II — Create two 0/1 black Cleric creature tokens.\nIII — Create a 6/6 black Demon creature token with flying, trample, and "At the beginning of your upkeep, sacrifice another creature. If you can't, this creature deals 6 damage to you."

@@ -1,0 +1,12 @@
+name=Warcry Phoenix
+image=https://magiccards.info/scans/en/dom/150.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Phoenix
+cost={3}{R}
+pt=2/2
+ability=Flying, haste;\
+        Whenever you attack with three or more creatures, you may pay {2}{R}. If you do, return SN from your graveyard to the battlefield tapped and attacking.
+timing=main
+oracle=Flying, haste\nWhenever you attack with three or more creatures, you may pay {2}{R}. If you do, return Warcry Phoenix from your graveyard to the battlefield tapped and attacking.

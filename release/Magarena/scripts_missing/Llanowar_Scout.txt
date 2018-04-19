@@ -1,0 +1,11 @@
+name=Llanowar Scout
+image=https://magiccards.info/scans/en/dom/170.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={1}{G}
+pt=1/3
+ability={T}: You may put a land card from your hand onto the battlefield.
+timing=main
+oracle={T}: You may put a land card from your hand onto the battlefield.

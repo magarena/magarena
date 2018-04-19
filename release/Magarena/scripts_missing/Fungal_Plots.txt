@@ -1,0 +1,10 @@
+name=Fungal Plots
+image=https://magiccards.info/scans/en/dom/160.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability={1}{G}, Exile a creature card from your graveyard: Create a 1/1 green Saproling creature token.;\
+        Sacrifice two Saprolings: You gain 2 life and draw a card.
+timing=enchantment
+oracle={1}{G}, Exile a creature card from your graveyard: Create a 1/1 green Saproling creature token.\nSacrifice two Saprolings: You gain 2 life and draw a card.

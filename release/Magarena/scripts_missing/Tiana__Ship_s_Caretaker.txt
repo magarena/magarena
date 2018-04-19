@@ -1,0 +1,12 @@
+name=Tiana, Ship's Caretaker
+image=https://magiccards.info/scans/en/dom/208.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Angel,Artificer
+cost={3}{R}{W}
+pt=3/3
+ability=Flying, first strike;\
+        Whenever an Aura or Equipment you control is put into a graveyard from the battlefield, you may return that card to its owner's hand at the beginning of the next end step.
+timing=main
+oracle=Flying, first strike\nWhenever an Aura or Equipment you control is put into a graveyard from the battlefield, you may return that card to its owner's hand at the beginning of the next end step.

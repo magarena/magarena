@@ -1,0 +1,10 @@
+name=Memorial to Genius
+image=https://magiccards.info/scans/en/dom/243.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {U}.;\
+        {4}{U}, {T}, Sacrifice SN: Draw two cards.
+timing=land
+oracle=Memorial to Genius enters the battlefield tapped.\n{T}: Add {U}.\n{4}{U}, {T}, Sacrifice Memorial to Genius: Draw two cards.

@@ -1,0 +1,12 @@
+name=Danitha Capashen, Paragon
+image=https://magiccards.info/scans/en/dom/12.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Knight
+cost={2}{W}
+pt=2/2
+ability=First strike, vigilance, lifelink;\
+        Aura and Equipment spells you cast cost {1} less to cast.
+timing=main
+oracle=First strike, vigilance, lifelink\nAura and Equipment spells you cast cost {1} less to cast.

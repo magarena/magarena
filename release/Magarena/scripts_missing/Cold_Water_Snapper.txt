@@ -1,0 +1,11 @@
+name=Cold-Water Snapper
+image=https://magiccards.info/scans/en/dom/48.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Turtle
+cost={5}{U}
+pt=4/5
+ability=Hexproof
+timing=main
+oracle=Hexproof

@@ -1,0 +1,12 @@
+name=Artificer's Assistant
+image=https://magiccards.info/scans/en/dom/44.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={U}
+pt=1/1
+ability=Flying;\
+        Whenever you cast a historic spell, scry 1.
+timing=main
+oracle=Flying\nWhenever you cast a historic spell, scry 1.

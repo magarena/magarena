@@ -1,0 +1,9 @@
+name=Charge
+image=https://magiccards.info/scans/en/dom/10.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Creatures you control get +1/+1 until end of turn.
+timing=removal
+oracle=Creatures you control get +1/+1 until end of turn.

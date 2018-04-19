@@ -1,0 +1,9 @@
+name=Divest
+image=https://magiccards.info/scans/en/dom/87.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={B}
+effect=Target player reveals their hand. You choose an artifact or creature card from it. That player discards that card.
+timing=main
+oracle=Target player reveals their hand. You choose an artifact or creature card from it. That player discards that card.

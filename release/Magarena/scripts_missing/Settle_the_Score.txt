@@ -1,0 +1,9 @@
+name=Settle the Score
+image=https://magiccards.info/scans/en/dom/103.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+effect=Exile target creature. Put two loyalty counters on a planeswalker you control.
+timing=main
+oracle=Exile target creature. Put two loyalty counters on a planeswalker you control.

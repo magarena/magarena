@@ -1,0 +1,10 @@
+name=Yargle, Glutton of Urborg
+image=https://magiccards.info/scans/en/dom/113.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Frog,Spirit
+cost={4}{B}
+pt=9/3
+timing=main
+oracle=NONE

@@ -1,0 +1,9 @@
+name=Unwind
+image=https://magiccards.info/scans/en/dom/72.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target noncreature spell. Untap up to three lands.
+timing=counter
+oracle=Counter target noncreature spell. Untap up to three lands.

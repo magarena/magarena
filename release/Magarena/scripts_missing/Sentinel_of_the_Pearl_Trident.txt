@@ -1,0 +1,12 @@
+name=Sentinel of the Pearl Trident
+image=https://magiccards.info/scans/en/dom/65.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Soldier
+cost={4}{U}
+pt=3/3
+ability=Flash;\
+        When SN enters the battlefield, you may exile target historic permanent you control. If you do, return that card to the battlefield under its owner's control at the beginning of the next end step.
+timing=flash
+oracle=Flash\nWhen Sentinel of the Pearl Trident enters the battlefield, you may exile target historic permanent you control. If you do, return that card to the battlefield under its owner's control at the beginning of the next end step.

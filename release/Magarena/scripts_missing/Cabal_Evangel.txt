@@ -1,0 +1,10 @@
+name=Cabal Evangel
+image=https://magiccards.info/scans/en/dom/78.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{B}
+pt=2/2
+timing=main
+oracle=NONE

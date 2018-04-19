@@ -1,0 +1,13 @@
+name=Kazarov, Sengir Pureblood
+image=https://magiccards.info/scans/en/dom/96.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Vampire
+cost={5}{B}{B}
+pt=4/4
+ability=Flying;\
+        Whenever a creature an opponent controls is dealt damage, put a +1/+1 counter on SN.;\
+        {3}{R}: Kazarov deals 2 damage to target creature.
+timing=main
+oracle=Flying\nWhenever a creature an opponent controls is dealt damage, put a +1/+1 counter on Kazarov, Sengir Pureblood.\n{3}{R}: Kazarov deals 2 damage to target creature.

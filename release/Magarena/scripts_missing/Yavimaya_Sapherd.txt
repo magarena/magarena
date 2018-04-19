@@ -1,0 +1,11 @@
+name=Yavimaya Sapherd
+image=https://magiccards.info/scans/en/dom/189.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fungus
+cost={2}{G}
+pt=2/2
+ability=When SN enters the battlefield, create a 1/1 green Saproling creature token.
+timing=main
+oracle=When Yavimaya Sapherd enters the battlefield, create a 1/1 green Saproling creature token.

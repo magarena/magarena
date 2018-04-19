@@ -1,0 +1,11 @@
+name=Mesa Unicorn
+image=https://magiccards.info/scans/en/dom/27.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Unicorn
+cost={1}{W}
+pt=2/2
+ability=Lifelink
+timing=main
+oracle=Lifelink

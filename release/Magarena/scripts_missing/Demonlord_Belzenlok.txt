@@ -1,0 +1,12 @@
+name=Demonlord Belzenlok
+image=https://magiccards.info/scans/en/dom/86.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Demon
+cost={4}{B}{B}
+pt=6/6
+ability=Flying, trample;\
+        When SN enters the battlefield, exile cards from the top of your library until you exile a nonland card, then put that card into your hand. If the card's converted mana cost is 4 or greater, repeat this process. SN deals 1 damage to you for each card put into your hand this way.
+timing=main
+oracle=Flying, trample\nWhen Demonlord Belzenlok enters the battlefield, exile cards from the top of your library until you exile a nonland card, then put that card into your hand. If the card's converted mana cost is 4 or greater, repeat this process. Demonlord Belzenlok deals 1 damage to you for each card put into your hand this way.

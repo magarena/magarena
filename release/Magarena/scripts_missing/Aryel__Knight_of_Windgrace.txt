@@ -1,0 +1,13 @@
+name=Aryel, Knight of Windgrace
+image=https://magiccards.info/scans/en/dom/192.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+cost={2}{W}{B}
+pt=4/4
+ability=Vigilance;\
+        {2}{W}, {T}: Create a 2/2 white Knight creature token with vigilance.;\
+        {B}, {T}, Tap X untapped Knights you control: Destroy target creature with power X or less.
+timing=main
+oracle=Vigilance\n{2}{W}, {T}: Create a 2/2 white Knight creature token with vigilance.\n{B}, {T}, Tap X untapped Knights you control: Destroy target creature with power X or less.

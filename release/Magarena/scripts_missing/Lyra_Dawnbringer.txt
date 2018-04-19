@@ -1,0 +1,12 @@
+name=Lyra Dawnbringer
+image=https://magiccards.info/scans/en/dom/26.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=5/5
+ability=Flying, first strike, lifelink;\
+        Other Angels you control get +1/+1 and have lifelink.
+timing=main
+oracle=Flying, first strike, lifelink\nOther Angels you control get +1/+1 and have lifelink.

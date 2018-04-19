@@ -1,0 +1,10 @@
+name=Damping Sphere
+image=https://magiccards.info/scans/en/dom/213.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability=If a land is tapped for two or more mana, it produces {C} instead of any other type and amount.;\
+        Each spell a player casts costs {1} more to cast for each other spell that player has cast this turn.
+timing=artifact
+oracle=If a land is tapped for two or more mana, it produces {C} instead of any other type and amount.\nEach spell a player casts costs {1} more to cast for each other spell that player has cast this turn.

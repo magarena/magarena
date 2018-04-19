@@ -1,0 +1,9 @@
+name=Urza's Tome
+image=https://magiccards.info/scans/en/dom/235.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability={3}, {T}: Draw a card. Then discard a card unless you exile a historic card from your graveyard.
+timing=artifact
+oracle={3}, {T}: Draw a card. Then discard a card unless you exile a historic card from your graveyard.

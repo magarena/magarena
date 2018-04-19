@@ -1,0 +1,12 @@
+name=Goblin Chainwhirler
+image=https://magiccards.info/scans/en/dom/129.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Warrior
+cost={R}{R}{R}
+pt=3/3
+ability=First strike;\
+        When SN enters the battlefield, it deals 1 damage to each opponent and each creature and planeswalker they control.
+timing=main
+oracle=First strike\nWhen Goblin Chainwhirler enters the battlefield, it deals 1 damage to each opponent and each creature and planeswalker they control.

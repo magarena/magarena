@@ -1,0 +1,13 @@
+name=Academy Drake
+image=https://magiccards.info/scans/en/dom/40.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=2/2
+ability=Kicker {4};\
+        Flying;\
+        If SN was kicked, it enters the battlefield with two +1/+1 counters on it.
+timing=main
+oracle=Kicker {4}\nFlying\nIf Academy Drake was kicked, it enters the battlefield with two +1/+1 counters on it.

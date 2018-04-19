@@ -1,0 +1,11 @@
+name=Triumph of Gerrard
+image=https://magiccards.info/scans/en/dom/38.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Saga
+cost={1}{W}
+ability=Put a +1/+1 counter on target creature you control with the greatest power.;\
+        Target creature you control with the greatest power gains flying, first strike, and lifelink until end of turn.
+timing=enchantment
+oracle=I, II — Put a +1/+1 counter on target creature you control with the greatest power.\nIII — Target creature you control with the greatest power gains flying, first strike, and lifelink until end of turn.

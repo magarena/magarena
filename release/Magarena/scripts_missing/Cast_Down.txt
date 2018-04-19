@@ -1,0 +1,9 @@
+name=Cast Down
+image=https://magiccards.info/scans/en/dom/81.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{B}
+effect=Destroy target nonlegendary creature.
+timing=removal
+oracle=Destroy target nonlegendary creature.

@@ -1,0 +1,9 @@
+name=Adventurous Impulse
+image=https://magiccards.info/scans/en/dom/153.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={G}
+effect=Look at the top three cards of your library. You may reveal a creature or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=Look at the top three cards of your library. You may reveal a creature or land card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

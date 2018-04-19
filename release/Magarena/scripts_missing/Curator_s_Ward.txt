@@ -1,0 +1,13 @@
+name=Curator's Ward
+image=https://magiccards.info/scans/en/dom/49.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant permanent;\
+        Enchanted permanent has hexproof.;\
+        When enchanted permanent leaves the battlefield, if it was historic, draw two cards.
+timing=aura
+enchant=default,creature
+oracle=Enchant permanent\nEnchanted permanent has hexproof.\nWhen enchanted permanent leaves the battlefield, if it was historic, draw two cards.

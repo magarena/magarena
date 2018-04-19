@@ -1,0 +1,13 @@
+name=Teferi, Hero of Dominaria
+image=https://magiccards.info/scans/en/dom/207.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Teferi
+cost={3}{W}{U}
+loyalty=4
+ability=+1: Draw a card. At the beginning of the next end step, untap two lands.;\
+        −3: Put target nonland permanent into its owner's library third from the top.;\
+        −8: You get an emblem with "Whenever you draw a card, exile target permanent an opponent controls."
+timing=main
+oracle=+1: Draw a card. At the beginning of the next end step, untap two lands.\n−3: Put target nonland permanent into its owner's library third from the top.\n−8: You get an emblem with "Whenever you draw a card, exile target permanent an opponent controls."

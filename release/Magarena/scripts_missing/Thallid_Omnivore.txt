@@ -1,0 +1,11 @@
+name=Thallid Omnivore
+image=https://magiccards.info/scans/en/dom/106.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fungus
+cost={3}{B}
+pt=3/3
+ability={1}, Sacrifice another creature: SN gets +2/+2 until end of turn. If a Saproling was sacrificed this way, you gain 2 life.
+timing=main
+oracle={1}, Sacrifice another creature: Thallid Omnivore gets +2/+2 until end of turn. If a Saproling was sacrificed this way, you gain 2 life.

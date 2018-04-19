@@ -1,0 +1,11 @@
+name=Tatyova, Benthic Druid
+image=https://magiccards.info/scans/en/dom/206.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Merfolk,Druid
+cost={3}{G}{U}
+pt=3/3
+ability=Whenever a land enters the battlefield under your control, you gain 1 life and draw a card.
+timing=main
+oracle=Whenever a land enters the battlefield under your control, you gain 1 life and draw a card.

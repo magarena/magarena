@@ -1,0 +1,12 @@
+name=Teshar, Ancestor's Apostle
+image=https://magiccards.info/scans/en/dom/36.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Bird,Cleric
+cost={3}{W}
+pt=2/2
+ability=Flying;\
+        Whenever you cast a historic spell, return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
+timing=main
+oracle=Flying\nWhenever you cast a historic spell, return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.

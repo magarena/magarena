@@ -1,0 +1,9 @@
+name=Yawgmoth's Vile Offering
+image=https://magiccards.info/scans/en/dom/114.jpg
+value=2.500
+rarity=R
+type=Legendary,Sorcery
+cost={4}{B}
+effect=Put up to one target creature or planeswalker card from a graveyard onto the battlefield under your control. Destroy up to one target creature or planeswalker. Exile SN.
+timing=main
+oracle=Put up to one target creature or planeswalker card from a graveyard onto the battlefield under your control. Destroy up to one target creature or planeswalker. Exile Yawgmoth's Vile Offering.

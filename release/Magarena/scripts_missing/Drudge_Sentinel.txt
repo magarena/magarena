@@ -1,0 +1,11 @@
+name=Drudge Sentinel
+image=https://magiccards.info/scans/en/dom/89.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Skeleton,Warrior
+cost={2}{B}
+pt=2/1
+ability={3}: Tap SN. It gains indestructible until end of turn.
+timing=main
+oracle={3}: Tap Drudge Sentinel. It gains indestructible until end of turn.

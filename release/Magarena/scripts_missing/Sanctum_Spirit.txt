@@ -1,0 +1,12 @@
+name=Sanctum Spirit
+image=https://magiccards.info/scans/en/dom/30.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{W}
+pt=3/2
+ability=Lifelink;\
+        Discard a historic card: SN gains indestructible until end of turn.
+timing=main
+oracle=Lifelink\nDiscard a historic card: Sanctum Spirit gains indestructible until end of turn.

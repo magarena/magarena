@@ -1,0 +1,11 @@
+name=Gaea's Protector
+image=https://magiccards.info/scans/en/dom/162.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental,Warrior
+cost={3}{G}
+pt=4/2
+ability=SN must be blocked if able.
+timing=main
+oracle=Gaea's Protector must be blocked if able.

@@ -1,0 +1,9 @@
+name=Powerstone Shard
+image=https://magiccards.info/scans/en/dom/227.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: Add {C} for each artifact you control named Powerstone Shard.
+timing=artifact
+oracle={T}: Add {C} for each artifact you control named Powerstone Shard.

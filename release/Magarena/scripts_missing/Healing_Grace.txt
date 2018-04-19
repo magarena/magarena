@@ -1,0 +1,9 @@
+name=Healing Grace
+image=https://magiccards.info/scans/en/dom/20.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Prevent the next 3 damage that would be dealt to any target this turn by a source of your choice. You gain 3 life.
+timing=removal
+oracle=Prevent the next 3 damage that would be dealt to any target this turn by a source of your choice. You gain 3 life.

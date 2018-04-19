@@ -1,0 +1,11 @@
+name=Howling Golem
+image=https://magiccards.info/scans/en/dom/218.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={3}
+pt=2/3
+ability=Whenever SN attacks or blocks, each player draws a card.
+timing=main
+oracle=Whenever Howling Golem attacks or blocks, each player draws a card.

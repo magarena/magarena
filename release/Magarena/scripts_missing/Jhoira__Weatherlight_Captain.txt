@@ -1,0 +1,11 @@
+name=Jhoira, Weatherlight Captain
+image=https://magiccards.info/scans/en/dom/197.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={2}{U}{R}
+pt=3/3
+ability=Whenever you cast a historic spell, draw a card.
+timing=main
+oracle=Whenever you cast a historic spell, draw a card.

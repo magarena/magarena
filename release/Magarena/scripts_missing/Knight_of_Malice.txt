@@ -1,0 +1,13 @@
+name=Knight of Malice
+image=https://magiccards.info/scans/en/dom/97.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{B}
+pt=2/2
+ability=First strike;\
+        Hexproof from white;\
+        SN gets +1/+0 as long as any player controls a white permanent.
+timing=main
+oracle=First strike\nHexproof from white\nKnight of Malice gets +1/+0 as long as any player controls a white permanent.

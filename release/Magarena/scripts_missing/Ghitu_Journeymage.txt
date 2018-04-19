@@ -1,0 +1,11 @@
+name=Ghitu Journeymage
+image=https://magiccards.info/scans/en/dom/126.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{R}
+pt=3/2
+ability=When SN enters the battlefield, if you control another Wizard, SN deals 2 damage to each opponent.
+timing=main
+oracle=When Ghitu Journeymage enters the battlefield, if you control another Wizard, Ghitu Journeymage deals 2 damage to each opponent.

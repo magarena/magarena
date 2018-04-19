@@ -1,0 +1,10 @@
+name=Blink of an Eye
+image=https://magiccards.info/scans/en/dom/46.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+ability=Kicker {1}{U}
+effect=Return target nonland permanent to its owner's hand. If this spell was kicked, draw a card.
+timing=removal
+oracle=Kicker {1}{U}\nReturn target nonland permanent to its owner's hand. If this spell was kicked, draw a card.

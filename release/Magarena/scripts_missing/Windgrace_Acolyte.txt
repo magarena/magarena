@@ -1,0 +1,12 @@
+name=Windgrace Acolyte
+image=https://magiccards.info/scans/en/dom/112.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat,Warrior
+cost={4}{B}
+pt=3/2
+ability=Flying;\
+        When SN enters the battlefield, put the top three cards of your library into your graveyard and you gain 3 life.
+timing=main
+oracle=Flying\nWhen Windgrace Acolyte enters the battlefield, put the top three cards of your library into your graveyard and you gain 3 life.

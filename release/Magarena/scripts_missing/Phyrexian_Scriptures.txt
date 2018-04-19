@@ -1,0 +1,12 @@
+name=Phyrexian Scriptures
+image=https://magiccards.info/scans/en/dom/100.jpg
+value=2.500
+rarity=M
+type=Enchantment
+subtype=Saga
+cost={2}{B}{B}
+ability=Put a +1/+1 counter on up to one target creature. That creature becomes an artifact in addition to its other types.;\
+        Destroy all nonartifact creatures.;\
+        Exile all cards from all opponents' graveyards.
+timing=enchantment
+oracle=I — Put a +1/+1 counter on up to one target creature. That creature becomes an artifact in addition to its other types.\nII — Destroy all nonartifact creatures.\nIII — Exile all cards from all opponents' graveyards.

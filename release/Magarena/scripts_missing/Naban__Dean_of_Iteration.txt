@@ -1,0 +1,11 @@
+name=Naban, Dean of Iteration
+image=https://magiccards.info/scans/en/dom/58.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=2/1
+ability=If a Wizard entering the battlefield under your control causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.
+timing=main
+oracle=If a Wizard entering the battlefield under your control causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.

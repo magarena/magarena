@@ -1,0 +1,11 @@
+name=Skittering Surveyor
+image=https://magiccards.info/scans/en/dom/230.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=1/2
+ability=When SN enters the battlefield, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When Skittering Surveyor enters the battlefield, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.

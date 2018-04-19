@@ -1,0 +1,12 @@
+name=Baloth Gorger
+image=https://magiccards.info/scans/en/dom/156.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{G}{G}
+pt=4/4
+ability=Kicker {4};\
+        If SN was kicked, it enters the battlefield with three +1/+1 counters on it.
+timing=main
+oracle=Kicker {4}\nIf Baloth Gorger was kicked, it enters the battlefield with three +1/+1 counters on it.

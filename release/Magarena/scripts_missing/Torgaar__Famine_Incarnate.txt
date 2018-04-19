@@ -1,0 +1,12 @@
+name=Torgaar, Famine Incarnate
+image=https://magiccards.info/scans/en/dom/108.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Avatar
+cost={6}{B}{B}
+pt=7/6
+ability=As an additional cost to cast this spell, you may sacrifice any number of creatures. This spell costs {2} less to cast for each creature sacrificed this way.;\
+        When SN enters the battlefield, up to one target player's life total becomes half their starting life total, rounded down.
+timing=main
+oracle=As an additional cost to cast this spell, you may sacrifice any number of creatures. This spell costs {2} less to cast for each creature sacrificed this way.\nWhen Torgaar, Famine Incarnate enters the battlefield, up to one target player's life total becomes half their starting life total, rounded down.

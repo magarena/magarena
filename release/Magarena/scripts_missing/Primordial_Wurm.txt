@@ -1,0 +1,10 @@
+name=Primordial Wurm
+image=https://magiccards.info/scans/en/dom/177.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wurm
+cost={4}{G}{G}
+pt=7/6
+timing=main
+oracle=NONE

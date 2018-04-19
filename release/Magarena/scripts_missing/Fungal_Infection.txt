@@ -1,0 +1,9 @@
+name=Fungal Infection
+image=https://magiccards.info/scans/en/dom/94.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Target creature gets -1/-1 until end of turn. Create a 1/1 green Saproling creature token.
+timing=removal
+oracle=Target creature gets -1/-1 until end of turn. Create a 1/1 green Saproling creature token.

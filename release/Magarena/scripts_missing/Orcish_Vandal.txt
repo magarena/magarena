@@ -1,0 +1,11 @@
+name=Orcish Vandal
+image=https://magiccards.info/scans/en/dom/137.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Warrior
+cost={1}{R}
+pt=1/1
+ability={T}, Sacrifice an artifact: SN deals 2 damage to any target.
+timing=main
+oracle={T}, Sacrifice an artifact: Orcish Vandal deals 2 damage to any target.

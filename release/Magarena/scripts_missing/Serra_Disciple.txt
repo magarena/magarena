@@ -1,0 +1,12 @@
+name=Serra Disciple
+image=https://magiccards.info/scans/en/dom/34.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Cleric
+cost={1}{W}
+pt=1/1
+ability=Flying, first strike;\
+        Whenever you cast a historic spell, SN gets +1/+1 until end of turn.
+timing=main
+oracle=Flying, first strike\nWhenever you cast a historic spell, Serra Disciple gets +1/+1 until end of turn.

@@ -1,0 +1,10 @@
+name=Memorial to War
+image=https://magiccards.info/scans/en/dom/246.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R}.;\
+        {4}{R}, {T}, Sacrifice SN: Destroy target land.
+timing=land
+oracle=Memorial to War enters the battlefield tapped.\n{T}: Add {R}.\n{4}{R}, {T}, Sacrifice Memorial to War: Destroy target land.

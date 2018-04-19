@@ -1,0 +1,11 @@
+name=Keldon Raider
+image=https://magiccards.info/scans/en/dom/135.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}{R}
+pt=4/3
+ability=When SN enters the battlefield, you may discard a card. If you do, draw a card.
+timing=main
+oracle=When Keldon Raider enters the battlefield, you may discard a card. If you do, draw a card.

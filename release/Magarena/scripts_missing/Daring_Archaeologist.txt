@@ -1,0 +1,12 @@
+name=Daring Archaeologist
+image=https://magiccards.info/scans/en/dom/13.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Artificer
+cost={3}{W}
+pt=3/3
+ability=When SN enters the battlefield, you may return target artifact card from your graveyard to your hand.;\
+        Whenever you cast a historic spell, put a +1/+1 counter on SN.
+timing=main
+oracle=When Daring Archaeologist enters the battlefield, you may return target artifact card from your graveyard to your hand.\nWhenever you cast a historic spell, put a +1/+1 counter on Daring Archaeologist.

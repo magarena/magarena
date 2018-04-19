@@ -1,0 +1,11 @@
+name=Fall of the Thran
+image=https://magiccards.info/scans/en/dom/18.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Saga
+cost={5}{W}
+ability=Destroy all lands.;\
+        Each player returns two land cards from their graveyard to the battlefield.
+timing=enchantment
+oracle=I — Destroy all lands.\nII, III — Each player returns two land cards from their graveyard to the battlefield.

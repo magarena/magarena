@@ -1,0 +1,11 @@
+name=Guardians of Koilos
+image=https://magiccards.info/scans/en/dom/216.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=4/4
+ability=When SN enters the battlefield, you may return another target historic permanent you control to its owner's hand.
+timing=main
+oracle=When Guardians of Koilos enters the battlefield, you may return another target historic permanent you control to its owner's hand.

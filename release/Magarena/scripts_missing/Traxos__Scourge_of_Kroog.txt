@@ -1,0 +1,13 @@
+name=Traxos, Scourge of Kroog
+image=https://magiccards.info/scans/en/dom/234.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact,Creature
+subtype=Construct
+cost={4}
+pt=7/7
+ability=Trample;\
+        SN enters the battlefield tapped and doesn't untap during your untap step.;\
+        Whenever you cast a historic spell, untap Traxos.
+timing=main
+oracle=Trample\nTraxos, Scourge of Kroog enters the battlefield tapped and doesn't untap during your untap step.\nWhenever you cast a historic spell, untap Traxos.

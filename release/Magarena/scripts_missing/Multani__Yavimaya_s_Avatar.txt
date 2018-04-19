@@ -1,0 +1,13 @@
+name=Multani, Yavimaya's Avatar
+image=https://magiccards.info/scans/en/dom/174.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elemental,Avatar
+cost={4}{G}{G}
+pt=0/0
+ability=Reach, trample;\
+        SN gets +1/+1 for each land you control and each land card in your graveyard.;\
+        {1}{G}, Return two lands you control to their owner's hand: Return Multani from your graveyard to your hand.
+timing=main
+oracle=Reach, trample\nMultani, Yavimaya's Avatar gets +1/+1 for each land you control and each land card in your graveyard.\n{1}{G}, Return two lands you control to their owner's hand: Return Multani from your graveyard to your hand.

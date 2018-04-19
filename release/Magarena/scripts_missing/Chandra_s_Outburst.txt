@@ -1,0 +1,9 @@
+name=Chandra's Outburst
+image=https://magiccards.info/scans/en/dom/276.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{R}{R}
+effect=SN deals 4 damage to target player or planeswalker.~Search your library and/or graveyard for a card named Chandra, Bold Pyromancer, reveal it, and put it into your hand. If you search your library this way, shuffle it.
+timing=main
+oracle=Chandra's Outburst deals 4 damage to target player or planeswalker.\nSearch your library and/or graveyard for a card named Chandra, Bold Pyromancer, reveal it, and put it into your hand. If you search your library this way, shuffle it.

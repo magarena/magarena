@@ -1,0 +1,12 @@
+name=Elfhame Druid
+image=https://magiccards.info/scans/en/dom/159.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=0/2
+ability={T}: Add {G}.;\
+        {T}: Add {G}{G}. Spend this mana only to cast kicked spells.
+timing=main
+oracle={T}: Add {G}.\n{T}: Add {G}{G}. Spend this mana only to cast kicked spells.

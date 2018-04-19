@@ -1,0 +1,11 @@
+name=Ghitu Lavarunner
+image=https://magiccards.info/scans/en/dom/127.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={R}
+pt=1/2
+ability=As long as there are two or more instant and/or sorcery cards in your graveyard, SN gets +1/+0 and has haste.
+timing=main
+oracle=As long as there are two or more instant and/or sorcery cards in your graveyard, Ghitu Lavarunner gets +1/+0 and has haste.

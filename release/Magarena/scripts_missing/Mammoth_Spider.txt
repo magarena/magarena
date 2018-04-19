@@ -1,0 +1,11 @@
+name=Mammoth Spider
+image=https://magiccards.info/scans/en/dom/171.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spider
+cost={4}{G}
+pt=3/5
+ability=Reach
+timing=main
+oracle=Reach

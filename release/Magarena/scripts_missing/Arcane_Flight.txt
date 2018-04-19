@@ -1,0 +1,12 @@
+name=Arcane Flight
+image=https://magiccards.info/scans/en/dom/43.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 and has flying.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has flying.

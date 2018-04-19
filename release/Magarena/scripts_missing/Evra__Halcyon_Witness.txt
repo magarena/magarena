@@ -1,0 +1,12 @@
+name=Evra, Halcyon Witness
+image=https://magiccards.info/scans/en/dom/16.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Avatar
+cost={4}{W}{W}
+pt=4/4
+ability=Lifelink;\
+        {4}: Exchange your life total with SN's power.
+timing=main
+oracle=Lifelink\n{4}: Exchange your life total with Evra, Halcyon Witness's power.

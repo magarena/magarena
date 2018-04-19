@@ -1,0 +1,10 @@
+name=Knight of New Benalia
+image=https://magiccards.info/scans/en/dom/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=3/1
+timing=main
+oracle=NONE

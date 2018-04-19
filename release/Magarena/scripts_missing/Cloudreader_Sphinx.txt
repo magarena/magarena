@@ -1,0 +1,12 @@
+name=Cloudreader Sphinx
+image=https://magiccards.info/scans/en/dom/47.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Sphinx
+cost={4}{U}
+pt=3/4
+ability=Flying;\
+        When SN enters the battlefield, scry 2.
+timing=main
+oracle=Flying\nWhen Cloudreader Sphinx enters the battlefield, scry 2.

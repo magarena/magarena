@@ -1,0 +1,13 @@
+name=Teferi, Timebender
+image=https://magiccards.info/scans/en/dom/270.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Teferi
+cost={4}{W}{U}
+loyalty=5
+ability=+2: Untap up to one target artifact or creature.;\
+        −3: You gain 2 life and draw two cards.;\
+        −9: Take an extra turn after this one.
+timing=main
+oracle=+2: Untap up to one target artifact or creature.\n−3: You gain 2 life and draw two cards.\n−9: Take an extra turn after this one.

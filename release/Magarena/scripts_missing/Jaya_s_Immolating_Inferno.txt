@@ -1,0 +1,9 @@
+name=Jaya's Immolating Inferno
+image=https://magiccards.info/scans/en/dom/133.jpg
+value=2.500
+rarity=R
+type=Legendary,Sorcery
+cost={X}{R}{R}
+effect=SN deals X damage to each of up to three targets.
+timing=main
+oracle=Jaya's Immolating Inferno deals X damage to each of up to three targets.

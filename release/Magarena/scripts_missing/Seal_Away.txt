@@ -1,0 +1,10 @@
+name=Seal Away
+image=https://magiccards.info/scans/en/dom/31.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability=Flash;\
+        When SN enters the battlefield, exile target tapped creature an opponent controls until SN leaves the battlefield.
+timing=flash
+oracle=Flash\nWhen Seal Away enters the battlefield, exile target tapped creature an opponent controls until Seal Away leaves the battlefield.
