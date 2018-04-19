@@ -1,0 +1,12 @@
+name=Firesong and Sunspeaker
+image=https://magiccards.info/scans/en/dom/280.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Minotaur,Cleric
+cost={4}{R}{W}
+pt=4/6
+ability=Red instant and sorcery spells you control have lifelink.;\
+        Whenever a white instant or sorcery spell causes you to gain life, SN deals 3 damage to target creature or player.
+timing=main
+oracle=Red instant and sorcery spells you control have lifelink.\nWhenever a white instant or sorcery spell causes you to gain life, Firesong and Sunspeaker deals 3 damage to target creature or player.
