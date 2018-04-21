@@ -5,7 +5,6 @@ value=4.177
 rarity=R
 type=Enchantment
 cost={4}{G}{G}
-ability=Whenever an opponent casts a spell, reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, you may put that card on the bottom of your library.
 timing=enchantment
 oracle=Whenever an opponent casts a spell, reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, you may put that card on the bottom of your library.
-status=needs groovy
+requires_groovy_code

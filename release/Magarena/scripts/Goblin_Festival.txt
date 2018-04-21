@@ -4,7 +4,6 @@ value=3.217
 rarity=R
 type=Enchantment
 cost={1}{R}
-ability={2}: SN deals 1 damage to target creature or player. Flip a coin. If you lose the flip, choose one of your opponents. That player gains control of SN.
 timing=enchantment
 oracle={2}: Goblin Festival deals 1 damage to target creature or player. Flip a coin. If you lose the flip, choose one of your opponents. That player gains control of Goblin Festival.
-status=needs groovy
+requires_groovy_code

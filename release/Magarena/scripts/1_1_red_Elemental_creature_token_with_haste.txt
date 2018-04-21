@@ -1,0 +1,10 @@
+name=1/1 red Elemental creature token with haste
+token=Elemental
+image=https://magiccards.info/extras/token/rise-of-the-eldrazi/elemental.jpg
+value=1
+type=Creature
+subtype=Elemental
+color=r
+pt=1/1
+ability=Haste
+oracle=Haste

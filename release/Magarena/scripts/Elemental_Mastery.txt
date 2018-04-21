@@ -6,8 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={3}{R}
 ability=Enchant creature;\
-        Enchanted creature has "{T}: Create X 1/1 red Elemental creature tokens with haste, where X is this creature's power. Exile them at the beginning of the next end step."
+        Enchanted creature has "{T}: Create X 1/1 red Elemental creature tokens with haste, exile them at the beginning of the next end step, where X is this creature's power."
 timing=aura
-enchant=default,creature
+enchant=power,pos creature
 oracle=Enchant creature\nEnchanted creature has "{T}: Create X 1/1 red Elemental creature tokens with haste, where X is this creature's power. Exile them at the beginning of the next end step."
-status=needs groovy

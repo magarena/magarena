@@ -4,7 +4,7 @@ value=2.643
 rarity=C
 type=Sorcery
 cost={3}{W}
-effect=You gain 2 life for each creature target player controls.~Suspend 5—{1}{W}
+ability=Suspend 5—{1}{W}
 timing=main
+requires_groovy_code
 oracle=You gain 2 life for each creature target player controls.\nSuspend 5—{1}{W}
-status=needs groovy

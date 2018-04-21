@@ -5,7 +5,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}
-effect=Target opponent loses 3 life and puts a card from his or her hand on top of his or her library.
 timing=main
 oracle=Target opponent loses 3 life and puts a card from his or her hand on top of his or her library.
-status=needs groovy
+requires_groovy_code
