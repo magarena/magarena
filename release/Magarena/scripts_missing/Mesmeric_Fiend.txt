@@ -6,8 +6,8 @@ type=Creature
 subtype=Nightmare,Horror
 cost={1}{B}
 pt=1/1
-ability=When SN enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card.;\
+ability=When SN enters the battlefield, target opponent reveals their hand and you choose a nonland card from it. Exile that card.;\
         When SN leaves the battlefield, return the exiled card to its owner's hand.
 timing=main
-oracle=When Mesmeric Fiend enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card.\nWhen Mesmeric Fiend leaves the battlefield, return the exiled card to its owner's hand.
+oracle=When Mesmeric Fiend enters the battlefield, target opponent reveals their hand and you choose a nonland card from it. Exile that card.\nWhen Mesmeric Fiend leaves the battlefield, return the exiled card to its owner's hand.
 status=not supported: reveal-hand

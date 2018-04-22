@@ -7,7 +7,7 @@ subtype=Human,Rogue
 cost={2}{U}{B}
 pt=3/1
 ability=Flash;\
-        If an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card.
+        If an opponent would draw a card except the first one they draw in each of their draw steps, instead that player skips that draw and you draw a card.
 timing=flash
-oracle=Flash\nIf an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card.
+oracle=Flash\nIf an opponent would draw a card except the first one they draw in each of their draw steps, instead that player skips that draw and you draw a card.
 status=not supported: skip-action

@@ -7,7 +7,7 @@ subtype=Elemental
 cost={4}{U}{U}
 pt=5/4
 ability=Morph {5}{U}{U};\
-        When SN is turned face up, each opponent skips his or her next untap step.
+        When SN is turned face up, each opponent skips their next untap step.
 timing=main
-oracle=Morph {5}{U}{U}\nWhen Brine Elemental is turned face up, each opponent skips his or her next untap step.
+oracle=Morph {5}{U}{U}\nWhen Brine Elemental is turned face up, each opponent skips their next untap step.
 status=not supported: skip-action
