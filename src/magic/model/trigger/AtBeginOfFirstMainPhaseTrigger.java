@@ -19,16 +19,18 @@ public abstract class AtBeginOfFirstMainPhaseTrigger extends MagicTrigger<MagicP
         return MagicTriggerType.AtBeginOfFirstMainPhase;
     }
 
-    public static final AtBeginOfFirstMainPhaseTrigger LoreCounter = new AtBeginOfFirstMainPhaseTrigger() {
-        @Override
-        public boolean accept(final MagicPermanent permanent, final MagicPlayer player) {
-            return permanent.isController(player);
-        }
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            game.doAction(new ChangeCountersAction(player, permanent, MagicCounterType.Lore, 1));
-            return MagicEvent.NONE;
-        }
-    };
+    public static final AtBeginOfFirstMainPhaseTrigger YourAddCounter(final MagicCounterType counterType) {
+        return new AtBeginOfFirstMainPhaseTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer player) {
+                return permanent.isController(player);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+                game.doAction(new ChangeCountersAction(player, permanent, counterType, 1));
+                return MagicEvent.NONE;
+            }
+        };
+    }
 
 }
