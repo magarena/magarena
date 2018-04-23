@@ -1,6 +1,7 @@
 package magic.model.phase;
 
 import magic.model.MagicGame;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicMainPhase extends MagicPhase {
 
@@ -21,6 +22,10 @@ public class MagicMainPhase extends MagicPhase {
 
     @Override
     public void executeBeginStep(final MagicGame game) {
+        if (this == FIRST_INSTANCE) {
+            game.executeTrigger(MagicTriggerType.AtBeginOfFirstMainPhase,game.getTurnPlayer());
+        }
+
         game.setStep(MagicStep.ActivePlayer);
     }
 
