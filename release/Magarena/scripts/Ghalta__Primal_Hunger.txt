@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Elder,Dinosaur
 cost={10}{G}{G}
 pt=12/12
-ability=SN costs {X} less to cast, where X is the total power of creatures you control.;\
-        Trample
+ability=Trample
 timing=main
+requires_groovy_code
 oracle=Ghalta, Primal Hunger costs {X} less to cast, where X is the total power of creatures you control.\nTrample
