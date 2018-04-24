@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{B}{B}
-effect=Each opponent discards two cards. If you control a Vampire, each opponent loses 2 life and you gain 2 life.
+effect=Each opponent discards two cards.~If you control a Vampire, each opponent loses 2 life and you gain 2 life.
 timing=main
 oracle=Each opponent discards two cards. If you control a Vampire, each opponent loses 2 life and you gain 2 life.
