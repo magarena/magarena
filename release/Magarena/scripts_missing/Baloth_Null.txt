@@ -1,6 +1,6 @@
 name=Baloth Null
-image=https://magiccards.info/scans/en/ogw/152.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/a25/197.jpg
+image_updated=2018-04-25
 value=2.500
 rarity=U
 type=Creature

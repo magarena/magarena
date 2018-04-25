@@ -1,5 +1,6 @@
 name=Strionic Resonator
-image=https://magiccards.info/scans/en/m14/224.jpg
+image=https://magiccards.info/scans/en/a25/232.jpg
+image_updated=2018-04-25
 value=3.846
 rarity=R
 type=Artifact

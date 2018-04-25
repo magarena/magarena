@@ -1,7 +1,8 @@
 name=Ruthless Ripper
-image=https://magiccards.info/scans/en/ktk/88.jpg
+image=https://magiccards.info/scans/en/a25/107.jpg
+image_updated=2018-04-25
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Assassin
 cost={B}

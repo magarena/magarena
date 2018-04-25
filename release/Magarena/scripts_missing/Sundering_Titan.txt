@@ -1,6 +1,6 @@
 name=Sundering Titan
-image=https://magiccards.info/scans/en/ds/146.jpg
-image_updated=2016-01-09
+image=https://magiccards.info/scans/en/a25/233.jpg
+image_updated=2018-04-25
 value=4.454
 rarity=R
 type=Artifact,Creature

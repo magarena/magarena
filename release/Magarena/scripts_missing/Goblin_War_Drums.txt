@@ -1,5 +1,6 @@
 name=Goblin War Drums
-image=https://magiccards.info/scans/en/7e/194.jpg
+image=https://magiccards.info/scans/en/a25/133.jpg
+image_updated=2018-04-25
 value=4.082
 rarity=U
 type=Enchantment

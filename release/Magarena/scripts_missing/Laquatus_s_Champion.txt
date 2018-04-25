@@ -1,5 +1,6 @@
 name=Laquatus's Champion
-image=https://magiccards.info/scans/en/tr/67.jpg
+image=https://magiccards.info/scans/en/a25/95.jpg
+image_updated=2018-04-25
 value=4.500
 rarity=R
 type=Creature

@@ -1,7 +1,8 @@
 name=Stangg
-image=https://magiccards.info/scans/en/lg/300.jpg
+image=https://magiccards.info/scans/en/a25/218.jpg
+image_updated=2018-04-25
 value=3.723
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Human,Warrior
 cost={4}{R}{G}

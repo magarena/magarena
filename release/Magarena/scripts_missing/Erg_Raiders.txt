@@ -1,5 +1,6 @@
 name=Erg Raiders
-image=https://magiccards.info/scans/en/5e/20.jpg
+image=https://magiccards.info/scans/en/a25/90.jpg
+image_updated=2018-04-25
 value=3.480
 rarity=C
 type=Creature

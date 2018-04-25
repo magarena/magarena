@@ -1,5 +1,6 @@
 name=Cascade Bluffs
-image=https://magiccards.info/scans/en/eve/175.jpg
+image=https://magiccards.info/scans/en/a25/237.jpg
+image_updated=2018-04-25
 value=4.404
 rarity=R
 type=Land

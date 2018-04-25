@@ -1,7 +1,8 @@
 name=Simian Spirit Guide
-image=https://magiccards.info/scans/en/pc/122.jpg
+image=https://magiccards.info/scans/en/a25/148.jpg
+image_updated=2018-04-25
 value=4.591
-rarity=C
+rarity=U
 type=Creature
 subtype=Ape,Spirit
 cost={2}{R}

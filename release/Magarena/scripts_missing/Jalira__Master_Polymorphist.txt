@@ -1,7 +1,8 @@
 name=Jalira, Master Polymorphist
-image=https://magiccards.info/scans/en/m15/64.jpg
+image=https://magiccards.info/scans/en/a25/63.jpg
+image_updated=2018-04-25
 value=3.562
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Human,Wizard
 cost={3}{U}

@@ -1,6 +1,6 @@
 name=Coalition Relic
-image=https://magiccards.info/scans/en/fut/161.jpg
-image_updated=2016-11-28
+image=https://magiccards.info/scans/en/a25/223.jpg
+image_updated=2018-04-25
 value=4.310
 rarity=R
 type=Artifact

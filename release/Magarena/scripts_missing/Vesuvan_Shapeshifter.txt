@@ -1,5 +1,6 @@
 name=Vesuvan Shapeshifter
-image=https://magiccards.info/scans/en/ts/90.jpg
+image=https://magiccards.info/scans/en/a25/77.jpg
+image_updated=2018-04-25
 value=4.261
 rarity=R
 type=Creature

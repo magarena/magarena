@@ -1,5 +1,6 @@
 name=Living Wish
-image=https://magiccards.info/scans/en/ju/124.jpg
+image=https://magiccards.info/scans/en/a25/179.jpg
+image_updated=2018-04-25
 value=4.385
 rarity=R
 type=Sorcery

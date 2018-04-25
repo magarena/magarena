@@ -1,5 +1,6 @@
 name=Flooded Grove
-image=https://magiccards.info/scans/en/eve/177.jpg
+image=https://magiccards.info/scans/en/a25/239.jpg
+image_updated=2018-04-25
 value=4.397
 rarity=R
 type=Land

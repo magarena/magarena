@@ -1,5 +1,6 @@
 name=Prossh, Skyraider of Kher
-image=https://magiccards.info/scans/en/c13/204.jpg
+image=https://magiccards.info/scans/en/a25/214.jpg
+image_updated=2018-04-25
 value=3.802
 rarity=M
 type=Legendary,Creature

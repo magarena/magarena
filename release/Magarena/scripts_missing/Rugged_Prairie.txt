@@ -1,5 +1,6 @@
 name=Rugged Prairie
-image=https://magiccards.info/scans/en/eve/178.jpg
+image=https://magiccards.info/scans/en/a25/247.jpg
+image_updated=2018-04-25
 value=4.389
 rarity=R
 type=Land

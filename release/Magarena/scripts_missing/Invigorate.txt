@@ -1,5 +1,6 @@
 name=Invigorate
-image=https://magiccards.info/scans/en/ema/174.jpg
+image=https://magiccards.info/scans/en/a25/173.jpg
+image_updated=2018-04-25
 value=2.500
 rarity=U
 type=Instant

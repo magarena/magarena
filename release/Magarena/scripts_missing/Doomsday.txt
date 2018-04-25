@@ -1,7 +1,8 @@
 name=Doomsday
-image=https://magiccards.info/scans/en/6e/121.jpg
+image=https://magiccards.info/scans/en/a25/88.jpg
+image_updated=2018-04-25
 value=4.549
-rarity=R
+rarity=M
 type=Sorcery
 cost={B}{B}{B}
 effect=Search your library and graveyard for five cards and exile the rest. Put the chosen cards on top of your library in any order. You lose half your life, rounded up.

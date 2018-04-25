@@ -1,6 +1,6 @@
 name=Myriad Landscape
-image=https://magiccards.info/scans/en/c17/262.jpg
-image_updated=2018-04-22
+image=https://magiccards.info/scans/en/a25/243.jpg
+image_updated=2018-04-25
 value=2.500
 rarity=U
 type=Land

@@ -1,7 +1,8 @@
 name=Skeletonize
-image=https://magiccards.info/scans/en/ala/114.jpg
+image=https://magiccards.info/scans/en/a25/149.jpg
+image_updated=2018-04-25
 value=2.731
-rarity=U
+rarity=C
 type=Instant
 cost={4}{R}
 effect=SN deals 3 damage to target creature. When a creature dealt damage this way dies this turn, create a 1/1 black Skeleton creature token with "{B}: Regenerate this creature."

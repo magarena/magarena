@@ -1,5 +1,6 @@
 name=Flash
-image=https://magiccards.info/scans/en/6e/67.jpg
+image=https://magiccards.info/scans/en/a25/57.jpg
+image_updated=2018-04-25
 value=4.590
 rarity=R
 type=Instant

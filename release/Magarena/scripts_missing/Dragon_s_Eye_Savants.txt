@@ -1,7 +1,8 @@
 name=Dragon's Eye Savants
-image=https://magiccards.info/scans/en/ktk/38.jpg
+image=https://magiccards.info/scans/en/a25/54.jpg
+image_updated=2018-04-25
 value=3.000
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}

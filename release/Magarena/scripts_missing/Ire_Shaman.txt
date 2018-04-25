@@ -1,7 +1,8 @@
 name=Ire Shaman
-image=https://magiccards.info/scans/en/dtk/141.jpg
+image=https://magiccards.info/scans/en/a25/137.jpg
+image_updated=2018-04-25
 value=2.500
-rarity=R
+rarity=U
 type=Creature
 subtype=Orc,Shaman
 cost={1}{R}

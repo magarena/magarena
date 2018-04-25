@@ -1,5 +1,6 @@
 name=Vendilion Clique
-image=https://magiccards.info/scans/en/mm2/67.jpg
+image=https://magiccards.info/scans/en/a25/76.jpg
+image_updated=2018-04-25
 value=2.500
 rarity=M
 type=Legendary,Creature

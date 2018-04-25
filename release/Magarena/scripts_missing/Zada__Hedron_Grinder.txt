@@ -1,8 +1,8 @@
 name=Zada, Hedron Grinder
-image=https://magiccards.info/scans/en/bfz/162.jpg
-image_updated=2015-11-08
+image=https://magiccards.info/scans/en/a25/156.jpg
+image_updated=2018-04-25
 value=2.500
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Goblin,Ally
 cost={3}{R}

@@ -1,7 +1,8 @@
 name=Court Hussar
-image=https://magiccards.info/scans/en/cmd/43.jpg
+image=https://magiccards.info/scans/en/a25/51.jpg
+image_updated=2018-04-25
 value=3.887
-rarity=U
+rarity=C
 type=Creature
 subtype=Vedalken,Knight
 cost={2}{U}
