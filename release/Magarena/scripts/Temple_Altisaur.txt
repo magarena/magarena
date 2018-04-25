@@ -6,6 +6,6 @@ type=Creature
 subtype=Dinosaur
 cost={4}{W}
 pt=3/4
-ability=If a source would deal damage to another Dinosaur you control, prevent all but 1 of that damage.
 timing=main
+requires_groovy_code
 oracle=If a source would deal damage to another Dinosaur you control, prevent all but 1 of that damage.
