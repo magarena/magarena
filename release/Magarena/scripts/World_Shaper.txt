@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk,Shaman
 cost={3}{G}
 pt=3/3
-ability=Whenever SN attacks, you may put the top three cards of your library into your graveyard.;\
-        When SN dies, put all land cards from your graveyard onto the battlefield tapped.
+ability=Whenever SN attacks, you may put the top three cards of your library into your graveyard.
 timing=main
+requires_groovy_code
 oracle=Whenever World Shaper attacks, you may put the top three cards of your library into your graveyard.\nWhen World Shaper dies, put all land cards from your graveyard onto the battlefield tapped.
