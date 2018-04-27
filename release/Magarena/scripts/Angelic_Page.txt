@@ -1,8 +1,8 @@
 name=Angelic Page
-image=https://magiccards.info/scans/en/8e/2.jpg
-image_updated=2016-11-20
+image=https://magiccards.info/scans/en/a25/4.jpg
+image_updated=2018-04-26
 value=2.856
-rarity=C
+rarity=U
 type=Creature
 subtype=Angel,Spirit
 cost={1}{W}

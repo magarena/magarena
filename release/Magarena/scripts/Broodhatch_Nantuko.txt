@@ -1,5 +1,6 @@
 name=Broodhatch Nantuko
-image=https://magiccards.info/scans/en/on/250.jpg
+image=https://magiccards.info/scans/en/a25/162.jpg
+image_updated=2018-04-27
 value=3.633
 rarity=U
 type=Creature
@@ -8,5 +9,5 @@ cost={1}{G}
 pt=1/1
 ability=Morph {2}{G}
 timing=main
-requires_groovy_code=Saber Ants
 oracle=Whenever Broodhatch Nantuko is dealt damage, you may create that many 1/1 green Insect creature tokens.\nMorph {2}{G}
+requires_groovy_code=Saber Ants

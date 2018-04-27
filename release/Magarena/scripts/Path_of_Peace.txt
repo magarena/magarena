@@ -1,5 +1,6 @@
 name=Path of Peace
-image=https://magiccards.info/scans/en/st/21.jpg
+image=https://magiccards.info/scans/en/a25/29.jpg
+image_updated=2018-04-27
 value=2.545
 rarity=C
 type=Sorcery

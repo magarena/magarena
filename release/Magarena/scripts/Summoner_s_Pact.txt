@@ -1,5 +1,6 @@
 name=Summoner's Pact
-image=https://magiccards.info/scans/en/mma/164.jpg
+image=https://magiccards.info/scans/en/a25/189.jpg
+image_updated=2018-04-27
 value=4.500
 rarity=R
 type=Instant

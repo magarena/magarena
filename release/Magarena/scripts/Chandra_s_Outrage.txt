@@ -1,6 +1,6 @@
 name=Chandra's Outrage
-image=https://magiccards.info/scans/en/mm3/92.jpg
-image_updated=2017-08-08
+image=https://magiccards.info/scans/en/a25/124.jpg
+image_updated=2018-04-27
 value=3.519
 removal=4
 rarity=C

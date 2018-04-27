@@ -1,5 +1,6 @@
 name=Darien, King of Kjeldor
-image=https://magiccards.info/scans/en/cs/4.jpg
+image=https://magiccards.info/scans/en/a25/9.jpg
+image_updated=2018-04-27
 value=4.281
 rarity=R
 type=Legendary,Creature
@@ -7,5 +8,5 @@ subtype=Human,Soldier
 cost={4}{W}{W}
 pt=3/3
 timing=main
-requires_groovy_code
 oracle=Whenever you're dealt damage, you may create that many 1/1 white Soldier creature tokens.
+requires_groovy_code

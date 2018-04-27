@@ -1,6 +1,6 @@
 name=Boros Charm
-image=https://magiccards.info/scans/en/c16/185.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/a25/199.jpg
+image_updated=2018-04-27
 value=3.979
 rarity=U
 type=Instant

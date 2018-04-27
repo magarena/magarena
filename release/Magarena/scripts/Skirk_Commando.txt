@@ -1,6 +1,6 @@
 name=Skirk Commando
-image=https://magiccards.info/scans/en/on/228.jpg
-image_updated=2017-01-08
+image=https://magiccards.info/scans/en/a25/150.jpg
+image_updated=2018-04-27
 value=3.297
 rarity=C
 type=Creature

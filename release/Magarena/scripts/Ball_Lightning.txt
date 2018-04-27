@@ -1,5 +1,6 @@
 name=Ball Lightning
-image=https://magiccards.info/scans/en/m10/125.jpg
+image=https://magiccards.info/scans/en/a25/121.jpg
+image_updated=2018-04-27
 value=4.140
 rarity=R
 type=Creature

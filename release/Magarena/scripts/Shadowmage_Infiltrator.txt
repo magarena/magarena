@@ -1,8 +1,8 @@
 name=Shadowmage Infiltrator
-image=https://magiccards.info/scans/en/mm2/186.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/a25/217.jpg
+image_updated=2018-04-27
 value=4.357
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}{B}

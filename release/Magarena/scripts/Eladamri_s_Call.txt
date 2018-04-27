@@ -1,5 +1,6 @@
 name=Eladamri's Call
-image=https://magiccards.info/scans/en/ps/106.jpg
+image=https://magiccards.info/scans/en/a25/203.jpg
+image_updated=2018-04-27
 value=4.284
 rarity=R
 type=Instant

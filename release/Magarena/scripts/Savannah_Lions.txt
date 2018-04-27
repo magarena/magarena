@@ -1,7 +1,8 @@
 name=Savannah Lions
-image=https://magiccards.info/scans/en/9e/41.jpg
+image=https://magiccards.info/scans/en/a25/33.jpg
+image_updated=2018-04-27
 value=4.058
-rarity=R
+rarity=C
 type=Creature
 subtype=Cat
 cost={W}

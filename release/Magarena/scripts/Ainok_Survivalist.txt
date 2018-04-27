@@ -1,7 +1,8 @@
 name=Ainok Survivalist
-image=https://magiccards.info/scans/en/dtk/172.jpg
+image=https://magiccards.info/scans/en/a25/157.jpg
+image_updated=2018-04-26
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Hound,Shaman
 cost={1}{G}

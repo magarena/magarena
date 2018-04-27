@@ -1,5 +1,6 @@
 name=Curiosity
-image=https://magiccards.info/scans/en/isd/49.jpg
+image=https://magiccards.info/scans/en/a25/52.jpg
+image_updated=2018-04-27
 value=4.083
 rarity=U
 type=Enchantment

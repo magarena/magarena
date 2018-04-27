@@ -1,5 +1,6 @@
 name=Heavy Arbalest
-image=https://magiccards.info/scans/en/som/164.jpg
+image=https://magiccards.info/scans/en/a25/225.jpg
+image_updated=2018-04-27
 value=2.369
 rarity=U
 type=Artifact

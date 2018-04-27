@@ -1,7 +1,8 @@
 name=Perilous Myr
-image=https://magiccards.info/scans/en/som/192.jpg
+image=https://magiccards.info/scans/en/a25/227.jpg
+image_updated=2018-04-27
 value=4.110
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Myr
 cost={2}

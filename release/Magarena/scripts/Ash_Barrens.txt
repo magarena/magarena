@@ -1,8 +1,8 @@
 name=Ash Barrens
-image=https://magiccards.info/scans/en/c16/56.jpg
-image_updated=2016-11-20
+image=https://magiccards.info/scans/en/a25/236.jpg
+image_updated=2018-04-26
 value=2.500
-rarity=C
+rarity=U
 type=Land
 ability={T}: Add {C}.;\
         Basic landcycling {1}

@@ -1,5 +1,6 @@
 name=Squadron Hawk
-image=https://magiccards.info/scans/en/ema/31.jpg
+image=https://magiccards.info/scans/en/a25/34.jpg
+image_updated=2018-04-27
 value=4.191
 rarity=C
 type=Creature

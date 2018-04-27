@@ -1,5 +1,6 @@
 name=Ratcatcher
-image=https://magiccards.info/scans/en/di/52.jpg
+image=https://magiccards.info/scans/en/a25/103.jpg
+image_updated=2018-04-27
 value=3.946
 rarity=R
 type=Creature

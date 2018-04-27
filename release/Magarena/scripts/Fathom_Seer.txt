@@ -1,5 +1,6 @@
 name=Fathom Seer
-image=https://magiccards.info/scans/en/c14/109.jpg
+image=https://magiccards.info/scans/en/a25/56.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=C
 type=Creature

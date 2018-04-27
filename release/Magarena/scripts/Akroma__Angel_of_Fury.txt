@@ -1,7 +1,8 @@
 name=Akroma, Angel of Fury
-image=https://magiccards.info/scans/en/cmd/108.jpg
+image=https://magiccards.info/scans/en/a25/119.jpg
+image_updated=2018-04-26
 value=4.348
-rarity=R
+rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={5}{R}{R}{R}

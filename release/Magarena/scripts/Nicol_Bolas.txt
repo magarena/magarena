@@ -1,6 +1,6 @@
 name=Nicol Bolas
-image=https://magiccards.info/scans/en/tsts/98.jpg
-image_updated=2015-11-13
+image=https://magiccards.info/scans/en/a25/209.jpg
+image_updated=2018-04-27
 value=4.136
 rarity=R
 type=Legendary,Creature

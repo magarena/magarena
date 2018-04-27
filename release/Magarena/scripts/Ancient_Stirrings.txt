@@ -1,7 +1,8 @@
 name=Ancient Stirrings
-image=https://magiccards.info/scans/en/roe/174.jpg
+image=https://magiccards.info/scans/en/a25/159.jpg
+image_updated=2018-04-26
 value=4.182
-rarity=C
+rarity=U
 type=Sorcery
 cost={G}
 effect=Look at the top five cards of your library. You may reveal a colorless card from among them and put it into your hand. Then put the rest on the bottom of your library in any order.

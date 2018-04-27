@@ -1,6 +1,6 @@
 name=Zoetic Cavern
-image=https://magiccards.info/scans/en/c14/317.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/a25/249.jpg
+image_updated=2018-04-27
 value=3.244
 rarity=U
 type=Land

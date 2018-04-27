@@ -1,7 +1,8 @@
 name=Crimson Mage
-image=https://magiccards.info/scans/en/m12/129.jpg
+image=https://magiccards.info/scans/en/a25/127.jpg
+image_updated=2018-04-27
 value=3.636
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Shaman
 cost={1}{R}

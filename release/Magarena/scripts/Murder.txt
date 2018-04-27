@@ -1,6 +1,6 @@
 name=Murder
-image=https://magiccards.info/scans/en/cn2/143.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/a25/98.jpg
+image_updated=2018-04-27
 value=3.684
 removal=5
 rarity=C

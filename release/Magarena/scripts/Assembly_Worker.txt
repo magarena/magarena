@@ -1,8 +1,8 @@
 name=Assembly-Worker
-image=https://magiccards.info/scans/en/ts/248.jpg
-image_updated=2016-11-20
+image=https://magiccards.info/scans/en/a25/221.jpg
+image_updated=2018-04-26
 value=2.851
-rarity=U
+rarity=C
 type=Artifact,Creature
 subtype=Assembly-Worker
 cost={3}

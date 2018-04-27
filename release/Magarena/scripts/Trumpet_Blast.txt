@@ -1,6 +1,6 @@
 name=Trumpet Blast
-image=https://magiccards.info/scans/en/ima/151.jpg
-image_updated=2017-04-12
+image=https://magiccards.info/scans/en/a25/154.jpg
+image_updated=2018-04-27
 value=2.750
 rarity=C
 type=Instant

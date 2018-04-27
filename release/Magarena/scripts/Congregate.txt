@@ -1,5 +1,6 @@
 name=Congregate
-image=https://magiccards.info/scans/en/m15/6.jpg
+image=https://magiccards.info/scans/en/a25/8.jpg
+image_updated=2018-04-27
 value=2.800
 rarity=U
 type=Instant

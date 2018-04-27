@@ -1,5 +1,6 @@
 name=Ordeal of Heliod
-image=https://magiccards.info/scans/en/ths/25.jpg
+image=https://magiccards.info/scans/en/a25/27.jpg
+image_updated=2018-04-27
 value=3.535
 rarity=U
 type=Enchantment

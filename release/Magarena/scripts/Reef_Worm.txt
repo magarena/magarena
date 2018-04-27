@@ -1,5 +1,6 @@
 name=Reef Worm
-image=https://magiccards.info/scans/en/c14/16.jpg
+image=https://magiccards.info/scans/en/a25/70.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=R
 type=Creature

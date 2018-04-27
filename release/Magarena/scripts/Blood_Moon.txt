@@ -1,10 +1,10 @@
 name=Blood Moon
-image=https://magiccards.info/scans/en/mm3/90.jpg
-image_updated=2017-08-08
+image=https://magiccards.info/scans/en/a25/122.jpg
+image_updated=2018-04-27
 value=4.483
 rarity=R
 type=Enchantment
 cost={2}{R}
 timing=enchantment
-requires_groovy_code
 oracle=Nonbasic lands are Mountains.
+requires_groovy_code

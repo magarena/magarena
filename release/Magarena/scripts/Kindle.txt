@@ -1,5 +1,6 @@
 name=Kindle
-image=https://magiccards.info/scans/en/tp/184.jpg
+image=https://magiccards.info/scans/en/a25/140.jpg
+image_updated=2018-04-27
 value=3.500
 rarity=C
 type=Instant

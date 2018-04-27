@@ -1,7 +1,8 @@
 name=Quicksilver Dagger
-image=https://magiccards.info/scans/en/ap/118.jpg
+image=https://magiccards.info/scans/en/a25/215.jpg
+image_updated=2018-04-27
 value=4.183
-rarity=C
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}{R}

@@ -1,5 +1,6 @@
 name=Grenzo, Dungeon Warden
-image=https://magiccards.info/scans/en/cns/47.jpg
+image=https://magiccards.info/scans/en/a25/205.jpg
+image_updated=2018-04-27
 value=4.059
 rarity=R
 type=Legendary,Creature
@@ -8,5 +9,5 @@ cost={X}{B}{R}
 pt=2/2
 ability=SN enters the battlefield with X +1/+1 counters on it.
 timing=main
-requires_groovy_code
 oracle=Grenzo, Dungeon Warden enters the battlefield with X +1/+1 counters on it.\n{2}: Put the bottom card of your library into your graveyard. If it's a creature card with power less than or equal to Grenzo's power, put it onto the battlefield.
+requires_groovy_code

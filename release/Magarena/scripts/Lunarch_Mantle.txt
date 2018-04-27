@@ -1,6 +1,6 @@
 name=Lunarch Mantle
-image=https://magiccards.info/scans/en/emn/35.jpg
-image_updated=2016-09-05
+image=https://magiccards.info/scans/en/a25/24.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=C
 type=Enchantment

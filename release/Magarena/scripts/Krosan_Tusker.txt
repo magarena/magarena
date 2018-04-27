@@ -1,7 +1,8 @@
 name=Krosan Tusker
-image=https://magiccards.info/scans/en/cmd/164.jpg
+image=https://magiccards.info/scans/en/a25/178.jpg
+image_updated=2018-04-27
 value=4.000
-rarity=C
+rarity=U
 type=Creature
 subtype=Boar,Beast
 cost={5}{G}{G}

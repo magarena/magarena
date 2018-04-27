@@ -1,5 +1,6 @@
 name=Griffin Protector
-image=https://magiccards.info/scans/en/m13/16.jpg
+image=https://magiccards.info/scans/en/a25/17.jpg
+image_updated=2018-04-27
 value=2.806
 rarity=C
 type=Creature

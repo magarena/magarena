@@ -1,9 +1,10 @@
 name=Ensnaring Bridge
-image=https://magiccards.info/scans/en/8e/300.jpg
+image=https://magiccards.info/scans/en/a25/224.jpg
+image_updated=2018-04-27
 value=4.356
-rarity=R
+rarity=M
 type=Artifact
 cost={3}
 timing=artifact
-requires_groovy_code
 oracle=Creatures with power greater than the number of cards in your hand can't attack.
+requires_groovy_code

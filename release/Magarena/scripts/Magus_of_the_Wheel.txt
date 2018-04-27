@@ -1,6 +1,6 @@
 name=Magus of the Wheel
-image=https://magiccards.info/scans/en/c15/27.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/a25/142.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=R
 type=Creature

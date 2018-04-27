@@ -1,8 +1,8 @@
 name=Ancient Craving
-image=https://magiccards.info/scans/en/st/64.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/a25/79.jpg
+image_updated=2018-04-26
 value=3.875
-rarity=R
+rarity=U
 type=Sorcery
 cost={3}{B}
 effect=You draw three cards and you lose 3 life.

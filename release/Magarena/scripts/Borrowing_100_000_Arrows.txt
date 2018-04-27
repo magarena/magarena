@@ -1,10 +1,11 @@
 name=Borrowing 100,000 Arrows
-image=https://magiccards.info/scans/en/p3k/35.jpg
+image=https://magiccards.info/scans/en/a25/45.jpg
+image_updated=2018-04-27
 value=3.783
-rarity=U
+rarity=C
 type=Sorcery
 cost={2}{U}
 ability=Cast SN with AI only if an opponent controls a tapped creature.
 timing=draw
-requires_groovy_code=Theft of Dreams
 oracle=Draw a card for each tapped creature target opponent controls.
+requires_groovy_code=Theft of Dreams

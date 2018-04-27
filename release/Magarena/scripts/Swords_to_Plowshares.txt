@@ -1,6 +1,6 @@
 name=Swords to Plowshares
-image=https://magiccards.info/scans/en/ima/36.jpg
-image_updated=2017-04-12
+image=https://magiccards.info/scans/en/a25/35.jpg
+image_updated=2018-04-27
 value=4.731
 removal=4
 rarity=U

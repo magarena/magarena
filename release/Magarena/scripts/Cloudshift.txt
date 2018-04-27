@@ -1,5 +1,6 @@
 name=Cloudshift
-image=https://magiccards.info/scans/en/avr/12.jpg
+image=https://magiccards.info/scans/en/a25/7.jpg
+image_updated=2018-04-27
 value=3.955
 rarity=C
 type=Instant

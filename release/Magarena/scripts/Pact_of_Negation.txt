@@ -1,5 +1,6 @@
 name=Pact of Negation
-image=https://magiccards.info/scans/en/mma/56.jpg
+image=https://magiccards.info/scans/en/a25/68.jpg
+image_updated=2018-04-27
 value=4.588
 rarity=R
 type=Instant

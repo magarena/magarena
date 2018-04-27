@@ -1,6 +1,6 @@
 name=Watchwolf
-image=https://magiccards.info/scans/en/rav/239.jpg
-image_updated=2017-01-11
+image=https://magiccards.info/scans/en/a25/220.jpg
+image_updated=2018-04-27
 value=4.016
 rarity=U
 type=Creature

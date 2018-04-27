@@ -1,7 +1,8 @@
 name=Krosan Colossus
-image=https://magiccards.info/scans/en/on/270.jpg
+image=https://magiccards.info/scans/en/a25/177.jpg
+image_updated=2018-04-27
 value=3.272
-rarity=R
+rarity=U
 type=Creature
 subtype=Beast
 cost={6}{G}{G}{G}

@@ -1,6 +1,6 @@
 name=Zombify
-image=https://magiccards.info/scans/en/9e/171.jpg
-image_updated=2017-01-11
+image=https://magiccards.info/scans/en/a25/116.jpg
+image_updated=2018-04-27
 value=4.237
 rarity=U
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Pillory of the Sleepless
-image=https://magiccards.info/scans/en/mm2/183.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/a25/213.jpg
+image_updated=2018-04-27
 value=4.091
 removal=4
 rarity=U

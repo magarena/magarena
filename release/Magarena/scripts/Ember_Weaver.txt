@@ -1,5 +1,6 @@
 name=Ember Weaver
-image=https://magiccards.info/scans/en/cfx/81.jpg
+image=https://magiccards.info/scans/en/a25/169.jpg
+image_updated=2018-04-27
 value=3.161
 rarity=C
 type=Creature

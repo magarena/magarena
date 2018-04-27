@@ -1,5 +1,6 @@
 name=Arbor Elf
-image=https://magiccards.info/scans/en/m13/160.jpg
+image=https://magiccards.info/scans/en/a25/160.jpg
+image_updated=2018-04-26
 value=3.970
 rarity=C
 type=Creature

@@ -1,5 +1,6 @@
 name=Azusa, Lost but Seeking
-image=https://magiccards.info/scans/en/chk/201.jpg
+image=https://magiccards.info/scans/en/a25/161.jpg
+image_updated=2018-04-26
 value=4.047
 rarity=R
 type=Legendary,Creature

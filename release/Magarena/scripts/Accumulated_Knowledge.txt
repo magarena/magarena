@@ -1,6 +1,6 @@
 name=Accumulated Knowledge
-image=https://magiccards.info/scans/en/ne/26.jpg
-image_updated=2016-11-20
+image=https://magiccards.info/scans/en/a25/40.jpg
+image_updated=2018-04-26
 value=4.560
 rarity=C
 type=Instant

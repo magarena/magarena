@@ -1,6 +1,6 @@
 name=Nihil Spellbomb
-image=https://magiccards.info/scans/en/c17/218.jpg
-image_updated=2017-10-03
+image=https://magiccards.info/scans/en/a25/226.jpg
+image_updated=2018-04-27
 value=4.483
 rarity=C
 type=Artifact

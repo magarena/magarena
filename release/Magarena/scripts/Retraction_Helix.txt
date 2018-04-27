@@ -1,5 +1,6 @@
 name=Retraction Helix
-image=https://magiccards.info/scans/en/bng/49.jpg
+image=https://magiccards.info/scans/en/a25/71.jpg
+image_updated=2018-04-27
 value=3.603
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Swiftfoot Boots
-image=https://magiccards.info/scans/en/c16/276.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/a25/234.jpg
+image_updated=2018-04-27
 value=3.792
 rarity=U
 type=Artifact

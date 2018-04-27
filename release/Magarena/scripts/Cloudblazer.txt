@@ -1,6 +1,6 @@
 name=Cloudblazer
-image=https://magiccards.info/scans/en/kld/176.jpg
-image_updated=2016-10-05
+image=https://magiccards.info/scans/en/a25/201.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=U
 type=Creature

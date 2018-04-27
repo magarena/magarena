@@ -1,6 +1,6 @@
 name=Lightning Bolt
-image=https://magiccards.info/scans/en/mm2/122.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/a25/141.jpg
+image_updated=2018-04-27
 value=4.603
 removal=3
 rarity=U

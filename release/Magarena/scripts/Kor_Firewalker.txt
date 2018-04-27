@@ -1,5 +1,6 @@
 name=Kor Firewalker
-image=https://magiccards.info/scans/en/wwk/11.jpg
+image=https://magiccards.info/scans/en/a25/21.jpg
+image_updated=2018-04-27
 value=3.805
 rarity=U
 type=Creature

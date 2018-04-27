@@ -1,8 +1,8 @@
 name=Frenzied Goblin
-image=https://magiccards.info/scans/en/m15/142.jpg
-image_updated=2016-12-02
+image=https://magiccards.info/scans/en/a25/131.jpg
+image_updated=2018-04-27
 value=3.667
-rarity=U
+rarity=C
 type=Creature
 subtype=Goblin,Berserker
 cost={R}

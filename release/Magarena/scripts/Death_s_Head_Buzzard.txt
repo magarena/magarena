@@ -1,5 +1,6 @@
 name=Death's-Head Buzzard
-image=https://magiccards.info/scans/en/sc/63.jpg
+image=https://magiccards.info/scans/en/a25/84.jpg
+image_updated=2018-04-27
 value=4.000
 rarity=C
 type=Creature

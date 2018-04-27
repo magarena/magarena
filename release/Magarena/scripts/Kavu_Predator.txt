@@ -1,6 +1,6 @@
 name=Kavu Predator
-image=https://magiccards.info/scans/en/pc/132.jpg
-image_updated=2016-09-12
+image=https://magiccards.info/scans/en/a25/176.jpg
+image_updated=2018-04-27
 value=4.207
 rarity=U
 type=Creature
@@ -9,5 +9,5 @@ cost={1}{G}
 pt=2/2
 ability=Trample
 timing=main
-requires_groovy_code
 oracle=Trample\nWhenever an opponent gains life, put that many +1/+1 counters on Kavu Predator.
+requires_groovy_code

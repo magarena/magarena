@@ -1,7 +1,8 @@
 name=Exclude
-image=https://magiccards.info/scans/en/c14/108.jpg
+image=https://magiccards.info/scans/en/a25/55.jpg
+image_updated=2018-04-27
 value=4.193
-rarity=C
+rarity=U
 type=Instant
 cost={2}{U}
 effect=Counter target creature spell.~Draw a card.

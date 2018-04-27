@@ -1,6 +1,6 @@
 name=Arcane Denial
-image=https://magiccards.info/scans/en/c16/83.jpg
-image_updated=2017-08-29
+image=https://magiccards.info/scans/en/a25/41.jpg
+image_updated=2018-04-26
 value=4.103
 rarity=C
 type=Instant

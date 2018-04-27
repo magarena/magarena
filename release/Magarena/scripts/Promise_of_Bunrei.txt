@@ -1,7 +1,8 @@
 name=Promise of Bunrei
-image=https://magiccards.info/scans/en/sok/24.jpg
+image=https://magiccards.info/scans/en/a25/30.jpg
+image_updated=2018-04-27
 value=3.945
-rarity=R
+rarity=U
 type=Enchantment
 cost={2}{W}
 ability=When a creature you control dies, sacrifice SN. If you do, create four 1/1 colorless Spirit creature tokens.

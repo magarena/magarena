@@ -1,8 +1,8 @@
 name=Loyal Sentry
-image=https://magiccards.info/scans/en/10e/27.jpg
-image_updated=2016-12-21
+image=https://magiccards.info/scans/en/a25/22.jpg
+image_updated=2018-04-27
 value=4.214
-rarity=R
+rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={W}

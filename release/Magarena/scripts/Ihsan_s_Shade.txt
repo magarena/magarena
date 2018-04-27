@@ -1,5 +1,6 @@
 name=Ihsan's Shade
-image=https://magiccards.info/scans/en/hl/16.jpg
+image=https://magiccards.info/scans/en/a25/94.jpg
+image_updated=2018-04-27
 value=3.788
 rarity=U
 type=Legendary,Creature

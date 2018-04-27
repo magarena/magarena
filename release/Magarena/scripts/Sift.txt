@@ -1,5 +1,6 @@
 name=Sift
-image=https://magiccards.info/scans/en/10e/108.jpg
+image=https://magiccards.info/scans/en/a25/73.jpg
+image_updated=2018-04-27
 value=3.170
 rarity=C
 type=Sorcery

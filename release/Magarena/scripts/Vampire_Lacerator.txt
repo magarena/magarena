@@ -1,5 +1,6 @@
 name=Vampire Lacerator
-image=https://magiccards.info/scans/en/mm2/101.jpg
+image=https://magiccards.info/scans/en/a25/114.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=C
 type=Creature

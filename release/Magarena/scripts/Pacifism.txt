@@ -1,5 +1,6 @@
 name=Pacifism
-image=https://magiccards.info/scans/en/ema/23.jpg
+image=https://magiccards.info/scans/en/a25/28.jpg
+image_updated=2018-04-27
 value=4.032
 removal=3
 rarity=C

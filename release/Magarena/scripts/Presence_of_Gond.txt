@@ -1,5 +1,6 @@
 name=Presence of Gond
-image=https://magiccards.info/scans/en/shm/125.jpg
+image=https://magiccards.info/scans/en/a25/184.jpg
+image_updated=2018-04-27
 value=3.773
 rarity=C
 type=Enchantment

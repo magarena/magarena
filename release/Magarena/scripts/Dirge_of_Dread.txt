@@ -1,5 +1,6 @@
 name=Dirge of Dread
-image=https://magiccards.info/scans/en/on/138.jpg
+image=https://magiccards.info/scans/en/a25/86.jpg
+image_updated=2018-04-27
 value=3.136
 rarity=C
 type=Sorcery

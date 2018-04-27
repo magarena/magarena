@@ -1,5 +1,6 @@
 name=Stampede Driver
-image=https://magiccards.info/scans/en/ne/122.jpg
+image=https://magiccards.info/scans/en/a25/188.jpg
+image_updated=2018-04-27
 value=3.733
 rarity=U
 type=Creature

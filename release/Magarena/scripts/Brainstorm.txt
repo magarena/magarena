@@ -1,9 +1,10 @@
 name=Brainstorm
-image=https://magiccards.info/scans/en/ema/40.jpg
+image=https://magiccards.info/scans/en/a25/46.jpg
+image_updated=2018-04-27
 value=4.750
-rarity=U
+rarity=C
 type=Instant
 cost={U}
 timing=draw
-requires_groovy_code
 oracle=Draw three cards, then put two cards from your hand on top of your library in any order.
+requires_groovy_code

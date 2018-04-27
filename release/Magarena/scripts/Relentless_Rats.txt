@@ -1,7 +1,8 @@
 name=Relentless Rats
-image=https://magiccards.info/scans/en/m11/113.jpg
+image=https://magiccards.info/scans/en/a25/105.jpg
+image_updated=2018-04-26
 value=4.015
-rarity=U
+rarity=C
 type=Creature
 subtype=Rat
 cost={1}{B}{B}

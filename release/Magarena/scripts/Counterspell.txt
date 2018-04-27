@@ -1,5 +1,6 @@
 name=Counterspell
-image=https://magiccards.info/scans/en/ema/43.jpg
+image=https://magiccards.info/scans/en/a25/50.jpg
+image_updated=2018-04-27
 value=4.500
 rarity=C
 type=Instant

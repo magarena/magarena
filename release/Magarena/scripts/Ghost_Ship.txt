@@ -1,7 +1,8 @@
 name=Ghost Ship
-image=https://magiccards.info/scans/en/tsts/21.jpg
+image=https://magiccards.info/scans/en/a25/60.jpg
+image_updated=2018-04-27
 value=3.831
-rarity=U
+rarity=C
 type=Creature
 subtype=Spirit
 cost={2}{U}{U}

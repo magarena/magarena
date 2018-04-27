@@ -1,6 +1,6 @@
 name=Mystic Snake
-image=https://magiccards.info/scans/en/mm2/180.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/a25/208.jpg
+image_updated=2018-04-27
 value=4.375
 rarity=R
 type=Creature

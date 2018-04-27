@@ -1,6 +1,6 @@
 name=Humble Defector
-image=https://magiccards.info/scans/en/c16/129.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/a25/135.jpg
+image_updated=2018-04-27
 value=2.500
 rarity=U
 type=Creature
@@ -8,5 +8,5 @@ subtype=Human,Rogue
 cost={1}{R}
 pt=2/1
 timing=main
-requires_groovy_code
 oracle={T}: Draw two cards. Target opponent gains control of Humble Defector. Activate this ability only during your turn.
+requires_groovy_code

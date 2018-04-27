@@ -1,5 +1,6 @@
 name=Quicksand
-image=https://magiccards.info/scans/en/cns/209.jpg
+image=https://magiccards.info/scans/en/a25/245.jpg
+image_updated=2018-04-27
 value=3.625
 rarity=U
 type=Land

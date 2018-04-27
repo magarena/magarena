@@ -1,6 +1,6 @@
 name=Bident of Thassa
-image=https://magiccards.info/scans/en/c15/86.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/a25/42.jpg
+image_updated=2018-04-27
 value=3.551
 rarity=R
 type=Legendary,Enchantment,Artifact

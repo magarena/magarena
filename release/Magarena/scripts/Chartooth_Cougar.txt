@@ -1,5 +1,6 @@
 name=Chartooth Cougar
-image=https://magiccards.info/scans/en/cns/139.jpg
+image=https://magiccards.info/scans/en/a25/125.jpg
+image_updated=2018-04-27
 value=3.625
 rarity=C
 type=Creature

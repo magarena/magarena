@@ -1,7 +1,8 @@
 name=Pendelhaven
-image=https://magiccards.info/scans/en/tsts/120.jpg
+image=https://magiccards.info/scans/en/a25/244.jpg
+image_updated=2018-04-27
 value=4.362
-rarity=U
+rarity=R
 type=Legendary,Land
 ability={T}: Add {G}.;\
         {T}: Target 1/1 creature gets +1/+2 until end of turn.
