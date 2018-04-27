@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Scout
 cost={1}{G}{G}
 pt=2/1
-ability=When SN enters the battlefield, it explores, then it explores again.
 timing=main
+requires_groovy_code
 oracle=When Jadelight Ranger enters the battlefield, it explores, then it explores again.

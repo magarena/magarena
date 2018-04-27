@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}
-ability=Whenever a creature enters the battlefield under your control, it explores.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a creature enters the battlefield under your control, it explores.

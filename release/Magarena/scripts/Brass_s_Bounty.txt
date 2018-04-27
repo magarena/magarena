@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={6}{R}
-effect=For each land you control, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."
 timing=main
+requires_groovy_code
 oracle=For each land you control, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."

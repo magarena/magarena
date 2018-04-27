@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={3}{B}
 pt=1/4
-ability=Whenever another creature you control dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."
+ability=Whenever another creature you control dies, create a colorless Treasure artifact token.
 timing=main
 oracle=Whenever another creature you control dies, create a colorless Treasure artifact token with "{T}, Sacrifice this artifact: Add one mana of any color."
