@@ -75,6 +75,48 @@ Thank you for your support and have fun!
 
 Release 1.93 (April 29, 2018)
 ============
+Fulmene
+kelsioboy
+Martin Petricek
+melvin
+ShawnieBoy
+
+- remove "to mana pool" from abilities that produce mana
+
+- simplify and generalise code for parsing target choice
+
+- support abilities that trigger when a counter is put on a card, or one or
+  more counters are put
+
+- support Saga subtype, historic keyword, and legendary sorceries
+
+- added the following to the card script:
+  * trigger: Whenever you put one or more counters, <effect>
+
+- fixed the following bugs:
+  * revealed libreary cards are not tracked corrected during MCTS rollouts (issue #1506)
+  * Sequestered Stash incorrect mana cost for activated ability
+  * Deathgorge Scavenger did not exile target card from a graveyard (issue #1547)
+  * Verdant Sun's Avatar triggers for any permanent, not just creatures (issue #1547)
+  * Scrap Trawler able to return artifact card with same converted mana cost
+    as the artifact you control that is put into a graveyard from the
+    battlefield (issue #1556)
+
+- added the following cards:
+Admiral's Order, Arterial Flow, Atzal, Cave of Eternity, Blazing Hope,
+Bloodcrazed Hoplite, Brass's Bounty, Chameleon Spirit, Corpsejack Menace,
+Crashing Tide, Crypt Incursion, Custodi Soulcaller, Debt to the Deathless,
+Defiant Greatmaw, Divine Congregation, Elemental Mastery,
+Enduring Scalelord, Enter the Unknown, Fanatical Firebrand, Fathom Mage,
+Flourishing Defenses, Form of the Dinosaur, Ghalta, Primal Hunger,
+Goblin Archaeologist, Goblin Festival, Gravestorm, Hammer of Nazahn,
+Hapatra, Vizier of Poisons, Hardened Scales, Hornswoggle, Horribly Awry,
+Jadelight Ranger, Journey to Eternity, Lurking Predators, Master the Way,
+Meren of Clan Nel Toth, Molten Influence, Nazahn, Revered Bladesmith,
+Necromancer's Covenant, Nest of Scarabs, Nezahal, Primal Tide,
+Obelisk Spider, Path of Discovery, Pirate's Pillage, Pitiless Plunderer,
+Prying Questions, Radiant Kavu, Tatterkite, Temple Altisaur, Thoughtbind,
+Vizier of Remedies, Vraska's Scorn, Winding Constrictor, World Shaper
 
 Release 1.92 (March 31, 2018)
 ============
