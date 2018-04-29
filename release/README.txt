@@ -73,6 +73,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.93 (April 29, 2018)
+============
+
 Release 1.92 (March 31, 2018)
 ============
 Fulmene
