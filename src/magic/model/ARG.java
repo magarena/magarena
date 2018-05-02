@@ -1,9 +1,11 @@
 package magic.model;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import magic.data.EnglishToInt;
+import magic.data.RomanToInt;
 import magic.model.action.MagicPlayMod;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
@@ -320,4 +322,11 @@ public class ARG {
             return MagicTargetFilterFactory.SPELL_OR_ABILITY;
         }
     }
+
+    public static final String CHAPTERS = "(?<chapters>I+(, I+)*)";
+    public static int[] chapters(final Matcher m) {
+        final String[] chapters = m.group("chapters").split(", ");
+        return Arrays.stream(chapters).mapToInt(RomanToInt::convert).toArray();
+    }
+
 }
