@@ -888,7 +888,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         // The comprehensive rules doesn't say that all Sagas must have exactly 3 chapters though.
         if (isSaga() && getCounters(MagicCounterType.Lore) >= 3 &&
                 game.getStack().stream().noneMatch(item -> item.getSource() == this) &&
-                game.getPendingStack().stream().noneMatch(item -> item.getSource() == this)) {
+                game.getPendingTriggers().stream().noneMatch(item -> item.getSource() == this)) {
 
             game.logAppendMessage(
                 getController(),
