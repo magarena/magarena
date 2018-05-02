@@ -883,6 +883,19 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             game.addDelayedAction(new RemoveFromPlayAction(this, MagicLocationType.Graveyard));
         }
 
+        // Only support Sagas with 3 chapters for now.
+        // The comprehensive rules doesn't say that all Sagas must have exactly 3 chapters though.
+        if (isSaga() && getCounters(MagicCounterType.Lore) >= 3 &&
+                game.getStack().stream().noneMatch(item -> item.getSource() == this) &&
+                game.getPendingStack().stream().noneMatch(item -> item.getSource() == this)) {
+
+            game.logAppendMessage(
+                getController(),
+                MagicMessage.format("Sacrifice %s.", this)
+            );
+            game.addDelayedAction(new SacrificeAction(this));
+        }
+
         // +1/+1 and -1/-1 counters cancel each other out.
         final int plusCounters = getCounters(MagicCounterType.PlusOne);
         if (plusCounters > 0) {
@@ -1166,6 +1179,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
 
     public boolean isAura() {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
+    }
+
+    public boolean isSaga() {
+        return isEnchantment() && hasSubType(MagicSubType.Saga);
     }
 
     public boolean isFaceDown() {
