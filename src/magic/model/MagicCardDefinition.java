@@ -240,7 +240,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
                 startingLoyalty
             ));
         }
-        if (isSaga()) {
+        if (isSaga() && etbTriggers.isEmpty()) {
             add(new EntersWithCounterTrigger(MagicCounterType.Lore, 1));
             add(AtBeginOfFirstMainPhaseTrigger.Saga);
         }
