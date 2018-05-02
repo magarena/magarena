@@ -1,6 +1,10 @@
 package magic.model.phase;
 
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.action.ChangeCountersAction;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicMainPhase extends MagicPhase {
@@ -22,7 +26,14 @@ public class MagicMainPhase extends MagicPhase {
 
     @Override
     public void executeBeginStep(final MagicGame game) {
+
+        final MagicPlayer player = game.getTurnPlayer();
+
         if (this == FIRST_INSTANCE) {
+            player.getPermanents().stream().filter(MagicPermanent::isSaga).forEach(
+                permanent -> game.doAction(new ChangeCountersAction(player, permanent, MagicCounterType.Lore, 1))
+            );
+
             game.executeTrigger(MagicTriggerType.AtBeginOfFirstMainPhase,game.getTurnPlayer());
         }
 

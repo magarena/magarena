@@ -242,7 +242,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
         if (isSaga() && etbTriggers.isEmpty()) {
             add(new EntersWithCounterTrigger(MagicCounterType.Lore, 1));
-            add(AtBeginOfFirstMainPhaseTrigger.Saga);
         }
         if (requiresGroovy != null) {
             CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);
