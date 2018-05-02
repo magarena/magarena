@@ -20,6 +20,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
 import magic.model.action.DestroyAction;
 import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.SacrificeAction;
 import magic.model.action.SoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
