@@ -5,7 +5,6 @@ rarity=R
 type=Enchantment
 subtype=Saga
 cost={3}{G}{G}
-ability=Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.;\
-        Return all land cards from your graveyard to the battlefield, then shuffle your graveyard into your library.
 timing=enchantment
+requires_groovy_code
 oracle=I, II — Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.\nIII — Return all land cards from your graveyard to the battlefield, then shuffle your graveyard into your library.
