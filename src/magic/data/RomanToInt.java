@@ -3,10 +3,6 @@ package magic.data;
 public class RomanToInt {
 
     public static int convert(String num) {
-        if (num == null) {
-            return 1;
-        }
-
         // Only support 1-3 for now since Sagas only have these numbers
         switch (num) {
             case "I": return 1;
