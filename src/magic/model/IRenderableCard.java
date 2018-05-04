@@ -78,6 +78,10 @@ public interface IRenderableCard {
         return hasType(MagicType.Sorcery);
     }
 
+    default boolean isSaga() {
+        return isEnchantment() && hasSubType(MagicSubType.Saga);
+    }
+
     default boolean isHidden() {
         return getCardDefinition().isHidden();
     }

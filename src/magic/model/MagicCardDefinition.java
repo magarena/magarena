@@ -515,10 +515,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
     }
 
-    public boolean isSaga() {
-        return isEnchantment() && hasSubType(MagicSubType.Saga);
-    }
-
     public boolean isSpell() {
         return isInstant()||isSorcery();
     }

@@ -1182,10 +1182,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return isEnchantment() && hasSubType(MagicSubType.Aura);
     }
 
-    public boolean isSaga() {
-        return isEnchantment() && hasSubType(MagicSubType.Saga);
-    }
-
     public boolean isFaceDown() {
         return hasState(MagicPermanentState.FaceDown);
     }
