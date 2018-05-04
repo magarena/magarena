@@ -5,7 +5,7 @@ rarity=M
 type=Enchantment
 subtype=Saga
 cost={1}{W}{W}
-ability=Create a 2/2 white Knight creature token with vigilance.;\
-        Knights you control get +2/+1 until end of turn.
+ability=I, II — Create a 2/2 white Knight creature token with vigilance.;\
+        III — Knights you control get +2/+1 until end of turn.
 timing=enchantment
 oracle=I, II — Create a 2/2 white Knight creature token with vigilance.\nIII — Knights you control get +2/+1 until end of turn.

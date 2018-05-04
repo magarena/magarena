@@ -9,6 +9,7 @@ import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.condition.MagicCondition;
+import magic.model.trigger.AtBeginOfFirstMainPhaseTrigger;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicTrigger;
@@ -238,6 +239,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
                 MagicCounterType.Loyalty,
                 startingLoyalty
             ));
+        }
+        if (isSaga() && etbTriggers.isEmpty()) {
+            add(new EntersWithCounterTrigger(MagicCounterType.Lore, 1));
+            add(AtBeginOfFirstMainPhaseTrigger.Saga);
         }
         if (requiresGroovy != null) {
             CardProperty.LOAD_GROOVY_CODE.setProperty(this, requiresGroovy);

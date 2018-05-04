@@ -639,6 +639,16 @@ public enum MagicAbility {
             card.add(MagicStatic.Ascend);
         }
     },
+    Chapter(ARG.CHAPTERS + " — " + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int[] chapters = ARG.chapters(arg);
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            for (int chapter : chapters) {
+                card.add(SagaChapterTrigger.create(chapter, sourceEvent));
+            }
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may " + ARG.COST + "\\. If you don't, SN enters the battlefield tapped\\.", -10) {

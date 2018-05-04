@@ -20,6 +20,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.action.ChangeStateAction;
 import magic.model.action.DestroyAction;
 import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.SacrificeAction;
 import magic.model.action.SoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
@@ -881,6 +882,19 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 MagicMessage.format("%s is put into its owner's graveyard.", this)
             );
             game.addDelayedAction(new RemoveFromPlayAction(this, MagicLocationType.Graveyard));
+        }
+
+        // Only support Sagas with 3 chapters for now.
+        // The comprehensive rules doesn't say that all Sagas must have exactly 3 chapters though.
+        if (isSaga() && getCounters(MagicCounterType.Lore) >= 3 &&
+                game.getStack().stream().noneMatch(item -> item.getSource() == this) &&
+                game.getPendingTriggers().stream().noneMatch(item -> item.getSource() == this)) {
+
+            game.logAppendMessage(
+                getController(),
+                MagicMessage.format("Sacrifice %s.", this)
+            );
+            game.addDelayedAction(new SacrificeAction(this));
         }
 
         // +1/+1 and -1/-1 counters cancel each other out.
