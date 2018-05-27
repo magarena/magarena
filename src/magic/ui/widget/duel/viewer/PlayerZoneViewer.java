@@ -148,9 +148,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
                     getAiPlayer().hand,
                     showFullScreen,
                     getZoneName(getAiPlayer(), MagicPlayerZone.HAND),
-                    getUserPlayer().isAi() || MagicSystem.isDevMode() || MagicSystem.isTestGame()
-                        ? CardImageViewerMode.PLAIN
-                        : CardImageViewerMode.FACEDOWN
+                    CardImageViewerMode.PLAIN
                 );
                 break;
         }
