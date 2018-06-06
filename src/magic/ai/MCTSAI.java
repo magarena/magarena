@@ -785,6 +785,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         steps = aSteps;
     }
 
+    // score child nodes based on number of simulations, aka Robust Child strategy
     double getDecision() {
         //boost decision score of win nodes by BOOST
         final int BOOST = 1000000;
