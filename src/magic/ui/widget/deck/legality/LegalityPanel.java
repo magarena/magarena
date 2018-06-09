@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.model.MagicDeckConstructionRule;
 import magic.translate.MText;
 import magic.ui.MagicImages;
 import magic.ui.screen.deck.editor.IDeckEditorView;
@@ -122,11 +123,12 @@ public class LegalityPanel extends JPanel
             add(getIconLabel(MagicIcon.ILLEGAL, MText.get(_S2)));
             add(getIconLabel(MagicIcon.BANNED, MText.get(_S3)));
             add(getIconLabel(MagicIcon.RESTRICTED, MText.get(_S4), MText.get(_S5)));
+            String unlimitedList = MagicDeckConstructionRule.unlimitedCardList("</i> " + MText.get(_S9) + " <i>");
             add(getIconLabel(MagicIcon.RESTRICTED, MText.get(_S6),
-                    String.format("<html><b>%s</b><br>%s<br><i>Relentless Rats</i> %s <i>Shadowborn Apostle</i>.</html>",
+                    String.format("<html><b>%s</b><br>%s<br><i>%s</i>.</html>",
                             MText.get(_S7),
                             MText.get(_S8),
-                            MText.get(_S9))
+                            unlimitedList)
             ));
         }
 

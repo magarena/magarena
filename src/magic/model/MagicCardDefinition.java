@@ -159,8 +159,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public boolean canHaveAnyNumberInDeck() {
         return hasType(MagicType.Basic)
-                || name.equals("Relentless Rats")
-                || name.equals("Shadowborn Apostle");
+                || MagicDeckConstructionRule.isUnlimitedCard(name);
     }
 
     protected void initialize() {}
