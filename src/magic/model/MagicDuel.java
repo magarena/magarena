@@ -97,9 +97,18 @@ public class MagicDuel {
     }
 
     public MagicGame nextGame() {
+       return nextGame(MagicRandom.nextRNGInt(), MagicRandom.nextRNGInt(), false);
+    }
+
+    public MagicGame nextGame(int seedP1, int seedP2, boolean flipDecks) {
         //create players
         final MagicPlayer player   = new MagicPlayer(duelConfig.getStartingLife(playerIndex),   duelConfig.getPlayerConfig(playerIndex),   playerIndex);
         final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartingLife(opponentIndex), duelConfig.getPlayerConfig(opponentIndex), opponentIndex);
+        if(flipDecks){
+            MagicDeck tmp = new MagicDeck(player.getConfig().getDeck());
+            player.getConfig().getDeck().setContent(opponent.getConfig().getDeck());
+            opponent.getConfig().getDeck().setContent(new MagicDeck(tmp));
+        }
 
         //determine who starts first
         final MagicPlayer[] players = new MagicPlayer[]{player,opponent};
@@ -114,7 +123,9 @@ public class MagicDuel {
         );
 
         //create hand and library
+        MagicRandom.setRNGState(seedP1);
         player.createHandAndLibrary(duelConfig.getHandSize());
+        MagicRandom.setRNGState(seedP2);
         opponent.createHandAndLibrary(duelConfig.getHandSize());
         return game;
     }
