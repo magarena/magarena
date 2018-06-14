@@ -20,7 +20,15 @@ public class FiremindQueueWorker {
                     "Magarena.jar", "magic.firemind.FiremindDuelRunner");
             pb.redirectErrorStream(true);
             try {
+
                 Process p = pb.start();
+
+                Thread closeChildThread = new Thread() {
+                    public void run() {
+                        p.destroy();
+                    }
+                };
+                Runtime.getRuntime().addShutdownHook(closeChildThread);
                 Reader reader = new InputStreamReader(p.getInputStream(), UTF_8);
                 BufferedReader br = new BufferedReader(reader);
                 String line;
