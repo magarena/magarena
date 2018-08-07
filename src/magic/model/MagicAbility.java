@@ -897,7 +897,7 @@ public enum MagicAbility {
             }
         }
     },
-    AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {
+    AdditionalCost("As an additional cost to cast (SN|this spell), " + ARG.COST, 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAdditionalCost.create(new MagicRegularCostEvent(ARG.cost(arg))));
