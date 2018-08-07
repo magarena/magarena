@@ -15,8 +15,8 @@ def action = {
                 cardOnStack,
                 POS_TARGET_PLAYER,
                 this,
-                "PN's opponent may have SN deal 5 damage to him or her. " +
-                "If he or she doesn't, target player\$ draws three cards."
+                "PN's opponent may have SN deal 5 damage to them. " +
+                "If they don't, target player\$ draws three cards."
             );
         }
         @Override
@@ -28,7 +28,7 @@ def action = {
                     new MagicMayChoice("Have SN deal 5 damage to you?"),
                     it,
                     action,
-                    "PN may\$ have SN deal 5 damage to him or her. If he or she doesn't, RN draws 3 cards."
+                    "PN may\$ have SN deal 5 damage to them. If they don't, RN draws 3 cards."
                 ));
             });
         }
