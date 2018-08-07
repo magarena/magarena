@@ -1,7 +1,8 @@
 name=Crucible of Worlds
-image=https://magiccards.info/scans/en/10e/319.jpg
+image=https://magiccards.info/scans/en/m19/229.jpg
+image_updated=2018-08-07
 value=4.597
-rarity=R
+rarity=M
 type=Artifact
 cost={3}
 ability=You may play land cards from your graveyard.

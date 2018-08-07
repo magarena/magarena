@@ -1,7 +1,8 @@
 name=Scapeshift
-image=https://magiccards.info/scans/en/mt/136.jpg
+image=https://magiccards.info/scans/en/m19/201.jpg
+image_updated=2018-08-07
 value=3.703
-rarity=R
+rarity=M
 type=Sorcery
 cost={2}{G}{G}
 effect=Sacrifice any number of lands. Search your library for up to that many land cards, put them onto the battlefield tapped, then shuffle your library.

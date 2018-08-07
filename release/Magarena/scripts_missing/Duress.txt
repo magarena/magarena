@@ -1,11 +1,11 @@
 name=Duress
-image=https://magiccards.info/scans/en/ima/88.jpg
-image_updated=2017-04-12
+image=https://magiccards.info/scans/en/m19/94.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Sorcery
 cost={B}
-effect=Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.
+effect=Target opponent reveals their hand. You choose a noncreature, nonland card from it. That player discards that card.
 timing=main
-oracle=Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.
+oracle=Target opponent reveals their hand. You choose a noncreature, nonland card from it. That player discards that card.
 status=not supported: reveal-hand

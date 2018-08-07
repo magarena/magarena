@@ -1,10 +1,11 @@
 name=Banefire
-image=https://magiccards.info/scans/en/mm2/104.jpg
+image=https://magiccards.info/scans/en/m19/130.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=SN deals X damage to target creature or player.~If X is 5 or more, SN can't be countered by spells or abilities and the damage can't be prevented.
+effect=SN deals X damage to any target.~If X is 5 or more, this spell can't be countered and the damage can't be prevented.
 timing=main
-oracle=Banefire deals X damage to target creature or player.\nIf X is 5 or more, Banefire can't be countered by spells or abilities and the damage can't be prevented.
+oracle=Banefire deals X damage to any target.\nIf X is 5 or more, this spell can't be countered and the damage can't be prevented.
 status=not supported: spell-modification

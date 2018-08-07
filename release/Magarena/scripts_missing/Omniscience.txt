@@ -1,5 +1,6 @@
 name=Omniscience
-image=https://magiccards.info/scans/en/m13/63.jpg
+image=https://magiccards.info/scans/en/m19/65.jpg
+image_updated=2018-08-07
 value=3.927
 rarity=M
 type=Enchantment

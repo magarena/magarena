@@ -1,5 +1,6 @@
 name=Ghostform
-image=https://magiccards.info/scans/en/avr/56.jpg
+image=https://magiccards.info/scans/en/m19/58.jpg
+image_updated=2018-08-07
 value=2.851
 rarity=C
 type=Sorcery

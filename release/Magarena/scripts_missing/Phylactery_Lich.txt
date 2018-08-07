@@ -1,5 +1,6 @@
 name=Phylactery Lich
-image=https://magiccards.info/scans/en/m13/104.jpg
+image=https://magiccards.info/scans/en/m19/113.jpg
+image_updated=2018-08-07
 value=3.670
 rarity=R
 type=Creature
