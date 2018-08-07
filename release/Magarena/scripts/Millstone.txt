@@ -1,7 +1,8 @@
 name=Millstone
-image=https://magiccards.info/scans/en/10e/334.jpg
+image=https://magiccards.info/scans/en/m19/242.jpg
+image_updated=2018-08-07
 value=3.635
-rarity=R
+rarity=U
 type=Artifact
 cost={2}
 ability={2}, {T}: Target player puts the top two cards of his or her library into his or her graveyard.

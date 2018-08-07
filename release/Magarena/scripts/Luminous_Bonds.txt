@@ -1,5 +1,6 @@
 name=Luminous Bonds
-image=https://magiccards.info/scans/en/rix/12.jpg
+image=https://magiccards.info/scans/en/m19/25.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Enchantment

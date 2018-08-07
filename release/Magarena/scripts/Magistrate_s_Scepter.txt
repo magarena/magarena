@@ -1,5 +1,6 @@
 name=Magistrate's Scepter
-image=https://magiccards.info/scans/en/mm/304.jpg
+image=https://magiccards.info/scans/en/m19/238.jpg
+image_updated=2018-08-07
 value=4.202
 rarity=R
 type=Artifact

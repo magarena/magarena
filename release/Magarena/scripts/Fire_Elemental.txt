@@ -1,5 +1,6 @@
 name=Fire Elemental
-image=https://magiccards.info/scans/en/m13/130.jpg
+image=https://magiccards.info/scans/en/m19/141.jpg
+image_updated=2018-08-07
 value=3.034
 rarity=C
 type=Creature

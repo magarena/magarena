@@ -1,5 +1,6 @@
 name=Explosive Apparatus
-image=https://magiccards.info/scans/en/soi/255.jpg
+image=https://magiccards.info/scans/en/m19/233.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Artifact

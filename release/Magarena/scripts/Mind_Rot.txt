@@ -1,6 +1,6 @@
 name=Mind Rot
-image=https://magiccards.info/scans/en/kld/93.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/m19/109.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Sorcery

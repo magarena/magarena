@@ -1,6 +1,6 @@
 name=Ajani's Pridemate
-image=https://magiccards.info/scans/en/ima/5.jpg
-image_updated=2017-04-12
+image=https://magiccards.info/scans/en/m19/5.jpg
+image_updated=2018-08-07
 value=3.667
 rarity=U
 type=Creature

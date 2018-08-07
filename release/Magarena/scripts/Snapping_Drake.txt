@@ -1,6 +1,6 @@
 name=Snapping Drake
-image=https://magiccards.info/scans/en/m10/72.jpg
-image_updated=2017-01-08
+image=https://magiccards.info/scans/en/m19/75.jpg
+image_updated=2018-08-07
 value=2.811
 rarity=C
 type=Creature

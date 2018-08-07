@@ -1,5 +1,6 @@
 name=Wall of Vines
-image=https://magiccards.info/scans/en/m11/199.jpg
+image=https://magiccards.info/scans/en/m19/210.jpg
+image_updated=2018-08-07
 value=2.803
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Sleep
-image=https://magiccards.info/scans/en/m13/67.jpg
-image_updated=2016-02-29
+image=https://magiccards.info/scans/en/m19/74.jpg
+image_updated=2018-08-07
 value=3.912
 removal=1
 rarity=U

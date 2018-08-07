@@ -1,6 +1,6 @@
 name=Knightly Valor
-image=https://magiccards.info/scans/en/ori/22.jpg
-image_updated=2015-11-05
+image=https://magiccards.info/scans/en/m19/20.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=U
 type=Enchantment

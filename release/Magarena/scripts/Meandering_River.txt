@@ -1,10 +1,9 @@
 name=Meandering River
-image=https://magiccards.info/scans/en/akh/283.jpg
-image_updated=2017-09-29
+image=https://magiccards.info/scans/en/m19/253.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=C
 type=Land
-mana=w3u3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} or {U}.
 timing=land

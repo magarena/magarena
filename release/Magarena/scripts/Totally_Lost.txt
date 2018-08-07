@@ -1,6 +1,6 @@
 name=Totally Lost
-image=https://magiccards.info/scans/en/a25/74.jpg
-image_updated=2018-04-27
+image=https://magiccards.info/scans/en/m19/81.jpg
+image_updated=2018-08-07
 value=2.910
 removal=3
 rarity=C

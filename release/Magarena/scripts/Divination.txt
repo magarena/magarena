@@ -1,6 +1,6 @@
 name=Divination
-image=https://magiccards.info/scans/en/cn2/109.jpg
-image_updated=2017-08-17
+image=https://magiccards.info/scans/en/m19/51.jpg
+image_updated=2018-08-07
 value=3.125
 rarity=C
 type=Sorcery
