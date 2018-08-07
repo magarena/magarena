@@ -7,7 +7,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}{R}
 ability=Enchant creature;\
-        Enchanted creature has "{T}: This creature deals 1 damage to target player.~PN draws a card."
+        Enchanted creature has "{T}: This creature deals 1 damage to target player or planeswalker.~PN draws a card."
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals 1 damage to target player. You draw a card."
+oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals 1 damage to target player or planeswalker. You draw a card."
