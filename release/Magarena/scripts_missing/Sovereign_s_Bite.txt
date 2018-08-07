@@ -1,0 +1,9 @@
+name=Sovereign's Bite
+image=https://magiccards.info/scans/en/m19/120.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{B}
+effect=Target player loses 3 life and you gain 3 life.
+timing=main
+oracle=Target player loses 3 life and you gain 3 life.

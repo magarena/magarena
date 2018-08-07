@@ -1,0 +1,10 @@
+name=Fountain of Renewal
+image=https://magiccards.info/scans/en/m19/235.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability=At the beginning of your upkeep, you gain 1 life.;\
+        {3}, Sacrifice SN: Draw a card.
+timing=artifact
+oracle=At the beginning of your upkeep, you gain 1 life.\n{3}, Sacrifice Fountain of Renewal: Draw a card.

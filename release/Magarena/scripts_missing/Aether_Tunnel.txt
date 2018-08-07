@@ -1,0 +1,12 @@
+name=Aether Tunnel
+image=https://magiccards.info/scans/en/m19/43.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+0 and can't be blocked.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +1/+0 and can't be blocked.

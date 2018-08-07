@@ -1,0 +1,12 @@
+name=Aven Wind Mage
+image=https://magiccards.info/scans/en/m19/45.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Wizard
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        Whenever you cast an instant or sorcery spell, SN gets +1/+1 until end of turn.
+timing=main
+oracle=Flying\nWhenever you cast an instant or sorcery spell, Aven Wind Mage gets +1/+1 until end of turn.

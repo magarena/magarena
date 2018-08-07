@@ -1,0 +1,13 @@
+name=Liliana, Untouched by Death
+image=https://magiccards.info/scans/en/m19/106.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Liliana
+cost={2}{B}{B}
+loyalty=4
+ability=+1: Put the top three cards of your library into your graveyard. If at least one of them is a Zombie card, each opponent loses 2 life and you gain 2 life.;\
+        −2: Target creature gets -X/-X until end of turn, where X is the number of Zombies you control.;\
+        −3: You may cast Zombie cards from your graveyard this turn.
+timing=main
+oracle=+1: Put the top three cards of your library into your graveyard. If at least one of them is a Zombie card, each opponent loses 2 life and you gain 2 life.\n−2: Target creature gets -X/-X until end of turn, where X is the number of Zombies you control.\n−3: You may cast Zombie cards from your graveyard this turn.

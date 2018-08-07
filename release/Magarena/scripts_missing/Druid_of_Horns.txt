@@ -1,0 +1,11 @@
+name=Druid of Horns
+image=https://magiccards.info/scans/en/m19/176.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={3}{G}
+pt=2/3
+ability=Whenever you cast an Aura spell that targets SN, create a 3/3 green Beast creature token.
+timing=main
+oracle=Whenever you cast an Aura spell that targets Druid of Horns, create a 3/3 green Beast creature token.

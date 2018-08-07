@@ -1,0 +1,12 @@
+name=Suspicious Bookcase
+image=https://magiccards.info/scans/en/m19/246.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={2}
+pt=0/4
+ability=Defender;\
+        {3}, {T}: Target creature can't be blocked this turn.
+timing=smain
+oracle=Defender\n{3}, {T}: Target creature can't be blocked this turn.

@@ -1,0 +1,11 @@
+name=Volley Veteran
+image=https://magiccards.info/scans/en/m19/168.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+cost={3}{R}
+pt=4/2
+ability=When SN enters the battlefield, it deals damage to target creature an opponent controls equal to the number of Goblins you control.
+timing=main
+oracle=When Volley Veteran enters the battlefield, it deals damage to target creature an opponent controls equal to the number of Goblins you control.

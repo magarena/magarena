@@ -1,0 +1,12 @@
+name=Herald of Faith
+image=https://magiccards.info/scans/en/m19/13.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=4/3
+ability=Flying;\
+        Whenever SN attacks, you gain 2 life.
+timing=main
+oracle=Flying\nWhenever Herald of Faith attacks, you gain 2 life.

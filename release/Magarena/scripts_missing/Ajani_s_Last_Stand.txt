@@ -1,0 +1,10 @@
+name=Ajani's Last Stand
+image=https://magiccards.info/scans/en/m19/4.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{W}{W}
+ability=Whenever a creature or planeswalker you control dies, you may sacrifice SN. If you do, create a 4/4 white Avatar creature token with flying.;\
+        When a spell or ability an opponent controls causes you to discard this card, if you control a Plains, create a 4/4 white Avatar creature token with flying.
+timing=enchantment
+oracle=Whenever a creature or planeswalker you control dies, you may sacrifice Ajani's Last Stand. If you do, create a 4/4 white Avatar creature token with flying.\nWhen a spell or ability an opponent controls causes you to discard this card, if you control a Plains, create a 4/4 white Avatar creature token with flying.

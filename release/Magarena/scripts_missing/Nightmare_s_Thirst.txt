@@ -1,0 +1,9 @@
+name=Nightmare's Thirst
+image=https://magiccards.info/scans/en/m19/111.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={B}
+effect=You gain 1 life. Target creature gets -X/-X until end of turn, where X is the amount of life you gained this turn.
+timing=removal
+oracle=You gain 1 life. Target creature gets -X/-X until end of turn, where X is the amount of life you gained this turn.

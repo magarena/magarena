@@ -1,0 +1,11 @@
+name=Goblin Instigator
+image=https://magiccards.info/scans/en/m19/142.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{R}
+pt=1/1
+ability=When SN enters the battlefield, create a 1/1 red Goblin creature token.
+timing=main
+oracle=When Goblin Instigator enters the battlefield, create a 1/1 red Goblin creature token.

@@ -1,0 +1,12 @@
+name=Elvish Clancaller
+image=https://magiccards.info/scans/en/m19/179.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Druid
+cost={G}{G}
+pt=1/1
+ability=Other Elves you control get +1/+1.;\
+        {4}{G}{G}, {T}: Search your library for a card named Elvish Clancaller, put it onto the battlefield, then shuffle your library.
+timing=main
+oracle=Other Elves you control get +1/+1.\n{4}{G}{G}, {T}: Search your library for a card named Elvish Clancaller, put it onto the battlefield, then shuffle your library.

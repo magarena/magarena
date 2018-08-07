@@ -1,0 +1,13 @@
+name=Hungering Hydra
+image=https://magiccards.info/scans/en/m19/189.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Hydra
+cost={X}{G}
+pt=0/0
+ability=SN enters the battlefield with X +1/+1 counters on it.;\
+        SN can't be blocked by more than one creature.;\
+        Whenever SN is dealt damage, put that many +1/+1 counters on it.
+timing=main
+oracle=Hungering Hydra enters the battlefield with X +1/+1 counters on it.\nHungering Hydra can't be blocked by more than one creature.\nWhenever Hungering Hydra is dealt damage, put that many +1/+1 counters on it.

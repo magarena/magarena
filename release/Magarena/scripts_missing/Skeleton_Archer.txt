@@ -1,0 +1,11 @@
+name=Skeleton Archer
+image=https://magiccards.info/scans/en/m19/118.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Skeleton,Archer
+cost={3}{B}
+pt=3/3
+ability=When SN enters the battlefield, it deals 1 damage to any target.
+timing=main
+oracle=When Skeleton Archer enters the battlefield, it deals 1 damage to any target.

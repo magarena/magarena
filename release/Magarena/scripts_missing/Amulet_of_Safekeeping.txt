@@ -1,0 +1,10 @@
+name=Amulet of Safekeeping
+image=https://magiccards.info/scans/en/m19/226.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability=Whenever you become the target of a spell or ability an opponent controls, counter that spell or ability unless its controller pays {1}.;\
+        Creature tokens get -1/-0.
+timing=artifact
+oracle=Whenever you become the target of a spell or ability an opponent controls, counter that spell or ability unless its controller pays {1}.\nCreature tokens get -1/-0.

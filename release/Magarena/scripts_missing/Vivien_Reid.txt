@@ -1,0 +1,13 @@
+name=Vivien Reid
+image=https://magiccards.info/scans/en/m19/208.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Vivien
+cost={3}{G}{G}
+loyalty=5
+ability=+1: Look at the top four cards of your library. You may reveal a creature or land card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.;\
+        −3: Destroy target artifact, enchantment, or creature with flying.;\
+        −8: You get an emblem with "Creatures you control get +2/+2 and have vigilance, trample, and indestructible."
+timing=main
+oracle=+1: Look at the top four cards of your library. You may reveal a creature or land card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.\n−3: Destroy target artifact, enchantment, or creature with flying.\n−8: You get an emblem with "Creatures you control get +2/+2 and have vigilance, trample, and indestructible."

@@ -1,0 +1,9 @@
+name=Arcane Encyclopedia
+image=https://magiccards.info/scans/en/m19/227.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability={3}, {T}: Draw a card.
+timing=artifact
+oracle={3}, {T}: Draw a card.

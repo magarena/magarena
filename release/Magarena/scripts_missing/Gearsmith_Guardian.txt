@@ -1,0 +1,11 @@
+name=Gearsmith Guardian
+image=https://magiccards.info/scans/en/m19/237.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=3/5
+ability=SN gets +2/+0 as long as you control a blue creature.
+timing=main
+oracle=Gearsmith Guardian gets +2/+0 as long as you control a blue creature.

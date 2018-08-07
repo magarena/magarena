@@ -1,0 +1,9 @@
+name=Hieromancer's Cage
+image=https://magiccards.info/scans/en/m19/14.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=When SN enters the battlefield, exile target nonland permanent an opponent controls until SN leaves the battlefield.
+timing=enchantment
+oracle=When Hieromancer's Cage enters the battlefield, exile target nonland permanent an opponent controls until Hieromancer's Cage leaves the battlefield.

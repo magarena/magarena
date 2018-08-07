@@ -1,0 +1,12 @@
+name=Novice Knight
+image=https://magiccards.info/scans/en/m19/30.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={W}
+pt=2/3
+ability=Defender;\
+        As long as SN is enchanted or equipped, it can attack as though it didn't have defender.
+timing=smain
+oracle=Defender\nAs long as Novice Knight is enchanted or equipped, it can attack as though it didn't have defender.

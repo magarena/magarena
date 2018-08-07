@@ -1,0 +1,14 @@
+name=Chromium, the Mutable
+image=https://magiccards.info/scans/en/m19/214.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={4}{W}{U}{B}
+pt=7/7
+ability=Flash;\
+        This spell can't be countered.;\
+        Flying;\
+        Discard a card: Until end of turn, SN becomes a Human with base power and toughness 1/1, loses all abilities, and gains hexproof. It can't be blocked this turn.
+timing=flash
+oracle=Flash\nThis spell can't be countered.\nFlying\nDiscard a card: Until end of turn, Chromium, the Mutable becomes a Human with base power and toughness 1/1, loses all abilities, and gains hexproof. It can't be blocked this turn.

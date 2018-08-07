@@ -1,0 +1,11 @@
+name=Rhox Oracle
+image=https://magiccards.info/scans/en/m19/198.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rhino,Monk
+cost={4}{G}
+pt=4/2
+ability=When SN enters the battlefield, draw a card.
+timing=main
+oracle=When Rhox Oracle enters the battlefield, draw a card.

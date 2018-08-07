@@ -1,0 +1,11 @@
+name=Dark-Dweller Oracle
+image=https://magiccards.info/scans/en/m19/134.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Shaman
+cost={1}{R}
+pt=2/2
+ability={1}, Sacrifice a creature: Exile the top card of your library. You may play that card this turn.
+timing=main
+oracle={1}, Sacrifice a creature: Exile the top card of your library. You may play that card this turn.

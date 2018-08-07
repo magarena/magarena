@@ -1,0 +1,12 @@
+name=Demanding Dragon
+image=https://magiccards.info/scans/en/m19/135.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{R}{R}
+pt=5/5
+ability=Flying;\
+        When SN enters the battlefield, it deals 5 damage to target opponent unless that player sacrifices a creature.
+timing=main
+oracle=Flying\nWhen Demanding Dragon enters the battlefield, it deals 5 damage to target opponent unless that player sacrifices a creature.

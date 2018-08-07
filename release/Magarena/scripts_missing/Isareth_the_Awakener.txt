@@ -1,0 +1,12 @@
+name=Isareth the Awakener
+image=https://magiccards.info/scans/en/m19/104.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{B}{B}
+pt=3/3
+ability=Deathtouch;\
+        Whenever SN attacks, you may pay {X}. When you do, return target creature card with converted mana cost X from your graveyard to the battlefield with a corpse counter on it. If that creature would leave the battlefield, exile it instead of putting it anywhere else.
+timing=main
+oracle=Deathtouch\nWhenever Isareth the Awakener attacks, you may pay {X}. When you do, return target creature card with converted mana cost X from your graveyard to the battlefield with a corpse counter on it. If that creature would leave the battlefield, exile it instead of putting it anywhere else.

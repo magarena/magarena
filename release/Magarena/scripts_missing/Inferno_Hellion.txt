@@ -1,0 +1,12 @@
+name=Inferno Hellion
+image=https://magiccards.info/scans/en/m19/148.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Hellion
+cost={3}{R}
+pt=7/3
+ability=Trample;\
+        At the beginning of each end step, if SN attacked or blocked this turn, its owner shuffles it into their library.
+timing=main
+oracle=Trample\nAt the beginning of each end step, if Inferno Hellion attacked or blocked this turn, its owner shuffles it into their library.

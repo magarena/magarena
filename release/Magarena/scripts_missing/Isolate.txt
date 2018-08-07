@@ -1,0 +1,9 @@
+name=Isolate
+image=https://magiccards.info/scans/en/m19/17.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={W}
+effect=Exile target permanent with converted mana cost 1.
+timing=removal
+oracle=Exile target permanent with converted mana cost 1.

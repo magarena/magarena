@@ -1,0 +1,12 @@
+name=Lena, Selfless Champion
+image=https://magiccards.info/scans/en/m19/21.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+cost={4}{W}{W}
+pt=3/3
+ability=When SN enters the battlefield, create a 1/1 white Soldier creature token for each nontoken creature you control.;\
+        Sacrifice Lena: Creatures you control with power less than Lena's power gain indestructible until end of turn.
+timing=main
+oracle=When Lena, Selfless Champion enters the battlefield, create a 1/1 white Soldier creature token for each nontoken creature you control.\nSacrifice Lena: Creatures you control with power less than Lena's power gain indestructible until end of turn.

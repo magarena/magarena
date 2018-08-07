@@ -1,0 +1,9 @@
+name=Aegis of the Heavens
+image=https://magiccards.info/scans/en/m19/1.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Target creature gets +1/+7 until end of turn.
+timing=removal
+oracle=Target creature gets +1/+7 until end of turn.

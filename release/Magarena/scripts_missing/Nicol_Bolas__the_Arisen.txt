@@ -1,0 +1,14 @@
+name=Nicol Bolas, the Arisen
+image=https://magiccards.info/scans/en/m19/218b.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Bolas
+color=ubr
+loyalty=7
+ability=+2: Draw two cards.;\
+        −3: SN deals 10 damage to target creature or planeswalker.;\
+        −4: Put target creature or planeswalker card from a graveyard onto the battlefield under your control.;\
+        −12: Exile all but the bottom card of target player's library.
+timing=main
+oracle=+2: Draw two cards.\n−3: Nicol Bolas, the Arisen deals 10 damage to target creature or planeswalker.\n−4: Put target creature or planeswalker card from a graveyard onto the battlefield under your control.\n−12: Exile all but the bottom card of target player's library.

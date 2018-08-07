@@ -1,0 +1,11 @@
+name=Star-Crowned Stag
+image=https://magiccards.info/scans/en/m19/38.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elk
+cost={3}{W}
+pt=3/3
+ability=Whenever SN attacks, tap target creature defending player controls.
+timing=main
+oracle=Whenever Star-Crowned Stag attacks, tap target creature defending player controls.

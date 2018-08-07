@@ -1,0 +1,9 @@
+name=Uncomfortable Chill
+image=https://magiccards.info/scans/en/m19/82.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Creatures your opponents control get -2/-0 until end of turn.~Draw a card.
+timing=removal
+oracle=Creatures your opponents control get -2/-0 until end of turn.\nDraw a card.

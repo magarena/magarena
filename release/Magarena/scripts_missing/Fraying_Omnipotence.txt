@@ -1,0 +1,9 @@
+name=Fraying Omnipotence
+image=https://magiccards.info/scans/en/m19/97.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Each player loses half their life, then discards half the cards in their hand, then sacrifices half the creatures they control. Round up each time.
+timing=main
+oracle=Each player loses half their life, then discards half the cards in their hand, then sacrifices half the creatures they control. Round up each time.

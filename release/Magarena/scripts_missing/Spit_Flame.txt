@@ -1,0 +1,9 @@
+name=Spit Flame
+image=https://magiccards.info/scans/en/m19/160.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{R}
+effect=SN deals 4 damage to target creature.~Whenever a Dragon enters the battlefield under your control, you may pay {R}. If you do, return SN from your graveyard to your hand.
+timing=removal
+oracle=Spit Flame deals 4 damage to target creature.\nWhenever a Dragon enters the battlefield under your control, you may pay {R}. If you do, return Spit Flame from your graveyard to your hand.

@@ -1,0 +1,9 @@
+name=Fiery Finish
+image=https://magiccards.info/scans/en/m19/140.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{R}{R}
+effect=SN deals 7 damage to target creature.
+timing=main
+oracle=Fiery Finish deals 7 damage to target creature.

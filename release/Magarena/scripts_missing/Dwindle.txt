@@ -1,0 +1,13 @@
+name=Dwindle
+image=https://magiccards.info/scans/en/m19/53.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant creature;\
+        Enchanted creature gets -6/-0.;\
+        When enchanted creature blocks, destroy it.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets -6/-0.\nWhen enchanted creature blocks, destroy it.

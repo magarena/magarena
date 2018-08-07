@@ -1,0 +1,11 @@
+name=Graveyard Marshal
+image=https://magiccards.info/scans/en/m19/99.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Soldier
+cost={B}{B}
+pt=3/2
+ability={2}{B}, Exile a creature card from your graveyard: Create a tapped 2/2 black Zombie creature token.
+timing=main
+oracle={2}{B}, Exile a creature card from your graveyard: Create a tapped 2/2 black Zombie creature token.

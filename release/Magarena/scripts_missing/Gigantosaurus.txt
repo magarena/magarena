@@ -1,0 +1,10 @@
+name=Gigantosaurus
+image=https://magiccards.info/scans/en/m19/185.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dinosaur
+cost={G}{G}{G}{G}{G}
+pt=10/10
+timing=main
+oracle=NONE

@@ -1,0 +1,12 @@
+name=Regal Bloodlord
+image=https://magiccards.info/scans/en/m19/222.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Soldier
+cost={3}{W}{B}
+pt=2/4
+ability=Flying;\
+        At the beginning of each end step, if you gained life this turn, create a 1/1 black Bat creature token with flying.
+timing=main
+oracle=Flying\nAt the beginning of each end step, if you gained life this turn, create a 1/1 black Bat creature token with flying.

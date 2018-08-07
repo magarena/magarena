@@ -1,0 +1,12 @@
+name=Thorn Lieutenant
+image=https://magiccards.info/scans/en/m19/203.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={1}{G}
+pt=2/3
+ability=Whenever SN becomes the target of a spell or ability an opponent controls, create a 1/1 green Elf Warrior creature token.;\
+        {5}{G}: SN gets +4/+4 until end of turn.
+timing=main
+oracle=Whenever Thorn Lieutenant becomes the target of a spell or ability an opponent controls, create a 1/1 green Elf Warrior creature token.\n{5}{G}: Thorn Lieutenant gets +4/+4 until end of turn.

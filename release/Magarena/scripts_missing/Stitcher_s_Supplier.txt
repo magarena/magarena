@@ -1,0 +1,11 @@
+name=Stitcher's Supplier
+image=https://magiccards.info/scans/en/m19/121.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={B}
+pt=1/1
+ability=When SN enters the battlefield or dies, put the top three cards of your library into your graveyard.
+timing=main
+oracle=When Stitcher's Supplier enters the battlefield or dies, put the top three cards of your library into your graveyard.

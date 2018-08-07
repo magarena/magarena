@@ -1,0 +1,9 @@
+name=Open the Graves
+image=https://magiccards.info/scans/en/m19/112.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{B}{B}
+ability=Whenever a nontoken creature you control dies, create a 2/2 black Zombie creature token.
+timing=enchantment
+oracle=Whenever a nontoken creature you control dies, create a 2/2 black Zombie creature token.

@@ -1,0 +1,11 @@
+name=Knight of the Tusk
+image=https://magiccards.info/scans/en/m19/18.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={4}{W}{W}
+pt=3/7
+ability=Vigilance
+timing=main
+oracle=Vigilance

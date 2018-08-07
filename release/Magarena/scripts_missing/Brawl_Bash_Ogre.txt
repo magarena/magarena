@@ -1,0 +1,12 @@
+name=Brawl-Bash Ogre
+image=https://magiccards.info/scans/en/m19/213.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={2}{B}{R}
+pt=3/3
+ability=Menace;\
+        Whenever SN attacks, you may sacrifice another creature. If you do, SN gets +2/+2 until end of turn.
+timing=main
+oracle=Menace\nWhenever Brawl-Bash Ogre attacks, you may sacrifice another creature. If you do, Brawl-Bash Ogre gets +2/+2 until end of turn.

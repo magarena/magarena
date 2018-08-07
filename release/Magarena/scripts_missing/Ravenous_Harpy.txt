@@ -1,0 +1,12 @@
+name=Ravenous Harpy
+image=https://magiccards.info/scans/en/m19/115.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Harpy
+cost={2}{B}
+pt=1/2
+ability=Flying;\
+        {1}, Sacrifice another creature: Put a +1/+1 counter on SN.
+timing=main
+oracle=Flying\n{1}, Sacrifice another creature: Put a +1/+1 counter on Ravenous Harpy.

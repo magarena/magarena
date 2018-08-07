@@ -1,0 +1,13 @@
+name=Suncleanser
+image=https://magiccards.info/scans/en/m19/39.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/4
+ability=When SN enters the battlefield, choose one — \
+        (1) Remove all counters from target creature. It can't have counters put on it for as long as SN remains on the battlefield. \
+        (2) Target opponent loses all counters. That player can't get counters for as long as SN remains on the battlefield.
+timing=main
+oracle=When Suncleanser enters the battlefield, choose one —\n• Remove all counters from target creature. It can't have counters put on it for as long as Suncleanser remains on the battlefield.\n• Target opponent loses all counters. That player can't get counters for as long as Suncleanser remains on the battlefield.

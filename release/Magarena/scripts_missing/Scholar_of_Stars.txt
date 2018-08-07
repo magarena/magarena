@@ -1,0 +1,11 @@
+name=Scholar of Stars
+image=https://magiccards.info/scans/en/m19/71.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={3}{U}
+pt=3/2
+ability=When SN enters the battlefield, if you control an artifact, draw a card.
+timing=main
+oracle=When Scholar of Stars enters the battlefield, if you control an artifact, draw a card.

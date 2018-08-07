@@ -1,0 +1,11 @@
+name=Satyr Enchanter
+image=https://magiccards.info/scans/en/m19/223.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Satyr,Druid
+cost={1}{G}{W}
+pt=2/2
+ability=Whenever you cast an enchantment spell, draw a card.
+timing=main
+oracle=Whenever you cast an enchantment spell, draw a card.

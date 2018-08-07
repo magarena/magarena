@@ -1,0 +1,12 @@
+name=Skyrider Patrol
+image=https://magiccards.info/scans/en/m19/224.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Scout
+cost={2}{G}{U}
+pt=2/3
+ability=Flying;\
+        At the beginning of combat on your turn, you may pay {G}{U}. When you do, put a +1/+1 counter on another target creature you control, and that creature gains flying until end of turn.
+timing=main
+oracle=Flying\nAt the beginning of combat on your turn, you may pay {G}{U}. When you do, put a +1/+1 counter on another target creature you control, and that creature gains flying until end of turn.

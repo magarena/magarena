@@ -1,0 +1,13 @@
+name=Departed Deckhand
+image=https://magiccards.info/scans/en/m19/49.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit,Pirate
+cost={1}{U}
+pt=2/2
+ability=When SN becomes the target of a spell, sacrifice it.;\
+        SN can't be blocked except by Spirits.;\
+        {3}{U}: Another target creature you control can't be blocked this turn except by Spirits.
+timing=main
+oracle=When Departed Deckhand becomes the target of a spell, sacrifice it.\nDeparted Deckhand can't be blocked except by Spirits.\n{3}{U}: Another target creature you control can't be blocked this turn except by Spirits.

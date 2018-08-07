@@ -1,0 +1,9 @@
+name=Root Snare
+image=https://magiccards.info/scans/en/m19/199.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Prevent all combat damage that would be dealt this turn.
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn.

@@ -1,0 +1,11 @@
+name=Mystic Archaeologist
+image=https://magiccards.info/scans/en/m19/63.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=2/1
+ability={3}{U}{U}: Draw two cards.
+timing=main
+oracle={3}{U}{U}: Draw two cards.

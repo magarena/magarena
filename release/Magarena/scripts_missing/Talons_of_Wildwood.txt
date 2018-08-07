@@ -1,0 +1,13 @@
+name=Talons of Wildwood
+image=https://magiccards.info/scans/en/m19/202.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 and has trample.;\
+        {2}{G}: Return SN from your graveyard to your hand.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has trample.\n{2}{G}: Return Talons of Wildwood from your graveyard to your hand.

@@ -1,0 +1,10 @@
+name=Loxodon Line Breaker
+image=https://magiccards.info/scans/en/m19/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elephant,Soldier
+cost={2}{W}
+pt=3/2
+timing=main
+oracle=NONE

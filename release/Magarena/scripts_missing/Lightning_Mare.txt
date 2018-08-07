@@ -1,0 +1,13 @@
+name=Lightning Mare
+image=https://magiccards.info/scans/en/m19/151.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental,Horse
+cost={R}{R}
+pt=3/1
+ability=This spell can't be countered.;\
+        SN can't be blocked by blue creatures.;\
+        {1}{R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=This spell can't be countered.\nLightning Mare can't be blocked by blue creatures.\n{1}{R}: Lightning Mare gets +1/+0 until end of turn.

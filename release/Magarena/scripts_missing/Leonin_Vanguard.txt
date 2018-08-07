@@ -1,0 +1,11 @@
+name=Leonin Vanguard
+image=https://magiccards.info/scans/en/m19/22.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat,Soldier
+cost={W}
+pt=1/1
+ability=At the beginning of combat on your turn, if you control three or more creatures, SN gets +1/+1 until end of turn and you gain 1 life.
+timing=main
+oracle=At the beginning of combat on your turn, if you control three or more creatures, Leonin Vanguard gets +1/+1 until end of turn and you gain 1 life.

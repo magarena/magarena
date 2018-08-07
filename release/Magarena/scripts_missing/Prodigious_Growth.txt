@@ -1,0 +1,12 @@
+name=Prodigious Growth
+image=https://magiccards.info/scans/en/m19/194.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={4}{G}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +7/+7 and has trample.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +7/+7 and has trample.

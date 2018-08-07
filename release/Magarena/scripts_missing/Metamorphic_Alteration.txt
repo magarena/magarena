@@ -1,0 +1,13 @@
+name=Metamorphic Alteration
+image=https://magiccards.info/scans/en/m19/60.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        As SN enters the battlefield, choose a creature.;\
+        Enchanted creature is a copy of the chosen creature.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nAs Metamorphic Alteration enters the battlefield, choose a creature.\nEnchanted creature is a copy of the chosen creature.

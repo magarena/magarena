@@ -1,0 +1,9 @@
+name=Doublecast
+image=https://magiccards.info/scans/en/m19/137.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={R}{R}
+effect=When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.
+timing=main
+oracle=When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.

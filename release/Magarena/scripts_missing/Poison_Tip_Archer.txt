@@ -1,0 +1,13 @@
+name=Poison-Tip Archer
+image=https://magiccards.info/scans/en/m19/220.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Archer
+cost={2}{B}{G}
+pt=2/3
+ability=Reach;\
+        Deathtouch;\
+        Whenever another creature dies, each opponent loses 1 life.
+timing=main
+oracle=Reach\nDeathtouch\nWhenever another creature dies, each opponent loses 1 life.

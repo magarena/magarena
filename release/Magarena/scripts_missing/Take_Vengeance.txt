@@ -1,0 +1,9 @@
+name=Take Vengeance
+image=https://magiccards.info/scans/en/m19/40.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{W}
+effect=Destroy target tapped creature.
+timing=main
+oracle=Destroy target tapped creature.

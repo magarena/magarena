@@ -1,0 +1,12 @@
+name=Sparktongue Dragon
+image=https://magiccards.info/scans/en/m19/159.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dragon
+cost={3}{R}{R}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, you may pay {2}{R}. When you do, it deals 3 damage to any target.
+timing=main
+oracle=Flying\nWhen Sparktongue Dragon enters the battlefield, you may pay {2}{R}. When you do, it deals 3 damage to any target.

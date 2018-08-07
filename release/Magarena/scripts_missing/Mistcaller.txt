@@ -1,0 +1,11 @@
+name=Mistcaller
+image=https://magiccards.info/scans/en/m19/62.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}
+pt=1/1
+ability=Sacrifice SN: Until end of turn, if a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.
+timing=main
+oracle=Sacrifice Mistcaller: Until end of turn, if a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.

@@ -1,0 +1,11 @@
+name=Meteor Golem
+image=https://magiccards.info/scans/en/m19/241.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={7}
+pt=3/3
+ability=When SN enters the battlefield, destroy target nonland permanent an opponent controls.
+timing=main
+oracle=When Meteor Golem enters the battlefield, destroy target nonland permanent an opponent controls.

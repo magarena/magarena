@@ -1,0 +1,11 @@
+name=Vigilant Baloth
+image=https://magiccards.info/scans/en/m19/206.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=5/5
+ability=Vigilance
+timing=main
+oracle=Vigilance

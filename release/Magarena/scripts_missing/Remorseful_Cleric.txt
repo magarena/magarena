@@ -1,0 +1,12 @@
+name=Remorseful Cleric
+image=https://magiccards.info/scans/en/m19/33.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit,Cleric
+cost={1}{W}
+pt=2/1
+ability=Flying;\
+        Sacrifice SN: Exile all cards from target player's graveyard.
+timing=main
+oracle=Flying\nSacrifice Remorseful Cleric: Exile all cards from target player's graveyard.

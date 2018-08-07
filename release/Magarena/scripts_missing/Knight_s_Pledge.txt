@@ -1,0 +1,12 @@
+name=Knight's Pledge
+image=https://magiccards.info/scans/en/m19/19.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +2/+2.

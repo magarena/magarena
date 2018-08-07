@@ -1,0 +1,9 @@
+name=Declare Dominance
+image=https://magiccards.info/scans/en/m19/175.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}{G}
+effect=Target creature gets +3/+3 until end of turn. All creatures able to block it this turn do so.
+timing=main
+oracle=Target creature gets +3/+3 until end of turn. All creatures able to block it this turn do so.

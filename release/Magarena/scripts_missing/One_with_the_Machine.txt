@@ -1,0 +1,9 @@
+name=One with the Machine
+image=https://magiccards.info/scans/en/m19/66.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{U}
+effect=Draw cards equal to the highest converted mana cost among artifacts you control.
+timing=main
+oracle=Draw cards equal to the highest converted mana cost among artifacts you control.

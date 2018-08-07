@@ -1,0 +1,13 @@
+name=Nicol Bolas, the Ravager
+image=https://magiccards.info/scans/en/m19/218a.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={1}{U}{B}{R}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, each opponent discards a card.;\
+        {4}{U}{B}{R}: Exile SN, then return him to the battlefield transformed under his owner's control. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Flying\nWhen Nicol Bolas, the Ravager enters the battlefield, each opponent discards a card.\n{4}{U}{B}{R}: Exile Nicol Bolas, the Ravager, then return him to the battlefield transformed under his owner's control. Activate this ability only any time you could cast a sorcery.

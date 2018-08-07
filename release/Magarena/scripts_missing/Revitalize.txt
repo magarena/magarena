@@ -1,0 +1,9 @@
+name=Revitalize
+image=https://magiccards.info/scans/en/m19/35.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+effect=You gain 3 life.~Draw a card.
+timing=removal
+oracle=You gain 3 life.\nDraw a card.

@@ -1,0 +1,10 @@
+name=Transmogrifying Wand
+image=https://magiccards.info/scans/en/m19/247.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+ability=SN enters the battlefield with three charge counters on it.;\
+        {1}, {T}, Remove a charge counter from SN: Destroy target creature. Its controller creates a 2/4 white Ox creature token. Activate this ability only any time you could cast a sorcery.
+timing=artifact
+oracle=Transmogrifying Wand enters the battlefield with three charge counters on it.\n{1}, {T}, Remove a charge counter from Transmogrifying Wand: Destroy target creature. Its controller creates a 2/4 white Ox creature token. Activate this ability only any time you could cast a sorcery.

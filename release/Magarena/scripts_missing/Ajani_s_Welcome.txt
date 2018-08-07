@@ -1,0 +1,9 @@
+name=Ajani's Welcome
+image=https://magiccards.info/scans/en/m19/6.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={W}
+ability=Whenever a creature enters the battlefield under your control, you gain 1 life.
+timing=enchantment
+oracle=Whenever a creature enters the battlefield under your control, you gain 1 life.

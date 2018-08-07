@@ -1,0 +1,12 @@
+name=Dismissive Pyromancer
+image=https://magiccards.info/scans/en/m19/136.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{R}
+pt=2/2
+ability={R}, {T}, Discard a card: Draw a card.;\
+        {2}{R}, {T}, Sacrifice SN: It deals 4 damage to target creature.
+timing=main
+oracle={R}, {T}, Discard a card: Draw a card.\n{2}{R}, {T}, Sacrifice Dismissive Pyromancer: It deals 4 damage to target creature.

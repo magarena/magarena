@@ -1,0 +1,11 @@
+name=Aviation Pioneer
+image=https://magiccards.info/scans/en/m19/46.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={2}{U}
+pt=1/2
+ability=When SN enters the battlefield, create a 1/1 colorless Thopter artifact creature token with flying.
+timing=main
+oracle=When Aviation Pioneer enters the battlefield, create a 1/1 colorless Thopter artifact creature token with flying.

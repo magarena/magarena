@@ -1,0 +1,12 @@
+name=Supreme Phantom
+image=https://magiccards.info/scans/en/m19/76.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit
+cost={1}{U}
+pt=1/3
+ability=Flying;\
+        Other Spirits you control get +1/+1.
+timing=main
+oracle=Flying\nOther Spirits you control get +1/+1.

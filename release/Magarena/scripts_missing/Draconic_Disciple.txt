@@ -1,0 +1,12 @@
+name=Draconic Disciple
+image=https://magiccards.info/scans/en/m19/215.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}{G}
+pt=2/2
+ability={T}: Add one mana of any color.;\
+        {7}, {T}, Sacrifice SN: Create a 5/5 red Dragon creature token with flying.
+timing=main
+oracle={T}: Add one mana of any color.\n{7}, {T}, Sacrifice Draconic Disciple: Create a 5/5 red Dragon creature token with flying.

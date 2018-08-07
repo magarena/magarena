@@ -1,0 +1,11 @@
+name=Two-Headed Zombie
+image=https://magiccards.info/scans/en/m19/123.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=4/2
+ability=Menace
+timing=main
+oracle=Menace

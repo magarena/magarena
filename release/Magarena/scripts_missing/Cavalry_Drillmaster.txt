@@ -1,0 +1,11 @@
+name=Cavalry Drillmaster
+image=https://magiccards.info/scans/en/m19/8.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=2/1
+ability=When SN enters the battlefield, target creature gets +2/+0 and gains first strike until end of turn.
+timing=main
+oracle=When Cavalry Drillmaster enters the battlefield, target creature gets +2/+0 and gains first strike until end of turn.

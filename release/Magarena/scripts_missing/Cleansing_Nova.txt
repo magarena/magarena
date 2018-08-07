@@ -1,0 +1,9 @@
+name=Cleansing Nova
+image=https://magiccards.info/scans/en/m19/9.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Choose one — (1) Destroy all creatures. (2) Destroy all artifacts and enchantments.
+timing=main
+oracle=Choose one —\n• Destroy all creatures.\n• Destroy all artifacts and enchantments.

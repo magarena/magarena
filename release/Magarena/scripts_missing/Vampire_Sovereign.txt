@@ -1,0 +1,12 @@
+name=Vampire Sovereign
+image=https://magiccards.info/scans/en/m19/125.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire
+cost={3}{B}{B}
+pt=3/4
+ability=Flying;\
+        When SN enters the battlefield, target opponent loses 3 life and you gain 3 life.
+timing=main
+oracle=Flying\nWhen Vampire Sovereign enters the battlefield, target opponent loses 3 life and you gain 3 life.
