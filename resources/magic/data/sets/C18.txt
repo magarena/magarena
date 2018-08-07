@@ -1,0 +1,298 @@
+Acidic Slime
+Adarkar Valkyrie
+Aether Gale
+Aethermage's Touch
+Ajani's Chosen
+Akoum Refuge
+Akroma's Vengeance
+Aminatou's Augury
+Aminatou, the Fateshifter
+Ancient Stone Idol
+Arcane Sanctum
+Archetype of Imagination
+Arixmethes, Slumbering Isle
+Army of the Damned
+Aura Gnarlid
+Avenger of Zendikar
+Azorius Chancery
+Azorius Guildgate
+Azorius Signet
+Baloth Woodcrasher
+Banishing Stroke
+Bant Charm
+Barren Moor
+Bear Umbra
+Blasphemous Act
+Blighted Woodland
+Blinkmoth Urn
+Bloodtracker
+Blossoming Sands
+Bojuka Bog
+Boon Satyr
+Borderland Explorer
+Boreas Charger
+Bosh, Iron Golem
+Brainstorm
+Brudiclad, Telchor Engineer
+Bruna, Light of Alabaster
+Budoka Gardener
+Buried Ruin
+Celestial Archon
+Centaur Vinecrasher
+Chain Reaction
+Chaos Warp
+Charnelhoard Wurm
+Chief of the Foundry
+Cloudform
+Cold-Eyed Selkie
+Command Tower
+Commander's Sphere
+Consign to Dust
+Conundrum Sphinx
+Coveted Jewel
+Crash of Rhino Beetles
+Creeping Renaissance
+Crib Swap
+Crystal Ball
+Cultivate
+Darksteel Citadel
+Darksteel Juggernaut
+Dawn's Reflection
+Daxos of Meletis
+Deathreap Ritual
+Decimate
+Devastation Tide
+Dictate of Kruphix
+Dimir Aqueduct
+Dimir Guildgate
+Dimir Signet
+Dismal Backwater
+Dismantling Blow
+Djinn of Wishes
+Dokai, Weaver of Life
+Dream Cache
+Dreamstone Hedron
+Duplicant
+Duskmantle Seer
+Echo Storm
+Eel Umbra
+Eidolon of Blossoms
+Elderwood Scion
+Emissary of Grudges
+Empyrial Storm
+Enchanter's Bane
+Enchantress's Presence
+Endless Atlas
+Enigma Sphinx
+Entreat the Angels
+Entreat the Dead
+Epic Proportions
+Esper Charm
+Estrid's Invocation
+Estrid, the Masked
+Etherium Sculptor
+Ever-Watching Threshold
+Evolving Wilds
+Explore
+Explosive Vegetation
+Far Wanderings
+Farhaven Elf
+Fertile Ground
+Finest Hour
+Flameblast Dragon
+Forest
+Forge of Heroes
+Forgotten Cave
+Forsaken Sanctuary
+Foundry of the Consuls
+Fury Storm
+Gaze of Granite
+Genesis Storm
+Geode Golem
+Golgari Rot Farm
+Grapple with the Past
+Great Furnace
+Grim Backwoods
+Grisly Salvage
+Ground Seal
+Gruul Turf
+Gyrus, Waker of Corpses
+Halimar Depths
+Harrow
+Haunted Fengraf
+Heavenly Blademaster
+Hedron Archive
+Hellkite Igniter
+Herald of the Pantheon
+High Priest of Penance
+Highland Lake
+Hunting Wilds
+Hydra Omnivore
+Inkwell Leviathan
+Into the Roil
+Island
+Isolated Watchtower
+Izzet Boilerworks
+Izzet Guildgate
+Izzet Signet
+Jeskai Infiltrator
+Jund Panorama
+Jungle Hollow
+Jwar Isle Refuge
+Kazandu Refuge
+Kestia, the Cultivator
+Khalni Garden
+Khalni Heart Expedition
+Krosan Verge
+Kruphix's Insight
+Lavalanche
+Lightform
+Lonely Sandbar
+Lord Windgrace
+Loyal Apprentice
+Loyal Drake
+Loyal Guardian
+Loyal Subordinate
+Loyal Unicorn
+Magmaquake
+Magnifying Glass
+Magus of the Balance
+Martial Coup
+Maverick Thopterist
+Meandering River
+Mimic Vat
+Mind Stone
+Mirrorworks
+Moldgraf Monstrosity
+Moonlight Bargain
+Mortify
+Mortuary Mire
+Mosswort Bridge
+Mountain
+Mountain Valley
+Mulldrifter
+Myr Battlesphere
+Myriad Landscape
+Myth Unbound
+Nesting Dragon
+New Benalia
+Night Incarnate
+Ninja of the Deep Hours
+Nylea's Colossus
+Octopus Umbra
+Orzhov Basilica
+Orzhov Guildgate
+Orzhov Signet
+Overgrowth
+Phyrexian Delver
+Phyrexian Rebirth
+Pilgrim's Eye
+Plains
+Ponder
+Portent
+Predict
+Primordial Mist
+Prismatic Lens
+Prototype Portal
+Psychosis Crawler
+Putrefy
+Rakdos Carnarium
+Rampaging Baloths
+Ravenous Slime
+Reality Scramble
+Reclamation Sage
+Retreat to Hagra
+Retrofitter Foundry
+Return to Dust
+Reverse Engineer
+Righteous Authority
+Rocky Tar Pit
+Rubblehulk
+Ruinous Path
+Sage's Reverie
+Saheeli's Artistry
+Saheeli's Directive
+Saheeli, the Gifted
+Sakura-Tribe Elder
+Savage Lands
+Savage Twister
+Scoured Barrens
+Scrabbling Claws
+Scute Mob
+Scuttling Doom Engine
+Seaside Citadel
+Seat of the Synod
+Secluded Steppe
+Seer's Lantern
+Seer's Sundial
+Sejiri Refuge
+Selesnya Sanctuary
+Serra Avatar
+Sharding Sphinx
+Sigil of the Empty Throne
+Sigiled Starfish
+Silent Sentinel
+Silent-Blade Oni
+Simic Growth Chamber
+Skull Storm
+Snake Umbra
+Sol Ring
+Soul Snare
+Soul of Innistrad
+Soul of New Phyrexia
+Sower of Discord
+Spawning Grounds
+Sphinx of Jwar Isle
+Sphinx of Uthuun
+Steel Hellkite
+Stitch Together
+Submerged Boneyard
+Swamp
+Swiftfoot Boots
+Swiftwater Cliffs
+Tawnos, Urza's Apprentice
+Telling Time
+Temple of the False God
+Terminus
+Terramorphic Expanse
+Thantis, the Warweaver
+Thirst for Knowledge
+Thopter Assembly
+Thopter Engineer
+Thopter Spy Network
+Thornwood Falls
+Tidings
+Tranquil Cove
+Tranquil Expanse
+Tranquil Thicket
+Treasure Hunt
+Treasure Nabber
+Turntimber Sower
+Tuvasa the Sunlit
+Unflinching Courage
+Unquestioned Authority
+Unstable Obelisk
+Unwinding Clock
+Utter End
+Varchild, Betrayer of Kjeldor
+Varina, Lich Queen
+Vedalken Humiliator
+Vessel of Endless Rest
+Vow of Flight
+Vow of Wildness
+Warped Landscape
+Whiptongue Hydra
+Whirler Rogue
+Whitewater Naiads
+Wild Growth
+Windgrace's Judgment
+Winds of Rath
+Woodland Stream
+Worm Harvest
+Worn Powerstone
+Xantcha, Sleeper Agent
+Yavimaya Elder
+Yavimaya Enchantress
+Yennett, Cryptic Sovereign
+Yuriko, the Tiger's Shadow
+Zendikar Incarnate
