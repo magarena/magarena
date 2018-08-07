@@ -8,5 +8,5 @@ subtype=Zombie,Wizard
 cost={1}{B}{B}
 pt=2/2
 timing=fmain
+oracle=Skeletons you control and other Zombies you control get +1/+1 and have deathtouch.
 requires_groovy_code
-oracle=Skeleton creatures you control and other Zombie creatures you control get +1/+1 and have deathtouch.
