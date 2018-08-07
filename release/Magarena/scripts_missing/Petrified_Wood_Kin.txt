@@ -6,9 +6,9 @@ type=Creature
 subtype=Elemental,Warrior
 cost={6}{G}
 pt=3/3
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Bloodthirst X;\
         Protection from instants
 timing=main
-oracle=Petrified Wood-Kin can't be countered.\nBloodthirst X\nProtection from instants
+oracle=This spell can't be countered.\nBloodthirst X\nProtection from instants
 status=not supported: no-info

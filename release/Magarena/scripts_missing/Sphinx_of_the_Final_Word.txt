@@ -7,9 +7,9 @@ type=Creature
 subtype=Sphinx
 cost={5}{U}{U}
 pt=5/5
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Flying, hexproof;\
-        Instant and sorcery spells you control can't be countered by spells or abilities.
+        Instant and sorcery spells you control can't be countered.
 timing=main
-oracle=Sphinx of the Final Word can't be countered.\nFlying, hexproof\nInstant and sorcery spells you control can't be countered by spells or abilities.
+oracle=This spell can't be countered.\nFlying, hexproof\nInstant and sorcery spells you control can't be countered.
 status=not supported: spell-modification

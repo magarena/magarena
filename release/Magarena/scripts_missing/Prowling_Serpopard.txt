@@ -6,8 +6,8 @@ type=Creature
 subtype=Cat,Snake
 cost={1}{G}{G}
 pt=4/3
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Creature spells you control can't be countered.
 timing=main
-oracle=Prowling Serpopard can't be countered.\nCreature spells you control can't be countered.
+oracle=This spell can't be countered.\nCreature spells you control can't be countered.
 status=not supported: spell-modification
