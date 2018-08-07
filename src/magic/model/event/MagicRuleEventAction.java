@@ -1056,7 +1056,7 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardHand(
-        ARG.PLAYERS + "( )?discard(s)? (your|his or her) hand",
+        ARG.PLAYERS + "( )?discard(s)? (your|his or her|their) hand",
         MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
