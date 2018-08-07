@@ -6,8 +6,8 @@ type=Creature
 subtype=Hydra
 cost={X}{G}
 pt=0/0
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Haste, protection from blue;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=fmain
-oracle=Mistcutter Hydra can't be countered.\nHaste, protection from blue\nMistcutter Hydra enters the battlefield with X +1/+1 counters on it.
+oracle=This spell can't be countered.\nHaste, protection from blue\nMistcutter Hydra enters the battlefield with X +1/+1 counters on it.

@@ -7,7 +7,7 @@ subtype=Insect
 cost={1}{G}
 pt=2/2
 ability=Flash;\
-        SN can't be countered.;\
+        This spell can't be countered.;\
         Reach, protection from blue
 timing=flash
-oracle=Flash\nSkylasher can't be countered.\nReach, protection from blue
+oracle=Flash\nThis spell can't be countered.\nReach, protection from blue

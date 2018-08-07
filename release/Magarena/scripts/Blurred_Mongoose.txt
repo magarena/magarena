@@ -6,7 +6,7 @@ type=Creature
 subtype=Mongoose
 cost={1}{G}
 pt=2/1
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Shroud
 timing=main
-oracle=Blurred Mongoose can't be countered.\nShroud
+oracle=This spell can't be countered.\nShroud

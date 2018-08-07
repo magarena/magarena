@@ -6,9 +6,9 @@ type=Legendary,Creature
 subtype=Eldrazi
 cost={15}
 pt=15/15
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         When you cast SN, take an extra turn after this one.;\
         Flying, protection from colored spells, annihilator 6;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
-oracle=Emrakul, the Aeons Torn can't be countered.\nWhen you cast Emrakul, take an extra turn after this one.\nFlying, protection from colored spells, annihilator 6\nWhen Emrakul is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
+oracle=This spell can't be countered.\nWhen you cast Emrakul, take an extra turn after this one.\nFlying, protection from colored spells, annihilator 6\nWhen Emrakul is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.

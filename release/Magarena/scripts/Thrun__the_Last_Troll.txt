@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Troll,Shaman
 cost={2}{G}{G}
 pt=4/4
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Hexproof;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Thrun, the Last Troll can't be countered.\nHexproof\n{1}{G}: Regenerate Thrun.
+oracle=This spell can't be countered.\nHexproof\n{1}{G}: Regenerate Thrun.

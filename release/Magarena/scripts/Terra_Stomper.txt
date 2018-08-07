@@ -7,7 +7,7 @@ type=Creature
 subtype=Beast
 cost={3}{G}{G}{G}
 pt=8/8
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Trample
 timing=main
-oracle=Terra Stomper can't be countered.\nTrample
+oracle=This spell can't be countered.\nTrample

@@ -26,7 +26,7 @@ public enum MagicAbility {
     CannotAttack("(SN )?can't attack",-50),
     CannotAttackOrBlock("(SN )?can't attack or block",-200),
     CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
-    CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
+    CannotBeCountered("this spell can't be countered\\.",0),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),

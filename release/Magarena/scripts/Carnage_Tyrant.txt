@@ -6,7 +6,7 @@ type=Creature
 subtype=Dinosaur
 cost={4}{G}{G}
 pt=7/6
-ability=SN can't be countered.;\
+ability=This spell can't be countered.;\
         Trample, hexproof
 timing=main
-oracle=Carnage Tyrant can't be countered.\nTrample, hexproof
+oracle=This spell can't be countered.\nTrample, hexproof

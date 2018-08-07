@@ -8,6 +8,6 @@ type=Instant
 cost={2}{R}
 timing=removal
 ability=Kicker {8}{R};\
-        SN can't be countered by spells or abilities.
+        This spell can't be countered.
 requires_groovy_code
-oracle=Kicker {8}{R}\nUrza's Rage can't be countered by spells or abilities.\nUrza's Rage deals 3 damage to target creature or player. If Urza's Rage was kicked, instead it deals 10 damage to that creature or player and the damage can't be prevented.
+oracle=Kicker {8}{R}\nThis spell can't be countered.\nUrza's Rage deals 3 damage to target creature or player. If Urza's Rage was kicked, instead it deals 10 damage to that creature or player and the damage can't be prevented.

@@ -5,7 +5,7 @@ removal=4
 rarity=U
 type=Instant
 cost={1}{R}
-ability=SN can't be countered by spells or abilities.
+ability=This spell can't be countered.
 timing=removal
 requires_groovy_code
-oracle=Combust can't be countered by spells or abilities.\nCombust deals 5 damage to target white or blue creature. The damage can't be prevented.
+oracle=This spell can't be countered.\nCombust deals 5 damage to target white or blue creature. The damage can't be prevented.
