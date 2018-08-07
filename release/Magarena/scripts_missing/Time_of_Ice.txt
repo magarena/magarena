@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Saga
 cost={3}{U}
-ability=Tap target creature an opponent controls. It doesn't untap during its controller's untap step for as long as you control SN.;\
-        Return all tapped creatures to their owners' hands.
+ability=I, II — Tap target creature an opponent controls. It doesn't untap during its controller's untap step for as long as you control SN.;\
+        III — Return all tapped creatures to their owners' hands.
 timing=enchantment
 oracle=I, II — Tap target creature an opponent controls. It doesn't untap during its controller's untap step for as long as you control Time of Ice.\nIII — Return all tapped creatures to their owners' hands.

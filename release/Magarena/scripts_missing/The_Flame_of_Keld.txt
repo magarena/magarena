@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Saga
 cost={1}{R}
-ability=Discard your hand.;\
-        Draw two cards.;\
-        If a red source you control would deal damage to a permanent or player this turn, it deals that much damage plus 2 to that permanent or player instead.
+ability=I — Discard your hand.;\
+        II — Draw two cards.;\
+        III — If a red source you control would deal damage to a permanent or player this turn, it deals that much damage plus 2 to that permanent or player instead.
 timing=enchantment
 oracle=I — Discard your hand.\nII — Draw two cards.\nIII — If a red source you control would deal damage to a permanent or player this turn, it deals that much damage plus 2 to that permanent or player instead.

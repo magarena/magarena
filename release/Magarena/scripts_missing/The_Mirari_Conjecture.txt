@@ -5,8 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Saga
 cost={4}{U}
-ability=Return target instant card from your graveyard to your hand.;\
-        Return target sorcery card from your graveyard to your hand.;\
-        Until end of turn, whenever you cast an instant or sorcery spell, copy it. You may choose new targets for the copy.
+ability=I — Return target instant card from your graveyard to your hand.;\
+        II — Return target sorcery card from your graveyard to your hand.;\
+        III — Until end of turn, whenever you cast an instant or sorcery spell, copy it. You may choose new targets for the copy.
 timing=enchantment
 oracle=I — Return target instant card from your graveyard to your hand.\nII — Return target sorcery card from your graveyard to your hand.\nIII — Until end of turn, whenever you cast an instant or sorcery spell, copy it. You may choose new targets for the copy.
