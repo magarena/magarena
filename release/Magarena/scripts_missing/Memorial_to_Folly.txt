@@ -3,6 +3,7 @@ image=https://magiccards.info/scans/en/dom/242.jpg
 value=2.500
 rarity=U
 type=Land
+mana=b3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B}.;\
         {2}{B}, {T}, Sacrifice SN: Return target creature card from your graveyard to your hand.

@@ -3,6 +3,7 @@ image=https://magiccards.info/scans/en/dom/243.jpg
 value=2.500
 rarity=U
 type=Land
+mana=u3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U}.;\
         {4}{U}, {T}, Sacrifice SN: Draw two cards.

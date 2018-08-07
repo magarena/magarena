@@ -3,6 +3,7 @@ image=https://magiccards.info/scans/en/dom/246.jpg
 value=2.500
 rarity=U
 type=Land
+mana=r3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {R}.;\
         {4}{R}, {T}, Sacrifice SN: Destroy target land.
