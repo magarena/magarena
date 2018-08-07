@@ -1,6 +1,6 @@
 name=Verdant Force
-image=https://magiccards.info/scans/en/10e/307.jpg
-image_updated=2017-01-11
+image=https://magiccards.info/scans/en/dom/187.jpg
+image_updated=2018-08-07
 value=4.083
 rarity=R
 type=Creature

@@ -1,7 +1,8 @@
 name=Sage of Lat-Nam
-image=https://magiccards.info/scans/en/8e/97.jpg
+image=https://magiccards.info/scans/en/dom/64.jpg
+image_updated=2018-08-07
 value=3.431
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Artificer
 cost={1}{U}

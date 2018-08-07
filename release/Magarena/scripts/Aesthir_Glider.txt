@@ -1,9 +1,10 @@
 name=Aesthir Glider
-image=https://magiccards.info/scans/en/ai/157.jpg
+image=https://magiccards.info/scans/en/dom/209.jpg
+image_updated=2018-08-07
 value=2.650
 rarity=C
 type=Artifact,Creature
-subtype=Bird
+subtype=Bird,Construct
 cost={3}
 pt=2/1
 ability=Flying;\

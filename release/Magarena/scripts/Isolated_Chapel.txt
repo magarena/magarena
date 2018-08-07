@@ -1,5 +1,6 @@
 name=Isolated Chapel
-image=https://magiccards.info/scans/en/isd/242.jpg
+image=https://magiccards.info/scans/en/dom/241.jpg
+image_updated=2018-08-07
 value=3.375
 rarity=R
 type=Land

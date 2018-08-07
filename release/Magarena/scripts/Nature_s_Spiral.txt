@@ -1,5 +1,6 @@
 name=Nature's Spiral
-image=https://magiccards.info/scans/en/m11/187.jpg
+image=https://magiccards.info/scans/en/dom/175.jpg
+image_updated=2018-08-07
 value=3.844
 rarity=U
 type=Sorcery

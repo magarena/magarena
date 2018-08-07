@@ -1,13 +1,12 @@
 name=Serra Angel
-image=https://magiccards.info/scans/en/ima/30.jpg
-image_updated=2017-04-12
+image=https://magiccards.info/scans/en/dom/33.jpg
+image_updated=2018-08-07
 value=2.500
 rarity=U
 type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=4/4
-ability=Flying;\
-        Vigilance
+ability=Flying, vigilance
 timing=main
-oracle=Flying\nVigilance
+oracle=Flying, vigilance
