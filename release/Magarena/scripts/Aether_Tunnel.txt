@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature gets +1/+0 and can't be blocked.
 timing=aura
-enchant=default,creature
+enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+0 and can't be blocked.

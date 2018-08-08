@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={3}{G}
 effect=Create three 1/1 green Saproling creature tokens.
-timing=removal
+timing=token
 oracle=Create three 1/1 green Saproling creature tokens.

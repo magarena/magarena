@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{W}
 effect=You gain 3 life.~Draw a card.
-timing=removal
+timing=draw
 oracle=You gain 3 life.\nDraw a card.

@@ -8,5 +8,5 @@ cost={U}
 ability=Enchant creature;\
         Enchanted creature gets +1/+1 and has flying.
 timing=aura
-enchant=default,creature
+enchant=flying,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1 and has flying.
