@@ -134,6 +134,8 @@ As long as you have at least N cards in your library, if you would draw a card, 
 
 *Echo [cost]
 At the beginning of your upkeep, if this permanent came under your control since the beginning of your last upkeep, sacrifice it unless you pay [cost].
+*Embalm [cost]
+[Cost], Exile this card from your graveyard: Create a token that's a copy it, except it's white, has no mana cost, and is a Zombie in addition to its other types. Embalm only as a sorcery.
 *Emerge [cost]
 You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's converted mana cost.
 *Enchant [...]
@@ -150,6 +152,8 @@ At the beginning of each of your upkeeps for the rest of the game, copy this spe
 [cost]: Attach this permanent to target creature you control. Activate this ability only any time you could cast a sorcery.
 *Escalate [cost]
 Pay this cost for each mode chosen beyond the first.
+*Eternalize [cost]
+[cost], exile this card from your graveyard: Create a token that's a copy of it, except it's black, is 4/4, has no mana cost and is a Zombie in addition to its other types. Eternalize only as a Sorcery.
 *Evoke [cost]
 You may cast this card by paying [cost] rather than paying its mana cost.
 When this permanent enters the battlefield, if its evoke cost was paid, its controller sacrifices it.
@@ -157,6 +161,8 @@ When this permanent enters the battlefield, if its evoke cost was paid, its cont
 Whenever a creature enters the battlefield under your control, if that creature’s power is greater than this creature’s power and/or that creature’s toughness is greater than this creature’s toughness, put a +1/+1 counter on this creature.
 *Exalted
 Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.
+*Exert
+An exerted creature won't untap during your next untap step.
 *Exploit
 When this creature enters the battlefield, you may sacrifice a creature.
 *Extort
