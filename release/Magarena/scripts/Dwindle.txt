@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets -6/-0.;\
         When enchanted creature blocks, destroy it.
 timing=aura
-enchant=weaken -6/-0, neg creature
+enchant=weaken -6/-0,neg creature
 oracle=Enchant creature\nEnchanted creature gets -6/-0.\nWhen enchanted creature blocks, destroy it.
