@@ -116,6 +116,7 @@ public class Frame {
         boolean hasText = cardDef.hasText();
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
+        boolean enchantmentPermanent = cardDef.hasType(MagicType.Enchantment) && (cardDef.hasType(MagicType.Creature) || cardDef.hasType(MagicType.Artifact));
         Set<MagicColor> landColor = new HashSet<>();
         //Land Colors
         if (land) {
@@ -127,19 +128,37 @@ public class Frame {
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
                 if (artifact || land) {
-                    return hasText ?
-                        getBlendedFrame(
-                            baseFrame,
-                            ResourceManager.newFrame(CardResource.gainColorTokenBlendText),
-                            ResourceManager.newFrame(CardResource.multiTokenFrameText)
-                        ) :
-                        getBlendedFrame(
-                            baseFrame,
-                            ResourceManager.newFrame(CardResource.gainColorTokenBlend),
-                            ResourceManager.newFrame(CardResource.multiTokenFrame)
-                        );
+                    if (enchantmentPermanent) {
+                        return hasText ?
+                            getBlendedFrame(
+                                baseFrame,
+                                ResourceManager.newFrame(CardResource.gainColorTokenBlendText),
+                                ResourceManager.newFrame(CardResource.multiTokenNyxText)
+                            ) :
+                            getBlendedFrame(
+                                baseFrame,
+                                ResourceManager.newFrame(CardResource.gainColorTokenBlend),
+                                ResourceManager.newFrame(CardResource.multiTokenNyx)
+                            );
+                    } else {
+                        return hasText ?
+                            getBlendedFrame(
+                                baseFrame,
+                                ResourceManager.newFrame(CardResource.gainColorTokenBlendText),
+                                ResourceManager.newFrame(CardResource.multiTokenFrameText)
+                            ) :
+                            getBlendedFrame(
+                                baseFrame,
+                                ResourceManager.newFrame(CardResource.gainColorTokenBlend),
+                                ResourceManager.newFrame(CardResource.multiTokenFrame)
+                            );
+                    }
                 } else {
-                    return ResourceManager.newFrame(hasText ? CardResource.multiTokenFrameText : CardResource.multiTokenFrame);
+                    if (enchantmentPermanent) {
+                        return ResourceManager.newFrame(hasText ? CardResource.multiTokenNyxText : CardResource.multiTokenNyx);
+                    } else {
+                        return ResourceManager.newFrame(hasText ? CardResource.multiTokenFrameText : CardResource.multiTokenFrame);
+                    }
                 }
             } else {
                 //Hybrid
@@ -257,9 +276,14 @@ public class Frame {
 
     private static BufferedImage getBaseTokenFrame(Collection<MagicType> types, boolean hasText) {
         if (types.contains(MagicType.Artifact)) {
-            return ResourceManager.newFrame(hasText ? CardResource.artifactTokenFrameText : CardResource.artifactTokenFrame);
+            if (types.contains(MagicType.Enchantment)) {
+                return ResourceManager.newFrame(hasText ? CardResource.artifactTokenNyxText : CardResource.artifactTokenNyx);
+            } else {
+                return ResourceManager.newFrame(hasText ? CardResource.artifactTokenFrameText : CardResource.artifactTokenFrame);
+            }
+        } else {
+            return ResourceManager.newFrame(hasText ? CardResource.colorlessTokenFrameText : CardResource.colorlessTokenFrame);
         }
-        return ResourceManager.newFrame(hasText ? CardResource.colorlessTokenFrameText : CardResource.colorlessTokenFrame);
     }
 
     static BufferedImage getBlendedFrame(BufferedImage bottomFrame, BufferedImage blend, BufferedImage colorFrame) {
@@ -597,6 +621,38 @@ public class Frame {
                 return ResourceManager.newFrame(CardResource.redTokenFrameText);
             case Green:
                 return ResourceManager.newFrame(CardResource.greenTokenFrameText);
+        }
+        return ResourceManager.newFrame(CardResource.colorlessTokenFrameText);
+    }
+
+    private static BufferedImage getNyxTokenFrame(MagicColor color) {
+        switch (color) {
+            case White:
+                return ResourceManager.newFrame(CardResource.whiteTokenNyx);
+            case Blue:
+                return ResourceManager.newFrame(CardResource.blueTokenNyx);
+            case Black:
+                return ResourceManager.newFrame(CardResource.blackTokenNyx);
+            case Red:
+                return ResourceManager.newFrame(CardResource.redTokenNyx);
+            case Green:
+                return ResourceManager.newFrame(CardResource.greenTokenNyx);
+        }
+        return ResourceManager.newFrame(CardResource.colorlessTokenFrame);
+    }
+
+    private static BufferedImage getNyxTokenFrameText(MagicColor color) {
+        switch (color) {
+            case White:
+                return ResourceManager.newFrame(CardResource.whiteTokenNyxText);
+            case Blue:
+                return ResourceManager.newFrame(CardResource.blueTokenNyxText);
+            case Black:
+                return ResourceManager.newFrame(CardResource.blackTokenNyxText);
+            case Red:
+                return ResourceManager.newFrame(CardResource.redTokenNyxText);
+            case Green:
+                return ResourceManager.newFrame(CardResource.greenTokenNyxText);
         }
         return ResourceManager.newFrame(CardResource.colorlessTokenFrameText);
     }
