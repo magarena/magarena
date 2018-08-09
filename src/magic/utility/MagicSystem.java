@@ -25,7 +25,7 @@ import magic.utility.MagicFileSystem.DataPath;
 final public class MagicSystem {
     private MagicSystem() {}
 
-    public static final String VERSION = "1.93";
+    public static final String VERSION = "1.94";
     static {
         System.setProperty("http.agent", "Magarena " + VERSION);
     }
