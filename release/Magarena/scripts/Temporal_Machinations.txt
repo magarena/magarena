@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={2}{U}
-effect=Return target creature to its owner's hand. If you control an artifact, draw a card.
+effect=Return target creature to its owner's hand.~If you control an artifact, draw a card.
 timing=main
 oracle=Return target creature to its owner's hand. If you control an artifact, draw a card.
