@@ -10,5 +10,5 @@ pt=5/3
 ability=Kicker {R};\
         Trample, haste
 timing=fmain
+oracle=Kicker {R}\nTrample, haste\nAt the beginning of the end step, if Skizzik wasn't kicked, sacrifice it.
 requires_groovy_code
-oracle=Kicker {R}\nTrample, haste\nAt the beginning of the end step, sacrifice Skizzik unless it was kicked.
