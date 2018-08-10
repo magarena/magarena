@@ -889,7 +889,7 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.awaken(cardDef, ARG.number(arg), ARG.cost(arg)));
         }
     },
-    CastRestriction("Cast SN " + ARG.ANY, 0) {
+    CastRestriction("Cast (SN|this spell) " + ARG.ANY, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             for (final MagicMatchedCostEvent mce : MagicConditionParser.buildCost(ARG.any(arg))) {
