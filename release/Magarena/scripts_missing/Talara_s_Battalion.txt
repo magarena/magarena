@@ -7,8 +7,8 @@ type=Creature
 subtype=Elf,Warrior
 cost={1}{G}
 pt=4/3
-ability=Trample;\
-        Cast SN only if you've cast another green spell this turn.
+ability=Cast this spell only if you've cast another green spell this turn.;\
+        Trample
 timing=main
-oracle=Trample\nCast Talara's Battalion only if you've cast another green spell this turn.
+oracle=Cast this spell only if you've cast another green spell this turn.\nTrample
 status=not supported: no-info

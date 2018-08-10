@@ -7,7 +7,7 @@ type=Creature
 subtype=Angel,Illusion
 cost={2}{U}
 pt=4/4
-ability=Flying;\
-        Cast SN only if you've cast another spell this turn.
+ability=Cast this spell only if you've cast another spell this turn.;\
+        Flying
 timing=main
-oracle=Flying\nCast Illusory Angel only if you've cast another spell this turn.
+oracle=Cast this spell only if you've cast another spell this turn.\nFlying

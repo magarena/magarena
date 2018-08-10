@@ -4,7 +4,7 @@ value=1.157
 rarity=U
 type=Instant
 cost={1}{R}
-ability=Cast SN only during combat after blockers are declared.
+ability=Cast this spell only during combat after blockers are declared.
 timing=removal
+oracle=Cast this spell only during combat after blockers are declared.\nFlip a coin. If you win the flip, target creature gets +1/+1 until end of turn.\nDraw a card at the beginning of the next turn's upkeep.
 requires_groovy_code
-oracle=Cast Aleatory only during combat after blockers are declared.\nFlip a coin. If you win the flip, target creature gets +1/+1 until end of turn.\nDraw a card at the beginning of the next turn's upkeep.

@@ -4,8 +4,8 @@ value=3.712
 rarity=C
 type=Instant
 cost={1}{G}
-ability=Cast SN only during the declare blockers step.;\
-        Cast SN with AI only if an opponent controls an attacking creature.
+ability=Cast SN with AI only if an opponent controls an attacking creature.;\
+        Cast this spell only during the declare blockers step.
 effect=Attacking creatures become blocked.
 timing=removal
-oracle=Cast Fog Patch only during the declare blockers step.\nAttacking creatures become blocked.
+oracle=Cast this spell only during the declare blockers step.\nAttacking creatures become blocked.

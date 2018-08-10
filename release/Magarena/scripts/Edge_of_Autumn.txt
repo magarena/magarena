@@ -4,8 +4,8 @@ value=3.078
 rarity=C
 type=Sorcery
 cost={1}{G}
-ability=Cycling—Sacrifice a land.;\
-        Cast SN only if you control four or fewer lands.
+ability=Cast SN with AI only if you control four or fewer lands.
+        Cycling—Sacrifice a land.
 effect=If you control four or fewer lands, search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=If you control four or fewer lands, search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.\nCycling—Sacrifice a land.

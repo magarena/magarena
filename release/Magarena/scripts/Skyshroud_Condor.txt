@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={1}{U}
 pt=2/2
-ability=Flying;\
-        Cast SN only if you've cast another spell this turn.
+ability=Cast this spell only if you've cast another spell this turn.;\
+        Flying
 timing=main
-oracle=Flying\nCast Skyshroud Condor only if you've cast another spell this turn.
+oracle=Cast this spell only if you've cast another spell this turn.\nFlying
