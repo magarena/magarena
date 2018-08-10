@@ -7,7 +7,7 @@ type=Creature
 subtype=Serpent
 cost={5}{U}{U}
 pt=5/6
-ability=SN costs {1} less to cast for each artifact you control.;\
+ability=This spell costs {1} less to cast for each artifact you control.;\
         {5}{U}: SN can't be blocked this turn.
 timing=main
-oracle=Gearseeker Serpent costs {1} less to cast for each artifact you control.\n{5}{U}: Gearseeker Serpent can't be blocked this turn.
+oracle=This spell costs {1} less to cast for each artifact you control.\n{5}{U}: Gearseeker Serpent can't be blocked this turn.

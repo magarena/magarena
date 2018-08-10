@@ -8,5 +8,5 @@ cost={6}{U}{U}
 pt=5/6
 ability=Flying
 timing=main
+oracle=If an opponent has no cards in hand, this spell costs {6} less to cast.\nFlying
 requires_groovy_code
-oracle=If an opponent has no cards in hand, Avatar of Will costs {6} less to cast.\nFlying

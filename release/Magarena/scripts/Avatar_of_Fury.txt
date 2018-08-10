@@ -9,5 +9,5 @@ pt=6/6
 ability=Flying;\
         {R}: SN gets +1/+0 until end of turn.
 timing=main
+oracle=If an opponent controls seven or more lands, this spell costs {6} less to cast.\nFlying\n{R}: Avatar of Fury gets +1/+0 until end of turn.
 requires_groovy_code
-oracle=If an opponent controls seven or more lands, Avatar of Fury costs {6} less to cast.\nFlying\n{R}: Avatar of Fury gets +1/+0 until end of turn.

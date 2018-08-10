@@ -7,7 +7,7 @@ type=Creature
 subtype=Vampire
 cost={5}{B}{B}
 pt=4/5
-ability=SN costs {2} less to cast if there are four or more card types among cards in your graveyard.;\
+ability=This spell costs {2} less to cast if there are four or more card types among cards in your graveyard.;\
         Flying
 timing=main
-oracle=Delirium — Dusk Feaster costs {2} less to cast if there are four or more card types among cards in your graveyard.\nFlying
+oracle=Delirium — This spell costs {2} less to cast if there are four or more card types among cards in your graveyard.\nFlying
