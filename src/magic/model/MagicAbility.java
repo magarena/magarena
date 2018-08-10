@@ -865,7 +865,7 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
-    AlternateCost2("You may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
+    AlternateCost2("You may " + ARG.ANY + " rather than pay (SN's|this spell's) mana cost\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final String arg = matcher.group("any").replace(" and ",", ");
@@ -873,7 +873,7 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.create(cardDef, arg, "Alt"));
         }
     },
-    AlternateCostIf("If " + ARG.COND + ", you may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
+    AlternateCostIf("If " + ARG.COND + ", you may " + ARG.ANY + " rather than pay (SN's|this spell's) mana cost\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final MagicCondition condition = MagicConditionParser.build(ARG.cond(matcher));
