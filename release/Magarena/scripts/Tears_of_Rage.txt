@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={2}{R}{R}
 ability=Cast this spell only during the declare attackers step.
-effect=Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.
+effect=Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures.~Sacrifice attacking creatures you control at the beginning of the next end step.
 timing=pump
 oracle=Cast this spell only during the declare attackers step.\nAttacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.
