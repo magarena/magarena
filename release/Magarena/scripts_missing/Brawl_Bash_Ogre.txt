@@ -10,3 +10,4 @@ ability=Menace;\
         Whenever SN attacks, you may sacrifice another creature. If you do, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Menace\nWhenever Brawl-Bash Ogre attacks, you may sacrifice another creature. If you do, Brawl-Bash Ogre gets +2/+2 until end of turn.
+status=not supported: blocking-restriction
