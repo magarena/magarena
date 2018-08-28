@@ -73,8 +73,67 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.94 (August 26, 2018)
+Release 1.94 (August 31, 2018)
 ============
+Ada Joule
+Martin Petricek
+melvin
+Mike
+ShawnieBoy
+
+    Add Saga mechanic
+    Unlimited-number cards (#1593)
+
+- fixed the following bugs:
+    show opponent's hand as plain so that 'S' key works, restriction can be enabled when #217 is resolved
+    shut down firemind queue worker when magarena exits (#1589)
+
+- added the following cards:
+Academy Drake, Academy Journeymage, Adamant Will, Adeliz, the Cinder Wind,
+Adventurous Impulse, Aegis of the Heavens, Aerial Engineer,
+Aethershield Artificer, Aether Tunnel, Ajani's Welcome,
+Amaranthine Wall, Angel of the Dawn, Arcane Encyclopedia, Arcane Flight,
+Artificer's Assistant, Arvad the Cursed, Aven Sentry, Aven Wind Mage,
+Aviation Pioneer, Baloth Gorger, Befuddle, Benalish Honor Guard,
+Benalish Marshal, Blessed Light, Bloodtallow Candle, Bogstomper,
+Cabal Evangel, Cabal Paladin, Caligo Skin-Witch, Call the Cavalry,
+Cast Down, Cavalry Drillmaster, Charge, Cleansing Nova,
+Cold-Water Snapper, Colossal Majesty, Danitha Capashen, Paragon,
+Daring Archaeologist, D'Avenant Trapper, Deathbloom Thallid,
+Draconic Disciple, Dragon's Hoard, Dread Shade, Dwarven Priest, Dwindle,
+Elvish Clancaller, Epicure of Blood, Eviscerate, Excavation Elephant,
+Exclusion Mage, Fell Specter, Feral Abomination, Fervent Strike,
+Fiery Finish, Fiery Intervention, Forebear's Blade, Fountain of Renewal,
+Frilled Sea Serpent, Gallant Cavalry, Gearsmith Guardian,
+Gearsmith Prodigy, Ghitu Chronicler, Ghitu Journeymage, Ghitu Lavarunner,
+Gigantosaurus, Goblin Instigator, Goblin Motivator, Goblin Trashmaster,
+Greenwood Sentinel, Guardians of Koilos, Havoc Devils, Hieromancer's Cage,
+Hired Blade, History of Benalia, Hostile Minotaur, Howling Golem,
+Jhoira, Weatherlight Captain, Jousting Lance, Keldon Raider,
+Keldon Warcaller, Knight of New Benalia, Knight of the Tusk,
+Knight's Pledge, Krosan Druid, Lightning Mare, Llanowar Scout,
+Loxodon Line Breaker, Lyra Dawnbringer, Mammoth Spider,
+Marauder's Axe, Melira's Keepers, Memorial to Folly,
+Memorial to Genius, Memorial to Glory, Memorial to War,
+Mesa Unicorn, Meteor Golem, Mirror Image, Mystic Archaeologist,
+Naru Meha, Master Wizard, Onakke Ogre, Open the Graves, Pardic Wanderer,
+Pegasus Courser, Pierce the Sky, Plague Mare, Poison-Tip Archer,
+Primevals' Glorious Rebirth, Primordial Wurm, Prodigious Growth,
+Pyromantic Pilgrim, Radiating Lightning, Rat Colony, Ravenous Harpy,
+Regal Bloodlord, Remorseful Cleric, Revitalize, Rhox Oracle,
+Root Snare, Run Amok, Rustwing Falcon, Sai, Master Thopterist,
+Salvager of Secrets, Satyr Enchanter, Scholar of Stars, Seal Away,
+Sentinel of the Pearl Trident, Sergeant-at-Arms, Serra Disciple,
+Short Sword, Siegebreaker Giant, Skittering Surveyor, Skyscanner,
+Sovereign's Bite, Sparring Construct, Spore Swarm, Star-Crowned Stag,
+Steel Leaf Champion, Stitcher's Supplier, Strangling Spores,
+Supreme Phantom, Surge Mare, Suspicious Bookcase, Take Vengeance,
+Teferi's Sentinel, Temporal Machinations, Teshar, Ancestor's Apostle,
+Tetsuko Umezawa, Fugitive, Thallid Soothsayer, Thorn Lieutenant,
+Tolarian Scholar, Trusty Packbeast, Uncomfortable Chill, Untamed Kavu,
+Valiant Knight, Vampire Neonate, Vampire Sovereign, Vigilant Baloth,
+Vine Mare, Voltaic Servant, Wall of Mist, Warlord's Fury, Wizard's Retort,
+Yargle, Glutton of Urborg, Yavimaya Sapherd, Zhalfirin Void
 
 Release 1.93 (April 29, 2018)
 ============
