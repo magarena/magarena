@@ -81,12 +81,15 @@ melvin
 Mike
 ShawnieBoy
 
-    Add Saga mechanic
-    Unlimited-number cards (#1593)
+- support Saga mechanic
+
+- use Nyx card frame on enchantment permanents
+
+- improve support for cards that allow unlimited copies
 
 - fixed the following bugs:
-    show opponent's hand as plain so that 'S' key works, restriction can be enabled when #217 is resolved
-    shut down firemind queue worker when magarena exits (#1589)
+  * pressing 'S' did not show the opponent's hand
+  * exiting the app did not stop firemind worker (issue #1589)
 
 - added the following cards:
 Academy Drake, Academy Journeymage, Adamant Will, Adeliz, the Cinder Wind,
