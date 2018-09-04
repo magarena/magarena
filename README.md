@@ -5,6 +5,8 @@
 [![Latest version](https://img.shields.io/github/release/magarena/magarena.svg)](https://github.com/magarena/magarena/releases)
 [![Latest version total downloads](https://img.shields.io/github/downloads/magarena/magarena/latest/total.svg)](https://magarena.github.io/)
 [![All versions total downloads](https://img.shields.io/github/downloads/magarena/magarena/total.svg)](https://magarena.github.io/)
+[![Code Quality: Java](https://img.shields.io/lgtm/grade/java/g/magarena/magarena.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/magarena/magarena/context:java)
+[![Total Alerts](https://img.shields.io/lgtm/alerts/g/magarena/magarena.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/magarena/magarena/alerts)
 
 Homepage: http://magarena.github.io
 
