@@ -7,8 +7,7 @@ type=Creature
 subtype=Vampire,Rogue
 cost={3}{B}
 pt=2/3
-ability=Flying;\
-        When SN enters the battlefield, target player reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nWhen Balustrade Spy enters the battlefield, target player reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
-status=needs groovy

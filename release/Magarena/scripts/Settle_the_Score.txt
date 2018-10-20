@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
-effect=Exile target creature. Put two loyalty counters on a planeswalker you control.
 timing=main
+requires_groovy_code
 oracle=Exile target creature. Put two loyalty counters on a planeswalker you control.
