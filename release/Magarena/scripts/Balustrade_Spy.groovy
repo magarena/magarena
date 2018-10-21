@@ -3,7 +3,7 @@
 [
     new EntersBattlefieldTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 NEG_TARGET_PLAYER,
@@ -15,14 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicCardList library = it.getLibrary();
-                int landCards = 0;
-                while (landCards < 1 && library.size() > 0) {
-                    if (library.getCardAtTop().hasType(MagicType.Land)) {
-                        landCards++;
-                    }
-                    game.doAction(new MillLibraryAction(it,1));
-                }
+                game.doAction(new MillLibraryUntilAction(it, MagicType.Land, 1));
             });
         }
     }

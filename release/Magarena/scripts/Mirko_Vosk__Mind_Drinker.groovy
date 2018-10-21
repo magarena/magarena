@@ -17,15 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = 4;
             final MagicPlayer player = event.getRefPlayer();
-            final MagicCardList library = player.getLibrary();
-            int landCards = 0;
-            while (landCards < amount && library.size() > 0) {
-                game.doAction(new RevealAction(library.getCardAtTop()));
-                if (library.getCardAtTop().hasType(MagicType.Land)) {
-                    landCards++;
-                }
-                game.doAction(new MillLibraryAction(player,1));
-            }
+            game.doAction(new MillLibraryUntilAction(player, MagicType.Land, amount));
         }
     }
 ]
