@@ -12,6 +12,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -33,6 +34,7 @@ import magic.model.MagicRandom;
 import magic.utility.MagicFileSystem.DataPath;
 import org.apache.commons.io.FilenameUtils;
 import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.nio.file.FileVisitOption.FOLLOW_LINKS;
 
 public class DeckUtils {
 
@@ -269,7 +271,8 @@ public class DeckUtils {
     public static List<File> getDeckFiles() {
         try {
             DeckFileVisitor dfv = new DeckFileVisitor();
-            Files.walkFileTree(MagicFileSystem.getDataPath(DataPath.DECKS), dfv);
+            Files.walkFileTree(MagicFileSystem.getDataPath(DataPath.DECKS), Collections.singleton(FOLLOW_LINKS),
+                    Integer.MAX_VALUE, dfv);
             return dfv.getFiles();
         } catch (IOException ex) {
             throw new RuntimeException(ex);
