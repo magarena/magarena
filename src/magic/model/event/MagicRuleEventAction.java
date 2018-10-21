@@ -2097,6 +2097,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    MillUntil(
+        ARG.PLAYERS + "( )?reveal(s)? cards from the top of (your|his or her) library until (you|he or she) reveal(s) "
+                + ARG.AMOUNT + "?( )?" + ARG.CARDTYPE + " card(s)?, then puts those cards into (your|his or her) graveyard",
+        MagicTiming.Draw,
+        "MillUntil"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAmount count = ARG.amountObj(matcher);
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            final MagicType cardType = ARG.cardType(matcher);
+            return (game, event) -> {
+                final int amount = count.getAmount(event);
+                for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                    game.doAction(new MillLibraryUntilAction(it, cardType, amount));
+                }
+            };
+        }
+    },
     CantCastSpells(
         ARG.PLAYERS + " can't cast spells this turn",
         MagicTargetHint.Negative,

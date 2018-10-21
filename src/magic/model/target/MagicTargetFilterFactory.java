@@ -2384,6 +2384,7 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> card from an opponent's graveyard
         add("card from an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
+        add("card in an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
         add("creature card in an opponent's graveyard", CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD);
 
         // <color|type|subtype> card from your hand
