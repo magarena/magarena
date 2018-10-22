@@ -6,6 +6,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
+import magic.model.MagicLocationType;
 
 import java.util.List;
 
@@ -14,15 +15,12 @@ import java.util.List;
  */
 public abstract class AbstractMillAction extends MagicAction {
     protected final MagicPlayer player;
-    protected final MagicCardList milledCards = new MagicCardList();
 
     protected AbstractMillAction(final MagicPlayer player) {
         this.player = player;
     }
 
-    public List<MagicCard> getMilledCards() {
-        return milledCards;
-    }
+    protected abstract List<MagicCard> getMilledCards();
 
     @Override
     public void undoAction(final MagicGame game) {
@@ -32,14 +30,17 @@ public abstract class AbstractMillAction extends MagicAction {
         return String.format("top %d cards", finalCount);
     }
 
-    protected abstract void setCardsToMill(MagicGame game);
-
-
     @Override
     public void doAction(final MagicGame game) {
-        getMilledCards().clear();
-        setCardsToMill(game);
-        final int count = getMilledCards().size();
+        List<MagicCard> toMill = getMilledCards();
+        for (final MagicCard card : toMill) {
+            game.doAction(new ShiftCardAction(
+                card,
+                MagicLocationType.OwnersLibrary,
+                MagicLocationType.Graveyard
+            ));
+        }
+        final int count = toMill.size();
         if (count > 0) {
             setScore(player,ArtificialScoringSystem.getMillScore(count));
             game.logAppendMessage(

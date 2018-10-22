@@ -6,6 +6,8 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
+import java.util.List;
+
 /**
  * Action that removes fixed amount of cards from players library and moves them to that player's graveyard.
  */
@@ -24,15 +26,8 @@ public class MillLibraryAction extends AbstractMillAction {
         amount = aAmount;
     }
 
-    protected void setCardsToMill(MagicGame game) {
-        final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
-        for (final MagicCard card : topN) {
-            milledCards.add(card);
-            game.doAction(new ShiftCardAction(
-                card,
-                MagicLocationType.OwnersLibrary,
-                MagicLocationType.Graveyard
-            ));
-        }
+    @Override
+    protected List<MagicCard> getMilledCards() {
+        return player.getLibrary().getCardsFromTop(amount);
     }
 }

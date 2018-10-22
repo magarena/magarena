@@ -7,6 +7,8 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 
+import java.util.List;
+
 /**
  * Action that removes cards from players library and moves them to that player's graveyard,
  * until certain card type is seen given number of times (or whole library is milled).
@@ -34,16 +36,13 @@ public class MillLibraryUntilAction extends AbstractMillAction {
         return String.format("top %d cards - until %d %s(s) are seen -", finalCount, cards, cardType.getDisplayName());
     }
 
-    protected void setCardsToMill(MagicGame game) {
+    @Override
+    protected List<MagicCard> getMilledCards() {
         final MagicCardList all = player.getLibrary().getCardsFromTop(Integer.MAX_VALUE);
+        final MagicCardList milledCards = new MagicCardList();
         int seenTargets = 0;
         for (final MagicCard card : all) {
             milledCards.add(card);
-            game.doAction(new ShiftCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary,
-                    MagicLocationType.Graveyard
-            ));
             if (card.hasType(cardType)) {
                 seenTargets++;
             }
@@ -51,5 +50,6 @@ public class MillLibraryUntilAction extends AbstractMillAction {
                 break;
             }
         }
+        return milledCards;
     }
 }
