@@ -1,0 +1,9 @@
+name=Unmoored Ego
+image=https://img.scryfall.com/cards/normal/front/9/5/95aecc12-3363-41f7-9b58-277c81859670.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{U}{B}
+effect=Choose a card name. Search target opponent's graveyard, hand, and library for up to four cards with that name and exile them. That player shuffles their library, then draws a card for each card exiled from their hand this way.
+timing=main
+oracle=Choose a card name. Search target opponent's graveyard, hand, and library for up to four cards with that name and exile them. That player shuffles their library, then draws a card for each card exiled from their hand this way.

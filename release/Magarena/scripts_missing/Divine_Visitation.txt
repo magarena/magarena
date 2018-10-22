@@ -1,0 +1,9 @@
+name=Divine Visitation
+image=https://img.scryfall.com/cards/normal/front/d/a/da3789d4-3621-44a1-bb72-8e3bbac8bf72.jpg
+value=2.500
+rarity=M
+type=Enchantment
+cost={3}{W}{W}
+ability=If one or more creature tokens would be created under your control, that many 4/4 white Angel creature tokens with flying and vigilance are created instead.
+timing=enchantment
+oracle=If one or more creature tokens would be created under your control, that many 4/4 white Angel creature tokens with flying and vigilance are created instead.

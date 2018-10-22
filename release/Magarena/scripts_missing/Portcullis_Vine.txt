@@ -1,0 +1,12 @@
+name=Portcullis Vine
+image=https://img.scryfall.com/cards/normal/front/5/b/5b6dab62-b747-4d76-9fa8-4914582fc212.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Plant,Wall
+cost={G}
+pt=0/3
+ability=Defender;\
+        {2}, {T}, Sacrifice a creature with defender: Draw a card.
+timing=smain
+oracle=Defender\n{2}, {T}, Sacrifice a creature with defender: Draw a card.

@@ -1,0 +1,13 @@
+name=Dream Eater
+image=https://img.scryfall.com/cards/normal/front/9/f/9f3a4677-7683-4f63-af31-b76491ec9f9c.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Nightmare,Sphinx
+cost={4}{U}{U}
+pt=4/3
+ability=Flash;\
+        Flying;\
+        When SN enters the battlefield, surveil 4. When you do, you may return target nonland permanent an opponent controls to its owner's hand.
+timing=flash
+oracle=Flash\nFlying\nWhen Dream Eater enters the battlefield, surveil 4. When you do, you may return target nonland permanent an opponent controls to its owner's hand.

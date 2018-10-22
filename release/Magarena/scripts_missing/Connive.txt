@@ -1,0 +1,11 @@
+name=Connive
+image=https://img.scryfall.com/cards/large/front/8/9/890ac54c-6fd7-4e46-8ce4-8926c6975f60.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{U/B}{U/B}
+split=Concoct
+effect=Gain control of target creature with power 2 or less.
+timing=main
+oracle=Gain control of target creature with power 2 or less.
+status=not supported: split-card

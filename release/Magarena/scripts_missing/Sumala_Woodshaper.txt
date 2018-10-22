@@ -1,0 +1,11 @@
+name=Sumala Woodshaper
+image=https://img.scryfall.com/cards/normal/front/8/c/8c4e427e-c061-43c5-9e8e-34bf5b447ab1.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={2}{G}{W}
+pt=2/1
+ability=When SN enters the battlefield, look at the top four cards of your library. You may reveal a creature or enchantment card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+timing=main
+oracle=When Sumala Woodshaper enters the battlefield, look at the top four cards of your library. You may reveal a creature or enchantment card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.

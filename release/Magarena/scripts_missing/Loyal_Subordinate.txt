@@ -1,0 +1,12 @@
+name=Loyal Subordinate
+image=https://img.scryfall.com/cards/normal/en/c18/16.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=3/1
+ability=Menace;\
+        At the beginning of combat on your turn, if you control your commander, each opponent loses 3 life.
+timing=main
+oracle=Menace\nLieutenant — At the beginning of combat on your turn, if you control your commander, each opponent loses 3 life.

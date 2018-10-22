@@ -1,0 +1,12 @@
+name=Loxodon Restorer
+image=https://img.scryfall.com/cards/normal/front/1/e/1ead2166-a7ca-49cb-bf93-2f59c37b4cb9.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elephant,Cleric
+cost={4}{W}{W}
+pt=3/4
+ability=Convoke;\
+        When SN enters the battlefield, you gain 4 life.
+timing=main
+oracle=Convoke\nWhen Loxodon Restorer enters the battlefield, you gain 4 life.

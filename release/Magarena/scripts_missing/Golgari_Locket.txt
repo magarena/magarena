@@ -1,0 +1,10 @@
+name=Golgari Locket
+image=https://img.scryfall.com/cards/normal/front/1/c/1c2e7843-9a87-46cb-be06-6db58649db85.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: Add {B} or {G}.;\
+        {B/G}{B/G}{B/G}{B/G}, {T}, Sacrifice SN: Draw two cards.
+timing=artifact
+oracle={T}: Add {B} or {G}.\n{B/G}{B/G}{B/G}{B/G}, {T}, Sacrifice Golgari Locket: Draw two cards.

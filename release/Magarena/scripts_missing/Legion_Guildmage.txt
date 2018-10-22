@@ -1,0 +1,12 @@
+name=Legion Guildmage
+image=https://img.scryfall.com/cards/normal/front/b/0/b03423b2-faca-4b2e-8328-8b9b7fdb7ce3.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={R}{W}
+pt=2/2
+ability={5}{R}, {T}: SN deals 3 damage to each opponent.;\
+        {2}{W}, {T}: Tap another target creature.
+timing=main
+oracle={5}{R}, {T}: Legion Guildmage deals 3 damage to each opponent.\n{2}{W}, {T}: Tap another target creature.

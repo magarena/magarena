@@ -1,0 +1,11 @@
+name=Response
+image=https://img.scryfall.com/cards/normal/front/4/3/437d7378-fad5-496e-a264-d4ea3819ade1.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={R/W}{R/W}
+split=Resurgence
+effect=SN deals 5 damage to target attacking or blocking creature.
+timing=removal
+oracle=Response deals 5 damage to target attacking or blocking creature.
+status=not supported: split-card

@@ -1,0 +1,12 @@
+name=Kraul Harpooner
+image=https://img.scryfall.com/cards/normal/front/f/6/f6d3c086-9ce4-41c3-8402-2818f1b27192.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect,Warrior
+cost={1}{G}
+pt=3/2
+ability=Reach;\
+        When SN enters the battlefield, choose up to one target creature with flying you don't control. SN gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard, then you may have SN fight that creature.
+timing=main
+oracle=Reach\nUndergrowth — When Kraul Harpooner enters the battlefield, choose up to one target creature with flying you don't control. Kraul Harpooner gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard, then you may have Kraul Harpooner fight that creature.

@@ -1,0 +1,11 @@
+name=Assemble
+image=https://img.scryfall.com/cards/large/front/a/d/ad454e7a-06c9-4694-ae68-7b1431e00077.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={4}{G}{W}
+split=Assure
+effect=Create three 2/2 green and white Elf Knight creature tokens with vigilance.
+timing=removal
+oracle=Create three 2/2 green and white Elf Knight creature tokens with vigilance.
+status=not supported: split-card

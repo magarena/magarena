@@ -1,0 +1,12 @@
+name=Book Devourer
+image=https://img.scryfall.com/cards/normal/front/0/1/01dfe640-5bd2-4d0b-8977-887b2ed4c2dd.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={5}{R}
+pt=4/5
+ability=Trample;\
+        Whenever SN deals combat damage to a player, you may discard all the cards in your hand. If you do, draw that many cards.
+timing=main
+oracle=Trample\nWhenever Book Devourer deals combat damage to a player, you may discard all the cards in your hand. If you do, draw that many cards.

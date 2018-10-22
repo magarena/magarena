@@ -1,0 +1,12 @@
+name=Crash of Rhino Beetles
+image=https://img.scryfall.com/cards/normal/en/c18/29.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Insect
+cost={4}{G}
+pt=5/5
+ability=Trample;\
+        SN gets +10/+10 as long as you control ten or more lands.
+timing=main
+oracle=Trample\nCrash of Rhino Beetles gets +10/+10 as long as you control ten or more lands.

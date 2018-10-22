@@ -1,0 +1,10 @@
+name=Izzet Locket
+image=https://img.scryfall.com/cards/normal/front/3/4/348f3bec-ad16-4bc7-8da9-3956c9900f95.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: Add {U} or {R}.;\
+        {U/R}{U/R}{U/R}{U/R}, {T}, Sacrifice SN: Draw two cards.
+timing=artifact
+oracle={T}: Add {U} or {R}.\n{U/R}{U/R}{U/R}{U/R}, {T}, Sacrifice Izzet Locket: Draw two cards.

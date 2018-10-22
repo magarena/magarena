@@ -1,0 +1,10 @@
+name=Fearless Halberdier
+image=https://img.scryfall.com/cards/normal/front/3/0/30e04f16-89d0-4e75-a3cd-4dd64414050c.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=3/2
+timing=main
+oracle=NONE

@@ -1,0 +1,9 @@
+name=Never Happened
+image=https://img.scryfall.com/cards/normal/front/2/8/289d3746-9e54-4983-9daa-f1a7afbdedad.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Target opponent reveals their hand. You choose a nonland card from that player's graveyard or hand and exile it.
+timing=main
+oracle=Target opponent reveals their hand. You choose a nonland card from that player's graveyard or hand and exile it.

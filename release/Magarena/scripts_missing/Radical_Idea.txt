@@ -1,0 +1,9 @@
+name=Radical Idea
+image=https://img.scryfall.com/cards/normal/front/c/9/c9570734-5e9b-46ff-b606-9759b5195756.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Draw a card.~Jump-start
+timing=removal
+oracle=Draw a card.\nJump-start

@@ -1,0 +1,11 @@
+name=Vernadi Shieldmate
+image=https://img.scryfall.com/cards/normal/front/e/f/efddad21-553e-4947-80d2-833b42c45f77.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{G/W}
+pt=2/2
+ability=Vigilance
+timing=main
+oracle=Vigilance

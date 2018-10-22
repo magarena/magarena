@@ -1,0 +1,12 @@
+name=Tawnos, Urza's Apprentice
+image=https://img.scryfall.com/cards/normal/en/c18/45.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={U}{R}
+pt=1/3
+ability=Haste;\
+        {U}{R}, {T}: Copy target activated or triggered ability you control from an artifact source. You may choose new targets for the copy.
+timing=fmain
+oracle=Haste\n{U}{R}, {T}: Copy target activated or triggered ability you control from an artifact source. You may choose new targets for the copy.

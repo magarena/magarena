@@ -1,0 +1,14 @@
+name=Knight of Autumn
+image=https://img.scryfall.com/cards/normal/front/3/0/3028075c-5fc5-4942-a984-1ffcf7a8933d.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dryad,Knight
+cost={1}{G}{W}
+pt=2/1
+ability=When SN enters the battlefield, choose one — \
+        (1) Put two +1/+1 counters on SN. \
+        (2) Destroy target artifact or enchantment. \
+        (3) You gain 4 life.
+timing=main
+oracle=When Knight of Autumn enters the battlefield, choose one —\n• Put two +1/+1 counters on Knight of Autumn.\n• Destroy target artifact or enchantment.\n• You gain 4 life.

@@ -1,0 +1,12 @@
+name=Varina, Lich Queen
+image=https://img.scryfall.com/cards/normal/en/c18/48.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Zombie,Wizard
+cost={1}{W}{U}{B}
+pt=4/4
+ability=Whenever you attack with one or more Zombies, draw that many cards, then discard that many cards. You gain that much life.;\
+        {2}, Exile two cards from your graveyard: Create a tapped 2/2 black Zombie creature token.
+timing=main
+oracle=Whenever you attack with one or more Zombies, draw that many cards, then discard that many cards. You gain that much life.\n{2}, Exile two cards from your graveyard: Create a tapped 2/2 black Zombie creature token.

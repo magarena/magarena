@@ -1,0 +1,12 @@
+name=Flight of Equenauts
+image=https://img.scryfall.com/cards/normal/front/a/c/accfc430-114e-4ce0-93ea-e8900955a71e.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={7}{W}
+pt=4/5
+ability=Convoke;\
+        Flying
+timing=main
+oracle=Convoke\nFlying

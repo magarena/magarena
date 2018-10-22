@@ -1,0 +1,13 @@
+name=Thoughtbound Phantasm
+image=https://img.scryfall.com/cards/normal/front/3/6/36478e73-162a-412c-bf5b-9ca0d92f51e2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={U}
+pt=2/2
+ability=Defender;\
+        Whenever you surveil, put a +1/+1 counter on SN.;\
+        As long as SN has three or more +1/+1 counters on it, it can attack as though it didn't have defender.
+timing=smain
+oracle=Defender\nWhenever you surveil, put a +1/+1 counter on Thoughtbound Phantasm.\nAs long as Thoughtbound Phantasm has three or more +1/+1 counters on it, it can attack as though it didn't have defender.

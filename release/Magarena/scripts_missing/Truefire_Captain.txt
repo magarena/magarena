@@ -1,0 +1,12 @@
+name=Truefire Captain
+image=https://img.scryfall.com/cards/normal/front/6/0/6099a230-9298-4649-b257-243af40d0625.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={R}{R}{W}{W}
+pt=4/3
+ability=Mentor;\
+        Whenever SN is dealt damage, it deals that much damage to target player.
+timing=main
+oracle=Mentor\nWhenever Truefire Captain is dealt damage, it deals that much damage to target player.

@@ -1,0 +1,12 @@
+name=Sunhome Stalwart
+image=https://img.scryfall.com/cards/normal/front/a/4/a431f183-17eb-4a6c-a137-d106bdc8c997.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=First strike;\
+        Mentor
+timing=main
+oracle=First strike\nMentor

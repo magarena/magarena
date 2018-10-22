@@ -1,0 +1,12 @@
+name=Izoni, Thousand-Eyed
+image=https://img.scryfall.com/cards/large/front/7/5/75955b0e-12d6-40ba-aab5-b7b7e2bde121.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Shaman
+cost={2}{B}{B}{G}{G}
+pt=2/3
+ability=Undergrowth — When SN enters the battlefield, create a 1/1 black and green Insect creature token for each creature card in your graveyard.;\
+        {B}{G}, Sacrifice another creature: You gain 1 life and draw a card.
+timing=main
+oracle=Undergrowth — When Izoni, Thousand-Eyed enters the battlefield, create a 1/1 black and green Insect creature token for each creature card in your graveyard.\n{B}{G}, Sacrifice another creature: You gain 1 life and draw a card.

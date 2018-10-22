@@ -1,0 +1,11 @@
+name=Finality
+image=https://img.scryfall.com/cards/normal/front/2/7/27446bd7-74d6-4831-8bb9-1c71b19aecf7.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{B}{G}
+split=Find
+effect=You may put two +1/+1 counters on a creature you control. Then all creatures get -4/-4 until end of turn.
+timing=main
+oracle=You may put two +1/+1 counters on a creature you control. Then all creatures get -4/-4 until end of turn.
+status=not supported: split-card

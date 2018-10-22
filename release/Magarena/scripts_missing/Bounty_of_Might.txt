@@ -1,0 +1,9 @@
+name=Bounty of Might
+image=https://img.scryfall.com/cards/normal/front/e/9/e9a950d8-e6e2-42d6-83d7-a60c15d2035d.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={4}{G}{G}
+effect=Target creature gets +3/+3 until end of turn.~Target creature gets +3/+3 until end of turn.~Target creature gets +3/+3 until end of turn.
+timing=removal
+oracle=Target creature gets +3/+3 until end of turn.\nTarget creature gets +3/+3 until end of turn.\nTarget creature gets +3/+3 until end of turn.

@@ -1,0 +1,10 @@
+name=Wishcoin Crab
+image=https://img.scryfall.com/cards/normal/front/6/5/6580d6a2-ee21-4442-9842-18c65a172f49.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Crab
+cost={3}{U}
+pt=2/5
+timing=main
+oracle=NONE

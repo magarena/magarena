@@ -1,0 +1,12 @@
+name=Hellkite Whelp
+image=https://img.scryfall.com/cards/normal/front/6/5/65e902e8-bbd5-40fe-a655-45d3d3bc9fde.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{R}
+pt=3/3
+ability=Flying;\
+        Whenever SN attacks, it deals 1 damage to target creature defending player controls.
+timing=main
+oracle=Flying\nWhenever Hellkite Whelp attacks, it deals 1 damage to target creature defending player controls.

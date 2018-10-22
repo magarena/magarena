@@ -1,0 +1,11 @@
+name=Passwall Adept
+image=https://img.scryfall.com/cards/normal/front/a/8/a8ed28c3-8c66-4883-8774-67ac5ab9e81c.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/3
+ability={2}{U}: Target creature can't be blocked this turn.
+timing=main
+oracle={2}{U}: Target creature can't be blocked this turn.

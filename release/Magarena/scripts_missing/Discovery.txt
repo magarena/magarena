@@ -1,0 +1,11 @@
+name=Discovery
+image=https://img.scryfall.com/cards/large/front/a/c/ace631d1-897a-417e-8628-0170713f03d3.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{U/B}
+split=Dispersal
+effect=Surveil 2, then draw a card.
+timing=main
+oracle=Surveil 2, then draw a card.
+status=not supported: split-card

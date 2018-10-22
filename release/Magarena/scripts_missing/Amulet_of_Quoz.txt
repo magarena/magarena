@@ -1,0 +1,10 @@
+name=Amulet of Quoz
+image=https://img.scryfall.com/cards/normal/en/ice/308.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={6}
+ability=Remove SN from your deck before playing if you're not playing for ante.;\
+        {T}, Sacrifice SN: Target opponent may ante the top card of their library. If they don't, you flip a coin. If you win the flip, that player loses the game. If you lose the flip, you lose the game. Activate this ability only during your upkeep.
+timing=artifact
+oracle=Remove Amulet of Quoz from your deck before playing if you're not playing for ante.\n{T}, Sacrifice Amulet of Quoz: Target opponent may ante the top card of their library. If they don't, you flip a coin. If you win the flip, that player loses the game. If you lose the flip, you lose the game. Activate this ability only during your upkeep.

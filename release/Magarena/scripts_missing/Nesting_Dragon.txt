@@ -1,0 +1,12 @@
+name=Nesting Dragon
+image=https://img.scryfall.com/cards/normal/en/c18/24.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{R}{R}
+pt=5/4
+ability=Flying;\
+        Whenever a land enters the battlefield under your control, create a 0/2 red Dragon Egg creature token with defender and "When this creature dies, create a 2/2 red Dragon creature token with flying and '{R}: This creature gets +1/+0 until end of turn.'"
+timing=main
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, create a 0/2 red Dragon Egg creature token with defender and "When this creature dies, create a 2/2 red Dragon creature token with flying and '{R}: This creature gets +1/+0 until end of turn.'"

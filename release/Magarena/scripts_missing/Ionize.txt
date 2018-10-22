@@ -1,0 +1,9 @@
+name=Ionize
+image=https://img.scryfall.com/cards/normal/front/f/1/f161f7d2-eaa1-4931-93f9-befa8b5df821.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{U}{R}
+effect=Counter target spell. SN deals 2 damage to that spell's controller.
+timing=counter
+oracle=Counter target spell. Ionize deals 2 damage to that spell's controller.

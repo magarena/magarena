@@ -1,0 +1,11 @@
+name=Spinal Centipede
+image=https://img.scryfall.com/cards/normal/front/7/4/74d579fb-615a-43a6-a1c1-c535087abf2a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={2}{B}
+pt=3/2
+ability=When SN dies, put a +1/+1 counter on target creature you control.
+timing=main
+oracle=When Spinal Centipede dies, put a +1/+1 counter on target creature you control.

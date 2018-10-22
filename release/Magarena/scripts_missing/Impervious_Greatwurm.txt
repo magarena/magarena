@@ -1,0 +1,12 @@
+name=Impervious Greatwurm
+image=https://img.scryfall.com/cards/normal/front/f/5/f5e6dc5f-fd83-4166-a5da-cd953722642a.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Wurm
+cost={7}{G}{G}{G}
+pt=16/16
+ability=Convoke;\
+        Indestructible
+timing=main
+oracle=Convoke\nIndestructible

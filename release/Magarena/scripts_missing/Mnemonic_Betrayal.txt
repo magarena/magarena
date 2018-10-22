@@ -1,0 +1,9 @@
+name=Mnemonic Betrayal
+image=https://img.scryfall.com/cards/normal/front/a/5/a5cf45aa-ed34-4add-a2ec-fc11f8c15ffa.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={1}{U}{B}
+effect=Exile all cards from all opponents' graveyards. You may cast those cards this turn, and you may spend mana as though it were mana of any type to cast those spells. At the beginning of the next end step, if any of those cards remain exiled, return them to their owners' graveyards.~Exile SN.
+timing=main
+oracle=Exile all cards from all opponents' graveyards. You may cast those cards this turn, and you may spend mana as though it were mana of any type to cast those spells. At the beginning of the next end step, if any of those cards remain exiled, return them to their owners' graveyards.\nExile Mnemonic Betrayal.

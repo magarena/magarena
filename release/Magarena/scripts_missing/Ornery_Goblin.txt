@@ -1,0 +1,11 @@
+name=Ornery Goblin
+image=https://img.scryfall.com/cards/normal/front/b/e/be1c1353-b315-4a0e-80b5-0d9a2962e35f.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=2/1
+ability=Whenever SN blocks or becomes blocked by a creature, SN deals 1 damage to that creature.
+timing=main
+oracle=Whenever Ornery Goblin blocks or becomes blocked by a creature, Ornery Goblin deals 1 damage to that creature.

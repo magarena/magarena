@@ -1,0 +1,11 @@
+name=Attendant of Vraska
+image=https://img.scryfall.com/cards/normal/front/7/f/7f4840f1-3db3-4ba6-b75b-bbd87251a3af.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Soldier
+cost={1}{B}{G}
+pt=3/3
+ability=When SN dies, if you control a Vraska planeswalker, you gain life equal to SN's power.
+timing=main
+oracle=When Attendant of Vraska dies, if you control a Vraska planeswalker, you gain life equal to Attendant of Vraska's power.

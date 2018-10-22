@@ -1,0 +1,9 @@
+name=Artful Takedown
+image=https://img.scryfall.com/cards/normal/front/4/c/4c9e8f24-af62-4d13-bfed-a8b3294b64c3.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}{B}
+effect=Choose one or both — (1) Tap target creature. (2) Target creature gets -2/-4 until end of turn.
+timing=removal
+oracle=Choose one or both —\n• Tap target creature.\n• Target creature gets -2/-4 until end of turn.

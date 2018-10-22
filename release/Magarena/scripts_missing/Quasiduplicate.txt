@@ -1,0 +1,9 @@
+name=Quasiduplicate
+image=https://img.scryfall.com/cards/normal/front/f/0/f069646c-fae2-40bd-92bc-35459a84d847.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{U}{U}
+effect=Create a token that's a copy of target creature you control.~Jump-start
+timing=main
+oracle=Create a token that's a copy of target creature you control.\nJump-start

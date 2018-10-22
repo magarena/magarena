@@ -1,0 +1,12 @@
+name=Lazav, the Multifarious
+image=https://img.scryfall.com/cards/normal/front/2/4/24c1e710-f61c-4dd6-b620-6d2e1ecab689.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Shapeshifter
+cost={U}{B}
+pt=1/3
+ability=When SN enters the battlefield, surveil 1.;\
+        {X}: SN becomes a copy of target creature card in your graveyard with converted mana cost X, except its name is SN, it's legendary in addition to its other types, and it has this ability.
+timing=main
+oracle=When Lazav, the Multifarious enters the battlefield, surveil 1.\n{X}: Lazav, the Multifarious becomes a copy of target creature card in your graveyard with converted mana cost X, except its name is Lazav, the Multifarious, it's legendary in addition to its other types, and it has this ability.

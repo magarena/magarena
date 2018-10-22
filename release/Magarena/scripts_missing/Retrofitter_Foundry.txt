@@ -1,0 +1,12 @@
+name=Retrofitter Foundry
+image=https://img.scryfall.com/cards/normal/en/c18/57.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={1}
+ability={3}: Untap SN.;\
+        {2}, {T}: Create a 1/1 colorless Servo artifact creature token.;\
+        {1}, {T}, Sacrifice a Servo: Create a 1/1 colorless Thopter artifact creature token with flying.;\
+        {T}, Sacrifice a Thopter: Create a 4/4 colorless Construct artifact creature token.
+timing=artifact
+oracle={3}: Untap Retrofitter Foundry.\n{2}, {T}: Create a 1/1 colorless Servo artifact creature token.\n{1}, {T}, Sacrifice a Servo: Create a 1/1 colorless Thopter artifact creature token with flying.\n{T}, Sacrifice a Thopter: Create a 4/4 colorless Construct artifact creature token.

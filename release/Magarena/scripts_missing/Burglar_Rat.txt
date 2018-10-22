@@ -1,0 +1,11 @@
+name=Burglar Rat
+image=https://img.scryfall.com/cards/normal/front/e/9/e9f7f218-fd2a-4233-8753-065ddc314f2d.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rat
+cost={1}{B}
+pt=1/1
+ability=When SN enters the battlefield, each opponent discards a card.
+timing=main
+oracle=When Burglar Rat enters the battlefield, each opponent discards a card.

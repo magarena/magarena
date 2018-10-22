@@ -1,0 +1,13 @@
+name=Rampaging Monument
+image=https://img.scryfall.com/cards/normal/front/b/5/b5fbe445-a788-4624-8ecf-8bc06c3ca8f8.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Cleric
+cost={4}
+pt=0/0
+ability=Trample;\
+        SN enters the battlefield with three +1/+1 counters on it.;\
+        Whenever you cast a multicolored spell, put a +1/+1 counter on SN.
+timing=main
+oracle=Trample\nRampaging Monument enters the battlefield with three +1/+1 counters on it.\nWhenever you cast a multicolored spell, put a +1/+1 counter on Rampaging Monument.

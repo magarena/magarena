@@ -1,0 +1,11 @@
+name=Hired Poisoner
+image=https://img.scryfall.com/cards/normal/front/b/f/bf97e572-90d6-46fc-81c3-956a7ef88983.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Assassin
+cost={B}
+pt=1/1
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

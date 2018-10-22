@@ -1,0 +1,13 @@
+name=Kestia, the Cultivator
+image=https://img.scryfall.com/cards/normal/en/c18/42.jpg
+value=2.500
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=Nymph
+cost={1}{G}{W}{U}
+pt=4/4
+ability=Bestow {3}{G}{W}{U};\
+        Enchanted creature gets +4/+4.;\
+        Whenever an enchanted creature or enchantment creature you control attacks, draw a card.
+timing=main
+oracle=Bestow {3}{G}{W}{U}\nEnchanted creature gets +4/+4.\nWhenever an enchanted creature or enchantment creature you control attacks, draw a card.

@@ -1,0 +1,11 @@
+name=Skyline Scout
+image=https://img.scryfall.com/cards/normal/front/b/0/b052b641-fce9-45c1-a15b-1e22f1a64e4d.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={1}{W}
+pt=2/1
+ability=Whenever SN attacks, you may pay {1}{W}. If you do, it gains flying until end of turn.
+timing=main
+oracle=Whenever Skyline Scout attacks, you may pay {1}{W}. If you do, it gains flying until end of turn.

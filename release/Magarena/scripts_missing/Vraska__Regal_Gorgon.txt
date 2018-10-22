@@ -1,0 +1,13 @@
+name=Vraska, Regal Gorgon
+image=https://img.scryfall.com/cards/normal/front/4/2/4299dbe6-c94d-4ecc-8bfd-741d2649cba1.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Vraska
+cost={5}{B}{G}
+loyalty=5
+ability=+2: Put a +1/+1 counter on up to one target creature. That creature gains menace until end of turn.;\
+        −3: Destroy target creature.;\
+        −10: For each creature card in your graveyard, put a +1/+1 counter on each creature you control.
+timing=main
+oracle=+2: Put a +1/+1 counter on up to one target creature. That creature gains menace until end of turn.\n−3: Destroy target creature.\n−10: For each creature card in your graveyard, put a +1/+1 counter on each creature you control.

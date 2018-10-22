@@ -1,0 +1,11 @@
+name=Emmara, Soul of the Accord
+image=https://img.scryfall.com/cards/normal/front/7/1/7110419d-0ed3-4446-b61c-e9e54463b3b2.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Cleric
+cost={G}{W}
+pt=2/2
+ability=Whenever SN becomes tapped, create a 1/1 white Soldier creature token with lifelink.
+timing=main
+oracle=Whenever Emmara, Soul of the Accord becomes tapped, create a 1/1 white Soldier creature token with lifelink.

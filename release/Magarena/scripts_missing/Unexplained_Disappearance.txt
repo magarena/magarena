@@ -1,0 +1,9 @@
+name=Unexplained Disappearance
+image=https://img.scryfall.com/cards/normal/front/9/c/9c99b239-50d2-4393-80ec-94dbfaa6ae70.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return target creature to its owner's hand.~Surveil 1.
+timing=removal
+oracle=Return target creature to its owner's hand.\nSurveil 1.

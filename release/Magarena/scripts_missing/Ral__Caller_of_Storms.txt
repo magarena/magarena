@@ -1,0 +1,13 @@
+name=Ral, Caller of Storms
+image=https://img.scryfall.com/cards/normal/front/c/4/c44f0c60-5732-4c25-9ba9-4829f1891762.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Ral
+cost={4}{U}{R}
+loyalty=4
+ability=+1: Draw a card.;\
+        −2: SN deals 3 damage divided as you choose among one, two, or three targets.;\
+        −7: Draw seven cards. SN deals 7 damage to each creature your opponents control.
+timing=main
+oracle=+1: Draw a card.\n−2: Ral, Caller of Storms deals 3 damage divided as you choose among one, two, or three targets.\n−7: Draw seven cards. Ral, Caller of Storms deals 7 damage to each creature your opponents control.

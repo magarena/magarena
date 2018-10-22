@@ -1,0 +1,11 @@
+name=Goblin Locksmith
+image=https://img.scryfall.com/cards/normal/front/c/f/cf2bed0a-990a-499a-af0a-52b77557d7cb.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{R}
+pt=2/1
+ability=Whenever SN attacks, creatures with defender can't block this turn.
+timing=main
+oracle=Whenever Goblin Locksmith attacks, creatures with defender can't block this turn.

@@ -1,0 +1,13 @@
+name=Urban Utopia
+image=https://img.scryfall.com/cards/normal/front/4/5/45d7ab0e-db37-4051-86dd-3ab09c047a2b.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+ability=Enchant land;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted land has "{T}: Add one mana of any color."
+timing=aura
+enchant=default,creature
+oracle=Enchant land\nWhen Urban Utopia enters the battlefield, draw a card.\nEnchanted land has "{T}: Add one mana of any color."

@@ -1,0 +1,11 @@
+name=Affectionate Indrik
+image=https://img.scryfall.com/cards/normal/front/b/4/b4c8ddc1-d95c-499f-b1d1-f608f8f07b02.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={5}{G}
+pt=4/4
+ability=When SN enters the battlefield, you may have it fight target creature you don't control.
+timing=main
+oracle=When Affectionate Indrik enters the battlefield, you may have it fight target creature you don't control.

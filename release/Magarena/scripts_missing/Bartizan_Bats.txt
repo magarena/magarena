@@ -1,0 +1,11 @@
+name=Bartizan Bats
+image=https://img.scryfall.com/cards/normal/front/2/1/210da4ad-d8c5-436b-b1a4-5233e8074a1b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bat
+cost={3}{B}
+pt=3/1
+ability=Flying
+timing=main
+oracle=Flying

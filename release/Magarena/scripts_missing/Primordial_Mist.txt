@@ -1,0 +1,10 @@
+name=Primordial Mist
+image=https://img.scryfall.com/cards/normal/en/c18/12.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={4}{U}
+ability=At the beginning of your end step, you may manifest the top card of your library.;\
+        Exile a face-down permanent you control face up: You may play that card this turn.
+timing=enchantment
+oracle=At the beginning of your end step, you may manifest the top card of your library.\nExile a face-down permanent you control face up: You may play that card this turn.

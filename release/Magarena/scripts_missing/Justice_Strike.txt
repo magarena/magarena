@@ -1,0 +1,9 @@
+name=Justice Strike
+image=https://img.scryfall.com/cards/normal/front/2/7/27619ce9-59df-4f0e-a5db-2d32a530e547.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={R}{W}
+effect=Target creature deals damage to itself equal to its power.
+timing=removal
+oracle=Target creature deals damage to itself equal to its power.

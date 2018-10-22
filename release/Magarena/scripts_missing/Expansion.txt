@@ -1,0 +1,11 @@
+name=Expansion
+image=https://img.scryfall.com/cards/large/front/e/0/e0644c92-4d67-475e-8c8e-0e2c493682fb.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={U/R}{U/R}
+split=Explosion
+effect=Copy target instant or sorcery spell with converted mana cost 4 or less. You may choose new targets for the copy.
+timing=removal
+oracle=Copy target instant or sorcery spell with converted mana cost 4 or less. You may choose new targets for the copy.
+status=not supported: split-card

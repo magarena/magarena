@@ -1,0 +1,10 @@
+name=Selesnya Locket
+image=https://img.scryfall.com/cards/normal/front/e/a/ea0c04b9-c7fc-4204-9af2-5d1987bdd97e.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: Add {G} or {W}.;\
+        {G/W}{G/W}{G/W}{G/W}, {T}, Sacrifice SN: Draw two cards.
+timing=artifact
+oracle={T}: Add {G} or {W}.\n{G/W}{G/W}{G/W}{G/W}, {T}, Sacrifice Selesnya Locket: Draw two cards.

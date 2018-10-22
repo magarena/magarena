@@ -1,0 +1,14 @@
+name=Ancient Stone Idol
+image=https://img.scryfall.com/cards/normal/en/c18/53.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={10}
+pt=12/12
+ability=Flash;\
+        This spell costs {1} less to cast for each attacking creature.;\
+        Trample;\
+        When SN dies, create a 6/12 colorless Construct artifact creature token with trample.
+timing=flash
+oracle=Flash\nThis spell costs {1} less to cast for each attacking creature.\nTrample\nWhen Ancient Stone Idol dies, create a 6/12 colorless Construct artifact creature token with trample.

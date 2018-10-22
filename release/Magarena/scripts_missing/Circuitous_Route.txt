@@ -1,0 +1,9 @@
+name=Circuitous Route
+image=https://img.scryfall.com/cards/normal/front/5/a/5a970429-6369-4422-a343-00b30267f09d.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Search your library for up to two basic land cards and/or Gate cards, put them onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=Search your library for up to two basic land cards and/or Gate cards, put them onto the battlefield tapped, then shuffle your library.

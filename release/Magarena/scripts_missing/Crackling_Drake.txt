@@ -1,0 +1,13 @@
+name=Crackling Drake
+image=https://img.scryfall.com/cards/normal/front/f/0/f00fa3a7-e3e2-4b23-a126-a076e75b5dbd.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Drake
+cost={U}{U}{R}{R}
+pt=*/4
+ability=Flying;\
+        SN's power is equal to the total number of instant and sorcery cards you own in exile and in your graveyard.;\
+        When SN enters the battlefield, draw a card.
+timing=main
+oracle=Flying\nCrackling Drake's power is equal to the total number of instant and sorcery cards you own in exile and in your graveyard.\nWhen Crackling Drake enters the battlefield, draw a card.

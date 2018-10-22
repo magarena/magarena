@@ -1,0 +1,12 @@
+name=Barrier of Bones
+image=https://img.scryfall.com/cards/normal/front/2/8/28129aaf-aaff-47f4-8dd2-8c576c55052c.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Skeleton,Wall
+cost={B}
+pt=0/3
+ability=Defender;\
+        When SN enters the battlefield, surveil 1.
+timing=smain
+oracle=Defender\nWhen Barrier of Bones enters the battlefield, surveil 1.

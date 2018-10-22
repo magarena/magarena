@@ -1,0 +1,9 @@
+name=Selective Snare
+image=https://img.scryfall.com/cards/normal/front/2/a/2adfc0ac-08a9-487a-b01c-5de52fae0312.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={X}{U}
+effect=Return X target creatures of the creature type of your choice to their owner's hand.
+timing=main
+oracle=Return X target creatures of the creature type of your choice to their owner's hand.

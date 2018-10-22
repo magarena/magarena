@@ -1,0 +1,11 @@
+name=Flourish
+image=https://img.scryfall.com/cards/normal/front/f/e/feb4b39f-d309-49ba-b427-240b7fdc1099.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{G}{W}
+split=Flower
+effect=Creatures you control get +2/+2 until end of turn.
+timing=main
+oracle=Creatures you control get +2/+2 until end of turn.
+status=not supported: split-card

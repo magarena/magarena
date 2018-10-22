@@ -1,0 +1,11 @@
+name=Concoct
+image=https://img.scryfall.com/cards/large/front/8/9/890ac54c-6fd7-4e46-8ce4-8926c6975f60.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{U}{B}
+split=Connive
+effect=Surveil 3, then return a creature card from your graveyard to the battlefield.
+timing=main
+oracle=Surveil 3, then return a creature card from your graveyard to the battlefield.
+status=not supported: split-card

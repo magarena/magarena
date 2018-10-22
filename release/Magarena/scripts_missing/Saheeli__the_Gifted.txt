@@ -1,0 +1,14 @@
+name=Saheeli, the Gifted
+image=https://img.scryfall.com/cards/normal/en/c18/44.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Saheeli
+cost={2}{U}{R}
+loyalty=4
+ability=+1: Create a 1/1 colorless Servo artifact creature token.;\
+        +1: The next spell you cast this turn costs {1} less to cast for each artifact you control as you cast it.;\
+        −7: For each artifact you control, create a token that's a copy of it. Those tokens gain haste. Exile those tokens at the beginning of the next end step.;\
+        SN can be your commander.
+timing=main
+oracle=+1: Create a 1/1 colorless Servo artifact creature token.\n+1: The next spell you cast this turn costs {1} less to cast for each artifact you control as you cast it.\n−7: For each artifact you control, create a token that's a copy of it. Those tokens gain haste. Exile those tokens at the beginning of the next end step.\nSaheeli, the Gifted can be your commander.

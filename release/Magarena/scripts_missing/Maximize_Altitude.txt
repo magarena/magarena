@@ -1,0 +1,9 @@
+name=Maximize Altitude
+image=https://img.scryfall.com/cards/normal/front/3/b/3b5a08a0-b002-4bfe-9cac-d2bf96175f8e.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={U}
+effect=Target creature gets +1/+1 and gains flying until end of turn.~Jump-start
+timing=main
+oracle=Target creature gets +1/+1 and gains flying until end of turn.\nJump-start

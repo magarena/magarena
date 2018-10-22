@@ -1,0 +1,12 @@
+name=Watcher in the Mist
+image=https://img.scryfall.com/cards/normal/front/f/b/fb971f49-8898-444a-a17c-caeb1696c62a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{U}{U}
+pt=3/4
+ability=Flying;\
+        When SN enters the battlefield, surveil 2.
+timing=main
+oracle=Flying\nWhen Watcher in the Mist enters the battlefield, surveil 2.

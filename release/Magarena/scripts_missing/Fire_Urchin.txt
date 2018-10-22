@@ -1,0 +1,12 @@
+name=Fire Urchin
+image=https://img.scryfall.com/cards/normal/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={1}{R}
+pt=1/3
+ability=Trample;\
+        Whenever you cast an instant or sorcery spell, SN gets +1/+0 until end of turn.
+timing=main
+oracle=Trample\nWhenever you cast an instant or sorcery spell, Fire Urchin gets +1/+0 until end of turn.

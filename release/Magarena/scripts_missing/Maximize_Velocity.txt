@@ -1,0 +1,9 @@
+name=Maximize Velocity
+image=https://img.scryfall.com/cards/normal/front/e/b/ebb7a2aa-f002-4f05-b9ec-8adee4c65e46.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={R}
+effect=Target creature gets +1/+1 and gains haste until end of turn.~Jump-start
+timing=main
+oracle=Target creature gets +1/+1 and gains haste until end of turn.\nJump-start

@@ -1,0 +1,9 @@
+name=Windgrace's Judgment
+image=https://img.scryfall.com/cards/normal/en/c18/49.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{B}{G}
+effect=For any number of opponents, destroy target nonland permanent that player controls.
+timing=removal
+oracle=For any number of opponents, destroy target nonland permanent that player controls.

@@ -1,0 +1,10 @@
+name=Disinformation Campaign
+image=https://img.scryfall.com/cards/normal/front/6/9/69a79ff3-58ed-4cc2-9ebc-0edbb86cd6fb.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{U}{B}
+ability=When SN enters the battlefield, you draw a card and each opponent discards a card.;\
+        Whenever you surveil, return SN to its owner's hand.
+timing=enchantment
+oracle=When Disinformation Campaign enters the battlefield, you draw a card and each opponent discards a card.\nWhenever you surveil, return Disinformation Campaign to its owner's hand.

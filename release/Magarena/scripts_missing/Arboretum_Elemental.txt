@@ -1,0 +1,12 @@
+name=Arboretum Elemental
+image=https://img.scryfall.com/cards/normal/front/6/f/6f4400bf-134b-4011-985d-eed4e5ba1de8.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={7}{G}{G}
+pt=7/5
+ability=Convoke;\
+        Hexproof
+timing=main
+oracle=Convoke\nHexproof

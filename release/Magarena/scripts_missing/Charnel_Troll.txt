@@ -1,0 +1,13 @@
+name=Charnel Troll
+image=https://img.scryfall.com/cards/normal/front/7/1/71fec229-e22c-4655-8640-02d0ec472be0.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Troll
+cost={1}{B}{G}
+pt=4/4
+ability=Trample;\
+        At the beginning of your upkeep, exile a creature card from your graveyard. If you do, put a +1/+1 counter on SN. Otherwise, sacrifice it.;\
+        {B}{G}, Discard a creature card: Put a +1/+1 counter on SN.
+timing=main
+oracle=Trample\nAt the beginning of your upkeep, exile a creature card from your graveyard. If you do, put a +1/+1 counter on Charnel Troll. Otherwise, sacrifice it.\n{B}{G}, Discard a creature card: Put a +1/+1 counter on Charnel Troll.

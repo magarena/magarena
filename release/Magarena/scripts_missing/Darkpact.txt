@@ -1,0 +1,9 @@
+name=Darkpact
+image=https://img.scryfall.com/cards/normal/en/lea/99.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={B}{B}{B}
+effect=Remove SN from your deck before playing if you're not playing for ante.~You own target card in the ante. Exchange that card with the top card of your library.
+timing=main
+oracle=Remove Darkpact from your deck before playing if you're not playing for ante.\nYou own target card in the ante. Exchange that card with the top card of your library.

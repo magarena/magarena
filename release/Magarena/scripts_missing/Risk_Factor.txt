@@ -1,0 +1,9 @@
+name=Risk Factor
+image=https://img.scryfall.com/cards/normal/front/4/e/4eda89d9-9bd1-4a55-ac02-f9a0625d8e5b.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{R}
+effect=Target opponent may have SN deal 4 damage to them. If that player doesn't, you draw three cards.~Jump-start
+timing=removal
+oracle=Target opponent may have Risk Factor deal 4 damage to them. If that player doesn't, you draw three cards.\nJump-start

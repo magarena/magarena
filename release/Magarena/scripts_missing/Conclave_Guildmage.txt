@@ -1,0 +1,12 @@
+name=Conclave Guildmage
+image=https://img.scryfall.com/cards/normal/front/2/7/279e551d-3ac3-48d5-9822-1d05159c8905.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Cleric
+cost={G}{W}
+pt=2/2
+ability={G}, {T}: Creatures you control gain trample until end of turn.;\
+        {5}{W}, {T}: Create a 2/2 green and white Elf Knight creature token with vigilance.
+timing=main
+oracle={G}, {T}: Creatures you control gain trample until end of turn.\n{5}{W}, {T}: Create a 2/2 green and white Elf Knight creature token with vigilance.

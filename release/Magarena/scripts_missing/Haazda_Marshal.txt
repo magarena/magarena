@@ -1,0 +1,11 @@
+name=Haazda Marshal
+image=https://img.scryfall.com/cards/normal/front/5/c/5c561d89-b02d-4f1a-b49a-cdf2def3404d.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=Whenever SN and at least two other creatures attack, create a 1/1 white Soldier creature token with lifelink.
+timing=main
+oracle=Whenever Haazda Marshal and at least two other creatures attack, create a 1/1 white Soldier creature token with lifelink.

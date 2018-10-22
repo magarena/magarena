@@ -1,0 +1,12 @@
+name=Runaway Steam-Kin
+image=https://img.scryfall.com/cards/large/front/d/8/d8c9c111-fbc7-44e1-94bd-1ca164370623.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+cost={1}{R}
+pt=1/1
+ability=Whenever you cast a red spell, if SN has fewer than three +1/+1 counters on it, put a +1/+1 counter on SN.;\
+        Remove three +1/+1 counters from SN: Add {R}{R}{R}.
+timing=main
+oracle=Whenever you cast a red spell, if Runaway Steam-Kin has fewer than three +1/+1 counters on it, put a +1/+1 counter on Runaway Steam-Kin.\nRemove three +1/+1 counters from Runaway Steam-Kin: Add {R}{R}{R}.

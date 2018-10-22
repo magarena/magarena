@@ -1,0 +1,9 @@
+name=Falling Star
+image=https://img.scryfall.com/cards/normal/en/leg/145.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{R}
+effect=Flip SN onto the playing area from a height of at least one foot. SN deals 3 damage to each creature it lands on. Tap all creatures dealt damage by SN. If SN doesn't turn completely over at least once during the flip, it has no effect.
+timing=main
+oracle=Flip Falling Star onto the playing area from a height of at least one foot. Falling Star deals 3 damage to each creature it lands on. Tap all creatures dealt damage by Falling Star. If Falling Star doesn't turn completely over at least once during the flip, it has no effect.

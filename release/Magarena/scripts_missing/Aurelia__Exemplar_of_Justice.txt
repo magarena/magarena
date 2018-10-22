@@ -1,0 +1,13 @@
+name=Aurelia, Exemplar of Justice
+image=https://img.scryfall.com/cards/normal/front/a/8/a8e9f4d2-bba5-4061-8ae7-a68b912f2c11.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+cost={2}{R}{W}
+pt=2/5
+ability=Flying;\
+        Mentor;\
+        At the beginning of combat on your turn, choose up to one target creature you control. Until end of turn, that creature gets +2/+0, gains trample if it's red, and gains vigilance if it's white.
+timing=main
+oracle=Flying\nMentor\nAt the beginning of combat on your turn, choose up to one target creature you control. Until end of turn, that creature gets +2/+0, gains trample if it's red, and gains vigilance if it's white.

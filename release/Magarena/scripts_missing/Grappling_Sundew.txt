@@ -1,0 +1,12 @@
+name=Grappling Sundew
+image=https://img.scryfall.com/cards/normal/front/f/7/f74d8d76-8091-424d-ad11-e8a1faae584d.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Plant
+cost={1}{G}
+pt=0/4
+ability=Defender, reach;\
+        {4}{G}: SN gains indestructible until end of turn.
+timing=smain
+oracle=Defender, reach\n{4}{G}: Grappling Sundew gains indestructible until end of turn.

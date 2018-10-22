@@ -1,0 +1,13 @@
+name=Varchild, Betrayer of Kjeldor
+image=https://img.scryfall.com/cards/normal/en/c18/28.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+cost={2}{R}
+pt=3/3
+ability=Whenever SN deals combat damage to a player, that player creates that many 1/1 red Survivor creature tokens.;\
+        Survivors your opponents control can't block, and they can't attack you or a planeswalker you control.;\
+        When Varchild leaves the battlefield, gain control of all Survivors.
+timing=main
+oracle=Whenever Varchild, Betrayer of Kjeldor deals combat damage to a player, that player creates that many 1/1 red Survivor creature tokens.\nSurvivors your opponents control can't block, and they can't attack you or a planeswalker you control.\nWhen Varchild leaves the battlefield, gain control of all Survivors.

@@ -1,0 +1,11 @@
+name=Statue
+image=https://img.scryfall.com/cards/large/front/4/4/44614c6d-5508-4077-b825-66d5d684086c.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{B}{G}
+split=Status
+effect=Destroy target artifact, creature, or enchantment.
+timing=removal
+oracle=Destroy target artifact, creature, or enchantment.
+status=not supported: split-card

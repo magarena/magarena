@@ -1,0 +1,11 @@
+name=Bronze Tablet
+image=https://img.scryfall.com/cards/normal/en/atq/42.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={6}
+ability=Remove SN from your deck before playing if you're not playing for ante.;\
+        SN enters the battlefield tapped.;\
+        {4}, {T}: Exile SN and target nontoken permanent an opponent owns. That player may pay 10 life. If they do, put SN into its owner's graveyard. Otherwise, that player owns SN and you own the other exiled card.
+timing=artifact
+oracle=Remove Bronze Tablet from your deck before playing if you're not playing for ante.\nBronze Tablet enters the battlefield tapped.\n{4}, {T}: Exile Bronze Tablet and target nontoken permanent an opponent owns. That player may pay 10 life. If they do, put Bronze Tablet into its owner's graveyard. Otherwise, that player owns Bronze Tablet and you own the other exiled card.

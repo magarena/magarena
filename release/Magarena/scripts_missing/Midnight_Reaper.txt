@@ -1,0 +1,11 @@
+name=Midnight Reaper
+image=https://img.scryfall.com/cards/normal/front/5/e/5e122fe0-51c5-404d-a7b9-3d161a426c35.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Knight
+cost={2}{B}
+pt=3/2
+ability=Whenever a nontoken creature you control dies, SN deals 1 damage to you and you draw a card.
+timing=main
+oracle=Whenever a nontoken creature you control dies, Midnight Reaper deals 1 damage to you and you draw a card.
