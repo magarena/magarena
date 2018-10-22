@@ -1,0 +1,12 @@
+name=Ral's Staticaster
+image=https://img.scryfall.com/cards/normal/front/a/d/adfa16dc-03b3-4533-884c-a23b992b8d86.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Viashino,Wizard
+cost={2}{U}{R}
+pt=3/3
+ability=Trample;\
+        Whenever SN attacks, if you control a Ral planeswalker, SN gets +1/+0 for each card in your hand until end of turn.
+timing=main
+oracle=Trample\nWhenever Ral's Staticaster attacks, if you control a Ral planeswalker, Ral's Staticaster gets +1/+0 for each card in your hand until end of turn.

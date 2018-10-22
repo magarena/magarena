@@ -1,0 +1,9 @@
+name=Deadly Visit
+image=https://img.scryfall.com/cards/normal/front/4/6/462fe190-5264-42d8-bd27-23c5aa0c641f.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}{B}
+effect=Destroy target creature.~Surveil 2.
+timing=main
+oracle=Destroy target creature.\nSurveil 2.

@@ -1,0 +1,11 @@
+name=Ledev Guardian
+image=https://img.scryfall.com/cards/normal/front/c/b/cbeb4ae3-2a7a-44e1-923b-20c772fd1b8b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{W}
+pt=2/4
+ability=Convoke
+timing=main
+oracle=Convoke

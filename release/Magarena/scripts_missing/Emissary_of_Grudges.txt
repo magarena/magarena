@@ -1,0 +1,13 @@
+name=Emissary of Grudges
+image=https://img.scryfall.com/cards/normal/en/c18/20.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Efreet
+cost={5}{R}
+pt=6/5
+ability=Flying, haste;\
+        As SN enters the battlefield, secretly choose an opponent.;\
+        Reveal the player you chose: Choose new targets for target spell or ability if it's controlled by the chosen player and if it targets you or a permanent you control. Activate this ability only once.
+timing=main
+oracle=Flying, haste\nAs Emissary of Grudges enters the battlefield, secretly choose an opponent.\nReveal the player you chose: Choose new targets for target spell or ability if it's controlled by the chosen player and if it targets you or a permanent you control. Activate this ability only once.

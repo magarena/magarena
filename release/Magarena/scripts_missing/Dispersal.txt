@@ -1,0 +1,11 @@
+name=Dispersal
+image=https://img.scryfall.com/cards/large/front/a/c/ace631d1-897a-417e-8628-0170713f03d3.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}{B}
+split=Discovery
+effect=Each opponent returns a nonland permanent they control with the highest converted mana cost among permanents they control to its owner's hand, then discards a card.
+timing=removal
+oracle=Each opponent returns a nonland permanent they control with the highest converted mana cost among permanents they control to its owner's hand, then discards a card.
+status=not supported: split-card

@@ -1,0 +1,12 @@
+name=Muse Drake
+image=https://img.scryfall.com/cards/normal/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Drake
+cost={3}{U}
+pt=1/3
+ability=Flying;\
+        When SN enters the battlefield, draw a card.
+timing=main
+oracle=Flying\nWhen Muse Drake enters the battlefield, draw a card.

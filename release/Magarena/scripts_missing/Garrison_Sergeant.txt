@@ -1,0 +1,11 @@
+name=Garrison Sergeant
+image=https://img.scryfall.com/cards/normal/front/2/b/2bd957a1-a354-48e9-80ad-66e49aa845fc.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Viashino,Soldier
+cost={3}{R}{W}
+pt=3/3
+ability=SN has double strike as long as you control a Gate.
+timing=main
+oracle=Garrison Sergeant has double strike as long as you control a Gate.

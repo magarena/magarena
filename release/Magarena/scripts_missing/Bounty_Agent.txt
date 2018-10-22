@@ -1,0 +1,12 @@
+name=Bounty Agent
+image=https://img.scryfall.com/cards/normal/front/6/e/6e938121-5917-4b67-9014-74fca106a471.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=Vigilance;\
+        {T}, Sacrifice SN: Destroy target legendary permanent that's an artifact, creature, or enchantment.
+timing=main
+oracle=Vigilance\n{T}, Sacrifice Bounty Agent: Destroy target legendary permanent that's an artifact, creature, or enchantment.

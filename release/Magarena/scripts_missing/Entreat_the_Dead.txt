@@ -1,0 +1,10 @@
+name=Entreat the Dead
+image=https://img.scryfall.com/cards/normal/en/c18/15.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{X}{B}{B}{B}
+ability=Miracle {X}{B}{B}
+effect=Return X target creature cards from your graveyard to the battlefield.
+timing=main
+oracle=Return X target creature cards from your graveyard to the battlefield.\nMiracle {X}{B}{B}

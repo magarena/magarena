@@ -1,0 +1,12 @@
+name=Goblin Banneret
+image=https://img.scryfall.com/cards/normal/front/9/0/90b3b56c-5236-4319-b17e-5f71143a7906.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Soldier
+cost={R}
+pt=1/1
+ability=Mentor;\
+        {1}{R}: SN gets +2/+0 until end of turn.
+timing=main
+oracle=Mentor\n{1}{R}: Goblin Banneret gets +2/+0 until end of turn.

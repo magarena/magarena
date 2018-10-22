@@ -1,0 +1,13 @@
+name=Light of the Legion
+image=https://img.scryfall.com/cards/normal/front/a/2/a2f1b831-ca55-4575-9dfa-c3163e3d789d.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={4}{W}{W}
+pt=5/5
+ability=Flying;\
+        Mentor;\
+        When SN dies, put a +1/+1 counter on each white creature you control.
+timing=main
+oracle=Flying\nMentor\nWhen Light of the Legion dies, put a +1/+1 counter on each white creature you control.

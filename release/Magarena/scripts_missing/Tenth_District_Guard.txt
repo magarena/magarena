@@ -1,0 +1,11 @@
+name=Tenth District Guard
+image=https://img.scryfall.com/cards/normal/front/8/2/829f959e-91cd-42ea-8644-ce828a304d01.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=When SN enters the battlefield, target creature gets +0/+1 until end of turn.
+timing=main
+oracle=When Tenth District Guard enters the battlefield, target creature gets +0/+1 until end of turn.

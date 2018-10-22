@@ -1,0 +1,11 @@
+name=Glowspore Shaman
+image=https://img.scryfall.com/cards/normal/front/0/8/08fe260a-d204-4e75-b3e5-0cd9b4ca7084.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={B}{G}
+pt=3/1
+ability=When SN enters the battlefield, put the top three cards of your library into your graveyard. You may put a land card from your graveyard on top of your library.
+timing=main
+oracle=When Glowspore Shaman enters the battlefield, put the top three cards of your library into your graveyard. You may put a land card from your graveyard on top of your library.

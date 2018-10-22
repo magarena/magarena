@@ -1,0 +1,9 @@
+name=Lava Coil
+image=https://img.scryfall.com/cards/normal/front/f/6/f6135cf4-50c2-4e44-b9b0-96e1187a2200.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{R}
+effect=SN deals 4 damage to target creature. If that creature would die this turn, exile it instead.
+timing=main
+oracle=Lava Coil deals 4 damage to target creature. If that creature would die this turn, exile it instead.

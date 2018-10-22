@@ -1,0 +1,12 @@
+name=Boros Challenger
+image=https://img.scryfall.com/cards/normal/front/6/2/626e9cd3-8b1d-46f6-8bcd-4be10ba2e8a4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={R}{W}
+pt=2/3
+ability=Mentor;\
+        {2}{R}{W}: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Mentor\n{2}{R}{W}: Boros Challenger gets +1/+1 until end of turn.

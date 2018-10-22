@@ -1,0 +1,11 @@
+name=Beamsplitter Mage
+image=https://img.scryfall.com/cards/normal/front/8/f/8f1801f2-ea6e-4196-858e-2afc456cf6a0.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vedalken,Wizard
+cost={U}{R}
+pt=2/2
+ability=Whenever you cast an instant or sorcery spell that targets only SN, if you control one or more other creatures that spell could target, choose one of those creatures. Copy that spell. The copy targets the chosen creature.
+timing=main
+oracle=Whenever you cast an instant or sorcery spell that targets only Beamsplitter Mage, if you control one or more other creatures that spell could target, choose one of those creatures. Copy that spell. The copy targets the chosen creature.

@@ -1,0 +1,14 @@
+name=Estrid, the Masked
+image=https://img.scryfall.com/cards/normal/en/c18/40.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Estrid
+cost={1}{G}{W}{U}
+loyalty=3
+ability=+2: Untap each enchanted permanent you control.;\
+        −1: Create a white Aura enchantment token named Mask attached to another target permanent. The token has enchant permanent and totem armor.;\
+        −7: Put the top seven cards of your library into your graveyard. Return all non-Aura enchantment cards from your graveyard to the battlefield, then do the same for Aura cards.;\
+        SN can be your commander.
+timing=main
+oracle=+2: Untap each enchanted permanent you control.\n−1: Create a white Aura enchantment token named Mask attached to another target permanent. The token has enchant permanent and totem armor.\n−7: Put the top seven cards of your library into your graveyard. Return all non-Aura enchantment cards from your graveyard to the battlefield, then do the same for Aura cards.\nEstrid, the Masked can be your commander.

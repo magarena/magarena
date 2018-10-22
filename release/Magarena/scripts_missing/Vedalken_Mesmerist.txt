@@ -1,0 +1,11 @@
+name=Vedalken Mesmerist
+image=https://img.scryfall.com/cards/normal/front/5/b/5b5e0a12-2589-473b-90e4-1ee5acc055a2.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vedalken,Wizard
+cost={1}{U}
+pt=2/1
+ability=Whenever SN attacks, target creature an opponent controls gets -2/-0 until end of turn.
+timing=main
+oracle=Whenever Vedalken Mesmerist attacks, target creature an opponent controls gets -2/-0 until end of turn.

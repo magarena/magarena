@@ -1,0 +1,11 @@
+name=Pitiless Gorgon
+image=https://img.scryfall.com/cards/normal/front/c/1/c1a925a0-9d26-441b-8b4a-0614a0485fe6.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Gorgon
+cost={1}{B/G}{B/G}
+pt=2/2
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

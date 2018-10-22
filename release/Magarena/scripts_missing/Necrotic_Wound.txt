@@ -1,0 +1,9 @@
+name=Necrotic Wound
+image=https://img.scryfall.com/cards/normal/front/9/a/9ab636af-5b30-4138-8e68-81f567f10417.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={B}
+effect=Target creature gets -X/-X until end of turn, where X is the number of creature cards in your graveyard. If that creature would die this turn, exile it instead.
+timing=removal
+oracle=Undergrowth — Target creature gets -X/-X until end of turn, where X is the number of creature cards in your graveyard. If that creature would die this turn, exile it instead.

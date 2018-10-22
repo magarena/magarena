@@ -1,0 +1,14 @@
+name=Capture Sphere
+image=https://img.scryfall.com/cards/normal/front/5/a/5a799ac8-5798-4a26-81c1-763d6dcfcbe8.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{U}
+ability=Flash;\
+        Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
+        Enchanted creature doesn't untap during its controller's untap step.
+timing=flash
+enchant=default,creature
+oracle=Flash\nEnchant creature\nWhen Capture Sphere enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

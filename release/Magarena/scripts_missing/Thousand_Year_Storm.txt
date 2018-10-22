@@ -1,0 +1,9 @@
+name=Thousand-Year Storm
+image=https://img.scryfall.com/cards/large/front/2/7/270a0863-7d07-43f0-925d-a8ce0383a1cb.jpg
+value=2.500
+rarity=M
+type=Enchantment
+cost={4}{U}{R}
+ability=Whenever you cast an instant or sorcery spell, copy it for each other instant and sorcery spell you've cast before it this turn. You may choose new targets for the copies.
+timing=enchantment
+oracle=Whenever you cast an instant or sorcery spell, copy it for each other instant and sorcery spell you've cast before it this turn. You may choose new targets for the copies.

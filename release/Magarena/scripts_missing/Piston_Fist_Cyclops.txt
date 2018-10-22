@@ -1,0 +1,12 @@
+name=Piston-Fist Cyclops
+image=https://img.scryfall.com/cards/large/front/2/e/2ec7523a-a9c4-4b76-8f9e-b591a88e2e37.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cyclops
+cost={1}{U/R}{U/R}
+pt=4/3
+ability=Defender;\
+        As long as you've cast an instant or sorcery spell this turn, SN can attack as though it didn't have defender.
+timing=smain
+oracle=Defender\nAs long as you've cast an instant or sorcery spell this turn, Piston-Fist Cyclops can attack as though it didn't have defender.

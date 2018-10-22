@@ -1,0 +1,9 @@
+name=Citywide Bust
+image=https://img.scryfall.com/cards/normal/front/a/9/a995200f-1e9d-4ff3-9e04-4a4309e0e09c.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{W}{W}
+effect=Destroy all creatures with toughness 4 or greater.
+timing=main
+oracle=Destroy all creatures with toughness 4 or greater.

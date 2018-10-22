@@ -1,0 +1,11 @@
+name=Magus of the Balance
+image=https://img.scryfall.com/cards/normal/en/c18/5.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{W}
+pt=2/2
+ability={4}{W}, {T}, Sacrifice SN: Each player chooses a number of lands they control equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players discard cards and sacrifice creatures the same way.
+timing=main
+oracle={4}{W}, {T}, Sacrifice Magus of the Balance: Each player chooses a number of lands they control equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players discard cards and sacrifice creatures the same way.

@@ -1,0 +1,12 @@
+name=Demotion
+image=https://img.scryfall.com/cards/normal/front/6/9/69202217-ef36-4d6c-bbd0-ebbb2ade51f7.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature can't block, and its activated abilities can't be activated.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature can't block, and its activated abilities can't be activated.

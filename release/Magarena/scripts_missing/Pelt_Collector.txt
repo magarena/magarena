@@ -1,0 +1,12 @@
+name=Pelt Collector
+image=https://img.scryfall.com/cards/normal/front/b/e/bee125cb-12b9-4f78-8e1d-6018d9c52275.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={G}
+pt=1/1
+ability=Whenever another creature you control enters the battlefield or dies, if that creature's power is greater than SN's, put a +1/+1 counter on SN.;\
+        As long as SN has three or more +1/+1 counters on it, it has trample.
+timing=main
+oracle=Whenever another creature you control enters the battlefield or dies, if that creature's power is greater than Pelt Collector's, put a +1/+1 counter on Pelt Collector.\nAs long as Pelt Collector has three or more +1/+1 counters on it, it has trample.

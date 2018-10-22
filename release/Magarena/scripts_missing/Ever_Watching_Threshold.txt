@@ -1,0 +1,9 @@
+name=Ever-Watching Threshold
+image=https://img.scryfall.com/cards/large/en/c18/9.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability=Whenever an opponent attacks you and/or a planeswalker you control with one or more creatures, draw a card.
+timing=enchantment
+oracle=Whenever an opponent attacks you and/or a planeswalker you control with one or more creatures, draw a card.

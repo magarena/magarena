@@ -1,0 +1,12 @@
+name=Doom Whisperer
+image=https://img.scryfall.com/cards/normal/front/0/a/0a11ee0d-ff8d-4648-8b4e-29440c135c30.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Nightmare,Demon
+cost={3}{B}{B}
+pt=6/6
+ability=Flying, trample;\
+        Pay 2 life: Surveil 2.
+timing=main
+oracle=Flying, trample\nPay 2 life: Surveil 2.

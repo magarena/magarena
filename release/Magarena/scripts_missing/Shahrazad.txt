@@ -1,0 +1,9 @@
+name=Shahrazad
+image=https://img.scryfall.com/cards/normal/en/arn/10.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={W}{W}
+effect=Players play a Magic subgame, using their libraries as their decks. Each player who doesn't win the subgame loses half their life, rounded up.
+timing=main
+oracle=Players play a Magic subgame, using their libraries as their decks. Each player who doesn't win the subgame loses half their life, rounded up.

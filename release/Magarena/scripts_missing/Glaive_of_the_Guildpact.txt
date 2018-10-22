@@ -1,0 +1,11 @@
+name=Glaive of the Guildpact
+image=https://img.scryfall.com/cards/normal/front/e/1/e19723ad-7bd2-49ee-a57a-ece99018f4e8.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +1/+0 for each Gate you control and has vigilance and menace.;\
+        Equip {3}
+timing=equipment
+oracle=Equipped creature gets +1/+0 for each Gate you control and has vigilance and menace.\nEquip {3}

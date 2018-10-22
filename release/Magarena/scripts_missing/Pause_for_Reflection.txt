@@ -1,0 +1,10 @@
+name=Pause for Reflection
+image=https://img.scryfall.com/cards/normal/front/3/c/3cfcf84c-a30c-4c4f-9f8c-ee807661e499.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+ability=Convoke
+effect=Prevent all combat damage that would be dealt this turn.
+timing=removal
+oracle=Convoke\nPrevent all combat damage that would be dealt this turn.

@@ -1,0 +1,9 @@
+name=Silent Dart
+image=https://img.scryfall.com/cards/normal/front/3/a/3af00fdd-6869-4080-8a75-66c8fceeb7de.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability={4}, {T}, Sacrifice SN: It deals 3 damage to target creature.
+timing=artifact
+oracle={4}, {T}, Sacrifice Silent Dart: It deals 3 damage to target creature.

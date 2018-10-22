@@ -1,0 +1,9 @@
+name=Sinister Sabotage
+image=https://img.scryfall.com/cards/normal/front/6/c/6cbef36d-7170-424f-8fb1-8e7e112b7f0b.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}{U}
+effect=Counter target spell.~Surveil 1.
+timing=counter
+oracle=Counter target spell.\nSurveil 1.

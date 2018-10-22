@@ -1,0 +1,11 @@
+name=Gateway Plaza
+image=https://img.scryfall.com/cards/normal/front/7/d/7d3d5162-126d-4430-9884-8e79afa974c2.jpg
+value=2.500
+rarity=C
+type=Land
+subtype=Gate
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, sacrifice it unless you pay {1}.;\
+        {T}: Add one mana of any color.
+timing=land
+oracle=Gateway Plaza enters the battlefield tapped.\nWhen Gateway Plaza enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color.

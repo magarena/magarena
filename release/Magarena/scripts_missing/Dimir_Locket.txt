@@ -1,0 +1,10 @@
+name=Dimir Locket
+image=https://img.scryfall.com/cards/normal/front/d/f/dfb6810b-9bc9-43c5-8cd9-817b12ee3110.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: Add {U} or {B}.;\
+        {U/B}{U/B}{U/B}{U/B}, {T}, Sacrifice SN: Draw two cards.
+timing=artifact
+oracle={T}: Add {U} or {B}.\n{U/B}{U/B}{U/B}{U/B}, {T}, Sacrifice Dimir Locket: Draw two cards.

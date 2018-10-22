@@ -1,0 +1,9 @@
+name=Ritual of Soot
+image=https://img.scryfall.com/cards/normal/front/2/6/269af993-4894-4bf1-b55a-af4d736cb3cc.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+effect=Destroy all creatures with converted mana cost 3 or less.
+timing=main
+oracle=Destroy all creatures with converted mana cost 3 or less.

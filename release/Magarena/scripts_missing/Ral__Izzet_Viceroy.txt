@@ -1,0 +1,13 @@
+name=Ral, Izzet Viceroy
+image=https://img.scryfall.com/cards/normal/en/med/GR5.jpg
+value=2.500
+rarity=M
+type=Legendary,Planeswalker
+subtype=Ral
+cost={3}{U}{R}
+loyalty=5
+ability=+1: Look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.;\
+        −3: SN deals damage to target creature equal to the total number of instant and sorcery cards you own in exile and in your graveyard.;\
+        −8: You get an emblem with "Whenever you cast an instant or sorcery spell, this emblem deals 4 damage to any target and you draw two cards."
+timing=main
+oracle=+1: Look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.\n−3: Ral, Izzet Viceroy deals damage to target creature equal to the total number of instant and sorcery cards you own in exile and in your graveyard.\n−8: You get an emblem with "Whenever you cast an instant or sorcery spell, this emblem deals 4 damage to any target and you draw two cards."

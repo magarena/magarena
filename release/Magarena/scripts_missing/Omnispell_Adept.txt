@@ -1,0 +1,11 @@
+name=Omnispell Adept
+image=https://img.scryfall.com/cards/normal/front/e/1/e17664df-e8ba-464d-b338-3e671d2d7f0e.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={4}{U}
+pt=3/4
+ability={2}{U}, {T}: You may cast an instant or sorcery card from your hand without paying its mana cost.
+timing=main
+oracle={2}{U}, {T}: You may cast an instant or sorcery card from your hand without paying its mana cost.

@@ -1,0 +1,9 @@
+name=Beacon Bolt
+image=https://img.scryfall.com/cards/normal/front/3/9/39c9e4b5-364b-4c0b-bb47-266563a6abf2.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{U}{R}
+effect=SN deals damage to target creature equal to the total number of instant and sorcery cards you own in exile and in your graveyard.~Jump-start
+timing=main
+oracle=Beacon Bolt deals damage to target creature equal to the total number of instant and sorcery cards you own in exile and in your graveyard.\nJump-start

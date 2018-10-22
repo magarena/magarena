@@ -1,0 +1,9 @@
+name=Cosmotronic Wave
+image=https://img.scryfall.com/cards/normal/front/6/9/69c5bafa-8cd8-4158-98e0-46dc74c027c0.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{R}
+effect=SN deals 1 damage to each creature your opponents control. Creatures your opponents control can't block this turn.
+timing=main
+oracle=Cosmotronic Wave deals 1 damage to each creature your opponents control. Creatures your opponents control can't block this turn.

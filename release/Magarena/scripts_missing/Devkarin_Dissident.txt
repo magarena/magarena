@@ -1,0 +1,11 @@
+name=Devkarin Dissident
+image=https://img.scryfall.com/cards/normal/front/4/9/490cd287-5f09-442f-9150-4a6ac2cf3e2e.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={1}{G}
+pt=2/2
+ability={4}{G}: SN gets +2/+2 until end of turn.
+timing=main
+oracle={4}{G}: Devkarin Dissident gets +2/+2 until end of turn.

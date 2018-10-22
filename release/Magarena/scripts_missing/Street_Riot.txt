@@ -1,0 +1,9 @@
+name=Street Riot
+image=https://img.scryfall.com/cards/normal/front/8/0/80b352d5-4a57-41bc-b4c4-8b81255a9db8.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={4}{R}
+ability=As long as it's your turn, creatures you control get +1/+0 and have trample.
+timing=enchantment
+oracle=As long as it's your turn, creatures you control get +1/+0 and have trample.

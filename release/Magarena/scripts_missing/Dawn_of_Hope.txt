@@ -1,0 +1,10 @@
+name=Dawn of Hope
+image=https://img.scryfall.com/cards/normal/front/c/f/cf2a9e82-8670-4b7f-b5f0-8e10f8aeff1c.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=Whenever you gain life, you may pay {2}. If you do, draw a card.;\
+        {3}{W}: Create a 1/1 white Soldier creature token with lifelink.
+timing=enchantment
+oracle=Whenever you gain life, you may pay {2}. If you do, draw a card.\n{3}{W}: Create a 1/1 white Soldier creature token with lifelink.

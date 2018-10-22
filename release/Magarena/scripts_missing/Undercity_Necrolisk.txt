@@ -1,0 +1,11 @@
+name=Undercity Necrolisk
+image=https://img.scryfall.com/cards/normal/front/2/5/2571d168-38d4-46d7-afae-ffbd12bd2313.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Lizard
+cost={3}{B}
+pt=3/3
+ability={1}, Sacrifice another creature: Put a +1/+1 counter on SN. It gains menace until end of turn. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={1}, Sacrifice another creature: Put a +1/+1 counter on Undercity Necrolisk. It gains menace until end of turn. Activate this ability only any time you could cast a sorcery.

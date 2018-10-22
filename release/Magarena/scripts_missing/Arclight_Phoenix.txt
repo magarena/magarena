@@ -1,0 +1,12 @@
+name=Arclight Phoenix
+image=https://img.scryfall.com/cards/normal/front/7/8/787de9ce-02c5-4a17-a88b-d38e83dbeb0b.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Phoenix
+cost={3}{R}
+pt=3/2
+ability=Flying, haste;\
+        At the beginning of combat on your turn, if you've cast three or more instant and sorcery spells this turn, return SN from your graveyard to the battlefield.
+timing=main
+oracle=Flying, haste\nAt the beginning of combat on your turn, if you've cast three or more instant and sorcery spells this turn, return Arclight Phoenix from your graveyard to the battlefield.

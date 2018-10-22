@@ -1,0 +1,9 @@
+name=Vivid Revival
+image=https://img.scryfall.com/cards/normal/front/9/e/9e67fcfd-0e9e-4b88-8c65-2125fac10a3d.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{G}
+effect=Return up to three target multicolored cards from your graveyard to your hand. Exile SN.
+timing=main
+oracle=Return up to three target multicolored cards from your graveyard to your hand. Exile Vivid Revival.

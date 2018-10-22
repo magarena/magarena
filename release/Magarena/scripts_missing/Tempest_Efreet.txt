@@ -1,0 +1,12 @@
+name=Tempest Efreet
+image=https://img.scryfall.com/cards/normal/en/leg/166.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Efreet
+cost={1}{R}{R}{R}
+pt=3/3
+ability=Remove SN from your deck before playing if you're not playing for ante.;\
+        {T}, Sacrifice SN: Target opponent may pay 10 life. If that player doesn't, they reveal a card at random from their hand. Exchange ownership of the revealed card and SN. Put the revealed card into your hand and SN from anywhere into that player's graveyard. This change in ownership is permanent.
+timing=main
+oracle=Remove Tempest Efreet from your deck before playing if you're not playing for ante.\n{T}, Sacrifice Tempest Efreet: Target opponent may pay 10 life. If that player doesn't, they reveal a card at random from their hand. Exchange ownership of the revealed card and Tempest Efreet. Put the revealed card into your hand and Tempest Efreet from anywhere into that player's graveyard. This change in ownership is permanent.

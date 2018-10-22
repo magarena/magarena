@@ -1,0 +1,11 @@
+name=Erstwhile Trooper
+image=https://img.scryfall.com/cards/normal/front/3/5/351ee4ba-882d-48c1-837d-e9eccc5bc50d.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Soldier
+cost={1}{B}{G}
+pt=2/2
+ability=Discard a creature card: SN gets +2/+2 and gains trample until end of turn. Activate this ability only once each turn.
+timing=main
+oracle=Discard a creature card: Erstwhile Trooper gets +2/+2 and gains trample until end of turn. Activate this ability only once each turn.

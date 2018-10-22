@@ -1,0 +1,9 @@
+name=Devious Cover-Up
+image=https://img.scryfall.com/cards/large/front/2/1/21ac6b0a-b1a5-439d-b65e-5f04e1826c80.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard. You may shuffle up to four target cards from your graveyard into your library.
+timing=counter
+oracle=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard. You may shuffle up to four target cards from your graveyard into your library.

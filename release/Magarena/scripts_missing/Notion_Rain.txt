@@ -1,0 +1,9 @@
+name=Notion Rain
+image=https://img.scryfall.com/cards/normal/front/f/4/f4db287e-34c1-459b-882d-3db58f13eade.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{U}{B}
+effect=Surveil 2, then draw two cards. SN deals 2 damage to you.
+timing=main
+oracle=Surveil 2, then draw two cards. Notion Rain deals 2 damage to you.

@@ -1,0 +1,12 @@
+name=Ochran Assassin
+image=https://img.scryfall.com/cards/normal/front/5/4/541ef933-64f8-4075-9bd3-97149ac84b2b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Assassin
+cost={1}{B}{G}
+pt=1/1
+ability=Deathtouch;\
+        All creatures able to block SN do so.
+timing=main
+oracle=Deathtouch\nAll creatures able to block Ochran Assassin do so.

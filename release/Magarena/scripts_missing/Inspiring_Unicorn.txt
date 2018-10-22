@@ -1,0 +1,11 @@
+name=Inspiring Unicorn
+image=https://img.scryfall.com/cards/normal/front/c/e/ce8b745e-1e62-4c54-9e73-e2d0a40568a0.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Unicorn
+cost={2}{W}{W}
+pt=2/2
+ability=Whenever SN attacks, creatures you control get +1/+1 until end of turn.
+timing=main
+oracle=Whenever Inspiring Unicorn attacks, creatures you control get +1/+1 until end of turn.

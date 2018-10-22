@@ -1,0 +1,11 @@
+name=Fresh-Faced Recruit
+image=https://img.scryfall.com/cards/large/front/a/8/a8b19518-7752-4673-a7d8-ae2e0070129c.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{R/W}
+pt=2/1
+ability=As long as it's your turn, SN has first strike.
+timing=main
+oracle=As long as it's your turn, Fresh-Faced Recruit has first strike.

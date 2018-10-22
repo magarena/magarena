@@ -1,0 +1,9 @@
+name=Chemister's Insight
+image=https://img.scryfall.com/cards/normal/front/0/e/0e13a295-0d51-4b56-8c58-0896eb41c567.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Draw two cards.~Jump-start
+timing=removal
+oracle=Draw two cards.\nJump-start

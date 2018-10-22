@@ -1,0 +1,12 @@
+name=Nightveil Sprite
+image=https://img.scryfall.com/cards/normal/front/5/3/534d1166-4e01-4ec8-b4d9-e76861ec51b9.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Faerie,Rogue
+cost={1}{U}
+pt=1/2
+ability=Flying;\
+        Whenever SN attacks, surveil 1.
+timing=main
+oracle=Flying\nWhenever Nightveil Sprite attacks, surveil 1.

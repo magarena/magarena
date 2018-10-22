@@ -1,0 +1,11 @@
+name=Assure
+image=https://img.scryfall.com/cards/large/front/a/d/ad454e7a-06c9-4694-ae68-7b1431e00077.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={G/W}{G/W}
+split=Assemble
+effect=Put a +1/+1 counter on target creature. That creature gains indestructible until end of turn.
+timing=removal
+oracle=Put a +1/+1 counter on target creature. That creature gains indestructible until end of turn.
+status=not supported: split-card

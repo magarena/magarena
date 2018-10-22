@@ -1,0 +1,11 @@
+name=Veiled Shade
+image=https://img.scryfall.com/cards/normal/front/3/5/35cb18ae-0229-40a1-8838-ffb678ab2ed9.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Shade
+cost={2}{B}
+pt=2/2
+ability={1}{B}: SN gets +1/+1 until end of turn.
+timing=main
+oracle={1}{B}: Veiled Shade gets +1/+1 until end of turn.

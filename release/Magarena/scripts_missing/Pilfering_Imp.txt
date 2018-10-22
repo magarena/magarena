@@ -1,0 +1,12 @@
+name=Pilfering Imp
+image=https://img.scryfall.com/cards/normal/front/6/4/646dedff-150c-4ed2-8f2e-3b2e6ba5521a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Imp
+cost={B}
+pt=1/1
+ability=Flying;\
+        {1}{B}, {T}, Sacrifice SN: Target opponent reveals their hand. You choose a nonland card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Flying\n{1}{B}, {T}, Sacrifice Pilfering Imp: Target opponent reveals their hand. You choose a nonland card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.

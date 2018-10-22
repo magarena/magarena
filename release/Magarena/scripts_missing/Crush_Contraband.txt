@@ -1,0 +1,9 @@
+name=Crush Contraband
+image=https://img.scryfall.com/cards/normal/front/1/3/13e162b3-2e5a-4235-a2a7-1c8e3e9f2c19.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{W}
+effect=Choose one or both — (1) Exile target artifact. (2) Exile target enchantment.
+timing=removal
+oracle=Choose one or both —\n• Exile target artifact.\n• Exile target enchantment.

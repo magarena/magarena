@@ -1,0 +1,12 @@
+name=Erratic Cyclops
+image=https://img.scryfall.com/cards/normal/front/c/3/c310df89-d894-40ab-ae34-7d0bfd19a1af.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cyclops,Shaman
+cost={3}{R}
+pt=0/8
+ability=Trample;\
+        Whenever you cast an instant or sorcery spell, SN gets +X/+0 until end of turn, where X is that spell's converted mana cost.
+timing=main
+oracle=Trample\nWhenever you cast an instant or sorcery spell, Erratic Cyclops gets +X/+0 until end of turn, where X is that spell's converted mana cost.

@@ -1,0 +1,11 @@
+name=Golgari Findbroker
+image=https://img.scryfall.com/cards/normal/front/e/1/e12bd0e5-db96-4340-9b04-6855fd0fd8b9.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={B}{B}{G}{G}
+pt=3/4
+ability=When SN enters the battlefield, return target permanent card from your graveyard to your hand.
+timing=main
+oracle=When Golgari Findbroker enters the battlefield, return target permanent card from your graveyard to your hand.

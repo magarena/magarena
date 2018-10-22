@@ -1,0 +1,9 @@
+name=Rebirth
+image=https://img.scryfall.com/cards/normal/en/leg/200.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{G}{G}{G}
+effect=Remove SN from your deck before playing if you're not playing for ante.~Each player may ante the top card of their library. If a player does, that player's life total becomes 20.
+timing=main
+oracle=Remove Rebirth from your deck before playing if you're not playing for ante.\nEach player may ante the top card of their library. If a player does, that player's life total becomes 20.

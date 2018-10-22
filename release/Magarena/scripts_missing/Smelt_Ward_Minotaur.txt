@@ -1,0 +1,11 @@
+name=Smelt-Ward Minotaur
+image=https://img.scryfall.com/cards/large/front/f/8/f851d74e-90ad-417f-8372-8437d2d68b0d.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Minotaur,Warrior
+cost={2}{R}
+pt=2/3
+ability=Whenever you cast an instant or sorcery spell, target creature an opponent controls can't block this turn.
+timing=main
+oracle=Whenever you cast an instant or sorcery spell, target creature an opponent controls can't block this turn.

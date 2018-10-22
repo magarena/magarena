@@ -1,0 +1,9 @@
+name=Guildmages' Forum
+image=https://img.scryfall.com/cards/normal/front/c/b/cba12bda-d460-4206-8469-4357c967b9b8.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C}.;\
+        {1}, {T}: Add one mana of any color. If that mana is spent on a multicolored creature spell, that creature enters the battlefield with an additional +1/+1 counter on it.
+timing=land
+oracle={T}: Add {C}.\n{1}, {T}: Add one mana of any color. If that mana is spent on a multicolored creature spell, that creature enters the battlefield with an additional +1/+1 counter on it.

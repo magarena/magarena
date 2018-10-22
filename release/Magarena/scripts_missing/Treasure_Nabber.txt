@@ -1,0 +1,11 @@
+name=Treasure Nabber
+image=https://img.scryfall.com/cards/normal/en/c18/27.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Rogue
+cost={2}{R}
+pt=3/2
+ability=Whenever an opponent taps an artifact for mana, gain control of that artifact until the end of your next turn.
+timing=main
+oracle=Whenever an opponent taps an artifact for mana, gain control of that artifact until the end of your next turn.

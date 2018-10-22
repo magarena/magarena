@@ -1,0 +1,11 @@
+name=Invert
+image=https://img.scryfall.com/cards/large/front/0/5/054a4e4f-8baa-41cf-b24c-d068e8b9a070.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U/R}
+split=Invent
+effect=Switch the power and toughness of each of up to two target creatures until end of turn.
+timing=removal
+oracle=Switch the power and toughness of each of up to two target creatures until end of turn.
+status=not supported: split-card

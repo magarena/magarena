@@ -1,0 +1,11 @@
+name=Healer's Hawk
+image=https://img.scryfall.com/cards/normal/front/3/3/3313bd5c-b657-47a3-822a-dd0d9165492a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={W}
+pt=1/1
+ability=Flying, lifelink
+timing=main
+oracle=Flying, lifelink

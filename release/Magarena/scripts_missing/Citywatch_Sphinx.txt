@@ -1,0 +1,12 @@
+name=Citywatch Sphinx
+image=https://img.scryfall.com/cards/normal/front/9/b/9b809f89-13c7-4236-86a5-60745defb271.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Sphinx
+cost={5}{U}
+pt=5/4
+ability=Flying;\
+        When SN dies, surveil 2.
+timing=main
+oracle=Flying\nWhen Citywatch Sphinx dies, surveil 2.

@@ -1,0 +1,11 @@
+name=Generous Stray
+image=https://img.scryfall.com/cards/normal/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={2}{G}
+pt=1/2
+ability=When SN enters the battlefield, draw a card.
+timing=main
+oracle=When Generous Stray enters the battlefield, draw a card.

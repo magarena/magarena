@@ -1,0 +1,13 @@
+name=Night Incarnate
+image=https://img.scryfall.com/cards/normal/en/c18/17.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{B}
+pt=3/4
+ability=Deathtouch;\
+        When SN leaves the battlefield, all creatures get -3/-3 until end of turn.;\
+        Evoke {3}{B}
+timing=main
+oracle=Deathtouch\nWhen Night Incarnate leaves the battlefield, all creatures get -3/-3 until end of turn.\nEvoke {3}{B}

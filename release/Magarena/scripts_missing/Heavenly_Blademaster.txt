@@ -1,0 +1,13 @@
+name=Heavenly Blademaster
+image=https://img.scryfall.com/cards/normal/en/c18/3.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={5}{W}
+pt=3/6
+ability=Flying, double strike;\
+        When SN enters the battlefield, you may attach any number of Auras and Equipment you control to it.;\
+        Other creatures you control get +1/+1 for each Aura and Equipment attached to SN.
+timing=main
+oracle=Flying, double strike\nWhen Heavenly Blademaster enters the battlefield, you may attach any number of Auras and Equipment you control to it.\nOther creatures you control get +1/+1 for each Aura and Equipment attached to Heavenly Blademaster.

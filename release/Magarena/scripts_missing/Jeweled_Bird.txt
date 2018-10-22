@@ -1,0 +1,10 @@
+name=Jeweled Bird
+image=https://img.scryfall.com/cards/normal/en/arn/66.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability=Remove SN from your deck before playing if you're not playing for ante.;\
+        {T}: Ante SN. If you do, put all other cards you own from the ante into your graveyard, then draw a card.
+timing=artifact
+oracle=Remove Jeweled Bird from your deck before playing if you're not playing for ante.\n{T}: Ante Jeweled Bird. If you do, put all other cards you own from the ante into your graveyard, then draw a card.

@@ -1,0 +1,13 @@
+name=Trostani Discordant
+image=https://img.scryfall.com/cards/normal/front/f/a/fa1190a4-3d7e-4500-991f-e36ec3d1d9dc.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Dryad
+cost={3}{G}{W}
+pt=1/4
+ability=Other creatures you control get +1/+1.;\
+        When SN enters the battlefield, create two 1/1 white Soldier creature tokens with lifelink.;\
+        At the beginning of your end step, each player gains control of all creatures they own.
+timing=main
+oracle=Other creatures you control get +1/+1.\nWhen Trostani Discordant enters the battlefield, create two 1/1 white Soldier creature tokens with lifelink.\nAt the beginning of your end step, each player gains control of all creatures they own.

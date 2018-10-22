@@ -1,0 +1,14 @@
+name=Nullhide Ferox
+image=https://img.scryfall.com/cards/normal/front/2/4/24c30bb0-06ba-432b-a20c-6fa79b0dc68a.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Beast
+cost={2}{G}{G}
+pt=6/6
+ability=Hexproof;\
+        You can't cast noncreature spells.;\
+        {2}: SN loses all abilities until end of turn. Any player may activate this ability.;\
+        If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.
+timing=main
+oracle=Hexproof\nYou can't cast noncreature spells.\n{2}: Nullhide Ferox loses all abilities until end of turn. Any player may activate this ability.\nIf a spell or ability an opponent controls causes you to discard Nullhide Ferox, put it onto the battlefield instead of putting it into your graveyard.

@@ -1,0 +1,12 @@
+name=Conclave Cavalier
+image=https://img.scryfall.com/cards/normal/front/b/6/b658a309-d14c-4e20-8c76-e7b3c5156bf2.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Centaur,Knight
+cost={G}{G}{W}{W}
+pt=4/4
+ability=Vigilance;\
+        When SN dies, create two 2/2 green and white Elf Knight creature tokens with vigilance.
+timing=main
+oracle=Vigilance\nWhen Conclave Cavalier dies, create two 2/2 green and white Elf Knight creature tokens with vigilance.

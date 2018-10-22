@@ -1,0 +1,11 @@
+name=Explosion
+image=https://img.scryfall.com/cards/large/front/e/0/e0644c92-4d67-475e-8c8e-0e2c493682fb.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{U}{U}{R}{R}
+split=Expansion
+effect=SN deals X damage to any target. Target player draws X cards.
+timing=removal
+oracle=Explosion deals X damage to any target. Target player draws X cards.
+status=not supported: split-card

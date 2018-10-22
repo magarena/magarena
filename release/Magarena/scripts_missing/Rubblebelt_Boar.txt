@@ -1,0 +1,11 @@
+name=Rubblebelt Boar
+image=https://img.scryfall.com/cards/normal/front/1/9/196bf114-e135-43f3-83d5-cb08ca766881.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Boar
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, target creature gets +2/+0 until end of turn.
+timing=main
+oracle=When Rubblebelt Boar enters the battlefield, target creature gets +2/+0 until end of turn.

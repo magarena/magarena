@@ -1,0 +1,11 @@
+name=Resurgence
+image=https://img.scryfall.com/cards/normal/front/4/3/437d7378-fad5-496e-a264-d4ea3819ade1.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{R}{W}
+split=Response
+effect=Creatures you control gain first strike and vigilance until end of turn. After this main phase, there is an additional combat phase followed by an additional main phase.
+timing=main
+oracle=Creatures you control gain first strike and vigilance until end of turn. After this main phase, there is an additional combat phase followed by an additional main phase.
+status=not supported: split-card

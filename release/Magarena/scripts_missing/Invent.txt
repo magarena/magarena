@@ -1,0 +1,11 @@
+name=Invent
+image=https://img.scryfall.com/cards/large/front/0/5/054a4e4f-8baa-41cf-b24c-d068e8b9a070.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{U}{R}
+split=Invert
+effect=Search your library for an instant card and/or a sorcery card, reveal them, put them into your hand, then shuffle your library.
+timing=removal
+oracle=Search your library for an instant card and/or a sorcery card, reveal them, put them into your hand, then shuffle your library.
+status=not supported: split-card

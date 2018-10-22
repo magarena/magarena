@@ -1,0 +1,14 @@
+name=Arixmethes, Slumbering Isle
+image=https://img.scryfall.com/cards/normal/en/c18/38.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Kraken
+cost={2}{G}{U}
+pt=12/12
+ability=SN enters the battlefield tapped with five slumber counters on it.;\
+        As long as Arixmethes has a slumber counter on it, it's a land.;\
+        Whenever you cast a spell, you may remove a slumber counter from Arixmethes.;\
+        {T}: Add {G}{U}.
+timing=main
+oracle=Arixmethes, Slumbering Isle enters the battlefield tapped with five slumber counters on it.\nAs long as Arixmethes has a slumber counter on it, it's a land.\nWhenever you cast a spell, you may remove a slumber counter from Arixmethes.\n{T}: Add {G}{U}.

@@ -1,0 +1,10 @@
+name=Pack's Favor
+image=https://img.scryfall.com/cards/normal/front/0/f/0f88c3aa-63e1-4617-bf1f-48f44988e7d6.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+ability=Convoke
+effect=Target creature gets +3/+3 until end of turn.
+timing=removal
+oracle=Convoke\nTarget creature gets +3/+3 until end of turn.

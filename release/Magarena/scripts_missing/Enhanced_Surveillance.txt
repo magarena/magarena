@@ -1,0 +1,10 @@
+name=Enhanced Surveillance
+image=https://img.scryfall.com/cards/normal/front/9/7/971d254e-da25-494b-a16d-3d7d6bb75c73.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=You may look at an additional two cards each time you surveil.;\
+        Exile SN: Shuffle your graveyard into your library.
+timing=enchantment
+oracle=You may look at an additional two cards each time you surveil.\nExile Enhanced Surveillance: Shuffle your graveyard into your library.

@@ -1,0 +1,9 @@
+name=Dazzling Lights
+image=https://img.scryfall.com/cards/normal/front/a/9/a9d4639a-b634-469e-a848-35e3a3dfd47e.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+effect=Target creature gets -3/-0 until end of turn.~Surveil 2.
+timing=removal
+oracle=Target creature gets -3/-0 until end of turn.\nSurveil 2.

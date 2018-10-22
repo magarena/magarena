@@ -1,0 +1,11 @@
+name=Status
+image=https://img.scryfall.com/cards/large/front/4/4/44614c6d-5508-4077-b825-66d5d684086c.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={B/G}
+split=Statue
+effect=Target creature gets +1/+1 and gains deathtouch until end of turn.
+timing=removal
+oracle=Target creature gets +1/+1 and gains deathtouch until end of turn.
+status=not supported: split-card
