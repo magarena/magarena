@@ -11,4 +11,3 @@ ability=Flying;\
         When SN enters the battlefield, target player reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
 timing=main
 oracle=Flying\nWhen Balustrade Spy enters the battlefield, target player reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
-status=needs groovy

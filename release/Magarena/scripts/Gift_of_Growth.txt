@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={1}{G}
 ability=Kicker {2}
-effect=Untap target creature. It gets +2/+2 until end of turn. If this spell was kicked, that creature gets +4/+4 until end of turn instead.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Kicker {2}\nUntap target creature. It gets +2/+2 until end of turn. If this spell was kicked, that creature gets +4/+4 until end of turn instead.

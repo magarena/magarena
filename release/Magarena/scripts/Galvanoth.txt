@@ -6,7 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{R}{R}
 pt=3/3
-ability=At the beginning of your upkeep, you may look at the top card of your library. If it's an instant or sorcery card, you may cast it without paying its mana cost.
 timing=main
 oracle=At the beginning of your upkeep, you may look at the top card of your library. If it's an instant or sorcery card, you may cast it without paying its mana cost.
-status=needs groovy
+requires_groovy_code
