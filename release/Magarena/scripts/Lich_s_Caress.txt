@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}{B}
-effect=Destroy target creature. You gain 3 life.
+effect=Destroy target creature.~You gain 3 life.
 timing=main
 oracle=Destroy target creature. You gain 3 life.

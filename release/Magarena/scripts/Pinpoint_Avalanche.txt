@@ -4,7 +4,6 @@ value=2.121
 rarity=C
 type=Instant
 cost={3}{R}{R}
-effect=SN deals 4 damage to target creature. The damage can't be prevented.
 timing=removal
 oracle=Pinpoint Avalanche deals 4 damage to target creature. The damage can't be prevented.
-status=needs groovy
+requires_groovy_code
