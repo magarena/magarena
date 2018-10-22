@@ -1,0 +1,278 @@
+Affectionate Indrik
+Arboretum Elemental
+Arclight Phoenix
+Artful Takedown
+Assassin's Trophy
+Assemble
+Assure
+Attendant of Vraska
+Aurelia, Exemplar of Justice
+Barging Sergeant
+Barrier of Bones
+Bartizan Bats
+Beacon Bolt
+Beamsplitter Mage
+Beast Whisperer
+Blade Instructor
+Blood Operative
+Book Devourer
+Boros Challenger
+Boros Guildgate
+Boros Locket
+Bounty Agent
+Bounty of Might
+Burglar Rat
+Camaraderie
+Candlelight Vigil
+Capture Sphere
+Centaur Peacemaker
+Chamber Sentry
+Chance for Glory
+Charnel Troll
+Chemister's Insight
+Child of Night
+Chromatic Lantern
+Circuitous Route
+Citywatch Sphinx
+Citywide Bust
+Collar the Culprit
+Command the Storm
+Conclave Cavalier
+Conclave Guildmage
+Conclave Tribunal
+Concoct
+Connive
+Cosmotronic Wave
+Crackling Drake
+Creeping Chill
+Crush Contraband
+Crushing Canopy
+Darkblade Agent
+Dawn of Hope
+Dazzling Lights
+Dead Weight
+Deadly Visit
+Deafening Clarion
+Demotion
+Devious Cover-Up
+Devkarin Dissident
+Dimir Guildgate
+Dimir Informant
+Dimir Locket
+Dimir Spybug
+Direct Current
+Discovery
+Disdainful Stroke
+Disinformation Campaign
+Dispersal
+District Guide
+Divine Visitation
+Doom Whisperer
+Douser of Lights
+Dream Eater
+Drowned Secrets
+Electrostatic Field
+Emmara, Soul of the Accord
+Enhanced Surveillance
+Erratic Cyclops
+Erstwhile Trooper
+Etrata, the Silencer
+Expansion
+Experimental Frenzy
+Explosion
+Fearless Halberdier
+Finality
+Find
+Fire Urchin
+Firemind's Research
+Flight of Equenauts
+Flourish
+Flower
+Forest
+Fresh-Faced Recruit
+Garrison Sergeant
+Gatekeeper Gargoyle
+Gateway Plaza
+Generous Stray
+Gird for Battle
+Glaive of the Guildpact
+Glowspore Shaman
+Goblin Banneret
+Goblin Cratermaker
+Goblin Electromancer
+Goblin Locksmith
+Golgari Findbroker
+Golgari Guildgate
+Golgari Locket
+Golgari Raiders
+Grappling Sundew
+Gravitic Punch
+Gruesome Menagerie
+Guild Summit
+Guildmages' Forum
+Haazda Marshal
+Hammer Dropper
+Hatchery Spider
+Healer's Hawk
+Hellkite Whelp
+Hired Poisoner
+Hitchclaw Recluse
+House Guildmage
+Hunted Witness
+Hypothesizzle
+Impervious Greatwurm
+Inescapable Blaze
+Inspiring Unicorn
+Integrity
+Intervention
+Intrusive Packbeast
+Invent
+Invert
+Ionize
+Ironshell Beetle
+Island
+Izoni, Thousand-Eyed
+Izzet Guildgate
+Izzet Locket
+Join Shields
+Justice Strike
+Knight of Autumn
+Kraul Foragers
+Kraul Harpooner
+Kraul Raider
+Kraul Swarm
+Lava Coil
+Lazav, the Multifarious
+League Guildmage
+Leapfrog
+Ledev Champion
+Ledev Guardian
+Legion Guildmage
+Legion Warboss
+Light of the Legion
+Lotleth Giant
+Loxodon Restorer
+Luminous Bonds
+Maniacal Rage
+March of the Multitudes
+Mausoleum Secrets
+Maximize Altitude
+Maximize Velocity
+Mephitic Vapors
+Midnight Reaper
+Might of the Masses
+Mission Briefing
+Mnemonic Betrayal
+Molderhulk
+Moodmark Painter
+Mountain
+Murmuring Mystic
+Muse Drake
+Narcomoeba
+Necrotic Wound
+Never Happened
+Nightveil Predator
+Nightveil Sprite
+Niv-Mizzet, Parun
+Notion Rain
+Nullhide Ferox
+Ochran Assassin
+Omnispell Adept
+Ornery Goblin
+Overgrown Tomb
+Pack's Favor
+Parhelion Patrol
+Passwall Adept
+Pause for Reflection
+Pelt Collector
+Pilfering Imp
+Piston-Fist Cyclops
+Pitiless Gorgon
+Plaguecrafter
+Plains
+Portcullis Vine
+Precision Bolt
+Prey Upon
+Price of Fame
+Quasiduplicate
+Radical Idea
+Ral's Dispersal
+Ral's Staticaster
+Ral, Caller of Storms
+Ral, Izzet Viceroy
+Rampaging Monument
+Response
+Resurgence
+Rhizome Lurcher
+Righteous Blow
+Risk Factor
+Ritual of Soot
+Roc Charger
+Rosemane Centaur
+Rubblebelt Boar
+Runaway Steam-Kin
+Sacred Foundry
+Selective Snare
+Selesnya Guildgate
+Selesnya Locket
+Severed Strands
+Siege Wurm
+Silent Dart
+Sinister Sabotage
+Skyknight Legionnaire
+Skyline Scout
+Smelt-Ward Minotaur
+Sonic Assault
+Spinal Centipede
+Sprouting Renewal
+Statue
+Status
+Steam Vents
+Street Riot
+Sumala Woodshaper
+Sunhome Stalwart
+Sure Strike
+Swamp
+Swarm Guildmage
+Swathcutter Giant
+Swiftblade Vindicator
+Sworn Companions
+Tajic, Legion's Edge
+Take Heart
+Temple Garden
+Tenth District Guard
+Thief of Sanity
+Thought Erasure
+Thoughtbound Phantasm
+Thousand-Year Storm
+Torch Courier
+Trostani Discordant
+Truefire Captain
+Undercity Necrolisk
+Undercity Uprising
+Underrealm Lich
+Unexplained Disappearance
+Unmoored Ego
+Urban Utopia
+Vedalken Mesmerist
+Veiled Shade
+Venerated Loxodon
+Vernadi Shieldmate
+Vicious Rumors
+Vigorspore Wurm
+Vivid Revival
+Vraska's Stoneglare
+Vraska, Golgari Queen
+Vraska, Regal Gorgon
+Wall of Mist
+Wand of Vertebrae
+Wary Okapi
+Watcher in the Mist
+Watery Grave
+Wee Dragonauts
+Whisper Agent
+Whispering Snitch
+Wild Ceratok
+Wishcoin Crab
+Wojek Bodyguard
+Worldsoul Colossus
