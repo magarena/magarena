@@ -1483,6 +1483,14 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenYouSurveil("Whenever you surveil, " + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(YouSurveilTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     WheneverYouCycleOrDiscard("Whenever you cycle or discard a(nother)? card, " + ARG.EFFECT, 0) {
       @Override
       protected  void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {

@@ -1,9 +1,6 @@
 package magic.model.action;
 
 import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
 import java.util.List;

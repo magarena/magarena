@@ -17,10 +17,18 @@ public class MagicScryEvent extends MagicEvent {
         this(source, player, true);
     }
 
+    /**
+     * Pseudo-scry event is used for example as part of Clash action.
+     * As it is not a true "scry" event, it will not trigger "when scry" actions.
+     */
     public static MagicScryEvent Pseudo(final MagicEvent event) {
         return new MagicScryEvent(event.getSource(), event.getPlayer(), false);
     }
 
+    /**
+     * Pseudo-scry event is used for example as part of Clash action.
+     * As it is not a true "scry" event, it will not trigger "when scry" actions.
+     */
     public static MagicScryEvent Pseudo(final MagicSource source, final MagicPlayer player) {
         return new MagicScryEvent(source, player, false);
     }

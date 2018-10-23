@@ -2223,6 +2223,16 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.addEvent(new MagicScryEvent(event));
         }
     },
+    Surveil1(
+        "(pn )?surveil 1",
+        MagicTiming.Draw,
+        "Surveil"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> game.addEvent(new MagicSurveilEvent(event));
+        }
+    },
     PseudoScry(
         "Look at the top card of your library\\. You may put that card on the bottom of your library",
         MagicTiming.Draw,
