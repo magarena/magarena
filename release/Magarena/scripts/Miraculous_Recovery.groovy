@@ -17,7 +17,7 @@
                 game.doAction(new ReturnCardAction(MagicLocationType.Graveyard,it,event.getPlayer(),{
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
-                    G.doAction(new ChangeCountersAction(event.getPlayer(),perm,MagicCounterType.PlusOne,1));
+                    G.doAction(new ChangeCountersAction(event.getPlayer().map(G), perm, MagicCounterType.PlusOne, 1));
                 }));
             });
         }
