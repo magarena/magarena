@@ -5,26 +5,26 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 
 /**
- * This action corresponds to "scry 1" action.
+ * This action corresponds to "surveil 1" action.
  */
-public class ScryAction extends MagicAction {
+public class SurveilAction extends MagicAction {
 
     private final MagicPlayer player;
     private MagicCard card;
 
-    public ScryAction(final MagicPlayer aPlayer) {
+    public SurveilAction(final MagicPlayer aPlayer) {
         player = aPlayer;
     }
 
     @Override
     public void doAction(final MagicGame game) {
         card = player.getLibrary().removeCardAtTop();
-        player.getLibrary().addToBottom(card);
+        player.getGraveyard().addToTop(card);
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        player.getLibrary().removeCardAtBottom();
+        player.getGraveyard().removeCardAtTop();
         player.getLibrary().addToTop(card);
     }
 }

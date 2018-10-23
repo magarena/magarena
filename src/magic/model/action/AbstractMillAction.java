@@ -2,11 +2,10 @@ package magic.model.action;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
-import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
-import magic.model.MagicLocationType;
 
 import java.util.List;
 

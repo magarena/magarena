@@ -9,6 +9,10 @@ import magic.model.MagicSource;
 import magic.model.action.ScryComplAction;
 import magic.model.choice.MagicFromCardListChoice;
 
+/**
+ * General "Scry X" effect.
+ * Not used (commented out in MagicRuleEventAction), as there are too many choices for AI potentially to make
+ */
 public class MagicScryXEvent extends MagicEvent {
 
     public MagicScryXEvent(final MagicSource source, final MagicPlayer player, final int X) {

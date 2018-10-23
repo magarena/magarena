@@ -37,6 +37,7 @@ public enum MagicTriggerType {
     WhenCycle,              // card
     WhenOtherCycle,         // card
     WhenScry,               // player
+    WhenSurveil,            // player
     WhenSacrifice,          // RemoveFromPlayAction
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
