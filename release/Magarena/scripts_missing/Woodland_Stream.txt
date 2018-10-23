@@ -1,9 +1,0 @@
-name=Woodland Stream
-image=https://img.scryfall.com/cards/normal/en/soi/282.jpg
-value=2.500
-rarity=C
-type=Land
-ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {U}.
-timing=land
-oracle=Woodland Stream enters the battlefield tapped.\n{T}: Add {G} or {U}.
