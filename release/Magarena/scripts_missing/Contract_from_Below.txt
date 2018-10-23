@@ -7,3 +7,4 @@ cost={B}
 effect=Remove SN from your deck before playing if you're not playing for ante.~Discard your hand, ante the top card of your library, then draw seven cards.
 timing=main
 oracle=Remove Contract from Below from your deck before playing if you're not playing for ante.\nDiscard your hand, ante the top card of your library, then draw seven cards.
+status=ante-not-supported

@@ -10,3 +10,4 @@ ability=Remove SN from your deck before playing if you're not playing for ante.;
         {B}{B}{B}, Sacrifice SN: The owner of target artifact may ante the top card of their library. If that player doesn't, exchange ownership of that artifact and SN. Put the artifact card into your graveyard and SN from anywhere into that player's graveyard. This change in ownership is permanent.
 timing=main
 oracle=Remove Timmerian Fiends from your deck before playing if you're not playing for ante.\n{B}{B}{B}, Sacrifice Timmerian Fiends: The owner of target artifact may ante the top card of their library. If that player doesn't, exchange ownership of that artifact and Timmerian Fiends. Put the artifact card into your graveyard and Timmerian Fiends from anywhere into that player's graveyard. This change in ownership is permanent.
+status=ante-not-supported
