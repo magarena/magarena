@@ -7,3 +7,4 @@ cost={B}{B}{B}
 effect=Remove SN from your deck before playing if you're not playing for ante.~You own target card in the ante. Exchange that card with the top card of your library.
 timing=main
 oracle=Remove Darkpact from your deck before playing if you're not playing for ante.\nYou own target card in the ante. Exchange that card with the top card of your library.
+status=ante-not-supported

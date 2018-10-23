@@ -7,3 +7,4 @@ cost={1}{B}{B}
 effect=Remove SN from your deck before playing if you're not playing for ante.~Each player antes the top card of their library.
 timing=main
 oracle=Remove Demonic Attorney from your deck before playing if you're not playing for ante.\nEach player antes the top card of their library.
+status=ante-not-supported

@@ -7,3 +7,4 @@ cost={3}{G}{G}{G}
 effect=Remove SN from your deck before playing if you're not playing for ante.~Each player may ante the top card of their library. If a player does, that player's life total becomes 20.
 timing=main
 oracle=Remove Rebirth from your deck before playing if you're not playing for ante.\nEach player may ante the top card of their library. If a player does, that player's life total becomes 20.
+status=ante-not-supported
