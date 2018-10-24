@@ -1,0 +1,13 @@
+name=Blackblade Reforged
+image=https://magiccards.info/scans/en/dom/211.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +1/+1 for each land you control.;\
+        Equip {3} to a legendary creature.;\
+        Equip {7}
+timing=equipment
+oracle=Equipped creature gets +1/+1 for each land you control.\nEquip legendary creature {3}\nEquip {7}
+

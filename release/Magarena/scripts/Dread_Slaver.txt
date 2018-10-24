@@ -1,0 +1,11 @@
+name=Dread Slaver
+image=https://magiccards.info/scans/en/avr/98.jpg
+value=3.413
+rarity=R
+type=Creature
+subtype=Zombie,Horror
+cost={3}{B}{B}
+pt=3/5
+timing=main
+requires_groovy_code
+oracle=Whenever a creature dealt damage by Dread Slaver this turn dies, return it to the battlefield under your control. That creature is a black Zombie in addition to its other colors and types.

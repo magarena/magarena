@@ -1,0 +1,14 @@
+name=Sentinel of the Eternal Watch
+image=https://magiccards.info/scans/en/ori/30.jpg
+image_updated=2015-11-05
+value=2.500
+rarity=U
+type=Creature
+subtype=Giant,Soldier
+cost={5}{W}
+pt=4/6
+ability=Vigilance
+timing=main
+requires_groovy_code
+oracle=Vigilance\nAt the beginning of combat on each opponent's turn, tap target creature that player controls.
+

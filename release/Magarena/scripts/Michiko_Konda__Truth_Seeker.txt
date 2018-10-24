@@ -1,0 +1,12 @@
+name=Michiko Konda, Truth Seeker
+image=https://magiccards.info/scans/en/sok/19.jpg
+value=3.899
+rarity=R
+type=Legendary,Creature
+subtype=Human,Advisor
+cost={3}{W}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Whenever a source an opponent controls deals damage to you, that player sacrifices a permanent.
+

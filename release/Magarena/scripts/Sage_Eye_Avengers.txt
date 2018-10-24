@@ -1,0 +1,13 @@
+name=Sage-Eye Avengers
+image=https://magiccards.info/scans/en/frf/50.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Djinn,Monk
+cost={4}{U}{U}
+pt=4/5
+ability=Prowess
+timing=main
+requires_groovy_code
+oracle=Prowess\nWhenever Sage-Eye Avengers attacks, you may return target creature to its owner's hand if its power is less than Sage-Eye Avengers's power.
+
