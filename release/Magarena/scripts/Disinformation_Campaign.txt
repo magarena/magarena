@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{U}{B}
-ability=When SN enters the battlefield, you draw a card~each opponent discards a card.;\
+ability=When SN enters the battlefield, you draw a card~and each opponent discards a card.;\
         Whenever you surveil, return SN to its owner's hand.
 timing=enchantment
 oracle=When Disinformation Campaign enters the battlefield, you draw a card and each opponent discards a card.\nWhenever you surveil, return Disinformation Campaign to its owner's hand.
