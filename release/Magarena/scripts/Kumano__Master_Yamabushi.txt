@@ -1,0 +1,13 @@
+name=Kumano, Master Yamabushi
+image=https://magiccards.info/scans/en/chk/176.jpg
+value=4.234
+rarity=R
+type=Legendary,Creature
+subtype=Human,Shaman
+cost={3}{R}{R}
+pt=4/4
+ability={1}{R}: SN deals 1 damage to target creature or player.
+timing=main
+requires_groovy_code
+oracle={1}{R}: Kumano, Master Yamabushi deals 1 damage to target creature or player.\nIf a creature dealt damage by Kumano this turn would die, exile it instead.
+

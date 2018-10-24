@@ -1,0 +1,11 @@
+name=Enshrouding Mist
+image=https://magiccards.info/scans/en/ori/13.jpg
+image_updated=2015-11-05
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+timing=removal
+requires_groovy_code
+oracle=Target creature gets +1/+1 until end of turn. Prevent all damage that would be dealt to it this turn. If it's renowned, untap it.
+

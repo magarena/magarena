@@ -1,0 +1,11 @@
+name=Subterranean Tremors
+image=https://magiccards.info/scans/en/cn2/58.jpg
+image_updated=2016-09-05
+value=2.500
+rarity=M
+type=Sorcery
+cost={X}{R}
+timing=main
+requires_groovy_code
+oracle=Subterranean Tremors deals X damage to each creature without flying. If X is 4 or more, destroy all artifacts. If X is 8 or more, create an 8/8 red Lizard creature token.
+

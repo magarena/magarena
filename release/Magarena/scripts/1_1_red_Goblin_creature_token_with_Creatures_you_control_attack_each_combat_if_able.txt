@@ -1,0 +1,11 @@
+name=1/1 red Goblin creature token with Creatures you control attack each combat if able
+token=Goblin
+image=https://img.scryfall.com/cards/normal/en/tc16/12.jpg
+value=1
+type=Creature
+subtype=Goblin
+color=r
+pt=1/1
+ability=Creatures you control attack each combat if able.
+oracle=Creatures you control attack each combat if able.
+

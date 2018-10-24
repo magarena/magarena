@@ -1,0 +1,10 @@
+name=Tempt with Vengeance
+image=https://magiccards.info/scans/en/c13/125.jpg
+value=3.781
+rarity=R
+type=Sorcery
+cost={X}{R}
+timing=main
+requires_groovy_code
+oracle=Tempting offer — Create X 1/1 red Elemental creature tokens with haste. Each opponent may create X 1/1 red Elemental creature tokens with haste. For each player who does, create X 1/1 red Elemental creature tokens with haste.
+

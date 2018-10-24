@@ -1,0 +1,13 @@
+name=Rot Wolf
+image=https://magiccards.info/scans/en/mbs/90.jpg
+value=3.605
+rarity=C
+type=Creature
+subtype=Wolf
+cost={2}{G}
+pt=2/2
+ability=Infect
+timing=main
+requires_groovy_code
+oracle=Infect\nWhenever a creature dealt damage by Rot Wolf this turn dies, you may draw a card.
+

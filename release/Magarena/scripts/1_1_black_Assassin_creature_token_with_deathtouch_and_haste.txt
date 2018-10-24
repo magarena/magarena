@@ -1,0 +1,10 @@
+name=1/1 black Assassin creature token with deathtouch and haste
+token=Assassin
+image=https://img.scryfall.com/cards/normal/en/tcn2/5.jpg
+value=2
+type=Creature
+subtype=Assassin
+color=b
+pt=1/1
+ability=deathtouch;haste
+oracle=Deathtouch, haste
