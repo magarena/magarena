@@ -7,9 +7,8 @@ type=Legendary,Creature
 subtype=Giant,Soldier
 cost={2}{R}{W}
 pt=3/3
-ability=Double strike, vigilance;\
-        Whenever you cast a creature spell with converted mana cost 5 or greater, you get an experience counter.;\
-        SN gets +1/+1 for each experience counter you have.
+ability=Double strike, vigilance
 timing=main
+requires_groovy_code
 oracle=Double strike, vigilance\nWhenever you cast a creature spell with converted mana cost 5 or greater, you get an experience counter.\nKalemne, Disciple of Iroas gets +1/+1 for each experience counter you have.
-status=needs groovy
+

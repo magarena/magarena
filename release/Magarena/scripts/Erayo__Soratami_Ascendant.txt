@@ -6,9 +6,9 @@ type=Legendary,Creature
 subtype=Moonfolk,Monk
 cost={1}{U}
 pt=1/1
-ability=Flying;\
-        Whenever the fourth spell of a turn is cast, flip SN.
+ability=Flying
 flip=Erayo's Essence
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever the fourth spell of a turn is cast, flip Erayo, Soratami Ascendant.
-status=needs groovy
+

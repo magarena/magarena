@@ -4,7 +4,6 @@ value=3.939
 rarity=R
 type=Sorcery
 cost={5}{B/R}{B/R}{B/R}
-effect=Create a 5/5 black and red Elemental creature token. Target opponent sacrifices a creature for each black creature you control, then sacrifices a land for each red creature you control.
 timing=main
 oracle=Create a 5/5 black and red Elemental creature token. Target opponent sacrifices a creature for each black creature you control, then sacrifices a land for each red creature you control.
-status=needs groovy
+requires_groovy_code

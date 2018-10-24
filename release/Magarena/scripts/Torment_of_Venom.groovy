@@ -20,7 +20,7 @@ def action = {
             game.addEvent(discard);
         } else {
             game.doAction(new ChangeLifeAction(event.getPlayer(), -3));
-        }  
+        }
     }
 }
 
@@ -57,4 +57,3 @@ def action = {
         }
     }
 ]
-

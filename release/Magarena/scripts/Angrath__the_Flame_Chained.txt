@@ -6,8 +6,7 @@ type=Legendary,Planeswalker
 subtype=Angrath
 cost={3}{B}{R}
 loyalty=4
-ability=+1: Each opponent discards a card and loses 2 life.;\
-        −3: Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. Sacrifice it at the beginning of the next end step if it has converted mana cost 3 or less.;\
-        −8: Each opponent loses life equal to the number of cards in his or her graveyard.
+ability=+1: Each opponent discards a card~and each opponent loses 2 life.
 timing=main
+requires_groovy_code
 oracle=+1: Each opponent discards a card and loses 2 life.\n−3: Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. Sacrifice it at the beginning of the next end step if it has converted mana cost 3 or less.\n−8: Each opponent loses life equal to the number of cards in his or her graveyard.

@@ -4,8 +4,7 @@ value=3.755
 rarity=R
 type=Artifact
 cost={3}
-ability=Whenever a nontoken creature you control dies, put a charge counter on SN.;\
-        At the beginning of your upkeep, if SN has five or more charge counters on it, remove all of them from it and create that many 3/1 red Elemental creature tokens with haste. Exile them at the beginning of the next end step.
+ability=Whenever a nontoken creature you control dies, put a charge counter on SN.
 timing=artifact
 oracle=Whenever a nontoken creature you control dies, put a charge counter on Lightning Coils.\nAt the beginning of your upkeep, if Lightning Coils has five or more charge counters on it, remove all of them from it and create that many 3/1 red Elemental creature tokens with haste. Exile them at the beginning of the next end step.
-status=needs groovy
+requires_groovy_code

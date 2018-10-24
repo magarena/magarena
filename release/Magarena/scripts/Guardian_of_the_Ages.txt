@@ -6,8 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={7}
 pt=7/7
-ability=Defender;\
-        When a creature attacks you or a planeswalker you control, if SN has defender, it loses defender and gains trample.
+ability=Defender
 timing=smain
 oracle=Defender\nWhen a creature attacks you or a planeswalker you control, if Guardian of the Ages has defender, it loses defender and gains trample.
-status=needs groovy
+requires_groovy_code

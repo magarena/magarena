@@ -6,8 +6,7 @@ type=Creature
 subtype=Horror
 cost={5}{B/R}
 pt=8/8
-ability=SN enters the battlefield with four -1/-1 counters on it.;\
-        When SN dies, put a -1/-1 counter on target creature for each -1/-1 counter on SN.
+ability=SN enters the battlefield with four -1/-1 counters on it.
 timing=main
 oracle=Grief Tyrant enters the battlefield with four -1/-1 counters on it.\nWhen Grief Tyrant dies, put a -1/-1 counter on target creature for each -1/-1 counter on Grief Tyrant.
-status=needs groovy
+requires_groovy_code

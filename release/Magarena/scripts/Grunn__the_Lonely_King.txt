@@ -6,8 +6,7 @@ type=Legendary,Creature
 subtype=Ape,Warrior
 cost={4}{G}{G}
 pt=5/5
-ability=Kicker {3};\
-        If SN was kicked, it enters the battlefield with five +1/+1 counters on it.;\
-        Whenever Grunn attacks alone, double its power and toughness until end of turn.
+ability=Kicker {3}
 timing=main
+requires_groovy_code
 oracle=Kicker {3}\nIf Grunn, the Lonely King was kicked, it enters the battlefield with five +1/+1 counters on it.\nWhenever Grunn attacks alone, double its power and toughness until end of turn.

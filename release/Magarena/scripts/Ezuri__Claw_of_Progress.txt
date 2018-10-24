@@ -7,8 +7,8 @@ type=Legendary,Creature
 subtype=Elf,Warrior
 cost={2}{G}{U}
 pt=3/3
-ability=Whenever a creature with power 2 or less enters the battlefield under your control, you get an experience counter.;\
-        At the beginning of combat on your turn, put X +1/+1 counters on another target creature you control, where X is the number of experience counters you have.
+ability=Whenever a creature with power 2 or less enters the battlefield under your control, you get an experience counter.
 timing=fmain
+requires_groovy_code
 oracle=Whenever a creature with power 2 or less enters the battlefield under your control, you get an experience counter.\nAt the beginning of combat on your turn, put X +1/+1 counters on another target creature you control, where X is the number of experience counters you have.
-status=needs groovy
+
