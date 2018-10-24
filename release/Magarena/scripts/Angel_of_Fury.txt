@@ -6,9 +6,7 @@ type=Creature
 subtype=Angel
 cost={4}{W}{W}
 pt=3/5
-ability=Flying;\
-        When SN dies, you may shuffle it into its owner's library.
+ability=Flying
 timing=main
 oracle=Flying\nWhen Angel of Fury dies, you may shuffle it into its owner's library.
-status=needs groovy
-#Parses but graveyard -> library, not battlefield -> library
+requires_groovy_code=Guan Yu, Sainted Warrior

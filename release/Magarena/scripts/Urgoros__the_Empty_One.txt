@@ -7,6 +7,6 @@ subtype=Specter
 cost={4}{B}{B}
 pt=4/3
 ability=Flying;\
-        Whenever SN deals combat damage to a player, that player discards a card at random. If the player can't, you draw a card.
+        Whenever SN deals combat damage to a player, that player discards a card at random.~If that player has no cards in hand, you draw a card.
 timing=main
 oracle=Flying\nWhenever Urgoros, the Empty One deals combat damage to a player, that player discards a card at random. If the player can't, you draw a card.

@@ -4,7 +4,7 @@ value=3.000
 rarity=R
 type=Sorcery
 cost={5}{R}
-effect=Sacrifice all creatures you control, then create that many 4/4 red Hellion creature tokens.
 timing=main
+requires_groovy_code
 oracle=Sacrifice all creatures you control, then create that many 4/4 red Hellion creature tokens.
-status=needs groovy
+

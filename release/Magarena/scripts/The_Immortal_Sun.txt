@@ -4,7 +4,7 @@ value=2.500
 rarity=M
 type=Legendary,Artifact
 cost={6}
-ability=Players can't activate planeswalkers' loyalty abilities.;\
+ability=Planeswalkers can't activate abilities.;\
         At the beginning of your draw step, draw an additional card.;\
         Spells you cast cost {1} less to cast.;\
         Creatures you control get +1/+1.
