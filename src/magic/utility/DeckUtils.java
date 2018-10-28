@@ -197,7 +197,7 @@ public class DeckUtils {
      */
     public static MagicDeck loadDeckFromFile(final Path deckFilePath) {
         if (deckFilePath == null || !deckFilePath.toFile().exists()) {
-            return new MagicDeck();
+            throw new InvalidDeckException("File " + deckFilePath + " does not exist");
         }
         final List<String> lines = getDeckFileContent(deckFilePath.toString());
         final MagicDeck deck = DeckParser.parseLines(lines);
