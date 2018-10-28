@@ -6,8 +6,8 @@ type=Creature
 subtype=Wolf
 cost={2}{G}
 pt=2/2
-ability=Infect
+ability=Infect;\
+        Whenever a creature dealt damage by SN this turn dies, you may draw a card.
 timing=main
-requires_groovy_code
 oracle=Infect\nWhenever a creature dealt damage by Rot Wolf this turn dies, you may draw a card.
-
+status=not supported: damage-by-SN-dies
