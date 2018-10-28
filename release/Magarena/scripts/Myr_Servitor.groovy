@@ -14,10 +14,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent SN = event.getPermanent();
             if (SN.isValid()) {
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final List<MagicCard> graveyard = cardName("Myr Servitor").from(MagicTargetType.Graveyard).filter(player);
-                for (final MagicCard card : graveyard) {
-                    game.doAction(new ReanimateAction(card, player));
+                for (final MagicPlayer player : game.getAPNAP()) {
+                    final List<MagicCard> graveyard = cardName("Myr Servitor").from(MagicTargetType.Graveyard).filter(player);
+                    for (final MagicCard card : graveyard) {
+                        game.doAction(new ReanimateAction(card, player));
                     }
                 }
             }

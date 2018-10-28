@@ -21,7 +21,7 @@ def Enchantment = {
                 permanent,
                 new MagicMayChoice(
                     new MagicPayManaCostChoice(MagicManaCost.create("{1}{R}")),
-                choice,
+                    choice,
                 ),
                 this,
                 "PN may\$ pay {1}{R}\$. If PN does, PN creates a token that's a copy of another target creature\$, " +
@@ -36,7 +36,7 @@ def Enchantment = {
                         event.getPlayer(),
                         it,
                         Enchantment,
-                        MagicPlayMod.HASTE_UEOT,
+                        MagicPlayMod.HASTE,
                         MagicPlayMod.EXILE_AT_END_OF_TURN
                     ));
                 });
