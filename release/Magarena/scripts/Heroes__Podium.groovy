@@ -64,10 +64,6 @@ def action = {
             final int amount = LEGENDARY_CREATURE_YOU_CONTROL.except(permanent).filter(source.getController()).size();
             pt.add(amount,amount);
         }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target;
-        }
     }
 ]
 

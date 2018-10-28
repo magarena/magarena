@@ -19,8 +19,8 @@
                 source,
                 this,
                 "Reveal the top card of PN's library. If it's a creature card, create a 1/1 green Saproling creature token. " +
-                "If it's a land card, put that card onto the battlefield under PN control. " +
-                "If it's a noncreature, nonland card, PN gain 2 life."
+                "If it's a land card, put that card onto the battlefield under PN's control. " +
+                "If it's a noncreature, nonland card, PN gains 2 life."
             );
         }
 

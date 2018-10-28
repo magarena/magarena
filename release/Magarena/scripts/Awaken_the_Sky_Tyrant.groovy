@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN Sacrifices SN. If PN does, then creates a 5/5 red Dragon creature token with flying."
+                    "PN sacrifices SN. If PN does, then create a 5/5 red Dragon creature token with flying."
                 ):
                 MagicEvent.NONE;
         }
@@ -14,8 +14,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent sac = new MagicSacrificeEvent(event.getPermanent());
             if (sac.isSatisfied()) {
-            game.addEvent(sac);
-            game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("5/5 red Dragon creature token with flying"),1));
+                game.addEvent(sac);
+                game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("5/5 red Dragon creature token with flying"),1));
             }
         }
     }
