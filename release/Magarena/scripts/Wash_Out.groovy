@@ -13,14 +13,14 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicColor color=event.getChosenColor();
-                final MagicPermanentList all = new MagicPermanentList();
-                PERMANENT.filter(event) each {
-                    if (it.hasColor(color)) {
-                        all.add(it);
-                    }
+            final MagicColor color = event.getChosenColor();
+            final MagicPermanentList all = new MagicPermanentList();
+            PERMANENT.filter(event) each {
+                if (it.hasColor(color)) {
+                    all.add(it);
                 }
-                game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.OwnersHand));
+            }
+            game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.OwnersHand));
         }
     }
 ]

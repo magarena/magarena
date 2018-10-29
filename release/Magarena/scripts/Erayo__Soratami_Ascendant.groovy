@@ -1,13 +1,13 @@
 [
     new OtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
             return (game.getSpellsCast() == 3) ?
                 new MagicEvent(
                     permanent,
                     cardOnStack,
                     this,
-                    "Whenever the fourth spell of a turn is cast, flip SN."
+                    "Flip SN."
                 )
                 :
                 MagicEvent.NONE;
@@ -18,4 +18,3 @@
         }
     }
 ]
-
