@@ -1,9 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-        final int hand = event.getPlayer().getHandSize();
-        if (hand == 0) {
-            game.doAction(new FlipAction(event.getPermanent()));
-        }
+    final int hand = event.getPlayer().getHandSize();
+    if (hand == 0) {
+        game.doAction(new FlipAction(event.getPermanent()));
+    }
 }
 
 [
@@ -30,8 +30,8 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,{
-                game.addEvent(new MagicDiscardEvent(event.getSource(),it));
+            event.processTargetPlayer(game, {
+                game.addEvent(new MagicDiscardEvent(event.getSource(), it));
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,

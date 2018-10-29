@@ -6,7 +6,7 @@
                 otherPermanent.isCreature() &&
                 otherPermanent.isFriend(permanent)) {
                 final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-                if (amount > 0 ) {
+                if (amount > 0) {
                     game.doAction(new ChangeCountersAction(permanent.getController(), otherPermanent, MagicCounterType.PlusOne, amount));
                     game.logAppendMessage(
                         permanent.getController(),

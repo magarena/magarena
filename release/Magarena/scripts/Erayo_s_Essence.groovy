@@ -7,7 +7,7 @@
                     permanent,
                     cardOnStack,
                     this,
-                    "Whenever an opponent casts his or her first spell each turn, counter that spell.RN"
+                    "Counter RN."
                 )
                 :
                 MagicEvent.NONE;
@@ -18,5 +18,3 @@
         }
     }
 ]
-
-
