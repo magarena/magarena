@@ -1,6 +1,6 @@
 name=1/1 black Insect creature token
-token=Rat
-image=https://magiccards.info/extras/token/amonkhet/insect.jpg
+token=Insect
+image=https://img.scryfall.com/cards/normal/en/takh/19.jpg
 value=1
 type=Creature
 subtype=Insect
