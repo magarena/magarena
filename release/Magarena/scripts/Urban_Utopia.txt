@@ -9,5 +9,5 @@ ability=Enchant land;\
         When SN enters the battlefield, draw a card.;\
         Enchanted land has "{T}: Add one mana of any color."
 timing=aura
-enchant=default,creature
+enchant=default,land
 oracle=Enchant land\nWhen Urban Utopia enters the battlefield, draw a card.\nEnchanted land has "{T}: Add one mana of any color."
