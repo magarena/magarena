@@ -1,6 +1,6 @@
 name=colorless Horror artifact creature token
 token=Horror
-image=https://magiccards.info/extras/token/mirrodin-besieged/horror.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tc18/22.jpg?1535501587
 value=2
 type=Artifact,Creature
 subtype=Horror
