@@ -512,11 +512,11 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.reduction(cardDef, ARG.number(arg), cond));
         }
     },
-    YourCardLessToCast(ARG.WORDRUN + " you cast cost \\{" + ARG.NUMBER + "\\} less to cast\\.", 10) {
+    YourCardLessToCast(ARG.WORDRUN + " you cast cost " + ARG.MANACOST + " less to cast\\.", 10) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String cards = ARG.wordrun(arg).replaceAll("[Ss]pells", "cards") + " from your hand";
-            card.add(MagicStatic.YourCostReduction(MagicTargetFilterFactory.Card(cards), ARG.number(arg)));
+            card.add(MagicStatic.YourCostReduction(MagicTargetFilterFactory.Card(cards), MagicManaCost.create(ARG.manacost(arg))));
         }
     },
     YourCardMoreToCast(ARG.WORDRUN + " you cast cost " + ARG.MANACOST + " more to cast\\.", 10) {

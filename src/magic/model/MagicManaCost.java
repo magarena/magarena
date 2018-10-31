@@ -416,4 +416,25 @@ public class MagicManaCost implements MagicCopyable {
             return MagicManaCost.create(getCanonicalText(reducedAmounts, XCount));
         }
     }
+
+    /** Return cost increased by some other cost. Basically sum of those two costs */
+    public MagicManaCost increasedBy(MagicManaCost extraCost) {
+        MagicManaCost res = this;
+        for (final MagicCostManaType cmt : extraCost.getCostManaTypes(0)) {
+            res = res.increase(cmt, 1);
+        }
+        return res;
+    }
+
+    /**
+     * Return cost decreased by some other cost. Only identical mana is removed from the cost.
+     * For example, cost {R}{B} reduced by {B}{B}{1} will become {R}
+     */
+    public MagicManaCost reducedBy(MagicManaCost extraCost) {
+        MagicManaCost res = this;
+        for (final MagicCostManaType cmt : extraCost.getCostManaTypes(0)) {
+            res = res.reduce(cmt, 1);
+        }
+        return res;
+    }
 }

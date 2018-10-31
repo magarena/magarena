@@ -553,48 +553,40 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
 
-    public static MagicStatic YourCostReduction(final MagicTargetFilter<MagicCard> filter, int n) {
+    public static MagicStatic YourCostReduction(final MagicTargetFilter<MagicCard> filter, final MagicManaCost cost) {
         return new MagicStatic(MagicLayer.CostReduction) {
             @Override
-            public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+            public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost originalCost) {
                 if (filter.accept(source, source.getController(), card) && source.isFriend(card)) {
-                    return cost.reduce(n);
+                    return originalCost.reducedBy(cost);
                 } else {
-                    return cost;
+                    return originalCost;
                 }
             }
         };
     }
 
     public static MagicStatic YourCostIncrease(final MagicTargetFilter<MagicCard> filter, final MagicManaCost cost) {
-        return new MagicStatic(MagicLayer.CostReduction) {
+        return new MagicStatic(MagicLayer.CostIncrease) {
             @Override
-            public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+            public MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost originalCost) {
                 if (filter.accept(source, source.getController(), card) && source.isFriend(card)) {
-                    MagicManaCost res = cost;
-                    for (final MagicCostManaType cmt : cost.getCostManaTypes(0)) {
-                        res = cost.increase(cmt, 1);
-                    }
-                    return res;
+                    return originalCost.increasedBy(cost);
                 } else {
-                    return cost;
+                    return originalCost;
                 }
             }
         };
     }
 
     public static MagicStatic CostIncrease(final MagicTargetFilter<MagicCard> filter, final MagicManaCost cost) {
-        return new MagicStatic(MagicLayer.CostReduction) {
+        return new MagicStatic(MagicLayer.CostIncrease) {
             @Override
-            public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+            public MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost originalCost) {
                 if (filter.accept(source, source.getController(), card)) {
-                    MagicManaCost res = cost;
-                    for (final MagicCostManaType cmt : cost.getCostManaTypes(0)) {
-                        res = cost.increase(cmt, 1);
-                    }
-                    return res;
+                    return originalCost.increasedBy(cost);
                 } else {
-                    return cost;
+                    return originalCost;
                 }
             }
         };
