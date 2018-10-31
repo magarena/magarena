@@ -1,5 +1,5 @@
 name=Connive
-image=https://img.scryfall.com/cards/large/front/8/9/890ac54c-6fd7-4e46-8ce4-8926c6975f60.jpg
+image=https://img.scryfall.com/cards/normal/front/8/9/890ac54c-6fd7-4e46-8ce4-8926c6975f60.jpg
 value=2.500
 rarity=R
 type=Sorcery

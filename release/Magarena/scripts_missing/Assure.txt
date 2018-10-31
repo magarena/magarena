@@ -1,5 +1,5 @@
 name=Assure
-image=https://img.scryfall.com/cards/large/front/a/d/ad454e7a-06c9-4694-ae68-7b1431e00077.jpg
+image=https://img.scryfall.com/cards/normal/front/a/d/ad454e7a-06c9-4694-ae68-7b1431e00077.jpg
 value=2.500
 rarity=R
 type=Instant

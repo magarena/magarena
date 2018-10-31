@@ -1,5 +1,5 @@
 name=Thousand-Year Storm
-image=https://img.scryfall.com/cards/large/front/2/7/270a0863-7d07-43f0-925d-a8ce0383a1cb.jpg
+image=https://img.scryfall.com/cards/normal/front/2/7/270a0863-7d07-43f0-925d-a8ce0383a1cb.jpg
 value=2.500
 rarity=M
 type=Enchantment

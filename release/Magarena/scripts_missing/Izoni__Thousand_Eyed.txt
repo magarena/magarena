@@ -1,5 +1,5 @@
 name=Izoni, Thousand-Eyed
-image=https://img.scryfall.com/cards/large/front/7/5/75955b0e-12d6-40ba-aab5-b7b7e2bde121.jpg
+image=https://img.scryfall.com/cards/normal/front/7/5/75955b0e-12d6-40ba-aab5-b7b7e2bde121.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature
