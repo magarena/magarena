@@ -1,5 +1,5 @@
 name=Devious Cover-Up
-image=https://img.scryfall.com/cards/large/front/2/1/21ac6b0a-b1a5-439d-b65e-5f04e1826c80.jpg
+image=https://img.scryfall.com/cards/normal/front/2/1/21ac6b0a-b1a5-439d-b65e-5f04e1826c80.jpg
 value=2.500
 rarity=C
 type=Instant

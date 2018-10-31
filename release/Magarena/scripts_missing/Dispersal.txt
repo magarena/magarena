@@ -1,5 +1,5 @@
 name=Dispersal
-image=https://img.scryfall.com/cards/large/front/a/c/ace631d1-897a-417e-8628-0170713f03d3.jpg
+image=https://img.scryfall.com/cards/normal/front/a/c/ace631d1-897a-417e-8628-0170713f03d3.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Piston-Fist Cyclops
-image=https://img.scryfall.com/cards/large/front/2/e/2ec7523a-a9c4-4b76-8f9e-b591a88e2e37.jpg
+image=https://img.scryfall.com/cards/normal/front/2/e/2ec7523a-a9c4-4b76-8f9e-b591a88e2e37.jpg
 value=2.500
 rarity=C
 type=Creature

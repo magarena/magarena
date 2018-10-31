@@ -1,5 +1,5 @@
 name=Smelt-Ward Minotaur
-image=https://img.scryfall.com/cards/large/front/f/8/f851d74e-90ad-417f-8372-8437d2d68b0d.jpg
+image=https://img.scryfall.com/cards/normal/front/f/8/f851d74e-90ad-417f-8372-8437d2d68b0d.jpg
 value=2.500
 rarity=U
 type=Creature
