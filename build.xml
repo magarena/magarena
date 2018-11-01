@@ -7,48 +7,85 @@
   <property name="source" value="1.8"/>
   <property name="target" value="1.8"/>
   <property name="lib" value="release/lib" />
+  <property name="testlib" value="test/lib" />
   <property name="groovy-version" value="2.4.12" />
   <property name="error-prone-version" value="2.0.19" />
-  
+
   <path id="classpath">
-      <fileset dir="${lib}">
+    <fileset dir="${lib}">
       <include name="**/*.jar" />
-      </fileset>
+    </fileset>
   </path>
-  
- <taskdef name="bundleapp" 		
- 	classname="com.oracle.appbundler.AppBundlerTask" 		
- 	classpath="lib/appbundler-1.0.jar" />
-	
+
+  <path id="classpath.test">
+    <fileset dir="${testlib}">
+      <include name="**/*.jar" />
+    </fileset>
+    <path refid="classpath" />
+  </path>
+
+  <path id="classpath.test.full">
+    <pathelement location="build"/>
+    <pathelement location="buildtest" />
+    <path refid="classpath.test" />
+  </path>
+
+  <target name="test" depends="buildtest">
+    <junit haltonerror="true" haltonfailure="true" fork="yes">
+      <classpath refid="classpath.test.full" />
+      <batchtest>
+        <fileset dir="${testdir}">
+          <include name="**/*Test*" />
+        </fileset>
+      </batchtest>
+      <formatter type="brief" usefile="false"/>
+    </junit>
+  </target>
+
+  <property name="testdir" location="test" />
+  <property name="srcdir" location="src" />
+  <property name="full-compile" value="true" />
+
+  <taskdef name="bundleapp"
+    classname="com.oracle.appbundler.AppBundlerTask"
+    classpath="lib/appbundler-1.0.jar" />
+
   <!-- deps - Download dependencies -->
   <target name="deps" unless="skip.download">
+      <echo message="downloading junit with hamcrest to ${testlib}"/>
+      <get src="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar"
+           dest="${testlib}/junit-4.12.jar"
+           skipexisting="true" />
+      <get src="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
+           dest="${testlib}/hamcrest-core-1.3.jar"
+           skipexisting="true" />
       <echo message="downloading groovy to ${lib}"/>
       <get src="https://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/${groovy-version}/groovy-all-${groovy-version}-indy.jar"
-           dest="${lib}/groovy-all-${groovy-version}.jar" 
+           dest="${lib}/groovy-all-${groovy-version}.jar"
            skipexisting="true" />
       <echo message="downloading MigLayout to ${lib}"/>
-      <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar" 
-           dest="${lib}/miglayout-core-4.2.jar" 
+      <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar"
+           dest="${lib}/miglayout-core-4.2.jar"
            skipexisting="true" />
-      <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar" 
-           dest="${lib}/miglayout-swing-4.2.jar" 
+      <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar"
+           dest="${lib}/miglayout-swing-4.2.jar"
            skipexisting="true" />
       <echo message="downloading Apache Commons IO to ${lib}"/>
-      <get src="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar" 
-         dest="${lib}/commons-io-2.4.jar" 
+      <get src="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"
+         dest="${lib}/commons-io-2.4.jar"
          skipexisting="true" />
-      <echo message="downloading Trident animation library to ${lib}"/>     
-      <get src="http://repo1.maven.org/maven2/org/pushingpixels/trident/1.3/trident-1.3.jar" 
-         dest="${lib}/trident-1.3.jar" 
+      <echo message="downloading Trident animation library to ${lib}"/>
+      <get src="http://repo1.maven.org/maven2/org/pushingpixels/trident/1.3/trident-1.3.jar"
+         dest="${lib}/trident-1.3.jar"
          skipexisting="true" />
-      <echo message="downloading java json library to ${lib}"/>     
-      <get src="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar" 
-         dest="${lib}/json-20140107.jar" 
+      <echo message="downloading java json library to ${lib}"/>
+      <get src="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar"
+         dest="${lib}/json-20140107.jar"
          skipexisting="true" />
-      <echo message="downloading H2 database library to ${lib}"/>     
-      <get src="http://repo2.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193.jar" 
-         dest="${lib}/h2-1.4.193.jar" 
-         skipexisting="true" />      
+      <echo message="downloading H2 database library to ${lib}"/>
+      <get src="http://repo2.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193.jar"
+         dest="${lib}/h2-1.4.193.jar"
+         skipexisting="true" />
       <echo message="downloading errorprone lib"/>
       <get src="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_ant/${error-prone-version}/error_prone_ant-${error-prone-version}.jar"
          dest="lib/error_prone_ant-${error-prone-version}.jar"
@@ -58,12 +95,15 @@
   <!-- init - Create temporary directory to build the program -->
   <target name="init">
       <mkdir dir="build"/>
+      <mkdir dir="buildtest"/>
       <mkdir dir="${lib}"/>
+      <mkdir dir="${testlib}"/>
   </target>
 
   <!-- clean - Remove temporary directory -->
   <target name="clean">
     <delete dir="build"/>
+    <delete dir="buildtest"/>
   </target>
 
   <!-- build - Compile sources and copy resources to build directory -->
@@ -77,7 +117,7 @@
         source="${source}"
         target="${target}"
         compiler="com.google.errorprone.ErrorProneAntCompilerAdapter">
-        <src path="src"/>
+        <src path="${srcdir}"/>
         <compilerarg value="-Xlint"/>
         <!--
         <compilerarg value="-XepPatchChecks:MissingOverride,DefaultCharset,ClassCanBeStatic,ShortCircuitBoolean"/>
@@ -97,33 +137,62 @@
     </copy>
   </target>
 
+  <!-- buildtest - Compile test sources -->
+  <target depends="init,deps,build" name="buildtest">
+    <javac
+        includeantruntime="false"
+        debug="true"
+        debuglevel="${debuglevel}"
+        encoding="UTF-8"
+        destdir="buildtest"
+        source="${source}"
+        target="${target}"
+        compiler="com.google.errorprone.ErrorProneAntCompilerAdapter">
+        <src path="${testdir}"/>
+        <compilerarg value="-Xlint"/>
+        <!--
+        <compilerarg value="-XepPatchChecks:MissingOverride,DefaultCharset,ClassCanBeStatic,ShortCircuitBoolean"/>
+        <compilerarg value="-XepPatchLocation:IN_PLACE"/>
+        -->
+        <compilerarg value="-Xep:ImmutableEnumChecker:OFF"/>
+        <compilerarg value="-Xep:OperatorPrecedence:OFF"/>
+        <classpath refid="classpath.test" />
+        <classpath>
+            <pathelement location="build"/>
+        </classpath>
+        <compilerclasspath>
+            <pathelement location="lib/error_prone_ant-${error-prone-version}.jar"/>
+        </compilerclasspath>
+    </javac>
+  </target>
+
   <!-- jar (default target) - Create .jar file -->
   <target depends="build" name="jar">
       <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
         <attribute name="SplashScreen-Image" value="magic/data/textures/splash.jpg" />
-        <attribute name="Class-Path" 
+        <attribute name="Class-Path"
                    value="lib/groovy-all-${groovy-version}.jar
                           lib/miglayout-core-4.2.jar
                           lib/miglayout-swing-4.2.jar
                           lib/commons-io-2.4.jar
-                          lib/trident-1.3.jar 
+                          lib/trident-1.3.jar
                           lib/json-20140107.jar
                           lib/h2-1.4.193.jar" />
       </manifest>
     </jar>
   </target>
-  
+
   <target depends="build" name="core">
       <jar destfile="release/Magarena-core.jar" basedir="build" includes="**/*.*" excludes="magic/*,magic/ui/**">
       <manifest>
-        <attribute name="Class-Path" 
+        <attribute name="Class-Path"
                    value="lib/groovy-all-${groovy-version}.jar
                           lib/miglayout-core-4.2.jar
                           lib/miglayout-swing-4.2.jar
                           lib/commons-io-2.4.jar
-                          lib/trident-1.3.jar 
+                          lib/trident-1.3.jar
                           lib/json-20140107.jar
                           lib/h2-1.4.193.jar" />
       </manifest>
