@@ -1,5 +1,5 @@
 name=Golgari Raiders
-image=https://img.scryfall.com/cards/normal/front/3/7/37284ba8-441c-4cf6-95c6-6a0f52e6d36d.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/7/37284ba8-441c-4cf6-95c6-6a0f52e6d36d.jpg
 value=2.500
 rarity=U
 type=Creature

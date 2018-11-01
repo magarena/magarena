@@ -1,5 +1,5 @@
 name=Selesnya Locket
-image=https://img.scryfall.com/cards/normal/front/e/a/ea0c04b9-c7fc-4204-9af2-5d1987bdd97e.jpg
+image=https://img.scryfall.com/cards/border_crop/front/e/a/ea0c04b9-c7fc-4204-9af2-5d1987bdd97e.jpg
 value=2.500
 rarity=C
 type=Artifact

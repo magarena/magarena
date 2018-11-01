@@ -1,5 +1,5 @@
 name=Omnispell Adept
-image=https://img.scryfall.com/cards/normal/front/e/1/e17664df-e8ba-464d-b338-3e671d2d7f0e.jpg
+image=https://img.scryfall.com/cards/border_crop/front/e/1/e17664df-e8ba-464d-b338-3e671d2d7f0e.jpg
 value=2.500
 rarity=R
 type=Creature

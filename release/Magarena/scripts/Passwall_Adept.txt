@@ -1,5 +1,5 @@
 name=Passwall Adept
-image=https://img.scryfall.com/cards/normal/front/a/8/a8ed28c3-8c66-4883-8774-67ac5ab9e81c.jpg
+image=https://img.scryfall.com/cards/border_crop/front/a/8/a8ed28c3-8c66-4883-8774-67ac5ab9e81c.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rubblebelt Boar
-image=https://img.scryfall.com/cards/normal/front/1/9/196bf114-e135-43f3-83d5-cb08ca766881.jpg
+image=https://img.scryfall.com/cards/border_crop/front/1/9/196bf114-e135-43f3-83d5-cb08ca766881.jpg
 value=2.500
 rarity=C
 type=Creature

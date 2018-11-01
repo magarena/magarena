@@ -1,5 +1,5 @@
 name=Spinal Centipede
-image=https://img.scryfall.com/cards/normal/front/7/4/74d579fb-615a-43a6-a1c1-c535087abf2a.jpg
+image=https://img.scryfall.com/cards/border_crop/front/7/4/74d579fb-615a-43a6-a1c1-c535087abf2a.jpg
 value=2.500
 rarity=C
 type=Creature

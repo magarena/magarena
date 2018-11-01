@@ -1,5 +1,5 @@
 name=Burglar Rat
-image=https://img.scryfall.com/cards/normal/front/e/9/e9f7f218-fd2a-4233-8753-065ddc314f2d.jpg
+image=https://img.scryfall.com/cards/border_crop/front/e/9/e9f7f218-fd2a-4233-8753-065ddc314f2d.jpg
 value=2.500
 rarity=C
 type=Creature

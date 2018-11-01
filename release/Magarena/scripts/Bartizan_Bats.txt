@@ -1,5 +1,5 @@
 name=Bartizan Bats
-image=https://img.scryfall.com/cards/normal/front/2/1/210da4ad-d8c5-436b-b1a4-5233e8074a1b.jpg
+image=https://img.scryfall.com/cards/border_crop/front/2/1/210da4ad-d8c5-436b-b1a4-5233e8074a1b.jpg
 value=2.500
 rarity=C
 type=Creature

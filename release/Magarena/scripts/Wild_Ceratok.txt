@@ -1,5 +1,5 @@
 name=Wild Ceratok
-image=https://img.scryfall.com/cards/normal/front/4/4/4464e11a-c5b9-40ea-8be0-dab29d14e289.jpg
+image=https://img.scryfall.com/cards/border_crop/front/4/4/4464e11a-c5b9-40ea-8be0-dab29d14e289.jpg
 value=2.500
 rarity=C
 type=Creature

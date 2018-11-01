@@ -1,5 +1,5 @@
 name=Pitiless Gorgon
-image=https://img.scryfall.com/cards/normal/front/c/1/c1a925a0-9d26-441b-8b4a-0614a0485fe6.jpg
+image=https://img.scryfall.com/cards/border_crop/front/c/1/c1a925a0-9d26-441b-8b4a-0614a0485fe6.jpg
 value=2.500
 rarity=C
 type=Creature

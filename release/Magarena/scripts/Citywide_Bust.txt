@@ -1,5 +1,5 @@
 name=Citywide Bust
-image=https://img.scryfall.com/cards/normal/front/a/9/a995200f-1e9d-4ff3-9e04-4a4309e0e09c.jpg
+image=https://img.scryfall.com/cards/border_crop/front/a/9/a995200f-1e9d-4ff3-9e04-4a4309e0e09c.jpg
 value=2.500
 rarity=R
 type=Sorcery

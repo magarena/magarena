@@ -1,5 +1,5 @@
 name=Izzet Locket
-image=https://img.scryfall.com/cards/normal/front/3/4/348f3bec-ad16-4bc7-8da9-3956c9900f95.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/4/348f3bec-ad16-4bc7-8da9-3956c9900f95.jpg
 value=2.500
 rarity=C
 type=Artifact

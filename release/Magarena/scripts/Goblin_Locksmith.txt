@@ -1,5 +1,5 @@
 name=Goblin Locksmith
-image=https://img.scryfall.com/cards/normal/front/c/f/cf2bed0a-990a-499a-af0a-52b77557d7cb.jpg
+image=https://img.scryfall.com/cards/border_crop/front/c/f/cf2bed0a-990a-499a-af0a-52b77557d7cb.jpg
 value=2.500
 rarity=C
 type=Creature

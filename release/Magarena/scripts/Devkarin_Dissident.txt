@@ -1,5 +1,5 @@
 name=Devkarin Dissident
-image=https://img.scryfall.com/cards/normal/front/4/9/490cd287-5f09-442f-9150-4a6ac2cf3e2e.jpg
+image=https://img.scryfall.com/cards/border_crop/front/4/9/490cd287-5f09-442f-9150-4a6ac2cf3e2e.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fresh-Faced Recruit
-image=https://img.scryfall.com/cards/normal/front/a/8/a8b19518-7752-4673-a7d8-ae2e0070129c.jpg
+image=https://img.scryfall.com/cards/border_crop/front/a/8/a8b19518-7752-4673-a7d8-ae2e0070129c.jpg
 value=2.500
 rarity=C
 type=Creature

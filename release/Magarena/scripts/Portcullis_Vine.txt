@@ -1,5 +1,5 @@
 name=Portcullis Vine
-image=https://img.scryfall.com/cards/normal/front/5/b/5b6dab62-b747-4d76-9fa8-4914582fc212.jpg
+image=https://img.scryfall.com/cards/border_crop/front/5/b/5b6dab62-b747-4d76-9fa8-4914582fc212.jpg
 value=2.500
 rarity=C
 type=Creature

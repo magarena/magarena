@@ -1,5 +1,5 @@
 name=Ritual of Soot
-image=https://img.scryfall.com/cards/normal/front/2/6/269af993-4894-4bf1-b55a-af4d736cb3cc.jpg
+image=https://img.scryfall.com/cards/border_crop/front/2/6/269af993-4894-4bf1-b55a-af4d736cb3cc.jpg
 value=2.500
 rarity=R
 type=Sorcery

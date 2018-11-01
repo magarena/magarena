@@ -1,6 +1,6 @@
 name=legendary 4/4 red Dragon creature token with flying named Karox Bladewing
 token=Karox Bladewing
-image=https://img.scryfall.com/cards/normal/en/tdom/10.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tdom/10.jpg
 value=1
 type=Legendary,Creature
 subtype=Dragon

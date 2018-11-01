@@ -1,5 +1,5 @@
 name=Command the Storm
-image=https://img.scryfall.com/cards/normal/front/c/4/c4144e98-957e-43ac-b107-8ccf450748df.jpg
+image=https://img.scryfall.com/cards/border_crop/front/c/4/c4144e98-957e-43ac-b107-8ccf450748df.jpg
 value=2.500
 rarity=C
 type=Instant

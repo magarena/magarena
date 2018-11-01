@@ -1,5 +1,5 @@
 name=Nightveil Sprite
-image=https://img.scryfall.com/cards/normal/front/5/3/534d1166-4e01-4ec8-b4d9-e76861ec51b9.jpg
+image=https://img.scryfall.com/cards/border_crop/front/5/3/534d1166-4e01-4ec8-b4d9-e76861ec51b9.jpg
 value=2.500
 rarity=U
 type=Creature

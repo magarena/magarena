@@ -1,5 +1,5 @@
 name=Street Riot
-image=https://img.scryfall.com/cards/normal/front/8/0/80b352d5-4a57-41bc-b4c4-8b81255a9db8.jpg
+image=https://img.scryfall.com/cards/border_crop/front/8/0/80b352d5-4a57-41bc-b4c4-8b81255a9db8.jpg
 value=2.500
 rarity=U
 type=Enchantment

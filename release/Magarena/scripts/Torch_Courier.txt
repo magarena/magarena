@@ -1,5 +1,5 @@
 name=Torch Courier
-image=https://img.scryfall.com/cards/normal/front/d/4/d4c9fc8c-e68f-4636-84b8-877f6ec04b09.jpg
+image=https://img.scryfall.com/cards/border_crop/front/d/4/d4c9fc8c-e68f-4636-84b8-877f6ec04b09.jpg
 value=2.500
 rarity=C
 type=Creature

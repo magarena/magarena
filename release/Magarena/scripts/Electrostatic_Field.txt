@@ -1,5 +1,5 @@
 name=Electrostatic Field
-image=https://img.scryfall.com/cards/normal/front/7/0/7096c9a6-2e73-41f8-b20a-b29a9f0b760c.jpg
+image=https://img.scryfall.com/cards/border_crop/front/7/0/7096c9a6-2e73-41f8-b20a-b29a9f0b760c.jpg
 value=2.500
 rarity=U
 type=Creature

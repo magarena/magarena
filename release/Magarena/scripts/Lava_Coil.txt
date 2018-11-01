@@ -1,5 +1,5 @@
 name=Lava Coil
-image=https://img.scryfall.com/cards/normal/front/f/6/f6135cf4-50c2-4e44-b9b0-96e1187a2200.jpg
+image=https://img.scryfall.com/cards/border_crop/front/f/6/f6135cf4-50c2-4e44-b9b0-96e1187a2200.jpg
 value=2.500
 rarity=U
 type=Sorcery

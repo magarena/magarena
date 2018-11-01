@@ -1,5 +1,5 @@
 name=Gateway Plaza
-image=https://img.scryfall.com/cards/normal/front/7/d/7d3d5162-126d-4430-9884-8e79afa974c2.jpg
+image=https://img.scryfall.com/cards/border_crop/front/7/d/7d3d5162-126d-4430-9884-8e79afa974c2.jpg
 value=2.500
 rarity=C
 type=Land

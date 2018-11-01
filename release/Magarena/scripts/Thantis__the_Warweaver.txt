@@ -1,5 +1,5 @@
 name=Thantis, the Warweaver
-image=https://img.scryfall.com/cards/normal/en/c18/46.jpg
+image=https://img.scryfall.com/cards/border_crop/en/c18/46.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

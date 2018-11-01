@@ -1,5 +1,5 @@
 name=Collar the Culprit
-image=https://img.scryfall.com/cards/normal/front/c/d/cdf305b7-d1f7-4770-9201-8f3fb6735cd9.jpg
+image=https://img.scryfall.com/cards/border_crop/front/c/d/cdf305b7-d1f7-4770-9201-8f3fb6735cd9.jpg
 value=2.500
 rarity=C
 type=Instant

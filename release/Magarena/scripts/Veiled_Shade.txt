@@ -1,5 +1,5 @@
 name=Veiled Shade
-image=https://img.scryfall.com/cards/normal/front/3/5/35cb18ae-0229-40a1-8838-ffb678ab2ed9.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/5/35cb18ae-0229-40a1-8838-ffb678ab2ed9.jpg
 value=2.500
 rarity=C
 type=Creature

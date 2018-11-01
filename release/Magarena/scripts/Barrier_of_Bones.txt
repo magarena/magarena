@@ -1,5 +1,5 @@
 name=Barrier of Bones
-image=https://img.scryfall.com/cards/normal/front/2/8/28129aaf-aaff-47f4-8dd2-8c576c55052c.jpg
+image=https://img.scryfall.com/cards/border_crop/front/2/8/28129aaf-aaff-47f4-8dd2-8c576c55052c.jpg
 value=2.500
 rarity=C
 type=Creature

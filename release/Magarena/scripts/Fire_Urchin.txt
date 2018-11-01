@@ -1,5 +1,5 @@
 name=Fire Urchin
-image=https://img.scryfall.com/cards/normal/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg
+image=https://img.scryfall.com/cards/border_crop/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg
 value=2.500
 rarity=C
 type=Creature

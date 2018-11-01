@@ -1,5 +1,5 @@
 name=Thoughtbound Phantasm
-image=https://img.scryfall.com/cards/normal/front/3/6/36478e73-162a-412c-bf5b-9ca0d92f51e2.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/6/36478e73-162a-412c-bf5b-9ca0d92f51e2.jpg
 value=2.500
 rarity=U
 type=Creature

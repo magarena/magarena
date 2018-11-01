@@ -1,5 +1,5 @@
 name=Golgari Locket
-image=https://img.scryfall.com/cards/normal/front/1/c/1c2e7843-9a87-46cb-be06-6db58649db85.jpg
+image=https://img.scryfall.com/cards/border_crop/front/1/c/1c2e7843-9a87-46cb-be06-6db58649db85.jpg
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Urban Utopia
-image=https://img.scryfall.com/cards/normal/front/4/5/45d7ab0e-db37-4051-86dd-3ab09c047a2b.jpg
+image=https://img.scryfall.com/cards/border_crop/front/4/5/45d7ab0e-db37-4051-86dd-3ab09c047a2b.jpg
 value=2.500
 rarity=C
 type=Enchantment

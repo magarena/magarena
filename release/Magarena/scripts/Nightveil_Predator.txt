@@ -1,5 +1,5 @@
 name=Nightveil Predator
-image=https://img.scryfall.com/cards/normal/front/1/9/193289c9-837d-4d18-9ef1-720e8e335e62.jpg
+image=https://img.scryfall.com/cards/border_crop/front/1/9/193289c9-837d-4d18-9ef1-720e8e335e62.jpg
 value=2.500
 rarity=U
 type=Creature

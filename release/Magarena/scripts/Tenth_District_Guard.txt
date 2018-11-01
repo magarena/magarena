@@ -1,5 +1,5 @@
 name=Tenth District Guard
-image=https://img.scryfall.com/cards/normal/front/8/2/829f959e-91cd-42ea-8644-ce828a304d01.jpg
+image=https://img.scryfall.com/cards/border_crop/front/8/2/829f959e-91cd-42ea-8644-ce828a304d01.jpg
 value=2.500
 rarity=C
 type=Creature

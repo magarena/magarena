@@ -1,5 +1,5 @@
 name=Swiftblade Vindicator
-image=https://img.scryfall.com/cards/normal/front/2/8/285c4d9e-0f22-49a8-b68c-150fd0d4b617.jpg
+image=https://img.scryfall.com/cards/border_crop/front/2/8/285c4d9e-0f22-49a8-b68c-150fd0d4b617.jpg
 value=2.500
 rarity=R
 type=Creature

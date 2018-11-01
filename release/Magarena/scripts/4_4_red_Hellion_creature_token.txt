@@ -1,6 +1,6 @@
 name=4/4 red Hellion creature token
 token=Hellion
-image=https://img.scryfall.com/cards/normal/en/tpca/12.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tpca/12.jpg
 image_updated=2015-11-12
 value=4
 type=Creature

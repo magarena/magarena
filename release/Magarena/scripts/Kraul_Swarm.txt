@@ -1,5 +1,5 @@
 name=Kraul Swarm
-image=https://img.scryfall.com/cards/normal/front/4/9/490dc165-b10d-4384-8c13-d7969844b2bb.jpg
+image=https://img.scryfall.com/cards/border_crop/front/4/9/490dc165-b10d-4384-8c13-d7969844b2bb.jpg
 value=2.500
 rarity=U
 type=Creature

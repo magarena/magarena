@@ -1,5 +1,5 @@
 name=Roc Charger
-image=https://img.scryfall.com/cards/normal/front/4/9/4932c635-b729-4348-92de-2c1b207ea460.jpg
+image=https://img.scryfall.com/cards/border_crop/front/4/9/4932c635-b729-4348-92de-2c1b207ea460.jpg
 value=2.500
 rarity=U
 type=Creature

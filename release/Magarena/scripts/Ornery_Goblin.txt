@@ -1,5 +1,5 @@
 name=Ornery Goblin
-image=https://img.scryfall.com/cards/normal/front/b/e/be1c1353-b315-4a0e-80b5-0d9a2962e35f.jpg
+image=https://img.scryfall.com/cards/border_crop/front/b/e/be1c1353-b315-4a0e-80b5-0d9a2962e35f.jpg
 value=2.500
 rarity=C
 type=Creature

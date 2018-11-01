@@ -1,5 +1,5 @@
 name=Gatekeeper Gargoyle
-image=https://img.scryfall.com/cards/normal/front/4/b/4bbdd54e-5d7e-4e4b-8d59-4e3f46877d39.jpg
+image=https://img.scryfall.com/cards/border_crop/front/4/b/4bbdd54e-5d7e-4e4b-8d59-4e3f46877d39.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

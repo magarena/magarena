@@ -1,5 +1,5 @@
 name=Beast Whisperer
-image=https://img.scryfall.com/cards/normal/front/9/d/9da6f595-41b2-4e52-b15a-6ad18e4232c7.jpg
+image=https://img.scryfall.com/cards/border_crop/front/9/d/9da6f595-41b2-4e52-b15a-6ad18e4232c7.jpg
 value=2.500
 rarity=R
 type=Creature

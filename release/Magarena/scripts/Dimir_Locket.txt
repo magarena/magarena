@@ -1,5 +1,5 @@
 name=Dimir Locket
-image=https://img.scryfall.com/cards/normal/front/d/f/dfb6810b-9bc9-43c5-8cd9-817b12ee3110.jpg
+image=https://img.scryfall.com/cards/border_crop/front/d/f/dfb6810b-9bc9-43c5-8cd9-817b12ee3110.jpg
 value=2.500
 rarity=C
 type=Artifact

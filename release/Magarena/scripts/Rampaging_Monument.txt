@@ -1,5 +1,5 @@
 name=Rampaging Monument
-image=https://img.scryfall.com/cards/normal/front/b/5/b5fbe445-a788-4624-8ecf-8bc06c3ca8f8.jpg
+image=https://img.scryfall.com/cards/border_crop/front/b/5/b5fbe445-a788-4624-8ecf-8bc06c3ca8f8.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

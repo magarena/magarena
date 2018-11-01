@@ -1,5 +1,5 @@
 name=Shivan Raptor
-image=https://img.scryfall.com/mci/scans/en/us/215.jpg
+image=https://img.scryfall.com/cards/border_crop/en/usg/216.jpg?1517813031
 value=3.671
 rarity=U
 type=Creature

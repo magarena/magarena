@@ -1,5 +1,5 @@
 name=Legion Guildmage
-image=https://img.scryfall.com/cards/normal/front/b/0/b03423b2-faca-4b2e-8328-8b9b7fdb7ce3.jpg
+image=https://img.scryfall.com/cards/border_crop/front/b/0/b03423b2-faca-4b2e-8328-8b9b7fdb7ce3.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Skyline Scout
-image=https://img.scryfall.com/cards/normal/front/b/0/b052b641-fce9-45c1-a15b-1e22f1a64e4d.jpg
+image=https://img.scryfall.com/cards/border_crop/front/b/0/b052b641-fce9-45c1-a15b-1e22f1a64e4d.jpg
 value=2.500
 rarity=C
 type=Creature

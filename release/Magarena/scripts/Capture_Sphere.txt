@@ -1,5 +1,5 @@
 name=Capture Sphere
-image=https://img.scryfall.com/cards/normal/front/5/a/5a799ac8-5798-4a26-81c1-763d6dcfcbe8.jpg
+image=https://img.scryfall.com/cards/border_crop/front/5/a/5a799ac8-5798-4a26-81c1-763d6dcfcbe8.jpg
 value=2.500
 rarity=C
 type=Enchantment

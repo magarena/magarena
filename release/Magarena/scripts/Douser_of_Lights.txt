@@ -1,5 +1,5 @@
 name=Douser of Lights
-image=https://img.scryfall.com/cards/normal/front/7/c/7c554be7-6fd4-4642-aaa0-2781d9c388e4.jpg
+image=https://img.scryfall.com/cards/border_crop/front/7/c/7c554be7-6fd4-4642-aaa0-2781d9c388e4.jpg
 value=2.500
 rarity=C
 type=Creature

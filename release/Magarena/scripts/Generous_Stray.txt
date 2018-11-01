@@ -1,5 +1,5 @@
 name=Generous Stray
-image=https://img.scryfall.com/cards/normal/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg
 value=2.500
 rarity=C
 type=Creature

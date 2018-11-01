@@ -1,5 +1,5 @@
 name=Candlelight Vigil
-image=https://img.scryfall.com/cards/normal/front/e/9/e920a75f-7dec-4815-a358-e174401da83b.jpg
+image=https://img.scryfall.com/cards/border_crop/front/e/9/e920a75f-7dec-4815-a358-e174401da83b.jpg
 value=2.500
 rarity=C
 type=Enchantment

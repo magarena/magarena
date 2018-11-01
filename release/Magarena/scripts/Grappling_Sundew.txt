@@ -1,5 +1,5 @@
 name=Grappling Sundew
-image=https://img.scryfall.com/cards/normal/front/f/7/f74d8d76-8091-424d-ad11-e8a1faae584d.jpg
+image=https://img.scryfall.com/cards/border_crop/front/f/7/f74d8d76-8091-424d-ad11-e8a1faae584d.jpg
 value=2.500
 rarity=U
 type=Creature

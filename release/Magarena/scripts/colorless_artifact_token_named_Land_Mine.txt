@@ -1,5 +1,5 @@
 name=colorless artifact token named Land Mine
-image=https://img.scryfall.com/cards/normal/en/tm15/12.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tm15/12.jpg
 token=Land Mine
 type=Artifact
 color=

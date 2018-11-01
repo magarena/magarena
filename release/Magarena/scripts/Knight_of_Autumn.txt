@@ -1,5 +1,5 @@
 name=Knight of Autumn
-image=https://img.scryfall.com/cards/normal/front/3/0/3028075c-5fc5-4942-a984-1ffcf7a8933d.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/0/3028075c-5fc5-4942-a984-1ffcf7a8933d.jpg
 value=2.500
 rarity=R
 type=Creature

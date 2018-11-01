@@ -1,5 +1,5 @@
 name=Whisper Agent
-image=https://img.scryfall.com/cards/normal/front/f/6/f6d318e7-f49e-49f8-98b6-d62c34aa4af2.jpg
+image=https://img.scryfall.com/cards/border_crop/front/f/6/f6d318e7-f49e-49f8-98b6-d62c34aa4af2.jpg
 value=2.500
 rarity=C
 type=Creature

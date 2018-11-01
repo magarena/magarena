@@ -1,5 +1,5 @@
 name=Muse Drake
-image=https://img.scryfall.com/cards/normal/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg
+image=https://img.scryfall.com/cards/border_crop/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg
 value=2.500
 rarity=C
 type=Creature

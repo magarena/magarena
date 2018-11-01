@@ -1,5 +1,5 @@
 name=Erstwhile Trooper
-image=https://img.scryfall.com/cards/normal/front/3/5/351ee4ba-882d-48c1-837d-e9eccc5bc50d.jpg
+image=https://img.scryfall.com/cards/border_crop/front/3/5/351ee4ba-882d-48c1-837d-e9eccc5bc50d.jpg
 value=2.500
 rarity=C
 type=Creature

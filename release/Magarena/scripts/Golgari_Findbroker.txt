@@ -1,5 +1,5 @@
 name=Golgari Findbroker
-image=https://img.scryfall.com/cards/normal/front/e/1/e12bd0e5-db96-4340-9b04-6855fd0fd8b9.jpg
+image=https://img.scryfall.com/cards/border_crop/front/e/1/e12bd0e5-db96-4340-9b04-6855fd0fd8b9.jpg
 value=2.500
 rarity=U
 type=Creature

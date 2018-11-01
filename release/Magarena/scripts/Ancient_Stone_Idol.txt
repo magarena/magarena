@@ -1,5 +1,5 @@
 name=Ancient Stone Idol
-image=https://img.scryfall.com/cards/normal/en/c18/53.jpg
+image=https://img.scryfall.com/cards/border_crop/en/c18/53.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

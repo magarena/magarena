@@ -1,5 +1,5 @@
 name=Boros Locket
-image=https://img.scryfall.com/cards/normal/front/5/e/5e972d97-0df2-44e4-8ff2-cc8707316dc1.jpg
+image=https://img.scryfall.com/cards/border_crop/front/5/e/5e972d97-0df2-44e4-8ff2-cc8707316dc1.jpg
 value=2.500
 rarity=C
 type=Artifact

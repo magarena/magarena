@@ -1,5 +1,5 @@
 name=Wary Okapi
-image=https://img.scryfall.com/cards/normal/front/5/4/54f26697-0d4b-4af4-a644-3d0ae13f1d2e.jpg
+image=https://img.scryfall.com/cards/border_crop/front/5/4/54f26697-0d4b-4af4-a644-3d0ae13f1d2e.jpg
 value=2.500
 rarity=C
 type=Creature
