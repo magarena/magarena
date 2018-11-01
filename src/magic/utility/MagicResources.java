@@ -4,6 +4,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.BufferedInputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import magic.data.MagicIcon;
@@ -49,8 +50,8 @@ public final class MagicResources {
         return instance.getClass().getResourceAsStream("/magic/data/textures/" + imageFilename);
     }
 
-    public static URL getSoundUrl(final String filename) {
-        return instance.getClass().getResource("/soundfx/" + filename);
+    public static BufferedInputStream getSoundStream(final String filename) {
+        return new BufferedInputStream(instance.getClass().getResourceAsStream("/soundfx/" + filename));
     }
 
     public static InputStreamReader getH2ScriptFile(String filename) {
