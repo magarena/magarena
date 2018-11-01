@@ -31,7 +31,7 @@ public final class MagicImages {
 
     public static final BufferedImage BACK_IMAGE;
     static {
-        BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
+        BufferedImage image = ImageFileIO.toImg(MagicResources.getImageStream("card-back.jpg"), null);
         Dimension size = getPreferredImageSize(image);
         BACK_IMAGE = ImageHelper.scale(image, size.width, size.height);
     }
@@ -93,7 +93,7 @@ public final class MagicImages {
             return getSmallManaIcon(icon);
         }
         if (!icons.containsKey(icon)) {
-            icons.put(icon, new ImageIcon(MagicResources.getImageUrl(icon.getFilename())));
+            icons.put(icon, new ImageIcon(ImageFileIO.toImg(MagicResources.getImageStream(icon.getFilename()), MISSING_SMALL)));
         }
         return icons.get(icon);
     }
@@ -103,7 +103,7 @@ public final class MagicImages {
     }
 
     public static BufferedImage loadImage(String name) {
-        return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING_SMALL);
+        return ImageFileIO.toImg(MagicResources.getImageStream(name), MISSING_SMALL);
     }
 
     private static BufferedImage loadTextureImage(String name) {

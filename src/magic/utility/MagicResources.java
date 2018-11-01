@@ -41,8 +41,8 @@ public final class MagicResources {
         return instance.getClass().getResource("/magic/data/icons/mana/" + manaIcon.getFilename());
     }
 
-    public static URL getImageUrl(final String imageFilename) {
-        return instance.getClass().getResource("/magic/data/icons/" + imageFilename);
+    public static InputStream getImageStream(final String imageFilename) {
+        return instance.getClass().getResourceAsStream("/magic/data/icons/" + imageFilename);
     }
 
     public static URL getTextureImageUrl(final String imageFilename) {
