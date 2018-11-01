@@ -7,4 +7,3 @@ cost={5}{R}
 timing=main
 requires_groovy_code
 oracle=Sacrifice all creatures you control, then create that many 4/4 red Hellion creature tokens.
-

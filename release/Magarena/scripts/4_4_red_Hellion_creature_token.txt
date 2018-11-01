@@ -7,4 +7,3 @@ type=Creature
 subtype=Hellion
 color=r
 pt=4/4
-

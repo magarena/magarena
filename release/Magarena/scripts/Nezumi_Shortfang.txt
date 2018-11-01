@@ -10,4 +10,3 @@ flip=Stabwhisker the Odious
 timing=main
 oracle={1}{B}, {T}: Target opponent discards a card. Then if that player has no cards in hand, flip Nezumi Shortfang.
 requires_groovy_code
-

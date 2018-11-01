@@ -11,4 +11,3 @@ flip=Erayo's Essence
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever the fourth spell of a turn is cast, flip Erayo, Soratami Ascendant.
-

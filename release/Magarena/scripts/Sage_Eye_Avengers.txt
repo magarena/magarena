@@ -10,4 +10,3 @@ ability=Prowess
 timing=main
 requires_groovy_code
 oracle=Prowess\nWhenever Sage-Eye Avengers attacks, you may return target creature to its owner's hand if its power is less than Sage-Eye Avengers's power.
-

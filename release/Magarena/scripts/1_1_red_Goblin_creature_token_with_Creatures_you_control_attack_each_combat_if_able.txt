@@ -8,4 +8,3 @@ color=r
 pt=1/1
 ability=Creatures you control attack each combat if able.
 oracle=Creatures you control attack each combat if able.
-

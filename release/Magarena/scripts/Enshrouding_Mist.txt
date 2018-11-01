@@ -8,4 +8,3 @@ cost={W}
 timing=removal
 requires_groovy_code
 oracle=Target creature gets +1/+1 until end of turn. Prevent all damage that would be dealt to it this turn. If it's renowned, untap it.
-

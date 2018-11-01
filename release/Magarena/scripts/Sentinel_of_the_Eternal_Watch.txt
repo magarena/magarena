@@ -11,4 +11,3 @@ ability=Vigilance
 timing=main
 requires_groovy_code
 oracle=Vigilance\nAt the beginning of combat on each opponent's turn, tap target creature that player controls.
-

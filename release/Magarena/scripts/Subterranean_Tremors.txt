@@ -8,4 +8,3 @@ cost={X}{R}
 timing=main
 requires_groovy_code
 oracle=Subterranean Tremors deals X damage to each creature without flying. If X is 4 or more, destroy all artifacts. If X is 8 or more, create an 8/8 red Lizard creature token.
-

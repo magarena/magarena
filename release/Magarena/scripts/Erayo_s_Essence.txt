@@ -9,4 +9,3 @@ timing=enchantment
 hidden
 requires_groovy_code
 oracle=Whenever an opponent casts his or her first spell each turn, counter that spell.
-

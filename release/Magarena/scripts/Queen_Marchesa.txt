@@ -12,4 +12,3 @@ ability=Deathtouch, haste;\
 timing=main
 requires_groovy_code
 oracle=Deathtouch, haste\nWhen Queen Marchesa enters the battlefield, you become the monarch.\nAt the beginning of your upkeep, if an opponent is the monarch, create a 1/1 black Assassin creature token with deathtouch and haste.
-

@@ -9,4 +9,3 @@ pt=2/2
 timing=main
 requires_groovy_code
 oracle=Whenever a source an opponent controls deals damage to you, that player sacrifices a permanent.
-
