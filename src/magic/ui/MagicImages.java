@@ -107,7 +107,7 @@ public final class MagicImages {
     }
 
     private static BufferedImage loadTextureImage(String name) {
-        return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING_SMALL);
+        return ImageFileIO.toImg(MagicResources.getTextureImageStream(name), MISSING_SMALL);
     }
 
     public static ImageIcon getSmallManaIcon(MagicIcon manaIcon) {

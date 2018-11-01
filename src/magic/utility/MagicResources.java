@@ -37,16 +37,16 @@ public final class MagicResources {
         }
     }
 
-    public static URL getManaImageUrl(MagicIcon manaIcon) {
-        return instance.getClass().getResource("/magic/data/icons/mana/" + manaIcon.getFilename());
+    public static InputStream getManaImageUrl(MagicIcon manaIcon) {
+        return instance.getClass().getResourceAsStream("/magic/data/icons/mana/" + manaIcon.getFilename());
     }
 
     public static InputStream getImageStream(final String imageFilename) {
         return instance.getClass().getResourceAsStream("/magic/data/icons/" + imageFilename);
     }
 
-    public static URL getTextureImageUrl(final String imageFilename) {
-        return instance.getClass().getResource("/magic/data/textures/" + imageFilename);
+    public static InputStream getTextureImageStream(final String imageFilename) {
+        return instance.getClass().getResourceAsStream("/magic/data/textures/" + imageFilename);
     }
 
     public static URL getSoundUrl(final String filename) {
