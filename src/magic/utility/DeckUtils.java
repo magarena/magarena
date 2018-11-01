@@ -89,9 +89,8 @@ public class DeckUtils {
             cardMap.put(name,count==null?Integer.valueOf(1):Integer.valueOf(count+1));
         }
 
-        BufferedWriter writer = null;
-        try { //save deck
-            writer = Files.newBufferedWriter(Paths.get(filename), UTF_8);
+        //save deck
+        try (final BufferedWriter writer = Files.newBufferedWriter(Paths.get(filename), UTF_8)) {
             for (int index=0;index<=2;index++) {
                 final SortedMap<String,Integer> cardMap=cardMaps.get(index);
                 if (!cardMap.isEmpty()) {
@@ -111,10 +110,6 @@ public class DeckUtils {
         } catch (final IOException ex) {
             isSuccessful = false;
             System.err.println("Invalid deck : " + deck.getFilename() + " - " + ex.getMessage());
-        } finally {
-            if (writer != null) {
-                magic.utility.FileIO.close(writer);
-            }
         }
 
         return isSuccessful;
