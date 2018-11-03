@@ -41,6 +41,7 @@ public enum MagicCostManaType {
     public static final int NR_OF_TYPES=values().length;
     public static final EnumSet<MagicCostManaType> MONO = EnumSet.range(White, Green);
     public static final EnumSet<MagicCostManaType> HYBRID = EnumSet.range(WhiteBlue, GreenBlue);
+    public static final EnumSet<MagicCostManaType> CHOICE = EnumSet.range(WhiteBlue, HybridGreen);
     public static final EnumSet<MagicCostManaType> NON_MONO = EnumSet.complementOf(MONO);
 
     private final String name;
