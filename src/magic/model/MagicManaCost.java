@@ -145,6 +145,10 @@ public class MagicManaCost implements MagicCopyable {
         return XCount > 0;
     }
 
+    /**
+     * @param x value for {X} in the mana cost (if it is present)
+     * @return list of mana costs, with each element representing exactly 1 mana of some kind
+     */
     public List<MagicCostManaType> getCostManaTypes(final int x) {
         final List<MagicCostManaType> types = new ArrayList<>();
         int generic=x * XCount;
@@ -409,6 +413,7 @@ public class MagicManaCost implements MagicCopyable {
         final int idx = type.ordinal();
         reducedAmounts[idx] += amt;
         if (XCount > 0 && type == MagicCostManaType.Generic && reducedAmounts[idx] < 0) {
+            // If cost contains {X}, we store even negative value for colorless as possible "discount"
             return new MagicManaCost(reducedAmounts, XCount);
         } else if (amounts[idx] == 0 && reducedAmounts[idx] < 0) {
             return this;
@@ -429,12 +434,58 @@ public class MagicManaCost implements MagicCopyable {
     /**
      * Return cost decreased by some other cost. Only identical mana is removed from the cost.
      * For example, cost {R}{B} reduced by {B}{B}{1} will become {R}
+     *
+     * When removing colored mana ({R}, {G}, {B}, {U}, {W}), primarily remove the specified mana.
+     * If that is not present, look for mana with choice (hybrid, phyrexian, or colorless-hybrid in that order)
+     * and see if the reduction can be deducted from some of that cost.
+     *
+     * First possible encountered cost is used for reduction.
+     * That may not necessarily be optimal choice if more hybrid costs are present.
+     *
+     * (i.e. removing {R}{G} from {R/G}{R/U} may remove first {R/G} via {R} even if the result would not be optimal)
      */
     public MagicManaCost reducedBy(MagicManaCost extraCost) {
-        MagicManaCost res = this;
-        for (final MagicCostManaType cmt : extraCost.getCostManaTypes(0)) {
-            res = res.reduce(cmt, 1);
+        final int[] reducedAmounts = Arrays.copyOf(amounts, amounts.length);
+
+        boolean changed = false;
+        List<MagicCostManaType> remaining = new ArrayList<>();
+        for (final MagicCostManaType type : extraCost.getCostManaTypes(0)) {
+            final int idx = type.ordinal();
+            if (reducedAmounts[idx] >= 1) {
+                reducedAmounts[idx] -= 1;
+                changed = true;
+            } else {
+                if (XCount > 0 && type == MagicCostManaType.Generic) {
+                    // For Generic: if X present, store even negative
+                    reducedAmounts[idx] -= 1;
+                    changed = true;
+                } else {
+                    // Try in second round
+                    if (MagicCostManaType.MONO.contains(type)) {
+                        remaining.add(type);
+                    }
+                }
+            }
         }
-        return res;
+        // Try to remove monocolored costs from hybrid costs
+        for (final MagicCostManaType type : remaining) {
+            MagicManaType thisColor = type.getTypes().get(0);
+            for (MagicCostManaType candidate : MagicCostManaType.CHOICE) {
+                final int idx = candidate.ordinal();
+                if (reducedAmounts[idx] >= 1) {
+                    if (candidate.getTypes().contains(thisColor)) {
+                        reducedAmounts[idx] -= 1;
+                        changed = true;
+                        break;
+                    }
+
+                }
+            }
+        }
+
+        if (changed) {
+            return new MagicManaCost(reducedAmounts, XCount);
+        }
+        return this;
     }
 }
