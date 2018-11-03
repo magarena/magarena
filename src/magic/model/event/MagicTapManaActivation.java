@@ -1,6 +1,6 @@
 package magic.model.event;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import magic.model.MagicManaType;
@@ -14,7 +14,7 @@ public class MagicTapManaActivation extends MagicManaActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent perm) {
-        return Arrays.asList(new MagicTapEvent(perm));
+        return Collections.singletonList(new MagicTapEvent(perm));
     }
 
     public static final MagicManaActivation White = new MagicTapManaActivation(MagicManaType.getList("{W}"));

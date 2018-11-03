@@ -1,6 +1,7 @@
 package magic.model.event;
 
-import java.util.Arrays;
+import java.util.Collections;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
@@ -27,7 +28,7 @@ public class MagicDashActivation extends MagicHandCastActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(
+        return Collections.singletonList(
             new MagicPayManaCostEvent(
                 source,
                 source.getGameCost(cost)
