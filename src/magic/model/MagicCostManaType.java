@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
 
@@ -8,34 +9,34 @@ public enum MagicCostManaType {
 
     // Ordered from least restrictive to most restrictive.
     // Same order as in mana cost
-    Generic("generic","{1}",Arrays.asList(MagicManaType.Colorless,MagicManaType.White,MagicManaType.Blue,MagicManaType.Black,MagicManaType.Red,MagicManaType.Green)),
-    WhiteBlue("white/blue","{W/U}",Arrays.asList(MagicManaType.White,MagicManaType.Blue)),
-    WhiteBlack("white/black","{W/B}",Arrays.asList(MagicManaType.White,MagicManaType.Black)),
-    BlueBlack("blue/black","{U/B}",Arrays.asList(MagicManaType.Blue,MagicManaType.Black)),
-    BlueRed("blue/red","{U/R}",Arrays.asList(MagicManaType.Blue,MagicManaType.Red)),
-    BlackRed("black/red","{B/R}",Arrays.asList(MagicManaType.Black,MagicManaType.Red)),
-    BlackGreen("black/green","{B/G}",Arrays.asList(MagicManaType.Black,MagicManaType.Green)),
-    RedGreen("red/green","{R/G}",Arrays.asList(MagicManaType.Red,MagicManaType.Green)),
-    RedWhite("red/white","{R/W}",Arrays.asList(MagicManaType.Red,MagicManaType.White)),
-    GreenWhite("green/white","{G/W}",Arrays.asList(MagicManaType.Green,MagicManaType.White)),
-    GreenBlue("green/blue","{G/U}",Arrays.asList(MagicManaType.Green,MagicManaType.Blue)),
-    PhyrexianWhite("phyrexian white","{W/P}",Arrays.asList(MagicManaType.White)),
-    PhyrexianBlue("phyrexian blue","{U/P}",Arrays.asList(MagicManaType.Blue)),
-    PhyrexianBlack("phyrexian black","{B/P}",Arrays.asList(MagicManaType.Black)),
-    PhyrexianRed("phyrexian red","{R/P}",Arrays.asList(MagicManaType.Red)),
-    PhyrexianGreen("phyrexian green","{G/P}",Arrays.asList(MagicManaType.Green)),
-    HybridWhite("hybrid white","{2/W}",Arrays.asList(MagicManaType.White)),
-    HybridBlue("hybrid blue","{2/U}",Arrays.asList(MagicManaType.Blue)),
-    HybridBlack("hybrid black","{2/B}",Arrays.asList(MagicManaType.Black)),
-    HybridRed("hybrid red","{2/R}",Arrays.asList(MagicManaType.Red)),
-    HybridGreen("hybrid green","{2/G}",Arrays.asList(MagicManaType.Green)),
-    White("white","{W}",Arrays.asList(MagicManaType.White)),
-    Blue("blue","{U}",Arrays.asList(MagicManaType.Blue)),
-    Black("black","{B}",Arrays.asList(MagicManaType.Black)),
-    Red("red","{R}",Arrays.asList(MagicManaType.Red)),
-    Green("green","{G}",Arrays.asList(MagicManaType.Green)),
-    Snow("snow","{S}",Arrays.asList(MagicManaType.Snow)),
-    Colorless("colorless","{C}",Arrays.asList(MagicManaType.Colorless))
+    Generic("generic", "{1}", Arrays.asList(MagicManaType.Colorless, MagicManaType.White, MagicManaType.Blue, MagicManaType.Black, MagicManaType.Red, MagicManaType.Green)),
+    WhiteBlue("white/blue", "{W/U}", Arrays.asList(MagicManaType.White, MagicManaType.Blue)),
+    WhiteBlack("white/black", "{W/B}", Arrays.asList(MagicManaType.White, MagicManaType.Black)),
+    BlueBlack("blue/black", "{U/B}", Arrays.asList(MagicManaType.Blue, MagicManaType.Black)),
+    BlueRed("blue/red", "{U/R}", Arrays.asList(MagicManaType.Blue, MagicManaType.Red)),
+    BlackRed("black/red", "{B/R}", Arrays.asList(MagicManaType.Black, MagicManaType.Red)),
+    BlackGreen("black/green", "{B/G}", Arrays.asList(MagicManaType.Black, MagicManaType.Green)),
+    RedGreen("red/green", "{R/G}", Arrays.asList(MagicManaType.Red, MagicManaType.Green)),
+    RedWhite("red/white", "{R/W}", Arrays.asList(MagicManaType.Red, MagicManaType.White)),
+    GreenWhite("green/white", "{G/W}", Arrays.asList(MagicManaType.Green, MagicManaType.White)),
+    GreenBlue("green/blue", "{G/U}", Arrays.asList(MagicManaType.Green, MagicManaType.Blue)),
+    PhyrexianWhite("phyrexian white", "{W/P}", Collections.singletonList(MagicManaType.White)),
+    PhyrexianBlue("phyrexian blue", "{U/P}", Collections.singletonList(MagicManaType.Blue)),
+    PhyrexianBlack("phyrexian black", "{B/P}", Collections.singletonList(MagicManaType.Black)),
+    PhyrexianRed("phyrexian red", "{R/P}", Collections.singletonList(MagicManaType.Red)),
+    PhyrexianGreen("phyrexian green", "{G/P}", Collections.singletonList(MagicManaType.Green)),
+    HybridWhite("hybrid white", "{2/W}", Collections.singletonList(MagicManaType.White)),
+    HybridBlue("hybrid blue", "{2/U}", Collections.singletonList(MagicManaType.Blue)),
+    HybridBlack("hybrid black", "{2/B}", Collections.singletonList(MagicManaType.Black)),
+    HybridRed("hybrid red", "{2/R}", Collections.singletonList(MagicManaType.Red)),
+    HybridGreen("hybrid green", "{2/G}", Collections.singletonList(MagicManaType.Green)),
+    White("white", "{W}", Collections.singletonList(MagicManaType.White)),
+    Blue("blue", "{U}", Collections.singletonList(MagicManaType.Blue)),
+    Black("black", "{B}", Collections.singletonList(MagicManaType.Black)),
+    Red("red", "{R}", Collections.singletonList(MagicManaType.Red)),
+    Green("green", "{G}", Collections.singletonList(MagicManaType.Green)),
+    Snow("snow", "{S}", Collections.singletonList(MagicManaType.Snow)),
+    Colorless("colorless", "{C}", Collections.singletonList(MagicManaType.Colorless))
     ;
 
     public static final int NR_OF_TYPES=values().length;

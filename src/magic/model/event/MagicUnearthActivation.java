@@ -1,6 +1,7 @@
 package magic.model.event;
 
-import java.util.Arrays;
+import java.util.Collections;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
@@ -32,7 +33,7 @@ public class MagicUnearthActivation extends MagicCardAbilityActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(
+        return Collections.singletonList(
             new MagicPayManaCostEvent(source, cost)
         );
     }
