@@ -454,17 +454,13 @@ public class MagicManaCost implements MagicCopyable {
             if (reducedAmounts[idx] >= 1) {
                 reducedAmounts[idx] -= 1;
                 changed = true;
-            } else {
-                if (XCount > 0 && type == MagicCostManaType.Generic) {
-                    // For Generic: if X present, store even negative
-                    reducedAmounts[idx] -= 1;
-                    changed = true;
-                } else {
-                    // Try in second round
-                    if (MagicCostManaType.MONO.contains(type)) {
-                        remaining.add(type);
-                    }
-                }
+            } else if (XCount > 0 && type == MagicCostManaType.Generic) {
+                // For Generic: if X present, store even negative
+                reducedAmounts[idx] -= 1;
+                changed = true;
+            } else if (MagicCostManaType.MONO.contains(type)) {
+                // Try in second round
+                remaining.add(type);
             }
         }
         // Try to remove monocolored costs from hybrid costs
@@ -472,13 +468,10 @@ public class MagicManaCost implements MagicCopyable {
             MagicManaType thisColor = type.getTypes().get(0);
             for (MagicCostManaType candidate : MagicCostManaType.CHOICE) {
                 final int idx = candidate.ordinal();
-                if (reducedAmounts[idx] >= 1) {
-                    if (candidate.getTypes().contains(thisColor)) {
-                        reducedAmounts[idx] -= 1;
-                        changed = true;
-                        break;
-                    }
-
+                if (reducedAmounts[idx] >= 1 && candidate.getTypes().contains(thisColor)) {
+                    reducedAmounts[idx] -= 1;
+                    changed = true;
+                    break;
                 }
             }
         }
