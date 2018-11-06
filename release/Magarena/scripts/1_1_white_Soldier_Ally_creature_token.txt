@@ -1,6 +1,6 @@
 name=1/1 white Soldier Ally creature token
 token=Soldier Ally
-image=https://magiccards.info/extras/token/worldwake/soldier-ally.jpg
+image=https://img.scryfall.com/cards/border_crop/en/twwk/1.jpg?1530592148
 value=1
 type=Creature
 subtype=Soldier,Ally

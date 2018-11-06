@@ -1,6 +1,6 @@
 name=2/2 black Vampire creature token with flying
 token=Vampire
-image=https://magiccards.info/extras/token/innistrad/vampire.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tktk/5.jpg?1517813031
 value=2
 type=Creature
 subtype=Vampire
