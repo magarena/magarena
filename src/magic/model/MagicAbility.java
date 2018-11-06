@@ -1416,6 +1416,15 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenYouTargeted("When(ever)? you become the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(BecomesTargetTrigger.createYou(
+                MagicTargetFilterFactory.ItemOnStack(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     WhenTargeted("When(ever)? " + ARG.WORDRUN2 + " becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
         @Override
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
