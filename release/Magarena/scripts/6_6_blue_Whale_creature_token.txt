@@ -1,6 +1,6 @@
 name=6/6 blue Whale creature token
 token=Whale
-image=https://magiccards.info/extras/token/commander-2014/whale.jpg
+image=https://img.scryfall.com/cards/border_crop/en/ta25/7.jpg?1521723780
 value=6
 type=Creature
 subtype=Whale

@@ -1,6 +1,6 @@
 name=8/8 blue Octopus creature token
 token=Octopus
-image=https://magiccards.info/extras/token/battle-for-zendikar/octopus.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tbfz/7.jpg?1517813031
 value=5
 type=Creature
 subtype=Octopus
