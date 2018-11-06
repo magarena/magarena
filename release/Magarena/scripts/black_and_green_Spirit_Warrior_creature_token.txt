@@ -1,6 +1,6 @@
 name=black and green Spirit Warrior creature token
 token=Spirit Warrior
-image=https://magiccards.info/extras/token/khans-of-tarkir/spirit-warrior.jpg
+image=https://img.scryfall.com/cards/border_crop/en/tktk/10.jpg?1517813031
 value=1
 type=Creature
 subtype=Spirit,Warrior

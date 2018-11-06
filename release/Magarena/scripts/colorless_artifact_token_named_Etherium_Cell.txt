@@ -1,5 +1,5 @@
 name=colorless artifact token named Etherium Cell
-image=https://magiccards.info/extras/token/aether-revolt/etherium-cell.jpg
+image=https://img.scryfall.com/cards/border_crop/en/taer/3.jpg?1523997567
 token=Etherium Cell
 type=Artifact
 color=
