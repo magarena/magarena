@@ -134,6 +134,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.changeCounters(MagicCounterType.Death,1);
         }
     },
+    CORPSE_COUNTER() {
+        @Override
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            perm.changeCounters(MagicCounterType.Corpse,1);
+        }
+    },
     ARTIFACT() {
         @Override
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
