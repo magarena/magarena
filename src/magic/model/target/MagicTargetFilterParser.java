@@ -145,6 +145,13 @@ public enum MagicTargetFilterParser {
             return new MagicCMCPermanentFilter(ARTIFACT_OR_ENCHANTMENT, Operator.LESS_THAN_OR_EQUAL, ARG.number(arg));
         }
     },
+    PERM10("permanent with converted mana cost " + ARG.NUMBER) {
+        @Override
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return new MagicCMCPermanentFilter(PERMANENT, Operator.EQUAL, ARG.number(arg));
+        }
+    },
+
     SPELL1("spell with converted mana cost " + ARG.NUMBER) {
         @Override
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
