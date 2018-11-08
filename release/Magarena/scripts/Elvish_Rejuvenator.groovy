@@ -38,19 +38,16 @@ def action = {
             ));
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicMayChoice(
-                    "Put a land card from among them onto the battlefield?",
-                    new MagicFromCardListChoice(
-                        topCards.findAll({ it.hasType(MagicType.Land) }),
-                        topCards,
-                        1,
-                        "Choose a land card"
-                    )
+                new MagicFromCardListChoice(
+                    topCards.findAll({ it.hasType(MagicType.Land) }),
+                    topCards,
+                    1,
+                    true
                 ),
-                topCards,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
+                topCards,
                 action,
-                "PN may\$ put a land card from among them\$ onto the battlefield tapped. PN puts the rest on the bottom of their library in a random order."
+                "PN may put a land card from among them\$ onto the battlefield tapped. PN puts the rest on the bottom of their library in a random order."
             ));
         }
     }
