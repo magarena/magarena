@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Druid
 cost={3}{G}
 pt=2/3
-ability=Whenever you cast an Aura spell that targets SN, create a 3/3 green Beast creature token.
 timing=main
+requires_groovy_code
 oracle=Whenever you cast an Aura spell that targets Druid of Horns, create a 3/3 green Beast creature token.
