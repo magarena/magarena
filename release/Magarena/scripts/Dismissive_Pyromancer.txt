@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={1}{R}
 pt=2/2
 ability={R}, {T}, Discard a card: Draw a card.;\
-        {2}{R}, {T}, Sacrifice SN: It deals 4 damage to target creature.
+        {2}{R}, {T}, Sacrifice SN: SN deals 4 damage to target creature.
 timing=main
 oracle={R}, {T}, Discard a card: Draw a card.\n{2}{R}, {T}, Sacrifice Dismissive Pyromancer: It deals 4 damage to target creature.
