@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Druid
 cost={2}{G}
 pt=1/1
-ability=When SN enters the battlefield, look at the top five cards of your library. You may put a land card from among them onto the battlefield tapped. Put the rest on the bottom of your library in a random order.
 timing=main
+requires_groovy_code
 oracle=When Elvish Rejuvenator enters the battlefield, look at the top five cards of your library. You may put a land card from among them onto the battlefield tapped. Put the rest on the bottom of your library in a random order.
