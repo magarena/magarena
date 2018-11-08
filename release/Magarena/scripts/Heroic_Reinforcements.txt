@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{R}{W}
-effect=Create two 1/1 white Soldier creature tokens. Until end of turn, creatures you control get +1/+1 and gain haste.
+effect=Create two 1/1 white Soldier creature tokens.~Until end of turn, creatures you control get +1/+1 and gain haste.
 timing=main
 oracle=Create two 1/1 white Soldier creature tokens. Until end of turn, creatures you control get +1/+1 and gain haste.
