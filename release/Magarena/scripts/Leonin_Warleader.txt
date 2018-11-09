@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Soldier
 cost={2}{W}{W}
 pt=4/4
-ability=Whenever SN attacks, create two 1/1 white Cat creature tokens with lifelink that are tapped and attacking.
 timing=main
+requires_groovy_code
 oracle=Whenever Leonin Warleader attacks, create two 1/1 white Cat creature tokens with lifelink that are tapped and attacking.
