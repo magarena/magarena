@@ -7,7 +7,7 @@ subtype=Dragon
 cost={4}{R}{R}
 pt=6/6
 ability=Flying;\
-        Whenever another nontoken Dragon enters the battlefield under your control, create a 5/5 red Dragon creature token with flying.;\
         {1}{R}: Dragons you control get +1/+0 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever another nontoken Dragon enters the battlefield under your control, create a 5/5 red Dragon creature token with flying.\n{1}{R}: Dragons you control get +1/+0 until end of turn.
