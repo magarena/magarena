@@ -17,7 +17,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
             if (player.getNrOfPermanents(MagicType.Creature) >= 3) {
-                game.doAction(new ChangeTurnPTAction(permanent, 1, 1);
+                game.doAction(new ChangeTurnPTAction(permanent, 1, 1));
                 game.doAction(new ChangeLifeAction(player, 1));
             }
         }
