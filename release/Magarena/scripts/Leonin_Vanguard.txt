@@ -7,4 +7,5 @@ subtype=Cat,Soldier
 cost={W}
 pt=1/1
 timing=main
+requires_groovy_code
 oracle=At the beginning of combat on your turn, if you control three or more creatures, Leonin Vanguard gets +1/+1 until end of turn and you gain 1 life.
