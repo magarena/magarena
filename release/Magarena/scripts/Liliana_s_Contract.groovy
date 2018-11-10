@@ -1,6 +1,10 @@
 [
     new AtUpkeepTrigger() {
         @Override
+        public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            return permanent.isController(upkeepPlayer);
+        }
+        @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
