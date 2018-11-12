@@ -73,6 +73,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.95 (November 24, 2018)
+============
+
 Release 1.94 (August 31, 2018)
 ============
 Ada Joule
