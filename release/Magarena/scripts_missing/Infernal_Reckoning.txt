@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={B}
-effect=Exile target colorless creature.~You gain life equal to its power.
+effect=Exile target colorless creature. You gain life equal to its power.
 timing=removal
 oracle=Exile target colorless creature. You gain life equal to its power.
