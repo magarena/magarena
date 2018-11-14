@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={R}{R}{W}{W}
 pt=4/3
-ability=Mentor;\
-        Whenever SN is dealt damage, it deals that much damage to target player.
+ability=Mentor
 timing=main
+requires_groovy_code
 oracle=Mentor\nWhenever Truefire Captain is dealt damage, it deals that much damage to target player.
