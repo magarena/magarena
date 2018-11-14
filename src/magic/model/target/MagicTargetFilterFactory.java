@@ -2281,6 +2281,16 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl MENTOR = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            final MagicPermanent mentor = (MagicPermanent)source;
+            return target.isCreature() &&
+                target.isAttacking() &&
+                target.getPower() < mentor.getPower();
+        }
+    };
+
     /**
      * Single texts completely specifying the targeting condition.
      */
