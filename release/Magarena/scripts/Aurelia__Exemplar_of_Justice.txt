@@ -7,7 +7,7 @@ subtype=Angel
 cost={2}{R}{W}
 pt=2/5
 ability=Flying;\
-        Mentor;\
-        At the beginning of combat on your turn, choose up to one target creature you control. Until end of turn, that creature gets +2/+0, gains trample if it's red, and gains vigilance if it's white.
+        Mentor
 timing=main
+requires_groovy_code
 oracle=Flying\nMentor\nAt the beginning of combat on your turn, choose up to one target creature you control. Until end of turn, that creature gets +2/+0, gains trample if it's red, and gains vigilance if it's white.
