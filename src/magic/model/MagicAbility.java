@@ -655,6 +655,13 @@ public enum MagicAbility {
             card.add(ThisAttacksTrigger.Mentor);
         }
     },
+    JumpStart("jump-start", 0) {
+        @Override
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(new MagicJumpStartActivation(cardDef));
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may " + ARG.COST + "\\. If you don't, SN enters the battlefield tapped\\.", -10) {
