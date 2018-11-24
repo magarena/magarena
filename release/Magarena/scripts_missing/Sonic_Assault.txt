@@ -1,9 +1,0 @@
-name=Sonic Assault
-image=https://img.scryfall.com/cards/normal/front/c/c/cc61a398-cf16-415b-b3cf-897217dc7cc9.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{U}{R}
-effect=Tap target creature. SN deals 2 damage to that creature's controller.~Jump-start
-timing=removal
-oracle=Tap target creature. Sonic Assault deals 2 damage to that creature's controller.\nJump-start
