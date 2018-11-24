@@ -20,7 +20,10 @@ public class MagicJumpStartActivation extends MagicGraveyardCastActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(new MagicDiscardEvent(source));
+        return Arrays.asList(
+            new MagicPayManaCostEvent(source, source.getCost()),
+            new MagicDiscardEvent(source)
+        );
     }
 
     @Override
@@ -34,7 +37,7 @@ public class MagicJumpStartActivation extends MagicGraveyardCastActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new CastCardAction(
+        game.doAction(CastCardAction.WithoutManaCost(
             event.getPlayer(),
             event.getCard(),
             MagicLocationType.Graveyard,
