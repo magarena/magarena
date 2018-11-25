@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{R}
-effect=Target opponent may have SN deal 4 damage to them. If that player doesn't, you draw three cards.~Jump-start
+ability=Jump-start
 timing=removal
+requires_groovy_code
 oracle=Target opponent may have Risk Factor deal 4 damage to them. If that player doesn't, you draw three cards.\nJump-start
