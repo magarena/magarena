@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice("an Equipment card from your library");
             event.processTargetCard(game, {
                     game.doAction(new RevealAction(it));
                 if (it.getName().equals("Hammer of Nazahn")) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,it,event.getPlayer()));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary,it,event.getPlayer()));
                     } else {
                     game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
                 }

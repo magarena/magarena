@@ -17,7 +17,7 @@
             game.doAction(new RevealAction(cards));
             for (final MagicCard card : cards) {
                 if (card.hasType(MagicType.Land)) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, card, player));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, card, player));
                 } else {
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
                 }

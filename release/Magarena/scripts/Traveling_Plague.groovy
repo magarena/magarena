@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getPermanent().getCard();
             if (card.isInGraveyard()) {
-                game.doAction(new ReturnCardAction(
+                game.doAction(new PutOntoBattlefieldAction(
                     MagicLocationType.Graveyard,
                     event.getPermanent().getCard(),
                     event.getPlayer()

@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard died = event.getRefCard();
-            game.doAction(new ReturnCardAction(
+            game.doAction(new PutOntoBattlefieldAction(
                 MagicLocationType.Graveyard,
                 died,
                 died.getOwner()

@@ -25,7 +25,7 @@
             for (final MagicCard card : cards) {
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Creature)) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, card, player));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, card, player));
                 } else {
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
                     game.logAppendMessage(player, "${player.getName()} puts ${card.getName()} into the graveyard.")

@@ -19,7 +19,7 @@
                 final MagicCard topCard = it.getOwner().getLibrary().getCardAtTop();
                 game.doAction(new RevealAction(topCard));
                 if (topCard.isPermanentCard()) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, topCard, it.getOwner()));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, topCard, it.getOwner()));
                 }
             });
         }

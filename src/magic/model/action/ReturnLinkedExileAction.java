@@ -45,7 +45,7 @@ public class ReturnLinkedExileAction extends MagicAction {
         for (final MagicCard card : cardList) {
             if (card.isInExile()) {
                 if (location == MagicLocationType.Battlefield) {
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.Exile,
                         card,
                         controller.isValid() ? controller : card.getOwner(),

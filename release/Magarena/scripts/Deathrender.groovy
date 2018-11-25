@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 event.processTargetCard(game, {
                     final MagicPermanent sn = event.getPermanent();
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,it,event.getPlayer(), {
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersHand,it,event.getPlayer(), {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
                         G.doAction(new AttachAction(sn.map(G), perm));

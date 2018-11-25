@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new ReturnCardAction(MagicLocationType.Graveyard,it,event.getPlayer(), {
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.Graveyard,it,event.getPlayer(), {
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
                     if (perm.hasSubType(MagicSubType.Angel)) {

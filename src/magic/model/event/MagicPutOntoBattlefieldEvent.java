@@ -10,7 +10,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicTuple;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.ReturnCardAction;
+import magic.model.action.PutOntoBattlefieldAction;
 import magic.model.choice.MagicChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
 
@@ -45,7 +45,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
                     event.getPlayer(),
                     MagicMessage.format("Chosen (%s).", card)
                 );
-                game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,card,event.getPlayer(),tup.getMods()));
+                game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersHand,card,event.getPlayer(),tup.getMods()));
             });
         }
     };

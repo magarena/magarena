@@ -23,7 +23,7 @@
                         game.doAction(new MillLibraryAction(it,1));
                     } else {
                         creatureCards++;
-                        game.doAction(new ReturnCardAction(
+                        game.doAction(new PutOntoBattlefieldAction(
                             MagicLocationType.OwnersLibrary,
                             library.getCardAtTop(),
                             event.getPlayer()

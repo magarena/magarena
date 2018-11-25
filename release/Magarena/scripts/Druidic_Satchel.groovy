@@ -32,7 +32,7 @@
                     game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("1/1 green Saproling creature token"), 1));
                 }
                 if (card.hasType(MagicType.Land)) {
-                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary, card, event.getPlayer()));
+                    game.doAction(new PutOntoBattlefieldAction(MagicLocationType.OwnersLibrary, card, event.getPlayer()));
                 }
                 if (!card.hasType(MagicType.Creature) && !card.hasType(MagicType.Land)) {
                     game.doAction(new ChangeLifeAction(event.getPlayer(), 2));

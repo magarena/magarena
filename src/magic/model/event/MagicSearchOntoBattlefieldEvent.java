@@ -10,7 +10,7 @@ import magic.model.MagicSource;
 import magic.model.MagicTuple;
 import magic.model.action.AIRevealAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.ReturnCardAction;
+import magic.model.action.PutOntoBattlefieldAction;
 import magic.model.action.ShuffleLibraryAction;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.choice.MagicChoice;
@@ -53,7 +53,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                     MagicMessage.format("Found (%s).", card)
                 );
                 game.doAction(new AIRevealAction(card));
-                game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),tup.getMods()));
+                game.doAction(new PutOntoBattlefieldAction(card.getLocation(),card,event.getPlayer(),tup.getMods()));
             });
             game.doAction(new ShuffleLibraryAction(event.getPlayer()));
         } else {
@@ -63,7 +63,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                     MagicMessage.format("Found (%s).", card)
                 );
                 game.doAction(new AIRevealAction(card));
-                game.doAction(new ReturnCardAction(card.getLocation(),card,event.getPlayer(),tup.getMods()));
+                game.doAction(new PutOntoBattlefieldAction(card.getLocation(),card,event.getPlayer(),tup.getMods()));
             });
             game.doAction(new ShuffleLibraryAction(event.getPlayer()));
         }

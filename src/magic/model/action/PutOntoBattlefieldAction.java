@@ -7,21 +7,21 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
-public class ReturnCardAction extends MagicAction {
+public class PutOntoBattlefieldAction extends MagicAction {
 
     private final MagicPlayer controller;
     private final MagicCard card;
     private final MagicLocationType from;
     private final List<? extends MagicPermanentAction> modifications;
 
-    public ReturnCardAction(final MagicLocationType aFrom, final MagicCard aCard, final MagicPlayer aController, final List<? extends MagicPermanentAction> aModifications) {
+    public PutOntoBattlefieldAction(final MagicLocationType aFrom, final MagicCard aCard, final MagicPlayer aController, final List<? extends MagicPermanentAction> aModifications) {
         card = aCard;
         controller = aController;
         from = aFrom;
         modifications = aModifications;
     }
 
-    public ReturnCardAction(final MagicLocationType aFrom, final MagicCard aCard, final MagicPlayer aController, final MagicPermanentAction... aModifications) {
+    public PutOntoBattlefieldAction(final MagicLocationType aFrom, final MagicCard aCard, final MagicPlayer aController, final MagicPermanentAction... aModifications) {
         this(aFrom, aCard, aController, Arrays.asList(aModifications));
     }
 

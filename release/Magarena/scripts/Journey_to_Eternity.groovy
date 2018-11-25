@@ -16,12 +16,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ReturnCardAction(
+            game.doAction(new PutOntoBattlefieldAction(
                 MagicLocationType.Graveyard,
                 event.getRefPermanent().getCard(),
                 event.getPlayer()
             ));
-            game.doAction(new ReturnCardAction(
+            game.doAction(new PutOntoBattlefieldAction(
                 MagicLocationType.Graveyard,
                 event.getPermanent().getCard(),
                 event.getPlayer(),

@@ -6,7 +6,7 @@ def action = {
         final MagicEvent manaCost = new MagicPayManaCostEvent(event.getSource(), "{${cost}}");
         if (manaCost.isSatisfied()) {
             game.addEvent(manaCost);
-            game.doAction(new ReturnCardAction(
+            game.doAction(new PutOntoBattlefieldAction(
                 MagicLocationType.Graveyard,
                 card,
                 event.getPlayer(),

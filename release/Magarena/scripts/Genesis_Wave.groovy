@@ -2,7 +2,7 @@ def toBattlefield = {
     final MagicGame game, final MagicEvent event ->
     event.processChosenCards(game, {
         final MagicCard card ->
-        game.doAction(new ReturnCardAction(
+        game.doAction(new PutOntoBattlefieldAction(
             MagicLocationType.OwnersLibrary,
             card,
             event.getPlayer()

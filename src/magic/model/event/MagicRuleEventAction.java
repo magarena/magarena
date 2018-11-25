@@ -376,7 +376,7 @@ public enum MagicRuleEventAction {
                         it,
                         MagicLocationType.Exile
                     ));
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.Exile,
                         it.getCard(),
                         event.getPlayer()
@@ -402,7 +402,7 @@ public enum MagicRuleEventAction {
                         it,
                         MagicLocationType.Exile
                     ));
-                    game.doAction(new ReturnCardAction(
+                    game.doAction(new PutOntoBattlefieldAction(
                         MagicLocationType.Exile,
                         it.getCard(),
                         it.getOwner(),

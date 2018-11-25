@@ -44,7 +44,7 @@
                         if (it.getGraveyard().contains(card)) {
                             creatureCards++;
                             game.doAction(new SacrificeAction(event.getPermanent()));
-                            game.doAction(new ReturnCardAction(
+                            game.doAction(new PutOntoBattlefieldAction(
                                 MagicLocationType.Graveyard,
                                 card,
                                 event.getPlayer()
