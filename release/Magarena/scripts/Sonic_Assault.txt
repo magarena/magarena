@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={1}{U}{R}
 ability=Jump-start
-effect=Tap target creature. SN deals 2 damage to that creature's controller.
+effect=Tap target creature.~SN deals 2 damage to that creature's controller.
 timing=removal
 oracle=Tap target creature. Sonic Assault deals 2 damage to that creature's controller.\nJump-start
